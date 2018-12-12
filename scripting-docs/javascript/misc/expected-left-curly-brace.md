@@ -1,5 +1,5 @@
 ---
-title: '予想 &#39;です。{(& m); #39 |Microsoft ドキュメント'
+title: '{' が必要です |Microsoft ドキュメント'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/27/2017
 ms.locfileid: "24632772"
 ---
-# <a name="expected-3939"></a>予想 &#39;です。{&#39;です。
+# <a name="expected-3939"></a>'{' が必要です。
 関数本体の先頭を示す左中かっこを含まれていませんでした。 1 つの行がある場合でも、関数の本体を構成するコードは、左と右中かっこ内に格納する必要があります。 関数本体の中かっこの使用がループ内でより厳しいことに注意してください。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
