@@ -1,5 +1,5 @@
 ---
-title: 予想 &#39;}&#39; |Microsoft ドキュメント
+title: '}' が必要です |Microsoft ドキュメント
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/27/2017
 ms.locfileid: "24632822"
 ---
-# <a name="expected-3939"></a>予想 &#39;}&#39;です。
+# <a name="expected-3939"></a>'}' が必要ですです。
 初期化子をオブジェクトまたは関数の本体、ループ、コードのブロックの終了をマークする右中かっこを含めるしていません。 このエラーの例としては、**の**のみ、左中かっこ、ループの本体でループします。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
