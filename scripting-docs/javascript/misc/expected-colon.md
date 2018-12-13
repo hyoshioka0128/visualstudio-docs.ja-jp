@@ -1,5 +1,5 @@
 ---
-title: '予想 &#39;: &#39; |Microsoft ドキュメント'
+title:  ':' が必要です。 |Microsoft ドキュメント'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/27/2017
 ms.locfileid: "24633272"
 ---
-# <a name="expected-3939"></a>予想 &#39;: &#39;
+# <a name="expected-3939"></a>':' が必要です。
 三項の条件演算子を使用して式を作成しようとしていますが、2 番目と 3 番目のオペランドの間にコロンが含まれていません。 3 項 (3 つのオペランド) 条件演算子は、2 番目 (true) と 3 番目 (false) の間にコロンを必要とオペランド。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
