@@ -28,7 +28,7 @@ ms.lasthandoff: 10/23/2018
 ms.locfileid: "49856653"
 ---
 # <a name="cannot-assign-to-39this39"></a>'this' に割り当てることはできません。
-値を代入しようとしています。**この**します。 **この**は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]キーワードのいずれかを参照します。
+this に値を割り当てようとしました。 **この**は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]キーワードのいずれかを参照します。
 
 - 現在、メソッドを実行するオブジェクト
 
