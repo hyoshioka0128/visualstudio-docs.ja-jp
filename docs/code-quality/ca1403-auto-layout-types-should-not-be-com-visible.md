@@ -40,13 +40,13 @@ ms.locfileid: "53954540"
 
 ## <a name="rule-description"></a>規則の説明
 
-<xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、特定のレイアウトを期待する COM クライアントを中断する .NET Framework のバージョン間で変更できます。 場合、 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 、c#、Visual Basic、および C++ コンパイラの指定の属性が指定されていない[参照](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)値の型。
+<xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、特定のレイアウトを期待する COM クライアントを中断する .NET Framework のバージョン間で変更できます。 場合、 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 、C#、Visual Basic、および C++ コンパイラの指定の属性が指定されていない[参照](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)値の型。
 
 すべてのパブリックな非ジェネリックの型が、COM から参照できる他のマークがない限り、すべてのパブリックでないとジェネリック型が COM に表示されません。 ただし、偽陽性を減らすためには、この規則を明示的に指定する型の COM の参照範囲が必要です。 格納しているアセンブリをマークする必要があります、<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>に設定`false`で型をマークする必要があり、<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定`true`します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、値を変更、<xref:System.Runtime.InteropServices.StructLayoutAttribute>属性を[LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>)または[LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)、か、com 型を非表示
+この規則違反を解決するには、値を変更、<xref:System.Runtime.InteropServices.StructLayoutAttribute>属性を[LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>)または[LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)、か、COM 型を非表示
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
