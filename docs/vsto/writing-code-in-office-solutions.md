@@ -99,7 +99,7 @@ ms.locfileid: "54864073"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Visual Basic とプログラム。Office ソリューションでの visual C #/web
  Office ソリューションは、Visual Basic と Visual C# のどちらを使用しても作成できます。 Microsoft Office オブジェクト モデルは VBA (Microsoft Visual Basic for Applications) で使用するようにデザインされているので、Visual Basic 開発者は Microsoft Office アプリケーションで公開されているオブジェクトを容易に操作できます。 Visual C# 開発者は Visual Basic 開発者と同じ機能のほとんどを使用できますが、Office オブジェクト モデルを使用するには、追加のコードを記述することが必要な場合があります。 また、Office 開発における基本的なプログラミング機能と Visual Basic や C# で記述されたマネージド コードとの間にもいくつかの違いがあります。
 
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic および Visual c# の主な違い
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic および Visual C# の主な違い
  次の表は、Office 開発で Visual Basic を使用する場合と Visual C# を使用する場合の主な相違点を示しています。
 
 |機能|説明|Visual Basic のサポート|Visual C# のサポート|
