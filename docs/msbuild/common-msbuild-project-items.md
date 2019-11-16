@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636571"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956143"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
@@ -141,6 +141,7 @@ ms.locfileid: "73636571"
 
 > [!NOTE]
 > これは、.NET Core SDK を使用するプロジェクトのみに適用されます。
+
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  ビルドの基本アプリケーション マニフェストを表し、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置セキュリティ情報を含みます。
 
