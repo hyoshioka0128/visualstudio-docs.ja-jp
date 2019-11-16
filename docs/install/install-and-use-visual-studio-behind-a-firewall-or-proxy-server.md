@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
+ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293510"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413562"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -51,6 +51,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | download.microsoft.com | パッケージのダウンロード場所を設定する |
 | download.visualstudio.com | パッケージのダウンロード場所を設定する |
 | dl.xamarin.com | パッケージのダウンロード場所を設定する |
+| xamarin-downloads.azureedge.net | Android SDK パッケージのダウンロード リストの場所 |
 | marketplace.visualstudio.com | Visual Studio 拡張機能のダウンロード場所 |
 | visualstudio.microsoft.com | ドキュメントの場所 |
 | docs.microsoft.com | ドキュメントの場所 |

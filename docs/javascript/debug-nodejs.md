@@ -1,7 +1,7 @@
 ---
 title: JavaScript または TypeScript のアプリをデバッグする
 description: Visual Studio では、Visual Studio での JavaScript アプリと TypeScript アプリのデバッグをサポートします
-ms.date: 12/03/2018
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888696"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636550"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio で JavaScript アプリまたは TypeScript アプリをデバッグする
 
@@ -43,91 +43,177 @@ Visual Studio を使用して、JavaScript および TypeScript のコードを�
 
 ## <a name="debug-client-side-script"></a>クライアント側のスクリプトをデバッグする
 
-Visual Studio では、Chrome および Internet Explorer のみのデバッグ サポートが提供されます。 一部のシナリオでは、デバッガーで自動的に、HTML ファイルの埋め込みスクリプトおよび JavaScript や TypeScript コードのブレークポイントにヒットします。
+::: moniker range=">=vs-2019"
+Visual Studio では、Chrome および Microsoft Edge (Chromium) のみのクライアント側デバッグ サポートが提供されます。 一部のシナリオでは、デバッガーで自動的に、HTML ファイルの埋め込みスクリプトおよび JavaScript や TypeScript コードのブレークポイントにヒットします。 ASP.NET アプリでのクライアント側スクリプトのデバッグについては、ブログ記事「[Microsoft Edge での JavaScript のデバッグ](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/)」と、[Google Chrome に関するこちらの記事](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)を参照してください。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio では、Chrome および Internet Explorer のみのクライアント側デバッグ サポートが提供されます。 一部のシナリオでは、デバッガーで自動的に、HTML ファイルの埋め込みスクリプトおよび JavaScript や TypeScript コードのブレークポイントにヒットします。 ASP.NET アプリでのクライアント側スクリプトのデバッグについては、ブログ投稿「[Google Chrome での ASP.NET プロジェクトのクライアント側デバッグ](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/)」を参照してください。
+::: moniker-end
 
-TypeScript や Babel などのトランスパイラによってソースが縮小または作成されている場合、最適なデバッグ エクスペリエンスを得るために、[ソース マップ](#generate_sourcemaps)を使用する必要があります。 ソース マップを使用しなくても、実行中のクライアント側スクリプトにデバッガーをアタッチすることはできます。 しかし、ブレークポイントの設定やヒットが可能なのは、元のソース ファイルではなく、縮小またはトランスパイルされたファイルでのみとなります。 たとえば、Vue.js アプリでは、縮小されたスクリプトは文字列として `eval` ステートメントに渡されます。ソース マップを使用しない限り、Visual Studio デバッガーを効果的に使って、このコードをステップ実行する方法はありません。 いくつかの複雑なデバッグ シナリオでは、Chrome の開発者ツールまたは Microsoft Edge の F12 ツールを使用する場合もあります。
+ASP.NET 以外のアプリケーションについては、ここで説明する手順に従ってください。
 
-Visual Studio からデバッガーをアタッチし、クライアント側のコードのブレークポイントにヒットするには、通常、デバッガーで正しいプロセスを識別できるようにサポートする必要があります。 ここではその方法の 1 つとして、Chrome を使用します。
+### <a name="prepare-your-app-for-debugging"></a>デバッグ用にアプリを準備する
 
-### <a name="attach-the-debugger-to-client-side-script-using-chrome"></a>Chrome を使用してクライアント側スクリプトにデバッガーをアタッチする
+TypeScript や Babel などのトランスパイラによってソースが縮小または作成されている場合、最適なデバッグ エクスペリエンスを得るために、[ソース マップ](#generate_source_maps)を使用する必要があります。 ソース マップを使用しなくても、実行中のクライアント側スクリプトにデバッガーをアタッチすることはできます。 しかし、ブレークポイントの設定やヒットが可能なのは、元のソース ファイルではなく、縮小またはトランスパイルされたファイルでのみとなります。 たとえば、Vue.js アプリでは、縮小されたスクリプトは文字列として `eval` ステートメントに渡されます。ソース マップを使用しない限り、Visual Studio デバッガーを効果的に使って、このコードをステップ実行する方法はありません。 複雑なデバッグ シナリオでは、代わりに Chrome の開発者ツールまたは Microsoft Edge の F12 ツールを使用する場合もあります。
 
-1. Chrome のすべてのウィンドウを閉じます。
+ソース マップを生成する方法については、「[デバッグ用のソース マップを生成する](#generate_source_maps)」を参照してください。
 
-    デバッグ モードで Chrome を実行する前に、この操作を実行する必要があります。
+### <a name="prepare_the_browser_for_debugging"></a>デバッグのためにブラウザーを準備する
 
-2. Windows の **[スタート]** ボタンから **[ファイル名を指定して実行]** コマンドを開き (右クリックして **[ファイル名を指定して実行]** を選択)、次のコマンドを入力します。
+::: moniker range=">=vs-2019"
+このシナリオでは、現在 IDE 上で **Microsoft Edge Beta** という名前になっている Microsoft Edge (Chromium)、または Chrome のいずれかを使用します。
+::: moniker-end
+::: moniker range="vs-2017"
+このシナリオでは、Chrome を使用します。
+::: moniker-end
 
-    `chrome.exe --remote-debugging-port=9222`
+1. ターゲット ブラウザーのすべてのウィンドウを閉じます。
 
-    このコマンドにより、デバッグが有効な状態で Chrome が起動します。
+   そのブラウザーをデバッグを有効にした状態で開くことが、その他のブラウザー インスタンスによって妨げられる可能性があります (ブラウザーの拡張機能が実行され、フル デバッグ モードが阻止されている場合があります。そのため、タスク マネージャーを開き、Chrome の予期しないインスタンスを見つけることが必要な場合があります)。
+
+   ::: moniker range=">=vs-2019"
+   Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コードベースが使用されているため、これによって最適な結果が得られます。
+   ::: moniker-end
+
+2. デバッグが有効な状態でブラウザーを起動します。
 
     ::: moniker range=">=vs-2019"
+    Visual Studio 2019 以降では、ブラウザーの起動時に `--remote-debugging-port=9222` フラグを設定することもできます。 **[デバッグ]** ツール バーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーに **Edge でのデバッグ**や **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-v16.2)を参照してください。
 
-    > [!NOTE]
-    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。 **[デバッグ]** ツールバーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-preview)を参照してください。
+    ![ブラウザーをデバッグが有効な状態で開くように設定する](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
+    別の方法として、Windows の **[スタート]** ボタンから **[ファイル名を指定して実行]** コマンドを開き (右クリックして **[ファイル名を指定して実行]** を選択)、次のコマンドを入力します。
+
+    `msedge --remote-debugging-port=9222`
+
+    または、
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
-3. Visual Studio に切り替え、ソース コードにブレークポイントを設定します (`return` ステートメントや `var` 宣言など、ブレークポイントを許可するコード行でブレークポイントを設定します)。
+    ::: moniker range="vs-2017"
+    Windows の **[スタート]** ボタンから **[ファイル名を指定して実行]** コマンドを開き (右クリックして **[ファイル名を指定して実行]** を選択)、次のコマンドを入力します。
+
+    `chrome.exe --remote-debugging-port=9222`
+    ::: moniker-end
+
+    これにより、デバッグが有効な状態でブラウザーが起動します。
+
+    アプリはまだ実行されていないため、空のブラウザー ページが表示されます。
+
+### <a name="attach-the-debugger-to-client-side-script"></a>クライアント側スクリプトにデバッガーをアタッチする
+
+クライアント側のコードに Visual Studio からデバッガーをアタッチしてブレークポイントをヒットさせるには、デバッガーが正しいプロセスを識別できるように手助けする必要があります。 ここではその方法の 1 つを示します。
+
+1. Visual Studio に切り替えて、JavaScript ファイル、TypeScript ファイル、 *.vue* ファイル、JSX ファイルなどのソース コードにブレークポイントを設定します (return ステートメントや var 宣言など、ブレークポイントが許可されるコード行にブレークポイントを設定します)。
 
     ![ブレークポイントの設定](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    生成された大きなファイルで特定のコードを見つける必要がある場合は、**Ctrl** + **F** キー ( **[編集]**  >  **[検索と置換]**  >  **[クイック検索]** ) を使用します。
+    トランスパイルされたファイル内の特定のコードを検索するには、**Ctrl** + **F** キー ( **[編集]**  >  **[検索と置換]**  >  **[クイック検索]** ) を使用します。
 
-4. Visual Studio でデバッグ ターゲットとして Chrome を選択し、**Ctrl**+**F5** キーを押して ( **[デバッグ]**  >  **[デバッグなしで開始]** )、ブラウザーでアプリを実行します。
+    クライアント側コードの場合、TypeScript ファイル、 *.vue*、または JSX ファイル内のブレークポイントをヒットさせるには、通常、[ソース マップ](#generate_source_maps)を使用する必要があります。 ソース マップは、Visual Studio でのデバッグをサポートするように正しく構成されている必要があります。
+
+2. Visual Studio でデバッグ ターゲットとして目的のブラウザーを選択し、次に **Ctrl** + **F5** キーを押して ( **[デバッグ]**  >  **[デバッグなしで開始]** )、ブラウザーでアプリを実行します。
+
+    ::: moniker range=">=vs-2019"
+    フレンドリ名を使用してブラウザー構成を作成した場合は、それをデバッグ ターゲットとして選択します。
+    ::: moniker-end
 
     アプリがブラウザーの新しいタブで開きます。
 
-    Chrome をコンピューターで使用できるのにオプションには表示されない場合は、デバッグ ターゲットのドロップダウン リストから **[Browse With]\(ブラウザー\)** を選択し、Chrome を既定のブラウザーに選択します ( **[Set as Default]\(既定値として設定\)** を選択)。
+3. **[デバッグ]**  >  **[プロセスにアタッチ]** の順に選びます。
 
-5. **[デバッグ]**  >  **[プロセスにアタッチ]** の順に選びます。
+    > [!TIP]
+    > Visual Studio 2017 以降では、以上の手順に従って初めてプロセスにアタッチした後は、 **[デバッグ]**  >  **[プロセスに再アタッチする]** を選ぶことで、同じプロセスにすぐに再アタッチできます。
 
-6. **[プロセスにアタッチ]** ダイアログ ボックスの **[アタッチ先]** フィールドで **[WebKit code]\(WebKit コード\)** を選び、フィルター ボックスに「**chrome**」と入力して検索結果をフィルター処理します。
+4. **[プロセスにアタッチ]** ダイアログ ボックスで、アタッチできるブラウザー インスタンスのフィルター処理された一覧を取得します。
 
-    **WebKit コード**は、WebKit ベースのブラウザーである、Chrome に必要な値です。
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 では、 **[アタッチ先]** フィールドでターゲット ブラウザー用の適切なデバッガーとして **JavaScript (Chrome)** または **JavaScript (Microsoft Edge - Chromium)** を選び、フィルター ボックスに「**chrome**」または「**edge**」と入力して検索結果をフィルター処理します。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017 では、 **[アタッチ先]** フィールドで **[WebKit code]\(WebKit コード\)** を選び、フィルター ボックスに「**chrome**」と入力して検索結果をフィルター処理します。
+    ::: moniker-end
 
-7. 正しいホスト ポート (この図では 1337) の Chrome プロセスを選び、 **[アタッチ]** を選択します。
+5. 正しいホスト ポート (この例では localhost) のブラウザー プロセスを選び、 **[アタッチ]** を選択します。
 
+    ポート (1337 など) も **[タイトル]** フィールドに表示され、適切なブラウザー インスタンスを選択するのに役立ちます。
+
+    ::: moniker range=">=vs-2019"
+    Microsoft Edge (Chromium) ブラウザーの場合の例を次に示します。
+
+    ![プロセスにアタッチする](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![プロセスにアタッチする](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Visual Studio で DOM Explorer と JavaScript コンソールが開けば、デバッガーが正しくアタッチしたことがわかります。 これらのデバッグ ツールは、Chrome の開発者ツールや Microsoft Edge の F12 ツールに似ています。
     ::: moniker-end
 
-    > [!NOTE]
-    > デバッガーがアタッチされず、「プロセスにアタッチできません。 現在の状態での操作は無効です" というメッセージが表示される場合、Chrome をデバッグ モードで開始する前に、タスク マネージャーを使用して Chrome のすべてのインスタンスを閉じます。 Chrome の拡張機能が実行され、フル デバッグ モードが阻止されている場合があります。
+    > [!TIP]
+    > デバッガーがアタッチされず、"デバッグ アダプターを起動できませんでした" または "プロセスにアタッチできません。 現在の状態での操作は無効です" というメッセージが表示される場合、ターゲット ブラウザーをデバッグ モードで開始する前に、Windows タスク マネージャーを使用してそのブラウザーのすべてのインスタンスを閉じます。 ブラウザーの拡張機能が実行され、フル デバッグ モードが阻止されている場合があります。
 
-8. ブレークポイントを設定したコードを既に実行している場合は、ブラウザーのページを更新してブレークポイントにヒットします。
+6. ブレークポイントを設定したコードは既に実行しているので、ブラウザーのページを更新します。 必要に応じて、ブレークポイントを設定したコードを実行するためのアクションを実行します。
 
-    デバッガーで一時停止している間に、変数をマウスでポイントし、デバッガー ウィンドウを使って、アプリの状態を確認できます。 コードをステップ実行することにより (**F5**、**F10**、**F11**)、デバッガーを進めることができます。
+    デバッガーで一時停止している間に、変数をマウスでポイントし、デバッガー ウィンドウを使って、アプリの状態を確認できます。 コードをステップ実行することにより (**F5**、**F10**、**F11**)、デバッガーを進めることができます。 基本的なデバッグ機能の詳細については、[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)に関するページを参照してください。
 
-    縮小またはトランスパイルされた JavaScript では、ご利用の環境やブラウザーの状態に応じて、(ソース マップを使用して) TypeScript ファイルでトランスパイルされた JavaScript またはそのマップされた場所でブレークポイントにヒットする場合があります。 どちらの場合も、コードをステップ実行して、変数を確認できます
+    前に実行した手順および使用している環境やブラウザーの状態に応じて、トランスパイルされた *.js* ファイル内またはソース ファイル内で、ブレークポイントにヒットする可能性があります。 どちらの場合も、コードをステップ実行して、変数を確認できます
 
-    * TypeScript ファイルのコードを中断する必要があるときにできない場合は、前の手順で説明したデバッガーをアタッチするための **[プロセスにアタッチ]** を使用します。 次に、ソリューション エクスプローラーで **[スクリプト ドキュメント]**  >  **[filename.tsx]** の順に開き、動的に生成された TypeScript ファイルを開いて、ブレークポイントを設定し、ブラウザーでページを更新します (`return` ステートメントや `var` 宣言など、ブレークポイントを許可するコード行にブレークポイントを設定します)。
+   * TypeScript、JSX、または *.vue* ソース ファイル内のコードを中断する必要があるときに、それができない場合は、「[トラブルシューティング](#troubleshooting_source_maps)」のセクションにある説明に従って、環境が正しく設定されていることを確認します。
 
-        または、TypeScript ファイル内のコードで中断する必要があるときにできない場合は、TypeScript ファイルで `debugger;` ステートメントを使うか、代わりに Chrome の開発者ツールでブレークポイントを設定してみてください。
+   * トランスパイルされた JavaScript ファイル (*app-bundle.js* など) 内のコードを中断する必要があるときに、それができない場合は、ソース マップ ファイルである *filename.js.map* を削除します。
 
-    * トランスパイルされた JavaScript ファイル (*app-bundle.js* など) 内のコードで中断する必要があるときにできない場合は、ソース マップ ファイルである *filename.js.map* を削除します。
+### <a name="troubleshooting_source_maps"></a>ブレークポイントとソース マップのトラブルシューティング
 
-     > [!TIP]
-     > 以上の手順に従って初めてプロセスにアタッチした後は、 **[デバッグ]**  >  **[プロセスに再アタッチする]** を選ぶことで、同じプロセスにすぐに再アタッチできます。
+TypeScript、JSX、または *.vue* ソース ファイル内のコードを中断する必要があるときに、それができない場合は、前の手順で説明したデバッガーをアタッチするための **[プロセスにアタッチ]** を使用します。 環境が正しく設定されていることを確認してください。
 
-## <a name="generate_sourcemaps"></a> デバッグ用のソース マップを生成する
+* ブラウザーをデバッグ モードで実行できるように、Chrome 拡張機能を含むすべてのブラウザー インスタンスを (タスク マネージャーを使用して) 閉じます。
+      
+* 必ず[ブラウザーをデバッグ モードで起動](#prepare_the_browser_for_debugging)します。
+
+* ソース マップ ファイルにソース ファイルへの正しい参照が含まれていること、*webpack:///* などのサポートされていないプレフィックスが含まれていないことを確認します。そうでないと Visual Studio デバッガーでソース ファイルを検索できません。 たとえば、*webpack:///.app.tsx* のような参照は、 *./app.tsx* に修正される可能性があります。 これは、ソース マップ ファイル内で手動で行うことも、カスタム ビルド構成を使用して行うこともできます。 詳細については、「[デバッグ用のソース マップを生成する](#generate_source_maps)」を参照してください。
+
+または、ソース ファイル (*app.tsx* など) 内のコードを中断する必要があるときに、それができない場合は、ソース ファイル内で `debugger;` ステートメントを使うか、代わりに Chrome の開発者ツール (または Microsoft Edge の F12 ツール) でブレークポイントを設定してみてください。
+
+## <a name="generate_source_maps"></a> デバッグ用のソース マップを生成する
 
 Visual Studio には、JavaScript ソース ファイルでソース マップを使用して生成する機能があります。 これは多くの場合、ソースが TypeScript や Babel のようなトランスパイラによって縮小または作成されている場合に必要です。 使用できるオプションはプロジェクトの種類によって異なります。
 
-* Visual Studio の TypeScript プロジェクトでは、既定でソース マップが生成されます。
+* Visual Studio の TypeScript プロジェクトでは、既定でソース マップが生成されます。 詳細については、「[tsconfig.json ファイルを使用してソース マップを構成する](#configure_source_maps)」を参照してください。
 
-* JavaScript プロジェクトでは、webpack などのバンドラー、およびプロジェクトに追加できる、TypeScript コンパイラ (または Babel) などのコンパイラを使用して、ソース マップを生成する必要があります。 TypeScript コンパイラの場合は、*tsconfig.json* ファイルを追加する必要もあります。 基本的な webpack 構成を使用してこれを行う方法を示す例については、[React を使用した Node.js アプリの作成](../javascript/tutorial-nodejs-with-react-and-jsx.md)に関するページを参照してください。
+* JavaScript プロジェクトでは、webpack などのバンドラーと、プロジェクトに追加できる TypeScript コンパイラ (または Babel) などのコンパイラを使用して、ソース マップを生成することができます。 TypeScript コンパイラの場合は、*tsconfig.json* ファイルを追加して `sourceMap` コンパイラ オプションを設定する必要もあります。 基本的な webpack 構成を使用してこれを行う方法を示す例については、[React を使用した Node.js アプリの作成](../javascript/tutorial-nodejs-with-react-and-jsx.md)に関するページを参照してください。
 
 > [!NOTE]
-> ソース マップを初めて使用する場合は、続行する前に「[Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)」 (JavaScript ソース マップの概要) をお読みください。
+> ソース マップを初めて使用する場合は、続行する前に「[Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)」 (JavaScript ソース マップの概要) をお読みください。 
 
 ソース マップの詳細設定を構成するには、*tsconfig.json* と、TypeScript プロジェクトのプロジェクト設定の両方ではなく、いずれかを使用します。
 
-### <a name="configure-source-maps-using-a-tsconfigjson-file"></a>tsconfig.json ファイルを使用してソース マップを構成する
+Visual Studio を使用したデバッグを有効にするには、生成されたソース マップ内のソース ファイルへの参照が正しいことを確認する必要があります (テストが必要な場合があります)。 たとえば、webpack を使用している場合、ソース マップ ファイル内の参照には *webpack:///* プレフィックスが含まれています。これにより、Visual Studio で TypeScript または JSX ソース ファイルを検索できなくなります。 具体的には、デバッグの目的でこの問題を修正する場合、ソース ファイル (*app.tsx* など) への参照を、*webpack:///./app.tsx* などから *./app.tsx* などのように変更する必要があります。そうすることでデバッグが有効になります (パスはソース ファイルの相対パスです)。 次の例は、Visual Studio で使用できるように、最も一般的なバンドラーの 1 つである webpack でソース マップを構成する方法を示しています。
 
-*tsconfig.json* ファイルをプロジェクトに追加する場合、Visual Studio ではディレクトリ ルートが TypeScript プロジェクトとして扱われます。 ファイルを追加するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[追加]、[新しい項目]、[Web]、[スクリプト]、[TypeScript JSON 構成ファイル]** の順に選択します。 *tsconfig.json* ファイルは、次のようにプロジェクトに追加されます。
+(webpack のみ) JSX ファイルの TypeScript で (トランスパイルされた JavaScript ファイルではなく) ブレークポイントを設定する場合は、webpack の構成を更新する必要があります。 たとえば、*webpack-config.js* では、次のコードを置き換えることが必要な場合があります。
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // This is an example of the filename in your project
+  },
+```
+
+を、次のコードで置換します。
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // Replace with the filename in your project
+    devtoolModuleFilenameTemplate: '[resource-path]'  // Removes the webpack:/// prefix
+  },
+```
+
+これは、Visual Studio でクライアント側コードのデバッグを有効にするための開発専用の設定です。
+
+複雑なシナリオの場合は、ブラウザー ツール (**F12**) がデバッグに最適な場合があります (カスタム プレフィックスを変更する必要がないため)。
+
+### <a name="configure_source_maps"></a>tsconfig.json ファイルを使用してソース マップを構成する
+
+*tsconfig.json* ファイルをプロジェクトに追加する場合、Visual Studio ではディレクトリ ルートが TypeScript プロジェクトとして扱われます。 ファイルを追加するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[追加] > [新しい項目] > [TypeScript JSON 構成ファイル]** を選択します。 *tsconfig.json* ファイルは、次のようにプロジェクトに追加されます。
 
 ```json
 {
@@ -155,7 +241,7 @@ Visual Studio には、JavaScript ソース ファイルでソース マップ�
 
 コンパイラ オプションの詳細については、TypeScript ハンドブックの「[Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)」 (コンパイラ オプション) ページを確認してください。
 
-### <a name="configure-source-maps-using-project-settings"></a>プロジェクト設定を使用してソース マップを構成する
+### <a name="configure-source-maps-using-project-settings-typescript-project"></a>プロジェクト設定を使用してソース マップを構成する (TypeScript プロジェクト)
 
 プロジェクトを右クリックし、 **[プロジェクト]、[プロパティ]、[TypeScript ビルド]、[デバッグ]** の順に選択することで、プロジェクト プロパティを使用してソース マップ設定を構成することもできます。
 
@@ -167,9 +253,14 @@ Visual Studio には、JavaScript ソース ファイルでソース マップ�
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>Razor (ASP.NET) を使用して動的ファイルで JavaScript をデバッグする
 
-Visual Studio では、Chrome および Internet Explorer のみのデバッグ サポートが提供されます。 ブレークポイントは自動的に、HTML ファイルの JavaScript/TypeScript および埋め込みスクリプトにアタッチされます。
+::: moniker range=">=vs-2019"
+Visual Studio 2019 以降、Visual Studio では Chrome および Microsoft Edge (Chromium) のみのデバッグ サポートが提供されます。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio では、Chrome および Internet Explorer のみのデバッグ サポートが提供されます。
+::: moniker-end
 
-動的に生成されたファイルのデバッグは自動ではありません。 Razor 構文 (cshtml、vbhtml) で生成されたファイルのブレークポイントに自動的にヒットすることはできません。 この種のファイルのデバッグに使用できる方法は、次の 2 つです。
+ただし、Razor 構文 (cshtml、vbhtml) で生成されたファイルのブレークポイントに自動的にヒットすることはできません。 この種のファイルのデバッグに使用できる方法は、次の 2 つです。
 
 * **中断する場所に `debugger;` ステートメントを配置する**:これにより、動的スクリプトで実行が停止され、作成中にすぐにデバッグが開始されます。
 * **Visual Studio でページを読み込み、動的なドキュメントを開く**:デバッグ中に動的ファイルを開き、ブレークポイントを設定し、この方法が機能するようにページを更新する必要があります。 Chrome と Internet Explorer のどちらを使用するかに応じて、次の方法のいずれかを使ってファイルを見つけます。
@@ -179,6 +270,12 @@ Visual Studio では、Chrome および Internet Explorer のみのデバッグ 
     > [!NOTE]
     > Chrome を使用する場合、 **\<script> タグ間に使用できるソースがない**という内容のメッセージが表示される場合があります。 これは問題ありませんので、デバッグを続けることができます。
 
+   ::: moniker range=">=vs-2019"
+   Microsoft Edge (Chromium) の場合は、Chrome と同じ手順を使用します。
+   ::: moniker-end
+
+   ::: moniker range="vs-2017"
    Internet Explorer の場合は、 **[ソリューション エクスプローラー]、[スクリプト ドキュメント]、[Windows Internet Explorer]、[YourPageName]** の順に移動します。
+   ::: moniker-end
 
 詳細については、「[Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/)」 (Google Chrome での ASP.NET プロジェクトのクライアント側デバッグ) をご覧ください。

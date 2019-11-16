@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516323"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189494"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -88,8 +88,9 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 ## <a name="modify-the-responsejson-file"></a>response.json file を変更する
 
-response.json を変更し、セットアップの実行時に使用される既定値を設定できます。  たとえば、特定のワークロード セットが自動的に選択されるように `response.json` ファイルを構成できます。
-詳細については、「[Automate Visual Studio installation with a response file](automated-installation-with-response-file.md)」 (応答ファイルで Visual Studio インストールを自動化する) を参照してください。
+response.json を変更し、セットアップの実行時に使用される既定値を設定できます。  たとえば、特定のワークロード セットが自動的に選択されるように `response.json` ファイルを構成できます。 詳細については、「[Automate Visual Studio installation with a response file](automated-installation-with-response-file.md)」 (応答ファイルで Visual Studio インストールを自動化する) を参照してください。
+
+Visual Studio ブートストラップを response.json ファイルとペアリングしている場合に Visual Studio ブートストラップがエラーをスローする問題が発生した場合、対処方法の詳細については、「[Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)」ページの「Failed to parse ID from parent process」 (親プロセスから ID を解析できませんでした) セクションを参照してください。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>ネットワーク共有にレイアウトをコピーする
 
@@ -219,7 +220,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!IMPORTANT]
 > エラーを防ぐには、レイアウト パス全体が 80 文字未満であることを確認してください。
->
+
 > [!TIP]
 > バッチ ファイルの一部として実行するとき、`--wait` オプションを利用すると、`vs_enterprise.exe` プロセスはインストールの完了を待ち、それから終了コードを返します。
 >
@@ -287,6 +288,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 - [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
 - [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
+- [Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md)
 - [ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)
 - [Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing/)
 - [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)

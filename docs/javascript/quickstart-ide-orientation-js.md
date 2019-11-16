@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180059"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636588"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE の表示の紹介
 
@@ -90,7 +90,7 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
 1. 表示された **[新しいプロジェクト]** ダイアログ ボックスで、既定のプロジェクト名をそのまま使用し、 **[OK]** を選択します。
 ::: moniker-end
 
-   プロジェクトが作成され、*server.cs* という名前のファイルが **[エディター]** ウィンドウに開きます。 **エディター**にファイルの内容が表示されます。Visual Studio でのコード作成作業のほとんどは、このエディターで行います。
+   プロジェクトが作成され、*server.js* という名前のファイルが **[エディター]** ウィンドウに開きます。 **エディター**にファイルの内容が表示されます。Visual Studio でのコード作成作業のほとんどは、このエディターで行います。
 
    ![Visual Studio のエディター](media/editor.png)
 

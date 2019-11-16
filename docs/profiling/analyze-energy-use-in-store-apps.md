@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128318"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144734"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP アプリでのエネルギー使用の分析
 
@@ -125,10 +126,10 @@ if (performance && performance.mark) {
 
 |||
 |-|-|
-|![手順 1](../profiling/media/procguid_1.png "ProcGuid_1")|レポート ファイルの名前は、Report*YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|
-|![手順 2](../profiling/media/procguid_2.png "ProcGuid_2")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|
-|![手順 3](../profiling/media/procguid_3.png "ProcGuid_3")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|
-|![手順 4](../profiling/media/procguid_4.png "ProcGuid_4")|**[消費電力]** グラフは、プロファイル セッション中にデバイス リソースによって引き起こされる電源出力の変化を系列別に表示する折れ線グラフです。 エネルギー消費量プロファイラーは、CPU、ネットワーク アクティビティ、および画面表示によって使用された電力を追跡します。|
+|![ステップ 1](../profiling/media/procguid_1.png "ProcGuid_1")|レポート ファイルの名前は、Report*YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|
+|![ステップ 2](../profiling/media/procguid_2.png "ProcGuid_2")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|
+|![ステップ 3](../profiling/media/procguid_3.png "ProcGuid_3")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|
+|![ステップ 4](../profiling/media/procguid_4.png "ProcGuid_4")|**[消費電力]** グラフは、プロファイル セッション中にデバイス リソースによって引き起こされる電源出力の変化を系列別に表示する折れ線グラフです。 エネルギー消費量プロファイラーは、CPU、ネットワーク アクティビティ、および画面表示によって使用された電力を追跡します。|
 |![手順 5](../profiling/media/procguid_6.png "ProcGuid_6")|**[リソース (オン/オフ)]**  グラフは、ネットワークのエネルギー コストの詳細を示します。 **[ネットワーク]** バーは、ネットワーク接続が開かれていた時間を表します。 **[データ転送]** 子バーは、アプリがネットワーク経由でデータを受信または送信していた時間です。|
 |![手順 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**[エネルギー使用の概要]** は、選択されたタイムラインで CPU、ネットワーク アクティビティ、および画面表示によって使用された総エネルギーの割合を示します。|
 
@@ -143,7 +144,7 @@ if (performance && performance.mark) {
 
  **[ネットワーク]** バーと **[データ転送]** バーが、一連の小さいデータ パケットを断続的に送信するために接続が長期間開かれていることを示している場合は、データをバッチ処理して 1 回の伝送で送信することで、ネットワークが開かれている時間を短縮し、エネルギー コストを削減することができます。
 
- ![エネルギー消費の概要ペイン](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
+ ![[エネルギー消費の概要]](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary") ウィンドウ
 
  ディスプレイのエネルギー コストは、あまり制御できません。 ほとんどの画面では、暗い色より明るい色を表示する際に多くのエネルギーが必要になるため、暗い背景を使用することはエネルギー コストを削減する方法の 1 つです。
 
