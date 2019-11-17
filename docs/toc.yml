@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 関連項目
+        - name: 辞書／辞典／その他
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -166,404 +166,418 @@
       href: python/
     - name: Node.js
       href: javascript/
-- name: 使い方ガイド
+- name: 開発
   items:
-    - name: 開発
+    - name: コードを整理して編集する
+      href: ide/index-writing-code.yml
+    - name: IDE 内で移動する
+      href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: ソリューションとプロジェクト
       items:
-        - name: 作業開始
-          href: ide/index-writing-code.yml
-        - name: IDE 内で移動する
-          href: ide/how-to-move-around-in-the-visual-studio-ide.md
-        - name: ソリューションとプロジェクト
+        - name: ソリューションとプロジェクトの使用
+          href: ide/solutions-and-projects-in-visual-studio.md
+        - name: 新しいプロジェクトを作成する
+          href: ide/create-new-project.md
+        - name: ソリューションとプロジェクトを作成する
+          href: ide/creating-solutions-and-projects.md
+        - name: リポジトリからプロジェクトを開く
+          href: get-started/tutorial-open-project-from-repo.md
+        - name: プロジェクトの移植、移行、およびアップグレード
+          href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+        - name: プロジェクトおよびソリューションのプロパティの管理
+          href: ide/managing-project-and-solution-properties.md
+        - name: プロジェクト参照
           items:
-            - name: ソリューションとプロジェクトの使用
-              href: ide/solutions-and-projects-in-visual-studio.md
-            - name: 新しいプロジェクトを作成する
-              href: ide/create-new-project.md
-            - name: ソリューションとプロジェクトを作成する
-              href: ide/creating-solutions-and-projects.md
-            - name: リポジトリからプロジェクトを開く
-              href: get-started/tutorial-open-project-from-repo.md
-            - name: プロジェクトの移植、移行、およびアップグレード
-              href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: プロジェクトおよびソリューションのプロパティの管理
-              href: ide/managing-project-and-solution-properties.md
-            - name: プロジェクト参照
-              items:
-                - name: プロジェクト内の参照の管理
-                  href: ide/managing-references-in-a-project.md
-                - name: 参照マネージャーを使用して参照を追加または削除する
-                  href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: インポートした名前空間を追加または削除する (Visual Basic)
-                  href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
-                - name: 壊れた参照のトラブルシューティング
-                  href: ide/troubleshooting-broken-references.md
-            - name: アプリケーション リソースの管理 (.NET)
-              href: ide/managing-application-resources-dotnet.md
-            - name: アプリケーション設定 (.NET)
-              items:
-                - name: アプリケーション設定の管理 (.NET)
-                  href: ide/managing-application-settings-dotnet.md
-                - name: 'C# プロジェクトへのアプリケーション構成ファイルの追加'
-                  href: ide/how-to-add-app-config-file.md
-            - name: マニフェストに署名する
-              items:
-                - name: アセンブリおよびマニフェストへの署名の管理
-                  href: ide/managing-assembly-and-manifest-signing.md
-                - name: アプリケーション マニフェストと配置マニフェストの署名
-                  href: ide/how-to-sign-application-and-deployment-manifests.md
-            - name: 'アプリケーション アイコンを指定する (Visual Basic、C#)'
-              href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
-            - name: フレームワークをターゲットにする
-              href: ide/visual-studio-multi-targeting-overview.md
-            - name: テンプレートを作成する
-              items:
-                - name: プロジェクト テンプレートと項目テンプレートを作成する
-                  href: ide/creating-project-and-item-templates.md
-                - name: テンプレートにタグを追加する
-                  href: ide/template-tags.md
-                - name: プロジェクト テンプレートを作成する
-                  href: ide/how-to-create-project-templates.md
-                - name: 複数プロジェクトのテンプレートを作成する
-                  href: ide/how-to-create-multi-project-templates.md
-                - name: 項目テンプレートを作成する
-                  href: ide/how-to-create-item-templates.md
-                - name: 複数ファイルの項目テンプレートを作成する
-                  href: ide/how-to-create-multi-file-item-templates.md
-                - name: Web テンプレートを作成する
-                  href: ide/how-to-manually-create-web-templates.md
-                - name: テンプレートの問題を解決する
-                  href: ide/how-to-troubleshoot-templates.md
-            - name: プロジェクトと項目テンプレートを見つける
-              href: ide/how-to-locate-and-organize-project-and-item-templates.md
-            - name: テンプレートをカスタマイズする
-              items:
-                - name: プロジェクト テンプレートと項目テンプレートのカスタマイズ
-                  href: ide/customizing-project-and-item-templates.md
-                - name: 既存のテンプレートを更新する
-                  href: ide/how-to-update-existing-templates.md
-                - name: テンプレート内のパラメーターを置き換える
-                  href: ide/how-to-substitute-parameters-in-a-template.md
-                - name: テンプレート パラメーター
-                  href: ide/template-parameters.md
-            - name: 64 ビット サポート
-              href: ide/visual-studio-ide-64-bit-support.md
-        - name: プロジェクトやソリューションなしで開発する
+            - name: プロジェクト内の参照の管理
+              href: ide/managing-references-in-a-project.md
+            - name: 参照マネージャーを使用して参照を追加または削除する
+              href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
+            - name: インポートした名前空間を追加または削除する (Visual Basic)
+              href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
+            - name: 壊れた参照のトラブルシューティング
+              href: ide/troubleshooting-broken-references.md
+        - name: アプリケーション リソースの管理 (.NET)
+          href: ide/managing-application-resources-dotnet.md
+        - name: アプリケーション設定 (.NET)
           items:
-            - name: '方法: プロジェクトを使用せずに開発する'
-              displayName: Open folder
-              href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
-            - name: ビルドのカスタマイズとタスクのデバッグ
-              displayName: makefile tasks.vs.json
-              href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-        - name: プロジェクトまたはリポジトリへの接続
-          displayName: Azure DevOps VSTS GitHub
-          href: ide/connect-team-project.md
-        - name: エディター
+            - name: アプリケーション設定の管理 (.NET)
+              href: ide/managing-application-settings-dotnet.md
+            - name: 'C# プロジェクトへのアプリケーション構成ファイルの追加'
+              href: ide/how-to-add-app-config-file.md
+        - name: マニフェストに署名する
           items:
-            - name: エディターを使用する
-              href: ide/writing-code-in-the-code-and-text-editor.md
-            - name: 検索と置換
-              items:
-                - name: テキストの検索と置換
-                  href: ide/finding-and-replacing-text.md
-                - name: '[正規表現を使用する]'
-                  dispayName: RegEx
-                  href: ide/using-regular-expressions-in-visual-studio.md
-                - name: '[検索/コマンド] ボックス'
-                  href: ide/find-command-box.md
-                - name: '[フォルダーを指定して検索]'
-                  href: ide/find-in-files.md
-                - name: '[フォルダーを指定して置換]'
-                  href: ide/replace-in-files.md
-            - name: エンコーディング
-              items:
-                - name: エンコーディングと改行
-                  href: ide/encodings-and-line-breaks.md
-                - name: エンコーディングを使用してファイルを保存および開く
-                  href: ide/how-to-save-and-open-files-with-encoding.md
-            - name: アウトライン
-              displayName: Expand and collapse
-              href: ide/outlining.md
-            - name: コードの生成とリファクタリング
-              items:
-                - name: コードを生成し、修正する
-                  href: ide/code-generation-in-visual-studio.md
-                - name: コード スニペット
-                  items:
-                    - name: コード スニペットを使用する
-                      href: ide/code-snippets.md
-                    - name: C++ コード スニペット リファレンス
-                      href: ide/visual-csharp-code-snippets.md
-                    - name: C++ コード スニペット リファレンス
-                      href: ide/visual-cpp-code-snippets.md
-                    - name: XML コメントを挿入する
-                      href: ide/reference/generate-xml-documentation-comments.md
-                    - name: surround-with コード スニペットを使用する
-                      href: ide/how-to-use-surround-with-code-snippets.md
-                    - name: ベスト プラクティス
-                      href: ide/best-practices-for-using-code-snippets.md
-                    - name: コード スニペットを作成する
-                      items:
-                        - name: 'チュートリアル: コード スニペットを作成する'
-                          href: ide/walkthrough-creating-a-code-snippet.md
-                        - name: コード スニペットを配布する
-                          href: ide/how-to-distribute-code-snippets.md
-                        - name: コード スニペットの関数
-                          href: ide/code-snippet-functions.md
-                        - name: コード スニペット スキーマ リファレンス
-                          href: ide/code-snippets-schema-reference.md
-                        - name: スニペットのトラブルシューティング
-                          href: ide/troubleshooting-snippets.md
-                - name: クイック アクション
-                  href: ide/quick-actions.md
-                  displayName: light bulb screwdriver suggestions
-                  items:
-                    - name: 共通のクイック アクション
-                      href: ide/common-quick-actions.md
-                    - name: クラス/型の生成
-                      href: ide/reference/generate-class-type.md
-                    - name: メソッドの生成
-                      href: ide/reference/generate-method.md
-                    - name: フィールド/プロパティ/ローカルの生成
-                      href: ide/reference/generate-field-property-local.md
-                    - name: コンストラクターの生成
-                      href: ide/reference/generate-constructor.md
-                    - name: デコンストラクターの生成
-                      href: ide/reference/generate-deconstructor.md
-                    - name: メソッドにパラメーターを追加する
-                      href: ide/reference/add-parameter.md
-                    - name: オーバーライドの生成
-                      href: ide/reference/generate-override.md
-                    - name: Equals および GetHashCode メソッドのオーバーライドの生成
-                      href: ide/reference/generate-equals-gethashcode-methods.md
-                    - name: 使用の生成
-                      href: ide/reference/generate-usings.md
-                    - name: 抽象クラスの実装
-                      href: ide/reference/implement-abstract-class.md
-                    - name: インターフェイスの実装
-                      href: ide/reference/implement-interface.md
-                    - name: ローカル変数の導入
-                      href: ide/reference/introduce-local-variable.md
-                - name: コードのリファクタリング
-                  items:
-                    - name: 概要
-                      displayName: refactoring
-                      href: ide/refactoring-in-visual-studio.md
-                    - name: メソッド シグネチャの変更
-                      href: ide/reference/change-method-signature.md
-                    - name: 匿名型をクラスに変換する
-                      href: ide/reference/convert-anonymous-type-to-class.md
-                    - name: 匿名型をタプルに変換する
-                      href: ide/reference/convert-anonymous-type-to-tuple.md
-                    - name: For ループと Foreach ステートメントの間で変換する
-                      href: ide/reference/convert-for-loop-to-foreach.md
-                    - name: Get メソッドとプロパティの間で変換する
-                      href: ide/reference/convert-get-method-to-property.md
-                    - name: ローカル関数をメソッドに変換する
-                      href: ide/reference/convert-local-function-method.md
-                    - name: Foreach ループを LINQ に変換する
-                      href: ide/reference/convert-foreach-linq.md
-                    - name: LINQ クエリを foreach ステートメントに変換する
-                      href: ide/reference/convert-linq-to-foreach.md
-                    - name: switch ステートメントを switch 式に変換する
-                      href: ide/reference/convert-switch-statement-to-switch-expression.md
-                    - name: フィールドのカプセル化
-                      href: ide/reference/encapsulate-field.md
-                    - name: インターフェイスの抽出
-                      href: ide/reference/extract-interface.md
-                    - name: メソッドの抽出
-                      href: ide/reference/extract-method.md
-                    - name: パラメーターを生成する
-                      href: ide/reference/generate-parameter.md
-                    - name: インラインの一時変数
-                      href: ide/reference/inline-temporary-variable.md
-                    - name: インポートされていない型に対する IntelliSense 入力候補
-                      href: ide/reference/intellisense-completion-unimported-types.md
-                    - name: 条件式および論理演算を反転させる
-                      href: ide/reference/invert-conditional-logical.md
-                    - name: if ステートメントを反転させる
-                      href: ide/reference/invert-if-statement.md
-                    - name: 参照の近くへの宣言の移動
-                      href: ide/reference/move-declaration-near-reference.md
-                    - name: 一致するファイルへの型の移動
-                      href: ide/reference/move-type-to-matching-file.md
-                    - name: 名前空間に型を移動する
-                      href: ide/reference/move-type-to-namespace.md
-                    - name: メンバーを取り出す
-                      href: ide/reference/pull-members-up.md
-                    - name: IntelliSense を使用した正規表現の入力
-                      href: ide/reference/regex-completion-through-intellisense.md
-                    - name: 到達できないコードの削除
-                      href: ide/reference/remove-unreachable-code.md
-                    - name: 名前の変更
-                      href: ide/reference/rename.md
-                    - name: using の並べ替え
-                      href: ide/reference/sort-usings.md
-                    - name: if ステートメントの分割または結合
-                      href: ide/reference/split-or-merge-if-statement.md
-                    - name: 名前空間とフォルダー名を同期する
-                      href: ide/reference/sync-namespace-and-folder-name.md
-                    - name: 型とファイル名の同期
-                      href: ide/reference/sync-type-and-file.md
-                    - name: 明示的な型の使用
-                      href: ide/reference/convert-var-to-explicit-type.md
-                    - name: ラムダ式またはブロックの本体の使用
-                      href: ide/reference/use-block-body-lambda.md
-                    - name: 未使用値の割り当て、変数、およびパラメーター
-                      href: ide/reference/unused-values-parameters.md
-                    - name: 呼び出しチェーンのラップおよび配置
-                      href: ide/reference/wrap-and-align-call-chains.md
-                    - name: ラップ、インデント、およびパラメーターの整列
-                      href: ide/reference/wrap-align-indent-parameters.md
-                - name: 'チュートリアル: 使用法からのコードの生成'
-                  href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: IntelliSense
-              items:
-                - name: IntelliSense を使用する
-                  href: ide/using-intellisense.md
-                - name: Visual Basic の IntelliSense
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: 'C# IntelliSense'
-                  href: ide/visual-csharp-intellisense.md
-                - name: JavaScript IntelliSense
-                  href: ide/javascript-intellisense.md
-                - name: Visual C++ IntelliSense
-                  href: ide/visual-cpp-intellisense.md
-                - name: IntelliSense の C++ プロジェクトを構成する
-                  href: ide/visual-cpp-intellisense-configuration.md
-            - name: コード内で移動する
-              items:
-                - name: コードの移動
-                  href: ide/navigating-code.md
-                - name: コード内の参照の検索
-                  href: ide/finding-references.md
-                - name: 型とメンバーの定義の表示
-                  items:
-                    - name: '[定義へ移動] と [定義をここに表示]'
-                      href: ide/go-to-and-peek-definition.md
-                    - name: '[定義をここに表示] を使用してコードを表示および編集する'
-                      href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
-                - name: 移動コマンドを使用したコードの検索
-                  href: ide/go-to.md
-            - name: エディターのカスタマイズ
-              items:
-                - name: テキストの大文字と小文字の変更
-                  href: ide/how-to-change-text-case-in-the-editor.md
-                - name: エディター モードを管理する
-                  href: ide/how-to-manage-editor-modes.md
-                - name: エディター ウィンドウを管理する
-                  href: ide/how-to-manage-editor-windows.md
-                - name: フォントと色を変更する
-                  href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
-                - name: '[右端で折り返す] の管理'
-                  href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
-                - name: 行番号を表示
-                  href: ide/reference/how-to-display-line-numbers-in-the-editor.md
-                - name: URL をリンクとして表示する
-                  href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
-                - name: 言語固有のエディター オプションの設定
-                  href: ide/reference/setting-language-specific-editor-options.md
-            - name: コード スタイル
-              items:
-                - name: コードのスタイル設定
-                  href: /visualstudio/ide/code-styles-and-code-cleanup
-                - name: コード スタイルに関する EditorConfig ファイルの使用
-                  displayName: Configure code style analyzers
-                  href: ide/create-portable-custom-editor-options.md
-                - name: .NET のコーディング規則
-                  items:
-                    - name: 概要
-                      href: ide/editorconfig-code-style-settings-reference.md
-                    - name: 言語規則
-                      href: ide/editorconfig-language-conventions.md
-                    - name: 書式規則
-                      href: ide/editorconfig-formatting-conventions.md
-                    - name: 名前付け規則
-                      href: ide/editorconfig-naming-conventions.md
-            - name: スクロール バーのカスタマイズ
-              href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
-            - name: コードへのブックマークの設定
-              href: ide/setting-bookmarks-in-code.md
-            - name: CodeLens
-              items:
-                - name: CodeLens によるコードの履歴の検索
-                  href: ide/find-code-changes-and-other-history-with-codelens.md
-                - name: CodeIndex コマンド
-                  href: ide/codeindex-command.md
-            - name: エディターでサポートされるその他の言語
-              href: ide/adding-visual-studio-editor-support-for-other-languages.md
-        - name: コード ビュー
+            - name: アセンブリおよびマニフェストへの署名の管理
+              href: ide/managing-assembly-and-manifest-signing.md
+            - name: アプリケーション マニフェストと配置マニフェストの署名
+              href: ide/how-to-sign-application-and-deployment-manifests.md
+        - name: 'アプリケーション アイコンを指定する (Visual Basic、C#)'
+          href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
+        - name: フレームワークをターゲットにする
+          href: ide/visual-studio-multi-targeting-overview.md
+        - name: テンプレートを作成する
           items:
-            - name: コードの構造の表示
-              href: ide/viewing-the-structure-of-code.md
-            - name: '[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン'
-              href: ide/class-view-and-object-browser-icons.md
-        - name: タスク一覧の使用
-          href: ide/using-the-task-list.md
-        - name: クラス デザイナー
+            - name: プロジェクト テンプレートと項目テンプレートを作成する
+              href: ide/creating-project-and-item-templates.md
+            - name: テンプレートにタグを追加する
+              href: ide/template-tags.md
+            - name: プロジェクト テンプレートを作成する
+              href: ide/how-to-create-project-templates.md
+            - name: 複数プロジェクトのテンプレートを作成する
+              href: ide/how-to-create-multi-project-templates.md
+            - name: 項目テンプレートを作成する
+              href: ide/how-to-create-item-templates.md
+            - name: 複数ファイルの項目テンプレートを作成する
+              href: ide/how-to-create-multi-file-item-templates.md
+            - name: Web テンプレートを作成する
+              href: ide/how-to-manually-create-web-templates.md
+            - name: テンプレートの問題を解決する
+              href: ide/how-to-troubleshoot-templates.md
+        - name: プロジェクトと項目テンプレートを見つける
+          href: ide/how-to-locate-and-organize-project-and-item-templates.md
+        - name: テンプレートをカスタマイズする
           items:
-            - name: クラス デザイナーでクラスをデザインする
-              href: ide/class-designer/designing-and-viewing-classes-and-types.md
-            - name: プロジェクトにクラス ダイアグラムを追加する
-              href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
-            - name: クラス ダイアグラムをカスタマイズする
-              href: ide/class-designer/how-to-customize-class-diagrams.md
-            - name: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする
-              href: ide/class-designer/how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md
-            - name: イメージとしてクラス ダイアグラムをエクスポートする
-              href: ide/class-designer/how-to-export-class-diagrams-as-images.md
-            - name: クラス ダイアグラムを印刷する
-              href: ide/class-designer/how-to-print-class-diagrams.md
-            - name: クラス ダイアグラムにコメントを追加する
-              href: ide/class-designer/how-to-add-comments-to-class-diagrams.md
-            - name: クラスおよび型の作成
+            - name: プロジェクト テンプレートと項目テンプレートのカスタマイズ
+              href: ide/customizing-project-and-item-templates.md
+            - name: 既存のテンプレートを更新する
+              href: ide/how-to-update-existing-templates.md
+            - name: テンプレート内のパラメーターを置き換える
+              href: ide/how-to-substitute-parameters-in-a-template.md
+            - name: テンプレート パラメーター
+              href: ide/template-parameters.md
+        - name: 64 ビット サポート
+          href: ide/visual-studio-ide-64-bit-support.md
+    - name: プロジェクトやソリューションなしで開発する
+      items:
+        - name: '方法: プロジェクトを使用せずに開発する'
+          displayName: Open folder
+          href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
+        - name: ビルドのカスタマイズとタスクのデバッグ
+          displayName: makefile tasks.vs.json
+          href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: プロジェクトまたはリポジトリへの接続
+      displayName: Azure DevOps VSTS GitHub
+      href: ide/connect-team-project.md
+    - name: エディター
+      items:
+        - name: エディターを使用する
+          href: ide/writing-code-in-the-code-and-text-editor.md
+        - name: 検索と置換
+          items:
+            - name: テキストの検索と置換
+              href: ide/finding-and-replacing-text.md
+            - name: '[正規表現を使用する]'
+              dispayName: RegEx
+              href: ide/using-regular-expressions-in-visual-studio.md
+            - name: '[検索/コマンド] ボックス'
+              href: ide/find-command-box.md
+            - name: '[フォルダーを指定して検索]'
+              href: ide/find-in-files.md
+            - name: '[フォルダーを指定して置換]'
+              href: ide/replace-in-files.md
+        - name: エンコーディング
+          items:
+            - name: エンコーディングと改行
+              href: ide/encodings-and-line-breaks.md
+            - name: エンコーディングを使用してファイルを保存および開く
+              href: ide/how-to-save-and-open-files-with-encoding.md
+        - name: アウトライン
+          displayName: Expand and collapse
+          href: ide/outlining.md
+        - name: コードの生成とリファクタリング
+          items:
+            - name: コードを生成し、修正する
+              href: ide/code-generation-in-visual-studio.md
+            - name: コード スニペット
               items:
-                - name: 型を作成する
-                  href: ide/class-designer/how-to-create-types.md
-                - name: 型間で継承を作成する
-                  href: ide/class-designer/how-to-create-inheritance-between-types.md
-                - name: 型間で関連付けを作成する
-                  href: ide/class-designer/how-to-create-associations-between-types.md
-                - name: コレクションの関連付けをビジュアル化する
-                  href: ide/class-designer/how-to-visualize-a-collection-association.md
-                - name: 型メンバーの作成および構成
-                  href: ide/class-designer/creating-and-configuring-type-members.md
-            - name: 型およびリレーションシップの表示
+                - name: コード スニペットを使用する
+                  href: ide/code-snippets.md
+                - name: C++ コード スニペット リファレンス
+                  href: ide/visual-csharp-code-snippets.md
+                - name: C++ コード スニペット リファレンス
+                  href: ide/visual-cpp-code-snippets.md
+                - name: XML コメントを挿入する
+                  href: ide/reference/generate-xml-documentation-comments.md
+                - name: surround-with コード スニペットを使用する
+                  href: ide/how-to-use-surround-with-code-snippets.md
+                - name: ベスト プラクティス
+                  href: ide/best-practices-for-using-code-snippets.md
+                - name: コード スニペットを作成する
+                  items:
+                    - name: 'チュートリアル: コード スニペットを作成する'
+                      href: ide/walkthrough-creating-a-code-snippet.md
+                    - name: コード スニペットを配布する
+                      href: ide/how-to-distribute-code-snippets.md
+                    - name: コード スニペットの関数
+                      href: ide/code-snippet-functions.md
+                    - name: コード スニペット スキーマ リファレンス
+                      href: ide/code-snippets-schema-reference.md
+                    - name: スニペットのトラブルシューティング
+                      href: ide/troubleshooting-snippets.md
+            - name: クイック アクション
+              href: ide/quick-actions.md
+              displayName: light bulb screwdriver suggestions
               items:
-                - name: 既存の型を表示する
-                  href: ide/class-designer/how-to-view-existing-types.md
-                - name: 型間の継承を表示する
-                  href: ide/class-designer/how-to-view-inheritance-between-types.md
-                - name: メンバー表記と関連付け表記
-                  href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
-            - name: クラスおよび型のリファクター
-              href: ide/class-designer/refactoring-classes-and-types.md
-            - name: インターフェイスの実装
-              href: ide/class-designer/how-to-implement-an-interface.md
-            - name: 1 つのクラスを複数の部分クラスに分割する
-              href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
-            - name: Null 許容型を作成する
-              href: ide/class-designer/how-to-create-a-nullable-type.md
-            - name: クラス デザイナーの C++
+                - name: 共通のクイック アクション
+                  href: ide/common-quick-actions.md
+                - name: クラス/型の生成
+                  href: ide/reference/generate-class-type.md
+                - name: メソッドの生成
+                  href: ide/reference/generate-method.md
+                - name: フィールド/プロパティ/ローカルの生成
+                  href: ide/reference/generate-field-property-local.md
+                - name: コンストラクターの生成
+                  href: ide/reference/generate-constructor.md
+                - name: デコンストラクターの生成
+                  href: ide/reference/generate-deconstructor.md
+                - name: メソッドにパラメーターを追加する
+                  href: ide/reference/add-parameter.md
+                - name: オーバーライドの生成
+                  href: ide/reference/generate-override.md
+                - name: Equals および GetHashCode メソッドのオーバーライドの生成
+                  href: ide/reference/generate-equals-gethashcode-methods.md
+                - name: 使用の生成
+                  href: ide/reference/generate-usings.md
+                - name: 抽象クラスの実装
+                  href: ide/reference/implement-abstract-class.md
+                - name: インターフェイスの実装
+                  href: ide/reference/implement-interface.md
+                - name: ローカル変数の導入
+                  href: ide/reference/introduce-local-variable.md
+            - name: コードのリファクタリング
               items:
-                - name: Visual C++ コードを使用する
-                  href: ide/class-designer/working-with-visual-cpp-code.md
-                - name: C++ クラス
-                  href: ide/class-designer/visual-cpp-classes.md
-                - name: C++ 構造体
-                  href: ide/class-designer/visual-cpp-structures.md
-                - name: C++ 列挙型
-                  href: ide/class-designer/visual-cpp-enumerations.md
-                - name: C++ Typedef
-                  href: ide/class-designer/visual-cpp-typedefs.md
-            - name: キーボードとマウスのショートカット
-              href: ide/class-designer/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md
-            - name: クラス デザイナーのエラー
-              href: ide/class-designer/additional-information-about-errors.md
-        - name: コードを改良する
-          href: ide/find-and-fix-code-errors.md
-        - name: Windows フォームの開発
+                - name: 概要
+                  displayName: refactoring
+                  href: ide/refactoring-in-visual-studio.md
+                - name: メソッド シグネチャの変更
+                  href: ide/reference/change-method-signature.md
+                - name: 匿名型をクラスに変換する
+                  href: ide/reference/convert-anonymous-type-to-class.md
+                - name: 匿名型をタプルに変換する
+                  href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: For ループと Foreach ステートメントの間で変換する
+                  href: ide/reference/convert-for-loop-to-foreach.md
+                - name: Get メソッドとプロパティの間で変換する
+                  href: ide/reference/convert-get-method-to-property.md
+                - name: ローカル関数をメソッドに変換する
+                  href: ide/reference/convert-local-function-method.md
+                - name: Foreach ループを LINQ に変換する
+                  href: ide/reference/convert-foreach-linq.md
+                - name: LINQ クエリを foreach ステートメントに変換する
+                  href: ide/reference/convert-linq-to-foreach.md
+                - name: switch ステートメントを switch 式に変換する
+                  href: ide/reference/convert-switch-statement-to-switch-expression.md
+                - name: フィールドのカプセル化
+                  href: ide/reference/encapsulate-field.md
+                - name: インターフェイスの抽出
+                  href: ide/reference/extract-interface.md
+                - name: メソッドの抽出
+                  href: ide/reference/extract-method.md
+                - name: パラメーターを生成する
+                  href: ide/reference/generate-parameter.md
+                - name: インラインの一時変数
+                  href: ide/reference/inline-temporary-variable.md
+                - name: インポートされていない型に対する IntelliSense 入力候補
+                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: 条件式および論理演算を反転させる
+                  href: ide/reference/invert-conditional-logical.md
+                - name: if ステートメントを反転させる
+                  href: ide/reference/invert-if-statement.md
+                - name: 参照の近くへの宣言の移動
+                  href: ide/reference/move-declaration-near-reference.md
+                - name: 一致するファイルへの型の移動
+                  href: ide/reference/move-type-to-matching-file.md
+                - name: 名前空間に型を移動する
+                  href: ide/reference/move-type-to-namespace.md
+                - name: メンバーを取り出す
+                  href: ide/reference/pull-members-up.md
+                - name: IntelliSense を使用した正規表現の入力
+                  href: ide/reference/regex-completion-through-intellisense.md
+                - name: 到達できないコードの削除
+                  href: ide/reference/remove-unreachable-code.md
+                - name: 名前の変更
+                  href: ide/reference/rename.md
+                - name: using の並べ替え
+                  href: ide/reference/sort-usings.md
+                - name: if ステートメントの分割または結合
+                  href: ide/reference/split-or-merge-if-statement.md
+                - name: 名前空間とフォルダー名を同期する
+                  href: ide/reference/sync-namespace-and-folder-name.md
+                - name: 型とファイル名の同期
+                  href: ide/reference/sync-type-and-file.md
+                - name: 明示的な型の使用
+                  href: ide/reference/convert-var-to-explicit-type.md
+                - name: ラムダ式またはブロックの本体の使用
+                  href: ide/reference/use-block-body-lambda.md
+                - name: 未使用値の割り当て、変数、およびパラメーター
+                  href: ide/reference/unused-values-parameters.md
+                - name: 呼び出しチェーンのラップおよび配置
+                  href: ide/reference/wrap-and-align-call-chains.md
+                - name: ラップ、インデント、およびパラメーターの整列
+                  href: ide/reference/wrap-align-indent-parameters.md
+            - name: 'チュートリアル: 使用法からのコードの生成'
+              href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
+        - name: IntelliSense
+          items:
+            - name: IntelliSense を使用する
+              href: ide/using-intellisense.md
+            - name: Visual Basic の IntelliSense
+              href: ide/visual-basic-specific-intellisense.md
+            - name: 'C# IntelliSense'
+              href: ide/visual-csharp-intellisense.md
+            - name: JavaScript IntelliSense
+              href: ide/javascript-intellisense.md
+            - name: Visual C++ IntelliSense
+              href: ide/visual-cpp-intellisense.md
+            - name: IntelliSense の C++ プロジェクトを構成する
+              href: ide/visual-cpp-intellisense-configuration.md
+        - name: コード内で移動する
+          items:
+            - name: コードの移動
+              href: ide/navigating-code.md
+            - name: コード内の参照の検索
+              href: ide/finding-references.md
+            - name: 型とメンバーの定義の表示
+              items:
+                - name: '[定義へ移動] と [定義をここに表示]'
+                  href: ide/go-to-and-peek-definition.md
+                - name: '[定義をここに表示] を使用してコードを表示および編集する'
+                  href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
+            - name: 移動コマンドを使用したコードの検索
+              href: ide/go-to.md
+        - name: エディターのカスタマイズ
+          items:
+            - name: テキストの大文字と小文字の変更
+              href: ide/how-to-change-text-case-in-the-editor.md
+            - name: エディター モードを管理する
+              href: ide/how-to-manage-editor-modes.md
+            - name: エディター ウィンドウを管理する
+              href: ide/how-to-manage-editor-windows.md
+            - name: フォントと色を変更する
+              href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
+            - name: '[右端で折り返す] の管理'
+              href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
+            - name: 行番号を表示
+              href: ide/reference/how-to-display-line-numbers-in-the-editor.md
+            - name: URL をリンクとして表示する
+              href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
+            - name: 言語固有のエディター オプションの設定
+              href: ide/reference/setting-language-specific-editor-options.md
+        - name: コード スタイル
+          items:
+            - name: コードのスタイル設定
+              href: /visualstudio/ide/code-styles-and-code-cleanup
+            - name: コード スタイルに関する EditorConfig ファイルの使用
+              displayName: Configure code style analyzers
+              href: ide/create-portable-custom-editor-options.md
+            - name: .NET のコーディング規則
+              items:
+                - name: 概要
+                  href: ide/editorconfig-code-style-settings-reference.md
+                - name: 言語規則
+                  href: ide/editorconfig-language-conventions.md
+                - name: 書式規則
+                  href: ide/editorconfig-formatting-conventions.md
+                - name: 名前付け規則
+                  href: ide/editorconfig-naming-conventions.md
+        - name: スクロール バーのカスタマイズ
+          href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
+        - name: コードへのブックマークの設定
+          href: ide/setting-bookmarks-in-code.md
+        - name: CodeLens
+          items:
+            - name: CodeLens によるコードの履歴の検索
+              href: ide/find-code-changes-and-other-history-with-codelens.md
+            - name: CodeIndex コマンド
+              href: ide/codeindex-command.md
+        - name: エディターでサポートされるその他の言語
+          href: ide/adding-visual-studio-editor-support-for-other-languages.md
+    - name: コード ビュー
+      items:
+        - name: コードの構造の表示
+          href: ide/viewing-the-structure-of-code.md
+        - name: '[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン'
+          href: ide/class-view-and-object-browser-icons.md
+    - name: タスク一覧の使用
+      href: ide/using-the-task-list.md
+    - name: クラス デザイナー
+      items:
+        - name: クラス デザイナーでクラスをデザインする
+          href: ide/class-designer/designing-and-viewing-classes-and-types.md
+        - name: プロジェクトにクラス ダイアグラムを追加する
+          href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
+        - name: クラス ダイアグラムをカスタマイズする
+          href: ide/class-designer/how-to-customize-class-diagrams.md
+        - name: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする
+          href: ide/class-designer/how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md
+        - name: イメージとしてクラス ダイアグラムをエクスポートする
+          href: ide/class-designer/how-to-export-class-diagrams-as-images.md
+        - name: クラス ダイアグラムを印刷する
+          href: ide/class-designer/how-to-print-class-diagrams.md
+        - name: クラス ダイアグラムにコメントを追加する
+          href: ide/class-designer/how-to-add-comments-to-class-diagrams.md
+        - name: クラスおよび型の作成
+          items:
+            - name: 型を作成する
+              href: ide/class-designer/how-to-create-types.md
+            - name: 型間で継承を作成する
+              href: ide/class-designer/how-to-create-inheritance-between-types.md
+            - name: 型間で関連付けを作成する
+              href: ide/class-designer/how-to-create-associations-between-types.md
+            - name: コレクションの関連付けをビジュアル化する
+              href: ide/class-designer/how-to-visualize-a-collection-association.md
+            - name: 型メンバーの作成および構成
+              href: ide/class-designer/creating-and-configuring-type-members.md
+        - name: 型およびリレーションシップの表示
+          items:
+            - name: 既存の型を表示する
+              href: ide/class-designer/how-to-view-existing-types.md
+            - name: 型間の継承を表示する
+              href: ide/class-designer/how-to-view-inheritance-between-types.md
+            - name: メンバー表記と関連付け表記
+              href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
+        - name: クラスおよび型のリファクター
+          href: ide/class-designer/refactoring-classes-and-types.md
+        - name: インターフェイスの実装
+          href: ide/class-designer/how-to-implement-an-interface.md
+        - name: 1 つのクラスを複数の部分クラスに分割する
+          href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
+        - name: Null 許容型を作成する
+          href: ide/class-designer/how-to-create-a-nullable-type.md
+        - name: クラス デザイナーの C++
+          items:
+            - name: Visual C++ コードを使用する
+              href: ide/class-designer/working-with-visual-cpp-code.md
+            - name: C++ クラス
+              href: ide/class-designer/visual-cpp-classes.md
+            - name: C++ 構造体
+              href: ide/class-designer/visual-cpp-structures.md
+            - name: C++ 列挙型
+              href: ide/class-designer/visual-cpp-enumerations.md
+            - name: C++ Typedef
+              href: ide/class-designer/visual-cpp-typedefs.md
+        - name: キーボードとマウスのショートカット
+          href: ide/class-designer/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md
+        - name: クラス デザイナーのエラー
+          href: ide/class-designer/additional-information-about-errors.md
+    - name: コードを改良する
+      href: ide/find-and-fix-code-errors.md
+    - name: ヒントとテクニック
+      items:
+        - name: 生産性機能
+          href: ide/productivity-features.md
+        - name: 生産性のショートカット
+          href: ide/productivity-shortcuts.md
+        - name: 'C# 開発者向けのヒント'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: キーボード ショートカットをカスタマイズする
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: キーボード主体で操作する
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
+    - name: 使用...
+      items:
+        - name: Windows フォーム アプリ
           items:
             - name: Windows フォーム デザイナーの概要
               href: designers/windows-forms-designer-overview.md
@@ -577,7 +591,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Windows フォーム デザイナーの DPI 認識を無効にする
               href: designers/disable-dpi-awareness.md
-            - name: 関連項目
+            - name: 辞書／辞典／その他
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -654,249 +668,235 @@
                       href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
                     - name: '手順 9: その他の機能を試す'
                       href: ide/step-9-try-other-features.md
-        - name: クロス プラットフォームのモバイル開発
-          href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
-        - name: 'Visual Studio における F#'
+        - name: 'F#'
           items:
             - name: 'F# の開発'
               href: ide/fsharp-visual-studio.md
             - name: 以前の .NET バージョンをターゲットにする
               href: ide/fsharp-target-older-dotnet-versions.md
-        - name: Office および SharePoint の開発
-          href: vsto/office-and-sharepoint-development-in-visual-studio.md
-        - name: XML ファイルと XSLT ファイルの操作
-          href: xml-tools/xml-tools-in-visual-studio.md
-        - name: コンテナーでの開発
-          href: containers/index.yml
-        - name: インクルーシブなアプリの開発
+        - name: 3D グラフィカル アセット
           items:
-            - name: アクセシビリティ対応アプリの設計
-              href: ide/reference/resources-for-designing-accessible-applications.md
-            - name: 国際対応のアプリの設計
-              displayName: Globalization localization world-ready
-              href: ide/globalizing-and-localizing-applications.md
-    - name: XAML ツールの使用 >>
-      href: xaml-tools/index.yml
+            - name: ゲームとアプリ用の 3D アセットを操作する
+              href: designers/working-with-3-d-assets-for-games-and-apps.md
+            - name: '方法: ゲームまたはアプリで 3D アセットを使用する'
+              href: designers/using-3-d-assets-in-your-game-or-app.md
+            - name: テクスチャとイメージ
+              items:
+                - name: テクスチャおよびイメージを使用する
+                  href: designers/working-with-textures-and-images.md
+                - name: イメージ エディター
+                  href: designers/image-editor.md
+                - name: イメージ エディターの例
+                  items:
+                    - name: 基本的なテクスチャを作成する
+                      href: designers/how-to-create-a-basic-texture.md
+                    - name: MIP レベルを作成および変更する
+                      href: designers/how-to-create-and-modify-mip-levels.md
+            - name: 3D モデル
+              items:
+                - name: 3D モデルを操作する
+                  href: designers/working-with-3-d-models.md
+                - name: モデル エディター
+                  href: designers/model-editor.md
+                - name: モデル エディターの例
+                  items:
+                    - name: 基本 3D モデルを作成する
+                      href: designers/how-to-create-a-basic-3-d-model.md
+                    - name: 3D モデルのピボット ポイントを変更する
+                      href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                    - name: 3D 地形のモデル化
+                      href: designers/how-to-model-3-d-terrain.md
+                    - name: シェーダーを 3D モデルに適用する
+                      href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+            - name: シェーダー
+              items:
+                - name: シェーダーを操作する
+                  href: designers/working-with-shaders.md
+                - name: シェーダー デザイナー
+                  href: designers/shader-designer.md
+                - name: シェーダー デザイナー ノード
+                  items:
+                    - name: 概要
+                      displayName: Shader designer nodes
+                      href: designers/shader-designer-nodes.md
+                    - name: 定数ノード
+                      href: designers/constant-nodes.md
+                    - name: パラメーター ノード
+                      href: designers/parameter-nodes.md
+                    - name: テクスチャ ノード
+                      href: designers/texture-nodes.md
+                    - name: 数値演算ノード
+                      href: designers/math-nodes.md
+                    - name: ユーティリティ ノード
+                      href: designers/utility-nodes.md
+                    - name: フィルター ノード
+                      href: designers/filter-nodes.md
+                - name: シェーダー デザイナーの例
+                  items:
+                    - name: 基本カラー シェーダーを作成する
+                      displayName: Shader designer example
+                      href: designers/how-to-create-a-basic-color-shader.md
+                    - name: 基本ランバート シェーダーを作成する
+                      href: designers/how-to-create-a-basic-lambert-shader.md
+                    - name: 基本フォン シェーダーを作成する
+                      href: designers/how-to-create-a-basic-phong-shader.md
+                    - name: 基本的なテクスチャ シェーダーを作成する
+                      href: designers/how-to-create-a-basic-texture-shader.md
+                    - name: グレースケール テクスチャ シェーダーを作成する
+                      href: designers/how-to-create-a-grayscale-texture-shader.md
+                    - name: ジオメトリベースのグラデーション シェーダーを作成する
+                      href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                    - name: 'チュートリアル: リアルな 3D のビリヤード ボールを作成する'
+                      href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                    - name: シェーダーをエクスポートする
+                      href: designers/how-to-export-a-shader.md
+            - name: テクスチャをエクスポートする
+              items:
+                - name: ミップマップを含むテクスチャをエクスポートする
+                  href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+                - name: 前乗算されたアルファを持つテクスチャをエクスポートする
+                  href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+                - name: Direct2D または JavaScript アプリで使用するためのテクスチャをエクスポートする
+                  href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
+        - name: XAML ファイル >>
+          href: xaml-tools/index.yml
+        - name: XML ファイルと XSLT ファイル >>
+          href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Docker コンテナー >>
+          href: containers/index.yml
+        - name: ワークフロー >>
+          href: workflow-designer/developing-applications-with-the-workflow-designer.md
+        - name: モバイル アプリ
+          href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: Office アプリと SharePoint アプリ >>
+          href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: データへのアクセス >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: ワークフロー デザイナーでアプリを開発する >>
-      href: workflow-designer/developing-applications-with-the-workflow-designer.md
-    - name: コンパイルとビルド
+    - name: インクルーシブなアプリの開発
+      items:
+        - name: アクセシビリティ対応アプリの設計
+          href: ide/reference/resources-for-designing-accessible-applications.md
+        - name: 国際対応のアプリの設計
+          displayName: Globalization localization world-ready
+          href: ide/globalizing-and-localizing-applications.md
+- name: ビルド
+  items:
+    - name: 概要
+      displayName: Compile build
+      href: ide/compiling-and-building-in-visual-studio.md
+    - name: 'チュートリアル: アプリケーションを構築する'
+      href: ide/walkthrough-building-an-application.md
+    - name: プロジェクトとソリューションをビルドおよびクリーンする
       items:
         - name: 概要
-          displayName: Compile build
-          href: ide/compiling-and-building-in-visual-studio.md
-        - name: 'チュートリアル: アプリケーションを構築する'
-          href: ide/walkthrough-building-an-application.md
-        - name: プロジェクトとソリューションをビルドおよびクリーンする
-          items:
-            - name: 概要
-              displayName: Build clean
-              href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
-            - name: ビルド出力ディレクトリを変更する
-              href: ide/how-to-change-the-build-output-directory.md
-            - name: 共通出力ディレクトリへのビルド
-              href: ide/how-to-build-to-a-common-output-directory.md
-            - name: カスタム ビルド イベントを指定する
-              href: ide/specifying-custom-build-events-in-visual-studio.md
-            - name: 複数のスタートアップ プロジェクトを設定する
-              href: ide/how-to-set-multiple-startup-projects.md
-            - name: プロジェクトの依存関係を作成および削除する
-              href: ide/how-to-create-and-remove-project-dependencies.md
-            - name: ビルド ログ ファイルを表示、保存、および構成する
-              href: ide/how-to-view-save-and-configure-build-log-files.md
-            - name: ビルドからプロジェクトを除外する
-              href: ide/how-to-exclude-projects-from-a-build.md
-            - name: コンパイラ警告の非表示
-              href: ide/how-to-suppress-compiler-warnings.md
-        - name: ビルド アクション
-          href: ide/build-actions.md
-        - name: ビルドの構成
-          items:
-            - name: ビルド構成について
-              href: ide/understanding-build-configurations.md
-            - name: 構成を作成および編集する
-              href: ide/how-to-create-and-edit-configurations.md
-            - name: Visual Basic 開発者設定を使用してビルド構成を管理する
-              href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-            - name: 複数の構成を同時にビルドする
-              href: ide/how-to-build-multiple-configurations-simultaneously.md
-        - name: プラットフォームを構築する
-          items:
-            - name: ビルド プラットフォームについて
-              href: ide/understanding-build-platforms.md
-            - name: プロジェクトを構成して対象プラットフォームを設定する
-              href: ide/how-to-configure-projects-to-target-platforms.md
-            - name: プロジェクトを構成して複数の対象プラットフォームを設定する
-              href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild >>
-          href: msbuild/msbuild.md
-        - name: Azure Pipelines と TFS >>
-          displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
-          href: /azure/devops/pipelines/index?view=vsts
-        - name: ビルド イベントを指定する (Visual Basic)
-          href: ide/how-to-specify-build-events-visual-basic.md
-        - name: 'ビルド イベントを指定する (C#)'
-          href: ide/how-to-specify-build-events-csharp.md
-        - name: Visual Basic で警告を構成する
-          href: ide/configuring-warnings-in-visual-basic.md
-        - name: 'チュートリアル: 複数のコンピューターを使用するビルド環境の作成'
-          href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: デバッグ >>
-      href: debugger/index.yml
-    - name: テスト >>
-      displayName: Unit testing
-      href: test/improve-code-quality.md
-    - name: パフォーマンスの測定 >>
-      displayName: Profiling
-      href: profiling/index.yml
-    - name: コード品質の分析 >>
-      displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.yml
-    - name: デプロイ >>
-      href: deployment/index.yml
-    - name: Visual Studio の拡張 >>
-      displayName: Visual Studio SDK
-      href: extensibility/visual-studio-sdk.md
-    - name: アーキテクチャの分析とモデル化 >>
-      href: modeling/analyze-and-model-your-architecture.md
-    - name: 3D アセット
+          displayName: Build clean
+          href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
+        - name: ビルド出力ディレクトリを変更する
+          href: ide/how-to-change-the-build-output-directory.md
+        - name: 共通出力ディレクトリへのビルド
+          href: ide/how-to-build-to-a-common-output-directory.md
+        - name: カスタム ビルド イベントを指定する
+          href: ide/specifying-custom-build-events-in-visual-studio.md
+        - name: 複数のスタートアップ プロジェクトを設定する
+          href: ide/how-to-set-multiple-startup-projects.md
+        - name: プロジェクトの依存関係を作成および削除する
+          href: ide/how-to-create-and-remove-project-dependencies.md
+        - name: ビルド ログ ファイルを表示、保存、および構成する
+          href: ide/how-to-view-save-and-configure-build-log-files.md
+        - name: ビルドからプロジェクトを除外する
+          href: ide/how-to-exclude-projects-from-a-build.md
+        - name: コンパイラ警告の非表示
+          href: ide/how-to-suppress-compiler-warnings.md
+    - name: ビルド アクション
+      href: ide/build-actions.md
+    - name: ビルドの構成
       items:
-        - name: ゲームとアプリ用の 3D アセットを操作する
-          href: designers/working-with-3-d-assets-for-games-and-apps.md
-        - name: '方法: ゲームまたはアプリで 3D アセットを使用する'
-          href: designers/using-3-d-assets-in-your-game-or-app.md
-        - name: テクスチャとイメージ
-          items:
-            - name: テクスチャおよびイメージを使用する
-              href: designers/working-with-textures-and-images.md
-            - name: イメージ エディター
-              href: designers/image-editor.md
-            - name: イメージ エディターの例
-              items:
-                - name: 基本的なテクスチャを作成する
-                  href: designers/how-to-create-a-basic-texture.md
-                - name: MIP レベルを作成および変更する
-                  href: designers/how-to-create-and-modify-mip-levels.md
-        - name: 3D モデル
-          items:
-            - name: 3D モデルを操作する
-              href: designers/working-with-3-d-models.md
-            - name: モデル エディター
-              href: designers/model-editor.md
-            - name: モデル エディターの例
-              items:
-                - name: 基本 3D モデルを作成する
-                  href: designers/how-to-create-a-basic-3-d-model.md
-                - name: 3D モデルのピボット ポイントを変更する
-                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
-                - name: 3D 地形のモデル化
-                  href: designers/how-to-model-3-d-terrain.md
-                - name: シェーダーを 3D モデルに適用する
-                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
-        - name: シェーダー
-          items:
-            - name: シェーダーを操作する
-              href: designers/working-with-shaders.md
-            - name: シェーダー デザイナー
-              href: designers/shader-designer.md
-            - name: シェーダー デザイナー ノード
-              items:
-                - name: 概要
-                  displayName: Shader designer nodes
-                  href: designers/shader-designer-nodes.md
-                - name: 定数ノード
-                  href: designers/constant-nodes.md
-                - name: パラメーター ノード
-                  href: designers/parameter-nodes.md
-                - name: テクスチャ ノード
-                  href: designers/texture-nodes.md
-                - name: 数値演算ノード
-                  href: designers/math-nodes.md
-                - name: ユーティリティ ノード
-                  href: designers/utility-nodes.md
-                - name: フィルター ノード
-                  href: designers/filter-nodes.md
-            - name: シェーダー デザイナーの例
-              items:
-                - name: 基本カラー シェーダーを作成する
-                  displayName: Shader designer example
-                  href: designers/how-to-create-a-basic-color-shader.md
-                - name: 基本ランバート シェーダーを作成する
-                  href: designers/how-to-create-a-basic-lambert-shader.md
-                - name: 基本フォン シェーダーを作成する
-                  href: designers/how-to-create-a-basic-phong-shader.md
-                - name: 基本的なテクスチャ シェーダーを作成する
-                  href: designers/how-to-create-a-basic-texture-shader.md
-                - name: グレースケール テクスチャ シェーダーを作成する
-                  href: designers/how-to-create-a-grayscale-texture-shader.md
-                - name: ジオメトリベースのグラデーション シェーダーを作成する
-                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
-                - name: 'チュートリアル: リアルな 3D のビリヤード ボールを作成する'
-                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
-                - name: シェーダーをエクスポートする
-                  href: designers/how-to-export-a-shader.md
-        - name: テクスチャをエクスポートする
-          items:
-            - name: ミップマップを含むテクスチャをエクスポートする
-              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
-            - name: 前乗算されたアルファを持つテクスチャをエクスポートする
-              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: Direct2D または JavaScript アプリで使用するためのテクスチャをエクスポートする
-              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
-    - name: ヒントとテクニック
+        - name: ビルド構成について
+          href: ide/understanding-build-configurations.md
+        - name: 構成を作成および編集する
+          href: ide/how-to-create-and-edit-configurations.md
+        - name: Visual Basic 開発者設定を使用してビルド構成を管理する
+          href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
+        - name: 複数の構成を同時にビルドする
+          href: ide/how-to-build-multiple-configurations-simultaneously.md
+    - name: プラットフォームを構築する
       items:
-        - name: 生産性機能
-          href: ide/productivity-features.md
-        - name: 生産性のショートカット
-          href: ide/productivity-shortcuts.md
-        - name: 'C# 開発者向けのヒント'
-          displayName: ReSharper
-          href: ide/csharp-developer-productivity.md
-        - name: キーボード ショートカットをカスタマイズする
-          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-        - name: キーボード主体で操作する
-          displayName: accessibility
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: パーソナライズ
+        - name: ビルド プラットフォームについて
+          href: ide/understanding-build-platforms.md
+        - name: プロジェクトを構成して対象プラットフォームを設定する
+          href: ide/how-to-configure-projects-to-target-platforms.md
+        - name: プロジェクトを構成して複数の対象プラットフォームを設定する
+          href: ide/how-to-configure-projects-to-target-multiple-platforms.md
+    - name: MSBuild >>
+      href: msbuild/msbuild.md
+    - name: Azure Pipelines と TFS >>
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
+      href: /azure/devops/pipelines/index?view=vsts
+    - name: ビルド イベントを指定する (Visual Basic)
+      href: ide/how-to-specify-build-events-visual-basic.md
+    - name: 'ビルド イベントを指定する (C#)'
+      href: ide/how-to-specify-build-events-csharp.md
+    - name: Visual Basic で警告を構成する
+      href: ide/configuring-warnings-in-visual-basic.md
+    - name: 'チュートリアル: 複数のコンピューターを使用するビルド環境の作成'
+      href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
+- name: デバッグ >>
+  href: debugger/index.yml
+- name: テスト >>
+  displayName: Unit testing
+  href: test/improve-code-quality.md
+- name: パフォーマンスの測定 >>
+  displayName: Profiling
+  href: profiling/index.yml
+- name: コード品質の分析 >>
+  displayName: Code analysis FxCop Analyzers
+  href: code-quality/index.yml
+- name: デプロイ >>
+  href: deployment/index.yml
+- name: Visual Studio の拡張 >>
+  displayName: Visual Studio SDK
+  href: extensibility/visual-studio-sdk.md
+- name: アーキテクチャの分析とモデル化 >>
+  href: modeling/analyze-and-model-your-architecture.md
+- name: Visual Studio のカスタマイズ
+  items:
+    - name: IDE をカスタマイズする
+      displayName: Personalize
+      href: ide/personalizing-the-visual-studio-ide.md
+    - name: 'クイック スタート: テーマとテキストの色のカスタマイズ'
+      href: ide/quickstart-personalize-the-ide.md
+    - name: 環境設定
+      displayName: profiles
+      href: ide/environment-settings.md
+    - name: 同期された設定
+      href: ide/synchronized-settings-in-visual-studio.md
+    - name: フォントと色
+      href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
+    - name: メニューとツールバー
+      href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
+    - name: ウィンドウのレイアウト
+      href: ide/customizing-window-layouts-in-visual-studio.md
+    - name: ソリューション エクスプローラーでのファイルの入れ子
+      href: ide/file-nesting-solution-explorer.md
+    - name: 起動の動作
+      displayName: Start page window
+      href: ide/customizing-the-start-page-for-visual-studio.md
+    - name: 拡張機能の管理
+      href: ide/finding-and-using-visual-studio-extensions.md
+      displayName: 'marketplace, gallery, vsix'
+    - name: 外部ツールの管理
+      href: ide/managing-external-tools.md
+    - name: 個人アカウント
       items:
-        - name: IDE をカスタマイズする
-          displayName: Personalize
-          href: ide/personalizing-the-visual-studio-ide.md
-        - name: 'クイック スタート: テーマとテキストの色のカスタマイズ'
-          href: ide/quickstart-personalize-the-ide.md
-        - name: 環境設定
-          displayName: profiles
-          href: ide/environment-settings.md
-        - name: 同期された設定
-          href: ide/synchronized-settings-in-visual-studio.md
-        - name: フォントと色
-          href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-        - name: メニューとツールバー
-          href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-        - name: ウィンドウのレイアウト
-          href: ide/customizing-window-layouts-in-visual-studio.md
-        - name: ソリューション エクスプローラーでのファイルの入れ子
-          href: ide/file-nesting-solution-explorer.md
-        - name: 起動の動作
-          displayName: Start page window
-          href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: 拡張機能の管理
-          href: ide/finding-and-using-visual-studio-extensions.md
-          displayName: 'marketplace, gallery, vsix'
-        - name: 外部ツールの管理
-          href: ide/managing-external-tools.md
-        - name: 個人アカウント
-          items:
-            - name: Visual Studio にサインイン
-              displayName: personalization accounts
-              href: ide/signing-in-to-visual-studio.md
-            - name: 複数のユーザー アカウントを使って作業する
-              href: ide/work-with-multiple-user-accounts.md
-            - name: 試用版を延長する、またはライセンスを更新する
-              href: ide/how-to-unlock-visual-studio.md
-    - name: Visual Studio のパフォーマンス
+        - name: Visual Studio にサインイン
+          displayName: personalization accounts
+          href: ide/signing-in-to-visual-studio.md
+        - name: 複数のユーザー アカウントを使って作業する
+          href: ide/work-with-multiple-user-accounts.md
+        - name: 試用版を延長する、またはライセンスを更新する
+          href: ide/how-to-unlock-visual-studio.md
+    - name: Visual Studio のパフォーマンスのチューニング
       items:
         - name: パフォーマンスの最適化
           href: ide/optimize-visual-studio-performance.md
@@ -906,17 +906,17 @@
           href: ide/filtered-solutions.md
         - name: ヒントとテクニック
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: ユーザー補助
-      items:
-        - name: アクセシビリティ機能を管理する
-          href: ide/reference/accessibility-features-of-visual-studio.md
-        - name: IDE アクセシビリティ オプションを設定する
-          href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: アクセシビリティのヒントとテクニック
-          href: ide/reference/accessibility-tips-and-tricks.md
-        - name: マイクロソフトのアクセシビリティ製品とサービス
-          href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 関連項目
+- name: ユーザー補助
+  items:
+    - name: アクセシビリティ機能を管理する
+      href: ide/reference/accessibility-features-of-visual-studio.md
+    - name: IDE アクセシビリティ オプションを設定する
+      href: ide/reference/how-to-set-ide-accessibility-options.md
+    - name: アクセシビリティのヒントとテクニック
+      href: ide/reference/accessibility-tips-and-tricks.md
+    - name: マイクロソフトのアクセシビリティ製品とサービス
+      href: ide/reference/accessibility-products-and-services-from-microsoft.md
+- name: 辞書／辞典／その他
   items:
     - name: キーボード ショートカット
       items:
@@ -928,7 +928,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio のコマンド
       items:
-        - name: 関連項目
+        - name: 辞書／辞典／その他
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: コマンドの別名
@@ -1182,7 +1182,7 @@
           href: ide/reference/output-window.md
         - name: プロジェクトのプロパティ
           items:
-            - name: 参照
+            - name: 辞書／辞典／その他
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: '[アプリケーション] ページ (プロジェクト デザイナー) (UWP)'
@@ -1253,7 +1253,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: ツールボックス
           items:
-            - name: 関連項目
+            - name: 辞書／辞典／その他
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'ツールボックス、[コンポーネント] タブ'
@@ -1264,7 +1264,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv コマンドライン スイッチ
       items:
-        - name: 関連項目
+        - name: 辞書／辞典／その他
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
