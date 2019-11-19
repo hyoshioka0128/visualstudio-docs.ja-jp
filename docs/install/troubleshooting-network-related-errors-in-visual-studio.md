@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189466"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713954"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング
 
@@ -137,7 +137,7 @@ Visual Studio ではトランスポート層セキュリティ (TLS) 1.2 プロ�
 
 このエラー メッセージは、ネットワーク ドライブで Visual Studio ブートストラップと response.json ファイルを使用している場合に表示されることがあります。 エラーの原因は、Windows のユーザー アカウント制御 (UAC) にあります。
 
-このエラーが発生する理由は、次のとおりです。マップされたネットワーク ドライブまたは [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) 共有は、ユーザーのアクセス トークンにリンクされます。 UAC が有効な場合、2 つのユーザー [アクセス トークン](/windows/win32/secauthz/access-tokens) が作成されます。一方は管理者アクセス権*付き*で、もう一方は管理者アクセス権*なし*です。 ネットワーク ドライブまたは共有が作成されると、ユーザーの現在のアクセス トークンがリンクされます。 ブートストラップは、管理者として実行する必要があるため、いずれかのドライブまたは共有が管理者アクセス権付きのユーザー アクセス トークンにリンクされていない場合、ネットワーク ドライブにアクセスすることはできません。
+このエラーが発生する理由は、次のとおりです。マップされたネットワーク ドライブまたは [UNC](/dotnet/standard/io/file-path-formats#unc-paths) 共有は、ユーザーのアクセス トークンにリンクされます。 UAC が有効な場合、2 つのユーザー [アクセス トークン](/windows/win32/secauthz/access-tokens) が作成されます。一方は管理者アクセス権*付き*で、もう一方は管理者アクセス権*なし*です。 ネットワーク ドライブまたは共有が作成されると、ユーザーの現在のアクセス トークンがリンクされます。 ブートストラップは、管理者として実行する必要があるため、いずれかのドライブまたは共有が管理者アクセス権付きのユーザー アクセス トークンにリンクされていない場合、ネットワーク ドライブにアクセスすることはできません。
 
 ### <a name="to-fix-this-error"></a>このエラーを修復するには
 
