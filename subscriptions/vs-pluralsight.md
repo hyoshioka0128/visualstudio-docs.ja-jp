@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションの Pluralsight 特典 | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342382"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161956"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -57,9 +57,11 @@ ms.locfileid: "71342382"
 |                          サブスクリプション レベル                          |     チャネル      |    特長    |   更新可能かどうか   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL、Azure、リテール |   6 か月    | はい<sup>2</sup> |
+|          Visual Studio Enterprise with GitHub Enterprise          | VL  |   6 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL、Azure、リテール |   3 か月    | はい<sup>2</sup> |
-|              Visual Studio Test Professional (標準)              |    VL、リテール     |   3 か月    | いいえ |
-|                      MSDN Platforms (標準)                       |    VL、リテール     |   3 か月    | いいえ |
+|         Visual Studio Professional with GitHub Enterprise          | VL  |   3 か月    | はい<sup>2</sup> |
+|              Visual Studio Test Professional (標準)              |    VL、リテール     |   3 か月    | はい<sup>2</sup>  |
+|                      MSDN Platforms (標準)                       |    VL、リテール     |   3 か月    | はい<sup>2</sup>  |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用できません |       N/A       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       N/A       |
 ||
@@ -97,3 +99,5 @@ A: Pluralsight 無料サブスクリプションの終了時、Pluralsight か�
 
 ## <a name="next-steps"></a>次の手順
 アカウントを作成したら、トレーニングを開始できます。  [https://www.pluralsight.com](http://www.pluralsight.com) にアクセスし、ページの右上隅にある **[ログイン]** をタップして新しいコースを開始するか、既に進行中のコースに戻ります。
+
+[Azure DevTest の個人クレジット](vs-azure.md)をアクティブ化して、独自の開発サンドボックスを活用します。 

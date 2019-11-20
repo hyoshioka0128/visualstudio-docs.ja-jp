@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションの Visual Studio App Center 特
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787822"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161924"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -42,7 +42,9 @@ Visual Studio App Center を開始するのは簡単です。
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、NFR<sup>1</sup> | Included       |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise  | VL | Included       |  はい          |
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | Included                                                            |はい |
+| Visual Studio Professional with GitHub Enterprise | VL                                      | Included                                                            |はい |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | Included                                                            |はい |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | Included                                                            |はい |
 ||
@@ -72,4 +74,7 @@ A: App Center では、一部の古いブラウザーでは提供されていな
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-Azure は個人用の開発/テスト向けサンドボックスです。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。 [Azure 特典](vs-azure.md)をまだ有効にしていない場合、有効にしてください。 
+Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest の個人クレジット](vs-azure.md)
