@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションの Windows 開発者アカウ�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816419"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174117"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -43,7 +43,9 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | Included       |  はい|
+| Visual Studio Enterprise with GitHub Enterprise   | VL  | Included       |  はい|
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい|
+| Visual Studio Professional with GitHub Enterprise | VL                                        | Included                                                            |はい|
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A|
 | MSDN Platforms (標準)                                          | VL、リテール                                              |  使用できません                                            |  N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
@@ -63,4 +65,7 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-Azure は個人用の開発/テスト向けサンドボックスです。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。 Azure DevTest の個人クレジットの使用を開始するには、[Azure 特典](vs-azure.md)をアクティブ化してください。
+Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest の個人クレジット](vs-azure.md)

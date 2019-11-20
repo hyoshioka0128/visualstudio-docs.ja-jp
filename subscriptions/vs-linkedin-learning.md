@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787756"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099652"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -71,7 +71,9 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise with GitHub Enterprise   | VL | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |いいえ。  新しいサブスクライバーのみが使用できます         |
+| Visual Studio Professional with GitHub Enterprise | VL | 3 か月      | いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月                                             |  いいえ。  新しいサブスクライバーのみが使用できます         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月                                              | いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
@@ -93,3 +95,8 @@ A: いいえ、LinkedIn Learning プランは新規サブスクライバーの�
   - アカウントやプロファイルの作成、ネットワークの維持などの [LinkedIn](https://www.linkedin.com/help/linkedin) に関する一般的な質問のヘルプ。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+ご利用のサブスクリプションに含まれるその他のすばらしい特典を確認してください。 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスします。
+
+サブスクリプションに付属している Azure DevTest の個人クレジット特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。
