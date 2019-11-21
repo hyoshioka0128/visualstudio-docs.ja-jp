@@ -1,5 +1,5 @@
 ---
-title: 16 bpp レンダリング ターゲット フォーマット バリアント |Microsoft Docs
+title: 16bpp Render Target Format Variant | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,42 +8,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
+ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896424"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188588"
 ---
-# <a name="16-bpp-render-target-format-variant"></a>16 bpp レンダリング ターゲット フォーマット バリアント
+# <a name="16-bpp-render-target-format-variant"></a>16 bpp Render Target Format Variant
 すべてのレンダー ターゲットおよびバック バッファーに対して、ピクセル形式を DXGI_FORMAT_B5G6R5_UNORM に設定します。
 
 ## <a name="interpretation"></a>解釈
- レンダー ターゲットまたはバック バッファーは、通常、B8G8R8A8_UNORM などの 32 ビット/ピクセル (1 ピクセルあたり 32 ビット) の形式を使用します。 32 bpp 形式は、大量のメモリ帯域幅を使用できます。 B5G6R5_UNORM 形式は、32 bpp 形式の半分のサイズである 16 bpp 形式であるためには、それを使用とメモリ帯域幅が削減色の忠実性を犠牲に負荷を軽減できます。
+ A render target or back buffer typically uses a 32 bpp (32 bits per pixel) format such as B8G8R8A8_UNORM. 32-bpp formats can consume a large amount of memory bandwidth. Because the B5G6R5_UNORM format is a 16-bpp format that's half the size of 32-bpp formats, using it can relieve pressure on memory bandwidth, but at the cost of reduced color fidelity.
 
- このバリアントによりパフォーマンスが大幅に向上する場合は、おそらくアプリケーションで使用しているメモリ帯域幅が多すぎることを示しています。 プロファイルされたフレームがある、かなりアルファブレンディングまたはアルファ ブレンドの場合に特に大幅なパフォーマンスの向上が得られます。
+ このバリアントによりパフォーマンスが大幅に向上する場合は、おそらくアプリケーションで使用しているメモリ帯域幅が多すぎることを示しています。 You can gain significant performance improvement, especially when the profiled frame had a significant amount of overdraw or alpha-blending.
 
-16 bpp レンダリング ターゲット フォーマットでは、アプリケーションに、次の条件がある場合、メモリ使用量の帯域外を軽減できます。
-- 信頼性の高い色の再現は必要ありません。
-- アルファ チャネルは必要ありません。
-- Ofent は (これは、削減色の忠実性 縞模様の成果物に影響を受けやすい) 滑らかなグラデーションがありません。
+A 16-bpp render target format can reduce memory band with usage when your application has the following conditions:
+- Doesn't require high-fidelity color reproduction.
+- Doesn't require an alpha channel.
+- Doesn't often have smooth gradients (which are susceptible to banding artifacts under reduced color fidelity).
 
-メモリ帯域幅を減らすには、その他の方法は次のとおりです。
-- アルファブレンディングまたはアルファ ブレンドの量を削減します。
-- フレーム バッファーのサイズを削減します。
-- テクスチャのリソースのサイズを削減します。
-- テクスチャのリソースの圧縮を削減します。
+Other strategies to reduce memory bandwidth include:
+- Reduce the amount of overdraw or alpha-blending.
+- Reduce the dimensions of the frame buffer.
+- Reduce dimensions of texture resources.
+- Reduce compressions of texture resources.
 
 これらの方法のいずれかを最適化することとイメージの品質を保持することは背反するため、通常と同じように両者のバランスを考慮する必要があります。
 
-スワップ チェーンの一部であるアプリケーションには、16 bpp をサポートしていないバック バッファー形式 (DXGI_FORMAT_B5G6R5_UNORM) があります。 これらのスワップ チェーンを使用して作成された`D3D11CreateDeviceAndSwapChain`または`IDXGIFactory::CreateSwapChain`します。 この制限を回避するには、次の手順を実行します。
-1. 使用して B5G6R5_UNORM 形式のレンダー ターゲットを作成する`CreateTexture2D`し、そのターゲットにレンダリングします。
-2. ソース テクスチャとしてレンダー ターゲット フルスクリーン クアッドを描画して、スワップ チェーンのもっと上にレンダー ターゲットをコピーします。
-3. スワップ チェーンで Present を呼び出します。
+Applications that are a part of a swap chain have a back buffer format (DXGI_FORMAT_B5G6R5_UNORM) that doesn't support 16 bpp. These swap chains are created by using `D3D11CreateDeviceAndSwapChain` or `IDXGIFactory::CreateSwapChain`. To work around this limitation, do the following steps:
+1. Create a B5G6R5_UNORM format render target by using `CreateTexture2D` and render to that target.
+2. Copy the render target onto the swap-chain backbuffer by drawing a full-screen quad with the render target as your source texture.
+3. Call Present on your swap chain.
 
-   この戦略では、レンダー ターゲットをスワップ チェーン バックバッファーにコピーすることによって使用されるよりも多くの帯域幅を保存、レンダリングのパフォーマンスが向上します。
+   If this strategy saves more bandwidth than is consumed by copying the render target to the swap-chain backbuffer, then rendering performance is improved.
 
-   並べて表示されるレンダリング手法を使用する GPU アーキテクチャでは、16 bpp フレーム バッファーの形式を使用して大幅なパフォーマンス上の利点を確認できます。 この機能強化は、フレームバッファーのより大きい領域が各タイルのフレームのローカル バッファー キャッシュ内に収まるのでです。 タイル型のレンダリング アーキテクチャは、携帯電話機やタブレット コンピューターの GPU で使用されています。これらの市場以外で使用されることはほとんどありません。
+   GPU architectures that use tiled rendering techniques can see significant performance benefits by using a 16 bpp frame buffer format. This improvement is because a larger portion of the frame buffer can fit in each tile's local frame buffer cache. タイル型のレンダリング アーキテクチャは、携帯電話機やタブレット コンピューターの GPU で使用されています。これらの市場以外で使用されることはほとんどありません。
 
 ## <a name="remarks"></a>Remarks
  レンダー ターゲット形式は、レンダー ターゲットを作成する `ID3D11Device::CreateTexture2D` への呼び出しのたびに、DXGI_FORMAT_B5G6R5_UNORM にリセットされます。 具体的には、pDesc で渡される D3D11_TEXTURE2D_DESC オブジェクトがレンダー ターゲットを記述するときに、この形式はオーバーライドされます。つまり、
@@ -58,7 +58,7 @@ ms.locfileid: "62896424"
  B5G6R5 形式ではアルファ チャネルを持たないため、アルファ コンテンツはこのバリアントでは保存されません。 アプリケーションのレンダリングで、レンダー ターゲットのアルファ チャネルが必要な場合、B5G6R5 形式に切り替えることはできません。
 
 ## <a name="example"></a>例
- **16 bpp Render Target Format**を使用して作成したレンダー ターゲットのバリアントを再現できる`CreateTexture2D`このようなコードを使用しています。
+ The **16 bpp Render Target Format** variant can be reproduced for render targets created by using `CreateTexture2D` by using code like this:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションの Visual Studio IDE 特典 | M
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
-ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816526"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099637"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典
 
@@ -62,7 +62,9 @@ IDE をダウンロードするには:
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise   | VL | 使用可能       |  はい          |
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
+| Visual Studio Professional wtih GitHub Enterprise | VL   | 使用可能              |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 

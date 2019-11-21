@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126119"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142204"
 ---
 Visual Studio を使用すると、コンテナー化された ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ACR に発行します。
 
@@ -92,6 +92,18 @@ PMC で `docker ps` コマンドを実行します。 アプリがコンテナ�
 CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
+
+## <a name="containers-window"></a>コンテナー ウィンドウ
+
+Visual Studio 2019 バージョン 16.4 以降をお持ちの場合は、 **[コンテナー]** ウィンドウを使用して、ご利用のコンピューター上で実行中のコンテナー、および使用可能なイメージを確認できます。
+
+IDE の [検索] ボックスを使用して (**Ctrl**+**Q** を押して使用)、 **[コンテナー]** ウィンドウを開き、`container` を入力し、一覧から **[コンテナー]** ウィンドウを選択します。
+
+**[コンテナー]** ウィンドウをエディターの下などの便利な場所に配置するには、ウィンドウを移動してウィンドウ配置ガイドに従います。
+
+ウィンドウで、ご利用のコンテナーを見つけ、各タブをステップ実行して、環境変数、ポート マッピング、ログ、およびファイル システムを表示します。
+
+詳細については、[Visual Studio でのコンテナーおよびイメージの表示および診断](../../view-and-diagnose-containers.md)に関するページを参照してください。
 
 ## <a name="publish-docker-images"></a>Docker イメージの発行
 
