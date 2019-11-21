@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568908"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127190"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio のコンテナー ツール
 
@@ -53,11 +53,13 @@ Docker サポートは、ASP.NET プロジェクト、ASP.NET Core プロジェ�
 
 Visual Studio での Docker のサポートは、お客様のニーズに応じて、多数のリリースを経て変更されてきました。 プロジェクトに追加できる Docker サポートには 2 つのレベルがあり、サポートされるオプションはプロジェクトの種類と Visual Studio のバージョンによって異なります。 サポートされている一部のプロジェクトの種類では、オーケストレーションなしで 1 つのプロジェクト用に 1 つのコンテナーを使いたいだけの場合は、Docker サポートを追加することでこれを実行できます。  次のレベルは、コンテナー オーケストレーションのサポートです。これは、選択した特定のオーケストレーター用の適切なサポート ファイルを追加します。  
 
-
 Visual Studio 2019 では、コンテナー オーケストレーション サービスとして Docker Compose、Kubernetes、Service Fabric を使用できます。
 
 > [!NOTE]
 > 完全な .NET Framework コンソール プロジェクト テンプレートを使う場合は、Docker サポートを追加するときに、Docker Compose を使うオーケストレーションのサポートが自動的に追加されます。
+
+Visual Studio 2019 バージョン 16.4 以降では、 **[コンテナー]** ウィンドウを使用できます。このウィンドウでは、実行中のコンテナーの表示、使用可能なイメージの参照、環境変数、ログ、およびポート マッピングの表示、ファイル システムの検査、デバッガーのアタッチを行ったり、コンテナー環境内でターミナル ウィンドウを開いたりすることができます。 [Visual Studio でのコンテナーおよびイメージの表示および診断](view-and-diagnose-containers.md)に関するページを参照してください。
+
 ::: moniker-end
 
 ### <a name="adding-docker-support"></a>Docker サポートの追加
@@ -92,7 +94,7 @@ Docker サポートを追加すると、ソリューションは次のように�
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> 以下のスクリーンショットに示すように、ASP.NET プロジェクト (.NET Framework。.NET Core プロジェクトではありません) 用のプロジェクトの作成中に Docker のサポートを有効にすると、コンテナー オーケストレーションのサポートも追加されます。
+> 以下のスクリーンショットに示すように、ASP.NET プロジェクト (.NET Framework。 .NET Core プロジェクトではありません) 用のプロジェクトの作成中に Docker のサポートを有効にすると、コンテナー オーケストレーションのサポートも追加されます。
 
 ![ASP.NET プロジェクトで Docker 構成のサポートを有効にする](media/overview/enable-docker-compose-support.png)
 ::: moniker-end
