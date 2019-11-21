@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションの Power BI Pro 特典 | Micros
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 12/19/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787955"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161949"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -63,7 +63,9 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい|
+| Visual Studio Enterprise with GitHub Enterprise  | VL | 使用可能       |  はい|
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | 使用できません                                                            |N/A         |
+| Visual Studio Professional with GitHub Enterprise | VL                                      | 使用できません                                                            |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                            |N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能       |  はい|
 | Visual Studio Enterprise (月間クラウド) | Azure                                       | 使用できません                                  |N/A|
@@ -111,4 +113,5 @@ A: いいえ。  Power BI Pro 特典は、政府機関向けのテナントに�
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-Power BI Pro 特典をアクティブ化にする場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスしてください
+- Power BI Pro 特典をアクティブ化にする場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスしてください。
+- [Azure DevTest の個人クレジット](vs-azure.md)をアクティブ化して、独自の開発サンドボックスを活用します。 

@@ -3,22 +3,25 @@ title: EMS 特典 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/05/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Enterprise Mobility + Security の特典について説明します。
-ms.openlocfilehash: 93b613d06c6cd8ebcb3b28437677339084a9b720
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787777"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099538"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Enterprise Mobility + Security (EMS)
 
 Visual Studio Enterprise の年間クラウド サブスクリプションと標準サブスクリプションには、Enterprise Mobility + Security (EMS) が含まれます。  EMS - Azure Active Directory、Microsoft Intune、Azure Information Protection、Microsoft Advanced Threat Analytics、Microsoft Cloud App Security で ID、デバイス、アプリ、データを保護および管理できます。 
 
-> [!IMPORTANT]
-> Enterprise Mobility + Security (EMS) の特典に重要な変更が加えられているため、現在のところ、新しくアクティブ化してもこの特典を受けることができません。  既にアクティブ化している場合は、引き続き通常どおり使用できます。  
+## <a name="who-should-install-ems"></a>EMS をインストールする必要があるユーザー
+Office 365 Developer (E3) テナントを既にお持ちの場合は、EMS をインストールする必要があります。  それ以外の場合は、EMS と Office 365 Developer (E5) を両方とも含む [Microsoft 365](vs-m365.md) をインストールする必要があります。
+- Power BI を使用した高度な分析
+- Office 365 Advanced Threat Protection
+- ID およびアクセス管理の高度なソリューションをビルドするための Azure Active Directory
 
 ## <a name="eligibility"></a>特典を受ける条件
 
@@ -44,3 +47,8 @@ Visual Studio Enterprise の年間クラウド サブスクリプションと標
 - EMS のコンポーネントのテクニカル サポートについては、[EMS サポートの FAQ](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) ページにアクセスし、問題に対する適切なサポートを見つけてください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+サブスクリプションに付属している Azure DevTest の個人クレジット特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。
+
+ご利用のサブスクリプションに含まれるその他のすばらしい特典を確認してください。 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスします。

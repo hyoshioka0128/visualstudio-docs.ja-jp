@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Visual Studio でコードを編集する
-summary: プロジェクトを開く、コード エディターの機能を使用する、一貫性のあるコード スタイルを維持するなど、編集タスクについて説明します。
+title: Visual Studio でコードを整理して編集する
+summary: コード プロジェクトの操作、コード エディターの機能の使用、一貫性のあるコード スタイルの維持について説明します。
 metadata:
   title: コード エディターの機能
   description: Visual Studio のコード編集機能について説明します。
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516832"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087246"
 landingContent:
 - title: プロジェクトを開く、または作成する
   linkLists:
