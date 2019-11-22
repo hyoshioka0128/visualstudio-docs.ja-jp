@@ -1,5 +1,5 @@
 ---
-title: ClickOnce 配置で特定のエラーのトラブルシューティング |Microsoft Docs
+title: Troubleshooting Specific Errors in ClickOnce Deployments | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,125 +20,125 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62420153"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294737"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックでデプロイするときに発生する可能性がある次の一般的なエラー、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションでは、各問題を解決する手順を示します。  
+This topic lists the following common errors that can occur when you deploy a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, and provides steps to resolve each problem.  
   
-## <a name="general-errors"></a>一般的なエラー  
+## <a name="general-errors"></a>General Errors  
   
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>ときに何も起こりません、.application ファイルを検索しようとするまたは Internet Explorer で、XML を表示または実行または名前を付けて保存 ダイアログ ボックスが表示されます。  
- このエラーは、サーバーまたはクライアントに正しく登録されていないコンテンツの種類 (MIME の種類とも呼ばれます) による可能性があります。  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>When you try to locate an .application file, nothing occurs, or XML renders in Internet Explorer, or you receive a Run or Save As dialog box  
+ This error is likely caused by content types (also known as MIME types) not being registered correctly on the server or client.  
   
- 最初に、コンテンツの種類"application/x-ms-application"には .application という拡張子を関連付ける、サーバーが構成されていることを確認します。  
+ First, make sure that the server is configured to associate the .application extension with content type "application/x-ms-application".  
   
- 場合は、サーバーが正しく構成されていることを確認、[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]がコンピューターにインストールされています。 場合、[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]がインストールされているアンインストールと再インストールしてみてください、この問題が引き続き発生して、[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]クライアントでコンテンツの種類を再登録します。  
+ If the server is configured correctly, ensure that the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] is installed on your computer. If the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] is installed, and you are still seeing this problem, try uninstalling and reinstalling the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] to re-register the content type on the client.  
   
-#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>エラー メッセージでは、"アプリケーションを取得できません。 ファイルの展開が見つかりません"または「アプリケーションのダウンロードが中断された、ネットワーク エラーを確認し、後でもう一度お試しください」  
- このメッセージを示すによって参照される 1 つまたは複数のファイル、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストをダウンロードすることはできません。 このエラーをデバッグする最も簡単な方法は、URL をダウンロードしようとするする[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]をダウンロードできないことを示します。 考えられる原因を次に示します。  
+#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Error message says, "Unable to retrieve application. Files missing in deployment" or "Application download has been interrupted, check for network errors and try again later"  
+ This message indicates that one or more files being referenced by the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests cannot be downloaded. The easiest way to debug this error is to try to download the URL that [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] says it cannot download. Here are some possible causes:  
   
-- ログ ファイルが "(403) Forbidden" または "(404) Not found" かどうか、Web サーバーがこのファイルのダウンロードをブロックしないように構成されていることを確認します。 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。  
+- If the log file says "(403) Forbidden" or "(404) Not found," verify that the Web server is configured so that it does not block download of this file. 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。  
   
-- 場合は、.config ファイルは、サーバーによってブロックされているは、「"をインストールしようすると、エラーをダウンロード、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .config ファイルがあるアプリケーション"このトピックで後述します。  
+- If the .config file is being blocked by the server, see the section "Download error when you try to install a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application that has a .config file" later in this topic.  
   
-- このため、発生されているかどうかを判断、`deploymentProvider`配置マニフェストで URL がアクティブ化に使用する URL とは異なる場所を指しています。  
+- Determine whether this occurred because the `deploymentProvider` URL in the deployment manifest is pointing to a different location than the URL used for activation.  
   
-- すべてのファイルがサーバー上に存在することを確認します。[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]ログがどのように指示するファイルが見つかりませんでした。  
+- Ensure that all files are present on the server; the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log should tell you which file was not found.  
   
-- ネットワーク接続の問題があるかどうかを参照してください。ダウンロード中に、クライアント コンピューターがオフラインになった場合、このメッセージが表示されることができます。  
+- See whether there are network connectivity issues; you can receive this message if your client computer went offline during the download.  
   
-#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>.Config ファイルがある ClickOnce アプリケーションをインストールしようとすると、エラーをダウンロードします。  
- 既定では、Visual Basic の Windows ベースのアプリケーションには、App.config ファイルが含まれています。 問題があるユーザーはオペレーティング システムがセキュリティ上の理由の .config ファイルのインストールをブロックするため、Windows Server 2003 を使用する Web サーバーからインストールしようとしています。 インストールする .config ファイルを有効にするには、 **".deploy"ファイル拡張子を使用して、** で、**発行オプション** ダイアログ ボックス。  
+#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Download error when you try to install a ClickOnce application that has a .config file  
+ By default, a Visual Basic Windows-based application includes an App.config file. There will be a problem when a user tries to install from a Web server that uses Windows Server 2003, because that operating system blocks the installation of .config files for security reasons. To enable the .config file to be installed, click **Use ".deploy" file extension** in the **Publish Options** dialog box.  
   
- 設定することも必要があります、コンテンツの種類 (MIME の種類とも呼ばれます) は、適切の .application、.manifest、および .deploy ファイル。 詳細については、Web サーバーのマニュアルを参照してください。  
+ You also must set the content types (also known as MIME types) appropriately for .application, .manifest, and .deploy files. For more information, see your Web server documentation.  
   
- 詳細については、次を参照してください。"Windows Server 2003。ロックされたコンテンツの種類"[サーバーおよびクライアント構成の問題では、ClickOnce 配置](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)します。  
+ For more information, see "Windows Server 2003: Locked-Down Content Types" in [Server and Client Configuration Issues in ClickOnce Deployments](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>エラー メッセージ「アプリケーションの形式が正しくありません」。ログ ファイルには、「XML 署名が無効です」が含まれています。  
- マニフェスト ファイルを更新して、再度署名されたことを確認してください。 使用して、アプリケーションを再発行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]または Mage を使用して、もう一度アプリケーションに署名します。  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Error message: "Application is improperly formatted;" Log file contains "XML signature is invalid"  
+ Ensure that you updated the manifest file and signed it again. Republish your application by using [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] or use Mage to sign the application again.  
   
-#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>サーバーで、アプリケーションの更新が、クライアントは、更新プログラムをダウンロードしていません。  
- 次のタスクのいずれかを実行して、この問題を解決可能性があります。  
+#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>You updated your application on the server, but the client does not download the update  
+ This problem might be solved by completing one of the following tasks:  
   
-- 確認、`deploymentProvider`配置マニフェストの URL。 同じ場所に bits を更新することを確認する`deploymentProvider`を指します。  
+- Examine the `deploymentProvider` URL in the deployment manifest. Ensure that you are updating the bits in the same location that `deploymentProvider` points to.  
   
-- 配置マニフェストの更新間隔を確認します。 この間隔が 1 回、6 時間ごとなどの定期的な間隔に設定されている場合[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はこの間隔が経過するまでに更新プログラムをスキャンしません。 アプリケーションを起動するたびに更新プログラムをスキャンするマニフェストを変更することができます。 更新間隔の変更は、開発時に更新プログラムがインストールされているアプリケーションのアクティベーションが長くなることを確認する便利なオプションです。  
+- Verify the update interval in the deployment manifest. If this interval is set to a periodic interval, such as one time every six hours, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] will not scan for an update until this interval has passed. You can change the manifest to scan for an update every time that the application starts. Changing the update interval is a convenient option during development time to verify updates are being installed, but it slows down application activation.  
   
-- [スタート] メニューにアプリケーションをもう一度起動してみてください。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] バック グラウンドで更新を検出した可能性がありますが、次回の起動時に、bits をインストールするように求められます。  
+- Try starting the application again on the Start menu. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] may have detected the update in the background, but will prompt you to install the bits on the next activation.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新中には、次のログ エントリがあるエラーが表示されます。「デプロイメント内の参照は、アプリケーション マニフェストで定義されている id に一致しない」  
- 展開およびアプリケーション マニフェストでは、手動で編集し、両者を同期するように 1 つのマニフェストにアセンブリの id の説明が原因となったために、このエラーが発生する可能性があります。 アセンブリの id は、その名前、バージョン、カルチャ、および公開キー トークンで構成されます。 マニフェストの identity の説明を確認し、任意の相違点を修正します。  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>During update you receive an error that has the following log entry: "The reference in the deployment does not match the identity defined in the application manifest"  
+ This error may occur because you have manually edited the deployment and application manifests, and have caused the description of the identity of an assembly in one manifest to become out of sync with the other. The identity of an assembly consists of its name, version, culture, and public key token. Examine the identity descriptions in your manifests, and correct any differences.  
   
-#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>最初にローカル ディスクまたは CD-ROM からのアクティブ化は成功しますが、[スタート] メニューからの後続のアクティベーションが成功しなかった  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置プロバイダーの URL を使用して、アプリケーションの更新プログラムを受信します。 URL を指している場所が正しいことを確認します。  
+#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>First time activation from local disk or CD-ROM succeeds, but subsequent activation from Start Menu does not succeed  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uses the Deployment Provider URL to receive updates for the application. Verify that the location that the URL is pointing to is correct.  
   
-#### <a name="error-cannot-start-the-application"></a>エラー :「アプリケーションを起動できません」  
- このエラー メッセージが通常にこのアプリケーションのインストールに問題があることを示して、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]を格納します。 アプリケーション エラーがあるか、ストアが破損しています。 ログ ファイルわかる場合がありますエラーが発生しました。  
+#### <a name="error-cannot-start-the-application"></a>Error: "Cannot start the application"  
+ This error message usually indicates that there is a problem installing this application into the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] store. Either the application has an error or the store is corrupted. The log file might tell you where the error occurred.  
   
- 次の操作を行う必要があります。  
+ You should do the following:  
   
-- 配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。  
+- Verify that the identity of the deployment manifest, identity of application manifest, and identity of the main application EXE are all unique.  
   
-- ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。  
+- Verify that your file paths are not longer than 100 characters. If your application contains file paths that are too long, you may exceed the limitations on the maximum path you can store. Try shortening the paths and reinstall.  
   
-#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>アプリケーション構成ファイルで PrivatePath 設定は適用されません。  
- PrivatePath (Fusion のプローブ パス) を使用するには、アプリケーションは、完全な信頼のアクセス許可を要求する必要があります。 完全な信頼を要求し、もう一度お試しに、アプリケーション マニフェストを変更してください。  
+#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath settings in application config file are not honored  
+ To use PrivatePath (Fusion probing paths), the application must request full trust permission. Try changing the application manifest to request full trust, and then try again.  
   
-#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>アンインストール中にメッセージを表示するという、「アプリケーションのアンインストールに失敗しました」  
- このメッセージは、通常、アプリケーションが既に削除されているか、ストアが破損していることを示します。 クリックした後**OK**、**プログラムの追加/削除**エントリが削除されます。  
+#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>During uninstall a message appears saying, "Failed to uninstall application"  
+ This message usually indicates that the application has already been removed or the store is corrupted. After you click **OK**, the **Add/Remove Program** entry will be removed.  
   
-#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>インストール中に、メッセージがプラットフォームの依存関係がインストールされていないことを示す表示されます。  
- アプリケーションを実行するために必要のある GAC (グローバル アセンブリ キャッシュ) の前提条件がありません。  
+#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>During installation, a message appears that says that the platform dependencies are not installed  
+ You are missing a prerequisite in the GAC (global assembly cache) that the application needs in order to run.  
   
-## <a name="publishing-with-visual-studio"></a>Visual Studio を使用した発行  
+## <a name="publishing-with-visual-studio"></a>Publishing with Visual Studio  
   
-#### <a name="publishing-in-visual-studio-fails"></a>Visual Studio での発行が失敗しました。  
- あるか、サーバーに発行する権利を対象となることを確認します。 たとえば、ターミナル サーバー コンピューター管理者としてではなく、通常のユーザーとしてログインしている場合おそらくはありません、ローカル Web サーバーへの公開に必要な権限。  
+#### <a name="publishing-in-visual-studio-fails"></a>Publishing in Visual Studio fails  
+ Ensure that you have the right to publish to the server that you are targeting. For example, if you are logged in to a terminal server computer as an ordinary user, not as an administrator, you probably will not have the rights required to publish to the local Web server.  
   
- URL を使用してパブリッシュする場合は、セットアップ先のコンピューターに有効になっている FrontPage Server Extensions を確認します。  
+ If you are publishing with a URL, ensure that the destination computer has FrontPage Server Extensions enabled.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラー メッセージ:Web サイトを作成できません。 '\<サイト >'。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。  
- Microsoft Visual Studio Web Authoring コンポーネントから公開しているコンピューターにインストールされているがあることを確認します。 Express ユーザーは、このコンポーネントは、既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)」を参照してください。  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Error Message: Unable to create the Web site '\<site>'. The components for communicating with FrontPage Server Extensions are not installed.  
+ Ensure that you have the Microsoft Visual Studio Web Authoring Component installed on the machine that you are publishing from. For Express users, this component is not installed by default. 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)」を参照してください。  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラー メッセージ:ファイルが見つかりませんでした ' Microsoft.Windows.Common-コントロール、バージョン 6.0.0.0、カルチャを = = *、PublicKeyToken = 6595b64144ccf1df、ProcessorArchitecture =\*型 = win32'  
- Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに、このエラー メッセージが表示されます。 この問題を解決するには、次を参照してください。[方法。Visual スタイルが有効になっている WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)します。  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Error Message: Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'  
+ This error message appears when you attempt to publish a WPF application with visual styles enabled. To resolve this issue, see [How to: Publish a WPF Application with Visual Styles Enabled](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
-## <a name="using-mage"></a>Mage を使用します。  
+## <a name="using-mage"></a>Using Mage  
   
-#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>証明書ストアと空白のメッセージを受信したボックス内の証明書に署名しようとしています。  
- **署名** ダイアログ ボックスがあります。  
+#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>You tried to sign with a certificate in your certificate store and a received blank message box  
+ In the **Signing** dialog box, you must:  
   
-- 選択**格納された証明書を使用してサインイン**と  
+- Select **Sign with a stored certificate**, and  
   
-- は、一覧から証明書を選択します。最初の証明書は、既定で選択します。  
+- Select a certificate from the list; the first certificate is not the default selection.  
   
-#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>「署名のない」ボタンをクリックすると、例外が発生します。  
- この問題は、既知のバグです。 すべて[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストが署名するために必要です。 署名のオプションのいずれかを選択し、 **OK**します。  
+#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicking the "Don't Sign" button causes an exception  
+ This issue is a known bug. All [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests are required to be signed. Just select one of the signing options, and then click **OK**.  
   
-## <a name="additional-errors"></a>その他のエラー  
- 次の表は、クライアント コンピューターのユーザーがインストールするときに表示される一般的なエラー メッセージ、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 エラーの最も考えられる原因の説明の横にある各エラー メッセージが表示されます。  
+## <a name="additional-errors"></a>Additional Errors  
+ The following table shows some common error messages that a client-computer user may receive when the user installs a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Each error message is listed next to a description of the most probable cause for the error.  
   
 |エラー メッセージ|説明|  
 |-------------------|-----------------|  
-|アプリケーションを開始できません。 アプリケーションの発行元にお問い合わせください。<br /><br /> アプリケーションを起動することはできません。 について、アプリケーション ベンダーに問い合わせてください。|これらは、アプリケーションを起動することはできませんし、その他の特定の理由が見つからないときに発生する一般的なエラー メッセージです。 または、アプリケーションが何らかの理由で破損しているこの手段頻繁に、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]ストアが破損しています。|  
-|続行できません。 アプリケーションは形式が正しくありません。 については、アプリケーションの発行元にお問い合わせください。<br /><br /> アプリケーションの検証は成功しませんでした。 続行できません。<br /><br /> アプリケーション ファイルを取得できません。 展開では、ファイルが壊れています。|展開内のマニフェスト ファイルの 1 つは構文が無効ですが、または対応するファイルと一致することはできませんが、ハッシュが含まれています。 このエラーは、アセンブリに埋め込まれたマニフェストが破損していることもある可能性があります。 配置を再作成し、アプリケーションを再コンパイルまたは検索し、マニフェストに手動でのエラーを修正します。|  
-|アプリケーションを取得することはできません。 認証エラーです。<br /><br /> アプリケーションのインストールは成功しませんでした。 サーバー上のアプリケーション ファイルを見つけることはできません。 についてアプリケーションの発行元または管理者に問い合わせてください。|展開内の 1 つまたは複数のファイルは、それらにアクセスする権限があるないために、ダウンロードできません。 拡張子が保護されたファイルとして扱う Web サーバーは、配置内のファイルのいずれかが終了した場合に発生する可能性があります Web サーバーによって返される 403 Forbidden エラーの可能性があります。 また、1 つまたは複数のアプリケーションのファイルを格納するディレクトリを必要がありますユーザー名とパスワードにアクセスするためにします。|  
-|アプリケーションをダウンロードすることはできません。 アプリケーションには、必要なファイルがありません。 について、アプリケーション ベンダーまたはシステム管理者に問い合わせてください。|1 つ以上のアプリケーション マニフェストに示されているファイルがサーバー上に見つかりません。 配置のすべての依存ファイルをアップロードし、もう一度お試しことを確認します。|  
-|アプリケーションのダウンロードは成功しませんでした。 ネットワーク接続を確認するか、システム管理者またはネットワーク サービス プロバイダーにお問い合わせください。|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] サーバーへのネットワーク接続を確立することはできません。 サーバーの可用性とネットワークの状態を確認します。|  
-|URLDownloadToCacheFile HRESULT により失敗しました '\<数 >'。 ダウンロードしようとしてエラーが発生しました '\<ファイル >'。|"ユーザーが Internet Explorer の高度なセキュリティ オプション セキュリティで保護された間を変更する場合は、警告と設定モードをセキュリティで保護"展開対象のコンピューターにし、保護されていないからセキュリティで保護されたサイトにインストールされる ClickOnce アプリケーションのセットアップの URL がリダイレクトされる場合 (または逆に)、Internet Explorer の警告が発生してそのため、インストールは失敗します。<br /><br /> これを解決するには、次のいずれかの操作を行います。<br /><br /> -セキュリティ オプションをオフにします。<br />-セットアップ URL がセキュリティ モードを変更するようにリダイレクトされないことを確認します。<br />リダイレクトを完全に削除し、実際のセットアップの URL をポイントします。|  
-|ハード ディスクへの書き込みエラーが発生しました。 ある可能性があります領域が不足して利用可能なディスクにします。 について、アプリケーション ベンダーまたはシステム管理者に問い合わせてください。|アプリケーションを格納するための十分なディスク領域がある可能性が、アプリケーション ファイルをディスク ドライブに保存しようとしているときに一般的な I/O エラーを示す場合もします。|  
-|アプリケーションを起動することはできません。 ディスクに十分な空き領域がありません。|ハード ディスクがいっぱいです。 空き領域を確保し、もう一度アプリケーションを実行しようとしてください。|  
-|デプロイが多すぎるのライセンス認証を同時にロードしようとしています。|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 同時に開始できるさまざまなアプリケーションの数を制限します。 これは、主に、悪意のある処置ローカルに対するサービス拒否攻撃から保護するため[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]; サービス ユーザーが立て続けに繰り返し、同じアプリケーションを起動しようと、1 つのインスタンスのみ結局は、アプリケーション。|  
-|ショートカットは、ネットワーク経由でアクティブ化することはできません。|ショートカットを[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションは、ローカルのハード_ディスクでのみ開始できます。 リモート サーバー上のショートカット ファイルを指す URL を開き、開始できません。|  
-|部分信頼でオンラインで実行するには、アプリケーションが大きすぎます。 について、アプリケーション ベンダーまたはシステム管理者に問い合わせてください。|部分信頼で実行されるアプリケーションは、online アプリケーション クォータは、既定では、250 mb のサイズの半分より大きくすることはできません。|  
+|Application cannot be started. Contact the application publisher.<br /><br /> Cannot start the application. Contact the application vendor for assistance.|These are generic error messages that occur when the application cannot be started, and no other specific reason can be found. Frequently this means that the application is somehow corrupted, or that the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] store is corrupted.|  
+|Cannot continue. The application is improperly formatted. Contact the application publisher for assistance.<br /><br /> Application validation did not succeed. Unable to continue.<br /><br /> Unable to retrieve application files. Files corrupt in deployment.|One of the manifest files in the deployment is syntactically not valid, or contains a hash that cannot be reconciled with the corresponding file. This error may also indicate that the manifest embedded inside an assembly is corrupted. Re-create your deployment and recompile your application, or find and fix the errors manually in your manifests.|  
+|Cannot retrieve application. 認証エラーです。<br /><br /> Application installation did not succeed. Cannot locate applications files on the server. Contact the application publisher or your administrator for assistance.|One or more files in the deployment cannot be downloaded because you do not have permission to access them. This can be caused by a 403 Forbidden error being returned by a Web server, which may occur if one of the files in your deployment ends with an extension that makes the Web server treat it as a protected file. Also, a directory that contains one or more of the application's files might require a username and password in order to access.|  
+|Cannot download the application. The application is missing required files. Contact the application vendor or your system administrator for assistance.|One or more of the files listed in the application manifest cannot be found on the server. Verify that you have uploaded all the deployment's dependent files, and try again.|  
+|Application download did not succeed. Check your network connection, or contact your system administrator or network service provider.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cannot establish a network connection to the server. Examine the server's availability and the state of your network.|  
+|URLDownloadToCacheFile failed with HRESULT '\<number>'. An error occurred trying to download '\<file>'.|If a user has set Internet Explorer Advanced Security option "Warn if changing between secure and not secure mode" on the deployment target computer, and if the setup URL of the ClickOnce application being installed is redirected from a non-secure to a secure site (or vice-versa), the installation will fail because the Internet Explorer warning interrupts it.<br /><br /> To resolve this, you can do one of the following:<br /><br /> -   Clear the security option.<br />-   Make sure that the setup URL is not redirected in such a way that changes security modes.<br />-   Remove the redirection completely and point to the actual setup URL.|  
+|An error has occurred writing to the hard disk. There might be insufficient space available on the disk. Contact the application vendor or your system administrator for assistance.|This may indicate insufficient disk space for storing the application, but it may also indicate a more general I/O error when you are trying to save the application files to the drive.|  
+|Cannot start the application. There is not enough available space on the disk.|The hard disk is full. Clear off space and try to run the application again.|  
+|Too many deployed activations are attempting to load at once.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] limits the number of different applications that can start at the same time. This is largely to help protect against malicious attempts to instigate denial-of-service attacks against the local [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] service; users who try to start the same application repeatedly, in rapid succession, will only end up with a single instance of the application.|  
+|Shortcuts cannot be activated over the network.|Shortcuts to a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application can only be started on the local hard disk. They cannot be started by opening a URL that points to a shortcut file on a remote server.|  
+|The application is too large to run online in partial trust. Contact the application vendor or your system administrator for assistance.|An application that runs in partial trust cannot be larger than half of the size of the online application quota, which by default is 250 MB.|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)

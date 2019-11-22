@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: c13d2e2a8f0ec06cdec26763e3492bfce7acfad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f382226ab20053a57b10326853f16e27f641b3be
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830546"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298121"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio を使用したクラウド サービスの発行
 
@@ -33,9 +33,9 @@ Azure アプリケーションを発行し、Web Deploy を使用して Web ロ�
 
 Azure アプリケーションを発行するときは、次のいずれかの作業を行います。
 
-- サービス パッケージを作成する: このパッケージとサービス構成ファイルを使用して、[Azure Portal](https://portal.azure.com) からデプロイ環境にアプリケーションを発行できます。
+- Create a service package: You can use this package and the service configuration file to publish your application to a deployment environment from the [Azure portal](https://portal.azure.com).
 
-- Visual Studio から Azure プロジェクトを発行する:アプリケーションを Azure に直接発行するには、発行ウィザードを使用します。 詳細については、「 [Azure アプリケーションの発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)」をご覧ください。
+- Publish your Azure project from Visual Studio: To publish your application directly to Azure, you use the Publish Wizard. 詳細については、「 [Azure アプリケーションの発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)」をご覧ください。
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Visual Studio からサービス パッケージを作成するには
 
@@ -43,11 +43,11 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 1. サービス パッケージだけを作成するには、次の手順に従います。
 
-   a.  Azure プロジェクトのショートカット メニューで、 **[パッケージ]** をクリックします。
+   a. Azure プロジェクトのショートカット メニューで、 **[パッケージ]** をクリックします。
 
-   b.  **[Azure アプリケーションのパッケージ化]** ダイアログ ボックスで、パッケージを作成するサービス構成を選択し、ビルド構成を選択します。
+   b. **[Azure アプリケーションのパッケージ化]** ダイアログ ボックスで、パッケージを作成するサービス構成を選択し、ビルド構成を選択します。
 
-   c. (省略可能) 発行後にクラウド サービスのリモート デスクトップを有効にするには、**[すべてのロールのリモート デスクトップを有効にする]** をオンにし、**[設定]** を選択してリモート デスクトップ資格情報を構成します。 詳しくは、「[Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio (Visual Studio を使用して Azure Cloud Services のロールでリモート デスクトップ接続を有効にする)](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)」をご覧ください。
+   c. (省略可能) 発行後にクラウド サービスのリモート デスクトップを有効にするには、 **[すべてのロールのリモート デスクトップを有効にする]** をオンにし、 **[設定]** を選択してリモート デスクトップ資格情報を構成します。 詳しくは、「[Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio (Visual Studio を使用して Azure Cloud Services のロールでリモート デスクトップ接続を有効にする)](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)」をご覧ください。
 
       クラウド サービスを発行後にデバッグする場合は、 **[すべてのロールのリモート デバッガーを有効にする]** を選択してリモート デバッグを有効にします。
 
@@ -69,13 +69,13 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 ### <a name="requirements-for-using-web-deploy"></a>Web 配置を使用する要件
 
-- **開発とテストのみを目的とする**: Web ロールが実行されている仮想マシンに直接変更が加えられます。 この仮想マシンをリサイクルする必要がある場合、発行済みの元のパッケージを使用してロールの仮想マシンが再作成されるため、変更は失われます。 Web ロールの最新の変更を取得するには、アプリケーションを再発行します。
+- **For development and testing purposes only**: The changes are made directly to the virtual machine where the web role is running. この仮想マシンをリサイクルする必要がある場合、発行済みの元のパッケージを使用してロールの仮想マシンが再作成されるため、変更は失われます。 Web ロールの最新の変更を取得するには、アプリケーションを再発行します。
 
-- **Web ロールのみを更新できる**: worker ロールは更新できません。 また、`web role.cs`の `RoleEntryPoint` は更新できません。
+- **Only web roles can be updated**: Worker roles can’t be updated. また、`web role.cs`の `RoleEntryPoint` は更新できません。
 
-- **サポートできる Web ロールのインスタンスは 1 つに限られる**: デプロイ環境で Web ロールの複数のインスタンスを使用することはできません。 ただし、それぞれにインスタンスを 1 つだけ持つ複数の Web ロールがサポートされます。
+- **Can only support a single instance of a web role**: You can’t have multiple instances of any web role in your deployment environment. ただし、それぞれにインスタンスを 1 つだけ持つ複数の Web ロールがサポートされます。
 
-- **リモート デスクトップ接続を有効にする**: この要件により、Web 配置でユーザーとパスワードを使用して仮想マシンに接続し、インターネット インフォメーション サービス (IIS) を実行しているサーバーに変更をデプロイできます。 また、仮想マシンに接続して、その仮想マシン上の IIS に信頼された証明書を追加することが必要な場合もあります  (この証明書により、Web 配置によって使用される IIS のリモート接続のセキュリティが確保されます)。
+- **Enable remote desktop connections**: This requirement allows Web Deploy to use the user and password to connect to the virtual machine to deploy the changes to the server that’s running Internet Information Services (IIS). また、仮想マシンに接続して、その仮想マシン上の IIS に信頼された証明書を追加することが必要な場合もあります (この証明書により、Web 配置によって使用される IIS のリモート接続のセキュリティが確保されます)。
 
 次の手順は、 **Azure アプリケーションの公開** ウィザードを使用していることを前提としています。
 
@@ -87,7 +87,7 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
     警告を表す黄色の三角形が表示されます。 Web Deploy では、信頼されていない自己署名証明書が既定で使用されます。これは、機密データをアップロードする場合には推奨されません。 機密データのためにこのプロセスを保護する必要がある場合は、Web 配置の接続に使用する SSL 証明書を追加できます。 この証明書は、信頼された証明書であることが必要です。 詳細については、「[Web 配置のセキュリティを確保する](#make-web-deploy-secure)」をご覧ください。
 
-1. **[次へ]** をクリックして **[概要]** 画面を表示し、**[発行]** をクリックしてクラウド サービスをデプロイします。
+1. **[次へ]** をクリックして **[概要]** 画面を表示し、 **[発行]** をクリックしてクラウド サービスをデプロイします。
 
     クラウド サービスが発行されます。 作成される仮想マシンでは IIS のリモート接続が有効になっているため、Web ロールを再発行しなくても、Web Deploy を使用してそれらのロールを更新できます。
 
@@ -102,9 +102,9 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 1. Web 配置を使用するには、パッケージを最初に発行したときにリモート デスクトップ接続用に設定したユーザー名とパスワードが必要です。
 
-   a.  **[ユーザー名]** に、ユーザー名を入力します。
+   a. **[ユーザー名]** に、ユーザー名を入力します。
 
-   b.  **[パスワード]** に、パスワードを入力します。
+   b. **[パスワード]** に、パスワードを入力します。
 
    c. (省略可能) このパスワードをこのプロファイルに保存する場合は、 **[パスワードの保存]** を選択します。
 
@@ -120,9 +120,9 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 1. リモート接続に使用する信頼された SSL 証明書を IIS に追加するには、次の手順を実行します。
 
-   a.  Web ロールを実行している仮想マシンに接続するには、**Cloud Explorer** または**サーバー エクスプローラー**で Web ロールのインスタンスを選択し、**[リモート デスクトップを使用して接続]** をクリックします。 仮想マシンに接続する手順について詳しくは、「[Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio (Visual Studio を使用して Azure Cloud Services のロールでリモート デスクトップ接続を有効にする)](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)」をご覧ください。 お使いのブラウザーに、`.rdp` ファイルのダウンロードを求めるメッセージが表示されます。
+   a. Web ロールを実行している仮想マシンに接続するには、**Cloud Explorer** または**サーバー エクスプローラー**で Web ロールのインスタンスを選択し、 **[リモート デスクトップを使用して接続]** をクリックします。 仮想マシンに接続する手順について詳しくは、「[Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio (Visual Studio を使用して Azure Cloud Services のロールでリモート デスクトップ接続を有効にする)](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)」をご覧ください。 お使いのブラウザーに、`.rdp` ファイルのダウンロードを求めるメッセージが表示されます。
 
-   b.  SSL 証明書を追加するには、IIS マネージャーで管理サービスを開きます。 IIS マネージャーで、**[操作]** ウィンドウの **[バインド]** リンクを開いて SSL を有効にします。 **[サイト バインドの追加]** ダイアログ ボックスが表示されます。 **[追加]** を選択し、**[種類]** ドロップダウン リストから HTTPS を選択します。 **[SSL 証明書]** 一覧で、Azure Portal にアップロードした、CA による署名済みの SSL 証明書を選択します。 詳細については、「 [管理サービスの接続設定を構成する (IIS 7)](http://go.microsoft.com/fwlink/?LinkId=215824)」をご覧ください。
+   b. SSL 証明書を追加するには、IIS マネージャーで管理サービスを開きます。 IIS マネージャーで、 **[操作]** ウィンドウの **[バインド]** リンクを開いて SSL を有効にします。 **[サイト バインドの追加]** ダイアログ ボックスが表示されます。 **[追加]** を選択し、 **[種類]** ドロップダウン リストから HTTPS を選択します。 **[SSL 証明書]** 一覧で、Azure Portal にアップロードした、CA による署名済みの SSL 証明書を選択します。 詳細については、「 [管理サービスの接続設定を構成する (IIS 7)](https://go.microsoft.com/fwlink/?LinkId=215824)」をご覧ください。
 
       > [!NOTE]
       > 信頼された SSL 証明書を追加すると、 **発行ウィザード**で警告を表す黄色の三角形が表示されなくなります。
@@ -133,15 +133,15 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 1. サービス パッケージにアセンブリを追加するには、次の手順に従います。
 
-   a.  **ソリューション エクスプローラー** で、参照アセンブリが欠けているプロジェクトのプロジェクト ノードを開きます。
-   b.  アセンブリをプロジェクトに追加するには、**[参照]** フォルダーのショートカット メニューを開き、**[参照の追加]** をクリックします。 [参照の追加] ダイアログが表示されます。
-   c. 追加する参照を選択し、**[OK]** をクリックします。 **[参照]** フォルダーの下の一覧に参照が追加されます。
+   a. **ソリューション エクスプローラー** で、参照アセンブリが欠けているプロジェクトのプロジェクト ノードを開きます。
+   b. アセンブリをプロジェクトに追加するには、 **[参照]** フォルダーのショートカット メニューを開き、 **[参照の追加]** をクリックします。 [参照の追加] ダイアログが表示されます。
+   c. 追加する参照を選択し、 **[OK]** をクリックします。 **[参照]** フォルダーの下の一覧に参照が追加されます。
    d. 追加したアセンブリのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウが表示されます。
 
-      このアセンブリをサービス パッケージに含めるには、**[ローカルにコピー]** 一覧で **[True]** を選択します。
+      このアセンブリをサービス パッケージに含めるには、 **[ローカルにコピー]** 一覧で **[True]** を選択します。
 1. **ソリューション エクスプローラー** で、参照アセンブリが欠けているプロジェクトのプロジェクト ノードを開きます。
 
-1. アセンブリをプロジェクトに追加するには、**[参照]** フォルダーのショートカット メニューを開き、**[参照の追加]** をクリックします。 **[参照の追加]** ダイアログが表示されます。
+1. アセンブリをプロジェクトに追加するには、 **[参照]** フォルダーのショートカット メニューを開き、 **[参照の追加]** をクリックします。 **[参照の追加]** ダイアログが表示されます。
 
 1. 追加する参照を選択し、 **[OK]** をクリックします。
 
@@ -149,12 +149,12 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 1. 追加したアセンブリのショートカット メニューを開き、 **[プロパティ]** をクリックします。 [プロパティ] ウィンドウが表示されます。
 
-1. このアセンブリをサービス パッケージに含めるには、**[ローカルにコピー]** 一覧で **[True]** を選択します。
+1. このアセンブリをサービス パッケージに含めるには、 **[ローカルにコピー]** 一覧で **[True]** を選択します。
 
-1. Web ロール プロジェクトに追加したサービス パッケージにファイルを含めるには、ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウで、**[ビルド アクション]** ボックスの一覧の **[コンテンツ]** をクリックします。
+1. Web ロール プロジェクトに追加したサービス パッケージにファイルを含めるには、ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウで、 **[ビルド アクション]** ボックスの一覧の **[コンテンツ]** をクリックします。
 
-1. worker ロール プロジェクトに追加したサービス パッケージにファイルを含めるには、ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウで、**[出力ディレクトリにコピー]** ボックスの一覧の **[新しい場合はコピーする]** をクリックします。
+1. worker ロール プロジェクトに追加したサービス パッケージにファイルを含めるには、ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウで、 **[出力ディレクトリにコピー]** ボックスの一覧の **[新しい場合はコピーする]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Visual Studio から Azure への発行の詳細については、「 [Azure アプリケーションの発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)」をご覧ください。

@@ -9,19 +9,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12bce61c7d860f56142c25dd15dea3ac8ad21f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef28781252181dbf765db52dbe6fed1b286516b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671870"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295774"
 ---
 # <a name="step-2-run-your-program"></a>手順 2: プログラムの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 新しいソリューションを作成すると、実際には実行するプログラムが作成されます。 まだ実行される処理は少なく、タイトル バーに **Form1** と表示された空のウィンドウを表示するだけのプログラムですが、 もうおわかりのように実行することはできます。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205209)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](http://go.microsoft.com/fwlink/?LinkId=205199)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-run-your-program"></a>プログラムを実行するには
 
@@ -33,15 +33,15 @@ ms.locfileid: "72671870"
 
     - ツール バーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
-         ![[デバッグの開始] ツールバーボタン](../ide/media/express-icondebug.png "Express_IconDebug")[デバッグの開始] ツールバーボタン
+         ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
 
 2. Visual Studio でプログラムが実行され、**Form1** というウィンドウが表示されます。 次の図は、作成したプログラムを示しています。 この実行中のプログラムに対し、これから機能を追加していきます。
 
-     ![Windows フォームアプリケーションプログラムを実行して](../ide/media/express-firstrun.png "Express_FirstRun")いますWindows フォームアプリケーションプログラムを実行しています
+     ![Windows Form application program running](../ide/media/express-firstrun.png "Express_FirstRun") Windows Form Application program running
 
 3. Visual Studio 統合開発環境 (IDE) に戻り、新しいツール バーを参照します。 プログラムを実行すると、追加ボタンがツール バーに表示されます。 これらのボタンを使用するとプログラムの停止や開始などの操作ができ、発生する可能性のあるエラー (バグ) の追跡に役立ちます。 この例では、単にプログラムを開始および停止するために使用します。
 
-     ![デバッグツールバー](../ide/media/express-debugtoolbar.png "Express_DebugToolbar")デバッグツールバー
+     ![Debugging toolbar](../ide/media/express-debugtoolbar.png "Express_DebugToolbar") Debugging toolbar
 
 4. プログラムを停止するには、次のいずれかの方法を使用します。
 

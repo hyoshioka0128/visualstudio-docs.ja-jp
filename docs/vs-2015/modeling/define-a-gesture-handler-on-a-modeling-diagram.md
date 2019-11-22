@@ -1,5 +1,5 @@
 ---
-title: モデリング図にジェスチャハンドラーを定義する |Microsoft Docs
+title: Define a gesture handler on a modeling diagram | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf111dbf8297994994f10b9b867e03321268679
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654869"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299309"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>モデリング図にジェスチャ ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、ユーザーが UML 図の項目をダブルクリックまたはドラッグしたときに実行されるコマンドを定義できます。 これらの拡張機能を[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化して、他の Visual Studio ユーザーに配布できます。
+Visual Studio では、ユーザーが UML 図の項目をダブルクリックまたはドラッグしたときに実行されるコマンドを定義できます。 これらの拡張機能を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化して、他の Visual Studio ユーザーに配布できます。
 
  図の種類およびドラッグする要素の種類に対応する組み込みの動作が既に用意されている場合は、この動作を追加またはオーバーライドできない可能性があります。
 
@@ -34,9 +34,9 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 ## <a name="creating-a-gesture-handler"></a>ジェスチャ ハンドラーの作成
  UML デザイナーのジェスチャ ハンドラーを定義するには、ジェスチャ ハンドラーの振る舞いを定義するクラスを生成し、そのクラスを Visual Studio Integration Extension (VSIX) に埋め込む必要があります。 VSIX は、ハンドラーをインストールできるコンテナーとして機能します。 ジェスチャ ハンドラーを定義する方法は 2 つあります。
 
-- **プロジェクトテンプレートを使用して、独自の VSIX にジェスチャハンドラーを作成します。** これはより簡単な方法です。 ハンドラーの他の種類の拡張機能 (検証拡張機能、カスタム ツールボックス項目、メニュー コマンドなど) と組み合わせない場合は、この方法を使用します。
+- **Create a gesture handler in its own VSIX using a project template.** これはより簡単な方法です。 ハンドラーの他の種類の拡張機能 (検証拡張機能、カスタム ツールボックス項目、メニュー コマンドなど) と組み合わせない場合は、この方法を使用します。
 
-- **ジェスチャハンドラーと VSIX プロジェクトを個別に作成します。** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、ジェスチャ ハンドラーが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
+- **Create separate gesture handler and VSIX projects.** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、ジェスチャ ハンドラーが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>ジェスチャ ハンドラーを独自の VSIX に生成するには
 
@@ -48,7 +48,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 3. F5 キーを押してジェスチャ ハンドラーをテストします。 詳細については、「 [ジェスチャ ハンドラーの実行](#Executing)」を参照してください。
 
-4. 別のコンピューターにジェスチャハンドラーをインストールします。そのためには、プロジェクトによってビルドされた **\\ \* .vsix \\ \* ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
+4. Install the gesture handler on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
 
    次の手順も使用できます。
 
@@ -74,7 +74,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – レイヤー図を拡張する場合にのみ必要になります。 詳細については、「[レイヤー図の拡張](../modeling/extend-layer-diagrams.md)」を参照してください。
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – レイヤー図を拡張する場合にのみ必要になります。 For more information, see [Extend layer diagrams](../modeling/extend-layer-diagrams.md).
 
 3. プロジェクトにクラス ファイルを追加し、その内容を次のコードに設定します。
 
@@ -230,7 +230,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
          **[プロジェクト]**  = *クラス ライブラリ プロジェクト*
 
-## <a name="Executing"></a>ジェスチャハンドラーの実行
+## <a name="Executing"></a> Executing the Gesture Handler
  テストを行う場合は、ジェスチャ ハンドラーをデバッグ モードで実行します。
 
 #### <a name="to-test-the-gesture-handler"></a>ジェスチャ ハンドラーをテストするには
@@ -243,7 +243,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
    - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-   - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、[プロパティ] をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の完全なパス名であることを確認します。通常は次のようになります。
+   - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、[プロパティ] をクリックします。 In the project properties editor, choose the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,7 +265,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 - この種類のターゲットおよびドロップ対象の要素に対して組み込みの機能が定義されていない。
 
-## <a name="Implementing"></a>ジェスチャハンドラーの実装
+## <a name="Implementing"></a> Implementing the Gesture Handler
 
 ### <a name="the-gesture-handler-methods"></a>ジェスチャ ハンドラーのメソッド
  ジェスチャ ハンドラー クラスは、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension> を実装およびエクスポートします。 定義する必要のあるメソッドを次に示します。
@@ -282,7 +282,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 - `ShapeElement target`. ユーザーが項目をドラッグした図形または図。
 
-    `ShapeElement` は、UML モデリング ツールの基礎にある実装のクラスです。 UML モデルと図が不整合な状態になる可能性を低くするには、このクラスのメソッドを直接使用しないことをお勧めします。 代わりに、`IShape` に要素をラップし、「[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)する」で説明されているメソッドを使用します。
+    `ShapeElement` は、UML モデリング ツールの基礎にある実装のクラスです。 UML モデルと図が不整合な状態になる可能性を低くするには、このクラスのメソッドを直接使用しないことをお勧めします。 Instead, wrap the element in an `IShape`, and then use the methods described in [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
 
   - `IShape`を取得するには
 
@@ -319,14 +319,14 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のさまざまな部分から、または Windows デスクトップから、さまざまな種類の要素を図にドラッグすることができます。 `IDataObject`では、多種多様な要素がさまざまな方法でエンコードされています。 情報を抽出する方法については、適切なオブジェクトの種類に関するドキュメントを参照してください。
 
-     ソースオブジェクトが uml モデルエクスプローラーまたは別の UML 図からドラッグされた UML 要素の場合は、「 [IDataObject から uml モデル要素を取得](../modeling/get-uml-model-elements-from-idataobject.md)する」を参照してください。
+     If your source object is a UML element dragged from UML Model Explorer or from another UML diagram, refer to [Get UML model elements from IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ### <a name="writing-the-code-of-the-methods"></a>メソッドのコードの記述
  モデルを読み取って更新するコードの記述の詳細については、「 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)」を参照してください。
 
- ドラッグ操作でのモデル情報へのアクセスの詳細については、「 [IDataObject から UML モデル要素を取得](../modeling/get-uml-model-elements-from-idataobject.md)する」を参照してください。
+ For information about accessing model information in a drag operation, see [Get UML model elements from IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
- シーケンス図を扱う場合は、「 [UML API を使用して uml シーケンス図を編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)する」も参照してください。
+ If you are dealing with a sequence diagram, see also [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
  メソッドのパラメーターに加え、現在の図およびモデルにアクセスするためのクラスの、インポート済みプロパティを宣言することもできます。
 
@@ -346,9 +346,9 @@ foreach (IDiagram diagram in modelStore.Diagrams) {...}
 foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 ```
 
- 詳細については、「 [UML モデル内を移動する](../modeling/navigate-the-uml-model.md)」を参照してください。
+ For more information, see [Navigate the UML model](../modeling/navigate-the-uml-model.md).
 
-## <a name="Installing"></a>拡張機能のインストールとアンインストール
+## <a name="Installing"></a> Installing and uninstalling an extension
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。
 
 #### <a name="to-install-an-extension"></a>拡張機能をインストールするには
@@ -357,11 +357,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. _YourProject_ **\\ \* \\ ファイルビン**を見つけ**ます。**
+    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
-     ターゲットコンピューターは、 **source.extension.vsixmanifest**で指定した [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] のいずれかのエディションを持っている必要があります。
+     The target computer must have one of the editions of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] that you specified in **source.extension.vsixmanifest**.
 
 3. ターゲット コンピューター上で、 **.vsix** ファイルを開きます。
 
@@ -379,14 +379,14 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *% Localappdata%* **\Local\Microsoft\VisualStudio \\ [バージョン] \ 拡張機能**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="DragExample"></a> 「例」
  コンポーネント図からドラッグされたコンポーネントのパートおよびポートに基づいて、シーケンス図に生存線を生成する方法を次の例に示します。
 
- テストするには、F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスで UML モデルを開き、コンポーネント図にコンポーネントを生成します。 このコンポーネントに、インターフェイスと内部コンポーネントのパートを追加します。 インターフェイスおよびパートを選択します。 次に、インターフェイスおよびパートをシーケンス図にドラッグします (コンポーネント図からシーケンス図のタブまでドラッグし、次にシーケンス図にドラッグします)。各インターフェイスとパートに生存線が表示されます。
+ テストするには、F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスで UML モデルを開き、コンポーネント図にコンポーネントを生成します。 このコンポーネントに、インターフェイスと内部コンポーネントのパートを追加します。 インターフェイスおよびパートを選択します。 次に、インターフェイスおよびパートをシーケンス図にドラッグします (Drag from the component diagram up to the tab for the sequence diagram, and then down into the sequence diagram.) A lifeline will appear for each interface and part.
 
- シーケンス図への相互作用のバインドの詳細については、「 [UML API を使用して uml シーケンス図を編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)する」を参照してください。
+ For more information about binding interactions to sequence diagrams, see [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
 ```
 using System.Collections.Generic;
@@ -517,7 +517,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
 ```
 
- @No__t_0 のコードについては、「 [IDataObject から UML モデル要素を取得](../modeling/get-uml-model-elements-from-idataobject.md)する」を参照してください。
+ The code of `GetModelElementsFromDragEvent()` is described in [Get UML model elements from IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ## <a name="see-also"></a>参照
- [モデリング拡張機能を定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)[するモデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する uml[モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する uml [API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ad57a05e45b7e9acd3db455f0a8849166dc3c735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654762"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299910"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>チュートリアル 1: ピクチャ ビューアーの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,12 @@ ms.locfileid: "72654762"
 
   ![このチュートリアルで作成する画像](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")このチュートリアルで作成する画像
 
-  サンプルの完全バージョンをダウンロードするには、「[Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)」 (画像ビューアーのチュートリアルの完全なサンプル) を参照してください。
-
-  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[操作方法: Visual Basic でのピクチャビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205207)」または「[操作方法: 画像ビューアー C#の作成方法](http://go.microsoft.com/fwlink/?LinkId=205198)」を参照してください。
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [How Do I: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) or [How Do I: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。 このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
 >
-> Visual Basic のコードを表示するには、コードブロックの上部にある **[VB]** タブをクリックし、 C#ビジュアルのコード**C#** を表示するには、[] タブを選択します。ビジュアルC++の詳細については、「[はじめに](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)と[ C++言語のチュートリアル](http://www.cplusplus.com/doc/tutorial/)」を参照してください。
+> To see code for Visual Basic, choose the **VB** tab at the top of code blocks, and to see code for Visual C#, choose the **C#** tab. If you're interested in learning about Visual C++, see [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) and [C++ Language Tutorial](http://www.cplusplus.com/doc/tutorial/).
 >
 > Windows ストア用の Visual C# アプリまたは Visual Basic アプリの記述方法の学習に関心がある場合は、「[C# または Visual Basic を使った初めての Windows ランタイム アプリの作成](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx)」を参照してください。 Windows ストア用の JavaScript アプリの作成の詳細については、「[JavaScript を使った初めての Windows ランタイム アプリの作成](https://msdn.microsoft.com/library/windows/apps/br211385.aspx)」を参照してください。
 

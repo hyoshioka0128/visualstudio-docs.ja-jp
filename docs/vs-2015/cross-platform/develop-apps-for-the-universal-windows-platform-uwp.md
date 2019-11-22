@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed601f6b3bfeba4d7aebed5955b340fb28908c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660201"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299836"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "72660201"
 
  必要なソフトウェアの一覧を次に示します。
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)
+- [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 オプション機能の一覧からユニバーサル Windows アプリ開発ツールが選択されていることを確認します。 これらのツールがないと、ユニバーサル アプリを作成することができません。
+- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725)。 オプション機能の一覧からユニバーサル Windows アプリ開発ツールが選択されていることを確認します。 これらのツールがないと、ユニバーサル アプリを作成することができません。
 
   このソフトウェアをインストールしたら、開発用に [Windows 10 デバイスを有効にする](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 必要があります。 (Windows 10 デバイスごとに開発者ライセンスは必要ありません。)
 
@@ -55,7 +55,7 @@ ms.locfileid: "72660201"
   開発プラットフォームが Windows 10 の場合に使用できるのは、XAML デザイナーのみです。
 
 ## <a name="universal-windows-apps"></a>ユニバーサル Windows アプリ
- 希望する開発言語を C#、Visual Basic、C++ または JavaScript の中から選び、 [Windows 10 デバイスを対象とするユニバーサル Windows アプリを作成します](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 あるいは [この入門用ビデオ](http://channel9.msdn.com/Series/ConnectOn-Demand/229)を再生します。
+ 希望する開発言語を C#、Visual Basic、C++ または JavaScript の中から選び、 [Windows 10 デバイスを対象とするユニバーサル Windows アプリを作成します](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 あるいは [この入門用ビデオ](https://channel9.msdn.com/Series/ConnectOn-Demand/229)を再生します。
 
  既存の Windows 8.1 のストア アプリ、Windows Phone 8.1 アプリ、または Visual Studio 2015 RC で作成されたユニバーサル Windows アプリがある場合、最新のユニバーサル Windows プラットフォームを使用するよう、 [これらの既存のアプリを移植します](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 。
 

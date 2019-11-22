@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660630"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302606"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "72660630"
 
 1. プロジェクトを作成します。
 
-     ![コード化された UI テストプロジェクトの作成](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
+     ![Create a coded UI test project](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. アクションを記録することを選択します。
 
-     ![アクションを記録することを選択します](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![Choose to record the actions](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. 電卓アプリを開き、テストの記録を開始します。
 
-     ![アクションの記録](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Record actions](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. 1 と 2 を加算し、レコーダーを一時停止し、テスト メソッドを生成します。 後で、このユーザー入力の値をデータ ファイルからの値に置換することになります。
 
-     ![テストメソッドの生成](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+     ![Generate test method](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
 
      テスト ビルダーを閉じます。 メソッドがテストに追加されます。
 
@@ -67,15 +67,15 @@ ms.locfileid: "72660630"
 
      合計を表示する電卓のテキスト コントロールをマップします。
 
-     ![UI テキストコントロールのマップ](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Map the UI text control](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. 合計の値が正しいことを検証するアサーションを追加します。 値が **3** である **[DisplayText]** プロパティを選択し、 **[アサーションの追加]** を選択します。 **AreEqual** 比較演算子を使用し、比較値が **3** であることを確認します。
 
-     ![アサーションを構成する](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
+     ![Configure the assertion](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
 8. アサーションを構成した後、ビルダーからコードを再生成します。 これにより、検証用の新しいメソッドが作成されます。
 
-     ![アサーションメソッドの生成](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+     ![Generate the assertion method](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
 
      `ValidateSum` メソッドは、`AddNumbers` メソッドの結果を検証するため、コード ブロックの末尾に移動します。
 
@@ -98,7 +98,7 @@ ms.locfileid: "72660630"
 
 1. dataDrivenSample プロジェクトにテキスト ファイルを追加し、その名前を「`data.csv`」にします。
 
-     ![コンマ区切り値ファイルをプロジェクトに追加する](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Add a comma seperated value file to the project](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. この .csv ファイルに次のデータを設定します。
 
@@ -110,13 +110,13 @@ ms.locfileid: "72660630"
 
      データを追加した後、ファイルが次のように表示されます。
 
-     ![にデータを設定します。データを含む CSV ファイル](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Populate the .CSV file with data](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. 正しいエンコーディングを使用して .csv ファイルを保存することが重要です。 **[ファイル]** メニューで、 **[保存オプションの詳細設定]** を選択し、エンコード方式として **[Unicode (UTF-8 シグネチャなし) - コードページ 65001]** を選択します。
 
 4. .csv ファイルは出力ディレクトリにコピーする必要があり、そのようにしないとテストを実行できません。 このコピーには、[プロパティ] ウィンドウを使用します。
 
-     ![を展開します。CSV ファイル](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Deploy the .CSV file](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      データ セットを作成したので、次にデータをテストにバインドしてみます。
 
@@ -185,15 +185,15 @@ ms.locfileid: "72660630"
 
     - UIMap.uitest ファイルを開きます。
 
-         ![コード化された UI テストエディターを開く](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Open the Coded UI Test Editor](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - UI アクションを選択し、対応する UI コントロールのマップを確認します。 マップがどのようにコードに対応するかに注意します (たとえば、`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
 
-         ![コード化された UI テストエディターを使用してコードを支援する](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Use the Coded UI Test Editor to assist with code](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - [プロパティ] ウィンドウで、 **[検索プロパティ]** を開きます。 検索プロパティ **[名前]** の値は、データ ソースを使用してコードで操作される対象です。 たとえば、`SearchProperties` には各データ行の最初の列の値 (`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`) が割り当てられます。 3 つのイテレーションのために、このテストでは検索プロパティの **[名前]** の値を 3、5、6 の順に変更します。
 
-         ![検索プロパティを使用してコーディングを支援する](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Use the search properties to assist in coding](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. ソリューションを保存します。
 
@@ -205,7 +205,7 @@ ms.locfileid: "72660630"
 
    **ガイダンス**
 
-   詳細については、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 2 章: 単体テスト: 内部のテスト) および「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 5 章: システム テストの自動化) を参照してください。
+   詳細については、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://go.microsoft.com/fwlink/?LinkID=255188)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 2 章: 単体テスト: 内部のテスト) および「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 5 章: システム テストの自動化) を参照してください。
 
 ## <a name="q--a"></a>Q & A
 

@@ -33,47 +33,47 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669344"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297452"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio の XML ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-拡張マークアップ言語 (XML) * は、データを記述するための形式を提供するマークアップ言語です。 これにより、コンテンツの宣言がより正確になり、複数のプラットフォームをまたいだ検索結果がよりわかりやすくなります。 さらに、XML では、データと表示形式とを切り離すことができます。 たとえば、HTML では、ブラウザーでの太字や斜体によるデータの表示をタグで指定します。XML では、市の名前、気温、気圧などのデータを記述する目的でのみタグを使用します。 XML では、拡張スタイルシート言語 (XSL) やカスケード スタイル シート (CSS) などのスタイル シートを使用して、ブラウザーにデータを表示します。 XML では、データが表示形式と処理から切り離されます。 このため、適用するスタイル シートやアプリケーションを変えることによって、データの表示や処理を思いどおりに行うことができます。
+Extensible Markup Language (XML)* is a markup language that provides a format for describing data. これにより、コンテンツの宣言がより正確になり、複数のプラットフォームをまたいだ検索結果がよりわかりやすくなります。 さらに、XML では、データと表示形式とを切り離すことができます。 たとえば、HTML では、ブラウザーでの太字や斜体によるデータの表示をタグで指定します。XML では、市の名前、気温、気圧などのデータを記述する目的でのみタグを使用します。 XML では、拡張スタイルシート言語 (XSL) やカスケード スタイル シート (CSS) などのスタイル シートを使用して、ブラウザーにデータを表示します。 XML では、データが表示形式と処理から切り離されます。 このため、適用するスタイル シートやアプリケーションを変えることによって、データの表示や処理を思いどおりに行うことができます。
 
  XML は SGML のサブセットで、Web を通じて送信するために最適化されています。 これは W3C (World Wide Web Consortium) が定義したものです。 この標準化によって、アプリケーションや販売元から独立している統一形式の構造化データを作成できます。
 
  XML は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の多くの機能の中核となっています。 次のトピック一覧に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] で提供される XML 関連のツールと機能を示します。
 
- 詳細については、xml 開発者向けの最新のドキュメント、技術情報、ダウンロード、ニュースグループ、およびその他のリソースを提供する[Xml デベロッパーセンター](http://go.microsoft.com/fwlink/?LinkID=100176)を参照してください。
+ For more information, see the [XML Developer Center](https://go.microsoft.com/fwlink/?LinkID=100176), which provides the latest documentation, technical information, downloads, newsgroups, and other resources for XML developers.
 
 ## <a name="in-this-section"></a>このセクションの内容
- [XML データの操作](../xml-tools/working-with-xml-data.md)@No__t_1 でのデータの処理方法における XML の役割について説明します。
+ [Working with XML Data](../xml-tools/working-with-xml-data.md) Discusses the role of XML in the way data is handled in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
- [XSLT のデバッグ](../xml-tools/debugging-xslt.md)Visual Studio デバッガーを使用して XSLT をデバッグする方法に関するトピックへのリンクを示します。
+ [Debugging XSLT](../xml-tools/debugging-xslt.md) Provides links to topics about using the Visual Studio debugger to debug XSLT.
 
-## <a name="reference"></a>参照
- [VisualStudio](http://go.microsoft.com/fwlink/?LinkID=165699)は、任意の xml ドキュメント[に対して](http://go.microsoft.com/fwlink/?LinkId=228250)XmlEditor を使用して[xml エディター](http://go.microsoft.com/fwlink/?LinkId=228249)の解析ツリーを公開します。
+## <a name="reference"></a>辞書／辞典／その他
+ [Microsoft.VisualStudio.XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) Exposes the [XML Editor](https://go.microsoft.com/fwlink/?LinkId=228249) parse tree through [System.Xml.Linq](https://go.microsoft.com/fwlink/?LinkId=228250) for any XML documents.
 
- [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)Xml、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、XSLT などの XML テクノロジについて説明します。
+ [XML Standards Reference](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Provides information about XML technologies, including XML, Document Type Definition (DTD), XML Schema definition language (XSD), and XSLT.
 
- <xref:System.Xml?displayProperty=fullName> では、<xref:System.Xml> 名前空間を構成するクラスとその他の要素について説明し、各項目の詳細情報へのリンクを示します。
+ <xref:System.Xml?displayProperty=fullName> Describes the classes and other elements that make up the <xref:System.Xml> namespace and provides links to more detailed information on each item.
 
- <xref:System.Xml.Serialization?displayProperty=fullName> では、<xref:System.Xml.Serialization> 名前空間を構成するクラスとその他の要素について説明し、各項目に関する詳細情報へのリンクを示します。
+ <xref:System.Xml.Serialization?displayProperty=fullName> Describes the classes and other elements that make up the <xref:System.Xml.Serialization> namespace and provides links to more detailed information about each item.
 
 ## <a name="related-sections"></a>関連項目
- [XML ドキュメントオブジェクトモデル (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)@No__t_1 とそれに関連付けられているクラスが W3C ドキュメントオブジェクトモデル (Core) Level 1 および Level 2 名前空間のサポート仕様にどのように準拠しているかを説明します。
+ [XML Document Object Model (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Describes how the <xref:System.Xml.XmlDocument> and its associated classes comply with the W3C Document Object Model (Core) Level 1 and Level 2 namespace support specifications.
 
- [XmlReader を使用した XML の読み取り](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)@No__t_1 が XML ストリーム経由の XML データに対して、非キャッシュ、前方参照専用、読み取り専用のアクセスを提供する方法について説明します。
+ [Reading XML with the XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Describes how the <xref:System.Xml.XmlReader> provides noncached, forward only, read-only access to XML data over an XML stream.
 
- [XmlWriter を使用した XML の書き込み](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)@No__t_1 によって、キャッシュされていない順方向専用の XML ストリームを生成する方法について説明します。 W3C 標準に準拠した XML ドキュメントの作成に役立ちます。
+ [Writing XML with the XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) Describes how the <xref:System.Xml.XmlWriter> provides noncached, forward only, way of generating XML streams and helps you build XML documents that comply with the W3C standard.
 
- [XSLT 変換](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)@No__t_1 クラスが XSLT 1.0 勧告を実装する方法について説明します。
+ [XSLT Transformations](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) Describes how the <xref:System.Xml.Xsl.XslCompiledTransform> class implements the XSLT 1.0 recommendation.
 
- [XPath データモデルを使用して XML データを処理する](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)@No__t_1 クラスが <xref:System.Xml.XPath.XPathDocument> または <xref:System.Xml.XmlDocument> オブジェクトに格納されている XML データを処理する方法について説明します。 <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
+ [Process XML Data Using the XPath Data Model](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Describes how the <xref:System.Xml.XPath.XPathNavigator> class can process XML data stored in an <xref:System.Xml.XPath.XPathDocument> or an <xref:System.Xml.XmlDocument> object. <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
 
- [XML スキーマオブジェクトモデル (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)スキーマの読み込みと編集に <xref:System.Xml.Schema.XmlSchema> クラスを提供することによって、XML スキーマの作成と操作に使用されるクラスについて説明します。
+ [XML Schema Object Model (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) Describes the classes used for creating and manipulating XML Schemas, by providing an <xref:System.Xml.Schema.XmlSchema> class to load and edit a schema.

@@ -1,5 +1,5 @@
 ---
-title: ロックポリシーを定義して読み取り専用セグメントを作成する |Microsoft Docs
+title: Defining a Locking Policy to Create Read-Only Segments | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,100 +9,100 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53542ec2a5270aec6836864fa3108d5f84da2df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669877"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295818"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 の視覚化およびモデリング SDK の不変 API を使用すると、プログラムは、ドメイン固有言語 (DSL) モデルの一部またはすべてをロックできます。これにより、プログラムは、そのモデルを読み取ることができますが、変更することはできません。 たとえば、この読み取り専用オプションを使用すると、ユーザーは DSL モデルに注釈を付けて確認することができますが、元のを変更できないようにすることができます。
+The Immutability API of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK allows a program to lock part or all of a domain-specific language (DSL) model so that it can be read but not changed. This read-only option could be used, for example, so that a user can ask colleagues to annotate and review a DSL model but can disallow them from changing the original.
 
- さらに、DSL の作成者は、ロックポリシーを定義でき*ます。* ロックポリシーでは、許可されているロック、許可されていないロック、必須のロックを定義します。 たとえば、DSL を発行するときに、サードパーティの開発者が新しいコマンドで拡張できるようにすることができます。 ただし、ロックポリシーを使用して、モデルの指定した部分の読み取り専用の状態を変更できないようにすることもできます。
+ In addition, as author of a DSL, you can define a *locking policy.* A locking policy defines which locks are permitted, not permitted, or mandatory. For example, when you publish a DSL, you can encourage third-party developers to extend it with new commands. But you could also use a locking policy to prevent them from altering the read-only status of specified parts of the model.
 
 > [!NOTE]
-> ロックポリシーは、リフレクションを使用することによって回避できます。 サードパーティの開発者には明確な境界が用意されていますが、強力なセキュリティは提供されていません。
+> A locking policy can be circumvented by using reflection. It provides a clear boundary for third-party developers, but does not provide strong security.
 
- 詳細とサンプルについては、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の[視覚化とモデリング](http://go.microsoft.com/fwlink/?LinkId=186128)に関する SDK Web サイトを参照してください。
+ More information and samples are available at the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkId=186128) Web site.
 
-## <a name="setting-and-getting-locks"></a>設定と取得 (ロックを)
- ストア、パーティション、または個々の要素に対してロックを設定できます。 たとえば、次のステートメントを実行すると、モデル要素が削除されるのを防ぐことができます。また、プロパティが変更されるのを防ぐことができます。
+## <a name="setting-and-getting-locks"></a>Setting and Getting Locks
+ You can set locks on the store, on a partition, or on an individual element. For example, this statement will prevent a model element from being deleted, and will also prevent its properties from being changed:
 
 ```
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
 
- 他のロック値を使用して、リレーションシップ、要素の作成、パーティション間の移動、およびロール内のリンクの順序変更を防止できます。
+ Other lock values can be used to prevent changes in relationships, element creation, movement between partitions, and re-ordering links in a role.
 
- ロックは、ユーザー操作とプログラムコードの両方に適用されます。 プログラムコードによって変更が試行されると、`InvalidOperationException` がスローされます。 元に戻す操作またはやり直し操作では、ロックは無視されます。
+ The locks apply both to user actions and to program code. If program code attempts to make a change, an `InvalidOperationException` will be thrown. Locks are ignored in an Undo or Redo operation.
 
- @No__t_0 を使用して、指定されたセット内のロックが要素にあるかどうかを検出できます。また、`GetLocks()` を使用して、要素の現在のロックセットを取得できます。
+ You can discover whether an element has a any lock in a given set by using `IsLocked(Locks)` and you can obtain the current set of locks on an element by using `GetLocks()`.
 
- トランザクションを使用せずにロックを設定できます。 ロックデータベースはストアに含まれていません。 OnValueChanged など、ストアの値の変更に応じてロックを設定した場合は、元に戻す操作の一部である変更を許可する必要があります。
+ You can set a lock without using a transaction. The lock database is not part of the store. If you set a lock in response to a change of a value in the store, for example in OnValueChanged, you should allow changes that are part of an Undo operation.
 
- これらのメソッドは、<xref:Microsoft.VisualStudio.Modeling.Immutability> 名前空間で定義されている拡張メソッドです。
+ These methods are extension methods that are defined in the <xref:Microsoft.VisualStudio.Modeling.Immutability> namespace.
 
-### <a name="locks-on-partitions-and-stores"></a>パーティションおよびストアに対するロック
- ロックは、パーティションとストアにも適用できます。 パーティションに設定されているロックは、パーティション内のすべての要素に適用されます。 したがって、たとえば、次のステートメントを使用すると、独自のロックの状態に関係なく、パーティション内のすべての要素が削除されるのを防ぐことができます。 それにもかかわらず、`Locks.Property` などの他のロックは、個々の要素に設定できます。
+### <a name="locks-on-partitions-and-stores"></a>Locks on partitions and stores
+ Locks can also be applied to partitions and the store. A lock that is set on a partition applies to all the elements in the partition. Therefore, for example, the following statement will prevent all the elements in a partition from being deleted, irrespective of the states of their own locks. Nevertheless, other locks such as `Locks.Property` could still be set on individual elements:
 
 ```
 partition.SetLocks(Locks.Delete);
 ```
 
- ストアに設定されているロックは、パーティションおよび要素のロックの設定に関係なく、すべての要素に適用されます。
+ A lock that is set on the Store applies to all its elements, irrespective of the settings of that lock on the partitions and the elements.
 
-### <a name="using-locks"></a>ロックの使用
- ロックを使用して、次の例のようなスキームを実装できます。
+### <a name="using-locks"></a>Using Locks
+ You could use locks to implement schemes such as the following examples:
 
-- コメントを表すものを除き、すべての要素とリレーションシップへの変更を禁止します。 これにより、ユーザーは変更せずにモデルに注釈を付けることができます。
+- Disallow changes to all elements and relationships except those that represent comments. This allows users to annotate a model without changing it.
 
-- 既定のパーティションの変更を禁止しますが、ダイアグラムパーティションの変更を許可します。 ユーザーはダイアグラムを再配置できますが、基になるモデルを変更することはできません。
+- Disallow changes in the default partition, but allow changes in the diagram partition. The user can rearrange the diagram, but cannot alter the underlying model.
 
-- 別のデータベースに登録されているユーザーのグループを除き、ストアへの変更を禁止します。 他のユーザーの場合、ダイアグラムとモデルは読み取り専用です。
+- Disallow changes to the Store except for a group of users who are registered in a separate database. For other users, the diagram and model are read-only.
 
-- ダイアグラムのブール型プロパティが true に設定されている場合は、モデルへの変更を許可しません。 そのプロパティを変更するメニューコマンドを提供します。 これにより、ユーザーが誤って変更しないようにすることができます。
+- Disallow changes to the model if a Boolean property of the diagram is set to true. Provide a menu command to change that property. This helps ensure users that they do not make changes accidentally.
 
-- 特定のクラスの要素およびリレーションシップの追加と削除を禁止しますが、プロパティの変更を許可します。 これにより、ユーザーがプロパティを入力できる固定フォームが提供されます。
+- Disallow addition and deletion of elements and relationships of particular classes, but allow property changes. This provides users with a fixed form in which they can fill the properties.
 
-## <a name="lock-values"></a>値のロック
- ロックは、ストア、パーティション、または個々の ModelElement に設定できます。 ロックは `Flags` 列挙型です。 '&#124;' を使用して値を組み合わせることができます。
+## <a name="lock-values"></a>Lock values
+ Locks can be set on a Store, Partition, or individual ModelElement. Locks is a `Flags` enumeration: you can combine its values using '&#124;'.
 
-- ModelElement のロックには、常にそのパーティションのロックが含まれます。
+- Locks of a ModelElement always include the Locks of its Partition.
 
-- パーティションのロックには、常にストアのロックが含まれます。
+- Locks of a Partition always include the Locks of the Store.
 
-  パーティションまたはストアにロックを設定することはできません。また、同時に個々の要素のロックを無効にすることもできません。
+  You cannot set a lock on a partition or store and at the same time disable the lock on an individual element.
 
-|[値]|@No__t_0 が true の場合|
+|[値]|Meaning if `IsLocked(Value)` is true|
 |-----------|------------------------------------------|
-|None|制限はありません。|
-|property|要素のドメインプロパティは変更できません。 これは、リレーションシップのドメインクラスの役割によって生成されるプロパティには適用されません。|
-|追加|パーティションまたはストアに新しい要素とリンクを作成することはできません。<br /><br /> @No__t_0 には適用されません。|
-|移動|@No__t_0 が true の場合、または `targetPartition.IsLocked(Move)` が true の場合、パーティション間で要素を移動することはできません。|
-|削除|要素自体、または削除が反映される要素 (埋め込み要素や図形など) に対してこのロックが設定されている場合、要素を削除することはできません。<br /><br /> @No__t_0 を使用すると、要素を削除できるかどうかを検出できます。|
-|並び|Roleplayer でのリンクの順序を変更することはできません。|
-|RolePlayer|この要素をソースとするリンクのセットは変更できません。 たとえば、新しい要素をこの要素の下に埋め込むことはできません。 これは、この要素がターゲットであるリンクには影響しません。<br /><br /> この要素がリンクの場合、ソースとターゲットは影響を受けません。|
-|すべて|他の値のビットごとの OR。|
+|None|No restriction.|
+|property|Domain properties of elements cannot be changed. This does not apply to properties that are generated by the role of a domain class in a relationship.|
+|追加|New elements and links cannot be created in a partition or store.<br /><br /> Not applicable to `ModelElement`.|
+|移動|Element cannot be moved between partitions if `element.IsLocked(Move)` is true, or if `targetPartition.IsLocked(Move)` is true.|
+|削除|An element cannot be deleted if this lock is set on the element itself, or on any of the elements to which deletion would propagate, such as embedded elements and shapes.<br /><br /> You can use `element.CanDelete()` to discover whether an element can be deleted.|
+|Reorder|The ordering of links at a roleplayer cannot be changed.|
+|RolePlayer|The set of links that are sourced at this element cannot be changed. For example, new elements cannot be embedded under this element. This does not affect links for which this element is the target.<br /><br /> If this element is a link, its source and target are not affected.|
+|すべて|Bitwise OR of the other values.|
 
-## <a name="locking-policies"></a>ロックポリシー
- DSL の作成者は、*ロックポリシー*を定義できます。 ロックポリシーは、特定のロックが設定されないようにするか、特定のロックを設定する必要があるように、SetLocks () の操作を軽減します。 通常は、ロックポリシーを使用して、ユーザーまたは開発者が、`private` 変数を宣言するのと同じ方法で、誤って DSL の使用を contravening ことを防ぐことができます。
+## <a name="locking-policies"></a>Locking Policies
+ As the author of a DSL, you can define a *locking policy*. A locking policy moderates the operation of SetLocks(), so that you can prevent specific locks from being set or mandate that specific locks must be set. Typically, you would use a locking policy to discourage users or developers from accidentally contravening the intended use of a DSL, in the same manner that you can declare a variable `private`.
 
- また、ロックポリシーを使用して、要素の型に依存するすべての要素にロックを設定することもできます。 これは、要素が最初に作成されたとき、またはファイルから逆シリアル化されたときに `SetLocks(Locks.None)` が常に呼び出されるためです。
+ You can also use a locking policy to set locks on all elements dependent on the element's type. This is because `SetLocks(Locks.None)` is always called when an element is first created or deserialized from file.
 
- ただし、ポリシーを使用して、要素の有効期間中のロックを変更することはできません。 この効果を実現するには、`SetLocks()` の呼び出しを使用する必要があります。
+ However, you cannot use a policy to vary the locks on an element during its life. To achieve that effect, you should use calls to `SetLocks()`.
 
- ロックポリシーを定義するには、次のことを行う必要があります。
+ To define a locking policy, you have to:
 
 - <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> を実装するクラスを作成します。
 
-- このクラスを、DSL の DocData で利用できるサービスに追加します。
+- Add this class to the services that are available through the DocData of your DSL.
 
-### <a name="to-define-a-locking-policy"></a>ロックポリシーを定義するには
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> には次の定義があります。
+### <a name="to-define-a-locking-policy"></a>To define a locking policy
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> has the following definition:
 
 ```
 public interface ILockingPolicy
@@ -113,7 +113,7 @@ public interface ILockingPolicy
 }
 ```
 
- これらのメソッドは、Store、Partition、または ModelElement で `SetLocks()` する呼び出しが行われたときに呼び出されます。 各メソッドには、推奨されるロックのセットが用意されています。 提案されたセットを返すことも、ロックを追加および削除することもできます。
+ These methods are called when a call is made to `SetLocks()` on a Store, Partition, or ModelElement. In each method, you are provided with a proposed set of locks. You can return the proposed set, or you can add and subtract locks.
 
  (例:
 
@@ -145,16 +145,16 @@ namespace Company.YourDsl.DslPackage // Change
 
 ```
 
- 他のコードがを `SetLocks(Lock.Delete):` 呼び出す場合でも、ユーザーが常に要素を削除できるようにするには
+ To make sure that users can always delete elements, even if other code calls `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 
- MyClass のすべての要素のすべてのプロパティの変更を禁止するには、次のようにします。
+ To disallow change in all the properties of every element of MyClass:
 
  `return element is MyClass ? (proposedLocks | Locks.Property) : proposedLocks;`
 
-### <a name="to-make-your-policy-available-as-a-service"></a>ポリシーをサービスとして使用できるようにするには
- @No__t_0 プロジェクトで、次の例のようなコードを含む新しいファイルを追加します。
+### <a name="to-make-your-policy-available-as-a-service"></a>To make your policy available as a service
+ In your `DslPackage` project, add a new file that contains code that resembles the following example:
 
 ```
 using Microsoft.VisualStudio.Modeling;

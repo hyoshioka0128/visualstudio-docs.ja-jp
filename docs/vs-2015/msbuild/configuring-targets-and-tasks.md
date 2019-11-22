@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d2e067b70256bd86a1f7598033689d6a498af60
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68196601"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298349"
 ---
 # <a name="configuring-targets-and-tasks"></a>ターゲットとタスクの構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ MSBuild のターゲットとタスクを、MSBuild のアウトプロセスで�
 ## <a name="installation"></a>インストール  
  .NET Framework 4.5 と 4.5.1 では、.NET Framework 4 の共通言語ランタイム (CLR)、ターゲット、タスク、およびツールが置き換わりますが、名前は変更されません。 .NET Framework 4.5.1 は [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] の一部としてインストールされます。  
   
- MSBuild を Visual Studio とは別にインストールする場合は、[MSBuild ダウンロード](http://go.microsoft.com/fwlink/?LinkId=309745)からインストール パッケージをダウンロードします。 また、使用する .NET Framework のバージョンもインストールする必要があります。  
+ MSBuild を Visual Studio とは別にインストールする場合は、[MSBuild ダウンロード](https://go.microsoft.com/fwlink/?LinkId=309745)からインストール パッケージをダウンロードします。 また、使用する .NET Framework のバージョンもインストールする必要があります。  
   
 ## <a name="targets-and-tasks"></a>ターゲットとタスク  
  MSBuild では、より大きいセットのコンテキストを対象とするために、特定のビルド タスクをアウトプロセスで実行できます。  たとえば、32 ビットの MSBuild が、64 ビット コンピューターを対象とするために、64 ビット プロセスでビルド タスクを実行する場合があります。 これは `UsingTask` 引数と `Task` パラメーターによって制御されます。 .NET Framework 4.5 でインストールされたターゲットによって、これらの引数とパラメーターが設定されます。さまざまなターゲット コンテキスト用のアプリケーションをビルドする際に、これらの引数やパラメーターを変更する必要はありません。  
   
- 独自のターゲット コンテキストを作成する場合は、これらの引数とパラメーターを適切に設定する必要があります。 サンプルについては、.NET Framework 4.5 の Microsoft.Common.targets ファイルおよび Microsoft.Common.Tasks ファイルを参照してください。  複数のターゲット コンテキストで動作するカスタム タスクの作成方法、および既存のタスクの変更方法については、「[方法 : ターゲットとタスク構成](../msbuild/how-to-configure-targets-and-tasks.md)します。  
+ 独自のターゲット コンテキストを作成する場合は、これらの引数とパラメーターを適切に設定する必要があります。 サンプルについては、.NET Framework 4.5 の Microsoft.Common.targets ファイルおよび Microsoft.Common.Tasks ファイルを参照してください。  複数のターゲット コンテキストで動作するカスタム タスクの作成方法、および既存のタスクの変更方法については、「[方法 : ターゲットとタスクを構成する](../msbuild/how-to-configure-targets-and-tasks.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)

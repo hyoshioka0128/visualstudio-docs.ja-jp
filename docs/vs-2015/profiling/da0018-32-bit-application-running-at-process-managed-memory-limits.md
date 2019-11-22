@@ -1,5 +1,5 @@
 ---
-title: DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs
+title: 'DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,21 +13,21 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194944"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301106"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA 0018 |  
-|カテゴリ |プロファイリング ツールの使用 |  
-|プロファイル方法 |サンプリング |  
-|メッセージ |マネージ メモリの割り当てが 32 ビット プロセスの既定の制限に近づいています。 アプリケーションがメモリにより制限されている可能性があります。|  
-|規則の種類 |警告 |  
+Rule Id|DA0018|  
+|Category|Profiling Tools Usage|  
+|Profiling method|Sampling|  
+|Message|Managed memory allocations approaching the default limit for a 32-bit process. アプリケーションがメモリにより制限されている可能性があります。|  
+|Rule type|Warning|  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "68194944"
   
 - マネージド メモリ リソースのアプリケーションによる使用を最適化する  
   
-   \- または -  
+   -または-  
   
 - 32 ビット プロセスの仮想メモリの最大サイズに関するアーキテクチャ上の制約を解除する手順を実行する  
   
@@ -64,7 +64,7 @@ ms.locfileid: "68194944"
   
   [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)を使用して、これらの割り当てが行われた実行パスを判断します。  
   
-  ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの .NET Framework の技術記事、「[ガベージ コレクタの基本とパフォーマンスのヒント](http://go.microsoft.com/fwlink/?LinkId=177946)」を参照してください。  
+  ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの .NET Framework の技術記事、「[ガベージ コレクタの基本とパフォーマンスのヒント](https://go.microsoft.com/fwlink/?LinkId=177946)」を参照してください。  
   
   プロセス アドレス空間のプライベート部分のサイズに関する仮想メモリのアーキテクチャ上の制約を解除するには、64 ビット コンピューター上でこの 32 ビット プロセスを実行してみてください。  64 ビット コンピューター上で実行されている 32 ビット プロセスの場合、最大 4 GB のプライベート仮想メモリを取得できます。  
   

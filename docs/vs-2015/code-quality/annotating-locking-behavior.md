@@ -1,5 +1,5 @@
 ---
-title: ロック動作に注釈を付ける |Microsoft Docs
+title: Annotating Locking Behavior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -33,88 +33,88 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157113"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295829"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-マルチ スレッド プログラムでの同時実行のバグを回避するには、以下の適切なロック作業分野と SAL 注釈を使用して常に。  
+To avoid concurrency bugs in your multithreaded program, always follow an appropriate locking discipline and use SAL annotations.  
   
- 同時実行のバグが再現、診断、およびは非決定的であるために、デバッグに非常に困難です。 スレッド インタリーブについて推論では、最高では難しく、複数のスレッドがコードの本体を設計するときに非実用的になります。 そのためはマルチ スレッド プログラムでロック規範に従うことをお勧めします。 たとえば、により、デッドロックを回避する、複数のロックの取得中に、ロック順序を無視しない方法について、競合状態を防ぎ、共有リソースにアクセスする前に、適切な guarding ロックを取得します。  
+ Concurrency bugs are notoriously hard to reproduce, diagnose, and debug because they are non-deterministic. Reasoning about thread interleaving is difficult at best, and becomes impractical when you are designing a body of code that has more than a few threads. Therefore, it's good practice to follow a locking discipline in your multithreaded programs. For example, obeying a lock order while acquiring multiple locks helps avoid deadlocks, and acquiring the proper guarding lock before accessing a shared resource helps prevent race conditions.  
   
- 残念ながら、一見単純なロックの規則が驚くほど難しくのプラクティスに従ってください。 今日のプログラミング言語とコンパイラの基本的な制限を直接サポートしていない仕様と要件の同時実行の分析です。 プログラマは、ロックの使用方法について、意図を表現する非公式のコードのコメントに依存する必要があります。  
+ Unfortunately, seemingly simple locking rules can be surprisingly hard to follow in practice. A fundamental limitation in today’s programming languages and compilers is that they do not directly support the specification and analysis of concurrency requirements. Programmers have to rely on informal code comments to express their intentions about how they use locks.  
   
- 同時実行 SAL 注釈は、責任、データ後見人立証、ロック順序の階層、およびその他の予期されるロックの動作をロック、ロックの副作用を指定するために設計されています。 暗黙のルールを明示的なことでは、同時実行の SAL 注釈は、コードでロックの規則を使用する方法を文書化するための一貫した方法を提供します。 同時実行の注釈には、競合状態、デッドロック、一致しない同期操作、およびその他の同時実行の微妙なエラーを検索するコード分析ツールの機能も強化します。  
+ Concurrency SAL annotations are designed to help you specify locking side effects, locking responsibility, data guardianship, lock order hierarchy, and other expected locking behavior. By making implicit rules explicit, SAL concurrency annotations provide a consistent way for you to document how your code uses locking rules. Concurrency annotations also enhance the ability of code analysis tools to find race conditions, deadlocks, mismatched synchronization operations, and other subtle concurrency errors.  
   
 ## <a name="general-guidelines"></a>一般的なガイドライン  
- 注釈を使用すると、関数の定義 (呼び出し先) の実装とクライアント (呼び出し元) の間で暗黙的に指定されたコントラクトを記述でき、高速の不変性とその他のプロパティがさらのプログラムの分析の向上します。  
+ By using annotations, you can state the contracts that are implied by function definitions between implementations (callees) and clients (callers), and express invariants and other properties of the program that can further improve analysis.  
   
- SAL は、さまざまな種類のロック プリミティブをサポートしています: クリティカル セクション、ミュー テックス、スピン ロック、およびその他のリソース オブジェクト。 多くの同時実行の注釈では、パラメーターとしてのロックの式を使用します。 慣例により、ロックは、基になるロック オブジェクトのパス式で表されます。  
+ SAL supports many different kinds of locking primitives—for example, critical sections, mutexes, spin locks, and other resource objects. Many concurrency annotations take a lock expression as a parameter. By convention, a lock is denoted by the path expression of the underlying lock object.  
   
- いくつかスレッドの所有権ルールに注意してください。  
+ Some thread ownership rules to keep in mind:  
   
-- スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。  
+- Spin locks are uncounted locks that have clear thread ownership.  
   
-- ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。  
+- Mutexes and critical sections are counted locks that have clear thread ownership.  
   
-- セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。  
+- Semaphores and events are counted locks that do not have clear thread ownership.  
   
 ## <a name="locking-annotations"></a>ロックの注釈  
- 次の表は、ロックの注釈を一覧表示します。  
+ The following table lists the locking annotations.  
   
 |注釈|説明|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|関数に注釈を付けますことの投稿で、関数の状態を 1 つ増やしますによって指定されるロック オブジェクトの排他ロックの数を示し`expr`します。|  
-|`_Acquires_lock_(expr)`|関数に注釈を付けますこと投稿状態関数を 1 つ増やしますによって指定されるロック オブジェクトのロック カウントを示し`expr`します。|  
-|`_Acquires_nonreentrant_lock_(expr)`|によって指定されるロック`expr`が取得されます。  エラーは、ロックが既に保持されている場合に報告されます。|  
-|`_Acquires_shared_lock_(expr)`|関数に注釈を付けますこと post で関数の状態を 1 つ増やしますによって指定されるロック オブジェクトの共有ロックの数を示し`expr`します。|  
-|`_Create_lock_level_(name)`|シンボルを宣言するステートメント`name`ロック レベルを注釈内で使用できるように`_Has_Lock_level_`と`_Lock_level_order_`します。|  
-|`_Has_lock_kind_(kind)`|任意のオブジェクトをリソース オブジェクトの型情報を絞り込むに注釈を付けます。 異なる種類のリソースに共通の型を使用することがあり、オーバー ロードされた型はさまざまなリソース間でのセマンティックの要件を区別するためには不十分です。 一覧をここでは定義済み`kind`パラメーター。<br /><br /> `_Lock_kind_mutex_`<br /> ミュー テックスのロックの種類 ID。<br /><br /> `_Lock_kind_event_`<br /> イベントの種類の ID をロックします。<br /><br /> `_Lock_kind_semaphore_`<br /> セマフォのロックの種類 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> スピン ロックのロックの種類 ID。<br /><br /> `_Lock_kind_critical_section_`<br /> クリティカル セクションのロックの種類 ID。|  
-|`_Has_lock_level_(name)`|ロック オブジェクトに注釈を付けますのロック レベルが与えられます`name`します。|  
-|`_Lock_level_order_(name1, name2)`|ステートメントの間で順序付けのロックを`name1`と`name2`します。|  
-|`_Post_same_lock_(expr1, expr2)`|関数に注釈を付けます示し、2 つのロックを状態 post で`expr1`と`expr2`は、同じロック オブジェクトとして扱われます。|  
-|`_Releases_exclusive_lock_(expr)`|関数に注釈を付けます、投稿を 1 つによって指定されるロック オブジェクトの排他ロックの数の関数をデクリメント状態ことを示します`expr`します。|  
-|`_Releases_lock_(expr)`|関数に注釈を付けます、投稿を 1 つのロック オブジェクトによって指定されるロックの数の関数をデクリメント状態ことを示します`expr`します。|  
-|`_Releases_nonreentrant_lock_(expr)`|によって指定されるロック`expr`解放されます。 エラーは、ロックが現在保持していない場合に報告されます。|  
-|`_Releases_shared_lock_(expr)`|関数に注釈を付けます、投稿を 1 つの共有ロックのロック オブジェクトによって指定される数の関数をデクリメント状態ことを示します`expr`します。|  
-|`_Requires_lock_held_(expr)`|関数に注釈を付けます示し、によって指定されるオブジェクトのロック カウントを状態より前で`expr`は少なくとも 1 つです。|  
-|`_Requires_lock_not_held_(expr)`|関数に注釈を付けます示し、によって指定されるオブジェクトのロック カウントを状態より前で`expr`は 0 です。|  
-|`_Requires_no_locks_held_`|関数に注釈を付けます、前提条件チェッカーで認識されているすべてのロックのロック カウントがゼロであることを示します。|  
-|`_Requires_shared_lock_held_(expr)`|関数に注釈を付けます示し、によって指定されるオブジェクトの共有ロックの数を状態より前で`expr`は少なくとも 1 つです。|  
-|`_Requires_exclusive_lock_held_(expr)`|関数に注釈を付けます示し、によって指定されるオブジェクトの排他ロックの数を状態より前で`expr`は少なくとも 1 つです。|  
+|`_Acquires_exclusive_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the exclusive lock count of the lock object that's named by `expr`.|  
+|`_Acquires_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the lock count of the lock object that's named by `expr`.|  
+|`_Acquires_nonreentrant_lock_(expr)`|The lock that's named by `expr` is acquired.  An error is reported if the lock is already held.|  
+|`_Acquires_shared_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the shared lock count of the lock object that's named by `expr`.|  
+|`_Create_lock_level_(name)`|A statement that declares the symbol `name` to be a lock level so that it may be used in the annotations `_Has_Lock_level_` and `_Lock_level_order_`.|  
+|`_Has_lock_kind_(kind)`|Annotates any object to refine the type information of a resource object. Sometimes a common type is used for different kinds of resources and the overloaded type is not sufficient to distinguish the semantic requirements among various resources. Here's a list of pre-defined `kind` parameters:<br /><br /> `_Lock_kind_mutex_`<br /> Lock kind ID for mutexes.<br /><br /> `_Lock_kind_event_`<br /> Lock kind ID for events.<br /><br /> `_Lock_kind_semaphore_`<br /> Lock kind ID for semaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> Lock kind ID for spin locks.<br /><br /> `_Lock_kind_critical_section_`<br /> Lock kind ID for critical sections.|  
+|`_Has_lock_level_(name)`|Annotates a lock object and gives it the lock level of `name`.|  
+|`_Lock_level_order_(name1, name2)`|A statement that gives the lock ordering between `name1` and `name2`.|  
+|`_Post_same_lock_(expr1, expr2)`|Annotates a function and indicates that in post state the two locks, `expr1` and `expr2`, are treated as if they are the same lock object.|  
+|`_Releases_exclusive_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the exclusive lock count of the lock object that's named by `expr`.|  
+|`_Releases_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the lock count of the lock object that's named by `expr`.|  
+|`_Releases_nonreentrant_lock_(expr)`|The lock that's named by `expr` is released. An error is reported if the lock is not currently held.|  
+|`_Releases_shared_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the shared lock count of the lock object that's named by `expr`.|  
+|`_Requires_lock_held_(expr)`|Annotates a function and indicates that in pre state the lock count of the object that's named by `expr` is at least one.|  
+|`_Requires_lock_not_held_(expr)`|Annotates a function and indicates that in pre state the lock count of the object that's named by `expr` is zero.|  
+|`_Requires_no_locks_held_`|Annotates a function and indicates that the lock counts of all locks that are known to the checker are zero.|  
+|`_Requires_shared_lock_held_(expr)`|Annotates a function and indicates that in pre state the shared lock count of the object that's named by `expr` is at least one.|  
+|`_Requires_exclusive_lock_held_(expr)`|Annotates a function and indicates that in pre state the exclusive lock count of the object that's named by `expr` is at least one.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>非公開のロック オブジェクトに対する SAL の組み込み  
- 関連付けられたロック関数の実装によっては、特定のロック オブジェクトは公開されません。  次の表には、それらの非公開のロック オブジェクトを操作する関数の注釈を有効にする SAL の組み込み変数が一覧表示します。  
+ Certain lock objects are not exposed by the implementation of the associated locking functions.  The following table lists SAL intrinsic variables that enable annotations on functions that operate on those unexposed lock objects.  
   
 |注釈|説明|  
 |----------------|-----------------|  
-|`_Global_cancel_spin_lock_`|キャンセルのスピン ロックをについて説明します。|  
-|`_Global_critical_region_`|クリティカル領域をについて説明します。|  
-|`_Global_interlock_`|インタロックされた操作をについて説明します。|  
-|`_Global_priority_region_`|優先リージョンをについて説明します。|  
+|`_Global_cancel_spin_lock_`|Describes the cancel spin lock.|  
+|`_Global_critical_region_`|Describes the critical region.|  
+|`_Global_interlock_`|Describes interlocked operations.|  
+|`_Global_priority_region_`|Describes the priority region.|  
   
 ## <a name="shared-data-access-annotations"></a>共有データ アクセスの注釈  
- 次の表は、共有データ アクセスの注釈を一覧表示します。  
+ The following table lists the annotations for shared data access.  
   
 |注釈|説明|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|変数に注釈を付けます示し、そのたびに、変数がアクセスされる、によって指定されるロック オブジェクトのロック カウント`expr`は少なくとも 1 つです。|  
-|`_Interlocked_`|変数に注釈を付けます、等価`_Guarded_by_(_Global_interlock_)`します。|  
-|`_Interlocked_operand_`|注釈付きの関数パラメーターは、さまざまな Interlocked 関数の 1 つのターゲットのオペランドです。  これらのオペランドは、特定の追加プロパティを持つ必要があります。|  
-|`_Write_guarded_by_(expr)`|変数に注釈を付けますするたびに、変数を変更、ロックのロック オブジェクトによって指定される数を示します`expr`は少なくとも 1 つです。|  
+|`_Guarded_by_(expr)`|Annotates a variable and indicates that whenever the variable is accessed, the lock count of the lock object that's named by `expr` is at least one.|  
+|`_Interlocked_`|Annotates a variable and is equivalent to `_Guarded_by_(_Global_interlock_)`.|  
+|`_Interlocked_operand_`|The annotated function parameter is the target operand of one of the various Interlocked functions.  Those operands must have specific additional properties.|  
+|`_Write_guarded_by_(expr)`|Annotates a variable and indicates that whenever the variable is modified, the lock count of the lock object that's named by `expr` is at least one.|  
   
-## <a name="see-also"></a>関連項目  
- [SAL 注釈を使用して C/C++ のコード障害を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL について](../code-quality/understanding-sal.md)   
- [関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)   
- [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
- [構造体とクラスに注釈を付ける](../code-quality/annotating-structs-and-classes.md)   
- [注釈を適用するタイミングと場所を指定します。](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [組み込み関数](../code-quality/intrinsic-functions.md)   
- [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)   
- [コード分析チームのブログ](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+## <a name="see-also"></a>参照  
+ [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Understanding SAL](../code-quality/understanding-sal.md)   
+ [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
+ [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
+ [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+ [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)   
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)

@@ -1,5 +1,5 @@
 ---
-title: エディット コンティニュのエラーと警告 (c#) |Microsoft Docs
+title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822959"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299285"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>エディット コンティニュのエラーと警告 (C#)
 Visual C# エディット コンティニュで許可されていないコードのセクションを編集しました。  
@@ -75,15 +75,15 @@ Visual C# エディット コンティニュで許可されていないコード
   
  通常、クラスのパブリック構造体に影響を及ぼす宣言コードの編集は禁止されています。また、クラス内のメソッド、プロパティ本体、プライベート宣言に対する一部の編集も禁止されています。 可能な場合、エディット コンティニュで編集できないコードは明るい灰色で示され、エラー メッセージが表示されます。  
   
- エディット コンティニュでサポートされている編集の詳細については[!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]を参照してください[サポートされているコード変更 (c#)](../debugger/supported-code-changes-csharp.md)します。 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](http://go.microsoft.com/fwlink/?LinkId=214693)で質問を投稿したり、回答を検索したりできます。  
+ For more information about supported edits in Edit and Continue for [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], see [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](https://go.microsoft.com/fwlink/?LinkId=214693)で質問を投稿したり、回答を検索したりできます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 1. **[デバッグ]** メニューの **[元に戻す]** をクリックし、変更を元に戻します。  
   
-     - または -  
+     -または-  
   
 2. デバッグ セッションを停止し、編集を加えた後で新しいデバッグ セッションを開始します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

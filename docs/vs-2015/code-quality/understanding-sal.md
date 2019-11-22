@@ -1,5 +1,5 @@
 ---
-title: SAL の理解 |Microsoft Docs
+title: Understanding SAL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,25 +9,25 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435407"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291876"
 ---
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、次を参照してください。 [Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)します。  
+The Microsoft source-code annotation language (SAL) provides a set of annotations that you can use to describe how a function uses its parameters, the assumptions that it makes about them, and the guarantees that it makes when it finishes. The annotations are defined in the header file `<sal.h>`. Visual Studio code analysis for C++ uses SAL annotations to modify its analysis of functions. For more information about SAL 2.0 for Windows driver development, see [SAL 2.0 Annotations for Windows Drivers](https://go.microsoft.com/fwlink/?LinkId=250979).  
   
- ネイティブ、C および C++ 開発者の意図と不変性が一貫して express の制限がありますのみを提供します。 SAL 注釈を使用すると、それらを使用する開発者は、その使用方法を理解できるようにより詳細で関数を記述できます。  
+ Natively, C and C++ provide only limited ways for developers to consistently express intent and invariance. By using SAL annotations, you can describe your functions in greater detail so that developers who are consuming them can better understand how to use them.  
   
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>SAL の概要とそれを使用する理由  
- 簡単に言えば、SAL は、コンパイラのコードを確認できるようにする安価な方法です。  
+ Simply stated, SAL is an inexpensive way to let the compiler check your code for you.  
   
 ### <a name="sal-makes-code-more-valuable"></a>SAL でコードの価値を高める  
- SAL は、人間とコード分析ツールの両方、コード デザインをわかりやすくするのに役立ちます。 C ランタイム関数を示す例を検討`memcpy`:  
+ SAL can help you make your code design more understandable, both for humans and for code analysis tools. Consider this example that shows the C runtime function `memcpy`:  
   
 ```cpp  
   
@@ -39,18 +39,18 @@ void * memcpy(
   
 ```  
   
- この関数の動作とわかりますか。 関数が実装されているかと呼ばれる、特定のプロパティをプログラムの正確性を確実に維持する必要があります。 この例のなどの宣言を見るだけでは何かがわかりません。 、SAL 注釈のないドキュメントやコードのコメントに依存する必要があります。 ここでの MSDN ドキュメントは、`memcpy`といいます。  
+ Can you tell what this function does? When a function is implemented or called, certain properties must be maintained to ensure program correctness. Just by looking at a declaration such as the one in the example, you don't know what they are. Without SAL annotations, you'd have to rely on documentation or code comments. Here’s what the MSDN documentation for `memcpy` says:  
   
-> "コピーは、src を取引先のバイト数をカウントします。 ソースとコピー先 memcpy の動作は未定義です。 Memmove を使用して、重複する領域を処理します。   
-> **セキュリティに関するメモ:** コピー先のバッファーが、ソース バッファーと同じサイズ、または大きいサイズであることを確認してください。 詳細についてを参照してバッファー オーバーランの回避します。"  
+> "Copies count bytes of src to dest. If the source and destination overlap, the behavior of memcpy is undefined. Use memmove to handle overlapping regions.   
+> **Security Note:** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see Avoiding Buffer Overruns."  
   
- ドキュメントには、いくつかプログラムの正確性を確実に特定のプロパティを維持するために、コードが提案する情報のビットにはが含まれています。  
+ The documentation contains a couple of bits of information that suggest that your code has to maintain certain properties to ensure program correctness:  
   
-- `memcpy` コピー、`count`の元のバッファーからコピー先のバッファーのバイト。  
+- `memcpy` copies the `count` of bytes from the source buffer to the destination buffer.  
   
-- コピー先のバッファーは少なくともソース バッファーと同じ大きさである必要があります。  
+- The destination buffer must be at least as large as the source buffer.  
   
-  ただし、コンパイラでは、ドキュメントまたは非公式のコメントを読み取ることができません。 2 つのバッファーの間のリレーションシップがあることを認識していないと`count`、それも効果的に推測できないリレーションシップに関するとします。 次に示すよう、SAL はプロパティと、関数の実装についてわかりやすくするために提供できます。  
+  However, the compiler can't read the documentation or informal comments. It doesn't know that there is a relationship between the two buffers and `count`, and it also can't effectively guess about a relationship. SAL could provide more clarity about the properties and implementation of the function, as shown here:  
   
 ```cpp  
   
@@ -61,7 +61,7 @@ void * memcpy(
 );  
 ```  
   
- MSDN ドキュメントの情報は、これらの注釈のようになりますが、これらには、簡潔なし、セマンティックのパターンに従うに注意してください。 このコードを読み、この関数のプロパティとバッファー オーバーランのセキュリティの問題を回避する方法をすばやく理解できます。 さらに、潜在的なバグの早期発見に自動化されたコード分析ツールの効率性および SAL を提供するセマンティック パターンを向上させることができます。 たとえば、だれかがこのバグの実装を記述`wmemcpy`:  
+ Notice that these annotations resemble the information in the MSDN documentation, but they are more concise and they follow a semantic pattern. When you read this code, you can quickly understand the properties of this function and how to avoid buffer overrun security issues. Even better, the semantic patterns that SAL provides can improve the efficiency and effectiveness of automated code analysis tools in the early discovery of potential bugs. Imagine that someone writes this buggy implementation of `wmemcpy`:  
   
 ```cpp  
   
@@ -79,60 +79,60 @@ wchar_t * wmemcpy(
   
 ```  
   
- この実装には、一般的なものではオフ エラーが含まれています。 コードの作成者は、幸いにも、バッファー サイズの SAL 注釈に含まれる場合、コード分析ツールは、この関数のみを分析することで、バグを捕捉できます。  
+ This implementation contains a common off-by-one error. Fortunately, the code author included the SAL buffer size annotation—a code analysis tool could catch the bug by analyzing this function alone.  
   
-### <a name="sal-basics"></a>SAL の基礎  
- SAL は、使用パターンによって分類のパラメーターの 4 つの基本的な種類を定義します。  
+### <a name="sal-basics"></a>SAL Basics  
+ SAL defines four basic kinds of parameters, which are categorized by usage pattern.  
   
-|カテゴリ|パラメーターの注釈|説明|  
+|カテゴリ|Parameter Annotation|説明|  
 |--------------|--------------------------|-----------------|  
-|**入力に関数が呼び出されます**|`_In_`|データは、呼び出された関数に渡され、読み取り専用として扱われます。|  
-|**呼び出し元に力を呼び出した関数への入力**|`_Inout_`|使用可能なデータは、関数に渡され、変更される可能性があります。|  
-|**呼び出し元への出力**|`_Out_`|呼び出し元は、呼び出された関数への書き込みを行うための領域のみを提供します。 呼び出された関数では、その領域にデータを書き込みます。|  
-|**呼び出し元へのポインターの出力**|`_Outptr_`|ような**呼び出し元に出力**します。 呼び出し先関数によって返される値は、ポインターです。|  
+|**Input to called function**|`_In_`|Data is passed to the called function, and is treated as read-only.|  
+|**Input to called function, and output to caller**|`_Inout_`|Usable data is passed into the function and potentially is modified.|  
+|**Output to caller**|`_Out_`|The caller only provides space for the called function to write to. The called function writes data into that space.|  
+|**Output of pointer to caller**|`_Outptr_`|Like **Output to caller**. The value that's returned by the called function is a pointer.|  
   
- これら 4 つの基本的な注釈でさまざまな方法がより明確な行われたことができます。 既定では、注釈付きのポインター パラメーターが必要になると想定: NULL でない必要がある関数が成功します。 最もよく使用される基本的な注釈のバリエーションは、ポインター パラメーターが省略可能であることを示します: NULL の場合、関数は、その作業を行うには成功もします。  
+ These four basic annotations can be made more explicit in various ways. By default, annotated pointer parameters are assumed to be required—they must be non-NULL for the function to succeed. The most commonly used variation of the basic annotations indicates that a pointer parameter is optional—if it's NULL, the function can still succeed in doing its work.  
   
- このテーブルは、必須およびオプションのパラメーターを区別する方法を示します。  
+ This table shows how to distinguish between required and optional parameters:  
   
-||パラメーターが必須です。|パラメーターは省略可能|  
+||Parameters are required|Parameters are optional|  
 |-|-----------------------------|-----------------------------|  
-|**入力に関数が呼び出されます**|`_In_`|`_In_opt_`|  
-|**呼び出し元に力を呼び出した関数への入力**|`_Inout_`|`_Inout_opt_`|  
-|**呼び出し元への出力**|`_Out_`|`_Out_opt_`|  
-|**呼び出し元へのポインターの出力**|`_Outptr_`|`_Outptr_opt_`|  
+|**Input to called function**|`_In_`|`_In_opt_`|  
+|**Input to called function, and output to caller**|`_Inout_`|`_Inout_opt_`|  
+|**Output to caller**|`_Out_`|`_Out_opt_`|  
+|**Output of pointer to caller**|`_Outptr_`|`_Outptr_opt_`|  
   
- これらの注釈可能な初期化されていない値を識別し、無効な null ポインターが、正式かつ正確な方法で使用します。 、クラッシュが発生する可能性があります、必須のパラメーターに NULL を渡すか、返される「失敗」のエラー コードが発生する可能性があります。 どちらの方法でも、関数は、そのジョブの実行に失敗することはできません。  
+ These annotations help identify possible uninitialized values and invalid null pointer uses in a formal and accurate manner. Passing NULL to a required parameter might cause a crash, or it might cause a "failed" error code to be returned. Either way, the function cannot succeed in doing its job.  
   
 ## <a name="sal-examples"></a>SAL の例  
- このセクションでは、基本の SAL 注釈のコード例を示します。  
+ This section shows code examples for the basic SAL annotations.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Visual Studio Code 分析ツールを使用して問題を検出する  
- 例では、Visual Studio コード分析ツールは、コードの欠陥を見つけるに SAL 注釈と共に使用されます。 その方法を次に示します。  
+ In the examples, the Visual Studio Code Analysis tool is used together with SAL annotations to find code defects. Here's how to do that.  
   
-##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio のコード分析ツールと SAL を使用するには  
+##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio Code 分析ツールと SAL を使用するには  
   
-1. Visual Studio での SAL 注釈を含む C++ プロジェクトを開きます。  
+1. In Visual Studio, open a C++ project that contains SAL annotations.  
   
-2. メニュー バーで、**ビルド**、**ソリューションでコード分析を実行**します。  
+2. On the menu bar, choose **Build**, **Run Code Analysis on Solution**.  
   
-    検討してください、\_で\_のこのセクションの例です。 これでコード分析を実行する場合は、この警告が表示されます。  
+    Consider the \_In\_ example in this section. If you run code analysis on it, this warning is displayed:  
   
-   > **C6387 無効なパラメーター値**   
-   > 'pInt' の '0' 可能性があります。 これは、'InCallee' 関数の仕様に準拠していません。  
+   > **C6387 Invalid Parameter Value**   
+   > 'pInt' could be '0': this does not adhere to the specification for the function 'InCallee'.  
   
-### <a name="example-the-in-annotation"></a>例:\_で\_注釈  
- `_In_`注釈には、ことを示します。  
+### <a name="example-the-_in_-annotation"></a>Example: The \_In\_ Annotation  
+ The `_In_` annotation indicates that:  
   
-- パラメーターが有効にする必要がありは変更されません。  
+- The parameter must be valid and will not be modified.  
   
-- 関数は、1 つの要素のバッファーからのみ読み取ります。  
+- The function will only read from the single-element buffer.  
   
-- 呼び出し元は、バッファーを提供し、初期化する必要があります。  
+- The caller must provide the buffer and initialize it.  
   
-- `_In_` 「読み取り専用」を指定します。 よくある間違いは、適用する`_In_`が必要なパラメーターに、`_Inout_`注釈代わりにします。  
+- `_In_` specifies "read-only". A common mistake is to apply `_In_` to a parameter that should have the `_Inout_` annotation instead.  
   
-- `_In_` 非ポインター スカラーのアナライザーによって無視が許可されます。  
+- `_In_` is allowed but ignored by the analyzer on non-pointer scalars.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -157,10 +157,10 @@ void BadInCaller()
   
 ```  
   
- 呼び出し元が初期化されたバッファーに Null 以外のポインターを渡すことを検証でこの例を Visual Studio コード分析を使用する場合`pInt`します。 この場合、`pInt`ポインターが NULL にすることはできません。  
+ If you use Visual Studio Code Analysis on this example, it validates that the callers pass a non-Null pointer to an initialized buffer for `pInt`. In this case, `pInt` pointer cannot be NULL.  
   
-### <a name="example-the-inopt-annotation"></a>例:\_In_opt\_注釈  
- `_In_opt_` 同じ`_In_`, 点が、入力パラメーターが NULL にできるし、この関数がそのため、確認する必要があります。  
+### <a name="example-the-_in_opt_-annotation"></a>Example: The \_In_opt\_ Annotation  
+ `_In_opt_` is the same as `_In_`, except that the input parameter is allowed to be NULL and, therefore, the function should check for this.  
   
 ```cpp  
   
@@ -185,10 +185,10 @@ void InOptCaller()
   
 ```  
   
- Visual Studio コード分析は、関数は、バッファーにアクセスする前に null チェックを検証します。  
+ Visual Studio Code Analysis validates that the function checks for NULL before it accesses the buffer.  
   
-### <a name="example-the-out-annotation"></a>例:\_アウト\_注釈  
- `_Out_` 要素のバッファーを指す NULL ポインターが渡され、関数が要素を初期化します、一般的なシナリオをサポートしています。 呼び出し元は呼び出しの前にバッファーを初期化する必要はありません。呼び出された関数を返す前に初期化する約束します。  
+### <a name="example-the-_out_-annotation"></a>Example: The \_Out\_ Annotation  
+ `_Out_` supports a common scenario in which a non-NULL pointer that points to an element buffer is passed in and the function initializes the element. The caller doesn’t have to initialize the buffer before the call; the called function promises to initialize it before it returns.  
   
 ```cpp  
   
@@ -212,10 +212,10 @@ void OutCaller()
   
 ```  
   
- Visual Studio コード分析ツールの検証呼び出し元がのバッファーに NULL 以外のポインターを渡し`pInt`を返す前に、関数によってバッファーが初期化されているとします。  
+ Visual Studio Code Analysis Tool validates that the caller passes a non-NULL pointer to a buffer for `pInt` and that the buffer is initialized by the function before it returns.  
   
-### <a name="example-the-outopt-annotation"></a>例:\_Out_opt\_注釈  
- `_Out_opt_` 同じ`_Out_`, 点が、パラメーターが NULL にできるし、この関数がそのため、確認する必要があります。  
+### <a name="example-the-_out_opt_-annotation"></a>Example: The \_Out_opt\_ Annotation  
+ `_Out_opt_` is the same as `_Out_`, except that the parameter is allowed to be NULL and, therefore, the function should check for this.  
   
 ```cpp  
   
@@ -240,13 +240,13 @@ void OutOptCaller()
   
 ```  
   
- Visual Studio コード分析は、この関数をチェックする前に null を検証します`pInt`が逆参照される場合に`pInt`を返す前に、関数によってバッファーが初期化されている NULL でないです。  
+ Visual Studio Code Analysis validates that this function checks for NULL before `pInt` is dereferenced, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.  
   
-### <a name="example-the-inout-annotation"></a>例:\_Inout\_注釈  
- `_Inout_` 関数によって変更されるポインター パラメーターの注釈に使用されます。 ポインターは、呼び出しの前に有効な初期化データを指す必要がありますされ、変わる場合でもが必要も有効な値を返された場合。 注釈は、関数の読み取りし、書き込みを 1 つの要素のバッファーに自由に可能性があることを指定します。 呼び出し元は、バッファーを提供し、初期化する必要があります。  
+### <a name="example-the-_inout_-annotation"></a>Example: The \_Inout\_ Annotation  
+ `_Inout_` is used to annotate a pointer parameter that may be changed by the function. The pointer must point to valid initialized data before the call, and even if it changes, it must still have a valid value on return. The annotation specifies that the function may freely read from and write to the one-element buffer. The caller must provide the buffer and initialize it.  
   
 > [!NOTE]
-> ような`_Out_`、`_Inout_`変更可能な値に適用する必要があります。  
+> Like `_Out_`, `_Inout_` must apply to a modifiable value.  
   
 ```cpp  
   
@@ -272,10 +272,10 @@ void BadInOutCaller()
   
 ```  
   
- Visual Studio コード分析は、呼び出し元が初期化されたバッファーに NULL 以外のポインターを渡すことを検証します。 `pInt`、する前に返された場合に、`pInt`も null でないバッファーが初期化されます。  
+ Visual Studio Code Analysis validates that callers pass a non-NULL pointer to an initialized buffer for `pInt`, and that, before return, `pInt` is still non-NULL and the buffer is initialized.  
   
-### <a name="example-the-inoutopt-annotation"></a>例:\_Inout_opt\_注釈  
- `_Inout_opt_` 同じ`_Inout_`, 点が、入力パラメーターが NULL にできるし、この関数がそのため、確認する必要があります。  
+### <a name="example-the-_inout_opt_-annotation"></a>Example: The \_Inout_opt\_ Annotation  
+ `_Inout_opt_` is the same as `_Inout_`, except that the input parameter is allowed to be NULL and, therefore, the function should check for this.  
   
 ```cpp  
   
@@ -302,10 +302,10 @@ void InOutOptCaller()
   
 ```  
   
- Visual Studio コード分析は、この関数は、バッファーにアクセスする前に、null チェックを検証します。`pInt`がを返す前に、関数によってバッファーが初期化されている NULL でないです。  
+ Visual Studio Code Analysis validates that this function checks for NULL before it accesses the buffer, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.  
   
-### <a name="example-the-outptr-annotation"></a>例:\_Outptr\_注釈  
- `_Outptr_` ポインターを返すためのものがパラメーターの注釈に使用されます。  パラメーター自体が null の場合、することはできず、呼び出された関数では、NULL 以外のポインターを返しますが初期化されたデータを指すポインター。  
+### <a name="example-the-_outptr_-annotation"></a>Example: The \_Outptr\_ Annotation  
+ `_Outptr_` is used to annotate a parameter that's intended to return a pointer.  The parameter itself should not be NULL, and the called function returns a non-NULL pointer in it and that pointer points to initialized data.  
   
 ```cpp  
   
@@ -333,10 +333,10 @@ void OutPtrCaller()
   
 ```  
   
- Visual Studio コード分析は、呼び出し元が NULL 以外のポインターを渡すことを検証します`*pInt`を返す前に、関数によってバッファーが初期化されているとします。  
+ Visual Studio Code Analysis validates that the caller passes a non-NULL pointer for `*pInt`, and that the buffer is initialized by the function before it returns.  
   
-### <a name="example-the-outptropt-annotation"></a>例:\_Outptr_opt\_注釈  
- `_Outptr_opt_` 同じ`_Outptr_`パラメーターが省略可能なことを除いて、-、呼び出し元が NULL ポインターでパラメーターに渡すことができます。  
+### <a name="example-the-_outptr_opt_-annotation"></a>Example: The \_Outptr_opt\_ Annotation  
+ `_Outptr_opt_` is the same as `_Outptr_`, except that the parameter is optional—the caller can pass in a NULL pointer for the parameter.  
   
 ```cpp  
   
@@ -366,10 +366,10 @@ void OutPtrOptCaller()
   
 ```  
   
- Visual Studio コード分析は、この関数をチェックする前に null を検証します`*pInt`が逆参照を返す前に、関数によってバッファーが初期化されているとします。  
+ Visual Studio Code Analysis validates that this function checks for NULL before `*pInt` is dereferenced, and that the buffer is initialized by the function before it returns.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>例:\_成功\_注釈と組み合わせて\_アウト\_  
- 注釈は、ほとんどのオブジェクトに適用できます。  具体的には、全体の関数の注釈を付けることができます。  関数の最も明確な特性の 1 つは、成功または失敗にすることができます。 バッファーとそのサイズ間の関連付けのように、[C/C++] を関数の成功または失敗 express ことはできません。 使用して、`_Success_`注釈、関数の成功を言うことができます。  パラメーターを`_Success_`注釈はこれが true の場合に、関数が成功したことが示されている式だけです。 注釈パーサーが処理できる任意の式を指定できます。 関数から制御が戻た後の注釈の効果を適用できるは、関数が成功した場合だけです。 この例ではどのように`_Success_`対話`_Out_`は正常に実行します。 キーワードを使用する`return`を戻り値を表します。  
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Example: The \_Success\_ Annotation in Combination with \_Out\_  
+ Annotations  can be applied to most objects.  In particular, you can annotate a whole function.  One of the most obvious characteristics of a function is that it can succeed or fail. But like the association between a buffer and its size, C/C++ cannot express function success or failure. By using the `_Success_` annotation, you can say what success for a function looks like.  The parameter to the `_Success_` annotation is just an expression that when it is true indicates that the function has succeeded. The expression can be anything that the annotation parser can handle. The effects of the annotations after the function returns are only applicable when the function succeeds. This example shows how `_Success_` interacts with `_Out_` to do the right thing. You can use the keyword `return` to represent the return value.  
   
 ```cpp  
   
@@ -386,36 +386,36 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
 ```  
   
- `_Out_`注釈と Visual Studio のコード分析を検証する呼び出し元がのバッファーに NULL 以外のポインターを渡し`pInt`、返す前に、関数によってバッファーが初期化されているとします。  
+ The `_Out_` annotation causes Visual Studio Code Analysis to validate that the caller passes a non-NULL pointer to a buffer for `pInt`, and that the buffer is initialized by the function before it returns.  
   
 ## <a name="sal-best-practice"></a>SAL のベスト プラクティス  
   
 ### <a name="adding-annotations-to-existing-code"></a>既存のコードに注釈を追加する  
- SAL は、セキュリティとコードの信頼性を向上するのに役立つ強力なテクノロジです。 SAL について説明しますと後、は、日常の作業に新しいスキルを適用できます。 新しいコードは、設計全体で; SAL ベースの仕様を使用できます。以前のコードでは、段階的に注釈を追加し、更新するたびにメリットを向上させることができます。  
+ SAL is a powerful technology that can help you improve the security and reliability of your code. After you learn SAL, you can apply the new skill to your daily work. In new code, you can use SAL-based specifications by design throughout; in older code, you can add annotations incrementally and thereby increase the benefits every time you update.  
   
- Microsoft はパブリック ヘッダーが既に注釈が付いています。 そのため、あるプロジェクトで最初に注釈を付けるリーフ ノードの関数と関数を最大限に活用する Win32 Api を呼び出すをお勧めします。  
+ Microsoft public headers are already annotated. Therefore, we suggest that in your projects you first annotate leaf node functions and functions that call Win32 APIs to get the most benefit.  
   
 ### <a name="when-do-i-annotate"></a>注釈を付けるタイミング  
- いくつかのガイドラインを次に示します。  
+ Here are some guidelines:  
   
-- すべてのポインター パラメーターの注釈を設定します。  
+- Annotate all pointer parameters.  
   
-- 注釈の値の範囲の注釈を設定して、コード分析は、バッファーとポインターの安全を確保できるようにします。  
+- Annotate value-range annotations so that Code Analysis can ensure buffer and pointer safety.  
   
-- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、次を参照してください。[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)します。  
+- Annotate locking rules and locking side effects. For more information, see [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md).  
   
-- ドライバーのプロパティとその他のドメイン固有のプロパティの注釈を設定します。  
+- Annotate driver properties and other domain-specific properties.  
   
-  または、全体にわたって、インテントをオフにして、注釈が実行されていることを確認するが簡単にすべてのパラメーターの注釈を付けることができます。  
+  Or you can annotate all parameters to make your intent clear throughout and to make it easy to check that annotations have been done.  
   
 ## <a name="related-resources"></a>関連資料  
- [コード分析チームのブログ](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
   
-## <a name="see-also"></a>関連項目  
- [SAL 注釈を使用して C/C++ のコード障害を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)   
- [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
- [構造体とクラスに注釈を付ける](../code-quality/annotating-structs-and-classes.md)   
- [ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)   
- [注釈を適用するタイミングと場所を指定します。](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+## <a name="see-also"></a>参照  
+ [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
+ [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
+ [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)   
+ [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)

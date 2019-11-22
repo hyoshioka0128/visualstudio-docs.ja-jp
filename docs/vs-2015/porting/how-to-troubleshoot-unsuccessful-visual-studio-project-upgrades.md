@@ -1,5 +1,5 @@
 ---
-title: '方法: 失敗したプロジェクトのアップグレードのトラブルシューティング |Microsoft Docs'
+title: 'How to: Troubleshoot Unsuccessful Project Upgrades | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696391"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300349"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>方法: 失敗した Visual Studio プロジェクトのアップグレードをトラブルシューティングします。
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>方法: Visual Studio プロジェクトのアップグレードが成功しなかった場合のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージョンで作成したプロジェクトを完全には変換できない場合があります。 以下のセクションで説明するヒントで、特定の問題が解決しない場合は、詳細については、technet を検索する場合がありますできる[Wiki:開発ポータル](http://go.microsoft.com/fwlink/?LinkId=254808)します。
+Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージョンで作成したプロジェクトを完全には変換できない場合があります。 If the tips in the following sections do not resolve your specific problem, you might be able to find more information on the TechNet [Wiki: Development Portal](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>ファイルが見つからないためプロジェクトを実行できない
  プロジェクト ファイルには、ユーザーによって F5 キーが押されたときに [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がプロジェクトの実行に使用するハード コーディングされたファイル パスが含まれています。 これらのパスには、devenv.exe やその他の必須ファイルの場所などがあります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のアップグレード バージョンでは、これらのファイルのパスが変更されている場合があります。
@@ -56,5 +56,5 @@ Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージ
 
    アップグレードされた [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンでプロジェクトを実行する場合は、そのプロジェクトの参照を更新し、参照を呼び出す `Imports` ステートメントまたは `Using` ステートメントも更新する必要があります。 プロジェクトが IDE で読み込まれる場合は、**ソリューション エクスプローラー**または **[参照マネージャー]** ダイアログ ボックスを使用して参照を更新できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4 に変換する](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

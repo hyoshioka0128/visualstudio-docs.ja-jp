@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ClickOnce アプリケーションを手動で展開する |Microsoft Docs'
+title: 'Walkthrough: Manually Deploying a ClickOnce Application | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,193 +21,193 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686325"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294681"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で配置する
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル : ClickOnce アプリケーションを手動で配置する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio を使用してデプロイすることはできませんがある場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション、または高度な展開の機能を使用する必要があります。 信頼されたアプリケーションの配置などを作成するコマンド ライン ツール Mage.exe を使用する必要があります、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェスト。 このチュートリアルを作成する方法について説明する[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]コマンド ライン バージョン (Mage.exe) またはマニフェストの生成および編集ツールのグラフィカル バージョン (MageUI.exe) を使用して展開します。  
+If you cannot use Visual Studio to deploy your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, or you need to use advanced deployment features, such as Trusted Application Deployment, you should use the Mage.exe command-line tool to create your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests. This walkthrough describes how to create a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment by using either the command-line version (Mage.exe) or the graphical version (MageUI.exe) of the Manifest Generation and Editing Tool.  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルでは、いくつかの前提条件とデプロイを構築する前に選択する必要があるオプションはされています。  
+## <a name="prerequisites"></a>必要条件  
+ This walkthrough has some prerequisites and options that you need to choose before building a deployment.  
   
-- Mage.exe および MageUI.exe をインストールします。  
+- Install Mage.exe and MageUI.exe.  
   
-     Mage.exe および MageUI.exe の一部である、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]します。 必要か、[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]インストールされているかのバージョン、 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] Visual Studio に含まれています。 詳細については、次を参照してください。 [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) msdn です。  
+     Mage.exe and MageUI.exe are part of the [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. You must either have the [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] installed or the version of the [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] included with Visual Studio. For more information, see [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) on MSDN.  
   
-- 展開するアプリケーションを提供します。  
+- Provide an application to deploy.  
   
-     このチュートリアルでは、Windows アプリケーションをデプロイする準備が整いましたがあることを前提としています。 このアプリケーションは、AppToDeploy として参照されます。  
+     This walkthrough assumes that you have a Windows application that you are ready to deploy. This application will be referred to as AppToDeploy.  
   
-- 展開の分散方法を決定します。  
+- Determine how the deployment will be distributed.  
   
-     ディストリビューション オプションは次のとおりです。Web、ファイル共有、または CD。 詳細については、「 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)」を参照してください。  
+     The distribution options include: Web, file share, or CD. 詳細については、「 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)」を参照してください。  
   
-- アプリケーションに管理者特権でのレベルの信頼が必要かどうかを決定します。  
+- Determine whether the application requires an elevated level of trust.  
   
-     アプリケーションでは、完全信頼が必要な場合: たとえば、ユーザーのシステムへのアクセスを完全: を使用することができます、 `-TrustLevel` Mage.exe のオプションは、この設定。 カスタム アクセス許可は、アプリケーションの設定を定義する場合は、もう 1 つのマニフェストからインターネットまたはイントラネット アクセス許可のセクションをコピーに、ニーズに合わせて変更およびテキスト エディターまたは MageUI.exe を使用して、アプリケーション マニフェストに追加します。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
+     If your application requires Full Trust—for example, full access to the user's system—you can use the `-TrustLevel` option of Mage.exe to set this. If you want to define a custom permission set for your application, you can copy the Internet or intranet permission section from another manifest, modify it to suit your needs, and add it to the application manifest using either a text editor or MageUI.exe. 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
-- Authenticode 証明書を取得します。  
+- Obtain an Authenticode certificate.  
   
-     Authenticode 証明書を使用してデプロイを署名する必要があります。 テスト証明書を生成するには、Visual Studio、MageUI.exe、または MakeCert.exe および Pvk2Pfx.exe ツールを使用してまたは証明書機関 (CA) から証明書を取得できます。 信頼されたアプリケーションの配置を使用するように選択した場合はすべてのクライアント コンピューターに証明書のインストールを 1 回も行う必要があります。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
-  
-    > [!NOTE]
-    > CNG 証明書が証明機関から入手できます。 使用してデプロイを登録することもできます。  
-  
-- アプリケーションに UAC 情報を含むマニフェストがないことを確認します。  
-  
-     アプリケーションがユーザー アカウント制御 (UAC) の情報を含むマニフェストをなど、含まれるかどうかを確認する必要がある、`<dependentAssembly>`要素。 アプリケーション マニフェストを確認するには、Windows Sysinternals を使用できる[Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035)ユーティリティ。  
-  
-     アプリケーションに UAC の詳細を含むマニフェストが含まれている場合は、UAC 情報を使用しないで再構築する必要があります。 Visual Studio で c# プロジェクトのプロジェクトのプロパティを開き、[アプリケーション] タブを選択します。**マニフェスト**ドロップダウン リストで、**マニフェストを含まないアプリケーションを作成する**します。 Visual Studio で Visual Basic プロジェクトの場合、プロジェクトのプロパティを開き、アプリケーション タブを選択および をクリックして**UAC 設定の表示**します。 マニフェスト ファイルを開いたときに、1 つ内のすべての要素を削除`<asmv1:assembly>`要素。  
-  
-- アプリケーションがクライアント コンピューターの前提条件が必要かどうかを決定します。  
-  
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Visual Studio からデプロイされたアプリケーションは、デプロイの前提条件のインストール ブートス トラップ (setup.exe) を含めることができます。 このチュートリアルで作成に必要な 2 つのマニフェストを[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開します。 前提条件のブートス トラップを使用して作成することができます、 [GenerateBootstrapper タスク](../msbuild/generatebootstrapper-task.md)します。  
-  
-### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Mage.exe コマンド ライン ツールを使用してアプリケーションをデプロイするには  
-  
-1. 格納するディレクトリを作成、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開ファイル。  
-  
-2. 作成した展開ディレクトリでは、バージョン サブディレクトリを作成します。 初めてアプリケーションを展開する場合は、名前、バージョン サブディレクトリ**1.0.0.0**します。  
+     You should sign your deployment with an Authenticode certificate. You can generate a test certificate by using Visual Studio, MageUI.exe, or MakeCert.exe and Pvk2Pfx.exe tools, or you can obtain a certificate from a Certificate Authority (CA). If you choose to use Trusted Application Deployment, you must also perform a one-time installation of the certificate onto all client computers. 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
     > [!NOTE]
-    > 配置のバージョンをアプリケーションのバージョンとは異なることはできます。  
+    > You can also sign your deployment with a CNG certificate that you can obtain from a Certificate Authority.  
   
-3. 実行可能ファイル、アセンブリ、リソース、およびデータ ファイルを含む、バージョン サブディレクトリには、すべてのアプリケーション ファイルをコピーします。 必要に応じて、追加のファイルが含まれている追加のサブディレクトリを作成できます。  
+- Make sure that the application does not have a manifest with UAC information.  
   
-4. 開く、[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]または Visual Studio コマンド プロンプトし、バージョンのサブディレクトリに変更します。  
+     You need to determine whether your application contains a manifest with User Account Control (UAC) information, such as an `<dependentAssembly>` element. To examine an application manifest, you can use the Windows Sysinternals [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) utility.  
   
-5. Mage.exe への呼び出しでは、アプリケーション マニフェストを作成します。 次のステートメントは、Intel x86 プロセッサで実行するコンパイルされたコードに対するアプリケーション マニフェストを作成します。  
+     If your application contains a manifest with UAC details, you must re-build it without the UAC information. For a C# project in Visual Studio, open the project properties and select the Application tab. In the **Manifest** drop-down list, select **Create application without a manifest**. For a Visual Basic project in Visual Studio, open the project properties, select the Application tab, and click **View UAC Settings**. In the opened manifest file, remove all elements within the single `<asmv1:assembly>` element.  
+  
+- Determine whether the application requires prerequisites on the client computer.  
+  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications deployed from Visual Studio can include a prerequisite installation bootstrapper (setup.exe) with your deployment. This walkthrough creates the two manifests required for a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment. You can create a prerequisite bootstrapper by using the [GenerateBootstrapper Task](../msbuild/generatebootstrapper-task.md).  
+  
+### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>To deploy an application with the Mage.exe command-line tool  
+  
+1. Create a directory where you will store your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment files.  
+  
+2. In the deployment directory you just created, create a version subdirectory. If this is the first time that you are deploying the application, name the version subdirectory **1.0.0.0**.  
+  
+    > [!NOTE]
+    > The version of your deployment can be distinct from the version of your application.  
+  
+3. Copy all of your application files to the version subdirectory, including executable files, assemblies, resources, and data files. If necessary, you can create additional subdirectories that contain additional files.  
+  
+4. Open the [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] or Visual Studio command prompt and change to the version subdirectory.  
+  
+5. Create the application manifest with a call to Mage.exe. The following statement creates an application manifest for code compiled to run on the Intel x86 processor.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
     > [!NOTE]
-    > 後にドット (.) を含めるようにしてください、`-FromDirectory`オプションは、現在のディレクトリを示します。 ドットを含めない場合、アプリケーション ファイル パスを指定する必要があります。  
+    > Be sure to include the dot (.) after the `-FromDirectory` option, which indicates the current directory. If you do not include the dot, you must specify the path to your application files.  
   
-6. Authenticode 証明書をアプリケーション マニフェストに署名します。 置換*mycert.pfx*証明書ファイルへのパス。 置換*passwd*証明書ファイルのパスワードに置き換えます。  
+6. Sign the application manifest with your Authenticode certificate. Replace *mycert.pfx* with the path to your certificate file. Replace *passwd* with the password for your certificate file.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-     CNG 証明書を使用してアプリケーション マニフェストをサインインするには、次の手順を使用します。 置換*cngCert.pfx*証明書ファイルへのパス。  
+     To sign  the application manifest with a CNG certificate, use the following. Replace *cngCert.pfx* with the path to your certificate file.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-7. 配置ディレクトリのルートに変更します。  
+7. Change to the root of the deployment directory.  
   
-8. Mage.exe への呼び出しで配置マニフェストを生成します。 既定では、Mage.exe ではマーク、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]その it を両方オンラインで実行できるように、オフライン インストールされているアプリケーションとして展開します。 アプリケーションで使用できるように、ユーザーがオンラインの場合にのみ使用して、`-Install`の値を持つオプション`false`します。 場合は、既定値を使用し、ユーザーがアプリケーションを Web サイトまたはファイル共有からインストールを以下のことを確認の値、 `-ProviderUrl` Web サーバーまたは共有でマニフェストのオプションのアプリケーションの場所を指しています。  
+8. Generate the deployment manifest with a call to Mage.exe. By default, Mage.exe will mark your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment as an installed application, so that it can be run both online and offline. To make the application available only when the user is online, use the `-Install` option with a value of `false`. If you use the default, and users will install your application from a Web site or file share, make sure that the value of the `-ProviderUrl` option points to the location of the application manifest on the Web server or share.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
-9. Authenticode または CNG 証明書で配置マニフェストに署名します。  
+9. Sign the deployment manifest with your Authenticode  or CNG certificate.  
   
     ```  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-     または  
+     、または  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-10. 配置ディレクトリのすべてのファイルを展開先またはメディアにコピーします。 これにより、Web サイトまたは FTP サイト、ファイル共有、または CD-ROM 上のフォルダーか可能性があります。  
+10. Copy all of the files in the deployment directory to the deployment destination or media. This may be either a folder on a Web site or FTP site, a file share, or a CD-ROM.  
   
-11. URL、UNC、またはアプリケーションをインストールするために必要な物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストに、ユーザーの完全なパスを示す必要があります。 AppToDeploy を配置する場合の例の http://webserver01/ AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.application します。  
+11. Provide your users with the URL, UNC, or physical media required to install your application. If you provide a URL or a UNC, you must give your users the full path to the deployment manifest. For example, if AppToDeploy is deployed to http://webserver01/ in the AppToDeploy directory, the full URL path would be http://webserver01/AppToDeploy/AppToDeploy.application.  
   
-### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>MageUI.exe のグラフィカル ツールを使用してアプリケーションをデプロイするには  
+### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>To deploy an application with the MageUI.exe graphical tool  
   
-1. 格納するディレクトリを作成、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開ファイル。  
+1. Create a directory where you will store your [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment files.  
   
-2. 作成した展開ディレクトリでは、バージョン サブディレクトリを作成します。 初めてアプリケーションを展開する場合は、名前、バージョン サブディレクトリ**1.0.0.0**します。  
+2. In the deployment directory you just created, create a version subdirectory. If this is the first time that you are deploying the application, name the version subdirectory **1.0.0.0**.  
   
     > [!NOTE]
-    > 配置のバージョンは、アプリケーションのバージョンとは異なる可能性があります。  
+    > The version of your deployment is probably distinct from the version of your application.  
   
-3. 実行可能ファイル、アセンブリ、リソース、およびデータ ファイルを含む、バージョン サブディレクトリには、すべてのアプリケーション ファイルをコピーします。 必要に応じて、追加のファイルが含まれている追加のサブディレクトリを作成できます。  
+3. Copy all of your application files to the version subdirectory, including executable files, assemblies, resources, and data files. If necessary, you can create additional subdirectories that contain additional files.  
   
-4. MageUI.exe のグラフィカル ツールを起動します。  
+4. Start the MageUI.exe graphical tool.  
   
     ```  
     MageUI.exe  
     ```  
   
-5. 選択して新しいアプリケーション マニフェストを作成する**ファイル**、**新規**、 **Application Manifest**  メニューから。  
+5. Create a new application manifest by selecting **File**, **New**, **Application Manifest** from the menu.  
   
-6. 既定の**名前** タブで、このデプロイの名前とバージョン番号を入力します。 指定することも、**プロセッサ**x86 など、アプリケーションが組み込まれています。  
+6. On the default **Name** tab, type the name and version number of this deployment. Also specify the **Processor** that your application is built for, such as x86.  
   
-7. 選択、**ファイル** タブで、省略記号をクリックし、(**.**) ボタンの横に、**アプリケーション ディレクトリ**テキスト ボックス。 フォルダーの参照 ダイアログ ボックスが表示されます。  
+7. Select the **Files** tab and click the ellipsis ( **...** ) button next to the **Application directory** text box. A Browse For Folder dialog box appears.  
   
-8. アプリケーション ファイルを格納しているバージョンのサブディレクトリを選択し、クリックして**OK**します。  
+8. Select the version subdirectory containing your application files, and then click **OK**.  
   
-9. インターネット インフォメーション サービス (IIS) を展開する場合は、選択、**を持たない任意のファイルを .deploy 拡張子に追加の設定と**チェック ボックスをオンします。  
+9. If you will deploy from Internet Information Services (IIS), select the **When populating add the .deploy extension to any file that does not have it** check box.  
   
-10. をクリックして、 **Populate**ファイルの一覧にすべてのアプリケーション ファイルを追加するボタンをクリックします。 アプリケーションには、複数の実行可能ファイルが含まれている場合は、スタートアップ アプリケーションとしては、この展開のメイン実行可能ファイルをマークをオンに**エントリ ポイント**から、**ファイルの種類**ドロップダウン リスト。 (アプリケーションには、1 つだけの実行可能ファイルが含まれる、MageUI.exe は対象として設定する。)  
+10. Click the **Populate** button to add all your application files to the file list. If your application contains more than one executable file, mark the main executable file for this deployment as the startup application by selecting **Entry Point** from the **File Type** drop-down list. (If your application contains only one executable file, MageUI.exe will mark it for you.)  
   
-11. 選択、**必要なアクセス許可**タブし、アプリケーションをアサートする必要があることの信頼のレベルを選択します。 既定値は**FullTrust**、ほとんどのアプリケーションに適したされます。  
+11. Select the **Permissions Required** tab and select the level of trust that you need your application to assert. The default is **FullTrust**, which will be suitable for most applications.  
   
-12. 選択**ファイル**、**付けて** メニューから。 署名オプション ダイアログ ボックスでは、アプリケーション マニフェストに署名するよう求められますが表示されます。  
+12. Select **File**, **Save As** from the menu. A Signing Options dialog box appears prompting you to sign the application manifest.  
   
-13. 場合は、ファイル システム上のファイルとして格納されている証明書がある場合を使用して、**証明書ファイルを使用してサインイン**オプション、およびファイル システムから、省略記号を使用して、証明書を選択します (**.**) ボタンをクリックします。 次に、証明書のパスワードを入力します。  
+13. If you have a certificate stored as a file on your file system, use the **Sign with certificate file** option, and select the certificate from the file system by using the ellipsis ( **...** ) button. Then type your certificate password.  
   
-     - または -  
+     -または-  
   
-     場合は、証明書をコンピューターからアクセス可能な証明書ストアに保持すると、選択、**格納された証明書を使用してサインイン**オプション、および指定された一覧から証明書を選択します。  
+     If your certificate is kept in a certificate store accessible from your computer, select the **Sign with stored certificate** option, and select the certificate from the provided list.  
   
-14. をクリックして**OK**アプリケーション マニフェストに署名します。 名前を付けて保存 ダイアログ ボックスが表示されます。  
+14. Click **OK** to sign your application manifest. The Save As dialog box appears.  
   
-15. 名前を付けて保存] ダイアログ ボックスで、[バージョンのディレクトリを指定し、クリックして**保存**します。  
+15. In the Save As dialog box, specify the version directory, and then click **Save**.  
   
-16. 選択**ファイル**、**新規**、**配置マニフェスト**メニューの配置マニフェストを作成します。  
+16. Select **File**, **New**, **Deployment Manifest** from the menu to create your deployment manifest.  
   
-17. **名前**タブで、この展開の名前とバージョン番号を指定 (**1.0.0.0**この例では)。 指定することも、**プロセッサ**x86 など、アプリケーションが組み込まれています。  
+17. On the **Name** tab, specify a name and version number for this deployment (**1.0.0.0** in this example). Also specify the **Processor** that your application is built for, such as x86.  
   
-18. 選択、**説明**タブをクリックし、値を指定**パブリッシャー**と**製品**します。 (**製品**Windows [スタート] メニュー上のアプリケーションをオフラインで使用するクライアント コンピューターで、アプリケーションをインストールするときに指定された名前を指定します)。  
+18. Select the **Description** tab, and specify values for **Publisher** and **Product**. (**Product** is the name given to your application on the Windows Start menu when your application installs on a client computer for offline use.)  
   
-19. 選択、**展開オプション** タブで、および、**開始場所**テキスト ボックスで、Web サーバーまたは共有上のアプリケーション マニフェストの場所を指定します。 たとえば、 \\\myServer\myShare\AppToDeploy.application します。  
+19. Select the **Deployment Options** tab, and in the **Start Location** text box, specify the location of the application manifest on the Web server or share. For example, \\\myServer\myShare\AppToDeploy.application.  
   
-20. 前の手順で .deploy 拡張子を追加した場合も選択 **.deploy ファイル名拡張子を使用して、** ここです。  
+20. If you added the .deploy extension in a previous step, also select **Use .deploy file name extension** here.  
   
-21. 選択、**更新オプション**タブをクリックし、このアプリケーションを更新を希望する頻度を指定します。 アプリケーションで使用する場合<xref:System.Deployment.Application.UpdateCheckInfo>をチェックする更新プログラム自体、オフ、**アプリケーションの更新プログラムを確認する必要があります**チェック ボックスをオンします。  
+21. Select the **Update Options** tab, and specify how often you would like this application to update. If your application uses <xref:System.Deployment.Application.UpdateCheckInfo> to check for updates itself, clear the **This application should check for updates** check box.  
   
-22. 選択、**アプリケーション参照**] タブをクリックして、 **[マニフェストの**ボタンをクリックします。 開く ダイアログ ボックスが表示されます。  
+22. Select the **Application Reference** tab and then click the **Select Manifest** button. An open dialog box appears.  
   
-23. 先ほど作成したアプリケーション マニフェストを選択し、クリックして**オープン**します。  
+23. Select the application manifest that you created earlier and then click **Open**.  
   
-24. 選択**ファイル**、**付けて** メニューから。 署名オプション ダイアログ ボックスでは、配置マニフェストに署名するよう求められますが表示されます。  
+24. Select **File**, **Save As** from the menu. A Signing Options dialog box appears prompting you to sign the deployment manifest.  
   
-25. 場合は、ファイル システム上のファイルとして格納されている証明書がある場合を使用して、**証明書ファイルを使用してサインイン**オプション、およびファイル システムから、省略記号を使用して、証明書を選択します (**.**) ボタンをクリックします。 次に、証明書のパスワードを入力します。  
+25. If you have a certificate stored as a file on your file system, use the **Sign with certificate file** option, and select the certificate from the file system by using the ellipsis ( **...** ) button. Then type your certificate password.  
   
-     - または -  
+     -または-  
   
-     場合は、証明書をコンピューターからアクセス可能な証明書ストアに保持すると、選択、**格納された証明書を使用してサインイン**オプション、および指定された一覧から証明書を選択します。  
+     If your certificate is kept in a certificate store accessible from your computer, select the **Sign with stored certificate** option, and select the certificate from the provided list.  
   
-26. をクリックして**OK**して配置マニフェストに署名します。 名前を付けて保存 ダイアログ ボックスが表示されます。  
+26. Click **OK** to sign your deployment manifest. The Save As dialog box appears.  
   
-27. **付けて** ダイアログ ボックスで、1 つのディレクトリをクリックし、実際のデプロイのルートへの移行**保存**します。  
+27. In the **Save As** dialog box, move up one directory to the root of your deployment and then click **Save**.  
   
-28. 配置ディレクトリのすべてのファイルを展開先またはメディアにコピーします。 これにより、Web サイトまたは FTP サイト、ファイル共有、または CD-ROM 上のフォルダーか可能性があります。  
+28. Copy all of the files in the deployment directory to the deployment destination or media. This may be either a folder on a Web site or FTP site, a file share, or a CD-ROM.  
   
-29. URL、UNC、またはアプリケーションをインストールするために必要な物理メディアをユーザーに提供します。 URL または UNC を指定すると、配置マニフェストの完全なパスをユーザーに与える必要があります。 AppToDeploy を配置する場合の例の http://webserver01/ AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.application します。  
+29. Provide your users with the URL, UNC, or physical media required to install your application. If you provide a URL or a UNC, you must give your users the full path the deployment manifest. For example, if AppToDeploy is deployed to http://webserver01/ in the AppToDeploy directory, the full URL path would be http://webserver01/AppToDeploy/AppToDeploy.application.  
   
-## <a name="next-steps"></a>次の手順  
- アプリケーションの新しいバージョンを展開する必要がある場合は、新しいバージョンにちなんだ名前の新しいディレクトリを作成、1.0.0.1—and が、新しいディレクトリに新しいアプリケーション ファイルをコピーするなど。 次に、作成し新しいアプリケーション マニフェストに署名し、更新、および配置マニフェストに署名するには、前の手順に従う必要があります。 両方、Mage.exe で同じより高いバージョンを指定するように注意`-New`と`–Update`呼び出し、として[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]のみ以降のバージョンが最上位の左端の整数値で更新します。 MageUI.exe を使用した場合ことができますを更新する、配置マニフェストを開き、選択、**アプリケーション参照**] タブをクリックすると、 **[マニフェストの**ボタンをクリックし、選択し、更新されました。アプリケーション マニフェスト。  
+## <a name="next-steps"></a>次のステップ  
+ When you need to deploy a new version of the application, create a new directory named after the new version—for example, 1.0.0.1—and copy the new application files into the new directory. Next, you need to follow the previous steps to create and sign a new application manifest, and update and sign the deployment manifest. Be careful to specify the same higher version in both the Mage.exe `-New` and `–Update` calls, as [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] only updates higher versions, with the left-most integer most significant. If you used MageUI.exe, you can update the deployment manifest by opening it, selecting the **Application Reference** tab, clicking the **Select Manifest** button, and then selecting the updated application manifest.  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
+ [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)

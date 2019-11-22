@@ -1,5 +1,5 @@
 ---
-title: SQL Server サンプルデータベースのインストール |Microsoft Docs
+title: Install SQL Server sample databases | Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.date: 11/15/2016
@@ -9,31 +9,31 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3991d3b741162b4b1993e5359ad427c17f00321a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651523"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299630"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server サンプル データベースをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-サンプルデータベースは、SQL および LINQ クエリ、データバインド、Entity Framework モデリングなどを試してみるのに役立ちます。  各データベース製品には、独自のサンプルデータベースがあります。 Northwind と AdventureWorks は、2つの一般的な SQL Server サンプルデータベースです。
+Sample databases are useful for experimenting with SQL and LINQ queries, databinding,  Entity Framework modeling, and so on.  Each database product has its own sample databases. Northwind and AdventureWorks are two popular SQL Server sample databases.
 
- **AdventureWorks**は、SQL Server 製品用に提供されている現在のサンプルデータベースです。 これは、 [Codeplex の AdventureWorks ページ](http://msftdbprodsamples.codeplex.com/)から .mdf ファイルとしてダウンロードできます。 ここでは、データベースの標準および簡易 (LT) バージョンが用意されています。 ほとんどのシナリオでは、複雑になるため、LT バージョンが推奨されています。
+ **AdventureWorks** is the current sample database provided for SQL Server products. You can download it as an .mdf file from the [AdventureWorks page on Codeplex](https://archive.codeplex.com/?p=msftdbprodsamples). There are regular and lightweight (LT) versions of the database available here. For most scenarios, the LT version is preferred because it is less complex.
 
- **Northwind**は、数年にわたって使用されている比較的単純な SQL Server データベースです。 これは、 [CodePlex の Northwind データベースページ](https://northwinddatabase.codeplex.com/)から .bak ファイルとしてダウンロードできます。 アクセス許可の問題を回避するには、ユーザーフォルダーの下にない新しいフォルダーにファイルを解凍します。
+ **Northwind** is a relatively simple SQL Server database that has been used for many years. You can download it as a .bak file from the [Northwind database page on CodePlex](https://northwinddatabase.codeplex.com/). To avoid permissions issues, unzip the file into a new folder that is not under your user folder.
 
-#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Visual Studio で .bak ファイルからデータベースを復元するには
+#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>To restore a database from a .bak file in Visual Studio
 
-1. Microsoft SQL Server データベースをバックアップすると、結果は .bak ファイルになります。 .Bak ファイルをデータベースファイルとして再度使用できるようにするには、そのファイルを*復元*する必要があります。 メインメニューで、[ **View**  > **SQL Server オブジェクトエクスプローラー**] を選択します。 表示されない場合は、インストールする必要があります。 [**コントロールパネル]** の **[プログラムと機能]**  >  Microsoft Visual Studio 2015 を見つけて、 **[変更]** ボタンをクリックします。 インストールされているコンポーネントの一覧がインストーラーウィンドウに表示されたら、 **[SQL Server オブジェクトエクスプローラー]** チェックボックスをオンにして、インストールを続行します。
+1. When you back up a Microsoft SQL Server database, the result is a .bak file. To make the .bak file usable again as a database file, it must be *restored*. On the main menu, select **View** > **SQL Server Object Explorer**. If you don't see it, you might need to install it. Go to **Control Panel** > **Programs and Features**, find Microsoft Visual Studio 2015, and click the **Change** button. When the list of installed components appears in the installer window, select the **SQL Server Object Explorer** check box and then continue with the installation.
 
-2. SQL Server オブジェクトエクスプローラーで、任意の SQL Server データベースエンジン (localdb など) を右クリックし、 **[新しいクエリ]** を選択します。
+2. In SQL Server Object Explorer, right-click any SQL Server database engine(for example, localdb), and select**New Query**.
 
-     ![新しいクエリの SQL Server オブジェクトエクスプローラー](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "新しいクエリ SQL Server オブジェクトエクスプローラーのレーダーデータ")
+     ![SQL Server Object Explorer New Query](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server Object Explorer New Query")
 
-3. まず、データベースの論理名と、.bak ファイル内のログファイルが必要です。 これを取得するには、SQL クエリエディターに次のクエリを入力し、ウィンドウの上部にある緑色の **[実行]** ボタンを選択します。 必要に応じてファイルパスを変更し、.bak ファイルをポイントします。
+3. First, you need the logical names of the database and log files inside the .bak file. To get it, enter this query into the SQL Query Editor and then select the green **Run** button at the top of the window. Modify the file path if necessary to point to the .bak file.
 
     ```
     RESTORE FILELISTONLY
@@ -41,9 +41,9 @@ ms.locfileid: "72651523"
     GO
     ```
 
-     [結果] ウィンドウに表示される論理名を書き留めます。  Northwind データベースの場合、2つの論理名は Northwind と Northwind_log です。
+     Write down the logical names that appear in the results window.  For the Northwind database, the two logical names are Northwind and Northwind_log.
 
-4. ここで、次のクエリを実行してデータベースを作成します。 必要に応じて、ソースとターゲットのパス、論理データベース名、Northwind の物理ファイル名に置き換えます。 .Mdf ファイルと .ldf ファイル拡張子を保持します。
+4. Now run this query to create the database. Substitute your own source and destination paths, logical database names, and physical file names for Northwind as appropriate. Keep the .mdf and .ldf file extensions.
 
     ```
     RESTORE DATABASE Northwind
@@ -52,14 +52,14 @@ ms.locfileid: "72651523"
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'
     ```
 
-5. SQL Server オブジェクトエクスプローラーで、 **[データベース]** ノードを右クリックすると、Northwind データベースノードが表示されます。 そうでない場合は、データベース を右クリックし、**新しいデータベースの追加** を選択します。 先ほど作成した .mdf ファイルの名前と場所を入力します。
+5. In SQL Server Object Explorer, right-click on the **Databases** node, and you should see the Northwind database node. If not, then right-click on Databases and select **Add New Database**. Enter the name and the location of the .mdf file that you just created.
 
-6. これで、データベースを Visual Studio のデータソースとして使用する準備ができました。
+6. The database is now ready to use as a data source in Visual Studio.
 
-#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>SQL Server Management Studio の .bak ファイルからデータベースを復元するには
+#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>To restore a database from a .bak file in SQL Server Management Studio
 
-1. ダウンロードサイトから SQL Server Management Studio をダウンロードします。
+1. Download SQL Server Management Studio from the download site.
 
-2. SSMS**オブジェクトエクスプローラー**ウィンドウで、 **[データベース]** ノードを右クリックし、 **[データベースの復元]** を選択して、.bak ファイルの場所を指定します。
+2. In the SSMS **Object Explorer** window, right-click the **Databases** node, select**Restore Database**, and provide the location of the .bak file.
 
-     ![SSMS データベースの復元](../data-tools/media/raddata-ssms-restore-database.png "レーダーデータ SSMS データベースの復元")
+     ![SSMS Restore Database](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS Restore Database")

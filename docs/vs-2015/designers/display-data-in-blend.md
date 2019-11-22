@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa084ee92d7e262cb04661b4bbf26eefb74b9e06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ed51eaef8594695d4d594401ab9375563525b10
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294572"
 ---
 # <a name="display-data-in-blend"></a>Blend におけるデータの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ ms.locfileid: "72664665"
 - [ストアまたは Phone アプリでライブ データを表示する](#LiveStore)
 
 ## <a name="Scratch"></a> サンプル データの生成
- サンプル データを生成するには、XAML ドキュメントを開きます。 **[データ]** パネルで [**サンプルデータ**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "作成 30540d76-7256-43ce-b5d9-4b2edf3d339f")の作成] ボタンを選択し、 **[新しいサンプルデータ]** を選択します。
+ サンプル データを生成するには、XAML ドキュメントを開きます。 In the **Data** panel, choose the **Create sample data**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") button, and then choose **New Sample Data**.
 
  **[データ]** パネルでデータ構造を定義してから、いずれかのページの UI 要素にバインドします。
 
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")
 
- アプリの実行時にページにサンプルデータが表示されるようにするには、[**データソースオプション** ![ ](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")] を選択し、[**アプリケーションの実行時に有効に**する] を選択します。
+ If you want your sample data to appear in your pages when you run the app, choose **Data source options** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d"), and then choose **Enable When Running Application**.
 
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")
 
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[サンプルデータをゼロから作成](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)します。
+ **Watch a short video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create sample data from scratch](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend を使用したデータバインドの混在](https://www.youtube.com/watch?v=LSwPB6CAvjg)
+ **Watch a short video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Mixing up some data binding with Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="Existing"></a> クラスからサンプル データを生成する
  データの構造を記述するクラスを既に作成した場合は、そこからサンプル データを生成できます。
 
- クラスからサンプルデータを生成するには、XAML ドキュメントを開き、 **[データ]** パネルで [**サンプルデータ**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "作成 30540d76-7256-43ce-b5d9-4b2edf3d339f")の作成] ボタンをクリックし、 **[クラスからサンプルデータを作成]** をクリックします。
+ To generate sample data from a class, open a XAML document, and then in the **Data** panel, click the **Create sample data**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") button, and then click **Create Sample Data from Class**.
 
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[クラスからサンプルデータを作成](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)する
+ **Watch a short video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create sample data from a class](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend を使用したデータバインドの混在](https://www.youtube.com/watch?v=LSwPB6CAvjg)
+ **Watch a short video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Mixing up some data binding with Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="LiveWPF"></a> WPF アプリケーションでライブ データを表示する
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [XML データソースの作成](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)
+ **Watch a short video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create an XML data source](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
 ## <a name="LiveStore"></a> ストアまたは Phone アプリでライブ データを表示する
  「 [データとファイルの操作 (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)」を参照してください。

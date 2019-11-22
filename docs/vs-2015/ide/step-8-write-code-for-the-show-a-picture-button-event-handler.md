@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aaa522efe5cb69dd9334a2cc3db7fc2846b1af7a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2c1b09d88de938ee4bc93b69b50d53c0d39006f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646893"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300005"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "72646893"
 
   IDE には、コードの記述に役立つ IntelliSense と呼ばれる強力なツールが備わっています。 コードを入力する際に単語の一部を入力すると、入力に合わせてボックスが開き、入力候補が提示されます。 このツールは、ユーザーの次の操作を予測し、ユーザーが一覧から選択した最後の項目に自動的にジャンプします。 ユーザーは、上方向キーまたは下方向キーを使用して一覧内を移動したり、文字の入力を続けて選択肢を絞り込んだりすることができます。 目的の選択肢が見つかったら、Tab キーを押して選択します。 入力候補が不要な場合は無視してもかまいません。
 
-  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](http://go.microsoft.com/fwlink/?LinkId=205215)ビデオ4」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 4](http://go.microsoft.com/fwlink/?LinkId=205203)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](https://go.microsoft.com/fwlink/?LinkId=205215) or [Tutorial 1: Create a Picture Viewer in C# - Video 4](https://go.microsoft.com/fwlink/?LinkId=205203). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>[Show a picture] ボタンのイベント ハンドラーのコードを記述するには
 
 1. Windows フォーム デザイナーに移動し、 **[Show a picture]** ボタンをダブルクリックします。 IDE がすぐにコード デザイナーに切り替わり、前に追加した `showButton_Click()` メソッド内にカーソルが移動します。
 
-2. 2 つの中かっこ { } の間の空の行に「`i`」と入力します (Visual Basic で、Private Sub の間の空の行に「」と入力します。 と End Sub)次の図に示すように、 **IntelliSense**ウィンドウが開きます。
+2. 2 つの中かっこ { } の間の空の行に「`i`」と入力します (In Visual Basic, type on the empty line between Private Sub… and End Sub.) An **IntelliSense** window opens, as shown in the following picture.
 
-     ![Visual C&#35;コード intellisense での Intellisense と](../ide/media/express-ifintellisense.png "Express_IfIntellisense")ビジュアルコードC#
+     ![IntelliSense with Visual C&#35; code](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense with Visual C# code
 
-3. **IntelliSense** ウィンドウで、**if** という単語が強調表示されます (そうでない場合は、小文字の `f` を入力すると、になります)。**IntelliSense**ウィンドウの横にある小さな [*ツールヒント*] ボックスに、 **if ステートメントに対するコードスニペット**という説明が表示されていることに注意してください。 (Visual Basic では、このツールヒントには、これがスニペットであることが示されていますが、表現が少し異なります)。そのスニペットを使用する**場合は**、TAB キーを押して、コードに if を挿入します。 次にもう一度 Tab キーを押して **if** スニペットを使用します。 (別の場所をクリックして **[IntelliSense]** ウィンドウが非表示になった場合は、BackSpace キーで **i** を削除してから再度入力すると、もう一度 **[IntelliSense]** ウィンドウが開きます)。
+3. **IntelliSense** ウィンドウで、**if** という単語が強調表示されます (If not, enter a lowercase `f`, and it will.) Notice how a little *tooltip* box next to the **IntelliSense** window appears with the description, **Code snippet for if statement**. (In Visual Basic, the tooltip also states that this is a snippet, but with slightly different wording.) You want to use that snippet, so choose the TAB key to insert **if** into your code. 次にもう一度 Tab キーを押して **if** スニペットを使用します。 (別の場所をクリックして **[IntelliSense]** ウィンドウが非表示になった場合は、BackSpace キーで **i** を削除してから再度入力すると、もう一度 **[IntelliSense]** ウィンドウが開きます)。
 
      ![Visual C&#35; コード](../ide/media/express-highlighttrue.png "Express_HighlightTrue") Visual C# コード
 
@@ -49,16 +49,16 @@ ms.locfileid: "72646893"
 
          `OpenFileDialog` の詳細については、「[OpenFileDialog クラス](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)」を参照してください。
 
-    3. ピリオド (`.`) を入力します (多くのプログラマはこれをドットと呼んでいます)。**OpenFileDialog1**の直後にドットを入力したため、 **IntelliSense**ウィンドウが開き、 **OpenFileDialog**コンポーネントのプロパティとメソッドがすべて表示されます。 これらは、Windows フォーム デザイナーでクリックした場合に **[プロパティ]** ウィンドウに表示されるプロパティと同じです。 また、コンポーネントで実行する処理 (ダイアログ ボックスを開くなど) を指定するメソッドも選択できます。
+    3. Type a period (`.`) (Many programmers call this a dot.) Because you typed a dot right after **openFileDialog1**, an **IntelliSense** window opens, filled in with all of the **OpenFileDialog** component's properties and methods. これらは、Windows フォーム デザイナーでクリックした場合に **[プロパティ]** ウィンドウに表示されるプロパティと同じです。 また、コンポーネントで実行する処理 (ダイアログ ボックスを開くなど) を指定するメソッドも選択できます。
 
         > [!NOTE]
         > **IntelliSense** ウィンドウには、プロパティとメソッドの両方が表示されます。 表示される内容を判断するには、 **[IntelliSense]** ウィンドウの各項目の左側のアイコンを参照してください。 各メソッドの横にはブロックの画像が表示され、各プロパティの横にはレンチ (スパナ) の画像が表示されます。 また、各イベントの横には稲妻のアイコンが表示されます。 これらの画像は次のとおりです。
 
-         ![メソッドアイコン](../ide/media/express-iconmethod.png "Express_IconMethod")メソッドアイコン
+         ![Method icon](../ide/media/express-iconmethod.png "Express_IconMethod") Method icon
 
-         ![プロパティアイコン](../ide/media/express-iconproperty.png "Express_IconProperty")プロパティアイコン
+         ![Property icon](../ide/media/express-iconproperty.png "Express_IconProperty") Property icon
 
-         ![イベントアイコン](../ide/media/express-iconevent.png "Express_IconEvent")イベントアイコン
+         ![Event icon](../ide/media/express-iconevent.png "Express_IconEvent") Event icon
 
     4. 「`ShowDialog`」の入力を開始します (IntelliSense では大文字と小文字の区別は重要ではありません)。 **[ファイルを開く]** ダイアログ ボックスを表示するメソッドは `ShowDialog()` です。 ウィンドウで "**ShowDialog**" が強調表示されたら、Tab キーを押します。 また、"ShowDialog" を強調表示し、F1 キーを押して、それに関するヘルプを表示することもできます。
 

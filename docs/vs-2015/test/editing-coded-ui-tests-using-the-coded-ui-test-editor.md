@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41b589526fb1f864c97571db893506bc612893ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660604"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302642"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用したコード化された UI テストの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "72660604"
 ## <a name="why-should-i-do-this"></a>この操作を行う理由
  コード化された UI テスト エディターを使用することは、コード化された UI テスト メソッドのコードをコード エディターを使用して編集するよりも効率的です。 コード化された UI テスト エディターでは、ツール バーとショートカット メニューを使用して、UI 操作とコントロールに関連付けられているプロパティ値をすばやく検出して修正することができます。 たとえば、コード化された UI テスト エディターのツール バーを使用して、次のコマンドを実行できます。
 
- ![UI テストの編集](../test/media/uitesteditor.png "UITestEditor")
+ ![UI Test Edito](../test/media/uitesteditor.png "UITestEditor")
 
 1. [検索](../ide/finding-and-replacing-text.md) : UI 操作とコントロールを見つけることができます。
 
@@ -57,7 +57,7 @@ ms.locfileid: "72660604"
 ## <a name="open-a-coded-ui-test"></a>コード化された UI テストを開く
  コード化された UI テスト エディターを使用して、Visual C# および Visual Basic ベースのコード化された UI テストを表示および編集できます。
 
- ![コード化された UI テストビルダーを使用したコンテキストメニューの編集](../test/media/editcodeduitest.png "EditCodedUITest")
+ ![Context menu Edit With Coded UI Test Builder](../test/media/editcodeduitest.png "EditCodedUITest")
 
  ソリューション エクスプローラーで、 **[UIMap.uitest]** のショートカット メニューを開き、 **[開く]** をクリックします。 コード化された UI テスト エディターに、コード化された UI テストが表示されます。 これで、コード化された UI テストの記録されたメソッド、操作、および対応するコントロールを表示および編集できるようになります。
 
@@ -65,18 +65,18 @@ ms.locfileid: "72660604"
 > **[UI 操作]** ウィンドウでメソッド内にある UI 操作を選択すると、対応するコントロールが強調表示されます。 UI 操作またはコントロール プロパティも変更できます。
 
  コード化された UI テスト エディターが*表示されません* 。
-Visual Studio Enterprise の 2012 よりも前のバージョンを使用している可能性があります。 コード化された UI テスト エディターは、MSDN サブスクリプションを備えた Visual Studio 2010 Feature Pack 2 でも使用できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119)」を参照してください。
+Visual Studio Enterprise の 2012 よりも前のバージョンを使用している可能性があります。 コード化された UI テスト エディターは、MSDN サブスクリプションを備えた Visual Studio 2010 Feature Pack 2 でも使用できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119)」を参照してください。
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a>UI 操作プロパティとそれに対応するコントロールのプロパティを変更する
  コード化された UI テスト エディターを使用すると、テスト メソッドですべての UI 操作をすばやく検索および表示できます。 エディターで UI 操作を選択すると、対応するコントロールが自動的に強調表示されます。 同様に、コントロールを選択すると、関連付けられた UI 操作が強調表示されます。 UI 操作またはコントロールを選択すると、[プロパティ] ウィンドウを使用して対応するプロパティを変更することが容易になります。
 
- ![UI 操作のプロパティ](../test/media/codeduiedituiaction.png "CodedUIEditUIAction")UI 操作のプロパティの編集
+ ![UI action properties](../test/media/codeduiedituiaction.png "CodedUIEditUIAction") Edit UI action properties
 
  UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場合は、プロパティを編集する対象の UI 操作を含むテスト メソッドを展開し、UI 操作を選択してから [プロパティ] ウィンドウを使用してプロパティを変更します。
 
  たとえば、サーバーが使用できないときに **Web ページ ‘<http://Contoso1/default.aspx’> に移動**というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `‘ http://Contoso2/default.aspx’` に変更できます。
 
- ![コントロールのプロパティ](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")コントロールプロパティの編集
+ ![Control properties](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp") Edit control properties
 
  コントロールのプロパティの変更は、UI 操作のプロパティの場合と同じ方法で実行します。 **[UI コントロール マップ]** ウィンドウで、編集するコントロールを選択し、[プロパティ] ウィンドウを使用してプロパティを変更します。
 
@@ -87,29 +87,29 @@ Visual Studio Enterprise の 2012 よりも前のバージョンを使用して�
  *その他に知っておく必要があること*
  **ヒント**
 
-- ![ヒント](../test/media/tip.png "ヒント")プロパティウィンドウが表示されない場合は、 **Alt**キーを押したまま**enter キーを押すか**、または**F4**キーを押します。
+- ![Tip](../test/media/tip.png "ヒント") If the Properties window is not displayed, press and hold **Alt** while you press **Enter**, or alternatively press **F4**.
 
-- ![ヒント](../test/media/tip.png "ヒント")プロパティの変更を元に戻すには、 **[編集]** メニューの **[元に戻す]** を選択するか、Ctrl キーを押しながら Z キーを押します。
+- ![Tip](../test/media/tip.png "ヒント") To undo the property changes you made, select **Undo** from the **Edit** menu, or press Ctrl+Z.
 
-- ![ヒント](../test/media/tip.png "ヒント")コード化された UI テストエディターのツールバーにある **[検索]** ボタンを使用すると、Visual Studio の検索と置換ツールを開くことができます。 そうすれば、検索コントロールを使用して、コード化された UI テスト エディターで UI 操作を検索できます。 たとえば、"'Login' ボタンをクリック" を検索できます。 これは、大規模なテストの場合に便利です。 コード化された UI テスト エディターでは検索と置換ツールの置換機能を使用できないことに注意してください。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」の「検索コントロール」を参照してください。
+- ![Tip](../test/media/tip.png "ヒント") You can use the **Find** button in the Coded UI Test editor toolbar to open the Find and Replace tool in Visual Studio. そうすれば、検索コントロールを使用して、コード化された UI テスト エディターで UI 操作を検索できます。 たとえば、"'Login' ボタンをクリック" を検索できます。 これは、大規模なテストの場合に便利です。 コード化された UI テスト エディターでは検索と置換ツールの置換機能を使用できないことに注意してください。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」の「検索コントロール」を参照してください。
 
-- ![ヒント](../test/media/tip.png "ヒント")場合によっては、テスト対象のアプリケーションの UI にコントロールが配置されている場所を視覚化することが困難になることがあります。 コード化された UI テスト エディターの機能の 1 つとして、UI コントロール マップに一覧表示されているコントロールを選択し、テスト対象のアプリケーションにおけるそのコントロールの位置を表示することができます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[テスト対象のアプリケーションで UI コントロールを検索する](#CodedUITestEditor_LocateUIControl)」(このトピックの後の方) を参照してください。
+- ![Tip](../test/media/tip.png "ヒント") Sometimes, it can be difficult to visualize where controls are located in the UI of the application under test. コード化された UI テスト エディターの機能の 1 つとして、UI コントロール マップに一覧表示されているコントロールを選択し、テスト対象のアプリケーションにおけるそのコントロールの位置を表示することができます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[テスト対象のアプリケーションで UI コントロールを検索する](#CodedUITestEditor_LocateUIControl)」(このトピックの後の方) を参照してください。
 
-- ![ヒント](../test/media/tip.png "ヒント")編集するコントロールを含むコンテナーコントロールを展開する必要がある場合があります。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[コントロールとその子孫を検索する](#CodedUITestEditor_LocateDecendants)」(このトピックの後の方) を参照してください。
+- ![Tip](../test/media/tip.png "ヒント") It might be necessary to expand the container control that contains the control that you want to edit. [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[コントロールとその子孫を検索する](#CodedUITestEditor_LocateDecendants)」(このトピックの後の方) を参照してください。
 
 ## <a name="CodedUITestEditor_DeleteUIActions"></a>不要な UI 操作を削除する
  コード化された UI テストの不要な UI 操作を簡単に削除できます。
 
- ![UI 操作の削除](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")
+ ![Delete UI action](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")
 
  **[UI 操作]** ウィンドウで、削除する UI 操作を含むテスト メソッドを展開します。 UI 操作のショートカット メニューを開き、 **[削除]** をクリックします。
 
 ## <a name="CodedUITestEditor_SplitMethods"></a> テスト メソッドを 2 つの異なるメソッドに分割する
  テスト メソッドを分割し、UI 操作を調整またはモジュール化することができます。 たとえば、テストには 2 個のコンテナー コントロールの UI 操作を含む単一のテスト メソッドが存在する場合があります。 UI 操作は、1 個のコンテナーで対応する 2 種類のメソッドにおいてより適切にモジュール化される可能性があります。
 
- ![テストメソッドの分割](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")
+ ![Splt a test method](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")
 
- ![2つのテストメソッド](../test/media/codeduitestsplitmethod2.png "CodedUITestSplitMethod2")
+ ![Two test methods](../test/media/codeduitestsplitmethod2.png "CodedUITestSplitMethod2")
 
  **[UI 操作]** ウィンドウで、2 種類の異なるメソッドに分割するテスト メソッドを展開し、新しいテスト メソッドを開始する UI 操作を選択します。 UI 操作のショートカット メニューを開いて **[新しいメソッドに分割]** をクリックするか、コード化された UI テスト エディターのツール バーにある **[新しいメソッドに分割]** をクリックします。 新しいテスト メソッドが [UI 操作] ウィンドウに表示されます。 これには、分割を指定したアクションを先頭とする UI 操作が含まれています。
 
@@ -118,13 +118,13 @@ Visual Studio Enterprise の 2012 よりも前のバージョンを使用して�
  *その他に知っておく必要があること*
  **重要な問題**
 
-- ![注意アイコン](../test/media/caution.gif "注意")**警告:** メソッドを分割する場合は、既存のメソッドを呼び出すすべてのコードを変更して、作成しようとしている新しいメソッドを呼び出すようにする必要があります (UI 操作が含まれている場合)。 メソッドを分割すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 既存のメソッドを呼び出すコードを変更し、作成しようとしている新しいメソッドも呼び出すコードにする必要があることを示す警告が表示されます。 **[はい]** をクリックします。
+- ![Caution icon](../test/media/caution.gif "注意") **Warning:** If you split a method, you must modify any code that calls the existing method to also call the new method you are about to create if you still want those UI actions included. メソッドを分割すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 既存のメソッドを呼び出すコードを変更し、作成しようとしている新しいメソッドも呼び出すコードにする必要があることを示す警告が表示されます。 **[はい]** をクリックします。
 
   **ヒント**
 
-- ![ヒント](../test/media/tip.png "ヒント")分割を元に戻すには、 **[編集]** メニューの **[元に戻す]** をクリックするか、Ctrl キーを押しながら Z キーを押します。
+- ![Tip](../test/media/tip.png "ヒント") To undo the split, choose **Undo** from the **Edit** menu, or press Ctrl+Z.
 
-- ![ヒント](../test/media/tip.png "ヒント")新しいメソッドの名前を変更できます。 [UI 操作] ウィンドウでメソッドを選択し、コード化された UI テスト エディターのツール バーにある **[名前の変更]** をクリックします。
+- ![Tip](../test/media/tip.png "ヒント") You can rename the new method. [UI 操作] ウィンドウでメソッドを選択し、コード化された UI テスト エディターのツール バーにある **[名前の変更]** をクリックします。
 
    -または-
 
@@ -142,50 +142,50 @@ Visual Studio Enterprise の 2012 よりも前のバージョンを使用して�
  *その他に知っておく必要があること*
  **重要な問題**
 
-- 警告![アイコン](../test/media/caution.gif "注意")**警告:** メソッドを移動すると、コード化された UI テストエディターを使用してそのメソッドを編集できなくなります。 カスタム コードを追加し、コード エディターを使って管理する必要があります。 メソッドを移動すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 メソッドが UIMap.uitest ファイルから UIMap.cs ファイルまたは UIMap.vb ファイルに移動すること、およびコード化された UI テスト エディターを使用してメソッドを編集できなくなることを示す警告が表示されます。 **[はい]** をクリックします。
+- ![Caution icon](../test/media/caution.gif "注意") **Warning:** Once you have moved a method, you can no longer edit it using the Coded UI Test Editor. カスタム コードを追加し、コード エディターを使って管理する必要があります。 メソッドを移動すると、Microsoft Visual Studio のダイアログ ボックスが表示されます。 メソッドが UIMap.uitest ファイルから UIMap.cs ファイルまたは UIMap.vb ファイルに移動すること、およびコード化された UI テスト エディターを使用してメソッドを編集できなくなることを示す警告が表示されます。 **[はい]** をクリックします。
 
   **ヒント**
 
-- ![ヒント](../test/media/tip.png "ヒント")移動を元に戻すには、 **[編集]** メニューの **[元に戻す]** を選択するか、Ctrl キーを押しながら Z キーを押します。 ただし、その場合は UIMap.cs ファイルまたは UIMap.vb ファイルからコードを手動で削除する必要があります。
+- ![Tip](../test/media/tip.png "ヒント") To undo the move, select **Undo** from the **Edit** menu, or press Ctrl+Z. ただし、その場合は UIMap.cs ファイルまたは UIMap.vb ファイルからコードを手動で削除する必要があります。
 
 ## <a name="CodedUITestEditor_LocateUIControl"></a> テスト対象のアプリケーションで UI コントロールを検索する
  テスト対象のアプリケーションの UI におけるコントロールの位置を表示するのが難しい場合があります。 コード化された UI テスト エディターの機能の 1 つとして、UI コントロール マップに一覧表示されているコントロールを選択し、テスト対象のアプリケーションにおけるそのコントロールの位置を表示することができます。 テスト対象のアプリケーションで **[UI コントロールの検索]** 機能を使用すると、コントロールに対して行った検索プロパティの変更を確認することもできます。
 
- ![UI コントロールの検索](../test/media/codeduilocatecontrol.png "CodedUILocateControl")
+ ![Locate UI control](../test/media/codeduilocatecontrol.png "CodedUILocateControl")
 
- ![テスト対象のアプリケーションに配置されたコントロール](../test/media/codeduilocatecontrol2.png "CodedUILocateControl2")
+ ![Control located in application under test](../test/media/codeduilocatecontrol2.png "CodedUILocateControl2")
 
  **[UI コントロール マップ]** ウィンドウで、テストに関連付けられたアプリケーション内で検索するコントロールを選択します。 次に、コントロールのショートカット メニューを開き、 **[UI コントロールの検索]** をクリックします。 テストされているアプリケーションでは、該当するコントロールは青色の枠線で示されます。
 
  *その他に知っておく必要があること*
  **重要な問題**
 
-- ![注意アイコン](../test/media/caution.gif "注意")**警告:** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。
+- ![Caution icon](../test/media/caution.gif "注意") **Warning:** Before you locate a UI control, verify that the application associated with the test is running.
 
   **ヒント**
 
-- ![ヒント](../test/media/tip.png "ヒント")または、 **[すべて検索]** オプションを使用して、コンテナー内のすべてのコントロールが正しく配置されていることを確認できます。 このオプションについては、次のセクションで説明します。
+- ![Tip](../test/media/tip.png "ヒント") Alternatively, you can use the **Locate All** option to verify that all the controls under a container can be correctly located. このオプションについては、次のセクションで説明します。
 
 ## <a name="CodedUITestEditor_LocateDecendants"></a> コントロールとその子孫を検索する
  コンテナーにあるすべてのコントロールをテスト対象のアプリケーションの UI に正しく配置できることを確認できます。 これは、コンテナーに対して行った検索プロパティの変更を確認するときに便利です。 さらに、テスト対象のアプリケーションの UI を大幅に変更した場合に、既存のコントロール検索プロパティが正しいことを確認できます。
 
- ![すべての子孫コントロールの検索](../test/media/codeduilocateall.png "CodedUILocateAll")
+ ![Locate all descendant controls](../test/media/codeduilocateall.png "CodedUILocateAll")
 
- ![配置されているすべてのコントロール](../test/media/codeduilocateall2.png "CodedUILocateAll2")
+ ![All controls located](../test/media/codeduilocateall2.png "CodedUILocateAll2")
 
  **[UI コントロール マップ]** ウィンドウで、すべての子孫を検索して表示する対象のコンテナー コントロールを選択します。 次に、コントロールのショートカット メニューを開き、 **[すべてを検索]** をクリックします。 コンテナー コントロールとそのすべての子孫のコントロールは、コード化された UI テスト エディターにおいて、緑色のチェック マークまたは赤色の X でマークされます。 これらのマークを見れば、テスト対象のアプリケーションでコントロールが正しく配置されているかどうかを確認できます。
 
  *その他に知っておく必要があること*
  **重要な問題**
 
-- 警告![アイコン](../test/media/caution.gif "注意")**警告:** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。
+- ![Caution icon](../test/media/caution.gif "注意") **Warning:** Prior to locating the UI controls, verify that the application associated with the test is running.
 
 ## <a name="CodedUITestEditor_InsertDelay"></a>UI 操作の前に遅延を挿入する
  ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまでテストを待機させる必要がある場合があります。 コード化された UI テスト エディターを使用し、UI 操作の前に遅延を挿入することで、この処理を実行できます。 遅延する秒数を指定できます。
 
- ![UI 操作の前に遅延を挿入する](../test/media/codeduidelay.png "Codeduide のレイアウト")
+ ![Insert delay before a UI action](../test/media/codeduidelay.png "CodedUIDelay")
 
- ![5秒間に追加された遅延](../test/media/codeduidealy2.png "CodedUIDealy2")
+ ![Delay added with 5 seconds](../test/media/codeduidealy2.png "CodedUIDealy2")
 
  **[UI 操作]** ウィンドウで、事前に遅延を挿入する対象の UI 操作を含むテスト メソッドを展開します。 UI 操作を選択します。 次に、UI 操作のショートカット メニューを開き、 **[前に遅延を挿入]** をクリックします。 選択した UI 操作の前に遅延が挿入されて強調表示され、 **"操作間のユーザー遅延として 1 秒待機します"** というテキストが示されます。 [プロパティ] ウィンドウで、 **[遅延]** プロパティの値を目的のミリ秒数に変更します。
 
@@ -194,24 +194,24 @@ Visual Studio Enterprise の 2012 よりも前のバージョンを使用して�
  *その他に知っておく必要があること*
  **注**
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")UI 操作の前に特定のコントロールを使用できるようにする必要がある場合は、適切な UITestControl. WaitForControlXXX () メソッドを使用して、テストメソッドにカスタムコードを追加することを検討してください。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[再生中に特定のイベントを待機するようにコード化された UI テストを設定する](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」を参照してください。
+- ![Prerequsite](../test/media/prereq.png "Prereq") If you need to ensure that a specific control is available before a UI action, you should consider adding custom code to your test method using the appropriate UITestControl.WaitForControlXXX() method. [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[再生中に特定のイベントを待機するようにコード化された UI テストを設定する](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」を参照してください。
 
   **ヒント**
 
-- ![ヒント](../test/media/tip.png "ヒント")プロパティウィンドウが表示されない場合は、Alt キーを押したまま enter キーを押すか、F4 キーを押します。
+- ![Tip](../test/media/tip.png "ヒント") If the Properties window is not displayed, press and hold Alt while you press Enter, or alternatively, press F4.
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="faq"></a>よくあるご質問
- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>フォーラム
- [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>参照
- [Ui オートメーションを使用してコードをテストするコード](../test/use-ui-automation-to-test-your-code.md)[化](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)された Ui テストを作成する[データドリブン](../test/creating-a-data-driven-coded-ui-test.md)のコード化された ui テストを作成する[既存の操作の記録からコード化された Ui テストを生成](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)する[チュートリアル: コード化された ui テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Creating a Data-Driven Coded UI Test](../test/creating-a-data-driven-coded-ui-test.md) [Generating a Coded UI Test from an Existing Action Recording](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

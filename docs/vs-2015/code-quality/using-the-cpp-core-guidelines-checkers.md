@@ -1,5 +1,5 @@
 ---
-title: C++ Core ガイドライン チェッカーの使用 |Microsoft Docs
+title: Using the C++ Core Guidelines checkers | Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
@@ -9,54 +9,54 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccc44b77c4524e7d707ce3fe407d204d729017ff
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142094"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291244"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-C++ Core ガイドラインは、ガイドライン、ルール、および C++ 専門家とデザイナーで作成された C++ のコーディングについてのベスト プラクティスの移植可能なセットです。  Visual Studio では、アドインのパッケージを分析ツールへの準拠、C++ Core Guidelines のコードを確認し、改善点を提案するコードの追加の規則を作成できるようになりました。  
+The C++ Core Guidelines are a portable set of guidelines, rules, and best practices about coding in C++ created by C++ experts and designers.  Visual Studio now supports add-in packages that create additional rules for the code analysis tools to check your code for compliance with the C++ Core Guidelines and suggest improvements.  
   
-## <a name="the-c-core-guidelines-project"></a>C++ Core ガイドラインのプロジェクト  
- Bjarne Stroustrup と他のユーザーによって作成された、C++ Core Guidelines は、安全で効果的に最新の C++ を使用するためのガイドです。 ガイドラインは、静的な型の安全性とリソースの安全性を強調します。 排除または言語のエラーを起こしやすい部分を最小化する方法を特定され、信頼性の高い方法でパフォーマンスが向上と、コードを簡素化する方法をお勧めします。 次のガイドラインは、標準の C++ Foundation によって管理されます。 詳細については、ドキュメントを参照してください。 [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)、C++ Core Guidelines のドキュメントのプロジェクト ファイルにアクセスして[GitHub](https://github.com/isocpp/CppCoreGuidelines)します。  
+## <a name="the-c-core-guidelines-project"></a>The C++ Core Guidelines Project  
+ Created by Bjarne Stroustrup and others, the C++ Core Guidelines are a guide to using modern C++ safely and effectively. The Guidelines emphasize static type safety and resource safety. They identify ways to eliminate or minimize the most error-prone parts of the language, and suggest how to  make your code simpler and more performant in a reliable way. These guidelines are maintained by the Standard C++ Foundation. To learn more, see the documentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), and access the C++ Core Guidelines documentation project files on [GitHub](https://github.com/isocpp/CppCoreGuidelines).  
   
- Microsoft では、C++ Core Check コード分析規則セットを Nuget パッケージを使用して、プロジェクトに追加できることで、C++ Core Guidelines の作業をサポートしています。 パッケージの名前は Microsoft.CppCoreCheck とで使用可能になる[ http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)します。 このパッケージには少なくとも Visual Studio 2015 Update 1 でインストールが必要になります。  
+ Microsoft supports the C++ Core Guidelines effort by making C++ Core Check code analysis rule sets that you can add to your projects by using a Nuget package. The package is named Microsoft.CppCoreCheck, and it is available at [https://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). This package requires you have at least Visual Studio 2015 with Update 1 installed.  
   
- パッケージには、依存関係をヘッダーのみのガイドライン サポート ライブラリ (GSL) として別のパッケージもインストールされます。 GitHub の「使用可能な、GSL も[ https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)します。  
+ The package also installs another package as a dependency, a header-only Guideline Support Library (GSL). The GSL is also available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
   
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>C++ Core Check のガイドラインにコード分析を有効にします。  
- C++ Core Check のコード分析ツールを有効にするには、Visual Studio 内で確認したい各の C++ プロジェクトに Microsoft.CppCoreCheck NuGet パッケージをインストールします。  
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Enable the C++ Core Check guidelines in Code Analysis  
+ To enable the C++ Core Check code analysis tools, install the Microsoft.CppCoreCheck NuGet package into each C++ project that you want to check within Visual Studio.  
   
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Microsoft.CppCoreCheck パッケージをプロジェクトに追加するには  
+#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>To add the Microsoft.CppCoreCheck package to your project  
   
-1. **ソリューション エクスプ ローラー**、右クリックすると、パッケージを追加するソリューションで、プロジェクトのコンテキスト メニューを開きます。 選択**NuGet パッケージの管理**を開く、 **NuGet パッケージ マネージャー**します。  
+1. In **Solution Explorer**, right-click to open the context menu of your Project in the Solution that you want to add the package to. Choose **Manage NuGet Packages** to open the **NuGet Package Manager**.  
   
-2. **NuGet パッケージ マネージャー**ウィンドウで、Microsoft.CppCoreCheck を検索します。  
+2. In the **NuGet Package Manager** window, search for Microsoft.CppCoreCheck.  
   
-    ![Nuget パッケージ マネージャー ウィンドウは、CppCoreCheck パッケージを示しています](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window。")  
+    ![Nuget Package Manager window shows CppCoreCheck package](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3. Microsoft.CppCoreCheck パッケージを選択し、選択、**インストール**をプロジェクトに規則を追加するボタンをクリックします。  
+3. Select the Microsoft.CppCoreCheck package and then choose the **Install** button to add the rules to your project.  
   
-   NuGet パッケージでは、プロジェクトでコード分析を有効にしたときに呼び出されるプロジェクトに追加の MSBuild .targets ファイルを追加します。 この .targets ファイルでは、Visual Studio コード分析ツールに追加の拡張機能として、C++ Core Check の規則を追加します。  
+   The NuGet package adds an additional MSBuild .targets file to your project that is invoked when you enable code analysis on your project. This .targets file adds the C++ Core Check rules as an additional extension to the Visual Studio code analysis tool.  
   
-   選択してプロジェクトでコード分析を有効にすることができます、**ビルドに対するコード分析を有効にする**でチェック ボックスをオン、**コード分析**のセクション、**プロパティ ページ**のダイアログ ボックスプロジェクト。  
+   You can enable code analysis on your project by selecting the **Enable Code Analysis on Build** checkbox in the **Code Analysis** section of the **Property Pages** dialog for your project.  
   
-   ![コード分析の全般設定のプロパティ ページ](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Property page for Code Analysis General settings](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
-   C++ Core Check の規則では、コード分析が有効になっているときに実行される既定の規則セットの一部になります。 C++ Core Check の規則では、開発中であるため、いくつかのルールは、すべてのコードで使用する準備ができていない可能性がありますが、開発中に有益あります。 これらの規則は、実験用にリリースされます。 プロジェクトのプロパティでリリースされたまたは試験用の規則を実行するかどうかを選択できます。  
+   The C++ Core Check rules become part of the default rule sets that run when code analysis is enabled. Because the C++ Core Check rules are under development, some rules may not be ready for use on all code, but may be informative during development. These rules are released as experimental. You can choose whether to run the released or experimental rules in the properties for your project.  
   
-   ![コード分析の拡張機能設定のプロパティ ページ](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Property page for Code Analysis Extensions settings](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   有効または、C++ Core Check の規則セットを無効にする、開く、**プロパティ ページ**プロジェクトのダイアログ。 **構成プロパティ**、展開**コード分析**、**拡張**します。 横にドロップダウン リストで制御**を有効にする C++ Core の Check (リリース)** または**を有効にする C++ Core の Check (試験段階)** 、選択**はい**または**いいえ**します。 選択**OK**または**適用**変更を保存します。  
+   To enable or disable the C++ Core Check rule sets, open the **Property Pages** dialog for your project. Under **Configuration Properties**, expand  **Code Analysis**, **Extensions**. In the dropdown control next to **Enable C++ Core Check (Released)** or **Enable C++ Core Check (Experimental)** ,  choose **Yes** or **No**. Choose **OK** or **Apply** to save your changes.  
   
-## <a name="check-types-bounds-and-lifetimes"></a>型、境界、および有効期間を確認してください。  
- C++ Core Check パッケージには、現在のチェッカーが含まれる、[タイプ セーフ](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type)、[安全性の境界](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)、および[有効期間の安全性](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime)プロファイル。  
+## <a name="check-types-bounds-and-lifetimes"></a>Check Types, Bounds, and Lifetimes  
+ The C++ Core Check package currently contains checkers for the [Type safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [Bounds safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), and [Lifetime safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profiles.  
   
- C++ Core Check の規則を検索する問題の種類の例を次に示します。  
+ Here’s an example of the kind of issues that the C++ Core Check rules can find:  
   
 ```cpp  
 // CoreCheckExample.cpp  
@@ -77,31 +77,31 @@ int main()
 }  
 ```  
   
- この例では、C++ Core Check の規則を検索する警告のいくつかを示します。  
+ This example demonstrates a few of the warnings that the C++ Core Check rules can find:  
   
-- C26494 は、規則 Type.5 です。常にオブジェクトを初期化します。  
+- C26494 is rule Type.5: Always initialize an object.  
   
-- C26485 は、規則 Bounds.3 です。配列とポインター減退がありません。  
+- C26485 is rule Bounds.3: No array-to-pointer decay.  
   
-- C26481 は、規則 Bounds.1 です。ポインターの算術演算を使用しないでください。 代わりに、`span` を使用してください。  
+- C26481 is rule Bounds.1: Don’t use pointer arithmetic. 代わりに、`span` を使用してください。  
   
-  C++ Core Check のコード分析ルールセットはインストールされている、このコードをコンパイルすると、最初の 2 つの警告は、出力が、3 つ目の抑制を有効になっている場合。 コード例からのビルド出力を次に示します。  
+  If the C++ Core Check code analysis rulesets are installed and enabled when you compile this code, the first two warnings are output, but the third is suppressed. Here's the build output from the example code:  
   
-  **1 >---ビルド開始。プロジェクト:CoreCheckExample、構成:Win32--のデバッグします。**  
+**1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 --**  
 **----**  
-**1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P を ->**  
+**1>  CoreCheckExample.cpp**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P を ->**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): C26494 を警告します。変数 'arr' は uninitializ**  
-**編集上は、常にオブジェクトを初期化します。(type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**ID = 620421)**  
+**ckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitializ**  
+**ed. Always initialize an object. (type.5: https://go.microsoft.com/fwlink/p/?Link**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): C26485 を警告します。式 'arr':配列からなし**  
- **ポインターへの減退します。(bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**ステージのビルド:1 正常終了、0 失敗、0 の最新の状態、0 スキップ ステージ**より、安全なコードを記述するために、C++ Core ガイドラインはあります。 ただし、場所、ルール、またはプロファイルを適用しないインスタンスがある場合を簡単に、コード内で直接非表示になります。 使用することができます、`gsl::suppress`を検出して、次のコード ブロックの規則の違反をレポートから C++ Core Check を保持する属性。 特定のルールを抑制する個々 のステートメントをマークすることができます。 記述することで、全体の bounds プロファイルを抑制することができますも`[[gsl::suppress(bounds)]]`含めず、特定のルールの数。  
+**ckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to**  
+**pointer decay. (bounds.3: https://go.microsoft.com/fwlink/p/?LinkID=620415)**  
+**========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========** The C++ Core Guidelines are there to help you write better and safer code. However, if you have an instance where a rule or a profile shouldn’t be applied, it’s easy to suppress it directly in the code. You can use the `gsl::suppress` attribute to keep C++ Core Check from detecting and reporting any violation of a rule in the following code block. You can mark individual statements to suppress specific rules. You can even suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number.  
   
-## <a name="use-the-guideline-support-library"></a>ガイドライン サポート ライブラリを使用します。  
- Microsoft.CppCoreCheck NuGet パッケージには、Microsoft の実装のガイドライン サポート ライブラリ (GSL) を含むパッケージもインストールされます。 あるスタンドアロンのフォームで使用できる、GSL も[ http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)します。 このライブラリは、コアのガイドラインに従う場合に便利です。 GSL より安全な代替手段でエラーが発生しやすい構成要素を置き換えますできる定義が含まれます。 などに置き換えることができます、`T*, length`パラメーターのペア、`span<T>`型。 ライブラリのソースがコメントの追加、またはドキュメントに投稿を見てしたい場合は、GSL、オープン ソースのプロジェクトにある[ https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)します。
+## <a name="use-the-guideline-support-library"></a>Use the Guideline Support Library  
+ The Microsoft.CppCoreCheck NuGet package also installs a package that contains Microsoft’s implementation of the Guideline Support Library (GSL). The GSL is also available in standalone form at [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). This library is helpful if you want to follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL is open source, so if you want to take a look at the library sources, comment, or contribute, the project can be found at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).

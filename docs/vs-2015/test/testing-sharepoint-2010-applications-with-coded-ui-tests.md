@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f9df50094676eea5694a29362772c9c44fa456b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660388"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298008"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "72660388"
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>コード化された UI テストについて把握しておくべきこと
- コード化された UI テストを使用する利点の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」と「[Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)」を参照してください。
+ コード化された UI テストを使用する利点の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」と「[Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)」を参照してください。
 
  **注**
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")SharePoint アプリケーションのコード化された UI テストは、SharePoint 2010 でのみサポートされています。
+- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")SharePoint アプリケーションでの Visio および PowerPoint 2010 コントロールのサポートはサポートされていません。
+- ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>SharePoint アプリのコード化された UI テストを作成する
  SharePoint 2010 アプリケーションでの[コード化された UI テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 方法は、他の種類のアプリケーションでのテストの作成方法と同じです。 記録と再生は、Web 編集インターフェイス上のすべてのコントロールでサポートされています。 カテゴリと Web パーツを選択するためのインターフェイスは、すべてが標準 Web コントロールです。
 
- ![SharePoint web パーツ](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![SharePoint web parts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > 操作を記録している場合は、コードを生成する前に操作を検証します。 マウス ホバーにはいくつかの動作が関連付けられているため、既定で有効になっています。 コード化された UI テストから冗長なホバーを削除するようにしてください。 そのためには、テスト用のコードを編集するか、 [コード化された UI テスト エディター](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)を使用します。
@@ -104,7 +104,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 1. Visual Studio 2012.1 以降がインストールされていることを確認します。
 
-2. [Microsoft Visual Studio UI Test Plugin for Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4)をインストールします。
+2. [Microsoft Visual Studio UI Test Plugin for Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudioUITestPluginforSilverlight)をインストールします。
 
 3. [Fiddler](http://www.fiddler2.com/fiddler2/)をインストールします。 これは、HTTP トラフィックをキャプチャしてログ記録するだけのツールです。
 
@@ -124,24 +124,24 @@ uiGridKeyboardInputEdit.Text=value;
 
 5. 生成されたコードが、Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll を参照することを確認する必要があります。
 
-     詳細については、「 [Visual Studio 2012 での SharePoint 2010 の UI テスト](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)」をご覧ください。
+     詳細については、「 [Visual Studio 2012 での SharePoint 2010 の UI テスト](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)」をご覧ください。
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="blogs"></a>ブログ
- [Visual Studio 2012 での SharePoint 2010 の UI テスト](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+ [Visual Studio 2012 での SharePoint 2010 の UI テスト](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 
- [コード化された UI テストでの Silverlight コントロールの検索ロジックを理解する](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)
+ [コード化された UI テストでの Silverlight コントロールの検索ロジックを理解する](https://tapas-techsnips.blogspot.com/)
 
- [Silverlight コントロールのプロパティの取得](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)
+ [Silverlight コントロールのプロパティの取得](https://tapas-techsnips.blogspot.com/)
 
- [コード化された UI テストのコンテンツ インデックス](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)
+ [コード化された UI テストのコンテンツ インデックス](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>フォーラム
- [Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=254496)
+ [Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=254496)
 
 ## <a name="see-also"></a>参照
- [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md) [Web パフォーマンスとロードテスト sharepoint 2010 および2013アプリケーション](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)sharepoint[ソリューションの作成](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)sharepoint コードの[検証およびデバッグ sharepoint コード](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)の[ビルドとデバッグ](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [SharePoint アプリケーションのパフォーマンスのプロファイリングを](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)行うソリューション
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Web performance and load testing SharePoint 2010 and 2013 applications](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Create SharePoint Solutions](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifying and Debugging SharePoint Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Building and Debugging SharePoint Solutions](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Profiling the Performance of SharePoint Applications](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

@@ -1,5 +1,5 @@
 ---
-title: 'UML シーケンス図: ガイドライン |Microsoft Docs'
+title: 'UML Sequence Diagrams: Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,43 +23,43 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 88c72ecaf44855badfd42456d9818f2ba9168a49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661727"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297140"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、*シーケンス図*を描画して相互作用を示すことができます。 相互作用とは、クラス、コンポーネント、サブシステム、またはアクターの一般的なインスタンス間でやり取りされるメッセージのシーケンスのことです。
+In Visual Studio, you can draw a *sequence diagram* to show an interaction. 相互作用とは、クラス、コンポーネント、サブシステム、またはアクターの一般的なインスタンス間でやり取りされるメッセージのシーケンスのことです。
 
- UML シーケンス図は UML モデルの一部で、UML モデリング プロジェクト内にのみ存在します。 UML シーケンス図を作成するには、 **[アーキテクチャ]** メニューの **[新しい Uml またはレイヤー図]** をクリックします。 [Uml シーケンス図要素](../modeling/uml-sequence-diagrams-reference.md)または[uml モデリング図](../modeling/edit-uml-models-and-diagrams.md)の詳細については、一般的な説明を参照してください。 ビデオデモについては、「[シーケンス図を使用した相互作用のスケッチ (2010)](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams)」を参照してください。
+ UML シーケンス図は UML モデルの一部で、UML モデリング プロジェクト内にのみ存在します。 To create a UML sequence diagram, on the **Architecture** menu, click **New UML or Layer Diagram**. Find out more about [UML sequence diagram elements](../modeling/uml-sequence-diagrams-reference.md) or [UML modeling diagrams](../modeling/edit-uml-models-and-diagrams.md) in general. For a video demonstration, see [Sketching Interactions by using Sequence Diagrams (2010)](https://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 ## <a name="in-this-topic"></a>このトピックの内容
- [UML シーケンス図の使用](#Using)
+ [Using UML Sequence Diagrams](#Using)
 
- [シーケンス図を描画するための基本的な手順](#BasicSteps)
+ [Basic Steps for Drawing Sequence Diagrams](#BasicSteps)
 
- [単純なシーケンス図の作成と使用](#Simple)
+ [Creating and Using Simple Sequence Diagrams](#Simple)
 
- [クラスと生存線](#ClassesAndLifelines)
+ [Classes and Lifelines](#ClassesAndLifelines)
 
- [再利用可能な相互作用シーケンスの作成](#Multiple)
+ [Creating Reusable Interaction Sequences](#Multiple)
 
- [生存線のグループの折りたたみ](#Collapse)
+ [Collapsing Groups of Lifelines](#Collapse)
 
- [フラグメントを使用した制御構造の記述](#Fragments)
+ [Describing Control Structures with Fragments](#Fragments)
 
-## <a name="Using"></a>UML シーケンス図の使用
+## <a name="Using"></a> Using UML Sequence Diagrams
  シーケンス図は、さまざまなレベルのプログラムの詳細を対象に、幅広い目的で使用できます。 一般には、次のような場合にシーケンス図を作成します。
 
-- システムのユーザーとそれぞれの目的の概要を示すユース ケース図がある場合は、シーケンス図を作成して、各ユース ケースの目的を達成するためにシステムの主要コンポーネントどうしがどのように相互作用するかを示せます。 詳細については、「 [UML ユースケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)」を参照してください。
+- システムのユーザーとそれぞれの目的の概要を示すユース ケース図がある場合は、シーケンス図を作成して、各ユース ケースの目的を達成するためにシステムの主要コンポーネントどうしがどのように相互作用するかを示せます。 For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
 
-- コンポーネントのインターフェイスが受信するメッセージが特定されている場合は、コンポーネントの内部パーツが相互作用して受信メッセージごとに必要な結果を出す方法を示すシーケンス図を作成できます。 詳細については、「 [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)」を参照してください。
+- コンポーネントのインターフェイスが受信するメッセージが特定されている場合は、コンポーネントの内部パーツが相互作用して受信メッセージごとに必要な結果を出す方法を示すシーケンス図を作成できます。 For more information, see [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
 
   シーケンス図を作成することには、次のような利点があります。
 
@@ -71,40 +71,40 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
  UML シーケンス図は、いくつかの方法で他の図と併用できます。
 
 #### <a name="lifelines-and-types"></a>生存線と型
- シーケンス図で描画する生存線によって、システム内のコンポーネントまたはクラスの一般的なインスタンスを表すことができます。 型から生存線を生成することも、生存線から型を生成することもできます。また、UML クラス図および UML コンポーネント図で型を表示できます。 詳細については、「[クラスと生存線](#ClassesAndLifelines)」を参照してください。
+ シーケンス図で描画する生存線によって、システム内のコンポーネントまたはクラスの一般的なインスタンスを表すことができます。 型から生存線を生成することも、生存線から型を生成することもできます。また、UML クラス図および UML コンポーネント図で型を表示できます。 For more information, see [Classes and Lifelines](#ClassesAndLifelines).
 
 #### <a name="parameter-types"></a>パラメーターの型
  UML クラス図では、生存線間で送信されたメッセージで使用されたパラメーターと戻り値の型も記述できます。
 
 #### <a name="use-case-details"></a>ユース ケースの詳細
- ユース ケースは、ユーザーの目的と、その目的を達成するための一連の手順を表します。 この一連の手順は、いくつかの方法で記述できます。 選択肢の 1 つは、ユーザーとシステムの主要コンポーネントの間の相互作用を示すシーケンス図を作成する方法です。 詳細については、「 [UML ユースケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)」を参照してください。
+ ユース ケースは、ユーザーの目的と、その目的を達成するための一連の手順を表します。 この一連の手順は、いくつかの方法で記述できます。 選択肢の 1 つは、ユーザーとシステムの主要コンポーネントの間の相互作用を示すシーケンス図を作成する方法です。 For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>シーケンス図を描画するための基本的な手順
- シーケンス図の要素の完全な一覧については、「 [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)」を参照してください。
+## <a name="BasicSteps"></a> Basic Steps for Drawing Sequence Diagrams
+ For a complete list of elements on sequence diagrams, see [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md).
 
 > [!NOTE]
-> モデリング図を作成する方法の詳細な手順については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。
+> Detailed steps for how to create any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-sequence-diagram"></a>シーケンス図を生成するには
 
-1. **[アーキテクチャ]** メニューの **[新しい UML またはレイヤー図]** をクリックします。
+1. On the **Architecture** menu, click **New UML or Layer Diagram**.
 
-2. **[テンプレート]** の **[UML シーケンス図]** をクリックします。
+2. Under **Templates**, click **UML Sequence Diagram**.
 
 3. 図に名前を付けます。
 
-4. **[モデリングプロジェクトへの追加]** で、ソリューション内の既存のモデリングプロジェクトを選択するか、**新しいモデリングプロジェクトを作成**して、[ **OK]** をクリックします。
+4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a new modeling project**, and then click **OK**.
 
-    新しいシーケンス図が、**シーケンス図**ツールボックスと共に表示されます。 ツールボックスには、必要な要素およびコネクタが含まれています。
+    A new sequence diagram appears with the **Sequence Diagram** toolbox. ツールボックスには、必要な要素およびコネクタが含まれています。
 
-   ![シーケンス図のパーツ](../modeling/media/uml-sequence.png "UML_Sequence")
+   ![Parts of a sequence diagram](../modeling/media/uml-sequence.png "UML_Sequence")
 
 #### <a name="to-draw-a-sequence-diagram"></a>シーケンス図を描画するには
 
-1. **[ツールボックス]** から **[生存線]** (1) を図にドラッグして、クラス、コンポーネント、アクター、またはデバイスのインスタンスを表します。
+1. Drag **Lifelines** (1) from the **Toolbox** onto the diagram to represent instances of classes, components, actors, or devices.
 
     > [!NOTE]
-    > また、既存のクラス、インターフェイス、アクター、またはコンポーネントを**UML モデルエクスプローラー**から図にドラッグして、生存線を作成することもできます。 この場合は、選択した型のインスタンスを表す生存線が生成されます。
+    > You can also create a lifeline by dragging an existing class, interface, actor or component from **UML Model Explorer** onto the diagram. この場合は、選択した型のインスタンスを表す生存線が生成されます。
 
 2. 特定の目的を達成するために、生存線が相互にどのように作用するかを示すメッセージを生成します。
 
@@ -112,10 +112,10 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
      受信生存線に実行発生 (5) が表示されます。 実行発生は、インスタンスによるメソッドの実行期間を表します。 実行発生から開始される他のメッセージを生成できます。
 
-3. 不明なイベント ソース (9) から受信するメッセージ、または不明な宛先 (10) にブロードキャストされるメッセージを表示するには、図上の空白スペースとの間でやり取りされる非同期メッセージを描画します。 これらのメッセージは、"検出され*たメッセージ*(9)" と "*失わ*れたメッセージ (10)" と呼ばれます。
+3. 不明なイベント ソース (9) から受信するメッセージ、または不明な宛先 (10) にブロードキャストされるメッセージを表示するには、図上の空白スペースとの間でやり取りされる非同期メッセージを描画します。 These messages are called *found messages* (9) and *lost messages* (10).
 
     > [!NOTE]
-    > メッセージが失われた、または検出された生存線のグループを移動するには、次の手順に従って、移動する前に生存線を選択します。生存線の周りに四角形を描画するか、 **ctrl**キーを押しながら各生存線をクリックします。 [**すべて選択]** または**CTRL** +**A**を使用してすべての生存線を選択してから移動すると、これらの生存線にアタッチされた紛失または検出されたメッセージは移動しません。 このような場合には、メッセージを個別に移動します。
+    > To move a group of lifelines that have lost or found messages, follow these steps to select the lifelines before you move them: Draw a rectangle around those lifelines, or press and hold the **CTRL** key while you click each lifeline. If you use **Select All** or **CTRL**+**A** to select all lifelines, and then move them, any lost or found messages attached to these lifelines will not move. このような場合には、メッセージを個別に移動します。
 
 4. 同じコンポーネントまたはシステムに向かう主要なメッセージごとにシーケンス図を描画します。
 
@@ -125,13 +125,13 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
      \- または
 
-- メッセージをクリックし、**上方向**キーと**下方向**キーを使用してメッセージの位置を調整します。 Shift キーを押しながら**上方向**キーと shift キーを押しながら**下方向**キーを使用して、メッセージの順序を変更します。
+- Click the message and use the **UP ARROW** and **DOWN ARROW** keys to adjust message positions. Use **SHIFT+UP ARROW** and **SHIFT+DOWN ARROW** to change the order of the messages.
 
 #### <a name="to-move-or-copy-message-sequences-on-the-sequence-diagram"></a>シーケンス図上のメッセージ シーケンスを移動またはコピーするには
 
-1. メッセージ (3、4) を右クリックし、 **[コピー]** をクリックします。
+1. Right-click a message (3, 4) and then click **Copy**.
 
-2. 新しいメッセージの送信元となる実行発生 (5) または生存線 (1) を右クリックし、 **[貼り付け]** をクリックします。 必要に応じて、新しい送信側を別の図上に置いてもかまいません。
+2. Right-click the execution occurrence (5) or a lifeline (1) from which you want the new message to be sent, and then click **Paste**. 必要に応じて、新しい送信側を別の図上に置いてもかまいません。
 
      メッセージとそのすべての付属メッセージのコピーが、実行発生の終端か、生存線の終端に追加されます。
 
@@ -142,34 +142,34 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 - 表示する署名テキストの型にターゲットの生存線をバインドまたはマップする必要があります。 このタスクを実行するには、次の手順のいずれかを実行します。
 
-  - 生存線を右クリックし、 **[クラスの作成]** を選択します。
+  - Right-click the lifeline, and then choose **Create Class**.
 
      -または-
 
-  - 生存線を選択し、 **F4**キーを押します。次に、 **[プロパティ]** ウィンドウで、 **type**プロパティを既存の型に設定するか、新しい型の名前を指定します。 メッセージラベルを右クリックし、[操作の**作成**] を選択します。
+  - Select the lifeline, press **F4**, and then in the **Properties** window, set the **Type** property to an existing type or specify the name for a new type. Right-click the message label, and then choose **Create Operation**.
 
-    メッセージ ラベルの下に署名テキストが表示されます。 これで、署名テキストを編集できます。 詳細については、「[クラスと生存線](#ClassesAndLifelines)」を参照してください。
+    メッセージ ラベルの下に署名テキストが表示されます。 これで、署名テキストを編集できます。 For more information, see [Classes and Lifelines](#ClassesAndLifelines).
 
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>シーケンス図のレイアウトを調整するには
 
-- 図の空白部分を右クリックし、[レイアウトの再**配置**] をクリックします。
+- Right-click a blank part of the diagram, and then click **Rearrange Layout**.
 
-- 操作を元に戻すには、 **[編集]** をクリックし、 **[元に戻す]** をクリックします。
+- To undo the operation, click **Edit**, and then click **Undo**.
 
 #### <a name="to-change-the-package-that-owns-the-interaction"></a>相互作用を所有するパッケージを変更するには
 
-1. **UML モデルエクスプローラー**で、シーケンス図に表示される相互作用を見つけます。
+1. In **UML Model Explorer**, find the Interaction that the sequence diagram displays.
 
     > [!NOTE]
-    > シーケンス図に最初の生存線を追加するまで、相互作用は**UML モデルエクスプローラー**に表示されません。
+    > The interaction will not appear in **UML Model Explorer** until you add the first lifeline to the sequence diagram.
 
 2. 相互作用をパッケージにドラッグします。
 
      \- または
 
-     相互作用を右クリックし、 **[切り取り]** をクリックします。 パッケージを右クリックし、 **[貼り付け]** をクリックします。
+     Right-click the Interaction, and then click **Cut**. Right-click the Package, and then click **Paste**.
 
-## <a name="Simple"></a>単純なシーケンス図の作成と使用
+## <a name="Simple"></a> Creating and Using Simple Sequence Diagrams
  最も単純で幅広く使用されるシーケンス図は、生存線とメッセージだけが含まれるシーケンス図です。 この種類の図では、設計に含まれるオブジェクト間、またはシステムとそのユーザーの間の一般的な相互作用のシーケンスを明確に示すことができます。 通常は、このようなシーケンス図でも、設計について話し合ったり伝達したりするためには十分役に立ちます。
 
  次に、単純なシーケンス図の作成時に考慮すべき点をいくつか説明します。
@@ -177,20 +177,20 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 ### <a name="types-of-message"></a>メッセージの種類
  メッセージの生成に使用できるツールは 3 つあります。
 
-- **同期**ツールを使用して、送信側が応答を返すまで待機する相互作用を記述します (3)。
+- Use the **Synchronous** tool to describe an interaction in which the sender waits for the receiver to return a response (3).
 
-     実行が終了すると、 **< \<return > >** 矢印が表示されます。 これは、制御が送信側に戻ることを示しています。
+     A **<\<return>>** arrow will be shown at the end of the execution occurrence. これは、制御が送信側に戻ることを示しています。
 
-- **非同期**ツールを使用して、送信側を待機せずに直ちに処理を続行できる相互作用を記述します (4)。
+- Use the **Asynchronous** tool to describe an interaction in which the sender can continue immediately without waiting for the receiver (4).
 
-- **作成**ツールを使用して、送信者が受信側を作成する相互作用 (8) を記述します。
+- Use the **Create** tool to describe an interaction in which the sender creates the receiver (8).
 
      受信側が最初に受信するメッセージは生成メッセージである必要があります。
 
 ### <a name="annotating-the-interactions"></a>相互作用に注釈を付ける
- シーケンスの詳細を説明するには、図の任意の場所に**コメント**を配置します。
+ To describe more detail about the sequence, you can place a **Comment** anywhere on the diagram.
 
- **コメントリンク**を使用すると、コメントを生存線、実行、相互作用使用、およびフラグメントにリンクできます。
+ Using **Comment Links**, you can link a comment to lifelines, executions, interaction uses, and fragments.
 
 > [!CAUTION]
 > コメントをシーケンスの特定のポイントにアタッチするには、そのコメントを実行発生、相互作用使用、またはフラグメントにリンクします。 生存線にはリンクしないでください。生存線にリンクした場合、シーケンスの適切なポイントへのアタッチが維持されないためです。
@@ -205,7 +205,7 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 - 例外、または表示されている通常のシーケンスの代わりに実行できる代替のシーケンスを示す。 "顧客は、このシーケンスの残りのステップをスキップできます" などのコメントが考えられます。
 
-  - この種類のメモに代わる、より正式な注釈として、フラグメントを使用することもできます。 「[フラグメントを含む制御構造の記述」を](#Fragments)参照してください。
+  - この種類のメモに代わる、より正式な注釈として、フラグメントを使用することもできます。 See [Describing Control Structures with Fragments](#Fragments)
 
 ## <a name="deciding-the-scope-of-the-diagram"></a>図の範囲の決定
  図に何を表示するかを明確にしておくことは重要な作業です。
@@ -245,7 +245,7 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 - 別のシーケンス図を作成して、このようなシナリオを記述する。
 
-- [フラグメントを含む制御構造の記述](#Fragments)を使用して、ループや代替手段などを表示します。
+- Use [Describing Control Structures with Fragments](#Fragments) to show loops, alternatives, and so on.
 
 ## <a name="assessing-the-design"></a>設計の評価
  図を使用すると、オブジェクト間またはコンポーネント間のタスクの分散を評価できます。 次のパターンが認められる場合は、リファクタリングを検討してください。
@@ -256,10 +256,10 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 - 一部の生存線が複数の種類のタスクを処理しているように思われる。 各生存線の役割を記述した簡潔な一文は、各受信メッセージに対する生存線の応答処理の要約となるもので、見つかりやすい状態にしておく必要があります。
 
-## <a name="ClassesAndLifelines"></a>クラスと生存線
+## <a name="ClassesAndLifelines"></a> Classes and Lifelines
  シーケンス図の生存線には、クラスまたはコンポーネント インターフェイスのインスタンスが示されます。 生存線には、2 つの方法で名前を付けることができます。
 
-|**目的**|**使用する形式**|
+|**For this purpose**|**Use this format**|
 |--------------------------|-------------------------|
 |型の匿名インスタンス。<br /><br /> 各型の生存線が 1 つしかない場合は、こちらを使用します。|*typeName*|
 |型の名前付きインスタンス。<br /><br /> 同じ型のインスタンスが複数存在するシーケンスを示す場合は、こちらを使用します。|*objectName*:*typeName*|
@@ -276,9 +276,9 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
    \- または
 
-  1. クラス、コンポーネント、またはインターフェイスをそれぞれの図で右クリックし、 **[生存線の作成]** をクリックします。
+  1. Right-click the class, component, or interface on its respective diagram, and then click **Create Lifeline**.
 
-  2. **[生存線の作成]** ダイアログボックスでシーケンス図を選択し、 **[OK]** をクリックします。
+  2. In the **Create Lifeline** dialog box, select a sequence diagram, and then click **OK**.
 
      ドラッグしたものと同じ型の新しい名前付きインスタンスの生存線が表示されます。
 
@@ -287,16 +287,16 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 ##### <a name="to-change-the-type-of-a-lifeline"></a>生存線の型を変更するには
 
-1. 生存線を右クリックし、 **[プロパティ]** をクリックします。
+1. Right-click a lifeline, and then click **Properties**.
 
-2. **[プロパティ]** ウィンドウで、 **Type**プロパティを設定します。 ドロップダウン メニューから型を選択することも、新しい名前を入力することもできます。
+2. In the **Properties** window, set the **Type** property. ドロップダウン メニューから型を選択することも、新しい名前を入力することもできます。
 
 ### <a name="creating-classes-from-lifelines"></a>生存線からのクラスの作成
  1 つ以上のシーケンス図を生成済みの場合は、生存線からクラスまたはインターフェイスを生成して、生存線の概要を示すことができます。
 
 ##### <a name="to-create-a-class-or-interface-from-a-lifeline"></a>生存線からクラスまたはインターフェイスを生成するには
 
-1. 生存線を右クリックし、 **[クラスの作成]** または **[インターフェイスの作成]** をクリックします。
+1. Right-click the lifeline, and then click **Create Class** or **Create Interface**.
 
      UML モデル エクスプローラーに新しいクラスまたはインターフェイスが表示されます。
 
@@ -304,11 +304,11 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
     1. 含めるメッセージをすべて選択します。
 
-    2. いずれかのメッセージを右クリックし、 **[メソッドの作成]** をクリックします。
+    2. Right-click one of the messages, and then click **Create Method**.
 
          新しいクラスまたはインターフェイスに、選択したメッセージごとに操作が設定されます。
 
-         操作名は、各メッセージの矢印の下と、メッセージの**operation**プロパティに表示されます。
+         The operation name appears below each message arrow, and in the **Operation** property of the message.
 
          メッセージに "(パラメーター : 型)" 形式のパラメーターが含まれている場合、新しい操作のパラメーター リストにそのパラメーターが表示されます。
 
@@ -319,20 +319,20 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
     1. クラス図またはコンポーネント図を開くか、生成します。
 
-    2. 新しいクラスまたはインターフェイスを**UML モデルエクスプローラー**からクラスダイアグラムにドラッグします。
+    2. Drag the new class or interface from **UML Model Explorer** to a class diagram.
 
          クラス図に、クラスまたはインターフェイスが表示されます。
 
          \- または
 
-    3. 新しいインターフェイスを**UML モデルエクスプローラー**からコンポーネント図のコンポーネントまたはポートにドラッグします。
+    3. Drag the new interface from **UML Model Explorer** onto a component or port in a component diagram.
 
          インターフェイスがコンポーネント上にロリポップとして表示されます。
 
 ### <a name="creating-classes-for-parameters"></a>パラメーターのクラスの作成
  シーケンス図のメッセージには、パラメーターを含めることができます。 UML クラス図を使用すると、パラメーターの型を記述できます。
 
-## <a name="Multiple"></a>再利用可能な相互作用シーケンスの作成
+## <a name="Multiple"></a> Creating Reusable Interaction Sequences
  個々の図を使用して、切り離す必要のある詳細が含まれているシーケンス、または複数の図で共通するシーケンスを記述できます。
 
  図には、別の図に含まれる詳細を指す相互作用使用の四角形 (12) を生成できます。
@@ -341,7 +341,7 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 #### <a name="to-create-a-reusable-interaction-sequence-from-existing-lifelines"></a>再利用可能な相互作用シーケンスを既存の生存線から生成するには
 
-1. **[ツールボックス]** で、 **[相互作用使用]** をクリックします。
+1. In the **Toolbox**, click **Interaction Use**.
 
 2. シーケンス図で、マウス ボタンを押したまま、再利用可能なシーケンスに含めるすべての生存線の上をドラッグします。 相互作用使用を挿入する垂直位置から開始してください。
 
@@ -355,11 +355,11 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 4. 相互作用使用を別のシーケンス図にリンクします。 相互作用使用を右クリックし、次のどちらかの操作を行います。
 
-     新しいシーケンス図を作成するには、 **[新しいシーケンスの作成]** をクリックします。
+     Click **Create New Sequence** to create a new sequence diagram
 
      \- または
 
-     **[シーケンスへのリンク]** をクリックして、既存のダイアグラムにリンクします。
+     Click **Link to Sequence** to link to an existing diagram.
 
      Visual Studio によって、相互作用使用と新しい相互作用シーケンスの間にリンクが作成されます。
 
@@ -370,7 +370,7 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>再利用可能なシーケンスを既存のメッセージから生成するには
 
-- 移動するメッセージを右クリックし、 **[ダイアグラムに移動]** をクリックします。
+- Right-click the message that you want to move, and then click **Move to Diagram**.
 
   Visual Studio:
 
@@ -386,19 +386,19 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
      \- または
 
-     相互作用使用を右クリックし、[**シーケンスにジャンプ] を**クリックします。
+     Right-click the interaction use and then click **Go to Sequence**.
 
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>相互作用使用を使用したプレース ホルダーの作成
- 別の図へのリンクを設定せずに相互作用使用を生成することもできます。 これは、詳細がまだ機能していないシーケンスの一部のプレースホルダーとして使用できます。相互作用使用の名前を使用して、目的の結果を示します。
+ 別の図へのリンクを設定せずに相互作用使用を生成することもできます。 You can use this as a placeholder for a part of the sequence whose details are yet to be worked out. Use the name of the interaction use to indicate the outcome that you want.
 
-## <a name="Collapse"></a>生存線のグループの折りたたみ
+## <a name="Collapse"></a> Collapsing Groups of Lifelines
  生存線のセットをまとめて折りたたみ、そのグループが 1 つの生存線に見えるようにすることができます。 これにより、オブジェクトのグループを 1 つのコンポーネントとして視覚化できます。 折りたたまれたグループに含まれる生存線間のメッセージと相互作用使用は非表示になります。 他の生存線を含むメッセージと相互作用シーケンスは表示されます。
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>生存線のグループをまとめて折りたたむには
 
 1. 複数の生存線を選択します。
 
-2. そのうちの1つを右クリックし、 **[折りたたみ]** をクリックします。
+2. Right-click one of them, and then click **Collapse**.
 
      独立した複数の生存線が 1 つの生存線に置き換えられます。
 
@@ -411,15 +411,15 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 #### <a name="to-expand-a-collapsed-group"></a>折りたたまれたグループを展開するには
 
-- 折りたたまれた生存線を右クリックし、 **[展開]** をクリックします。
+- Right-click the collapsed lifeline, and then click **Expand**.
 
     > [!NOTE]
     > グループの名前は失われ、そのグループからコメントまたは作業項目に向けて設定されているリンクも同時に失われます。
 
-## <a name="Fragments"></a>フラグメントを使用した制御構造の記述
+## <a name="Fragments"></a> Describing Control Structures with Fragments
  結合フラグメント (13) を使用すると、ループ、分岐、および同時処理をシーケンス図で定義できます。 代わりに、アクティビティ図を使用することもできます。 アクティビティ図は、アクター間のメッセージ表示にはそれほど効果的ではありませんが、ループ、分岐、およびコンカレンシーについては、より適切に表示できる場合があります。
 
- フラグメントの種類の完全な一覧については、「 [UML シーケンス図のフラグメントを使用した制御フローの記述](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)」を参照してください。
+ For a full list of the types of fragment, see [Describe control flow with fragments on UML sequence diagrams](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).
 
 #### <a name="to-create-a-combined-fragment"></a>結合フラグメントを作成するには
 
@@ -428,19 +428,19 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
     > [!NOTE]
     > メッセージが指す実行発生ではなく、メッセージの矢印を選択してください。
 
-2. いずれかのメッセージを右クリックし、[**ブロック**の挿入] をポイントして、必要なフラグメントの種類をクリックします。
+2. Right-click one of the messages, point to **Surround With**, and then click the type of fragment that you require.
 
      新しいフラグメントが表示されます。 このフラグメントには、選択したメッセージが含まれています。
 
      複数のフラグメントを指定できる種類の結合フラグメントの場合、空のフラグメントも表示されます。
 
-3. フラグメントのガードを設定するには、フラグメントの境界線を右クリックし、 **[プロパティ]** をクリックします。 **ガード**プロパティを設定します。
+3. To set the guard of a fragment, right-click the fragment border, and then click **Properties**. Set the **Guard** property.
 
      ガードは、分岐またはループの条件を定義するために使用します。
 
-4. 複数のフラグメントを許可する種類に新しいフラグメントを追加するには、フラグメントの境界を右クリックし、 **[追加]** をポイントします。 の後の **[相互作用オペランド]** または **[相互作用]** オペランド をクリックします。
+4. To add a new fragment to a kind that allows multiple fragments, right-click the boundary of a fragment, and point to **Add**. Click either **Interaction Operand Before** or **Interaction Operand After**.
 
 5. 新しいメッセージをフラグメントに追加するには、メッセージ ツールを使用するか、コピーして貼り付けます。
 
 ## <a name="see-also"></a>参照
- [Uml シーケンス図: リファレンス:](../modeling/uml-sequence-diagrams-reference.md) [uml モデルおよび図の編集](../modeling/edit-uml-models-and-diagrams.md) [uml ユースケース図:](../modeling/uml-use-case-diagrams-reference.md)リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス uml[コンポーネント図:](../modeling/uml-component-diagrams-reference.md)リファレンス[uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [ビデオ: シーケンス図を使用した相互作用のスケッチ](http://go.microsoft.com/fwlink/?LinkId=201113)
+ [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Sketching Interactions by using Sequence Diagrams](https://go.microsoft.com/fwlink/?LinkId=201113)

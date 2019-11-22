@@ -1,5 +1,5 @@
 ---
-title: '方法: 式エディターを使用する |Microsoft Docs'
+title: 'How to: Use the Expression Editor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,19 +11,19 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6157646526a2d634ff5034d98eb497c00585c067
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d40cefc3dd47f7f4ad7e8255d8bdc06bc5f1651
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659104"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300938"
 ---
 # <a name="how-to-use-the-expression-editor"></a>式エディターを使用する方法
-式エディターは、式を入力および評価する手段として、多くのワークフロー アクティビティで使用される[!INCLUDE[wfd1](../includes/wfd1-md.md)] コントロールです。 式エディターには、IntelliSense、色付け、パラメーター情報、エラーを示す波線などの、本格的な IDE 編集機能が用意されています。 入力した式はコンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 エディターは、 **[式エディター]** ダイアログボックスとして開くこともできます。
+式エディターは、式を入力および評価する手段として、多くのワークフロー アクティビティで使用される[!INCLUDE[wfd1](../includes/wfd1-md.md)] コントロールです。 式エディターには、IntelliSense、色付け、パラメーター情報、エラーを示す波線などの、本格的な IDE 編集機能が用意されています。 入力した式はコンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 The editor can also be opened as an **Expression Editor** dialog box.
 
- 式は、引数またはプロパティにバインドされたリテラル値または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コードです。 式には、新しい値を生成するための操作と組み合わされた値要素 (変数、定数、リテラル、プロパティなど) が含まれます。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、("= =") の代わりに単一の equals ("=") 記号を使用して実行されます。ブール演算子は、記号 "& &" および&#124;&#124;"" ではなく "and" と "or" という語になり、**何も**使用されません。**null**ではありません。 @No__t_0 の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](http://go.microsoft.com/fwlink/?LinkId=186818)」を参照してください。
+ 式は、引数またはプロパティにバインドされたリテラル値または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コードです。 式には、新しい値を生成するための操作と組み合わされた値要素 (変数、定数、リテラル、プロパティなど) が含まれます。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 This means capitalization does not matter, comparison is performed using a single equals (“=”) sign instead of (“==”), the Boolean operators are the words "and" and "or" instead of the symbols "&&" and "&#124;&#124;", and **Nothing** is used instead of **null**. For more information on expressions and operators in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] and for some samples, see [Operators and Expressions in Visual Basic](https://go.microsoft.com/fwlink/?LinkId=186818).
 
- **式エディター**は次のように動作します。
+ The **Expression Editor** behaves as follows:
 
 - フォーカスがない場合、式エディターは通常の TextBlock コントロールと同様の外観になります。
 
@@ -45,13 +45,13 @@ ms.locfileid: "72659104"
 
 3. <xref:System.Activities.Statements.Assign> アクティビティのアクティビティ デザイナーで、左側の式エディターをクリックします。
 
-     灰色のウォーターマーク文字列 **\<To >** と **\<Enter VB 式 >** は、<xref:System.Activities.Statements.Assign> アクティビティの式エディターの既定のテキスト文字列です。
+     The grey watermark strings **\<To>** and **\<Enter a VB Expression>** are the default text strings for expression editors in the <xref:System.Activities.Statements.Assign> activity.
 
 4. 式を入力します。 文字列を入力する場合は、文字列を引用符で囲みます。 式の引数を変数にバインドする場合は、引用符を省略してください。
 
      式を入力し終えたら、式エディターの外部を選択して、デザイナーの他の部分にフォーカスを移動させます。 この操作により、既に説明したように、コンパイラによって式が検証されます。
 
-     式を入力または編集する方法として、プロパティ グリッドのプロパティ名の横にある省略記号をクリックするという方法もあります。 これにより、 **[式エディター]** ダイアログボックスが開きます。
+     式を入力または編集する方法として、プロパティ グリッドのプロパティ名の横にある省略記号をクリックするという方法もあります。 This will open the **Expression Editor** as dialog box.
 
 ## <a name="see-also"></a>参照
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

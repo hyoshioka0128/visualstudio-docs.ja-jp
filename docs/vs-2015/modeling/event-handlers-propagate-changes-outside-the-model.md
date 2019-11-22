@@ -1,5 +1,5 @@
 ---
-title: イベントハンドラーによって変更がモデル外に反映される |Microsoft Docs
+title: Event Handlers Propagate Changes Outside the Model | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,39 +12,39 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295517"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>イベント ハンドラーによって変更内容がモデル外に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-視覚化およびモデリング SDK では、ストアのイベントハンドラーを定義して、ストア外のリソースに変更を反映することができます。たとえば、ストア以外の変数、ファイル、他のストアのモデル、その他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能などです。 ストアイベントハンドラーは、トリガーイベントが発生したトランザクションの終了後に実行されます。 これらは、元に戻す操作またはやり直し操作でも実行されます。 そのため、ストアのルールとは異なり、ストアのイベントは、ストアの外部にある値を更新する場合に最も役立ちます。 .NET イベントとは異なり、ストアイベントハンドラーはクラスをリッスンするように登録されます。インスタンスごとに個別のハンドラーを登録する必要はありません。 変更を処理するさまざまな方法を選択する方法の詳細については、「[変更に対する応答と反映](../modeling/responding-to-and-propagating-changes.md)」を参照してください。
+In Visualization and Modeling SDK, you can define store event handlers to propagate changes to resources outside the store, such as non-store variables, files, models in other stores, or other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. Store event handlers are executed after the end of the transaction in which the triggering event occurred. They are also executed in an Undo or Redo operation. Therefore, unlike store rules, store events are most useful for updating values that are outside the store. Unlike .NET events, store event handlers are registered to listen to a class: you do not have to register a separate handler for each instance. For more information about how to choose between different ways to handle changes, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).
 
- グラフィック画面やその他のユーザーインターフェイスコントロールは、ストアイベントによって処理できる外部リソースの例です。
+ The graphical surface and other user interface controls are examples of external resources that can be handled by store events.
 
-### <a name="to-define-a-store-event"></a>ストアイベントを定義するには
+### <a name="to-define-a-store-event"></a>To define a store event
 
-1. 監視するイベントの種類を選択します。 完全な一覧については、<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> のプロパティを参照してください。 各プロパティは、イベントの種類に対応します。 最も頻繁に使用されるイベントの種類は次のとおりです。
+1. Choose the type of event that you want to monitor. For a full list, look at the properties of <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Each property corresponds to a type of event. The most frequently used event types are:
 
-   - `ElementAdded` –モデル要素、リレーションシップリンク、シェイプ、またはコネクタが作成されたときにトリガーされます。
+   - `ElementAdded` – triggered when a model element, relationship link, shape or connector is created.
 
-   - ElementPropertyChanged – `Normal` ドメインプロパティの値が変更されたときにトリガーされます。 イベントは、新しい値と古い値が等しくない場合にのみトリガーされます。 イベントは、計算されたストレージプロパティとカスタムストレージプロパティには適用できません。
+   - ElementPropertyChanged – triggered when the value of a `Normal` domain property is changed. The event is triggered only if the new and old values are not equal. The event cannot be applied to calculated and custom storage properties.
 
-        リレーションシップリンクに対応するロールプロパティには適用できません。 代わりに、`ElementAdded` を使用してドメインの関係を監視します。
+        It cannot be applied to the role properties that correspond to relationship links. Instead, use `ElementAdded` to monitor the domain relationship.
 
-   - `ElementDeleted` –モデル要素、リレーションシップ、図形、またはコネクタが削除された後にトリガーされます。 要素のプロパティ値には引き続きアクセスできますが、他の要素との関係はありません。
+   - `ElementDeleted` – triggered after a model element, relationship, shape or connector has been deleted. You can still access the property values of the element, but it will have no relationships to other elements.
 
-2. **Dslpackage**プロジェクト内の別のコードファイルに_dsl_**docdata**の部分クラス定義を追加します。
+2. Add a partial class definition for _YourDsl_**DocData** in a separate code file in the **DslPackage** project.
 
-3. 次の例に示すように、イベントのコードをメソッドとして記述します。 @No__t_1 にアクセスする場合を除き、`static` できます。
+3. Write the code of the event as a method, as in the following example. It can be `static`, unless you want to access `DocData`.
 
-4. ハンドラーを登録するには、`OnDocumentLoaded()` をオーバーライドします。 複数のハンドラーがある場合は、それらすべてを同じ場所に登録できます。
+4. Override `OnDocumentLoaded()` to register the handler. If you have more than one handler, you can register them all in the same place.
 
-   登録コードの場所は重要ではありません。 `DocView.LoadView()` は別の場所です。
+   The location of the registration code is not critical. `DocView.LoadView()` is an alternative location.
 
 ```
 using System;
@@ -93,12 +93,12 @@ namespace Company.MusicLib
 
 ```
 
-## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>イベントを使用して、ストアで取り消し可能な調整を行う
- ストアイベントは、トランザクションがコミットされた後にイベントハンドラーが実行されるため、通常、ストア内の変更を反映するためには使用されません。 代わりに、ストアルールを使用します。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Using Events to Make Undoable Adjustments in the Store
+ Store events are not normally used for propagating changes inside the store, because the event handler executes after the transaction is committed. Instead, you would use a store rule. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
- ただし、ユーザーが元のイベントとは別に追加の更新を元に戻すことができるようにする場合は、イベントハンドラーを使用してストアに追加の更新を行うことができます。 たとえば、小文字がアルバムタイトルの通常の規則であるとします。 ユーザーが大文字で入力した後、タイトルを小文字に修正するストアイベントハンドラーを作成できます。 ただし、ユーザーは、[元に戻す] コマンドを使用して修正をキャンセルし、大文字を復元できます。 2番目の元に戻すと、ユーザーの変更が削除されます。
+ However, you could use an event handler to make additional updates to the store, if you want the user to be able to undo the additional updates separately from the original event. For example, suppose that lower case characters are the usual convention for album titles. You could write a store event handler that corrects the title to lower case after the user has typed it in upper case. But the user could use the Undo command to cancel your correction, restoring the upper case characters. A second Undo would remove the user’s change.
 
- これに対し、同じことを行うためにストアの規則を記述した場合、ユーザーの変更と修正は同じトランザクション内で行われるため、ユーザーは元の変更を失うことなく調整を元に戻すことができません。
+ By contrast, if you wrote a store rule to do the same thing, the user’s change and your correction would be in the same transaction, so that the user could not undo the adjustment without losing the original change.
 
 ```
 
@@ -164,30 +164,30 @@ private static void AlbumTitleAdjuster(object sender,
 
 ```
 
- ストアを更新するイベントを記述する場合は、次のようにします。
+ If you write an event that updates the store:
 
-- Undo でモデル要素を変更しないようにするには、`store.InUndoRedoOrRollback` を使用します。 トランザクションマネージャーは、ストア内のすべてのものを元の状態に戻します。
+- Use `store.InUndoRedoOrRollback` to avoid making changes to model elements in Undo. The transaction manager will set everything in the store back to its original state.
 
-- モデルがファイルから読み込まれている間に変更を行わないようにするには、`store.InSerializationTransaction` を使用します。
+- Use `store.InSerializationTransaction` to avoid making changes while the model is being loaded from file.
 
-- 変更を加えると、さらにイベントがトリガーされます。 無限ループを避けるようにしてください。
+- Your changes will cause further events to be triggered. Make sure that you avoid an infinite loop.
 
-## <a name="store-event-types"></a>イベントの種類を格納する
- 各イベントの種類は、Store. EventManagerDirectory のコレクションに対応しています。 イベントハンドラーはいつでも追加または削除できますが、通常はドキュメントの読み込み時に追加します。
+## <a name="store-event-types"></a>Store Event types
+ Each event type corresponds to a collection in Store.EventManagerDirectory. You can add or remove event handlers at any time, but it is usual to add them when the document is loaded.
 
-|`EventManagerDirectory` プロパティ名|実行するタイミング|
+|`EventManagerDirectory` Property name|Executed when|
 |-------------------------------------------|-------------------|
-|追加される element|ドメインクラス、ドメインリレーションシップ、図形、コネクタ、または図のインスタンスが作成されます。|
-|ElementDeleted|モデル要素がストアの要素ディレクトリから削除されており、リレーションシップのソースまたはターゲットではなくなっています。 要素は実際にはメモリから削除されませんが、将来の元に戻す場合に保持されます。|
-|Elementを開始しました|外側のトランザクションの終了時に呼び出されます。|
-|Elementの終了|他のすべてのイベントが処理されたときに呼び出されます。|
-|ElementMoved|モデル要素が1つのストアパーティションから別のストアパーティションに移動されました。<br /><br /> これは、図の図形の位置とは関係ありません。|
-|ElementPropertyChanged|ドメインプロパティの値が変更されました。 これは、古い値と新しい値が等しくない場合にのみ実行されます。|
-|RolePlayerChanged|リレーションシップの2つのロール (両端) のいずれかが、新しい要素を参照しています。|
-|RolePlayerOrderChanged|複数要素の接続性が1より大きいロールでは、リンクの順序が変更されています。|
-|トランザクションの開始||
-|トランザクションコミット済み||
-|トランザクションロールバック||
+|ElementAdded|An instance of a domain class, domain relationship, shape, connector or diagram is created.|
+|ElementDeleted|A model element has been removed from the store’s element directory and is no longer the source or target of any relationship. The element is not actually deleted from memory, but is retained in case of a future Undo.|
+|ElementEventsBegun|Invoked at the end of an outer transaction.|
+|ElementEventsEnded|Invoked when all other events have been processed.|
+|ElementMoved|A model element has been moved from one store partition to another.<br /><br /> This is not related to the location of a shape on the diagram.|
+|ElementPropertyChanged|The value of a domain property has changed. This is executed only if the old and new values are unequal.|
+|RolePlayerChanged|One of the two roles (ends) of a relationship references a new element.|
+|RolePlayerOrderChanged|In a role with multiplicity greater than 1, the sequence of links has changed.|
+|TransactionBeginning||
+|TransactionCommitted||
+|TransactionRolledBack||
 
 ## <a name="see-also"></a>参照
- [変更に対応して反映する](../modeling/responding-to-and-propagating-changes.md)[サンプルコード: サーキットダイアグラム](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)

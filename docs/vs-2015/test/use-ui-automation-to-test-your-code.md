@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 070a9bedd5e01e6c39d55d784559d4458e35d72f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657292"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297986"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "72657292"
 
  次の図に示すように、一般的な開発環境では、最初はアプリケーションをビルドし (F5 キー)、いくつかの UI コントロールをクリックして正しく動作していることを確認するだけです。 次に、アプリケーションを手動でテストし続けなくてもよいように、コード化されたテストを作成しようとするでしょう。 アプリケーションでテストする特定の機能に応じて、機能テストまたは統合テストのコードを記述できます。テストには、UI レベルでのテストが含まれている場合も含まれていない場合もあります。 一部のビジネス ロジックに直接アクセスするだけの場合は、単体テストのコードを記述することができます。 ただし、特定の状況下では、アプリケーションのさまざまな UI コントロールのテストを含める方が有益な場合があります。 コード化された UI テストでは、最初の (F5 キー) シナリオを自動化でき、コード チャーンがアプリケーションの機能に影響を与えないことを検証できます。
 
- ![テスト (アプリケーション開発時の)](../test/media/cuit-overview.png "CUIT_Overview")
+ ![Testing during application development](../test/media/cuit-overview.png "CUIT_Overview")
 
  コード化された UI テストの作成は簡単です。 CUIT テスト ビルダーをバックグラウンドで実行中に、テストを手動で実行します。 特定のフィールドに表示する値を指定することもできます。 CUIT テスト ビルダーは操作を記録し、それらの記録からコードを生成します。 テストの作成後、特殊なエディターでテストを編集して、操作のシーケンスを変更することができます。
 
@@ -79,15 +79,15 @@ ms.locfileid: "72657292"
 
     コード化された UI プロジェクトを作成した場合は、最初の CUIT ファイルが自動的に追加されます。 別のテスト ファイルを追加するには、コード化された UI テスト プロジェクトのショートカット メニューを開き、 **[追加]** をポイントし、 **[コード化された UI テスト]** を選択します。
 
-    ![コード化された UI テストを作成する](../test/media/codedui-create.png "CodedUI_Create")
+    ![Create a coded UI test](../test/media/codedui-create.png "CodedUI_Create")
 
     **[コード化された UI テストのコードの生成]** ダイアログ ボックスで、 **[操作の記録、UI マップの編集、またはアサーションの追加]** を選択します。
 
-    ![レコードアクションの選択](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
+    ![Select record actions](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
 
     コード化された UI テスト ビルダーが表示され、Visual Studio は最小化されます。
 
-    ![コード化された UI テストビルダー](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")
+    ![Coded UI Test Builder](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")
 
 3. **操作のシーケンスを記録します**。
 
@@ -110,7 +110,7 @@ ms.locfileid: "72657292"
 
     アサーション ウィンドウを閉じ、 **[コードの生成]** を選択します。
 
-    ![コード化された UI テストのターゲット要素](../test/media/codedui-1.png "CodedUI_1")
+    ![Coded UI test targeting element](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
    > 操作の記録と値の検証の間で交互に切り替えます。 操作または検証の各シーケンスの最後にコードを生成します。 必要に応じて、後で新しい操作と検証を挿入できます。
@@ -157,28 +157,28 @@ ms.locfileid: "72657292"
    さらに詳細な使用例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」をご覧ください。 このチュートリアルでは、簡単な Windows Presentation Foundation (WPF) アプリケーションを作成して、コード化された UI テストの作成、編集、および保守を行う方法について説明します。 また、さまざまなタイミングの問題やコントロールのリファクタリングによって機能が損なわれたテストを修正するための解決策を示します。
 
 ### <a name="starting"></a> テスト対象のアプリケーションを開始および停止する
- *テストごとにアプリケーション、ブラウザー、またはデータベースを個別に起動および停止したくありません。操作方法回避するには、*
+ *I don’t want to start and stop my application, browser, or database separately for each test. How do I avoid that?*
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")テスト対象のアプリケーションを開始するための操作を記録しない場合は、 **[レコード]** アイコンを選択する前にアプリケーションを起動する必要があります。
+- ![Prerequsite](../test/media/prereq.png "Prereq") If you do not want to record the actions to start your application under test, you must start your application before you choose the **Record** icon.
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")テストの終了時に、テストを実行するプロセスが終了します。 テストでアプリケーションを起動した場合、アプリケーションは通常は閉じます。  終了時にテストがアプリケーションを閉じないようにするには、ソリューションに .runsettings ファイルを追加し、`KeepExecutorAliveAfterLegacyRun` オプションを使用する必要があります。 詳細については、「[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)」をご覧ください。
+- ![Prerequsite](../test/media/prereq.png "Prereq")At the end of a test, the process in which the test runs is terminated. テストでアプリケーションを起動した場合、アプリケーションは通常は閉じます。  終了時にテストがアプリケーションを閉じないようにするには、ソリューションに .runsettings ファイルを追加し、`KeepExecutorAliveAfterLegacyRun` オプションを使用する必要があります。 詳細については、「[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)」をご覧ください。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")[TestInitialize] 属性で識別されるテスト初期化メソッドを追加できます。このメソッドは、各テストメソッドの開始時にコードを実行します。 たとえば、TestInitialize メソッドからアプリケーションを起動することができます。
+- ![Prerequsite](../test/media/prereq.png "Prereq") You can add a test initialize method, identified by a [TestInitialize] attribute, which runs code at the start of each test method. たとえば、TestInitialize メソッドからアプリケーションを起動することができます。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")[TestCleanup] 属性で識別されるテストクリーンアップメソッドを追加して、各テストメソッドの最後にコードを実行できます。 たとえば、アプリケーションを終了するメソッドは、TestCleanup メソッドから呼び出すことができます。
+- ![Prerequsite](../test/media/prereq.png "Prereq") You can add a test cleanup method, identified by a [TestCleanup] attribute, that runs code at the end of each test method. たとえば、アプリケーションを終了するメソッドは、TestCleanup メソッドから呼び出すことができます。
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> UI コントロールのプロパティを検証する
  **コード化された UI テスト ビルダー**を使用すると、テストの [UIMap](/previous-versions/dd580454(v=vs.140)) にユーザー インターフェイス (UI) を追加したり、UI コントロールのアサーションを使用する検証メソッドのコードを生成したりできます。
 
  UI コントロールのアサーションを生成するには、コード化された UI テスト ビルダーの**アサーションの追加**ツールを選択し、正しいかどうかを検証するテスト対象アプリケーションのコントロールにドラッグします。 ボックスがコントロールを囲んだら、マウス ボタンを離します。 コントロール クラス コードがすぐに `UIMap.Designer.cs` ファイルに作成されます。
 
- ![コード化された UI テストのターゲット要素](../test/media/codedui-1.png "CodedUI_1")
+ ![Coded UI test targeting element](../test/media/codedui-1.png "CodedUI_1")
 
  これで、このコントロールのプロパティが **[アサーションの追加]** ダイアログ ボックスに表示されます。
 
  特定のコントロールに移動するには、矢印 **(<<)** を選択して **[UI コントロール マップ]** のビューを展開する方法もあります。 親、兄弟、子の各コントロールを見つけるには、マップのどこかをクリックし、方向キーを使用してツリー内を移動します。
 
- ![コード化された UI テストのプロパティ](../test/media/codedui-2.png "CodedUI_2")
+ ![Coded UI test properties](../test/media/codedui-2.png "CodedUI_2")
 
 - *アプリケーションでコントロールを選択してもプロパティが表示されません、または UI コントロール マップにコントロールが表示されません。*
 
@@ -186,7 +186,7 @@ ms.locfileid: "72657292"
 
   次に、検証する UI コントロールのプロパティのショートカット メニューで、 **[アサーションの追加]** をポイントします。 **[アサーションの追加]** ダイアログ ボックスで、アサーションの **[比較子]** (<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> など) を選択し、 **[比較対象値]** にアサーションの値を入力します。
 
-  ![コード化された UI テストアサーション](../test/media/codedui-3.png "CodedUI_3")
+  ![Coded UI test assertions](../test/media/codedui-3.png "CodedUI_3")
 
   テスト用のアサーションをすべて追加したら、 **[OK]** を選択します。
 
@@ -207,7 +207,7 @@ ms.locfileid: "72657292"
 
 - UI マップ (UIMap.uitest) に `AssertForAddTwoNumbers` という名前のメソッドを追加します。 このファイルはコード化された UI テスト エディターで開かれ、そこでアサーションを編集できます。
 
-   ![コード化された UI テストエディターを使用したアサートの編集](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")
+   ![Edit assert using Coded UI Test Editor](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")
 
    詳細については、「[コード化された UI テスト エディターを使用したコード化された UI テストの編集](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)」をご覧ください。
 
@@ -220,19 +220,19 @@ ms.locfileid: "72657292"
   }
   ```
 
-  *コード化された UI テストビルダーから [アサーションの追加] ツールを選択しようとすると、選択したコントロールがフォーカスを失い、表示されなくなります。コントロールを選択操作方法には***キーボードを使用して非表示のコントロールを選択 
-   に**は
+  *The control I want to select loses focus and disappears when I try to select the Add Assertions tool from the Coded UI Test Builder. How do I select the control?* 
+  **Selecting a hidden control using the keyboard**
 
   [コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)とき、キーボードが必要になる場合もあります。 たとえば、コンテキスト メニュー コントロールを使用するコード化された UI テストを記録するとき、コード化された UI テスト ビルダーの [アサーションの追加] ツールで選択しようとすると、コントロールのメニュー項目の一覧がフォーカスを失い、非表示になります。 これを次の図に示します。Internet Explorer で、[アサーションの追加] ツールでコンテキスト メニューを選択しようとすると、メニューはフォーカスを失い、非表示になります。
 
-  ![CodedUITest&#95;selectcontrolkeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
+  ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
 
   キーボードを使用して UI コントロールを選択するには、マウスをコントロールの上に置きます。 次に、**Ctrl** キーと **I** キーを同時に押します。 キーを離します。 コントロールは、コード化された UT のテスト ビルダーによって記録されます。
 
 > [!WARNING]
 > Microsoft Lync を使用している場合は、コード化された UI テスト ビルダーを起動する前に Lync を閉じる必要があります。 Microsoft Lync は、**Ctrl + I** のキーボード ショートカットに干渉します。
 
- *コントロール上のマウスホバーを記録できません。これを回避する方法はありますか。*
+ *I can’t record a mouse hover on a control. Is there a way around this?*
  **マウス ホバーを手動で記録する**
 
  状況によっては、コード化された UI テストで使用される特定のコントロールで、キーボードを使用してマウス ホバー イベントを手動で記録することが必要な場合があります。 たとえば、Windows フォームまたは Windows Presentation Foundation (WPF) アプリケーションをテストするとき、カスタム コードがある場合があります。 または、マウスが置かれたときにツリー ノードを展開するなど、コントロールの上にマウスが置かれたときに特別な動作が定義されている場合もあります。 このような状況をテストするには、定義済みのキーボードのキーを押して、コントロールの上にマウスを置いていることをコード化された UI テスト ビルダーに手動で通知する必要があります。
@@ -249,7 +249,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
- *マウスホバーイベントをキャプチャするためのキーの割り当ては、環境内の他の場所で使用されています。既定のキーの割り当てを変更できますか。*
+ *The key assignment for capturing mouse hover events is being used elsewhere in my environment. Can I change the default key assignment?*
  **マウス ホバーのキーボード割り当てを構成する**
 
  必要に応じて、コード化された UI テストでマウス ホバー イベントを適用するために使用される既定のキーボード割り当て Ctrl + Shift + R は、異なるキーを使用するように構成できます。
@@ -271,7 +271,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
- *Web サイトでのマウスホバーの記録に問題があります。この修正プログラムもありますか。*
+ *I’m having issues with recording mouse hovers on a website. Is there a fix for this, too?*
  **Web ブラウザーの暗黙のマウス ホバーを設定する**
 
  多くの Web サイトでは、特定のコントロールの上にマウスを置くと、追加の詳細情報を表示するために展開されます。 通常、これらはデスクトップ アプリケーションのメニューのように見えます。 これが一般的なパターンであるため、コード化された UI テストでは Web 参照に対する暗黙のホバーが有効になります。 たとえば、Internet Explorer でホバーを記録すると、イベントが発生します。 これらのイベントによって、ホバーが重複して記録されることがあります。 このため、暗黙のホバーは UI テスト構成ファイルで `ContinueOnError` が `true` に設定された状態で記録されます。 これによって、ホバー イベントが失敗した場合でも再生は続行されます。
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)](http://go.microsoft.com/fwlink/?LinkID=255196)」をご覧ください。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
+  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)](https://go.microsoft.com/fwlink/?LinkID=255196)」をご覧ください。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
-- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>よくあるご質問
-- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)
+- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
 
-- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](http://go.microsoft.com/fwlink/?LinkID=230578)
+- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>フォーラム
-- [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)
+- [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>関連項目
 

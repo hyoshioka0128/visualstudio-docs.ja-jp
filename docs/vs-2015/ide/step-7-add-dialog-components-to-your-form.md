@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b58f76dc5137ac0e281f109ee78f3ed43f907400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f734c818265d32f6895c09ab01fd2468e0f5a247
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646958"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295681"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>手順 7: フォームへのダイアログ コンポーネントの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "72646958"
 
  コンポーネントは、いくつかの点でコントロールに似ています。 コンポーネントはツールボックスを使用してフォームに追加し、そのプロパティの設定には **[プロパティ]** ウィンドウを使用します。 ただし、コントロールとは異なり、コンポーネントをフォームに追加しても、ユーザーに表示される項目がフォームに追加されるわけではありません。 代わりに、コードで発生させることができる特定の動作が提供されます。 ここで追加するのは、 **[ファイルを開く]** ダイアログ ボックスを開くコンポーネントです。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](http://go.microsoft.com/fwlink/?LinkId=205213)ビデオ3」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 3](http://go.microsoft.com/fwlink/?LinkId=205202)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) or [Tutorial 1: Create a Picture Viewer in C# - Video 3](https://go.microsoft.com/fwlink/?LinkId=205202). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-add-dialog-components-to-your-form"></a>フォームにダイアログ コンポーネントを追加するには
 
@@ -32,9 +32,9 @@ ms.locfileid: "72646958"
     > [!NOTE]
     > ツールボックスの **[ダイアログ]** グループには、多数の便利なダイアログ ボックスを開くコンポーネントが含まれています。これらは、ファイルを開く、ファイルを保存する、フォルダーを参照する、フォントや色を選択するなど、さまざまな用途で使用できます。 このプロジェクトでは、**OpenFileDialog** と **ColorDialog** という 2 つのダイアログ コンポーネントを使用します。
 
-2. **openFileDialog1** というコンポーネントをフォームに追加するには、 **[OpenFileDialog]** をダブルクリックします。 **colorDialog1** というコンポーネントを追加するには、ツールボックスの **[ColorDialog]** をダブルクリックします (次のチュートリアルの手順で使用します)。次の図に示すように、追加した2つのダイアログコンポーネントのそれぞれに対応するアイコンが表示された Windows フォームデザイナーの下部 (Picture Viewer フォームの下) に領域が表示されます。
+2. **openFileDialog1** というコンポーネントをフォームに追加するには、 **[OpenFileDialog]** をダブルクリックします。 **colorDialog1** というコンポーネントを追加するには、ツールボックスの **[ColorDialog]** をダブルクリックします (You use that one in the next tutorial step.) You should see an area at the bottom of Windows Forms Designer (beneath the Picture Viewer form) that has an icon for each of the two dialog components that you added, as shown in the following picture.
 
-     ![ダイアログコンポーネント](../ide/media/express-dialogsadded.png "Express_DialogsAdded")ダイアログコンポーネント
+     ![Dialog components](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Dialog components
 
 3. Windows フォーム デザイナーの下部にある領域で **[openFileDialog1]** アイコンを選択します。 2 つのプロパティを次のように設定します。
 

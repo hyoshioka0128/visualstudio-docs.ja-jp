@@ -1,5 +1,5 @@
 ---
-title: オプションと [オプション] ページ |Microsoft Docs
+title: Options and Options Pages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,76 +14,76 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e30be26c40834d3122d491f8d150f02b6f3b776
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438954"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300695"
 ---
 # <a name="options-and-options-pages"></a>オプションとオプション ページ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-クリックすると**オプション**上、**ツール** メニューが開きます、**オプション** ダイアログ ボックス。 このダイアログ ボックスのオプションを [オプション] ページとしてと総称されます。 すべてのカテゴリが [オプション] ページおよびのツリー コントロール ナビゲーション ウィンドウにはにオプションのカテゴリが含まれます。 ページを選択すると、右側のウィンドウでそのオプションが表示されます。 これらのページを使用して、VSPackage の状態を決定するオプションの値を変更できます。  
+Clicking **Options** on the **Tools** menu opens the **Options** dialog box. The options in this dialog box are collectively referred to as options pages. The tree control in the navigation pane includes options categories, and every category has options pages. When you select a page, its options appear in the right pane. These pages let you change the values of the options that determine the state of a VSPackage.  
   
-## <a name="support-for-options-pages"></a>[オプション] ページのサポート  
- <xref:Microsoft.VisualStudio.Shell.Package>クラスは、[オプション] ページとオプションのカテゴリを作成するためのサポートを提供します。 <xref:Microsoft.VisualStudio.Shell.DialogPage>クラスは、[オプション] ページを実装します。  
+## <a name="support-for-options-pages"></a>Support for Options Pages  
+ The <xref:Microsoft.VisualStudio.Shell.Package> class provides support for creating options pages and options categories. The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements an options page.  
   
- 既定の実装<xref:Microsoft.VisualStudio.Shell.DialogPage>プロパティの汎用のグリッド内のユーザーにそのパブリック プロパティを提供しています。 独自のユーザー インターフェイス (UI) を持つカスタム オプション ページを作成するページのさまざまなメソッドをオーバーライドすることで、この動作をカスタマイズできます。 詳細については、次を参照してください。[オプション ページの作成](../../extensibility/creating-an-options-page.md)です。  
+ The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage> offers its public properties to a user in a generic grid of properties. You can customize this behavior by overriding various methods on the page to create a custom options page that has its own user interface (UI). For more information, see [Creating an Options Page](../../extensibility/creating-an-options-page.md).  
   
- <xref:Microsoft.VisualStudio.Shell.DialogPage>クラスが実装する<xref:Microsoft.VisualStudio.Shell.IProfileManager>、[オプション] ページとユーザー設定の永続化を提供します。 既定の実装、<xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A>と<xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A>と文字列の間に、プロパティを変換できる場合、メソッドは、レジストリのユーザー セクションにプロパティの変更を保持します。  
+ The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements <xref:Microsoft.VisualStudio.Shell.IProfileManager>, which provides persistence for options pages and also for user settings. The default implementations of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> and <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> methods persist property changes into a user section of the registry if the property can be converted to and from a string.  
   
-## <a name="options-page-registry-path"></a>オプション ページのレジストリ パス  
- 既定では、オプション ページによって管理されるプロパティのレジストリ パスは組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>、word DialogPage、およびオプションのページ クラスの型名。 たとえば、次のようにオプション ページ クラスを定義できるかもしれません。  
+## <a name="options-page-registry-path"></a>Options Page Registry Path  
+ By default, the registry path of the properties managed by an options page is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, the word DialogPage, and the type name of the options page class. For example, an options page class might be defined as follows.  
   
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#1)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#1)]  
   
- 場合、 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp、プロパティの名前と値のペアは HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\ のサブキーがCompany.OptionsPage.OptionsPageGeneral します。  
+ If the <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> is HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, then the property name and value pairs are subkeys of HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.  
   
- オプション ページ自体のレジストリ パスが組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>単語、ToolsOptionsPages、およびオプション ページのカテゴリと名前。 たとえば、カスタム オプション ページには、カテゴリでは、個人用のオプション ページと<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp、オプション ページには、レジストリ キー hkey_local_machine \software\microsoft\ ですがVisualStudio\8.0Exp\ToolsOptionsPages\My オプション Pages\Custom します。  
+ The registry path of the options page itself is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, the word, ToolsOptionsPages, and the options page category and name. For example, if the Custom options page has the category, My Option Pages, and the <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> is HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, then the options page has the registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\ToolsOptionsPages\My Option Pages\Custom.  
   
-## <a name="toolsoptions-page-attributes-and-layout"></a>ツール/オプション ページの属性とレイアウト  
- <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性のカスタム オプション ページのナビゲーション ツリーでのカテゴリにグループ化を指定します、**オプション** ダイアログ ボックス。 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性インターフェイスを提供する VSPackage のオプション ページに関連付けます。 次のコードがあるとします。  
+## <a name="toolsoptions-page-attributes-and-layout"></a>Tools/Options Page Attributes and Layout  
+ The <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribute determines the grouping of custom options pages into categories in the navigation tree of the **Options** dialog box. The <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribute associates an options page with the VSPackage that provides the interface. 次のコードがあるとします。  
   
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#2)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#2)]  
   
- これは、MyPackage が OptionsPageGeneral と OptionsPageCustom、2 つのオプション ページを提供することを宣言します。 **オプション**にダイアログ ボックスで、両方のオプション ページの表示、**マイ オプション ページ**としてカテゴリ**全般**と**カスタム**、それぞれします。  
+ This declares that MyPackage provides two options pages, OptionsPageGeneral and OptionsPageCustom. In the **Options** dialog box, both options pages appear in the **My Option Pages** category as **General** and **Custom**, respectively.  
   
-## <a name="option-attributes-and-layout"></a>オプションの属性とレイアウト  
- ページを提供するユーザー インターフェイス (UI) は、カスタム オプション ページのオプションの外観を決定します。 レイアウト、ラベル付け、および汎用オプション ページのオプションの説明については、次の属性によって決まります。  
+## <a name="option-attributes-and-layout"></a>Option Attributes and Layout  
+ The user interface (UI) that the page provides determines the appearance of options in a custom options page. The layout, labeling, and description of options in a generic options page are determined by the following attributes:  
   
-- <xref:System.ComponentModel.CategoryAttribute> オプションのカテゴリを決定します。  
+- <xref:System.ComponentModel.CategoryAttribute> determines the category of the option.  
   
-- <xref:System.ComponentModel.DisplayNameAttribute> オプションの表示名を決定します。  
+- <xref:System.ComponentModel.DisplayNameAttribute> determines the display name of the option.  
   
-- <xref:System.ComponentModel.DescriptionAttribute> オプションの説明を決定します。  
+- <xref:System.ComponentModel.DescriptionAttribute> determines the description of the option.  
   
   > [!NOTE]
-  > 同等の属性、SRCategory、LocDisplayName、および SRDescription、ローカライズ文字列リソースを使用して、で定義されて、[マネージ プロジェクト サンプル](http://go.microsoft.com/fwlink/?LinkId=122774)します。  
+  > Equivalent attributes, SRCategory, LocDisplayName, and SRDescription, use string resources for localization and are defined in the [managed project sample](https://go.microsoft.com/fwlink/?LinkId=122774).  
   
   次のコードがあるとします。  
   
   [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
   [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
-  OptionInteger オプションとして [オプション] ページに表示されます**整数オプション**で、 **My Options**カテゴリ。 オプションが選択されている場合、説明、**マイ整数オプション**、[説明] ボックスに表示されます。  
+  The OptionInteger option appears on the options page as **Integer Option** in the **My Options** category. If the option is selected, the description, **My integer option**, appears in the description box.  
   
-## <a name="accessing-options-pages-from-another-vspackage"></a>別の VSPackage から [オプション] ページにアクセスします。  
- ホストしてオプション ページを管理する VSPackage は、別の VSPackage からでプログラムによって、オートメーション モデルを使用してアクセスできます。 たとえば、次のコードでは、VSPackage は、オプション ページをホストとして登録されます。  
+## <a name="accessing-options-pages-from-another-vspackage"></a>Accessing Options Pages from Another VSPackage  
+ A VSPackage that hosts and manages an options page can be programmatically accessed from another VSPackage by using the automation model. For example, in the following code a VSPackage is registered as hosting an option page.  
   
  [!code-csharp[VSSDKSupportForOptionsPages#4](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#4)]
  [!code-vb[VSSDKSupportForOptionsPages#4](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#4)]  
   
- 次のコード フラグメントは、MyOptionPage から OptionInteger の値を取得します。  
+ The following code fragment gets the value of OptionInteger from MyOptionPage:  
   
  [!code-csharp[VSSDKSupportForOptionsPages#5](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#5)]
  [!code-vb[VSSDKSupportForOptionsPages#5](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#5)]  
   
- ときに、<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性は、オプション ページを登録、AutomationProperties キーの場合 の下に、ページが登録されている、`SupportsAutomation`属性の引数が`true`します。 Automation は、関連付けられている VSPackage とオートメーションを検索するには、このレジストリ エントリを検査し、ホストされているオプション ページ、ここでは、個人用のグリッド ページで、プロパティにアクセスします。  
+ When the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribute registers an options page, the page is registered under the AutomationProperties key if the `SupportsAutomation` argument of the attribute is `true`. Automation examines this registry entry to find the associated VSPackage, and automation then accesses the property through the hosted options page, in this case, My Grid Page.  
   
- オートメーション プロパティのレジストリ パスが組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>単語、AutomationProperties、およびオプション ページのカテゴリと名前。 たとえば、次のオプション ページには、My Category カテゴリ、個人用のグリッド ページ名、および<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp 後のオートメーション プロパティが、レジストリ キー HKEY_LOCAL_MACHINEMicrosoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My グリッド ページ。  
+ The registry path of the automation property is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, the word, AutomationProperties, and the options page category and name. For example, if the options page has the My Category category, the My Grid Page name, and the <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, then the automation property has the registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page.  
   
 > [!NOTE]
-> 正規名、個人用の Category.My グリッド ページでは、このキーの名前のサブキーの値です。
+> The canonical name, My Category.My Grid Page, is the value of the Name subkey of this key.

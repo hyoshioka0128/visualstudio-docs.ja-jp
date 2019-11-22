@@ -1,5 +1,5 @@
 ---
-title: プロファイルを定義して UML を拡張する |Microsoft Docs
+title: Define a profile to extend UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -16,19 +16,19 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e621297b36d75a0e48baed4ab24d50abd5e61663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668692"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295672"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>プロファイルを定義して UML を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-*UML プロファイル*を定義して、標準のモデル要素を特定の目的に合わせてカスタマイズすることができます。 プロファイルは、1つまたは複数の*UML ステレオタイプ*を定義します。 ステレオタイプは、特定の種類のオブジェクトを表すものとして型をマークするために使用できます。 ステレオタイプを使用して、要素のプロパティのリストを拡張することもできます。
+You can define a *UML profile* to customize the standard model elements for specific purposes. A profile defines one or more *UML stereotypes*. ステレオタイプは、特定の種類のオブジェクトを表すものとして型をマークするために使用できます。 ステレオタイプを使用して、要素のプロパティのリストを拡張することもできます。
 
- いくつかのプロファイルは、これをサポートするエディションの Visual Studio をインストールするときに、同時にインストールされます。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。 これらのプロファイルの詳細およびステレオタイプを適用する方法については、「[プロファイルとステレオタイプを使用](../modeling/customize-your-model-with-profiles-and-stereotypes.md)してモデルをカスタマイズする」を参照してください。
+ いくつかのプロファイルは、これをサポートするエディションの Visual Studio をインストールするときに、同時にインストールされます。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。 For more information about those profiles and about how to apply stereotypes, see [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
 
  独自のプロファイルを定義して、UML を特定のビジネス領域またはアーキテクチャに適応させ、拡張することができます。 (例:
 
@@ -41,21 +41,21 @@ ms.locfileid: "72668692"
 > [!NOTE]
 > 現在編集中のモデルでプロファイルのステレオタイプを適用し、そのモデルを他のユーザーと共有する場合、これらのユーザーは同じプロファイルをそれぞれ自分のコンピューターにインストールする必要があります。 インストールされていないと、他のユーザーは適用されたステレオタイプを確認できません。
 
- プロファイルは、多くの場合、より大きな [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能の一部です。 たとえば、モデルのいくつかのパートをコードに翻訳するコマンドを定義できます。 このとき、ユーザーが翻訳するパッケージに適用する必要のあるプロファイルを定義します。 この新しいコマンドを、単一の [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能でプロファイルと共に配布します。
+ A profile is often part of a larger [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extension. たとえば、モデルのいくつかのパートをコードに翻訳するコマンドを定義できます。 このとき、ユーザーが翻訳するパッケージに適用する必要のあるプロファイルを定義します。 この新しいコマンドを、単一の [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能でプロファイルと共に配布します。
 
  また、プロファイルをローカライズしたバリアントも定義できます。 生成した拡張機能を読み込んだユーザーには、ユーザーのカルチャに適したバリアントが表示されます。
 
-## <a name="DefineProfile"></a>プロファイルを定義する方法
+## <a name="DefineProfile"></a> How to Define a Profile
 
 #### <a name="to-define-a-uml-profile"></a>UML プロファイルを定義するには
 
 1. `.profile` というファイル名拡張子を持つ新しい XML ファイルを生成します。
 
-2. 「[プロファイルの構造](#Schema)」で説明されているガイドラインに従って、ステレオタイプの定義を追加します。
+2. Add stereotype definitions according to the guidelines described in [The Structure of a Profile](#Schema).
 
 3. プロファイルを Visual Studio 拡張機能 (`.vsix` ファイル) に追加します。 プロファイル用に新しい拡張機能を生成するか、またはプロファイルを既存の拡張機能に追加します。
 
-     次のセクション「[プロファイルを Visual Studio 拡張機能に追加する方法](#AddProfile)」を参照してください。
+     See the next section, [How to Add a Profile to a Visual Studio Extension](#AddProfile).
 
 4. 拡張機能をコンピューターにインストールします。
 
@@ -67,16 +67,16 @@ ms.locfileid: "72668692"
 
     1. UML エクスプローラーでモデルを選択します。
 
-    2. プロパティウィンドウで、 **[プロファイル]** プロパティをクリックします。 プロファイルがメニューに表示されます。 プロファイルの横にチェック マークを設定します。
+    2. In the Properties window, click the **Profiles** property. プロファイルがメニューに表示されます。 プロファイルの横にチェック マークを設定します。
 
-    3. プロファイルでステレオタイプを定義する要素を選択します。 プロパティウィンドウで、 **[ステレオタイプ]** プロパティをクリックします。 リストにステレオタイプが表示されます。 ステレオタイプのいずれか 1 つにチェック マークを設定します。
+    3. プロファイルでステレオタイプを定義する要素を選択します。 In the Properties window, click the **Stereotypes** property. リストにステレオタイプが表示されます。 ステレオタイプのいずれか 1 つにチェック マークを設定します。
 
     4. プロファイルでこのステレオタイプの追加のプロパティを定義する場合は、ステレオタイプ プロパティを展開してプロパティを表示します。
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の他のユーザーに拡張ファイルを送信して、コンピューターにインストールしてもらいます。
 
-## <a name="AddProfile"></a>Visual Studio 拡張機能にプロファイルを追加する方法
- プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、「 [Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
+## <a name="AddProfile"></a> How to Add a Profile to a Visual Studio Extension
+ プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 For more information, see [Deploying Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160780).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>新しい Visual Studio 拡張機能でプロファイルを定義するには
 
@@ -87,41 +87,41 @@ ms.locfileid: "72668692"
 
    1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
-   2. **[新しいプロジェクト]** ダイアログボックスの **[インストールされたテンプレート]** で、 **[ビジュアルC# ]** 、 **[機能拡張]** 、 **[VSIX プロジェクト]** の順に展開します。 プロジェクト名を設定し、[ **OK]** をクリックします。
+   2. In the **New Project** dialog box, under **Installed Templates**, expand **Visual C#** , click **Extensibility**, and then click **VSIX project**. Set the project name and click **OK**.
 
 2. プロファイルをプロジェクトに追加します。
 
-   - ソリューションエクスプローラーで、プロジェクトを右クリックして **[追加]** をポイントし、 **[既存の項目]** をクリックします。 ダイアログ ボックスで、生成したプロファイル ファイルを見つけます。
+   - In Solution Explorer, right-click the project, point to **Add**, and then click **Existing Item**. ダイアログ ボックスで、生成したプロファイル ファイルを見つけます。
 
-3. プロファイルファイルの "**出力にコピー** " プロパティを設定します。
+3. Set the profile file's **Copy to Output** property.
 
-   1. ソリューションエクスプローラーで、プロファイルファイルを右クリックし、 **[プロパティ]** をクリックします。
+   1. In Solution Explorer, right-click the profile file, and then click **Properties**.
 
-   2. プロパティウィンドウで、 **[出力ディレクトリにコピー]** プロパティを **[常にコピー]** する に設定します。
+   2. In the Properties window, set the **Copy to Output Directory** property to **Copy Always**.
 
 4. ソリューション エクスプローラーで、`source.extension.vsixmanifest` を開きます。
 
     このファイルは拡張機能マニフェスト エディターで開きます。
 
-5. **[資産]** ページで、プロファイルを説明する行を追加します。
+5. On the **Assets** page, add a row describing the profile:
 
-   - **[新規]** をクリックします。 **[新しい資産の追加]** ダイアログボックスで、次のようにフィールドを設定します。
+   - **[新規]** をクリックします。 Set the fields in the **Add New Asset** dialog as follows.
 
-   - **型**を `Microsoft.VisualStudio.UmlProfile` に設定します
+   - Set **Type** to `Microsoft.VisualStudio.UmlProfile`
 
         これは、ドロップダウン リストに表示される選択肢の 1 つではありません。 この名前はキーボードを使用して入力します。
 
-   - **[ファイルシステム上のファイル]** をクリックし、プロファイルファイルの名前を選択し `MyProfile.profile`
+   - Click **File on filesystem** and select the name of your profile file, for example `MyProfile.profile`
 
 6. プロジェクトをビルドします。
 
-7. **プロファイルをデバッグするに**は、F5 キーを押します。
+7. **To debug the profile**, press F5.
 
     Visual Studio の実験用インスタンスが開きます。 このインスタンスで、モデリング プロジェクトを開きます。 UML エクスプローラーで、モデルのルート要素を選択し、[プロパティ] ウィンドウでプロファイルを選択します。 次に、モデル内の要素を選択し、それらの要素に対して定義したステレオタイプを設定します。
 
-8. **配置用に VSIX を抽出するには**
+8. **To extract the VSIX for deployment**
 
-   1. Windows エクスプローラーで、 **.\bin\Debug**または **.\bin\Release**フォルダーを開き、 **.vsix**ファイルを検索します。 これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。
+   1. In Windows Explorer, open the folder **.\bin\Debug** or **.\bin\Release** to find the **.vsix** file. これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。
 
    2. 拡張機能をインストールするには
 
@@ -135,7 +135,7 @@ ms.locfileid: "72668692"
 
 1. Windows ディレクトリを生成し、次の 3 つのファイルを格納します。
 
-    - *プロファイル*`.profile`
+    - *YourProfile* `.profile`
 
     - `extension.vsixmanifest`
 
@@ -155,7 +155,7 @@ ms.locfileid: "72668692"
 
     - 次のディレクトリ内に、`extension.vsixmanifest` の例が含まれています。
 
-         *ドライブ* **: \Common7\IDE\Extensions\Microsoft\Architecture | Visual Studio [バージョン]** ツールのプロファイル
+         *drive* **:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles**
 
     - Content ノードは次のようになります。
 
@@ -168,7 +168,7 @@ ms.locfileid: "72668692"
 
 4. 3 つのファイルを 1 つの zip ファイルに圧縮します。
 
-     Windows エクスプローラーで、3つのファイルを選択し、右クリックして **[送信]** をポイントし、 **[圧縮 (zip 形式) フォルダー]** をクリックします。
+     In Windows Explorer, select the three files, right-click, point to **Send To**, and then click **Compressed (zipped) folder**.
 
 5. zip ファイルの名前を変更し、ファイル名拡張子を `.zip` から `.vsix` に変更します。
 
@@ -178,29 +178,29 @@ ms.locfileid: "72668692"
 
 1. Windows エクスプローラーで `.vsix` ファイルをダブルクリックするか、または Visual Studio 内でこのファイルを開きます。
 
-2. 表示されるダイアログボックスで **[インストール]** をクリックします。
+2. Click **Install** in the dialog box that appears.
 
-3. 拡張機能をアンインストールするか、一時的に無効にするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を開きます。
+3. To uninstall or temporarily disable the extension, open **Extensions and Updates** from the **Tools** menu.
 
-## <a name="Localized"></a>ローカライズされたプロファイルを定義する方法
+## <a name="Localized"></a> How to Define Localized Profiles
  複数の異なるカルチャまたは言語に対して複数の異なるプロファイルを定義し、それらすべてを同じ拡張機能にパッケージ化することができます。 ユーザーが拡張機能を読み込むと、ユーザーのカルチャに対して定義されているプロファイルが表示されます。
 
  既定のプロファイルは必ず用意する必要があります。 ユーザーのカルチャに対して定義されているプロファイルがない場合は、既定のプロファイルが表示されます。
 
 #### <a name="to-define-a-localized-profile"></a>ローカライズされたプロファイルを定義するには
 
-1. 前のセクション「[プロファイルを定義する方法](#DefineProfile)」および「[プロファイルを Visual Studio 拡張機能に追加する方法](#AddProfile)」の説明に従って、プロファイルを作成します。 これが既定のプロファイルであり、ローカライズされたプロファイルが用意されていないインストールで使用されます。
+1. Create a profile as described in the previous sections[How to Define a Profile](#DefineProfile) and [How to Add a Profile to a Visual Studio Extension](#AddProfile). これが既定のプロファイルであり、ローカライズされたプロファイルが用意されていないインストールで使用されます。
 
 2. 既定のプロファイル ファイルが格納されているディレクトリ内に新しいディレクトリを追加します。
 
     > [!NOTE]
     > Visual Studio 拡張機能プロジェクトを使用して拡張機能を構築する場合は、ソリューション エクスプローラーを使用して新しいフォルダーをプロジェクトに追加します。
 
-3. 新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
+3. 新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 For more information about culture codes, see [CultureInfo.GetCultures method](https://go.microsoft.com/fwlink/?LinkId=160782), which provides a complete list of culture codes.
 
 4. 既定のプロファイルを新しいディレクトリにコピーします。 ファイル名は変更しないでください。
 
-     サンプル [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能フォルダーは、`.vsix` ファイルに構築または圧縮される前に、次のフォルダーとファイルを含みます。
+     A sample [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Extension folder, before it is built or compressed into a `.vsix` file, would contain the following folders and files:
 
      `extension.vsixmanifest`
 
@@ -219,18 +219,18 @@ ms.locfileid: "72668692"
 
 7. 前のセクションで説明したように、拡張機能プロジェクトをビルドするか、またはすべてのファイルを圧縮して、Visual Studio 拡張機能を生成します。
 
-## <a name="Schema"></a>プロファイルの構造
- UML プロファイルの XSD ファイルについては、「[ステレオタイプとプロファイルの xsd の設定](http://go.microsoft.com/fwlink/?LinkID=213811)」のサンプルを参照してください。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
+## <a name="Schema"></a> The Structure of a Profile
+ The XSD file for UML profiles can be found in the following sample: [Setting Stereotypes and Profiles XSD](https://go.microsoft.com/fwlink/?LinkID=213811). プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
 
- **%ProgramFiles%\Microsoft Visual Studio [version] \ xmlschema**
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**
 
  ここでは、例として C# プロファイルを使用します。 完全なプロファイル定義については、次のファイルを参照してください。
 
- *ドライブ* **: \Common7\IDE\Extensions\Microsoft\Architecture Visual Studio [バージョン] Tools\UmlProfiles\CSharp.profile**
+ *drive* **:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\CSharp.profile**
 
  このパスの最初の部分は、インストールに応じて異なる可能性があります。
 
- .NET プロファイルの詳細については、「 [UML モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)」を参照してください。
+ For more information about the .NET profile, see [Standard stereotypes for UML models](../modeling/standard-stereotypes-for-uml-models.md).
 
 ### <a name="main-sections-of-the-uml-profile-definition"></a>UML プロファイル定義の主要なセクション
  すべてのプロファイルに次の内容が含まれています。
@@ -258,7 +258,7 @@ ms.locfileid: "72668692"
 - `<stereotypes>`: ステレオタイプの定義。 それぞれの定義には、ターゲットのモデル要素に追加されるプロパティの名前と型が含まれています。
 
 #### <a name="property-types"></a>プロパティの型
- @No__t_0 セクションでは、`<stereotypes>` セクションのプロパティに使用される型のリストを宣言します。 プロパティの型には、外部型と列挙型の 2 種類があります。
+ The `<propertyTypes>` section declares a list of types that are used for properties in the `<stereotypes>` section. プロパティの型には、外部型と列挙型の 2 種類があります。
 
  外部型は、標準 .NET 型の完全修飾名を宣言します。
 
@@ -289,7 +289,7 @@ ms.locfileid: "72668692"
       name="Microsoft.VisualStudio.Uml.Components.IComponent" />
 ```
 
- メタクラスとして使用できるモデル要素とリレーションシップ型の完全な一覧については、「[モデル要素の型](#Elements)」を参照してください。
+ For the full list of model element and relationship types that you can use as metaclasses, see [Model Element Types](#Elements).
 
 #### <a name="stereotype-definition"></a>ステレオタイプ定義
  `<stereotypes>` セクションには、1 つ以上のステレオタイプ定義が記述されています。
@@ -312,7 +312,7 @@ ms.locfileid: "72668692"
 > [!NOTE]
 > モニカー名は `/yourProfileName/` で始まる必要があります。ここで、`yourProfileName` は、プロファイルの `name` 属性で定義されています (この例では "CSharpProfile")。 モニカーは、メタクラス セクションのいずれかのエントリ名で終わります。
 
- それぞれのステレオタイプでは、ステレオタイプが適用される任意のモデル要素に追加する 0 個以上のプロパティを指定できます。 @No__t_0 には、`<propertyTypes>` セクションで定義されているいずれかの型へのリンクが含まれています。 リンクは、`<externalTypeMoniker>` (`<externalType>,` を参照する場合) または `<enumerationTypeMoniker>` (`<enumerationType>` を参照する場合) のどちらかである必要があります。 このリンクについても、プロファイルの名前がプレフィックスとして付けられます。
+ それぞれのステレオタイプでは、ステレオタイプが適用される任意のモデル要素に追加する 0 個以上のプロパティを指定できます。 The `<propertyType>` contains a link to one of the types that are defined in the `<propertyTypes>` section. リンクは、`<externalTypeMoniker>` (`<externalType>,` を参照する場合) または `<enumerationTypeMoniker>` (`<enumerationType>` を参照する場合) のどちらかである必要があります。 このリンクについても、プロファイルの名前がプレフィックスとして付けられます。
 
 ```
   <properties>
@@ -335,19 +335,19 @@ ms.locfileid: "72668692"
 </stereotype>
 ```
 
-## <a name="Elements"></a>モデル要素の型
- ステレオタイプを定義できる型のセットについては、「 [UML モデル要素の型](../modeling/uml-model-element-types.md)」をご覧ください。
+## <a name="Elements"></a> Model Element Types
+ The set of types for which you can define stereotypes is listed in [UML model element types](../modeling/uml-model-element-types.md).
 
 ## <a name="troubleshooting"></a>トラブルシューティング
  ステレオタイプが UML モデルに表示されません。
-パッケージまたはモデルでプロファイルを選択する必要があります。 これで、ステレオタイプはパッケージまたはモデル内の要素上に表示されます。 詳細については、「 [UML モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)」を参照してください。
+パッケージまたはモデルでプロファイルを選択する必要があります。 これで、ステレオタイプはパッケージまたはモデル内の要素上に表示されます。 For more information, see [Add stereotypes to UML model elements](../modeling/add-stereotypes-to-uml-model-elements.md).
 
- UML モデルを開くと、次のエラーが表示されます: **VS1707: シリアル化エラーが発生したため、次のプロファイルを読み込むことができません: myprofile。プロファイル**
+ The following error appears when I open a UML model: **VS1707: The following profiles cannot be loaded because a serialization error occurred: MyProfile.profile**
 1. .profile の基本的な XML 構文が正しいことを確認してください。
 
 2. 各モニカー名の形式が /profileName/nodeName であることを確認してください。 profileName とは、ルート プロファイル ノードの名前属性の値です。 nodeName とは、メタクラス externalType または enumerationType の名前属性の値です。
 
-3. ここで説明されている構文に従ってください。「 _drive_ **: \\ \Common7\IDE\Extensions\Microsoft\Architecture」 (Visual Studio [version])** で説明されているように、「drive:」のようにします。
+3. Ensure the syntax is as described here, and as demonstrated in _drive_ **:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
 
 4. 障害のある拡張機能をアンインストールします。 **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
@@ -355,14 +355,14 @@ ms.locfileid: "72668692"
 
 5. VSIX ファイルをリビルドし、Windows エクスプローラーで開いて再インストールします。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。
 
-   拡張機能は拡張機能マネージャーに表示されませんが、再インストールを試みると、次のメッセージが表示されます:**拡張機能は、適用されているすべての製品に既にインストール**されています。
-   1. *Localappdata*\Microsoft\VisualStudio \\ [version] \Extensions\ のサブフォルダーから拡張ファイルを削除します。
+   The extension does not appear in Extension Manager, but when you try to re-install it, the following message appears: **The extension is already installed to all applicable products.**
+   1. Remove the extension file from a subfolder of *LocalAppData*\Microsoft\VisualStudio\\[version]\Extensions\
 
-   - *Localappdata*を表示するには、Windows エクスプローラーのフォルダーオプションの [表示] タブで [非表示のファイルとフォルダーの表示] を設定する必要があります。
+   - To see *LocalAppData*, you must set Show Hidden Files and Folders in the View tab of the Windows Explorer Folder Options.
 
-   - *Localappdata*は通常、C:\Users \\*ユーザー名*\AppData\Local\ にあります。
+   - *LocalAppData* is typically in C:\Users\\*userName*\AppData\Local\
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。
 
 ## <a name="see-also"></a>参照
- [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)サンプル: ステレオタイプに[よる uml 要素の色](http://go.microsoft.com/fwlink/?LinkID=213841)の[設定サンプル: ステレオタイプの設定、プロファイル XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
+ [Add stereotypes to UML model elements](../modeling/add-stereotypes-to-uml-model-elements.md) [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Standard stereotypes for UML models](../modeling/standard-stereotypes-for-uml-models.md) [Sample: Color UML Elements by Stereotype](https://go.microsoft.com/fwlink/?LinkID=213841) [Sample: Setting Stereotypes, Profiles XSD](https://go.microsoft.com/fwlink/?LinkID=213811)

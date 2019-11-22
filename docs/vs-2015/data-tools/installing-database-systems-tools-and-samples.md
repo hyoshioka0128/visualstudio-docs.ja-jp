@@ -1,5 +1,5 @@
 ---
-title: データベースシステム、ツール、サンプルのインストール |Microsoft Docs
+title: Installing database systems, tools, and samples | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -17,41 +17,41 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6f260af17a2fab142c5f5fa58e4ed267dc469d9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 091338e411369e40f19e028cd19b6cb2e697718c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651507"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299607"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>データベース システム、ツール、およびサンプルのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 自体には、内部で使用するもの以外のデータベースシステムは含まれていません。 Visual Studio でデータ接続アプリケーションを開発するには、通常、データベースシステムをローカルの開発用コンピューターにインストールし、準備ができたらアプリケーションとデータベースを運用環境に配置します。 データベースシステムを .NET アプリケーションからアクセスできるようにし、Visual Studio データツールウィンドウで表示できるようにするには、ADO.NET データプロバイダーが必要です。 .NET アプリケーションで Entity data model を使用する予定がある場合は、プロバイダーが Entity Framework をサポートする必要があります。     多くのプロバイダーは、NuGet パッケージマネージャーまたは Visual Studio ギャラリーを通じて提供されます。
+Visual Studio itself does not include any database systems other than those it uses internally. To develop a data-connected application in Visual Studio, you typically install the database system on your local development machine, and then deploy the application and database to a production environment when they are ready. For the database system to be accessible from .NET applications and to be visible in Visual Studio data tools windows, it must have an ADO.NET data provider. A provider must specifically support Entity Framework if you plan to use Entity data models in your .NET application.     Many providers are offered through the NuGet Package Manager or through the Visual Studio Gallery.
 
- SQL 開発の場合は、Visual Studio に SQL Server Data Tools がインストールされていることを確認します。 **[表示]** メニューをクリックします。 SQL Server オブジェクトエクスプローラーが表示されない場合は、[コントロールパネル] に移動して Visual Studio を変更します。 インストーラーで、 **[Microsoft SQL Server データツール]** を選択します。
+ For SQL development, ensure that you have SQL Server Data Tools installed in Visual Studio. Click the **View** menu. If you don't see SQL Server Object Explorer, go to Control Panel and change Visual Studio. In the installer, select **Microsoft SQL Server Data Tools**.
 
- Azure Storage Api を使用している場合は、運用環境にデプロイする準備が整うまで料金を避けるために、開発時にローカルコンピューターに Azure ストレージエミュレーターをインストールします。 詳細については、「[開発とテストのための Azure Storage Emulator の使用](https://azure.microsoft.com/documentation/articles/storage-use-emulator/)」を参照してください。
+ If you are using Azure Storage APIs,   install the Azure storage emulators on your local machine during development in order to avoid charges until you are ready to deploy to production. For more information, see [Use the Azure Storage Emulator for Development and Testing](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).
 
- 次の一覧には、Visual Studio プロジェクトで使用できる一般的なデータベースシステムがいくつか含まれています。 この一覧は完全ではありません。 Visual Studio ツールとの緊密な統合を可能にする ADO.NET データプロバイダーを提供するサードパーティベンダーの一覧については、「 [ADO.NET Data providers](https://msdn.microsoft.com/library/dd363565.aspx)」を参照してください。
+ The following list includes some of the more popular database systems that can be used in Visual Studio projects. The list is not exhaustive. For a list of third-party vendors that offer ADO.NET data providers that enable deep integration with Visual Studio tooling, see [ADO.NET Data Providers](https://msdn.microsoft.com/library/dd363565.aspx).
 
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server
- SQL Server は、Microsoft の主要なデータベースオファリングです。 SQL Server 2016 は、画期的なパフォーマンス、高度なセキュリティ、豊富で統合されたレポートと分析を提供します。 さまざまなエディションに付属しています。これは、拡張性の高い高パフォーマンスのビジネス分析から、1台のコンピューターで使用できるように設計されています。 SQL Server Express は、再配布と埋め込み用に調整された SQL Server のフル機能エディションです。  LocalDB は SQL Server Express の簡略化されたエディションであり、構成を必要とせず、アプリケーションのプロセスで実行できます。 [SQL Server Express のダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)から、または両方の製品をダウンロードできます。 このセクションの SQL の例の多くは、SQL Server LocalDB を使用しています。 SQL Server Management Studio (SSMS) は、Visual Studio SQL Server オブジェクトエクスプローラーで提供される機能よりも多くの機能を備えたスタンドアロンのデータベース管理アプリケーションです。 前のリンクから SSMS を取得できます。
+ SQL Server is the Microsoft flagship database offering. SQL Server 2016 delivers breakthrough performance, advanced security, and rich, integrated reporting and analytics. It ships in various editions that are designed for different uses: from highly scalable, high-performance business analytics, to use on a single computer. SQL Server Express is a full-featured edition of SQL Server that is tailored for redistribution and embedding.  LocalDB is a simplified edition of SQL Server Express that requires no configuration and runs in your application's process. You can download either or both products from [the SQL Server Express download page](https://www.microsoft.com/sql-server/sql-server-editions-express). Many of the SQL examples in this section use SQL Server LocalDB. SQL Server Management Studio (SSMS) is a stand-alone database management application that has more functionality than what is provided in Visual Studio SQL Server Object Explorer. You can get SSMS from the previous link.
 
 ### <a name="oracle"></a>Oracle
- Oracle データベースの有料または無料のエディションは、 [Oracle テクノロジのネットワーク](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html)ページからダウンロードできます。 Entity Framework と Tableadapter のデザイン時サポートについては、 [Visual Studio 用の Oracle 開発者ツール](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html)が必要です。 Oracle インスタントクライアントを含むその他の公式 Oracle 製品は、NuGet パッケージマネージャーを通じて入手できます。  Oracle のサンプルスキーマは、 [oracle のオンラインドキュメント](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)に記載されている手順に従ってダウンロードできます。
+ You can download a paid or free edition of the Oracle database from the [Oracle Technology Network](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) page. For design-time support for Entity Framework and TableAdapters, you will need the [Oracle Developer Tools for Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/). Other official Oracle products, including the Oracle Instant Client, are available through the NuGet Package Manager.  You can download Oracle sample schemas by following the instructions in the [Oracle Online Documentation](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ### <a name="mysql"></a>MySQL
- MySQL は、企業や web サイトで広く使用されている、広く普及しているオープンソースのデータベースシステムです。 Mysql、mysql for Visual Studio、および関連製品のダウンロードは、 [Windows 上の mysql](http://www.mysql.com/why-mysql/windows/)にあります。  サードパーティは、さまざまな Visual Studio 拡張機能と、MySQL 用のスタンドアロン管理アプリケーションを提供します。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。
+ MySQL is a popular open-source database system that is widely used in enterprises and websites. Downloads for MySQL, MySQL for Visual Studio, and related products are at [MySQL on Windows](https://www.mysql.com/why-mysql/windows/).  Third parties offer various Visual Studio extensions and stand-alone management applications for MySQL. You can browse the offerings in the NuGet Package Manager (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**).
 
 ### <a name="postgresql"></a>PostgreSQL
- PostgreSQL は、オープンソースの無料のオブジェクトリレーショナルデータベースシステムです。 Windows にインストールするには、 [PostgreSQL のダウンロードページ](http://www.postgresql.org/download/windows/)からダウンロードできます。  また、ソースコードから PostgreSQL を構築することもできます。  PostgreSQL コアシステムには、C 言語インターフェイスが含まれています。 多くのサードパーティは、.NET アプリケーションから PostgreSQL を使用するための NuGet パッケージを提供しています。  NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。 おそらく、最も一般的なパッケージは[npgsql.org](http://www.npgsql.org)によって提供されます。
+ PostgreSQL is a free, open-source object relational database system. To install it on Windows, you can download it from the [PostgreSQL download page](http://www.postgresql.org/download/windows/).  You can also build PostgreSQL from the source code.  The PostgreSQL core system includes a C language interface. Many third parties provide NuGet packages for using PostgreSQL from .NET applications.  You can browse the offerings in the NuGet Package Manager (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**). Perhaps the most popular package is provided by [npgsql.org](http://www.npgsql.org/).
 
 ### <a name="sqlite"></a>SQLite
- SQLite は、アプリケーション独自のプロセスで実行される埋め込みの SQL データベースエンジンです。 これは、 [SQLite ダウンロードページ](http://www.sqlite.org/download.html)からダウンロードできます。 SQLite 用のサードパーティ製の NuGet パッケージも多数用意されています。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。
+ SQLite is an embedded SQL database engine that runs in the application's own process. You can download it from the [SQLite download page](http://www.sqlite.org/download.html). Many third-party NuGet packages for SQLite are also available. You can browse the offerings in the NuGet Package Manager (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**).
 
 ### <a name="firebird"></a>Firebird
- Firebird は、オープンソースの SQL データベースシステムです。 [Firebird ダウンロードページ](http://firebirdsql.org/en/downloads/)からダウンロードできます。 ADO.NET データプロバイダーは、NuGet パッケージマネージャーを通じて入手できます。
+ Firebird is an open-source SQL database system. You can download it from the [Firebird download page](http://firebirdsql.org/en/downloads/). An ADO.NET data provider is available through the NuGet Package Manager.
 
 ## <a name="see-also"></a>参照
- [SQL Server とそのコンポーネントのバージョンとエディションを確認する方法](http://support.microsoft.com/kb/321185)
+ [SQL Server とそのコンポーネントのバージョンとエディションを確認する方法](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

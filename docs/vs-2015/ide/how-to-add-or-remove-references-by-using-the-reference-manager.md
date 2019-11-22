@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645484"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300162"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "72645484"
 - 最近使用したサブグループを参照します。
 
 ## <a name="assemblies-tab"></a>[アセンブリ] タブ
- **[アセンブリ]** タブには、参照に使うことができるすべての .NET Framework アセンブリが一覧表示されます。 グローバル アセンブリ キャッシュ (GAC) 内のアセンブリは実行時環境の一部であるため、 **[アセンブリ]** タブでは GAC からのアセンブリはどれもリスト表示されません。 GAC に登録されているアセンブリへの参照を含むアプリケーションを配置またはコピーした場合は、[ローカル コピー] の設定とはかかわりなく、そのアセンブリがアプリケーションと共に配置またはコピーされることはありません。 詳しくは、「[プロジェクトの参照](http://go.microsoft.com/fwlink/?LinkId=238512)」をご覧ください。
+ **[アセンブリ]** タブには、参照に使うことができるすべての .NET Framework アセンブリが一覧表示されます。 グローバル アセンブリ キャッシュ (GAC) 内のアセンブリは実行時環境の一部であるため、 **[アセンブリ]** タブでは GAC からのアセンブリはどれもリスト表示されません。 GAC に登録されているアセンブリへの参照を含むアプリケーションを配置またはコピーした場合は、[ローカル コピー] の設定とはかかわりなく、そのアセンブリがアプリケーションと共に配置またはコピーされることはありません。 詳しくは、「[プロジェクトの参照](https://go.microsoft.com/fwlink/?LinkId=238512)」をご覧ください。
 
  EnvDTE 名前空間 (EnvDTE、EnvDTE80、EnvDTE90、EnvDTE90a、または EnvDTE100) に手動で参照を追加するときは、[プロパティ] ウィンドウで参照の [相互運用型の埋め込み] プロパティを False に設定します。 このプロパティを True に設定すると、埋め込むことができない EnvDTE プロパティが原因でビルドの問題が発生する可能性があります。
 
@@ -131,7 +131,7 @@ ms.locfileid: "72645484"
 
     HKEY_LOCAL_MACHINE ノードにレジストリ キーを作成すると、すべてのユーザーが特定の場所にあるアセンブリを **[参照の追加]** ダイアログ ボックスに表示できるようになります。 HKEY_CURRENT_USER ノードにレジストリ キーを作成すると、現在のユーザーの設定にのみ影響します。
 
-    **[参照の追加]** ダイアログ ボックスを再度開きます。 アセンブリが **[.net]** タブに表示されます。そうでない場合は、アセンブリが指定された*Assemblylocation*ディレクトリに配置されていることを確認し、Visual Studio を再起動して、もう一度やり直してください。
+    **[参照の追加]** ダイアログ ボックスを再度開きます。 The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
 
 ## <a name="com-tab"></a>[COM] タブ
  [COM] タブには、参照できるすべての COM コンポーネントの一覧が表示されます。 内部マニフェストを含む登録済みの COM DLL に参照を追加する場合は、その DLL の登録をまず解除してください。 そうしない場合は、Visual Studio は、アセンブリ参照をネイティブ DLL ではなく、ActiveX コントロールとして追加します。
@@ -216,4 +216,4 @@ ms.locfileid: "72645484"
  **[参照マネージャー]** ダイアログ ボックス内の検索バーは、現在フォーカスが置かれているタブを対象として動作します。 たとえば、 **[ソリューション]** タブにフォーカスがあるときにユーザーが検索バーに「System」と入力した場合は、"System" という文字列を含むプロジェクト名がソリューションを形成している状況以外では、検索結果が返されません。
 
 ## <a name="see-also"></a>参照
- [NIB 方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除し、](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [プロジェクト内の参照を管理](../ide/managing-references-in-a-project.md)する
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)

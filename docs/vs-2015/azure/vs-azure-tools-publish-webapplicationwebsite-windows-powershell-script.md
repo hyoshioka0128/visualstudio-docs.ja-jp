@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dba4e9143c02a76763372a12153b2e22f612959c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624439"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298129"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -38,7 +38,7 @@ Publish-WebApplicationWebSite
 | パラメーター | 既定値 |
 | --- | --- |
 | Aliases |none |
-| 必須? |true |
+| 必須? |TRUE |
 | 位置 |名前付き |
 | 既定値 |none |
 | パイプライン入力を許可する |False |
@@ -57,7 +57,7 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | ワイルドカード文字を許可する |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](http://go.microsoft.com/fwlink/p/?LinkID=623089)」を参照してください。
+Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](https://go.microsoft.com/fwlink/p/?LinkID=623089)」を参照してください。
 
 | パラメーター | 既定値 |
 | --- | --- |
@@ -123,5 +123,5 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
 
 JSON 構成ファイルは、デプロイ対象を変更するように編集できます。 webSite のセクションは必須ですが、データベースのセクションは省略可能です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 詳細については、「 [Publish-WebApplicationVM (Windows PowerShell スクリプト)](vs-azure-tools-publish-webapplicationvm.md)

@@ -1,5 +1,5 @@
 ---
-title: レイヤー図の拡張 |Microsoft Docs
+title: Extend layer diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 48fdddd8711086ff185e64df6981cd6848ad1f51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669631"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301026"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Visual Studio では、コードを記述してレイヤー図を生成および
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- [Visual Studio 2015 のモデリング SDK](http://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  適切なバージョンの Visual Studio をレイヤー拡張機能を実行するコンピューターにインストールしておく必要があります。 詳細については、「[レイヤーモデル拡張機能の配置](../modeling/deploy-a-layer-model-extension.md)」を参照してください。
+  適切なバージョンの Visual Studio をレイヤー拡張機能を実行するコンピューターにインストールしておく必要があります。 For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).
 
   レイヤー図をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -61,4 +61,4 @@ Visual Studio では、コードを記述してレイヤー図を生成および
  [レイヤー図の拡張機能のトラブルシューティング](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>参照
- [モデリング拡張機能レイヤー図の定義とインストール](../modeling/define-and-install-a-modeling-extension.md) [: 参照](../modeling/layer-diagrams-reference.md)[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)[コードからレイヤー図を作成](../modeling/create-layer-diagrams-from-your-code.md)する[レイヤー図を使用](../modeling/validate-code-with-layer-diagrams.md)してコードを検証する[UML モデル](../modeling/generate-files-from-a-uml-model.md)[からファイルを生成するVisual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md) [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md) [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md) [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

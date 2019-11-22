@@ -1,5 +1,5 @@
 ---
-title: ヘルプビューアーのトラブルシューティング |Microsoft Docs
+title: Troubleshooting the Help Viewer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 490525cded11a4cddbbfb3f650d87c55b2fa196b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654768"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299899"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>ヘルプ ビューアーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ ms.locfileid: "72654768"
 ## <a name="additional-resources"></a>その他の資料
  次のリソースを使用して、ヘルプ ビューアーで詳細情報を取得し、フィードバックを提供することができます。
 
-- フィードバックを提供するには、Microsoft の Web サイト、[Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) をご覧になるか、[hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com) まで電子メールを送信してください。
+- フィードバックを提供するには、Microsoft の Web サイト、[Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) をご覧になるか、[hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com) まで電子メールを送信してください。
 
-- 詳細については、[Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) (デベロッパー ドキュメントおよびヘルプ システム) フォーラムおよび [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) (ヘルプ ガイ) ブログを参照してください。
+- 詳細については、[Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) (デベロッパー ドキュメントおよびヘルプ システム) フォーラムおよび [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) (ヘルプ ガイ) ブログを参照してください。
 
 ## <a name="see-also"></a>参照
- [ヘルプ ビューアー 2.1 の管理者ガイド](http://go.microsoft.com/fwlink/?LinkId=243985)
+ [ヘルプ ビューアー 2.1 の管理者ガイド](https://go.microsoft.com/fwlink/?LinkId=243985)

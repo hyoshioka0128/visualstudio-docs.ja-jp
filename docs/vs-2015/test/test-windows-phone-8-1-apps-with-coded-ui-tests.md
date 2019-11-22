@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e314b63490387b94c068e178f0d02db4822921f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672170"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301841"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>コード化された UI テストを使用した Windows UWP および 8.1 Phone アプリのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,19 +24,19 @@ ms.locfileid: "72672170"
 
 1. Visual C# または Visual Basic テンプレートを使用して、空の Windows Phone アプリ用の新しいプロジェクトを作成します。
 
-     ![新しい Windows Phone アプリを作成する](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
+     ![Create a new Windows Phone app](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
 
 2. ソリューション エクスプローラーで、MainPage.xaml を開きます。 ツールボックスから、ボタン コントロールとテキスト ボックス コントロールをデザイン サーフェイスにドラッグします。
 
-     ![Mainpage.xaml を Mainpage.xaml に追加する](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
+     ![Add contols to MainPage.xaml](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
 
 3. [プロパティ] ウィンドウで、このボタン コントロールに名前を付けます。
 
-     ![ボタンコントロールの名前を指定する](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
+     ![Name the button control](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
 
 4. テキスト ボックス コントロールに名前を付けます。
 
-     ![Textbox コントロールの名前を指定する](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")
+     ![Name the textbox control](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")
 
 5. デザイナー画面でボタン コントロールをダブルクリックし、次のコードを追加します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "72672170"
 
 6. F5 キーを押してエミュレーターで Windows Phone アプリを実行し、アプリが機能することを確認します。
 
-     ![Windows Phone アプリを実行する](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
+     ![Run the Windows Phone app](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
 
 7. エミュレーターを終了します。
 
@@ -68,11 +68,11 @@ ms.locfileid: "72672170"
 
 1. コード化された UI テストでアプリのコントロールをマップするには、その前に、アプリを配置する必要があります。
 
-     ![Windows Phone アプリをデプロイする](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
+     ![Deploy the Windows Phone app](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
 
      エミュレーターが開始します。 これで、テストに対してアプリを使用できるようになりました。
 
-     ![エミュレーターにデプロイされたアプリ](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
+     ![App deployed on emulator](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
 
      コード化された UI テストを作成する間は、エミュレーターを実行中のままにしてください。
 
@@ -82,39 +82,39 @@ ms.locfileid: "72672170"
 
 1. Windows Phone アプリを使用するソリューションに、新しいコード化された UI テスト プロジェクトを追加します。
 
-    ![Windows Phone の新しいコード化された UI テストを作成する](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")
+    ![Create new coded UI  test for Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")
 
 2. 十字線ツールを使用して UI マップを編集することを選択します。
 
-    ![クロス&#45;ヘアツールを使用して、コード化された UI テストを生成します。](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
+    ![Generate coded UI test using cross&#45;hair tool.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
 
 3. 十字線ツールを使用してアプリを選択してから、アプリの **[AutomationId]** プロパティの値をコピーします。この値は後で、テストでアプリを起動するために使用します。
 
-    ![アプリの AutomationId 値をコピーする](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
+    ![Copy the app's AutomationId value](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
 
 4. エミュレーターでアプリを起動し、十字線ツールを使用してボタン コントロールを選択します。 次に、ボタン コントロールを UI コントロール マップに追加します。
 
-    ![十字&#45;線ツールを使用してコントロールをマップする](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
+    ![Use the cross&#45;hair tool to map controls](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
 
 5. テキスト ボックス コントロールを UI コントロール マップに追加するには、前の手順を繰り返します。
 
-    ![十字&#45;線ツールとマップのテキストボックスコントロールの使用](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
+    ![Use the cross&#45;hair tool and map textbox control](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
 
 6. コードを生成して、UI コントロール マップの変更に対応するコードを作成します。
 
-    ![ビルダーからのコードの生成](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
+    ![Generate code from the builder](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
 
 7. 十字線ツールを使用してテキスト ボックス コントロールを選択し、 **[Text]** プロパティを選択します。
 
-    ![Text プロパティを選択します。](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")
+    ![Select the Text property](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")
 
 8. アサーションを追加します。 これは、値が正しいことを確認するためにテストで使用されます。
 
-    ![アサーションをテストに追加する](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")
+    ![Add assertion to the test](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")
 
 9. Assert メソッドのコードを追加および生成します。
 
-     ![アサーションのコードを生成する](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
+     ![Generate code for the assertion](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
 
 10. **Visual C#**
 
@@ -289,15 +289,15 @@ ms.locfileid: "72672170"
 
 1. テストをビルドし、テスト エクスプローラーを使用してテストを実行します。
 
-     ![テストエクスプローラーを使用してテストをビルドして実行する](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
+     ![Build and run the test using Test Explorer](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
 
      Windows Phone アプリが起動し、ボタンをタップする操作が完了し、Assert メソッドを使用してテキスト ボックスの Text プロパティが設定され、検証されます。
 
-     ![Winodws Phone テストを実行しています](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
+     ![Running Winodws Phone test](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
 
      テストの完了後、テストの成功を示す確認メッセージがテスト エクスプローラーに表示されます。
 
-     ![テストエクスプローラーの結果](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
+     ![Test Explorer results](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
 
 ## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Windows Phone アプリでのデータ ドリブンのコード化された UI テストの使用
  異なる条件をテストするために、異なるデータ セットを使用して、コード化された UI テストを複数回実行できます。
@@ -320,7 +320,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q: テストを実行できるのはエミュレーターだけですか? 物理デバイスを使用することもできますか?
  **A**: どちらのオプションもサポートされています。 テストの実行ターゲットを選択するには、エミュレーター タイプを変更するか、デバイスのツールバーでデバイスを選択します。 [デバイス] を選択する場合、Phone Blue デバイスがコンピューターのいずれかの USB ポートに接続されている必要があります。
 
- ![エミュレーターのバージョンまたは物理デバイスを選択します](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
+ ![Select the emulator version, or physcial device](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
 
 ### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q: [コード化された UI テスト] ダイアログの [コードの生成] に、コード化された UI テストを記録するオプションが表示されないのはなぜですか?
  **A**: 記録するオプションは、Windows Phone アプリではサポートされません。
@@ -382,7 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |データ ドリブン テスト|外部データ ソースの使用およびテスト メソッドでの DataSource 属性の使用については、「 [データ ドリブン テスト](../test/creating-a-data-driven-coded-ui-test.md) 」を参照してください。|データは、テスト メソッドの DataRow 属性を使用して、インラインで指定されます。 このトピックの「 [Windows Phone アプリでのデータ ドリブンのコード化された UI テストの使用](#TestingPhoneAppsCodedUI_DataDriven) 」を参照してください。|
 
 ## <a name="external-resources"></a>外部リソース
- Microsoft Visual Studio アプリケーション ライフサイクル管理ブログ: [コード化された UI を使用して XAML ベースの Windows Phone アプリをテストする](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
+ Microsoft Visual Studio アプリケーション ライフサイクル管理ブログ: [コード化された UI を使用して XAML ベースの Windows Phone アプリをテストする](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments)
 
 ## <a name="see-also"></a>参照
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

@@ -1,5 +1,5 @@
 ---
-title: アプリをユニバーサル Windows プラットフォームに移行する (UWP) |Microsoft Docs
+title: Migrate apps to the Universal Windows Platform (UWP) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 76590f55b21f1609a20c6fd8eb041a41a0f82131
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656029"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299473"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>アプリを Universal Windows Platform (UWP) へ移行する
 Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows Phone 8.1 アプリ、またはユニバーサル Windows アプリ用の既存のプロジェクト ファイルに必要な変更を手動で加え、Visual Studio 2015 RTM で使用できるようにします。 (Windows アプリのプロジェクトと Windows Phone プロジェクトの両方を備えた Windows 8.1 ユニバーサル アプリがある場合、各プロジェクトを移行するための手順に従う必要があります。)
@@ -31,13 +31,13 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
   これらのすべての変更を加えない場合は、新しいユニバーサル Windows プロジェクトに [既存のアプリを移植する方法](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) を参照してください。
 
-## <a name="MigrateCSharp"></a>C#/VB Windows ストア8.1 または Windows Phone 8.1 アプリを移行して、ユニバーサル Windows プラットフォームを使用する
+## <a name="MigrateCSharp"></a> Migrate your C#/VB Windows Store 8.1 or Windows Phone 8.1 apps to use the Universal Windows Platform
 
 #### <a name="migrate-your-cvb-project-files"></a>C#/VB プロジェクト ファイルを移行する
 
 1. インストールされているユニバーサル Windows プラットフォームを見つけるには、次のフォルダーを開きます: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 これには、インストールされているユニバーサル Windows プラットフォームごとのフォルダーの一覧が含まれています。 フォルダー名は、インストールされているユニバーサル Windows プラットフォームのバージョンです。 たとえば、この Windows 10 デバイスには、ユニバーサル Windows プラットフォームのバージョン 10.0.10240.0 がインストールされています。
 
-     ![フォルダーを開いて、インストールされているバージョンを確認します。](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      ユニバーサル Windows プラットフォームの複数のバージョンをインストールすることができます。 アプリに対応した最新バージョンを使用することをお勧めします。
 
@@ -82,19 +82,19 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 5. ソリューション エクスプローラーで、アプリの既存のプロジェクトを右クリックし、 **[プロジェクトのアンロード]** を選択します。 プロジェクトをアンロードした後、プロジェクト ファイルを再度右クリックして、.csproj または .vbproj ファイルの編集を選択します。
 
-     ![プロジェクトを右クリックし、[編集] を選択します。](../misc/media/uap-editproject.png "UAP_EditProject")
+     ![Right click the project and choose Edit](../misc/media/uap-editproject.png "UAP_EditProject")
 
-6. 値が8.1 の \<TargetPlatformVersion > 要素を含む \<PropertyGroup > 要素を検索します。 この \<PropertyGroup > 要素に対して次の手順を実行します。
+6. Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:
 
-    1. @No__t_0Platform > 要素の値を**x86**に設定します。
+    1. Set the value of the \<Platform> element to: **x86**.
 
-    2. @No__t_0TargetPlatformIdentifier > 要素を追加し、その値を**UAP**に設定します。
+    2. Add a \<TargetPlatformIdentifier> element and set its value to: **UAP**.
 
-    3. @No__t_0TargetPlatformVersion > 要素の既存の値を、インストールしたユニバーサル Windows プラットフォームバージョンの値に変更します。 また、\<TargetPlatformMinVersion > 要素を追加し、同じ値を指定します。
+    3. Change the existing value of the \<TargetPlatformVersion> element to be the value of the Universal Windows Platform version that you installed. Also add a \<TargetPlatformMinVersion> element and give it the same value.
 
-    4. @No__t_0MinimumVisualStudioVersion の > 要素の値を**14**に変更します。
+    4. Change the value of the \<MinimumVisualStudioVersion> element to: **14**.
 
-    5. 次に示すように、\<ProjectTypeGuids > 要素を置き換えます。
+    5. Replace the \<ProjectTypeGuids> element as shown below:
 
          C# の場合 :
 
@@ -108,11 +108,11 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
         ```
 
-    6. @No__t_0EnableDotNetNativeCompatibleProfile > 要素を追加し、その値を**true**に設定します。
+    6. Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: **true**.
 
-    7. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 200でスケーリングされていない資産がプロジェクトに含まれている場合は、資産のスケールの値を持つ \<UapDefaultAssetScale > 要素をこの PropertyGroup に追加する必要があります。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
+    7. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
 
-         ここで、\<PropertyGroup の > 要素は次の例のようになります。
+         Now your \<PropertyGroup> element should look similar to this example:
 
         ```xml
         <PropertyGroup>
@@ -140,7 +140,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
         <VisualStudioVersion>14.0</VisualStudioVersion>
     ```
 
-8. 条件属性の一部として AnyCPU プラットフォーム用に構成されている \<PropertyGroup > 要素を検索します。 これらの要素と、そのすべての子を削除します。 Visual Studio 2015 RC において、AnyCPU は Windows 10 アプリではサポートされていません。 たとえば、次のような \<PropertyGroup の > 要素を削除する必要があります。
+8. Find \<PropertyGroup> elements that are configured for the AnyCPU platform as part of the Condition attribute. これらの要素と、そのすべての子を削除します。 Visual Studio 2015 RC において、AnyCPU は Windows 10 アプリではサポートされていません。 For example, you should remove \<PropertyGroup> elements like these ones:
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -164,7 +164,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
       </PropertyGroup>
     ```
 
-9. 残りの各 \<PropertyGroup > 要素について、要素にリリース構成の Condition 属性があるかどうかを確認します。 含まれていても \<UseDotNetNativeToolchain > 要素が含まれていない場合は、それを追加します。 次のように、\<UseDotNetNativeToolchain の > 要素の値を true に設定します。
+9. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
@@ -181,7 +181,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
       </PropertyGroup>
     ```
 
-10. Windows Phone のプロジェクトの場合のみ、値 WindowsPhoneApp を持つ \<TargetPlatformIdentifier の > 要素を含む \<PropertyGroup > 要素を削除します。 また、この要素の子をすべて削除します。
+10. For Windows Phone projects only, remove the \<PropertyGroup> element that contains a \<TargetPlatformIdentifier> element with a value of WindowsPhoneApp. また、この要素の子をすべて削除します。
 
     ```xml
     <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
@@ -189,27 +189,27 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </PropertyGroup>
     ```
 
-11. @No__t_1AppxManifest > 要素を含む \<ItemGroup > 要素を検索します。 次の \<None > 要素を \<ItemGroup > 要素の子として追加します。
+11. Find the \<ItemGroup> element that contains the \<AppxManifest> element. Add the following \<None> element as a child of the \<ItemGroup> element:
 
     ```xml
     <None Include="project.json" />
     ```
 
-12. プロジェクトに追加されている他のアセット (logo .png ファイルなど) を含む \<ItemGroup > 要素を見つけます (\<Content Include = "Assets\Logo.scale-100.png"/>)。 次の \<Content > 子要素をこの \<ItemGroup > 要素に追加します。
+12. Find the \<ItemGroup> element that contains other assets that are added to your project such as logo .png files (\<Content Include="Assets\Logo.scale-100.png" />). Add the following \<Content> child element to this \<ItemGroup> element:
 
-     **のC#場合:**
+     **For C#:**
 
     ```xml
     <Content Include="Properties\default.rd.xml" />
     ```
 
-     **VB の場合:**
+     **For VB:**
 
     ```xml
     <Content Include="My Project\default.rd.xml" />
     ```
 
-13. @No__t_1Reference > 子要素を NuGet パッケージに含む \<ItemGroup > 要素を検索します。 プロジェクトを再読み込みした後に、NuGet パッケージ マネージャーで NuGet パッケージをダウンロードする必要があるため、使用する NuGet パッケージに注意してください。 この \<ItemGroup > をその子と共に削除します。 たとえば、ある UWP プロジェクトでは次の NuGet パッケージを削除する必要があるかもしれません。
+13. Find the \<ItemGroup> element that includes \<Reference> children elements to NuGet packages. プロジェクトを再読み込みした後に、NuGet パッケージ マネージャーで NuGet パッケージをダウンロードする必要があるため、使用する NuGet パッケージに注意してください。 Remove this \<ItemGroup> along with its children. たとえば、ある UWP プロジェクトでは次の NuGet パッケージを削除する必要があるかもしれません。
 
     ```xml
     <ItemGroup>
@@ -246,13 +246,13 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
      次に、Windows ストア 8.1 または Windows Phone 8.1 プロジェクトの [パッケージ マニフェスト ファイルを更新する](#PackageManifest) 手順に従う必要があります。
 
-## <a name="MigrateCPlusPlus"></a>C++ Windows ストア8.1 または Windows Phone 8.1 アプリを移行して、ユニバーサル Windows プラットフォームを使用する
+## <a name="MigrateCPlusPlus"></a> Migrate your C++ Windows Store 8.1 or Windows Phone 8.1 apps to use the Universal Windows Platform
 
 #### <a name="migrate-your-c-project-files"></a>C++ プロジェクト ファイルを移行する
 
 1. インストールされているユニバーサル Windows プラットフォームを見つけるには、次のフォルダーを開きます: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 これには、インストールされているユニバーサル Windows プラットフォームごとのフォルダーの一覧が含まれています。 フォルダー名は、インストールされているユニバーサル Windows プラットフォームのバージョンです。 たとえば、この Windows 10 デバイスには、ユニバーサル Windows プラットフォームのバージョン 10.0.10240.0 がインストールされています。
 
-     ![フォルダーを開いて、インストールされているバージョンを確認します。](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      ユニバーサル Windows プラットフォームの複数のバージョンをインストールすることができます。 アプリに対応した最新バージョンを使用することをお勧めします。
 
@@ -260,23 +260,23 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
      ソリューション エクスプローラーで、既存のプロジェクトを右クリックし、 **[プロジェクトのアンロード]** を選択します。 プロジェクトをアンロードした後、プロジェクト ファイルを再度右クリックして、.vcxproj ファイルの編集を選択します。
 
-     ![[&#45;プロジェクトファイル] を右クリックし、[編集] を選択します。](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
+     ![Right&#45;click project file and choose to edit](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
 
-3. 値が8.1 の \<ApplicationTypeRevision > 要素を含む \<PropertyGroup > 要素を検索します。 この \<PropertyGroup > 要素に対して次の手順を実行します。
+3. Find the \<PropertyGroup> element that contains the \<ApplicationTypeRevision> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:
 
-    1. @No__t_0WindowsTargetPlatformVersion > 要素と \<WindowsTargetPlatformMinVersion > 要素を追加して、インストールしたユニバーサル Windows プラットフォームバージョンの値を指定します。
+    1. Add a \<WindowsTargetPlatformVersion> element and a \<WindowsTargetPlatformMinVersion> element and give them the value of the Universal Windows Platform version that you installed.
 
     2. ApplicationTypeRevision 要素の値を 8.1 から 10.0 に更新します。
 
-    3. @No__t_0MinimumVisualStudioVersion の > 要素の値を14に変更します。
+    3. Change the value of the \<MinimumVisualStudioVersion> element to: 14.
 
-    4. @No__t_0EnableDotNetNativeCompatibleProfile > 要素を追加し、その値を true に設定します。
+    4. Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: true.
 
-    5. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 200でスケーリングされていない資産がプロジェクトに含まれている場合は、資産のスケールの値を持つ \<UapDefaultAssetScale > 要素をこの PropertyGroup に追加する必要があります。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
+    5. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
 
-    6. Windows Phone プロジェクトの場合のみ、\<ApplicationType の > の値を Windows Phone から Windows ストアに変更します。
+    6. For Windows Phone projects only, change the value of \<ApplicationType> from Windows Phone to Windows Store.
 
-         ここで、\<PropertyGroup の > 要素は次の例のようになります。
+         Now your \<PropertyGroup> element should look similar to this example:
 
         ```xml
         <PropertyGroup>
@@ -292,7 +292,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
         </PropertyGroup>
         ```
 
-4. @No__t_0PlatformToolset > 要素のすべてのインスタンスを、値 v140 に変更します。 (例:
+4. Change all instances of the \<PlatformToolset> element to have the value v140. (例:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -304,7 +304,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
       </PropertyGroup>
     ```
 
-5. 残りの各 \<PropertyGroup > 要素について、要素にリリース構成の Condition 属性があるかどうかを確認します。 含まれていても \<UseDotNetNativeToolchain > 要素が含まれていない場合は、それを追加します。 次のように、\<UseDotNetNativeToolchain の > 要素の値を true に設定します。
+5. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
@@ -323,16 +323,16 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
      次に、Windows ストア 8.1 または Windows Phone 8.1 プロジェクトの [パッケージ マニフェスト ファイルを更新する](#PackageManifest) 手順に従う必要があります。
 
-## <a name="PackageManifest"></a>すべての Windows ストア8.1 または Windows Phone 8.1 プロジェクトのパッケージマニフェストファイルを更新する
+## <a name="PackageManifest"></a> Update your package manifest file for all your Windows Store 8.1 or Windows Phone 8.1 projects
  ソリューション内のプロジェクトごとに、パッケージのマニフェスト ファイルを更新する必要があります。
 
 #### <a name="update-your-package-manifest-file"></a>パッケージ マニフェスト ファイルを更新する
 
 1. プロジェクトの Package.appxmanifest ファイルを開きます。 Windows ストアと Windows Phone のプロジェクトごとに、Package.AppxManifest ファイルを編集する必要があります。
 
-2. 既存のプロジェクトの種類に基づいて新しいスキーマを使用して、\<Package > 要素を更新する必要があります。 最初に、Windows ストアまたは Windows Phone プロジェクトがあるかどうかに基づいて、以下のスキーマを削除します。
+2. You need to update the \<Package> element with the new schemas based on your existing project type. 最初に、Windows ストアまたは Windows Phone プロジェクトがあるかどうかに基づいて、以下のスキーマを削除します。
 
-    **Windows ストアプロジェクトの古いバージョン:** @No__t_1Package > 要素は、次のようになります。
+    **OLD for Windows Store project:** Your \<Package> element will look similar to this one.
 
    ```xml
    <Package
@@ -341,7 +341,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-    **Windows Phone プロジェクトの古いバージョン:** @No__t_1Package > 要素は、次のようになります。
+    **OLD for Windows Phone project:** Your \<Package> element will look similar to this one.
 
    ```xml
    <Package
@@ -351,7 +351,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
    ```
 
-    **ユニバーサル Windows プラットフォームの新:** 以下のスキーマを \<Package > 要素に追加します。 削除したスキーマの要素から、関連した名前空間の識別子のプレフィックスを削除します。 IgnorableNamespaces プロパティを uap mp に更新します。 新しい \<Package > 要素は、次のようになります。
+    **NEW for Universal Windows Platform:** Add the schemas below to your \<Package> element. 削除したスキーマの要素から、関連した名前空間の識別子のプレフィックスを削除します。 IgnorableNamespaces プロパティを uap mp に更新します。 Your new \<Package> element should look similar to this one.
 
    ```xml
    <Package
@@ -362,7 +362,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-3. @No__t_1Package > 要素に \<Dependencies > 子要素を追加します。 次に、Name、MinVersion、および MaxVersionTested テストされた属性を使用して、この \<Dependencies > 要素に \<TargetDeviceFamily > 子要素を追加します。 Name 属性の値に Windows.Universal を指定します。 MinVersion と MaxVersionTested に、インストールしたユニバーサル Windows プラットフォームのバージョンの値を指定します。 この要素は次のようになります。
+3. Add a \<Dependencies> child element to the \<Package> element. Then add a \<TargetDeviceFamily> child element to this \<Dependencies> element with Name, MinVersion, and MaxVersionTested attributes. Name 属性の値に Windows.Universal を指定します。 MinVersion と MaxVersionTested に、インストールしたユニバーサル Windows プラットフォームのバージョンの値を指定します。 この要素は次のようになります。
 
    ```xml
    <Dependencies>
@@ -370,16 +370,16 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
    </Dependencies>
    ```
 
-4. **Windows ストアのみ:** @No__t_2Package > 要素に \<mp:P honeIdentity > child 要素を追加する必要があります。 PhoneProductId 属性と PhonePublisherId 属性を追加します。 @No__t_0Identity > 要素の Name 属性と同じ値になるように、"a" の Productid を設定します。 PhonePublishedId の値を 00000000-0000-0000-0000-000000000000 に設定します。 以下に例を示します。
+4. **For Windows Store only:** You need to add a \<mp:PhoneIdentity> child element to the \<Package> element. PhoneProductId 属性と PhonePublisherId 属性を追加します。 Set the PhoneProductId to have the same value as the Name attribute in the \<Identity> element. PhonePublishedId の値を 00000000-0000-0000-0000-000000000000 に設定します。 以下に例を示します。
 
    ```xml
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />
    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
    ```
 
-5. @No__t_0Prerequisites > 要素を検索し、この要素とその子要素を削除します。
+5. Find the \<Prerequisites> element and delete this element and any child elements that it has.
 
-6. **Uap**名前空間を、Scale、DXFeatureLevel の各 \<Resource > 要素に追加します。 (例:
+6. Add the **uap** namespace to the following \<Resource> elements: Scale, DXFeatureLevel. (例:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-7. **Uap**名前空間を \<Capability > 要素、PicturesLibrary、VideosLibrary、MusicLibrary、Enterpriseauthentication、sharedUserCertificates、removableStorage、予定、および連絡先に追加します。 (例:
+7. Add the **uap** namespace to the following \<Capability> elements: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments, and contacts. (例:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-8. **Uap**名前空間を \<VisualElements > 要素とその子要素のいずれかに追加します。 (例:
+8. Add the **uap** namespace to the \<VisualElements> element and any of its child elements. (例:
 
    ```xml
    <uap:VisualElements
@@ -414,7 +414,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-    **Windows ストアにのみ適用されます:** タイル サイズの名前が変更されました。 新しい収束タイルのサイズを反映するように、\<VisualElements > 要素の属性を変更します。 70x70 は 71x71 になり、30x30 は 44x44 になります。
+    **Windows ストアにのみ適用されます:** タイル サイズの名前が変更されました。 Change the attributes in the \<VisualElements> element to reflect the new converged tile sizes. 70x70 は 71x71 になり、30x30 は 44x44 になります。
 
     **OLD:** タイル サイズの名前
 
@@ -444,7 +444,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-9. **Uap**名前空間を \<ApplicationContentUriRules > とそのすべての子要素に追加します。 (例:
+9. Add the **uap** namespace to the \<ApplicationContentUriRules> and all its child elements. (例:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-10. **Uap**名前空間を、次の \<Extension > 要素とそのすべての子要素に追加します。 appointmentsProvider、windows. alarm、Windows. autoPlayContent、Windows. Autoplaycontent、cachedFileUpdate、cameraSettings、windows. fileOpenPicker、windows. Fileopenpicker、fileSavePicke、lockScreenCall、、printTaskSettings、windows. protocol、windows. shareTarget、を選択してください。 (例:
+10. Add the **uap** namespace to the following \<Extension> elements and all of its child elements: windows.accountPictureProvide,  windows.alarm, windows.appointmentsProvider windows.autoPlayContent,  windows.autoPlayDevice, windows.cachedFileUpdate, windows.cameraSettings, windows.fileOpenPicker, windows.fileTypeAssociation, windows.fileSavePicke, windows.lockScreenCall, windows.printTaskSettings, windows.protocol, windows.search, windows.shareTarget. (例:
 
     ```xml
     <Extensions>
@@ -480,9 +480,9 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-12. フレームワークの依存関係を変更します。 すべての \<PackageDependency > 要素に発行者名を追加し、まだ指定されていない場合は MinVersion を指定します。
+12. フレームワークの依存関係を変更します。 Add a Publisher name to all \<PackageDependency> elements, and specify a MinVersion if it’s not already specified.
 
-     **OLD:** \<PackageDependency > 要素
+     **OLD:** \<PackageDependency> element
 
     ```xml
     <Dependencies>
@@ -491,7 +491,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-     **NEW:** \<PackageDependency > 要素
+     **NEW:** \<PackageDependency> element
 
     ```xml
     <Dependencies>
@@ -507,7 +507,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 (例:
 
-     **まで**
+     **OLD:**
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -530,7 +530,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 (例:
 
-     **まで**
+     **OLD:**
 
     ```xml
     <Capabilities>
@@ -558,13 +558,13 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 15. 非推奨の要素を削除します。
 
-    1. これらの \<VisualElements > の属性は非推奨とされます。削除する必要があります。
+    1. These attributes for \<VisualElements> are deprecated and should be removed:
 
-       - @No__t_0VisualElements > 属性: ForegroundText、ToastCapable
+       - The \<VisualElements> attributes: ForegroundText, ToastCapable
 
-       - @No__t_0DefaultTile > 属性 DefaultSize
+       - The \<DefaultTile> attribute DefaultSize
 
-       - @No__t_0ApplicationView > 要素
+       - The \<ApplicationView> element
 
          (例:
 
@@ -585,7 +585,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 17. ソリューションを再度開く前に、いくつかの隠しファイルを削除する必要があります。
 
-    1. ファイル エクスプローラーを開き、ツールバーの **[表示]** をクリックして、 **[非表示項目]** と **[ファイル名拡張子]** を選択します。 コンピューターでこのフォルダーを開きます。ソリューションの場所 > \\. vs \\ {Project Name} \ v14に \<path します。 .suo ファイル拡張子の付いたファイルがある場合は、それを削除します。
+    1. ファイル エクスプローラーを開き、ツールバーの **[表示]** をクリックして、 **[非表示項目]** と **[ファイル名拡張子]** を選択します。 Open this folder on your machine: \<path for the location of your solution>\\.vs\\{Project Name}\v14. .suo ファイル拡張子の付いたファイルがある場合は、それを削除します。
 
     2. ここで、ソリューションが存在するフォルダーに戻ります。 ソリューション内に存在するプロジェクトのフォルダーを開きます。 これらのプロジェクト フォルダー内のファイルに csproj.user または vbproj.user 拡張子がある場合、それを削除します。
 
@@ -593,21 +593,21 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
          ユニバーサル Windows プラットフォームの新機能を活用するように [コードを適合させる方法](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) について説明します。
 
-## <a name="PreviousVersions"></a>Visual Studio 2015 RC で作成された既存のユニバーサル Windows アプリに必要な変更
+## <a name="PreviousVersions"></a> Changes required for existing Universal Windows apps created with Visual Studio 2015 RC
  Visual Studio 2015 RC で Windows 10 ユニバーサル アプリを作成した場合は、Visual Studio 2015 の最新版のリリースでインストールされたユニバーサル Windows プラットフォームのバージョンを使用するように、プロジェクトを再ターゲットする必要があります。 以前のバージョンはサポートされていません。 必要な変更は、アプリの作成に使用した言語によって異なります。
 
-- [C#/VB アプリ](#RCUpdate10CSharp)
+- [C#/VB apps](#RCUpdate10CSharp)
 
-- [C++選ぶ](#RCUpdate10CPlusPlus)
+- [C++ apps](#RCUpdate10CPlusPlus)
 
-### <a name="RCUpdate10CSharp"></a>最新のC#ユニバーサル Windows プラットフォームを使用するように/VB プロジェクトを更新する
+### <a name="RCUpdate10CSharp"></a> Update your C#/VB projects to use the latest Universal Windows Platform
  既存のアプリのソリューションを開くと、アプリを更新する必要があることが表示されます。
 
- ![ソリューションエクスプローラーでプロジェクトを表示する](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")
+ ![View your project in Solution Explorer](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")
 
  ソリューション エクスプローラーからこのプロジェクトを再読み込みすることを選択する場合は、このダイアログ ボックスが表示されます。
 
- ![正しい SDK を使用するようにアプリを再ターゲットする](../misc/media/missingsdkforuap.png "MissingSDKforUAP")
+ ![Retarget your app to use the correct SDK](../misc/media/missingsdkforuap.png "MissingSDKforUAP")
 
  プロジェクトのユニバーサル Windows プラットフォーム SDK は非サポートになりましたので、インストールできません。 単に [OK] をクリックして、以下の手順に従います。
 
@@ -615,7 +615,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 1. インストールされているユニバーサル Windows プラットフォームを見つけるには、次のフォルダーを開きます: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 これには、インストールされているユニバーサル Windows プラットフォームごとのフォルダーの一覧が含まれています。 フォルダー名は、インストールされているユニバーサル Windows プラットフォームのバージョンです。 たとえば、この Windows 10 デバイスには、ユニバーサル Windows プラットフォームのバージョン 10.0.10240.0 がインストールされています。
 
-    ![フォルダーを開いて、インストールされているバージョンを確認します。](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+    ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
     ユニバーサル Windows プラットフォームの複数のバージョンをインストールすることができます。 アプリに対応した最新バージョンを使用することをお勧めします。
 
@@ -647,13 +647,13 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 3. Visual Studio を使用して、C#/VB ユニバーサル Windows アプリを含むソリューションを開きます。 プロジェクト ファイル (.csproj または .vbproj ファイル) を更新する必要があることが分かります。 プロジェクト ファイルを右クリックして、このファイルの編集を選択します。
 
-    ![プロジェクトを右クリックし、[編集] を選択します。](../misc/media/uap-editproject.png "UAP_EditProject")
+    ![Right click the project and choose Edit](../misc/media/uap-editproject.png "UAP_EditProject")
 
-4. @No__t_1TargetPlatformVersion > および \<TargetPlatformMinVersion > 要素を含む \<PropertyGroup > 要素を検索します。 @No__t_0TargetPlatformVersion > の既存の値を変更し、> 要素を \<TargetPlatformMinVersion して、インストールしたユニバーサル Windows プラットフォームと同じバージョンにします。
+4. Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements. Change the existing value of the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements to be the same version of the Universal Windows Platform that you have installed.
 
-    ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Visual Studio 2015 RC で作成されたプロジェクトには100でスケーリングされた資産が含まれています。この PropertyGroup には、100の値を持つ \<UapDefaultAssetScale > 要素を追加する必要があります。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
+    ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
 
-5. UWP 拡張 SDK (例: Windows Mobile SDK) に参照を追加した場合、SDK のバージョンを更新する必要があります。 たとえば、次の \<SDKReference > 要素です。
+5. UWP 拡張 SDK (例: Windows Mobile SDK) に参照を追加した場合、SDK のバージョンを更新する必要があります。 For example this \<SDKReference> element:
 
    ```xml
    <SDKReference Include="WindowsMobile, Version=10.0.0.1">
@@ -671,7 +671,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-6. Namae という値を持つ name 属性を持つ \<Target > 要素を検索します。 この要素とそのすべての子要素を削除します。
+6. Find the \<Target> element with a name attribute that has the value: EnsureNuGetPackageBuildImports. この要素とそのすべての子要素を削除します。
 
    ```xml
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -683,7 +683,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
    </Target>
    ```
 
-7. 次のように、\<Import の > 要素を見つけて削除します。プロジェクトと条件の属性は、次のように参照してください。
+7. Find and delete the \<Import> elements with Project and Condition attributes that reference Microsoft.Diagnostics.Tracing.EventSource and Microsoft.ApplicationInsights, like this:
 
    ```xml
    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />
@@ -691,9 +691,9 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-8. @No__t_1Reference 子要素を NuGet パッケージに > する \<ItemGroup > を見つけます。 この情報は今後のステップに必要なので、参照している NuGet パッケージに注意してください。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](http://docs.nuget.org/) バージョン 3 を使用することです。
+8. Find the \<ItemGroup> that has \<Reference> children elements to NuGet packages. この情報は今後のステップに必要なので、参照している NuGet パッケージに注意してください。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](https://docs.microsoft.com/nuget/) バージョン 3 を使用することです。
 
-    @No__t_0ItemGroup > とそのすべての子を削除します。 たとえば、Visual Studio RC で作成された、ある UWP プロジェクトでは次の NuGet パッケージを削除する必要があるかもしれません。
+    Remove the \<ItemGroup> and all its children. たとえば、Visual Studio RC で作成された、ある UWP プロジェクトでは次の NuGet パッケージを削除する必要があるかもしれません。
 
    ```xml
    <ItemGroup>
@@ -721,7 +721,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-9. @No__t_1AppxManifest > 要素を含む \<ItemGroup > 要素を検索します。 Include 属性が: packages に設定された \<None > 要素がある場合は、それを削除します。 また、Include 属性を持つ \<None > 要素を追加し、その値を: project. json に設定します。
+9. Find the \<ItemGroup> element that contains an \<AppxManifest> element. If there is a \<None> element with an Include attribute set to: packages.config, delete it. Also, add a \<None> element with an Include attribute and set its value to: project.json.
 
 10. 変更内容を保存します。 その後、プロジェクト ファイルを閉じます。
 
@@ -731,7 +731,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 13. プロジェクトの Package.appxmanifest ファイルを開きます。
 
-    1. @No__t_0TargetDeviceFamily > 要素を検索します。 MinVersion と MaxVersionTested 属性を変更して、インストールしたユニバーサル Windows プラットフォームのバージョンに対応させます。 以下に例を示します。
+    1. Find the \<TargetDeviceFamily> element. MinVersion と MaxVersionTested 属性を変更して、インストールしたユニバーサル Windows プラットフォームのバージョンに対応させます。 以下に例を示します。
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -739,31 +739,31 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     2. 変更内容を保存します。
 
-14. 前の手順で削除したパッケージを追加するには、NuGet マネージャーを使用します。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](http://docs.nuget.org/) バージョン 3 を使用することです。
+14. 前の手順で削除したパッケージを追加するには、NuGet マネージャーを使用します。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](https://docs.microsoft.com/nuget/) バージョン 3 を使用することです。
 
     これで、アプリをコーディング、ビルド、およびデバッグすることができます。
 
     ユニバーサル Windows アプリの単体テスト プロジェクトがある場合は、 [これらの手順](#MigrateUnitTest)も行う必要があります。
 
-### <a name="RCUpdate10CPlusPlus"></a>最新のC++ユニバーサル Windows プラットフォームを使用するようにプロジェクトを更新します
+### <a name="RCUpdate10CPlusPlus"></a> Update your C++ projects to use the latest Universal Windows Platform
 
 1. インストールされているユニバーサル Windows プラットフォームを見つけるには、次のフォルダーを開きます: **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 これには、インストールされているユニバーサル Windows プラットフォームごとのフォルダーの一覧が含まれています。 フォルダー名は、インストールされているユニバーサル Windows プラットフォームのバージョンです。 たとえば、この Windows 10 デバイスには、ユニバーサル Windows プラットフォームのバージョン 10.0.10240.0 がインストールされています。
 
-     ![フォルダーを開いて、インストールされているバージョンを確認します。](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
+     ![Open the folder to view the versions installed](../misc/media/uap-uwpversions.png "UAP_UWPVersions")
 
      ユニバーサル Windows プラットフォームの複数のバージョンをインストールすることができます。 アプリに対応した最新バージョンを使用することをお勧めします。
 
 2. C++ Windows ユニバーサル アプリを含むソリューションを開きます。 プロジェクト .vcxproj ファイルを右クリックして、プロジェクト ファイルのアンロードを選択します。 プロジェクトをアンロードした後、プロジェクト ファイルを再度右クリックして、その編集を選択します。
 
-     ![プロジェクトをアンロードし、プロジェクトファイルを編集します。](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")
+     ![Unload the project, then edit the project file](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")
 
-3. Condition 属性を含まないが、\<ApplicationTypeRevision > 要素を含む \<PropertyGroup > 要素を検索します。 ApplicationTypeRevision の値を 8.2 から 10.0 に更新します。 @No__t_0WindowsTargetPlatformVersion > と \<WindowsTargetPlatformMinVersion > 要素を追加し、インストールしたユニバーサル Windows プラットフォームバージョンの値になるように値を設定します。
+3. Find any \<PropertyGroup> elements that do not contain a Condition attribute but do contain an \<ApplicationTypeRevision> element. ApplicationTypeRevision の値を 8.2 から 10.0 に更新します。 Add a \<WindowsTargetPlatformVersion> and a \<WindowsTargetPlatformMinVersion> element and set their values to be the value of the Universal Windows Platform version that you installed.
 
-     要素がまだ存在しない場合は、\<EnableDotNetNativeCompatibleProfile > 要素を追加し、その値を true に設定します。
+     Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to true if the element does not already exist.
 
-     ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Visual Studio 2015 RC で作成されたプロジェクトには100でスケーリングされた資産が含まれています。この PropertyGroup には、100の値を持つ \<UapDefaultAssetScale > 要素を追加する必要があります。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
+     ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。
 
-     この \<PropertyGroup > 要素は次のようになります。
+     So this \<PropertyGroup> element will now be similar to this:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -779,7 +779,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-4. 残りの各 \<PropertyGroup > 要素について、要素にリリース構成の Condition 属性があるかどうかを確認します。 含まれていても \<UseDotNetNativeToolchain > 要素が含まれていない場合は、それを追加します。 次のように、\<UseDotNetNativeToolchain の > 要素の値を true に設定します。
+4. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -792,7 +792,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-5. .NET ネイティブを有効にするには、\<EnableDotNetNativeCompatibleProfile > 要素と \<UseDotNetNativeToolchain > 要素を更新する必要がありますが、 C++テンプレートでは .NET ネイティブが有効になっていません。
+5. You need to update the \<EnableDotNetNativeCompatibleProfile> element and the \<UseDotNetNativeToolchain> element to enable .NET Native, but .NET Native is not enabled in the C++ templates.
 
      変更内容を保存します。 その後、プロジェクト ファイルを閉じます。
 
@@ -800,7 +800,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 7. プロジェクトの Package.appxmanifest ファイルを開きます。
 
-    1. @No__t_0TargetDeviceFamily > 要素を検索します。 MinVersion と MaxVersionTested 属性を変更して、インストールしたユニバーサル Windows プラットフォームのバージョンに対応させます。 以下に例を示します。
+    1. Find the \<TargetDeviceFamily> element. MinVersion と MaxVersionTested 属性を変更して、インストールしたユニバーサル Windows プラットフォームのバージョンに対応させます。 以下に例を示します。
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -812,16 +812,16 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
          ユニバーサル Windows アプリの単体テスト プロジェクトがある場合は、 [これらの手順](#MigrateUnitTest)も行う必要があります。
 
-## <a name="MigrateUnitTest"></a>Visual Studio 2015 RC で作成されたユニバーサル Windows アプリの既存の単体テストプロジェクトに必要な変更
+## <a name="MigrateUnitTest"></a> Changes required for existing unit test projects for Universal Windows apps created with Visual Studio 2015 RC
  Visual Studio 2015 RC で Windows 10 ユニバーサル アプリの単体テスト プロジェクトを作成した場合、これらの追加の変更をプロジェクト ファイルに行い、Visual Studio 2015 の最新版のリリースでこれらのテスト プロジェクトを使用するようにしなければなりません。 必要な変更は、アプリの作成に使用した言語によって異なります。
 
-- [C#/VB アプリ](#UnitTestRCUpdate10CSharp)
+- [C#/VB apps](#UnitTestRCUpdate10CSharp)
 
-- [C++選ぶ](#UnitTestRCUpdate10CPlusPlus)
+- [C++ apps](#UnitTestRCUpdate10CPlusPlus)
 
-### <a name="UnitTestRCUpdate10CSharp"></a>/VB C#単体テストプロジェクトを更新する
+### <a name="UnitTestRCUpdate10CSharp"></a> Update your C#/VB unit test projects
 
-1. Visual Studio を使用して、C#/VB 単体テスト プロジェクトを含むソリューションを開きます。 @No__t_0OuttputType > 要素の値を: AppContainerExe に変更します。
+1. Visual Studio を使用して、C#/VB 単体テスト プロジェクトを含むソリューションを開きます。 Change the value of the \<OuttputType> element to: AppContainerExe.
 
    ```xml
 
@@ -829,7 +829,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-2. この要素 \<EnableCoreRuntime > false \</EnableCoreRuntime > を次の要素に置き換えます。
+2. Replace this element \<EnableCoreRuntime>false\</EnableCoreRuntime> with the following element:
 
    ```xml
 
@@ -867,7 +867,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-4. この要素 \<UseDotNetNativeToolchain > true \</UseDotNetNativeToolchain > を子要素としてこれらのプロパティグループに追加します。
+4. Add this element \<UseDotNetNativeToolchain>true\</UseDotNetNativeToolchain> as a child element to these property groups:
 
    ```xml
 
@@ -877,7 +877,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-5. 次の \<ItemGroup > 要素を削除します。
+5. Delete the following \<ItemGroup> elements:
 
    ```xml
 
@@ -992,7 +992,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    これで単体テストを実行できます。
 
-### <a name="UnitTestRCUpdate10CPlusPlus"></a>最新のC++ユニバーサル Windows プラットフォームを使用するようにプロジェクトを更新します
+### <a name="UnitTestRCUpdate10CPlusPlus"></a> Update your C++ projects to use the latest Universal Windows Platform
 
 1. Visual Studio を使用して、C++ 単体テスト プロジェクトを含むソリューションを開きます。 次の要素を削除します。
 
@@ -1005,7 +1005,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-2. この要素の下に次の \<ProjectConfiguration > 要素を追加します \<ItemGroup Label = "ProjectConfigurations" > がこの fille にまだ存在しない場合はします。
+2. Add the following \<ProjectConfiguration> elements below this element \<ItemGroup Label="ProjectConfigurations"> if they are not already in this fille:
 
     ```xml
 
@@ -1036,7 +1036,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-4. これらの \<PropertyGroup > 要素がまだファイルにない場合は追加します。
+4. Add these \<PropertyGroup> elements if they are not already in the file:
 
     ```xml
 
@@ -1086,7 +1086,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-7. 既に他の \<ItemDefinitionGroup > 要素が含まれているセクションに、これらの \<ItemDefinitionGroup > 要素を追加します。
+7. Add these \<ItemDefinitionGroup> elements in the section that already contains other \<ItemDefinitionGroup> elements:
 
     ```xml
 
@@ -1113,7 +1113,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-8. 次の \< ItemGroup > 要素を削除します。
+8. Delete the following \< ItemGroup> element:
 
     ```xml
 
@@ -1127,7 +1127,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-     この \<ItemGroup > 要素に置き換えます。
+     Replace it with this \<ItemGroup> element:
 
     ```xml
 
@@ -1143,7 +1143,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-9. 次の \< ItemGroup > 要素を削除します。
+9. Delete the following \< ItemGroup> element:
 
     ```xml
 
@@ -1152,7 +1152,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </ItemGroup>
     ```
 
-     次の \<ItemGroup > 要素に置き換えます。
+     Replace it with these \<ItemGroup> elements:
 
     ```xml
 
@@ -1176,7 +1176,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     <ClCompile Include="UnitTest.cpp"/>
     ```
 
-     次の \<CICompile > 要素に置き換えます。
+     Replace it with these \<CICompile> elements:
 
     ```xml
 

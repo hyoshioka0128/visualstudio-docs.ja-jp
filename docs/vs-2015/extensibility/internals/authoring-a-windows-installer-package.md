@@ -1,5 +1,5 @@
 ---
-title: Windows インストーラー パッケージの作成 |Microsoft Docs
+title: Authoring a Windows Installer Package | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 58529dabbb52ceb751c67be24beb1d21285a1de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682542"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301133"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows インストーラー パッケージの編集
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-データ ドライブの Windows インストーラーのモデル。 にファイルをコピーし、レジストリ エントリを書き込む手続き型のスクリプトを作成するのではなくなどを作成するデータ ファイルおよびレジストリ データが含まれているデータベース テーブルの行と列。  
+Data drives the Windows Installer model. Rather than writing a procedural script to copy files and write registry entries, for example, you author rows and columns in database tables that contain file and registry data.  
   
 ## <a name="database-entries"></a>[データベース エントリ]  
- VSPackage をインストールするには、Windows インストーラー パッケージは、次のタスクを実行するデータベースのエントリを含める必要があります。  
+ To install a VSPackage, a Windows Installer package must contain database entries to perform the following tasks:  
   
-- システムのバージョンを検索する検索[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](AppSearch、CompLocator、RegLocator、DrLocator、および署名を含む Windows インストーラー テーブルを使用)、VSPackage がサポートしています。  
+- Search the system to locate the versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] your VSPackage supports (using Windows Installer tables that include AppSearch, CompLocator, RegLocator, DrLocator, and Signature).  
   
-- サポートされているバージョンはない場合は、インストールをキャンセル[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]がインストールされている、VSPackage のもう 1 つのシステム要件が満たされていない場合 (起動条件のテーブルを使用) またはします。  
+- Cancel the installation if no supported version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is installed or if another system requirement of the VSPackage is not met (using the LaunchCondition table).  
   
-- VSPackage と (ディレクトリ、コンポーネント、およびファイル テーブルを使用) の依存ファイルをインストールします。  
+- Install the VSPackage and dependent files (using the directory, component, and file tables).  
   
-- VSPackage の適切な情報を (レジストリのテーブルを使用して)、レジストリに追加します。  
+- Add appropriate information for the VSPackage to the registry (using the Registry table).  
   
-- VSPackage の統合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼び出して**devenv.exe/setup** (CustomAction テーブルを使用)。  
+- Integrate the VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by calling **devenv.exe /setup** (using the CustomAction table).  
   
-  詳細については、次を参照してください。 [Windows インストーラー](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)します。  
+  For more information, see [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
-## <a name="setup-tools"></a>セットアップ ツール  
- さまざまなサードパーティ製のセットアップ ツールは、Windows インストーラー パッケージの開発環境を提供します。 2 つの無償ツール、次に示します。  
+## <a name="setup-tools"></a>Setup Tools  
+ A variety of third-party setup tools provide a development environment for Windows Installer packages. Two free tools are the following:  
   
 - InstallShield Limited Edition  
   
-   Visual Studio で InstallShield の制限付きバージョンを取得できます**新しいプロジェクト**ダイアログ。 展開**その他のプロジェクトの種類**選び**セットアップと配置**します。 InstallShield のテンプレートを選択します。  
+   You can get a limited version of InstallShield through the Visual Studio **New Project** dialog. Expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template.  
   
 - Windows Installer XML Toolset  
   
-   ツールセットは、XML ソース ファイルからの Windows インストーラー パッケージをビルドします。 ツールセットは、Microsoft オープン ソース プロジェクトです。 ソース コードおよび実行可能ファイルをダウンロードする[ http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix)します。  
+   The Toolset builds Windows Installer packages from XML source files. The Toolset is a Microsoft open-source project. You can download the source code and executables from [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/).  
   
-  商用製品に統合する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を使用して、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]を参照してください[ https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)します。  
+  For commercial products that integrate into [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by using the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], see [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Windows インストーラーによる VSPackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

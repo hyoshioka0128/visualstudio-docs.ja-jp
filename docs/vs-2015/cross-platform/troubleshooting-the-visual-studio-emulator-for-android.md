@@ -1,5 +1,5 @@
 ---
-title: Emulator for Android のトラブルシューティング |Microsoft Docs
+title: Troubleshooting the Emulator for Android | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263386"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297641"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "66263386"
 ## <a name="BeforeYouStart"></a> 開始する前に
  トラブルシューティングを開始する前に、次のトピックを参照すると便利です。
 
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
 ## <a name="NoInstall"></a> エミュレーターをインストールできない
  Hyper-V がインストールされていないと、エミュレーターのインストール時に次のメッセージが表示されます。 HyperV がコンピューターでサポートされていて、有効になっていなければなりません。
@@ -134,7 +134,7 @@ ms.locfileid: "66263386"
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     セットアップに誤りがあり、Windows 10 を使っている場合は、 [netcfg –d コマンドを使ってネットワーク デバイスを再インストール](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (セクション 6) してみることもできます。
+     セットアップに誤りがあり、Windows 10 を使っている場合は、 [netcfg –d コマンドを使ってネットワーク デバイスを再インストール](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (セクション 6) してみることもできます。
 
 - これらの手順を実行しても問題が解決しない場合は、エミュレーターに干渉している可能性のあるサード パーティ ソフトウェアの情報について、「 [Emulator fails to start (first use)](#NoStart) 」をご覧ください。
 
@@ -173,7 +173,7 @@ ms.locfileid: "66263386"
 
      - Trusted Execution を無効にする
 
-       詳細については、TechNet 記事「Hyper-V: How to Fix BIOS Errors Enabling Hyper-V」 (Hyper-V を有効にして BIOS エラーを修正する方法) を参照してください。
+       詳細については、TechNet の記事「Hyper-v を有効にして BIOS エラーを修正する方法」を参照してください。
 
   5. 少なくとも 4 GB のシステム メモリがあり、リソースを大量に消費する他のプログラムおよびプロセスによって消費されていないことを確認します。
 
@@ -191,7 +191,7 @@ ms.locfileid: "66263386"
 
    一般に、Windows 8 および Hyper-V と互換性のあるソフトウェアを更新するかどうかは、製品の開発者の責任となります。
 
-   次の製品は、Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性があります: VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、Cisco VPN クライアントの一部のバージョン、およびその他の仮想化システム。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
+   Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性がある製品には、VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、一部のバージョンの Cisco VPN クライアント、およびその他の仮想化システムがあります。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
 
    **回避策**として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには以下のようなものがあります。
 
@@ -209,7 +209,7 @@ ms.locfileid: "66263386"
 
   2. vEthernet (Internal Ethernet Port Windows Phone Emulator Internal Switch) アダプターの場合は、コンテキスト メニューから **[プロパティ]** を選択します。
 
-      ![Hyper&#45;V で使用される仮想アダプター](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
+      ![Hyper&#45;V により使用される仮想アダプター](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
 
       ここでアダプター プロパティが表示されます。
 
@@ -254,7 +254,7 @@ ms.locfileid: "66263386"
 
   この問題を解決するには、マザーボードの BIOS 設定で USB3 を無効にして、コンピューターを再起動します。 次に、Gigabyte からマザーボードの BIOS の更新プログラムがリリースされているかどうかを確認します。
 
-  詳細については、次の内容に関するサポート技術情報の記事を参照してください: [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/kb/2693144)。
+  詳細については、サポート技術情報の記事「 [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/kb/2693144)」を参照してください。
 
 ## <a name="ADB"></a> Visual Studio がエミュレーターにアプリを配置しようとして行き詰まっているか、エミュレーターが他の IDE でデバッグ ターゲットとして表示されません。
  エミュレーターが実行されていても、ADB (Android Debug Bridge) に接続されているように見えない、または ADB を利用する Android ツール (Android Studio や Eclipse など) 内で見えない場合は、エミュレーターが ADB を検索する場所を調整する必要があります。 エミュレーターはレジストリ キーを使用して、Android SDK の基本場所を識別し、そのディレクトリで \platform-tools\adb.exe ファイルを検索します。 エミュレーターで使用される Android SDK パスを変更するには、次のようにします。
@@ -311,6 +311,6 @@ ms.locfileid: "66263386"
 ## <a name="Support"></a> サポート リソース
  ホスト コンピューターがシステム要件を満たしていて、このトラブルシューティング ガイドに記載されていない問題が発生した場合は次のようにします。
 
-- [android エミュレーター](http://stackoverflow.com/questions/tagged/android-emulator) と visual-studio タグの試用について StackOverflow で質問を投稿します。
+- [android エミュレーター](https://stackoverflow.com/questions/tagged/android-emulator) と visual-studio タグの試用について StackOverflow で質問を投稿します。
 
 - Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705784"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295901"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio の JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE �
 
  特定のバージョンの Visual Studio、または特定の Visual Studio 拡張機能では、HTML および JavaScript を使用して特定の種類のアプリケーションとサービスを開発する必要があります。 次の一覧には詳細情報へのリンクがあります。
 
-- Apache Cordova を使用してクロスプラットフォーム アプリを作成するには、[Apache Cordova 用の Visual Studio Tools を取得](http://go.microsoft.com/fwlink/p/?LinkId=397606)します。
+- Apache Cordova を使用してクロスプラットフォーム アプリを作成するには、[Apache Cordova 用の Visual Studio Tools を取得](https://go.microsoft.com/fwlink/p/?LinkId=397606)します。
 
-- [Windows ストア](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop)、ユニバーサル アプリ (両方のプラットフォームをサポートするアプリ) を作成するには、[ツールを入手](https://developer.microsoft.com/windows/downloads)します。
+- [Windows ストア](https://developer.microsoft.com/)、[Windows Phone](https://developer.microsoft.com/)、ユニバーサル アプリ (両方のプラットフォームをサポートするアプリ) を作成するには、[ツールを入手](https://developer.microsoft.com/windows/downloads)します。
 
 - クラウドベースのサービスを作成するには、[Microsoft Azure サイト](https://azure.microsoft.com/documentation/)を参照してください。
 
-- Web サイトと Web アプリを作成するには、[ASP.NET サイト](http://www.asp.net/get-started/websites)を参照してください。
+- Web サイトと Web アプリを作成するには、[ASP.NET サイト](https://dotnet.microsoft.com/apps/aspnet/web-apps)を参照してください。
 
   > [!NOTE]
   > 空の ASP.Net Web サイトを作成して、HTML、CSS、および JavaScript のプログラミング用に使用できます。 ASP.NET によって提供される Webconfig ファイルは、Visual Studio でのデバッグを使用可能にします (またはアプリの実行時に F12 ツールを使用できます)。
@@ -41,7 +41,7 @@ JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE �
 ## <a name="whats-new-in-javascript"></a>JavaScript の新機能
  JavaScript の新機能は、以下の表にリストされています。
 
-|機能|説明|
+|特性|説明|
 |-------------|-----------------|
 |クラス|[クラス](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class)の宣言をサポートする新しい構文です。|
 |Promise|[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) を使用すると、より簡単で読みやすい非同期コーディングができます。 Promise コンストラクターは、`all` および `race` の各ユーティリティ メソッドと一緒にサポートされます。|

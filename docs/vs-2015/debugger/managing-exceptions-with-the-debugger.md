@@ -1,5 +1,5 @@
 ---
-title: デバッガーでの例外を管理する |Microsoft Docs
+title: Managing Exceptions with the Debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690507"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301089"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>デバッガーでの例外の管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ ms.locfileid: "65690507"
 ### <a name="setting-the-debugger-to-break-when-an-exception-is-thrown"></a>例外がスローされたときに中断されるようにデバッガーを設定する  
  例外がスローされた時点でデバッガーは実行を中断することができます。これにより、例外ハンドラーが呼び出される前に例外を調査する機会が与えられます。  
   
- **[例外設定]** ウィンドウで、例外のカテゴリのノード (たとえば、 **[共通言語ランタイム例外]**、すなわち、.NET に関する例外) を展開し、そのカテゴリ内の特定の例外 (たとえば、 **[System.AccessViolationException]**) のチェックボックスをオンにします。 例外のカテゴリ全体を選択することもできます。  
+ **[例外設定]** ウィンドウで、例外のカテゴリのノード (たとえば、 **[共通言語ランタイム例外]** 、すなわち、.NET に関する例外) を展開し、そのカテゴリ内の特定の例外 (たとえば、 **[System.AccessViolationException]** ) のチェックボックスをオンにします。 例外のカテゴリ全体を選択することもできます。  
   
- ![チェック AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  特定の例外を選択した場合、その例外がスローされるたびに、処理するか処理しないかに関係なく、デバッガーの実行は停止されます。 この時点で、例外は初回例外と呼ばれます。 例として、いくつかのシナリオを以下に示します。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "65690507"
    }  
    ```  
   
-     **try/catch** で **[例外設定]** のチェック ボックスをオンにした場合、このコードをデバッガーで実行すると、 `throw` 行で実行が中断されます。 実行は続行することができます。 コンソールには、次の行が両方とも表示される必要があります。  
+    **try/catch** で **[例外設定]** のチェック ボックスをオンにした場合、このコードをデバッガーで実行すると、 `throw` 行で実行が中断されます。 実行は続行することができます。 コンソールには、次の行が両方とも表示される必要があります。  
   
    ```  
    caught exception  
@@ -135,13 +135,13 @@ ms.locfileid: "65690507"
    }  
    ```  
   
-    ある場合**AccessViolationException**チェックイン**例外設定**、中断は、デバッガーの実行でこのコードを実行すると、`throw`両方で行**ある**と**ThrowUnhandledException()** します。  
+    If you have **AccessViolationException** checked in **Exception Settings**, when you run this code in the debugger execution will break on the `throw` line in both **ThrowHandledException()** and **ThrowUnhandledException()** .  
   
    例外設定を既定値に戻す場合は、ツールバーの **[復元]** ボタンをクリックします。  
   
-   ![例外設定の既定値に戻す](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restore defaults in Exception Settings](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a> ユーザーよって処理されない例外を続行するデバッガーを設定します。  
+### <a name="BKMK_UserUnhandled"></a> Setting the debugger to continue on user-unhandled exceptions  
  [ [Just My Code](../debugger/just-my-code.md)] を使用して .NET コードまたは JavaScript コードをデバッグする場合、ユーザー コードで処理されないが他の場所で処理される例外について、中断しないようにデバッガーを設定することができます。  
   
 1. **[例外設定]** ウィンドウでコンテキスト メニューを開くには、ウィンドウで右クリックし、 **[列の表示]** を選択します ( **[マイ コードのみ]** を選択していない場合、このコマンドは表示されません)。  
@@ -150,14 +150,14 @@ ms.locfileid: "65690507"
   
 3. この設定は、特定の例外に対して変更することも (例外を選択し、右クリックし、 **[ユーザー コードで処理されない場合は続行]** を選択または選択解除する)、例外のカテゴリ全体 (たとえば、すべての共通言語ランタイム例外) に対して変更することもできます。  
   
-   たとえば、ASP.NET Web アプリケーションは、例外を HTTP 500 状態コードに変換して処理します ([ASP.NET API での例外の処理](http://www.asp.net/web-api/overview/error-handling/exception-handling))。この場合、例外の原因を特定できないことがあります。 次の例では、ユーザー コードは、 `String.Format()` をスローする <xref:System.FormatException>を呼び出します。 実行は次のように中断されます。  
+   たとえば、ASP.NET Web アプリケーションは、例外を HTTP 500 状態コードに変換して処理します ([ASP.NET API での例外の処理](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling))。この場合、例外の原因を特定できないことがあります。 次の例では、ユーザー コードは、 `String.Format()` をスローする <xref:System.FormatException>を呼び出します。 実行は次のように中断されます。  
   
-   ![ユーザーの中断&#45;中断例外](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![breaks on user&#45;unhanlded exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>例外の追加と削除  
  例外は追加および削除することができます。 任意のカテゴリから任意の種類の例外を削除するには、例外を選択し、 **[例外設定]** ツールバーの **[削除]** ボタン (マイナス記号) をクリックするか、または例外を右クリックし、コンテキスト メニューから **[削除]** をクリックします。 例外を削除することは、例外をオフにするのと同じ結果になります。すなわち、該当する例外がスローされたとき、デバッガーは中断されません。  
   
- 例外を追加するには、 **[例外設定]** ウィンドウで、例外カテゴリの 1 つ (たとえば、 **[共通言語ランタイム]**) を選択し、 **[追加]** ボタンをクリックします。 例外の名前を入力します (たとえば、 **System.UriTemplateMatchException**)。 例外は一覧 (アルファベット順の) に追加され、自動的にオンになります。  
+ 例外を追加するには、 **[例外設定]** ウィンドウで、例外カテゴリの 1 つ (たとえば、 **[共通言語ランタイム]** ) を選択し、 **[追加]** ボタンをクリックします。 例外の名前を入力します (たとえば、 **System.UriTemplateMatchException**)。 例外は一覧 (アルファベット順の) に追加され、自動的にオンになります。  
   
  GPU メモリ アクセス例外、JavaScript ランタイム例外、または Win32 例外というカテゴリに例外を追加する場合は、エラー コードと説明を含める必要があります。  
   
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  **[例外設定]** に例外を次のように追加できます。  
   
- ![汎用の例外を追加する](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![adding generic exception](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>関連項目  
- [例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)   
- [方法: 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [方法: ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)   
- [C ランタイム ライブラリなしのチェックの実行時に使用します。](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [例外処理アシスタント](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+## <a name="see-also"></a>参照  
+ [Continuing Execution After an Exception](../debugger/continuing-execution-after-an-exception.md)   
+ [How to: Examine System Code After an Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [How to: Use Native Run-Time Checks](../debugger/how-to-use-native-run-time-checks.md)   
+ [Using Run-Time Checks Without the C Run-Time Library](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+ [Exception Assistant](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)

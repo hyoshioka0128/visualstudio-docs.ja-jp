@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee281e2cabcbce4f950188465163769caae7b2bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657239"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297975"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72657239"
 
  コード カバレッジは、テスト エクスプローラーを使用してテスト メソッドを実行する場合のオプションです。 結果テーブルには、各アセンブリ、クラス、およびメソッドで実行されたコードの割合が表示されます。 また、ソース エディターには、どのコードがテストされたかが表示されます。
 
- ![コードカバレッジの結果と色分け](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Code coverage results with coloring](../test/media/codecoverage1.png "CodeCoverage1")
 
  **Requirements**
 
@@ -36,7 +36,7 @@ ms.locfileid: "72657239"
 
 1. **[テスト]** メニューの **[コード カバレッジの分析]** を選択します。
 
-2. 実行された行を確認するには、[![コードカバレッジの色分け表示] アイコン](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[**コードカバレッジの色分けを表示**する] を選択します。
+2. To see which lines have been run, choose ![Show Code Coverage Coloring Icon](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.
 
      色を変更したり太字を使用したりする場合は、 **[ツール]** 、 **[オプション]** 、 **[環境]** 、 **[フォントおよび色]** 、 **[設定の表示: テキスト エディター]** の順に選択します。 **[表示項目]** でカバレッジ項目を調整します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "72657239"
 
  たとえば、入力が "2" のテストを実行したときに、特定の関数の 50% がカバーされるとします。 入力を "-2" にして再度テストを実行すると、カバレッジの色分けビューで、関数の残りの 50% がカバーされていることがわかるとします。 ここで、2 つのテスト実行の結果をマージすると、レポートやカバレッジの色分けビューで、関数の 100% がカバーされたことが表示されます。
 
- ![コードカバレッジウィンドウの [マージ] ボタンのアイコン](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")を使用して、**コードカバレッジの結果をマージ**します。 最新の実行またはインポートされた結果を任意の組み合わせで選択できます。 エクスポートされた結果を結合する場合は、まず、それらをインポートする必要があります。
+ Use ![Icon for Merge button in Code Coverage window](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Merge Code Coverage Results** to do this. 最新の実行またはインポートされた結果を任意の組み合わせで選択できます。 エクスポートされた結果を結合する場合は、まず、それらをインポートする必要があります。
 
  マージ操作の結果を保存するには、 **[コード カバレッジの結果のエクスポート]** を使用します。
 
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  .runsettings ファイルを記述すると、コード カバレッジ分析の対象としてどのアセンブリと要素を選択するかをより詳細に制御できます。 たとえば、クラスに属性を追加せずに、特定の種類のアセンブリを除外できます。 詳細については、「[コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)」を参照してください。
 
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>ビルド サービスでコード カバレッジを分析する
- コードをチェックインすると、テストがビルド サーバー上で、他のチーム メンバーによる他のすべてのテストと共に実行されます。 (まだ設定していない場合は、「[ビルドプロセスでのテストの実行](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)」を参照してください)。ビルドサービスでコードカバレッジを分析すると便利です。これにより、プロジェクト全体のカバレッジを最新で包括的に把握できます。 これには、自動化されたシステム テストと、通常は開発用コンピューターでは実行しない、その他のコード化されたテストも含まれます。
+ コードをチェックインすると、テストがビルド サーバー上で、他のチーム メンバーによる他のすべてのテストと共に実行されます。 (If you haven’t already set this up, see [Run tests in your build process](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) It’s useful to analyze code coverage on the build service, because that gives the most up-to-date and comprehensive picture of coverage in the whole project. これには、自動化されたシステム テストと、通常は開発用コンピューターでは実行しない、その他のコード化されたテストも含まれます。
 
 1. チーム エクスプローラーで、 **[ビルド]** を開き、ビルド定義を追加または編集します。
 
@@ -260,7 +260,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
       **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の省略記号 ( **[...]** ) ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、 **[テスト ランナー]** の下の **[Visual Studio テスト ランナー]** を選択します。
 
-   ![コードカバレッジのビルド定義の設定](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Setting the build definition for code coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    ビルドの実行後、コード カバレッジの結果はテスト実行にアタッチされ、ビルドの概要に表示されます。
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>参照
- [コードカバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)コード[カバレッジ](../test/troubleshooting-code-coverage.md)[の単体テストコードのテスト](../test/unit-test-your-code.md)
+ [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md) [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md) [Unit Test Your Code](../test/unit-test-your-code.md)

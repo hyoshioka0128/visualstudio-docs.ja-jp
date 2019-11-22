@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8672d04bd2311c5bda5e2bb1bc9dc1455764f96a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657159"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301414"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim を使用して単体テストでアプリケーションを他のアセンブリから分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Shim 型** は、テスト中のコンポーネントを環境から簡単に分
 
 - Visual Studio Enterprise
 
-  1 時間 16 分の動画「[Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)」 (Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする) をご覧ください。
+  1 時間 16 分の動画「[Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)」 (Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする) をご覧ください。
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> 例: Y2K バグ
  2000 年 1 月 1 日に例外をスローするメソッドについて考えてみましょう。
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>参照
- [Microsoft のフェイクを使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md) [: Peter Provost のブログ: Visual studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [ビデオ (1h16): Visual studio 2012 でのフェイクによるテスト不可能なコードのテスト](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost’s blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)

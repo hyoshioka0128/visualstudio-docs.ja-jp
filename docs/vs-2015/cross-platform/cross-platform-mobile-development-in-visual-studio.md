@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824183"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297889"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 - [Android、iOS、および Windows 用のクロスプラットフォーム ゲームを Visual Studio Tools for Unity を使用してビルドする](#Unity)
 
 ## <a name="NET"></a> Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)
- ![デバイス](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
 
  Xamarin を利用すれば、コードや UI を共有し、同じソリューションで Android、iOS、Windows を対象にできます。
 
 |**詳細を表示**|
 |--------------------|
-|[Visual Studio のインストール](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio での Xamarin について学習する](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Visual Studio のインストール](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Visual Studio での Xamarin について学習する](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Visual Studio と Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN ライブラリ)|
 |[Xamarin アプリを使用したアプリケーション ライフサイクル管理 (ALM)](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN ライブラリ)|
 |[Visual Studio でのユニバーサル Windows アプリについて学習する](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Swift と C# との間の類似点について学習する](https://aka.ms/scposter) (download.microsoft.com)|
-|[Visual Studio Emulator for Android について学習する](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Visual Studio Emulator for Android について学習する](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
  C# または F# を使用することで (Visual Basic は現時点ではサポートされていません)、Android、iOS、Windows のネイティブ アプリを開発できます。  最初に Visual Studio 2015 をインストールし、インストーラーで **[カスタム]** オプションを選択し、[クロス プラットフォームのモバイル開発] の **[C#/.NET (Xamarin)]** ボックスを選択します。 [Xamarin インストーラー](https://www.xamarin.com/download)で開始することもできます。このインストーラーは Xamarin for Visual Studio 2013 のインストールに必須です。
@@ -67,16 +67,16 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>すべてのデバイス用にレンダリングするページを 1 セット、Xamarin.Forms を使用してデザインする
  アプリのデザインの複雑さによっては、プロジェクト テンプレートの [ *Mobile Apps* ] グループにある **[Xamarin.Forms]** テンプレートを使用して作成することを検討します。 Xamarin.Forms は、Android、iOS、Windows 間で共有できる単一のユーザー インターフェイスを作成する UI ツールキットです。  Xamarin.Forms ソリューションをコンパイルすると、Android アプリ、iOS アプリ、Windows アプリが生成されます。 詳細については、「[Xamarin によるモバイル開発の概要](../cross-platform/learn-about-mobile-development-with-xamarin.md)」を参照してください。
 
-#### <a name="ShareHTML"></a> Android、iOS、Windows アプリ間でコードを共有する
+#### <a name="ShareHTML"></a> Android、iOS、および Windows アプリ間でコードを共有する
  Xamarin.Forms を使用せず、プラットフォームごとに個別にデザインすることにした場合は、UI 以外のコードの大部分をプラットフォームのプロジェクト (Android、iOS、および Windows) 間で共有できます。 これには、ビジネス ロジック、クラウド統合、データベース アクセス、または .NET Framework を対象とするその他のコードが含まれます。 特定のプラットフォームを対象とするコードのみ、共有することができません。
 
- ![Windows、iOS、Android の UI でコードを共有](../cross-platform/media/sharecode.png "ShareCode")
+ ![Windows、iOs、Android の UI でコードを共有](../cross-platform/media/sharecode.png "ShareCode")
 
  共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方を使用して、コードを共有できます。 共有プロジェクトに最適なコードもあれば、ポータブル クラス ライブラリ プロジェクトにより適したコードもあります。
 
-|**詳細情報**|
+|**詳細を表示**|
 |--------------------|
-|共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方のいずれを使用してコードを共有するかを選択する。<br /><br /> [プラットフォーム間でコードを共有する](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework ブログ)<br /><br /> [コード共有のオプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [.NET Framework によるコード共有のオプション](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN ライブラリ)|
+|共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方のいずれを使用してコードを共有するかを選択する。<br /><br /> [プラットフォーム間でコードを共有する](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework ブログ)<br /><br /> [コード共有のオプション](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [.NET Framework によるコード共有のオプション](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN ライブラリ)|
 
 ### <a name="WindowsHTML"></a> Windows 10 デバイスを対象にする
  ![Windows デバイス](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -87,7 +87,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  Windows 10 はまだ新しいため、Windows 8.1 を対象にしたプロジェクト テンプレートも用意されています。 アプリを Windows 10 のスマートフォン、タブレット、および PC で実行する場合、必要であればこれらのプロジェクト テンプレートを使用できます。 ただし、Windows 8.1 を実行しているすべてのデバイスは Windows 10 への自動アップグレードが実行されるため、Windows 8.1 をターゲットにする特定の理由がない限り、Windows 10 を対象とするプロジェクト テンプレートを使用することをお勧めします。
 
-|**詳細情報**|
+|**詳細を表示**|
 |--------------------|
 |[ユニバーサル Windows アプリについて学習する](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows デベロッパー センター)|
 |[初めてのアプリをビルドする](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows デベロッパー センター)|
@@ -95,7 +95,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[アプリを Universal Windows Platform (UWP) へ移行する](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)
- ![デバイス](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
 
  HTML と JavaScript に精通した Web 開発者は、Visual Studio Tools for Apache Cordova を使用して、Windows、Android、および iOS を対象とすることができます。 これらのアプリは 3 つのすべてのプラットフォームを対象にすることができ、開発者が最も慣れているスキルとプロセスを使用してアプリを作成できます。
 
@@ -103,7 +103,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  これらの API はクロスプラットフォームであるため、記述するコードの大部分を 3 つのすべてのプラットフォーム間で共有できます。 このため、開発と保守のコストを削減できます。 また、ゼロから始める必要がありません。 他の種類の Web アプリケーションを既に作成してある場合は、Cordova アプリでそれらのファイルを共有できるため、修正や再設計の必要はありません。
 
- ![マルチデバイス ハイブリッド アプリ](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Multi&#45;Device Hybrid Apps](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  作業を開始するには、Visual Studio 2015 をインストールして、セットアップ中に **HTML/JavaScript (Apache Cordova)** 機能を選択します。 Visual Studio 2013 を使用している場合は、Visual Studio Tools for Apache Cordova の拡張機能をインストールしてください。 いずれにしても、Cordova ツールにより、マルチプラットフォーム アプリをビルドするために必要なすべてのサード パーティのソフトウェアが自動的にインストールされます。
 
@@ -113,20 +113,20 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  ユニバーサル Windows アプリを作成するためのプロジェクト テンプレートは、Visual Studio でまだ使用できるので、Windows デバイスだけを対象にする場合は、自由に使用してください。 後で Android および iOS を対象にすることを決定した場合は、いつでも Cordova プロジェクトにコードを移植できます。 WinJS API のオープン ソース バージョンがあるため、それらの API を使用するすべてのコードを再利用することができます。 つまり、将来他のプラットフォームを対象にすることを決定した場合、Visual Studio Tools for Apache Cordova から始めることをお勧めします。
 
-|**詳細情報**|
+|**詳細を表示**|
 |--------------------|
-|[Visual Studio のインストール](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio Tools for Apache Cordova の使用を開始する](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
-|[Visual Studio Emulator for Android について学習する](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Visual Studio のインストール](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Visual Studio Tools for Apache Cordova の使用を開始する](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Visual Studio Emulator for Android について学習する](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a> Android および Windows 用のアプリをビルドする (C++)
- ![C++ を使用し、Android、iOS、Windows 向けに開発する](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
+ ![C&#43;&#43; を使用して Android、iOS、Windows 用に作成する](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
 
  最初に、Visual Studio 2015 と Visual C++ for Cross Platform Mobile Development ツールをインストールします。 その後、Android 用のネイティブ アクティビティ アプリケーションか、Windows を対象とするアプリを構築できます。 iOS を対象とする C++ テンプレートは、まだ利用できません。 必要であれば、同じソリューションで Android と Windows を対象にし、クロスプラットフォームの静的または動的な共有ライブラリを使用して両方でコードを共有することができます。
 
  ゲームなどの高度なグラフィックス操作を必要とする Android アプリをビルドする必要がある場合に、C++ を利用できます。 **[ネイティブ アクティビティ アプリケーション (Android)]** プロジェクトから開始できます。 このプロジェクトでは、C 言語のツール チェーンが完全にサポートされます。
 
- ![ネイティブ アクティビティ プロジェクトのテンプレート](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
+ ![Native-Activity プロジェクトのテンプレート](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
 
  アプリケーションを実行して結果を確認する準備ができたら、Visual Studio Emulator for Android を使用できます。 高速で信頼性が高く、簡単にインストールして構成できます。
 
@@ -140,14 +140,14 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  これらのライブラリでコードを記述するときは、IntelliSense を使用して Android プラットフォームと Windows プラットフォームのネイティブ API を探索できます。 これらのライブラリ プロジェクトは Visual Studio デバッガーと完全に統合されるため、デバッガーの高度な機能をすべて活用して、ブレークポイントの設定、コードのステップ実行、問題点の検索と修正を行うことができます。
 
-|**詳細情報**|
+|**詳細を表示**|
 |--------------------|
-|[Visual Studio のダウンロード](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Visual C++ for Cross-Platform Mobile Development ツールのインストール](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN ライブラリ)|
 |[C++ を使用して複数のプラットフォームを対象とすることについて学習する](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[必要なものをインストールしてから、Android 用のネイティブ アクティビティ アプリケーションを作成する](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN ライブラリ)|
-|[Visual Studio Emulator for Android について学習する](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
-|[Android と Windows アプリでの C++ コードの共有について学習する](http://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx) (VisualStudio.com)|
+|[Visual Studio Emulator for Android について学習する](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
+|[Android と Windows アプリでの C++ コードの共有について学習する](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
 |[C++ のクロス プラットフォーム モバイル開発の例](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN ライブラリ)|
 |[C++ のクロス プラットフォーム モバイル開発のその他の例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -160,16 +160,16 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  Unity と Visual Studio Tools for Unity を使用したゲームの構築を、今すぐに開始できます。
 
-|**詳細情報**|
+|**詳細を表示**|
 |--------------------|
 |[Visual Studio での Unity ゲーム構築について学習する](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[Visual Studio Tools for Unity の詳細について](../cross-platform/visual-studio-tools-for-unity.md) (MSDN ライブラリ)|
 |[Visual Studio Tools for Unity の使用を開始する](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (MSDN ライブラリ)|
-|[Visual Studio Tools for Unity 2.0 Preview の最新の拡張機能について学習する](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (Visual Studio ブログ)|
-|[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (ビデオ)|
-|[Unity について学習する](http://unity3d.com/) (Unity Web サイト)|
+|[Visual Studio Tools for Unity 2.0 Preview の最新の拡張機能について学習する](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio ブログ)|
+|[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (ビデオ)|
+|[Unity について学習する](https://unity.com/) (Unity Web サイト)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio プロジェクトに Office 365 API を追加する](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Azure モバイル サービス](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)

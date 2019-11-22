@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657208"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297954"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでのさまざまな Web ブラウザーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ ms.locfileid: "72657208"
 
   - Windows Internet Explorer 10
 
-  - Mozilla Firefox と Google Chrome のサポートされているバージョンについては、[こちら](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)を参照してください。
+  - Mozilla Firefox と Google Chrome のサポートされているバージョンについては、[こちら](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)を参照してください。
 
-- [コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)をインストールします。
+- [コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)をインストールします。
 
   **すべての Web ブラウザーでサポートされている機能**
 
-- プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx)します。
+- プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)します。
 
 - ポップアップとダイアログ ボックス
 
-- [戻り値の型を持たない基本 JavaScript を実行します](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [戻り値の型を持たない基本 JavaScript を実行します](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- 検索の回復機能 (スマート一致を使用) と[パフォーマンスの向上](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- 検索の回復機能 (スマート一致を使用) と[パフォーマンスの向上](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>コード化された UI テストを複数の Web ブラウザーの種類で使用する理由
  さまざまな種類の Web ブラウザーを使用して Web アプリケーションをテストすることにより、さまざまなブラウザーを実行するユーザーの UI 操作をより適切にエミュレートできます。 たとえば、他の Web ブラウザーとの互換性がない、Internet Explorer のコントロールまたはコードが、アプリケーションに含まれていることがあります。 コード化された UI テストを他のブラウザーでも実行することにより、ユーザーへの影響が生じる前に問題を検出して修正できます。
@@ -76,7 +76,7 @@ ms.locfileid: "72657208"
 3. 拡張機能を強調表示し、 **[ダウンロード]** を選択します。
 
    > [!TIP]
-   > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)からもダウンロードできます。
+   > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)からもダウンロードできます。
 
    コード化された UI テストの作成方法と使用方法の詳細については、「[コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)」を参照してください。
 
@@ -101,17 +101,17 @@ ms.locfileid: "72657208"
  *その他に知っておく必要があること*
  **注**
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")Apple Safari web ブラウザーはサポートされていません。
+- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")Web ブラウザーを起動するアクションは、コード化された UI テストの一部である必要があります。
+- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
 
    既に Web ブラウザーが開かれていて、そこで手順を実行すると、Internet Explorer を使用していない場合は再生が失敗します。 そのため、コード化された UI テストの一部として Web ブラウザーの起動を含めることをお勧めします。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")最大化、最小化、復元など、ブラウザー固有の UI 操作の自動化はサポートされていません。
+- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
 
   **ヒント**
 
-- ![ヒント](../test/media/tip.png "ヒント")出力を構成して、コード化された UI ログにスクリーンショットを含めることができます。 そのためには、QTAgent32.exe.config ファイルの一部の構成設定を設定する必要があります。 既定では、このファイルは次の場所にインストールされます。
+- ![Tip](../test/media/tip.png "ヒント") You can configure the output to include screenshots in the coded UI logs. そのためには、QTAgent32.exe.config ファイルの一部の構成設定を設定する必要があります。 既定では、このファイルは次の場所にインストールされます。
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -139,17 +139,17 @@ ms.locfileid: "72657208"
  [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>よくあるご質問
- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>フォーラム
- [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>参照
- [Ui オートメーションを使用して、コード](../test/use-ui-automation-to-test-your-code.md)化された ui テスト[と操作の記録に対してサポートされている構成とプラットフォームの](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)テストコード化された ui テストの[ログ](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

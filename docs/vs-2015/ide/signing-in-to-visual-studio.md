@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2015 | にサインインします。Microsoft Docs
+title: Sign in to Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661219"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301229"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio へのサインイン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 - IDE で、**Azure や Visual Studio Team Services などのサービスに自動的に接続** され、同じアカウントの資格情報を再度要求されることはなくなります。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio にサインインする方法
- Visual Studio を初めて起動すると、サインインして基本登録情報を入力するように求められます。 Microsoft アカウント、またはユーザーを最も的確に表す職場や学校のアカウントを選択してください。 これらのアカウントがない場合は、Microsoft アカウントを無料で作成できます。 「 [Microsoft アカウントへのサインアップ方法](http://windows.microsoft.com/windows-live/sign-up-create-account-how)」をご覧ください。
+ Visual Studio を初めて起動すると、サインインして基本登録情報を入力するように求められます。 Microsoft アカウント、またはユーザーを最も的確に表す職場や学校のアカウントを選択してください。 これらのアカウントがない場合は、Microsoft アカウントを無料で作成できます。 「 [Microsoft アカウントへのサインアップ方法](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)」をご覧ください。
 
  次に、Visual Studio で使用する UI 設定や配色テーマを選択します。 これらの設定は Visual Studio に保存され、サインインしたすべての Visual Studio 環境間で同期されます。 同期される設定の一覧については、「[Visual Studio での同期された設定](../ide/synchronized-settings-in-visual-studio.md)」を参照してください。 Visual Studio の **[ツール &#124; オプション]** メニューを開けば、これらの設定は後で変更できます。
 
  設定が終わったら、Visual Studio が起動し、サインインして、作業を開始できるようになります。 ログインしているかどうかを確認するには、Visual Studio 環境の右上隅に表示されているプロファイル名を探します。
 
- ![Currentlly ログインユーザー](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Currentlly logged in user](../ide/media/vs2015-username.png "VS2015_UserName")
 
  サインアウトしない限り、Visual Studio を起動すると自動的にサインインすることになり、同期された設定への変更が自動的に適用されます。 サインアウトするには、Visual Studio 環境の自分のプロファイル名の横にある下矢印をクリックし、 **[アカウント設定]** をクリックして、 **[サインアウト]** リンクをクリックします。 再度サインインするには、Visual Studio 環境の右上隅の **[サインイン]** をクリックします。
 

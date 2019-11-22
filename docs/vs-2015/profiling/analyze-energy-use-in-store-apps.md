@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697003"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299374"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>ストア アプリでのエネルギー使用の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
   
 - *エネルギー* は、バッテリの電力容量のような能力または潜在力として、または一定の時間内に消費された総電力量として、電力の総量を表します。 エネルギーの単位はワット時です。これは、1 ワットの電力を 1 時間にわたって常時加えた場合の電力量です。 **[Energy Summary]\(エネルギー使用の概要)** では、単位はミリワット時間 **(mW-h)** で表示されます。  
   
-  ![エネルギー キャパシティ、使用電力、総使用エネルギー](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Energy capacity, power used, total energy used](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
   たとえば、タブレットの完全に充電されたバッテリには、一定量のエネルギーが蓄えられています。 エネルギーは、ネットワーク経由での通信、値の計算、グラフィックスの表示などのタスクを実行するために使用され、バッテリの電力が消費される速度もさまざまです。 一定の期間内に消費された総電力も、エネルギーで測定されます。  
   
 ## <a name="BKMK_Identify_scenarios_with_user_marks"></a> ユーザー マークによるシナリオの識別  
  また、タイムライン ルーラーの領域を識別できるようにプロファイル データに *ユーザー マーク* を追加できます。  
   
- ![タイムラインでのユーザー マーク](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![User marks in the timeline](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  マークは、タイムライン上でメソッドが実行された時点に、オレンジ色の三角形として表示されます。 マークの上にマウス ポインターを置くと、メッセージと時刻がツールヒントとして表示されます。 複数のユーザー マークが近接している場合、マークはマージされてツールヒントのデータはまとめられます。 タイムラインの表示を拡大すると、マークを分離できます。  
   
@@ -62,8 +62,6 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel は [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) インターフェイス (C# および VB で [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) として投影) を実装します。オペレーティング システム リソースのリークを防ぐには、ログ チャネルで終了するときに [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# および VB では Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) を呼び出します。  
 >   - 開いているログ記録チャネルそれぞれに一意の名前を付ける必要があります。 破棄されていないチャネルと同じ名前で新しくログ記録チャネルを作成しようとすると、例外が発生します。  
-  
- 例については、Windows SDK サンプル [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) を参照してください。  
   
  **JavaScript コードに対するマークの追加**  
   
@@ -89,7 +87,7 @@ if (performance && performance.mark) {
   
 1. **[デバッグ]** メニューの **[デバッグなしで診断を開始]** をクリックします。  
   
-     ![[診断ハブ] でエネルギー消費を選択](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
+     ![Choose Energy Consumption in the diagnostics hub](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
 2. **[エネルギー消費]** チェック ボックスをオンにし、 **[開始]** をクリックします。  
   
@@ -100,7 +98,7 @@ if (performance && performance.mark) {
   
 4. プロファイリングを停止するには、Visual Studio に戻り (Alt + Tab)、診断ハブのページの **[コレクションの停止]** をクリックします。  
   
-     ![データ収集の停止](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
+     ![Stop collecting data](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio が、収集したデータを分析し、結果を表示します。  
   
@@ -120,16 +118,16 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Analyze_energy_profile_data"></a> エネルギー プロファイル データの分析  
  エネルギー プロファイル データは、Visual Studio のドキュメント ウィンドウに次のように表示されます。  
   
- ![エネルギー プロファイラー レポート ページ](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
+ ![Energy profiler report page](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
   
 |||  
 |-|-|  
-|![手順 1](../profiling/media/procguid-1.png "ProcGuid_1")|レポート ファイルの名前は、Report*YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|  
-|![手順 2](../profiling/media/procguid-2.png "ProcGuid_2")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|  
-|![手順 3](../profiling/media/procguid-3.png "ProcGuid_3")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|  
-|![手順 4](../profiling/media/procguid-4.png "ProcGuid_4")|**[消費電力]** グラフは、プロファイル セッション中にデバイス リソースによって引き起こされる電源出力の変化を系列別に表示する折れ線グラフです。 エネルギー消費量プロファイラーは、CPU、ネットワーク アクティビティ、および画面表示によって使用された電力を追跡します。|  
-|![手順 5](../profiling/media/procguid-6.png "ProcGuid_6")|**[リソース (オン/オフ)]**  グラフは、ネットワークのエネルギー コストの詳細を示します。 **[ネットワーク]** バーは、ネットワーク接続が開かれていた時間を表します。 **[データ転送]** 子バーは、アプリがネットワーク経由でデータを受信または送信していた時間です。|  
-|![手順 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|**[エネルギー使用の概要]** は、選択されたタイムラインで CPU、ネットワーク アクティビティ、および画面表示によって使用された総エネルギーの割合を示します。|  
+|![ステップ 1](../profiling/media/procguid-1.png "ProcGuid_1")|レポート ファイルの名前は、Report*YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|  
+|![ステップ 2](../profiling/media/procguid-2.png "ProcGuid_2")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|  
+|![ステップ 3](../profiling/media/procguid-3.png "ProcGuid_3")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|  
+|![ステップ 4](../profiling/media/procguid-4.png "ProcGuid_4")|**[消費電力]** グラフは、プロファイル セッション中にデバイス リソースによって引き起こされる電源出力の変化を系列別に表示する折れ線グラフです。 エネルギー消費量プロファイラーは、CPU、ネットワーク アクティビティ、および画面表示によって使用された電力を追跡します。|  
+|![Step 5](../profiling/media/procguid-6.png "ProcGuid_6")|**[リソース (オン/オフ)]**  グラフは、ネットワークのエネルギー コストの詳細を示します。 **[ネットワーク]** バーは、ネットワーク接続が開かれていた時間を表します。 **[データ転送]** 子バーは、アプリがネットワーク経由でデータを受信または送信していた時間です。|  
+|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|**[エネルギー使用の概要]** は、選択されたタイムラインで CPU、ネットワーク アクティビティ、および画面表示によって使用された総エネルギーの割合を示します。|  
   
  **エネルギー プロファイル データを分析するには**  
   
@@ -138,11 +136,11 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Optimize_energy_use"></a> エネルギー使用の最適化  
  ネットワーク接続では、データ送信の他にも、接続の初期化、維持、およびシャットダウン時にエネルギー コストが発生します。 一部のネットワークでは、データの送受信後も一定期間接続を維持することで、1 つの接続でさらにデータを転送できるようになっています。 **[リソース (オン/オフ)]** ウィンドウを使用して、アプリが接続とどのように連係しているかを調べることができます。  
   
- ![[リソース &#40;オン&#47;オフ&#41;] ウィンドウ](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![Resources &#40;On&#47;Off&#41; pane](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  **[ネットワーク]** バーと **[データ転送]** バーが、一連の小さいデータ パケットを断続的に送信するために接続が長期間開かれていることを示している場合は、データをバッチ処理して 1 回の伝送で送信することで、ネットワークが開かれている時間を短縮し、エネルギー コストを削減することができます。  
   
- ![エネルギー消費の概要ペイン](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
+ ![Energy Consumption Summary pane](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
   
  ディスプレイのエネルギー コストは、あまり制御できません。 ほとんどの画面では、暗い色より明るい色を表示する際に多くのエネルギーが必要になるため、暗い背景を使用することはエネルギー コストを削減する方法の 1 つです。  
   

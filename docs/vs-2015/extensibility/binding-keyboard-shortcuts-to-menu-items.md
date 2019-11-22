@@ -1,5 +1,5 @@
 ---
-title: メニュー項目にバインドのキーボード ショートカット |Microsoft Docs
+title: Binding Keyboard Shortcuts to Menu Items | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405643"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295624"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>キーボード ショートカットのメニュー項目へのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-カスタム メニュー コマンドをキーボード ショートカットをバインドするには、だけパッケージの .vsct ファイルにエントリを追加します。 このトピックでは、カスタム ボタン、メニュー項目、またはツールバーのコマンドをキーボード ショートカットをマップする方法と、既定のエディターのキーボード マッピングを適用またはカスタム エディターに制限する方法について説明します。  
+To bind a keyboard shortcut to a custom menu command, just add an entry to the .vsct file for the package. This topic explains how to map a keyboard shortcut to a custom button, menu item, or toolbar command, and how to apply the keyboard mapping in the default editor or limit it to a custom editor.  
   
- キーボード ショートカットを既存の Visual Studio のメニュー項目に割り当てるを参照してください。[の識別とカスタマイズのキーボード ショートカット](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)します。  
+ To assign keyboard shortcuts to existing Visual Studio menu items, see [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-## <a name="choosing-a-key-combination"></a>キーの組み合わせを選択します。  
- 多くのキーボード ショートカットは、Visual Studio で既に使用されます。 重複するバインドを検出するが困難とも予期しない結果になるためは、1 つ以上のコマンドを同じショートカットを割り当てる必要がありますされません。 そのためは割り当てる前に、ショートカットの可用性を確認することをお勧めします。  
+## <a name="choosing-a-key-combination"></a>Choosing a Key Combination  
+ Many keyboard shortcuts are already used in Visual Studio. You should not assign the same shortcut to more than one command because duplicate bindings are hard to detect and may also cause unpredictable results. Therefore, it is a good idea to verify the availability of a shortcut before you assign it.  
   
-#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>キーボード ショートカットの可用性を検証するには  
+#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>To verify the availability of a keyboard shortcut  
   
-1. **ツール/オプション/環境**ウィンドウで、**キーボード**します。  
+1. In the **Tools / Options / Environment** window, select **Keyboard**.  
   
-2. 確認します**で新しいショートカットを使用して**に設定されている**Global**します。  
+2. Make sure that **Use new shortcut in** is set to **Global**.  
   
-3. **ショートカット キーを押して**ボックスに、使用するキーボード ショートカットを入力します。  
+3. In the **Press shortcut keys** box, type the keyboard shortcut that you want to use.  
   
-    ショートカットが Visual Studio で既に使用されている場合、**現在使用されているショートカット**ボックスに、ショートカットを現在呼び出すコマンドを表示します。  
+    If the shortcut is already used in Visual Studio, the **Shortcut currently used by** box will show the command that the shortcut currently calls.  
   
-4. マップされていないものが見つかるまで、さまざまなキーの組み合わせをお試しください。  
+4. Try different combinations of keys until you find one that is not mapped.  
   
    > [!NOTE]
-   > Alt キーを使用するキーボード ショートカットは、メニューを開くし、コマンドを直接実行可能性があります。 そのため、**現在使用されているショートカット**alt キーを含むショートカットを入力するときにボックスを空白にすることがあります。 ショートカットを閉じて、メニューが開きますしないことを確認することができます、**オプション** ダイアログ ボックスとし、キーを押します。  
+   > Keyboard shortcuts that use ALT may open a menu and not directly execute a command. Therefore, the **Shortcut currently used by** box may be blank when you type a shortcut that includes ALT. You can verify that the shortcut does not open a menu by closing the **Options** dialog box and then pressing the keys.  
   
-   次の手順では、メニュー コマンドを使用して既存の VSPackage があることを前提としています。 この操作の説明を必要がある場合について見て[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
+   The following procedure assumes that you have an existing VSPackage with a menu command. If you need help doing that, take a look at [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>コマンドにキーボード ショートカットを割り当てる  
+#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>To assign a keyboard shortcut to a command  
   
-1. パッケージの .vsct ファイルを開きます。  
+1. Open the .vsct file for your package.  
   
-2. 空の作成`<KeyBindings>`セクションの後に、`<Commands>`が存在しない場合。  
+2. Create an empty `<KeyBindings>` section after the `<Commands>` if it is not already present.  
   
    > [!WARNING]
-   > キー バインドの詳細については、次を参照してください。 [Keybinding](../extensibility/keybinding-element.md)します。  
+   > For more information about key bindings, see [Keybinding](../extensibility/keybinding-element.md).  
   
-    `<KeyBindings>`セクションで、作成、`<KeyBinding>`エントリ。  
+    In the `<KeyBindings>` section, create a `<KeyBinding>` entry.  
   
-    設定、`guid`と`id`を起動するコマンドの属性します。  
+    Set the `guid`  and  `id` attributes to those of the command you want to invoke.  
   
-    設定、`mod1`属性を**コントロール**、 **Alt**、または**Shift**します。  
+    Set the `mod1` attribute to **Control**, **Alt**, or **Shift**.  
   
-    キー バインド セクションは、次のようになります。  
+    The KeyBindings section should look something like this:  
   
    ```xml  
    <KeyBindings>  
@@ -73,18 +73,18 @@ ms.locfileid: "63405643"
   
    ```  
   
-   キーボード ショートカットは、複数の 2 つのキーを必要とする場合は、設定、`mod2`と`key2`属性。  
+   If your keyboard shortcut requires more than two keys, set the `mod2` and `key2` attributes.  
   
-   ほとんどの状況で**Shift**文字の大文字または記号を入力するほとんどの英数字キー既にキーを押すと、ために、2 つ目の修飾子を指定せず使用できません必要があります。  
+   In most situations, **Shift** should not be used without a second modifier because pressing it already causes most alphanumeric keys to type an uppercase letter or a symbol.  
   
-   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **BACKSPACE**キー。 詳細については、次を参照してください。[仮想キー コード](http://go.microsoft.com/fwlink/?LinkID=105932)します。  
+   Virtual-key codes let you access special keys that do not have a character associated with them, for example, function keys and the **BACKSPACE** key. For more information, see [Virtual-Key Codes](https://go.microsoft.com/fwlink/?LinkID=105932).  
   
-   コマンドで使用できるように、Visual studio エディターの設定、`editor`属性を`guidVSStd97`します。  
+   To make the command available in the Visual Studio editor, set the `editor` attribute to `guidVSStd97`.  
   
-   で、コマンドをカスタム エディターでのみ使用できるようにするには設定、`editor`属性によって生成されたカスタム エディターの名前を、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、VSPackage を作成したときに、パッケージのテンプレートには、カスタム エディターが含まれています。 場所を名の値を検索する、`<Symbols>`のセクションを`<GuidSymbol>`ノードが`name`で属性の末尾が"`editorfactory`"。これは、カスタム エディターの名前です。  
+   To make the command available only in a custom editor, set the `editor` attribute to the name of the custom editor that was generated by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package Template when you created the VSPackage that includes the custom editor. To find the name value, look in the `<Symbols>` section for a `<GuidSymbol>` node whose `name` attribute ends in "`editorfactory`." This is the name of the custom editor.  
   
 ## <a name="example"></a>例  
- この例では、という名前のコマンドにキーボード ショートカット CTRL + ALT + C をバインド`cmdidMyCommand`という名前のパッケージで`MyPackage`します。  
+ This example binds the keyboard shortcut CTRL+ALT+C to a command named `cmdidMyCommand` in a package named `MyPackage`.  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ ms.locfileid: "63405643"
 ```  
   
 ## <a name="example"></a>例  
- この例では、という名前のコマンドにキーボード ショートカット CTL + B をバインド`cmdidBold`という名前のプロジェクト`TestEditor`します。 コマンドは、および他のエディターではなく、カスタム エディターでのみ利用できます。  
+ This example binds the keyboard shortcut CTL+B to a command named `cmdidBold` in a project named `TestEditor`. The command is available only in the custom editor and not in other editors.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell (Integrated) |Microsoft Docs
+title: Visual Studio Shell (Integrated) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 78ccba3ab8c2dda531614fa791eac3100813840a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690925"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299690"
 ---
-# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
+# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (統合)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガー、およびソース管理の統合が含まれています。 プログラミング言語が含まれていません。 ただし、統合シェルはプログラミング言語を追加することを可能にするフレームワークを提供します。  
+The Visual Studio integrated shell includes the integrated development environment (IDE), debugger, and source control integration. No programming language is included. However, the integrated shell does provide a framework that allows you to add programming languages.  
   
- Visual Studio の統合シェルとは、実際には、Visual Studio 分離シェルと統合シェルの特定のコンポーネントを含む追加のインストールの組み合わせです。  統合シェル アプリケーションは、両方の分離シェル再頒布可能パッケージを含める必要があります[Microsoft Visual Studio Shell (Isolated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616022)と統合シェルの再頒布可能パッケージ[Microsoft Visual Studio Shell (Integrated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616021)します。  
+ The Visual Studio integrated shell is actually a combination of the Visual Studio isolated shell plus an additional install which include integrated shell specific components.  Your integrated shell application should include both the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022) as well as the integrated shell redistributable package from [Microsoft Visual Studio Shell (Integrated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
-> 分離と統合シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
+> Before you can access the isolated and integrated shell redistributable packages, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
   
- 完全なバージョンの Visual Studio と同じコンピューターに、統合シェル アプリケーションをインストールする場合、アプリケーションのコンポーネントを直接 Visual Studio に統合されます。  
+ If you install your integrated shell application on the same computer as a full version of Visual Studio, your application’s components will be integrated directly into Visual Studio.  
   
-## <a name="features-in-the-integrated-shell"></a>統合シェルの機能  
+## <a name="features-in-the-integrated-shell"></a>Features in the Integrated Shell  
   
 |||  
 |-|-|  
-|機能分野|機能|  
-|言語サポート|-None|  
-|IDE|<ul><li>設定<br /><br /> <ul><li>設定を作成します。</li><li>インポートおよびエクスポート設定</li><li>リセット設定</li></ul></li><li>**ツールボックス**統合</li><li>**タスク一覧**統合</li><li>ヘルプの統合</li><li>**オプション** ダイアログ ボックス</li><li>フォントおよび色の管理</li><li>**出力**ウィンドウ</li><li>**コマンド**ウィンドウ</li><li>ウィンドウの管理</li><li>コマンド、メニューのおよびキー バインド</li><li>ドメイン固有言語 (DSL) ランタイム</li></ul>|  
-|プロジェクト システムとプロジェクトの種類|-ソリューションとソリューション フォルダー<br />ソリューション構成マネージャー<br />-項目の管理<br />単一のプロジェクトおよびマルチ プロジェクト ソリューション<br />アプリケーション デザイナー (簡略化されたプロジェクトのプロパティ)<br />-Web 参照を追加します。<br />-サービス参照を追加します。<br />単一のプロジェクト<br />Web サイト プロジェクトの種類<br />-Web アプリケーション プロジェクト|  
-|ビルド|の IDE でカスタム ビルド ステップ<br />-知的財産 (IP) 保護のプリコンパイル<br />コード署名<br />     MSBuild|  
-|エディター|コードの参照ツール (統合検索、ソースの定義、継承)<br />コード ナビゲーション<br />IntelliSense<br />スマート タグ<br />リファクタリング<br />-再フォーマットの一覧<br />IntelliSense のフィルター処理<br />-   **コード定義**ウィンドウ|  
-|Designer|-   Windows Presentation Foundation Designer<br />-Windows フォーム デザイナー<br />-Web デザイナーと HTML エディター|  
-|データ|-   **サーバー エクスプ ローラー** (簡体字: データのみ)。 注 1 を参照してください。<br />-   **データ ソース**ウィンドウ<br />データ コントロールの完全なセット<br />XML エディター<br />データがローカル データ ソースにバインド (します。MDF またはします。MDB)<br />オブジェクトへのデータ バインド<br />Web サービスにデータをバインドします。<br />-データをバインドするローカル データベース サーバー<br />リモート データベース サーバーにデータ バインドします。<br />リモート データの DDL ツール<br />-   **サーバー エクスプ ローラー**機能拡張 ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]サンプル)|  
-|デバッガー|-ローカル デバッグします。 注 2 を参照してください。<br />マネージ デバッグ<br />-ローカル デバッグ<br />-ローカルのプロセスにアタッチします。<br />-リモート プロセスにアタッチします。<br />匿名デリゲート<br />アプリケーション ドメイン<br />ASPX のデバッグ<br />-属性<br />-Func eval の中に中断します。<br />-ブレークポイント<br />ブレークポイント制約<br />-呼び出し履歴<br />-   **コマンド**ウィンドウ<br />-クロス スレッドのデバッグ<br />-データのヒント<br />データ ビジュアライザー<br />マネージ デバッグ アシスタント (Mda) のデバッガー サポート<br />型フォワーダーのデバッガー サポート<br />-DTEEvents OTB のサポート<br />-JMC ステッパ<br />-デバッガー AppID テスト (DBGCLR)<br />デバッガーのプロファイル<br />-デバッガー ツールとオプション<br />反復子のデバッグ<br />デザイン時の式の評価<br />-C# の式エバリュエーター<br />-逆アセンブリ<br />エディット コンティニュ<br />式エバリュエーター windows (ウォッチ、[ローカル]、[自動変数])<br />-例外ヘルパー<br />-例外<br />-実行<br />- ジェネリック<br />-適切なソースを取得します。<br />HPC/クラスター デバッガー<br />-複数言語のデバッグを統合します。<br />-相互運用機能デバッグ<br />--Just-in-time デバッグ<br />-ローカル デバッグ<br />マネージ デバッグ<br />-手動で制御 ([プロセス] ウィンドウ)<br />メモリ<br />のミニダンプ サポート<br />-モジュール<br />-マルチ プロセス デバッグ<br />ネイティブのデバッグ<br />新しいデバッグ エンジンのサポート<br />-最適化されたコードのデバッグ<br />-出力 windows フィルタ リング<br />-プロセスをホストしているマネージ デバッグのため<br />-プロセス<br />-[クイック ウォッチ]<br />登録<br />Stack の登録<br />-リモート デバッグ<br />戻り値<br />スクリプトのデバッグ<br />ソース サービスのサポート<br />-セキュリティ<br />--サイド<br />-SQL<br />シンボル サーバー<br />トレース ポイント<br />-スレッド<br />-視覚エフェクト<br />-Extensible Stylesheet Language Transformations (XSLT) デバッガー|  
-|64 ビット サポート|-64 ビットのマネージ コードとネイティブ コード、すべての言語のデバッグ<br />-x64 のネイティブ サポート|  
-|ソース コード管理 (SCC)|-基本的な SCC 統合です。 注 3 を参照してください。<br />ツールとオプションの確認|  
-|機能拡張|-Vspackage と MEF コンポーネントを使用します。|  
+|機能分野|特性|  
+|言語サポート|-   None|  
+|IDE|<ul><li>設定<br /><br /> <ul><li>Create settings</li><li>Import and export settings</li><li>リセット設定</li></ul></li><li>**Toolbox** integration</li><li>**Task List** integration</li><li>Help integration</li><li>**Options** dialog box</li><li>Fonts and colors management</li><li>**Output** window</li><li>**Command** window</li><li>ウィンドウの管理</li><li>Commands, menus, and key bindings</li><li>Domain-specific language (DSL) runtime</li></ul>|  
+|Project System and Project Types|-   Solutions and solution folders<br />-   Solution configuration manager<br />-   Item management<br />-   Single-project and multi-project solutions<br />-   Application Designer (simplified project properties)<br />-   Add Web Reference<br />-   Add Service Reference<br />-   Single-project<br />-   Web site project types<br />-   Web application projects|  
+|Build|-   Custom build steps in IDE<br />-   Pre-compilation for intellectual property (IP) protection<br />-   Code signing<br />     MSBuild|  
+|エディター|-   Code browsing tools (unified find, source definition, inheritance)<br />-   Code navigation<br />-   IntelliSense<br />-   SmartTags<br />-   Refactoring<br />-   Pretty listing<br />-   IntelliSense filtering<br />-   **Code Definition** window|  
+|Designer|-   Windows Presentation Foundation Designer<br />-   Windows Forms Designer<br />-   Web Designer and HTML Editor|  
+|データ|-   **Server Explorer** (Simplified: data only). 注 1 を参照してください。<br />-   **Data Sources** window<br />-   Full set of data controls<br />-   XML Editor<br />-   Data bind to local data source (.MDF or .MDB)<br />-   Data bind to object<br />-   Data bind to Web service<br />-   Data bind to local database server<br />-   Data bind to remote database server<br />-   DDL tools for remote data<br />-   **Server Explorer** extensibility ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] samples)|  
+|デバッガー|-   Local debugging. See Note 2.<br />-   Managed debugging<br />-   Local debugging<br />-   Attach to local process<br />-   Attach to remote process<br />-   Anonymous delegate<br />-   Application domains<br />-   ASPX Debugging<br />-   Attributes<br />-   Break during Func-eval<br />-   Breakpoints<br />-   Breakpoint constraints<br />-   Callstack<br />-   **Command** window<br />-   Cross-thread debugging<br />-   Data Tips<br />-   Data visualizer<br />-   Debugger support for managed debugging assistants (MDAs)<br />-   Debugger support for type forwarder<br />-   DTEEvents support for OTB<br />-   JMC Stepper<br />-   Debugger AppID test (DBGCLR)<br />-   Debugger profile<br />-   Debugger tools and options<br />-   Debugging iterator<br />-   Design-time expression evaluation<br />-   C# Expression Evaluator<br />-   Disassembly<br />-   Edit and Continue<br />-   Expression evaluator windows (Watch, Locals, Autos)<br />-   Exception Helper<br />-   Exceptions<br />-   Execution<br />- ジェネリック<br />-   Getting right source<br />-   HPC/Cluster debugging<br />-   Integrated multi-language debugging<br />-   InterOp debugging<br />-   Just-in-time debugging<br />-   Local debugging<br />-   Managed debugging<br />-   Manual control (Processes window)<br />-   Memory<br />-   MiniDump support<br />-   Modules<br />-   Multi-process debugging<br />-   Native debugging<br />-   New debug engine support<br />-   Optimized code debugging<br />-   Output windows filtering<br />-   Process hosting for managed debugging<br />-   Processes<br />-   Quickwatch<br />-   Registers<br />-   Registers in stack<br />-   Remote debugging<br />-   Return values<br />-   Script debugging<br />-   Source service support<br />-   Security<br />-   Side-by-side<br />-   SQL<br />-   Symbol server<br />-   Trace points<br />-   Thread<br />-   Visualizations<br />-   Extensible Stylesheet Language Transformations (XSLT) debugger|  
+|64-bit Support|-   64-bit debugging for both managed and native code, all languages<br />-   x64 native support|  
+|Source Code Control (SCC)|-   Basic SCC integration. 注 3 を参照してください。<br />-   Tools and options verification|  
+|機能拡張|-   Consume VSPackages and MEF components|  
   
-## <a name="notes"></a>メモ  
+## <a name="notes"></a>ノート  
   
-#### <a name="1-data-tools"></a>1.データ ツール  
- 統合シェルには、データ拡張機能のサポートと、簡略化などのデータベース開発ツールが含まれています。**ソリューション エクスプ ローラー**します。 ただし、SQL Server Express、SQL Reporting、および Crystal Reports は、統合シェルには含まれません。  
+#### <a name="1-data-tools"></a>1. Data Tools  
+ The integrated shell includes database development tools such as data extensibility support and the simplified **Solution Explorer**. However, SQL Server Express, SQL Reporting, and Crystal Reports are not included in the integrated shell.  
   
-#### <a name="2-debugging-support"></a>2.デバッグのサポート  
- 統合シェルには、Visual Studio の Community バージョンに含まれている同じデバッグ エンジンが含まれています。 デバッグ エンジンには、実行、アタッチ、ブレークポイントの設定、編集と続行、および他のユーザーなどの関連機能とマネージ コードは、一般的なデバッガーが含まれています。 ただし、デバッグ エンジンでは、SQL Server データベースのデバッグはできません。  
+#### <a name="2-debugging-support"></a>2. Debugging Support  
+ The integrated shell includes the same debugging engine that is included in the Community version of Visual Studio. The debugging engine includes the common debugger for managed code, and also related features, such as Run, Attach, Set Breakpoint, Edit and Continue, and others. However, the debugging engine does not support SQL Server database debugging.  
   
- サポート、デバッガーの基本的なパッケージでは、ネイティブ デバッグが含まれているの他の言語をサポートするようには拡張できません。  
+ Although support for native debugging is included in the basic debugger package, you cannot extend it to support additional languages.  
   
-#### <a name="3-source-code-control-integration"></a>3.ソース コード管理の統合  
- 統合シェルは、ソース コード管理 (SCC) を実装するため、MSSCCI ベースの一般的なソース管理の統合コンポーネントを提供するための Api を提供します。  
+#### <a name="3-source-code-control-integration"></a>3. Source Code Control Integration  
+ The integrated shell provides APIs for implementing source-code control (SCC) and for providing the MSSCCI-based common source control integration components.  
   
- SCC 統合は、Pro エディションの Visual Studio の標準機能ではありませんが、統合シェルの SCC 統合が提供されます。  
+ Although SCC integration is not a regular feature of the Pro edition of Visual Studio, SCC integration is provided in the integrated shell.  
   
-#### <a name="4-build-support"></a>4.ビルドのサポート  
- 統合シェルは、ビルドのサポートを提供します。 ビルドに関する情報を見つけることができます、 [MSBuild リファレンス](../msbuild/msbuild-reference.md)します。  
+#### <a name="4-build-support"></a>4. Build Support  
+ The integrated shell provides build support. You can find information about builds in the [MSBuild Reference](../msbuild/msbuild-reference.md).  
   
-## <a name="features-not-included-in-the-integrated-shell"></a>Integrated Shell に含まれていない機能  
- 統合シェルに含まれていない機能の一覧を次には。  
+## <a name="features-not-included-in-the-integrated-shell"></a>Features Not Included in the Integrated Shell  
+ The following is a list of features that are not included in the integrated shell:  
   
 - クラス デザイナー  
   
@@ -76,7 +76,7 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
   
 - VSHost  
   
-- 言語の Visual Studio、または、関連付けられているプロジェクト テンプレートまたはプロジェクト項目テンプレートは、統合シェルに含まれます。 その他の機能の言語固有の実装が含まれる、Visual Basic コード スニペットの例ではありません。  
+- No Visual Studio languages or their associated project templates or project item templates, are included in the integrated shell. No language-specific implementations of other features are included, for example Visual Basic code snippets.  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio の拡張の概要](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+## <a name="see-also"></a>参照  
+ [Extending Visual Studio Overview](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

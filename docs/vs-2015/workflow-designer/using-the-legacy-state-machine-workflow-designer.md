@@ -1,5 +1,5 @@
 ---
-title: 従来のステートマシンワークフローデザイナーを使用する |Microsoft Docs
+title: Using the Legacy State Machine Workflow Designer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -18,20 +18,20 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c2b1ce1f1b2c6a16b5576880904feadf37a3e7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5bab07b8ba0b71bd880135518ff9ff5fc697d54c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606773"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302807"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>従来のステート マシン ワークフロー デザイナーの使用
-@No__t_1 または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] のいずれかを対象とする [!INCLUDE[vs2010](../includes/vs2010-md.md)] で新しいステートマシンワークフロープロジェクトを作成する場合は、**ステートマシンワークフローコンソールアプリケーション**または**ステートマシンワークフローライブラリ**(レガシ) のいずれかを使用できます。プロジェクトテンプレート。 これらのいずれかのステート マシン プロジェクト テンプレートを選択した場合、ステート マシン デザイナーが従来のワークフロー デザイナーのユーザー インターフェイスとして表示されます。 従来のステートマシンプロジェクトテンプレートの詳細については、「[方法: ステートマシンワークフローコンソールアプリケーションを作成する (レガシ)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 」および「[方法: ステートマシンワークフローライブラリを作成する (レガシ)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)」を参照してください。
+When you are creating a new state machine workflow project in [!INCLUDE[vs2010](../includes/vs2010-md.md)] that targets either the [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] or the [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], you can choose to use either the **State Machine Workflow Console Application** or the **State Machine Workflow Library** legacy project template. これらのいずれかのステート マシン プロジェクト テンプレートを選択した場合、ステート マシン デザイナーが従来のワークフロー デザイナーのユーザー インターフェイスとして表示されます。 For information about the legacy state machine project templates, see [How to: Create State Machine Workflow Console Applications (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) and [How to: Create a State Machine Workflow Library (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
  ステート マシン ワークフローは、ステート (状態) のセットで構成されます。 1 つのステートが初期状態として設定されます。 各ステートは特定のイベント セットを受信できます。 イベントに基づいて、別のステートへの移行を実行できます。 ステート マシン ワークフローには最終ステートを定義できます。 最終ステートに移行すると、ワークフローは完了します。
 
 ## <a name="state-machine-designer-views"></a>ステート マシン デザイナーのビュー
- ステート マシン デザイナーは自由度の高いデザイナーです。デザイン サーフェイス上でアクティビティを自由に移動することができます。 ステートマシンデザイナーには、*状態*ビューと*イベントドリブン*ビューの2つのビューがあります。
+ ステート マシン デザイナーは自由度の高いデザイナーです。デザイン サーフェイス上でアクティビティを自由に移動することができます。 The state machine designer has two views: *state* view and *event-driven* view.
 
  ステート ビューには、ステート アクティビティ、およびステート アクティビティ内に格納されているイベントドリブン アクティビティが表示されます。 このビューでは、1 つのステートから別のステートへの移行が、1 つのステート内のイベントドリブン アクティビティから別のステートに伸びる線として表されます。 また、独自の線を描くことにより、移行を作成することもできます。 移行を描くには、イベントドリブン アクティビティを選択し、アクティビティ上のいずれかのハンドルを選択して、それをドラッグします。 この操作によって、線が描画されます。 次に、この線が移行先のステートに接続されて、2 つのステート間の移行を表します。
 
@@ -42,20 +42,20 @@ ms.locfileid: "72606773"
 
 |ツールボックス名|アクティビティ|説明|
 |------------------|--------------|-----------------|
-|**状態**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|ステートマシンの状態を表します。追加の**Stateactivity**アクティビティを含めることができます。 詳細については、「 [Stateactivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65083)」を参照してください。|
-|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|新しいステート (状態) への移行を指定します。 詳細については、「 [SetStateActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65082)」を参照してください。|
-|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|あるステートに移行する (他のアクティビティも同時に指定可) と実行されます。 詳細については、「 [StateInitialization アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65006)」を参照してください。|
-|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|[Stateactivity](http://go.microsoft.com/fwlink?LinkID=65042)アクティビティを終了するときに、含まれているアクティビティを実行します。 詳細については、「 [StateFinalizationActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65008)」を参照してください。|
-|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|外部イベントによって実行開始されるステートに使用されます。 **EventDrivenActivity**アクティビティは、 [ieventactivity](http://go.microsoft.com/fwlink?LinkID=65032)インターフェイスを実装するアクティビティを、最初の子アクティビティとして持つ必要があります。 詳細については、「 [EventDrivenActivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65068)」を参照してください。|
+|**状態**|[StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)|Represents a state in a state machine; may contain additional **StateActivity** activities. For more information, see [Using the StateActivity Activity](https://go.microsoft.com/fwlink?LinkID=65083).|
+|**SetState**|[SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65041)|新しいステート (状態) への移行を指定します。 For more information, see [Using the SetStateActivity Activity](https://go.microsoft.com/fwlink?LinkID=65082).|
+|**StateInitialization**|[StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044)|あるステートに移行する (他のアクティビティも同時に指定可) と実行されます。 For more information, see [Using the StateInitialization Activity](https://go.microsoft.com/fwlink?LinkID=65006).|
+|**StateFinalization**|[StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043)|Executes contained activities when leaving a [StateActivity](https://go.microsoft.com/fwlink?LinkID=65042) activity. For more information, see [Using the StateFinalizationActivity Activity](https://go.microsoft.com/fwlink?LinkID=65008).|
+|**EventDriven**|[EventDrivenActivity](https://go.microsoft.com/fwlink?LinkID=65029)|外部イベントによって実行開始されるステートに使用されます。 The **EventDrivenActivity** activity must have an activity that implements the [IEventActivity](https://go.microsoft.com/fwlink?LinkID=65032) interface as the first child activity. For more information, see [Using the EventDrivenActivity Activity](https://go.microsoft.com/fwlink?LinkID=65068).|
 
- ステートマシンワークフローの主要なコンポーネントは、 [stateactivity](http://go.microsoft.com/fwlink?LinkID=65042)アクティビティです。 ステート マシン ワークフロー内のさまざまなポイントでイベントがキャプチャされると、イベントに関連したタスクを処理するさまざまなステートに移行します。 有効期間中、ワークフローはいくつかの異なるステート間を遷移します。 これらの状態は、 [Setstateactivity](http://go.microsoft.com/fwlink?LinkID=65041)アクティビティを使用して相互に接続します。
+ The main component in a state machine workflow is the [StateActivity](https://go.microsoft.com/fwlink?LinkID=65042) activity. ステート マシン ワークフロー内のさまざまなポイントでイベントがキャプチャされると、イベントに関連したタスクを処理するさまざまなステートに移行します。 有効期間中、ワークフローはいくつかの異なるステート間を遷移します。 These states connect to each other by using the [SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65041) activity.
 
- 新しい**Stateactivity**をワークフローデザインサーフェイスにドラッグすると、 [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)、 [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)、 [statefinalizationactivity](http://go.microsoft.com/fwlink?LinkID=65043)、またはその他の**stateactivity**アクティビティを追加できます。子アクティビティ。
+ When you drag a new **StateActivity** onto the workflow design surface, you can add [EventDrivenActivity](https://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044), [StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043), or additional **StateActivity** activities as child activities.
 
 > [!CAUTION]
-> ステートマシンワークフローデザイナーを使用してワークフローを作成する場合は、 **[ドキュメントアウトライン]** ビューウィンドウでデザイン中のワークフローの構造を監視する必要があります。 **[ドキュメントアウトライン]** ビューウィンドウのステートマシンワークフローの構造のビューには、ワークフローマークアップファイル内のアクティビティの論理的なレイアウトが反映されます。 デザイン サーフェイスに表示されるワークフロー アクティビティの物理的レイアウトは、ワークフロー マークアップ ファイル内のアクティビティの論理的レイアウトを表さない可能性があります。
+> When you use the state machine workflow designer to create workflows, you must monitor the structure of the workflow you are designing with the **Document Outline** view window. The view of the structure of the state machine workflow in the **Document Outline** view window mirrors the logical layout of the activities in the workflow markup file. デザイン サーフェイスに表示されるワークフロー アクティビティの物理的レイアウトは、ワークフロー マークアップ ファイル内のアクティビティの論理的レイアウトを表さない可能性があります。
 >
-> **[ドキュメントアウトライン]** ウィンドウを開くには、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[ドキュメントアウトライン]** を選択します。
+> To open the **Document Outline** window, on the **View** menu, point to **Other Windows**, and then select **Document Outline**.
 
 ## <a name="see-also"></a>参照
- [方法: ステートマシンワークフローコンソールアプリケーションを作成する (レガシ)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) [方法: ステートマシンワークフローライブラリ (レガシ)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [ステートマシン](http://go.microsoft.com/fwlink?LinkID=65016)ワークフローを使用して[stateactivity アクティビティを](http://go.microsoft.com/fwlink?LinkID=65083)作成する[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)アクティビティを使用した[StateFinalizationActivity アクティビティ](http://go.microsoft.com/fwlink?LinkID=65008)の使用[EventDrivenActivity アクティビティ](http://go.microsoft.com/fwlink?LinkID=65068)を使用した[setstateactivity](http://go.microsoft.com/fwlink?LinkID=65082)アクティビティの使用
+ [How to: Create State Machine Workflow Console Applications (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) [How to: Create a State Machine Workflow Library (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [State Machine Workflows](https://go.microsoft.com/fwlink?LinkID=65016) [Using the StateActivity Activity](https://go.microsoft.com/fwlink?LinkID=65083) [Using the StateInitializationActivity Activity](https://go.microsoft.com/fwlink?LinkID=65006) [Using the StateFinalizationActivity Activity](https://go.microsoft.com/fwlink?LinkID=65008) [Using the SetStateActivity Activity](https://go.microsoft.com/fwlink?LinkID=65082) [Using the EventDrivenActivity Activity](https://go.microsoft.com/fwlink?LinkID=65068)

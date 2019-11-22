@@ -1,5 +1,5 @@
 ---
-title: 'UML コンポーネント図: ガイドライン |Microsoft Docs'
+title: 'UML Component Diagrams: Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,23 +15,23 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652255"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297154"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML コンポーネント図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、*コンポーネント図*を描画して、ソフトウェアシステムの構造を示すことができます。 ビデオデモについては、「[コンポーネント図を使用した物理構造の設計](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)」を参照してください。
+In Visual Studio, you can draw a *component diagram* to show the structure a software system. For a video demonstration, see [Designing the Physical Structure by using Component Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
- UML コンポーネント図を作成するには、 **[アーキテクチャ]** メニューの **[新しい Uml またはレイヤー図]** をクリックします。
+ To create a UML component diagram, on the **Architecture** menu, click **New UML or Layer Diagram**.
 
- コンポーネントとは、環境内で置き換えることのできるモジュール式のユニットのことです。 その内部構造は非表示になっていますが、その関数にアクセスするための1つ以上の明確に定義*されたインターフェイス*があります。 コンポーネントには、*必要なインターフェイス*を含めることもできます。 要求インターフェイスは、他のコンポーネントに対して要求する機能またはサービスを定義します。 複数のコンポーネントの提供インターフェイスと要求インターフェイスを接続することで、より大規模なコンポーネントを構築できます。 完全なソフトウェア システムを 1 つのコンポーネントとして見なすことができます。
+ コンポーネントとは、環境内で置き換えることのできるモジュール式のユニットのことです。 Its internals are hidden, but it has one or more well-defined *provided interfaces* through which its functions can be accessed. A component can also have *required interfaces*. 要求インターフェイスは、他のコンポーネントに対して要求する機能またはサービスを定義します。 複数のコンポーネントの提供インターフェイスと要求インターフェイスを接続することで、より大規模なコンポーネントを構築できます。 完全なソフトウェア システムを 1 つのコンポーネントとして見なすことができます。
 
  コンポーネント図を描画することには、次のような利点があります。
 
@@ -41,58 +41,58 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
   コンポーネント図を使用すると、設計で使用されている、または将来使用される予定の言語またはプラットフォームに関係なく、設計を表すことができます。
 
-## <a name="OtherDiagrams"></a>他の図との関係
+## <a name="OtherDiagrams"></a> Relationship to Other Diagrams
  コンポーネント図は他の図と共に使用できます。
 
 |図の種類|確認できる設計の側面|
 |-------------------|--------------------------------------------------------------------|
-|UML シーケンス図|-システムのコンポーネント間の相互作用<br />-コンポーネント内のパート間の相互作用。<br /><br /> 詳細については、「 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。|
-|UML クラス図|-コンポーネントのインターフェイス。 クラス図を使用すると、インターフェイスのメソッドを詳しく示すことができます。<br />-コンポーネントのインターフェイス間でパラメーターで送信されるデータ。<br /><br /> 詳細については、「 [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)」を参照してください。|
-|アクティビティ図|-受信メッセージへの応答としてコンポーネントによって実行される内部処理。<br /><br /> 詳細については、「 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)」を参照してください。|
-|レイヤー図|-コンポーネントの論理アーキテクチャ層。<br /><br /> 詳細については、「[レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)」を参照してください。|
+|UML シーケンス図|-   Interactions between a system's components<br />-   Interactions and between the parts inside a component.<br /><br /> For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).|
+|UML クラス図|-   The interfaces of a component. クラス図を使用すると、インターフェイスのメソッドを詳しく示すことができます。<br />-   The data sent in parameters across the components' interfaces.<br /><br /> For more information, see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).|
+|アクティビティ図|-   The internal processing performed by a component in response to incoming messages.<br /><br /> For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).|
+|レイヤー図|-   Logical architectural tiers for your components.<br /><br /> For more information, see [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>コンポーネント図を描画するための基本的な手順
- コンポーネント図の要素に関するリファレンス情報については、「 [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)」を参照してください。
+## <a name="Basics"></a> Basic Steps for Drawing Component Diagrams
+ For reference information about the elements on component diagrams, see [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md).
 
- コンポーネント図を設計プロセスで使用する方法の詳細については、「[アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)化」を参照してください。
+ For more information about how to use component diagrams in the process of design, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
 > [!NOTE]
-> モデリング図を作成するための詳細な手順については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。
+> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-component-diagram"></a>コンポーネント図を生成するには
 
-1. **[アーキテクチャ]** メニューの **[新しい UML またはレイヤー図]** をクリックします。
+1. On the **Architecture** menu, click **New UML or Layer Diagram**.
 
-2. **[テンプレート]** の **[UML コンポーネント図]** をクリックします。
+2. Under **Templates**, click **UML Component Diagram**.
 
 3. 図に名前を付けます。
 
-4. **[モデリングプロジェクトへの追加]** で、ソリューション内の既存のモデリングプロジェクトを選択するか、**新しいモデリングプロジェクトを作成**し、[ **OK]** をクリックします。
+4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then click **OK**..
 
-     新しいコンポーネント図が、UML**コンポーネント図**ツールボックスと共に表示されます。 ツールボックスには、必要な要素および関係が含まれています。
+     A new component diagram appears with the UML **Component Diagram** toolbox. ツールボックスには、必要な要素および関係が含まれています。
 
 ### <a name="drawing-components"></a>コンポーネントの描画
- ![インターフェイスを持つコンポーネント](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
+ ![Components with interfaces](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
 
- システムまたはアプリケーションの主要な機能ユニットごとに*コンポーネント*(1) を作成します。
+ Create a *component* (1) for each major functional unit in your system or application.
 
  たとえば、アプリケーション、ハードウェア デバイス、Web サービス、.NET アセンブリ、プログラム クラス、クラス グループ、プログラムの分離可能なセグメントなどがこれに該当します。
 
 ##### <a name="to-create-components"></a>コンポーネントを生成するには
 
-1. ツールボックス の **コンポーネント** をクリックし、図の空白部分をクリックします。
+1. Click **Component** in the toolbox, and then click a blank part of the diagram.
 
      \- または
 
      既存のコンポーネントをコピーし、貼り付けます。
 
-    1. 図または**UML モデルエクスプローラー**で既存のコンポーネントを検索します。
+    1. Find an existing component in a diagram or in **UML Model Explorer**.
 
-    2. コンポーネントを右クリックし、 **[コピー]** をクリックします。
+    2. Right-click the component and then click **Copy**.
 
     3. コピーしたコンポーネントを貼り付ける図を開きます。
 
-    4. 図の空白部分を右クリックし、 **[貼り付け]** をクリックします。
+    4. Right-click a blank part of the diagram and then click **Paste**.
 
          新しい名前が付けられたコンポーネントが表示されます。
 
@@ -101,13 +101,13 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 3. コンポーネントのヘッダーのみを表示するには、シェブロン (5) をクリックします。
 
 ### <a name="showing-the-ports-of-a-component"></a>コンポーネントのポートの表示
- *ポート*(2、3) は、コンポーネントとの間でやり取りされるメッセージまたは操作の呼び出しのグループを表します。 このグループは、ポートの型を定義するインターフェイスによって記述されます。 ポートは、インターフェイスを提供するか、またはインターフェイスを要求することができます。
+ A *port* (2, 3) represents a group of messages or operation calls that pass either into or out of a component. このグループは、ポートの型を定義するインターフェイスによって記述されます。 ポートは、インターフェイスを提供するか、またはインターフェイスを要求することができます。
 
- *指定さ*れたインターフェイス (2) を持つポートは、コンポーネントによって実装され、他のコンポーネントで使用できる操作を提供します。
+ A port with a *provided interface* (2) supplies operations that are implemented by the component, and that can be used by other components.
 
  たとえば、ユーザー インターフェイス、Web サービス、.NET インターフェイス、任意のプログラミング言語の関数のコレクションなどがこれに該当します。
 
- *要求インターフェイス*(3) を持つポートは、他のコンポーネントまたは外部システムによって提供される操作またはサービスのグループに対するコンポーネントの要件を表します。
+ A port with a *required interface* (3) represents a component's requirement for a group of operations or services to be provided by other components or external systems.
 
  たとえば、Web ブラウザーの場合は Web サーバーが求められ、アプリケーション アドインの場合はアプリケーションからのサービスが求められます。
 
@@ -115,13 +115,13 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 ##### <a name="to-add-ports-to-a-component"></a>ポートをコンポーネントに追加するには
 
-1. ツールボックス で、**指定されたインターフェイス** または **必要なインターフェイス** をクリックします。
+1. In the toolbox, click **Provided Interface** or **Required Interface**.
 
 2. ポートを追加するコンポーネントをクリックします。
 
     コンポーネントの境界上にポートが表示されます。
 
-    新しいインターフェイスがポートの型として生成されます。 このインターフェイスは、 **UML モデルエクスプローラー**に表示されます。
+    新しいインターフェイスがポートの型として生成されます。 This interface appears in **UML Model Explorer**.
 
 3. コンポーネント境界上でポートをドラッグして、目的の位置に配置します。
 
@@ -136,7 +136,7 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>提供インターフェイスが要求インターフェイスの要求を満たすことを示すには
 
-1. ツールボックスで、 **[依存関係]** をクリックします。
+1. In the toolbox, click **Dependency**.
 
 2. 最初に操作またはサービスを要求するコンポーネント上の要求インターフェイスを持つポートをクリックし、次に操作またはサービスを提供するコンポーネントの提供インターフェイスを持つポートをクリックします。
 
@@ -144,25 +144,25 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>既存のインターフェイスのポートをコンポーネントに追加するには
 
-- **UML モデルエクスプローラー**でインターフェイスを見つけ、そこからコンポーネントにドラッグします。
+- Find the interface in **UML Model Explorer** and then drag it from there onto the component.
 
      -または-
 
 - インターフェイスへの参照を図からコピーし、貼り付けます。
 
-    1. クラスダイアグラムまたはコンポーネント図で、インターフェイスを右クリックし、 **[コピー]** をクリックします。
+    1. On a class diagram or a component diagram, right-click the interface and then click **Copy**.
 
-    2. コンポーネント図でコンポーネントを右クリックし、 **[参照の貼り付け]** をクリックします。
+    2. On the component diagram, right-click the component, and then click **Paste Reference**.
 
          提供インターフェイスがコンポーネント上に表示されます。 隣にアクション タグが表示されます。
 
         > [!NOTE]
-        > **[参照の貼り付け]** ではなく **[貼り付け]** を使用すると、新しい名前を持つ新しいインターフェイスが作成されます。
+        > If you use **Paste** instead of **Paste Reference**, a new interface that has a new name will be created.
 
-    3. 必要なインターフェイスを作成する場合は、アクションタグをクリックし、 **[必須インターフェイスに変換]** をクリックします。
+    3. If you wanted to create a required interface, click the Action tag and then click **Convert to Required Interface**.
 
-## <a name="Parts"></a>コンポーネントの内部部分を表示する
- ![内部部分を示すコンポーネント図](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="Parts"></a> Showing the Internal Parts of a Component
+ ![Component diagram showing internal parts](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  コンポーネントが相互に対話するより小規模なコンポーネントから構成されることを示すために、パート (3) をコンポーネント (1) 内に配置できます。
 
@@ -172,9 +172,9 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
  `+ partName : TypeName`
 
- 親コンポーネント内の各パートは、その型 (4、5) に対して定義されている提供インターフェイスおよび要求インターフェイスを示します。 あるパートで必要とされる操作またはサービスを別のパートが提供できます。 **パートアセンブリ**コネクタを使用して、パートが相互に接続されているかどうかを示すことができます (6)。
+ 親コンポーネント内の各パートは、その型 (4、5) に対して定義されている提供インターフェイスおよび要求インターフェイスを示します。 あるパートで必要とされる操作またはサービスを別のパートが提供できます。 You can use **Part Assembly** connectors to show how parts are connected with one another (6).
 
- また、親コンポーネントのインターフェイスがそのいずれかのパートによって実際に提供または要求されることを示すこともできます。 **委任**関係 (9) を使用して、親のポートを内部パートのポートに接続できます。 2 つのポートは同じ種類 (提供ポートまたは要求ポート) である必要があり、インターフェイス型に互換性がある必要があります。
+ また、親コンポーネントのインターフェイスがそのいずれかのパートによって実際に提供または要求されることを示すこともできます。 You can connect a port of the parent to a port of an internal part using a **Delegation** relation (9). 2 つのポートは同じ種類 (提供ポートまたは要求ポート) である必要があり、インターフェイス型に互換性がある必要があります。
 
  新しい型または既存の型の新しいパートを生成できます。
 
@@ -182,11 +182,11 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 1. 親コンポーネントの構成要素と考える主要な機能ユニットごとにパートを生成します。
 
-    1. ツールボックス の **コンポーネント** をクリックし、親コンポーネント (1) の内側をクリックします。
+    1. Click **Component** in the toolbox, and then click inside the parent component (1).
 
          親コンポーネントの内側に新しいパート (3) が表示されます。
 
-         **UML モデルエクスプローラー**に新しいコンポーネントが作成されます。 これが、新しいパートの型です。
+         A new component is created in **UML Model Explorer**. これが、新しいパートの型です。
 
          \- または
 
@@ -196,31 +196,31 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
          \- または
 
-         図または UML モデルエクスプローラーでコンポーネントを右クリックし、 **[コピー]** をクリックします。
+         Right-click a component, either in a diagram or in UML Model Explorer, and then click **Copy**.
 
-         親コンポーネントを右クリックし、 **[参照の貼り付け]** をクリックします。
+         Right-click on the parent component, and then click **Paste Reference**.
 
          親コンポーネントの内側に新しいパート (3) が表示されます。 その型は、コピーしたコンポーネントです。
 
     2. 新しいパートの名前をクリックし、変更します。 型を変更することはできません。
 
-    3. 提供インターフェイスと要求インターフェイス (4、5) を新しいパートに追加できます。 **指定さ**れたインターフェイスまたは**必要なインターフェイス**ツールをクリックし、パーツ内をクリックします。
+    3. 提供インターフェイスと要求インターフェイス (4、5) を新しいパートに追加できます。 Click the **Provided Interface** or **Required Interface** tool, and then click in the part.
 
          \- または
 
-         既存のインターフェイスを**UML モデルエクスプローラー**からパーツにドラッグします。
+         Drag an existing interface from **UML Model Explorer** onto the part.
 
          インターフェイスがパートの型に追加され、パート上に表示されます。 必要に応じて、親コンポーネントのサイズが調整されます。
 
 2. パートを相互に接続します。
 
-    - 異なる部分のポートを接続するには、**依存関係**ツールを使用します (6)。
+    - Use the **Dependency** tool to connect the ports of different parts (6).
 
 3. パートを親コンポーネントのポートに接続します。
 
-    1. 親コンポーネント上に 1 つ以上のポート (7) を生成します。 ツールボックス の **必要なインターフェイス** または **指定されたインターフェイス** をクリックし、親コンポーネントをクリックします。
+    1. 親コンポーネント上に 1 つ以上のポート (7) を生成します。 Click **Required Interface** or **Provided Interface** on the toolbox, and then click the parent component.
 
-    2. ポートを 1 つ以上のパートに委譲 (9) します。 **[委任]** ツールをクリックし、次に親コンポーネントのポートをクリックし、次にパートのポートをクリックします。 同じ方法で、インターフェイスを提供または要求するポートを接続できます。
+    2. ポートを 1 つ以上のパートに委譲 (9) します。 Click the **Delegation** tool, then a port on the parent component, and then a port on a part. 同じ方法で、インターフェイスを提供または要求するポートを接続できます。
 
 ### <a name="showing-the-parts-of-a-part"></a>パートの内部パートの表示
  コンポーネントをパートに分解した後、各パート型をそれに固有の内部パートに分解できます。
@@ -231,17 +231,17 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 1. パートの型の完全修飾名を確認します。
 
-     パーツを右クリックし、 **[プロパティ]** をクリックします。
+     Right-click the part and then click **Properties**.
 
-     型名は、プロパティウィンドウの**type**フィールドに表示されます。
+     The type name appears in the **Type** field of the Properties window.
 
-2. **UML モデルエクスプローラー**で、パートの型を見つけます。
+2. Locate the part's type in **UML Model Explorer**.
 
-     **[表示]** をクリックし、 **[その他のウィンドウ]** をポイントし、 **[UML モデルエクスプローラー]** をクリックします。
+     Click **View**, point to **Other Windows**, and then click **UML Model Explorer**.
 
      プロジェクトを展開し、必要に応じて型が属しているパッケージを展開します。
 
-     型は**コンポーネント**として一覧表示されます。
+     The type will be listed as a **Component**.
 
      必要に応じて、ここで名前を変更できます。
 
@@ -255,7 +255,7 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
      この段階で、その内部にパートを追加できます。
 
-## <a name="Designing"></a>コンポーネントの設計
+## <a name="Designing"></a> Designing the Component
 
 ### <a name="describing-how-the-parts-collaborate"></a>パートのコラボレーションの記述
  シーケンス図を描画して、親コンポーネントが受信するメッセージに対する応答においてパートがどのように連携して動作するかを示すことができます。
@@ -270,17 +270,17 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 - 処理を少しずつ多数の相互作用に配分した場合、システムのパフォーマンスが低下し、システムを理解するのが困難になります。
 
-  ![コラボレーションパーツを示すシーケンス図](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Sequence diagram showing collaborating parts](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>パート間のコラボレーションを示すシーケンス図を描画するには
 
 1. 新しいシーケンス図を生成します。
 
-     詳細については、「 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。
+     For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
 2. このコンポーネントにメッセージを送信する外部コンポーネント、ユーザー、デバイス、またはその他のアクター (1) の生存線を生成します。
 
-     この生存線の**アクター**プロパティを true に設定して、考慮する必要があるコンポーネントの外部であることを示すことができます。 生存線の上にスティック図形が表示されます。
+     You can set the **Actor** property of this lifeline to true, to indicate that it is external to the component under consideration. 生存線の上にスティック図形が表示されます。
 
 3. 選択したアクターからメッセージが送信されるこのコンポーネントの提供インターフェイス (2) の生存線を生成します。
 
@@ -295,12 +295,12 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 ### <a name="is-the-component-more-than-its-parts"></a>コンポーネントとそのパートの役割の重要性の相違
  場合によっては、コンポーネントはパートのコレクションに与えられた名前にすぎません。 すべての処理はパートによって実行され、実行時にはコンポーネントを表すコードまたはその他の成果物はありません。
 
- モデルでこれを示すには、コンポーネントの **[間接的にインスタンス化される]** プロパティを設定します。 この場合、すべてのコンポーネントのインターフェイスがポート上にあり、内部パートへの委譲が設定されている必要があります。
+ You can indicate this in the model by setting the **Is Indirectly Instantiated** property of the component. この場合、すべてのコンポーネントのインターフェイスがポート上にあり、内部パートへの委譲が設定されている必要があります。
 
 ### <a name="describing-the-process-inside-each-part"></a>各パート内のプロセスの記述
- アクティビティ図を使用すると、コンポーネントがそれぞれの受信メッセージをどのように処理するかを示すことができます。 詳細については、「 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)」を参照してください。
+ アクティビティ図を使用すると、コンポーネントがそれぞれの受信メッセージをどのように処理するかを示すことができます。 For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
 
- ![データバッファーを含むアクティビティ図](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
+ ![Activity diagram with data buffer](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
  イベント受理アクション (1) を使用して、受信メッセージによって新しいスレッドが開始されることを示します。
 
@@ -318,9 +318,9 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 ### <a name="general-dependencies-between-components"></a>コンポーネント間の一般的な依存関係
  コンポーネント図を使用して、設計の主要な構成要素とその相互依存関係のみを示すことができます。
 
- ![コンポーネント間の依存関係](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![A dependency between components](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
- **依存関係ツールを**使用して依存関係を描画します。 これは、あるコンポーネントの設計が他のコンポーネントに依存することを示します。
+ Use the **Dependency** tool to draw a dependency. これは、あるコンポーネントの設計が他のコンポーネントに依存することを示します。
 
  依存関係の代表的な例を次に示します。
 
@@ -330,7 +330,7 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 - あるコンポーネントが、他のコンポーネントによって生成された情報を使用する。
 
-  依存関係矢印の名前を使用して、特定の用途を表すことができます。 名前を設定するには、矢印を右クリックし、 **[プロパティ]** をクリックして、プロパティ ウィンドウの **[名前]** フィールドを設定します。
+  依存関係矢印の名前を使用して、特定の用途を表すことができます。 To set the name, right-click the arrow, then click **Properties**, and set the **Name** field in the properties window.
 
 ## <a name="see-also"></a>参照
- [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)uml[ユースケース図:](../modeling/uml-use-case-diagrams-reference.md)リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス[uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [ビデオ: コンポーネント図を使用した物理構造のデザイン](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Designing the Physical Structure by using Component Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

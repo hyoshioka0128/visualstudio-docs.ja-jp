@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5999edf14692e5ad51f56cb7989ea07eb0f11f5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60e7ddd7c535d99abcb64d4adde97157b117f3ed
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657122"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301386"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>チュートリアル: Windows ストア アプリに対する単体テストの作成と実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72657122"
 Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] マネージド アプリの単体テストのサポートと、Visual C#、Visual Basic、および Visual C++ 用の単体テスト ライブラリ テンプレートが含まれています。
 
 > [!TIP]
-> [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリの開発の詳細については、「 [Windows ストア アプリ開発の開始](http://go.microsoft.com/fwlink/?LinkID=241410)」を参照してください。
+> [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリの開発の詳細については、「 [Windows ストア アプリ開発の開始](https://go.microsoft.com/fwlink/?LinkID=241410)」を参照してください。
 
  Visual Studio は、次の単体テスト機能を備えています。
 
@@ -64,11 +64,11 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 
 6. **[ソリューションのディレクトリを作成]** をクリックしたまま、 **[OK]** をクリックします。
 
-     ![調整した単体テストライブラリ](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
+     ![Tailored Unit Test Library](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
 
      ソリューション エクスプローラーに新しい [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 単体テスト プロジェクトが設定され、コード エディターに UnitTest1 という既定の単体テストが表示されます。
 
-     ![新しい調整した単体テストプロジェクト](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![New tailored unit test project](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> 単体テスト プロジェクトのマニフェストの編集
  アプリケーションを実行するために必要な機能を提供するように単体テスト プロジェクトのマニフェストを編集する必要があります。
@@ -88,7 +88,7 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 
      マニフェスト デザイナーの詳細については、「[マニフェスト デザイナーを使用した Windows 8.1 アプリ パッケージの構成](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)」を参照してください。
 
-     ![単体テストマニフェスト](../test/media/unit-test-win8.png "Unit_Test_Win8_")
+     ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> 単体テストのコーディング
 
@@ -96,7 +96,7 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 
 1. コード エディターで、単体テストを編集し、テストに必要なアサートとロジックを追加します。
 
-     詳細については、MSDN ライブラリの「 [Assert クラスの使用](http://go.microsoft.com/fwlink/?LinkID=224991) 」を参照してください。
+     詳細については、MSDN ライブラリの「 [Assert クラスの使用](https://go.microsoft.com/fwlink/?LinkID=224991) 」を参照してください。
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> 単体テストの実行
 
@@ -123,29 +123,29 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 
 4. **[すべて実行]** をクリックします。
 
-     ![単体テストエクスプローラー &#45;の実行単体テスト](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
+     ![Unit Test Explorer &#45; run unit test](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
 
     > [!TIP]
     > エクスプローラーに一覧表示された 1 つ以上の単体テストを選択し、 **[選択したテストの実行]** を右クリックして選択します。
     >
     >  また、 **[選択されたテストをデバッグ]** 、 **[テストを開く]** をクリックし、 **[プロパティ]** オプションを使用できます。
     >
-    >  ![単体テストエクスプローラー &#45;の uni テストコンテキストメニュー](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    >  ![Unit Test Explorer &#45; uni test context menu](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
      単体テストが実行されます。 完了すると、テスト エクスプローラーは、テストの状態、経過時間、およびソースへのリンクを表示します。
 
-     ![単体テストエクスプローラー &#45;のテストが完了しました](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
+     ![Unit Test Explorer &#45; test completed](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="videos"></a>ビデオ
- [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>フォーラム
- [Visual Studio の単体テスト](http://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio の単体テスト](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="msdn-library"></a>MSDN ライブラリ
- [MSDN ライブラリ – 既存コードの単体テストの作成と実行 (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)
+ [MSDN ライブラリ – 既存コードの単体テストの作成と実行 (Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=223683)
 
 ## <a name="see-also"></a>参照
- [Visual Studio を使用したストアアプリのテスト](../test/testing-store-apps-with-visual-studio.md) [Team Foundation ビルドを使用した Windows ストアアプリのビルドとテスト](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Testing Store apps with Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Build and test a Windows Store app using Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

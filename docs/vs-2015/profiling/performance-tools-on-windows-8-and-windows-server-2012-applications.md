@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675289"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299654"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
 - [JavaScript 関数タイミング](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [リモート デバイスで JavaScript 関数タイミング](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [JavaScript Function Timing on a Remote Device](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
 - [JavaScript 関数タイミング データの分析](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
@@ -100,7 +100,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
  Visual Studio がインストールされていないデバイスでアプリケーションをプロファイリングするには、次のいずれかを実行します。  
   
-- [MSDN Web サイト](http://go.microsoft.com/fwlink/?LinkID=219549)から、Visual Studio 用のリモート ツールの一部としてツールをダウンロードします。  
+- [MSDN Web サイト](https://go.microsoft.com/fwlink/?LinkID=219549)から、Visual Studio 用のリモート ツールの一部としてツールをダウンロードします。  
   
 - 既存の Visual Studio コンピューターから、スタンドアロンのプロファイラー ツール インストール プログラムをコピーして実行します。 インストール プログラムは *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** フォルダーにあります。 リモート コンピューターのオペレーティング システム (x86/x64) に対応するセットアップ プログラムを選択します。  
   
@@ -136,7 +136,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
    **リモート コンピューターでの TIP データの収集**  
   
-   リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
+   リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_** _\<プラットフォーム>_ **\_** _\<言語>_ **.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
   
    プロファイル データを収集するには、[VSPerfCmd](../profiling/vsperfcmd.md) または [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) を使用できます。  
   
@@ -144,7 +144,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
    階層相互作用データは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] または [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE でのみ表示できます。 [VSPerfReport](../profiling/vsperfreport.md) の使用による、ファイル ベースの階層相互作用レポートは利用できません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)   
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [コマンドラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

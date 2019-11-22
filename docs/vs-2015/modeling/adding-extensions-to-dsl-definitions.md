@@ -1,5 +1,5 @@
 ---
-title: DSL 定義への拡張機能の追加 |Microsoft Docs
+title: Adding Extensions to DSL Definitions | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,33 +9,33 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654718"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292147"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 定義への拡張機能の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DSL 定義の拡張機能を使用すると、ドメイン固有言語 (DSL) に対する拡張機能のパッケージを作成できます。 DSL 拡張機能は、Visual Studio Integration Extension (VSIX) に含まれており、DSL と同じ方法でユーザーのコンピューターにインストールできます。 その他の機能は、実行時に動的に有効にしたり無効にしたりすることができます。 Dsl は拡張用に明示的に設計する必要はなく、拡張 DSL を変更することなく、後またはサードパーティが拡張することができます。
+DSL Definition extension allows you to create a package of extensions to a domain-specific language (DSL). The DSL extension, which is contained in a Visual Studio Integration Extension (VSIX), can be installed on a user's computer in the same manner as a DSL. The additional features can be dynamically enabled and disabled at run time. DSLs do not have to be explicitly designed for extension, and extensions can be designed later or by third parties without altering the extended DSL.
 
- 追加機能には、次のものが含まれます。
+ The additional features can include the following:
 
-- モデル要素とプレゼンテーション要素のプロパティ
+- Properties for model and presentation elements
 
-- 図形とコネクタのデコレーター
+- Decorators for shapes and connectors
 
-- クラス、リレーションシップ、図形、およびコネクタ
+- Classes, relationships, shapes and connectors
 
-- 検証制約
+- Validation constraints
 
-- ツールボックスの項目とタブ
+- Toolbox items and tabs
 
-  拡張 DSL のユーザーは、追加機能のインスタンスを含むモデルを作成して保存できます。また、適切な拡張機能をインストールした他のユーザーがそれらを読み取ることができます。 拡張機能をインストールしていないユーザーは、追加機能を使用できませんが、追加の機能を失うことなく、モデルを更新して保存することができます。
+  A user of an extended DSL can create and save a model that contains instances of the additional features, and these can be read by other users who have installed the appropriate extension. Users who have not installed the extension cannot use the additional features, but they can update and save a model without losing the additional features.
 
-  サンプルコードとこの機能の詳細については、「 [Visual Studio の視覚化とモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128) 」 Web サイトを参照してください。
+  For sample code and more information about this feature, see the [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128) Web site.
 
 ## <a name="see-also"></a>参照
- [Visual Studio の視覚化およびモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

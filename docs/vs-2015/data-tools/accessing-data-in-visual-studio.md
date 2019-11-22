@@ -1,5 +1,5 @@
 ---
-title: データへのアクセス
+title: Accessing data
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -22,27 +22,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 2be1de65bb29ddca611366fcdc046162bdafc4b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673132"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299442"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、ローカルコンピューター、ローカルエリアネットワーク、パブリッククラウド、プライベートクラウド、またはハイブリッドクラウドで、事実上すべてのデータベース製品またはサービスのデータに接続するアプリケーションを作成できます。
+In Visual Studio, you can create applications that connect to data in virtually any database product or service, in any format, anywhere—on a local machine, on a local area network, or in a public, private, or hybrid cloud.
 
- JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では、ライブラリを入手してコードを記述することで、他の操作と同様にデータに接続できます。 .NET アプリケーションの場合、Visual Studio には、データソースの探索、メモリ内のデータを格納および操作するためのオブジェクトモデルの作成、およびユーザーインターフェイスへのデータのバインドに使用できるツールが用意されています。     Microsoft Azure には、.NET、Java、node.js、PHP、Python、Ruby、およびモバイルアプリ用の Sdk と、Azure Storage に接続するための Visual Studio のツールが用意されています。
+ For applications in JavaScript, Python, PHP, Ruby, or C++, you connect to data like you do anything else, by obtaining libraries and writing code. For .NET applications, Visual Studio provides tools that you can use to explore data sources,  create object models to store and manipulate data in memory, and bind data to the user interface.     Microsoft Azure provides SDKs for .NET, Java, Node.js, PHP, Python, Ruby, and mobile apps, and tools in Visual Studio for connecting to Azure Storage.
 
- 次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。  [Azure Tools For Visual studio](https://www.visualstudio.com/features/azure-tools-vs.aspx)は、visual studio から直接 azure データストアを操作できるようにするオプションのコンポーネントです。 ここに記載されている他の SQL および NoSQL データベース製品のほとんどは、ローカルコンピューター、ローカルネットワーク、または仮想マシン上の Microsoft Azure でホストできます。 このシナリオでは、データベース自体を管理する必要があります。
+ The following lists show just a few of the many database and storage systems that can be used from Visual Studio. The [Microsoft Azure](https://azure.microsoft.com/) offerings are data services that include all provisioning and administration of the  underlying data store.  [Azure Tools for Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) is an optional component that enables you to work with Azure data stores directly from Visual Studio. Most of the other SQL and NoSQL database products that are listed here can be hosted on a local machine, on a local network, or in Microsoft Azure on a virtual machine. In this scenario, you are responsible for managing the database itself.
 
  **Microsoft Azure**
 
 ||||
 |-|-|-|
-|SQL Database|DocumentDB|ストレージ (blob、テーブル、キュー、ファイル)|
+|SQL Database|DocumentDB|Storage (blobs, tables, queues, files)|
 |SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
 
  その他
@@ -51,7 +51,7 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 
 ||||
 |-|-|-|
-|SQL Server 2005 – 2016 (Express と LocalDB を含む)|Firebird|MariaDB|
+|SQL Server 2005–2016, including Express and LocalDB|Firebird|MariaDB|
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
@@ -67,78 +67,78 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 
  その他
 
- 多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の NuGet パッケージマネージャー (**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージの管理**) を使用して、オファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。   これらの製品を Visual Studio ギャラリーで閲覧するには、[**ツール** >  の**拡張機能と更新プログラム**] に移動し、ダイアログボックスの左側のウィンドウで **[オンライン]** を選択します。  詳細については、「[データベースシステム、ツール、サンプルのインストール](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
+ Many database vendors and third parties support Visual Studio integration by NuGet packages. You can explore the offerings on nuget.org or through the NuGet Package Manager in Visual Studio (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**). Other database products integrate with Visual Studio as an extension.   You can browse these offerings in the Visual Studio Gallery by navigating to **Tools** > **Extensions and Updates** and then selecting **Online** in the left pane of the dialog box.  For more information, see [Installing database systems, tools, and samples](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> SQL Server 2005 の延長サポートは、2016年4月12日に終了しました。   この日付以降、Visual Studio 2015 以降のデータツールが SQL Server 2005 と引き続き動作することは保証されていません。 詳細については、 [SQL Server 2005 のサポート終了](https://www.microsoft.com/sql-server/sql-server-2005)に関するお知らせを参照してください。
+> Extended support for SQL Server 2005 ended on April 12, 2016.   There is no guarantee that data tools in Visual Studio 2015 and later will continue to work with SQL Server 2005 after this date. For more information, see the [end-of-support announcement for SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
-### <a name="net-languages"></a>.NET 言語
- .NET Core を含むすべての .NET データアクセスは、ADO.NET に基づいています。これは、リレーショナルと非リレーショナルの両方の種類のデータソースにアクセスするためのインターフェイスを定義するクラスのセットです。 Visual Studio には、ADO.NET と連携して、データベースに接続し、データを操作し、データをユーザーに提示するのに役立つ、いくつかのツールとデザイナーがあります。 このセクションのドキュメントでは、これらのツールの使用方法について説明します。 ADO.NET command オブジェクトに対して直接プログラムを実行することもできます。 ADO.NET Api を直接呼び出す方法の詳細については、MSDN ライブラリの「 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 」を参照してください。
+### <a name="net-languages"></a>.NET languages
+ All .NET data access, including in .NET Core,  is based on ADO.NET, a set of classes that defines an interface for accessing any kind of data source, both relational and non-relational. Visual Studio has several tools and designers that work with ADO.NET to help you connect to databases, manipulate the data, and present the data to the user. The documentation in this section describes how to use those tools. You can also program directly against the ADO.NET command objects. For more information about calling the ADO.NET APIs directly, see [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in the MSDN Library.
 
- ASP.NET に特化したデータアクセスドキュメントについては、ASP.NET サイトでの[データの操作](http://www.asp.net/web-forms/overview/presenting-and-managing-data)に関するページを参照してください。 ASP.NET MVC での Entity Framework の使用に関するチュートリアルについては、「 [mvc 5 を使用した Entity Framework 6 Code First のはじめに](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)」を参照してください。
+ For data-access documentation specifically related to ASP.NET, see  [Working with Data](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) on the ASP.NET site. For a tutorial on using Entity Framework with ASP.NET MVC, see [Getting Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
- または Visual Basic のC#ユニバーサル WINDOWS プラットフォーム (UWP) アプリは、Microsoft Azure SDK for .NET を使用して Azure Storage およびその他の Azure サービスにアクセスできます。 Windows の Web. HttpClient クラスは、任意の RESTful サービスとの通信を可能にします。 詳細については、「 [Windows を使用して http サーバーに接続する方法](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)」を参照してください。
+ Universal Windows Platform (UWP) apps in C# or Visual Basic can use the      Microsoft Azure SDK for .NET to access Azure Storage and other Azure services. The Windows.Web.HttpClient class enables communication with any RESTful service. For more information, see [How to connect to an HTTP server using Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
- ローカルコンピューター上のデータストレージの場合、推奨される方法は、アプリケーションと同じプロセスで実行される SQLite を使用することです。 オブジェクトリレーショナルマッピング (ORM) レイヤーが必要な場合は、Entity Framework を使用できます。 詳細については、Windows デベロッパーセンターの「[データアクセス](https://msdn.microsoft.com/windows/uwp/data-access/index)」を参照してください。
+ For data storage on the local machine, the recommended approach is to use SQLite, which runs in the same process as the app. If an object-relational mapping (ORM) layer is required, you can use Entity Framework. For more information, see [Data access](https://msdn.microsoft.com/windows/uwp/data-access/index) in the Windows Developer Center.
 
- Azure サービスに接続する場合は、最新の[AZURE SDK ツール](https://azure.microsoft.com/downloads/)をダウンロードしてください。
+ If you are connecting to Azure services, be sure to download the latest [Azure SDK tools](https://azure.microsoft.com/downloads/).
 
 #### <a name="data-providers"></a>データ プロバイダー
- ADO.NET で使用するデータベースには、カスタム*ADO.NET データプロバイダー*が必要です。そうでない場合は、ODBC または OLE DB インターフェイスを公開する必要があります。 Microsoft では、SQL Server 製品の[ADO.NET データプロバイダー](https://msdn.microsoft.com/data/dd363565)と、ODBC および OLE DB プロバイダーの一覧を提供しています。
+ For a database to be consumable in ADO.NET, it must have a custom *ADO.NET data provider* or else must expose an ODBC or OLE DB interface. Microsoft provides a [list of ADO.NET data providers](https://msdn.microsoft.com/data/dd363565) for SQL Server products as well as ODBC and OLE DB providers.
 
 #### <a name="data-modeling"></a>データ モデリング
- .NET では、データソースからデータを取得した後、メモリ内のデータをモデル化して操作するための3つの選択肢があります。
+ In .NET, you have three choices for modeling and manipulating data in memory after you have retrieved it from a data source:
 
- お好みの Microsoft ORM テクノロジを Entity Framework します。 これを使用して、ファーストクラスの .NET オブジェクトとしてのリレーショナルデータに対するプログラミングを行うことができます。 新しいアプリケーションの場合、モデルが必要になったときの既定の最初の選択になります。 これには、基になる ADO.NET プロバイダーからのカスタムサポートが必要です。
+ Entity Framework The preferred Microsoft ORM technology. You can use it to program against relational data as first-class .NET objects. For new applications, it should be the default first choice when a model is required. It requires custom support from the underlying ADO.NET provider.
 
- 以前世代のオブジェクトリレーショナルマッパーを LINQ to SQL します。 これは、より複雑なシナリオに適していますが、アクティブな開発ではなくなりました。
+ LINQ to SQL An earlier-generation object-relational mapper. It works well for less complex scenarios but is no longer in active development.
 
- データセットは、3つのモデリングテクノロジの中で最も古いものです。 これは主に、大量のデータを処理したり、複雑なクエリや変換を実行したりしない "フォームオーバーデータ" アプリケーションを迅速に開発するために設計されています。 DataSet オブジェクトは、.NET オブジェクトよりはるかに多くの SQL database オブジェクトに似た DataTable オブジェクトと DataRow オブジェクトで構成されています。 SQL データソースに基づく比較的単純なアプリケーションの場合でも、データセットが適している可能性があります。
+ Datasets The oldest of the three modeling technologies. It is designed primarily for rapid development of "forms over data" applications in which you are not processing huge amounts of data or performing complex queries or transformations. A DataSet object consists of DataTable and  DataRow objects that logically resemble SQL database objects much more than .NET objects. For  relatively simple applications based on SQL data sources, datasets might still be a good choice.
 
- これらのテクノロジを使用する必要はありません。 特にパフォーマンスが重要な場合は、DataReader オブジェクトを使用してデータベースを読み取り、必要な値を List \<T > などのコレクションオブジェクトにコピーするだけで済みます。
+ There is no requirement to use any of these technologies. In some scenarios, especially where performance is critical, you can simply use a DataReader object to read from the database and copy the values that you need into a collection object such as List\<T>.
 
 ### <a name="native-c"></a>ネイティブ C++
- C++SQL Server に接続するアプリケーションでは、 [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)を使用する必要があります。 [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。  OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。  詳細については、「[データアクセス](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)」を参照してください。
+ C++ applications that connect to SQL Server should use the [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). You can access other databases by  using [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) or OLE DB drivers directly. ODBC is the current standard database interface, but most database systems provide custom functionality that can't be accessed through the ODBC interface.  OLE DB is a legacy COM data-access technology that is still supported but not recommended for new applications.  For more information, see [Data Access](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
 
- C++rest サービスを使用するプログラムは、 [ C++ rest SDK](https://github.com/Microsoft/cpprestsdk)を使用できます。
+ C++ programs that consume REST services can use the [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
- C++Microsoft Azure Storage で動作するプログラムでは、 [Microsoft Azure Storage クライアント](http://www.nuget.org/packages/wastorage)を使用できます。
+ C++ programs that work with Microsoft Azure Storage can use the [Microsoft Azure Storage Client](https://www.nuget.org/packages/wastorage).
 
 #### <a name="data-modeling"></a>データ モデリング
- Visual Studio では、のC++ORM レイヤーは提供されていません。  [Odbc](http://www.codesynthesis.com/products/odb/)は、の広く普及してC++いるオープンソースの ORM です。
+ Visual Studio  does not provide an ORM layer for C++.  [ODB](https://www.codesynthesis.com/products/odb/) is a popular open-source ORM for C++.
 
- レガシビジュアルC++データアクセステクノロジの詳細については、「[データアクセス](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)」を参照してください。
+ For more information about legacy Visual C++ data-access technologies, see  [Data Access](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
- [Visual Studio の JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)は、クロスプラットフォームアプリ、UWP アプリ、クラウドサービス、web サイト、web アプリを構築するためのファーストクラスの言語です。 Visual Studio 内から Bower、Grunt、Gulp、npm、および NuGet を使用して、お気に入りの JavaScript ライブラリとデータベース製品をインストールできます。 Azure の[web サイト](https://azure.microsoft.com/)から sdk をダウンロードして、azure storage とサービスに接続します。  ADO.NET は、サーバー側の JavaScript (node.js) をデータソースに接続するライブラリです。
+ [JavaScript in Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) is a first-class language for building cross-platform apps, UWP apps, cloud services, websites, and web apps. You can use Bower, Grunt, Gulp, npm, and NuGet  from within Visual Studio to install your favorite JavaScript libraries and database products. Connect to Azure storage and services by downloading SDKs from the [Azure website](https://azure.microsoft.com/).  Edge.js is a library that connects server-side JavaScript (Node.js) to ADO.NET data sources.
 
 ### <a name="python"></a>Python
- CPython または IronPython (.NET) アプリケーションを作成するために、お気に入りの Python フレームワークと共に[Python Tools for Visual Studio](http://microsoft.github.io/PTVS/)をインストールします。  Python Tools for Visual Studio の web サイトには、azure での[Django と SQL Database](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure)、azure 上の[Django と MySQL](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) 、azure での[瓶と MongoDB](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure)など、データへの接続に関するいくつかのチュートリアルがあります。
+ Install  [Python Tools for Visual Studio](http://microsoft.github.io/PTVS/) along with your favorite Python framework to create CPython or IronPython (.NET)  applications.  The Python Tools for Visual Studio website has several tutorials on connecting to data, including [Django and SQL Database on Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django and MySQL on Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) and [Bottle and MongoDB on Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
 ## <a name="in-this-section"></a>このセクションの内容
- [データベースシステム、ツール、およびサンプルのインストール](../data-tools/installing-database-systems-tools-and-samples.md)データベース製品と、それらをサポートする Visual Studio 拡張機能またはドライバーを取得する方法、および実験と学習を目的としたサンプルデータベースの検索場所について説明します。
+ [Installing database systems, tools, and samples](../data-tools/installing-database-systems-tools-and-samples.md) Discusses how to obtain database products and the Visual Studio extensions or drivers that support them, and where to find sample databases for experimentation and learning purposes.
 
- [.Net 用 Visual Studio data tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)Visual Studio のツールウィンドウを使用してデータソースに接続する方法、データセットまたは Entity Framework モデルを作成する方法、およびデータをユーザーインターフェイスコントロールにバインドする方法について説明します。
+ [Visual Studio data tools for .NET](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Describes how to use Visual Studio tool windows to connect to data sources, create datasets or Entity Framework models, and bind the data to user interface controls.
 
 ## <a name="related-topics"></a>関連トピック
- [データ、デバイス、および分析](https://msdn.microsoft.com/data-and-devices)Cortana Analytics Suite やモノのインターネットのサポートなど、Microsoft インテリジェントクラウドの概要について説明します。
+ [Data, Devices, and Analytics](https://msdn.microsoft.com/data-and-devices) Provides an introduction to the Microsoft intelligent cloud, including Cortana Analytics Suite and support for Internet of Things.
 
- [Microsoft Azure Storage](/azure/storage/)Azure Storage について説明します。また、Azure blob、テーブル、キュー、およびファイルを使用してアプリケーションを作成する方法について説明します。
+ [Microsoft Azure Storage](/azure/storage/) Describes Azure Storage, and how to create applications by  using Azure blobs, tables, queues, and files.
 
- [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/)サービスとしてのリレーショナルデータベース Azure SQL Database に接続する方法について説明します。
+ [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) Describes how to connect to Azure SQL Database, a relational database as a service.
 
- [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)データ接続アプリケーションとデータベースの設計、探索、テスト、および配置を簡略化するツールについて説明します。
+ [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) Describes the tools that simplify design, exploration, testing, and deploying of data-connected applications and databases.
 
- [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)ADO.NET アーキテクチャと、ADO.NET クラスを使用してアプリケーションデータを管理し、データソースと XML を操作する方法について説明します。
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) Describes the ADO.NET architecture and how to use the ADO.NET classes to manage application data and interact with data sources and XML.
 
- [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)開発者がリレーショナルデータベースに対して直接ではなく、概念モデルに対してプログラミングを行うことができるデータアプリケーションを作成する方法について説明します。
+ [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) Describes how to create data applications that allow developers to program against a conceptual model instead of directly against a relational database.
 
- [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)@No__t_1 を使用して、web 上または[Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)を実装するイントラネットにデータサービスを配置する方法について説明します。
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Describes how to use [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] to deploy data services on the web or an intranet that implement the [Open Data Protocol (OData)](https://go.microsoft.com/fwlink/?LinkID=182204).
 
- [Office ソリューションのデータ](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)Office ソリューションでのデータの動作について説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
+ [Data in Office Solutions](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Contains links to topics that explain how data works in Office solutions. スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 
- [LINQ (統合言語クエリ)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)および Visual Basic にC#組み込まれているクエリ機能と、リレーショナルデータベース、XML ドキュメント、データセット、およびメモリ内コレクションに対してクエリを実行するための一般的なモデルについて説明します。
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) Describes the query capabilities built into C# and Visual Basic, and the common model for querying relational databases, XML documents, datasets, and in-memory collections.
 
- [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)Xml データの操作、XSLT のデバッグ、XML 機能の .NET Framework、および XML クエリのアーキテクチャについて説明します。
+ [XML Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) Discusses working with XML data, debugging XSLT, .NET Framework XML features, and the architecture of XML Query.
 
- [XML ドキュメントと XML データ](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380).NET Framework 内の XML ドキュメントとデータを操作する包括的で統合されたクラスのセットについて概要を説明します。
+ [XML Documents and Data](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) Provides an overview to a comprehensive and integrated set of classes that work with XML documents and data in the .NET Framework.

@@ -1,5 +1,5 @@
 ---
-title: グラフィックス フレーム分析 |Microsoft Docs
+title: Graphics Frame Analysis | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437942"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300511"
 ---
 # <a name="graphics-frame-analysis"></a>グラフィックス フレーム分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
   
   フレーム分析は主にレンダリング パフォーマンスを向上させることを意図していますが、同様に、特定のパフォーマンス ターゲットに対して表示品質を向上させる、または GPU の電力消費を低下させるうえでも有用です。  
   
-  アプリのフレーム分析が実行できる操作のデモンストレーションを表示するには、見ることができます、 [Visual Studio のグラフィックス フレーム分析](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)Channel 9 のビデオ。  
+  To see a demonstration of what Frame Analysis can do for your app, you can watch the [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video on Channel 9.  
   
 ## <a name="using-frame-analysis"></a>フレーム分析の使用  
- フレーム分析を使用する前に、他の Graphics Analyzer ツールを使用する場合と同様に、アプリ実行時のグラフィックス情報をキャプチャする必要があります。 次に、グラフィックス ログのドキュメント (.vsglog) のウィンドウで、**[フレーム分析]** タブを選択します。  
+ フレーム分析を使用する前に、他の Graphics Analyzer ツールを使用する場合と同様に、アプリ実行時のグラフィックス情報をキャプチャする必要があります。 次に、グラフィックス ログのドキュメント (.vsglog) のウィンドウで、 **[フレーム分析]** タブを選択します。  
   
- ![フレーム分析 タブを選択します](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab。")  
+ ![Select the Frame Analysis tab.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
  分析が完了すると、結果が表示されます。 [フレーム分析] タブの上部には、タイムラインとサマリー テーブルが表示されます。 下部には、詳細テーブルが表示されます。 再生中にエラーまたは警告が生成された場合は、タイムラインの上に概要が示されます。そこからリンクに従って、エラーおよび警告の詳細を見ることができます。  
   
@@ -77,14 +77,14 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 #### <a name="timeline"></a>タイムライン  
  タイムラインは、相互に関連した描画 - 呼び出しのタイミングの概要を示しています。 描画時間が長い場合には、長いバーが対応しているため、これを使用してフレーム内で最も負荷がかかっている描画呼び出しをすぐに見つけることができます。 キャプチャされたフレームに含まれている描画呼び出しの数が非常に多い場合は、複数の描画呼び出しが 1 つのバーにまとめられ、その長さは描画呼び出しの合計になっています。  
   
- ![タイムラインは描画&#45;コストを呼び出します。](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![The timeline shows draw&#45;call costs.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  バーにポインターを置くと、バーがどの描画 - 呼び出しイベントに対応しているのかわかります。 バーを選択すると、イベント リストが対象のイベントと同期されます。  
   
 #### <a name="table"></a>テーブル  
  タイムラインの下にある数のテーブルは、アプリケーションの既定のレンダリングについて、各描画呼び出しのレンダリング バリアントの相対パフォーマンスを示しています。 各列は別のレンダリング バリアントを示しており、各行は、一番左の列で確認される別の描画呼び出しを表しています。ここからリンクに従って、[グラフィックス イベント一覧] ウィンドウへナビゲートできます。  
   
- ![概要の表では、さまざまなバリアントを示します。](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
+ ![The summary table shows different varients.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
   
  サマリー テーブルの左から 2 番目の列は、アプリケーションのベースライン レンダリング時間を示しています。これは、アプリケーションの既定のレンダリングで描画呼び出しを完了するまでにかかる時間です。 残りの列は、各レンダリング バリアントの相対パフォーマンスをベースラインのパーセンテージとして示しているため、パフォーマンスが改善されているかどうか一目でわかります。 パーセンテージが 100 を超えている場合はベースラインよりも長い時間がかかっている、つまりパフォーマンスが低下したことを示しています。パーセンテージが 100 未満の場合は時間がかかっていない、つまりパフォーマンスが向上したことを示しています。  
   
@@ -93,14 +93,14 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 #### <a name="hot-draw-calls"></a>"ホット" 描画呼び出し  
  全体のレンダリング時間で大きな割合を占めている、または回避できた理由により著しく遅くなっている描画呼び出しを目立たせるために、このような "ホット" な描画呼び出しが含まれている行には赤い影が付けられます。この影は、ベースラインのタイミングが、フレーム内のすべての描画呼び出しの平均のベースライン タイミングよりも、1標準偏差以上長い場合に付けられます。  
   
- ![この DrawIndexed 呼び出しには、ホットとコールド バリアントがあります。](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
+ ![This DrawIndexed call has hot and cold varients.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>統計的な有意性  
  最も高い関連性を持つレンダリング バリエーションを目立たせるために、フレーム分析は、各レンダリング バリアントの統計的な有意性を決定し、重要なものを太字で示します。 パフォーマンスが向上しているものは緑で、パフォーマンスが低下しているものは赤で示されます。 統計的に重要な意味を持たない結果は、通常の書体で示されます。  
   
- ![描画呼び出しバリアントの統計的な関連性](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![The statistical relevance of the draw call variant](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
- フレーム分析では、統計的な関連性を決定するには、[スチューデントの t 検定](http://www.wikipedia.org/wiki/Student%27s_t-test)します。  
+ To determine statistical relevance, Frame Analysis uses the [Student's t-test](https://en.wikipedia.org/wiki/Student's_t-test).  
   
 ### <a name="details-table"></a>詳細テーブル  
  詳細テーブルはサマリー テーブルの下にあり、最初の状態では折りたたまれています。 詳細テーブルの内容は、再生コンピューター.のハードウェア プラットフォームによって異なります。 サポートされているハードウェア プラットフォームの詳細については、「[ハードウェア サポート](#HardwareSupport)」を参照してください。  
@@ -108,12 +108,12 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>ハードウェア カウンターをサポートしていないプラットフォーム  
  ほとんどのプラットフォームは、ハードウェア GPU カウンター (Intel、AMD、nVidia から現在提供されているすべての GPU) を完全にサポートしているわけではありません。 収集するハードウェア カウンターがない場合は、詳細テーブルのみが表示され、すべてのバリアントのタイミングの絶対値の平均が示されます。  
   
- ![詳細テーブルといくつかの再生バリアント。](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
+ ![The details table and some playback varients.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>ハードウェア カウンターをサポートしているプラットフォーム  
  ハードウェア GPU カウンターをサポートしているプラットフォーム (nVidia T40 SOC やすべての Qualcomm SOC など) については、各バリアントに 1 つずつ、いくつかの詳細テーブルが表示されます。 使用できるすべてのハードウェア カウンターは各レンダリング バリアントに対して収集され、その詳細テーブルに表示されます。  
   
- ![サポートされている場合は、ハードウェア カウンターが表示されます。](../debugger/media/pix-frame.png "pix_frame")  
+ ![Hardware counters are displayed when supported.](../debugger/media/pix-frame.png "pix_frame")  
   
  ハードウェア カウンターの情報は、各描画呼び出しについて特定のハードウェアプラットフォーム動作の詳細なビューを提供します。この情報は、パフォーマンスのボトルネックとなる原因を正確に特定するうえで有用です。  
   
@@ -183,7 +183,7 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 > これは、機能レベルではなく、使用している Direct3D API 呼び出しに対してのみ適用されます。 Direct3D 11、Direct3D 11.1、または Direct3D 11.2 API を使用している場合は、任意の機能レベルを使用してもフレーム分析は機能します。  
   
 ## <a name="Variants"></a> バリアント  
- 再生中に、フレームがレンダリングされる方法に対してフレーム分析が加える変更のことを*バリアント*といいます。 フレーム分析が調査するバリアントは、レンダリング パフォーマンスまたはアプリケーションの表示品質を改善しようとして行った、一般的で比較的簡単な変更に対応します。たとえば、テクスチャのサイズを小さくする、テクスチャの圧縮を使用する、違う種類のアンチエイリアス処理を有効にする、などの変更です。 バリアントは、通常のレンダリング コンテキストおよびアプリケーションのパラメーターを上書きします。 次に概要を示します。  
+ 再生中に、フレームがレンダリングされる方法に対してフレーム分析が加える変更のことを*バリアント*といいます。 フレーム分析が調査するバリアントは、レンダリング パフォーマンスまたはアプリケーションの表示品質を改善しようとして行った、一般的で比較的簡単な変更に対応します。たとえば、テクスチャのサイズを小さくする、テクスチャの圧縮を使用する、違う種類のアンチエイリアス処理を有効にする、などの変更です。 バリアントは、通常のレンダリング コンテキストおよびアプリケーションのパラメーターをオーバーライドします。 次に概要を示します。  
   
 |バリアント|説明|  
 |-------------|-----------------|  
@@ -191,14 +191,14 @@ Visual Studio Graphics Analyzer のグラフィックス フレーム分析を�
 |**0x MSAA**|すべてのレンダー ターゲット上で multi-sample anti-aliasing (MSAA) を無効にします。<br /><br /> 詳細については、「[0x/2x/4x MSAA バリアント](../debugger/0x-2x-4x-msaa-variants.md)」を参照してください。|  
 |**2x MSAA**|すべてのレンダー ターゲット上で 2x multi-sample anti-aliasing (MSAA) を有効にします。<br /><br /> 詳細については、「[0x/2x/4x MSAA バリアント](../debugger/0x-2x-4x-msaa-variants.md)」を参照してください。|  
 |**4x MSAA**|すべてのレンダー ターゲット上で 4x multi-sample anti-aliasing (MSAA) を有効にします。<br /><br /> 詳細については、「[0x/2x/4x MSAA バリアント](../debugger/0x-2x-4x-msaa-variants.md)」を参照してください。|  
-|**ポイント テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_POINT` (point texture filtering) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
-|**バイリニア テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilinear texture filtering) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
-|**トリリニア テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear texture filtering) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
-|**アニソトロピック テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_ANISOTROPIC` に設定し、`MaxAnisotropy` を `16` (16x アニソトロピック テクスチャ フィルタリング) に設定します。<br /><br /> 詳細については、次を参照してください。[ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)します。|  
+|**ポイント テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_POINT` (point texture filtering) に設定します。<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**バイリニア テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilinear texture filtering) に設定します。<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**トリリニア テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear texture filtering) に設定します。<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**アニソトロピック テクスチャ フィルタリング**|該当するすべてのテクスチャ サンプルに対して、フィルタリング モードを `DXD11_FILTER_ANISOTROPIC` に設定し、`MaxAnisotropy` を `16` (16x アニソトロピック テクスチャ フィルタリング) に設定します。<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**16bpp レンダリング ターゲット フォーマット**|すべてのレンダー ターゲットおよびバックバッファーに対して、ピクセル形式を `DXGI_FORMAT_B5G6R5_UNORM` (16bpp、565 形式) に設定します。<br /><br /> 詳細については、「[16bpp レンダリング ターゲット フォーマット バリアント](../debugger/16bpp-render-target-format-variant.md)」を参照してください。|  
 |**ミップマップ生成**|レンダー ターゲットではないすべてのテクスチャで MIP マップを有効にします。<br /><br /> 詳細については、「[ミップマップ生成バリアント](../debugger/mip-map-generation-variant.md)」を参照してください。|  
 |**ハーフ テクスチャ ディメンション**|レンダー ターゲットではないすべてのテクスチャで、テクスチャのディメンションを、各ディメンションの元のサイズの半分に減らします。 たとえば、256x128 のテクスチャは 128x64 テクセルになります。<br /><br /> 詳細については、「[ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)」を参照してください。|  
 |**クォーター テクスチャ ディメンション**|レンダー ターゲットではないすべてのテクスチャで、テクスチャのディメンションを、各ディメンションの元のサイズの 4 分の 1 に減らします。 たとえば、256x128 のテクスチャは 64x32 テクセルになります。<br /><br /> 詳細については、「[ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)」を参照してください。|  
 |**BC テクスチャ圧縮**|B8G8R8X8、B8G8R8A8、または R8G8B8A8 ピクセル形式のバリアントを持つすべてのテクスチャで、ブロック圧縮を有効にします。 B8G8R8X8 形式のバリアントは BC1 を使用して圧縮されます。B8G8R8A8 および R8G8B8A8 形式のバリアントは BC3 を使用して圧縮されます。<br /><br /> 詳細については、「[BC テクスチャ圧縮バリアント](../debugger/bc-texture-compression-variant.md)」を参照してください。|  
   
- ほとんどのバリアントの結果は、規範となります。「を半分に削減のテクスチャ サイズは 25% 高速化」または"の有効化 2 x MSAA は 2% しか遅く"します。 その他のバリアントでは、より詳しい解釈が必要な場合もあります。たとえば、ビューポートのディメンションを 1x1 に変更したバリアントでパフォーマンスが著しく向上した場合、フィルレートが低いことによりレンダリングがボトルネックになっていた可能性を表します。また、パフォーマンスに目立った変化がない場合は、頂点の処理によりレンダリングがボトルネックになっていた可能性を表します。
+ ほとんどのバリアントの結果は、「テクスチャ サイズを半分にすると 25 % 高速になる」、「2x MSAA を有効にしても 2% しか遅くならない」のように規範的なものです。 その他のバリアントでは、より詳しい解釈が必要な場合もあります。たとえば、ビューポートのディメンションを 1x1 に変更したバリアントでパフォーマンスが著しく向上した場合、フィルレートが低いことによりレンダリングがボトルネックになっていた可能性を表します。また、パフォーマンスに目立った変化がない場合は、頂点の処理によりレンダリングがボトルネックになっていた可能性を表します。

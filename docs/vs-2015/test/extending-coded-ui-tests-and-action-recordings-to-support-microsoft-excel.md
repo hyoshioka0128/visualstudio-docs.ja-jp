@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660568"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302560"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72660568"
 
   このセクションでは、Excel ワークシートのテストの記録と再生を行うことができるコード化された UI テストの拡張機能について説明します。 拡張機能の各部分については、それぞれの拡張機能を作成する開発者向けに、このセクションとコード コメントで説明します。
 
-  ![UI テストのアーキテクチャ](../test/media/ui-testarch.png "UI_TestArch")アーキテクチャの概要
+  ![UI Test Architecture](../test/media/ui-testarch.png "UI_TestArch") Architecture Overview
 
 ## <a name="download-the-sample"></a>サンプルのダウンロード
  サンプルは、`CodedUIExtensibilitySample.sln` ソリューションの次の 4 つのプロジェクトで構成されています。
@@ -39,7 +39,7 @@ ms.locfileid: "72660568"
 
 - SampleTestProject
 
-  この[ブログの投稿](http://go.microsoft.com/fwlink/?LinkID=185592)からサンプルを入手してください。
+  この[ブログの投稿](https://go.microsoft.com/fwlink/?LinkID=185592)からサンプルを入手してください。
 
 > [!NOTE]
 > サンプルは、Microsoft Excel 2010 での使用を意図しています。 Microsoft Excel の他のバージョンでも使用できる可能性がありますが、現時点ではサポートされていません。

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: テキストテンプレートを使用したコードの生成 |Microsoft Docs'
+title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29a455194e64ee30186941cb67b014170426cce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659249"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295503"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用したコード生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72659249"
  このプロジェクト例では、テンプレートでサンプル XML ファイルを読み取り、ノードの各型に対応するクラスを生成します。 手入力のコードでは、これらのクラスを使用して XML ファイルを操作できます。 また、同じノード型を使用する他のファイルでも、アプリケーションを実行できます。 サンプル XML ファイルの目的は、アプリケーションで対応できるようにするすべてのノード型の例を提供することです。
 
 > [!NOTE]
-> [に含まれるアプリケーション](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
+> [に含まれるアプリケーション](https://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
 
  サンプル ファイルは次のとおりです。
 
@@ -421,4 +421,4 @@ namespace MyProject
  テンプレートの変換エラーやコンパイル エラーが **[エラー一覧]** に表示された場合、または出力ファイルが正しく生成されなかった場合は、「[TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)」で説明されている方法を使用してテキスト テンプレートをトラブルシューティングできます。
 
 ## <a name="see-also"></a>参照
- T4 テキストテンプレート[を使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [t4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)
+ [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)

@@ -1,5 +1,5 @@
 ---
-title: UML モデル要素にステレオタイプを追加する |Microsoft Docs
+title: Add stereotypes to UML model elements | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655278"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292330"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>UML モデル要素にステレオタイプを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ UML モデル要素にステレオタイプを追加して、注釈を付けた�
 
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>プロファイルをモデルまたはパッケージにリンクするには
 
-1. **UML モデルエクスプローラー**を開きます。 **[アーキテクチャ]** メニューの **[ウィンドウ]** をポイントし、 **[UML モデルエクスプローラー]** をクリックします。
+1. Open **UML Model Explorer**. On the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
 
 2. プロファイル内のステレオタイプの適用先とする要素がすべて含まれるパッケージまたはモデルを見つけます。
 
-3. パッケージまたはモデルを右クリックし、 **[プロパティ]** をクリックします。
+3. Right-click the package or the model and then click **Properties**.
 
-4. **[プロパティ]** ウィンドウで、使用するステレオタイプを含むプロファイルに **[プロファイル]** プロパティを設定します。
+4. In the **Properties** window, set the **Profiles** property to the profiles that contain the stereotypes you want to use.
 
      これで、このプロファイルのステレオタイプを、モデルまたはパッケージに含まれているすべての要素で使用できるようになります。 パッケージに他のパッケージが含まれている場合、そのパッケージでも要素にステレオタイプを使用できるようになります。
 
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>モデル要素または関係にステレオタイプを追加するには
 
-1. 図または**UML モデルエクスプローラー**で、モデル要素またはリレーションシップを右クリックし、 **[プロパティ]** をクリックします。
+1. Right-click the model element or relationship, either on a diagram or in **UML Model Explorer**, and then click **Properties**.
 
     > [!NOTE]
     > 複数の要素に同じステレオタイプを追加する場合は、複数の要素を選択してから、その中の 1 つを右クリックします。
 
-2. **[ステレオタイプ]** プロパティをクリックし、適用するステレオタイプを選択します。
+2. Click the **Stereotypes** property and select the stereotypes that you want to apply.
 
      ほとんどの要素や関係では、選択したステレオタイプが &lt;&lt; &gt;&gt; に囲まれてモデル要素内に表示されます。
 
     > [!NOTE]
-    > **[ステレオタイプ]** プロパティが表示されない場合、または必要なステレオタイプが表示されない場合は、適切なプロファイルがリンクされているパッケージまたはモデル内にモデル要素が含まれていることを確認します。
+    > If you cannot see the **Stereotypes** property, or if the stereotype you want does not appear, verify that the model element is inside a package or a model to which the appropriate profile has been linked.
 
-3. 一部のステレオタイプでは、モデル要素に対して追加のプロパティの値を設定できます。 これらのプロパティを表示するには、 **[ステレオタイプ]** プロパティを展開します。
+3. 一部のステレオタイプでは、モデル要素に対して追加のプロパティの値を設定できます。 To see these properties, expand the **Stereotypes** property.
 
 ### <a name="to-create-model-elements-within-a-package"></a>パッケージ内にモデル要素を作成するには
 
-1. UML クラス図または**Uml モデルエクスプローラー**でパッケージを作成します。
+1. Create a package either in a UML Class Diagram, or in **UML Model Explorer**.
 
 2. そのパッケージに、次のいずれかの方法でモデル要素を追加します。
 
@@ -65,7 +65,7 @@ UML モデル要素にステレオタイプを追加して、注釈を付けた�
 
          \- または
 
-    - UML モデルエクスプローラーで、パッケージを右クリックし、 **[追加]** をポイントして、要素の種類をクリックします。
+    - In UML Model Explorer, right-click the package, point to **Add**, and then click an element type.
 
          \- または
 
@@ -75,11 +75,12 @@ UML モデル要素にステレオタイプを追加して、注釈を付けた�
 
     - 図をパッケージにリンクさせた後、図内に要素を作成します。
 
-         これを行うには、図の空白部分を右クリックし、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウで、リンクされた **[パッケージ]** を目的のパッケージに設定します。
+         To do this, right-click a blank part of the diagram and then click **Properties**. In the **Properties** window, set **Linked Package** to the package you want.
 
          この図で作成した新しい要素はすべて、このパッケージ内に定義されることになります。
 
          この操作を実行できるのは、一部の種類の図に限られます。
 
 ## <a name="see-also"></a>参照
- [プロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[プロファイルとステレオタイプを使用](../modeling/customize-your-model-with-profiles-and-stereotypes.md)してモデルをカスタマイズする[パッケージと名前空間](../modeling/define-packages-and-namespaces.md)の[色 uml クラスをステレオタイプ別](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)に定義する
+ [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Define packages and namespaces](../modeling/define-packages-and-namespaces.md)
+

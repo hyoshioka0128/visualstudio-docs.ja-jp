@@ -1,5 +1,5 @@
 ---
-title: チームプロジェクトチェックインポリシーによるコード品質の向上 |Microsoft Docs
+title: Enhancing Code Quality with Team Project Check-in Policies | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e4c234d7b13b5c2211c833ee843ea80649c231a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13f943baef21560132f2f9b9ba98c0325540fbf2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667642"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301085"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>チーム プロジェクト チェックイン ポリシーによるコード品質の向上
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ Team Foundation バージョン コントロール (TFVC) を使用する場合�
 |**開発環境の設定:** コードを作成または変更する前に、適切なソース コードを使用して開発環境およびテスト環境を設定する必要があります。 データベースを使用している場合は、そのデータベースのオフライン形式へのアクセス権も必要です。|[開発環境の設定](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|
 |**開発プロセスにおけるコード分析の使用:** チームのメンバーは、それぞれの開発コンピューターでコード分析を実行します。 Visual Studio では、開発者が個々のコード プロジェクトについてコード分析を構成および実行し、実行したコード分析で発見された問題を表示および分析して、警告用の作業項目を作成します。|[アプリケーション品質の分析](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
 |**単体テストの作成および実行:** 単体テストを実行することにより、開発者およびテスト担当者は、C#、Visual Basic、.NET、および C++ のプロジェクトでクラスのメソッドに論理エラーがないかどうかをすばやく確認できます。 単体テストは、1 回作成するだけでよく、バグが追加されていないことを確認するために、ソース コードが変更されるたびに実行できます。|[コードの単体テスト](../test/unit-test-your-code.md)|
-|**作業項目と欠陥の追跡:** 作業項目を使用して、自分の作業とチーム プロジェクトに関する情報の両方を、追跡および管理できます。 作業項目は [!INCLUDE[esprfound](../includes/esprfound-md.md)] が作業の割り当てと進行状況を追跡するために使用するデータベース レコードです。 さまざまな種類の作業項目を使用して、顧客要件、製品バグ、開発タスクなどの作業を追跡できます。|[作業の追跡とワークフロー &#91;の管理のリダイレクト&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|
+|**作業項目と欠陥の追跡:** 作業項目を使用して、自分の作業とチーム プロジェクトに関する情報の両方を、追跡および管理できます。 作業項目は [!INCLUDE[esprfound](../includes/esprfound-md.md)] が作業の割り当てと進行状況を追跡するために使用するデータベース レコードです。 さまざまな種類の作業項目を使用して、顧客要件、製品バグ、開発タスクなどの作業を追跡できます。|[Track work and manage workflow &#91;redirected&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)

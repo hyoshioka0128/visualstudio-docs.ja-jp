@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191673"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298203"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,18 +67,18 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   詳細については、「 [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)」を参照してください。  
+   詳細については、次を参照してください。[検索とフィルター処理、診断ツール ウィンドウの [イベント] タブ](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)します。  
   
 ## <a name="collect-profiling-data-without-debugging"></a>デバッグなしでプロファイリング データを収集する  
  一部のプロファイリング ツールを実行するには管理者権限が必要です。 管理者として Visual Studio を開始することもできますし、診断セッションを開始するときに管理者としてのツールの実行を選択することもできます。  
   
 1. Visual Studio でプロジェクトを開きます。  
   
-2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー...]** をクリックします。(ショートカット キー。Alt + F2)。  
+2. On the **Debug** menu, choose **Performance Profiler...** (Shortcut key: Alt + F2).  
   
 3. 診断の起動ページで、セッションで実行する 1 つ以上のツールを選択します。 プロジェクトの種類、オペレーティング システム、およびプログラミング言語に適用されるツールのみが表示されます。 ある診断ツールを選択すると、同じ診断セッションで実行できないツールの選択肢が無効になります。 C# Windows ユニバーサル アプリでの選択例を次に示します。  
   
-    ![診断ツールの選択](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Select the diagnostic tools](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. 診断セッションを開始するには、 **[開始]** をクリックします。  
   
@@ -86,7 +86,7 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
     セッションを実行している間に、ツールによっては診断ツールの起動ページにリアルタイム データが表示されます。  
   
-    ![[パフォーマンスと診断] ページでデータを収集](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Collect data on the Performance and Diagnostic pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. 診断セッションを終了するには、 **[コレクションの停止]** をクリックします。  
   
@@ -94,49 +94,49 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
    また、診断ツールの起動ページで直前に開かれた一覧から保存された .diagnosis セッション ファイルを開くことができます。  
   
-   ![保存済みの診断セッション ファイルを開く](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Open a saved diagnosis session file](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>プロファイリング レポート  
- ![診断ツール レポート](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Diagnostic tools report](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
-|![手順 1](../profiling/media/procguid-1.png "ProcGuid_1")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|  
-|![手順 2](../profiling/media/procguid-2.png "ProcGuid_2")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|  
-|![手順 3](../profiling/media/procguid-3.png "ProcGuid_3")|ツールには 1 つ以上のマスター グラフが表示されます。 診断セッションが複数のツールによって作成される場合には、すべてのマスター グラフが表示されます。|  
-|![手順 4](../profiling/media/procguid-4.png "ProcGuid_4")|個々のグラフを展開および折りたたむことができます。|  
-|![手順 5](../profiling/media/procguid-6.png "ProcGuid_6")|データに複数のツールからの情報が含まれる場合、ツールの詳細情報が収集されてタブに表示されます。|  
-|![手順 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|ツールには、1 つ以上の詳細ビューが含まれることがあります。 ビューはタイムラインの選択された領域でフィルター処理されます。|  
+|![ステップ 1](../profiling/media/procguid-1.png "ProcGuid_1")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|  
+|![ステップ 2](../profiling/media/procguid-2.png "ProcGuid_2")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|  
+|![ステップ 3](../profiling/media/procguid-3.png "ProcGuid_3")|ツールには 1 つ以上のマスター グラフが表示されます。 診断セッションが複数のツールによって作成される場合には、すべてのマスター グラフが表示されます。|  
+|![ステップ 4](../profiling/media/procguid-4.png "ProcGuid_4")|個々のグラフを展開および折りたたむことができます。|  
+|![Step 5](../profiling/media/procguid-6.png "ProcGuid_6")|データに複数のツールからの情報が含まれる場合、ツールの詳細情報が収集されてタブに表示されます。|  
+|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|ツールには、1 つ以上の詳細ビューが含まれることがあります。 ビューはタイムラインの選択された領域でフィルター処理されます。|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>分析ターゲットを別のデバイスに設定する  
  Visual Studio プロジェクトからのアプリの起動以外に、別のターゲットに対して診断セッションを実行することもできます。 たとえば、Windows アプリ ストアからインストールされたバージョンのアプリのパフォーマンス問題を診断することができます。  
   
- ![診断ツールの分析ターゲットを選択](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Choose diagnostic tools analysis target](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  既にデバイスにインストール済みのアプリを起動することも、既に実行中の一部のアプリに診断ツールをアタッチすることもできます。 **[実行中のアプリ]** または **[インストール済みのアプリ]** を選択する場合、指定された配置ターゲット上で検出されたアプリの一覧の中からアプリを選択します。  
   
- ![診断用の実行中またはインストール済みのアプリを選択](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Choose a running or installed app for diagnosis](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  **[Internet Explorer]** を選択する場合には、URL を指定して、電話の配置ターゲットを変更できます。  
   
- ![Internet Explorer に表示する URL を指定](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Specify the url to display in Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
  リモート PC またはタブレットで診断セッションを実行するには、リモート ターゲットに Visual Studio リモート ツールがインストールおよび実行されている必要があります。 デスクトップ アプリについては、「[リモート デバッグ](../debugger/remote-debugging.md)」をご覧ください。  Windows ユニバーサル アプリについては、「[リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」をご覧ください。  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>診断開発チームのブログ投稿と MSDN 記事  
- [MSDN マガジン:Visual Studio 2015 でのデバッグ中のパフォーマンス分析](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN マガジン: Visual Studio 2015 でのデバッグ中のパフォーマンス分析](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN マガジン:IntelliTrace を使用して迅速に問題を診断する](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN マガジン: IntelliTrace を使用して迅速に問題を診断する](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [ブログの投稿:Visual Studio 2015 でのメモリ使用量ツールを使用したイベント ハンドラーのリークの診断](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [ブログの投稿: Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015 (Visual Studio 2015 でのメモリ使用量ツールを使用したイベント ハンドラーのリークの診断)](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
- [ビデオ:Microsoft Visual Studio Ultimate 2015 での IntelliTrace を使用したデバッグ履歴](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [ビデオ: Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015 (Microsoft Visual Studio Ultimate 2015 での IntelliTrace を使用したデバッグ履歴)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [ビデオ:Visual Studio 2015 を使用したパフォーマンスに関する問題のデバッグ](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [ビデオ: Debugging Performance Issues Using Visual Studio 2015 (Visual Studio 2015 を使用したパフォーマンスに関する問題のデバッグ)](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [パフォーマンスのヒント:Visual Studio を使用したデバッグ中のパフォーマンス概要の参照](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Visual Studio を使用したデバッグ中のパフォーマンス概要の参照)](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

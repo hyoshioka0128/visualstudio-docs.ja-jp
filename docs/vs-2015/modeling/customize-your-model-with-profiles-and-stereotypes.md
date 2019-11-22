@@ -1,5 +1,5 @@
 ---
-title: プロファイルとステレオタイプを使用してモデルをカスタマイズする |Microsoft Docs
+title: Customize your model with profiles and stereotypes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4f83fcf3ea500e0640a226b80d3d3c0e2c7ed869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655098"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301205"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>プロファイルとステレオタイプを使用したモデルのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、クラスやコンポーネントなどの標準の UML モデル要素を特定の目的に合わせてカスタマイズできます。 要素のプロパティリストを変更できるモデル要素に*ステレオタイプ*を適用できます。 ステレオタイプは、*プロファイル*と呼ばれるコレクション内で定義されます。
+Visual Studio では、クラスやコンポーネントなどの標準の UML モデル要素を特定の目的に合わせてカスタマイズできます。 You can apply a *stereotype* to a model element that can change the element's list of properties. Stereotypes are defined within collections called *profiles*.
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -31,7 +31,7 @@ Visual Studio では、クラスやコンポーネントなどの標準の UML �
 
  ステレオタイプは、要素のプロパティ リストで設定できます。 次の例に示すように、図のシェイプの主な種類については、適用されたステレオタイプもシェイプに表示されます。
 
- ![ステレオタイプを持つ UML クラス。](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![A UML class with a stereotype.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > プロファイルを使用してモデルを生成し、そのモデルを他のユーザーと共有する場合、それぞれのコンピューターに同じプロファイルをインストールしなければ、ステレオタイプを表示できません。
@@ -45,4 +45,3 @@ Visual Studio では、クラスやコンポーネントなどの標準の UML �
 |[プロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)|独自のアプリケーション領域に適合した独自のステレオタイプとツールを定義できます。<br /><br /> たとえば、銀行業務ソフトウェアを開発する場合、クラスに適用できる «Account» ステレオタイプを定義できます。 これにより、クラス図を使用して複数の異なる種類の口座および口座間のリレーションシップを記述できます。|
 |[UML プロファイルのインストール](../modeling/install-a-uml-profile.md)|他のユーザーから UML プロファイルを受け取った場合、それを自分のコンピューターにインストールできます。|
 |[カスタム モデリング ツールボックス アイテムを定義する](../modeling/define-a-custom-modeling-toolbox-item.md)|カスタム ツールボックス項目を使用すると、新しい要素にステレオタイプを繰り返し設定する手間を省くことができます。|
-|[ステレオタイプによる UML クラスの色の設定](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|このサンプル コードは、UML 図を拡張します。 要素のステレオタイプに従って、UML シェイプの色を自動的に設定します。|

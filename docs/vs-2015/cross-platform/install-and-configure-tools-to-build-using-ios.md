@@ -11,24 +11,24 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434149"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299812"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ for Cross-Platform Mobile Development を使用して、iOS コードを編集およびデバッグし、iOS シミュレーターまたは iOS デバイスに配置することができます。ただし、ライセンスの制限により、コードのビルドと実行は、リモートの Mac 上で行わなければなりません。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。  
+Visual C++ for Cross-Platform Mobile Development を使用して、iOS コードを編集およびデバッグし、iOS シミュレーターまたは iOS デバイスに配置することができます。ただし、ライセンスの制限により、コードのビルドと実行は、リモートの Mac 上で行わなければなりません。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。  
   
 > [!NOTE]
 > Mac ではなくクラウド ホスト型 Mac サービスを使用する場合の詳細については、「 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)」を参照してください。 ここでは、Visual Studio Tools for Apache Cordova を使用してビルドする場合の手順を説明します。 Visual C++ for Cross-Platform Mobile Development を使用してビルドする場合は、vcremote を vs-mda-remote に置き換えて手順に従ってください。  
   
  iOS を使用してビルドするためのツールをインストールしたら、このトピックを参照して、Visual Studio と Mac で iOS 開発を行うためにリモート エージェントを素早く構成して更新する方法を確認してください。  
   
- [前提条件](#Prerequisites)  
+ [必須コンポーネント](#Prerequisites)  
   
  [iOS 用リモート エージェントをインストールする](#Install)  
   
@@ -42,7 +42,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
  [Configure the remote agent on the Mac](#ConfigureMac)  
   
-## <a name="Prerequisites"></a> 前提条件  
+## <a name="Prerequisites"></a> 必要条件  
  iOS のコードを開発するためのリモート エージェントをインストールして使用するには、まず、次の前提条件を満たす必要があります。  
   
 - OS X Mavericks 以降を実行する Mac コンピューター  
@@ -69,7 +69,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      プロビジョニング プロファイルを作成する方法の詳細については、iOS Developer Library の「 [Creating Provisioning Profiles Using Member Center (メンバー センターを使用したプロビジョニング プロファイルの作成)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) 」を参照してください。  
   
-- [Node.js](http://nodejs.org/)  
+- [Node.js](https://nodejs.org/en/)  
   
 - npm の更新バージョン  
   
@@ -78,7 +78,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> iOS 用リモート エージェントをインストールする  
- Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。  
+ Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。  
   
  リモート エージェントをインストールする前に、 [前提条件](#Prerequisites) を満たしていること、 [Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)をインストール済みであることを確認してください。  
   
@@ -88,9 +88,9 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   グローバル インストール (**-g**) スイッチが推奨されますが、必須ではありません。  
+   グローバル インストール ( **-g**) スイッチが推奨されますが、必須ではありません。  
   
-   インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](http://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。  
+   インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。  
   
   > [!NOTE]
   > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity –enable` を入力します。  
@@ -110,7 +110,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
   エージェントを初めて起動するとき、また、新しいクライアント証明書を作成するときは必ず、そのエージェントを Visual Studio に構成するために必要な情報 (ホスト名、ポート、PIN など) が提供されます。  
   
-  ![vcremote を使用してセキュリティで保護された PIN を生成します](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![vcremote を使用したセキュリテ暗証番号 (PIN) の生成](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
   ホスト名を使用して Visual Studio にリモート エージェントを構成する場合は、Windows からホスト名を使用して Mac を ping し、到達可能であることを確認してください。 そうでない場合は、代わりに IP アドレスを使用する必要があります。  
   
@@ -147,9 +147,9 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
     IP アドレスを取得するには、ターミナル ウィンドウで **ifconfig** コマンドを使用します。 アクティブなネットワーク インターフェイスの下に表示される inet アドレスを使用します。  
   
-3. Visual Studio のメニュー バーで、 **[ツール]**、 **[オプション]** の順に選択します。  
+3. Visual Studio のメニュー バーで、 **[ツール]** 、 **[オプション]** の順に選択します。  
   
-4. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]**、 **[C++]**、 **[iOS]** の順に展開します。  
+4. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]** 、 **[C++]** 、 **[iOS]** の順に展開します。  
   
 5. **[ホスト名]** フィールドと **[ポート]** フィールドに、リモート エージェントの起動時に示された値を入力します。 ホスト名には、Mac の DNS 名または IP アドレスを使用できます。 既定のポートは 3030 です。  
   
@@ -160,7 +160,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
 7. **[ペアリングする]** を選択してペアリングを有効にします。  
   
-    ![iOS のビルドにおける vcremote 接続を構成します](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![iOS のビルドにおける vcremote 接続の構成](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
     ペアリングは、ホスト名またはポートを変更するまで維持されます。 **[オプション]** ダイアログ ボックスでホスト名またはポートを変更した場合にその変更を元に戻すには、 **[元に戻す]** ボタンを選択して前のペアリングに戻します。  
   
@@ -215,11 +215,11 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      `vcremote --help`  
   
-- セキュア モードを無効にして、単純な HTTP ベースの接続を有効にするには、次のように入力します。  
+- セキュリティで保護されたモードを無効にして、単純な HTTP ベースの接続を有効にするには、次のように入力します。  
   
      `vcremote --secure false`  
   
-     このオプションを使用する場合、Visual Studio でエージェントを構成する際に、**[セキュア]** チェック ボックスをオフにして、**[PIN]** フィールドを空白のままにします。  
+     このオプションを使用する場合、Visual Studio でエージェントを構成する際に、 **[セキュア]** チェック ボックスをオフにして、 **[PIN]** フィールドを空白のままにします。  
   
 - リモート エージェント ファイルの場所を指定するには、次のように入力します。  
   
@@ -239,5 +239,5 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      ここで *config_file_path* は JSON 形式の構成ファイルのパスです。 スタートアップ オプションとその値にダッシュを含めることはできません。  
   
-## <a name="see-also"></a>関連項目  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>参照  
+ [Visual C++ for Cross-Platform Mobile Development のインストール](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

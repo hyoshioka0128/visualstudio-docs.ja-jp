@@ -1,5 +1,5 @@
 ---
-title: 構造、Content_types] .xml ファイル |Microsoft Docs
+title: The Structure of the Content_types].xml File | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,80 +13,80 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e94e8cd065908671446486d2ec00e167d8fb4f4e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697106"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301234"
 ---
-# <a name="the-structure-of-the-contenttypesxml-file"></a>構造、Content_types] .xml ファイル
+# <a name="the-structure-of-the-content_typesxml-file"></a>Content_types] .xml ファイルの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSIX パッケージ内のコンテンツの種類についてを説明します。 Visual Studio は、パッケージをインストールする [Content_Types] .xml ファイルを使用しますが、ファイル自体はインストールされません。  
+Contains information about the kinds of content in a VSIX package. Visual Studio uses the [Content_Types].xml file to install the package, but it does not install the file itself.  
   
 > [!NOTE]
-> [Content_Types] .xml ファイルの種類の一部は、このトピックでは VSIX パッケージで使用されている [Content_Type] .xml ファイルにのみ適用されますが、 *Open Packaging Conventions (OPC)* 標準。 詳細については、次を参照してください[OPC:。新しい標準のパッケージ化、データを](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN Web サイト。  
+> Although this topic applies only to [Content_Type].xml files that are used in VSIX packages, the [Content_Types].xml file type is part of the *Open Packaging Conventions (OPC)* standard. For more information, see [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207) on the MSDN Web site.  
   
 ## <a name="attributes-and-elements"></a>属性および要素  
- 次のセクションでは、ルート要素とその属性と子要素について説明します。  
+ The following sections describe the root element and its attributes and child elements.  
   
 ### <a name="root-element"></a>ルート要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|`Types`|VSIX パッケージ内のファイルの種類を列挙する子要素が含まれています。|  
+|`Types`|Contains child elements that enumerate the file types in the VSIX package.|  
   
 ### <a name="attributes"></a>属性  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Xmlns`|(必須) この [Content_Types] .xml ファイルで使用されるスキーマの場所。|  
+|`Xmlns`|(Required.) The location of the schema used for this [Content_Types].xml file.|  
   
-### <a name="attribute-name-attribute"></a>{Name} 属性属性  
+### <a name="attribute-name-attribute"></a>{Attribute name} Attribute  
   
 |                           [値]                           |                説明                |
 |-----------------------------------------------------------|-------------------------------------------|
-| http://schemas.openformats.org/package/2006/content-types | コンテンツ タイプのスキーマの場所。 |
+| http://schemas.openformats.org/package/2006/content-types | The location of the content types schema. |
   
 ### <a name="child-elements"></a>子要素  
- `Types`要素は、任意の数を含めることができます`Default`要素。  
+ The `Types` element can contain any number of `Default` elements.  
   
 |要素|説明|  
 |-------------|-----------------|  
-|`Default`|VSIX パッケージ内のコンテンツの種類について説明します。 パッケージ内のすべてのファイル種類する必要がありますが、独自`Default`要素。|  
+|`Default`|Describes a content type in the VSIX package. Every file type in the package must have its own `Default` element.|  
   
 ### <a name="attributes"></a>属性  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Extension`|VSIX パッケージ内のファイルのファイル名拡張子。|  
-|`ContentType`|ファイル名拡張子に関連付けられているコンテンツの種類について説明します。|  
+|`Extension`|The file name extension of a file in the VSIX package.|  
+|`ContentType`|Describes the kind of content that is associated with the file name extension.|  
   
-### <a name="attribute-name-attribute"></a>{Name} 属性属性  
- Visual Studio は、次を認識`ContentType`関連付けられている値`Extension`型。  
+### <a name="attribute-name-attribute"></a>{Attribute name} Attribute  
+ Visual Studio recognizes the following `ContentType` values for the associated `Extension` types.  
   
 |拡張子|ContentType|  
 |---------------|-----------------|  
-|txt|テキスト/プレーン|  
-|pkgdef|テキスト/プレーン|  
+|txt|text/plain|  
+|pkgdef|text/plain|  
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm ファイルや html|text/html|  
-|rtf|アプリケーション/rtf|  
-|pdf|アプリケーション/pdf|  
-|gif|gif イメージ/|  
-|jpg または jpeg|image/jpg|  
-|Tiff|tiff イメージ/|  
-|vsix|アプリケーションまたは zip|  
-|zip|アプリケーションまたは zip|  
+|htm or html|text/html|  
+|rtf|application/rtf|  
+|pdf|application/pdf|  
+|gif|image/gif|  
+|jpg or jpeg|image/jpg|  
+|tiff|image/tiff|  
+|vsix|application/zip|  
+|zip|application/zip|  
 |dll|application/octet-stream|  
-|その他のすべてのファイルの種類|application/octet-stream|  
+|all other file types|application/octet-stream|  
   
 ## <a name="example"></a>例  
   
 ### <a name="description"></a>説明  
- 次の [Content_Types] .xml ファイルには、一般的な VSIX パッケージについて説明します。  
+ The following [Content_Types].xml file describes a typical VSIX package.  
   
 ### <a name="code"></a>コード  
   
@@ -101,7 +101,7 @@ VSIX パッケージ内のコンテンツの種類についてを説明します
 </Types>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC:データをパッケージ化するための新しい標準](http://go.microsoft.com/fwlink/?LinkID=148207)
+## <a name="see-also"></a>参照  
+ [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)   
+ [VSIX Extension Schema 1.0 Reference](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207)

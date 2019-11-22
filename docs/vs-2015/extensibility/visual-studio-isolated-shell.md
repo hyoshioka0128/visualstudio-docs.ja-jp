@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 分離シェル |Microsoft Docs
+title: Visual Studio Isolated Shell | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,54 +14,54 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 36491d9d590a45256e297654f71652ab5de5cd98
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403578"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299726"
 ---
-# <a name="visual-studio-isolated-shell"></a>Visual Studio 分離シェル
+# <a name="visual-studio-isolated-shell"></a>Visual Studio の分離シェル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 分離シェルでは、サイド バイ サイドで実行するスタンドアロン アプリケーションを作成できます。 Visual Studio の他のバージョン。 Visual Studio サービスを使用できますが、カスタマイズされた外観でもある特別なツールをホストするには、主に使用されるとブランド化をお勧めします。 Visual Studio の機能とメニュー コマンド グループ有効にできます簡単にオンとオフ。 アプリケーションのタイトル、アプリケーションのアイコンとスプラッシュ スクリーンは、完全にカスタマイズ可能です。 カスタマイズ可能な機能の一覧は、次を参照してください。[分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)します。  
+The Visual Studio isolated shell allows you to create stand-alone applications that can run side-by-side with other versions of Visual Studio. It is used primarily to host specialized tools that can use Visual Studio services but also have a customized appearance and branding. Visual Studio features and menu command groups can be easily turned on and off. Application titles, application icons, and splash screens are fully customizable. For a list of customizable features, see [Customizing the Isolated Shell](../extensibility/customizing-the-isolated-shell.md).  
   
- 分離シェル プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+ To work with an isolated shell project, you must install the Visual Studio SDK. Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- 分離シェル アプリケーションを作成するには、Visual Studio 分離シェル プロジェクトを起動します。 このプロジェクトには、独自の分離シェル アプリケーション開発およびテストする必要のあるすべてのものが含まれます。 分離シェルの再頒布可能パッケージを取得する必要があります、アプリケーションをデプロイするセットアップ プログラムを記述する準備ができたら、 [Microsoft Visual Studio Shell (Isolated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616022)します。  
-  
-> [!NOTE]
-> 分離シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
+ To create an isolated shell application, start with a Visual Studio Shell Isolated project. This project contains everything that you need to develop and test your own isolated shell application. When you are ready to write the setup program that deploys your application, you must get the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
-> 分離シェルベースのアプリケーションをデプロイする方法の詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+> Before you can access the isolated shell redistributable package, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
   
-## <a name="working-with-the-isolated-shell"></a>分離シェルの操作  
- Visual Studio 分離シェル アプリケーションは、Visual Studio services へのフル アクセスを備え、特別なカスタマイズとブランド化をサポートしています。 分離シェル アプリケーションをカスタマイズするいくつかの方法はあります。  
+> [!NOTE]
+> For more information about how to deploy an isolated shell-based application, see [Walkthrough: Creating a Basic Isolated Shell Application](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-- Vspackage と Managed Extensibility Framework (MEF) コンポーネント パーツを使用して、他の Visual Studio 拡張機能で使用する場合と同様に、分離シェル アプリケーションを拡張することができます。 詳細については、次を参照してください。[分離シェルの拡張](../extensibility/extending-the-isolated-shell.md)します。  
+## <a name="working-with-the-isolated-shell"></a>Working with the isolated shell  
+ A Visual Studio isolated shell application has full access to Visual Studio services and supports special customization and branding. There are several ways you can customize an isolated shell application:  
   
-- Visual Studio の機能とメニュー コマンドのグループを使用できないか使用できないように、アプリケーションのユーザー インターフェイス (UI) のプロジェクトで .vsct ファイルを更新します。  
+- You can use VSPackages and Managed Extensibility Framework (MEF) component parts to extend an isolated shell application just as you would use them in any other Visual Studio extension. For more information, see [Extending the Isolated Shell](../extensibility/extending-the-isolated-shell.md).  
   
-- 削除する**オプション**ページや、アプリケーションからその他の Visual Studio シェル コンポーネントは、アプリケーションの .pkgundef ファイルを更新します。  
+- To make Visual Studio features and menu command groups available or unavailable, update the .vsct file in the user interface (UI) project of the application.  
   
-- 外観の他の側面またはシェルの動作を変更するには、アプリケーションの .pkgdef ファイルを更新します。  
+- To remove **Options** pages or other Visual Studio shell components from the application, update the .pkgundef file of the application.  
   
-- シェルの一部の側面は、アプリケーションの起動時にも指定できます。 これを行うには、始点、appenvstub.dll の呼び出しでパラメーターを更新します。  
+- To modify other aspects of the appearance or behavior of the shell, update the .pkgdef file of the application.  
   
-  カスタマイズ可能なさまざまな要素の詳細については、次を参照してください。[分離シェルの要素](../extensibility/elements-of-the-isolated-shell.md)します。  
+- Some aspects of the shell can also be specified when the application is started. To do this, update the parameters in the call to the Start entry point of the appenvstub.dll.  
   
-## <a name="standard-features-of-the-isolated-shell"></a>分離シェルの標準機能  
- 次の機能は、Visual Studio のすべてのエディションを standard です。  
+  For more information about the different elements that you can customize, see [Elements of the Isolated Shell](../extensibility/elements-of-the-isolated-shell.md).  
   
-|機能カテゴリ|機能|  
+## <a name="standard-features-of-the-isolated-shell"></a>Standard Features of the Isolated Shell  
+ The following features are standard to all editions of Visual Studio.  
+  
+|機能カテゴリ|特性|  
 |----------------------|-------------|  
-|IDE の機能|インポート/エクスポートの設定<br /><br /> ツールボックス コントロール インストーラー<br /><br /> エラー一覧 (&)、タスク一覧<br /><br /> [出力] ウィンドウ<br /><br /> スタート ページ<br /><br /> [プロパティ] ウィンドウ<br /><br /> ツールボックス<br /><br /> ソリューション エクスプローラー<br /><br /> ブックマーク ウィンドウ<br /><br /> クラス ビュー<br /><br /> オブジェクト ブラウザー<br /><br /> コマンド ウィンドウ<br /><br /> [ドキュメント アウトライン]<br /><br /> リソース ビュー<br /><br /> 外部ツール<br /><br /> Windows Communication Foundation (WCF) サービス参照を追加します。<br /><br /> 言語統合クエリ (LINQ) のサポート|  
-|エディターとデザイナー|コード ツール (統合検索、ソースの定義の継承) を参照<br /><br /> IntelliSense<br /><br /> スマート タグ<br /><br /> コード スニペット マネージャー<br /><br /> コード スニペット<br /><br /> リファクタリング<br /><br /> かなりの一覧<br /><br /> IntelliSense のフィルター処理<br /><br /> コード定義ウィンドウ<br /><br /> アプリケーション デザイナー<br /><br /> Windows フォーム デザイナー<br /><br /> Windows Presentation Foundation (WPF) デザイナー|  
-|デバッグ|C# 式エバリュエーター<br /><br /> ローカル デバッグ<br /><br /> マネージ デバッグ<br /><br /> エディット コンティニュ<br /><br /> スレッド間のデバッグ<br /><br /> 視覚エフェクト<br /><br /> [DataTips] ポップアップ<br /><br /> ネイティブ デバッグ<br /><br /> スクリプトのデバッグ<br /><br /> 相互運用機能デバッグ<br /><br /> イン タイム (JIT) デバッグ<br /><br /> マルチ プロセス デバッグ<br /><br /> XSLT のデバッグ<br /><br /> ローカルのプロセスにアタッチします。<br /><br /> トレース ポイント<br /><br /> ブレークポイント制約|  
-|データ|サーバー エクスプ ローラー (簡体字のデータのみ)<br /><br /> ローカル データにデータをバインド (します。MDF またはします。MDB)<br /><br /> オブジェクトへのデータ バインド<br /><br /> Web サービスへのデータ バインド<br /><br /> データ コントロールの完全なセット<br /><br /> XML エディター<br /><br /> ローカル データベース サーバーへのデータ バインド<br /><br /> [データ ソース] ウィンドウ|  
-|Web|HTML エディター<br /><br /> Web ブラウザー<br /><br /> Web フォーム デザイナー<br /><br /> Web サイト プロジェクト<br /><br /> Web アプリケーション プロジェクト|  
-|機能拡張|Vspackage と MEF コンポーネントを使用します。|  
+|IDE Features|Import/Export Settings<br /><br /> Toolbox Control Installer<br /><br /> Task List & Error List<br /><br /> [出力] ウィンドウ<br /><br /> スタート ページ<br /><br /> [プロパティ] ウィンドウ<br /><br /> ツールボックス<br /><br /> ソリューション エクスプローラー<br /><br /> [ブックマーク] ウィンドウ<br /><br /> クラス ビュー<br /><br /> オブジェクト ブラウザー<br /><br /> コマンド ウィンドウ<br /><br /> [ドキュメント アウトライン]<br /><br /> Resource View<br /><br /> External Tool<br /><br /> Windows Communication Foundation (WCF) Add Service Reference<br /><br /> Language Integrated Query (LINQ) Support|  
+|Editor/Designer|Code browsing tools (unified find, source definition, inheritance)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> コード スニペット マネージャー<br /><br /> コード スニペット<br /><br /> Refactoring<br /><br /> Pretty listing<br /><br /> IntelliSense Filtering<br /><br /> [コード定義ウィンドウ]<br /><br /> アプリケーション デザイナー<br /><br /> Windows フォーム デザイナー<br /><br /> Windows Presentation Foundation (WPF) Designer|  
+|デバッグ|C# Expression Evaluator<br /><br /> Local debugging<br /><br /> Managed debugging<br /><br /> エディット コンティニュ<br /><br /> Cross-thread debugging<br /><br /> Visualizations<br /><br /> [DataTips] ポップアップ<br /><br /> Native debugging<br /><br /> Script debugging<br /><br /> Interop debugging<br /><br /> Just-in-time (JIT) debugging<br /><br /> Multi-process debugging<br /><br /> XSLT のデバッグ<br /><br /> Attach to local process<br /><br /> トレース ポイント<br /><br /> Breakpoint Constraints|  
+|データ|Server Explorer (Simplified - Data Only)<br /><br /> Data bind to local data (.MDF or .MDB)<br /><br /> Data bind to object<br /><br /> Data bind to Web service<br /><br /> Full set of data controls<br /><br /> XML エディター<br /><br /> Data bind to local database server<br /><br /> [データ ソース] ウィンドウ|  
+|Web|HTML エディター<br /><br /> Web ブラウザー<br /><br /> Web フォーム デザイナー<br /><br /> Web Site Project<br /><br /> Web Application Project|  
+|機能拡張|Consumes VSPackages and MEF components|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [シェル (分離または統合)](../extensibility/shell-isolated-or-integrated.md)

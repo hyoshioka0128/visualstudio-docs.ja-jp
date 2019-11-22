@@ -1,5 +1,5 @@
 ---
-title: '方法: ドメイン固有言語ソリューションを作成する |Microsoft Docs'
+title: 'How to: Create a Domain-Specific Language Solution | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,119 +15,119 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671674"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301410"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ドメイン固有言語 (DSL) は、特殊な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを使用して作成されます。
+A domain-specific language (DSL) is created by using a specialized [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution.
 
 ## <a name="prerequisites"></a>必要条件
- この手順を開始する前に、次のコンポーネントをインストールする必要があります。
+ Before you can start this procedure, you must first install these components:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
-## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
+## <a name="creating-a-domain-specific-language-solution"></a>Creating a Domain-Specific Language Solution
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成するには
+#### <a name="to-create-a-domain-specific-language-solution"></a>To create a domain-specific language solution
 
-1. DSL ウィザードを起動します。
+1. Start the DSL Wizard.
 
    1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
    2. **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-   3. **[プロジェクトの種類]** の **[その他のプロジェクトの種類]** ノードを展開し、 **[機能拡張]** をクリックします。
+   3. Under **Project types**, expand the **Other Project Types** node, and click **Extensibility**.
 
-   4. **[ドメイン固有言語デザイナー]** をクリックします。
+   4. Click **Domain-Specific Language Designer**.
 
-   5. **[名前]** ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックします。
+   5. In the **Name** box, type a name for the solution. **[OK]** をクリックします。
 
-       **ドメイン固有言語デザイナーウィザード**が表示されます。
+       The **Domain-Specific Language Designer Wizard** appears.
 
       > [!NOTE]
-      > コードの生成に使用される可能性があるため、 C#入力する名前は有効なビジュアル識別子である必要があります。
+      > Preferably, the name that you type should be a valid Visual C# identifier, because it might be used to generate code.
 
-      ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![Create DSL dialog](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-2. DSL テンプレートを選択します。
+2. Choose a DSL template.
 
-    **[ドメイン固有言語オプションの選択]** ページで、 **[最小言語]** などのソリューションテンプレートの1つを選択します。 作成する DSL に似たテンプレートを選択します。
+    On the **Select Domain-Specific Language Options** page, select one of the solution templates such as **Minimal Language**. Choose a template that is similar to the DSL that you want to create.
 
-    ソリューションテンプレートの詳細については、「[ドメイン固有言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
+    For more information about solution templates, see [Choosing a Domain-Specific Language Solution Template](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3. **[ファイル拡張子]** ページでファイル名拡張子を入力します。 コンピューターと DSL をインストールするすべてのコンピューターで一意である必要があります。 "**この拡張機能を使用しているアプリケーションまたは Visual Studio エディターはありません**" というメッセージが表示されます。
+3. Enter a filename extension on the **File Extension** page. It should be unique in your computer, and in any computers on which you want to install the DSL. You should see the message **No applications or Visual Studio editors use this extension**.
 
-   - 以前の実験的な Dsl で完全にインストールされていないファイル名拡張子を使用していた場合は、 **[実験用インスタンスのリセット]** ツールを使用してオフにすることができます。これは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK メニューにあります。
+   - If you have used the file name extension in previous experimental DSLs that have not been fully installed, you can clear them out by using the **Reset the Experimental Instance** tool, which can be found in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menu.
 
-   - このファイル拡張子を使用する別の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能がコンピューターに完全にインストールされている場合は、アンインストールすることを検討してください。 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
+   - If another [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension that uses this file extension has been fully installed on your computer, consider uninstalling it. On the **Tools** menu, click **Extension Manager**.
 
-4. ウィザードの残りのページにあるフィールドを検査し、必要に応じて調整します。 設定に問題がなければ、 **[完了]** をクリックします。 設定の詳細については、「 [DSL デザイナーウィザードのページ](#settings)」を参照してください。
+4. Inspect, and if necessary adjust, the fields in the remaining pages of the wizard. When you are satisfied with the settings, click **Finish**. For more information about the settings, see [DSL Designer Wizard Pages](#settings).
 
-    ウィザードによって、 **Dsl**および**dslpackage**という名前の2つのプロジェクトを持つソリューションが作成されます。
+    The wizard creates a solution that has two projects, which are named **Dsl** and **DslPackage**.
 
    > [!NOTE]
-   > 信頼されていないソースからテキストテンプレートを実行しないことを通知するメッセージが表示された場合は、[ **OK]** をクリックします。 このメッセージを再度表示しないように設定できます。
+   > If you see a message that alerts you not to run text templates from untrusted sources, click **OK**. You can set this message not to appear again.
 
-## <a name="settings"></a>DSL デザイナーウィザードのページ
- 一部のフィールドは、既定値のままにしておくことができます。 ただし、必ず [ファイル拡張子] フィールドを設定してください。
+## <a name="settings"></a> The DSL Designer Wizard Pages
+ You can leave several of the fields unchanged from their default values. However, make sure that you set the File Extension field.
 
-### <a name="solution-settings-page"></a>[ソリューションの設定] ページ
- **ドメイン固有言語の基になるテンプレートを選択してください。**
-作成する DSL に似たテンプレートを選択します。 さまざまなテンプレートは、便利な開始点を提供します。 ソリューションテンプレートを選択すると、ウィザードに説明が表示されます。 ソリューションテンプレートの詳細については、「[ドメイン固有言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
+### <a name="solution-settings-page"></a>Solution Settings page
+ **Which Template would you like to base your domain specific language on?**
+Choose a template that is similar to the DSL that you want to create. The different templates provide convenient starting points. When you select a solution template, the wizard displays a description. For more information about solution templates, see [Choosing a Domain-Specific Language Solution Template](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- **ドメイン固有言語に名前を付けるにはどうすればよいですか?**
-既定では、ソリューション名になります。 この値からコードが生成されます。 これは、 C#クラス名として有効である必要があります。
+ **What do you want to name your domain-specific language?**
+Defaults to the solution name. Code is generated from this value. It must be valid as a C# class name.
 
-### <a name="file-extension-page"></a>[ファイル拡張子] ページ
- **モデルファイルで使用する拡張機能**
-新しいファイル拡張子を入力します。
+### <a name="file-extension-page"></a>File Extension page
+ **What extension should model files use?**
+Type a new file extension.
 
- 次のように、このファイル拡張子がこのコンピューターで使用するように登録されていないことを確認してください。
+ Verify that this file extension has not already been registered for use in this computer, as follows:
 
- **この拡張機能を処理するために登録されている [その他のツールとアプリケーション**] を確認します。 "**アプリケーションまたは Visual Studio エディターがこの拡張機能を使用していません**" というメッセージが表示された場合は、このファイル拡張子を使用できます。
+ Look under **Other tools and applications registered to handle this extension**. If you see the message **No applications or Visual Studio editors use this extension**, then you can use this file extension.
 
- ツールまたはパッケージの一覧が表示された場合は、次のいずれかの操作を行う必要があります。
+ If you see a list of tools or packages, you should do one of the following:
 
-- 別のファイル拡張子を入力してください。
-
-     \- または
-
-- @No__t_0 実験用インスタンスをリセットします。 これにより、以前に作成したすべての Dsl が登録解除されます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[2010 SDK]** 、 **[ツール]** の順に Microsoft Visual Studio、 **Microsoft Visual Studio 2010 の実験用インスタンスをリセット**します。 もう一度使用する Dsl を再構築できます。
+- Type a different file extension.
 
      \- または
 
-- このファイル拡張子を使用する [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能がコンピューターに完全にインストールされている場合は、アンインストールします。 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
+- Reset the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Experimental Instance. This will unregister all of the DSLs that you have previously built. On the **Start** menu, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**. You can rebuild any other DSLs that you want to use again.
 
-### <a name="product-settings-page"></a>[製品の設定] ページ
- **新しいドメイン固有言語が属する製品の名前は何ですか?**
-既定値は DSL 名です。
+     \- または
 
- この値は、Windows エクスプローラー (またはファイルエクスプローラー) で、このファイル拡張子を持つファイルを記述するために使用されます。
+- If a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension that uses this file extension has been fully installed on your computer, uninstall it. On the **Tools** menu, click **Extension Manager**.
 
- **製品が属している会社の名前は何ですか?**
-会社名。
+### <a name="product-settings-page"></a>Product Settings page
+ **What is the name of the product that the new domain-specific language belongs to?**
+Defaults to the DSL name.
 
- この値は、DSL パッケージの AssemblyInfo プロパティに組み込まれています。
+ This value is used in Windows Explorer (or File Explorer) to describe files that have this file extension.
 
- **このソリューションのプロジェクトのルート名前空間は何ですか?**
-既定では、会社名と製品名で構成される名前が使用されます。
+ **What is the name of the company that the product belongs to?**
+Your company name.
 
-### <a name="signing-page"></a>[署名] ページ
- **厳密な名前のキーファイルを作成する**既定のオプションでは、DSL アセンブリに署名するための新しいキーが作成されます。
+ This value is incorporated into the AssemblyInfo properties of your DSL package.
 
- **既存の厳密な名前のキーを使用する**DSL を別のアセンブリと統合する場合は、このオプションを使用します。
+ **What is the root namespace for projects in this solution?**
+This defaults to a name composed from your company and product names.
 
- 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](http://go.microsoft.com/fwlink/?LinkId=186073)」を参照してください。
+### <a name="signing-page"></a>Signing page
+ **Create a strong name key file** The default option is to create a new key to sign your DSL assembly.
+
+ **Use existing strong name key** Use this option if you want to integrate your DSL with another assembly.
+
+ For more information about strong naming, see [Creating and Using Strong-Named Assemblies](https://go.microsoft.com/fwlink/?LinkId=186073).
 
 ## <a name="see-also"></a>参照
- [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)[ドメイン固有言語ツール用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

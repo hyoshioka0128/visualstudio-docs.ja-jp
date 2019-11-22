@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d057296e38cbba38651bb9228b8cd837f21deaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645547"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290326"
 ---
 # <a name="globalizing-and-localizing-applications"></a>アプリケーションのグローバライズとローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "72645547"
  Visual Studio は、設計の初期段階から、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] に組み込まれたサービスを活用して各国用アプリケーションを簡単に開発できるようにすることを目指してきました。 次に示す各ページでは、Visual Studio に組み込まれた国際化機能について紹介します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [.NET Framework に基づく国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)Visual Studio と [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] を使用した国際市場向けのソフトウェア開発に関連する概念について説明します。
+ [Introduction to International Applications Based on the .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Introduces the concepts related to developing software for an international market using Visual Studio and the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- [アプリケーションのローカライズ](../ide/localizing-applications.md)特定のカルチャのアプリケーションのカスタマイズに関するページへのリンクを示します。
+ [Localizing Applications](../ide/localizing-applications.md) Provides links to pages about customizing applications for a given culture.
 
- [アプリケーションのグローバル](../ide/globalizing-applications.md)化複数のカルチャをサポートするアプリケーションの作成に関するページへのリンクを示します。
+ [Globalizing Applications](../ide/globalizing-applications.md) Provides links to pages about creating applications that support multiple cultures.
 
 ## <a name="related-sections"></a>関連項目
- [アプリのグローバル化 (JavaScript と HTML を使用した Windows ストアアプリ)](http://go.microsoft.com/fwlink/?LinkId=258266)JavaScript と HTML を使用してビルドされた [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリをグローバライズおよびローカライズするための方法に関するトピックとガイドラインが含まれています。
+ [Globalizing your app (Windows Store apps using JavaScript and HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Contains how-to topics and guidelines to help you globalize and localize your [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app built using JavaScript and HTML.
 
- [アプリのグローバル化 (/Vb/ C#C++および xaml を使用した Windows ストアアプリ)](http://go.microsoft.com/fwlink/?LinkId=258267)には、xaml とビジュアルC#、Visual Basic、またはビジュアルC++を使用してビルドされた [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリをグローバライズおよびローカライズするための方法に関するトピックとガイドラインが含まれています。
+ [Globalizing your app (Windows Store apps using C#/VB/C++ and XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) Contains how-to topics and guidelines to help you globalize and localize your [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app built using XAML and Visual C#, Visual Basic, or Visual C++.
 
- [国際対応アプリケーションを開発するためのベストプラクティス](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)各国のユーザー向けのプログラミングについての背景情報を提供します。
+ [Best Practices for Developing World-Ready Applications](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Provides background information on programming for an international audience.
 
- [クラスライブラリの概要](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)開発プロセスを高速化および最適化し、システム機能へのアクセスを提供するクラス、インターフェイス、および値型について説明します。
+ [Class Library Overview](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) Introduces the classes, interfaces, and value types that expedite and optimize the development process and provide access to system functionality.
 
- <xref:System.Globalization> は、言語、国/地域、使用する暦、日付の書式パターン、通貨と数値、文字列の並べ替え順序など、カルチャ関連の情報を定義する、この名前空間のクラスをポイントします。
+ <xref:System.Globalization> Points out the classes in this namespace, which define culture-related information, including the language, the country/region, the calendars in use, the format patterns for dates, currency and numbers, and the sort order for strings.
 
- <xref:System.Resources> は、この名前空間のクラスとインターフェイスを参照します。これにより、開発者は、アプリケーションで使用されるカルチャ固有のさまざまなリソースを作成、格納、および管理できます。
+ <xref:System.Resources> Points out the classes and interfaces in this namespace, which allows developers to create, store, and manage various culture-specific resources used in an application.

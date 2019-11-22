@@ -1,5 +1,5 @@
 ---
-title: 基本的なプロジェクト システムを作成するには、パート 1 |Microsoft Docs
+title: Creating a Basic Project System, Part 1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,77 +12,77 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20637fb47d85b7cb8341df22d056ffe44534835f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439400"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295485"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>基本的なプロジェクト システムの作成、パート 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、プロジェクトは、開発者は、ソース コード ファイルおよびその他の資産の分類に使用するコンテナーです。 プロジェクトがソリューション内の子として表示されます、**ソリューション エクスプ ローラー**します。 プロジェクトでは、整理、ビルド、デバッグ、およびソース コードをデプロイおよび Web サービス、データベース、およびその他のリソースへの参照を作成できます。  
+In Visual Studio, projects are the containers that developers use to organize source code files and other assets. Projects appear as children of solutions in the **Solution Explorer**. Projects let you organize, build, debug, and deploy source code and create references to Web services, databases, and other resources.  
   
- プロジェクトは、たとえば Visual c# プロジェクトの .csproj ファイルをプロジェクト ファイルで定義されます。 独自のプロジェクト ファイル名拡張子を持つ独自のプロジェクトの種類を作成することができます。 プロジェクトの種類の詳細については、次を参照してください。[プロジェクトの種類](../extensibility/internals/project-types.md)します。  
-  
-> [!NOTE]
-> カスタムのプロジェクトの種類の Visual Studio を拡張する必要がある場合強くお勧めしますを活用すること、 [Visual Studio プロジェクト システム](https://github.com/Microsoft/VSProjectSystem)はさまざまなプロジェクト システムを一から構築に比べて利点があります。  
-> 
-> - 簡単にオンボードします。  基本的なプロジェクト システムではさらには、数万行のコードの必要があります。  前に、お客様のニーズに合わせてカスタマイズする準備が整ったら、ほんの数回のクリックにオンボード コストを削減する CPS を活用すること。  
->   - メンテナンスを容易にします。  CPS を活用することによってのみ、独自のシナリオを維持する必要があります。  すべてのプロジェクト システム インフラストラクチャの保守管理を処理します。  
-> 
->   Visual Studio の Visual Studio 2013 より前のバージョンをターゲットする必要がある場合、Visual Studio 拡張機能で CPS を活用することができなきます。  場合は、このチュートリアルでは開始することをお勧めします。  
-  
- このチュートリアルでは、プロジェクト ファイル名拡張子 .myproj を含むプロジェクトの種類を作成する方法を示します。 このチュートリアルでは既存の Visual c# プロジェクト システムを利用します。  
+ Projects are defined in project files, for example a .csproj file for a Visual C# project. You can create your own project type that has your own project file name extension. For more information about project types, see [Project Types](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
-> エンド ツー エンドのサンプルの完全な言語のプロジェクト システムで IronPython サンプルの詳細情報を参照してください。 [VSSDK のサンプル](../misc/vssdk-samples.md)します。  
+> If you need to extend Visual Studio with a custom project type, we strongly recommend leveraging the [Visual Studio Project System](https://github.com/Microsoft/VSProjectSystem) which has a number of advantages over building a project system from scratch:  
+> 
+> - Easier onboarding.  Even a basic project system requires tens of thousands of lines of code.  Leveraging CPS reduces the onboarding cost to a few clicks before you are ready to customize it to your needs.  
+>   - Easier maintenance.  By leveraging CPS, you only need to maintain your own scenarios.  We handle the upkeep of all of the project system infrastructure.  
+> 
+>   If you need to target versions of Visual Studio older than Visual Studio 2013, you will not be able to leverage CPS in a Visual Studio extension.  If that is the case, this walkthrough is a good place to get started.  
   
- このチュートリアルでは、これらのタスクを実行する方法について説明します。  
+ This walkthrough shows you how to create a project type that has the project file name extension .myproj. This walkthrough borrows from the existing Visual C# project system.  
   
-- 基本的なプロジェクトの種類を作成します。  
+> [!NOTE]
+> For an end-to-end sample of a complete language project system, see the IronPython Sample Deep Dive in [VSSDK Samples](../misc/vssdk-samples.md).  
   
-- 基本的なプロジェクト テンプレートを作成します。  
+ This walkthrough teaches how to accomplish these tasks:  
   
-- Visual Studio でプロジェクト テンプレートを登録します。  
+- Create a basic project type.  
   
-- 開いてプロジェクト インスタンスを作成、**新しいプロジェクト** ダイアログ ボックスとし、テンプレートを使用します。  
+- Create a basic project template.  
   
-- プロジェクト システムのためのプロジェクト ファクトリを作成します。  
+- Register the project template with Visual Studio.  
   
-- プロジェクト システムのプロジェクト ノードを作成します。  
+- Create a project instance by opening the **New Project** dialog box and then using your template.  
   
-- プロジェクト システムのカスタム アイコンを追加します。  
+- Create a project factory for your project system.  
   
-- 基本的なテンプレート パラメーターの置換を実装します。  
+- Create a project node for your project system.  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+- Add custom icons for the project system.  
   
- ソース コードをダウンロードすることも必要があります、[プロジェクト用 Managed Package Framework](http://mpfproj12.codeplex.com/)します。 作成しようとするソリューションにアクセスできる場所にファイルを抽出します。  
+- Implement basic template parameter substitution.  
   
-## <a name="creating-a-basic-project-type"></a>基本的なプロジェクトの種類を作成します。  
- という名前の c# VSIX プロジェクトを作成する**SimpleProject**します。 (**新しいファイル]、[プロジェクト**し**c#、機能拡張、Visual Studio パッケージ**)。 Visual Studio パッケージ プロジェクト項目テンプレートを追加する (ソリューション エクスプ ローラーでプロジェクト ノードを右クリックし、選択**追加/新しい項目の**に移動し、**拡張機能/Visual Studio パッケージ**)。 ファイルに名前を**SimpleProjectPackage**します。  
+## <a name="prerequisites"></a>必要条件  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-basic-project-template"></a>基本的なプロジェクト テンプレートを作成します。  
- ここで、新しい .myproj プロジェクトの種類を実装するためにこの基本的な VSPackage を変更できます。 .Myproj プロジェクトの種類に基づくプロジェクトを作成するには、Visual Studio をどのファイル、リソース、および新しいプロジェクトに追加する参照を知る必要があります。 この情報を提供するには、プロジェクトのテンプレート フォルダーにプロジェクト ファイルを配置します。 ユーザーは、プロジェクトを作成する .myproj プロジェクトを使用するときに、ファイルは、新しいプロジェクトにコピーされます。  
+ You must also download the source code for the [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). Extract the file to a location that is accessible to the solution you are going to create.  
   
-#### <a name="to-create-a-basic-project-template"></a>基本的なプロジェクト テンプレートを作成するには  
+## <a name="creating-a-basic-project-type"></a>Creating a Basic Project Type  
+ Create a C# VSIX project named **SimpleProject**. (**File, New, Project** and then **C#, Extensibility, Visual Studio Package**). Add a Visual Studio Package project item template (on the Solution Explorer, right-click the project node and select **Add / New Item**, then go to **Extensibility / Visual Studio Package**). Name the file **SimpleProjectPackage**.  
   
-1. 3 つのフォルダーを他のいずれかと、プロジェクトに追加します。**Templates\Projects\SimpleProject**します。 (で**ソリューション エクスプ ローラー**を右クリックし、 **SimpleProject**プロジェクト ノードをポイントして、**追加**、 をクリックし、**新しいフォルダー**します。 フォルダーに「 `Templates`で行うことができます。 **テンプレート**フォルダー、という名前のフォルダーを追加`Projects`します。 **プロジェクト**フォルダー、という名前のフォルダーを追加`SimpleProject`)。  
+## <a name="creating-a-basic-project-template"></a>Creating a Basic Project Template  
+ Now, you can modify this basic VSPackage to implement the new .myproj project type. To create a project that is based on the .myproj project type, Visual Studio has to know which files, resources, and references to add to the new project. To provide this information, put project files in a project template folder. When a user uses the .myproj project to create a project, the files are copied to the new project.  
   
-2. **Projects\SimpleProject**という名前のアイコン ファイルをフォルダーに追加`SimpleProject.ico`します。 クリックすると**追加**、アイコン エディターが開きます。  
+#### <a name="to-create-a-basic-project-template"></a>To create a basic project template  
   
-3. 特徴的なアイコンを確認します。 このアイコンが表示、**新しいプロジェクト**チュートリアルの後半でダイアログ ボックス。  
+1. Add three folders to the project, one under the other: **Templates\Projects\SimpleProject**. (In **Solution Explorer**, right-click the **SimpleProject** project node, point to **Add**, and then click **New Folder**. フォルダーに「 `Templates`で行うことができます。 In the **Templates** folder, add a folder named `Projects`. In the **Projects** folder, add a folder named `SimpleProject`.)  
   
-    ![単純なプロジェクト アイコン](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+2. In the **Projects\SimpleProject** folder add an icon file named `SimpleProject.ico`. When you click **Add**, the icon editor opens.  
   
-4. アイコンを保存してアイコン エディターを閉じます。  
+3. Make the icon distinctive. This icon will appear in the **New Project** dialog box later in the walkthrough.  
   
-5. **Projects\SimpleProject**フォルダーを追加、**クラス**という名前の項目`Program.cs`します。  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
-6. 既存のコードを次の行に置き換えます。  
+4. Save the icon and close the icon editor.  
+  
+5. In the **Projects\SimpleProject** folder, add a **Class** item named `Program.cs`.  
+  
+6. Replace the existing code with the following lines.  
   
    ```csharp  
    using System;  
@@ -103,18 +103,18 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    ```  
   
    > [!IMPORTANT]
-   > これは、Program.cs のコードの最終形式ではありません。置換パラメーターの後の手順で処理します。 表示されるコンパイル エラーしますが、いる限り、ファイルの **"ビルド アクション"** は**コンテンツ**をビルドして、プロジェクトを通常どおり実行できる必要があります。  
+   > This is not the final form of the Program.cs code; the replacement parameters will be dealt with in a later step. You may see compile errors, but as long as the file’s **BuildAction** is **Content**, you should be able to build and run the project as usual.  
   
 7. ファイルを保存します。  
   
-8. AssemblyInfo.cs ファイルのコピー、**プロパティ**フォルダーを**Projects\SimpleProject**フォルダー。  
+8. Copy the AssemblyInfo.cs file from the **Properties** folder to the **Projects\SimpleProject** folder.  
   
-9. **Projects\SimpleProject**フォルダーという XML ファイルを追加する`SimpleProject.myproj`します。  
+9. In the **Projects\SimpleProject** folder add an XML file named `SimpleProject.myproj`.  
   
    > [!NOTE]
-   > この種類のすべてのプロジェクトのファイル名拡張子は、.myproj です。 これを変更する場合をチュートリアルで説明したようにすべての場所に変更する必要があります。  
+   > The file name extension for all projects of this type is .myproj. If you want to change it, you must change it everywhere it is mentioned in the walkthrough.  
   
-10. 既存のコンテンツを次の行に置き換えます。  
+10. Replace the existing content with the following lines.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -156,11 +156,11 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 11. ファイルを保存します。  
   
-12. **プロパティ**ウィンドウで、設定、**ビルド アクション**AssemblyInfo.cs、Program.cs、SimpleProject.ico、およびに SimpleProject.myproj の**コンテンツ**、し、そのの設定**VSIX に含める**プロパティ**True**します。  
+12. In the **Properties** window, set the **Build Action** of AssemblyInfo.cs, Program.cs, SimpleProject.ico, and SimpleProject.myproj to **Content**, and set their **Include in VSIX** properties to **True**.  
   
-    このプロジェクト テンプレートには、基本的な Visual c# プロジェクトをデバッグ構成とリリース構成の両方を持つがについて説明します。 プロジェクトには、2 つのソース ファイル、AssemblyInfo.cs、Program.cs、およびいくつかのアセンブリが含まれています。 参照。 テンプレートからプロジェクトが作成されると、ProjectGuid 値が自動的に新しい GUID によって置き換えられます。  
+    This project template describes a basic Visual C# project that has both a Debug configuration and a Release configuration. The project includes two source files, AssemblyInfo.cs and Program.cs, and several assembly references. When a project is created from the template, the ProjectGuid value is automatically replaced by a new GUID.  
   
-    **ソリューション エクスプ ローラー**、展開された**テンプレート**フォルダーが次のように表示されます。  
+    In **Solution Explorer**, the expanded **Templates** folder should appear as follows:  
   
     テンプレート  
   
@@ -176,14 +176,14 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
     SimpleProject.myproj  
   
-## <a name="creating-a-basic-project-factory"></a>基本的なプロジェクト ファクトリを作成します。  
- Visual Studio プロジェクト テンプレート フォルダーの場所に指示する必要があります。 これを行うには、テンプレートの場所は、VSPackage をビルドするときに、システム レジストリに書き込まれるようにプロジェクト ファクトリを実装する VSPackage クラスに属性を追加します。 まずプロジェクト ファクトリ GUID によって識別される基本的なプロジェクト ファクトリを作成します。 使用して、 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> SimpleProjectPackage クラスをプロジェクト ファクトリを接続する属性。  
+## <a name="creating-a-basic-project-factory"></a>Creating a Basic Project Factory  
+ You must tell Visual Studio the location of your project template folder. To do this, add an attribute to the VSPackage class that implements the project factory so that the template location is written to the system registry when the VSPackage is built. Start by creating a basic project factory that is identified by a project factory GUID. Use the <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribute to connect the project factory to the SimpleProjectPackage class.  
   
-#### <a name="to-create-a-basic-project-factory"></a>基本的なプロジェクト ファクトリを作成するには  
+#### <a name="to-create-a-basic-project-factory"></a>To create a basic project factory  
   
-1. SimpleProjectPackageGuids.cs をコード エディターで開きます。  
+1. Open SimpleProjectPackageGuids.cs in the code editor.  
   
-2. プロジェクト ファクトリの Guid を作成する (上、**ツール** メニューのをクリックして**GUID の作成**)、か、次の例を使用します。 Guid を SimpleProjectPackageGuids クラスに追加します。 Guid は、GUID 形式と文字列形式の両方である必要があります。 結果として得られるコードは次の例のようになります。  
+2. Create GUIDs for your project factory (on the **Tools** menu, click **Create GUID**), or use the one in the following example. Add the GUIDs to the SimpleProjectPackageGuids class. The GUIDs must be in both GUID form and string form. The resulting code should resemble the following example.  
   
    ```  
    static class SimpleProjectPackageGuids  
@@ -202,16 +202,16 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-3. クラスを追加、ページのトップへ**SimpleProject**という名前のフォルダー`SimpleProjectFactory.cs`します。  
+3. Add a class to the top **SimpleProject** folder named `SimpleProjectFactory.cs`.  
   
-4. 次の追加ステートメントを使用します。  
+4. Add the following using statements:  
   
    ```  
    using System.Runtime.InteropServices;  
    using Microsoft.VisualStudio.Shell;  
    ```  
   
-5. Guid 属性を SimpleProjectFactory クラスに追加します。 属性の値は、新しいプロジェクト ファクトリの GUID です。  
+5. Add a Guid attribute to the SimpleProjectFactory class. The value of the attribute is the new project factory GUID.  
   
    ```  
    [Guid(SimpleProjectGuids.guidSimpleProjectFactoryString)]  
@@ -220,11 +220,11 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-   これで、プロジェクト テンプレートを登録できます。  
+   Now you can register your project template.  
   
-#### <a name="to-register-the-project-template"></a>プロジェクト テンプレートを登録するには  
+#### <a name="to-register-the-project-template"></a>To register the project template  
   
-1. SimpleProjectPackage.cs で追加、<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>属性、SimpleProjectPackage クラスを次のようにします。  
+1. In SimpleProjectPackage.cs, add a <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribute to the SimpleProjectPackage class, as follows.  
   
    ```  
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
@@ -234,31 +234,31 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    public sealed class SimpleProjectPackage : Package  
    ```  
   
-2. ソリューションをリビルドし、エラーなしでビルドされることを確認します。  
+2. Rebuild the solution and verify that it builds without errors.  
   
-    再構築するには、プロジェクト テンプレートが登録します。  
+    Rebuilding registers the project template.  
   
-   パラメーター`defaultProjectExtension`と`possibleProjectExtensions`プロジェクト ファイル名拡張子 (.myproj) に設定されます。 `projectTemplatesDirectory`パラメーター テンプレート フォルダーの相対パスに設定されます。 ビルド中には、このパスをフル ビルドに変換され、プロジェクト システムに登録するレジストリに追加するされます。  
+   The parameters `defaultProjectExtension` and `possibleProjectExtensions` are set to the project file name extension (.myproj). The `projectTemplatesDirectory` parameter is set to the relative path of the Templates folder. During the build, this path will be converted to a full build and added to the registry to register the project system.  
   
-## <a name="testing-the-template-registration"></a>テンプレート登録をテストします。  
- テンプレート登録は Visual Studio プロジェクト テンプレート フォルダーの場所 Visual Studio は、テンプレートの名前とアイコンを表示できるように、**新しいプロジェクト** ダイアログ ボックス。  
+## <a name="testing-the-template-registration"></a>Testing the Template Registration  
+ Template registration tells Visual Studio the location of your project template folder so that Visual Studio can display the template name and icon in the **New Project** dialog box.  
   
-#### <a name="to-test-the-template-registration"></a>テンプレート登録をテストするには  
+#### <a name="to-test-the-template-registration"></a>To test the template registration  
   
-1. F5 キーを押して、Visual Studio の実験用インスタンスのデバッグを開始します。  
+1. Press F5 to start debugging an experimental instance of Visual Studio.  
   
-2. 実験用インスタンスで、新しく作成されたプロジェクトの種類の新しいプロジェクトを作成します。 **新しいプロジェクト**] ダイアログ ボックスに、表示する必要があります**SimpleProject** [**にインストールされたテンプレート**します。  
+2. In the experimental instance, create a new project of your newly-created project type. In the **New Project** dialog box, you should see **SimpleProject** under **Installed templates**.  
   
-   登録されているプロジェクト ファクトリがあるようになりました。 ただし、プロジェクトをまだ作成できません。 プロジェクトのパッケージとプロジェクト ファクトリを作成し、プロジェクトの初期化に連携します。  
+   Now you have a project factory that is registered. However, it cannot yet create a project. The project package and project factory work together to create and initialize a project.  
   
-## <a name="add-the-managed-package-framework-code"></a>Managed Package Framework のコードを追加します。  
- プロジェクト パッケージとプロジェクト ファクトリ間の接続を実装します。  
+## <a name="add-the-managed-package-framework-code"></a>Add the Managed Package Framework code  
+ Implement the connection between the project package and the project factory.  
   
-- Managed Package Framework のソース コード ファイルをインポートします。  
+- Import the source-code files for the Managed Package Framework.  
   
-    1. SimpleProject プロジェクトのアンロード (で**ソリューション エクスプ ローラー**プロジェクト ノードを選択し、コンテキスト メニューで、**プロジェクトのアンロード**。) XML エディターでプロジェクト ファイルを開きます。  
+    1. Unload the SimpleProject project (in **Solution Explorer**, select the project node and on the context menu click **Unload Project**.) and open the project file in the XML editor.  
   
-    2. プロジェクト ファイルに、次の要素を追加 (すぐ上、\<インポート > ブロック)。 ProjectBasePath をダウンロードした Managed Package Framework コードで ProjectBase.files ファイルの場所に設定します。 パス名に円記号を追加する必要があります。 そうでない Managed Package Framework のコードを検索するプロジェクトが失敗する可能性があります。  
+    2. Add the following blocks to the project file (just above the \<Import> blocks). Set ProjectBasePath to the location of the ProjectBase.files file in the Managed Package Framework code you just downloaded. You might have to add a backslash to the pathname. If you do not, the project might fail to find the Managed Package Framework code.  
   
         ```  
         <PropertyGroup>  
@@ -269,9 +269,9 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
         ```  
   
         > [!IMPORTANT]
-        > パスの最後に円記号を忘れないでください。  
+        > Don’t forget the backslash at the end of the path.  
   
-    3. プロジェクトの再読み込みします。  
+    3. Reload the project.  
   
     4. 次のアセンブリへの参照を追加します。  
   
@@ -281,28 +281,28 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
         - Microsoft.Build.Tasks.v4.0  
   
-#### <a name="to-initialize-the-project-factory"></a>プロジェクト ファクトリを初期化するには  
+#### <a name="to-initialize-the-project-factory"></a>To initialize the project factory  
   
-1. SimpleProjectPackage.cs ファイルで次の追加`using`ステートメント。  
+1. In the SimpleProjectPackage.cs file, add the following `using` statement.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-2. 派生、`SimpleProjectPackage`クラス`Microsoft.VisualStudio.Package.ProjectPackage`します。  
+2. Derive the `SimpleProjectPackage` class from `Microsoft.VisualStudio.Package.ProjectPackage`.  
   
     ```  
     public sealed class SimpleProjectPackage : ProjectPackage  
     ```  
   
-3. プロジェクト ファクトリを登録します。 次の行を追加、`SimpleProjectPackage.Initialize`メソッド直後`base.Initialize`します。  
+3. Register the project factory. Add the following line to the `SimpleProjectPackage.Initialize` method, just after `base.Initialize`.  
   
     ```  
     base.Initialize();  
     this.RegisterProjectFactory(new SimpleProjectFactory(this));  
     ```  
   
-4. 抽象プロパティを実装して`ProductUserContext`:  
+4. Implement the abstract property `ProductUserContext`:  
   
     ```csharp  
     public override string ProductUserContext  
@@ -311,19 +311,19 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-5. SimpleProjectFactory.cs で、次のコードを追加`using`後、既存のステートメント`using`ステートメント。  
+5. In SimpleProjectFactory.cs, add the following `using` statement after the existing `using` statements.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-6. 派生、`SimpleProjectFactory`クラス`ProjectFactory`します。  
+6. Derive the `SimpleProjectFactory` class from `ProjectFactory`.  
   
     ```  
     class SimpleProjectFactory : ProjectFactory  
     ```  
   
-7. 次のダミー メソッドを追加、`SimpleProjectFactory`クラス。 後のセクションでは、このメソッドを実装します。  
+7. Add the following dummy method to the `SimpleProjectFactory` class. You will implement this method in a later section.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -332,7 +332,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-8. 次のフィールドとコンス トラクターを追加、`SimpleProjectFactory`クラス。 これは、`SimpleProjectPackage`参照が、プライベート フィールドにキャッシュされるので、サービス プロバイダーのサイトの設定で使用できます。  
+8. Add the following field and constructor to the `SimpleProjectFactory` class. This `SimpleProjectPackage` reference is cached in a private field so that it can be used in setting a service provider site.  
   
     ```  
     private SimpleProjectPackage package;  
@@ -344,45 +344,45 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-9. ソリューションをリビルドし、エラーなしでビルドされることを確認します。  
+9. Rebuild the solution and verify that it builds without errors.  
   
-## <a name="testing-the-project-factory-implementation"></a>プロジェクト ファクトリの実装をテストします。  
- プロジェクト ファクトリの実装のコンス トラクターを呼び出すかどうかをテストします。  
+## <a name="testing-the-project-factory-implementation"></a>Testing the Project Factory Implementation  
+ Test whether the constructor for your project factory implementation is called.  
   
-#### <a name="to-test-the-project-factory-implementation"></a>プロジェクト ファクトリの実装をテストするには  
+#### <a name="to-test-the-project-factory-implementation"></a>To test the project factory implementation  
   
-1. SimpleProjectFactory.cs ファイルでは、次の行にブレークポイントを設定、`SimpleProjectFactory`コンス トラクター。  
+1. In the SimpleProjectFactory.cs file, set a breakpoint on the following line in the `SimpleProjectFactory` constructor.  
   
     ```  
     this.package = package;  
     ```  
   
-2. F5 キーを押して、Visual Studio の実験用インスタンスを起動します。  
+2. Press F5 to start an experimental instance of Visual Studio.  
   
-3. 実験用インスタンスでは、新しいプロジェクトを作成を開始します。**新しいプロジェクト**ダイアログ ボックスで、SimpleProject プロジェクトの種類をクリックして**OK**します。 ブレークポイントで実行が停止します。  
+3. In the experimental instance, start to create a new project.In the **New Project** dialog box, select the SimpleProject project type and then click **OK**. ブレークポイントで実行が停止します。  
   
-4. ブレークポイントを解除し、デバッグを停止します。 まだ作成していないプロジェクト ノードため、プロジェクトの作成コードが例外をスローします。  
+4. Clear the breakpoint and stop debugging. Since we have not created a project node yet, the project creation code still throws exceptions.  
   
-## <a name="extending-the-project-node-class"></a>プロジェクト ノードのクラスを拡張します。  
- 実装することができますので、`SimpleProjectNode`から派生したクラス、`ProjectNode`クラス。 `ProjectNode`基底クラスは、プロジェクトの作成の次のタスクを処理します。  
+## <a name="extending-the-project-node-class"></a>Extending the Project Node Class  
+ Now you can implement the `SimpleProjectNode` class, which derives from the `ProjectNode` class. The `ProjectNode` base class handles the following tasks of project creation:  
   
-- プロジェクトのテンプレート ファイル、SimpleProject.myproj を新しいプロジェクト フォルダーにコピーします。 入力された名前に基づいてコピーの名前が変更された、**新しいプロジェクト** ダイアログ ボックス。 `ProjectGuid`プロパティの値は、新しい GUID によって置き換えられます。  
+- Copies the project template file, SimpleProject.myproj, to the new project folder. The copy is renamed according to the name that is entered in the **New Project** dialog box. The `ProjectGuid` property value is replaced by a new GUID.  
   
-- プロジェクトのテンプレート ファイル、SimpleProject.myproj の MSBuild 要素を走査し、検索`Compile`要素。 各`Compile`ターゲット ファイルでは、新しいプロジェクト フォルダーにファイルをコピーします。  
+- Traverses the MSBuild elements of the project template file, SimpleProject.myproj, and looks for `Compile` elements. For each `Compile` target file, copies the file to the new project folder.  
   
-  派生した`SimpleProjectNode`クラスは、これらのタスクを処理します。  
+  The derived `SimpleProjectNode` class handles these tasks:  
   
-- 内のプロジェクトとファイルのノードのアイコンにより、**ソリューション エクスプ ローラー**作成または選択します。  
+- Enables icons for project and file nodes in **Solution Explorer** to be created or selected.  
   
-- 指定するその他のプロジェクト テンプレートのパラメーター置換を有効にします。  
+- Enables additional project template parameter substitutions to be specified.  
   
-#### <a name="to-extend-the-project-node-class"></a>プロジェクト ノードのクラスを拡張するには  
+#### <a name="to-extend-the-project-node-class"></a>To extend the project node class  
   
 1. 
   
-2. という名前のクラスを追加`SimpleProjectNode.cs`します。  
+2. Add a class named `SimpleProjectNode.cs`.  
   
-3. 既存のコードを次のコードに置き換えます。  
+3. Replace the existing code with the following code.  
   
    ```  
    using System;  
@@ -418,27 +418,27 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-   これは、`SimpleProjectNode`クラスの実装がこれらのオーバーライドされたメソッド。  
+   This `SimpleProjectNode` class implementation has these overridden methods:  
   
-- `ProjectGuid`をプロジェクト ファクトリ GUID が返されます。  
+- `ProjectGuid`, which returns the project factory GUID.  
   
-- `ProjectType`、プロジェクトの種類のローカライズされた名前が返されます。  
+- `ProjectType`, which returns the localized name of the project type.  
   
-- `AddFileFromTemplate`、対象のプロジェクトにテンプレート フォルダーから選択したファイルをコピーします。 このメソッドは、後のセクションでさらに実装されます。  
+- `AddFileFromTemplate`, which copies selected files from the template folder to the destination project. This method is further implemented in a later section.  
   
-  `SimpleProjectNode`コンス トラクターと同様に、`SimpleProjectFactory`コンス トラクターは、キャッシュ、`SimpleProjectPackage`後で使用できるプライベート フィールドで参照します。  
+  The `SimpleProjectNode` constructor, like the `SimpleProjectFactory` constructor, caches a `SimpleProjectPackage` reference in a private field for later use.  
   
-  接続する、`SimpleProjectFactory`クラスを`SimpleProjectNode`クラスをインスタンス化して、新しい`SimpleProjectNode`で、`SimpleProjectFactory.CreateProject`メソッドと後で使用できるプライベート フィールドにキャッシュします。  
+  To connect the `SimpleProjectFactory` class to the `SimpleProjectNode` class, you must instantiate a new `SimpleProjectNode` in the `SimpleProjectFactory.CreateProject` method and cache it in a private field for later use.  
   
-#### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>プロジェクトのファクトリ クラスと、ノード クラスに接続するには  
+#### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>To connect the project factory class and the node class  
   
-1. SimpleProjectFactory.cs ファイルで次の追加`using`ステートメント。  
+1. In the SimpleProjectFactory.cs file, add the following `using` statement:  
   
     ```  
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
     ```  
   
-2. 置換、`SimpleProjectFactory.CreateProject`メソッドを次のコードを使用します。  
+2. Replace the `SimpleProjectFactory.CreateProject` method by using the following code.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -450,40 +450,40 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-3. ソリューションをリビルドし、エラーなしでビルドされることを確認します。  
+3. Rebuild the solution and verify that it builds without errors.  
   
-## <a name="testing-the-project-node-class"></a>プロジェクト ノードのクラスのテスト  
- プロジェクト階層を作成するかどうかを確認する、プロジェクト ファクトリをテストします。  
+## <a name="testing-the-project-node-class"></a>Testing the Project Node Class  
+ Test your project factory to see whether it creates a project hierarchy.  
   
-#### <a name="to-test-the-project-node-class"></a>プロジェクト ノードのクラスをテストするには  
+#### <a name="to-test-the-project-node-class"></a>To test the project node class  
   
-1. F5 キーを押してデバッグを開始します。 実験用のインスタンスでは、新しい SimpleProject を作成します。  
+1. F5 キーを押してデバッグを開始します。 In the experimental instance, create a new SimpleProject.  
   
-2. Visual Studio では、プロジェクトを作成する、プロジェクト ファクトリを呼び出す必要があります。  
+2. Visual Studio should call your project factory to create a project.  
   
 3. Visual Studio の実験用インスタンスを終了します。  
   
-## <a name="adding-a-custom-project-node-icon"></a>カスタム プロジェクト ノードのアイコンの追加  
- 前のセクションでは、プロジェクト ノードのアイコンは、既定のアイコンです。 カスタム アイコンに変更することができます。  
+## <a name="adding-a-custom-project-node-icon"></a>Adding a Custom Project Node Icon  
+ The project node icon in the earlier section is a default icon. You can change it to a custom icon.  
   
-#### <a name="to-add-a-custom-project-node-icon"></a>カスタム プロジェクト ノードのアイコンを追加するには  
+#### <a name="to-add-a-custom-project-node-icon"></a>To add a custom project node icon  
   
-1. **リソース**フォルダー、SimpleProjectNode.bmp をという名前のビットマップ ファイルを追加します。  
+1. In the **Resources** folder, add a bitmap file named SimpleProjectNode.bmp.  
   
-2. **プロパティ**windows では 16 x 16 ピクセルにビットマップを削減します。 特徴的なビットマップを作成します。  
+2. In the **Properties** windows, reduce the bitmap to 16 by 16 pixels. Make the bitmap distinctive.  
   
-    ![単純なプロジェクト Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
-3. **プロパティ**ウィンドウで、変更、**ビルド アクション**するビットマップの**埋め込まれたリソース**します。  
+3. In the **Properties** window, change the **Build action** of the bitmap to **Embedded Resource**.  
   
-4. SimpleProjectNode.cs で、次のコードを追加`using`ステートメント。  
+4. In SimpleProjectNode.cs, add the following `using` statements:  
   
    ```  
    using System.Drawing;  
    using System.Windows.Forms;  
    ```  
   
-5. 次の静的フィールドとコンス トラクターを追加、`SimpleProjectNode`クラス。  
+5. Add the following static field and constructor to the `SimpleProjectNode` class.  
   
    ```  
    private static ImageList imageList;  
@@ -494,7 +494,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-6. 先頭に次のプロパティを追加、`SimpleProjectNode`クラス。  
+6. Add the following property to the beginning of the `SimpleProjectNode` class.  
   
    ```  
    internal static int imageIndex;  
@@ -504,7 +504,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
       }  
    ```  
   
-7. インスタンス コンス トラクターを次のコードに置き換えます。  
+7. Replace the instance constructor with the following code.  
   
    ```  
    public SimpleProjectNode(SimpleProjectPackage package)  
@@ -520,7 +520,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-   静的の構築時に`SimpleProjectNode`アセンブリのマニフェスト リソースから、プロジェクト ノードのビットマップを取得し、後で使用できるプライベート フィールドにそれをキャッシュします。 構文に注意してください、<xref:System.Reflection.Assembly.GetManifestResourceStream%2A>イメージのパス。 アセンブリに埋め込まれたマニフェスト リソースの名前を表示するには、使用、<xref:System.Reflection.Assembly.GetManifestResourceNames%2A>メソッド。 このメソッドを適用すると、`SimpleProject`アセンブリ、結果は、次のようにする必要があります。  
+   During static construction, `SimpleProjectNode` retrieves the project node bitmap from the assembly manifest resources and caches it in a private field for later use. Notice the syntax of the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> image path. To see the names of the manifest resources embedded in an assembly, use the <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> method. When this method is applied to the `SimpleProject` assembly, the results should be as follows:  
   
 - SimpleProject.Resources.resources  
   
@@ -536,20 +536,20 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 - SimpleProject.Resources.SimpleProjectNode.bmp  
   
-  インスタンスの構築時に、`ProjectNode`基底クラスの Resources\imagelis.bmp から一般的に使用される埋め込みの 16 x 16 ビットマップ Resources.imagelis.bmp を読み込みます。 このビットマップの一覧が利用可能になります`SimpleProjectNode`ImageHandler.ImageList として。 `SimpleProjectNode` 一覧には、プロジェクト ノードのビットマップを追加します。 イメージ リストでプロジェクト ノードのビットマップのオフセットは、パブリックの値として後で使用できるキャッシュ`ImageIndex`プロパティ。 Visual Studio では、このプロパティを使用して、プロジェクト ノードのアイコンとして表示するには、どのビットマップを調べます。  
+  During instance construction, the `ProjectNode` base class loads Resources.imagelis.bmp, in which are embedded commonly used 16 x 16 bitmaps from Resources\imagelis.bmp. This bitmap list is made available to `SimpleProjectNode` as ImageHandler.ImageList. `SimpleProjectNode` appends the project node bitmap to the list. The offset of the project node bitmap in the image list is cached for later use as the value of the public `ImageIndex` property. Visual Studio uses this property to determine which bitmap to display as the project node icon.  
   
-## <a name="testing-the-custom-project-node-icon"></a>カスタム プロジェクト ノードのアイコンのテスト  
- カスタムのプロジェクト ノードのアイコンを含むプロジェクト階層を作成するかどうかを確認する、プロジェクト ファクトリをテストします。  
+## <a name="testing-the-custom-project-node-icon"></a>Testing the Custom Project Node Icon  
+ Test your project factory to see whether it creates a project hierarchy that has your custom project node icon.  
   
-#### <a name="to-test-the-custom-project-node-icon"></a>カスタム プロジェクト ノードのアイコンをテストするには  
+#### <a name="to-test-the-custom-project-node-icon"></a>To test the custom project node icon  
   
-1. デバッグを開始し、実験用インスタンスで新しい SimpleProject を作成します。  
+1. Start debugging, and in the experimental instance create a new SimpleProject.  
   
-2. 新しく作成されたプロジェクトで SimpleProjectNode.bmp がプロジェクト ノードのアイコンとして使用されることに注意してください。  
+2. In the newly-created project, notice that SimpleProjectNode.bmp is used as the project node icon.  
   
-     ![新しいプロジェクト ノードを単純なプロジェクト](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Simple Project New Project Node](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
-3. コード エディターで、Program.cs を開きます。 次のコードのようなソース コードが表示されます。  
+3. Open Program.cs in the code editor. You should see source code that resembles the following code.  
   
     ```  
     using System;  
@@ -569,22 +569,22 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-     $NameSpace$ と $className$ のテンプレート パラメーターに新しい値がないことに注意してください。 次のセクションで、テンプレート パラメーターの置換を実装する方法を学習します。  
+     Notice that the template parameters $nameSpace$ and $className$ do not have new values. You will learn how to implement template parameter substitution in the next section.  
   
-## <a name="substituting-template-parameters"></a>テンプレート パラメーターの置換  
- 前のセクションで登録したプロジェクト テンプレートで Visual Studio を使用して、`ProvideProjectFactory`属性。 テンプレート フォルダーのパスをこの方法で登録をオーバーライドし、展開する基本的なテンプレート パラメーターの置換を有効にすることができます、`ProjectNode.AddFileFromTemplate`クラス。 詳細については、次を参照してください。[新しいプロジェクトの生成。内部的には、2 つのパート](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
+## <a name="substituting-template-parameters"></a>Substituting Template Parameters  
+ In an earlier section, you registered the project template with Visual Studio by using the `ProvideProjectFactory` attribute. Registering the path of a template folder in this manner lets you enable basic template parameter substitution by overriding and expanding the `ProjectNode.AddFileFromTemplate` class. For more information, see [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- 交換用のコードを追加、`AddFileFromTemplate`クラス。  
+ Now add replacement code to the `AddFileFromTemplate` class.  
   
-#### <a name="to-substitute-template-parameters"></a>テンプレート パラメーター値  
+#### <a name="to-substitute-template-parameters"></a>To substitute template parameters  
   
-1. SimpleProjectNode.cs ファイルで次の追加`using`ステートメント。  
+1. In the SimpleProjectNode.cs file, add the following `using` statement.  
   
    ```  
    using System.IO;  
    ```  
   
-2. 置換、`AddFileFromTemplate`メソッドを次のコードを使用します。  
+2. Replace the `AddFileFromTemplate` method by using the following code.  
   
    ```  
    public override void AddFileFromTemplate(  
@@ -602,30 +602,30 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-3. 直後に、メソッドにブレークポイントを設定、`className`代入ステートメント。  
+3. Set a breakpoint in the method, just after the `className` assignment statement.  
   
-   代入ステートメントは、名前空間と新しいクラス名の妥当な値を決定します。 2 つ`ProjectNode.FileTemplateProcessor.AddReplace`メソッドの呼び出しは、これらの新しい値を使用して、対応するテンプレート パラメーターの値を置き換えます。  
+   The assignment statements determine reasonable values for a namespace and a new class name. The two `ProjectNode.FileTemplateProcessor.AddReplace` method calls replace the corresponding template parameter values by using these new values.  
   
-## <a name="testing-the-template-parameter-substitution"></a>テンプレート パラメーターの置換のテスト  
- テンプレート パラメーターの置換をテストできます。  
+## <a name="testing-the-template-parameter-substitution"></a>Testing the Template Parameter Substitution  
+ Now you can test template parameter substitution.  
   
-#### <a name="to-test-the-template-parameter-substitution"></a>テンプレート パラメーターの置換をテストするには  
+#### <a name="to-test-the-template-parameter-substitution"></a>To test the template parameter substitution  
   
-1. デバッグを開始し、実験用インスタンスで新しい SimpleProject を作成します。  
+1. Start debugging, and in the experimental instance create a new SimpleProject.  
   
-2. 内のブレークポイントで実行が停止、`AddFileFromTemplate`メソッド。  
+2. Execution stops at the breakpoint in the `AddFileFromTemplate` method.  
   
-3. 値を調べ、`nameSpace`と`className`パラメーター。  
+3. Examine the values for the `nameSpace` and `className` parameters.  
   
-   - `nameSpace` 値が指定されて、 \<RootNamespace > \Templates\Projects\SimpleProject\SimpleProject.myproj プロジェクトのテンプレート ファイル内の要素。 ここでは、値は、"MyRootNamespace"です。  
+   - `nameSpace` is given the value of the \<RootNamespace> element in the \Templates\Projects\SimpleProject\SimpleProject.myproj project template file. In this case, the value is "MyRootNamespace".  
   
-   - `className` ファイル名拡張子を除いた、クラスのソース ファイル名の値が指定されています。 この場合、最初のファイル変換先のフォルダーにコピーするのには、AssemblyInfo.cs;そのため、クラス名の値は、"AssemblyInfo"です。  
+   - `className` is given the value of the class source file name, without the file name extension. In this case, the first file to be copied to the destination folder is AssemblyInfo.cs; therefore, the value of className is "AssemblyInfo".  
   
-4. ブレークポイントを設定して、f5 キーを押して実行を続行します。  
+4. Remove the breakpoint and press F5 to continue execution.  
   
-    Visual Studio では、プロジェクトの作成を完了する必要があります。  
+    Visual Studio should finish creating a project.  
   
-5. コード エディターで、Program.cs を開きます。 次のコードのようなソース コードが表示されます。  
+5. Open Program.cs in the code editor. You should see source code that resembles the following code.  
   
    ```  
    using System;  
@@ -646,10 +646,10 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    }  
    ```  
   
-    名前空間が"MyRootNamespace"こと、およびクラス名は、"Program"ことに注意してください。  
+    Notice that the namespace is now "MyRootNamespace" and the class name is now "Program".  
   
-6. プロジェクトのデバッグを開始します。 新しいプロジェクトがコンパイル、実行、および「VSX こんにちは!!!」と表示 コンソール ウィンドウに表示します。  
+6. Start debugging the project. The new project should compile, run, and display "Hello VSX!!!" コンソール ウィンドウに表示します。  
   
-    ![単純なプロジェクト コマンド](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+    ![Simple Project Command](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
-   おめでとうございます! マネージ プロジェクトは、基本的なシステムを実装しました。
+   おめでとうございます! You have implemented a basic managed project system.

@@ -1,5 +1,5 @@
 ---
-title: 'UML クラス図: ガイドライン |Microsoft Docs'
+title: 'UML Class Diagrams: Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -17,33 +17,33 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 804678985ae30d833b57fe7589f0903cf1edb291
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652276"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297283"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML クラス図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、 *UML クラス図*を使用して、データ型とその関係を実装とは別に記述できます。 図は、実装ではなく、クラスの論理的な側面に注目するために使用されます。
+In Visual Studio, you can use a *UML class diagram* to describe data types and their relationships separately from their implementation. 図は、実装ではなく、クラスの論理的な側面に注目するために使用されます。
 
- UML クラス図を作成するには、 **[アーキテクチャ]** メニューの **[新しい uml 図またはレイヤー図]** をクリックします。
+ To create a UML class diagram, on the **Architecture** menu, choose **New UML Diagram or Layer Diagram**.
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 > [!NOTE]
-> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 「[クラスと型の設計と表示](http://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
+> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 See [Designing and Viewing Classes and Types](https://go.microsoft.com/fwlink/?LinkId=142231).
 
-## <a name="Using"></a>UML クラス図の使用
+## <a name="Using"></a> Using UML Class Diagrams
  UML クラス図は、さまざまな用途に使用できます。
 
 - システムで使用され、コンポーネント間で受け渡される型の、実装に依存しない説明を提供する。
 
      たとえば、ビジネス層の .NET コード、コンポーネント間のインターフェイスの XML、データベースの SQL、およびユーザー インターフェイスの HTML で、Meal Order 型が実装されているとします。 これらの実装は細部が異なりますが、Meal Order と他の型 (Menu や Payment) の間の関係は常に同じです。 UML クラス図を使用することにより、これらの関係について、実装を考慮することなく話し合うことができます。
 
-- アプリケーションとそのユーザーの間の通信、およびユーザーのニーズの記述において使用される用語を明確にする。 「[モデルユーザーの要件](../modeling/model-user-requirements.md)」を参照してください。
+- アプリケーションとそのユーザーの間の通信、およびユーザーのニーズの記述において使用される用語を明確にする。 See [Model user requirements](../modeling/model-user-requirements.md).
 
      たとえば、レストラン用アプリケーションのユーザー ストーリー、ユース ケース、またはその他の要求の記述について考えてみましょう。 通常、このような記述には、"メニュー"、"注文"、"料理"、"価格"、"支払い" などの用語が使用されます。 UML クラス図を使用すると、これらの用語の間の関係を定義できます。 これにより、要求の記述、ユーザー インターフェイス、およびヘルプ ドキュメントに不整合が発生する可能性を抑えることができます。
 
@@ -56,7 +56,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  入力ピン、出力ピン、およびアクティビティ パラメーター ノードの種類。
 
- 「 [UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)」を参照してください。
+ See [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
 
  シーケンス図
 
@@ -64,70 +64,70 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  生存線の種類。 生存線のクラスには、受信できるすべてのメッセージの操作が含まれている必要があります。
 
- 「 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。
+ See [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
  コンポーネント図
 
  コンポーネントのインターフェイスとその操作。
 
- 「 [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)」を参照してください。
+ See [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
 
  ユース ケース図
 
  ユース ケースの目標と手順の説明で言及されている型。
 
- 「 [UML ユースケース図: ガイドライン」を](../modeling/uml-use-case-diagrams-guidelines.md)参照してください。
+ See [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>クラスダイアグラムを描画するための基本的な手順
- UML クラス図の要素に関するリファレンス情報については、「 [Uml クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)」を参照してください。
+## <a name="BasicSteps"></a> Basic Steps for Drawing Class Diagrams
+ For reference information about the elements on UML class diagrams, see [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md).
 
 > [!NOTE]
-> モデリング図を作成するための詳細な手順については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。
+> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-uml-class-diagram"></a>UML クラス図を生成するには
 
-1. **[アーキテクチャ]** メニューの **[新しい UML またはレイヤー図]** をクリックします。
+1. On the **Architecture** menu, choose **New UML or Layer Diagram**.
 
-2. **[テンプレート]** の **[UML クラスダイアグラム]** を選択します。
+2. Under **Templates**, choose **UML Class Diagram**.
 
 3. 図に名前を付けます。
 
-4. **[モデリングプロジェクトへの追加]** で、ソリューション内の既存のモデリングプロジェクトを選択するか、**新しいモデリングプロジェクトを作成**し、[ **OK]** をクリックします。
+4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then choose **OK**.
 
-     新しいクラスダイアグラムが、 **Umlclass ダイアグラム**ツールボックスと共に表示されます。 ツールボックスには、必要な要素および関係が含まれています。
+     A new class diagram appears with the **UMLClass Diagram** Toolbox. ツールボックスには、必要な要素および関係が含まれています。
 
 #### <a name="to-draw-a-uml-class-diagram"></a>UML クラス図を描画するには
 
-1. 型を作成するには、ツールボックス の **クラス**、**インターフェイス**、または **列挙** ツールを選択し、図の空白部分をクリックします。 (ツールボックスが表示されない場合は、Ctrl + Alt + X を押します。)
+1. To create a type, choose the **Class**, **Interface** or **Enumeration** tool on the Toolbox, and then click a blank part of the diagram. (ツールボックスが表示されない場合は、Ctrl + Alt + X を押します。)
 
-2. 属性または操作を型に追加する場合、またはリテラルを列挙型に追加する場合は、型の**属性**、**操作**、または**リテラル**の見出しを選択し、enter キーを押します。
+2. To add attributes or operations to the types, or literals to an enumeration, choose the **Attributes**, **Operations** or **Literals** heading in the type, and press ENTER.
 
-     `f(x:Boolean):Integer` のようなシグニチャを記述できます。 「[属性と操作」を](#AttributesAndOperations)参照してください。
+     `f(x:Boolean):Integer` のようなシグニチャを記述できます。 See [Attributes and Operations](#AttributesAndOperations).
 
      複数の項目をすばやく追加するには、各項目の末尾で Enter キーを 2 回押します。 方向キーを使用して、リスト内を上下に移動できます。
 
-3. 型を展開する、または折りたたむには、左上隅のシェブロン アイコンをクリックします。 また、クラスまたはインターフェイスの [**属性**と**操作**] セクションを展開したり折りたたんだりすることもできます。
+3. 型を展開する、または折りたたむには、左上隅のシェブロン アイコンをクリックします。 You can also expand and collapse the **Attributes** and **Operations** section of a class or interface.
 
 4. 型間の関連、継承、または依存関係リンクを描画するには、適切なツールをクリックし、ソース型をクリックしてから、ターゲット型をクリックします。
 
-5. パッケージ内に型を作成する**には、パッケージツールを**使用してパッケージを作成し、パッケージ内に新しい型とパッケージを作成します。 また、コピー コマンドを使用して型をコピーし、パッケージに貼り付けることもできます。
+5. To create types in a package, create a package using the **Package** tool, and then create new types and packages within the package. また、コピー コマンドを使用して型をコピーし、パッケージに貼り付けることもできます。
 
-6. すべての図は、同じプロジェクト内の他の図との間で共有されるモデル上のビューです。 完全なモデルのツリービューを表示するには、 **[表示]** 、 **[その他のウィンドウ]** 、 **[UML モデルエクスプローラー]** の順に選択します。
+6. すべての図は、同じプロジェクト内の他の図との間で共有されるモデル上のビューです。 To see a tree view of the complete model, choose **View**, **Other Windows**, **UML Model Explorer**.
 
-## <a name="UsingTypes"></a>クラス、インターフェイス、および列挙型の使用
- ツールボックスには、3 種類の標準的な分類子が用意されています。 これらは、このドキュメント全体で*型*と呼ばれています。
+## <a name="UsingTypes"></a> Using Classes, Interfaces, and Enumerations
+ ツールボックスには、3 種類の標準的な分類子が用意されています。 These are referred to as *types* throughout this document.
 
- ![クラス、列挙型、およびインターフェイス](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
+ ![A class, an enumeration, and an interface](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
 
-- **クラス**(1) は、ほとんどの目的でデータ型またはオブジェクト型を表すために使用します。
+- Use **Classes** (1) to represent data or object types for most purposes.
 
-- 内部実装を持つ純粋なインターフェイスと具象クラスを区別する必要があるコンテキストでは、**インターフェイス**(2) を使用します。 この差別化は、図の目的がソフトウェア実装を記述することである場合に便利です。 しかし、受動的なデータをモデリングする場合、またはユーザー要求を記述するための概念を定義する場合には、それほど効果的ではありません。
+- Use **Interfaces** (2) in a context where you have to differentiate between pure interfaces and concrete classes that have internal implementations. この差別化は、図の目的がソフトウェア実装を記述することである場合に便利です。 しかし、受動的なデータをモデリングする場合、またはユーザー要求を記述するための概念を定義する場合には、それほど効果的ではありません。
 
-- **列挙**(3) を使用して、リテラル値の数が制限されている型 (`Stop` や `Go` など) を表します。
+- Use an **Enumeration** (3) to represent a type that has a limited number of literal values, for example `Stop` and `Go`.
 
   - リテラル値を列挙に追加します。 それぞれに別個の名前を指定します。
 
-  - 必要に応じて、それぞれのリテラル値に数値を指定することもできます。 列挙内のリテラルのショートカットメニューを開き、 **[プロパティ]** をクリックし、 **[プロパティ]** ウィンドウの **[値]** フィールドに数値を入力します。
+  - 必要に応じて、それぞれのリテラル値に数値を指定することもできます。 Open the shortcut menu for the literal in the enumeration, choose **Properties**, and then type a number in the **Value** field in the **Properties** window.
 
   それぞれの型に一意な名前を付けます。
 
@@ -136,7 +136,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  UML クラス図
 
- 1 つのクラスを複数の UML クラス図に表示できます。 1つのダイアグラムでクラスを作成したら、 **UML モデルエクスプローラー**から別の図にクラスをドラッグします。
+ 1 つのクラスを複数の UML クラス図に表示できます。 When you have created a class on one diagram, drag the class from **UML Model Explorer** onto the other diagram.
 
  この機能は、それぞれの図で特定の関係のグループに重点を置いて作業する場合に便利です。
 
@@ -144,26 +144,26 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  コンポーネント図
 
- コンポーネント図のコンポーネントでインターフェイスを定義している場合は、インターフェイスを**UML モデルエクスプローラー**からクラスダイアグラムにドラッグできます。 クラス図で、インターフェイスに含まれるメソッドを定義できます。
+ If you have defined interfaces on the components in a component diagram, you can drag an interface from **UML Model Explorer** onto the class diagram. クラス図で、インターフェイスに含まれるメソッドを定義できます。
 
- 「 [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)」を参照してください。
+ See [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
 
  UML シーケンス図
 
- シーケンス図の生存線からクラスとインターフェイスを作成し、 **Uml モデルエクスプローラー**から uml クラス図にクラスをドラッグできます。 シーケンス図における各生存線は、オブジェクト、コンポーネント、またはアクターのインスタンスを表します。
+ You can create classes and interfaces from lifelines in a sequence diagram, and then drag the class from **UML Model Explorer** to a UML class diagram. シーケンス図における各生存線は、オブジェクト、コンポーネント、またはアクターのインスタンスを表します。
 
- 生存線からクラスを作成するには、生存線のショートカットメニューを開き、 **[クラスの作成]** または インターフェイスの **[作成]** を選択します。 「 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。
+ To create a class from a lifeline, open the shortcut menu for the lifeline, and then choose **Create Class** or **Create Interface**. See [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
-## <a name="AttributesAndOperations"></a>属性と操作
+## <a name="AttributesAndOperations"></a> Attributes and Operations
  属性 (4) は、型のすべてのインスタンスが持つことができる名前付きの値です。 属性にアクセスしても、インスタンスの状態は変更されません。
 
- 操作 (5) は、型のインスタンスが実行できるメソッドまたは関数です。 操作は、値を返すことができます。 **Isquery**プロパティが true の場合、インスタンスの状態を変更することはできません。
+ 操作 (5) は、型のインスタンスが実行できるメソッドまたは関数です。 操作は、値を返すことができます。 If its **isQuery** property is true, it cannot change the state of the instance.
 
- 型に属性または操作を追加するには、型のショートカットメニューを開き、 **[追加]** を選択し、 **[属性]** または **[操作]** を選択します。
+ To add an attribute or operation to a type, open the shortcut menu for the type, choose **Add**, and then choose **Attribute** or **Operation**.
 
- プロパティを表示するには、属性または操作のショートカットメニューを開き、 **[プロパティ]** をクリックします。 プロパティが **[プロパティ]** ウィンドウに表示されます。
+ To see its properties, open the shortcut menu for the attribute or operation, and then choose **Properties**. The properties appear in the **Properties** window.
 
- 操作のパラメーターのプロパティを表示するには、 <strong>[...]</strong>を選択します。 **Parameters (パラメーター** ) プロパティ。 新しいプロパティ ダイアログ ボックスが表示されます。
+ To see the properties of an operation's parameters, choose <strong>[…]</strong>in the **Parameters** property. 新しいプロパティ ダイアログ ボックスが表示されます。
 
  設定できるすべてのプロパティの詳細については、次のトピックを参照してください。
 
@@ -172,17 +172,17 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 - [UML クラス ダイアグラムの操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)
 
 ### <a name="types-of-attributes-and-operations"></a>属性および操作の型
- 属性または操作の各*型*、および各パラメーターの型は、次のいずれかになります。
+ Each *Type* of an attribute or operation, and each parameter type, can be one of the following:
 
-- **(なし)** -前のコロン (`:`) を省略して、シグネチャに指定されていない型をそのままにすることができます。
+- **(none)** - You can leave a type unspecified in the signature by omitting the preceding colon (`:`).
 
-- 標準プリミティブ型の1つ。**ブール値**、**整数**、**文字列**。
+- One of the standard primitive types: **Boolean**, **Integer**, **String**.
 
 - モデルで定義されている型。
 
-- テンプレート型のパラメーター化された値であり、テンプレート \<Parameter > に記述されています。 「[テンプレートの型](#Templates)」を参照してください。
+- A parameterized value of a template type, written Template\<Parameter>. See [Template Types](#Templates).
 
-  モデルでまだ定義していない型の名前を書くこともできます。 名前は、UML モデルエクスプローラーの **[未指定の型]** の下に表示されます。
+  モデルでまだ定義していない型の名前を書くこともできます。 The name will be listed under **Unspecified Types** in UML Model Explorer.
 
 > [!NOTE]
 > その後、モデル内でその名前のクラス、またはインターフェイスを定義すると、以前の属性と操作は引き続き未指定型の要素を参照します。 新規クラスを参照するように変更するには、それぞれの属性や操作について、ドロップダウン メニューから新規クラスを選択し、型を 1 つずつリセットする必要があります。
@@ -198,7 +198,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  `[0..1]`
 
- **Null**または指定された型の値。
+ **Null** or a value of the given type.
 
  `[*]`
 
@@ -214,12 +214,12 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  多重度が 1 を超える場合は、以下のプロパティも設定できます。
 
-- **Isordered** -true の場合、コレクションには順序が定義されています。
+- **IsOrdered** - If true, the collection has a defined order.
 
-- **Isunique** -true の場合、コレクション内に重複する値はありません。
+- **IsUnique** - If true, there are no duplicate values in the collection.
 
 ### <a name="visibility"></a>可視性
- *Visibility*は、属性または操作にクラス定義の外部からアクセスできるかどうかを示します。 許可値は次のとおりです。
+ *Visibility* indicates whether the attribute or operation can be accessed outside the class definition. 許可値は次のとおりです。
 
  **Public**
 
@@ -237,13 +237,13 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  **~**
 
- この型を含むパッケージ内、および明示的に型をインポートするすべてのパッケージ内でアクセスできます。 「[名前空間とパッケージの定義」を](#Packages)参照してください。
+ この型を含むパッケージ内、および明示的に型をインポートするすべてのパッケージ内でアクセスできます。 See [Defining Namespaces and Packages](#Packages).
 
  **Protected**
 
  **#**
 
- この型、およびこの型を継承する型からのみアクセスできます。 「[継承](#Inheritance)」を参照してください。
+ この型、およびこの型を継承する型からのみアクセスできます。 See [Inheritance](#Inheritance).
 
 ### <a name="setting-the-signature-of-an-attribute-or-an-operation"></a>属性または操作のシグニチャの設定
  属性または操作のシグニチャは、可視性、名前、(操作の) パラメーター、および型を含むプロパティのコレクションです。
@@ -286,7 +286,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  属性または操作が静的な場合、その名前はシグニチャ内で下線付きで表示されます。 属性または操作が抽象型の場合、その名前は斜体で表示されます。
 
- ただし、 **[プロパティ]** ウィンドウでは**静的**プロパティと**抽象**プロパティのみを設定できます。
+ However, you can only set the **Is Static** and **Is Abstract** properties in the **Properties** window.
 
 #### <a name="full-signature"></a>完全なシグニチャ
  属性または操作のシグニチャを編集するときに、行の末尾および各パラメーターの後に追加のプロパティが表示されることがあります。 これらのプロパティは、中かっこ {...} で囲まれて表示されます。 これらのプロパティは、編集または追加できます。 (例:
@@ -300,25 +300,25 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `unique`
 
- **一意**
+ **Is Unique**
 
  コレクション内に重複する値は存在しません。 多重度が 1 を超える型に適用されます。
 
  `ordered`
 
- **並べ替え済み**
+ **Is Ordered**
 
  コレクションは順序付けられています。 false の場合、1 番目の項目は確定されません。 多重度が 1 を超える型に適用されます。
 
  `query`
 
- **クエリ**
+ **Is Query**
 
  操作によってインスタンスの状態が変更されることはありません。 操作にのみ適用されます。
 
  `/`
 
- **派生**
+ **Is Derived**
 
  属性は、他の属性または関連の値から計算されます。
 
@@ -328,30 +328,30 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 /TotalPrice: Integer
 ```
 
- 通常、完全なシグニチャは、編集中の図にのみ表示されます。 編集が完了すると、追加のプロパティは非表示になります。 すべての署名を常に表示する場合は、型のショートカットメニューを開き、 **[完全署名の表示]** をクリックします。
+ 通常、完全なシグニチャは、編集中の図にのみ表示されます。 編集が完了すると、追加のプロパティは非表示になります。 If you want to see the full signature all the time, open the shortcut menu for the type, and then choose **Show Full Signature**.
 
-## <a name="Associations"></a>関連付けの描画と使用
+## <a name="Associations"></a> Drawing and Using Associations
  関連は、ソフトウェアでリンクがどのように実装されるかに関係なく、2 つの要素間のあらゆる種類のリンクを表すために使用します。 たとえば、関連を使用して、C# のポインター、データベースにおけるリレーションシップ、または XML ファイルのある部分から別の部分への相互参照を表すことができます。 関連を使用することで、地球と太陽のような、現実世界のオブジェクト間の関連を表すことができます。 関連は、リンクがどのように表されているかを示すものではなく、その情報が存在することのみを示します。
 
 ### <a name="properties-of-an-association"></a>関連のプロパティ
- 関連を生成したら、次にそのプロパティを設定します。 関連付けのショートカットメニューを開き、 **[プロパティ]** を選択します。
+ 関連を生成したら、次にそのプロパティを設定します。 Open the shortcut menu for the association, and then choose **Properties**.
 
- 関連付けのすべてのプロパティに加えて、各*ロール*(アソシエーションの各 end) には、独自のプロパティがいくつかあります。 それらを表示するには、**最初のロール**と**2 番目**のロールのプロパティを展開します。
+ In addition to the properties of the association as a whole, each *role*, that is, each end of the association, has some properties of its own. To view them, expand the **First Role** and **Second Role** properties.
 
  各ロールのいくつかのプロパティは、図に直接表示されます。 それらは次のとおりです。
 
-- ロールの名前。 図内の関連の適切な端部に表示されます。 これは、ダイアグラムまたは **[プロパティ]** ウィンドウで設定できます。
+- ロールの名前。 図内の関連の適切な端部に表示されます。 You can set it either on the diagram or in the **Properties** window.
 
-- **複数要素**の接続性。既定値は**1**です。 図内の関連の適切な端部にも表示されます。
+- **Multiplicity**, which defaults to **1**. 図内の関連の適切な端部にも表示されます。
 
-- **集計**。 コネクタの一方の端部に菱形で表されます。 集約ロール側のインスタンスがもう一方の側のインスタンスを所有または包含していることを示すために使用します。
+- **Aggregation**. コネクタの一方の端部に菱形で表されます。 集約ロール側のインスタンスがもう一方の側のインスタンスを所有または包含していることを示すために使用します。
 
-- **誘導**可能です。 1 つのロールに対してのみ true の場合、誘導可能な方向に矢印が表示されます。 これを使用して、ソフトウェアのリンクの誘導可能性とデータベースのリレーションシップを示すことができます。
+- **Is Navigable**. 1 つのロールに対してのみ true の場合、誘導可能な方向に矢印が表示されます。 これを使用して、ソフトウェアのリンクの誘導可能性とデータベースのリレーションシップを示すことができます。
 
-  これらのプロパティおよびその他のプロパティの詳細については、「 [UML クラス図の関連付けのプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)」を参照してください。
+  For the full details of these and other properties, see [Properties of associations on UML class diagrams](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
 ### <a name="navigability"></a>誘導可能性
- 関連を描画すると、関連を移動できる方向を示す矢印が片方の末尾に付きます。 これは、クラス図がソフトウェア クラスを表し、関連がポインターまたは参照を表す場合に役立ちます。 ただし、クラス図を使用してエンティティと関係またはビジネス概念を表す場合は、誘導可能性との関連性は小さくなります。 この場合は、矢印を使用しないで関連を描画することをお勧めします。 これを行うには、アソシエーションの両端にある [**誘導**可能] プロパティを True に設定します。 これを簡単にするために、コードサンプルの[UML ドメインモデリング](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)をダウンロードできます。
+ 関連を描画すると、関連を移動できる方向を示す矢印が片方の末尾に付きます。 これは、クラス図がソフトウェア クラスを表し、関連がポインターまたは参照を表す場合に役立ちます。 ただし、クラス図を使用してエンティティと関係またはビジネス概念を表す場合は、誘導可能性との関連性は小さくなります。 この場合は、矢印を使用しないで関連を描画することをお勧めします。 You can do so by setting the **Is Navigable** property on both ends of the association to True.
 
 ### <a name="attributes-and-associations"></a>属性と関連
  関連は、属性を視覚的に示す方法の 1 つです。 たとえば、Menu 型の属性を持つ Restaurant クラスを生成する代わりに、Restaurant から Menu への関連を描画できます。
@@ -360,16 +360,16 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  通常は、基本型のような図中に描画しない型に関してのみ、属性を使用することをお勧めします。
 
- ![同等の関連付けと属性](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
+ ![Equivalent association and attributes](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
 
 ## <a name="Inheritance"></a> 継承
- **継承**ツールを使用して、次のリレーションシップを作成します。
+ Use the **Inheritance** tool to create the following relationships:
 
-- 特殊化された型と一般型の間の*汎*化関係
+- A *generalization* relationship between a specialized type and a general type
 
    \- または
 
-- クラスと、それが実装するインターフェイスとの間の*実現*関係。
+- A *realization* relation between a class and an interface that it implements.
 
   継承関係内にループを生成することはできません。
 
@@ -386,11 +386,11 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     関係が強調表示され、アクション タグがその近くに表示されます。
 
-2. アクションタグをクリックし、 **[上書き操作]** をクリックします。
+2. Click the Action tag, and then click **Override Operations**.
 
-    **[操作の上書き]** ダイアログボックスが表示されます。
+    The **Override Operations** dialog box appears.
 
-3. 特殊化型に表示する操作を選択し、[ **OK]** をクリックします。
+3. Select the operations that you want to appear in the specializing type, and then click **OK**.
 
    選択した操作が特化型に表示されます。
 
@@ -399,78 +399,78 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  実現コネクタを生成すると、インターフェイスの操作が自動的に実現クラスに複製されます。 インターフェイスに新しい操作を追加すると、その操作はその実現クラスに複製されます。
 
- 実現関係を生成した後、それをロリポップ表記に変換できます。 リレーションシップを右クリックし、 **[ロリポップとして表示]** を選択します。
+ 実現関係を生成した後、それをロリポップ表記に変換できます。 Right-click the relationship and choose **Show as Lollipop**.
 
  これにより、実現リンクでクラス図が煩雑になることもなく、クラスで実装するインターフェイスを表示できます。 また、インターフェイスとそれを実現するクラスを別個の図に表示することもできます。
 
- ![コネクタとロリポップで表示される実現](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
+ ![Realization shown with conector and lollipop](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
 
-## <a name="Templates"></a>テンプレートの種類
+## <a name="Templates"></a> Template Types
  他の型または値でパラメーター化できるジェネリック型またはテンプレート型を定義できます。
 
  たとえば、キー型と値型でパラメーター化されたジェネリックな Dictionary を生成できます。
 
- ![2つのパラメーターを持つテンプレートクラス](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
+ ![Template class with two parameters](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
 
 #### <a name="to-create-a-template-type"></a>テンプレート型を生成するには
 
 1. クラスまたはインターフェイスを生成します。 これがテンプレート型になります。 適切な名前 (たとえば、`Dictionary`) を付けます。
 
-2. 新しい型のショートカットメニューを開き、 **[プロパティ]** を選択します。
+2. Open the shortcut menu for the new type, and then choose **Properties**.
 
-3. **[プロパティ]** ウィンドウで、 **[テンプレートパラメーター]** フィールドの [ **...]** をクリックします。
+3. In the **Properties** window, click **[…]** in the **Template Parameters** field.
 
-    **[テンプレートパラメーターコレクションエディター]** ダイアログボックスが表示されます。
+    The **Template Parameter Collection Editor** dialog box appears.
 
 4. **[追加]** をクリックします。
 
 5. 名前プロパティをテンプレート型のパラメーター名 (たとえば、`Key`) に設定します。
 
-6. **パラメーターの種類**を設定します。 既定値は**Class**です。
+6. Set **Parameter Kind**. The default is **Class**.
 
-7. パラメーターで特定の基底クラスの派生クラスのみを受け入れるようにする場合は、**制約値**を必要な基本クラスに設定します。
+7. If you want the parameter to accept only derived classes of a particular base class, set **Constrained Value** to the base class that you want.
 
-8. 必要な数のパラメーターを追加し、[ **OK]** を選択します。
+8. Add as many parameters as you need, then choose **OK**.
 
 9. 他のクラスの場合と同様に、属性と操作をテンプレート型に追加します。
 
-     属性と操作の定義で、**クラス**、**インターフェイス**、または**列挙型**を持つパラメーターを使用できます。 たとえば、`Key` と `Value` のパラメーター クラスを使用して、この操作を `Dictionary` で定義できます。
+     You can use parameters whose kind is **Class**, **Interface** or **Enumeration** in the definition of attributes and operations. たとえば、`Key` と `Value` のパラメーター クラスを使用して、この操作を `Dictionary` で定義できます。
 
      `Get(k : Key) : Value`
 
-     種類が**整数**であるパラメーターは、多重度でバインドされたとして使用できます。 たとえば、パラメーター整数 max を使用して、属性の多重度を `[0..max]` として定義できます。
+     You can use a parameter whose kind is **Integer** as a bound in a multiplicity. たとえば、パラメーター整数 max を使用して、属性の多重度を `[0..max]` として定義できます。
 
    テンプレート型を生成した後は、これを使用してテンプレート バインディングを定義できます。
 
-   ![ディクショナリテンプレートからバインドされたクラス](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")
+   ![A  class bound from the Dictionary template](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")
 
 #### <a name="to-use-a-template-type"></a>テンプレート型を使用するには
 
 1. 新しい型 (たとえば、`AddressTable`) を生成します。
 
-2. 新しい型のショートカットメニューを開き、 **[プロパティ]** を選択します。
+2. Open the shortcut menu for the new type, and then choose **Properties**.
 
-3. **[テンプレートバインド]** プロパティで、ドロップダウンリストからテンプレートの種類 (`Dictionary` など) を選択します。
+3. In the **Template Binding** property, select the template type, for example `Dictionary`, from the drop-down list.
 
-4. **[テンプレートバインディング]** プロパティを展開します。
+4. Expand the **Template Binding** property.
 
      テンプレート型のそれぞれのパラメーターに対して行が表示されます。
 
 5. それぞれのパラメーターを適切な値に設定します。 たとえば、`Key` パラメーターを `Name` クラスに設定します。
 
-## <a name="Packages"></a>パッケージ
+## <a name="Packages"></a> Packages
  UML クラス図では、パッケージを表示できます。 パッケージは、他のモデル要素のコンテナーです。 パッケージ内には任意の要素を生成できます。 図において、パッケージを移動すると、パッケージ内の要素も移動されます。
 
  展開/折りたたみコントロールを使用して、パッケージの内容の表示/非表示を切り替えることができます。
 
- 「[パッケージと名前空間の定義」を](../modeling/define-packages-and-namespaces.md)参照してください。
+ See [Define packages and namespaces](../modeling/define-packages-and-namespaces.md).
 
-## <a name="generating"></a>UML クラス図からのコードの生成
+## <a name="generating"></a> Generating Code from UML Class Diagrams
  UML クラス図でクラスの実装を開始するには、C# コードを生成するか、またはコード生成用テンプレートをカスタマイズすることができます。 用意された C のテンプレートを使用してコードの生成を開始する場合:
 
-- 図または要素のショートカットメニューを開き、 **[コードの生成]** をクリックし、必要なプロパティを設定します。
+- Open the shortcut menu for the diagram or an element, choose **Generate Code**, and then set the necessary properties.
 
-     これらのプロパティを設定し、提供されるテンプレートをカスタマイズする方法の詳細については、「 [UML クラス図からコードを生成](../modeling/generate-code-from-uml-class-diagrams.md)する」を参照してください。
+     For more information about how to set these properties and customize the provided templates, see [Generate code from UML class diagrams](../modeling/generate-code-from-uml-class-diagrams.md).
 
 ## <a name="see-also"></a>参照
- [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml クラス図: 参照](../modeling/uml-class-diagrams-reference.md)[モデルユーザー要件](../modeling/model-user-requirements.md) [Uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md) [uml ユースケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md) [umlコンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)
+ [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [Model user requirements](../modeling/model-user-requirements.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)
