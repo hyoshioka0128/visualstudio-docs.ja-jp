@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 80811c63ff0b4fa764c95976bf2f69a30123b235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651678"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299386"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "72651678"
 
  Web アプリケーション プロジェクトでは、 **[クラス ライブラリ]** を指定する必要があります。
 
- **[WinMD ファイル]** オプションを指定した場合、種類を Windows ランタイムのプログラミング言語に射影できます。 WinMD ファイルとしてプロジェクトの出力をパッケージ化することで、複数の言語でアプリケーションをコード化し、すべて同じ言語で記述した場合と同様に、コードを相互運用することができます。 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] アプリを含む、Windows ランタイム ライブラリをターゲットとするソリューションに対して、 **[WinMD ファイル]** オプションを使用できます。 詳細については、「[C# および Visual Basic での Windows ランタイム コンポーネントの作成](http://go.microsoft.com/fwlink/?LinkId=231895)」を参照してください。
+ **[WinMD ファイル]** オプションを指定した場合、種類を Windows ランタイムのプログラミング言語に射影できます。 WinMD ファイルとしてプロジェクトの出力をパッケージ化することで、複数の言語でアプリケーションをコード化し、すべて同じ言語で記述した場合と同様に、コードを相互運用することができます。 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] アプリを含む、Windows ランタイム ライブラリをターゲットとするソリューションに対して、 **[WinMD ファイル]** オプションを使用できます。 詳細については、「[C# および Visual Basic での Windows ランタイム コンポーネントの作成](https://go.microsoft.com/fwlink/?LinkId=231895)」を参照してください。
 
 > [!NOTE]
 > Windows ランタイムでは、どの言語で使用される場合でも、ネイティブ オブジェクトとして表示されるように種類を射影できます。 たとえば、Windows ランタイムと対話する JavaScript アプリケーションでは JavaScript オブジェクト セットとして使用され、C# アプリケーションでは .NET オブジェクト コレクションとしてライブラリが使用されます。 WinMD ファイルとしてプロジェクトの出力をパッケージ化することで、Windows ランタイムで使用されるのと同じテクノロジを利用できます。
@@ -118,7 +118,7 @@ ms.locfileid: "72651678"
 
  **スプラッシュスクリーン**スプラッシュスクリーンとして使用するフォームを選択します。 フォームまたはテンプレートを使用して、事前にスプラッシュ スクリーンを作成しておく必要があります。 既定値は **[(なし)]** です。
 
- **アプリケーションイベントの表示**このボタンをクリックすると、イベントコードファイルが表示されます。このコードファイルには、`Startup`、`Shutdown`、`UnhandledException`、`StartupNextInstance` および `NetworkAvailabilityChanged` のアプリケーションフレームワークイベントのイベントを記述できます。 また、特定のアプリケーション フレームワーク メソッドをオーバーライドすることもできます。 たとえば、`OnInitialize` をオーバーライドして、スプラッシュ スクリーンの表示動作を変更することができます。
+ **アプリケーションイベントの表示**このボタンをクリックすると、イベントコードファイルが表示されます。このコードファイルには、`Startup`、`Shutdown`、`UnhandledException`、`StartupNextInstance` および `NetworkAvailabilityChanged`のアプリケーションフレームワークイベントのイベントを記述できます。 また、特定のアプリケーション フレームワーク メソッドをオーバーライドすることもできます。 たとえば、`OnInitialize` をオーバーライドして、スプラッシュ スクリーンの表示動作を変更することができます。
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Windows Presentation Foundation (WPF) アプリケーションの Windows アプリケーション フレームワーク プロパティ
  プロジェクトが Windows Presentation Foundation アプリケーションである場合は、**Windows アプリケーション フレームワーク プロパティ**で以下の設定を使用できます。 これらのオプションは、 **[アプリケーション フレームワークを有効にする]** チェック ボックスがオンになっている場合にのみ使用できます。 次の表にリストされているオプションは、WPF アプリケーションまたは WPF ブラウザー アプリケーションのみで使用できます。 WPF ユーザー コントロールやカスタム コントロール ライブラリでは使用できません。

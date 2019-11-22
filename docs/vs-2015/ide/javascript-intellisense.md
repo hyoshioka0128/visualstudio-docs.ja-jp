@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670474"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300742"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 ### <a name="UserDefined"></a> ユーザー定義の変数、関数、およびオブジェクト
  JavaScript ファイルを変更すると、開かれているドキュメントと参照されているドキュメントが [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] でスキャンされ、利用できるすべてのコード リソースが確認されます。 これには、ご自分で作成した変数、関数、およびオブジェクトが含まれます。 その後、これらのリソースが JavaScript IntelliSense で利用できるようになります。
 
- ユーザー定義の変数、関数、およびオブジェクトの詳細については、MSDN Web サイト上の[独自のオブジェクトの作成](http://go.microsoft.com/fwlink/?LinkId=108671)に関するページを参照してください。
+ ユーザー定義の変数、関数、およびオブジェクトの詳細については、MSDN Web サイト上の[独自のオブジェクトの作成](https://go.microsoft.com/fwlink/?LinkId=108671)に関するページを参照してください。
 
 ### <a name="External"></a> 外部ファイル参照
  コードの IntelliSense サポートを実現するために、さまざまな種類の外部ファイル参照を含めることができます。 外部ファイル参照は、スクリプト参照または参照ディレクティブの場合があり、参照グループを使って指定することもできます。
@@ -283,6 +283,6 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 - [JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)
 - [識別子の入力候補](../ide/statement-completion-for-identifiers.md)
 - [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)
-- [DHTML オブジェクト モデルについて](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [DHTML オブジェクト モデルについて](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [リスト メンバー](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [SRC 属性 &#124; src プロパティ](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC 属性 &#124; src プロパティ](https://go.microsoft.com/fwlink/?LinkId=92345)

@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efcdbb4f72d47a5044b287f1b40424f5611d6401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703429"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295878"
 ---
 # <a name="link-task"></a>Link タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,13 +68,13 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    マニフェスト ファイルの `dependency` セクションに置かれる属性を指定します。  
   
-   詳細については、「[/MANIFESTDEPENDENCY (マニフェストの依存関係を指定する)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)」を参照してください。 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイト上の「パブリッシャー構成ファイル」も参照してください。  
+   詳細については、「[/MANIFESTDEPENDENCY (マニフェストの依存関係を指定する)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)」を参照してください。 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web サイト上の「パブリッシャー構成ファイル」も参照してください。  
   
 - **AdditionalOptions**  
   
    省略可能な **String** 型のパラメーターです。  
   
-   コマンド ラインで指定するリンカー オプションのリストです。 たとえば、**"**_/option1 /option2 /option#_" のような形式です。 他の **Link** タスク パラメーターでは表されないリンカー オプションを指定する場合は、このパラメーターを使用します。  
+   コマンド ラインで指定するリンカー オプションのリストです。 たとえば、 **"** _/option1 /option2 /option#_ " のような形式です。 他の **Link** タスク パラメーターでは表されないリンカー オプションを指定する場合は、このパラメーターを使用します。  
   
    詳細については、「[リンカー オプション](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)」を参照してください。  
   
@@ -140,13 +140,13 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はリンカー オプションに対応しています。  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
   
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
     詳細については、「[/CLRIMAGETYPE (CLR イメージのタイプの指定)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116)」を参照してください。  
   
@@ -158,11 +158,11 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はリンカー オプションに対応しています。  
   
-  - **Enabled** - **/CLRSupportLastError**  
+  - **Enabled** -  **/CLRSupportLastError**  
   
-  - **Disabled** - **/CLRSupportLastError:NO**  
+  - **Disabled** -  **/CLRSupportLastError:NO**  
   
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     詳細については、「[/CLRSUPPORTLASTERROR (PInvoke 呼び出しの最終エラー コードの保持)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575)」を参照してください。  
   
@@ -174,11 +174,11 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はリンカー オプションに対応しています。  
   
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
   
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
   
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
   
     詳細については、「[/CLRTHREADATTRIBUTE (CLR スレッド属性の設定)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8)」を参照してください。  
   
@@ -198,13 +198,13 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。値はリンカー オプションに対応しています。  
   
-  - **Enabled** - **/FUNCTIONPADMIN**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
   
     詳細については、「[/FUNCTIONPADMIN (ホットパッチ可能なイメージの作成)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7)」を参照してください。  
   
@@ -240,13 +240,13 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はリンカー オプションに対応しています。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Driver** - **/Driver**  
+  - **Driver** -  **/Driver**  
   
-  - **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** - **/DRIVER:WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
     詳細については、「[/DRIVER (Windows NT カーネル モード ドライバー)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8)」を参照してください。  
   
@@ -298,11 +298,11 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Enabled** - **/FORCE**  
+  - **Enabled** -  **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
     詳細については、「[/FORCE (ファイルを強制的に出力)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da)」を参照してください。  
   
@@ -448,13 +448,13 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **NoErrorReport** - **/ERRORREPORT:NONE**  
+  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
   
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
   
-  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
     詳細については、「[/ERRORREPORT (内部リンカー エラーの報告)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28)」を参照してください。  
   
@@ -490,13 +490,13 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
-  - **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** -  **/LTCG:PGOptimize**  
   
   - **PGUpdate**  
   
@@ -684,19 +684,19 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
     詳細については、「[/VERBOSE (進行状況メッセージの出力)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab)」を参照してください。  
   
@@ -746,25 +746,25 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **コンソール** - **/SUBSYSTEM:CONSOLE**  
+  - **コンソール** -  **/SUBSYSTEM:CONSOLE**  
   
-  - **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **ネイティブ** - **/SUBSYSTEM:NATIVE**  
+  - **ネイティブ** -  **/SUBSYSTEM:NATIVE**  
   
-  - **EFI アプリケーション** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI アプリケーション** -  **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI ブート サービス ドライバー** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI ブート サービス ドライバー** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI ランタイム** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI ランタイム** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
     詳細については、「[/SUBSYSTEM (サブシステムの指定)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b)」を参照してください。  
   
@@ -816,29 +816,29 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** -  **/MACHINE:ARM**  
   
-  - **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
-  - **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** -  **/MACHINE:THUMB**  
   
-  - **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     詳細については、「[/MACHINE (ターゲット プラットフォームの指定)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2)」を参照してください。  
   

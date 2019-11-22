@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662607"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296220"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ コードの使用 (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "72662607"
 - クラス デザイナーが型を検出できるように、型が正しいスコープ内にあることを確認します。 コードに `using` ステートメント、`imports` ステートメント、または `#include` ステートメントが欠落していないことを確認します。 また、型 (または関連する型) を最初に配置した名前空間の外に移動していないことも確認します。
 
 ### <a name="troubleshooting-other-error-messages"></a>その他のエラー メッセージのトラブルシューティング
- MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 [Visual Studio クラス デザイナー フォーラム](http://go.microsoft.com/fwlink/?linkid=160754)を参照してください。
+ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 [Visual Studio クラス デザイナー フォーラム](https://go.microsoft.com/fwlink/?linkid=160754)を参照してください。
 
 ## <a name="limitations"></a> C++ コード要素の制限事項
 
@@ -107,4 +107,4 @@ ms.locfileid: "72662607"
 - クラス デザイナーでは、void 型または void 型から派生した型を表示できません。
 
 ## <a name="see-also"></a>関連項目
- クラス[と型の設計と表示](../ide/designing-and-viewing-classes-and-types.md)クラスと[その他の型の操作 (クラスデザイナー)](../ide/working-with-classes-and-other-types-class-designer.md) [クラスダイアグラムの操作 (クラスデザイナー)](../ide/working-with-class-diagrams-class-designer.md)クラス[と型のデザイン (クラスデザイナー)](../ide/designing-classes-and-types-class-designer.md) [に関する追加情報](../ide/additional-information-about-class-designer-errors.md)クラスデザイナーでは、クラスデザイナー [visual C++ typedef](../ide/visual-cpp-typedefs-in-class-designer.md)内のクラスデザイナー[ビジュアルC++の列挙](../ide/visual-cpp-enumerations-in-class-designer.md) [ C++体](../ide/visual-cpp-structures-in-class-designer.md)で[クラスデザイナー C++ ](../ide/visual-cpp-classes-in-class-designer.md)のビジュアル構造にクラスデザイナーエラーが表示される
+ クラス[と型の設計と表示](../ide/designing-and-viewing-classes-and-types.md)クラスと[その他の型の操作 (クラスデザイナー)](../ide/working-with-classes-and-other-types-class-designer.md) [クラスダイアグラムの操作 (クラスデザイナー) クラス](../ide/working-with-class-diagrams-class-designer.md)[と型のデザイン (クラスデザイナー) クラスと型のデザイン () クラスと型の設計 ()](../ide/designing-classes-and-types-class-designer.md)クラスデザイナーのビジュアル[ C++構造](../ide/visual-cpp-structures-in-class-designer.md) [ C++ ](../ide/visual-cpp-enumerations-in-class-designer.md)でのクラスデザイナー visual [ C++ typedef](../ide/visual-cpp-typedefs-in-class-designer.md)のクラスデザイナービジュアルな[ C++クラス](../ide/visual-cpp-classes-in-class-designer.md)に[クラスデザイナー関する追加情報](../ide/additional-information-about-class-designer-errors.md)クラスデザイナー

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3d6eafbafbf9b373028a7ba052ba9e8df62511c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661614"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297781"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ ms.locfileid: "72661614"
  詳細については、「[HTML Input コントロール](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputPassword Server Control Declarative Syntax](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)」 (HtmlInputPassword サーバー コントロール宣言構文)、「[方法 : パスワード入力のための TextBox Web サーバー コントロールを設定する](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)」、および「[チュートリアル : Web フォーム ページにおけるユーザーの入力の検証](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)」を参照してください。
 
 > [!IMPORTANT]
-> アプリケーションでユーザー名とパスワードを送信する場合、転送を暗号化するため、Secure Sockets Layer (SSL) を使用するように Web サイトを構成する必要があります。 詳細については、「[IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856)」 (IIS 操作ガイド) の「Securing Connections with SSL」 (SSL で接続を保護する) を参照してください。 また、すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。
+> アプリケーションでユーザー名とパスワードを送信する場合、転送を暗号化するため、Secure Sockets Layer (SSL) を使用するように Web サイトを構成する必要があります。 詳細については、「[IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856)」 (IIS 操作ガイド) の「Securing Connections with SSL」 (SSL で接続を保護する) を参照してください。 また、すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。
 
  **入力 (チェックボックス)** ![HTML Web ページツールボックスチェックボックスオプション](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -198,7 +198,7 @@ ms.locfileid: "72661614"
 
  詳細については、「[HtmlImage Server Control Declarative Syntax (HtmlImage サーバー コントロール宣言構文)](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6)」、「[Image Web Server Control Overview (Image Web サーバー コントロールの概要)](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9)」、<xref:System.Web.UI.HtmlControls.HtmlImage>、<xref:System.Web.UI.HtmlControls.HtmlInputImage>、および <xref:System.Web.UI.WebControls.Image> をご覧ください。
 
- ![HTML ページツールボックスのドロップダウン](../../ide/reference/media/vxdropdown.gif "|::ref14::|")の**選択**
+ **** ![HTML ページツールボックスのドロップダウン](../../ide/reference/media/vxdropdown.gif "|::ref14::|")の選択
 
  `select` 要素のドロップダウン リスト (`size` 属性なし) を挿入します。 既定では、`id="select1"` は最初のリスト ボックスに挿入され、`id="select2"` は 2 番目のリスト ボックスという具合に挿入されます。
 

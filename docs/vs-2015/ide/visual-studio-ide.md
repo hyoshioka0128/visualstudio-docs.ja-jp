@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667140"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296920"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Visual Studio を初めて使用する場合は、「 [Get Started Developing wi
 Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新機能](../what-s-new-in-visual-studio-2015.md)」を参照してください。
 
 ## <a name="visual-studio-setup"></a>Visual Studio のセットアップ
- 「 [Visual Studio のエディション](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs)」で、自分に適した Visual Studio のエディションを判別できます。
+ 「 [Visual Studio のエディション](https://visualstudio.microsoft.com/vs/)」で、自分に適した Visual Studio のエディションを判別できます。
 
- Visual Studio 2015 は、「 [Visual Studio のダウンロード](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)」からダウンロードしてインストールできます。 インストール プロセスの詳細については、「[Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)」を参照してください。
+ Visual Studio 2015 は、「 [Visual Studio のダウンロード](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)」からダウンロードしてインストールできます。 インストール プロセスの詳細については、「[Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)」を参照してください。
 
 ## <a name="ide-basics"></a>IDE の基本
  次の図は、プロジェクトが開かれている Visual Studio IDE、プロジェクト ファイル内を移動するためのソリューション エクスプローラー ウィンドウ、ソース管理と作業項目トラッキングを移動するためのチーム エクスプローラー ウィンドウを示しています。 示されているタイトル バーの機能については、以下で詳しく説明します。
