@@ -33,7 +33,7 @@ ms.locfileid: "72663213"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|カテゴリ|Microsoft Design|
+|カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -65,7 +65,7 @@ return left.Equals(right);
  等値演算子の既定の実装で型の正しい動作が提供されている場合は、この規則による警告を抑制しても安全です。
 
 ## <a name="example"></a>例
- 次の例では、この規則に違反する型 (`BadAddableType`) を定義しています。 この型は、等値演算子を実装して、同じフィールド値を持つ2つのインスタンスが等しいかどうかをテスト `true` ようにする必要があります。 @No__t_0 型は、修正された実装を示します。 この型は、非等値演算子も実装し、他の規則を満たすように <xref:System.Object.Equals%2A> をオーバーライドすることに注意してください。 完全な実装では、<xref:System.Object.GetHashCode%2A> も実装します。
+ 次の例では、この規則に違反する型 (`BadAddableType`) を定義しています。 この型は、等値演算子を実装して、同じフィールド値を持つ2つのインスタンスが等しいかどうかをテスト `true` ようにする必要があります。 `GoodAddableType` 型は、修正された実装を示します。 この型は、非等値演算子も実装し、他の規則を満たすように <xref:System.Object.Equals%2A> をオーバーライドすることに注意してください。 完全な実装では、<xref:System.Object.GetHashCode%2A>も実装します。
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -76,7 +76,10 @@ return left.Equals(right);
 
  この例を実行すると、次の出力が生成されます。
 
- **不適切な型: {2,2} {2,2} が等しいかどうかを確認してください。** @No__t_3**適切な種類ではありません: {3,3} {3,3} は同じですか?はい**
-**適切な種類: {3,3} 0 = =?  はい**1**無効な型です: 3 4 が等しいかどうかを確認してください。** @No__t_15**適切な型ではありません: 7 8 は = = ですか?  いいえ**
-## <a name="see-also"></a>参照
+ **不適切な型: {2,2} {2,2} が等しいかどうかを確認してください。** 
+**適切な種類ではありません: {3,3} {3,3} は同じですか?はい**
+**適切な種類: {3,3} {3,3} = =?  はい**
+**無効な型です: {2,2} {9,9} が等しいかどうかを確認してください。** 
+**適切な型ではありません: {3,3} {9,9} は = = ですか?  いいえ**
+## <a name="see-also"></a>関連項目
  [等値演算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

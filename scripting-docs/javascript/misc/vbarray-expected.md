@@ -34,6 +34,6 @@ new VBArray(safeArray);
   
 - **Vbarray コンストラクターに** **vbarray**オブジェクトのみを渡していることを確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VBArray オブジェクト](../../javascript/reference/vbarray-object-javascript.md)   
  [配列の使用](../../javascript/advanced/using-arrays-javascript.md)

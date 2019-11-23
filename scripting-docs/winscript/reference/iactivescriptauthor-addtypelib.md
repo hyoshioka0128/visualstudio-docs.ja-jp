@@ -40,7 +40,7 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>パラメーター  
  `rguidTypeLib`  
- から追加するタイプライブラリの CLSID (クラス識別子)。  
+ [in]\(クラス id) の CLSID、タイプ ライブラリを追加します。  
   
  `dwMajor`  
  からメジャーバージョン番号。  
@@ -54,14 +54,14 @@ HRESULT AddTypeLib(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは `LoadTypeLib` を呼び出してタイプライブラリを読み込みます。 成功すると、このメソッドは `IActiveScriptAuthor::AddNamedItem` を呼び出して型情報を追加します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

@@ -45,22 +45,22 @@ HRESULT onHandleBreakPoint(
  からブレークポイントの理由。  
   
  `pError`  
- から@No__t_0 の値が BREAKREASON_ERROR の場合に提供されるランタイムエラー情報。  
+ から`br` の値が BREAKREASON_ERROR 場合に提供されるランタイムエラー情報。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、ブレークポイントにヒットし `IDebugApplication::HandleBreakPoint` が呼び出されると呼び出されます。  
   
- デバッガー IDE が `IRemoteDebugApplication::ResumeFromBreakPoint` を呼び出すまで、アプリケーションは中断されたままになります。  
+ デバッガー IDE が `IRemoteDebugApplication::ResumeFromBreakPoint`を呼び出すまで、アプリケーションは中断されたままになります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iapplicationdebugger インターフェイス](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication:: HandleBreakPoint ポイント](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
- [Iremotedebugapplication:: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+ [Iremotedebugapplication:: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON 列挙型](../../winscript/reference/breakreason-enumeration.md)

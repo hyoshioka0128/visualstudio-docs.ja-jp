@@ -37,18 +37,18 @@ HRESULT Start(
   
 #### <a name="parameters"></a>パラメーター  
  `pdecb`  
- から式の評価が完了したことを示すコールバック。 このパラメーターが `NULL` 場合、イベントは発生せず、クライアントは `QueryIsComplete` を使用して式の状態をポーリングする必要があります。  
+ から式の評価が完了したことを示すコールバック。 このパラメーターが `NULL`場合、イベントは発生せず、クライアントは `QueryIsComplete`を使用して式の状態をポーリングする必要があります。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、式の評価を開始します。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)    
+## <a name="see-also"></a>参照  
+ [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
  [IDebugExpression インターフェイス](../../winscript/reference/idebugexpression-interface.md)

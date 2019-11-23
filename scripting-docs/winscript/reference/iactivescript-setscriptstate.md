@@ -42,7 +42,7 @@ HRESULT SetScriptState(
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
   
-|戻り値|説明|  
+|戻り値|意味|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_FAIL`|スクリプトエンジンは、初期化された状態への移行をサポートしていません。 ホストは、このスクリプトエンジンを破棄し、同じ効果を得るために新しいスクリプトエンジンを作成、初期化、および読み込みする必要があります。|  
@@ -50,12 +50,12 @@ HRESULT SetScriptState(
 |`OLESCRIPT_S_PENDING`|メソッドは正常にキューに登録されましたが、状態はまだ変更されていません。 状態が変化すると、 [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッドを使用してサイトがコールバックされます。|  
 |`S_FALSE`|メソッドは成功しましたが、スクリプトは既に指定された状態にあります。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  スクリプトエンジンの状態の詳細については、「 [Windows スクリプト](../../winscript/windows-script-engines.md)エンジン」の「スクリプトエンジンの状態」セクションを参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
- [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
- [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
- [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

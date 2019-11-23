@@ -39,13 +39,13 @@ HRESULT Detach();
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、プロジェクトツリーからこのアプリケーションノードを削除します。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugApplicationNode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
+## <a name="see-also"></a>参照  
+ [IDebugApplicationNode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [IDebugApplicationNode インターフェイス](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -28,6 +28,6 @@ ms.locfileid: "72573417"
   
 - 2番目と3番目のオペランドの間にコロンを挿入します。  
   
-## <a name="see-also"></a>関連項目  
- [Conditional (三項) 演算子 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+## <a name="see-also"></a>参照  
+ [Conditional (三項) 演算子 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [演算子](../../javascript/operators-javascript.md)

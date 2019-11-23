@@ -26,12 +26,12 @@ ms.locfileid: "72573388"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 等号を追加します。 (例:  
+- 等号を追加します。 例 :  
   
     ```JavaScript  
     @set @myvar1 = 1  
     ```  
   
-## <a name="see-also"></a>関連項目  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

@@ -42,16 +42,16 @@ HRESULT GetDescription(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  テキストは、エラーが発生したメソッドの `IDispatchEx::InvokeEx` に渡されたロケール識別子 (LCID) で指定された言語で返されます。  
   
 > [!NOTE]
 > このメソッドは実装されていません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDispError インターフェイス](../../winscript/reference/idisperror-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

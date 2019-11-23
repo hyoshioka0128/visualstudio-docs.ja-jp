@@ -21,7 +21,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72577419"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-デバッガーオプションを更新するために呼び出されます。 このメソッドは、 [Iremotedebugapplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)の後に呼び出す必要があります。 [Iremotedebugapplication::D isconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)メソッドは、自動的に既定のオプションにリセットされます。 既定値は 0 (SDO_NONE) です。  
+デバッガーオプションを更新するために呼び出されます。 このメソッドは、 [Iremotedebugapplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)の後に呼び出す必要があります。 [Iremotedebugapplication::D isconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)メソッドは、自動的に既定のオプションにリセットされます。 既定では、オプションは 0 (SDO_NONE) です。  
   
 > [!IMPORTANT]
 > [Iremotedebugapplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)は、PDM version 11.0 以上で実装されています。 activdbg100.h にあります。  
@@ -39,6 +39,6 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
  `value`  
  [SCRIPT_DEBUGGER_OPTIONS 列挙](../../winscript/reference/script-debugger-options-enumeration.md)値。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iremotedebugapplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 インターフェイス](../../winscript/reference/iremotedebugapplication110-interface.md)

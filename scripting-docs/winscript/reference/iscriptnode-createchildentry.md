@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573618"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode::CreateChildEntry
-@No__t_0 の子インスタンスを追加します。  
+`IScriptEntry`の子インスタンスを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -61,18 +61,18 @@ HRESULT CreateChildEntry(
   
  関数オブジェクトを表す `IScriptEntry` オブジェクトの場合、このメソッドは失敗します。  
   
- @No__t_0 オブジェクトの場合、このメソッドは失敗します。  
+ `IScriptScriptlet` オブジェクトの場合、このメソッドは失敗します。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 インターフェイスは、Web ページまたはその要素を表します。 @No__t_0 インターフェイス (`IScriptNode` から派生) は、スクリプトブロックまたは関数オブジェクトを表します。 @No__t_0 インターフェイス (`IScriptEntry` から派生) は、イベントハンドラーを表します。  
+## <a name="remarks"></a>コメント  
+ `IScriptNode` インターフェイスは、Web ページまたはその要素を表します。 `IScriptEntry` インターフェイス (`IScriptNode`から派生) は、スクリプトブロックまたは関数オブジェクトを表します。 `IScriptScriptlet` インターフェイス (`IScriptEntry`から派生) は、イベントハンドラーを表します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iscriptnode インターフェイス](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)

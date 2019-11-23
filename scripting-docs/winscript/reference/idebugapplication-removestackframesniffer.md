@@ -42,14 +42,14 @@ HRESULT RemoveStackFrameSniffer(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 メソッドは、このアプリケーションからスタックフレーム列挙子プロバイダーを削除します。  
+## <a name="remarks"></a>コメント  
+ `RemoveStackFrameSniffer` メソッドは、このアプリケーションからスタックフレーム列挙子プロバイダーを削除します。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugApplication:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
+## <a name="see-also"></a>参照  
+ [IDebugApplication:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugStackFrameSniffer インターフェイス](../../winscript/reference/idebugstackframesniffer-interface.md)

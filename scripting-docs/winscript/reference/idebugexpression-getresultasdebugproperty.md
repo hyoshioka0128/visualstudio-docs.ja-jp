@@ -46,16 +46,16 @@ HRESULT GetResultAsDebugProperty(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_PENDING`|操作は保留中です。|  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、`IDebugProperty` としての式の評価の結果と、操作の `HRESULT` を返します。  
+## <a name="remarks"></a>コメント  
+ このメソッドは、`IDebugProperty` としての式の評価の結果と、操作の `HRESULT`を返します。  
   
  このメソッドは `S_OK` を返し、`Abort` が操作を中止する場合は `E_ABORT` を返し `phrResult` を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugExpression インターフェイス](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

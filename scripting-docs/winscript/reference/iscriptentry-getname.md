@@ -37,19 +37,19 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstr`  
- 入出力@No__t_0 スクリプトブロックによって表されるオブジェクトの名前。 エントリが1つのオブジェクトを表していない場合は、NULL が返されます。  
+ 入出力`IScriptEntry` スクリプトブロックによって表されるオブジェクトの名前。 エントリが1つのオブジェクトを表していない場合は、NULL が返されます。  
   
  子エントリは、1つの関数オブジェクトを表します。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iscriptentry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

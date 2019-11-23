@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576595"
 ---
 # <a name="function-expected"></a>関数が必要です。
-@No__t_1 オブジェクトではなかったオブジェクトに対して**関数プロトタイプ**メソッドのいずれかを呼び出そうとしたか、または関数呼び出しコンテキストでオブジェクトを使用しました。 たとえば、次のコードでは、**例**が関数ではないため、このエラーが生成されます。  
+`Function` オブジェクトではなかったオブジェクトに対して**関数プロトタイプ**メソッドのいずれかを呼び出そうとしたか、または関数呼び出しコンテキストでオブジェクトを使用しました。 次のコードがこのエラーを生成するため、たとえば、**example**は関数ではありません。  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -31,10 +31,10 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_1 のオブジェクトに対してのみ**関数プロトタイプ**メソッドを呼び出します。  
+- `Function` のオブジェクトに対してのみ**関数プロトタイプ**メソッドを呼び出します。  
   
 - 関数呼び出し演算子 `()` を使用して関数だけを呼び出すようにしてください。  
   
-## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の   
  [prototype プロパティ (Object)](../../javascript/reference/prototype-property-object-javascript.md)

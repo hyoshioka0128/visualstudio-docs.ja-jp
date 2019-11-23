@@ -23,14 +23,14 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572335"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>value 引数の循環参照はサポートされません。
-無効な値を使用して `JSON.stringify` を呼び出そうとしました。 @No__t_0 引数 (配列またはオブジェクト) に循環参照が含まれています。  
+無効な値を使用して `JSON.stringify` を呼び出そうとしました。 `value` 引数 (配列またはオブジェクト) に循環参照が含まれています。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 - 引数から循環参照を削除します。  
   
 ## <a name="example"></a>例  
- この例のコードでは、`john` に `mary` への参照があり、`mary` に `john` への参照が含まれているため、ランタイムエラーが発生します。 循環参照を削除するには、プロパティ `brother` を `mary` オブジェクトから削除するか、または `john` オブジェクトの `sister` プロパティから設定解除します。  
+ この例のコードでは、`john` に `mary` への参照があり、`mary` に `john`への参照が含まれているため、ランタイムエラーが発生します。 循環参照を削除するには、プロパティ `brother` を `mary` オブジェクトから削除するか、または `john` オブジェクトの `sister` プロパティから設定解除します。  
   
 ```JavaScript  
 var john = new Object();  
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の   
  [JSON. Parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)

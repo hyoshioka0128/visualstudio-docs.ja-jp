@@ -44,10 +44,10 @@ HRESULT GetDeferredText(
  からテキストの開始位置を表すホスト定義のクッキー。  
   
  `pcharText`  
- [入力、出力]文字テキストバッファー。 このパラメーターが `NULL` 場合、このメソッドは文字を返しません。  
+ [入力、出力]文字テキストバッファー。 このパラメーターが `NULL`場合、このメソッドは文字を返しません。  
   
  `pstaTextAttr`  
- [入力、出力]文字属性バッファー。 このパラメーターが `NULL` 場合、このメソッドは属性を返しません。  
+ [入力、出力]文字属性バッファー。 このパラメーターが `NULL`場合、このメソッドは属性を返しません。  
   
  `pcNumChars`  
  [入力、出力]返される文字/属性の実際の数を示します。 このメソッドを呼び出す前に、このパラメーターを0に設定する必要があります。  
@@ -58,18 +58,18 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_NOTIMPL`|メソッドが実装されていません。|  
+|`E_NOTIMPL`|このメソッドは実装されていません。|  
   
-## <a name="remarks"></a>Remarks  
- ホストが `IDebugDocumentHelper::AddDeferredText` を呼び出さない場合、このメソッドは `E_NOTIMPL` を返す可能性があります。  
+## <a name="remarks"></a>コメント  
+ ホストが `IDebugDocumentHelper::AddDeferredText`を呼び出さない場合、このメソッドは `E_NOTIMPL`を返す可能性があります。  
   
 > [!NOTE]
 > このメソッドは、元のドキュメントからテキストを返します。 ホストは、ドキュメントに対する編集やその他の変更を追跡しません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentHost インターフェイス](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

@@ -42,13 +42,13 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、実行中のアプリケーションの一覧からアプリケーションを削除します。  
   
-## <a name="see-also"></a>関連項目  
- [Iprocessdebugmanager:: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
+## <a name="see-also"></a>参照  
+ [Iprocessdebugmanager:: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [IProcessDebugManager インターフェイス](../../winscript/reference/iprocessdebugmanager-interface.md)

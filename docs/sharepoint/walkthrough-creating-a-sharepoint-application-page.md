@@ -37,7 +37,7 @@ ms.locfileid: "72985027"
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 - サポート対象エディションの Windows と SharePoint
 
@@ -45,7 +45,7 @@ ms.locfileid: "72985027"
 
 最初に、**空の SharePoint プロジェクト**を作成します。 後で、このプロジェクトに**アプリケーションページ**アイテムを追加します。
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を起動します。
 
 2. **[新しいプロジェクト]** ダイアログボックスを開き、使用する言語の **[Office/SharePoint]** ノードを展開し、 **[sharepoint ソリューション]** ノードを選択します。
 
@@ -73,7 +73,7 @@ ms.locfileid: "72985027"
 
 アプリケーション ページ項目を使用すると、デザイナーで ASP.NET コントロールをアプリケーション ページに追加できます。 このデザイナーは、Visual Web Developer で使用するデザイナーと同じです。 ラベル、ラジオボタンリスト、およびテーブルをデザイナーの**ソース**ビューに追加し、標準の ASP.NET ページをデザインする場合と同様にプロパティを設定します。
 
-1. メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。
+1. メニュー バーで **[表示]** 、 > [ツールボックス]** の順にクリックします。
 
 2. **ツールボックス**の [標準] ノードで、次のいずれかの手順を実行します。
 
@@ -141,7 +141,7 @@ ASP.NET ページと同様に、アプリケーション ページのコント�
 
      アプリケーション ページが更新され、サーバー ファーム上のすべてのサイトで自分が作成したすべての項目が表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 SharePoint アプリケーションページの詳細については、「 [sharepoint のアプリケーションページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)する」を参照してください。
 
@@ -151,7 +151,7 @@ Visual Web Designer を使用して、SharePoint ページの内容をデザイ�
 
 - [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [方法: アプリケーションページを作成](../sharepoint/how-to-create-an-application-page.md)する
-[アプリケーションの _Layouts ページの種類](/previous-versions/office/aa979604(v=office.14))
+[アプリケーション _Layouts ページの種類](/previous-versions/office/aa979604(v=office.14))

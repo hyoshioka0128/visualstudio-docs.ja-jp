@@ -37,17 +37,17 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>パラメーター  
  `psz`  
- から@No__t_0 オブジェクトの新しい名前。  
+ から`IScriptEntry` オブジェクトの新しい名前。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iscriptentry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

@@ -41,23 +41,23 @@ HRESULT onDebuggerEvent(
  からオブジェクトのインターフェイス識別子。  
   
  `punk`  
- から@No__t_0 によって定義されたインターフェイスを実装するイベントオブジェクト。  
+ から`riid`によって定義されたインターフェイスを実装するイベントオブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_NOTIMPL`|メソッドは現在実装されていません。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 のセマンティクスは、完全に定義されたアプリケーション/デバッガーです。  
+## <a name="remarks"></a>コメント  
+ `IUnknown` のセマンティクスは、完全に定義されたアプリケーション/デバッガーです。  
   
  このメソッドは、デバッガーモデルのカスタム拡張を可能にします。現在は実装されていません。  
   
  このメソッドは `IDebugApplication::FireDebuggerEvent` が呼び出されたときに呼び出されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iapplicationdebugger インターフェイス](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

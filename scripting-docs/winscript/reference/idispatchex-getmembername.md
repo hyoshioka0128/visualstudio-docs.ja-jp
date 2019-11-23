@@ -38,7 +38,7 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバーを識別します。 @No__t_0 または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
+ メンバーを識別します。 `GetDispID` または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
   
  `pbstrName`  
  メンバーの名前を受け取る `BSTR` のアドレス。 この値は、呼び出し元のアプリケーションによって解放されます。  
@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

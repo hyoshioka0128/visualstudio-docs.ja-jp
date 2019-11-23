@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572751"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Throw ステートメントに指定する式は、ソース コードの同一行に記述してください
-@No__t_0 キーワードを使用しましたが、同じソース行で式を使用していませんでした。 @No__t_0 ステートメントは、2つの部分で構成されています。 `throw` キーワードと、その後にスローされる式です。 (例:  
+`throw` キーワードを使用しましたが、同じソース行で式を使用していませんでした。 `throw` ステートメントは、2つの部分で構成されています。 `throw` キーワードと、その後にスローされる式です。 例 :  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -34,9 +34,9 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_0 キーワードとスローする式が同じ行に表示されていることを確認します。  
+- `throw` キーワードとスローする式が同じ行に表示されていることを確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [エラーオブジェクト](../../javascript/reference/error-object-javascript.md)   
  [Throw ステートメント](../../javascript/reference/throw-statement-javascript.md)   
  [try… catch… finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

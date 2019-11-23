@@ -42,13 +42,13 @@ HRESULT SetDefaultTextAttr(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- 既定の属性がこのメソッドによって変更されない限り、スクリプトブロック外のテキストの既定の属性は SOURCETEXT_ATTR_NONSOURCE です。 ユーザーインターフェイスは、この情報を使用して、スクリプトブロック外のテキストを読み取り専用としてマークできます。  
+## <a name="remarks"></a>コメント  
+ このメソッドによって既定の属性が変更されない限り、スクリプトブロックの外部にあるテキストの既定の属性は SOURCETEXT_ATTR_NONSOURCE ます。 ユーザーインターフェイスは、この情報を使用して、スクリプトブロック外のテキストを読み取り専用としてマークできます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

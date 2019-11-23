@@ -28,6 +28,6 @@ ms.locfileid: "72577564"
   
 - 正規表現の末尾を示すために、終了スラッシュを挿入します。  
   
-## <a name="see-also"></a>関連項目  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の   
  [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

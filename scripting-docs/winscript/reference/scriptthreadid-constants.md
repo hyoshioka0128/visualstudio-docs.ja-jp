@@ -35,17 +35,17 @@ typedef DWORD SCRIPTTHREADID;
   
 ## <a name="constants"></a>定数  
   
-|定数|[値]|説明|  
+|定数|値|意味|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|現在実行中のスレッド。|  
 |SCRIPTTHREADID_BASE|0xFFFFFFFE|基本スレッド。つまり、スクリプトエンジンがインスタンス化されたスレッド。|  
 |SCRIPTTHREADID_ALL|~|すべてのスレッド。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 型は `IActiveScript::GetCurrentScriptThreadID`、`IActiveScript::GetScriptThreadID`、`IActiveScript::GetScriptThreadState`、および `IActiveScript::InterruptScriptThread` によって使用されますが、定数は `IActiveScript::GetScriptThreadState` と `IActiveScript::InterruptScriptThread` でのみ使用できます。  
+## <a name="remarks"></a>コメント  
+ `SCRIPTTHREADID` 型は `IActiveScript::GetCurrentScriptThreadID`、`IActiveScript::GetScriptThreadID`、`IActiveScript::GetScriptThreadState`、および `IActiveScript::InterruptScriptThread`によって使用されますが、定数は `IActiveScript::GetScriptThreadState` と `IActiveScript::InterruptScriptThread`でのみ使用できます。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

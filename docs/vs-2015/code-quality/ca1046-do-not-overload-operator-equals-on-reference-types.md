@@ -29,7 +29,7 @@ ms.locfileid: "72661091"
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|カテゴリ|Microsoft Design|
+|カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -56,10 +56,12 @@ ms.locfileid: "72661091"
 
  この例を実行すると、次の出力が生成されます。
 
- **a = new (2, 2) と b = new (2, 2) は等しいでしょうか。** @No__t_1**c と a は同じではありませんか?はい**
-**b と a は = = ですか?@No__t_5** **c と a は = = です。はい**
+ **a = new (2, 2) と b = new (2, 2) は等しいでしょうか。** 
+**c と a は同じではありませんか?はい**
+**b と a は = = ですか?
+** **c と a は = = です。はい**
 ## <a name="related-rules"></a>関連規則
  [CA1013: オーバーロードする加算および減算で、演算子 equals をオーバーロードします](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  <xref:System.Object.Equals%2A?displayProperty=fullName>[等値演算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

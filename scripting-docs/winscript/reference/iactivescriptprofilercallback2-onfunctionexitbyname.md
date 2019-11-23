@@ -42,9 +42,9 @@ HRESULT OnFunctionExitByName(
 ## <a name="return-value"></a>戻り値  
  このメソッドの戻り値は、スクリプトエンジンによって無視されます。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  DOM 呼び出しの場合、スクリプトエンジンは[IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)を呼び出すのではなく、このメソッドを呼び出します。 これは、DOM 内の一意のメソッドとプロパティの数が多いためです。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2 インターフェイス](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

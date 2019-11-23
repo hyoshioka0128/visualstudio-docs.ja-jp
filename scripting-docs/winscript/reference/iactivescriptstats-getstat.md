@@ -41,7 +41,7 @@ HRESULT GetStat(
  `stid`  
  から返す統計情報を指定します。 次の値である必要があります。  
   
-|定数|[値]|説明|  
+|定数|値|説明|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|スクリプトが開始された後、または統計がリセットされた後に実行されたステートメントの数を返します。|  
   
@@ -54,13 +54,13 @@ HRESULT GetStat(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 使用できる値は次のとおりです。ただし、次の表の値には制限されません。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、標準スクリプト統計の1つを返します。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [IActiveScriptStats インターフェイス](../../winscript/reference/iactivescriptstats-interface.md)

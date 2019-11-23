@@ -39,15 +39,15 @@ HRESULT Abort();
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |S_OK|メソッドが成功しました。|  
 |E_NOTIMPL|操作を取り消すことはできません。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、通常、応答しない操作をキャンセルするために、デバッガースレッド内から呼び出されます。 このメソッドにより、`IDebugSyncOperation` オブジェクトの `InProgressAbort` メソッドが呼び出されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)    
+ [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

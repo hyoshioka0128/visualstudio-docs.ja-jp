@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575312"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
-@No__t_0 オブジェクトによって公開されるプロパティおよびメソッドへのアクセスを提供します。  
+`IDispatchEx` オブジェクトによって公開されるプロパティおよびメソッドへのアクセスを提供します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,25 +43,25 @@ HRESULT InvokeEx(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバーを識別します。 @No__t_0 または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
+ メンバーを識別します。 `GetDispID` または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
   
  `lcid`  
  引数を解釈する対象のロケール コンテキスト。 オブジェクトがロケール固有の引数を解釈できるようにするために、`lcid` が `InvokeEx` に渡されます。  
   
  `wFlags`  
- @No__t_0 の有効な値は次のとおりです。  
+ `wFlags` の有効な値は次のとおりです。  
   
  DISPATCH_PROPERTYGET &#124; DISPATCH_METHOD &#124; DISPATCH_PROPERTYPUT &#124; DISPATCH_PROPERTYPUTREF &#124; DISPATCH_CONSTRUCT  
   
- @No__t_0 呼び出しのコンテキストを記述するフラグ:  
+ `InvokeEx` 呼び出しのコンテキストを記述するフラグ:  
   
-|[値]|説明|  
+|値|意味|  
 |-----------|-------------|  
-|DISPATCH_METHOD|メンバーは、メソッドとして呼び出されます。 プロパティの名前が同じである場合は、このと DISPATCH_PROPERTYGET フラグの両方を設定できます (`IDispatch` によって定義されます)。|  
-|DISPATCH_PROPERTYGET|メンバーは、プロパティまたはデータメンバー (`IDispatch` によって定義) として取得されます。|  
-|DISPATCH_PROPERTYPUT|メンバーは、プロパティまたはデータメンバー (`IDispatch` によって定義) として変更されます。|  
-|DISPATCH_PROPERTYPUTREF|メンバーは、値の割り当てではなく、参照の割り当てによって変更されます。 このフラグは、プロパティが (`IDispatch` によって定義された) オブジェクトへの参照を受け入れる場合にのみ有効です。|  
-|DISPATCH_CONSTRUCT|メンバーはコンストラクターとして使用されています。 (これは `IDispatchEx` によって定義される新しい値です)。 @No__t_0 の有効な値は次のとおりです。<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
+|DISPATCH_METHOD|メンバーは、メソッドとして呼び出されます。 プロパティの名前が同じである場合は、このフラグと DISPATCH_PROPERTYGET フラグの両方を設定できます (`IDispatch`によって定義されます)。|  
+|DISPATCH_PROPERTYGET|メンバーは、プロパティまたはデータメンバー (`IDispatch`によって定義) として取得されます。|  
+|DISPATCH_PROPERTYPUT|メンバーは、プロパティまたはデータメンバー (`IDispatch`によって定義) として変更されます。|  
+|DISPATCH_PROPERTYPUTREF|メンバーは、値の割り当てではなく、参照の割り当てによって変更されます。 このフラグは、プロパティが (`IDispatch`によって定義された) オブジェクトへの参照を受け入れる場合にのみ有効です。|  
+|DISPATCH_CONSTRUCT|メンバーはコンストラクターとして使用されています。 (これは `IDispatchEx`によって定義される新しい値です)。 `wFlags` の有効な値は次のとおりです。<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
  引数の配列、名前付き引数の DISPID の配列、配列内の要素数のカウントを格納している構造体へのポインター。 DISPPARAMS 構造の詳細については、`IDispatch` のドキュメントを参照してください。  
@@ -70,7 +70,7 @@ HRESULT InvokeEx(
  結果が格納される場所へのポインター。呼び出し元が結果を期待しない場合は Null。 DISPATCH_PROPERTYPUT または DISPATCH_PROPERTYPUTREF が指定されている場合、この引数は無視されます。  
   
  `pei`  
- 例外情報を格納する構造体へのポインター。 @No__t_0 が返される場合は、この構造体を入力する必要があります。 Null を指定できます。 @No__t_1 構造の詳細については、`IDispatch` のドキュメントを参照してください。  
+ 例外情報を格納する構造体へのポインター。 `DISP_E_EXCEPTION` が返される場合は、この構造体を入力する必要があります。 Null を指定できます。 `EXCEPINFO` 構造の詳細については、`IDispatch` のドキュメントを参照してください。  
   
  `pspCaller`  
  呼び出し元から提供されるサービスプロバイダーオブジェクトへのポインター。これにより、オブジェクトが呼び出し元からサービスを取得できるようになります。 Null を指定できます。  
@@ -80,12 +80,12 @@ HRESULT InvokeEx(
 |||  
 |-|-|  
 |DISPATCH_CONSTRUCT|項目がコンストラクターとして使用されていることを示します。|  
-|`pspCaller`|@No__t_0 を使用すると、呼び出し元によって提供されるサービスにオブジェクトがアクセスできるようになります。 特定のサービスは、呼び出し元自体によって処理されるか、呼び出しチェーンの上位にある呼び出し元に委任されることがあります。 たとえば、ブラウザー内のスクリプトエンジンが外部オブジェクトへの `InvokeEx` 呼び出しを行う場合、オブジェクトは `pspCaller` チェーンに従ってスクリプトエンジンまたはブラウザーからサービスを取得できます。 (呼び出しチェーンは、コンテナーチェーンまたはサイトチェーンとも呼ばれる、作成チェーンとは異なることに注意してください。 作成チェーンは、`IObjectWithSite` などの他のメカニズムを通じて使用できる場合があります)。|  
-|`this` ポインター|@No__t_0 で DISPATCH_METHOD が設定されている場合、"this" 値に "名前付きパラメーター" がある可能性があります。 DISPID は DISPID_THIS になり、最初の名前付きパラメーターである必要があります。|  
+|`pspCaller`|`pspCaller` を使用すると、呼び出し元によって提供されるサービスにオブジェクトがアクセスできるようになります。 特定のサービスは、呼び出し元自体によって処理されるか、呼び出しチェーンの上位にある呼び出し元に委任されることがあります。 たとえば、ブラウザー内のスクリプトエンジンが外部オブジェクトへの `InvokeEx` 呼び出しを行う場合、オブジェクトは `pspCaller` チェーンに従ってスクリプトエンジンまたはブラウザーからサービスを取得できます。 (呼び出しチェーンは、コンテナーチェーンまたはサイトチェーンとも呼ばれる、作成チェーンとは異なることに注意してください。 作成チェーンは、`IObjectWithSite`などの他のメカニズムを通じて使用できる場合があります)。|  
+|`this` ポインター|`wFlags`で DISPATCH_METHOD が設定されている場合は、"this" 値に "名前付きパラメーター" がある可能性があります。 DISPID は DISPID_THIS され、最初の名前付きパラメーターである必要があります。|  
   
- @No__t_1 の未使用の `riid` パラメーターが削除されました。  
+ `IDispatch::Invoke` の未使用の `riid` パラメーターが削除されました。  
   
- @No__t_1 の `puArgArr` パラメーターが削除されました。  
+ `IDispatch::Invoke` の `puArgArr` パラメーターが削除されました。  
   
  次の例については、`IDispatch::Invoke` のドキュメントを参照してください。  
   
@@ -108,11 +108,11 @@ HRESULT InvokeEx(
 |-|-|  
 |`S_OK`|成功。|  
 |DISP_E_BADPARAMCOUNT|DISPPARAMS に指定された要素の数が、メソッドまたはプロパティで許容される引数の数と異なります。|  
-|DISP_E_BADVARTYPE|@No__t_0 の引数の1つが有効なバリアント型ではありません。|  
+|DISP_E_BADVARTYPE|`rgvarg` の引数の1つが有効なバリアント型ではありません。|  
 |DISP_E_EXCEPTION|アプリケーションで例外を発生させる必要がある。 この場合、`pei` 渡された構造体を入力する必要があります。|  
 |DISP_E_MEMBERNOTFOUND|要求されたメンバーが存在しないか、またはの呼び出しが読み取り専用プロパティの値を設定しようとしました `InvokeEx`。|  
 |DISP_E_NONAMEDARGS|この `IDispatch` の実装では、名前付き引数はサポートされていません。|  
-|DISP_E_OVERFLOW|@No__t_0 の引数の1つは、指定された型に強制変換できませんでした。|  
+|DISP_E_OVERFLOW|`rgvarg` の引数の1つは、指定された型に強制変換できませんでした。|  
 |DISP_E_PARAMNOTFOUND|パラメーター Dispid の1つがメソッドのパラメーターに対応していません。|  
 |DISP_E_TYPEMISMATCH|1つ以上の引数を強制変換できませんでした。|  
 |DISP_E_UNKNOWNLCID|呼び出されるメンバーは、LCID に従って文字列の引数を解釈し、LCID は認識されません。 引数を解釈するために LCID が不要な場合、このエラーは返されません。|  
@@ -136,7 +136,7 @@ VARIANT var;
    }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

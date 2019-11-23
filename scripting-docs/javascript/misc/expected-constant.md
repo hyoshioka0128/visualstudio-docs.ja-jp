@@ -30,6 +30,6 @@ ms.locfileid: "72573406"
   
 - 変数を条件付きコンパイル変数に置き換えます。  
   
-## <a name="see-also"></a>関連項目  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

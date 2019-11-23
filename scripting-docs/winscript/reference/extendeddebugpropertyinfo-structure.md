@@ -66,7 +66,7 @@ typedef struct ExtendedDebugPropertyInfo{
  デバッグプロパティの属性のフラグを指定する列挙体。  
   
  `pDebugProp`  
- この `ExtendedDebugPropertyInfo` に対応する `IDebugProperty` オブジェクト。  
+ この `ExtendedDebugPropertyInfo`に対応する `IDebugProperty` オブジェクト。  
   
  `nDISPID`  
  ディスパッチ id。  
@@ -81,11 +81,11 @@ typedef struct ExtendedDebugPropertyInfo{
  プロパティ値の実際のデータバイト。  
   
  `pDebugExtProp`  
- この `ExtendedDebugPropertyInfo` に対応する `IDebugExtendedProperty` オブジェクト。  
+ この `ExtendedDebugPropertyInfo`に対応する `IDebugExtendedProperty` オブジェクト。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
  [IDebugExtendedProperty インターフェイス](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

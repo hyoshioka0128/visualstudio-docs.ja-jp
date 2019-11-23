@@ -1,5 +1,5 @@
 ---
-title: "' @ ' | が必要です。Microsoft Docs"
+title: "@' が必要です。 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,18 +21,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576512"
 ---
-# <a name="expected-"></a>' @No__t_0 ' が必要です
-@No__t_0 ステートメントを使用して条件付きコンパイルステートメントで使用する変数を作成しようとしましたが、変数名の前にアットマーク " **@** " を配置しませんでした。  
+# <a name="expected-"></a>'\@' が必要です
+`@set` ステートメントを使用して条件付きコンパイルステートメントで使用する変数を作成しようとしましたが、変数名の前にアットマーク " **@** " を配置しませんでした。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 変数名の直前に " **@** " というアットマークを追加します。 (例:  
+- 変数名の直前に " **@** " というアットマークを追加します。 例 :  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [@set ステートメント](../../javascript/reference/at-set-statement-javascript.md)   
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の    
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

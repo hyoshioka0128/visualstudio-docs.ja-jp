@@ -28,8 +28,8 @@ ms.locfileid: "72573768"
   
 - プログラムで使用するすべてのラベルが、それぞれのスコープ内で一意であることを確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ラベル付きステートメント](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の    
+ [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の   
  [break ステートメント](../../javascript/reference/break-statement-javascript.md)   
  [continue ステートメント](../../javascript/reference/continue-statement-javascript.md)

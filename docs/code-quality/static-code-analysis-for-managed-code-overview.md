@@ -26,15 +26,15 @@ Visual Studio では、マネージコードのコード分析を2とおりの�
 分析ツールは、分析中に実行するチェック項目を警告メッセージとして表示します。 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
 
 > [!NOTE]
-> レガシ分析 (静的コード分析) は、Visual Studio の .NET Core および .NET Standard プロジェクトではサポートされていません。 Msbuild の一部として .NET Core または .NET Standard プロジェクトに対してコード分析を実行すると、@no__t 0error のようなエラーが表示されます。CA0055 :.Dll > @no__t のプラットフォームを特定できませんでした **。 .NET Core または .NET Standard プロジェクトのコードを分析するには、代わりに[コードアナライザー](../code-quality/roslyn-analyzers-overview.md)を使用します。
+> レガシ分析 (静的コード分析) は、Visual Studio の .NET Core および .NET Standard プロジェクトではサポートされていません。 Msbuild の一部として .NET Core または .NET Standard プロジェクトに対してコード分析を実行すると、次のようなエラーが表示されます。 **CA0055: \<.dll > のプラットフォームを識別できませんでし**た。 .NET Core または .NET Standard プロジェクトのコードを分析するには、代わりに[コードアナライザー](../code-quality/roslyn-analyzers-overview.md)を使用します。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (統合開発環境) の統合
 
 コード分析は、プロジェクトに対して手動または自動で実行できます。
 
-プロジェクトをビルドするたびにコード分析を実行するには、プロジェクトの **[コード分析]** プロパティページでオプションを選択します。 詳細については、「[方法 :自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)」を参照してください。
+プロジェクトをビルドするたびにコード分析を実行するには、プロジェクトの **[コード分析]** プロパティページでオプションを選択します。 詳細については、「[方法: 自動コード分析を有効または無効](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)にする」を参照してください。
 
-プロジェクトでコード分析を手動で実行するには、メニューバーから **[分析]** 、@no__t の **[実行]** の順に選択し  > **プロジェクト > でコード分析 @no__t を実行**します。
+プロジェクトでコード分析を手動で実行するには、メニューバーから **分析** を選択し、**コード分析の実行** >  **\<プロジェクト > でコード分析を実行** > ます。
 
 ## <a name="rule-sets"></a>規則セット
 
@@ -59,7 +59,7 @@ Public class MyClass
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[**分析**@no__t] を選択してすべての警告を非表示にすることができます。-1**コード分析を実行し、アクティブな問題を非**表示にします。
+> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ > **分析**] を選択**してコード分析を実行し、アクティブな問題を抑制**することによって、すべての警告を非表示にすることができます。
 >
 > ![Visual Studio でコード分析を実行し、問題を抑制する](media/suppress-active-issues.png)
 
@@ -68,7 +68,7 @@ Public class MyClass
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[@no__t の**分析**] を選択し、**アクティブな問題を抑制**することによって、すべての警告を非表示にすることができます。
+> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、 **[分析]** を選択して、**アクティブな問題を > ビルドし、非**表示にすることにより、すべてを抑制できます。
 
 ::: moniker-end
 
@@ -86,8 +86,8 @@ Public class MyClass
 
 ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [.NET Compiler Platform ベースのアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [2 つのオブジェクトが等しいかどうかをテストする方法自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [方法: 自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

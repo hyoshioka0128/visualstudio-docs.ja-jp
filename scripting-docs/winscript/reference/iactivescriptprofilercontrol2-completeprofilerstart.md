@@ -35,7 +35,7 @@ HRESULT CompleteProfilerStart();
 ## <a name="return-value"></a>戻り値  
  HRESULT を返します。 次の値を指定できます。  
   
-|戻り値|説明|  
+|戻り値|意味|  
 |------------------|-------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_FAIL`|プロファイルを開始できません。|  
@@ -43,9 +43,9 @@ HRESULT CompleteProfilerStart();
 |`ACTIVPROF_E_PROFILER_ABSENT`|プロファイルが有効になっていません。 コールバックが設定されていません。|  
 |`E_OUTOFMEMORY`|メモリ不足の状態により、呼び出し履歴を取得できません。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 を呼び出すと、コールスタックに既に存在する関数のイベントが確実に送信されます。 このメソッドは、現在のタブにある任意のスクリプトエンジンでプロファイリングを開始した後に呼び出す必要があります。メソッドは、任意のスクリプトエンジンに対して呼び出すことができます。  
+## <a name="remarks"></a>コメント  
+ `IActiveScriptProfilerControl2::CompleteProfilerStart` を呼び出すと、コールスタックに既に存在する関数のイベントが確実に送信されます。 このメソッドは、現在のタブにある任意のスクリプトエンジンでプロファイリングを開始した後に呼び出す必要があります。メソッドは、任意のスクリプトエンジンに対して呼び出すことができます。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [IActiveScriptProfilerControl2 インターフェイス](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

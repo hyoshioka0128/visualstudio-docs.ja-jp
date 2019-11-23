@@ -22,14 +22,14 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573429"
 ---
 # <a name="expected-catch"></a>catch が必要です。
-例外処理**try**ブロックを使用しましたが、関連付けられた**catch**ステートメントが書き込まれませんでした。 例外処理機構では、例外が発生した場合に実行してはならないコードと共に、失敗する可能性のあるコードが**try**ブロック内にラップされている必要があります。 例外は、 **throw**ステートメントを使用して**try**ブロック内からスローされ、 **try**ブロックの外側で1つ以上の**catch**ステートメントを使用してキャッチされます。  
+例外処理を使用した**try**ブロックしますが、関連付けられているによって記述されていない**catch**ステートメント。 例外処理メカニズムでは、例外が発生する場合に実行する必要がありますコードと共に、エラーがコード内でラップしている必要があります、**try**ブロックします。 内から例外がスローされた、**try**ブロックを使用して、**throw**ステートメントでは、外部キャッチし、**try** つまたは複数のブロックを**catch**ステートメント。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 関連付けられた**catch**ブロックを追加します。  
+- 関連付けられている追加**catch**ブロックします。  
   
-- **Catch**ブロックの代わりに**finally**ブロックを使用してください。  
+- 使用してください、**finally**ブロックの代わりに、**catch**ブロックします。  
   
-## <a name="see-also"></a>関連項目  
- [お試しください...キャッチ...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [お試しください...キャッチ...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)の   
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)

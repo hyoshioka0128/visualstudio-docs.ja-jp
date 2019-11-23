@@ -42,15 +42,15 @@ ms.locfileid: "72661435"
 - <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
- @No__t_0 オブジェクトまたは <xref:System.IFormatProvider> オブジェクトが指定されていない場合、オーバーロードされたメンバーによって提供される既定値は、すべてのロケールで必要な結果を得られない可能性があります。 また、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] メンバーは、コードに対して正しくない可能性がある仮定に基づいて、既定のカルチャと書式設定を選択します。 実際のシナリオに合わせてコードが期待どおりに動作することを確認するには、次のガイドラインに従って、カルチャ固有の情報を指定する必要があります。
+ <xref:System.Globalization.CultureInfo?displayProperty=fullName> オブジェクトまたは <xref:System.IFormatProvider> オブジェクトが指定されていない場合、オーバーロードされたメンバーによって提供される既定値は、すべてのロケールで必要な結果を得られない可能性があります。 また、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] メンバーは、コードに対して正しくない可能性がある仮定に基づいて、既定のカルチャと書式設定を選択します。 実際のシナリオに合わせてコードが期待どおりに動作することを確認するには、次のガイドラインに従って、カルチャ固有の情報を指定する必要があります。
 
-- 値がユーザーに表示される場合は、現在のカルチャを使用します。 以下を参照してください。<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>
+- 値がユーザーに表示される場合は、現在のカルチャを使用します。 「<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>」を参照してください。
 
-- 値がソフトウェアによって保存およびアクセスされる (ファイルまたはデータベースに保存される) 場合は、インバリアントカルチャを使用します。 以下を参照してください。<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
+- 値がソフトウェアによって保存およびアクセスされる (ファイルまたはデータベースに保存される) 場合は、インバリアントカルチャを使用します。 「<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>」を参照してください。
 
 - 値の変換先がわからない場合は、データコンシューマーまたはプロバイダーによってカルチャが指定されていることを確認してください。
 
-  @No__t_0 は、<xref:System.Resources.ResourceManager?displayProperty=fullName> クラスのインスタンスを使用してローカライズされたリソースを取得するためにのみ使用されることに注意してください。
+  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> は、<xref:System.Resources.ResourceManager?displayProperty=fullName> クラスのインスタンスを使用してローカライズされたリソースを取得するためにのみ使用されることに注意してください。
 
   オーバーロードされたメンバーの既定の動作がニーズに適している場合でも、コードが自己文書化され、より簡単に管理できるように、カルチャ固有のオーバーロードを明示的に呼び出すことをお勧めします。
 
@@ -61,7 +61,7 @@ ms.locfileid: "72661435"
  既定のカルチャ/書式プロバイダーが適切な選択であり、コードの保守容易性が重要な開発の優先順位でない場合は、この規則からの警告を抑制することが安全です。
 
 ## <a name="example"></a>例
- 次の例では、`BadMethod` によってこの規則の2つの違反が発生します。 `GoodMethod` は、インバリアントカルチャを <xref:System.String.Compare%2A> に渡して最初の違反を修正し、`string3` がユーザーに表示されるため、現在のカルチャを <xref:System.String.ToLower%2A> に渡すことによって2番目の違反を修正します。
+ 次の例では、`BadMethod` によってこの規則の2つの違反が発生します。 `GoodMethod` は、インバリアントカルチャを <xref:System.String.Compare%2A>に渡して最初の違反を修正し、`string3` がユーザーに表示されるため、現在のカルチャを <xref:System.String.ToLower%2A> に渡すことによって2番目の違反を修正します。
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -72,10 +72,10 @@ ms.locfileid: "72661435"
 
  この例を実行すると、次の出力が生成されます。
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>関連規則
  [CA1304: CultureInfo を指定します](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [NIB: CultureInfo クラスの使用](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

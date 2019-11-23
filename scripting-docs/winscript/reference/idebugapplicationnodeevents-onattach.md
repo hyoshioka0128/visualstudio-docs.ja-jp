@@ -42,16 +42,16 @@ HRESULT onAttach(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、デバッグアプリケーションノードオブジェクトが親ノードにアタッチされたことを示すイベントを処理します。  
   
- @No__t_0 インターフェイスの実装者は、このイベントを発生させます。  
+ `IDebugApplicationNode` インターフェイスの実装者は、このイベントを発生させます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplicationNodeEvents インターフェイス](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents:: onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)    
+ [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
  [IDebugApplicationNode インターフェイス](../../winscript/reference/idebugapplicationnode-interface.md)
