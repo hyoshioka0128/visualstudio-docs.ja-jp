@@ -1,5 +1,5 @@
 ---
-title: Support for Project and Configuration Properties | Microsoft Docs
+title: プロジェクトおよび構成プロパティのサポート |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,18 +21,18 @@ ms.locfileid: "74301068"
 # <a name="support-for-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティのサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The **Properties** window in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE) can display project and configuration properties. You can provide a property page for your own project type so that the user can set properties for your application.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 統合開発環境 (IDE) の **[プロパティ]** ウィンドウでは、プロジェクトと構成のプロパティを表示できます。 ユーザーがアプリケーションのプロパティを設定できるように、独自のプロジェクトの種類のプロパティページを提供できます。  
   
- By selecting a project node in **Solution Explorer** and then clicking **Properties** on the **Project** menu, you can open a dialog box that includes project and configuration properties. In [!INCLUDE[csprcs](../../includes/csprcs-md.md)] and [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], and project types derived from these languages, this dialog box appears as a tabbed page in the [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). For more information, see [Not in Build: Walkthrough: Exposing Project and Configuration Properties (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ **ソリューションエクスプローラー**でプロジェクトノードを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックすると、プロジェクトと構成のプロパティを含むダイアログボックスを開くことができます。 これらの言語から派生した [!INCLUDE[csprcs](../../includes/csprcs-md.md)] および [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]、およびプロジェクトの種類では、このダイアログボックスは、 [[全般] ([オプション] ダイアログボックス-[環境](../../ide/reference/general-environment-options-dialog-box.md)]) のタブ付きページとして表示されます。 詳細については、「[ビルド内にありません: チュートリアル: プロジェクトC#および構成プロパティを公開する」 ()](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)を参照してください。  
   
- The Managed Package Framework for Projects (MPFProj) provides helper classes for creating and managing new project system. You can find the source code and compilation instructions at [MPF for Projects - Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
+ プロジェクト用の Managed Package Framework (MPFProj) には、新しいプロジェクトシステムを作成および管理するためのヘルパークラスが用意されています。 ソースコードとコンパイルの手順については、「 [MPF For Projects-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12)」を参照してください。  
   
-## <a name="persistence-of-project-and-configuration-properties"></a>Persistence of Project and Configuration Properties  
- Project and configuration properties are persisted in a project file that has an file name extension associated with the project type, for example, .csproj, .vbproj, and .myproj. Language projects typically use a template file to generate the project file. However, there are actually several ways to associate project types and templates. For more information, see [NIB: Visual Studio Templates](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) and [Template Directory Description (.Vsdir) Files](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+## <a name="persistence-of-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティの永続化  
+ プロジェクトと構成のプロパティは、プロジェクトの種類に関連付けられたファイル名拡張子を持つプロジェクトファイルに保存されます (.csproj、.vbproj、myproj など)。 言語プロジェクトでは、通常、プロジェクトファイルを生成するためにテンプレートファイルを使用します。 ただし、プロジェクトの種類とテンプレートを関連付けるには、実際にいくつかの方法があります。 詳細については、「 [NIB: Visual Studio のテンプレート](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)と[テンプレートディレクトリの説明 ()」を参照してください。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- Project and configuration properties are created by adding items to the template file. These properties are then available to any project created by using the project type that uses this template. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projects and the MPFProj both use the [Not in Build: MSBuild Overview](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) schema for template files. These files have a PropertyGroup section for each configuration. Properties of projects are typically persisted in the first PropertyGroup section, which has a Configuration argument set to a null string.  
+ プロジェクトと構成のプロパティは、テンプレートファイルに項目を追加することによって作成されます。 これらのプロパティは、このテンプレートを使用するプロジェクトの種類を使用して作成されたプロジェクトで使用できます。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] プロジェクトと MPFProj は両方とも、テンプレートファイルの "[ビルド内にありません: MSBuild の概要](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde)" スキーマを使用します。 これらのファイルには、構成ごとに PropertyGroup セクションがあります。 通常、プロジェクトのプロパティは、構成引数が null 文字列に設定されている最初の PropertyGroup セクションに保存されます。  
   
- The following code shows the start of a basic MSBuild project file.  
+ 次のコードは、基本的な MSBuild プロジェクトファイルの開始を示しています。  
   
 ```  
 <Project MSBuildVersion="2.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -48,54 +48,54 @@ The **Properties** window in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]
     <Optimize>true</Optimize>  
 ```  
   
- In this project file, `<Name>` and `<SchemaVersion>` are project properties, and `<Optimize>` is a configuration property.  
+ このプロジェクトファイルの `<Name>` と `<SchemaVersion>` はプロジェクトのプロパティであり、`<Optimize>` は構成プロパティです。  
   
- It is the responsibility of the project to persist the project and configuration properties of the project file.  
+ プロジェクトファイルのプロジェクトおよび構成プロパティを永続化するのはプロジェクトの役割です。  
   
 > [!NOTE]
-> A project can optimize persistence by persisting only property values that differ from their default values.  
+> プロジェクトで永続化を最適化するには、既定値とは異なるプロパティ値のみを保持します。  
   
 ## <a name="support-for-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティのサポート  
- The `Microsoft.VisualStudio.Package.SettingsPage` class implements project and configuration property pages. The default implementation of `SettingsPage` offers public properties to a user in a generic property grid. The `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` method selects classes derived from `SettingsPage` for project property grids. The `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` method selects classes derived from `SettingsPage` for configuration property grids. Your project type should override these methods to select the appropriate property pages.  
+ `Microsoft.VisualStudio.Package.SettingsPage` クラスは、プロジェクトと構成のプロパティページを実装します。 `SettingsPage` の既定の実装では、汎用プロパティグリッド内のユーザーにパブリックプロパティを提供します。 `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` メソッドは、プロジェクトのプロパティグリッドの `SettingsPage` から派生したクラスを選択します。 `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` メソッドは、構成プロパティグリッドの `SettingsPage` から派生したクラスを選択します。 適切なプロパティページを選択するには、プロジェクトの種類でこれらのメソッドをオーバーライドする必要があります。  
   
- The `SettingsPage` class and the `Microsoft.VisualStudio.Package.ProjectNode` class offer these methods to persist project and configuration properties:  
+ `SettingsPage` クラスと `Microsoft.VisualStudio.Package.ProjectNode` クラスは、次のメソッドを提供してプロジェクトと構成のプロパティを保持します。  
   
-- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` and `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` persist project properties.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` および `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` プロジェクトのプロパティを保持します。  
   
-- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` and `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persist configuration properties.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` および `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` 構成プロパティを保持します。  
   
   > [!NOTE]
-  > The implementations of the `Microsoft.VisualStudio.Package.SettingsPage` and `Microsoft.VisualStudio.Package.ProjectNode` classes use the `Microsoft.Build.BuildEngine` (MSBuild) methods to get and set project and configuration properties from the project file.  
+  > `Microsoft.VisualStudio.Package.SettingsPage` クラスと `Microsoft.VisualStudio.Package.ProjectNode` クラスの実装では、`Microsoft.Build.BuildEngine` (MSBuild) メソッドを使用して、プロジェクトファイルからプロジェクトと構成のプロパティを取得および設定します。  
   
-  The class you derive from `SettingsPage` must implement `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` and `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` to persist project or configuration properties of the project file.  
+  `SettingsPage` から派生するクラスは `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` を実装し、プロジェクトファイルのプロジェクトまたは構成プロパティを永続化するために `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` する必要があります。  
   
-## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute and Registry Path  
- Classes derived from `SettingsPage` are designed to be shared across VSPackages. To make it possible for a VSPackage to create a class derived from `SettingsPage`, add a `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` to a class derived from `Microsoft.VisualStudio.Shell.Package`.  
+## <a name="provideobjectattribute-and-registry-path"></a>属性とレジストリパス  
+ `SettingsPage` から派生したクラスは、Vspackage 間で共有されるように設計されています。 VSPackage が `SettingsPage`から派生したクラスを作成できるようにするには、`Microsoft.VisualStudio.Shell.Package`から派生したクラスに `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` を追加します。  
   
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/vssdksupportprojectconfigurationpropertiespackage.cs#1)]
  [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/vssdksupportprojectconfigurationpropertiespackage.vb#1)]  
   
- The VSPackage to which the attribute is attached is unimportant. When a VSPackage is registered with [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], the class id (CLSID) of any object that can be created is registered so that a call to <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> can create it.  
+ 属性がアタッチされている VSPackage は、重要ではありません。 VSPackage が [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]に登録されると、作成可能な任意のオブジェクトのクラス id (CLSID) が登録され、<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> の呼び出しによって作成されるようになります。  
   
- The registry path of an object that can be created is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, the word, CLSID, and the guid of the object type. If `MyProjectPropertyPage` class has a guid of {3c693da2-5bca-49b3-bd95-ffe0a39dd723} and the UserRegistryRoot is HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, then the registry path would be HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\{3c693da2-5bca-49b3-bd95-ffe0a39dd723}.  
+ 作成できるオブジェクトのレジストリパスは、<xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>、単語、CLSID、およびオブジェクトの種類の guid を組み合わせることによって決定されます。 `MyProjectPropertyPage` クラスの guid が {3c693da2-5bca-49b3-bd95-ffe0a39dd723} で、UserRegistryRoot が \Software\Microsoft\VisualStudio\8.0Exp HKEY_CURRENT_USER の場合、レジストリパスは \Software\Microsoft\VisualStudio\8.0Exp\CLSID\\{3c693da2-5bca-49b3-bd95-ffe0a39dd723} HKEY_CURRENT_USER になります。  
   
-## <a name="project-and-configuration-property-attributes-and-layout"></a>Project and Configuration Property Attributes and Layout  
- The <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, and <xref:System.ComponentModel.DescriptionAttribute> attributes determine the layout, labeling, and description of project and configuration properties in a generic property page. These attributes determine the category, display name, and description of the option, respectively.  
+## <a name="project-and-configuration-property-attributes-and-layout"></a>プロジェクトおよび構成プロパティの属性とレイアウト  
+ <xref:System.ComponentModel.CategoryAttribute>、<xref:System.ComponentModel.DisplayNameAttribute>、および <xref:System.ComponentModel.DescriptionAttribute> 属性によって、一般的なプロパティページのプロジェクトおよび構成プロパティのレイアウト、ラベル付け、および説明が決まります。 これらの属性によって、オプションのカテゴリ、表示名、および説明がそれぞれ決まります。  
   
 > [!NOTE]
-> Equivalent attributes, SRCategory, LocDisplayName, and SRDescription, use string resources for localization and are defined in [MPF for Projects - Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
+> 同等の属性、SRCategory、LocDisplayName、および Srcategory では、ローカライズに文字列リソースを使用し、[プロジェクトの Visual Studio 2013 に対して MPF](https://archive.codeplex.com/?p=mpfproj12)で定義されています。  
   
  次のコードがあるとします。  
   
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/myprojectpropertypage.cs#2)]
  [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/myprojectpropertypage.vb#2)]  
   
- The `MyConfigProp` configuration property appears on the configuration property page as **My Config Property** in the category, **My Category**. If the option is selected, the description, **My Description**, appears in the description panel.  
+ `MyConfigProp` 構成プロパティは、構成 プロパティページの **マイカテゴリ** カテゴリの  **Config プロパティ**として表示されます。 このオプションが選択されている場合は、説明パネルに " **My description**" という説明が表示されます。  
   
-## <a name="see-also"></a>参照  
- [Not in Build: Walkthrough: Exposing Project and Configuration Properties (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
- [Adding and Removing Property Pages](../../extensibility/adding-and-removing-property-pages.md)   
- [VSPackage State](../../misc/vspackage-state.md)   
- [Projects](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio Templates](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+## <a name="see-also"></a>関連項目  
+ [ビルド内にありません: チュートリアル: プロジェクトおよび構成C#プロパティの公開 ()](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [プロパティページの追加と削除](../../extensibility/adding-and-removing-property-pages.md)   
+ [VSPackage 状態](../../misc/vspackage-state.md)   
+ [プロジェクト](../../extensibility/internals/projects.md)   
+ [NIB: Visual Studio テンプレート](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [テンプレート ディレクトリの説明 (.Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

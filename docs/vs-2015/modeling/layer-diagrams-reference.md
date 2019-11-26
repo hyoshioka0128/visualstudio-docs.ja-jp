@@ -1,5 +1,5 @@
 ---
-title: 'Layer Diagrams: Reference | Microsoft Docs'
+title: 'レイヤー図: Reference |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -32,7 +32,7 @@ ms.locfileid: "74301610"
 # <a name="layer-diagrams-reference"></a>レイヤー図: リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can use a *layer diagram* to visualize the high-level, logical architecture of your system. A layer diagram organizes the physical artifacts in your system into logical, abstract groups called *layers*. これらのレイヤーは成果物が実行する主要タスクまたはシステムの主要コンポーネントについて説明します。 各レイヤーには、より詳細なタスクを示す入れ子になったレイヤーを含めることもできます。
+Visual Studio では、*レイヤー図*を使用して、システムの高レベルな論理アーキテクチャを視覚化できます。 レイヤー図では、システム内の物理的な成果物が、*レイヤー*と呼ばれる論理的な抽象的なグループに編成されます。 これらのレイヤーは成果物が実行する主要タスクまたはシステムの主要コンポーネントについて説明します。 各レイヤーには、より詳細なタスクを示す入れ子になったレイヤーを含めることもできます。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -48,22 +48,22 @@ In Visual Studio, you can use a *layer diagram* to visualize the high-level, log
 
 - チェックイン操作とビルド操作による検証を追加することによって、必要とされるアーキテクチャをコードの開発中および保守中に補強する。
 
-  このトピックでは、レイヤー図で使用できる要素について説明します。 For more detailed information about how to create and draw layer diagrams, see [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md). For more information about layering patterns, visit the [Patterns & Practices site](https://go.microsoft.com/fwlink/?LinkId=145794).
+  このトピックでは、レイヤー図で使用できる要素について説明します。 レイヤー図を作成して描画する方法の詳細については、「[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)」を参照してください。 レイヤーパターンの詳細については、[パターン & プラクティス](https://go.microsoft.com/fwlink/?LinkId=145794)に関するサイトを参照してください。
 
 ## <a name="reading-layer-diagrams"></a>レイヤー図の解説
- ![Elements on layer diagrams](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
+ ![レイヤー図の要素](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
 
  レイヤー図で使用できる要素を次の表に示します。
 
-|**Shape**|**要素**|**説明**|
+|**オート**|**要素**|**説明**|
 |---------------|-----------------|---------------------|
-|1|**Layer**|システム内の物理的な成果物の論理グループ。 このような成果物には、名前空間、プロジェクト、クラス、メソッドなどがあります。<br /><br /> To see the artifacts that are linked to a layer, open the shortcut menu for the layer, and then choose **View Links** to open **Layer Explorer**.<br /><br /> For more information, see [Layer Explorer](#Explorer).<br /><br /> -   **Forbidden Namespace Dependencies** - Specifies that artifacts associated with this layer cannot depend on the specified namespaces.<br />-   **Forbidden Namespaces** - Specifies that artifacts associated with this layer must not belong to the specified namespaces.<br />-   **Required Namespaces** - Specifies that artifacts associated with this layer must belong to one of the specified namespaces.|
-|2|**Dependency**|あるレイヤーが別のレイヤーの機能を使用することはできても、その逆はできないことを示します。<br /><br /> -   **Direction** - Specifies the direction of the dependency.|
-|3|**Bidirectional Dependency**|あるレイヤーが別のレイヤーの機能を使用でき、その逆もできることを示します。<br /><br /> -   **Direction** - Specifies the direction of the dependency.|
+|1|**レイヤー**|システム内の物理的な成果物の論理グループ。 このような成果物には、名前空間、プロジェクト、クラス、メソッドなどがあります。<br /><br /> レイヤーにリンクされている成果物を表示するには、レイヤーのショートカットメニューを開き、 **[リンクの表示]** をクリックして**レイヤーエクスプローラー**を開きます。<br /><br /> 詳細については、「[レイヤーエクスプローラー](#Explorer)」を参照してください。<br /><br /> -   禁止されている**名前空間の依存関係**-このレイヤーに関連付けられた成果物が、指定した名前空間に依存しないことを指定します<br />-   禁止されている**名前空間**-このレイヤーに関連付けられている成果物が、指定した名前空間に属していないことを指定します。<br />-   **必要な名前空間**-このレイヤーに関連付けられているアイテムが、指定された名前空間のいずれかに属している必要があることを指定します。|
+|2|**関係**|あるレイヤーが別のレイヤーの機能を使用することはできても、その逆はできないことを示します。<br /><br /> -   **方向**-依存関係の方向を指定します。|
+|3|**双方向の依存関係**|あるレイヤーが別のレイヤーの機能を使用でき、その逆もできることを示します。<br /><br /> -   **方向**-依存関係の方向を指定します。|
 |4|**コメント**|全般的なノートを図または図の要素に追加するために使用します。|
-|5|**Comment Link**|コメントを図の要素にリンクするために使用します。|
+|5|**コメントリンク**|コメントを図の要素にリンクするために使用します。|
 
-## <a name="Explorer"></a> Layer Explorer
+## <a name="Explorer"></a>レイヤーエクスプローラー
  各レイヤーをソリューション内の成果物 (たとえば、プロジェクト、クラス、名前空間、プロジェクト ファイル、またはソフトウェアのその他のパート) にリンクすることができます。 レイヤーの数字は、レイヤーにリンクされている成果物の数を示します。 ただし、レイヤーの成果物の数を読み取るときには、次の点に注意してください。
 
 - 1 つのレイヤーが他の成果物を含む 1 つの成果物にリンクされているが、他の成果物に直接リンクされていない場合、その数字にはリンクされた成果物のみが含まれます。 ただし、レイヤー検証時の分析にはそれらの他の成果物も含まれます。
@@ -80,19 +80,19 @@ In Visual Studio, you can use a *layer diagram* to visualize the high-level, log
 
 #### <a name="to-examine-the-linked-artifacts"></a>リンクされた成果物を確認するには
 
-- On the layer diagram, open the shortcut menu for one or more layers, and then choose **View Links**.
+- レイヤー図で、1つまたは複数のレイヤーのショートカットメニューを開き、 **[リンクの表示]** を選択します。
 
-     **Layer Explorer** opens and shows the artifacts that are linked to the selected layers. **Layer Explorer** has a column that shows each of the properties of the artifact links.
+     **レイヤーエクスプローラー**が開き、選択したレイヤーにリンクされている成果物が表示されます。 **レイヤーエクスプローラー**には、成果物のリンクの各プロパティを示す列があります。
 
     > [!NOTE]
-    > If you cannot see all of these properties, expand the **Layer Explorer** window.
+    > これらのプロパティのすべてが表示されない場合は、 **[レイヤーエクスプローラー]** ウィンドウを展開します。
 
-    |**Column in Layer Explorer**|**説明**|
+    |**レイヤーエクスプローラーの列**|**説明**|
     |----------------------------------|---------------------|
-    |**Categories**|クラス、名前空間、ソース ファイルなどの成果物の種類|
-    |**Layer**|成果物にリンクしているレイヤー|
-    |**Supports Validation**|If **True**, then the layer validation process can verify that the project conforms to dependencies to or from this element.<br /><br /> If **False**, then the link does not participate in the layer validation process.<br /><br /> For more information, see [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md).|
+    |**カテゴリ**|クラス、名前空間、ソース ファイルなどの成果物の種類|
+    |**レイヤー**|成果物にリンクしているレイヤー|
+    |**検証をサポート**|**True**の場合、レイヤー検証プロセスは、プロジェクトがこの要素との依存関係に準拠しているかどうかを検証できます。<br /><br /> **False**の場合、リンクはレイヤー検証プロセスに参加しません。<br /><br /> 詳細については、「[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)」を参照してください。|
     |**識別子**|リンクされた成果物への参照|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)

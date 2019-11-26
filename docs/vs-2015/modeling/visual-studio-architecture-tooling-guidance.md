@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Architecture Tooling Guidance | Microsoft Docs
+title: Visual Studio アーキテクチャツールのガイダンス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,8 +19,8 @@ ms.locfileid: "74301332"
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio アーキテクチャ ツーリング ガイダンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This Architecture Tooling Guidance is a downloadable package of practical guidance about the use of the modeling tools in Visual Studio 2010. It presents a high-level view of how to use all the modeling tools in an integrated manner, and discusses the most common scenarios in which the tools are used.
+このアーキテクチャ ツー リング ガイダンスは、Visual Studio 2010 でのモデリング ツールの使用方法についての実用的なガイダンスのダウンロード可能なパッケージです。 統合では、すべてのモデリング ツールを使用する方法の概要を示し、ツールを使用する最も一般的なシナリオについて説明します。
 
- The content was created by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, a special group that has members from the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Product Team, Microsoft Services, Microsoft Most Valued Professionals (MVPs), and [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Community Leads.
+ このコンテンツは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers によって作成されました。このグループは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 製品チーム、Microsoft サービス、マイクロソフトの最重要なプロフェッショナル (Mvp)、および [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コミュニティリーダーのメンバーが含まれています。
 
- [Click here to download the Architecture Tooling Guidance.](https://go.microsoft.com/fwlink/?LinkID=191984).
+ [アーキテクチャツールのガイダンスをダウンロードするには、ここをクリックして](https://go.microsoft.com/fwlink/?LinkID=191984)ください。

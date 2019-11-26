@@ -1,5 +1,5 @@
 ---
-title: Customizing Element Creation and Movement | Microsoft Docs
+title: 要素の作成と移動をカスタマイズする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,147 +23,147 @@ ms.locfileid: "74301146"
 # <a name="customizing-element-creation-and-movement"></a>要素作成処理および要素移動処理のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can allow an element to be dragged onto another, either from the toolbox or in a paste or move operation. You can have the moved elements linked to the target elements, using the relationships that you specify.
+ツールボックスから、または貼り付け操作または移動操作で、要素を別の要素にドラッグすることを許可できます。 指定したリレーションシップを使用して、移動された要素をターゲット要素にリンクすることができます。
 
- An element merge directive (EMD) specifies what happens when one model element is *merged* into another model element. This happens when:
+ 要素マージディレクティブ (EMD) は、1つのモデル要素が別のモデル要素に*マージ*された場合の動作を指定します。 これは、次のような場合に発生します。
 
-- The user drags from the toolbox onto the diagram or a shape.
+- ユーザーは、ツールボックスから図または図形にドラッグします。
 
-- The user creates an element by using an Add menu in the explorer or a compartment shape.
+- ユーザーは、エクスプローラーまたはコンパートメントシェイプの [追加] メニューを使用して要素を作成します。
 
-- The user moves an item from one swimlane to another.
+- ユーザーは、あるスイムレーンから別のスイムレーンに項目を移動します。
 
-- The user pastes an element.
+- ユーザーが要素を貼り付けます。
 
-- Your program code calls the element merge directive.
+- プログラムコードは、要素マージディレクティブを呼び出します。
 
-  Although the creation operations might seem to be different from the copy operations, they actually work in the same way. When an element is added, for example from the toolbox, a prototype of it is replicated. The prototype is merged into the model in the same manner as elements that have been copied from another part of the model.
+  作成操作はコピー操作とは異なるように見えるかもしれませんが、実際には同じように動作します。 たとえば、ツールボックスから要素が追加されると、そのプロトタイプのプロトタイプがレプリケートされます。 プロトタイプは、モデルの別の部分からコピーされた要素と同じ方法でモデルにマージされます。
 
-  The responsibility of an EMD is to decide how an object or group of objects should be merged into a particular location in the model. In particular, it decides what relationships should be instantiated to link the merged group into the model. You can also customize it to set properties and to create additional objects.
+  EMD の役割は、オブジェクトまたはオブジェクトのグループをモデル内の特定の場所にマージする方法を決定することです。 具体的には、マージされたグループをモデルにリンクするためにインスタンス化する必要があるリレーションシップを決定します。 また、プロパティを設定したり、追加のオブジェクトを作成したりするようにカスタマイズすることもできます。
 
-  ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") The role of an Element Merge Directive
+  ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge")要素マージディレクティブの役割
 
-  An EMD is generated automatically when you define an embedding relationship. This default EMD creates an instance of the relationship when users add new child instances to the parent. You can modify these default EMDs, for example by adding custom code.
+  埋め込みリレーションシップを定義すると、EMD が自動的に生成されます。 この既定の EMD は、ユーザーが新しい子インスタンスを親に追加するときに、リレーションシップのインスタンスを作成します。 たとえば、カスタムコードを追加するなどして、これらの既定値を変更できます。
 
-  You can also add your own EMDs in the DSL definition, to let users drag or paste different combinations of merged and receiving classes.
+  DSL 定義に独自の内容を追加することもできます。これにより、マージされたクラスと受信するクラスのさまざまな組み合わせをユーザーがドラッグまたは貼り付けられるようになります。
 
-## <a name="defining-an-element-merge-directive"></a>Defining an Element Merge Directive
- You can add element merge directives to domain classes, domain relationships, shapes, connectors, and diagrams. You can add or find them in DSL Explorer under the receiving domain class. The receiving class is the domain class of the element that is already in the model, and onto which the new or copied element will be merged.
+## <a name="defining-an-element-merge-directive"></a>要素マージディレクティブの定義
+ 要素マージディレクティブは、ドメインクラス、ドメインリレーションシップ、図形、コネクタ、および図に追加できます。 受信側ドメインクラスの下の DSL エクスプローラーで、追加または検索できます。 受信側のクラスは、モデル内に既に存在する要素のドメインクラスで、新しい要素またはコピーされる要素がマージされます。
 
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
+ ![DSL&#45;EMD&#95;の詳細](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
 
- The **Indexing Class** is the domain class of elements that can be merged into members of the receiving class. Instances of subclasses of the Indexing Class will also be merged by this EMD, unless you set **Applies to subclasses** to False.
+ **Indexing クラス**は、受信側クラスのメンバーにマージできる要素のドメインクラスです。 **[サブクラスに適用]** を False に設定しない限り、インデックス作成クラスのサブクラスのインスタンスもこの EMD によってマージされます。
 
- There are two kinds of merge directive:
+ Merge ディレクティブには、次の2種類があります。
 
-- A **Process Merge** directive specifies the relationships by which the new element should be linked into the tree.
+- **Process Merge**ディレクティブは、新しい要素がツリーにリンクされるリレーションシップを指定します。
 
-- A **Forward Merge** directive redirects the new element to another receiving element, typically a parent.
+- **前方マージ**ディレクティブは、新しい要素を別の受信要素 (通常は親) にリダイレクトします。
 
-  You can add custom code to merge directives:
+  マージディレクティブには、カスタムコードを追加できます。
 
-- Set **Uses custom accept** to add your own code to determine whether a particular instance of the indexing element should be merged into the target element. When the user drags from the toolbox, the "invalid" pointer shows if your code disallows the merge.
+- Set**では、カスタムの accept を使用**して独自のコードを追加し、インデックスを作成する要素の特定のインスタンスをターゲット要素にマージするかどうかを決定します。 ユーザーがツールボックスからドラッグすると、"無効" のポインターは、コードがマージを許可しないかどうかを示します。
 
-   For example, you could allow the merge only when the receiving element is in a particular state.
+   たとえば、受信側の要素が特定の状態にある場合にのみ、マージを許可できます。
 
-- Set **Uses custom merge** to add provide own code to define the changes that are made to the model when the merge is performed.
+- Set**はカスタムマージを使用**して独自のコードを追加し、マージの実行時にモデルに加えられた変更を定義します。
 
-   For example, you could set properties in the merged element by using data from its new location in the model.
+   たとえば、モデル内の新しい場所からのデータを使用して、マージされた要素のプロパティを設定できます。
 
 > [!NOTE]
-> If you write custom merge code, it affects only merges that are performed by using this EMD. If there are other EMDs that merge the same type of object, or if there is other custom code that creates these objects without using the EMD, then they will not be affected by your custom merge code.
+> カスタムマージコードを記述する場合は、この EMD を使用して実行されたマージのみが影響を受けます。 同じ型のオブジェクトをマージする他の入力がある場合、または EMD を使用せずにこれらのオブジェクトを作成する他のカスタムコードがある場合は、カスタムマージコードによる影響を受けません。
 >
-> If you want to make sure that a new element or new relationship is always processed by your custom code, consider defining an `AddRule` on the embedding relationship and a `DeleteRule` on the element’s domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+> 新しい要素または新しいリレーションシップが必ずカスタムコードによって処理されるようにするには、埋め込みリレーションシップでの `AddRule` と、要素のドメインクラスの `DeleteRule` を定義することを検討してください。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
-## <a name="example-defining-an-emd-without-custom-code"></a>Example: Defining an EMD without custom code
- The following example lets users create an element and a connector at the same time by dragging from the toolbox onto an existing shape. The example adds an EMD to the DSL Definition. Before this modification, users can drag tools onto the diagram, but not onto existing shapes.
+## <a name="example-defining-an-emd-without-custom-code"></a>例: カスタムコードを使用せずに EMD を定義する
+ 次の例では、ユーザーが [ツールボックス] から既存の図形にドラッグして、要素とコネクタを同時に作成できます。 この例では、DSL 定義に EMD を追加します。 この変更を行う前に、ユーザーはツールを図にドラッグできますが、既存の図形にはドラッグできません。
 
- Users can also paste elements onto other elements.
+ ユーザーは、要素を他の要素に貼り付けることもできます。
 
-#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>To let users create an element and a connector at the same time
+#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>ユーザーが要素とコネクタを同時に作成できるようにするには
 
-1. Create a new DSL by using the **Minimal Language** solution template.
+1. **最小言語**ソリューションテンプレートを使用して、新しい DSL を作成します。
 
-    When you run this DSL, it lets you create shapes and connectors between the shapes. You cannot drag a new **ExampleElement** shape from the toolbox onto an existing shape.
+    この DSL を実行すると、図形と図形の間に図形とコネクタを作成できるようになります。 新しい例の**要素**図形をツールボックスから既存の図形にドラッグすることはできません。
 
-2. To let users merge elements onto `ExampleElement` shapes, create a new EMD in the `ExampleElement` domain class:
+2. ユーザーが要素を `ExampleElement` 図形にマージできるようにするには、`ExampleElement` ドメインクラスに新しい EMD を作成します。
 
-   1. In **DSL Explorer**, expand **Domain Classes**. Right-click `ExampleElement` and then click **Add New Element Merge Directive**.
+   1. **DSL エクスプローラー**で、 **[ドメインクラス]** を展開します。 `ExampleElement` を右クリックし、 **[新しい要素のマージディレクティブの追加]** をクリックします。
 
-   2. Make sure that the **DSL Details** window is open, so that you can see the details of the new EMD. (Menu: **View**, **Other Windows**, **DSL Details**.)
+   2. 新しい EMD の詳細を確認できるように、 **DSL の詳細**ウィンドウが開いていることを確認します。 (メニュー:**表示**、**その他のウィンドウ**、 **DSL の詳細**。)
 
-3. Set the **Indexing class** in the DSL Details window, to define what class of elements can be merged onto `ExampleElement` objects.
+3. DSL の詳細ウィンドウで**インデックス作成クラス**を設定して、`ExampleElement` オブジェクトにマージできる要素のクラスを定義します。
 
-    For this example, select `ExampleElements`, so that the user can drag new elements onto existing elements.
+    この例では、[`ExampleElements`] を選択して、ユーザーが新しい要素を既存の要素にドラッグできるようにします。
 
-    Notice that the Indexing class becomes the name of the EMD in DSL Explorer.
+    インデックス作成クラスが DSL エクスプローラーの EMD の名前になることに注意してください。
 
-4. Under **Process merge by creating links**, add two paths:
+4. **[リンクを作成してマージを処理する]** で、次の2つのパスを追加します。
 
-   1. One path links the new element to the parent model. The path expression that you need to enter navigates from the existing element, up through the embedding relationship to the parent model. Finally, it specifies the role in the new link to which the new element will be assigned. The path is as follows:
+   1. 1つのパスによって、新しい要素が親モデルにリンクされます。 入力する必要があるパス式は、親モデルとの埋め込みリレーションシップを通じて、既存の要素から移動します。 最後に、新しい要素が割り当てられる新しいリンク内のロールを指定します。 パスは次のとおりです。
 
        `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`
 
-   2. The other path links the new element to the existing element. The path expression specifies the reference relationship and the role to which the new element will be assigned. This path is as follows:
+   2. もう1つのパスは、新しい要素を既存の要素にリンクします。 パス式では、参照リレーションシップと、新しい要素が割り当てられるロールを指定します。 このパスは次のとおりです。
 
        `ExampleElementReferencesTargets.Sources`
 
-      You can use the path navigation tool to create each path:
+      パスナビゲーションツールを使用して、各パスを作成できます。
 
-   3. Under **Process merge by creating links at paths**, click **\<add path>** .
+   3. **パスにリンクを作成してマージを処理する** で、**パスの追加 >\<** クリックします。
 
-   4. Click the drop-down arrow to the right of the list item. A tree view appears.
+   4. リスト項目の右側にあるドロップダウン矢印をクリックします。 ツリービューが表示されます。
 
-   5. Expand the nodes in the tree to form the path that you want to specify.
+   5. ツリー内のノードを展開して、指定するパスを形成します。
 
-5. Test the DSL:
+5. DSL をテストします。
 
-   1. Press F5 to rebuild and run the solution.
+   1. F5 キーを押して、ソリューションをリビルドして実行します。
 
-        Rebuilding will take longer than usual because the generated code will be updated from text templates to conform to the new DSL Definition.
+        生成されたコードは新しい DSL 定義に準拠するようにテキストテンプレートから更新されるため、再構築には通常よりも長い時間がかかります。
 
-   2. When the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] has started, open a model file of your DSL. Create some example elements.
+   2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスが開始されたら、DSL のモデルファイルを開きます。 いくつかの例の要素を作成します。
 
-   3. Drag from the **Example Element** tool onto an existing shape.
+   3. [要素の**例**] ツールから既存の図形にドラッグします。
 
-        A new shape appears, and it is linked to the existing shape with a connector.
+        新しい図形が表示され、コネクタを使用して既存の図形にリンクされます。
 
-   4. Copy an existing shape. Select another shape and paste.
+   4. 既存の図形をコピーします。 別の図形を選択して貼り付けます。
 
-        A copy of the first shape is created.  It has a new name and it is linked to the second shape with a connector.
+        最初の図形のコピーが作成されます。  新しい名前が付けられ、コネクタを使用して2番目の図形にリンクされます。
 
-   Notice the following points from this procedure:
+   この手順では、次の点に注意してください。
 
-- By creating Element Merge Directives, you can allow any class of element to accept any other. The EMD is created in the receiving domain class, and the accepted domain class is specified in the **Index class** field.
+- 要素マージディレクティブを作成することにより、要素の任意のクラスが他の要素を受け入れることができるようになります。 EMD が受信側ドメインクラスに作成され、承認されたドメインクラスが**Index class**フィールドに指定されます。
 
-- By defining paths, you can specify what links should be used to connect the new element to the existing model.
+- パスを定義することで、新しい要素を既存のモデルに接続するために使用するリンクを指定できます。
 
-     The links that you specify should include one embedding relationship.
+     指定するリンクには、埋め込みリレーションシップが1つ含まれている必要があります。
 
-- The EMD affects both creation from the toolbox and also paste operations.
+- EMD は、ツールボックスからの作成と貼り付け操作の両方に影響します。
 
-     If you write custom code that creates new elements, you can explicitly invoke the EMD by using the `ElementOperations.Merge` method. This makes sure that your code links new elements into the model in the same way as other operations. For more information, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md).
+     新しい要素を作成するカスタムコードを記述する場合は、`ElementOperations.Merge` メソッドを使用して明示的に EMD を呼び出すことができます。 これにより、コードは、他の操作と同じ方法で新しい要素をモデルにリンクします。 詳細については、「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Example: Adding Custom Accept code to an EMD
- By adding custom code to an EMD, you can define more complex merge behavior. This simple example prevents the user from adding more than a fixed number of elements to the diagram. The example modifies the default EMD that accompanies an embedding relationship.
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>例: カスタム Accept コードを EMD に追加する
+ カスタムコードを EMD に追加することで、より複雑なマージ動作を定義できます。 この単純な例では、ユーザーが一定数以上の要素を図に追加できないようにしています。 この例では、埋め込みリレーションシップに付随する既定の EMD を変更します。
 
-#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>To write Custom Accept code to restrict what the user can add
+#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>ユーザーが追加できる内容を制限するカスタム受け入れコードを記述するには
 
-1. Create a DSL by using the **Minimal Language** solution template. Open the DSL Definition diagram.
+1. **最小言語**ソリューションテンプレートを使用して DSL を作成する。 DSL 定義図を開きます。
 
-2. In DSL Explorer, expand **Domain Classes**, `ExampleModel`, **Element Merge Directives**. Select the element merge directive that is named `ExampleElement`.
+2. DSL エクスプローラーで、**ドメインクラス**、`ExampleModel`、**要素マージディレクティブ** の順に展開します。 `ExampleElement`という名前の要素マージディレクティブを選択します。
 
-     This EMD controls how the user can create new `ExampleElement` objects in the model, for example by dragging from the toolbox.
+     この EMD は、ユーザーが [ツールボックス] からドラッグして、モデル内の新しい `ExampleElement` オブジェクトを作成する方法を制御します。
 
-3. In the **DSL Details** window, select **Uses custom accept**.
+3. DSL の**詳細**ウィンドウで、[**カスタムの受け入れを使用**する] を選択します。
 
-4. ソリューションをリビルドします。 This will take longer than usual because the generated code will be updated from the model.
+4. ソリューションをリビルドします。 生成されたコードはモデルから更新されるため、この処理には通常より長い時間がかかります。
 
-     A build error will be reported, similar to: "Company.ElementMergeSample.ExampleElement does not contain a definition for CanMergeExampleElement…"
+     次のようなビルドエラーが報告されます。 "ElementMergeSample 要素には、Canmerge 要素の定義が含まれていません..."
 
-     You must implement the method `CanMergeExampleElement`.
+     メソッド `CanMergeExampleElement`を実装する必要があります。
 
-5. Create a new code file in the **Dsl** project. Replace its content with the following code and change the namespace to the namespace of your project.
+5. **Dsl**プロジェクトに新しいコードファイルを作成します。 その内容を次のコードに置き換えて、名前空間をプロジェクトの名前空間に変更します。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -191,46 +191,46 @@ You can allow an element to be dragged onto another, either from the toolbox or 
 
     ```
 
-     This simple example restricts the number of elements that can be merged into the parent model. For more interesting conditions, the method can inspect any of the properties and links of the receiving object. It can also inspect the properties of the merging elements, which are carried in a <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. For more information about `ElementGroupPrototypes`, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md). For more information about how to write code that reads a model, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     この単純な例では、親モデルにマージできる要素の数を制限しています。 より興味深い条件では、メソッドは、受信側オブジェクトのすべてのプロパティとリンクを検査できます。 また、<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>に格納されているマージ要素のプロパティを検査することもできます。 `ElementGroupPrototypes`の詳細については、「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。 モデルを読み取るコードを記述する方法の詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 
-6. Test the DSL:
+6. DSL をテストします。
 
-    1. Press F5 to rebuild the solution. When the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] opens, open an instance of your DSL.
+    1. F5 キーを押してソリューションをリビルドします。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスが開いたら、DSL のインスタンスを開きます。
 
-    2. Create new elements in several ways:
+    2. 新しい要素をいくつかの方法で作成します。
 
-        1. Drag from the **Example Element** tool onto the diagram.
+        1. [要素の**例**] ツールから図にドラッグします。
 
-        2. In the **Example Model Explorer**, right-click the root node and then click **Add New Example Element**.
+        2. **モデルエクスプローラーの例**で、ルートノードを右クリックし、 **[新しいサンプル要素の追加]** をクリックします。
 
-        3. Copy and paste an element on the diagram.
+        3. 図に要素をコピーして貼り付けます。
 
-    3. Verify that you cannot use any of these ways to add more than four elements to the model. This is because they all use the Element Merge Directive.
+    3. これらの方法のいずれかを使用して、モデルに4つ以上の要素を追加できないことを確認します。 これは、すべてが要素マージディレクティブを使用するためです。
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Example: Adding Custom Merge code to an EMD
- In custom merge code, you can define what happens when the user drags a tool or pastes onto an element. There are two ways to define a custom merge:
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>例: カスタムマージコードを EMD に追加する
+ カスタムマージコードでは、ユーザーがツールをドラッグしたとき、または要素に貼り付けたときの動作を定義できます。 カスタムマージを定義するには、次の2つの方法があります。
 
-1. Set **Uses Custom Merge** and supply the required code. Your code replaces the generated merge code. Use this option if you want to completely redefine what the merge does.
+1. Set**はカスタムマージを使用**し、必要なコードを提供します。 生成されたマージコードはコードに置き換えられます。 このオプションは、マージの対象を完全に再定義する場合に使用します。
 
-2. Override the `MergeRelate` method, and optionally the `MergeDisconnect` method. To do this, you must set the **Generates Double Derived** property of the domain class. Your code can call the generated merge code in the base class. Use this option if you want to perform additional operations after the merge has been performed.
+2. `MergeRelate` メソッドをオーバーライドし、必要に応じて `MergeDisconnect` メソッドをオーバーライドします。 これを行うには、ドメインクラスの [ **Double の派生**プロパティを生成する] を設定する必要があります。 コードでは、基底クラスで生成されたマージコードを呼び出すことができます。 マージの実行後に追加の操作を実行する場合は、このオプションを使用します。
 
-   These approaches only affect merges that are performed by using this EMD. If you want to affect all ways in which the merged element can be created, an alternative is to define an `AddRule` on the embedding relationship and a `DeleteRule` on the merged domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+   これらの方法は、この EMD を使用して実行されるマージにのみ影響します。 マージされた要素を作成するすべての方法に影響を与える場合は、埋め込みリレーションシップの `AddRule` とマージされたドメインクラスの `DeleteRule` を定義する方法があります。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
-#### <a name="to-override-mergerelate"></a>To override MergeRelate
+#### <a name="to-override-mergerelate"></a>MergeRelate をオーバーライドするには
 
-1. In the DSL definition, make sure that you have defined the EMD to which you want to add code. If you want, you can add paths and define custom accept code as described in the previous sections.
+1. DSL 定義で、コードを追加する EMD を定義していることを確認します。 必要に応じて、前のセクションで説明したように、パスを追加し、カスタムの accept コードを定義できます。
 
-2. In the DslDefinition diagram, select the receiving class of the merge. Typically it is the class at the source end of an embedding relationship.
+2. DslDefinition ダイアグラムで、マージの受信クラスを選択します。 通常は、埋め込みリレーションシップのソースエンドのクラスです。
 
-     For example, in a DSL generated from the Minimal Language solution, select `ExampleModel`.
+     たとえば、最小言語ソリューションから生成された DSL では、[`ExampleModel`] を選択します。
 
-3. In the **Properties** window, set **Generates Double Derived** to **true**.
+3. **[プロパティ]** ウィンドウで、[ **Double の派生**を**true**に生成] を設定します。
 
 4. ソリューションをリビルドします。
 
-5. Inspect the content of **Dsl\Generated Files\DomainClasses.cs**. Search for methods named `MergeRelate` and examine their contents. This will help you write your own versions.
+5. **DslFiles\DomainClasses.cs**の内容を検査します。 `MergeRelate` という名前のメソッドを検索し、その内容を確認します。 これは、独自のバージョンを記述するのに役立ちます。
 
-6. In a new code file, write a partial class for the receiving class, and override the `MergeRelate` method. Remember to call the base method. (例:
+6. 新しいコードファイルで、受信側クラスの部分クラスを記述し、`MergeRelate` メソッドをオーバーライドします。 基本メソッドを必ず呼び出してください。 例 :
 
     ```csharp
     partial class ExampleModel
@@ -257,64 +257,64 @@ You can allow an element to be dragged onto another, either from the toolbox or 
 
     ```
 
-#### <a name="to-write-custom-merge-code"></a>To write Custom Merge code
+#### <a name="to-write-custom-merge-code"></a>カスタムマージコードを記述するには
 
-1. In **Dsl\Generated Code\DomainClasses.cs**, inspect methods named `MergeRelate`. These methods create links between a new element and the existing model.
+1. **生成された codedomaincs**で、`MergeRelate`という名前のメソッドを検査します。 これらのメソッドは、新しい要素と既存のモデル間のリンクを作成します。
 
-    Also, inspect methods named `MergeDisconnect`. These methods unlink an element from the model when it is to be deleted.
+    また、`MergeDisconnect`という名前のメソッドを検査します。 これらのメソッドは、要素を削除するときに、その要素をモデルからリンク解除します。
 
-2. In **DSL Explorer**, select or create the Element Merge Directive that you want to customize. In the **DSL Details** window, set **Uses Custom Merge**.
+2. **DSL エクスプローラー**で、カスタマイズする要素マージディレクティブを選択または作成します。 DSL の**詳細**ウィンドウで、[**カスタムマージを使用**する] を設定します。
 
-    When you set this option, the **Process Merge** and **Forward Merge** options are ignored. Your code is used instead.
+    このオプションを設定した場合、 **merge**オプションと**Forward merge**オプションは無視されます。 代わりに、コードが使用されます。
 
-3. ソリューションをリビルドします。 It will take longer than usual because the generated code files will be updated from the model.
+3. ソリューションをリビルドします。 生成されたコードファイルがモデルから更新されるため、通常よりも時間がかかります。
 
-    Error messages will appear. Double-click the error messages to see the instructions in the generated code. These instructions ask you to supply two methods, `MergeRelate`*YourDomainClass* and `MergeDisconnect`*YourDomainClass*
+    エラーメッセージが表示されます。 エラーメッセージをダブルクリックすると、生成されたコードの指示が表示されます。 ここでは、2つのメソッドを指定する方法を説明します。 *domainclass*を `MergeRelate`し、 *domainclass*を `MergeDisconnect`します。
 
-4. Write the methods in a partial class definition in a separate code file. The examples you inspected earlier should suggest what you need.
+4. 部分クラス定義内のメソッドを別のコードファイルに記述します。 前に検査した例では、必要なものを提案します。
 
-   Custom merge code will not affect code that creates objects and relationships directly, and it will not affect other EMDs. To make sure that your additional changes are implemented regardless of how the element is created, consider writing an `AddRule` and a `DeleteRule` instead. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+   カスタムマージコードは、オブジェクトとリレーションシップを直接作成するコードには影響しません。また、他の変更には影響しません。 要素の作成方法に関係なく、追加の変更が実装されていることを確認するには、代わりに `AddRule` と `DeleteRule` を記述することを検討してください。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
-## <a name="redirecting-a-merge-operation"></a>Redirecting a Merge Operation
- A forward merge directive redirects the target of a merge operation. Typically, the new target is the embedding parent of the initial target.
+## <a name="redirecting-a-merge-operation"></a>マージ操作のリダイレクト
+ 前方マージディレクティブは、マージ操作の対象をリダイレクトします。 通常、新しいターゲットは、初期ターゲットの埋め込み親です。
 
- For example, in a DSL that was created with the component diagram template, Ports are embedded in Components. Ports are displayed as small shapes on the edge of a component shape. The user creates ports by dragging the Port tool onto a Component shape. But sometimes, the user mistakenly drags the Port tool onto an existing port, instead of the component, and the operation fails. This is an easy mistake when there are several existing ports. To help the user to avoid this nuisance, you can allow ports to be dragged onto an existing port, but have the action redirected to the parent component. The operation works as if the target element were the component.
+ たとえば、コンポーネント図テンプレートを使用して作成された DSL では、ポートはコンポーネントに埋め込まれます。 ポートは、コンポーネント図形の端に小さい図形として表示されます。 ユーザーは、ポートツールをコンポーネント図形にドラッグして、ポートを作成します。 ただし、ユーザーがポートツールをコンポーネントではなく既存のポートに誤ってドラッグすると、操作が失敗することがあります。 これは、既存のポートが複数存在する場合の簡単な間違いです。 この迷惑を回避するには、既存のポートにポートをドラッグできるようにしますが、アクションは親コンポーネントにリダイレクトされます。 操作は、ターゲット要素がコンポーネントであるかのように動作します。
 
- You can create a forward merge directive in the Component Model solution. If you compile and run the original solution, you should see that users can drag any number of **Input Port** or **Output Port** elements from the **Toolbox** to a **Component** element. However, they cannot drag a port to an existing port. The Unavailable pointer alerts them that this move is not enabled. However, you can create a forward merge directive so that a port that is unintentionally dropped on an existing **Input Port** is forwarded to the **Component** element.
+ 事前マージディレクティブは、コンポーネントモデルソリューションで作成できます。 元のソリューションをコンパイルして実行すると、ユーザーが**ツールボックス**から任意の数の**入力ポート**または**出力ポート**要素を**コンポーネント**要素にドラッグできることがわかります。 ただし、既存のポートにポートをドラッグすることはできません。 使用できないポインターは、この移動が有効になっていないことを警告します。 ただし、事前マージディレクティブを作成して、既存の**入力ポート**で意図せず削除されたポートが**Component**要素に転送されるようにすることができます。
 
-#### <a name="to-create-a-forward-merge-directive"></a>To create a forward merge directive
+#### <a name="to-create-a-forward-merge-directive"></a>前方マージディレクティブを作成するには
 
-1. Create a [!INCLUDE[dsl](../includes/dsl-md.md)] solution by using the Component Model template.
+1. コンポーネントモデルテンプレートを使用して [!INCLUDE[dsl](../includes/dsl-md.md)] ソリューションを作成します。
 
-2. Display the **DSL Explorer** by opening DslDefinition.dsl.
+2. DslDefinition を開き、 **Dsl エクスプローラー**を表示します。
 
-3. In the **DSL Explorer**, expand **Domain Classes**.
+3. **DSL エクスプローラー**で、 **[ドメインクラス]** を展開します。
 
-4. The **ComponentPort** abstract domain class is the base class of both **InPort** and **OutPort**. Right-click **ComponentPort** and then click **Add New Element Merge Directive**.
+4. **Componentport**抽象ドメインクラスは、 **InPort**と**outport**の両方の基本クラスです。 **[Componentport]** を右クリックし、 **[Add New Element Merge ディレクティブ]** をクリックします。
 
-     A new **Element Merge Directive** node appears under the **Element Merge Directives** node.
+     **[要素マージディレクティブ]** ノードの下に、新しい**要素マージディレクティブ**ノードが表示されます。
 
-5. Select the **Element Merge Directive** node and open the **DSL Details** window.
+5. **[要素マージディレクティブ]** ノードを選択し、 **[DSL の詳細]** ウィンドウを開きます。
 
-6. In the Indexing class list, select **ComponentPort**.
+6. インデックスクラス ボックスの一覧で  **Componentport** を選択します。
 
-7. Select **Forward merge to a different domain class**.
+7. **[別のドメインクラスにマージを転送する]** を選択します。
 
-8. In the path selection list, expand **ComponentPort**, expand **ComponentHasPorts**, and then select **Component**.
+8. パスの選択 の一覧で、 **Componentport**、**ComponentHasPorts** の順に展開し、**コンポーネント** を選択します。
 
-     The new path should resemble this one:
+     新しいパスは次のようになります。
 
-     **ComponentHasPorts.Component/!Component**
+     **ComponentHasPorts/! コンポーネント**
 
-9. Save the solution, and then transform the templates by clicking the rightmost button on the **Solution Explorer** toolbar.
+9. ソリューションを保存し、 **[ソリューションエクスプローラー]** ツールバーの右端にあるボタンをクリックしてテンプレートを変換します。
 
-10. ソリューションをビルドして実行します。 A new instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] appears.
+10. ソリューションをビルドして実行します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の新しいインスタンスが表示されます。
 
-11. In **Solution Explorer**, open Sample.mydsl. The diagram and the **ComponentLanguage Toolbox** appear.
+11. **ソリューションエクスプローラー**で、サンプルの mydsl を開きます。 ダイアグラムと**Componentlanguage ツールボックス**が表示されます。
 
-12. Drag an **Input Port** from the **Toolbox** to another **Input Port.** Next, drag an **OutputPort** to an **InputPort** and then to another **OutputPort**.
+12. **[ツールボックス]** から**入力ポート**を別の入力ポートにドラッグし**ます。** 次に、 **outputport**を**inputport**にドラッグしてから、別の**outputport**にドラッグします。
 
-     You should not see the Unavailable pointer, and you should be able to drop the new **Input Port** on the existing one. Select the new **Input Port** and drag it to another point on the **Component**.
+     使用できないポインターは表示されず、既存のものに新しい**入力ポート**をドロップできます。 新しい**入力ポート**を選択し、**コンポーネント**上の別のポイントにドラッグします。
 
-## <a name="see-also"></a>参照
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md) [Customizing Tools and the Toolbox](../modeling/customizing-tools-and-the-toolbox.md)
+## <a name="see-also"></a>関連項目
+ [プログラム内のモデルの移動と更新コード](../modeling/navigating-and-updating-a-model-in-program-code.md)[ツールとツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)

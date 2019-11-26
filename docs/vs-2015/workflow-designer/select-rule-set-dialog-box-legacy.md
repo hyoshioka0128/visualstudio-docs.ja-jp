@@ -1,5 +1,5 @@
 ---
-title: Select Rule Set Dialog Box (Legacy) | Microsoft Docs
+title: '[ルールセットの選択] ダイアログボックス (レガシ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,27 +21,27 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301451"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>[ルール セットの選択] ダイアログ ボックス (レガシ)
-This topic describes how use the **Select Rule Set** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
+このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)]の **[ルールセットの選択**] ダイアログボックスの使用方法について説明します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
 
- The **Select Rule Set** dialog box is used to select a rule set that you can use with a [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) activity. For information about how to access the **Select Rule Set** dialog box, see [How to: Create a PolicyActivity Rule Set (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ **[ルールセットの選択**] ダイアログボックスは、 [policyactivity](https://go.microsoft.com/fwlink?LinkID=65019)アクティビティで使用できるルールセットを選択するために使用します。 **[ルールセットの選択**] ダイアログボックスにアクセスする方法の詳細については、「[方法: Policyactivity ルールセットを作成する (レガシ)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)」を参照してください。
 
- The following table describes the user interface (UI) elements of the **Select Rule Set** dialog box.
+ 次の表では、 **[ルールセットの選択**] ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |UI 要素|説明|
 |----------------|-----------------|
-|**New…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to create a new rule condition.|
-|**Edit…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to edit the selected rule condition.|
-|**Rename…**|これをクリックすると、選択したルール セットの名前を変更するためのダイアログ ボックスが表示されます。|
+|**新機能。**|クリックすると、[[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)が開き、新しいルール条件を作成できます。|
+|**編集...**|クリックすると、[[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)が開き、選択したルール条件を編集できます。|
+|**名前の変更...**|これをクリックすると、選択したルール セットの名前を変更するためのダイアログ ボックスが表示されます。|
 |**削除**|これをクリックすると、選択したルール セットが削除されます。|
-|**Rule Set Preview**|選択したルール セットに含まれるルールを表示します。|
-|**OK**|Click to assign the selected rule set to the **PolicyActivity** activity.|
+|**ルールセットのプレビュー**|選択したルール セットに含まれるルールを表示します。|
+|**わかりました**|クリックすると、選択したルールセットが**policyactivity**アクティビティに割り当てられます。|
 
- For more information about how to create and edit rule sets, see [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+ 規則セットを作成および編集する方法の詳細については、「[[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)」を参照してください。
 
 > [!WARNING]
 > [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。
 
- For more information about conditions, see [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ 条件の詳細については、「[ワークフローでの条件の使用](https://go.microsoft.com/fwlink?LinkID=65009)」を参照してください。
 
-## <a name="see-also"></a>参照
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+## <a name="see-also"></a>関連項目
+ [ [Policyactivity](https://go.microsoft.com/fwlink?LinkID=65019) [ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [ワークフロー内の条件を使用](https://go.microsoft.com/fwlink?LinkID=65009)し[た policyactivity アクティビティの使用](https://go.microsoft.com/fwlink?LinkID=65004)

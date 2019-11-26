@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Graphics Diagnostics | Microsoft Docs
+title: Visual Studio グラフィックス診断 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,17 +21,17 @@ ms.locfileid: "74296914"
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio*Graphics Diagnostics* is a set of tools for recording and then analyzing rendering and performance problems in Direct3D apps. グラフィックス診断は、Windows PC でローカルに実行されているアプリ、Windows デバイス エミュレーターで実行されているアプリ、あるいはリモート PC またはデバイスで実行されているアプリに対して使用できます。  
+Visual Studio*グラフィックス診断*は、Direct3D アプリのレンダリングとパフォーマンスの問題を記録して分析するための一連のツールです。 グラフィックス診断は、Windows PC でローカルに実行されているアプリ、Windows デバイス エミュレーターで実行されているアプリ、あるいはリモート PC またはデバイスで実行されているアプリに対して使用できます。  
   
- グラフィックス診断のワークフローは、アプリが Direct3D を使用する方法の記録を、アプリの実行中にライブでキャプチャすることから始まります。記録したアプリの動作は、直ちに分析し、共有し、後で使用するために保存できます。 Capture sessions can be initiated and controlled manually from Visual Studio or with the command-line capture tool **dxcap.exe**. Capture sessions can also be initiated and controlled programmatically by using the Graphics Diagnostics capture APIs.  
+ グラフィックス診断のワークフローは、アプリが Direct3D を使用する方法の記録を、アプリの実行中にライブでキャプチャすることから始まります。記録したアプリの動作は、直ちに分析し、共有し、後で使用するために保存できます。 キャプチャセッションは、Visual Studio から手動で開始したり、コマンドラインキャプチャツールの**ユーティリティ**を使用して手動で制御したりすることができます。 キャプチャセッションは、グラフィックス診断 capture Api を使用してプログラムで開始および制御することもできます。  
   
- キャプチャ セッションによる記録が終わったら、Visual Studio の *Graphics Analyzer* を使用して、いつでもその内容を再生できます。その際、アプリが使用したのと正確に同じリソースとレンダリング コマンドを使用して、キャプチャされたフレームが再作成されます。 Then, using the tools provided in the Graphics Analyzer window, any of the captured frames can be analyzed in detail. これらのツールを使用して、任意の Direct3D API 呼び出し、リソース、パイプライン状態オブジェクト、パイプライン ステージ、またはキャプチャしたフレーム内の任意のピクセルの完全な履歴さえも、調べることができます。 これらのツールを連携して使用すれば、レンダリングの問題を直感的に調査できます。キャプチャされたフレームにその問題が現れた地点から始めて、アプリのソース コード、シェーダー、またはグラフィックス アセットにある根本原因にまで掘り下げていきます。  
+ キャプチャ セッションによる記録が終わったら、Visual Studio の *Graphics Analyzer* を使用して、いつでもその内容を再生できます。その際、アプリが使用したのと正確に同じリソースとレンダリング コマンドを使用して、キャプチャされたフレームが再作成されます。 次に、Graphics Analyzer ウィンドウに用意されているツールを使用して、キャプチャされたフレームを詳細に分析できます。 これらのツールを使用して、任意の Direct3D API 呼び出し、リソース、パイプライン状態オブジェクト、パイプライン ステージ、またはキャプチャしたフレーム内の任意のピクセルの完全な履歴さえも、調べることができます。 これらのツールを連携して使用すれば、レンダリングの問題を直感的に調査できます。キャプチャされたフレームにその問題が現れた地点から始めて、アプリのソース コード、シェーダー、またはグラフィックス アセットにある根本原因にまで掘り下げていきます。  
   
  パフォーマンスの問題を診断するには、キャプチャしたフレームを*フレーム分析*ツールを使用して分析できます。 このツールは、アプリが Direct3D を使用する方法を自動的に変更して、さらに最適なパフォーマンスを実現できないかどうか探索し、すべてのバリエーションのベンチマークを提供します。 以前は、このような変更を手動で設定してベンチマークを取り、いちばん違いの大きいものを見つけるだけでした。 フレーム分析を利用する場合は、有効であることが既に分かっている変更を加える必要があるだけです。  
   
  グラフィックス診断は、Direct3D アプリの外観を視覚的に優れたものにし、パフォーマンスを最大にするために役立ちます。  
   
- Continue to [Overview](../debugger/overview-of-visual-studio-graphics-diagnostics.md) to learn more about what Visual Studio Graphics Diagnostics offers.  
+ Visual Studio グラフィックス診断で提供される内容の詳細については、 [「概要」](../debugger/overview-of-visual-studio-graphics-diagnostics.md)を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
@@ -40,7 +40,7 @@ Visual Studio*Graphics Diagnostics* is a set of tools for recording and then ana
  [はじめに](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  Visual Studio のグラフィックス診断をインストールする方法と、Direct3D アプリに対してグラフィックス診断の使用を開始する方法を説明します。  
   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
+ [グラフィックス情報をキャプチャする](../debugger/capturing-graphics-information.md)  
  グラフィックス診断を使用してアプリのレンダリングの問題を調べるには、まず、アプリが DirectX を使用する方法に関する情報を記録する必要があります。 アプリが通常どおりに実行されているときの記録セッション中に関心があるフレームを "*キャプチャ*" (つまり、選択) します。 キャプチャには、フレームがレンダリングされる方法に関する詳細情報が含まれています。 キャプチャした情報をグラフィックス ログのドキュメントとして保存し、後で調べたり、チームの他のメンバーと共有したりできます。  
   
  [GPU 使用率](../debugger/gpu-usage.md)  
@@ -79,9 +79,9 @@ Visual Studio*Graphics Diagnostics* is a set of tools for recording and then ana
  [例](../debugger/graphics-diagnostics-examples.md)  
  いくつかの例によって、複数のグラフィックス診断ツールを一緒に使用して、さまざまな種類のレンダリングの問題を診断する方法が示されています。  
   
-## <a name="related-sections"></a>関連項目  
+## <a name="related-sections"></a>関連セクション  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデバッグ機能を紹介します。|  
 |[DirectX のグラフィックスとゲーム](https://go.microsoft.com/fwlink/?LinkId=256498)|DirectX グラフィックスの手法を説明する文書を提供します。|

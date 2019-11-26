@@ -1,5 +1,5 @@
 ---
-title: Navigate relationships with the UML API | Microsoft Docs
+title: UML API を使用してリレーションシップをナビゲートする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -50,7 +50,7 @@ foreach (IRelationship relationship in
 
 ```
 
-### <a name="association"></a>関連付け
+### <a name="association"></a>アソシエーション
  関連付けとは、それぞれが分類子に属している 2 つのプロパティ間のリレーションシップのことです。
 
 ```
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>リレーションシップの列挙
- All properties of the UML model that return multiple values conform to the IEnumerable<> interface. This means that you can use [Linq Query Expressions](https://go.microsoft.com/fwlink/?LinkId=168834) and the extension methods defined in the **System.Linq** namespace.
+ 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable < > インターフェイスに準拠しています。 これは、 [linq のクエリ式](https://go.microsoft.com/fwlink/?LinkId=168834)と、 **linq**名前空間で定義されている拡張メソッドを使用できることを意味します。
 
- (例:
+ 例 :
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>参照
- [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Navigate the UML model](../modeling/navigate-the-uml-model.md)
+## <a name="see-also"></a>関連項目
+ [Uml モデルとダイアグラムの拡張](../modeling/extend-uml-models-and-diagrams.md) [uml モデルへの移動](../modeling/navigate-the-uml-model.md)

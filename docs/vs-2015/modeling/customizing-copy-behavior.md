@@ -1,5 +1,5 @@
 ---
-title: Customizing Copy Behavior | Microsoft Docs
+title: コピー動作のカスタマイズ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,7 +22,7 @@ ms.locfileid: "74301189"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK を使用して作成したドメイン固有言語 (DSL) で、ユーザーが要素のコピーと貼り付けを実行する際の動作を変更できます。
 
 ## <a name="standard-copy-and-paste-behavior"></a>コピーと貼り付けの標準動作
- To enable copying, set the **Enable Copy Paste** property of the **Editor** node in DSL Explorer.
+ コピーを有効にするには、DSL エクスプローラーの **[エディター]** ノードの **[コピー貼り付けを有効]** にする プロパティを設定します。
 
  既定では、ユーザーが要素をクリップボードにコピーすると、次の要素もコピーされます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "74301189"
 
   この規則はコピーした要素およびリンクに再帰的に適用されます。
 
-  ![Copied and pasted elements](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+  ![コピーして貼り付けられた要素](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
 
   コピーした要素およびリンクはシリアル化され、<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) に格納されて、クリップボードに配置されます。
 
@@ -41,19 +41,19 @@ ms.locfileid: "74301189"
   ユーザーはコピーした要素を、DSL 定義に従って要素を受け入れることが可能なターゲットに貼り付けることができます。 たとえば、コンポーネント ソリューション テンプレートから生成された DSL で、ユーザーはポートをコンポーネントに貼り付けることができますが、図に貼り付けることはできません。また、コンポーネントを図に貼り付けることができますが、他のコンポーネントに貼り付けることはできません。
 
 ## <a name="customizing-copy-and-paste-behavior"></a>コピーと貼り付け動作のカスタマイズ
- For more information about customizing the model by using program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ プログラムコードを使用したモデルのカスタマイズの詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 
- **Enable or disable copy, cut, and paste.**
-In DSL Explorer, set the **Enable Copy Paste** property of the **Editor** node.
+ **コピー、切り取り、および貼り付けを有効または無効にします。**
+DSL エクスプローラーで、 **[エディター]** ノードの **[コピー貼り付けを有効にする]** プロパティを設定します。
 
- **Copy links to the same target.** たとえば、コピーしたコメント ボックスを同じ件名の要素にリンクします。
-Set the **Propagates Copy** property of the role to **Propagate copy to link only**. For more information, see [Customizing Link Copy Behavior](#customizeLinks).
+ **同じターゲットにリンクをコピーします。** たとえば、コピーしたコメント ボックスを同じ件名の要素にリンクします。
+ロールの **コピーの伝達**"プロパティを"**リンクに反映**する "に設定します。 詳細については、「[リンクコピー動作のカスタマイズ](#customizeLinks)」を参照してください。
 
  リンクされた要素をコピーします。 たとえば、新しい要素をコピーすると、リンクされたすべてのコメント ボックスのコピーも作成されます。
-Set the **Propagates Copy** property of the role to **Propagate copy to link and opposite role player**. For more information, see [Customizing Link Copy Behavior](#customizeLinks).
+ロールの **[コピーの伝達]** プロパティを設定して、**コピーをリンクと反対のロールプレーヤーに伝達**します。 詳細については、「[リンクコピー動作のカスタマイズ](#customizeLinks)」を参照してください。
 
- **Rapidly duplicate elements by copying and pasting.** 通常、コピーしたばかりの項目はまだ選択されており、そこに同じ種類の要素を貼り付けることはできません。
-ドメイン クラスに要素マージ ディレクティブを追加し、マージを親クラスに転送するように設定します。 これはドラッグ操作に同じ効果を持ちます。 For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
+ **コピーと貼り付けによって要素を迅速に複製します。** 通常、コピーしたばかりの項目はまだ選択されており、そこに同じ種類の要素を貼り付けることはできません。
+ドメイン クラスに要素マージ ディレクティブを追加し、マージを親クラスに転送するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、「[要素の作成および移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。
 
  \- または
 
@@ -77,21 +77,21 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Create additional links when the user pastes onto a selected target.** たとえば、要素にコメント ボックスが貼り付けられると、それらの間にリンクが作成されます。
-ターゲット ドメイン クラスに要素マージ ディレクティブを追加し、リンクを追加することでマージを処理するように設定します。 これはドラッグ操作に同じ効果を持ちます。 For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
+ **ユーザーが選択した対象に貼り付けるときに、追加のリンクを作成します。** たとえば、要素にコメント ボックスが貼り付けられると、それらの間にリンクが作成されます。
+ターゲット ドメイン クラスに要素マージ ディレクティブを追加し、リンクを追加することでマージを処理するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、「[要素の作成および移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。
 
  \- または
 
  `ClipboardCommandSet.ProcessOnPasteCommand()` をオーバーライドし、基本のメソッドを呼び出した後で、追加のリンクを作成します。
 
- **Customize the formats in which elements can be copied** to external applications – for example, to add a border to the bitmap form.
-Override *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` in the DslPackage project.
+ 外部アプリケーションに**要素をコピーできる形式をカスタマイズ**します。たとえば、ビットマップフォームに境界線を追加します。
+DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
 
- **Customize how elements are copied to the clipboard by the copy command, but not in a drag operation.**
-Override *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` in the DslPackage project.
+ **コピーコマンドによって要素がクリップボードにコピーされる方法をカスタマイズします。ただし、ドラッグ操作ではコピーしません。**
+DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
 
- **Preserve shape layout through copy and paste.**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 This technique is demonstrated by the example at [VMSDK: Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879).
+ **コピーと貼り付けを使用して図形のレイアウトを保持します。**
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
 
  この効果を得るには、コピーした ElementGroupPrototype に図形とコネクタを追加します。 オーバーライドする最も便利なメソッドは ElementOperations.CreateElementGroupPrototype() です。 そのためには、次のコードを Dsl プロジェクトに追加します。
 
@@ -147,8 +147,8 @@ partial class MyDslDiagram // EDIT NAME
 
 ```
 
- **Paste shapes in a chosen location, such as the current cursor position.**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 This technique is demonstrated by the example at [VMSDK: Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879).
+ **現在のカーソル位置など、選択した場所に図形を貼り付けます。**
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
 
  この効果を得るには、`ClipboardCommandSet.ProcessOnMenuPasteCommand()` をオーバーライドし、`ElementOperations.Merge()` の場所固有のバージョンを使用します。 そのためには、次のコードを DslPackage プロジェクトに追加します。
 
@@ -214,13 +214,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   }
 ```
 
- **Let the user drag and drop elements.**
-See [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
+ **ユーザーが要素をドラッグアンドドロップできるようにします。**
+「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
 
-## <a name="customizeLinks"></a> Customizing Link Copy Behavior
- ユーザーが要素をコピーするときの標準動作は埋め込まれたすべての要素もコピーされることです。 このコピー標準動作は変更できます。 In the DSL Definition, select a role at one side of a relationship and in the Properties window set the **Propagates Copy** value.
+## <a name="customizeLinks"></a>リンクコピー動作のカスタマイズ
+ ユーザーが要素をコピーするときの標準動作は埋め込まれたすべての要素もコピーされることです。 このコピー標準動作は変更できます。 DSL 定義で、リレーションシップの一方の側でロールを選択し、プロパティウィンドウ **[伝達するコピー]** の値を設定します。
 
- ![Propagates Copy property of domain role](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![ドメインロールのコピープロパティを伝達します](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
  次の 3 つの値があります。
 
@@ -230,7 +230,7 @@ See [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop
 
 - コピーをリンクおよび反対のロール プレーヤーに伝達する - コピーしたグループにリンクの他端の要素のコピーが含まれます。
 
-  ![Effect of copying with PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+  ![PropagateCopyToLinkOnly を使用したコピーの効果](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
 
   変更内容はコピーする要素とイメージの両方に影響します。
 
@@ -238,17 +238,17 @@ See [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop
  オブジェクトのコピー、貼り付け、作成、および削除に関する DSL の動作の多くの側面は、図に結合されている <xref:Microsoft.VisualStudio.Modeling.ElementOperations> のインスタンスにより規定されます。 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> から独自のクラスを導出し、図のクラスの <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> プロパティをオーバーライドすることにより、DSL の動作を変更できます。
 
 > [!TIP]
-> For more information about customizing the model by using program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> プログラムコードを使用したモデルのカスタマイズの詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 
- ![Sequence diagram for the Copy operation](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![コピー操作のシーケンス図](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
 
- ![Sequence diagram of Paste operation](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![貼り付け操作のシーケンス図](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
 
 #### <a name="to-define-your-own-elementoperations"></a>独自の ElementOperations を定義するには
 
 1. DSL プロジェクト内の新しいファイルに、<xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> から派生するクラスを作成します。
 
-2. 図のクラス用に部分クラス定義を追加します。 The name of this class can be found in **Dsl\GeneratedCode\Diagrams.cs**.
+2. 図のクラス用に部分クラス定義を追加します。 このクラスの名前は、 **Dsl\GeneratedCode\Diagrams.cs**で確認できます。
 
     図のクラスで、<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> をオーバーライドし、ElementOperations サブクラスのインスタンスを返します。 呼び出しのたびに同じインスタンスを返す必要があります。
 
@@ -287,16 +287,16 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>他のモデルからドラッグした項目の受信
- ElementOperations を使用して、コピー、移動、削除、およびドラッグ アンド ドロップの動作を定義することもできます。 ElementOperations の使用デモとして、ここに示す例はドラッグ アンド ドロップのカスタム動作を定義します。 However, for that purpose you might consider the alternative approach described in [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md), which is more extensible.
+ ElementOperations を使用して、コピー、移動、削除、およびドラッグ アンド ドロップの動作を定義することもできます。 ElementOperations の使用デモとして、ここに示す例はドラッグ アンド ドロップのカスタム動作を定義します。 ただし、そのためには、「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」で説明されている別の方法を検討することもできます。これは、拡張可能です。
 
  ElementOperations クラスに次の 2 つのメソッドを定義します。
 
-- ソース要素をターゲットの図形、コネクタ、または図にドラッグ可能かどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
+- ソース要素をターゲット図形、コネクタ、または図にドラッグできるかどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
 
 - ソース要素をターゲットに結合する `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`。
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()` は、マウスが図の上を移動するときにユーザーに示されるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。
+ `CanMerge()` は、マウスを図の上に移動したときにユーザーに与えられるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。
 
  要素グループ プロトタイプは任意の数の要素およびリンクを含むことができます。 要素の種類はその GUID により識別できます。 GUID はドラッグした図形のものであり、基になるモデル要素のものではありません。 次の例で、`CanMerge()` は、クラスの図形を UML 図からこの図にドラッグした場合に true を返します。
 
@@ -375,9 +375,9 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>コピーの標準動作
  このセクションのコードは、コピー動作を変更するためにオーバーライド可能なメソッドを示しています。 独自のカスタマイズを実現する方法を説明するために、このセクションでは、コピーに関するメソッドをオーバーライドしながら、標準の動作を変更しないコードを示します。
 
- ユーザーが CTRL+C キーを押すか、またはコピー メニュー コマンドを使用すると、メソッド <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> が呼び出されます。 You can see how this is set up in **DslPackage\Generated Code\CommandSet.cs**. For more information about how commands are set up, see [How to: Add a Command to the Shortcut Menu](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ ユーザーが CTRL+C キーを押すか、またはコピー メニュー コマンドを使用すると、メソッド <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> が呼び出されます。 この設定方法については、「 **」を参照**してください。 コマンドの設定方法の詳細については、「[方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
- You can override ProcessOnMenuCopyCommand by adding a partial class definition of *MyDsl*`ClipboardCommandSet` in the DslPackage project.
+ DslPackage プロジェクトに*Mydsl*`ClipboardCommandSet` の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドできます。
 
 ```csharp
 using System.Collections.Generic;
@@ -563,5 +563,5 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>参照
- [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md) [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md) [Customizing Deletion Behavior](../modeling/customizing-deletion-behavior.md) [Sample: VMSDK Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>関連項目
+ [要素の作成と移動のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)[削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)[サンプル: vmsdk 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)

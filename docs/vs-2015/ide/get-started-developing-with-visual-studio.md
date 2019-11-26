@@ -1,5 +1,5 @@
 ---
-title: Get Started Developing | Microsoft Docs
+title: 開発を始める |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -31,9 +31,9 @@ Visual Studio へようこそ。 製品を [ダウンロード](https://visualst
 
      [サンプルの読み込み](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [チュートリアルの実施](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [ドキュメントの参照](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [ビデオを見る](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
-- **[C# または Visual Basic (Xamarin) でクロスプラット フォームのモバイル アプリを作成する](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio と Xamarin 用ツールを使用して、Android、iOS、およびユニバーサル Windows プラットフォーム上で共有コード ベースから実行されるモバイル アプリの作成を開始します。
+- **[C# または Visual Basic (Xamarin) でクロスプラットフォームのモバイル アプリを作成する](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio と Xamarin 用ツールを使用して、Android、iOS、およびユニバーサル Windows プラットフォーム上で共有コード ベースから実行されるモバイル アプリの作成を開始します。
 
-     Load a sample: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     サンプルを読み込む: [taskyportable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (ネイティブ UI) また[は xamarin forms の Todo サンプル](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)(xamarin. Forms 共有&#124;UI)[チュートリアル](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;を[参照するドキュメント](https://msdn.microsoft.com/library/mt299001.aspx) &#124;を参照[するビデオを見る](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[C++ でネイティブのクロスプラットフォームのアプリとライブラリを作成する](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** ここに移動して、Android、iOS、ユニバーサル Windows プラットフォーム上で実行される C++ アプリとライブラリの作成を開始します。
 
@@ -55,7 +55,7 @@ Visual Studio へようこそ。 製品を [ダウンロード](https://visualst
 
      [サンプルの読み込み](https://github.com/microsoft/windows-classic-samples) &#124;                     [チュートリアルの実施](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [ドキュメントの参照](https://dev.windows.com/desktop)
 
-- **[Make Office applications](https://msdn.microsoft.com/library/fp161347.aspx)** : Get started creating Office applications that extend and customize Word, Excel, Outlook and PowerPoint with Office 365 services.
+- **[Office アプリケーションの作成](https://msdn.microsoft.com/library/fp161347.aspx)** : office 365 サービスを使用して Word、Excel、Outlook、PowerPoint を拡張およびカスタマイズする office アプリケーションの作成を開始します。
 
      [サンプルの読み込み](https://code.msdn.microsoft.com/office365/) &#124;                       [チュートリアルの実施](https://developer.microsoft.com/graph) &#124;                              [ドキュメントの参照](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [ビデオを見る](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 

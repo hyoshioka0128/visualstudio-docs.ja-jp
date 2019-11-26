@@ -24,9 +24,9 @@ Cloud Explorer を使用すると、Azure リソースやリソース グルー�
 
 [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) と同様に、Cloud Explorer は Azure Resource Manager スタックを基盤としています。 そのため、Cloud Explorer はリソース (Azure リソース グループなど) と Azure サービス (Logic Apps や API Apps など) を認識し、[ロールベースのアクセス制御](/azure/role-based-access-control/role-assignments-portal) (RBAC) をサポートします。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
-* Visual Studio 2015 with the [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657)を使用した Visual Studio 2015。
 * Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](https://go.microsoft.com/fwlink/?LinkId=623901)するか、[Visual Studio サブスクライバー特典を有効](https://go.microsoft.com/fwlink/?LinkId=623901)にします。
 
 > [!NOTE]

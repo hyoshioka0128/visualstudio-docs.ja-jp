@@ -1,5 +1,5 @@
 ---
-title: 'How to: Respond to Changes in a UML Model | Microsoft Docs'
+title: '方法: UML モデル内の変更に応答する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -22,5 +22,5 @@ Visual Studio の UML モデルで変更が生じたときに実行されるコ�
 > [!WARNING]
 > これらの手法は、UML API ではサポートされていません。 将来のバージョンの Visual Studio では機能しなくなる可能性があります。
 
-## <a name="see-also"></a>参照
- [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md) [Sample: Color by Stereotype](https://go.microsoft.com/fwlink/?LinkId=213841)
+## <a name="see-also"></a>関連項目
+ [UML モデルのイベントハンドラー内を移動](../modeling/navigate-the-uml-model.md)する[モデルの外部で変更を反映する](../modeling/event-handlers-propagate-changes-outside-the-model.md)[サンプル: ステレオタイプによる色](https://go.microsoft.com/fwlink/?LinkId=213841)

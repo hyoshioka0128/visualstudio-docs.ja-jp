@@ -21,7 +21,7 @@ ms.locfileid: "74295748"
 
 次に、 **[プロパティ]** ウィンドウを使用してフォームの外観を変更します。
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](https://go.microsoft.com/fwlink/?LinkId=205209)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](https://go.microsoft.com/fwlink/?LinkId=205199)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-set-your-form-properties"></a>フォームのプロパティを設定するには
 
@@ -34,7 +34,7 @@ ms.locfileid: "74295748"
 
 3. フォームを選択したら、 **[プロパティ]** ウィンドウで **Text** プロパティを探します。 一覧の並べ替え方法によっては、下へのスクロールが必要になる場合があります。 **[Text]** をクリックし、「**Picture Viewer**」と入力して Enter キーを押します。  フォームのタイトル バーに「**Picture Viewer**」というテキストが表示され、 **[プロパティ]** ウィンドウが次の図のようになります。
 
-    ![Properties window](../ide/media/express-edittextproperty.png "Express_EditTextProperty") Properties window
+    ![プロパティウィンドウ](../ide/media/express-edittextproperty.png "Express_EditTextProperty")プロパティ ウィンドウ
 
    > [!NOTE]
    > プロパティは、項目別またはアルファベット順に並べ替えることができます。 これらの 2 つの表示を切り替えるには、 **[プロパティ]** ウィンドウのボタンを使用します。 このチュートリアルでは、アルファベット順で表示した方がプロパティを探しやすくなります。
@@ -55,7 +55,7 @@ ms.locfileid: "74295748"
 
    - ツール バーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
-      ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
+      ![[デバッグの開始] ツールバーボタン](../ide/media/express-icondebug.png "Express_IconDebug")[デバッグの開始] ツールバーボタン
 
      前の手順のときと同様に、IDE でプログラムがビルドおよび実行され、ウィンドウが表示されます。
 

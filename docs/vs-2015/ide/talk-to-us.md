@@ -18,10 +18,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299928"
 ---
-# <a name="talk-to-us"></a>Talk to Us
+# <a name="talk-to-us"></a>ご意見
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [Talk to Us](https://docs.microsoft.com/visualstudio/ide/feedback-options).
+Visual Studio の最新のドキュメントについては、「[お問い合わせ](https://docs.microsoft.com/visualstudio/ide/feedback-options)」を参照してください。
 
 ドキュメントをより良いものにするために、皆様のご意見をお寄せください。 個別に回答することはできませんが、お寄せいただいたフィードバックは、適切な担当者に届けられます。
 
@@ -29,7 +29,7 @@ For the latest documentation on Visual Studio, see [Talk to Us](https://docs.mic
  ページの下部にあるフィードバック ボタン ( **[このページは役に立ちましたか]** ) をお使いください。 このボタンは、すべての MSDN ページに表示されます。 目的の回答が見つからない場合は、お探しの情報の内容をお聞かせください。
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Visual Studio での問題を報告します。
- If you are running into issues using Visual Studio such as crashes, sluggish performance, unexpected behavior, and so on, please report the problem to us by right-clicking on the feedback icon next to **QuickLaunch**, or by choosing **Help &#124; Send Feedback &#124; Report a Problem** from the main menu. 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。
+ クラッシュ、パフォーマンスの低下、予期しない動作など、Visual Studio の使用に関する問題が発生している場合は、[**クイック**起動] の横にあるフィードバックアイコンを右クリックするか、メインメニューの [ヘルプ **&#124; ] [ &#124;フィードバックの送信**] を選択して問題を報告してください。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio の機能に関するご提案
  改善できる点がありましたら、ぜひご連絡ください! **[提案事項の送信]** を選択して、Visual Studio チームに機能または変更を提案します。
@@ -50,5 +50,5 @@ For the latest documentation on Visual Studio, see [Talk to Us](https://docs.mic
 
  Microsoft サポート サービスは、当時最新だった価格、条項、および条件に基づきます。 料金および条件は将来予告なしに変更することがあります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio 2015 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

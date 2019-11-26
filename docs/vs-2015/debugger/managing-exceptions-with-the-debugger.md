@@ -1,5 +1,5 @@
 ---
-title: Managing Exceptions with the Debugger | Microsoft Docs
+title: デバッガーでの例外の管理 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -69,7 +69,7 @@ ms.locfileid: "74301089"
   
  **[例外設定]** ウィンドウで、例外のカテゴリのノード (たとえば、 **[共通言語ランタイム例外]** 、すなわち、.NET に関する例外) を展開し、そのカテゴリ内の特定の例外 (たとえば、 **[System.AccessViolationException]** ) のチェックボックスをオンにします。 例外のカテゴリ全体を選択することもできます。  
   
- ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![チェックされた AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  特定の例外を選択した場合、その例外がスローされるたびに、処理するか処理しないかに関係なく、デバッガーの実行は停止されます。 この時点で、例外は初回例外と呼ばれます。 例として、いくつかのシナリオを以下に示します。  
   
@@ -135,13 +135,13 @@ ms.locfileid: "74301089"
    }  
    ```  
   
-    If you have **AccessViolationException** checked in **Exception Settings**, when you run this code in the debugger execution will break on the `throw` line in both **ThrowHandledException()** and **ThrowUnhandledException()** .  
+    **例外設定**で **[access違反 ationexception]** がオンになっている場合、デバッガーでこのコードを実行すると、 **ThrowHandledException ()** と**ThrowUnhandledException ()** の両方の `throw` 行で実行が中断されます。  
   
    例外設定を既定値に戻す場合は、ツールバーの **[復元]** ボタンをクリックします。  
   
-   ![Restore defaults in Exception Settings](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![例外設定の既定値に戻す](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a> Setting the debugger to continue on user-unhandled exceptions  
+### <a name="BKMK_UserUnhandled"></a>ユーザーに処理されない例外で続行するようにデバッガーを設定する  
  [ [Just My Code](../debugger/just-my-code.md)] を使用して .NET コードまたは JavaScript コードをデバッグする場合、ユーザー コードで処理されないが他の場所で処理される例外について、中断しないようにデバッガーを設定することができます。  
   
 1. **[例外設定]** ウィンドウでコンテキスト メニューを開くには、ウィンドウで右クリックし、 **[列の表示]** を選択します ( **[マイ コードのみ]** を選択していない場合、このコマンドは表示されません)。  
@@ -152,7 +152,7 @@ ms.locfileid: "74301089"
   
    たとえば、ASP.NET Web アプリケーションは、例外を HTTP 500 状態コードに変換して処理します ([ASP.NET API での例外の処理](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling))。この場合、例外の原因を特定できないことがあります。 次の例では、ユーザー コードは、 `String.Format()` をスローする <xref:System.FormatException>を呼び出します。 実行は次のように中断されます。  
   
-   ![breaks on user&#45;unhanlded exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![ユーザー&#45;による例外の発生時に中断する](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>例外の追加と削除  
  例外は追加および削除することができます。 任意のカテゴリから任意の種類の例外を削除するには、例外を選択し、 **[例外設定]** ツールバーの **[削除]** ボタン (マイナス記号) をクリックするか、または例外を右クリックし、コンテキスト メニューから **[削除]** をクリックします。 例外を削除することは、例外をオフにするのと同じ結果になります。すなわち、該当する例外がスローされたとき、デバッガーは中断されません。  
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  **[例外設定]** に例外を次のように追加できます。  
   
- ![adding generic exception](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![汎用例外を追加しています](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>参照  
- [Continuing Execution After an Exception](../debugger/continuing-execution-after-an-exception.md)   
- [How to: Examine System Code After an Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [How to: Use Native Run-Time Checks](../debugger/how-to-use-native-run-time-checks.md)   
- [Using Run-Time Checks Without the C Run-Time Library](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Exception Assistant](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+## <a name="see-also"></a>関連項目  
+ [例外  後の実行の継続](../debugger/continuing-execution-after-an-exception.md)  
+ [方法: 例外の後にシステムコードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [方法: ネイティブランタイムチェックを使用](../debugger/how-to-use-native-run-time-checks.md)する   
+ [C ランタイムライブラリなしのランタイムチェックの使用](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+ [例外処理アシスタント](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)

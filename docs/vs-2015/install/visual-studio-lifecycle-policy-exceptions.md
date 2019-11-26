@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Lifecycle Policy Exceptions | Microsoft Docs
+title: Visual Studio のライフサイクルポリシーの例外 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -24,7 +24,7 @@ Visual Studio には、多数のコンパイラ、言語、ランタイム、環
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Visual Studio ポリシー以外のライフサイクル ポリシーに従う外部コンポーネント  
  次の表に、Visual Studio に含まれている可能性のある (Visual Studio ソフトウェアの特定のエディションに応じます) Microsoft プラットフォームのコンポーネントを示します。これらは、独自のサポート ポリシーとタイム フレームに従う必要があります。  
   
-|製品ファミリ|外部名|  
+|製品ファミリ|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
@@ -49,4 +49,4 @@ Visual Studio には、多数のコンパイラ、言語、ランタイム、環
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> Windows Library for JavaScript (WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> See also: [Online Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> 参照:[オンラインライフサイクルポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|

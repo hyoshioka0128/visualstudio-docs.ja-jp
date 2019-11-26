@@ -1,5 +1,5 @@
 ---
-title: Add Azure Storage by using Connected Services
+title: 接続済みサービスを使用して Azure Storage を追加する
 description: Visual Studio の [接続済みサービスの追加] ダイアログ ボックスを使用してアプリに Azure Storage を追加する
 author: ghogen
 manager: jillfra
@@ -68,7 +68,7 @@ Visual Studio では、 **[接続済みサービスの追加]** ダイアログ�
 - クラウド サービス プロジェクト (Web ロールおよび worker ロール) - [変更内容 – クラウド サービス プロジェクト](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - WebJob プロジェクト - [変更内容 - WebJob プロジェクト](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="next-steps"></a>次のステップ
-- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+## <a name="next-steps"></a>次のステップ:
+- [MSDN フォーラム: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure Storage チーム ブログ](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure Storage のドキュメント](https://docs.microsoft.com/azure/storage/)

@@ -1,5 +1,5 @@
 ---
-title: Extending Projects | Microsoft Docs
+title: プロジェクトの拡張 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74295986"
 # <a name="extending-projects"></a>プロジェクトの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projects and solutions are the ways Visual Studio organizes code and resource files into compilation and deployment units. You can find more information about projects in [Projects (Visual Studio SDK)](../extensibility/extending-projects.md).  
+プロジェクトとソリューションは、Visual Studio がコードとリソースファイルをコンパイルおよび配置単位に整理する方法です。 プロジェクトの詳細については、 [「プロジェクト (Visual STUDIO SDK)](../extensibility/extending-projects.md)」を参照してください。  
   
- You can create your own project types with the Visual Studio SDK and the Managed Package Framework for Projects, which you can download at [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). To understand how custom projects are implemented, see [New Project Generation: Under the Hood, Part One](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) and [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ 独自のプロジェクトの種類を作成するには、Visual Studio SDK とプロジェクト用の Managed Package Framework を使用します。これは、[プロジェクトのマネージパッケージフレームワーク](https://archive.codeplex.com/?p=mpfproj12)でダウンロードできます。 カスタムプロジェクトの実装方法を理解するには、「[新しいプロジェクトの生成: 内部](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では、パート1と[新しいプロジェクトの生成: 内部ではパート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)」を参照してください。  
   
- The topics in this section describe how to create custom projects and how to manage different types of Visual Studio solution.  
+ このセクションのトピックでは、カスタムプロジェクトを作成する方法と、さまざまな種類の Visual Studio ソリューションを管理する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [基本的なプロジェクト システムの作成、パート 1](../extensibility/creating-a-basic-project-system-part-1.md)  
- Describes how to create a custom project system.  
+ カスタムプロジェクトシステムを作成する方法について説明します。  
   
  [基本的なプロジェクト システムの作成、パート 2](../extensibility/creating-a-basic-project-system-part-2.md)  
- Describes how to create a custom project system.  
+ カスタムプロジェクトシステムを作成する方法について説明します。  
   
  [プロジェクト ファイルでのデータの保存](../extensibility/saving-data-in-project-files.md)  
- Explains how add to project (.*proj) files.  
+ プロジェクト (* proj) ファイルにを追加する方法について説明します。  
   
  [実行時のプロジェクトのサブタイプの確認](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
- Explains how to verify the subtype of a project at run time.  
+ 実行時にプロジェクトのサブタイプを確認する方法について説明します。  
   
  [プロパティ ページの追加と削除](../extensibility/adding-and-removing-property-pages.md)  
- Explains how to customize the property pages for your custom project.  
+ カスタムプロジェクトのプロパティページをカスタマイズする方法について説明します。  
   
  [プロジェクト項目への属性の追加](../extensibility/adding-an-attribute-to-a-project-item.md)  
- Explains how to add an attribute to a custom project item.  
+ カスタムプロジェクト項目に属性を追加する方法について説明します。  
   
  [プロジェクト項目のプロパティの保存](../extensibility/persisting-the-property-of-a-project-item.md)  
- Explains how to persist the properties of a custom project item.  
+ カスタムプロジェクト項目のプロパティを永続化する方法について説明します。  
   
  [ユニバーサル Windows プロジェクトの管理](../extensibility/managing-universal-windows-projects.md)  
- Explains how to manage universal projects.  
+ ユニバーサルプロジェクトを管理する方法について説明します。  
   
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション

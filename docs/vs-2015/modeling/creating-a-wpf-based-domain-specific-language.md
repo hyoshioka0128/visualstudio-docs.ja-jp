@@ -1,5 +1,5 @@
 ---
-title: Creating a WPF-Based Domain-Specific Language | Microsoft Docs
+title: WPF ベースのドメイン固有言語を作成する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,9 +19,9 @@ ms.locfileid: "74295660"
 # <a name="creating-a-wpf-based-domain-specific-language"></a>WPF に基づくドメイン固有言語の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can create a domain-specific language that has a WPF designer instead of a graphical designer.
+グラフィカルなデザイナーではなく、WPF デザイナーを持つドメイン固有言語を作成できます。
 
- Information and samples about this feature can be found on the Visual Studio Visualization and Modeling Tools website at [http://go.microsoft.com/fwlink/?LinkId=186128](https://go.microsoft.com/fwlink/?LinkId=186128)
+ この機能に関する情報とサンプルについては、「」の Visual Studio の視覚化およびモデリングツールの web サイトを参照してください[http://go.microsoft.com/fwlink/?LinkId=186128](https://go.microsoft.com/fwlink/?LinkId=186128)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)

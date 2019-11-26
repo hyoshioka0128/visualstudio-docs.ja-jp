@@ -1,5 +1,5 @@
 ---
-title: Upgrading Coded UI Tests
+title: コード化された UI テストのアップグレード
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -39,12 +39,12 @@ ms.locfileid: "74297992"
 > [!CAUTION]
 > ソリューション エクスプローラーに表示されない、コード化された UI テスト プロジェクトでの参照に関する既知の問題があります。 詳細については、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のインストール メディアに含まれている ReadMe ファイルを参照してください。
 
-|コード化された UI の機能|懸案事項|解決策:|
+|コード化された UI の機能|問題|解決策:|
 |----------------------------|-----------|--------------|
 |Silverlight UI テストは [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ではサポートされていません。|**ビルドは失敗します。**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 を使用していて、Silverlight アプリケーション用にコード化された UI テスト プロジェクトを作成した場合、これらのプロジェクトを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くことはできません。|これらのプロジェクトは [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 のみで管理することをお勧めします。|
 |Firefox UI テストは [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ではサポートされていません。|**ビルドは成功しますが、テストの実行は失敗します。**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 を使用していて、Firefox の Web アプリケーション用にコード化された UI テスト プロジェクトを作成した場合、これらのプロジェクトを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くことはできません。|これらのプロジェクトは [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 のみで管理することをお勧めします。|
 |新しい UI コード テスト API が [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]に追加されました。|**ビルドは失敗します。**<br /><br /> [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で新しい UI テスト API を使用してコード化された UI テストを作成した場合、これらのプロジェクトを [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]で開くことはできません。|新しい API を使用したプロジェクトは、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のみで管理する必要があります。|
-|[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]では、csproj ファイルの "選択" ステートメント内に参照が追加されました。 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]では、フィードバックのターゲット ファイルを使用して、コード化された UI テスト アセンブリの参照を含めます。|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]では、 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (または SP1) で作成された、コード化された UI テストを含まないテスト プロジェクトに、コード化された UI テストを追加できません。<br /><br /> 修復処理は、ターゲット ファイルと選択ステートメントを追加します。 コード化された UI テストがテスト プロジェクト内にない場合、そのプロジェクトは修復済みとしてマークされ、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]でコード化された UI テストを追加する際に適切な参照が追加されません。|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] を使用して同じソリューション内に新しいテスト プロジェクトを作成し、その中に新しいコード化された UI テストを追加する必要があります。 または、 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 でテスト プロジェクトにコード化された UI テストを追加し、そのプロジェクトを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くこともできます。|
+|[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] では、csproj ファイルの "選択" ステートメント内に参照が追加されました。 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] では、フィードバックのターゲット ファイルを使用して、コード化された UI テスト アセンブリの参照を含めます。|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]では、 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (または SP1) で作成された、コード化された UI テストを含まないテスト プロジェクトに、コード化された UI テストを追加できません。<br /><br /> 修復処理は、ターゲット ファイルと選択ステートメントを追加します。 コード化された UI テストがテスト プロジェクト内にない場合、そのプロジェクトは修復済みとしてマークされ、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]でコード化された UI テストを追加する際に適切な参照が追加されません。|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] を使用して同じソリューション内に新しいテスト プロジェクトを作成し、その中に新しいコード化された UI テストを追加する必要があります。 または、 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 でテスト プロジェクトにコード化された UI テストを追加し、そのプロジェクトを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くこともできます。|
 
 ## <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 更新プログラム
  Visual Studio 2012 および Windows 8 の互換性をサポートする [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 の更新プログラムは [Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=34677) で Visual Studio 更新プログラムとしてもダウンロードできます。
@@ -63,5 +63,5 @@ ms.locfileid: "74297992"
 
 - **ロード テスト:** Windows 8 を実行しているコンピューターで、ローカル エリア ネットワーク (LAN) プロファイル以外のネットワークの種類でロード テストを実行すると、ネットワーク エミュレーターのドライバーにより、オペレーティング システムがクラッシュします。 詳細については、「 [サポート技術情報記事 2736182](https://support.microsoft.com/help/2736182/a-gdr-update-for-visual-studio-2010-sp1-is-available-to-add-compatibil)」を参照してください。
 
-## <a name="see-also"></a>参照
- [Porting, Migrating, and Upgrading Visual Studio Projects](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Upgrading Tests from Earlier Versions of Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Generating a Coded UI Test from an Existing Action Recording](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>関連項目
+ [Visual Studio プロジェクトの移植、移行、およびアップグレード Visual](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [studio の以前のバージョンからのテストのアップグレード](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)[既存の操作からコード化](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)された ui テストを生成するコード[化された ui テストと操作の記録に対してサポートされる構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)を記録する

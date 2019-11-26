@@ -1,5 +1,5 @@
 ---
-title: Define a menu command on a modeling diagram | Microsoft Docs
+title: モデリング図にメニューコマンドを定義する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,9 +21,9 @@ ms.locfileid: "74299264"
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>モデリング図にメニュー コマンドを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、UML 図のショートカット メニューに追加のメニュー項目を定義できます。 図上の任意の要素のショートカット メニューに対して、メニュー コマンドを表示して有効にするかどうかを制御できます。また、ユーザーがメニュー項目を選択したときに実行されるコードを記述できます。 これらの拡張機能を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化して、他の Visual Studio ユーザーに配布できます。
+Visual Studio では、UML 図のショートカット メニューに追加のメニュー項目を定義できます。 図上の任意の要素のショートカット メニューに対して、メニュー コマンドを表示して有効にするかどうかを制御できます。また、ユーザーがメニュー項目を選択したときに実行されるコードを記述できます。 これらの拡張機能を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
-## <a name="requirements"></a>［要件］
+## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -31,9 +31,9 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 ## <a name="defining-the-menu-command"></a>メニュー コマンドの定義
  UML デザイナーのメニュー コマンドを作成するには、コマンドの振る舞いを定義するクラスを作成し、そのクラスを Visual Studio Integration Extension (VSIX) に埋め込む必要があります。 VSIX は、コマンドをインストールできるコンテナーとして機能します。 メニュー コマンドを定義する方法は 2 つあります。
 
-- **Create a menu command in its own VSIX using a project template.** これはより簡単な方法です。 メニュー コマンドの他の種類の拡張機能 (検証拡張機能、カスタム ツールボックス項目、ジェスチャ ハンドラーなど) と組み合わせない場合は、この方法を使用します。
+- **プロジェクトテンプレートを使用して、独自の VSIX にメニューコマンドを作成します。** これはより簡単な方法です。 メニュー コマンドの他の種類の拡張機能 (検証拡張機能、カスタム ツールボックス項目、ジェスチャ ハンドラーなど) と組み合わせない場合は、この方法を使用します。
 
-- **Create separate menu command and VSIX projects.** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、メニュー コマンドが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
+- **メニューコマンドと VSIX プロジェクトを個別に作成します。** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、メニュー コマンドが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>メニュー コマンドを独自の VSIX に作成するには
 
@@ -47,7 +47,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 4. F5 キーを押してメニュー コマンドをテストします。 詳細については、「 [メニュー コマンドの実行](#Executing)」を参照してください。
 
-5. Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
+5. 別のコンピューターにメニューコマンドをインストールします。そのためには、プロジェクトによってビルドされた **\\\*.vsix\\\*ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
 
    次の手順も使用できます。
 
@@ -55,7 +55,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 1. 新しい Visual Studio ソリューションまたは既存のソリューションにクラス ライブラリ プロジェクトを作成します。
 
-   1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+   1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
    2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** をクリックします。 中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -65,14 +65,14 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 2. 以下の参照をプロジェクトに追加します。
 
-   |                                                                                                    辞書／辞典／その他                                                                                                    |                                                                                                  実行できる操作                                                                                                  |
+   |                                                                                                    参照                                                                                                    |                                                                                                  実行できる操作                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を使用してコンポーネントを定義する。                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        モデル要素のプロパティを読み取り、変更する。                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      モデル要素を生成する、図のシェイプを変更する。                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[バージョン]                                                                                  | モデル イベント ハンドラーを定義する。<br /><br /> モデルに対する一連の変更をカプセル化する。 For more information, see [Link UML model updates by using transactions](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[バージョン]                                                                                  | モデル イベント ハンドラーを定義する。<br /><br /> モデルに対する一連の変更をカプセル化する。 詳細については、「[トランザクションを使用した UML モデルの更新のリンク](../modeling/link-uml-model-updates-by-using-transactions.md)」を参照してください。 |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[バージョン]<br /><br /> (必須ではない)                                                             |                                                                                   ジェスチャ ハンドラーの追加の図要素にアクセスする。                                                                                   |
-   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> レイヤー図上のコマンドにのみ必要。 For more information, see [Extend layer diagrams](../modeling/extend-layer-diagrams.md). |                                                                                             レイヤー図上のコマンドを定義する。                                                                                              |
+   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> レイヤー図上のコマンドにのみ必要。 詳細については、「[レイヤー図の拡張](../modeling/extend-layer-diagrams.md)」を参照してください。 |                                                                                             レイヤー図上のコマンドを定義する。                                                                                              |
 
 3. プロジェクトにクラス ファイルを追加し、その内容を次のコードに設定します。
 
@@ -166,13 +166,13 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
          **[プロジェクト]**  = *クラス ライブラリ プロジェクト*
 
-## <a name="Implementing"></a> Implementing the Menu Command
+## <a name="Implementing"></a>メニューコマンドの実装
  メニュー コマンド クラスは、<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> に必要なメソッドを実装します。
 
 |||
 |-|-|
 |`string Text { get; }`|メニュー項目のラベルを返します。|
-|`void QueryStatus(IMenuCommand command);`|ユーザーが図上で右クリックすると呼び出されます。<br /><br /> このメソッドによってモデルが変更されることはありません。<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` は、コマンドを表示して有効にするかどうかを指定するために使用します。<br /><br /> 設定できる値:<br /><br /> -   `command.Visible` to `true` if the command must appear in the menu when the user right-clicks in the diagram<br />-   `command.Enabled` to `true` if the user can click the command in the menu<br />-   `command.Text` to set the menu label dynamically|
+|`void QueryStatus(IMenuCommand command);`|ユーザーが図上で右クリックすると呼び出されます。<br /><br /> このメソッドによってモデルが変更されることはありません。<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` は、コマンドを表示して有効にするかどうかを指定するために使用します。<br /><br /> ［設定］:<br /><br /> ダイアグラム内でユーザーが右クリックしたときにコマンドをメニューに表示する必要があるかどうかを `true` するには `command.Visible` を -   します。<br />ユーザーがメニューのコマンドをクリックできるかどうかを `true` するには、`command.Enabled` を -   します。<br />メニューラベルを動的に設定するための `command.Text` の -   |
 |`void Execute (IMenuCommand command);`|ユーザーがメニュー項目をクリックすると呼び出されます (メニュー項目が表示され、有効な場合)。|
 
 ### <a name="accessing-the-model-in-code"></a>コードのモデルにアクセスする
@@ -196,20 +196,20 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 ```
 
 ### <a name="navigating-and-updating-the-model"></a>モデルをナビゲートおよび更新する
- UML モデルの要素は、すべて API を通じて使用できます。 現在の選択項目から、またはモデルのルートから、その他すべての要素にアクセスすることができます。 For more information, see [Navigate the UML model](../modeling/navigate-the-uml-model.md) and [Programming with the UML API](../modeling/programming-with-the-uml-api.md).
+ UML モデルの要素は、すべて API を通じて使用できます。 現在の選択項目から、またはモデルのルートから、その他すべての要素にアクセスすることができます。 詳細については、「 [uml モデルに移動する](../modeling/navigate-the-uml-model.md)」および「 [uml API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)」を参照してください。
 
- If you are dealing with a sequence diagram, see also [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
+ シーケンス図を扱う場合は、「 [UML API を使用して uml シーケンス図を編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)する」も参照してください。
 
  この API を使用すると、要素のプロパティを変更し、要素と関係を削除し、新規要素および関係を生成することもできます。
 
- 既定では、Execute メソッドに対する変更は、別のトランザクションで実行されます。 ユーザーは、それぞれの変更を個別に元に戻すことができます。 If you want to group the changes into a single transaction, use a <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> as described in [Link UML model updates by using transactions](../modeling/link-uml-model-updates-by-using-transactions.md).
+ 既定では、Execute メソッドに対する変更は、別のトランザクションで実行されます。 ユーザーは、それぞれの変更を個別に元に戻すことができます。 変更を1つのトランザクションにグループ化する場合は、「[トランザクションを使用した UML モデルの更新のリンク](../modeling/link-uml-model-updates-by-using-transactions.md)」の説明に従って、<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> を使用します。
 
 ### <a name="use-the-ui-thread-for-updates"></a>更新の際の UI スレッドの使用
  バックグラウンド スレッドからモデルの更新を行うと便利な場合があります。 たとえば、コマンドを使用して低速なリソースからデータを読み込む場合は、その処理をバックグラウンド スレッドで実行できます。これにより、ユーザーは実行中の変更を確認し、必要に応じて操作を取り消すことができます。
 
- ただし、モデル ストアがスレッド セーフでないことに注意してください。 更新を行うには、必ずユーザー インターフェイス (UI) スレッドを使用する必要があります。可能な場合は、バックグラウンド操作の実行中にユーザーが編集を行えないようにしてください。 For an example, see [Update a UML model from a background thread](../modeling/update-a-uml-model-from-a-background-thread.md).
+ ただし、モデル ストアがスレッド セーフでないことに注意してください。 更新を行うには、必ずユーザー インターフェイス (UI) スレッドを使用する必要があります。可能な場合は、バックグラウンド操作の実行中にユーザーが編集を行えないようにしてください。 例については、「[バックグラウンドスレッドから UML モデルを更新する](../modeling/update-a-uml-model-from-a-background-thread.md)」を参照してください。
 
-## <a name="Executing"></a> Executing the Menu Command
+## <a name="Executing"></a>メニューコマンドの実行
  テストを行う場合は、コマンドをデバッグ モードで実行します。
 
 #### <a name="to-test-the-menu-command"></a>メニュー コマンドをテストするには
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
+    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の完全なパス名であることを確認します。通常は次のようになります。
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -236,11 +236,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - `Import` 属性と `Export` 属性のパラメーターが有効である。
 
-    - The `QueryStatus` method is not setting the `command`.`Enabled` or `Visible` fields to `false`.
+    - `QueryStatus` メソッドで `command`が設定されていません。`Enabled` または `Visible` フィールドを `false`します。
 
     - 使用するモデル図の種類 (UML クラス、シーケンスなど) が、メニュー コマンド クラスの属性 ( `[ClassDesignerExtension]`、 `[SequenceDesignerExtension]` など) の 1 つとして表示される。
 
-## <a name="Installing"></a> Installing and uninstalling an extension
+## <a name="Installing"></a>拡張機能のインストールとアンインストール
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。
 
 #### <a name="to-install-an-extension"></a>拡張機能をインストールするには
@@ -249,11 +249,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
+    2. _YourProject_ **\\\*\\ファイルビン**を見つけ**ます。**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
-     The target computer must have one of the editions of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] that you specified in **source.extension.vsixmanifest**.
+     ターゲットコンピューターは、 **source.extension.vsixmanifest**で指定した [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] のいずれかのエディションを持っている必要があります。
 
 3. ターゲット コンピューターで **.vsix** ファイルを開きます。たとえば、ダブルクリックして開きます。
 
@@ -271,9 +271,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
+   *% Localappdata%* **\Local\Microsoft\VisualStudio\\[バージョン] \ 拡張機能**
 
-## <a name="MenuExample"></a> 「例」
+## <a name="MenuExample"></a> 例
  クラス図の 2 つの要素の名前を入れ替えるメニュー コマンドのコードを次の例に示します。 このコードは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能プロジェクト内でビルドし、前のセクションで説明した手順に従ってインストールする必要があります。
 
 ```
@@ -362,5 +362,5 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>参照
- [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md) [Sample: Command to Align Shapes on a UML Diagram](https://go.microsoft.com/fwlink/?LinkID=213809)
+## <a name="see-also"></a>関連項目
+ [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[モデリング図にジェスチャハンドラーを](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[するカスタムモデリングツールボックスアイテムを定義する](../modeling/define-a-custom-modeling-toolbox-item.md)UML[モデルの検証制約の定義](../modeling/define-validation-constraints-for-uml-models.md)uml API を使用した Uml モデルの[編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)Uml [api](../modeling/programming-with-the-uml-api.md)の[サンプル: uml 図で図形を整列するコマンド](https://go.microsoft.com/fwlink/?LinkID=213809)

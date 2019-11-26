@@ -45,9 +45,9 @@ ms.locfileid: "74297807"
 > ショートカット キーは、 **[オプション]** ダイアログ ボックスにある **[全般]** の **[キーボード]** ページで変更できます。
 
 ## <a name="show-previous-results"></a>前の結果の表示
- 既定では、入力した検索用語は検索セッション間で保持されません。 語句を検索し、カーソルを**クイック起動**領域の外側に移動させてから戻した場合は、検索文字列がクリアされます。 検索結果を保持するには、 **[オプション]** ダイアログ ボックスに移動して、 **[クイック起動]** をクリックし、 **[クイック起動がアクティブ化されたときに以前の検索結果を表示する]** チェック ボックスをオンにします。 次回に検索を実行し、クイック起動領域の外側に移動してから戻ると、クイック起動で最後に使用された検索用語が保持され、検索結果が表示されます。
+ 既定では、入力した検索用語は検索セッション間で保持されません。 語句を検索し、カーソルを**クイック起動**領域の外側に移動させてから戻した場合は、検索文字列がクリアされます。 検索結果を保持するには、 **[オプション]** ダイアログ ボックスに移動して、 **[クイック起動]** をクリックし、 **[クイック起動がアクティブ化されたときに以前の検索結果を表示する]** オンにします。 次回に検索を実行し、クイック起動領域の外側に移動してから戻ると、クイック起動で最後に使用された検索用語が保持され、検索結果が表示されます。
 
  **クイック起動**の使用に関する最新のヒントとテクニックについては、「[The Visual Studio Blog](https://go.microsoft.com/fwlink/?LinkId=236054)」を参照してください。
 
-## <a name="see-also"></a>参照
- [General User Interface Elements (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>関連項目
+ [一般的なユーザーインターフェイス要素 (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [環境オプションダイアログボックス](../../ide/reference/environment-options-dialog-box.md)

@@ -24,11 +24,11 @@ ms.locfileid: "74300296"
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: リフレクションが頻繁に実行されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0012|  
-|Category|.NET Framework Usage|  
-|Profiling methods|Sampling|  
-|Message|You may be using Reflection excessively. これは負荷が高い操作です。|  
-|Rule type|Warning|  
+ルール Id |DA0012 |  
+|Category |。NET Framework Usage |  
+|プロファイル方法 |サンプリング |  
+|Message |リフレクションを過度に使用している可能性があります。 これは負荷が高い操作です。|  
+|ルールの種類 |警告 |  
   
 ## <a name="cause"></a>原因  
  InvokeMember および GetMember などの System.Reflection メソッドまたは MemberInvoke などの Type メソッドへの呼び出しが、プロファイリング データの大きな割合を占めています。 可能な場合は、事前バインディングを使用するこれらのメソッドを、依存アセンブリのメソッドに置き換えることを検討してください。  

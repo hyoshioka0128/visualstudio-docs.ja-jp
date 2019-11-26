@@ -36,7 +36,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  [デザイン] ビューでは、 *アートボード* を含むウィンドウがアクティブ ウィンドウになり、主要な作業画面として使用できます。 要素を追加または描画し、必要に応じて変更することにより、アプリのページを視覚的にデザインできます。 詳細については、「 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)」を参照してください。 次の図は、デザイン ビューに表示されるアートボードを示しています。
 
- ![Design view of XAML Designer](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![XAML デザイナーのデザインビュー](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  アートボードで使用できる機能は次のとおりです。
 
@@ -58,7 +58,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  デザイン ビューでは、画面の左下に次のように表示される追加のアートボード コマンドを使用できます。
 
- ![Design view commands](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![デザインビューコマンド](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  このツール バーでは、次のコマンドを使用できます。
 
@@ -72,16 +72,16 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  XAML ビューでは、XAML エディターが含まれているウィンドウがアクティブ ウィンドウであり、XAML エディターが主要な編集ツールです。 Extensible Application Markup Language (XAML) は、アプリケーションのユーザー インターフェイスを指定するための、XML をベースにした宣言型のボキャブラリを提供します。 XAML ビューには、IntelliSense、オート フォーマット、構文の強調表示、およびタグ ナビゲーションが含まれています。 次の図は、XAML ビューを示しています。
 
- ![XAML view](../designers/media/xaml-editor.png "xaml_editor")
+ ![XAML ビュー](../designers/media/xaml-editor.png "xaml_editor")
 
  **分割ビュー バー** 分割ビュー バーは、XAML エディターが下側のウィンドウにある場合に、XAML ビューの上部に表示されます。 分割ビュー バーを使用すると、デザイン ビューと XAML ビューの相対サイズを調節できます。 また、ビューの位置を交換したり ( **[ペインの交換]** ボタンを使用)、ビューの左右分割または上下分割を切り替えたり、どちらかのビューを折りたたんだりできます。
 
  **マークアップのズーム** マークアップのズームを使用すると、XAML ビューのサイズを変更できます。 20% ～ 400% の範囲でズームできます。
 
 ## <a name="device-window"></a>デバイス ウィンドウ
- XAML デザイナーの [デバイス] ウィンドウを使用すると、Windows ストアまたは Windows Phone プロジェクトについて、さまざまなビュー、表示、表示オプションをデザイン時にシミュレートできます。 [デバイス] ウィンドウは、XAML デザイナーを使用しているときに **[デザイン]** メニューから使用できます。 次のように表示されます。
+ XAML デザイナーの [デバイス] ウィンドウを使用すると、Windows ストアまたは Windows Phone プロジェクトについて、さまざまなビュー、表示、表示オプションをデザイン時にシミュレートできます。 [デバイス] ウィンドウは、XAML デザイナーを使用しているときに **[デザイン]** メニューから使用できます。 次の図は、その例です。
 
- ![Device window](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![デバイスウィンドウ](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  [デバイス] ウィンドウで使用可能なオプションは、次のとおりです。
 
@@ -116,7 +116,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
   [ドキュメント アウトライン] ウィンドウを表示するには、メニュー バーで **[表示]** 、 **[その他のウィンドウ]** 、 **[ドキュメント アウトライン]** の順に選択します。
 
-  ![Document Outline window](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![ドキュメントアウトラインウィンドウ](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   [ドキュメント アウトライン] ウィンドウで使用可能なオプションは、次のとおりです。
 
@@ -128,8 +128,8 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
   **スコープを pageRoot に戻す** [ドキュメント アウトライン] ウィンドウの上部にあるオプションで、上向き矢印のシンボルが表示されます。ドキュメント アウトラインを前のスコープに戻します。 スタイルまたはテンプレートのスコープにある場合にのみ使用できます。
 
-## <a name="properties-window"></a>[プロパティ] ウィンドウ
- [プロパティ] ウィンドウでは、コントロールのプロパティの値を設定できます。 次のように表示されます。
+## <a name="properties-window"></a>プロパティ ウィンドウ
+ [プロパティ] ウィンドウでは、コントロールのプロパティの値を設定できます。 次の図は、その例です。
 
  ![プロパティ ウィンドウ](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
@@ -137,5 +137,5 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  各プロパティの値の右側には、 *プロパティ マーカー* がボックスのシンボルとして表示されます。 プロパティ マーカーの外観は、プロパティに適用されるデータ バインドやリソースの有無を示します。 たとえば、白色のボックス シンボルは既定値を示します。黒色のボックス シンボルは、通常、ローカル リソースが適用されていることを示します。オレンジ色のボックスは、通常、データ バインドが適用されていることを示します。 プロパティ マーカーをクリックすると、スタイルの定義に移動したり、データ バインディング ビルダーを開いたり、リソース ピッカーを開いたりできます。
 
-## <a name="see-also"></a>参照
- [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md) [How to create and apply a resource](../designers/how-to-create-and-apply-a-resource.md) [Walkthrough: Binding to data in XAML Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+## <a name="see-also"></a>関連項目
+ [リソースの作成と適用方法](../designers/how-to-create-and-apply-a-resource.md)に[関する XAML デザイナーの要素の操作](../designers/working-with-elements-in-xaml-designer.md)[チュートリアル: XAML デザイナー内のデータへのバインド](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

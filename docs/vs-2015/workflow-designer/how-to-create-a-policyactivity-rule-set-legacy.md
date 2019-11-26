@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a PolicyActivity Rule Set (Legacy) | Microsoft Docs'
+title: '方法: PolicyActivity 規則セットを作成する (レガシ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -25,42 +25,42 @@ ms.locfileid: "74297472"
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>方法: PolicyActivity ルール セットを作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してポリシー アクティビティのルール セットを作成する方法について説明します。
 
- After you have dragged a **Policy** activity item from the **Toolbox** to the workflow design surface, you will want to select an existing rule or create a new rule set for the [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) activity. You select an existing rule set by using the [Select Rule Set Dialog Box (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) and you create rule sets by using the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+ **ツールボックス**からワークフローデザインサーフェイスに**ポリシー**アクティビティ項目をドラッグした後、 [policyactivity](https://go.microsoft.com/fwlink?LinkID=65019)アクティビティに対して既存の規則を選択するか、新しい規則セットを作成することができます。 [ルール[セットの選択] ダイアログボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)を使用して既存のルールセットを選択し、[[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)を使用してルールセットを作成します。
 
 > [!NOTE]
-> You can open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) dialog box directly by double-clicking on a [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) activity that is on the workflow design surface.
+> [[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)ダイアログボックスは、ワークフローデザインサーフェイス上の[policyactivity](https://go.microsoft.com/fwlink?LinkID=65019)アクティビティをダブルクリックして直接開くことができます。
 
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>PolicyActivity アクティビティ用のルール セットを選択または作成するには
 
-1. Right-click the [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019), and then click **Properties** to open the **Properties** window.
+1. [Policyactivity](https://go.microsoft.com/fwlink?LinkID=65019)を右クリックし、 **[プロパティ]** をクリックして、 **[プロパティ]** ウィンドウを開きます。
 
-2. Click the **RuleSetReference** property.
+2. **[Rulesetreference]** プロパティをクリックします。
 
-3. 次のいずれかの操作を行います。
+3. 以下のいずれかを実行します。
 
-    - Click the **RuleSetReference** ellipses **[…]** , and then select an existing rule set in the [Select Rule Set Dialog Box (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md). 次に、手順 10. に進みます。
+    - **Rulesetreference**の省略記号 **[...]** をクリックし、[[ルールセットの選択] ダイアログボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)で既存のルールセットを選択します。 次に、手順 10. に進みます。
 
-         -または-
+         または
 
-    - ルール セットの名前を入力します。 Click the **RuleSetReference** ellipses **[…]** , and then select **Edit** in the [Select Rule Set Dialog Box (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
+    - ルール セットの名前を入力します。 **Rulesetreference**の省略記号 **[...]** をクリックし、[[ルールセットの選択] ダイアログボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)で **[編集]** を選択します。
 
-         -または-
+         または
 
-    - ルール セットの名前を入力します。 Expand the **RuleSetReference** property and select the ellipses **[…]** in the **RuleSet Definition** property.
+    - ルール セットの名前を入力します。 **Rulesetreference**プロパティを展開し、 **[ルールセットの定義]** プロパティの省略記号ボタン **[...]** を選択します。
 
-         The [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) opens.
+         [[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)が開きます。
 
-4. In the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), click **Add Rule** to add a new rule to the rule set.
+4. [[ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)で、 **[ルールの追加]** をクリックして新しいルールをルールセットに追加します。
 
-5. Enter the **Name**, **Priority**, and **Reevaluation** properties, or keep the default values.
+5. **[名前]** 、 **[優先度]** 、再 **[評価]** の各プロパティを入力するか、既定値のままにします。
 
-6. Enter the text for the **Condition**.
+6. **条件**のテキストを入力します。
 
-7. Enter the text for the **Then Actions** and the **Else Actions**.
+7. **Then アクション**と**Else アクション**のテキストを入力します。
 
-8. Click **Add Rule** again to add another rule.
+8. 別のルールを追加するには、 **[ルールの追加]** を再度クリックします。
 
-9. 操作が完了したら、[OK] をクリックします。
+9. 終了したら **[OK]** をクリックします。
 
-## <a name="see-also"></a>参照
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Select Rule Set Dialog Box (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Using the Policy Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md)
+## <a name="see-also"></a>関連項目
+ [Policyactivity](https://go.microsoft.com/fwlink?LinkID=65019)の[[ルールセットの選択] ダイアログボックス](../workflow-designer/select-rule-set-dialog-box-legacy.md)(レガシ)[ポリシーアクティビティの](https://go.microsoft.com/fwlink?LinkID=65004)[レガシワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md)を使用する (レガシ)[ルールセットエディターダイアログボックス](../workflow-designer/rule-set-editor-dialog-box-legacy.md)

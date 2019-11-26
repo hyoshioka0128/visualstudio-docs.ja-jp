@@ -71,5 +71,5 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 |Windowsazure.servicebus を Forwarderx86 します。|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Remote Debugging](../debugger/remote-debugging.md)

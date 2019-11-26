@@ -41,7 +41,7 @@ ms.locfileid: "74301431"
 ## <a name="key-tasks"></a>主なタスク
  単体テストを理解および作成するには、次のトピックを参照してください。
 
-|[タスク]|関連するトピック|
+|タスク|関連トピック|
 |-----------|-----------------------|
 |**クイック スタートおよびチュートリアル:** 次のトピックでは、Visual Studio での単体テストについてコード例から学習できます。|-   [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [テスト エクスプローラーを使用したネイティブ コードの単体テスト](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**テスト エクスプローラーによる単体テスト:** テスト エクスプローラーによって、さらに生産性が高く効率的な単体テストを作成できることを学習します。|-   [単体テストの基本](../test/unit-test-basics.md)<br />-   [単体テスト プロジェクトを作成する](../test/create-a-unit-test-project.md)<br />-   [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)<br />-   [サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)<br />-   [Visual Studio 2010 からの単体テストのアップグレード](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -63,24 +63,24 @@ ms.locfileid: "74301431"
 
  [!INCLUDE[TCMext](../includes/tcmext-md.md)] を使用するのではなく、Visual Studio を使用して自動テストを実行する方法へのリンクを示します。
 
-## <a name="reference"></a>辞書／辞典／その他
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Describes the UnitTesting namespace, which provides attributes, exceptions, asserts, and other classes that support unit testing.
+## <a name="reference"></a>参照
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 単体テストの名前空間について説明します。この名前空間には、単体テストをサポートする属性、例外、アサート、およびその他のクラスが用意されています。
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Describes the UnitTesting.Web namespace, which extends the UnitTesting namespace by providing support for [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] and Web service unit tests.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> は、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] および Web サービスの単体テストをサポートすることによって UnitTesting 名前空間を拡張する unittesting. Web 名前空間について説明します。
 
 ## <a name="external-resources"></a>外部リソース
 
-### <a name="videos"></a>ビデオ
+### <a name="videos"></a>Videos
  [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](https://go.microsoft.com/fwlink/?LinkId=226285)
 
-### <a name="forums"></a>フォーラム
+### <a name="forums"></a>Forums
  [Visual Studio の単体テスト](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>ガイダンス
  [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>辞書／辞典／その他
+### <a name="reference"></a>参照
  [単体テストのコンテンツ インデックス](https://go.microsoft.com/fwlink/?LinkID=254719)
 
-## <a name="see-also"></a>参照
- [Improve Code Quality](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testing the application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
+## <a name="see-also"></a>関連項目
+ [アプリケーションをテストする](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)[コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)

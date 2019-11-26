@@ -1,5 +1,5 @@
 ---
-title: Define a custom modeling toolbox item | Microsoft Docs
+title: カスタムモデリングツールボックスアイテムを定義する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -34,7 +34,7 @@ ms.locfileid: "74299296"
 > [!NOTE]
 > このメソッドを使用して、要素ツールを作成することができます。 つまり、ツールボックスから図にドラッグするツールを作成できます。 コネクタ ツールは作成できません。
 
-## <a name="DefineTool"></a> Defining a Custom Modeling Tool
+## <a name="DefineTool"></a>カスタムモデリングツールの定義
 
 #### <a name="to-define-a-custom-modeling-tool"></a>カスタム モデリング ツールを定義するには
 
@@ -42,21 +42,21 @@ ms.locfileid: "74299296"
 
     - これらの要素の間にはリレーションシップを設定できます。また、要素は、ポート、属性、操作またはピンなどの付属の要素を持つこともできます。
 
-2. 新しいツールにつける名前で図を保存します。 On the **File** menu, use **Save…As**.
+2. 新しいツールにつける名前で図を保存します。 **ファイル** メニューの 保存 を使用します。 **として**。
 
 3. Windows エクスプローラーを使用して、2 つの図ファイルを次のフォルダーまたはその下の任意のサブフォルダーにコピーします。
 
-     *YourDocuments* **\Visual Studio\Architecture Tools\Custom Toolbox Items**
+     [*ドキュメント*] **\ (Visual Studio\Architecture \) カスタムツールボックスアイテム**
 
-    - このフォルダがまだ存在しない場合は作成します。 You might have to create both **Architecture Tools** and **Custom Toolbox Items**.
+    - このフォルダがまだ存在しない場合は作成します。 場合によっては、**アーキテクチャツール**と**カスタムツールボックスアイテム**の両方を作成する必要があります。
 
-    - Copy both diagram files, one with a name that ends "…**diagram**" and the other with a name that ends "…**diagram.layout**"
+    - 両方の図ファイルをコピーします。1つは "..." という名前で終わります。 **".** .." という名前の "...**ダイアグラム。レイアウト**"
 
     - カスタム ツールは必要に応じていくつでも作成できます。 各ツールに 1 つの図を使用します。
 
-4. (Optional) Create a **.tbxinfo** file as described in [How to Define the Properties of Custom Tools](#tbxinfo), and add it to the same directory. これによって、ツールボックス アイコンやヒントなどを定義することができます。
+4. Optional「[カスタムツールのプロパティを定義する方法](#tbxinfo)」の説明に従って **.tbxinfo**ファイルを作成し、同じディレクトリに追加します。 これによって、ツールボックス アイコンやヒントなどを定義することができます。
 
-    - A single **.tbxinfo** file can be used to define several tools. これは、サブフォルダーにある複数の図ファイルを参照できます。
+    - 1つの **.tbxinfo**ファイルを使用して、複数のツールを定義できます。 これは、サブフォルダーにある複数の図ファイルを参照できます。
 
 5. Visual Studio を再起動します。 ツールボックスにそれぞれの図の型に対応する追加のツールが表示されます。
 
@@ -83,8 +83,8 @@ ms.locfileid: "74299296"
 
 - コネクタのルーティング。 コネクタを手動でルーティングする場合、ツールを使用するとルーティングは保持されません。 ポートなどの入れ子になった一部の図形の位置は、その所有者に関連して保持されることはありません。
 
-## <a name="tbxinfo"></a> How to Define the Properties of Custom Tools
- A toolbox information ( **.tbxinfo**) file allows you to specify a toolbox name, icon, tooltip, tab, and help keyword for one or more custom tools. Give it any name, such as **MyTools.tbxinfo**.
+## <a name="tbxinfo"></a>カスタムツールのプロパティを定義する方法
+ ツールボックス情報 ( **.tbxinfo**) ファイルを使用すると、1つまたは複数のカスタムツールのツールボックス名、アイコン、ツールヒント、タブ、およびヘルプキーワードを指定できます。 **Mytools**などの任意の名前を付けます。
 
  一般的なファイル形式は、次のとおりです。
 
@@ -123,31 +123,31 @@ ms.locfileid: "74299296"
 
   定義するツールボックス アイテムごとに `<customToolboxItem>` ノードを追加します。
 
-  The nodes in the **.tbxinfo** file are as follows. 各ノードには、既定値が設定されています。
+  **.Tbxinfo**ファイル内のノードは次のとおりです。 各ノードには、既定値が設定されています。
 
 |ノード名|定義|
 |---------------|-------------|
 |displayName|ツールボックス アイテムの名前。|
 |tabName|アイテムが表示されるツールボックス タブ。 この種類の図の標準タブの名前か、別の名前を指定できます。|
-|イメージ|The location of the bitmap ( **.bmp**) file, which must have height and width of 16, and a color depth of 24 bits.|
+|イメージ|ビットマップ ( **.bmp**) ファイルの位置。高さと幅は16、色深度は24ビットである必要があります。|
 |f1Keyword|ヘルプ トピックを検索するキーワードです。|
-|ヒント|このツールのヒントです。|
+|ヒント (tooltip)|このツールのヒントです。|
 
  Visual Studio でビットマップ ファイルを編集して、[プロパティ] ウィンドウで高さと幅を 16 に設定できます。
 
 > [!NOTE]
-> 図ファイルを単独で使用して試した後に .tbxinfo ファイルを使用し始めた場合、ツールボックスには、ツールボックス アイテムの古いバージョンと新しいバージョンの両方が含まれる場合があります。 これは、.tbxinfo ファイルで図ファイルの名前が間違っている場合にも発生します。 If this occurs, on the shortcut menu of the toolbox choose **Reset Toolbox**. カスタム ツールボックス アイテムが表示されなくなります。 Visual Studio を再起動すると、正しいカスタム アイテムが表示されます。
+> 図ファイルを単独で使用して試した後に .tbxinfo ファイルを使用し始めた場合、ツールボックスには、ツールボックス アイテムの古いバージョンと新しいバージョンの両方が含まれる場合があります。 これは、.tbxinfo ファイルで図ファイルの名前が間違っている場合にも発生します。 この問題が発生した場合は、ツールボックスのショートカットメニューで **[ツールボックスのリセット]** を選択します。 カスタム ツールボックス アイテムが表示されなくなります。 Visual Studio を再起動すると、正しいカスタム アイテムが表示されます。
 
-## <a name="Extension"></a> How to Distribute Toolbox Items in a Visual Studio Extension
- You can distribute toolbox items to other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] users by packaging them into a Visual Studio Extension (VSIX). コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 For more information, see [Deploying Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160780).
+## <a name="Extension"></a>Visual Studio 拡張機能にツールボックスアイテムを配布する方法
+ ツールボックスアイテムを Visual Studio 拡張機能 (VSIX) にパッケージ化することで、他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザーに配布できます。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、「 [Visual Studio 拡張機能の配置](https://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
 
  Visual Studio 拡張機能をビルドするには、通常は VSIX プロジェクトのテンプレートを使用します。 これを行うには、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] をインストールしておく必要があります。
 
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>ツールボックス アイテムを Visual Studio 拡張機能に追加するには
 
-1. [Create and test one or more custom tools](#DefineTool).
+1. [1 つまたは複数のカスタムツールを作成してテスト](#DefineTool)します。
 
-2. [Create a .tbxinfo file](#tbxinfo) that references the tools.
+2. ツールを参照する[.tbxinfo ファイルを作成し](#tbxinfo)ます。
 
 3. 既存の Visual Studio 拡張機能プロジェクトを開きます。
 
@@ -155,57 +155,57 @@ ms.locfileid: "74299296"
 
      新しい Visual Studio 拡張機能プロジェクトを定義します。
 
-    1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+    1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
-    2. In the **New Project** dialog box, under **Installed Templates**, choose **Visual C#** , **Extensibility**, **VSIX project**.
+    2. **[新しいプロジェクト]** ダイアログボックスの **[インストールされているテンプレート]** で、 **[ビジュアルC# ]** 、 **[機能拡張]** 、 **[VSIX プロジェクト]** の順に選択します。
 
-4. プロジェクトにツールボックスの定義を追加します。 Include the **.tbxinfo** file, the diagram files, bitmap files, and any resource files, and make sure that they are included in the VSIX.
+4. プロジェクトにツールボックスの定義を追加します。 **.Tbxinfo**ファイル、図ファイル、ビットマップファイル、およびリソースファイルを含め、それらが VSIX に含まれることを確認します。
 
-    - In Solution Explorer, on the shortcut menu of the VSIX project, choose **Add**, **Existing Item**. In the dialog box, set **Objects of Type: All Files**. Locate the files, select them all, and then choose **Add**.
+    - ソリューションエクスプローラーで、VSIX プロジェクトのショートカットメニューの **[追加]** 、 **[既存の項目]** の順に選択します。 ダイアログボックスで、**種類が [すべてのファイル] のオブジェクト**を設定します。 ファイルを見つけて、すべてを選択し、 **[追加]** を選択します。
 
         > [!NOTE]
         > このプロジェクトでは、図ファイルをモデル エディターで開くことができません。
 
 5. ここで追加したすべてのファイルについて次のプロパティを設定します。 ソリューション エクスプローラーでそれらすべてを選択すると、それらのプロパティを同時に設定できます。 プロジェクト内の他のファイルのプロパティを変更しないように注意してください。
 
-     **Copy to Output Directory** = **Copy Always**
+     **出力ディレクトリにコピー** = **常にコピー**する
 
-     **Build Action** = **Content**
+     **ビルドアクション** = **コンテンツ**
 
-     **Include in VSIX** = **true**
+     **VSIX に含める** = **true**
 
 6. **source.extension.vsixmanifest**を開きます。 このファイルは拡張機能マニフェスト エディターで開きます。
 
-7. Under **Metadata**, add a description for the custom tools.
+7. **[メタデータ]** で、カスタムツールの説明を追加します。
 
-     Under **Assets**, choose **New** and then set the fields in the dialog as follows:
+     **[アセット]** の下で **[新規]** を選択し、次のようにダイアログのフィールドを設定します。
 
-    - **Type** = **Custom Extension Type**
+    - **種類** = **カスタム拡張機能の種類**
 
     - 種類 = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > これは、ドロップダウン リストのオプションの 1 つではありません。 キーボードを使用して入力する必要があります。
 
-    - **Source** = **File on filesystem**.
+    - **ファイルシステム上の** **ソース** = ファイル。
 
-    - **Path** = your **.tbxinfo** file, for example **MyTools.tbxinfo**
+    - **Path** = **.tbxinfo**ファイル (例: **mytools. .tbxinfo** )
 
-8. プロジェクトをビルドします。
+8. プロジェクトをビルドする。
 
-9. **To verify that the extension works**, press F5. Visual Studio の実験用インスタンスが開始します。
+9. **拡張機能が動作することを確認するに**は、F5 キーを押します。 Visual Studio の実験用インスタンスが開始します。
 
      実験用のインスタンスで、関連する型の UML 図を作成するか開きます。 新しいツールがツールボックスに表示されることと、正しく要素が作成されることを確認します。
 
-10. **To obtain a VSIX file for deployment:** In Windows Explorer, open the folder **.\bin\Debug** or **.\bin\Release** to find the **.vsix** file. これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。
+10. **配置用の VSIX ファイルを取得するには、次のようにします。** Windows エクスプローラーで、 **.\bin\Debug**または **.\bin\Release**フォルダーを開き、 **.vsix**ファイルを検索します。 これは [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張ファイルです。 このファイルは、自分のコンピューターにインストールできるほか、他の Visual Studio ユーザーに送信することもできます。
 
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Visual Studio 拡張機能からカスタム ツールをインストールするには
 
 1. Windows エクスプローラーまたは Visual Studio で `.vsix` ファイルを開きます。
 
-2. Choose **Install** in the dialog box that appears.
+2. 表示されるダイアログボックスで **[インストール]** を選択します。
 
-3. To uninstall or temporarily disable the extension, open **Extensions and Updates** from the **Tools** menu.
+3. 拡張機能をアンインストールするか、一時的に無効にするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を開きます。
 
 ## <a name="localization"></a>ローカリゼーション
  拡張機能が別のコンピューターにインストールされるとターゲット コンピューターの言語でツールの名前やヒントが表示されるように設定できます。
@@ -214,13 +214,13 @@ ms.locfileid: "74299296"
 
 1. 1 つ以上のカスタム ツールを含んだ Visual Studio 拡張機能プロジェクトを作成します。
 
-    In the **.tbxinfo** file, use the resource file method to define the tool's `displayName`, toolbox `tabName`, and the tooltip. これらの文字列が定義されているリソース ファイルを作成してアセンブリにコンパイルし、tbxinfo ファイルからそれを参照します。
+    **.Tbxinfo**ファイルで、リソースファイルのメソッドを使用して、ツールの `displayName`、ツールボックス `tabName`、およびツールヒントを定義します。 これらの文字列が定義されているリソース ファイルを作成してアセンブリにコンパイルし、tbxinfo ファイルからそれを参照します。
 
 2. 他の言語の文字列のリソース ファイルが含まれている追加のアセンブリを作成します。
 
-3. 言語のカルチャ コードを名前にしたフォルダーに、追加のアセンブリをそれぞれ配置します。 For example, place a French version of the assembly inside a folder that is named **fr**.
+3. 言語のカルチャ コードを名前にしたフォルダーに、追加のアセンブリをそれぞれ配置します。 たとえば、フランス語版のアセンブリを**fr**という名前のフォルダー内に配置します。
 
-4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 For more information about culture codes, see [CultureInfo.GetCultures method](https://go.microsoft.com/fwlink/?LinkId=160782), which provides a complete list of culture codes.
+4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
 
 5. Visual Studio 拡張機能をビルドして配布します。
 
@@ -231,7 +231,7 @@ ms.locfileid: "74299296"
 ## <a name="other-toolbox-operations"></a>その他のツールボックスの操作
  通常、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] では、ツールの名前を変更したり、別のツールボックスのタブに移動したり、それらを削除したりすることで、ツールボックスをカスタマイズすることができます。 ただし、このトピックで説明した手順で作成したカスタム モデリング ツールでは、このような変更が維持されません。 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] を再起動すると、定義済みの名前とツールボックスの場所でツールボックスが再表示されます。
 
- Furthermore, your custom tools will disappear if you perform the **Reset Toolbox** command. しかし、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] を再起動すると再び表示されます。
+ さらに、 **[ツールボックスのリセット]** コマンドを実行すると、カスタムツールは表示されなくなります。 しかし、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] を再起動すると再び表示されます。
 
-## <a name="see-also"></a>参照
- [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md)
+## <a name="see-also"></a>関連項目
+ [Uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)[するプロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[モデリング図のメニューコマンド](../modeling/define-a-menu-command-on-a-modeling-diagram.md)の定義[uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する

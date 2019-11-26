@@ -1,5 +1,5 @@
 ---
-title: Managed Package Framework Classes | Microsoft Docs
+title: マネージパッケージフレームワーククラス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -28,7 +28,7 @@ Managed Package Framework (MPF) クラスを使用して、マネージド コ�
 ## <a name="mpf-namespaces"></a>MPF 名前空間  
  次の表に、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]で提供されている MPF 名前空間を一覧にして示します。  
   
-|名前空間|コンテンツ|  
+|名前空間|内容|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|COM エラー、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 定数、Win32 Windows を処理するときに役立つクラスが含まれています。|  
 |<xref:Microsoft.VisualStudio.Package>|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト、エディター、MSBuild 用のマネージド コード ラッパーが入っています。|  
@@ -38,7 +38,7 @@ Managed Package Framework (MPF) クラスを使用して、マネージド コ�
 |<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDom デザイナーの拡張機能が含まれます。|  
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|プロジェクトのサブタイプ (「フレーバー」とも呼ばれます) をサポートしています。|  
   
-## <a name="see-also"></a>参照  
- [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Using Visual Studio Interop Assemblies](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+## <a name="see-also"></a>関連項目  
+ [Vspackage とマネージパッケージフレームワーク](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Visual Studio 相互運用機能アセンブリの使用](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [VSPackages およびマネージド パッケージ フレームワーク](../misc/vspackages-and-the-managed-package-framework.md)

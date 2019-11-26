@@ -1,5 +1,5 @@
 ---
-title: Graphics Event List | Microsoft Docs
+title: グラフィックスイベント一覧 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,7 +25,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
   
  イベント一覧を次に示します。  
   
- ![A list of events that have "Index" in their name.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![名前に "Index" を含むイベントの一覧。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>イベント一覧の使用  
  イベント一覧でイベントを選択すると、他のグラフィックス分析ツールで表示されている情報に反映されます。イベント一覧を他のツールと連携して使用すると、レンダリングの問題を詳しく調べて、その原因を特定することができます。 イベント一覧と他のグラフィックス分析ツールを合わせて使用し、レンダリングの問題を解決するための方法については、[サンプル](../debugger/graphics-diagnostics-examples.md)に関するページを参照してください。  
@@ -35,11 +35,11 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 ### <a name="color-coded-events-in-direct3d-12"></a>Direct3D 12 の色分けされたイベント  
  Direct3D 12 は、異なるハードウェア機能に対応する複数のキューを公開します。 Direct3D 12 の特定のグラフィックス イベントに関連付けられたキューを識別しやすくするため、イベント一覧に表示されるイベントは、Direct3D 12 アプリのキャプチャ時に処理していたキューに応じて色分けされます。  
   
-|Direct3D 12 キュー|Color|  
+|Direct3D 12 キュー|色|  
 |-----------------------|-----------|  
 |レンダリング キュー|緑|  
 |計算キュー|黄|  
-|コピー キュー|オレンジ|  
+|コピー キュー|オレンジ色|  
   
  Direct3D 11 は複数のキューを公開していないため、Direct3D 11 アプリのキャプチャ時にイベント一覧のイベントが色分けされることはありません。  
   
@@ -56,7 +56,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
   
 - **[グラフィックス イベント一覧]** ウィンドウで、イベント一覧の上の **[ビュー]** ボックスから、 **[タイムライン]** ビューまたは **[描画呼び出し]** ビューのいずれかを選択します。  
   
-### <a name="filtering-events"></a>イベントのフィルタリング  
+### <a name="filtering-events"></a>イベントのフィルター処理  
  **[グラフィックス イベント一覧]** ウィンドウの右上にある [検索] ボックスを使用してイベント一覧をフィルタリングし、特定のキーワードが含まれている名前のイベントのみを検索することができます。 前の図に示されているように、「 `Vertex`」などの 1 つのキーワードを指定することも、「 `Draw;Primitive`」のようにセミコロンで区切って複数のキーワードを指定することもできます。複数のキーワードを指定すると、名前に `Draw` または `Primitive` のいずれかが含まれているイベントが該当します。 検索では、空白の有無も区別されます。たとえば、「 `VSSet` 」と「 `VS Set` 」は異なる検索であるため、検索する語には注意が必要です。  
   
 ### <a name="moving-between-draw-calls"></a>描画呼び出し間の移動  
@@ -71,9 +71,9 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 |アイコン|イベントの説明|  
 |----------|-----------------------|  
 |(アイコンなし)|一般イベント<br /> ユーザー定義イベント、ユーザー定義イベント グループ、または描画イベント以外のすべてのイベント。|  
-|![The draw event icon](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|描画イベント<br /> キャプチャしたフレームの間に	発生した描画イベントをマークします。|  
-|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント グループ<br /> アプリケーションで定義されているとおりに、関連するイベントをグループ化します。|  
-|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント マーカー<br /> アプリケーションで定義されているとおりに、特定の場所をマークします。|  
+|![描画イベントアイコン](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|描画イベント<br /> キャプチャしたフレームの間に	発生した描画イベントをマークします。|  
+|![ユーザー&#45;定義イベントマーカーのアイコン](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント グループ<br /> アプリケーションで定義されているとおりに、関連するイベントをグループ化します。|  
+|![ユーザー&#45;定義イベントマーカーのアイコン](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント マーカー<br /> アプリケーションで定義されているとおりに、特定の場所をマークします。|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>アプリのユーザー定義イベントのマーク付け  
  ユーザー定義イベントは、ユーザーのアプリケーションに特有のものです。 これを使用して、アプリケーション内で発生する重要なイベントを、グラフィックス イベント一覧のイベントに関連付けることができます。 たとえば、ユーザー定義イベント グループを作成して、関連するイベント (ユーザー インターフェイスをレンダリングするイベントなど) をグループまたは階層にまとめることができます。このようにすると、イベント一覧を簡単に参照したり、特定の種類のオブジェクトが描画されたときにマーカーを作成して、イベント一覧の中でグラフィックス イベントを簡単に見つけたりすることができます。  
@@ -101,5 +101,5 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
   
  ご利用の Direct3D のバージョンがサポートしている API のいずれかを使用することができます。たとえば、ターゲットが Direct3D 11.1 API の場合は、 `SetMarker` または `D3DPerf_SetMarker` を使用してイベント マーカーを作成できますが、 `SetMarkerInt` は Direct3D 11.2 でしか使用できないため、使用できません。また、Direct3D の複数のバージョンをサポートしているものを同じアプリケーション内に混在させることもできます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [チュートリアル: デバイス状態によるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-device-state.md)

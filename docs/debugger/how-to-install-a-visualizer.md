@@ -1,5 +1,5 @@
 ---
-title: 'How to: Install a Visualizer | Microsoft Docs'
+title: '方法: ビジュアライザーをインストールする |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,35 +28,35 @@ ms.locfileid: "74491309"
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
 
 > [!NOTE]
-> In UWP apps, only the standard text, HTML, XML, and JSON visualizers are supported. カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
+> UWP アプリでは、標準のテキスト、HTML、XML、および JSON ビジュアライザーのみがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
 
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>To install a visualizer for Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>ビジュアライザー for Visual Studio 2019 をインストールするには
   
 1. 作成したビジュアライザーを含むダイナミック リンク ライブラリ (DLL: Dynamic Link Library) を探します。
 
-2. Copy the [Debugger Side](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL to either of the following locations:
+2. [デバッガー側](create-custom-visualizers-of-data.md#to-create-the-debugger-side)DLL を次のいずれかの場所にコピーします。
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copy the [Debuggee Side](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL to either of the following locations:
+3. [デバッグ対象のサイド](create-custom-visualizers-of-data.md#to-create-the-debuggee-side)DLL を次のいずれかの場所にコピーします。
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
 
-    Where *Framework* is either:
-    - `net2.0` for debuggees running the `.NET Framework` runtime.
-    - `netstandard2.0` for debuggees using a runtime that supports `netstandard 2.0` (`.NET Framework v4.6.1+` or `.NET Core 2.0+`).
-    - `netcoreapp` for debuggees running the `.NET Core` runtime. (supports `.NET Core 2.0+`)
+    ここで、 *Framework*は次のいずれかになります。
+    - `.NET Framework` ランタイムを実行している debuggees の `net2.0`。
+    - `netstandard 2.0` (`.NET Framework v4.6.1+` または `.NET Core 2.0+`) をサポートするランタイムを使用して debuggees を `netstandard2.0` します。
+    - `.NET Core` ランタイムを実行している debuggees の `netcoreapp`。 (`.NET Core 2.0+`をサポートします)
 
 4. デバッグ セッションを再開します。
 
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>To install a visualizer for Visual Studio 2017 and older
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>ビジュアライザー for Visual Studio 2017 およびそれ以前のバージョンをインストールするには
 
 > [!IMPORTANT]
-> Only .NET Framework visualizers are supported in Visual Studio 2017 and older
+> Visual Studio 2017 以前でサポートされているのは .NET Framework ビジュアライザーのみです
 
 1. 作成したビジュアライザーを含むダイナミック リンク ライブラリ (DLL: Dynamic Link Library) を探します。
 
@@ -71,6 +71,6 @@ ms.locfileid: "74491309"
 > [!NOTE]
 > マネージド ビジュアライザーをリモート デバッグで使用するには、DLL をリモート コンピューター上の同じパスにコピーします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
 - [方法 : ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
