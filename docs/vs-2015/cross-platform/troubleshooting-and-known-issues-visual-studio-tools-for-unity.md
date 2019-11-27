@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573207"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297657"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>トラブルシューティングと既知の問題 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "62573207"
   
 2. Visual Studio Tools for Unity パッケージを Unity プロジェクトにインポートします。 VSTU パッケージをインポートする方法については、「 [作業の開始](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 」ページの「Visual Studio Tools for Unity の構成」をご覧ください。  
   
-3. 新しいソリューションとプロジェクト ファイルを生成します。 今すぐに作成する場合は、Unity エディターのメイン メニューで、**[Visual Studio Tools]**、**[Generate Project Files]** を選択します。 あるいは、この手順をスキップすることもできます。その場合、**[Visual Studio Tools]**、**[Open in Visual Studio]** と選択すると新しいファイルが自動的に Visual Studio Tools for Unity によって作成されます。  
+3. 新しいソリューションとプロジェクト ファイルを生成します。 今すぐに作成する場合は、Unity エディターのメイン メニューで、 **[Visual Studio Tools]** 、 **[Generate Project Files]** を選択します。 あるいは、この手順をスキップすることもできます。その場合、 **[Visual Studio Tools]** 、 **[Open in Visual Studio]** と選択すると新しいファイルが自動的に Visual Studio Tools for Unity によって作成されます。  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio が Visual Studio Tools for Unity によって作成されたソリューションを読み込まない  
- 詳細については、 [この stackoverflow の質問に対する回答](http://stackoverflow.com/a/24035907/36702)を参照してください。  
+ 詳細については、 [この stackoverflow の質問に対する回答](https://stackoverflow.com/questions/20086755/unityvs-visual-studio-can-not-open/24035907#24035907)を参照してください。  
   
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows 8 の場合に Unity ターゲット フレームワークをダウンロードするよう Visual Studio から求められる  
- UnityVS には .NET Framework 3.5 が必要ですが、Windows 8 では既定でインストールされません。 この問題を解決するには、.NET Framework 3.5 のダウンロードとインストールに関する手順に従ってください。  
+ UnityVS には .Net framework 3.5 が必要ですが、Windows 8 では、これが既定でインストールされることはありません。 この問題を解決するには、.NET Framework 3.5 のダウンロードとインストールに関する手順に従ってください。  
   
 ## <a name="known-issues"></a>既知の問題  
  デバッガーが Unity の古いバージョンの C# コンパイラとやり取りする方法に起因する、Visual Studio Tools for Unity の既知の問題があります。 これらの問題を修正するために作業中ですが、修正されるまでは以下の問題が発生する可能性があります。  
@@ -60,11 +60,11 @@ ms.locfileid: "62573207"
   
 1. Visual Studio の新しいインスタンスを開きます。  
   
-2. [プロセスにアタッチ] ダイアログ ボックスを開きます。 Visual Studio の新しいインスタンスのメイン メニューで、**[デバッグ]**、**[プロセスにアタッチ]** を選択します。  
+2. [プロセスにアタッチ] ダイアログ ボックスを開きます。 Visual Studio の新しいインスタンスのメイン メニューで、 **[デバッグ]** 、 **[プロセスにアタッチ]** を選択します。  
   
-3. Visual Studio のフリーズしたインスタンスに、デバッガーをアタッチします。 **[プロセスにアタッチ]** ダイアログ ボックスで、**[選択可能なプロセス]** テーブルからフリーズした Visual Studio インスタンスを選択し、**[アタッチ]** ボタンを選択します。  
+3. Visual Studio のフリーズしたインスタンスに、デバッガーをアタッチします。 **[プロセスにアタッチ]** ダイアログ ボックスで、 **[選択可能なプロセス]** テーブルからフリーズした Visual Studio インスタンスを選択し、 **[アタッチ]** ボタンを選択します。  
   
-4. デバッガーを一時停止します。 Visual Studio の新しいインスタンスのメイン メニューで、**[デバッグ]**、**[すべて中断]** を選択するか、単に **Ctrl+Alt+Break**押します。  
+4. デバッガーを一時停止します。 Visual Studio の新しいインスタンスのメイン メニューで、 **[デバッグ]** 、 **[すべて中断]** を選択するか、単に **Ctrl+Alt+Break**押します。  
   
 5. スレッド ダンプを作成します。 コマンド ウィンドウで、次のコマンドを入力して **Enter**を押します。  
   
@@ -72,6 +72,6 @@ ms.locfileid: "62573207"
    Debug.ListCallStack /AllThreads /ShowExternalCode  
    ```  
   
-    最初に **[コマンド]** ウィンドウを表示しなければならない場合もあります。 Visual Studio のメイン メニューで、**[ビュー]**、**[その他のウィンドウ]**、**[コマンド ウィンドウ]** の順に選択します。  
+    最初に **[コマンド]** ウィンドウを表示しなければならない場合もあります。 Visual Studio のメイン メニューで、 **[ビュー]** 、 **[その他のウィンドウ]** 、 **[コマンド ウィンドウ]** の順に選択します。  
   
 6. 最後に、Visual Studio がフリーズ状態になったときに実行していた作業内容に関する説明を添えて、スレッド ダンプを [vstusp@microsoft.com](mailto:vstusp@microsoft.com)に送信します。

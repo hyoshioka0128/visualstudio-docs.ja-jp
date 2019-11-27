@@ -3,15 +3,15 @@ title: プロジェクトに NuGet パッケージを含める
 description: このドキュメントでは、Visual Studio for Mac を使用してプロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/18/2019
+ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213689"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127208"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Visual Studio for Mac に NuGet パッケージをインストールして管理する
 
@@ -27,7 +27,7 @@ Visual Studio for Mac での NuGet の使用の概要については、「[ク�
 
     ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-packages-menu.png)
 
-2. **[NuGet パッケージの管理]** ウィンドウが起動します。 ダイアログの左上隅にある [ソース] ドロップダウンが `nuget.org` に設定されていることを確実にします。
+2. **[NuGet パッケージの管理]** ウィンドウが起動します。 中央の NuGet パッケージ リポジトリを検索できるように、ダイアログの左上隅にある [ソース] ドロップ ダウンを確実に `nuget.org` に設定します。
 
     ![Nuget パッケージのリスト](media/nuget-walkthrough-add-packages1.png)
 
@@ -71,6 +71,7 @@ using Newtonsoft.Json;
 
 更新オプションと復元オプションはソリューション レベルでも使用でき、ソリューション内のすべてのプロジェクトに影響します。
 
+### <a name="locating-outdated-packages"></a>すべての古いパッケージの特定
 Solution Pad から、現在インストールされているパッケージのバージョンを表示し、更新するパッケージを右クリックすることができます。
 
 ![[更新]、[削除]、[更新] のオプションが表示されている [パッケージ] メニュー](media/nuget-walkthrough-PackageMenu.png)
@@ -83,6 +84,32 @@ Solution Pad から、現在インストールされているパッケージの�
 
 * **[更新]** - ソース サーバーを確認し、新しいバージョン (存在する場合) をダウンロードします。
 * **[削除]** - このプロジェクトからパッケージを削除し、プロジェクトの参照から関連するアセンブリを削除します。
+
+## <a name="manage-packages-for-the-solution"></a>ソリューションのパッケージの管理
+
+ソリューションのパッケージの管理は、複数のプロジェクトを同時に操作するための便利な手段です。
+
+1. ソリューションを右クリックし、 **[NuGet パッケージの管理]** を選択します。
+
+    ![ソリューションの NuGet パッケージの管理](media/nuget-walkthrough-manage-packages-solution.png)
+
+1. ソリューションのパッケージを管理する場合、UI を利用して、操作によって影響を与えるプロジェクトを選択できます。
+
+    ![ソリューションのパッケージを管理する場合のプロジェクト セレクター](media/nuget-walkthrough-add-to-projects.png)
+
+### <a name="consolidate-tab"></a>[統合] タブ
+
+複数のプロジェクトを含むソリューションで作業する場合、各プロジェクトで同じ NuGet パッケージを使用するすべての場所で、そのパッケージのバージョン番号についても確実に同じでものを使用することがベスト プラクティスであると考えられます。 Visual Studio for Mac を使用すると、それが簡単になります。ソリューション用のパッケージの管理を行う場合に、パッケージ マネージャー UI の **[統合]** タブを指定します。 このタブを使用すると、ソリューション内の各プロジェクトで使用されているパッケージのバージョン番号が異なる場合を容易に確認できます。
+
+![パッケージ マネージャー UI の [統合] タブ](media/nuget-walkthrough-consolidate-tab.png)
+
+この例の場合、NuGetDemo プロジェクトでは Microsoft.EntityFrameworkCore 2.20 が使用されていますが、NuGetDemo.Shared では Microsoft.EntityFrameworkCore 2.2.6 が使用されています。 パッケージ バージョンを統合するには、次を実行します。
+
+- プロジェクトの一覧で、更新するプロジェクトを選択します。
+- **[新しいバージョン]** リスト内で該当するすべてのプロジェクトに使用するバージョン (Microsoft.EntityFrameworkCore 3.0.0 など) を選択します。
+- **[パッケージの統合]** ボタンを選択します。
+
+パッケージ マネージャーによって、選択されたすべてのプロジェクトに対して、選択されたパッケージ バージョンがインストールされます。パッケージは **[統合]** タブ上には表示されなくなります。
 
 ## <a name="adding-package-sources"></a>パッケージ ソースの追加
 

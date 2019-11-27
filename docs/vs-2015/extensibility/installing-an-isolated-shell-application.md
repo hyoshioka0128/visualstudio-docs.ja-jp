@@ -1,5 +1,5 @@
 ---
-title: 分離シェル アプリケーションをインストールする |Microsoft Docs
+title: 分離シェルアプリケーションのインストール |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,57 +11,57 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414540"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301159"
 ---
-# <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションをインストールします。
+# <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-シェルのアプリをインストールするには、次の手順を実行する必要があります。  
+シェルアプリをインストールするには、次の手順を実行する必要があります。  
   
 - ソリューションを準備します。  
   
 - アプリケーションの Windows インストーラー (MSI) パッケージを作成します。  
   
-- セットアップ ブートス トラップを作成します。  
+- セットアップブートストラップを作成します。  
   
-  すべてのコード例では、このドキュメントは、[シェルの展開サンプル](http://go.microsoft.com/fwlink/?LinkId=262245)、MSDN web サイトのコード ギャラリーからダウンロードできます。 サンプルでは、これらの各手順の実行の結果を示します。  
+  このドキュメントのコード例はすべて、「[シェルデプロイのサンプル](https://go.microsoft.com/fwlink/?LinkId=262245)」から入手できます。このサンプルは、MSDN web サイトのコードギャラリーからダウンロードできます。 このサンプルは、これらの各手順を実行した結果を示しています。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- このトピックで説明する手順を実行するには、コンピューターに、次のツールをインストールする必要があります。  
+## <a name="prerequisites"></a>前提条件  
+ このトピックで説明する手順を実行するには、次のツールをコンピューターにインストールする必要があります。  
   
 - Visual Studio SDK  
   
-- [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720)バージョン 3.6  
+- [WINDOWS インストーラー XML ツールセット](https://go.microsoft.com/fwlink/?LinkId=82720)バージョン3.6  
   
-  このサンプルは、Microsoft Visualization and Modeling SDK いないすべてのシェルが必要にも必要です。  
+  このサンプルでは、すべてのシェルが必要としない Microsoft の視覚化およびモデリング SDK も必要です。  
   
-## <a name="preparing-your-solution"></a>ソリューションを準備します。  
- 既定では、シェル テンプレートは、VSIX パッケージにビルドしますが、この動作は、デバッグ目的で主にします。 シェル アプリケーションを展開するときに、インストール中にレジストリのアクセスと再起動を許可する MSI パッケージを使用する必要があります。 アプリケーションの MSI の展開を準備するには、次の手順を実行します。  
+## <a name="preparing-your-solution"></a>ソリューションの準備  
+ 既定では、シェルテンプレートは VSIX パッケージに対してビルドされますが、この動作は主にデバッグ目的で使用されます。 シェルアプリケーションを展開するときに、MSI パッケージを使用して、レジストリへのアクセスを許可し、インストール中に再起動する必要があります。 MSI の展開のためにアプリケーションを準備するには、次の手順を実行します。  
   
-#### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>MSI の展開のシェル アプリケーションを準備するには  
+#### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>MSI 展開用のシェルアプリケーションを準備するには  
   
-1. ソリューション内の各 .vsixmanifest ファイルを編集します。  
+1. ソリューション内の各 source.extension.vsixmanifest ファイルを編集します。  
   
-     `Identifier`要素を追加、`InstalledByMSI`要素と`SystemComponent`要素にその値を設定して`true`します。  
+     `Identifier` 要素で、`InstalledByMSI` 要素と `SystemComponent` 要素を追加し、それらの値を `true`に設定します。  
   
-     これらの要素を使用してアンインストールしてから、コンポーネントとユーザーをインストールしようとしてから、VSIX インストーラーを防ぐため、**拡張機能と更新** ダイアログ ボックス。  
+     これらの要素を使用すると、VSIX インストーラーによってコンポーネントがインストールされないようにすることができ、ユーザーは **[拡張機能と更新プログラム]** ダイアログボックスを使用してコンポーネントをアンインストールできなくなります。  
   
-2. VSIX マニフェストを含むプロジェクトごとに、MSI がインストール元の場所にコンテンツを出力するビルド タスクを編集します。 ビルド出力では、VSIX マニフェストが含まれますが、.vsix ファイルのビルドはありません。  
+2. VSIX マニフェストを含むプロジェクトごとに、ビルドタスクを編集して、MSI がインストールされる場所にコンテンツを出力します。 VSIX マニフェストをビルド出力に含めますが、.vsix ファイルはビルドしません。  
   
-## <a name="creating-an-msi-for-your-shell"></a>Shell の MSI を作成します。  
- MSI パッケージを構築することをお勧めしますを使用すること、 [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720)標準セットアップ プロジェクトよりも優れた柔軟性を提供するためです。  
+## <a name="creating-an-msi-for-your-shell"></a>シェルの MSI の作成  
+ MSI パッケージをビルドするには、標準のセットアッププロジェクトよりも柔軟性が高いため、 [WINDOWS インストーラー XML ツールセット](https://go.microsoft.com/fwlink/?LinkId=82720)を使用することをお勧めします。  
   
- Product.wxs ファイルで検出ブロックとシェル コンポーネントのレイアウトを設定します。  
+ 製品の wxs ファイルで、検出ブロックとシェルコンポーネントのレイアウトを設定します。  
   
- ソリューションの .reg ファイルと ApplicationRegistry.wxs の両方のレジストリ エントリを作成します。  
+ 次に、ソリューションの .reg ファイルと ApplicationRegistry の両方にレジストリエントリを作成します。  
   
-### <a name="detection-blocks"></a>検出のブロック  
- 検出ブロックから成る、`Property`を検出する前提条件を指定する要素と`Condition`を返すかどうか、前提条件は、コンピューター上に存在するメッセージを指定する要素。 たとえば、シェル アプリケーションには、再頒布可能パッケージを Microsoft Visual Studio Shell は必要とし、検出のブロックには、次のマークアップはようになります。  
+### <a name="detection-blocks"></a>検出ブロック  
+ 検出ブロックは、検出する前提条件を指定する `Property` 要素と、前提条件がコンピューター上に存在しない場合に返されるメッセージを指定する `Condition` 要素で構成されます。 たとえば、シェルアプリケーションには Microsoft Visual Studio シェル再頒布可能パッケージが必要であり、検出ブロックは次のマークアップに似ています。  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -80,12 +80,12 @@ ms.locfileid: "63414540"
   
 ```  
   
-### <a name="layout-of-shell-components"></a>シェル コンポーネントのレイアウト  
- ターゲット ディレクトリ構造と、インストールするコンポーネントを識別するために要素を追加する必要があります。  
+### <a name="layout-of-shell-components"></a>シェルコンポーネントのレイアウト  
+ ターゲットディレクトリの構造とインストールするコンポーネントを識別するために、要素を追加する必要があります。  
   
-##### <a name="to-set-the-layout-of-shell-components"></a>シェル コンポーネントのレイアウトを設定するには  
+##### <a name="to-set-the-layout-of-shell-components"></a>シェルコンポーネントのレイアウトを設定するには  
   
-1. 階層を作成`Directory`を表すすべてのディレクトリとして次の例は、対象のコンピューター上のファイル システムを作成する要素。  
+1. 次の例に示すように、対象のコンピューター上のファイルシステムに作成するすべてのディレクトリを表す `Directory` 要素の階層を作成します。  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,12 +103,12 @@ ms.locfileid: "63414540"
     </Directory>  
     ```  
   
-     これらのディレクトリによって参照される`Id`インストール必要があるファイルが指定されている場合。  
+     これらのディレクトリは、インストールする必要があるファイルが指定されている場合に `Id` によって参照されます。  
   
-2. シェルとシェル アプリケーションを必要とする、次の例は、コンポーネントを特定します。  
+2. 次の例に示すように、シェルとシェルアプリケーションが必要とするコンポーネントを特定します。  
   
     > [!NOTE]
-    > いくつかの要素は、他のデコンパイルして .wxs ファイルで定義を参照できます。  
+    > 一部の要素は、他の wxs ファイル内の定義を参照する場合があります。  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -123,7 +123,7 @@ ms.locfileid: "63414540"
     </Feature>  
     ```  
   
-    1. `ComponentRef`要素は、現在のコンポーネントが必要なファイルを識別する別のデコンパイルして .wxs ファイルを参照します。 たとえば、GeneralProfile には、次の定義が HelpAbout.wxs でがあります。  
+    1. `ComponentRef` 要素は、現在のコンポーネントが必要とするファイルを識別する別の wxs ファイルを参照します。 たとえば、[全般] プロファイルには、HelpAbout. wxs の次の定義があります。  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ ms.locfileid: "63414540"
         </Fragment>  
         ```  
   
-         `DirectoryRef`要素は、ユーザーのコンピューターにこれらのファイルを移動する場所を指定します。 `Directory`がインストールされるようにし、サブディレクトリに、各要素を指定`File`要素が組み込まれているものや、ソリューションの一部としてが存在し、そのファイルがある MSI ファイルを作成するときに識別するファイルを表します。  
+         `DirectoryRef` 要素は、ユーザーのコンピューター上でのファイルの移動先を指定します。 `Directory` 要素は、サブディレクトリにインストールすることを指定します。各 `File` 要素は、ビルドされたファイル、またはソリューションの一部として存在するファイルを表し、MSI ファイルの作成時にそのファイルがどこで検出されるかを識別します。  
   
-    2. `ComponentGroupRef`要素は他のコンポーネント (またはコンポーネントとコンポーネントのグループ) のグループを参照します。 たとえば、 `ComponentGroupRef` ApplicationGroup 下で定義されて次のように Application.wxs します。  
+    2. `ComponentGroupRef` 要素は、他のコンポーネント (またはコンポーネントおよびコンポーネントグループ) のグループを参照します。 たとえば、ApplicationGroup の下の `ComponentGroupRef` は、次のように Application. wxs に定義されています。  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -159,75 +159,75 @@ ms.locfileid: "63414540"
         ```  
   
     > [!NOTE]
-    > Shell (Isolated) アプリケーションに必要な依存関係は次のとおりです。DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
+    > シェル (分離) アプリケーションに必要な依存関係は、デバッガプロキシ、MasterPkgDef、Resources (特に winprf ファイル)、Application、および PkgDefs です。  
   
 ### <a name="registry-entries"></a>レジストリ エントリ  
- Shell (Isolated) のプロジェクト テンプレートが含まれています、 *ProjectName*インストールでマージするレジストリ キーの .reg ファイル。 これらのレジストリ エントリは、インストールとクリーンアップのための両方の MSI の一部である必要があります。 ApplicationRegistry.wxs で一致するレジストリのブロックを作成することも必要があります。  
+ Shell (分離) プロジェクトテンプレートには、インストール時にマージするレジストリキーの*ProjectName*ファイルが含まれています。 これらのレジストリエントリは、インストールとクリーンアップの両方の目的で MSI の一部である必要があります。 また、ApplicationRegistry で一致するレジストリブロックを作成する必要があります。  
   
-##### <a name="to-integrate-registry-entries-into-the-msi"></a>MSI にレジストリ エントリを統合するには  
+##### <a name="to-integrate-registry-entries-into-the-msi"></a>レジストリエントリを MSI に統合するには  
   
-1. **シェルのカスタマイズ**フォルダーを開き、 *ProjectName*レジストリ。  
+1. **[シェルのカスタマイズ]** フォルダーで、 *ProjectName*. reg を開きます。  
   
-2. $RootFolder$ トークンのすべてのインスタンスをインストール先のディレクトリのパスに置き換えます。  
+2. $RootFolder $ token のすべてのインスタンスを、ターゲットのインストールディレクトリのパスに置き換えます。  
   
-3. アプリケーションに必要な他のレジストリ エントリを追加します。  
+3. アプリケーションで必要なその他のレジストリエントリを追加します。  
   
-4. ApplicationRegistry.wxs を開きます。  
+4. ApplicationRegistry を開きます。  
   
-5. 各レジストリ エントリで*ProjectName*.reg、次の例として、対応するレジストリのブロックを追加します。  
+5. 次の例に示すように、 *ProjectName*の各レジストリエントリに、対応するレジストリブロックを追加します。  
   
-    |*ProjectName*.reg|ApplicationRegisty.wxs|  
+    |*ProjectName*. reg|ApplicationRegisty。 wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @「PhotoStudio DTE オブジェクト」を =|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT/CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE オブジェクト"|\<RegistryKey Id = ' DteClsidRegKey ' Root = ' HKCR ' Key = ' $ (var.DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' $ (var.短い Productname) DTE オブジェクト '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT/CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \ localserver32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id = ' DteLocSrv32RegKey ' Root = ' HKCR ' Key = ' $ (var.DteClsidRegKey) \ localserver32 ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' [INSTALLDIR] $ (var.短い Productname) .exe '/><br /><br /> \</RegistryKey >|  
   
-     この例では、Var.DteClsidRegKey は一番上の行で、レジストリ キーに解決されます。 解決される Var.ShortProductName`PhotoStudio`します。  
+     この例では、Var. DteClsidRegKey は先頭行のレジストリキーに解決されます。 Var. 短い Productname が `PhotoStudio`に解決されます。  
   
-## <a name="creating-a-setup-bootstrapper"></a>セットアップ ブートス トラップの作成  
- すべての前提条件が最初にインストールされている場合にのみ、完了した MSI がインストールされます。 エンド ユーザー エクスペリエンスを容易にするには、収集し、アプリケーションのインストール前に、すべての前提条件をインストールするセットアップ プログラムを作成します。 インストールの成功を確認するには、これらのアクションを実行します。  
+## <a name="creating-a-setup-bootstrapper"></a>セットアップブートストラップの作成  
+ 完成した MSI は、すべての前提条件が最初にインストールされた場合にのみインストールされます。 エンドユーザーエクスペリエンスを簡単にするために、アプリケーションをインストールする前にすべての前提条件を収集してインストールするセットアッププログラムを作成します。 正常にインストールされるようにするには、次の操作を実行します。  
   
-- 管理者によってインストールを強制します。  
+- 管理者によるインストールを強制します。  
   
-- Visual Studio Shell (Isolated) がインストールされているかどうかを検出します。  
+- Visual Studio Shell (分離) がインストールされているかどうかを検出します。  
   
-- 順序で 1 つまたは両方のシェル インストーラーを実行します。  
+- 1つまたは両方のシェルインストーラーを順番に実行します。  
   
 - 再起動要求を処理します。  
   
 - MSI を実行します。  
   
-### <a name="enforcing-installation-by-administrator"></a>管理者によってインストールを適用します。  
- この手順は \Program Files などに必要なディレクトリにアクセスするセットアップ プログラムを有効にするために必要な\\します。  
+### <a name="enforcing-installation-by-administrator"></a>管理者によるインストールの実施  
+ この手順は、セットアッププログラムが、\\などの必要なディレクトリにアクセスできるようにするために必要です。  
   
-##### <a name="to-enforce-installation-by-administrator"></a>管理者によってインストールを強制するには  
+##### <a name="to-enforce-installation-by-administrator"></a>管理者によるインストールを強制するには  
   
-1. セットアップ プロジェクトのショートカット メニューを開き、選択し、**プロパティ**します。  
+1. セットアッププロジェクトのショートカットメニューを開き、 **[プロパティ]** を選択します。  
   
-2. **構成プロパティ/リンカー/マニフェスト ファイル**設定**UAC の実行レベル**に**requireAdministrator**します。  
+2. **構成プロパティ**、リンカー、マニフェストファイル の下で、 **UAC 実行レベル**を**requireAdministrator**に設定します。  
   
-     このプロパティは、埋め込みのマニフェスト ファイルに管理者として実行するプログラムを必要とする属性を配置します。  
+     このプロパティは、プログラムを管理者として実行する必要がある属性を埋め込みマニフェストファイルに配置します。  
   
-### <a name="detecting-shell-installations"></a>シェルのインストールを検出  
- Visual Studio Shell (Isolated) をインストールする必要があるかどうかを判断するには、まず HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install のレジストリ値をチェックして既にインストールされているかどうかを決定します。  
+### <a name="detecting-shell-installations"></a>シェルインストールの検出  
+ Visual Studio Shell (分離) をインストールする必要があるかどうかを判断するには、まず、HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install. のレジストリ値を確認して、インストールされているかどうかを確認します。  
   
 > [!NOTE]
-> これらの値は、Product.wxs にシェル検出ブロックによっても読み込まれます。  
+> これらの値も、シェル検出ブロックによって読み取られます。  
   
- HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder では、Visual Studio シェルがインストールされているファイルをチェックすることができますをする場所を指定します。  
+ HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder Visual Studio シェルがインストールされている場所を指定します。ファイルを確認することもできます。  
   
- シェルのインストールを検出する方法の例は、次を参照してください。、 `GetProductDirFromReg` Utilities.cpp シェルの展開サンプル内の関数。  
+ シェルのインストールを検出する方法の例については、シェル展開サンプルの「`GetProductDirFromReg` functions of Utilities」を参照してください。  
   
- パッケージを必要とする Visual Studio シェルの一方または両方がコンピューターにインストールされていない場合は、インストールするコンポーネントの一覧に追加する必要があります。 例については、次を参照してください。、 `ComponentsPage::OnInitDialog` ComponentsPage.cpp シェルの展開サンプル内の関数。  
+ パッケージに必要な Visual Studio シェルの1つまたは両方がコンピューターにインストールされていない場合は、インストールするコンポーネントの一覧に追加する必要があります。 例については、シェルデプロイサンプルの ComponentsPage の `ComponentsPage::OnInitDialog` 関数を参照してください。  
   
-### <a name="running-the-shell-installers"></a>シェルのインストーラーを実行しています。  
- シェルのインストーラーを実行するには、適切なコマンドライン引数を使用して Visual Studio Shell 再頒布可能パッケージを呼び出します。 少なくとも、コマンドライン引数を使用する必要があります **/norestart/q**次に実行する内容を決定するリターン コードを確認します。 次の例では、シェル (Isolated) 再頒布可能パッケージを実行します。  
+### <a name="running-the-shell-installers"></a>シェルインストーラーの実行  
+ シェルインストーラーを実行するには、正しいコマンドライン引数を使用して Visual Studio シェル再頒布可能パッケージを呼び出します。 少なくとも、コマンドライン引数 **/norestart/q**を使用して、次に何を行う必要があるかを判断するためにリターンコードを監視する必要があります。 次の例では、シェル (分離) 再頒布可能パッケージを実行します。  
   
 ```  
 dwResult = ExecCmd("Vs_IsoShell.exe /norestart /q", TRUE);  
 ```  
   
-### <a name="running-the-shell-language-pack-installers"></a>シェルの言語パック インストーラーを実行しています。  
- シェルまたはシェルがインストールされているし、用言語パックする必要があるだけのことを代わりに検索する場合は、次の例のように、言語パックをインストールできます。  
+### <a name="running-the-shell-language-pack-installers"></a>シェル言語パックインストーラーの実行  
+ シェルまたはシェルがインストールされていて、言語パックが必要な場合は、次の例に示すように言語パックをインストールできます。  
   
 ```  
 dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);  
@@ -235,44 +235,44 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ```  
   
 ### <a name="deciphering-return-values"></a>戻り値の解読  
- Visual Studio Shell (Isolated) のインストールには、いくつかのオペレーティング システムで再起動が必要です。 呼び出しのリターン コードでこの条件を決定できます`ExecCmd`します。  
+ 一部のオペレーティングシステムでは、Visual Studio Shell (分離) インストールに再起動が必要です。 この条件は、`ExecCmd`の呼び出しのリターンコードによって決定できます。  
   
 |戻り値|説明|  
 |------------------|-----------------|  
-|ERROR_SUCCESS|インストールが完了しました。 アプリケーションをインストールできます。|  
-|ERROR_SUCCESS_REBOOT_REQUIRED|インストールが完了しました。 コンピューターが再起動した後は、アプリケーションをインストールできます。|  
-|3015|インストールが進行中です。 インストールを続行するには、コンピューターの再起動が必要です。|  
+|ERROR_SUCCESS|インストールが完了しました。 これで、アプリケーションをインストールできるようになりました。|  
+|ERROR_SUCCESS_REBOOT_REQUIRED|インストールが完了しました。 コンピューターを再起動した後で、アプリケーションをインストールできます。|  
+|3015|インストールが進行中です。 インストールを続行するには、コンピューターを再起動する必要があります。|  
   
-### <a name="handling-restarts"></a>再起動を処理します。  
- 使用してシェル インストーラーを実行したときに、 **/norestart**コンピューターを再起動またはコンピューターの再起動を要求しませんというに指定した引数。 ただし、再起動が必要であるし、インストーラーは、コンピューターが再起動された後、引き続きいることを確認する必要があります。  
+### <a name="handling-restarts"></a>再起動の処理  
+ **/Norestart**引数を使用してシェルインストーラーを実行したときに、コンピューターを再起動しないように指定した場合、またはコンピューターの再起動を要求した場合。 ただし、再起動が必要になる場合があります。コンピューターを再起動した後も、インストーラーが続行されるようにする必要があります。  
   
- 再起動を正しく処理するには、その 1 つだけセットアップ プログラムが再開に設定され、再開プロセスが正しく処理することを確認します。  
+ 再起動を正しく処理するには、1つのセットアッププログラムだけを再開するように設定し、再開プロセスは正しく処理されるようにします。  
   
- ERROR_SUCCESS_REBOOT_REQUIRED または 3015 のいずれかが返された場合、コードは、インストールを続行する前にコンピューターを再起動する必要があります。  
+ ERROR_SUCCESS_REBOOT_REQUIRED または3015が返された場合は、インストールが続行される前に、コードでコンピューターを再起動する必要があります。  
   
- 再起動を処理するには、これらのアクションを実行します。  
+ 再起動を処理するには、次の操作を実行します。  
   
-- Windows の起動時に、インストールを再開するレジストリを設定します。  
+- Windows の起動時にインストールを再開するようにレジストリを設定します。  
   
-- ブートス トラップの二重の再起動を実行します。  
+- ブートストラップのダブル再起動を実行します。  
   
-- シェル インストーラー ResumeData キーを削除します。  
+- シェルインストーラー ResumeData キーを削除します。  
   
 - Windows を再起動します。  
   
-- Msi ファイルの開始パスをリセットします。  
+- MSI の開始パスをリセットします。  
   
-### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Windows の起動時にセットアップを再開するレジストリを設定  
- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ のレジストリ キーは、管理者権限でシステムの起動時に実行し、しは消去されます。 HKEY_CURRENT_USER にはようなキーが含まれていますが、通常のユーザーとして実行されるはのインストールに適していません。 呼び出すインストーラー RunOnce キーに文字列値を配置することで、インストールを再開できます。 ただしを使用して、インストーラーを呼び出すことは推奨、 **再起動/** または開始する代わりにそれを再開しているアプリケーションに通知するようなパラメーター。 複数の再起動が必要なインストールで特に便利ですが、インストール プロセスであるかを示すパラメーターを含めることもできます。  
+### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Windows の起動時にセットアップを再開するようにレジストリを設定する  
+ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ レジストリキーは、システムの起動時に管理者権限で実行され、消去されます。 HKEY_CURRENT_USER には同様のキーが含まれていますが、通常のユーザーとして実行され、インストールには適していません。 インストーラーを呼び出す RunOnce キーに文字列値を指定することで、インストールを再開できます。 ただし、 **/restart」** または同様のパラメーターを使用してインストーラーを呼び出すことをお勧めします。これにより、開始時ではなく再開することがアプリケーションに通知されます。 また、インストールプロセス内の場所を示すパラメーターを含めることもできます。これは、複数の再起動が必要になる可能性があるインストールで特に便利です。  
   
- 次の例では、インストールを再開するに RunOnce レジストリ キーの値を示します。  
+ 次の例は、インストールを再開するための RunOnce レジストリキー値を示しています。  
   
  `"c:\MyAppInstaller.exe /restart /SomeOtherDataFlag"`  
   
-### <a name="installing-double-restart-of-bootstrapper"></a>ブートス トラップの二重の再起動をインストールします。  
- RunOnce から直接セットアップを使用する場合、デスクトップの読み込みが完了することはできません。 完全なユーザー インターフェイスを使用できるようにするには、は、セットアップの別の実行を作成し、RunOnce インスタンスを終了する必要があります。  
+### <a name="installing-double-restart-of-bootstrapper"></a>ブートストラップのダブル再起動のインストール  
+ セットアップを RunOnce から直接使用すると、デスクトップを完全に読み込むことができなくなります。 完全なユーザーインターフェイスを使用できるようにするには、セットアップの別の実行を作成して、RunOnce インスタンスを終了する必要があります。  
   
- 適切なアクセス許可を取得し、次の例として、再起動する前にしてを停止した位置を把握するのに十分な情報を提供する必要がありますように、セットアップ プログラムを再実行する必要があります。  
+ 次の例に示すように、適切なアクセス許可を取得するようにセットアッププログラムを再実行する必要があります。また、再起動の前に停止した場所を知るために十分な情報を指定する必要があります。  
   
 ```  
 if (_cmdLineInfo.IsRestart())  
@@ -284,8 +284,8 @@ if (_cmdLineInfo.IsRestart())
   
 ```  
   
-### <a name="deleting-the-shell-installer-resumedata-key"></a>シェル インストーラー ResumeData キーを削除します。  
- シェル インストーラでは、再起動後にセットアップを再開するデータを HKLM\Software\Microsoft\VisualStudio\14.0\Setup\ResumeData レジストリ キーを設定します。 シェル インストーラーではなく、アプリケーションを再開するため、としては、次の例は、このレジストリ キーを削除します。  
+### <a name="deleting-the-shell-installer-resumedata-key"></a>シェルインストーラー ResumeData キーを削除しています  
+ シェルインストーラーは、再起動後にセットアップを再開するために、HKLM\Software\Microsoft\VisualStudio\14.0\Setup\ResumeData レジストリキーにデータを設定します。 シェルインストーラーではなくアプリケーションが再開されているため、次の例に示すように、そのレジストリキーを削除します。  
   
 ```  
 CString resumeSetupPath(MAKEINTRESOURCE("SOFTWARE\\Microsoft\\VisualStudio\\14.0\\Setup\\ResumeData"));  
@@ -293,7 +293,7 @@ RegDeleteKey(HKEY_LOCAL_MACHINE, resumeSetupPath);
 ```  
   
 ### <a name="restarting-windows"></a>Windows の再起動  
- 必要なレジストリ キーを設定すると後、は、Windows を再起動することができます。 次の例では、さまざまな Windows オペレーティング システムの再起動のコマンドを呼び出します。  
+ 必要なレジストリキーを設定したら、Windows を再起動することができます。 次の例では、さまざまな Windows オペレーティングシステムの再起動コマンドを呼び出します。  
   
 ```  
 OSVERSIONINFO ov;  
@@ -330,8 +330,8 @@ catch(...)
   
 ```  
   
-### <a name="resetting-the-start-path-of-msi"></a>MSI の開始パスをリセットします。  
- 再起動する前に、現在のディレクトリは、セットアップ プログラムの場所ですが、再起動後に、場所が、system32 ディレクトリになります。 セットアップ プログラムは、次の例のように各 MSI 呼び出しの前に、現在のディレクトリをリセットする必要があります。  
+### <a name="resetting-the-start-path-of-msi"></a>MSI の開始パスをリセットしています  
+ 再起動する前に、現在のディレクトリはセットアッププログラムの場所ですが、再起動後に、その場所は system32 ディレクトリになります。 次の例に示すように、セットアッププログラムによって、各 MSI 呼び出しの前に現在のディレクトリがリセットされます。  
   
 ```  
 CString GetSetupPath()  
@@ -350,8 +350,8 @@ CString GetSetupPath()
   
 ```  
   
-### <a name="running-the-application-msi"></a>アプリケーションの MSI を実行します。  
- Visual Studio Shell インストーラーは、ERROR_SUCCESS を返した後、アプリケーションの MSI を実行できます。 セットアップ プログラムには、ユーザー インターフェイスが提供することは、ため、quiet モードで、MSI を開始 (**/q**) とログ記録 (**/L**) 次の例に示すように、します。  
+### <a name="running-the-application-msi"></a>アプリケーション MSI の実行  
+ Visual Studio シェルインストーラーによって ERROR_SUCCESS が返されたら、アプリケーションの MSI を実行できます。 セットアッププログラムはユーザーインターフェイスを提供しているため、次の例に示すように、quiet モード ( **/q**) とログ記録 ( **/L**) で MSI を起動します。  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  

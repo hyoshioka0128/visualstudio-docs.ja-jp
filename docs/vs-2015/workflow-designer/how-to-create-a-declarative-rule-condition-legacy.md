@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a15aad987e46edb58da3560828c70571df2227
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663416"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297494"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>方法: 宣言的ルール条件を作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してルール条件を宣言する方法について説明します。
@@ -27,17 +27,17 @@ ms.locfileid: "72663416"
 
  宣言的ルール条件は、次のような Windows Workflow Foundation 事前定義アクティビティで使用されます。
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [(Sequentialworkflowactivity)](http://go.microsoft.com/fwlink?LinkID=65040)
+- [(Sequentialworkflowactivity)](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>ルール条件エディタを使って宣言的ルール条件を作成するには
 
@@ -63,5 +63,5 @@ ms.locfileid: "72663416"
 
      **[条件の選択**] ダイアログボックスの使用方法の詳細については、「 [[条件の選択] ダイアログボックス (レガシ)](../workflow-designer/select-condition-dialog-box-legacy.md)」を参照してください。
 
-## <a name="see-also"></a>参照
- [ [While アクティビティ](http://go.microsoft.com/fwlink?LinkID=65091)ルール条件エディター] ダイアログボックス[を使用](http://go.microsoft.com/fwlink?LinkID=65080)して、 [IfElseBranchActivity アクティビティ](http://go.microsoft.com/fwlink?LinkID=65075)を使用して[Conditionedactivitygroup を使用する](http://go.microsoft.com/fwlink?LinkID=65066)[従来のワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md) [(レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)[ワークフローの条件を使用し](http://go.microsoft.com/fwlink?LinkID=65009)た[[条件の選択] ダイアログボックス (レガシ)](../workflow-designer/select-condition-dialog-box-legacy.md)
+## <a name="see-also"></a>関連項目
+ [レガシワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md) [ConditionedActivityGroup を](https://go.microsoft.com/fwlink?LinkID=65066)使用した[IfElseBranchActivity アクティビティ](https://go.microsoft.com/fwlink?LinkID=65075)[の使用 [](https://go.microsoft.com/fwlink?LinkID=65080) [While](https://go.microsoft.com/fwlink?LinkID=65091)アクティビティ[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [[条件の選択] ダイアログボックス (レガシ](../workflow-designer/select-condition-dialog-box-legacy.md))[ワークフロー内の条件](https://go.microsoft.com/fwlink?LinkID=65009)の使用

@@ -46,16 +46,16 @@ HRESULT EnumMembers (
  から数値情報の解釈に使用される基数。  
   
  `refiid`  
- からこの IID は、列挙子をフィルター処理するために渡されます。 IID は、`IDebugPropertyEnumType_All` から継承する `IDebugPropertyEnumType` インターフェイスの1つです。  
+ からこの IID は、列挙子をフィルター処理するために渡されます。 IID は、`IDebugPropertyEnumType_All`から継承する `IDebugPropertyEnumType` インターフェイスの1つです。  
   
  `ppEnum`  
  入出力メンバープロパティを列挙する `IEnumDebugPropertyInfo` インターフェイスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- は、有効な `HRESULT` (通常は `S_OK`) を返します。  
+ は、有効な `HRESULT`(通常は `S_OK`) を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [IDebugPropertyEnumType_All インターフェイス](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [IEnumDebugPropertyInfo インターフェイス](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656016"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300895"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL 定義を編集するために使用するデザイナーの拡張機能を作成できます。 拡張の種類としては、メニューコマンドの追加、ドラッグアンドクリックによるジェスチャのハンドラーの追加、特定の種類の値や関係が変更されたときにトリガーされるルールなどがあります。 拡張機能は、Visual Studio Integration Extension (VSIX) としてパッケージ化し、他のユーザーに配布することができます。
 
- サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK (VMSDK)」 Web サイト](http://go.microsoft.com/fwlink/?LinkID=186128)を参照してください。
+ サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK (VMSDK)」 Web サイト](https://go.microsoft.com/fwlink/?LinkID=186128)を参照してください。
 
 ## <a name="setting-up-the-solution"></a>ソリューションの設定
  拡張機能のコードを含むプロジェクトと、プロジェクトをエクスポートする VSIX プロジェクトを設定します。 ソリューションには、同じ VSIX に組み込まれている他のプロジェクトを含めることができます。
@@ -48,13 +48,13 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 7. クラスライブラリプロジェクトで、次のアセンブリへの参照を追加します。
 
-     VisualStudio. CoreUtility
+     Microsoft.VisualStudio.CoreUtility
 
-     VisualStudio. 11.0. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     VisualStudio (Microsoft. モデル図)
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     VisualStudio (Microsoft. モデルの作成)
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -71,22 +71,22 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
  拡張機能をメイン [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、および他のコンピューターに展開するには、次の手順を実行します。
 
-1. Vsix のインストールファイルを検索するには、vsix プロジェクトの bin \\ * \\ \* .vsix を使用します。
+1. Vsix のインストールファイルを検索するには、vsix プロジェクトの bin\\*\\\*.vsix を使用します。
 
 2. このファイルを対象のコンピュータにコピーし、Windows エクスプローラ (またはファイルエクスプローラー) でダブルクリックします。
 
-    @No__t_0 拡張機能マネージャーが開き、拡張機能がインストールされていることを確認できます。
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能マネージャーが開き、拡張機能がインストールされていることを確認できます。
 
    拡張機能をアンインストールするには、次の手順を実行します。
 
-3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で、 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で、 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
 
 4. 拡張機能を選択して削除します。
 
 ## <a name="adding-a-shortcut-menu-command"></a>ショートカットメニューコマンドの追加
  DSL デザイナー画面または DSL エクスプローラーウィンドウにショートカットメニューコマンドを表示するには、次のようなクラスを記述します。
 
- クラスは `ICommandExtension` を実装し、属性 `DslDefinitionModelCommandExtension` を持つ必要があります。
+ クラスは `ICommandExtension` を実装し、属性 `DslDefinitionModelCommandExtension`を持つ必要があります。
 
 ```
 using System.Collections.Generic;

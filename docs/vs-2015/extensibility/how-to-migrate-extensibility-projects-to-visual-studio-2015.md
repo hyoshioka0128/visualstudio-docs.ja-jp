@@ -1,5 +1,5 @@
 ---
-title: '方法: Visual Studio 2015 への機能拡張プロジェクトの移行 |Microsoft Docs'
+title: '方法: 機能拡張プロジェクトを Visual Studio 2015 に移行するMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,48 +10,48 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435922"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295554"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>方法: 機能拡張プロジェクトを Visual Studio 2015 に移行します。
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>方法: 機能拡張プロジェクトを Visual Studio 2015 に移行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-次に、拡張機能をアップグレードする方法を示します。  
+拡張機能をアップグレードする方法を次に示します。  
   
 > [!IMPORTANT]
-> 以前のバージョンの Visual Studio の拡張機能ソリューションのバージョンを管理する場合は、アップグレードする前に、コピーを作成することを確認します。 アップグレードされたバージョンを前の状態に戻すにくい場合があります。  
+> 以前のバージョンの Visual Studio 用に拡張機能ソリューションのバージョンを維持する場合は、アップグレードする前にコピーを作成してください。 アップグレードされたバージョンを以前の状態に戻すことが困難な場合があります。  
   
-#### <a name="to-upgrade-an-extensibility-solution"></a>機能拡張のソリューションをアップグレードするには  
+#### <a name="to-upgrade-an-extensibility-solution"></a>拡張ソリューションをアップグレードするには  
   
-1. コピーを使用するアップグレードは、新しいバージョンで開きます。 アップグレードを元に戻すことがないことを伝えられます。  
+1. アップグレードするコピーを使用して、新しいバージョンでそれを開きます。 アップグレードを元に戻すことはできません。  
   
-2. アップグレードの完了後は、devenv.exe の新しいバージョンに外部プログラムのパスを変更します。 プロジェクト ノードを右クリックし、**ソリューション エクスプ ローラー**を選択し、**プロパティ**します。 **デバッグ** タブで、検索によって、テキスト ボックス**外部プログラムの開始**を Visual Studio 2015 パスでは次のように devenv.exe のパスを変更して。  
+2. アップグレードが完了したら、外部プログラムのパスを devenv.exe の新しいバージョンに変更します。 **ソリューションエクスプローラー**でプロジェクトノードを右クリックし、 **[プロパティ]** を選択します。 **[デバッグ]** タブで、 **[外部プログラムを開始]** のテキストボックスを見つけ、Devenv.exe のパスを Visual Studio 2015 のパスに変更します。これは次のようになります。  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
   
-3. Microsoft.VisualStudio.Shell.14.0.dll への参照を追加します。 (でプロジェクト ノードを右クリックし、**ソリューション エクスプ ローラー**選び、**追加/reference**します。 選択、**拡張** タブをクリックして確認**Microsoft.VisualStudio.Shell.14.0**)。  
+3. VisualStudio への参照を追加します。 (**ソリューションエクスプローラー**でプロジェクトノードを右クリックし、 **[追加/参照]** をクリックします。 **[拡張]** タブを選択し、 **14.0**を確認します。)  
   
-4. ソリューションをビルドします。 ビルドされたファイルがデプロイされます。  
+4. ソリューションをビルドします。 ビルドされたファイルは次のように配置されます。  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< 作成者名\>\\< プロジェクト名\>\\< プロジェクト バージョン\>\\**します。  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< 作成者名\>\\< プロジェクト名\>\\< プロジェクトバージョン\>** \\。  
   
-#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>VS SDK の NuGet 参照アセンブリを拡張機能プロジェクトを更新するには  
+#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>機能拡張プロジェクトを NuGet VS SDK 参照アセンブリに更新するには  
   
-1. VS SDK 参照アセンブリがプロジェクトのニーズを決定します。  **ソリューション エクスプ ローラー**、プロジェクトの展開**参照**ノードとプロジェクトの参照の一覧を確認してください。  VS SDK の参照アセンブリは、プレフィックスが**Microsoft.VisualStudio**名 (例。Microsoft.VisualStudio.Shell.14.0)。  
+1. プロジェクトに必要な VS SDK 参照アセンブリを特定します。  **ソリューションエクスプローラー**で、プロジェクトの **[参照設定]** ノードを展開し、プロジェクト参照の一覧を確認します。  VS SDK 参照アセンブリには、名前に**VisualStudio**というプレフィックスが付けられます (例: VisualStudio)。  
   
-2. VS SDK の参照アセンブリを選択してプロジェクトから削除を右クリックし、**削除**します。  
+2. プロジェクトから VS SDK 参照アセンブリを選択し、右クリックして**削除**します。  
   
-3. VS SDK の参照アセンブリの NuGet のバージョンを追加します。  **ソリューション エクスプ ローラーの参照**ノードを開いて、 **NuGet パッケージの管理.** ダイアログ ボックス。  このダイアログ ボックスの詳細については、表示[ダイアログによる NuGet パッケージの管理](http://docs.nuget.org/Consume/Package-Manager-Dialog)します。 VS SDK の参照アセンブリが で公開されている[nuget.org](http://www.nuget.org)によって[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)します。  
+3. VS SDK 参照アセンブリの NuGet バージョンを追加します。  **ソリューションエクスプローラー参照** ノードで、**NuGet パッケージの管理** を開きます。 ダイアログで、ユーザー アカウントを追加します。  このダイアログの詳細については、「[ダイアログを使用した NuGet パッケージの管理](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。 VS SDK 参照アセンブリは、 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)によって[nuget.org](https://www.nuget.org/)に公開されます。  
   
-4. 使用して**nuget.org**として、**パッケージ ソース**、必要な参照アセンブリに一致する NuGet パッケージ名の検索 (例。Microsoft.VisualStudio.Shell.14.0)、プロジェクトにインストールします。  NuGet は、初期のアセンブリの依存関係を満たすために複数の参照アセンブリを追加する可能性があります。  
+4. **パッケージソース**として**nuget.org**を使用して、目的の参照アセンブリに一致する nuget パッケージ名 (例: VisualStudio) を検索し、プロジェクトにインストールします。  NuGet では、初期アセンブリの依存関係を満たすために、複数の参照アセンブリを追加できます。  
   
-     VS SDK をインストールして VS SDK のすべての参照アセンブリが一度に追加できる場合は、[メタ パッケージ](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)します。  
+     必要に応じて、VS SDK[メタパッケージ](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)をインストールして、すべての vs sdk 参照アセンブリを一度に追加できます。  
   
-5. NuGet のバージョンの VS SDK ビルド ツールの使用に切り替えることもできます。 この NuGet パッケージは[Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools)に 1 回追加し、プロジェクトが必要なツールを含むし、VS SDK をインストールせず、コンピューターで、機能拡張プロジェクトをビルドできるようにファイルを対象します。  
+5. また、VS SDK ビルドツールの NuGet バージョンを使用するように切り替えることもできます。 この NuGet[パッケージは、](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools)プロジェクトに追加されると、VS SDK がインストールされていないコンピューターで機能拡張プロジェクトをビルドできるようにするために必要なツールとターゲットファイルが含まれます。  
   
 > [!NOTE]
-> ない NuGet 参照アセンブリおよびツールを使用する既存の機能拡張プロジェクトを更新することが必要です。  参照アセンブリと VS SDK と共にインストールされるツールを使用してビルドを継続できます。
+> NuGet 参照アセンブリおよびツールを使用するために、既存の機能拡張プロジェクトを更新する必要はありません。  これらは、VS SDK と共にインストールされた参照アセンブリとツールを使用して、引き続きビルドできます。

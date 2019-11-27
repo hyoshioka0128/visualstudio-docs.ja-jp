@@ -1,7 +1,7 @@
 ---
 title: クロスプラットフォームの C++ によるモバイル開発 | Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589039"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098981"
 ---
 # <a name="cross-platform-mobile-development-with-c"></a>C++ によるクロスプラットフォーム モバイル開発
 
@@ -42,10 +42,6 @@ C++ によるモバイル開発は、Visual Studio に付属しているイン�
 Android または iOS の開発者向けに開始方法を説明している優れた資料が用意されています。 Visual Studio は、表現力豊かな優れた開発環境です。 使用方法を学ぶには、「[Android 開発者のための概要](/previous-versions/windows/apps/dn275875\(v=win.10\))」または「[iOS 開発者のための概要](/previous-versions/windows/apps/jj657966\(v=win.10\))」を参照してください。 これらの記事では、Visual Studio の概要と、Windows および Windows Store 対応のクロスプラットフォーム アプリを開発するときに必要となる概念について紹介しています。 iOS および Android 用のクロスプラットフォーム アプリを初めて作成する場合は、「[Android および iOS での OpenGL ES アプリケーションのビルド](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)」を参照してください。
 
 C++ によるモバイル開発ワークロードには、アプリの作成を始めるときに役立つ次のテンプレートが含まれています。
-
-- OpenGLES 2 アプリケーション (Android、iOS、Windows ユニバーサル)
-
-  Android Native Activity アプリ、iOS アプリ、およびユニバーサル Windows アプリをビルドするプロジェクトのセットと、C++ コードの共有ライブラリを含むソリューションを作成します。 これらのアプリでは、共通の C++ OpenGL ES コードを使用して作成されたプラットフォーム固有のライブラリを使用して、各アプリケーションで同じ回転する立方体を描画します。 このテンプレートを使用するには、Visual Studio をインストールするときに、**ユニバーサル Windows プラットフォーム開発**ワークロードを含めます。
 
 - Native-Activity アプリケーション (Android)
 

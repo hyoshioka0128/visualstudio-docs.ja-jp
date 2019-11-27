@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826109"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189378"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>ユニバーサル Windows アプリの HTML UI の応答性を分析する
 このトピックでは、アプリのパフォーマンス問題を UI 応答性プロファイラーを使って切り分ける方法を説明します。UI 応答性プロファイラーは、ユニバーサル Windows アプリで利用できるパフォーマンス ツールです。
@@ -69,7 +69,7 @@ ms.locfileid: "67826109"
 6. アプリのプロファイリングを停止し、プロファイラーによって収集されたデータを表示するには、 **[コレクションの停止]** をクリックします。
 
 ## <a name="isolate-an-issue"></a>問題の特定
- 次のセクションでは、パフォーマンス上の問題を特定するのに役立つ方法を示します。 サンプル パフォーマンス テスト アプリを使用してパフォーマンスの問題を識別し、修正する方法の詳しい手順については、「[チュートリアル: UI の応答性の向上 (HTML)](/visualstudio/profiling/html-ui-responsiveness)」を参照してください。
+ 次のセクションでは、パフォーマンス上の問題を特定するのに役立つ方法を示します。 サンプル パフォーマンス テスト アプリを使用してパフォーマンスの問題を識別し、修正する方法の詳しい手順については、「[チュートリアル: UI の応答性の向上 (HTML)](html-ui-responsiveness.md)」を参照してください。
 
 ### <a name="Workflow"></a> UI の応答性の問題の特定
  以下の手順は、UI 応答性プロファイラーをより効果的に使用するために役立つ、推奨されるワークフローです。
@@ -242,7 +242,7 @@ if (performance.mark && performance.measure) {
 
  次の例は、DOM クリック イベントのイベント リスナーが選択されたときにタイムラインの詳細グラフがどのように表示されるかを示しています。
 
- ![タイムライン詳細グラフ](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
+ ![タイムラインの詳細グラフ](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
 
  この図では、 **[イベント名]** 列の **spinAction** イベント ハンドラーがリンクになっており、クリックすると、ソース コードのイベント ハンドラーが表示されます。 右ペインで、 **Callback function** プロパティによってソース コードへの同じリンクが提供されます。 他のプロパティも、関連付けられた DOM 要素など、イベントに関する情報を提供します。
 

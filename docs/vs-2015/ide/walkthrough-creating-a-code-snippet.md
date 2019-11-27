@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3cf8d0cfd3119113247dedf7723e02fca9634a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662648"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296830"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>チュートリアル: コード スニペットを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72662648"
 コード スニペットは、わずかな手順で作成できます。 必要な操作は、XML ファイルを作成し、適切な要素を指定して、コードを追加するだけです。 コードには、参照や置換パラメーターを追加することもできます。 Visual Studio インストールにスニペットを追加するには、コード スニペット マネージャー ( **[ツール]、[コード スニペット マネージャー]** ) の [インポート] を使用します。
 
 > [!TIP]
-> コード スニペットをより簡単に作成する方法の詳細については、CodePlex の Web サイトで、[Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033) などのコミュニティ ツールを検索してください。
+> コード スニペットをより簡単に作成する方法の詳細については、CodePlex の Web サイトで、[Snippet Editor](https://go.microsoft.com/fwlink/?LinkId=251033) などのコミュニティ ツールを検索してください。
 
 ## <a name="snippet-template"></a>スニペット テンプレート
  基本的なスニペット テンプレートを次に示します。
@@ -75,7 +75,7 @@ ms.locfileid: "72662648"
 
 1. コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 コード スニペット マネージャーを開きます ( **[ツール]、[コード スニペット マネージャー]** )。
 
-2. **[インポート]** ボタンをクリックします。
+2. [インポート] ボタンをクリックします。
 
 3. 前の手順でコード スニペットを保存した場所に移動し、コード スニペットを選択して、 **[開く]** をクリックします。
 
@@ -91,7 +91,7 @@ ms.locfileid: "72662648"
 
 ### <a name="adding-description-and-shortcut-fields"></a>Description フィールドと Shortcut フィールドの追加
 
-1. Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 ファイル `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` を開いて、追加したスニペットを編集します。
+1. Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 ファイル `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`を開いて、追加したスニペットを編集します。
 
 2. Author 要素と Description 要素を Header 要素に追加し、情報を入力します。
 
@@ -126,7 +126,7 @@ ms.locfileid: "72662648"
 
 ### <a name="to-add-references-and-imports"></a>参照とインポートを追加するには
 
-1. Visual Basic スニペットでは、References 要素を使用してプロジェクトに参照を追加し、Imports 要素を使用して Imports 宣言を追加することができます (他の言語のスニペットには、この機能がありません)。たとえば、コード例の `Console.WriteLine` を `MessageBox.Show` に変更した場合は、プロジェクトに system.servicemodel アセンブリを追加する必要があります。
+1. Visual Basic スニペットでは、References 要素を使用してプロジェクトに参照を追加し、Imports 要素を使用して Imports 宣言を追加することができます (他の言語のスニペットには、この機能がありません)。たとえば、コード例の `Console.WriteLine` を `MessageBox.Show`に変更した場合は、プロジェクトに system.servicemodel アセンブリを追加する必要があります。
 
 2. スニペットを開きます。
 
@@ -261,5 +261,5 @@ ms.locfileid: "72662648"
 
     ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)

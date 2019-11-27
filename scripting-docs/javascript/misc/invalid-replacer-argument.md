@@ -23,11 +23,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573810"
 ---
 # <a name="invalid-replacer-argument"></a>置換関数の引数が無効です。
-無効な引数を使用して `JSON.stringify` を呼び出そうとしました。 @No__t_0 引数は、関数または配列である必要があります。  
+無効な引数を使用して `JSON.stringify` を呼び出そうとしました。 `replacer` 引数は、関数または配列である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_0 引数を関数または配列に変更します。  
+- `replacer` 引数を関数または配列に変更します。  
   
 ## <a name="example"></a>例  
  この例のコードでは、`memberfilter` が関数または配列ではなくオブジェクトであるため、ランタイムエラーが発生します。  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の   
  [JSON. Parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)

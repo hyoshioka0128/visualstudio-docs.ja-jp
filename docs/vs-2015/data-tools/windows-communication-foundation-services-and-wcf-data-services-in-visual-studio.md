@@ -33,26 +33,26 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c2dc46a3e78c5823e569aec80a3166c6e30c04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657826"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299572"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio には、分散アプリケーションを作成するための Microsoft テクノロジで Windows Communication Foundation (WCF) および [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を操作するためのツールが用意されています。 このトピックでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 観点からのサービスの概要について説明します。 完全なドキュメントについては、「 [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)」を参照してください。
+Visual Studio には、分散アプリケーションを作成するための Microsoft テクノロジで Windows Communication Foundation (WCF) および [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]を操作するためのツールが用意されています。 このトピックでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 観点からのサービスの概要について説明します。 完全なドキュメントについては、「 [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)」を参照してください。
 
 ## <a name="what-is-wcf"></a>WCF とは
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] は、セキュリティで保護され、信頼性が高く、トランザクション可能で、相互運用可能な分散アプリケーションを作成するための統合フレームワークです。 これにより、ASMX Web サービス、.NET リモート処理、エンタープライズサービス (DCOM)、MSMQ などの古いプロセス間通信テクノロジが置き換えられます。 WCF は、これらのすべてのテクノロジの機能を統一されたプログラミングモデルで統合します。 これにより、分散アプリケーションの開発経験が簡単になります。
 
 #### <a name="what-are-wcf-data-services"></a>WCF Data Services とは
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] は、Open Data (OData) プロトコル標準の実装です。  WCF Data Services を使用すると、表形式のデータを一連の REST Api として公開できるため、GET、POST、PUT、DELETE などの標準的な HTTP 動詞を使用してデータを返すことができます。 サーバー側では、新しい OData サービスを作成するために[ASP.NET Web API](http://www.asp.net/web-api)によって WCF Data Services が置き換えられます。 WCF Data Services クライアントライブラリは、Visual Studio (**Project &#124;サービス参照の追加**) から .net アプリケーションで OData サービスを使用する場合にも引き続き適しています。 詳細については、「[WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)」を参照してください。
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] は、Open Data (OData) プロトコル標準の実装です。  WCF Data Services を使用すると、表形式のデータを一連の REST Api として公開できるため、GET、POST、PUT、DELETE などの標準的な HTTP 動詞を使用してデータを返すことができます。 サーバー側では、新しい OData サービスを作成するために[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)によって WCF Data Services が置き換えられます。 WCF Data Services クライアントライブラリは、Visual Studio (**Project &#124;サービス参照の追加**) から .net アプリケーションで OData サービスを使用する場合にも引き続き適しています。 詳細については、「[WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952)」を参照してください。
 
 ### <a name="wcf-programming-model"></a>WCF プログラミングモデル
- Wcf プログラミングモデルは、WCF サービスと WCF クライアントの2つのエンティティ間の通信に基づいています。 プログラミングモデルは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の <xref:System.ServiceModel> 名前空間にカプセル化されています。
+ Wcf プログラミングモデルは、WCF サービスと WCF クライアントの2つのエンティティ間の通信に基づいています。 プログラミングモデルは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]の <xref:System.ServiceModel> 名前空間にカプセル化されています。
 
 #### <a name="wcf-service"></a>WCF サービス
  WCF サービスは、サービスとクライアントの間のコントラクトを定義するインターフェイスに基づいています。 次のコードに示すように、<xref:System.ServiceModel.ServiceContractAttribute> 属性でマークされています。
@@ -102,7 +102,7 @@ Visual Studio には、分散アプリケーションを作成するための Mi
  WCF サービスホストの詳細については、「 [Wcf サービスホスト (wcfsvchost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)」を参照してください。
 
 #### <a name="wcf-test-client"></a>WCF のテスト用クライアント
- WCF テストクライアントツールを使用すると、テストパラメーターを入力し、その入力を WCF サービスに送信し、サービスから返される応答を表示できます。 WCF サービスホストと組み合わせて使用すると、便利なサービステストエクスペリエンスが提供されます。 ツールは \Common7\IDE フォルダーにあります。このフォルダーは、Visual Studio 2015 の C: ドライブにインストールされています。 **C:\Program files (x86) \Microsoft Visual studio 14.0 \ Common7\IDE \\** です。
+ WCF テストクライアントツールを使用すると、テストパラメーターを入力し、その入力を WCF サービスに送信し、サービスから返される応答を表示できます。 WCF サービスホストと組み合わせて使用すると、便利なサービステストエクスペリエンスが提供されます。 ツールは \Common7\IDE フォルダーにあります。このフォルダーは、Visual Studio 2015 の C: ドライブにインストールされています。 **C:\Program files (x86) \Microsoft Visual studio 14.0 \ Common7\IDE\\** です。
 
  F5 キーを押して WCF サービスプロジェクトをデバッグすると、WCF テストクライアントが開き、構成ファイルで定義されているサービスエンドポイントの一覧が表示されます。 パラメーターをテストしてサービスを開始し、このプロセスを繰り返してサービスを継続的にテストして検証することができます。
 
@@ -139,7 +139,7 @@ Visual Studio には、分散アプリケーションを作成するための Mi
     > [!NOTE]
     > *ServiceReference*をサービス参照の名前空間に置き換え、 *Service1Client*をサービスの名前に置き換えます。
 
-3. IntelliSense の一覧が、コンストラクターのオーバーロードと共に表示されます。 @No__t_0 のオーバーロードを選択します。
+3. IntelliSense の一覧が、コンストラクターのオーバーロードと共に表示されます。 `endpointConfigurationName As String` のオーバーロードを選択します。
 
 4. オーバーロードの後に `=` *configurationname*と入力します。 *configurationname*は、使用するエンドポイントの名前です。
 
@@ -152,11 +152,11 @@ Visual Studio には、分散アプリケーションを作成するための Mi
 
 2. ファイルで `<Client>` タグを検索します。
 
-3. @No__t_0 タグの下で、`<Endpoint>` で始まるタグを検索します。
+3. `<Client>` タグの下で、`<Endpoint>`で始まるタグを検索します。
 
      サービス参照に複数のエンドポイントが提供されている場合は、2つ以上の `<Endpoint` タグがあります。
 
-4. @No__t_0 タグ内には *、`name="` の*`"` パラメーター (ここではエンドポイント名*を表し*ます) が見つかります。 これは、サービス参照のコンストラクターの `endpointConfigurationName As String` オーバーロードに渡すことができるエンドポイントの名前です。
+4. `<EndPoint>` タグ内には *、`name="`の*`"` パラメーター (ここではエンドポイント名*を表し*ます) が見つかります。 これは、サービス参照のコンストラクターの `endpointConfigurationName As String` オーバーロードに渡すことができるエンドポイントの名前です。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>方法: サービスメソッドを非同期に呼び出す
  Windows Communication Foundation (WCF) サービスのほとんどのメソッドは、同期的または非同期的に呼び出すことができます。 メソッドを非同期的に呼び出すことで、低速接続で動作しているときにメソッドが呼び出されている間も、アプリケーションを引き続き動作させることができます。
@@ -232,13 +232,13 @@ Visual Studio には、分散アプリケーションを作成するための Mi
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
-|[チュートリアル : Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|@No__t_0 で WCF サービスを作成および使用する手順について説明します。|
-|[チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|@No__t_1 で [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を作成して使用する方法を順を追って説明します。|
-|[WCF 開発ツールの使用](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|@No__t_0 で WCF サービスを作成およびテストする方法について説明します。|
+|[チュートリアル : Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で WCF サービスを作成および使用する手順について説明します。|
+|[チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を作成して使用する方法を順を追って説明します。|
+|[WCF 開発ツールの使用](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で WCF サービスを作成およびテストする方法について説明します。|
 |[方法: サービス参照を追加、更新、または削除する](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|プロジェクトから WCF サービスを追加、更新、または削除する方法について説明します。|
-|[方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|@No__t_1 で [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を参照して使用する方法について説明します。|
+|[方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を参照して使用する方法について説明します。|
 |[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)|サービス参照で発生する可能性のある一般的なエラーと、それらを回避する方法について説明します。|
 |[WCF サービスのデバッグ](../debugger/debugging-wcf-services.md)|WCF サービスのデバッグ時に発生する可能性のある一般的なデバッグの問題と手法について説明します。|
 |[Windows Communication Foundation 認証サービスの概要](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|WCF を使用して、Web サイトのロールサービスを提供する方法について説明します。|
@@ -250,5 +250,5 @@ Visual Studio には、分散アプリケーションを作成するための Mi
 
  <xref:System.Data.Services>
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

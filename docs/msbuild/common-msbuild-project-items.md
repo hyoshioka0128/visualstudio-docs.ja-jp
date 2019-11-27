@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681274"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956143"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
@@ -130,6 +130,17 @@ ms.locfileid: "68681274"
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
 | Visible | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
+
+### <a name="assemblymetadata"></a>AssemblyMetadata
+ `[AssemblyMetadata(key, value)]` として生成されるアセンブリ属性を表します。
+
+| 項目メタデータの名前 | 説明 |
+|-----------------------| - |
+| 包含 | `AssemblyMetadataAttribute` 属性コンストラクターの最初のパラメーター (キー) になります。 |
+| [値] | 必須の文字列。 `AssemblyMetadataAttribute` 属性コンストラクターの 2 番目のパラメーター (値) になります。 |
+
+> [!NOTE]
+> これは、.NET Core SDK を使用するプロジェクトのみに適用されます。
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  ビルドの基本アプリケーション マニフェストを表し、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置セキュリティ情報を含みます。

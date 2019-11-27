@@ -44,7 +44,7 @@ HRESULT AddNamedItem(
  `dwFlags`  
  から名前付き項目に関連付けられているフラグ。 は、次の値の組み合わせにすることができます。  
   
-|定数|[値]|説明|  
+|定数|値|説明|  
 |--------------|-----------|-----------------|  
 |SCRIPTITEM_ISVISIBLE|0x00000002|項目の名前がスクリプトの名前空間で使用できることを示します。 これにより、項目のプロパティ、メソッド、およびイベントにアクセスできるようになります。<br /><br /> 規則により、項目のプロパティには項目の子メンバーが含まれます。 そのため、すべての子オブジェクトのプロパティとメソッド (およびその子メンバー) にアクセスできます。|  
 |SCRIPTITEM_ISSOURCE|0x00000004|スクリプトがスクリプトイベントハンドラーを持つことができるアイテムソースのイベントを示します。|  
@@ -59,12 +59,12 @@ HRESULT AddNamedItem(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)

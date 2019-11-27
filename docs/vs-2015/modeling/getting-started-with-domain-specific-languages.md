@@ -9,24 +9,24 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666064"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300916"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、モデリング SDK for Visual Studio で作成されたドメイン固有言語 (DSL) の定義と使用に関する基本的な概念について説明します。
 
- Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>ドメイン固有の言語でできること
  ドメイン固有言語は、特定の目的に使用するように設計された表記で、通常はグラフィックです。 これに対して、UML などの言語は汎用的なものです。 DSL では、モデル要素とそのリレーションシップの種類と、それらを画面に表示する方法を定義できます。
 
- DSL を設計したら、それを Visual Studio Integration Extension (VSIX) パッケージの一部として配布できます。 ユーザーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で DSL を操作します。
+ DSL を設計したら、それを Visual Studio Integration Extension (VSIX) パッケージの一部として配布できます。 ユーザーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で DSL を操作します。
 
  ![ファミリツリーダイアグラム、ツールボックス、およびエクスプローラー](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
@@ -34,15 +34,15 @@ ms.locfileid: "72666064"
 
  Dsl の主要なアプリケーションの1つは、プログラムコード、構成ファイル、およびその他の成果物を生成することです。 特に、大規模なプロジェクトと製品ラインでは、複数の種類の製品が作成される場合に、Dsl からさまざまな可変要素を生成すると信頼性が大きく向上し、要件の変化に非常に迅速に対応できます。
 
- この概要の残りの部分では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でドメイン固有言語を作成および使用する基本的な操作について説明します。
+ この概要の残りの部分では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でドメイン固有言語を作成および使用する基本的な操作について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |Visual Studio のモデリング SDK|[MSDK のダウンロード](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>DSL ソリューションの作成
@@ -58,7 +58,7 @@ ms.locfileid: "72666064"
 
     ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. **[名前]** ボックスに「 **FamilyTree**」と入力します。 **[OK]** をクリックします。
+4. **[名前]** ボックスに「 **FamilyTree**」と入力します。 **[OK]** をクリックすると、
 
     **ドメイン固有言語ウィザード**が開き、テンプレート DSL ソリューションの一覧が表示されます。
 
@@ -83,7 +83,7 @@ ms.locfileid: "72666064"
 
    ユーザー インターフェイスは次の図のようになります。
 
-   ![dsl デザイナー](../modeling/media/dsl-designer.png "dsl_designer")
+   ![DSL デザイナー](../modeling/media/dsl-designer.png "dsl_designer")
 
    このソリューションはドメイン固有言語を定義します。 詳細については、「[ドメイン固有言語ツールユーザーインターフェイスの概要](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)」を参照してください。
 
@@ -94,7 +94,7 @@ ms.locfileid: "72666064"
 
 - **Dsl プロジェクト**このプロジェクトには、ドメイン固有言語を定義するコードが含まれています。
 
-- **Dslpackage プロジェクト**このプロジェクトには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で DSL のインスタンスを開いて編集するためのコードが含まれています。
+- **Dslpackage プロジェクト**このプロジェクトには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で DSL のインスタンスを開いて編集するためのコードが含まれています。
 
 ## <a name="Debugging"></a>DSL を実行する
  DSL ソリューションを作成したら、すぐに実行できます。 後で DSL 定義を変更して、各変更後にもう一度ソリューションを実行することができます。
@@ -108,11 +108,11 @@ ms.locfileid: "72666064"
 
 2. F5 キーを押すか、 **[デバッグ]** メニューの **[デバッグ開始]** をクリックします。
 
-    DSL は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスにインストールされます。
+    DSL は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスにインストールされます。
 
-    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。 実験的なインスタンスは、レジストリの別のサブツリーから設定を取得します。この場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能はデバッグのために登録されます。 @No__t_0 の通常のインスタンスには、そこに登録されている拡張機能へのアクセス権がありません。
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。 実験的なインスタンスは、レジストリの別のサブツリーから設定を取得します。この場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能はデバッグのために登録されます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の通常のインスタンスには、そこに登録されている拡張機能へのアクセス権がありません。
 
-3. @No__t_0 の実験用インスタンスで、**ソリューションエクスプローラー**から**Test**という名前のモデルファイルを開きます。
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスで、**ソリューションエクスプローラー**から**Test**という名前のモデルファイルを開きます。
 
     \- または
 
@@ -141,12 +141,12 @@ ms.locfileid: "72666064"
 
  モデルを編集しているときに、 **[エクスプローラー]** ビューでモデルをツリーとして表示できます。 図に図形を追加すると、モデル要素もエクスプローラーに表示されます。 図がない場合でも、エクスプローラーを使用できます。
 
- @No__t_0 のデバッグインスタンスにエクスプローラーが表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、[ *\<Your 言語 >* **エクスプローラー**] をクリックします。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のデバッグインスタンスにエクスプローラーが表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、[*言語の\<>* **エクスプローラー**] をクリックします。
 
 ### <a name="the-api-of-your-dsl"></a>DSL の API
  DSL は、DSL のインスタンスであるモデルの読み取りと更新を可能にする API を生成します。 API の1つのアプリケーションは、モデルからテキストファイルを生成することです。 詳細については、「 [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。
 
- デバッグソリューションで、拡張子が ".tt" のテンプレートファイルを開きます。 これらのサンプルでは、モデルからテキストを生成し、DSL の API をテストできるようにする方法を示します。 サンプルの1つは、[!INCLUDE[csprcs](../includes/csprcs-md.md)] の別の [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] で記述されています。
+ デバッグソリューションで、拡張子が ".tt" のテンプレートファイルを開きます。 これらのサンプルでは、モデルからテキストを生成し、DSL の API をテストできるようにする方法を示します。 サンプルの1つは、[!INCLUDE[csprcs](../includes/csprcs-md.md)]の別の [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]で記述されています。
 
  各テンプレートファイルの下には、生成されるファイルがあります。 ソリューションエクスプローラーでテンプレートファイルを展開し、生成されたファイルを開きます。
 
@@ -158,7 +158,7 @@ ms.locfileid: "72666064"
 
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>モデルファイルを変更した後にテキストファイルを再生成するには
 
-1. @No__t_0 の実験用インスタンスで、モデルファイルを保存します。
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスで、モデルファイルを保存します。
 
 2. 各 .tt ファイルのファイル名パラメーターが、実験に使用しているモデルファイルを参照していることを確認します。 .Tt ファイルを保存します。
 
@@ -200,7 +200,7 @@ ms.locfileid: "72666064"
 
     2. プロパティウィンドウを開き、DSL エクスプローラーとプロパティを同時に表示できるように配置します。
 
-    3. DSL エクスプローラーで、**エディター**、**ツールボックス タブ**、 *\<your DSL >* 、**ツール** の順に展開します。
+    3. DSL エクスプローラーで、 **[エディター]** 、[**ツールボックス] タブ**、 *Dsl >\<* 、 **[ツール]** の順に展開します。
 
     4. **[要素]** をクリックします。 これは、要素の作成に使用されるツールボックス項目です。
 
@@ -216,9 +216,9 @@ ms.locfileid: "72666064"
 
     2. ソリューションエクスプローラーのツールバーで **[すべてのテンプレートの変換]** をクリックします。
 
-    3. F5 キーを押します。 @No__t_0 の実験用インスタンスが表示されるまで待ちます。
+    3. F5 キーを押します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスが表示されるまで待ちます。
 
-4. @No__t_0 の実験用インスタンスのデバッグソリューションで、テストモデルファイルを開きます。 要素をツールボックスからドラッグします。 DSL エクスプローラーのツールキャプションと型名が変更されていることに注意してください。
+4. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスのデバッグソリューションで、テストモデルファイルを開きます。 要素をツールボックスからドラッグします。 DSL エクスプローラーのツールキャプションと型名が変更されていることに注意してください。
 
 5. モデルファイルを保存します。
 
@@ -255,7 +255,7 @@ ms.locfileid: "72666064"
 
 3. デコレーターをプロパティにマップします。
 
-   1. DSL の詳細ウィンドウを開きます。 通常は、[出力] ウィンドウの横にあるタブに表示されます。 表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[DSL の詳細]** をクリックします。
+   1. [DSL Details] (DSL の詳細) ウィンドウを開きます。 通常は、[出力] ウィンドウの横にあるタブに表示されます。 表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[DSL の詳細]** をクリックします。
 
    2. DSL 定義図で、 **Person**ドメインクラスを shape クラスに接続する線をクリックします。
 
@@ -324,7 +324,7 @@ ms.locfileid: "72666064"
 
     1. **DSL エクスプローラー**で、 **[エディター]** 、[**ツールボックス] タブ**の順に展開します。
 
-    2. *@No__t_1your DSL >* を右クリックし、 **[新しい要素ツールの追加]** をクリックします。
+    2. *DSL >\<* 右クリックし、[**新しい要素の追加] ツール**をクリックします。
 
     3. 新しいツールの**Name**プロパティを設定し、その **[Class]** プロパティを [町村] に設定します。
 
@@ -332,7 +332,7 @@ ms.locfileid: "72666064"
 
 7. 町と people の間にリンクを作成するためのコネクタツールを作成します。
 
-    1. *@No__t_1your DSL >* を右クリックし、 **[新しいコネクタツールの追加]** をクリックします。
+    1. *DSL >\<* 右クリックし、 **[新しいコネクタツールの追加]** をクリックします。
 
     2. 新しいツールの [名前] プロパティを設定します。
 
@@ -342,7 +342,7 @@ ms.locfileid: "72666064"
 
 8. DSL 定義を保存し、 **[すべてのテンプレートの変換]** をクリックしてから、 **F5**キーを押します。
 
-9. @No__t_0 の実験用インスタンスで、テストモデルファイルを開きます。 新しいツールを使用して、町や人物との間のリンクを作成します。 正しい種類の要素間のリンクのみを作成できることに注意してください。
+9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスで、テストモデルファイルを開きます。 新しいツールを使用して、町や人物との間のリンクを作成します。 正しい種類の要素間のリンクのみを作成できることに注意してください。
 
 10. 各人物が住んでいる町を示すコードを作成します。 テキストテンプレートは、このようなコードを実行できる場所の1つです。 たとえば、デバッグソリューションの既存の Sample.tt ファイルを変更して、次のコードが含まれるようにすることができます。
 
@@ -381,7 +381,7 @@ ms.locfileid: "72666064"
 
  ソリューションの bin フォルダーで .vsix ファイルを見つけます。 それをインストールするコンピューターにコピーします。 そのコンピューターで、VSIX ファイルをダブルクリックします。 DSL は、そのコンピューター上の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのインスタンスで使用できます。
 
- 同じ手順を使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスを使用する必要がないように、自分のコンピューターに DSL をインストールすることもできます。
+ 同じ手順を使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスを使用する必要がないように、自分のコンピューターに DSL をインストールすることもできます。
 
  詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
@@ -398,5 +398,5 @@ ms.locfileid: "72666064"
 
 2. 引き続き使用する実験的な Dsl またはその他の試験的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能を再構築します。
 
-## <a name="see-also"></a>参照
- [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>関連項目
+ [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

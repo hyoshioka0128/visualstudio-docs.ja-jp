@@ -43,24 +43,24 @@ HRESULT SynchronousCallInDebuggerThread(
  から呼び出すオブジェクト。  
   
  `dwParam1`  
- から@No__t_0 メソッドに渡す最初のパラメーター。  
+ から`IDebugThreadCall::ThreadCallHandler` メソッドに渡す最初のパラメーター。  
   
  `dwParam2`  
- から@No__t_0 メソッドに渡す2番目のパラメーター。  
+ から`IDebugThreadCall::ThreadCallHandler` メソッドに渡す2番目のパラメーター。  
   
  `dwParam3`  
- から@No__t_0 メソッドに渡す3番目のパラメーター。  
+ から`IDebugThreadCall::ThreadCallHandler` メソッドに渡す3番目のパラメーター。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  言語エンジンとホストは、通常、このメソッドを使用して、シングルスレッド実装の上にフリースレッドオブジェクトを実装します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugThreadCall インターフェイス](../../winscript/reference/idebugthreadcall-interface.md)

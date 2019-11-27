@@ -40,8 +40,8 @@ HRESULT GetCount (
  入出力列挙子内の `DebugPropertyInfo` 構造体の数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- は、有効な `HRESULT` (通常は `S_OK`) を返します。  
+ は、有効な `HRESULT`(通常は `S_OK`) を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IEnumDebugPropertyInfo インターフェイス](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -39,7 +39,7 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>パラメーター  
  `dwFields`  
- から@No__t_1 構造体に入力するフィールドを決定する `DBGPROP_INFO_FLAGS` 定数を指定します。  
+ から`DebugPropertyInfo` 構造体に入力するフィールドを決定する `DBGPROP_INFO_FLAGS` 定数を指定します。  
   
  `nRadix`  
  から数値情報の書式設定で使用される基数。  
@@ -48,9 +48,9 @@ HRESULT GetPropertyInfo (
  入出力プロパティを記述する `DebugPropertyInfo` 構造体を返します。  
   
 ## <a name="return-value"></a>戻り値  
- は、有効な `HRESULT` (通常は `S_OK`) を返します。  
+ は、有効な `HRESULT`(通常は `S_OK`) を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)

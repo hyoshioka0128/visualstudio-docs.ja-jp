@@ -1,5 +1,5 @@
 ---
-title: '&lt;署名&gt;要素 (ClickOnce 配置) |Microsoft Docs'
+title: '&lt;Signature&gt; 要素 (ClickOnce 配置) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df18b63ff306525cba74ef0932c97edd64eee797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db696546fdd64199753054b38fa2ac554f6a774f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68198121"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295075"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;署名&gt;要素 (ClickOnce 配置)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; 要素 (ClickOnce 配置)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この配置マニフェストにデジタル署名するために必要な情報が含まれます。  
@@ -36,13 +36,13 @@ ms.locfileid: "68198121"
 </Signature>  
 ```  
   
-## <a name="remarks"></a>Remarks  
- エンベロープ署名を使用して配置マニフェストに署名は省略可能では、お勧めします。 ファイルを XML 署名の詳細については、World Wide Web Consortium 推奨事項、"Xml-signature Syntax and Processing、"」の説明を参照してください[ http://www.w3.org/TR/xmldsig-core/](http://www.w3.org/TR/xmldsig-core/)します。  
+## <a name="remarks"></a>コメント  
+ エンベロープ署名を使用した配置マニフェストへの署名はオプションですが、推奨されます。 XML ファイルに署名する方法の詳細については、「 [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/)」で説明されている World Wide Web コンソーシアム推奨事項「xml 署名の構文と処理」を参照してください。  
   
- マニフェストに署名する場合は、すべてのファイル ハッシュを指定する必要があります。 ユーザーは、ハッシュされていないファイルの内容を確認できないため、ハッシュされていないファイルをマニフェストに署名できません。  
+ マニフェストに署名する場合は、すべてのファイルに対してハッシュを指定する必要があります。 ハッシュされていないファイルを含むマニフェストに署名することはできません。これは、ハッシュされていないファイルの内容をユーザーが確認できないためです。  
   
 ## <a name="example"></a>例  
- 次のコード例を示しています、`Signature`で使用される配置マニフェスト内の要素を[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開します。  
+ 次のコード例は、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] の配置で使用される配置マニフェストの `Signature` 要素を示しています。  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  

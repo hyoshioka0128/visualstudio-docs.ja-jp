@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96ab033cad301f478df3d011b7c648e6e5e8d6c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660359"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301431"
 ---
 # <a name="unit-test-your-code"></a>コードの単体テスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "72660359"
 ## <a name="key-tasks"></a>主なタスク
  単体テストを理解および作成するには、次のトピックを参照してください。
 
-|[タスク]|関連するトピック|
+|タスク|関連トピック|
 |-----------|-----------------------|
 |**クイック スタートおよびチュートリアル:** 次のトピックでは、Visual Studio での単体テストについてコード例から学習できます。|-   [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [テスト エクスプローラーを使用したネイティブ コードの単体テスト](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**テスト エクスプローラーによる単体テスト:** テスト エクスプローラーによって、さらに生産性が高く効率的な単体テストを作成できることを学習します。|-   [単体テストの基本](../test/unit-test-basics.md)<br />-   [単体テスト プロジェクトを作成する](../test/create-a-unit-test-project.md)<br />-   [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)<br />-   [サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)<br />-   [Visual Studio 2010 からの単体テストのアップグレード](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -51,7 +51,7 @@ ms.locfileid: "72660359"
 |**コード カバレッジを使用して、単体テストでテストされたプロジェクトのコードの割合を調べる:** [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] のテスト ツールのコード カバレッジ機能について学習します。|-   [コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**単体テストにロード テストを使用したストレスおよびパフォーマンスの分析の実行:** ロード テストを作成し、それに単体テストを追加すると、アプリケーションのパフォーマンスおよびストレスの問題を分離するのに役立ちます。 **注:** ロード テストを作成して使用するには、Visual Studio Enterprise が必要です。|-   [ロード テストの作成と編集](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [方法: ロード テスト シナリオに、Web パフォーマンス テストと単体テストを追加する](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [方法: ロード テスト シナリオから、Web パフォーマンス テストと単体テストを削除する](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**品質ゲートの設定と適用:** 品質ゲートを作成し、コードがチェックインされる前にテストを実行することで、コードの品質を保証できます。|-   [品質ゲートの設定と適用](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**単体テストの種類の拡張:** 単体テスト フレームワークにはない場合がある機能をテストに追加できます。 たとえば、テストを通常のユーザーとして実行するかどうかを指定するテスト プロパティを追加できます。 また、フレームワークを拡張して、行の属性をメソッドに追加し、テスト内でその行のデータを使用することもできます。|単体テスト フレームワークを拡張する方法のサンプル コードについては、次の [Microsoft Web サイト](http://go.microsoft.com/fwlink/?LinkId=185591)を参照してください。|
+|**単体テストの種類の拡張:** 単体テスト フレームワークにはない場合がある機能をテストに追加できます。 たとえば、テストを通常のユーザーとして実行するかどうかを指定するテスト プロパティを追加できます。 また、フレームワークを拡張して、行の属性をメソッドに追加し、テスト内でその行のデータを使用することもできます。|単体テスト フレームワークを拡張する方法のサンプル コードについては、次の [Microsoft Web サイト](https://go.microsoft.com/fwlink/?LinkId=185591)を参照してください。|
 |**テストのオプションを設定する:** たとえば、テスト結果が格納される場所を指定できます。|[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>関連するタスク
@@ -70,17 +70,17 @@ ms.locfileid: "72660359"
 
 ## <a name="external-resources"></a>外部リソース
 
-### <a name="videos"></a>ビデオ
- [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](http://go.microsoft.com/fwlink/?LinkId=226285)
+### <a name="videos"></a>Videos
+ [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](https://go.microsoft.com/fwlink/?LinkId=226285)
 
-### <a name="forums"></a>フォーラム
- [Visual Studio の単体テスト](http://go.microsoft.com/fwlink/?LinkId=224477)
+### <a name="forums"></a>Forums
+ [Visual Studio の単体テスト](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="reference"></a>参照
- [単体テストのコンテンツ インデックス](http://go.microsoft.com/fwlink/?LinkID=254719)
+ [単体テストのコンテンツ インデックス](https://go.microsoft.com/fwlink/?LinkID=254719)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [アプリケーションをテストする](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)[コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)

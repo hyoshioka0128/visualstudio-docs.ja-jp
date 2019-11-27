@@ -31,6 +31,6 @@ ms.locfileid: "72575892"
   
 - 終わりの引用符を文字列の末尾に追加します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [文字列オブジェクト](../../javascript/reference/string-object-javascript.md)   
  [toString メソッド (Object)](../../javascript/reference/tostring-method-object-javascript.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645448"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300135"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>方法: Visual Studio で使用するフォントと色を変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio の中にある IDE のフレームおよびツール ウィンド
     > [!IMPORTANT]
     > テーマの色を変更すると、IDE のテキストは既定値または前にカスタマイズしたフォントとサイズに戻ります。
     >
-    >  Visual Studio Professional、Visual Studio Premium、または Visual Studio Ultimate を使用している場合は、[Visual Studio 2013 配色テーマ エディター](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe)をダウンロードしてインストールすることで、追加の定義済み配色テーマをインストールし、独自のテーマを作成することができます。
+    >  Visual Studio Professional、Visual Studio Premium、または Visual Studio Ultimate を使用している場合は、[Visual Studio 2013 配色テーマ エディター](https://marketplace.visualstudio.com/items?itemName=MatthewJohnsonMSFT.VisualStudio2013ColorThemeEditor)をダウンロードしてインストールすることで、追加の定義済み配色テーマをインストールし、独自のテーマを作成することができます。
 
 ### <a name="use-windows-high-contrast-colors"></a>Windows のハイコントラスト カラーの使用
 
@@ -65,5 +65,5 @@ Visual Studio の中にある IDE のフレームおよびツール ウィンド
 
 5. **[サイズ]** の一覧でテキスト サイズを選び、 **[OK]** を選びます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)[方法: エディターでフォントおよび色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

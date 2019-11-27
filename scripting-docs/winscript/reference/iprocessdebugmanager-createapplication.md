@@ -42,13 +42,13 @@ HRESULT CreateApplication(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- このメソッドによって作成されたオブジェクトには名前がなく、実行中のアプリケーションの一覧に追加されません。 @No__t_0 を使用して、アプリケーションの一覧にデバッグアプリケーションを追加します。  
+## <a name="remarks"></a>コメント  
+ このメソッドによって作成されたオブジェクトには名前がなく、実行中のアプリケーションの一覧に追加されません。 `IProcessDebugManager::AddApplication` を使用して、アプリケーションの一覧にデバッグアプリケーションを追加します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iprocessdebugmanager インターフェイス](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

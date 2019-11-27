@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572541"
 ---
 # <a name="undefined-identifier"></a>未定義の識別子です。
-@No__t_0 コンパイラで認識されない識別子を使用しようとしました。 次を使用する場合は、未定義の値が返されます。  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] コンパイラで認識されない識別子を使用しようとしました。 次を使用する場合は、未定義の値が返されます。  
   
 - 存在しない変数です。  
   
@@ -34,6 +34,6 @@ ms.locfileid: "72572541"
   
 - 変数を `var` x のように**var**ステートメントで宣言します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [変数](../../javascript/variables-javascript.md)   
  [変数のスコープ](../../javascript/advanced/variable-scope-javascript.md)

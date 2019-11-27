@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180310"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428778"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と Express のアプリを作成する
 
@@ -183,6 +183,8 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 1. `data` 文字列の後にカーソルを置き、「`: get`」と入力します。コードの前半で定義されている `getData` 関数が IntelliSense によって表示されます。 `getData` を選択します。
 
     ![IntelliSense を使用する](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. かっこを追加して、関数呼び出し `getData()`にします。
 
 1. `"data"` の前のコンマ (`,`) を削除します。式で緑の構文が強調表示されます。 構文の強調表示にカーソルを合わせます。
 

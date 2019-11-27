@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730239"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239457"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 Visual Studio リモート デバッガーは、アプリケーションまたはバック グラウンド サービスとして実行できます。 アプリケーションとして実行される際には、次のように既定で割り当てられているポートを使用します。
@@ -29,7 +29,7 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 
 - Visual Studio 2012: 4016
 
-  つまり、リモート デバッガーに割り当てられるポート番号はリリースごとに 2 つずつ増えます。 別の任意のポート番号を設定することができます。 ポート番号の設定方法は、後のセクションで説明します。
+つまり、リモート デバッガーに割り当てられるポート番号はリリースごとに 2 つずつ増えます。 別の任意のポート番号を設定することができます。 ポート番号の設定方法は、後のセクションで説明します。
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 ビット オペレーティング システムのリモート デバッガーのポート
 
@@ -64,12 +64,12 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 ## <a name="remote-debugger-ports-on-azure"></a>Azure でのリモート デバッガーのポート
  Azure のリモート デバッガーでは次のポートが使用されます。 クラウド サービス上のポートは、個々の VM 上のポートにマップされます。 すべてのポートは TCP です。
 
-|Connection|クラウド サービス上のポート|VM 上のポート|
+|接続|クラウド サービス上のポート|VM 上のポート|
 |-|-|-|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|
 |Windowsazure.servicebus を Forwarderx86 します。|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Remote Debugging](../debugger/remote-debugging.md)

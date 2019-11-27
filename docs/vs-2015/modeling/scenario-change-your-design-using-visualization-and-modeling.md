@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e66f8438e0c28a64d2e8705fea0ffa5e362887b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671259"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296020"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ: 視覚化およびモデリングを使用したデザインの変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -241,7 +241,7 @@ ms.locfileid: "72671259"
 
 |**マップまたは図**|**表示される内容**|
 |------------------------|---------------|
-|*コード マップ*<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -    に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを参照および再配置](../modeling/browse-and-rearrange-code-maps.md)-    には<br />[DGML ファイルを編集してコードマップをカスタマイズ -    には](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|コード内の依存関係とその他の関係。<br /><br /> たとえば、Dinner Now はまず、アセンブリのコード マップでアセンブリとその依存関係の概要を確認するとします。 そのとき、マップの詳細を表示してそれらのアセンブリの名前空間やクラスを調べることができます。<br /><br /> さらに、コードの特定の領域やその他の種類のリレーションシップを調べるためのマップを生成することもできます。 対象となる領域やリレーションシップを見つけて選択するにはソリューション エクスプローラーを使用します。|
+|*コード マップ*<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -   に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを参照および再配置](../modeling/browse-and-rearrange-code-maps.md)-   には<br />[DGML ファイルを編集してコードマップをカスタマイズ -   には](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|コード内の依存関係とその他の関係。<br /><br /> たとえば、Dinner Now はまず、アセンブリのコード マップでアセンブリとその依存関係の概要を確認するとします。 そのとき、マップの詳細を表示してそれらのアセンブリの名前空間やクラスを調べることができます。<br /><br /> さらに、コードの特定の領域やその他の種類のリレーションシップを調べるためのマップを生成することもできます。 対象となる領域やリレーションシップを見つけて選択するにはソリューション エクスプローラーを使用します。|
 |*コード ベースのクラス図*<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|コード内の既存のクラス。|
 
  たとえば、開発者はコード マップを作成します。 新しいシナリオの影響を受ける領域に合わせてスコープを調整します。 次のマップでは、それらの領域が選択されて強調表示されています。
@@ -285,7 +285,7 @@ ms.locfileid: "72671259"
 
 |**図**|**記述する内容**|
 |-----------------|-------------------|
-|*レイヤー図*<br /><br /> 参照トピック<br /><br /> [コードからレイヤー図を作成 -    に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -    に](../modeling/validate-code-with-layer-diagrams.md)は|コードの論理アーキテクチャ。<br /><br /> レイヤー図では、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の成果物が整理されて、 *レイヤー*と呼ばれる抽象的なグループにマップされます。 これらのレイヤーは、それらの成果物がシステムで実行するロール、タスク、または機能を識別します。<br /><br /> レイヤー図は、必要とされるシステムの設計を記述し、コードの変更をその設計に照らし合わせて検証するのに便利です。<br /><br /> レイヤーを作成するには、ソリューション エクスプローラー、コード マップ、クラス ビュー、およびオブジェクト ブラウザーから項目をドラッグします。 新しいレイヤーを描画するには、ツールボックスを使用するか、図の画面を右クリックします。<br /><br /> 既存の依存関係を表示するには、レイヤー図の画面を右クリックし、 **[依存関係の生成]** をクリックします。 必要とされる依存関係を指定するには、新しい依存関係を描画します。|
+|*レイヤー図*<br /><br /> 参照トピック<br /><br /> [コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -   に](../modeling/validate-code-with-layer-diagrams.md)は|コードの論理アーキテクチャ。<br /><br /> レイヤー図では、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の成果物が整理されて、 *レイヤー*と呼ばれる抽象的なグループにマップされます。 これらのレイヤーは、それらの成果物がシステムで実行するロール、タスク、または機能を識別します。<br /><br /> レイヤー図は、必要とされるシステムの設計を記述し、コードの変更をその設計に照らし合わせて検証するのに便利です。<br /><br /> レイヤーを作成するには、ソリューション エクスプローラー、コード マップ、クラス ビュー、およびオブジェクト ブラウザーから項目をドラッグします。 新しいレイヤーを描画するには、ツールボックスを使用するか、図の画面を右クリックします。<br /><br /> 既存の依存関係を表示するには、レイヤー図の画面を右クリックし、 **[依存関係の生成]** をクリックします。 必要とされる依存関係を指定するには、新しい依存関係を描画します。|
 
  たとえば、次のレイヤー図は、レイヤー間の依存関係と、各レイヤーに関連付けられている成果物の数を記述しています。
 
@@ -363,7 +363,7 @@ ms.locfileid: "72671259"
 
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
 
-- [バージョン管理の使用](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [バージョン管理の使用](https://go.microsoft.com/fwlink/?LinkID=525605)
 
 - [アプリケーションのビルド](/azure/devops/pipelines/index)
 
@@ -590,10 +590,10 @@ ms.locfileid: "72671259"
 
 |**図**|**説明**|
 |-----------------|---------------------|
-|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> コンポーネントの候補を特定するには、コード マップを生成し、項目をシステム内の機能別にグループ化します。<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -    に](../modeling/map-dependencies-across-your-solutions.md)は|
+|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> コンポーネントの候補を特定するには、コード マップを生成し、項目をシステム内の機能別にグループ化します。<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -   に](../modeling/map-dependencies-across-your-solutions.md)は|
 |シーケンス図|コンポーネント間またはコンポーネント内のパート間の相互作用のシーケンスを視覚化します。<br /><br /> コンポーネントからシーケンス図の生存線を生成するには、コンポーネントを右クリックし、 **[生存線の生成]** をクリックします。<br /><br /> 参照トピック<br /><br /> -   [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)<br />[UML シーケンス図の -   : ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|
 |クラス図 (UML)|提供ポートまたは要求ポートのインターフェイスと、コンポーネントの機能を実装するクラスを定義します。<br /><br /> 参照トピック<br /><br /> -   [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)<br />-   [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
-|レイヤー図|コンポーネントに関連するシステムの論理アーキテクチャを記述します。 レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 参照トピック<br /><br /> [コードからレイヤー図を作成 -    に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -    に](../modeling/validate-code-with-layer-diagrams.md)は|
+|レイヤー図|コンポーネントに関連するシステムの論理アーキテクチャを記述します。 レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 参照トピック<br /><br /> [コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -   に](../modeling/validate-code-with-layer-diagrams.md)は|
 |アクティビティ図|受信メッセージに対する応答としてコンポーネントによって実行される内部処理を視覚化します。<br /><br /> 参照トピック<br /><br /> -   [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)<br />[UML アクティビティ図の -   : ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)|
 
 ### <a name="VisualizeCode"></a> 既存のコードの視覚化: コード マップ
@@ -662,7 +662,7 @@ ms.locfileid: "72671259"
 
 |**図**|**記述する内容**|
 |-----------------|-------------------|
-|レイヤー図|システムの論理アーキテクチャ。 レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 既存のレイヤーまたは必要なレイヤーを特定するには、コード マップを生成し、関連する項目をグループ化します。 レイヤー図を作成する場合は、次のトピックを参照してください。<br /><br /> [コードからレイヤー図を作成 -    に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)|
+|レイヤー図|システムの論理アーキテクチャ。 レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 既存のレイヤーまたは必要なレイヤーを特定するには、コード マップを生成し、関連する項目をグループ化します。 レイヤー図を作成する場合は、次のトピックを参照してください。<br /><br /> [コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)|
 |コンポーネント図|コンポーネントとそのインターフェイスおよび関係。<br /><br /> コンポーネントを特定するには、コード マップを生成し、項目をシステム内の機能別にグループ化します。<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|
 |クラス図 (UML)|クラスとその属性、操作、および関係。<br /><br /> これらの要素を特定するには、それらの要素を示す UML クラス図を作成します。<br /><br /> 参照トピック<br /><br /> -   [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)<br />-   [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
 |クラス図 (コード ベース)|特定のプロジェクトに対するコード内の既存のクラス。<br /><br /> コード内の既存のクラスを視覚化して変更するには、クラス デザイナーを使用します。<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|
@@ -697,9 +697,9 @@ ms.locfileid: "72671259"
 
 - 横方向の *メッセージ* は、メソッド呼び出しや Web サービス メッセージなどの通信を表します。 生存線上の網掛けされた縦長の四角形として示される*実行発生* は、受信側のオブジェクトが呼び出しを処理する期間を表します。
 
-- *同期*メッセージの実行中、sender オブジェクトは、コントロールが \<return > > を通常の関数呼び出しと同様に < 待機します。 *非同期* メッセージでは、送信側がすぐに続行できます。
+- *同期*メッセージの実行中、sender オブジェクトは、コントロールが < になるまで待機し\<通常の関数呼び出しと同様に > > を返します。 *非同期* メッセージでは、送信側がすぐに続行できます。
 
-- < @No__t_0create 使用して > メッセージを > し、他のオブジェクトによるオブジェクトの構築を示すことができます。 このメッセージは、そのオブジェクトに送信される最初のメッセージである必要があります。
+- <\<使用して > > メッセージを作成し、他のオブジェクトによるオブジェクトの構築を示すことができます。 このメッセージは、そのオブジェクトに送信される最初のメッセージである必要があります。
 
   参照トピック
 
@@ -802,9 +802,9 @@ ms.locfileid: "72671259"
 |ユース ケース図|ユース ケースのゴールとステップを記述するために使用される型を定義します。<br /><br /> 参照トピック<br /><br /> -   [UML ユースケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)<br />[UML ユースケース図の -   : ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)|
 |アクティビティ図|オブジェクト ノード、入力ピン、出力ピン、およびアクティビティ パラメーター ノードによって受け渡されるデータの型を定義します。<br /><br /> 参照トピック<br /><br /> -   [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)<br />[UML アクティビティ図の -   : ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)|
 |コンポーネント図|コンポーネントとそのインターフェイスおよび関係を記述します。 クラスが完全なコンポーネントを記述する場合もあります。<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|
-|レイヤー図|クラスに関連するシステムの論理アーキテクチャを定義します。<br /><br /> レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 参照トピック<br /><br /> [コードからレイヤー図を作成 -    に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -    に](../modeling/validate-code-with-layer-diagrams.md)は|
+|レイヤー図|クラスに関連するシステムの論理アーキテクチャを定義します。<br /><br /> レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 参照トピック<br /><br /> [コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -   に](../modeling/validate-code-with-layer-diagrams.md)は|
 |シーケンス図|生存線の型と、生存線が受信するすべてのメッセージの操作、パラメーター、および戻り値を定義します。<br /><br /> クラス図の型から生存線を生成するには、型を右クリックし、 **[生存線の生成]** をクリックします。<br /><br /> 参照トピック<br /><br /> -   [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)<br />[UML シーケンス図の -   : ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|
-|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> クラスとその関係およびメソッドを特定するには、それらの要素を示すコード マップを生成します。<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -    に](../modeling/map-dependencies-across-your-solutions.md)は|
+|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> クラスとその関係およびメソッドを特定するには、それらの要素を示すコード マップを生成します。<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -   に](../modeling/map-dependencies-across-your-solutions.md)は|
 
 ### <a name="DescribeLayers"></a>論理アーキテクチャの記述: レイヤー図
  レイヤー図は、ソリューションの成果物を抽象的なグループ ( *レイヤー*) に整理することによってシステムの論理アーキテクチャを記述します。 成果物には、名前空間、プロジェクト、クラス、メソッドなど、さまざまなものがあります。 レイヤーは、それらの成果物がシステムで実行するロールやタスクを表します。 コードが設計と一致していることを確認するために、ビルドやチェックイン操作にレイヤー検証を組み込むこともできます。
@@ -875,14 +875,14 @@ ms.locfileid: "72671259"
 
 |**図**|**説明**|
 |-----------------|---------------------|
-|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> レイヤーを作成するには、コード マップを生成し、レイヤーにするマップ項目をグループ化して、 そのグループをマップからレイヤー図にドラッグします。<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -    に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを参照および再配置](../modeling/browse-and-rearrange-code-maps.md)-    には|
+|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> レイヤーを作成するには、コード マップを生成し、レイヤーにするマップ項目をグループ化して、 そのグループをマップからレイヤー図にドラッグします。<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -   に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを参照および再配置](../modeling/browse-and-rearrange-code-maps.md)-   には|
 |コンポーネント図|コンポーネントとそのインターフェイスおよび関係を記述します。<br /><br /> レイヤーを視覚化するには、システムのさまざまなコンポーネントの機能を記述するコンポーネント図を生成します。<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [コードを視覚化](../modeling/visualize-code.md)する[アプリの](../modeling/create-models-for-your-app.md)モデルを作成[する開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)[開発時のシステムの検証](../modeling/validate-your-system-during-development.md) [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)

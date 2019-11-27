@@ -42,15 +42,15 @@ HRESULT SetName(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドに指定された名前は、後続の `IRemoteDebugApplication::GetName` メソッドの呼び出しで返されます。  
   
- @No__t_0 メソッドを呼び出す前に、このメソッドを呼び出す必要があります。  
+ `IProcessDebugManager::AddApplication` メソッドを呼び出す前に、このメソッドを呼び出す必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

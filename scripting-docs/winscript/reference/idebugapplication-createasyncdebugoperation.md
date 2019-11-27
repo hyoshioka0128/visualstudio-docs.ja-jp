@@ -46,14 +46,14 @@ HRESULT CreateAsyncDebugOperation(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドを使用すると、言語エンジンは、デバッガースレッドと明示的に同期せずに、式を非同期的に評価できます。 詳細については、「 [IDebugSyncOperation interface](../../winscript/reference/idebugsyncoperation-interface.md) And [IDebugAsyncOperation interface](../../winscript/reference/idebugasyncoperation-interface.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugSyncOperation インターフェイス](../../winscript/reference/idebugsyncoperation-interface.md)   
  [IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)

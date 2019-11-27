@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 070a9bedd5e01e6c39d55d784559d4458e35d72f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657292"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297986"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ ms.locfileid: "72657292"
 
 8. **テストを実行します**。
 
-    テスト エクスプローラーを使用するか、テスト メソッドでショートカット メニューを開き、 **[テストの実行]** を選択します。 テストの実行方法の詳細については、[「テスト エクスプローラーを使用した単体テストの実行」](../test/run-unit-tests-with-test-explorer.md)と、このトピックの最後の[「次の内容」](#VerifyCodeUsingCUITWhatsNext)セクションの *「コード化された UI テストの実行の追加オプション」* をご覧ください。
+    テスト エクスプローラーを使用するか、テスト メソッドでショートカット メニューを開き、 **[テストの実行]** を選択します。 テストの実行方法の詳細については、[「テスト エクスプローラーを使用した単体テストの実行」](../test/run-unit-tests-with-test-explorer.md)と、このトピックの最後の *「次の内容」* セクションの[「コード化された UI テストの実行の追加オプション」](#VerifyCodeUsingCUITWhatsNext)をご覧ください。
 
    このトピックの残りのセクションでは、このプロシージャ内の各ステップについてさらに詳しく説明します。
 
@@ -220,8 +220,8 @@ ms.locfileid: "72657292"
   }
   ```
 
-  *コード化された UI テストビルダーから [アサーションの追加] ツールを選択しようとすると、選択したコントロールがフォーカスを失い、表示されなくなります。コントロールを選択操作方法には***キーボードを使用して非表示のコントロールを選択 
-   に**は
+  *コード化された UI テストビルダーから [アサーションの追加] ツールを選択しようとすると、選択したコントロールがフォーカスを失い、表示されなくなります。コントロールを選択操作方法には***キーボードを使用して非表示のコントロールを選択
+  に**は
 
   [コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)とき、キーボードが必要になる場合もあります。 たとえば、コンテキスト メニュー コントロールを使用するコード化された UI テストを記録するとき、コード化された UI テスト ビルダーの [アサーションの追加] ツールで選択しようとすると、コントロールのメニュー項目の一覧がフォーカスを失い、非表示になります。 これを次の図に示します。Internet Explorer で、[アサーションの追加] ツールでコンテキスト メニューを選択しようとすると、メニューはフォーカスを失い、非表示になります。
 
@@ -303,7 +303,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   - コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用して、コントロールが有効になるまで待機するコード化された UI テストの例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」をご覧ください。
 
-  - コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「[コード化された UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」をご覧ください。
+  - コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「 [Using HTML5 Controls in Coded UI Tests](../test/using-html5-controls-in-coded-ui-tests.md)」を参照してください。
 
   - **コード化された UI テストのコーディング ガイダンス:**
 
@@ -465,28 +465,28 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)](http://go.microsoft.com/fwlink/?LinkID=255196)」をご覧ください。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
+  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)](https://go.microsoft.com/fwlink/?LinkID=255196)」をご覧ください。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 ### <a name="guidance"></a>ガイダンス
-- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>よくあるご質問
-- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>よく寄せられる質問
+- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
 
-- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](http://go.microsoft.com/fwlink/?LinkID=230578)
+- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>フォーラム
-- [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](http://go.microsoft.com/fwlink/?LinkID=224497)
+- [Visual Studio の UI オートメーションのテスト (CodedUI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [コードの品質向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)
 - [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)

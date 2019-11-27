@@ -29,14 +29,14 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1352da002b16c736ce20a9fbaf7cdc26b258b718
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657623"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296327"
 ---
-# <a name="map-dependencies-across-your-solutions"></a>ソリューション間の依存関係をマップする
+# <a name="map-dependencies-across-your-solutions"></a>複数のソリューション間の依存関係のマッピング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード内の依存関係を理解するには、コード マップを作成して視覚化します。 このことは、ファイルとコード行全体を読むことなく、コードの相関を確認するのに役立ちます。
@@ -45,11 +45,11 @@ ms.locfileid: "72657623"
 
  **ビデオ**:
 
-- [視覚化によるコードの依存関係の理解](http://go.microsoft.com/fwlink/?LinkID=252065)
+- [視覚化によるコードの依存関係の理解](https://go.microsoft.com/fwlink/?LinkID=252065)
 
-- [変更の影響の視覚化](http://go.microsoft.com/fwlink/?LinkID=252068)
+- [変更の影響の視覚化](https://go.microsoft.com/fwlink/?LinkID=252068)
 
-- [コード マップで複雑なコードを理解する](http://go.microsoft.com/fwlink/?LinkID=259869)
+- [コード マップで複雑なコードを理解する](https://go.microsoft.com/fwlink/?LinkID=259869)
 
 ## <a name="GetStarted"></a> コード マップの概要
  **コード マップを使用するには、次のいずれかが必要です**。
@@ -67,7 +67,7 @@ ms.locfileid: "72657623"
 
 - Visual C++ プロジェクト、ヘッダー ファイル (.h または `#include`)、またはバイナリのネイティブまたはマネージド C コードまたは C++ コード
 
-- Microsoft Dynamics AX の .NET モジュールから作られた X++ プロジェクトおよびアセンブリ
+- Microsoft Dynamics Ax の .NET モジュールから作成された X++ プロジェクトおよびアセンブリ
 
   **注:** C# または Visual Basic .NET 以外のプロジェクトの場合、コード マップを開始したり、既存のコード マップに項目を追加したりするためのオプションは少なくなります。 たとえば、C++ プロジェクトのテキスト エディター内のオブジェクトを右クリックすることも、コード マップにそのオブジェクト追加することもできません。 ただし、ソリューション エクスプローラー、クラス ビュー、およびオブジェクト ブラウザーから、個々のコード要素またはファイルをドラッグ アンド ドロップできます。
 
@@ -185,7 +185,7 @@ ms.locfileid: "72657623"
 
 - [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [DGML ファイルを編集してコード マップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 
 - [アナライザーを実行](../modeling/find-potential-problems-using-code-map-analyzers.md)して、コード内の潜在的な問題を見つけます。
 
@@ -232,7 +232,7 @@ ms.locfileid: "72657623"
 
      コードに含まれるがマップに表示されないメンバーを表示するには、グループの左上隅にある**再フェッチ children**アイコン![再フェッチ children アイコン](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")をクリックします。
 
-6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 あるいは、1 つまたは複数の項目を選択し、ショートカット メニューを開き、マップに追加する関連項目の種類の **[表示...]** オプションを選択します。 (例:
+6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 あるいは、1 つまたは複数の項目を選択し、ショートカット メニューを開き、マップに追加する関連項目の種類の **[表示...]** オプションを選択します。 例 :
 
      **アセンブリ**の場合、次のように選択します。
 
@@ -286,7 +286,7 @@ ms.locfileid: "72657623"
 ## <a name="SeeSourceHeader"></a> C および C++ のソース ファイルとヘッダー ファイルの間の依存関係の表示
  C++ プロジェクトのより完全なマップを作成する場合は、そのプロジェクトに対してブラウザー情報のコンパイラ オプション ( **/FR**) を設定します。 「 [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)」を参照してください。 設定されていない場合は、メッセージが表示され、このオプションを設定することが求められます。 **[OK]** を選択した場合、このオプションは現在のマップに対してのみ設定されます。 以後のすべてのマップについて、メッセージを非表示にするように選択できます。 このメッセージを非表示にしても、再び表示されるようにできます。 次のレジストリ キーを `0` に設定するか、削除します。
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
+ **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
 
  Visual C++ のプロジェクトを含むソリューションを開くときは、IntelliSense データベースの更新に時間がかかる場合があります。 この間は、IntelliSense データベースの更新が終了するまで、ヘッダー (.h または `#include`) ファイルのコード マップを生成できない場合があります。 更新の進行状況は、Visual Studio のステータス バーで監視できます。 IntelliSense の特定の設定が無効になっているために表示されるメッセージまたは問題を解決するには、「 [C および C++ コードのマップのトラブルシューティング](#Troubleshooting)」を参照してください。
 
@@ -316,7 +316,7 @@ ms.locfileid: "72657623"
 ||プログラム データベース (.pdb) ファイルがビルドされていない可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|リンカーで **/DEBUG** オプションをオンにします。<br /><br /> 「 [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)」を参照してください。|
 ||予想される場所で .pdb ファイルを開くことができないか、ファイルが見つかりません。|.pdb ファイルが予想される場所にあることを確認します。|
 ||デバッグ情報が .pdb ファイルから取り除かれています。|**/PDBSTRIPPED** オプションをリンカーで使用した場合は、代わりに完全な .pdb ファイルを使用します。<br /><br /> 「 [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|
-||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [の一般的な規則と制限事項](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />[__declspec (dllimport) を使用して関数呼び出しをインポート](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)-    には<br />-   [dllexport、dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [の一般的な規則と制限事項](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />[__declspec (dllimport) を使用した関数呼び出しのインポート](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)-   <br />-   [dllexport、dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="RenderMoreQuickly"></a> コード マップをよりすばやく表示する
  マップを初めて生成したときに、Visual Studio は、見つかったすべての依存関係のインデックスを作成します。 このプロセスには、特に大規模なソリューションの場合に時間がかかることがありますが、以降のパフォーマンスは向上します。 コードを変更すると、Visual Studio は、更新されたコードのインデックスだけを再作成します。 マップの表示にかかる時間を最小限に抑えたい場合は、次の作業を検討してください。
@@ -344,7 +344,7 @@ ms.locfileid: "72657623"
 ### <a name="share-the-map-with-other-visual-studio-users"></a>マップを他の Visual Studio ユーザーと共有する
  マップを保存するには、 **[ファイル]** メニューを使用します。
 
- -または-
+ または
 
  特定のプロジェクトの一部としてマップを保存するには、マップのツールバーで、 **共有**、 **CodeMapName** \< *.dgml*>**移動** の順にクリックし、マップの保存先のプロジェクトを選択します。
 
@@ -373,7 +373,7 @@ ms.locfileid: "72657623"
 
 2. ファイルを保存する場所を参照します。
 
-3. コード マップの名前を付けます。 **[名前を付けて保存]** ボックスが**xps ファイル (\* .xps)** に設定されていることを確認します。 **[保存]** をクリックします。
+3. コード マップの名前を付けます。 **[名前を付けて保存]** ボックスが**xps ファイル (\*.xps)** に設定されていることを確認します。 **[保存]** をクリックします。
 
 ## <a name="what-else-can-i-do"></a>その他にできること
 
@@ -385,4 +385,4 @@ ms.locfileid: "72657623"
 
 - [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [DGML ファイルを編集してコード マップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

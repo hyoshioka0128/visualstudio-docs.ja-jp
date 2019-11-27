@@ -11,27 +11,27 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e0dbc2c4a4402cc60febaaf158a7a4578bc78115
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655891"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292055"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio を使用した開発の開始
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio へようこそ。 製品を [ダウンロード](http://www.visualstudio.com/community) すると、コーディングを開始するのにこれらのページが役立ちます。
+Visual Studio へようこそ。 製品を [ダウンロード](https://visualstudio.microsoft.com/vs/community/) すると、コーディングを開始するのにこれらのページが役立ちます。
 
 - **[Web アプリを作成する](https://www.visualstudio.com/features/modern-web-tooling-vs):** 最新の Web アプリケーションを作成して配置するツール。
 
-     [チュートリアルの実施](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [ドキュメントの参照](https://docs.asp.net/) &#124;                                   [ビデオを見る](http://www.asp.net/vnext)
+     [チュートリアルの実施](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [ドキュメントの参照](https://docs.asp.net/) &#124;                                   [ビデオを見る](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
 
-- **[HTML/JavaScript (Apache Cordova) でクロスプラット フォームのモバイル アプリを作成する](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)** :               Apache Cordova は HTML/CSS/JavaScript に基づいたオープンソースのクロスプラットフォーム環境です。  JavaScript コードは、特定のプラットフォームを対象とし、デバイスのすべてのハードウェア機能へのアクセスを可能にするラッパーで実行されます。 Apple Store、Android ストア、Windows ストア用のアプリを開発します。
+- **[HTML/JavaScript (Apache Cordova) でクロスプラット フォームのモバイル アプリを作成する](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** :               Apache Cordova は HTML/CSS/JavaScript に基づいたオープンソースのクロスプラットフォーム環境です。  JavaScript コードは、特定のプラットフォームを対象とし、デバイスのすべてのハードウェア機能へのアクセスを可能にするラッパーで実行されます。 Apple Store、Android ストア、Windows ストア用のアプリを開発します。
 
-     [サンプルの読み込み](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [チュートリアルの実施](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124;                               [ドキュメントの参照](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124;                                [ビデオを見る](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [サンプルの読み込み](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [チュートリアルの実施](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [ドキュメントの参照](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [ビデオを見る](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
-- **[C# または Visual Basic (Xamarin) でクロスプラット フォームのモバイル アプリを作成する](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio と Xamarin 用ツールを使用して、Android、iOS、およびユニバーサル Windows プラットフォーム上で共有コード ベースから実行されるモバイル アプリの作成を開始します。
+- **[C# または Visual Basic (Xamarin) でクロスプラットフォームのモバイル アプリを作成する](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio と Xamarin 用ツールを使用して、Android、iOS、およびユニバーサル Windows プラットフォーム上で共有コード ベースから実行されるモバイル アプリの作成を開始します。
 
      サンプルを読み込む: [taskyportable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (ネイティブ UI) また[は xamarin forms の Todo サンプル](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)(xamarin. Forms 共有&#124;UI)[チュートリアル](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;を[参照するドキュメント](https://msdn.microsoft.com/library/mt299001.aspx) &#124;を参照[するビデオを見る](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
@@ -45,7 +45,7 @@ Visual Studio へようこそ。 製品を [ダウンロード](http://www.visua
 
 - **[Unity でゲームを作成する](../cross-platform/visual-studio-tools-for-unity.md)** : Unity フレームワークを使用してクロスプラットフォームのゲームの作成を開始します。
 
-     [サンプルの読み込み](http://unity3d.com/learn/resources/downloads) &#124;                     [チュートリアルの実施](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [ドキュメントの参照](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [ビデオを見る](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
+     [サンプルの読み込み](http://unity3d.com/learn/resources/downloads) &#124;                     [チュートリアルの実施](https://learn.unity.com/projects) &#124;                               [ドキュメントの参照](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [ビデオを見る](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
 - **[ユニバーサル Windows プラットフォームのアプリを作成する](https://dev.windows.com/windows-apps)** : ユニバーサル Windows プラットフォーム (XBox、PC、タブレット、Windows Phone、Surface Hub、モノのインターネット) で実行されるアプリの作成を開始します。
 
@@ -57,7 +57,7 @@ Visual Studio へようこそ。 製品を [ダウンロード](http://www.visua
 
 - **[Office アプリケーションの作成](https://msdn.microsoft.com/library/fp161347.aspx)** : office 365 サービスを使用して Word、Excel、Outlook、PowerPoint を拡張およびカスタマイズする office アプリケーションの作成を開始します。
 
-     [サンプルの読み込み](https://code.msdn.microsoft.com/office365/) &#124;                       [チュートリアルの実施](http://dev.office.com/getting-started/office365apis) &#124;                              [ドキュメントの参照](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [ビデオを見る](http://dev.office.com/videos)
+     [サンプルの読み込み](https://code.msdn.microsoft.com/office365/) &#124;                       [チュートリアルの実施](https://developer.microsoft.com/graph) &#124;                              [ドキュメントの参照](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [ビデオを見る](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Visual Studio Team Services と Team Foundation Server のツアー](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Visual Studio Team Services と Team Foundation Server の詳細を説明します。
 

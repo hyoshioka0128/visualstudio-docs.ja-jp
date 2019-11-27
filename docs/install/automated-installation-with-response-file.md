@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d26211f566bb8f683f3b38deade4f13defe9cb01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974450"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189506"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>応答ファイルの設定を定義する方法
 
@@ -159,3 +159,4 @@ Visual Studio セットアップをレイアウト フォルダーから実行�
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
+* [Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md)

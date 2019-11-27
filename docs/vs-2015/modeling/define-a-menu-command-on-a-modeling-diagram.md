@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87acbb53fd8fe5eae744aa4ef72c808da8eb6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663474"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299264"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>モデリング図にメニュー コマンドを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、UML 図のショートカット メニューに追加のメニュー項目を定義できます。 図上の任意の要素のショートカット メニューに対して、メニュー コマンドを表示して有効にするかどうかを制御できます。また、ユーザーがメニュー項目を選択したときに実行されるコードを記述できます。 これらの拡張機能を[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
+Visual Studio では、UML 図のショートカット メニューに追加のメニュー項目を定義できます。 図上の任意の要素のショートカット メニューに対して、メニュー コマンドを表示して有効にするかどうかを制御できます。また、ユーザーがメニュー項目を選択したときに実行されるコードを記述できます。 これらの拡張機能を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
 ## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
@@ -47,7 +47,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 4. F5 キーを押してメニュー コマンドをテストします。 詳細については、「 [メニュー コマンドの実行](#Executing)」を参照してください。
 
-5. 別のコンピューターにメニューコマンドをインストールします。そのためには、プロジェクトによってビルドされた **\\ \* .vsix \\ \* ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
+5. 別のコンピューターにメニューコマンドをインストールします。そのためには、プロジェクトによってビルドされた **\\\*.vsix\\\*ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
 
    次の手順も使用できます。
 
@@ -55,7 +55,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 1. 新しい Visual Studio ソリューションまたは既存のソリューションにクラス ライブラリ プロジェクトを作成します。
 
-   1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+   1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
    2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** をクリックします。 中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -172,7 +172,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 |||
 |-|-|
 |`string Text { get; }`|メニュー項目のラベルを返します。|
-|`void QueryStatus(IMenuCommand command);`|ユーザーが図上で右クリックすると呼び出されます。<br /><br /> このメソッドによってモデルが変更されることはありません。<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` は、コマンドを表示して有効にするかどうかを指定するために使用します。<br /><br /> 設定できる値:<br /><br /> ダイアグラム内でユーザーが右クリックしたときにコマンドをメニューに表示する必要があるかどうかを `true` するには `command.Visible` を -    します。<br />ユーザーがメニューのコマンドをクリックできるかどうかを `true` するには、`command.Enabled` を -    します。<br />メニューラベルを動的に設定するための `command.Text` の -   |
+|`void QueryStatus(IMenuCommand command);`|ユーザーが図上で右クリックすると呼び出されます。<br /><br /> このメソッドによってモデルが変更されることはありません。<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` は、コマンドを表示して有効にするかどうかを指定するために使用します。<br /><br /> ［設定］:<br /><br /> ダイアグラム内でユーザーが右クリックしたときにコマンドをメニューに表示する必要があるかどうかを `true` するには `command.Visible` を -   します。<br />ユーザーがメニューのコマンドをクリックできるかどうかを `true` するには、`command.Enabled` を -   します。<br />メニューラベルを動的に設定するための `command.Text` の -   |
 |`void Execute (IMenuCommand command);`|ユーザーがメニュー項目をクリックすると呼び出されます (メニュー項目が表示され、有効な場合)。|
 
 ### <a name="accessing-the-model-in-code"></a>コードのモデルにアクセスする
@@ -182,7 +182,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 [Import] public IDiagramContext DiagramContext { get; set; }
 ```
 
- [...]
+ ...
 
  `IDiagramContext` の宣言により、図、現在の選択項目、およびモデルにアクセスするメソッドにコードを記述することができます。
 
@@ -218,11 +218,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。
 
-     **トラブルシューティング**:新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が開始されない場合:
+     **トラブルシューティング**: 新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が起動しない場合:
 
     - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティ エディターで、 **[デバッグ]** タブをクリックします。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の完全なパス名であることを確認してください。通常は次のようになります。
+    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の完全なパス名であることを確認します。通常は次のようになります。
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -230,13 +230,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3. 図の任意の場所でショートカット メニューを開きます。 コマンドがメニューに表示されます。
 
-     **トラブルシューティング**:メニューにコマンドが表示されない場合は、次のことを確認してください。
+     **トラブルシューティング**: コマンドがメニューに表示されない場合は、次の点について確認してください。
 
     - メニュー コマンド プロジェクトは、VSIX プロジェクトの **source.extensions.manifest** の **[アセット]** タブに MEF コンポーネントとして表示される。
 
     - `Import` 属性と `Export` 属性のパラメーターが有効である。
 
-    - @No__t_0 メソッドで `command` が設定されていません。`Enabled` または `Visible` フィールドを `false` します。
+    - `QueryStatus` メソッドで `command`が設定されていません。`Enabled` または `Visible` フィールドを `false`します。
 
     - 使用するモデル図の種類 (UML クラス、シーケンスなど) が、メニュー コマンド クラスの属性 ( `[ClassDesignerExtension]`、 `[SequenceDesignerExtension]` など) の 1 つとして表示される。
 
@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. _YourProject_ **\\ \* \\ ファイルビン**を見つけ**ます。**
+    2. _YourProject_ **\\\*\\ファイルビン**を見つけ**ます。**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
@@ -271,9 +271,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *% Localappdata%* **\Local\Microsoft\VisualStudio \\ [バージョン] \ 拡張機能**
+   *% Localappdata%* **\Local\Microsoft\VisualStudio\\[バージョン] \ 拡張機能**
 
-## <a name="MenuExample"></a> 「例」
+## <a name="MenuExample"></a> 例
  クラス図の 2 つの要素の名前を入れ替えるメニュー コマンドのコードを次の例に示します。 このコードは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能プロジェクト内でビルドし、前のセクションで説明した手順に従ってインストールする必要があります。
 
 ```
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>関連項目
- [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張する](../modeling/extend-uml-models-and-diagrams.md) [モデリング図にジェスチャハンドラーを定義する](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [カスタムモデリングツールボックス項目を定義する](../modeling/define-a-custom-modeling-toolbox-item.md) [UML モデルの編集用の検証制約を定義する](../modeling/define-validation-constraints-for-uml-models.md) [Uml api](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [プログラミングと uml apiを使用した uml シーケンス図](../modeling/programming-with-the-uml-api.md) [Sample:UML 図で図形を整列するコマンド](http://go.microsoft.com/fwlink/?LinkID=213809)
+ [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[モデリング図にジェスチャハンドラーを](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[するカスタムモデリングツールボックスアイテムを定義する](../modeling/define-a-custom-modeling-toolbox-item.md)UML[モデルの検証制約の定義](../modeling/define-validation-constraints-for-uml-models.md)uml API を使用した Uml モデルの[編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)Uml [api](../modeling/programming-with-the-uml-api.md)の[サンプル: uml 図で図形を整列するコマンド](https://go.microsoft.com/fwlink/?LinkID=213809)

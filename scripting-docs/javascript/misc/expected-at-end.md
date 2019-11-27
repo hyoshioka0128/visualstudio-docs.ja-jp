@@ -1,5 +1,5 @@
 ---
-title: "' @No__t_0 ' | が必要です。Microsoft Docs"
+title: "'@end' | が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,13 +21,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573437"
 ---
-# <a name="expected-end"></a>' @No__t_0end ' が必要です
-条件付きでコンパイルされたコードブロックを作成しようとしましたが、最後に<strong>@end</strong>ステートメントが含まれていませんでした。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ステートメントは、 <strong>@if/ @end</strong>ブロック内で囲むことによって、条件付きでコンパイルできます。  
+# <a name="expected-end"></a>'\@end ' が必要です
+条件付きでコンパイルされたコードブロックを作成しようとしましたが、最後に<strong>@end</strong>ステートメントが含まれていませんでした。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ステートメントは、 <strong>@if/@end</strong>ブロック内で囲むことによって、条件付きでコンパイルできます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 - 対応する<strong>@end</strong>ステートメントを追加します。  
   
-## <a name="see-also"></a>関連項目  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

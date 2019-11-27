@@ -39,15 +39,15 @@ HRESULT Close();
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  通常、アプリケーションの所有者は、アプリケーションの終了時にこのメソッドを呼び出します。  
   
  このメソッドによって `IApplicationDebugger::onClose` が呼び出されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

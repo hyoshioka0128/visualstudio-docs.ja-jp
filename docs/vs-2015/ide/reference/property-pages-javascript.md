@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1fe8acd8628fcbd40e9c675558379049fd6658b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665739"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297825"
 ---
 # <a name="property-pages-javascript"></a>プロパティ ページ、JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "72665739"
 
  **起動するデバッガー**デバッガーの既定のホストを指定します。
 
-- Visual Studio ホスト コンピューターでアプリケーションを起動するには、 **[ローカル マシン]** を選択します。 詳細については、「[ローカル コンピューターでのアプリの実行](http://go.microsoft.com/fwlink/?LinkId=234912)」を参照してください。
+- Visual Studio ホスト コンピューターでアプリケーションを起動するには、 **[ローカル マシン]** を選択します。 詳細については、「[ローカル コンピューターでのアプリの実行](https://go.microsoft.com/fwlink/?LinkId=234912)」を参照してください。
 
-- シミュレーターでアプリケーションを起動するには、 **[シミュレーター]** を選択します。 詳細については、「[シミュレーターでのアプリの実行](http://go.microsoft.com/fwlink/?LinkId=234913)」を参照してください。
+- シミュレーターでアプリケーションを起動するには、 **[シミュレーター]** を選択します。 詳細については、「[シミュレーターでのアプリの実行](https://go.microsoft.com/fwlink/?LinkId=234913)」を参照してください。
 
-- リモート コンピューターでアプリケーションを起動するには、 **[リモート コンピューター]** を選択します。 リモート デバッグの詳細については、「[リモート コンピューターでのアプリの実行](http://go.microsoft.com/fwlink/?LinkId=234914)」を参照してください。
+- リモート コンピューターでアプリケーションを起動するには、 **[リモート コンピューター]** を選択します。 リモート デバッグの詳細については、「[リモート コンピューターでのアプリの実行](https://go.microsoft.com/fwlink/?LinkId=234914)」を参照してください。
 
   **アプリケーションの起動**F5 キーを押すか、 **[デバッグ]** 、 **[デバッグの開始]** の順にクリックして、アプリケーションを起動するかどうかを指定します。 アプリケーションが起動されるようにするには、 **[はい]** を選択します。それ以外の場合は、 **[いいえ]** を選択します。 **[いいえ]** を選択した場合でも、アプリケーションを別の方法で起動してデバッグできます。
 

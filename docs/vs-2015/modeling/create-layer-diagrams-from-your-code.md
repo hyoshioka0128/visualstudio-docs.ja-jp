@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 138f818eab34b0b1860c7daa85f1b6814888fc9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652844"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300278"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>コードからのレイヤー図の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "72652844"
 
 4. **[モデリングプロジェクトへの追加]** で、ソリューション内の既存のモデリングプロジェクトを参照して選択します。
 
-     -または-
+     または
 
      新しいモデリングプロジェクトをソリューションに追加するには、 **[新しいモデリングプロジェクトの作成]** を選択します。
 
@@ -135,5 +135,5 @@ ms.locfileid: "72652844"
 
 - [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>参照
- [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証](http://go.microsoft.com/fwlink/?LinkID=252073)レイヤー図[: リファレンス](../modeling/layer-diagrams-reference.md)[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)[レイヤー図を使用したコードの検証コードの](../modeling/validate-code-with-layer-diagrams.md)[視覚化](../modeling/visualize-code.md)
+## <a name="see-also"></a>関連項目
+ [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証](https://go.microsoft.com/fwlink/?LinkID=252073)レイヤー図[: リファレンス](../modeling/layer-diagrams-reference.md)[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)[レイヤー図を使用したコードの検証コードの](../modeling/validate-code-with-layer-diagrams.md)[視覚化](../modeling/visualize-code.md)

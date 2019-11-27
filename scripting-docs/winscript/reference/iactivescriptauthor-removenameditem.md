@@ -42,14 +42,14 @@ HRESULT RemoveNamedItem(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`S_FALSE`|@No__t_0 オブジェクトは、スクリプト作成エンジンの名前空間に存在しません。|  
+|`S_FALSE`|`NamedItem` オブジェクトは、スクリプト作成エンジンの名前空間に存在しません。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)は、スクリプト作成エンジンの名前空間に `NamedItem` オブジェクトを挿入するために使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

@@ -28,7 +28,7 @@ ms.locfileid: "72576033"
   
 - 2番目の引数として、`Array` または**Arguments**オブジェクトを指定します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [配列の使用](../../javascript/advanced/using-arrays-javascript.md)   
- [Apply メソッド (Function)](../../javascript/reference/apply-method-function-javascript.md)    
+ [Apply メソッド (Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [関数](../../javascript/functions-javascript.md)

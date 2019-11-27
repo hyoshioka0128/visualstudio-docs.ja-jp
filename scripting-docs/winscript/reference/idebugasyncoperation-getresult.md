@@ -38,7 +38,7 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>パラメーター  
  `phrResult`  
- 入出力操作が完了すると、`phrResult` が `IDebugSyncOperation::Execute` の戻り値になります。  
+ 入出力操作が完了すると、`phrResult` が `IDebugSyncOperation::Execute`の戻り値になります。  
   
  `ppunkResult`  
  入出力操作が完了した場合、`ppunkResult` は操作によって返されるオブジェクトパラメーターです。  
@@ -46,14 +46,14 @@ HRESULT GetResult(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_PENDING`|操作は完了していません。|  
   
-## <a name="remarks"></a>Remarks  
- 操作が完了している場合、このメソッドは `IDebugSyncOperation::Execute` から `HRESULT` とオブジェクトのパラメーターを返します。  
+## <a name="remarks"></a>コメント  
+ 操作が完了している場合、このメソッドは `IDebugSyncOperation::Execute`から `HRESULT` とオブジェクトのパラメーターを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)   
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

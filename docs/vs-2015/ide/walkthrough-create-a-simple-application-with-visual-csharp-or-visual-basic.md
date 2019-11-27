@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf06151265c1647de29725917624c5984577bf6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658603"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296859"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ ms.locfileid: "72658603"
  [アプリケーションのデバッグとテスト](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
-> このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](https://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](http://www.asp.net/get-started)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
+> このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](https://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
 
 ## <a name="BKMK_ConfigureIDE"></a> IDE の構成
- Visual Studio を初めて起動すると、Visual Studio から、Microsoft サービス アカウント (MSA) でサインイン ( [Visual Studio にサインイン](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)) するように求められます。 サインインは必須ではなく、後で実行することもできます。
+ Visual Studio を初めて起動すると、Visual Studio から、Microsoft サービス アカウント (MSA) でサインイン ( [Visual Studio にサインイン](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/)) するように求められます。 サインインは必須ではなく、後で実行することもできます。
 
  Visual Studio が起動すると、次に IDE に定義済みの一連のカスタマイズを適用する設定の組み合わせを選択する必要があります。 各設定の組み合わせは、アプリケーションを簡単に開発できるように設計されています。
 
@@ -76,15 +76,15 @@ ms.locfileid: "72658603"
 
 ##### <a name="to-create-the-wpf-project"></a>WPF プロジェクトを作成するには
 
-1. 新しいプロジェクトを作成します。 メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順に選択します。
+1. 新しいプロジェクトを作成します。 メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../ide/media/exploreide-filenewproject.png "|::ref6::|")
 
-    また、[ **クイック起動** ] ボックスに「 **新しいプロジェクト** 」と入力しても、同じことができます。
+    また、 **[クイック起動]** ボックスに「 **新しいプロジェクト** 」と入力しても、同じことができます。
 
     ![クイック起動ボックスで新しいプロジェクトを指定](../ide/media/exploreide-quicklaunchnewprojectsmall.png "|::ref7::|")
 
-2. たとえば、左側のペインで **[インストール済み]**、 **[テンプレート]**、 **[Visual C#]**、 **[Windows]** の順に選択してから、中央のペインで [WPF アプリケーション] を選択して、Visual Basic か Visual C# の WPF アプリケーション テンプレートを選択します。  下部の [新しいプロジェクト] ダイアログで、プロジェクトに HelloWPFApp という名前を付けます。
+2. たとえば、左側のペインで **[インストール済み]** 、 **[テンプレート]** 、 **[Visual C#]** 、 **[Windows]** の順に選択してから、中央のペインで [WPF アプリケーション] を選択して、Visual Basic か Visual C# の WPF アプリケーション テンプレートを選択します。  下部の [新しいプロジェクト] ダイアログで、プロジェクトに HelloWPFApp という名前を付けます。
 
     ![Visual Basic WPF プロジェクトの作成、HelloWPFApp](../ide/media/exploreide-newprojectvb.png "|::ref8::|")
 
@@ -255,7 +255,7 @@ ms.locfileid: "72658603"
 
 ##### <a name="to-start-debugging-and-find-the-error"></a>デバッグを開始し、エラーを見つけるには
 
-1. **[デバッグ]**、 **[デバッグの開始]** の順に選択して、デバッガーを起動します。
+1. **[デバッグ]** 、 **[デバッグの開始]** の順に選択して、デバッガーを起動します。
 
     ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "|::ref17::|")
 
@@ -282,7 +282,7 @@ ms.locfileid: "72658603"
 
 1. Greetings.xaml.vb または Greetings.xaml.cs を開き、`MessageBox.Show("Hello.")` という行を選択します。
 
-2. **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
+2. **[デバッグ]** 、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 
      ![[デバッグ] メニューの [ブレークポイントの設定/解除] コマンド](../ide/media/exploreide-togglebreakpoint.png "|::ref19::|")
 
@@ -296,7 +296,7 @@ ms.locfileid: "72658603"
 
      `MessageBox.Show("Hello.")` という行が黄色で強調表示されます。 IDE の下部では、[自動変数]、[ローカル]、 [ウォッチ] の各ウィンドウが左側にまとめてドッキングされ、[呼び出し履歴]、[ブレークポイント]、[コマンド]、[イミディエイト]、 [出力] の各ウィンドウが右側にまとめてドッキングされます。
 
-6. メニュー バーで **[デバッグ]**、 **[ステップ アウト]** の順に選択します。
+6. メニュー バーで **[デバッグ]** 、 **[ステップ アウト]** の順に選択します。
 
      アプリケーションの実行が再開され、メッセージ ボックスに "Hello" と表示されます。
 
@@ -310,14 +310,14 @@ ms.locfileid: "72658603"
 
 10. Shift キーと F5 キーを押して (最初に Shift を押し、押したままの状態で F5 を押す) 、デバッグを停止します。
 
-11. メニュー バーで、 **[デバッグ]**、 **[すべてのブレークポイントを無効にする]** の順に選択します。
+11. メニュー バーで、 **[デバッグ]** 、 **[すべてのブレークポイントを無効にする]** の順に選択します。
 
 ### <a name="build-a-release-version-of-the-application"></a>アプリケーションのリリース バージョンのビルド
  すべてが機能することを確認したら、アプリケーションのリリース ビルドを準備できます。
 
 ##### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>ソリューション ファイルをクリーンアップし、リリース バージョンをビルドするには
 
-1. メイン メニューで、 **[ビルド]**、 **[ソリューションのクリーン]** の順に選択して、前のビルドで作成された中間ファイルと出力ファイルを削除します。  この作業は必須ではありませんが、デバッグ ビルドの出力がクリーンアップされます。
+1. メイン メニューで、 **[ビルド]** 、 **[ソリューションのクリーン]** の順に選択して、前のビルドで作成された中間ファイルと出力ファイルを削除します。  この作業は必須ではありませんが、デバッグ ビルドの出力がクリーンアップされます。
 
     ![[ビルド] メニューの [ソリューションのクリーン] コマンド](../ide/media/exploreide-cleansolution.png "|::ref20::|")
 

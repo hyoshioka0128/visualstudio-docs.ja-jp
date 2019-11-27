@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665717"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297819"
 ---
-# <a name="proxy-authorization-required"></a>プロキシ認証が要求される
+# <a name="proxy-authorization-required"></a>プロキシ認証が必要です
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 プロキシ**認証が必要な**エラーは、通常、ユーザーがプロキシサーバー経由で Visual Studio online リソースに接続し、プロキシサーバーが呼び出しをブロックしている場合に発生します。
@@ -25,19 +25,19 @@ ms.locfileid: "72665717"
 
 - Visual Studio を再起動します。 プロキシ認証のダイアログ ボックスが表示されます。 ダイアログ ボックスに資格情報を入力します。
 
-- 上記の手順で問題が解決しない場合、考えられる原因は、プロキシ サーバーが http://go.microsoft.com のアドレスに対しては資格情報を要求せず、*.visualStudio.com のアドレスに対しては資格情報を要求することです。 これらのサーバーについては、次の Url を許可一覧に追加して、Visual Studio でのすべてのサインインシナリオのブロックを解除する必要があります。
+- 上記の手順で問題が解決しない場合、考えられる原因は、プロキシ サーバーが https://go.microsoft.com のアドレスに対しては資格情報を要求せず、*.visualStudio.com のアドレスに対しては資格情報を要求することです。 これらのサーバーについては、次の Url を許可一覧に追加して、Visual Studio でのすべてのサインインシナリオのブロックを解除する必要があります。
 
   - *.windows.net
 
   - *.microsoftonline.com
 
-  - *.visualstudio.com
+  - *.visualStudio.com
 
-  - *.microsoftonline.com
+  - *.microsoft.com
 
   - *.live.com
 
-- @No__t_0 アドレスを許可一覧から削除して、Visual Studio の再起動時にプロキシ認証ダイアログが http://go.microsoft.com アドレスとサーバーエンドポイントの両方に表示されるようにすることができます。
+- https://go.microsoft.com アドレスを許可一覧から削除して、Visual Studio の再起動時にプロキシ認証ダイアログが https://go.microsoft.com アドレスとサーバーエンドポイントの両方に表示されるようにすることができます。
 
 - プロキシで既定の資格情報を使用する場合は、次の手順を実行します。
 
@@ -51,6 +51,6 @@ ms.locfileid: "72665717"
       </defaultProxy>
       ```
 
-      @No__t_0 にネットワークの正しいプロキシアドレスを挿入します。
+      `proxyaddress="<http://<yourproxy:port#>`にネットワークの正しいプロキシアドレスを挿入します。
 
-- [このブログの投稿](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)に記載されている手順に従って、プロキシを使用するためのコードを追加します。
+- [このブログの投稿](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)に記載されている手順に従って、プロキシを使用するためのコードを追加します。

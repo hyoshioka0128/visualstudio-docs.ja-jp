@@ -46,18 +46,18 @@ HRESULT FireDebuggerEvent(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_NOTIMPL`|メソッドは現在実装されていません。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  GUID と `IUnknown` のセマンティクスは、アプリケーション/デバッガーが完全に定義されています。  
   
  このメソッドは、デバッガーモデルのカスタム拡張を可能にします。現在は実装されていません。  
   
  このメソッドによって `IApplicationDebugger::onDebuggerEvent` が呼び出されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

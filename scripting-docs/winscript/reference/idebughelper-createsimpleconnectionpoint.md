@@ -41,18 +41,18 @@ HRESULT CreateSimpleConnectionPoint(
  からラップする `IDispatch` オブジェクト。  
   
  `ppscp`  
- 入出力@No__t_0 をラップするイベントインターフェイス。  
+ 入出力`pdisp`をラップするイベントインターフェイス。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  指定された `IDispatch` をラップするイベントインターフェイスを返します (「 [ISimpleConnectionPoint インターフェイス](../../winscript/reference/isimpleconnectionpoint-interface.md)」を参照してください)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugHelper インターフェイス](../../winscript/reference/idebughelper-interface.md)   
  [ISimpleConnectionPoint インターフェイス](../../winscript/reference/isimpleconnectionpoint-interface.md)

@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションのコンシェルジェ チャ�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681177"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099580"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
 コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
@@ -38,7 +38,9 @@ ms.locfileid: "68681177"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise | VL| 使用可能       |  はい          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
+| Visual Studio Professional with GitHub Enterprise | VL | 使用可能                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  はい          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
@@ -63,3 +65,5 @@ Microsoft のツールとサービスの詳細については、次のドキュ�
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
 - [Visual Studio IDE](/visualstudio/)
+
+サブスクリプションに付属している Azure DevTest の個人クレジット特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。

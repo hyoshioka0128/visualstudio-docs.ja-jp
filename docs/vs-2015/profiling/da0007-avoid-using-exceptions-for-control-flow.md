@@ -1,5 +1,5 @@
 ---
-title: DA0007:制御フローでの例外の使用を避けてください | Microsoft Docs
+title: 'DA0007: 制御フローでの例外の使用を避けてください | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,20 +14,20 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35a800d83e10b1c47096876fb3f9181a4db2f7a2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580213"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300979"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007:制御フローでの例外の使用を避けてください
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 制御フローでの例外の使用を避けてください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA 0007 |  
-|カテゴリ |。NET Framework の使用 |  
-|プロファイル方法 |すべて |  
-|メッセージ |多数の例外が継続してスローされています。 プログラム ロジックで例外の使用を減らすことを検討してください。|  
+ルール Id |DA0007 |  
+|Category |。NET Framework Usage |  
+|プロファイル方法 |All |  
+|Message |多数の例外が常にスローされています。 プログラム ロジックで例外の使用を減らすことを検討してください。|  
 |メッセージの種類 |警告 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 25 個収集する必要があります。  
@@ -38,7 +38,7 @@ ms.locfileid: "62580213"
 ## <a name="rule-description"></a>規則の説明  
  例外ハンドラーを使用して、プログラム実行を中断するエラーやその他のイベントをキャッチするのは良い方法ですが、通常のプログラム実行ロジックの一部として例外ハンドラーを使用すると負荷が高くなる可能性があるため、避けてください。 ほとんどの場合、例外は、あまり発生することのない、予期しない状況に対してのみ使用する必要があります。 値を返すときに通常のプログラム フローの一部として例外を使用しないでください。 多くの場合、値を検証し、条件付きロジックを使用して問題の原因となっているステートメントの実行を中断することで、例外の発生を抑えることができます。  
   
- 詳細については、MSDN の **Microsoft Patterns and Practices** (マイクロソフトのパターンと手法) ライブラリの「**.NET アプリケーションのパフォーマンスとスケーラビリティの向上**」の**第 5 章「マネージド コード パフォーマンスの向上**」の「[例外管理](http://go.microsoft.com/fwlink/?LinkID=177825)」を参照してください。  
+ 詳細については、MSDN の [Microsoft Patterns and Practices](https://go.microsoft.com/fwlink/?LinkID=177825) (マイクロソフトのパターンと手法) ライブラリの「 **.NET アプリケーションのパフォーマンスとスケーラビリティの向上**」の**第 5 章「マネージド コード パフォーマンスの向上**」の「**例外管理**」を参照してください。  
   
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[マーク] ビューに移動します。 **.NET CLR Exceptions(@ProcessInstance)\\# of Exceps Thrown / sec** の測定値が含まれる列を見つけます。 例外処理の頻度が他よりも高い特定のプログラム実行フェーズがあるかどうかを確認します。 サンプリング プロファイルを使用して、頻繁な例外を生成する throw ステートメントおよび try/catch ブロックを識別してください。 必要に応じて、ロジックを catch ブロックに追加すると、最も頻繁に処理されている例外を見分けることができます。 可能な場合は、頻繁に実行される throw ステートメントまたは catch ブロックを、簡単なフロー制御ロジックまたは検証コードと置き換えてください。  

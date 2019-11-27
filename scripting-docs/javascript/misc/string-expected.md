@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573683"
 ---
 # <a name="string-expected"></a>文字列が必要です。
-@No__t_2 以外の型のオブジェクトで、**文字列**を呼び出そうとして、または**文字列**を呼び出そうとしました。 この種類の呼び出しのオブジェクトは `String` 型である必要があります。  
+`String`以外の型のオブジェクトで、**文字列**を呼び出そうとして、または**文字列**を呼び出そうとしました。 この種類の呼び出しのオブジェクトは `String`型である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_2 型のオブジェクトに対してのみ、**文字列のプロトタイプ**または**文字列**を呼び出します。  
+- `String`型のオブジェクトに対してのみ、**文字列のプロトタイプ**または**文字列**を呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [文字列オブジェクト](../../javascript/reference/string-object-javascript.md)   
  [toString メソッド (Object)](../../javascript/reference/tostring-method-object-javascript.md)

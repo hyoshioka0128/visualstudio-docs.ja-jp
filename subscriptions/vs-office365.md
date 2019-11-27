@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Office 365 特典について説明します。
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816464"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099605"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio Subscription の Office 365 ProPlus
 
 最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 ProPlus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
+
+> [!NOTE]
+> ご利用の Visual Studio サブスクリプションでは、Office 365 を運用環境で使用することができます。  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus の概要
 
@@ -43,17 +46,15 @@ ms.locfileid: "72816464"
 0. もう一度 **[次へ]** をクリックします。
 0. **[インストール]** をクリックして Office アプリケーションをインストールします。
 
-## <a name="next-steps"></a>次の手順
-
-Office 用アプリケーションを開発する予定がある場合は、[Office Developer サブスクリプション](vs-office-dev.md)をアクティブ化します。
-
 ## <a name="eligibility"></a>特典を受ける条件
 
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール| 使用可能       |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise  | VL | 使用可能       |  はい          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 使用できません       |  N/A          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                            |  N/A          |
+| Visual Studio Professional with GitHub Enterprise | VL | 使用できません         |  N/A          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
@@ -75,4 +76,4 @@ Office 用アプリケーションを開発する予定がある場合は、[Off
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest の個人クレジット](vs-azure.md)
+- [Azure DevTest の個人クレジット](vs-azure.md) Office 用アプリケーションを開発する予定がある場合は、[Office Developer サブスクリプション](vs-office-dev.md)をアクティブ化します。

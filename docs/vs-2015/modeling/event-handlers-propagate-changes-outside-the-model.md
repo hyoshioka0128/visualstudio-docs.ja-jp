@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295517"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>イベント ハンドラーによって変更内容がモデル外に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "72669683"
 
 ### <a name="to-define-a-store-event"></a>ストアイベントを定義するには
 
-1. 監視するイベントの種類を選択します。 完全な一覧については、<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> のプロパティを参照してください。 各プロパティは、イベントの種類に対応します。 最も頻繁に使用されるイベントの種類は次のとおりです。
+1. 監視するイベントの種類を選択します。 完全な一覧については、<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>のプロパティを参照してください。 各プロパティは、イベントの種類に対応します。 最も頻繁に使用されるイベントの種類は次のとおりです。
 
    - `ElementAdded` –モデル要素、リレーションシップリンク、シェイプ、またはコネクタが作成されたときにトリガーされます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "72669683"
 
 2. **Dslpackage**プロジェクト内の別のコードファイルに_dsl_**docdata**の部分クラス定義を追加します。
 
-3. 次の例に示すように、イベントのコードをメソッドとして記述します。 @No__t_1 にアクセスする場合を除き、`static` できます。
+3. 次の例に示すように、イベントのコードをメソッドとして記述します。 `DocData`にアクセスする場合を除き、`static`できます。
 
 4. ハンドラーを登録するには、`OnDocumentLoaded()` をオーバーライドします。 複数のハンドラーがある場合は、それらすべてを同じ場所に登録できます。
 
@@ -179,15 +179,15 @@ private static void AlbumTitleAdjuster(object sender,
 |-------------------------------------------|-------------------|
 |追加される element|ドメインクラス、ドメインリレーションシップ、図形、コネクタ、または図のインスタンスが作成されます。|
 |ElementDeleted|モデル要素がストアの要素ディレクトリから削除されており、リレーションシップのソースまたはターゲットではなくなっています。 要素は実際にはメモリから削除されませんが、将来の元に戻す場合に保持されます。|
-|Elementを開始しました|外側のトランザクションの終了時に呼び出されます。|
-|Elementの終了|他のすべてのイベントが処理されたときに呼び出されます。|
+|ElementEventsBegun|外側のトランザクションの終了時に呼び出されます。|
+|ElementEventsEnded|他のすべてのイベントが処理されたときに呼び出されます。|
 |ElementMoved|モデル要素が1つのストアパーティションから別のストアパーティションに移動されました。<br /><br /> これは、図の図形の位置とは関係ありません。|
 |ElementPropertyChanged|ドメインプロパティの値が変更されました。 これは、古い値と新しい値が等しくない場合にのみ実行されます。|
 |RolePlayerChanged|リレーションシップの2つのロール (両端) のいずれかが、新しい要素を参照しています。|
 |RolePlayerOrderChanged|複数要素の接続性が1より大きいロールでは、リンクの順序が変更されています。|
 |トランザクションの開始||
-|トランザクションコミット済み||
+|TransactionCommitted||
 |トランザクションロールバック||
 
-## <a name="see-also"></a>参照
- [変更に対応して反映する](../modeling/responding-to-and-propagating-changes.md)[サンプルコード: サーキットダイアグラム](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>関連項目
+ [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)

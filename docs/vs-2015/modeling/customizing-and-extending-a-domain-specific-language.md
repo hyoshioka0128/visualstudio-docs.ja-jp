@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655083"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299341"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズおよび拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |モデル要素のさまざまなクラスは、図に似ています。初期の高さ、幅、色、ツールヒントなどのプロパティを共有します。|図形またはコネクタクラス間の継承を使用します。 派生図形と派生ドメインクラス間のマッピングは、親のマッピングの詳細を継承します。<br /><br /> または、異なるドメインクラスを同じ shape クラスにマップします。|
 |モデル要素のクラスは、さまざまな図形コンテキストによって表示されます。|複数のシェイプクラスを同じドメインクラスにマップします。 ソリューションをビルドするときに、エラー報告に従って、使用する図形を決定するために要求されたコードを指定します。|
 |図形の色またはフォントなどのその他の機能は、現在の状態を示します。|「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> 公開されたプロパティを更新するルールを作成します。 「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。<br /><br /> または、OnAssociatedPropertyChanged () を使用して、リンク矢印やフォントなどの公開されていない機能を更新します。|
-|状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()` をオーバーライドします。 @No__t_0 の例を参照してください。|
+|状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()`をオーバーライドします。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>の例を参照してください。|
 |任意の図形に背景画像を設定する|InitializeInstanceResources () をオーバーライドして、固定された ImageField を追加します。 図の「[プレゼンテーションのカスタマイズ」を](../modeling/customizing-presentation-on-the-diagram.md)参照してください。|
 |図形を任意の深さに入れ子にする|再帰的な埋め込みツリーを設定します。 図形を含めるように BoundsRules を定義します。 図の「[プレゼンテーションのカスタマイズ」を](../modeling/customizing-presentation-on-the-diagram.md)参照してください。|
-|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128)」を参照してください。|
+|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)」を参照してください。|
 |テキストフィールド他の値から派生した値が表示されます。|テキストデコレータを計算済みまたはカスタムのストレージドメインプロパティにマップします。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。|
 |モデル要素間または図形間での変更の反映|「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。|
 |ストアの外部にある他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能などのリソースに変更を反映します。|「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。|
@@ -56,9 +56,9 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |コピー、切り取り、および貼り付けを有効にする|DSL エクスプローラーで、 **[エディター]** ノードの **[コピー貼り付けを有効にする]** プロパティを設定します。|
 |要素がコピーされるたびに参照リンクとそのターゲットをコピーします。 たとえば、項目に添付されたコメントをコピーします。|ソースロールの **[コピーの伝達]** プロパティを設定します (DSL 定義図では、ドメインリレーションシップの片側の行で表されます)。<br /><br /> より複雑な効果を実現するために、ProcessOnCopy をオーバーライドするコードを記述します。<br /><br /> 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
 |要素が削除されたときに関連要素を削除、再親、または再リンクします。|リレーションシップロールの **削除の反映**値を設定する。 より複雑な効果を実現するには、 **DomainModel.cs**で定義されている `MyDslDeleteClosure` クラスの `ShouldVisitRelationship` および `ShouldVisitRolePlayer` メソッドをオーバーライドします。<br /><br /> 「[削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)」を参照してください。|
-|コピーとドラッグアンドドロップで図形のレイアウトと外観を保持します。|コピーした `ElementGroupPrototype` に図形とコネクタを追加します。 オーバーライドする最も便利な方法は `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
+|コピーとドラッグアンドドロップで図形のレイアウトと外観を保持します。|コピーした `ElementGroupPrototype`に図形とコネクタを追加します。 オーバーライドする最も便利な方法は `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
 |現在のカーソル位置など、選択した場所に図形を貼り付けます。|場所固有のバージョンを使用するように `ClipboardCommandSet.ProcessOnCopy()` をオーバーライド `ElementOperations.Merge().` 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
-|貼り付け時に追加のリンクを作成する|ProcessOnPasteCommand () をオーバーライドします。|
+|貼り付け時に追加のリンクを作成する|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |この図、他の Dsl または UML 図、Windows 要素からのドラッグアンドドロップを有効にする|「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。|
 |図形またはツールを、親にドラッグした場合と同様に、ポートなどの子図形にドラッグできるようにします。|削除されたオブジェクトを親に転送するために、ターゲットオブジェクトクラスに要素マージディレクティブを定義します。 「[要素の作成と移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。|
 |図形またはツールを図形上にドラッグし、追加のリンクまたはオブジェクトを作成できるようにします。 たとえば、リンク先のアイテムにコメントをドロップできるようにします。|ターゲットドメインクラスに要素マージディレクティブを定義し、生成するリンクを定義します。 複雑な場合は、カスタムコードを追加できます。 「[要素の作成と移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。|
@@ -74,5 +74,5 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |DSL がサードパーティによって拡張されることを許可し、拡張機能を制御します。|[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [DSL ライブラリによる DSL 間でのクラスの共有](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [ロック ポリシーの定義と読み取り専用セグメントの作成](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 |||
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  ドメイン固有言語を[定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [Visual Studio 用の](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)ドメイン固有言語モデリング SDK を[カスタマイズする](../modeling/writing-code-to-customise-a-domain-specific-language.md)ためのコードの作成-ドメイン固有言語

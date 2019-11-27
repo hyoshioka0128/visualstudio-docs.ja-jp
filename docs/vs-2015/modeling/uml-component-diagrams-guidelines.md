@@ -15,17 +15,17 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652255"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297154"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML コンポーネント図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、*コンポーネント図*を描画して、ソフトウェアシステムの構造を示すことができます。 ビデオデモについては、「[コンポーネント図を使用した物理構造の設計](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)」を参照してください。
+Visual Studio では、*コンポーネント図*を描画して、ソフトウェアシステムの構造を示すことができます。 ビデオデモについては、「[コンポーネント図を使用した物理構造の設計](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -146,7 +146,7 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
 - **UML モデルエクスプローラー**でインターフェイスを見つけ、そこからコンポーネントにドラッグします。
 
-     -または-
+     または
 
 - インターフェイスへの参照を図からコピーし、貼り付けます。
 
@@ -332,5 +332,5 @@ Visual Studio では、*コンポーネント図*を描画して、ソフトウ�
 
   依存関係矢印の名前を使用して、特定の用途を表すことができます。 名前を設定するには、矢印を右クリックし、 **[プロパティ]** をクリックして、プロパティ ウィンドウの **[名前]** フィールドを設定します。
 
-## <a name="see-also"></a>参照
- [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)uml[ユースケース図:](../modeling/uml-use-case-diagrams-reference.md)リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス[uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [ビデオ: コンポーネント図を使用した物理構造のデザイン](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+## <a name="see-also"></a>関連項目
+ [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md) [Uml ユースケース図](../modeling/uml-use-case-diagrams-reference.md): リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス uml[コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス[ビデオ: コンポーネント図を使用した物理構造の設計](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

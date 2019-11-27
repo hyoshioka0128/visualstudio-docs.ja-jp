@@ -58,14 +58,14 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、バリアントをラップし、バリアント値または VARTYPE 型から文字列へのカスタム変換を可能にするプロパティブラウザーを返します。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)    
+## <a name="see-also"></a>参照  
+ [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
  [IDebugHelper インターフェイス](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)

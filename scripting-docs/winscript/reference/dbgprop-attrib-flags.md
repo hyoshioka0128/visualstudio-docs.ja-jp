@@ -106,9 +106,9 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  DBGPROP_ATTRIB_VALUE_IS_RETURN_VALUE  
  値が関数からの戻り値であることを示します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  これらのフラグは、オブジェクトの子のフィルター処理にも使用されます。 値は、ビットごとの OR と組み合わせることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)

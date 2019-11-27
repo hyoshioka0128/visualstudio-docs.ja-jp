@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573797"
 ---
 # <a name="javascript-object-expected"></a>JavaScript オブジェクトが必要です。
-@No__t_1 オブジェクトを予期している組み込み関数に、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 以外のオブジェクトを渡そうとしました。 さまざまな組み込み関数では、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] で定義されたオブジェクト (ホストで定義されたオブジェクト、またはコントロールのような外部コンポーネント) が必要です。  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] オブジェクトを予期している組み込み関数に、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 以外のオブジェクトを渡そうとしました。 さまざまな組み込み関数では、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] で定義されたオブジェクト (ホストで定義されたオブジェクト、またはコントロールのような外部コンポーネント) が必要です。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 - パラメーターとして渡すオブジェクトが正しい型であることを確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [オブジェクトと配列](../../javascript/objects-and-arrays-javascript.md)   
  [配列の使用](../../javascript/advanced/using-arrays-javascript.md)

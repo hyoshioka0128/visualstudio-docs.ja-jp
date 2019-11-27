@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576860"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-@No__t_0 メソッドは、名前と初期属性を使用してデバッグドキュメントヘルパーを初期化します。  
+`Init` メソッドは、名前と初期属性を使用してデバッグドキュメントヘルパーを初期化します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -54,16 +54,16 @@ HRESULT Init(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、名前と初期属性を使用してデバッグドキュメントヘルパーを初期化します。  
   
- @No__t_0 が呼び出されるまで、このドキュメントはツリーに表示されません。  
+ `IDebugDocumentHelper::Attach` が呼び出されるまで、このドキュメントはツリーに表示されません。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+## <a name="see-also"></a>参照  
+ [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR 定数](../../winscript/reference/text-doc-attr-constants.md)

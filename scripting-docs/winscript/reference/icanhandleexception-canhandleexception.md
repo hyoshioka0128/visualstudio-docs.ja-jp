@@ -41,19 +41,19 @@ HRESULT CanHandleException(
  から例外ハンドラーが見つからない場合に報告される情報を格納している `EXCEPINFO` 構造体へのポインター。  
   
  `pvar`  
- から@No__t_0 ステートメントによってスローされる値など、例外に関連付けられた値。 このパラメーターは `NULL` の場合もあります。  
+ から`throw` ステートメントによってスローされる値など、例外に関連付けられた値。 このパラメーターは `NULL` の場合もあります。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|呼び出し元は例外を処理できます。|  
 |`E_FAIL`|呼び出し元が例外を処理できません。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 または同様のメソッドへの呼び出しによって例外が発生した場合、スクリプトエンジンは、`ICanHandleException` インターフェイスをサポートするスクリプトの呼び出し元チェーン内の呼び出し元を確認し、例外を処理できることを示します。 呼び出し元が例外を処理できない場合、スクリプトエンジンは停止します。  
+## <a name="remarks"></a>コメント  
+ `IDispatchEx::InvokeEx`または同様のメソッドへの呼び出しによって例外が発生した場合、スクリプトエンジンは、`ICanHandleException` インターフェイスをサポートするスクリプトの呼び出し元チェーン内の呼び出し元を確認し、例外を処理できることを示します。 呼び出し元が例外を処理できない場合、スクリプトエンジンは停止します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Icanhandleexception インターフェイス](../../winscript/reference/icanhandleexception-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdd45a1de7e2882626d9b12db9be4b0c7a36eb38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655050"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301189"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,13 +85,13 @@ partial class MyDslClipboardCommandSet
  `ClipboardCommandSet.ProcessOnPasteCommand()` をオーバーライドし、基本のメソッドを呼び出した後で、追加のリンクを作成します。
 
  外部アプリケーションに**要素をコピーできる形式をカスタマイズ**します。たとえば、ビットマップフォームに境界線を追加します。
-DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
+DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
 
  **コピーコマンドによって要素がクリップボードにコピーされる方法をカスタマイズします。ただし、ドラッグ操作ではコピーしません。**
-DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
+DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
 
  **コピーと貼り付けを使用して図形のレイアウトを保持します。**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
 
  この効果を得るには、コピーした ElementGroupPrototype に図形とコネクタを追加します。 オーバーライドする最も便利なメソッドは ElementOperations.CreateElementGroupPrototype() です。 そのためには、次のコードを Dsl プロジェクトに追加します。
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **現在のカーソル位置など、選択した場所に図形を貼り付けます。**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
 
  この効果を得るには、`ClipboardCommandSet.ProcessOnMenuPasteCommand()` をオーバーライドし、`ElementOperations.Merge()` の場所固有のバージョンを使用します。 そのためには、次のコードを DslPackage プロジェクトに追加します。
 
@@ -291,12 +291,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  ElementOperations クラスに次の 2 つのメソッドを定義します。
 
-- ソース要素をターゲットの図形、コネクタ、または図にドラッグ可能かどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
+- ソース要素をターゲット図形、コネクタ、または図にドラッグできるかどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
 
 - ソース要素をターゲットに結合する `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`。
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()` は、マウスが図の上を移動するときにユーザーに示されるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。
+ `CanMerge()` は、マウスを図の上に移動したときにユーザーに与えられるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。
 
  要素グループ プロトタイプは任意の数の要素およびリンクを含むことができます。 要素の種類はその GUID により識別できます。 GUID はドラッグした図形のものであり、基になるモデル要素のものではありません。 次の例で、`CanMerge()` は、クラスの図形を UML 図からこの図にドラッグした場合に true を返します。
 
@@ -377,7 +377,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  ユーザーが CTRL+C キーを押すか、またはコピー メニュー コマンドを使用すると、メソッド <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> が呼び出されます。 この設定方法については、「 **」を参照**してください。 コマンドの設定方法の詳細については、「[方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
- DslPackage プロジェクトに*Mydsl* `ClipboardCommandSet` の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドできます。
+ DslPackage プロジェクトに*Mydsl*`ClipboardCommandSet` の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドできます。
 
 ```csharp
 using System.Collections.Generic;
@@ -563,5 +563,5 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>参照
- [要素の作成と移動のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)[削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)[サンプル: vmsdk 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>関連項目
+ [要素の作成と移動のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)[削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)[サンプル: vmsdk 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)

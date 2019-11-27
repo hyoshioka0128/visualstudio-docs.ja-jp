@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187094"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298217"
 ---
 # <a name="additional-msbuild-resources"></a>追加の MSBuild リソース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,15 +612,15 @@ ms.locfileid: "68187094"
 問題を解決しようとした場合にドキュメントで必要な情報が見つからないときは、サポート技術情報の文書、開発者コミュニティ、製品サポートなど、他のリソースを参照してください。  
   
 ## <a name="knowledge-base-articles"></a>サポート技術情報の文書  
- サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 サポート技術情報には、[サポート技術情報 (MSBuild による検索結果)](http://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) の Web サイトでアクセスできます。  
+ サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 サポート技術情報には、[サポート技術情報 (MSBuild による検索結果)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) の Web サイトでアクセスできます。  
   
 ## <a name="community-forums"></a>コミュニティ フォーラム  
- フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。 Visual Studio MSBuild フォーラムには、[MSDN フォーラム](http://go.microsoft.com/fwlink/?LinkId=48931)の Web サイトでアクセスできます。  
+ フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。 Visual Studio MSBuild フォーラムには、[MSDN フォーラム](https://go.microsoft.com/fwlink/?LinkId=48931)の Web サイトでアクセスできます。  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] コミュニティ リソースには、[Channel 9 MSBuild](http://channel9.msdn.com/) の Web サイトでアクセスできます。  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] コミュニティ リソースには、[Channel 9 MSBuild](https://channel9.msdn.com/) の Web サイトでアクセスできます。  
   
 ## <a name="product-support"></a>製品のサポート  
- 他のリソースを参照しても問題が解決しない場合は、[Microsoft ヘルプとサポート](http://go.microsoft.com/fwlink/?linkid=1782)の Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../ide/talk-to-us.md)」をご覧ください。  
+ 他のリソースを参照しても問題が解決しない場合は、[Microsoft ヘルプとサポート](https://go.microsoft.com/fwlink/?linkid=1782)の Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../ide/talk-to-us.md)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目
  [.NET Framework を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619130"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300603"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "72619130"
  4 以前のバージョンの .NET Framework にアクセスするには、.NET Framework 3.5 がシステムにインストールされている必要があります。
 
 ## <a name="downloading-sample-solutions"></a>サンプル ソリューションのダウンロード
- Visual Studio を使用して、 [MSDN コード ギャラリー](http://go.microsoft.com/fwlink/?LinkId=254185)から、サンプル ソリューションをダウンロードしてインストールすることができます。
+ Visual Studio を使用して、 [MSDN コード ギャラリー](https://go.microsoft.com/fwlink/?LinkId=254185)から、サンプル ソリューションをダウンロードしてインストールすることができます。
 
  サンプルを個別にダウンロードすることも、テクノロジやトピックを共有する関連サンプルが含まれたサンプル パックをダウンロードすることもできます。 ダウンロードしたサンプルについてソース コードの変更が発行された場合は、そのことが通知されます。
 

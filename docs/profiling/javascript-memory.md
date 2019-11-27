@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826095"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189386"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP アプリでの JavaScript のメモリ使用量を分析する
 Visual Studio に用意されている JavaScript メモリ アナライザーは、メモリ使用量を把握し、JavaScript を使用して Windows 用に開発された UWP アプリのメモリ リークを検出するのに役立ちます。 サポートされるアプリには、ユニバーサル Windows アプリのアプリが含まれます。
@@ -96,10 +96,10 @@ Visual Studio に用意されている JavaScript メモリ アナライザー�
 
 - [スナップショットの詳細の表示](#view-snapshot-details))。 単一のスナップショットの詳細なメモリ使用量データを示します。
 
-- [スナップショットの相違の表示](#view-a-snapshot-diff))。スナップショット間の差分値を示します。 これらのビューは、オブジェクトのサイズや数の違いを示します。
+- [スナップショットの相違の表示](#view-a-snapshot-diff))。 スナップショット間の差分値を示します。 これらのビューは、オブジェクトのサイズや数の違いを示します。
 
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak
- 以下の手順は、JavaScript メモリ アナライザーをより効果的に使用するために役立つワークフローです。 これらの手順は、アプリケーションでメモリ リークが発生している可能性がある場合に役立ちます。 動作中のアプリのメモリ リークを識別するプロセスを紹介したチュートリアルについては、[メモリ リークの検出 (JavaScript) に関するチュートリアル](../profiling/walkthrough-find-a-memory-leak-javascript.md)のページを参照してください。
+ 以下の手順は、JavaScript メモリ アナライザーをより効果的に使用するために役立つワークフローです。 これらの手順は、アプリケーションでメモリ リークが発生している可能性がある場合に役立ちます。 動作中のアプリのメモリ リークを識別するプロセスを紹介したチュートリアルについては、[メモリ リークの検出 (JavaScript) に関するチュートリアル](javascript-memory.md)のページを参照してください。
 
 1. Visual Studio でアプリを開きます。
 
@@ -156,7 +156,7 @@ Visual Studio に用意されている JavaScript メモリ アナライザー�
 
      次の図は、スナップショット #2 から残されたオブジェクトの相違ビューを示しています。
 
-     ![種類を示すスナップショットの相違点ビュー](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
+     ![種類を示すスナップショットの相違ビュー](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
 
      前の図では、2 個のオブジェクトが前のスナップショットから残されていることがわかります。 この特定のアプリで予期された動作かどうかを調査します。 予期されない動作の場合は、メモリ リークを示している可能性があります。
 
@@ -245,13 +245,13 @@ Visual Studio に用意されている JavaScript メモリ アナライザー�
 
  スナップショットの相違の種類ビューを次に示します。
 
- ![種類を示すスナップショットの相違点ビュー](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
+ ![種類を示すスナップショットの相違ビュー](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
 
  スナップショットの相違ウィンドウでは、[ドミネーター]、[種類]、[ルート] の各ビューは、[ [スナップショットの詳細の表示](#view-snapshot-details) ] ウィンドウと同じです。 スナップショットの相違では、スナップショットの詳細と同じ情報に加えて、次の追加の値が表示されます。
 
-- **[サイズの相違]** 。現在のスナップショットと前のスナップショットとの間のオブジェクトのサイズの相違 (参照されたオブジェクトのサイズは含まれません)。
+- **[サイズの相違]** 。 現在のスナップショットと前のスナップショットとの間のオブジェクトのサイズの相違 (参照されたオブジェクトのサイズは含まれません)。
 
-- **[保持サイズの相違]** 。現在のスナップショットと前のスナップショットとの間のオブジェクトの保持サイズの相違。 保持サイズには、オブジェクトのサイズと他の親を持たないすべての子オブジェクトのサイズが含まれます。 扱いやすいように、この保持サイズはオブジェクトが保持しているメモリの量を表しており、オブジェクトを削除すると指定された量のメモリが解放されます。
+- **[保持サイズの相違]** 。 現在のスナップショットと前のスナップショットとの間のオブジェクトの保持サイズの相違。 保持サイズには、オブジェクトのサイズと他の親を持たないすべての子オブジェクトのサイズが含まれます。 扱いやすいように、この保持サイズはオブジェクトが保持しているメモリの量を表しており、オブジェクトを削除すると指定された量のメモリが解放されます。
 
   スナップショット間で相違情報をフィルターするには、相違ビューの上部でいずれかの **スコープ** フィルターを選択します。
 
@@ -359,7 +359,7 @@ if (performance && performance.mark) {
 
   - 一部のオブジェクトは `dispose` メソッドおよび使用の推奨を提供する場合があります。 たとえば、一覧から `dispose` メソッドを呼び出して、ページから移動した場合には、 [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) で `createFiltered` を呼び出す必要があります。
 
-  - 1 つ以上のイベント リスナーを削除する必要が生じる場合があります。 詳細については、「 [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css)」を参照してください。
+  - 1 つ以上のイベント リスナーを削除する必要が生じる場合があります。 詳細については、「 [View DOM event listeners](../debugger/quickstart-debug-html-and-css.md)」を参照してください。
 
 - JavaScript メモリ アナライザーについては、この Build 2013 カンファレンスの [ビデオ](https://channel9.msdn.com/Events/Build/2013/3-316) の後半部分をご覧ください。
 

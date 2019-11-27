@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575853"
 ---
 # <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
-@No__t_0 フィールドを指定するために使用します。  
+`ExtendedDebugPropertyInfo` フィールドを指定するために使用します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -50,11 +50,11 @@ enum {
  プロパティの値を初期化します。  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- @No__t_0 フィールドを初期化します。  
+ `plb` フィールドを初期化します。  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- @No__t_1 インターフェイスを含む `pDebugExtProp` フィールドを初期化します。  
+ `IDebugExtendedProperty` インターフェイスを含む `pDebugExtProp` フィールドを初期化します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ExtendedDebugPropertyInfo 構造体](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
  [IDebugExtendedProperty インターフェイス](../../winscript/reference/idebugextendedproperty-interface.md)

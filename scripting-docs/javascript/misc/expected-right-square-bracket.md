@@ -1,5 +1,5 @@
 ﻿---
-title: "'] ' | が必要です。Microsoft Docs"
+title: "']' が必要です。 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -28,6 +28,6 @@ ms.locfileid: "72576522"
   
 - 配列要素を参照する式に右角かっこを追加します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [配列の使用](../../javascript/advanced/using-arrays-javascript.md)   
  [Array オブジェクト](../../javascript/reference/array-object-javascript.md)

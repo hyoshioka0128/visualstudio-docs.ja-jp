@@ -1,5 +1,5 @@
 ---
-title: Date オブジェクトが必要です。Microsoft Docs
+title: Date オブジェクトが必要です。 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572902"
 ---
 # <a name="date-object-expected"></a>データ オブジェクトが必要です。
-@No__t_2 以外の型のオブジェクトに対して、**日付のプロトタイプ**または**日付のプロトタイプ**メソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは `Date` 型である必要があります。 (例:  
+`Date`以外の型のオブジェクトに対して、**日付のプロトタイプ**または**日付のプロトタイプ**メソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは `Date`型である必要があります。 例 :  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_2 型のオブジェクトに対して**のみ、メソッドを呼び**出すことができ**ます。**  
+- `Date`型のオブジェクトに対して**のみ、メソッドを呼び**出すことができ**ます。**  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Date オブジェクト](../../javascript/reference/date-object-javascript.md)   
- [GetDate メソッド (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [GetDate メソッド (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [組み込みオブジェクト](../../javascript/intrinsic-objects-javascript.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34c5cdae4b8730c9058a87061456d5ab6d186c53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292889"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>ワークフロー デバッガーを呼び出す方法
 ほとんどの場合、他の Visual Studio プログラミング言語で書かれたプログラムをデバッグするときと同じようにして、ワークフローをデバッグすることができます。 ワークフロー デバッガーは、次の方法で開始できます。
@@ -23,10 +23,10 @@ ms.locfileid: "72603665"
 
 - **F5**キーを押して、ワークフローのインスタンスの実行を開始します。または、ブレークポイントにヒットした後も実行を継続します。
 
-- リモート デバッグを使用します。 リモートデバッグの使用方法の詳細については、「[方法: リモートデバッグを有効](http://go.microsoft.com/fwlink/?LinkId=196257)にする」を参照してください。
+- リモート デバッグを使用します。 リモートデバッグの使用方法の詳細については、「[方法: リモートデバッグを有効](https://go.microsoft.com/fwlink/?LinkId=196257)にする」を参照してください。
 
     > [!NOTE]
-    > ワークフローアプリケーションが x86 アーキテクチャを対象とし、64ビットオペレーティングシステムを実行しているコンピューターでホストされている場合、リモートコンピューターに [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] がインストールされていない場合、またはワークフローアプリケーションのターゲットがに**変更されていない場合、リモートデバッグは機能しません。任意の CPU**。
+    > ワークフローアプリケーションが x86 アーキテクチャを対象としており、64ビットオペレーティングシステムを実行しているコンピューターでホストされている場合、リモートコンピューターに [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] がインストールされていない場合、またはワークフローアプリケーションのターゲットが**ANY CPU**に変更されていない場合、リモートデバッグは機能しません。
 
 ### <a name="stepping-through-code"></a>コードのステップ実行
 
@@ -40,5 +40,5 @@ ms.locfileid: "72603665"
 
 - ワークフローコンソールアプリケーションプロジェクトをビルドする場合は、 **F5**キーを押してアプリケーションとワークフローへのデバッグを開始します。 アクティビティ ライブラリを単独で構築する場合は、実行可能なホスト アプリケーションをスタートアップ プロジェクトとして用意する必要があります。 **ソリューションエクスプローラー**でスタートアッププロジェクトを設定するには、ホストのプロジェクト名を右クリックし、 **[スタートアッププロジェクトに設定]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [方法: ワークフロー内のブレークポイントを設定](../workflow-designer/how-to-set-breakpoints-in-workflows.md)する[ワークフローデザイナーを使用したワークフローのデバッグ](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

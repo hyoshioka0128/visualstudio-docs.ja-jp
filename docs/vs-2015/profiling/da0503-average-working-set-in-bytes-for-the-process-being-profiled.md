@@ -1,5 +1,5 @@
 ---
-title: DA0503:プロセスのワーキング セット平均バイト数がプロファイリングされています | Microsoft Docs
+title: 'DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,21 +13,21 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45725c59cb18f965ba7d1fa134de739d9c4144d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205916"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300051"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503:プロセスのワーキング セット平均バイト数がプロファイリングされています
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA 0503 |  
-|カテゴリ |リソースの監視 |  
-|プロファイル方法 |すべて |  
-|メッセージ |この情報がについてのみ収集されます。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて計算された平均値です。|  
-|規則の種類 |情報 |  
+ルール Id |DA0503 |  
+|Category |リソースの監視 |  
+|プロファイル方法 |All |  
+|Message |この情報は情報収集のみを対象としています。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて計算された平均値です。|  
+|ルールの種類 |情報 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "68205916"
   
  プロセスのワーキング セットのサイズには、プロセスが現在使用している仮想メモリ量が反映されます。 これは、アプリケーションの実行に使用できる物理メモリ (または RAM) の量と、実行中の他のプロセスによる物理メモリの競合の影響も受けます。 物理メモリが制約されている場合、オペレーティング システムがプロセス ワーキング セットの非アクティブなページを定期的に適切にトリミングして、アクティブなプロセス全体でメモリ使用量を均衡化するため、プロセス ワーキング セットの値は大幅に変わる傾向があります。  
   
- プロセスのワーキング セットの詳細については、MSDN の Windows のメモリ管理のドキュメントの「[Working Set](http://go.microsoft.com/fwlink/?LinkId=177830)」 (ワーキング セット) を参照してください。  
+ プロセスのワーキング セットの詳細については、MSDN の Windows のメモリ管理のドキュメントの「[Working Set](https://go.microsoft.com/fwlink/?LinkId=177830)」 (ワーキング セット) を参照してください。  
   
 ## <a name="how-to-use-rule-data"></a>規則データの使用方法  
  規則の値を使用して、特定のプログラムの異なるバージョンやビルドを比較したり、さまざまなプロファイリング シナリオにおけるアプリケーションのパフォーマンスを確認したりします。  

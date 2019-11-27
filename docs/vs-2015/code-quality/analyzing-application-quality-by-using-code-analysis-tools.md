@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671100"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291205"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>コード分析ツールを使用したアプリケーション品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このセクションの「マネージコード[品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)」では、マネージコードの Visual Studio Code 分析を使用して、マネージアセンブリに関する情報を提供します。たとえば、Microsoft .NET Framework の設計で規定されているプログラミングやデザインの規則に違反します。ヒント. 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
+このセクションの「マネージコード[品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)」では、「マネージコードの Visual Studio Code analysis」では、マネージアセンブリに関する情報を提供しています。たとえば、Microsoft .NET Framework デザインガイドラインに規定されているプログラミング規則やデザイン規則に違反しています。 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
 
  [コード分析をC++使用した c/コード品質](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)の分析C++ c/コード分析ツールは、c/C++ソースコードで発生する可能性のある欠陥に関する情報を開発者に提供します。 このツールによってレポートされる一般的なコーディング エラーとしては、バッファー オーバーラン、初期化されていないメモリ、null ポインターの逆参照、メモリ リーク、リソース リークなどがあります。
 
@@ -40,7 +40,7 @@ ms.locfileid: "72671100"
 
  [コード分析ツールを使用したドライバー品質の分析](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)ドライバーのコード分析は、C およびC++プログラムの基本的なコーディングエラーを検出するコンパイル時の静的検証ツールであり、(主にカーネルモードのドライバーコード) のエラーを検出するように設計された特殊なモジュールが含まれています。 静的ドライバー検証ツール (SDV) は、Windows カーネル モードのドライバーのソース コードを系統的に分析する静的検証ツールです。 SDV は、ドライバーが Windows オペレーティング システムのカーネルと適切にやり取りしているかどうかを判定します。
 
- [ドライバーの警告のコード分析](http://go.microsoft.com/fwlink/?LinkId=225920)ドライバーのコード分析によってドライバーコードでエラーが検出された場合に報告される警告について説明します。
+ [ドライバーの警告のコード分析](https://go.microsoft.com/fwlink/?LinkId=225920)ドライバーのコード分析によってドライバーコードでエラーが検出された場合に報告される警告について説明します。
 
 ## <a name="related-tasks"></a>関連タスク
  [マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)ここに説明を挿入します。

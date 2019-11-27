@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d090e5c570eb2700e3493ffd80f256c76d0d52ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1316602d900fb122567b5ad50edf8e7b90c79bd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669319"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300946"
 ---
 # <a name="xslt-profiler"></a>XSLT プロファイラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ XSLT プロファイラーは、XSLT ドキュメントの開発とデバッグ�
 
  ![XSLT プロファイラー](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- XSLT プロファイラーは最初に Visual Studio 2008 のアドインとして導入されました。 詳細については、「 [XSLT Profiler For Visual Studio Feb 08 Community Technology Preview](http://go.microsoft.com/fwlink/?LinkId=142987) 」ページの「関連リソース」セクションを参照してください。
+ XSLT プロファイラーは最初に Visual Studio 2008 のアドインとして導入されました。 詳細については、「 [XSLT Profiler For Visual Studio Feb 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) 」ページの「関連リソース」セクションを参照してください。
 
 > [!NOTE]
 > Visual Studio 2010 の一部の画面は、これらのドキュメントの説明と異なる場合があります。これは、一部のビジュアル要素が Visual Studio 2008 から変更されたためです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [チュートリアル: XSLT プロファイラー](../xml-tools/walkthrough-xslt-profiler.md)

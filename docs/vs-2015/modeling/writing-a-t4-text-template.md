@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e529e0ed4407343a9e233a08293bfc1bbd8458d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663014"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301124"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 テキスト テンプレートの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ private int Square(int i)
  コントロールブロックの詳細については、「[テキストテンプレートコントロールブロック](../modeling/text-template-control-blocks.md)」を参照してください。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>クラス機能ブロックにはテキスト ブロックを含めることができる
- テキストを生成するメソッドを記述できます。 (例:
+ テキストを生成するメソッドを記述できます。 例 :
 
 ```
 List of Squares:
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 絶対パス名を使用するか、パス名で標準マクロ名を使用する必要があります。 (例:
+ 絶対パス名を使用するか、パス名で標準マクロ名を使用する必要があります。 例 :
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -242,14 +242,14 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **ナビゲート可能なモデルとしてファイルを読み込み**ます。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 また、 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)を使用して、XML データを読み取ることができる一連のクラスを作成することもできます。
+ **ナビゲート可能なモデルとしてファイルを読み込み**ます。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 また、 [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765)を使用して、XML データを読み取ることができる一連のクラスを作成することもできます。
 
- **ダイアグラムまたはフォームでモデルファイルを編集します。** [!INCLUDE[dsl](../includes/dsl-md.md)] には、モデルを図または Windows フォームとして編集できるツールが用意されています。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../includes/dsl-md.md)]では、モデルの構造を反映した、厳密に型指定されたクラスのセットも作成できます。 詳細については、「[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
+ **ダイアグラムまたはフォームでモデルファイルを編集します。** [!INCLUDE[dsl](../includes/dsl-md.md)] には、モデルを図または Windows フォームとして編集できるツールが用意されています。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 また [!INCLUDE[dsl](../includes/dsl-md.md)] は、モデルの構造を反映する、厳密に型指定されたクラスのセットも作成します。 詳細については、「[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 
  **UML モデルを使用**します。 UML モデルからコードを生成できます。 これには、使い慣れた表記法を使用して、モデルを図として編集できるという利点があります。 また、図をデザインする必要もありません。 詳細については、「 [UML モデルからファイルを生成する](../modeling/generate-files-from-a-uml-model.md)」を参照してください。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>デザイン時テンプレートの相対ファイル パス
- [デザイン時テキストテンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)で、テキストテンプレートに対して相対的な場所にあるファイルを参照する場合は、`this.Host.ResolvePath()` を使用します。 また、`hostspecific="true"` ディレクティブで `template` を設定する必要もあります。
+ [デザイン時テキストテンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)で、テキストテンプレートに対して相対的な場所にあるファイルを参照する場合は、`this.Host.ResolvePath()`を使用します。 また、`hostspecific="true"` ディレクティブで `template` を設定する必要もあります。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

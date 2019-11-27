@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442089"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300764"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
   
  Android プラットフォームごとに異なるデバイス プロファイル、画面の解像度、および Visual Studio Emulator for Android でサポートされるその他のハードウェア プロパティで、アプリをテストできます。  
   
- このトピックは、次のセクションで構成されています。  
+ このトピックの内容は次のとおりです。  
   
 - [インストールとアンインストール](#Installing)  
   
@@ -57,7 +57,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 ## <a name="Requirements"></a> システム要件と下位互換性  
  Visual Studio Emulator for Android のハードウェア、ソフトウェア、構成の要件に関する重要な情報については、次のトピックをご覧ください。  
   
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
   Visual Studio Emulator for Android には Visual Studio 2015 が必要です。それより前のバージョンの Visual Studio との下位互換性はありません。  
   
@@ -81,16 +81,16 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 ## <a name="Configuring"></a> Visual Studio Emulator for Android の構成  
  Android アプリでさまざまな Android ハードウェアとの互換性をテストするのは、難しい場合があります。 市場に出回っている Android 携帯電話およびタブレットには、さまざまなバージョン、画面サイズ、ハードウェア構成 (RAM、CPU、アーキテクチャなど) があります Visual Studio Emulator for Android は、デバイス プロファイルを使用することによってこれを簡素化します。 付属のデバイス プロファイルでは、Samsung、Motorola、Sony、LG その他のデバイスを含む、市場で最も人気のあるハードウェアが含まれています。  
   
- Visual Studio 2015 では、Emulator Manager を使用してデバイス プロファイルをインストール、アンインストール、開始できます。 Emulator Manager にアクセスするには、**[ツール]**、**[Visual Studio Emulator for Android]** の順に選択します。  
+ Visual Studio 2015 では、Emulator Manager を使用してデバイス プロファイルをインストール、アンインストール、開始できます。 Emulator Manager にアクセスするには、 **[ツール]** 、 **[Visual Studio Emulator for Android]** の順に選択します。  
   
- ![Visual Studio Emulator for Android Manager](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
+ ![The Visual Studio Emulator for Android Manager](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
   
- 既定では、4 つのインストール済みデバイス プロファイルがあり (KitKat and Lollipop phone/5" および tablet/7" 構成)、白いテキストとアイコンで示されます。 一覧の他のプロファイルは、**[プロファイルのインストール]** ボタンをクリックしてインストールが完了するまで、グレー表示になっています。 API レベルで一覧をフィルター処理でき、プロファイルの右下にある詳細矢印をクリックすると構成の詳細が表示されます。  
+ 既定では、4 つのインストール済みデバイス プロファイルがあり (KitKat and Lollipop phone/5" および tablet/7" 構成)、白いテキストとアイコンで示されます。 一覧の他のプロファイルは、 **[プロファイルのインストール]** ボタンをクリックしてインストールが完了するまで、グレー表示になっています。 API レベルで一覧をフィルター処理でき、プロファイルの右下にある詳細矢印をクリックすると構成の詳細が表示されます。  
   
  対象にするプロファイルのセットをインストールした後は、緑色の **[プレイ]** ボタンをクリックすることで Manager から新しいプロファイルを直接開始できます。 Visual Studio クロス プラットフォーム モバイル プロジェクト タイプのデバッグ対象ドロップダウン メニューにも表示されます。  
   
 ## <a name="FeaturesTest"></a> エミュレーターでテストできる機能  
- エミュレーターでテストできる機能に関する詳細については、この[ドキュメント](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)を参照してください。  
+ エミュレーターでテストできる機能に関する詳細については、この[ドキュメント](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)を参照してください。  
   
 ## <a name="FeaturesNonTest"></a> エミュレーターでテストできない機能  
  次の一覧は、エミュレーターでテスト**できない** Android プラットフォームの機能です。 これらの機能は物理デバイスでテストする必要があります。  
@@ -106,10 +106,10 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 ## <a name="Support"></a> サポート リソース  
  ホスト コンピューターがシステム要件を満たしていて、このトラブルシューティング ガイドに記載されていない問題が発生した場合は次のようにします。  
   
-- [android エミュレーター](http://stackoverflow.com/questions/tagged/android-emulator)と visual-studio タグの試用について StackOverflow で質問を投稿します。  
+- [android エミュレーター](https://stackoverflow.com/questions/tagged/android-emulator)と visual-studio タグの試用について StackOverflow で質問を投稿します。  
   
 - Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。  
   
 ## <a name="see-also"></a>関連項目
  [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

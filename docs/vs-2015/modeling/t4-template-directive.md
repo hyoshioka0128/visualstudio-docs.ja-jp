@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658553"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298144"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "72658553"
 
  有効な値: "" (既定値はインバリアントカルチャ)。
 
- xx-XX 形式の文字列で表現されたカルチャ。 たとえば、en-US、ja-JP、de-CH、de-DE などがあります。 詳細については、「<xref:System.Globalization.CultureInfo?displayProperty=fullName>」を参照してください。
+ xx-XX 形式の文字列で表現されたカルチャ。 たとえば、en-US、ja-JP、de-CH、de-DE などがあります。 詳細については、「 <xref:System.Globalization.CultureInfo?displayProperty=fullName>」を参照してください。
 
  culture 属性では、式ブロックをテキストに変換する際に使用するカルチャを指定します。
 
@@ -77,7 +77,7 @@ hostspecific="true"
 
  このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時](../modeling/design-time-code-generation-by-using-t4-text-templates.md)テンプレートには適用できますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)には適用されません。
 
- `hostspecific` が `true` で、なおかつ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用している場合は、`this.Host` を IServiceProvider にキャストして、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の機能にアクセスすることができます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 (例:
+ `hostspecific` が `true` で、なおかつ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用している場合は、`this.Host` を IServiceProvider にキャストして、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の機能にアクセスすることができます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 例 :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -110,7 +110,7 @@ Content of myFile is:
 
  Language 属性は、ステートメントおよび式ブロック内のソースコードに使用する言語 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または [!INCLUDE[csprcs](../includes/csprcs-md.md)]) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
 
- (例:
+ 例 :
 
 ```vb
 <#@ template language="VB" #>
@@ -211,7 +211,7 @@ This is the common footer.
 
  デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。
 
- 詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](http://go.microsoft.com/fwlink/?LinkId=208373)を参照してください。
+ 詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](https://go.microsoft.com/fwlink/?LinkId=208373)を参照してください。
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 属性
  例 : `linePragmas="false"`

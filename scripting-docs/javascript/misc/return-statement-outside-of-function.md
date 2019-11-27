@@ -22,16 +22,16 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573684"
 ---
 # <a name="return-statement-outside-of-function"></a>'return' ステートメントが関数の外にあります。
-コードのグローバルスコープで `return` ステートメントを使用しています。 @No__t_0 ステートメントは、関数の本体内でのみ表示されます。  
+コードのグローバルスコープで `return` ステートメントを使用しています。 `return` ステートメントは、関数の本体内でのみ表示されます。  
   
- @No__t_0 演算子を使用した関数の呼び出しは、式です。 すべての式には値があります。`return` ステートメントは、関数によって返される値を指定するために使用されます。 一般的な形式は次のとおりです。  
+ `()` 演算子を使用した関数の呼び出しは、式です。 すべての式には値があります。`return` ステートメントは、関数によって返される値を指定するために使用されます。 一般的な形式は次のとおりです。  
   
 ```js
   
 return [ expression ];  
 ```  
   
- @No__t_0 ステートメントが実行されると、*式*が評価され、関数の値として返されます。 式が存在しない場合は、 **undefined**が返されます。  
+ `return` ステートメントが実行されると、*式*が評価され、関数の値として返されます。 式が存在しない場合は、 **undefined**が返されます。  
   
  関数本体に他のステートメントが残っている場合でも、関数の実行は、`return` ステートメントの実行時に停止します。 このルールの例外は、 **return**ステートメントが**try**ブロック内に発生し、対応する**finally**ブロックがある場合に、 **finally**ブロック内のコードが関数が返される前に実行されることです。  
   
@@ -41,7 +41,7 @@ return [ expression ];
   
 - コードの本体 (グローバルスコープ) から `return` ステートメントを削除します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [return ステートメント](../../javascript/reference/return-statement-javascript.md)   
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の   
  [caller プロパティ (Function)](../../javascript/reference/caller-property-function-javascript.md)

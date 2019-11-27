@@ -13,17 +13,17 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24f17d6f07840f666dd1bb130be172ffa9d22cd3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663329"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301451"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>[ルール セットの選択] ダイアログ ボックス (レガシ)
-このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)] の **[ルールセットの選択**] ダイアログボックスの使用方法について説明します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
+このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)]の **[ルールセットの選択**] ダイアログボックスの使用方法について説明します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
 
- **[ルールセットの選択**] ダイアログボックスは、 [policyactivity](http://go.microsoft.com/fwlink?LinkID=65019)アクティビティで使用できるルールセットを選択するために使用します。 **[ルールセットの選択**] ダイアログボックスにアクセスする方法の詳細については、「[方法: Policyactivity ルールセットを作成する (レガシ)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)」を参照してください。
+ **[ルールセットの選択**] ダイアログボックスは、 [policyactivity](https://go.microsoft.com/fwlink?LinkID=65019)アクティビティで使用できるルールセットを選択するために使用します。 **[ルールセットの選択**] ダイアログボックスにアクセスする方法の詳細については、「[方法: Policyactivity ルールセットを作成する (レガシ)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)」を参照してください。
 
  次の表では、 **[ルールセットの選択**] ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "72663329"
 > [!WARNING]
 > [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。
 
- 条件の詳細については、「[ワークフローでの条件の使用](http://go.microsoft.com/fwlink?LinkID=65009)」を参照してください。
+ 条件の詳細については、「[ワークフローでの条件の使用](https://go.microsoft.com/fwlink?LinkID=65009)」を参照してください。
 
-## <a name="see-also"></a>参照
- [ [Policyactivity](http://go.microsoft.com/fwlink?LinkID=65019) [ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [ワークフロー内の条件を使用](http://go.microsoft.com/fwlink?LinkID=65009)し[た policyactivity アクティビティの使用](http://go.microsoft.com/fwlink?LinkID=65004)
+## <a name="see-also"></a>関連項目
+ [ [Policyactivity](https://go.microsoft.com/fwlink?LinkID=65019) [ルールセットエディター] ダイアログボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [ワークフロー内の条件を使用](https://go.microsoft.com/fwlink?LinkID=65009)し[た policyactivity アクティビティの使用](https://go.microsoft.com/fwlink?LinkID=65004)

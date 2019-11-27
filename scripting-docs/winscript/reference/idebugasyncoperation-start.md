@@ -42,16 +42,16 @@ HRESULT Start(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_UNEXPECTED`|操作は既に保留中です。|  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、`IDebugSyncOperation::GetTargetThread` から取得したスレッドで `IDebugSyncOperation::Execute` を非同期的に呼び出します。 このメソッドは、デバッガースレッド内からのみ呼び出す必要があります。それ以外の場合は、操作が完了するまで戻りません。  
+## <a name="remarks"></a>コメント  
+ このメソッドは、`IDebugSyncOperation::GetTargetThread`から取得したスレッドで `IDebugSyncOperation::Execute` を非同期的に呼び出します。 このメソッドは、デバッガースレッド内からのみ呼び出す必要があります。それ以外の場合は、操作が完了するまで戻りません。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
+## <a name="see-also"></a>参照  
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
  [IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

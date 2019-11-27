@@ -43,9 +43,9 @@ HRESULT OnFunctionEnter(
 ## <a name="return-value"></a>戻り値  
  このメソッドの戻り値は、スクリプトエンジンによって無視されます。  
   
-## <a name="remarks"></a>Remarks  
- DOM 呼び出しの場合、スクリプトエンジンは `IActiveScriptProfilerCallback::OnFunctionEnter` ではなく[IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)を呼び出します。 これは、DOM 内の一意のメソッドとプロパティの数が多いためです。  
+## <a name="remarks"></a>コメント  
+ DOM 呼び出しの場合、スクリプトエンジンは `IActiveScriptProfilerCallback::OnFunctionEnter`ではなく[IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)を呼び出します。 これは、DOM 内の一意のメソッドとプロパティの数が多いためです。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
  [IActiveScriptProfilerCallback インターフェイス](../../winscript/reference/iactivescriptprofilercallback-interface.md)

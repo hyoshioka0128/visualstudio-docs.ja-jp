@@ -42,14 +42,14 @@ HRESULT ConnectDebugger(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_FAIL`|デバッガーは既にこのアプリケーションに接続されています。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  アプリケーションで一度に接続できるデバッガーは1つだけです。 デバッガーが既に接続されている場合、このメソッドは失敗します。  
   
-## <a name="see-also"></a>関連項目  
- [Iremotedebugapplication:: GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+## <a name="see-also"></a>参照  
+ [Iremotedebugapplication:: GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)

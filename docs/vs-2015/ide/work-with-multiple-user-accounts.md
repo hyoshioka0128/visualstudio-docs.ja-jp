@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9aa08d68da53f54491439da8e35c28db90f4c508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662656"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296790"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "72662656"
 
  ![ASP.NET の認証ダイアログの変更](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- ASP.NET での異なる種類の認証について詳しくは、「 [Visual Studio 2013 での ASP.NET Web プロジェクトの作成](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 」をご覧ください (認証に関する情報は Visual Studio 2015 にも引き続き該当します)。
+ ASP.NET での異なる種類の認証について詳しくは、「 [Visual Studio 2013 での ASP.NET Web プロジェクトの作成](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 」をご覧ください (認証に関する情報は Visual Studio 2015 にも引き続き該当します)。
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Visual Studio Team Services のアカウントへのアクセス
  メイン メニューから、 **[チーム] > [Team Foundation Server への接続]** を選択して、**チーム エクスプローラー** ウィンドウを開きます。 **[チーム プロジェクトの選択]** をクリックすると、 **[Team Foundation Server の選択]** にあるリスト ボックスに Visual Studio Team Services アカウントの URL が表示されます。 URL を選択すると、資格情報を再入力しなくてもログインできます。

@@ -3,15 +3,15 @@ title: WhiteSource Bolt 特典 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816412"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174125"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -38,7 +38,7 @@ ms.locfileid: "72816412"
 9. 詳細については、WhiteSource Bolt の [[よくあるご質問]](https://bolt.whitesourcesoftware.com/azure/faq/) ページにアクセスしてください。 
 
 ## <a name="eligibility"></a>特典を受ける条件
-WhiteSource Bolt を Visual Studio Marketplace で無料で入手できるようになりました。 
+[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) を Visual Studio Marketplace で無料で入手できるようになりました。 
 
 ## <a name="support-resources"></a>サポート リソース
 - WhiteSource Bolt のヘルプが必要ですか。  [https://www.whitesourcesoftware.com/vse_whitesource_bolt/](https://www.whitesourcesoftware.com/vse_whitesource_bolt/ ) で WhiteSource Bolt の担当者とオンライン チャットしてください。
@@ -46,4 +46,7 @@ WhiteSource Bolt を Visual Studio Marketplace で無料で入手できるよう
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](vs-azure.md)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
+Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest の個人クレジット](vs-azure.md)

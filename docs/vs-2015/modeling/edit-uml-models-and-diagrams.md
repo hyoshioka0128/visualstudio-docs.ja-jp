@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669725"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295528"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML モデルおよびダイアグラムの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +136,7 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>コネクタの片端を別のシェイプに移動するには
 
-1. 次のいずれかの操作を行います。
+1. 以下のいずれかを実行します。
 
    - Ctrl キーを押し**ながら**終了位置を移動します。
 
@@ -320,23 +320,11 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
 - モデル要素にメモおよび説明を追加するには、コメントを作成し、要素にリンクします。
 
-- 図で列または行の形をきれいに整列させるために、[図形の整列] コマンドをインストールできます。 これは、UML 拡張機能のサンプルとして提供されています。 [uml: Command To Align Shapes](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)
-
 ### <a name="to-export-a-diagram-as-an-image"></a>ダイアグラムをイメージとしてエクスポートするには
  詳細については、「[イメージとしてダイアグラムをエクスポート](../modeling/export-diagrams-as-images.md)する」を参照してください。
 
 ## <a name="extensions"></a>UML デザイナーの拡張
  UML ツールに新しい機能を追加し、各自のニーズに合わせてダイアグラムの表記を調整できます。 詳細については、「 [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)」を参照してください。
 
- サンプル拡張機能をご利用いただけます。 単にインストールして使用することも、独自の拡張機能の基礎としてソース コードを使用することもできます。 サンプルには以下のものが含まれています。
-
-|||
-|-|-|
-|[図形の整列](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|図を整頓するのに役立つメニュー コマンド。|
-|[ドキュメントへのリンク](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|任意の UML 要素を、Word の見出し、PowerPoint のスライド、任意の種類のファイル、UML 図、その他の要素にリンクします。 リンクはドラッグして簡単に設定できます。 設定後に要素をダブルクリックすると、リンクされた項目を表示できます。 たとえば、Word で作成した仕様書や詳細なアクティビティ図にユース ケースをリンクしたり、アクションをストーリーボードのスライドにリンクしたりできます。|
-|[迅速な入力](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|テキスト入力を使用してモデルをすばやく作成します。 会議でアイデアをキャプチャするのに役立ちます。|
-|[ステレオタイプ別の色](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|クラスをステレオタイプに従って色付けします。 簡単にコードを拡張して独自のステレオタイプで活用できます。|
-|[ドメインモデリング](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|ビジネス モデルとして便利な既定値です。 既定では、関連は矢印を使用せずに表示され、操作はクラスに表示されません。|
-
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [UML モデリングプロジェクトおよびダイアグラムの作成](../modeling/create-uml-modeling-projects-and-diagrams.md)[アーキテクチャを分析およびモデリング](../modeling/analyze-and-model-your-architecture.md)する[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)

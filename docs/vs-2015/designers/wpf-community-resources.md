@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0c2e58686c1369847fdeb0d83aaac6c65341aa08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d740f1cc6c19e8d3b53dc084d9de01547369337
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663918"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299537"
 ---
 # <a name="wpf-community-resources"></a>WPF コミュニティ リソース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,13 +22,13 @@ ms.locfileid: "72663918"
 Microsoft は、Windows Presentation Foundation (WPF) について学習したり、ディスカッションしたり、フィードバックしたりできるさまざまなコミュニティ リソースを公開しています。これには、WPF チーム メンバーやコミュニティ リーダーによって作成されたブログ、フォーラム、Microsoft Connect フィードバック センターが含まれます。
 
 ## <a name="community"></a>コミュニティ
- [WPF フォーラム](http://go.microsoft.com/fwlink/?LinkId=187440)
+ [WPF フォーラム](https://go.microsoft.com/fwlink/?LinkId=187440)
 
- [スタック オーバーフロー](http://stackoverflow.com/questions/tagged/wpf)
+ [スタック オーバーフロー](https://stackoverflow.com/questions/tagged/wpf)
 
- [WPF チーム ブログ](http://blogs.msdn.com/b/wpf/)
+ [WPF チーム ブログ](https://devblogs.microsoft.com/wpf/)
 
- [CodePlex の WPF Toolkit](http://wpf.codeplex.com/)
+ [CodePlex の WPF Toolkit](https://archive.codeplex.com/?p=wpf)
 
  [Windows Presentation Foundation デベロッパー センター](https://www.visualstudio.com/features/wpf-vs)
 

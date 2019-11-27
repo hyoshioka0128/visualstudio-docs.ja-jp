@@ -46,21 +46,21 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_FAIL`|メソッドが失敗しました。|  
   
-## <a name="remarks"></a>Remarks  
- このメソッドを使用すると、ホストは、必要になるまで追加する文字の指定を遅らせることができ、ヘルパーは正確な通知とサイズ情報を生成できます。 @No__t_0 パラメーターは、ホストによって定義された、テキストの開始位置を表すクッキーです。 後続の `IDebugDocumentText::GetText` への呼び出しでは、この cookie を提供する必要があります。 たとえば、DBCS のテキストを表すホストでは、cookie にバイトオフセットを指定できます。  
+## <a name="remarks"></a>コメント  
+ このメソッドを使用すると、ホストは、必要になるまで追加する文字の指定を遅らせることができ、ヘルパーは正確な通知とサイズ情報を生成できます。 `dwTextStartCookie` パラメーターは、ホストによって定義された、テキストの開始位置を表すクッキーです。 後続の `IDebugDocumentText::GetText` への呼び出しでは、この cookie を提供する必要があります。 たとえば、DBCS のテキストを表すホストでは、cookie にバイトオフセットを指定できます。  
   
- @No__t_0 の1回の呼び出しで、`AddDeferredText` の複数の呼び出しから文字を取得できると想定されています。 ヘルパークラスでは、同じ範囲の遅延文字を複数回要求することもできます。  
+ `IDebugDocumentText::GetText` の1回の呼び出しで、`AddDeferredText`の複数の呼び出しから文字を取得できると想定されています。 ヘルパークラスでは、同じ範囲の遅延文字を複数回要求することもできます。  
   
 > [!NOTE]
-> @No__t_0 の呼び出しは、`AddUnicodeText` または `AddDBCSText` の呼び出しと混在させることはできません。 このエラーが発生すると、`E_FAIL` が返されます。  
+> `AddDeferredText` の呼び出しは、`AddUnicodeText` または `AddDBCSText`の呼び出しと混在させることはできません。 このエラーが発生すると、`E_FAIL` が返されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

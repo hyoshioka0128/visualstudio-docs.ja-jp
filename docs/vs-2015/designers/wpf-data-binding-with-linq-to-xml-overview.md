@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 09c0c26a75d6881f06e67fa84f30ac7279bddf33
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 751840960288f46c0a1ca09ebe80a2b8e7603359
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663901"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299530"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML による WPF のデータ バインディングの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "72663901"
   このドキュメントでは、2 番目のシナリオについて説明します。
 
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation のデータ バインド
- WPF のデータ バインドでは、UI 要素のプロパティをデータ ソースに関連付けることができます。 たとえば、ユーザー定義オブジェクトのパブリック プロパティの値をテキストとして表示する <xref:System.Windows.Controls.Label> はその簡単な例です。 WPF のデータ バインドは次のコンポーネントに依存しています。
+ WPF のデータ バインディングでは、UI 要素のプロパティをデータ ソースに関連付けることができます。 たとえば、ユーザー定義オブジェクトのパブリック プロパティの値をテキストとして表示する <xref:System.Windows.Controls.Label> はその簡単な例です。 WPF のデータ バインディングは次のコンポーネントに依存しています。
 
 |コンポーネント|説明|
 |---------------|-----------------|
@@ -88,5 +88,5 @@ ms.locfileid: "72663901"
 
  WPF の動的バインドを実装するには、動的プロパティを <xref:System.Windows.Data> 名前空間 (特に <xref:System.Windows.Data.Binding> クラス) の機能と共に使用します。
 
-## <a name="see-also"></a>参照
- [LINQ to XML を使用した wpf のデータバインディング](../designers/wpf-data-binding-with-linq-to-xml.md)[ワークフローマークアップを使用し](http://go.microsoft.com/fwlink/?LinkId=98685)た[wpf](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [データバインディング (wpf)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)の[動的プロパティ XAML LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
+## <a name="see-also"></a>関連項目
+ [LINQ to XML を使用した wpf のデータバインディング](../designers/wpf-data-binding-with-linq-to-xml.md)[ワークフローマークアップを使用し](https://go.microsoft.com/fwlink/?LinkId=98685)た[wpf](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [データバインディング (wpf)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)の[動的プロパティ XAML LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)

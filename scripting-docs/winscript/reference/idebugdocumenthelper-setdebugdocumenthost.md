@@ -42,13 +42,13 @@ HRESULT SetDebugDocumentHost(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 インターフェイスは、スマートホストの構文の色分け、遅延テキストのフェッチ、新しく作成されたドキュメントコンテキストの制御オブジェクトの取得に使用されます。  
+## <a name="remarks"></a>コメント  
+ `IDebugDocumentHost` インターフェイスは、スマートホストの構文の色分け、遅延テキストのフェッチ、新しく作成されたドキュメントコンテキストの制御オブジェクトの取得に使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHost インターフェイス](../../winscript/reference/idebugdocumenthost-interface.md)

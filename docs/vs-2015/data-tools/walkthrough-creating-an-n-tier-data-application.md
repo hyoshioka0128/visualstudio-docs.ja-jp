@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 720f50fe486c0e625fcd67191f43897eba466698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660162"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299591"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>チュートリアル : n 層データ アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ N 層 * データアプリケーションは、データにアクセスするア
 
  n 層アプリケーションで各層を分離する 1 つの方法は、アプリケーションに組み込む層ごとに別個のプロジェクトを作成することです。 型指定されたデータセットには、生成されたデータセットと `DataSet Project` コードの格納先となるプロジェクトを決定する、`TableAdapter` プロパティが含まれています。
 
- このチュートリアルでは、**データセット デザイナー**を使用して、別個のクラス ライブラリ プロジェクトにデータセットと `TableAdapter` コードを分離する方法を示します。 データセットと TableAdapter コードを分離した後、 [Visual Studio サービスで Windows Communication Foundation サービスと WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)を作成して、データアクセス層を呼び出すことができます。 最後に、プレゼンテーション層として Windows フォーム アプリケーションを作成します。 この層は、データ サービスからデータにアクセスします。
+ このチュートリアルでは、`TableAdapter`データセット デザイナー**を使用して、別個のクラス ライブラリ プロジェクトにデータセットと**  コードを分離する方法を示します。 データセットと TableAdapter コードを分離した後、 [Visual Studio サービスで Windows Communication Foundation サービスと WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)を作成して、データアクセス層を呼び出すことができます。 最後に、プレゼンテーション層として Windows フォーム アプリケーションを作成します。 この層は、データ サービスからデータにアクセスします。
 
  このチュートリアルでは、次の手順を実行します。
 
@@ -53,9 +53,9 @@ N 層 * データアプリケーションは、データにアクセスするア
 
 - データ テーブルにデータを読み込むコードを記述する。
 
-  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[方法: N 層データアプリケーションを作成](http://go.microsoft.com/fwlink/?LinkId=115188)する」を参照してください。
+  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[方法: N 層データアプリケーションを作成](https://go.microsoft.com/fwlink/?LinkId=115188)する」を参照してください。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを完了するには、次の条件が必要です。
 
 - Northwind サンプル データベースにアクセスします。
@@ -81,7 +81,7 @@ N 層 * データアプリケーションは、データにアクセスするア
 
 5. ソリューションに**NTierWalkthrough**という名前を指定します。
 
-6. **[OK]** をクリックします。
+6. **[OK]** をクリックすると、
 
      DataEntityTier プロジェクトを含む NTierWalkthrough ソリューションが作成され、**ソリューション エクスプローラー**に追加されます。
 
@@ -118,7 +118,7 @@ N 層 * データアプリケーションは、データにアクセスするア
 
      Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これをクリックします。
 
-     -または-
+     または
 
      **[新しい接続]** をクリックして、 **[接続の追加]** ダイアログボックスを開きます。
 
@@ -214,7 +214,7 @@ N 層 * データアプリケーションは、データにアクセスするア
 
 3. **[DataAccessTier]** プロジェクトと **[DataEntityTier]** プロジェクトの両方を選択します。
 
-4. **[OK]** をクリックします。
+4. **[OK]** をクリックすると、
 
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>データ アクセス層の GetCustomers メソッドおよび GetOrders メソッドを呼び出す関数のサービスへの追加
  これで、データを返すメソッドをデータ アクセス層に含めることができました。次に、データ サービスにメソッドを作成して、データ アクセス層のメソッドを呼び出します。
@@ -317,7 +317,7 @@ N 層 * データアプリケーションは、データにアクセスするア
 
 1. **ソリューションエクスプローラー**で、プレゼンテーション層 を右クリックし、**サービス参照の追加** をクリックします。
 
-2. **[サービス参照の追加]** ダイアログ ボックスで **[探索]** をクリックします。
+2. **[サービス参照の追加]** ダイアログ ボックスで、 **[探索]** をクリックします。
 
 3. **[Service1]** を選択し、 **[OK]** をクリックします。
 
@@ -361,7 +361,7 @@ N 層 * データアプリケーションは、データにアクセスするア
  サービスは Customers テーブルと Orders テーブルからデータを返すため、maxReceivedMessageSize の既定値ではデータを保持するのに十分ではなく、この値を大きくする必要があります。 このチュートリアルでは、値を 6553600 に変更します。 クライアントで値を変更すると、サービス参照が自動的に更新されます。
 
 > [!NOTE]
-> 既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
+> 既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 値を増やすには
 
@@ -378,12 +378,12 @@ N 層 * データアプリケーションは、データにアクセスするア
 
 2. Customers テーブルと Orders テーブルのデータがデータ サービスから取得され、フォームに表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Windows ベース アプリケーションに関連データを保存した後で、アプリケーションの要件によってはさらに操作を追加する必要があります。 たとえば、このアプリケーションに対して次のような拡張を行うことができます。
 
 - データセットへの検証の追加。 詳細については、「[チュートリアル: N 層データアプリケーションへの検証の追加](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)」を参照してください。
 
 - サービスへの、データを更新してデータベースに戻す追加メソッドの追加。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [N 層アプリケーションでのデータセットの操作](../data-tools/work-with-datasets-in-n-tier-applications.md)[階層更新](../data-tools/hierarchical-update.md) [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)

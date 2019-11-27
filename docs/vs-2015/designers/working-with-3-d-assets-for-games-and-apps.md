@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6976d7c0e32739348ec0d78603e6b6d47d01477b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9cc4f8038906de89afd86fd666fbb011e974362d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661582"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298093"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>ゲームとアプリケーション用の 3D アセットの操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ ms.locfileid: "72661582"
  グラフ ベースのシェーダー デザイン ツールである [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のシェーダー デザイナーを使用すると、HLSL プログラミングに関する知識がなくてもカスタムの視覚効果を作成できます。
 
 > [!NOTE]
-> DirectX プログラミングの開始方法について詳しくは、[DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633) に関するページをご覧ください。 DirectX ベースのアプリをデバッグする方法について詳しくは、「[グラフィックス診断 (DirectX グラフィックスのデバッグ)](../debugger/visual-studio-graphics-diagnostics.md)」をご覧ください。
+> DirectX プログラミングの開始方法について詳しくは、[DirectX](https://go.microsoft.com/fwlink/p/?LinkId=224633) に関するページをご覧ください。 DirectX ベースのアプリをデバッグする方法について詳しくは、「[グラフィックス診断 (DirectX グラフィックスのデバッグ)](../debugger/visual-studio-graphics-diagnostics.md)」をご覧ください。
 
 ## <a name="directx-version-compatibility"></a>DirectX のバージョンの互換性
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、2-D および 3-D アセットのレンダリングに DirectX が使用されます。 DirectX 11 のレンダラーと Windows Advanced Rasterization Platform (WARP) ソフトウェアのレンダラーのいずれかを選択できます。 DirectX 11 のレンダラーを使用すると、DirectX 11 および DirectX 10 の各 GPU 上でハードウェア アクセラレータによる高性能レンダリングを実行できます。 WARP レンダラーを使用すると、最新式のグラフィックス ハードウェアを搭載していないコンピューターからグラフィックス ハードウェアを内蔵しているコンピューターまで、多様な種類のコンピューターとアセットが確実に連動するようになります。 WARP について詳しくは、「[Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634)」(Windows Advanced Rasterization Platform (WARP) ガイド) をご覧ください。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、DirectX を使用して、2-d と3-d の資産をレンダリングします。 DirectX 11 のレンダラーと Windows Advanced Rasterization Platform (WARP) ソフトウェアのレンダラーのいずれかを選択できます。 DirectX 11 のレンダラーを使用すると、DirectX 11 および DirectX 10 の各 GPU 上でハードウェア アクセラレータによる高性能レンダリングを実行できます。 WARP レンダラーを使用すると、最新式のグラフィックス ハードウェアを搭載していないコンピューターからグラフィックス ハードウェアを内蔵しているコンピューターまで、多様な種類のコンピューターとアセットが確実に連動するようになります。 WARP について詳しくは、「[Windows Advanced Rasterization Platform (WARP) Guide](https://go.microsoft.com/fwlink/p/?LinkId=224634)」(Windows Advanced Rasterization Platform (WARP) ガイド) をご覧ください。
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
 |[テクスチャおよびイメージの使用](../designers/working-with-textures-and-images.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用してイメージとテクスチャを操作する方法について説明します。|
 |[3-D モデルの操作](../designers/working-with-3-d-models.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用して 3-D モデルを操作する方法について説明します。|
 |[シェーダーの操作](../designers/working-with-shaders.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のシェーダー デザイナーを使用してカスタム シェーダー効果を作成および変更する方法について説明します。|
-|[ゲームまたはアプリでの 3-D アセットの使用](../designers/using-3-d-assets-in-your-game-or-app.md)|イメージ エディター、モデル エディター、またはシェーダー デザイナーを使用して作成したアセットをゲームまたはアプリケーションで使用する方法について説明します。|
+|[ゲームまたはアプリケーションでの 3-D アセットの使用](../designers/using-3-d-assets-in-your-game-or-app.md)|イメージ エディター、モデル エディター、またはシェーダー デザイナーを使用して作成したアセットをゲームまたはアプリケーションで使用する方法について説明します。|

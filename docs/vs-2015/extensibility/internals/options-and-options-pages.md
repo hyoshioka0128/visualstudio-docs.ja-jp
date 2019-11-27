@@ -1,5 +1,5 @@
 ---
-title: オプションと [オプション] ページ |Microsoft Docs
+title: '[オプション] ページと [オプション] ページ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,76 +14,76 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e30be26c40834d3122d491f8d150f02b6f3b776
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438954"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300695"
 ---
 # <a name="options-and-options-pages"></a>オプションとオプション ページ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-クリックすると**オプション**上、**ツール** メニューが開きます、**オプション** ダイアログ ボックス。 このダイアログ ボックスのオプションを [オプション] ページとしてと総称されます。 すべてのカテゴリが [オプション] ページおよびのツリー コントロール ナビゲーション ウィンドウにはにオプションのカテゴリが含まれます。 ページを選択すると、右側のウィンドウでそのオプションが表示されます。 これらのページを使用して、VSPackage の状態を決定するオプションの値を変更できます。  
+**[ツール]** メニューの **[オプション]** をクリックすると、 **[オプション]** ダイアログボックスが開きます。 このダイアログボックスのオプションは、総称してオプションページと呼ばれます。 ナビゲーションウィンドウのツリーコントロールにはオプションカテゴリが含まれており、すべてのカテゴリにオプションページがあります。 ページを選択すると、そのページのオプションが右ペインに表示されます。 これらのページを使用すると、VSPackage の状態を決定するオプションの値を変更できます。  
   
-## <a name="support-for-options-pages"></a>[オプション] ページのサポート  
- <xref:Microsoft.VisualStudio.Shell.Package>クラスは、[オプション] ページとオプションのカテゴリを作成するためのサポートを提供します。 <xref:Microsoft.VisualStudio.Shell.DialogPage>クラスは、[オプション] ページを実装します。  
+## <a name="support-for-options-pages"></a>オプションページのサポート  
+ <xref:Microsoft.VisualStudio.Shell.Package> クラスは、オプションページとオプションのカテゴリを作成するためのサポートを提供します。 <xref:Microsoft.VisualStudio.Shell.DialogPage> クラスは、オプションページを実装します。  
   
- 既定の実装<xref:Microsoft.VisualStudio.Shell.DialogPage>プロパティの汎用のグリッド内のユーザーにそのパブリック プロパティを提供しています。 独自のユーザー インターフェイス (UI) を持つカスタム オプション ページを作成するページのさまざまなメソッドをオーバーライドすることで、この動作をカスタマイズできます。 詳細については、次を参照してください。[オプション ページの作成](../../extensibility/creating-an-options-page.md)です。  
+ <xref:Microsoft.VisualStudio.Shell.DialogPage> の既定の実装では、プロパティの汎用グリッド内のユーザーに対してパブリックプロパティが提供されます。 この動作をカスタマイズするには、ページのさまざまなメソッドをオーバーライドして、独自のユーザーインターフェイス (UI) を持つカスタムオプションページを作成します。 詳細については、「[オプションページの作成](../../extensibility/creating-an-options-page.md)」を参照してください。  
   
- <xref:Microsoft.VisualStudio.Shell.DialogPage>クラスが実装する<xref:Microsoft.VisualStudio.Shell.IProfileManager>、[オプション] ページとユーザー設定の永続化を提供します。 既定の実装、<xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A>と<xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A>と文字列の間に、プロパティを変換できる場合、メソッドは、レジストリのユーザー セクションにプロパティの変更を保持します。  
+ <xref:Microsoft.VisualStudio.Shell.DialogPage> クラスは <xref:Microsoft.VisualStudio.Shell.IProfileManager>を実装します。これにより、オプションページとユーザー設定の永続性が提供されます。 プロパティを文字列との間で変換できる場合、<xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> および <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> メソッドの既定の実装では、プロパティの変更がレジストリのユーザーセクションに保持されます。  
   
-## <a name="options-page-registry-path"></a>オプション ページのレジストリ パス  
- 既定では、オプション ページによって管理されるプロパティのレジストリ パスは組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>、word DialogPage、およびオプションのページ クラスの型名。 たとえば、次のようにオプション ページ クラスを定義できるかもしれません。  
+## <a name="options-page-registry-path"></a>[オプション] ページのレジストリパス  
+ 既定では、オプションページによって管理されるプロパティのレジストリパスは、<xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>、word のテキストページ、およびオプションページクラスの型名を組み合わせることによって決定されます。 たとえば、オプションページクラスは次のように定義できます。  
   
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#1)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#1)]  
   
- 場合、 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp、プロパティの名前と値のペアは HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\ のサブキーがCompany.OptionsPage.OptionsPageGeneral します。  
+ <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> が \Software\Microsoft\VisualStudio\8.0Exp HKEY_CURRENT_USER 場合、プロパティの名前と値のペアは HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral. のサブキーになります。  
   
- オプション ページ自体のレジストリ パスが組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>単語、ToolsOptionsPages、およびオプション ページのカテゴリと名前。 たとえば、カスタム オプション ページには、カテゴリでは、個人用のオプション ページと<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp、オプション ページには、レジストリ キー hkey_local_machine \software\microsoft\ ですがVisualStudio\8.0Exp\ToolsOptionsPages\My オプション Pages\Custom します。  
+ オプションページ自体のレジストリパスは、<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>、word、ToolsOptionsPages、およびオプションページのカテゴリと名前を組み合わせることによって決定されます。 たとえば、[カスタムオプション] ページにカテゴリ、マイオプションページ、および <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> が HKEY_LOCAL_MACHINE 場合、[オプション] ページにはレジストリキー、HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0Exp\ToolsOptionsPages\My オプション Pages\Custom. があります。  
   
-## <a name="toolsoptions-page-attributes-and-layout"></a>ツール/オプション ページの属性とレイアウト  
- <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性のカスタム オプション ページのナビゲーション ツリーでのカテゴリにグループ化を指定します、**オプション** ダイアログ ボックス。 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性インターフェイスを提供する VSPackage のオプション ページに関連付けます。 次のコードがあるとします。  
+## <a name="toolsoptions-page-attributes-and-layout"></a>[ツール]/[オプション] ページの属性とレイアウト  
+ <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 属性は、 **[オプション]** ダイアログボックスのナビゲーションツリーで、カスタムオプションページのグループ化をカテゴリに指定します。 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 属性は、オプションページと、インターフェイスを提供する VSPackage を関連付けます。 次のコードがあるとします。  
   
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#2)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#2)]  
   
- これは、MyPackage が OptionsPageGeneral と OptionsPageCustom、2 つのオプション ページを提供することを宣言します。 **オプション**にダイアログ ボックスで、両方のオプション ページの表示、**マイ オプション ページ**としてカテゴリ**全般**と**カスタム**、それぞれします。  
+ これは、MyPackage が2つのオプションページ、OptionsPageGeneral と OptionsPageCustom を提供することを宣言します。 **[オプション]** ダイアログボックスの **[マイオプションページ**] カテゴリには、それぞれ **[全般**] と **[カスタム]** という両方のオプションページが表示されます。  
   
 ## <a name="option-attributes-and-layout"></a>オプションの属性とレイアウト  
- ページを提供するユーザー インターフェイス (UI) は、カスタム オプション ページのオプションの外観を決定します。 レイアウト、ラベル付け、および汎用オプション ページのオプションの説明については、次の属性によって決まります。  
+ ページに表示されるユーザーインターフェイス (UI) によって、カスタムオプションページのオプションの外観が決まります。 汎用オプションページのオプションのレイアウト、ラベル付け、説明は、次の属性によって決定されます。  
   
-- <xref:System.ComponentModel.CategoryAttribute> オプションのカテゴリを決定します。  
+- オプションのカテゴリは <xref:System.ComponentModel.CategoryAttribute> によって決定されます。  
   
-- <xref:System.ComponentModel.DisplayNameAttribute> オプションの表示名を決定します。  
+- <xref:System.ComponentModel.DisplayNameAttribute> は、オプションの表示名を決定します。  
   
-- <xref:System.ComponentModel.DescriptionAttribute> オプションの説明を決定します。  
+- オプションの説明を <xref:System.ComponentModel.DescriptionAttribute> によって決定されます。  
   
   > [!NOTE]
-  > 同等の属性、SRCategory、LocDisplayName、および SRDescription、ローカライズ文字列リソースを使用して、で定義されて、[マネージ プロジェクト サンプル](http://go.microsoft.com/fwlink/?LinkId=122774)します。  
+  > 同等の属性、SRCategory、LocDisplayName、および Srcategory は、ローカライズに文字列リソースを使用し、[マネージプロジェクトのサンプル](https://go.microsoft.com/fwlink/?LinkId=122774)で定義します。  
   
   次のコードがあるとします。  
   
   [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
   [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
-  OptionInteger オプションとして [オプション] ページに表示されます**整数オプション**で、 **My Options**カテゴリ。 オプションが選択されている場合、説明、**マイ整数オプション**、[説明] ボックスに表示されます。  
+  オプションの整数オプションは、オプション ページの **マイオプション** カテゴリの **整数 オプション**で表示されます。 このオプションが選択されている場合は、[説明] ボックスに **[整数] オプション**が表示されます。  
   
-## <a name="accessing-options-pages-from-another-vspackage"></a>別の VSPackage から [オプション] ページにアクセスします。  
- ホストしてオプション ページを管理する VSPackage は、別の VSPackage からでプログラムによって、オートメーション モデルを使用してアクセスできます。 たとえば、次のコードでは、VSPackage は、オプション ページをホストとして登録されます。  
+## <a name="accessing-options-pages-from-another-vspackage"></a>別の VSPackage からオプションページにアクセスする  
+ オプションページをホストおよび管理する VSPackage は、オートメーションモデルを使用して別の VSPackage からプログラムでアクセスできます。 たとえば、次のコードでは、VSPackage はオプションページのホストとして登録されています。  
   
  [!code-csharp[VSSDKSupportForOptionsPages#4](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#4)]
  [!code-vb[VSSDKSupportForOptionsPages#4](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#4)]  
   
- 次のコード フラグメントは、MyOptionPage から OptionInteger の値を取得します。  
+ 次のコード片は、MyOptionPage から OptionInteger の値を取得します。  
   
  [!code-csharp[VSSDKSupportForOptionsPages#5](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs#5)]
  [!code-vb[VSSDKSupportForOptionsPages#5](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb#5)]  
   
- ときに、<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性は、オプション ページを登録、AutomationProperties キーの場合 の下に、ページが登録されている、`SupportsAutomation`属性の引数が`true`します。 Automation は、関連付けられている VSPackage とオートメーションを検索するには、このレジストリ エントリを検査し、ホストされているオプション ページ、ここでは、個人用のグリッド ページで、プロパティにアクセスします。  
+ <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 属性によってオプションページが登録されると、属性の `SupportsAutomation` 引数が `true`場合、そのページは Automationproperties.automationid キーの下に登録されます。 オートメーションは、このレジストリエントリを調べて関連する VSPackage を見つけます。オートメーションは、ホストされているオプションページ (この場合は [マイグリッド] ページ) を使用してプロパティにアクセスします。  
   
- オートメーション プロパティのレジストリ パスが組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>単語、AutomationProperties、およびオプション ページのカテゴリと名前。 たとえば、次のオプション ページには、My Category カテゴリ、個人用のグリッド ページ名、および<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp 後のオートメーション プロパティが、レジストリ キー HKEY_LOCAL_MACHINEMicrosoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My グリッド ページ。  
+ オートメーションプロパティのレジストリパスは、<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>、word、Automationproperties.automationid、およびオプションページのカテゴリと名前を組み合わせることによって決定されます。 たとえば、オプション ページに マイカテゴリ カテゴリ、マイグリッド ページの名前、および <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>が HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0Exp がある場合、オートメーション プロパティには、レジストリキー、HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid ページがあります。  
   
 > [!NOTE]
-> 正規名、個人用の Category.My グリッド ページでは、このキーの名前のサブキーの値です。
+> 標準の名前である My Category.My Grid ページは、このキーの Name サブキーの値です。

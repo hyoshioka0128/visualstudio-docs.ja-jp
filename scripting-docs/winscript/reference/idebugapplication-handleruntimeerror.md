@@ -58,19 +58,19 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  言語エンジンは、実行時エラーの原因となったスレッドのコンテキストでこのメソッドを呼び出します。 このメソッドにより、現在のスレッドがブロックされ、デバッガー IDE に送信されるエラー通知が送信されます。 デバッガー IDE によってアプリケーションが再開されると、このメソッドは、実行するアクションと共にを返します。  
   
 > [!NOTE]
 > ランタイムエラーが発生している間に、スタックフレームの列挙や式の評価などのタスクを実行するために、スレッドによって言語エンジンが呼び出される場合があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug インターフェイス](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
  [BREAKRESUMEACTION 列挙型](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 列挙型](../../winscript/reference/errorresumeaction-enumeration.md)

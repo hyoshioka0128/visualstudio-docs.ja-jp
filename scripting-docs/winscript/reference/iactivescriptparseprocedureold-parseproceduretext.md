@@ -51,10 +51,10 @@ HRESULT ParseProcedureText(
  からプロシージャの仮パラメーター名。 パラメーター名は、スクリプトエンジンの適切な区切り記号で区切る必要があります。 名前をかっこで囲むことはできません。  
   
  `pstrItemName`  
- からプロシージャを評価するコンテキストを提供する名前付きアイテムの名前。 このパラメーターが `NULL` 場合、コードはスクリプトエンジンのグローバルコンテキストで評価されます。  
+ からプロシージャを評価するコンテキストを提供する名前付きアイテムの名前。 このパラメーターが `NULL`場合、コードはスクリプトエンジンのグローバルコンテキストで評価されます。  
   
  `punkContext`  
- からコンテキストオブジェクト。 このオブジェクトはデバッグ環境用に予約されています。アクティブなランタイム コンテキストを表すためにデバッガーによって指定される場合があります。 このパラメーターが `NULL` 場合、エンジンは `pstrItemName` を使用してコンテキストを識別します。  
+ からコンテキストオブジェクト。 このオブジェクトはデバッグ環境用に予約されています。アクティブなランタイム コンテキストを表すためにデバッガーによって指定される場合があります。 このパラメーターが `NULL`場合、エンジンは `pstrItemName` を使用してコンテキストを識別します。  
   
  `pstrDelimiter`  
  からプロシージャの末尾の区切り記号。 テキストのストリームから `pstrCode` を解析する場合、ホストは通常、2つの単一引用符 (' ') などの区切り記号を使用して、プロシージャの終了を検出します。 このパラメーターは、ホストが使用する区切り記号を指定します。これにより、スクリプトエンジンはいくつかの条件付きのプリミティブなプリプロセスを提供できます (たとえば、区切り記号として使用するために単一引用符 ['] を2つの単一引用符に置き換えるなど)。 スクリプトエンジンがこの情報を使用する方法 (および if) は、スクリプトエンジンによって異なります。 ホストが区切り記号を使用してプロシージャの終了をマークしなかった場合は、このパラメーターを `NULL` に設定します。  
@@ -68,11 +68,11 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  からプロシージャに関連付けられているフラグ。 は、これらの値の組み合わせにすることができます。  
   
-|定数|[値]|説明|  
+|定数|値|意味|  
 |--------------|-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|0x00000020|@No__t_0 内のコードが、プロシージャの戻り値を表す式であることを示します。|  
-|SCRIPTPROC_IMPLICIT_THIS|0x00000100|@No__t_0 ポインターがプロシージャのスコープに含まれることを示します。|  
-|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|@No__t_0 ポインターの親がプロシージャのスコープに含まれることを示します。|  
+|SCRIPTPROC_ISEXPRESSION|0x00000020|`pstrCode` 内のコードが、プロシージャの戻り値を表す式であることを示します。|  
+|SCRIPTPROC_IMPLICIT_THIS|0x00000100|`this` ポインターがプロシージャのスコープに含まれることを示します。|  
+|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|`this` ポインターの親がプロシージャのスコープに含まれることを示します。|  
   
  `ppdisp`  
  入出力既定のメソッドがこのメソッドによって解析されるプロシージャであるディスパッチラッパーを返します。  
@@ -80,7 +80,7 @@ HRESULT ParseProcedureText(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_INVALIDARG`|引数が無効です。|  
@@ -88,13 +88,13 @@ HRESULT ParseProcedureText(
 |`E_NOTIMPL`|このメソッドはサポートされていません。 スクリプトエンジンでは、名前空間に対するプロシージャの実行時追加はサポートされていません。|  
 |`E_UNEXPECTED`|呼び出しは想定されていませんでした (たとえば、スクリプトエンジンが初期化されていない状態か、閉じられた状態です)。|  
 |`OLESCRIPT_E_SYNTAX`|プロシージャで、指定されていない構文エラーが発生しました。|  
-|`S_FALSE`|スクリプトエンジンはディスパッチオブジェクトをサポートしていません。`ppdisp`parameter は `NULL` に設定されています。|  
+|`S_FALSE`|スクリプトエンジンはディスパッチオブジェクトをサポートしていません。`ppdisp`パラメーターが `NULL`に設定されています。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  この呼び出し中に評価されるスクリプトコードはありません。代わりに、プロシージャを `ppdisp` のメソッドにコンパイルして、後でスクリプトによって呼び出すことができます。  
   
- このインターフェイスは、`IActiveScriptParseProcedure` インターフェイスを優先して非推奨とされます。 @No__t_0 メソッドはこのメソッドに似ていますが、プロシージャ名を指定することができます。 どのような状況でも、`IActiveScriptParseProcedure::ParseProcedureText` を使用する必要があります。  
+ このインターフェイスは、`IActiveScriptParseProcedure` インターフェイスを優先して非推奨とされます。 `IActiveScriptParseProcedure::ParseProcedureText` メソッドはこのメソッドに似ていますが、プロシージャ名を指定することができます。 どのような状況でも、`IActiveScriptParseProcedure::ParseProcedureText` を使用する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptParseProcedureOld インターフェイス](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
  [IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)

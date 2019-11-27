@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575366"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-@No__t_0 オブジェクトを識別する項目の名前を設定します。  
+`IScriptEntry` オブジェクトを識別する項目の名前を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,16 +42,16 @@ HRESULT SetItemName(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_FAIL`|メソッドは成功しませんでした。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 オブジェクトの場合、このメソッドは `S_OK` を返します。  
+## <a name="remarks"></a>コメント  
+ `IScriptEntry` オブジェクトの場合、このメソッドは `S_OK`を返します。  
   
- @No__t_0 オブジェクト (`IScriptEntry` から派生) の場合、このメソッドは `E_FAIL` を返します。 @No__t_0 オブジェクトの場合、項目名は[IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)によって設定され、変更することはできません。  
+ `IScriptScriptlet` オブジェクト (`IScriptEntry`から派生) の場合、このメソッドは `E_FAIL`を返します。 `IScriptScriptlet` オブジェクトの場合、項目名は[IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)によって設定され、変更することはできません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iscriptentry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

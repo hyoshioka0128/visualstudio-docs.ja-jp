@@ -11,23 +11,23 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669898"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295845"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML モデルの検証制約を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定した条件をモデルが満たしているかどうかをテストする検証制約を定義できます。 たとえば、ユーザーが継承関係のループを作成していないことを確認するための制約を定義できます。 制約は、ユーザーがモデルを開くか、または保存しようとしたときに実行されるほか、手動で実行することもできます。 制約が失敗した場合は、ユーザー定義のエラー メッセージがエラー ウィンドウに追加されます。 これらの制約を[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
+指定した条件をモデルが満たしているかどうかをテストする検証制約を定義できます。 たとえば、ユーザーが継承関係のループを作成していないことを確認するための制約を定義できます。 制約は、ユーザーがモデルを開くか、または保存しようとしたときに実行されるほか、手動で実行することもできます。 制約が失敗した場合は、ユーザー定義のエラー メッセージがエラー ウィンドウに追加されます。 これらの制約を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
  また、モデルをデータベースなどの外部リソースに照らし合わせて検証する制約も定義できます。 レイヤー図に対してプログラムコードを検証する場合は、「[レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
  UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="requirements"></a>［要件］
+## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -63,7 +63,7 @@ ms.locfileid: "72669898"
 
 4. F5 キーを押して制約をテストします。 詳細については、「 [検証制約の実行](#Executing)」を参照してください。
 
-5. 別のコンピューターにメニューコマンドをインストールします。そのためには、プロジェクトによってビルドされた **\\ \* .vsix \\ \* ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
+5. 別のコンピューターにメニューコマンドをインストールします。そのためには、プロジェクトによってビルドされた **\\\*.vsix\\\*ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
 
    他の **.cs** ファイルを追加すると、通常は次の `using` ステートメントが必要になります。
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. クラス ライブラリ プロジェクトを作成し、それを既存の VSIX ソリューションに追加するか、または新規のソリューションを作成します。
 
-    1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+    1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
     2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の完全なパス名であることを確認します。通常は次のようになります。
+    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の完全なパス名であることを確認します。通常は次のようになります。
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. _YourProject_ **\\ \* \\ ファイルビン**を見つけ**ます。**
+    2. _YourProject_ **\\\*\\ファイルビン**を見つけ**ます。**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
@@ -392,11 +392,11 @@ context.LogError(... , usecase);
 
 3. 拡張機能を選択し、 **[アンインストール]** をクリックします。
 
-   拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、次の場所からファイルを削除することによって拡張機能を削除できます。 *% Localappdata%* は通常*DriveName*: \ Users \\*UserName*\appdata\local です):
+   拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、次の場所からファイルを削除することによって拡張機能を削除できます。 *% Localappdata%* は通常*DriveName*: \ Users\\*UserName*\appdata\local です):
 
-   *% Localappdata%* **\Microsoft\VisualStudio \\ [バージョン] \ 拡張機能**
+   *% Localappdata%* **\Microsoft\VisualStudio\\[バージョン] \ 拡張機能**
 
-## <a name="Example"></a> 「例」
+## <a name="Example"></a> 例
  この例は、要素間の依存関係におけるループを検索します。
 
  保存したときと検証メニュー コマンドを選択したときに検証が実行されます。
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [UML API を使用して](../modeling/programming-with-the-uml-api.md)[モデリング拡張機能のプログラミングを定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md)

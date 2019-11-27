@@ -50,17 +50,17 @@ HRESULT GetStatEx(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_NOTIMPL`|メソッドが実装されていません。|  
+|`E_NOTIMPL`|このメソッドは実装されていません。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドを使用すると、カスタムスクリプトエンジンはカスタムホストにとって意味のある統計情報を返すことができます。  
   
 > [!NOTE]
-> このメソッドは現在実装されていません。  
+> このメソッドは、現在実装されていません。  
   
-## <a name="see-also"></a>関連項目  
- [IActiveScriptStats:: GetStat](../../winscript/reference/iactivescriptstats-getstat.md)    
+## <a name="see-also"></a>参照  
+ [IActiveScriptStats:: GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [IActiveScriptStats インターフェイス](../../winscript/reference/iactivescriptstats-interface.md)

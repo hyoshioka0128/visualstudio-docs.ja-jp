@@ -52,9 +52,9 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  からスクリプトブロックに関連付けられているフラグ。 次の値の組み合わせが可能です。  
   
-|定数|[値]|説明|  
+|定数|値|説明|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|識別子とドット演算子をそれぞれ SOURCETEXT_ATTR_IDENTIFIER フラグと SOURCETEXT_ATTR_MEMBERLOOKUP フラグで識別する必要があることを示します。|  
+|GETATTRTYPE_DEPSCAN|0x0001|識別子とドット演算子をそれぞれ SOURCETEXT_ATTR_IDENTIFIER と SOURCETEXT_ATTR_MEMBERLOOKUP のフラグで識別する必要があることを示します。|  
 |GETATTRFLAG_THIS|0x0100|現在のオブジェクトの識別子を SOURCETEXT_ATTR_THIS フラグで識別する必要があることを示します。|  
 |GETATTRFLAG_HUMANTEXT|0x8000|文字列の内容とコメントのテキストを SOURCETEXT_ATTR_HUMANTEXT フラグで識別する必要があることを示します。|  
   
@@ -64,18 +64,18 @@ HRESULT GetScriptTextAttributes(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 インターフェイスを実装するスマートホストは、このメソッドを使用して、`IDebugDocumentText::GetText` メソッドへの呼び出しを委任できます。  
+## <a name="remarks"></a>コメント  
+ `IDebugDocumentText` インターフェイスを実装するスマートホストは、このメソッドを使用して、`IDebugDocumentText::GetText` メソッドへの呼び出しを委任できます。  
   
  このメソッドをスクリプトブロックに対して使用します。`GetScriptletTextAttributes` メソッドは、スクリプトレット用です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptDebug インターフェイス](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug:: Getscript Textattributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
+ [IActiveScriptDebug:: Getscript Textattributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
  [IDebugDocumentText インターフェイス](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
+ [IDebugDocumentText:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

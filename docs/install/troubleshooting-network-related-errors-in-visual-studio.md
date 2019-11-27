@@ -1,7 +1,7 @@
 ---
 title: ネットワーク エラーまたはプロキシ エラーをトラブルシューティングする
 description: ファイアウォールまたはプロキシ サーバーの内側で Visual Studio をインストールし使用するときに発生する可能性があるネットワークまたはプロキシに関連するエラーの解決策を探します。
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062787"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713954"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング
 
@@ -132,6 +132,19 @@ Visual Studio ではトランスポート層セキュリティ (TLS) 1.2 プロ�
 
   > [!NOTE]
   > プライベートで所有されている NuGet のサーバー URL は、このリストには含まれない場合があります。 %APPData%\Nuget\NuGet.Config で使用している NuGet のサーバーを確認できます。
+
+## <a name="error-failed-to-parse-id-from-parent-process"></a>エラー :"親プロセスから ID を解析できませんでした"
+
+このエラー メッセージは、ネットワーク ドライブで Visual Studio ブートストラップと response.json ファイルを使用している場合に表示されることがあります。 エラーの原因は、Windows のユーザー アカウント制御 (UAC) にあります。
+
+このエラーが発生する理由は、次のとおりです。マップされたネットワーク ドライブまたは [UNC](/dotnet/standard/io/file-path-formats#unc-paths) 共有は、ユーザーのアクセス トークンにリンクされます。 UAC が有効な場合、2 つのユーザー [アクセス トークン](/windows/win32/secauthz/access-tokens) が作成されます。一方は管理者アクセス権*付き*で、もう一方は管理者アクセス権*なし*です。 ネットワーク ドライブまたは共有が作成されると、ユーザーの現在のアクセス トークンがリンクされます。 ブートストラップは、管理者として実行する必要があるため、いずれかのドライブまたは共有が管理者アクセス権付きのユーザー アクセス トークンにリンクされていない場合、ネットワーク ドライブにアクセスすることはできません。
+
+### <a name="to-fix-this-error"></a>このエラーを修復するには
+
+`net use` コマンドを使用するか、UAC グループ ポリシーの設定を変更することができます。 これらの回避策とその実装方法の詳細については、次の Microsoft サポート記事を参照してください。
+
+* [Mapped drives are not available from an elevated prompt when UAC is configured to "Prompt for credentials" in Windows (UAC が Windows の [資格情報を要求する] に構成されている場合、マップされたドライブを管理者特権のプロンプトから利用できない)](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Programs may be unable to access some network locations after you turn on User Account Control in Windows operating systems (Windows オペレーティング システムでユーザー アカウント制御を有効にした後、プログラムが一部のネットワークの場所にアクセスできない場合がある)](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

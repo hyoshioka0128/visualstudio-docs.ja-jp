@@ -33,6 +33,6 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
 |------------|-----------------|  
 |[IActiveScriptProfilerCallback3::SetWebWorkerId メソッド](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|このプロファイルセッションで使用するワーカー ID をプロファイラーに通知します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptProfilerCallback インターフェイス](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
  [IActiveScriptProfilerCallback2 インターフェイス](../../winscript/reference/iactivescriptprofilercallback2-interface.md)
