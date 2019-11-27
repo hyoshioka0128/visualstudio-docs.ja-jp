@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669344"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297452"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio の XML ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +49,15 @@ ms.locfileid: "72669344"
 
  XML は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の多くの機能の中核となっています。 次のトピック一覧に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] で提供される XML 関連のツールと機能を示します。
 
- 詳細については、xml 開発者向けの最新のドキュメント、技術情報、ダウンロード、ニュースグループ、およびその他のリソースを提供する[Xml デベロッパーセンター](http://go.microsoft.com/fwlink/?LinkID=100176)を参照してください。
+ 詳細については、xml 開発者向けの最新のドキュメント、技術情報、ダウンロード、ニュースグループ、およびその他のリソースを提供する[Xml デベロッパーセンター](https://go.microsoft.com/fwlink/?LinkID=100176)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [XML データの操作](../xml-tools/working-with-xml-data.md)@No__t_1 でのデータの処理方法における XML の役割について説明します。
+ [XML データの操作](../xml-tools/working-with-xml-data.md)[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でのデータの処理方法における XML の役割について説明します。
 
  [XSLT のデバッグ](../xml-tools/debugging-xslt.md)Visual Studio デバッガーを使用して XSLT をデバッグする方法に関するトピックへのリンクを示します。
 
 ## <a name="reference"></a>参照
- [VisualStudio](http://go.microsoft.com/fwlink/?LinkID=165699)は、任意の xml ドキュメント[に対して](http://go.microsoft.com/fwlink/?LinkId=228250)XmlEditor を使用して[xml エディター](http://go.microsoft.com/fwlink/?LinkId=228249)の解析ツリーを公開します。
+ [VisualStudio](https://go.microsoft.com/fwlink/?LinkID=165699)は、任意の xml ドキュメント[に対して](https://go.microsoft.com/fwlink/?LinkId=228250)XmlEditor を使用して[xml エディター](https://go.microsoft.com/fwlink/?LinkId=228249)の解析ツリーを公開します。
 
  [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)Xml、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、XSLT などの XML テクノロジについて説明します。
 
@@ -65,15 +65,15 @@ ms.locfileid: "72669344"
 
  <xref:System.Xml.Serialization?displayProperty=fullName> では、<xref:System.Xml.Serialization> 名前空間を構成するクラスとその他の要素について説明し、各項目に関する詳細情報へのリンクを示します。
 
-## <a name="related-sections"></a>関連項目
- [XML ドキュメントオブジェクトモデル (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)@No__t_1 とそれに関連付けられているクラスが W3C ドキュメントオブジェクトモデル (Core) Level 1 および Level 2 名前空間のサポート仕様にどのように準拠しているかを説明します。
+## <a name="related-sections"></a>関連セクション
+ [XML ドキュメントオブジェクトモデル (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)<xref:System.Xml.XmlDocument> とそれに関連付けられているクラスが W3C ドキュメントオブジェクトモデル (Core) Level 1 および Level 2 名前空間のサポート仕様にどのように準拠しているかを説明します。
 
- [XmlReader を使用した XML の読み取り](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)@No__t_1 が XML ストリーム経由の XML データに対して、非キャッシュ、前方参照専用、読み取り専用のアクセスを提供する方法について説明します。
+ [XmlReader を使用した XML の読み取り](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)<xref:System.Xml.XmlReader> が XML ストリーム経由の XML データに対して、非キャッシュ、前方参照専用、読み取り専用のアクセスを提供する方法について説明します。
 
- [XmlWriter を使用した XML の書き込み](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)@No__t_1 によって、キャッシュされていない順方向専用の XML ストリームを生成する方法について説明します。 W3C 標準に準拠した XML ドキュメントの作成に役立ちます。
+ [XmlWriter を使用した XML の書き込み](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)<xref:System.Xml.XmlWriter> によって、キャッシュされていない順方向専用の XML ストリームを生成する方法について説明します。 W3C 標準に準拠した XML ドキュメントの作成に役立ちます。
 
- [XSLT 変換](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)@No__t_1 クラスが XSLT 1.0 勧告を実装する方法について説明します。
+ [XSLT 変換](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)<xref:System.Xml.Xsl.XslCompiledTransform> クラスが XSLT 1.0 勧告を実装する方法について説明します。
 
- [XPath データモデルを使用して XML データを処理する](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)@No__t_1 クラスが <xref:System.Xml.XPath.XPathDocument> または <xref:System.Xml.XmlDocument> オブジェクトに格納されている XML データを処理する方法について説明します。 <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
+ [XPath データモデルを使用して XML データを処理する](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)<xref:System.Xml.XPath.XPathNavigator> クラスが <xref:System.Xml.XPath.XPathDocument> または <xref:System.Xml.XmlDocument> オブジェクトに格納されている XML データを処理する方法について説明します。 <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
 
  [XML スキーマオブジェクトモデル (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)スキーマの読み込みと編集に <xref:System.Xml.Schema.XmlSchema> クラスを提供することによって、XML スキーマの作成と操作に使用されるクラスについて説明します。

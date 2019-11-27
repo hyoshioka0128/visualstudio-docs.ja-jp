@@ -30,8 +30,8 @@ ms.locfileid: "72573781"
   
 - すべてのラベル参照が、現在のスコープで定義されているラベル (前方定義を含む) に対して行われていることを確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ラベル付きステートメント](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の    
+ [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の   
  [break ステートメント](../../javascript/reference/break-statement-javascript.md)   
  [continue ステートメント](../../javascript/reference/continue-statement-javascript.md)

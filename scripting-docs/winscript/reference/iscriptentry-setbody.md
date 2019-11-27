@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575377"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-@No__t_0 スクリプトブロックの本文またはスクリプトレットの `IScriptScriptlet` に含まれるテキストを設定します。  
+`IScriptEntry` スクリプトブロックの本文またはスクリプトレットの `IScriptScriptlet` に含まれるテキストを設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,21 +37,21 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>パラメーター  
  `psz`  
- から@No__t_0 スクリプトブロックの場合、`psz` は、スクリプトタグで囲まれたテキストです。  
+ から`IScriptEntry` スクリプトブロックの場合、`psz` は、スクリプトタグで囲まれたテキストです。  
   
- @No__t_0 関数ブロックの場合、`psz` は関数本体です。  
+ `IScriptEntry` 関数ブロックの場合、`psz` は関数本体です。  
   
- @No__t_0 オブジェクト (`IScriptEntry` から派生) の場合、`psz` はスクリプトレットのスクリプトテキストです。  
+ `IScriptScriptlet` オブジェクト (`IScriptEntry`から派生) の場合、`psz` はスクリプトレットのスクリプトテキストです。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iscriptentry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

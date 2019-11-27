@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7fc6f29246f90c47a4c59a5ae6bb1999ceac72bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646902"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299970"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>手順 9: レビュー、コメントの追加、およびコードのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "72646902"
 
    ステートメントは、プログラムに処理を実行させる指示にあたります。 Visual C# の場合、ステートメントは必ずセミコロンで終わります。 Visual Basic の場合は、行の末尾がステートメントの末尾になります (Visual Basic にセミコロンは必要ありません)。前のステートメントは、ユーザーが**OpenFileDialog**コンポーネントで選択したファイルを読み込むように `PictureBox` コントロールに指示します。
 
-  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](http://go.microsoft.com/fwlink/?LinkId=205216)ビデオ5」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 5](http://go.microsoft.com/fwlink/?LinkId=205206)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](https://go.microsoft.com/fwlink/?LinkId=205216)ビデオ5」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 5](https://go.microsoft.com/fwlink/?LinkId=205206)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-add-comments"></a>コメントを追加するには
 

@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572255"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>デコードする URI は正しくエンコードされていません。
-不適切な形式の URI (Uniform Resource Identifier) をデコードしようとしました。 Uri には特殊な構文があります。URI で使用する前に、ほとんどの英数字以外の文字をエンコードする必要があります。 @No__t_0 および `encodeURIComponent` メソッドを使用して、通常の [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 文字列から URI を作成できます。  
+不適切な形式の URI (Uniform Resource Identifier) をデコードしようとしました。 Uri には特殊な構文があります。URI で使用する前に、ほとんどの英数字以外の文字をエンコードする必要があります。 `encodeURI` および `encodeURIComponent` メソッドを使用して、通常の [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 文字列から URI を作成できます。  
   
  完全な URI は、一連のコンポーネントと区切り記号で構成されます。 一般的な形式は次のとおりです。  
   
@@ -36,6 +36,6 @@ ms.locfileid: "72572255"
   
 - 有効な Uri のみをデコードしようとしていることを確認します。 無効な文字が含まれている可能性があるため、通常の [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 文字列をデコードすることはできません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [DecodeURI 関数](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent 関数](../../javascript/reference/decodeuricomponent-function-javascript.md)

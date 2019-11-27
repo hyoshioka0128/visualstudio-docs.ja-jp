@@ -1,5 +1,5 @@
 ---
-title: '方法: インストーラーのレジストリ情報の生成 |Microsoft Docs'
+title: '方法: インストーラーのレジストリ情報を生成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,36 +12,36 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: be17b2f78048bd0e9c2052066796857dbeba2048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d6ce169eeb36bcde58cf81707fbe9ebcc4e882
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435262"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298251"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラー向けの登録情報の生成
+# <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラーのレジストリ情報を生成する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-マネージ VSPackage を登録するマニフェストを生成する RegPkg.exe ユーティリティを使用できます。 マニフェストは、Windows インストーラーのセットアップ パッケージに組み込むことができます。 RegPkg もに基づいてセットアップのソース ファイルに含めることができるファイルを生成できる、 [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238)します。  
+RegPkg ユーティリティを使用して、マネージ VSPackage の登録マニフェストを生成できます。 マニフェストは、Windows インストーラーセットアップパッケージに組み込むことができます。 RegPkg では、 [WINDOWS インストーラー XML ツールセット](https://go.microsoft.com/fwlink/?LinkId=62238)に基づいてセットアップのソースファイルに含めることができるファイルを生成することもできます。  
   
 > [!IMPORTANT]
-> 開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、InprocServer32 値必要があります **[SystemFolder]mscoree.dll**パスを使用する必要がありますと **[#filekey]** と **[$componentkey]** します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、これは、フォームの Id をファイル*ファイル名*— 少ない数の変更を行う必要があります。  
+> RegPkg では、開発システムに固有のパス名が生成されるため、RegPkg を使用するたびに、適切な Windows インストーラー書式設定されたプロパティを使用するように出力を編集する必要があります。 たとえば、InprocServer32 値は **[Systemfolder] mscoree.dll .dll**で、パスは **[#filekey]** および **[$componentkey]** を使用する必要があります。 この方法で出力を調整すると、別のドライブまたは別のディレクトリに Windows がインストールされているコンピューター、ローカライズされたディレクトリ名、およびユーザーが選択できるパスがサポートされます。 詳細については、「Windows インストーラー SDK での[書式設定](https://go.microsoft.com/fwlink/?LinkId=71120)」を参照してください。 開発システムパスの RegPkg 規則 (たとえば、形式 File_*filename*) に従う場合は、変更を減らす必要があります。  
   
-### <a name="to-create-a-registration-manifest"></a>登録のマニフェストを作成するには  
+### <a name="to-create-a-registration-manifest"></a>登録マニフェストを作成するには  
   
-- RegPkg での実行、 **/regfile**スイッチします。 その他のスイッチでは、出力ファイルの名前と、VSPackage のパスを指定します。  
+- **/Regfile**スイッチを使用して regpkg を実行します。 他のスイッチ、出力ファイルの名前、および VSPackage のパスを指定します。  
   
-     たとえば、コマンド プロンプトには、次のようなものは入力します。  
+     たとえば、コマンドプロンプトで、次のように入力します。  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
     ```  
   
-### <a name="to-view-a-registration-manifest"></a>登録のマニフェストを表示するには  
+### <a name="to-view-a-registration-manifest"></a>登録マニフェストを表示するには  
   
-- 任意のテキスト エディターでは、登録、マニフェストを開きます。  
+- 任意のテキストエディターで登録マニフェストを開きます。  
   
-     次の例では、RegPkg IronPython の言語サービスによって作成された登録マニフェストを示します。  
+     次の例は、RegPkg が IronPython language サービス用に作成する登録マニフェストです。  
   
     ```  
     REGEDIT4  
@@ -98,21 +98,21 @@ ms.locfileid: "63435262"
   
     ```  
   
-### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML ツールセットには作成するにはファイルが含まれます  
+### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Windows インストーラー XML ツールセットインクルードファイルを作成するには  
   
-- RegPkg での実行、 **/wixfile**スイッチします。 その他のスイッチでは、出力ファイルの名前と、VSPackage のパスを指定します。  
+- **/Wixfile**スイッチを使用して regpkg を実行します。 他のスイッチ、出力ファイルの名前、および VSPackage のパスを指定します。  
   
-     たとえば、コマンド プロンプトには、次のようなものは入力します。  
+     たとえば、コマンドプロンプトで、次のように入力します。  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
     ```  
   
-### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML ツールセットには表示するにはファイルが含まれます  
+### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Windows インストーラー XML ツールセットインクルードファイルを表示するには  
   
-- 開いている、Windows Installer XML Toolset ファイルに含める任意のテキスト エディター。  
+- 任意のテキストエディターで Windows インストーラー XML ツールセットインクルードファイルを開きます。  
   
-     次の例は、IronPython の言語サービスのよう RegPkg に作成したインクルード ファイルです。  
+     次の例は、RegPkg によって IronPython language サービス用に作成されるインクルードファイルです。  
   
     ```  
     <Include>  
@@ -183,5 +183,5 @@ ms.locfileid: "63435262"
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [Vspackage の登録](registering-vspackages.md)   
+ [Vspackage](registering-vspackages.md)  を登録しています  
  [VSPackage](../../extensibility/internals/vspackages.md)

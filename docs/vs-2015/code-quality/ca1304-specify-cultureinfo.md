@@ -42,15 +42,15 @@ ms.locfileid: "72661471"
 - <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
- @No__t_0 オブジェクトまたは <xref:System.IFormatProvider?displayProperty=fullName> オブジェクトが指定されていない場合、オーバーロードされたメンバーによって提供される既定値は、すべてのロケールで必要な結果を得られない可能性があります。 また、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] メンバーは、コードに対して正しくない可能性がある仮定に基づいて、既定のカルチャと書式設定を選択します。 シナリオに合わせてコードが期待どおりに動作するようにするには、次のガイドラインに従って、カルチャ固有の情報を指定する必要があります。
+ <xref:System.Globalization.CultureInfo> オブジェクトまたは <xref:System.IFormatProvider?displayProperty=fullName> オブジェクトが指定されていない場合、オーバーロードされたメンバーによって提供される既定値は、すべてのロケールで必要な結果を得られない可能性があります。 また、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] メンバーは、コードに対して正しくない可能性がある仮定に基づいて、既定のカルチャと書式設定を選択します。 シナリオに合わせてコードが期待どおりに動作するようにするには、次のガイドラインに従って、カルチャ固有の情報を指定する必要があります。
 
-- 値がユーザーに表示される場合は、現在のカルチャを使用します。 以下を参照してください。<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>
+- 値がユーザーに表示される場合は、現在のカルチャを使用します。 「<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>」を参照してください。
 
-- 値がソフトウェアによって保存およびアクセスされる場合 (ファイルまたはデータベースに保存される場合) は、インバリアントカルチャを使用します。 以下を参照してください。<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
+- 値がソフトウェアによって保存およびアクセスされる場合 (ファイルまたはデータベースに保存される場合) は、インバリアントカルチャを使用します。 「<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>」を参照してください。
 
 - 値の変換先がわからない場合は、データコンシューマーまたはプロバイダーによってカルチャが指定されていることを確認してください。
 
-  @No__t_0 は、<xref:System.Resources.ResourceManager?displayProperty=fullName> クラスのインスタンスを使用してローカライズされたリソースを取得するためにのみ使用されることに注意してください。
+  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> は、<xref:System.Resources.ResourceManager?displayProperty=fullName> クラスのインスタンスを使用してローカライズされたリソースを取得するためにのみ使用されることに注意してください。
 
   オーバーロードされたメンバーの既定の動作がニーズに適している場合でも、コードが自己文書化され、より簡単に管理できるように、カルチャ固有のオーバーロードを明示的に呼び出すことをお勧めします。
 
@@ -72,10 +72,10 @@ ms.locfileid: "72661471"
 
  この例を実行すると、次の出力が生成されます。
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>関連規則
  [CA1305: IFormatProvider を指定します](../code-quality/ca1305-specify-iformatprovider.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [NIB: CultureInfo クラスの使用](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27692c31c2c0f1c52ab026fb2d55e5d240839ff3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654902"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299296"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>カスタム モデリング ツールボックス アイテムを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +131,7 @@ ms.locfileid: "72654902"
 |tabName|アイテムが表示されるツールボックス タブ。 この種類の図の標準タブの名前か、別の名前を指定できます。|
 |イメージ|ビットマップ ( **.bmp**) ファイルの位置。高さと幅は16、色深度は24ビットである必要があります。|
 |f1Keyword|ヘルプ トピックを検索するキーワードです。|
-|ヒント|このツールのヒントです。|
+|ヒント (tooltip)|このツールのヒントです。|
 
  Visual Studio でビットマップ ファイルを編集して、[プロパティ] ウィンドウで高さと幅を 16 に設定できます。
 
@@ -139,7 +139,7 @@ ms.locfileid: "72654902"
 > 図ファイルを単独で使用して試した後に .tbxinfo ファイルを使用し始めた場合、ツールボックスには、ツールボックス アイテムの古いバージョンと新しいバージョンの両方が含まれる場合があります。 これは、.tbxinfo ファイルで図ファイルの名前が間違っている場合にも発生します。 この問題が発生した場合は、ツールボックスのショートカットメニューで **[ツールボックスのリセット]** を選択します。 カスタム ツールボックス アイテムが表示されなくなります。 Visual Studio を再起動すると、正しいカスタム アイテムが表示されます。
 
 ## <a name="Extension"></a>Visual Studio 拡張機能にツールボックスアイテムを配布する方法
- ツールボックスアイテムを Visual Studio 拡張機能 (VSIX) にパッケージ化することで、他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザーに配布できます。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、「 [Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
+ ツールボックスアイテムを Visual Studio 拡張機能 (VSIX) にパッケージ化することで、他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザーに配布できます。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、「 [Visual Studio 拡張機能の配置](https://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
 
  Visual Studio 拡張機能をビルドするには、通常は VSIX プロジェクトのテンプレートを使用します。 これを行うには、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] をインストールしておく必要があります。
 
@@ -155,7 +155,7 @@ ms.locfileid: "72654902"
 
      新しい Visual Studio 拡張機能プロジェクトを定義します。
 
-    1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+    1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
     2. **[新しいプロジェクト]** ダイアログボックスの **[インストールされているテンプレート]** で、 **[ビジュアルC# ]** 、 **[機能拡張]** 、 **[VSIX プロジェクト]** の順に選択します。
 
@@ -168,7 +168,7 @@ ms.locfileid: "72654902"
 
 5. ここで追加したすべてのファイルについて次のプロパティを設定します。 ソリューション エクスプローラーでそれらすべてを選択すると、それらのプロパティを同時に設定できます。 プロジェクト内の他のファイルのプロパティを変更しないように注意してください。
 
-     **出力ディレクトリにコピー**  = **常にコピー**する
+     **出力ディレクトリにコピー** = **常にコピー**する
 
      **ビルドアクション** = **コンテンツ**
 
@@ -187,11 +187,11 @@ ms.locfileid: "72654902"
         > [!NOTE]
         > これは、ドロップダウン リストのオプションの 1 つではありません。 キーボードを使用して入力する必要があります。
 
-    - **ファイルシステム上の** **ソース** =  ファイル。
+    - **ファイルシステム上の** **ソース** = ファイル。
 
     - **Path** = **.tbxinfo**ファイル (例: **mytools. .tbxinfo** )
 
-8. プロジェクトをビルドします。
+8. プロジェクトをビルドする。
 
 9. **拡張機能が動作することを確認するに**は、F5 キーを押します。 Visual Studio の実験用インスタンスが開始します。
 
@@ -220,7 +220,7 @@ ms.locfileid: "72654902"
 
 3. 言語のカルチャ コードを名前にしたフォルダーに、追加のアセンブリをそれぞれ配置します。 たとえば、フランス語版のアセンブリを**fr**という名前のフォルダー内に配置します。
 
-4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
+4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
 
 5. Visual Studio 拡張機能をビルドして配布します。
 
@@ -233,5 +233,5 @@ ms.locfileid: "72654902"
 
  さらに、 **[ツールボックスのリセット]** コマンドを実行すると、カスタムツールは表示されなくなります。 しかし、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] を再起動すると再び表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)[するプロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[モデリング図のメニューコマンド](../modeling/define-a-menu-command-on-a-modeling-diagram.md)の定義[uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する

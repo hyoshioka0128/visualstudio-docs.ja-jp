@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b683e2d266e065ce9fcf7caa1943cd44d1bd9be6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8eb2d4f5b025be6f68860c18d1c14da017aaf3fe
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664732"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294325"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XAML デザイナーでは、 *図形* とはその名の示すとおりのものです。 たとえば、四角形、円、楕円などです。 *パス* は、より柔軟なバージョンの図形です。 図形の形状を変更したり、図形を結合して新しい図形を形成するといった操作ができます。
 
- 図形とパスではベクター グラフィックスを使用するため、高解像度表示に対応して拡大縮小できます。 ベクター グラフィックスの詳細については、 [ベクター グラフィックスに関するビデオ](https://www.youtube.com/watch?v=MoCSwF0n-io) や [ベクター グラフィックスに関するページ](http://www.webopedia.com/TERM/V/vector_graphics.html)を参照してください。
+ 図形とパスではベクター グラフィックスを使用するため、高解像度表示に対応して拡大縮小できます。 ベクター グラフィックスの詳細については、 [ベクター グラフィックスに関するビデオ](https://www.youtube.com/watch?v=MoCSwF0n-io) や [ベクター グラフィックスに関するページ](https://www.webopedia.com/TERM/V/vector_graphics.html)を参照してください。
 
- **このトピックの内容**
+ **このトピックの内容:**
 
 - [図形の描画](#Shape)
 
@@ -130,5 +130,5 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業: クリッピング パスを作成する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

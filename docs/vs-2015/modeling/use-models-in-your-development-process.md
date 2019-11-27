@@ -11,17 +11,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3bc95e74c9e80596ea46efa42abce5c4ed48fa8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659438"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298264"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
+Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
 
  どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -128,14 +128,14 @@ Visual Studio では、システム、アプリケーション、またはコン
 |デザイン パターン<br /><br /> 設計のすべての部分で使用される、設計の問題を解決する規約と方法です。|-UML クラス図は、パターンの構造を記述します。<br />-シーケンス図またはアクティビティ図は、相互作用とアルゴリズムを示します。|
 |コード分析<br /><br /> コードから数種類の図を生成できます。|-シーケンス図は、コード内のオブジェクト間の相互作用を示しています。<br />-レイヤー図は、クラス間の依存関係を示しています。 更新されたコードは、レイヤー図と照合することができます。<br />-クラス図は、コード内のクラスを示しています。|
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: Visual Studio 2010 を使用した UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "P\ ビデオ ")[操作方法シリーズ: UML ツールと拡張機能 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: Visual Studio 2010 を使用した UML](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "P\ ビデオ ")[操作方法シリーズ: UML ツールと拡張機能 (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [アジャイル開発でモデルを使用する](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)[アプリモデルのモデルを作成](../modeling/create-models-for-your-app.md)[するユーザー要件](../modeling/model-user-requirements.md)[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)をモデル化する[モデリングソリューション](../modeling/structure-your-modeling-solution.md)のモデル構造[からテストを開発](../modeling/develop-tests-from-a-model.md)する

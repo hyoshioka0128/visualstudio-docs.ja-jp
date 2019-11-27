@@ -8,14 +8,14 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e86364641b477c7b4d8d919cb78afb925f7c27e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660505"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302551"
 ---
-# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UIT テストを設定
+# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UI テストを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを実行するには、次の表で説明されているように、該当する UITestControl.WaitForControlXXX() メソッドを使用します。 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> メソッドで有効化されるコントロールを待機するコード化された UI テストの例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **ガイダンス**
 
- 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)」をご覧ください。
+ 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)」をご覧ください。
 
-## <a name="see-also"></a>参照
- [Ui オートメーションを使用したコードのテストコード](../test/use-ui-automation-to-test-your-code.md)化された[ui テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)チュートリアル: コード化された ui テストの[作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)コード化された Ui テストの[構造](../test/anatomy-of-a-coded-ui-test.md)[とコード化された ui テストとアクションのプラットフォーム記録](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[方法: コード化された Ui テストエディターを使用して ui アクションの前に遅延を挿入する](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+## <a name="see-also"></a>関連項目
+ [Ui オートメーションを使用してコード](../test/use-ui-automation-to-test-your-code.md)化された[ui テストを作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)するコードをテストするチュートリアル: コード化された ui テストの[作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)コード化された ui テストの[構造](../test/anatomy-of-a-coded-ui-test.md)、コード化され[た ui](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)テスト[と操作の記録のプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

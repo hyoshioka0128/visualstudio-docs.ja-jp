@@ -34,7 +34,7 @@ break labelname;
   
 - **Break**キーワードが外側のループまたは switch ステートメントの内側にあることを確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [break ステートメント](../../javascript/reference/break-statement-javascript.md)   
  [プログラムフローの制御](../../javascript/controlling-program-flow-javascript.md)   
  [スクリプトのトラブルシューティング](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

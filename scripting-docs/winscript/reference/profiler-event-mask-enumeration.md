@@ -50,7 +50,7 @@ typedef enum {
 |PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|DOM を呼び出すプロファイル関数。|  
 |PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|DOM への呼び出しを含むすべての関数をプロファイリングします。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [アクティブスクリプトプロファイラーの定数、列挙型、および構造体](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
+ [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26065ac7d9b92a8d9bc12f8f7843d8a0fb93f7ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16a51c7fc05d51b551884f70dc514e8939962818
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669762"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296036"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Directed Graph Markup Language (DGML) リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
  一部のバージョンの Visual Studio では、DGML 機能のサブセットのみがサポートされています。「[アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 > [!NOTE]
-> .dgml ファイルを編集するときは、各要素とその値に使用できる属性が IntelliSense によって識別されます。 属性で色を指定するには、一般的な色の名前 ("Blue" など) または ARGB 16 進値 ("#ffa0b1c3" など) を使用してください。 DGML では、WPF (Windows Presentation Foundation) 色定義形式の小さいサブセットを使用します。 詳細については、「 [Colors クラス](http://go.microsoft.com/fwlink/?LinkId=182345)」を参照してください。
+> .dgml ファイルを編集するときは、各要素とその値に使用できる属性が IntelliSense によって識別されます。 属性で色を指定するには、一般的な色の名前 ("Blue" など) または ARGB 16 進値 ("#ffa0b1c3" など) を使用してください。 DGML では、WPF (Windows Presentation Foundation) 色定義形式の小さいサブセットを使用します。 詳細については、「 [Colors クラス](https://go.microsoft.com/fwlink/?LinkId=182345)」を参照してください。
 
 ## <a name="DGML"></a>DGML 構文
  次の表は、DGML で使用される要素の種類について説明しています。
@@ -35,15 +35,15 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    追加できる属性 (省略可能) は次のとおりです。
 
-   `Background` - マップの背景色
+   `Background`-マップの背景の色
 
-   `BackgroundImage` - マップの背景として使用するイメージ ファイルの場所。
+   `BackgroundImage`-マップの背景として使用するイメージファイルの場所。
 
-   `GraphDirection` - マップがツリー レイアウト (`Sugiyama`) に設定された場合に、ほとんどのリンクが指定方向 (`TopToBottom`、`BottomToTop`、`LeftToRight`、または `RightToLeft`) に向かうようにノードを配置します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
+   `GraphDirection`-マップがツリーレイアウト (`Sugiyama`) に設定されている場合、ほとんどのリンクが指定した方向 (`TopToBottom`、`BottomToTop`、`LeftToRight`、または `RightToLeft`) になるようにノードを配置します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
 
-   `Layout` - マップのレイアウトを `None`、`Sugiyama` (ツリー レイアウト)、`ForceDirected` (クイック クラスター)、または `DependencyMatrix` に設定します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
+   `Layout`-マップを、`None`、`Sugiyama` (ツリーレイアウト)、`ForceDirected` (クイッククラスター)、または `DependencyMatrix`の各レイアウトに設定します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
 
-   `NeighborhoodDistance` - マップがツリー レイアウトまたはクイック クラスター レイアウトに設定された場合に、選択したノードから指定されたリンク数 (1 ～ 7) 離れたノードのみ表示します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
+   `NeighborhoodDistance`-マップがツリーレイアウトまたはクイッククラスターレイアウトに設定されている場合、指定された数 (1-7) のリンクが選択したノードから離れているノードのみを表示します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
 
    例:
 
@@ -92,7 +92,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    この要素には、次の属性が必要です。
 
-   `Id` - ノードの一意の名前。`Label` 属性が別途指定されていない場合は、`Label` 属性の既定値です。 この名前は、名前を参照するリンクの `Source` 属性または `Target` 属性と一致する必要があります。
+   `Id`-個別の `Label` 属性が指定されていない場合に、ノードの一意の名前と `Label` 属性の既定値。 この名前は、名前を参照するリンクの `Source` 属性または `Target` 属性と一致する必要があります。
 
    追加できる属性 (省略可能) の一部を次に示します。
 
@@ -100,13 +100,13 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    スタイル属性。 「 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)」を参照してください。
 
-   `Category` - この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
+   `Category`-この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
 
-   `Property` - プロパティ値が同じ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
+   `Property`-同じプロパティ値を持つ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
 
    `Group` - ノードに他のノードが含まれている場合は、この属性を `Expanded` または `Collapsed` に設定して、そのコンテンツの表示と非表示を切り替えます。 `<Link/>` 属性を含み、親ノードをリンク元ノード、子ノードをリンク先ノードとして指定する `Category="Contains"` 要素が必要です。 「[グループコード要素](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)」を参照してください。
 
-   `Visibility` - この属性を `Visible`、`Hidden`、または `Collapsed` に設定します。 `System.Windows.Visibility`が使用されます。 「[ノードとリンクの非表示または表示](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)」を参照してください。
+   `Visibility`-この属性を `Visible`、`Hidden`、または `Collapsed`に設定します。 `System.Windows.Visibility`が使用されます。 「[ノードとリンクの非表示または表示](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)」を参照してください。
 
    `Reference` - この属性をドキュメントまたは URL へのリンクに設定します。 「[コード要素とリンクへのドキュメントまたは url のリンク」を](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)参照してください。
 
@@ -155,19 +155,19 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    この要素には、次の属性が必要です。
 
-   `Source` - リンク元ノード。
+   `Source`-リンクのソースノード
 
    `Target` - リンク先ノード。
 
    追加できる属性 (省略可能) の一部を次に示します。
 
-   `Label` - リンクの表示名。
+   `Label`-リンクの表示名
 
    スタイル属性。 「 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)」を参照してください。
 
-   `Category` - この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
+   `Category`-この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
 
-   `Property` - プロパティ値が同じ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
+   `Property`-同じプロパティ値を持つ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
 
    例:
 
@@ -216,7 +216,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    `Label` - カテゴリのわかりやすい名前。
 
-   `BasedOn` - 現在の要素の `<Category/>` の継承元の親カテゴリ。
+   `BasedOn`-現在の要素の `<Category/>` を継承する親カテゴリ。
 
    この要素の例では、`FailedTest` カテゴリは、`Stroke` カテゴリから `PassedTest` 属性を継承します。 「 [DGML ファイルを編集してコードマップをカスタマイズ](../modeling/customize-code-maps-by-editing-the-dgml-files.md)する」の「階層カテゴリを作成するには」を参照してください。
 
@@ -267,9 +267,9 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    この要素には、次の属性が必要です。
 
-  - `Id` - プロパティの一意の名前。`Label` 属性が別途指定されていない場合は、`Label` 属性の既定値です。
+  - `Id`-個別の `Label` 属性が指定されていない場合に、プロパティの一意の名前と、`Label` 属性の既定値。
 
-  - `DataType` - プロパティに格納されるデータの型。
+  - `DataType`-プロパティによって格納されるデータの型
 
     プロパティを **[プロパティ]** ウィンドウに表示する場合は、`Label` プロパティを使用して、プロパティの表示名を指定します。
 
@@ -322,5 +322,5 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 </Properties>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)[コードマップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)[コードマップアナライザーを使用して潜在的な問題を検出](../modeling/find-potential-problems-using-code-map-analyzers.md)する

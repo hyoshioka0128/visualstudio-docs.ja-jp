@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657046"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297573"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 へようこそ
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 >
 > [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) のリリース ノートについては、こちらをクリックしてください。
 
- [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) を無料でダウンロードし、コーディングをすぐに開始してください。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 ( [Visual Studio の他のエディション](http://www.visualstudio.com/products/compare-visual-studio-products-vs)にはさらに多くの機能があります。)
+ [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) を無料でダウンロードし、コーディングをすぐに開始してください。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 ([Visual Studio の他のエディション](https://visualstudio.microsoft.com/vs/compare/)にはさらに多くの機能があります。)
 
  すぐに作業に取りかかり、新しいプロジェクトを作成し、コードの記述を開始してください。 作成するアプリの種類を選択します。 あるいは、Visual Studio IDE の [ツアーを見て、](./ide/visual-studio-ide.md) ツールの理解を深めてください。
 
  忘れずに [コード ギャラリー](https://code.msdn.microsoft.com/) を調べ、アプリをすばやく作成するのに役立つサンプルを見つけてください。
 
- Visual Studio 2015 は、「 [Visual Studio のダウンロード](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)」からダウンロードしてインストールできます。 インストールプロセスの詳細については、「 [Visual Studio 2015 のインストール](./install/install-visual-studio-2015.md)」を参照してください。
+ Visual Studio 2015 は、「 [Visual Studio のダウンロード](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)」からダウンロードしてインストールできます。 インストールプロセスの詳細については、「 [Visual Studio 2015 のインストール](./install/install-visual-studio-2015.md)」を参照してください。
 
 ## <a name="extend-visual-studio"></a>Visual Studio を拡張する
  独自の Visual Studio 拡張機能を追加して、コーディングの際によく使用するツールまたはスクリプトを含めます。 カスタム メニュー項目とツール ウィンドウを作成し、独自のツールを Visual Studio IDE に統合することができます。 Visual Studio エディターを拡張してコードの分析と修正を行うことも、新しいプロジェクトの種類を追加して必要なものだけを含めることもできます。
@@ -67,14 +67,14 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 ## <a name="connect-your-apps-to-services"></a>アプリをサービスに接続する
  追加の設定なしで以下のサービスに接続できます (各サービスのアカウントを持っていることを前提とします)。
 
-- [Azure モバイル サービス](https://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Azure ストレージ](https://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
 - クラウドに格納されているデータに接続するために、Office 365 REST API を独自のアプリに統合します。 詳細については、 [これらのサンプル](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)を参照してください。
 
 ## <a name="write-great-web-apps-with-aspnet"></a>ASP.NET で優れた Web アプリを作成する
- [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) は、MVC、WebAPI、および SignalR へのメジャー アップデートであり、Windows、Mac、および Linux で実行されます。  ASP.NET 5 は、最新のクラウド ベースの Web アプリとサービスをビルドするための効率的で構成可能な .NET スタックを提供するために、まったく新たに設計されました。
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) は、MVC、WebAPI、および SignalR へのメジャー アップデートであり、Windows、Mac、および Linux で実行されます。  ASP.NET 5 は、最新のクラウド ベースの Web アプリとサービスをビルドするための効率的で構成可能な .NET スタックを提供するために、まったく新たに設計されました。
 
 ## <a name="build-test-and-manage-your-code"></a>コードのビルド、テスト、管理
 
@@ -85,7 +85,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
  [アプリをローカルでビルドし、](./ide/compiling-and-building-in-visual-studio.md) それが正常に機能することを確認します。 [デバッグ ツールを使用して](./debugger/debugging-in-visual-studio.md) 、アプリの問題を修正します。 あるいは、共有ビルド サーバーまたはクラウドにプロジェクトをビルドすることもできます。 チームの開発者がバージョン管理にチェックインしたコードをビルドするよう、ビルド プロセスを自動化します。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。
 
 ### <a name="test-your-app"></a>アプリのテスト
- [単体テストを作成し](./test/unit-test-your-code.md)、アプリの品質を向上させます。 このテストはチェックインするたびに、ビルドの一部として実行できます。
+ [単体テストを作成し](./test/unit-test-your-code.md) 、アプリの品質を向上させます。 このテストはチェックインするたびに、ビルドの一部として実行できます。
 
  アプリの手動テストと自動化されたテストを計画、作成、実行します。 テスト計画、スイート、テスト ケース、テスト結果は、Visual Studio Team Services でクラウドに、または Team Foundation Server でオンプレミスのサーバーに格納されます。 [アプリケーションのテスト](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)について学びます。
 

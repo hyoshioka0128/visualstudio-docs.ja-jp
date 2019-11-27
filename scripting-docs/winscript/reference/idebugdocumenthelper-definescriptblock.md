@@ -58,18 +58,18 @@ HRESULT DefineScriptBlock(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  スマートホストは、ドキュメントに埋め込みスクリプトブロックが含まれている場合に、このメソッドを使用できます。 言語エンジンは、そのコードに他の言語用の埋め込みスクリプトが含まれている場合に、このメソッドを使用できます。  
   
  スクリプトエンジンは、すべての構文の色分けと、スクリプトブロック内のコードコンテキストの参照を担当します。  
   
- @No__t_0 メソッドは、テキストが追加された後 (たとえば、`IDebugDocumentHelper::AddDBCSText` メソッドを使用して)、スクリプトブロックが解析される前に (たとえば、`IActiveScriptParse ::ParseScriptText` メソッドを使用して) 呼び出す必要があります。  
+ `DefineScriptBlock` メソッドは、テキストが追加された後 (たとえば、`IDebugDocumentHelper::AddDBCSText` メソッドを使用して)、スクリプトブロックが解析される前に (たとえば、`IActiveScriptParse ::ParseScriptText` メソッドを使用して) 呼び出す必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

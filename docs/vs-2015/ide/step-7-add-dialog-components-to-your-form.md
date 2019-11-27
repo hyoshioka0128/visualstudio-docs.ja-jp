@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b58f76dc5137ac0e281f109ee78f3ed43f907400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f734c818265d32f6895c09ab01fd2468e0f5a247
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646958"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295681"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>手順 7: フォームへのダイアログ コンポーネントの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "72646958"
 
  コンポーネントは、いくつかの点でコントロールに似ています。 コンポーネントはツールボックスを使用してフォームに追加し、そのプロパティの設定には **[プロパティ]** ウィンドウを使用します。 ただし、コントロールとは異なり、コンポーネントをフォームに追加しても、ユーザーに表示される項目がフォームに追加されるわけではありません。 代わりに、コードで発生させることができる特定の動作が提供されます。 ここで追加するのは、 **[ファイルを開く]** ダイアログ ボックスを開くコンポーネントです。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](http://go.microsoft.com/fwlink/?LinkId=205213)ビデオ3」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 3](http://go.microsoft.com/fwlink/?LinkId=205202)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](https://go.microsoft.com/fwlink/?LinkId=205213)ビデオ3」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 3](https://go.microsoft.com/fwlink/?LinkId=205202)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-add-dialog-components-to-your-form"></a>フォームにダイアログ コンポーネントを追加するには
 

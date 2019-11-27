@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551001"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300586"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>PTVS の概要: Azure での Web サイトの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Azure での Python Web サイトの構築をすばやく開始できます。
   
  これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)で視聴できます。  
   
- [新しいプロジェクト]  ダイアログ ボックスから開始して、Python プロジェクトの下にある Bottle Web プロジェクトを選択します。  この [Bottle](http://bottlepy.org/docs/dev/index.html) テンプレートは、[Bootstrap フレームワーク](http://getbootstrap.com/) に基づくスターター サイトです。  プロジェクトを作成するとき、Visual Studio は、依存関係 (この場合は Bottle) を仮想環境にインストールすることを求めるプロンプトを出します。  Azure Web サイトを配置しているので、サイトの操作に必要なビットを展開するために、依存関係を仮想環境に追加する必要があります。  また、環境を Python 2.7 または 3.4 32 ビットに基づくものにする必要もあります。  プロジェクトを作成した後に、F5 キーを押して、サイトの実行をローカルで開始します。  
+ [新しいプロジェクト] ダイアログ ボックスから開始して、Python プロジェクトの下にある Bottle Web プロジェクトを選択します。  この [Bottle](http://bottlepy.org/docs/dev/index.html) テンプレートは、[Bootstrap フレームワーク](https://getbootstrap.com/) に基づくスターター サイトです。  プロジェクトを作成するとき、Visual Studio は、依存関係 (この場合は Bottle) を仮想環境にインストールすることを求めるプロンプトを出します。  Azure Web サイトを配置しているので、サイトの操作に必要なビットを展開するために、依存関係を仮想環境に追加する必要があります。  また、環境を Python 2.7 または 3.4 32 ビットに基づくものにする必要もあります。  プロジェクトを作成した後に、F5 キーを押して、サイトの実行をローカルで開始します。  
   
  Azure では、サイトの試行が簡単です。  Azure サブスクリプションがない場合は、[try.azurewebsites.net](https://trywebsites.azurewebsites.net/) を使用できます。  このサイトは、ソーシャル ログインのみを使用して、Azure Web サイトを一度に 1 時間だけ試行するための簡単な方法を提供します。  クレジット カードは必要ありません。  [Change Language] ドロップダウンで [Empty Site] テンプレートを選択し、[Create] を選択します。  [Work with your web application] の下の [Download Publishing Profile] を選択して、Visual Studio で使用するファイルを保存します。  また、任意のオペレーティング システムから Git を使用して展開することもできます。  
   

@@ -1,5 +1,5 @@
 ---
-title: WPF コントロールを dataset にバインドする |Microsoft Docs
+title: Bind WPF controls to a dataset | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70dfaa5671f589c02560a554a6d50611c5364c82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651187"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299418"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "72651187"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](http://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
+- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 You can download the AdventureWorksLT database from the [CodePlex Web site](https://go.microsoft.com/fwlink/?linkid=87843).
 
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- データセットおよび TableAdapter。 詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」を参照してください。
+- データセットおよび TableAdapter。 For more information, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-- WPF デザイナーの操作。 詳細については、「 [WPF と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)」を参照してください。
+- WPF デザイナーの操作。 For more information, see [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
 - WPF データ バインディング。 詳しくは、「[データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
 
@@ -70,11 +70,11 @@ ms.locfileid: "72651187"
 
 4. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。
 
-5. **[名前]** ボックスに「`AdventureWorksProductsEditor`」と入力し、[ **OK]** をクリックします。
+5. In the **Name** box, type `AdventureWorksProductsEditor` and click **OK**.
 
-     Visual Studio によって `AdventureWorksProductsEditor` プロジェクトが作成されます。
+     Visual Studio creates the `AdventureWorksProductsEditor` project.
 
-## <a name="create-a-dataset-for-the-application"></a>アプリケーションのデータセットを作成する
+## <a name="create-a-dataset-for-the-application"></a>Create a dataset for the application
  データ バインド コントロールを作成するには、まず、アプリケーション用のデータ モデルを定義し、 **[データ ソース]** ウィンドウに追加する必要があります。 このチュートリアルでは、データ モデルとして使用するデータセットを作成します。
 
 #### <a name="to-create-a-dataset"></a>データセットを作成するには
@@ -103,20 +103,20 @@ ms.locfileid: "72651187"
 
 8. **[完了]** をクリックします。
 
-     Visual Studio によって新しい Adventureworksltdataset.xsd ファイルがプロジェクトに追加され、対応する**adventureworksltdataset.xsd**項目が **[データソース]** ウィンドウに追加されます。 AdventureWorksLTDataSet.xsd ファイルには、`AdventureWorksLTDataSet` という名前の型指定されたデータセットと、`ProductTableAdapter` という名前の TableAdapter が定義されます。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
+     Visual Studio adds a new AdventureWorksLTDataSet.xsd file to the project, and it adds a corresponding **AdventureWorksLTDataSet** item to the **Data Sources** window. AdventureWorksLTDataSet.xsd ファイルには、`AdventureWorksLTDataSet` という名前の型指定されたデータセットと、`ProductTableAdapter` という名前の TableAdapter が定義されます。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
 
 9. プロジェクトをビルドします。
 
-## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>TableAdapter の既定の fill メソッドを編集する
+## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Edit the default fill method of the TableAdapter
  データセットにデータを読み込むには、`Fill` の `ProductTableAdapter` メソッドを使用します。 既定では、`Fill` メソッドによって、`ProductDataTable` の `AdventureWorksLTDataSet` に Product テーブルのすべてのデータ行が読み込まれます。 このメソッドは、行のサブセットのみを返すように変更できます。 このチュートリアルでは、写真付きの製品の行のみを返すように `Fill` メソッドを変更します。
 
 #### <a name="to-load-product-rows-that-have-photos"></a>写真付きの製品の行を読み込むには
 
-1. **ソリューションエクスプローラー**で、adventureworksltdataset.xsd ファイルをダブルクリックします。
+1. In **Solution Explorer**, double-click the AdventureWorksLTDataSet.xsd file.
 
      データセット デザイナーが開きます。
 
-2. デザイナーで、 **Fill、GetData ()** クエリを右クリックし、 **[構成]** を選択します。
+2. In the designer, right-click the **Fill,GetData()** query and select **Configure**.
 
      **TableAdapter 構成**ウィザードが開きます。
 
@@ -128,12 +128,12 @@ ms.locfileid: "72651187"
 
 4. **[完了]** をクリックします。
 
-## <a name="define-the-user-interface"></a>ユーザーインターフェイスを定義する
+## <a name="define-the-user-interface"></a>Define the user interface
  WPF デザイナーで XAML を変更して、いくつかのボタンをウィンドウに追加します。 これらのボタンを使用して製品レコード間をスクロールしたり、製品レコードへの変更を保存したりできるようにするコードは、このチュートリアルで後で追加します。
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>ウィンドウのユーザー インターフェイスを定義するには
 
-1. **ソリューションエクスプローラー**で、mainwindow.xaml をダブルクリックします。
+1. In **Solution Explorer**, double-click MainWindow.xaml.
 
      WPF デザイナーでウィンドウが開きます。
 
@@ -151,8 +151,8 @@ ms.locfileid: "72651187"
 
 3. プロジェクトをビルドします。
 
-## <a name="createdata-bound-controls"></a>Createdata バインドコントロール
- **[データソース]** ウィンドウから WPF デザイナーに `Product` テーブルをドラッグして、顧客レコードを表示するコントロールを作成します。
+## <a name="createdata-bound-controls"></a>Createdata-bound controls
+ Create controls that display customer records by dragging the `Product` table from the **Data Sources** window to the WPF Designer.
 
 #### <a name="to-create-data-bound-controls"></a>データ バインド コントロールを作成するには
 
@@ -179,22 +179,22 @@ ms.locfileid: "72651187"
 
 5. **[データ ソース]** ウィンドウから、ボタンがある行の下のグリッド行に **[Product]** ノードをドラッグします。
 
-     Visual Studio によって、**Product** テーブルのデータにバインドされるコントロール セットを定義する XAML が生成されます。 また、データを読み込むコードも生成されます。 生成される XAML とコードの詳細については、「 [Visual Studio でのデータへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)」を参照してください。
+     Visual Studio によって、**Product** テーブルのデータにバインドされるコントロール セットを定義する XAML が生成されます。 また、データを読み込むコードも生成されます。 For more information about the generated XAML and code, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
 6. デザイナーで、 **[Product ID]** ラベルの横のテキスト ボックスをクリックします。
 
 7. **[プロパティ]** ウィンドウで、**IsReadOnly** プロパティの横のチェック ボックスをオンにします。
 
-## <a name="navigating-product-records"></a>製品レコードの移動
+## <a name="navigating-product-records"></a>Navigating product records
  ユーザーが **[\<]** ボタンと **[>]** ボタンを使用して製品レコード間をスクロールできるようにするコードを追加します。
 
 #### <a name="to-enable-users-to-navigate-product-records"></a>ユーザーが製品レコード間を移動できるようにするには
 
 1. デザイナーで、ウィンドウ サーフェイスの **[<]** をダブルクリックします。
 
-     Visual Studio によって分離コード ファイルが開かれ、<xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベントのために新しい `backButton_Click` イベント ハンドラーが作成されます。
+     Visual Studio によって分離コード ファイルが開かれ、`backButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。
 
-2. `Window_Loaded` イベント ハンドラーを変更して、`ProductViewSource`、`AdventureWorksLTDataSet`、`AdventureWorksLTDataSetProductTableAdapter` がメソッドの外部になり、フォーム全体からアクセスできるようにします。 これらのをフォームに対してグローバルに宣言し、次のような `Window_Loaded` イベントハンドラー内でそれらを割り当てます。
+2. `Window_Loaded` イベント ハンドラーを変更して、`ProductViewSource`、`AdventureWorksLTDataSet`、`AdventureWorksLTDataSetProductTableAdapter` がメソッドの外部になり、フォーム全体からアクセスできるようにします。 Declare only these to be global to the form, and assign them within the `Window_Loaded` event handler similar to the following:
 
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]
@@ -211,7 +211,7 @@ ms.locfileid: "72651187"
      [!code-csharp[Data_WPFDATASET#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]
 
-## <a name="savechanges-to-product-records"></a>Savechanges から製品レコードへ
+## <a name="savechanges-to-product-records"></a>Savechanges to product records
  ユーザーが **[変更の保存]** ボタンを使用して製品レコードへの変更を保存できるようにするコードを追加します。
 
 #### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>製品レコードへの変更を保存する機能を追加するには
@@ -226,7 +226,7 @@ ms.locfileid: "72651187"
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]
 
     > [!NOTE]
-    > この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 詳細については、「 [TableAdapterManager の概要](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)」を参照してください。
+    > この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 For more information, see [TableAdapterManager Overview](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  アプリケーションをビルドして実行します。 製品レコードを表示および更新できることを確認します。
@@ -249,12 +249,12 @@ ms.locfileid: "72651187"
 
 5. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了した後、関連する次のタスクを実行できます。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、「 [WCF データサービスへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」を参照してください。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 For more information, see [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル:WPF アプリケーションでの関連データの表示 ](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 For more information, see [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>関連項目
- Visual studio[でのデータへの wpf コントロール](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)のバインド visual studio でのデータ[への wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [Wpf と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)[データバインディング](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)の概要
+## <a name="see-also"></a>参照
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

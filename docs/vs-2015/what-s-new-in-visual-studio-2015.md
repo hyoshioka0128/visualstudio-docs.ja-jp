@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 469405515b7cc0ebe615dc821ebfa5ddb7258468
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672093"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297565"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -72,8 +72,8 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
  これらの [ユニバーサル Windows アプリ](https://msdn.microsoft.com/library/dn975273.aspx)を作成するには、C#、Visual Basic、C++、または JavaScript を使用します。
 
-### <a name="web"></a>Web
- ASP.NET 5 は、MVC、WebAPI、および SignalR へのメジャー アップデートであり、Windows、Mac、および Linux で実行されます。  ASP.NET 5 は、最新のクラウド ベースのアプリをビルドするための効率的で構成可能な .NET スタックを提供するために、まったく新たに設計されました。 Visual Studio 2015 ツーリングは、Bower や Grunt などの一般的な Web 開発ツールと、より緊密に統合されています。 開始するには、「  [NET Web Development and Tools Blog](http://blogs.msdn.com/b/webdev/)」にある多くのブログ投稿を参照してください。
+### <a name="web"></a>[Web]
+ ASP.NET 5 は、MVC、WebAPI、および SignalR へのメジャー アップデートであり、Windows、Mac、および Linux で実行されます。  ASP.NET 5 は、最新のクラウド ベースのアプリをビルドするための効率的で構成可能な .NET スタックを提供するために、まったく新たに設計されました。 Visual Studio 2015 ツーリングは、Bower や Grunt などの一般的な Web 開発ツールと、より緊密に統合されています。 開始するには、「  [NET Web Development and Tools Blog](https://devblogs.microsoft.com/aspnet/)」にある多くのブログ投稿を参照してください。
 
 ### <a name="classic-desktop-and-windows-store"></a>クラシック デスクトップと Windows ストア
  Visual Studio 2015 は引き続きクラシック デスクトップと Windows ストアの開発をサポートします。 Windows の進展に伴って、Visual Studio も進化を遂げています。  Visual Studio 2015 では、.NET や C++ のライブラリや言語が著しく改良され、Windows のすべてのバージョンに適用されるようになりました。
@@ -87,12 +87,12 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
  C# 言語と Visual Basic 言語には、両方ともコア言語と IDE サポートに多数の小さな改良が見られます。 それらの改良のすべてにより、.NET のコーディング作業がさらに便利かつ直感的になり、生産性が向上します。
 
- 詳細については、「[新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)」および「 [.net ブログ](http://blogs.msdn.com/b/dotnet/)」を参照してください。
+ 詳細については、「[新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)」および「 [.net ブログ](https://devblogs.microsoft.com/dotnet/)」を参照してください。
 
 #### <a name="c"></a>C++
  Visual C++ は、C++11/14 言語への準拠、クロス プラットフォーム モバイル デバイス用開発のサポート、再利用可能関数および await (現在 C++17 での標準化に向けて検討中) のサポート、C ランタイム ライブラリ (CRT) および C++ 標準ライブラリ (STL) の実装における数々の改良とバグ修正、MFC でのサイズ変更可能なダイアログ、コンパイラの新しい最適化機能、ビルド パフォーマンスの改善、新しい診断機能、コード エディターでの新たな生産性向上ツールの点で大きく前進しています。
 
- 詳細については、「 [ C++ visual の新機能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)」および「 [ C++ビジュアルブログ](http://blogs.msdn.com/b/vcblog/)」を参照してください。
+ 詳細については、「 [ C++ visual の新機能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)」および「 [ C++ビジュアルブログ](https://devblogs.microsoft.com/cppblog/)」を参照してください。
 
 ## <a name="device-preview-menu-bar"></a>[デバイスのプレビュー] メニュー バー
  ユニバーサル Windows プラットフォーム プロジェクトでは、[デバイスのプレビュー] メニュー バーを使用して、XAML ベースの UI がさまざまな画面サイズでどのように表示されるかを確認できます。
@@ -107,7 +107,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
 1. Azure モバイル サービス
 
-2. Azure ストレージ
+2. Azure Storage
 
 3. Office 365 (メール、連絡先、カレンダー、ファイル、ユーザーおよびグループ)
 
@@ -121,7 +121,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
  XAML ユーザー インターフェイスを設計するための Blend の機能が大幅に強化されました。 Blend が完全に再設計されたことにより、より直感的な UI が提供され、IntelliSense などの XAML 編集機能が強化され、Visual Studio との統合性が向上しました。 詳細については、[Visual Studio および Blend for Visual Studio での XAML デザインに関する記事](./designers/designing-xaml-in-visual-studio.md)を参照してください。
 
 ## <a name="cross-platform-debugging-support"></a>クロスプラットフォームのデバッグのサポート
- Visual Studio を使用して、Windows、iOS、Android の各デバイスで実行されるネイティブ モバイル アプリを作成、デバッグすることができます。 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)を使用するか、またはデバイスを接続し、Visual Studio で直接コードをデバッグします。
+ Visual Studio を使用して、Windows、iOS、Android の各デバイスで実行されるネイティブ モバイル アプリを作成、デバッグすることができます。 [Visual Studio Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)を使用するか、またはデバイスを接続し、Visual Studio で直接コードをデバッグします。
 
 - **JavaScript / Cordova**。 JavaScript で Windows、iOS、Android のネイティブ アプリを作成するには、 [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) を使用します。
 
@@ -129,7 +129,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
 - **C# / Xamarin**。 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
 
-     デバッグ機能については、[Xamarin 開発者ガイド](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) の「 [Debugging](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) 」 (iOS) および「 [Debug on Device](http://developer.xamarin.com/guides) 」で説明されています。
+     デバッグ機能については、[Xamarin 開発者ガイド](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) の「 [Debugging](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) 」 (iOS) および「 [Debug on Device](https://docs.microsoft.com/xamarin/) 」で説明されています。
 
 - **C++ / Android**。 [Visual C for Cross-platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) テンプレートを [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) などのサード パーティ製ツールとともに使用して、Windows および Android のネイティブ アプリを作成します。
 
@@ -140,13 +140,13 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 次に示すのは、コードに対して異なる種類の診断および分析を実行する新しいツールまたは機能強化されたツールです。
 
 ### <a name="perftips"></a>パフォーマンスのヒント
- パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 開始するには、「 [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)」を参照してください
+ パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 開始するには、「 [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)」を参照してください
 
 ### <a name="error-list"></a>エラー一覧
  エラー一覧はあらゆる列のフィルター処理をサポートするようになりました。 また入力時の C# または Visual Basic ソリューション全体におけるエラー、警告、コード分析を、コードの変更によって大量の警告が発生したとしてもライブで表示します。 新しいエラー一覧は既存の使用方法と後方互換性があります。 詳細については、「 [Error List Window](./ide/reference/error-list-window.md)」を参照してください。
 
 ### <a name="gpu-usage-tool"></a>GPU 使用率ツール
- GPU 使用率ツールは、DirectX アプリやゲームの GPU 使用率データの収集と分析、およびパフォーマンスのボトルネックが CPU または GPU で発生したかどうかをトラブルシューティングするのに役立ちます。 このツールを開始するには、 [Visual C チーム ブログの投稿](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)を参照してください。
+ GPU 使用率ツールは、DirectX アプリやゲームの GPU 使用率データの収集と分析、およびパフォーマンスのボトルネックが CPU または GPU で発生したかどうかをトラブルシューティングするのに役立ちます。 このツールを開始するには、 [Visual C チーム ブログの投稿](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)を参照してください。
 
 ## <a name="live-code-analysis-light-bulbs"></a>ライブ コード分析 (電球)
  C# および Visual Basic 用の新しい Roslyn コンパイラが提供するのはコンパイル時間の短縮だけではありません。ライブ コード分析などのまったく新しいシナリオが可能になります。これにより、入力時に豊富でカスタマイズ可能なフィードバックや提案が直接コード エディター内で提供されます。 Visual Studio 2015 では、キーボードを使用すると電球が左マージンに表示され、エラーの上にマウス ポインターを置くとツール ヒントが表示されます。 電球は、コンパイラが (おそらくカスタム規則セットを使用して) コード内の問題を検出し、その問題を修正する方法に関する提案があることをリアルタイムで表示します。 電球が表示された場合は、クリックしてアクション可能な提案を確認します。
@@ -177,7 +177,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
  ![Visual Studio のカスタムレイアウトメニュー項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>通知ハブ
- スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳細については、「 [Visual Studio の通知](./ide/visual-studio-notifications.md)」を参照してください。
+ スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳しくは、「[Visual Studio の通知](./ide/visual-studio-notifications.md)」をご覧ください。
 
 ### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: コードに何が起こったかを検索します (Enterprise Edition と Professional Edition のみ)。
  エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 Visual Studio Team Services (VSTS) または Team Foundation Server (TFS) に格納されているコードについて、作業項目、バグ、コード レビューなどの変更やその他の履歴を確認できます。
@@ -252,19 +252,19 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
  タイトル バーにある黄色の笑顔マークをクリックして、感想を記入した後、 **[気に入った機能の報告]** ボタンをクリックするだけです。
 
- それで完了です! お送りいただいたフィードバックは、該当するチームに送られます。受け取ったチームにとって、それは大いに励みとなり、担当者はご要望に応えるさらに良い方法を考えることにとりかかることでしょう。
+ 入力が完了しました。 お送りいただいたフィードバックは、該当するチームに送られます。受け取ったチームにとって、それは大いに励みとなり、担当者はご要望に応えるさらに良い方法を考えることにとりかかることでしょう。
 
 ### <a name="send-a-frown"></a>問題点、改善点の報告
  製品のどこをどう改善したらよいかについてご意見をお寄せいただくなら、今後の作業においてお客様が最も気にかけておられる点を優先的に取り上げることができます。 何か気になる点がありましたら、IDE の中から直接に **[問題点、改善点の報告]** 機能を使用してご報告ください。 そのプロセスも極めてシンプルなものにしてあります。
 
- タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳細については、「 [Talk to Us](./ide/talk-to-us.md)」を参照してください。
+ タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳しくは、「[ご意見](./ide/talk-to-us.md)」をご覧ください。
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>クラッシュ、ハング、パフォーマンスの問題についての報告
  気になる点のちょっとしたメモでは済ませられない問題が発生するかもしれません。 ハング、クラッシュ、あるいはパフォーマンスに関する問題が発生した場合は、問題点、改善点の報告をした後に表示されるダイアログを使用することによって、簡単な操作でその再現手順、クラッシュ ダンプ、トレース ファイルをお送りいただくことが可能です。
 
  まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、「 [Visual Studio の気に入った機能の報告](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio における Xamarin を使用したネイティブ UI を備えたアプリの作成](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

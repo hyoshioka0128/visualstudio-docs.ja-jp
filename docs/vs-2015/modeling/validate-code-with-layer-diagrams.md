@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 45aa7c9807ba08751a354c336b646aa7f7ce641b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659390"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301351"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>レイヤー図を使用したコードの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "72659390"
 
   この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](http://go.microsoft.com/fwlink/?LinkID=252073)参照してください。
+  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](https://go.microsoft.com/fwlink/?LinkID=252073)参照してください。
 
 > [!IMPORTANT]
 > Team Foundation ビルドを使用してレイヤー検証を実行する場合は、ビルド サーバーに同じバージョンの Visual Studio をインストールすることも必要です。
@@ -99,7 +99,7 @@ ms.locfileid: "72659390"
 2. 各エラーのソースを表示するには、 **[エラー一覧]** ウィンドウでエラーをダブルクリックします。
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コードマップの詳細については、「[ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] には、エラーの原因ではなくコードマップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コードマップの詳細については、「[ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。
 
 3. エラーを管理するには、「[検証エラーの管理](#ManageErrors)」を参照してください。
 
@@ -137,7 +137,7 @@ ms.locfileid: "72659390"
      msbuild /p:ValidateArchitecture=true
      ```
 
-     発生したすべてのエラーが表示されます。 @No__t_0 の詳細については、「 [msbuild](../msbuild/msbuild.md)と[msbuild タスク](../msbuild/msbuild-task.md)」を参照してください。
+     発生したすべてのエラーが表示されます。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]の詳細については、「 [msbuild](../msbuild/msbuild.md)と[msbuild タスク](../msbuild/msbuild-task.md)」を参照してください。
 
    検証エラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。
 
@@ -195,7 +195,7 @@ ms.locfileid: "72659390"
 
     `/p:ValidateArchitecture=true`
 
-   検証エラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。
+   検証エラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]の詳細については、以下のページを参照してください。
 
 - [アプリケーションのビルド](/azure/devops/pipelines/index)
 
@@ -243,5 +243,5 @@ ms.locfileid: "72659390"
 
 ## <a name="security"></a>セキュリティ
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)

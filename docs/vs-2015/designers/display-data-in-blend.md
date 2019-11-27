@@ -9,19 +9,19 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa084ee92d7e262cb04661b4bbf26eefb74b9e06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ed51eaef8594695d4d594401ab9375563525b10
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294572"
 ---
 # <a name="display-data-in-blend"></a>Blend におけるデータの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ページのレイアウトをカスタマイズする際、デザイナーでサンプル データを表示できます。 サンプル データは最初から、または既存のクラスを使用して生成できます。 また、アプリの実行時にアプリに表示される *ライブ データ* にも接続できます。
 
- **このトピックの内容**
+ **このトピックの内容:**
 
 - [サンプル データの生成](#Scratch)
 
@@ -42,7 +42,7 @@ ms.locfileid: "72664665"
 
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")
 
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[サンプルデータをゼロから作成](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)します。
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[サンプルデータをゼロから作成](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)します。
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend を使用したデータバインドの混在](https://www.youtube.com/watch?v=LSwPB6CAvjg)
 
@@ -51,7 +51,7 @@ ms.locfileid: "72664665"
 
  クラスからサンプルデータを生成するには、XAML ドキュメントを開き、 **[データ]** パネルで [**サンプルデータ**![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "作成 30540d76-7256-43ce-b5d9-4b2edf3d339f")の作成] ボタンをクリックし、 **[クラスからサンプルデータを作成]** をクリックします。
 
- **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[クラスからサンプルデータを作成](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)する
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[クラスからサンプルデータを作成](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)する
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend を使用したデータバインドの混在](https://www.youtube.com/watch?v=LSwPB6CAvjg)
 
@@ -61,5 +61,5 @@ ms.locfileid: "72664665"
 ## <a name="LiveStore"></a> ストアまたは Phone アプリでライブ データを表示する
  「 [データとファイルの操作 (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

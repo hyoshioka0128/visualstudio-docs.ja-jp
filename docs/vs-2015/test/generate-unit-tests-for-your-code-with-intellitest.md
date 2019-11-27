@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7b3d6a3cdb6eefd27f391dbe68a45ec3824b7de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f03490fc7ea3513a006254e3931cc1113f3bc159
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660558"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302587"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>IntelliTest でのコードの単体テストの生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,11 +127,11 @@ IntelliTest はテスト データおよび単体テストのスイートを生�
  ![MSTest の既定値を使用して IntelliTest を作成する](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q: IntelliTest で他の単体テスト フレームワークを使用することはできますか。
- **A:** はい。以下の手順に従って、 [他のフレームワークを検索してインストール](../test/install-third-party-unit-test-frameworks.md)してください。 その後、Visual Studio を再起動し、ソリューションを再度開いてクラスまたはメソッドを右クリックし、 **[IntelliTest の作成]** を選択します。 インストールしたフレームワークを選択します。
+ **A:** はい。以下の手順に従って、[他のフレームワークを検索してインストール](../test/install-third-party-unit-test-frameworks.md)してください。 その後、Visual Studio を再起動し、ソリューションを再度開いてクラスまたはメソッドを右クリックし、 **[IntelliTest の作成]** を選択します。 インストールしたフレームワークを選択します。
 
  ![IntelliTest の他の単体テストフレームワークを選択する](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
 
  これで、IntelliTest を実行すると、個々の単体テストが対応する g.cs ファイル内に生成されます。
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q: テストの生成方法に関してさらに調べることができますか。
- **A:** はい。概要については、この [ブログ投稿](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)を読んでください。
+ **A:** はい。概要については、この [ブログ投稿](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)を読んでください。

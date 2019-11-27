@@ -39,13 +39,13 @@ HRESULT onComplete();
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、式の評価が完了したときに呼び出されます。 @No__t_0 メソッドは、このイベントハンドラー内から呼び出すことができます。  
+## <a name="remarks"></a>コメント  
+ このメソッドは、式の評価が完了したときに呼び出されます。 `IDebugExpression::GetResultAsString` メソッドは、このイベントハンドラー内から呼び出すことができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugExpressionCallBack インターフェイス](../../winscript/reference/idebugexpressioncallback-interface.md)   
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

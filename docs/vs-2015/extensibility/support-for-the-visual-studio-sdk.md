@@ -14,56 +14,56 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e404d569776eef1cd2146ed636177be30151aaab
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688733"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299739"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK のサポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-さまざまなサポート オプション、Visual Studio 統合開発環境 (IDE) を拡張する方法についての質問をお持ちのお客様に利用できます。  
+Visual Studio 統合開発環境 (IDE) を拡張する方法について質問があるお客様には、いくつかのサポートオプションが用意されています。  
   
-## <a name="free-support"></a>無料のサポート  
+## <a name="free-support"></a>無料サポート  
   
-### <a name="msdn-development-center"></a>MSDN デベロッパー センター  
- [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?LinkID=84381) MSDN の Visual Studio を拡張する方法について質問に答えるに役立つリソースが含まれています。 たとえば、VSIP 開発者のブログをいくつかのリンクがあります。  
+### <a name="msdn-development-center"></a>MSDN 開発センター  
+ MSDN の[Visual Studio 機能拡張デベロッパーセンター](https://go.microsoft.com/fwlink/?LinkID=84381)には、visual studio の拡張方法に関する質問に回答するためのリソースが含まれています。 たとえば、VSIP 開発者向けブログへのリンクがいくつかあります。  
   
-### <a name="microsoft-newsgroups"></a>マイクロソフトのニュースグループ  
- Visual Studio の開発チームと Visual Studio を拡張する多くの場合、他の開発者のメンバーは、microsoft.public.vstudio.extensibility ニュースグループに参加します。 このニュースグループでは、管理ニュースグループです。 MSDN Universal サブスクリプション会員の場合は、対応する Microsoft が可能にアンチ スパム エイリアスを登録することを確認します。  
+### <a name="microsoft-newsgroups"></a>Microsoft ニュースグループ  
+ Visual studio 開発チームのメンバー、および Visual Studio を拡張するその他の開発者のメンバーは、多くの場合、microsoft. public. vstudio の機能拡張ニュースグループに参加します。 このニュースグループは、管理されたニュースグループです。 MSDN ユニバーサルサブスクライバーの場合は、Microsoft が応答できるように、スパムなしのエイリアスを登録するようにしてください。  
   
 ### <a name="msdn-forums"></a>MSDN フォーラム  
- [MSDN フォーラム](http://go.microsoft.com/fwlink/?LinkID=76632)同僚や専門家とチャットする別の方法を提供します。 フォーラムのグラフィカル ユーザー インターフェイス (UI) はニュースグループよりも使いやすくために設計されています。 [Visual Studio 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=121964)機能拡張の質問に対する回答の検索を開始することをお勧めします。 他のユーザーが既にが同じ質問があるために、質問を投稿する前に、常に検索します。  
+ [MSDN フォーラム](https://go.microsoft.com/fwlink/?LinkID=76632)では、仲間や専門家とチャットする別の方法が提供されています。 フォーラムのグラフィカルユーザーインターフェイス (UI) は、ニュースグループよりも使いやすくするように設計されています。 [Visual Studio 機能拡張フォーラム](https://go.microsoft.com/fwlink/?LinkID=121964)は、拡張性に関する質問への回答の検索を開始するのに最適な場所です。 他のユーザーが既に同じ質問をしている可能性があるため、質問する前に必ず検索してください。  
   
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
- [Visual Studio Marketplace](https://marketplace.visualstudio.com/)は拡張機能とサンプル コードの場所です。 ユーザー、生産性を向上させるツールが Visual Studio、Vspackage と Managed Extensibility Framework (MEF) およびその他のサンプルを使用する方法を示すサンプル アプリケーションを使用したエクスペリエンスを見つけることができます。  
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com/)は、拡張機能とサンプルコードを格納する場所です。 Visual Studio での生産性とユーザーエクスペリエンスを向上させるツール、Vspackage と Managed Extensibility Framework (MEF) の使用方法を示すサンプルアプリケーション、およびその他の種類のサンプルが用意されています。  
   
 ### <a name="codeplex"></a>Codeplex  
- [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) Microsoft オープン ソース プロジェクト ホスティング Web サイトです。 CodePlex を使用すると、作成し、新しいプロジェクトを共有、既存のプロジェクトに関与またはサイトのアプリケーションの使用およびフィードバックを提供することができます。 以前のバージョンに含まれるすべての Powertoy (およびそのドキュメント)、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]は codeplex から入手できるようになりました。  
+ [CodePlex](https://go.microsoft.com/fwlink/?LinkId=76627)は、Microsoft オープンソースのプロジェクトホスティング Web サイトです。 CodePlex を使用して、新しいプロジェクトの作成と共有、既存のプロジェクトへの貢献、サイトでのアプリケーションの使用、フィードバックの提供を行うことができます。 以前のバージョンの [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] に含まれていたすべての Powertoy (およびそのドキュメント) は、CodePlex で入手できるようになりました。  
   
-## <a name="included-support"></a>対象のサポート  
+## <a name="included-support"></a>含まれるサポート  
   
-### <a name="visual-studio-product-support"></a>Visual Studio 製品のサポート  
- 一部のサポートがの購入時に含まれる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]製品です。 詳細については、次を参照してください。 [Visual Studio サポート](https://msdn.microsoft.com/vstudio/cc136615.aspx)します。 Microsoft の管理に関する質問に回答する専用のサポート チーム[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]機能拡張。  
+### <a name="visual-studio-product-support"></a>Visual Studio 製品サポート  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 製品の購入には、一部のサポートが含まれています。 詳細については、「 [Visual Studio のサポート](https://msdn.microsoft.com/vstudio/cc136615.aspx)」を参照してください。 Microsoft は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 機能拡張に関する質問に回答する専用サポートチームを管理しています。  
   
 ### <a name="msdn-subscription-support"></a>MSDN サブスクリプションのサポート  
- MSDN サブスクリプションのパッケージは、一部のサポートを含めることもできます。 詳細については、次を参照してください。 [MSDN サブスクリプション会員のサポート](https://msdn.microsoft.com/subscriptions/aa718661.aspx)します。  
+ MSDN サブスクリプションパッケージには、いくつかのサポートが含まれる場合もあります。 詳細については、「 [MSDN サブスクライバーサポート](https://msdn.microsoft.com/subscriptions/aa718661.aspx)」を参照してください。  
   
-## <a name="paid-support"></a>有料のサポート  
+## <a name="paid-support"></a>有料サポート  
   
-### <a name="developer-tools-support"></a>開発者ツールのサポート  
- サポートを購入することもできます。 [開発者ツール] カテゴリで利用にはさまざまなサポート プランは[Microsoft ヘルプとサポート センター](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8)します。  
+### <a name="developer-tools-support"></a>開発者ツールサポート  
+ サポートを購入することもできます。 [Microsoft ヘルプとサポートセンター](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8)の「開発者ツール」カテゴリには、さまざまなサポートオファリングが用意されています。  
   
- 使用する必要があるお客様、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]を複雑なパッケージを開発することが検討 Microsoft と Premier サポート契約を購入します。 詳細については、次を参照してください。 [Microsoft Premier サポート](https://support.microsoft.com/premier)します。 小規模企業にとって、 [Advanced Support for Partners](https://partner.microsoft.com/support/advanced-cloud-support)従来の Premier サポート サービスに代わる魅力的な場合があります。  
+ [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] を使用して複雑なパッケージを開発する場合は、Microsoft との Premier サポート契約を購入することを検討してください。 詳細については、「 [Microsoft Premier サポート](https://support.microsoft.com/premier)」を参照してください。 中小企業にとって、[パートナー向けの高度なサポート](https://partner.microsoft.com/support/advanced-cloud-support)は、従来の Premier サポートオファリングの魅力的な選択肢となる場合があります。  
   
 > [!NOTE]
-> 相談やアドバイスを得る、standard サポートを使用できません。  
+> 標準サポートを使用して相談したりアドバイスを取得したりすることはできません。  
   
- VSIP プログラムと組み合わせて Premier サポート プランに関する質問に送信できる[ vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com)します。 新しいパートナーを利用プログラムに関する質問を送信できる[ advantg@microsoft.com](mailto:advantg@microsoft.com)します。  
+ VSIP プログラムと共に Premier サポートオファリングに関する質問は、 [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com)に送信できます。 新しいパートナーアドバンテージプログラムに関する質問は、 [advantg@microsoft.com](mailto:advantg@microsoft.com)に送信できます。  
   
- 個別のサポートの要求に関する情報をご覧[個々 のサポート要求](http://go.microsoft.com/fwlink/?LinkID=82385)します。  
+ 個々のサポートリクエストに関する情報は、[個々のサポートリクエスト](https://go.microsoft.com/fwlink/?LinkID=82385)に記載されています。  
   
 ## <a name="see-also"></a>関連項目  
  [ご意見](../ide/talk-to-us.md)

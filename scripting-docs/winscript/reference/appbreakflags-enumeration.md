@@ -35,10 +35,10 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>メンバー  
   
-|メンバー|[値]|説明|  
+|メンバー|値|説明|  
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|言語エンジンは、BREAKREASON_DEBUGGER_BLOCK を持つすべてのスレッドですぐに中断する必要があります。|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|言語エンジンは、BREAKREASON_DEBUGGER_HALT を使用してすぐに中断する必要があります。|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|言語エンジンは、BREAKREASON_DEBUGGER_HALT ですぐに中断する必要があります。|  
 |APPBREAKFLAG_STEP|0x00010000|言語エンジンは、BREAKREASON_STEP を使用して、ステップ実行スレッドですぐに中断する必要があります。|  
 |APPBREAKFLAG_NESTED|0x00020000|アプリケーションは、ブレークポイントで入れ子になって実行されています。|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|デバッガーは、ソースレベルでステップ実行しています。|  
@@ -47,9 +47,9 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 |APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|ステップの種類をファクタリングするマスク。|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|ブレークポイントが進行中です。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  フラグによっては、次の機会に言語エンジンを中断するように指定し、他のフラグはデバッガーのステップ実行モードを指定します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [アクティブスクリプトデバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON 列挙型](../../winscript/reference/breakreason-enumeration.md)

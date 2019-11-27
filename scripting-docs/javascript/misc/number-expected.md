@@ -28,6 +28,6 @@ ms.locfileid: "72573755"
   
 - **Number**型のオブジェクトに対してのみ、 **number. prototype. toString**メソッドまたは**number. prototype**メソッドを呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Number オブジェクト](../../javascript/reference/number-object-javascript.md)   
  [number プロパティ (Error)](../../javascript/reference/number-property-error-javascript.md)

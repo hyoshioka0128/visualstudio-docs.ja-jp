@@ -42,13 +42,13 @@ HRESULT RemoveGlobalExpressionContextProvider(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 メソッドは、このアプリケーションからグローバル式コンテキストプロバイダーを削除します。  
+## <a name="remarks"></a>コメント  
+ `RemoveGlobalExpressionContextProvider` メソッドは、このアプリケーションからグローバル式コンテキストプロバイダーを削除します。  
   
-## <a name="see-also"></a>関連項目  
- [IDebugApplication:: Addglobal式 Contextprovider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)    
+## <a name="see-also"></a>参照  
+ [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)

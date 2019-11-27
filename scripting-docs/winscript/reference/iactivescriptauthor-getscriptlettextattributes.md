@@ -44,7 +44,7 @@ HRESULT GetScriptletTextAttributes(
  [in、size_is (`cch`)]スクリプトレットのテキスト。 この文字列は null で終了する必要はありません。  
   
  `cch`  
- から@No__t_0 パラメーターと `pattr` パラメーターに使用されるサイズ。  
+ から`pszCode` パラメーターと `pattr` パラメーターに使用されるサイズ。  
   
  `pszDelimiter`  
  からスクリプトレットの末尾の区切り記号のアドレス。 テキストのストリームから `pszCode` を解析する場合、ホストは通常、スクリプトレットの末尾を検出するために区切り記号 (2 つの単一引用符など) を使用します。 スクリプトレットの末尾を識別するために区切り記号を使用しない場合は、このパラメーターを NULL に設定します。  
@@ -52,7 +52,7 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  からスクリプトレットのテキスト属性に関連付けられているフラグ。 には、次の値の組み合わせを指定できます。  
   
-|定数|[値]|説明|  
+|定数|値|説明|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|SOURCETEXT_ATTR_IDENTIFIER 属性を持つ識別子を識別し、SOURCETEXT_ATTR_MEMBERLOOKUP 属性を持つドット演算子を識別します。|  
 |GETATTRFLAG_THIS|0x0100|SOURCETEXT_ATTR_THIS 属性を持つ現在のオブジェクトを識別します。|  
@@ -64,13 +64,13 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
+ [IActiveScriptAuthor:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

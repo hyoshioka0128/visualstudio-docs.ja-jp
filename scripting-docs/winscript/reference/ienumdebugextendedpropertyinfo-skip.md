@@ -40,8 +40,8 @@ HRESULT Skip(
  からスキップする列挙シーケンス内の `ExtendedDebugPropertyInfo` 構造体の数。  
   
 ## <a name="return-value"></a>戻り値  
- は、有効な `HRESULT` (通常は `S_OK`) を返します。 は `S_FALSE` を返し、`celt` が列挙子に残されている要素の数より大きい場合は、現在の要素ポインターを列挙体の末尾に設定します。  
+ は、有効な `HRESULT`(通常は `S_OK`) を返します。 は `S_FALSE` を返し、`celt` が列挙子に残されている要素の数より大きい場合は、現在の要素ポインターを列挙体の末尾に設定します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IEnumDebugExtendedPropertyInfo インターフェイス](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 構造体](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

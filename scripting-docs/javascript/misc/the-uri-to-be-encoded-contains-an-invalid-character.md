@@ -32,6 +32,6 @@ ms.locfileid: "72572249"
     <Scheme>:<first>/<second>;<third>?<fourth>  
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [EncodeURI 関数](../../javascript/reference/encodeuri-function-javascript.md)   
  [encodeURIComponent 関数](../../javascript/reference/encodeuricomponent-function-javascript.md)

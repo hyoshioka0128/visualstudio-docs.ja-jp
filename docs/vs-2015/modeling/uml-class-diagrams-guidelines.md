@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 804678985ae30d833b57fe7589f0903cf1edb291
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652276"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297283"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML クラス図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 > [!NOTE]
-> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 「[クラスと型の設計と表示](http://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
+> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 「[クラスと型の設計と表示](https://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
 
 ## <a name="Using"></a>UML クラス図の使用
  UML クラス図は、さまざまな用途に使用できます。
@@ -123,7 +123,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
 - 内部実装を持つ純粋なインターフェイスと具象クラスを区別する必要があるコンテキストでは、**インターフェイス**(2) を使用します。 この差別化は、図の目的がソフトウェア実装を記述することである場合に便利です。 しかし、受動的なデータをモデリングする場合、またはユーザー要求を記述するための概念を定義する場合には、それほど効果的ではありません。
 
-- **列挙**(3) を使用して、リテラル値の数が制限されている型 (`Stop` や `Go` など) を表します。
+- **列挙**(3) を使用して、リテラル値の数が制限されている型 (`Stop` や `Go`など) を表します。
 
   - リテラル値を列挙に追加します。 それぞれに別個の名前を指定します。
 
@@ -142,7 +142,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  たとえば、"料理の注文" とレストランの "メニュー" の間の関連を 1 つの図に示し、"隆理の注文" と "支払い" の間の関連を別の図に示すことができます。
 
- コンポーネント図
+ コンポーネント ダイアグラム
 
  コンポーネント図のコンポーネントでインターフェイスを定義している場合は、インターフェイスを**UML モデルエクスプローラー**からクラスダイアグラムにドラッグできます。 クラス図で、インターフェイスに含まれるメソッドを定義できます。
 
@@ -180,7 +180,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
 - モデルで定義されている型。
 
-- テンプレート型のパラメーター化された値であり、テンプレート \<Parameter > に記述されています。 「[テンプレートの型](#Templates)」を参照してください。
+- テンプレート型のパラメーター化された値であり、テンプレート\<パラメーター > に記述されています。 「[テンプレートの型](#Templates)」を参照してください。
 
   モデルでまだ定義していない型の名前を書くこともできます。 名前は、UML モデルエクスプローラーの **[未指定の型]** の下に表示されます。
 
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- (例:
+ 例 :
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  ただし、 **[プロパティ]** ウィンドウでは**静的**プロパティと**抽象**プロパティのみを設定できます。
 
 #### <a name="full-signature"></a>完全なシグニチャ
- 属性または操作のシグニチャを編集するときに、行の末尾および各パラメーターの後に追加のプロパティが表示されることがあります。 これらのプロパティは、中かっこ {...} で囲まれて表示されます。 これらのプロパティは、編集または追加できます。 (例:
+ 属性または操作のシグニチャを編集するときに、行の末尾および各パラメーターの後に追加のプロパティが表示されることがあります。 これらのプロパティは、中かっこ {...} で囲まれて表示されます。 これらのプロパティは、編集または追加できます。 例 :
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -322,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  属性は、他の属性または関連の値から計算されます。
 
- "/" は、属性の名前の前に表示されます。 (例:
+ "/" は、属性の名前の前に表示されます。 例 :
 
 ```
 /TotalPrice: Integer
@@ -351,7 +351,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   これらのプロパティおよびその他のプロパティの詳細については、「 [UML クラス図の関連付けのプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)」を参照してください。
 
 ### <a name="navigability"></a>誘導可能性
- 関連を描画すると、関連を移動できる方向を示す矢印が片方の末尾に付きます。 これは、クラス図がソフトウェア クラスを表し、関連がポインターまたは参照を表す場合に役立ちます。 ただし、クラス図を使用してエンティティと関係またはビジネス概念を表す場合は、誘導可能性との関連性は小さくなります。 この場合は、矢印を使用しないで関連を描画することをお勧めします。 これを行うには、アソシエーションの両端にある [**誘導**可能] プロパティを True に設定します。 これを簡単にするために、コードサンプルの[UML ドメインモデリング](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)をダウンロードできます。
+ 関連を描画すると、関連を移動できる方向を示す矢印が片方の末尾に付きます。 これは、クラス図がソフトウェア クラスを表し、関連がポインターまたは参照を表す場合に役立ちます。 ただし、クラス図を使用してエンティティと関係またはビジネス概念を表す場合は、誘導可能性との関連性は小さくなります。 この場合は、矢印を使用しないで関連を描画することをお勧めします。 これを行うには、アソシエーションの両端にある [**誘導**可能] プロパティを True に設定します。
 
 ### <a name="attributes-and-associations"></a>属性と関連
  関連は、属性を視覚的に示す方法の 1 つです。 たとえば、Menu 型の属性を持つ Restaurant クラスを生成する代わりに、Restaurant から Menu への関連を描画できます。
@@ -450,7 +450,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 2. 新しい型のショートカットメニューを開き、 **[プロパティ]** を選択します。
 
-3. **[テンプレートバインド]** プロパティで、ドロップダウンリストからテンプレートの種類 (`Dictionary` など) を選択します。
+3. **[テンプレートバインド]** プロパティで、ドロップダウンリストからテンプレートの種類 (`Dictionary`など) を選択します。
 
 4. **[テンプレートバインディング]** プロパティを展開します。
 
@@ -472,5 +472,5 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
      これらのプロパティを設定し、提供されるテンプレートをカスタマイズする方法の詳細については、「 [UML クラス図からコードを生成](../modeling/generate-code-from-uml-class-diagrams.md)する」を参照してください。
 
-## <a name="see-also"></a>参照
- [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml クラス図: 参照](../modeling/uml-class-diagrams-reference.md)[モデルユーザー要件](../modeling/model-user-requirements.md) [Uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md) [uml ユースケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md) [umlコンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)
+## <a name="see-also"></a>関連項目
+ [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml クラス図: 参照](../modeling/uml-class-diagrams-reference.md)[モデルユーザー要件](../modeling/model-user-requirements.md) [Uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図](../modeling/uml-sequence-diagrams-reference.md): リファレンス Uml[ユースケース図](../modeling/uml-use-case-diagrams-reference.md): リファレンス[uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)

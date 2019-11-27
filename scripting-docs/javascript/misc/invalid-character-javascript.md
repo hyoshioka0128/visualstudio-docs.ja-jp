@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576581"
 ---
 # <a name="invalid-character-javascript"></a>無効な文字です。(JavaScript)
-@No__t_0 コンパイラによって有効であると認識されない文字 (または文字) を使用して識別子を構成しました。 有効な文字は、次の規則を使用します。  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] コンパイラによって有効であると認識されない文字 (または文字) を使用して識別子を構成しました。 有効な文字は、次の規則を使用します。  
   
 - 最初の文字は、ASCII 文字 (大文字または小文字) またはアンダースコア (_) である必要があります。  
   
@@ -32,9 +32,9 @@ ms.locfileid: "72576581"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_0 言語の定義に含まれていない文字は使用しないでください。  
+- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語の定義に含まれていない文字は使用しないでください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [変数](../../javascript/variables-javascript.md)   
  [特殊文字](../../javascript/advanced/special-characters-javascript.md)   
  [データの種類](../../javascript/data-types-javascript.md)

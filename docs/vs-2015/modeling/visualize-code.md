@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51b546e953cae80b7a1871b72a1f0b0613c77342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659331"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301322"
 ---
 # <a name="visualize-code"></a>コードの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の視覚化ツールとモデリング ツールを使って、既存のコードを理解し、アプリケーションを記述することができます。 これにより、自分が実行した変更がコードにどのような影響を与えるかを理解し、その変更に起因する作業とリスクを評価することができます。 (例:
+Visual Studio の視覚化ツールとモデリング ツールを使って、既存のコードを理解し、アプリケーションを記述することができます。 これにより、自分が実行した変更がコードにどのような影響を与えるかを理解し、その変更に起因する作業とリスクを評価することができます。 例 :
 
 - コード内のリレーションシップを理解するには、そのリレーションシップをビジュアルにマッピングします。
 
@@ -37,22 +37,22 @@ Visual Studio の視覚化ツールとモデリング ツールを使って、�
 
   各機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="what-do-you-want-to-do"></a>実行する操作
+## <a name="what-do-you-want-to-do"></a>作業内容
 
 |||
 |-|-|
-|**コードとその関係について説明します。**<br /><br /> 特定のコード間のリレーションシップをマッピングします。<br /><br /> ソリューション全体のコード内のリレーションシップの概要を確認します。<br /><br /> **注**: Visual Studio のこのリリースでは、 *依存関係グラフ* の代わりに、 *コード マップ*という用語を使用します。|[ソリューション間の依存関係をマップ -    に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを使用してアプリケーションをデバッグ -    には](../modeling/use-code-maps-to-debug-your-applications.md)<br />[コードマップアナライザーを使用して潜在的な問題を検出](../modeling/find-potential-problems-using-code-map-analyzers.md)-    には<br />[デバッグ中に呼び出し履歴のメソッドを -    マップする](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**コードとその関係について説明します。**<br /><br /> 特定のコード間のリレーションシップをマッピングします。<br /><br /> ソリューション全体のコード内のリレーションシップの概要を確認します。<br /><br /> **注**: Visual Studio のこのリリースでは、 *依存関係グラフ* の代わりに、 *コード マップ*という用語を使用します。|[ソリューション間の依存関係をマップ -   に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを使用してアプリケーションをデバッグ -   には](../modeling/use-code-maps-to-debug-your-applications.md)<br />[コードマップアナライザーを使用して潜在的な問題を検出](../modeling/find-potential-problems-using-code-map-analyzers.md)-   には<br />[デバッグ中に呼び出し履歴のメソッドを -   マップする](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**クラス構造について:**<br /><br /> コードからクラス ダイアグラムを作成することで、プロジェクト内のクラスの構造を視覚化します。|[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**高レベルのシステム設計について説明し、この設計に対してコードを検証します。**<br /><br /> レイヤー図を作成することで、高レベルのシステム デザインと想定する依存関係を記述します。 このデザインと照らし合わせてコードを検証し、コード内の依存関係がデザインと一貫性があることを確認します。|[コードからレイヤー図を作成 -    に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -    に](../modeling/validate-code-with-layer-diagrams.md)は|
-|**ユーザーの要件とアーキテクチャを伝えます。**<br /><br /> 次の UML 図 (アクティビティ、コンポーネント、クラス、シーケンス、使用例) を描画することで、ソフトウェア システムのユーザー要求とアーキテクチャをモデル化します。|[アプリのモデルを作成 -    には](../modeling/create-models-for-your-app.md)<br />-   [モデルのユーザー要件](../modeling/model-user-requirements.md)<br />[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を -    モデル化する|
+|**高レベルのシステム設計について説明し、この設計に対してコードを検証します。**<br /><br /> レイヤー図を作成することで、高レベルのシステム デザインと想定する依存関係を記述します。 このデザインと照らし合わせてコードを検証し、コード内の依存関係がデザインと一貫性があることを確認します。|[コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />[レイヤー図を使用してコードを検証 -   に](../modeling/validate-code-with-layer-diagrams.md)は|
+|**ユーザーの要件とアーキテクチャを伝えます。**<br /><br /> 次の UML 図 (アクティビティ、コンポーネント、クラス、シーケンス、使用例) を描画することで、ソフトウェア システムのユーザー要求とアーキテクチャをモデル化します。|[アプリのモデルを作成 -   には](../modeling/create-models-for-your-app.md)<br />-   [モデルのユーザー要件](../modeling/model-user-requirements.md)<br />[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を -   モデル化する|
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャフォーラム](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャフォーラム](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>参照
- [シナリオ: 視覚化とモデリングを使用して設計を変更する](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[アーキテクチャ分析とモデリングアーキテクチャ](../modeling/analyze-and-model-your-architecture.md)[アプリモデルのモデルを作成](../modeling/create-models-for-your-app.md)する[ユーザーの要件](../modeling/model-user-requirements.md)[モデルアプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を[使用する開発プロセス](../modeling/use-models-in-your-development-process.md)
+## <a name="see-also"></a>関連項目
+ [シナリオ: 視覚化とモデリングを使用して設計を変更する](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[アーキテクチャ分析とモデリングアーキテクチャ](../modeling/analyze-and-model-your-architecture.md)[アプリモデルのモデルを作成](../modeling/create-models-for-your-app.md)する[ユーザーの要件](../modeling/model-user-requirements.md)[モデルアプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を[開発プロセスで使用するモデルを使用する](../modeling/use-models-in-your-development-process.md)

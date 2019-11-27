@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620389"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300284"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>クラス デザイナーのエラーに関する追加情報
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "72620389"
 
  [ビジュアルC++コードの操作 (クラスデザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)には、クラスダイアグラムC++での表示に関するトラブルシューティング情報が含まれています。
 
- [Visual Studio クラス デザイナー フォーラム](http://go.microsoft.com/fwlink/?LinkId=160754)は、クラス デザイナーに関する質問のためのフォーラムです。
+ [Visual Studio クラス デザイナー フォーラム](https://go.microsoft.com/fwlink/?LinkId=160754)は、クラス デザイナーに関する質問のためのフォーラムです。
 
 ## <a name="see-also"></a>関連項目
  [クラスと型のデザインおよび表示](../ide/designing-and-viewing-classes-and-types.md)

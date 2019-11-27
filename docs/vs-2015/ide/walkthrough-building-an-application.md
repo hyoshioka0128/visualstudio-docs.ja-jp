@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670122"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296870"
 ---
 # <a name="walkthrough-building-an-application"></a>チュートリアル: アプリケーションをビルドする
 
@@ -22,9 +22,9 @@ ms.locfileid: "72670122"
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションをビルドする際に構成できるオプションの使用方法を習得できます。 サンプル アプリケーション用に、カスタムのビルド構成の作成、特定の警告メッセージの非表示設定、ビルド出力情報の拡張などを行います。
 
-このトピックは、次のセクションで構成されています。
+このトピックには、次のセクションが含まれています。
 
-[サンプル アプリケーションをインストールする](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[サンプル アプリケーションをインストールする](../ide/walkthrough-building-an-application.md)
 
 [カスタム ビルド構成を作成する](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ ms.locfileid: "72670122"
 
 [出力ウィンドウに追加のビルド詳細を表示する](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[リリース ビルドを作成する](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> サンプル アプリケーションをインストールする
-
-**[拡張機能と更新プログラム]** ダイアログ ボックスを使用して、Microsoft Web サイトのサンプル ギャラリーから [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) サンプルを検索してインストールします。 サンプル ギャラリーには、アプリケーションを計画および開発する際にダウンロードしてレビューできる、さまざまなプロジェクトとコード例が用意されています。
+[リリース ビルドを作成する](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>サンプル アプリケーションをインストールするには
 
@@ -68,13 +64,13 @@ ms.locfileid: "72670122"
 
      ![[新しいプロジェクト] ダイアログボックス、インストールされたサンプル](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     または
 
      ソリューションに「`IntroWPFvb`」という名前を付けます (Visual Basic 用)。
 
      ![[新しいプロジェクト] ダイアログボックス、Visual Basic サンプル](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 ## <a name="BKMK_CreateBuildConfig"></a> カスタム ビルド構成を作成する
 
@@ -100,7 +96,7 @@ ms.locfileid: "72670122"
 
     ![[新しいソリューションプラットフォーム] ダイアログボックス](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. **[OK]** を選択します。
+6. **[OK]** をクリックします。
 
    アクティブなソリューション構成が Test に変更され、アクティブなソリューション プラットフォームが x64 に設定されました。
 
@@ -206,7 +202,7 @@ ms.locfileid: "72670122"
 
    詳細については、「[方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
-## <a name="BKMK_releasebuild"></a> リリース ビルドを作成する
+## <a name="create-a-release-build"></a>リリース ビルドを作成する
 
 出荷用に最適化されたバージョンとしてサンプル アプリケーションをビルドすることができます。 リリース ビルドでは、ビルドの開始前に実行可能ファイルをネットワーク共有にコピーすることを指定します。
 
@@ -235,7 +231,7 @@ ms.locfileid: "72670122"
 
      ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "Exploreide-newprojectcsharp-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Visual C \# のリリースビルドを指定するには
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Visual C\# のリリースビルドを指定するには
 
 1. **プロジェクト デザイナー**を開きます。
 
@@ -262,7 +258,7 @@ ms.locfileid: "72670122"
 
    これで、このチュートリアルを完了できました。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [チュートリアル: プロジェクトの構築 (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

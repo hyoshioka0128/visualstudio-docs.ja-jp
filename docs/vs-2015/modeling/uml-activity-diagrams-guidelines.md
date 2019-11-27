@@ -15,17 +15,17 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658483"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298989"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML アクティビティ図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、アクティビティ図を描画することによって、ビジネス プロセスやソフトウェア アルゴリズムを一連のアクションのワークフローとして表すことができます。 ユーザー、ソフトウェア コンポーネント、またはデバイスが、これらのアクションを実行できます。 ビデオデモについては、「[アクティビティ図を使用したビジネスワークフローのキャプチャ](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)」を参照してください。
+Visual Studio では、アクティビティ図を描画することによって、ビジネス プロセスやソフトウェア アルゴリズムを一連のアクションのワークフローとして表すことができます。 ユーザー、ソフトウェア コンポーネント、またはデバイスが、これらのアクションを実行できます。 ビデオデモについては、「[アクティビティ図を使用したビジネスワークフローのキャプチャ](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -295,11 +295,11 @@ Visual Studio では、アクティビティ図を描画することによって
 
  顧客は、自分のクレジット カードを処理するために必要な、完全で有効な詳細を提供した。
 
- 事後条件は、アクション実行前後の状態間のリレーションシップを表すことができます。 (例:
+ 事後条件は、アクション実行前後の状態間のリレーションシップを表すことができます。 例 :
 
  利率は以前の 2 倍である。
 
- より形式的なスタイルで事後条件を作成することで、アクションで扱われるデータの特定の属性を表せます。 (例:
+ より形式的なスタイルで事後条件を作成することで、アクションで扱われるデータの特定の属性を表せます。 例 :
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -398,7 +398,7 @@ Visual Studio では、アクティビティ図を描画することによって
 
 - 入力ピンまたは出力ピンにコメントをアタッチする。
 
-  - この説明を一般的なコメントと区別するには、< \<**変換**> > または < \< >**選択**> を使用してコメントを開始できます。
+  - この説明を一般的なコメントと区別するには、<\<**変換**> > または <\<>**選択**> を使用してコメントを開始できます。
 
 - 別個のアクティビティ図で変換または選択を詳細に指定する。
 
@@ -426,5 +426,5 @@ Visual Studio では、アクティビティ図を描画することによって
 
    オブジェクト ノード、および個々の入力ピンと出力ピンに対して、選択を定義することもできます。 前の手順と同様に選択アクティビティを定義し、オブジェクト ノード、または 入力 または 出力ピン の **選択** プロパティを設定します。
 
-## <a name="see-also"></a>参照
- [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md) [uml コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス uml[ユースケース図](../modeling/uml-use-case-diagrams-reference.md): リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス[uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [ビデオ: アクティビティ図を使用したビジネスワークフローのキャプチャ](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+## <a name="see-also"></a>関連項目
+ [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md) [uml コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス uml[ユースケース図](../modeling/uml-use-case-diagrams-reference.md): リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス uml[コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス:[アクティビティ図を使用したビジネスワークフローのキャプチャ](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

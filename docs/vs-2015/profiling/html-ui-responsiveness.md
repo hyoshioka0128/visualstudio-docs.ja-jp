@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824838"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299672"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI の応答性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  次の例は、DOM クリック イベントのイベント リスナーが選択されたときにタイムラインの詳細グラフがどのように表示されるかを示しています。  
   
- ![タイムライン詳細グラフ](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![タイムラインの詳細グラフ](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  この図では、 **[イベント名]** 列の **spinAction** イベント ハンドラーがリンクになっており、クリックすると、ソース コードのイベント ハンドラーが表示されます。 右ペインで、 **Callback function** プロパティによってソース コードへの同じリンクが提供されます。 他のプロパティも、関連付けられた DOM 要素など、イベントに関する情報を提供します。  
   
@@ -356,7 +356,7 @@ if (performance.mark && performance.measure) {
   
 ## <a name="Tips"></a> 追加情報  
   
-- UI 応答性プロファイラーについては、この Build 2013 カンファレンスの [ビデオ](http://channel9.msdn.com/Events/Build/2013/3-316) をご覧ください。  
+- UI 応答性プロファイラーについては、この Build 2013 カンファレンスの [ビデオ](https://channel9.msdn.com/Events/Build/2013/3-316) をご覧ください。  
   
 - JavaScript を使用して Windows 用にビルドされた Windows ストア アプリのパフォーマンスのヒントを参照します。 詳細については、「 [JavaScript を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx)」を参照してください。  
   

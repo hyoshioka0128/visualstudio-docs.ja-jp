@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655278"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292330"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>UML モデル要素にステレオタイプを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,5 +81,6 @@ UML モデル要素にステレオタイプを追加して、注釈を付けた�
 
          この操作を実行できるのは、一部の種類の図に限られます。
 
-## <a name="see-also"></a>参照
- [プロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[プロファイルとステレオタイプを使用](../modeling/customize-your-model-with-profiles-and-stereotypes.md)してモデルをカスタマイズする[パッケージと名前空間](../modeling/define-packages-and-namespaces.md)の[色 uml クラスをステレオタイプ別](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)に定義する
+## <a name="see-also"></a>関連項目
+ [プロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)[プロファイルとステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)する[パッケージと名前空間を定義](../modeling/define-packages-and-namespaces.md)する
+

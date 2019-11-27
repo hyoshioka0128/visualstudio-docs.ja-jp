@@ -50,30 +50,30 @@ HRESULT SetProperty(
  `pvarValue`  
  プロパティの値。  
   
- @No__t_0 に使用できる値を次の表に示します。  
+ `dwProperty` に使用できる値を次の表に示します。  
   
-|定数|[値]|説明|  
+|定数|値|意味|  
 |--------------|-----------|-------------|  
-|SCRIPTPROP_INTEGERMODE|0x00003000|スクリプトエンジンを強制的に浮動小数点モードではなく整数モードで除算します。 既定値は `False`です。|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|スクリプトエンジンを強制的に浮動小数点モードではなく整数モードで除算します。 既定値は `False` です。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|スクリプトエンジンの文字列比較関数を置き換えることができるようにします。|  
 |SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|他のスクリプトエンジンがグローバルオブジェクトに関与していないことをスクリプトエンジンに通知します。|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|@No__t_0 スクリプトエンジンに対して、サポートされる言語機能のセットを強制的に選択させます。 @No__t_0 スクリプトエンジンでサポートされている言語機能の既定のセットは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 にある言語機能セットと同じです。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンに対して、サポートされる言語機能のセットを強制的に選択させます。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンでサポートされている言語機能の既定のセットは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 にある言語機能セットと同じです。|  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
   
-|戻り値|説明|  
+|戻り値|意味|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引数が有効ではありません。|  
 |`E_UNEXPECTED`|この呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか、初期化されていません)。|  
   
-## <a name="remarks"></a>Remarks  
- 整数除算を有効または無効にするには、`SetProperty` を呼び出し、`Boolean` を `Object` に変換します。 既定では、プロパティの値は `False` です。 @No__t_0 に設定した場合、除算演算では整数のみが返されます。  
+## <a name="remarks"></a>コメント  
+ 整数除算を有効または無効にするには、`SetProperty` を呼び出し、`Boolean` を `Object`に変換します。 既定では、プロパティの値は `False`です。 `True`に設定した場合、除算演算では整数のみが返されます。  
   
  カスタム文字列比較を有効または無効にするには、`SetProperty` を呼び出し、`Object` の値を渡します。 渡すオブジェクトは、インターフェイス[IActiveScriptStringCompare インターフェイス](../../winscript/reference/iactivescriptstringcompare-interface.md)を実装する必要があります。 [IActiveScriptStringCompare インターフェイス](../../winscript/reference/iactivescriptstringcompare-interface.md)インターフェイスの[StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)メソッドは、文字列比較関数が実行されるたびに呼び出されます。  
   
- @No__t_0 スクリプトエンジンが初期化されるときにサポートされる言語機能のセットを選択するには、`SetProperty` を呼び出し、SCRIPTPROP_INVOKEVERSIONING に対して有効にする言語機能セットに対応する値を渡します。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、使用可能な言語機能は [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 で表示されていた機能と同じです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、使用可能な言語機能はバージョン5.8 で追加された新機能に加えて、バージョン5.7 で表示されていた機能です。 既定では、このプロパティは 0 (SCRIPTLANGUAGEVERSION_DEFAULT) に設定されています。これは、ホストが異なる既定の動作をサポートしている場合を除き、バージョン5.7 で表示された言語機能セットに相当します。 たとえば、internet explorer 8 の既定のドキュメントモードが "Internet Explorer 8 標準" モードの場合、既定では、バージョン 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンでサポートされている [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語機能を使用できます。 Internet Explorer 8 ドキュメントモードを Internet Explorer 7 標準モードまたは互換モードに切り替えると、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンがリセットされ、バージョン 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンに存在していた言語機能セットのみがサポートされます。  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンが初期化されるときにサポートされる言語機能のセットを選択するには、`SetProperty` を呼び出し、SCRIPTPROP_INVOKEVERSIONING に対して有効になる言語機能セットに対応する値を渡します。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、使用可能な言語機能は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 で表示されていた機能と同じです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、使用可能な言語機能はバージョン5.8 で追加された新機能に加えて、バージョン5.7 で表示されていた機能です。 既定では、このプロパティは 0 (SCRIPTLANGUAGEVERSION_DEFAULT) に設定されています。これは、ホストが異なる既定の動作をサポートしている場合を除き、バージョン5.7 で表示された言語機能セットと同じです。 たとえば、internet explorer 8 の既定のドキュメントモードが "Internet Explorer 8 標準" モードの場合、既定では、バージョン 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンでサポートされている [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語機能を使用できます。 Internet Explorer 8 ドキュメントモードを Internet Explorer 7 標準モードまたは互換モードに切り替えると、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンがリセットされ、バージョン 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンに存在していた言語機能セットのみがサポートされます。  
   
 > [!NOTE]
 > SCRIPTPROP_INVOKEVERSIONING は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンが初期化されている場合にのみ設定する必要があります。  
@@ -100,7 +100,7 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
     System.IntPtr.Zero, ref vtStrCmpInstance);  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ドキュメント互換性](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  の定義  
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [バージョン情報](../../javascript/reference/javascript-version-information.md)

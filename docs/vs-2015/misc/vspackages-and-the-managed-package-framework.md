@@ -1,5 +1,5 @@
 ---
-title: VSPackages およびマネージ パッケージ フレームワーク |Microsoft Docs
+title: Vspackage とマネージパッケージフレームワーク |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,33 +11,33 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 84fb41bfc80415535ca41d6b1a8c9dcf47124c7a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683043"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298235"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages およびマネージド パッケージ フレームワーク
-クラスを作成して、VSPackage、マネージ パッケージ フレームワーク (MPF) の代わりに COM 相互運用機能のクラスを使用して開発時間を短縮することができます。  
+COM 相互運用クラスを使用するのではなく、managed package framework (MPF) クラスを使用して VSPackage を作成することにより、開発時間を短縮できます。  
   
- マネージ VSPackage を作成する 2 つの方法はあります。  
+ マネージ VSPackage を作成するには、次の2つの方法があります。  
   
-- 使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] パッケージプロジェクトテンプレートを使用する  
   
-     詳細については、「[チュートリアル:Visual Studio パッケージ テンプレートを使用してメニュー コマンドを作成する](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
+     詳細については、「[チュートリアル: Visual Studio パッケージテンプレートを使用してメニューコマンドを作成](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)する」を参照してください。  
   
-- なし、VSPackage をビルド、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package プロジェクトテンプレートを使用せずに VSPackage をビルドする  
   
-     たとえば、サンプルの VSPackage をコピーして、Guid と名前を変更します。 VSX セクションでサンプルを見つけたりできます[コード ギャラリー](http://code.msdn.microsoft.com/vsx/)します。  
+     たとえば、サンプル VSPackage をコピーして、Guid と名前を変更することができます。 
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [Managed Package Framework クラス](../misc/managed-package-framework-classes.md)  
- について説明し、MPF クラスの名前空間および DLL ファイルを一覧表示されます。  
+ MPF クラスの名前空間と DLL ファイルの説明と一覧を示します。  
   
-## <a name="related-sections"></a>関連項目  
- [チュートリアル: Visual Studio パッケージ テンプレートを使用してメニュー コマンドの作成](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+## <a name="related-sections"></a>関連セクション  
+ [チュートリアル: Visual Studio パッケージテンプレートを使用したメニューコマンドの作成](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  マネージ VSPackage を作成する方法について説明します。  
   
  [マネージド VSPackage](../misc/managed-vspackages.md)  
- マネージ コードに適用される Vspackage の側面について説明します。
+ マネージコードに適用される Vspackage の側面について説明します。

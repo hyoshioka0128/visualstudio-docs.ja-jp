@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e9d1464481b33bc5fbf5e73bc09a6da4eb082c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662349"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297861"
 ---
 # <a name="options-text-editor-cc-experimental"></a>[オプション]、[テキスト エディター]、[C/C++]、[実験用]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "72662349"
 ## <a name="intellisense"></a>IntelliSense
  **メンバーリストのドットから矢印**メンバーリストに適用できる場合は、'. ' を '-> ' に置き換えます。
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>リファクタリング
  **Extract 関数の有効化**選択したコードを独自の関数に抽出し、コードを新しい関数への呼び出しに置き換えます。 この機能にアクセスするには、選んだコードを右クリックして **[クイック アクション]** を選ぶか、単に Ctrl キーを押しながらドット キーを押すだけです (Ctrl+.、既定のショートカット)。
 
  **署名の変更を有効にする**関数のパラメーターを追加、並べ替え、および削除し、変更をすべての呼び出しサイトに反映します。 この機能にアクセスするには、関数の任意の使用法を右クリックして **[クイック アクション]** を選ぶか、Ctrl キーを押しながらドット キーを押すだけです (Ctrl+.、既定のショートカット)。
 
-## <a name="text-editor"></a>[テキスト エディター]
+## <a name="text-editor"></a>テキスト エディター
  **スコープの展開を有効にする**有効にすると、テキストエディターに ' {' を入力することで、選択したテキストを中かっこで囲むことができます。
 
  **展開の優先順位を有効にする**有効にすると、テキストエディターに ' (' を入力することにより、選択したテキストをかっこで囲むことができます。
 
- Visual Studio ギャラリーのその他のテキスト エディター機能については、 [ここ](http://go.microsoft.com/fwlink/?LinkId=692016)の一覧をご覧ください。 例として、 [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)があります。これは、次をサポートします。
+ Visual Studio ギャラリーのその他のテキスト エディター機能については、 [ここ](https://go.microsoft.com/fwlink/?LinkId=692016)の一覧をご覧ください。 例として、 [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)があります。これは、次をサポートします。
 
 - **不足している #include の追加** -コード内の不明なシンボルについて関連する #include を提案します
 
@@ -58,5 +58,5 @@ ms.locfileid: "72662349"
 
   波線の上にカーソルを合わせて電球マークを表示させるか、Ctrl キーを押しながらドットを押すだけです (Ctrl+.、既定のキーボード ショートカット)。 キーボード ショートカットでは、キャレットを特定のエラーやトークンの位置に置く必要はありません。エラーが出た同じ行にカーソルがあれば、行の上の何らかのものに対して解決策が提示されます。
 
-## <a name="see-also"></a>参照
- [言語固有のエディターオプションの設定](../../ide/reference/setting-language-specific-editor-options.md)[にC++関するリファクタリング (VC ブログ)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+## <a name="see-also"></a>関連項目
+ [言語固有のエディターオプションの設定](../../ide/reference/setting-language-specific-editor-options.md)[にC++関するリファクタリング (VC ブログ)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

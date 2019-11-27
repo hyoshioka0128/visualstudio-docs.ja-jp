@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573595"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-@No__t_0 の子インスタンスとしてスクリプトレットを追加します。  
+`IScriptNode`の子インスタンスとしてスクリプトレットを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -52,7 +52,7 @@ HRESULT CreateChildHandler(
  [in、size_is (`cpszNames`)]ホスト上の完全修飾名からの識別子の一覧。  
   
  `cpszNames`  
- から@No__t_0 パラメーターの識別子の数。  
+ から`prgpszNames` パラメーターの識別子の数。  
   
  `pszEvent`  
  からスクリプトレットに関連付けられたイベント名を識別するバッファーアドレス。  
@@ -68,7 +68,7 @@ HRESULT CreateChildHandler(
  から関数オブジェクトの型情報。  
   
  `iMethodSignature`  
- から@No__t_0 パラメーター内の関数のインデックス。  
+ から`ITypeInfo``ptiSignature` パラメーター内の関数のインデックス。  
   
  `isn`  
  から親の子のインデックス。  
@@ -82,13 +82,13 @@ HRESULT CreateChildHandler(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  スクリプトレットは、イベントハンドラーを指定します。 このメソッドは、Web ページを表す `IScriptNode` オブジェクトによって呼び出された場合に、スクリプトレットを作成します。 このメソッドは、他のインターフェイスによって呼び出された場合は成功しません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Iscriptnode インターフェイス](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)

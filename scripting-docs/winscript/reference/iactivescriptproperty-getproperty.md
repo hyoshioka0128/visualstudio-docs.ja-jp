@@ -50,30 +50,30 @@ HRESULT GetProperty(
  `pvarValue`  
  プロパティの値。  
   
- @No__t_0 に使用できる値を次の表に示します。  
+ `dwProperty` に使用できる値を次の表に示します。  
   
-|定数|[値]|説明|  
+|定数|値|意味|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|スクリプトエンジンを強制的に浮動小数点モードではなく整数モードで除算します。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|スクリプトエンジンの文字列比較関数を置き換えることができるようにします。|  
 |SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|他のスクリプトエンジンがグローバルオブジェクトに関与していないことをスクリプトエンジンに通知します。|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|@No__t_0 スクリプトエンジンに対して、サポートされる言語機能のセットを強制的に選択させます。 @No__t_0 スクリプトエンジンでサポートされている言語機能の既定のセットは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 にある言語機能セットと同じです。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンに対して、サポートされる言語機能のセットを強制的に選択させます。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンでサポートされている言語機能の既定のセットは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 にある言語機能セットと同じです。|  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
   
-|戻り値|説明|  
+|戻り値|意味|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引数が有効ではありません。|  
 |`E_UNEXPECTED`|この呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか、初期化されていません)。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  ホストは、SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION プロパティを使用して、グローバルオブジェクトに寄与する他のスクリプトエンジンが存在しないことをスクリプトエンジンに通知できます。 たとえば、Internet Explorer では、表示されているページに [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトだけが含まれていることを [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] エンジンに通知できます。 したがって、グローバルオブジェクトウィンドウに新しいプロパティを追加できるのは [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] エンジンだけであり、同じ操作を実行する Visual Basic Scripting Edition (VBScript) エンジンは存在しません。 エンジンは、このフラグを無視することも、グローバルオブジェクトに追加される新しいメンバーの管理を最適化するために使用することもできます。  
   
- ホストは、SCRIPTPROP_INVOKEVERSIONING プロパティを使用して、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンが開始されたときにサポートされる言語機能のセットを選択できます。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、使用可能な言語機能は [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 で表示されていた機能と同じです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、使用可能な言語機能はバージョン5.8 で追加された機能に加えて、バージョン5.7 で表示されていた機能です。 既定では、このプロパティは 0 (SCRIPTLANGUAGEVERSION_DEFAULT) に設定されています。これは、ホストが異なる既定の動作をサポートしている場合を除き、バージョン5.7 で表示された言語機能セットに相当します。 たとえば、internet explorer 8 のドキュメントモードが "Internet Explorer 8 標準" モードの場合、既定では、バージョン 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンによってサポートされる [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語機能が internet Explorer 8 で使用されます。  
+ ホストは、SCRIPTPROP_INVOKEVERSIONING プロパティを使用して、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンが開始されるときにサポートされる言語機能のセットを選択できます。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、使用可能な言語機能は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 で表示されていた機能と同じです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、使用可能な言語機能はバージョン5.8 で追加された機能に加えて、バージョン5.7 で表示されていた機能です。 既定では、このプロパティは 0 (SCRIPTLANGUAGEVERSION_DEFAULT) に設定されています。これは、ホストが異なる既定の動作をサポートしている場合を除き、バージョン5.7 で表示された言語機能セットと同じです。 たとえば、internet explorer 8 のドキュメントモードが "Internet Explorer 8 標準" モードの場合、既定では、バージョン 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンによってサポートされる [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語機能が internet Explorer 8 で使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ドキュメント互換性](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  の定義  
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [バージョン情報](../../javascript/reference/javascript-version-information.md)

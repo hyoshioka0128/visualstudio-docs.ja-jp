@@ -1,76 +1,76 @@
 ---
-title: イメージのサービスとカタログ |Microsoft Docs
+title: Image Service と Catalog |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1cc402792f39cbbebb6e7804e7406be4f06658a4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824685"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301176"
 ---
 # <a name="image-service-and-catalog"></a>イメージ サービスとカタログ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このクックブックには、ガイダンスと、Visual Studio イメージ サービスと Visual Studio 2015 で導入されたイメージのカタログを採用するためのベスト プラクティスが含まれています。  
+このクックブックには、visual studio イメージサービスと Visual Studio 2015 で導入されたイメージカタログを採用するためのガイダンスとベストプラクティスが含まれています。  
 
- Visual Studio 2015 で導入されたイメージのサービスでは、開発者は、デバイスと表示されるコンテキストの正しいテーマなど、イメージを表示するユーザーの選択したテーマの最適なイメージの取得ができます。 イメージのサービスを採用することと、資産管理、HDPI スケーリング、およびテーマの適用に関連する主要な問題点を排除するのに役立ちます。  
+ Visual Studio 2015 で導入されたイメージサービスを使用すると、開発者は、表示されているコンテキストの正しいテーマを含めて、デバイスとユーザーが選択したテーマに最適なイメージを取得できます。 イメージサービスを採用すると、資産のメンテナンス、HDPI スケーリング、およびテーマに関連する主要な問題点を排除するのに役立ちます。  
 
 |||  
 |-|-|  
 |**現在の問題**|**ソリューション**|  
-|背景色のブレンド|組み込みのアルファ ブレンド|  
-|(一部) のテーマのイメージ|テーマのメタデータ|  
-|ハイ コントラスト モード|ハイ コントラストの代替のリソース|  
-|さまざまな DPI モードに対して複数のリソースを必要があります。|選択可能なベクター ベースのフォールバック リソース|  
-|イメージが重複しています|イメージの概念ごとの 1 つの識別子|  
+|背景色のブレンド|組み込みのアルファブレンド|  
+|テーマ (some) イメージ|テーマのメタデータ|  
+|ハイコントラストモード|代替ハイコントラストリソース|  
+|DPI モードごとに複数のリソースが必要|ベクターベースのフォールバックを使用した選択可能なリソース|  
+|イメージの複製|イメージごとの識別子1つの概念|  
 
- イメージのサービスを採用する理由  
+ イメージサービスを採用する理由  
 
-- Visual Studio から常に最新の「ピクセル単位で正確」イメージを取得します。  
+- 常に最新の "ピクセル完全な" イメージを Visual Studio から取得する  
 
-- 送信して、独自のイメージを使用することができます。  
+- 独自のイメージを送信して使用することができます。  
 
-- Windows が新しい DPI スケールを追加するときに、イメージをテストする必要はありません。  
+- Windows が新しい DPI スケーリングを追加したときにイメージをテストする必要はありません  
 
-- 実装では古いアーキテクチャ上の問題を対処します。  
+- 実装における以前のアーキテクチャの課題に対処する  
 
-  Visual Studio shell ツールバー前に、と後イメージのサービスを使用します。  
+  イメージサービスを使用する前と後の Visual Studio シェルツールバー:  
 
-  ![前に、と後イメージのサービス](../extensibility/media/image-service-before-and-after.png "前に、と後イメージのサービス")  
+  ![イメージサービスの前後](../extensibility/media/image-service-before-and-after.png "前後のイメージ サービス")  
 
 ## <a name="how-it-works"></a>しくみ  
- イメージ サービスは、任意のサポートされている UI フレームワークの適切なビットマップ イメージを指定できます。  
+ イメージサービスは、サポートされているすべての UI フレームワークに適したビットマップイメージを提供できます。  
 
-- WPF:BitmapSource  
+- WPF: BitmapSource  
 
-- WinForms:System.Drawing.Bitmap  
+- WinForms: system.string  
 
-- Win32:HBITMAP  
+- Win32: HBITMAP  
 
-  イメージ サービスのフロー ダイアグラム  
+  イメージサービスのフローダイアグラム  
 
-  ![サービスのフロー ダイアグラムをイメージ](../extensibility/media/image-service-flow-diagram.png "イメージのサービスのフロー ダイアグラム")  
+  ![イメージサービスのフローダイアグラム](../extensibility/media/image-service-flow-diagram.png "イメージ サービスのフロー ダイアグラム")  
 
-  **イメージのモニカー**  
+  **イメージモニカー**  
 
-  イメージのモニカー (または略してモニカー) はのイメージ アセットまたはイメージ ライブラリにあるイメージの一覧の資産を一意に識別する GUID と ID のペアです。  
+  イメージモニカー (または short のモニカー) は、イメージライブラリ内のイメージアセットまたはイメージリスト資産を一意に識別する GUID/ID のペアです。  
 
   **既知のモニカー**  
 
-  任意の Visual Studio のコンポーネントまたは拡張機能を Visual Studio のイメージのカタログおよびパブリックに使用できるに含まれるイメージ モニカーのセット。  
+  Visual Studio イメージカタログに格納され、Visual Studio のコンポーネントまたは拡張機能によって一般に利用できるイメージモニカーのセット。  
 
-  **イメージ マニフェスト ファイル**  
+  **イメージマニフェストファイル**  
 
-  イメージ マニフェスト (.imagemanifest) ファイルは、これらの資産と実際のイメージまたは各資産を表すイメージを表すモニカーのイメージ アセットのセットを定義する XML ファイルです。 従来の UI サポートのイメージを一覧表示またはイメージ マニフェストは、スタンドアロン画像を定義できます。 さらに、ときに、これらの資産を表示する方法を変更する、資産または各資産の背後にある個別のイメージのいずれかに設定できる属性があります。  
+  イメージマニフェスト (imagemanifest) ファイルは、一連のイメージアセット、それらのアセットを表すモニカー、および各資産を表す実際のイメージまたはイメージを定義する XML ファイルです。 イメージマニフェストでは、レガシ UI をサポートするために、スタンドアロンイメージまたはイメージリストを定義できます。 また、資産または各資産の背後にある個々の画像に対して設定できる属性があり、これらのアセットがどのように表示されるかや方法を変更できます。  
 
-  **イメージ マニフェスト スキーマ**  
+  **イメージマニフェストスキーマ**  
 
-  イメージの完了のマニフェストのようになります。  
+  イメージマニフェスト全体は次のようになります。  
 
 ```xml  
 <ImageManifest>  
@@ -89,9 +89,9 @@ ms.locfileid: "67824685"
 </ImageManifest>  
 ```  
 
- **シンボル**  
+ **文字**  
 
- 読みやすさと保守に役立てるため、イメージ マニフェストは、属性値のシンボルを使用できます。 このようなシンボルが定義されます。  
+ 読みやすく、保守を容易にするために、イメージマニフェストでは属性値にシンボルを使用できます。 シンボルは次のように定義されます。  
 
 ```xml  
 <Symbols>  
@@ -104,13 +104,13 @@ ms.locfileid: "67824685"
 
 |||  
 |-|-|  
-|**サブ要素**|**定義**|  
-|インポート|現在のマニフェストで使用するための指定されたマニフェスト ファイルのシンボルをインポートします。|  
-|GUID|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|  
-|ID|シンボルは、ID を表し、負でない整数でなければなりません|  
-|String|シンボルは、任意の文字列値を表します|  
+|**要素**|**定義**|  
+|インポート|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|  
+|Guid|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|  
+|ID|シンボルは ID を表し、負でない整数である必要があります|  
+|String|シンボルは任意の文字列値を表します。|  
 
- シンボルは、大文字と小文字、および $(symbol-name) 構文を使用して参照には。  
+ シンボルは大文字と小文字が区別され、$ (symbol-name) 構文を使用して参照されます。  
 
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -118,24 +118,24 @@ ms.locfileid: "67824685"
 </Image>  
 ```  
 
- いくつかの記号は、すべてのマニフェストを事前定義されています。 これらの Uri の属性で使用できる、\<ソース > または\<インポート > 要素をローカル コンピューター上の参照のパス。  
+ 一部のシンボルは、すべてのマニフェストに事前に定義されています。 これらは、ローカルコンピューター上のパスを参照するために、\<ソース > の Uri 属性または \<Import > 要素で使用できます。  
 
 |||  
 |-|-|  
-|**シンボル**|**説明**|  
-|CommonProgramFiles|%Commonprogramfiles% 環境変数の値|  
-|LocalAppData|LocalAppData 環境変数の値|  
-|ManifestFolder|マニフェスト ファイルを含むフォルダー|  
-|[マイ ドキュメント]|現在のユーザーのマイ ドキュメント フォルダーの完全なパス|  
-|ProgramFiles|%Programfiles% 環境変数の値|  
-|システム|Windows \system32 フォルダー|  
-|%Windir%|WinDir 環境変数の値|  
+|**表す**|**説明**|  
+|CommonProgramFiles|% CommonProgramFiles% 環境変数の値|  
+|LocalAppData|% LocalAppData% 環境変数の値|  
+|ManifestFolder|マニフェストファイルを含むフォルダー|  
+|マイドキュメント|現在のユーザーの [マイドキュメント] フォルダーの完全なパス|  
+|ProgramFiles|% ProgramFiles% 環境変数の値|  
+|System|Windows\System32 フォルダー|  
+|WinDir|% WinDir% 環境変数の値|  
 
  **イメージ**  
 
- \<イメージ > 要素は、モニカーで参照できるイメージを定義します。 GUID と組み合わされる ID は、イメージ モニカーを形成します。 イメージのモニカーは、全体のイメージ ライブラリ全体で一意である必要があります。 1 つ以上のイメージに指定したモニカーがある場合は、ライブラリのビルド中に発生した 1 つ目が保持される 1 つにします。  
+ \<Image > 要素は、モニカーによって参照できるイメージを定義します。 イメージモニカーを形成する GUID と ID。 イメージのモニカーは、イメージライブラリ全体で一意である必要があります。 複数のイメージに特定のモニカーが含まれている場合は、ライブラリのビルド中に最初に検出されたものが保持されます。  
 
- ソースの少なくとも 1 つ含める必要があります。 サイズに依存しないソースは、サイズの広範な範囲にわたる最適な結果を提供しますが、必須ではありません。 定義されていないサイズのイメージのサービスが求められるかどうか、\<イメージ > 要素のサイズに依存しないソースがないと、サービスが最適なサイズに固有のソースを選択し、要求されたサイズに拡大します。  
+ 少なくとも1つのソースが含まれている必要があります。 サイズに依存しないソースでは、さまざまなサイズの範囲で最適な結果が得られますが、必須ではありません。 サービスが \<Image > 要素で定義されていないサイズのイメージを要求し、サイズに依存しないソースが存在しない場合、サービスは最適なサイズ固有のソースを選択し、要求されたサイズにスケーリングします。  
 
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -147,13 +147,13 @@ ms.locfileid: "67824685"
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|Guid|[必須]イメージのモニカーの GUID 部分|  
-|ID|[必須]イメージのモニカーの ID 部分|  
-|AllowColorInversion|[省略可能、既定値は true]イメージが黒っぽい背景で使用されるときに反転されるプログラムでの色を持つかどうかを示します。|  
+|Guid|必要イメージモニカーの GUID 部分|  
+|ID|必要イメージモニカーの ID 部分|  
+|AllowColorInversion|[省略可能、既定値は true]画像の色を、濃色の背景で使用するときにプログラムによって反転するかどうかを示します。|  
 
  **ソース**  
 
- \<ソース > 要素が 1 つのイメージのソース資産 (XAML および PNG) を定義します。  
+ \<Source > 要素は、単一のイメージソース資産 (XAML および PNG) を定義します。  
 
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -164,21 +164,21 @@ ms.locfileid: "67824685"
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **属性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               [必須]イメージを読み込むことを定義する URI。 次のいずれかを指定できます。<br /><br /> は、 [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)アプリケーションを使用して:///オーソリティ<br />-絶対コンポーネント リソース参照<br />-ネイティブ リソースを含むファイルへのパス                                                                                                                                                                                                                                                                                                               |
-|  背景   | [省略可能]背景が使用するものでは、ソースの種類にどのようなことを示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> *ライト:* ソースは、明るい背景で使用できます。<br /><br /> <em>濃い:</em>ソースは、暗い背景で使用できます。<br /><br /> *ハイコントラスト:* ソースは、ハイ コントラスト モードで、色の背景で使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイ コントラスト モードで明るい背景で使用できます。<br /><br /> *HighContrastDark:* ソースは、ハイ コントラスト モードで暗い背景で使用できます。<br /><br /> バック グラウンド属性を省略した場合は、任意のバック グラウンドで、ソースを使用できます。<br /><br /> 背景色が場合*光*、*濃い*、 *HighContrastLight*、または*HighContrastDark*ソースの色を反転ことはありません。 バック グラウンドを省略するかに設定した場合*ハイコントラスト*、ソースの色の反転は、イメージのによって制御される**AllowColorInversion**属性。 |
+|      URI      |                                                                                                                                                                                                                                                                                                               必要イメージの読み込み元となる場所を定義する URI。 次のいずれかです。<br /><br /> -Application:///機関を使用する[パック URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-コンポーネントの絶対リソース参照<br />-ネイティブリソースを含むファイルへのパス                                                                                                                                                                                                                                                                                                               |
+|  背景   | Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかです。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> <em>ダーク:</em>ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark* *の場合*、ソースの色は反転されません。 Background が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
- A\<ソース > 要素は省略可能な次のサブ要素の 1 つだけであることができます。  
+ \<ソース > 要素には、次の省略可能なサブ要素のうち1つだけを指定できます。  
 
 ||||  
 |-|-|-|  
-|**要素**|**属性 (必要なすべて)**|**定義**|  
-|\<サイズ >|[値]|(デバイス単位) で指定されたサイズのイメージのソースが使用されます。 画像は正方形になります。|  
-|\<SizeRange >|MinSize、MaxSize|ソースは、範囲 (デバイス単位) の最大サイズに MinSize からイメージに使用されます。 画像は正方形になります。|  
-|\<ディメンション >|Width、Height|指定した幅と高さ (デバイス単位) のイメージのソースが使用されます。|  
-|\<DimensionRange >|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|ソースは、範囲 (デバイス単位) で最大の幅と高さを幅/高さの最小値からのイメージに使用されます。|  
+|**要素**|**属性 (すべて必須)**|**定義**|  
+|\<サイズ >|値|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|  
+|\<SizeRange >|MinSize、MaxSize|ソースは、MinSize から MaxSize (デバイスユニット単位) のイメージに使用されます。 画像は正方形になります。|  
+|ディメンションの \<>|幅、高さ|ソースは、指定された幅と高さ (デバイス単位) のイメージに使用されます。|  
+|\<DimensionRange >|MinWidth、Minwidth、<br /><br /> MaxWidth、Maxwidth|ソースは、幅/高さの最小値から最大幅/高さ (デバイス単位) までのイメージに使用されます。|  
 
- A\<ソース > 要素は省略可能なこともできます\<NativeResource > を定義するサブ要素を\<ソース > マネージ アセンブリではなく、ネイティブ アセンブリから読み込むことができます。  
+ \<ソースの > 要素には、省略可能な \<Nの Esource > サブ要素を含めることもできます。これにより、マネージアセンブリではなくネイティブアセンブリから読み込まれた \<ソース > が定義されます。  
 
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -187,12 +187,12 @@ ms.locfileid: "67824685"
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|型|[必須]XAML または PNG のいずれかのネイティブのリソースの種類|  
-|ID|[必須]ネイティブ リソースの整数 ID の部分|  
+|種類|必要ネイティブリソースの型 (XAML または PNG)|  
+|ID|必要ネイティブリソースの整数の ID 部分|  
 
  **ImageList**  
 
- \<ImageList > 要素が 1 つのストリップに返すことができるイメージのコレクションを定義します。 ストリップは、必要に応じて、オンデマンドで構築されます。  
+ \<ImageList > 要素は、1つのストリップで返すことができるイメージのコレクションを定義します。 ストリップは必要に応じて構築されます。  
 
 ```xml  
 <ImageList>  
@@ -204,89 +204,89 @@ ms.locfileid: "67824685"
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|Guid|[必須]イメージのモニカーの GUID 部分|  
-|ID|[必須]イメージのモニカーの ID 部分|  
-|外部|[省略可能、既定値は false]イメージ モニカーが現在のマニフェストでイメージを参照するかどうかを示します。|  
+|Guid|必要イメージモニカーの GUID 部分|  
+|ID|必要イメージモニカーの ID 部分|  
+|外部|[省略可能、既定値は false]イメージモニカーが現在のマニフェスト内のイメージを参照しているかどうかを示します。|  
 
- 含まれているイメージのモニカーを現在のマニフェストで定義されているイメージを参照する必要はありません。 イメージ ライブラリに含まれているイメージが見つからない場合、空のプレース ホルダー イメージは、代わりに使用されます。  
+ 含まれているイメージのモニカーは、現在のマニフェストで定義されているイメージを参照する必要がありません。 含まれているイメージがイメージライブラリに見つからない場合は、空白のプレースホルダーイメージが代わりに使用されます。  
 
-## <a name="using-the-image-service"></a>イメージのサービスを使用します。  
+## <a name="using-the-image-service"></a>イメージサービスの使用  
 
-### <a name="first-steps-managed"></a>最初の手順 (マネージ)  
- イメージのサービスを使用するには、次のアセンブリの一部またはすべてへの参照をプロジェクトに追加する必要があります。  
+### <a name="first-steps-managed"></a>最初の手順 (管理)  
+ イメージサービスを使用するには、次のアセンブリの一部またはすべてへの参照をプロジェクトに追加する必要があります。  
 
-- **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **VisualStudio. ImageCatalog**  
 
-  - 組み込みイメージ カタログ KnownMonikers を使用するかどうかは必要です。  
+  - 組み込みの image catalog KnownMonikers を使用する場合は必須  
 
-- **Microsoft.VisualStudio.Imaging.dll**  
+- **VisualStudio. イメージング**  
 
-  - 使用するかどうかは必ず**CrispImage**と**ImageThemingUtilities** WPF の UI に  
+  - WPF UI で**CrispImage**と**imageのユーティリティ**を使用する場合は必須  
 
-- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **VisualStudio. 14.0. デザイン時..**  
 
-  - 使用するかどうかは必ず、 **ImageMoniker**と**ImageAttributes**型  
+  - **ImageMoniker**型と**ImageAttributes**型を使用する場合は必須  
 
-  - **EmbedInteropTypes**設定が true に設定  
+  - **EmbedInteropTypes**を true に設定する必要があります。  
 
-- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **VisualStudio. 14.0. デザイン時.**  
 
-  - 使用するかどうかは必ず、 **IVsImageService2**型  
+  - **IVsImageService2**型を使用する場合は必須  
 
-  - **EmbedInteropTypes**設定が true に設定  
+  - **EmbedInteropTypes**を true に設定する必要があります。  
 
-- **Microsoft.VisualStudio.Utilities.dll**  
+- **VisualStudio. .dll**  
 
-  - 使用するかどうかは必ず、 **BrushToColorConverter** 、ImageThemingUtilities の **。ImageBackgroundColor** WPF の UI に  
+  - **BrushToColorConverter**を imageutilities に使用する場合は必須です。WPF UI の**Imagebackgroundcolor**  
 
-- **Microsoft.VisualStudio.Shell します。\<VSVersion >.0**  
+- **VisualStudio VSVersion >\<ます。0**  
 
-  - 使用するかどうかは必ず、 **IVsUIObject**型  
+  - **は、ivsuiobject**型を使用する場合は必須  
 
-- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **VisualStudio (... .dll)**  
 
-  - UI の WinForms 関連ヘルパーを使用するかどうかに必要な  
+  - WinForms 関連の UI ヘルパーを使用する場合は必須  
 
-  - **EmbedInteropTypes**設定が true に設定  
+  - **EmbedInteropTypes**を true に設定する必要があります。  
 
 ### <a name="first-steps-native"></a>最初の手順 (ネイティブ)  
- イメージのサービスを使用するには、一部またはすべてのプロジェクトに次のヘッダーを含める必要があります。  
+ イメージサービスを使用するには、次のヘッダーの一部またはすべてをプロジェクトに含める必要があります。  
 
-- **KnownImageIds.h**  
+- **KnownImageIds. h**  
 
-  - 組み込みイメージのカタログを使用するかどうかは必ず**KnownMonikers**、使用できませんが、 **ImageMoniker**から値を返す場合など、型**IVsHierarchy GetGuidProperty**または**GetProperty**呼び出し。  
+  - 組み込みの image catalog **knownmonikers**を使用する場合は必須ですが、 **IVsHierarchy getguidproperty**または**GetProperty**呼び出しから値を返す場合など、 **ImageMoniker**型を使用することはできません。  
 
-- **KnownMonikers.h**  
+- **KnownMonikers. h**  
 
-  - 組み込みイメージのカタログを使用するかどうかは必ず**KnownMonikers**します。  
+  - 組み込みの image catalog **knownmonikers**を使用する場合は必須です。  
 
-- **ImageParameters140.h**  
+- **ImageParameters140**  
 
-  - 使用するかどうかは必ず、 **ImageMoniker**と**ImageAttributes**型。  
+  - **ImageMoniker**および**ImageAttributes**型を使用する場合は必須です。  
 
-- **VSShell140.h**  
+- **VSShell140**  
 
-  - 使用するかどうかは必ず、 **IVsImageService2**型。  
+  - **IVsImageService2**型を使用する場合は必須です。  
 
-- **ImageThemingUtilities.h**  
+- **Imageutilities**  
 
-  - イメージ サービスがテーマを処理できるようにすることがないかどうかに必要です。  
+  - イメージサービスによるテーマの処理を許可しない場合は必須です。  
 
-  - イメージ サービスは、イメージのテーマを処理できる場合は、このヘッダーを使用しないでください。  
+  - イメージサービスがイメージのテーマを処理できる場合は、このヘッダーを使用しないでください。  
 
-- **VSUIDPIHelper.h**  
+- **VSUIDPIHelper. h**  
 
-  - DPI ヘルパーを使用して、現在の DPI を取得するかどうかに必要です。  
+  - DPI ヘルパーを使用して現在の DPI を取得する場合に必要です。  
 
-## <a name="how-do-i-write-new-wpf-ui"></a>新しい WPF の UI を作成する方法はありますか  
+## <a name="how-do-i-write-new-wpf-ui"></a>操作方法新しい WPF UI を作成しますか?  
 
-1. 上記の必要なアセンブリ参照を追加することにより、最初のセクションの手順をプロジェクトにします。 それらのすべてを追加、参照だけが必要なので必要ありません。 (注: を使用している場合やへのアクセスを持っている場合**色**の代わりに**ブラシ**への参照をスキップできます**ユーティリティ**コンバーターの必要はありませんので、)。  
+1. まず、上記の最初の手順セクションで必要なアセンブリ参照をプロジェクトに追加します。 これらのすべてを追加する必要はないため、必要な参照だけを追加します。 (注: を使用している場合や、**ブラシ**ではなく**色**にアクセスできる場合は、コンバーターが不要になるため、**ユーティリティ**への参照をスキップできます)。  
 
-2. 必要なイメージを選択し、そのモニカーを取得します。 使用して、 **KnownMoniker**、または独自のカスタム イメージとモニカーがある場合、独自に使用します。  
+2. 目的のイメージを選択し、そのモニカーを取得します。 **Knownmoniker**を使用するか、独自のカスタムイメージとモニカーがある場合は独自のモニカーを使用します。  
 
-3. 追加**CrispImages** XAML にします。 (詳しくは、次の例を参照してください)。  
+3. **CrispImages**を XAML に追加します。 (以下の例を参照してください)。  
 
-4. 設定、 **ImageThemingUtilities.ImageBackgroundColor** UI 階層内のプロパティ。 (これは、背景色が既知の場合、必ずしもでない場所に設定する必要があります、 **CrispImage**)。(詳しくは、次の例を参照してください)。  
+4. UI 階層で**ImageBackgroundColor**プロパティを設定します。 (これは、必ずしも**CrispImage**ではなく、背景色が既知の場所に設定する必要があります)。(以下の例を参照してください)。  
 
 ```xaml  
 <Window  
@@ -308,35 +308,35 @@ ms.locfileid: "67824685"
 </Window>  
 ```  
 
- **既存の WPF UI の更新方法**  
+ **既存の WPF UI を更新操作方法には**  
 
- 既存の WPF UI の更新は、次の 3 つの基本的な手順で構成される比較的単純なプロセスです。  
+ 既存の WPF UI の更新は、次の3つの基本的な手順で構成される比較的単純なプロセスです。  
 
-1. すべて置換\<イメージ > 要素での UI に\<CrispImage > 要素  
+1. UI 内のすべての \<イメージ > 要素を \<CrispImage > 要素に置き換えます  
 
-2. すべてのソース属性をモニカー属性に変更します。  
+2. すべてのソース属性をモニカー属性に変更します  
 
-    - イメージが変化しないと、使用している場合**KnownMonikers**、するには、そのプロパティを静的にバインド、 **KnownMoniker**します。 (上記の例を参照してください)。  
+    - イメージが変更されず、 **Knownmonikers**を使用している場合は、そのプロパティを**knownmonikers**に静的にバインドします。 (上記の例を参照してください)。  
 
-    - イメージが変更されない、独自のカスタム イメージを使用している場合は、静的にバインド、独自のモニカー。  
+    - イメージが変更されず、独自のカスタムイメージを使用している場合は、独自のモニカーに静的にバインドします。  
 
-    - イメージを変更できる場合は、プロパティの変更を通知するコード プロパティにモニカー属性をバインドします。  
+    - イメージが変更可能な場合は、プロパティの変更を通知するコードプロパティにモニカー属性をバインドします。  
 
-3. どこかに、UI 階層で次のように設定します。 **ImageThemingUtilities.ImageBackgroundColor**正しく動作させる、色の反転を確認してください。  
+3. UI 階層内の任意の場所で、 **ImageBackgroundColor**を設定して、色の反転が正しく機能することを確認します。  
 
-    - これを使用する必要があります、 **BrushToColorConverter**クラス。 (上記の例を参照してください)。  
+    - このためには、 **BrushToColorConverter**クラスの使用が必要になることがあります。 (上記の例を参照してください)。  
 
-## <a name="how-do-i-update-win32-ui"></a>Win32 の UI の更新方法  
- 置換イメージの生の読み込みに該当する場合は、コードに、次を追加します。 必要に応じて、HIMAGELIST と HICONs とようなを返すための値を切り替えます。  
+## <a name="how-do-i-update-win32-ui"></a>Win32 UI 操作方法更新しますか?  
+ 適切な場所にあるコードに次のコードを追加して、イメージの未加工の読み込みを置き換えます。 必要に応じて HBITMAPs、Hbitmaps、HBITMAPS を返す値を切り替えます。  
 
- **イメージ サービスを取得します。**  
+ **イメージサービスを取得する**  
 
 ```cpp  
 CComPtr<IVsImageService2> spImgSvc;  
 CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);  
 ```  
 
- **イメージを要求します。**  
+ **イメージの要求**  
 
 ```cpp  
 ImageAttributes attr = { 0 };  
@@ -357,16 +357,16 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
 
 ```  
 
-## <a name="how-do-i-update-winforms-ui"></a>WinForms UI の更新方法  
- 置換イメージの生の読み込みに該当する場合は、コードに、次を追加します。 必要に応じて、アイコンとビットマップを返すための値を切り替えます。  
+## <a name="how-do-i-update-winforms-ui"></a>WinForms UI を更新操作方法ますか?  
+ 適切な場所にあるコードに次のコードを追加して、イメージの未加工の読み込みを置き換えます。 必要に応じて、ビットマップとアイコンを返すように値を切り替えます。  
 
- **ステートメントを使用してを参考になった**  
+ **役に立つ using ステートメント**  
 
 ```csharp  
 using GelUtilities = Microsoft.Internal.VisualStudio.PlatformUI.Utilities;  
 ```  
 
- **イメージ サービスを取得します。**  
+ **イメージサービスを取得する**  
 
 ```csharp  
 // This or your preferred way of querying for Visual Studio services  
@@ -374,7 +374,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
 ```  
 
- **イメージを要求します。**  
+ **イメージを要求する**  
 
 ```csharp  
 ImageAttributes attributes = new ImageAttributes  
@@ -398,23 +398,23 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 ```  
 
-## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>新しいツール ウィンドウのイメージ モニカーを使用する方法  
- Visual Studio 2015 用の VSIX パッケージ プロジェクト テンプレートが更新されました。 新しいツール ウィンドウを作成するには、VSIX プロジェクトを右クリックし、[新しい項目の追加] を選択します。 (Ctrl + Shift + A)。 プロジェクトの言語の機能拡張 ノードで「カスタム ツール ウィンドウで」を選択します。 ツール ウィンドウに名前を付け、追加 ボタンを押します。  
+## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>新しいツールウィンドウでイメージモニカーを使用操作方法には  
+ VSIX パッケージプロジェクトテンプレートが Visual Studio 2015 用に更新されました。 新しいツールウィンドウを作成するには、VSIX プロジェクトを右クリックし、[新しい項目の追加...] を選択します。 (Ctrl + Shift + A)。 プロジェクト言語の [機能拡張] ノードで、[カスタムツールウィンドウ] を選択し、ツールウィンドウに名前を付けて、[追加] ボタンを押します。  
 
- これらは、ツール ウィンドウでモニカーを使用するキーの場所です。 各手順に従います。  
+ これらは、ツールウィンドウでモニカーを使用するための重要な場所です。 それぞれの手順に従います。  
 
-1. ツール ウィンドウ タブ タブ小さい場合 (Ctrl + タブ ウィンドウの切り替えでは使用も) 十分です。  
+1. タブが十分に小さく (Ctrl + Tab ウィンドウスイッチャーでも使用されている)、[ツールウィンドウ] タブ。  
 
-    派生したクラスのコンス トラクターにこの行を追加、 **ToolWindowPane**型。  
+    **Createtoolwindow は toolwindowpane**型から派生したクラスのコンストラクターに次の行を追加します。  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
    this.BitmapImageMoniker = KnownMonikers.Blank;  
    ```  
 
-2. ツール ウィンドウを開くコマンド。  
+2. ツールウィンドウを開くコマンド。  
 
-    パッケージの .vsct ファイルでは、ツール ウィンドウのコマンド ボタンを編集します。  
+    パッケージの vsct ファイルで、ツールウィンドウのコマンドボタンを編集します。  
 
    ```xml  
    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
@@ -429,29 +429,29 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
    </Button>  
    ```  
 
-   **既存のツール ウィンドウのイメージ モニカーを使用する方法**  
+   **既存のツールウィンドウでイメージモニカーを使用操作方法には**  
 
-   イメージ モニカーを使用する既存のツール ウィンドウを更新することは、新しいツール ウィンドウを作成するための手順に似ています。  
+   イメージモニカーを使用するように既存のツールウィンドウを更新する方法は、新しいツールウィンドウを作成する手順と似ています。  
 
-   これらは、ツール ウィンドウでモニカーを使用するキーの場所です。 各手順に従います。  
+   これらは、ツールウィンドウでモニカーを使用するための重要な場所です。 それぞれの手順に従います。  
 
-3. ツール ウィンドウ タブ タブ小さい場合 (Ctrl + タブ ウィンドウの切り替えでは使用も) 十分です。  
+3. タブが十分に小さく (Ctrl + Tab ウィンドウスイッチャーでも使用されている)、[ツールウィンドウ] タブ。  
 
-   1. 派生したクラスのコンス トラクターでこれらの行を削除 (存在する場合)、 **ToolWindowPane**型。  
+   1. **Createtoolwindow は toolwindowpane**型から派生したクラスのコンストラクターに、次の行が存在する場合は削除します。  
 
        ```csharp  
        this.BitmapResourceID = <Value>;  
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. 手順 1. を参照してください、"How Do I 新しいツール ウィンドウのイメージ モニカーを使用して" 前のセクション。  
+   2. 「新しいツールウィンドウでイメージモニカーを使用するにはどうすればよいですか?」の手順 #1 を参照してください。 セクションを参照してください。  
 
-4. ツール ウィンドウを開くコマンド。  
+4. ツールウィンドウを開くコマンド。  
 
-   - 手順 2 の参照、"How Do I 新しいツール ウィンドウのイメージ モニカーを使用して" 前のセクション。  
+   - 「新しいツールウィンドウでイメージモニカーを使用するにはどうすればよいですか?」の手順 #2 を参照してください。 セクションを参照してください。  
 
-## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>.Vsct ファイルのイメージ モニカーを使用する方法  
- 次のコメント行で示されている、.vsct ファイルを更新します。  
+## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>操作方法、vsct ファイルでイメージモニカーを使用しますか。  
+ 次のコメント行に示されているように、vsct ファイルを更新します。  
 
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -491,11 +491,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>  
 ```  
 
- **場合、.vsct ファイルは、古いバージョンの Visual Studio によって読み取られるも必要ですか。**  
+ **以前のバージョンの Visual Studio でも、vsct ファイルを読み取る必要がある場合はどうすればよいでしょうか。**  
 
- Visual Studio の以前のバージョンを認識しない、 **IconIsMoniker**コマンド フラグ。 旧形式のイメージを使用して、以前のバージョンの Visual Studio を引き続きサポートするには、Visual Studio のバージョンでは、イメージのサービスからのイメージを使用できます。 これを行うにが変更されていない (と Visual Studio の以前のバージョンと互換性のあるため)、.vsct ファイルのままにし、.vsct ファイルで定義されている GUID と ID のペアからマップする CSV (コンマ区切り値) ファイルを作成\<ビットマップ > イメージ要素モニカーの GUID と ID のペア。  
+ 以前のバージョンの Visual Studio では、 **Iconismoniker**コマンドフラグは認識されません。 イメージサービスのイメージは、それをサポートするバージョンの Visual Studio で使用できますが、以前のバージョンの Visual Studio では引き続き古い形式のイメージを使用できます。 これを行うには、(そのため、以前のバージョンの Visual Studio と互換性がある) vsct ファイルを変更せずに、.csv ファイルの \<ビットマップ > 要素で定義されている GUID と ID のペアからイメージモニカー GUID/ID ペアにマップする CSV (コンマ区切り値) ファイルを作成します。  
 
- CSV のマッピング ファイルの形式です。  
+ マッピング CSV ファイルの形式は次のとおりです。  
 
 ```  
 Icon guid, Icon id, Moniker guid, Moniker id  
@@ -503,49 +503,49 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,1,fda30684-682d-421c-8be4-650a2967058e,100
 b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200  
 ```  
 
- CSV ファイルはパッケージと共にデプロイされ、その場所がで指定された、 **IconMappingFilename**のプロパティ、 **ProvideMenuResource**パッケージ属性。  
+ CSV ファイルはパッケージと共に配置され、その場所は、**次のよう**に指定されます。  
 
 ```csharp  
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
 
- **IconMappingFilename**がいずれかの相対パスに暗黙的にルート (例のように、上記)、$PackageFolder$ または絶対パスが明示的に @"%UserProfile%\ など、環境変数によって定義されたディレクトリをルートとdir1\dir2\MyMappingFile.csv"。  
+ **Iconmappingfilename**は $PackageFolder $ (上の例のように) で暗黙的にルート化された相対パスか、または環境変数で定義されているディレクトリ (@ "%UserProfile%\dir1\dir2\MyMappingFile.csv" など) を明示的にルートとする絶対パスです。  
 
-## <a name="how-do-i-port-a-project-system"></a>プロジェクト システムを移植する方法は?  
+## <a name="how-do-i-port-a-project-system"></a>プロジェクトシステムを操作方法ポート  
  **プロジェクトの ImageMonikers を指定する方法**  
 
-1. 実装**VSHPROPID_SupportsIconMonikers**プロジェクトの**IVsHierarchy**、true を返すとします。  
+1. プロジェクトの**IVsHierarchy**に**VSHPROPID_SupportsIconMonikers**を実装し、true を返します。  
 
-2. いずれも実装して**VSHPROPID_IconMonikerImageList** (元のプロジェクトが使用されている場合**VSHPROPID_IconImgList**) または**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**、 **VSHPROPID_OpenFolderIconMonikerId** (元のプロジェクトが使用されている場合**VSHPROPID_IconHandle**と**VSHPROPID_OpenFolderIconHandle**)。  
+2. **VSHPROPID_IconMonikerImageList** (元のプロジェクトが**VSHPROPID_IconImgList**使用されている場合) または**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**、 **VSHPROPID_OpenFolderIconMonikerId**を実装します (元のプロジェクトが**VSHPROPID_IconHandle**と**VSHPROPID_OpenFolderIconHandle**を使用していた場合)。  
 
-3. 拡張ポイントを要求している場合は、「レガシ」のバージョンのアイコンを作成するアイコンの元の VSHPROPIDs の実装を変更します。 **IVsImageService2**これらのアイコンを取得するために必要な機能を提供します  
+3. 拡張ポイントが要求した場合、アイコンの元の VSHPROPIDs の実装を変更して、アイコンの "レガシ" バージョンを作成します。 **IVsImageService2**は、これらのアイコンを取得するために必要な機能を提供します。  
 
-   **追加の要件の VB/c# プロジェクトの種類**  
+   **VB/C#プロジェクトフレーバーの追加要件**  
 
-   実装するだけ**VSHPROPID_SupportsIconMonikers** 、プロジェクトがあることを検出した場合、**最も外側のフレーバー**します。 それ以外の場合、実際の最も外側のフレーバーでは実際には、イメージ モニカーをサポートしていませんが、基本のフレーバーが効果的に「隠す」カスタマイズされたイメージ。  
+   プロジェクトが**最も外側のフレーバー**であることを検出した場合にのみ、 **VSHPROPID_SupportsIconMonikers**を実装します。 そうしないと、実際には最も外側のフレーバーによってイメージモニカーがサポートされず、基本フレーバーでは、カスタマイズされたイメージを効果的に "隠す" ことができます。  
 
-   **CPS 内のイメージ モニカーを使用する方法**  
+   **CPS でイメージモニカーを使用操作方法には**  
 
-   手動でまたはプロジェクト システムの機能拡張 SDK に付属している項目テンプレートを使用して、CPS (共通プロジェクト システム) でのカスタム イメージの設定を行うことができます。  
+   CPS でのカスタムイメージの設定 (Common Project System) は、手動で行うことも、プロジェクトシステム拡張 SDK に付属する項目テンプレートを使用して行うこともできます。  
 
-   **プロジェクト システムの拡張機能 SDK を使用します。**  
+   **プロジェクトシステム機能拡張 SDK の使用**  
 
-   手順に従って[プロジェクトの種類/項目の種類のカスタム アイコンを提供](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md)CPS イメージをカスタマイズします。 CPS の詳細についてで見つかります[Visual Studio プロジェクト システムの機能拡張のドキュメント](https://github.com/Microsoft/VSProjectSystem)  
+   [「プロジェクトの種類/項目の種類のカスタムアイコンを指定](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md)する」の手順に従って、CPS イメージをカスタマイズします。 CPS の詳細については、 [Visual Studio プロジェクトシステムの機能拡張](https://github.com/Microsoft/VSProjectSystem)に関するドキュメントを参照してください。  
 
-   **ImageMonikers を使用して手動で**  
+   **ImageMonikers を手動で使用する**  
 
-4. 実装およびエクスポート、 **IProjectTreeModifier**プロジェクト システムでのインターフェイス。  
+4. プロジェクトシステムに**Iprojecttreemodifier**インターフェイスを実装してエクスポートします。  
 
-5. 決定**KnownMoniker**または使用するカスタム イメージのモニカー。  
+5. 使用する**knownmoniker**またはカスタムイメージモニカーを決定します。  
 
-6. **ApplyModifications**メソッドを次の操作を新しいツリーを返す前に、メソッドのどこかに、次の例。  
+6. **Applymodifications**メソッドで、次の例のように、新しいツリーを返す前に、メソッドのどこかで次の操作を実行します。  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
    ```  
 
-7. 目的のモニカーのような NewTree メソッドに渡すことで、カスタム イメージを設定するには、新しいツリーを作成する場合、次の例。  
+7. 新しいツリーを作成する場合は、次の例のように、目的のモニカーを NewTree メソッドに渡してカスタムイメージを設定できます。  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
@@ -559,38 +559,38 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
                                                 expandedIcon);  
    ```  
 
-## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>モニカ ベースのイメージ ストリップに実際のイメージ ストリップから変換する方法  
- **HIMAGELISTs をサポートする必要があります。**  
+## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>実際のイメージストリップからモニカーベースのイメージストリップに変換操作方法ますか。  
+ **HIMAGELISTs をサポートする必要があります**  
 
- イメージ サービスの使用を更新したいが、イメージ リストの周囲の受け渡しを必要とする Api によって制限されるコードの既存のイメージ ストリップがある場合、イメージのサービスの利点を取得することができます。 モニカ ベースのイメージ ストリップを作成するには、既存のモニカーからマニフェストを作成する次の手順に従います。  
+ イメージサービスを使用するために更新するコードの既存のイメージストリップが既に存在する場合、イメージリストを渡す必要がある Api によって制限されている場合でも、イメージサービスの利点を得ることができます。 モニカーベースのイメージストリップを作成するには、次の手順に従って、既存のモニカーからマニフェストを作成します。  
 
-1. 実行、 **ManifestFromResources**ツール、イメージ ストリップを渡します。 これにより、ストリップのマニフェストが生成されます。  
+1. **Manifestfromresources**ツールを実行し、イメージストリップを渡します。 これにより、ストリップのマニフェストが生成されます。  
 
-   - お勧めします。 その使用法に合わせてマニフェストの既定以外の名前を提供します。  
+   - 推奨: マニフェストの使用に合わせて既定以外の名前を指定します。  
 
-2. のみを使用する場合**KnownMonikers**、次の操作を行います。  
+2. **Knownmonikers**のみを使用している場合は、次の手順を実行します。  
 
-   - 置換、\<イメージ > セクションを使用したマニフェストの\<イメージ/>。  
+   - マニフェストの \<イメージ > セクションを \<Images/> に置き換えます。  
 
-   - すべてのサブイメージ Id の削除 (を含むもの\<imagestrip 名 > _ ##)。  
+   - すべてのサブイメージ Id (\<imagestrip 名 > _ # #) を削除します。  
 
-   - AssetsGuid シンボルとその使用法に合わせてイメージ ストリップ シンボルお勧めします。 名前を変更します。  
+   - 推奨: Asセット Guid シンボルとイメージストリップシンボルの使用方法に合わせて名前を変更します。  
 
-   - 各を置き換える**ContainedImage**の各 GUID $(ImageCatalogGuid) で置き換える**ContainedImage**の ID では、$(\<モニカー >)、各に外部="true"属性を追加および**ContainedImage**  
+   - 各文字列の GUID を $ (ImageCatalogGuid) に置き換え **、各** **文字列の ID**を $ (\<moniker >) に置き換え、外部 = "true" 属性**を各型**に追加します。  
 
-       - \<モニカー > 置き換える必要があります、 **KnownMoniker**イメージと一致するが、"KnownMonikers"。 名前から削除されます。  
+       - \<モニカー > は、イメージと一致するが、"Knownmoniker" を持つ**Knownmoniker**に置き換える必要があります。 名前から削除されます。  
 
-   - 追加 < インポート Manifest="$(ManifestFolder)\\< 相対インストールへのパスを dir\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\>の先頭に、\<シンボル > セクション。  
+   - < インポートマニフェスト = "$ (ManifestFolder)\\<\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\> への相対インストールディレクトリパスを \<シンボル > セクションの先頭に追加します。  
 
-       - 相対パスは、マニフェストの作成の設定で定義されている配置場所によって決まります。  
+       - 相対パスは、マニフェストのセットアップ作成で定義されている配置場所によって決まります。  
 
-3. 実行、 **ManifestToCode**既存のコードがあるイメージ ストリップに対してイメージのサービスのクエリに使用できるモニカーを持つように、ラッパーを生成するためのツール。  
+3. **Manifesttocode**ツールを実行してラッパーを生成します。これにより、既存のコードに、イメージストリップのイメージサービスを照会するために使用できるモニカーが含まれるようになります。  
 
-   - 推奨: ラッパーとその使用状況に合わせて名前空間の既定以外の名前を指定します。  
+   - 推奨: ラッパーと名前空間の使用法に合わせて、既定以外の名前を指定します。  
 
-4. すべては、追加すると、セットアップの作成/デプロイ、およびイメージのサービスと新しいファイルを操作するには、その他のコード変更します。  
+4. イメージサービスと新しいファイルを操作するために、追加、セットアップの作成/配置、およびその他のコード変更をすべて実行します。  
 
-   それがどのようにして、内部および外部の両方のイメージを含むサンプル マニフェスト:  
+   内部イメージと外部イメージの両方を含むサンプルマニフェストは、次のように表示されます。  
 
 ```xml  
 <?xml version="1.0"?>  
@@ -641,122 +641,122 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 </ImageManifest>  
 ```  
 
- **HIMAGELISTs をサポートする必要はありません。**  
+ **HIMAGELISTs をサポートする必要はありません**  
 
-1. セットを決定する**KnownMonikers**イメージ ストリップ内のイメージを一致や、イメージ ストリップのイメージの独自のモニカーを作成します。  
+1. イメージストリップ内のイメージに一致する**knownmonikers**のセットを確認するか、イメージストリップ内のイメージ用に独自のモニカーを作成します。  
 
-2. 代わりに、モニカーを使用するイメージ ストリップに必要なインデックス位置にあるイメージを取得するために使用するどのようなマッピングを更新します。  
+2. イメージストリップ内の必要なインデックスにあるイメージを取得するために使用したすべてのマッピングを更新して、代わりにモニカーを使用します。  
 
-3. 更新されたマッピングを使用してモニカーを要求するイメージのサービスを使用するコードを更新します。 (更新する可能性があります**CrispImages**のマネージ コード、またはイメージのサービスからのようなまたは HICONs の要求とそれらのネイティブ コードに渡すことです)。  
+3. イメージサービスを使用して、更新されたマッピングによってモニカーを要求するようにコードを更新します。 (これは、マネージコードの**CrispImages**を更新したり、イメージサービスから hbitmaps や hbitmaps を要求したり、ネイティブコードの周囲に渡したりすることを意味します)。  
 
 ## <a name="testing-your-images"></a>イメージのテスト  
- イメージ ライブラリ ビューアー ツールを使用して、すべてが正しく作成されているかどうかを確認する、イメージのマニフェストをテストすることができます。 ツールを見つけることができます、 [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)します。 このツールおよびその他のドキュメントを参照して[ここ](https://aka.ms/VSImageThemeTools)します。  
+ イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)で入手できます。 このツールとその他のドキュメントについては、[こちら](https://aka.ms/VSImageThemeTools)を参照してください。  
 
-## <a name="additional-resources"></a>その他の技術情報  
+## <a name="additional-resources"></a>その他のリソース  
 
-### <a name="samples"></a>サンプル  
- Visual Studio のサンプルを GitHub でのいくつかは、さまざまな Visual Studio 機能拡張ポイントの一部として、イメージのサービスを使用する方法について説明更新されました。  
+### <a name="samples"></a>Samples  
+ GitHub の Visual Studio サンプルのいくつかが更新され、さまざまな Visual Studio 機能拡張ポイントの一部としてイメージサービスを使用する方法が示されるようになりました。  
 
- 確認[ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples)の最新のサンプルです。  
+ 最新のサンプルについては、 [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples)を確認してください。  
 
 ### <a name="tooling"></a>ツール  
- 一連のイメージのサービスのサポート ツールは、イメージのサービスと連携する UI の作成/更新で支援するために作成されました。 各ツールの詳細については、ツールに付属するドキュメントを確認してください。 ツールはの一部として含める、 [Visual Studio 2015 SDK。](https://msdn.microsoft.com/library/bb166441.aspx)  
+ イメージサービスに対応した UI を作成または更新する際に役立つ、イメージサービスの一連のサポートツールが作成されました。 各ツールの詳細については、ツールに付属のドキュメントを参照してください。 これらのツールは、 [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)の一部として含まれています。  
 
  **ManifestFromResources**  
 
- リソースのツールから、マニフェストは、イメージ リソース (PNG や XAML) の一覧を受け取り、それらのイメージをイメージのサービスを使用するためのイメージのマニフェスト ファイルを生成します。  
+ Manifest from Resources ツールは、イメージリソース (PNG または XAML) の一覧を取得し、イメージサービスでこれらのイメージを使用するためのイメージマニフェストファイルを生成します。  
 
  **ManifestToCode**  
 
- マニフェスト ツールのコードには、イメージのマニフェスト ファイルを受け取り、コード (C++、c# または VB) または .vsct ファイルでマニフェストの値を参照するためのラッパー ファイルを生成します。  
+ Manifest to Code ツールは、イメージマニフェストファイルを受け取り、コード (C++、 C#、または VB) または vsct ファイルでマニフェスト値を参照するためのラッパーファイルを生成します。  
 
  **ImageLibraryViewer**  
 
- イメージ ライブラリ ビューアーのツールでは、イメージ マニフェストを読み込むことができ、により、Visual Studio のマニフェストが正しく作成されているかどうかを確認すると同じ方法でそれらを操作するユーザー。 ユーザーは、バック グラウンド、サイズ、DPI の設定、ハイ コントラスト、およびその他の設定を変更できます。 マニフェストでエラーを見つけるための読み込み情報が表示され、マニフェスト内の各イメージのソース情報を表示します。  
+ イメージライブラリビューアーツールでは、イメージマニフェストを読み込んで、Visual Studio がマニフェストを正しく作成するのと同じ方法でユーザーが操作できるようにすることができます。 ユーザーは、背景、サイズ、DPI 設定、ハイコントラストなどの設定を変更できます。 また、マニフェスト内のエラーを検出するための読み込み情報が表示され、マニフェスト内の各イメージのソース情報が表示されます。  
 
-## <a name="faq"></a>FAQ  
+## <a name="faq"></a>よく寄せられる質問  
 
-- 読み込むときに含める必要のある依存している\<Include="Microsoft.VisualStudio.* の参照。Interop.14.0.DesignTime"/> でしょうか。  
+- \<参照を読み込むときに含める必要がある依存関係がある場合は、VisualStudio. * を指定します。14.0. デザイン時 "/>?  
 
-  - 設定 EmbedInteropTypes = すべての相互運用機能 Dll では、"true"です。  
+  - すべての相互運用 Dll で EmbedInteropTypes = "true" に設定します。  
 
-- My の拡張機能でイメージ マニフェストがデプロイする方法  
+- 拡張機能を使用してイメージマニフェストをデプロイ操作方法には  
 
-  - .Imagemanifest ファイルをプロジェクトに追加します。  
+  - Imagemanifest ファイルをプロジェクトに追加します。  
 
-  - 「VSIX に含める」が True に設定します。  
+  - [VSIX に含める] を True に設定します。  
 
-- CPS プロジェクト システムが更新されます。 変更点**ImageName**と**StockIconService**でしょうか。  
+- ここでは、CPS プロジェクトシステムを更新しています。 **ImageName**と**stockiconservice**はどうなりましたか?  
 
-  - これらは、モニカーを使用する CPS が更新されたときに削除されました。 呼び出しが不要になった、 **StockIconService**を渡すだけの目的**KnownMoniker**メソッドまたはプロパティを使用して、 **ToProjectSystemType()** で拡張メソッドCPS のユーティリティです。 マッピングを見つけることができます**ImageName**に**KnownMonikers**下。  
+  - これらは、モニカーを使用するように CPS を更新したときに削除されました。 **Stockiconservice**を呼び出す必要がなくなりました。 CPS ユーティリティで**ToProjectSystemType ()** 拡張メソッドを使用して、目的の**knownmoniker**をメソッドまたはプロパティに渡すだけです。 次のように、 **ImageName**から**knownmonikers**へのマッピングを見つけることができます。  
 
     |||  
     |-|-|  
     |**ImageName**|**KnownMoniker**|  
-    |ImageName.OfflineWebApp|KnownImageIds.Web|  
-    |ImageName.WebReferencesFolder|KnownImageIds.Web|  
-    |ImageName.OpenReferenceFolder|KnownImageIds.FolderOpened|  
-    |ImageName.ReferenceFolder|KnownImageIds.Reference|  
-    |ImageName.Reference|KnownImageIds.Reference|  
-    |ImageName.SdlWebReference|KnownImageIds.WebReferenceFolder|  
-    |ImageName.DiscoWebReference|KnownImageIds.DynamicDiscoveryDocument|  
-    |ImageName.Folder|KnownImageIds.FolderClosed|  
-    |ImageName.OpenFolder|KnownImageIds.FolderOpened|  
-    |ImageName.ExcludedFolder|KnownImageIds.HiddenFolderClosed|  
-    |ImageName.OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|  
-    |ImageName.ExcludedFile|KnownImageIds.HiddenFile|  
-    |ImageName.DependentFile|KnownImageIds.GenerateFile|  
-    |ImageName.MissingFile|KnownImageIds.DocumentWarning|  
-    |ImageName.WindowsForm|KnownImageIds.WindowsForm|  
-    |ImageName.WindowsUserControl|KnownImageIds.UserControl|  
-    |ImageName.WindowsComponent|KnownImageIds.ComponentFile|  
-    |ImageName.XmlSchema|KnownImageIds.XMLSchema|  
-    |ImageName.XmlFile|KnownImageIds.XMLFile|  
-    |ImageName.WebForm|KnownImageIds.Web|  
-    |ImageName.WebService|KnownImageIds.WebService|  
-    |ImageName.WebUserControl|KnownImageIds.WebUserControl|  
-    |ImageName.WebCustomUserControl|KnownImageIds.WebCustomControl|  
-    |ImageName.AspPage|KnownImageIds.ASPFile|  
-    |ImageName.GlobalApplicationClass|KnownImageIds.SettingsFile|  
-    |ImageName.WebConfig|KnownImageIds.ConfigurationFile|  
-    |ImageName.HtmlPage|KnownImageIds.HTMLFile|  
-    |ImageName.StyleSheet|KnownImageIds.StyleSheet|  
-    |ImageName.ScriptFile|KnownImageIds.JSScript|  
-    |ImageName.TextFile|KnownImageIds.Document|  
-    |ImageName.SettingsFile|KnownImageIds.Settings|  
-    |ImageName.Resources|KnownImageIds.DocumentGroup|  
-    |ImageName.Bitmap|KnownImageIds.Image|  
-    |ImageName.Icon|KnownImageIds.IconFile|  
-    |ImageName.Image|KnownImageIds.Image|  
-    |ImageName.ImageMap|KnownImageIds.ImageMapFile|  
-    |ImageName.XWorld|KnownImageIds.XWorldFile|  
-    |ImageName.Audio|KnownImageIds.Sound|  
-    |ImageName.Video|KnownImageIds.Media|  
-    |ImageName.Cab|KnownImageIds.CABProject|  
-    |ImageName.Jar|KnownImageIds.JARFile|  
-    |ImageName.DataEnvironment|KnownImageIds.DataTable|  
-    |ImageName.PreviewFile|KnownImageIds.Report|  
-    |ImageName.DanglingReference|KnownImageIds.ReferenceWarning|  
-    |ImageName.XsltFile|KnownImageIds.XSLTransform|  
-    |ImageName.Cursor|KnownImageIds.CursorFile|  
-    |ImageName.AppDesignerFolder|KnownImageIds.Property|  
-    |ImageName.Data|KnownImageIds.Database|  
-    |ImageName.Application|KnownImageIds.Application|  
-    |ImageName.DataSet|KnownImageIds.DatabaseGroup|  
-    |ImageName.Pfx|KnownImageIds.Certificate|  
-    |ImageName.Snk|KnownImageIds.Rule|  
-    |ImageName.VisualBasicProject|KnownImageIds.VBProjectNode|  
-    |ImageName.CSharpProject|KnownImageIds.CSProjectNode|  
-    |ImageName.Empty|KnownImageIds.Blank|  
-    |ImageName.MissingFolder|KnownImageIds.FolderOffline|  
-    |ImageName.SharedImportReference|KnownImageIds.SharedProject|  
-    |ImageName.SharedProjectCs|KnownImageIds.CSSharedProject|  
-    |ImageName.SharedProjectVc|KnownImageIds.CPPSharedProject|  
-    |ImageName.SharedProjectJs|KnownImageIds.JSSharedProject|  
-    |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
-    |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
+    |ImageName. OfflineWebApp|KnownImageIds. Web|  
+    |ImageName フォルダー|KnownImageIds. Web|  
+    |ImageName. OpenReferenceFolder|KnownImageIds. FolderOpened|  
+    |ImageName. ReferenceFolder|KnownImageIds. 参照|  
+    |ImageName. 参照|KnownImageIds. 参照|  
+    |SdlWebReference|KnownImageIds. WebReferenceFolder|  
+    |DiscoWebReference|KnownImageIds. DynamicDiscoveryDocument|  
+    |ImageName. フォルダー|KnownImageIds. FolderClosed|  
+    |ImageName. OpenFolder|KnownImageIds. FolderOpened|  
+    |ExcludedFolder|KnownImageIds|  
+    |OpenExcludedFolder|KnownImageIds|  
+    |ExcludedFile|KnownImageIds|  
+    |ImageName. DependentFile|KnownImageIds GenerateFile|  
+    |MissingFile|KnownImageIds. DocumentWarning|  
+    |ImageName フォーム|KnownImageIds. WindowsForm|  
+    |ImageName. WindowsUserControl|KnownImageIds. UserControl|  
+    |WindowsComponent|KnownImageIds ComponentFile|  
+    |ImageName. XmlSchema|KnownImageIds. XMLSchema|  
+    |XmlFile|KnownImageIds|  
+    |ImageName. Web フォーム|KnownImageIds. Web|  
+    |ImageName. WebService|KnownImageIds. WebService|  
+    |ImageName. WebUserControl|KnownImageIds WebUserControl|  
+    |ImageName. WebCustomUserControl|KnownImageIds|  
+    |ImageName. AspPage|KnownImageIds ASPFile)|  
+    |ImageName. GlobalApplicationClass|KnownImageIds. SettingsFile|  
+    |ImageName. WebConfig|KnownImageIds 場合|  
+    |ImageName. HtmlPage|KnownImageIds HTMLFile)|  
+    |ImageName. StyleSheet|KnownImageIds. StyleSheet|  
+    |ScriptFile|KnownImageIds|  
+    |TextFile|KnownImageIds. ドキュメント|  
+    |ImageName ファイル。 SettingsFile|KnownImageIds. 設定|  
+    |ImageName. リソース|KnownImageIds. DocumentGroup|  
+    |ImageName. Bitmap|KnownImageIds. イメージ|  
+    |ImageName. アイコン|KnownImageIds. IconFile|  
+    |ImageName. イメージ|KnownImageIds. イメージ|  
+    |ImageName.ImageMap|KnownImageIds|  
+    |ImageName. XWorld|KnownImageIds|  
+    |ImageName. Audio|KnownImageIds。サウンド|  
+    |ImageName. ビデオ|KnownImageIds。メディア|  
+    |ImageName .Cab|KnownImageIds. CABProject|  
+    |ImageName. Jar|KnownImageIds|  
+    |ImageName. DataEnvironment|KnownImageIds. DataTable|  
+    |ImageName ファイル|KnownImageIds. レポート|  
+    |DanglingReference|KnownImageIds. ReferenceWarning|  
+    |ImageName.XsltFile|KnownImageIds|  
+    |ImageName. カーソル|KnownImageIds. カーソルファイル|  
+    |ImageName. Appデザイナフォルダー|KnownImageIds. プロパティ|  
+    |ImageName. データ|KnownImageIds. データベース|  
+    |ImageName. アプリケーション|KnownImageIds. アプリケーション|  
+    |ImageName. DataSet|KnownImageIds. DatabaseGroup|  
+    |ImageName. .Pfx|KnownImageIds. Certificate|  
+    |ImageName. .Snk|KnownImageIds. ルール|  
+    |ImageName. VisualBasicProject|KnownImageIds. VBProjectNode|  
+    |CSharpProject|KnownImageIds. CSProjectNode|  
+    |ImageName. Empty|KnownImageIds。空白|  
+    |MissingFolder|KnownImageIds. FolderOffline|  
+    |SharedImportReference|KnownImageIds. SharedProject|  
+    |ImageName. SharedProjectCs|KnownImageIds. CSSharedProject|  
+    |ImageName. SharedProjectVc|KnownImageIds. CPPSharedProject|  
+    |ImageName. SharedProjectJs|KnownImageIds|  
+    |CSharpCodeFile|KnownImageIds|  
+    |ImageName. VisualBasicCodeFile|KnownImageIds.VBFileNode|  
 
-  - 入力候補一覧プロバイダーが更新されます。 どのような**KnownMonikers**を古い一致**StandardGlyphGroup**と**StandardGlyph**値でしょうか。  
+  - 入力候補一覧のプロバイダーを更新しています。 以前の**StandardGlyphGroup**値と**standardglyph**値に一致する**knownmonikers**は何ですか。  
 
     ||||  
     |-|-|-|  
@@ -814,16 +814,16 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupInterface|GlyphItemProtected|InterfaceProtected|  
     |GlyphGroupInterface|GlyphItemPrivate|InterfacePrivate|  
     |GlyphGroupInterface|GlyphItemShortcut|InterfaceShortcut|  
-    |GlyphGroupMacro|GlyphItemPublic|MacroPublic|  
-    |GlyphGroupMacro|GlyphItemInternal|MacroInternal|  
-    |GlyphGroupMacro|GlyphItemFriend|MacroInternal|  
-    |GlyphGroupMacro|GlyphItemProtected|MacroProtected|  
-    |GlyphGroupMacro|GlyphItemPrivate|MacroPrivate|  
-    |GlyphGroupMacro|GlyphItemShortcut|MacroShortcut|  
+    |GlyphGroupMacro|GlyphItemPublic|マクロパブリック|  
+    |GlyphGroupMacro|GlyphItemInternal|マクロ内部|  
+    |GlyphGroupMacro|GlyphItemFriend|マクロ内部|  
+    |GlyphGroupMacro|GlyphItemProtected|マクロの保護|  
+    |GlyphGroupMacro|GlyphItemPrivate|マクロプライベート|  
+    |GlyphGroupMacro|GlyphItemShortcut|マクロのショートカット|  
     |GlyphGroupMap|GlyphItemPublic|MapPublic|  
     |GlyphGroupMap|GlyphItemInternal|MapInternal|  
     |GlyphGroupMap|GlyphItemFriend|MapInternal|  
-    |GlyphGroupMap|GlyphItemProtected|MapProtected|  
+    |GlyphGroupMap|GlyphItemProtected|このようにして|  
     |GlyphGroupMap|GlyphItemPrivate|MapPrivate|  
     |GlyphGroupMap|GlyphItemShortcut|MapShortcut|  
     |GlyphGroupMapItem|GlyphItemPublic|MapItemPublic|  
@@ -856,12 +856,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupNamespace|GlyphItemProtected|NamespaceProtected|  
     |GlyphGroupNamespace|GlyphItemPrivate|NamespacePrivate|  
     |GlyphGroupNamespace|GlyphItemShortcut|NamespaceShortcut|  
-    |GlyphGroupOperator|GlyphItemPublic|OperatorPublic|  
-    |GlyphGroupOperator|GlyphItemInternal|OperatorInternal|  
-    |GlyphGroupOperator|GlyphItemFriend|OperatorInternal|  
-    |GlyphGroupOperator|GlyphItemProtected|OperatorProtected|  
-    |GlyphGroupOperator|GlyphItemPrivate|OperatorPrivate|  
-    |GlyphGroupOperator|GlyphItemShortcut|OperatorShortcut|  
+    |GlyphGroupOperator|GlyphItemPublic|オペレーターパブリック|  
+    |GlyphGroupOperator|GlyphItemInternal|演算子内部|  
+    |GlyphGroupOperator|GlyphItemFriend|演算子内部|  
+    |GlyphGroupOperator|GlyphItemProtected|保護されたオペレーター|  
+    |GlyphGroupOperator|GlyphItemPrivate|オペレータープライベート|  
+    |GlyphGroupOperator|GlyphItemShortcut|演算子のショートカット|  
     |GlyphGroupProperty|GlyphItemPublic|PropertyPublic|  
     |GlyphGroupProperty|GlyphItemInternal|PropertyInternal|  
     |GlyphGroupProperty|GlyphItemFriend|PropertyInternal|  
@@ -869,11 +869,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupProperty|GlyphItemPrivate|PropertyPrivate|  
     |GlyphGroupProperty|GlyphItemShortcut|PropertyShortcut|  
     |GlyphGroupStruct|GlyphItemPublic|StructurePublic|  
-    |GlyphGroupStruct|GlyphItemInternal|StructureInternal|  
-    |GlyphGroupStruct|GlyphItemFriend|StructureInternal|  
-    |GlyphGroupStruct|GlyphItemProtected|StructureProtected|  
-    |GlyphGroupStruct|GlyphItemPrivate|StructurePrivate|  
-    |GlyphGroupStruct|GlyphItemShortcut|StructureShortcut|  
+    |GlyphGroupStruct|GlyphItemInternal|内部構造|  
+    |GlyphGroupStruct|GlyphItemFriend|内部構造|  
+    |GlyphGroupStruct|GlyphItemProtected|保護された構造|  
+    |GlyphGroupStruct|GlyphItemPrivate|構造体プライベート|  
+    |GlyphGroupStruct|GlyphItemShortcut|構造体のショートカット|  
     |GlyphGroupTemplate|GlyphItemPublic|TemplatePublic|  
     |GlyphGroupTemplate|GlyphItemInternal|TemplateInternal|  
     |GlyphGroupTemplate|GlyphItemFriend|TemplateInternal|  
@@ -947,31 +947,31 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
-    |GlyphBscFile||クラスファイル|  
+    |GlyphBscFile||ClassFile|  
     |GlyphAssembly||参照|  
     |GlyphLibrary||ライブラリ|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
     |GlyphCppProject||CPPProjectNode|  
     |GlyphDialogId||ダイアログ|  
-    |GlyphOpenFolder||FolderOpened|  
-    |GlyphClosedFolder||FolderClosed|  
+    |GlyphOpenFolder||開かれたフォルダー|  
+    |GlyphClosedFolder||閉じたフォルダー|  
     |GlyphArrow||GoToNext|  
     |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||スニペット|  
+    |GlyphCSharpExpansion||短い|  
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  
     |GlyphRecursion||再帰|  
-    |GlyphXmlItem||タグ|  
+    |GlyphXmlItem||Tag|  
     |GlyphJSharpProject||DocumentCollection|  
     |GlyphJSharpDocument||ドキュメント|  
     |GlyphForwardType||GoToNext|  
-    |GlyphCallersGraph||の|  
+    |GlyphCallersGraph||CallTo|  
     |GlyphCallGraph||CallFrom|  
     |GlyphWarning||StatusWarning|  
-    |GlyphMaybeReference||疑問符|  
-    |GlyphMaybeCaller||の|  
+    |GlyphMaybeReference||QuestionMark|  
+    |GlyphMaybeCaller||CallTo|  
     |GlyphMaybeCall||CallFrom|  
     |GlyphExtensionMethod||ExtensionMethod|  
     |GlyphExtensionMethodInternal||ExtensionMethod|  

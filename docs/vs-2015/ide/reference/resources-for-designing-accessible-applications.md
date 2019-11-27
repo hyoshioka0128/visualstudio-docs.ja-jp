@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665562"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297789"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ユーザー補助 Windows アプリケーションおよび Web サイトを開発するためのヒントと例、およびユーザー補助設計をサポートする技術については、以下のリンク先を参照してください。 ユーザー補助についての一般的な情報は、Web サイト [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) にあります。
+ユーザー補助 Windows アプリケーションおよび Web サイトを開発するためのヒントと例、およびユーザー補助設計をサポートする技術については、以下のリンク先を参照してください。 ユーザー補助についての一般的な情報は、Web サイト [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/) にあります。
 
 ## <a name="technologies"></a>技術情報
 
@@ -42,7 +42,7 @@ ms.locfileid: "72665562"
 
 - [コンソール ユーザー補助](/previous-versions/windows/desktop/dnacc/console-accessibility) この技術情報では、ユーザー補助のサポートのために Windows XP でコンソールを表示するための API とイベントについて説明します。
 
-## <a name="web-sites"></a>Web サイト
+## <a name="web-sites"></a>Web Sites のオフライン インストールの準備
 
 - [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) このトピックでは、Web 用のユーザー補助設計のヒントに加え、ユーザー補助コントロールをサンプル Web ページに含めるための手順を順番に説明します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72665562"
 
 ### <a name="third-party-resources"></a>サードパーティのリソース
 
-- **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)」を参照してください。
+- **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)

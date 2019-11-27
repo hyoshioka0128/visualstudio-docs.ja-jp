@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651243"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300246"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 モデリング図を使用すると、コードや、ソフトウェア システムで対応する必要があるユーザー要求について、効果的に理解して明確にし、アイデアを伝え合うことができます。 たとえば、ユーザー要求を記述して伝えるために、UML (Unified Modeling Language: 統一モデリング言語) のユース ケース図、アクティビティ図、クラス図、およびシーケンス図を使用できます。 システムの機能を記述して伝えるために、UML のコンポーネント図、クラス図、アクティビティ図、およびシーケンス図を使用できます。
 
- 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
+ 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
 
  このリリースでは、次の UML 図を作成できます。
 
@@ -81,7 +81,7 @@ ms.locfileid: "72651243"
 |[UML クラス図からコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラスC#ダイアグラムからコードを生成**して、実装を開始します。|
 |[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|ステレオタイプを使用して**モデル要素をカスタマイズ**し、特定の目的のために標準の UML モデル要素を拡張します。|
 |[モデル要素と作業項目とのリンク](../modeling/link-model-elements-and-work-items.md)|モデル**要素と作業項目の間にリンクを作成**して、モデルの特定の部分に関連付けられているタスク、テストケース、バグ、要件、問題、またはその他の種類の作業を追跡します。|
-|[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|**モデルと図を保存**して、他のユーザーと共有できるようにします。これには、[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] を使用しないユーザーも含まれます。|
+|[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|**モデルと図を保存**して、他のユーザーと共有できるようにします。これには、[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]を使用しないユーザーも含まれます。|
 
 ## <a name="related-tasks"></a>関連タスク
 
@@ -94,8 +94,8 @@ ms.locfileid: "72651243"
 |[開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)<br /><br /> [アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|モデルを使用すると、システムの開発中に効果的にシステムを理解して変更することができます。|
 |[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)|大規模または中規模のプロジェクトでモデルを整理します。|
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|

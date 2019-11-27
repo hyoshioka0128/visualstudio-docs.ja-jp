@@ -46,14 +46,14 @@ HRESULT AddApplication(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、`IProcessDebugManager::AddApplication` が呼び出されるたびにプロセスデバッグマネージャーによって呼び出されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Imachinedebugmanager インターフェイス](../../winscript/reference/imachinedebugmanager-interface.md)   
- [Imachinedebugmanager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)    
+ [Imachinedebugmanager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

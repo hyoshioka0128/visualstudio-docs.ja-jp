@@ -22,29 +22,29 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572383"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>'continue' をループの外に設定できません。
-ループの外側で**continue**ステートメントを使用しようとしました。 **Continue**ステートメントは、の本体内でのみ使用できます。  
+ループ外で **continue** ステートメントを使用しようとしました。 **continue** ステートメントは、以下の本文内でのみ使用できます。  
   
-- `do-while` ループ、  
+- `do-while` ループ  
   
-- `while` ループ、  
+- `while` ループ  
   
-- **for ループ,**  
+- **ために**ループ  
   
-- **for/in**ループ。  
+- **for/in** ループ  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- の本体内に**continue**ステートメントが記述されていることを確認します。  
+- **continue** ステートメントは以下の本体内にのみ表示されます。  
   
-  - `do-while` ループ、  
+  - `do-while` ループ  
 
-  - `while` ループ、  
+  - `while` ループ  
 
-  - **for ループ,**  
+  - **ために**ループ  
 
-  - **for/in**ループ。  
+  - **for/in** ループ  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Continue ステートメント](../../javascript/reference/continue-statement-javascript.md)   
  [プログラムフローの制御](../../javascript/controlling-program-flow-javascript.md)   
  [スクリプトのトラブルシューティング](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

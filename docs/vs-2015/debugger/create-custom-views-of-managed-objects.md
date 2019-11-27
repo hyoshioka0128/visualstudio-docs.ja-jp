@@ -52,7 +52,7 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
   
  また、ネイティブ型の表示は、式エバリュエーター アドインを記述してカスタマイズできます。 詳細については、「 [Eeaddin サンプル: デバッグ式エバリュエーターアドイン](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   
  [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
  [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)   

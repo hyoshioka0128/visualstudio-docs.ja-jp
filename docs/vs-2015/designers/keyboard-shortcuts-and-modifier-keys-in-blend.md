@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1068c87a8979b853dd27de1b35e2449d7f96eaf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664331"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300801"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend でのキーボード ショートカットと修飾キー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "72664331"
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")ショートカットのあるメニュー項目の横に表示されるショートカットキー
 
-  アクセシビリティと各種機能について詳しくは、「[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=75069)」をご覧ください。
+  アクセシビリティと各種機能について詳しくは、「[マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkId=75069)」をご覧ください。
 
 ## <a name="modifier-keys"></a>修飾キー
  キーボード ショートカットの中には、対応するメニュー項目がないものがあります。このようなショートカットは、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] のユーザー インターフェイスに表示されません。 次のトピックは、オブジェクトのサイズを変更する場合などに、ツールの動作 (行う操作) を変更するショートカットを一覧しています。

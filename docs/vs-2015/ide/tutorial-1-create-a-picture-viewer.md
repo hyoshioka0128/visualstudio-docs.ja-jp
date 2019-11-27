@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ad57a05e45b7e9acd3db455f0a8849166dc3c735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654762"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299910"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>チュートリアル 1: ピクチャ ビューアーの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,7 @@ ms.locfileid: "72654762"
 
   ![このチュートリアルで作成する画像](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")このチュートリアルで作成する画像
 
-  サンプルの完全バージョンをダウンロードするには、「[Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)」 (画像ビューアーのチュートリアルの完全なサンプル) を参照してください。
-
-  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[操作方法: Visual Basic でのピクチャビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205207)」または「[操作方法: 画像ビューアー C#の作成方法](http://go.microsoft.com/fwlink/?LinkId=205198)」を参照してください。
+  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[操作方法: Visual Basic でのピクチャビューアーの作成](https://go.microsoft.com/fwlink/?LinkId=205207)」または「[操作方法: 画像ビューアー C#の作成方法](https://go.microsoft.com/fwlink/?LinkId=205198)」を参照してください。
 
 > [!NOTE]
 > これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。 このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
@@ -52,7 +50,7 @@ ms.locfileid: "72654762"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
 |[手順 1: Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)|最初に Windows フォーム アプリケーション プロジェクトを作成します。|
 |[手順 2: プログラムの実行](../ide/step-2-run-your-program.md)|前の手順で作成した Windows フォーム アプリケーション プログラムを実行します。|

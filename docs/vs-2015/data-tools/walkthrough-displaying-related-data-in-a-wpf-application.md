@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602463"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299583"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>チュートリアル: WPF アプリケーションでの関連データの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ ms.locfileid: "72602463"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で初期化します。
 
-- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](http://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
+- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
 
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72602463"
 
 - WPF デザイナーの操作。 詳細については、「 [WPF と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)」を参照してください。
 
-- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
+- WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
 
 ## <a name="creating-the-project"></a>プロジェクトの作成
  新しい WPF プロジェクトを作成して注文レコードを表示します。
@@ -71,9 +71,9 @@ ms.locfileid: "72602463"
 
 5. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。
 
-6. **[名前]** ボックスに「 `AdventureWorksOrdersViewer`」と入力します。
+6. **[名前]** ボックスに「`AdventureWorksOrdersViewer`」と入力します。
 
-7. **[OK]** をクリックします。
+7. **[OK]** をクリックすると、
 
      Visual Studio によって `AdventureWorksOrdersViewer` プロジェクトが作成されます。
 
@@ -94,7 +94,7 @@ ms.locfileid: "72602463"
 
    - AdventureWorksLT サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これを選択します。
 
-      -または-
+      または
 
    - **[新しい接続]** をクリックし、AdventureWorksLT データベースへの接続を作成します。
 
@@ -108,7 +108,7 @@ ms.locfileid: "72602463"
 
 7. **[完了]** をクリックします。
 
-8. プロジェクトをビルドします。
+8. プロジェクトをビルドする。
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>注文を表示するデータバインドコントロールの作成
  **[データソース]** ウィンドウから WPF デザイナーに `SalesOrderHeaders` エンティティをドラッグして、注文レコードを表示するコントロールを作成します。
@@ -198,12 +198,12 @@ ms.locfileid: "72602463"
 
     - **[Sales ORDER ID]** コンボボックスには、 **71774**が表示されます。 これは、エンティティの最初の注文 ID です。
 
-    - **[Sales ORDER ID]** コンボボックスで選択した注文ごとに、詳細な注文情報が <xref:System.Windows.Controls.DataGrid> に表示されます。
+    - **[Sales ORDER ID]** コンボボックスで選択した注文ごとに、詳細な注文情報が <xref:System.Windows.Controls.DataGrid>に表示されます。
 
 2. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルを完了した後、Visual Studio の **[データソース]** ウィンドウを使用して、WPF コントロールを他の種類のデータソースにバインドする方法について説明します。 詳細については、「 [WCF データサービスへの wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」および「[データセットへの Wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio でのデータへの wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)

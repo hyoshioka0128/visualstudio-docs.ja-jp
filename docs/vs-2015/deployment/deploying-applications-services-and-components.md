@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260681"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289818"
 ---
 # <a name="deploying-applications-services-and-components"></a>アプリケーション、サービス、およびコンポーネントの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,18 +40,18 @@ ms.locfileid: "66260681"
   
 |配置シナリオ|関連する参照先|  
 |-------------------------|------------------------|  
-|**クラウドへの発行します。** 行うことができますアプリケーション、サービス、およびデータから使用可能な Microsoft Azure に配置する Visual Studio を使用して任意の場所。|[Microsoft Azure にアプリケーションの発行](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Windows ストア アプリを発行するには。** ビルドを送信、および世界中のお客様に、Windows ストアからアプリを販売を簡単にできます。|[パッケージ化、展開、および Windows ストア アプリのクエリ](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**発行、Windows Phone アプリ。** 新しいアプリまたは既存のアプリ、Windows Phone デベロッパー センターの証明書の更新を送信することができます。|[Windows Phone のアプリを発行します。](http://dev.windowsphone.com/publish)|  
-|**ASP.NET アプリケーションまたはサービスを展開します。** 多数の異なる方法では、ASP.NET アプリケーションおよびサービスをデプロイできます。|[ASP.NET web アプリケーションとサービスの展開](http://www.asp.net/aspnet/overview/deployment)|  
-|**LightSwitch アプリケーションまたはサービスをデプロイするには。** LightSwitch を使用して、アプリケーションと OData サービスを作成した後、web サーバーまたは Microsoft Azure 展開することができます。|[LightSwitch アプリケーションの配置](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
-|**SharePoint アプリケーションを発行します。** For SharePoint を Office ストアまたは組織内部のアプリ カタログには、アプリケーションを発行できます。|[Visual Studio を使用して SharePoint アプリケーションを発行します。](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Office アプリケーションを発行します。** Office ストアまたは組織内部のアプリケーション カタログ、Office 用アプリを発行できます。|[Office 用アプリの発行](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**WCF サービスをデプロイします。** Web サーバーに配置した WCF RIA サービスを他のアプリケーションで使用できます。|[展開の WCF RIA サービス ソリューション](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**OData サービスをデプロイします。** その他のアプリケーションでは、web サーバーに配置した OData サービスを使用できます。|[OData サービスをデプロイします。](https://msdn.microsoft.com/library/hh973447.aspx)|  
-|**デスクトップ アプリケーションをデプロイするには。** ClickOnce 配置を使用すると、web サーバーまたはネットワーク ファイル共有をデスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。|[ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)|  
-|**セットアップ プログラムを作成します。** これは無料の InstallShield Limited Edition を使用して、セットアップ プログラムを作成できます。|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**既存のセットアップ プログラムを管理するには。** Visual Studio Installer Projects Extension をインストールすることで、Visual Studio の以前のバージョンで作成されたセットアップ プログラムを使用して続行します。|[Visual Studio Installer Projects Extension](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> インストーラー プロジェクトについては、ここで入手できます。[Visual Studio インストーラーの配置](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Visual C アプリケーションをデプロイします。** 集中配置、ローカル配置、または静的リンクを使用して、アプリケーションと共に Visual C ランタイムをデプロイできます。|[ネイティブ デスクトップ アプリケーションの配置 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
-|**テスト対象のアプリケーションをデプロイします。** アプリケーションを仮想環境に配置することで、より高度な開発と試験が可能になります。|[ラボ環境でのテスト](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**前提条件をインストールします。** ブートストラップと呼ばれる一般的なインストーラーを構成すると、デスクトップ アプリケーションの必須コンポーネントをインストールできます。|[アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)|
+|**クラウドに発行する:** Visual Studio を使用してアプリケーション、サービス、およびデータをどこからでも使用できるようにし、Microsoft Azure に配置できます。|[アプリケーションを Microsoft Azure に発行する](/visualstudio/deployment/quickstart-deploy-to-azure)|  
+|**Windows ストアアプリを発行する:** Windows ストアから世界中の顧客にアプリを簡単に作成、送信、販売できます。|[Windows ストアアプリのパッケージ化、配置、およびクエリ](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Windows Phone アプリを発行する:** Windows Phone デベロッパーセンターで認定を取得するために、既存のアプリに新しいアプリまたは更新プログラムを送信することができます。|[Windows Phone アプリを発行する](https://developer.microsoft.com/)|  
+|**ASP.NET アプリケーションまたはサービスをデプロイします。** ASP.NET アプリケーションとサービスは、さまざまな方法でデプロイできます。|[ASP.NET web アプリケーションとサービスのデプロイ](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**LightSwitch アプリケーションまたはサービスをデプロイします。** LightSwitch を使用してアプリケーションと OData サービスを作成した後、それらのサービスを web サーバーまたは Microsoft Azure に配置できます。|[LightSwitch アプリケーションの配置](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
+|**SharePoint 用アプリの発行:** SharePoint 用アプリは、Office ストアまたは社内組織のアプリカタログに発行できます。|[Visual Studio を使用して SharePoint 用アプリを発行する](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
+|**Office 用アプリを発行する:** Office ストアまたは社内組織のアプリカタログに Office 用アプリを発行できます。|[Office 用アプリの発行](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
+|**WCF サービスをデプロイします。** 他のアプリケーションでは、web サーバーに配置する WCF RIA サービスを使用できます。|[WCF RIA Services ソリューションの配置](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
+|**OData サービスをデプロイします。** 他のアプリケーションでは、web サーバーに配置する OData サービスを使用できます。|[OData サービスをデプロイする](https://msdn.microsoft.com/library/hh973447.aspx)|  
+|**デスクトップアプリケーションを展開します。** ClickOnce 配置を使用すると、デスクトップアプリケーションを web サーバーまたはネットワークファイル共有に発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。|[ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)|  
+|**セットアッププログラムを作成します。** InstallShield の制限付きエディション (無料) を使用して、セットアッププログラムを作成できます。|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
+|**既存のセットアッププログラムを保持する:** Visual Studio インストーラー Projects 拡張機能をインストールして、以前のバージョンの Visual Studio で作成されたセットアッププログラムを使用し続けます。|[Visual Studio インストーラープロジェクトの拡張機能](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> インストーラープロジェクトのドキュメントについては、「 [Visual Studio インストーラー展開](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)」を参照してください。|  
+|**ビジュアルC++アプリケーションを配置する:** 集中配置、ローカルC++配置、または静的リンクを使用して、アプリケーションを使用して visual runtime を配置できます。|[ネイティブ デスクトップ アプリケーションの配置 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**テスト用のアプリケーションを展開します。** アプリケーションを仮想環境にデプロイすることにより、より高度な開発とテストを実現できます。|[ラボ環境でのテスト](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
+|**インストールの前提条件:** ブートストラップと呼ばれる汎用インストーラーを構成することにより、デスクトップアプリケーションの必須コンポーネントをインストールできます。|[アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)|

@@ -1,5 +1,5 @@
 ---
-title: 保存された IntelliTrace データを使用して |Microsoft Docs
+title: 保存された IntelliTrace データの使用 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891088"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297136"
 ---
 # <a name="using-saved-intellitrace-data"></a>保存された IntelliTrace データの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
  次のソリューションがあることを確認します。  
   
-- アプリケーション コードのソース ファイルとシンボル (.pdb) ファイルの一致。 シンボル パスにない場合、Visual Studio がソースの場所を解決できないため、「シンボルが見つかりませんでした」というメッセージが表示されます。 参照してください[指定シンボル (.pdb) とソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)と[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。  
+- アプリケーション コードのソース ファイルとシンボル (.pdb) ファイルの一致。 シンボル パスにない場合、Visual Studio がソースの場所を解決できないため、「シンボルが見つかりませんでした」というメッセージが表示されます。 「[シンボル (.pdb) とソースファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)」および「[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。  
   
 - .iTrace ファイルを開くための、開発用コンピューターまたは別のコンピューター上の Visual Studio Enterprise (ただし、Professional または Community Edition を除く)  
   
 - 次のいずれかのソースの .iTrace ファイル  
   
-    |**ソース**|**「**|  
+    |**ソース**|**参照トピック**|  
     |----------------|-------------|  
     |Visual Studio Enterprise Edition (ただし、Professional または Community Edition を除く) での IntelliTrace セッション|[IntelliTrace の機能](../debugger/intellitrace-features.md)|  
     |Microsoft Test Manager のテスト セッション。 これにより、.iTrace ファイルが Team Foundation Server の作業項目にアタッチされます。|[手動テストでの複数の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -55,13 +55,13 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 - Visual Studio の外部で .iTrace ファイルをダブルクリックするか、Visual Studio 内からファイルを開きます。  
   
-     \- または -  
+     \- または  
   
 - .iTrace ファイルが Team Foundation Server の作業項目にアタッチされている場合は、作業項目の次の手順に従います。  
   
   - **[すべてのリンク]** の下で .iTrace ファイルを見つけます。 そのファイルを開きます。  
 
-    \- または -  
+    \- または  
 
   - **[ステップの再現]** の **[IntelliTrace]** リンクを選択します。  
   
@@ -71,7 +71,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 ## <a name="Understand"></a> IntelliTrace ログを理解する  
  .iTrace ファイルの次のセクションの一部は、特定のソース (たとえば、Test Manager、SharePoint アプリケーション) からデータを収集した場合にのみ表示されます。  
   
-|**セクション**|**内容**|**コレクションのソース**|  
+|**Section**|**内容**|**コレクションのソース**|  
 |-----------------|------------------|---------------------------|  
 |[パフォーマンス違反](#Performance)|構成されたしきい値を超えた関数呼び出しのパフォーマンス イベント|単独、または IIS ホストされる ASP.NET Web アプリの System Center 2012 R2 Operations Manager と連携して動作する Microsoft Monitoring Agent|  
 |[例外データ](#ExceptionData)|各例外の完全なコール スタックを含む、例外|すべてのソース|  
@@ -98,9 +98,9 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 ##### <a name="to-start-debugging-from-a-performance-event"></a>パフォーマンス イベントからデバッグを開始するには  
   
-1. **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、その他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。  
+1. **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、およびその他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。  
   
-     ![パフォーマンス イベントの詳細を表示する](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![パフォーマンスイベントの詳細の表示](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      イベントをダブルクリックするだけでもかまいません。  
   
@@ -110,17 +110,17 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 3. その呼び出しを展開して、その時点で記録された、入れ子になったすべての呼び出しとパラメーター値を確認します。  
   
-     (キーボード:キーを押すと、入れ子になった呼び出しを非表示、 **→**または**←**キーをそれぞれします。 入れ子になった呼び出しのパラメーター値を表示または非表示にするには、 **スペース** キーを押します。)  
+     (キーボード: 入れ子になった呼び出しを表示または非表示にするには、 **右矢印** キーまたは **左矢印** キーをそれぞれ押します。 入れ子になった呼び出しのパラメーター値を表示または非表示にするには、 **スペース** キーを押します。)  
   
      その呼び出しからデバッグを開始します。  
   
-     ![メソッドの呼び出しからデバッグを開始する](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![メソッド呼び出しからデバッグを開始します](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      また、呼び出しをダブルクリックするか、 **Enter** キーを押すこともできます。  
   
      アプリケーション コードにメソッドが含まれる場合、Visual Studio はそのメソッドに移動します。  
   
-     ![パフォーマンス イベントからアプリケーション コードに移動する](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![パフォーマンスイベントからアプリケーションコードにアクセスする](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      これで、他の記録された値、つまり呼び出し履歴を確認したり、コードをステップ実行したりできます。また、 **IntelliTrace** ウィンドウを使用して、パフォーマンス イベントの発生時に呼び出された [その他のメソッド間を "時間内に" 前後に移動することもできます](../debugger/intellitrace.md) 。  
   
@@ -129,21 +129,21 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 ##### <a name="to-start-debugging-from-an-exception"></a>例外からデバッグを開始するには  
   
-1. **[例外データ]** では、記録された例外イベントとその種類、メッセージ、その例外がいつ発生したかを確認できます。 コードをさらに掘り下げるには、例外グループの最新のイベントからデバッグを開始します。  
+1. **[例外データ]** では、記録された例外イベントとその種類、メッセージ、およびその例外がいつ発生したかを確認できます。 コードをさらに掘り下げるには、例外グループの最新のイベントからデバッグを開始します。  
   
-     ![例外イベントからデバッグを開始する](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![例外イベントからデバッグを開始します](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      イベントをダブルクリックするだけでもかまいません。 イベントがグループ化されていない場合は、 **[このイベントのデバッグ]** をクリックします。  
   
      例外がアプリケーション コードで発生した場合、Visual Studio は例外が発生した場所に移動します。  
   
-     ![例外イベントからアプリケーション コードに移動する](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![例外イベントからアプリケーションコードにアクセスする](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      これで、他の記録された値、つまり呼び出し履歴を確認したり、 **IntelliTrace** ウィンドウを使用して、 [記録されたその他のイベント間を "時間内に" 前後に移動したりできます](../debugger/intellitrace.md)。また、関連するコードや、その時点で記録された値の間も前後に移動できます。  
   
     |**列**|**内容**|  
     |----------------|-------------------|  
-    |**型**|.NET 型の例外|  
+    |**Type**|.NET 型の例外|  
     |グループ化された例外の **[最新メッセージ]** またはグループ化されていない例外の **[メッセージ]**|例外によって提供されるメッセージ|  
     |グループ化された例外の **[カウント]**|例外がスローされた回数|  
     |グループ化されていない例外の **[スレッド ID]**|例外をスローしたスレッドの ID|  
@@ -161,13 +161,13 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 1. SharePoint 相関 ID をソースからコピーします。  
   
-    例えば:  
+    例 :  
   
-    ![IntelliTrace &#45; SharePoint エラー&#45;相関 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint エラー &#45;相関 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
 2. .iTrace ファイルを開き、 **[分析]** に移動して、Web 要求と記録されたイベントの一致を確認するために SharePoint 相関 ID を入力します。  
   
-    ![IntelliTrace ログ&#45;入力 SharePoint 相関 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![IntelliTrace ログ&#45;の SHAREPOINT 相関 ID の入力](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3. **[要求イベント]** で、イベントを確認します。 イベントは、発生した順に上から表示されます。  
   
@@ -175,7 +175,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
    2. **[デバッグ開始]** を選択すると、イベントが発生したポイントでデバッグが開始されます。  
   
-      ![IntelliTrace ログ ファイル&#45;web 要求の表示&#43;イベント](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![IntelliTrace ログファイル&#45;ビュー web 要求&#43;イベント](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
    IntelliTrace イベントと共に、以下の種類の SharePoint イベントが表示されます。  
   
@@ -205,9 +205,9 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 3. **[例外のデバッグ]** を選択して、その例外が発生したポイントでデバッグを開始します。  
   
-    ![IntelliTrace ログ&#45;SharePoint 未処理の例外](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![IntelliTrace ログ&#45;の SharePoint のハンドルされない例外](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   チュートリアルについては、次を参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。 エージェントのレコードが表示されるデータの種類の[IntelliTrace 機能](../debugger/intellitrace-features.md)します。  
+   チュートリアルについては、「[チュートリアル: IntelliTrace を使用した SharePoint アプリケーションのデバッグ](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)」を参照してください。 エージェントによって記録されるデータの種類については、「 [IntelliTrace の機能](../debugger/intellitrace-features.md)」を参照してください。  
   
 ### <a name="ThreadsList"></a> スレッド一覧  
  ターゲット プロセスで実行されたスレッドの記録を確認します。 選択されているスレッドの最初の有効な IntelliTrace イベントからデバッグを開始できます。  
@@ -218,14 +218,14 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 2. **[スレッド一覧]** の下部にある **[デバッグ開始]** を選択します。 スレッドをダブルクリックすることもできます。  
   
-    アプリが始まる場所からデバッグを開始するには、 **[メイン スレッド]** をダブルクリックします。 参照してください[IntelliTrace 機能](../debugger/intellitrace-features.md)します。  
+    アプリが始まる場所からデバッグを開始するには、 **[メイン スレッド]** をダブルクリックします。 「 [IntelliTrace の機能](../debugger/intellitrace-features.md)」を参照してください。  
   
    ユーザーが作成するスレッド データは、IIS でホストされる Web アプリ用にサーバーが作成および管理するスレッドよりも便利な場合があります。  
   
 |**列**|**内容**|  
 |----------------|-------------------|  
 |**ID**|スレッド ID 番号|  
-|**Name**|スレッド名。 名前のないスレッドは "\<No Name>" として表示されます。|  
+|**名前**|スレッド名。 名前のないスレッドは "\<No Name>" として表示されます。|  
 |**開始時刻**|スレッドが作成された時刻|  
 |**終了時刻**|スレッドが完了した時刻|  
   
@@ -267,10 +267,10 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
  [手動テストでの複数の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
- [[IntelliTrace]](../debugger/intellitrace.md)  
+ [IntelliTrace](../debugger/intellitrace.md)  
   
-#### <a name="forums"></a>フォーラム  
- [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)  
+#### <a name="forums"></a>Forums  
+ [Visual Studio デバッガー](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 – Chapter 6 による継続的デリバリーのテスト。テスト ツールボックス](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 6 章: テスト ツールボックス](https://go.microsoft.com/fwlink/?LinkID=255203)

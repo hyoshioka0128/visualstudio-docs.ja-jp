@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660630"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302606"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ ms.locfileid: "72660630"
 
    **ガイダンス**
 
-   詳細については、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 2 章: 単体テスト: 内部のテスト) および「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 5 章: システム テストの自動化) を参照してください。
+   詳細については、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://go.microsoft.com/fwlink/?LinkID=255188)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 2 章: 単体テスト: 内部のテスト) および「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196)」 (Visual Studio 2012 を使用した継続的デリバリーのためのテスト - 第 5 章: システム テストの自動化) を参照してください。
 
 ## <a name="q--a"></a>Q & A
 
@@ -250,7 +250,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
  記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

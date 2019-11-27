@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574627"
 ---
-# <a name="prerequisites-for-remote-debugging-web-applications"></a>Web アプリケーションをリモートデバッグするための前提条件
+# <a name="prerequisites-for-remote-debugging-web-applications"></a>Web アプリケーションをリモート デバッグするための前提条件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーを使用すると、ローカル コンピューターやリモート サーバーで、Web アプリケーションを透過的にデバッグできます。 これは、どちらのコンピューターでもデバッガーの動作は同じであり、同じ機能を使用できることを意味します。 ただし、リモート デバッグを正常に機能させるには、いくつかの必要条件があります。  
@@ -34,6 +34,6 @@ ms.locfileid: "72574627"
   
 - 既定で、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスは ASPNET ユーザー プロセスとして実行されます。 このため、それをデバッグするには、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] が実行されているコンピューターに対する管理者特権が必要です。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ワーカー プロセスの名前は、デバッグ シナリオや IIS のバージョンによって変わります。 詳細については、「 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [システム要件](../debugger/aspnet-debugging-system-requirements.md)

@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0570dcc4b3cc79f2c882d5ddd4f10dc79a21332b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664528"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300860"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>リソースを作成して適用する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XAML デザイナーで、要素のスタイルとテンプレートは "リソース" という再利用可能なエンティティに保存されます。 スタイルを使用すると、要素のプロパティを設定し、それらの設定を複数の要素で再利用することにより、一貫した外観を維持できます。 [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) は、コントロールの外観を定義し、リソースとしての適用も可能です。 詳細については、「[クイック スタート: コントロールのスタイル](http://go.microsoft.com/fwlink/?LinkID=248239)」および「[クイック スタート: コントロール テンプレート](http://go.microsoft.com/fwlink/?LinkID=247982)」を参照してください。
+XAML デザイナーで、要素のスタイルとテンプレートは "リソース" という再利用可能なエンティティに保存されます。 スタイルを使用すると、要素のプロパティを設定し、それらの設定を複数の要素で再利用することにより、一貫した外観を維持できます。 [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) は、コントロールの外観を定義し、リソースとしての適用も可能です。 詳細については、「[クイック スタート: コントロールのスタイル](https://go.microsoft.com/fwlink/?LinkID=248239)」および「[クイック スタート: コントロール テンプレート](https://go.microsoft.com/fwlink/?LinkID=247982)」を参照してください。
 
  既存のプロパティ、[Style](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx)、または `ControlTemplate` から新しいリソースを作成するたびに、 **[リソースの作成]** ダイアログ ボックスで、アプリケーション レベル、ドキュメント レベル、または要素レベルでリソースを定義できます。 定義したレベルに応じて、そのリソースを使用できる場所が決まります。 たとえば、要素レベルで定義したリソースは、そのリソースの作成時に使用した要素にのみ適用できます。 リソースをリソース ディクショナリに格納することも可能です。リソース ディクショナリとは、別のプロジェクトでも再利用できる個別のファイルです。
 
@@ -54,7 +54,7 @@ XAML デザイナーで、要素のスタイルとテンプレートは "リソ�
 
 1. [ドキュメント アウトライン] ウィンドウで、リソースを適用する先の要素を選択します。
 
-2. 次のいずれかの操作を行います。
+2. 以下のいずれかを実行します。
 
    - リソースをプロパティに適用します。 [プロパティ] ウィンドウで、プロパティ値の横にあるプロパティ マーカーを選択し、 **[ローカル リソース]** または **[システム リソース]** を選択し、表示される一覧から使用可能なリソースを選択します。
 
@@ -65,7 +65,7 @@ XAML デザイナーで、要素のスタイルとテンプレートは "リソ�
      > [!NOTE]
      > **[テンプレートの編集]** は、コントロール テンプレートを適用するために使用します。 **[追加テンプレートの編集]** は、その他の種類のテンプレートを適用するために使用されます。
 
-     リソースは互換性のあるものに適用できます。 たとえば、ブラシ リソースは、<xref:Windows.UI.Xaml.Controls.TextBox> コントロールの **[Foreground]** プロパティに適用できます。
+     リソースは互換性のあるものに適用できます。 たとえば、ブラシ リソースは、**コントロールの**[Foreground]<xref:Windows.UI.Xaml.Controls.TextBox> プロパティに適用できます。
 
 ### <a name="to-edit-a-resource"></a>リソースを編集するには
 
@@ -75,5 +75,5 @@ XAML デザイナーで、要素のスタイルとテンプレートは "リソ�
 
 3. リソースのオプションを変更します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

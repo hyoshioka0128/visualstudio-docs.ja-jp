@@ -1,5 +1,5 @@
 ---
-title: エディット コンティニュ (Visual C) |Microsoft Docs
+title: エディットコンティニュ (ビジュアルC++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,25 +18,25 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697393"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301056"
 ---
-# <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C++)
+# <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ プロジェクトでエディット コンティニュを使用できます。 参照してください[サポートされているコードの変更 (C++)](../debugger/supported-code-changes-cpp.md)エディット コンティニュの制限事項についてはします。  
+Visual C++ プロジェクトでエディット コンティニュを使用できます。 エディットコンティニュの制限事項については、「[サポートされてC++いるコード変更 ()](../debugger/supported-code-changes-cpp.md) 」を参照してください。  
   
- Visual Studio 2015 Update 1 以降、使えるようになりましたエディット コンティニュでは、Windows ストア C++ アプリと DirectX アプリで現在サポートされているため、 **/ZI**コンパイラ スイッチと **/bigobj**スイッチします。 コンパイルされたバイナリと、エディット コンティニュを使用することも、 **/FASTLINK**スイッチします。  
+ Visual Studio 2015 更新プログラム1以降では、Windows ストアアプリと DirectX アプリでエディットC++コンティニュを使用できるようになりました。これは、Windows ストアアプリと DirectX アプリでの **/zi**コンパイラ**スイッチがサポート**されるようになったためです。 **/FASTLINK**スイッチを使用してコンパイルされたバイナリでエディットコンティニュを使用することもできます。  
   
- Update 1 のその他の機能強化としては、ファイルがエディット コンティニュをサポートしていない場合にキャンセルできる待機のダイアログと通知が新たに含まれるようになりました。 Update 1 の機能強化の詳細については、次を参照してください。 [Visual Studio 2015 Update 1 で C++ のエディット コンティニュの機能強化](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)します。  
+ Update 1 のその他の機能強化としては、ファイルがエディット コンティニュをサポートしていない場合にキャンセルできる待機のダイアログと通知が新たに含まれるようになりました。 Update 1 の機能強化の詳細については、「 [Visual Studio 2015 update 1 でのエディットコンティニュのC++機能強化](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/)」を参照してください。  
   
  Visual Studio 2013 Update 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションは、[/Od (無効 (デバッグ))](https://msdn.microsoft.com/library/aafb762y.aspx) オプションなしでコンパイルされたバイナリの .pdb (シンボル) ファイルに情報を追加します。  
   
- **/Zo**エディット コンティニュを無効にします。 「[方法:最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)」を参照してください。  
+ **/Zo**は、エディットコンティニュを無効にします。 「[方法: 最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)」をご覧ください。  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> エディット コンティニュを有効または無効にする  
  現在のデバッグ セッション中に適用しないコードの編集を行う場合は、エディット コンティニュの自動起動を無効にすることもできます。 自動エディット コンティニュをもう一度有効にすることもできます。  
@@ -54,7 +54,7 @@ Visual C++ プロジェクトでエディット コンティニュを使用で�
   
  コード変更を明示的に適用する場合、プログラムは中断モードのままとなり実行されません。  
   
-- コードの変更を明示的に適用するには、**[デバッグ]** メニューで **[コード変更を適用]** を選択します。  
+- コードの変更を明示的に適用するには、 **[デバッグ]** メニューで **[コード変更を適用]** を選択します。  
   
 ## <a name="BKMK_How_to_stop_code_changes"></a> コード変更を停止する方法  
  エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。  

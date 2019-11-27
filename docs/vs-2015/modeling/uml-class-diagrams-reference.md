@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6d2368c19292f9e4205cec9f1b42b1553ce3188f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: da4e0e3bab904b660f3d843e105b7d256a63a1b5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658432"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297220"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML クラス図: リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "72658432"
 UML クラス図は、アプリケーションが内部的に使用したり、ユーザーとのやり取りにおいて使用したりするオブジェクトおよび情報の構造を記述するものです。 そこで情報を記述する際に、詳細な実装は考慮されません。 クラスおよび関係は、データベース テーブル、XML ノード、ソフトウェア オブジェクトの組み合わせ、といったさまざまな方法で実装できます。
 
 > [!NOTE]
-> このトピックでは、UML クラス図について説明します。 .NET クラス図と呼ばれる別の種類のクラス図もあります。これは、プログラム コードを視覚化するために使用します。 詳細については、「[クラスと型の設計と表示](http://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
+> このトピックでは、UML クラス図について説明します。 .NET クラス図と呼ばれる別の種類のクラス図もあります。これは、プログラム コードを視覚化するために使用します。 詳細については、「[クラスと型の設計と表示](https://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
 
  UML クラス図を作成するには、 **[アーキテクチャ]** メニューの **[新しい Uml またはレイヤー図]** をクリックします。 UML クラス図を描画する方法の詳細については、「 [Uml クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)」を参照してください。 モデリング図を作成して描画する方法の詳細については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。
 
@@ -78,15 +78,15 @@ UML クラス図は、アプリケーションが内部的に使用したり、�
 |10|**Interface**|外部から認識できるオブジェクトの動作の一部の定義。 詳細については、「 [UML クラス図の型のプロパティ](../modeling/properties-of-types-on-uml-class-diagrams.md)」を参照してください。|
 |11|**列挙**|リテラル値のセットで構成される分類子。|
 |12|**パッケージ**|分類子、関連付け、アクション、生存線、コンポーネント、およびパッケージのグループ。 論理クラス図は、メンバー分類子およびパッケージがパッケージ内に含まれているようすを示します。<br /><br /> 名前はパッケージ内でスコープが設定されるため、 **Package1**内の**class1**は、そのパッケージの外部の**class1**とは区別されません。 パッケージの名前は、その内容の**修飾名**プロパティの一部として表示されます。<br /><br /> 任意の UML 図の リンクされた**パッケージ**のプロパティを設定して、パッケージを参照することができます。 この図に作成した要素はすべて、そのパッケージの一部となります。 これらは、 **UML モデルエクスプローラー**のパッケージの下に表示されます。|
-|13|**[インポート]**|あるパッケージが別のパッケージのすべての定義を含むことを示す、パッケージ間の関係。|
+|13|**Import**|あるパッケージが別のパッケージのすべての定義を含むことを示す、パッケージ間の関係。|
 |14|**関係**|矢じり付きの端部側の分類子が変更された場合、これに依存する分類子の定義または実装が変更される可能性があります。|
 
  ![コネクタとロリポップで表示される実現](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")
 
 |形式|**要素**|説明|
 |-----------|-----------------|-----------------|
-|16|**実現**|クラスは、インターフェイスによって定義される操作および属性を実装します。<br /><br /> **継承**ツールを使用して、クラスとインターフェイスの間の実現を作成します。|
+|15|**実現**|クラスは、インターフェイスによって定義される操作および属性を実装します。<br /><br /> **継承**ツールを使用して、クラスとインターフェイスの間の実現を作成します。|
 |16|**実現**|同じ関係を示す別の表現形式。 ロリポップ シンボルのラベルによってインターフェイスを識別します。<br /><br /> この形式で表現するには、既存の実現関係を選択します。 関連付けの近くにアクション タグが表示されます。 アクションタグをクリックし、 **[ロリポップとして表示]** をクリックします。|
 
-## <a name="see-also"></a>参照
- Uml[モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml](../modeling/uml-class-diagrams-guidelines.md)クラス図: uml クラス[図の型のガイドラインプロパティ](../modeling/properties-of-types-on-uml-class-diagrams.md)uml クラス図の[属性のプロパティ](../modeling/properties-of-attributes-on-uml-class-diagrams.md)uml クラス図の[プロパティのプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md) [UML クラス図の関連付けの](../modeling/properties-of-associations-on-uml-class-diagrams.md)
+## <a name="see-also"></a>関連項目
+ Uml[モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)uml クラス図[:](../modeling/uml-class-diagrams-guidelines.md) uml クラス図の[型のガイドラインプロパティ](../modeling/properties-of-types-on-uml-class-diagrams.md)uml クラス図の[属性の](../modeling/properties-of-attributes-on-uml-class-diagrams.md)プロパティ uml クラス図の[操作の](../modeling/properties-of-operations-on-uml-class-diagrams.md)プロパティ uml クラス図[の関連付けの](../modeling/properties-of-associations-on-uml-class-diagrams.md)プロパティ

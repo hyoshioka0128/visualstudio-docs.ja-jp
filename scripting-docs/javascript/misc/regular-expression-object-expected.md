@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573704"
 ---
 # <a name="regular-expression-object-expected"></a>Regular Expression オブジェクトが必要です。
-@No__t_2 以外の型のオブジェクトに対して、 **regexp**または**regexp**の値のメソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは `RegExp` 型である必要があります。  
+`RegExp`以外の型のオブジェクトに対して、 **regexp**または**regexp**の値のメソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは `RegExp`型である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_2 型のオブジェクトに対してのみ、 **regexp**または**regexp**を呼び出します。  
+- `RegExp`型のオブジェクトに対してのみ、 **regexp**または**regexp**を呼び出します。  
   
-## <a name="see-also"></a>関連項目  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の   
  [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

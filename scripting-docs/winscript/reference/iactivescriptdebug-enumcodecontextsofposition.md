@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572786"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-@No__t_0 メソッドを委任するためにスマートホストによって使用されます。  
+`IDebugDocumentContext::EnumCodeContexts` メソッドを委任するためにスマートホストによって使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,7 +40,7 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>パラメーター  
  `dwSourceContext`  
- から@No__t_0 または `IActiveScriptParse::AddScriptlet` に提供されるソースコンテキスト。  
+ から`IActiveScriptParse::ParseScriptText` または `IActiveScriptParse::AddScriptlet`に提供されるソースコンテキスト。  
   
  `uCharacterOffset`  
  からスクリプトテキストの先頭を基準とした文字オフセット。  
@@ -54,13 +54,13 @@ HRESULT EnumCodeContextsOfPosition(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  スマートホストは、このメソッドを使用して `IDebugDocumentContext::EnumCodeContexts` メソッドを委任します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptDebug インターフェイス](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

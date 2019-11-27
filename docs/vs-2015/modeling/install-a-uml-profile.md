@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669592"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298906"
 ---
 # <a name="install-a-uml-profile"></a>UML プロファイルのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
 
  プロファイルを使用して生成された UML モデルを受け取った場合、同じプロファイルをインストールしていなければ、一部のプロパティは表示されません。
 
- プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、「 [Visual Studio 拡張機能の管理](http://go.microsoft.com/fwlink/?LinkId=160728)」を参照してください。
+ プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、「 [Visual Studio 拡張機能の管理](https://go.microsoft.com/fwlink/?LinkId=160728)」を参照してください。
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>UML プロファイルをコンピューターにインストールするには
 
@@ -45,5 +45,5 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
 
 2. 削除する拡張機能をクリックし、 **[無効化]** または **[アンインストール]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  プロファイル[とステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[するプロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)

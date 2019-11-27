@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa7d087d8354a25b5e16f89b72963c2bfdb55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657037"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297616"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 **[プロパティ]** ウィンドウ、ダイアログボックス、または変数デザイナーなどのデザイナーで、 **[型の参照]** を選択します。 データ型の一覧からは、 **[.Net 型の参照と選択]** ダイアログボックスが表示されます ("型ブラウザー" として省略形で参照されています)。 このダイアログ ボックスでは、アセンブリとプロジェクトのツリー表示から型を選択できます。
@@ -31,7 +31,7 @@ ms.locfileid: "72657037"
 - <xref:System.Activities.Statements.TryCatch> アクティビティに catch を追加する。
 
 > [!NOTE]
-> 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 詳細については、「[ジャグ配列](http://go.microsoft.com/fwlink/?LinkId=195226)と[多次元配列](http://go.microsoft.com/fwlink/?LinkId=195227)」を参照してください。
+> 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 詳細については、「[ジャグ配列](https://go.microsoft.com/fwlink/?LinkId=195226)と[多次元配列](https://go.microsoft.com/fwlink/?LinkId=195227)」を参照してください。
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>型ブラウザーでの値型または参照型の選択
 
@@ -39,7 +39,7 @@ ms.locfileid: "72657037"
 
 1. **[型名]** ボックスに、使用する型の名前を入力します。
 
-2. 次のいずれかの操作を行います。
+2. 以下のいずれかを実行します。
 
     - 使用する型の名前が **[型名]** ボックスのツリーに表示されたら、その型をダブルクリックして選択します。
 
@@ -61,14 +61,14 @@ ms.locfileid: "72657037"
 ## <a name="filtering-search-results-in-the-type-browser"></a>型ブラウザーでの検索結果のフィルター処理
  **[型名]** ボックスの型の一覧は、一致を検索するためにさらに文字を入力すると短くなります。 フィルター処理された一覧には、入力した文字列で完全修飾名が始まる型、または、入力した文字列で始まる短い名前を持つ型のみが表示されます。
 
- (例:
+ 例 :
 
-1. 入力**操作**は <xref:System.OperationCanceledException> と一致しますが、<xref:System.InvalidOperationException> は一致しません。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
+1. 入力**操作**は <xref:System.OperationCanceledException> と一致しますが、<xref:System.InvalidOperationException>は一致しません。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
 2. 型指定**ジェネリック**は <xref:System.GenericUriParser> に一致しますが、<xref:System.Collections.Generic> 名前空間の型には一致しません。 <xref:System.Collections.Generic> 名前空間の型を検索するには、その名前空間の完全修飾名を入力します。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>型ブラウザー ダイアログを使用したサービス コントラクトの選択
  サービス コントラクト型を選択すると、型ブラウザーは <xref:System.ServiceModel.ServiceContractAttribute> 属性を持つ型だけを表示します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [アクティビティ デザイナーの使用](../workflow-designer/using-the-activity-designers.md)

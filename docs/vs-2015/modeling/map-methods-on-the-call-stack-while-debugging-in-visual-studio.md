@@ -1,5 +1,5 @@
 ---
-title: デバッグを行うときの呼び出し履歴に対するメソッドのマップ
+title: デバッグ中の、呼び出し履歴に関するメソッドのマッピング
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81ae908c29b45b09d2ecec84c3189e6fb4e7a45b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a2c6e95822794394dbdfc7f53104b31b7c17ea9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657589"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296068"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio でデバッグを行うときの呼び出し履歴に対するメソッドのマップ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "72657589"
 
 - デバッグできるコード (Visual C# .NET、Visual Basic .NET、C++、JavaScript、X++ など) です。
 
-  参照:[ビデオ: コードマップデバッガーの統合を使用して視覚的にデバッグする (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) •[コールスタックをマップ](#MapStack)する•[コードに関するメモを作成](#MakeNotes)する•[次の呼び出し履歴でマップを更新](#UpdateMap)する•[関連するコードをマップに追加する•関連するコードをマップに追加](#AddRelatedCode)する•次のコードを[使用してバグを検出するmap](#FindBugs) • [Q & A](#QA)
+  参照:[ビデオ: コードマップデバッガーの統合を使用して視覚的にデバッグする (Channel 9)](https://go.microsoft.com/fwlink/?LinkId=293418) •[コールスタックをマップ](#MapStack)する•[コードに関するメモを作成](#MakeNotes)する•[次の呼び出し履歴でマップを更新](#UpdateMap)する•[関連するコードをマップに追加する](#AddRelatedCode)• map を[使用してバグを見つける](#FindBugs)• [Q & A](#QA)
 
   コードマップを操作するときに使用できるコマンドとアクションの詳細については、「[コードマップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)」を参照してください。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72657589"
 
 1. デバッグを開始します。 (キーボード: **F5**)
 
-2. アプリが中断モードになった後、または関数にステップインする場合は、 **[コードマップ]** を選択します。 (キーボード: **Ctrl**  + **Shift**  +  **`** )
+2. アプリが中断モードになった後、または関数にステップインする場合は、 **[コードマップ]** を選択します。 (キーボード: **Ctrl** + **Shift** +  **`** )
 
      ![コードマップを選択して、呼び出し履歴のマッピングを開始します](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -153,7 +153,7 @@ ms.locfileid: "72657589"
 
 - **新しい呼び出し履歴を自動的に追加しないようにマップを停止操作方法ますか?**
 
-   [マップ] ツールバーの [![コードマップの呼び出し履歴を自動的に表示する] &#45; ](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")をクリックします。 現在の呼び出し履歴をマップに手動で追加するには、 **ctrl**  + **Shift**  +  **`** を押します。
+   [マップ] ツールバーの [![コードマップの呼び出し履歴を自動的に表示する] &#45; ](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")をクリックします。 現在の呼び出し履歴をマップに手動で追加するには、 **ctrl** + **Shift** +  **`** を押します。
 
    マップでは引き続き、デバッグ中にマップ上の既存の呼び出し履歴が強調表示されます。
 
@@ -165,5 +165,5 @@ ms.locfileid: "72657589"
 
   参照:[コールスタックをマップ](#MapStack)する•[コードに関するメモを作成](#MakeNotes)する•[次の呼び出し履歴でマップを更新](#UpdateMap)する•[関連するコードをマップに追加する](#AddRelatedCode)•マップを[使用してバグを見つける](#FindBugs)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)コードマップ[を使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)コード[マップアナライザーを使用して潜在的な問題を検出](../modeling/find-potential-problems-using-code-map-analyzers.md)する[コードマップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)

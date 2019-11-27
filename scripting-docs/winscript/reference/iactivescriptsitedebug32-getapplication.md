@@ -35,14 +35,14 @@ HRESULT GetApplication(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_NOTIMPL`|ホストはデバッグを直接サポートしていません。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 メソッドは、スマートホストが各スクリプトが属するアプリケーションオブジェクトを定義する方法を提供します。 スクリプトエンジンは、このメソッドを呼び出して、含まれているアプリケーションを取得し、失敗した場合に `IProcessDebugManager::GetDefaultApplication` できるようにする必要があります。  
+## <a name="remarks"></a>コメント  
+ `GetApplication` メソッドは、スマートホストが各スクリプトが属するアプリケーションオブジェクトを定義する方法を提供します。 スクリプトエンジンは、このメソッドを呼び出して、含まれているアプリケーションを取得し、失敗した場合に `IProcessDebugManager::GetDefaultApplication` できるようにする必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptSiteDebug32 インターフェイス](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

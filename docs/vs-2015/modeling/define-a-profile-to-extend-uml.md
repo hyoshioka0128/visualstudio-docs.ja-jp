@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e621297b36d75a0e48baed4ab24d50abd5e61663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668692"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295672"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>プロファイルを定義して UML を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72668692"
 
  いくつかのプロファイルは、これをサポートするエディションの Visual Studio をインストールするときに、同時にインストールされます。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。 これらのプロファイルの詳細およびステレオタイプを適用する方法については、「[プロファイルとステレオタイプを使用](../modeling/customize-your-model-with-profiles-and-stereotypes.md)してモデルをカスタマイズする」を参照してください。
 
- 独自のプロファイルを定義して、UML を特定のビジネス領域またはアーキテクチャに適応させ、拡張することができます。 (例:
+ 独自のプロファイルを定義して、UML を特定のビジネス領域またはアーキテクチャに適応させ、拡張することができます。 例 :
 
 - Web サイトを頻繁に定義する場合は、クラス図のクラスに適用できる «WebPage» ステレオタイプを提供する独自のプロファイルを定義できます。 これにより、クラス図を使用して Web サイトを計画できます。 各 «WebPage» クラスは、ページのコンテンツやスタイルなどの追加のプロパティを持つことになります。
 
@@ -76,7 +76,7 @@ ms.locfileid: "72668692"
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の他のユーザーに拡張ファイルを送信して、コンピューターにインストールしてもらいます。
 
 ## <a name="AddProfile"></a>Visual Studio 拡張機能にプロファイルを追加する方法
- プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、「 [Visual Studio 拡張機能の配置](http://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
+ プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、「 [Visual Studio 拡張機能の配置](https://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>新しい Visual Studio 拡張機能でプロファイルを定義するには
 
@@ -113,7 +113,7 @@ ms.locfileid: "72668692"
 
    - **[ファイルシステム上のファイル]** をクリックし、プロファイルファイルの名前を選択し `MyProfile.profile`
 
-6. プロジェクトをビルドします。
+6. プロジェクトをビルドする。
 
 7. **プロファイルをデバッグするに**は、F5 キーを押します。
 
@@ -139,7 +139,7 @@ ms.locfileid: "72668692"
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml` (この名前を示されているとおりに角かっこで囲んで入力します)
+    - `[Content_Types].xml`-次に示すように、角かっこを使用してこの名前を入力します。
 
 2. 次のテキストが含まれるように `[Content_Types].xml` を編集します。 それぞれのファイル名拡張子のエントリが含まれている点に注目してください。
 
@@ -196,7 +196,7 @@ ms.locfileid: "72668692"
     > [!NOTE]
     > Visual Studio 拡張機能プロジェクトを使用して拡張機能を構築する場合は、ソリューション エクスプローラーを使用して新しいフォルダーをプロジェクトに追加します。
 
-3. 新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](http://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
+3. 新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
 
 4. 既定のプロファイルを新しいディレクトリにコピーします。 ファイル名は変更しないでください。
 
@@ -220,7 +220,7 @@ ms.locfileid: "72668692"
 7. 前のセクションで説明したように、拡張機能プロジェクトをビルドするか、またはすべてのファイルを圧縮して、Visual Studio 拡張機能を生成します。
 
 ## <a name="Schema"></a>プロファイルの構造
- UML プロファイルの XSD ファイルについては、「[ステレオタイプとプロファイルの xsd の設定](http://go.microsoft.com/fwlink/?LinkID=213811)」のサンプルを参照してください。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
+ UML プロファイルの XSD ファイルについては、「[ステレオタイプとプロファイルの xsd の設定](https://go.microsoft.com/fwlink/?LinkID=213811)」のサンプルを参照してください。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
 
  **%ProgramFiles%\Microsoft Visual Studio [version] \ xmlschema**
 
@@ -251,14 +251,14 @@ ms.locfileid: "72668692"
 
  すべてのプロファイルに次の 3 つの主要なセクションが含まれています。 これらのセクションを逆順に示します。
 
-- `<propertyTypes>`: stereotypes セクションで定義されているプロパティに対して使用される型のリスト。
+- `<propertyTypes>`-[ステレオタイプ] セクションで定義されているプロパティに使用される型の一覧です。
 
 - `<metaclasses>`: このプロファイルのステレオタイプが適用されるモデル要素の型のリスト (IClass、IInterface、IOperation、IDependency など)。
 
-- `<stereotypes>`: ステレオタイプの定義。 それぞれの定義には、ターゲットのモデル要素に追加されるプロパティの名前と型が含まれています。
+- `<stereotypes>`-ステレオタイプの定義。 それぞれの定義には、ターゲットのモデル要素に追加されるプロパティの名前と型が含まれています。
 
 #### <a name="property-types"></a>プロパティの型
- @No__t_0 セクションでは、`<stereotypes>` セクションのプロパティに使用される型のリストを宣言します。 プロパティの型には、外部型と列挙型の 2 種類があります。
+ `<propertyTypes>` セクションでは、`<stereotypes>` セクションのプロパティに使用される型のリストを宣言します。 プロパティの型には、外部型と列挙型の 2 種類があります。
 
  外部型は、標準 .NET 型の完全修飾名を宣言します。
 
@@ -312,7 +312,7 @@ ms.locfileid: "72668692"
 > [!NOTE]
 > モニカー名は `/yourProfileName/` で始まる必要があります。ここで、`yourProfileName` は、プロファイルの `name` 属性で定義されています (この例では "CSharpProfile")。 モニカーは、メタクラス セクションのいずれかのエントリ名で終わります。
 
- それぞれのステレオタイプでは、ステレオタイプが適用される任意のモデル要素に追加する 0 個以上のプロパティを指定できます。 @No__t_0 には、`<propertyTypes>` セクションで定義されているいずれかの型へのリンクが含まれています。 リンクは、`<externalTypeMoniker>` (`<externalType>,` を参照する場合) または `<enumerationTypeMoniker>` (`<enumerationType>` を参照する場合) のどちらかである必要があります。 このリンクについても、プロファイルの名前がプレフィックスとして付けられます。
+ それぞれのステレオタイプでは、ステレオタイプが適用される任意のモデル要素に追加する 0 個以上のプロパティを指定できます。 `<propertyType>` には、`<propertyTypes>` セクションで定義されているいずれかの型へのリンクが含まれています。 リンクは、`<externalTypeMoniker>` (`<externalType>,` を参照する場合) または `<enumerationTypeMoniker>` (`<enumerationType>` を参照する場合) のどちらかである必要があります。 このリンクについても、プロファイルの名前がプレフィックスとして付けられます。
 
 ```
   <properties>
@@ -347,7 +347,7 @@ ms.locfileid: "72668692"
 
 2. 各モニカー名の形式が /profileName/nodeName であることを確認してください。 profileName とは、ルート プロファイル ノードの名前属性の値です。 nodeName とは、メタクラス externalType または enumerationType の名前属性の値です。
 
-3. ここで説明されている構文に従ってください。「 _drive_ **: \\ \Common7\IDE\Extensions\Microsoft\Architecture」 (Visual Studio [version])** で説明されているように、「drive:」のようにします。
+3. ここで説明されている構文に従ってください。「 _drive_ **:\\\Common7\IDE\Extensions\Microsoft\Architecture」 (Visual Studio [version])** で説明されているように、「drive:」のようにします。
 
 4. 障害のある拡張機能をアンインストールします。 **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
@@ -356,13 +356,13 @@ ms.locfileid: "72668692"
 5. VSIX ファイルをリビルドし、Windows エクスプローラーで開いて再インストールします。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。
 
    拡張機能は拡張機能マネージャーに表示されませんが、再インストールを試みると、次のメッセージが表示されます:**拡張機能は、適用されているすべての製品に既にインストール**されています。
-   1. *Localappdata*\Microsoft\VisualStudio \\ [version] \Extensions\ のサブフォルダーから拡張ファイルを削除します。
+   1. *Localappdata*\Microsoft\VisualStudio\\[version] \Extensions\ のサブフォルダーから拡張ファイルを削除します。
 
    - *Localappdata*を表示するには、Windows エクスプローラーのフォルダーオプションの [表示] タブで [非表示のファイルとフォルダーの表示] を設定する必要があります。
 
-   - *Localappdata*は通常、C:\Users \\*ユーザー名*\AppData\Local\ にあります。
+   - *Localappdata*は通常、C:\Users\\*ユーザー名*\AppData\Local\ にあります。
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。
 
-## <a name="see-also"></a>参照
- [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)サンプル: ステレオタイプに[よる uml 要素の色](http://go.microsoft.com/fwlink/?LinkID=213841)の[設定サンプル: ステレオタイプの設定、プロファイル XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
+## <a name="see-also"></a>関連項目
+ [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)サンプル: ステレオタイプに[よる uml 要素の色](https://go.microsoft.com/fwlink/?LinkID=213841)の[設定サンプル: ステレオタイプの設定、プロファイル XSD](https://go.microsoft.com/fwlink/?LinkID=213811)

@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9a860ad5408038cced1f5aa2ac20420e35a1240a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672218"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302114"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "72672218"
 
  テスト エクスプローラーは、ソリューション内の複数のテスト プロジェクト、および運用コード プロジェクトに含まれるテスト クラスからテストを実行できます。 テスト プロジェクトは別の単体テスト フレームワークを使用できます。 テスト対象のコードを .NET Framework 用に記述する場合、対象コードの言語にかかわらず、.NET Framework も対象とする言語でテスト プロジェクトを記述できます。 ネイティブ C/C++ コード プロジェクトは、C++ の単体テスト フレームワークを使用してテストする必要があります。
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Run_tests_in_Test_Explorer"></a> テスト エクスプローラーでテストを実行する
  [テストを実行する](#BKMK_Run_tests) **&#124;** [各ビルドの後にテストを実行する](#BKMK_Run_tests_after_every_build)
@@ -55,9 +55,9 @@ ms.locfileid: "72672218"
 
  テスト エクスプローラーのツール バーからテストの検索、整理、および実行の作業の多くを実行できます。
 
- ![テストエクスプローラーのツールバーからテストを実行する](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Run tests from the Test Explorer toolbar](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Run_tests"></a> テストの実行
  ソリューション内のすべてのテスト、グループ内のすべてのテスト、または選択した一連のテストを実行できます。 次のいずれかの操作を行います。
@@ -68,11 +68,11 @@ ms.locfileid: "72672218"
 
 - 実行する個々のテストを選択し、選択したテストのコンテキスト メニューを開いて、 **[選択したテストの実行]** を選択します。
 
-- 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+- 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
   テストの実行中、テスト エクスプローラー ウィンドウの一番上にある成功/失敗ステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテストが成功した場合は、成功/失敗ステータス バーが緑色に変わり、いずれかのテストが失敗した場合は、赤色に変わります。
 
-  ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+  ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Run_tests_after_every_build"></a> 各ビルドの後にテストを実行する
 
@@ -81,9 +81,9 @@ ms.locfileid: "72672218"
 
 |||
 |-|-|
-|![ビルド後に実行](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、テスト エクスプローラーのツール バーの **[ビルド後にテストを実行]** を選択します。|
+|![Run after build](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、テスト エクスプローラーのツール バーの **[ビルド後にテストを実行]** を選択します。|
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_View_test_results"></a> テスト結果を表示する
  [テストの詳細を表示する](#BKMK_View_test_details) **&#124;** [テスト メソッドのソース コードを表示する](#BKMK_View_the_source_code_of_a_test_method)
@@ -93,7 +93,7 @@ ms.locfileid: "72672218"
 ### <a name="BKMK_View_test_details"></a> テストの詳細を表示する
  個々のテストの詳細を表示するには、そのテストを選択します。
 
- ![テストの実行の詳細](../test/media/ute-testdetails.png "UTE_TestDetails")
+ ![Test execution details](../test/media/ute-testdetails.png "UTE_TestDetails")
 
  テストの詳細ペインに次の情報が表示されます。
 
@@ -109,12 +109,12 @@ ms.locfileid: "72672218"
 
 - テストが失敗した時刻のスタック トレース。
 
-  ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+  ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_View_the_source_code_of_a_test_method"></a> テスト メソッドのソース コードを表示する
- Visual Studio エディターでテスト メソッドのソース コードを表示するには、テストを選び、コンテキスト メニューの **[テストを開く]** を選択します (キーボード:F12 キー)。
+ Visual Studio エディターのテスト メソッドのソース コードを表示するには、テストを選択し、コンテキスト メニューの **[テストを開く]** を選択します (キーボードの F12 キー)。
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Group_and_filter_the_test_list"></a> テスト リストをグループ化およびフィルター処理する
  [テスト リストをグループ化する](#BKMK_Grouping_the_test_list) **&#124;** [特徴でグループ化する](#BKMK_Group_by_traits) **&#124;** [テスト リストを検索およびフィルター処理する](#BKMK_Search_and_filter_the_test_list)
@@ -124,18 +124,18 @@ ms.locfileid: "72672218"
 ### <a name="BKMK_Grouping_the_test_list"></a> テスト リストをグループ化する
  テストの編成方法を変更するには、 **[グループ化]** ボタン ![テスト エクスプローラー グループ ボタン](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")の横にある下向き矢印を選択し、新しいグループ化の条件を選択します。
 
- ![テストエクスプローラーでカテゴリ別にテストをグループ化する](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")
+ ![Group tests by category in Test Explorer](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")
 
 ### <a name="test-explorer-groups"></a>テスト エクスプローラーのグループ
 
 |グループ化|説明|
 |-----------|-----------------|
-|**期間**|実行時間によるテストのグループ化:**高速**、**中**、**低速**|
-|**Outcome**|実行結果によるテストのグループ化:**失敗したテスト**、**スキップされたテスト**、**成功したテスト数**|
+|**期間**|実行時間によるテストのグループ化: **[高速]** 、 **[通常]** 、および **[低速]** 。|
+|**Outcome**|実行結果によるテストのグループ化: **[失敗したテスト]** 、 **[スキップされたテスト]** 、 **[成功したテスト]** 。|
 |**Traits**|ユーザーが定義するカテゴリ/値のペアによるテストのグループ化。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。|
-|**プロジェクト**|プロジェクトの名前によるテストのグループ化。|
+|**Project**|プロジェクトの名前によるテストのグループ化。|
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Group_by_traits"></a> 特徴でグループ化する
  通常、特徴はカテゴリ名/値のペアですが、1 つのカテゴリにすることもできます。 特徴は、単体テスト フレームワークによってテスト メソッドとして識別されるメソッドに割り当てることができます。 単体テスト フレームワークは、特徴のカテゴリを定義できます。 特徴のカテゴリに値を追加して、独自のカテゴリ名/値のペアを定義できます。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。
@@ -183,7 +183,7 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|定義済みの所有者の特徴を使用して、テスト メソッドの所有者を指定します。|
 |`TEST_PRIORITY(priority)`|定義済みの優先度の特徴を使用して、テスト メソッドに相対的な優先度を割り当てます。|
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Search_and_filter_the_test_list"></a> テスト リストを検索およびフィルター処理する
  テスト エクスプローラーのフィルターを使用して、表示および実行するプロジェクトのテスト メソッドを制限できます。
@@ -198,7 +198,7 @@ TEST_METHOD(Method1)
 
 3. 引用符の間にフィルターの値を入力します。
 
-   ![テストエクスプローラーでのテストのフィルター処理](../test/media/ute-filtertestlist.png "UTE_FilterTestList")
+   ![Filter tests in Test Explorer](../test/media/ute-filtertestlist.png "UTE_FilterTestList")
 
 > [!NOTE]
 > 検索では大文字と小文字を区別せず、指定された文字列が条件の値の一部と一致するかどうかを照合します。
@@ -206,12 +206,12 @@ TEST_METHOD(Method1)
 |修飾子|説明|
 |---------------|-----------------|
 |**特徴**|特徴のカテゴリと値の両方から一致を検索します。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。|
-|**プロジェクト**|テスト プロジェクト名から一致を検索します。|
+|**Project**|テスト プロジェクト名から一致を検索します。|
 |**エラー メッセージ**|失敗したアサートが返すユーザー定義エラー メッセージから一致を検索します。|
 |**ファイル パス**|テストのソース ファイルの完全修飾ファイル名から一致を検索します。|
 |**Fully Qualified Name**|テストの名前空間、クラス、およびメソッドの完全修飾ファイル名から一致を検索します。|
 |**出力**|標準出力 (stdout) または標準エラー (stderr) に書き込まれるユーザー定義のエラー メッセージを検索します。 出力メッセージを指定する構文は、単体テスト フレームワークによって定義されます。|
-|**Outcome**|テスト エクスプローラーのカテゴリ名で一致を検索する:**失敗したテスト**、**スキップされたテスト**、**成功したテスト数**|
+|**Outcome**|テスト エクスプローラーのカテゴリ名から一致を検索します: **[失敗したテスト]** 、 **[スキップされたテスト]** 、 **[成功したテスト]** 。|
 
  フィルター処理結果のサブセットを除外するには、次の構文を使用します。
 
@@ -227,12 +227,12 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  名前に "PerfTest" も含むテストを除いて、名前に "MyClass" を含むすべてのテストを返します。
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Create_custom_playlists"></a> カスタム プレイリストを作成する
  グループとして実行または表示するテストのリストを作成して保存できます。 プレイリストを選択すると、リスト内のテストがテスト エクスプローラーに表示されます。 テストを複数のプレイリストに追加することができ、既定の **[すべてのテスト]** プレイリストを選択すると、プロジェクトのすべてのテストを使用できます。
 
- ![再生リストの選択](../test/media/ute-playlist.png "UTE_Playlist")
+ ![Choose a playlist](../test/media/ute-playlist.png "UTE_Playlist")
 
  **プレイリストを作成するには**、テスト エクスプローラーで 1 つ以上のテストを選択します。 コンテキスト メニューで、 **[プレイリストに追加]** 、 **[新しいプレイリスト]** を選択します。 **[新しいプレイリストの作成]** ダイアログ ボックスで指定した場所と名前で、ファイルを保存します。
 
@@ -240,9 +240,9 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  **プレイリストを開くには**、Visual Studio メニューから [テスト]、[プレイリスト] を選択し、最近使用されたプレイリストのリストから選択するか、[プレイリストを開く] を選択してプレイリストの名前と場所を指定します。
 
- 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+ 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
- ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+ ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_Debug_and_analyze_unit_tests"></a> 単体テストをデバッグおよび分析する
  [単体テストをデバッグする](#BKMK_Debug_unit_tests) **&#124;** [テスト メソッドのパフォーマンスの問題を診断する](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [単体テストのコード カバレッジを分析する](#BKMK_Analyzeunit_test_code_coverage)
@@ -259,7 +259,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    デバッガーについて詳しくは、「 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)」をご覧ください。
 
-   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ### <a name="BKMK_Diagnose_test_method_performance_issues"></a> テスト メソッドのパフォーマンスの問題を診断する
  テスト メソッドに時間がかかる原因を診断するには、エクスプローラーでメソッドを選択し、コンテキスト メニューの [プロファイル] を選択します。 「[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)」を参照してください。
@@ -285,12 +285,12 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    詳細については、「[コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)」を参照してください。
 
-   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
+   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
 
 ## <a name="BKMK_External_resources"></a> 外部リソース
 
 ### <a name="BKMK_Guidance"></a> ガイダンス
- Visual Studio 2012 を使用した継続的デリバリーのための [Testing –第2章:単体テスト:内部 ](http://go.microsoft.com/fwlink/?LinkID=255188) のテスト
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>関連項目
- [コードの単体テスト](../test/unit-test-your-code.md) [64 ビットプロセスとして単体テストを実行](../test/run-a-unit-test-as-a-64-bit-process.md)する
+## <a name="see-also"></a>参照
+ [Unit Test Your Code](../test/unit-test-your-code.md) [Run a unit test as a 64-bit process](../test/run-a-unit-test-as-a-64-bit-process.md)

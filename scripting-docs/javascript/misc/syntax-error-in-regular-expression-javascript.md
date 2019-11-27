@@ -28,7 +28,7 @@ ms.locfileid: "72573662"
   
 - 正規表現の検索文字列の構造が [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正規表現の構文に準拠していることを確認します。  
   
-## <a name="see-also"></a>関連項目  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の    
- [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+## <a name="see-also"></a>参照  
+ [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の   
+ [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile メソッド (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

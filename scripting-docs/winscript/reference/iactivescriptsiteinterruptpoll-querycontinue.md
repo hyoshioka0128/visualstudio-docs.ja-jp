@@ -39,16 +39,16 @@ HRESULT QueryContinue();
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|呼び出しは成功し、ホストはスクリプトの実行を続行できるようにします。|  
 |`S_FALSE`|呼び出しは成功し、ホストはスクリプトを終了するように要求します。|  
   
-## <a name="remarks"></a>Remarks  
- @No__t_0 メソッドの戻り値が `S_OK` でない限り、ホストされているスクリプトは終了します。 @No__t_0 の戻り値は、ホストがスクリプトを終了するように明示的に要求することを示します。  
+## <a name="remarks"></a>コメント  
+ `QueryContinue` メソッドの戻り値が `S_OK`でない限り、ホストされているスクリプトは終了します。 `S_FALSE` の戻り値は、ホストがスクリプトを終了するように明示的に要求することを示します。  
   
  マルチスレッドホストでは、`IActiveScript::InterruptScriptThread` メソッドを使用してスクリプトを終了できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IActiveScriptSiteInterruptPoll インターフェイス](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

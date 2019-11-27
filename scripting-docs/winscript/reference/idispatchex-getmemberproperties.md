@@ -39,12 +39,12 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバーを識別します。 @No__t_0 または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
+ メンバーを識別します。 `GetDispID` または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
   
  `grfdexFetch`  
  取得するプロパティを決定します。 これには、`pgrfdex` の下に一覧表示された値の組み合わせ、または次の値の組み合わせを使用できます。  
   
-|[値]|説明|  
+|値|意味|  
 |-----------|-------------|  
 |grfdexPropCanAll|FdexPropCanGet、fdexPropCanPut、fdexPropCanPutRef、fdexPropCanCall、fdexPropCanConstruct、および Fdexpropcanget を結合します。|  
 |grfdexPropCannotAll|FdexPropCannotGet、fdexPropCannotPut、fdexPropCannotPutRef、fdexPropCannotCall、fdexPropCannotConstruct、fdexPropCannotSourceEvents を結合します。|  
@@ -54,7 +54,7 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  要求されたプロパティを受け取る `DWORD` のアドレス。 次の値の組み合わせを指定できます。  
   
-|[値]|説明|  
+|値|意味|  
 |-----------|-------------|  
 |fdexPropCanGet|メンバーは DISPATCH_PROPERTYGET を使用して取得できます。|  
 |fdexPropCannotGet|DISPATCH_PROPERTYGET を使用してメンバーを取得することはできません。|  
@@ -66,7 +66,7 @@ HRESULT GetMemberProperties(
 |fdexPropDynamicType|メンバーは動的であり、オブジェクトの有効期間中に変更できます。|  
 |fdexPropCanCall|メンバーは、DISPATCH_METHOD を使用してメソッドとして呼び出すことができます。|  
 |fdexPropCannotCall|DISPATCH_METHOD を使用して、メンバーをメソッドとして呼び出すことはできません。|  
-|fdexPropCanConstruct|メンバーは、DISPATCH_CONSTRUCT を使用してコンストラクターとして呼び出すことができます。|  
+|fdexPropCanConstruct|メンバーは DISPATCH_CONSTRUCT を使用してコンストラクターとして呼び出すことができます。|  
 |fdexPropCannotConstruct|DISPATCH_CONSTRUCT を使用して、メンバーをコンストラクターとして呼び出すことはできません。|  
 |fdexPropCanSourceEvents|メンバーは、イベントを発生させることができます。|  
 |fdexPropCannotSourceEvents|メンバーはイベントを起動できません。|  
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

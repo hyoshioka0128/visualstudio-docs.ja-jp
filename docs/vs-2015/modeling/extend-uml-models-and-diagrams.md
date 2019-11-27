@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669611"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301043"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "72669611"
 
  Fabrikam 社のツール チームは、一連の拡張機能を作成して開発チームを支援します。 以降のセクションでは、定義可能なさまざまな拡張機能について説明します。 これらの手法のいくつかを 1 つの Visual Studio 拡張機能に結合できます。
 
- 詳細については、こちらのビデオを参照してください。「![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")」 MSDN の「[操作方法シリーズ: UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)」を参照してください。
+ 詳細については、こちらのビデオを参照してください。「![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")」 MSDN の「[操作方法シリーズ: UML ツールと機能拡張](https://go.microsoft.com/fwlink/?LinkId=214467)」を参照してください。
 
 ## <a name="Requirements"></a> 必要条件
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-- [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)。
+- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)。
 
 ## <a name="profiles"></a>プロファイル
  プロファイルを使用すると、UML 要素のステレオタイプと追加のプロパティを定義できます。
@@ -50,7 +50,7 @@ ms.locfileid: "72669611"
 
  詳細については、「[カスタムモデリングツールボックスアイテムの定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
 
-## <a name="validation"></a>検証
+## <a name="validation"></a>Validation
  UML モデルが指定の制約に確実に準拠するようにするための規則を定義できます。
 
  Fabrikam 社のツール開発者は、荷物取り扱いモデルでチーム メンバーが単純なミスを犯すことがないように規則を定義します。 たとえば、チェックイン デスクを保管庫に直接接続することはできません。 これらの間には、少なくともベルト コンベヤが存在する必要があります。
@@ -109,14 +109,14 @@ ms.locfileid: "72669611"
 ## <a name="domain-specific-languages"></a>ドメイン固有の言語
  特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、「[モデリング SDK For Visual Studio-ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)」を参照してください。
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: Visual Studio を使用した UML](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと機能拡張](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: Visual Studio を使用した UML](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [UML モデリング機能拡張のためのアプリ API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)[のモデルの作成](../modeling/create-models-for-your-app.md)

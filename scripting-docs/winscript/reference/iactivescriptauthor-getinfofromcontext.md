@@ -57,7 +57,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  から要求されたリストの型。 は、次の値の組み合わせにすることができます。  
   
-|定数|[値]|説明|  
+|定数|値|説明|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|リストがありません。|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|メンバーリスト。|  
@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|メソッドのパラメーターリストを呼び出します。|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|グローバルリスト。|  
   
- SCRIPT_CMPL_GLOBALLIST 型は既定の完了項目として扱われ、または演算子を使用して他の完了項目と組み合わせることができます。 スクリプト作成エンジンは、まず、他の入力候補リスト項目の型情報を設定しようとします。 失敗した場合、エンジンは SCRIPT_CMPL_GLOBALLIST を設定します。  
+ SCRIPT_CMPL_GLOBALLIST 型は、または演算子を使用して他の完了項目と組み合わせることができる既定の完了項目として扱われます。 スクリプト作成エンジンは、まず、他の入力候補リスト項目の型情報を設定しようとします。 失敗した場合、エンジンは SCRIPT_CMPL_GLOBALLIST を設定します。  
   
  `pdwListTypesProvided`  
  入出力指定されたリストの種類。  
@@ -96,12 +96,12 @@ HRESULT GetInfoFromContext(
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IProvideMultipleClassInfo インターフェイス](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)

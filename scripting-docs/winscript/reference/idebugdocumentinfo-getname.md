@@ -46,14 +46,14 @@ HRESULT GetName(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_FAIL`|指定されたドキュメント名は不明です。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>コメント  
  このメソッドは、指定されたドキュメント名を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentInfo インターフェイス](../../winscript/reference/idebugdocumentinfo-interface.md)   
  [DOCUMENTNAMETYPE 列挙型](../../winscript/reference/documentnametype-enumeration.md)

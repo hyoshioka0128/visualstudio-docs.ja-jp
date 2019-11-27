@@ -1,5 +1,5 @@
 ---
-title: '方法: 失敗したプロジェクトのアップグレードのトラブルシューティング |Microsoft Docs'
+title: '方法: プロジェクトのアップグレードに失敗した場合のトラブルシューティング |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696391"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300349"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>方法: 失敗した Visual Studio プロジェクトのアップグレードをトラブルシューティングします。
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>方法: Visual Studio プロジェクトのアップグレードが成功しなかった場合のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージョンで作成したプロジェクトを完全には変換できない場合があります。 以下のセクションで説明するヒントで、特定の問題が解決しない場合は、詳細については、technet を検索する場合がありますできる[Wiki:開発ポータル](http://go.microsoft.com/fwlink/?LinkId=254808)します。
+Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージョンで作成したプロジェクトを完全には変換できない場合があります。 以下のセクションのヒントによって特定の問題が解決されない場合は、TechNet [Wiki: 開発ポータル](https://go.microsoft.com/fwlink/?LinkId=254808)で詳細を確認できます。
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>ファイルが見つからないためプロジェクトを実行できない
  プロジェクト ファイルには、ユーザーによって F5 キーが押されたときに [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がプロジェクトの実行に使用するハード コーディングされたファイル パスが含まれています。 これらのパスには、devenv.exe やその他の必須ファイルの場所などがあります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のアップグレード バージョンでは、これらのファイルのパスが変更されている場合があります。

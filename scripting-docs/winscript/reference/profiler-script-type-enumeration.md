@@ -45,8 +45,8 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_NATIVE|スクリプトエンジンによって定義されるネイティブ関数およびオブジェクトのスクリプトの種類を指定します。|  
 |PROFILER_SCRIPT_TYPE_DOM|Internet Explorer のドキュメントオブジェクトモデル (DOM) への呼び出しを指定します。たとえば、`document.getElementById` メソッドを呼び出します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [アクティブスクリプトプロファイラーの定数、列挙型、および構造体](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
- [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+ [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

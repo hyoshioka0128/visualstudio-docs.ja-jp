@@ -26,9 +26,9 @@ Switch ステートメント内で**default**ステートメントを複数回�
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_1 ステートメントから余分な**既定**の case ステートメントを削除します (switch ステートメントでは、既定の case ステートメントを1つだけ使用します)。  
+- `switch` ステートメントから余分な**既定**の case ステートメントを削除します (switch ステートメントでは、既定の case ステートメントを1つだけ使用します)。  
   
-## <a name="see-also"></a>関連項目  
- [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の   
  [プログラムフローの制御](../../javascript/controlling-program-flow-javascript.md)   
  [JavaScript の予約語](../../javascript/reference/javascript-reserved-words.md)

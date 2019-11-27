@@ -32,6 +32,6 @@ ms.locfileid: "72573746"
   
 - 詳細については、オブジェクトのドキュメントを参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [オブジェクトオブジェクト](../../javascript/reference/object-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [オブジェクトオブジェクト](../../javascript/reference/object-object-javascript.md)の   
  [JavaScript オブジェクト](../../javascript/reference/javascript-objects.md)

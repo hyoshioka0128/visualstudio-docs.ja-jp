@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671674"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301410"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ドメイン固有言語 (DSL) は、特殊な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを使用して作成されます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  この手順を開始する前に、次のコンポーネントをインストールする必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "72671674"
 
    4. **[ドメイン固有言語デザイナー]** をクリックします。
 
-   5. **[名前]** ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックします。
+   5. **[名前]** ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックすると、
 
        **ドメイン固有言語デザイナーウィザード**が表示されます。
 
@@ -102,7 +102,7 @@ ms.locfileid: "72671674"
 
      \- または
 
-- @No__t_0 実験用インスタンスをリセットします。 これにより、以前に作成したすべての Dsl が登録解除されます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[2010 SDK]** 、 **[ツール]** の順に Microsoft Visual Studio、 **Microsoft Visual Studio 2010 の実験用インスタンスをリセット**します。 もう一度使用する Dsl を再構築できます。
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 実験用インスタンスをリセットします。 これにより、以前に作成したすべての Dsl が登録解除されます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[2010 SDK]** 、 **[ツール]** の順に Microsoft Visual Studio、 **Microsoft Visual Studio 2010 の実験用インスタンスをリセット**します。 もう一度使用する Dsl を再構築できます。
 
      \- または
 
@@ -127,7 +127,7 @@ ms.locfileid: "72671674"
 
  **既存の厳密な名前のキーを使用する**DSL を別のアセンブリと統合する場合は、このオプションを使用します。
 
- 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](http://go.microsoft.com/fwlink/?LinkId=186073)」を参照してください。
+ 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](https://go.microsoft.com/fwlink/?LinkId=186073)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)[ドメイン固有言語ツール用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

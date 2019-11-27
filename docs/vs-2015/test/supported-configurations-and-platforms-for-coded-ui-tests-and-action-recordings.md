@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 147c15baf8f089bf41262e04694bce8b5b44f31e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4a049bca7ecb51a4b518c84b15d7dfa4ed3290f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660412"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301215"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 
 ## <a name="supported-configurations"></a>サポートされている構成
 
-|構成|サポート状況|
+|構成|サポートされています|
 |-------------------|---------------|
 |オペレーティング システム|[!INCLUDE[win7](../includes/win7-md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]<br /><br /> [!INCLUDE[win8](../includes/win8-md.md)]<br /><br /> Windows 10|
 |32 ビットと 64 ビットのサポート|32 ビットの [!INCLUDE[TCMext](../includes/tcmext-md.md)] を実行している 32 ビットの Windows では、32 ビット アプリケーションをテストできます。<br /><br /> 32 ビットの [!INCLUDE[TCMext](../includes/tcmext-md.md)] を実行している 64 ビットの Windows では、UI 同期を行う 32 ビットの WOW アプリケーションをテストできます。<br /><br /> 32 ビットの [!INCLUDE[TCMext](../includes/tcmext-md.md)] を実行している 64 ビットの Windows では、UI 同期を行わない 64 ビットの Windows フォーム アプリケーションおよび WPF アプリケーションをテストできます。|
@@ -49,7 +49,7 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 |Windows ストア アプリ|XAML ベースのストア アプリだけがサポートされます。|
 |ユニバーサル Windows アプリ|Windows Phone およびデスクトップでは XAML ベースのユニバーサル Windows アプリだけがサポートされます。|
 |エッジ|Visual Studio 2015 Update 2 以降で、[コード化された UI のクロス ブラウザー テストの拡張機能](https://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d)を使用|
-|Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **重要:** Internet Explorer 10 は、デスクトップでのみサポートされています。 <br /><br /> Internet Explorer 11 **重要:** Internet Explorer 11 は、デスクトップでのみサポートされています。|完全にサポートされています。<br /><br /> -   **Internet Explorer 9 および Internet Explorer 10 での HTML5 のサポート:** コード化された UI テストは、HTML5 コントロール (Audio、Video、ProgressBar、および Slider) の記録、再生、および検証をサポートします。 詳細については、「[コード化された UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」をご覧ください。 **警告:** Internet Explorer 10 でコード化された UI テストを作成した場合、そのテストは Internet Explorer 9 または Internet Explorer 8 を使用して実行できないことがあります。 これは、Internet Explorer 10 には Audio、Video、ProgressBar、Slider などの HTML5 コントロールが含まれているためです。 これらの HTML5 コントロールは、Internet Explorer 9 または Internet Explorer 8 で認識されません。 同様に、Internet Explorer 9 を使用するコード化された UI テストには、Internet Explorer 8 で認識されない HTML5 コントロールが含まれる場合があります。<br />-   **Internet Explorer 10 のスペル チェックのサポート:** Internet Explorer 10 には、すべてのテキスト ボックスに対するスペル チェック機能が含まれています。 この機能を使用すると、提示される修正の一覧から選択することができます。 コード化された UI テストでは、提示されるスペル候補の選択などのユーザー アクションは無視されます。 テキスト ボックスに入力された最終的なテキストのみが記録されます。<br />     スペル チェック コントロールを使用する一部の操作 (ディクショナリへの追加、コピー、すべて選択、および無視) は、コード化された UI テスト用に記録されます。<br />-   **Windows 8 上で実行する 64 ビット Internet Explorer のサポート:** 以前は、Internet Explorer の 64 ビット バージョンは記録および再生用にサポートされていませんでした。 [!INCLUDE[win8](../includes/win8-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] によって、コード化された UI テストは、Internet Explorer の 64 ビット バージョンで使用可能になりました。 **警告:**      Internet Explorer の 64 ビット バージョンのサポートは、[!INCLUDE[win8](../includes/win8-md.md)] 以降を実行しているときにのみ適用されます。<br />-   **Internet Explorer 9 の固定サイトのサポート:** Internet Explorer 9 で固定サイトが導入されました。 固定サイトを使用すると、最初に Internet Explorer を開かなくても、Windows タスク バーからお気に入りのサイトに直接アクセスできます。 コード化された UI テストは、固定サイトでの目的に応じた操作を生成できるようになりました。 固定サイトの詳細については、「 [サイトの固定](http://go.microsoft.com/fwlink/?LinkId=220037)」を参照してください。<br />-   **Internet Explorer 9 のセマンティック タグのサポート:** Internet Explorer 9 で、セマンティック タグ (section、nav、article、aside、hgroup、header、footer、figure、figcaption、および mark) が導入されました。 コード化された UI テストでは、記録中はこれらのセマンティック タグがすべて無視されます。 コード化された UI テスト ビルダーを使用して、これらのタグのアサーションを追加できます。 コード化された UI テスト ビルダーで、ナビゲーション ダイヤルを使用してこれらの要素に移動し、そのプロパティを表示することができます。<br />-   **Internet Explorer のバージョン間の空白文字のシームレスな処理:** Internet Explorer 8、Internet Explorer 9、Internet Explorer 10 の間には、空白文字の処理に違いがあります。 コード化された UI テストは、これらの違いをシームレスに処理します。 たとえば、Internet Explorer 8 で作成されたコード化された UI テストは、Internet Explorer 9 と Internet Explorer 10 で正常に再生されます。<br />-   **Internet Explorer の通知領域が "エラー時に続行" 属性を設定した状態で記録される:** Internet Explorer の通知領域のすべての操作が、"エラー時に続行" 属性を設定した状態で記録されるようになりました。 再生中に通知バーが表示されない場合、それに対する操作は無視され、コード化された UI テストは次の操作を続行します。|
+|Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **重要:** Internet Explorer 10 は、デスクトップでのみサポートされています。 <br /><br /> Internet Explorer 11 **重要:** Internet Explorer 11 は、デスクトップでのみサポートされています。|完全にサポートされています。<br /><br /> -   **Internet Explorer 9 および Internet Explorer 10 での HTML5 のサポート:** コード化された UI テストは、HTML5 コントロール (Audio、Video、ProgressBar、および Slider) の記録、再生、および検証をサポートします。 詳細については、「 [Using HTML5 Controls in Coded UI Tests](../test/using-html5-controls-in-coded-ui-tests.md)」を参照してください。 **警告:** Internet Explorer 10 でコード化された UI テストを作成した場合、そのテストは Internet Explorer 9 または Internet Explorer 8 を使用して実行できないことがあります。 これは、Internet Explorer 10 には Audio、Video、ProgressBar、Slider などの HTML5 コントロールが含まれているためです。 これらの HTML5 コントロールは、Internet Explorer 9 または Internet Explorer 8 で認識されません。 同様に、Internet Explorer 9 を使用するコード化された UI テストには、Internet Explorer 8 で認識されない HTML5 コントロールが含まれる場合があります。<br />-   **Internet Explorer 10 のスペル チェックのサポート:** Internet Explorer 10 には、すべてのテキスト ボックスに対するスペル チェック機能が含まれています。 この機能を使用すると、提示される修正の一覧から選択することができます。 コード化された UI テストでは、提示されるスペル候補の選択などのユーザー アクションは無視されます。 テキスト ボックスに入力された最終的なテキストのみが記録されます。<br />     スペル チェック コントロールを使用する一部の操作 (ディクショナリへの追加、コピー、すべて選択、および無視) は、コード化された UI テスト用に記録されます。<br />-   **Windows 8 上で実行する 64 ビット Internet Explorer のサポート:** 以前は、Internet Explorer の 64 ビット バージョンは記録および再生用にサポートされていませんでした。 [!INCLUDE[win8](../includes/win8-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]によって、コード化された UI テストは、Internet Explorer の 64 ビット バージョンで使用可能になりました。 **警告:**      Internet Explorer の 64 ビット バージョンのサポートは、[!INCLUDE[win8](../includes/win8-md.md)] 以降を実行しているときにのみ適用されます。<br />-   **Internet Explorer 9 の固定サイトのサポート:** Internet Explorer 9 で固定サイトが導入されました。 固定サイトを使用すると、最初に Internet Explorer を開かなくても、Windows タスク バーからお気に入りのサイトに直接アクセスできます。 コード化された UI テストは、固定サイトでの目的に応じた操作を生成できるようになりました。 固定サイトの詳細については、「 [サイトの固定](https://go.microsoft.com/fwlink/?LinkId=220037)」を参照してください。<br />-   **Internet Explorer 9 のセマンティック タグのサポート:** Internet Explorer 9 で、セマンティック タグ (section、nav、article、aside、hgroup、header、footer、figure、figcaption、および mark) が導入されました。 コード化された UI テストでは、記録中はこれらのセマンティック タグがすべて無視されます。 コード化された UI テスト ビルダーを使用して、これらのタグのアサーションを追加できます。 コード化された UI テスト ビルダーで、ナビゲーション ダイヤルを使用してこれらの要素に移動し、そのプロパティを表示することができます。<br />-   **Internet Explorer のバージョン間の空白文字のシームレスな処理:** Internet Explorer 8、Internet Explorer 9、Internet Explorer 10 の間には、空白文字の処理に違いがあります。 コード化された UI テストは、これらの違いをシームレスに処理します。 たとえば、Internet Explorer 8 で作成されたコード化された UI テストは、Internet Explorer 9 と Internet Explorer 10 で正常に再生されます。<br />-   **Internet Explorer の通知領域が "エラー時に続行" 属性を設定した状態で記録される:** Internet Explorer の通知領域のすべての操作が、"エラー時に続行" 属性を設定した状態で記録されるようになりました。 再生中に通知バーが表示されない場合、それに対する操作は無視され、コード化された UI テストは次の操作を続行します。|
 |Windows フォームと WPF のサードパーティ製コントロール|完全にサポートされています。<br /><br /> Windows フォームと WPF アプリケーションでサードパーティ製コントロールを有効にするには、参照とコードを追加する必要があります。 詳細については、「[コントロールのコード化された UI テストの有効化](../test/enable-coded-ui-testing-of-your-controls.md)」をご覧ください。|
 |Internet Explorer 6<br /><br /> Internet Explorer 7|サポートされていません。|
 |Chrome<br /><br /> Firefox|操作手順の記録はサポートされていません。 コード化された UI テストは、Chrome および Firefox ブラウザー上で、Visual Studio 2012 Update 4 以降で再生できます。 詳細については、 [こちら](https://msdn.microsoft.com/library/jj835758.aspx) を参照してください。|
@@ -59,16 +59,16 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 |Windows フォーム 2.0 以降|完全にサポートされています。 **注:** NetFx コントロールは完全にサポートされていますが、一部のサードパーティ コントロールはサポートされていません。|
 |WPF 3.5 以降|完全にサポートされています。<br /><br /> **メモ** NetFx コントロールは完全にサポートされていますが、一部のサードパーティ コントロールはサポートされていません。|
 |Windows Win32|既知の問題がいくつか存在しますが、動作する可能性があります。ただし、公式にはサポートされていません。|
-|MFC|一部サポートされています。 サポートされる機能の詳細については、 [Microsoft Web サイト](http://go.microsoft.com/fwlink/?LinkId=206511) を参照してください。|
+|MFC|一部サポートされています。 サポートされる機能の詳細については、 [Microsoft Web サイト](https://go.microsoft.com/fwlink/?LinkId=206511) を参照してください。|
 |SharePoint|完全にサポートされています。|
 |Office クライアント アプリケーション|サポートされていません。|
 |Dynamics CRM Web クライアント|完全にサポートされています。|
-|Dynamics (Ax) 2012 クライアント|操作の記録と再生が部分的にサポートされています。 詳細については、 [Microsoft Web サイト](http://go.microsoft.com/fwlink/?LinkId=232677) を参照してください。|
+|Dynamics (Ax) 2012 クライアント|操作の記録と再生が部分的にサポートされています。 詳細については、 [Microsoft Web サイト](https://go.microsoft.com/fwlink/?LinkId=232677) を参照してください。|
 |SAP|サポートされていません。|
 |Citrix およびターミナル サービス|ターミナル サーバーに対する操作の記録はお勧めしません。 レコーダーは、複数のインスタンスの同時実行をサポートしていません。|
 |PowerBuilder|一部サポートされています。<br /><br /> サポートは、PowerBuilder コントロールに対してユーザー補助が有効である程度までです。|
 
  その他のプラットフォームをサポートするための拡張機能の作成方法については、「[コントロールのコード化された UI テストの有効化](../test/enable-coded-ui-testing-of-your-controls.md)」および「[コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [UI オートメーションを使用して、](../test/use-ui-automation-to-test-your-code.md) [既存の操作の記録からコード化された ui テストを生成](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)するコードをテストする

@@ -29,8 +29,8 @@ ms.locfileid: "72577537"
 - 右端の右かっこを追加します。  
   
     > [!NOTE]
-    > 1つのかっこに一致させる場合は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] によって特殊文字として解釈されないように、円記号 (-\\) でエスケープします。  
+    > 1つのかっこに一致させる場合は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]によって特殊文字として解釈されないように、円記号 (-\\) でエスケープします。  
   
-## <a name="see-also"></a>関連項目  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の    
+## <a name="see-also"></a>参照  
+ [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の   
  [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

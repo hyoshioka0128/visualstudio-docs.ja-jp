@@ -37,7 +37,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバー識別子。 @No__t_0 または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
+ メンバー識別子。 `GetDispID` または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -47,8 +47,8 @@ HRESULT DeleteMemberByDispID(
 |`S_OK`|成功。|  
 |`S_FALSE`|メンバーは存在しますが、削除できません。|  
   
-## <a name="remarks"></a>Remarks  
- メンバーが削除された場合、DISPID は `GetNextDispID` に対して有効なままである必要があります。  
+## <a name="remarks"></a>コメント  
+ メンバーが削除された場合、DISPID は `GetNextDispID`に対して有効なままである必要があります。  
   
  指定された名前のメンバーが削除され、後で同じ名前のメンバーが再作成される場合、DISPID は同じである必要があります。 (大文字と小文字のみが異なるメンバー名が "同じ" であるかどうかは、オブジェクトに依存します)。  
   
@@ -64,7 +64,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

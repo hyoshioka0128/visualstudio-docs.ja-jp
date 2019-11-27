@@ -27,7 +27,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572583"
 ---
 # <a name="dbgprop_info_flags"></a>DBGPROP_INFO_FLAGS
-@No__t_0 フィールドを指定するために使用されます  
+`DebugPropertyInfo` フィールドを指定するために使用されます  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,26 +45,26 @@ enum {
   
 ## <a name="members"></a>メンバー  
  DBGPROP_INFO_NAME  
- @No__t_0 フィールドを初期化します。  
+ `bstrName` フィールドを初期化します。  
   
  DBGPROP_INFO_TYPE  
- @No__t_0 フィールドを初期化します。  
+ `bstrType` フィールドを初期化します。  
   
  DBGPROP_INFO_VALUE  
- @No__t_0 フィールドを初期化します。  
+ `bstrValue` フィールドを初期化します。  
   
  DBGPROP_INFO_FULLNAME  
- @No__t_0 フィールドを初期化します。  
+ `bstrFullName` フィールドを初期化します。  
   
  DBGPROP_INFO_ATTRIBUTES  
- @No__t_0 フィールドを初期化します。  
+ `dwAttrib` フィールドを初期化します。  
   
  DBGPROP_INFO_DEBUGPROP  
- @No__t_1 インターフェイスを含む `pDebugProp` フィールドを初期化します。  
+ `IDebugProperty` インターフェイスを含む `pDebugProp` フィールドを初期化します。  
   
  DBGPROP_INFO_AUTOEXPAND  
  値フィールドに、この型のオブジェクトの自動展開値 (使用可能な場合) が含まれていることを指定します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f511a96f94ab98a93144938529a05d07bb6ed26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: caecb85392170559a860a7dc334570880d6e76f1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669577"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301469"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>UML モデルを他のモデルおよびツールと統合する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
    詳細については、「プロファイルを定義して[UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)」を参照してください。
 
-   メニューコマンドおよびジェスチャハンドラーと共にプロファイルが配置されるサンプルプロジェクトについては、「[サンプル: UML プロファイル](http://go.microsoft.com/fwlink/?LinkID=213811)」を参照してください。
+   メニューコマンドおよびジェスチャハンドラーと共にプロファイルが配置されるサンプルプロジェクトについては、「[サンプル: UML プロファイル](https://go.microsoft.com/fwlink/?LinkID=213811)」を参照してください。
 
 - **形式.** 一連の文字列を任意の UML 要素にアタッチできます。 ファイル名や別の要素の GUID などの情報を格納するコードを記述することもできます。 これは、追加の定義を行わなくても行えます。 参照は、ユーザーには直接表示されません。
 
-   詳細については、「 [UML モデル要素に参照文字列をアタッチする](../modeling/attach-reference-strings-to-uml-model-elements.md)」を参照してください。 サンプルについては、「 [UML 要素を図またはその他のファイルにリンクする](http://go.microsoft.com/fwlink/?LinkId=213813)」を参照してください。
+   詳細については、「 [UML モデル要素に参照文字列をアタッチする](../modeling/attach-reference-strings-to-uml-model-elements.md)」を参照してください。 サンプルについては、「 [UML 要素を図またはその他のファイルにリンクする](https://go.microsoft.com/fwlink/?LinkId=213813)」を参照してください。
 
   参照をモデル要素にエンコードするには次の 2 つの方法があります。
 
 - ターゲットモデル要素の**GUID とファイル名**、およびターゲットモデル要素を含むモデル、またはそれを表示する特定の図。
 
-   例については、「 [UML 要素を図またはその他のファイルにリンクする](http://go.microsoft.com/fwlink/?LinkId=213813)」を参照してください。
+   例については、「 [UML 要素を図またはその他のファイルにリンクする](https://go.microsoft.com/fwlink/?LinkId=213813)」を参照してください。
 
 - **ModelBus 参照。** ModelBus は、モデル間の参照を作成および解決するためのフレームワークです。 これには、モデル内の要素をユーザーが選択できるようにする ModelBus ピッカーが含まれます。 これは、対象のモデルに変更があったために失われた参照をユーザーが解決するのにも役立ちます。
 
@@ -61,7 +61,7 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
 1. **Vmsdk ルール**を使用して、同じモデル内の変更を反映することができます。
 
-    例については、「 [UML 要素を図またはその他のファイルにリンクする](http://go.microsoft.com/fwlink/?LinkId=213813)」を参照してください。
+    例については、「 [UML 要素を図またはその他のファイルにリンクする](https://go.microsoft.com/fwlink/?LinkId=213813)」を参照してください。
 
 2. **Vmsdk イベント**を使用して、モデルの外部の変更を反映することができます。たとえば、リンクドキュメントのファイル名を変更したり、別のモデルの要素を変更したりできます。
 
@@ -71,8 +71,8 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
    詳細については、「[モデリング図でのジェスチャハンドラーの定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)」および「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
 
-## <a name="samples"></a>サンプル
- [UML 要素を図またはその他のファイルにリンクする](http://go.microsoft.com/fwlink/?LinkId=213813)コードサンプルを参照してください。 このサンプルを使用すると、ユーザーは任意の UML 要素にファイルをドラッグし、後でその要素をダブルクリックしてファイルを開くことができます。 たとえば、アクティビティ図を、ユースケース要素にリンクすることができます。 リンクが設定されている要素はアイコンで示されます。
+## <a name="samples"></a>Samples
+ [UML 要素を図またはその他のファイルにリンクする](https://go.microsoft.com/fwlink/?LinkId=213813)コードサンプルを参照してください。 このサンプルを使用すると、ユーザーは任意の UML 要素にファイルをドラッグし、後でその要素をダブルクリックしてファイルを開くことができます。 たとえば、アクティビティ図を、ユースケース要素にリンクすることができます。 リンクが設定されている要素はアイコンで示されます。
 
  このコード サンプルでは、以下の技法を説明します。
 
@@ -96,5 +96,5 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
   DSL で UML モデルを読み取る例については、「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
 
-## <a name="see-also"></a>参照
- [モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する[モデリング図にジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する[方法: ドラッグアンドドロップハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)する方法: [uml モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)する[例: uml プロファイル](http://go.microsoft.com/fwlink/?LinkID=213811)[を uml 要素にリンクする図またはその他のファイル](http://go.microsoft.com/fwlink/?LinkId=213813)
+## <a name="see-also"></a>関連項目
+ [モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[するモデリング図にジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する[方法: ドラッグアンドドロップハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)する方法: [uml モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)する[サンプル: uml プロファイル](https://go.microsoft.com/fwlink/?LinkID=213811)uml[要素を図またはその他のファイルにリンクする](https://go.microsoft.com/fwlink/?LinkId=213813)
