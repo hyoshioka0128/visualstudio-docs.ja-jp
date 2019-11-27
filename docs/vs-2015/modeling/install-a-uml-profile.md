@@ -1,5 +1,5 @@
 ---
-title: Install a UML profile | Microsoft Docs
+title: UML プロファイルをインストールする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,7 +25,7 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
 
  プロファイルを使用して生成された UML モデルを受け取った場合、同じプロファイルをインストールしていなければ、一部のプロパティは表示されません。
 
- プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 For more information, see [Managing Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160728).
+ プロファイルは、Visual Studio 拡張機能の中で配布されます。 拡張機能には、メニュー コマンドなどの他の機能も含まれる場合があります。 詳細については、「 [Visual Studio 拡張機能の管理](https://go.microsoft.com/fwlink/?LinkId=160728)」を参照してください。
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>UML プロファイルをコンピューターにインストールするには
 
@@ -35,15 +35,15 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
 
 2. Windows エクスプローラー (またはエクスプローラー) で `.vsix` ファイルをダブルクリックするか、このファイルを [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 内で開きます。
 
-3. Click **Install** in the dialog box that appears.
+3. 表示されるダイアログボックスで **[インストール]** をクリックします。
 
-4. To uninstall or temporarily disable the extension, open **Extension Manager** from the **Tools** menu.
+4. 拡張機能をアンインストールするか、一時的に無効にするには、 **[ツール]** メニューの **[拡張機能マネージャー]** を開きます。
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>プロファイルの拡張機能をアンインストールまたは無効にするには
 
-1. On the Visual Studio **Tools** menu, click **Extension Manager**.
+1. Visual Studio の **[ツール]** メニューで、 **[拡張機能マネージャー]** をクリックします。
 
-2. Click the extension that you want to remove, and then click **Disable** or **Uninstall**.
+2. 削除する拡張機能をクリックし、 **[無効化]** または **[アンインストール]** をクリックします。
 
-## <a name="see-also"></a>参照
- [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md)
+## <a name="see-also"></a>関連項目
+ プロファイル[とステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[するプロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)

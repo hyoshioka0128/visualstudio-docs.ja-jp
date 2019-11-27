@@ -42,7 +42,7 @@ ms.locfileid: "74297789"
 
 - [コンソール ユーザー補助](/previous-versions/windows/desktop/dnacc/console-accessibility) この技術情報では、ユーザー補助のサポートのために Windows XP でコンソールを表示するための API とイベントについて説明します。
 
-## <a name="web-sites"></a>Web サイト
+## <a name="web-sites"></a>Web Sites のオフライン インストールの準備
 
 - [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) このトピックでは、Web 用のユーザー補助設計のヒントに加え、ユーザー補助コントロールをサンプル Web ページに含めるための手順を順番に説明します。
 
@@ -56,5 +56,5 @@ ms.locfileid: "74297789"
 
 - **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)

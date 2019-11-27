@@ -1,5 +1,5 @@
 ---
-title: 'CA3077: Insecure Processing in API Design, XML Document and XML Text Reader | Microsoft Docs'
+title: 'CA3077: API デザイン、XML ドキュメント、および XML テキストリーダー | で安全ではない処理Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -31,15 +31,15 @@ ms.locfileid: "74300473"
 ## <a name="rule-description"></a>規則の説明
  [文書型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) は、  [World Wide Web コンソーシアム (W3C) Extensible Markup Language (XML) 1.0](https://www.w3.org/TR/2008/REC-xml-20081126/)で定義されているように、XML パーサーが文書の妥当性を判別する 2 つの方法のうちの 1 つです。 このルールは、信頼されていないデータを受け入れてしまうプロパティとインスタンスを検索し、 [サービス拒否 (DoS)](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 攻撃につながる可能性がある潜在的な [Information Disclosure](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) の脅威について開発者に警告します。 このルールは、次の場合にトリガーされます。
 
-- <xref:System.Xml.XmlDocument> or <xref:System.Xml.XmlTextReader> classes use default resolver values for DTD processing    .
+- <xref:System.Xml.XmlDocument> または <xref:System.Xml.XmlTextReader> クラスは、DTD 処理に既定の競合回避モジュールの値を使用します。
 
 - XmlDocument または XmlTextReader から派生したクラスにコンストラクターが定義されていない。または <xref:System.Xml.XmlResolver>にセキュリティで保護された値が使用されていない。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .
+- パス情報の漏えいを防ぐために、すべての XmlTextReader 例外をキャッチして処理します。
 
-- Use <xref:System.Xml.XmlSecureResolver>instead of XmlResolver to restrict the resources the XmlTextReader can  access.
+- XmlTextReader がアクセスできるリソースを制限するには、XmlResolver ではなく <xref:System.Xml.XmlSecureResolver>を使用します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  入力が信頼できるソースからのものとわかっているのでない限り、この警告からのルールを抑制しないでください。

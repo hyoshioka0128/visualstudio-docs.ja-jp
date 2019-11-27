@@ -43,9 +43,9 @@ ms.locfileid: "74299970"
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   ステートメントは、プログラムに処理を実行させる指示にあたります。 Visual C# の場合、ステートメントは必ずセミコロンで終わります。 Visual Basic の場合は、行の末尾がステートメントの末尾になります (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
+   ステートメントは、プログラムに処理を実行させる指示にあたります。 Visual C# の場合、ステートメントは必ずセミコロンで終わります。 Visual Basic の場合は、行の末尾がステートメントの末尾になります (Visual Basic にセミコロンは必要ありません)。前のステートメントは、ユーザーが**OpenFileDialog**コンポーネントで選択したファイルを読み込むように `PictureBox` コントロールに指示します。
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](https://go.microsoft.com/fwlink/?LinkId=205216)ビデオ5」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 5](https://go.microsoft.com/fwlink/?LinkId=205206)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-add-comments"></a>コメントを追加するには
 
@@ -66,13 +66,13 @@ ms.locfileid: "74299970"
 
 2. プログラムを実行する前に、ツール バーの **[すべてを保存]** (次の図を参照) をクリックしてプログラムを保存します。
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
+     ![[すべて保存] ツールバーボタン](../ide/media/express-iconsaveall.png "Express_IconSaveAll")[すべて保存] ボタン
 
      または、メニュー バーで、 **[ファイル]** 、 **[すべてを保存]** の順にクリックしてプログラムを保存します。 早めに、かつ頻繁に保存することをお勧めします。
 
      実行中のプログラムは次の図のようになります。
 
-     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
+     ![画像ビューアー](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun")画像ビューアー
 
 ### <a name="to-test-your-program"></a>プログラムをテストするには
 

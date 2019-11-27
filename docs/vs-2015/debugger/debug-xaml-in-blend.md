@@ -1,5 +1,5 @@
 ---
-title: Debug XAML in Blend | Microsoft Docs
+title: Blend で XAML をデバッグする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -55,11 +55,11 @@ ms.locfileid: "74298328"
   
     **[新しいプロジェクト]** ダイアログ ボックスの左側に、プロジェクトの種類の一覧が表示されます。 プロジェクトの種類をクリックすると、その種類に関連付けられているプロジェクト テンプレートが右側に表示されます。  
   
-2. In the list of project types, click **XAML (Windows Store)** .  
+2. プロジェクトの種類の一覧で、 **[XAML (Windows ストア)]** をクリックします。  
   
-3. In the list of project templates, click **Blank App**.  
+3. プロジェクトテンプレートの一覧で、 **[空のアプリ]** をクリックします。  
   
-4. In the **Name** text box, type `DebuggingSample`.  
+4. **[名前]** テキストボックスに「`DebuggingSample`」と入力します。  
   
 5. **[場所]** ボックスでプロジェクトの場所を確認します。  
   
@@ -108,22 +108,22 @@ ms.locfileid: "74298328"
   
 1. リストの最初のエラーをダブルクリックします。 説明は、"値 '<' は、属性では無効です" となります。 エラーをダブルクリックすると、ポインターがコード内の対応する場所を見つけます。 `<` の前の `Button` は有効で、エラー メッセージで指定された属性ではありません。 コードの前の行を見ると、属性 `Top` の終わりの引用符がないことがわかります。 終わりの引用符を入力します。 **[結果]** パネルのエラー リストが更新されて変更が反映されていることに注意してください。  
   
-2. Double-click the description "'0' is not valid at the start of a name." `Margin="0,149,0,0"` appears to be well formed. ただし、`Margin` のカラー コーディングはコードの `Margin` の他のインスタンスと一致しないことに注意してください。 終わりの引用符が前の名前/値ペア (`VerticalAlignment="Top`) にないため、`Margin="` は前の属性の値の一部として読み込まれ、0 が名前/値ペアの先頭として読み込まれます。 `Top` の終わりの引用符を入力します。 **[結果]** パネルのエラー リストが更新されて変更が反映されます。  
+2. "' 0 ' は名前の先頭では無効です" という説明をダブルクリックします。 `Margin="0,149,0,0"` の形式が正しく表示されます。 ただし、`Margin` のカラー コーディングはコードの `Margin` の他のインスタンスと一致しないことに注意してください。 終わりの引用符が前の名前/値ペア (`VerticalAlignment="Top`) にないため、`Margin="` は前の属性の値の一部として読み込まれ、0 が名前/値ペアの先頭として読み込まれます。 `Top` の終わりの引用符を入力します。 **[結果]** パネルのエラー リストが更新されて変更が反映されます。  
   
 3. 残りのエラーをダブルクリックします。"終わりの XML タグ 'Button' が一致しません。" ポインターは終わりの **Grid** タグ (`</Grid>`) にあり、エラーが `Grid` オブジェクトの内側にあることを示します。 2 番目の `Button` オブジェクトで終わりのタグがないことに注意してください。 終わりの `/` を追加すると、 **[結果]** パネル リストが更新されます。 これら 2 つの最初のエラーが解決され、さらに 2 つのエラーが識別されました。  
   
 4. "メンバー 'content' が認識されないか、アクセスできません。" をダブルクリックします。 `c` の `content` は大文字になります。 小文字の "c" を大文字の "c" に置き換えます。  
   
-5. Double-click "The property 'Mame' does not exist in the '<https://schemas.microsoft.com/winfx/2006/xaml>' namespace." "Mame" の "M" は "N" でなければなりません。 "M" を "N" で置き換えます。 これで、XAML が解析でき、アプリがデザイン サーフェスに表示されます。  
+5. プロパティ ' Mame ' は '<https://schemas.microsoft.com/winfx/2006/xaml>' 名前空間に存在しません。 "をダブルクリックします。 "Mame" の "M" は "N" でなければなりません。 "M" を "N" で置き換えます。 これで、XAML が解析でき、アプリがデザイン サーフェスに表示されます。  
   
-    ![Debugging XAML in Blend for Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![Blend for Visual Studio での XAML のデバッグ](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     Ctrl + Shift + B キーを押してプロジェクトをビルドし、残っているエラーがないことを確認します。  
   
 ## <a name="debugging-in-visual-studio"></a>Visual Studio でのデバッグ  
  アプリ内のコードをさらに簡単にデバッグするために、Visual Studio で [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] プロジェクトを開くことができます。 Visual Studio で [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] プロジェクトを開くには、 **[プロジェクト]** パネルでプロジェクトを右クリックし、次に **[Visual Studio で編集]** をクリックします。 Visual Studio でデバッグ セッションを完了したら、Ctrl + Shift + S キーを押してすべての変更を保存し、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] に戻ります。 プロジェクトの再読み込みを求めるメッセージが表示されます。 **[すべてはい]** をクリックして [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] での作業を続けます。  
   
- For more information about debugging your app, see [Debug Windows Store apps in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ アプリのデバッグの詳細については、「 [Visual Studio での Windows ストアアプリのデバッグ](https://go.microsoft.com/fwlink/?LinkId=329944)」を参照してください。  
   
-## <a name="getting-help"></a>ヘルプ情報の入手  
- If you need more help debugging your [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] app, you can search the [Windows Store app community forums](https://go.microsoft.com/fwlink/?LinkId=280308) for posts related your issue or post a question.
+## <a name="getting-help"></a>ヘルプの表示  
+ [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] アプリのデバッグに関するヘルプが必要な場合は、 [Windows ストアアプリのコミュニティフォーラム](https://go.microsoft.com/fwlink/?LinkId=280308)で、問題に関連する投稿や質問を投稿することができます。

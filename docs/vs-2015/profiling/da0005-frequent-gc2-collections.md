@@ -24,11 +24,11 @@ ms.locfileid: "74301251"
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: 頻繁な GC2 のコレクションです
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-RuleId|DA0005|  
-|Category|.NET Framework Usage|  
-|Profiling method|.NET Memory|  
-|Message|Many of your objects are being collected in generation 2 garbage collection.|  
-|Message type|Warning|  
+RuleId |DA0005 |  
+|Category |。NET Framework Usage |  
+|プロファイル方法 |。NET Memory |  
+|Message |ジェネレーション2のガベージコレクションで、オブジェクトの多くが収集されています |。  
+|メッセージの種類 |警告 |  
   
 ## <a name="cause"></a>原因  
  多数の .NET メモリ オブジェクトが、ジェネレーション 2 のガベージ コレクションで回収されています。  
@@ -43,4 +43,4 @@ RuleId|DA0005|
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md) レポートを確認して、メモリ割り当てに関するアプリケーションのパターンを把握します。 [オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)を使用して、ジェネレーション 2 に残っており、その後そこから解放される、プログラムのデータ オブジェクトを確認します。 [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)を使用して、これらの割り当てが行われた実行パスを判断します。  
   
- ガベージ コレクションのパフォーマンスの向上の方法の詳細については、Microsoft Web サイトの「[ガベージ コレクターの基本とパフォーマンスのヒント](https://go.microsoft.com/fwlink/?LinkId=148226)」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](https://go.microsoft.com/fwlink/?LinkId=177836)」 (大きなオブジェクト ヒープの秘密) を参照してください。
+ ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの「[ガベージ コレクタの基本とパフォーマンスのヒント](https://go.microsoft.com/fwlink/?LinkId=148226)」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](https://go.microsoft.com/fwlink/?LinkId=177836)」 (大きなオブジェクト ヒープの秘密) を参照してください。

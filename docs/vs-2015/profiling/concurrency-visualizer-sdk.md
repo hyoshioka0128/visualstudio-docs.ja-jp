@@ -31,9 +31,9 @@ ms.locfileid: "74300635"
 
 ### <a name="c-and-visual-basic"></a>C# および Visual Basic
 
-C#、Visual Basic、および他のマネージド コードでは、[Markers](/previous-versions/hh694099(v=vs.140)) クラスのメソッド を呼び出して既定のプロバイダーを使います。 It exposes four methods for generating markers: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)), and [WriteAlert](/previous-versions/hh694180(v=vs.140)). プロパティで既定を使用するかどうかに応じて、これらの関数には複数のオーバーロードがあります。  最も単純なオーバーロードは、イベントの説明を指定する文字列パラメーターのみを受け取ります。 説明はコンカレンシー ビジュアライザーのレポートに表示されます。
+C#、Visual Basic、および他のマネージド コードでは、[Markers](/previous-versions/hh694099(v=vs.140)) クラスのメソッド を呼び出して既定のプロバイダーを使います。 マーカーの生成には、 [WriteFlag](/previous-versions/hh694185(v=vs.140))、 [enterspan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))、 [writealert](/previous-versions/hh694180(v=vs.140))の4つのメソッドが公開されています。 プロパティで既定を使用するかどうかに応じて、これらの関数には複数のオーバーロードがあります。  最も単純なオーバーロードは、イベントの説明を指定する文字列パラメーターのみを受け取ります。 説明はコンカレンシー ビジュアライザーのレポートに表示されます。
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Add SDK support to a C# or Visual Basic project
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>C#または Visual Basic プロジェクトに SDK サポートを追加する
 
 1. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[プロジェクトへの SDK の追加]** の順に選択します。
 
@@ -84,7 +84,7 @@ C#、Visual Basic、および他のマネージド コードでは、[Markers](/
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C# または C プロジェクトで新しいマーカー プロバイダーを使用するには
 
-1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。 The constructor takes a GUID* and PCV_PROVIDER\*.
+1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。 コンストラクターは GUID * と PCV_PROVIDER\*を受け取ります。
 
 2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。 **[マーカー]** タブを選択してから、 **[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
 
@@ -123,7 +123,7 @@ C#、Visual Basic、および他のマネージド コードでは、[Markers](/
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
 |[C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)|C++ のコンカレンシー ビジュアライザー API について説明します。|
 |[C ライブラリ リファレンス](../profiling/c-library-reference.md)|C のコンカレンシー ビジュアライザー API について説明します。|

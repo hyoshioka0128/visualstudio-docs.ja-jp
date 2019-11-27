@@ -1,5 +1,5 @@
 ---
-title: Creating Bootstrapper Packages | Microsoft Docs
+title: ブートストラップパッケージを作成する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -100,9 +100,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  ブートストラップによって自動的に設定されるプロパティを次の表に示します。  
   
-|property|説明|  
+|プロパティ|説明|  
 |--------------|-----------------|  
-|ApplicationName|アプリケーションの名前。|  
+|ApplicationName|アプリケーションの名前です。|  
 |ProcessorArchitecture|実行可能ファイルが対象とするプラットフォームのプロセッサと、ワードあたりのビット数。 次の値があります。<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98、または Windows ME の各オペレーティング システムのバージョン番号。 バージョンの構文は、Major.Minor.ServicePack です。|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008、または Windows 7 の各オペレーティング システムのバージョン番号。 バージョンの構文は、Major.Minor.ServicePack です。|  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [[必須コンポーネント] ダイアログ ボックス](../ide/reference/prerequisites-dialog-box.md)   
- [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)   
+ [製品およびパッケージスキーマのリファレンス](../deployment/product-and-package-schema-reference.md)   
  [Visual Studio 2005 ブートストラップを使用してインストールを促進する](https://go.microsoft.com/fwlink/?LinkId=107537)

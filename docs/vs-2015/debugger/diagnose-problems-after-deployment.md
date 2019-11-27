@@ -23,7 +23,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
  また、Microsoft Monitoring Agent を使用して IntelliTrace を制御している場合は、Web サーバー上でアプリケーション パフォーマンスの監視をセットアップする必要もあります。 これにより、アプリがイベントを実行して IntelliTrace ログ ファイルに保存する間に、診断イベントが記録されます。 次に Visual Studio Enterprise (ただし、Professional および Community Edition を除く) でイベントを確認し、イベントが発生したコードに移動できます。さらに、その時点で記録された値を確認し、実行されたコード内を前後に移動できます。 問題を見つけて解決したら、リリースをビルド、リリース、および監視するサイクルを繰り返して、将来発生する可能性がある問題をさらに早い段階で速やかに解決できます。  
   
- ![Code, build, release, monitor, diagnose, fix](../debugger/media/ffr-cycle.png "FFR_Cycle")  
+ ![コード、ビルド、リリース、監視、診断、修正](../debugger/media/ffr-cycle.png "FFR_Cycle")  
   
  **要件:**  
   
@@ -42,19 +42,19 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  ビルド定義を設定して、ソース、ビルド、およびシンボルの場所をビルド マニフェスト (BuildInfo.config ファイル) に追加します。 Team Foundation ビルドは自動的にこのファイルを作成し、そのファイルをプロジェクトの出力フォルダーに配置します。  
   
-1. [Edit your build definition or create a new build definition.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [ビルド定義を編集するか、新しいビルド定義を作成します。](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
-    ![View build definition in TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+    ![TFS 2013 でビルド定義を表示する](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
 2. 既定のテンプレート (TfvcTemplate.12.xaml) または独自のカスタム テンプレートを選択します。  
   
-    ![Choose build process template &#45; TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![ビルドプロセステンプレート&#45;の TFS 2013 の選択](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3. ソースのインデックスが自動的に作成されるように、シンボル (PDB) ファイルの保存場所を指定します。  
   
     カスタム テンプレートを使用する場合は、ソースにインデックスを付けるアクティビティがカスタム テンプレートに含まれていることを確認します。 後の手順で、MSBuild 引数を追加して、シンボル ファイルの保存場所を指定できます。  
   
-    ![Set up symbols path in build definition TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![ビルド定義 TFS 2013 でのシンボルパスの設定](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
     シンボルの詳細については、「 [シンボル データを発行する](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)」を参照してください。  
   
@@ -68,7 +68,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
     **/p:BuildSymbolStorePath=** \<*シンボルへのパス*>  
   
-    ![Include build server info in build def TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![ビルド定義 TFS 2013 にビルドサーバー情報を含める](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
     以下の行を Web プロジェクト ファイル (.csproj または .vbproj) に追加します。  
   
@@ -158,21 +158,21 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 1. IntelliTrace ログ (.iTrace ファイル) を Visual Studio Enterprise から開きます。 同じコンピューターに Visual Studio Enterprise がある場合は、ファイルをダブルクリックするだけです。  
   
-2. **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: The IntelliTrace log is missing information about my deployed app. Why did this happen? What do I do?](#InvalidConfigFile)  
+2. **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: IntelliTrace ログに、デプロイされたアプリに関する情報がありません。なぜこれが発生したのでしょうか。どうしようか。](#InvalidConfigFile)  
   
      Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー**を確認します。  
   
      変更する前に、適切なソースがあることを確認してください。 分岐を使用する場合、Visual Studio が対応するソースを検出した分岐 (リリース ブランチなど) とは異なる分岐で作業する可能性があります。  
   
-     ![Open solution from IntelliTrace log](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
+     ![IntelliTrace ログからソリューションを開く](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
   
      このソリューションまたはプロジェクトに対するワークスペースを既に割り当てた場合は、Visual Studio によってそのワークスペースが選択され、検出されたソースが配置されます。  
   
-     ![Open from source control to mapped workspace](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
+     ![ソース管理からマップされたワークスペースに開く](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
   
      それ以外の場合は、別のワークスペースを選択するか、新しいワークスペースを作成します。 Visual Studio では、分岐全体がこのワークスペースに割り当てられます。  
   
-     ![Open from source control &#45; create new workspace](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![ソース管理&#45;から開く新しいワークスペースを作成する](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
   
      特定のマッピングを備えたワークスペースや、コンピューターとは名前が異なるワークスペースを作成するには、 **[管理]** を選択します。  
   
@@ -182,9 +182,9 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 ### <a name="diagnose-a-performance-problem"></a>パフォーマンスの問題を診断する  
   
-1. **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、その他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。  
+1. **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、およびその他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。  
   
-     ![View performance event details](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![パフォーマンスイベントの詳細の表示](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      イベントをダブルクリックするだけでもかまいません。  
   
@@ -194,27 +194,27 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
      その呼び出しを展開して、その時点で記録された、入れ子になったすべての呼び出しと値を確認します。 その後、その呼び出しからデバッグを開始します。  
   
-     ![Start debugging from method call](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![メソッド呼び出しからデバッグを開始します](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      呼び出しをダブルクリックするだけでもかまいません。  
   
      アプリケーション コードにメソッドが含まれる場合、Visual Studio はそのメソッドに移動します。  
   
-     ![Go to application code from performance event](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![パフォーマンスイベントからアプリケーションコードにアクセスする](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      これで、他の記録された値、つまり呼び出し履歴を確認したり、コードをステップ実行したりできます。また、 **IntelliTrace** ウィンドウを使用して、パフォーマンス イベントの発生時に呼び出された [その他のメソッド間を "時間内に" 前後に移動することもできます](../debugger/intellitrace.md) 。 [IntelliTrace ログ内の他のイベントと情報について](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[パフォーマンス イベントに関する詳細を確認しましょう。](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)  
   
 ### <a name="diagnose-an-exception"></a>例外の診断  
   
-1. **[例外データ]** では、記録された例外イベントとその種類、メッセージ、その例外がいつ発生したかを確認できます。 コードをさらに掘り下げるには、例外グループの最新のイベントからデバッグを開始します。  
+1. **[例外データ]** では、記録された例外イベントとその種類、メッセージ、およびその例外がいつ発生したかを確認できます。 コードをさらに掘り下げるには、例外グループの最新のイベントからデバッグを開始します。  
   
-     ![Start debugging from exception event](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![例外イベントからデバッグを開始します](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      イベントをダブルクリックするだけでもかまいません。  
   
      例外がアプリケーション コードで発生した場合、Visual Studio は例外が発生した場所に移動します。  
   
-     ![Go to application code from an exception event](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![例外イベントからアプリケーションコードにアクセスする](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      これで、他の記録された値、つまり呼び出し履歴を確認したり、 **IntelliTrace** ウィンドウを使用して、 [記録されたその他のイベント間を "時間内に" 前後に移動したりできます](../debugger/intellitrace.md)。また、関連するコードや、その時点で記録された値の間も前後に移動できます。 [IntelliTrace ログ内の他のイベントと情報について](../debugger/using-saved-intellitrace-data.md)  
   
@@ -222,13 +222,13 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 - [このコードのさらに詳細な情報を入手します](../ide/find-code-changes-and-other-history-with-codelens.md)。 エディターから離れずに、このコードの参照、変更履歴、関連するバグ、作業項目、コード レビュー、または単体テストを検索するには、エディターの CodeLens インジケーターを使用します。  
   
-     ![CodeLens &#45; View references to this code](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens &#45;ビューこのコードへの参照](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
   
-     ![CodeLens &#45; View change history for this code](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![CodeLens &#45;このコードの変更履歴を表示する](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
   
 - [デバッグ中にコード内の位置を割り当てます。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) デバッグ セッション中に呼び出されたメソッドを視覚的に追跡するには、呼び出し履歴を割り当てます。  
   
-     ![Map the call stack while debugging](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
+     ![デバッグ中に呼び出し履歴をマップする](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
   
 ### <a name="FAQ"></a> Q & A  
   
@@ -237,7 +237,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
  TFS を使用しており、この情報がビルド マニフェスト (BuildInfo.config ファイル) ではない場合、Visual Studio は対応するソースとシンボルを現在接続されている TFS 上で検索します。 Visual Studio が適切な TFS または対応するソースを見つけられない場合、他の TFS を選択するように求めるプロンプトが表示されます。  
   
-#### <a name="InvalidConfigFile"></a> Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。 なぜこのようなことが起きたのですか。 どうしたらよいですか。  
+#### <a name="InvalidConfigFile"></a> Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。 なぜこのようなことが起きたのでしょうか。 どうしたらよいですか。  
  この問題は、開発用コンピューターから配置した場合や配置中に TFS に接続していない場合に発生する可能性があります。  
   
 1. プロジェクトの配置フォルダーに移動します。  
@@ -248,7 +248,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 - **ProjectName**  
   
-   Visual Studio 内のプロジェクトの名前。 (例:  
+   Visual Studio 内のプロジェクトの名前。 例 :  
   
   ```  
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -266,7 +266,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
     - **ProjectVersionSpec**: プロジェクトのバージョン  
   
-      (例:  
+      例 :  
   
     ```  
     <SourceControl type="TFS">  
@@ -288,7 +288,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
     - **CommitId**: コミットの ID  
   
-      (例:  
+      例 :  
   
     ```  
     <SourceControl type="Git">   
@@ -314,7 +314,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
   - **BuiltSolution**: 対応するソリューションを検索して開くために Visual Studio が使用するソリューション ファイルへのパス。 これは、 **SolutionPath** MsBuild プロパティの内容です。  
   
-    (例:  
+    例 :  
   
   - **TFS**  
   
@@ -344,14 +344,14 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 #### <a name="IneligibleWorkspace"></a> Q: 選択したワークスペースが適切でないというメッセージが Vidual Studio によって表示されるのはなぜですか。  
  **A:** 選択したワークスペースのソース コントロール フォルダーとローカル フォルダーの間にマッピングがありません。 このワークスペースのマッピングを作成するには、 **[管理]** を選択します。 それ以外の場合は、既に割り当てられているワークスペースを選択するか、新しいワークスペースを作成します。  
   
- ![Open from source control with no mapped workspace](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
+ ![マップされたワークスペースがないソース管理から開く](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
   
 #### <a name="ChooseTeamProject"></a> Q: チーム コレクションまたは別のコレクションを選択するまで続行できないのはなぜですか。  
  **A:** これは次の理由によって発生する場合があります。  
   
 - Visual Studio が TFS に接続されていない。  
   
-     ![Open from source control &#45; not connected](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![接続されて&#45;いないソース管理から開く](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
   
 - Visual Studio が、現在のチーム コレクションでソリューションまたはプロジェクトを見つけられなかった。  
   
@@ -361,12 +361,12 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
      新しい TFS に移行したため、対応するソースが指定 TFS にない、あるいは TFS 自体が存在しない可能性があります。 指定された TFS が存在しない場合、Visual Studio は 約 1 分後にタイムアウトになり、別のコレクションに接続するように求めるメッセージが表示される可能性があります。 操作を続行するには、正しい TFS サーバーに接続します。  
   
-     ![Open from source control &#45; migrated](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![移行された&#45;ソース管理から開く](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> Q: ワークスペースとは何ですか。  
  **A:** [ワークスペースにはソースのコピーが格納](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) されるので、作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。  
   
 #### <a name="UntrustedSymbols"></a> Q: 次の信頼されていないシンボルに関するメッセージが表示されるのはなぜですか。  
- ![Debug with untrusted symbols path?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![信頼されていないシンボルパスでデバッグしますか?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
  **A:** このメッセージは、ビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) のシンボル パスが、信頼されたシンボル パスの一覧に含まれない場合に表示されます。 このパスをシンボル パスの一覧に追加するには、デバッガー オプションを使用します。

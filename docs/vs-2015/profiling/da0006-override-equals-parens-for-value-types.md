@@ -24,11 +24,11 @@ ms.locfileid: "74300984"
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: 値の型で Equals() をオーバーライドしてください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0006|  
-|Category|.NET Framework Usage|  
-|Profiiling methods|Sampling|  
-|Message|Override Equals and equality operator on value types.|  
-|Messge type|Warning|  
+ルール Id |DA0006 |  
+|Category |。NET Framework Usage |  
+|プロファイルメソッド |サンプリング |  
+|Message |値型で Equals および等値演算子をオーバーライドします |。  
+|メッセージ type |警告 |  
   
 ## <a name="cause"></a>原因  
  パブリック値型の Equals メソッドまたは等値演算子の呼び出しが、プロファイリング データの大きな割合を占めています。 さらに効率的な方法を実装することを検討してください。  

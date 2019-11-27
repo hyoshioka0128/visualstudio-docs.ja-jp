@@ -1,5 +1,5 @@
 ---
-title: 'UML Activity Diagrams: Guidelines | Microsoft Docs'
+title: 'UML アクティビティ図: ガイドライン |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,25 +25,25 @@ ms.locfileid: "74298989"
 # <a name="uml-activity-diagrams-guidelines"></a>UML アクティビティ図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、アクティビティ図を描画することによって、ビジネス プロセスやソフトウェア アルゴリズムを一連のアクションのワークフローとして表すことができます。 ユーザー、ソフトウェア コンポーネント、またはデバイスが、これらのアクションを実行できます。 For a video demonstration, see: [Capture Business Workflows by using Activity Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows).
+Visual Studio では、アクティビティ図を描画することによって、ビジネス プロセスやソフトウェア アルゴリズムを一連のアクションのワークフローとして表すことができます。 ユーザー、ソフトウェア コンポーネント、またはデバイスが、これらのアクションを実行できます。 ビデオデモについては、「[アクティビティ図を使用したビジネスワークフローのキャプチャ](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
- To create a UML activity diagram, on the **Architecture** menu, click **New UML or Layer Diagram**.
+ UML アクティビティ図を作成するには、 **[アーキテクチャ]** メニューの **[新しい Uml またはレイヤー図]** をクリックします。
 
  アクティビティ図は、以下のようなさまざまな目的に使用できます。
 
-- ビジネス プロセス、またはユーザーとシステム間のワークフローを示す。 For more information, see [Model user requirements](../modeling/model-user-requirements.md).
+- ビジネス プロセス、またはユーザーとシステム間のワークフローを示す。 詳細については、「[ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
 
-- ユース ケースで実行される手順を示す。 For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+- ユース ケースで実行される手順を示す。 詳細については、「 [UML ユースケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)」を参照してください。
 
-- ソフトウェアでのメソッド、関数、または操作を示す。 For more information, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
+- ソフトウェアでのメソッド、関数、または操作を示す。 詳細については、「[アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)化」を参照してください。
 
   アクティビティ図を描画することは、プロセスの改善につながります。 既存のプロセスの図が非常に複雑であることが分かったら、どのようにすればプロセスを単純化できるかを検討してください。
 
-  For reference information about the elements on activity diagrams, see [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md).
+  アクティビティ図の要素に関するリファレンス情報については、「 [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)」を参照してください。
 
-## <a name="Relationships"></a> Relationship to Other Diagrams
+## <a name="Relationships"></a>他の図との関係
  ビジネス プロセス、またはユーザーがシステムを使用する方法を表すアクティビティ図を描画する場合は、ユース ケース図を描画することにより、同じ情報を異なる観点で示すことができます。 ユース ケース図では、アクションをユース ケースとして描画します。 ユース ケースには、対応するアクションと同じ名前を付けます。 ユース ケース ビューのメリットは、次の操作ができることです。
 
 - 大規模なアクション/ユース ケースが、小規模なアクション/ユース ケースでどのように構成されるかを、Includes リレーションシップを使用して 1 つの図で示す。
@@ -54,20 +54,20 @@ Visual Studio では、アクティビティ図を描画することによって
 
   アクティビティ図を描画することにより、ソフトウェア操作の詳細設計を示すこともできます。
 
-  アクティビティ図では、アクション間で渡されるデータのフローを示すことができます。 See the section on [Describing Data Flow](#DataFlows). ただし、アクティビティ図はデータの構造を表すわけではありません。 そのためには、UML クラス図を描画します。 For information see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).
+  アクティビティ図では、アクション間で渡されるデータのフローを示すことができます。 [データフローの説明](#DataFlows)については、「」セクションを参照してください。 ただし、アクティビティ図はデータの構造を表すわけではありません。 そのためには、UML クラス図を描画します。 詳細については、「 [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)」を参照してください。
 
-## <a name="BasicSteps"></a> Basic Steps for Drawing Activity Diagrams
- Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+## <a name="BasicSteps"></a>アクティビティ図を描画するための基本的な手順
+ モデリング図を作成するための詳細な手順については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。
 
 #### <a name="to-draw-an-activity-diagram"></a>アクティビティ図を描画するには
 
-1. On the **Architecture** menu, click **New UML or Layer Diagram**.
+1. **[アーキテクチャ]** メニューの **[新しい UML またはレイヤー図]** をクリックします。
 
-2. Under **Templates**, click **UML Activity Diagram**.
+2. **[テンプレート]** の **[UML アクティビティ図]** をクリックします。
 
 3. 図に名前を付けます。
 
-4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**.
+4. **[モデリングプロジェクトへの追加]** で、ソリューション内の既存のモデリングプロジェクトを選択するか、**新しいモデリングプロジェクトを作成**します。
 
 #### <a name="to-draw-elements-on-an-activity-diagram"></a>アクティビティ図の要素を描画するには、次のようにします。
 
@@ -80,7 +80,7 @@ Visual Studio では、アクティビティ図を描画することによって
 
 2. 要素を接続するには、次の手順に従います。
 
-    1. In the **Activity Diagram** toolbox, click **Connector**.
+    1. **アクティビティダイアグラム**ツールボックスで、 **[コネクタ]** をクリックします。
 
     2. 図で、ソース要素をクリックします。
 
@@ -91,49 +91,49 @@ Visual Studio では、アクティビティ図を描画することによって
 
 #### <a name="to-move-an-activity-to-another-package"></a>アクティビティを別のパッケージに移動するには、次のようにします。
 
-- In **UML Model Explorer**, drag the activity into a package.
+- **UML モデルエクスプローラー**で、アクティビティをパッケージにドラッグします。
 
      \- または
 
-- In **UML Model Explorer**, right-click the activity and click **Cut**. Then right-click the package and click **Paste**.
+- **UML モデルエクスプローラー**で、アクティビティを右クリックし、 **[切り取り]** をクリックします。 次に、パッケージを右クリックし、 **[貼り付け]** をクリックします。
 
     > [!NOTE]
     > アクティビティが UML モデル エクスプローラーに表示されるのは、最初の要素を図に追加するときのみです。
 
-## <a name="SimpleControlFlow"></a> Describing Control Flow
+## <a name="SimpleControlFlow"></a>制御フローの記述
  アクティビティ図は、ビジネス プロセスまたはソフトウェア アルゴリズムを一連のアクションとして表します。 コネクタの矢印は、あるアクションから次のアクションにどのように制御が連続的に渡されるかを示します。 通常、アクションは前のアクションが完了した後でなければ開始できません。
 
  次の図は、アクションのシーケンスをアクション、コネクタ、分岐、およびループでどのように示すことができるかという例です。 各要素については、後のセクションで詳しく説明します。
 
- ![A simple activity diagram](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
+ ![単純なアクティビティ図](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
 
- Activity diagrams use **Actions** and **Connectors** to describe your system or application as a series of actions with the control flowing sequentially from one action to the next.
+ アクティビティ図では、アクションと**コネクタ** **を使用し**て、システムまたはアプリケーションを一連のアクションとして記述します。この操作は、コントロールが1つのアクションから次のアクションに順次流れます。
 
-- Create an **Action** (1) for each major task that is performed by a user, the system, or both in collaboration.
+- ユーザー、システム、またはその両方によって共同作業を行う主要なタスクごとに、**アクション**(1) を作成します。
 
   > [!NOTE]
-  > プロセスまたはアルゴリズムをごくわずかのアクションで記述するようにしてください。 You can use **Call Behavior Actions** to define each action in more detail in a separate diagram, as described in [Describing Sub-activities with Call Behavior Actions](#Subactivities).
+  > プロセスまたはアルゴリズムをごくわずかのアクションで記述するようにしてください。 振る舞い**呼び出しアクションを使用し**て、各アクションを別の図で定義できます。詳細については、「[振る舞い呼び出しアクションを使用したサブアクティビティの記述](#Subactivities)」を参照してください。
 
 - 各アクションのタイトルは、アクションによって通常得られることを明確に示すタイトルになるようにしてください。
 
-- Link the actions in sequence with **Connectors** (2).
+- アクションを**コネクタ**(2) で順番にリンクします。
 
-- それぞれのアクションが終了してから、制御フロー内の次のアクションが始まります。 If you want to describe actions that overlap, use a **Fork Node** as described in the section [Concurrent Flows](#Concurrent).
+- それぞれのアクションが終了してから、制御フロー内の次のアクションが始まります。 重複するアクションを記述する場合は、「[同時実行フロー](#Concurrent)」で説明されているように**フォークノード**を使用します。
 
   図はアクションのシーケンスを表しますが、アクションの実行方法や、あるアクションから次のアクションへの制御の渡し方を示すわけではありません。 図を使用してビジネス プロセスを表す場合は、たとえば、あるユーザーが別のユーザーに電子メール メッセージを送信したら、制御を渡すことができます。 図を使用してソフトウェア設計を表す場合は、通常の実行フローによって、あるステートメントから次のステートメントに制御を渡すことができます。
 
 ### <a name="describing-decisions-and-loops"></a>判断とループの記述
 
-- Use a **Decision Node** (3) to indicate a point where the outcome of a decision dictates the next step. 必要な数だけ出力パスを描画できます。
+- デシジョン**ノード**(3) を使用して、決定の結果が次の手順を示すポイントを示します。 必要な数だけ出力パスを描画できます。
 
-- アクティビティ図を使用してアプリケーションの一部を定義する場合は、各パスがいつ必要かが明確になるように、ガード (4) を定義する必要があります。 Right-click the connector, click **Properties**, and in the **Properties** window, type a value for the **Guard** field.
+- アクティビティ図を使用してアプリケーションの一部を定義する場合は、各パスがいつ必要かが明確になるように、ガード (4) を定義する必要があります。 コネクタを右クリックし、 **[プロパティ]** をクリックします。 **[プロパティ]** ウィンドウで、**ガード**フィールドの値を入力します。
 
 - ガードを常に定義する必要はありません。 たとえば、アクティビティ図を使用してビジネス プロセスまたは相互作用プロトコルを表す場合は、ユーザーまたは相互作用コンポーネントに対してオープンなオプションの範囲を分岐で定義します。
 
-- Use a **Merge Node** (5) to bring together two or more alternative flows that branched at a **Decision Node**.
+- **マージノード**(5) を使用して、**デシジョンノード**で分岐する2つ以上の代替フローをまとめます。
 
     > [!NOTE]
-    > You should use a **Merge Node** to bring together alternative flows, instead of bringing the flows together at an action. In the example, it would not be correct to connect from the decision node directly back to **Choose Menu Item**. アクションが開始されるのは、その受信コネクタに制御のスレッドが到着してからになるためです。 そのため、アクションでまとめるのは、同時実行フローのみにする必要があります。 For more information, see [Concurrent Flows](#Concurrent).
+    > 1つのアクションでフローをまとめるのではなく、**マージノード**を使用して代替フローをまとめる必要があります。 この例では、デシジョンノードから直接 **[選択] メニュー項目**に接続するのは適切ではありません。 アクションが開始されるのは、その受信コネクタに制御のスレッドが到着してからになるためです。 そのため、アクションでまとめるのは、同時実行フローのみにする必要があります。 詳細については、「[同時実行フロー](#Concurrent)」を参照してください。
 
 - 例に示すように、分岐を使用してループを表します。
 
@@ -143,163 +143,163 @@ Visual Studio では、アクティビティ図を描画することによって
 ### <a name="starting-the-activity"></a>アクティビティの開始
  アクティビティへのエントリ ポイントを示すには、次の 2 とおりの方法があります。
 
-- **Initial Node**
+- **最初のノード**
 
-     Create one **Initial Node** (6) to indicate the first action of the activity.
+     最初の**ノード**(6) を1つ作成して、アクティビティの最初のアクションを指定します。
 
      この方法は、サブアクティビティを記述するときや、何がアクティビティを開始するかを明示的に示す必要がない場合に最も有用です。 たとえば、"Order a Meal" というアクティビティは、顧客が空腹になったときに明確に開始されます。
 
-- **Accept Event Node**
+- **イベントノードの受理**
 
-     Create **Accept Event Nodes**, as described in the section [Concurrent Flows](#Concurrent), to indicate the start of a thread that responds to a particular event, such as a user input. ノードに入力フローを接続しないでください。 入力フローを省略した場合は、イベントが発生するたびにスレッドが開始されることを示します。
+     「[同時実行フロー](#Concurrent)」で説明されているように、 **Accept イベントノード**を作成して、ユーザー入力などの特定のイベントに応答するスレッドの開始を示します。 ノードに入力フローを接続しないでください。 入力フローを省略した場合は、イベントが発生するたびにスレッドが開始されることを示します。
 
      この方法は、特定の外部イベントへの応答を記述するときに最も有用です。
 
 ### <a name="ending-the-activity"></a>アクティビティの終了
- Use an **Activity Final Node** (7) to indicate the end of an activity.
+ アクティビティの最後の**ノード**(7) を使用して、アクティビティの終了を示します。
 
-- When a thread of control reaches an **Activity Final Node**, all the activity's concurrent actions and sub-activities terminate.
+- 制御のスレッドが**アクティビティの最後のノード**に到達すると、すべてのアクティビティの同時実行アクションとサブアクティビティが終了します。
 
 - アクティビティ終了ノードを複数使用することで、追加コネクタの煩雑さを軽減できます。
 
 ### <a name="interrupting-the-activity"></a>アクティビティの中断
- たとえば、ユーザーがプロセスを取り消すことにした場合、どうすればアクティビティの通常フローを中断できるかを記述するには、そのイベントをリッスンするイベント受理ノードを作成します。 For more information, see the section [Concurrent Flows](#Concurrent). それからアクティビティ終了ノード (7) への制御フローを作成します。
+ たとえば、ユーザーがプロセスを取り消すことにした場合、どうすればアクティビティの通常フローを中断できるかを記述するには、そのイベントをリッスンするイベント受理ノードを作成します。 詳細については、「[同時実行フロー](#Concurrent)」を参照してください。 それからアクティビティ終了ノード (7) への制御フローを作成します。
 
 ### <a name="swimlanes"></a>スイムレーン
- アクティビティのアクションを、アクションを実行する異なるオブジェクトまたはビジネス ロールに対応する領域に配置すると好都合な場合があります。 These areas are conventionally arranged in columns and are called *swimlanes*.
+ アクティビティのアクションを、アクションを実行する異なるオブジェクトまたはビジネス ロールに対応する領域に配置すると好都合な場合があります。 これらの領域は、従来は列に配置され、*スイムレーン*と呼ばれます。
 
-- Use lines or rectangles from the **Simple Shapes** section of the Toolbox to draw swimlanes or other areas.
+- ツールボックスの **[単純な図形]** セクションの線または四角形を使用して、スイムレーンまたはその他の領域を描画します。
 
-- To label each swimlane, create a comment and set its **Transparent** property to **True**.
+- 各スイムレーンにラベルを付けるには、コメントを作成し、その**Transparent**プロパティを**True**に設定します。
 
   単純なシェイプは UML モデルの一部を形成しないため、UML モデル エクスプローラーには表示されません。
 
-## <a name="DataFlows"></a> Describing Data Flow
+## <a name="DataFlows"></a>データフローの記述
  アクティビティとの間のデータの受け渡しを、次の 2 とおりの方法のいずれかで記述できます。
 
-- Use an **Object Node**. これは、アクティビティ間を流れる情報を記述する最も簡単な方法です。 オブジェクト ノードは、プログラムにおける変数のようなものです。 あるアクションから別のアクションへ渡される 1 つ以上の値を格納するものを表します。
+- **オブジェクトノード**を使用します。 これは、アクティビティ間を流れる情報を記述する最も簡単な方法です。 オブジェクト ノードは、プログラムにおける変数のようなものです。 あるアクションから別のアクションへ渡される 1 つ以上の値を格納するものを表します。
 
-- Use an **Output Pin** and an **Input Pin**. この方法を使用すると、あるアクションからの出力と別のアクションへの入力を別々に記述できます。 ピンはプログラムにおけるパラメーターのようなものです。 ピンは、オブジェクトがアクションに出入りできるポートを表します。
+- **出力ピン**と**入力ピン**を使用します。 この方法を使用すると、あるアクションからの出力と別のアクションへの入力を別々に記述できます。 ピンはプログラムにおけるパラメーターのようなものです。 ピンは、オブジェクトがアクションに出入りできるポートを表します。
 
     > [!NOTE]
-    > For an overview of the elements used in this section, see the Data Flows section of the topic see [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md).
+    > このセクションで使用する要素の概要については、「 [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)」の「データフロー」セクションを参照してください。
 
 ### <a name="describing-data-flow-with-object-nodes"></a>オブジェクト ノードを使用したデータ フローの記述
  ほとんどの制御フローはデータを運びます。 たとえば、"Customer provides details" アクションからの出力フローは、出荷先住所への参照を運びます。
 
  そのデータを図に記述するには、次の図に示すように、コネクタを 1 つのオブジェクト ノードと 2 つのコネクタに置き換えます。
 
- ![Object nodes can show data passed between actions](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+ ![オブジェクトノードはアクション間で渡されるデータを表示できます](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
 
  Dispatch Goods などの角が丸い四角形は、処理がなされるアクションを表します。 Shipment Address などの角が直角の四角形は、あるアクションから別のアクションへのオブジェクトのフローを表します。
 
  アクション間を流れるオブジェクトのコンジットまたはバッファーとしてのノードのロールを反映した名前を、オブジェクト ノードに付けます。
 
- You can set the **Type** of the object node in the Properties window. 型としては、整数などのプリミティブ型、またはクラス図で定義したクラス、インターフェイス、列挙を使用できます。 たとえば、Street Address、City などの属性を持つ Shipment Address というクラスを、Customer という名前の別のクラスへの関連付けと一緒に作成することもできます。 For more information, see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).
+ プロパティウィンドウのオブジェクトノードの**種類**を設定できます。 型としては、整数などのプリミティブ型、またはクラス図で定義したクラス、インターフェイス、列挙を使用できます。 たとえば、Street Address、City などの属性を持つ Shipment Address というクラスを、Customer という名前の別のクラスへの関連付けと一緒に作成することもできます。 詳細については、「 [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)」を参照してください。
 
 > [!NOTE]
-> If you type the name of a type that has not yet been defined, an item will be added under **Unspecified Types** in UML Model Explorer. その名前の型を後でクラス図で定義する場合は、新しい型を参照するようにオブジェクト ノードの型を再設定する必要があります。
+> まだ定義されていない型の名前を入力すると、UML モデルエクスプローラーの **[未指定の型]** の下に項目が追加されます。 その名前の型を後でクラス図で定義する場合は、新しい型を参照するようにオブジェクト ノードの型を再設定する必要があります。
 
 #### <a name="buffering-data-in-object-nodes"></a>オブジェクト ノードでのデータのバッファリング
  オブジェクト ノードは、複数のオブジェクトのバッファーの働きをすることができます。 次の図の制御フローは、ユーザーは [choose more] ループ (1) を何度も回ることができ、その間 Chosen Menu Items オブジェクト ノード (2) はユーザーが選択したものを蓄積することを示しています。 最後に、ユーザーが自分の選択を完了すると、制御は Confirm Order アクション (3) に渡され、このアクションは選択された項目の完全なリストを Chosen Menu Items バッファーから受け取ります。
 
- ![Buffering data in object nodes](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
+ ![オブジェクトノードのデータのバッファリング](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
  オブジェクト ノードのプロパティを設定することにより、バッファー内の項目の格納方法を指定できます。次のようにします。
 
-- Set the **Ordering** property:
+- **順序**プロパティを設定します。
 
-  - **Unordered** to specify a random or unspecified order. (既定値。)
+  - 順序**なし**。ランダムまたは未指定の順序を指定します。 (既定値。)
 
-  - **Ordered** to specify an order according to a specific key.
+  - **Ordered**は、特定のキーに従って順序を指定します。
 
-  - **Fifo** to specify an order of first-in, first-out.
+  - **Fifo**は、先入れ先出しの順序を指定します。
 
-  - **Lifo** to specify an order of last-in, first-out.
+  - **[Lifo]** : 後入れ先出しの順序を指定します。
 
-- Set the **Upper Bound** property to specify the maximum number of objects that can be contained in the buffer. 既定値は * です。 これは、制限がないことを意味します。
+- **上限**を設定するプロパティを設定して、バッファーに格納できるオブジェクトの最大数を指定します。 既定値は * です。 これは、制限がないことを意味します。
 
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>入力ピンと出力ピンを使用したデータ フローの記述
- Use an **Output Pin** and an **Input Pin** to separately describe the outputs from one action and the inputs to another.
+ **出力ピン**と**入力ピン**を使用して、あるアクションから別のアクションへの出力と入力を個別に記述します。
 
- ![Input and output pins are action parameters](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+ ![入力ピンと出力ピンはアクションパラメーターです](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
 
- To create a pin, click **Input Pin** or **Output Pin** on the toolbox and then click an action. その後、ピンをアクションの周囲に移動して、その名前を変更することができます。 You can create input and output pins on any kind of action, including **Call Behavior Actions**, **Call Operation Actions**, **Send Signal Actions**, and **Accept Event Actions**.
+ Pin を作成するには、ツールボックスの [**入力ピン**または**出力ピン**] をクリックし、アクションをクリックします。 その後、ピンをアクションの周囲に移動して、その名前を変更することができます。 **振る舞い呼び出しアクション**、**操作呼び出しアクション**、**シグナル送信アクション**、**イベント受理アクション**など、任意の種類のアクションで入力ピンと出力ピンを作成できます。
 
  2 つのピンの間のコネクタは、オブジェクト ノードへのフローやオブジェクト ノードからのフローと同じように、オブジェクト フローを表します。
 
  各ピンには、それが生成したり受け取ったりするオブジェクトのロールを示す、パラメーター名などの名前を付けます。
 
- You can set the type of objects transmitted in the **Type** property. これは、UML クラス図を作成した型であることが必要です。
+ **Type**プロパティで転送されるオブジェクトの種類を設定できます。 これは、UML クラス図を作成した型であることが必要です。
 
  接続されたピンの間を流れる各オブジェクトには、何らかの形で互換性がなければなりません。 たとえば、出力ピンによって生成されたオブジェクトは、入力ピンの型の派生型に属するからです。
 
  もう 1 つの方法として、出力ピンの型と入力ピンの型の間でデータを変換する変換がオブジェクト フローに含まれることを指定することもできます。 この種の最も一般的な変換は、大きい方の型から適切な部分を抽出するだけです。 図の例は、注文の詳細から出荷先住所を抽出する変換の存在を示しています。
 
-## <a name="Details"></a> Defining an Action in More Detail
+## <a name="Details"></a>アクションの詳細な定義
  アクションの名前を使用してそのアクションによって通常得られるべき結果を明確にすることに加えて、さらに詳細をアクションに追加できる次の方法があります。
 
-- Write a more detailed description in the **Body** property. たとえば、プログラム コードまたは擬似コードの一部や、得られる結果の詳細な説明を書き込むこともできます。
+- **Body**プロパティにより詳細な説明を記述します。 たとえば、プログラム コードまたは擬似コードの一部や、得られる結果の詳細な説明を書き込むこともできます。
 
-- アクションを振る舞い呼び出しアクションに置き換え、その詳細な振る舞いを別個のアクティビティ図内で記述する。 See [Describing Sub-activities with Call Behavior Actions](#Subactivities).
+- アクションを振る舞い呼び出しアクションに置き換え、その詳細な振る舞いを別個のアクティビティ図内で記述する。 「[振る舞い呼び出しアクションを使用したサブアクティビティの記述」を](#Subactivities)参照してください。
 
-- Set the action's **Local Postconditions** and **Local Preconditions** properties to describe its outcome in more specific detail. For more information, see [Defining Postconditions and Preconditions](#Postcondition).
+- アクションの**ローカル事後** **条件とローカルの事前条件**プロパティを設定して、その結果をより具体的な詳細に記述します。 詳細については、「[事後条件と事前条件の定義](#Postcondition)」を参照してください。
 
-### <a name="Subactivities"></a> Describing Sub-activities with Call Behavior Actions
+### <a name="Subactivities"></a>振る舞い呼び出しアクションを使用したサブアクティビティの記述
  別個のアクティビティ図を使用して、アクションの詳細な振る舞いを記述できます。 呼び出される振る舞いは、振る舞い呼び出しアクションによってメイン アクティビティ図に表されるアクティビティ図です。 振る舞い呼び出しアクションを使用して、異なるアクティビティ間で共有される振る舞いを記述することもできます。これにより、サブアクティビティを複数回描画する必要がなくなります。
 
  次の図において、図 1 は、振る舞い呼び出しアクションのあるアクティビティを示しており、図 2 は、呼び出される振る舞いを表すサブアクティビティ図を示しています。
 
- ![A separate activity diagram shows detailed actions](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+ ![別のアクティビティ図に詳細なアクションが表示されます。](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
 
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>振る舞い呼び出しアクションを使用してサブアクティビティを記述するには
 
-1. To create the diagram for the sub-activity, in **Solution Explorer**, right-click your modeling project, point to **Add**, and then click **New Item**.
+1. サブアクティビティのダイアグラムを作成するには、**ソリューションエクスプローラー**で、モデリングプロジェクトを右クリックし、 **[追加]** をポイントして、 **[新しい項目]** をクリックします。
 
-2. In the **Add New Item** dialog box, under **Templates** click **Activity Diagram** and in the **Name** box type the name that you plan to give your **Call Behavior Action**.
+2. **[新しい項目の追加]** ダイアログボックスの **[テンプレート]** で **[アクティビティ図]** をクリックし、 **[名前]** ボックスに、**呼び出し動作アクション**を提供する予定の名前を入力します。
 
 3. サブアクティビティの詳細なワークフローを描画します。 これは、呼び出される振る舞いです。
 
-    - In the called sub-activity diagram, the **Initial Node** indicates where control starts when the called behavior is invoked. The **Activity Final Node** shows where control should return to the parent activity.
+    - 呼び出されたサブアクティビティ図では、呼び出された動作が呼び出されたときに制御が開始される場所が**初期ノード**によって示されます。 **アクティビティの最後のノード**は、コントロールが親アクティビティに戻る場所を示します。
 
-4. Set the **Behavior** property of the **Call Behavior Action** to refer to the called behavior diagram.
+4. **振る舞い呼び出しアクション**の**behavior**プロパティを、呼び出された動作ダイアグラムを参照するように設定します。
 
     > [!NOTE]
-    > The sub-activity diagram must have some elements on it or the diagram will not be available in the drop-down list for the **Behavior** property. Also, the trident icon will not appear on your **Call Behavior Action** shape until you set its **Behavior** property.
+    > サブアクティビティ図にはいくつかの要素が含まれている必要があります。そうしないと、 **[動作]** プロパティのドロップダウンリストで図を使用できなくなります。 また、 **[動作] プロパティを**設定するまで、[**動作の呼び出し] アクション**図形に trident アイコンは表示されません。
 
-5. Set the **Is Synchronous** property of the action to indicate whether your activity waits for the called activity to complete.
+5. アクションの "**同期**" プロパティを設定して、呼び出されたアクティビティが完了するまでアクティビティが待機するかどうかを指定します。
 
-    - If you set **Is Synchronous** to false, you are indicating that the flow can continue to the next action before the called activity finishes. 出力ピンは定義すべきではありません。定義すると、アクションから送信データが流れる結果となります。
+    - [**同期が**false] に設定されている場合は、呼び出されたアクティビティが終了する前にフローが次のアクションに進むことができることを示しています。 出力ピンは定義すべきではありません。定義すると、アクションから送信データが流れる結果となります。
 
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>サブアクティビティとの間のデータ フローの記述
  ソフトウェアでパラメーターを使用するのと同じように、サブアクティビティに出入りするデータを記述できます。
 
 - 呼び出される振る舞いアクションに、アクションに出入りするデータごとに、入出力ピン (1) を作成します。 それぞれに適切な名前を付けます。
 
-- In the sub-activity diagram, create an **Activity Parameter Node** (2) for each input and output pin on the calling action. 各ノードに、対応するピンと同じ名前を付けます。
+- サブアクティビティ図で、呼び出し元のアクションの各入力ピンと出力ピンに対して**アクティビティパラメーターノード**(2) を作成します。 各ノードに、対応するピンと同じ名前を付けます。
 
   > [!NOTE]
-  > アクティビティ パラメーター ノードは、オブジェクト ノードに似ています。 To check what type of node that you are looking at, right-click the node and then click **Properties**. [プロパティ] ウィンドウのヘッダーにノードの型が表示されます。
+  > アクティビティ パラメーター ノードは、オブジェクト ノードに似ています。 表示しているノードの種類を確認するには、ノードを右クリックし、 **[プロパティ]** をクリックします。 [プロパティ] ウィンドウのヘッダーにノードの型が表示されます。
 
 - サブアクティビティ図で、各アクティビティ パラメーター ノードに出入りするオブジェクトのフローを示すコネクタを描画します。
 
-  ![Pins on Call Behavior map to activity parameters](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+  ![呼び出し動作のピン留めアクティビティパラメーターへのマップ](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a> Defining Postconditions and Preconditions
- You can use the **Local Postconditions** and **Local Preconditions** properties to specify in detail the outcome of an action. これらのプロパティは、どのようにして効果が得られるかを記述せずに、アクションの効果を記述します。
+### <a name="Postcondition"></a>事後条件と事前条件の定義
+ **ローカルの事後**条件とローカルの**事前条件**プロパティを使用して、アクションの結果を詳細に指定できます。 これらのプロパティは、どのようにして効果が得られるかを記述せずに、アクションの効果を記述します。
 
- To set these properties, right-click the action and then click **Properties**. [プロパティ] ウィンドウで、プロパティに値を入力します。
+ これらのプロパティを設定するには、アクションを右クリックし、 **[プロパティ]** をクリックします。 [プロパティ] ウィンドウで、プロパティに値を入力します。
 
 #### <a name="local-postconditions"></a>ローカル事後条件
  事後条件とは、アクションが完了したと見なされるために満たされなければならない条件のことです。 Confirm Order アクション例では、事後条件は次のような場合があります。
 
  顧客は、自分のクレジット カードを処理するために必要な、完全で有効な詳細を提供した。
 
- 事後条件は、アクション実行前後の状態間のリレーションシップを表すことができます。 (例:
+ 事後条件は、アクション実行前後の状態間のリレーションシップを表すことができます。 例 :
 
  利率は以前の 2 倍である。
 
- より形式的なスタイルで事後条件を作成することで、アクションで扱われるデータの特定の属性を表せます。 (例:
+ より形式的なスタイルで事後条件を作成することで、アクションで扱われるデータの特定の属性を表せます。 例 :
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -315,18 +315,18 @@ Visual Studio では、アクティビティ図を描画することによって
 
 - 操作呼び出しアクションに入出力ピンを追加して、パラメーターと戻り値を記述します。
 
-- You can set the **Is Synchronous** property of the action to indicate whether your activity waits for the operation to complete.
+- アクションの "**同期**" プロパティを設定して、操作が完了するまでアクティビティが待機するかどうかを指定できます。
 
-  - If you set **Is Synchronous** to false, you are indicating that the flow can continue to the next action before the called operation is complete. 出力ピンは定義すべきではありません。定義すると、アクションから送信データが流れる結果となります。
+  - [**同期が**false] に設定されている場合は、呼び出された操作が完了する前にフローが次のアクションに進むことができることを示しています。 出力ピンは定義すべきではありません。定義すると、アクションから送信データが流れる結果となります。
 
-## <a name="Concurrent"></a> Concurrent Flows
- You can use the **Fork Node** and the **Join Node** to describe two or more threads of activities that can execute at the same time.
+## <a name="Concurrent"></a>同時実行フロー
+ **フォークノード**と**結合ノード**を使用すると、同時に実行できるアクティビティの複数のスレッドを記述できます。
 
- ![The fork and join nodes show concurrent flows](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
+ ![フォークノードと join ノードに同時実行フローが表示される](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
 
- The effect of the **Fork Node** (1) is to divide the thread of control into two or more threads. 前のアクションが終了すると、フォークの出力側のすべてのアクションが開始可能になります。
+ **フォークノード**(1) の効果は、制御のスレッドを2つ以上のスレッドに分割することです。 前のアクションが終了すると、フォークの出力側のすべてのアクションが開始可能になります。
 
- A **Join Node** (2) brings concurrent threads together. The action after the **Join Node** may not start until all the actions leading to the **Join Node** are complete.
+ **結合ノード**(2) は、同時実行スレッドをまとめます。 結合**ノードの後**のアクションは、**結合ノード**に先行するすべてのアクションが完了するまで開始されません。
 
 ### <a name="describing-signals-and-events"></a>シグナルとイベントの記述
  シグナルを送信するプロセス内のステップを、アクティビティ内のシグナル送信アクションとして示すことができます。 イベント受理アクションとして続行する前段階で、特定のシグナルやイベントを待機するステップを示すことができます。
@@ -340,7 +340,7 @@ Visual Studio では、アクティビティ図を描画することによって
 
 - 返された情報にプロセスがどのように応答するかを、シグナル送信アクションを使用して記述することはできません。 そうするには、別個のイベント受理アクションを使用します。
 
-- シグナル送信アクションへの入力データ フローを使用して、送信メッセージとともに送信できるデータを示すことができます。 For more information, see [Describing Data Flow](#DataFlows).
+- シグナル送信アクションへの入力データ フローを使用して、送信メッセージとともに送信できるデータを示すことができます。 詳細については、「[データフローの記述](#DataFlows)」を参照してください。
 
 #### <a name="waiting-for-a-signal-or-event"></a>シグナルまたはイベントの待機
  このアクティビティが何らかの外部イベントまたは受信メッセージを待機することを示すには、イベント受理アクション (4) を使用します。 アクションが待機するイベントの種類を示すには、アクションの名前を使用します。
@@ -351,14 +351,14 @@ Visual Studio では、アクティビティ図を描画することによって
 
 - シグナルの送信側に返される値を、イベント受理アクションを使用して記述することはできません。 そのためには、別個のシグナル送信アクションを使用します。
 
-- アクションからの出力データ フローを示すことにより、シグナルで受信されたデータをアクティビティがどのように処理するかを示すことができます。 If you want to show more than one output flow, you should set the **IsUnmarshall** property of the Accept Event Action, which indicates that the action parses the incoming signal into its separate components. For more information, see [Describing Data Flow](#DataFlows).
+- アクションからの出力データ フローを示すことにより、シグナルで受信されたデータをアクティビティがどのように処理するかを示すことができます。 複数の出力フローを表示する場合は、[イベントの受理] アクションの**IsUnmarshall**プロパティを設定する必要があります。これは、アクションによって受信シグナルが個別のコンポーネントに解析されることを示します。 詳細については、「[データフローの記述](#DataFlows)」を参照してください。
 
 ### <a name="describing-multiple-data-flows"></a>複数のデータ フローの記述
  アクションから出てくる制御フローまたはオブジェクト フローを複数描画することにより、アクションが終了すると複数のスレッドが出現することを示すことができます。 この効果はフォークに似ていますが、制御フローとオブジェクト フローの組み合わせを使用することができます。
 
  次の例は、アクションに出入りする複数のフローを示しています。
 
- ![Parallel object flows](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
+ ![並列オブジェクトフロー](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
 
  "Customer provides details" アクションが完了すると、"Shipment address" と "Credit card details" の 2 つのオブジェクトが生成されます。 この 2 つのオブジェクトは、それぞれ異なるアクションによる処理に進みます。
 
@@ -371,7 +371,7 @@ Visual Studio では、アクティビティ図を描画することによって
 
  この例のコネクタはオブジェクト フローであることに注意してください。それらすべてにおいて、アクティビティ パラメーター ノード、オブジェクト ノード、あるいは入力ピンまたは出力ピンに、末端が少なくとも 1 つあるからです。
 
- ![A data flow](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
+ ![データフロー](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
 
  1. この例には、3 つのアクティビティ パラメーター ノードがあり、その入力と出力を表しています。
 
@@ -392,13 +392,13 @@ Visual Studio では、アクティビティ図を描画することによって
 
   例は、変換を示しています。 図 1 の最初のアクションは、出力ピンに郵便番号を生成します。 これは、2 番目のアクションの入力ピンに接続されています。 しかし、2 番目のアクションは、完全に指定された住所を必要としています。 ある型から別の型への変換は、2 番目のアクティビティ Address Lookup で指定されています。 これは、オブジェクトのフローの [変換] プロパティから参照されます。 Address Lookup アクティビティには、受信する郵便番号のためのアクティビティ パラメーター ノードと、送信する詳細住所のための別のアクティビティ パラメーター ノードが含まれています。
 
-  ![Object transformation defined in another diagram](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+  ![別の図で定義されたオブジェクト変換](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
 
   変換または選択は、次の 2 とおりの方法で指定できます。
 
 - 入力ピンまたは出力ピンにコメントをアタッチする。
 
-  - To distinguish this description from a general comment, you can begin the comment with <\<**transformation**>> or <\<**selection**>>.
+  - この説明を一般的なコメントと区別するには、<\<**変換**> > または <\<>**選択**> を使用してコメントを開始できます。
 
 - 別個のアクティビティ図で変換または選択を詳細に指定する。
 
@@ -408,7 +408,7 @@ Visual Studio では、アクティビティ図を描画することによって
 
 1. 変換フローまたは選択フローを記述する新しいアクティビティ図を作成します。
 
-   - In **Solution Explorer**, right-click your project, point to **Add**, click **New Item**, and then click **Activity Diagram**. 変換フローまたは選択フローにふさわしい名前を図に付けます。 **[追加]** をクリックします。
+   - **ソリューションエクスプローラー**で、プロジェクトを右クリックして **[追加]** をポイントし、 **[新しい項目]** をクリックして、 **[アクティビティ図]** をクリックします。 変換フローまたは選択フローにふさわしい名前を図に付けます。 **[追加]** をクリックします。
 
 2. 新しい図で、次のようにします。
 
@@ -420,11 +420,11 @@ Visual Studio では、アクティビティ図を描画することによって
 
    1. オブジェクト フロー (入力ピンまたは出力ピンのコネクタ、オブジェクト ノード、またはアクティビティ パラメーター ノード) を作成します。
 
-   2. Right-click the object flow and then click **Properties**.
+   2. オブジェクトフローを右クリックし、 **[プロパティ]** をクリックします。
 
-   3. In the **Transformation** or **Selection** property, select the diagram where you specified the transformation or selection flow.
+   3. **変換**または**選択**プロパティで、変換フローまたは選択フローを指定したダイアグラムを選択します。
 
-   オブジェクト ノード、および個々の入力ピンと出力ピンに対して、選択を定義することもできます。 Define a selection activity as in the previous procedure, and then set the **Selection** property of the object node, or input or output pin.
+   オブジェクト ノード、および個々の入力ピンと出力ピンに対して、選択を定義することもできます。 前の手順と同様に選択アクティビティを定義し、オブジェクト ノード、または 入力 または 出力ピン の **選択** プロパティを設定します。
 
-## <a name="see-also"></a>参照
- [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Capture Business Workflows by using Activity Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)
+## <a name="see-also"></a>関連項目
+ [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md) [uml コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス uml[ユースケース図](../modeling/uml-use-case-diagrams-reference.md): リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス uml[コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス:[アクティビティ図を使用したビジネスワークフローのキャプチャ](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

@@ -1,5 +1,5 @@
 ---
-title: Analyze the code quality of Store apps using static code analysis
+title: 静的コード分析を使用したストアアプリのコード品質の分析
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test

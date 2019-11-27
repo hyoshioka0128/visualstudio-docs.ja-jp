@@ -1,5 +1,5 @@
 ---
-title: Developing Workflow Applications Targeting the .NET 3.0 or .NET 3.5 Framework | Microsoft Docs
+title: .NET 3.0 または .NET 3.5 Framework を対象とするワークフローアプリケーションの開発 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -19,7 +19,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300923"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 または .NET 3.5 Framework を対象とするワークフロー アプリケーションの開発
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] は、[!INCLUDE[wfd1](../includes/wfd1-md.md)] を対象とする [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションを作成するための [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]を備えています。 このデザイナーでは、使い慣れた [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスを使用して、ワークフロー アプリケーションをグラフィカルに作成してデバッグすることができます。
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] には、[!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]を対象とする [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションを作成するための [!INCLUDE[wfd1](../includes/wfd1-md.md)] が用意されています。 このデザイナーでは、使い慣れた [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスを使用して、ワークフロー アプリケーションをグラフィカルに作成してデバッグすることができます。
 
  また、[!INCLUDE[vs2010](../includes/vs2010-md.md)] では、従来のワークフロー デザイナーにアクセスできます。従来のワークフロー デザイナーを使用すると、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とすることができます。 ここでは、この従来のデザイナーの使用方法について説明します。
 
@@ -28,5 +28,5 @@ ms.locfileid: "74300923"
 
  [従来のワークフローのデバッグ](../workflow-designer/debugging-legacy-workflows.md)
 
-## <a name="related-sections"></a>関連項目
- [Windows Workflow Foundation Programming Guide](https://go.microsoft.com/fwlink?LinkID=65012)
+## <a name="related-sections"></a>関連セクション
+ [Windows Workflow Foundation プログラミングガイド](https://go.microsoft.com/fwlink?LinkID=65012)

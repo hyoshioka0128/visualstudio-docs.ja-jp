@@ -1,5 +1,5 @@
 ---
-title: Sequential Workflow Views (Legacy) | Microsoft Docs
+title: シーケンシャルワークフロービュー (レガシ) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -20,21 +20,21 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74292354"
 ---
 # <a name="sequential-workflow-views-legacy"></a>シーケンシャル ワークフロー ビュー (レガシ)
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] は従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)] を備えており、これを使用すると、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とすることができます。
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] には、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]をターゲットにするために使用できる従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)] が用意されています。
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)] では、使い慣れた [!INCLUDE[wf](../includes/wf-md.md)] ユーザー インターフェイスを使用して [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] アプリケーションをグラフィカルに作成できます。 [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションは、アクティビティと呼ばれるワークフロー プロセス ステップで構成されます。 To create a workflow, compose activities on the design surface by dragging their respective activity designers from **Toolbox** onto the design surface.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)] では、使い慣れた [!INCLUDE[wf](../includes/wf-md.md)] ユーザー インターフェイスを使用して [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] アプリケーションをグラフィカルに作成できます。 [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションは、アクティビティと呼ばれるワークフロー プロセス ステップで構成されます。 ワークフローを作成するには、それぞれのアクティビティデザイナーを **[ツールボックス]** からデザインサーフェイスにドラッグして、デザイン画面でアクティビティを作成します。
 
- When you create a sequential workflow, which is a [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040), three views of the workflow are available. These views are accessible from the **Workflow** menu and from the context menu on the design surface.
+ シーケンシャルワークフロー ( [(sequentialworkflowactivity)](https://go.microsoft.com/fwlink?LinkID=65040)) を作成すると、ワークフローの3つのビューを使用できるようになります。 これらのビューには、 **[ワークフロー]** メニューおよびデザインサーフェイスのコンテキストメニューからアクセスできます。
 
  各ビューの名前と説明の一覧を次の表に示します。
 
 |メニュー/タブ オプション|説明|
 |----------------------|-----------------|
-|**View SequentialWorkflow**|Right-click the design surface and select the **View SequentialWorkflow** option from the context menu to display the **Sequential Workflow** view, which shows the activity-based graphical representation of the sequential workflow. Or select **View SequentialWorkflow** from the **Workflow** menu.|
-|**View Cancel Handler**|Right-click the design surface and select the **View Cancel Handler** option from the context menu to display the **Sequential Workflow** view, which shows the [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) activity associated with the workflow. Or select **View Cancel Handler** from the **Workflow** menu.|
-|**View Fault Handler**|Right-click the design surface and select the **View Fault Handler** option from the context menu to display the **Faults** view, which shows the [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) activity associated with the workflow. Or select **View Fault Handler** from the **Workflow** menu.|
+|**SequentialWorkflow の表示**|デザインサーフェイスを右クリックし、コンテキストメニューの **[SequentialWorkflow の表示]** オプションを選択して **、シーケンシャルワークフロービューを**表示します。このビューには、シーケンシャルワークフローのアクティビティベースのグラフィック表現が表示されます。 または、 **[ワークフロー]** メニューの **[SequentialWorkflow の表示]** を選択します。|
+|**キャンセルハンドラーの表示**|デザインサーフェイスを右クリックし、コンテキストメニューの **[キャンセルハンドラーの表示**] オプションを選択すると、**シーケンシャルワークフロー**ビューが表示されます。このビューには、ワークフローに関連付けられている[CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050)アクティビティが表示されます。 または、 **[ワークフロー]** メニューの **[キャンセルハンドラーの表示]** をクリックします。|
+|**エラーハンドラーの表示**|デザインサーフェイスを右クリックし、コンテキストメニューの **[エラーハンドラーの表示]** オプションを選択すると、**エラー**ビューが表示されます。このビューには、ワークフローに関連付けられている[FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055)アクティビティが表示されます。 または、 **[ワークフロー]** メニューの **[エラーハンドラーの表示]** をクリックします。|
 
- For more information about similar views, see [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md).
+ 類似ビューの詳細については、「[アクティビティビュー (レガシ)](../workflow-designer/activity-views-legacy.md)」を参照してください。
 
-## <a name="see-also"></a>参照
- [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md) [Creating Legacy Workflow Projects](../workflow-designer/creating-legacy-workflow-projects.md) [Workflow Authoring Modes](https://go.microsoft.com/fwlink?LinkID=65014)
+## <a name="see-also"></a>関連項目
+ [アクティビティビュー (レガシ)](../workflow-designer/activity-views-legacy.md) [従来のワークフロープロジェクトの作成](../workflow-designer/creating-legacy-workflow-projects.md)[ワークフロー作成モード](https://go.microsoft.com/fwlink?LinkID=65014)

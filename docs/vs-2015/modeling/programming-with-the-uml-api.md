@@ -1,5 +1,5 @@
 ---
-title: Programming with the UML API | Microsoft Docs
+title: UML API を使用したプログラミング |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,13 +22,13 @@ ms.locfileid: "74296062"
 # <a name="programming-with-the-uml-api"></a>UML API を使用したプログラミング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The UML API of Visual Studio lets you write code to create, read, and update UML models and diagrams. UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+Visual Studio の UML API を使用すると、UML モデルおよび図を作成、読み取り、および更新するためのコードを記述できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
  API については、API リファレンス ページのほか、次のトピックで説明されています。
 
 |トピック|説明されている型およびメソッドの例|説明されている機能|
 |-----------|-----------------------------------------|------------------------|
-|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫である IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage。|In Visual Studio, UML models conform to the UML specification version 2.1.2, which can be obtained at the [UML Resource Page](https://go.microsoft.com/fwlink/?LinkId=160796). それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|
+|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫である IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage。|Visual Studio では、uml モデルは uml 仕様バージョン2.1.2 に準拠しています。これは、 [Uml リソースページ](https://go.microsoft.com/fwlink/?LinkId=160796)で取得できます。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|
 |[UML モデル内に要素および関係を生成する](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|それぞれの要素型は、子を生成するためのメソッドを持ちます。|
 |[図に UML モデルを表示する](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|モデルのそれぞれの要素は、図においてシェイプとして表すことができます。 場合によっては、それぞれのオブジェクトに対して新しいシェイプを生成できます。 これらのシェイプについては、移動、サイズ変更、色の設定、および折りたたみ/展開を行うことができます。|
 |[UML モデル内を移動する](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|モデル ストアは、モデルを格納します。<br /><br /> 図コンテキストは、現在の図およびストアへのアクセスを提供します。|
@@ -51,22 +51,22 @@ The UML API of Visual Studio lets you write code to create, read, and update UML
 ## <a name="the-api-assemblies"></a>API アセンブリ
  この表は、UML ツールに機能拡張をもたらすアセンブリと、推奨される名前空間を示します。
 
-|Assembly|名前空間|アクセス先|
+|アセンブリ|名前空間|アクセス先|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(すべて)|UML の種類|
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml|[Creation methods](../modeling/create-elements-and-relationships-in-uml-models.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagrams and Shapes](../modeling/display-a-uml-model-on-diagrams.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[The modeling project](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft.VisualStudio.Modeling.Sdk.[バージョン]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Menu command extension](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Linked Undo transactions](../modeling/link-uml-model-updates-by-using-transactions.md).|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio (Microsoft. アーキテクチャのアーキテクチャ)|[作成方法](../modeling/create-elements-and-relationships-in-uml-models.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[ダイアグラムと図形](../modeling/display-a-uml-model-on-diagrams.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[モデリングプロジェクト](../modeling/read-a-uml-model-in-program-code.md)|
+|Microsoft.VisualStudio.Modeling.Sdk.[バージョン]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[メニューコマンドの拡張機能](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。<br /><br /> リンクされた[元に戻すトランザクション](../modeling/link-uml-model-updates-by-using-transactions.md)。|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[検証](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(その他の名前空間)|高度な用途向け|
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[バージョン]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Gesture handlers](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[バージョン]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[ジェスチャハンドラー](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。|
 ||(その他の名前空間)|高度な用途向け|
-|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Links to work items](../modeling/define-a-work-item-link-handler.md).|
-|Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Work items and their fields](../modeling/define-a-work-item-link-handler.md).|
-|Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Work items and their fields](../modeling/define-a-work-item-link-handler.md).|
-|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Export and Import for MEF components](../modeling/define-and-install-a-modeling-extension.md)|
-|System.Linq|<xref:System.Linq>|[Easy manipulation of collections, especially when dealing with relationships](../modeling/navigate-relationships-with-the-uml-api.md).|
+|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[作業項目へのリンク](../modeling/define-a-work-item-link-handler.md)。|
+|Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[作業項目とそのフィールド](../modeling/define-a-work-item-link-handler.md)。|
+|Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[作業項目とそのフィールド](../modeling/define-a-work-item-link-handler.md)。|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[MEF コンポーネントのエクスポートとインポート](../modeling/define-and-install-a-modeling-extension.md)|
+|System.Linq|<xref:System.Linq>|[コレクションの簡単な操作 (特にリレーションシップを扱う場合)](../modeling/navigate-relationships-with-the-uml-api.md)。|
 
-## <a name="see-also"></a>参照
- [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>関連項目
+ Uml[モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md) [Uml モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)

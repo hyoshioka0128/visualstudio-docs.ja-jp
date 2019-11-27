@@ -1,5 +1,5 @@
 ---
-title: Project Configuration for Output | Microsoft Docs
+title: 出力のプロジェクト構成 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -20,34 +20,34 @@ ms.locfileid: "74300677"
 # <a name="project-configuration-for-output"></a>出力のためのプロジェクト構成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Every configuration can support a set of build processes that produce output items such as executable or resource files. These output items are private to the user and can be placed in groups that link related types of output such as executable files (.exe, .dll, .lib) and source files (.idl, .h files).  
+すべての構成で、実行可能ファイルやリソースファイルなどの出力項目を生成する一連のビルドプロセスをサポートできます。 これらの出力項目はユーザーに対してプライベートであり、実行可能ファイル (.exe、.dll、.lib) やソースファイル (.idl、.h ファイル) など、関連する種類の出力をリンクするグループに配置できます。  
   
- Output items can be made available through the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> methods and enumerated with the <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> methods. When you want to group output items, your project should also implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interface.  
+ 出力項目は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> メソッドを使用して取得し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> メソッドで列挙できます。 出力項目をグループ化する場合は、プロジェクトで <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> インターフェイスも実装する必要があります。  
   
- The construct developed by implementing `IVsOutputGroup` allows projects to group outputs according to usage. For instance, a DLL might be grouped with its program database (PDB).  
+ `IVsOutputGroup` の実装によって開発されたコンストラクトでは、プロジェクトが使用法に従って出力をグループ化できます。 たとえば、DLL がプログラムデータベース (PDB) と共にグループ化されている場合があります。  
   
 > [!NOTE]
-> A PDB file contains debugging information and it is created when 'Generate Debug Info' option is specified when building the .dll or .exe. The .pdb file is usually generated for Debug project configuration only.  
+> PDB ファイルにはデバッグ情報が含まれており、.dll または .exe をビルドするときに [デバッグ情報の生成] オプションを指定した場合に作成されます。 .Pdb ファイルは、通常、デバッグプロジェクト構成に対してのみ生成されます。  
   
- The project must return the same number of groups for each configuration that it supports, even though the number of outputs contained within a group may vary from configuration to configuration. For example, the project Matt's DLL might include mattd.dll and mattd.pdb in Debug configuration, but only include matt.dll in Retail configuration.  
+ グループ内に含まれる出力の数が構成によって異なる場合でも、プロジェクトはサポートされている構成ごとに同じ数のグループを返す必要があります。 たとえば、プロジェクトの mattd と mattd は、デバッグ構成に含まれる場合がありますが、リテール構成に含まれるのはその dll のみです。  
   
- The groups also have the same identifier information, such as canonical name, display name, and group information, from configuration to configuration within a project. This consistency allows deployment and packaging to continue to operate even if configurations change.  
+ また、グループには、プロジェクト内の構成から構成まで、正規名、表示名、グループ情報など、同じ識別子情報が含まれています。 この一貫性により、構成が変更された場合でも、展開およびパッケージ化を継続できます。  
   
- Groups can also have a key output that allows packaging shortcuts to point to something meaningful. Any group might be empty in a given configuration, so no assumptions should be made about the size of a group. The size (number of outputs) of each group in any configuration can be different from the size of another group in the same configuration. It can also be different from the size of the same group in another configuration.  
+ グループには、パッケージ化ショートカットが意味のあるものを指すようにするキー出力を含めることもできます。 特定の構成では、どのグループも空になる可能性があるため、グループのサイズについての前提条件を考慮する必要はありません。 構成に含まれる各グループのサイズ (出力の数) は、同じ構成内の別のグループのサイズとは異なる場合があります。 また、別の構成で同じグループのサイズと異なる場合もあります。  
   
- ![Output Groups graphic](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
+ ![出力グループグラフィック](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 出力グループ  
   
- The primary use of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interface is to provide access to build, deploy and debug management objects and allow projects the freedom to group outputs. For more information on the use of this interface, see [Project Configuration Object](../../extensibility/internals/project-configuration-object.md).  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> インターフェイスの主な用途は、管理オブジェクトのビルド、配置、デバッグへのアクセスを提供し、プロジェクトが自由に出力をグループ化できるようにすることです。 このインターフェイスの使用方法の詳細については、「[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)」を参照してください。  
   
- In the previous diagram, Group Built has a key output across configurations (either bD.exe or b.exe) so the user can create a shortcut to Built and know that the shortcut will work regardless of the configuration deployed. Group Source does not have a key output, so the user cannot create a shortcut to it. If the Debug Group Built has a key output, but the Retail Group Built does not, that would be an incorrect implementation. It follows, then, that if any configuration has a group that contains no outputs, and, as a result, no key file, then other configurations with that group that do contain outputs cannot have key files. The installer editors assume that canonical names and display names of groups, plus the existence of a key file, do not change based in configurations.  
+ 上の図では、構築されたグループが構成全体にわたってキー出力を持っています (Bd-re または b .exe)。これにより、ユーザーは、展開された構成に関係なく、ショートカットを作成して使用できることを理解できます。 グループソースにはキー出力がないため、ユーザーはそのショートカットを作成できません。 構築されたデバッググループにキー出力があり、構築された小売グループがない場合は、実装が正しくありません。 次に、いずれかの構成に出力が含まれていないグループがあり、その結果、キーファイルがない場合は、そのグループを持つその他の構成にキーファイルを含めることはできません。 インストーラーエディターでは、正規名とグループの表示名、およびキーファイルの存在は、構成に基づいて変更されないと想定しています。  
   
- Note that if a project has an `IVsOutputGroup` that it does not want to package or deploy, it is sufficient to not put that output in a group. The output can still be enumerated normally by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> method that returns all of a configuration's outputs regardless of grouping.  
+ プロジェクトにパッケージ化または配置しない `IVsOutputGroup` が含まれている場合は、その出力をグループに配置してはいけないことに注意してください。 出力は、グループ化に関係なくすべての構成の出力を返す <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> メソッドを実装することで、通常どおり列挙できます。  
   
- For more information, see the implementation of `IVsOutputGroup` in the Custom Project sample at [MPF for Projects](https://archive.codeplex.com/?p=mpfproj12).  
+ 詳細については、「カスタムプロジェクト[の](https://archive.codeplex.com/?p=mpfproj12)サンプル」の「`IVsOutputGroup` の実装」を参照してください。  
   
-## <a name="see-also"></a>参照  
- [Managing Configuration Options](../../extensibility/internals/managing-configuration-options.md)   
- [Project Configuration for Building](../../extensibility/internals/project-configuration-for-building.md)   
- [Project Configuration Object](../../extensibility/internals/project-configuration-object.md)   
+## <a name="see-also"></a>関連項目  
+ [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)   
+  [をビルドするためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)  
+ [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)   
  [ソリューション構成](../../extensibility/internals/solution-configuration.md)

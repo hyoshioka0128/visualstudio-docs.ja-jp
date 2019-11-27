@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Connecting a Host to a Generated Directive Processor | Microsoft Docs'
+title: 'チュートリアル: 生成されたディレクティブプロセッサにホストを接続する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,22 +22,22 @@ ms.locfileid: "74301273"
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサへのホストの接続
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can write your own host that processes text templates. A basic custom host is demonstrated in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). You could extend that host to add functions such as generating multiple output files.
+テキストテンプレートを処理する独自のホストを作成できます。 基本的なカスタムホストについては、 [「チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)」で説明しています。 このホストを拡張して、複数の出力ファイルを生成するなどの機能を追加することができます。
 
- In this walkthrough, you expand your custom host so that it supports text templates that call directive processors. When you define a domain-specific language, it generates a *directive processor* for the domain model. The directive processor makes it easier for users to write templates that access the model, reducing the need to write assembly and import directives in the templates.
+ このチュートリアルでは、ディレクティブプロセッサを呼び出すテキストテンプレートをサポートするようにカスタムホストを拡張します。 ドメイン固有言語を定義すると、ドメインモデルの*ディレクティブプロセッサ*が生成されます。 ディレクティブプロセッサを使用すると、モデルにアクセスするテンプレートをユーザーが簡単に記述できるようになり、テンプレートにアセンブリおよびインポートディレクティブを記述する必要性が減ります。
 
 > [!WARNING]
-> This walkthrough builds on [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). Perform that walkthrough first.
+> このチュートリアル[は、「チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)」を基に構築されています。 まず、このチュートリアルを実行します。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- Using [!INCLUDE[dsl](../includes/dsl-md.md)] to generate a directive processor that is based on a domain model.
+- [!INCLUDE[dsl](../includes/dsl-md.md)] を使用して、ドメインモデルに基づくディレクティブプロセッサを生成します。
 
-- Connecting a custom text template host to the generated directive processor.
+- 生成されたディレクティブプロセッサにカスタムテキストテンプレートホストを接続します。
 
-- Testing the custom host with the generated directive processor.
+- 生成されたディレクティブプロセッサを使用したカスタムホストのテスト。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
 |||
@@ -46,54 +46,54 @@ You can write your own host that processes text templates. A basic custom host i
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
- In addition, you must have the custom text template transformation created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+ さらに、「[チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)」では、カスタムテキストテンプレート変換を作成する必要があります。
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Using Domain-Specific Language Tools to Generate a Directive Processor
- In this walkthrough, you use the Domain-Specific Language Designer Wizard to create a domain-specific language for the solution DSLMinimalTest.
+## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>ドメイン固有言語ツールを使用したディレクティブプロセッサの生成
+ このチュートリアルでは、ドメイン固有言語デザイナーウィザードを使用して、DSLMinimalTest ソリューション用のドメイン固有言語を作成します。
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>To use Domain-Specific Language Tools to generate a directive processor that is based on a domain model
+#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>ドメインモデルに基づくディレクティブプロセッサを生成するためにドメイン固有言語ツールを使用するには
 
-1. Create a domain-specific language solution that has the following characteristics:
+1. 次の特性を持つドメイン固有言語ソリューションを作成します。
 
-   - Name: DSLMinimalTest
+   - 名前: DSLMinimalTest
 
-   - Solution template: Minimal Language
+   - ソリューションテンプレート: 最小言語
 
-   - File extension: min
+   - ファイル拡張子: 最小
 
-   - Company name: Fabrikam
+   - 会社名: Fabrikam
 
-     For more information about creating a domain-specific language solution, see [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
+     ドメイン固有言語ソリューションの作成の詳細については、「[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
    > [!IMPORTANT]
-   > This step generates the directive processor and adds the key for it in the registry.
+   > この手順では、ディレクティブプロセッサを生成し、そのキーをレジストリに追加します。
 
 3. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。
 
-    A second instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] opens.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の2番目のインスタンスが開きます。
 
-4. In the experimental build, in **Solution Explorer**, double-click the file **sample.min**.
+4. 実験用ビルドで、**ソリューションエクスプローラー**で、ファイルのサンプル **最小** をダブルクリックします。
 
-    The file opens in the designer. Notice that the model has two elements, ExampleElement1 and ExampleElement2, and a link between them.
+    デザイナーでファイルが開きます。 モデルには、ExampleElement1 と ExampleElement2 という2つの要素と、それらの間のリンクがあります。
 
-5. Close the second instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の2番目のインスタンスを閉じます。
 
-6. Save the solution, and then close the Domain-Specific Language Designer.
+6. ソリューションを保存し、ドメイン固有言語デザイナーを閉じます。
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Connecting a Custom Text Template Host to a Directive Processor
- After you generate the directive processor, you connect the directive processor and the custom text template host that you created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>カスタムテキストテンプレートホストをディレクティブプロセッサに接続する
+ ディレクティブプロセッサを生成したら、「[チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)」で作成したディレクティブプロセッサとカスタムテキストテンプレートホストを接続します。
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>To connect a custom text template host to the generated directive processor
+#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>生成されたディレクティブプロセッサにカスタムテキストテンプレートホストを接続するには
 
-1. Open the CustomHost solution.
+1. CustomHost ソリューションを開きます。
 
 2. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
 
-     The **Add Reference** dialog box opens with the **.NET** tab displayed.
+     **[参照の追加]** ダイアログボックスが開き、 **[.net]** タブが表示されます。
 
-3. Add the following references:
+3. 次の参照を追加します。
 
     - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
@@ -107,7 +107,7 @@ You can write your own host that processes text templates. A basic custom host i
 
     - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4. At the top of Program.cs or Module1.vb, add the following line of code:
+4. Program.cs または module1.vb の先頭に、次のコード行を追加します。
 
     ```csharp
     using Microsoft.Win32;
@@ -117,10 +117,10 @@ You can write your own host that processes text templates. A basic custom host i
     Imports Microsoft.Win32
     ```
 
-5. Locate the code for the property `StandardAssemblyReferences`, and replace it with the following code:
+5. プロパティ `StandardAssemblyReferences`のコードを見つけて、次のコードに置き換えます。
 
     > [!NOTE]
-    > In this step, you add references to the assemblies that are required by the generated directive processor that your host will support.
+    > この手順では、ホストがサポートする、生成されたディレクティブプロセッサに必要なアセンブリへの参照を追加します。
 
     ```csharp
     //the host can provide standard assembly references
@@ -153,10 +153,10 @@ You can write your own host that processes text templates. A basic custom host i
     }
     ```
 
-6. Locate the code for the function `ResolveDirectiveProcessor`, and replace it with the following code:
+6. 関数 `ResolveDirectiveProcessor`のコードを見つけて、次のコードに置き換えます。
 
     > [!IMPORTANT]
-    > This code contains hard-coded references to the name of the generated directive processor to which you want to connect. You could easily make this more general, in which case it looks for all directive processors listed in the registry and tries to find a match. In that case, the host would work with any generated directive processor.
+    > このコードには、接続先の生成されたディレクティブプロセッサの名前へのハードコーディングされた参照が含まれています。 これを簡単に行うことができます。この場合、レジストリに一覧表示されているすべてのディレクティブプロセッサが検索され、一致の検索が試行されます。 この場合、ホストは、生成されたすべてのディレクティブプロセッサで動作します。
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -231,17 +231,17 @@ You can write your own host that processes text templates. A basic custom host i
 
 8. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testing the Custom Host with the Directive Processor
- To test the custom text template host, first you must write a text template that calls the generated directive processor. Then you run the custom host, pass to it the name of the text template, and verify that the directive is processed correctly.
+## <a name="testing-the-custom-host-with-the-directive-processor"></a>ディレクティブプロセッサを使用したカスタムホストのテスト
+ カスタムテキストテンプレートホストをテストするには、まず、生成されたディレクティブプロセッサを呼び出すテキストテンプレートを作成する必要があります。 次に、カスタムホストを実行し、テキストテンプレートの名前を渡して、ディレクティブが正しく処理されていることを確認します。
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>テキスト テンプレートを作成してカスタム ホストをテストするには
 
-1. Create a text file, and name it `TestTemplateWithDP.tt`. You can use any text editor, such as Notepad, to create the file.
+1. テキストファイルを作成し、`TestTemplateWithDP.tt`という名前を指定します。 メモ帳などの任意のテキストエディターを使用して、ファイルを作成できます。
 
 2. 次の内容をテキスト ファイルに追加します。
 
     > [!NOTE]
-    > The programming language of the text template does not need to match that of the custom host.
+    > テキストテンプレートのプログラミング言語は、カスタムホストのプログラミング言語と一致している必要はありません。
 
     ```csharp
     Text Template Host Test
@@ -310,7 +310,7 @@ You can write your own host that processes text templates. A basic custom host i
     #>
     ```
 
-3. In the code, replace \<YOUR PATH> with the path of the Sample.min file from the design-specific language you created in the first procedure.
+3. コード内で、最初の手順で作成したデザイン固有の言語から、パス > \<を、サンプルの最小ファイルのパスに置き換えます。
 
 4. ファイルを保存して閉じます。
 
@@ -325,7 +325,7 @@ You can write your own host that processes text templates. A basic custom host i
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Instead of typing the address, you can browse to the file CustomHost.exe in **Windows Explorer**, and then drag the file into the Command Prompt window.
+    > アドレスを入力する代わりに、 **Windows エクスプローラー**で customhost ファイルを参照し、そのファイルをコマンドプロンプトウィンドウにドラッグすることもできます。
 
 3. 空白を入力します。
 
@@ -336,17 +336,17 @@ You can write your own host that processes text templates. A basic custom host i
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > Instead of typing the address, you can browse to the file TestTemplateWithDP.txt in **Windows Explorer**, and then drag the file into the Command Prompt window.
+    > アドレスを入力する代わりに、 **Windows エクスプローラー**で TestTemplateWithDP ファイルを参照し、ファイルをコマンドプロンプトウィンドウにドラッグすることができます。
 
-     The custom host application runs and starts the text template transformation process.
+     カスタムホストアプリケーションが実行され、テキストテンプレート変換プロセスが開始されます。
 
-5. In **Windows Explorer**, browse to the folder that contains the file TestTemplateWithDP.txt.
+5. **エクスプローラー**で、ファイル TestTemplateWithDP .txt を含むフォルダーに移動します。
 
-     The folder also contains the file TestTemplateWithDP1.txt.
+     このフォルダーには、TestTemplateWithDP1 ファイルも含まれています。
 
 6. このファイルを開き、テキスト テンプレート変換の結果を確認します。
 
-     The results of the generated text output appears and should look like this:
+     生成されたテキスト出力の結果が表示され、次のようになります。
 
     ```
     Text Template Host Test
@@ -358,5 +358,5 @@ You can write your own host that processes text templates. A basic custom host i
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)

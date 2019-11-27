@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Emulator for Android | Microsoft Docs
+title: Emulator for Android のトラブルシューティング |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -23,7 +23,7 @@ ms.locfileid: "74297641"
 > [!WARNING]
 > エミュレーターがインストールされている場合は、セットアップ プログラムがソフトウェア実行の前提条件をチェックします。 前提条件が存在しない場合、警告が表示されますが、インストールでは必要ありません。
 
- このトピックは、次のセクションで構成されています。
+ このトピックの内容は次のとおりです。
 
 - [開始する前に](#BeforeYouStart)
 
@@ -43,7 +43,7 @@ ms.locfileid: "74297641"
 
 - [Visual Studio がエミュレーターにアプリを配置しようとして行き詰まっているか、エミュレーターが他の IDE でデバッグ ターゲットとして表示されません。](#ADB)
 
-- [UDP ポートを設定できなかったため、エミュレーターがハングします](#XamarinPlayer)
+- [UDP ポートを設定できなかったため、エミュレーターがハングする](#XamarinPlayer)
 
 - [Xamarin プロジェクトにデバッガーをアタッチできません](#Skylake)
 
@@ -103,7 +103,7 @@ ms.locfileid: "74297641"
 ## <a name="SlowStart"></a> エミュレーターの起動に時間がかかるか、タイムアウトによって起動が失敗するか、アプリを配置できません
  特定の状況においては、エミュレーターの起動に数分かかることや、タイムアウトによって起動が失敗することがあります。 エミュレーターが起動に失敗すると、”`App deployment failed. Please try again`” というメッセージが表示されます。 このエラーの原因として、次のような状況が考えられます。
 
-- 起動可能な VHD から Visual Studio Emulator for Android を実行している。 この構成はサポートされていません。"と言うメッセージが表示されます。
+- 起動可能な VHD から Visual Studio Emulator for Android を実行している。 この構成はサポートされていません。
 
 - ハード ドライブの不良。 chkdsk プログラムの実行を検討してください。
 
@@ -217,11 +217,11 @@ ms.locfileid: "74297641"
 
   3. このアダプターの場合、 **[この接続は次の項目を使用します]** で選択する必要があるのは以下の項目のみです。
 
-     - Microsoft ネットワーク用クライアント
+     - Microsoft ネットワーク向けクライアント
 
      - QoS パケット スケジューラ
 
-     - Microsoft ネットワーク用ファイルとプリンター共有
+     - [Microsoft ネットワーク用ファイルとプリンタ共有]
 
      - Microsoft LLDP Protocol Driver
 

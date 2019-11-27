@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
+title: エディットコンティニュのエラーと警告 (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -75,15 +75,15 @@ Visual C# エディット コンティニュで許可されていないコード
   
  通常、クラスのパブリック構造体に影響を及ぼす宣言コードの編集は禁止されています。また、クラス内のメソッド、プロパティ本体、プライベート宣言に対する一部の編集も禁止されています。 可能な場合、エディット コンティニュで編集できないコードは明るい灰色で示され、エラー メッセージが表示されます。  
   
- For more information about supported edits in Edit and Continue for [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], see [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](https://go.microsoft.com/fwlink/?LinkId=214693)で質問を投稿したり、回答を検索したりできます。  
+ [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]のエディットコンティニュでサポートされている編集の詳細については、「[サポートされてC#いるコード変更 ()](../debugger/supported-code-changes-csharp.md)」を参照してください。 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](https://go.microsoft.com/fwlink/?LinkId=214693)で質問を投稿したり、回答を検索したりできます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 1. **[デバッグ]** メニューの **[元に戻す]** をクリックし、変更を元に戻します。  
   
-     -または-  
+     または  
   
 2. デバッグ セッションを停止し、編集を加えた後で新しいデバッグ セッションを開始します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

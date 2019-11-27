@@ -21,36 +21,36 @@ ms.locfileid: "74295742"
 
 この手順では、フォームに `TableLayoutPanel` コントロールを追加します。 TableLayoutPanel は、後で追加するフォームのコントロールを適切にアラインするために役立ちます。
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) or [Tutorial 1: Create a Picture Viewer in C# - Video 2](https://go.microsoft.com/fwlink/?LinkId=205200). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](https://go.microsoft.com/fwlink/?LinkId=205211)ビデオ2」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 2](https://go.microsoft.com/fwlink/?LinkId=205200)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>TableLayoutPanel コントロールを使用してフォームのレイアウトを設定するには
 
-1. On the left side of the Visual Studio IDE, locate the **Toolbox** tab. Choose the **Toolbox** tab, and the Toolbox appears. (メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。)
+1. Visual Studio IDE の左側で、 **[ツールボックス]** タブを探します。 [**ツールボックス] タブ**をクリックすると、ツールボックスが表示されます。 (メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。)
 
 2. 次の図に示すように、 **[コンテナー]** グループの横にある小さな三角形をクリックして、このグループを開きます。
 
-     ![Containers group](../ide/media/express-toolbox.png "Express_Toolbox") Containers group
+     ![コンテナーグループ](../ide/media/express-toolbox.png "Express_Toolbox")コンテナーグループ
 
-3. ボタン、チェック ボックス、ラベルなどのコントロールをフォームに追加できます。 ツールボックスの `TableLayoutPanel` コントロールをダブルクリックします。 (Or, you can drag the control from the toolbox onto the form.) When you do this, the IDE adds a `TableLayoutPanel` control to your form, as shown in the following picture.
+3. ボタン、チェック ボックス、ラベルなどのコントロールをフォームに追加できます。 ツールボックスの `TableLayoutPanel` コントロールをダブルクリックします。 (または、ツールボックスからフォームにコントロールをドラッグできます)。この操作を行うと、次の図に示すように、IDE によってフォームに `TableLayoutPanel` コントロールが追加されます。
 
-     ![TableLayoutPanel control](../ide/media/express-formtablelayout.png "Express_FormTableLayout") TableLayoutPanel control
+     ![TableLayoutPanel コントロール](../ide/media/express-formtablelayout.png "Express_FormTableLayout")TableLayoutPanel コントロール
 
     > [!NOTE]
     > TableLayoutPanel を追加した後、 **[TableLayoutPanel タスク]** というタイトルのウィンドウがフォーム内に表示された場合は、フォーム内の任意の場所をクリックしてそのウィンドウを閉じます。 このウィンドウについては、このチュートリアルで後ほど詳しく説明します。
 
      ツールボックスは、タブをクリックするとフォームの前面に展開され、ツールボックスの外部の任意の場所をクリックすると閉じます。 これは、IDE の自動非表示機能です。 ウィンドウの右上隅にあるプッシュピン アイコンをクリックすると、すべてのウィンドウについてこの機能のオンとオフを切り替えることができます。このアイコンをクリックするたびに、自動非表示になるか位置が固定されるかが切り替わります。 プッシュピン アイコンは次のように表示されます。
 
-     ![Pushpin icon](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox") Pushpin icon
+     ![プッシュピンアイコン](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")プッシュピンアイコン
 
 4. **TableLayoutPanel** をクリックして選択します。 どのコントロールが選択されているかを確認するには、次の図のような、 **[プロパティ]** ウィンドウの上部にあるドロップダウン リストを確認します。
 
-     ![Properties window showing TableLayoutPanel control](../ide/media/express-controlspropwin.png "Express_ControlsPropWin") Properties window showing TableLayoutPanel control
+     ![TableLayoutPanel コントロールを表示するプロパティウィンドウ](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")TableLayoutPanel コントロールを表示するプロパティウィンドウ
 
 5. **[プロパティ]** ウィンドウのツール バーにある **[アルファベット順]** をクリックします。 これにより、 **[プロパティ]** ウィンドウのプロパティの一覧がアルファベット順に表示され、このチュートリアルのプロパティが探しやすくなります。
 
 6. コントロール セレクターは、 **[プロパティ]** ウィンドウの上部にあるドロップダウン リストです。 この例では、`tableLayoutPanel1` というコントロールが選択されています。 コントロールを選択するには、Windows フォーム デザイナーの領域をクリックするか、コントロール セレクターから選択します。 `TableLayoutPanel` が選択されているので、**Dock** プロパティを探し、 **[Dock]** をクリックします (**None** に設定されています)。 値の横にドロップダウン矢印が表示されます。 次の図に示すように、矢印をクリックし、 **[Fill]** ボタン (中央にある大きいボタン) をクリックします。
 
-     ![Properties window with Fill selected](../ide/media/express-docktable.png "Express_DockTable") Properties window with Fill selected
+     ![Fill が選択されたプロパティウィンドウ](../ide/media/express-docktable.png "Express_DockTable")Fill が選択されたプロパティウィンドウ
 
      ウィンドウが別のウィンドウまたは IDE の領域にアタッチされている場合、Visual Studio の*ドッキング*が参照します。 たとえば、[プロパティ] ウィンドウはドッキング解除できます。つまり、Visual Studio にアタッチせず、フローティング状態にするか、**ソリューション エクスプローラー**にドッキングできます。
 
@@ -61,23 +61,23 @@ ms.locfileid: "74295742"
 
 8. 現在、TableLayoutPanel には 2 つの行と 2 つの列がありますが、いずれもサイズは同じになっています。 上の行と右の列のサイズがそれぞれ他方よりもかなり大きくなるように変更する必要があります。 Windows フォーム デザイナーで、TableLayoutPanel を選択します。 右上隅に、次のような小さな黒い三角形のボタンが表示されます。
 
-     ![Triangle button](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle") Triangle button
+     ![三角形のボタン](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle")三角形のボタン
 
      このボタンは、コントロールのプロパティを自動的に設定するのに役立つタスクがあることを示しています。
 
 9. 三角形をクリックします。次の図に示すように、コントロールのタスク一覧が表示されます。
 
-     ![TableLayoutPanel tasks](../ide/media/express-tablepanel.png "Express_TablePanel") TableLayoutPanel tasks
+     ![TableLayoutPanel タスク](../ide/media/express-tablepanel.png "Express_TablePanel")TableLayoutPanel タスク
 
-10. **[行および列の編集]** タスクをクリックして、 **[列と行のスタイル]** ウィンドウを表示します。 **[Column1]** をクリックし、サイズを 15% に設定します。設定するには、 **[パーセント]** ボタンが選択されていることを確認し、 **[パーセント]** ボックスに「`15`」と入力します。 (That's a `NumericUpDown` control, which you will use in a later tutorial.) Choose **Column2** and set it to 85 percent. クリックするとウィンドウが閉じるため、まだ **[OK]** はクリックしないでください (クリックした場合は、タスク一覧を使用して再度開くことができます)。
+10. **[行および列の編集]** タスクをクリックして、 **[列と行のスタイル]** ウィンドウを表示します。 **[Column1]** をクリックし、サイズを 15% に設定します。設定するには、 **[パーセント]** ボタンが選択されていることを確認し、`15`[パーセント] **ボックスに「** 」と入力します。 (これは、後のチュートリアルで使用する `NumericUpDown` コントロールです)。**Column2**を選択し、85% に設定します。 クリックするとウィンドウが閉じるため、まだ **[OK]** はクリックしないでください (クリックした場合は、タスク一覧を使用して再度開くことができます)。
 
-     ![TableLayoutPanel column and row styles](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") TableLayoutPanel column and row styles
+     ![TableLayoutPanel の列と行のスタイル](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup")TableLayoutPanel の列と行のスタイル
 
 11. ウィンドウの上部にある **[表示]** ドロップダウン リストの **[行]** をクリックします。 **Row1** を 90% に、**Row2** を 10% に設定します。
 
-12. **[OK]** を選択します。 これで、TableLayoutPanel の上の行が大きくなり、下の行が小さくなります。また、左の列が小さくなり、右の列が大きくなります。 フォームで tableLayoutPanel1 をクリックし、その行と列の境界線をドラッグして、TableLayoutPanel の行と列のサイズ変更できます。
+12. **[OK]** をクリックします。 これで、TableLayoutPanel の上の行が大きくなり、下の行が小さくなります。また、左の列が小さくなり、右の列が大きくなります。 フォームで tableLayoutPanel1 をクリックし、その行と列の境界線をドラッグして、TableLayoutPanel の行と列のサイズ変更できます。
 
-     ![Form1 with resized TableLayoutPanel](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 with resized TableLayoutPanel
+     ![TableLayoutPanel のサイズを変更した Form1](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel")TableLayoutPanel のサイズを変更した Form1
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 

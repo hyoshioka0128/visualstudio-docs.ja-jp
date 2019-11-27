@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue (Visual C++) | Microsoft Docs
+title: エディットコンティニュ (ビジュアルC++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,18 +25,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301056"
 ---
-# <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C++)
+# <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ プロジェクトではエディット コンティニュを使用できます。 See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.  
+Visual C++ プロジェクトでエディット コンティニュを使用できます。 エディットコンティニュの制限事項については、「[サポートされてC++いるコード変更 ()](../debugger/supported-code-changes-cpp.md) 」を参照してください。  
   
- Starting in Visual Studio 2015 Update 1, you can now use Edit and Continue in Windows Store C++ apps and DirectX apps, because it now supports the **/ZI** compiler switch with **/bigobj** switch. You can also use Edit  and Continue with binaries compiled with the **/FASTLINK** switch.  
+ Visual Studio 2015 更新プログラム1以降では、Windows ストアアプリと DirectX アプリでエディットC++コンティニュを使用できるようになりました。これは、Windows ストアアプリと DirectX アプリでの **/zi**コンパイラ**スイッチがサポート**されるようになったためです。 **/FASTLINK**スイッチを使用してコンパイルされたバイナリでエディットコンティニュを使用することもできます。  
   
- Other Update 1 improvements include a new, cancelable wait dialog, and notification when a file does not support Edit and Continue. For more information about Update 1 improvements, see [Improvements for C++ Edit and Continue in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
+ Update 1 のその他の機能強化としては、ファイルがエディット コンティニュをサポートしていない場合にキャンセルできる待機のダイアログと通知が新たに含まれるようになりました。 Update 1 の機能強化の詳細については、「 [Visual Studio 2015 update 1 でのエディットコンティニュのC++機能強化](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/)」を参照してください。  
   
  Visual Studio 2013 Update 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションは、[/Od (無効 (デバッグ))](https://msdn.microsoft.com/library/aafb762y.aspx) オプションなしでコンパイルされたバイナリの .pdb (シンボル) ファイルに情報を追加します。  
   
- **/Zo** disables Edit and Continue. 「[方法: 最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)」をご覧ください。  
+ **/Zo**は、エディットコンティニュを無効にします。 「[方法: 最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)」をご覧ください。  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> エディット コンティニュを有効または無効にする  
  現在のデバッグ セッション中に適用しないコードの編集を行う場合は、エディット コンティニュの自動起動を無効にすることもできます。 自動エディット コンティニュをもう一度有効にすることもできます。  
@@ -77,5 +77,5 @@ Visual C++ プロジェクトではエディット コンティニュを使用�
   
  このような場合、変更が適用されるまで、デバッガーは元のコードを続けて実行します。 古いコードは、一時的なソース ファイル ウィンドウとして、 `enc25.tmp`などのタイトルで別のソース ウィンドウに表示されます。 編集されたソース コードは、元のソース ウィンドウに表示されます。 古いコードを編集しようとすると、警告メッセージが表示されます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [サポートされているコード変更 (C++)](../debugger/supported-code-changes-cpp.md)

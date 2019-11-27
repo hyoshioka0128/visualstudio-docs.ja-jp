@@ -1,5 +1,5 @@
 ---
-title: Model user requirements | Microsoft Docs
+title: ユーザー要件のモデル化 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -43,7 +43,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
 - システム テストのベースとしてモデルを使用して、テストと要求間の関係を明確にします。 要求が変更された場合、この関係により、テストを正しく更新できます。 これにより、システムが新しい要求を満たしていることを確認します。
 
-  要求モデルは、ユーザーまたはユーザーの代表者との話し合いに集中する場合や、各反復処理の開始時に再検討する場合に使用すると、最大のメリットが得られます。 コードを作成する前に、要求モデルを細部まで完成させる必要はありません。 通常、非常に簡略化された状態で部分的にしか動作していないアプリケーションでも、ユーザーと要求について検討する場合に、非常に効果の上がるベースとなります。 このモデルは、これらの話し合いの結果を要約する効果的な方法です。 For more information, see [Use models in your development process](../modeling/use-models-in-your-development-process.md).
+  要求モデルは、ユーザーまたはユーザーの代表者との話し合いに集中する場合や、各反復処理の開始時に再検討する場合に使用すると、最大のメリットが得られます。 コードを作成する前に、要求モデルを細部まで完成させる必要はありません。 通常、非常に簡略化された状態で部分的にしか動作していないアプリケーションでも、ユーザーと要求について検討する場合に、非常に効果の上がるベースとなります。 このモデルは、これらの話し合いの結果を要約する効果的な方法です。 詳細については、「[開発プロセスでのモデルの使用](../modeling/use-models-in-your-development-process.md)」を参照してください。
 
 > [!NOTE]
 > これらのトピックでは、"システム" という用語は、開発中のシステムまたはアプリケーションを意味します。 システムは、数多くのソフトウェアおよびハードウェア コンポーネントが大規模に収集されたものを指す場合があります。また、1 つのアプリケーションの場合もあれば、大規模なシステム内の 1 つのソフトウェア コンポーネントを指すこともあります。 いずれの場合でも、要求モデルは、ユーザー インターフェイスを使用するか、API を使用するかにかかわらず、システムの外側から確認できる動作を記述します。
@@ -53,31 +53,31 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
 |図またはドキュメント|要求モデルに記載されている内容|セクション|
 |-------------------------|-----------------------------------------------|-------------|
-|ユース ケース図|だれがシステムを使用し、ユーザーがシステムを使って何をするか。|[Describing how your system is used](#UseCases)|
-|概念クラス図|要求の記述に使用する型の用語集。システムのインターフェイスで確認できる型。|[Defining terms used to describe requirements](#RequirementsClasses)|
-|アクティビティ図|ユーザーとシステム (またはシステムの一部) が実行するアクティビティ間のワークフローと情報。|[Showing work flow between users and your system](#Workflow)|
-|シーケンス図|ユーザーとシステム (またはシステムの一部) 間の相互作用のシーケンス。 アクティビティ図の代替ビュー。|[Showing interactions between users and your system](#Sequences)|
+|ユース ケース図|だれがシステムを使用し、ユーザーがシステムを使って何をするか。|[システムの使用方法の説明](#UseCases)|
+|概念クラス図|要求の記述に使用する型の用語集。システムのインターフェイスで確認できる型。|[要件の記述に使用される用語の定義](#RequirementsClasses)|
+|アクティビティ図|ユーザーとシステム (またはシステムの一部) が実行するアクティビティ間のワークフローと情報。|[ユーザーとシステム間のワークフローを表示する](#Workflow)|
+|シーケンス図|ユーザーとシステム (またはシステムの一部) 間の相互作用のシーケンス。 アクティビティ図の代替ビュー。|[ユーザーとシステム間の相互作用の表示](#Sequences)|
 |追加のドキュメントまたは作業項目|パフォーマンス、セキュリティ、使いやすさ、および信頼性の条件。|[サービス品質要求の記述](#QoSRequirements)|
 |追加のドキュメントまたは作業項目|特定のユース ケースに固有でない制約とルール|[ビジネス ルールの表示](#BusinessRules)|
 
- ほとんどの種類の図が、他の目的に使用できることに注意してください。 For an overview of diagram types, see [Create models for your app](../modeling/create-models-for-your-app.md). For basic information about drawing diagrams, see [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+ ほとんどの種類の図が、他の目的に使用できることに注意してください。 図の種類の概要については、「[アプリのモデルを作成](../modeling/create-models-for-your-app.md)する」を参照してください。 図の描画に関する基本的な情報については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。
 
-## <a name="UseCases"></a> Describing how your system is used
+## <a name="UseCases"></a>システムの使用方法の説明
  システムを使用するユーザーと、システムの使用目的を記述するユース ケース図を作成します。 ユース ケースは、システムのユーザーの目的と、目的を実現するためにユーザーが実行する手順を表します。
 
  例として、オンライン料理販売システムでは、お客様がメニューから項目を選択することができること、および提供を受けるレストランでメニューを更新できることが必要です。 これをユース ケース図で要約できます。
 
- ![Use cases for Customer and Restaurant](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
+ ![顧客とレストランのユースケース](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
 
  また、ユース ケースがより小さいケースで構成されていることを示すこともできます。 たとえば料理の注文は、料理の購入の一部ですが、購入には支払いと配達も含まれています。
 
- ![System participates in payment but not delivery.](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
+ ![システムは支払いに参加しますが、配信されません。](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
 
  また、どのユース ケースが、開発中のシステムの範囲に含まれているかを表示することもできます。 たとえば、図のシステムは、Delivery Meal ユース ケースには含まれていません。 これは、開発作業のコンテキストを設定するのに役立ちます。 (ユース ケース図では、システムまたはそのコンポーネントを表すために、サブシステム コンテナーを使用できます。)
 
  また、チーム メンバーが後続のリリースに含める機能を検討する場合にも便利です。 たとえば、システムの初期リリースでは Pay for Meal は、システムを通すのではなく、レストランとお客様間で直接調整するかどうかを検討できます。 この場合、Pay for Meal を初期リリースの Dinner Now System の四角形の外側に移動できます。
 
- ユース ケース図では、ユース ケースの概要だけが表示されます。 詳細な説明を指定するには、図のユース ケースにリンクを設定して、ドキュメントや他の図を分離することができます。 To learn how to do this, see [Link a use case to documents and diagrams](../modeling/link-a-use-case-to-documents-and-diagrams.md).
+ ユース ケース図では、ユース ケースの概要だけが表示されます。 詳細な説明を指定するには、図のユース ケースにリンクを設定して、ドキュメントや他の図を分離することができます。 これを行う方法については、「[ドキュメントおよび図へのユースケースのリンク](../modeling/link-a-use-case-to-documents-and-diagrams.md)」を参照してください。
 
  ユース ケース図を描画すると、以下の点でチームに役立ちます。
 
@@ -87,13 +87,13 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|[読み取り]|
 |--------------------|----------|
 |ユース ケースを作成する方法に関する詳細情報|[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)|
 |ユース ケース図の要素|[UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)|
 |ユース ケースからコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="RequirementsClasses"></a> Defining Terms Used to Describe Requirements
+## <a name="RequirementsClasses"></a>要件の記述に使用される用語の定義
  UML クラス図を使用すると、次の目的で使用される、ビジネス概念の一貫性のあるボキャブラリを開発しやすくなります。
 
 - ユーザー自身が、システムの動作対象となるビジネスについて検討する。
@@ -110,7 +110,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   たとえば、Dinner Now システムに対して、次の概念クラスを描画できます。
 
-  ![Classes Menu, Order, Menu Item, Order Item.](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
+  ![[クラス] メニュー、順序、メニュー項目、注文項目。](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
 
   概念クラス図では、要求モデル全体で使用する用語のボキャブラリが提供されます。 たとえば、Order a Meal ユース ケースの詳細説明は、次のように記述できます。
 
@@ -132,7 +132,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|[読み取り]|
 |--------------------|----------|
 |要求クラスの検索に関する詳細|[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|
@@ -143,9 +143,9 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 ## <a name="BusinessRules"></a> Showing Business Rules
  ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。
 
- 多くのビジネス ルールは、概念クラス間の関係に関する制約です。 You can write these *static business rules* as comments associated with the relevant classes on a conceptual class diagram. (例:
+ 多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらの*静的ビジネスルール*は、概念クラス図の関連クラスに関連付けられたコメントとして記述できます。 例 :
 
- ![Rule in Comment attached to Order class.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
+ ![Order クラスに添付されたコメント内のルール。](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
  *動的ビジネス ルール* は、イベントの許容可能なシーケンスを制約します。 たとえば、シーケンス図やアクティビティ図を使って、ユーザーがシステムにログインしてから他の操作を実行する必要があることを示すとします。
 
@@ -155,24 +155,24 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
  詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|[読み取り]|
 |--------------------|----------|
 |静的なビジネス ルールの検索と記録の詳細|[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|
 |ビジネス ルールに準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
- サービス品質要求には、いくつかのカテゴリがあります。 次に例を示します。
+ サービス品質要求には、いくつかのカテゴリがあります。 フォルダーには次のようなものがあります。
 
-- パフォーマンス
+- パフォーマンス テスト
 
 - セキュリティ
 
-- 使用性
+- 使いやすさ
 
 - 信頼性
 
-- 保全性
+- 信頼性
 
   これらの要求のいくつかを、特定のユース ケースの説明に含めることができます。 その他の要求は、ユース ケースに固有のものではなく、個別のドキュメントに記載することが最も効果的です。 可能であれば、要求モデルで定義されているボキャブラリに準拠すると便利です。 次の例では、要求で使用されている主な単語が、前のイラストのアクターのタイトル、ユース ケース、およびクラスである点に注意してください。
 
@@ -180,44 +180,44 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|[読み取り]|
 |--------------------|----------|
 |ユース ケースへの追加ドキュメントのアタッチ|[ユース ケースをドキュメントおよび図にリンクする](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |サービス品質要求に準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Workflow"></a> Showing work flow between users and your system
+## <a name="Workflow"></a>ユーザーとシステム間のワークフローを表示する
  アクティビティ図を使って、さまざまなユース ケース間のワークフローを表示することができます。 多くの場合、ユーザーがシステムおよびシステム外の両方で実行する主なタスクを示すアクティビティ図を描画して、要件のモデルを開始すると便利です。
 
- (例:
+ 例 :
 
- ![Activity with three actions and a loop.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
+ ![3つのアクションと1つのループを持つアクティビティ。](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- ユース ケース図やアクティビティ図を描画して、同じ情報を異なるビューで表示することができます。  ユース ケース図は、より大規模なアクティビティ内の小さいアクションの入れ子構造を表示するのにより効果的ですが、ワークフローは表示されません。 (例:
+ ユース ケース図やアクティビティ図を描画して、同じ情報を異なるビューで表示することができます。  ユース ケース図は、より大規模なアクティビティ内の小さいアクションの入れ子構造を表示するのにより効果的ですが、ワークフローは表示されません。 例 :
 
- ![Use cases for previous actions](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
+ ![前のアクションのユースケース](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
  ソフトウェア内のアルゴリズムを表示するアクティビティ図を使うこともできますが、ビジネス プロセス用にこの図を使用する場合、システムの外部で表示できるアクションに焦点を当てるという点に注意してください。
 
  詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|[読み取り]|
 |--------------------|----------|
 |ビジネス ワークフローを定義する方法の詳細|[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)|
 |アクティビティ図の要素|[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)|
 |アクティビティ図からコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Sequences"></a> Showing interactions between users and your system
+## <a name="Sequences"></a>ユーザーとシステム間の相互作用の表示
  シーケンス図を使って、システムと外部アクター間、またはシステムのパーツ相互間のメッセージのやり取りを表示できます。 これにより、相互作用のシーケンスを非常に明確に示すユース ケース内の手順が表示されます。 ユース ケース内で複数の関係者が相互作業している場合や、システムに API がある場合に、シーケンス図は特に便利です。
 
- (例:
+ 例 :
 
- ![Sequence diagram with System and actors.](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
+ ![システムとアクターを含むシーケンス図。](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
  シーケンス図の利点の 1 つは、現在構築しているシステムで、どのようなメッセージを受信しているかを簡単に確認できることです。 システムを設計する場合、コンポーネントごとに 1 つのシステム生存線を別の生存線に置き換え、各受信メッセージへの応答時に、コンポーネント間でどのような相互作用が行われるかを表示できます。
 
  詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|[読み取り]|
 |--------------------|----------|
 |相互作用の定義方法の詳細|[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|
 |シーケンス図の要素|[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)|
@@ -238,5 +238,5 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   さまざまな図が提供するビュー間の関係を調べることで、ユーザーの作業に関する主要な概念をすばやく理解し、システムに何が必要かをユーザーが理解できるようにします。 また、利害関係者がほとんど意識していない要求についても、より深く理解することができます。 プロジェクトの初期段階で、これらの機能を少なくとも簡略化された形式で開発し、ユーザーがその機能を試してみることを計画できます。
 
-## <a name="see-also"></a>参照
- [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [Develop tests from a model](../modeling/develop-tests-from-a-model.md) [Use models in your development process](../modeling/use-models-in-your-development-process.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Sample VS Extension: UML Domain Modeling features](https://go.microsoft.com/fwlink/?LinkId=213849) [Sample VS Extension: Color UML Elements by Stereotype](https://go.microsoft.com/fwlink/?LinkID=213841) [Sample VS Extension: Link UML Elements to Diagrams, Files, and other Elements](https://go.microsoft.com/fwlink/?LinkID=213813) [Sample VS Extension: Align Shapes on a UML Diagram](https://go.microsoft.com/fwlink/?LinkID=213809) [Video: Modeling the Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+## <a name="see-also"></a>関連項目
+ [Uml モデルおよび図の編集](../modeling/edit-uml-models-and-diagrams.md)[モデルからのテストの作成](../modeling/develop-tests-from-a-model.md)[開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)の使用モデル[サンプル vs 拡張機能: uml ドメインモデリング機能](https://go.microsoft.com/fwlink/?LinkId=213849)サンプル Vs 拡張機能: uml 要素を[ステレオタイプ別に色](https://go.microsoft.com/fwlink/?LinkID=213841)を設定するサンプル vs 拡張機能: uml[図に](https://go.microsoft.com/fwlink/?LinkID=213809)uml[要素をリンクする](https://go.microsoft.com/fwlink/?LinkID=213813)[ビデオ: ビジネスドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

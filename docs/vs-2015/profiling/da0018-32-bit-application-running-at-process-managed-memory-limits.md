@@ -23,11 +23,11 @@ ms.locfileid: "74301106"
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0018|  
-|Category|Profiling Tools Usage|  
-|Profiling method|Sampling|  
-|Message|Managed memory allocations approaching the default limit for a 32-bit process. アプリケーションがメモリにより制限されている可能性があります。|  
-|Rule type|Warning|  
+ルール Id |DA0018 |  
+|Category |プロファイルツール使用法 |  
+|プロファイル方法 |サンプリング |  
+|Message |マネージメモリ割り当ては、32ビットプロセスの既定の制限に近づいています。 アプリケーションがメモリにより制限されている可能性があります。|  
+|ルールの種類 |警告 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
   
@@ -54,7 +54,7 @@ Rule Id|DA0018|
   
 - マネージド メモリ リソースのアプリケーションによる使用を最適化する  
   
-   -または-  
+   または  
   
 - 32 ビット プロセスの仮想メモリの最大サイズに関するアーキテクチャ上の制約を解除する手順を実行する  
   

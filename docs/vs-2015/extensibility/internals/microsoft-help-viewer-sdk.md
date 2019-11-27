@@ -1,5 +1,5 @@
 ---
-title: Microsoft Help Viewer SDK | Microsoft Docs
+title: Microsoft ヘルプビューアー SDK |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -18,66 +18,66 @@ ms.locfileid: "74300717"
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-This article contains the following tasks for Visual Studio Help Viewer integrators:
+この記事には、Visual Studio ヘルプビューアーインテグレーターに関する次のタスクが含まれています。
 
-- Creating a topic (F1 support)
+- トピックの作成 (F1 サポート)
 
-- Creating a Help Viewer content-branding package
+- ヘルプビューアーのコンテンツブランドパッケージの作成
 
-- Deploying a set of articles
+- 一連の記事の配置
 
-- Adding help to the Visual Studio shell (integrated or isolated)
+- Visual Studio シェルへのヘルプの追加 (統合または分離)
 
-- その他の資料
+- その他のリソース
 
-### <a name="creating-a-topic-f1-support"></a>Creating a topic (F1 support)
- This section provides an overview of the components of a presented topic, topic requirements, a short description for how to create a topic (including F1 support requirements) and finally, an example topic with its rendered result.
+### <a name="creating-a-topic-f1-support"></a>トピックの作成 (F1 サポート)
+ ここでは、表示されるトピックのコンポーネントの概要、トピックの要件、トピックの作成方法に関する簡単な説明 (F1 サポート要件を含む) について説明します。最後に、結果を表示するトピックの例を示します。
 
- **Help Viewer Topic Overview**
+ **ヘルプビューアートピックの概要**
 
- When a topic is called for rendering, the Help Viewer gets the branding package elements that are associated with the topic at the time of install or last update, along with the topic XHTML, and combines the two to result in the presented content view (branding data + topic data).  The branding package contains logos, support for content behaviors, and branding text (copyright, etc.).  See “Creating Branding Package” below for more information about the branding package elements.  In the event there is no branding package associated with the topic, the Help Viewer will use the fallback branding package located in the Help Viewer application root (Branding_en-US.mshc).
+ トピックを表示するために呼び出されると、ヘルプビューアーは、インストール時または最終更新時にトピックに関連付けられているブランド化パッケージ要素をトピック XHTML と共に取得し、2つを組み合わせて表示されるコンテンツビュー (ブランドデータ +) にします。トピックデータ)。  ブランド化パッケージには、ロゴ、コンテンツの動作のサポート、ブランドのテキスト (著作権など) が含まれています。  ブランド化パッケージの要素の詳細については、以下の「ブランド化パッケージの作成」を参照してください。  トピックに関連付けられているブランド化パッケージがない場合、ヘルプビューアーは、ヘルプビューアーアプリケーションルート (Branding_en-.mshc) にあるフォールバックブランドパッケージを使用します。
 
- **Help Viewer Topic Requirements**
+ **ヘルプビューアートピックの要件**
 
- To be rendered correctly within the Help Viewer, raw topic content must be W3C Basic 1.1 XHTML.
+ ヘルプビューアー内で正しくレンダリングされるためには、未加工のトピックコンテンツが W3C Basic 1.1 XHTML である必要があります。
 
- A topic typically contains two sections:
+ トピックには、通常、次の2つのセクションが含まれます。
 
-- Metadata (see Content Metadata Reference): data about the topic, for example, the topic unique ID, keyword value, the topic TOC ID, parent node ID, etc.
+- メタデータ (コンテンツメタデータリファレンスを参照): トピックに関するデータ。たとえば、トピックの一意の ID、キーワード値、トピック TOC ID、親ノード ID などです。
 
-- Body content: compliant with W3C Basic 1.1 XHTML, which includes supported content behaviors (collapsible area, code snippet, etc. A full list is shown below).
+- 本文の内容: サポートされているコンテンツ動作 (折りたたみ可能な領域、コードスニペットなど) を含む W3C Basic 1.1 XHTML に準拠しています。完全な一覧を次に示します)。
 
-  Visual Studio Branding Package supported controls:
+  Visual Studio ブランド化パッケージでサポートされるコントロール:
 
-- リンク
+- Links
 
 - CodeSnippet
 
 - CollapsibleArea
 
-- Inherited Member
+- 継承されたメンバー
 
 - LanguageSpecificText
 
-  Supported language strings (not case sensitive):
+  サポートされている言語の文字列 (大文字と小文字は区別されません):
 
 - javascript
 
-- csharp or c#
+- csharp または c#
 
-- cplusplus or visualc++ or c++
+- cplusplus または visualc + + または c++
 
-- jscript
+- 記述
 
-- visualbasic or vb
+- visual basic または vb
 
-- f# or fsharp or fs
+- f # または fsharp.core または fs
 
-- other – a string that represents a language name
+- other –言語名を表す文字列
 
-  **Creating a Help Viewer topic**
+  **ヘルプビューアートピックの作成**
 
-  Create a new XHTML document named ContosoTopic4.htm, and include the title tag (below).
+  ContosoTopic4 という名前の新しい XHTML ドキュメントを作成し、タイトルのタグ (下記) を含めます。
 
 ```html
 <html>
@@ -92,19 +92,19 @@ This article contains the following tasks for Visual Studio Help Viewer integrat
 
 ```
 
- Next, add data to define how the topic is to be presented (self branded or not), how to reference this topic for F1, where this topic exists within the TOC, its ID (for link reference by other topics), etc.  See the “Content Metadata” table below for a complete list of supported metadata.
+ 次に、トピックの表示方法を定義するためにデータを追加します (自己ブランド化されているかどうか)。このトピックを参照する方法については、このトピックの目次内、ID (他のトピックによるリンク参照用) などを参照してください。 サポートされているメタデータの完全な一覧については、以下の「コンテンツメタデータ」の表を参照してください。
 
-- In this case, we will use our own branding package, a variant of the Visual Studio Help Viewer branding package.
+- この例では、Visual Studio ヘルプビューアーブランド化パッケージのバリエーションである独自のブランド化パッケージを使用します。
 
-- Add the F1 meta name and value (“Microsoft.Help.F1" content=" ContosoTopic4") that will match the supplied F1 value in the IDE property bag.  (See the F1 Support section for more information.)   This is the value that is matched to the F1 call from within the IDE to display this topic when F1 is chosen in the IDE.
+- IDE プロパティバッグで、指定された F1 値に一致する F1 メタ名と値 ("ContosoTopic4") を追加します。  (詳細については、「F1 サポート」セクションを参照してください)。  これは、ide で F1 を選択したときに、このトピックを表示するために IDE 内からの F1 呼び出しに一致する値です。
 
-- Add the topic ID. This is the string that is used by other topics to link to this topic.  It is the Help Viewer ID for this topic.
+- トピック ID を追加します。 これは、このトピックにリンクするために他のトピックによって使用される文字列です。  これは、このトピックのヘルプビューアー ID です。
 
-- For the TOC, add this topic’s parent node to define where this topic TOC node will appear.
+- TOC の場合は、このトピックの親ノードを追加して、このトピックの TOC ノードが表示される場所を定義します。
 
-- For the TOC, add this topic’s node order. When the parent node has n number of children nodes, define in the order of child nodes this topic's location. For example, this topic is number 4 of 4 child topics.)
+- TOC の場合は、このトピックのノードの順序を追加します。 親ノードに n 個の子ノードがある場合は、このトピックの場所の子ノードの順序でを定義します。 たとえば、このトピックは4つの子トピックである4個です)。
 
-  Example metadata section:
+  メタデータセクションの例:
 
 ```html
 <html>
@@ -128,26 +128,26 @@ This article contains the following tasks for Visual Studio Help Viewer integrat
 
 ```
 
- **The Topic Body**
+ **トピック本文**
 
- The body (not including the header and footer) of the topic will contain page links, a note section, a collapsible area, a code snippet, and a section of language specific text.  See the branding section for information about those areas of the presented topic.
+ トピックの本文 (ヘッダーとフッターを除く) には、ページリンク、メモセクション、折りたたみ可能な領域、コードスニペット、および言語固有のテキストのセクションが含まれます。  表示されるトピックの領域については、「ブランド化」セクションを参照してください。
 
-1. Add a topic title tag:  `<div class="title">Contoso Topic 4</div>`
+1. トピックタイトルタグを追加する: `<div class="title">Contoso Topic 4</div>`
 
-2. Add a note section: `<div class="alert"> add your table tag and text </div>`
+2. メモセクションの追加: `<div class="alert"> add your table tag and text </div>`
 
-3. Add a collapsible area:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 折りたたみ可能な領域の追加: `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Add a code snippet:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. コードスニペットの追加: `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Add code language specific text:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Note that devLangnu= allows you to enter other languages. For example, devLangnu=”Fortran” will display Fortran when the code snippet DisplayLanguage = Fortran
+5. コード言語固有のテキストを追加する: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` devLangnu = では、他の言語を入力できます。 たとえば、コードスニペット DisplayLanguage = Fortran の場合、devLangnu = "Fortran" は Fortran を表示します。
 
-6. Add page links: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. ページリンクの追加: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
-> Note: for non-supported new “Display Language” (example, F#, Cobol, Fortran) code colorization in the code snippet will be monochrome.
+> 注: サポートされていない新しい "表示言語" ( F#例、、Cobol、Fortran) では、コードスニペットのコードの色付けはモノクロになります。
 
- **Example Help Viewer Topic** The code illustrates how to define metadata, a code snippet, a collapsible area, and language specific text.
+ **ヘルプビューアーのトピックの例**このコードは、メタデータ、コードスニペット、折りたたみ可能な領域、および言語固有のテキストを定義する方法を示しています。
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -268,351 +268,351 @@ some F# code
 
 ```
 
- **F1 Support**
+ **F1 サポート**
 
- In Visual Studio, selecting F1 generates values supplied from the placement of the cursor within the IDE and populates a “property bag” with the supplied values (based on cursor location. When the cursor is over feature x, feature x is active/in focus and populates property bag with values.  When F1 is selected the property bag is populated and Visual Studio F1 code looks to see if the customers default Help source is local or online (online is the default), then creates the appropriate string based on the users setting (online is the default) – shell execute (see the Help Administrator Guide for exe launch parameters) with parameters for the local help viewer + keyword(s) from the property bag if local help is the default, or the MSDN URL with the keyword in the parameter list.
+ Visual Studio で F1 を選択すると、IDE 内のカーソルの位置から指定された値が生成され、指定された値 (カーソル位置に基づく) が "プロパティバッグ" に設定されます。 カーソルが機能 x 上にある場合、機能 x はアクティブ/フォーカスが設定され、プロパティバッグに値が設定されます。  F1 キーを選択すると、プロパティバッグが設定され、Visual Studio F1 コードによって、顧客の既定のヘルプソースがローカルまたはオンライン (既定では online) であるかどうかがわかります。次に、ユーザー設定に基づいて適切な文字列を作成します (既定値は online)。シェルの実行(exe 起動パラメーターのヘルプ管理者ガイドを参照してください)。ローカルヘルプが既定値の場合は、プロパティバッグのローカルヘルプビューアー + キーワードのパラメーターと、パラメーターリストにキーワードが含まれている MSDN URL です。
 
- If three strings are returned for F1, referred to as a multi-value string, take the first term, look for a hit, and if found, we are done; if not, move to the next string.  Order matters. Presentation of the multi-value keywords should be longest string to shortest string.  To verify this in the case for multi-value keywords, look at the online F1 URL string, which will include the chosen keyword.
+ 複数値の文字列と呼ばれる F1 に対して3つの文字列が返された場合は、最初の用語を使用してヒットを探し、見つかった場合は終了します。それ以外の場合は、次の文字列に移動します。  順序は重要です。 複数値のキーワードを使用する場合は、最短文字列型の文字列にすることをお勧めします。  複数値のキーワードの場合、これを確認するには、オンラインの F1 URL 文字列を調べます。これには、選択したキーワードが含まれます。
 
- In Visual Studio 2012, we intentionally made a stronger divide between online and offline, so that if the user’s setting was for Online, then we simply passed the F1 request directly to our online query service on MSDN rather than routing through the Help Library Agent that we had in Visual Studio 2010. We then rely on a state of “vendor content installed = true” to determine whether to do something different in that context. If true, we then perform this parsing and routing logic depending on what you wish to support for your customers. If false, then we just go to MSDN. If the user’s setting is to Local, then all calls go to the local help engine.
+ Visual Studio 2012 では、オンラインとオフラインの間でより強力な分割が意図的に行われているため、ユーザーの設定がオンラインになっている場合は、F1 要求をヘルプライブラリエージェントを通じてルーティングするのではなく、MSDN のオンラインクエリサービスに直接渡すだけです。これは Visual Studio 2010 でした。 次に、"vendor content installed = true" という状態を使用して、そのコンテキストで別の操作を実行するかどうかを判断します。 True の場合、お客様にサポートするものに応じて、この解析とルーティングのロジックを実行します。 False の場合は、MSDN にアクセスします。 ユーザーの設定が Local に設定されている場合は、すべての呼び出しがローカルヘルプエンジンに送られます。
 
- F1 Flow Diagram:
+ F1 フローダイアグラム:
 
- ![F1 flow](../../extensibility/internals/media/f1flow.png "F1flow")
+ ![F1 フロー](../../extensibility/internals/media/f1flow.png "F1flow")
 
- When the Help Viewer default help content source is set to online (Launch in browser):
+ ヘルプビューアーの既定のヘルプコンテンツソースが [オンライン] に設定されている場合 ([ブラウザーで起動]):
 
-- Visual Studio Partner (VSP) features emit a value to the F1 property bag (property bag prefix.keyword and online URL for the prefix found in the registry): F1 sends a VSP URL+ parameters to the browser.
+- Visual Studio Partner (VSP) 機能は、F1 プロパティバッグに値を出力します (プロパティバッグプレフィックス。レジストリで見つかったプレフィックスの URL とオンライン URL): F1 は、VSP URL + パラメーターをブラウザーに送信します。
 
-- Visual Studio features (language editor, Visual Studio specific menu items, etc.):  F1 sends  a Visual Studio URL to the browser.
+- Visual Studio の機能 (言語エディター、Visual Studio 固有のメニュー項目など): F1 キーを押して Visual Studio の URL をブラウザーに送信します。
 
-  When the Help Viewer default help content source  is set to local Help (Launch in Help Viewer):
+  ヘルプビューアーの既定のヘルプコンテンツソースがローカルヘルプ (ヘルプビューアーで起動) に設定されている場合は、次のようになります。
 
-- VSP features where keyword match between F1 property bag and local store index (that is, the property bag prefix.keyword = the value found in the local store index):  F1 renders the topic in the Help Viewer.
+- 次のように、キーワードが F1 プロパティバッグとローカルストアインデックス (つまり、プロパティバッグプレフィックス. keyword = ローカルストアインデックスで検出された値) と一致する VSP 機能。 F1 はヘルプビューアーでトピックを表示します。
 
-- Visual Studio features (no option for the VSP to override the property bag emitted from Visual Studio features): F1 renders a Visual Studio topic in the Help Viewer.
+- Visual Studio の機能 (Visual Studio の機能から生成されたプロパティバッグを VSP がオーバーライドするオプションはありません): F1 では、Visual Studio のトピックがヘルプビューアーに表示されます。
 
-  Set the following registry values to enable F1 Fallback for vendor Help content. F1 Fallback means that the Help Viewer is set to look for F1 Help content online, and the vendor content is installed locally to the users’ hard drive. The Help Viewer should look at local Help for the content even though the default setting is for online help.
+  次のレジストリ値を設定して、ベンダーのヘルプコンテンツの F1 フォールバックを有効にします。 F1 フォールバックは、ヘルプビューアーが F1 ヘルプコンテンツをオンラインで検索するように設定されており、ベンダーのコンテンツがユーザーのハードドライブにローカルでインストールされていることを意味します。 ヘルプビューアーは、既定の設定がオンラインヘルプの場合でも、コンテンツのローカルヘルプを確認する必要があります。
 
-1. Set the **VendorContent** value under the Help 2.1 registry key:
+1. Help 2.1 レジストリキーの下に**VendorContent**値を設定します。
 
-   - For 32-bit operating systems:
+   - 32ビットオペレーティングシステムの場合:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent"=dword:00000001
+        "VendorContent" = dword: 00000001
 
-   - For 64-bit operating systems:
+   - 64ビットオペレーティングシステムの場合:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent"=dword:00000001
+        "VendorContent" = dword: 00000001
 
-2. Register the partner namespace under the Help 2.1 registry key:
+2. Help 2.1 レジストリキーの下に、partner 名前空間を登録します。
 
-   - For 32-bit operating systems:
+   - 32ビットオペレーティングシステムの場合:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
-
-      "location"=”offline”
-
-   - For 64-bit operating systems:
-
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
+      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< 名前空間\></em>
 
       "location"=”offline”
 
-   **Base Native Namespace Parsing**
+   - 64ビットオペレーティングシステムの場合:
 
-   To turn on base native namespace parsing, in the registry add a new DWORD by the name of: BaseNativeNamespaces and set its value to 1 (under the catalog key that they want to support).  For example, if you want to use the Visual Studio catalog, you could add the key to the path:
+      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< 名前空間\></em>
+
+      "location"=”offline”
+
+   **基本のネイティブ名前空間の解析**
+
+   基本のネイティブ名前空間の解析を有効にするには、レジストリで、BaseNativeNamespaces の名前を指定して新しい DWORD を追加し、その値を 1 (サポートするカタログキーの下) に設定します。  たとえば、Visual Studio カタログを使用する場合は、次のようにキーをパスに追加します。
 
    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-   When an F1 keyword in the format HEADER/METHOD is encountered, the ‘/’ character will be parsed out, resulting in the following construct:
+   形式ヘッダー/メソッドで F1 キーワードが検出されると、'/' 文字が解析され、次のような構造になります。
 
-- HEADER: will be the namespace that can be used to register in the registry
+- ヘッダー: は、レジストリに登録するために使用できる名前空間になります。
 
-- METHOD: this will become the keyword that gets passed through.
+- METHOD: これは、を通じて渡されるキーワードになります。
 
-  For example, given a custom library called CustomLibrary and a method called MyTestMethod, when an F1 request comes in it will be formatted as `CustomLibrary/MyTestMethod`.
+  たとえば、CustomLibrary というカスタムライブラリと MyTestMethod いう名前のメソッドを指定した場合、F1 要求があると、その要求は `CustomLibrary/MyTestMethod`として書式設定されます。
 
-  A user can then register CustomLibrary as the namespace under the Partners hive, and provide whatever location key they desire, and the keyword passed to the query will be MyTestMethod.
+  その後、ユーザーは、パートナーハイブの下に名前空間として CustomLibrary を登録し、必要な任意の場所キーを指定します。クエリに渡されたキーワードは MyTestMethod ようになります。
 
-  **Enable Help debugging tool in the IDE**
+  **IDE でヘルプデバッグツールを有効にする**
 
-  Add the following registry key and value:
+  次のレジストリキーと値を追加します。
 
-  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic Help key: Display Debug Output in Retail value: YES
+  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic ヘルプ キー: 小売価格でのデバッグ出力を表示します はい。
 
-  In the IDE, under the Help menu item, select “Debug Help Context”
+  IDE の [ヘルプ] メニュー項目で、[ヘルプコンテキストのデバッグ] を選択します。
 
-  **Content Metadata**
+  **コンテンツのメタデータ**
 
-  In the following table, any string that appears between brackets is a placeholder that must be replaced by a recognized value. For example, in \<meta name="Microsoft.Help.Locale" content="[language code]" />, "[language code]" must be replaced by a value such as "en-us".
+  次の表では、角かっこで囲まれた文字列は、認識された値に置き換える必要があるプレースホルダーです。 たとえば、\<meta name = "Microsoft. Help. Locale" content = "[language code]"/> の場合は、"[language code]" を "en-us" などの値に置き換える必要があります。
 
-|Property (HTML Representation)|説明|
+|Property (HTML 表現)|説明|
 |--------------------------------------|-----------------|
-|\< meta name="Microsoft.Help.Locale" content="[language-code]" />|Sets a locale for this topic. If this tag is used in a topic, it must be used just once and it must be inserted above any other Microsoft Help tags. If this tag is not used, the body text of the topic is indexed by using word breaker that is associated with the product locale, if it is specified; otherwise, the en-us word breaker is used. This tag conforms to ISOC RFC 4646. To ensure that Microsoft Help works correctly, use this property instead of the general Language attribute.|
-|\< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|Sets a locale for this topic when other locales are also used. If this tag is used in a topic, it must be used just once. Use this tag when the catalog contains content in more than one language. Multiple topics in a catalog can have the same ID, but each must specify a unique TopicLocale. The topic that specifies a TopicLocale that matches the locale of the catalog is the topic that is displayed in the table of contents. However, all language versions of the topic are displayed in Search results.|
-|\< title>[Title]\</title>|Specifies the title of this topic. This tag is required, and must be used just once in a topic. If the body of the topic does not contain a title \<div> section, this Title is displayed in the topic and in the table of contents.|
-|\< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/>|Specifies the text of a link that is displayed in the index pane of the Help Viewer. When the link is clicked, the topic is displayed.You can specify multiple index keywords for a topic, or you can omit this tag if you do not want links to this topic to appear in the index. "K" keywords from earlier versions of Help can be converted to this property.|
-|\< meta name="Microsoft.Help.Id" content="[TopicID]"/>|Sets the identifier for this topic. This tag is required, and must be used just once in a topic. The ID must be unique among topics in the catalog that have the same locale setting. In another topic, you can create a link to this topic by using this ID.|
-|\< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/>|Specifies the F1 keyword for this topic. You can specify multiple F1 keywords for a topic, or you can omit this tag if you do not want this topic to be displayed when an application user presses F1. Typically, just one F1 keyword is specified for a topic. "F" keywords from earlier versions of Help can be converted to this property.|
-|\< meta name="Description" content="[topic description]" />|Provides a short summary of the content in this topic. If this tag is used in a topic, it must be used just once. This property is accessed directly by the query library; it is not stored in the index file.|
- meta name="Microsoft.Help.TocParent" content="[parent_Id]"/>|Specifies the parent topic of this topic in the table of contents. This tag is required, and must be used just once in a topic. The value is the Microsoft.Help.Id of the parent. A topic can have just one location in the table of contents. “-1” is considered the topic ID for the TOC root. In [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], that page is Help Viewer home page. This is the same reason we specifically add TocParent=-1 to some topics to ensure that they show up at the top level.The Help Viewer home page is a system page and so non-replaceable. If a VSP tries to add a page with an ID of -1, it may get added to the content set, but Help Viewer will always use the system page – Help Viewer Home|
-|\< meta name="Microsoft.Help.TocOrder" content="[positive integer]"/>|Specifies where in the table of contents this topic appears relative to its peer topics. This tag is required, and must be used just once in a topic. The value is an integer. A topic that specifies a lower-value integer appears above a topic that specifies a higher-value integer.|
-|\< meta name="Microsoft.Help.Product" content="[product code]"/>|Specifies the product that this topic describes. If this tag is used in a topic, it must be used just once. This information can also be supplied as a parameter that is passed to the Help Indexer.|
-|\< meta name="Microsoft.Help.ProductVersion" content="[version number]"/>|Specifies the version of the product that this topic describes. If this tag is used in a topic, it must be used just once. This information can also be supplied as a parameter that is passed to the Help Indexer.|
-|\< meta name="Microsoft.Help.Category" content="[string]"/>|Used by products to identify subsections of content. You can identify multiple subsections for a topic, or you can omit this tag if you do not want links to identify any subsections. This tag is used to store the attributes for TargetOS and TargetFrameworkMoniker when a topic is converted from an earlier version of Help. The format of the content is AttributeName:AttributeValue.|
-|\< meta name="Microsoft.Help.TopicVersion content="[topic version number]"/>|Specifies this version of the topic when multiple versions exist in a catalog. Because Microsoft.Help.Id is not guaranteed to be unique, this tag is required when more than one version of a topic exists in a catalog, for example, when a catalog contains a topic for the .NET Framework 3.5 and a topic for the .NET Framework 4 and both have the same Microsoft.Help.Id.|
-|\< meta name="SelfBranded" content="[TRUE or FALSE]"/>|Specifies whether this topic uses the Help Library Manager start-up branding package or a branding package that is specific to the topic. This tag must be either TRUE or FALSE. If it is TRUE, then the branding package for the associated topic overrides the branding package that is set when Help Library Manager starts so that the topic is rendered as intended even if it differs from the rendering of other content. If it is FALSE, the current topic is rendered according to the branding package that is set when Help Library Manager starts. By default, Help Library Manager assumes self-branding to be false unless the SelfBranded variable is declared as TRUE; therefore, you do not have to declare \<meta name="SelfBranded" content="FALSE"/>.|
+|\< meta name = "Microsoft. Help. Locale" content = "[language-code]"/>|このトピックのロケールを設定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があり、その他の Microsoft ヘルプタグの上に挿入する必要があります。 このタグが使用されていない場合、指定されている場合、製品のロケールに関連付けられているワードブレーカーを使用して、トピックの本文のインデックスが作成されます。それ以外の場合は、en-us ワードブレーカーが使用されます。 このタグは ISOC RFC 4646 に準拠しています。 Microsoft ヘルプが正しく動作するようにするには、一般言語属性ではなく、このプロパティを使用します。|
+|\< meta name = "Microsoft. Get-help Locale" content = "[language-code]"/>|他のロケールも使用されている場合に、このトピックのロケールを設定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があります。 このタグは、カタログに複数の言語のコンテンツが含まれている場合に使用します。 カタログ内の複数のトピックは同じ ID を持つことができますが、それぞれが一意のトピックのロケールを指定する必要があります。 カタログのロケールに一致するトピックのロケールを指定するトピックは、目次に表示されるトピックです。 ただし、検索結果には、トピックのすべての言語バージョンが表示されます。|
+|\< タイトル > [タイトル]\</タイトル >|このトピックのタイトルを指定します。 このタグは必須であり、トピック内で1回だけ使用する必要があります。 トピックの本文に title \<div > セクションが含まれていない場合、このタイトルはトピックと目次に表示されます。|
+|\< meta name = "aKeywordPhrase" content = "[]"/>|ヘルプビューアーの [インデックス] ペインに表示されるリンクのテキストを指定します。 リンクをクリックすると、トピックが表示されます。1つのトピックに対して複数のインデックスキーワードを指定することも、このトピックへのリンクがインデックスに表示されないようにする場合は、このタグを省略することもできます。 以前のバージョンのヘルプの "K" キーワードは、このプロパティに変換できます。|
+|\< meta name = "Microsoft. Help. Id" content = "[トピック Id]"/>|このトピックの識別子を設定します。 このタグは必須であり、トピック内で1回だけ使用する必要があります。 ID は、同じロケール設定のカタログ内のトピック間で一意である必要があります。 別のトピックでは、この ID を使用して、このトピックへのリンクを作成できます。|
+|\< meta name = "Microsoft. Help. F1" content = "[IRecyclingItemContainerGenerator]"/> にします。|このトピックの F1 キーワードを指定します。 1つのトピックに対して複数の F1 キーワードを指定できます。また、アプリケーションユーザーが F1 キーを押したときにこのトピックが表示されないようにする場合は、このタグを省略できます。 通常、1つのトピックに対して F1 キーワードを1つだけ指定します。 以前のバージョンのヘルプの "F" キーワードは、このプロパティに変換できます。|
+|\< meta name = "Description" content = "[topic Description]"/>|このトピックの内容の簡単な概要を示します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があります。 このプロパティは、クエリライブラリによって直接アクセスされます。インデックスファイルには格納されません。|
+ meta name = "TocParent" content = "[parent_Id]"/>|目次内のこのトピックの親トピックを指定します。 このタグは必須であり、トピック内で1回だけ使用する必要があります。 値は、親の Microsoft.Help.Id です。 トピックは、目次内で1つの場所のみを持つことができます。 "-1" は、TOC ルートのトピック ID と見なされます。 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]、そのページはヘルプビューアーのホームページです。 これは、TocParent =-1 をいくつかのトピックに明示的に追加して、それらが最上位レベルに表示されるようにするためのものです。ヘルプビューアーのホームページはシステムページであり、置き換え可能ではありません。 VSP が ID が-1 のページを追加しようとすると、コンテンツセットに追加されることがありますが、ヘルプビューアーでは常に [システム] ページ (ヘルプビューアーホーム) が使用されます。|
+|\< meta name = "Microsoft. Help. TocOrder" content = "[正の整数]"/>|このトピックの目次で、ピアトピックに対して相対的に表示される場所を指定します。 このタグは必須であり、トピック内で1回だけ使用する必要があります。 値は整数です。 より値の大きい整数を指定するトピックの上に、値が小さい整数を指定するトピックがあります。|
+|\< meta name = "Microsoft. Help. Product" content = "[product code]"/>|このトピックで説明する製品を指定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があります。 この情報は、ヘルプインデクサーに渡されるパラメーターとして指定することもできます。|
+|\< meta name = "Microsoft. Help. ProductVersion" content = "[version number]"/>|このトピックで説明する製品のバージョンを指定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があります。 この情報は、ヘルプインデクサーに渡されるパラメーターとして指定することもできます。|
+|\< meta name = "Microsoft. Help. Category" content = "[string]"/>|コンテンツのサブセクションを識別するために製品によって使用されます。 1つのトピックに対して複数のサブセクションを特定できます。また、サブセクションを識別するリンクが必要ない場合は、このタグを省略できます。 このタグは、トピックが以前のバージョンのヘルプから変換された場合に、TargetOS および TargetFrameworkMoniker の属性を格納するために使用されます。 コンテンツの形式は AttributeName: AttributeValue です。|
+|\< meta name = "Microsoft. Get-help Version content =" [topic version number] "/>|カタログ内に複数のバージョンが存在する場合に、このバージョンのトピックを指定します。 Microsoft.Help.Id は一意であることが保証されていないため、カタログに1つ以上のバージョンのトピックが含まれている場合 (たとえば、カタログに .NET Framework 3.5 のトピックと .NET Framework 4 のトピックが含まれており、両方が同じマイクロを持つ場合)、このタグが必要です。ソフト.Help.Id。|
+|\< meta name = "SelfBranded" content = "[TRUE または FALSE]"/>|このトピックで、ヘルプライブラリマネージャのスタートアップブランドパッケージを使用するか、トピックに固有のブランドパッケージを使用するかを指定します。 このタグは、TRUE または FALSE のいずれかである必要があります。 TRUE の場合、関連付けられているトピックのブランド化パッケージは、ヘルプライブラリマネージャーが起動したときに設定されているブランド化パッケージよりも優先されます。これにより、トピックが他のコンテンツのレンダリングと異なる場合でも意図したとおりに表示されるようになります。 FALSE の場合は、ヘルプライブラリマネージャーが起動したときに設定されているブランド化パッケージに従って、現在のトピックが表示されます。 既定では、SelfBranded 変数が TRUE として宣言されていない限り、ヘルプライブラリマネージャーは自己ブランド化を false にすることを前提としています。したがって、\<meta name = "SelfBranded" content = "FALSE"/> を宣言する必要はありません。|
 
-### <a name="creating-a-branding-package"></a>Creating a branding package
- The Visual Studio release encompasses a number of different Visual Studio products, including the Isolated and Integrated shells for Visual Studio Partners.  Each of these products requires some degree of topic-based Help content branding support, unique to the product.  For example, Visual Studio topics need to have a consistent brand presentation, whereas SQL Studio, which wraps ISO Shell, requires its own unique Help content branding for each topic.  An Integrated Shell Partner may want their Help topics to be within the parent Visual Studio product Help content while maintaining their own topic branding.
+### <a name="creating-a-branding-package"></a>ブランド化パッケージの作成
+ Visual studio リリースには、Visual studio パートナー向けの分離された統合シェルを含むさまざまな Visual Studio 製品が含まれています。  これらの製品には、製品に固有のトピックベースのヘルプコンテンツブランドサポートが必要です。  たとえば、Visual Studio のトピックには一貫したブランドプレゼンテーションが必要ですが、ISO シェルをラップする SQL Studio では、各トピックに固有のヘルプコンテンツのブランド化が必要です。  統合シェルパートナーは、独自のトピックブランドを維持したまま、親の Visual Studio 製品ヘルプコンテンツ内でヘルプトピックを表示することができます。
 
- Branding packages are installed by the product containing the Help Viewer.  For Visual Studio products:
+ ブランド化パッケージは、ヘルプビューアーを含む製品によってインストールされます。  Visual Studio 製品の場合:
 
-- A fallback branding package (Branding_\<locale>.mshc) is installed in the Help Viewer 2.1 app root (example: C:\Program Files (x86)\Microsoft Help Viewer\v2.1) by the Help Viewer language pack.  This is used for cases where either the product branding package is not installed (no content has been installed) or where the installed branding package is corrupted.  The Visual Studio elements (logo and Feedback) are ignored when the app root fallback branding package is used.
+- フォールバックブランドパッケージ (Branding_\<ロケール > .mshc) は、ヘルプビューアーの言語パックによって、ヘルプビューアー2.1 アプリのルート (例: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) にインストールされます。  これは、製品ブランディングパッケージがインストールされていない場合 (コンテンツがインストールされていない場合)、またはインストールされているブランド化パッケージが破損している場合に使用されます。  アプリのルートフォールバックブランドパッケージが使用されている場合、Visual Studio の要素 (ロゴとフィードバック) は無視されます。
 
-- When Visual Studio content is installed from the content package service, a branding package is also installed (for the first time content installation scenario).  If there is an update to the branding package, the update is installed when the next content update or additional package install action happens.
+- コンテンツパッケージサービスから Visual Studio コンテンツがインストールされると、ブランドパッケージもインストールされます (初めてコンテンツをインストールする場合)。  ブランド化パッケージの更新プログラムがある場合は、次のコンテンツ更新プログラムまたはパッケージの追加インストールアクションが実行されるときに、更新プログラムがインストールされます。
 
-  The Microsoft Help Viewer supports the branding of topics based on topic metadata.
+  Microsoft ヘルプビューアーでは、トピックのメタデータに基づくトピックのブランド化がサポートされています。
 
-- Where topic metadata defines self branded = true, render the topic as is, do nothing (as far as branding).
+- Topic メタデータで自己ブランド化 = true が定義されている場合は、トピックをそのままレンダリングします (ブランド化と同様)。
 
-- Where topic metadata defines self branded = false, use the branding package associated with TopicVendor metadata value.
+- Topic メタデータで自己ブランド化 = false を定義する場合は、トピック「ベンダーメタデータ値」に関連付けられているブランド化パッケージを使用します。
 
-- Where topic metadata defines name="Microsoft.Help.TopicVendor” content=\< branding package name in vendor MSHA>, use the branding package defined in the content value.
+- ここで、topic metadata は name = "Microsoft. Help. topic Vendor" content =\< ブランド化パッケージ名をベンダーの MSHA > で定義します。コンテンツ値に定義されているブランド化パッケージを使用します。
 
-- Within the Visual Studio catalog, there is a priority application of Branding Packages.  First Visual Studio default branding is applied, and then, if defined in the topic metadata and supported with the associated branding package (as defined in the installation msha), the vendor defined branding is applied as an override.
+- Visual Studio カタログ内には、ブランド化パッケージの優先的な適用があります。  最初の Visual Studio の既定のブランド化が適用され、トピックのメタデータで定義されていて、関連付けられているブランド化パッケージ (インストール msha で定義) でサポートされている場合は、ベンダーが定義したブランドが上書きとして適用されます。
 
-  Branding elements typically fall into three main categories:
+  ブランド化要素は、通常、次の3つの主なカテゴリに分類されます。
 
-- Header elements (examples include feedback link, conditional disclaimer text, logo)
+- ヘッダー要素 (例には、フィードバックリンク、条件付き免責テキスト、ロゴ)
 
-- Content behaviors (examples include expand/collapse control text elements and code snippet elements)
+- コンテンツの動作 (例には、展開/折りたたみコントロールテキスト要素とコードスニペット要素が含まれます)
 
-- Footer elements (example Copyright)
+- フッター要素 (著作権の例)
 
-  Items considered as branded elements include (detailed in this spec):
+  ブランド要素と見なされる項目には、次のようなものがあります (この仕様で詳しく説明します)。
 
-- Catalog/product logo (example, Visual Studio)
+- カタログ/製品ロゴ (例、Visual Studio)
 
-- Feedback link and e-mail elements
+- フィードバックリンクと電子メールの要素
 
-- Disclaimer text
+- 免責事項のテキスト
 
-- Copyright text
+- 著作権テキスト
 
-  Supporting files in the Visual Studio Help Viewer branding package include:
+  Visual Studio ヘルプビューアーのブランド化パッケージに含まれるサポートファイルは次のとおりです。
 
-- Graphics (logos, icons, etc.)
+- グラフィックス (ロゴ、アイコンなど)
 
-- Branding.js – script files supporting content behaviors
+- ブランド化-コンテンツ動作をサポートするスクリプトファイル
 
-- Branding.xml – strings that are consistently used across catalog content.  Note: for Visual Studio localization text elements in the branding.xml, include _locID="\<unique value>"
+- System.xml-カタログコンテンツ全体で一貫して使用される文字列。  注: config.xml 内の Visual Studio のローカライズテキスト要素の場合は、_locID = "\<一意の値 >" を含めます。
 
-- Branding.css – style definitions for presentation consistency
+- Css-プレゼンテーションの一貫性のためのスタイル定義
 
-- Printing.css – style definitions for consistent printed presentation
+- 印刷 .css-一貫した印刷プレゼンテーション用のスタイル定義
 
-  As noted above, Branding Packages are associated with the topic:
+  前述のように、ブランド化パッケージはトピックに関連付けられています。
 
-- When SelfBranded = false is defined in the metadata, the topic inherits the catalog branding package
+- メタデータで SelfBranded = false が定義されている場合、トピックはカタログブランド化パッケージを継承します。
 
-- Or when SelfBranded = false and there is a unique Branding Package defined in the MSHA and available when the content is installed
+- または、SelfBranded = false の場合、MSHA で定義された一意のブランド化パッケージがあり、コンテンツがインストールされているときに使用できます。
 
-  For VSPs implementing custom branding packages (VSP content, SelfBranded=True), one way to proceed is to start with the fallback branding package (installed with the Help Viewer), and change the name of the file as appropriate.  The Branding_\<locale>.mshc file is a zip file with the file extension changed to .mshc, so simply change the extension from .mshc to .zip and extract the contents.  See below for branding package elements and modify as appropriate (for example, change the logo to the VSP logo and the reference to the logo in the Branding.xml file, update Branding.xml per VSP specifics, etc.).
+  カスタムブランドパッケージ (VSP コンテンツ、SelfBranded = True) を実装する .Vsps の場合、続行する1つの方法は、フォールバックブランドパッケージ (ヘルプビューアーと共にインストールされます) から開始し、必要に応じてファイル名を変更することです。  Branding_\<ロケール > .mshc ファイルは、ファイル拡張子が. .mshc に変更された zip ファイルです。 .mshc から .zip に拡張子を変更し、コンテンツを抽出するだけです。  以下を参照して、ブランド化パッケージの要素を確認し、必要に応じて変更します (たとえば、ロゴを VSP ロゴに変更し、ブランド .xml ファイルのロゴへの参照を変更し、.VSP 固有の xml を更新します)。
 
-  When all modifications are done, create a zip file containing the desired branding elements and change the extension to .mshc.
+  すべての変更が完了したら、必要なブランド要素を含む zip ファイルを作成し、拡張子を .mshc に変更します。
 
-  To associate the custom branding package, create the MSHA, which contains the reference to the branding mshc file along with the content mshc (containing the topics).  See below “MSHA” for how to create a basic MSHA.
+  カスタムブランドパッケージを関連付けるには、.mshc ファイルへの参照とコンテンツ .mshc (トピックを含む) を含む MSHA を作成します。  基本的な MSHA を作成する方法については、「MSHA」を参照してください。
 
-  The Branding.xml file contains a list elements used for consistently rendering specific items in a topic when the topic contains \<meta name="Microsoft.Help.SelfBranded" content="false"/>.  The Visual Studio list of elements in the Branding.xml file is listed below.  This list is intended to be used as a template for ISO Shell adopters, where they modify these elements (for example logo, feedback, and Copyright) to meet their own product branding needs.
+  このブランド .xml ファイルには、トピックに \<meta name = "Microsoft. Help. SelfBranded" content = "false"/> が含まれている場合に、特定のアイテムを一貫して表示するために使用されるリスト要素が含まれています。  次に、ブランディングファイル内の要素の Visual Studio リストを示します。  このリストは、独自の製品ブランド化のニーズを満たすために、これらの要素 (ロゴ、フィードバック、著作権など) を変更する ISO シェル採用者向けのテンプレートとして使用することを目的としています。
 
-  Note: variables noted by “{n}” have code dependencies – removing or changing these values will cause errors and possibly application crash.Localization identifiers (example _locID="codesnippet.n") are included in the Visual Studio Branding Package.
+  注: "{n}" で示されている変数にはコードの依存関係があります。これらの値を削除または変更すると、エラーが発生し、アプリケーションがクラッシュする可能性があります。ローカライズ識別子 (例 _locID = "codesnippet") は、Visual Studio ブランド化パッケージに含まれています。
 
-  **Branding.xml**
+  **ブランディング .xml**
 
 |||
 |-|-|
 |機能:|**CollapsibleArea**|
-|使用:|Expand collapses content control text|
-|**要素**|**[値]**|
-|ExpandText|Expand|
-|CollapseText|折りたたむ|
+|使用方法は次のとおりです。|折りたたみコンテンツコントロールのテキストを展開します|
+|**要素**|**値**|
+|ExpandText|展開|
+|CollapseText|折りたたみ|
 |機能:|**CodeSnippet**|
-|使用:|Code snippet control text.  Note: Code snippet content with “Non-Breaking” space will be changed to space.|
-|**要素**|**[値]**|
+|使用方法は次のとおりです。|コードスニペットコントロールテキスト。  注: "非互換性" 領域があるコードスニペットコンテンツは、スペースに変更されます。|
+|**要素**|**値**|
 |CopyToClipboard|クリップボードにコピー|
-|ViewColorizedText|View Colorized|
-|CombinedVBTabDisplayLanguage|Visual Basic (Sample)|
+|ViewColorizedText|色分け表示|
+|連結 Edvbtabdisplaylanguage|Visual Basic (サンプル)|
 |VBDeclaration|宣言|
-|VBUsage|使用方法|
-|機能:|**Feedback, Footer, and Logo**|
-|使用:|Provide a Feedback control for customer to supply feedback on the current topic via e-mail.  Copyright text for the content.  Logo definition.|
-|**要素**|**Value  (These strings can be modified to meet content adopter need.)**|
-|CopyRight|© 2013 Microsoft Corporation. All rights reserved.|
-|SendFeedback|\<a href="{0}" {1}>Send Feedback\</a> on this topic to Microsoft.|
-|FeedbackLink||
+|VBUsage|使用法|
+|機能:|**フィードバック、フッター、ロゴ**|
+|使用方法は次のとおりです。|顧客が電子メールで現在のトピックに関するフィードバックを提供するフィードバックコントロールを提供します。  コンテンツの著作権テキスト。  ロゴの定義。|
+|**要素**|**値 (これらの文字列は、コンテンツの導入者のニーズに合わせて変更できます。)**|
+|侵害|© 2013 Microsoft Corporation. All rights reserved.|
+|SendFeedback|\<href = "{0}" {1}>、このトピックの「/a\<を Microsoft に送信する」を参照してください。|
+|No-results-found-feedbacklink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
-|LogoFileNameHC|vs_logo_wh.gif|
-|機能:|**Disclaimer**|
-|使用:|A set of case specific disclaimers for machine translated content.|
-|**要素**|**[値]**|
-|MT_Editable|This article was machine translated. If you have an Internet connection, select "View this topic online" to view this page in editable mode with the original English content at the same time.|
-|MT_NonEditable|This article was machine translated. If you have an Internet connection, select "View this topic online" to view this page in editable mode with the original English content at the same time.|
-|MT_QualityEditable|This article was manually translated. If you have an Internet connection, select "View this topic online" to view this page in editable mode with the original English content at the same time.|
-|MT_QualityNonEditable|This article was manually translated. If you have an Internet connection, select "View this topic online" to view this page in editable mode with the original English content at the same time.|
-|MT_BetaContents|This article was machine translated for a preliminary release. If you have an Internet connection, select "View this topic online" to view this page in editable mode with the original English content at the same time.|
-|MT_BetaRecycledContents|This article was manually translated for a preliminary release. If you have an Internet connection, select "View this topic online" to view this page in editable mode with the original English content at the same time.|
-|機能:|**LinkTable**|
-|使用:|Support for online topic links|
-|**要素**|**[値]**|
-|LinkTableTitle|Link Table|
-|TopicEnuLinkText|View the English version\</a> of this topic that is available on your computer.|
-|TopicOnlineLinkText|View this topic \<a href="{0}" {1}>online\</a>|
-|OnlineText|Online|
-|機能:|**Video Audio control**|
-|使用:|Display elements and text for video content|
-|**要素**|**[値]**|
-|MultiMediaNotSupported|Internet Explorer 9 or greater must be installed to support {0} content.|
-|VideoText|displaying video|
-|AudioText|streaming audio|
-|OnlineVideoLinkText|\<p>To view the video associated with this topic, click {0}\<a href="{1}">{2}here\</a>.\</p>|
-|OnlineAudioLinkText|\<p>To listen to the audio associated with this topic, click {0}\<a href="{1}">{2}here\</a>.\</p>|
-|機能:|**Content Not Installed control**|
-|使用:|Text elements (strings) used for the rendering of contentnotinstalled.htm|
-|**要素**|**[値]**|
-|ContentNotInstalledTitle|No content was found on your computer.|
-|ContentNotInstalledDownloadContentText|\<p>To download content to your computer, \<a href="{0}" {1}>click the Manage tab\</a>.\</p>|
-|ContentNotInstalledText|\<p>No content is installed on your computer. See your Administrator for local Help content installation.\</p>|
-|機能:|**Topic Not Found control**|
-|使用:|Text elements (strings) used for the rendering of topicnotfound.htm|
-|**要素**|**[値]**|
-|TopicNotFoundTitle|Cannot find requested topic on your computer.|
-|TopicNotFoundViewOnlineText|\<p>The topic you requested was not found on your computer, but you can \<a href="{0}" {1}>view the topic online\</a>.\</p>|
-|TopicNotFoundDownloadContentText|\<p>See the navigation pane for links to similar topics, or \<a href="{0}" {1}>click the Manage tab\</a> to download content to your computer.\</p>|
-|TopicNotFoundText|\<p>The topic you requested was not found on your computer.\</p>|
-|機能:|**Topic Corrupted Control**|
-|使用:|Text elements (strings) used for the rendering of topiccorrupted.htm|
-|**要素**|**[値]**|
-|TopicCorruptedTitle|Unable to display the requested topic.|
-|TopicCorruptedViewOnlineText|\<p>Help Viewer is unable to display the requested topic. There may be an error in the topic's content or an underlying system dependency.\</p>|
-|機能:|**Home Page control**|
-|使用:|Text supporting the display of the Help Viewer top level node content.|
-|**要素**|**[値]**|
-|HomePageTitle|Help Viewer Home|
-|HomePageIntroduction|\<p>Welcome to the Microsoft Help Viewer, an essential source of information for everyone who uses Microsoft tools, products, technologies, and services. The Help Viewer gives you access to how-to and reference information, sample code, technical articles, and more. To find the content you need, browse the table of contents, use full-text search, or navigate through content using the keyword index.\</p>|
-|HomePageContentInstallText|\<p>\<br />Use the \<a href="{0}" {1}>Manage Content\</a> tab to do the following:\<ul>\<li>Add content to your computer.\</li>\<li>Check for updates to your local content.\</li>\<li>Remove content from your computer.\</li>\</ul>\</p>|
-|HomePageInstalledBooks|Installed Books|
-|HomePageNoBooksInstalled|No content was found on your computer.|
-|HomePageHelpSettings|Help Content Settings|
-|HomePageHelpSettingsText|\<p>Your current setting is local help. The Help Viewer displays content that you have installed on your computer.\<br />To change your source of Help content, on the Visual Studio menu bar, choose \<span style="{0}">Help, Set Help Preference\</span>.\<br />\</p>|
-|MegaByte|MB|
+|LogoFileNameHC|vs_logo_wh .gif|
+|機能:|**免責事項**|
+|使用方法は次のとおりです。|機械翻訳されたコンテンツのケース固有の免責事項のセット。|
+|**要素**|**値**|
+|MT_Editable|この記事は機械翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。|
+|MT_NonEditable|この記事は機械翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。|
+|MT_QualityEditable|この記事は手動で翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。|
+|MT_QualityNonEditable|この記事は手動で翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。|
+|MT_BetaContents|この記事は、予備リリース用に機械翻訳されたものです。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。|
+|MT_BetaRecycledContents|この記事は、暫定版用に手動で翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。|
+|機能:|**実行**|
+|使用方法は次のとおりです。|オンライントピックリンクのサポート|
+|**要素**|**値**|
+|LinkTableTitle|リンクテーブル|
+|トピック Enulinktext|お使いのコンピューターで利用できる、このトピックの英語版\</a > を表示します。|
+|TopicOnlineLinkText|このトピック \<href = "{0}" {1}> オンライン\</a に表示 >|
+|オンラインテキスト|オンライン|
+|機能:|**ビデオオーディオコントロール**|
+|使用方法は次のとおりです。|ビデオコンテンツの要素とテキストを表示する|
+|**要素**|**値**|
+|MultiMediaNotSupported|{0} のコンテンツをサポートするには、Internet Explorer 9 以降がインストールされている必要があります。|
+|VideoText|ビデオの表示|
+|AudioText|オーディオのストリーミング|
+|OnlineVideoLinkText|\<p > このトピックに関連付けられているビデオを表示するには、[{0}\<href = "{1}" >{2}/a\<] をクリックします。\</p >|
+|オンラインの Audiolinktext|このトピックに関連付けられているオーディオをリッスンする \<p > には、\<{0} をクリックしてください。/a{1}には、href = ">"{2}\<ます。\</p >|
+|機能:|**コンテンツがインストールされていないコントロール**|
+|使用方法は次のとおりです。|Contentnotinstalled. .htm のレンダリングに使用されるテキスト要素 (文字列)|
+|**要素**|**値**|
+|Contentnotのタイトル|コンピューターにコンテンツが見つかりませんでした。|
+|Contentnotの Downloadcontenttext|\<p > コンピューターにコンテンツをダウンロードするには、href = "{0}" {1}\<、[管理] タブ >/a\<をクリックします。\</p >|
+|Contentnotのテキスト|\<p > コンピューターにコンテンツがインストールされていません。 ローカルのヘルプコンテンツのインストールについては、管理者にお問い合わせください。\</p >|
+|機能:|**トピックが見つかりませんコントロール**|
+|使用方法は次のとおりです。|Topicnotfound のレンダリングに使用されるテキスト要素 (文字列)|
+|**要素**|**値**|
+|トピック Notfound タイトル|コンピューターに要求されたトピックが見つかりません。|
+|トピック Notfound Viewオンラインテキスト|\<p > 要求されたトピックはコンピューターに見つかりませんでしたが、href = "{0}" {1}を \<ことができます。また、トピック「オンライン >/a\<」も参照してください。\</p >|
+|トピック Notfound Downloadcontenttext|\<p > 同様のトピックへのリンクについては、ナビゲーションウィンドウを参照してください。または、href = "{0}" {1}を \<には、[管理] タブ >/a\<をクリックして、コンテンツをコンピューターにダウンロードします。\</p >|
+|トピック Notfound Text|\<p >、お使いのコンピューターに要求されたトピックが見つかりませんでした。\</p >|
+|機能:|**トピックの破損コントロール**|
+|使用方法は次のとおりです。|トピックの表示に使用されるテキスト要素 (文字列) が破損しています。|
+|**要素**|**値**|
+|TopicCorruptedTitle|要求されたトピックを表示できません。|
+|TopicCorruptedViewOnlineText|\<p > ヘルプビューアーで、要求されたトピックを表示できません。 トピックの内容または基になるシステムの依存関係にエラーがある可能性があります。\</p >|
+|機能:|**ホームページコントロール**|
+|使用方法は次のとおりです。|ヘルプビューアーの最上位レベルのノードコンテンツの表示をサポートするテキストです。|
+|**要素**|**値**|
+|HomePageTitle|ヘルプビューアーホーム|
+|ホームページの概要|\<p >、Microsoft のツール、製品、テクノロジ、サービスを使用するすべてのユーザーにとって重要な情報源である Microsoft ヘルプビューアーへようこそ。 ヘルプビューアーを使用すると、操作方法と参照情報、サンプルコード、技術記事などにアクセスできます。 必要なコンテンツを探すには、目次を参照するか、フルテキスト検索を使用するか、キーワード index を使用してコンテンツ間を移動します。\</p >|
+|HomePageContentInstallText|\<p >\<br/> \<a href = "{0}" {1}を使用して、コンテンツの管理 >/a\<タブで次の操作を行います。 > ul\<> li\<コンピューターにコンテンツを追加します。\</li >\<li > ローカルコンテンツに対する更新プログラムを確認します。\</li >\<li > コンピューターからコンテンツを削除します。\</li >\</ul >\</p >|
+|ホームページの発行書籍|インストールされたブック|
+|ホーム Pagのインストール|コンピューターにコンテンツが見つかりませんでした。|
+|ホームページの Helpsettings|ヘルプコンテンツの設定|
+|HomePageHelpSettingsText|\<p > 現在の設定はローカルヘルプです。 ヘルプビューアーには、コンピューターにインストールされているコンテンツが表示されます。\<br/> ヘルプコンテンツのソースを変更するには、Visual Studio のメニューバーで、\<span style = "{0}" > ヘルプを選択し、[ヘルプの設定]\</span > を設定します。\<br/>\</p >|
+|Mb|MB|
 
- **branding.js**
+ **ブランド化 js**
 
- The branding.js file contains JavaScript used by the Visual Studio Help Viewer branding elements.  Below is a list of the branding elements and the supporting JavaScript function.  All strings to be localized for this file are defined in the “Localizable Strings” section at the top of this file.  ICL file has been created for loc strings within the branding.js file.
+ このブランド .js ファイルには、Visual Studio ヘルプビューアーのブランド要素によって使用される JavaScript が含まれています。  次に、ブランド化要素とサポートする JavaScript 関数の一覧を示します。  このファイルのローカライズ対象となるすべての文字列は、このファイルの先頭にある "ローカライズ可能な文字列" セクションで定義されます。  ICL ファイルは、ブランド .js ファイル内の loc 文字列用に作成されています。
 
 ||||
 |-|-|-|
-|**Branding Feature**|**JavaScript Function**|**説明**|
-|Var …||Define variables|
-|Get the user code language|setUserPreferenceLang|maps an index # to code language|
-|Set and Get cookie values|getCookie, setCookie||
-|Inherited Member|changeMembersLabel|Expand/collapse inherited member|
-|When SelfBranded=False|onLoad|Read the query string to check if it's a print request.  Set all the codesnippets to focus the user preferred tab.  If it's a print request, then set isPrinterFriendly to true. Check for high contrast mode.|
-|Code Snippet|addSpecificTextLanguageTagSet||
+|**ブランド化機能**|**JavaScript 関数**|**説明**|
+|変数...||変数の定義|
+|ユーザーコード言語を取得する|setUserPreferenceLang|インデックス # をコード言語にマップします|
+|Cookie 値の設定と取得|getCookie、setCookie||
+|継承されたメンバー|changeMembersLabel|継承されたメンバーの展開/折りたたみ|
+|SelfBranded = False の場合|onLoad|クエリ文字列を読み取り、それが印刷要求かどうかを確認します。  すべての codesnippets を設定して、ユーザーの優先タブにフォーカスを設定します。 印刷要求の場合は、isPrinterFriendly を true に設定します。 ハイコントラストモードを確認します。|
+|コードスニペット|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
-||ChangeTab||
+||[ChangeTab]||
 ||setCodesnippetLang||
 ||setCurrentLang||
 ||CopyToClipboard||
-|CollapsibleArea|addToCollapsibleControlSet|write all the collapsible control object into list.|
-||CA_Click|based on state of collapsible area, defines which image and text to present|
-|Contrast support for Logo|isBlackBackground()|Called to determine if background is black.  Only accurate when in high contrast mode.|
-||isHighContrast()|use a colored span to detect high contrast mode|
-||onHighContrast(black)|Called when high contrast is detected|
-|LST functionality|||
-||addToLanSpecTextIdSet(id)||
-||updateLST(currentLang)||
-||getDevLangFromCodeSnippet(lang)||
-|MultiMedia functionality|caption(begin, end, text, style)||
-||findAllMediaControls(normalizedId)||
-||getActivePlayer(normalizedId)||
-||captionsOnOff(id)||
-||toSeconds(t)||
-||getAllComments(node)||
-||styleRectify(styleName, styleValue)||
-||showCC(id)||
-||subtitle(id)||
+|CollapsibleArea|addToCollapsibleControlSet|折りたたみ可能なすべてのコントロールオブジェクトを一覧に書き込みます。|
+||CA_Click|折りたたみ可能な領域の状態に基づいて、表示するイメージとテキストを定義します。|
+|ロゴのコントラストサポート|isBlackBackground()|背景が黒かどうかを判断するために呼び出されます。  ハイコントラストモードの場合は正確です。|
+||isHighContrast()|カラースパンを使用してハイコントラストモードを検出する|
+||onHighContrast (黒)|ハイコントラストが検出されると呼び出されます。|
+|LST の機能|||
+||Addtolanspectexdset (id)||
+||updateLST (currentLang)||
+||getDevLangFromCodeSnippet (lang)||
+|マルチメディア機能|キャプション (開始、終了、テキスト、スタイル)||
+||findAllMediaControls (normalizedId)||
+||getActivePlayer (normalizedId)||
+||captionsOnOff (id)||
+||toSeconds (t)||
+||getAllComments (ノード)||
+||styleRectify (styleName, スタイル値)||
+||showCC (id)||
+||サブタイトル (id)||
 
- **HTM FILES**
+ **HTM ファイル**
 
- The branding package contains a set of HTM files that support scenarios for communicating key information to Help content users, for example a homepage that contains a section describing which content sets are installed and pages telling the user when topics cannot be found in the local set of topics. These HTM files can be modified per product.  ISO Shell vendors are able to take the default branding package and change the behavior and content of these pages to suite their need.  These files refer to their respective branding package in order for the branding tags to get the corresponding content from the branding.xml file.
-
-||||
-|-|-|-|
-|**ファイル**|**Use**|**Displayed Content Source**|
-|homepage.htm|This is a page that displays currently installed content, and any other message appropriate to present to the user about their content.  This file has the additional meta data attribute "Microsoft.Help.Id" content="-1"  which places this content at the top of the local content TOC.||
-||<META_HOME_PAGE_TITLE_ADD />|Branding.xml, tag \<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.xml, tag \<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, tag \<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Heading section Branding.xml tag\<HomePageInstalledBooks>, the data generated from application,  \<HomePageNoBooksInstalled> when no books are installed.|
-||<HOME_PAGE_SETTINGS_SECTION_ADD />|Heading section Branding.xml tag \<HomePageHelpSettings>, section text \<HomePageHelpSettingsText>.|
-|topiccorrupted.htm|When a topic exists in the local set, but for some reason cannot be displayed (corrupted content).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml, tag \<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml, tag \<TopicCorruptedViewOnlineText>|
-|topicnotfound.htm|When a topic is not found in the local content set, nor available online||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, tag \<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, tag \<TopicNotFoundText>|
-|contentnotinstalled.htm|When there is no local content installed for the product.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml, tag \<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, tag \<ContentNotInstalledText>|
-
- **CSS Files**
-
- The Visual Studio Help Viewer Branding Package contains two css files to support consistent Visual Studio Help content presentation:
-
-- Branding.css – contains css elements for rendering where SelfBranded=false
-
-- Printer.css – contains css elements for rendering where SelfBranded=false
-
-  Branding.css files includes definitions for Visual Studio topic presentation (caveat is that the branding.css contained in the Branding_\<locale>.mshc from the package service may change).
-
-  **Graphic Files**
-
-  Visual Studio content displays a Visual Studio logo as well as other graphics.  The complete list of graphic files in the Visual Studio Help Viewer branding package is shown below.
+ ブランド化パッケージには、ユーザーに役立つ情報を提供するための一連の HTM ファイルが含まれています。たとえば、インストールされているコンテンツセットを説明するセクションが含まれているホームページや、トピックがない場合にユーザーに通知するページなどです。ローカルの一連のトピックを参照してください。 これらの HTM ファイルは製品ごとに変更できます。  ISO シェルベンダーは、既定のブランドパッケージを取得し、これらのページの動作とコンテンツを必要に応じて変更できます。  これらのファイルは、ブランド化タグがブランド .xml ファイルから対応するコンテンツを取得するために、それぞれのブランドパッケージを参照します。
 
 ||||
 |-|-|-|
-|**ファイル**|**Use**|**例**|
-|clear.gif|Used to render Collapsible Area||
-|footer_slice.gif|Footer presentation||
-|info_icon.gif|Used when displaying information|免責情報|
-|online_icon.gif|This icon is to be associated with online links||
-|tabLeftBD.gif|Used to render the code snippet container||
-|tabRightBD.gif|Used to render the code snippet container||
-|vs_logo_bk.gif|Used for normal contrast logo references as defined in Branding.xml tag \<LogoFileName>.  For Visual Studio products, logo name is vs_logo_bk.gif.||
-|vs_logo_wh.gif|Used for normal high logo references as defined in Branding.xml tag \<LogoFileNameHC>.  For Visual Studio products, logo name is vs_logo_wh.gif.||
-|ccOff.png|Captioning graphic||
-|ccOn.png|Captioning graphic||
-|ImageSprite.png|Used to render Collapsible Area|expanded or collapse graphic|
+|**ファイル**|**使用**|**表示されるコンテンツソース**|
+|ホームページ .htm|これは、現在インストールされているコンテンツと、そのコンテンツについてユーザーに提示するのに適したその他のメッセージを表示するページです。  このファイルには、追加のメタデータ属性 "Microsoft.Help.Id" content = "-1" があります。これにより、このコンテンツはローカルコンテンツ TOC の先頭に配置されます。||
+||<META_HOME_PAGE_TITLE_ADD />|ブランド .xml、タグ \<ホームページタイトル >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|ブランディング .xml、タグ \<ホームページの概要 >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|HomePageContentInstallText > の .xml、タグ \<の|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|見出しセクションのブランド .xml タグ\<、アプリケーションから生成されたデータ >、書籍がインストールされていない場合は \<ホームページを > インストールします。|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Heading Pagehelpsettings >、section text \<HomePageHelpSettingsText > の見出しセクションのブランド .xml タグ \<ます。|
+|トピックの破損 .htm|トピックがローカルセット内に存在するが、何らかの理由で表示できない場合 (破損したコンテンツ)。||
+||< META_TOPIC_CORRUPTED_TITLE_ADD/>|TopicCorruptedTitle > の .xml、タグ \<の|
+||<TOPIC_CORRUPTED_SECTION_ADD />|TopicCorruptedViewOnlineText > の .xml、タグ \<の|
+|topicnotfound|トピックがローカルコンテンツセットに見つからない場合、またはオンラインで利用できない場合||
+||< META_TOPIC_NOT_FOUND_TITLE_ADD/>|商標、タグ \<トピック Notfound Title >|
+||< META_TOPIC_NOT_FOUND_ID_ADD/>|ブランド .xml、タグ \<トピック Notfound Viewdownloadtext > + \<トピック Notfound Downloadcontenttext >|
+||< TOPIC_NOT_FOUND_SECTION_ADD/>|ブランディング .xml、タグ \<トピック Notfound Text >|
+|contentnotinstalled .htm|製品用にローカルコンテンツがインストールされていない場合。||
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|ブランディング .xml、タグ \<Contentnotて Title >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Config.xml、tag \<Contentnotの Downloadcontenttext >|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|ブランディング .xml、タグ \<Contentnotて Text >|
 
-### <a name="deploying-a-set-of-topics"></a>Deploying a set of topics
- This is a simple and quick tutorial for creating a Help Viewer content deployment set comprised of an MSHA file and the set of cabs or MSHCs containing the topics. The MSHA is an XML file that describes a set of cabs or MSHC files. The Help Viewer can read the MSHA to obtain a list of content (the .CAB or .MSHC files) available for local installation.
+ **CSS ファイル**
 
- This is only a primer describing the very basic XML schema for the Help Viewer MSHA.  There is an example implementation below this brief overview and sample HelpContentSetup.msha.
+ Visual Studio ヘルプビューアーのブランド化パッケージには、一貫した Visual Studio ヘルプコンテンツプレゼンテーションをサポートする2つの css ファイルが含まれています。
 
- The name of the MSHA, for the purposes of this primer, is HelpContentSetup.msha (the name of the file can be anything, with the extension .MSHA). HelpContentSetup.msha (example below) should contain a list of the cabs or MSHCs available.  The file type must be consistent within the MSHA (does not support a combination of MSHA and CAB file types). For each CAB or MSHC, there should be a \<div class="package">…\</div> (see example below).
+- .Css: 自己ブランド化 = false のレンダリング用の css 要素が含まれています
 
- Note: in the implementation example below, we have included the branding package. This is critical to include in order to get the needed Visual Studio content rendering elements and content behaviors.
+- .Css –自己ブランド化が false の場合に表示する css 要素が含まれます。
 
- Sample HelpContentSetup.msha file: (Replace “content set name 1” and “content set name 2” etc. with your file names.)
+  ブランド化の .css ファイルには、Visual Studio トピックプレゼンテーションの定義が含まれています (注意点として、パッケージサービスからの Branding_\<ロケール > .mshc に含まれている .css が変更される可能性があります)。
+
+  **グラフィックファイル**
+
+  Visual Studio のコンテンツには、Visual Studio のロゴとその他のグラフィックスが表示されます。  Visual Studio ヘルプビューアーのブランド化パッケージに含まれるグラフィックファイルの完全な一覧を次に示します。
+
+||||
+|-|-|-|
+|**ファイル**|**使用**|**例**|
+|.gif|折りたたみ可能な領域を表示するために使用されます||
+|footer_slice .gif|フッタープレゼンテーション||
+|info_icon .gif|情報を表示するときに使用されます|免責事項|
+|online_icon .gif|このアイコンはオンラインリンクに関連付けられています||
+|tabLeftBD .gif|コードスニペットコンテナーをレンダリングするために使用されます||
+|タブの右の .gif|コードスニペットコンテナーをレンダリングするために使用されます||
+|vs_logo_bk.gif|LogoFileName > の \<タグで定義されているように、通常のコントラストのロゴ参照に使用されます。  Visual Studio 製品の場合、ロゴ名は vs_logo_bk .gif です。||
+|vs_logo_wh .gif|LogoFileNameHC > の \<タグで定義されているように、通常の高ロゴ参照に使用されます。  Visual Studio 製品の場合、ロゴ名は vs_logo_wh .gif です。||
+|ccOff .png|キャプショングラフィック||
+|ccOn .png|キャプショングラフィック||
+|ImageSprite.png|折りたたみ可能な領域を表示するために使用されます|グラフィックの展開または折りたたみ|
+
+### <a name="deploying-a-set-of-topics"></a>一連のトピックを展開する
+ このチュートリアルでは、MSHA ファイルと、トピックを含む cab または MSHCs のセットで構成されるヘルプビューアーコンテンツ展開セットを作成するための簡単なチュートリアルを紹介します。 MSHA は、一連の cab ファイルまたは .MSHC ファイルを記述する XML ファイルです。 ヘルプビューアーは、MSHA を読み取ってコンテンツの一覧を取得できます (「」を参照してください。CAB または.MSHC ファイル) をローカルインストールで使用できます。
+
+ これは、ヘルプビューアー MSHA の非常に基本的な XML スキーマについて説明したものです。  この brief の概要とサンプルの HelpContentSetup. msha の下に実装例があります。
+
+ この入門の目的では、MSHA の名前は HelpContentSetup です。 msha (ファイル名は任意で、拡張子は) です。MSHA)。 HelpContentSetup. msha (次の例を参照) には、使用可能な cab または MSHCs の一覧が含まれている必要があります。  ファイルの種類は、MSHA 内で一貫している必要があります (では、MSHA と CAB ファイルの種類の組み合わせはサポートされません)。 CAB または .MSHC ごとに、\<div class = "package" >...\</div > (下の例を参照) が存在する必要があります。
+
+ 注: 次の実装例では、ブランド化パッケージが含まれています。 これは、必要な Visual Studio コンテンツのレンダリング要素とコンテンツ動作を取得するために、を含めることが重要です。
+
+ サンプル HelpContentSetup. msha ファイル: ("content set name 1" と "content set name 2" などを実際のファイル名に置き換えます)。
 
 ```
 <html>
@@ -638,15 +638,15 @@ some F# code
 
 ```
 
-1. Create local folder, something like “C:\SampleContent”
+1. ローカルフォルダーを作成します ("C:\SampleContent" など)。
 
-2. For this example, we will use MSHC files to contain the topics.  An MSHC is a zip with the file extension changed from .zip to .MSHC.
+2. この例では、.MSHC ファイルを使用してトピックを格納します。  .MSHC は zip で、ファイルの拡張子が .zip からに変更されています.MSHC.
 
-3. Create the below HelpContentSetup.msha as a text file (notepad was used to create the file) and save it to the above noted folder (see step 1).
+3. 次の HelpContentSetup. msha をテキストファイルとして作成し (メモ帳を使用してファイルを作成しました)、前述のフォルダーに保存します (手順1を参照)。
 
-   The class “Branding” exists and is unique. The Branding mshc is included in this primer so that the installed content will have branding, and the content behaviors that are contained in the MSHCs will have the appropriate support elements contained in the branding package. Without this, errors will result when the system looks for support items that are not part of the ripped (installed) content.
+   クラス "ブランディング" は存在し、一意です。 ブランド化の .mshc がこの入門に含まれており、インストールされているコンテンツにブランドを持たせることができます。また、MSHCs に含まれるコンテンツの動作には、ブランドパッケージに含まれる適切なサポート要素が含まれます。 これを行わないと、取り込んだ (インストールされている) コンテンツの一部ではないサポート項目がシステムによって検索されたときに、エラーが発生します。
 
-   To obtain the Visual Studio branding package, copy Branding_en-US.mshc file at C:\Program Files (x86)\Microsoft Help Viewer\v2.1\ to your working folder.
+   Visual Studio ブランド化パッケージを入手するには、.mshc ファイルを C:\Program Files (x86) \Microsoft Help Viewer\v2.1\ にコピーして、作業フォルダーに Branding_en コピーします。
 
 ```html
 <html>
@@ -683,63 +683,63 @@ some F# code
 
  **まとめ**
 
- Using and extending the above steps will enable VSPs to deploy their content sets for the Visual Studio Help Viewer.
+ 上記の手順を使用および拡張すると、Vsp は Visual Studio ヘルプビューアー用のコンテンツセットを配置できるようになります。
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Adding help to the Visual Studio Shell (Integrated and Isolated)
+### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio シェルへのヘルプの追加 (統合および分離)
  **はじめに**
 
- This walkthrough demonstrates how to incorporate Help content into a Visual Studio Shell application and then deploy it.
+ このチュートリアルでは、Visual Studio シェルアプリケーションにヘルプコンテンツを組み込み、それを展開する方法について説明します。
 
  **Requirements**
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Visual Studio 2013 Isolated Shell Redist](https://aka.ms/VS2013/IsoShell-LP/all)
+2. [Visual Studio 2013 分離シェル再頒布可能パッケージ](https://aka.ms/VS2013/IsoShell-LP/all)
 
    **概要**
 
-   The [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell is a version of the [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] IDE on which you can base an application. Such applications contain the Isolated Shell together with extensions that you create. Use Isolated Shell project templates, which are included in the [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] SDK, to build extensions.
+   [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] シェルは、アプリケーションのベースとして使用できる [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] IDE のバージョンです。 このようなアプリケーションには、作成した拡張機能と共に分離シェルが含まれています。 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] SDK に含まれている分離シェルプロジェクトテンプレートを使用して、拡張機能をビルドします。
 
-   The basic steps for creating an Isolated Shell-based application and its Help:
+   分離シェルベースのアプリケーションとそのヘルプを作成するための基本的な手順は次のとおりです。
 
-3. Obtain the [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ISO Shell redistributable (a Microsoft download).
+3. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ISO Shell 再頒布可能パッケージ (Microsoft ダウンロード) を入手します。
 
-4. In Visual Studio, create a Help extension that is based on the Isolated Shell, for example, the Contoso Help extension that is described later in this walkthrough.
+4. Visual Studio で、分離シェルに基づくヘルプ拡張機能を作成します。たとえば、このチュートリアルで後ほど説明する Contoso Help 拡張機能を作成します。
 
-5. Wrap the extension and the ISO Shell redistributable into a deployment MSI (an application setup). This Walkthrough does not include a setup step.
+5. 拡張機能と ISO シェル再頒布可能パッケージを展開 MSI (アプリケーションセットアップ) にラップします。 このチュートリアルには、セットアップ手順は含まれていません。
 
-   Create a Visual Studio content store. For the Integrated Shell scenario, change Visual Studio12 to the product catalog name as follows:
+   Visual Studio コンテンツストアを作成します。 統合シェルシナリオでは、次のように Visual Studio12 を製品カタログ名に変更します。
 
-- Create folder C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12.
+- フォルダー C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12. の作成
 
-- Create a file named CatalogType.xml and add it to the folder. The file should contain the following lines of code:
+- CatalogType .xml という名前のファイルを作成し、フォルダーに追加します。 ファイルには、次のコード行が含まれている必要があります。
 
   ```
   <?xml version="1.0" encoding="UTF-8"?>
   <catalogType>UserManaged</catalogType>
   ```
 
-  Define the content store in the registry. For the Integrated Shell, change VisualStudio12 to the product catalog name:
+  レジストリでコンテンツストアを定義します。 統合シェルの場合は、VisualStudio12 を製品カタログ名に変更します。
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-   Key: LocationPath  String value: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
+   キー: LocationPath 文字列値: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US
 
-   Key: CatalogName String value: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Documentation
+   キー: CatalogName String 値: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ドキュメント
 
   **プロジェクトの作成**
 
-  To create an Isolated Shell extension:
+  分離シェル拡張機能を作成するには、次のようにします。
 
-1. In Visual Studio, under **File**, choose **New Project**, under **Other Project Types** choose **Extensibility**, and then choose  **Visual Studio Shell Isolated**. Name the project `ContosoHelpShell`) to create an extensibility project based on the Visual Studio Isolated Shell template.
+1. Visual Studio の **[ファイル]** で、 **[新しいプロジェクト]** を選択し、[**その他のプロジェクトの種類] の** **[拡張機能]** を選択し、 **[visual studio Shell 分離]** を選択します。 プロジェクトに `ContosoHelpShell`) という名前を指定して、Visual Studio の分離シェルテンプレートに基づく機能拡張プロジェクトを作成します。
 
-2. In Solution Explorer, in the ContosoHelpShellUI project, in the Resource Files folder, open ApplicationCommands.vsct. Make sure this line is commented out (search for "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. ソリューションエクスプローラーの ContosoHelpShellUI プロジェクトで、[リソースファイル] フォルダーの [ApplicationCommands] を開きます。 次の行がコメントアウトされていることを確認します ("No_Help" を検索します): `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
-3. Choose the F5 key to compile and run **Debug**. In the experimental instance of the Isolated Shell IDE, choose the **Help** menu. Make sure that the **View Help**, **Add and Remove Help Content**, and **Set Help Preference** commands appear.
+3. F5 キーを押してコンパイルし、**デバッグ**を実行します。 分離シェル IDE の実験用インスタンスで、 **[ヘルプ]** メニューを選択します。 [ヘルプの**表示**]、[ヘルプ**コンテンツの追加と削除**]、および [ヘルプ設定の**設定**] の各コマンドが表示されていることを確認します。
 
-4. In Solution Explorer, in the ContosHelpShell project, in the Shell Customization folder, open ContosoHelpShell.pkgdef. To define the Contoso Help catalog, add the following lines:
+4. ソリューションエクスプローラーの ContosHelpShell プロジェクトで、[シェルのカスタマイズ] フォルダーの ContosoHelpShell を開きます。 Contoso ヘルプカタログを定義するには、次の行を追加します。
 
    ```
     [$RootKey$\Help]
@@ -749,7 +749,7 @@ some F# code
    "BrandingPackage"="ContosoBrandingPackage.mshc"
    ```
 
-5. In Solution Explorer, in the ContosHelpShell project, in the Shell Customization folder, open ContosoHelpShell.Application.pkgdef. To enable F1 Help, add the following lines:
+5. ソリューションエクスプローラーの ContosHelpShell プロジェクトで、[シェルのカスタマイズ] フォルダーの ContosoHelpShell を開きます。 F1 ヘルプを有効にするには、次の行を追加します。
 
    ```
    // F1 Help Provider
@@ -765,63 +765,63 @@ some F# code
    @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
    ```
 
-6. In Solution Explorer, on the context menu of the ContosoHelpShell solution, choose the **Properties** menu item. Under **Configuration Properties**, select **Configuration Manager**. In the **Configuration** column, change every "Debug" value to "Release".
+6. ソリューションエクスプローラーの ContosoHelpShell ソリューションのコンテキストメニューで、 **[プロパティ]** メニュー項目を選択します。 **[構成プロパティ]** で **[Configuration Manager]** を選択します。 **構成** 列で、デバッグ の値を リリース に変更します。
 
-7. ソリューションをビルドします。 This creates a set of files in a release folder, which will be used in the next section.
+7. ソリューションをビルドします。 これにより、リリースフォルダーに一連のファイルが作成されます。これは次のセクションで使用します。
 
-   To test this as if deployed:
+   デプロイされているかのようにこれをテストするには:
 
-8. On the machine you are deploying Contoso to, install the downloaded (from above) ISO Shell.
+8. Contoso を展開するコンピューターで、ダウンロードした (上記の) ISO シェルをインストールします。
 
-9. Create a folder in \\\Program Files (x86)\\, and name it `Contoso`.
+9. \\のファイル (x86)\\にフォルダーを作成し、`Contoso`という名前を指定します。
 
-10. Copy the contents from the ContosoHelpShell release folder to \\\Program Files (x86)\Contoso\ folder.
+10. ContosoHelpShell release フォルダーの内容を \\の \Contoso\ フォルダーにコピーします。
 
-11. Start Registry Editor by choosing  **Run** in the **Start** menu and entering `Regedit`. In the registry editor, choose **File**, and then **Import**. Browse to the ContosoHelpShell project folder. In the ContosoHelpShell subfolder, choose ContosoHelpShell.reg.
+11. **[スタート]** メニューの **[実行]** をクリックし、`Regedit`を入力して、レジストリエディターを起動します。 レジストリエディターで、 **[ファイル]** 、 **[インポート]** の順に選択します。 ContosoHelpShell プロジェクトフォルダーを参照します。 ContosoHelpShell サブフォルダーで、ContosoHelpShell を選択します。
 
-12. Create a content store:
+12. コンテンツストアを作成します。
 
-     For ISO Shell - create a Contoso content store C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\ContosoDev12
+     ISO シェルの場合-Contoso コンテンツストア C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\ContosoDev12 を作成する
 
-     For [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Integrated Shell, create folder C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 統合シェルの場合は、フォルダー C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 を作成します。
 
-13. Create CatalogType.xml and add to the content store (previous step) containing:
+13. CatalogType .xml を作成し、次の内容を含むコンテンツストア (前の手順) にを追加します。
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
     <catalogType>UserManaged</catalogType>
     ```
 
-14. Add the following registry keys:
+14. 次のレジストリキーを追加します。
 
-     HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12Key: LocationPath  String value:
+     HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12Key: LocationPath 文字列値:
 
-     For ISO Shell:
+     ISO シェルの場合:
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Integrated Shell:
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 統合シェル:
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 
-     Key: CatalogName String value: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Documentation. For ISO Shell, this is the name of your catalog.
+     キー: CatalogName String value: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ドキュメント。 ISO シェルの場合、これはカタログの名前です。
 
-15. Copy your content (cabs or MSHC and MSHA) to a local folder.
+15. コンテンツ (cab または .MSHC と MSHA) をローカルフォルダーにコピーします。
 
-16. Example Integrated Shell command line for testing content store. For ISO Shell, change the catalog and launchingApp values as appropriate to match the product.
+16. コンテンツストアをテストするための統合シェルコマンドラインの例。 ISO シェルの場合は、製品に一致するように、カタログと launchingApp の値を適宜変更します。
 
-      "C:\Program Files (x86)\Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery method=”page&id=ContosoTopic0” /launchingApp Microsoft,VisualStudio,12.0
+      "C:\Program Files (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe"/catalogName VisualStudio12/helpquery method = "page & id = ContosoTopic0"/launchingapp Microsoft, VisualStudio, 12.0
 
-17. Launch the Contoso application (from the Contoso app root). Within ISO Shell, choose the **Help** menu item, and change the **Set Help Preference** to **Use Local Help**.
+17. (Contoso アプリのルートから) Contoso アプリケーションを起動します。 ISO シェル内で **[ヘルプ]** メニュー項目を選択し、 **[ヘルプ]** 設定の設定 を **[ローカルヘルプを使用]** する に変更します。
 
-18. Within the shell, choose the **Help** menu item, then **View Help**. The local Help viewer should launch. Choose the **Manage Content** tab. Under **Installation Source**, choose the **Disk** option button. Choose the **...** button and browse to the local folder containing Contoso content (copied to the local folder in the above step). Choose the HelpContentSetup.msha. Contoso should now show up as a book in the book selections. Choose **Add**, and then choose the **Update** button (bottom right corner).
+18. シェル内で **[ヘルプ]** メニュー項目を選択し、 **[ヘルプの表示]** をクリックします。 ローカルヘルプビューアーが起動します。 **[コンテンツの管理]** タブを選択します。 **[インストールソース]** で、 **[ディスク]** オプションボタンをクリックします。 **[...]** ボタンをクリックして、(前の手順でローカルフォルダーにコピーした) Contoso コンテンツを含むローカルフォルダーを参照します。 [HelpContentSetup. msha] を選択します。 Contoso は、選択した書籍に書籍として表示されます。 **[追加]** を選択し、 **[更新]** ボタン (右下隅) を選択します。
 
-19. Within the Contoso IDE, choose the F1 key to test F1 functionality.
+19. Contoso IDE 内で f1 キーを押して、F1 機能をテストします。
 
-### <a name="additional-resources"></a>その他の資料
+### <a name="additional-resources"></a>その他のリソース
 
-For the Runtime API, see [Windows Help API](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
+ランタイム API については、「 [Windows ヘルプ API](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)」を参照してください。
 
-For more information on how to leverage the Help API, see [Help Viewer Code Examples](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
+ヘルプ API を活用する方法の詳細については、「[ヘルプビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)」を参照してください。
 
-For updates on breaking issues, see the [Help Viewer Readme](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409).
+互換性に関する問題の更新については、[ヘルプビューアーの Readme](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)を参照してください。

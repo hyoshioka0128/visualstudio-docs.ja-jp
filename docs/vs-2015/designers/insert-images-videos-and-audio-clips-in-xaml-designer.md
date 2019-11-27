@@ -21,7 +21,7 @@ ms.locfileid: "74300841"
 
 イメージ、ビデオ、オーディオ クリップは、アプリに視覚的な効果を加えます。
 
- ![Images sized to fit](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
+ ![画像のサイズを調整する](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
 
  イメージ、ビデオ、またはオーディオ クリップを使用するには、それをプロジェクトに追加し、その後 **[アセット]** パネルから **アートボード**にドラッグ アンド ドロップします。
 
@@ -34,5 +34,5 @@ ms.locfileid: "74300841"
 |Adobe Photoshop ファイルのインポート|![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Photoshop ファイルを Blend にインポートする](https://www.youtube.com/watch?v=ekYyhirFKs0)|
 |オーディオ クリップを挿入する|![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [オーディオ クリップを追加する](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

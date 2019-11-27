@@ -1,5 +1,5 @@
 ---
-title: 'Error: Debugging Failed Because Integrated Windows Authentication Is Not Enabled | Microsoft Docs'
+title: 'エラー: 統合 Windows 認証が有効になっていないため、デバッグに失敗しました |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -117,7 +117,7 @@ ms.locfileid: "74299791"
   
 10. **[インターネット インフォメーション サービス (IIS) マネージャー]** ウィンドウを閉じます。  
   
-## <a name="see-also"></a>参照  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>関連項目  
+ [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft ダイジェスト認証](https://go.microsoft.com/fwlink/?LinkId=77938)   
- [Running Web Applications on Windows Vista with IIS 7.0 and Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [IIS 7.0 および Visual Studio を使用した Windows Vista での Web アプリケーションの実行](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

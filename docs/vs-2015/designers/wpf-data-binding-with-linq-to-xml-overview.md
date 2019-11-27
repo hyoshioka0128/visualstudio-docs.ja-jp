@@ -33,7 +33,7 @@ ms.locfileid: "74299530"
   このドキュメントでは、2 番目のシナリオについて説明します。
 
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation のデータ バインド
- WPF のデータ バインドでは、UI 要素のプロパティをデータ ソースに関連付けることができます。 たとえば、ユーザー定義オブジェクトのパブリック プロパティの値をテキストとして表示する <xref:System.Windows.Controls.Label> はその簡単な例です。 WPF のデータ バインドは次のコンポーネントに依存しています。
+ WPF のデータ バインディングでは、UI 要素のプロパティをデータ ソースに関連付けることができます。 たとえば、ユーザー定義オブジェクトのパブリック プロパティの値をテキストとして表示する <xref:System.Windows.Controls.Label> はその簡単な例です。 WPF のデータ バインディングは次のコンポーネントに依存しています。
 
 |コンポーネント|説明|
 |---------------|-----------------|
@@ -88,5 +88,5 @@ ms.locfileid: "74299530"
 
  WPF の動的バインドを実装するには、動的プロパティを <xref:System.Windows.Data> 名前空間 (特に <xref:System.Windows.Data.Binding> クラス) の機能と共に使用します。
 
-## <a name="see-also"></a>参照
- [WPF Data Binding with LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML Dynamic Properties](../designers/linq-to-xml-dynamic-properties.md) [XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [Data Binding (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [Using Workflow Markup](https://go.microsoft.com/fwlink/?LinkId=98685)
+## <a name="see-also"></a>関連項目
+ [LINQ to XML を使用した wpf のデータバインディング](../designers/wpf-data-binding-with-linq-to-xml.md)[ワークフローマークアップを使用し](https://go.microsoft.com/fwlink/?LinkId=98685)た[wpf](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [データバインディング (wpf)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)の[動的プロパティ XAML LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)

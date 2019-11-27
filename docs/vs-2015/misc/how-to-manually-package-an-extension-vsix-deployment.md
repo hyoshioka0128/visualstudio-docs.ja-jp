@@ -1,5 +1,5 @@
 ---
-title: 'How to: Manually Package an Extension (VSIX Deployment) | Microsoft Docs'
+title: '方法: 拡張機能を手動でパッケージ化する (VSIX 配置) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -29,7 +29,7 @@ VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes
  拡張機能を手動でパッケージ化するには、extension.manifest ファイルと [Content_Types].xml ファイルを拡張機能プロジェクトに追加し、ビルド出力と一緒に圧縮ファイルに含め、.vsix ファイル名拡張子を持つように圧縮ファイルの名前を変更します。 パッケージ化する拡張機能は、 [VSIX スキーマ](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)でサポートされている種類のものである必要があります。  
   
 > [!NOTE]
-> The names of files in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> VSIX パッケージ内のファイルの名前には、 [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339)で定義されているように、スペースや、Uniform resource IDENTIFIER (URI) で予約されている文字を含めることはできません。  
   
 #### <a name="to-manually-create-a-vsix-package"></a>VSIX パッケージを手動で作成するには  
   
@@ -41,7 +41,7 @@ VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes
   
 4. 2 つ目の XML ファイルを作成し、 `[Content_Types].xml`という名前を付けます。  
   
-5. Fill in the [Content_Types].xml file as specified in [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. [Content_types\].Xml ファイルの構造](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)に指定されているように、[Content_Types] .xml ファイルに入力します。  
   
 6. ディレクトリ内に、配置する拡張機能と共に、両方の XML ファイルを配置します。  
   
@@ -53,7 +53,7 @@ VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes
   
 8. 結果として得られる .zip ファイルの名前を *Filename*.vsix に変更します。ここで *Filename* には、パッケージをインストールする再頒布可能なファイルの名前を指定します。  
   
-## <a name="see-also"></a>参照  
- [Shipping Visual Studio Extensions](../extensibility/shipping-visual-studio-extensions.md)   
- [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+## <a name="see-also"></a>関連項目  
+ [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)   
+ [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)   
+ [PackageManifest 要素 (Root 要素、VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

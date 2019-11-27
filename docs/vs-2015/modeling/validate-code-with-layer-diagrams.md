@@ -1,5 +1,5 @@
 ---
-title: Validate code with layer diagrams | Microsoft Docs
+title: レイヤー図を使用したコードの検証 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -49,59 +49,59 @@ ms.locfileid: "74301351"
 
 - Team Foundation ビルド サーバーにインストールされた Visual Studio (Team Foundation ビルドを使用してコードを自動的に検証するために必要)
 
-- レイヤー図を使用するモデリング プロジェクトが含まれたソリューション。 このレイヤー図は、検証する対象の Visual C# プロジェクトまたは Visual Basic .NET プロジェクトの成果物にリンクしている必要があります。 See [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md).
+- レイヤー図を使用するモデリング プロジェクトが含まれたソリューション。 このレイヤー図は、検証する対象の Visual C# プロジェクトまたは Visual Basic .NET プロジェクトの成果物にリンクしている必要があります。 「[コードからレイヤー図を作成する」を](../modeling/create-layer-diagrams-from-your-code.md)参照してください。
 
   この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 See [Channel 9 Video: Design and validate your architecture using layer diagrams](https://go.microsoft.com/fwlink/?LinkID=252073).
+  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](https://go.microsoft.com/fwlink/?LinkID=252073)参照してください。
 
 > [!IMPORTANT]
 > Team Foundation ビルドを使用してレイヤー検証を実行する場合は、ビルド サーバーに同じバージョンの Visual Studio をインストールすることも必要です。
 
-- [See if an item supports validation](#SupportsValidation)
+- [項目が検証をサポートしているかどうかを確認する](#SupportsValidation)
 
-- [Include other .NET assemblies and projects for validation](#IncludeReferences)
+- [検証用の他の .NET アセンブリおよびプロジェクトを含める](#IncludeReferences)
 
-- [Validate code manually](#ValidateManually)
+- [手動によるコードの検証](#ValidateManually)
 
-- [Validate code automatically](#ValidateAuto)
+- [コードを自動的に検証する](#ValidateAuto)
 
-- [Troubleshoot layer validation issues](#TroubleshootingValidation)
+- [レイヤー検証に関する問題のトラブルシューティング](#TroubleshootingValidation)
 
-- [Understand and resolve layer validation errors](#UnderstandingValidationErrors)
+- [レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)
 
-## <a name="SupportsValidation"></a> See if an item supports validation
+## <a name="SupportsValidation"></a>項目が検証をサポートしているかどうかを確認する
  複数のアプリ間で共有される Web サイト、Office ドキュメント、プレーン テキスト ファイル、プロジェクトのファイルにレイヤーをリンクできますが、そのレイヤーは検証プロセスは含まれません。 個々のレイヤー間に依存関係が表示されない場合、これらのレイヤーにリンクされているプロジェクトやアセンブリへの参照については、検証エラーは表示されません。 このような参照は、コードがこれらの参照を使用している場合を除き、依存関係と見なされません。
 
-1. On the layer diagram, select one or more layers, right-click your selection, and then click **View Links**.
+1. レイヤー図で1つまたは複数のレイヤーを選択し、選択した内容を右クリックして、 **[リンクの表示]** をクリックします。
 
-2. In **Layer Explorer**, look at the **Supports Validation** column. 値が false の場合、この項目では検証がサポートされません。
+2. **レイヤーエクスプローラー**で、[検証の**サポート**] 列を確認します。 値が false の場合、この項目では検証がサポートされません。
 
-## <a name="IncludeReferences"></a> Include other .NET assemblies and projects for validation
- When you drag items to the layer diagram, references to the corresponding .NET assemblies or projects are added automatically to the **Layer References** folder in the modeling project. このフォルダーには、検証時に分析されたアセンブリおよびプロジェクトへの参照が格納されます。 また、その他の検証対象の .NET アセンブリおよびプロジェクトを、手動でレイヤー図にドラッグせずに含めることもできます。
+## <a name="IncludeReferences"></a>検証用の他の .NET アセンブリおよびプロジェクトを含める
+ レイヤー図に項目をドラッグすると、対応する .NET アセンブリまたはプロジェクトへの参照が、モデリングプロジェクトの **[レイヤー参照]** フォルダーに自動的に追加されます。 このフォルダーには、検証時に分析されたアセンブリおよびプロジェクトへの参照が格納されます。 また、その他の検証対象の .NET アセンブリおよびプロジェクトを、手動でレイヤー図にドラッグせずに含めることもできます。
 
-1. In **Solution Explorer**, right-click the modeling project or the **Layer References** folder, and then click **Add Reference**.
+1. **ソリューションエクスプローラー**で、モデリングプロジェクトまたは **[レイヤー参照]** フォルダーを右クリックし、 **[参照の追加]** をクリックします。
 
-2. In the **Add Reference** dialog box, select the assemblies or projects, and then click **OK**.
+2. **[参照の追加]** ダイアログボックスで、アセンブリまたはプロジェクトを選択し、 **[OK]** をクリックします。
 
-## <a name="ValidateManually"></a> Validate code manually
- If you have an open layer diagram that is linked to solution items, you can run the **Validate** shortcut command from the diagram. You can also use the command prompt to run the **msbuild** command with the **/p:ValidateArchitecture** custom property set to **True**. たとえば、コードの変更を行う場合、依存関係の競合を早期にキャッチできるようにレイヤー検証を定期的に実行します。
+## <a name="ValidateManually"></a>手動によるコードの検証
+ ソリューション項目にリンクされているレイヤー図が開いている場合は、ダイアグラムから [ショートカットの**検証**] コマンドを実行できます。 コマンドプロンプトを使用して、 **/p: ValidateArchitecture**カスタムプロパティを**True**に設定して**msbuild**コマンドを実行することもできます。 たとえば、コードの変更を行う場合、依存関係の競合を早期にキャッチできるようにレイヤー検証を定期的に実行します。
 
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>開かれているレイヤー図からコードを検証するには
 
-1. Right-click the diagram surface, and then click **Validate Architecture**.
+1. ダイアグラム画面を右クリックし、[アーキテクチャの**検証**] をクリックします。
 
     > [!NOTE]
-    > By default, the **Build Action** property on the layer diagram (.layerdiagram) file is set to **Validate** so that the diagram is included in the validation process.
+    > 既定では、図が検証プロセスに含まれるように、レイヤー図 (レイヤ図) ファイルの "**ビルドアクション**" プロパティが **[検証]** に設定されています。
 
-     The **Error List** window reports any errors that occur. For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
+     **エラー一覧**ウィンドウには、発生したすべてのエラーが報告されます。 検証エラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。
 
-2. To view the source of each error, double-click the error in the **Error List** window.
+2. 各エラーのソースを表示するには、 **[エラー一覧]** ウィンドウでエラーをダブルクリックします。
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 For more information about code maps, see [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] には、エラーの原因ではなくコードマップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コードマップの詳細については、「[ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。
 
-3. To manage errors, see [Manage validation errors](#ManageErrors).
+3. エラーを管理するには、「[検証エラーの管理](#ManageErrors)」を参照してください。
 
 #### <a name="to-validate-code-at-the-command-prompt"></a>コマンド プロンプトでコードを検証するには
 
@@ -137,11 +137,11 @@ ms.locfileid: "74301351"
      msbuild /p:ValidateArchitecture=true
      ```
 
-     発生したすべてのエラーが表示されます。 For more information about [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], see [MSBuild](../msbuild/msbuild.md) and [MSBuild Task](../msbuild/msbuild-task.md).
+     発生したすべてのエラーが表示されます。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]の詳細については、「 [msbuild](../msbuild/msbuild.md)と[msbuild タスク](../msbuild/msbuild-task.md)」を参照してください。
 
-   For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
+   検証エラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。
 
-### <a name="ManageErrors"></a> Manage validation errors
+### <a name="ManageErrors"></a>検証エラーの管理
  開発プロセスの実行中は、検証時に報告される一部の競合を抑制できます。 たとえば、既に解決したエラーや特定のシナリオに関連しないエラーを抑制できます。 エラーを抑制した場合は、[!INCLUDE[esprfound](../includes/esprfound-md.md)] で作業項目をログに記録することをお勧めします。
 
 > [!WARNING]
@@ -149,19 +149,19 @@ ms.locfileid: "74301351"
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>検証エラーの作業項目を作成するには
 
-- In the **Error List** window, right-click the error, point to **Create Work Item**, and then click the type of work item that you want to create.
+- **[エラー一覧]** ウィンドウで、エラーを右クリックし、 **[作業項目の作成]** をポイントして、作成する作業項目の種類をクリックします。
 
-  Use these tasks to manage validation errors in the **Error List** window:
+  **[エラー一覧]** ウィンドウで検証エラーを管理するには、次のタスクを使用します。
 
-|**目的**|**Follow these steps**|
+|**目的**|**次の手順に従います。**|
 |------------|----------------------------|
-|検証中に選択したエラーを抑制する|Right-click the one or multiple selected errors, point to **Manage Validation Errors**, and then click **Suppress Errors**.<br /><br /> 抑制されたエラーは、取り消し線付きで表示されます。 次回検証を実行したとき、これらのエラーは表示されません。<br /><br /> 抑制されたエラーは、対応するレイヤー図ファイルの .suppressions ファイルで追跡されます。|
-|選択したエラーの抑制を停止する|Right-click the selected suppressed error or errors, point to **Manage Validation Errors**, and then click **Stop Suppressing Errors**.<br /><br /> 次回検証を実行したとき、抑制されたエラーのうち選択したものが表示されます。|
-|Restore all suppressed errors in the **Error List** window|Right-click anywhere in the **Error List** window, point to **Manage Validation Errors**, and then click **Show All Suppressed Errors**.|
-|Hide all suppressed errors from the **Error List** window|Right-click anywhere in the **Error List** window, point to **Manage Validation Errors**, and then click **Hide All Suppressed Errors**.|
+|検証中に選択したエラーを抑制する|選択した1つまたは複数のエラーを右クリックし、 **[検証エラーの管理]** をポイントして、 **[エラーの抑制]** をクリックします。<br /><br /> 抑制されたエラーは、取り消し線付きで表示されます。 次回検証を実行したとき、これらのエラーは表示されません。<br /><br /> 抑制されたエラーは、対応するレイヤー図ファイルの .suppressions ファイルで追跡されます。|
+|選択したエラーの抑制を停止する|選択した抑制されたエラーを右クリックして、 **[検証エラーの管理]** をポイントし、 **[エラーの抑制を停止]** する をクリックします。<br /><br /> 次回検証を実行したとき、抑制されたエラーのうち選択したものが表示されます。|
+|**[エラー一覧]** ウィンドウで抑制されたエラーをすべて復元します。|**[エラー一覧]** ウィンドウの任意の場所を右クリックし、 **[検証エラーの管理]** をポイントし、抑制された **[エラーをすべて表示]** をクリックします。|
+|**[エラー一覧]** ウィンドウで抑制されたエラーをすべて非表示にする|**エラー一覧**ウィンドウ内の任意の場所を右クリックし、 **[検証エラーの管理]** をポイントし、抑制された **[エラーをすべて非表示]** にする をクリックします。|
 
-## <a name="ValidateAuto"></a> Validate code automatically
- ローカル ビルドを実行するたびにレイヤー検証を実行できます。 チームで Team Foundation ビルドを使用する場合、ゲート チェックインを使用してレイヤー検証を実行できます。これは、カスタム MSBuild タスクを作成することで指定できます。また、ビルド レポートを使用して検証エラーを収集することもできます。 To create gated check-in builds, see [Use a gated check-in build process to validate changes](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+## <a name="ValidateAuto"></a>コードを自動的に検証する
+ ローカル ビルドを実行するたびにレイヤー検証を実行できます。 チームで Team Foundation ビルドを使用する場合、ゲート チェックインを使用してレイヤー検証を実行できます。これは、カスタム MSBuild タスクを作成することで指定できます。また、ビルド レポートを使用して検証エラーを収集することもできます。 ゲートチェックインビルドを作成するには、「[ゲートチェックインビルドプロセスを使用して変更を検証](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)する」を参照してください。
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>ローカル ビルド時にコードを自動的に検証するには
 
@@ -173,48 +173,48 @@ ms.locfileid: "74301351"
 
  \- または
 
-1. In **Solution Explorer**, right-click the modeling project that contains the layer diagram or diagrams, and then click **Properties**.
+1. **ソリューションエクスプローラー**で、レイヤー図または図を含むモデリングプロジェクトを右クリックし、 **[プロパティ]** をクリックします。
 
-2. In the **Properties** window, set the modeling project's **Validate Architecture** property to **True**.
+2. **[プロパティ]** ウィンドウで、モデリングプロジェクトの **[アーキテクチャの検証]** プロパティを **[True]** に設定します。
 
     これには、検証プロセス内のモデリング プロジェクトが含まれます。
 
-3. In **Solution Explorer**, click the layer diagram (.layerdiagram) file that you want to use for validation.
+3. **ソリューションエクスプローラー**で、検証に使用するレイヤー図 (レイヤ図) ファイルをクリックします。
 
-4. In the **Properties** window, make sure that the diagram's **Build Action** property is set to **Validate**.
+4. **[プロパティ]** ウィンドウで、ダイアグラムの **[ビルドアクション]** プロパティが **[検証]** に設定されていることを確認します。
 
     これには、検証プロセス内のレイヤー図が含まれます。
 
-   To manage errors in the Error List window, see [Manage Validation Errors](#ManageErrors).
+   [エラー一覧] ウィンドウでエラーを管理するには、「[検証エラーの管理](#ManageErrors)」を参照してください。
 
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Team Foundation ビルド時にコードを自動的に検証するには
 
-1. In **Team Explorer**, double-click the build definition, and then click **Process**.
+1. **チームエクスプローラー**で、ビルド定義をダブルクリックし、 **[処理]** をクリックします。
 
-2. Under **Build process parameters**, expand **Compilation**, and type the following in the **MSBuild Arguments** parameter:
+2. **[ビルドプロセスパラメーター]** の **[コンパイル]** を展開し、 **[MSBuild 引数]** パラメーターに次のように入力します。
 
     `/p:ValidateArchitecture=true`
 
-   For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors). [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。
+   検証エラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]の詳細については、以下のページを参照してください。
 
 - [アプリケーションのビルド](/azure/devops/pipelines/index)
 
-- [Use the Default Template for your build process](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
+- [ビルドプロセスに既定のテンプレートを使用する](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
-- [Modify a Legacy Build that is Based on UpgradeTemplate.xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
+- [UpgradeTemplate .xaml に基づくレガシビルドを変更する](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
 - [ビルド プロセス テンプレートのカスタマイズ](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [Monitor Progress of a Running Build](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [実行中のビルドの進行状況を監視する](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
-## <a name="TroubleshootingValidation"></a> Troubleshoot layer validation issues
- レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 For more information about these errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
+## <a name="TroubleshootingValidation"></a>レイヤー検証に関する問題のトラブルシューティング
+ レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。
 
-|**問題点**|**Possible Cause**|**解決策**|
+|**問題点**|**考えられる原因**|**解決策**|
 |---------------|------------------------|--------------------|
 |検証エラーが予期したとおりに発生しない。|検証はソリューション エクスプローラーの他のレイヤー図からコピーされたレイヤー図および同じモデリング プロジェクトのレイヤー図には機能しません。 この方法でコピーされたレイヤー図には、コピー元のレイヤー図と同じ参照が含まれます。|新しいレイヤー図をモデリング プロジェクトに追加します。<br /><br /> コピー元のレイヤー図から新しいレイヤー図へ要素をコピーします。|
 
-## <a name="UnderstandingValidationErrors"></a> Understanding and Resolving Layer Validation Errors
+## <a name="UnderstandingValidationErrors"></a>レイヤー検証エラーの理解と解決
  レイヤー図と照らし合わせてコードを検証すると、コードが設計と競合している場合に検証エラーが発生します。 たとえば、次の条件のとき、検証エラーが発生する場合があります。
 
 - 成果物が不適切なレイヤーに割り当てられている。 この場合、成果物を移動します。
@@ -227,21 +227,21 @@ ms.locfileid: "74301351"
 
 |**構文**|**説明**|
 |----------------|---------------------|
-|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* is an artifact that is associated with a layer on the layer diagram.<br /><br /> *ArtifactTypeN* is the type of *ArtifactN*, such as a **Class** or **Method**, for example:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*Artifactn*(*artifacttypen*)|*Artifactn*は、レイヤー図のレイヤーに関連付けられている成果物です。<br /><br /> *Artifacttypen*は、**クラス**や**メソッド**など、 *artifactn*の種類です。たとえば、次のようになります。<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|名前空間の名前。|
-|*LayerNameN*|レイヤー図のレイヤーの名前。|
-|*DependencyType*|The type of dependency relationship between *Artifact1* and *Artifact2*. For example, *Artifact1* has a **Calls** relationship with *Artifact2*.|
+|*レイヤー Namen*|レイヤー図のレイヤーの名前。|
+|*DependencyType*|*Artifact1*と*Artifact2*の間の依存関係の種類。 たとえば、 *Artifact1*には*Artifact2*との**呼び出し**関係があります。|
 
-|**Error Syntax**|**Error Description**|
+|**エラー構文**|**エラーの説明**|
 |----------------------|---------------------------|
-|AV0001: Invalid Dependency: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Layers: *LayerName1*, *LayerName2* &#124; Dependencies: *DependencyType*|*Artifact1* in *LayerName1* should not have a dependency on *Artifact2* in *LayerName2* because *LayerName1* does not have a direct dependency on *LayerName2*.|
-|AV1001: Invalid Namespace: *Artifact*<br /><br /> Layer: *LayerName* &#124; Required Namespace: *NamespaceName1* &#124; Current Namespace: *NamespaceName2*|*LayerName* requires that its associated artifacts must belong to *NamespaceName1*. *Artifact* is in *NamespaceName2*, not *NamespaceName1*.|
-|AV1002: Depends on Forbidden Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Layer: *LayerName* &#124; Forbidden Namespace: *NamespaceName* &#124; Dependencies: *DependencyType*|*LayerName* requires that its associated artifacts must not depend on *NamespaceName*. *Artifact1* cannot depend on *Artifact2* because *Artifact2* is in *NamespaceName*.|
-|AV1003: In Forbidden Namespace: *Artifact*(*ArtifactType*)<br /><br /> Layer: *LayerName* &#124; Forbidden Namespace: *NamespaceName*|*LayerName* requires that its associated artifacts cannot belong to *NamespaceName*. *Artifact* belongs to *NamespaceName*.|
-|AV3001: Missing Link: Layer '*LayerName*' links to '*Artifact*' which cannot be found. アセンブリ参照が存在することを確認してください。|*LayerName* links to an artifact that cannot be found. たとえば、モデリング プロジェクトでクラスを含むアセンブリへの参照が欠落しているために、クラスへのリンクが欠落している場合があります。|
+|AV0001: 無効な依存関係: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー: *LayerName1*、 *LayerName2* &#124;の依存関係: *dependencytype*|LayerName1 が*LayerName2*に直接依存してい*ないため、* *LayerName1*の*Artifact1*は*LayerName2*の*Artifact2*に依存していてはなりません。|
+|AV1001: 無効な名前空間:*成果物*<br /><br /> レイヤー: $ *ername* &#124;必須の名前空間: *NamespaceName1* &#124;現在の名前空間: *NamespaceName2*|$ *Ername*は、関連付けられた成果物が*NamespaceName1*に属している必要があります。 *アーティファクト*は、 *NamespaceName1*ではなく、 *NamespaceName2*にあります。|
+|AV1002: 禁止された名前空間に依存します: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー: $ *ername* &#124;禁止された名前空間: *NamespaceName* &#124;の依存関係: *dependencytype*|$ *Ername*は、関連付けられている成果物が*NamespaceName*に依存していないことが必要です。 *Artifact2*が*NamespaceName*にあるため、 *Artifact1*を*Artifact2*に依存させることはできません。|
+|AV1003: 禁止された名前空間:*成果物*(*artifacttype*)<br /><br /> レイヤー: $ *ername* &#124;禁止された名前空間: *NamespaceName*|$ *Ername*は、関連付けられた成果物が*NamespaceName*に属することができません。 *成果物*は*NamespaceName*に属します。|
+|AV3001: 見つからないリンク: '*成果物*' へのレイヤー ' レイヤ*ername*' リンクが見つかりません。 アセンブリ参照が存在することを確認してください。|検索できない成果*物へのリンクが*あります。 たとえば、モデリング プロジェクトでクラスを含むアセンブリへの参照が欠落しているために、クラスへのリンクが欠落している場合があります。|
 |AV9001: アーキテクチャの検証で内部エラーが検出されました。 結果が不完全である可能性があります。 詳細については、ビルド イベント ログの詳細または出力ウィンドウを参照してください。|詳細については、ビルド イベント ログまたは出力ウィンドウを参照してください。|
 
 ## <a name="security"></a>セキュリティ
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)

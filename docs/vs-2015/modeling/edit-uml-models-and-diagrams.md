@@ -1,5 +1,5 @@
 ---
-title: Edit UML models and diagrams | Microsoft Docs
+title: UML モデルとダイアグラムの編集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -35,69 +35,69 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
- このトピックでは、各種の図に共通のモデルを編集する方法について説明します。 For more information that is specific to particular types of diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
+ このトピックでは、各種の図に共通のモデルを編集する方法について説明します。 特定の種類の図に固有の詳細については、「[アプリのモデルを作成](../modeling/create-models-for-your-app.md)する」を参照してください。
 
 ## <a name="in-this-topic"></a>このトピックの内容
 
-- [UML Diagrams are Views of a UML Model](#Views)
+- [Uml 図は UML モデルのビューです](#Views)
 
-- [Creating UML Modeling Diagrams](#Creating)
+- [UML モデリング図の作成](#Creating)
 
-- [Drawing UML Modeling Diagrams](#Drawing)
+- [UML モデリング図の描画](#Drawing)
 
-- [Editing Shapes and Connectors](#Editing)
+- [図形とコネクタの編集](#Editing)
 
-- [Undoing Changes to the Model](#Undo)
+- [モデルに対する変更を元に戻す](#Undo)
 
-- [Sharing Elements between Diagrams](#Sharing)
+- [ダイアグラム間での要素の共有](#Sharing)
 
-- [Copying Elements and Groups of Related Elements](#Copying)
+- [要素と関連要素のグループのコピー](#Copying)
 
-- [Deleting a Model Element or its Views](#Deleting)
+- [モデル要素またはそのビューの削除](#Deleting)
 
-- [Searching text in a diagram](#Searching)
+- [ダイアグラム内のテキストの検索](#Searching)
 
-- [Preparing a Diagram for Presentation](#presentation)
+- [図をプレゼンテーション用に準備する](#presentation)
 
-- [Extending the UML Designers](#extensions)
+- [UML デザイナーの拡張](#extensions)
 
-## <a name="Views"></a> UML Diagrams are Views of a UML Model
- UML 図は、モデリング プロジェクトでのみ作成および使用できます。 For more information about how to create diagrams and projects, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
+## <a name="Views"></a>Uml 図は UML モデルのビューです
+ UML 図は、モデリング プロジェクトでのみ作成および使用できます。 ダイアグラムとプロジェクトを作成する方法の詳細については、「 [UML モデリングプロジェクトおよびダイアグラムを作成](../modeling/create-uml-modeling-projects-and-diagrams.md)する」を参照してください。
 
 - モデリング プロジェクトには UML モデルが 1 つ存在します。 プロジェクト内の UML 図はすべて UML モデルのビューです。
 
-- You can see the model in **UML Model Explorer**. On the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
+- モデルは**UML モデルエクスプローラー**で確認できます。 **[アーキテクチャ]** メニューの **[ウィンドウ]** をポイントし、 **[UML モデルエクスプローラー]** をクリックします。
 
 - 図の中のシェイプはすべてモデル内の要素のビューです。 図に新しいシェイプを配置するということは、そのモデルに新しい要素を作成するということです。
 
-- When you save any diagram, Visual Studio saves the whole model, all its diagrams, and the modeling project file.
+- ダイアグラムを保存すると、Visual Studio によってモデル全体、そのすべてのダイアグラム、およびモデリングプロジェクトファイルが保存されます。
 
-## <a name="Creating"></a> Creating UML Modeling Diagrams
+## <a name="Creating"></a>UML モデリング図の作成
 
-1. On the **Architecture** menu in Visual Studio, click **New UML or Layer Diagram**.
+1. Visual Studio の **[アーキテクチャ]** メニューで、 **[新しい UML またはレイヤー図]** をクリックします。
 
 2. 図を選択し、名前を付けます。
 
-3. In **Add to modeling project**, select an existing modeling project, or select **Create a new modeling project**.
+3. **[モデリングプロジェクトへの追加]** で、既存のモデリングプロジェクトを選択するか、 **[新しいモデリングプロジェクトの作成]** を選択します。
 
    > [!NOTE]
    > モデリング図はモデリング プロジェクト内に存在している必要があります。
 
-   ソリューション エクスプローラーで既存のモデリング プロジェクトに図を追加することもできます。 Right-click the modeling project, point to **Add**, and then click **New Item**.
+   ソリューション エクスプローラーで既存のモデリング プロジェクトに図を追加することもできます。 モデリングプロジェクトを右クリックし、 **[追加]** をポイントして、 **[新しい項目]** をクリックします。
 
 #### <a name="to-create-an-empty-uml-modeling-project"></a>空の UML モデリング プロジェクトを作成するには
 
-- On the **File** menu, point to **New**, click **Project**, and in the **New Project** dialog box, double-click **Modeling Projects**.
+- **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。 **[新しいプロジェクト]** ダイアログボックスで、 **[モデリングプロジェクト]** をダブルクリックします。
 
-  For more information about how to manage modeling projects, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
+  モデリングプロジェクトの管理方法の詳細については、「 [UML モデリングプロジェクトおよびダイアグラムを作成](../modeling/create-uml-modeling-projects-and-diagrams.md)する」を参照してください。
 
-## <a name="Drawing"></a> Drawing UML Modeling Diagrams
+## <a name="Drawing"></a>UML モデリング図の描画
  モデリング図には、関係によってリンクされたモデル要素のコレクションが表示されます。 それぞれの要素はシェイプとして表示され、それぞれの関係は 2 つのシェイプをつなぐコネクタとして表示されます。
 
- 要素用と関係用の 2 種類のツールが存在します。 For example, in the UML class diagram Toolbox, **Class** is an element tool, and **Association** is a relationship tool.
+ 要素用と関係用の 2 種類のツールが存在します。 たとえば、UML クラスダイアグラムツールボックスでは、 **class**は要素ツールであり、 **Association**はリレーションシップツールです。
 
 > [!NOTE]
-> If you want information that is specific to particular diagram types, see [Create models for your app](../modeling/create-models-for-your-app.md).
+> 特定の種類の図に固有の情報が必要な場合は、「[アプリのモデルを作成](../modeling/create-models-for-your-app.md)する」を参照してください。
 
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>UML モデリング図の要素および関係を作成するには
 
@@ -106,43 +106,43 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
     場合によっては、新しい要素を別の要素内に配置することができます。 たとえば、UML クラス図では、パッケージ内にクラスを配置できます。
 
    > [!NOTE]
-   > If you cannot see the toolbox, click **Toolbox** on the **View** menu.
+   > ツールボックスが表示されない場合は、 **[表示]** メニューの **[ツールボックス]** をクリックします。
 
 2. 関係を作成するには、関係ツールをクリックし、関係の起点となる要素をクリックしてから、終点となる要素をクリックします。
 
     起点および終点として選択できる要素の種類は関係の種類によって異なります。 たとえば、UML クラス図では、Comment 要素を起点または終点とする Association の関係は作成できません。
 
    > [!NOTE]
-   > 同じツールを複数回使用するには、ツールをダブルクリックします。 When you have finished, click the **Pointer** tool.
+   > 同じツールを複数回使用するには、ツールをダブルクリックします。 操作が完了したら、 **[ポインター]** ツールをクリックします。
 
    一部の種類の図では、単純なシェイプを描画することもできます。 これらのシェイプはモデルの一部ではありませんが、図のパーツを強調したり、図を複数の領域に分割したりするために使用できます。
 
-## <a name="Editing"></a> Editing Shapes and Connectors
+## <a name="Editing"></a>図形とコネクタの編集
  シェイプのサイズ変更または色付けを行ったり、コネクタのルートを変更したりしても、基になるモデルは影響を受けません。 ただし、図または UML モデル エクスプローラーでシェイプの名前を変更すると、対応する要素の名前が UML モデル エクスプローラー内およびその要素を表示するその他の図の中でも変更されます。
 
 > [!NOTE]
-> ツールボックス アイテムを使用すると、要素のグループを作成したり、独自に選んだプロパティを持つ要素を作成したりできます。新しいツールボックス アイテムは簡単に作成できます。 For more information, see [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md).
+> ツールボックス アイテムを使用すると、要素のグループを作成したり、独自に選んだプロパティを持つ要素を作成したりできます。新しいツールボックス アイテムは簡単に作成できます。 詳細については、「[カスタムモデリングツールボックスアイテムの定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
 
  次の図は、シェイプのサイズまたは名前を変更する方法を示しています。
 
- ![Adjusting a model element](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
+ ![モデル要素の調整](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
 
 > [!TIP]
-> 組み込みコマンドには、図形をきれいに整列させるためのコマンドは含まれていません。 However, you can easily create your own alignment command by copying the code in the example in [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
+> 組み込みコマンドには、図形をきれいに整列させるためのコマンドは含まれていません。 ただし、「[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)する」の例のコードをコピーすると、独自の配置コマンドを簡単に作成できます。
 
  次の図は、コネクタまたはそのラベルのルートと位置を調整する方法を示しています。
 
- ![Adjusting a connector](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
+ ![コネクタの調整](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>コネクタの片端を別のシェイプに移動するには
 
-1. 次のいずれかの操作を行います。
+1. 以下のいずれかを実行します。
 
-   - Press **CTRL** and move the end.
+   - Ctrl キーを押し**ながら**終了位置を移動します。
 
      \- または
 
-   - Right-click the connector and then click **Reconnect**.
+   - コネクタを右クリックし、 **[再接続]** をクリックします。
 
 2. 移動するコネクタの端をクリックします。
 
@@ -150,55 +150,55 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>要素、関係、または図の色およびその他のプロパティを変更するには
 
-- Click the element and set the fields in the **Properties** window.
+- 要素をクリックし、 **[プロパティ]** ウィンドウでフィールドを設定します。
 
-     If you cannot see the **Properties** window, right-click the element, and then click **Properties.**
+     **プロパティ** ウィンドウが表示されない場合は、要素を右クリックし、プロパティ をクリックし**ます。**
 
 #### <a name="to-zoom-in-and-out-on-a-modeling-diagram"></a>モデリング図を拡大または縮小するには
 
-- Press and hold the **CTRL** key while you rotate the mouse wheel.
+- **Ctrl**キーを押しながらマウスホイールを回転させます。
 
      \- または
 
-- Press and hold **CTRL+SHIFT**, and then click the left or right mouse button.
+- Ctrl キーを押しながら**shift**キーを押しながら、マウスの左ボタンまたは右ボタンをクリックします。
 
      \- または
 
-- On the **Architecture Designers** toolbar, click the plus sign ( **+** ) or minus sign ( **-** ), or choose a zoom level.
+- **アーキテクチャデザイナー**のツールバーで、プラス記号 ( **+** ) または負符号 ( **-** ) をクリックするか、ズームレベルを選択します。
 
-## <a name="Searching"></a> Searching in a Diagram
- 図のアイテムを検索するには、クイック検索機能を使用します。 You must set **Look in:** to **Current Document**.
+## <a name="Searching"></a>ダイアグラム内の検索
+ 図のアイテムを検索するには、クイック検索機能を使用します。 **検索対象:** **現在のドキュメント**に設定する必要があります。
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>モデリング図内のテキストを検索するには
 
-1. Press **CTRL+F**.
+1. **Ctrl + F**キーを押します。
 
      \- または
 
-     On the **Edit** menu, point to **Find and Replace**, and then click **Quick Find**.
+     **[編集]** メニューの **[検索と置換]** をポイントし、 **[クイック検索]** をクリックします。
 
     > [!NOTE]
-    > In the **Find and Replace** dialog box, you must leave the **Look in** field set to **Current Document**. その他のオプションはサポートされていません。
+    > **[検索と置換]** ダイアログボックスでは、 **[検索対象]** フィールドを **[現在のドキュメント]** に設定したままにする必要があります。 その他のオプションはサポートされていません。
 
-2. Type the text that you want to find, and then click **Find Next**.
+2. 検索するテキストを入力し、 **[次を検索]** をクリックします。
 
     > [!NOTE]
-    > 検索したテキストが折りたたまれたシェイプ内にある場合、シェイプが強調表示されます。 Expand the shape, and then click **Find Next** again.
+    > 検索したテキストが折りたたまれたシェイプ内にある場合、シェイプが強調表示されます。 図形を展開し、 **[次を検索]** をもう一度クリックします。
 
-## <a name="Undo"></a> Undoing Changes to the Model
- You can undo and redo changes that you have made to the model and diagrams by using the **Undo** and **Redo** commands on the **Edit** menu.
+## <a name="Undo"></a>モデルに対する変更を元に戻す
+ **[編集]** メニューの **[元に戻す]** および **[やり直し]** コマンドを使用して、モデルおよび図に対して行った変更を元に戻したり、やり直したりすることができます。
 
- **Each modeling project has a single stack of changes.** モデルおよび図に対して行った変更はすべてこのスタックに記録されます。 スタックには図から図へのフォーカスの切り替えも含まれます。 [元に戻す] コマンドは、このスタックに記録された変更を逆にたどることによって実行されます。
+ **各モデリングプロジェクトには、変更のスタックが1つあります。** モデルおよび図に対して行った変更はすべてこのスタックに記録されます。 スタックには図から図へのフォーカスの切り替えも含まれます。 [元に戻す] コマンドは、このスタックに記録された変更を逆にたどることによって実行されます。
 
  たとえば、Diagram1 に変更を加え、フォーカスを Diagram 2 に切り替えてから、Diagram2 に変更を加えたとします。 ここで、[元に戻す] コマンドを 3 回実行すると、1 回目には最後の変更が取り消され、2 回目にはフォーカスが Diagram1 に戻され、3 回目には Diagram1 に対する変更が取り消されます。
 
- **Closing a diagram truncates the stack of changes.** 図を閉じると、その図に対して実行した変更は元に戻せなくなります。また、それ以前にモデルまたはその図に対して加えた変更も元に戻せなくなります。
+ **ダイアグラムを閉じると、変更のスタックが切り捨てられます。** 図を閉じると、その図に対して実行した変更は元に戻せなくなります。また、それ以前にモデルまたはその図に対して加えた変更も元に戻せなくなります。
 
- **You cannot undo while you are editing a property.** プロパティ ウィンドウでプロパティを編集しているとき、または図のラベルのプロパティを編集しているときは、そのプロパティに対する変更しか元に戻すことができません。 Enter キーを押してプロパティの変更を確定するか、Esc キーを押して変更を取り消してください。 これで、モデルおよび図に対する変更を元に戻すことができるようになります。
+ **プロパティの編集中に元に戻すことはできません。** プロパティ ウィンドウでプロパティを編集しているとき、または図のラベルのプロパティを編集しているときは、そのプロパティに対する変更しか元に戻すことができません。 Enter キーを押してプロパティの変更を確定するか、Esc キーを押して変更を取り消してください。 これで、モデルおよび図に対する変更を元に戻すことができるようになります。
 
- **Closing a diagram without saving might not have the effect you expect.** 図に変更を加えた後にその図を保存せずに閉じても、変更内容はモデルで保持されます。 図を保存せずに閉じる必要がある場合は、モデル全体を閉じることをお勧めします。
+ **図を保存せずに閉じると、期待どおりの効果が得られない場合があります。** 図に変更を加えた後にその図を保存せずに閉じても、変更内容はモデルで保持されます。 図を保存せずに閉じる必要がある場合は、モデル全体を閉じることをお勧めします。
 
-## <a name="Sharing"></a> Sharing Elements between Diagrams
+## <a name="Sharing"></a>ダイアグラム間での要素の共有
  モデル要素の特定のインスタンスが複数の図に表示されるようにすることができます。 クラス、インターフェイス、コンポーネント、ユース ケース、およびアクターがこれに該当します。
 
  この機能は、図ごとに異なる関係のグループを表示する必要がある場合に便利です。 たとえば、ある図の中で Customer クラスと Address クラスとの間の関連を表示し、 別の図では、同じ Address クラスを Postal Area クラスに関連付けて表示できます。
@@ -209,36 +209,36 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-uml-model-explorer"></a>UML モデル エクスプローラーを使用してモデル要素の新しいビューを追加するには
 
-1. To open **UML Model Explorer**, on the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
+1. **Uml モデルエクスプローラー**を開くには、 **[アーキテクチャ]** メニューの **[ウィンドウ]** をポイントし、 **[uml モデルエクスプローラー]** をクリックします。
 
-2. Drag the model element from **UML Model Explorer** to a compatible diagram in the same project.
+2. **UML モデルエクスプローラー**から、同じプロジェクト内の互換性のある図にモデル要素をドラッグします。
 
      モデル要素のビューを表すシェイプが表示されます。これは、他の図または同じ図のビューに追加される形で表示される場合があります。
 
     > [!NOTE]
-    > クラスまたはコンポーネントをシーケンス図にドラッグした場合、結果は異なります。 その場合は、そのクラスまたはコンポーネントと同じ型の新しい生存線が作成されます。 For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
+    > クラスまたはコンポーネントをシーケンス図にドラッグした場合、結果は異なります。 その場合は、そのクラスまたはコンポーネントと同じ型の新しい生存線が作成されます。 詳細については、「 [UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)」を参照してください。
 
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>[参照の貼り付け] を使用してモデル要素の新しいビューを追加するには
 
-1. Right-click an existing element, and then click **Copy**.
+1. 既存の要素を右クリックし、 **[コピー]** をクリックします。
 
-    - 複数の要素を同時にコピーすることができます。 Hold down the CTRL key while you click each element, right-click one of them, and then click **Copy**.
+    - 複数の要素を同時にコピーすることができます。 CTRL キーを押しながら各要素をクリックし、いずれかを右クリックして、 **[コピー]** をクリックします。
 
-2. Right-click an empty part of a compatible diagram, and then click **Paste Reference**.
+2. 互換性のある図の空の部分を右クリックし、 **[参照の貼り付け]** をクリックします。
 
      同じ要素のもう 1 つのビューが表示されます。
 
     > [!NOTE]
-    > This differs from the **Paste** command, which creates a new element in the model. For more information, see [Copying Elements and Groups of Related Elements](#Copying).
+    > これは、 **[貼り付け]** コマンドとは異なり、モデルに新しい要素が作成されます。 詳細については、「[要素と関連要素のグループのコピー](#Copying)」を参照してください。
 
 > [!NOTE]
 > 既に特定の関係で接続されている 2 つのモデル要素から成る図のビューに対して追加した場合、その関係のビューも図に表示されます。 このビューを削除するには、要素の 1 つを図から削除するか、要素間の関係をモデルから削除します。
 
-## <a name="Copying"></a> Copying Elements and Groups of Related Elements
+## <a name="Copying"></a>要素と関連要素のグループのコピー
  モデル要素はコピーして貼り付けることができます。また、要素のグループをその要素間の関係も含めてコピーして貼り付けることもできます。
 
 > [!NOTE]
-> The **Paste** and **Paste Reference** commands have different effects. **Paste** creates new elements whose properties are like those of the copied elements. **Paste Reference** creates new views of the same elements.
+> **貼り付け**と**貼り付けの参照**コマンドにはさまざまな効果があります。 **貼り付け**によって、コピーした要素のプロパティと同じプロパティを持つ新しい要素が作成されます。 **貼り付け参照**は、同じ要素の新しいビューを作成します。
 
 #### <a name="to-copy-elements-and-their-relationships"></a>要素とその関係をコピーするには
 
@@ -247,11 +247,11 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
     > [!NOTE]
     > 要素のグループから関係だけを切り離してコピーすることはできません。
 
-2. On the **Edit** menu, click **Copy**.
+2. **[編集]** メニューの **[コピー]** をクリックします。
 
 3. 要素を別の図にコピーする場合は、新しい図を作成するか、既存の図を開きます。
 
-4. On the **Edit** menu, click **Paste**.
+4. **[編集]** メニューの **[貼り付け]** をクリックします。
 
     - 要素のコピーが、要素間に存在するすべての関係のコピーと共に表示されます。
 
@@ -270,29 +270,29 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
    図の複製は、ソリューション エクスプローラーでコピーと貼り付けをして行うことはできません。
 
-## <a name="Deleting"></a> Deleting a Model Element or its Views
- 分類子などの特定の種類の要素は、モデルからは削除せず、図からのみ削除することができます。 分類子は、クラス図、コンポーネント図、およびユース ケース図に表示される主要な要素です。 複数の図に表示される場合もあります。 For these types of elements, there are two separate commands: **Remove from Diagram** and **Delete from Model**.
+## <a name="Deleting"></a>モデル要素またはそのビューの削除
+ 分類子などの特定の種類の要素は、モデルからは削除せず、図からのみ削除することができます。 分類子は、クラス図、コンポーネント図、およびユース ケース図に表示される主要な要素です。 複数の図に表示される場合もあります。 これらの種類の要素には、 **[ダイアグラムから削除]** と **[モデルから削除]** の2つの異なるコマンドがあります。
 
  一方、図から関係を削除すると、その関係は自動的にモデルからも削除されます。
 
 > [!NOTE]
-> UML 図の特定の種類の要素にはラベルがあります。 要素の周囲に四角形を描画して選択すると、ラベルを選択することはできますが、そのラベルを所有する要素は選択できません。 この方法で選択された要素のサブセットの削除はサポートされていません。 To select a subset of these elements, press and hold the **CTRL** key while you click each element.
+> UML 図の特定の種類の要素にはラベルがあります。 要素の周囲に四角形を描画して選択すると、ラベルを選択することはできますが、そのラベルを所有する要素は選択できません。 この方法で選択された要素のサブセットの削除はサポートされていません。 これらの要素のサブセットを選択するには、 **ctrl**キーを押しながら各要素をクリックします。
 
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>分類子のビューを図から削除するには
 
-- Right-click the element on the diagram, and then click **Remove from Diagram**.
+- 図の要素を右クリックし、 **[ダイアグラムから削除]** をクリックします。
 
   \- または
 
-- Click the element on the diagram and then press the **DELETE** key.
+- 図の要素をクリックし、 **del**キーを押します。
 
-  - この要素のビューが削除されます。 However, the element remains in the model, and you can still find it in **UML Model Explorer**. 同じ要素の他のビューもすべて残っています。
+  - この要素のビューが削除されます。 ただし、要素はモデル内に残りますが、 **UML モデルエクスプローラー**では引き続き見つけることができます。 同じ要素の他のビューもすべて残っています。
 
-  - このシェイプに接続されているコネクタはすべて図から削除されますが、それが表している関係はモデル内に残ります。 You can see the relationship in **UML Model Explorer** under **Relationships**, under each element that it connects.
+  - このシェイプに接続されているコネクタはすべて図から削除されますが、それが表している関係はモデル内に残ります。 **UML モデルエクスプローラー**で**は、接続**する各要素の下にリレーションシップが表示されます。
 
 #### <a name="to-delete-an-element-from-the-model"></a>モデルから要素を削除するには
 
-- Right-click the element either in **UML Model Explorer** or on a diagram, and then click **Delete from Model**.
+- **UML モデルエクスプローラー**または図で要素を右クリックし、 **[モデルから削除]** をクリックします。
 
   - 要素は、表示されていたすべての図から削除されます。
 
@@ -300,31 +300,31 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
 
 #### <a name="to-delete-a-relationship-from-the-model"></a>モデルから関係を削除するには
 
-- Right-click the relationship on a diagram or in **UML Model Explorer**, and then click **Delete from Model**.
+- 図または**UML モデルエクスプローラー**でリレーションシップを右クリックし、 **[モデルから削除]** をクリックします。
 
     > [!CAUTION]
     > 関係をモデルからは削除せずに図からのみ削除することはできません。
 
      関係がモデルから削除され、それが表示されていたすべての図からも削除されます。
 
-## <a name="presentation"></a> Preparing a Diagram for Presentation
+## <a name="presentation"></a>図をプレゼンテーション用に準備する
  次に示す機能は、図の特定のパーツを強調する場合や、説明を追加する場合、または 1 つの図を複数の関心領域に分割する場合に役立ちます。
 
-- 図の任意のパーツを Word や PowerPoint などのドキュメントにコピーできます。 Select the shapes and connectors you want, right-click and then click **Copy**.
+- 図の任意のパーツを Word や PowerPoint などのドキュメントにコピーできます。 目的の図形とコネクタを選択し、右クリックして、 **[コピー]** をクリックします。
 
-- 任意のシェイプまたはコネクタの色を変更できます。 Select one or more shapes and change the **Color** property. **[プロパティ]** ウィンドウが表示されない場合は、**F4** キーを押します。
+- 任意のシェイプまたはコネクタの色を変更できます。 1つまたは複数の図形を選択し、 **[色]** プロパティを変更します。 **[プロパティ]** ウィンドウが表示されない場合は、**F4** キーを押します。
 
-- On diagrams of some kinds, you can draw lines, rectangles and ellipses from the **Simple Shapes** section of the Toolbox. これらのシェイプは UML モデルの一部を形成するものではありません。
+- 一部の種類の図では、ツールボックスの **[単純な図形]** セクションから線、四角形、および楕円を描画できます。 これらのシェイプは UML モデルの一部を形成するものではありません。
 
-- To label an area, you can drag a Comment from the Toolbox and then set its **Transparent** property to **True**. 単純なシェイプと同様に、コメントは UML モデルの一部を形成するものではないため、UML モデル エクスプローラーには表示されません。
+- 領域にラベルを付けるには、ツールボックスからコメントをドラッグし、その**Transparent**プロパティを**True**に設定します。 単純なシェイプと同様に、コメントは UML モデルの一部を形成するものではないため、UML モデル エクスプローラーには表示されません。
 
 - モデル要素にメモおよび説明を追加するには、コメントを作成し、要素にリンクします。
 
 ### <a name="to-export-a-diagram-as-an-image"></a>ダイアグラムをイメージとしてエクスポートするには
- For more information, see [Export diagrams as images](../modeling/export-diagrams-as-images.md).
+ 詳細については、「[イメージとしてダイアグラムをエクスポート](../modeling/export-diagrams-as-images.md)する」を参照してください。
 
-## <a name="extensions"></a> Extending the UML Designers
- UML ツールに新しい機能を追加し、各自のニーズに合わせてダイアグラムの表記を調整できます。 For more information, see [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md).
+## <a name="extensions"></a>UML デザイナーの拡張
+ UML ツールに新しい機能を追加し、各自のニーズに合わせてダイアグラムの表記を調整できます。 詳細については、「 [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)」を参照してください。
 
-## <a name="see-also"></a>参照
- [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md) [Analyzing and Modeling Architecture](../modeling/analyze-and-model-your-architecture.md) [Create models for your app](../modeling/create-models-for-your-app.md)
+## <a name="see-also"></a>関連項目
+ [UML モデリングプロジェクトおよびダイアグラムの作成](../modeling/create-uml-modeling-projects-and-diagrams.md)[アーキテクチャを分析およびモデリング](../modeling/analyze-and-model-your-architecture.md)する[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)

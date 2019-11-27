@@ -1,5 +1,5 @@
 ---
-title: 'How to: Extend the Domain-Specific Language Designer | Microsoft Docs'
+title: '方法: ドメイン固有言語デザイナーを拡張する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,34 +19,34 @@ ms.locfileid: "74300895"
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can make extensions to the designer that you use to edit DSL Definitions. Types of extension that you can make include adding menu commands, adding handlers for drag and double-click gestures, and rules that are triggered when particular types of values or relationships change. The extensions can be packaged as a Visual Studio Integration Extension (VSIX) and distributed to other users.
+DSL 定義を編集するために使用するデザイナーの拡張機能を作成できます。 拡張の種類としては、メニューコマンドの追加、ドラッグアンドクリックによるジェスチャのハンドラーの追加、特定の種類の値や関係が変更されたときにトリガーされるルールなどがあります。 拡張機能は、Visual Studio Integration Extension (VSIX) としてパッケージ化し、他のユーザーに配布することができます。
 
- For sample code and more information about this feature, see the Visual Studio [Visualization and Modeling SDK (VMSDK) Web site](https://go.microsoft.com/fwlink/?LinkID=186128).
+ サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK (VMSDK)」 Web サイト](https://go.microsoft.com/fwlink/?LinkID=186128)を参照してください。
 
-## <a name="setting-up-the-solution"></a>Setting up the Solution
- Set up a project that contains the code of your extension, and a VSIX project that exports the project. Your solution can contain other projects that are incorporated into the same VSIX.
+## <a name="setting-up-the-solution"></a>ソリューションの設定
+ 拡張機能のコードを含むプロジェクトと、プロジェクトをエクスポートする VSIX プロジェクトを設定します。 ソリューションには、同じ VSIX に組み込まれている他のプロジェクトを含めることができます。
 
-#### <a name="to-create-a-dsl-designer-extension-solution"></a>To create a DSL Designer Extension Solution
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL デザイナー拡張機能ソリューションを作成するには
 
-1. Create a new project using the Class Library project template. In the **New Project** dialog box, click **Visual C#** and then in the middle window click **Class Library**.
+1. クラスライブラリプロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 **[新しいプロジェクト]** ダイアログボックスで、 **[ C#ビジュアル**] をクリックし、中央のウィンドウで **[クラスライブラリ]** をクリックします。
 
-     This project will contain the code of your extensions.
+     このプロジェクトには、拡張機能のコードが含まれます。
 
-2. Create a new project using the VSIX project template. In the **New Project** dialog box, expand **Visual C#** , click **Extensibility**, and then in the middle window select **VSIX Project**.
+2. VSIX プロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 **[新しいプロジェクト]** ダイアログボックスで、 **[ C#ビジュアル**] を展開し、 **[機能拡張]** をクリックします。次に、中央のウィンドウで **[VSIX プロジェクト]** を選択します。
 
-     Select **Add to Solution**.
+     **[ソリューションに追加]** を選択します。
 
-     Source.extension.vsixmanifest opens in the VSIX manifest editor.
+     Source.extension.vsixmanifest が VSIX マニフェストエディターで開きます。
 
-3. Above the Content field, click **Add Content**.
+3. コンテンツ フィールドの上にある **コンテンツの追加** をクリックします。
 
-4. In the **Add Content** dialog box, set **Select a Content Type** to **MEF Component**, and set **Project** to your class library project.
+4. **[コンテンツの追加]** ダイアログボックスで、 **[コンテンツの種類**を**MEF コンポーネント**に選択] を設定し、 **[プロジェクト]** をクラスライブラリプロジェクトに設定します。
 
-5. Click **Select Editions** and make sure that **Visual Studio Enterprise** is checked.
+5. **[エディションの選択]** をクリックし、 **Visual Studio Enterprise**がオンになっていることを確認します。
 
-6. Make sure that the VSIX project is the Startup project of the solution.
+6. VSIX プロジェクトがソリューションのスタートアッププロジェクトであることを確認します。
 
-7. In the class library project, add references to the following assemblies:
+7. クラスライブラリプロジェクトで、次のアセンブリへの参照を追加します。
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -67,26 +67,26 @@ You can make extensions to the designer that you use to edit DSL Definitions. Ty
      System.Windows.Forms
 
 ## <a name="testing-and-deployment"></a>テストと展開
- To test any of the extensions in this topic, build and run the solution. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開きます。 In this instance, open a DSL solution. Edit the DslDefinition diagram. The extension behavior can be seen.
+ このトピックのすべての拡張機能をテストするには、ソリューションをビルドして実行します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開きます。 このインスタンスでは、DSL ソリューションを開きます。 DslDefinition ダイアグラムを編集します。 拡張機能の動作を確認できます。
 
- To deploy the extensions to the main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], and to other computers, follow these steps:
+ 拡張機能をメイン [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、および他のコンピューターに展開するには、次の手順を実行します。
 
-1. Find the VSIX installation file, in your VSIX project in bin\\*\\\*.vsix
+1. Vsix のインストールファイルを検索するには、vsix プロジェクトの bin\\*\\\*.vsix を使用します。
 
-2. Copy this file to the target computer, and then in Windows Explorer (or File Explorer), double-click it.
+2. このファイルを対象のコンピュータにコピーし、Windows エクスプローラ (またはファイルエクスプローラー) でダブルクリックします。
 
-    The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension Manager opens to confirm that the extension has been installed.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能マネージャーが開き、拡張機能がインストールされていることを確認できます。
 
-   To uninstall the extension, follow these steps:
+   拡張機能をアンインストールするには、次の手順を実行します。
 
-3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], on the **Tools** menu, click **Extension Manager**.
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で、 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
 
-4. Select the extension and delete it.
+4. 拡張機能を選択して削除します。
 
-## <a name="adding-a-shortcut-menu-command"></a>Adding a Shortcut Menu Command
- To make a shortcut menu command appear on the DSL Designer surface or in the DSL Explorer window, write a class resembling the following.
+## <a name="adding-a-shortcut-menu-command"></a>ショートカットメニューコマンドの追加
+ DSL デザイナー画面または DSL エクスプローラーウィンドウにショートカットメニューコマンドを表示するには、次のようなクラスを記述します。
 
- The class must implement `ICommandExtension` and must have the attribute `DslDefinitionModelCommandExtension`.
+ クラスは `ICommandExtension` を実装し、属性 `DslDefinitionModelCommandExtension`を持つ必要があります。
 
 ```
 using System.Collections.Generic;
@@ -148,8 +148,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }
 ```
 
-## <a name="handling-mouse-gestures"></a>Handling Mouse Gestures
- The code is similar to the code of the menu command.
+## <a name="handling-mouse-gestures"></a>マウスジェスチャの処理
+ このコードは、メニューコマンドのコードに似ています。
 
 ```
 [DslDefinitionModelGestureExtension]
@@ -209,8 +209,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }
 ```
 
-## <a name="responding-to-value-changes"></a>Responding to Value Changes
- This handler needs a domain model to work correctly. We provide a simple domain model.
+## <a name="responding-to-value-changes"></a>値の変更への対応
+ このハンドラーでは、ドメインモデルを正常に動作させる必要があります。 単純なドメインモデルを提供します。
 
 ```
 using System.Diagnostics;
@@ -250,7 +250,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 } }  }  );
 ```
 
- The following code implements a simple model. Create a new GUID to replace the placeholder.
+ 次のコードは、単純なモデルを実装しています。 新しい GUID を作成して、プレースホルダーを置き換えます。
 
 ```
 using System;

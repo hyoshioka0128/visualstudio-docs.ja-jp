@@ -1,5 +1,5 @@
 ---
-title: Analyzing Application Quality by Using Code Analysis Tools | Microsoft Docs
+title: コード分析ツールを使用したアプリケーション品質の分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -25,24 +25,24 @@ ms.locfileid: "74291205"
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>コード分析ツールを使用したアプリケーション品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In This Section [Analyzing Managed Code Quality](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) Visual Studio code analysis for managed code provides information about managed assemblies, such as violations of the programming and design rules set forth in the Microsoft .NET Framework Design Guidelines. 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
+このセクションの「マネージコード[品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)」では、「マネージコードの Visual Studio Code analysis」では、マネージアセンブリに関する情報を提供しています。たとえば、Microsoft .NET Framework デザインガイドラインに規定されているプログラミング規則やデザイン規則に違反しています。 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
 
- [Analyzing C/C++ Code Quality by Using Code Analysis](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) The C/C++ Code Analysis tool provides information to developers about possible defects in their C/C++ source code. このツールによってレポートされる一般的なコーディング エラーとしては、バッファー オーバーラン、初期化されていないメモリ、null ポインターの逆参照、メモリ リーク、リソース リークなどがあります。
+ [コード分析をC++使用した c/コード品質](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)の分析C++ c/コード分析ツールは、c/C++ソースコードで発生する可能性のある欠陥に関する情報を開発者に提供します。 このツールによってレポートされる一般的なコーディング エラーとしては、バッファー オーバーラン、初期化されていないメモリ、null ポインターの逆参照、メモリ リーク、リソース リークなどがあります。
 
- [Using Rule Sets to Group Code Analysis Rules](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Select and create *rule sets* to apply to your project.
+ [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)プロジェクトに適用する*規則セット*を選択して作成します。
 
- [Code Analysis Application Errors](../code-quality/code-analysis-application-errors.md) Fix errors in the code analysis functionality.
+ [コード分析アプリケーションエラー](../code-quality/code-analysis-application-errors.md)コード分析機能のエラーを修正します。
 
- [Enhancing Code Quality with Team Project Check-in Policies](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md) When you use Team Foundation Version Control (TFVC), you can create check-in policies for your team projects that enforce practices that lead to better code and more efficient group development. チェックイン ポリシーとは、チーム プロジェクト レベルで設定され、コードをチェックインする前に開発者のコンピューターに適用される規則です。
+ [チームプロジェクトチェックインポリシーによるコード品質の向上](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)Team Foundation バージョン管理 (TFVC) を使用すると、チームプロジェクトのチェックインポリシーを作成して、コードの向上とグループ開発の効率化を実現するプラクティスを適用することができます。 チェックイン ポリシーとは、チーム プロジェクト レベルで設定され、コードをチェックインする前に開発者のコンピューターに適用される規則です。
 
 ### <a name="code-analysis-for-drivers"></a>ドライバーのコード分析
  コード分析ツールでドライバーのソース コードを系統的に分析することにより、ドライバーの安定性と信頼性を向上させることができます。
 
- [Analyzing Driver Quality by Using Code Analysis Tools](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Code Analysis for Drivers is a compile-time static verification tool that detects basic coding errors in C and C++ programs and includes a specialized module that is designed to detect errors in (primarily) kernel-mode driver code. 静的ドライバー検証ツール (SDV) は、Windows カーネル モードのドライバーのソース コードを系統的に分析する静的検証ツールです。 SDV は、ドライバーが Windows オペレーティング システムのカーネルと適切にやり取りしているかどうかを判定します。
+ [コード分析ツールを使用したドライバー品質の分析](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)ドライバーのコード分析は、C およびC++プログラムの基本的なコーディングエラーを検出するコンパイル時の静的検証ツールであり、(主にカーネルモードのドライバーコード) のエラーを検出するように設計された特殊なモジュールが含まれています。 静的ドライバー検証ツール (SDV) は、Windows カーネル モードのドライバーのソース コードを系統的に分析する静的検証ツールです。 SDV は、ドライバーが Windows オペレーティング システムのカーネルと適切にやり取りしているかどうかを判定します。
 
- [Code Analysis for Drivers Warnings](https://go.microsoft.com/fwlink/?LinkId=225920) Describes the warnings that the Code Analysis for Drivers reports when it detects a possible error in driver code.
+ [ドライバーの警告のコード分析](https://go.microsoft.com/fwlink/?LinkId=225920)ドライバーのコード分析によってドライバーコードでエラーが検出された場合に報告される警告について説明します。
 
 ## <a name="related-tasks"></a>関連タスク
- [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insert description here.
+ [マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)ここに説明を挿入します。
 
- [Unit Test Your Code](../test/unit-test-your-code.md) Insert description here.
+ [コードの単体テスト](../test/unit-test-your-code.md)ここに説明を挿入します。

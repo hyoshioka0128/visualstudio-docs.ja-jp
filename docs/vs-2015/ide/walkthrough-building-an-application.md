@@ -22,7 +22,7 @@ ms.locfileid: "74296870"
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションをビルドする際に構成できるオプションの使用方法を習得できます。 サンプル アプリケーション用に、カスタムのビルド構成の作成、特定の警告メッセージの非表示設定、ビルド出力情報の拡張などを行います。
 
-このトピックは、次のセクションで構成されています。
+このトピックには、次のセクションが含まれています。
 
 [サンプル アプリケーションをインストールする](../ide/walkthrough-building-an-application.md)
 
@@ -44,7 +44,7 @@ ms.locfileid: "74296870"
 
 3. 検索ボックスに「`Introduction`」と指定してサンプルを検索します。
 
-    ![Extensions and Updates dialog box](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
+    ![[拡張機能と更新プログラム] ダイアログボックス](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
 4. 結果リストで、**Introduction to Building WPF Applications (Visual C#)** または **Introduction to Building WPF Applications (Visual Basic)** を選択します。
 
@@ -56,21 +56,21 @@ ms.locfileid: "74296870"
 
 1. **[新しいプロジェクト]** ダイアログ ボックスを開きます。
 
-     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../ide/media/exploreide-filenewproject.png "Exploreide-newprojectcsharp-FileNewProject")
 
 2. **[インストール済み]** カテゴリの **[サンプル]** カテゴリを選択して、Introduction to Building WPF Applications サンプルを表示します。
 
 3. ソリューションに「`IntroWPFcsharp`」という名前を付けます (Visual C# 用)。
 
-     ![New Project dialog box, Installed Samples](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![[新しいプロジェクト] ダイアログボックス、インストールされたサンプル](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     または
 
      ソリューションに「`IntroWPFvb`」という名前を付けます (Visual Basic 用)。
 
-     ![New Project dialog box, Visual Basic Sample](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
+     ![[新しいプロジェクト] ダイアログボックス、Visual Basic サンプル](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 ## <a name="BKMK_CreateBuildConfig"></a> カスタム ビルド構成を作成する
 
@@ -82,29 +82,29 @@ ms.locfileid: "74296870"
 
 1. **[構成マネージャー]** ダイアログ ボックスを開きます。
 
-    ![Build menu, Configuration Manager command](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![[ビルド] メニュー、Configuration Manager コマンド](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 2. **[アクティブ ソリューション構成]** 一覧の **[新規作成]** をクリックします。
 
 3. **[新しいソリューション構成]** ダイアログ ボックスで、新しい構成の名前として「`Test`」と入力し、既存のデバッグ構成から設定をコピーして、 **[OK]** をクリックします。
 
-    ![New Solution Configuration Dialog Box](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+    ![[新しいソリューション構成] ダイアログボックス](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
 4. **[アクティブ ソリューション プラットフォーム]** 一覧の **[新規作成]** をクリックします。
 
 5. **[新しいソリューション プラットフォーム]** ダイアログ ボックスで、 **[x64]** を選択します。x86 プラットフォームの設定はコピーしません。
 
-    ![New Solution Platform Dialog Box](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+    ![[新しいソリューションプラットフォーム] ダイアログボックス](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. **[OK]** を選択します。
+6. **[OK]** をクリックします。
 
    アクティブなソリューション構成が Test に変更され、アクティブなソリューション プラットフォームが x64 に設定されました。
 
-   ![Configuration Manager with Test configuration](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![テスト構成での Configuration Manager](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    **[標準]** ツール バーの **[ソリューション構成]** ボックスの一覧を使用すると、アクティブなソリューション構成を簡単に確認または変更することができます。
 
-   ![Solution Configuration option Standard Toolbar](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+   ![ソリューション構成オプションの標準ツールバー](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
 ## <a name="BKMK_building"></a> アプリケーションのビルド
 
@@ -118,11 +118,11 @@ ms.locfileid: "74296870"
 
   図 1: Visual Basic の警告
 
-  ![Output Window Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![出力ウィンドウ Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
   図 2: Visual C# の警告
 
-  ![Output Window Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![出力ウィンドウ Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 ## <a name="BKMK_hidewarning"></a> コンパイラの警告を非表示にする
 
@@ -138,7 +138,7 @@ ms.locfileid: "74296870"
 
 3. **[ビルド]** ページを選択し、 **[警告の表示なし]** ボックスで、警告番号 `1762` を指定します。
 
-     ![Build page, Project Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
+     ![[ビルド] ページ (プロジェクトデザイナー)](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
 
      詳細については、「[Build Page, Project Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)」([ビルド] ページ (プロジェクト デザイナー) (C#)) を参照してください。
 
@@ -146,7 +146,7 @@ ms.locfileid: "74296870"
 
      **[出力]** ウィンドウには、ビルドの概要情報のみが表示されます。
 
-     ![Output Window, Visual C&#35; Build Warnings](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![出力ウィンドウ、Visual C&#35;ビルドの警告](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Visual Basic のすべてのビルド警告を非表示にするには
 
@@ -158,7 +158,7 @@ ms.locfileid: "74296870"
 
 3. **[コンパイル]** ページで、 **[すべての警告を表示しない]** チェック ボックスをオンにします。
 
-    ![Compile page, Project Designer](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
+    ![[コンパイル] ページ (プロジェクトデザイナー)](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
 
     詳しくは、「[Visual Basic での警告の構成](../ide/configuring-warnings-in-visual-basic.md)」をご覧ください。
 
@@ -166,7 +166,7 @@ ms.locfileid: "74296870"
 
    **[出力]** ウィンドウには、ビルドの概要情報のみが表示されます。
 
-   ![Output Window, Visual Basic Build Warnings](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+   ![出力ウィンドウ、Visual Basic ビルドの警告](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
    詳細については、「[How to: Suppress Compiler Warnings](../ide/how-to-suppress-compiler-warnings.md)」(方法: コンパイラ警告を非表示にする) を参照してください。
 
@@ -181,7 +181,7 @@ ms.locfileid: "74296870"
 
 1. **[オプション]** ダイアログ ボックスを開きます。
 
-    ![[ツール] メニューの [オプション] コマンド](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![[ツール] メニューの [オプション] コマンド](../ide/media/exploreide-toolsoptionsmenu.png "Exploreide-newprojectcsharp-ToolsOptionsmenu")
 
 2. **[プロジェクトおよびソリューション]** カテゴリを選択し、 **[ビルド/実行]** ページを選択します。
 
@@ -212,7 +212,7 @@ ms.locfileid: "74296870"
 
 1. **プロジェクト デザイナー**を開きます。
 
-     ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![[表示] メニューの [プロパティページ] コマンド](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. **[コンパイル]** ページをクリックします。
 
@@ -229,13 +229,13 @@ ms.locfileid: "74296870"
 
 6. アプリケーションをビルドします。
 
-     ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "Exploreide-newprojectcsharp-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>To specify a release build for Visual C\#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Visual C\# のリリースビルドを指定するには
 
 1. **プロジェクト デザイナー**を開きます。
 
-    ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+    ![[表示] メニューの [プロパティページ] コマンド](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. **[ビルド]** ページを選びます。
 
@@ -252,13 +252,13 @@ ms.locfileid: "74296870"
 
 6. アプリケーションをビルドします。
 
-    ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "Exploreide-newprojectcsharp-BuildSolution")
 
    指定したネットワーク パスに、実行可能ファイルがコピーされます。 このパスは \\\myserver\builds\\*FileName*.exe になります。
 
    これで、このチュートリアルを完了できました。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [チュートリアル: プロジェクトの構築 (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

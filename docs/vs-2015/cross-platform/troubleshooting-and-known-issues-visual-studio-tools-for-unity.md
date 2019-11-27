@@ -39,7 +39,7 @@ ms.locfileid: "74297657"
  詳細については、 [この stackoverflow の質問に対する回答](https://stackoverflow.com/questions/20086755/unityvs-visual-studio-can-not-open/24035907#24035907)を参照してください。  
   
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows 8 の場合に Unity ターゲット フレームワークをダウンロードするよう Visual Studio から求められる  
- UnityVS には .NET Framework 3.5 が必要ですが、Windows 8 では既定でインストールされません。 この問題を解決するには、.NET Framework 3.5 のダウンロードとインストールに関する手順に従ってください。  
+ UnityVS には .Net framework 3.5 が必要ですが、Windows 8 では、これが既定でインストールされることはありません。 この問題を解決するには、.NET Framework 3.5 のダウンロードとインストールに関する手順に従ってください。  
   
 ## <a name="known-issues"></a>既知の問題  
  デバッガーが Unity の古いバージョンの C# コンパイラとやり取りする方法に起因する、Visual Studio Tools for Unity の既知の問題があります。 これらの問題を修正するために作業中ですが、修正されるまでは以下の問題が発生する可能性があります。  

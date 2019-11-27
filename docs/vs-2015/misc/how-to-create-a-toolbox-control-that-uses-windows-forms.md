@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a Toolbox Control That Uses Windows Forms | Microsoft Docs'
+title: '方法: Windows フォームを使用するツールボックスコントロールを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -29,17 +29,17 @@ ms.locfileid: "74300424"
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Windows フォームのツールボックス コントロール プロジェクトを作成するには  
   
-1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
+1. **[ファイル]** メニューの **[新規作成]** をクリックし、 **[プロジェクト]** をクリックします。  
   
 2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Studio にインストールされたテンプレート]** で、使用するプログラミング言語のノードをクリックして、 **[拡張機能]** をクリックします。 プロジェクトの種類の一覧で、 **[Windows フォーム ツールボックス コントロール]** を選びます。  
   
-3. **[名前]** ボックスに、プロジェクトに使用する名前を入力します。 **[OK]** をクリックします。  
+3. **[名前]** ボックスに、プロジェクトの名前を入力します。 **[OK]** をクリックすると、  
   
      Visual Studio は、ユーザー コントロール、 **[ツールボックス]** にコントロールを配置する属性、展開用の VSIX マニフェストを含むソリューションを作成します。  
   
 #### <a name="to-build-the-control-ui"></a>コントロール UI を作成するには  
   
-1. **[ソリューション エクスプローラー]** で ToolboxControl.cs をダブルクリックして、デザイナーで開きます。  
+1. **[ソリューション エクスプローラー]** で ToolboxControl.cs をダブル クリックします。ToolboxControl.cs がデザイナーで開きます。  
   
 2. **[ツールボックス]** から必要なコントロールをデザイン画面にドラッグし、希望するデザインに応じて配置します。  
   
@@ -87,7 +87,7 @@ ms.locfileid: "74300424"
   
 2. .vsix ファイルをネットワークまたは Web サイトにアップロードします。  
   
-     If you upload the file to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, other users can use **Extension Manager** in Visual Studio to find the control and install it.  
+     ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは Visual Studio の**拡張機能マネージャー**を使用してコントロールを検索してインストールできます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)

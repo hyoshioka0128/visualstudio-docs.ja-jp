@@ -1,5 +1,5 @@
 ---
-title: Annotating Function Parameters and Return Values | Microsoft Docs
+title: 関数のパラメーターと戻り値に注釈を付ける |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -136,76 +136,76 @@ ms.locfileid: "74295854"
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This article describes typical uses of annotations for simple function parameters—scalars, and pointers to structures and classes—and most kinds of buffers.  This article also shows common usage patterns for annotations. For additional annotations that are related to functions, see [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)  
+この記事では、単純な関数パラメーター (スカラー、構造体とクラスへのポインター)、およびほとんどの種類のバッファーに対する注釈の一般的な使用方法について説明します。  この記事では、注釈の一般的な使用パターンについても説明します。 関数に関連するその他の注釈については、「[関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)」を参照してください。  
   
 ## <a name="pointer-parameters"></a>ポインター パラメーター  
- For the annotations in the following table, when a pointer parameter is being annotated, the analyzer reports an error if the pointer is null.  This applies to pointers and to any data item that's pointed to.  
+ 次の表の注釈については、ポインターパラメーターに注釈を付けると、ポインターが null の場合、アナライザーはエラーを報告します。  これは、ポインターと、ポイントされている任意のデータ項目に適用されます。  
   
- **Annotations and Descriptions**  
+ **注釈と説明**  
   
 - `_In_`  
   
-     Annotates input parameters that are scalars, structures, pointers to structures and the like.  Explicitly may be used on simple scalars.  The parameter must be valid in pre-state and will not be modified.  
+     スカラー、構造体、構造体へのポインター、およびなどの入力パラメーターに注釈を入力します。  単純なスカラーでは、明示的に使用できます。  パラメーターは、事前状態で有効である必要があり、変更されません。  
   
 - `_Out_`  
   
-     Annotates output parameters that are scalars, structures, pointers to structures and the like.  Do not apply this to an object that cannot return a value—for example, a scalar that's passed by value.  The parameter does not have to be valid in pre-state but must be valid in post-state.  
+     スカラー、構造体、構造体へのポインター、およびなどの出力パラメーターに注釈を記述します。  値で渡されるスカラーなど、値を返すことができないオブジェクトには適用しないでください。  パラメーターは、事前状態では有効である必要はありませんが、事後状態で有効である必要があります。  
   
 - `_Inout_`  
   
-     Annotates a parameter that will be changed by the function.  It must be valid in both pre-state and post-state, but is assumed to have different values before and after the call. Must apply to a modifiable value.  
+     関数によって変更されるパラメーターに注釈を設定します。  これは、事前状態と事後状態の両方で有効である必要がありますが、呼び出しの前後に異なる値があると見なされます。 変更可能な値に適用する必要があります。  
   
 - `_In_z_`  
   
-     A pointer to a null-terminated string that's used as input.  The string must be valid in pre-state.  Variants of `PSTR`, which already have the correct annotations, are preferred.  
+     入力として使用される、null で終わる文字列へのポインター。  文字列は、事前状態で有効である必要があります。  既に正しい注釈がある `PSTR`のバリアントを使用することをお勧めします。  
   
 - `_Inout_z_`  
   
-     A pointer to a null-terminated character array that will be modified.  It must be valid before and after the call, but the value is assumed to have changed.  The null terminator may be moved, but only the elements up to the original null terminator may be accessed.  
+     変更される null で終わる文字配列へのポインター。  呼び出しの前後で有効である必要がありますが、値は変更されたと見なされます。  Null 終端文字は移動できますが、元の null 終端文字までの要素のみがアクセスされる可能性があります。  
   
 - `_In_reads_(s)`  
   
      `_In_reads_bytes_(s)`  
   
-     A pointer to an array, which is read by the function.  The array is of size `s` elements, all of which must be valid.  
+     関数によって読み取られる配列へのポインター。  配列のサイズは `s` 要素で、すべて有効である必要があります。  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。  
   
 - `_In_reads_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  
+     Null で終了し、既知のサイズを持つ配列へのポインター。 Null 終端文字までの要素 (null 終端文字がない場合は `s`) は、事前状態で有効である必要があります。  サイズがバイト単位でわかっている場合は、要素サイズによってスケール `s` ます。  
   
 - `_In_reads_or_z_(s)`  
   
-     A pointer to an array that is null-terminated or has a known size, or both. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  (Used for the `strn` family.)  
+     Null で終わるか、既知のサイズ (またはその両方) を持つ配列へのポインター。 Null 終端文字までの要素 (null 終端文字がない場合は `s`) は、事前状態で有効である必要があります。  サイズがバイト単位でわかっている場合は、要素サイズによってスケール `s` ます。  (`strn` ファミリに使用されます)。  
   
 - `_Out_writes_(s)`  
   
      `_Out_writes_bytes_(s)`  
   
-     A pointer to an array of `s` elements (resp. bytes) that will be written by the function.  The array elements do not have to be valid in pre-state, and the number of elements that are valid in post-state is unspecified.  If there are annotations on the parameter type, they are applied in post-state. 次に例を示します。  
+     関数によって書き込まれる `s` elements (resp) の配列へのポインター。  配列要素は、事前状態で有効である必要はなく、事後状態で有効な要素の数が指定されていません。  パラメーターの型に注釈がある場合は、事後状態で適用されます。 次に例を示します。  
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     In this example, the caller provides a buffer of `size` elements for `p1`.  `MyStringCopy` makes some of those elements valid. More importantly, the `_Null_terminated_` annotation on `PWSTR` means that `p1` is null-terminated in post-state.  In this way, the number of valid elements is still well-defined, but a specific element count is not required.  
+     この例では、呼び出し元が `p1`用の `size` 要素のバッファーを提供します。  `MyStringCopy` によって、これらの要素の一部が有効になります。 さらに重要なのは、`PWSTR` の `_Null_terminated_` 注釈は、`p1` が null で終了することを意味します。  この方法では、有効な要素の数は引き続き明確に定義されますが、特定の要素数は必要ありません。  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。  
   
 - `_Out_writes_z_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up through the null terminator—which must be present—must be valid.  If the size is known in bytes, scale `s` by the element size.  
+     `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後の状態では、null 終端文字 (存在する必要がある) を介して要素が有効である必要があります。  サイズがバイト単位でわかっている場合は、要素サイズによってスケール `s` ます。  
   
 - `_Inout_updates_(s)`  
   
      `_Inout_updates_bytes_(s)`  
   
-     A pointer to an array, which is both read and written to in the function.  It is of size `s` elements, and valid in pre-state and post-state.  
+     配列へのポインター。関数内で読み取りと書き込みの両方を行います。  これは `s` の要素のサイズで、事前状態と事後状態で有効です。  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Null で終了し、既知のサイズを持つ配列へのポインター。 Null 終端文字 (存在する必要がある) までの要素は、事前状態と事後状態の両方で有効である必要があります。  事後状態の値は、前の状態の値とは異なるものと見なされます。これには、null 終端文字の場所も含まれます。 サイズがバイト単位でわかっている場合は、要素サイズによってスケール `s` ます。  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -215,11 +215,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後状態では、`c`番目の要素までの要素が有効である必要があります。  サイズがバイト単位でわかっている場合は、スケール `s` し、要素サイズで `c` します。または、次のように定義されている `_bytes_` バリアントを使用します。  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  (例:  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  例 :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -227,13 +227,13 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     配列へのポインター。この配列は、関数によって読み取られ、書き込まれます。  これは `s` の要素のサイズであり、すべての要素が事前状態で有効である必要があり、`c` の要素は事後状態で有効である必要があります。  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Null で終了し、既知のサイズを持つ配列へのポインター。 Null 終端文字 (存在する必要がある) までの要素は、事前状態と事後状態の両方で有効である必要があります。  事後状態の値は、前の状態の値とは異なるものと見なされます。これには、null 終端文字の場所も含まれます。 サイズがバイト単位でわかっている場合は、要素サイズによってスケール `s` ます。  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -243,11 +243,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後状態では、`c`番目の要素までの要素が有効である必要があります。  サイズがバイト単位でわかっている場合は、スケール `s` し、要素サイズで `c` します。または、次のように定義されている `_bytes_` バリアントを使用します。  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  (例:  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  例 :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -255,72 +255,72 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     配列へのポインター。この配列は、関数によって読み取られ、書き込まれます。  これは `s` の要素のサイズであり、すべての要素が事前状態で有効である必要があり、`c` の要素は事後状態で有効である必要があります。  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。  
   
 - `_Inout_updates_all_(s)`  
   
      `_Inout_updates_bytes_all_(s)`  
   
-     A pointer to an array, which is both read and written by the function of size `s` elements. Defined as equivalent to:  
+     配列へのポインター。サイズ `s` の要素の関数によって読み取られ、書き込まれます。 次の同等のものとして定義されます。  
   
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the pre-state and post-state.  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、事前状態と事後状態で有効です。  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。  
   
 - `_In_reads_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     式 `p` – `_Curr_` (つまり、`p` から `_Curr_`) を格納する配列へのポインターは、適切な言語標準によって定義されます。  `p` 前の要素は、事前状態で有効である必要があります。  
   
 - `_In_reads_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     式 `p` – `_Curr_` (つまり、`p` から `_Curr_`) が適切な言語標準によって定義されている null で終わる配列へのポインター。  `p` 前の要素は、事前状態で有効である必要があります。  
   
 - `_Out_writes_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     式 `p` – `_Curr_` (つまり、`p` から `_Curr_`) を格納する配列へのポインターは、適切な言語標準によって定義されます。  `p` 前の要素は、事前状態で有効である必要はなく、事後状態で有効である必要があります。  
   
 - `_Out_writes_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     式 `p` – `_Curr_` (つまり、`p` から `_Curr_`) が適切な言語標準によって定義されている null で終わる配列へのポインター。  `p` 前の要素は、事前状態で有効である必要はなく、事後状態で有効である必要があります。  
   
 ## <a name="optional-pointer-parameters"></a>省略可能なポインター パラメーター  
- When a pointer parameter annotation includes `_opt_`, it indicates that the parameter may be null. Otherwise, the annotation performs the same as the version that doesn't include `_opt_`. Here is a list of the `_opt_` variants of the pointer parameter annotations:  
+ ポインターパラメーター注釈に `_opt_`が含まれている場合は、パラメーターが null である可能性があることを示します。 それ以外の場合、注釈は `_opt_`を含まないバージョンと同じように実行されます。 ポインターパラメーター注釈の `_opt_` バリアントの一覧を次に示します。  
   
 ||||  
 |-|-|-|  
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|  
   
 ## <a name="output-pointer-parameters"></a>出力のポインター パラメーター  
- Output pointer parameters require special notation to disambiguate null-ness on the parameter and the pointed-to location.  
+ 出力ポインターパラメーターは、パラメーターとポイント先の位置を明確に区別するために特別な表記を必要とします。  
   
- **Annotations and Descriptions**  
+ **注釈と説明**  
   
 - `_Outptr_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location cannot be null and must be valid.  
+   パラメーターを null にすることはできません。また、post 状態では、ポイント先の場所を null にすることはできず、有効である必要があります。  
   
 - `_Outptr_opt_`  
   
-   Parameter may be null, but in the post-state the pointed-to location cannot be null and must be valid.  
+   パラメーターは null でもかまいませんが、post 状態では、ポイント先の場所を null にすることはできず、有効である必要があります。  
   
 - `_Outptr_result_maybenull_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location can be null.  
+   パラメーターを null にすることはできません。また、状態を示す位置を null にすることもできます。  
   
 - `_Outptr_opt_result_maybenull_`  
   
-   Parameter may be null, and in the post-state the pointed-to location can be null.  
+   パラメーターは null にすることができます。また、状態を示す位置を null にすることもできます。  
   
-  In the following table, additional substrings are inserted into the annotation name to further qualify the meaning of the annotation.  The various substrings are `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, and `_to_`.  
+  次の表では、注釈の意味をさらに修飾するために、注釈名に追加の部分文字列が挿入されています。  さまざまな部分文字列は、`_z`、`_COM_`、`_buffer_`、`_bytebuffer_`、および `_to_`です。  
   
 > [!IMPORTANT]
-> If the interface that you are annotating is COM, use the COM form of these annotations. Do not use the COM annotations with any other type interface.  
+> 注釈を付けているインターフェイスが COM である場合は、これらの注釈の COM 形式を使用します。 COM 注釈は、他の型インターフェイスと一緒に使用しないでください。  
   
- **Annotations and Descriptions**  
+ **注釈と説明**  
   
 - `_Outptr_result_z_`  
   
@@ -330,7 +330,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Ouptr_opt_result_maybenull_z_`  
   
-   The returned pointer has the `_Null_terminated_` annotation.  
+   返されたポインターには `_Null_terminated_` 注釈があります。  
   
 - `_COM_Outptr_`  
   
@@ -340,7 +340,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_COM_Outptr_opt_result_maybenull_`  
   
-   The returned pointer has COM semantics, and therefore carries an `_On_failure_` post-condition that the returned pointer is null.  
+   返されたポインターには COM セマンティクスがあるため、返されたポインターが null であることを示す `_On_failure_` 事後条件が発生します。  
   
 - `_Outptr_result_buffer_(s)`  
   
@@ -350,7 +350,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_(s)`  
   
-   The returned pointer points to a valid buffer of size `s` elements or bytes.  
+   返されたポインターは、`s` 要素またはバイトのサイズの有効なバッファーを指しています。  
   
 - `_Outptr_result_buffer_to_(s, c)`  
   
@@ -360,102 +360,102 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-   The returned pointer points to a buffer of size `s` elements or bytes, of which the first `c` are valid.  
+   返されたポインターは、1つ目の `c` が有効なサイズ `s` 要素またはバイト数のバッファーを指します。  
   
-  Certain interface conventions presume that output parameters are nullified on failure.  Except for explicitly COM code, the forms in the following table are preferred.  For COM code, use the corresponding COM forms that are listed in the previous section.  
+  特定のインターフェイスの規則では、出力パラメーターが失敗時に nullified されることを前提としています。  明示的な COM コードを除き、次の表のフォームを使用することをお勧めします。  COM コードの場合は、前のセクションで示した対応する COM フォームを使用します。  
   
-  **Annotations and Descriptions**  
+  **注釈と説明**  
   
 - `_Result_nullonfailure_`  
   
-   Modifies other annotations. The result is set to null if the function fails.  
+   他の注釈を変更します。 関数が失敗した場合、結果は null に設定されます。  
   
 - `_Result_zeroonfailure_`  
   
-   Modifies other annotations. The result is set to zero if the function fails.  
+   他の注釈を変更します。 関数が失敗した場合、結果は0に設定されます。  
   
 - `_Outptr_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a non-optional parameter.  
+   関数が成功した場合、返されるポインターは有効なバッファーを指します。関数が失敗した場合は null を指します。 この注釈は、省略可能なパラメーターに対してのみ使用されます。  
   
 - `_Outptr_opt_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for an optional parameter.  
+   関数が成功した場合、返されるポインターは有効なバッファーを指します。関数が失敗した場合は null を指します。 この注釈は省略可能なパラメーターのためのものです。  
   
 - `_Outref_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a reference parameter.  
+   関数が成功した場合、返されるポインターは有効なバッファーを指します。関数が失敗した場合は null を指します。 この注釈は、参照パラメーターを対象としています。  
   
 ## <a name="output-reference-parameters"></a>出力の参照パラメーター  
- A common use of the reference parameter is for output parameters.  For simple output reference parameters—for example, `int&`—`_Out_` provides the correct semantics.  However, when the output value is a pointer—for example `int *&`—the equivalent pointer annotations like `_Outptr_ int **` don’t provide the correct semantics.  To concisely express the semantics of output reference parameters for pointer types, use these composite annotations:  
+ 参照パラメーターの一般的な使用方法は、出力パラメーター用です。  単純な出力参照パラメーター (たとえば、`int&`) の場合、`_Out_` は正しいセマンティクスを提供します。  ただし、出力値がポインター (`int *&`など) の場合、`_Outptr_ int **` のような同等のポインター注釈は、正しいセマンティクスを提供しません。  ポインター型の出力参照パラメーターのセマンティクスを簡潔に表現するには、次の複合注釈を使用します。  
   
- **Annotations and Descriptions**  
+ **注釈と説明**  
   
 - `_Outref_`  
   
-     Result must be valid in post-state and cannot be null.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。  
   
 - `_Outref_result_maybenull_`  
   
-     Result must be valid in post-state, but may be null in post-state.  
+     結果は事後状態で有効である必要がありますが、事後状態では null である可能性があります。  
   
 - `_Outref_result_buffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` elements.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。 `s` 要素のサイズの有効なバッファーを指しています。  
   
 - `_Outref_result_bytebuffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` bytes.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。 は、サイズ `s` バイトの有効なバッファーを指します。  
   
 - `_Outref_result_buffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` elements, of which the first `c` are valid.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。 最初の `c` が有効な `s` 要素のバッファーを指します。  
   
 - `_Outref_result_bytebuffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` bytes of which the first `c` are valid.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。 最初の `c` が有効な `s` バイトのバッファーを指します。  
   
 - `_Outref_result_buffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` valid elements.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。 有効なバッファーのサイズ `s` 有効な要素を指しています。  
   
 - `_Outref_result_bytebuffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of `s` bytes of valid elements.  
+     結果は、事後の状態で有効である必要があります。 null にすることはできません。 有効なバッファー `s` バイトの有効な要素をポイントします。  
   
 - `_Outref_result_buffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` elements.  
+     結果は事後状態で有効である必要がありますが、事後状態では null である可能性があります。 `s` 要素のサイズの有効なバッファーを指しています。  
   
 - `_Outref_result_bytebuffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` bytes.  
+     結果は事後状態で有効である必要がありますが、事後状態では null である可能性があります。 は、サイズ `s` バイトの有効なバッファーを指します。  
   
 - `_Outref_result_buffer_to_maybenull_(s, c)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to buffer of `s` elements, of which the first `c` are valid.  
+     結果は事後状態で有効である必要がありますが、事後状態では null である可能性があります。 最初の `c` が有効な `s` 要素のバッファーを指します。  
   
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to buffer of `s` bytes of which the first `c` are valid.  
+     結果は事後状態で有効である必要がありますが、post 状態では null である可能性があります。 最初の `c` が有効な `s` バイトのバッファーを指します。  
   
 - `_Outref_result_buffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of size `s` valid elements.  
+     結果は事後状態で有効である必要がありますが、post 状態では null である可能性があります。 有効なバッファーのサイズ `s` 有効な要素を指しています。  
   
 - `_Outref_result_bytebuffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of `s` bytes of valid elements.  
+     結果は事後状態で有効である必要がありますが、post 状態では null である可能性があります。 有効なバッファー `s` バイトの有効な要素をポイントします。  
   
 ## <a name="return-values"></a>戻り値  
- The return value of a function resembles an `_Out_` parameter but is at a different level of de-reference, and you don't have to consider the concept of the pointer to the result.  For the following annotations, the return value is the annotated object—a scalar, a pointer to a struct, or a pointer to a buffer. These annotations have the same semantics as the corresponding `_Out_` annotation.  
+ 関数の戻り値は `_Out_` パラメーターに似ていますが、逆参照のレベルが異なるため、結果へのポインターの概念を考慮する必要はありません。  次の注釈について、戻り値は注釈付きオブジェクト (スカラー、構造体へのポインター、またはバッファーへのポインター) です。 これらの注釈は、対応する `_Out_` 注釈と同じセマンティクスを持ちます。  
   
 |||  
 |-|-|  
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|  
   
 ## <a name="other-common-annotations"></a>その他の一般的な注釈  
- **Annotations and Descriptions**  
+ **注釈と説明**  
   
 - `_In_range_(low, hi)`  
   
@@ -471,36 +471,36 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Field_range_(low, hi)`  
   
-     The parameter, field, or result is in the range (inclusive) from `low` to `hi`.  Equivalent to `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     パラメーター、フィールド、または結果は、`low` から `hi`までの範囲内にあります。  注釈付きオブジェクトに適切な状態または状態の条件と共に適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` と同じです。  
   
     > [!IMPORTANT]
-    > Although the names contain "in" and "out", the semantics of `_In_` and `_Out_` do **not** apply to these annotations.  
+    > 名前には "in" と "out" が含まれていますが、`_In_` と `_Out_` のセマンティクスは、これらの注釈には適用**されません**。  
   
 - `_Pre_equal_to_(expr)`  
   
      `_Post_equal_to_(expr)`  
   
-     The annotated value is exactly `expr`.  Equivalent to `_Satisfies_(_Curr_ == expr)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     注釈が付けられた値は正確に `expr`ます。  注釈付きオブジェクトに適切な状態または状態の条件と共に適用される `_Satisfies_(_Curr_ == expr)` と同じです。  
   
 - `_Struct_size_bytes_(size)`  
   
-     Applies to a struct or class declaration.  Indicates that a valid object of that type may be larger than the declared type, with the number of bytes being given by `size`.  (例:  
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  例 :  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
-     The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:  
+     `MyStruct *` 型のパラメーター `pM` のバイト単位のバッファーサイズは次のようになります。  
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>関連資料  
- [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [コード分析チームのブログ](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>参照  
- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Understanding SAL](../code-quality/understanding-sal.md)   
- [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)   
- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+## <a name="see-also"></a>関連項目  
+ [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL](../code-quality/understanding-sal.md)  について  
+ [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
+ [構造体とクラスに注釈を付ける](../code-quality/annotating-structs-and-classes.md)   
+ [ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)   
+ [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
+ [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)

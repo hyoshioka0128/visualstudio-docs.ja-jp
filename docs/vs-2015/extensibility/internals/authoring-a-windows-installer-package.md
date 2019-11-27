@@ -1,5 +1,5 @@
 ---
-title: Authoring a Windows Installer Package | Microsoft Docs
+title: Windows インストーラーパッケージを作成する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74301133"
 # <a name="authoring-a-windows-installer-package"></a>Windows インストーラー パッケージの編集
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Data drives the Windows Installer model. Rather than writing a procedural script to copy files and write registry entries, for example, you author rows and columns in database tables that contain file and registry data.  
+データは Windows インストーラーモデルを駆動します。 たとえば、ファイルをコピーしてレジストリエントリを書き込むための手続き型スクリプトを記述するのではなく、ファイルとレジストリデータを格納するデータベーステーブルの行と列を作成します。  
   
 ## <a name="database-entries"></a>[データベース エントリ]  
- To install a VSPackage, a Windows Installer package must contain database entries to perform the following tasks:  
+ VSPackage をインストールするには、Windows インストーラーパッケージに次のタスクを実行するためのデータベースエントリが含まれている必要があります。  
   
-- Search the system to locate the versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] your VSPackage supports (using Windows Installer tables that include AppSearch, CompLocator, RegLocator, DrLocator, and Signature).  
+- システムを検索して、VSPackage がサポートしている [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のバージョンを探します (AppSearch、CompLocator、RegLocator、DrLocator、署名を含むテーブル Windows インストーラーを使用します)。  
   
-- Cancel the installation if no supported version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is installed or if another system requirement of the VSPackage is not met (using the LaunchCondition table).  
+- サポートされているバージョンの [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がインストールされていない場合、または VSPackage の別のシステム要件 (LaunchCondition テーブルを使用) が満たされていない場合は、インストールをキャンセルします。  
   
-- Install the VSPackage and dependent files (using the directory, component, and file tables).  
+- ディレクトリ、コンポーネント、およびファイルテーブルを使用して、VSPackage ファイルと依存ファイルをインストールします。  
   
-- Add appropriate information for the VSPackage to the registry (using the Registry table).  
+- VSPackage の適切な情報をレジストリに追加します (レジストリテーブルを使用します)。  
   
-- Integrate the VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by calling **devenv.exe /setup** (using the CustomAction table).  
+- **Devenv.exe/セットアップ**を呼び出して (CustomAction テーブルを使用して) [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の VSPackage を統合します。  
   
-  For more information, see [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  詳細については、「 [Windows インストーラー](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)」を参照してください。  
   
-## <a name="setup-tools"></a>Setup Tools  
- A variety of third-party setup tools provide a development environment for Windows Installer packages. Two free tools are the following:  
+## <a name="setup-tools"></a>セットアップツール  
+ さまざまなサードパーティ製セットアップツールは、Windows インストーラーパッケージの開発環境を提供します。 次の2つの無料ツールがあります。  
   
 - InstallShield Limited Edition  
   
-   You can get a limited version of InstallShield through the Visual Studio **New Project** dialog. Expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template.  
+   Visual Studio の **[新しいプロジェクト]** ダイアログボックスでは、InstallShield の限定バージョンを取得できます。 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** を選択します。 InstallShield テンプレートを選択します。  
   
 - Windows Installer XML Toolset  
   
-   The Toolset builds Windows Installer packages from XML source files. The Toolset is a Microsoft open-source project. You can download the source code and executables from [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/).  
+   ツールセットは、XML ソースファイルから Windows インストーラーパッケージをビルドします。 ツールセットは、Microsoft オープンソースプロジェクトです。 ソースコードと実行可能ファイルは[http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/)からダウンロードできます。  
   
-  For commercial products that integrate into [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by using the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], see [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
+  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]を使用して [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] に統合される商用製品の場合は、「 [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)」を参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Windows インストーラーによる VSPackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

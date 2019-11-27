@@ -38,17 +38,17 @@ ms.locfileid: "74298056"
 
 |||
 |------------------|----------------|
-|![Visual Studio のダウンロード](../install/media/downloads.png "ダウンロード") |**Downloads**: To install Visual Studio 2015, you can download a product executable file from the  [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) page (subscription required), or use the installation media from the boxed product. [Learn more about how to download current or previous versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
-|![Learn more about features](../install/media/features.png "フィーチャー") |**Features**: To learn  more about the features in Visual Studio 2015, see the release notes for [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), and [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Find out what's in each SKU](../install/media/sku.png "SKU") |**SKU**: Visual Studio 2015 の各エディションで提供しているものについては、「[Visual Studio 製品の比較](https://go.microsoft.com/fwlink/?LinkID=242142)」ページを参照してください。|
-|![View system requirements](../install/media/system-requirements.png "システム要件") |**System Requirements**: To view the system requirements for each edition of Visual Studio 2015, see the [Visual Studio 2015 Compatibility](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) page.|
-|![Locate your Product Key](../install/media/product-keys.png "プロダクト キー") |**Product Keys**: To locate your product key, see the [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) topic.|
-|![Find out about licensing](../install/media/licensing.png "ライセンス") |**Licensing**: To find out about licensing options for both individuals or enterprise customers, see  the [Visual Studio and MSDN Licensing](https://www.microsoft.com/download/details.aspx?id=13350) white paper.|
+|![Visual Studio のダウンロード](../install/media/downloads.png "ダウンロード") |**ダウンロード**: Visual Studio 2015 をインストールするには、 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)ページ (サブスクリプションが必要) から製品の実行可能ファイルをダウンロードするか、ボックス化された製品のインストールメディアを使用します。 [Visual Studio の現在または以前のバージョンをダウンロードする方法については、こちらを参照して](https://www.visualstudio.com/vs/older-downloads/)ください。|
+|![機能についての詳細情報](../install/media/features.png "機能") |**機能**: Visual Studio 2015 の機能の詳細については、 [RTM](https://www.visualstudio.com/news/vs2015-vs)、 [update 1](https://www.visualstudio.com/news/vs2015-update1-vs)、 [update 2](https://www.visualstudio.com/news/vs2015-update2-vs)、 [update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)のリリースノートを参照してください。|
+|![各 SKU の内容を確認する](../install/media/sku.png "SKU") |**SKU**: Visual Studio 2015 の各エディションで提供しているものについては、「[Visual Studio 製品の比較](https://go.microsoft.com/fwlink/?LinkID=242142)」ページを参照してください。|
+|![システム要件の表示](../install/media/system-requirements.png "システム要件") |**システム要件**: visual studio 2015 の各エディションのシステム要件を表示するには、 [visual Studio 2015 の互換性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)に関するページを参照してください。|
+|![プロダクトキーを探す](../install/media/product-keys.png "プロダクト キー") |**プロダクト**キー: プロダクトキーを検索するには、「[方法: Visual Studio プロダクトキーを検索](../install/how-to-locate-the-visual-studio-product-key.md)する」を参照してください。|
+|![ライセンスについて確認する](../install/media/licensing.png "ライセンス") |**ライセンス**: 個人または企業のお客様のライセンスオプションの詳細については、 [VISUAL Studio と MSDN のライセンス](https://www.microsoft.com/download/details.aspx?id=13350)に関するホワイトペーパーを参照してください。|
 
-## <a name="custom"></a> Default vs. Custom Setup
+## <a name="custom"></a>既定値とカスタムセットアップ
  Visual Studio 2015 をインストールするときに、日常的に使用するコンポーネントを含めたり除外したりできます。 一般的に、既定のインストールはカスタム インストールよりサイズが小さく、インストールにかかる時間も短くなります。 また、以前のバージョンで既定でインストールされていたコンポーネントの多数が、このバージョンでは、明示的に選択する必要があるカスタム コンポーネントと見なされるようになりました。
 
- ![Visual Studio 2015 Setup Dialog](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Visual Studio 2015 セットアップダイアログ](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
  カスタム コンポーネントに含まれるのは、Visual C++、Visual F#、SQL Server Data Tools、クロス プラットフォームのモバイル ツールおよび SDK、サード パーティの SDK、拡張機能などです。 カスタム コンポーネントはいずれも、初期セットアップ時に選択しなくても後でインストールすることができます。
 
@@ -57,17 +57,17 @@ ms.locfileid: "74298056"
 
  カスタム コンポーネントの完全な一覧は、次のとおりです。
 
-|Feature Sets|コンポーネント|
+|機能セット|Components|
 |------------------|----------------|
-|**更新**|Visual Studio 2015 更新プログラム 3|
+|**更新プログラム**|Visual Studio 2015 更新プログラム 3|
 |**プログラミング言語**|Visual C++<br />Visual F#<br />Python Tools for Visual Studio|
-|**Windows 開発および Web 開発**|ClickOnce 発行ツール<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (3rd Party)<br />Silverlight 開発キット<br />ユニバーサル Windows アプリ開発ツール<br />Windows 10 のツールおよび SDK<br />Windows 8.1 および Windows Phone 8.0/8.1 ツール<br />Windows 8.1 のツールおよび SDK|
+|**Windows 開発および Web 開発**|ClickOnce Publishing Tools<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (サードパーティ)<br />Silverlight 開発キット<br />ユニバーサル Windows アプリ開発ツール<br />Windows 10 のツールおよび SDK<br />Windows 8.1 および Windows Phone 8.0/8.1 ツール<br />Windows 8.1 のツールおよび SDK|
 |**クロス プラットフォームのモバイル開発**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />iOS/Android 向け Visual C++ モバイル開発<br />Clang with Microsoft CodeGen|
-|**Common Tools and Software Development Kits**|Android Native Development Kit (3rd Party)<br /> Android SDK [3rd Party]<br />Android SDK Setup APIs (3rd Party)<br />Apache Ant (3rd Party)<br /> Java SE Development Kit (3rd Party)<br /> Joyent Node.js (3rd Party)|
-|**一般的なツール**|Git for Windows (3rd Party)<br />GitHub Extension for Visual Studio (3rd Party)<br /> Visual Studio 機能拡張ツール|
+|**一般的なツールとソフトウェア開発キット**|Android Native Development Kit (サードパーティ)<br /> Android SDK [サードパーティ]<br />Android SDK セットアップ Api (サードパーティ)<br />Apache Ant (サードパーティ)<br /> Java SE Development Kit (サードパーティ)<br /> Joyent node.js (サードパーティ)|
+|**一般的なツール**|Git for Windows (サードパーティ)<br />Visual Studio 用の GitHub 拡張機能 (サードパーティ)<br /> Visual Studio 機能拡張ツール|
 
 ## <a name="installing"></a> Visual Studio のインストール
- You can install Visual Studio by using installation media (DVDs), by using your Visual Studio subscription service from the [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) website, by downloading  a web installer from the [Visual Studio Downloads](https://go.microsoft.com/fwlink/?LinkId=517106) website, or by creating an offline installation layout (see the [Create an Offline Installation of Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) page for more details).
+ インストールメディア (Dvd) を使用して Visual Studio をインストールするには、 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) web サイトから visual studio サブスクリプションサービスを使用するか、 [Visual studio のダウンロード](https://go.microsoft.com/fwlink/?LinkId=517106)web サイトから web インストーラーをダウンロードするか、オフラインインストールレイアウトを作成します (詳細については、「 [visual Studio のオフラインインストールの作成](../install/create-an-offline-installation-of-visual-studio.md)」ページを参照してください)。
 
 > [!IMPORTANT]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をインストールするには、管理者の資格情報が必要です。 ただしインストール後、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の使用には不要です。
@@ -78,11 +78,11 @@ ms.locfileid: "74298056"
 |--------------------------------------|----------------|
 |ファイルとディレクトリのバックアップ|SeBackupPrivilege|
 |プログラムのデバッグ|SeDebugPrivilege|
-|監査ログとセキュリティ ログの管理|SeSecurityPrivilege|
+|監査とセキュリティ ログの管理|SeSecurityPrivilege|
 
  ローカル管理者アカウントの要件の詳細については、サポート技術情報「 [セットアップ アカウントに特定のユーザー権限がない場合、SQL Server のインストールが失敗する](https://support.microsoft.com/kb/2000257)」を参照してください。
 
-### <a name="BKMK_Media"></a> Using installation media
+### <a name="BKMK_Media"></a>インストールメディアの使用
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をインストールするには、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インストール メディアのルート ディレクトリで、必要なエディションのインストール ファイルを実行します。
 
 |エディション|インストール ファイル|
@@ -91,19 +91,19 @@ ms.locfileid: "74298056"
 |Visual Studio Professional|vs_professional.exe|
 |Visual Studio コミュニティ|vs_community.exe|
 
-### <a name="BKMK_Website"></a> Downloading from the product website
- Visit the [Visual Studio Downloads](https://go.microsoft.com/fwlink/?LinkId=517106) page, and select the edition of Visual Studio that you want.
+### <a name="BKMK_Website"></a>製品 web サイトからのダウンロード
+ [Visual studio のダウンロード](https://go.microsoft.com/fwlink/?LinkId=517106)ページにアクセスし、必要な visual studio のエディションを選択します。
 
-### <a name="downloading-from-your-subscription-service"></a>Downloading from your subscription service
- Visit  the [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) page, and select the edition of Visual Studio that you want.
+### <a name="downloading-from-your-subscription-service"></a>サブスクリプションサービスからダウンロードしています
+ [ [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) ] ページにアクセスし、必要な Visual Studio のエディションを選択します。
 
-### <a name="BKMK_Offline"></a> Creating an offline installation layout
- If you do not have the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installation media, or you do not have a Visual Studio subscription,  or you do not want to install [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] by using the web installer, you can perform a "disconnected" installation by creating what is known as an offline installation layout. For more information, see the [Create an Offline Installation of Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) page.
+### <a name="BKMK_Offline"></a>オフラインインストールレイアウトを作成する
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インストールメディアがない場合、または Visual Studio サブスクリプションを持っていない場合、または web インストーラーを使用して [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] をインストールしたくない場合は、オフラインインストールレイアウトと呼ばれるものを作成することによって、"切断された" インストールを実行できます。 詳細については、「 [Visual Studio のオフラインインストールを作成](../install/create-an-offline-installation-of-visual-studio.md)する」ページを参照してください。
 
-## <a name="enterprise"></a> Deploying Visual Studio in an Enterprise
- For information about how to deploy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] over a network, see the [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
+## <a name="enterprise"></a>エンタープライズでの Visual Studio のデプロイ
+ ネットワーク経由で [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] をデプロイする方法の詳細については、「 [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)」を参照してください。
 
-### <a name="BKMK_Virtualized"></a> Installing Visual Studio in a virtualized environment
+### <a name="BKMK_Virtualized"></a>仮想化環境への Visual Studio のインストール
  **Hyper-V に関するビデオの問題**
 
  Hyper-V が有効であり、アクセラレータ機能を使用するグラフィックス アダプターが搭載されている Windows Server 2008 R2 を実行すると、システムの速度が低下することがあります。
@@ -114,10 +114,10 @@ ms.locfileid: "74298056"
 
  仮想化を使わずに Visual Studio 2015 を実際のハードウェアにインストールする場合、Hyper-V を使用して Windows デバイスと Android デバイスのエミュレーションを有効にする機能を選択できます。 HYPER-V にインストールすると、Windows デバイスまたは Android デバイスをエミュレートできなくなります。 これは、エミュレーター自体が仮想マシンであり、現時点では別の VM の内部で VM をホストすることができないためです。 回避策として、アプリケーションを直接デプロイおよびデバッグできる実際の Windows デバイスまたは Android デバイスを用意することができます。
 
-## <a name="optionalComponents"></a> Installing optional components
- If you want to install components that you might not have selected during your original installation, use the following procedure.
+## <a name="optionalComponents"></a>オプションコンポーネントのインストール
+ 最初のインストール時に選択していない可能性のあるコンポーネントをインストールする場合は、次の手順を実行します。
 
-#### <a name="to-install-optional-components"></a>To install optional components
+#### <a name="to-install-optional-components"></a>オプションコンポーネントをインストールするには
 
 1. **[コントロール パネル]** の **[プログラムと機能]** ページで、1 つまたは複数のコンポーネントを追加する製品のエディションを選択し、 **[変更]** を選択します。
 
@@ -138,12 +138,12 @@ ms.locfileid: "74298056"
 
 4. 必要なヘルプ コレクションの横で、 **[追加]** または **[削除]** リンクをクリックします。
 
-5. Click the **Update** button.
+5. **[更新]** ボタンをクリックします。
 
-   For more information about how to install or deploy offline Help, see the [Help Viewer Administrator Guide](../ide/help-viewer-administrator-guide.md).
+   オフラインヘルプをインストールまたは展開する方法の詳細については、[ヘルプビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)を参照してください。
 
 ## <a name="serviceReleases"></a> サービス リリースと製品の更新プログラムのチェック
- すべての拡張機能に互換性があるわけではないので、以前のバージョンからアップグレードするときに、Visual Studio は拡張機能を自動的にアップグレードしません。 You must reinstall the extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) or from the software publisher.
+ すべての拡張機能に互換性があるわけではないので、以前のバージョンからアップグレードするときに、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)またはソフトウェアパブリッシャーから拡張機能を再インストールする必要があります。
 
 #### <a name="to-automatically-check-for-service-releases"></a>サービス リリースを自動的に確認するには
 
@@ -167,15 +167,15 @@ ms.locfileid: "74298056"
 
 2. セットアップ ウィザードで、 **[修復]** 、 **[次へ]** の順に選択し、残りの指示に従います。
 
-#### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>To repair Visual Studio in silent or passive modes (that is, to repair from source)
+#### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>サイレントモードまたはパッシブモードで Visual Studio を修復する (つまり、ソースから修復する) には
 
 1. Visual Studio がインストールされているコンピューターで、Windows コマンド プロンプトを開きます。
 
 2. 次のパラメーターを入力します。
 
-     *DVDRoot* \\<Installation File\> \</quiet&#124;/passive> [/norestart]/Repair
+     *DVDRoot* \\< インストールファイル\> \</quiet&#124;/passive > [/norestart]/Repair
 
-## <a name="troubleshooting"></a> Troubleshooting an installation
+## <a name="troubleshooting"></a>インストールのトラブルシューティング
  セットアップとインストールの問題に対して次のリソースを使用します。
 
 - 「[Visual Studio Setup and Installation (Visual Studio のセットアップとインストール)](https://go.microsoft.com/fwlink/?LinkID=151190) 」フォーラム。 Visual Studio コミュニティでは、他のユーザーからの質問と回答を閲覧できます。 必要な情報が見つからない場合は、自分で質問してください。
@@ -184,16 +184,16 @@ ms.locfileid: "74298056"
 
 ## <a name="relatedTopics"></a> 関連トピック
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
-|[Visual Studio のオフライン インストールを作成する](../install/create-an-offline-installation-of-visual-studio.md)|Describes how to install Visual Studio when you are not connected to the Internet.
+|[Visual Studio のオフライン インストールを作成する](../install/create-an-offline-installation-of-visual-studio.md)|インターネットに接続していない場合に Visual Studio をインストールする方法について説明します。
 |[複数バージョンの Visual Studio をインストールする](../install/install-visual-studio-versions-side-by-side.md)|同じコンピューターに複数バージョンの Visual Studio をインストールする方法について説明します。|
-|[コマンド ライン パラメーターを使用して Visual Studio をインストールする](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Lists the command-line parameters that you can use when you install Visual Studio from a command prompt.|
-|[Visual Studio のアンインストール](../install/uninstall-visual-studio.md)|Describes how to uninstall Visual Studio.|
+|[コマンド ライン パラメーターを使用して Visual Studio をインストールする](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|コマンドプロンプトから Visual Studio をインストールするときに使用できるコマンドラインパラメーターの一覧を示します。|
+|[Visual Studio のアンインストール](../install/uninstall-visual-studio.md)|Visual Studio をアンインストールする方法について説明します。|
 |[Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)|Visual Studio の配置オプションについて説明します。|
 |[Visual Studio Image Library](../designers/the-visual-studio-image-library.md)|Visual Studio アプリケーションで使用できるグラフィックスをインストールする方法について説明します。|
-|[Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md)|Includes information and links that can help you use Visual Studio more effectively.|
+|[Visual Studio を使用した開発の開始](../ide/get-started-developing-with-visual-studio.md)|Visual Studio をより効果的に使用するために役立つ情報とリンクが含まれています。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Learn app-building basics with Xamarin.Forms
+title: Xamarin を使用したアプリ作成の基本事項について説明します
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
@@ -18,7 +18,7 @@ ms.locfileid: "74299763"
 
 [Setup and install](../cross-platform/setup-and-install.md) と [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)の手順を完了すると、このチュートリアルでは、Xamarin.Forms を使用して基本アプリ (下図) を構築する方法を示します。 Xamarin.Forms を使用して、すべての UI コードをポータブル クラス ライブラリ (PCL) に一度記述します。 そうすると、Xamarin では、ネイティブ UI コントロールが iOS、Android、Windows プラットフォームに対して自動的にレンダリングされます。 PCL オプションはすべてのターゲット プラットフォームでサポートされる特定の .NET API のみの使用を最も適切にサポートし、Xamarin.Forms ではプラットフォーム間で UI コードを共有できるため、この方法をお勧めします。
 
- ![The Weather App sample on Android, iOS, and Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
+ ![Android、iOS、Windows Phone の天気予報アプリのサンプル](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin フォームガイド1")
 
  作成するには次の作業を行います。
 
@@ -35,14 +35,14 @@ ms.locfileid: "74299763"
 > [!TIP]
 > このプロジェクトの完全なソース コードは [GitHub の xamarin-forms-samples リポジトリ](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)にあります。
 
-## <a name="solution"></a> ソリューションの設定
+## <a name="solution"></a>ソリューションの設定
  次の手順では、共有コードの PCL と 2 つの追加された NuGet パッケージを含む Xamarin.Forms ソリューションを作成します。
 
 1. Visual Studio では、新しい **[空のアプリケーション (Xamarin.Forms ポータブル)]** ソリューションを作成し、名前を「 **WeatherApp**」とします。 このテンプレートは、検索フィールドに「 **Xamarin.Forms** 」と入力することによって、最も簡単に見つけることができます。
 
-     これがない場合は、Xamarin をインストールするか、Visual Studio 2015 の機能を有効にする必要があります。「 [Setup and install](../cross-platform/setup-and-install.md)」をご覧ください。
+     これがない場合は、Xamarin をインストールするか、Visual Studio 2015 の機能を有効にする必要があります。「[セットアップとインストール](../cross-platform/setup-and-install.md)」をご覧ください。
 
-     ![Creating a new Blank App &#40;Xamarin.Forms Portable&#41; project](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+     ![新しい空のアプリケーション&#40;Xamarin. フォームポータブル&#41;プロジェクトを作成する](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin フォームガイド2")
 
 2. ソリューションを作成するために [OK] をクリックすると、いくつかの個別のプロジェクトが表示されます。
 
@@ -71,9 +71,9 @@ ms.locfileid: "74299763"
 
     - **[バージョン]** フィールドを利用可能な **最新の安定した** バージョンに更新します。
 
-    - **[更新]** をクリックします。
+    - **[Update]** をクリックします。
 
-         ![Updating the Xamarin.Forms NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")
+         ![Xamarin. Forms NuGet パッケージの更新](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin フォームガイド4")
 
 4. 気象データ サービスから取得した情報を処理するのに使用する **Newtonsoft.Json** と NuGet パッケージを PCL プロジェクトに追加します:
 
@@ -87,13 +87,13 @@ ms.locfileid: "74299763"
 
     - **[インストール]** をクリックします。
 
-    - ![Locating and installing the Newtonsoft.Json NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+    - ![Newtonsoft. Json パッケージの検索とインストール](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin フォームガイド5")
 
 5. 手順 4 を繰り返して、 **Microsoft.Net.Http** パッケージを検索し、インストールします。
 
 6. ソリューションをビルドし、ビルド エラーがないことを確認します。
 
-## <a name="dataservice"></a> 共有データ サービス コードの記述
+## <a name="dataservice"></a>共有データ サービス コードの記述
  **WeatherApp (ポータブル)** プロジェクトは、すべてのプラットフォームで共有されているポータブル クラス ライブラリ (PCL) 用のコードを記述する場所です。 PCL は、iOS、Android、Windows Phone 用のプロジェクトでビルドされたアプリ パッケージに自動的に含まれます。
 
  このサンプルを実行するには、最初に [http://openweathermap.org/appid](https://openweathermap.org/appid) で新規登録し、無料の API キーを申し込む必要があります。
@@ -215,11 +215,11 @@ ms.locfileid: "74299763"
 ## <a name="uicode"></a> 共有 UI コードの記述の開始
  Xamarin.Forms を使用すると、共有 UI コードを PCL に実装できます。 次の手順では、前のセクションで追加した気象データ サービス コードで返されたデータによってボタンのテキストが更新され、そのボタンを使用して PCL に画面を追加します。
 
-1. Add a **Forms Xaml Page** named **WeatherPage.cs** by right-clicking the **WeatherApp** project and selecting **Add > New Item...** . In the **Add New Item** dialog, search on “Forms,” select **Forms Xaml Page**, and name it **WeatherPage.cs**.
+1. **WeatherApp**プロジェクトを右クリックし、 **[新しい項目の追加 >]** を選択して、 **WeatherPage.cs**という名前の**フォーム Xaml ページ**を追加します。 **[新しい項目の追加]** ダイアログで、"フォーム" を検索し、 **[フォーム Xaml]** の選択 ページに**WeatherPage.cs**という名前を指定します。
 
      Xamarin.Forms は XAML ベースのため、この手順では、入れ子にされた分離コード ファイル **WeatherPage.xaml.cs** と共に **WeatherPage.xaml**ファイルを作成します。 これにより、XAML またはコードで UI を生成することができます。 このチュートリアルでは、両方の一部を実行します。
 
-     ![Adding a new Xamarin.Forms XAML page](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")
+     ![新しい Xamarin. Forms XAML ページの追加](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin フォームガイド6")
 
 2. WeatherPage 画面にボタンを追加するには、WeatherPage.xaml の内容を次のコードで置き換えます。
 
@@ -274,18 +274,18 @@ ms.locfileid: "74299763"
 
 5. WeatherApp PCL プロジェクトをビルドし、コードが正しいことを確認します。
 
-## <a name="test"></a> Visual Studio Emulator for Android を使用してアプリをテストします。
+## <a name="test"></a>Visual Studio Emulator for Android を使用してアプリをテストする
  これで、アプリを実行する準備ができました。 アプリが気象サービスからデータを取得していることを確認するには、今回は Android バージョンのみを実行します。 さらに UI 要素を追加した後で、iOS と Windows Phone のバージョンも実行します。 (注: Windows 7 で Visual Studio を実行している場合は、これらと同じ手順を実行しますが、Xamarin Player が代わりに実行します。)
 
 1. **WeatherApp.Droid** プロジェクトをスタートアップ プロジェクトに設定するには、そのプロジェクトを右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
 
 2. Visual Studio ツールバーには、 **WeatherApp.Droid** がターゲット プロジェクトとして一覧表示されます。 デバッグ用の Android エミュレーターの 1 つを選択し、 **F5**キーをクリックします。 Visual Studio Emulator for Android でアプリを実行するための **VS Emulator** オプションの 1 つを使用することをお勧めします。
 
-     ![Selecting a VS Emulator debug target](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
+     ![VS Emulator デバッグターゲットの選択](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin フォームガイド7")
 
 3. エミュレーターでアプリが起動されたら、 **[Get Weather]** ボタンをクリックします。 ボタンのテキストが **Chicago, IL**に更新されました。データの *Title* プロパティは気象サービスから取得されたものです。
 
-     ![Weather App before and after tapping the button](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
+     ![ボタンをタップする前と後の Weather アプリ](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin フォームガイド8")
 
 ## <a name="finish"></a>UI の外観をすべてのプラットフォームについてネイティブなものにする
  Xamarin.Forms は各プラットフォームのネイティブ UI コントロールをレンダリングして、アプリが自動的にネイティブな外観を持つようにします。 これをさらに見やすくするには、郵便番号用の入力フィールドで UI を終了し、サービスから返された気象データを表示します。
@@ -398,6 +398,6 @@ ms.locfileid: "74299763"
 
 3. 適切なプロジェクトを右クリックし、[スタートアップ プロジェクトに設定] を選択し、デバイスまたはエミュレーターかシミュレーターのいずれかでアプリを開始して、3 つのすべてのプラットフォーム (Android、iOS、Windows Phone) 上でアプリを実行します。 有効な米国の郵便番号 (60601 など) を入力し、[Get Weather] ボタンを押してその地域の気象データを次のように表示します。 iOS プロジェクトのネットワーク上で Visual Studio が Mac OS X コンピューターに接続されている必要があります。
 
-    ![The Weather App sample on Android, iOS, and Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
+    ![Android、iOS、Windows Phone の天気予報アプリのサンプル](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin フォームガイド1")
 
    このプロジェクトの完全なソース コードは [GitHub の xamarin-forms-samples リポジトリ](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)にあります。

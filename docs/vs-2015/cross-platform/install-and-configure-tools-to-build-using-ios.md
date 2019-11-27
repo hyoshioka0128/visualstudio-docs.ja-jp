@@ -28,7 +28,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
  iOS を使用してビルドするためのツールをインストールしたら、このトピックを参照して、Visual Studio と Mac で iOS 開発を行うためにリモート エージェントを素早く構成して更新する方法を確認してください。  
   
- [必須コンポーネント](#Prerequisites)  
+ [必要条件](#Prerequisites)  
   
  [iOS 用リモート エージェントをインストールする](#Install)  
   
@@ -42,7 +42,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
  [Configure the remote agent on the Mac](#ConfigureMac)  
   
-## <a name="Prerequisites"></a> 必要条件  
+## <a name="Prerequisites"></a>前提条件  
  iOS のコードを開発するためのリモート エージェントをインストールして使用するには、まず、次の前提条件を満たす必要があります。  
   
 - OS X Mavericks 以降を実行する Mac コンピューター  
@@ -93,7 +93,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
    インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。  
   
   > [!NOTE]
-  > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity –enable` を入力します。  
+  > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity –enable`を入力します。  
   
   Visual Studio を新しいバージョンに更新した場合は、リモート エージェントも現在のバージョンに更新する必要があります。 リモート エージェントを更新するには、リモート エージェントをダウンロードしてインストールする手順を繰り返します。  
   
@@ -215,7 +215,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      `vcremote --help`  
   
-- セキュリティで保護されたモードを無効にして、単純な HTTP ベースの接続を有効にするには、次のように入力します。  
+- セキュア モードを無効にして、単純な HTTP ベースの接続を有効にするには、次のように入力します。  
   
      `vcremote --secure false`  
   
@@ -239,5 +239,5 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      ここで *config_file_path* は JSON 形式の構成ファイルのパスです。 スタートアップ オプションとその値にダッシュを含めることはできません。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual C++ for Cross-Platform Mobile Development のインストール](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

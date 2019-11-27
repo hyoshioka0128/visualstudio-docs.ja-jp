@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302551"
 ---
-# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UIT テストを設定
+# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UI テストを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを実行するには、次の表で説明されているように、該当する UITestControl.WaitForControlXXX() メソッドを使用します。 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> メソッドで有効化されるコントロールを待機するコード化された UI テストの例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
@@ -111,5 +111,5 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)」をご覧ください。
 
-## <a name="see-also"></a>参照
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [Anatomy of a Coded UI Test](../test/anatomy-of-a-coded-ui-test.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [How to: Insert a Delay Before a UI Action Using the Coded UI Test Editor](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+## <a name="see-also"></a>関連項目
+ [Ui オートメーションを使用してコード](../test/use-ui-automation-to-test-your-code.md)化された[ui テストを作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)するコードをテストするチュートリアル: コード化された ui テストの[作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)コード化された ui テストの[構造](../test/anatomy-of-a-coded-ui-test.md)、コード化され[た ui](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)テスト[と操作の記録のプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

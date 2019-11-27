@@ -29,15 +29,15 @@ WCF Data Services は、 [Open Data Protocol](https://go.microsoft.com/fwlink/p/
 
 | 論理演算子 | 説明 | フィルター文字列の例 |
 | --- | --- | --- |
-| eq |等しい |City eq 'Redmond' |
-| gt |次の値より大きい |Price gt 20 |
+| eq |Equal |City eq 'Redmond' |
+| gt |より大きい |Price gt 20 |
 | ge |次の値以上 |Price ge 10 |
 | lt |次の値より小さい |Price lt 20 |
 | le |以下 |Price le 100 |
 | ne |等しくない |City ne 'London' |
-| および |および |Price le 200 and Price gt 3.5 |
-| 、または |or |Price le 3.5 or Price gt 200 |
-| not |not |not isAvailable |
+| と、呼び出し |および |Price le 200 and Price gt 3.5 |
+| 、または |または |Price le 3.5 or Price gt 200 |
+| not |Not |not isAvailable |
 
 フィルター文字列を作成するときに重要となる規則は次のとおりです。
 

@@ -29,7 +29,7 @@ Xamarin を使用して一般的な C#/.NET コード ベースからネイテ�
 > [!NOTE]
 > 2016 年 3 月 31 日の時点で、Visual Studio のすべてのエディションに付属のすべての Xamarin に追加のコストはかからず、別個のライセンスは必要ありません。 Xamarin Studio Community for Mac も、学生、OSS 開発者、小規模チームの場合には無料です。 以前の Xamarin ライセンスが構成されている Visual Studio の既存のインストールの場合は、Xamarin をバージョン 4.0.3.214 以降に更新する必要があることにご注意ください。 これを行うには、 **[ツール] > [オプション] > [Xamarin] > [その他]** の順に移動し、 **[今すぐ確認]** リンクをクリックして、4.0.3.214 更新プログラムをダウンロードします。 Visual Studio を再起動して、 **[ツール] > [Xamarin アカウント...]** に移動すると、更新の状況を確認できるはずです。  
   
- **このトピックの内容**  
+ **このトピックの内容:**  
   
 - [前提条件](#prereq)  
   
@@ -64,13 +64,13 @@ Xamarin を使用して一般的な C#/.NET コード ベースからネイテ�
   
 2. (新規インストールの場合のみ) インストーラー内で **[カスタム]** インストールを選択します。  
   
-    ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+    ![Visual Studio のインストールでの [カスタム] オプションの選択](../cross-platform/media/cross-plat-xamarin-setup-1.png "クロスプラットフォーム Xamarin セットアップ1")  
   
 3. 次のチェック ボックスを選択します。  
   
    1. **[クロスプラットフォーム モバイル開発] > [C#/.NET (Xamarin)]** 。 これにより、[共通のツールとソフトウェア開発キット] の下のさまざまな Android ツールも自動的に選択されます。 このオプションでは、既存の Xamarin インストールも更新されるはずです。  
   
-        ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+        ![[クロス&#45;プラットフォームモバイル開発] の [Xamarin] オプションを選択します。](../cross-platform/media/cross-plat-xamarin-setup-2.png "クロスプラットフォーム Xamarin セットアップ2")  
   
    2. Windows 8 以降の場合: **[クロスプラットフォーム モバイル開発] > [Microsoft Visual Studio Emulator for Android]** 。 注: Windows 7 またはそれ以前のコンピューターを使用している場合、または Mac 上で Windows を実行している場合は、これが*選択解除*されていることを確認してください。 ステップ 5 の後にある、「Windows コンピューター上のエミュレーターに関するメモ」をご覧ください。 この項目は、物理 Android デバイスでのみデバッグする予定の場合も、選択解除のままにしておくことができます。  
   
@@ -80,7 +80,7 @@ Xamarin を使用して一般的な C#/.NET コード ベースからネイテ�
   
 5. インストールが完了したら、Visual Studio を起動し、アカウントを求められたら Microsoft アカウントでサインインします (これは Windows で使用するのと同じアカウントです)。 次に、 **[ツール] > [オプション] > [Xamarin]** または **[ツール] > [オプション] > [Xamarin] > [その他]** を選択して、Xamarin の更新プログラムを確認します。ここには **[今すぐ確認]** リンクが表示されます。  
   
-    ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+    ![Visual Studio のオプションで Xamarin の更新プログラムを確認する](../cross-platform/media/cross-plat-xamarin-setup-3.png "クロスプラットフォーム Xamarin セットアップ3")  
   
    > [!NOTE]
    > 前述のとおり、以前の Xamarin でのライセンス問題を回避するために、Xamarin をバージョン 4.0.3.214 以上に更新してください。  

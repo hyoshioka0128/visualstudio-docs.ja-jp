@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating a Basic Isolated Shell Application | Microsoft Docs'
+title: 'チュートリアル: 基本的な分離シェルアプリケーションの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -19,114 +19,114 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74291261"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Walkthrough: Creating a Basic Isolated Shell Application
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>チュートリアル: 基本的な分離シェルアプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This walkthrough shows how to create an isolated shell solution, customize the Help About tool window, and create a setup program that installs the isolated shell.  
+このチュートリアルでは、分離シェルソリューションを作成する方法、ツールウィンドウに関するヘルプをカスタマイズする方法、および分離シェルをインストールするセットアッププログラムを作成する方法について説明します。  
   
-## <a name="prerequisites"></a>必要条件  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 For more information, see [Visual Studio SDK](../extensibility/visual-studio-sdk.md). To deploy the isolated shell, you must also use the Visual Studio Shell (Isolated) Redistributable Package.  
+## <a name="prerequisites"></a>前提条件  
+ このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。 分離シェルをデプロイするには、Visual Studio Shell (分離) 再頒布可能パッケージも使用する必要があります。  
   
-## <a name="creating-an-isolated-shell-solution"></a>Creating an Isolated Shell Solution  
- This section shows how to use the Visual Studio Shell Isolated project template to create an isolated shell solution. The solution contains the following projects:  
+## <a name="creating-an-isolated-shell-solution"></a>分離シェルソリューションの作成  
+ このセクションでは、Visual Studio Shell 分離プロジェクトテンプレートを使用して、分離シェルソリューションを作成する方法について説明します。 このソリューションには、次のプロジェクトが含まれています。  
   
-- The *SolutionName*.AboutBoxPackage project, which allows you to customize the appearance of the Help/About box.  
+- *SolutionName*。Boxpackage プロジェクトでは、[ヘルプ/バージョン情報] ボックスの外観をカスタマイズできます。  
   
-- The ShellExtensionsVSIX project, which contains the source.extension.vsixmanifest file that defines the different components of the isolated shell application.  
+- ShellExtensionsVSIX プロジェクト。分離シェルアプリケーションのさまざまなコンポーネントを定義する source.extension.vsixmanifest ファイルが含まれています。  
   
-- The *SolutionName* project, which produces the executable file that invokes the isolated shell application. This project contains the Shell Customization folder, which allows you to customiz the appearance and behavior of the isolated shell application.  
+- *SolutionName*プロジェクト。分離シェルアプリケーションを呼び出す実行可能ファイルを生成します。 このプロジェクトには、分離シェルアプリケーションの外観と動作を customiz できるシェルカスタマイズフォルダーが含まれています。  
   
-- The *SolutionName* UI project, which produces a satellite assembly that defines active menu commands and localizable strings.  
+- *SolutionName* UI プロジェクト。アクティブなメニューコマンドとローカライズ可能な文字列を定義するサテライトアセンブリを生成します。  
   
-#### <a name="to-create-a-basic-isolated-shell-solution"></a>To create a basic isolated shell solution  
+#### <a name="to-create-a-basic-isolated-shell-solution"></a>基本的な分離シェルソリューションを作成するには  
   
 1. Visual Studio を起動し、新しいプロジェクトを作成します。  
   
-2. In the **New Project** window, expand **Other Project Types** and then **Extensibility**. Select the **Visual Studio Shell Isolated** project template.  
+2. **[新しいプロジェクト]** ウィンドウで、 **[その他のプロジェクトの種類]** 、 **[機能拡張]** の順に展開します。 [ **Visual Studio Shell 分離**プロジェクト] テンプレートを選択します。  
   
-3. Name the project `MyVSShellStub` and specify a location. Make sure that **Create directory for solution** is checked, and then click **OK**.  
+3. プロジェクトに `MyVSShellStub` という名前を設定し、場所を指定します。 **[ソリューションのディレクトリを作成]** チェックボックスがオンになっていることを確認し、[ **OK]** をクリックします。  
   
-     The new solution appears in **Solution Explorer**.  
+     新しいソリューションが**ソリューションエクスプローラー**に表示されます。  
   
-4. Build the solution and start debugging the isolated shell application.  
+4. ソリューションをビルドし、分離シェルアプリケーションのデバッグを開始します。  
   
-     The Visual Studio isolated shell appears. The title bar reads **MyVSShellStub**. The title bar icon is generated from \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
+     Visual Studio の分離シェルが表示されます。 タイトルバーは**Myvsshellstub**を読み取ります。 タイトルバーアイコンは \MyVSShellStub\Resource Files\ApplicationIcon.ico. から生成されます。  
   
-## <a name="customizing-the-application-name-and-icon"></a>Customizing the Application Name and Icon  
- You may want to brand your application by using the name of your company and its logo in the title bar. The following steps show how to change the name and icon that are displayed in the custom application title bar by changing the package definition file, MyVSShellStub.Application.pkgdef.  
+## <a name="customizing-the-application-name-and-icon"></a>アプリケーション名とアイコンのカスタマイズ  
+ 会社の名前とそのロゴをタイトルバーに使用して、アプリケーションをブランド化することができます。 次の手順では、カスタムアプリケーションのタイトルバーに表示される名前とアイコンを変更する方法を示します。パッケージ定義ファイル (MyVSShellStub. Application. pkgdef) を変更します。  
   
-#### <a name="to-customize-the-application-name-and-icon"></a>To customize the application name and icon  
+#### <a name="to-customize-the-application-name-and-icon"></a>アプリケーション名とアイコンをカスタマイズするには  
   
-1. In the MyVSShellStub project, open \Shell Customization\MyVSShellStub.Application.pkgdef.  
+1. MyVSShellStub プロジェクトで、Customization\MyVSShellStub.Application.pkgdef. を開きます。  
   
-2. Change the `AppName` element value to **"AppName"="Fabrikam Music Editor"**  
+2. `AppName` 要素の値を **"AppName" = "Fabrikam Music Editor"** に変更します。  
   
-3. To change the application icon, copy a different icon to the \MyVSShellStub\MyVSShellStub\MyVSShellStub\ directory. Rename the existing ApplicationIcon.ico file to ApplicationIcon1.ico. Rename the new file to ApplicationIcon.ico.  
+3. アプリケーションアイコンを変更するには、別のアイコンを \MyVSShellStub\MyVSShellStub\MyVSShellStub\ ディレクトリにコピーします。 既存の ApplicationIcon .ico ファイルの名前を ApplicationIcon1 に変更します。 新しいファイルの名前を ApplicationIcon .ico に変更します。  
   
-4. ソリューションをビルドし、デバッグを開始します。 The isolated shell IDE appears. The title bar has your new icon next to the words **Fabrikam Music Editor**.  
+4. ソリューションをビルドし、デバッグを開始します。 分離シェル IDE が表示されます。 タイトルバーには、 **Fabrikam Music Editor**という単語の横に新しいアイコンが表示されます。  
   
-## <a name="customizing-the-default-web-browser-home-page"></a>Customizing the Default Web Browser Home Page  
- This section shows how to change the default home page of the **Web Browser** window by changing the package definition file.  
+## <a name="customizing-the-default-web-browser-home-page"></a>既定の Web ブラウザーのホームページのカスタマイズ  
+ このセクションでは、パッケージ定義ファイルを変更して、 **Web ブラウザー**ウィンドウの既定のホームページを変更する方法について説明します。  
   
-#### <a name="to-customize-the-default-web-browser-home-page"></a>To customize the default Web Browser home page  
+#### <a name="to-customize-the-default-web-browser-home-page"></a>既定の Web ブラウザーのホームページをカスタマイズするには  
   
-1. In the MyVSShellStub.Application.pkgdef file, change the `DefaultHomePage` element value to "<https://www.microsoft.com>".  
+1. MyVSShellStub. Application. pkgdef ファイルで、`DefaultHomePage` 要素の値を "<https://www.microsoft.com>" に変更します。  
   
-2. Rebuild the MyVSShellStub project.  
+2. MyVSShellStub プロジェクトをリビルドします。  
   
 3. ソリューションをビルドし、デバッグを開始します。  
   
-4. In **View / Other Windows**, click **Web Browser**. The **Web Browser** window displays the Microsoft Corporation home page.  
+4. **表示/その他のウィンドウ**で、 **[Web ブラウザー]** をクリックします。 **[Web ブラウザー]** ウィンドウに、Microsoft Corporation のホームページが表示されます。  
   
-## <a name="removing-the-print-command"></a>Removing the Print Command  
- The .vsct file in an isolated shell UI project consists of a set of declarations of the form `<Define name=No_`*Element*`>`, where *Element* is one of the standard Visual Studio menus and commands.  
+## <a name="removing-the-print-command"></a>印刷コマンドを削除しています  
+ 分離シェル UI プロジェクトの vsct ファイルは、フォーム `<Define name=No_`*要素*`>`の一連の宣言で構成されています。 *element*は、標準の Visual Studio のメニューおよびコマンドの1つです。  
   
- If a declaration is uncommented, that menu or command is excluded from the isolated shell. Conversely, if a declaration is commented, the menu or command is included in the isolated shell.  
+ 宣言をコメント解除すると、そのメニューまたはコマンドが分離シェルから除外されます。 逆に、宣言にコメントが付いている場合は、メニューまたはコマンドが分離シェルに含まれます。  
   
- In the following steps, you uncomment print command in your .vsct file.  
+ 次の手順では、vsct ファイルの print コマンドのコメントを解除します。  
   
-#### <a name="to-remove-the-print-command"></a>To remove the print command  
+#### <a name="to-remove-the-print-command"></a>印刷コマンドを削除するには  
   
-1. Verify that the **Print** command appears on the **File** menu in the isolated shell application.  
+1. 分離シェルアプリケーションの **[ファイル]** メニューに **[印刷]** コマンドが表示されていることを確認します。  
   
-2. In the MyVSShellStubUI project, open \Resource Files\MyVSShellStubUI.vsct for editing.  
+2. MyVSShellStubUI プロジェクトで、\ Resource Files\MyVSShellStubUI.vsct を開いて編集します。  
   
-3. Uncomment this line:  
+3. 次の行のコメントを解除:  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4. This removes the print command.  
+4. これにより、印刷コマンドが削除されます。  
   
-5. Start debugging the isolated shell application. Verify that the **File / Print** command is gone.  
+5. 分離シェルアプリケーションのデバッグを開始します。 **ファイル/印刷**コマンドが実行されていないことを確認します。  
   
-## <a name="removing-features-from-the-isolated-shell"></a>Removing Features from the Isolated Shell  
- You can remove some of the packages that are loaded with Visual Studio by editing the .pkgundef file if you do not want those features in your custom isolated shell application. You specify the package in one of the subkeys of the $RootKey$\Packages registry key.  
+## <a name="removing-features-from-the-isolated-shell"></a>分離シェルからの機能の削除  
+ カスタム分離シェルアプリケーションでこれらの機能を使用しない場合は、Visual Studio で読み込まれたパッケージの一部を削除できます。 パッケージは、$RootKey $ \ Packages レジストリキーのいずれかのサブキーで指定します。  
   
 > [!NOTE]
-> To find the GUIDs of Visual Studio features, see [Package GUIDs of Visual Studio Features](../extensibility/package-guids-of-visual-studio-features.md).  
+> Visual Studio の機能の Guid については、「 [Visual studio の機能のパッケージ guid](../extensibility/package-guids-of-visual-studio-features.md)」を参照してください。  
   
- The following procedure shows how to remove the XML editor from the isolated shell.  
+ 次の手順は、分離シェルから XML エディターを削除する方法を示しています。  
   
-#### <a name="to-remove-the-xml-editor"></a>To remove the XML editor  
+#### <a name="to-remove-the-xml-editor"></a>XML エディターを削除するには  
   
-1. Open the MyVSShellStub.pkgundef file in the Shell Customization folder of the MyVSShellStub project.  
+1. MyVSShellStub プロジェクトの Shell カスタマイズフォルダーで、MyVSShellStub を開きます。  
   
-2. Uncomment the following line:  
+2. 次の行のコメントを解除します。  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \ パッケージ\\{87 569315 ミリ秒 40 a0-9cd0-d7a30838ca3f}]  
   
-3. Rebuild the solution and start debugging the isolated shell. Open an XML file,for example, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verify that the XML keywords in the file are not colorized and that typing "<" on a line does not bring up XML tooltips.  
+3. ソリューションをリビルドし、分離シェルのデバッグを開始します。 XML ファイルを開きます (たとえば、\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct.)。 ファイル内の XML キーワードが色分けされていないこと、および行に "<" と入力しても XML ツールヒントが表示されないことを確認します。  
   
-## <a name="customizing-the-helpabout-box"></a>Customizing the Help/About box  
- You can customize the Help/About box, which is created as part of the isolated shell project template.  
+## <a name="customizing-the-helpabout-box"></a>[ヘルプ]/[バージョン情報] ボックスのカスタマイズ  
+ 分離シェルプロジェクトテンプレートの一部として作成される [ヘルプ/バージョン情報] ボックスをカスタマイズできます。  
   
-#### <a name="to-customize-the-company-name"></a>To customize the company name  
+#### <a name="to-customize-the-company-name"></a>会社名をカスタマイズするには  
   
-1. The company name, copyright information, product version, and product description are found in the MyVSShellStub.AboutBoxPackage project, in the \Properties\AssemblyInfo.cs file. このファイルを開きます。  
+1. 会社名、著作権情報、製品バージョン、および製品の説明は、\Properties\AssemblyInfo.cs ファイルの MyVSShellStub. Boxpackage プロジェクトにあります。 このファイルを開きます。  
   
-2. Change the `AssemblyCompany` value to **Fabrikam**, the `AssemblyProduct` and `AssemblyTitle` values to **Fabrikam Music Editor**, and the `AssemblyCopyright` value to **Copyright © Fabrikam 2015**:  
+2. `AssemblyCompany` 値を**fabrikam**に、`AssemblyProduct` と `AssemblyTitle` の値を**fabrikam ミュージックエディター**に変更し、`AssemblyCopyright` の値を**Copyright © Fabrikam 2015**に変更します。  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ This walkthrough shows how to create an isolated shell solution, customize the H
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. To add a description of the product, change the `AssemblyDescription` value to **The description of Fabrikam Music editor.** :  
+3. 製品の説明を追加するには、`AssemblyDescription` の値を**Fabrikam Music editor の説明に変更します。**  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Start debugging and in the isolated shell application, open the **Help / About** box. You should see the changed strings. The title of the Help/About box is the same as the `AssemblyTitle` value in AssemblyInfo.cs.  
+4. デバッグを開始し、分離シェルアプリケーションで **[ヘルプ/バージョン情報]** ボックスを開きます。 変更した文字列が表示されます。 [ヘルプ/バージョン情報] ボックスのタイトルは、AssemblyInfo.cs の `AssemblyTitle` の値と同じです。  
   
-5. The properties of the **Help/About** box itself are found in the MyVSShellStub.AboutBoxPackage\AboutBox.xaml file. To change the width of the Help/About box, go to the `AboutDialogStyle` block and set the `Width` property to 200:  
+5. [**ヘルプ]/[バージョン情報**] ボックス自体のプロパティは、MyVSShellStub に含まれています。 [ヘルプ/バージョン情報] ボックスの幅を変更するには、`AboutDialogStyle` ブロックに移動し、`Width` プロパティを200に設定します。  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,103 +160,103 @@ This walkthrough shows how to create an isolated shell solution, customize the H
     </Style>  
     ```  
   
-6. Rebuild the solution and start debugging the isolated shell. The Help/About box should be approximately square.  
+6. ソリューションをリビルドし、分離シェルのデバッグを開始します。 [ヘルプ/バージョン情報] ボックスは、ほぼ正方形である必要があります。  
   
-## <a name="before-you-deploy-the-isolated-shell-application"></a>Before You Deploy the Isolated Shell Application  
- Your isolated shell application can be installed on any computer that has the Visual Studio Shell (Isolated) Redistributable Package. For more information about the redistributable package, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) website.  
+## <a name="before-you-deploy-the-isolated-shell-application"></a>分離シェルアプリケーションを展開する前に  
+ 分離シェルアプリケーションは、Visual Studio Shell (分離) 再頒布可能パッケージがインストールされている任意のコンピューターにインストールできます。 再頒布可能パッケージの詳細については、 [Visual Studio 機能拡張ダウンロード](https://go.microsoft.com/fwlink/?LinkID=119298)の web サイトを参照してください。  
   
-## <a name="deploying-the-isolated-shell-application"></a>Deploying the Isolated Shell Application  
- You deploy your isolated shell application to a target computer by creating a setup project. You must specify these things:  
+## <a name="deploying-the-isolated-shell-application"></a>分離シェルアプリケーションの展開  
+ セットアッププロジェクトを作成して、対象のコンピューターに分離シェルアプリケーションを配置します。 次の項目を指定する必要があります。  
   
-- The layout of the folders and files on the target computer.  
+- ターゲットコンピューター上のフォルダーとファイルのレイアウト。  
   
-- The launch conditions that guarantee that the .NET Framework and the Visual Studio shell runtime are installed on the target computer.  
+- .NET Framework と Visual Studio shell ランタイムがターゲットコンピューターにインストールされることを保証する起動条件。  
   
-  In the following procedure you will need to install InstallShield Limited Edition on your computer.  
+  次の手順では、InstallShield 限定版 Edition をコンピューターにインストールする必要があります。  
   
-#### <a name="to-create-the-setup-project"></a>To create the setup project  
+#### <a name="to-create-the-setup-project"></a>セットアッププロジェクトを作成するには  
   
-1. In **Solution Explorer**, right-click the solution node and then click **Add New Project**.  
+1. **ソリューションエクスプローラー**で、ソリューションノードを右クリックし、 **[新しいプロジェクトの追加]** をクリックします。  
   
-2. In the **New Project** dialog box, expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template. Name the new project `MySetup` and then click **OK**.  
+2. **[新しいプロジェクト]** ダイアログボックスで、 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** を選択します。 InstallShield テンプレートを選択します。 新しいプロジェクトに `MySetup` 名前を入力し、[ **OK]** をクリックします。  
   
-3. If InstallShield Limited Edition is already installed, continue to the next step.  
+3. InstallShield の制限付きエディションが既にインストールされている場合は、次の手順に進みます。  
   
-    If InstallShield Limited Edition is not already installed, the InstallShield download page appears. Follow the instructions to download and install the product, choosing the version of InstallShield that is compatible with your version of Visual Studio. You must decide whether to register your installation of InstallShield or use it as an evaluation. You must restart Visual Studio after you complete the installation.  
+    InstallShield の制限付きエディションがまだインストールされていない場合は、InstallShield のダウンロードページが表示されます。 指示に従って製品をダウンロードしてインストールし、使用している Visual Studio のバージョンと互換性のある InstallShield のバージョンを選択します。 InstallShield のインストールを登録するか、評価として使用するかを決定する必要があります。 インストールが完了したら、Visual Studio を再起動する必要があります。  
   
    > [!IMPORTANT]
-   > You must start Visual Studio as an administrator before you create an InstallShield project. If you do not do so, you will get an error when you build the project.  
+   > InstallShield プロジェクトを作成する前に、管理者として Visual Studio を起動する必要があります。 そうしないと、プロジェクトのビルド時にエラーが発生します。  
   
-   The next steps show how to configure the setup project.  
+   次の手順では、セットアッププロジェクトの構成方法について説明します。  
   
 > [!IMPORTANT]
-> Make sure that you have built the release configuration of your isolated shell project at least once before you configure the setup project.  
+> セットアッププロジェクトを構成する前に、分離シェルプロジェクトのリリース構成が少なくとも1回ビルドされていることを確認してください。  
   
-#### <a name="to-configure-the-setup-project"></a>To configure the setup project  
+#### <a name="to-configure-the-setup-project"></a>セットアッププロジェクトを構成するには  
   
-1. In the **Solution Explorer**, under the **MySetup** project, choose **Project Assistant**. On the bottom row of the **Project Assistant** window, choose **Application Information**. Enter **Fabrikam** as your company name and **Fabrikam Music Editor** as your application name. Choose the forward arrow at the bottom right of the **Project Assistant**.  
+1. **ソリューションエクスプローラー**の**mysetup**プロジェクトで、 **[project Assistant]** を選択します。 **プロジェクトアシスタント**ウィンドウの下部の行で、 **[アプリケーション情報]** を選択します。 アプリケーション名として「 **fabrikam** 」と入力し、会社名と**fabrikam ミュージックエディター**を入力します。 **プロジェクトアシスタント**の右下にある [進む] 矢印をクリックします。  
   
-2. Select **Yes** under **Does your application require any software to be installed on the machine?** and then select **Microsoft .NET Framework 4.5 Full Package**.  
+2. アプリケーションで **[コンピューターにソフトウェアをインストールする必要がありますか?]** で **[はい]** を選択し、 **[Microsoft .NET Framework 4.5 Full Package]** を選択します。  
   
-3. Choose the **Application Files** button at the bottom of the window, and make sure that the **Fabrikam Music Editor** folder is selected.  
+3. ウィンドウの下部にある **[アプリケーションファイル]** ボタンをクリックし、 **[Fabrikam Music Editor]** フォルダーが選択されていることを確認します。  
   
-4. Choose the **Add Files** button. In the **Add Files** dialog box, add the following files from the **MyVSShellStub\Release** folder:  
+4. **[ファイルの追加]** ボタンをクリックします。 **[ファイルの追加]** ダイアログボックスで、 **MyVSShellStub\Release**フォルダーから次のファイルを追加します。  
   
     1. MyVSShellStub.exe.config  
   
-    2. DebuggerProxy.dll  
+    2. デバッガーの .dll  
   
-    3. DebuggerProxy.dll.manifest  
+    3. デバッガーの .dll .manifest  
   
-    4. MyVSShellStub.pkgdef  
+    4. MyVSShellStub。 pkgdef  
   
-    5. MyVSShellStub.pkgundef  
+    5. MyVSShellStub。 pkgundef  
   
-    6. MyVSShellStub.winprf  
+    6. MyVSShellStub. winprf  
   
-    7. Splash.bmp  
+    7. スプラッシュ .bmp  
   
-5. Click the **Add Project Outputs** button and add **MyVSShellStub/Primary Output**. **[OK]** をクリックします。  
+5. **[プロジェクト出力の追加]** ボタンをクリックし、 **Myvsshellstub/プライマリ出力**を追加します。 **[OK]** をクリックすると、  
   
-6. In the left pane, under **Destination Computer**, right-click the **Fabrikam Music Editor [INSTALLDIR]** node and add a **New Folder** named **Extensions**.  
+6. 左側のウィンドウの **[対象コンピューター]** で、 **Fabrikam MUSIC Editor [INSTALLDIR]** ノードを右クリックし、 **[Extensions]** という名前の**新しいフォルダー**を追加します。  
   
-7. Right-click the **Extensions** node in the left pane and add a new folder named **Application**.  
+7. 左ペインで **[拡張機能]** ノードを右クリックし、 **[アプリケーション]** という名前の新しいフォルダーを追加します。  
   
-8. Select the **Application** folder and click the **Add Project Outputs** button, then select the primary output from the MyVSShellStub.AboutBoxPackage project.  
+8. **アプリケーション**フォルダーを選択し、 **[プロジェクト出力の追加]** ボタンをクリックしてから、myvsshellstub... boxpackage プロジェクトのプライマリ出力を選択します。  
   
-9. Click the **Add Files** button and from the \MyVSShellStub\Release\Extensions\Application\ folder add the following files:  
+9. **[Add files]** \ (ファイルの追加 \) ボタンをクリックし、\MyVSShellStub\Release\Extensions\Application\ フォルダーから次のファイルを追加します。  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub.... pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub. Application. pkgdef  
   
-10. Right-click the **Fabrikam Music Editor [INSTALLDIR]** node in the left pane and add a new folder named **1033**.  
+10. 左側のウィンドウで**Fabrikam Music Editor [INSTALLDIR]** ノードを右クリックし、 **1033**という名前の新しいフォルダーを追加します。  
   
-11. Select the 1033 folder and then click the **Add Project Outputs** button, and select the primary output from the MyVSShellStubUI project.  
+11. 1033フォルダーを選択し、 **[プロジェクト出力の追加]** ボタンをクリックして、MyVSShellStubUI プロジェクトのプライマリ出力を選択します。  
   
-12. Move to the **Application Shortcuts** window.  
+12. **アプリケーションショートカット**ウィンドウに移動します。  
   
-13. Click **New** to create a shortcut and select **[ProgramFilesFolder]\Fabrikam\Fabrikam Music Editor\MyVSShellStub.Primary Output**.  
+13. ショートカットを作成するには **[新規]** をクリックし、 **[programfilesfolder] \Fabrikam\Fabrikam Music Output**を選択します。  
   
-14. Move to the **Installation Interview** pane.  
+14. [インストールの**インタビュー** ] ウィンドウに移動します。  
   
-15. Set all items to **No**.  
+15. すべての項目を**No**に設定します。  
   
-16. In **Solution Explorer**, in the MySetup project, open **Define Setup Requirements and Actions \ Requirements**. The **Requirements** window opens.  
+16. **ソリューションエクスプローラー**の mysetup プロジェクトで、[**セットアップ要件とアクション \ 要件を定義**する] を開きます。 **[要件]** ウィンドウが開きます。  
   
-17. Right click **System Software Requirements** and select **Create New Launch Condition**. The **System Search Wizard** appears.  
+17. **[システムソフトウェアの要件]** を右クリックし、 **[新しい起動条件の作成]** を選択します。 **システム検索ウィザード**が表示されます。  
   
-18. In the **What do you want to find?** pane, choose **Registry Entry** in the drop-down list and click **Next**.  
+18. **[検索する項目]** ウィンドウで、ドロップダウンリストの **[レジストリエントリ]** を選択し、 **[次へ]** をクリックします。  
   
-19. In the **How do you want to look for it?** pane, select **HKEY_LOCAL_MACHINE** as the registry root. Enter **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** for 64-bit systems or **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** for 32-bit systems, and enter **Install** as the registry value. [次へ] をクリックします。  
+19. **[検索方法]** を選択してください ウィンドウで、レジストリルートとして **[HKEY_LOCAL_MACHINE]** を選択します。 64ビットシステムの場合は「 **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 」、32ビットシステムの場合は「 **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 」と入力し、レジストリ値として「 **Install** 」と入力します。 **[次へ]** をクリックします。  
   
-20. In the **What do you want to do with the value?** pane, enter **This product requires the Visual Studio 2015 Isolated Shell Redistributable to be installed.** as the display text and click **Finish**.  
+20. [値を入力し**てください]** ウィンドウで、「**この製品をインストールするには、Visual Studio 2015 の分離シェル再頒布可能パッケージが必要です**」と入力します。 表示テキストとして、 **[完了]** をクリックします。  
   
-21. Rebuild the isolated shell solution to create the setup project.  
+21. セットアッププロジェクトを作成するために、分離シェルソリューションをリビルドします。  
   
-     You can find the setup.exe file in the following folder:  
+     Setup.exe ファイルは次のフォルダーにあります。  
   
      \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
   
-## <a name="testing-the-installation-program"></a>Testing the Installation Program  
- To test the setup, copy the setup.exe file to a different computer and run the Setup executable. You should be able to run the isolated shell application.
+## <a name="testing-the-installation-program"></a>インストールプログラムのテスト  
+ セットアップをテストするには、setup.exe ファイルを別のコンピューターにコピーし、セットアップ実行可能ファイルを実行します。 分離シェルアプリケーションを実行できるようになります。

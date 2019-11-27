@@ -23,11 +23,11 @@ ms.locfileid: "74291499"
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: プロセスのワーキング セット最大バイト数がプロファイリングされています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0504|  
-|Category|Resource Management|  
-|Profiling method|All|  
-|Message|This information was gathered for information only. Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて観察された最大値です。|  
-|Rule type|Information|  
+ルール Id |DA0504 |  
+|Category |リソース管理 |  
+|プロファイル方法 |All |  
+|Message |この情報は情報収集のみを対象としています。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて観察された最大値です。|  
+|ルールの種類 |情報 |  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
   

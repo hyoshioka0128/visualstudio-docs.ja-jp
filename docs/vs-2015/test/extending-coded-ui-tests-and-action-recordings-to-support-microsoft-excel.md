@@ -26,7 +26,7 @@ ms.locfileid: "74302560"
 
   このセクションでは、Excel ワークシートのテストの記録と再生を行うことができるコード化された UI テストの拡張機能について説明します。 拡張機能の各部分については、それぞれの拡張機能を作成する開発者向けに、このセクションとコード コメントで説明します。
 
-  ![UI Test Architecture](../test/media/ui-testarch.png "UI_TestArch") Architecture Overview
+  ![UI テストのアーキテクチャ](../test/media/ui-testarch.png "UI_TestArch")アーキテクチャの概要
 
 ## <a name="download-the-sample"></a>サンプルのダウンロード
  サンプルは、`CodedUIExtensibilitySample.sln` ソリューションの次の 4 つのプロジェクトで構成されています。
@@ -70,7 +70,7 @@ ms.locfileid: "74302560"
 ### <a name="testing-excel-with-the-sampletestproject"></a>SampleTestProject を使用した Excel のテスト
  所有していない特定の Excel バージョンを使用する、提供されたテスト プロジェクトでのテストを実行できます。または、独自のテスト プロジェクトを作成して、独自のテストを記録できます。 詳細については、[「コード化された UI テストを作成する」](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>

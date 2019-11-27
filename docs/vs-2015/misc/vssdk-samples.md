@@ -1,5 +1,5 @@
 ---
-title: VSSDK Samples | Microsoft Docs
+title: VSSDK のサンプル |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,5 +21,5 @@ Visual Studio 機能拡張のサンプルの公式ホームは、 [MSDN コー�
   
  IronPython サンプルも利用できます。 これは、CodePlex Web サイトの [IronPython Studio プロジェクト](https://go.microsoft.com/fwlink/?LinkID=183554) に統合されています。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Domain-Specific Languages | Microsoft Docs
+title: ドメイン固有言語を使用したはじめに |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,332 +19,332 @@ ms.locfileid: "74300916"
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This topic explains the basic concepts in defining and using a domain-specific language (DSL) created with the Modeling SDK for Visual Studio.
+このトピックでは、モデリング SDK for Visual Studio で作成されたドメイン固有言語 (DSL) の定義と使用に関する基本的な概念について説明します。
 
- If you are new to DSLs, we recommend that you work through the **DSL Tools Lab**, which you can find in this site: [Visualizaton and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>What can you do with a Domain-Specific Language?
- A domain-specific language is a notation, usually graphical, that is designed to be used for a particular purpose. By contrast, languages such as UML are general-purpose. In a DSL, you can define the types of model element and their relationships, and how they are presented on the screen.
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>ドメイン固有の言語でできること
+ ドメイン固有言語は、特定の目的に使用するように設計された表記で、通常はグラフィックです。 これに対して、UML などの言語は汎用的なものです。 DSL では、モデル要素とそのリレーションシップの種類と、それらを画面に表示する方法を定義できます。
 
- When you have designed a DSL, you can distribute it as part of a Visual Studio Integration Extension (VSIX) package. Users work with the DSL in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ DSL を設計したら、それを Visual Studio Integration Extension (VSIX) パッケージの一部として配布できます。 ユーザーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で DSL を操作します。
 
- ![Family tree diagram, toolbox, and explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")
+ ![ファミリツリーダイアグラム、ツールボックス、およびエクスプローラー](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
- The notation is only part of a DSL. Together with the notation, your VSIX package includes tools that users can apply to help them edit and generate material from their models.
+ この表記は DSL の一部にすぎません。 この表記に加えて、VSIX パッケージには、ユーザーがモデルから素材を編集および生成するために適用できるツールが含まれています。
 
- One of the principal applications of DSLs is to generate program code, configuration files, and other artifacts. Especially in large projects and product lines, where several variants of a product will be created, generating many of the variable aspects from DSLs can provide a large increase in reliability and a very rapid response to requirements changes.
+ Dsl の主要なアプリケーションの1つは、プログラムコード、構成ファイル、およびその他の成果物を生成することです。 特に、大規模なプロジェクトと製品ラインでは、複数の種類の製品が作成される場合に、Dsl からさまざまな可変要素を生成すると信頼性が大きく向上し、要件の変化に非常に迅速に対応できます。
 
- The rest of this overview is a walkthrough that introduces the basic operations of creating and using a domain-specific language in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ この概要の残りの部分では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でドメイン固有言語を作成および使用する基本的な操作について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
 |||
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Modeling SDK for Visual Studio|[Download MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
+|Visual Studio のモデリング SDK|[MSDK のダウンロード](https://www.microsoft.com/download/details.aspx?id=48148)|
 
-## <a name="creating-a-dsl-solution"></a>Creating a DSL Solution
- To create a new domain-specific language, you create a new [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution by using the Domain-Specific Language project template.
+## <a name="creating-a-dsl-solution"></a>DSL ソリューションの作成
+ 新しいドメイン固有言語を作成するには、ドメイン固有言語プロジェクトテンプレートを使用して新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。
 
 #### <a name="to-create-a-dsl-solution"></a>DSL ソリューションを作成するには
 
 1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
-2. Under **Project types**, expand the **Other Project Types** node, and click **Extensibility**.
+2. **[プロジェクトの種類]** の **[その他のプロジェクトの種類]** ノードを展開し、 **[機能拡張]** をクリックします。
 
-3. Click **Domain-Specific Language Designer**.
+3. **[ドメイン固有言語デザイナー]** をクリックします。
 
-    ![Create DSL dialog](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+    ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. In the **Name** box, type **FamilyTree**. **[OK]** をクリックします。
+4. **[名前]** ボックスに「 **FamilyTree**」と入力します。 **[OK]** をクリックすると、
 
-    The **Domain-Specific Language Wizard** opens, and displays a list of template DSL solutions.
+    **ドメイン固有言語ウィザード**が開き、テンプレート DSL ソリューションの一覧が表示されます。
 
-    Click each template to see a description,
+    各テンプレートをクリックすると、説明が表示されるようになります。
 
-    The templates are useful starting points. Each of them provides a complete working DSL, which you can edit to suit your needs. Ordinarily, you would choose the template nearest what you want to create.
+    テンプレートは、出発点として便利です。 各ユーザーは、必要に応じて編集できる、完全な機能を備えた DSL を提供します。 通常は、作成する内容に最も近いテンプレートを選択します。
 
-5. For this walkthrough, choose the **Minimal Language** template.
+5. このチュートリアルでは、 **[最小言語]** テンプレートを選択します。
 
 6. 該当するウィザード ページに DSL のファイル名拡張子を入力します。 これは、DSL インスタンスを含むファイルに使用される拡張子です。
 
-   - Choose an extension that is not associated with any application in your computer, or in any computer where you want to install the DSL. For example, **docx** and **htm** would be unacceptable file name extensions.
+   - コンピューターのどのアプリケーションにも関連付けられていない拡張機能を選択するか、DSL をインストールする任意のコンピューターを選択してください。 たとえば、 **.docx**と**htm**は、ファイル名拡張子が不適切である可能性があります。
 
-   - 入力した拡張子が DSL として使用されている場合は、ウィザードから警告が出されます。 別のファイル名拡張子の使用を検討してください。 また、古い実験デザイナーをクリアするために Visual Studio SDK 実験用インスタンスをリセットできます。 Click **Start**, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**.
+   - 入力した拡張子が DSL として使用されている場合は、ウィザードから警告が出されます。 別のファイル名拡張子の使用を検討してください。 また、古い実験デザイナーをクリアするために Visual Studio SDK 実験用インスタンスをリセットできます。 **[スタート]** 、 **[すべてのプログラム**]、 **[2010 SDK]** 、 **[ツール]** の順にクリックし、 **Microsoft Visual Studio 2010 の実験的なインスタンスをリセット**し Microsoft Visual Studio ます。
 
-7. Inspect the other pages and then click **Finish**.
+7. 他のページを検査し、 **[完了]** をクリックします。
 
-    A solution is generated that contains two projects. They are named Dsl and DslPackage. A diagram file opens that is named DslDefinition.dsl.
+    2つのプロジェクトを含むソリューションが生成されます。 これらは Dsl および DslPackage という名前です。 "DslDefinition. dsl" という名前のダイアグラムファイルが開きます。
 
    > [!NOTE]
-   > Most of the code that you can see in the folders in the two projects is generated from DslDefinition.dsl. For this reason, most modifications to your DSL are made in this file.
+   > 2つのプロジェクトのフォルダーに表示されるほとんどのコードは、DslDefinition. dsl から生成されます。 このため、DSL に対するほとんどの変更は、このファイルで行われます。
 
    ユーザー インターフェイスは次の図のようになります。
 
    ![DSL デザイナー](../modeling/media/dsl-designer.png "dsl_designer")
 
-   このソリューションはドメイン固有言語を定義します。 For more information, see [Overview of the Domain-Specific Language Tools User Interface](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   このソリューションはドメイン固有言語を定義します。 詳細については、「[ドメイン固有言語ツールユーザーインターフェイスの概要](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)」を参照してください。
 
-## <a name="the-important-parts-of-the-dsl-solution"></a>The important parts of the DSL solution
- Notice the following aspects of the new solution.
+## <a name="the-important-parts-of-the-dsl-solution"></a>DSL ソリューションの重要な部分
+ 新しいソリューションでは、次の点に注意してください。
 
-- **Dsl\DslDefinition.dsl** This is the file that you see when you create a DSL solution. Almost all the code in the solution is generated from this file, and most of the changes that you make to a DSL definition are made here. For more information, see Working with the [Working with the DSL Definition Diagram](../modeling/working-with-the-dsl-definition-diagram.md).
+- **Ds** (& d)これは、DSL ソリューションを作成するときに表示されるファイルです。 ソリューション内のほとんどすべてのコードがこのファイルから生成されます。 DSL 定義に加えた変更のほとんどはここで作成されます。 詳細については、「 [DSL 定義図を](../modeling/working-with-the-dsl-definition-diagram.md)使用した作業」を参照してください。
 
-- **Dsl project** This project contains code that defines the domain-specific language.
+- **Dsl プロジェクト**このプロジェクトには、ドメイン固有言語を定義するコードが含まれています。
 
-- **DslPackage project** This project contains code that allows instances of the DSL to be opened and edited in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- **Dslpackage プロジェクト**このプロジェクトには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で DSL のインスタンスを開いて編集するためのコードが含まれています。
 
-## <a name="Debugging"></a> Running the DSL
- You can run the DSL solution as soon as you have created it. Later, you can modify the DSL definition gradually, running the solution again after each change.
+## <a name="Debugging"></a>DSL を実行する
+ DSL ソリューションを作成したら、すぐに実行できます。 後で DSL 定義を変更して、各変更後にもう一度ソリューションを実行することができます。
 
-#### <a name="to-experiment-with-the-dsl"></a>To experiment with the DSL
+#### <a name="to-experiment-with-the-dsl"></a>DSL を試してみるには
 
-1. Click **Transform All Templates** in the Solution Explorer toolbar. This regenerates most of the source code from DslDefinition.dsl.
+1. ソリューションエクスプローラーツールバーの **[すべてのテンプレートの変換]** をクリックします。 これにより、ほとんどのソースコードが DslDefinition. dsl から再生成されます。
 
    > [!NOTE]
-   > Whenever you change DslDefinition.dsl, you must click **Transform All Templates** before you rebuild the solution. このステップは自動化できます。 For more information, see [How to Automate Transform All Templates](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+   > DslDefinition を変更するたびに、ソリューションをリビルドする前に **[すべてのテンプレートの変換]** をクリックする必要があります。 このステップは自動化できます。 詳細については、「[すべてのテンプレートの変換を自動化する方法](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)」を参照してください。
 
-2. Press F5, or on the **Debug** menu, click **Start Debugging**.
+2. F5 キーを押すか、 **[デバッグ]** メニューの **[デバッグ開始]** をクリックします。
 
-    The DSL builds and is installed in the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    DSL は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスにインストールされます。
 
-    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。 The experimental instance takes its settings from a separate subtree of the registry, where [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions are registered for debugging purposes. Normal instances of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do not have access to extensions registered there.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。 実験的なインスタンスは、レジストリの別のサブツリーから設定を取得します。この場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能はデバッグのために登録されます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の通常のインスタンスには、そこに登録されている拡張機能へのアクセス権がありません。
 
-3. In the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], open the model file named **Test** from **Solution Explorer**.
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスで、**ソリューションエクスプローラー**から**Test**という名前のモデルファイルを開きます。
 
     \- または
 
-    Right-click the Debugging project, point to **Add**, and then click **Item**. In the **Add Item** dialog box, select the file type of your DSL.
+    デバッグプロジェクトを右クリックし、 **[追加]** をポイントして、 **[項目]** をクリックします。 **[項目の追加]** ダイアログボックスで、DSL のファイルの種類を選択します。
 
-    The model file opens as a blank diagram.
+    空の図としてモデルファイルが開きます。
 
-    The toolbox opens and displays tools appropriate to the diagram type.
+    [ツールボックス] が開き、ダイアグラムの種類に適したツールが表示されます。
 
-4. Use the tools to create shapes and connectors on the diagram.
+4. 図に図形とコネクタを作成するには、ツールを使用します。
 
-   1. To create shapes, drag from the Example Shape tool onto the diagram.
+   1. 図形を作成するには、シェイプツール例から図にドラッグします。
 
-   2. To connect two shapes, click the Example Connector tool, click the first shape, and then click the second shape.
+   2. 2つの図形を接続するには、[コネクタの例] ツールをクリックし、最初の図形をクリックして、2番目の図形をクリックします。
 
-5. Click the labels of the shapes to change them.
+5. 図形を変更するには、図形のラベルをクリックします。
 
-   Your experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] will resemble the following example:
+   試験的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、次の例のようになります。
 
    ![](../modeling/media/dsl-min.png "DSL_min")
 
-### <a name="the-content-of-a-model"></a>The Content of a Model
- The content of a file that is an instance of a DSL is called a *model*. The model contains *model elements* and *links* between the elements. The DSL definition specifies what types of model elements and links can exist in the model. For example, in a DSL created from the Minimal Language template, there is one type of model element, and one type of link.
+### <a name="the-content-of-a-model"></a>モデルのコンテンツ
+ DSL のインスタンスであるファイルのコンテンツは、*モデル*と呼ばれます。 モデルには、*モデル要素*と要素間の*リンク*が含まれています。 DSL 定義では、モデル内に存在できるモデル要素とリンクの種類を指定します。 たとえば、最小言語テンプレートから作成された DSL では、1種類のモデル要素と1種類のリンクがあります。
 
- The DSL definition can specify how the model appears on a diagram. You can choose from a variety of styles of shapes and connectors. You can specify that some shapes appear inside other shapes.
+ DSL 定義では、モデルを図に表示する方法を指定できます。 さまざまなスタイルの図形とコネクタを選択できます。 図形によっては、他の図形の中に表示されるように指定できます。
 
- You can view a model as a tree in the **Explorer** view while you are editing a model. As you add shapes to the diagram, the model elements also appear in the explorer. The explorer can be used even if there is no diagram.
+ モデルを編集しているときに、 **[エクスプローラー]** ビューでモデルをツリーとして表示できます。 図に図形を追加すると、モデル要素もエクスプローラーに表示されます。 図がない場合でも、エクスプローラーを使用できます。
 
- If you cannot see the Explorer in the debugging instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], on the **View** menu point to **Other Windows**, and then click *\<Your Language>* **Explorer**.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のデバッグインスタンスにエクスプローラーが表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、[*言語の\<>* **エクスプローラー**] をクリックします。
 
-### <a name="the-api-of-your-dsl"></a>The API of your DSL
- Your DSL generates an API that allows you to read and update models that are instances of the DSL. One application of the API is to generate text files from a model. For more information, see [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+### <a name="the-api-of-your-dsl"></a>DSL の API
+ DSL は、DSL のインスタンスであるモデルの読み取りと更新を可能にする API を生成します。 API の1つのアプリケーションは、モデルからテキストファイルを生成することです。 詳細については、「 [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。
 
- In the Debugging solution, open the template files with extension ".tt". These samples demonstrate how you can generate text from models, and allow you to test the API of your DSL. One of the samples is written in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], the other in [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+ デバッグソリューションで、拡張子が ".tt" のテンプレートファイルを開きます。 これらのサンプルでは、モデルからテキストを生成し、DSL の API をテストできるようにする方法を示します。 サンプルの1つは、[!INCLUDE[csprcs](../includes/csprcs-md.md)]の別の [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]で記述されています。
 
- Under each template file is the file that it generates. Expand the template file in Solution Explorer, and open the generated file.
+ 各テンプレートファイルの下には、生成されるファイルがあります。 ソリューションエクスプローラーでテンプレートファイルを展開し、生成されたファイルを開きます。
 
- The template file contains a short segment of code that lists all the elements in the model.
+ テンプレートファイルには、モデル内のすべての要素を一覧表示するコードの短いセグメントが含まれています。
 
- The generated file contains the result.
+ 生成されたファイルには、結果が含まれます。
 
- When you change a model file, you will see corresponding changes in generated files after you regenerate the files.
+ モデルファイルを変更すると、ファイルを再生成した後に、生成されたファイルに対応する変更が表示されます。
 
-##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>To regenerate text files after you change the model file
+##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>モデルファイルを変更した後にテキストファイルを再生成するには
 
-1. In the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], save the model file.
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスで、モデルファイルを保存します。
 
-2. Make sure that the file name parameter in each .tt file refers to the model file that you are using for experiments. Save the .tt file.
+2. 各 .tt ファイルのファイル名パラメーターが、実験に使用しているモデルファイルを参照していることを確認します。 .Tt ファイルを保存します。
 
-3. Click **Transform All Templates** in the toolbar of **Solution Explorer**.
+3. **ソリューションエクスプローラー**のツールバーで **[すべてのテンプレートの変換]** をクリックします。
 
     \- または
 
-    Right-click the templates that you want to regenerate and then click **Run Custom Tool**.
+    再生成するテンプレートを右クリックし、 **[カスタムツールの実行]** をクリックします。
 
-   You can add any number of text template files to a project. Each template generates one result file.
+   任意の数のテキストテンプレートファイルをプロジェクトに追加できます。 各テンプレートでは、1つの結果ファイルが生成されます。
 
 > [!NOTE]
-> When you change the DSL definition, the sample text template code will not work, unless you update it.
+> DSL 定義を変更しても、更新しない限り、サンプルテキストテンプレートのコードは機能しません。
 
- For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md) and [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+ 詳細については、「[ドメイン固有言語からコードを生成](../modeling/generating-code-from-a-domain-specific-language.md)する」と「[ドメイン固有言語をカスタマイズするコードを記述する](../modeling/writing-code-to-customise-a-domain-specific-language.md)」を参照してください。
 
 ## <a name="customizing-the-dsl"></a>DSL のカスタマイズ
- When you want to modify the DSL definition, close the experimental instance and update the definition in the main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance.
+ DSL 定義を変更する場合は、実験用インスタンスを閉じ、メイン [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インスタンスの定義を更新します。
 
 > [!NOTE]
-> After you have modified the DSL definition, you might lose information in the test models that you have created by using earlier versions.  For example, the debugging solution contains a file that is named Sample, which contains some shapes and connectors. After you start to develop your DSL definition, they will not be visible, and they will be lost when you save the file.
+> DSL 定義を変更した後は、以前のバージョンを使用して作成したテストモデルの情報が失われる可能性があります。  たとえば、デバッグソリューションには、"Sample" という名前のファイルが含まれています。このファイルには、いくつかの図形とコネクタが含まれています。 DSL 定義の開発を開始した後は、その定義は表示されず、ファイルを保存すると失われます。
 
- You can make a wide variety of extensions to your DSL. The following examples will give you an impression of the possibilities.
+ DSL には、さまざまな拡張機能を作成できます。 次の例では、可能性のある印象が得られます。
 
- After each change, save the DSL definition, click **Transform All Templates** in **Solution Explorer**, and then press **F5** to experiment with the changed DSL.
+ 各変更後、DSL 定義を保存し、[**ソリューションエクスプローラー**の**すべてのテンプレートを変換**] をクリックしてから、 **F5**キーを押して変更された DSL を試します。
 
-### <a name="rename-the-types-and-tools"></a>Rename the Types and Tools
- Rename the existing domain classes and relationships. For example, starting from a Dsl Definition created from the Minimal Language template, you could perform the following renaming operations, to make the DSL represent family trees.
+### <a name="rename-the-types-and-tools"></a>型とツールの名前を変更する
+ 既存のドメインクラスとリレーションシップの名前を変更します。 たとえば、最小言語テンプレートから作成された Dsl 定義から開始すると、次の名前変更操作を実行して、DSL がファミリツリーを表すようにすることができます。
 
-##### <a name="to-rename-domain-classes-relationships-and-tools"></a>To rename domain classes, relationships and tools
+##### <a name="to-rename-domain-classes-relationships-and-tools"></a>ドメインクラス、リレーションシップ、ツールの名前を変更するには
 
-1. In the DslDefinition diagram, rename **ExampleModel** to **FamilyTreeModel**, **ExampleElement** to **Person**, **Targets** to **Parents**, and **Sources** to **Children**. You can click each label to change it.
+1. DslDefinition ダイアグラムで、 **examplemodel.store**の名前を**FamilyTreeModel**に **、要素**を**Person**に、**ターゲット**を**親**に、および**子**に**ソース**を変更します。 各ラベルをクリックして変更することができます。
 
-     ![DSL Definition diagram &#45; family tree model](../modeling/media/familyt-person.png "FamilyT_Person")
+     ![DSL 定義図&#45;ファミリツリーモデル](../modeling/media/familyt-person.png "FamilyT_Person")
 
-2. Rename the element and connector tools.
+2. 要素およびコネクタツールの名前を変更します。
 
-    1. Open the DSL Explorer window by clicking the tab under Solution Explorer. If you cannot see it, on the **View** menu point to **Other Windows** and then click **DSL Explorer**. DSL Explorer is visible only when the DSL Definition diagram is the active window.
+    1. [ソリューションエクスプローラー] の下にあるタブをクリックして、DSL エクスプローラーウィンドウを開きます。 表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[DSL エクスプローラー]** をクリックします。 Dsl エクスプローラーは、DSL 定義の図がアクティブなウィンドウである場合にのみ表示されます。
 
-    2. Open the Properties window and position it so that you can see DSL Explorer and Properties at the same time.
+    2. プロパティウィンドウを開き、DSL エクスプローラーとプロパティを同時に表示できるように配置します。
 
-    3. In DSL Explorer, expand **Editor**, **Toolbox Tabs**, *\<your DSL>* , and then **Tools**.
+    3. DSL エクスプローラーで、 **[エディター]** 、[**ツールボックス] タブ**、 *Dsl >\<* 、 **[ツール]** の順に展開します。
 
-    4. Click **ExampleElement**. This is the toolbox item that is used to create elements.
+    4. **[要素]** をクリックします。 これは、要素の作成に使用されるツールボックス項目です。
 
-    5. In the Properties window, change the **Name** property to **Person**.
+    5. プロパティウィンドウで、 **Name**プロパティを**Person**に変更します。
 
-         Notice that the **Caption** property also changes.
+         **キャプション**プロパティも変更されることに注意してください。
 
-    6. In the same manner, change the name of the **ExampleConnector** tool to **ParentLink**. Alter the **Caption** property so that it is not a copy of the Name property. For example, enter **Parent Link**.
+    6. 同様に、 **ExampleConnector**ツールの名前を**parentlink**に変更します。 Name プロパティのコピーではないように、 **Caption**プロパティを変更します。 たとえば、「**親リンク**」と入力します。
 
-3. Rebuild the DSL.
+3. DSL を再構築します。
 
-    1. Save the DSL Definition file.
+    1. DSL 定義ファイルを保存します。
 
-    2. Click **Transform All Templates** in the toolbar of Solution Explorer
+    2. ソリューションエクスプローラーのツールバーで **[すべてのテンプレートの変換]** をクリックします。
 
-    3. F5 キーを押します。 Wait until the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] appears.
+    3. F5 キーを押します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスが表示されるまで待ちます。
 
-4. In the Debugging solution in the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], open a test model file. Drag elements onto it from the toolbox. Notice that the tool captions and the type names in DSL Explorer have changed.
+4. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスのデバッグソリューションで、テストモデルファイルを開きます。 要素をツールボックスからドラッグします。 DSL エクスプローラーのツールキャプションと型名が変更されていることに注意してください。
 
-5. Save the model file.
+5. モデルファイルを保存します。
 
-6. Open a .tt file and replace occurrences of the old type and property names with the new names.
+6. .Tt ファイルを開き、古い型とプロパティ名の出現箇所を新しい名前に置き換えます。
 
-7. Make sure that the file name that is specified in the .tt file specifies your test model.
+7. .Tt ファイルに指定されているファイル名によって、テストモデルが指定されていることを確認します。
 
-8. Save the .tt file. Open the generated file to see the result of running the code in the .tt file. Verify that it is correct.
+8. .Tt ファイルを保存します。 生成されたファイルを開き、.tt ファイルでコードを実行した結果を確認します。 正しいことを確認します。
 
-### <a name="add-domain-properties-to-classes"></a>Add Domain Properties to Classes
- Add properties to a domain class, for example to represent the years of birth and death of a Person.
+### <a name="add-domain-properties-to-classes"></a>クラスにドメインプロパティを追加する
+ ドメインクラスにプロパティを追加します。たとえば、人の生と死亡の年数を表します。
 
- To make the new properties visible on the diagram, you must add *decorators* to the shape that displays the model element. You must also map the properties to the decorators.
+ 新しいプロパティがダイアグラムに表示されるようにするには、モデル要素を表示する図形に*デコレーター*を追加する必要があります。 また、プロパティをデコレーターにマップする必要があります。
 
-##### <a name="to-add-properties-and-display-them"></a>To add properties and display them
+##### <a name="to-add-properties-and-display-them"></a>プロパティを追加して表示するには
 
-1. Add the properties.
+1. プロパティを追加します。
 
-   1. In the DSL Definition diagram, right-click the **Person** domain class, point to **Add**, and then click **Domain Property**.
+   1. DSL 定義図で、 **Person**ドメインクラスを右クリックし、 **[追加]** をポイントして、 **[ドメインプロパティ]** をクリックします。
 
-   2. Type a list of new property names, such as **Birth** and **Death**. Press **Enter** after each one.
+   2. 新しいプロパティ名の一覧を入力します。たとえば、「**誕生日**」や「**死亡**」などです。 それぞれの後に**enter**キーを押します。
 
-2. Add decorators that will display the properties in the shape.
+2. 図形のプロパティを表示するデコレーターを追加します。
 
-   1. Follow the gray line that extends from the Person domain class to the other side of the diagram. This is a diagram element map. It links the domain class to a shape class.
+   1. Person ドメインクラスから、図のもう一方の側までの灰色の線に従います。 これは、図の要素マップです。 ドメインクラスを shape クラスにリンクします。
 
-   2. Right-click this shape class, point to **Add**, and then click **Text Decorator**.
+   2. この図形クラスを右クリックして **[追加]** をポイントし、 **[テキストデコレータ]** をクリックします。
 
-   3. Add two decorators with names such as **BirthDecorator** and **DeathDecorator**.
+   3. **BirthDecorator**や**DeathDecorator**などの名前を持つ2つのデコレーターを追加します。
 
-   4. Select each new decorator, and in the Properties window, set the **Position** field. This determines where the domain property value will be displayed on the shape. For example, set **InnerBottomLeft** and **InnerBottomRight**.
+   4. 新しいデコレータをそれぞれ選択し、プロパティウィンドウで **[位置]** フィールドを設定します。 これにより、ドメインプロパティ値が図形に表示される場所が決まります。 たとえば、 **inner左下**と**inner右下**を設定します。
 
-        ![Compartment shape definition](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
+        ![コンパートメントシェイプの定義](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
 
-3. Map the decorators to the properties.
+3. デコレーターをプロパティにマップします。
 
-   1. Open the DSL Details window. It is usually in a tab next to the Output window. If you cannot see it, on the **View** menu, point to **Other Windows**, and then click **DSL Details**.
+   1. [DSL Details] (DSL の詳細) ウィンドウを開きます。 通常は、[出力] ウィンドウの横にあるタブに表示されます。 表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[DSL の詳細]** をクリックします。
 
-   2. On the DSL definition diagram, click the line that connects the **Person** domain class to the shape class.
+   2. DSL 定義図で、 **Person**ドメインクラスを shape クラスに接続する線をクリックします。
 
-   3. In **DSL Details**, on the **Decorator Maps** tab, click the check box on an unmapped decorator. In **Display Property**, select the domain property to which you want it mapped. For example, map **BirthDecorator** to **Birth**.
+   3. **[DSL の詳細]** の **[デコレータマップ]** タブで、マップされていないデコレータのチェックボックスをオンにします。 **[表示プロパティ]** で、マップ先のドメインプロパティを選択します。 たとえば、 **BirthDecorator**を**誕生日**にマップします。
 
-4. Save the DSL, click Transform All Templates, and press F5.
+4. DSL を保存し、[すべてのテンプレートの変換] をクリックして、F5 キーを押します。
 
-5. In a sample model diagram, verify that you can now click the positions you chose and type values into them. In addition, when you select a **Person** shape, the Properties window displays the new properties Birth and Death.
+5. サンプルモデルダイアグラムで、選択した位置をクリックして値を入力できることを確認します。 さらに、**人物**図形を選択すると、プロパティウィンドウに新しいプロパティ "誕生日" と "死亡" が表示されます。
 
-6. In a .tt file, you can add code that obtains the properties of each person.
+6. .Tt ファイルでは、各ユーザーのプロパティを取得するコードを追加できます。
 
-   ![Family tree diagram, toolbox, and explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")
+   ![ファミリツリーダイアグラム、ツールボックス、およびエクスプローラー](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
-### <a name="define-new-classes"></a>Define New Classes
- You can add domain classes and relationships to a model. For example, you could create a new class to represent towns, and a new relationship to represent that a person lived in a town.
+### <a name="define-new-classes"></a>新しいクラスを定義する
+ モデルにドメインクラスとリレーションシップを追加できます。 たとえば、町を表す新しいクラスを作成し、その人物が町に住んでいることを表す新しいリレーションシップを作成することができます。
 
- To make the different types distinct on a model diagram, you can map the domain classes to different kinds of shape, or to shapes with different geometry and colors.
+ モデルダイアグラムで異なる型を個別に作成するには、ドメインクラスをさまざまな種類の図形、または異なるジオメトリと色を持つ図形にマップします。
 
-##### <a name="to-add-and-display-a-new-domain-class"></a>To add and display a new domain class
+##### <a name="to-add-and-display-a-new-domain-class"></a>新しいドメインクラスを追加して表示するには
 
-1. Add a domain class and make it a child of the model root.
+1. ドメインクラスを追加し、モデルルートの子にします。
 
-    1. In the DSL Definition diagram, click the **Embedding Relationship** tool, click the root class **FamilyTreeModel**, and then click in an empty part of the diagram.
+    1. DSL 定義図で、 **[埋め込みリレーションシップ]** ツールをクリックし、ルートクラス**FamilyTreeModel**をクリックします。次に、図の空の部分をクリックします。
 
-         A new domain class appears, that is connected to the FamilyTreeModel with an embedding relationship.
+         新しいドメインクラスが表示されます。このクラスは、埋め込みリレーションシップを使用して FamilyTreeModel に接続されています。
 
-         Set its name, for example **Town**.
-
-        > [!NOTE]
-        > Every domain class except the root of the model must be the target of at least one embedding relationship, or it must inherit from a class that is the target of an embedding. For this reason, it is frequently convenient to create a domain class by using the Embedding Relationship tool.
-
-    2. Add a domain property to the new class, for example **Name**.
-
-2. Add a reference relationship between Person and Town.
-
-    1. Click the **Reference Relationship** tool, click Person and then click Town.
-
-         ![DSL definition fragment: family tree root](../modeling/media/familyt-root.png "FamilyT_Root")
+         たとえば、「**町村**」などの名前を設定します。
 
         > [!NOTE]
-        > Reference relationships represent cross-references from one part of the model tree to another.
+        > モデルのルートを除くすべてのドメインクラスは、少なくとも1つの埋め込みリレーションシップのターゲットであるか、または埋め込みのターゲットであるクラスから継承する必要があります。 このため、埋め込みリレーションシップツールを使用してドメインクラスを作成すると便利な場合がよくあります。
 
-3. Add a shape to represent towns on the model diagrams.
+    2. 新しいクラスにドメインプロパティを追加します。たとえば、「 **Name**」と指定します。
 
-    1. Drag a **Geometry Shape** from the toolbox to the diagram and rename it, for example **TownShape**.
+2. Person と町村の間に参照リレーションシップを追加します。
 
-    2. In the Properties window, set the Appearance fields of the new shape, such as Fill Color and Geometry.
+    1. **参照関係** ツールをクリックし、Person をクリックして、町村 をクリックします。
 
-    3. Add a Decorator to display the name of the town, and rename it NameDecorator. Set its Position property.
+         ![DSL 定義フラグメント: ファミリツリールート](../modeling/media/familyt-root.png "FamilyT_Root")
 
-4. Map the Town domain class to the TownShape.
+        > [!NOTE]
+        > 参照リレーションシップは、モデルツリーのある部分から別の部分への相互参照を表します。
 
-    1. Click the **Diagram Element Map** tool, then click the Town domain class, and then the TownShape shape class.
+3. モデル図の町を表す図形を追加します。
 
-    2. In the **Decorator Maps** tab of the **DSL Details** window with the map connector selected, check NameDecorator and set **Display Property** to Name.
+    1. **Geometry 図形**をツールボックスから図にドラッグし、名前を変更します (たとえば、 **TownShape**)。
 
-5. Create a connector to display the relationship between Person and Towns.
+    2. プロパティウィンドウで、塗りつぶしの色やジオメトリなど、新しい図形の外観フィールドを設定します。
 
-    1. Drag a Connector from the toolbox to the diagram. Rename it and set its appearance properties.
+    3. NameDecorator の名前を表示するデコレータを追加し、名前を変更します。 その Position プロパティを設定します。
 
-    2. Use the **Diagram Element Map** tool to link the new connector to the relationship between Person and Town.
+4. 町のドメインクラスを TownShape にマップします。
 
-         ![Family Tree definition with added shape map](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
+    1. **図要素マップ** ツールをクリックし、町のドメイン クラスをクリックして、TownShape shape クラスをクリックします。
 
-6. Create an element tool for making a new Town.
+    2. **DSL 詳細** ウィンドウの **デコレータマップ** タブで、マップコネクタが選択されていることを確認し、NameDecorator をオンにして、**表示プロパティ** を 名前 に設定します。
 
-    1. In **DSL Explorer**, expand **Editor** then **Toolbox Tabs**.
+5. 人物と町との関係を表示するコネクタを作成します。
 
-    2. Right-click *\<your DSL>* and then click **Add New Element Tool**.
+    1. コネクタをツールボックスから図にドラッグします。 名前を変更し、その外観プロパティを設定します。
 
-    3. Set the **Name** property of the new tool, and set its **Class** property to Town.
+    2. **ダイアグラム要素マップ**ツールを使用して、新しいコネクタを Person と町村の間のリレーションシップにリンクします。
 
-    4. Set the **Toolbox Icon** property. Click **[...]** and in the **File name** field, select an icon file.
+         ![追加された図形マップを含むファミリツリー定義](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
 
-7. Create a connector tool for making a link between towns and people.
+6. 新しい町を作るための要素ツールを作成します。
 
-    1. Right-click *\<your DSL>* and then click **Add New Connector Tool**.
+    1. **DSL エクスプローラー**で、 **[エディター]** 、[**ツールボックス] タブ**の順に展開します。
 
-    2. Set the Name property of the new tool.
+    2. *DSL >\<* 右クリックし、[**新しい要素の追加] ツール**をクリックします。
 
-    3. In the **ConnectionBuilder** property, select the builder that contains the name of the Person-Town relationship.
+    3. 新しいツールの**Name**プロパティを設定し、その **[Class]** プロパティを [町村] に設定します。
 
-    4. Set the **Toolbox Icon**.
+    4. **ツールボックスアイコン**プロパティを設定します。 [ **...]** をクリックし、 **[ファイル名]** フィールドでアイコンファイルを選択します。
 
-8. Save the DSL Definition, click **Transform All Templates**, and then press **F5**.
+7. 町と people の間にリンクを作成するためのコネクタツールを作成します。
 
-9. In the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], open a test model file. Use the new tools to create towns and links between towns and persons. Notice that you can only create links between the correct types of element.
+    1. *DSL >\<* 右クリックし、 **[新しいコネクタツールの追加]** をクリックします。
 
-10. Create code that lists the town in which each person lives. Text templates are one of the places where you can run such code. For example, you could modify the existing Sample.tt file in the Debugging solution so that it contains the following code:
+    2. 新しいツールの [名前] プロパティを設定します。
+
+    3. **Connectionbuilder**プロパティで、Person リレーションシップの名前が含まれているビルダーを選択します。
+
+    4. **ツールボックスアイコン**を設定します。
+
+8. DSL 定義を保存し、 **[すべてのテンプレートの変換]** をクリックしてから、 **F5**キーを押します。
+
+9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスで、テストモデルファイルを開きます。 新しいツールを使用して、町や人物との間のリンクを作成します。 正しい種類の要素間のリンクのみを作成できることに注意してください。
+
+10. 各人物が住んでいる町を示すコードを作成します。 テキストテンプレートは、このようなコードを実行できる場所の1つです。 たとえば、デバッグソリューションの既存の Sample.tt ファイルを変更して、次のコードが含まれるようにすることができます。
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -369,34 +369,34 @@ This topic explains the basic concepts in defining and using a domain-specific l
 
     ```
 
-     When you save the *.tt file, it will create a subsidiary file that contains the list of people and their residences. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
+     \* .Tt ファイルを保存すると、ユーザーとその residences の一覧を含む子会社ファイルが作成されます。 詳細については、「[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 
-## <a name="validation-and-commands"></a>Validation and Commands
- You could develop this DSL further by adding validation constraints. These constraints are methods that you can define, that make sure that the model is in a correct state. For example, you could define a constraint to make sure that the birth date of a child is later than that of its parents. The validation feature displays a warning if the DSL user tries to save a model that breaks any of the constraints. For more information, see [Validation in a Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
+## <a name="validation-and-commands"></a>検証とコマンド
+ 検証制約を追加することで、この DSL をさらに開発できます。 これらの制約は、モデルが正しい状態であることを確認するために定義できるメソッドです。 たとえば、子の生年月日が親の日付よりも後であることを確認するための制約を定義できます。 検証機能では、DSL ユーザーがいずれかの制約を解除するモデルを保存しようとすると、警告が表示されます。 詳細については、「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 
- You can also define menu commands that the user can invoke. Commands can modify the model. They can also interact with other models in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] and with external resources. For more information, see [How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ ユーザーが呼び出すことのできるメニューコマンドを定義することもできます。 コマンドを使用してモデルを変更できます。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] と外部リソースを使用して、他のモデルと対話することもできます。 詳細については、「[方法: 標準メニューコマンドを変更](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)する」を参照してください。
 
-## <a name="deploying-the-dsl"></a>Deploying the DSL
- To allow other users to use the domain-specific language, you distribute a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) file. This is created when you build the DSL solution.
+## <a name="deploying-the-dsl"></a>DSL を展開する
+ 他のユーザーがドメイン固有言語を使用できるようにするには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能 (VSIX) ファイルを配布します。 これは、DSL ソリューションをビルドするときに作成されます。
 
- Locate the .vsix file in the bin folder of your solution. Copy it to the computer on which you want to install it. On that computer, double-click the VSIX file. The DSL can be used in all instances of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] on that computer.
+ ソリューションの bin フォルダーで .vsix ファイルを見つけます。 それをインストールするコンピューターにコピーします。 そのコンピューターで、VSIX ファイルをダブルクリックします。 DSL は、そのコンピューター上の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのインスタンスで使用できます。
 
- You can use the same procedure to install the DSL on your own computer so that you do not have to use the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ 同じ手順を使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の実験用インスタンスを使用する必要がないように、自分のコンピューターに DSL をインストールすることもできます。
 
  詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
-## <a name="Reset"></a> Removing old Experimental DSLs
- If you have created experimental DSLs that you no longer want, you can remove them from your computer by resetting the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Experimental instance.
+## <a name="Reset"></a>古い実験用 Dsl の削除
+ 不要になった実験的な Dsl を作成した場合は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスをリセットして、コンピューターから削除することができます。
 
- This will remove from your computer all experimental DSLs and other experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. These are extensions that have been executed in debugging mode.
+ これにより、すべての試験的な Dsl およびその他の試験的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能がコンピューターから削除されます。 これらは、デバッグモードで実行された拡張機能です。
 
- This procedure does not remove DSLs or other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions that have been fully installed by executing the VSIX file.
+ この手順では、VSIX ファイルを実行して完全にインストールされた Dsl またはその他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能は削除されません。
 
-#### <a name="to-reset-the-visual-studio-experimental-instance"></a>To reset the Visual Studio Experimental instance
+#### <a name="to-reset-the-visual-studio-experimental-instance"></a>Visual Studio の実験的なインスタンスをリセットするには
 
-1. Click **Start**, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**.
+1. **[スタート]** 、 **[すべてのプログラム**]、 **[2010 SDK]** 、 **[ツール]** の順にクリックし、 **Microsoft Visual Studio 2010 の実験的なインスタンスをリセット**し Microsoft Visual Studio ます。
 
-2. Rebuild any experimental DSLs or other experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions that you still want to use.
+2. 引き続き使用する実験的な Dsl またはその他の試験的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能を再構築します。
 
-## <a name="see-also"></a>参照
- [Understanding Models, Classes and Relationships](../modeling/understanding-models-classes-and-relationships.md) [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>関連項目
+ [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

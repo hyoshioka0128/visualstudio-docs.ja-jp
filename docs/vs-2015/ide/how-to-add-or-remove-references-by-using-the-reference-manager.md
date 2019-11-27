@@ -127,11 +127,11 @@ ms.locfileid: "74300162"
 
     *VersionMinimum* は、適用される .NET Framework の最小バージョンです。 *VersionMinimum* が v3.0 の場合、AssemblyFoldersEx で指定したフォルダーは、.NET Framework 3.0 以降を対象にしたプロジェクトに適用されます。
 
-    *AssemblyLocation* は、C:\MyAssemblies\\ など、 **[参照の追加]** ダイアログ ボックスに表示されるアセンブリのディレクトリです。
+    *AssemblyLocation* は、C:\MyAssemblies **など、** [参照の追加]\\ ダイアログ ボックスに表示されるアセンブリのディレクトリです。
 
     HKEY_LOCAL_MACHINE ノードにレジストリ キーを作成すると、すべてのユーザーが特定の場所にあるアセンブリを **[参照の追加]** ダイアログ ボックスに表示できるようになります。 HKEY_CURRENT_USER ノードにレジストリ キーを作成すると、現在のユーザーの設定にのみ影響します。
 
-    **[参照の追加]** ダイアログ ボックスを再度開きます。 The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
+    **[参照の追加]** ダイアログ ボックスを再度開きます。 アセンブリが **[.net]** タブに表示されます。そうでない場合は、アセンブリが指定された*Assemblylocation*ディレクトリに配置されていることを確認し、Visual Studio を再起動して、もう一度やり直してください。
 
 ## <a name="com-tab"></a>[COM] タブ
  [COM] タブには、参照できるすべての COM コンポーネントの一覧が表示されます。 内部マニフェストを含む登録済みの COM DLL に参照を追加する場合は、その DLL の登録をまず解除してください。 そうしない場合は、Visual Studio は、アセンブリ参照をネイティブ DLL ではなく、ActiveX コントロールとして追加します。
@@ -209,11 +209,11 @@ ms.locfileid: "74300162"
     > [!NOTE]
     > プロパティを追加した場合は、ビルド速度が遅くなる可能性があります。
 
-## <a name="recent"></a>最近使用したファイル
+## <a name="recent"></a>最近使った項目
  [アセンブリ]、[COM]、[Windows]、[参照] はいずれも [最近使用したファイル] タブをサポートし、このタブではプロジェクトに最近追加されたコンポーネントのリストが列挙されます。
 
-## <a name="search"></a>検索
+## <a name="search"></a>[検索]
  **[参照マネージャー]** ダイアログ ボックス内の検索バーは、現在フォーカスが置かれているタブを対象として動作します。 たとえば、 **[ソリューション]** タブにフォーカスがあるときにユーザーが検索バーに「System」と入力した場合は、"System" という文字列を含むプロジェクト名がソリューションを形成している状況以外では、検索結果が返されません。
 
-## <a name="see-also"></a>参照
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)
+## <a name="see-also"></a>関連項目
+ [NIB 方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除し、](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [プロジェクト内の参照を管理](../ide/managing-references-in-a-project.md)する

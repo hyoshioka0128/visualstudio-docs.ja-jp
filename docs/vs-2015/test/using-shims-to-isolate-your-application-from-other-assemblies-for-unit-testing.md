@@ -18,9 +18,9 @@ ms.locfileid: "74301414"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim を使用して単体テストでアプリケーションを他のアセンブリから分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Shim 型** は、テスト中のコンポーネントを環境から簡単に分離するために Microsoft Fakes Framework が使用する 2 つのテクノロジのうちの 1 つです。 Shim は、特定のメソッドの呼び出しを、テストの一部として作成したコードに迂回させます。 多くのメソッドは、外部の状況に応じて異なる結果を返しますが、shim はテストの制御下にあり、すべての呼び出しで一定の結果を返すことができます。 そのため、テストの記述が非常に簡単になります。
+Shim 型** は、テスト中のコンポーネントを環境から簡単に分離するために Microsoft Fakes Framework が使用する 2 つのテクノロジのうちの 1 つです。 shim は、特定のメソッドの呼び出しを、テストの一環として作成したコードに迂回させます。 多くのメソッドは、外部の状況に応じて異なる結果を返しますが、shim はテストの制御下にあり、すべての呼び出しで一定の結果を返すことができます。 そのため、テストの作成が簡単になります。
 
- shim を使用して、ソリューションの一部ではないアセンブリからコードを分離します。 ソリューションの各コンポーネントを分離するには、スタブを使用することをお勧めします。
+ shim を使用すると、ソリューションに含まれないコードをアセンブリから分離することができます。 ソリューションのコンポーネントを相互に分離するには、スタブを使用することをお勧めします。
 
  概要とクイック スタート ガイドについては、「[Microsoft Fakes を使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md)」を参照してください。
 
@@ -88,10 +88,10 @@ public void Y2kCheckerTest() {
 
 ```
 
- 各 shim コンテキストを適切に破棄することが重要です。 原則としては、登録した shim を適切に消去するために、常に `using` ステートメント内で `ShimsContext.Create` を呼び出します。 たとえば、`DateTime.Now` メソッドを常に 2000 年 1 月 1 日を返すデリゲートに置き換えるテスト メソッドのために shim を登録する場合があります。 テスト メソッド内で登録済み shim を消去し忘れた場合、テスト実行の残りの部分では、DateTime.Now 値として常に 2000 年 1 月 1 日が返されます。 これは、予想外で、混乱を招く可能性があります。
+ 各 shim コンテキストを適切に破棄することが重要です。 原則としては、登録した shim を適切に消去するために、常に `ShimsContext.Create` ステートメント内で `using` を呼び出します。 たとえば、`DateTime.Now` メソッドを常に 2000 年 1 月 1 日を返すデリゲートに置き換えるテスト メソッドのために shim を登録する場合があります。 テスト メソッド内で登録済み shim を消去し忘れた場合、テスト実行の残りの部分では、DateTime.Now 値として常に 2000 年 1 月 1 日が返されます。 これは、予想外で、混乱を招く可能性があります。
 
 ### <a name="WriteShims"></a> shim を使用してテストを作成する
- テスト コード内で、フェイク メソッドに *detour* を挿入します。 (例:
+ テスト コード内で、フェイク メソッドに *detour* を挿入します。 例 :
 
 ```csharp
 [TestClass]
@@ -382,7 +382,7 @@ public class ShimMyBase : ShimBase<MyBase> {
 ### <a name="BKMK_Binding_interfaces"></a> バインド インターフェイス
  shim が適用された型がインターフェイスを実装する場合、コード ジェネレーターは、そのインターフェイスのすべてのメンバーを一度にバインドできるメソッドを生成します。
 
- たとえば、`IEnumerable<int>` を実装する `MyClass` クラスがあるとします。
+ たとえば、`MyClass` を実装する `IEnumerable<int>` クラスがあるとします。
 
 ```csharp
 public class MyClass : IEnumerable<int> {
@@ -416,7 +416,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 ```
 
 ## <a name="BKMK_Changing_the_default_behavior"></a> 既定の動作を変更する
- 生成された各 shim 型は、`ShimBase<T>.InstanceBehavior` プロパティを通じて、`IShimBehavior` インターフェイスのインスタンスを保持します。 明示的に shim が適用されていないインスタンス メンバーをクライアントが呼び出すたびに、この動作が使用されます。
+ 生成された各 shim 型は、`IShimBehavior` プロパティを通じて、`ShimBase<T>.InstanceBehavior` インターフェイスのインスタンスを保持します。 明示的に shim が適用されていないインスタンス メンバーをクライアントが呼び出すたびに、この動作が使用されます。
 
  この動作が明示的に設定されていない場合は、静的な `ShimsBehaviors.Current` プロパティによって返されるインスタンスが使用されます。 既定では、このプロパティは `NotImplementedException` 例外をスローする動作を返します。
 
@@ -430,7 +430,7 @@ shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
 
 ```
 
- 静的 `ShimsBehaviors.Current` プロパティを設定することによって `InstanceBehavior` プロパティが明示的に設定されていない、shim が適用されているすべてのインスタンスの動作を、グローバルに変更することもできます。
+ 静的 `InstanceBehavior` プロパティを設定することによって `ShimsBehaviors.Current` プロパティが明示的に設定されていない、shim が適用されているすべてのインスタンスの動作を、グローバルに変更することもできます。
 
 ```csharp
 // unit test code
@@ -506,5 +506,5 @@ ShimFile.WriteAllTextStringString = shim;
 ### <a name="guidance"></a>ガイダンス
  [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>参照
- [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost’s blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+## <a name="see-also"></a>関連項目
+ [Microsoft のフェイクを使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md) [: Peter Provost のブログ: Visual studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [ビデオ (1h16): Visual studio 2012 でのフェイクによるテスト不可能なコードのテスト](https://go.microsoft.com/fwlink/?LinkId=261837)

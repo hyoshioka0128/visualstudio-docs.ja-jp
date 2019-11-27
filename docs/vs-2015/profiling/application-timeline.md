@@ -38,10 +38,10 @@ ms.locfileid: "74297753"
 5. Windows 7  
   
 > [!NOTE]
-> **アプリケーション タイムライン** データと共に、CPU 使用率データ、エネルギー消費量データを収集して分析できます。 See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> **アプリケーション タイムライン** データと共に、CPU 使用率データ、エネルギー消費量データを収集して分析できます。 「[デバッグなしでプロファイリングツールを実行](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)する」を参照してください。  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> アプリケーション タイムライン データの収集  
- ローカル コンピューター、接続されたデバイス、Visual Studio シミュレーターやエミュレーター、またはリモート デバイスでアプリの応答性をプロファイリングすることができます。 See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ ローカル コンピューター、接続されたデバイス、Visual Studio シミュレーターやエミュレーター、またはリモート デバイスでアプリの応答性をプロファイリングすることができます。 「[デバッグなしでプロファイリングツールを実行](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)する」を参照してください。  
   
 > [!TIP]
 > 可能な場合には、アプリをデバイス上で直接実行します。 シミュレーターまたはリモート デスクトップ接続で計測されたアプリケーションのパフォーマンスは、デバイス上での実際のパフォーマンスと同じではないことがあります。 一方で、Visual Studio リモート ツールを使用してデータを収集しても、パフォーマンス データには影響は及ぼしません。  
@@ -50,7 +50,7 @@ ms.locfileid: "74297753"
   
 1. XAML アプリを開きます。  
   
-2. Click **Debug / Performance Profiler...** . You should see a list of profiling tools in the .diagsession window.  
+2. [**デバッグ]、[パフォーマンスプロファイラー...** ] の順にクリックします。Diagsession ウィンドウにプロファイリングツールの一覧が表示されます。  
   
 3. **[アプリケーション タイムライン]** を選択してから、ウィンドウの下部にある **[開始]** をクリックします。  
   
@@ -61,9 +61,9 @@ ms.locfileid: "74297753"
   
 5. プロファイリングを停止するには、.diagsession ウィンドウに切り替えてから、ウィンドウの上部にある **[停止]** をクリックします。  
   
-     Visual Studio が、収集したデータを分析し、結果を表示します。  
+     Visual Studio は、収集されたデータを分析し、結果を表示します。  
   
-     ![Timeline profiler report](../profiling/media/timeline-base.png "TIMELINE_Base")  
+     ![タイムラインプロファイラーレポート](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
 ## <a name="BKMK_Analyze_Timeline_profiling_data"></a> タイムライン プロファイル データの分析  
  プロファイル データを収集した後、次の手順によってコードの分析を開始することができます。  
@@ -76,11 +76,11 @@ ms.locfileid: "74297753"
  **[アプリケーション タイムライン]** ツールは、XAML のパフォーマンスに関連するシナリオ、カテゴリ、およびイベントのタイミング データを表示します。  
   
 ### <a name="BKMK_Diagnostic_session_timeline"></a> 診断セッションのタイムライン  
- ![Performance and Diagnostics timeline](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+ ![パフォーマンスと診断のタイムライン](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  ページの上部にあるルーラーは、プロファイル情報のタイムラインを示します。 このタイムラインは、 **[UI スレッド使用状況]** グラフと **[ビジュアル スループット]** グラフの両方に適用されます。 タイムラインのナビゲーション バーをドラッグしてタイムラインのセグメントを選択することにより、レポートのスコープを絞ることができます。  
   
- タイムラインには、挿入したすべてのユーザー マーク、およびアプリのアクティブ化ライフサイクル イベントも表示されます。  
+ タイムラインにも、挿入したすべてのユーザー マーク、およびアプリケーションのアクティブ化ライフサイクル イベントが表示されます。  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> UI スレッド使用状況グラフ  
  ![CPU 使用状況グラフ](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
@@ -88,7 +88,7 @@ ms.locfileid: "74297753"
  **[UI スレッド使用状況 (%)]** グラフは、コレクション期間中にあるカテゴリで費やされた相対的な時間を横棒グラフで示したものです。  
   
 ### <a name="BKMK_Visual_throughput_FPS_graph"></a> ビジュアル スループット (FPS) グラフ  
- ![Visual throughput graph](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
+ ![ビジュアル スループット グラフ](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  **[ビジュアル スループット (FPS)]** の折れ線グラフは、アプリの UI スレッドとコンポジション スレッドの 1 秒あたりのフレーム数 (FPS) を示します。  
   
@@ -115,11 +115,11 @@ ms.locfileid: "74297753"
 |||  
 |-|-|  
 |**並べ替え**|開始時刻またはイベントの長さによって並べ替えます。|  
-|![Group events by frame](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|フレームごとにイベントをグループ化する最上位の **[フレーム]** カテゴリを追加または削除します。|  
-|![Filter Timeline details list](../profiling/media/timeline-filter.png "TIMELINE_Filter")|選択したカテゴリまたはイベントの長さに基づいて、一覧をフィルター処理します。|  
-|![Customize Timeline details information](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|イベントに注釈を指定できます。|  
+|![フレームごとにイベントをグループ化](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|フレームごとにイベントをグループ化する最上位の **[フレーム]** カテゴリを追加または削除します。|  
+|![タイムラインの詳細リストのフィルター](../profiling/media/timeline-filter.png "TIMELINE_Filter")|選択したカテゴリまたはイベントの長さに基づいて、一覧をフィルター処理します。|  
+|![タイムラインの詳細情報のカスタマイズ](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|イベントに注釈を指定できます。|  
   
-## <a name="see-also"></a>参照  
- [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications (WPF チーム ブログ: WPF アプリケーション用の新しい UI パフォーマンス分析ツール)](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   
+## <a name="see-also"></a>関連項目  
+ [WPF チーム ブログ: WPF アプリケーション用の新しい UI パフォーマンス分析ツール](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   
  [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF アプリケーションのパフォーマンスの最適化](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

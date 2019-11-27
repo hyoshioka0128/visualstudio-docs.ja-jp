@@ -54,7 +54,7 @@ ms.locfileid: "74295699"
  タイムライン グラフには、アプリ実行中のメモリの変動が表示されます。 グラフの急な上下動は、通常、何らかのコードがデータを収集または作成し、処理が終わったときにデータを破棄していることを示します。 大きな上下動は、最適化できる可能性がある領域を示しています。 より重大な問題は、使われたまま返されないメモリが増えることです。これは、メモリが効率的に使われていないか、メモリ リークが起きていることを示しているからです。  
   
 ### <a name="BKMK_Close_a_monitoring_session"></a> 監視セッションを閉じる  
- ![Stop collection](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
+ ![コレクションの停止](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
   
  レポートを作成せずに監視セッションを停止する場合は、単に診断ウィンドウを閉じます。 メモリのスナップショットを取ったときにレポートを生成するには、 **[停止]** をクリックします。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "74295699"
  スナップショットを収集するには、新しい診断セッションを開始します。 メモリのデータをキャプチャしたいときは **[スナップショットの取得]** をクリックします。 レポートを生成するには、 **[停止]** をクリックします。  
   
 ## <a name="BKMK_Memory_Usage_overview_page"></a> メモリ使用量の概要ページ  
- データ コレクションを停止すると、メモリ使用量ツールはアプリを停止し、概要レポートが表示されます。  
+ データ収集を停止すると、メモリ使用量ツールはアプリを停止し、概要レポートが表示されます。  
   
  ![メモリ使用量の概要ページ](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
@@ -124,7 +124,7 @@ ms.locfileid: "74295699"
 ## <a name="BKMK_Snapshot_details_reports"></a> スナップショットの詳細レポート  
  診断セッションで得られた 1 つのスナップショットに注目する場合は、スナップショットの詳細レポートを使います。 詳細レポートを開くには、次の画像に示すように、スナップショット ビューに含まれるいずれかのリンクをクリックします。 どちらのリンクからも同じレポートが開きますが、レポート内の **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 どちらの場合も、レポートが開いた後で並べ替え順序を変更できます。  
   
- ![Links to snapshot report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![スナップショットビューのスナップショットレポートへのリンク](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
 - **[MB]** リンクをクリックすると、 **[包括サイズ (バイト)]** 列でレポートが並べ替えられます。  
   
@@ -145,14 +145,14 @@ ms.locfileid: "74295699"
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [ルートのパス] ツリー (スナップショットの詳細)  
  **[ルートのパス] ツリー**には、種類またはインスタンスを参照するオブジェクトのチェーンが表示されます。 .NET Framework のガベージ コレクターは、オブジェクトへの参照がすべて解放された場合にのみ、オブジェクトのメモリをクリーンアップします。  
   
- ![Paths to Root tree for Types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+ ![型のルートへのパスツリー](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
  **[ルートのパス]** ツリーに種類が表示されると、その種類への参照を保持する種類のオブジェクト数が **[参照数]** 列に表示されます。 この列は、インスタンスを分析するときには表示されません。  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [参照されたオブジェクト] ツリー (スナップショットの詳細)  
  **[参照されたオブジェクト]** ツリーには、選んだ種類またはインスタンスによって参照されるオブジェクトが表示されます。  
   
- ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![インスタンスの参照先の Objjects ツリー](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -163,7 +163,7 @@ ms.locfileid: "74295699"
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> スナップショットの相違 (diff) レポート  
  スナップショットの相違 (diff) レポートには、指定したスナップショットとその直前に取られたスナップショットの変更点が表示されます。 相違レポートを開くには、次の画像に示すように、スナップショット ビューに含まれるいずれかのリンクをクリックします。 どちらのリンクからも同じレポートが開きますが、レポート内の **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 レポートが開いた後で並べ替え順序を変更できます。  
   
- ![Links to difference report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
+ ![スナップショットビューの差分レポートへのリンク](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
 - **[MB]** リンクをクリックすると、 **[包括サイズ (バイト)]** 列でレポートが並べ替えられます。  
   
@@ -189,12 +189,12 @@ ms.locfileid: "74295699"
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [ルートのパス] ツリー (スナップショットの相違)  
  **[ルートのパス] ツリー**には、種類またはインスタンスを参照するオブジェクトのチェーンが表示されます。 .NET Framework のガベージ コレクターは、オブジェクトへの参照がすべて解放された場合にのみ、オブジェクトのメモリをクリーンアップします。  
   
- ![Paths To Root tree for instances in a diff view](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![Diff ビュー内のインスタンスのルートツリーへのパス](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> [参照されたオブジェクト] ツリー (スナップショットの相違)  
  **[参照されたオブジェクト]** ツリーには、主要な種類またはインスタンスによって参照されるオブジェクトが表示されます。  
   
- ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![インスタンスの参照先の Objjects ツリー](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -202,7 +202,7 @@ ms.locfileid: "74295699"
 |**サイズ (バイト)**|インスタンスの場合は、指定したスナップショットに含まれるオブジェクトのサイズ (インスタンスに含まれているオブジェクトのサイズは除く)。<br /><br /> 型の場合は、指定したスナップショットに含まれるその型のインスタンスの合計サイズ (インスタンスに含まれているオブジェクトのサイズは除く)。|  
 |**包括サイズ (バイト)**|指定したスナップショットに含まれているオブジェクトのサイズ (オブジェクトに含まれているオブジェクトのサイズを含む)。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [JavaScript メモリ](../profiling/javascript-memory.md)   
  [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [パフォーマンスと診断ツールの実行](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

@@ -1,5 +1,5 @@
 ---
-title: ClickOnce and Authenticode | Microsoft Docs
+title: ClickOnce と Authenticode |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -29,7 +29,7 @@ ms.locfileid: "74298274"
 # <a name="clickonce-and-authenticode"></a>ClickOnce と Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Authenticode* is a Microsoft technology that uses industry-standard cryptography to sign application code with digital certificates that verify the authenticity of the application's publisher. アプリケーションの配置に Authenticode を使用し、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] はトロイの木馬のリスクを軽減します。 トロイの木馬は、悪意のある第三者が、確立された信頼できるソースからの正規のプログラムと偽って示すウイルスやその他の有害なプログラムです。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置のデジタル証明書による署名は、アセンブリとファイルが改ざんされていないことを確認するためのオプションの手順です。  
+Authenticode * は、業界標準の暗号化を使用して、アプリケーションの発行元の信頼性を検証するデジタル証明書を使用してアプリケーションコードに署名する Microsoft テクノロジです。 アプリケーションの配置に Authenticode を使用し、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] はトロイの木馬のリスクを軽減します。 トロイの木馬は、悪意のある第三者が、確立された信頼できるソースからの正規のプログラムと偽って示すウイルスやその他の有害なプログラムです。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置のデジタル証明書による署名は、アセンブリとファイルが改ざんされていないことを確認するためのオプションの手順です。  
   
  以下のセクションでは、Authenticode で使用するさまざまな種類のデジタル証明書、証明機関 (CA) を使用して証明書を検証するしくみ、証明書におけるタイムスタンプの役割、および証明書で使用できるストレージの方法について説明します。  
   
@@ -47,11 +47,11 @@ Authenticode* is a Microsoft technology that uses industry-standard cryptography
 - [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]に含まれている MakeCert.exe で独自の証明書を生成する。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>証明機関を使用してユーザーを支援する方法  
- A certificate generated using the MakeCert.exe utility is commonly called a *self-cert* or a *test cert*. This kind of certificate works much the same way that a .snk file works in the .NET Framework. この証明書は、秘密/公開暗号化キーのペアのみで構成され、発行者に関する検証可能な情報を含んでいません。 自己証明書を使用すると、イントラネット上に信頼性の高い [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置できます。 ただし、これらのアプリケーションをクライアント コンピューターで実行した場合は、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] が、不明な発行元からのものとしてアプリケーションを識別します。 既定では、自己証明書によって署名され、インターネットを介して配置された [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、信頼されたアプリケーションの配置を利用できません。  
+ MakeCert ユーティリティを使用して生成された証明書は、一般に*自己証明*書または*テスト証明*書と呼ばれます。この種の証明書は、.snk ファイルが .NET Framework で動作するのとほとんど同じ方法で動作します。 この証明書は、秘密/公開暗号化キーのペアのみで構成され、発行者に関する検証可能な情報を含んでいません。 自己証明書を使用すると、イントラネット上に信頼性の高い [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置できます。 ただし、これらのアプリケーションをクライアント コンピューターで実行した場合は、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] が、不明な発行元からのものとしてアプリケーションを識別します。 既定では、自己証明書によって署名され、インターネットを介して配置された [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、信頼されたアプリケーションの配置を利用できません。  
   
  これに対し、証明書販売元や企業内の部門などの CA から証明書を受け取る場合は、証明書によってユーザーのセキュリティが強化されます。 証明書によって、署名済みソフトウェアの発行者が識別されるだけでなく、署名を行った CA に問い合わせてその ID が検査されます。 CA がルート証明機関でない場合、Authenticode はルート証明機関まで "信頼チェーン" をたどって、その CA が証明書の発行を承認されているかどうかを検査します。 セキュリティを強化するために、可能であれば常に CA によって発行された証明書を使用することをお勧めします。  
   
- For more information about generating self-certs, see [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ 自己証明書の生成の詳細については、「 [Makecert (証明書作成ツール)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)」を参照してください。  
   
 ### <a name="timestamps"></a>タイムスタンプ  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの署名に使用する証明書は、一定の期間 (通常は 12 か月) で期限切れになります。 新しい証明書を持つアプリケーションに再署名を繰り返さずに済むように、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ではタイムスタンプがサポートされています。 アプリケーションがタイムスタンプ付きで署名されると、タイムスタンプが有効な場合は、有効期限が過ぎていても、その証明書が受け付けられます。 これにより、期限切れの証明書と有効なタイムスタンプを持つ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションをダウンロードして実行できます。 また、期限切れの証明書を持つインストール済みのアプリケーションでは、引き続き、更新プログラムをダウンロードしてインストールできます。  
@@ -71,8 +71,8 @@ Authenticode* is a Microsoft technology that uses industry-standard cryptography
   
 - 証明書は .pfx ファイルとしてファイル システムに格納できます。また、キー コンテナーの内部に格納することもできます。 Windows ドメインのユーザーは、多数のキー コンテナーを持つことができます。 .pfx に保存するよう指定しない限り、既定では、MakeCert.exe が個人のキー コンテナーに証明書を格納します。 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 配置の作成に使用する [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ツールである Mage.exe と MageUI.exe を使用すると、このどちらの方法で格納された証明書も使用できます。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
- [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

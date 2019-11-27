@@ -75,7 +75,7 @@ ms.locfileid: "74296830"
 
 1. コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 コード スニペット マネージャーを開きます ( **[ツール]、[コード スニペット マネージャー]** )。
 
-2. **[インポート]** ボタンをクリックします。
+2. [インポート] ボタンをクリックします。
 
 3. 前の手順でコード スニペットを保存した場所に移動し、コード スニペットを選択して、 **[開く]** をクリックします。
 
@@ -91,7 +91,7 @@ ms.locfileid: "74296830"
 
 ### <a name="adding-description-and-shortcut-fields"></a>Description フィールドと Shortcut フィールドの追加
 
-1. Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Description フィールドは、コード スニペット マネージャーに表示された際に、コード スニペットに関する詳しい情報を提供します。 ショートカットとは、スニペットを挿入するためにユーザーが入力できるタグです。 ファイル `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`を開いて、追加したスニペットを編集します。
 
 2. Author 要素と Description 要素を Header 要素に追加し、情報を入力します。
 
@@ -122,11 +122,11 @@ ms.locfileid: "74296830"
 
 6. スニペット ファイルを再度保存します。
 
-7. ショートカットをテストするには、Visual Basic プロジェクトを開き、コード ファイルを開きます。 Type `hello` in the file and press TAB. スニペット コードが挿入されます。
+7. ショートカットをテストするには、Visual Basic プロジェクトを開き、コード ファイルを開きます。 ファイルに「`hello`」と入力し、TAB キーを押します。 スニペット コードが挿入されます。
 
 ### <a name="to-add-references-and-imports"></a>参照とインポートを追加するには
 
-1. Visual Basic スニペットでは、References 要素を使用してプロジェクトに参照を追加し、Imports 要素を使用して Imports 宣言を追加することができます (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.
+1. Visual Basic スニペットでは、References 要素を使用してプロジェクトに参照を追加し、Imports 要素を使用して Imports 宣言を追加することができます (他の言語のスニペットには、この機能がありません)。たとえば、コード例の `Console.WriteLine` を `MessageBox.Show`に変更した場合は、プロジェクトに system.servicemodel アセンブリを追加する必要があります。
 
 2. スニペットを開きます。
 
@@ -261,5 +261,5 @@ ms.locfileid: "74296830"
 
     ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)

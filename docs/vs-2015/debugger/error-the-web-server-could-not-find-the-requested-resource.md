@@ -1,5 +1,5 @@
 ---
-title: 'Error: The Web Server Could Not Find the Requested Resource | Microsoft Docs'
+title: 'エラー: Web サーバーは要求されたリソース | を見つけることができませんでした。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -34,6 +34,6 @@ ms.locfileid: "74297421"
   
  IIS のトラブルシューティングの詳細については、「[IIS Management and Administration (IIS の管理)](https://go.microsoft.com/fwlink/?LinkId=255872)」を参照してください。  
   
-## <a name="see-also"></a>参照  
- [UrlScan Security Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+## <a name="see-also"></a>関連項目  
+ [UrlScan セキュリティツール](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [エラー: Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

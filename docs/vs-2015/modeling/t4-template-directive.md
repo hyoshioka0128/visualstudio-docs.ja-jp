@@ -1,5 +1,5 @@
 ---
-title: T4 Template Directive | Microsoft Docs
+title: T4 テンプレートディレクティブ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,7 +21,7 @@ ms.locfileid: "74298144"
 
 通常、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の T4 テキスト テンプレートは、テンプレートの処理方法を指定する `template` ディレクティブで始まります。 テキスト テンプレートおよびそれに含まれるファイルには、template ディレクティブを 1 つしか含めることができません。
 
- For a general overview of writing text templates, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).
+ テキストテンプレートの記述の概要については、「 [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)」を参照してください。
 
 ## <a name="using-the-template-directive"></a>template ディレクティブの使用
 
@@ -34,7 +34,7 @@ ms.locfileid: "74298144"
 ## <a name="compileroptions-attribute"></a>compilerOptions 属性
  例 : `compilerOptions="optimize+"`
 
- Valid values: Any valid compiler options. For more information, see [C# Compiler Options Listed by Category](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) and [Visual Basic Compiler Options Listed by Category](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ 有効な値: 任意の有効なコンパイラオプション。 詳細については、「 [ C#カテゴリ別のコンパイラオプションの一覧](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)」と「 [Visual Basic コンパイラオプション (カテゴリ別](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3))」を参照してください。
 
  実行時 (前処理された) テンプレートでは無視されます。
 
@@ -43,9 +43,9 @@ ms.locfileid: "74298144"
 ## <a name="culture-attribute"></a>culture 属性
  例 : `culture="de-CH"`
 
- Valid values: "", the invariant culture, which is the default.
+ 有効な値: "" (既定値はインバリアントカルチャ)。
 
- xx-XX 形式の文字列で表現されたカルチャ。 たとえば、en-US、ja-JP、de-CH、de-DE などがあります。 詳細については、「<xref:System.Globalization.CultureInfo?displayProperty=fullName>」を参照してください。
+ xx-XX 形式の文字列で表現されたカルチャ。 たとえば、en-US、ja-JP、de-CH、de-DE などがあります。 詳細については、「 <xref:System.Globalization.CultureInfo?displayProperty=fullName>」を参照してください。
 
  culture 属性では、式ブロックをテキストに変換する際に使用するカルチャを指定します。
 
@@ -56,13 +56,13 @@ ms.locfileid: "74298144"
 debug="true"
 ```
 
- Valid values: `true, false`. False が既定値です。
+ 有効な値: `true, false`。 False が既定値です。
 
  `debug` 属性が `true` の場合、デバッガーでテンプレート内の中断または例外の発生位置を正確に特定できるようにする情報が中間コード ファイルに出力されるようになります。
 
- For design-time templates the intermediate code file will be written to your **%TEMP%** directory.
+ デザイン時テンプレートの場合、中間コードファイルは **% TEMP%** ディレクトリに書き込まれます。
 
- To run a design-time template in the debugger, save the text template, then open the shortcut menu of the text template in Solution Explorer, and choose **Debug T4 Template**.
+ デバッガーでデザイン時テンプレートを実行するには、テキストテンプレートを保存し、ソリューションエクスプローラーでテキストテンプレートのショートカットメニューを開き、 **[T4 テンプレートのデバッグ]** を選択します。
 
 ## <a name="hostspecific-attribute"></a>hostspecific 属性
  例:
@@ -71,13 +71,13 @@ debug="true"
 hostspecific="true"
 ```
 
- Valid values: `true, false, trueFromBase`. False が既定値です。
+ 有効な値: `true, false, trueFromBase`。 False が既定値です。
 
- この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 The property is a reference to the host of the transformation engine, and is declared as [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
+ この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 プロパティは、変換エンジンのホストへの参照で、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))として宣言されます。 カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
 
- このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 It’s applicable to [design-time templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md), but not [run-time templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時](../modeling/design-time-code-generation-by-using-t4-text-templates.md)テンプレートには適用できますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)には適用されません。
 
- `hostspecific` が `true` で、なおかつ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用している場合は、`this.Host` を IServiceProvider にキャストして、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の機能にアクセスすることができます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 (例:
+ `hostspecific` が `true` で、なおかつ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用している場合は、`this.Host` を IServiceProvider にキャストして、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の機能にアクセスすることができます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 例 :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -104,13 +104,13 @@ Content of myFile is:
 ## <a name="language-attribute"></a>language 属性
  例 : `language="VB"`
 
- Valid values: `C#` (default)
+ 有効な値: `C#` (既定値)
 
  `VB`
 
- The language attribute specifies the language ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../includes/csprcs-md.md)]) to use for the source code in statement and expression blocks. 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
+ Language 属性は、ステートメントおよび式ブロック内のソースコードに使用する言語 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または [!INCLUDE[csprcs](../includes/csprcs-md.md)]) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
 
- (例:
+ 例 :
 
 ```vb
 <#@ template language="VB" #>
@@ -131,7 +131,7 @@ Squares of numbers:
  テンプレートのプログラム コードを別のクラスから継承できることを指定できます。クラスは、テキスト テンプレートから生成することもできます。
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>実行時 (前処理された) テキスト テンプレートでの継承
- 実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 Run-time templates are those that have the **Custom Tool** property set to **TextTemplatingFilePreprocessor**. 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ 実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートは、**カスタムツール**プロパティが**Texttemplatingfilepreprocessor プロセッサ**に設定されているテンプレートです。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
  `inherits` 属性を指定しない場合は、テキスト テンプレートから基底クラスと派生クラスが生成されます。 `inherits` 属性を指定すると、派生クラスだけが生成されます。 基底クラスは手動で作成できますが、派生クラスで使用するメソッドを提供する必要があります。
 
@@ -207,16 +207,16 @@ This is the common footer.
 > `inherits` 属性と `hostspecific` 属性を一緒に使用する場合は、派生クラスで hostspecific="trueFromBase"、基底クラスで host="true" を指定します。 これで、生成されるコードで `Host` プロパティの定義が重複することを回避できます。
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>デザイン時テキスト テンプレートでの継承
- A design-time text template is a file for which **Custom Tool** is set to **TextTemplatingFileGenerator**. このテンプレートでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトの一部となるコードまたはテキストの出力ファイルが生成されます。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
+ デザイン時テキストテンプレートは、**カスタムツール**が**Texttemplatingfilegenerator**に設定されているファイルです。 このテンプレートでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトの一部となるコードまたはテキストの出力ファイルが生成されます。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
 
  デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。
 
- For more information, see ["Inheritance in Text Templates" in Gareth Jones’ Blog](https://go.microsoft.com/fwlink/?LinkId=208373).
+ 詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](https://go.microsoft.com/fwlink/?LinkId=208373)を参照してください。
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 属性
  例 : `linePragmas="false"`
 
- Valid values: `true` (default)
+ 有効な値: `true` (既定値)
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>Visibility 属性
  例 : `visibility="internal"`
 
- Valid values: `public` (default)
+ 有効な値: `public` (既定値)
 
  `internal`
 

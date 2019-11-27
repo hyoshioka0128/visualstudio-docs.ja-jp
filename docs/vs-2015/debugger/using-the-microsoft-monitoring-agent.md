@@ -1,5 +1,5 @@
 ---
-title: Using the Microsoft Monitoring Agent | Microsoft Docs
+title: Microsoft Monitoring Agent | を使用するMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.locfileid: "74297100"
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [Using the Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
+Visual Studio の最新のドキュメントについては、「 [Microsoft Monitoring Agent の使用](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)」を参照してください。
 
-**Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 You can then open the log file in Visual Studio Enterprise (but not Professional or Community editions) to debug problems with all the Visual Studio diagnostic tools. Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/azure-monitor/app/app-insights-overview) および [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。  
+**Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 このログファイルは、すべての Visual Studio 診断ツールで問題をデバッグするために Visual Studio Enterprise (ただし、Professional または Community edition ではない) で開くことができます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/azure-monitor/app/app-insights-overview) および [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。  
   
 > [!NOTE]
-> **IntelliTrace スタンドアロン コレクター**を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 See [Using the IntelliTrace stand-alone collector](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+> **IntelliTrace スタンドアロン コレクター**を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 「 [IntelliTrace スタンドアロンコレクターの使用」を](../debugger/using-the-intellitrace-stand-alone-collector.md)参照してください。  
   
  System Center 2012 を使用する場合は、オペレーション マネージャーと連携する Microsoft Monitoring Agent を使用して、問題についてのアラートを取得し、保存された IntelliTrace ログへのリンクを含む Team Foundation Server の作業項目を作成します。 これで、さらにデバッグを行うためにこれらの作業項目をその他の項目に割り当てることができます。 「 [Operations Manager と開発プロセスの統合](https://technet.microsoft.com/library/jj614609.aspx) 」および「 [Microsoft Monitoring Agent による監視](https://technet.microsoft.com/library/dn465153.aspx)」をご覧ください。  
   
@@ -80,7 +80,7 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
 3. 最新のヘルプ コンテンツを入手するには、[TechNet にアクセスしてください](https://technet.microsoft.com/systemcenter/default) 。  
   
 #### <a name="FullPermissionsITLog"></a> Q: アプリケーション プールへのアクセス許可の設定はどうすればよいですか。  
- **A:** Windows の **icacls** コマンドまたはエクスプローラーを使用します。 (例:  
+ **A:** Windows の **icacls** コマンドまたはエクスプローラーを使用します。 例 :  
   
 - Windows の **icacls** コマンドを使用してアクセス許可を設定するには:  
   
@@ -92,7 +92,7 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    -または-  
+    または  
   
 - エクスプローラー (またはファイル エクスプローラー) を使用してアクセス許可を設定するには:  
   
@@ -115,7 +115,7 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
 1. Web サーバーで、管理者として **Windows PowerShell** または **Windows PowerShell ISE** のコマンド プロンプト ウィンドウを開きます。  
   
-     ![Open Windows PowerShell as administrator](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
+     ![管理者として Windows PowerShell を開く](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
   
 2. [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) コマンドを実行してアプリの監視を開始します。 これによって、Web サーバー上のすべての Web アプリケーションが再起動されます。  
   
@@ -133,14 +133,14 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
      監視を開始した後、アプリの再起動中に Microsoft Monitoring Agent が一時停止する場合があります。  
   
-     ![Start monitoring with MMA confirmation](../debugger/media/ffr-powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")  
+     ![MMA の確認を使用して監視を開始する](../debugger/media/ffr-powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")  
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -または-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 (例:<br /><br /> ![Path to IIS web site and web app](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
-    |*\<monitoringMode>*|監視モードを指定します。<br /><br /> <ul><li>**Monitor**: 例外イベントとパフォーマンス イベントについての最小限の情報を記録します。 このモードは既定の収集計画を使用します。</li><li>**Trace**: 指定された収集計画を使用して、関数レベルの情報を記録したり、SharePoint 2010 および SharePoint 2013 アプリケーションを監視したりします。 このモードでは、アプリの実行が遅くなる可能性があります。<br /><br /> <ul><li>[Q: アプリケーション プールへのアクセス許可の設定はどうすればよいですか。](#FullPermissionsITLog)</li><li>[Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。](#Minimizing)</li></ul><br />     この例では、SharePoint サイトでホストされる SharePoint アプリのイベントを記録します。<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: 指定したカスタム収集計画を使用してカスタムの情報を記録します。 監視を開始してから収集計画を編集するときは、監視を再起動する必要があります。</li></ul>|  
+    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> または<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 例 :<br /><br /> ![IIS web サイトと web アプリへのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager ")<br /><br /> また、 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
+    |*\<monitoringMode>*|監視モードを指定します。<br /><br /> <ul><li>**Monitor**: 例外イベントとパフォーマンス イベントについての最小限の情報を記録します。 このモードは既定の収集計画を使用します。</li><li>**Trace**: 指定された収集計画を使用して、関数レベルの情報を記録したり、SharePoint 2010 および SharePoint 2013 アプリケーションを監視したりします。 このモードでは、アプリの実行が遅くなる可能性があります。<br /><br /> <ul><li>[Q: アプリケーション プールへのアクセス許可の設定はどうすればよいですか。](#FullPermissionsITLog)</li><li>[Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。](#Minimizing)</li></ul><br />     この例では、SharePoint サイトでホストされる SharePoint アプリのイベントを記録します。<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Monitoring Agent\Agent\IntelliTraceCollector\ collection_plan" "C:\intellitracelogs)" を開始します。**</li><li>**Custom**: 指定したカスタム収集計画を使用してカスタムの情報を記録します。 監視を開始してから収集計画を編集するときは、監視を再起動する必要があります。</li></ul>|  
     |*"\<outputPath>"*|IntelliTrace ログを格納するディレクトリへの完全パスを指定します。 監視を開始する前にこのディレクトリの作成を確認します。|  
-    |*\<UInt32>*|IntelliTrace ログの最大サイズを指定します。 IntelliTrace ログの既定の最大サイズは 250 MB です。<br /><br /> ログがこの制限に達すると、エージェントは最も早いエントリを上書きして、さらに多くのエントリのための場所を確保します。 この制限を変更するには、 **-MaximumFileSizeInMegabytes** オプションを使用するか、収集計画の `MaximumLogFileSize` 属性を編集します。|  
+    |*\<UInt32 >*|IntelliTrace ログの最大サイズを指定します。 IntelliTrace ログの既定の最大サイズは 250 MB です。<br /><br /> ログがこの制限に達すると、エージェントは最も早いエントリを上書きして、さらに多くのエントリのための場所を確保します。 この制限を変更するには、 **-MaximumFileSizeInMegabytes** オプションを使用するか、収集計画の `MaximumLogFileSize` 属性を編集します。|  
     |*"\<collectionPlanPathAndFileName>"*|完全パスまたは相対パスと収集計画のファイル名を指定します。 この計画は、エージェントの設定を構成する .xml ファイルになっています。<br /><br /> これらの計画はエージェントに含まれており、Web アプリおよび SharePoint アプリケーションを使用します。<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     例外、パフォーマンス イベント、データベース呼び出し、Web サーバー要求などのイベントのみを収集します。<br />-   **collection_plan.ASP.NET.trace.xml**<br />     関数レベル呼び出しと既定の収集計画のすべてのデータを収集します。 この計画は詳細な分析に適していますが、アプリの速度が低下する可能性があります。<br /><br /> これらの計画のローカライズ バージョンは、エージェントのサブフォルダーに格納されています。 また、 [これらの計画をカスタマイズするか、または独自の計画を作成して](https://go.microsoft.com/fwlink/?LinkId=227871) 、アプリの速度低下を回避できます。 エージェントと同じ安全な場所にカスタム計画を配置します。<br /><br /> [Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。](#Minimizing)|  
   
      完全な構文とその他の例の詳細については、 **get-help Start-WebApplicationMonitoring –detailed** コマンドまたは **get-help Start-WebApplicationMonitoring –examples** コマンドを実行します。  
@@ -156,13 +156,13 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
 - エージェントがデータを収集する収集計画のイベントを確認します。 関連性のない、または希望しないイベントを無効にするよう、収集計画を編集します。 これによって、起動時のパフォーマンスと実行時のパフォーマンスが向上します。  
   
-   イベントを無効にするには、 `enabled` 要素の `<DiagnosticEventSpecification>` 属性を `false`に設定します。  
+   イベントを無効にするには、次のように `enabled` 要素の `<DiagnosticEventSpecification>` 属性を `false`に設定します。  
   
    `<DiagnosticEventSpecification enabled="false">`  
   
    `enabled` 属性がない場合、イベントが有効になります。  
   
-   (例:  
+   例 :  
   
   - Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。  
   
@@ -220,13 +220,13 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
 - メソッドに渡され、メソッドから返されるトップレベルのオブジェクトのフィールドのプリミティブ データ型  
   
-  たとえば、整数 `AlterEmployee` と `id` オブジェクト `Employee` を受け取る `oldemployee`メソッド シグネチャがあるとします。  
+  たとえば、次のように整数の `AlterEmployee` と `id` オブジェクトの `Employee` を受け取る `oldemployee`メソッド シグネチャがあるとします。  
   
   `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
-  `Employee` の型には、 `Id`、 `Name`、および `HomeAddress`の各属性が含まれます。 `Employee` の型と `Address` の型との間に、アソシエーション リレーションシップの関係が存在します。  
+  `Employee` の型には、 `Id`、 `Name`、および `HomeAddress`の各属性が含まれます。 `Employee` の型と `Address` の型との間に、アソシエーション リレーションシップが存在します。  
   
-  ![Relationship between Employee and Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![従業員と住所のリレーションシップ](../debugger/media/employeeaddressrelationship.png "従業員 Addressrelationship")  
   
   エージェントは、 `id`メソッドから返された、 `Employee.Id`、 `Employee.Name` 、 `Employee` 、および `AlterEmployee` の各オブジェクトの値を記録します。 ただし、null であるかどうかの情報を除き、 `Address` オブジェクトについての情報は記録しません。 エージェントは、メソッド パラメーターとして記録される時点のパラメーターとしてそれらのローカル変数を他のメソッドが使用する場合を除き、 `AlterEmployee` メソッドのローカル変数に関するデータは記録しません。  
   
@@ -246,11 +246,11 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
-    (例:  
+    例 :  
   
-    **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> チェックポイント-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    -または-  
+    または  
   
     **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
@@ -278,9 +278,9 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
     すべての Web アプリの監視を停止するには、次のコマンドを実行します。  
   
-    **Stop-WebApplicationMonitoring -All**  
+    **停止-WebApplicationMonitoring-すべて**  
   
-    (例:  
+    例 :  
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
@@ -303,5 +303,5 @@ For the latest documentation on Visual Studio, see [Using the Microsoft Monitori
   
  [運用サーバーでの IntelliTrace 収集の最適化](https://go.microsoft.com/fwlink/?LinkId=255233)  
   
-#### <a name="forums"></a>フォーラム  
+#### <a name="forums"></a>Forums  
  [Visual Studio の診断](https://go.microsoft.com/fwlink/?LinkId=262263)

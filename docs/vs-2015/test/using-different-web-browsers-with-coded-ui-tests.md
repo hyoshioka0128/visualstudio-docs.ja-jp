@@ -99,19 +99,19 @@ ms.locfileid: "74297954"
  さまざまな Web ブラウザーを使用するコード化された UI テストをサポートしないバージョンの [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise を使用する必要があります。
 
  *その他に知っておく必要があること*
- **注**
+ **ノート**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
+- ![Prerequsite](../test/media/prereq.png "前提条件")Apple Safari web ブラウザーはサポートされていません。
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
+- ![Prerequsite](../test/media/prereq.png "前提条件")Web ブラウザーを起動するアクションは、コード化された UI テストの一部である必要があります。
 
    既に Web ブラウザーが開かれていて、そこで手順を実行すると、Internet Explorer を使用していない場合は再生が失敗します。 そのため、コード化された UI テストの一部として Web ブラウザーの起動を含めることをお勧めします。
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
+- ![Prerequsite](../test/media/prereq.png "前提条件")最大化、最小化、復元など、ブラウザー固有の UI 操作の自動化はサポートされていません。
 
   **ヒント**
 
-- ![Tip](../test/media/tip.png "ヒント") You can configure the output to include screenshots in the coded UI logs. そのためには、QTAgent32.exe.config ファイルの一部の構成設定を設定する必要があります。 既定では、このファイルは次の場所にインストールされます。
+- ![ヒント](../test/media/tip.png "ヒント")出力を構成して、コード化された UI ログにスクリーンショットを含めることができます。 そのためには、QTAgent32.exe.config ファイルの一部の構成設定を設定する必要があります。 既定では、このファイルは次の場所にインストールされます。
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -125,9 +125,9 @@ ms.locfileid: "74297954"
 
     詳細については、「[コード化された UI テスト ログを使用したコード化された UI テストの分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)」をご覧ください。
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
-### <a name="videos"></a>ビデオ
+### <a name="videos"></a>Videos
  [IE で記録し、任意の場所で再生する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [コード化された UI テスト ビルダーでクロス ブラウザー テストを作成する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -143,7 +143,7 @@ ms.locfileid: "74297954"
 
  [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>よくあるご質問
+### <a name="faq"></a>よく寄せられる質問
  [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
@@ -151,5 +151,5 @@ ms.locfileid: "74297954"
 ### <a name="forum"></a>フォーラム
  [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>参照
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+## <a name="see-also"></a>関連項目
+ [Ui オートメーションを使用して、コード](../test/use-ui-automation-to-test-your-code.md)化された ui テスト[と操作の記録に対してサポートされている構成とプラットフォームの](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)テストコード化された ui テストの[ログ](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

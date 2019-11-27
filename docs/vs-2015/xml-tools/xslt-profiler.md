@@ -1,5 +1,5 @@
 ---
-title: XSLT Profiler | Microsoft Docs
+title: XSLT Profiler |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -21,14 +21,14 @@ ms.locfileid: "74300946"
 
 XSLT プロファイラーは、XSLT ドキュメントの開発とデバッグに役立つパフォーマンス分析プロファイラー ツールです。 XSLT プロファイラーを使用して詳細な XSLT パフォーマンス レポートを作成することにより、XSLT コード内のパフォーマンス関連の問題を計測および評価できるようになります。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントが含まれており、最高のパフォーマンスが必要になる XSLT ベースのアプリケーションには不可欠です。
 
- The XSLT Profiler is part of Visual Studio 2010 and is available from the Visual Studio **XML** menu.
+ XSLT プロファイラーは Visual Studio 2010 に含まれており、Visual Studio の **[XML]** メニューから使用できます。
 
  ![XSLT プロファイラー](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- XSLT プロファイラーは最初に Visual Studio 2008 のアドインとして導入されました。 For more information, see the Related Resources section on the [XSLT Profiler for Visual Studio Feb 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) page.
+ XSLT プロファイラーは最初に Visual Studio 2008 のアドインとして導入されました。 詳細については、「 [XSLT Profiler For Visual Studio Feb 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) 」ページの「関連リソース」セクションを参照してください。
 
 > [!NOTE]
 > Visual Studio 2010 の一部の画面は、これらのドキュメントの説明と異なる場合があります。これは、一部のビジュアル要素が Visual Studio 2008 から変更されたためです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [チュートリアル: XSLT プロファイラー](../xml-tools/walkthrough-xslt-profiler.md)

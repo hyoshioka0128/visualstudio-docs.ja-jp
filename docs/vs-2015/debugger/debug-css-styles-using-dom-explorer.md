@@ -1,5 +1,5 @@
 ---
-title: Debug CSS styles using DOM Explorer | Microsoft Docs
+title: DOM Explorer | を使用した CSS スタイルのデバッグMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,7 +30,7 @@ ms.locfileid: "74299500"
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM Explorer を使用した CSS スタイルのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows および Windows Phone] (../Image/windows_and_phone_content "windows_and_phone_content")  
   
  Windows ストア アプリ、Windows Phone ストア アプリ、Visual Studio Tools for Apache Cordova を使用して作成されたアプリのデバッグ中に、選んだ DOM 要素と子要素に対する CSS 規則を表示および変更できます。  
   
@@ -48,7 +48,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
 - **[変更]** タブ (Windows ストア アプリおよび Windows Phone ストア アプリのみ) では、デバッグ セッション中に変更した CSS スタイルを識別して追跡できます。  
   
 > [!TIP]
-> **[スタイル]** タブと **[計算済み]** タブで行った変更は永続的ではありません。 それらは、デバッグを停止したときに失われます。 To change source code and reload pages without stopping and restarting the debugger, refresh your app by using the  ![Refresh Windows app button](../debugger/media/js-refresh.png "JS_Refresh") button (**Refresh Windows app**) on the **Debug** toolbar (Windows Store and Windows Phone Store apps only). For more info, see [Refresh an app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> **[スタイル]** タブと **[計算済み]** タブで行った変更は永続的ではありません。 それらは、デバッグを停止したときに失われます。 デバッガーを停止して再起動せずにソースコードを変更してページを再読み込みするには、 **[デバッグ]** ツールバーの [ ![Windows アプリケーションの更新] ボタン](../debugger/media/js-refresh.png "JS_Refresh")(windows**アプリの更新**) を使用してアプリを更新します (windows ストアアプリと Windows Phone ストアアプリのみ)。 詳細については、「[アプリを更新する (JavaScript)](../debugger/refresh-an-app-javascript.md)」を参照してください。  
   
 ## <a name="example-of-fixing-a-css-rule"></a>CSS 規則の修正例  
  この例では、CSS 規則を検査し、スタイルの問題をデバッグする方法を示します。 この例では、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 分割アプリケーション テンプレートのグループ タイトルの表示に使用されるフォントの色を変更するとします。  
@@ -91,7 +91,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 4. **[デバッグ]** ツール バーのドロップダウン リストの **[シミュレーター]** を選択します (既定値は **[ローカル コンピューター]** です)。  
   
-     ![Select debug target list](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![デバッグターゲットリストの選択](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. F5 キーを押して、アプリをデバッグ モードで実行します。  
   
@@ -100,14 +100,14 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
     > [!TIP]
     > アプリがシミュレーターに表示されたら、Visual Studio ウィンドウの真横にシミュレーターを配置します。こうすると CSS のスタイルに加えた変更と選択した結果をすぐに確認できます。  
   
-6. Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。 **[要素の選択]** ボタンを次に示します。 ![Select Element Button in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。 **[要素の選択]** ボタンを次に示します。 ![DOM Explorer の [要素の選択] ボタン](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
   
     > [!TIP]
-    > HTML 要素は DOM Explorer で直接選択することもできます。 For more info on selecting elements, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > HTML 要素は DOM Explorer で直接選択することもできます。 要素の選択の詳細については、「[クイックスタート: HTML と CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)」を参照してください。  
   
 7. シミューレーターで、ホーム ページの左パネルに表示されている一覧の最初の項目のタイトル ( **[グループ タイトル: 1]** ) をポイントします。 次に示すように、タイトルが反転表示されます。  
   
-     ![Using the Select Element button](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![[要素の選択] ボタンの使用](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > Windows Phone エミュレーターは、マウス ポインターを置いたときの要素の強調表示を部分的にのみサポートします。  
@@ -120,7 +120,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
      DOM Explorer で H4 要素を選択すると、DOM Explorer のタブにその H4 要素に関連付けられた規則が表示されます。 **プロパティが開かれた状態の** [計算済み] `color` タブを次に示します。  
   
-     ![Trace Styles tab in DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![DOM Explorer の [トレーススタイル] タブ](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      このビューから、 `color` スタイルに関連付けられている規則について、次のような有益な情報が得られます。  
   
@@ -136,13 +136,13 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 9. `color` スタイルの最初のチェック ボックスをオフにします。これは `.itemspage .itemslist .item .item-overlay .item-title` セレクター用です。 シミュレーターで、アイテムのタイトルの色がすべて意図したとおりにオレンジ色に変わることが確認できます。CSS で変更したセレクター、 `.itemspage .itemslist .item`はもうオーバーライドされていません (つまり、もうテキストに取り消し線が付いていません)。 チェック ボックスをオフにした後の **[計算済み]** タブを次に示します。  
   
-     ![The Computed tab after updating the CSS style](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![CSS スタイルを更新した後の [計算済み] タブ](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. **[変更]** タブをクリックします。  
   
      デバッグ セッション中に変更したスタイルを識別して追跡するには、 **[変更]** タブを使用します。 次の図は、 `.itemspage .itemslist .item .item-overlay .item-title` [変更] **タブのオーバーライドされた** セレクターを示しています。  
   
-     ![Changes tab of the DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
+     ![DOM Explorer の [変更] タブ](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
 11. **[スタイル]** タブで、CSS スタイルの値を手動で変更することもできます。結果はすぐに確認できます。  
   
@@ -154,10 +154,10 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 15. キーボードを使用してこの値を変更します。 `rgb(255, 255, 0, 0.87)`に変更し、Enter キーを押します。 シミュレーターに表示されている項目のタイトルの色がすべて黄色に変更されます。  
   
-16. To make changes to the source CSS file, click the **items.css** link on the **Styles** tab. This opens items.css, where you can change the value of the `color` style in your app code. To refresh the app without stopping and restarting the debugger, click the  ![Refresh Windows app button](../debugger/media/js-refresh.png "JS_Refresh") (**Refresh Windows app**) button on the **Debug** toolbar.  
+16. ソース CSS ファイルに変更を加えるには、 **[スタイル]** タブの **[.css]** リンクをクリックします。これにより、[.css] が開きます。ここでは、アプリコードの `color` スタイルの値を変更できます。 デバッガーを停止して再起動せずにアプリを更新するには、 **[デバッグ]** ツールバーの [ ![Windows アプリケーションの更新] ボタン](../debugger/media/js-refresh.png "JS_Refresh")( **[windows アプリケーションの更新]** ) をクリックします。  
   
-## <a name="see-also"></a>参照  
- [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debug layout using DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [View DOM event listeners](../debugger/view-dom-event-listeners.md)   
+## <a name="see-also"></a>関連項目  
+ [クイックスタート: HTML と CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
+ [DOM Explorer  を使用したレイアウトのデバッグ](../debugger/debug-layout-using-dom-explorer.md)  
+ [DOM イベントリスナーの表示](../debugger/view-dom-event-listeners.md)   
  [製品のサポートとユーザー補助](https://go.microsoft.com/fwlink/?LinkId=253502)

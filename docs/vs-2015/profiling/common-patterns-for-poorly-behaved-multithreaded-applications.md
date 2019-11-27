@@ -26,7 +26,7 @@ ms.locfileid: "74300664"
 開発時にコンカレンシー ビジュアライザーを使用すると、マルチスレッド アプリケーションの動作を可視化できます。 このツールには、動作が不適切なマルチスレッド アプリケーションの一般的なパターンのギャラリーが含まれています。 ギャラリーには、ツールで判明する一般的で認識可能な視覚パターンと、各パターンが示す動作、その動作から考えられる結果、その最も一般的な解決策の説明が含まれています。  
   
 ## <a name="lock-contention-and-serialized-execution"></a>ロック競合とシリアル化実行  
- ![Lock Contention Resulting in Serialized Execution](../profiling/media/lockcontention-serialized.png "LockContention_Serialized")  
+ ![シリアル化実行の結果としてロックの競合が発生します](../profiling/media/lockcontention-serialized.png "LockContention_Serialized")  
   
  複数のスレッドがあり、コンピューターに十分な数の論理コアがある場合でも、並列化されたアプリケーションがシリアル実行を継続することがあります。 まず、マルチスレッド化されたパフォーマンスの低下という現象 (シリアル実装よりもやや遅い可能性がある) が発生します。 スレッド ビューには、並列実行されている複数のスレッドは表示されず、常に実行されている 1 つのスレッドのみが表示されます。 この時点でスレッド内の同期セグメントをクリックすると、ブロックされたスレッド (コール スタックのブロック) のコール スタックと、ブロック条件を削除するスレッド (コール スタックのブロック解除) が表示されます。 また、分析しているプロセスでコール スタックのブロック解除が発生すると、スレッド対応のコネクタが表示されます。 ここからコール スタックのブロックとブロック解除のコードに移動し、シリアル化の原因をさらに詳しく調べることができます。  
   
@@ -34,19 +34,19 @@ ms.locfileid: "74300664"
   
  詳細については、MSDN ブログ Web サイトの Hazim Shafi のブログ「[Parallel Performance Tools For Windows](https://go.microsoft.com/fwlink/?LinkID=160569)」(Windows 用並列パフォーマンス ツール) の「Performance Pattern 1: Identifying Lock Contention」(パフォーマンス パターン 1: ロック競合の特定) を参照してください。  
   
- ![Lock Contention](../profiling/media/lockcontention-2.png "LockContention_2")  
+ ![ロックの競合](../profiling/media/lockcontention-2.png "LockContention_2")  
   
 ## <a name="uneven-workload-distribution"></a>不均一なワークロード分散  
- ![Uneven Workload](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
+ ![不均等ワークロード](../profiling/media/unevenworkload-1.png "UnevenWorkLoad_1")  
   
  アプリケーションの複数の並列スレッドで作業の不規則な分散が発生している場合、前の図のように、各スレッドの作業が完了するときに一般的な階段パターンが発生します。ほとんどの場合、コンカレンシー ビジュアライザーに表示される各コンカレント スレッドの開始時間はとても近接しています。 一方で、同時実行スレッドは同時に終了するのではなく、不規則に終了するのが一般的です。 このパターンは、並列スレッドのグループ内で作業の分散が不規則であることを示します。これがパフォーマンス低下の原因にもなります。 このような問題の最適なアプローチは、並列スレッドで作業を分散するアルゴリズムを再評価することです。  
   
  次の図のように、コンカレンシー ビジュアライザーの [CPU 使用状況] ビューでは、CPU 使用状況の段階的な低下としてこの現象を確認できます。  
   
- ![Uneven Workload](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
+ ![不均等ワークロード](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
   
 ## <a name="oversubscription"></a>オーバーサブスクリプション  
- ![Oversubscription](../profiling/media/oversubscription.png "オーバーサブスクリプション")  
+ ![オーバーサブスクリプション](../profiling/media/oversubscription.png "オーバーサブスクリプション")  
   
  オーバーサブスクリプションが発生している場合、プロセス内のアクティブなスレッド数がシステムの空き論理コア数よりも多くなっています。 前の図は、すべてのアクティブなスレッドで重要な優先度の縞模様が表示されているオーバーサブスクリプションの結果を示しています。 また、凡例には、大部分の時間が "優先" に使われていることが示されています (この例では 84%)。 これは、プロセスがシステムに対して、論理コア数よりも多くの同時実行スレッドを実行するように求めていることを示す可能性があります。 ただし、このプロセスに使用されるはずだったリソースを、システム上の他のプロセスが使用していることを示す可能性もあります。  
   
@@ -57,14 +57,14 @@ ms.locfileid: "74300664"
 - この作業のフェーズでは、自分のプロセスが実行に使用できる適切なスレッド数を決定する方法を評価してください。 アクティブな並列スレッド数をプロセスが直接計算している場合は、システムの空き論理コア数をより適切に考慮するようにアルゴリズムを変更することをお勧めします。 コンカレンシー ランタイム、タスク並列ライブラリ、PLINQ を使用している場合、これらのライブラリがスレッド数の計算作業を実行します。  
   
 ## <a name="inefficient-io"></a>非効率的な I/O  
- ![Inefficient I&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
+ ![非効率的&#47;な I O](../profiling/media/inefficient-io.png "Inefficient_IO")  
   
  I/O の過度な使用や誤使用は、アプリケーションの非効率の一般的な原因です。 前の図を例にして説明します。 [表示されているタイムライン プロファイル] には、表示されているスレッド時間の 42% が I/O に使用されています。 タイムラインには大量の I/O が表示され、プロファイリング対象のアプリケーションが I/O で頻繁にブロックされていることがわかります。 I/O の種類とプログラムがブロックされている場所の詳細を確認するには、問題が発生した領域を拡大して、[表示されているタイムライン プロファイル] を確認し、特定の I/O ブロックをクリックして現在のコール スタックを表示します。  
   
 ## <a name="lock-convoys"></a>ロック コンボイ  
- ![Lock Convoys](../profiling/media/lock-convoys.png "Lock_Convoys")  
+ ![コンボイのロック](../profiling/media/lock-convoys.png "Lock_Convoys")  
   
  ロック コンボイは、早い者勝ちの順序でアプリケーションがロックを取得したときと、ロックの到着率が取得率よりも高いときに発生します。 これら 2 つの条件が組み合わさると、ロックの要求によってバックアップが開始されます。 この問題を解決するには、"不公平な" ロック (最初のスレッドにロック解除状態で検索するアクセス権を与えるロック) を使用する方法があります。 前の図は、このコンボイ動作を示しています。 この問題を解決するには、同期オブジェクトの競合を減らし、不公平なロックを使用してみてください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

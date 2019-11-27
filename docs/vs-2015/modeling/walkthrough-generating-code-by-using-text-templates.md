@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
+title: 'チュートリアル: テキストテンプレートを使用したコードの生成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>テスト コード ファイルを追加する
- C# ファイルをプロジェクトに追加し、どのような記述方法を実現したいかを踏まえて、そのファイルにコードのサンプルを記述します。 (例:
+ C# ファイルをプロジェクトに追加し、どのような記述方法を実現したいかを踏まえて、そのファイルにコードのサンプルを記述します。 例 :
 
 ```
 using System;
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   である必要があります。
+   。
 
    ソリューション エクスプローラーで、テンプレート ファイルの下位項目として .cs ファイルが表示されることに注意してください。 これは、テンプレート ファイルの名前の横にある [+] をクリックすることで確認できます。 このファイルは、テンプレート ファイルを保存したり、テンプレート ファイルからフォーカスを移動したりするたびに、テンプレート ファイルから生成されます。 生成されたファイルは、プロジェクトの一部としてコンパイルされます。
 
@@ -213,7 +213,7 @@ class Song {}
  このテンプレートはコードを生成しますが、残念なことに、サンプル XML ファイル内のすべてのノードのクラス宣言が出力されます。したがって、 `<song>` ノードの複数のインスタンスが存在すると、song クラスの宣言も複数生成されることになります。
 
 ### <a name="read-the-model-file-then-generate-the-code"></a>モデル ファイルを読み取ってからコードを生成する
- 多くのテキスト テンプレートは、テンプレートの最初の部分でソース ファイルを読み取り、次の部分でテンプレートを生成するというパターンに従います。 ここでも、サンプル ファイルをすべて読み取り、その中に含まれているノード型をまとめてから、クラス宣言を生成する必要があります。 `Dictionary<>:` を使用できるようにするために、`<#@import#>` がもう 1 つ必要です。
+ 多くのテキスト テンプレートは、テンプレートの最初の部分でソース ファイルを読み取り、次の部分でテンプレートを生成するというパターンに従います。 ここでも、サンプル ファイルをすべて読み取り、その中に含まれているノード型をまとめてから、クラス宣言を生成する必要があります。 `<#@import#>` を使用できるようにするために、`Dictionary<>:` がもう 1 つ必要です。
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>テキスト テンプレートのトラブルシューティング
  テンプレートの変換エラーやコンパイル エラーが **[エラー一覧]** に表示された場合、または出力ファイルが正しく生成されなかった場合は、「[TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)」で説明されている方法を使用してテキスト テンプレートをトラブルシューティングできます。
 
-## <a name="see-also"></a>参照
- [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)
+## <a name="see-also"></a>関連項目
+ T4 テキストテンプレート[を使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [t4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)

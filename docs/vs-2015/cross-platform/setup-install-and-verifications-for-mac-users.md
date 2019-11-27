@@ -8,7 +8,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297715"
@@ -20,7 +20,7 @@ ms.locfileid: "74297715"
   
  Mac で Xamarin を操作するには、次の条件が必要です。  
   
-- Xamarin アカウント。 Go to [https://www.xamarin.com/](https://www.xamarin.com/) and click **Sign In** on the upper right of the page, then click **Create a new account** on the page that appears. Xamarin アカウントの電子メール アドレスとパスワードを選択します。  
+- Xamarin アカウント。 [https://www.xamarin.com/](https://www.xamarin.com/)にアクセスし、ページの右上にある **[サインイン]** をクリックし、表示されるページで **[新しいアカウントの作成]** をクリックします。 Xamarin アカウントの電子メール アドレスとパスワードを選択します。  
   
 - Xcode 7 および Xamarin 4 がインストールされた、OSX Yosemite (10.10) 以降を搭載した Mac。  
   
@@ -32,7 +32,7 @@ ms.locfileid: "74297715"
   
   このトピックでは、これらの要件について説明します。  インストール プロセスの実行中に、トピック「[Xamarin を使用したモバイル開発について学習します](../cross-platform/learn-about-mobile-development-with-xamarin.md)」を参照して、必要な背景情報に注目することができます。  
   
-  **このトピックの内容**  
+  **このトピックの内容:**  
   
 - [Mac のセットアップ (Apple ID、Xcode、および Xamarin)](#mac)  
   
@@ -56,13 +56,13 @@ ms.locfileid: "74297715"
   
 2. インストーラー内で、 **[カスタム]** インストールを選択します。  
   
-     ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+     ![Visual Studio のインストールでの [カスタム] オプションの選択](../cross-platform/media/cross-plat-xamarin-setup-1.png "クロスプラットフォーム Xamarin セットアップ1")  
   
 3. 次のチェック ボックスをオン/オフにします。  
   
     1. **[クロスプラットフォーム モバイル開発] > [C#/.NET (Xamarin)]** を選択します。 これにより、[共通のツールとソフトウェア開発キット] の下のさまざまな Android ツールも自動的に選択されます。  
   
-         ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+         ![[クロス&#45;プラットフォームモバイル開発] の [Xamarin] オプションを選択します。](../cross-platform/media/cross-plat-xamarin-setup-2.png "クロスプラットフォーム Xamarin セットアップ2")  
   
     2. **[クロスプラット フォーム モバイル開発] > [Microsoft Visual Studio Emulator for Android]** の選択を解除します。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "74297715"
   
 5. インストールが完了したら、Visual Studio を起動し、アカウントを求められたら Microsoft アカウントでサインインします (これは Windows で使用するのと同じアカウントです)。 次に、 **[ツール] > [オプション] > [Xamarin]** または **[ツール] > [オプション] > [Xamarin] > [その他]** を選択して、Xamarin の更新プログラムを確認します。ここには **[今すぐ確認]** リンクが表示されます。  
   
-     ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+     ![Visual Studio のオプションで Xamarin の更新プログラムを確認する](../cross-platform/media/cross-plat-xamarin-setup-3.png "クロスプラットフォーム Xamarin セットアップ3")  
   
     > [!NOTE]
     > 以前の Xamarin でのライセンス問題を回避するために、Xamarin をバージョン 4.0.3.214 以上に更新してください。  更新プログラムを確認しようとして Microsoft ビルド ツールに関するエラーが表示された場合は、[Xamarin のフォーラム](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)のスレッドをご覧ください。
@@ -83,15 +83,15 @@ ms.locfileid: "74297715"
 ### <a name="xamarin-studio"></a>Xamarin Studio  
  まず初めに、提供されたリンクへの移動時に、右上隅で **Xamarin Studio** が選択され、適切なバージョンの Xamarin ドキュメントが表示されていることを確認します。  
   
- ![Selecting Xamarin Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
+ ![Xamarin Studio を選択して Xamarin.com に関する正しいドキュメントを表示する](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
   
- **Outlook Web Access (OWA)**  
+ **Android**  
   
 1. 「 [Android プロジェクトの作成](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) 」(xamarin.com) の手順に従って、Android プロジェクトの作成を検証します。  
   
 2. [Android Player > Xamarin Studio ドキュメントとの統合](https://developer.xamarin.com/guides/android/getting_started/installation/android-player/#Integration_with_Xamarin_Studio) (xamarin.com) を通して、Android Player でのデバッグを検証します。  
   
-   **Android**  
+   **iOS**  
   
 3. 「 [iOS の作成](https://github.com/xamarin/docs-archive/tree/master/Recipes/ios/general/projects/create_an_ios_project) 」(xamarin.com) の手順に従って、iOS プロジェクトの作成を検証します。  
   
@@ -100,21 +100,21 @@ ms.locfileid: "74297715"
 ### <a name="visual-studio"></a>Visual Studio  
  まず初めに、提供されたリンクへの移動時に、右上隅で **Visual Studio** が選択され、適切なバージョンの Xamarin ドキュメントが表示されていることを確認します。  
   
- ![Selecting Visual Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
+ ![Visual Studio を選択して Xamarin.com に関する正しいドキュメントを確認する](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
   
  **[ツール] > [Xamarin アカウント...]** で Xamarin アカウントにサインインします。  
   
- **Outlook Web Access (OWA)**  
+ **Android**  
   
 1. 「 [Android プロジェクトの作成](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) 」(xamarin.com) の手順に従って、Android プロジェクトの作成を検証します。  
   
-2. Android デザイナーの検証: Android プロジェクトのソリューション エクスプローラーで、 **[リソース] > [レイアウト] > [Main.axml]** ファイルを開きます  
+2. Android デザイナーの検証: ソリューション エクスプローラーの Android プロジェクトで、 **[リソース] > [レイアウト] > [Main.axml]** ファイルを開きます。  
   
    - 「インストールされている Android SDK が古すぎます」というエラーが発生した場合は、メッセージ内の **[Android SDK を開く]** をクリックして、利用可能な最新の SDK バージョンを選びます。 SDK を更新するには、管理者として Visual Studio を実行している必要があることに注意してください。  
   
 3. Mac にインストールされているエミュレーターに Visual Studio から接続できることを検証します。  この結果、デバッグ用に Visual Studio 内から選択できるエミュレーターの一覧に Xamarin Player が表示されます。  これを行うには、「 [Visual Studio を Xamarin Android Player に接続する](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) 」(xamarin.com) の手順に従います。  
   
-   **Android**  
+   **iOS**  
   
 4. 「 [Connecting to the Mac using XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) 」(xamarin.com) で説明されているように、ネットワーク上で Mac が利用でき、Visual Studio とペアになっていることを確認してください。  
   
@@ -126,10 +126,10 @@ ms.locfileid: "74297715"
   
    1. ソリューション エクスプローラーで iOS プロジェクトを右クリックして **[スタートアップ プロジェクトに設定]** を選択します。  
   
-   2. 次に示すように、Visual Studio のビルド ドロップダウン リストで **iPhoneSimulator** のターゲットを選びます。 シミュレーターが表示されていない場合は、Mac で Xcode を起動し、 **[Xcode] > [ユーザー設定]** の順に選び、 **[ダウンロード]** をクリックします。 **[コンポーネント]** の下に、ダウンロード可能なシミュレーターのバージョンが表示されます。 デバッグに関する詳しい説明については、Xamarin の「 [デバッグ](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) 」ページ (xamarin.com) をご覧ください。  
+   2. 次に示すように、Visual Studio のビルド ドロップダウン リストで **iPhoneSimulator** のターゲットを選びます。 シミュレーターが一覧に表示されていない場合、Mac で Xcode を起動し、 **[Xcode] -> [ユーザー設定]** を選択し、 **[ダウンロード]** をクリックします。 **[コンポーネント]** の下に、ダウンロード可能なシミュレーターのバージョンが表示されます。 デバッグに関する詳しい説明については、Xamarin の「 [デバッグ](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) 」ページ (xamarin.com) をご覧ください。  
   
-        ![Selecting the iPhoneSimulator build target](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
+        ![リストで iphonesimulator ビルドターゲットの選択](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 確認5")  
   
    3. 次に示すように、Visual Studio のデバッグ ドロップダウン リストで iPhone のターゲットを選び、F5 キーを押してデバッガーを開始します。 これによって、Mac 上のシミュレーターが起動し、Visual Studio でのデバッグ中にアプリを操作できるようになります。  
   
-        ![Selecting an iPhone debug target](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+        ![IPhone デバッグターゲットの選択](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 検証6")

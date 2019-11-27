@@ -1,5 +1,5 @@
 ---
-title: Build cross-platform mobile apps with Visual C++ | Microsoft Docs
+title: Visual C++ | を使用したクロスプラットフォームモバイルアプリのビルドMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,10 +16,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299356"
 ---
-# <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Build cross-platform mobile apps with Visual C++
+# <a name="build-cross-platform-mobile-apps-with-visual-c"></a>ビジュアルを使用してクロスプラットフォームのモバイルアプリをビルドするC++
 Visual C++ for Cross-Platform Mobile Development を使用すると、Android、iOS、および Windows デバイス向けのクロスプラットフォーム コードを構築できます。 これは、Visual C++ を使用して iOS、Android、および Windows 用のコードをクロスプラットフォームで開発できるようにする、Visual Studio 2015 で使用可能なオプションの機能です。  
   
- For installation instructions and code examples, see [Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).  
+ インストール手順とコード例については、「[クロスプラットフォームモバイル開発のためのビジュアルC++ ](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)」を参照してください。  
   
-## <a name="see-also"></a>参照  
- [Download Visual Studio 2015](https://go.microsoft.com/fwlink/?linkid=517106)
+## <a name="see-also"></a>関連項目  
+ [Visual Studio 2015 のダウンロード](https://go.microsoft.com/fwlink/?linkid=517106)

@@ -16,7 +16,7 @@ ms.locfileid: "74299780"
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin を使用したモバイル開発について学習します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックでは、Xamarin を使用したクロス プラットフォーム モバイル アプリ開発を理解するのに役立つ概要の資料を提供します。 Visual Studio および Xamarinをまだインストールしていない場合は、まず [セットアップとインストール](../cross-platform/setup-and-install.md) プロセスを開始して、ここに戻り、インストーラーの実行中にこれらのリソースを処理します。  
+このトピックでは、Xamarin を使用したクロス プラットフォーム モバイル アプリ開発を理解するのに役立つ概要の資料を提供します。 Visual Studio および Xamarinをまだインストールしていない場合は、まず [Setup and install](../cross-platform/setup-and-install.md) プロセスを開始して、ここに戻り、インストーラーの実行中にこれらのリソースを処理します。  
   
 > [!NOTE]
 > 明記されない限り、副次的なページではなく、ここに直接リンクしているページのみを最初に読むことをお勧めします。 インストール プロセスが、この一覧を表示した後もまだ実行している場合は、戻って他のトピックを検索してもかまいません。  
@@ -39,7 +39,7 @@ ms.locfileid: "74299780"
   
   これらの関係を次に示します。また、iOS アプリでの作業について詳しくは、「 [Introduction to Xamarin.iOS for Visual Studio](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio) 」(xamarin.com) で読むことができます。  
   
-  ![The relationship between Windows and Mac dev computers in a Xamarin environment](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![Xamarin 環境における Windows と Mac の開発用コンピューターの関係](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin の学習1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>要点: プロジェクトの構造化の方法  
  *10 分から 30 分*  
@@ -84,15 +84,15 @@ ms.locfileid: "74299780"
   
  物理デバイスを使用せずにクロスプラットフォーム アプリをデバッグするには、次を使用する必要があります。  
   
-1. **Android エミュレーター** 使用している Windows のバージョンに応じて、Microsoft’s Visual Studio Emulator for Android と Xamarin Player のいずれかをお勧めします。どちらも高速パフォーマンスを提供し、さまざまなデバイスの機能をサポートしています。  
+1. **Android エミュレーター。** 使用している Windows のバージョンに応じて、Microsoft’s Visual Studio Emulator for Android と Xamarin Player のいずれかをお勧めします。どちらも高速パフォーマンスを提供し、さまざまなデバイスの機能をサポートしています。  
   
     - **Windows 8 以降のコンピューター:** Visual Studio と共にインストールされる Microsoft の [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)の使用を強くお勧めします。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) ビデオ (Channel9、5 分 55 秒) は、概要とデモを提供します  
   
     - **Windows 7 以前/Mac OS X で実行する Windows**: [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) を使用します。  
   
-2. **Apple の iOS シミュレーター。** 詳しくは、「 [iOS シミュレーター入門](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) 」(apple.com) をお読みください。  
+2. **Apple の iOS シミュレーター。** 詳しくは、「[Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1)」(iOS シミュレーター入門) (apple.com) をお読みください。  
   
-3. **Microsoft の Windows Phone エミュレーター。** 詳しくは、「 [Windows Phone 8 用 Windows Phone エミュレーター](https://msdn.microsoft.com/library/dn632391.aspx)」をお読みください。  
+3. **Microsoft の Windows Phone エミュレーター。** 詳しくは、「[エミュレーターにおける Windows Phone アプリの実行](https://msdn.microsoft.com/library/dn632391.aspx)」をお読みください。  
   
 ## <a name="components"></a> Deeper Dive: Xamarin Components  
  *10 分*  

@@ -1,5 +1,5 @@
 ---
-title: 'CA3075: Insecure DTD Processing | Microsoft Docs'
+title: 'CA3075: 安全ではない DTD の処理 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -35,31 +35,31 @@ ms.locfileid: "74300966"
 
 - XML で <xref:System.Xml.XmlNode.InnerXml%2A> プロパティが設定されている。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set  to Parse    .
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> プロパティが Parse に設定されています。
 
 - 信頼されていない入力は、 <xref:System.Xml.XmlResolver> の代わりに <xref:System.Xml.XmlSecureResolver> を使用して処理される。
 
-- The XmlReader.<xref:System.Xml.XmlReader.Create%2A> method is invoked with an insecure <xref:System.Xml.XmlReaderSettings> instance or no instance at all.
+- XmlReader。<xref:System.Xml.XmlReader.Create%2A> セキュリティで保護されていない <xref:System.Xml.XmlReaderSettings> インスタンスを使用して、またはインスタンスがまったくない状態でメソッドが呼び出されました。
 
-- <xref:System.Xml.XmlReader> is created with insecure default settings or values    .
+- <xref:System.Xml.XmlReader> は、安全でない既定の設定または値を使用して作成されます。
 
   これらはどのケースでも、結果は同じになります。XML を処理するマシンが共有するファイル システム、またはネットワークからのコンテンツが攻撃者にさらされ、DoS の媒介として使用される可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .
+- パス情報の漏えいを防ぐために、すべての XmlTextReader 例外をキャッチして処理します。
 
-- Use the <xref:System.Xml.XmlSecureResolver> to restrict the resources      that the XmlTextReader can access.
+-  <xref:System.Xml.XmlSecureResolver> を使用して、XmlTextReader がアクセスできるリソースを制限します。
 
-- Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlResolver> property to **null**.
+- <xref:System.Xml.XmlResolver> プロパティを **null**に設定して、 <xref:System.Xml.XmlReader> が外部リソースを開けないようにします。
 
 - <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> の <xref:System.Data.DataViewManager> プロパティが信頼できるソースから割り当てられていることを確認します。
 
   .NET 3.5 以前
 
-- Disable DTD processing if you are dealing with untrusted sources by setting the <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> property to **true** .
+-  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> プロパティを **true**に設定して、信頼されていないソースを扱う場合は、DTD 処理を無効にします。
 
-- XmlTextReader クラスには、完全信頼の継承確認要求があります。 See [Inheritance Demands](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for more information    .
+- XmlTextReader クラスには、完全信頼の継承確認要求があります。 詳細については、「 [継承の要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)」を参照してください。
 
   .NET 4 以降
 

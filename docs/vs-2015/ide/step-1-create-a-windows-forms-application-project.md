@@ -21,13 +21,13 @@ ms.locfileid: "74295786"
 
 ピクチャ ビューアーを作成する場合、最初の手順は、Windows フォーム アプリケーション プロジェクトを作成することです。
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](https://go.microsoft.com/fwlink/?LinkId=205209)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](https://go.microsoft.com/fwlink/?LinkId=205199)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Windows フォーム アプリケーション プロジェクトを作成するには
 
-1. メニュー バーで **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。 ダイアログ ボックスは次のようになります。
+1. メニュー バーで、 **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。 ダイアログ ボックスは次のようになります。
 
-     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
+     [![新しいプロジェクト] ダイアログ](../ide/media/newprojectdialogcallouts.png "Newprojectのコールアウト")[新しいプロジェクト] ダイアログボックス
 
 2. **[インストールされたテンプレート]** で **[Visual C#]** または **[Visual Basic]** を選択します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "74295786"
     > [!NOTE]
     > ウィンドウ レイアウトは、この図とは多少異なる場合があります。 実際のウィンドウ レイアウトは、Visual Studio のバージョン、使用しているプログラミング言語、その他の要素によって異なります。 ただし、3 つのウィンドウがすべて表示されることを確認する必要があります。
 
-     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
+     ![IDE ウィンドウ](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")IDE ウィンドウ
 
      インターフェイスには、3 つのウィンドウ (メイン ウィンドウ、**ソリューション エクスプローラー**、 **[プロパティ]** ウィンドウ) があります。
 
@@ -61,7 +61,7 @@ ms.locfileid: "74295786"
 
      または、次の図に示すツール バーの **[すべて保存]** ボタンを選択します。
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
+     ![[すべて保存] ツールバーボタン](../ide/media/express-iconsaveall.png "Express_IconSaveAll")[すべて保存] ツールバーボタン
 
      Visual Studio によって自動的にフォルダー名およびプロジェクト名が指定され、projects フォルダーにプロジェクトが保存されます。
 

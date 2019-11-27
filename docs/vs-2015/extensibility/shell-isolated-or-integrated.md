@@ -1,5 +1,5 @@
 ---
-title: Shell (Isolated or Integrated) | Microsoft Docs
+title: シェル (分離または統合) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -24,38 +24,38 @@ ms.locfileid: "74300484"
 # <a name="shell-isolated-or-integrated"></a>シェル (分離または統合)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can create your own Visual Studio-based application in either integrated or isolated mode. In integrated mode, many Visual Studio features are available in addition to your application. In the isolated mode, you choose a subset of Visual Studio features that you wish to distribute along with your own extension.  
+独自の Visual Studio ベースのアプリケーションは、統合モードまたは分離モードで作成できます。 統合モードでは、アプリケーションに加えて Visual Studio の多くの機能を使用できます。 分離モードでは、独自の拡張機能と共に配布する Visual Studio の機能のサブセットを選択します。  
   
-## <a name="integrated-mode"></a>Integrated Mode  
- Integrated mode enables your users to use standard Visual Studio features along with your custom tools. The integrated shell is intended primarily for hosting programming languages and software development tools.  
+## <a name="integrated-mode"></a>統合モード  
+ 統合モードでは、ユーザーは、カスタムツールと共に、標準の Visual Studio 機能を使用できます。 統合シェルは、主にプログラミング言語とソフトウェア開発ツールをホストするためのものです。  
   
- Custom tools that are built on the integrated shell automatically merge with any other edition of Visual Studio that is installed on the same computer. You can provide a redistributable version of the Visual Studio integrated shell if Visual Studio is not already installed.  
+ 統合シェル上に構築されたカスタムツールは、同じコンピューターにインストールされている Visual Studio の他のエディションと自動的にマージされます。 Visual Studio がまだインストールされていない場合は、Visual Studio 統合シェルの再頒布可能バージョンを提供できます。  
   
- The redistributable version of the Visual Studio integrated shell does not include programming languages and the features that support their respective project systems.  
+ Visual Studio 統合シェルの再頒布可能バージョンには、プログラミング言語と、それぞれのプロジェクトシステムをサポートする機能は含まれていません。  
   
 > [!NOTE]
-> The Visual Studio shell integrated mode can be installed together with all editions of Visual Studio except the Express editions.  
+> Visual Studio shell 統合モードは、Express エディションを除く、Visual Studio のすべてのエディションと共にインストールできます。  
   
- For more information, see [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md).  
+ 詳細については、「 [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md)」を参照してください。  
   
-## <a name="isolated-mode"></a>Isolated Mode  
- Isolated mode allows you to create custom tools that run side-by-side with other versions of Visual Studio. It is intended primarily for tools that can access Visual Studio services without depending on all the standard Visual Studio features. You can customize the appearance of applications built on the Visual Studio isolated shell. You can easily turn off the features and menu command groups that you do not wish to appear together with your application.  
+## <a name="isolated-mode"></a>分離モード  
+ 分離モードでは、Visual Studio の他のバージョンとサイドバイサイドで実行するカスタムツールを作成できます。 これは主に、visual studio のすべての標準機能に依存せずに Visual Studio サービスにアクセスできるツールを対象としています。 Visual Studio の分離シェルでビルドされたアプリケーションの外観をカスタマイズできます。 アプリケーションと一緒に表示しない機能やメニューコマンドグループは、簡単に無効にすることができます。  
   
- For more information, see [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md).  
+ 詳細については、「 [Visual Studio の分離シェル](../extensibility/visual-studio-isolated-shell.md)」を参照してください。  
   
-## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Distributing your Integrated or Isolated Shell Application  
- In order to distribute your integrated or isolated shell application, you need to include your application, a special integrated or isolated shell redistributable, and an installation program. For more information about distribution and installation, see [Distributing Isolated Shell Applications](../extensibility/distributing-isolated-shell-applications.md).  
+## <a name="distributing-your-integrated-or-isolated-shell-application"></a>統合または分離されたシェルアプリケーションの配布  
+ 統合または分離されたシェルアプリケーションを配布するには、アプリケーション、特別な統合または分離されたシェル再頒布可能パッケージ、およびインストールプログラムを含める必要があります。 配布とインストールの詳細については、「[分離シェルアプリケーションの配布](../extensibility/distributing-isolated-shell-applications.md)」を参照してください。  
   
 > [!IMPORTANT]
-> The [End User License Agreement (EULA)](https://www.visualstudio.com/support/legal/mt171552) for the Visual Studio integrated and isolated shells includes a section on data collection (**Section 3. Data**).  It describes the customer usage data that may be collected by Microsoft from users of either the integrated or isolated shell software that you build into your application. For more information, see [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).  
+> Visual Studio 統合シェルと分離シェルの[使用許諾契約書 (EULA)](https://www.visualstudio.com/support/legal/mt171552)には、データコレクション (セクション 3) のセクションが含まれてい**ます。データ**)。  ここでは、アプリケーションに組み込む統合シェルソフトウェアまたは分離シェルソフトウェアのユーザーから Microsoft によって収集される可能性のある顧客の使用状況データについて説明します。 詳細については、「 [Microsoft Visual Studio 製品ファミリのプライバシー](https://www.visualstudio.com/dn948229)に関する声明」を参照してください。  
 > 
-> If you collect separate usage data from your customers through your application, you must provide appropriate notice to users of your application of what you collect.  When you distribute either the isolated or integrated shell software as part of your application, according to the Visual Studio Software Development Kit license, you must include one of the following:  
+> アプリケーションを使用して顧客から個別の使用状況データを収集する場合は、収集対象のアプリケーションのユーザーに適切な通知を提供する必要があります。  Visual Studio ソフトウェア開発キットのライセンスに従って、アプリケーションの一部として分離または統合されたシェルソフトウェアを配布する場合は、次のいずれかを含める必要があります。  
 > 
-> - the End User License Agreement as part of your application license  
-> - your own EULA that requires your customers to agree to terms that protect the Visual Studio integrated or isolated shell at least as much as the Microsoft End User License Terms for the shell software  
+> - アプリケーションライセンスの一部として使用許諾契約書  
+> - お客様が、Visual Studio の統合シェルまたは分離シェルを、少なくともシェルソフトウェアの Microsoft エンドユーザーライセンス条項に従って保護するという条件に同意することを必要とする独自の EULA。  
   
-## <a name="additional-resources"></a>その他の資料  
- For more information about redistributable packages, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) Web site.  
+## <a name="additional-resources"></a>その他のリソース  
+ 再頒布可能パッケージの詳細については、「 [Visual Studio 拡張機能のダウンロード](https://go.microsoft.com/fwlink/?LinkID=119298)」 Web サイトを参照してください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)

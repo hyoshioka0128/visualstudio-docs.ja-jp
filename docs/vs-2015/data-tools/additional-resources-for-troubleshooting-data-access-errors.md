@@ -1,5 +1,5 @@
 ---
-title: Additional resources for troubleshooting data access errors | Microsoft Docs
+title: データアクセスエラーのトラブルシューティングに関するその他のリソース |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -243,21 +243,21 @@ ms.locfileid: "74299449"
 
 MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 MSDN で利用できるデータ関連のフォーラムの一覧を次に示します。
 
- [Windows Forms Data Controls and Databinding](https://go.microsoft.com/fwlink/?LinkId=160179) Provides a forum for questions about and general discussions of data access in Windows Forms.
+ [データコントロールとデータバインドの Windows フォーム](https://go.microsoft.com/fwlink/?LinkId=160179)Windows フォームでのデータアクセスに関する質問や一般的な議論のためのフォーラムです。
 
- [ADO.NET DataSet Forum](https://go.microsoft.com/fwlink/?LinkId=160180) Provides a forum for questions about and general discussions of Datasets.
+ [ADO.NET データセットフォーラム](https://go.microsoft.com/fwlink/?LinkId=160180)データセットに関する質問や一般的な議論のためのフォーラムを提供します。
 
- [ADO.NET Entity Framework and LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Provides a forum for questions about and general discussions of Entity Framework applications and the LINQ to Entities language.
+ [ADO.NET Entity Framework と LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520)Entity Framework アプリケーションと LINQ to Entities 言語に関する質問や一般的な議論のためのフォーラムです。
 
- [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=160181) Provides a forum for questions about and general discussions of data services.
+ [WCF Data Services フォーラム](https://go.microsoft.com/fwlink/?LinkId=160181)データサービスに関する質問や一般的な議論のためのフォーラムを提供します。
 
- [SQL Server Data Access Forum](https://go.microsoft.com/fwlink/?LinkID=160184) Provides a forum for questions about and general discussions of accessing data in Microsoft SQL Server.
+ [SQL Server データアクセスフォーラム](https://go.microsoft.com/fwlink/?LinkID=160184)Microsoft SQL Server でのデータへのアクセスに関する質問や一般的な議論のためのフォーラムを提供します。
 
- [Linq to SQL Forum](https://go.microsoft.com/fwlink/?LinkId=160183) Provides a forum for questions about and general discussions of Linq to SQL.
+ [Linq TO SQL フォーラム](https://go.microsoft.com/fwlink/?LinkId=160183)Linq to SQL に関する質問や一般的な議論のためのフォーラムを提供します。
 
- [ADO.NET Data Providers Forum](https://go.microsoft.com/fwlink/?LinkId=160182) Provides a forum for questions about and general discussions of the different .NET Framework Data Providers.
+ [ADO.NET データプロバイダーフォーラム](https://go.microsoft.com/fwlink/?LinkId=160182)さまざまな .NET Framework データプロバイダーに関する質問や一般的な議論のためのフォーラムです。
 
- For information about how to troubleshoot connectivity to SQL Server, see [How to Troubleshoot Connecting to the SQL Server Database Engine](https://go.microsoft.com/fwlink/?LinkID=246151).
+ SQL Server への接続のトラブルシューティング方法の詳細については、「 [SQL Server データベースエンジンへの接続に関するトラブルシューティングの方法](https://go.microsoft.com/fwlink/?LinkID=246151)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

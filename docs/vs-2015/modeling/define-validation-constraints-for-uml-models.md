@@ -1,5 +1,5 @@
 ---
-title: Define validation constraints for UML models | Microsoft Docs
+title: UML モデルの検証制約を定義する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,11 +23,11 @@ ms.locfileid: "74295845"
 
 指定した条件をモデルが満たしているかどうかをテストする検証制約を定義できます。 たとえば、ユーザーが継承関係のループを作成していないことを確認するための制約を定義できます。 制約は、ユーザーがモデルを開くか、または保存しようとしたときに実行されるほか、手動で実行することもできます。 制約が失敗した場合は、ユーザー定義のエラー メッセージがエラー ウィンドウに追加されます。 これらの制約を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
- また、モデルをデータベースなどの外部リソースに照らし合わせて検証する制約も定義できます。 If you want to validate program code against a layer diagram, see [Add custom architecture validation to layer diagrams](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+ また、モデルをデータベースなどの外部リソースに照らし合わせて検証する制約も定義できます。 レイヤー図に対してプログラムコードを検証する場合は、「[レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
  UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="requirements"></a>［要件］
+## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -37,14 +37,14 @@ ms.locfileid: "74295845"
 
  検証エラーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エラー ウィンドウに報告されるので、エラーをダブルクリックすると、エラーが発生しているモデル要素を選択することができます。
 
- For more information about applying validation, see [Validate your UML model](../modeling/validate-your-uml-model.md).
+ 検証の適用の詳細については、「 [UML モデルの検証](../modeling/validate-your-uml-model.md)」を参照してください。
 
 ## <a name="defining-a-validation-extension"></a>検証拡張機能の定義
  UML デザイナーの検証拡張機能を作成するには、検証制約を定義するクラスを生成し、そのクラスを Visual Studio Integration Extension (VSIX) に埋め込む必要があります。 VSIX は、制約をインストールできるコンテナーとして機能します。 検証拡張機能を定義する方法は 2 つあります。
 
-- **Create a validation extension in its own VSIX using a project template.** これはより簡単な方法です。 検証制約を他の種類の拡張機能 (メニュー コマンド、カスタム ツールボックス項目、ジェスチャ ハンドラーなど) と組み合わせない場合は、この方法を使用します。 複数の制約を 1 つのクラスで定義できます。
+- **プロジェクトテンプレートを使用して、独自の VSIX に検証拡張機能を作成します。** これはより簡単な方法です。 検証制約を他の種類の拡張機能 (メニュー コマンド、カスタム ツールボックス項目、ジェスチャ ハンドラーなど) と組み合わせない場合は、この方法を使用します。 複数の制約を 1 つのクラスで定義できます。
 
-- **Create separate validation class and VSIX projects.** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、メニュー コマンドが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
+- **個別の検証クラスと VSIX プロジェクトを作成します。** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、メニュー コマンドが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>検証拡張機能を独自の VSIX に生成するには
 
@@ -63,7 +63,7 @@ ms.locfileid: "74295845"
 
 4. F5 キーを押して制約をテストします。 詳細については、「 [検証制約の実行](#Executing)」を参照してください。
 
-5. Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
+5. 別のコンピューターにメニューコマンドをインストールします。そのためには、プロジェクトによってビルドされた **\\\*.vsix\\\*ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
 
    他の **.cs** ファイルを追加すると、通常は次の `using` ステートメントが必要になります。
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. クラス ライブラリ プロジェクトを作成し、それを既存の VSIX ソリューションに追加するか、または新規のソリューションを作成します。
 
-    1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+    1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
 
     2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a> Executing a Validation Constraint
+## <a name="Executing"></a>検証制約の実行
  テストを行う場合は、検証メソッドをデバッグ モードで実行します。
 
 #### <a name="to-test-the-validation-constraint"></a>検証制約をテストするには
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
+    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の完全なパス名であることを確認します。通常は次のようになります。
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 適切な `Export` 属性と `ValidationMethod` 属性が検証メソッドに追加されている。
 
-    - `ValidationCategories.Menu` is included in the argument for the `ValidationMethod` attribute, and it is composed with other values using Logical OR (&#124;).
+    - `ValidationCategories.Menu` は、`ValidationMethod` 属性の引数に含まれており、Logical OR (&#124;) を使用して他の値で構成されています。
 
     - すべての `Import` 属性と `Export` 属性のパラメーターが有効である。
 
-## <a name="Implementing"></a> Evaluating the Constraint
+## <a name="Implementing"></a>制約の評価
  検証メソッドは、適用される検証制約が true と false のどちらかであるかを判定します。 true の場合、検証メソッドは何も行いません。 false の場合、検証メソッドは、 `ValidationContext` パラメーターによって提供されるメソッドを使用して、エラーを報告します。
 
 > [!NOTE]
@@ -259,7 +259,7 @@ public void ValidateSomething
 |||
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Managed Extensibility Framework (MEF) を使用して、メソッドを検証制約として定義します。|
-|`[ValidationMethod (ValidationCategories.Menu)]`|検証をいつ実行するかを指定します。 Use bitwise OR (&#124;) if you want to combine more than one option.<br /><br /> `Menu` は、[検証] メニューによって呼び出されます。<br /><br /> `Save` は、モデルを保存するときに呼び出されます。<br /><br /> `Open` は、モデルを開くときに呼び出されます。 `Load` は、モデルを保存するときに呼び出されますが、違反の場合は、モデルを再度開くことができない可能性があることをユーザーに警告します。 また、読み込み時 (モデルが解析される前) にも呼び出されます。|
+|`[ValidationMethod (ValidationCategories.Menu)]`|検証をいつ実行するかを指定します。 複数のオプションを&#124;組み合わせる場合は、ビットごとの or () を使用します。<br /><br /> `Menu` は、[検証] メニューによって呼び出されます。<br /><br /> `Save` は、モデルを保存するときに呼び出されます。<br /><br /> `Open` は、モデルを開くときに呼び出されます。 `Load` は、モデルを保存するときに呼び出されますが、違反の場合は、モデルを再度開くことができない可能性があることをユーザーに警告します。 また、読み込み時 (モデルが解析される前) にも呼び出されます。|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|`IElement` という 2 番目のパラメーターを、制約を適用する要素の型に置き換えます。 制約メソッドは、指定された型のすべての要素に対して呼び出されます。<br /><br /> メソッドの名前は重要ではありません。|
 
  2 番目のパラメーターに異なる型を指定し、任意の数の検証メソッドを定義できます。 検証が起動されると、パラメーター型に対応する各モデル要素に対し、それぞれの検証メソッドが呼び出されます。
@@ -275,14 +275,14 @@ public void ValidateSomething
 
 - `elementsWithError` は、モデル内の要素を識別します。 ユーザーがエラー レポートをダブルクリックすると、この要素を表すシェイプが選択されます。
 
-  `LogError(),` `LogWarning()` and `LogMessage()` place messages in different sections of the error list.
+  `LogError(),` `LogWarning()` と `LogMessage()`、エラー一覧の異なるセクションにメッセージを配置します。
 
 ## <a name="how-validation-methods-are-applied"></a>検証メソッドの適用方法
  検証は、リレーションシップや、クラスの属性や操作のパラメーターなどの大きい要素のパートを含む、モデルのすべての要素に対して適用されます。
 
  どの検証メソッドも、2 番目のパラメーターの型に対応する各要素に対して適用されます。 つまり、たとえば、2 番目のパラメーターが `IUseCase` の検証メソッドと、スーパータイプが `IElement`の検証メソッドを定義すると、これらのメソッドはどちらも、モデルの各ユース ケースに対して適用されます。
 
- The hierarchy of types is summarized in [UML model element types](../modeling/uml-model-element-types.md).
+ 型の階層は、 [UML モデル要素の型](../modeling/uml-model-element-types.md)にまとめられています。
 
  また、リレーションシップに従うことによって要素にアクセスすることもできます。 たとえば、 `IClass`で検証メソッドを定義する場合、所有されているプロパティに対してループ処理を行うことができます。
 
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a> Coordinating Multiple Validations
+### <a name="ContextCache"></a>複数の検証の調整
  たとえば、ユーザーによって図のメニューから検証が起動されると、それぞれのモデル要素にそれぞれの検証メソッドが適用されます。 これは、検証フレームワークの 1 回の起動において、同じメソッドが異なる要素に何度も適用される可能性があることを示します。
 
  これは、要素間の関係を対象とする検証において問題となります。 たとえば、ユース ケースから始まり、 **include** 関係までを対象として、ループが存在しないことを確認するための検証を記述したとします。 しかし、多くの **include** リンクを含むモデル内の各ユース ケースにこのメソッドを適用した場合、モデルの同じ領域が繰り返し処理される可能性があります。
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|値を取得します。|
 |`Context.GetValue<T>()`|指定した型の値を取得します。|
 
-## <a name="Installing"></a> Installing and uninstalling an extension
+## <a name="Installing"></a>拡張機能のインストールとアンインストール
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。
 
 #### <a name="to-install-an-extension"></a>拡張機能をインストールするには
@@ -372,11 +372,11 @@ context.LogError(... , usecase);
 
     1. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
+    2. _YourProject_ **\\\*\\ファイルビン**を見つけ**ます。**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
-    - The target computer must have one of the editions of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] that you specified in **source.extension.vsixmanifest**.
+    - ターゲットコンピューターは、 **source.extension.vsixmanifest**で指定した [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] のいずれかのエディションを持っている必要があります。
 
 3. ターゲット コンピューター上で、 **.vsix** ファイルを開きます。
 
@@ -392,11 +392,11 @@ context.LogError(... , usecase);
 
 3. 拡張機能を選択し、 **[アンインストール]** をクリックします。
 
-   拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
+   拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、次の場所からファイルを削除することによって拡張機能を削除できます。 *% Localappdata%* は通常*DriveName*: \ Users\\*UserName*\appdata\local です):
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% Localappdata%* **\Microsoft\VisualStudio\\[バージョン] \ 拡張機能**
 
-## <a name="Example"></a> 「例」
+## <a name="Example"></a> 例
  この例は、要素間の依存関係におけるループを検索します。
 
  保存したときと検証メニュー コマンドを選択したときに検証が実行されます。
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>参照
- [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md)
+## <a name="see-also"></a>関連項目
+ [UML API を使用して](../modeling/programming-with-the-uml-api.md)[モデリング拡張機能のプログラミングを定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md)

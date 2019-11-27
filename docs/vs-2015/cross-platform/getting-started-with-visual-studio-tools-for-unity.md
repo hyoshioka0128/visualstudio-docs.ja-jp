@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299821"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の使用を開始する
+# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用を開始する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このセクションでは、Visual Studio Tools for Unity をインストールする方法と、Visual Studio で操作できるように Unity プロジェクトを構成する方法を説明します。  
@@ -24,7 +24,7 @@ ms.locfileid: "74299821"
 > [!IMPORTANT]
 > Unity 5.2 では Visual Studio Tools for Unity 2.1 の組み込みサポートが追加され、プロジェクトのセットアップが簡単になりました。 これを活用するには、Windows で Unity バージョン 5.2.0 以降と、Visual Studio Tools for Unity バージョン 2.1 以降が必要です。  
   
-## <a name="prerequisites"></a>必要条件  
+## <a name="prerequisites"></a>前提条件  
  Visual Studio Tools for Unity を使用するには、次のコンポーネントが必要です。  
   
 - 拡張機能をサポートしているバージョンの **Visual Studio** (Visual Studio Community、Professional、Premium、Enterprise など)。 Visual Studio Community は無料でダウンロードできます。  
@@ -77,7 +77,7 @@ ms.locfileid: "74299821"
   
  最後に、 **[Build Settings]** ページでビルド ターゲットが設定されていることと、 **[Script Debugging]** が有効になっていることをご確認ください。  
   
- ![Configure the Unity build settings for debugging.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Unity ビルド設定をデバッグ用に構成します。](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3 - Unity エディターからの Visual Studio の起動  
  Unity 5.2 以降では、Visual Studio を起動する場合や Visual Studio Tools for Unity を設定する場合に **[Visual Studio Tools]** 拡張機能メニューは不要になりました。 代わりに、Visual Studio が外部スクリプト エディターとして構成されたら、Unity エディターでそのスクリプト ファイルを選ぶだけで、コードが Visual Studio で開きます。  
@@ -95,21 +95,21 @@ ms.locfileid: "74299821"
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity を使用するための Unity エディターの構成  
  既存の Unity プロジェクトを使って開始する場合、あるいはプロジェクトの作成時に Visual Studio Tools unitypackage をインポートしなかった場合は、この時点で unitypackage をインポートしなければなりません。 Unity エディターのメイン メニューで、 **[Assets]、[Import Package]、[Visual Studio 2015 Tools]** (インストールされているバージョンの Visual Studio 用オプションが表示されます) を選びます。  
   
- ![Import the VSTU package into your Unity project.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
+ ![お使いの Unity プロジェクトに VSTU パッケージをインポートします。](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  最後に、 **[Build Settings]** ページでビルド ターゲットが設定されていることと、 **[Script Debugging]** が有効になっていることをご確認ください。  
   
- ![Configure the Unity build settings for debugging.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Unity ビルド設定をデバッグ用に構成します。](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 - Unity エディターからの Visual Studio の起動  
  最後の手順として Unity から Visual Studio を起動します。 これにより、プロジェクト用の Visual Studio ソリューションが作成され、Visual Studio で開かれます。  
   
  Unity エディターのメイン メニューで、 **[Visual Studio Tools]、[Open in Visual Studio]** を選びます。  
   
- ![Open your unity project in Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
+ ![Visual Studio で unity プロジェクトを開きます。](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次のステップ:  
  Visual Studio で Unity プロジェクトを操作およびデバッグする方法については、「 [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Unity ホームページ](https://unity.com/)

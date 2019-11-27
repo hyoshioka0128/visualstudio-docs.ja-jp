@@ -36,7 +36,7 @@ AP0000
 ### <a name="reason"></a>理由
 既定では、web.config ファイルで指定されているセッション状態モードはインプロセスです。 また、構成ファイルに指定されたエントリがない場合、セッション状態モードは既定でインプロセスに設定されます。 インプロセス モードでは、Web サーバー上のメモリにセッション状態が格納されます。 インスタンスが再起動されたときや、負荷分散またはフェールオーバーのサポートに新しいインスタンスが使用されたときに、Web サーバー上のメモリに格納されているセッション状態は保存されません。 この場合、クラウドでアプリケーションのスケーラビリティを確保できなくなります。
 
-ASP.NET session state supports several different storage options for session state data: InProc, StateServer, SQLServer, Custom, and Off. [Redis の Azure セッション状態プロバイダー](https://go.microsoft.com/fwlink/?LinkId=401521)など、外部のセッション状態ストアでデータをホストするときは Custom モードを使用することをお勧めします。
+ASP.NET セッション状態では、セッション状態データに対していくつかの異なるストレージオプション (InProc、StateServer、SQLServer、Custom、および Off) がサポートされています。 [Redis の Azure セッション状態プロバイダー](https://go.microsoft.com/fwlink/?LinkId=401521)など、外部のセッション状態ストアでデータをホストするときは Custom モードを使用することをお勧めします。
 
 ### <a name="solution"></a>解決策:
 推奨されるソリューションの 1 つとして、Managed Cache Service でセッション状態を保存します。 [Redis の Azure セッション状態プロバイダー](https://go.microsoft.com/fwlink/?LinkId=401521) を使用してセッション状態を保存する方法を確認します。 また、クラウドでアプリケーションのスケーラビリティを確保するために、他の場所にセッション状態を保存することもできます。 代替ソリューションの詳細については、「 [セッション状態モード](https://msdn.microsoft.com/library/ms178586)」をご覧ください。
@@ -122,7 +122,7 @@ AP2002
 [Azure コード分析のフィードバック](https://go.microsoft.com/fwlink/?LinkId=403771)のページでアイデアやフィードバックを共有してください。
 
 ### <a name="reason"></a>理由
-**OnMessage**を呼び出すと、クライアントは、キューまたはサブスクリプションを常にポーリングする内部メッセージ ポンプを起動します。 このメッセージ ポンプには、メッセージを受信する呼び出しを発行する無限ループが含まれています。 呼び出しがタイムアウトすると、新しい呼び出しが発行されます。 タイムアウト間隔は、使用されている [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx) の [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) プロパティの値によって決まります。
+**OnMessage**を呼び出すと、クライアントは、キューまたはサブスクリプションを常にポーリングする内部メッセージ ポンプを起動します。 このメッセージ ポンプには、メッセージを受信する呼び出しを発行する無限ループが含まれています。 呼び出しがタイムアウトすると、新しい呼び出しが発行されます。 タイムアウト間隔は、使用されている [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) の [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx) プロパティの値によって決まります。
 
 **Receive** に比べ、**OnMessage** を使用する利点は、メッセージのポーリング、例外の処理、複数のメッセージの並列処理、メッセージの完了をユーザーが手動で行う必要がないことです。
 
@@ -350,14 +350,14 @@ Azure Web サイトや Azure Mobile Services などのプロジェクトで [Con
 [Azure コード分析のフィードバック](https://go.microsoft.com/fwlink/?LinkId=403771)のページでアイデアやフィードバックを共有してください。
 
 ### <a name="reason"></a>理由
-CloudConfigurationManager は、アプリケーション環境に適した構成ファイルを読み取ります。
+CloudConfigurationManager はアプリケーション環境に適した構成ファイルを読み取ります。
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
 ### <a name="solution"></a>解決策:
 [CloudConfigurationManager クラス](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)を使用するようにコードをリファクターします。 この問題のコード修正は、Azure コード分析ツールによって提供されます。
 
-次のコード スニペットは、この問題のコード修正を示しています。 置換
+次のコード スニペットは、この問題のコード修正を示しています。 以前の型
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
@@ -396,7 +396,7 @@ AP4001
 * IIS がホストする Web アプリケーションでは、web.config を使用して接続文字列を保存します。
 * ASP.NET vNext アプリケーションでは、configuration.json を使用して接続文字列を保存します。
 
-web.config や app.config などの構成ファイルの使用方法については、「[ASP.NET Web 構成のガイドライン](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx)」をご覧ください。 For information on how Azure environment variables work, see [Azure Web Sites: How Application Strings and Connection Strings Work](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). ソース管理での接続文字列の保存については、 [ソース コード リポジトリに保存されているファイルに接続文字列などの機密情報を含めないようにする](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)ことに関する記事をご覧ください。
+web.config や app.config などの構成ファイルの使用方法については、「[ASP.NET Web 構成のガイドライン](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx)」をご覧ください。 Azure 環境変数の動作の詳細については、「 [Azure websites: アプリケーション文字列と接続文字列](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)のしくみ」を参照してください。 ソース管理での接続文字列の保存については、 [ソース コード リポジトリに保存されているファイルに接続文字列などの機密情報を含めないようにする](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)ことに関する記事をご覧ください。
 
 ## <a name="use-diagnostics-configuration-file"></a>診断構成ファイルを使用する
 ### <a name="id"></a>ID
@@ -408,18 +408,18 @@ Microsoft.WindowsAzure.Diagnostics プログラミング API を使用するな�
 [Azure コード分析のフィードバック](https://go.microsoft.com/fwlink/?LinkId=403771)のページでアイデアやフィードバックを共有してください。
 
 ### <a name="reason"></a>理由
-Azure SDK 2.5 (Azure Diagnostics 1.3 を使用) より前では、Azure Diagnostics (WAD) を複数の方法 (ストレージの構成 BLOB への追加、命令型コード、宣言型の構成、または既定の構成の使用) で構成できました。 しかし、推奨される診断構成方法は、アプリケーション プロジェクトで XML 構成ファイル (diagnostics.wadcfg、または SDK 2.5 以降では diagnostics.wadcfgx) を使用する方法です。 この方法では、diagnostics.wadcfg ファイルで構成をすべて定義し、このファイルを自由に更新して再デプロイできます。 Mixing the use of the diagnostics.wadcfg configuration file with the programmatic methods of setting configurations by using the [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)or [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) classes can lead to confusion. 詳細については、「 [Azure Diagnostics 構成の初期化または変更](https://msdn.microsoft.com/library/azure/hh411537.aspx) 」をご覧ください。
+Azure SDK 2.5 (Azure Diagnostics 1.3 を使用) より前では、Azure Diagnostics (WAD) を複数の方法 (ストレージの構成 BLOB への追加、命令型コード、宣言型の構成、または既定の構成の使用) で構成できました。 しかし、推奨される診断構成方法は、アプリケーション プロジェクトで XML 構成ファイル (diagnostics.wadcfg、または SDK 2.5 以降では diagnostics.wadcfgx) を使用する方法です。 この方法では、diagnostics.wadcfg ファイルで構成をすべて定義し、このファイルを自由に更新して再デプロイできます。 Diagnostics.wadcfg 構成ファイルの使用と、 [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)クラスまたは[RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)クラスを使用したプログラムによる構成設定の方法を混在させると、混乱を招く可能性があります。 詳細については、「 [Azure Diagnostics 構成の初期化または変更](https://msdn.microsoft.com/library/azure/hh411537.aspx) 」をご覧ください。
 
 WAD 1.3 (Azure SDK 2.5 に付属) 以降では、コードを使用して診断を構成することはできなくなりました。 そのため、構成を提供できるのは診断拡張機能の適用時または更新時だけとなります。
 
 ### <a name="solution"></a>解決策:
 診断構成デザイナーを使用して、診断設定を診断構成ファイル (diagnostics.wadcfg、または SDK 2.5 以降では diagnostics.wadcfgx) に移動します。 また、 [Azure SDK 2.5](https://go.microsoft.com/fwlink/?LinkId=513188) をインストールし、最新の診断機能を使用することをお勧めします。
 
-1. 構成するロールのショートカット メニューで [プロパティ] をクリックし、[構成] タブをクリックします。
-2. **[診断]** セクションで、 **[診断の有効化]** チェック ボックスがオンになっていることを確認します。
-3. **[構成]** をクリックします。
+1. 構成するロールのショートカット メニューで [プロパティ] をクリックして [構成] タブをクリックします。
+2. **[診断]** セクションで **[診断を有効にする]** チェック ボックスがオンになっていることを確認します。
+3. **[構成]** ボタンを選択します。
 
-   ![[診断の有効化] オプションへのアクセス](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
+   ![[診断を有効にする] オプションへのアクセス](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    詳細については、「 [Azure Cloud Services および Virtual Machines 用の診断の構成](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) 」をご覧ください。
 
@@ -462,5 +462,5 @@ public class BlogsController : Controller
     }
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 Azure アプリケーションの最適化とトラブルシューティングの詳細については、「[Visual Studio を使用した Azure App Service のトラブルシューティング](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)」をご覧ください。

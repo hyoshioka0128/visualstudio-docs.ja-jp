@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Displaying Related Data in a WPF Application | Microsoft Docs'
+title: 'チュートリアル: WPF アプリケーションでの関連データの表示 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -29,35 +29,35 @@ ms.locfileid: "74299583"
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>チュートリアル: WPF アプリケーションでの関連データの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In this walkthrough, you will create a WPF application that displays data from database tables that have a parent/child relationship. The data is encapsulated in entities in an Entity Data Model. The parent entity contains overview information for a set of orders. Each property of this entity is bound to a different control in the application. The child entity contains details for each order. This set of data is bound to a <xref:System.Windows.Controls.DataGrid> control.
+このチュートリアルでは、親/子リレーションシップを持つデータベーステーブルのデータを表示する WPF アプリケーションを作成します。 データは、Entity Data Model 内のエンティティにカプセル化されます。 親エンティティには、一連の注文の概要情報が含まれています。 このエンティティの各プロパティは、アプリケーション内の別のコントロールにバインドされます。 子エンティティには、各注文の詳細が含まれます。 この一連のデータは、<xref:System.Windows.Controls.DataGrid> コントロールにバインドされます。
 
  このチュートリアルでは、次の作業について説明します。
 
-- Creating a WPF application and an Entity Data Model that is generated from data in the AdventureWorksLT sample database.
+- WPF アプリケーションと、AdventureWorksLT サンプルデータベースのデータから生成される Entity Data Model を作成します。
 
-- Creating a set of data-bound controls that display overview information for a set of orders. You create the controls by dragging a parent entity from the **Data Sources** window to **the WPF Designer**.
+- 一連の注文の概要情報を表示するデータバインドコントロールのセットを作成する。 コントロールを作成するには、 **[データソース]** ウィンドウから**WPF デザイナー**に親エンティティをドラッグします。
 
-- Creating a <xref:System.Windows.Controls.DataGrid> control that displays related details for each selected order. You create the controls by dragging a child entity from the **Data Sources** window to a window in **the WPF designer**.
+- 選択された各注文に関連する詳細を表示する <xref:System.Windows.Controls.DataGrid> コントロールを作成します。 コントロールを作成するには、 **[データソース]** ウィンドウから**WPF デザイナー**のウィンドウに子エンティティをドラッグします。
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で初期化します。
 
-- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 You can download the AdventureWorksLT database from the [CodePlex Web site](https://go.microsoft.com/fwlink/?linkid=87843).
+- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
 
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- Entity Data Model および ADO.NET Entity Framework。 For more information, see [Entity Framework Overview](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).
+- Entity Data Model および ADO.NET Entity Framework。 詳細については、「 [Entity Framework の概要](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)」を参照してください。
 
-- WPF デザイナーの操作。 For more information, see [WPF and Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
+- WPF デザイナーの操作。 詳細については、「 [WPF と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)」を参照してください。
 
-- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
+- WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
 
 ## <a name="creating-the-project"></a>プロジェクトの作成
- Create a new WPF project to display the order records.
+ 新しい WPF プロジェクトを作成して注文レコードを表示します。
 
 #### <a name="to-create-a-new-wpf-project"></a>新しい WPF プロジェクトを作成するには
 
@@ -65,42 +65,42 @@ In this walkthrough, you will create a WPF application that displays data from d
 
 2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
-3. Expand **Visual C#** or **Visual Basic**, and then select **Windows**.
+3. **[ビジュアルC# ]** または **[Visual Basic]** を展開し、 **[Windows]** を選択します。
 
-4. Make sure that **.NET Framework 4** is selected in the combo box at the top of the dialog box. The <xref:System.Windows.Controls.DataGrid> control that you use in this walkthrough is available only in the .NET Framework 4.
+4. ダイアログボックスの上部にあるコンボボックスで **.NET Framework 4**が選択されていることを確認します。 このチュートリアルで使用する <xref:System.Windows.Controls.DataGrid> コントロールは、.NET Framework 4 でのみ使用できます。
 
 5. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。
 
-6. **[名前]** ボックスに「 `AdventureWorksOrdersViewer`」と入力します。
+6. **[名前]** ボックスに「`AdventureWorksOrdersViewer`」と入力します。
 
-7. **[OK]** をクリックします。
+7. **[OK]** をクリックすると、
 
-     Visual Studio creates the `AdventureWorksOrdersViewer` project.
+     Visual Studio によって `AdventureWorksOrdersViewer` プロジェクトが作成されます。
 
-## <a name="creating-an-entity-data-model-for-the-application"></a>Creating an Entity Data Model for the Application
- データ バインド コントロールを作成するには、まず、アプリケーション用のデータ モデルを定義し、 **[データ ソース]** ウィンドウに追加する必要があります。 In this walkthrough, the data model is an Entity Data Model.
+## <a name="creating-an-entity-data-model-for-the-application"></a>アプリケーションの Entity Data Model を作成する
+ データ バインド コントロールを作成するには、まず、アプリケーション用のデータ モデルを定義し、 **[データ ソース]** ウィンドウに追加する必要があります。 このチュートリアルでは、データモデルは Entity Data Model です。
 
 #### <a name="to-create-an-entity-data-model"></a>Entity Data Model を作成するには
 
-1. On the **Data** menu, click **Add New Data Source** to open the **Data Source Configuration Wizard**.
+1. **[データ]** メニューの **[新しいデータソースの追加]** をクリックして、**データソース構成ウィザード**を開きます。
 
-2. On the **Choose a Data Source Type** page, click **Database**, and then click **Next**.
+2. **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
 
-3. On the **Choose a Database Model** page, click **Entity Data Model**, and then click **Next**.
+3. **[データベースモデルの選択]** ページで、 **[Entity Data Model]** をクリックし、 **[次へ]** をクリックします。
 
-4. On the **Choose Model Contents** page, click **Generate from database**, and then click **Next**.
+4. **[モデルのコンテンツの選択]** ページで、 **[データベースから生成]** をクリックし、 **[次へ]** をクリックします。
 
-5. On the **Choose Your Data Connection** page, do one of the following:
+5. **[データ接続の選択]** ページで、次のいずれかの操作を行います。
 
    - AdventureWorksLT サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これを選択します。
 
-      -または-
+      または
 
-   - Click **New Connection** and create a connection to the AdventureWorksLT database.
+   - **[新しい接続]** をクリックし、AdventureWorksLT データベースへの接続を作成します。
 
-     Make sure that the **Save entity connection settings in App.Config as** option is selected, and then click **Next**.
+     **[エンティティ接続設定に名前を付けて app.config に保存]** オプションが選択されていることを確認し、 **[次へ]** をクリックします。
 
-6. On the **Choose Your Database Objects** page, expand **Tables**, and then select the following tables:
+6. **[データベースオブジェクトの選択]** ページで、 **[テーブル]** を展開し、次のテーブルを選択します。
 
    - **SalesOrderDetail**
 
@@ -108,26 +108,26 @@ In this walkthrough, you will create a WPF application that displays data from d
 
 7. **[完了]** をクリックします。
 
-8. プロジェクトをビルドします。
+8. プロジェクトをビルドする。
 
-## <a name="creating-data-bound-controls-that-display-the-orders"></a>Creating Data-Bound Controls that Display the Orders
- Create controls that display order records by dragging the `SalesOrderHeaders` entity from the **Data Sources** window to the WPF designer.
+## <a name="creating-data-bound-controls-that-display-the-orders"></a>注文を表示するデータバインドコントロールの作成
+ **[データソース]** ウィンドウから WPF デザイナーに `SalesOrderHeaders` エンティティをドラッグして、注文レコードを表示するコントロールを作成します。
 
-#### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>To create data-bound controls that display the order records
+#### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>注文レコードを表示するデータバインドコントロールを作成するには
 
-1. In **Solution Explorer**, double-click MainWindow.xaml.
+1. **ソリューションエクスプローラー**で、mainwindow.xaml をダブルクリックします。
 
     WPF デザイナーでウィンドウが開きます。
 
-2. Edit the XAML so the **Height** and **Width** properties are set to 800
+2. XAML を編集して、 **Height**プロパティと**Width**プロパティを800に設定します。
 
-3. In the **Data Sources** window, click the drop-down menu for the **SalesOrderHeaders** node and select **Details**.
+3. **[データソース]** ウィンドウで、[ **[salesorderheaders]** ] ノードのドロップダウンメニューをクリックし、 **[詳細]** をクリックします。
 
 4. **[SalesOrderHeaders]** ノードを展開します。
 
-5. Click the drop-down menu next to **SalesOrderID** and select **ComboBox**.
+5. **[Salesorderid]** の横にあるドロップダウンメニューをクリックし、 **[ComboBox]** を選択します。
 
-6. For each of the following child nodes of the **SalesOrderHeaders** node, click the drop-down menu next the node and select **None**:
+6. **[Salesorderheaders]** ノードの次の各子ノードについて、ノードの横にあるドロップダウンメニューをクリックし、 **[なし]** を選択します。
 
    - **RevisionNumber**
 
@@ -139,11 +139,11 @@ In this walkthrough, you will create a WPF application that displays data from d
 
    - **CreditCardApprovalCode**
 
-   - **SubTotal**
+   - **小計**
 
    - **TaxAmt**
 
-   - **Freight**
+   - **おける**
 
    - **rowguid**
 
@@ -151,27 +151,27 @@ In this walkthrough, you will create a WPF application that displays data from d
 
      この操作は、次の手順において、これらのノードに対応するデータ バインド コントロールが Visual Studio で作成されるのを防ぎます。 このチュートリアルでは、これらのデータをエンド ユーザーが参照する必要はありません。
 
-7. From the **Data Sources** window, drag the **SalesOrderHeaders** node to the window in **the WPF Designer**.
+7. **[データソース]** ウィンドウで、[ **[salesorderheaders]** ] ノードを**WPF デザイナー**のウィンドウにドラッグします。
 
-    Visual Studio generates XAML that creates a set of controls that are bound to data in the **SalesOrderHeaders** entity, and code that loads the data. For more information about the generated XAML and code, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+    Visual Studio では、 **[salesorderheaders]** エンティティ内のデータにバインドされるコントロールのセットと、データを読み込むコードを作成する XAML が生成されます。 生成される XAML とコードの詳細については、「 [Visual Studio でのデータへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)」を参照してください。
 
-8. In the designer, click the combo box next to the **Sales Order ID** label.
+8. デザイナーで、 **Sales ORDER ID**ラベルの横にあるコンボボックスをクリックします。
 
 9. **[プロパティ]** ウィンドウで、**IsReadOnly** プロパティの横のチェック ボックスをオンにします。
 
-## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Creating a DataGrid that Displays the Order Details
- Create a <xref:System.Windows.Controls.DataGrid> control that displays order details by dragging the `SalesOrderDetails` entity from the **Data Sources** window to the WPF designer.
+## <a name="creating-a-datagrid-that-displays-the-order-details"></a>注文の詳細を表示する DataGrid の作成
+ **[データソース]** ウィンドウから WPF デザイナーに `SalesOrderDetails` エンティティをドラッグして、注文の詳細を表示する <xref:System.Windows.Controls.DataGrid> コントロールを作成します。
 
-#### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>To create a DataGrid that displays the order details
+#### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>注文の詳細を表示する DataGrid を作成するには
 
-1. In the **Data Sources** window, locate the **SalesOrderDetails** node that is a child of the **SalesOrderHeaders** node.
+1. **[データソース]** ウィンドウで、 **[salesorderheaders]** ノードの子である**SalesOrderDetails**ノードを探します。
 
    > [!NOTE]
-   > There is also a **SalesOrderDetails** node that is a peer of the **SalesOrderHeaders** node. Make sure that you select the child node of the **SalesOrderHeaders** node.
+   > また、 **[salesorderheaders]** ノードのピアである**SalesOrderDetails**ノードもあります。 [ **[Salesorderheaders]** ] ノードの子ノードが選択されていることを確認します。
 
-2. Expand the child **SalesOrderDetails** node.
+2. 子**SalesOrderDetails**ノードを展開します。
 
-3. For each of the following child nodes of the **SalesOrderDetails** node, click the drop-down menu next the node and select **None**:
+3. **SalesOrderDetails**ノードの次の各子ノードについて、ノードの横にあるドロップダウンメニューをクリックし、 **[なし]** を選択します。
 
    - **SalesOrderID**
 
@@ -181,14 +181,14 @@ In this walkthrough, you will create a WPF application that displays data from d
 
    - **ModifiedDate**
 
-     This action prevents Visual Studio from including this data in the <xref:System.Windows.Controls.DataGrid> control you create in the next step. このチュートリアルでは、これらのデータをエンド ユーザーが参照する必要はありません。
+     この操作により、Visual Studio は、次の手順で作成する <xref:System.Windows.Controls.DataGrid> コントロールにこのデータを含めないようにします。 このチュートリアルでは、これらのデータをエンド ユーザーが参照する必要はありません。
 
-4. From the **Data Sources** window, drag the child **SalesOrderDetails** node to the window in **the WPF Designer**.
+4. **[データソース]** ウィンドウで、子**SALESORDERDETAILS**ノードを**WPF デザイナー**のウィンドウにドラッグします。
 
-    Visual Studio generates XAML to define a new data-bound <xref:System.Windows.Controls.DataGrid> control, and the control appears in the designer. Visual Studio also updates the generated `GetSalesOrderHeadersQuery` method in the code-behind file to include the data in the **SalesOrderDetails** entity.
+    Visual Studio によって、新しいデータバインド <xref:System.Windows.Controls.DataGrid> コントロールを定義する XAML が生成され、コントロールがデザイナーに表示されます。 また、Visual Studio は、分離コードファイルの生成された `GetSalesOrderHeadersQuery` メソッドを更新して、 **SalesOrderDetails**エンティティにデータを含めます。
 
 ## <a name="testing-the-application"></a>アプリケーションのテスト
- Build and run the application to verify that it displays the order records.
+ アプリケーションをビルドして実行し、注文レコードが表示されていることを確認します。
 
 #### <a name="to-test-the-application"></a>アプリケーションをテストするには
 
@@ -196,14 +196,14 @@ In this walkthrough, you will create a WPF application that displays data from d
 
      アプリケーションがビルドされ、実行されます。 次のことを検証します。
 
-    - The **Sales Order ID** combo box displays **71774**. This is the first order ID in the entity.
+    - **[Sales ORDER ID]** コンボボックスには、 **71774**が表示されます。 これは、エンティティの最初の注文 ID です。
 
-    - For each order you select in the **Sales Order ID** combo box, detailed order information is displayed in the <xref:System.Windows.Controls.DataGrid>.
+    - **[Sales ORDER ID]** コンボボックスで選択した注文ごとに、詳細な注文情報が <xref:System.Windows.Controls.DataGrid>に表示されます。
 
 2. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次のステップ
- After completing this walkthrough, learn how to use the **Data Sources** window in Visual Studio to bind WPF controls to other types of data sources. For more information, see [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) and [Bind WPF controls to a dataset](../data-tools/bind-wpf-controls-to-a-dataset.md).
+## <a name="next-steps"></a>次の手順
+ このチュートリアルを完了した後、Visual Studio の **[データソース]** ウィンドウを使用して、WPF コントロールを他の種類のデータソースにバインドする方法について説明します。 詳細については、「 [WCF データサービスへの wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」および「[データセットへの Wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)」を参照してください。
 
-## <a name="see-also"></a>参照
- [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Display related data in WPF applications](../data-tools/display-related-data-in-wpf-applications.md)
+## <a name="see-also"></a>関連項目
+ [Visual Studio でのデータへの wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)

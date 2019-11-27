@@ -1,5 +1,5 @@
 ---
-title: Using the Legacy Activity Designer | Microsoft Docs
+title: 従来のアクティビティデザイナーを使用する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -31,30 +31,30 @@ ms.locfileid: "74302824"
 ## <a name="creating-a-custom-activity"></a>カスタム アクティビティの作成
  アクティビティ デザイナを使ってカスタム アクティビティを作成するには、次の手順に従います。
 
-1. On the **Project** menu, click **Add Activity**.
+1. **[プロジェクト]** メニューの **[アクティビティの追加]** をクリックします。
 
-2. Select the **Activity** or **Activity (with code separation)** template.
+2. **アクティビティ**または**アクティビティ (コード分離付き)** テンプレートを選択します。
 
-   1. Use the **Activity** template to create an activity with the activity definition and the user code in same code file.
+   1. **アクティビティテンプレートを**使用して、同じコードファイルにアクティビティ定義とユーザーコードを持つアクティビティを作成します。
 
-   2. Use the **Activity (with code separation)** template to create an activity with the activity definition expressed as workflow markup and the user code in a separate code file.
+   2. アクティビティ定義がワークフローマークアップとして表現され、ユーザーコードが別のコードファイルに含まれるアクティビティを作成するには、**アクティビティ (コード分離付き)** テンプレートを使用します。
 
-3. Type an activity name or keep the default name, and then click **Add**.
+3. アクティビティ名を入力するか、既定の名前をそのままにして、 **[追加]** をクリックします。
 
-   You can also create a set of custom activities by creating a new project of type **Workflow Activity Library**. For more information about this project type, see [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+   また、" **Workflow Activity Library**" という種類の新しいプロジェクトを作成して、カスタムアクティビティのセットを作成することもできます。 このプロジェクトの種類の詳細については、「[方法: ワークフローアクティビティライブラリを作成する (レガシ)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)」を参照してください。
 
 ## <a name="configuring-an-activity"></a>アクティビティの構成
  アクティビティ デザイナがアクティブであるときに、プロパティ ブラウザを使用すると、次の表にリストされているプロパティを構成できます。
 
-|property|コメント|
+|プロパティ|コメント|
 |--------------|--------------|
-|**Name**|アクティビティの名前。|
-|**Base Class**|アクティビティの派生元の基本クラス。 The default base class is [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). In the **Properties** window, click the **Base Class** ellipses **[…]** to select another base class in the [Browse and Select a .NET Type Dialog Box (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
+|**名前**|アクティビティの名前。|
+|**基本クラス**|アクティビティの派生元の基本クラス。 既定の基底クラスは[Sequenceactivity](https://go.microsoft.com/fwlink?LinkID=65020)です。 **[プロパティ]** ウィンドウで、**基本クラス**の省略記号 **[...]** をクリックして、[ [.net 型の参照と選択] ダイアログボックス (レガシ)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)で別の基本クラスを選択します。|
 |**説明**|アクティビティに関するユーザー定義の説明。|
-|**Enabled**|Set to **True** by default to enable activity execution and validation. Set to **False** to disable activity execution and validation. For information about activity execution and validation, see [Developing Workflow Activities](https://go.microsoft.com/fwlink?LinkID=65024).|
+|**Enabled**|アクティビティの実行と検証を有効にするには、既定で**True**に設定します。 アクティビティの実行と検証を無効にするには、 **False**に設定します。 アクティビティの実行と検証の詳細については、「[ワークフローアクティビティの開発](https://go.microsoft.com/fwlink?LinkID=65024)」を参照してください。|
 
 ## <a name="adding-child-activities"></a>子アクティビティの追加
  子アクティビティを、ツールボックスから設計中のアクティビティまでドラッグすることができます。 その後、プロパティ ブラウザを使ってそれぞれの子アクティビティを構成できます。
 
-## <a name="see-also"></a>参照
- [Developing Workflow Activities](https://go.microsoft.com/fwlink?LinkID=65024) [Creating Custom Activities](https://go.microsoft.com/fwlink?LinkID=65021) [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md) [Custom Activities Samples](https://go.microsoft.com/fwlink?LinkID=65022) [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [Using the Legacy Workflow Designer](../workflow-designer/using-the-legacy-workflow-designer.md)
+## <a name="see-also"></a>関連項目
+ [ワークフローアクティビティの開発](https://go.microsoft.com/fwlink?LinkID=65024)[カスタムアクティビティの作成](https://go.microsoft.com/fwlink?LinkID=65021)[従来のワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md)[カスタムアクティビティのサンプル](https://go.microsoft.com/fwlink?LinkID=65022)方法:[従来のワークフローデザイナーを使用して](../workflow-designer/using-the-legacy-workflow-designer.md)[ワークフローアクティビティライブラリ (レガシ) を作成する](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)

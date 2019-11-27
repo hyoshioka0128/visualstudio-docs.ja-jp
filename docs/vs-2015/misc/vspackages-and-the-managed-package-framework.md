@@ -1,5 +1,5 @@
 ---
-title: VSPackages and the Managed Package Framework | Microsoft Docs
+title: Vspackage とマネージパッケージフレームワーク |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -19,25 +19,25 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74298235"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages およびマネージド パッケージ フレームワーク
-You can reduce development time by creating a VSPackage with the managed package framework (MPF) classes instead of by using COM interop classes.  
+COM 相互運用クラスを使用するのではなく、managed package framework (MPF) クラスを使用して VSPackage を作成することにより、開発時間を短縮できます。  
   
- There are two ways to create a managed VSPackage:  
+ マネージ VSPackage を作成するには、次の2つの方法があります。  
   
-- Use the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project template  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] パッケージプロジェクトテンプレートを使用する  
   
-     For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     詳細については、「[チュートリアル: Visual Studio パッケージテンプレートを使用してメニューコマンドを作成](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)する」を参照してください。  
   
-- Build your VSPackage without the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project template  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package プロジェクトテンプレートを使用せずに VSPackage をビルドする  
   
-     For example, you can copy a sample VSPackage and change the GUIDs and the names. 
+     たとえば、サンプル VSPackage をコピーして、Guid と名前を変更することができます。 
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [Managed Package Framework クラス](../misc/managed-package-framework-classes.md)  
- Describes and lists the MPF class namespaces and DLL files.  
+ MPF クラスの名前空間と DLL ファイルの説明と一覧を示します。  
   
-## <a name="related-sections"></a>関連項目  
- [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
- Explains how to create a managed VSPackage.  
+## <a name="related-sections"></a>関連セクション  
+ [チュートリアル: Visual Studio パッケージテンプレートを使用したメニューコマンドの作成](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ マネージ VSPackage を作成する方法について説明します。  
   
  [マネージド VSPackage](../misc/managed-vspackages.md)  
- Introduces aspects of VSPackages that apply to managed code.
+ マネージコードに適用される Vspackage の側面について説明します。

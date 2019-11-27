@@ -1,5 +1,5 @@
 ---
-title: InstallShield Limited Edition | Microsoft Docs
+title: InstallShield 制限付きエディション |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -26,7 +26,7 @@ InstallShield Limited Edition を使用し、セットアップ ファイルを�
   
 ### <a name="to-enable-installshield-limited-edition"></a>InstallShield Limited Edition を有効にするには  
   
-1. メニュー バーで **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで、 **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
 2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** ノードを選択します。  
   

@@ -29,7 +29,7 @@ ms.locfileid: "74300261"
 ## <a name="choosing-a-build-method"></a>ビルド方法の選択
  アプリケーションは、IDE の既定のビルド オプション、コマンド プロンプト、または Team Foundation ビルドを使用してビルドできます。 これらの各オプションでは基になるテクノロジとして MSBuild が使用されており、それぞれの方法には次の表に示すような利点があります。
 
-|ビルド方法|利点|詳細情報|
+|ビルド方法|メリット|詳細情報|
 |------------------|--------------|--------------------------|
 |IDE の使用|-   ビルドをより簡単に作成し、すぐに実行できます。<br />-   C++ および C# のプロジェクトについては、マルチプロセッサ ビルドを実行できます。<br />-   ビルド システムの一部をカスタマイズできます。|[Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |MSBuild コマンド ラインの実行|-   Visual Studio をインストールせずにプロジェクトをビルドできます。<br />-   すべての種類のプロジェクトについて、マルチ プロセッサ ビルドを実行できます。<br />-   ビルド システムのほとんどの部分をカスタマイズできます。|[MSBuild](../msbuild/msbuild.md)|
@@ -52,5 +52,5 @@ ms.locfileid: "74300261"
 
 - 並行ビルドを使用してビルド パフォーマンスを改善する。 詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」またはブログ投稿「[Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/)」 (C++ での並列ビルドの調整) を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [チュートリアル: アプリケーションの構築](../ide/walkthrough-building-an-application.md)[ビルド構成について](../ide/understanding-build-configurations.md)[ビルド プラットフォームについて](../ide/understanding-build-platforms.md) [(コンパイル)のWebサイトプロジェクトのビルド](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[方法: を作成し、プロジェクトの依存関係の削除](../ide/how-to-create-and-remove-project-dependencies.md)

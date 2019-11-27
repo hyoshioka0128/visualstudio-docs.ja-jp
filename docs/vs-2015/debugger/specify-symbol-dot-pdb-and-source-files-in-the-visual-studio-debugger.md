@@ -1,5 +1,5 @@
 ---
-title: Specify Symbol (.pdb) and Source Files in the Debugger | Microsoft Docs
+title: デバッガーでシンボル (.pdb) とソースファイルを指定します。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -41,9 +41,9 @@ ms.locfileid: "74300562"
 
  Visual Studio IDE でプロジェクトをデバッグするとき、デバッガーにはコードの .pdb とソース ファイルの既定の場所が通知されます。 プロジェクト ソース コードの外部コード (プロジェクトから呼び出す Windows やサード パーティのコードなど) をデバッグする場合、.pdb の場所 (必要に応じて外部コードのソース ファイル) を指定する必要があります。また、それらのファイルは実行可能ファイルのビルドに正確に対応付けられる必要があります。
 
- Visual Studio 2012 より前では、リモート デバイスでマネージド コードをデバッグしたとき、リモート コンピューターにシンボル ファイルを置く必要がありました。 現在のバージョンには該当しません。 すべてのシンボル ファイルはローカル コンピューター上に配置するか、 **[ツール]、[オプション]、[デバッグ]、[シンボル]** ページで指定した場所に配置する必要があります。
+ Visual Studio 2012 より前では、リモート デバイスでマネージド コードをデバッグしたとき、リモート コンピューターにシンボル ファイルを置く必要がありました。 このリリースでは、そのような作業が不要になりました。 すべてのシンボル ファイルはローカル コンピューター上に配置するか、 **[ツール]、[オプション]、[デバッグ]、[シンボル]** ページで指定した場所に配置する必要があります。
 
-## <a name="BKMK_Find_symbol___pdb__files"></a> Where the debugger searches for .pdb files
+## <a name="BKMK_Find_symbol___pdb__files"></a>デバッガーが .pdb ファイルを検索する場所
 
 1. DLL または実行可能ファイル内で指定されている場所。
 
@@ -58,14 +58,14 @@ ms.locfileid: "74300562"
 ### <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> シンボル ファイルを実行可能ファイルに正確に対応付ける必要がある理由
  デバッガーは、実行可能ファイルがビルドされたときに作成された .pdb ファイルと正確に一致する実行可能ファイルの .pdb ファイルのみ読み込みます (つまり .pdb ファイルはオリジナルまたはオリジナルのコピーであることが必要)。 コンパイラがコンパイル速度だけでなく、正確で効率的なコードを作成する主要なタスクに対しても最適化されるため、コード自体が変更されていない場合でも、実行可能ファイルの実際のレイアウトが変更されることがあります。 詳細については、「 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)」 (Visual Studio においてデバッガー シンボル ファイルがビルド時のバイナリ ファイルと正確に一致することが求められる理由) を参照してください。
 
-### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Specify symbol locations and loading behavior
+### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>シンボルの場所と読み込み動作を指定する
  VS IDE でプロジェクトをデバッグするとき、デバッガーは、プロジェクト ディレクトリに格納されているシンボル ファイルを自動的に読み込みます。 **[ツール]、[オプション]、[デバッグ]、[シンボル]** で、Microsoft、Windows、またはサード パーティのコンポーネント用に別の検索パスとシンボル サーバーを指定できます。デバッガーがシンボルを自動的に読み込む特定のモジュールを指定することもできます。 これらの設定はデバッグ中に手動でも変更できます。
 
 1. Visual Studio で **[ツール]、[オプション]、[デバッグ]、[シンボル] ページ** の順に選択し、ページを開きます。
 
-    ![Tools &#45; Options &#45; Debugging &#45; Symbols page](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
+    ![[ &#45;ツール&#45; ] &#45;オプション [シンボルのデバッグ] ページ](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
 
-2. Choose the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. 編集可能なテキストが **[シンボル ファイル (.pdb) の場所]** ボックスに表示されます。
+2. [フォルダー![ツール&#47;のオプション&#47; ]&#47;デバッグシンボルフォルダーアイコン](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon")アイコンアイコンをクリックします。 編集可能なテキストが **[シンボル ファイル (.pdb) の場所]** ボックスに表示されます。
 
 3. シンボル サーバーまたはシンボルの場所の URL またはディレクトリ パスを入力します。 ステートメント入力候補により、正しい形式を確認できます。
 
@@ -74,7 +74,7 @@ ms.locfileid: "74300562"
    > [!NOTE]
    > Windows フォルダーなどの保護されたフォルダー (C:\Windows フォルダーまたはそのいずれかのサブフォルダーなど) にシンボル キャッシュを配置しないでください。 読み取り/書き込みフォルダーを使用してください。
 
-   **Specify symbol loading behavior**
+   **シンボルの読み込み動作の指定**
 
    デバッグの開始時に **[シンボル ファイル (.pdb) の場所]** ボックスに指定された場所から自動的に読み込まれるファイルを指定できます。 プロジェクト ディレクトリ内のシンボル ファイルは常に読み込まれます。
 
@@ -82,15 +82,15 @@ ms.locfileid: "74300562"
 
 6. **[指定したモジュールのみ]** オプションを選択して **[モジュールの指定]** をクリックすると、シンボル ファイルが自動的に読み込まれるモジュールを指定できます。 その他のモジュールのシンボル ファイルは無視されます。
 
-   **Specify additional symbol options**
+   **追加のシンボルオプションを指定する**
 
    **[ツール]、[オプション]、[デバッグ]、[シンボル]** ページでは、次のオプションも設定できます。
 
-   **Warn if no symbols on launch (native only)**
+   **起動時にシンボルがない場合に警告する (ネイティブのみ)**
 
    オンにすると、プログラムをデバッグするときにそのプログラムのシンボル情報がない場合は、警告を示すダイアログ ボックスが表示されます。
 
-   **Load DLL exports**
+   **DLL エクスポートの読み込み**
 
    オンにすると、DLL エクスポート テーブルを読み込みます。 DLL エクスポート テーブルのシンボル情報は、対応するシンボルのない Windows メッセージ、Windows プロシージャ (WindowProc)、COM オブジェクト、マーシャリング、または DLL を操作する場合に役立ちます。 DLL エクスポート情報を読み取ると、オーバーヘッドがある程度発生します。 そのため、既定ではこの機能はオフになっています。
 
@@ -135,11 +135,11 @@ ms.locfileid: "74300562"
 
    これらのイベントのいずれかが発生すると、デバッガーによって **[シンボルが読み込まれていません]** ページが表示されて、このページから必要なシンボルを検索して読み込むことができます。
 
-   ![No Symbols Loaded page](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
+   ![シンボルが読み込まれていません](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
 
 - 検索パスを変更するには、選択されていないパスを選択するか、 **[新規作成]** を選択して新しいパスを入力します。 **[読み込み]** をクリックしてパスを再び検索し、見つかった場合はシンボル ファイルが読み込まれます。
 
-- Choose **Browse and find**_executable-name_ **...** to override any symbol options and retry the search paths. シンボル ファイルが見つかった場合は読み込まれるか、ファイル エクスプローラーが表示されて手動でシンボル ファイルを選択できます。
+- シンボルオプションを上書きして検索パスを再試行するには、[参照] をクリック**して**_実行可能ファイル名_ **...** を見つけます。 シンボル ファイルが見つかった場合は読み込まれるか、ファイル エクスプローラーが表示されて手動でシンボル ファイルを選択できます。
 
 - **[シンボルの設定の変更]** を選択すると、VS の [オプション] ダイアログ ボックスの **[オプション]**  /  **[シンボル]** ページが表示されます。
 
@@ -147,7 +147,7 @@ ms.locfileid: "74300562"
 
 - ソースまたはシンボル ファイルが見つからないときに逆アセンブルが常に表示されるようにするには、 **[[オプション] ダイアログ ボックス]** リンクをクリックし、 **[アドレス レベルのデバッグを有効にする]** と **[ソースがない場合は逆アセンブリの表示]** の両方をオンにします。
 
-   ![Options &#47; Debugging  &#47; General disassembly options](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
+   ![デバッグ&#47;の&#47;一般的な逆アセンブリオプションのデバッグオプション](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
 
   **ショートカット メニューからシンボル オプションを変更する**
 
@@ -175,7 +175,7 @@ ms.locfileid: "74300562"
 
 - project.pdb。このファイルには、.exe ファイルのあらゆるデバッグ情報が格納されます。 C/C++ の場合は、\debug サブディレクトリに配置されます。
 
-  OBJ ファイルが作成されるたびに、C/C++ コンパイラはデバッグ情報を VC*x*.pdb に挿入します。 挿入される情報には、型情報が含まれますが、関数定義などのシンボル情報は含まれません。 So even if every source file includes common header files such as \<windows.h>, the typedefs from those headers are stored only once, rather than being in every OBJ file.
+  OBJ ファイルが作成されるたびに、C/C++ コンパイラはデバッグ情報を VC*x*.pdb に挿入します。 挿入される情報には、型情報が含まれますが、関数定義などのシンボル情報は含まれません。 したがって、すべてのソースファイルに > \<のような共通のヘッダーファイルが含まれている場合でも、これらのヘッダーの typedef は、すべての OBJ ファイルに格納されるのではなく、1回だけ保存されます。
 
   リンカーは project.pdb を作成します。このファイルには、プロジェクトの EXE ファイルのデバッグ情報が格納されます。 project.pdb ファイルには、VC*x*.pdb に含まれる型情報だけでなく、関数プロトタイプをはじめとするあらゆるデバッグ情報が格納されます。 どちらの .pdb ファイルもインクリメンタル更新が可能です。 またリンカーも、作成する .exe ファイルや .dll ファイルに .pdb ファイルへのパスを埋め込みます。
 
@@ -214,7 +214,7 @@ ms.locfileid: "74300562"
 
 2. **[共通プロパティ]** ノードの下の **[デバッグ ソース ファイル]** をクリックします。
 
-3. Click the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. 編集可能なテキストが **[ソース コードを含んでいるディレクトリ]** ボックスの一覧に表示されます。
+3. フォルダー![ツール&#47;の [&#47;デバッグ&#47;シンボル] フォルダーアイコン](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon")アイコンアイコンをクリックします。 編集可能なテキストが **[ソース コードを含んでいるディレクトリ]** ボックスの一覧に表示されます。
 
 4. 検索するパスを追加します。
 
@@ -238,11 +238,11 @@ ms.locfileid: "74300562"
 
 4. **[ソース サーバー サポートを有効にする]** チェック ボックスをオンにします。
 
-     ![Enable source server options](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
+     ![ソースサーバーオプションを有効にする](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
 5. (省略可能) 必要な子オプションを選択します。
 
      **[部分信頼アセンブリのソース サーバーを許可する (マネージドのみ)]** と **[信頼されていないソース サーバー コマンドを常に確認なしで実行する]** のいずれを選択した場合も、前述のセキュリティ リスクが高くなる可能性があることに注意してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Visual Studio 2012 および 2013 における .NET のリモート シンボル ローディングの変更](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

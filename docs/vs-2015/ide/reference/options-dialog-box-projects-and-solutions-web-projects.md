@@ -18,7 +18,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297872"
 ---
-# <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
+# <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト]\([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 内での開発で Web プロジェクトによって使用される Web サーバーを設定します。 このダイアログ ボックスを表示するには、 **[ツール]** メニューの [オプション] をクリックします。 **[プロジェクトおよびソリューション]** を展開し、 **[Web プロジェクト]** をクリックします。
@@ -29,6 +29,6 @@ ms.locfileid: "74297872"
 > 使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**Web 設定**を考慮して記述されています。 設定を表示または変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="settings"></a>設定
- **Use the 64-bit version of IIS Express for web sites and projects** Select this option to use IIS Express instead of the Visual Studio Development Server. 詳細については、「[Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express)」 (IIS Express の紹介) と「[IIS Express の概要](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)」を参照してください。 既定では、このオプションは無効です。
+ **Web サイトおよびプロジェクトに64ビットバージョンの IIS Express を使用する**Visual Studio 開発サーバーではなく IIS Express を使用するには、このオプションを選択します。 詳細については、「[Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express)」 (IIS Express の紹介) と「[IIS Express の概要](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)」を参照してください。 このオプションは、既定の設定で無効になっています。
 
- **Warn before running web applications when there are errors in the error list** If this box is checked, you will be warned if you try to run your web application when it does not compile  without errors.
+ **[エラー一覧にエラーがある場合に web アプリケーションを実行する前に警告する]** このチェックボックスをオンにすると、web アプリケーションがエラーなしでコンパイルされない場合に実行しようとすると、警告が表示されます。

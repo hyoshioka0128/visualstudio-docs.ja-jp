@@ -23,9 +23,9 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
  **[GPU 使用率レポート]** ウィンドウを次に示します。  
   
- ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![CPU と GPU のタイムラインを使用した GPU 使用率レポート](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
-## <a name="requirements"></a>［要件］  
+## <a name="requirements"></a>要件  
  グラフィックス診断の要件以外の、GPU 使用率ツールを使用するための追加要件を次に示します。  
   
 - 必要なタイミング インストルメンテーションをサポートする GPU とドライバー。  
@@ -44,7 +44,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 2. [パフォーマンスと診断] ハブで、 **[GPU 使用率]** の横にあるチェック ボックスをオンにします。 必要に応じて、調査するその他のツールの横のチェック ボックスをオンにします。 複数の [パフォーマンスと診断] ツールを同時に実行して、アプリのパフォーマンスをさらに多面的に把握することもできます。  
   
-    ![Choose the diagnostic tools you want to use.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![使用する診断ツールを選択します。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > すべての [パフォーマンスと診断] ツールを同時に使用することはできません。  
@@ -63,15 +63,15 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 1. [診断セッション] ウィンドウの下部で **[コレクションの停止]** リンクを選ぶか、左上隅の **[停止]** をクリックします。  
   
-    ![Collect GPU and CPU timing information.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![GPU と CPU のタイミング情報を収集します。](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. レポートの上部で、調査対象の問題を示している範囲をいずれか 1 つのグラフから選択します。 選択できる範囲は最大 3 秒間までです。それより長い範囲は、先頭に向かって切り捨てられます。  
   
-    ![Post&#45;collection, select a range to view details](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![投稿&#45;の収集、詳細を表示する範囲の選択](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. レポートの下部で、 **[その範囲の GPU 使用率の詳細が表示されます]** というメッセージにある **[詳細の表示]** リンクをクリックして、選択した範囲のタイムラインの詳細を表示します。  
   
-    ![Post&#45;collection, with range selected](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![範囲&#45;が選択された投稿のコレクション](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    新しいタブ付きのドキュメントが開いて、レポートが表示されます。 GPU 使用率レポートは、グラフィックス イベントが CPU 上で始まった時点と、それが GPU に到達した時点と、それを GPU で実行するのに要した時間の長さを調べるために役立ちます。 この情報を利用して、コードのボトルネックと、並列処理を増やす機会を識別します。  
   
@@ -82,7 +82,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
  **[GPU 使用率レポート]** ウィンドウを次に示します。  
   
- ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![CPU と GPU のタイムラインを使用した GPU 使用率レポート](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  レポートの下部で 1 つのイベントを選択すると、該当するタイムラインの対応するイベントにマーカーが表示されます。通常、CPU スレッドの 1 つのイベントは API 呼び出しを表し、GPU タイムラインの 1 つにあるもう 1 つのイベントは、GPU がタスクを完了した時点を表します。 同様に、タイムラインでイベントのいずれかを選択すると、レポートの下部で対応するイベントが強調表示されます。レポートの上部でタイムラインをズームアウトすると、最も時間のかかるイベントのみが表示されます。 持続期間の短いイベントを表示するには、タイムラインをズームインします。Ctrl キーを押しながらポインティング デバイスのホイールを回すか、上のパネルの左下隅にある拡大/縮小コントロールを使用してください。 また、タイムライン パネルの内容をドラッグして、記録されたイベントに移動することもできます。  
   
@@ -100,7 +100,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
  GPU 使用率レポートの下部のイベント一覧には、各イベントの詳細が表示されます。  
   
-|Column|説明|  
+|列|説明|  
 |------------|-----------------|  
 |**イベント名**|グラフィックス イベントの名前。 イベントは、通常、CPU スレッドのタイムライン内の 1 つのイベントと、GPU のタイムライン上の 1 つのイベントに対応します。<br /><br /> GPU 使用率ツールでイベントの名前を特定できなかった場合は、イベント名が 'unattributed' になります。 詳細については、この表の下にある注意書きを参照してください。|  
 |**CPU 開始 (ナノ秒)**|Direct3D API を呼び出すことによって CPU 上でイベントが開始された時刻。 時間は、アプリケーションの開始時を基準にしたナノ秒単位で測定されます。|  
@@ -123,7 +123,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
 3. **[GPU プロファイリングの構成]** の **[全般]** プロパティ ページで、 **[アプリの起動時にプロファイリングを開始]** チェック ボックスをオフにして、プロファイリングを延期します。  
   
-     ![Configure when GPU Usage collection starts](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![GPU 使用率収集の開始時の構成](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > プロファイリングの延期は、Direct3D 12 アプリに対しては現在サポートされていません。  
@@ -141,7 +141,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
   
  NVIDIA SLI® および AMD Crossfire™ などのマルチ GPU 構成は、現時点ではサポートされていません。 NVIDIA® Optimus™ および AMD Enduro™ などのハイブリッド グラフィック設定はサポートされています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
   
 - [DirectX ツールを使用してゲームの重大なグラフィックスの問題を解決する (ビデオ)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   

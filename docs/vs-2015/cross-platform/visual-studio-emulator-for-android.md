@@ -24,7 +24,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
   
  Android プラットフォームごとに異なるデバイス プロファイル、画面の解像度、および Visual Studio Emulator for Android でサポートされるその他のハードウェア プロパティで、アプリをテストできます。  
   
- このトピックは、次のセクションで構成されています。  
+ このトピックの内容は次のとおりです。  
   
 - [インストールとアンインストール](#Installing)  
   
@@ -110,6 +110,6 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
   
 - Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

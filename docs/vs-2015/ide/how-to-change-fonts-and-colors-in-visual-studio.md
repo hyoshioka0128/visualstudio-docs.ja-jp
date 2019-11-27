@@ -65,5 +65,5 @@ Visual Studio の中にある IDE のフレームおよびツール ウィンド
 
 5. **[サイズ]** の一覧でテキスト サイズを選び、 **[OK]** を選びます。
 
-## <a name="see-also"></a>参照
- [Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+## <a name="see-also"></a>関連項目
+ [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)[方法: エディターでフォントおよび色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
