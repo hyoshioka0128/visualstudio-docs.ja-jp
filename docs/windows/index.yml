@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 905fd0b3f9ad37125ae8cccd5dab30f0517d16a1
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
+  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74119716"
+  ms.lasthandoff: 11/25/2019
+  ms.locfileid: "74474001"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -157,8 +157,8 @@ additionalContent:
     - title: 共同作業
       summary: 共同作業リアルタイム環境でコードを共有、編集、およびデバッグします。
       url: /visualstudio/liveshare/
-    - title: コンテナーでの開発
-      summary: コンテナーを使用してモジュラー コンポーネントを分離し、スケーラビリティを向上させます。
+    - title: Docker コンテナーを使用した開発
+      summary: Docker コンテナーを使用してモジュラー コンポーネントを分離し、スケーラビリティを向上させます。
       url: ../containers/index.yml
   - title: 作業負荷
     items:
