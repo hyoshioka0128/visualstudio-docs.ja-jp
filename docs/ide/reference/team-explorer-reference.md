@@ -5,18 +5,18 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945083"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538568"
 ---
 # <a name="team-explorer-reference"></a>チーム エクスプローラーのリファレンス
 
 この記事では、**チーム エクスプローラー**のさまざまな機能に関する Azure DevOps 記事のリンクを紹介します。
 
-**チーム エクスプローラー** ツール ウィンドウを使用し、プロジェクトの開発に必要なプログラミング作業を他のチーム メンバーとの間で調整し、自分、チーム、またはプロジェクトに割り当てられている作業を管理します。 **チーム エクスプローラー**は Git と GitHub のリポジトリ、Team Foundation バージョン管理 (TFVC) のリポジトリ、[Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) またはオンプレミス [Azure DevOps Server](/tfs/index) (以前の TFS) でホストされているプロジェクトに Visual Studio を接続します。 ソース コード、作業項目、およびビルドを管理できます。
+**チーム エクスプローラー** ツール ウィンドウを使用し、プロジェクトの開発に必要なプログラミング作業を他のチーム メンバーとの間で調整し、自分、チーム、またはプロジェクトに割り当てられている作業を管理します。 **チーム エクスプローラー**は Git と GitHub のリポジトリ、Team Foundation バージョン管理 (TFVC) のリポジトリ、[Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) またはオンプレミス [Azure DevOps Server](/azure/devops/index-all) (以前の TFS) でホストされているプロジェクトに Visual Studio を接続します。 ソース コード、作業項目、およびビルドを管理できます。
 
 ## <a name="home-page"></a>ホーム ページ
 
