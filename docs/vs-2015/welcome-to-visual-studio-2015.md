@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297573"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537960"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 へようこそ
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 >
 > [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) のリリース ノートについては、こちらをクリックしてください。
 
- [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) を無料でダウンロードし、コーディングをすぐに開始してください。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 ([Visual Studio の他のエディション](https://visualstudio.microsoft.com/vs/compare/)にはさらに多くの機能があります。)
+ [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) を無料でダウンロードし、コーディングをすぐに開始してください。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 ( [Visual Studio の他のエディション](https://visualstudio.microsoft.com/vs/compare/)にはさらに多くの機能があります。)
 
  すぐに作業に取りかかり、新しいプロジェクトを作成し、コードの記述を開始してください。 作成するアプリの種類を選択します。 あるいは、Visual Studio IDE の [ツアーを見て、](./ide/visual-studio-ide.md) ツールの理解を深めてください。
 
@@ -67,9 +67,9 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 ## <a name="connect-your-apps-to-services"></a>アプリをサービスに接続する
  追加の設定なしで以下のサービスに接続できます (各サービスのアカウントを持っていることを前提とします)。
 
-- [Azure Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure モバイル サービス](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
+- [Azure ストレージ](https://azure.microsoft.com/documentation/services/storage/)
 
 - クラウドに格納されているデータに接続するために、Office 365 REST API を独自のアプリに統合します。 詳細については、 [これらのサンプル](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)を参照してください。
 
@@ -85,7 +85,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
  [アプリをローカルでビルドし、](./ide/compiling-and-building-in-visual-studio.md) それが正常に機能することを確認します。 [デバッグ ツールを使用して](./debugger/debugging-in-visual-studio.md) 、アプリの問題を修正します。 あるいは、共有ビルド サーバーまたはクラウドにプロジェクトをビルドすることもできます。 チームの開発者がバージョン管理にチェックインしたコードをビルドするよう、ビルド プロセスを自動化します。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。
 
 ### <a name="test-your-app"></a>アプリのテスト
- [単体テストを作成し](./test/unit-test-your-code.md) 、アプリの品質を向上させます。 このテストはチェックインするたびに、ビルドの一部として実行できます。
+ [単体テストを作成し](./test/unit-test-your-code.md)、アプリの品質を向上させます。 このテストはチェックインするたびに、ビルドの一部として実行できます。
 
  アプリの手動テストと自動化されたテストを計画、作成、実行します。 テスト計画、スイート、テスト ケース、テスト結果は、Visual Studio Team Services でクラウドに、または Team Foundation Server でオンプレミスのサーバーに格納されます。 [アプリケーションのテスト](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)について学びます。
 
@@ -96,7 +96,7 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015 の新機能 ](./what-s-new-in-visual-studio-2015.md)|[Visual C# の新機能](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 の新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM の新機能](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Visual Studio 2015 の新機能 ](./what-s-new-in-visual-studio-2015.md)|[Visual C# の新機能](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 の新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM の新機能](/azure/devops/server/whats-new)|
 |[C++ の新機能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic の新機能](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript の新機能](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

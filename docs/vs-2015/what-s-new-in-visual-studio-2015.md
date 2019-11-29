@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297565"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538981"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
 このページでは、Visual Studio 2013 RTM 以降新しくなったいくつかの重要な機能に焦点を当てています。これには Visual Studio 2013 更新プログラムのいずれかで最初に導入された機能が含まれます。 Visual Studio 2015 の新機能の完全な一覧については、 [リリース ノート](https://www.visualstudio.com/news/vs2015-vs)を参照してください。
 
-Visual Studio ALM の多くの機能強化と新機能の詳細については、「 [TFS 2015 の新](/tfs/server/whats-new?view=vsts#tfs-2015-rtm)機能」を参照してください。
+Visual Studio ALM の多くの機能強化と新機能の詳細については、「 [TFS 2015 の新](/azure/devops/server/whats-new#tfs-2015)機能」を参照してください。
 
 ## <a name="a-new-setup-experience"></a>新しいセットアップ エクスペリエンス
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -107,7 +107,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
 1. Azure モバイル サービス
 
-2. Azure Storage
+2. Azure ストレージ
 
 3. Office 365 (メール、連絡先、カレンダー、ファイル、ユーザーおよびグループ)
 
@@ -177,7 +177,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
  ![Visual Studio のカスタムレイアウトメニュー項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>通知ハブ
- スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳しくは、「[Visual Studio の通知](./ide/visual-studio-notifications.md)」をご覧ください。
+ スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳細については、「 [Visual Studio の通知](./ide/visual-studio-notifications.md)」を参照してください。
 
 ### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: コードに何が起こったかを検索します (Enterprise Edition と Professional Edition のみ)。
  エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 Visual Studio Team Services (VSTS) または Team Foundation Server (TFS) に格納されているコードについて、作業項目、バグ、コード レビューなどの変更やその他の履歴を確認できます。
@@ -257,14 +257,14 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 ### <a name="send-a-frown"></a>問題点、改善点の報告
  製品のどこをどう改善したらよいかについてご意見をお寄せいただくなら、今後の作業においてお客様が最も気にかけておられる点を優先的に取り上げることができます。 何か気になる点がありましたら、IDE の中から直接に **[問題点、改善点の報告]** 機能を使用してご報告ください。 そのプロセスも極めてシンプルなものにしてあります。
 
- タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳しくは、「[ご意見](./ide/talk-to-us.md)」をご覧ください。
+ タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳細については、「 [Talk to Us](./ide/talk-to-us.md)」を参照してください。
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>クラッシュ、ハング、パフォーマンスの問題についての報告
  気になる点のちょっとしたメモでは済ませられない問題が発生するかもしれません。 ハング、クラッシュ、あるいはパフォーマンスに関する問題が発生した場合は、問題点、改善点の報告をした後に表示されるダイアログを使用することによって、簡単な操作でその再現手順、クラッシュ ダンプ、トレース ファイルをお送りいただくことが可能です。
 
  まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、「 [Visual Studio の気に入った機能の報告](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio における Xamarin を使用したネイティブ UI を備えたアプリの作成](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
