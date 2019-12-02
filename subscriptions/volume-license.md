@@ -6,14 +6,14 @@ manager: lank
 ms.date: 08/22/2019
 ms.topic: conceptual
 description: ボリューム ライセンス契約の管理者が、Visual Studio のサブスクリプションの管理ポータルにアクセスする方法について説明します
-ms.openlocfilehash: 35a2186346bd50d883e5dddd0c353393d1f8b85e
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: f160d9278453ea87ae8f793692930ff2a95c4537
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000952"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491684"
 ---
-# <a name="accessing-the-administation-portal-as-an-admin-on-a-volume-license-agreement"></a>ボリューム ライセンス契約で管理者として管理ポータルにアクセスする
+# <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>ボリューム ライセンス契約で管理者として管理ポータルにアクセスする
 
 お客様が組織の契約に関する主要または通知連絡先の場合、ボリューム ライセンス契約の設定時にポータルへのアクセスが自動的にプロビジョニングされます。 ポータルへのサインインを求めるシステム生成の招待メールを受信します。 このメールには、ポータルへのサインインに使用する電子メールアドレスが記載されています。 
 

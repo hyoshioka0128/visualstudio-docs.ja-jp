@@ -1,21 +1,21 @@
 ---
 title: .NET 開発の生産性を向上させる
 description: より良い .NET コードをより早く書き込むのに役立つ、移動、コード分析、単体テスト、およびその他の機能の概要。
-author: kuhlenh
-ms.author: jillfra
+author: mikadumont
+ms.author: tglee
 manager: jillfra
-ms.date: 04/25/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652588"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491645"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 開発者のための Visual Studio 生産性ガイド
 
@@ -47,6 +47,7 @@ Visual Studio によって開発者の生産性がどのように向上するか
 | **F12** (**Ctrl**+**クリック**でも可能) | [定義へ移動] | シンボルが定義されている場所に移動します |
 | **Ctrl** + **F12** | 実装に移動 | 基本データ型またはメンバーから、さまざまな実装に移動します |
 | **Shift** + **F12** | [すべての参照の検索] | すべてのシンボルまたはリテラルの参照を表示します |
+| **Alt** + **ホーム** | ベースに移動 | 継承チェーンの上に移動します |
 | **Ctrl**+ **.** (C# Profile では **Alt** + **Enter** でも可能) | クイック アクションとリファクタリング | そのカーソル位置またはコード選択で、どのコード修正、コード生成アクション、リファクタリング、その他クイック アクションが使用できるかを表示します |
 | **Ctrl** + **D** | 行の複製 | カーソルのあるコード行を複製します (**Visual Studio 2017 バージョン 15.6** 以降で使用可能) |
 | **Shift** + **Alt** + **+** / **-** | 選択範囲の拡大/縮小 | エディターの現在の選択範囲を拡大または縮小します (**Visual Studio 2017 バージョン 15.5** 以降で使用できます) |
@@ -95,6 +96,10 @@ EditorConfig ファイルを使って、コーディング規則を体系化し�
 ::: moniker-end
 
 - Visual Studio 用 IntelliCode の[コード推論機能](/visualstudio/intellicode/code-style-inference)では、既存のコードからコードのスタイルが推論されます。 その後、既に定義されているコード スタイルの設定で、空ではない EditorConfig ファイルが作成されます。
+
+- エディターを使用して、コード スタイル ルールの重大度レベルを直接構成します。 .editorconfig ファイルが現在ない場合は、自動的に生成されます。 エラー、警告、または提案にカーソルを置き、**Ctrl**+ **.** キーを押します [クイック アクションとリファクタリング] メニューが開きます。 **[Configure or Suppress issues]\(問題の構成または抑制\)** を選択します。 その後、ルールを選択し、そのルールに対して構成する重要度レベルを選びます。 これにより、既存の EditorConfig がルールの新しい重要度で更新されます。
+
+   ![エディターで直接コード スタイル ルールの重大度レベルを構成する](../ide/media/configure-severity-level.png)
 
 [.NET コーディング規則のオプション](editorconfig-code-style-settings-reference.md)に関するドキュメントをご覧ください。完全な EditorConfig ファイルの例も含まれます。
 
