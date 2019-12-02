@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816566"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491676"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -73,7 +73,7 @@ MPN 経由で提供される Visual Studio サブスクリプションでは、�
 
 - [MPN プログラム管理者ガイド](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - Visual Studio サブスクリプションを MPN 従業員に割り当てる方法に関する手順が含まれます。
 - [Visual Studio サブスクリプションを MPN 従業員に割り当てる](manage-mpn-subscriptions.md)
-- [使用条件](http://www.microsoft.com/useterms/) - MPN 経由で提供される Visual Studio サブスクリプションは、Visual Studio サブスクリプションの再販禁止 (NFR) EULA の対象です。
+- [使用条件](https://www.microsoft.com/useterms/) - MPN 経由で提供される Visual Studio サブスクリプションは、Visual Studio サブスクリプションの再販禁止 (NFR) EULA の対象です。
 
 ## <a name="next-steps"></a>次の手順
 

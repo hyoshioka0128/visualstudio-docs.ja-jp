@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: ユーザーの割り当てを追跡して注文を処理する管理者の責任について説明します。
-ms.openlocfilehash: ab2a19fc94be27e8eaf90290b50820d58e919297
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420533"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491606"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>ユーザーの割り当てを追跡し、注文を処理する
 Visual Studio サブスクリプションの管理者は、Visual Studio の使用状況を追跡し、ボリューム ライセンス契約またはマイクロソフト製品/サービス契約に記載されているスケジュールに従って、使用率の増加に応じて注文を処理する必要があります。 新しい Visual Studio サブスクリプション管理ポータルは、使用可能なライセンスと使用済みのライセンスを示す便利なトラッカーにより、これを簡略化します。

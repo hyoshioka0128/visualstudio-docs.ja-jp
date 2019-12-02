@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 大規模なチームおよび外部請負業者に対するサブスクリプションを管理する管理者の責任について説明します。
-ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493345"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491692"
 ---
 # <a name="large-teams-and-external-contractors"></a>大規模なチームおよび外部請負業者
 Visual Studio サブスクリプションの管理者は責任を持って、Visual Studio でライセンス付与されたソフトウェアと対話する各ユーザーが、自身の Visual Studio サブスクリプションで適切にライセンス付与されていることを確認します。

@@ -6,14 +6,14 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
-ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: eb0720718f8ed5ccd0033456f887f638c0f3e395
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293520"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491577"
 ---
-# <a name="get-assistance-from-your-subscriptions-adminstrator"></a>サブスクリプション管理者のサポートを受ける
+# <a name="get-assistance-from-your-subscriptions-administrator"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。
 
 多くの組織は大規模かつ複雑であるため、管理者が誰なのか知らず、どこでサポートを得たらよいのかは簡単にはわからないことがあります。  Microsoft は、管理者に連絡するための新しい機能をサブスクライバー ポータルに追加しました。   

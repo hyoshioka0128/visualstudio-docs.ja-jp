@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: eb5a557d19aafdd36ccf175ec4fc37e482091f80
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5ebdc3cb2448815ee5193020808c51630c5f1c17
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415617"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491521"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
 管理者は組織のサブスクリプションを管理できます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。
