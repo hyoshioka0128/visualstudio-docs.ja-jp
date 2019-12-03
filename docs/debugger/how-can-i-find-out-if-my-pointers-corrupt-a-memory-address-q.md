@@ -21,22 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8313bc8e0419e281dceefbafd6dcdcc2f368580f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 516b04bb625ad2546c4c8f3d3e7d7d4ba9419094
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734252"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74705840"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>ポインターがメモリ アドレスを破壊しているかどうか見つけるには
 ## <a name="problem-description"></a>問題の説明
  ポインターの 1 つがアドレス 0x00408000 のメモリを破壊してしまったようです。 どうなっているのか調べる方法はありますか。
 
-## <a name="solution"></a>解決策:
+## <a name="solution"></a>ソリューション
 
 #### <a name="check-for-heap-corruption"></a>ヒープ破損のチェック
 
-- メモリの破損は、その多くがヒープの破損に起因します。 グローバル フラグ ユーティリティ (gflags.exe) または pageheap.exe を使用してください。 「 [@No__t_1; en-us; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470)」を参照してください。
+- メモリの破損は、その多くがヒープの破損に起因します。 グローバル フラグ ユーティリティ (gflags.exe) または pageheap.exe を使用してください。 [https://docs.microsoft.com/windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap) をご覧ください。
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>メモリ アドレスの変更箇所を見つけるには
 
@@ -44,6 +44,6 @@ ms.locfileid: "72734252"
 
 2. ブレークポイントにヒットしたら、 **[メモリ]** ウィンドウを使用して、0x00408000 から始まるメモリの内容を表示します。 詳細については、「[メモリウィンドウ](../debugger/memory-windows.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
