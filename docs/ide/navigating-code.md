@@ -1,6 +1,6 @@
 ---
 title: コード ナビゲーション コマンド
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667007"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316467"
 ---
 # <a name="navigate-code"></a>コード間の移動
 
@@ -124,6 +124,15 @@ Visual Studio 2017 バージョン 15.8 以降では、次の **[移動]** ナ�
 ------------ | ---
 **キーボード** | 型名内のどこかにテキスト カーソルを置き、**Ctrl** + **F12** キーを押します。
 **マウス** | 型名を右クリックし、 **[実装に移動]** を選びます
+
+## <a name="go-to-base"></a>ベースに移動
+
+[ベースに移動] を使用すると、選択した要素の継承チェーンを上に移動できます。 複数の結果がある場合は **[ベースに移動]** ウィンドウに一覧が表示されます。
+
+入力 | 関数
+------------ | ---
+**キーボード** | 型名内のどこかにテキスト カーソルを置き、**Alt**+**Home** キーを押します
+**マウス** | 型名を右クリックし、 **[ベースに移動]** を選択します
 
 ## <a name="call-hierarchy"></a>呼び出し階層
 
