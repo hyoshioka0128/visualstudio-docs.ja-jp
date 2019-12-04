@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493360"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706971"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -43,7 +43,7 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 ## <a name="renewing-my-subscriptions"></a>サブスクリプションを更新する
 
 **標準サブスクリプション**
-- Microsoft ストア: [Microsoft ストア](http://www.microsoft.com/store)からサブスクリプションを購入した場合は、更新も Microsoft ストアでできます。
+- Microsoft ストア: [Microsoft ストア](https://www.microsoft.com/store)からサブスクリプションを購入した場合は、更新も Microsoft ストアでできます。
 - ボリューム ライセンス: 会社がボリューム ライセンスでサブスクリプションを購入した場合は、管理者が再販業者にサブスクリプションの更新を依頼する必要があります。
 
 **クラウド サブスクリプション:** クラウド サブスクリプションを更新する必要はありません。 サブスクリプションの支払いが行われている限り、アクティブな状態が保たれます。

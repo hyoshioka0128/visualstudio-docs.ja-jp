@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974018"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779039"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>方法:Web サイトのパフォーマンス データを収集する
 
@@ -45,7 +46,7 @@ ms.locfileid: "62974018"
 
 1. Visual Studio で [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web プロジェクトを開きます。
 
-2. **[分析]** メニューで **[パフォーマンス プロファイラー]** を選択し、**[パフォーマンス エクスプローラー]** を選択して、**[開始]** を選択します。
+2. **[分析]** メニューで **[パフォーマンス プロファイラー]** を選択し、 **[パフォーマンス エクスプローラー]** を選択して、 **[開始]** を選択します。
 
 3. ウィザードの最初のページで、プロファイル方法を選択し、 **[次へ]** をクリックします。 プロファイリング方法の詳細については、「[パフォーマンス収集方法について](../profiling/understanding-performance-collection-methods.md)」を参照してください。 コンカレンシー ビジュアライザーのプロファイル方法は、Web アプリケーションでは使用できません。
 
@@ -69,7 +70,7 @@ ms.locfileid: "62974018"
 
 1. Visual Studio を開きます。
 
-2. **[分析]** メニューで **[パフォーマンス プロファイラー]** を選択し、**[パフォーマンス エクスプローラー]** を選択して、**[開始]** を選択します。
+2. **[分析]** メニューで **[パフォーマンス プロファイラー]** を選択し、 **[パフォーマンス エクスプローラー]** を選択して、 **[開始]** を選択します。
 
 3. ウィザードの最初のページで、プロファイル方法を選択し、 **[次へ]** をクリックします。 詳細については、「[パフォーマンス収集方法について](../profiling/understanding-performance-collection-methods.md)」を参照してください。
 
@@ -77,7 +78,7 @@ ms.locfileid: "62974018"
 
 5. ウィザードの 3 番目のページの **[Web アプリケーションを実行する URL またはパス]** ボックスで、アプリケーションのホーム ページの URL を入力し、 **[次へ]** をクリックします。
 
-   - サーバー (IIS) ベースの Web サイトの場合は、**<`http://localhost/MySite/default.aspx`>** などの URL を入力します。 これにより、ローカル コンピューターの MySite のアプリケーション ルートで [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションがプロファイリングされ、そのサイトの default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。
+   - サーバー (IIS) ベースの Web サイトの場合は、 **<`http://localhost/MySite/default.aspx`>** などの URL を入力します。 これにより、ローカル コンピューターの MySite のアプリケーション ルートで [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションがプロファイリングされ、そのサイトの default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。
 
    - ファイル ベースの Web サイトの場合は、file///**c:\WebSites\MySite\default.aspx**のようなパスを入力します。 これにより、c:\webSites\MySite に置かれている [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションがプロファイリングされ、`http://localhost:nnnn/MySite/default.aspx` ページが Internet Explorer で起動されて、セッションが開始されます。
 
@@ -89,7 +90,7 @@ ms.locfileid: "62974018"
 
     - 階層の相互作用を収集するには、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。
 
-    - Web ページで実行されている JavaScript からデータを収集するには、**[JavaScript のプロファイル]** チェック ボックスをオンにします。
+    - Web ページで実行されている JavaScript からデータを収集するには、 **[JavaScript のプロファイル]** チェック ボックスをオンにします。
 
 7. **[次へ]** をクリックします。
 

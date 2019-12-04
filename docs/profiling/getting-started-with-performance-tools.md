@@ -9,14 +9,15 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969668"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779208"
 ---
 # <a name="getting-started-with-performance-tools"></a>パフォーマンス ツールの概要
 
@@ -26,9 +27,9 @@ Visual Studio では、さまざまな方法でコード パフォーマンス �
 
 - パフォーマンス レポートには、アプリケーションの構造、ソース コードの行、プロセスがさまざまなレベルで表示されます。 パフォーマンス レポートには、特定の関数を呼び出した関数と呼び出された関数からアプリ全体のコール ツリーまで、アプリ実行データが表示されます。
 
-プロジェクト、アプリ、ASP.NET Web サイトをすばやくプロファイルするには、**[デバッグ]**、**[パフォーマンス プロファイラー]** の順に選択し、**[パフォーマンス ウィザード]** を選択します。 詳細な手順については、[パフォーマンス プロファイリングの初心者向けガイド](../profiling/beginners-guide-to-cpu-sampling.md)と「[方法:Web サイトのパフォーマンス データを収集する](../profiling/how-to-collect-performance-data-for-a-web-site.md)」を参照してください。
+プロジェクト、アプリ、ASP.NET Web サイトをすばやくプロファイルするには、 **[デバッグ]** 、 **[パフォーマンス プロファイラー]** の順に選択し、 **[パフォーマンス ウィザード]** を選択します。 詳細な手順については、[パフォーマンス プロファイリングの初心者向けガイド](../profiling/beginners-guide-to-cpu-sampling.md)と「[方法:Web サイトのパフォーマンス データを収集する](../profiling/how-to-collect-performance-data-for-a-web-site.md)」を参照してください。
 
-パフォーマンス プロファイル セッションを手動で指定し、構成するには、**[デバッグ]**、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順に選択します。 **[パフォーマンス エクスプローラー]** の **[ターゲット]** フォルダーと **[プロパティ]** ページを使用してセッションを構成します。 手順については、「[方法:パフォーマンス セッションを手動で作成する](../profiling/how-to-manually-create-performance-sessions.md)」を参照してください。
+パフォーマンス プロファイル セッションを手動で指定し、構成するには、 **[デバッグ]** 、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順に選択します。 **[パフォーマンス エクスプローラー]** の **[ターゲット]** フォルダーと **[プロパティ]** ページを使用してセッションを構成します。 手順については、「[方法:パフォーマンス セッションを手動で作成する](../profiling/how-to-manually-create-performance-sessions.md)」を参照してください。
 
 **関連項目:**
 
