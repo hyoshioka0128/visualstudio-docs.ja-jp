@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539141"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778701"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>方法: 追加のインストルメンテーション オプションを指定する
 
@@ -29,7 +30,7 @@ Visual Studio IDE またはコマンド ライン ツールを使用して、バ
 
 ## <a name="to-specify-additional-instrumentation-option"></a>追加のインストルメンテーション オプションを指定するには
 
-1. **パフォーマンス エクスプローラー**で、**パフォーマンス セッション**を選択して右クリックし、**[プロパティ]** を選択します。
+1. **パフォーマンス エクスプローラー**で、**パフォーマンス セッション**を選択して右クリックし、 **[プロパティ]** を選択します。
 
 2. **[プロパティ ページ]** で **[詳細]** プロパティをクリックします。
 

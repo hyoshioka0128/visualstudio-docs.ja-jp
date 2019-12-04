@@ -15,14 +15,15 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 181bcf665ce905bff20f98be19d4a789cfe530c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431565"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779169"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>方法: 実行中のプロセスに対するパフォーマンス ツールのアタッチとデタッチ
 実行中のプロセスに対してプロファイラーのアタッチまたはデタッチを行うことで、パフォーマンス データのサンプリングや収集を容易にすることができます。 この方法は、アプリケーションの読み込み時間に関するデータの収集を行わない場合や、プロセスが特定の状態に達した後にそのパフォーマンスを監視する場合に、プロセスのプロファイリングを行うために使用します。
@@ -42,7 +43,7 @@ ms.locfileid: "63431565"
 
 ### <a name="to-attach-to-a-running-process"></a>実行中のプロセスにアタッチするには
 
-1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[アタッチ]** をクリックします。
+1. **[デバッグ]** メニューで、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順にポイントし、 **[アタッチ]** をクリックします。
 
      **[プロファイラーをプロセスにアタッチします]** ダイアログ ボックスが表示されます。
 
@@ -52,7 +53,7 @@ ms.locfileid: "63431565"
 
 ### <a name="to-detach-from-a-running-process"></a>実行中のプロセスからデタッチするには
 
-1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[デタッチ]** をクリックします。
+1. **[デバッグ]** メニューで、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順にポイントし、 **[デタッチ]** をクリックします。
 
      **[プロファイラーをプロセスにアタッチします]** ダイアログ ボックスが表示されます。
 

@@ -6,14 +6,15 @@ ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e93cc526ad61916e2a8663caa9652842ce136c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960195"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779845"
 ---
 # <a name="wincounter"></a>WinCounter
 **WinCounter** オプションでは、プロファイルの実行中に一定間隔で収集する Windows またはアプリケーションのパフォーマンス カウンターを指定します。 Windows とアプリケーションのパフォーマンス カウンターは、プロファイル データ ファイルにマークとして一覧表示されます。 収集するパフォーマンス カウンターは、別個のオプションで複数指定できます。
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>必須オプション
  **WinCounter** オプションと共に使用できるオプションは **Start** オプションのみです。
 
- **Start:**`Method` **Start** オプションは、指定したプロファイル方法にプロファイラーを初期化します。
+ **Start:** `Method` **Start** オプションは、指定したプロファイル方法にプロファイラーを初期化します。
 
 ## <a name="exclusive-options"></a>排他的なオプション
  **AutoMark** オプションと共に使用できるオプションは **WinCounter** オプションのみです。

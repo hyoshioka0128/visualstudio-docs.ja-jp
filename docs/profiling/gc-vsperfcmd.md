@@ -6,14 +6,15 @@ ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b2e269ec292aaf37b8d0c707fa27ff8268a1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969709"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776980"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 **GC** オプションは、.NET Framework メモリ割り当てとオブジェクト有効期間データを収集できます。 **GC** オプションはサンプリング プロファイリング方法でのみ、かつ、**Launch** オプションとの併用でのみ利用できます。
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>必須オプション
  **GC** オプションは、**Launch** オプションと一緒に指定する場合にのみ使用できます。
 
- **Launch:**`AppName` 指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。
+ **Launch:** `AppName` 指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。
 
 ## <a name="example"></a>例
  次の例では、アプリケーションが起動し、.NET Framework メモリ割り当てデータが収集されます。

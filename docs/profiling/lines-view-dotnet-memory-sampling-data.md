@@ -8,14 +8,15 @@ ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000072"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774081"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>行ビュー - .NET メモリ サンプリング データ
 サンプリング メソッドを使用する .NET メモリの割り当てプロファイル データ用の行ビューには、プロファイリングの実行中にメモリを割り当てたステートメントが一覧表示されます。 列には、割り当てのサイズと数も含まれています。
@@ -54,7 +55,7 @@ ms.locfileid: "63000072"
 |**ソース終了行**|割り当てが行われたソース ファイル内の終了行番号です。|
 |**ソース開始文字番号**|割り当てが行われたソース ファイル行内の開始文字のオフセットです。|
 |**ソース終了文字番号**|割り当てが行われたソース ファイル行内の終了文字のオフセットです。|
-|**ソース/行番号**|`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]** という構文を持つ、プロファイラーによって生成された行の識別子です。|
+|**ソース/行番号**|`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]** という構文を持つ、プロファイラーによって生成された行の識別子です。|
 |**割り当て数 (関数のみ)**|この行で作成されたオブジェクトの合計数。|
 |**割り当て % (関数のみ)**|この行で割り当てられた、プロファイリング実行で作成されたすべてのオブジェクトの割合。|
 |**割り当てバイト数 (関数のみ)**|この行で割り当てられた、プロファイリング実行で割り当てられたすべてのメモリ バイト数の割合。|

@@ -9,14 +9,15 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798439"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771531"
 ---
 # <a name="resource-contention-data-views"></a>リソース競合データのビュー
 このセクションでは、スレッド競合プロファイル データが格納されるプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。
@@ -66,7 +67,7 @@ ms.locfileid: "62798439"
 
  プロセスとスレッドごとにリソース競合をリストします。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [関数の詳細ビュー](../profiling/function-details-view.md)
 
  選択した関数と、選択した関数を呼び出した関数および選択した関数によって呼び出された関数の関係がグラフィカルな図で表示されます。

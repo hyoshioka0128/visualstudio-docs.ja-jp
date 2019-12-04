@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199874"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706880"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
@@ -50,7 +50,7 @@ ms.locfileid: "74199874"
    > [!div class="mx-imgBorder"]
    > ![DataCamp: 開始](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-任意のポイントで停止し、次のセッションでトレーニングを再開できます。  [http://www.datacamp.com](http://www.datacamp.com) にアクセスしてサインインします。  ダッシュ ボードが表示され、一時停止した箇所からトレーニングを再開できます。 **[Continue Track]\(トラックを続行\)** をクリックします。
+任意のポイントで停止し、次のセッションでトレーニングを再開できます。  [https://www.datacamp.com](https://www.datacamp.com) にアクセスしてサインインします。  ダッシュ ボードが表示され、一時停止した箇所からトレーニングを再開できます。 **[Continue Track]\(トラックを続行\)** をクリックします。
 
 > [!div class="mx-imgBorder"]
 > ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png)

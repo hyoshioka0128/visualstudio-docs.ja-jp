@@ -9,14 +9,15 @@ ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622a088506fe913c834e7de8807dc167f6ab0fc9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431985"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772163"
 ---
 # <a name="profiler-sampling-method-data-views"></a>プロファイラー サンプリング メソッドのデータ ビュー
 ここでは、サンプリング メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。
@@ -53,7 +54,7 @@ ms.locfileid: "63431985"
 
  サンプルの収集時に実行されたソース コード行が一覧表示されます。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [プロセス ビュー](../profiling/process-view.md)
 
  プロセスおよびスレッドの開始時刻と終了時刻が一覧表示されます。

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインするときに発生する可能性のある問題について説明します
-ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377803"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706853"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio サブスクリプションへのサインインに関する問題
 Visual Studio サブスクリプションを使用するには、最初にサインインする必要があります。  サブスクリプションによっては、Microsoft アカウント (MSA) または Azure Active Directory (AAD) ID を使用してセットアップされている場合があります。  この記事では、サブスクリプションにサインインするときに発生する可能性がある問題について説明します。
@@ -39,7 +39,7 @@ Visual Studio サブスクリプションを使用するには、最初にサイ
    > ![職場/学校アカウントがサポートされている](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>既存のアカウントへの影響
-ここで説明したサインアップのブロックでは、新しいアカウントの作成だけが禁止されます。 職場/学校のメール アドレスで既に Microsoft アカウントを持っているユーザーには影響ありません。 既にそのような状況になっている場合、個人用 Microsoft アカウントの名前を簡単に変更できるようになっています。 簡単なステップ バイ ステップ ガイダンスが、こちらの[サポート記事](http://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)で提供されています。 個人用 Microsoft アカウントの名前の変更とはユーザー名を変更することを意味し、職場のメールや、Office 365 などのビジネス サービスへのサインイン方法には影響ありません。 また、個人情報にも影響しません。サインイン方法が変わるだけです。 別の (個人用) メール アドレスを使用したり、新しい @outlook.com メール アドレスを Microsoft から取得したり、自分の電話番号を新しいユーザー名として使用したりすることができます。
+ここで説明したサインアップのブロックでは、新しいアカウントの作成だけが禁止されます。 職場/学校のメール アドレスで既に Microsoft アカウントを持っているユーザーには影響ありません。 既にそのような状況になっている場合、個人用 Microsoft アカウントの名前を簡単に変更できるようになっています。 簡単なステップ バイ ステップ ガイダンスが、こちらの[サポート記事](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)で提供されています。 個人用 Microsoft アカウントの名前の変更とはユーザー名を変更することを意味し、職場のメールや、Office 365 などのビジネス サービスへのサインイン方法には影響ありません。 また、個人情報にも影響しません。サインイン方法が変わるだけです。 別の (個人用) メール アドレスを使用したり、新しい @outlook.com メール アドレスを Microsoft から取得したり、自分の電話番号を新しいユーザー名として使用したりすることができます。
 
 > [!NOTE]
 > たとえば Premier サポートなどの Microsoft ビジネス サービスにアクセスするために、IT 部門から職場/学校のメール アドレスで個人用 Microsoft アカウントを作成するよう要求された場合は、アカウントの名前を変更する前に管理チームに連絡します。

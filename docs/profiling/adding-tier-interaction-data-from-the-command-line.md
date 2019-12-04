@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777866"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779871"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>コマンド ラインからの階層相互作用データの追加
 
@@ -31,7 +32,7 @@ Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで
 
 **リモート コンピューターでの TIP データの収集**
 
-リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
+リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** フォルダーから **vs_profiler\_** _\<プラットフォーム>_ **\_** _\<言語>_ **.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
 
 **TIP レポート**
 
@@ -49,7 +50,7 @@ VSPerfASPNETCmd コマンド ライン ツールを使用すると、プロフ�
 
 ### <a name="profile-a-windows-desktop-application-example"></a>Windows デスクトップ アプリケーションのプロファイルの例
 
-1. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、**[すべてのプログラム]**、**[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、**[管理者として実行]** をクリックします。
+1. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、 **[管理者として実行]** をクリックします。
 
 2. .NET プロファイル環境変数と TIP を環境変数初期化します。 次のコマンドを入力します。
 
@@ -92,7 +93,7 @@ VSPerfASPNETCmd コマンド ライン ツールを使用すると、プロフ�
 
 1. インストールの必要なサービスがあればインストールします。
 
-2. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、**[すべてのプログラム]**、**[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、**[管理者として実行]** をクリックします。
+2. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、 **[管理者として実行]** をクリックします。
 
 3. .NET プロファイル環境変数を初期化します。 次のコマンドを入力します。
 
@@ -148,7 +149,7 @@ VSPerfASPNETCmd コマンド ライン ツールを使用すると、プロフ�
 
 VSPerfASPNETCmd コマンド ライン ツールを使用すると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを簡単にプロファイルできます。 **VSPerfCmd** コマンド ライン ツールと比較すると、オプションが減り、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 VSPerfASPNETCmd のこれらの機能により、階層相互作用データの収集が非常に簡単になります。
 
-VSPerfASPNETCmd を使用して収集されたデータのプロファイリングに階層相互作用を追加するには、**/TIP** オプションをコマンド ラインに追加します。 たとえば、インストルメンテーション メソッドを使用して [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーション用に階層相互作用データを収集するには、次のコマンド ラインを使用します。
+VSPerfASPNETCmd を使用して収集されたデータのプロファイリングに階層相互作用を追加するには、 **/TIP** オプションをコマンド ラインに追加します。 たとえば、インストルメンテーション メソッドを使用して [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーション用に階層相互作用データを収集するには、次のコマンド ラインを使用します。
 
 ```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp

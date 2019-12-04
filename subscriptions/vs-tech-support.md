@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161970"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706991"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -54,7 +54,7 @@ Visual Studio サブスクリプションからダウンロードされた開発
 > 英語以外の言語のサポート アカウントを有効にする場合は、お住まいの国を[このリスト](https://support.microsoft.com/help/14084/activate-support-contract)から選択してください。
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>特典を使用してインシデントを送信する方法
-**契約 ID** および**アクセス ID** を設定したら、これらを使用して、[オンライン](http://support.microsoft.com/oas/) (サインインが必要) でまたは [Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) を通じて、またはお住まいの国のテクニカル サポート番号に電話して、テクニカル サポートにインシデントを送信することができます。 オンラインでインシデントを送信する場合は、Microsoft サポート担当者にコールバックさせるオプションがあります。
+**契約 ID** および**アクセス ID** を設定したら、これらを使用して、[オンライン](https://support.microsoft.com/oas/) (サインインが必要) でまたは [Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) を通じて、またはお住まいの国のテクニカル サポート番号に電話して、テクニカル サポートにインシデントを送信することができます。 オンラインでインシデントを送信する場合は、Microsoft サポート担当者にコールバックさせるオプションがあります。
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>テクニカル サポート インシデントをオンラインで送信するために、サインインに使用するアカウントと関連付けられた契約 ID とアクセス ID を既にお持ちの場合
 インシデントをオンラインで送信するときに、まずサインインが求められます。 契約 ID およびアクセス ID と関連付けられているアカウントでサインインします。 アカウントに関連付けられている既存のサポート プランの特典が、サポート ワークフローの手順 3 に表示されます。 そのプランを選択し、ケースの送信を続行します。 プランに示されている上限に達するか、プランの有効期限まで (どちらか早い方)、インシデントを送信できます。 残りのインシデントが “0” になるか、プランの有効期限が切れると、アクティブではなくなります。

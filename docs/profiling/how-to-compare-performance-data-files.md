@@ -11,14 +11,15 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973904"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779000"
 ---
 # <a name="how-to-compare-performance-data-files"></a>方法: パフォーマンス データ ファイルを比較する
 比較 ("Diff") のレポートまたはビューを作成して、2 つの異なるプロファイラー データ ファイル (.*vsp* または .*vsps*) の結果を比較することができます。 この比較では、相違点、パフォーマンスの低下、および、1 つのプロファイリング セッションから他のプロファイリング セッションのあいだに起きた改善点を示します。
@@ -35,7 +36,7 @@ ms.locfileid: "62973904"
 
 2. 比較する .*vsp* または .*vsps* レポート ファイルを選択します。
 
-3. 選択したファイルのいずれかを右クリックし、**[レポートの比較]** をクリックします。
+3. 選択したファイルのいずれかを右クリックし、 **[レポートの比較]** をクリックします。
 
 ### <a name="to-compare-values"></a>値を比較するには
 
@@ -53,6 +54,6 @@ ms.locfileid: "62973904"
 
 1. **[分析]** メニューで **[パフォーマンス レポートの比較]** を選択します。
 
-2. **[比較のための分析ファイルの選択]** ウィンドウで、**[ベースライン ファイル]** 分析ファイル (.*vsp* または .*vsps*) と **[比較ファイル]** (.*vsp* または .*vsps*) を探して選択します。
+2. **[比較のための分析ファイルの選択]** ウィンドウで、 **[ベースライン ファイル]** 分析ファイル (.*vsp* または .*vsps*) と **[比較ファイル]** (.*vsp* または .*vsps*) を探して選択します。
 
 3. **[OK]** をクリックします。

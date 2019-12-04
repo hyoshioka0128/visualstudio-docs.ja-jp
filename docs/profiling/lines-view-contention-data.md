@@ -8,14 +8,15 @@ ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000619"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778597"
 ---
 # <a name="lines-view---contention-data"></a>行ビュー - 競合データ
 競合データの行ビューには、プロファイルを実行してサンプルを収集するときに実行したステートメントのパフォーマンス データが表示されます。 ソース ファイルでは、1 つのステートメントを複数の行にわたって記述することも、複数のステートメントを 1 つの行に含めることもできます。
@@ -50,7 +51,7 @@ ms.locfileid: "63000619"
 |**包括ブロック時間 %**|プロセス内のすべてのブロック時間に対する、ステートメントの包括ブロック時間の割合。|
 |**包括競合**|このステートメント、およびこのステートメント内で呼び出された関数で、実行をブロックされた回数。|
 |**包括競合 %**|プロセス内のすべての競合イベントに対する、このステートメントの包括競合の割合。|
-|**ソース/行番号**|プロファイラーによって生成された行の識別子。 識別子は次の構文を使用します:`SourceFile`**; [**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**ソース/行番号**|プロファイラーによって生成された行の識別子。 識別子は次の構文を使用します:`SourceFile` **; [** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|
 |**モジュール名**|ステートメントを含むモジュールの名前です。|
 |**モジュール パス**|ステートメントを含むモジュールのパスです。|
