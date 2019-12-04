@@ -12,14 +12,15 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 049e1163f54dfcdfe2338faa59ae8c37c3114fa7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422047"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778038"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>コマンド ラインからのプロファイリング ツールの使用
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、コマンド プロンプトでアプリケーションをプロファイリングしたり、バッチ ファイルやスクリプトでプロファイリングを自動化したりできます。 コマンド プロンプトでレポート ファイルを生成することもできます。 スタンドアロンの簡易プロファイラーを使用すると、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がインストールされていないコンピューター上のデータを収集できます。
@@ -36,7 +37,7 @@ ms.locfileid: "63422047"
 | **.xml レポートおよび .csv レポートの作成:** コマンド プロンプトでプロファイリングを実行すると、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のインターフェイスで表示できるデータ ファイルが作成されます。 VSPerfReport コマンド ライン ツールを使用して、データの .*xml* ファイルまたはコンマ区切り値 (.*csv*) ファイルを生成することもできます。 | -   [コマンド ラインからのプロファイラー レポートの作成](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
 | **Visual Studio がインストールされていないコンピューター上のコードのプロファイリング:** プロファイル ツールのスタンドアロンのプロファイラーを使用して、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がインストールされていないコンピューター上のアプリケーションのデータを収集できます。 | -   [方法: スタンドアロンのプロファイラーをインストールする](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="see-also"></a>関連項目

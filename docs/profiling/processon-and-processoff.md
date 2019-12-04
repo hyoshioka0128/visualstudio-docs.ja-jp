@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972413"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778389"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn と ProcessOff
 VSPerfCmd.exe の **ProcessOff** サブコマンドと **ProcessOn** サブコマンドでは、コマンド ライン プロファイル セッションの指定されたプロセスのプロファイリングを一時停止および再開します。 **ProcessOff** がプロセスのプロファイリングを停止し、**ProcessOn** がプロセスのプロファイリングを開始します。
@@ -46,15 +47,15 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="valid-subcommands"></a>有効なサブコマンド
  **ProcessOn** と **ProcessOff** は、次のサブコマンドも含むコマンド ラインで指定できます。
 
- **Start:**`Method` コマンド ライン プロファイル セッションを初期化し、指定されたプロファイル方法を設定します。
+ **Start:** `Method` コマンド ライン プロファイル セッションを初期化し、指定されたプロファイル方法を設定します。
 
- **Launch:**`AppName` 指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。
+ **Launch:** `AppName` 指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。
 
- **Attach:**`PID` 指定されたプロセスのプロファイリングを開始します。
+ **Attach:** `PID` 指定されたプロセスのプロファイリングを開始します。
 
  **GlobalOff**&#124;**GlobalOn** コマンド ライン プロファイル セッションのすべてのプロセスのプロファイリングを停止または開始します。
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`指定されたスレッドのプロファイリングを停止または開始します (インストルメンテーション メソッドのみ)。
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`指定されたスレッドのプロファイリングを停止または開始します (インストルメンテーション メソッドのみ)。
 
 ## <a name="example"></a>例
  この例では、**ProcessOff** サブコマンドを使用してアプリケーション起動のプロファイル データを収集します。

@@ -9,14 +9,15 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407561"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777843"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` メソッドは、タイムスタンプ値、数字マーク、コメント文字列を .*vsp* ファイルに挿入します。 タイムスタンプ値は、外部イベントの同期に使用できます。 マークやコメントを挿入するには、CommentMarkAtProfile 関数が含まれるスレッドのプロファイリングをオンにする必要があります。

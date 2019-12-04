@@ -11,22 +11,23 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996136"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778688"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定する
 
-DLL などのバイナリをプロファイルするには、**[\<Target> プロパティ ページ]** ダイアログ ボックスに情報を入力する必要があります。 この情報は、DLL プロジェクトの呼び出し元アプリケーションの場所を示します。
+DLL などのバイナリをプロファイルするには、 **[\<Target> プロパティ ページ]** ダイアログ ボックスに情報を入力する必要があります。 この情報は、DLL プロジェクトの呼び出し元アプリケーションの場所を示します。
 
-1. **パフォーマンス エクスプローラー**で、対象のバイナリを右クリックし、**[プロパティ]** をクリックします。
+1. **パフォーマンス エクスプローラー**で、対象のバイナリを右クリックし、 **[プロパティ]** をクリックします。
 
-2. **[プロパティ ページ]** ダイアログ ボックスで、**[起動]** プロパティをクリックします。
+2. **[プロパティ ページ]** ダイアログ ボックスで、 **[起動]** プロパティをクリックします。
 
 3. **[プロジェクト プロパティのオーバーライド]** チェック ボックスを選択します。
 

@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552864"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777791"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>コマンド ラインから基本的なプロファイリング レポートを作成する
 この記事では、.*vsp* プロファイル データ ファイルまたは .*vsps* プロファイル データ ファイルからコンマ区切り値 (.*csv*) レポートを生成する基本的な VSPerfReport コマンドについて説明します。 すべてのレポート オプションの詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。
@@ -23,7 +24,7 @@ ms.locfileid: "62552864"
 
  **VSPerfReport** `VSPFile` **/Summary:All** *.vsp* ファイルまたは *.vsps* ファイルで利用できるすべてのレポートが生成されます。
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] 指定した種類のレポートが生成されます。
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] 指定した種類のレポートが生成されます。
 
  **VSPerfReport** `VSPFile` **/CallTrace** 各データ コレクション イベントが一覧表示されたレポートが生成されます。 インストルメンテーションでのみ使用します。
 

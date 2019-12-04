@@ -6,14 +6,15 @@ ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89a08808387067b934bfd826feb2dcfbcf949aab
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778285"
 ---
 # <a name="shutdown"></a>シャットダウン
 **Shutdown** オプションは、現在プロファイル中のプロセスが終了するかデタッチされるまで待機して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **Shutdown** オプションは、プロファイル実行の最後のコマンドである必要があります。

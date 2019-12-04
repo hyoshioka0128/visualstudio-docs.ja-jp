@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973982"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776372"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>方法: CPU カウンター データを収集する
 
@@ -43,7 +44,7 @@ CPU イベント カウンターはハードウェア固有のパフォーマン
 
 - インストルメンテーションによってプロファイリングする場合は、1 つ以上のカウンターからデータを収集します。
 
-- サンプリングによってプロファイリングする場合は、サンプリング間隔としてカウンター イベントを指定します。 詳細については、「[方法 :サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)」を参照してください。
+- サンプリングによってプロファイリングする場合は、サンプリング間隔としてカウンター イベントを指定します。 詳細については、[サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)」を参照してください。
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>インストルメンテーションによってプロファイリングする場合に、CPU パフォーマンス カウンター データを収集するには
 
@@ -51,12 +52,12 @@ CPU イベント カウンターはハードウェア固有のパフォーマン
 
 2. **[CPU カウンターの収集]** チェック ボックスをオンにします。
 
-3. 収集するサンプル イベントが見つかるまで、**[使用可能なパフォーマンス カウンター]** ツリーを展開します。
+3. 収集するサンプル イベントが見つかるまで、 **[使用可能なパフォーマンス カウンター]** ツリーを展開します。
 
 4. 収集するそれぞれのイベントについて、イベントを選択して右矢印をクリックし、そのイベントを **[選択されたカウンター]** 一覧に追加します。
 
     > [!NOTE]
-    > **[使用可能なパフォーマンス カウンター]** は、**[CPU カウンターの収集]** チェック ボックスがオンになっている場合のみ有効です。
+    > **[使用可能なパフォーマンス カウンター]** は、 **[CPU カウンターの収集]** チェック ボックスがオンになっている場合のみ有効です。
 
 ## <a name="see-also"></a>関連項目
 

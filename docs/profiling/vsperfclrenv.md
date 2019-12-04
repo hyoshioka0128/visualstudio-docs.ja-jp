@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 119aa0a710218635cca945372ba9ea6fb6d4d27b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779910"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -31,7 +32,7 @@ VsPerfCLREnv [/option]
 選択するオプションは、プロファイルの 3 つの種類 (サンプリング、インストルメンテーション、グローバル) のうち、どれを使用するかによって異なります。 プロファイル データに階層相互作用データを含めるには、別のオプションが必要です。 各オプションの構文については、以下の表で説明します。
 
 > [!NOTE]
-> プロファイルが完了したら、**/off** オプションまたは **/globaloff** オプションを指定して **VSPerfCLREnv** を実行し、プロファイルに必要な環境変数を削除します。 詳細については、以下で示される「環境設定を削除するための VSPerfCLREnv オプション」を参照してください。
+> プロファイルが完了したら、 **/off** オプションまたは **/globaloff** オプションを指定して **VSPerfCLREnv** を実行し、プロファイルに必要な環境変数を削除します。 詳細については、以下で示される「環境設定を削除するための VSPerfCLREnv オプション」を参照してください。
 
 ## <a name="vsperfclrenv-options-for-including-tier-interaction-data"></a>階層相互作用データを含めるための VSPerfCLREnv オプション
 

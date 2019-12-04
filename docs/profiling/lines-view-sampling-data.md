@@ -8,14 +8,15 @@ ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed2c552baa07bf0f3d2a395cbdfbf1d5346178c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435611"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778584"
 ---
 # <a name="lines-view---sampling-data"></a>行ビュー - サンプリング データ
 サンプリング データの [行] ビューには、プロファイリングを実行してサンプルを収集するときに実行したステートメントのパフォーマンス データが表示されます。
@@ -55,7 +56,7 @@ ms.locfileid: "63435611"
 |**ソース終了行**|このサンプルが収集されたソース ファイル内の終了行番号です。|
 |**ソース開始文字番号**|このサンプルが収集されたソース ファイル行内の開始文字のオフセットです。|
 |**ソース終了文字番号**|このサンプルが収集されたソース ファイル行内の終了文字のオフセットです。|
-|**ソース/行番号**|`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]** という構文を持つ、プロファイラーによって生成された行の識別子です。|
+|**ソース/行番号**|`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number End` **,** `Character End` **]** という構文を持つ、プロファイラーによって生成された行の識別子です。|
 |**サンプル数 (関数のみ)**|関数行を実行していたときに収集されたサンプルの合計数です。|
 |**サンプル % (関数のみ)**|関数行を実行していたときに収集された、プロファイリング実行内のすべてのサンプルの割合です。|
 

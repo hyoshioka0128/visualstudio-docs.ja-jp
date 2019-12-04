@@ -13,14 +13,15 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 282bb801625429d639e625a0a5edb02a8fb4da25
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581271"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777986"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport コマンド ライン ツールは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのプロファイル データ ファイルを使用してレポートを作成するために使用されます。 既定のレポート形式は .*csv* ファイルです。
@@ -42,7 +43,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` は有効な .*vsp* ファイルまたは .*vsps* ファイルである必要があります。
 
 ## <a name="symbol-files"></a>シンボル ファイル
- 関数名や行番号などのシンボル情報を表示するには、VSPerfReport が、プロファイルしたコンポーネントのシンボル (.pdb) ファイルおよび Windows シンボル ファイルにアクセスできる必要があります。 詳細については、「[方法 :コマンド ラインからシンボル ファイルの場所を指定する](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)」を参照してください。
+ 関数名や行番号などのシンボル情報を表示するには、VSPerfReport が、プロファイルしたコンポーネントのシンボル (.pdb) ファイルおよび Windows シンボル ファイルにアクセスできる必要があります。 詳細については、[コマンド ラインからシンボル ファイルの場所を指定する](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)」を参照してください。
 
 ## <a name="general-report-options"></a>一般的なレポート オプション
  次の表では、一般的なレポートの書式指定オプションと、報告対象のデータを選択するためのオプションについて説明します。
@@ -50,7 +51,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |オプション|説明|
 |-------------|-----------------|
 |**U**|レポート出力とリダイレクトされたコンソール出力は Unicode として書き込まれます。 このオプションは最初に指定する必要があります。|
-|**Summary:**[*types*]|1 つ以上の種類のレポートを作成します。<br /><br /> -   `All` - すべての種類のレポートが生成されます。<br />-   `CallerCallee` - 関数間の親子関係。<br />-   `Function` - 呼び出された関数。<br />-   `CallTree` - 呼び出された関数の階層。<br />-   `Counter` - すべてのマークと Windows パフォーマンス カウンター値。<br />-   `Ip` - プロファイルされた命令。<br />-   `Life` - (割り当てデータが収集されたときに使用可能な) 割り当てられたオブジェクトの有効期間。<br />-   `Line` - ソース コード行のプロファイル データ。<br />-   `Header` - レポートにファイル ヘッダー情報が含まれます。<br />-   `Mark` - すべてのマーク。<br />-   `Module` - プロファイルされたモジュール。<br />-   `Process` - プロファイルされたプロセス。<br />-   `Thread` - プロファイルされたスレッド。<br />-   `Type` - 割り当てられた型。<br />-   `Contention` - リソースの競合。<br />-   `RuleWarnings` - パフォーマンス規則の問題<br />-   `ETW` - プロファイル実行で収集されたすべての Windows イベント トレーシング (ETW) イベント。 .etl データ ファイルは、その元の場所か、.vsp または .vsps ファイルを含むディレクトリにある必要があります。|
+|**Summary:** [*types*]|1 つ以上の種類のレポートを作成します。<br /><br /> -   `All` - すべての種類のレポートが生成されます。<br />-   `CallerCallee` - 関数間の親子関係。<br />-   `Function` - 呼び出された関数。<br />-   `CallTree` - 呼び出された関数の階層。<br />-   `Counter` - すべてのマークと Windows パフォーマンス カウンター値。<br />-   `Ip` - プロファイルされた命令。<br />-   `Life` - (割り当てデータが収集されたときに使用可能な) 割り当てられたオブジェクトの有効期間。<br />-   `Line` - ソース コード行のプロファイル データ。<br />-   `Header` - レポートにファイル ヘッダー情報が含まれます。<br />-   `Mark` - すべてのマーク。<br />-   `Module` - プロファイルされたモジュール。<br />-   `Process` - プロファイルされたプロセス。<br />-   `Thread` - プロファイルされたスレッド。<br />-   `Type` - 割り当てられた型。<br />-   `Contention` - リソースの競合。<br />-   `RuleWarnings` - パフォーマンス規則の問題<br />-   `ETW` - プロファイル実行で収集されたすべての Windows イベント トレーシング (ETW) イベント。 .etl データ ファイルは、その元の場所か、.vsp または .vsps ファイルを含むディレクトリにある必要があります。|
 |**Xml**|レポートを XML 形式で出力します。|
 |**CallTrace**|関数の開始と終了、ETW イベント、およびマークのリストを作成します。|
 |**ClearPackedSymbols**|プロファイラー データ ファイルから以前に埋め込まれたシンボルを削除します。 PackSymbols を 2 回目に実行する前にこのコマンドを実行します。|
@@ -69,14 +70,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |オプション|説明|
 |-------------|-----------------|
-|**JustMyCode**[**:**[`caller`][,`callee`]]|ユーザー アプリケーションの関数呼び出しのみを表示し、システム呼び出しは非表示にします。<br /><br /> -   パラメーターなし - すべてのシステム関数を非表示にします。<br />-   `caller` - アプリケーション関数を呼び出すシステム関数の 1 つのレベルを表示します。<br />-   `callee` - ユーザー アプリケーション関数で呼び出されるシステム関数の 1 つのレベルを表示します。|
-|**StartTime:**[*value*]|ミリ秒単位の時間 (value) よりも後に収集されたデータのみを表示します。|
-|**EndTime:**[*value*]|ミリ秒単位の時間 (value) よりも前に収集されたデータのみを表示します。|
+|**JustMyCode**[ **:** [`caller`][,`callee`]]|ユーザー アプリケーションの関数呼び出しのみを表示し、システム呼び出しは非表示にします。<br /><br /> -   パラメーターなし - すべてのシステム関数を非表示にします。<br />-   `caller` - アプリケーション関数を呼び出すシステム関数の 1 つのレベルを表示します。<br />-   `callee` - ユーザー アプリケーション関数で呼び出されるシステム関数の 1 つのレベルを表示します。|
+|**StartTime:** [*value*]|ミリ秒単位の時間 (value) よりも後に収集されたデータのみを表示します。|
+|**EndTime:** [*value*]|ミリ秒単位の時間 (value) よりも前に収集されたデータのみを表示します。|
 |**FilterFile:** `VSPFFile`|Visual Studio の [パフォーマンス レポート] ウィンドウから生成されたフィルター ファイルの場所を指定します。|
-|**MsFilter:**[*starttime,duration*]|開始時刻 (`starttime`) からミリ秒単位の時間 (`duration`) 内のみのデータを表示します。|
-|**Process:**[*pid*]|指定されたプロセスのデータのみを表示します。|
-|**Thread:**[*threadid*]|指定されたスレッドのデータのみを表示します。|
-|**Thread:**[*threadid,processid*]|指定されたプロセスに関連付けられている指定されたスレッドのデータのみを表示します。|
+|**MsFilter:** [*starttime,duration*]|開始時刻 (`starttime`) からミリ秒単位の時間 (`duration`) 内のみのデータを表示します。|
+|**Process:** [*pid*]|指定されたプロセスのデータのみを表示します。|
+|**Thread:** [*threadid*]|指定されたスレッドのデータのみを表示します。|
+|**Thread:** [*threadid,processid*]|指定されたプロセスに関連付けられている指定されたスレッドのデータのみを表示します。|
 
 ## <a name="difference-report-options"></a>相違点レポートのオプション
  次の表では、レポート ファイルを比較するためのオプションについて説明します。
@@ -84,9 +85,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |オプション|説明|
 |-------------|-----------------|
 |**Diff**  `vspfile1 vspfile2`|2 つレポート ファイル (.*vsp* または .*vsps*) を比較します。 diff オプションを使用すると Summary オプションは無視されます。|
-|**Diff:**[*value*]|このしきい値を下回ると、2 つの値の相違は無視されます。 また、値がこのしきい値を下回る新しいデータは表示されません。|
-|**DiffTable:**[*tablename*]|このテーブルを使用して、ファイルを比較します。 既定では関数テーブルが使用されます。|
-|**DiffColumn:**[*columnname*]|この列を使用して、値を比較します。 既定では排他サンプルのパーセント列が使用されます。|
+|**Diff:** [*value*]|このしきい値を下回ると、2 つの値の相違は無視されます。 また、値がこのしきい値を下回る新しいデータは表示されません。|
+|**DiffTable:** [*tablename*]|このテーブルを使用して、ファイルを比較します。 既定では関数テーブルが使用されます。|
+|**DiffColumn:** [*columnname*]|この列を使用して、値を比較します。 既定では排他サンプルのパーセント列が使用されます。|
 |**QueryDiffTables**|指定された 2 つのレポート ファイルに関する有効なテーブルおよび列をリストします。|
 
 ## <a name="see-also"></a>関連項目

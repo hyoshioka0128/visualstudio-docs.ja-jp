@@ -6,14 +6,15 @@ ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf47871b8b1c2e6f8e4f67bf26ba5f73ca078c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a740885d8876398bf86e279aa259e9169fcf7c2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970019"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779288"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework の使用に関するパフォーマンス規則
 .NET Framework の使用カテゴリのパフォーマンス規則では、最適化できる具体的なメソッド、およびパフォーマンスに問題があるときに調査できる一般的な使用パターン (ガベージ コレクションやロックの競合など) が示されています。

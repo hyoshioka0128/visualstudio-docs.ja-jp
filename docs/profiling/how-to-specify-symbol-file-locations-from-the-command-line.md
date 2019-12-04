@@ -6,14 +6,15 @@ ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433468"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778727"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>方法: コマンド ラインからシンボル ファイルの場所を指定する
 関数名や行番号などのシンボル情報を表示するには、VSPerfReport コマンド ライン ツールが、プロファイリングしたコンポーネントおよび Windows システム ファイルのシンボル (.*pdb*) ファイルにアクセスできる必要があります。 シンボル ファイルは、コンポーネントのコンパイル時に作成されます。 詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。 VSPerfReport は、自動的に次の場所でシンボル ファイルを検索します。
@@ -35,7 +36,7 @@ ms.locfileid: "63433468"
   これらの両方の方法を使用することもできます。
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がローカル コンピューターにインストールされている場合は、Windows シンボル ファイルの場所が既に指定されている可能性があります。 詳細については、「[方法 :Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)」を参照してください。 このトピックで後述するように、その場所とサーバーを使用するよう VSPerfReport を構成する必要があります。
+> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がローカル コンピューターにインストールされている場合は、Windows シンボル ファイルの場所が既に指定されている可能性があります。 詳細については、[Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)」を参照してください。 このトピックで後述するように、その場所とサーバーを使用するよう VSPerfReport を構成する必要があります。
 
 ## <a name="specify-windows-symbol-files"></a>Windows シンボル ファイルを指定する
 
@@ -43,9 +44,9 @@ ms.locfileid: "63433468"
 
 1. 必要に応じて、シンボル ファイルをローカルに格納するためのディレクトリを作成します。
 
-2. 次の構文を使用して、**_NT_SYMBOL_PATH** 環境変数または VSPerfReport /SymbolPath オプションを設定します。
+2. 次の構文を使用して、 **_NT_SYMBOL_PATH** 環境変数または VSPerfReport /SymbolPath オプションを設定します。
 
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**
+    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
 
     ここで、*LocalStore* は作成したローカル ディレクトリのパスです。
 
@@ -53,10 +54,10 @@ ms.locfileid: "63433468"
  プロファイリング ツールは、プロファイルするコンポーネントの .*pdb* ファイルを、コンポーネントに保存されているファイルの元の場所か、プロファイル データ ファイルが含まれているフォルダー内で検索します。 **_NT_SYMBOL_PATH** または **/SymbolPath** オプションに 1 つ以上のパスを追加すれば、他の検索場所を指定できます。 セミコロンでパスを区切ります。
 
 ## <a name="example"></a>例
- 次のコマンド ラインは、**_NT_SYMBOL_PATH** 環境変数を Windows シンボル サーバーに設定し、ローカル ディレクトリを **C:\Symbols** に設定します。
+ 次のコマンド ラインは、 **_NT_SYMBOL_PATH** 環境変数を Windows シンボル サーバーに設定し、ローカル ディレクトリを **C:\Symbols** に設定します。
 
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**
+ **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
 
- 次の VSPerfReport コマンド ラインは、**/SymbolPath** オプションを使って *C:\Projects\Symbols* ディレクトリを検索パスに追加します。
+ 次の VSPerfReport コマンド ラインは、 **/SymbolPath** オプションを使って *C:\Projects\Symbols* ディレクトリを検索パスに追加します。
 
  **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

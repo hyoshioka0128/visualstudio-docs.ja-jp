@@ -8,14 +8,15 @@ ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a838a511c5f37a00ed2331d2376b395f399e65d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7497f455ad3868f53758555aa28d305b6068e30d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777321"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773512"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>コール ツリー ビュー - インストルメンテーション データ
 コール ツリーの関数の値は、コール ツリーの親関数によって呼び出された関数インスタンスの時間を示します。 割合の値を計算するには、関数インスタンスの値と、プロファイル実行のすべての関数の包括経過時間の総計を比較します。

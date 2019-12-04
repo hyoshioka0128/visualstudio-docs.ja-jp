@@ -6,14 +6,15 @@ ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 479f7e1cbd85c0421497020ae1fc108154ca639a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968315"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771602"
 ---
 # <a name="targetclr"></a>TargetCLR
 **TargetCLR** オプションでは、アプリケーションに複数のバージョンの CLR (共通言語ランタイム) が読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。
@@ -32,9 +33,9 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>必須オプション
  **TargetCLR** オプションは、**Launch** オプションまたは **Attach** オプションと共に指定する場合にのみ使用できます。
 
- **Launch:**`AppName` 指定したアプリケーションを起動し、プロファイリングを開始します。
+ **Launch:** `AppName` 指定したアプリケーションを起動し、プロファイリングを開始します。
 
- **Attach:**`PID` 指定したプロセスのプロファイリングを開始します。
+ **Attach:** `PID` 指定したプロセスのプロファイリングを開始します。
 
 ## <a name="example"></a>例
  この例では、TargetCLR オプションを使用して、CLR バージョン 4.0.11003 がプロファイリングされることを確認します。

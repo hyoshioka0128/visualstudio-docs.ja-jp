@@ -8,14 +8,15 @@ ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777334"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779741"
 ---
 # <a name="callercallee-view----contention-data"></a>呼び出し元/呼び出し先ビュー - 競合データ
 呼び出し元/呼び出し先ビューには、選択した関数およびその親関数と子関数の競合情報が表示されます。 [呼び出し元/呼び出し先] ビューは、3 つのグリッドで構成されます。

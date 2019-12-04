@@ -13,21 +13,22 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc3721c00816d7cab9af3a4c14e427f4218d15d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969681"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779195"
 ---
 # <a name="functions-view"></a>関数ビュー
 関数ビューには、プロファイリング中に呼び出される関数が一覧表示されます。
 
- 既定では、関数は名前別に一覧表示されます。 関数をモジュール別に表示するには、関数ビュー ウィンドウを右クリックし、**[モジュール ビューで表示]** を選択します。 モジュール ビューが表示されます。
+ 既定では、関数は名前別に一覧表示されます。 関数をモジュール別に表示するには、関数ビュー ウィンドウを右クリックし、 **[モジュール ビューで表示]** を選択します。 モジュール ビューが表示されます。
 
- 列を追加または削除するには、レポート ウィンドウ内を右クリックし、**[列の追加と削除]** を選択します。 また、データを並べ替えるには、列名をクリックします。 詳細については、「[方法 :レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。
+ 列を追加または削除するには、レポート ウィンドウ内を右クリックし、 **[列の追加と削除]** を選択します。 また、データを並べ替えるには、列名をクリックします。 詳細については、[レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。
 
  関数ビューに表示される列は、データの収集に使用したプロファイル方法 (サンプリングまたはインストルメンテーション)、およびプロファイル実行で .NET メモリ データを収集対象としたかどうかによって異なります。
 

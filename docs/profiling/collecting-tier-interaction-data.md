@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fcdab1fcb776a729d00a143dfc318053b74c5cf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e01259fdd23e60a1408addc10a6af3a12479c9f2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831503"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772819"
 ---
 # <a name="collect-tier-interaction-data"></a>階層相互作用データを収集する
 
@@ -41,9 +42,9 @@ Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで
 
 1. パフォーマンス エクスプローラーで、コンテキスト メニューの **[プロパティ]** をクリックします。
 
-2. **[階層の相互作用]** ページを選択し、**[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。
+2. **[階層の相互作用]** ページを選択し、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。
 
-3. パフォーマンス エクスプローラーで、**[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。
+3. パフォーマンス エクスプローラーで、 **[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。
 
 ## <a name="see-also"></a>関連項目
 
