@@ -36,11 +36,11 @@
           href: container-tools-configure.md
     - name: 概念
       items:
-        - name: コンテナー化されたアプリをビルドする
+        - name: Visual Studio でコンテナー化されたアプリをビルドする方法
           href: container-build.md
     - name: トラブルシューティング
       href: troubleshooting-docker-errors.md
-    - name: 関連項目
+    - name: 辞書／辞典／その他
       items:
         - name: コンテナーのプロジェクトの MSBuild プロパティ
           href: container-msbuild-properties.md
