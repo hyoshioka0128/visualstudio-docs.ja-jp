@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5ac9c395936ae23bdf94e006a002fb994d8c8cd
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 2d97552a79b520bd522cb8ec768d7d36fe2fb052
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568804"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74809813"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop アナライザーの規則のスコープオプション
 
@@ -32,7 +32,7 @@ ms.locfileid: "73568804"
 
 | 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| 分析する API サーフェイスの部分 | `public`<br/>`internal` または `friend`<br/>`private`<br/>`all`<br/><br/>複数の値はコンマ (,) で区切ります | `public` | [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md)<br/>[CA1003](ca1003-use-generic-event-handler-instances.md)<br/>[CA1008](ca1008-enums-should-have-zero-value.md)<br/>[CA1010](ca1010-collections-should-implement-generic-interface.md)<br/>[CA1012](ca1012-abstract-types-should-not-have-constructors.md)<br/>[CA1024](ca1024-use-properties-where-appropriate.md)<br/>[CA1027](ca1027-mark-enums-with-flagsattribute.md)<br/>[CA1028](ca1028-enum-storage-should-be-int32.md)<br/>[CA1030](ca1030-use-events-where-appropriate.md)<br/>[CA1036](ca1036-override-methods-on-comparable-types.md)<br/>[CA1040](ca1040-avoid-empty-interfaces.md)<br/>[CA1041](ca1041-provide-obsoleteattribute-message.md)<br/>[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md)<br/>[CA1044](ca1044-properties-should-not-be-write-only.md)<br/>[CA1051](ca1051-do-not-declare-visible-instance-fields.md)<br/>[CA1052](ca1052-static-holder-types-should-be-sealed.md)<br/>[CA1054](ca1054-uri-parameters-should-not-be-strings.md)<br/>[CA1055](ca1055-uri-return-values-should-not-be-strings.md)<br/>[CA1056](ca1056-uri-properties-should-not-be-strings.md)<br/>[CA1058](ca1058-types-should-not-extend-certain-base-types.md)<br/>[CA1063](ca1063-implement-idisposable-correctly.md)<br/>[CA1708](ca1708-identifiers-should-differ-by-more-than-case.md)<br/>[CA1710](ca1710-identifiers-should-have-correct-suffix.md)<br/>[CA1711](ca1711-identifiers-should-not-have-incorrect-suffix.md)<br/>[CA1714](ca1714-flags-enums-should-have-plural-names.md)<br/>[CA1715](ca1715.md)<br/>[CA1716](ca1716-identifiers-should-not-match-keywords.md)<br/>[CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md)<br/>[CA1720](ca1720-identifiers-should-not-contain-type-names.md)<br/>[CA1721](ca1721-property-names-should-not-match-get-methods.md)<br/>[CA1725](ca1725-parameter-names-should-match-base-declaration.md)<br/>[CA1802](ca1802.md)<br/>[CA1815](ca1815.md)<br/>[CA1819](ca1819.md)<br/>[CA2217](ca2217.md)<br/>[CA2225](ca2225.md)<br/>[CA2226](ca2226.md)<br/>[CA2231](ca2231.md)<br/>[CA2234](ca2234.md) |
+| 分析する API サーフェイスの部分 | `public`<br/>`internal` または `friend`<br/>`private`<br/>`all`<br/><br/>複数の値はコンマ (,) で区切ります | `public` | [CA1000](ca1000.md) [CA1003](ca1003.md) [CA1008](ca1008.md) [CA1010](ca1010.md)<br/>[CA1012](ca1012.md) [CA1024](ca1024.md) [CA1027](ca1027.md) [CA1028](ca1028.md)<br/>[CA1030](ca1030.md) [CA1036](ca1036.md) [CA1040](ca1040.md) [CA1041](ca1041.md)<br/>[CA1043](ca1043.md) [CA1044](ca1044.md) [CA1051](ca1051.md) [CA1052](ca1052.md)<br/>[CA1054](ca1054.md) [CA1055](ca1055.md) [CA1056](ca1056.md) [CA1058](ca1058.md)<br/>[CA1063](ca1063.md) [CA1708](ca1708.md) [CA1710](ca1710.md) [CA1711](ca1711.md)<br/>[CA1714](ca1714.md) [CA1715](ca1715.md) [CA1716](ca1716.md) [CA1717](ca1717.md)<br/>[CA1720](ca1720.md) [CA1721](ca1721.md) [CA1725](ca1725.md) [CA1801](ca1801.md)<br/>[CA1802](ca1802.md) [CA1815](ca1815.md) [CA1819](ca1819.md) [CA2217](ca2217.md)<br/>[CA2225](ca2225.md) [CA2226](ca2226.md) [CA2231](ca2231.md) [CA2234](ca2234.md)<br/>|
 
 ## <a name="exclude_async_void_methods"></a>exclude_async_void_methods
 
@@ -47,7 +47,7 @@ ms.locfileid: "73568804"
 
 | 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| 1文字の[型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)をルールから除外するかどうかを指定します。たとえば、`Collection<S>` の `S` です。 | `true`<br/>`false` | `false` | [CA1715](ca1715.md) |
+| 1文字の[型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)をルールから除外するかどうか。たとえば、の `S` `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715.md) |
 
 > [!NOTE]
 > バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `allow_single_letter_type_parameters`でした。
@@ -57,3 +57,59 @@ ms.locfileid: "73568804"
 | 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
 | この型のアセンブリを生成するプロジェクト内のコードを分析する必要があることを指定します。 | <xref:Microsoft.CodeAnalysis.OutputKind> 列挙型の1つまたは複数のフィールド<br/><br/>複数の値はコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007.md) |
+
+## <a name="required_modifiers"></a>required_modifiers
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| 分析する必要がある Api の必須の修飾子を指定します | 以下の許可された修飾子テーブルの1つ以上の値<br/><br/>複数の値はコンマ (,) で区切ります | 各規則に依存 | [CA1802](ca1802.md) |
+
+| 許可される修飾子 | 要約 |
+| --- | --- |
+| `none` | 修飾子の要件はありません |
+| `static` または `Shared` | ' Static ' (Visual Basic では ' Shared ') として宣言されなければなりません |
+| `const` | ' Const ' として宣言されなければなりません |
+| `readonly` | ' Readonly ' として宣言されなければなりません |
+| `abstract` | ' Abstract ' として宣言されなければなりません |
+| `virtual` | ' Virtual ' として宣言されなければなりません |
+| `override` | ' Override ' として宣言されなければなりません |
+| `sealed` | ' Sealed ' として宣言されなければなりません |
+| `extern` | ' Extern ' として宣言されなければなりません。 |
+| `async` | ' Async ' として宣言されなければなりません |
+
+## <a name="exclude_extension_method_this_parameter"></a>exclude_extension_method_this_parameter
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| 拡張メソッドの `this` パラメーターの分析をスキップするかどうか | `true`<br/>`false` | `false` | [CA1062](ca1062.md) |
+
+## <a name="null_check_validation_methods"></a>null_check_validation_methods
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| メソッドに渡された引数を検証する null チェック検証メソッドの名前が null 以外である | 許可されるメソッド名の形式 (`|`で区切られます):<br/> -メソッド名のみ (包含する型または名前空間に関係なく、という名前のすべてのメソッドが含まれます)<br/> -シンボルの[ドキュメント ID 形式](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)の完全修飾名 (省略可能な `M:` プレフィックスを含む) | [なし] | [CA1062](ca1062.md) |
+
+## <a name="additional_string_formatting_methods"></a>additional_string_formatting_methods
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| 追加の文字列書式指定メソッドの名前 | 許可されるメソッド名の形式 (`|`で区切られます):<br/> -メソッド名のみ (包含する型または名前空間に関係なく、という名前のすべてのメソッドが含まれます)<br/> -シンボルの[ドキュメント ID 形式](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)の完全修飾名 (省略可能な `M:` プレフィックスを含む) | [なし] | [CA2241](ca2241.md) |
+
+## <a name="excluded_type_names_with_derived_types"></a>excluded_type_names_with_derived_types
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| 型の名前 (型とそのすべての派生型が分析に対して除外される) | 許可されるシンボル名の形式 (`|`で区切られます):<br/> -型名のみ (包含する型または名前空間に関係なく、名前を持つすべての型を含む)<br/> -シンボルの[ドキュメント ID 形式](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)の完全修飾名 (省略可能な `T:` プレフィックスを含む) | [なし] | [CA1303](ca1303.md) |
+
+## <a name="excluded_symbol_names"></a>excluded_symbol_names
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| 分析に対して除外されるシンボルの名前 | 許可されるシンボル名の形式 (`|`で区切られます):<br/> -シンボル名のみ (包含する型または名前空間に関係なく、名前の付いたすべての記号が含まれます)<br/> -シンボルの[ドキュメント ID 形式](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)の完全修飾名。 各シンボル名には、記号の種類のプレフィックスが必要です。たとえば、メソッドのプレフィックス "M:"、型のプレフィックス "T:"、名前空間のプレフィックス "N:" などです。<br/> 静的コンストラクターのコンストラクターと `.cctor` の - `.ctor` | [なし] | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) [CA2301](ca2301.md) [CA2302](ca2302.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [CA3003](ca3003.md) [CA3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) CA5376 CA5377 [CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
+
+## <a name="disallowed_symbol_names"></a>disallowed_symbol_names
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
+| - | - | - | - |
+| 分析のコンテキストで禁止されているシンボルの名前 | 許可されるシンボル名の形式 (`|`で区切られます):<br/> -シンボル名のみ (包含する型または名前空間に関係なく、名前の付いたすべての記号が含まれます)<br/> -シンボルの[ドキュメント ID 形式](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)の完全修飾名。 各シンボル名には、記号の種類のプレフィックスが必要です。たとえば、メソッドのプレフィックス "M:"、型のプレフィックス "T:"、名前空間のプレフィックス "N:" などです。<br/> 静的コンストラクターのコンストラクターと `.cctor` の - `.ctor` | [なし] | [CA1031](ca1031.md) |
+
