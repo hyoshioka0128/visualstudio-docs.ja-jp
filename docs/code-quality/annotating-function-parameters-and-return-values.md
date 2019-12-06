@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806810"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879270"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 この記事では、単純な関数パラメーター (スカラー、構造体とクラスへのポインター)、およびほとんどの種類のバッファーに対する注釈の一般的な使用方法について説明します。  この記事では、注釈の一般的な使用パターンについても説明します。 関数に関連するその他の注釈については、「[関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)」を参照してください。
@@ -157,7 +157,7 @@ ms.locfileid: "72806810"
 
 - `_In_z_`
 
-     入力として使用される、null で終わる文字列へのポインター。  文字列は、事前状態で有効である必要があります。  既に正しい注釈がある `PSTR` のバリアントを使用することをお勧めします。
+     入力として使用される、null で終わる文字列へのポインター。  文字列は、事前状態で有効である必要があります。  既に正しい注釈がある `PSTR`のバリアントを使用することをお勧めします。
 
 - `_Inout_z_`
 
@@ -185,9 +185,12 @@ ms.locfileid: "72806810"
 
      関数によって書き込まれる `s` elements (resp) の配列へのポインター。  配列要素は、事前状態で有効である必要はなく、事後状態で有効な要素の数が指定されていません。  パラメーターの型に注釈がある場合は、事後状態で適用されます。 次に例を示します。
 
-     `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
+     ```cpp
+     typedef _Null_terminated_ wchar_t *PWSTR;
+     void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
+     ```
 
-     この例では、呼び出し元が `p1` 用の `size` 要素のバッファーを提供します。  `MyStringCopy` によって、これらの要素の一部が有効になります。 さらに重要なのは、`PWSTR` の `_Null_terminated_` 注釈は、`p1` が null で終了することを意味します。  この方法では、有効な要素の数は引き続き明確に定義されますが、特定の要素数は必要ありません。
+     この例では、呼び出し元が `p1`用の `size` 要素のバッファーを提供します。  `MyStringCopy` によって、これらの要素の一部が有効になります。 さらに重要なのは、`PWSTR` の `_Null_terminated_` 注釈は、`p1` が null で終了することを意味します。  この方法では、有効な要素の数は引き続き明確に定義されますが、特定の要素数は必要ありません。
 
      `_bytes_` variant は、要素ではなく、サイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、`char` の文字列では、`wchar_t` を使用する同様の関数である場合にのみ、`_bytes_` variant が使用されます。
 
@@ -215,13 +218,14 @@ ms.locfileid: "72806810"
 
      `_Out_writes_bytes_all_(s)`
 
-     `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後状態では、`c` 番目の要素までの要素が有効である必要があります。  サイズがバイト単位でわかっている場合は、スケール `s` し、要素サイズで `c` します。または、次のように定義されている `_bytes_` バリアントを使用します。
+     `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後状態では、`c`番目の要素までの要素が有効である必要があります。  `_bytes_` variant は、サイズが要素数ではなくバイト数でわかっている場合に使用できます。
+     
+     例:
 
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  (例:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+     ```cpp
+     void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
+     void *wordcpy(_Out_writes_all_(s) DWORD *p1, _In_reads_(s) DWORD *p2, _In_ int s);
+     ```
 
 - `_Inout_updates_to_(s,c)`
 
@@ -245,19 +249,24 @@ ms.locfileid: "72806810"
 
 - `_In_reads_to_ptr_(p)`
 
-     `_Curr_` - 式 (つまり、`p` から `_Curr_`) を `p`する配列へのポインターは、適切な言語標準によって定義されます。  `p` 前の要素は、事前状態で有効である必要があります。
+     `p - _Curr_` (つまり、`p` をマイナス `_Curr_`) する配列へのポインターが有効な式です。  `p` 前の要素は、事前状態で有効である必要があります。
+
+    例:
+    ```cpp
+    int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
+    ```
 
 - `_In_reads_to_ptr_z_(p)`
 
-     `_Curr_` - 式 (つまり、`p` から `_Curr_`) を `p`する、null で終わる配列へのポインターは、適切な言語標準によって定義されます。  `p` 前の要素は、事前状態で有効である必要があります。
+     式 `p - _Curr_` (つまり、`p` から `_Curr_`) が有効な式である null で終わる配列へのポインター。  `p` 前の要素は、事前状態で有効である必要があります。
 
 - `_Out_writes_to_ptr_(p)`
 
-     `_Curr_` - 式 (つまり、`p` から `_Curr_`) を `p`する配列へのポインターは、適切な言語標準によって定義されます。  `p` 前の要素は、事前状態で有効である必要はなく、事後状態で有効である必要があります。
+     `p - _Curr_` (つまり、`p` をマイナス `_Curr_`) する配列へのポインターが有効な式です。  `p` 前の要素は、事前状態で有効である必要はなく、事後状態で有効である必要があります。
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     `_Curr_` - 式 (つまり、`p` から `_Curr_`) を `p`する、null で終わる配列へのポインターは、適切な言語標準によって定義されます。  `p` 前の要素は、事前状態で有効である必要はなく、事後状態で有効である必要があります。
+     Null で終わる配列へのポインター。 `p - _Curr_` (つまり、`p` から `_Curr_`) が有効な式です。  `p` 前の要素は、事前状態で有効である必要はなく、事後状態で有効である必要があります。
 
 ## <a name="optional-pointer-parameters"></a>省略可能なポインター パラメーター
 
@@ -361,7 +370,7 @@ ms.locfileid: "72806810"
 
 ## <a name="output-reference-parameters"></a>出力の参照パラメーター
 
-参照パラメーターの一般的な使用方法は、出力パラメーター用です。  単純な出力参照パラメーター (たとえば、`int&`) の場合、`_Out_` は正しいセマンティクスを提供します。  ただし、出力値がポインター (`int *&`など) の場合、`_Outptr_ int **` のような同等のポインター注釈は、正しいセマンティクスを提供しません。  ポインター型の出力参照パラメーターのセマンティクスを簡潔に表現するには、次の複合注釈を使用します。
+参照パラメーターの一般的な使用方法は、出力パラメーター用です。  `int&`などの単純な出力参照パラメーターの場合、`_Out_` は正しいセマンティクスを提供します。  ただし、出力値が `int *&`などのポインターである場合、`_Outptr_ int **` のような同等のポインター注釈は、正しいセマンティクスを提供しません。  ポインター型の出力参照パラメーターのセマンティクスを簡潔に表現するには、次の複合注釈を使用します。
 
 **注釈と説明**
 
@@ -494,7 +503,7 @@ ms.locfileid: "72806810"
 
      `_Field_range_(low, hi)`
 
-     パラメーター、フィールド、または結果は、`low` から `hi` までの範囲内にあります。  注釈付きオブジェクトに適切な状態または状態の条件と共に適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` と同じです。
+     パラメーター、フィールド、または結果は、`low` から `hi`までの範囲内にあります。  注釈付きオブジェクトに適切な状態または状態の条件と共に適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` と同じです。
 
     > [!IMPORTANT]
     > 名前には "in" と "out" が含まれていますが、`_In_` と `_Out_` のセマンティクスは、これらの注釈には適用**されません**。
@@ -503,15 +512,15 @@ ms.locfileid: "72806810"
 
      `_Post_equal_to_(expr)`
 
-     注釈が付けられた値は正確に `expr` ます。  注釈付きオブジェクトに適切な状態または状態の条件と共に適用される `_Satisfies_(_Curr_ == expr)` と同じです。
+     注釈が付けられた値は正確に `expr`ます。  注釈付きオブジェクトに適切な状態または状態の条件と共に適用される `_Satisfies_(_Curr_ == expr)` と同じです。
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size` によって指定されるバイト数です。  (例:
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  例:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     @No__t_1 型のパラメーター `pM` のバイト単位のバッファーサイズは次のようになります。
+     `MyStruct *` 型のパラメーター `pM` のバイト単位のバッファーサイズは次のようになります。
 
      `min(pM->nSize, sizeof(MyStruct))`
 
@@ -519,7 +528,7 @@ ms.locfileid: "72806810"
 
 [コード分析チームのブログ](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL について](../code-quality/understanding-sal.md)
