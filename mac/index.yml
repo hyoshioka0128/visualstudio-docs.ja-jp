@@ -1,127 +1,161 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Visual Studio 2019 for Mac のドキュメント
+### YamlMime:Hub
+title: Visual Studio for Mac のドキュメント
+summary: Visual Studio for Mac で .NET を使用して iOS、Android、Web 用のアプリとゲームを開発する方法について説明します。
+brand: visual-studio
 metadata:
+  title: Visual Studio for Mac のドキュメント | Microsoft Docs
   description: この記事では Visual Studio for Mac の機能を紹介します。
   author: asb3993
   ms.author: amburns
-  ms.date: 08/08/2019
-  ms.topic: landing-page
-  ms.prod: visual-studio-mac
-  ms.technology: vs-ide-general
-sections:
+  ms.date: 09/18/2019
+  ms.topic: hub-page
+  ms.openlocfilehash: a5fbbf15cc9d753ef5c47a584ac25a9ca7ef7ca8
+  ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74829958"
+highlightedContent:
+  items:
+  - title: Visual Studio for Mac をインストールする
+    itemType: download
+    url: ~/installation.md
+  - title: Visual Studio for Mac を探索する
+    itemType: overview
+    url: ~/ide-tour.md
+  - title: Visual Studio for Mac リリース ノート
+    itemType: whats-new
+    url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
+  - title: 開発スキルを向上させる
+    itemType: learn
+    url: /learn/
+productDirectory:
+  title: ビルドできるもの
+  items:
+  - title: ASP.NET Core
+    imageSrc: https://docs.microsoft.com/media/logos/logo_NETcore.svg
+    links:
+    - url: ~/net-core-support.md
+      text: .NET Core サポート
+    - url: ~/asp-net-core.md
+      text: .NET Core の概要
+    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc
+      text: ASP.NET のドキュメント
+  - title: Azure
+    imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
+    links:
+    - url: ~/azure-functions.md
+      text: Azure Functions の概要
+    - url: ~/azure-functions-lab.md
+      text: Azure Functions のチュートリアル
+  - title: Unity
+    imageSrc: https://docs.microsoft.com/media/logos/logo_unity.svg
+    links:
+    - url: ~/unity-tools.md
+      text: Unity の概要
+    - url: ~/setup-vsmac-tools-unity.md
+      text: Unity と Visual Studio for Mac を設定する
+    - url: ~/unity-walkthrough.md
+      text: Unity を使用したゲーム作成の概要
+  - title: Xamarin
+    imageSrc: https://docs.microsoft.com/media/logos/logo_xamarin.svg
+    links:
+    - url: ~/xamarin.md
+      text: Visual Studio for Mac での Xamarin モバイル アプリ開発
+    - url: https://docs.microsoft.com/xamarin/cross-platform/get-started/introduction-to-mobile-development
+      text: Xamarin とは
+    - url: https://docs.microsoft.com/xamarin/get-started/quickstarts/single-page?pivots=macos
+      text: Xamarin の概要
+tools:
+  title: 言語
+  summary: Visual Studio for Mac では C#、F#、Razor、HTML5、CSS、JavaScript、TypeScript、XAML、および XML で記述することができます。
+  items:
+  - title: C#
+    imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
+    url: /dotnet/csharp
+  - title: F#
+    imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
+    url: /dotnet/fsharp
+  - title: JavaScript
+    imageSrc: https://docs.microsoft.com/media/logos/logo_js.svg
+    url: ~/javascript.md
+  - title: TypeScript
+    imageSrc: https://docs.microsoft.com/media/logos/logo_TS.svg
+    url: ~/javascript.md
+  - title: HTML/Razor
+    imageSrc: https://docs.microsoft.com/media/logos/logo_html5.svg
+    url: ~/razor.md
+conceptualContent:
+  title: はじめに
+  items:
   - title: Visual Studio for Mac の概要
+    links:
+    - url: ~/ide-tour.md
+      itemType: overview
+      text: IDE を探索する
+    - url: ~/version-control.md
+      itemType: overview
+      text: リポジトリからコードを開く
+    - url: ~/projects-and-solutions.md
+      itemType: overview
+      text: プロジェクトとソリューションを使用する
+    - url: ~/source-editor.md
+      itemType: overview
+      text: コードの記述
+    - url: ~/debugging.md
+      itemType: overview
+      text: コードをデバッグする
+    - url: ~/compiling-and-building.md
+      itemType: overview
+      text: プロジェクトのコンパイルとビルド
+    - url: ~/install-preview.md
+      itemType: download
+      text: プレビュー リリースをインストールする
+    - url: ~/update.md
+      itemType: download
+      text: IDE を更新する
+  - title: オリジナルを作成する
+    links:
+    - url: ~/signing-in.md
+      itemType: get-started
+      text: サインイン
+    - url: ~/customizing-the-ide.md
+      itemType: get-started
+      text: IDE をカスタマイズする
+    - url: ~/keyboard-shortcuts.md
+      itemType: get-started
+      text: キーボード ショートカットの使用
+    - url: ~/editorconfig.md
+      itemType: get-started
+      text: EditorConfig を設定する
+  - title: 詳細情報
+    links:
+    - url: https://visualstudio.microsoft.com/vs/support/mac/
+      itemType: reference
+      text: Visual Studio for Mac のサポート - FAQ
+    - url: https://visualstudio.microsoft.com/vs/pricing/
+      itemType: reference
+      text: 価格とサブスクリプション
+    - url: https://visualstudio.microsoft.com/vs/compare/
+      itemType: reference
+      text: エディションを比較する
+    - url: https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac
+      itemType: reference
+      text: サブスクライバー アクセス 
+additionalContent:
+  sections:
+  - title: タスク
     items:
-      - type: paragraph
-        text: Visual Studio for Mac 統合開発環境 (IDE) をインストールして学習します。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ~/installation.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Visual Studio for Mac をインストールする
-          - href: ~/ide-tour.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
-            title: Visual Studio for Mac を探索する
-          - href: 'https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: Visual Studio for Mac リリース ノート
-  - title: ビルドできるアプリ
-    items:
-      - type: paragraph
-        text: Visual Studio for Mac では、ASP.NET Core を使用した Web サイトや .NET Core を使用したアプリ、Unity を使用したゲーム、Xamarin を使用した Android と iOS 向けモバイル アプリをビルドすることができます。 Azure は、すべてのアプリに組み込むことができます。
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
-            text: ASP.NET Core
-            href: ~/asp-net-core.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
-            text: Azure
-            href: ~/azure-workload.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
-            text: Unity
-            href: ~/unity-tools.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
-            text: Xamarin
-            href: /xamarin/
-  - title: 使用できる言語
-    items:
-      - type: paragraph
-        text: 'Visual Studio for Mac では C#、F#、Razor、HTML5、CSS、JavaScript、TypeScript、XAML、および XML で記述することができます。'
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
-            text: 'C#'
-            href: /dotnet/csharp/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
-            text: 'F#'
-            href: /dotnet/fsharp/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
-            text: JavaScript
-            href: ~/javascript.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
-            text: TypeScript
-            href: ~/javascript.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
-            text: HTML/Razor
-            href: ~/razor.md
-  - title: Visual Studio for Mac でのコードの記述
-    items:
-      - type: paragraph
-        text: Visual Studio を使用したコードの記述、コンパイル、デバッグ、格納について説明します。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ~/source-editor.md
-            html: <p>お好みの言語で Intellisense、リファクタリング、構文の強調表示ができます。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-            title: コードの記述
-          - href: ~/compiling-and-building.md
-            html: <p>コンパイラを構成してアプリをビルドします。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: コンパイルとビルド
-          - href: ~/debugging.md
-            html: <p>デバッガーでアプリを実行して問題を調査します。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: デバッグ
-          - href: ~/version-control.md
-            html: <p>Azure DevOps、Git、Subversion のソース リポジトリにアクセスできます。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
-            title: バージョン コントロール
-  - title: さらにサポートが必要な場合
-    items:
-      - type: paragraph
-        text: その他の便利なコンテンツへのリンク
-      - type: list
-        style: unordered
-        items:
-          - html: '<a href="https://visualstudio.microsoft.com/vs/support/mac/">Visual Studio for Mac のサポート - FAQ</a>'
-          - html: '<a href="https://visualstudio.microsoft.com/vs/pricing/">価格とサブスクリプション</a>'
-          - html: '<a href="https://visualstudio.microsoft.com/vs/compare/">エディションの比較</a>'
-          - html: '<a href="https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac">サブスクライバーのアクセス (古いダウンロードを含む)</a>'
-          - html: '<a href="https://code.visualstudio.com">Visual Studio Code</a>'
+    - title: 開発
+      summary: お好みの言語で Intellisense、リファクタリング、構文の強調表示ができます。
+      url: ~/source-editor.md
+    - title: ビルド
+      summary: コンパイラを構成してアプリをビルドします。
+      url: ~/compiling-and-building.md
+    - title: デバッグ
+      summary: デバッガーでアプリを実行して問題を調査します。
+      url: ~/debugging.md
+    - title: バージョン コントロール
+      summary: Git や Subversion などのバージョン コントロール テクノロジを使ってコードを共有します。
+      url: ~/version-control.md
+  footer: '[ブログ](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [イシューの報告](~/report-a-problem.md) - [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=41)'
