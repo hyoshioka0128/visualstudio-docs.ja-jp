@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911453"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903866"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time デバッガーを無効にする
 
 実行中のアプリでエラーが発生すると、[Just-in-time デバッガー] ダイアログボックスが開き、アプリが続行されないようにすることができます。
 
-Just-in-time デバッガーでは、Visual Studio を起動してエラーをデバッグするオプションが用意されています。 エラーに関する詳細情報を表示したり、デバッグを試行したりするには、 [Visual Studio](https://visualstudio.microsoft.com/)または別の選択したデバッガーがインストールされている必要があります。
+Just-in-time デバッガーでは、Visual Studio を起動してエラーをデバッグするオプションが用意されています。 エラーに関する詳細情報を表示したり、デバッグを試行したりするには、Visual Studio または別の選択したデバッガーがインストールされている必要があります。
 
-Visual Studio ユーザーで、エラーのデバッグを試行する場合は、 [Just-in-time デバッガーを使用](../debugger/debug-using-the-just-in-time-debugger.md)したデバッグに関する参照してください。 エラーを修正できない場合、または Just-in-time デバッガーを開いたままにしたい場合は、 [Visual Studio から just-in-time デバッグを無効](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)にすることができます。
+既に Visual Studio ユーザーがいて、エラーのデバッグを試行する場合は、 [Just-in-time デバッガーを使用](../debugger/debug-using-the-just-in-time-debugger.md)したデバッグに関するを参照してください。 エラーを修正できない場合、または Just-in-time デバッガーを開いたままにしたい場合は、 [Visual Studio から just-in-time デバッグを無効](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)にすることができます。
 
 Visual Studio がインストールされていても、不要になった場合は、 [Windows レジストリから just-in-time デバッグを無効](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)にすることが必要になる場合があります。
 
