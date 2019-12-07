@@ -1,5 +1,5 @@
 ---
-title: '方法: Visual Studio 拡張機能のルールベースの UI コンテキストを使用する |Microsoft Docs'
+title: '方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -7,16 +7,16 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd7e091192e0111a9dcf0997af8316daef364adb
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2abe9938d4c3212f29b8591727d731e99e47929c
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252338"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74904008"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: Visual Studio 拡張機能のルールベースの UI コンテキストを使用する
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する
 
-Visual Studio では、特定の既知<xref:Microsoft.VisualStudio.Shell.UIContext>のがアクティブになったときに vspackage を読み込むことができます。 ただし、これらの UI コンテキストは不十分であるため、拡張機能の作成者には何も選択されませんが、VSPackage の読み込みに必要なポイントの前にアクティブになる UI コンテキストを選択することはできません。 よく知られている UI コンテキストの一覧につい<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>ては、「」を参照してください。
+Visual Studio では、特定の既知の <xref:Microsoft.VisualStudio.Shell.UIContext>がアクティブになったときに Vspackage を読み込むことができます。 ただし、これらの UI コンテキストは不十分であるため、拡張機能の作成者には何も選択されませんが、VSPackage の読み込みに必要なポイントの前にアクティブになる UI コンテキストを選択することはできません。 よく知られている UI コンテキストの一覧については、「<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>」を参照してください。
 
 パッケージの読み込みは、パフォーマンスに影響を与える可能性があり、必要以上に迅速に読み込むことがベストプラクティスではありません。 Visual Studio 2015 では、ルールベースの UI コンテキストの概念が導入されました。これは、拡張機能の作成者が UI コンテキストをアクティブ化し、関連付けられている Vspackage を読み込んだ正確な条件を定義できるようにするメカニズムです。
 
@@ -35,17 +35,17 @@ Visual Studio では、特定の既知<xref:Microsoft.VisualStudio.Shell.UIConte
    このメカニズムは、すべての Visual Studio 拡張機能で使用できます。
 
 ## <a name="create-a-rule-based-ui-context"></a>ルールベースの UI コンテキストを作成する
- たとえば、TestPackage という名前の拡張機能を使用しているとします。これには、 *.config*拡張子を持つファイルにのみ適用されるメニューコマンドが用意されています。 VS2015 より前のベストオプションは、UI コンテキストがアクティブ<xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A>になったときに testpackage を読み込むことでした。 この方法で TestPackage を読み込むことは効率的ではありません。読み込まれたソリューションに *.config*ファイルが含まれていない可能性があるためです。 次の手順では、 *.config*拡張子を持つファイルが選択されている場合にのみ、規則ベースの ui コンテキストを使用して ui コンテキストをアクティブ化する方法を示し、その ui コンテキストがアクティブになったときに testpackage を読み込みます。
+ たとえば、TestPackage という名前の拡張機能を使用しているとします。これには、 *.config*拡張子を持つファイルにのみ適用されるメニューコマンドが用意されています。 VS2015 の前に、UI コンテキストがアクティブ化された <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> ときに TestPackage を読み込むことが最善の方法でした。 この方法で TestPackage を読み込むことは効率的ではありません。読み込まれたソリューションに *.config*ファイルが含まれていない可能性があるためです。 次の手順では、 *.config*拡張子を持つファイルが選択されている場合にのみ、規則ベースの ui コンテキストを使用して ui コンテキストをアクティブ化する方法を示し、その ui コンテキストがアクティブになったときに testpackage を読み込みます。
 
-1. 新しい uicontext GUID を定義し、VSPackage クラス<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>と<xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>にを追加します。
+1. 新しい UIContext GUID を定義し、VSPackage クラス <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> と <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>に追加します。
 
-    たとえば、新しい UIContext "UIContextGuid" が追加されるとします。 作成された guid ([**ツール** > ] **[guid の作成]** をクリックして guid を作成できます) は、"8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" です。 次に、パッケージクラス内に次の宣言を追加します。
+    たとえば、新しい UIContext "UIContextGuid" が追加されるとします。 作成された GUID ( **[ツール]**  >  **[guid の作成]** をクリックして guid を作成できます) は "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" です。 次に、パッケージクラス内に次の宣言を追加します。
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    属性には、次の値を追加します。(これらの属性の詳細については後で説明します)
+    属性には、次の値を追加します (これらの属性の詳細については後で説明します)。
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -56,7 +56,7 @@ Visual Studio では、特定の既知<xref:Microsoft.VisualStudio.Shell.UIConte
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    これらのメタデータは、新しい UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) と1つの用語 "DotConfig" を参照する式を定義します。 "Dotconfig" という用語は、アクティブ階層内の現在の選択範囲の名前が、正規表現パターン "\\. .config $" ( *.config*で終わる) と一致する場合に true に評価されます。 (既定値) 値は、デバッグに便利な規則の名前を定義します (省略可能)。
+    これらのメタデータは、新しい UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) と1つの用語 "DotConfig" を参照する式を定義します。 "DotConfig" という用語は、アクティブ階層内の現在の選択範囲の名前が、正規表現パターン "\\. .config $" ( *.config*で終わる) と一致する場合に true と評価されます。 (既定値) 値は、デバッグに便利な規則の名前を定義します (省略可能)。
 
     属性の値は、後でビルド時に生成された .pkgdef に追加されます。
 
@@ -80,11 +80,11 @@ Visual Studio では、特定の既知<xref:Microsoft.VisualStudio.Shell.UIConte
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    これで、  *\*.config*ファイルのコンテキストメニューコマンドは、ソリューションエクスプローラーで選択された項目が *.config*ファイルの場合にのみ表示され、これらのコマンドのいずれかが選択されるまで、パッケージは読み込まれません。
+    これで、 *\*.config*ファイルのコンテキストメニューコマンドは、ソリューションエクスプローラーで選択された項目が *.config*ファイルの場合にのみ表示され、これらのコマンドのいずれかが選択されるまで、パッケージは読み込まれません。
 
    次に、デバッガーを使用して、パッケージがであると予想される場合にのみ読み込まれることを確認します。 TestPackage をデバッグするには:
 
-5. <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドにブレークポイントを設定します。
+5. <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> メソッドにブレークポイントを設定します。
 
 6. TestPackage をビルドし、デバッグを開始します。
 
@@ -132,28 +132,28 @@ Visual Studio では、特定の既知<xref:Microsoft.VisualStudio.Shell.UIConte
 |用語|説明|
 |-|-|
 |{nnnnnnnn-nnnn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID は、UI コンテキストを参照します。 この用語は、UI コンテキストがアクティブである場合は true、それ以外の場合は false になります。|
-|HierSingleSelectionName:\<pattern >|この用語は、アクティブ階層内の選択が単一の項目であり、選択した項目の名前が "pattern" で指定された .Net 正規表現と一致する場合に true になります。|
-|Usersettingsstorequery:\<クエリ >|"query" は、0以外の値に評価される必要がある、ユーザー設定ストアへの完全なパスを表します。 クエリは、最後のスラッシュで "collection" および "propertyName" に分割されます。|
-|Configsettingsstorequery:\<クエリ >|"query" は、構成設定ストアへの完全パスを表します。これは、0以外の値に評価される必要があります。 クエリは、最後のスラッシュで "collection" および "propertyName" に分割されます。|
-|Activeprojectflavor:\<projecttypeguid >|現在選択されているプロジェクトが flavored (集計) され、指定されたプロジェクトの種類の GUID と一致するフレーバーがある場合、この用語は true になります。|
-|Activeeditorcontenttype:\<contenttype >|選択したドキュメントが、指定されたコンテンツタイプのテキストエディターである場合、用語は true になります。|
-|Activeprojectcapability ビリ\<ティ: 式 >|アクティブなプロジェクトの機能が指定された式と一致する場合は、という用語が当てはまります。 式は、VB &#124; CSharp のようなものにすることができます。|
-|Solutionhasprojectcapability ビリ\<ティ: 式 >|上記と同様ですが、式に一致する読み込み済みのプロジェクトがソリューションに含まれている場合は、という用語が当てはまります。|
-|Solutionhasprojectflavor:\<projecttypeguid >|ソリューションに flavored (集計) され、指定されたプロジェクトの種類の GUID に一致するフレーバーがあるプロジェクトがある場合、この用語は true になります。|
-|ProjectAddedItem:\<pattern >| "Pattern" と一致するファイルが、開いている soluion 内のプロジェクトに追加された場合、この用語は true になります。|
-|Activeprojectoutputtype:\<outputType >|アクティブプロジェクトの出力の種類が完全に一致する場合は、という用語が当てはまります。  OutputType には、整数または型<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE>を指定できます。|
-|Activeprojectbuildproperty:\<buildproperty > =\<regex >|アクティブなプロジェクトに指定されたビルドプロパティがあり、プロパティ値が指定された regex フィルターと一致する場合は、という用語が当てはまります。 ビルドプロパティの詳細については、「 [MSBuild プロジェクトファイルでのデータの永続化」](internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。|
-|Solutionhasprojectbuildproperty:\<buildproperty > =\<regex >|ソリューションに、指定したビルドプロパティとプロパティ値が指定された regex フィルターに一致するプロジェクトが読み込まれている場合は、という用語が当てはまります。|
+|HierSingleSelectionName:\<パターン >|この用語は、アクティブ階層内の選択が単一の項目であり、選択した項目の名前が "pattern" で指定された .Net 正規表現と一致する場合に true になります。|
+|UserSettingsStoreQuery:\<クエリ >|"query" は、0以外の値に評価される必要がある、ユーザー設定ストアへの完全なパスを表します。 クエリは、最後のスラッシュで "collection" および "propertyName" に分割されます。|
+|ConfigSettingsStoreQuery:\<クエリ >|"query" は、構成設定ストアへの完全パスを表します。これは、0以外の値に評価される必要があります。 クエリは、最後のスラッシュで "collection" および "propertyName" に分割されます。|
+|ActiveProjectFlavor:\<projectTypeGuid >|現在選択されているプロジェクトが flavored (集計) され、指定されたプロジェクトの種類の GUID と一致するフレーバーがある場合、この用語は true になります。|
+|ActiveEditorContentType:\<contentType >|選択したドキュメントが、指定されたコンテンツタイプのテキストエディターである場合、用語は true になります。 注: 選択したドキュメントの名前を変更しても、ファイルを閉じて再度開くまで、この用語は更新されません。|
+|ActiveProjectCapability ビリティ:\<式 >|アクティブなプロジェクトの機能が指定された式と一致する場合は、という用語が当てはまります。 式は、VB &#124; CSharp のようなものにすることができます。|
+|SolutionHasProjectCapability ビリティ:\<式 >|上記と同様ですが、式に一致する読み込み済みのプロジェクトがソリューションに含まれている場合は、という用語が当てはまります。|
+|SolutionHasProjectFlavor:\<projectTypeGuid >|ソリューションに flavored (集計) され、指定されたプロジェクトの種類の GUID に一致するフレーバーがあるプロジェクトがある場合、この用語は true になります。|
+|ProjectAddedItem:\<パターン >| "Pattern" と一致するファイルが、開いている soluion 内のプロジェクトに追加された場合、この用語は true になります。|
+|ActiveProjectOutputType:\<outputType >|アクティブプロジェクトの出力の種類が完全に一致する場合は、という用語が当てはまります。  OutputType は、整数または <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> 型である可能性があります。|
+|ActiveProjectBuildProperty:\<buildProperty > =\<regex >|アクティブなプロジェクトに指定されたビルドプロパティがあり、プロパティ値が指定された regex フィルターと一致する場合は、という用語が当てはまります。 ビルドプロパティの詳細については、「 [MSBuild プロジェクトファイルでのデータの永続化」](internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。|
+|SolutionHasProjectBuildProperty:\<buildProperty > =\<regex >|ソリューションに、指定したビルドプロパティとプロパティ値が指定された regex フィルターに一致するプロジェクトが読み込まれている場合は、という用語が当てはまります。|
 
 ## <a name="compatibility-with-cross-version-extension"></a>バージョン間の拡張機能との互換性
 
 ルールベースの UI コンテキストは、Visual Studio 2015 の新機能であり、以前のバージョンに移植されることはありません。 以前のバージョンに移植しないと、Visual Studio の複数のバージョンを対象とする拡張機能やパッケージに問題が発生します。 これらのバージョンは Visual Studio 2013 以前で自動読み込みする必要がありますが、Visual Studio 2015 で自動読み込みが行われないようにするには、ルールベースの UI コンテキストを利用できます。
 
-このようなパッケージをサポートするために、レジストリの AutoLoadPackages エントリは、Visual Studio 2015 以降でエントリをスキップする必要があることを示すフラグを値フィールドに提供できるようになりました。 これを行うには、flags オプションをに<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>追加します。 Vspackage は、 **SkipWhenUIContextRulesActive**オプションを<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>属性に追加して、Visual Studio 2015 以降ではエントリを無視することを示すことができるようになりました。
+このようなパッケージをサポートするために、レジストリの AutoLoadPackages エントリは、Visual Studio 2015 以降でエントリをスキップする必要があることを示すフラグを値フィールドに提供できるようになりました。 これを行うには、flags オプションを <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>に追加します。 Vspackage は、Visual Studio 2015 以降ではエントリが無視されることを示すために、<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 属性に**SkipWhenUIContextRulesActive**オプションを追加できるようになりました。
 ## <a name="extensible-ui-context-rules"></a>拡張可能な UI コンテキストの規則
 
 場合によっては、パッケージが静的 UI コンテキストルールを使用できないことがあります。 たとえば、コマンドの状態が、インポートされた MEF プロバイダーでサポートされているエディターの種類に基づいているように、拡張をサポートするパッケージがあるとします。 現在の編集の種類をサポートする拡張機能がある場合は、コマンドが有効になります。 このような場合、パッケージ自体は、使用可能な MEF 拡張機能に応じて変更されるため、静的な UI コンテキストルールを使用できません。
 
 このようなパッケージをサポートするために、ルールベースの UI コンテキストでは、ハードコーディングされた式 "*" をサポートしています。これは、その下にあるすべての用語をまたはと結合することを示します。 これにより、マスターパッケージは既知のルールベースの UI コンテキストを定義し、そのコマンドの状態をこのコンテキストに関連付けることができます。 その後、マスターパッケージを対象とする MEF 拡張機能では、他の用語やマスター式に影響を与えることなく、サポートされているエディターの条件を追加できます。
 
-コンストラクター <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>のドキュメントは、拡張可能な UI コンテキストの規則の構文を示しています。
+コンストラクター <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> ドキュメントは、拡張可能な UI コンテキストの規則の構文を示しています。
