@@ -6,14 +6,15 @@ ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a63cfca8e06d999c585793fabdce627d4896d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968042"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778181"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 *VSPerfCmd.exe* の **Sys** オプションは、システム呼び出しイベント (プロファイリングされたアプリケーションからオペレーティング システムへの関数呼び出し) にサンプリングされるプロファイリング イベントを設定し、必要に応じて、サンプリング間隔のシステム呼び出し数を既定値の 10 から変更します。
@@ -36,20 +37,20 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="required-options"></a>必須オプション
  **Sys** には、次のオプションのいずれかが必要です。
 
- **Launch:**`AppName` プロファイラーと、`AppName` で指定されたアプリケーションを起動します。
+ **Launch:** `AppName` プロファイラーと、`AppName` で指定されたアプリケーションを起動します。
 
- **Attach:**`PID` プロファイラーを `PID` で指定されたプロセスにアタッチします。
+ **Attach:** `PID` プロファイラーを `PID` で指定されたプロセスにアタッチします。
 
 ## <a name="invalid-options"></a>無効なオプション
  以下のオプションは、**Sys** と同じコマンド ラインには指定できません。
 
- **PF**[**:**`Events`] サンプリング イベントをページ フォールトに設定します。オプションで、サンプリング間隔を `Events` に設定します。 既定の PF 間隔は 10 です。
+ **PF**[ **:** `Events`] サンプリング イベントをページ フォールトに設定します。オプションで、サンプリング間隔を `Events` に設定します。 既定の PF 間隔は 10 です。
 
- **Timer**[**:**`Cycles`] サンプリング イベントをプロセッサのクロック サイクルに設定し、必要に応じてサンプリング間隔を `Cycles` に設定します。 既定の Timer 間隔は 10,000,000 です。
+ **Timer**[ **:** `Cycles`] サンプリング イベントをプロセッサのクロック サイクルに設定し、必要に応じてサンプリング間隔を `Cycles` に設定します。 既定の Timer 間隔は 10,000,000 です。
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] サンプリング イベントを、`Name` で指定された CPU パフォーマンス カウンターに設定し、サプリング間隔を `Reload` に設定します。
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}] .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
 
 ## <a name="example"></a>例
  この例では、プロファイラーのサンプリング イベントをシステム呼び出しに設定し、サンプリング間隔をサンプルごとに 20 の呼び出しに設定する方法を示します。

@@ -6,14 +6,15 @@ ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c105f5176948271c832330f01d0d03d270e69a97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995320"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778610"
 ---
 # <a name="launch"></a>Launch
 **Launch** オプションは、サンプリング メソッドを使用するプロファイラーを起動し、指定されたアプリケーションも起動します。
@@ -32,7 +33,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>有効なオプション
  **Launch** オプションと組み合わせて単一コマンド ラインで指定できる VSPerfCmd オプションを以下に示します。
 
- **Start:**`Method` コマンド ライン プロファイラー セッションを初期化し、指定されたプロファイル方法を設定します。
+ **Start:** `Method` コマンド ライン プロファイラー セッションを初期化し、指定されたプロファイル方法を設定します。
 
  **GlobalOn** と **GlobalOff** プロファイリングを再開 (**GlobalOn**) または一時停止 (**GlobalOff**) しますが、プロファイル セッションは終了しません。
 
@@ -45,14 +46,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Console** 指定されたコマンド ライン アプリケーションを新しいウィンドウで起動します。
 
- **Args:**`ArgList` アプリケーションに渡す引数リストを指定します。
+ **Args:** `ArgList` アプリケーションに渡す引数リストを指定します。
 
  **LineOff** 行レベルのプロファイル データの収集を無効にします。
 
 ## <a name="sampling-options"></a>サンプリングのオプション
  **Launch** コマンド ラインでは、次のサンプリング間隔オプションのいずれかを指定できます。 既定のサンプリング間隔は、10,000,000 プロセッサ クロック サイクルです。
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] サンプリング間隔の数値と種類と指定します。
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] サンプリング間隔の数値と種類と指定します。
 
 - **Timer** - `Cycles` のプロセッサ クロック サイクル (停止なし) ごとにサンプリングを行います。 `Cycles` が指定されていない場合、10,000,000 サイクルが使用されます。
 

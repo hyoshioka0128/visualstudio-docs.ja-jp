@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161956"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706998"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -83,14 +83,14 @@ A: すべての Visual Studio Enterprise サブスクリプションに Pluralsi
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q:任意のカスタマイズされた学習のプレイリストやチャネルへのアクセス権はありますか。
 A: はい。Visual Studio サブスクライバーは、Pluralsight トレーニング特典の一部としてチャネルをエクスポートするアクセス権を取得します。 これらのチャネルは Microsoft の専門家によって特別に作成されており、.Net、Azure、DevOps、モビリティの学習範囲を対象としています。 Visual Studio サブスクリプション ポータル [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) から Pluralsight 特典をアクティブにし、Pluralsight 学習ページでこれらのチャネルにアクセスします。
 
-•   Scott Hanselmann (.Net、Azure) - [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+•   Scott Hanselmann (.Net、Azure) - [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-•   Donovan Brown (DevOps) - [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
+•   Donovan Brown (DevOps) - [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-•   James Montemagno (モビリティ) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+•   James Montemagno (モビリティ) - [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q:Pluralsight サブスクリプションがなくなるとどうなりますか。
-A: Pluralsight 無料サブスクリプションの終了時、Pluralsight から直接、サブスクリプションを購入できます。  詳細については、[Pluralsight](http://www.pluralsight.com) にお問い合わせください。
+A: Pluralsight 無料サブスクリプションの終了時、Pluralsight から直接、サブスクリプションを購入できます。  詳細については、[Pluralsight](https://www.pluralsight.com) にお問い合わせください。
 
 ## <a name="support-resources"></a>サポート リソース
 - [Pluralsight ヘルプ センター](https://help.pluralsight.com/help)は、Pluralsight コースの取得や Pluralsight Web サイトの使用をサポートします。
@@ -98,6 +98,6 @@ A: Pluralsight 無料サブスクリプションの終了時、Pluralsight か�
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-アカウントを作成したら、トレーニングを開始できます。  [https://www.pluralsight.com](http://www.pluralsight.com) にアクセスし、ページの右上隅にある **[ログイン]** をタップして新しいコースを開始するか、既に進行中のコースに戻ります。
+アカウントを作成したら、トレーニングを開始できます。  [https://www.pluralsight.com](https://www.pluralsight.com) にアクセスし、ページの右上隅にある **[ログイン]** をタップして新しいコースを開始するか、既に進行中のコースに戻ります。
 
 [Azure DevTest の個人クレジット](vs-azure.md)をアクティブ化して、独自の開発サンドボックスを活用します。 

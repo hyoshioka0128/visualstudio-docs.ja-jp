@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 割り当てられているサブスクリプションの最大数を管理ポータルで表示する方法について説明します
-ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605480"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491724"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>最大使用量機能を使用して割り当てられているサブスクリプション数を追跡する
 Visual Studio のサブスクリプション管理ポータルの新機能を使用すると、購入して割り当てたサブスクリプション数を追跡し、過去 1 年間と全契約期間の割り当てた各レベルのサブスクリプションのピーク数を特定できます。 

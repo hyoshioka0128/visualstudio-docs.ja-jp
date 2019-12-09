@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026487"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74566994"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -46,7 +46,17 @@ ms.locfileid: "70026487"
 
 ## <a name="modify-workloads"></a>ワークロードの変更
 
- [ワークロード](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)には、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+::: moniker range="vs-2017"
+
+ [ワークロード](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/)には、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ ワークロードには、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+
+::: moniker-end
 
 >[!NOTE]
 > 次の手順では、インターネットに接続しているものとします。
@@ -59,7 +69,7 @@ ms.locfileid: "70026487"
 
      たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
-     ![Visual Studio インストーラー](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio インストーラーの検索")
+     ![Visual Studio インストーラー](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio インストーラーを見つける")
 
      >[!TIP]
      >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
@@ -119,13 +129,12 @@ ms.locfileid: "70026487"
 
 ## <a name="modify-individual-components"></a>個々のコンポーネントの変更
 
-[ワークロード](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)をインストールせずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個々のコンポーネント]** タブを選択し、必要なものを選択して、画面の指示に従います。
+ワークロードをインストールせずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個々のコンポーネント]** タブを選択し、必要なものを選択して、画面の指示に従います。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio ワークロードの詳細](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
 * [Visual Studio のワークロードとコンポーネント ID の一覧](workload-and-component-ids.md)
 * [Visual Studio の更新](update-visual-studio.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)

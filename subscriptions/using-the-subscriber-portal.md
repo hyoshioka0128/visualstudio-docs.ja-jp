@@ -1,17 +1,17 @@
 ---
-title: http://my.visualstudio.com のサブスクライバー ポータルの使用 | Microsoft Docs
+title: https://my.visualstudio.com のサブスクライバー ポータルの使用 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095315"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74705828"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 

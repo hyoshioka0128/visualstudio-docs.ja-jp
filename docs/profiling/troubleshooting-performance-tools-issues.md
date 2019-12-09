@@ -6,14 +6,15 @@ ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422198"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778103"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>パフォーマンス ツールに関する問題のトラブルシューティング
 プロファイリング ツールを使用するときに、次の問題のいずれかが発生する場合があります。
@@ -23,7 +24,7 @@ ms.locfileid: "63422198"
 - [パフォーマンス ビューとレポートに関数名ではなく番号が表示される](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>プロファイリング ツールでデータが収集されない
- アプリケーションをプロファイルした後に、プロファイリング データ (.*vsp*) ファイルが作成されず、**[出力]** ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。
+ アプリケーションをプロファイルした後に、プロファイリング データ (.*vsp*) ファイルが作成されず、 **[出力]** ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。
 
  PRF0025:データは収集されませんでした。
 
@@ -31,7 +32,7 @@ ms.locfileid: "63422198"
 
 - サンプリングまたは .NET メモリ メソッドを使用してプロファイリングしたプロセスによって、子プロセスが起動されます。この子プロセスは、アプリケーションの作業を実行するプロセスになります。 たとえば、一部のアプリケーションでは、コマンド ラインを読み取り、Windows アプリケーションまたはコマンド ライン アプリケーションのどちらとして起動したかを決定します。 Windows アプリケーションが要求された場合、元のプロセスは Windows アプリケーションとして構成された新しいプロセスを起動し、元のプロセスは終了します。 プロファイリング ツールは子プロセスのデータを自動的に収集しないため、データは収集されません。
 
-     この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、「[方法 :実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)」および [Attach (VSPerfCmd)](../profiling/attach.md) に関するページを参照してください。
+     この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、[実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)」および [Attach (VSPerfCmd)](../profiling/attach.md) に関するページを参照してください。
 
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>パフォーマンス ビューとレポートに関数名ではなく番号が表示される
  アプリケーションのプロファイリング後、レポートとビューに関数名ではなく番号が表示されます。

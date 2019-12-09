@@ -9,14 +9,15 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 359d36ed7eb74394e63af39cdbc9986b02385f8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403626"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772715"
 ---
 # <a name="modules-view---sampling-data"></a>モジュール ビュー - サンプリング データ
 サンプリング データのモジュール ビューには、プロファイル データでサンプリングされたパフォーマンス データが、モジュールごとにグループ化されて表示されます。 各モジュールが、階層ツリーのルートです。 モジュールのサンプリングされた関数が、モジュール ノードの下に一覧表示されます。

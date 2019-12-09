@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939509"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778298"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>パフォーマンス データ ファイルを使ったシンボル情報の保存
 
@@ -27,7 +28,7 @@ Visual Studio IDE を使用してファイルを分析している場合、VSP �
 
 シンボルは、次の方法で Visual Studio IDE やコマンド ラインからシリアル化できます。
 
-- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE でシンボルをシリアル化するには、メニュー バーの **[ツール]** をポイントし、**[オプション]** をクリックします。 **[オプション]** ウィンドウで、**[パフォーマンス ツール]** を選択し、**[シンボル情報を自動的にシリアル化]** チェック ボックスをオンにします。
+- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE でシンボルをシリアル化するには、メニュー バーの **[ツール]** をポイントし、 **[オプション]** をクリックします。 **[オプション]** ウィンドウで、 **[パフォーマンス ツール]** を選択し、 **[シンボル情報を自動的にシリアル化]** チェック ボックスをオンにします。
 
 - PACKSYMBOLS は、これに相当するレポート ファイル保存時のコマンド ライン オプションです。 シンボルをシリアル化するには、「**vsperfreport /summary:all /packsymbols filename.vsp**」と入力します。
 

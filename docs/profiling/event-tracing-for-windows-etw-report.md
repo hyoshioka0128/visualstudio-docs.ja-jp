@@ -9,14 +9,15 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447254"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779299"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>ETW (Event Tracing for Windows) レポート
 Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。 ETW データはバイナリ (.*etl*) ファイルで収集されます。

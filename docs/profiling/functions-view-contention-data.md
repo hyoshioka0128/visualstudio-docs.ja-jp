@@ -8,14 +8,15 @@ ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dcea1097b33c612094c4a7eb35b240c28f8bde0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969746"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780053"
 ---
 # <a name="functions-view---contention-data"></a>関数ビュー - 競合データ
 競合データの関数レポート ビューには、プロファイリング実行中に実行がブロックされた関数が一覧表示されます。

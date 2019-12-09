@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185991"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706784"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4420"></a>4.4.2.0
+
+リリース日: 2019 年 12 月 3 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - 診断のユーザー定義インターフェイスを修正しました。
+
+  - クイック ヒントの間違った形式の式を修正しました。
+
+## <a name="4410"></a>4.4.1.0
+
+リリース日: 2019 年 11 月 6 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - Unity バックグラウンド プロセスのサポートを追加しました。 (デバッガーは子プロセスではなくメイン プロセスに自動接続できます)。
+  
+  - Unity メッセージのクイック ヒントを追加しました。関連するドキュメントが表示されます。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - タグ比較アナライザー `UNT0002` の、高度なバイナリ式および呼び出し式を修正しました。
+
+### <a name="deprecated-features"></a>非推奨の機能
+
+- **統合:**
+
+  - 今後、Visual Studio Tools for Unity では Visual Studio 2017 以降のみがサポートされます。
+
+## <a name="4400"></a>4.4.0.0
+
+リリース日: 2019 年 10 月 15 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - すべての Unity メッセージに対して `IDE0060` (未使用パラメーター) 用の非表示機能を追加しました。
+  
+  - `TooltipAttribute` でタグ付けされたフィールド用のクイック ヒントを追加しました。 (これは、このフィールドを使用する単純な get アクセサーに対しても機能します)。
 
 ## <a name="4330"></a>4.3.3.0
 

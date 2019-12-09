@@ -7,22 +7,23 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 023681b263e6e70048ec7d82d2cee741672989ff
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979911"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773943"
 ---
 # <a name="set-general-performance-session-options"></a>パフォーマンス セッションの全般オプションの設定
 
-パフォーマンス セッションのプロパティ ダイアログ ボックスの **[全般]** ページで、Visual Studio プロファイル ツールのパフォーマンス セッションに収集方法およびプロファイル データの名前付け規則を設定することができます。 **パフォーマンス エクスプローラー**からこのダイアログ ボックスを開くには、パフォーマンス セッションを右クリックし、**[プロパティ]** をクリックします。
+パフォーマンス セッションのプロパティ ダイアログ ボックスの **[全般]** ページで、Visual Studio プロファイル ツールのパフォーマンス セッションに収集方法およびプロファイル データの名前付け規則を設定することができます。 **パフォーマンス エクスプローラー**からこのダイアログ ボックスを開くには、パフォーマンス セッションを右クリックし、 **[プロパティ]** をクリックします。
 
 ## <a name="choosing-data-collection-methods"></a>データ コレクション方法の選択
 
-基本的な収集方法を設定するには、**[プロファイル コレクション]** でオプションのいずれかを選択します。 オプションは次の表のとおりです。
+基本的な収集方法を設定するには、 **[プロファイル コレクション]** でオプションのいずれかを選択します。 オプションは次の表のとおりです。
 
 |||
 |-|-|
@@ -39,7 +40,7 @@ ms.locfileid: "62979911"
 
  アプリケーションのプロファイリングを開始すると、プロファイル セッション ページが表示されます。このページで、プロファイリングを一時停止、再開、および停止することができます。
 
- ![プロファイリング セッションのページ](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+ ![プロファイリング セッション ページ](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 ## <a name="set-profiling-data-file-options"></a>プロファイル データ ファイルのオプションの設定
 

@@ -6,14 +6,15 @@ ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995336"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774127"
 ---
 # <a name="lineoff"></a>LineOff
 既定では、サンプリング プロファイル方法を使用するときに、プロファイラーがソース コードの行番号と行番号オフセットのデータを収集します。 VSPerfCmd **LineOff** オプションを指定すると、VSPerfCmd を使用してアプリケーションを起動するときに、行番号データの収集が無効になります。 **LineOff** が指定されている場合、プロファイル データは関数レベルで収集されます。
@@ -32,7 +33,7 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ## <a name="required-options"></a>必須オプション
  **LineOff** オプションは、**Launch** オプションを含むコマンド ラインでのみ使用できます。
 
- **Launch:**`AppName` 指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。
+ **Launch:** `AppName` 指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。
 
 ## <a name="example"></a>例
  この例ではアプリケーションとプロファイラーを起動し、行レベルのサンプリングを無効にします。

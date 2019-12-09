@@ -7,14 +7,14 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74142204"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74485468"
 ---
-Visual Studio を使用すると、コンテナー化された ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ACR に発行します。
+Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -73,26 +73,6 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 **[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。
 
-**[ツール]** メニュー、[NuGet パッケージ マネージャー]、 **[パッケージ マネージャー コンソール]** の順に選択して、 **[パッケージ マネージャー コンソール]** (PMC) を開きます。
-
-アプリの結果の Docker イメージは、*dev* としてタグ付けされます。 このイメージは、*microsoft/dotnet* 基本イメージの *2.2-aspnetcore-runtime* タグに基づいています。 **パッケージ マネージャー コンソール** (PMC) ウィンドウで `docker images` コマンドを実行します。 コンピューター上のイメージが表示されます。
-
-```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-hellodockertools  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
-```
-
-> [!NOTE]
-> **[デバッグ]** 構成ではボリュームのマウントを使用して、反復編集とデバッグ操作を提供するため、**dev** イメージにはアプリのバイナリやその他のコンテンツは含まれません。 すべてのコンテンツを含む実稼働イメージを作成するには、 **[リリース]** 構成を使用します。
-
-PMC で `docker ps` コマンドを実行します。 アプリがコンテナーを使用して実行されていることがわかります。
-
-```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
-```
-
 ## <a name="containers-window"></a>コンテナー ウィンドウ
 
 Visual Studio 2019 バージョン 16.4 以降をお持ちの場合は、 **[コンテナー]** ウィンドウを使用して、ご利用のコンピューター上で実行中のコンテナー、および使用可能なイメージを確認できます。
@@ -102,6 +82,8 @@ IDE の [検索] ボックスを使用して (**Ctrl**+**Q** を押して使用)
 **[コンテナー]** ウィンドウをエディターの下などの便利な場所に配置するには、ウィンドウを移動してウィンドウ配置ガイドに従います。
 
 ウィンドウで、ご利用のコンテナーを見つけ、各タブをステップ実行して、環境変数、ポート マッピング、ログ、およびファイル システムを表示します。
+
+![コンテナー ウィンドウのスクリーンショット](../../media/overview/vs-2019/container-tools-window.png)
 
 詳細については、[Visual Studio でのコンテナーおよびイメージの表示および診断](../../view-and-diagnose-containers.md)に関するページを参照してください。
 

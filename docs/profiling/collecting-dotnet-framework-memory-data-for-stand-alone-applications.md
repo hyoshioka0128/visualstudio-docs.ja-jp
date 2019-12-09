@@ -6,14 +6,15 @@ ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e23c473d281ba72173df43349bf3a44929ddb60f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 04656351b538aa71811bc32d6b45d735f5441441
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263746"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773206"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用して .NET Framework メモリ データを収集する
 
@@ -48,5 +49,5 @@ ms.locfileid: "66263746"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>.NET メモリ データ ビューとレポートの分析
 - [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)

@@ -9,14 +9,15 @@ ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 091961f3425714c0dc5ddabfac847c76339ab064
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994945"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778376"
 ---
 # <a name="profiling-and-windows-vista-security"></a>プロファイルと Windows Vista のセキュリティ
 
@@ -34,7 +35,7 @@ ms.locfileid: "62994945"
 
 *セッション間プロファイリング*は、別のユーザー セッションで実行しているプロセスをプロファイリングする機能です。 たとえば、サービスのほとんどはセッション 0 で実行され、ユーザーはセッション 0 で直接実行できません。 パフォーマンス エクスプローラーのツールバーで **[プロセスにアタッチ]** ボタン、または VSPerfCmd コマンドライン ツールの `/attach` オプションを使用して、さまざまなユーザー セッションでのほとんどのプロセスをプロファイリングすることができます。
 
-プロセス間のプロファイルの表示オプションを設定すると、使用できるプロセスの一覧が表示できます。 これらのオプションは、**[プロセスにアタッチ]** を選択すると表示される **[プロセスにアタッチ]** ウィンドウで利用できます。
+プロセス間のプロファイルの表示オプションを設定すると、使用できるプロセスの一覧が表示できます。 これらのオプションは、 **[プロセスにアタッチ]** を選択すると表示される **[プロセスにアタッチ]** ウィンドウで利用できます。
 
 - **全ユーザーのプロセスを表示する**
 

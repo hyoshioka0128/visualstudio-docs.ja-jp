@@ -12,21 +12,22 @@ ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817169"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778831"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>方法: パフォーマンス セッションを手動で作成する
 パフォーマンス セッションは手動でも作成できます。 この場合、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクトを開く必要はありません。 詳細については、[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)に関する記事を参照してください。
 
 ### <a name="to-manually-create-a-performance-session"></a>パフォーマンス セッションを手動で作成するには
 
-1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[新しいパフォーマンス セッション]** をクリックします。
+1. **[デバッグ]** メニューで、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順にポイントし、 **[新しいパフォーマンス セッション]** をクリックします。
 
      空のパフォーマンス セッションが**パフォーマンス エクスプ ローラー**に追加されます。
 

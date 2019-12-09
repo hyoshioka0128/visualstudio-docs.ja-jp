@@ -9,14 +9,15 @@ ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fde17ace877d9c2fe0ce6c98a64963d82550c3ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b20835eaf8b81bd64bd90aa75d2efb32975a7c53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405695"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772832"
 ---
 # <a name="command-line-profiling-of-services"></a>サービスのコマンド ライン プロファイリング
 このセクションでは、コマンド ラインから [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールを使用して、Windows サービスのパフォーマンス データを収集する手順とオプションについて説明します。

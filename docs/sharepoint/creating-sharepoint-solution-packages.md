@@ -1,5 +1,5 @@
 ---
-title: SharePoint ソリューション パッケージの作成 |Microsoft Docs
+title: SharePoint ソリューションパッケージを作成しています |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,67 +13,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952727"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74876065"
 ---
-# <a name="create-sharepoint-solution-packages"></a>SharePoint ソリューション パッケージを作成します。
+# <a name="create-sharepoint-solution-packages"></a>SharePoint ソリューションパッケージの作成
   配置パッケージを作成したりカスタマイズしたりするには、パッケージ デザイナーを使用します。 たとえば、SharePoint のプロジェクト項目およびフィーチャーの追加、IIS サーバーのリセット、フィーチャーのアクティブ化スコープの設定、フィーチャーの依存関係の特定などを行うことができます。 このデザイナーでは、マニフェスト (個々のパッケージを記述した XML ファイル) を生成することもできます。
 
-## <a name="packaging-tools"></a>パッケージ化ツール
- 使用することができます、**パッケージ デザイナー**パッケージをカスタマイズし、マニフェストを生成します。 SharePoint のプロジェクト項目の追加、Web サーバーのリセットの構成、および配置用サーバーの種類の設定を行うことができます。 詳細については、「[方法 :追加して、パッケージ デザイナーを使用して機能と、パッケージにアイテムを削除](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)します。
+## <a name="packaging-tools"></a>パッケージングツール
+ パッケージ**デザイナー**を使用して、パッケージをカスタマイズし、マニフェストを生成することができます。 SharePoint のプロジェクト項目の追加、Web サーバーのリセットの構成、および配置用サーバーの種類の設定を行うことができます。 詳細については、「[方法: パッケージデザイナーを使用して、パッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)」を参照してください。
 
- また、使用することができます、**パッケージング エクスプ ローラー**機能およびパッケージ ファイル内の項目を変更する (*.wsp*)。 詳細については、「[方法 :追加およびパッケージング エクスプ ローラーを使用して、フィーチャーおよびパッケージに項目を削除](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)します。
+ または、**パッケージングエクスプローラー**を使用して、パッケージファイル ( *.Wsp*) の機能と項目を変更することもできます。 詳細については、「[方法: パッケージングエクスプローラーを使用して、パッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)」を参照してください。
 
- パッケージを作成する Visual Studio および MSBuild を使用することができます (*.wsp*)、SharePoint ソリューションを配置するファイル。 SharePoint の配置に必要なマニフェスト ファイルはこのプロセスで生成されます。 詳細については、「[方法 :MSBuild タスクを使用した SharePoint ソリューション パッケージの作成](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)です。
+ Visual Studio と MSBuild を使用して、SharePoint ソリューションを配置するためのパッケージ ( *.wsp*) ファイルを作成できます。 SharePoint の配置に必要なマニフェスト ファイルはこのプロセスで生成されます。 詳細については、「[方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)する」を参照してください。
 
-## <a name="package-designer-options"></a>パッケージ デザイナーのオプション
- 次の表は、プロパティを持つ SharePoint パッケージでカスタマイズできること、**パッケージ デザイナー**します。
+## <a name="package-designer-options"></a>パッケージデザイナーのオプション
+ 次の表は、**パッケージデザイナー**を使用して SharePoint パッケージでカスタマイズできるプロパティを示しています。
 
 |パッケージ デザイナーのプロパティ|既定の設定に関する説明|
 |-------------------------------|------------------------------------|
-|名前|必須。 パッケージの既定の名前に設定されて*ProjectName*します。|
-|[Web サーバーのリセット]|省略可能です。 選択した後、Web サーバーを再起動する場合、 *.wsp*ファイル、SharePoint サーバーにインストールされます。|
-|配置サーバーの種類|必須。 既定では、スコープは ApplicationServer に設定されます。<br /><br /> アプリケーション サーバー:サービスをホストするサーバーを表します。<br /><br /> WebFrontEnd:Web サイトをホストするサーバーを表します。|
+|[名前]|必須です。 パッケージの既定の名前は*ProjectName*に設定されています。|
+|[Web サーバーのリセット]|省略可。 SharePoint サーバーに *.wsp*ファイルがインストールされた後に Web サーバーを再起動する場合に選択します。|
+|配置サーバーの種類|省略可。 パッケージをホストしているサーバーの種類を表します。 設定されていない場合、既定では WebFrontEnd エンドになります。<br /><br /> ApplicationServer: サービスをホストするサーバーを表します。<br /><br /> WebFrontEnd エンド: Web サイトをホストするサーバーについて説明します。|
 |[ソリューション内の項目]|パッケージに追加できるすべての SharePoint プロジェクト項目およびフィーチャーを表します。|
-|[パッケージ内の項目]|省略可能です。 パッケージ内の配置対象の SharePoint プロジェクト項目およびフィーチャーを表します。|
+|[パッケージ内の項目]|省略可。 パッケージ内の配置対象の SharePoint プロジェクト項目およびフィーチャーを表します。|
 
-## <a name="configure-the-packaging-process"></a>パッケージ化プロセスを構成します。
- Visual Studio で SharePoint ソリューションを開発した後、プロジェクトは、次のようにパッケージ化をカスタマイズできます。
+## <a name="configure-the-packaging-process"></a>パッケージ化プロセスを構成する
+ Visual Studio で SharePoint ソリューションを開発した後、プロジェクトのパッケージ化方法をカスタマイズできます。
 
- 次の表に、カスタマイズに使用できる 2 つの MSBuild ターゲットする方法、 *.wsp*ファイルが作成されます。
+ 次の表は、 *.wsp*ファイルの作成方法をカスタマイズするために使用できる2つの MSBuild ターゲットを示しています。
 
-|ターゲット|説明|
+|Target|説明|
 |------------|-----------------|
-|BeforeLayout|ファイルが中間ディレクトリにコピーされる直前にタスクを実行するターゲット。 パッケージ ファイルを作成する前に、ファイルを変更することができます (*.wsp*)。|
+|BeforeLayout|ファイルが中間ディレクトリにコピーされる直前にタスクを実行するターゲット。 パッケージファイル ( *.wsp*) を作成する前に、ファイルを変更することができます。|
 |AfterLayout|ファイルが中間ディレクトリにコピーされた直後にタスクを実行するターゲット。|
 
- 詳細については、[方法。MSBuild ターゲットを使用して SharePoint ソリューション パッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)します。
+ 詳細については、「[方法: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)」を参照してください。
 
-## <a name="packaging-architecture"></a>パッケージ化のアーキテクチャ
- SharePoint パッケージを作成するときに、次の手順が発生する (*.wsp*) Visual Studio でします。
+## <a name="packaging-architecture"></a>パッケージ化アーキテクチャ
+ 次の手順は、Visual Studio で SharePoint パッケージ ( *.wsp*) を作成するときに発生します。
 
 1. パッケージの物理構造と意味構造が正しいことを確認するために、フィーチャーおよびパッケージが検証されます。
 
 2. パッケージ内のフィーチャー、プロジェクト項目、およびパッケージ ファイルが列挙されます。 パッケージおよびフィーチャーのマニフェスト ファイルが変換されて、配置およびアクティブ化に必要な情報がすべて追加されます。 トークンは完全修飾値に置き換えられます。
 
-3. カスタマイズ可能な BeforeLayout MSBuild ターゲットが実行されます。 前に、パッケージにカスタム変更を加えるには、この手順を作成することができます、 *.wsp*ファイルが作成されます。
+3. カスタマイズ可能な BeforeLayout MSBuild ターゲットが実行されます。 このステップを作成すると、 *.wsp*ファイルを作成する前に、パッケージにカスタム変更を加えることができます。
 
 4. 列挙されたファイルが中間ディレクトリにコピーされます。
 
-5. カスタマイズ可能な AfterLayout MSBuild ターゲットが実行されます。 前に、パッケージにカスタム変更を加えるには、この手順を作成することができます、 *.wsp*ファイルが作成されます。
+5. カスタマイズ可能な AfterLayout MSBuild ターゲットが実行されます。 このステップを作成すると、 *.wsp*ファイルを作成する前に、パッケージにカスタム変更を加えることができます。
 
-6. 中間ディレクトリにファイルに追加されます、 *.wsp*ファイル。
+6. 中間ディレクトリ内のファイルは、 *.wsp*ファイルに追加されます。
 
 ## <a name="package-folder-structure"></a>パッケージ フォルダーの構造
- SharePoint プロジェクトをパッケージ化するとき、 *.wsp*でファイルを作成、 *SolutionFolder\bin\\\<BuildConfiguration >* フォルダー。 たとえば、ソリューションが*C:\Visual Studio 2013 \projects\listdefinition1*のリリースにビルド構成を設定し、 *.wsp*ファイルにある*C:\Visual Studio 2013\Projects\ListDefinition1\bin\Release*します。
+ SharePoint プロジェクトをパッケージ化すると、 *Solutionfolder\bin\\\<BuildConfiguration >* フォルダーに *.wsp*ファイルが作成されます。 たとえば、ソリューションが*C:\ Visual studio 2013 \ プロジェクト \ listdefinition1*にあり、ビルド構成が [リリース] に設定されている場合、 *.Wsp*ファイルは*C:\ visual studio 2013 \ Projects\ListDefinition1\bin\Release*にあります。
 
-## <a name="see-also"></a>関連項目
-- [方法: SharePoint ソリューション パッケージをカスタマイズします。](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [方法: 追加して、パッケージ デザイナーを使用して機能と、パッケージにアイテムを削除](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
-- [方法: MSBuild タスクを使用した SharePoint ソリューション パッケージの作成します。](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)
-- [方法: MSBuild タスクを使用した SharePoint ソリューション パッケージの作成します。](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)
-- [方法: MSBuild ターゲットを使用して SharePoint ソリューション パッケージをカスタマイズします。](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)
+## <a name="see-also"></a>参照
+- [方法: SharePoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [方法: パッケージデザイナーを使用してパッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+- [方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成する](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)
+- [方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成する](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)
+- [方法: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)

@@ -9,14 +9,15 @@ ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779611"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用したスタンドアロン アプリケーションの詳細なタイミング データの収集
 このセクションでは、コマンド ラインからインストルメンテーション メソッドを使用して、クライアント (スタンドアロン) コンポーネントの詳細なパフォーマンス データを収集する手順とオプションについて説明します。
@@ -49,5 +50,5 @@ ms.locfileid: "66262888"
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>インストルメンテーション データ ビューとレポートの分析
 - [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)

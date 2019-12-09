@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/25/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777688"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797144"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -47,6 +47,12 @@ Visual Studio Tools for Unity は、Visual Studio に期待される堅牢な[�
 * [ウォッチ] ウィンドウでの複雑な式の評価。
 * 変数および引数の値の検査と変更。
 * 複雑なオブジェクトやデータ構造体へのドリルダウン。
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Unity 用の Roslyn 診断とクイック修正
+
+Visual Studio による Unity プロジェクトの深い理解を利用して、ベスト プラクティスをとらえたより良いコードを記述します。
+
+![VS リファクタリングによる CompareTag を使った文字列比較](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 

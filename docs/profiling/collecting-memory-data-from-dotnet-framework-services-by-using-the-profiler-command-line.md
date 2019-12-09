@@ -6,14 +6,15 @@ ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 25f61b68249dfab7faf04c5e0460800947275db4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747811"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779468"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用した .NET Framework サービスからのメモリ データの収集
 このセクションでは、コマンド ラインからサンプリング メソッドを使用して、.NET Framework サービスのメモリ割り当てとオブジェクト有効期間データを収集する手順とオプションについて説明します。
@@ -46,5 +47,5 @@ ms.locfileid: "66747811"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>.NET メモリ データ ビューとレポートの分析
 - [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)

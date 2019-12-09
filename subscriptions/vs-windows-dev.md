@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174117"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491286"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -19,7 +19,7 @@ ms.locfileid: "74174117"
 ## <a name="activation-steps"></a>アクティブ化の手順
 Windows 開発者アカウントを使うには、アカウントを設定するか、既存のアカウントを使ってサインインする必要があります。
 
-このプロセスの "プライベート" ブラウザー ウィンドウを作成することをお勧めします。  たとえば、Google Chrome では、新しい "incongnito" ウィンドウを作成します。  Internet Explorer では、新しい "InPrivate" ウィンドウを作成します。
+このプロセスの "プライベート" ブラウザー ウィンドウを作成することをお勧めします。  たとえば、Google Chrome では、新しい "シークレット" ウィンドウを作成します。  Internet Explorer では、新しい "InPrivate" ウィンドウを作成します。
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 2. [ツール] セクションで、Windows 開発者アカウントのタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。  コードをクリップボードにコピーし、 **[アクティブ化]** をクリックします。

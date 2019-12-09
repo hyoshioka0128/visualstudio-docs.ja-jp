@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553020"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779551"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU カウンターと Windows カウンター
 
@@ -87,23 +88,23 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
 #### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>現在のプラットフォームでサポートされているすべての CPU カウンターの一覧を表示するには
 
-1. パフォーマンス エクスプローラーで、パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。
+1. パフォーマンス エクスプローラーで、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
 
 2. 次のいずれかの操作を行います。
 
-   - **[サンプリング]** をクリックし、**[サンプル]** イベントの一覧から **[パフォーマンス カウンター]** を選びます。 **[使用可能なパフォーマンス カウンター]** に CPU カウンターが一覧表示されます。
+   - **[サンプリング]** をクリックし、 **[サンプル]** イベントの一覧から **[パフォーマンス カウンター]** を選びます。 **[使用可能なパフォーマンス カウンター]** に CPU カウンターが一覧表示されます。
 
-      **注** 前のサンプリング構成に戻るには、**[キャンセル]** をクリックします。
+      **注** 前のサンプリング構成に戻るには、 **[キャンセル]** をクリックします。
 
-     - または -
+     または
 
-   - **[CPU カウンター]** を選び、**[CPU カウンターの収集]** を選びます。 **[使用可能なカウンター]** に CPU カウンターが一覧表示されます。
+   - **[CPU カウンター]** を選び、 **[CPU カウンターの収集]** を選びます。 **[使用可能なカウンター]** に CPU カウンターが一覧表示されます。
 
-      **注** 前のカウンター収集構成に戻るには、**[キャンセル]** をクリックします。
+      **注** 前のカウンター収集構成に戻るには、 **[キャンセル]** をクリックします。
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>現在のプラットフォームでサポートされている Windows カウンターの一覧を表示するには
 
-1. パフォーマンス エクスプローラーで、パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。
+1. パフォーマンス エクスプローラーで、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
 
 2. **[Windows カウンター]** をクリックします。
 
@@ -111,7 +112,7 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
 4. **[カウンター カテゴリ]** の一覧で、カウンター グループを選びます。 グループの Windows カウンターが、リスト ボックスに表示されます。
 
-     **注:** 前のカウンター収集構成に戻るには、**[キャンセル]** をクリックします。
+     **注:** 前のカウンター収集構成に戻るには、 **[キャンセル]** をクリックします。
 
 ### <a name="command-line"></a>コマンド ライン
 
@@ -123,7 +124,7 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
 2. 型
 
-     「**\<Visual Studio パフォーマンス ツール ディレクトリ>\VSPerfCmd /querycounters**」と入力します。
+     「 **\<Visual Studio パフォーマンス ツール ディレクトリ>\VSPerfCmd /querycounters**」と入力します。
 
      ここで、\<*Visual Studio パフォーマンス ツール ディレクトリ*> は、Visual Studio インストールのパフォーマンス ツール ディレクトリへのパスです。 パフォーマンス ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。
 

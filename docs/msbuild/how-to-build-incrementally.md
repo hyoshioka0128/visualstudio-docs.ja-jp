@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d2bf2f8a45618e8b1f7540479a02c1a5f91b9bf
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977359"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316483"
 ---
 # <a name="how-to-build-incrementally"></a>方法: インクリメンタル ビルド
 大規模なプロジェクトをビルドする場合、今でも最新の以前にビルドされたコンポーネントが再ビルドされないことが重要です。 すべてのターゲットが毎回ビルドされると、各ビルドが完了するのに長い時間がかかります。 インクリメンタル ビルド (ビルド内の以前にビルドされていないターゲット、または古くなっているターゲットだけが再ビルドされます) を有効にするため、[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) は入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較して、ターゲットをスキップ、ビルド、または部分的に再ビルドするかどうかを判断できます。 ただし、入力と出力の間に一対一のマッピングが必要です。 変換を使用して、ターゲットがこの直接マッピングを識別できるようにすることができます。 変換の詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "62977359"
       Outputs="hello.exe">
   ```
 
-  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較し、ターゲットをスキップ、ビルド、または部分的に再ビルドするかどうかを判断できます。 次の例では、`@(CSFile)` 項目リスト内の任意のファイルが *hello.exe* ファイルより新しい場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はターゲットを実行します。そうでない場合は、ターゲットがスキップされます。
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較し、ターゲットをスキップ、ビルド、または部分的に再ビルドするかどうかを判断できます。 次の例では、`@(CSFile)` 項目リスト内の任意のファイルが *hello.exe* ファイルより新しい場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はターゲットを実行します。そうでない場合は、ターゲットがスキップされます。
 
 ```xml
 <Target Name="Build"
@@ -58,9 +58,9 @@ ms.locfileid: "62977359"
 ## <a name="example"></a>例
 次の例では、架空のヘルプ システムのヘルプ ファイルをビルドするプロジェクトを使用します。 プロジェクトは、ソースの *.txt* ファイルを、中間の *.content* ファイルに変換し、これを XML メタデータ ファイルと結合してヘルプ システムで使用される最終の *.help* ファイルを生成することによって機能します。 プロジェクトでは、次の仮想タスクを使用します。
 
-- `GenerateContentFiles`:*.txt* ファイルを *.content* ファイルに変換します。
+- `GenerateContentFiles`: *.txt* ファイルを *.content* ファイルに変換します。
 
-- `BuildHelp`:*.content* ファイルと XML メタデータ ファイルを結合し、最終の *.help* ファイルをビルドします。
+- `BuildHelp`: *.content* ファイルと XML メタデータ ファイルを結合し、最終の *.help* ファイルをビルドします。
 
 プロジェクトは、変換を使用して、`GenerateContentFiles` タスクで入力と出力間の一対一のマッピングを作成します。 詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」をご覧ください。 また、`Output` 要素が `GenerateContentFiles` タスクからの出力を `BuildHelp` タスクの入力として自動的に使用するように設定されます。
 

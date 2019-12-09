@@ -6,14 +6,15 @@ ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e21e364d05641089fb7400fbbfa9873510037d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553085"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779481"
 ---
 # <a name="counter"></a>カウンター
 **Counter** オプションは、プロセッサ (ハードウェア) のパフォーマンス カウンターからデータを収集します。
@@ -44,11 +45,11 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>必須オプション
  Counter オプションは、次のいずれかのオプションと併用することだけが可能です。
 
- **Start:**`Trace` インストルメンテーション メソッドを使うようにプロファイラーを初期化します。
+ **Start:** `Trace` インストルメンテーション メソッドを使うようにプロファイラーを初期化します。
 
- **Launch:**`AppName` 指定したアプリケーションとプロファイラーを開始します。 プロファイラーは、サンプリング メソッドを使うように初期化する必要があります。
+ **Launch:** `AppName` 指定したアプリケーションとプロファイラーを開始します。 プロファイラーは、サンプリング メソッドを使うように初期化する必要があります。
 
- **Attach:**`PID` プロファイラーを開始し、プロセス ID で指定したプロセスにアタッチします。 プロファイラーは、サンプリング メソッドを使うように初期化する必要があります。
+ **Attach:** `PID` プロファイラーを開始し、プロセス ID で指定したプロセスにアタッチします。 プロファイラーは、サンプリング メソッドを使うように初期化する必要があります。
 
 ## <a name="example"></a>例
  サンプリング メソッドの例では、汎用プロファイラー カウンター NonHaltedCycles が 1000 回発生するごとにアプリケーションをサンプリングする方法を示します。

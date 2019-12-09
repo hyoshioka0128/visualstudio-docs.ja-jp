@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに対するソフトウェア ダウンロードでの製品の利用可能性について説明します。
-ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681694"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706820"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのソフトウェア ダウンロードに対する製品の利用可能性
 サブスクライバー特典の一環として、広い範囲のソフトウェアのダウンロードにアクセスできます。
@@ -25,12 +25,12 @@ ms.locfileid: "68681694"
 - **製品がお客様のサブスクリプション レベルまたはプログラムに含まれていない。** お客様のサブスクリプションでご利用いただけるソフトウェアや特典に関する[詳細情報](https://visualstudio.microsoft.com/vs/pricing/)をご覧になるか、サブスクリプション レベル別の利用可能な製品の全一覧表を[ダウンロード](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)してください。 [Microsoft Partner Network](https://partner.microsoft.com/) などの一部のプログラムは、それぞれの特典の一部として Visual Studio サブスクリプションを提供します。  これらのサブスクリプションには、購入した Visual Studio サブスクリプションに含まれるすべての製品は含まれません。 これらのプログラムのサブスクライバーは、それらのプログラムのサポート チームに、製品をダウンロードできるかどうかについて問い合わせる必要があります。
 - **製品がサブスクリプションの一部ではない**。 特別なライセンス条項、技術上の制限事項、開発者の関連性などの理由により、一部の Microsoft 製品はサブスクリプションに含まれていません。 サブスクリプションに製品を追加することをご提案される場合は、最寄りの Visual Studio [カスタマー サービス](https://visualstudio.microsoft.com/subscriptions/support/) センターまで電子メールでご連絡ください。
 - **製品が一般公開されている**。 一部のツール、SDK、DDK、サービス パックは、[Microsoft ダウンロード センター](https://www.microsoft.com/download)で一般公開されています。 このような製品は、ダウンロードに公開されない場合があります。
-- **まだ製品がリリースされていない**。  ダウンロードでは、多くのプレリリース (ベータ) 版やリリース候補版を入手できます。 ただし、すべてのベータ版が公開されるわけではありません。たとえば、一部のベータ版には特別な登録や資格が必要です。 オープン テクニカル ベータ プログラムの詳細については、[Microsoft Connect](http://connect.microsoft.com/) にアクセスしてください。
+- **まだ製品がリリースされていない**。  ダウンロードでは、多くのプレリリース (ベータ) 版やリリース候補版を入手できます。 ただし、すべてのベータ版が公開されるわけではありません。たとえば、一部のベータ版には特別な登録や資格が必要です。 オープン テクニカル ベータ プログラムの詳細については、[Microsoft Connect](https://connect.microsoft.com/) にアクセスしてください。
 - **お客様の国ではその製品を利用できない。** 地域的な制約により、ご利用いただけない Microsoft 製品もあります。
 - **冗長なソフトウェア。** Office を含むサブスクリプションで、Select Office スイートおよびスタンドアロン Office ダウンロードおよびプロダクト キーは使用できなくなります。 同じバージョンの対応する最高の Office スイートのダウンロードとプロダクト キーを使用できます。  たとえば、PowerPoint 2010 を検索する場合、検索結果は生成されません。  しかし、Office 2010 (PowerPoint 2010 が含まれる Office スイート) を検索し、スイートをダウンロードすることはできます。
 
 ## <a name="what-do-i-get"></a>何を取得できますか。
-ダウンロードの種類と数は、サブスクリプション レベルとプログラムのメンバーシップによって異なります。  Visual Studio Enterprise Standard のサブスクリプションを持つサブスクライバーは、Microsoft Partner Network または BizSpark プログラム サブスクリプションを介してサブスクリプションを取得したサブスクライバーと使用できるダウンロードが異なる場合があります。  各サブスクリプション レベルで利用できるダウンロードの詳細については、「[Products By Benefit Level](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)」(特典レベル別の製品) の一覧をダウンロードしてください。
+ダウンロードの種類と数は、サブスクリプション レベルとプログラムのメンバーシップによって異なります。  Visual Studio Enterprise Standard のサブスクリプションを持つサブスクライバーは、Microsoft Partner Network または BizSpark プログラム サブスクリプションを介してサブスクリプションを取得したサブスクライバーと使用できるダウンロードが異なる場合があります。  各サブスクリプション レベルで利用できるダウンロードの詳細については、「[Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)」(特典レベル別の製品) の一覧をダウンロードしてください。
 
 > [!NOTE]
 > 同じメール アドレスに複数のサブスクリプションが関連付けられている場合、利用できるソフトウェア タイトルは、お持ちの**最上位**レベルのサブスクリプションによって決まります。  たとえば、Visual Studio Enterprise サブスクリプションと Visual Studio Test Professional サブスクリプションをお持ちの場合、現在サブスクリプション ポータルで使われているサブスクリプションに関係なく、Visual Studio Enterprise サブスクリプションに含まれるソフトウェア タイトルにアクセスできます。 

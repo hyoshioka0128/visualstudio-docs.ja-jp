@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+## YamlMime:Landing
 title: Visual Studio のコンテナー ツール
 metadata:
   title: Docker コンテナー開発ツールのドキュメント
@@ -9,116 +8,64 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-azure
   ms.topic: landing-page
-  ms.date: 02/15/2019
+  ms.date: 11/25/2019
   ms.author: ghogen
-sections:
-  - title: ''
-    items:
-      - type: paragraph
-        text: Docker ツールと Kubernetes ツール、およびコンテナー ベースの開発プロジェクトを管理するための Azure サービスについて説明します。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: container-tools.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: 'クイック スタート: Visual Studio での Docker'
-          - href: tutorial-multicontainer.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Docker Compose を使用した複数コンテナーのアプリ
-          - href: /visualstudio/install/build-tools-container
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: コンテナーでのビルド ツールの実行
-          - href: tutorial-kubernetes-tools.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
-            title: Visual Studio Tools for Kubernetes
-  - title: .NET Core
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /dotnet/core/docker/intro-net-docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
-            title: .NET および Docker の概要
-          - href: /dotnet/core/docker/docker-basics-dotnet-core
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Docker の基礎を学習する
-          - href: /dotnet/core/docker/building-net-docker-images
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Docker イメージの構築
-          - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_web.svg'
-            title: ASP.NET コンテナー ツール
-          - href: 'https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
-            title: Azure Container Registry に展開する
-          - href: /dotnet/standard/containerized-lifecycle-architecture/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-            title: マイクロサービス アーキテクチャ ガイド
-  - title: Azure
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /azure/aks
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/ContainerService.svg'
-            title: Azure Kubernetes Service (AKS)
-          - href: /azure/dev-spaces
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg'
-            title: Azure Dev Spaces
-          - href: /azure/container-instances/container-instances-tutorial-prepare-app
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/ContainerInstances.svg'
-            title: Azure Container Instances
-          - href: /azure/container-registry/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/container-registry.svg'
-            title: Azure Container Registry
-          - href: /azure/docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Azure 上の Docker
-  - title: ビデオ
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: 'https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_video.svg'
-            title: 'Channel 9: Docker の開発'
+landingContent:
+  - title: 配置について
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visual Studio のコンテナー ツール
+            url: overview.md
+  - title: 作業開始
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Visual Studio での Docker
+            url: container-tools.md
+          - text: コンテナーでのビルド ツールの実行
+            url: /visualstudio/install/build-tools-container
+          - text: Visual Studio Tools for Kubernetes
+            url: tutorial-kubernetes-tools.md
+  - title: コンテナー化されたアプリの開発
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Docker Compose を使用した複数コンテナーのアプリ
+            url: tutorial-multicontainer.md
+          - text: コンテナーでの js アプリの応答
+            url: container-tools-react.md
+          - text: Docker アプリをデバッグする
+            url: edit-and-refresh.md
+  - title: Docker コンテナーをデプロイする
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Azure Container Registry に展開する
+            url: hosting-web-apps-in-docker.md
+          - text: Azure App Service に配置する
+            url: deploy-app-service.md
+          - text: Docker Hub に配置する
+            url: deploy-docker-hub.md
+  - title: コンテナーの開発タスク
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: '方法: ビルドおよびデバッグ環境を構成する'
+            url: container-build.md
+          - text: '方法: コンテナーを表示および診断する'
+            url: view-and-diagnose-containers.md
+          - text: '方法: コンテナー開発ツールのトラブルシューティング'
+            url: troubleshooting-docker-errors.md
+  - title: コンテナー ツールの設定
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: コンテナーの起動設定
+            url: container-launch-settings.md
+          - text: コンテナーの MSBuild プロパティ
+            url: container-msbuild-properties.md
+          - text: Docker Compose MSBuild のプロパティ
+            url: docker-compose-properties.md
+          - text: コンテナー ツールを構成する
+            url: container-tools-configure.md

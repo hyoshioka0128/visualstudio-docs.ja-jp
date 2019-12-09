@@ -9,14 +9,15 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995371"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774164"
 ---
 # <a name="instrumentation-method-data-views"></a>インストルメンテーション メソッドのデータ ビュー
 ここでは、インストルメンテーション メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。
@@ -42,7 +43,7 @@ ms.locfileid: "62995371"
 
  プロファイル データが関数別に一覧表示されます。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>辞書／辞典／その他
 - [関数の詳細ビュー](../profiling/function-details-view.md)
 
  選択した関数と、選択した関数を呼び出した関数および選択した関数によって呼び出された関数の関係がグラフィカルな図で表示されます。

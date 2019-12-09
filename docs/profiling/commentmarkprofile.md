@@ -9,14 +9,15 @@ ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440189"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772789"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 関数は、.*vsp* ファイルに数字マーカーとテキスト文字列を挿入します。 マークやコメントを挿入するには、`CommentMarkProfile` 関数が含まれるスレッドのプロファイリングをオンにする必要があります。

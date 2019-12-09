@@ -8,14 +8,15 @@ ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: be5f748f4baa102bda16752904347954f97fea27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980201"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778259"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 関数は、指定されたプロファイル レベルのカウンターを 1 (オン) に設定します。

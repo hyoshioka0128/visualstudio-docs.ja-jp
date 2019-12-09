@@ -6,14 +6,15 @@ ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965233"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778155"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn と ThreadOff
 *VSPerfCmd.exe* の **ThreadOff** および **ThreadOn** サブコマンドは、インストルメンテーション メソッドを使用するコマンド ライン プロファイリング セッションでのみ使用できます。 **ThreadOff** および **ThreadOn** は、指定されたスレッドのプロファイリングを一時停止および再開します。 **ThreadOff** がスレッドのプロファイリングを停止し、**ThreadOn** がスレッドのプロファイリングを開始します。
@@ -43,11 +44,11 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>有効なオプション
  **ThreadOn** と **ThreadOff** は、次のサブコマンドも含むコマンド ラインで指定できます。
 
- **Start:**`Method` コマンド ライン プロファイル セッションを初期化し、指定されたプロファイル方法を設定します。
+ **Start:** `Method` コマンド ライン プロファイル セッションを初期化し、指定されたプロファイル方法を設定します。
 
  **GlobalOff**&#124;**GlobalOn** コマンド ライン プロファイル セッションのすべてのプロセスのプロファイリングを停止または開始します。
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID`指定されたプロセスのプロファイリングを停止または開始します。
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID`指定されたプロセスのプロファイリングを停止または開始します。
 
 ## <a name="example"></a>例
  この例では、アプリケーションのスタートアップ データのみが収集されるように、**ThreadOff** サブコマンドを使用してプロファイル データの収集を停止します。

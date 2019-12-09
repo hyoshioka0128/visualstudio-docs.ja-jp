@@ -9,14 +9,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870277"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779884"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>チュートリアル: プロファイラー API の使用
 
@@ -30,9 +31,6 @@ ms.locfileid: "68870277"
 
  Visual Studio プロファイラーでは、データの収集を制限できます。 このチュートリアルでは、プロファイラー API を使用してデータの収集を制限する方法の例を説明します。 Visual Studio プロファイラーには、アプリケーションからのデータ収集を制御する API があります。
 
- ::: moniker range=">=vs-2019"
- ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。  64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* です
- ::: moniker-end
  ::: moniker range="vs-2017"
  ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。  64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* です
  ::: moniker-end
