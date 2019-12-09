@@ -1,18 +1,18 @@
 ---
 title: .runsettings ファイルを使用して単体テストを構成する
-ms.date: 06/14/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665140"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771500"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -38,11 +38,52 @@ IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テ
 
 ::: moniker range=">=vs-2019"
 
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 バージョン 16.3 以前
+
 IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[設定ファイルの選択]** の順に選択します。 *.runsettings* ファイルを参照し、選択します。
 
 ![Visual Studio 2019 の [テスト設定ファイルの選択] メニュー](media/vs-2019/select-settings-file.png)
 
 ファイルは、[テスト] メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
+
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 バージョン 16.4 以降
+
+Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指定するには、次の 3 つの方法があります。
+
+- プロジェクト ファイルまたは Directory.Build.props ファイルを使用して、プロジェクトにビルド プロパティを追加します。 プロジェクトの実行設定ファイルは、**RunSettingsFilePath** プロパティによって指定されます。 
+
+    - 現在、プロジェクト レベルの実行設定は、C#、VB、C++、および F# プロジェクトに対してサポートされています。
+    - プロジェクトに対して指定したファイルにより、ソリューションで指定された他のあらゆる実行設定ファイルがオーバーライドされます。
+
+    プロジェクトに対して *.runsettings* ファイルを指定する例:
+    
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+      </PropertyGroup>
+      ...
+    </Project>
+    ```
+
+- ".runsettings" という名前の実行設定ファイルを、ソリューションのルートに配置します。
+
+  実行設定ファイルの自動検出が有効になっている場合、このファイル内の設定は実行されるすべてのテストに適用されます。 runsettings ファイルの自動検出は、次の 2 つの場所から有効にすることができます。
+  
+    - **[ツール]** > **[オプション]** > **[テスト]** > **[runsettings ファイルの自動検出]**
+
+      ![Visual Studio 2019 での [runsettings ファイルの自動検出] オプション](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      
+    - **[テスト]** > **[実行設定の構成]** > **[runsettings ファイルの自動検出]**
+    
+      ![Visual Studio 2019 での [runsettings ファイルの自動検出] メニュー](media/vs-2019/auto-detect-runsettings-menu.png)
+
+- IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** の順に選択してから、 *.runsettings* ファイルを選択します。
+
+   ![Visual Studio 2019 の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
+      
+   - このソリューションのルートに ".runsettings" ファイルが存在する場合は、このファイルによりオーバーライドされます。このファイルは実行されるすべてのテストに適用されます。  
+   - このファイルの選択は、ローカルにのみ保持されます。 
 
 ::: moniker-end
 

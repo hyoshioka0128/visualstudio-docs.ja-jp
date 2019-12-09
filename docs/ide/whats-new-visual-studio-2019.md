@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211334"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777915"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.3 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.4 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -110,7 +110,7 @@ Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor awar
 
 ### <a name="net-core"></a>.NET Core
 
-**16.3 の新機能**: .NET Core 3.0. のサポートを追加しました。 クロスプラットフォームかつオープン ソース&mdash;Microsoft によって完全にサポートされています。 
+**16.3 の新機能**: .NET Core 3.0. のサポートを追加しました。 クロスプラットフォームかつオープン ソース&mdash;Microsoft によって完全にサポートされています。
 
 詳細については、「[Announcing .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)」 (.NET Core 3.0 の発表) のブログ記事を参照してください。
 
@@ -195,6 +195,12 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 **16.2 の新機能**: [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) ブラウザーを使用して、JavaScript アプリケーションにブレークポイントを設定し、デバッグ セッションを開始することができます。 これを行うと、Visual Studio によって、新しいブラウザー ウィンドウが開き、デバッグが有効になります。このウィンドウを使用して、Visual Studio 内でアプリケーションの JavaScript をステップ実行することができます。
 
    ![ブラウザーでの JavaScript コードのレンダリングを示すスクリーンショット](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>ピン留め可能なプロパティ ツール
+
+**16.4 の新機能**:新しいピン留め可能なプロパティ ツールを使用したデバッグ中に、オブジェクトを、それらのプロパティによって簡単に識別できるようになりました。 [ウォッチ]、[自動変数]、[ローカル] ウィンドウのデバッガー ウィンドウで表示したいプロパティの上にカーソルを合わせ、ピン アイコンをクリックするだけで、探していた情報がウィンドウの上部にすぐに表示されます。
+
+   ![ピン留め可能なプロパティ ツールを使用して Visual Studio デバッガーでプロパティをピン留めする方法を示すアニメーション](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>次の内容
 

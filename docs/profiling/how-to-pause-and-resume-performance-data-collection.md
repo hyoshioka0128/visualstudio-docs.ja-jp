@@ -8,21 +8,22 @@ ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825664"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778792"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: パフォーマンス データ収集の一時停止と再開
 プロファイル セッション ページ ウィンドウから、プロファイリング データの収集を対話形式で制御することができます。
 
  データ収集を制御することで、プロファイル データ ファイルのサイズを小さくし、対象とする操作のデータのみを収集することができます。 プロファイリングは、パフォーマンス セッション内で複数回一時停止および再開することができます。
 
- ![プロファイリング セッションのページ](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+ ![プロファイリング セッション ページ](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
 > プロファイリングを一時停止した状態でパフォーマンス セッションを開始し、プログラム実行の後の時点でプロファイリングを再開することもできます。 プロファイリングを一時停止した状態でパフォーマンス セッションを開始するには、 **[デバッグ]** メニューの **[Start Performance Analysis with Profiling Paused]\(プロファイリングを一時停止してパフォーマンス分析を開始)** コマンドを選択します。

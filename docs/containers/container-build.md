@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549955"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706792"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Visual Studio またはコマンド ラインを使用したコンテナー化されたアプリのビルドとデバッグ
+# <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
 
-Visual Studio IDE からビルドする場合でも、コマンド ライン ビルドを設定する場合でも、Visual Studio のビルドで Dockerfile を使用してプロジェクトがどのようにビルドされるかを知っておく必要があります。  パフォーマンス上の理由から、Visual Studio ではコンテナー化されたアプリの特別なプロセスに従います。 Visual Studio がプロジェクトをビルドする方法を理解することは、Dockerfile を変更してビルド プロセスをカスタマイズする場合に特に重要です。
+Visual Studio IDE からビルドする場合でも、コマンド ライン ビルドを設定する場合でも、プロジェクトのビルドのために Visual Studio によって Dockerfile が使用されるしくみを知っておく必要があります。  パフォーマンス上の理由から、Visual Studio ではコンテナー化されたアプリの特別なプロセスに従います。 Visual Studio がプロジェクトをビルドする方法を理解することは、Dockerfile を変更してビルド プロセスをカスタマイズする場合に特に重要です。
 
 Visual Studio では、Docker コンテナーを使用しないプロジェクトをビルドするときに、ローカル コンピューター上で MSBuild が呼び出され、ローカル ソリューション フォルダーの下のフォルダー (通常は `bin`) 内に出力ファイルが生成されます。 ただし、コンテナー化されたプロジェクトの場合、コンテナー化されたアプリをビルドするため、ビルド プロセスで Dockerfile の命令が考慮されます。 Visual Studio で使用される Dockerfile は、複数のステージに分割されます。 このプロセスは、Docker の*マルチステージ ビルド*機能に依存しています。
 
@@ -84,7 +84,7 @@ MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 
 Visual Studio IDE からソリューションをビルドすると、**出力**ウィンドウに表示されるような出力が表示されます。 Visual Studio でマルチステージ ビルドの最適化が使用されている場合は、**デバッグ**構成をビルドするときに得られる結果が想定どおりでない場合があるため、常に `/p:Configuration=Release` を使用します。 「[デバッグ](#debugging)」を参照してください。
 
-Docker Compose プロジェクトを使用している場合は、コマンドを使用してイメージをビルドします。
+Docker Compose プロジェクトを使用している場合は、次のコマンドを使用してイメージをビルドします。
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -99,7 +99,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 - Dockerfile の最初のステージ (ほとんどの Dockerfile では `base` ステージ) でイメージをプルします。  
 - Dockerfile をビルドし、コンテナーを開始します。
 
-ウォームアップは **Fast** モードでのみ発生するため、実行中のコンテナーにはアプリ フォルダー ボリュームがマウントされ、アプリを変更してもコンテナーが無効になりません。 そのため、デバッグのパフォーマンスが大幅に向上し、大きなイメージのプルなどの長時間実行されるタスクの待機時間が短縮されます。
+ウォームアップは **Fast** モードでのみ発生するため、実行中のコンテナーにはアプリ フォルダー ボリュームがマウントされます。 つまり、アプリを変更してもコンテナーが無効になることはありません。 そのため、デバッグのパフォーマンスが大幅に向上し、大きなイメージのプルなどの長時間実行されるタスクの待機時間が短縮されます。
 
 ## <a name="volume-mapping"></a>ボリューム マッピング
 

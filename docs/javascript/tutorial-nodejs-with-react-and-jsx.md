@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636552"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777947"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -400,6 +400,10 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
    そのブラウザーをデバッグを有効にした状態で開くことが、その他のブラウザー インスタンスによって妨げられる可能性があります (ブラウザーの拡張機能が実行され、フル デバッグ モードが阻止されている場合があります。そのため、タスク マネージャーを開き、Chrome の予期しないインスタンスを見つけることが必要な場合があります)。
 
    ::: moniker range=">=vs-2019"
+   Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コード ベースが共有されているため、これによって最適な結果が得られます。
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
    Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コードベースが使用されているため、これによって最適な結果が得られます。
    ::: moniker-end
 
@@ -513,7 +517,6 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
       * ブラウザーをデバッグ モードで実行できるように、Chrome 拡張機能を含むすべてのブラウザー インスタンスを (タスク マネージャーを使用して) 閉じます。 必ずブラウザーをデバッグ モードで起動します。
 
       * ソース マップ ファイルに *./app.tsx* への参照が含まれており、*webpack:///./app.tsx* が含まれていないことを確認します。そうでないと、Visual Studio デバッガーで *app.tsx* を検索できません。
-
        または、*app.tsx* 内のコードを中断する必要があるときに、それができない場合は、*app.tsx* で `debugger;` ステートメントを使うか、代わりに Chrome の開発者ツール (または Microsoft Edge の F12 ツール) でブレークポイントを設定してみてください。
 
    * *app-bundle.js* 内のコードを中断する必要があるときに、それができない場合は、ソース マップ ファイル *app-bundle.js.map* を削除します。
