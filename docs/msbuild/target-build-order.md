@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502cc7d5f1124ef815455193f00c3f30e77c59a8
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ee7a3c2530456a4c2b358fcea7507203feeb904b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225961"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777882"
 ---
 # <a name="target-build-order"></a>ターゲットのビルド順序
 
@@ -23,69 +23,69 @@ ms.locfileid: "65225961"
 
 - `InitialTargets`。 この `Project` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。
 
-- `DefaultTargets`。 この `Project` 属性は、ターゲットがコマンドラインで明示的に指定されていない場合に実行するターゲットを指定します。
+- `DefaultTargets`。 この `Project` 属性を使うと、ターゲットがコマンドラインで明示的に指定されていない場合に実行されるターゲットを指定できます。
 
 - `DependsOnTargets`。 この `Target` 属性は、このターゲットを実行する前に実行する必要があるターゲットを指定します。
 
 - `BeforeTargets` および `AfterTargets`。 これらの `Target` 属性は、このターゲットを、指定されたターゲットの前または後に実行するように指定します (MSBuild 4.0)。
 
-  ビルド内の後続のターゲットがそのターゲットに依存している場合でも、ビルド中に 1 つのターゲットが 2 回実行されることはありません。 ターゲットは一度実行されると、それ以上ビルドに影響しません。
+ビルド内の後続のターゲットがそのターゲットに依存している場合でも、ビルド中に 1 つのターゲットが 2 回実行されることはありません。 ターゲットは一度実行されると、それ以上ビルドに影響しません。
 
-  ターゲットには `Condition` 属性を指定することができます。 指定した条件が `false` と評価された場合、ターゲットは実行されず、ビルドには影響しません。 条件の詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。
+ターゲットには `Condition` 属性を指定することができます。 指定した条件が `false` と評価された場合、ターゲットは実行されず、ビルドには影響しません。 条件の詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。
 
 ## <a name="initial-targets"></a>初期ターゲット
 
- [Project](../msbuild/project-element-msbuild.md) 要素の `InitialTargets` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。 通常、初期ターゲットはエラー チェックに使用されます。
+[Project](../msbuild/project-element-msbuild.md) 要素の `InitialTargets` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。 通常、初期ターゲットはエラー チェックに使用されます。
 
- `InitialTargets` 属性の値は、ターゲットをセミコロンで区切った、順序指定された一覧です。 次の例では、`Warm` ターゲットを実行してから `Eject` ターゲットを実行するように指定しています。
+`InitialTargets` 属性の値は、ターゲットをセミコロンで区切った、順序指定された一覧です。 次の例では、`Warm` ターゲットを実行してから `Eject` ターゲットを実行するように指定しています。
 
 ```xml
 <Project InitialTargets="Warm;Eject" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
- インポートされたプロジェクトには、独自の `InitialTargets` 属性が含まれている場合があります。 それらのすべての初期ターゲットが集約されて順番に実行されます。
+インポートされたプロジェクトには、独自の `InitialTargets` 属性が含まれている場合があります。 それらのすべての初期ターゲットが集約されて順番に実行されます。
 
- 詳細については、「[方法 :最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
+詳細については、[最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
 
 ## <a name="default-targets"></a>既定のターゲット
 
- [Project](../msbuild/project-element-msbuild.md) 要素の `DefaultTargets` 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。
+[Project](../msbuild/project-element-msbuild.md) 要素の `DefaultTargets` 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。
 
- `DefaultTargets` 属性の値は、既定のターゲットをセミコロンで区切った、順序指定された一覧です。 次の例では、`Clean` ターゲットを実行してから `Build` ターゲットを実行するように指定しています。
+`DefaultTargets` 属性の値は、既定のターゲットをセミコロンで区切った、順序指定された一覧です。 次の例では、`Clean` ターゲットを実行してから `Build` ターゲットを実行するように指定しています。
 
 ```xml
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
- コマンド ラインで **-target** スイッチを使用して、既定のターゲットをオーバーライドすることができます。 次の例では、`Build` ターゲットを実行してから `Report` ターゲットを実行するように指定しています。 この方法でターゲットを指定する場合、既定のターゲットは無視されます。
+コマンド ラインで **-target** スイッチを使用して、既定のターゲットをオーバーライドすることができます。 次の例では、`Build` ターゲットを実行してから `Report` ターゲットを実行するように指定しています。 この方法でターゲットを指定する場合、既定のターゲットは無視されます。
 
  `msbuild -target:Build;Report`
 
- 初期ターゲットと既定のターゲットの両方が指定されており、コマンド ライン ターゲットが指定されていない場合、MSBuild はまず初期ターゲットを実行してから、既定のターゲットを実行します。
+初期ターゲットと既定のターゲットの両方が指定されており、コマンド ライン ターゲットが指定されていない場合、MSBuild はまず初期ターゲットを実行してから、既定のターゲットを実行します。
 
- インポートされたプロジェクトには、独自の `DefaultTargets` 属性が含まれている場合があります。 検出された最初の `DefaultTargets` 属性によって、実行する既定のターゲットが決定されます。
+インポートされたプロジェクトには、独自の `DefaultTargets` 属性が含まれている場合があります。 検出された最初の `DefaultTargets` 属性によって、実行する既定のターゲットが決定されます。
 
- 詳細については、「[方法 :最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
+詳細については、[最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
 
 ## <a name="first-target"></a>最初のターゲット
 
- 初期ターゲット、既定のターゲット、またはコマンド ラインのターゲットがいずれも指定されていない場合、MSBuild はプロジェクト ファイル内またはインポートされたプロジェクト ファイル内で検出された最初のターゲットを実行します。
+初期ターゲット、既定のターゲット、またはコマンド ラインのターゲットがいずれも指定されていない場合、MSBuild はプロジェクト ファイル内またはインポートされたプロジェクト ファイル内で検出された最初のターゲットを実行します。
 
 ## <a name="target-dependencies"></a>ターゲットの依存関係
 
- ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 たとえば、オブジェクトに適用された
+ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 たとえば、オブジェクトに適用された
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
 ```
 
- `Serve` ターゲットが `Chop` ターゲットと `Cook` ターゲットに依存することを MSBuild に指示します。 MSBuild は `Chop` ターゲット、`Cook` ターゲットの順に実行してから、`Serve` ターゲットを実行します。
+`Serve` ターゲットが `Chop` ターゲットと `Cook` ターゲットに依存することを MSBuild に指示します。 MSBuild は `Chop` ターゲット、`Cook` ターゲットの順に実行してから、`Serve` ターゲットを実行します。
 
 ## <a name="beforetargets-and-aftertargets"></a>BeforeTargets と AfterTargets
 
- MSBuild 4.0 では、`BeforeTargets` 属性と `AfterTargets` 属性を使用して、ターゲットの順序を指定できます。
+MSBuild 4.0 では、`BeforeTargets` 属性と `AfterTargets` 属性を使用して、ターゲットの順序を指定できます。
 
- 次のスクリプトがあるとします。
+次のスクリプトがあるとします。
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -98,7 +98,7 @@ ms.locfileid: "65225961"
 </Project>
 ```
 
- `Compile` ターゲットの後、`Link` ターゲットの前に実行される中間ターゲット `Optimize` を作成するには、`Project` 要素内の任意の場所に次のターゲットを追加します。
+`Compile` ターゲットの後、`Link` ターゲットの前に実行される中間ターゲット `Optimize` を作成するには、`Project` 要素内の任意の場所に次のターゲットを追加します。
 
 ```xml
 <Target Name="Optimize"
@@ -109,7 +109,7 @@ ms.locfileid: "65225961"
 
 ## <a name="determine-the-target-build-order"></a>ターゲットのビルド順序の決定
 
- MSBuild では、ターゲットのビルド順序を次のように決定します。
+MSBuild では、ターゲットのビルド順序を次のように決定します。
 
 1. `InitialTargets` ターゲットが実行されます。
 
@@ -117,7 +117,7 @@ ms.locfileid: "65225961"
 
 3. ターゲットの `Condition` 属性が評価されます。 `Condition` 属性が存在し、`false` と評価された場合、ターゲットは実行されず、ビルドにはそれ以上影響しません。
 
-    `BeforeTargets` または `AfterTargets` の条件付きターゲットをリストしている他のターゲットは、やはり決められた順序で実行します。
+   `BeforeTargets` または `AfterTargets` の条件付きターゲットをリストしている他のターゲットは、やはり決められた順序で実行します。
 
 4. `Condition` 属性がターゲットに適用されており、評価の結果、`false` にならない限り、ターゲットが実行されるか、スキップされる前に、その `DependsOnTargets` ターゲットが実行されます。
 

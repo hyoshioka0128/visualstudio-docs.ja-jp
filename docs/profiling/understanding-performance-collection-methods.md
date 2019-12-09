@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821232"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778090"
 ---
 # <a name="understand-performance-collection-methods"></a>パフォーマンス収集方法について
 
@@ -121,7 +122,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
 
 階層の相互作用のプロファイリングでは、[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ページまたはその他のアプリケーションと [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] データベースとの間で行われた同期的な [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 呼び出しに関する情報が、プロファイリング データ ファイルに追加されます。 データには、呼び出しの回数と時間、および最長時間と最短時間が含まれます。 階層の相互作用データは、サンプリング、インストルメンテーション、.NET メモリ、またはコンカレンシーの各方式で収集されたプロファイリング データに追加できます。
 
-![階層相互作用プロファイリング データ](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![階層相互作用のプロファイル データ](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 プロファイリング ツールによって収集される階層の相互作用データ
 
