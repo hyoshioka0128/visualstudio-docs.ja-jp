@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 関連項目
+        - name: 辞書／辞典／その他
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -591,7 +591,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Windows フォーム デザイナーの DPI 認識を無効にする
               href: designers/disable-dpi-awareness.md
-            - name: 関連項目
+            - name: 辞書／辞典／その他
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -1182,7 +1182,7 @@
           href: ide/reference/output-window.md
         - name: プロジェクトのプロパティ
           items:
-            - name: 関連項目
+            - name: 辞書／辞典／その他
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: '[アプリケーション] ページ (プロジェクト デザイナー) (UWP)'
@@ -1264,7 +1264,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv コマンドライン スイッチ
       items:
-        - name: 関連項目
+        - name: 辞書／辞典／その他
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
@@ -1403,28 +1403,6 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: サポート ライフサイクルとサービス
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: 問題のレポート
-      items:
-        - name: Visual Studio で問題を報告する方法
-          href: ide/how-to-report-a-problem-with-visual-studio.md
-        - name: 問題の状態の報告とよくあるご質問
-          displayName: Developer Community
-          href: ide/report-a-problem.md
-        - name: パフォーマンスの問題が修正される可能性を高める
-          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
-        - name: すべての呼び出し履歴での Visual Studio プロセスのミニダンプを作成する
-          displayName: Create minidumps with call stacks
-          href: ide/report-a-problem-minidumps.md
-        - name: MSBuild の問題のログを作成する
-          displayName: Create logs for MSBuild problems
-          href: ide/msbuild-logs.md
-        - name: PerfView で ETL トレースを収集する
-          displayName: ETL trace with PerfView
-          href: ide/report-a-problem-perfview.md
-    - name: Visual Studio の機能を提案する
-      href: ide/suggest-a-feature.md
-    - name: 開発者コミュニティのデータのプライバシー
-      href: ide/developer-community-privacy.md
     - name: カスタマー エクスペリエンス向上プログラム
       items:
         - name: 概要
@@ -1434,6 +1412,25 @@
           href: ide/diagnostic-data-collection.md
     - name: IDE に関するエラーのトラブルシューティング情報
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-    - name: フィードバック
-      displayName: Feedback
+- name: フィードバックの送信
+  items:
+    - name: 概要
       href: ide/feedback-options.md
+    - name: 問題を報告する
+      items:
+        - name: 問題を報告する方法
+          href: ide/how-to-report-a-problem-with-visual-studio.md
+        - name: 問題の状態の報告とよくあるご質問
+          href: ide/report-a-problem.md
+        - name: パフォーマンスのイシューを迅速に解決する
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
+        - name: 呼び出し履歴を含むミニダンプを作成する
+          href: ide/report-a-problem-minidumps.md
+        - name: MSBuild の問題のログを作成する
+          href: ide/msbuild-logs.md
+        - name: PerfView で ETL トレースを収集する
+          href: ide/report-a-problem-perfview.md
+    - name: 機能を提案する
+      href: ide/suggest-a-feature.md
+    - name: 開発者コミュニティのデータのプライバシー
+      href: ide/developer-community-privacy.md
