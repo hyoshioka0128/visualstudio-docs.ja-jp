@@ -1,16 +1,16 @@
 ---
 title: Subversion リポジトリのセットアップ
 description: Visual Studio for Mac の Subversion を使用します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 7dfb5c645125afc1485c1422909e52741507b327
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7133ffd01d8f384efa91d95bc8ea05aa75b7dd0d
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988225"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985232"
 ---
 # <a name="set-up-a-subversion-repository"></a>Subversion リポジトリの設定
 
@@ -38,7 +38,7 @@ Subversion がコンピューターにインストールされたら、次の手
 
 2. Visual Studio for Mac プロジェクトを開くか、作成します。
 
-3. 次のように、プロジェクトを右クリックして、**[バージョン管理]、[Publish in Version Control...]\(バージョン管理で発行...\)** の順に選択します。
+3. 次のように、プロジェクトを右クリックして、 **[バージョン管理]、[Publish in Version Control...]\(バージョン管理で発行...\)** の順に選択します。
 
     ![プロジェクトの発行を開始する](media/version-control-subversion2.png)
 
@@ -48,7 +48,7 @@ Subversion がコンピューターにインストールされたら、次の手
 
     ![[リポジトリの選択] と詳細入力ダイアログ](media/version-control-subversion3.png)
 
-7. **[OK]** をクリックし、**[発行]** を押して確認します。
+7. **[OK]** をクリックし、 **[発行]** を押して確認します。
 
 7. リポジトリを作成するサイトの資格情報の入力を求められたら、次の図のように入力します。
 

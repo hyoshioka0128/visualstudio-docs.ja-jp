@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac ツアー
 description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 43b7918dfba6ff1d8076d3173900ecdc1b1223a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998352"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984975"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac ツアー
 
@@ -76,7 +76,7 @@ Visual Studio for Mac でプロジェクトとソリューションを使用す�
 
 ![Solution Pad の [参照] フォルダー](media/ide-tour-image19.png)
 
-その他の参照は、**[参照の編集]** ダイアログを使用して追加されます。このダイアログを表示するには、[参照] フォルダーをダブルクリックするか、コンテキスト メニュー操作で **[参照の編集]** を選択します。
+その他の参照は、 **[参照の編集]** ダイアログを使用して追加されます。このダイアログを表示するには、[参照] フォルダーをダブルクリックするか、コンテキスト メニュー操作で **[参照の編集]** を選択します。
 
 ![[参照の編集] ダイアログ](media/ide-tour-image20.png)
 
@@ -88,7 +88,7 @@ Visual Studio for Mac で参照を使用する方法については、「[プロ
 
 NuGet は、.NET 開発用の最も人気のあるパッケージ マネージャーです。 Visual Studio は NuGet をサポートしているので、簡単にパッケージを検索し、プロジェクトをアプリケーションに追加できます。
 
-依存関係をアプリケーションに追加するには、[依存関係]/[パッケージ] フォルダーを右クリックし、**[パッケージの追加]** を選択します。
+依存関係をアプリケーションに追加するには、[依存関係]/[パッケージ] フォルダーを右クリックし、 **[パッケージの追加]** を選択します。
 
 ![NuGet パッケージの追加](media/ide-tour-image21.png)
 

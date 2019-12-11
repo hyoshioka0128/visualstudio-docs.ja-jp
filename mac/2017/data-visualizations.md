@@ -1,17 +1,17 @@
 ---
 title: デバッグ - データの視覚化
 description: デバッグは、プログラミングの中でも一般的で必要な部分です。 Visual Studio for Mac には、デバッグが簡単になる機能一式が備わっています。 この記事では、デバッガーでオブジェクトを検査するときに表示できるさまざまなデータの視覚化について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932130"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984760"
 ---
 # <a name="data-visualizations"></a>データの視覚化
 
@@ -33,7 +33,7 @@ Size/SizeF (iOS と Mac では CGSize) は、四角形としてレンダリン�
 
 [サイズの視覚化](media/data-visualizations-image11.png)
 
-## <a name="rectangle"></a>四角形
+## <a name="rectangle"></a>Rectangle
 Rectangle/RectangleF (iOS と Mac では CGRect) は、ディメンションと原点を表示します。 Size と同様に、250 px を超えるディメンションまで拡大縮小して描画されます。
 
 ![四角形の視覚化](media/data-visualizations-image12.png)
@@ -78,7 +78,7 @@ Rectangle/RectangleF (iOS と Mac では CGRect) は、ディメンションと�
 
 ## <a name="ienumerable"></a>IEnumerable
 
-IEnumerable はすべての値を列挙します。各値は、**[値の表示]** ボタンをクリックして表示できます。 `Array`、`ArrayList`、`List<>`、`Dictionary<,>` などのオブジェクトの場合は独自のデバッガー ビジュアライザーがあるため、IEnumerable オプションではオブジェクト値が表示されません。
+IEnumerable はすべての値を列挙します。各値は、 **[値の表示]** ボタンをクリックして表示できます。 `Array`、`ArrayList`、`List<>`、`Dictionary<,>` などのオブジェクトの場合は独自のデバッガー ビジュアライザーがあるため、IEnumerable オプションではオブジェクト値が表示されません。
 
 ![IEnumerable の視覚化](media/data-visualizations-image22.png)
 

@@ -1,17 +1,17 @@
 ---
 title: コードのリファクタリング
 description: Visual Studio for Mac でのコードの再編成は、ソース解析を使用して簡単に行うことができます。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988728"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985239"
 ---
 # <a name="refactoring"></a>リファクタリング
 
@@ -23,7 +23,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ## <a name="renaming"></a>名前の変更
 
-コード識別子 (クラス名やプロパティ名など) で *[名前の変更]* リファクタリング コマンドを使用して、その識別子のすべての出現箇所を検索し、変更することができます。 シンボルの名前を変更するには、次のように、そのシンボルを右クリックし、**[リファクター]、[名前の変更]** の順に選択するか、**Command + R** キー バインドを使用します。
+コード識別子 (クラス名やプロパティ名など) で *[名前の変更]* リファクタリング コマンドを使用して、その識別子のすべての出現箇所を検索し、変更することができます。 シンボルの名前を変更するには、次のように、そのシンボルを右クリックし、 **[リファクター]、[名前の変更]** の順に選択するか、**Command + R** キー バインドを使用します。
 
 ![[名前の変更] メニュー項目](media/refactoring-renaming1.png)
 
@@ -45,11 +45,11 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ![Option + Enter キーを使用した場合のコンテキスト項目](media/refactoring-image2a.png)
 
-これらのオプションを有効にするには、オプションの **[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]** の順に移動して、*[開いているファイルのソース解析を有効にする]* を選択する必要があります
+これらのオプションを有効にするには、オプションの **[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]** の順に移動して、 *[開いているファイルのソース解析を有効にする]* を選択する必要があります
 
 ![ソース解析の有効化](media/refactoring-options.png)
 
-推奨される 100 を超える実行可能なアクションがあります。これらを有効または無効にする場合は、**[Visual Studio for Mac]、[基本設定]、[ソースの解析]、[C#]、[コード アクション]** の順に参照し、アクションの横にあるボックスをオンまたはオフにします。
+推奨される 100 を超える実行可能なアクションがあります。これらを有効または無効にする場合は、 **[Visual Studio for Mac]、[基本設定]、[ソースの解析]、[C#]、[コード アクション]** の順に参照し、アクションの横にあるボックスをオンまたはオフにします。
 
 ![C# のソース解析アクション](media/refactoring-image3a.png)
 
@@ -82,7 +82,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
     }
 ```
 
-2. `double volume = (baseArea * height) / 3;` という行を強調表示し、それを右クリックして、**[リファクター]、[メソッドの抽出]** の順に選択します。
+2. `double volume = (baseArea * height) / 3;` という行を強調表示し、それを右クリックして、 **[リファクター]、[メソッドの抽出]** の順に選択します。
 
 3. 方向キーを使用して、コードで新しいメソッドを配置する場所を選択します。
 

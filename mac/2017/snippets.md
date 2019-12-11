@@ -1,16 +1,16 @@
 ---
 title: コード スニペット
 description: Visual Studio for Mac でコード スニペットを利用して効率的にプログラミングする方法
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693010"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984809"
 ---
 # <a name="code-snippets"></a>コード スニペット
 

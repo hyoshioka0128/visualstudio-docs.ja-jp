@@ -8,14 +8,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951144"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853517"
 ---
-# <a name="overview-suggest-a-feature"></a>概要: 機能を提案する
+# <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio の機能を提案する
 
 現在、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)上では問題を報告する機能を利用できますが、これと並んで機能を提案するための新しいエクスペリエンスが導入されました。 これは、Visual Studio の開発ワークフローと直接交流することができる、新しい便利な方法です。
 

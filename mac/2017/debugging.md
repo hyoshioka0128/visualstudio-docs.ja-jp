@@ -1,17 +1,17 @@
 ---
 title: Xamarin を使ったデバッグ
 description: デバッグは、プログラミングの中でも一般的で必要な部分です。 Visual Studio for Mac は成熟した IDE であり、デバッグが簡単になる機能一式が含まれています。 この記事では、安全なデバッグからデータの視覚化まで、Visual Studio for Mac のデバッグ機能を最大限に活用する方法について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 96474925c5411d76395cb60ab1ad4851c1cbfa19
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715941"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985018"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin を使ったデバッグ
 

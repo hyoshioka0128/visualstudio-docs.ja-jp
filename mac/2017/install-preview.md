@@ -1,17 +1,17 @@
 ---
 title: プレビュー リリースをインストールする
 description: Visual Studio for Mac の更新およびプレビュー リリース (Visual Studio 2019 for Mac プレビューを含む) へのアクセスについて説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 16fea3d68c7d418d7a0a56dbdcd83af107f91b4a
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 8bf139a6eab3c25bf28e787f9af12135813436e3
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107802"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984928"
 ---
 # <a name="install-a-preview-release"></a>プレビュー リリースをインストールする
 
