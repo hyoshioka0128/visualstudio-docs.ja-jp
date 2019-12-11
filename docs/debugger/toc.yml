@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
+        - name: 'C# データ ブレークポイントのトラブルシューティング'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: データ検査
       items:
         - name: デバッガー ウィンドウでデータを検査する
@@ -678,7 +680,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: デバッガーのセキュリティ
       href: debugger-security.md
-- name: 関連項目
+- name: 辞書／辞典／その他
   items:
     - name: デバッグ用ユーザー インターフェイス リファレンス
       items:
