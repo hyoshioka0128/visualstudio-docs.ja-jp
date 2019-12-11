@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac を更新する
 description: Visual Studio for Mac の更新およびプレビュー リリースへのアクセスについて説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e055e02141eb2b6113e1b925cc8d7a1693a32cf
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987835"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983543"
 ---
 # <a name="update-visual-studio-for-mac"></a>Visual Studio for Mac を更新する
 
@@ -26,7 +26,7 @@ Visual Studio for Mac では、3 つのチャネルでこれらの最新バー�
 
 **[Visual Studio の更新]** ボックスを使って、新しい更新プログラムの確認、チャネルの変更、更新プログラムのダウンロードとインストールを行うことができます。
 
-**[Visual Studio の更新]** を開くには、**[Visual Studio] > [更新の確認]** の順に移動します。
+**[Visual Studio の更新]** を開くには、 **[Visual Studio] > [更新の確認]** の順に移動します。
 
 ![[更新の確認] オプション](media/update-image1.png)
 
@@ -36,7 +36,7 @@ Visual Studio for Mac では、3 つのチャネルでこれらの最新バー�
 
 ## <a name="changing-the-updater-channel"></a>更新チャネルを変更する
 
-チャネルを変更するには、チャネル ドロップダウンからチャネルを選び、**[チャネルの切り替え]** ボタンをクリックします。
+チャネルを変更するには、チャネル ドロップダウンからチャネルを選び、 **[チャネルの切り替え]** ボタンをクリックします。
 
 ![チャネルの変更ドロップダウン](media/update-image3.png)
 
@@ -46,7 +46,7 @@ Visual Studio for Mac では、3 つのチャネルでこれらの最新バー�
 
 **[自動的に確認する]** オプションを選択した場合は、Visual Studio for Mac を開くと [Visual Studio の更新] ボックスが表示され、新しい更新プログラムが利用できることを通知します。 ダウンロードを開始するオプションも提供されます。
 
-更新プログラムのインストールを開始するには、**[再起動して更新プログラムをインストールする]** ボタンを選びます。
+更新プログラムのインストールを開始するには、 **[再起動して更新プログラムをインストールする]** ボタンを選びます。
 
 ![更新プログラムのインストールを開始するボタン](media/update-image4.png)
 

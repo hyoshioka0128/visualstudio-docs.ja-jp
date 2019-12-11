@@ -1,17 +1,17 @@
 ---
 title: IDE のカスタマイズ
 description: Visual Studio for Mac はさまざまな方法でカスタマイズできます。効率性とデザイン性の両方のニーズを満たす環境でアプリを開発できます。 このトピックでは、Visual Studio for Mac を自分のニーズに合わせてカスタマイズするためのさまざまな方法を紹介します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931735"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984772"
 ---
 # <a name="customizing-the-ide"></a>IDE のカスタマイズ
 
@@ -21,7 +21,7 @@ Visual Studio for Mac はさまざまな方法でカスタマイズできます�
 
 ![ダーク テーマ ビュー](media/customizing-the-ide-image7a.png)
 
-Visual Studio for Mac ではテーマを切り替えることができます。次の図のように、**[Visual Studio]、[ユーザー設定]、[環境]、[視覚スタイル]** の順に選択し、**[ユーザー インターフェイス テーマ]** ドロップダウンから希望のテーマを選択します。
+Visual Studio for Mac ではテーマを切り替えることができます。次の図のように、 **[Visual Studio]、[ユーザー設定]、[環境]、[視覚スタイル]** の順に選択し、 **[ユーザー インターフェイス テーマ]** ドロップダウンから希望のテーマを選択します。
 
 ![ダーク テーマの選択](media/customizing-the-ide-image7b.png)
 
@@ -44,7 +44,7 @@ Visual Studio for Mac は次の 14 か国語にローカライズされており
 * スペイン語
 * トルコ語
 
-Visual Studio for Mac の表示言語を変更するには、次の図のように、**[Visual Studio]、[ユーザー設定]、[環境]、[視覚スタイル]** の順に選択し、**[ユーザー インターフェイス言語]** ドロップダウンから希望の言語を選択します。
+Visual Studio for Mac の表示言語を変更するには、次の図のように、 **[Visual Studio]、[ユーザー設定]、[環境]、[視覚スタイル]** の順に選択し、 **[ユーザー インターフェイス言語]** ドロップダウンから希望の言語を選択します。
 
 ![言語の選択](media/customizing-the-ide-image11a.png)
 
@@ -58,13 +58,13 @@ Visual Studio for Mac の表示言語を変更するには、次の図のよう�
 
 ![標準ヘッダー オプション](media/customizing-the-ide-image8a.png)
 
-Visual Studio for Mac のバージョン管理からコミットが行われた場合、そのコミットで、**[名前]** フィールドと **[電子メール]** フィールドに入力されたデータが利用されます。 このフィールドにデータを入力していない場合、バージョン管理の利用時、Visual Studio for Mac から入力が求められます。
+Visual Studio for Mac のバージョン管理からコミットが行われた場合、そのコミットで、 **[名前]** フィールドと **[電子メール]** フィールドに入力されたデータが利用されます。 このフィールドにデータを入力していない場合、バージョン管理の利用時、Visual Studio for Mac から入力が求められます。
 
 ## <a name="key-bindings"></a>キー バインド
 
 キー バインドを利用することで、より効率的に Visual Studio for Mac を操作できるように開発環境を調整できます。 Visual Studio (Windows)、ReSharper、Visual Studio Code、Xcode など、人気のある多くの IDE 用に使い慣れたキー バインドが提供されています。
 
-次の図のように、**[Visual Studio]、[ユーザー設定]、[環境]、[キー バインド]** の順に選択し、キー バインドを設定できます。
+次の図のように、 **[Visual Studio]、[ユーザー設定]、[環境]、[キー バインド]** の順に選択し、キー バインドを設定できます。
 
 ![キー バインドの設定](media/customizing-the-ide-image10a.png)
 
@@ -82,11 +82,11 @@ Visual Studio for Mac で新しいソリューションまたはファイルを�
 
 ![Solution Pad](media/customizing-the-ide-image2a.png)
 
-Visual Studio for Mac のパッドには追加情報、ツール、ナビゲーション補助が含まれています。これには、**[表示]、[パッド]** メニュー項目の順に選択し、それを追加するパッドを選択するとアクセスできるようになります。
+Visual Studio for Mac のパッドには追加情報、ツール、ナビゲーション補助が含まれています。これには、 **[表示]、[パッド]** メニュー項目の順に選択し、それを追加するパッドを選択するとアクセスできるようになります。
 
 ![新しいパッドを選択する](media/customizing-the-ide-image3a.png)
 
-パッドはさまざまなコマンドで自動的に開くこともできます。たとえば、**[複数のファイル内を検索]** (Shift + Command + F) コマンドを実行すると、別のパッドが開き、検索結果が表示されます。
+パッドはさまざまなコマンドで自動的に開くこともできます。たとえば、 **[複数のファイル内を検索]** (Shift + Command + F) コマンドを実行すると、別のパッドが開き、検索結果が表示されます。
 
 パッドは、自分にとって最も便利になるようにワークフロー内の任意の場所に移動したり、配置したりできます。 たとえば、ドキュメント エディターのあらゆる側面にパッドを配置できます。別のパッドの隣に、上に、または下に配置することで、あるいはタブ付きパッドのセットとして配置することですばやく切り替えることができます。
 
@@ -108,7 +108,7 @@ Visual Studio for Mac のパッドには追加情報、ツール、ナビゲー�
 
 1 つのレイアウトが常に有効になります。レイアウト内を変更すると、たとえば、パッドを追加したり、パッドの位置を変更したりすると、そのとき有効なレイアウトだけが変更されます。 Visual Studio for Mac を閉じると、変更は保存されません。
 
-ただし、新しいレイアウトを作成することができます。**[表示]、[Save Current Layout]\(現在のレイアウトを保存\)** メニュー項目を使用します。 これで現在のレイアウトがメニューに追加されます。追加したレイアウトはいつでも選択できます。
+ただし、新しいレイアウトを作成することができます。 **[表示]、[Save Current Layout]\(現在のレイアウトを保存\)** メニュー項目を使用します。 これで現在のレイアウトがメニューに追加されます。追加したレイアウトはいつでも選択できます。
 
 ![現在のレイアウトを保存する](media/customizing-the-ide-image6a.png)
 
@@ -116,7 +116,7 @@ Visual Studio for Mac のパッドには追加情報、ツール、ナビゲー�
 
 Visual Studio for Mac では、テキスト エディターを並べて開いたり、エディターを別のウィンドウとして表示したりできます。
 
-2 列モードは [表示] メニュー項目から有効にできます。**[表示]、[エディター列]、[2 列]** の順に選択するか、エディター領域の 1 つの端にエディター タブをドラッグします。
+2 列モードは [表示] メニュー項目から有効にできます。 **[表示]、[エディター列]、[2 列]** の順に選択するか、エディター領域の 1 つの端にエディター タブをドラッグします。
 
 ![2 列のサイド バイ サイド モード](media/customizing-the-ide-sbs.png)
 
@@ -126,7 +126,7 @@ Visual Studio for Mac では、テキスト エディターを並べて開いた
 
 ![2 列サイド バイ サイドと追加タブ](media/customizing-the-ide-sbs2.png)
 
-1 つのエディターを開いている状態に戻すには、**[表示]、[エディター列]、[1 列]** の順に選択します。
+1 つのエディターを開いている状態に戻すには、 **[表示]、[エディター列]、[1 列]** の順に選択します。
 
 ## <a name="related-video"></a>関連ビデオ
 

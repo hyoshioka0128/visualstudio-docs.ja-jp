@@ -1,16 +1,16 @@
 ---
 title: コードのフォーマット
 description: この記事では、Visual Studio for Mac のテキスト エディターの動作を変更できるさまざまなオプションについて説明します
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 042f7c74057de9a00ae59d5e08a77100c5f30e3c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824376"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984683"
 ---
 # <a name="editor-behavior"></a>エディターの動作
 

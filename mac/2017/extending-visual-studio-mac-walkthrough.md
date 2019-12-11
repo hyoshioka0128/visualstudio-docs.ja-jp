@@ -1,16 +1,16 @@
 ---
 title: Visual Studio for Mac チュートリアルの拡張
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998583"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985028"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Visual Studio for Mac チュートリアルの拡張
 
@@ -32,7 +32,7 @@ ms.locfileid: "62998583"
 
 4. Addin Maker がインストールされたら、拡張機能パッケージの構築を始めることができます。 まず新しいソリューションを作成します。
 
-5. **[新しいソリューション]** ダイアログから、**[その他] > [その他] > [全般] > [Xamarin Studio Addin] を選択し、C#** テンプレートを選択して、次の画面で新しいソリューションに `DateInserter` と名前を付けます。
+5. **[新しいソリューション]** ダイアログから、 **[その他] > [その他] > [全般] > [Xamarin Studio Addin] を選択し、C#** テンプレートを選択して、次の画面で新しいソリューションに `DateInserter` と名前を付けます。
 
    ![新しいソリューションの作成](media/extending-visual-studio-mac-addin7New.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "62998583"
 
    これら 2 つのプレースホルダー メソッドは後で拡張します。
 
-10. **DateInserter** プロジェクトを右クリックし、**[追加] > [新しいファイル]** を選択します。 **[全般] > [空の列挙型]** を選択し、新しいファイルに *DateInserterCommands* と名前を付けます。
+10. **DateInserter** プロジェクトを右クリックし、 **[追加] > [新しいファイル]** を選択します。 **[全般] > [空の列挙型]** を選択し、新しいファイルに *DateInserterCommands* と名前を付けます。
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "62998583"
     }
     ```
 
-15. 最後に、拡張機能パッケージを実行してテストします。 新しいインスタンスの Visual Studio for Mac で、**[編集] > [Insert Date]\(日付の挿入\)** を選択します。 次のスクリーンショットのように、現在の日時がカレットに挿入されます。
+15. 最後に、拡張機能パッケージを実行してテストします。 新しいインスタンスの Visual Studio for Mac で、 **[編集] > [Insert Date]\(日付の挿入\)** を選択します。 次のスクリーンショットのように、現在の日時がカレットに挿入されます。
 
     ![[Insert Date]\(日付の挿入\) のスクリーンショット](media/extending-visual-studio-mac-addin12.png)
 

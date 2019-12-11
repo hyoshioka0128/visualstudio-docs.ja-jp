@@ -1,16 +1,16 @@
 ---
 title: ビルド システムのカスタマイズ
 description: この記事は、Visual Studio for Mac で利用される MSBuild ビルド システムの概要です
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932796"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983451"
 ---
 # <a name="customizing-the-build-system"></a>ビルド システムのカスタマイズ
 
@@ -26,11 +26,11 @@ MSBuild は、プロジェクト ファイルと呼ばれる XML ファイルを
 
 ### <a name="viewing-the-msbuild-file"></a>MSBuild ファイルを表示する
 
-MSBuild ファイルを見つけるには、プロジェクト名を右クリックし、**[Finder に表示]** を選択します。 次の図のように、この Finder ウィンドウには、`.csproj` ファイルなど、プロジェクトに関連するすべてのファイルとフォルダーが表示されます。
+MSBuild ファイルを見つけるには、プロジェクト名を右クリックし、 **[Finder に表示]** を選択します。 次の図のように、この Finder ウィンドウには、`.csproj` ファイルなど、プロジェクトに関連するすべてのファイルとフォルダーが表示されます。
 
 ![Finder での csproj の場所](media/customizing-build-system-image1.png)
 
-Visual Studio for Mac で新しいタブに `.csproj` を表示するには、プロジェクト名を右クリックし、**[ツール]、[ファイルの編集]** の順に選択します。
+Visual Studio for Mac で新しいタブに `.csproj` を表示するには、プロジェクト名を右クリックし、 **[ツール]、[ファイルの編集]** の順に選択します。
 
 ![ソース エディターで csproj を開く](media/customizing-build-system-image2.png)
 

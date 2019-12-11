@@ -1,17 +1,17 @@
 ---
 title: アップデーターが情報の取得中にエラーを表示する
 description: 「更新プログラム情報の取得中にエラーが発生しました」というエラーが発生した場合の修正方法に関する手順です。 Visual Studio 2017 for Mac で
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
-ms.openlocfilehash: 6996bd56571c75f31893d7df5b8237fc52b378ae
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824084"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983482"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>トラブルシューティング:アップデーターが情報の取得中にエラーを表示する
 

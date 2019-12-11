@@ -1,16 +1,16 @@
 ---
 title: コメント アウト コード
 description: この記事では、Visual Studio for Mac のソース エディターでのコメントの使用について説明します
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933021"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74982640"
 ---
 # <a name="comments"></a>コメント
 

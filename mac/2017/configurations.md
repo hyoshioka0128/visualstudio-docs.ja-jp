@@ -1,16 +1,16 @@
 ---
 title: ビルド構成について
 description: この記事では、Visual Studio for Mac のさまざまなビルド構成について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824412"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983595"
 ---
 # <a name="understanding-build-configurations"></a>ビルド構成について
 

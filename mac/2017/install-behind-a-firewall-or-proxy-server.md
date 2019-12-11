@@ -3,15 +3,15 @@ title: ファイアウォールまたはプロキシ サーバーの内側に Vi
 description: このドキュメントでは、企業環境で Visual Studio for Mac (および Xamarin などのワークロード) が機能するように、ファイアウォールで許可する必要があるホストの一覧を示します。
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 10/23/2018
-ms.openlocfilehash: 446baf89dacfe7b742e3da3307711435495c8da4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 738c5277ca6a669a834635f5c626e0cbabd7a7ef
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033184"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984946"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio for Mac をインストールして使用する
 

@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac をアンインストールする
 description: Visual Studio for Mac と関連ツールをアンインストールする方法を説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef9b609b74b878a2d9bdafb087481ad1c6e79a70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986830"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985141"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
@@ -82,7 +82,7 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Visual Studio for Mac をアンインストールする
 
-Mac から Visual Studio をアンインストールするときは最初に、**/Applications** ディレクトリで **Visual Studio.app** を探して、それを**ごみ箱**にドラッグします。 または、次の図のように、右クリックして **[ごみ箱に移動]** を選びます。
+Mac から Visual Studio をアンインストールするときは最初に、 **/Applications** ディレクトリで **Visual Studio.app** を探して、それを**ごみ箱**にドラッグします。 または、次の図のように、右クリックして **[ごみ箱に移動]** を選びます。
 
 ![Visual Studio アプリケーションをごみ箱に移動する](media/uninstall-image1.png)
 
@@ -102,7 +102,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
-Xamarin のさまざまなファイルやフォルダーを含む次のディレクトリを削除することもできます。 ただし、実行する前に、このディレクトリに Android の署名キーが含まれていることに注意してください。 詳細については、セクション「**[Android SDK と Java SDK をアンインストールする](#uninstall-android-sdk-and-java-sdk)**」を参照してください。
+Xamarin のさまざまなファイルやフォルダーを含む次のディレクトリを削除することもできます。 ただし、実行する前に、このディレクトリに Android の署名キーが含まれていることに注意してください。 詳細については、セクション「 **[Android SDK と Java SDK をアンインストールする](#uninstall-android-sdk-and-java-sdk)** 」を参照してください。
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -139,7 +139,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Android SDK と Java SDK をアンインストールする
 
-Android アプリケーションの開発には Android SDK が必要です。 Android SDK のすべての部分を完全に削除するには、**~/Library/Developer/Xamarin/** でファイルを探して、**ごみ箱**に移動します。
+Android アプリケーションの開発には Android SDK が必要です。 Android SDK のすべての部分を完全に削除するには、 **~/Library/Developer/Xamarin/** でファイルを探して、**ごみ箱**に移動します。
 
 > [!WARNING]
 > Visual Studio for Mac によって生成された Android の署名キーは `~/Library/Developer/Xamarin/Keystore` 内にあります。 キーストアを残しておきたい場合は、これらを適切にバックアップするか、このディレクトリを削除しないでください。
@@ -189,7 +189,7 @@ rm -rf ~/Library/Xamarin.Mac
 
 ## <a name="uninstall-workbooks-and-inspector"></a>Workbooks と Inspector をアンインストールする
 
-1.2.2 以降では、ターミナルで次のコマンドを実行して、Xamarin Workbooks と Inspector をアンインストールできます。
+1\.2.2 以降では、ターミナルで次のコマンドを実行して、Xamarin Workbooks と Inspector をアンインストールできます。
 
 ```bash
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
