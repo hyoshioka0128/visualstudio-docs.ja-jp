@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188997"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829992"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
@@ -132,6 +132,8 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![What Is Your Name コードが表示されているコード ウィンドウ](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
+1. 緑色の **[開始]** ボタンを使用するか、**F5** キーを押して、最初のアプリをビルドして実行します。
+
 1. コンソール ウィンドウが開いたら、自分の名前を入力します。 コンソール ウィンドウは次のスクリーン ショットのようになります。
 
    ![What Is Your Name、時刻と日付、Press any key to continue メッセージが表示されているコンソール ウィンドウ](media/vb-console-what-name.png)
@@ -156,6 +158,8 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
     このコードでは、既存の <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A>、および <xref:System.Console.ReadKey%2A> ステートメントを置き換えます。
 
    ![What Is Your Name コードが表示されているコード ウィンドウ](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. 緑色の **[開始]** ボタンを使用するか、**F5** キーを押して、最初のアプリをビルドして実行します。
 
 1. コンソール ウィンドウが開いたら、自分の名前を入力します。 コンソール ウィンドウは次のスクリーン ショットのようになります。
 

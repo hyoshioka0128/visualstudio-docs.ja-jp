@@ -1,7 +1,7 @@
 ---
 title: フィードバックのオプション
 description: 製品およびドキュメントをより良いものにするために、皆様のご意見をお寄せください。フィードバックは次の方法で送信できます。
-ms.date: 04/25/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.custom: seoapril2019
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919087"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853491"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio フィードバック オプション
 
@@ -34,7 +34,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ![Visual Studio 2019 IDE の [フィードバックの送信] アイコン](./media/vs-2019/send-feedback-icon.png)
 
-次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
+次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) インターフェイスが開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ::: moniker-end
 
@@ -44,38 +44,34 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ![Visual Studio 2019 IDE の [フィードバックの送信] アイコン](./media/send-feedback-icon.png)
 
-次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
+次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) インターフェイスが開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ::: moniker-end
 
-## <a name="make-a-suggestion"></a>ご提案の送信
+## <a name="suggest-a-feature"></a>機能を提案する
 
 ::: moniker range="vs-2019"
 
-追加または改善のご要望がございましたら、**機能の提案**ツールでお伝えください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[機能の提案]** の順に選択します。
+Visual Studio の品質向上のためのアイデアやご提案をお持ちの場合は、 **[機能の提案]** ツールを使用してお知らせください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[機能の提案]** の順に選択します。
 
-次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
+次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) インターフェイスが開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-改善のご要望がございましたら、**提案の送信**ツールでお伝えください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[提案の送信]** の順に選択します。
+Visual Studio の品質向上のためのアイデアやご提案をお持ちの場合は、 **[提案の送信]** ツールを使用してお知らせください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[提案の送信]** の順に選択します。
 
-次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
+次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) ページが開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
 ::: moniker-end
-
-### <a name="rate-this-product"></a>この製品を評価する
-
-プレリリース バージョンの Visual Studio には、リリース バージョンの製品にはないメニュー項目 **[この製品を評価する]** があります。 このメニュー項目 **[この製品を評価する]** を使用して、実行中のプレリリース ビルドの品質に関するフィードバックを送信します。
 
 ## <a name="improve-the-documentation"></a>ドキュメントの改善
 
 ドキュメントの改善でご協力いただける場合、方法が 2 つあります。
 
-* ページの下部にある **[このページは役に立ちましたか]** フィードバック ボタンを選択します。 このボタンは、すべてのドキュメント ページに表示されます。
-* [docs.microsoft.com](/visualstudio/) の Visual Studio ページについてフィードバックをいただける場合、GitHub アカウントをご使用ください。 その場合、 **[フィードバックの送信]** で **[このページ]** ボタンを選択します。このボタンもページの一番下にあります。
+* ドキュメントページの右上にある、 **[このページはお役に立ちましたか?]** という応答ツールを使用します。
+* [docs.microsoft.com](/visualstudio/) の Visual Studio ページについてフィードバックをいただける場合、GitHub アカウントをご使用ください。 その場合は、ドキュメントページの下部にある **[次のフィードバックを送信]**  >  **[このページ]** ボタンを選択します。
 
 ## <a name="contact-microsoft-support"></a>Microsoft サポートに問い合わせる
 
@@ -94,12 +90,11 @@ Microsoft サポート サービスは、当時最新だった価格、条項、
 
 質問と回答を他の開発者と共有する場合、次のコミュニティ サイトで他の開発者とつながることを検討してください。
 
-* Visual Studio [開発者コミュニティ](https://developercommunity.visualstudio.com)
 * [MSDN フォーラム](https://social.msdn.microsoft.com/Forums/home)
 * [Reddit](https://www.reddit.com/r/VisualStudio/) の Visual Studio
 * [スタック オーバーフロー](https://stackoverflow.com/search?q=visual+studio+-code)
 
-「[開発者コード サンプル](https://code.msdn.microsoft.com/)」サイトで、他の開発者のコードを閲覧したり、ご自分の例を公開したりすることもできます。
+また、「[コード サンプルを参照](/samples/browse/)」ページで、他の開発者のコードを閲覧したり、ご自分の例を公開したりすることもできます。
 
 ## <a name="see-also"></a>関連項目
 

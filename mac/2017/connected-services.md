@@ -2,15 +2,15 @@
 title: 接続済みサービス
 description: Visual Studio for Mac からモバイル アプリに Azure データ ストレージ、認証、およびプッシュ通知を追加する
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
-ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932141"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985291"
 ---
 # <a name="connected-services-walkthrough"></a>接続済みサービスのチュートリアル
 
@@ -18,7 +18,7 @@ ms.locfileid: "62932141"
 
 このチュートリアルでは、クロスプラットフォーム Xamarin.Forms ポータブル クラス ライブラリ (PCL) アプリケーションに、クラウド データ ストレージ、認証、およびプッシュ通知を提供する Azure バックエンド サービスを追加する方法を説明します。
 
-1. まず、ソリューションの **[接続済みサービス]** をダブルクリックすると、**[Services Gallery]** \(サービス ギャラリー\) が表示されます。
+1. まず、ソリューションの **[接続済みサービス]** をダブルクリックすると、 **[Services Gallery]** \(サービス ギャラリー\) が表示されます。
   この一覧は、そのアプリケーションの種類で利用可能なすべてのサービスです。 サービス (**Azure App Service を使用したモバイル バックエンド** など) をクリックして選択します。
 
     [![Visual Studio for Mac の接続済みサービス ノード](media/connected-services-image001-sml.png "Visual Studio for Mac の接続済みサービス ノード")](media/connected-services-image001.png#lightbox)
@@ -31,7 +31,7 @@ ms.locfileid: "62932141"
 3. 依存関係が機能するには、PCL とプラットフォーム固有のプロジェクトの両方にそれが追加される必要があります。
   それを (直接または間接的に) 参照するすべてのプロジェクトにサービスが追加されるように、チェックボックスを選択します。
 
-    [![サービスを参照するすべてのプロジェクトをチェックする](media/connected-services-image003-sml.png "サービスを参照するすべてのプロジェクトをチェックする")](media/connected-services-image003.png#lightbox)
+    [![サービスを参照する必要があるすべてのプロジェクトを確認する](media/connected-services-image003-sml.png "サービスを参照する必要があるすべてのプロジェクトを確認する")](media/connected-services-image003.png#lightbox)
 
 4. NuGet パッケージの **[ライセンスの同意]** ダイアログで **[同意]** を選択します。
   MobileClient と依存関係、およびオフライン データ同期に必要な SQLiteStore 用の 2 つのダイアログ ボックスで同意する必要がある場合があります。
@@ -47,16 +47,16 @@ ms.locfileid: "62932141"
 
     [![一覧からアプリ サービスを選択する](media/connected-services-image006-sml.png "一覧からアプリ サービスを選択する")](media/connected-services-image006.png#lightbox)
 
-    一覧にサービスがない場合、**[新規]** ボタンをクリックします (手順 9 を参照)。
+    一覧にサービスがない場合、 **[新規]** ボタンをクリックします (手順 9 を参照)。
 
 7. PCL に `MobileServiceClient` のテンプレート コードをコピーします。 ファイルの場所は、それが 1 インスタンスしかない場合は重要ではありません。
   Azure のすべての対話を処理し、`MobileServiceClient`を使用する `AzureService` クラスを作成するのが推奨されるアプローチです。
 
-    ![アプリに config コードをコピーする](media/connected-services-image007.png "アプリに config コードをコピーする")
+    ![構成コードをアプリにコピーする](media/connected-services-image007.png "構成コードをアプリにコピーする")
 
 8. ドキュメントの「**次の手順**」に従って、アプリにデータ、オフライン同期、認証、およびプッシュ通知を追加します。
 
-    [![次の手順に関する説明](media/connected-services-image008-sml.png "次の手順に関する説明")](media/connected-services-image008.png#lightbox)
+    [![次のステップの手順を確認する](media/connected-services-image008-sml.png "次のステップの手順を確認する")](media/connected-services-image008.png#lightbox)
 
 9. 既存のアプリケーション サービスがない場合、Visual Studio for Mac から新しいサービスを作成できます。
   サービス一覧の左下の **[新規]** ボタンをクリックして **[新しい App Service]** ダイアログを開きます。

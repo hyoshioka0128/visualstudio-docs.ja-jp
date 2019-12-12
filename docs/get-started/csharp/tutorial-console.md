@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180244"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830007"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -136,7 +136,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
     ![Visual Studio IDE の IntelliSense オートコンプリート機能を示す整数計算コードのアニメーション](./media/integer-math-intellisense.gif)
 
-1. **[Calculator]** を選択してプログラムを実行するか、**F5** キーを押します。
+1. **[Calculator]** の横にある緑色の **[開始]** ボタンを選択して、プログラムをビルドして実行します。または、**F5** キーを押します。
 
    ![[Calculator] ボタンを選択して、ツールバーからアプリを実行する](./media/csharp-console-calculator-button.png)
 
