@@ -1,5 +1,5 @@
 ---
-title: 問題を報告する
+title: 問題を報告する:状態とよくあるご質問
 description: 問題の報告ツールの概要および問題の状態と定義について説明します
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925982"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853504"
 ---
-# <a name="overview-report-a-problem"></a>概要: 問題を報告する
+# <a name="report-a-problem-states-and-faq"></a>問題を報告する:状態とよくあるご質問
 
 Visual Studio 開発者コミュニティは、問題の報告ツールを使用することで、問題を送信することができます。 個々の問題報告が、コア エンジニアリング システムでの作業項目になり、製品チームと直接協力して、影響の大きい問題を識別し、解決することができます。 お客様から送られてくる多くの診断情報を含むフィードバックは、Visual Studio 製品ファミリの向上に不可欠です。 問題の報告に時間を割いていただいて本当に感謝いたします。
 
