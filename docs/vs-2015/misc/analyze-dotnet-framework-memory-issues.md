@@ -1,5 +1,5 @@
 ---
-title: Analyze .NET Framework memory issues | Microsoft Docs
+title: .NET Framework メモリの問題を分析する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -17,173 +17,174 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295894"
 ---
-# <a name="analyze-net-framework-memory-issues"></a>.Net Framework のメモリ分析の問題
+# <a name="analyze-net-framework-memory-issues"></a>.NET Framework のメモリ分析の問題
 Visual Studio マネージド メモリ アナライザーを使用して、.NET Framework コードでのメモリ リークおよび非効率的なメモリの使用を検出します。 対象コードの最低限の .NET Framework バージョンは .NET Framework 4.5 です。  
   
- The memory analysis tool analyzes information in *dump files with heap data* that a copy of the objects in an app's memory. ダンプ (.dmp) ファイルは、Visual Studio IDE から収集することも、その他のシステム ツールを使用して収集することもできます。  
+ メモリ分析ツールは、アプリのメモリ内のオブジェクトのコピーである*ヒープデータを使用してダンプファイル*内の情報を分析します。 ダンプ (.dmp) ファイルは、Visual Studio IDE から収集することも、その他のシステム ツールを使用して収集することもできます。  
   
 - 単一のスナップショットを分析することにより、オブジェクト型のメモリ使用に対する相対的な影響を理解し、アプリ内でメモリが効率的に使用されていないコードを検出することができます。  
   
-- You can also compare (*diff*) two snapshots of an app to find areas in your code that cause the memory use to increase over time.  
+- また、アプリの2つのスナップショットを比較 (*diff*) して、メモリ使用量が時間の経過と共に増加するコード内の領域を見つけることもできます。  
   
-  For a walkthrough of the managed memory analyzer, see [Using Visual Studio 2013 to Diagnose .NET Memory Issues in Production](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/) on the Visual Studio ALM + Team Foundation Server blog .  
+  マネージメモリアナライザーのチュートリアルについては、Visual Studio ALM + Team Foundation Server ブログの「Visual Studio 2013 を使用した[実稼働環境での .Net メモリの問題の診断](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)」を参照してください。  
   
 ## <a name="BKMK_Contents"></a> 目次  
- [Memory use in .NET Framework apps](#BKMK_Memory_use_in__NET_Framework_apps)  
+ [.NET Framework アプリでのメモリ使用量](#BKMK_Memory_use_in__NET_Framework_apps)  
   
- [Identify a memory issue in an app](#BKMK_Identify_a_memory_issue_in_an_app)  
+ [アプリのメモリの問題を特定する](#BKMK_Identify_a_memory_issue_in_an_app)  
   
- [Collect memory snapshots](#BKMK_Collect_memory_snapshots)  
+ [メモリのスナップショットの収集](#BKMK_Collect_memory_snapshots)  
   
- [Analyze memory use](#BKMK_Analyze_memory_use)  
+ [メモリ使用量の分析](#BKMK_Analyze_memory_use)  
   
-## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Memory use in .NET Framework apps  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a>.NET Framework アプリでのメモリ使用量  
  .NET Framework はガベージ コレクションが実行されるランタイムであるため、ほとんどのアプリでメモリの使用が問題になりません。 ただし、Web サービスや Web アプリケーションなどの長時間実行されるアプリケーションおよびメモリ量に制限があるデバイスでは、メモリ内にオブジェクトが蓄積されると、アプリのパフォーマンスや、そのアプリを実行するデバイスのパフォーマンスに影響することがあります。 メモリが過剰に使用されると、ガベージ コレクターの実行頻度が高すぎる場合や、オペレーティング システムが RAM とディスクとの間でメモリを移動せざるを得ない場合、アプリケーションやコンピューターのリソースが不足する可能性があります。 最悪の場合、"メモリ不足" 例外によってアプリがクラッシュすることもあります。  
   
- The .NET *managed heap* is a region of virtual memory where reference objects created by an app are stored. オブジェクトの有効期間はガベージ コレクター (GC) によって管理されます。 ガベージ コレクターは参照を使用して、メモリ ブロックを占有するオブジェクトを追跡します。 参照は、オブジェクトが作成され変数に割り当てられると、作成されます。 単一のオブジェクトに対して、複数の参照を作成することもできます。 たとえば、クラス、コレクション、またはその他のデータ構造にオブジェクトを追加するか、2 つ目の変数にオブジェクトを割り当てると、オブジェクトへの追加の参照が作成されます。 明示的な方法ではありませんが、あるオブジェクトでイベント ハンドラーを別のオブジェクトのイベントに追加した場合も、参照が作成されます。 この場合、ハンドラーが明示的に削除されるか 2 つ目のオブジェクトが破棄されるまで、最初のオブジェクトへの参照が 2 つ目のオブジェクトに保持されます。  
+ .NET*マネージヒープ*は、アプリによって作成された参照オブジェクトが格納される仮想メモリの領域です。 オブジェクトの有効期間はガベージ コレクター (GC) によって管理されます。 ガベージ コレクターは参照を使用して、メモリ ブロックを占有するオブジェクトを追跡します。 参照は、オブジェクトが作成され変数に割り当てられると、作成されます。 単一のオブジェクトに対して、複数の参照を作成することもできます。 たとえば、クラス、コレクション、またはその他のデータ構造にオブジェクトを追加するか、2 つ目の変数にオブジェクトを割り当てると、オブジェクトへの追加の参照が作成されます。 明示的な方法ではありませんが、あるオブジェクトでイベント ハンドラーを別のオブジェクトのイベントに追加した場合も、参照が作成されます。 この場合、ハンドラーが明示的に削除されるか 2 つ目のオブジェクトが破棄されるまで、最初のオブジェクトへの参照が 2 つ目のオブジェクトに保持されます。  
   
- 各アプリケーションについて、GC では、アプリケーションから参照されるオブジェクトを追跡する参照ツリーが管理されます。 The *reference tree* has a set of roots, which includes global and static objects, as well as associated thread stacks and dynamically instantiated objects. オブジェクトへの参照を持つ 1 つ以上の親オブジェクトがある場合、そのオブジェクトではルートが作成されます。 GC は、アプリケーション内の他のオブジェクトまたは変数から参照されていない場合にのみ、そのオブジェクトのメモリを再利用できます。  
+ 各アプリケーションについて、GC では、アプリケーションから参照されるオブジェクトを追跡する参照ツリーが管理されます。 *参照ツリー*には、グローバルオブジェクトと静的オブジェクト、関連するスレッドスタック、および動的にインスタンス化されたオブジェクトを含む、一連のルートがあります。 オブジェクトへの参照を持つ 1 つ以上の親オブジェクトがある場合、そのオブジェクトではルートが作成されます。 GC は、アプリケーション内の他のオブジェクトまたは変数から参照されていない場合にのみ、そのオブジェクトのメモリを再利用できます。  
   
- ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+ ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)  
   
-## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identify a memory issue in an app  
- メモリに関する問題の最も可視的な兆候は、アプリのパフォーマンスです (特に、時間の経過に伴ってパフォーマンスが低下する場合)。 特定のアプリの実行中に他のアプリのパフォーマンスが低下した場合も、メモリの問題を示している可能性があります。 If you suspect a memory issue, use a tool like Task Manager or [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) to investigate further. たとえば、考えられるメモリ リークの原因として、説明が付かないような合計メモリ サイズの増加がないか確認します。  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a>アプリのメモリの問題を特定する  
+ メモリに関する問題の最も可視的な兆候は、アプリのパフォーマンスです (特に、時間の経過に伴ってパフォーマンスが低下する場合)。 特定のアプリの実行中に他のアプリのパフォーマンスが低下した場合も、メモリの問題を示している可能性があります。 メモリに問題があると思われる場合は、タスクマネージャーや[Windows パフォーマンスモニター](https://technet.microsoft.com/library/cc749249.aspx)などのツールを使用してさらに調査してください。 たとえば、考えられるメモリ リークの原因として、説明が付かないような合計メモリ サイズの増加がないか確認します。  
   
- ![Consistent memory growth in Resource Monitor](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
+ ![リソースモニターでの一貫したメモリの増加](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
  また、コードについて認識しているより明らかに大きいメモリ スパイクに気付くことがあります。このような場合は、プロシージャ内での非効率的なメモリの使用を示している可能性があります。  
   
- ![Memory spikes in Resource Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
+ ![リソースマネージャーのメモリのスパイク](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-## <a name="BKMK_Collect_memory_snapshots"></a> Collect memory snapshots  
- The memory analysis tool analyzes information in *dump files* that contain heap information. You can create dump files in Visual Studio, or you can use a tool like [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) from [Windows Sysinternals](https://technet.microsoft.com/sysinternals). See [What is a dump, and how do I create one?](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/) on the Visual Studio Debugger Team blog.  
+## <a name="BKMK_Collect_memory_snapshots"></a>メモリのスナップショットの収集  
+ メモリ分析ツールは、ヒープ情報を含む*ダンプファイル*内の情報を分析します。 Visual Studio でダンプファイルを作成することも、 [Windows Sysinternals](https://technet.microsoft.com/sysinternals)から[ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx)などのツールを使用することもできます。 Visual Studio デバッガーチームのブログで、ダンプの概要[と作成方法](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/)を確認してください。  
   
 > [!NOTE]
 > ほとんどのツールでは、完全なヒープ メモリ データの有無に関係なくダンプ情報を収集できます。 Visual Studio メモリ アナライザーでは、完全なヒープ情報が求められます。  
   
- **To collect a dump from Visual Studio**  
+ **Visual Studio からダンプを収集するには**  
   
-1. Visual Studio プロジェクトから開始されたプロセスのダンプ ファイルを作成することも、実行中のプロセスにデバッガーをアタッチすることもできます。 See [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Visual Studio プロジェクトから開始されたプロセスのダンプ ファイルを作成することも、実行中のプロセスにデバッガーをアタッチすることもできます。 「[実行中のプロセスへのアタッチ」を](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)参照してください。  
   
-2. 実行を停止します。 The debugger stops when you choose **Break All** on the **Debug** menu, or at an exception or at a breakpoint  
+2. 実行を停止します。 デバッガーは、**デバッグ** メニューの **すべて中断** をクリックしたとき、または例外またはブレークポイントで 中断 をクリックすると停止します。  
   
-3. On the **Debug** menu, choose **Save Dump As**. In the **Save Dump As** dialog box, specify a location and make sure that **Minidump with Heap** (the default) is selected in the **Save as type** list.  
+3. **[デバッグ]** メニューの **[名前を付けてダンプを保存]** をクリックします。 名前を付け **[てダンプを保存]** ダイアログボックスで、場所を指定し、 **[ファイルの種類]** ボックスの一覧で **[ヒープ付きミニダンプ]** (既定) が選択されていることを確認します。  
   
-   **To compare two memory snapshots**  
+   **2つのメモリスナップショットを比較するには**  
   
    アプリでのメモリ使用量の増加を分析するには、アプリの単一インスタンスから 2 つのダンプ ファイルを収集します。  
   
-   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)  
   
-## <a name="BKMK_Analyze_memory_use"></a> Analyze memory use  
- [Filter the list of objects](#BKMK_Filter_the_list_of_objects) **&#124;** [Analyze memory data in from a single snapshot](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [Compare two memory snapshots](#BKMK_Compare_two_memory_snapshots)  
+## <a name="BKMK_Analyze_memory_use"></a>メモリ使用量の分析  
+ **&#124;** [オブジェクトの一覧をフィルター処理](#BKMK_Filter_the_list_of_objects) **&#124;** [する1つのスナップショットからのメモリデータの分析](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) [2 つのメモリスナップショットの比較](#BKMK_Compare_two_memory_snapshots)  
   
  ダンプ ファイルでメモリ使用に関する問題を分析するには:  
   
-1. In Visual Studio, choose **File**, **Open** and specify the dump file.  
+1. Visual Studio で、 **[ファイル]** 、 **[開く]** の順に選択し、ダンプファイルを指定します。  
   
-2. On the **Minidump File Summary** page, choose **Debug Managed Memory**.  
+2. **[ミニダンプファイルの概要]** ページで、 **[マネージメモリのデバッグ]** を選択します。  
   
-    ![Dump file summary page](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![[ダンプファイルの概要] ページ](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
    メモリ アナライザーによるデバッグ セッションが開始し、ファイルの分析が行われ、[ヒープの表示] ページに結果が表示されます。  
   
-   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)  
   
-### <a name="BKMK_Filter_the_list_of_objects"></a> Filter the list of objects  
- メモリ アナライザーの既定では、メモリ スナップショット内のオブジェクト一覧がフィルター処理されます。これにより、ユーザー コードの型とインスタンスのみを対象とし、合計ヒープ サイズのパーセンテージで表したしきい値を超える合計包括サイズの型のみが表示されます。 You can change these options in the **View Settings** list:  
+### <a name="BKMK_Filter_the_list_of_objects"></a>オブジェクトの一覧をフィルター処理する  
+ メモリ アナライザーの既定では、メモリ スナップショット内のオブジェクト一覧がフィルター処理されます。これにより、ユーザー コードの型とインスタンスのみを対象とし、合計ヒープ サイズのパーセンテージで表したしきい値を超える合計包括サイズの型のみが表示されます。 **[表示設定]** の一覧では、次のオプションを変更できます。  
   
 |||  
 |-|-|  
-|**マイ コードのみを有効にする**|[マイ コードのみ] では、独自に作成した型のみを一覧に表示するために、ほとんどの一般的なシステム オブジェクトが非表示になります。<br /><br /> You can also set the Just My Code option in the Visual Studio **Options** dialog box. **[デバッグ]** メニューの **[オプションと設定]** をクリックします。 In the **Debugging**/**General** tab, choose or clear **Just My Code**.|  
-|**Collapse Small Objects**|**Collapse Small Objects** hides all types whose total inclusive size is less than 0.5 percent of the total heap size.|  
+|**マイ コードのみを有効にする**|[マイ コードのみ] では、独自に作成した型のみを一覧に表示するために、ほとんどの一般的なシステム オブジェクトが非表示になります。<br /><br /> また、Visual Studio の **[オプション]** ダイアログボックスでマイコードのみオプションを設定することもできます。 **[デバッグ]** メニューの **[オプションと設定]** をクリックします。 [**デバッグ**/**全般**] タブで**マイコードのみ**を選択または選択解除します。|  
+|**小さいオブジェクトを折りたたむ**|**小さいオブジェクトを折りたたむ**。合計包括サイズが合計ヒープサイズの0.5% 未満であるすべての型を非表示にします。|  
   
- You can also filter the type list by entering a string in the **Search** box. 一覧には、この文字列が名前に含まれる型のみが表示されます。  
+ **検索**ボックスに文字列を入力して、型の一覧をフィルター処理することもできます。 一覧には、この文字列が名前に含まれる型のみが表示されます。  
   
- ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+ ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)  
   
-### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analyze memory data in from a single snapshot  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a>1つのスナップショットからのメモリデータの分析  
  Visual Studio による新しいデバッグ セッションが開始し、ファイルの分析が行われ、[ヒープの表示] ページにメモリ データが表示されます。  
   
- ![The Object Type list](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
+ ![[オブジェクトの種類] の一覧](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
   
- ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+ ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)  
   
 #### <a name="object-type-table"></a>オブジェクトの型テーブル  
  最上部のテーブルには、メモリ内に保持されているオブジェクトの型が一覧表示されます。  
   
-- **Count** shows the number of instances of the type in the snapshot.  
+- **カウント**は、スナップショット内の型のインスタンスの数を示します。  
   
-- **Size (Bytes)** is the size of the all instances of the type, excluding the size of objects it holds references to. 次に、  
+- **Size (バイト)** は、参照を保持しているオブジェクトのサイズを除く、型のすべてのインスタンスのサイズです。 次に、  
   
-- **Inclusive Size (Bytes)** includes the sizes of referenced objects.  
+- **包括サイズ (バイト)** には、参照されるオブジェクトのサイズが含まれます。  
   
-  You can choose the instances icon (![The instance icon in the Object Type column](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) in the **Object Type** column to view a list of the instances of the type.  
+  **[オブジェクトの種類]** 列の インスタンス アイコン ([![オブジェクトの種類] 列のインスタンスアイコン](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) をクリックすると、その型のインスタンスの一覧が表示されます。
+  
   
 #### <a name="instance-table"></a>インスタンス テーブル  
- ![Instances table](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
+ ![Instances テーブル](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
-- **Instance** is the memory location of the object that serves as the object identifier of the object  
+- **Instance**は、オブジェクトのオブジェクト識別子として機能するオブジェクトのメモリ位置です。  
   
-- **Value** shows the actual value of value types. 参照される型の名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
+- **値は**、値型の実際の値を示します。 参照される型の名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
   
-   ![Instance values in a data tip](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![データヒントのインスタンス値](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
-- **Size (Bytes)** is the size of the object, excluding the size of objects it holds references to. 次に、  
+- **Size (バイト)** は、オブジェクトのサイズ (参照を保持しているオブジェクトのサイズは除く) です。 次に、  
   
-- **Inclusive Size (Bytes)** includes the sizes of referenced objects.  
+- **包括サイズ (バイト)** には、参照されるオブジェクトのサイズが含まれます。  
   
-  By default, types and instances are sorted by **Inclusive Size (Bytes)** . 並べ替え順序を変更するには、一覧の列ヘッダーを選択します。  
+  既定では、型とインスタンスは**包括サイズ (バイト)** で並べ替えられます。 並べ替え順序を変更するには、一覧の列ヘッダーを選択します。  
   
 #### <a name="paths-to-root"></a>ルートのパス  
   
-- For a type selected from the **Object Type** table, the **Paths to Root** table shows the unique type hierarchies that lead to root objects for all objects of the type, along with the number of references to the type that is above it in the hierarchy.  
+- **[オブジェクトの種類]** テーブルから選択された型の場合、 **[ルートのパス]** テーブルには、その型のすべてのオブジェクトのルートオブジェクトを表す一意の型階層と、階層内で上位にある型への参照の数が表示されます。  
   
-- For an object selected from the instance of a type, **Paths to Root** shows a graph of the actual objects that hold a reference to the instance. オブジェクトの名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
+- 型のインスタンスから選択されたオブジェクトの場合、**ルートへのパス**には、インスタンスへの参照を保持する実際のオブジェクトのグラフが表示されます。 オブジェクトの名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
   
 #### <a name="referenced-types--referenced-objects"></a>参照される型/参照されるオブジェクト  
   
-- For a type selected from the **Object Type** table, the **Referenced Types** tab shows the size and number of referenced types held by all objects of the selected type.  
+- **[オブジェクトの種類]** テーブルから選択された型の場合、参照される **[型]** タブには、選択した型のすべてのオブジェクトに保持されている参照先の型のサイズと数が表示されます。  
   
-- For a selected instance of a type, **Referenced Objects** shows the objects that are held by the selected instance. 名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
+- 型のインスタンスが選択されている場合、[参照された**オブジェクト**] には、選択したインスタンスによって保持されているオブジェクトが表示されます。 名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
   
-  **Circular references**  
+  **循環参照**  
   
-  オブジェクトでは、直接的または間接的に 1 つ目のオブジェクトへの参照を保持する 2 つ目のオブジェクトを参照している可能性があります。 When the memory analyzer encounters this situation, it stops expanding the reference path and adds a **[Cycle Detected]** annotation to the listing of the first object and stops.  
+  オブジェクトでは、直接的または間接的に 1 つ目のオブジェクトへの参照を保持する 2 つ目のオブジェクトを参照している可能性があります。 メモリアナライザーは、このような状況を検出すると、参照パスの展開を停止し、最初のオブジェクトの一覧に **[Cycle が検出されました]** という注釈を追加して、停止します。  
   
-  **Root types**  
+  **ルート型**  
   
   メモリ アナライザーでは、保持されている参照の種類を示す注釈がルート オブジェクトに追加されます。  
   
-|注釈|説明|  
+|Annotation|説明|  
 |----------------|-----------------|  
-|**Static variable** `VariableName`|静的変数。 `VariableName` は変数の名前です。|  
-|**Finalization Handle**|ファイナライザー キューからの参照。|  
-|**Local Variable**|ローカル変数。|  
-|**Strong Handle**|オブジェクト ハンドル テーブルからの強い参照へのハンドル。|  
-|**Async. Pinned Handle**|オブジェクト ハンドル テーブルからの非同期固定オブジェクト。|  
-|**Dependent Handle**|オブジェクト ハンドル テーブルからの依存オブジェクト。|  
-|**Pinned Handle**|オブジェクト ハンドル テーブルからの固定された強い参照。|  
-|**RefCount Handle**|オブジェクト ハンドル テーブルからの参照カウントされたオブジェクト。|  
-|**SizedRef Handle**|ガベージ コレクション時に、すべてのオブジェクトおよびオブジェクト ルートの集合的なクロージャの概算サイズを保持する強力なハンドル。|  
-|**Pinned local variable**|ピンされたローカル変数。|  
+|**静的変数**`VariableName`|静的変数。 `VariableName` は変数の名前です。|  
+|**終了ハンドル**|ファイナライザー キューからの参照。|  
+|**ローカル変数**|ローカル変数。|  
+|**Strong ハンドル**|オブジェクト ハンドル テーブルからの強い参照へのハンドル。|  
+|非同期 **ます。ピン留めされたハンドル**|オブジェクト ハンドル テーブルからの非同期固定オブジェクト。|  
+|**依存ハンドル**|オブジェクト ハンドル テーブルからの依存オブジェクト。|  
+|**ピン留めされたハンドル**|オブジェクト ハンドル テーブルからの固定された強い参照。|  
+|**RefCount ハンドル**|オブジェクト ハンドル テーブルからの参照カウントされたオブジェクト。|  
+|**SizedRef ハンドル**|ガベージ コレクション時に、すべてのオブジェクトおよびオブジェクト ルートの集合的なクロージャの概算サイズを保持する強力なハンドル。|  
+|**固定されたローカル変数**|ピンされたローカル変数。|  
   
-### <a name="BKMK_Compare_two_memory_snapshots"></a> Compare two memory snapshots  
+### <a name="BKMK_Compare_two_memory_snapshots"></a>2つのメモリスナップショットの比較  
  メモリ リークの原因である可能性のあるオブジェクトを見つけるために、プロセスに関する 2 つのダンプ ファイルを比較できます。 リークしているオブジェクトの数の増加をわかりやすくするために、1 つ目 (1 回目) と 2 つ目 (2 回目) のファイルを収集する時間間隔は十分長くする必要があります。 2 つのファイルを比較するには:  
   
-1. Open the second dump file, and then choose **Debug Managed Memory** on the **Minidump File Summary** page.  
+1. 2番目のダンプファイルを開き、 **[ミニダンプファイルの概要]** ページで **[マネージメモリのデバッグ]** を選択します。  
   
-2. On the memory analysis report page, open the **Select baseline** list, and then choose **Browse** to specify the first dump file.  
+2. [メモリ分析レポート] ページで、 **[ベースラインの選択**] の一覧を開き、 **[参照]** をクリックして最初のダンプファイルを指定します。  
   
-   The analyzer adds columns to the top pane of the report that display the difference between the **Count**, **Size**, and **Inclusive Size** of the types to those values in the earlier snapshot.  
+   アナライザーによって、レポートの上部ペインに列が追加されます。このペインには、前のスナップショットの型の**数**、**サイズ**、および**包括サイズ**の差が表示されます。  
   
-   ![Diff columns in the type list](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![型リスト内の Diff 列](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
-   A **Reference Count Diff** column is also added to the **Paths to Root** table.  
+   **参照カウントの差分**列も、**ルートテーブルへのパス**に追加されます。  
   
-   ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)  
   
-## <a name="see-also"></a>参照  
- [VS ALM TFS Blog: Using Visual Studio 2013 to Diagnose .NET Memory Issues in Production](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)   
- [Channel 9 &#124; Visual Studio TV &#124; Managed Memory Analysis](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
- [Channel 9 &#124; Visual Studio Toolbox &#124; Managed Memory Analysis in Visual Studio 2013](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)
+## <a name="see-also"></a>関連項目  
+ [VS ALM TFS ブログ:Visual Studio 2013 を使用した実稼働](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)での .NET メモリの問題の診断    
+ [Channel 9 &#124; Visual Studio TV &#124;マネージメモリ分析](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
+ [Channel 9 &#124; Visual Studio 2013 での&#124; Visual Studio ツールボックスマネージメモリ分析](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

@@ -1,5 +1,5 @@
 ---
-title: Define and install a modeling extension | Microsoft Docs
+title: モデリング拡張機能を定義してインストールする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -24,7 +24,7 @@ ms.locfileid: "74298726"
 
 Visual Studio では、モデリング図に対して拡張機能を定義することができます。 これにより、図とモデルを各自のニーズに適応させることができます。 たとえば、メニュー コマンド、UML プロファイル、検証制約、およびツールボックスの項目を定義できます。 単一の拡張機能で複数のコンポーネントを定義できます。 また、これらの拡張機能を [VSIX (Visual Studio Integration Extension)](https://go.microsoft.com/fwlink/?LinkId=160780)の形式で他の Visual Studio ユーザーに配布することもできます。 Visual Studio で VSIX プロジェクトを使用して VSIX を作成できます。
 
-## <a name="requirements"></a>［要件］
+## <a name="requirements"></a>必要条件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -74,10 +74,10 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
         |||
         |-|-|
-        |**Type** =|**Microsoft.VisualStudio.MefComponent**|
-        |**Source** =|**A project in current solution**|
-        |**Project** =|*Your class library project*|
-        |**Embed in this folder** =|*(empty)*|
+        |**型** =|**Microsoft.VisualStudio.MefComponent**|
+        |**Source** =|**現在のソリューション内のプロジェクト**|
+        |**プロジェクト** =|*クラスライブラリプロジェクト*|
+        |**このフォルダーに埋め込み** =|*指定*|
 
          その他の種類のコンポーネントについては、次のセクションのリンクを参照してください。
 
@@ -97,7 +97,7 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
 #### <a name="to-run-an-extension-during-its-development"></a>拡張機能を開発段階において実行するには
 
-1. In the [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** menu, choose **Start Debugging**.
+1. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**デバッグ** メニューの **[デバッグの開始]** をクリックします。
 
      プロジェクトがビルドされ、 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] の新しいインスタンスが実験モードで起動されます。
 
@@ -109,14 +109,14 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
 3. **[デバッグなしで開始]** を使用したがデバッガーを使用する必要がある場合は、Visual Studio のメイン インスタンスに戻ります。 **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします。 ダイアログ ボックスで、Visual Studio の実験用インスタンスを選択します。プログラム名は **devenv**です。
 
-## <a name="Installing"></a> Installing and uninstalling an extension
+## <a name="Installing"></a>拡張機能のインストールとアンインストール
  自分のコンピューターまたは他のコンピューターにおいて Visual Studio のメイン インスタンスで拡張機能を実行するには、次の手順を実行します。
 
 1. 自分のコンピューターで、拡張機能プロジェクトによってビルドされた **.vsix** ファイルを見つけます。
 
     1. **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
+    2. _YourProject_ **\\\*\\ファイルビン**を見つけ**ます。**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
@@ -136,9 +136,9 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
 3. 拡張機能を選択し、 **[アンインストール]** をクリックします。
 
-   拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
+   拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、次の場所からファイルを削除することによって拡張機能を削除できます。 *% Localappdata%* は通常*DriveName*: \ Users\\*UserName*\appdata\local です):
 
    *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="see-also"></a>参照
- [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+## <a name="see-also"></a>関連項目
+ [プロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[カスタムモデリングツールボックスアイテムを](../modeling/define-a-custom-modeling-toolbox-item.md)定義する[uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する[モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する
