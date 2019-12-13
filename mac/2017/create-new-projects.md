@@ -1,16 +1,16 @@
 ---
 title: 新しいプロジェクトとソリューションを作成する
 description: この記事では、Visual Studio for Mac でプロジェクトとソリューションを作成する方法について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692425"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983645"
 ---
 # <a name="creating-new-projects-and-solutions"></a>新しいプロジェクトとソリューションを作成する
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777915"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810115"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -198,7 +198,7 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
 ### <a name="pinnable-properties-tool"></a>ピン留め可能なプロパティ ツール
 
-**16.4 の新機能**:新しいピン留め可能なプロパティ ツールを使用したデバッグ中に、オブジェクトを、それらのプロパティによって簡単に識別できるようになりました。 [ウォッチ]、[自動変数]、[ローカル] ウィンドウのデバッガー ウィンドウで表示したいプロパティの上にカーソルを合わせ、ピン アイコンをクリックするだけで、探していた情報がウィンドウの上部にすぐに表示されます。
+**16.4 の新機能**:新しいピン留め可能なプロパティ ツールを使用して、デバッグ中に、オブジェクトをそのプロパティで簡単に識別できるようになりました。 [ウォッチ]、[自動変数]、[ローカル] ウィンドウのデバッガー ウィンドウで表示したいプロパティの上にカーソルを合わせ、ピン アイコンを選択するだけで、探していた情報がウィンドウの上部にすぐに表示されます。
 
    ![ピン留め可能なプロパティ ツールを使用して Visual Studio デバッガーでプロパティをピン留めする方法を示すアニメーション](media/vs-2019/debugger-pinnable-properties.gif)
 

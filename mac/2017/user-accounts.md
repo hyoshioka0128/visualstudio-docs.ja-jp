@@ -1,16 +1,16 @@
 ---
 title: ユーザー アカウント
 description: Visual Studio for Mac にサインインし、Visual Studio for Mac でサブスクリプションを有効にする方法に関する詳細
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 71233b609f2e68935b71e3044a9b6ec0f59091bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c612e1afab79e507838f8294b71d45348e8b5e46
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986717"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984780"
 ---
 # <a name="user-accounts"></a>ユーザー アカウント
 

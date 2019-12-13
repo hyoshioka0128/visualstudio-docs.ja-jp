@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 2017 for Mac をインストールする
 description: Visual Studio for Mac とクロスプラット フォーム開発に必要なその他のコンポーネントをインストールする手順について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500982"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984918"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Visual Studio 2017 for Mac をインストールする
 
@@ -23,7 +23,7 @@ ms.locfileid: "66500982"
 
 最適なエクスペリエンスのためには、ダウングレードする前に Visual Studio 2019 for Mac を[アンインストール](uninstall.md)してください。 ダウンロードの原因となる問題がある場合は、[問題を報告](report-a-problem.md)してお知らせください。
  
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 ネイティブのクロスプラットフォーム アプリの開発を始めるには、Visual Studio for Mac をダウンロードするときに、インストールして準備時にセットアップする必要があるものがいくつかあります。
 

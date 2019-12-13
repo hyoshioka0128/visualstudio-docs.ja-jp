@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: d15a20adeb3203687e4d940635551c33774953a5
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681349"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74809672"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio のアンインストール
 
@@ -36,7 +36,7 @@ ms.locfileid: "68681349"
 
      たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、**Visual Studio インストーラー**として一覧表示される **V** の文字までスクロールします。
 
-     ![Visual Studio インストーラー](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio インストーラーの検索")
+     ![Visual Studio インストーラー](media/locate-the-visual-studio-installer.png "Microsoft Visual Studio インストーラーを見つける")
 
    > [!NOTE]
    > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
@@ -82,7 +82,7 @@ Visual Studio 2017 のすべてのインストールと Visual Studio インス�
 
 1. **[OK]** をクリックして選択を確定します。
 
-     ![Visual Studio のアンインストールの確認](media/vs-2019/uninstall-visualstudio-confirm.png "Visual Studio 2019 のアンインストールの確認")
+     ![Visual Studio のアンインストールの確認](media/vs-2019/uninstall-visualstudio-confirm.png "Visual Studio 2019 をアンインストールすることを確認する")
 
 後で気が変わって Visual Studio 2019 を再インストールする場合は、再度 Visual Studio インストーラーを起動し、 **[使用可能]** タブを選択し、インストールする Visual Studio のエディションを選択してから、 **[インストール]** を選択します。
 

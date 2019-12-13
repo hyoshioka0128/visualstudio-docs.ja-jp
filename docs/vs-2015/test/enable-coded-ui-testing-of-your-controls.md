@@ -20,7 +20,7 @@ ms.locfileid: "74302577"
 
 コード化された UI テスト フレームワークのサポートを実装している場合は、コントロールをより簡単にテストできます。 サポート レベルを徐々に上げることができます。 記録と再生およびプロパティの検証のサポートから始めることができます。 この最初のサポートに加えて、コード化された UI テスト ビルダーがコントロールのカスタム プロパティを認識し、生成されたコードからそれらのプロパティにアクセスするためのカスタム クラスを提供できるようにすることができます。 また、コード化された UI テスト ビルダーが、記録される操作の目的に近い方法で操作をキャプチャできるようにすることもできます。
 
- **このトピックの内容**
+ **このトピックの内容:**
 
 1. [アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
 
@@ -30,21 +30,21 @@ ms.locfileid: "74302577"
 
 4. [操作フィルターの実装によって目的に応じた操作をサポートする](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
-   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")
+   ![CUIT&#95;全体](../test/media/cuit-full.png "CUIT_Full")
 
 ## <a name="recordandplayback"></a>アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする
  コード化された UI テスト ビルダーは、記録時に出現したコントロールに関する情報をキャプチャし、そのセッションを再生するコードを生成します。 コントロールがユーザー補助をサポートしていない場合、コード化された UI テスト ビルダーは画面座標を使用して操作 (マウス クリックなど) をキャプチャします。 テストの再生時、生成されたコードは同じ画面座標にそれらのマウス クリックを表示します。 テストの再生時にコントロールが画面上の別の場所に表示される場合、生成されたコードはコントロールに対するその操作の実行に失敗します。 テストが異なる画面構成や異なる環境で再生される場合、または UI レイアウトが変更された後に再生される場合、これは失敗する可能性があります。
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;recordnosupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
 
  しかし、ユーザー補助を実装している場合は、コード化された UI テスト ビルダーがテストを記録してコードを生成するときに、コントロールに関する情報をキャプチャするためにそれを使用します。 その後、テストを実行すると、コントロールがユーザー インターフェイスの別の場所にあっても、生成されたコードがコントロールに対してそれらのイベントを再生します。 テストの作成者は、コントロールの基本的なプロパティを使用してアサートを作成することもできます。
 
- ![CUIT&#95;Record](../test/media/cuit-record.png "CUIT_Record")
+ ![CUIT&#95;レコード](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Windows フォーム コントロールの記録と再生、プロパティの検証、およびナビゲーションをサポートするには
  次のプロシージャに概要を示し、<xref:System.Windows.Forms.AccessibleObject> で詳しく説明しているように、コントロールのユーザー補助を実装します。
 
- ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![CUIT&#95;アクセス可能](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. <xref:System.Windows.Forms.Control.ControlAccessibleObject> から派生するクラスを実装し、クラスのオブジェクトを返すように <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。
 
@@ -83,7 +83,7 @@ ms.locfileid: "74302577"
 ## <a name="customproprties"></a>プロパティ プロバイダーの実装によってカスタム プロパティの検証をサポートする
  記録と再生およびプロパティの検証の基本的なサポートを実装したら、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> プラグインを実装して、コントロールのカスタム プロパティをコード化された UI テストから使用できるようにすることができます。 たとえば、次のプロシージャでは、コード化された UI テストがグラフ コントロールの CurveLegend 子コントロールの State プロパティにアクセスできるようにするプロパティ プロバイダーを作成します。
 
- ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;customprops](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>カスタム プロパティの検証をサポートするには
  ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")
@@ -410,9 +410,9 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
  Visual Studio はテストを記録するとき、各マウス イベントとキーボード イベントをキャプチャします。 ただし、一連のマウス イベントとキーボード イベントで操作の目的が失われる場合があります。 たとえば、コントロールがオートコンプリートをサポートしている場合は、テストを別の環境で再生すると、同じマウス イベントとキーボード イベントのセットで別の値になることがあります。 一連のキーボード イベントとマウス イベントを単一の操作に置き換える操作フィルター プラグインを追加できます。 こうすることで、結果として値を選択することになる一連のマウス イベントとキーボード イベントを、値を設定する単一の操作に置き換えることができます。 これによって、コード化された UI テストは環境の違いによるオートコンプリートの結果の違いから保護されます。
 
 ### <a name="to-support-intent-aware-actions"></a>目的に応じた操作をサポートするには
- ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")
+ ![CUIT&#95;アクション](../test/media/cuit-actions.png "CUIT_Actions")
 
-1. Implement an action filter class that’s derived from [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), overriding the properties [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) and [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
+1. [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)、[Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、[Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、[FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、[Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110))、および [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)) の各プロパティをオーバーライドして、[uitestactionfilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))から派生したアクションフィルタークラスを実装します。
 
     ```csharp
     internal class MyActionFilter : UITestActionFilter
@@ -536,7 +536,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
+ Visual Studio 2012 を使用した継続的デリバリーのための [テスト–第2章:単体テスト:内部](https://go.microsoft.com/fwlink/?LinkID=255188) のテスト
 
 ## <a name="see-also"></a>関連項目
 

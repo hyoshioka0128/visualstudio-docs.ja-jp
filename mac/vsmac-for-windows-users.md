@@ -1,16 +1,16 @@
 ---
 title: Windows ユーザー向けの Visual Studio for Mac
 description: Visual Studio for Mac のアクセシビリティ機能の概要と、それらを有効にする方法について説明します。
-author: alclark
-ms.author: alcl
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/25/2019
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: 3306cdec93b501ad2006bbee2ceca3bf42514fe9
-ms.sourcegitcommit: 7739f36507b4762eea83c692102bdc5188460f28
+ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71315077"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984259"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Windows ユーザー向けの Visual Studio for Mac
 
@@ -48,9 +48,9 @@ macOS のメニューは、Windows のメニューと構成が異なります。
 |タスク                   |Visual Studio (Windows)                                              |Visual Studio for Mac                |
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |ユーザー設定 (オプション)  |[ツール] > [オプション]                                                   |[Visual Studio] > [ユーザー設定]       |
-|Extensions             |[拡張機能] > [拡張機能の管理]                                       |[Visual Studio] > [拡張機能]        |
+|拡張機能             |[拡張機能] > [拡張機能の管理]                                       |[Visual Studio] > [拡張機能]        |
 |レイアウト                |[ウィンドウ] > [ウィンドウ レイアウトを適用] > (レイアウトを選択する)                       |[表示] > (レイアウトを選択する)               |
-|更新プログラム                |[ヘルプ] > [更新プログラムのチェック]                                             |[Visual Studio] > [更新プログラムのチェック] |
+|更新                |[ヘルプ] > [更新プログラムのチェック]                                             |[Visual Studio] > [更新プログラムのチェック] |
 |NuGet パッケージ マネージャー  |[ツール] > [NuGet パッケージ マネージャー] > [Manage NuGet Packages or Solution]\(NuGet パッケージまたはソリューションの管理\) |[プロジェクト] > [NuGet パッケージの管理]   |
 |パッド/ウィンドウ         |[表示] > (パッド/ウィンドウを選択する)                                         |[表示] > (パッド/ウィンドウを選択する)  |
 |ツールを探す             |[編集] > [検索と置換] > (ツールを選択する)                              |[検索] > (ツールを選択する)               |

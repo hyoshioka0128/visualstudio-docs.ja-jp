@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528536"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903995"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>パフォーマンスの問題が修正される可能性を高める方法
 
@@ -116,9 +116,9 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 **不明な無応答**
 
 無応答が予期しない形で発生する場合は、次の発生時に Visual Studio の新しいインスタンスを起動し、そのインスタンスの問題を報告します。
-[[記録] 画面](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)で、ハングしている Visual Studio セッションを選択してください。
+[[記録] 画面](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)で、応答しない Visual Studio セッションを選択してください。
 
-ハングしている Visual Studio インスタンスが管理者モードで起動された場合は、2 番目のインスタンスも管理者モードで起動する必要があります。
+応答しない Visual Studio インスタンスが管理者モードで起動された場合は、2 番目のインスタンスも管理者モードで起動する必要があります。
 
 >[!NOTE] 
 > **最も有用なフィードバック:** このケースに対して最も有用なフィードバックは、無応答の時点でキャプチャされたヒープ ダンプです。

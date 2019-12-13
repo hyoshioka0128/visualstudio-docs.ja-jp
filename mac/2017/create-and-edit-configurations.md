@@ -1,17 +1,17 @@
 ---
 title: ビルド構成の作成と編集
 description: この記事では、Visual Studio for Mac でビルド構成を作成する方法について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 14a9ed8423779ad878fb5c304bbb6d28e1945a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932848"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983575"
 ---
 # <a name="creating-and-editing-build-configurations"></a>ビルド構成の作成と編集
 
@@ -23,13 +23,13 @@ ms.locfileid: "62932848"
 
 プロジェクトのビルド構成は次の手順で作成します。
 
-1. プロジェクト ノードを右クリックし、**[オプション]** を選択します。
+1. プロジェクト ノードを右クリックし、 **[オプション]** を選択します。
 
-2. [プロジェクト オプション] ダイアログで、**[ビルド]、[構成]** の順に選択します。
+2. [プロジェクト オプション] ダイアログで、 **[ビルド]、[構成]** の順に選択します。
 
     ![プロジェクト オプションの構成マネージャー](media/create-and-edit-configurations-image2.png)
 
-3. 新しい構成を作成するには、**[追加]** を選択します。 あるいは、既存の構成の 1 つをコピーできます。
+3. 新しい構成を作成するには、 **[追加]** を選択します。 あるいは、既存の構成の 1 つをコピーできます。
 
 構成が作成されたら、プロジェクト オプションの **[ビルド]** セクションを利用し、構成に合わせてプロパティを調整できます。
 
@@ -39,13 +39,13 @@ ms.locfileid: "62932848"
 
 ソリューションのビルド構成は次の手順で作成します。
 
-1. ソリューション ノードを右クリックし、**[オプション]** を選択します。
+1. ソリューション ノードを右クリックし、 **[オプション]** を選択します。
 
-2. [ソリューション オプション] ダイアログで、**[ビルド]、[構成]** の順に選択します。
+2. [ソリューション オプション] ダイアログで、 **[ビルド]、[構成]** の順に選択します。
 
     ![ソリューション オプションの構成マネージャー](media/create-and-edit-configurations-image1.png)
 
-3. 新しい構成を作成するには、**[追加]** を選択します。 あるいは、既存の構成の 1 つをコピーできます。
+3. 新しい構成を作成するには、 **[追加]** を選択します。 あるいは、既存の構成の 1 つをコピーできます。
 
 構成が作成されたら、各プロジェクトのオプションの **[ビルド]** セクションを利用し、構成に合わせてプロパティを調整できます。
 

@@ -3,7 +3,7 @@ title: Visual Studio の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 08/23/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74566994"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810058"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -69,7 +69,7 @@ ms.locfileid: "74566994"
 
      たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
-     ![Visual Studio インストーラー](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio インストーラーを見つける")
+     ![Visual Studio インストーラー](media/locate-the-visual-studio-installer.png "Microsoft Visual Studio インストーラーを見つける")
 
      >[!TIP]
      >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
@@ -84,7 +84,7 @@ ms.locfileid: "74566994"
 
 1. **[ワークロード]** 画面で、インストールまたはアンインストールするワークロードを選択または選択解除します。
 
-    ![Visual Studio 2017 のセットアップ ダイアログ](media/vs2017-modify-workloads.PNG "Visual Studio 2017 でのワークロードの選択")
+    ![Visual Studio 2017 のセットアップ ダイアログ](media/modify-workloads.png "Visual Studio 2017 でのワークロードの選択")
 
 1. もう一度 **[変更]** を選択します。
 

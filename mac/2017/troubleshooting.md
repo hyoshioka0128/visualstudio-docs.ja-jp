@@ -2,28 +2,28 @@
 title: トラブルシューティング
 description: Visual Studio for Mac ユーザーのための一般的な問題と解決策です。
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6073e0bf2a601bf5183798a1df4fd835d0b93427
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986993"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985165"
 ---
 # <a name="troubleshooting"></a>トラブルシューティング
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>Visual Studio for Mac でのログを表示する
 
-ログは、**[ヘルプ] > [ログ ディレクトリを開く]** メニュー項目で見ることができます (下図参照)。
+ログは、 **[ヘルプ] > [ログ ディレクトリを開く]** メニュー項目で見ることができます (下図参照)。
 
 ![[ログ ディレクトリを開く] メニュー項目](media/troubleshooting-image1.png)
 
 ## <a name="viewing-exceptions"></a>例外を表示する
 
-例外がキャッチされると、例外バブルが表示されます。 詳細を表示するには、**[詳細の表示]** ボタンを選びます。
+例外がキャッチされると、例外バブルが表示されます。 詳細を表示するには、 **[詳細の表示]** ボタンを選びます。
 
 ![例外に関する詳細情報を表示する](media/troubleshooting-image2.png)
 
