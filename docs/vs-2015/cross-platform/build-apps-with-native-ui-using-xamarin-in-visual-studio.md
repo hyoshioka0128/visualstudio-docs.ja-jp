@@ -1,5 +1,5 @@
 ---
-title: Build apps with native UI using Xamarin
+title: Xamarin を使用してネイティブ UI でアプリを構築する
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -20,7 +20,7 @@ ms.locfileid: "74297924"
 
 「[セットアップとインストール](../cross-platform/setup-and-install.md)」と「[Xamarin 環境を検証する](../cross-platform/verify-your-xamarin-environment.md)」の手順を完了しましたが、このチュートリアルでは、ネイティブ UI レイヤーを備えた基本的な Xamarin アプリ (下図) を作成する方法を示します。 ネイティブ UI を使用すると、共有コードはポータブル クラス ライブラリ (PCL) に存在し、個別のプラットフォーム プロジェクトに UI 定義が含まれます。
 
- ![Xamarin app on Android and Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")
+ ![Android および Windows Phone での Xamarin アプリ](../cross-platform/media/cross-plat-xamarin-build-1.png "クロスプラットフォーム Xamarin Build 1")
 
  作成するには次の作業を行います。
 
@@ -32,7 +32,7 @@ ms.locfileid: "74297924"
 
 - [Windows Phone 用 UI の設計](#Windows)
 
-- [次の手順](#next)
+- [次のステップ](#next)
 
 > [!TIP]
 > このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
@@ -54,7 +54,7 @@ ms.locfileid: "74297924"
 >   - [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
 >   - [Hello, Xamarin.Forms マルチスクリーン](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
 
-## <a name="solution"></a> ソリューションの設定
+## <a name="solution"></a>ソリューションの設定
  次の手順では、ネイティブ UI を使用した、共有コードの PCL と 2 つの追加された NuGet パッケージを含む Xamarin ソリューションを作成します。
 
 1. Visual Studio では、新しい **[空のアプリ (ネイティブ ポータブル)]** ソリューションを作成し、名前を **WeatherApp** とします。 このテンプレートは、検索フィールドに「**ネイティブ ポータブル**」と入力することによって、最も簡単に見つけることができます。
@@ -87,7 +87,7 @@ ms.locfileid: "74297924"
 
    - **[インストール]** をクリックします。
 
-   - ![Locating and installing the Newtonsoft.Json NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Newtonsoft. Json パッケージの検索とインストール](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin フォームガイド5")
 
 4. 手順 3 を繰り返して、**Microsoft.Net.Http** パッケージを検索し、インストールします。
 
@@ -247,10 +247,10 @@ ms.locfileid: "74297924"
 
 7. **[プロパティ]** ウィンドウで、次のプロパティを設定します (注: [プロパティ] ウィンドウのツール バーにある並べ替えボタンを使用して、一覧をアルファベット順に並べ替えるとわかりやすくなります)。
 
-    |property|[値]|
+    |プロパティ|[値]|
     |--------------|-----------|
-    |**テキスト**|**Search by Zip Code**|
-    |**ID**|`@+id/ZipCodeSearchLabel`|
+    |**text**|**Search by Zip Code**|
+    |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -279,9 +279,9 @@ ms.locfileid: "74297924"
 
 9. **[プロパティ]** ウィンドウで、次のプロパティを設定します。
 
-    |property|[値]|
+    |プロパティ|[値]|
     |--------------|-----------|
-    |**テキスト**|**[郵便番号]**|
+    |**text**|**[郵便番号]**|
     |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
@@ -301,9 +301,9 @@ ms.locfileid: "74297924"
 
 10. **[ツールボックス]** から **[Number]** コントロールを **[RelativeLayout]** にドラッグし、 **[Zip Code]** ラベルの下に配置します。 その後、次のプロパティを設定します。
 
-    |property|[値]|
+    |プロパティ|[値]|
     |--------------|-----------|
-    |**ID**|`@+id/zipCodeEntry`|
+    |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -324,7 +324,7 @@ ms.locfileid: "74297924"
 
 11. **[ツールボックス]** から、 **[Button]** を **[RelativeLayout]** コントロールにドラッグして、[zipCodeEntry] コントロールの右に配置します。 次に、以下のプロパティを設定します。
 
-    |property|[値]|
+    |プロパティ|[値]|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
     |**テキスト**|**Get Weather**|
@@ -450,7 +450,7 @@ ms.locfileid: "74297924"
 
 13. ファイルを保存し、 **[デザイン]** ビューに切り替えます。 次のような UI が表示されます。
 
-     ![UI for Android app](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Android アプリ用の UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. **MainActivity.cs** を開き、前の手順で削除した既定のボタンを参照している行を *OnCreate* メソッドから削除します。 完了したコードは次のようになります。
 
@@ -518,9 +518,9 @@ ms.locfileid: "74297924"
 
 2. 適切なデバイスまたはエミュレーターのターゲットを選択し、F5 キーを押してアプリケーションを開始します。
 
-3. デバイスまたはエミュレーターで、米国の有効な郵便番号 (例: 60601) を編集ボックスに入力してから、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
+3. デバイスまたはエミュレーターで、有効な米国郵便番号を編集ボックスに入力します (例:60601) をクリックし、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
 
-     ![Weather app for Android and Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Android および Windows Phone 用の天気予報アプリ](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
@@ -579,13 +579,13 @@ ms.locfileid: "74297924"
 
  デザイン ビユーでは、UI は次のように表示されます。
 
- ![Windows Phone app UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
+ ![Windows Phone アプリの UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
 
 ### <a name="consume-your-shared-code"></a>共有コードを使用する
 
 1. デザイナーで、 **[Get Weather]** ボタンをクリックします。
 
-2. In the **Properties** window, choose the event handler button (![Visual Studio Event Handlers icon](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
+2. **[プロパティ]** ウィンドウで、イベントハンドラー ボタン (![Visual Studio イベントハンドラー アイコン](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")) をクリックします。
 
      このアイコンは **[プロパティ]** ウィンドウの上隅に表示されます。
 
@@ -624,14 +624,14 @@ ms.locfileid: "74297924"
 
 2. F5 キーを押すとアプリが起動します。
 
-3. Windows Phone エミュレーターで、米国の有効な郵便番号を編集ボックスに入力 (例: 60601) してから、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
+3. Windows Phone エミュレーターで、有効な米国郵便番号を編集ボックスに入力します (例:60601) をクリックし、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
 
-     ![Windows version of the running app](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![実行中のアプリの Windows バージョン](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
 
-## <a name="next"></a>次のステップ
+## <a name="next"></a> 次の手順
  **iOS 用 UI をソリューションに追加する**
 
  iOS 用のネイティブ UI を追加することで、このサンプルを拡張します。 そのためには、Xcode と Xamarin がインストールされているローカル ネットワーク上の Mac に接続する必要があります。 接続すると、Visual Studio で直接 iOS デザイナーを使用することができます。 完成したアプリを確認するには、[GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)を参照してください。
@@ -642,5 +642,5 @@ ms.locfileid: "74297924"
 
  PCL はコンパイルされてから各プラットフォーム固有のアプリ パッケージに組み込まれるため、PCL の共有コードはプラットフォームに中立的です。 条件付きコンパイルを使用してプラットフォーム固有のコードを区別した共有コードを記述する場合は、*共有*プロジェクトを使用することができます。 詳細については、[コード共有オプション](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com) の説明を参照してください。
 
-## <a name="see-also"></a>参照
- [Xamarin Developer site](https://docs.microsoft.com/xamarin/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift and C# Quick Reference Poster](https://aka.ms/scposter)
+## <a name="see-also"></a>関連項目
+ [Xamarin 開発者サイト](https://docs.microsoft.com/xamarin/) [Windows デベロッパーセンター](https://dev.windows.com/en-us) [Swift C#およびクイックリファレンスポスター](https://aka.ms/scposter)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Debugging Samples | Microsoft Docs
+title: Visual Studio のデバッグサンプル |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,8 +22,8 @@ ms.locfileid: "74295994"
 # <a name="visual-studio-debugging-samples"></a>Visual Studio のデバッグのサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Two samples show how to extend the Visual Studio debugger using [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+2つのサンプルでは、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]を使用して Visual Studio デバッガーを拡張する方法を示します。  
   
-- The Debugger Expression Evaluator Sample, for managed languages, is included in the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] window, click the **Samples** tab, click **All** or **C#** in the list of languages, and then click **Debugger**.  
+- マネージ言語のデバッガー式エバリュエーターのサンプルは、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]に含まれています。 [[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ウィンドウで、 **[サンプル]** タブをクリックし**C#** 、すべて] または 言語 の一覧で **[デバッガー]** をクリックします。  
   
-- The Visual Studio Debug Engine Sample, for native languages, is available on MSDN Code Gallery. For more information, see this page on the Microsoft Web site: [Visual Studio Debug Engine Sample](https://go.microsoft.com/fwlink/?LinkId=150236).
+- ネイティブ言語の Visual Studio デバッグエンジンサンプルは、MSDN コードギャラリーから入手できます。 詳細については、Microsoft Web サイトの[Visual Studio デバッグエンジンのサンプル](https://go.microsoft.com/fwlink/?LinkId=150236)です。
