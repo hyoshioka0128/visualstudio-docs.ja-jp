@@ -118,7 +118,7 @@ ms.locfileid: "73956143"
 | Visible | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="none"></a>なし
+### <a name="none"></a>None
  ビルド プロセスでは使用しないことが推奨されるファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
