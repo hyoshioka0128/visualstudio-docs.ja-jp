@@ -22,14 +22,14 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573429"
 ---
 # <a name="expected-catch"></a>catch が必要です。
-例外処理を使用した**try**ブロックしますが、関連付けられているによって記述されていない**catch**ステートメント。 例外処理メカニズムでは、例外が発生する場合に実行する必要がありますコードと共に、エラーがコード内でラップしている必要があります、**try**ブロックします。 内から例外がスローされた、**try**ブロックを使用して、**throw**ステートメントでは、外部キャッチし、**try** つまたは複数のブロックを**catch**ステートメント。  
+例外処理を使用した **try** ブロックしますが、関連付けられているによって記述されていない **catch** ステートメント。 例外処理メカニズムでは、例外が発生する場合に実行する必要がありますコードと共に、エラーがコード内でラップしている必要があります、**try** ブロックします。 内から例外がスローされた、**try** ブロックを使用して、**throw** ステートメントでは、外部キャッチし、**try** つまたは複数のブロックを**catch** ステートメント。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 - 関連付けられている追加**catch**ブロックします。  
   
-- 使用してください、**finally**ブロックの代わりに、**catch**ブロックします。  
+- 使用してください、**finally**ブロックの代わりに、**catch** ブロックします。  
   
 ## <a name="see-also"></a>参照  
- [お試しください...キャッチ...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)の   
+ [try...catch...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)の   
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)
