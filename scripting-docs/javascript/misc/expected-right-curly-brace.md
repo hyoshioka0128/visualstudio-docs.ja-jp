@@ -29,5 +29,5 @@ ms.locfileid: "72577554"
 - 関数、ループ、ブロック、またはオブジェクト初期化子の終わりを示す右中かっこを追加します。  
   
 ## <a name="see-also"></a>参照  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の   
+ [Function オブジェクト](../../javascript/reference/function-object-javascript.md)の   
  [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)
