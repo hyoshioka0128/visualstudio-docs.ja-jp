@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>参照  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の   
- [JavaScript コードの記述](../../javascript/writing-javascript-code.md)   
+ [Function オブジェクト](../../javascript/reference/function-object-javascript.md)
+ [JavaScript コードの記述](../../javascript/writing-javascript-code.md) 
  [関数](../../javascript/functions-javascript.md)
