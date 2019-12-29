@@ -29,5 +29,5 @@ ms.locfileid: "72573704"
 - `RegExp`型のオブジェクトに対してのみ、 **regexp**または**regexp**を呼び出します。  
   
 ## <a name="see-also"></a>参照  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の   
+ [Regular Expression オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)  
  [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
