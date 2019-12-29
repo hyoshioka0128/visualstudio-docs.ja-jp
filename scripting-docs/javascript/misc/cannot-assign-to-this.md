@@ -22,22 +22,22 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572352"
 ---
 # <a name="cannot-assign-to-this"></a>'this' に割り当てることはできません。
-**この**に値を割り当てようとしました。 **これ**は、次のいずれかを参照する [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] キーワードです。
+**this** に値を割り当てようとしました。 **this** は、次のいずれかを参照する [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] キーワードです。
 
 - メソッドを現在実行しているオブジェクト。
 
 - 現在のメソッドが存在しない場合 (またはメソッドが他のオブジェクトに属していない場合) は、グローバルオブジェクト。
 
-メソッドは、オブジェクトを介して呼び出される [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 関数です。 メソッドの内部では、**この**キーワードは、メソッドが呼び出されたオブジェクトへの参照です (**新しい**演算子でクラスコンストラクターを呼び出すことによって作成されたオブジェクトになります)。
+メソッドは、オブジェクトを介して呼び出される [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 関数です。 メソッドの内部では、**this** キーワードは、メソッドが呼び出されたオブジェクトへの参照です (**new** 演算子でクラスコンストラクターを呼び出すことによって作成されたオブジェクトになります)。
 
-メソッド内では、**これ**を使用して現在のオブジェクトを参照できますが、**この**に新しい値を割り当てることはできません。
+メソッド内では、**this** を使用して現在のオブジェクトを参照できますが、**this** に新しい値を割り当てることはできません。
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- **この**への割り当てを試行しないでください。 インスタンス化されたオブジェクトのプロパティまたはメソッドにアクセスするには、ドット演算子 (例: **circle. radius**) を使用します。
-
+- **this** に値を割り当てないようにします。インスタンス化されたオブジェクトのプロパティまたはメソッドにアクセスするには、ドット演算子を使用
+します。(例: **circle.radius**) 
   > [!NOTE]
-  > ユーザーが作成した変数に名前を指定する**ことはでき**ません。[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] の予約語です。
+  > ユーザーが作成した変数に **this** という名前を付けることはできません。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] の予約語です。
 
 ## <a name="see-also"></a>関連項目
 
