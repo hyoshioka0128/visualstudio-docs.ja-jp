@@ -21,8 +21,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572902"
 ---
-# <a name="date-object-expected"></a>データ オブジェクトが必要です。
-`Date`以外の型のオブジェクトに対して、**日付のプロトタイプ**または**日付のプロトタイプ**メソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは `Date`型である必要があります。 例 :  
+# <a name="date-object-expected"></a>Date オブジェクトが必要です。
+`Date`以外の型のオブジェクトに対して、**Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドを呼び出しました。この場合の呼び出し元のオブジェクトは、`Date`型である必要があります。 例 :
   
 ```JavaScript  
 var o = new Object;  
@@ -32,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- `Date`型のオブジェクトに対して**のみ、メソッドを呼び**出すことができ**ます。**  
+- **Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドの呼び出しは、`Date` 型のオブジェクトでだけ行います。
   
 ## <a name="see-also"></a>参照  
  [Date オブジェクト](../../javascript/reference/date-object-javascript.md)   
