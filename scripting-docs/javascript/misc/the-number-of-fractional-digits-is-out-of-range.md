@@ -22,11 +22,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572771"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小数の桁数が有効範囲を超えています。
-関数**番号. prototype. toExponential**に無効な引数を渡そうとしました。 関数**Toexponential ()** の引数は、0 ~ 20 (両端を含む) である必要があります。  
+関数 **Number.prototype.toExponential** は、無効な引数を受け取ることができません。関数 **Toexponential ()** への引数は、0 ～ 20の範囲内である必要があります。
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Toexponential ()** の引数が大きすぎるか、または小さすぎないことを確認します。  
+- **Toexponential ()** の引数に正しい値を指定します。
   
 ## <a name="see-also"></a>関連項目  
  [toExponential メソッド (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
