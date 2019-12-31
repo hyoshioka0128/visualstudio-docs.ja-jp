@@ -37,7 +37,7 @@ ms.locfileid: "72572933"
     ```  
   
 ## <a name="see-also"></a>参照  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
  [@cc_on ステートメント](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if ステートメント](../../javascript/reference/at-if-statement-javascript.md)   

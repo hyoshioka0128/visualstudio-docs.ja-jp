@@ -21,9 +21,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572866"
 ---
-# <a name="enumerator-object-expected"></a>列挙子オブジェクトが必要です。
-@No__t_2 以外の型のオブジェクトに対して、 **enumerator** 、enumerator、列挙子、列挙子、列挙子、または**列挙**子を呼び出そうとしています。 この種類の呼び出しのオブジェクトは `Enumerator` 型である必要があります。 この規則を解除するコードの例を次に示します。  
-  
+# <a name="enumerator-object-expected"></a>Enumerator オブジェクトが必要です。
+`Enumerator` 型以外のオブジェクトで、**Enumerator.prototype.atEnd**、**Enumerator.prototype.item**、**Enumerator.prototype.moveFirst**、または**Enumerator.prototype.moveNext** の各メソッドの呼び出しは、`Enumerator` 型のオブジェクトでだけ行います。`Enumerator` 型のオブジェクトかどうかを確認するには、次のように記述します。
 ```JavaScript  
 var o = new Object;  
 o.f = Enumerator.prototype.atEnd;  
@@ -32,8 +31,8 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- @No__t_4 型のオブジェクトに対して **、enumerator、** enumerator **、enumerator、** **enumerator、enumerator**、または enumerator. prototype. **moveNext**を呼び出します。 オブジェクトが `Enumerator` オブジェクトであるかどうかを調べるには、次のように使用します。  
-  
+- **Enumerator** 型のオブジェクトに対して **Enumerator.prototype.atEnd**、**Enumerator.prototype.item**、**Enumerator.prototype.moveFirst** 、または **Enumerator.prototype.moveNext** の各メソッドの呼び出しは、`Enumerator` 型のオブジェクトでだけ行います。`Enumerator` オブジェクトであるかどうかを調べるには、次のように使用します。 
+
     ```js
     if(x instanceof Enumerator)  
     ```  
