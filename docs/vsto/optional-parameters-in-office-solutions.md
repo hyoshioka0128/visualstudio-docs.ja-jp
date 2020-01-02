@@ -30,7 +30,7 @@ ms.locfileid: "63442417"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Visual c# および Visual Basic プロジェクトで省略可能なパラメーターの使用方法の詳細については、次を参照してください[名前付き引数と省略可能な引数&#40;C&#35;プログラミング ガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)と[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)します。
+ Visual C# および Visual Basic プロジェクトで省略可能なパラメーターの使用方法の詳細については、[名前付き引数と省略可能な引数 (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)と [省略可能なパラメーター](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)を参照してください。
 
 > [!NOTE]
 > 旧バージョンの Visual Studio では、Visual C# プロジェクトのすべての省略可能なパラメーターに値を渡す必要があります。 便宜上、これらのプロジェクトには `missing` というグローバル変数が含まれています。パラメーターの既定値を使用する場合に、このグローバル変数を省略可能なパラメーターに渡すことができます。 Visual Studio での Office の visual c# プロジェクトがまだが含まれて、`missing`変数が通常必要はありませんでの Office ソリューションを開発するときに使用する[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、オプションのメソッドを呼び出す場合を除く**ref**内のパラメーター、 `ThisDocument` Word のドキュメント レベル プロジェクト内のクラス。
