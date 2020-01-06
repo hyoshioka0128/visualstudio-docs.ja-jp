@@ -1,5 +1,5 @@
 ﻿---
-title: "' Continue ' をループの外に設定できません。 |Microsoft Docs"
+title: "' Continue ' をループの外側に設定することはできません |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572383"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>'continue' をループの外に設定できません。
-**continue** ステートメントがループの外側にあります。 **continue** ステートメントは、次に示すループの内側でだけ使用できます。
+**continue** ステートメントがループの外側にあります。 **continue** ステートメントは、次に示すループの内側でのみ使用できます。
   
 - `do-while` ループ  
   
