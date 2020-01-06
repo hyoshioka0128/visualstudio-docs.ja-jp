@@ -1,4 +1,4 @@
----
+﻿---
 title: 有効桁数が範囲を超えています |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72577280"
 ---
 # <a name="the-precision-is-out-of-range"></a>有効桁数の範囲を超えています。
-関数 **Number.prototype.toPrecision** は、無効な引数を受け取ることができません。関数 **ToPrecision** への引数は、1 ～ 21 の範囲内である必要があります。
+関数 **Number.prototype.toPrecision** は、無効な引数を受け取ることができません。 関数 **ToPrecision** への引数は、1 ～ 21 の範囲内である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
