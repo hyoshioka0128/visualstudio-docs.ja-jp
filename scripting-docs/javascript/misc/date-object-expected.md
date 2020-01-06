@@ -23,6 +23,7 @@ ms.locfileid: "72572902"
 ---
 # <a name="date-object-expected"></a>Date オブジェクトが必要です。
 `Date`以外の型のオブジェクトに対して、**Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドを呼び出しました。この場合の呼び出し元のオブジェクトは、`Date`型である必要があります。 例 :
+
   
 ```JavaScript  
 var o = new Object;  
