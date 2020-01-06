@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984442"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590528"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 
@@ -44,7 +44,7 @@ ms.locfileid: "72984442"
 
 ## <a name="related-tasks"></a>関連タスク
 
-|**トピック**|**タスク**|
+|**トピック**|**Task**|
 |-|-|
 |[コードの視覚化](../modeling/visualize-code.md)|コードマップと依存関係図を作成して、未知のコードについて理解を深めます。|
 |[ユーザー要件のモデリング](../modeling/model-user-requirements.md)|モデルを使用して、ユーザーのニーズを明確にして伝えます。|

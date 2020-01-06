@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639169"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585952"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: エンティティクラスの挿入、更新、および削除の動作のカスタマイズ
 
@@ -37,15 +37,15 @@ ms.locfileid: "72639169"
 
 - LINQ to SQL `Customer` クラスを参照するオブジェクトデータソースを作成します。
 
-- @No__t_1 クラスにバインドされている <xref:System.Windows.Forms.DataGridView> を含む Windows フォームを作成します。
+- `Customer` クラスにバインドされている <xref:System.Windows.Forms.DataGridView> を含む Windows フォームを作成します。
 
 - フォームの保存機能を実装します。
 
-- @No__t_0 メソッドを作成するには、ストアドプロシージャを**O/R デザイナー**に追加します。
+- <xref:System.Data.Linq.DataContext> メソッドを作成するには、ストアドプロシージャを**O/R デザイナー**に追加します。
 
 - ストアドプロシージャを使用して挿入、更新、および削除を実行するように `Customer` クラスを構成します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -71,7 +71,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>LINQ to SQL クラスを含む新しい Windows フォームアプリケーションプロジェクトを作成するには
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -234,7 +234,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
 > [!NOTE]
 > このチュートリアルでは問題ではありませんが、LINQ to SQL は、挿入時にデータベースで生成された値を id (自動インクリメント)、rowguidcol (データベース生成 GUID)、およびタイムスタンプ列に対して自動的に処理することに注意してください。版. その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースで生成された値を返すには、<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> を手動で `true` に設定し、次のいずれかに <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> します。 [autosync。 Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [Autosync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[autosync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
 
 アプリケーションを再実行し、データベース内の顧客レコードが **UpdateCustomers** ストアド プロシージャによって正しく更新されることを確認します。
 
@@ -261,7 +261,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
     > [!NOTE]
     > アプリケーションで SQL Server Express Edition を使用している場合、データベース ファイルの **[出力ディレクトリにコピー]** プロパティの値によっては、手順 10 で **F5** キーを押したときに変更が表示されない場合があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 アプリケーションの要件によっては、LINQ to SQL エンティティクラスを作成した後に実行する必要があるいくつかの手順があります。 このアプリケーションで行うことができる拡張には次のものがあります。
 

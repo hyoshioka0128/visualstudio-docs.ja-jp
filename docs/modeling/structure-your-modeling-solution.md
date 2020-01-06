@@ -2,17 +2,17 @@
 title: モデリング ソリューションの構築
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985219"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591945"
 ---
 # <a name="structure-your-modeling-solution"></a>モデリング ソリューションの構築
 
@@ -72,7 +72,7 @@ ms.locfileid: "72985219"
 
 #### <a name="use-a-separate-package-for-each-layer"></a>レイヤーごとに個別のパッケージを使用する
 
-1. 各レイヤーのソリューションで、アーキテクチャ モデリング プロジェクトを追加します。 **ソリューションエクスプローラー**で、ソリューションノードを右クリックして **[追加]** をポイントし、 **[既存のプロジェクト]** をクリックします。 これで 1 つのモデリング プロジェクトに、すべてのソリューション (アーキテクチャ プロジェクトと各レイヤーの開発プロジェクト) からアクセスできるようになりました。
+1. 各レイヤーのソリューションで、アーキテクチャ モデリング プロジェクトを追加します。 **ソリューション エクスプ ローラー**、ソリューション ノードを右クリックし、 をポイント**追加**、 をクリックし、**既存のプロジェクト**します。 これで 1 つのモデリング プロジェクトに、すべてのソリューション (アーキテクチャ プロジェクトと各レイヤーの開発プロジェクト) からアクセスできるようになりました。
 
 2. 共有モデルで、レイヤーごとにパッケージを作成します。**ソリューションエクスプローラー**で、モデリングプロジェクトを選択します。 **UML モデルエクスプローラー**で、モデルルートノードを右クリックし、 **[追加]** をポイントして、 **[パッケージ]** をクリックします。
 
@@ -102,7 +102,7 @@ ms.locfileid: "72985219"
 
 4. ウィザードの指示に従って、テンプレートに含めるプロジェクトを追加し、テンプレートの名前と説明を入力して、出力する場所を指定します。
 
-## <a name="watch-a-video"></a>ビデオを見る
+## <a name="watch-a-video"></a>ビデオを視聴
 
 [モデルの整理と管理](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 

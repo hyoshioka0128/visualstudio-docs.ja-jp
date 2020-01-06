@@ -7,23 +7,23 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8613633289189bec5e403ec76b78731d5e3ecc4f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983744"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594631"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依存関係図: ガイドライン
 
 Visual Studio で*依存関係図*を作成して、アプリのアーキテクチャを大まかに記述します。 依存関係図でコードを検証することにより、コードがこの設計と一貫していることを確認します。 レイヤーの検証をビルド プロセスに含めることもできます。 「 [Channel 9 ビデオ: 依存関係図を使用したアーキテクチャの設計と検証」を](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)参照してください。
 
-この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
 > [!NOTE]
 > .NET Core プロジェクトの依存関係図は、Visual Studio 2019 バージョン16.2 以降でサポートされています。
@@ -68,7 +68,7 @@ Visual Studio で*依存関係図*を作成して、アプリのアーキテク�
 
 ## <a name="CreateLayers"></a>機能領域またはコンポーネントを表すレイヤーを定義する
 
-レイヤーは、プロジェクト、コードファイル、名前空間、クラス、メソッドなどの*成果物*の論理グループを表します。 ビジュアルC#および Visual Basic プロジェクトの成果物からレイヤーを作成することも、Word ファイルや PowerPoint プレゼンテーションなどのドキュメントをリンクして、仕様や計画をレイヤーにアタッチすることもできます。 各レイヤーは、図では四角形として表示されます。また各レイヤーでは、レイヤーにリンクされている成果物の数が表示されます。 レイヤーには、より具体的なタスクを記述する入れ子になったレイヤーを含めることができます。
+レイヤーは、プロジェクト、コードファイル、名前空間、クラス、メソッドなどの*成果物*の論理グループを表します。 Visual C# および Visual Basic のプロジェクトから成果物からレイヤーを作成することができますアタッチすることもできます仕様や計画をレイヤーに、Word ファイルや PowerPoint プレゼンテーションなどのドキュメントをリンクすることで。 各レイヤーは、図では四角形として表示されます。また各レイヤーでは、レイヤーにリンクされている成果物の数が表示されます。 レイヤーには、より具体的なタスクを記述する入れ子になったレイヤーを含めることができます。
 
 一般的に、レイヤーには、その機能に合わせて "プレゼンテーション" や "サービス" などの名前を付けます。 密に相互依存している成果物は、同じレイヤーに配置します。 別々に更新できる成果物や別のアプリケーションで使用できる成果物は、異なるレイヤーに配置してください。 レイヤーパターンの詳細については、 [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch)のパターン & プラクティスに関するサイトを参照してください。
 

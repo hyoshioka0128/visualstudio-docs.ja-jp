@@ -12,17 +12,17 @@ helpviewer_keywords:
 - application architecture
 - architecture [Visual Studio ALM], modeling
 - application modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f669b8e0b737aa945641d1e7a32c7c05bee3c711
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0c9bbb0e98fe717e696aa974f4af5ba29de498e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654342"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590580"
 ---
 # <a name="analyze-and-model-your-architecture"></a>アーキテクチャを分析およびモデルする
 
@@ -59,7 +59,7 @@ ms.locfileid: "72654342"
 
 - コードの構造と依存関係および更新方法の理解を深め、提案された変更のコストを見積もることができるように、プログラム コードを調べます。
 
-**詳しく**
+**以下を参照してください。**
 
 - [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)
 - [コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)
@@ -74,7 +74,7 @@ ms.locfileid: "72654342"
 - アプリケーションのライフサイクルを通じて多数の変更を行うことにより、アプリケーションの構造を安定化する。
 - コードへの変更をチェックインする前に、意図しない依存関係の競合を検出します。
 
-**詳しく**
+**以下を参照してください。**
 
 - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
 - [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)
@@ -89,7 +89,7 @@ DSL は、特定の目的のために設計する表記法です。 Visual Studi
 - アプリケーションの各部分を生成または構成する。 表記法およびツールを開発するには、作業が必要です。 これを行うと、UML のカスタマイズよりもドメインに適合する結果となることがあります。
 - DSL およびそのツールの開発への投資が複数のプロジェクトでの DSL の利用という結果をもたらす大規模プロジェクトまたは製品ライン。
 
-**詳しく**
+**以下を参照してください。**
 
 - [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 

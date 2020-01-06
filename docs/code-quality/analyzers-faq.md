@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603879"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573249"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -47,7 +47,7 @@ ms.locfileid: "72603879"
 
 **Q**: 継続的インテグレーション (CI) ビルドでは、.NET Compiler Platform ベースのコード分析は機能しますか。
 
-**A**: はい。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、規則セットと EditorConfig ファイルの両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
+**A:** はい。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、規則セットと EditorConfig ファイルの両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE アナライザーと StyleCop
 

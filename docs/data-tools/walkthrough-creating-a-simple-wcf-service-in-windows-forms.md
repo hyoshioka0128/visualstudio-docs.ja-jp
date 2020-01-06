@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639465"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586017"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームで簡単な WCF サービスを作成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "72639465"
 
 ::: moniker range="vs-2017"
 
-2. **[ファイル]** メニューで、 **[新規]** > **[プロジェクト]** をクリックします。
+2. **[ファイル]** メニューの [**新しい**>**プロジェクト**] をクリックします。
 
 3. **[新しいプロジェクト]** ダイアログボックスで、 **[Visual Basic]** または **[ C#ビジュアル]** ノードを展開し、 **[wcf]** 、 **[wcf サービスライブラリ]** の順に選択します。
 
@@ -67,12 +67,12 @@ ms.locfileid: "72639465"
 
    ![IService1 ファイル](../data-tools/media/wcf2.png)
 
-   次の行を探します。
+   次の行を見つけます。
 
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
 
-   @No__t_0 パラメーターの型を文字列に変更します。
+   `value` パラメーターの型を文字列に変更します。
 
    [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
    [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
@@ -83,12 +83,12 @@ ms.locfileid: "72639465"
 
    ![Service1 ファイル](../data-tools/media/wcf3.png)
 
-   次の行を探します。
+   次の行を見つけます。
 
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
 
-   @No__t_0 パラメーターの型を文字列に変更します。
+   `value` パラメーターの型を文字列に変更します。
 
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]

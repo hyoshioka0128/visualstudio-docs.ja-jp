@@ -9,17 +9,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: f84e334409f4e3546d8963a51bb5cf79b31f0afd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806992"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585965"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>チュートリアル: n 層データアプリケーションの作成
 *n 層*データ アプリケーションとは、データにアクセスするアプリケーションの中でも、複数の論理レイヤー、つまり*層*に分離されるアプリケーションです。 アプリケーション コンポーネントをこのように別個の層に分離すると、アプリケーションの保守容易性とスケーラビリティが向上します。 これは、ソリューション全体を再設計しなくても 1 つの層に適用できる、新しい技術を簡単に導入できるようにすることで実現されます。 n 層アーキテクチャには、プレゼンテーション層、中間層、およびデータ層が存在します。 通常、中間層には、データ アクセス層、ビジネス ロジック層、および認証や検証などの共有コンポーネントが含まれます。 データ層には、リレーショナル データベースが含まれます。 通常、n 層アプリケーションでは、機密情報が中間層のデータ アクセス層に格納され、プレゼンテーション層にアクセスするエンド ユーザーから分離されます。 詳細については、「 [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)」を参照してください。
@@ -50,7 +50,7 @@ n 層アプリケーションで各層を分離する 1 つの方法は、アプ
 
 ![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版について、次を参照してください[ビデオ操作方法: n 層データ アプリケーションの作成](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
 1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、SQL Server Express LocalDB を **.net デスクトップ開発**ワークロードの一部として、または個々のコンポーネントとしてインストールできます。
@@ -75,7 +75,7 @@ n 層アプリケーションで各層を分離する 1 つの方法は、アプ
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>n 層ソリューションと DataEntityTier クラス ライブラリを作成するには
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -173,7 +173,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
      DataService プロジェクトが作成されて NTierWalkthrough ソリューションに追加されます。
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>顧客と注文データを返すためのメソッドをデータアクセス層に作成する
-データサービスは、`GetCustomers` と `GetOrders` の2つのメソッドをデータアクセス層で呼び出す必要があります。 これらのメソッドは、Northwind `Customers` テーブルと `Orders` テーブルを返します。 @No__t_2 プロジェクトで `GetCustomers` および `GetOrders` メソッドを作成します。
+データサービスは、`GetCustomers` と `GetOrders`の2つのメソッドをデータアクセス層で呼び出す必要があります。 これらのメソッドは、Northwind `Customers` テーブルと `Orders` テーブルを返します。 `DataAccessTier` プロジェクトで `GetCustomers` および `GetOrders` メソッドを作成します。
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Customers テーブルを返すメソッドをデータ アクセス層に作成するには
 
@@ -358,10 +358,10 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>サービスで許容される最大メッセージサイズを増やす
-@No__t_0 の既定値は、`Customers` テーブルと `Orders` テーブルから取得したデータを保持するのに十分な大きさではありません。 次の手順では、値を6553600に増やします。 クライアントの値を変更すると、サービス参照が自動的に更新されます。
+`maxReceivedMessageSize` の既定値は、`Customers` テーブルと `Orders` テーブルから取得したデータを保持するのに十分な大きさではありません。 次の手順では、値を6553600に増やします。 クライアントの値を変更すると、サービス参照が自動的に更新されます。
 
 > [!NOTE]
-> 既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
+> 既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 値を増やすには
 
@@ -369,10 +369,10 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
 2. **maxReceivedMessage** サイズ属性を見つけ、値を「`6553600`」に変更します。
 
-## <a name="test-the-application"></a>アプリケーションをテストする
-**F5** キーを押してアプリケーションを実行します。 @No__t_0 テーブルと `Orders` テーブルのデータがデータサービスから取得され、フォームに表示されます。
+## <a name="test-the-application"></a>アプリのテスト
+**F5** キーを押してアプリケーションを実行します。 `Customers` テーブルと `Orders` テーブルのデータがデータサービスから取得され、フォームに表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 Windows ベース アプリケーションに関連データを保存した後で、アプリケーションの要件によってはさらに操作を追加する必要があります。 たとえば、このアプリケーションに対して次のような拡張を行うことができます。
 
 - データセットへの検証の追加。

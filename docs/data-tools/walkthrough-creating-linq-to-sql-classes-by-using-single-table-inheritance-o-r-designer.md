@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648055"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585978"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
-[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明されている一般的な手順について説明し、[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] での継承の使用方法を示すいくつかの実際のデータを提供します。
+[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明されている一般的な手順について説明し、[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]での継承の使用方法を示すいくつかの実際のデータを提供します。
 
 このチュートリアルでは、次のタスクを実行します。
 
@@ -49,10 +49,10 @@ ms.locfileid: "72648055"
 
 2. **テーブル デザイナー**で、次の列をテーブルに追加します。
 
-    |列名|データの種類|Null を許容|
+    |列名|データ型|Null を許容|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
+    |**型**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
@@ -72,7 +72,7 @@ ms.locfileid: "72648055"
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
+    |**ID**|**型**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -86,12 +86,12 @@ ms.locfileid: "72648055"
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
+## <a name="create-a-new-project"></a>新しいプロジェクトの作成
 これでテーブルが作成されたので、新しいプロジェクトを作成して継承の構成を実際に行います。
 
 ### <a name="to-create-the-new-windows-forms-application"></a>新しい Windows フォームアプリケーションを作成するには
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -138,7 +138,7 @@ ms.locfileid: "72648055"
 
 11. **[継承の既定値]** プロパティを **Person** に設定します。
 
-12. プロジェクトをビルドします。
+12. プロジェクトをビルドする。
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>継承されたクラスのクエリおよびフォームへのデータの表示
 ここで、オブジェクトモデル内の特定のクラスに対してクエリを実行するコードをフォームに追加します。
@@ -174,7 +174,7 @@ ms.locfileid: "72648055"
     }
     ```
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
 アプリケーションを実行し、リスト ボックスに表示されているレコードがすべて従業員 ( **[Type]** 列の値が 2 のレコード) であることを確認します。
 
 ### <a name="to-test-the-application"></a>アプリケーションをテストするには

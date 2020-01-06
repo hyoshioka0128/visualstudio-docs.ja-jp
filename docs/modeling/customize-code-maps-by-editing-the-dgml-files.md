@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748469"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590515"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
@@ -47,7 +47,7 @@ ms.locfileid: "72748469"
 
     新しいグループを追加するには、`<Nodes>` セクションを見つけます。 新しい `<Node/>` 要素を追加します。
 
-3. `<Node/>` 要素に、`Group` 属性を追加して、グループを展開した状態で表示するか、折りたたんだ状態で表示するかを指定します。 (例:
+3. `<Node/>` 要素に、`Group` 属性を追加して、グループを展開した状態で表示するか、折りたたんだ状態で表示するかを指定します。 例:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ ms.locfileid: "72748469"
 
    - グループ コード要素とその子コード要素との間の `Category` リレーションシップを指定する `Contains` 属性
 
-     (例:
+     例:
 
    ```xml
    <Links>
@@ -75,7 +75,7 @@ ms.locfileid: "72748469"
    </Links>
    ```
 
-    @No__t_0 属性の詳細については、「[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)」を参照してください。
+    `Category` 属性の詳細については、「[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)」を参照してください。
 
 ## <a name="ChangeGraphStyle"></a>マップのスタイルを変更する
  マップの .dgml ファイルを編集することで、マップの背景色および境界線の色を変更できます。 コード要素およびリンクのスタイルを変更するには、「[コード要素およびリンクのスタイルを変更](#Highlight)する」を参照してください。
@@ -90,13 +90,13 @@ ms.locfileid: "72748469"
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     境界線の色
+     [罫線の色]
 
     ```xml
     Stroke="StrokeValue"
     ```
 
-     (例:
+     例:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -143,7 +143,7 @@ ms.locfileid: "72748469"
     StrokeThickness="StrokeValue"
     ```
 
-     テキストの色
+     文字列の色
 
     ```xml
     Foreground="ColorNameOrHexadecimalValue"
@@ -193,7 +193,7 @@ ms.locfileid: "72748469"
     Style="Plain"
     ```
 
-     形式
+     [図形]
 
      シェイプをアイコンに置き換えるには、`Shape` プロパティを `None` に設定し、`Icon` プロパティをアイコン ファイルがあるパスに設定します。
 
@@ -201,7 +201,7 @@ ms.locfileid: "72748469"
     Shape="ShapeFilePathLocation"
     ```
 
-     (例:
+     例:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "72748469"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     (例:
+     例:
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ ms.locfileid: "72748469"
 
 2. `<Style/>` 要素に、`<Condition/>` 属性を含む `Expression` 要素を追加して、ブール値を返す式を指定します。
 
-    (例:
+    例:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,27 +286,27 @@ ms.locfileid: "72748469"
 
     この式では、次のバッカス・ナウア記法 (BNF: Backus-Naur Form) 構文を使用します。
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings &#124; &#124; > \<Literal > 1Number >
+    \<式 >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<式 > ")" &#124; \<Memberbindings > &#124; \<リテラル > &#124; \<Number >
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression >:: = \<式 > \<演算子 > \<式 >
 
-    \<UnaryExpression >:: = "!" \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
+    \<UnaryExpression >:: = "!" \<式 > &#124; "+" \<式 > &#124; "-" \<式 >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "または&#124; " "and &#124; " "+ &#124; " "* &#124; " "/ &#124; " "-"
+    \<Operator >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "または&#124; " "および&#124; " "+ &#124; " "* &#124; " "/ &#124; " "-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "." \<MemberBinding >
+    MemberBindings を \<>:: = \<MemberBindings &#124; > \<memberbindings > "." \<memberbindings >
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
+    \<MemberBinding >:: = \<MethodCall > &#124; \<propertyget >
 
-    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
+    \<MethodCall >:: = \<Identifier > "(" \<Methodcall > ")"
 
     \<PropertyGet >:: = 識別子
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," &#124; \<MethodArgs > \<empty >
+    \<MethodArgs >:: = \<式 > &#124; \<式 > "," \<methodargs > &#124; \<空 >
 
-    \<Identifier >:: = [^。 ]*
+    \<識別子 >:: = [^ です。 ]*
 
-    \<Literal >:: = 一重または二重引用符で囲まれた文字列リテラル
+    \<リテラル >:: = 1 つまたは二重引用符で囲まれた文字列リテラル
 
     \<Number >:: = オプションの小数点を含む数字の文字列
 
@@ -314,7 +314,7 @@ ms.locfileid: "72748469"
 
 3. `<Condition/>` 要素の次の行に、1 つ以上の `<Setter/>` 要素を追加して、条件を満たすマップ、コード要素、またはリンクに適用する `Property` 属性と、固定の `Value` 属性または計算される `Expression` 属性を指定します。
 
-    (例:
+    例:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -371,11 +371,11 @@ ms.locfileid: "72748469"
 
  `Coverage` プロパティに基づいて、コード要素の背景色を設定する。 スタイルは、`if-else` ステートメントと同様に、出現する順番で評価されます。
 
- この例では、次のように記述されています。
+ この例では:
 
-1. @No__t_0 が 80 > 場合は、`Background` プロパティを緑色に設定します。
+1. `Coverage` が 80 > 場合は、`Background` プロパティを緑色に設定します。
 
-2. @No__t_0 が 50 > 場合は、`Coverage` プロパティの値に基づいて、`Background` プロパティをオレンジ色の網掛けに設定します。
+2. `Coverage` が 50 > 場合は、`Coverage` プロパティの値に基づいて、`Background` プロパティをオレンジ色の網掛けに設定します。
 
 3. それ以外の場合、`Background` プロパティの値に基づいて、`Coverage` プロパティを赤色の網かけに設定します。
 
@@ -442,7 +442,7 @@ ms.locfileid: "72748469"
 
 1. テキスト エディターまたは XML エディターで、.dgml ファイルを開きます。
 
-2. そのコード要素の `<Node/>` 要素を見つけます。 プロパティの名前とその値を指定します。 (例:
+2. そのコード要素の `<Node/>` 要素を見つけます。 プロパティの名前とその値を指定します。 例:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "72748469"
 
 2. ソース コード要素とターゲット コード要素の両方の名前を含む `<Link/>` 要素を探します。
 
-3. `<Node/>` 要素で、プロパティの名前とその値を指定します。 (例:
+3. `<Node/>` 要素で、プロパティの名前とその値を指定します。 例:
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ ms.locfileid: "72748469"
 
 - 目的のコード要素の `<Node/>` 要素を見つけます。
 
-- `<Node/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 (例:
+- `<Node/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "72748469"
 
 2. ソース コード要素とターゲット コード要素の両方の名前を含む `<Link/>` 要素を探します。
 
-3. `<Link/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 (例:
+3. `<Link/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "72748469"
 
 2. 親カテゴリを示す `<Category/>` 要素を追加し、次に子カテゴリの `BasedOn` 要素に `<Category/>` 属性を追加します。
 
-     (例:
+     例:
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ ms.locfileid: "72748469"
      > [!NOTE]
      > 1 つの要素に対して 1 つの `Reference` 属性のみを使用できます。
 
-     (例:
+     例:
 
    ```xml
    <Nodes>
@@ -603,11 +603,11 @@ ms.locfileid: "72748469"
 
       2. 新しい参照属性の名前に `Id` 属性を設定します。
 
-      3. @No__t_0 属性を追加し、それを `True` に設定して、コード要素の **[参照へジャンプ]** ショートカットメニューに参照が表示されるようにします。
+      3. `IsReference` 属性を追加し、それを `True` に設定して、コード要素の **[参照へジャンプ]** ショートカットメニューに参照が表示されるようにします。
 
-      4. @No__t_0 属性を使用して、コード要素の **[参照へジャンプ**] ショートカットメニューの表示テキストを指定します。
+      4. `Label` 属性を使用して、コード要素の **[参照へジャンプ**] ショートカットメニューの表示テキストを指定します。
 
-      (例:
+      例:
 
    ```xml
    <Nodes>

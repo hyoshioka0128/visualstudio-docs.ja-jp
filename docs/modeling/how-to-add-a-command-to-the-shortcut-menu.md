@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985130"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594735"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカットメニューにコマンドを追加する
 
@@ -139,13 +139,13 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
 
 2. `ProvideMenuResource` 属性を探します。
 
-3. この属性の `version` パラメーター (2 番目のパラメーター) の値を大きくします。 必要に応じて、パラメーターの目的を明確にするためパラメーター名を明示的に記述できます。 (例:
+3. この属性の `version` パラメーター (2 番目のパラメーター) の値を大きくします。 必要に応じて、パラメーターの目的を明確にするためパラメーター名を明示的に記述できます。 例:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a>コマンドの動作を定義します。
 
-DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 通常、クラスの名前は `CommandSet` *> \<YourDslName*ます。 まず、クラスの名前を確認し、その内容を調べることから始めると便利です。
+DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 クラスの名前は、通常、 *Dslname >`CommandSet`\<* ます。 まず、クラスの名前を確認し、その内容を調べることから始めると便利です。
 
 コマンド セット クラスは、<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> から派生しています。
 
@@ -157,9 +157,9 @@ DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部の�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**で、**カスタムコード**という名前のフォルダーを作成します。 このフォルダーに、`CommandSet.cs` という名前の新しいクラスファイルを作成します。
+2. **Dslpackage**で、**カスタムコード**という名前のフォルダーを作成します。 このフォルダーに、`CommandSet.cs`という名前の新しいクラスファイルを作成します。
 
-3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 (例:
+3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 例:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -193,7 +193,7 @@ namespace Company.Language1 /* Make sure this is correct */
 2つのメソッドを定義する必要があります。1つは、コマンドを右クリック (コンテキスト) メニューに表示するかどうかを決定するメソッド、もう1つはコマンドを実行するメソッドです。 これらのメソッドはオーバーライドではありません。コマンド リストにこれらのメソッドを登録します。
 
 ### <a name="define-when-the-command-will-be-visible"></a>コマンドを表示する状況を定義します。
- 各コマンドに対して、コマンドがメニューに表示されるかどうか、およびそのコマンドが有効またはグレーで表示されるかどうかを決定する `OnStatus...` メソッドを定義します。次の例に示すように、`MenuCommand` の `Visible` と `Enabled` のプロパティを設定します。 このメソッドは、ユーザーが図を右クリックするたびに、ショートカット メニューを作成するために呼び出されるので、迅速に実行する必要があります。
+ 各コマンドに対して、コマンドがメニューに表示されるかどうか、およびそのコマンドが有効またはグレーで表示されるかどうかを決定する `OnStatus...` メソッドを定義します。次の例に示すように、`MenuCommand`の `Visible` と `Enabled` のプロパティを設定します。 このメソッドは、ユーザーが図を右クリックするたびに、ショートカット メニューを作成するために呼び出されるので、迅速に実行する必要があります。
 
  この例では、ユーザーが特定の種類の図形を選択した場合にのみコマンドが表示され、選択した要素の少なくとも 1 つが特定の状態にある場合にのみ、このコマンドは使用可能になります。 この例は、クラス ダイアグラム DSL テンプレートに基づいており、ClassShape と ModelClass はこの DSL で定義されている型です。
 
@@ -222,15 +222,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `this.CurrentSelection`. ユーザーが右クリックした図形は常にこのリストに追加されます。 ユーザーが図の空白部分をクリックした場合、このリストのメンバーは図のみになります。
 
-- ユーザーが図の空白部分をクリックした場合は、`this.IsDiagramSelected()`  -  `true` ます。
+- ユーザーが図の空白部分をクリックした場合は、`this.IsDiagramSelected()` - `true` ます。
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - ユーザーは複数のオブジェクトを選択しませんでした。
+- `this.IsSingleSelection()`-ユーザーが複数のオブジェクトを選択しませんでした
 
-- `this.SingleSelection` - ユーザーが右クリックした図形または図
+- `this.SingleSelection`-ユーザーが右クリックした図形または図
 
-- `shape.ModelElement as MyLanguageElement` - 図形により表されるモデル要素。
+- `shape.ModelElement as MyLanguageElement`-図形によって表されるモデル要素。
 
 一般的なガイドラインとして、`Visible` プロパティは選択した内容に基づくようにし、`Enabled` プロパティは選択した要素の状態に基づくようにします。
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > VSCT ファイルの Symbols セクションを変更する場合は、これらの宣言も一致するように変更する必要があります。 Package.tt でバージョン番号を増加する必要もあります。
 
- メニュー コマンドをこのコマンド セットの一部として登録します。 図が初期化されると、`GetMenuCommands()` が 1 回呼び出されます。
+ メニュー コマンドをこのコマンド セットの一部として登録します。 図が初期化されると `GetMenuCommands()` が1回呼び出されます。
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()

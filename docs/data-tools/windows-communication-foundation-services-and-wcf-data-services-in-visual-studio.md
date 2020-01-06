@@ -30,17 +30,17 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806954"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585939"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 
@@ -52,7 +52,7 @@ Windows Communication Foundation (WCF) は、セキュリティで保護され�
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services とは
 
-WCF Data Services は、Open Data (OData) プロトコル標準の実装です。  WCF Data Services を使用すると、表形式のデータを一連の REST Api として公開できるため、GET、POST、PUT、DELETE などの標準的な HTTP 動詞を使用してデータを返すことができます。 サーバー側では、新しい OData サービスを作成するために[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)によって WCF Data Services が置き換えられます。 WCF Data Services クライアントライブラリは、Visual Studio (**Project**  > **サービス参照の追加**) から .net アプリケーションで OData サービスを使用する場合にも引き続き適しています。 詳細については、「[WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)」を参照してください。
+WCF Data Services は、Open Data (OData) プロトコル標準の実装です。  WCF Data Services を使用すると、表形式のデータを一連の REST Api として公開できるため、GET、POST、PUT、DELETE などの標準的な HTTP 動詞を使用してデータを返すことができます。 サーバー側では、新しい OData サービスを作成するために[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)によって WCF Data Services が置き換えられます。 WCF Data Services クライアントライブラリは、Visual Studio (**Project** > **サービス参照の追加**) から .net アプリケーションで OData サービスを使用する場合にも引き続き適しています。 詳細については、「[WCF Data Services 4.5](/dotnet/framework/data/wcf)」を参照してください。
 
 ### <a name="wcf-programming-model"></a>WCF プログラミングモデル
 
@@ -154,7 +154,7 @@ Visual Studio を使用すると、WCF クライアントを作成するタス�
     > [!NOTE]
     > *ServiceReference*をサービス参照の名前空間に置き換え、 *Service1Client*をサービスの名前に置き換えます。
 
-3. IntelliSense の一覧には、コンストラクターのオーバーロードが含まれています。 @No__t_0 のオーバーロードを選択します。
+3. IntelliSense の一覧には、コンストラクターのオーバーロードが含まれています。 `endpointConfigurationName As String` のオーバーロードを選択します。
 
 4. オーバーロードの後に `=` *configurationname*と入力します。 *configurationname*は、使用するエンドポイントの名前です。
 
@@ -167,11 +167,11 @@ Visual Studio を使用すると、WCF クライアントを作成するタス�
 
 2. ファイルで `<Client>` タグを検索します。
 
-3. @No__t_0 タグの下で、`<Endpoint>` で始まるタグを検索します。
+3. `<Client>` タグの下で、`<Endpoint>`で始まるタグを検索します。
 
      サービス参照に複数のエンドポイントが提供されている場合は、2つ以上の `<Endpoint` タグがあります。
 
-4. @No__t_0 タグ内には *、`name="` の*`"` パラメーターがあります (ここでは、エンドポイント*名を表し*ます)。 これは、サービス参照のコンストラクターの `endpointConfigurationName As String` オーバーロードに渡すことができるエンドポイントの名前です。
+4. `<EndPoint>` タグ内には *、`name="`の*`"` パラメーターがあります (ここでは、エンドポイント*名を表し*ます)。 これは、サービス参照のコンストラクターの `endpointConfigurationName As String` オーバーロードに渡すことができるエンドポイントの名前です。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>方法: サービスメソッドを非同期に呼び出す
 
@@ -252,7 +252,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ## <a name="related-topics"></a>関連トピック
 
-| Title | 説明 |
+| [タイトル] | 説明 |
 | - | - |
 | [チュートリアル : Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Visual Studio で WCF サービスを作成および使用する方法を順を追って説明します。 |
 | [チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Visual Studio で WCF Data Services を作成して使用する方法をステップバイステップで説明します。 |
@@ -263,7 +263,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 | [チュートリアル: n 層データ アプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 型指定されたデータセットを作成し、TableAdapter とデータセット コードを複数のプロジェクトに分離する手順について説明します。 |
 | [[サービス参照の構成] ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md) | **[サービス参照の構成]** ダイアログボックスのユーザーインターフェイス要素について説明します。 |
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>参照先
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

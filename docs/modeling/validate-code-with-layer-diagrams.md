@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981130"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594020"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>依存関係図を使用したコードの検証
 
@@ -50,7 +50,7 @@ ms.locfileid: "72981130"
 
 - 依存関係図を含むモデリングプロジェクトを含むソリューション。 この依存関係図は、検証するプロジェクトC#または Visual Basic プロジェクトの成果物にリンクされている必要があります。 「[コードから依存関係図を作成する」を](../modeling/create-layer-diagrams-from-your-code.md)参照してください。
 
-この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
 Visual Studio またはコマンドプロンプトから、開いている依存関係図からコードを手動で検証できます。 ローカルビルドまたは Azure Pipelines ビルドを実行するときに、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: 依存関係図を使用したアーキテクチャの設計と検証」を](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)参照してください。
 
@@ -220,7 +220,7 @@ Visual Studio またはコマンドプロンプトから、開いている依存
 |-|-|
 |*Artifactn*(*artifacttypen*)|*Artifactn*は、依存関係図のレイヤーに関連付けられている成果物です。<br /><br /> *Artifacttypen*は、**クラス**や**メソッド**など、 *artifactn*の種類です。たとえば、次のようになります。<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|名前空間の名前。|
-|*レイヤー Namen*|依存関係図のレイヤーの名前。|
+|*LayerNameN*|依存関係図のレイヤーの名前。|
 |*DependencyType*|*Artifact1*と*Artifact2*の間の依存関係の種類。 たとえば、 *Artifact1*には*Artifact2*との**呼び出し**関係があります。|
 
 | **エラー構文** | **エラーの説明** |
@@ -229,6 +229,8 @@ Visual Studio またはコマンドプロンプトから、開いている依存
 | DV1001:**名前空間名が無効です** | この問題は、"許可された名前空間名" プロパティにこのコード要素が定義されている名前空間が含まれていないレイヤーに関連付けられたコード要素で報告されます。 これは、名前付けの制約違反です。 "許可された名前空間の名前" の構文は、名前空間のセミコロンで区切ったリストであることに注意してください。これは、に関連付けられたコード要素を定義することを許可します。 |
 | DV1002:**参照できない名前空間への依存関係** | この問題は、レイヤーに関連付けられたコード要素に対して報告され、レイヤーの "参照できない Namespace" プロパティで定義されている名前空間で定義されている別のコード要素を参照しています。 これは、名前付けの制約違反です。 "参照できない Namespace" プロパティは、このレイヤーに関連付けられているコード要素内で参照できない名前空間のセミコロンで区切られたリストとして定義されていることに注意してください。 |
 | DV1003: 許可されていない名前**空間名** | この問題は、"許可されていない名前空間名" プロパティに、このコード要素が定義されている名前空間が含まれるレイヤーに関連付けられたコード要素で報告されます。 これは、名前付けの制約違反です。 "許可されていない名前空間名" プロパティは、このレイヤーに関連付けられたコード要素を定義できない、セミコロンで区切られた名前空間の一覧として定義されることに注意してください。 |
+| DV2001:**レイヤー図の存在** | この問題は、依存関係図ファイルが含まれていないプロジェクトで報告されますが、依存関係検証アナライザーを指します。 依存関係の検証が使用されていない場合は、ソリューションエクスプローラーから直接 "Microsoft. DependencyValidation" を削除するか、この警告を非表示にすることができます。 依存関係図を追加するには[、「コードから依存関係図を作成](../modeling/create-layer-diagrams-from-your-code.md)する」を参照してください。 |
+| DV2002:**マップ**されていない型のベース | この問題は、コード要素がどのレイヤーにもマップされていない場合に報告されます。 |
 | DV3001:**リンクがありません** | '*成果物*' へのレイヤー ' レイヤ*ername*' リンクが見つかりません。 アセンブリ参照が存在することを確認してください。 |
 | DV9001:**アーキテクチャ分析で内部エラーが発生しました** | 結果が不完全である可能性があります。 詳細については、ビルド イベント ログの詳細または出力ウィンドウを参照してください。 |
 

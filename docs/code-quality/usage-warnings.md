@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587187"
 ---
 # <a name="usage-warnings"></a>使用法に関する警告
 
@@ -31,7 +31,7 @@ ms.locfileid: "72649069"
 |----------|-----------------|
 |[CA1801: 使用されていないパラメーターをレビューします](../code-quality/ca1801.md)|メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。|
 |[CA1806: メソッドの結果を無視しない](../code-quality/ca1806.md)|新しく作成されたオブジェクトが現在まで使用されていないか、新しい文字列を作成して返すメソッドが呼び出されて作成された新しい文字列が現在まで使用されていません。あるいは、COM または P/Invoke メソッドから返された HRESULT またはエラー コードが現在まで使用されていません。|
-|[CA1816: GC.SuppressFinalize を正しく呼び出します](../code-quality/ca1816.md)|Dispose の実装であるメソッドは、GC を呼び出しません。Gc.suppressfinalizeまたは、Dispose の実装ではないメソッドは GC を呼び出します。Gc.suppressfinalizeまたは、メソッドが GC を呼び出します。Gc.suppressfinalize は、この (Visual Basic) 以外のものを渡します。|
+|[CA1816: GC.SuppressFinalize を正しく呼び出します](../code-quality/ca1816.md)|Dispose の実装であるメソッドでは、GC は呼び出されません。SuppressFinalize;または、Dispose の実装ではないメソッドは、GC を呼び出します。SuppressFinalize;または、GC のメソッド呼び出し。SuppressFinalize およびこの (Visual Basic で Me) 以外は何かのパス。|
 |[CA2200: スタック詳細を保持するために再度スローします](../code-quality/ca2200.md)|例外が再スローされ、その例外が throw ステートメントで明示的に指定されています。 throw ステートメントで例外を指定して例外が再スローされると、例外をスローした元のメソッドと現在のメソッドの間で呼び出されたメソッドの一覧は失われます。|
 |[CA2201: 予約された例外の種類を発生させません](../code-quality/ca2201.md)|これにより、元のエラーの検出とデバッグが困難になります。|
 |[CA2202: オブジェクトを複数回破棄しません](../code-quality/ca2202.md)|メソッドの実装に、同じオブジェクトに対して System.IDisposable.Dispose または Dispose と同等の操作 (たとえば、一部の型に対する Close() メソッドなど) を複数回呼び出すコード パスが含まれています。|

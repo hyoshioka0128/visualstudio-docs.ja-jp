@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a57236d42ed38070d79843ecf4097c3af80239a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 004f10600df3ed2f9c1f62557e0915638482877e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649078"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587213"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
 
@@ -62,7 +62,7 @@ ms.locfileid: "72649078"
 |[CA2136: メンバーには、透過性注釈の競合があってはならない](../code-quality/ca2136.md)|透過性属性は、大きいスコープのコード要素から小さいスコープの要素に適用されます。 大きいスコープのコード要素の透過性属性は、最初の要素に含まれているコード要素の透過性属性よりも優先されます。 たとえば、SecurityCriticalAttribute 属性でマークされたクラスに SecuritySafeCriticalAttribute 属性でマークされたメソッドを含めることはできません。|
 |[CA2137: 透過的メソッドは、検証可能な IL のみを含まなければならない](../code-quality/ca2137.md)|メソッドに検証できないコードが含まれているか、メソッドから参照渡しで型が返されます。 この規則は、透過的セキュリティ コードが、検証できない MSIL (Microsoft Intermediate Language) を実行しようとすると適用されます。 ただし、規則には完全な IL 検証ツールは含まれていないため、代わりにヒューリスティックを使用して、ほとんどの MSIL 検証違反が検出されます。|
 |[CA2138: 透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない](../code-quality/ca2138.md)|SuppressUnmanagedCodeSecurityAttribute 属性が適用されたメソッドを、透過的セキュリティ メソッドが呼び出します。|
-|[CA2139: 透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない](../code-quality/ca2139.md)|この規則は、透過的な任意のメソッドに対して適用され、HandleProcessCorruptedStateExceptionsAttribute 属性を使用して例外の処理を処理しようとします。 例外の処理は、CLR バージョン4.0 例外 (<xref:System.AccessViolationException> など) の例外の分類です。 HandleProcessCorruptedStateExceptionsAttribute 属性はセキュリティ クリティカルなメソッドでのみ使用できる属性で、透過的メソッドに適用された場合は無視されます。|
+|[CA2139: 透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない](../code-quality/ca2139.md)|この規則は、透過的な任意のメソッドに対して適用され、HandleProcessCorruptedStateExceptionsAttribute 属性を使用して例外の処理を処理しようとします。 例外の処理は、CLR バージョン4.0 例外 (<xref:System.AccessViolationException>など) の例外の分類です。 HandleProcessCorruptedStateExceptionsAttribute 属性はセキュリティ クリティカルなメソッドでのみ使用できる属性で、透過的メソッドに適用された場合は無視されます。|
 |[CA2140: 透過的コードは、セキュリティ上重要な項目を参照してはならない](../code-quality/ca2140.md)|SecurityTransparentAttribute でマークされたメソッドが、SecurityCritical とマークされたパブリックでないメンバーを呼び出しています。 このルールは、transparent と critical が混在しているアセンブリ内のすべてのメソッドと型を分析し、transparent code から SecurityTreatAsSafe とマークされていない非パブリックの重要なコードへの呼び出しにフラグを設定します。|
 |[CA2141: 透過的メソッドは、LinkDemand を満たしてはならない](../code-quality/ca2141.md)|透過的メソッドは、AllowPartiallyTrustedCallersAttribute (APTCA) 属性が適用されていないアセンブリ内のメソッドを呼び出します。また、透過的セキュリティ メソッドは、データ型またはメソッドに対する LinkDemand の要件を満たします。|
 |[CA2142: 透過的コードは、LinkDemand を使用して保護されてはならない](../code-quality/ca2142.md)|この規則は、アクセスするために LinkDemands を要求する透過的メソッドに対して適用されます。 透過的セキュリティ コードでは、操作のセキュリティ検証を行うことができないため、アクセス許可を要求できません。|
@@ -106,15 +106,15 @@ ms.locfileid: "72649078"
 |[CA3077: API のデザイン、XML ドキュメント、および XML テキスト リーダーでの安全ではない処理](../code-quality/ca3077.md)|XMLDocument と XMLTextReader から派生する API をデザインする場合、DtdProcessing にご注意ください。 外部エンティティ ソースを参照または解決したり、XML に安全ではない値を設定したりする場合に、安全ではない DTDProcessing インスタンスを使用すると、情報漏えいにつながる可能性があります。|
 |[CA3147: Validateアンチ Forgerytoken で動詞ハンドラーをマークします](../code-quality/ca3147.md)|ASP.NET MVC コントローラーを設計するときは、クロスサイトリクエストの偽造攻撃に注意してください。 クロスサイト要求偽造攻撃は、認証されたユーザーから ASP.NET MVC コントローラーに悪意のある要求を送信できます。|
 |[CA5122 P/Invoke 宣言をセーフ クリティカルにしないでください](../code-quality/ca5122.md)|メソッドは、セキュリティに対する配慮が必要な操作を行うときは SecuritySafeCritical としてマークされますが、透過的なコードによって使用される場合も安全です。 透過的なコードは、P/Invoke を通じてネイティブ コードを直接呼び出すことはありません。 そのため、P/Invoke をセキュリティ セーフ クリティカルとしてマークしても、透過的なコードはそれを呼び出すことができず、セキュリティ分析の際に紛らわしくなります。|
-|[CA5361: SChannel の強力な暗号の使用を無効にしない](../code-quality/ca5361.md)|@No__t_0 を `true` に設定すると、送信トランスポート層セキュリティ (TLS) 接続で使用される暗号化が弱くなります。 弱い暗号化を使用すると、アプリケーションとサーバーの間の通信の機密性が低下する可能性があるため、攻撃者が機微なデータを簡単に盗聴ことができます。|
+|[CA5361: SChannel の強力な暗号の使用を無効にしない](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto` を `true` に設定すると、送信トランスポート層セキュリティ (TLS) 接続で使用される暗号化が弱くなります。 弱い暗号化を使用すると、アプリケーションとサーバーの間の通信の機密性が低下する可能性があるため、攻撃者が機微なデータを簡単に盗聴ことができます。|
 |[CA5363: 要求の検証を無効にしない](../code-quality/ca5363.md)|要求の検証は、ASP.NET の機能の1つで、HTTP 要求を調べて、クロスサイトスクリプトを含む注入攻撃につながる可能性がある危険性のあるコンテンツが含まれているかどうかを判断します。|
 |[CA5364: 非推奨のセキュリティプロトコルを使用しません](../code-quality/ca5364.md)|トランスポート層セキュリティ (TLS) は、通常、ハイパーテキスト転送プロトコルセキュア (HTTPS) を使用して、コンピューター間の通信をセキュリティで保護します。 Tls の古いプロトコルバージョンは、TLS 1.2 および TLS 1.3 よりも安全性が低く、新しい脆弱性が発生する可能性が高くなります。 リスクを最小限に抑えるために、古いプロトコルバージョンを避けてください。|
 |[CA5369: 逆シリアル化に XmlReader を使用します](../code-quality/ca5369.md)|信頼されていない DTD と XML スキーマを処理すると、危険な外部参照を読み込むことができます。これは、セキュリティで保護された競合回避モジュールを使用するか、DTD および XML インラインスキーマ処理を無効にして、XmlReader を使用して制限する|
 |[CA5370: 読み取りの検証に XmlReader を使用します](../code-quality/ca5370.md)|信頼されていない DTD と XML スキーマを処理すると、危険な外部参照を読み込むことができます。 この危険な読み込みは、セキュリティで保護された競合回避モジュールで XmlReader を使用するか、DTD および XML インラインスキーマ処理を無効にして制限できます。|
 |[CA5371: スキーマの読み取りに XmlReader を使用します](../code-quality/ca5371.md)|信頼されていない DTD と XML スキーマを処理すると、危険な外部参照を読み込むことができます。 セキュリティで保護された競合回避モジュールで XmlReader を使用するか、DTD および XML インラインスキーマ処理を使用すると、この制限は無効になります。|
 |[CA5372: Xpath ドキュメントに XmlReader を使用します](../code-quality/ca5372.md)|信頼されていないデータから XML を処理すると、危険な外部参照が読み込まれる可能性があります。これは、セキュリティで保護された競合回避モジュールを使用するか、DTD 処理を無効にして、XmlReader|
-|[CA5373: 古いキー派生関数を使用しません](../code-quality/ca5373.md)|このルールは、<xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> および `Rfc2898DeriveBytes.CryptDeriveKey` の弱いキー派生メソッドの呼び出しを検出します。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> は弱いアルゴリズム PBKDF1 を使用していました。|
-|[CA5378: ServicePointManagerSecurityProtocols を無効にしない](../code-quality/ca5378.md)|@No__t_0 を `true` に設定すると、Windows Communication Framework の (WCF) Transport Layer Security (TLS) 接続が TLS 1.0 を使用するように制限されます。 このバージョンの TLS は非推奨とされます。|
+|[CA5373: 古いキー派生関数を使用しません](../code-quality/ca5373.md)|このルールは、<xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> および `Rfc2898DeriveBytes.CryptDeriveKey`の弱いキー派生メソッドの呼び出しを検出します。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> は弱いアルゴリズム PBKDF1 を使用していました。|
+|[CA5378: ServicePointManagerSecurityProtocols を無効にしない](../code-quality/ca5378.md)|`Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` を `true` に設定すると、Windows Communication Framework の (WCF) Transport Layer Security (TLS) 接続が TLS 1.0 を使用するように制限されます。 このバージョンの TLS は非推奨とされます。|
 |[CA5380: ルートストアに証明書を追加しません](../code-quality/ca5380.md)|このルールは、信頼されたルート証明機関の証明書ストアに証明書を追加するコードを検出します。 既定では、信頼されたルート証明機関の証明書ストアは、Microsoft ルート証明書プログラムの要件を満たしている一連のパブリック Ca で構成されます。|
 |[CA5381: 証明書がルートストアに追加されていないことを確認します。](../code-quality/ca5381.md)|このルールは、信頼されたルート証明機関の証明書ストアに証明書を追加する可能性のあるコードを検出します。 既定では、信頼されたルート証明機関の証明書ストアは、Microsoft ルート証明書プログラムの要件を満たす公開証明機関 (Ca) のセットを使用して構成されます。|
 |[CA5386: SecurityProtocolType 値をハードコーディングしないでください。](../code-quality/ca5386.md)|トランスポート層セキュリティ (TLS) は、通常、ハイパーテキスト転送プロトコルセキュア (HTTPS) を使用して、コンピューター間の通信をセキュリティで保護します。 Tls 1.2 と TLS 1.3 は最新ではありませんが、プロトコルバージョン TLS 1.0 および TLS 1.1 は非推奨とされます。 今後、TLS 1.2 および TLS 1.3 が非推奨とされる可能性があります。 アプリケーションがセキュリティで保護されていることを確認するには、プロトコルバージョンをハードコーディングし、少なくとも .NET Framework v 4.7.1 をターゲットにするようにします。|

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639568"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586095"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 
@@ -79,7 +79,7 @@ Visual Studio を使用して、古いバージョンの SQL Server Express ま�
 
     データベースがアップグレードされ、LocalDB データベースエンジンにアタッチされており、以前のバージョンの LocalDB と互換性がなくなりました。
 
-また、接続のショートカットメニューを開き、 **[接続の変更]** を選択して、LocalDB を使用するように SQL Server Express 接続を変更することもできます。 **[接続の変更]** ダイアログボックスで、サーバー名を `(LocalDB)\MSSQLLocalDB` に変更します。 **[詳細プロパティ**] ダイアログボックスで、 **[ユーザーインスタンス]** が **[False]** に設定されていることを確認します。
+また、接続のショートカットメニューを開き、 **[接続の変更]** を選択して、LocalDB を使用するように SQL Server Express 接続を変更することもできます。 **[接続の変更]** ダイアログボックスで、サーバー名を `(LocalDB)\MSSQLLocalDB`に変更します。 **[詳細プロパティ**] ダイアログボックスで、 **[ユーザーインスタンス]** が **[False]** に設定されていることを確認します。
 
 ### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>SQL Server Express のバージョンを使用するようにデータベースファイルをアップグレードするには
 
@@ -101,11 +101,11 @@ Visual Studio を使用して、古いバージョンの SQL Server Express ま�
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>既定のデータベースエンジンを SQL Server Express するには
 
-1. メニューバーで、[**ツール** > **オプション**] を選択します。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[オプション]** ダイアログボックスで、 **[データベースツール]** オプションを展開し、 **[データ接続]** を選択します。
 
-3. **[SQL Server インスタンス名]** テキストボックスに、使用する SQL Server Express または LocalDB のインスタンスの名前を指定します。 インスタンスに名前が付けられていない場合は、`.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` を指定します。
+3. **[SQL Server インスタンス名]** テキストボックスに、使用する SQL Server Express または LocalDB のインスタンスの名前を指定します。 インスタンスに名前が付けられていない場合は、`.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`を指定します。
 
 4. **[OK]** ボタンを選択します。
 

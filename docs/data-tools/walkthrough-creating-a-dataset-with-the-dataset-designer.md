@@ -8,23 +8,23 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639443"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586030"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>チュートリアル: データセットデザイナーを使用したデータセットの作成
 
 このチュートリアルでは、**データセットデザイナー**を使用してデータセットを作成します。 この記事では、新しいプロジェクトを作成し、そのプロジェクトに新しい**データセット**アイテムを追加するプロセスについて説明します。 ウィザードを使用せずに、データベース内のテーブルに基づいてテーブルを作成する方法について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72639443"
 
 ## <a name="create-a-new-windows-forms-application-project"></a>新しい Windows フォーム アプリケーション プロジェクトを作成します。
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 

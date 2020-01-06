@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648084"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585991"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 このチュートリアルでは、[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] Web アプリケーションでホストされる簡単な [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] を作成して、Windows フォーム アプリケーションからアクセスする方法について説明します。
@@ -40,7 +40,7 @@ ms.locfileid: "72648084"
 
 - 必要に応じて、アプリケーションにフィルター処理機能を追加します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
 1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
@@ -132,11 +132,11 @@ ms.locfileid: "72648084"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. メニューバーで、 **[デバッグ] を選択し**、 **[デバッグなしで開始]** をクリックしてサービスを実行  >  ます。 ブラウザーウィンドウが開き、サービスの XML スキーマが表示されます。
+6. メニューバーで、 **[デバッグ] を選択し**、 **[デバッグなしで開始]** をクリックしてサービスを実行 > ます。 ブラウザーウィンドウが開き、サービスの XML スキーマが表示されます。
 
 7. **アドレス**バーで、 **northwindcustomers.svc**の URL の末尾に `Customers` を入力し、 **enter**キーを押します。
 
-     @No__t_0 テーブル内のデータの XML 表現が表示されます。
+     `Customers` テーブル内のデータの XML 表現が表示されます。
 
     > [!NOTE]
     > Internet Explorer がデータを誤って RSS フィードとして解釈する場合があります。 RSS フィードを表示するオプションが無効になっていることを確認してください。 詳細については、「[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)」を参照してください。
@@ -166,7 +166,7 @@ ms.locfileid: "72648084"
 
 ### <a name="to-add-a-service-reference"></a>サービス参照を追加するには
 
-1. メニューバーで、[ **Project**  > **サービス参照の追加**] を選択します。
+1. メニューバーで、[ **Project** > **サービス参照の追加**] を選択します。
 
 2. **[サービス参照の追加]** ダイアログ ボックスで、 **[探索]** をクリックします。
 
@@ -178,7 +178,7 @@ ms.locfileid: "72648084"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>サービスへのデータ バインディングを有効にするには
 
-1. メニューバーで、[**他の Windows**  > **データソース**を**表示** > ] を選択します。
+1. メニューバーで、[**他の Windows** > **データソース**を**表示** > ] を選択します。
 
    **[データ ソース]** ウィンドウが開きます。
 
@@ -236,7 +236,7 @@ ms.locfileid: "72648084"
 
 8. 手順 4. で追加したコードの「`http://localhost:53161/NorthwindCustomers.svc/`」を選択し、コピーした URL に置き換えます。
 
-9. メニューバーで、デバッグ、**デバッグの開始** の順に選択してアプリケーションを実行  >  ます。 顧客情報が表示されます。
+9. メニューバーで、デバッグ、**デバッグの開始** の順に選択してアプリケーションを実行 > ます。 顧客情報が表示されます。
 
    この時点で、NorthwindCustomers サービスから取得した顧客の一覧を表示するアプリケーションが作成されました。 このサービスを使用して他のデータも公開する場合は、[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]を変更して、Northwind データベースの他のテーブルを含めます。
 
@@ -251,7 +251,7 @@ ms.locfileid: "72648084"
 
 2. **[ツールボックス]** から、<xref:System.Windows.Forms.TextBox> コントロールと <xref:System.Windows.Forms.Button> コントロールをフォームに追加します。
 
-3. @No__t_0 コントロールのショートカットメニューを開き、 **[コードの表示]** をクリックして、`Button1_Click` イベントハンドラーに次のコードを追加します。
+3. <xref:System.Windows.Forms.Button> コントロールのショートカットメニューを開き、 **[コードの表示]** をクリックして、`Button1_Click` イベントハンドラーに次のコードを追加します。
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -282,7 +282,7 @@ ms.locfileid: "72648084"
 
 4. このコードの `http://localhost:53161/NorthwindCustomers.svc` を `Form1_Load` イベント ハンドラーの URL に置き換えます。
 
-5. メニューバーで、デバッグ、**デバッグの開始** の順に選択してアプリケーションを実行  >  ます。
+5. メニューバーで、デバッグ、**デバッグの開始** の順に選択してアプリケーションを実行 > ます。
 
 6. テキスト ボックスに「**London**」と入力し、ボタンをクリックします。 ロンドンの顧客だけが表示されます。
 
