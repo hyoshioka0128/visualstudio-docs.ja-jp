@@ -48,5 +48,5 @@ ms.locfileid: "72572529"
 - 検索パターン要素に法的な繰り返し要素のみが含まれていることを確認します。  
   
 ## <a name="see-also"></a>参照  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の   
+ [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)
  [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
