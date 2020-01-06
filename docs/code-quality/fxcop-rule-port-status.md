@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568825"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587590"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -27,7 +27,7 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 
 このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md)に移植された fxcop 規則の一覧には次のものが含まれます。
 
-ルール ID | Title
+ルール ID | [タイトル]
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | ジェネリック型の静的メンバーを宣言しません
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
@@ -67,8 +67,8 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable を正しく実装する
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外は public として設定する必要があります
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 予期しない場所に例外を発生させません
-CA1066 | 型 {0} は Equals をオーバーライドするため、IEquatable \<T > を実装する必要があります
-CA1067 | IEquatable \<T > を実装する場合は、Object.equals (object) をオーバーライドしてください
+CA1066 | 型 {0} は Equals をオーバーライドするため、IEquatable\<T > を実装する必要があります
+CA1067 | IEquatable\<T > を実装する場合は、Object.equals (object) をオーバーライドしてください
 [CA1068](ca1068.md) | CancellationToken パラメーターは最後に指定する必要があります
 CA1200 | プレフィックスで cref タグを使用しません
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | ローカライズされるパラメーターとしてリテラルを渡さない

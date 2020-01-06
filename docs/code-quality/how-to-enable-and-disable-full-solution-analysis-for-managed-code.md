@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587512"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: マネージコードの完全なソリューション分析を有効または無効にする
 
@@ -44,4 +44,4 @@ ms.locfileid: "72649445"
 
 Visual Studio で 200 MB 以下のシステムメモリが使用可能であることが検出されると、完全なソリューション分析 (およびその他の機能) が有効になっている場合は自動的に無効になります。 これが発生すると、Visual Studio が一部の機能を無効にしたことを通知するアラートが表示されます。 ボタンを使用すると、必要に応じて完全なソリューション分析を再び有効にすることができます。
 
-![アラートテキストの完全なソリューション分析の中断](../code-quality/media/fsa_alert.png)
+![完全ソリューション解析を中断する警告テキスト](../code-quality/media/fsa_alert.png)

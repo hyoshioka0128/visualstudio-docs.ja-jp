@@ -1,5 +1,5 @@
 ---
-title: コントロールをデータにバインドする
+title: データ コントロールのバインド
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Data Sources window
 - displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7257bd25adf32b7529d2c5e1dc6d2a753d9b2458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648854"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587031"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへのコントロールのバインド
 
@@ -30,14 +30,14 @@ ms.locfileid: "72648854"
 
 データバインディングのコンテキストでは、データソースは、ユーザーインターフェイスにバインドできるメモリ内のデータを表します。 実際には、データソースは、Entity Framework クラス、データセット、.NET プロキシオブジェクト、LINQ to SQL クラス、または任意の .NET オブジェクトまたはコレクションにカプセル化されたサービスエンドポイントにすることができます。 一部のデータ ソースでは、 **[データ ソース]** ウィンドウから項目をドラッグすることによりデータ バインディング コントロールを作成できますが、その他のデータ ソースではできません。 サポートされるデータ ソースを次の表に示します。
 
-| データ ソース | **Windows フォーム デザイナー**でのドラッグ アンド ドロップのサポート | **WPF デザイナー**でのドラッグ アンド ドロップのサポート | **Silverlight デザイナー**でのドラッグ アンド ドロップのサポート |
+| [データ ソース] | **Windows フォーム デザイナー**でのドラッグ アンド ドロップのサポート | **WPF デザイナー**でのドラッグ アンド ドロップのサポート | **Silverlight デザイナー**でのドラッグ アンド ドロップのサポート |
 | - | - | - | - |
-| データセット | [はい] | [はい] | Ｘ |
-| エンティティ データ モデル | ○<sup>1</sup> | [はい] | [はい] |
+| データセット | ○ | ○ | いいえ |
+| エンティティ データ モデル | ○<sup>1</sup> | ○ | ○ |
 | LINQ to SQL クラス | ×<sup>2</sup> | ×<sup>2</sup> | ×<sup>2</sup> |
-| サービス ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF サービス、および Web サービスを含む) | [はい] | [はい] | [はい] |
-| Object | [はい] | [はい] | [はい] |
-| SharePoint | [はい] | [はい] | [はい] |
+| サービス ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF サービス、および Web サービスを含む) | ○ | ○ | ○ |
+| オブジェクト | ○ | ○ | ○ |
+| SharePoint | ○ | ○ | ○ |
 
 1. **Entity Data Model**ウィザードを使用してモデルを生成し、それらのオブジェクトをデザイナーにドラッグします。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72648854"
 
 ## <a name="data-sources-window"></a>[データ ソース] ウィンドウ
 
-データ ソースは、 **[データ ソース]** ウィンドウ内の項目としてプロジェクトで利用できます。 このウィンドウは、フォームデザインサーフェイスがプロジェクトのアクティブなウィンドウであるときに表示されます。または、[**他の Windows**  > **データソース**を**表示** > ] を選択して開くことができます (プロジェクトが開いている場合)。 このウィンドウから項目をドラッグして、基になるデータにバインドされたコントロールを作成することができます。また、データソースを構成するには、右クリックします。
+データ ソースは、 **[データ ソース]** ウィンドウ内の項目としてプロジェクトで利用できます。 このウィンドウは、フォームデザインサーフェイスがプロジェクトのアクティブなウィンドウであるときに表示されます。または、[**他の Windows** > **データソース**を**表示** > ] を選択して開くことができます (プロジェクトが開いている場合)。 このウィンドウから項目をドラッグして、基になるデータにバインドされたコントロールを作成することができます。また、データソースを構成するには、右クリックします。
 
 ![[データ ソース] ウィンドウ](../data-tools/media/raddata-data-sources-window.png)
 
