@@ -32,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドの呼び出しは、`Date` 型のオブジェクトでだけ行います。
+- `Date` 型のオブジェクトは **Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドの呼び出しを行うのみです。
   
 ## <a name="see-also"></a>参照  
  [Date オブジェクト](../../javascript/reference/date-object-javascript.md)   
