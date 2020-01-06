@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748221"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565904"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>モデル、クラス、およびリレーションシップについて
 ドメイン固有言語 (DSL) は、DSL 定義ファイルと、ユーザーが記述するカスタムプログラムコードによって定義されます。 DSL ソリューションのプログラムコードの大部分は、このファイルから生成されます。
@@ -22,7 +22,7 @@ ms.locfileid: "72748221"
  このトピックでは、DSL 定義の中心となる機能について説明します。
 
 ## <a name="the-dsl-definition"></a>DSL 定義
- @No__t_0 を開くと、Visual Studio のウィンドウは次の図のようになります。
+ `Dsl\DslDefinition.dsl`を開くと、Visual Studio のウィンドウは次の図のようになります。
 
  ![DSL デザイナー](../modeling/media/dsl_designer.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "72748221"
 
  モデルの XML 表現では、2つの要素間の参照リンクがモニカーを使用して表され*ます。* つまり、モニカーは、モデル内の各要素を一意に識別する名前です。 各モデル要素の XML ノードには、リレーションシップの名前ともう一方の要素のモニカーを指定するノードが含まれています。
 
-## <a name="roles"></a>役割
+## <a name="roles"></a>ロール
  各ドメインリレーションシップには、ソースロールとターゲットロールという2つのロールがあります。
 
  次の図では、**発行**元ドメインクラスと**PublisherCatalog**ドメインリレーションシップの間の行がソースロールです。 ドメインリレーションシップと**アルバム**ドメインクラスの間の線は、ターゲットロールです。
@@ -128,7 +128,7 @@ ms.locfileid: "72748221"
  DSL 定義でリレーションシップを作成すると、プロパティ名とリレーションシップ名に既定値が与えられます。 ただし、変更することはできます。
 
 ## <a name="multiplicities"></a>多
- 多重度は、ドメインリレーションシップで同じロールを持つことができる要素の数を指定します。 この例では、**カタログ**ロールの0対多 (0.. \*) の多重度設定により、**発行元**ドメインクラスのすべてのインスタンスに対して、指定した数の**PublisherCatalog**リレーションシップリンクを含めることができます。
+ 多重度は、ドメインリレーションシップで同じロールを持つことができる要素の数を指定します。 この例では、**カタログ**ロールの0対多 (0..\*) の多重度設定により、**発行元**ドメインクラスのすべてのインスタンスに対して、指定した数の**PublisherCatalog**リレーションシップリンクを含めることができます。
 
  図に入力するか、 **[プロパティ]** ウィンドウで [`Multiplicity`] プロパティを変更して、ロールの多重度を構成します。 次の表では、このプロパティの設定について説明します。
 

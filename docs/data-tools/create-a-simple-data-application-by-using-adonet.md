@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648732"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586875"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
@@ -27,11 +27,11 @@ ms.locfileid: "72648732"
 > [!IMPORTANT]
 > コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 アプリケーションの作成には、次が必要です:
 
-- Visual Studio
+- Visual Studio:
 
 - SQL Server Express LocalDB。 SQL Server Express LocalDB をお持ちでない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールできます。
 
@@ -84,7 +84,7 @@ ms.locfileid: "72648732"
 
    ![ナビゲーション ダイアログ ボックス](../data-tools/media/simpleappnav.png)
 
-|Navigation フォームのコントロール|プロパティ|
+|Navigation フォームのコントロール|[プロパティ]|
 | - |----------------|
 |Button|Name = btnGoToAdd|
 |Button|Name = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ ms.locfileid: "72648732"
 
 ![新しい顧客を追加して注文を作成する](../data-tools/media/simpleappnewcust.png)
 
-|NewCustomer フォームのコントロール|プロパティ|
+|NewCustomer フォームのコントロール|[プロパティ]|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +109,7 @@ ms.locfileid: "72648732"
 
 ![注文の入力または取り消し](../data-tools/media/simpleappcancelfill.png)
 
-|FillOrCancel フォームのコントロール|プロパティ|
+|FillOrCancel フォームのコントロール|[プロパティ]|
 | - |----------------|
 |TextBox|Name = txtOrderID|
 |Button|Name = btnFindByOrderID|
@@ -122,7 +122,7 @@ ms.locfileid: "72648732"
 ## <a name="store-the-connection-string"></a>接続文字列を保存する
 アプリケーションがデータベースの接続を開くとき、アプリケーションは接続文字列にアクセスする必要があります。 各フォームに文字列を手動で入力しないようにするには、プロジェクトの app.config ファイルに文字列を格納し、アプリケーションの任意の形式からメソッドが呼び出されたときに文字列を返すメソッドを作成*します。*
 
-接続文字列を見つけるには、**サーバーエクスプローラー**で**Sales**データ接続を右クリックし、 **[プロパティ]** を選択します。 **ConnectionString**プロパティを見つけ、 **ctrl** +**A**、 **ctrl** +**C**を使用して、文字列を選択してクリップボードにコピーします。
+接続文字列を見つけるには、**サーバーエクスプローラー**で**Sales**データ接続を右クリックし、 **[プロパティ]** を選択します。 **ConnectionString**プロパティを見つけ、 **ctrl**+**A**、 **ctrl**+**C**を使用して、文字列を選択してクリップボードにコピーします。
 
 1. を使用してC#いる場合は、**ソリューションエクスプローラー**で、プロジェクトの **[プロパティ]** ノードを展開し、**設定**ファイルを開きます。
     Visual Basic を使用している場合は、**ソリューションエクスプローラー**で **[すべてのファイルを表示]** をクリックし、 **[マイプロジェクト]** ノードを展開して、**設定の設定**ファイルを開きます。
@@ -175,7 +175,7 @@ Visual Basic を使用している場合は**ソリューションエクスプ�
 
 NewCustomer フォームロジックを完了するには、次の手順を実行します。
 
-1. @No__t_0 名前空間をスコープに取り込み、メンバーの名前を完全修飾する必要がないようにします。
+1. `System.Data.SqlClient` 名前空間をスコープに取り込み、メンバーの名前を完全修飾する必要がないようにします。
 
      ```csharp
      using System.Data.SqlClient;

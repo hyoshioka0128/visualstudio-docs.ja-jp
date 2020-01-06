@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586758"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 
 用語*参照テーブル*(*参照バインド*と呼ばれることもあります) は、別のテーブルの外部キーフィールドの値に基づいて1つのデータテーブルの情報を表示するコントロールを表します。 参照テーブルを作成するには、 **[データソース]** ウィンドウで親テーブルまたはオブジェクトのメインノードを、関連付けられている子テーブルの列またはプロパティに既にバインドされているコントロールにドラッグします。
 
-たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 @No__t_0 テーブルの各レコードには、どの顧客が注文を配置したかを示す `CustomerID` が含まれています。 @No__t_0 は、`Customers` テーブル内の顧客レコードを指す外部キーです。 @No__t_0 テーブルから注文の一覧を表示する場合は、`CustomerID` ではなく実際の顧客名を表示することができます。 顧客名は `Customers` テーブルにあるため、顧客名を表示するルックアップテーブルを作成する必要があります。 参照テーブルは、`Orders` レコードの `CustomerID` 値を使用してリレーションシップをナビゲートし、顧客名を返します。
+たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 `Orders` テーブルの各レコードには、どの顧客が注文を配置したかを示す `CustomerID` が含まれています。 `CustomerID` は、`Customers` テーブル内の顧客レコードを指す外部キーです。 `Orders` テーブルから注文の一覧を表示する場合は、`CustomerID`ではなく実際の顧客名を表示することができます。 顧客名は `Customers` テーブルにあるため、顧客名を表示するルックアップテーブルを作成する必要があります。 参照テーブルは、`Orders` レコードの `CustomerID` 値を使用してリレーションシップをナビゲートし、顧客名を返します。
 
 ## <a name="to-create-a-lookup-table"></a>ルックアップ テーブルを作成するには
 
@@ -37,7 +37,7 @@ ms.locfileid: "72648592"
 
     - WCF Data Service、WCF サービス、または web サービス。 詳細については、「[方法: サービスのデータに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)」を参照してください。
 
-    - オブジェクト。 詳細については、「 [Visual Studio でのオブジェクトへのバインド](bind-objects-in-visual-studio.md)」を参照してください。
+    - Objects。 詳細については、「 [Visual Studio でのオブジェクトへのバインド](bind-objects-in-visual-studio.md)」を参照してください。
 
     > [!NOTE]
     > ルックアップテーブルを作成するには、2つの関連するテーブルまたはオブジェクトがプロジェクトのデータソースとして存在している必要があります。
@@ -68,7 +68,7 @@ ms.locfileid: "72648592"
         > [!NOTE]
         > リスト**ボックス**または**ListView**コントロールが一覧に表示されない場合は、これらのコントロールを一覧に追加できます。 詳細については、「[[データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
 
-    - @No__t_0 から派生した任意のカスタムコントロール。
+    - <xref:System.Windows.Controls.Primitives.Selector>から派生した任意のカスタムコントロール。
 
         > [!NOTE]
         > **[データソース]** ウィンドウで項目に対して選択できるコントロールの一覧にカスタムコントロールを追加する方法については、「[[データソース] ウィンドウにカスタムコントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)する」を参照してください。

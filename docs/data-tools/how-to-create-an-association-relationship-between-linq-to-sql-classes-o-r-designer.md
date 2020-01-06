@@ -3,17 +3,17 @@ title: LINQ to SQL クラス間のリレーションシップ (O/R デザイナ�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb81cf17de86a11d2373f6a545b3efc78e65ada9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641898"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586472"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>方法: LINQ to SQL クラス間の関連付けを作成する (O/R デザイナー)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] のエンティティ クラス間の関連付けは、データベース内のテーブル間の関連付けに似ています。 **[関連付けエディター]** ダイアログ ボックスを使用することで、エンティティ クラス間の関連付けを作成できます。
@@ -29,8 +29,8 @@ ms.locfileid: "72641898"
 |property|説明|
 |--------------|-----------------|
 |**カーディナリティ**|関連付けが 1 対多と 1 対 1 のどちらであるかを制御します。|
-|**子プロパティ**|コレクションのプロパティを親に作成するか、子レコードへの参照を関連付けの外部キー側に作成するかを指定します。 たとえば、`Customer` と `Order` の間のアソシエーションで、**子プロパティ**が**True**に設定されている場合、`Orders` という名前のプロパティが親クラスに作成されます。|
-|**親プロパティ**|関連付けられている親クラスを参照する子クラスのプロパティです。 たとえば、`Customer` と `Order` の間の関連付けでは、注文に関連付けられた顧客を参照する `Customer` という名前のプロパティが `Order` クラスに作成されます。|
+|**子プロパティ**|コレクションのプロパティを親に作成するか、子レコードへの参照を関連付けの外部キー側に作成するかを指定します。 たとえば、`Customer` と `Order`の間のアソシエーションで、**子プロパティ**が**True**に設定されている場合、`Orders` という名前のプロパティが親クラスに作成されます。|
+|**親プロパティ**|関連付けられている親クラスを参照する子クラスのプロパティです。 たとえば、`Customer` と `Order`の間の関連付けでは、注文に関連付けられた顧客を参照する `Customer` という名前のプロパティが `Order` クラスに作成されます。|
 |**関与のプロパティ**|関連付けのプロパティを表示し、 **[関連付けエディター]** ダイアログ ボックスを再び開く**省略記号**ボタン (...) が用意されています。|
 |**一意**|外部ターゲット列に一意性の制約があるかどうかを示します。|
 

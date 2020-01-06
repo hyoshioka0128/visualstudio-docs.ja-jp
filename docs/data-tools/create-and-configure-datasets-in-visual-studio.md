@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642405"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586914"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>方法: Visual Studio でデータセットを作成および構成する
 

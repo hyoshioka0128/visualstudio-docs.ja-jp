@@ -6,23 +6,23 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645712"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596620"
 ---
 # <a name="export-diagrams-as-images"></a>イメージとしてダイアグラムをエクスポートする
 
 Visual Studio では、モデリング図を読み取り専用形式で保存できるため、同じバージョンの Visual Studio を使用していない利害関係者、ユーザー、またはプロジェクトチームメンバーと共有できます。
 
-この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>ダイアグラムまたはダイアグラムの一部を別のアプリケーションにコピーする
 
@@ -38,7 +38,7 @@ Visual Studio では、モデリング図を読み取り専用形式で保存で
 
 2. **[名前]** ボックスの一覧で **[Microsoft XPS ドキュメントライター]** を選択し、 **[OK]** をクリックします。
 
-3. [名前を付け**てファイルを保存**] ダイアログボックスで、ファイルを**xps ドキュメント (\* .xps)** ファイルとして保存します。
+3. [名前を付け**てファイルを保存**] ダイアログボックスで、ファイルを**xps ドキュメント (\*.xps)** ファイルとして保存します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -7,21 +7,21 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747624"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597192"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>コードからの依存関係図の作成
 
-ソフトウェアシステムの高度な論理アーキテクチャを視覚化するには、Visual Studio で*依存関係図*を作成します。 コードがこの設計と一貫していることを確認するには、依存関係図でコードを検証します。 ビジュアルC#および Visual Basic プロジェクトの依存関係図を作成できます。 この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)」を参照してください。
+ソフトウェア システムの高レベルの論理アーキテクチャを視覚化するには、Visual Studio で*依存関係図*を作成します。 コードがこの設計と一致していることを確認するために、依存関係図を使用してコードを検証します。 Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます。 Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools) を参照してください。
 
 ![依存関係図の作成](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "72747624"
 
 4. **[アーキテクチャ]** メニューを使用して、ソリューションの新しい依存関係図を作成します。
 
-5. コードマップ上のすべてのノードを選択します ( _Ctrl_  + _を_使用するか、 _Shift_キーを押しながらクリックして、ドラッグして離します)。
+5. コード マップ上のすべてのノードを選択します （_Ctrl_ + _A_を使用するか、_Shift_キーを押してクリック、ドラッグ、リリースする前にラバーバンドを選択します）。
 
 6. 選択した要素を新しい依存関係検証ダイアグラムにドラッグアンドドロップするか、コピーして貼り付けます。
 

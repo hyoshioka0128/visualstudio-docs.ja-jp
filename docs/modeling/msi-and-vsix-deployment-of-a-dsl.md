@@ -2,17 +2,17 @@
 title: DSL の MSI および VSIX 配置
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984446"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590190"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 ドメイン固有言語は、自分のコンピューターまたは他のコンピューターにインストールできます。 Visual Studio は、ターゲットコンピューターに既にインストールされている必要があります。
@@ -35,7 +35,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
    1. **ソリューションエクスプローラー**で、 **[dslpackage]** プロジェクトを右クリックし、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-   2. _YourProject_ **\\ \* \\** ファイルの bin を見つけ**ます。DslPackage。 .vsix**
+   2. _YourProject_ **\\\*\\** ファイルの bin を見つけ**ます。DslPackage。 .vsix**
 
 2. DSL をインストールするターゲットコンピューターに .vsix ファイルをコピー**します。** 自分のコンピューターでも別のコンピューターでもかまいません。
 
@@ -61,7 +61,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *Localappdata* **\Microsoft\VisualStudio\10.0\Extensions**
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
 ## <a name="msi"></a>MSI で DSL を展開する
  DSL 用の MSI (Windows インストーラー) ファイルを定義することで、ユーザーが Windows エクスプローラーから DSL ファイルを開けるようにすることができます。 また、アイコンと短い説明をファイル名の拡張子に関連付けることもできます。 また、MSI では、DSL ファイルの検証に使用できる XSD をインストールできます。 必要に応じて、同時にインストールされる他のコンポーネントを MSI に追加することができます。
@@ -102,11 +102,11 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
     Visual Studio によって、 **CreateMsiSetupProject**という名前のファイルが作成されます。
 
-6. Windows エクスプローラーで、Dsl \\ *. .vdproj を Setup という名前の新しいフォルダーにコピーします。
+6. Windows エクスプローラで、コピー Dsl\\\*.vdproj を新しいフォルダーにセットアップをという名前です。
 
     (必要に応じて、Dsl プロジェクトから CreateMsiSetupProject.tt を除外できるようになりました)。
 
-7. **ソリューションエクスプローラー**で、既存のプロジェクトとして**セットアップ \\ \* .vdproj**を追加します。
+7. **ソリューションエクスプローラー**で、既存のプロジェクトとして**セットアップ\\\*.vdproj**を追加します。
 
 8. **[プロジェクト]** メニューの **[プロジェクトの依存関係]** をクリックします。
 
@@ -118,7 +118,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
 10. Windows エクスプローラーで、セットアッププロジェクトでビルドされた MSI ファイルを見つけます。
 
-     DSL をインストールするコンピューターに MSI ファイルをコピーします。 MSI ファイルをダブルクリックします。 インストーラーが実行されます。
+     DSL をインストールするコンピューターに MSI ファイルをコピーします。 MSI ファイルをダブルクリックします。 インストーラーを実行します。
 
 11. ターゲットコンピューターで、DSL のファイル拡張子を持つ新しいファイルを作成します。 次のことを確認します。
 

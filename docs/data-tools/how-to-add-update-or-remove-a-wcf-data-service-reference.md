@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c60dffc7bb47336ae36e64a366def3c4dce06213
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648423"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586589"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>方法: WCF データ サービス参照を追加、更新、または削除する
-*サービス参照*を使用すると、プロジェクトは1つ以上の [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] にアクセスできます。 **[サービス参照の追加]** ダイアログボックスを使用すると、現在のソリューション内の [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、ローカルエリアネットワーク上、またはインターネット上で検索できます。
+*サービス参照*を使用すると、プロジェクトは1つ以上の [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]にアクセスできます。 **[サービス参照の追加]** ダイアログボックスを使用すると、現在のソリューション内の [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、ローカルエリアネットワーク上、またはインターネット上で検索できます。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -70,7 +70,7 @@ ms.locfileid: "72648423"
     サービスクライアント (プロキシ) によってが生成され、サービスを記述するメタデータが*app.config*ファイルに追加されます。
 
 ## <a name="update-a-service-reference"></a>サービス参照の更新
-@No__t_0 の Entity Data Model が変更されることがあります。 この場合は、サービス参照を更新する必要があります。
+[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] の Entity Data Model が変更されることがあります。 この場合は、サービス参照を更新する必要があります。
 
 ### <a name="to-update-a-service-reference"></a>サービス参照を更新するには
 

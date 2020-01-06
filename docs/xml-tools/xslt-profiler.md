@@ -3,17 +3,17 @@ title: XSLT のパフォーマンス
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645906"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592283"
 ---
 # <a name="the-xslt-profiler"></a>XSLT プロファイラー
 
@@ -30,7 +30,7 @@ XSLT プロファイラーは Visual Studio に含まれており、 **[XML]** �
 
 1. Visual Studio で XSLT ドキュメントを開きます。
 
-2. メニューバーで、[ **XML**  > **プロファイル XSLT**] を選択します。
+2. メニューバーで、[ **XML** > **プロファイル XSLT**] を選択します。
 
 3. 入力 XML ドキュメントを指定します。 XML ドキュメントをまだ開いていない場合は、ファイルを開くように求められます。
 
@@ -58,9 +58,9 @@ XSLT プロファイラーは Visual Studio に含まれており、 **[XML]** �
 
     - **包括経過時間**
 
-    - **排他経過時間**
+    - **経過時間 (関数のみ)**
 
-    - **アプリケーション包括時間**
+    - **アプリケーション時間 (子を含む)**
 
     - **アプリケーション排他時間**
 

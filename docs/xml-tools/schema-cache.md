@@ -3,17 +3,17 @@ title: XML エディタースキーマキャッシュ
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668740"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592491"
 ---
 # <a name="schema-cache"></a>スキーマ キャッシュ
 
@@ -23,25 +23,25 @@ XML エディターでは、ソリューションに配置されているスキ�
 
 次の表では、XML エディターと共にインストールされるスキーマについて説明します。
 
-| ファイル名 | 説明 |
+| Filename | 説明 |
 |-| - |
-| *catalog. xsd* | XML エディターのスキーマ カタログ ファイル用のスキーマです。 スキーマ カタログの詳細については、下記を参照してください。 |
-| *DotNetConfig .xsd* | Web.config ファイルのスキーマ "<http://schemas.microsoft.com/.NETConfiguration/v2.0>"。 |
-| *msbuild.exe* | MSBuild make ファイルのスキーマ "<http://schemas.microsoft.com/developer/msbuild/2003>"。 |
-| *msdata* | <xref:System.Data.DataSet> クラスによって追加される XSD 注釈用のスキーマ (urn:schemas-microsoft-com:xml-msdata) です。 |
-| *msxsl* | Microsoft XSLT スクリプト ブロック拡張用のスキーマ (urn:schemas-microsoft-com:xslt) です。 |
+| *catalog.xsd* | XML エディターのスキーマ カタログ ファイル用のスキーマです。 スキーマ カタログの詳細については、下記を参照してください。 |
+| *DotNetConfig .xsd* | Web.config ファイルのスキーマ、`http://schemas.microsoft.com/.NETConfiguration/v2.0`。 |
+| *msbuild.exe* | MSBuild の make ファイルのスキーマ、`http://schemas.microsoft.com/developer/msbuild/2003`。 |
+| *msdata.xsd* | <xref:System.Data.DataSet> クラスによって追加される XSD 注釈用のスキーマ (urn:schemas-microsoft-com:xml-msdata) です。 |
+| *msxsl.xsd* | Microsoft XSLT スクリプト ブロック拡張用のスキーマ (urn:schemas-microsoft-com:xslt) です。 |
 | *SnippetFormat* | コード スニペットの XML ファイルのスキーマです。 例については、「 *%VC#VSInstallDir% \ 展開*」を参照してください。 |
-| *Soap 1.1. xsd* | Simple Object Access Protocol (SOAP) 1.1 のスキーマ、 http://schemas.xmlsoap.org/soap/envelope/ 。 |
+| *Soap 1.1. xsd* | Simple Object Access Protocol (SOAP) 1.1 のスキーマ、`http://schemas.xmlsoap.org/soap/envelope/`。 |
 | *Soap 1.2. xsd* | 簡易オブジェクト アクセス プロトコル 1.2 のスキーマです。 |
-| *SiteMapSchema* | ASP.NET sitemap XML ファイルのスキーマ ("<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>")。 |
-| *wsdl.exe* | Web サービス記述言語のスキーマ、 http://schemas.xmlsoap.org/wsdl/ 。 |
-| *xenc .xsd* | XML 暗号化のスキーマ、 http://www.w3.org/2000/09/xmldsig# 。 |
-| *xhtml. xsd* | XHTML http://www.w3.org/1999/xhtml のスキーマ。 |
-| *xlink* | XLink 1.0 のスキーマ、 http://www.w3.org/1999/xlink 。 |
-| *xml .xsd* | Xml: space および xml: lang 属性、 http://www.w3.org/XML/1998/namespace を記述するスキーマ。 |
-| *xmlsig .xsd* | XML デジタル署名のスキーマ、 http://www.w3.org/2000/09/xmldsig# 。 |
-| *xsdschema .xsd* | XSD 自体、 http://www.w3.org/2001/XMLSchema を記述するスキーマ。 |
-| *xslt .xsd* | XML 変換のスキーマ、 http://www.w3.org/1999/XSL/Transform 。 |
+| *SiteMapSchema* | ASP.NET sitemap XML ファイルのスキーマ、`http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`。 |
+| *wsdl.xsd* | Web サービス記述言語のスキーマ、`http://schemas.xmlsoap.org/wsdl/`。 |
+| *xenc .xsd* | XML 暗号化のスキーマ、`http://www.w3.org/2000/09/xmldsig#`。 |
+| *xhtml. xsd* | XHTML `http://www.w3.org/1999/xhtml`のスキーマ。 |
+| *xlink* | XLink 1.0 のスキーマ、`http://www.w3.org/1999/xlink`。 |
+| *xml .xsd* | Xml: space および xml: lang 属性、`http://www.w3.org/XML/1998/namespace`を記述するスキーマ。 |
+| *xmlsig.xsd* | XML デジタル署名のスキーマ、`http://www.w3.org/2000/09/xmldsig#`。 |
+| *xsdschema .xsd* | XSD 自体、`http://www.w3.org/2001/XMLSchema`を記述するスキーマ。 |
+| *xslt.xsd* | XML 変換のスキーマ、`http://www.w3.org/1999/XSL/Transform`。 |
 
 ## <a name="update-schemas-in-the-cache"></a>キャッシュ内のスキーマを更新する
 
@@ -64,11 +64,11 @@ XML エディターはまた、スキーマ キャッシュ ディレクトリ�
 
 - VSInstallDir
 
-- システム
+- System
 
 - ProgramFiles
 
-- Programs
+- ［プログラム］
 
 - CommonProgramFiles
 
@@ -124,7 +124,7 @@ XML エディターはまた、スキーマ キャッシュ ディレクトリ�
 
 2. 追加するスキーマのディレクトリを指し示す新しい `<Catalog href="..."/>` 要素を追加します。
 
-3. 変更内容を保存します。
+3. 変更を [保存] します。
 
    カタログは自動的に再度読み込まれます。
 

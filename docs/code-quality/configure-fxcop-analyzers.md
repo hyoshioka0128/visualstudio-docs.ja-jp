@@ -4,17 +4,17 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649697"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587720"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
@@ -44,25 +44,25 @@ ms.locfileid: "72649697"
 
 *すべて*のルールのオプションを構成するための構文は次のとおりです。
 
-|構文|例|
+|構文|使用例|
 |-|-|
-| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality。OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
 ### <a name="category-of-rules"></a>ルールのカテゴリ
 
 ルールの*カテゴリ*(名前付け、設計、パフォーマンスなど) のオプションを構成するための構文は次のとおりです。
 
-|構文|例|
+|構文|使用例|
 |-|-|
-| dotnet_code_quality.RuleCategory OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+| dotnet_code_quality。RuleCategory OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
 ### <a name="specific-rule"></a>特定のルール
 
 *特定*のルールのオプションを構成するための構文は次のとおりです。
 
-|構文|例|
+|構文|使用例|
 |-|-|
-| dotnet_code_quality.RuleId OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality。RuleId OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="per-project-configuration"></a>プロジェクトごとの構成
 

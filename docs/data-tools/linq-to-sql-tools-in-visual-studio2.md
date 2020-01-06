@@ -3,17 +3,17 @@ title: O/R デザイナーの概要
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648294"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586394"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio の LINQ to SQL ツール
 
@@ -44,15 +44,15 @@ Visual Studio によって *.dbml*ファイルが作成され、ソリューシ�
 
 ## <a name="create-and-configure-the-datacontext"></a>DataContext の作成と構成
 
-**LINQ to SQL クラス**項目をプロジェクトに追加し、 **O/R デザイナー**を開くと、空のデザインサーフェイスは、構成の準備ができている空の <xref:System.Data.Linq.DataContext> を表します。 <xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドラッグされた最初の項目から提供される接続情報で構成されます。 したがって、<xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドロップされた最初の項目の接続情報によって構成されます。 @No__t_0 クラスの詳細については、「 [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
+**LINQ to SQL クラス**項目をプロジェクトに追加し、 **O/R デザイナー**を開くと、空のデザインサーフェイスは、構成の準備ができている空の <xref:System.Data.Linq.DataContext> を表します。 <xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドラッグされた最初の項目から提供される接続情報で構成されます。 したがって、<xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドロップされた最初の項目の接続情報によって構成されます。 <xref:System.Data.Linq.DataContext> クラスの詳細については、「 [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>データベースのテーブルおよびビューにマップするエンティティクラスを作成する
 
-テーブルとビューにマップされたエンティティクラスを作成するには、データベースのテーブルとビューを**サーバーエクスプローラー**から、または**データベースエクスプローラー**を**O/R デザイナー**にドラッグします。 前のセクションで示したように、<xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドラッグされる最初の項目が提供する接続情報で構成されます。 別の接続を使用する後続の項目が**O/R デザイナー**に追加されている場合は、<xref:System.Data.Linq.DataContext> の接続を変更できます。 詳細については、「[方法: テーブルとビューにマップされた LINQ to SQL クラスを作成する (O/R デザイナー)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)」を参照してください。
+テーブルとビューにマップされたエンティティクラスを作成するには、データベースのテーブルとビューを**サーバーエクスプローラー**から、または**データベースエクスプローラー**を**O/R デザイナー**にドラッグします。 前のセクションで示したように、<xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドラッグされる最初の項目が提供する接続情報で構成されます。 別の接続を使用する後続の項目が**O/R デザイナー**に追加されている場合は、<xref:System.Data.Linq.DataContext>の接続を変更できます。 詳細については、「[方法: テーブルとビューにマップされた LINQ to SQL クラスを作成する (O/R デザイナー)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)」を参照してください。
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>ストアドプロシージャおよび関数を呼び出す DataContext メソッドを作成する
 
-ストアドプロシージャおよび関数を**サーバーエクスプローラー**または**データベースエクスプローラー**から**O/R デザイナー**にドラッグすることによって、ストアドプロシージャおよび関数を呼び出す (マップする) <xref:System.Data.Linq.DataContext> メソッドを作成できます。 ストアドプロシージャと関数は、<xref:System.Data.Linq.DataContext> のメソッドとして**O/R デザイナー**に追加されます。
+ストアドプロシージャおよび関数を**サーバーエクスプローラー**または**データベースエクスプローラー**から**O/R デザイナー**にドラッグすることによって、ストアドプロシージャおよび関数を呼び出す (マップする) <xref:System.Data.Linq.DataContext> メソッドを作成できます。 ストアドプロシージャと関数は、<xref:System.Data.Linq.DataContext>のメソッドとして**O/R デザイナー**に追加されます。
 
 > [!NOTE]
 > ストアドプロシージャおよび関数を**サーバーエクスプローラー**または**データベースエクスプローラー**から**O/R デザイナー**にドラッグすると、生成された <xref:System.Data.Linq.DataContext> メソッドの戻り値の型は、項目をドロップする場所によって異なります。 詳細については、「 [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
@@ -71,7 +71,7 @@ Visual Studio によって *.dbml*ファイルが作成され、ソリューシ�
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>生成された DataContext とエンティティクラスコードを別々の名前空間に分割する
 
-**O/R デザイナー**では、<xref:System.Data.Linq.DataContext> に**コンテキスト名前空間**と**エンティティ名前空間**のプロパティが用意されています。 これらのプロパティは、<xref:System.Data.Linq.DataContext> およびエンティティ クラスのコードが生成される名前空間を決定します。 既定では、これらのプロパティは空であり、<xref:System.Data.Linq.DataContext> およびエンティティ クラスはアプリケーションの名前空間に生成されます。 アプリケーションの名前空間以外の名前空間にコードを生成するには、 **[Context Namespace]** プロパティ、 **[Entity Namespace]** プロパティ、またはその両方に値を入力します。
+**O/R デザイナー**では、<xref:System.Data.Linq.DataContext>に**コンテキスト名前空間**と**エンティティ名前空間**のプロパティが用意されています。 これらのプロパティは、<xref:System.Data.Linq.DataContext> およびエンティティ クラスのコードが生成される名前空間を決定します。 既定では、これらのプロパティは空であり、<xref:System.Data.Linq.DataContext> およびエンティティ クラスはアプリケーションの名前空間に生成されます。 アプリケーションの名前空間以外の名前空間にコードを生成するには、 **[Context Namespace]** プロパティ、 **[Entity Namespace]** プロパティ、またはその両方に値を入力します。
 
 ## <a name="reference-content"></a>参照コンテンツ
 

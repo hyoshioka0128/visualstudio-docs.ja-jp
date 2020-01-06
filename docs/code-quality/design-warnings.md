@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc714a4663505fe2a40cc145e8c8ca3c7bf86a1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649673"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587681"
 ---
 # <a name="design-warnings"></a>デザインの警告
 
@@ -31,10 +31,10 @@ ms.locfileid: "72649673"
 | - | - |
 | [CA1000: ジェネリック型の静的メンバーを宣言しません](../code-quality/ca1000.md) | ジェネリック型の静的メンバーを呼び出すときには、その型の型引数も指定する必要があります。 推論をサポートしないジェネリック インスタンス メンバーを呼び出すときには、そのメンバーに型引数を指定する必要があります。 この 2 つの場合、型引数を指定するときに使用される構文は異なりますが、混同される可能性があります。 |
 | [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001.md) | クラスが、idisposable 型のインスタンスフィールドを宣言して実装していますが、クラスは IDisposable を実装していません。 IDisposable フィールドを宣言するクラスは間接的にアンマネージ リソースを所有しているため、IDisposable インターフェイスを実装する必要があります。 |
-| [CA1002: ジェネリック リストを公開しません](../code-quality/ca1002.md) | < (Of \< (T >) >) は、継承ではなくパフォーマンスを目的として設計されたジェネリックコレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
+| [CA1002: ジェネリック リストを公開しません](../code-quality/ca1002.md) | System.Collections.Generic.List < (の\<(T >) >) はパフォーマンスを継承しないように設計された汎用コレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
 | [CA1003: 汎用イベント ハンドラーのインスタンスを使用します](../code-quality/ca1003.md) | 型には、void を返すデリゲートが含まれています。このシグネチャには、2つのパラメーター (最初のオブジェクト、もう1つは EventArgs に割り当て可能な型) が含まれており、それを含んでいるアセンブリの .NET Framework ターゲットは2.0 です。 |
 | [CA1004: ジェネリック メソッドは型パラメーターを指定しなければなりません](../code-quality/ca1004.md) | 型引数を明示的に指定するのではなく、メソッドに渡す引数の型によってジェネリック メソッドの型引数を決定する方法が推論されます。 推論を有効にするには、ジェネリック メソッドのパラメーター シグネチャに、そのメソッドの型パラメーターと同じ型のパラメーターが含まれている必要があります。 この場合、型引数を指定する必要がなくなります。 すべての型パラメーターに対して推論を使用する場合、ジェネリックおよび非ジェネリックインスタンスメソッドを呼び出すための構文は同じです。これにより、ジェネリックメソッドの使いやすさが簡単になります。 |
-| [CA1005: ジェネリック型でパラメーターを使用しすぎないでください](../code-quality/ca1005.md) | ジェネリック型に含まれる型パラメーターが増えれば増えるほど、それぞれの型パラメーターが表す意味を調べることや覚えることが難しくなります。 通常は、List \<T > のように1つの型パラメーターを使用していることがわかります。また、Dictionary \<TKey、TValue > のように2つの型パラメーターを持つケースもあります。 しかし、型パラメーターが 3 つ以上になると、ほとんどのユーザーには意味を把握することが困難になります。 |
+| [CA1005: ジェネリック型でパラメーターを使用しすぎないでください](../code-quality/ca1005.md) | ジェネリック型に含まれる型パラメーターが増えれば増えるほど、それぞれの型パラメーターが表す意味を調べることや覚えることが難しくなります。 通常は、List\<T > のように1つの型パラメーターを使用し、Dictionary\<TKey, TValue > のように2つの型パラメーターを使用することをお勧めします。 しかし、型パラメーターが 3 つ以上になると、ほとんどのユーザーには意味を把握することが困難になります。 |
 | [CA1006: ジェネリック型をメンバー シグネチャ内で入れ子にしません](../code-quality/ca1006.md) | 入れ子にされた型引数は、ジェネリック型の型引数でもあります。 入れ子にされた型引数を含むシグネチャを持つメンバーを呼び出すには、ユーザーが 1 つのジェネリック型をインスタンス化し、別のジェネリック型のコンストラクターにこの型を渡す必要があります。 複雑な手順と構文が必要となるため、これは避けるようにしてください。 |
 | [CA1007: 適切な場所にジェネリックを使用します](../code-quality/ca1007.md) | 外部から参照できるメソッドに、System.Object 型の参照パラメーターが含まれています。 ジェネリック メソッドを使用することで、型を最初に参照パラメーターの型にキャストせずに、制約の影響を受けるすべての型をメソッドに渡すことができます。 |
 | [CA1008: Enums は 0 値を含んでいなければなりません](../code-quality/ca1008.md) | 初期化されていない列挙型の既定値は、他の値型と同様に、ゼロです。 フラグが設定されていない列挙体では、値0を使用してメンバーを定義し、既定値が列挙型の有効な値になるようにする必要があります。 FlagsAttribute 属性を適用した列挙型でゼロ値のメンバーを定義する場合、名前を "None" にして、列挙型に設定済みの値がないことを示します。 |
@@ -84,11 +84,11 @@ ms.locfileid: "72649673"
 | [CA1057: 文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します](../code-quality/ca1057.md) | 文字列パラメーターが System.Uri パラメーターに置き換えられている点だけが異なるメソッド オーバーロードが型で宣言されています。 文字列パラメーターを使用するオーバーロードは、URI パラメーターを使用するオーバーロードを呼び出しません。 |
 | [CA1058: 型は、一定の基本型を拡張することはできません](../code-quality/ca1058.md) | 外部から参照可能な型では、特定の基本型が拡張されます。 別の型を使用してください。 |
 | [CA1059: メンバーは特定の具象型を公開できません](../code-quality/ca1059.md) | 具象型は、完全な実装を含む型であるため、インスタンス化できます。 このメンバーを広範囲に使用するには、具象型を推奨インターフェイスによって置き換えます。 |
-| [CA1060: P/Invoke を NativeMethods クラスに移動します](../code-quality/ca1060.md) | @No__t_1 で Declare キーワードを使用して定義されている <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> またはメソッドでマークされたプラットフォーム呼び出しメソッドは、アンマネージコードにアクセスします。 これらのメソッドは、NativeMethods、SafeNativeMethods、UnsafeNativeMethods の各クラスのいずれかに含まれる必要があります。 |
+| [CA1060: P/Invoke を NativeMethods クラスに移動します](../code-quality/ca1060.md) | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]で Declare キーワードを使用して定義されている <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> またはメソッドでマークされたプラットフォーム呼び出しメソッドは、アンマネージコードにアクセスします。 これらのメソッドは、NativeMethods、SafeNativeMethods、UnsafeNativeMethods の各クラスのいずれかに含まれる必要があります。 |
 | [CA1061: 基本クラス メソッドを非表示にしません](../code-quality/ca1061.md) | 派生メソッドのパラメーター シグネチャ内のある型が、基本メソッドのパラメーター シグネチャ内のそれに対応する型より弱く型指定されていることが、両者の唯一の相違点である場合、基本型内のメソッドが派生型内の同じ名前のメソッドによって隠ぺいされます。 |
 | [CA1062: パブリック メソッドの引数の検証](../code-quality/ca1062.md) | 外部から参照可能なメソッドに渡されるすべての参照引数について、null かどうかをチェックする必要があります。 |
 | [CA1063: IDisposable を正しく実装します](../code-quality/ca1063.md) | すべての IDisposable 型は、Dispose パターンを適切に実装する必要があります。 |
-| [CA1064: 例外は public として設定する必要があります](../code-quality/ca1064.md) | 内部例外は、その内部スコープ内でのみ認識されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 内部例外が <xref:System.Exception?displayProperty=fullName>、<xref:System.SystemException?displayProperty=fullName>、または <xref:System.ApplicationException?displayProperty=fullName> から継承されている場合、外部コードには、例外の処理内容を把握するのに十分な情報がありません。 |
+| [CA1064: 例外は public として設定する必要があります](../code-quality/ca1064.md) | 内部例外は、その内部スコープ内でのみ認識されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 場合、内部例外から継承<xref:System.Exception?displayProperty=fullName>、 <xref:System.SystemException?displayProperty=fullName>、または<xref:System.ApplicationException?displayProperty=fullName>、外部のコードには、例外の処理方法を把握するための十分な情報はありません。 |
 | [CA1065: 予期しない場所に例外を発生させません](../code-quality/ca1065.md) | 例外をスローしないはずのメソッドが例外をスローします。 |
 | [CA1068: CancellationToken パラメーターは最後に指定する必要があります](../code-quality/ca1068.md) | メソッドに、最後のパラメーターではない CancellationToken パラメーターが指定されています。 |
 | [CA2210: アセンブリには有効な厳密な名前が必要です](../code-quality/ca2210.md) | 厳密な名前によって、改ざんされたアセンブリを、クライアントが無意識のうちに読み込む問題を防ぐことができます。 厳密な名前のないアセンブリが配置される状況は、限定されます。 適切に署名されていないアセンブリを共有または配布すると、アセンブリが改ざんされる場合、共通言語ランタイムでアセンブリを読み込むことができない場合、またはユーザーのコンピューターで検証を無効にする必要がある場合などの問題が考えられます。 |

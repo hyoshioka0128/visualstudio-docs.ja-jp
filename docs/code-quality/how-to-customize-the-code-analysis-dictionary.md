@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649460"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587525"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>方法 : コード分析辞書をカスタマイズする
 
@@ -241,7 +241,7 @@ ms.locfileid: "72649460"
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/頭字語/CasingExceptions/頭字語
 
-コード分析によって識別される用語の一覧に頭字語を含め、複合語の大文字と小文字の規則によって用語をチェックする方法を指定するには、辞書/頭字語/CasingExceptions の内部テキストとして用語を追加します。頭字語要素。 Dictionary/頭字/CasingExceptions/頭字語の頭字語では、大文字と小文字が区別されます。
+コード分析によって識別される用語の一覧に頭字語を含め、複合語の大文字と小文字の規則によって用語がチェックされる方法を指定するには、辞書/頭字語/CasingExceptions/頭字語要素の内部テキストとして用語を追加します。 Dictionary/頭字/CasingExceptions/頭字語の頭字語では、大文字と小文字が区別されます。
 
 **例**
 

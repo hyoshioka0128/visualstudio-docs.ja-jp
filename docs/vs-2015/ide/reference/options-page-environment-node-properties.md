@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668699"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595021"
 ---
 # <a name="options-page-environment-node-properties"></a>[環境] ノード プロパティ ([オプション] ページ)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "72668699"
 
 |プロパティ項目名|[値]|説明|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|起動時に実行するアクションです。<xref:EnvDTE.vsStartUp> から取得され、0 ～ 5 の値で示されます。<br /><br /> -   0: ホーム ページを開く<br />-   1: 最後に読み込んだソリューション<br />-   2: **[プロジェクトを開く]** ダイアログ ボックスの表示<br />-   3: **[新しいプロジェクト]** ダイアログ ボックスの表示<br />-   4: 空の環境の表示<br />-   5: スタート ページの表示|
+|OnStartUp|Get/Set (Enum)|起動時に実行するアクションです。<xref:EnvDTE.vsStartUp> から取得され、0 ～ 5 の値で示されます。<br /><br /> -   0:ホーム ページを開く<br />-   1:最後に読み込んだソリューション<br />-   2: **[プロジェクトを開く]** ダイアログ ボックスの表示<br />-   3: **[新しいプロジェクト]** ダイアログ ボックスの表示<br />-   4:空の環境の表示<br />-   5:スタート ページの表示|
 |StartPageRSSUrl|Get/Set (String)|起動時に使用する RSS フィードの URL です。|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|StartPageRefreshInterval で指定された間隔が経過するたびにスタート ページを更新します。|
 |StartPageRefreshInterval|Get/Set (Short)|スタート ページを更新する間隔 (分単位) です。|
@@ -161,4 +161,9 @@ ms.locfileid: "72668699"
 |ViewSourceExternalProgram|Get/Set (String)|外部ソース ビューアーのパスです。|
 
 ## <a name="see-also"></a>関連項目
- [オプション設定の制御](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)オプションページの[プロパティ項目の名前を決定する](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)オプションページ[、フォントおよび色ノードのプロパティ](../../ide/reference/options-page-fonts-and-colors-node-properties.md)[オプションページ、[テキストエディター] ノードプロパティ](../../ide/reference/options-page-text-editor-node-properties.md)[[環境オプション] ダイアログボックス](../../ide/reference/environment-options-dialog-box.md)
+
+- [オプション設定の制御](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [オプション ページにあるプロパティ項目名の確認](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [[フォントおよび色] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [[テキスト エディター] ノード プロパティ ([オプション] ページ)](../../ide/reference/options-page-text-editor-node-properties.md)
+- [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

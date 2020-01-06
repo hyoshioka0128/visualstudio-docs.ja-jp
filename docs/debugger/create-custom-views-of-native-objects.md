@@ -1,6 +1,6 @@
 ---
 title: C++ オブジェクトのカスタム ビューを作成する
-description: Use the Natvis framework to customize the way that Visual Studio displays native types in the debugger
+description: Natvis フレームワークを使用して、Visual Studio がデバッガーでネイティブ型を表示する方法をカスタマイズする
 ms.date: 10/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -13,38 +13,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061080"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405210"
 ---
-# <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Create custom views of C++ objects in the debugger using the Natvis framework
+# <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis フレームワークを使用C++してデバッガーでオブジェクトのカスタムビューを作成する
 
-The Visual Studio *Natvis* framework customizes the way native types appear in debugger variable windows, such as the **Locals** and **Watch** windows, and in **DataTips**. Natvis visualizations can help make the types you create more visible during debugging.
+Visual Studio *Natvis*フレームワークでは、 **[ローカル]** ウィンドウや **[ウォッチ]** ウィンドウなどのデバッガー変数ウィンドウや、 **DataTips**でネイティブ型を表示する方法がカスタマイズされています。 Natvis の視覚化を使用すると、デバッグ中により多くの型を作成しやすくなります。
 
-Natvis replaces the *autoexp.dat* file in earlier versions of Visual Studio with XML syntax, better diagnostics, versioning, and multiple file support.
+Natvis は、以前のバージョンの Visual Studio の*autoexp.dat*ファイルを XML 構文に置き換え、診断、バージョン管理、複数ファイルのサポートを強化しています。
 
-## <a name="BKMK_Why_create_visualizations_"></a>Natvis visualizations
+> [!NOTE]
+> Natvis のカスタマイズは、クラスと構造体では機能しますが、typedef は使用できません。
 
-You use the Natvis framework to create visualization rules for the types you create, so that developers can see them more easily during debugging.
+## <a name="BKMK_Why_create_visualizations_"></a>Natvis の視覚化
 
-For example, the following illustration shows a variable of type [Windows::UI::Xaml::Controls::TextBox](/uwp/api/Windows.UI.Xaml.Controls.TextBox) in a debugger window without any custom visualizations applied.
+開発者がデバッグ中により簡単に表示できるように、Natvis フレームワークを使用して、作成した型の視覚化ルールを作成します。
 
-![TextBox default visualization](../debugger/media/dbg_natvis_textbox_default.png "TextBox の既定の視覚表現")
+たとえば、次の図は、カスタムの視覚化が適用されていない、デバッガーウィンドウでの[Windows:: UI:: Xaml:: Controls:: TextBox](/uwp/api/Windows.UI.Xaml.Controls.TextBox)型の変数を示しています。
 
-強調表示された行には `Text` クラスの `TextBox` プロパティが示されています。 The complex class hierarchy makes it difficult to find this property. The debugger doesn't know how to interpret the custom string type, so you can't see the string held inside the textbox.
+![TextBox の既定の視覚化](../debugger/media/dbg_natvis_textbox_default.png "TextBox の既定の視覚表現")
 
-The same `TextBox` looks much simpler in the variable window when Natvis custom visualizer rules are applied. The important members of the class appear together, and the debugger shows the underlying string value of the custom string type.
+強調表示された行には `Text` クラスの `TextBox` プロパティが示されています。 複合クラス階層を使用すると、このプロパティを見つけるのが困難になります。 デバッガーはカスタム文字列型を解釈する方法を認識しないため、テキストボックス内に保持されている文字列を確認することはできません。
 
-![TextBox data using visualizer](../debugger/media/dbg_natvis_textbox_visualizer.png "ビジュアライザーを使用した TextBox データ")
+Natvis カスタムビジュアライザールールが適用されると、[変数] ウィンドウで同じ `TextBox` がはるかに簡単になります。 クラスの重要なメンバーが一緒に表示され、デバッガーはカスタム文字列型の基になる文字列値を表示します。
 
-## <a name="BKMK_Using_Natvis_files"></a>Use .natvis files in C++ projects
+![ビジュアライザーを使用したテキストボックスデータ](../debugger/media/dbg_natvis_textbox_visualizer.png "ビジュアライザーを使用した TextBox データ")
 
-Natvis uses *.natvis* files to specify visualization rules. A *.natvis* file is an XML file with a *.natvis* extension. The Natvis schema is defined in *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*.
+## <a name="BKMK_Using_Natvis_files"></a>プロジェクトでの natvis ファイルC++の使用
 
-The basic structure of a *.natvis* file is one or more `Type` elements representing visualization entries. The fully qualified name of each `Type` element is specified in its `Name` attribute.
+Natvis は、 *Natvis*ファイルを使用して視覚化ルールを指定します。 *Natvis*ファイルは、拡張子が*natvis*の XML ファイルです。 Natvis スキーマは *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*で定義されています。
+
+*Natvis*ファイルの基本構造は、視覚化エントリを表す1つ以上の `Type` 要素です。 各 `Type` 要素の完全修飾名は、`Name` 属性で指定します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -61,35 +64,35 @@ The basic structure of a *.natvis* file is one or more `Type` elements represent
 </AutoVisualizer>
 ```
 
-Visual Studio provides some *.natvis* files in the *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers* folder. These files have visualization rules for many common types, and can serve as examples for writing visualizations for new types.
+Visual Studio では、 *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*フォルダーに*natvis*ファイルがいくつか提供されています。 これらのファイルには、多くの一般的な型の視覚化ルールがあり、新しい型の視覚化を作成するための例として使用できます。
 
-### <a name="add-a-natvis-file-to-a-c-project"></a>Add a .natvis file to a C++ project
+### <a name="add-a-natvis-file-to-a-c-project"></a>Natvis ファイルをC++プロジェクトに追加する
 
-You can add a *.natvis* file to any C++ project.
+任意C++のプロジェクトに*natvis*ファイルを追加できます。
 
-**To add a new *.natvis* file:**
+**新しい natvis ファイルを追加するには、次のように*し*ます。**
 
-1. Select the C++ project node in **Solution Explorer**, and select **Project** > **Add new item**, or right-click the project and select **Add** > **New item**.
+1. ソリューションエクスプローラーでC++プロジェクトノードを選択し、[ ** > プロジェクト**]、 **[新しい項目の追加]** の順に選択するか、プロジェクトを右クリックして [ > **新しい項目**の**追加**] を選択します。
 
-1. In the **Add New Item** dialog, select **Visual C++**  > **Utility** > **Debugger visualization file (.natvis)** .
+1. **[新しい項目の追加]** ダイアログで、[ **Visual C++**  > **ユーティリティ** > **デバッガーの視覚化ファイル (. natvis)** ] を選択します。
 
-1. Name the file, and select **Add**.
+1. ファイルにという名前を指定し、 **[追加]** を選択します。
 
-   The new file is added to **Solution Explorer**, and opens in the Visual Studio document pane.
+   新しいファイルが**ソリューションエクスプローラー**に追加され、Visual Studio のドキュメントウィンドウに表示されます。
 
-The Visual Studio debugger loads *.natvis* files in C++ projects automatically, and by default, also includes them in the *.pdb* file when the project builds. If you debug the built app, the debugger loads the *.natvis* file from the *.pdb* file, even if you don't have the project open. If you don't want the *.natvis* file included in the *.pdb*, you can exclude it from the built *.pdb* file.
+Visual Studio デバッガーは、プロジェクト内のC++ natvis ファイルを自動的に読み込みます。既定では、プロジェクトのビルド時に *.pdb*ファイルにも含まれます。 ビルドされたアプリをデバッグする場合、プロジェクトを開いていない場合でも、デバッガーは *.pdb*ファイルから*natvis*ファイルを読み込みます。 *Natvis*ファイルを *.pdb*に含めない場合は、ビルドされた *.pdb*ファイルから除外することができます。
 
-**To exclude a *.natvis* file from a *.pdb*:**
+***.Pdb*から*natvis*ファイルを除外するには、次のようにします。**
 
-1. Select the *.natvis* file in **Solution Explorer**, and select the **Properties** icon, or right-click the file and select **Properties**.
+1. **ソリューションエクスプローラー**で*natvis*ファイルを選択し、 **[プロパティ]** アイコンを選択するか、ファイルを右クリックして **[プロパティ]** を選択します。
 
-1. Drop down the arrow next to **Excluded From Build** and select **Yes**, and then select **OK**.
-
->[!NOTE]
->For debugging executable projects, use the solution items to add any *.natvis* files that are not in the *.pdb*, since there is no C++ project available.
+1. **[ビルドから除外]** の横にある矢印をドロップし、 **[はい]** を選択し、 **[OK]** を選択します。
 
 >[!NOTE]
->*.Pdb*から読み込まれた Natvis 規則は、 *.pdb*が参照するモジュールの型にのみ適用されます。 たとえば、Natvis `Test`という名前の型のエントリが*ある場合、このエントリは*、module1.vb の `Test` クラスにのみ適用さ*れます。* 別のモジュールも `Test` という名前のクラスを定義している場合 *、Natvis エントリは適用*されません。
+>実行可能なプロジェクトをデバッグする場合は、ソリューション項目を使用して *.pdb*に含まれていない*natvis*ファイルを追加C++します。これは、使用できるプロジェクトがないためです。
+
+>[!NOTE]
+>*.Pdb*から読み込まれた Natvis 規則は、 *.pdb*が参照するモジュールの型にのみ適用されます。 たとえば、Natvis `Test`という名前の型のエントリが*ある場合、このエントリは*、module1.vb の `Test` クラスにのみ適用さ*れます。* 別のモジュールも `Test`という名前のクラスを定義している場合は *、Natvis エントリは適用*されません。
 
 ### <a name="BKMK_natvis_location"></a>Natvis ファイルの場所
 
@@ -130,7 +133,7 @@ Visual Studio の外部で*natvis*ファイルを変更しても、変更は自�
 ## <a name="BKMK_Expressions_and_formatting"></a> 式と書式
 Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を指定します。 「[コンテキスト演算子 (C++)](../debugger/context-operator-cpp.md)」で説明C++されている、デバッガーでの式の拡張と制限事項に加えて、次の点に注意してください。
 
-- Natvis 式は、現在のスタック フレームではなく視覚化されるオブジェクトのコンテキストで評価されます。 たとえば、Natvis 式の `x` は、視覚化されるオブジェクト内の**x**という名前のフィールドを参照します。このフィールドは、現在の関数の**x**という名前のローカル変数ではありません。 Natvis 式でローカル変数にアクセスすることはできませんが、グローバル変数にはアクセスできます。
+- Natvis 式は、現在のスタック フレームではなく視覚化されるオブジェクトのコンテキストで評価されます。 たとえば、Natvis 式内の `x` は、現在の関数の**x**という名前のローカル変数ではなく、視覚化されるオブジェクト内の**x**という名前のフィールドを参照します。 Natvis 式でローカル変数にアクセスすることはできませんが、グローバル変数にはアクセスできます。
 
 - Natvis 式では、関数の評価や副作用は許可されません。 関数呼び出しと代入演算子は無視されます。 [デバッガーの組み込み関数](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) は、他の関数とは異なり副作用がないため、Natvis 式からは自由に呼び出すことができます。
 
@@ -164,7 +167,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 **Natvis 診断を有効にするには:**
 
-- **ツール** > **オプション** (または**デバッグ** > **オプション**) で >**デバッグ** > **出力ウィンドウ**、**NatvisC++診断メッセージ (のみ)** を **エラー**、警告 に設定します。、または**Verbose**を選択し、 **OK**を選択します。
+- [**ツール** > **オプション**] (または**デバッグ** > **オプション**) で > **出力ウィンドウ**の**デバッグ**>、 **NatvisC++診断メッセージ (のみ)** を **[エラー]** 、 **[警告]** 、または **[詳細]** に設定し、 **[OK]** を選択します。
 
 エラーは **[出力]** ウィンドウに表示されます。
 
@@ -185,7 +188,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 ### <a name="BKMK_Type"></a> Type 要素
 
-基本 `Type` は次の例のようになります。
+基本的な `Type` は、次の例のようになります。
 
 ```xml
 <Type Name="[fully qualified type name]">
@@ -198,7 +201,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
  `Type` 要素は次を指定します。
 
-1. 視覚エフェクトを使用する必要がある種類 (`Name` 属性)。
+1. 視覚化を使用する必要がある型 (`Name` 属性)。
 
 2. その型のオブジェクトの値がどのように表示されるか ( `DisplayString` 要素)。
 
@@ -221,9 +224,9 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 視覚化エントリの検証に失敗した場合は、次に利用可能な視覚エフェクトが使用されます。
 
 #### <a name="inheritable-attribute"></a>継承可能な属性
-省略可能な `Inheritable` 属性では、視覚化が基本データ型にのみ適用されるか、基本データ型とすべての派生型にのみ適用されるかを指定します。 `Inheritable` の既定値は `true`です。
+省略可能な `Inheritable` 属性は、視覚エフェクトが基本データ型にのみ適用されるか、基本データ型とすべての派生型にのみ適用されるかを指定します。 `Inheritable` の既定値は `true`です。
 
-次の例では、視覚化は `BaseClass` 型にのみ適用されます。
+次の例では、視覚化は `BaseClass` の種類にのみ適用されます。
 
 ```xml
 <Type Name="Namespace::BaseClass" Inheritable="false">
@@ -269,9 +272,9 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 ### <a name="BKMK_Condition_attribute"></a> Condition 属性
 
-オプションの `Condition` 属性は多くの視覚化要素で使用でき、視覚エフェクトルールを使用するタイミングを指定します。 If the expression inside the condition attribute resolves to `false`, the visualization rule doesn't apply. If it evaluates to `true`, or there is no `Condition` attribute, the visualization applies. You can use this attribute for if-else logic in the visualization entries.
+オプションの `Condition` 属性は、多くの視覚化要素で使用でき、視覚エフェクトルールを使用するタイミングを指定します。 Condition 属性内の式が `false`に解決された場合、視覚化ルールは適用されません。 `true`に評価された場合、または `Condition` 属性がない場合は、視覚化が適用されます。 この属性は、視覚化エントリの else ロジックに使用できます。
 
-For example, the following visualization has two `DisplayString` elements for a smart pointer type. When the `_Myptr` member is empty, the condition of the first `DisplayString` element resolves to `true`, so that form displays. When the `_Myptr` member is not empty, the condition evaluates to `false`, and the second `DisplayString` element displays.
+たとえば、次の視覚エフェクトには、スマートポインター型の2つの `DisplayString` 要素があります。 `_Myptr` メンバーが空の場合、フォームが表示されるように、最初の `DisplayString` 要素の条件が `true`に解決されます。 `_Myptr` メンバーが空でない場合、条件は `false`に評価され、2番目の `DisplayString` 要素が表示されます。
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -285,7 +288,7 @@ For example, the following visualization has two `DisplayString` elements for a 
 
 ### <a name="includeview-and-excludeview-attributes"></a>IncludeView および ExcludeView 属性
 
-The `IncludeView` and `ExcludeView` attributes specify elements to display or not display in specific views. For example, in the following Natvis specification of `std::vector`, the `simple` view doesn't display the `[size]` and `[capacity]` items.
+`IncludeView` 属性と `ExcludeView` 属性では、特定のビューに表示または表示しない要素を指定します。 たとえば、`std::vector`の次の Natvis 仕様では、`simple` ビューに `[size]` と `[capacity]` の項目が表示されません。
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -301,14 +304,14 @@ The `IncludeView` and `ExcludeView` attributes specify elements to display or no
 </Type>
 ```
 
-You can use the `IncludeView` and `ExcludeView` attributes on types and on individual members.
+型と個々のメンバーに対して、`IncludeView` と `ExcludeView` 属性を使用できます。
 
 ### <a name="BKMK_Versioning"></a> Version 要素
-The `Version` element scopes a visualization entry to a specific module and version. The `Version` element helps avoid name collisions, reduces inadvertent mismatches, and allows different visualizations for different type versions.
+`Version` 要素は、特定のモジュールとバージョンに対する視覚化エントリのスコープを指定します。 `Version` 要素を使用すると、名前の競合を回避し、偶発的な不一致を減らすことができ、さまざまな種類のバージョンに対してさまざまな視覚エフェクトを使用できます。
 
-If a common header file that is used by different modules defines a type, the versioned visualization appears only when the type is in the specified module version.
+異なるモジュールで使用される共通のヘッダーファイルが型を定義する場合、バージョン管理された視覚化は、その型が指定されたモジュールバージョンの場合にのみ表示されます。
 
-In the following example, the visualization is applicable only for the `DirectUI::Border` type found in the `Windows.UI.Xaml.dll` from version 1.0 to 1.5.
+次の例では、視覚化は、`Windows.UI.Xaml.dll` のバージョン1.0 から1.5 にある `DirectUI::Border` 型にのみ適用されます。
 
 ```xml
 <Type Name="DirectUI::Border">
@@ -320,12 +323,12 @@ In the following example, the visualization is applicable only for the `DirectUI
 </Type>
 ```
 
-You don't need both `Min` and `Max`. They are optional attributes. No wildcard characters are supported.
+`Min` と `Max`の両方は必要ありません。 これらは省略可能な属性です。 ワイルドカード文字はサポートされていません。
 
-The `Name` attribute is in the format *filename.ext*, such as *hello.exe* or *some.dll*. No path names are allowed.
+`Name` 属性は、*ファイル名*の形式で指定します。たとえば、 *hello .exe*や*some .dll*などです。 パス名は使用できません。
 
-### <a name="BKMK_DisplayString"></a> DisplayString element
-The `DisplayString` element specifies a string to show as the value of a variable. この要素には、任意の文字列を式と組み合わせて使用できます。 中かっこ内のすべてのものは式として解釈されます。 For instance, the following `DisplayString` entry:
+### <a name="BKMK_DisplayString"></a>DisplayString 要素
+`DisplayString` 要素は、変数の値として表示する文字列を指定します。 この要素には、任意の文字列を式と組み合わせて使用できます。 中かっこ内のすべてのものは式として解釈されます。 たとえば、次の `DisplayString` エントリがあります。
 
 ```xml
 <Type Name="CPoint">
@@ -333,18 +336,18 @@ The `DisplayString` element specifies a string to show as the value of a variabl
 </Type>
 ```
 
-Means that variables of type `CPoint` display as in this illustration:
+は、型 `CPoint` の変数が次の図のように表示されることを意味します。
 
- ![Use a DisplayString element](../debugger/media/dbg_natvis_cpoint_displaystring.png "DisplayString 要素を使用する")
+ ![DisplayString 要素を使用する](../debugger/media/dbg_natvis_cpoint_displaystring.png "DisplayString 要素を使用する")
 
-In the `DisplayString` expression, `x` and `y`, which are members of `CPoint`, are inside curly braces, so their values are evaluated. The example also shows how you can escape a curly brace by using double curly braces ( `{{` or `}}` ).
+`DisplayString` 式では、`CPoint`のメンバーである `x` および `y`は、中かっこ内にあるため、値が評価されます。 この例では、二重中かっこ (`{{` または `}}`) を使用して中かっこをエスケープする方法も示しています。
 
 > [!NOTE]
-> `DisplayString` 要素でのみ、任意の文字列と中かっこ構文を使用できます。 All other visualization elements accept only expressions that the debugger can evaluate.
+> `DisplayString` 要素でのみ、任意の文字列と中かっこ構文を使用できます。 他のすべての視覚化要素は、デバッガーが評価できる式のみを受け入れます。
 
-### <a name="BKMK_StringView"></a> StringView element
+### <a name="BKMK_StringView"></a>StringView 要素
 
-The `StringView` element defines a value that the debugger can send to the built-in text visualizer. For example, given the following visualization for the `ATL::CStringT` type:
+`StringView` 要素は、デバッガーが組み込みのテキストビジュアライザーに送信できる値を定義します。 たとえば、`ATL::CStringT` の種類に対して次の視覚エフェクトを使用したとします。
 
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">
@@ -352,11 +355,11 @@ The `StringView` element defines a value that the debugger can send to the built
 </Type>
 ```
 
-The `CStringT` object displays in a variable window like this example:
+`CStringT` オブジェクトは、次の例のように変数ウィンドウに表示されます。
 
-![CStringT DisplayString element](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT DisplayString 要素")
+![CStringT DisplayString 要素](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT DisplayString 要素")
 
-Adding a `StringView` element tells the debugger it can display the value as a text visualization.
+`StringView` 要素を追加すると、その値をテキストの視覚化として表示できることがデバッガーに通知されます。
 
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">
@@ -365,7 +368,7 @@ Adding a `StringView` element tells the debugger it can display the value as a t
 </Type>
 ```
 
-During debugging, you can select the magnifying glass icon next to the variable, and then select **Text Visualizer** to display the string that **m_pszData** points to.
+デバッグ中に、変数の横にある虫眼鏡アイコンを選択し、 **[テキストビジュアライザー]** を選択して**m_pszData**ポイントする文字列を表示できます。
 
  ![StringView ビジュアライザーを使用した CStringT データ](../debugger/media/dbg_natvis_stringview_cstringt.png "StringView ビジュアライザーを含む CStringT データ")
 
@@ -373,7 +376,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 
 ### <a name="BKMK_Expand"></a>要素の展開
 
-オプションの `Expand` ノードは、変数ウィンドウで型を展開するときに、視覚化された型の子をカスタマイズします。 `Expand` ノードは、子要素を定義する子ノードのリストを受け入れます。
+[オプションの `Expand`] ノードを使用すると、変数ウィンドウで型を展開するときに、視覚化された型の子がカスタマイズされます。 `Expand` ノードは、子要素を定義する子ノードのリストを受け入れます。
 
 - 視覚エフェクトエントリで `Expand` ノードが指定されていない場合、子は既定の展開規則を使用します。
 
@@ -397,7 +400,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 
 ![項目要素の展開を含む CRect](../debugger/media/dbg_natvis_expand_item_crect1.png "Item 要素の展開を含む CRect")
 
-デバッガーは、`Width` および `Height` 要素で指定された式を評価し、変数 ウィンドウの **値** 列に値を表示します。
+デバッガーは、`Width` 要素と `Height` 要素で指定された式を評価し、変数 ウィンドウの **値** 列に値を表示します。
 
 デバッガーによって、カスタム展開のたびに **[Raw ビュー]** ノードが自動的に作成されます。 上のスクリーンショットでは、 **[Raw view]** ノードが展開され、オブジェクトの既定の未加工ビューがその Natvis の視覚化とどのように異なるかが示されています。 既定の展開では、基底クラスのサブツリーが作成され、基底クラスのすべてのデータメンバーが子として一覧表示されます。
 
@@ -428,7 +431,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 `ArrayItems` ノードには次のものが必要です。
 
 - デバッガーが配列の長さを解釈するための `Size` 式 (整数に評価されることが必要)。
-- 最初の要素を指す `ValuePointer` 式 (`void*` ではない要素型のポインターである必要があります)。
+- 最初の要素を指す `ValuePointer` 式 (`void*`でない要素型のポインターである必要があります)。
 
 配列の既定の下限値は 0 です。 値をオーバーライドするには、`LowerBound` 要素を使用します。 Visual Studio に付属の*natvis*ファイルには例があります。
 
@@ -452,7 +455,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 </Type>
 ```
 
-- `Direction` は、配列が行優先または列優先の順序であるかどうかを指定します。
+- `Direction` は、配列が行優先であるか列優先であるかを指定します。
 - `Rank` は配列のランクを指定します。
 - `Size` 要素は暗黙の `$i` パラメーターを受け取ります。このパラメーターは次元のインデックスに置き換えられて、その次元の配列の長さが特定されます。 前の例では、`_M_extent.M_base[0]` 式によって、0番目の次元の長さ、1番目の次元 `_M_extent._M_base[1]` などが指定されています。
 
@@ -462,7 +465,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 
 #### <a name="BKMK_IndexListItems_expansion"></a> IndexListItems の展開
 
-配列要素が連続してメモリ内に配置されている場合にのみ、`ArrayItems` 拡張を使用できます。 デバッガーは、ポインターをインクリメントするだけで次の要素を取得します。 値ノードのインデックスを操作する必要がある場合は、`IndexListItems` ノードを使用します。 `IndexListItems` ノードを含む視覚化を次に示します。
+配列要素が連続してメモリ内に配置されている場合にのみ、`ArrayItems` の拡張を使用できます。 デバッガーは、ポインターをインクリメントするだけで次の要素を取得します。 値ノードのインデックスを操作する必要がある場合は `IndexListItems` ノードを使用します。 `IndexListItems` ノードを含む視覚化を次に示します。
 
 ```xml
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">
@@ -503,14 +506,14 @@ During debugging, you can select the magnifying glass icon next to the variable,
 
 `Size` 要素はリストの長さを参照します。 `HeadPointer` は最初の要素を参照し、 `NextPointer` は次の要素を参照し、 `ValueNode` は項目の値を参照します。
 
-デバッガーは、親リストの型ではなく、`LinkedListItems` node 要素のコンテキストで `NextPointer` および `ValueNode` 式を評価します。 前の例では、`CAtlList` には、リンクリストのノードである `CNode` クラス (`atlcoll.h`) があります。 `m_pNext` と `m_element` は、`CAtlList` クラスではなく `CNode` クラスのフィールドです。
+デバッガーは、親リストの型ではなく、`LinkedListItems` node 要素のコンテキストで `NextPointer` および `ValueNode` 式を評価します。 前の例では、`CAtlList` に、リンクリストのノードである `CNode` クラス (`atlcoll.h`にあります) があります。 `m_pNext` と `m_element` は、`CAtlList` クラスではなく `CNode` クラスのフィールドです。
 
 `ValueNode` は空のままにするか、`this` を使用して `LinkedListItems` ノード自体を参照することができます。
 
 #### <a name="customlistitems-expansion"></a>CustomListItems 展開
-`CustomListItems` 展開を使用して、ハッシュ テーブルなどのデータ構造を走査する際にカスタム ロジックを記述することができます。 評価が必要なすべてのものに対して式C++を使用できるデータ構造を視覚化するには、`CustomListItems` を使用します。ただし、`ArrayItems`、`IndexListItems`、または `LinkedListItems` のモールドには適していません。
+`CustomListItems` 展開を使用して、ハッシュ テーブルなどのデータ構造を走査する際にカスタム ロジックを記述することができます。 `CustomListItems` を使用すると、評価する必要C++があるすべてのものに対して式を使用できるデータ構造を視覚化できますが、`ArrayItems`、`IndexListItems`、`LinkedListItems`のモールドにはあまり適合しません。
 
-次の `CAtlMap` のビジュアライザーは、`CustomListItems` が適切な場合の優れた例です。
+次の `CAtlMap` 用ビジュアライザーは、`CustomListItems` が適切な場合の優れた例です。
 
 ```xml
 <Type Name="ATL::CAtlMap&lt;*,*,*,*&gt;">
@@ -541,7 +544,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 </Type>
 ```
 
-`Exec` を使用すると、展開で定義されている変数とオブジェクトを使用して、`CustomListItems` 拡張の内部でコードを実行できます。 論理演算子、算術演算子、代入演算子は `Exec` と共に使用できます。 `Exec` を使用して関数を評価することはできません。
+`Exec` を使用すると、展開で定義されている変数とオブジェクトを使用して、`CustomListItems` 拡張の内部でコードを実行できます。 `Exec`では、論理演算子、算術演算子、代入演算子を使用できます。 `Exec` を使用して関数を評価することはできません。
 
 `CustomListItems` は、次の組み込み関数をサポートしています。
 
@@ -579,7 +582,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 </Type>
 ```
 
-構文は、`LinkedListItems` ノードに似ています。 `LeftPointer`、`RightPointer`、`ValueNode` は、ツリーノードクラスのコンテキストで評価されます。 `ValueNode` は空のままにするか、`this` を使用して `TreeItems` ノード自体を参照することができます。
+構文は `LinkedListItems` ノードに似ています。 `LeftPointer`、`RightPointer`、および `ValueNode` は、ツリーノードクラスのコンテキストで評価されます。 `ValueNode` は空のままにするか、`this` を使用して `TreeItems` ノード自体を参照することができます。
 
 #### <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem の展開
  `ExpandedItem` 要素は、視覚化された型の子であるかのように、基底クラスまたはデータメンバーのプロパティを表示することによって、集計された子ビューを生成します。 デバッガーは、指定された式を評価し、その結果の子ノードを視覚化された型の子リストに追加します。
@@ -613,7 +616,7 @@ During debugging, you can select the magnifying glass icon next to the variable,
 </Type>
 ```
 
-派生クラスの視覚化の対応付けを無効にする **nd** 書式指定子がここで必要になります。 それ以外の場合、式 `*(CFrameworkElement*)this` を指定すると、`CPanel` の視覚化が再度適用されます。これは、既定の視覚化の種類の照合ルールでは、最も適切なものと見なされるためです。 **Nd**書式指定子を使用して、基底クラスの視覚化を使用するようにデバッガーに指示します。基底クラスに視覚化がない場合は、既定の展開を使用します。
+派生クラスの視覚化の対応付けを無効にする **nd** 書式指定子がここで必要になります。 それ以外の場合、`*(CFrameworkElement*)this` 式を使用すると、`CPanel` 視覚エフェクトが再度適用されます。これは、既定の視覚化の種類の一致ルールによって最適なものと見なされるためです。 **Nd**書式指定子を使用して、基底クラスの視覚化を使用するようにデバッガーに指示します。基底クラスに視覚化がない場合は、既定の展開を使用します。
 
 #### <a name="BKMK_Synthetic_Item_expansion"></a> Synthetic Item の展開
  `ExpandedItem` 要素は階層を排除することでデータ ビューを平坦化しますが、`Synthetic` ノードはその反対のことを行います。 これにより、式の結果ではない人工子要素を作成できます。 人工要素には、独自の子要素を含めることができます。 次の例では、 `Concurrency::array` 型の視覚化で `Synthetic` ノードを使用して、診断メッセージをユーザーに表示しています。
@@ -665,9 +668,9 @@ During debugging, you can select the magnifying glass icon next to the variable,
 </AutoVisualizer>
 ```
 
-- 属性ペアの `ServiceId` - `Id` `UIVisualizer`を識別します。 `ServiceId` は、ビジュアライザーパッケージが公開するサービスの GUID です。 `Id` はビジュアライザーを区別する一意の識別子で、サービスが複数のサービスを提供している場合に使用します。 前の例では、同じビジュアライザーサービスに2つのビジュアライザーが用意されています。
+- 属性ペアの `ServiceId` - `Id` `UIVisualizer`を識別します。 `ServiceId` は、ビジュアライザーパッケージが公開するサービスの GUID です。 `Id` は、サービスが複数を提供する場合にビジュアライザーを区別する一意の識別子です。 前の例では、同じビジュアライザーサービスに2つのビジュアライザーが用意されています。
 
-- `MenuName` 属性は、デバッガーの虫眼鏡アイコンの横にあるドロップダウンリストに表示されるビジュアライザー名を定義します。 (例:
+- `MenuName` 属性は、デバッガーの虫眼鏡アイコンの横にあるドロップダウンリストに表示されるビジュアライザー名を定義します。 例:
 
   ![UIVisualizer メニューのショートカットメニュー](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer メニューのショートカット メニュー")
 

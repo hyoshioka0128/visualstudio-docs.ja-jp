@@ -1,6 +1,6 @@
 ---
 title: 同期的に自動的に読み込む拡張機能
-ms.date: 02/16/2019
+ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: madskristensen
@@ -8,48 +8,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316713"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406640"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>同期的に自動的に読み込む拡張機能
 
-同期的に自動的に読み込む拡張機能では、Visual Studio のパフォーマンスに悪影響を及ぼすし、非同期 autoload を代わりに変換する必要があります。 Visual Studio 2019 Preview 2 以降は、拡張機能はされているときに同期的に読み込み、ユーザーは通知されます。 拡張機能は読み込むし、通常どおりに動作します。
+同期的に自動読み込みされた拡張機能は、Visual Studio のパフォーマンスに悪影響を及ぼし、代わりに非同期の自動読み込みを使用するように変換する必要があります。 既定では、Visual Studio 2019 は、任意の拡張機能から同期的に自動読み込みされたパッケージをブロックし、ユーザーに通知します。
 
-![拡張機能の互換性に関する警告](media/extension-compatibility-warning.png)
+![拡張機能の互換性に関する警告](media/extension-compatibility-warning-16-1.png.png)
 
-ユーザーは次のとおりです。
+次の操作を行うことができます。
 
-- をクリックして**詳細**この情報ページを表示します。
+- [同期自動読み込みを**許可**する] をクリックして、拡張機能を自動読み込みできるようにします。 Visual Studio のオプションでこの設定を変更するには、[環境]、[拡張機能] の順にクリックし、[拡張機能の同期自動読み込みを許可する] チェックボックスをオンにします。 
 
-- をクリックして**のパフォーマンスの管理**を開く、[パフォーマンス マネージャー ダイアログ](#performance-manager-dialog)拡張機能とツール windows パフォーマンスの問題を示すです。
+- **[パフォーマンスの管理]** をクリックして [[パフォーマンスマネージャー] ダイアログ](#performance-manager-dialog)を開き、拡張機能とツールウィンドウのパフォーマンスの問題を表示します。
 
-- をクリックして**次回からこのメッセージを表示しない**して通知を破棄します。 このオプションを選択すると、同期的に自動的に読み込む拡張機能からの今後のすべての通知も回避されます。 ユーザーは引き続き他の Visual Studio の機能について通知を取得します。
+- **[現在の拡張機能にこのメッセージを表示しない]** をクリックして通知を破棄し、インストール済みの既存の拡張からの今後の通知を防止します。 同期的に自動読み込みする新しい拡張機能を追加すると、この通知が再び表示されます。 その他の Visual Studio 機能に関する通知は引き続き表示されます。
 
-## <a name="performance-manager-dialog"></a>パフォーマンス マネージャー ダイアログ ボックス
+## <a name="performance-manager-dialog"></a>パフォーマンスマネージャーダイアログ
 
-![パフォーマンス マネージャー ダイアログ ボックス](media/performance-manager.png)
+![パフォーマンスマネージャーダイアログ](media/performance-manager.png)
 
-すべてのユーザー セッションにすべてのパッケージを同期的に読み込まれているすべての拡張機能が、**非推奨の Api**タブ。
+ユーザーセッションのすべてのパッケージを同期的に読み込んだすべての拡張機能は、 **[非推奨の api]** タブに表示されます。
 
-* クリックすること、**の詳細については、この問題は**非推奨の Api に関する情報を収集します。
-* ユーザーは、移行の進行状況のベンダー拡張機能を連絡することができます。
+* **この問題に関する詳細情報**をクリックすると、非推奨の api に関する詳細情報が収集されます。
+* 移行の進行状況については、拡張機能のベンダーにお問い合わせください。
 
-拡張機能の作成者は、移行する手順を確認できますパッケージで非同期 autoload を[AsyncPackage への移行](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)します。
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>グループポリシーを使用して同期自動読み込みの設定を指定する
 
-## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>グループ ポリシーを使用して同期 autoload 設定を指定します。
-
-既定では、Visual Studio のインストールのブロックの同期 autoload によって Visual Studio 2019 Update 1 を開始しています。 グループ ポリシーを有効にした場合は、個々 のコンピューターで同期の自動読み込みを許可する Visual Studio を構成できます。 これを行うには、次のキーでレジストリ ベースのポリシーを設定します。
+管理者は、グループポリシーを有効にして、同期自動読み込みを許可できます。 これを行うには、次のキーでレジストリ ベースのポリシーを設定します。
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
-エントリ =**許可**
+Entry =**許可**
 
 値 = (DWORD)
-* **0**は同期 autoload 許可されていません
-* **1**同期 autoload は許可されています。
+* **0**は同期自動読み込みは許可されていません
+* **1**同期自動読み込みが可能
 
-Visual Studio 2019 Update 1 での同期の自動読み込みの設定の詳細については、次を参照してください。、[同期 Autoload 動作](https://aka.ms/AA52xzw)ページ。
+## <a name="extension-authors"></a>拡張機能の作成者
+拡張機能の作成者は、「 [AsyncPackage への移行](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)」の手順に従って、パッケージを非同期自動読み込みに移行する方法を確認できます。
+
+## <a name="see-also"></a>関連項目
+Visual Studio 2019 での同期自動読み込みの設定の詳細については、「同期自動読み込みの[動作](https://aka.ms/AA52xzw)」ページを参照してください。

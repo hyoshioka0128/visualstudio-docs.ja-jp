@@ -2,17 +2,17 @@
 title: Directed Graph Markup Language (DGML) リファレンス
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983677"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596637"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Directed Graph Markup Language (DGML) リファレンス
 
@@ -33,15 +33,15 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    追加できる属性 (省略可能) は次のとおりです。
 
-   `Background` - マップの背景色
+   `Background`-マップの背景の色
 
-   `BackgroundImage` - マップの背景として使用するイメージ ファイルの場所。
+   `BackgroundImage`-マップの背景として使用するイメージファイルの場所。
 
-   `GraphDirection` - マップがツリー レイアウト (`Sugiyama`) に設定された場合に、ほとんどのリンクが指定方向 (`TopToBottom`、`BottomToTop`、`LeftToRight`、または `RightToLeft`) に向かうようにノードを配置します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
+   `GraphDirection`-マップがツリーレイアウト (`Sugiyama`) に設定されている場合、ほとんどのリンクが指定した方向 (`TopToBottom`、`BottomToTop`、`LeftToRight`、または `RightToLeft`) になるようにノードを配置します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
 
-   `Layout` - マップのレイアウトを `None`、`Sugiyama` (ツリー レイアウト)、`ForceDirected` (クイック クラスター)、または `DependencyMatrix` に設定します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
+   `Layout`-マップを、`None`、`Sugiyama` (ツリーレイアウト)、`ForceDirected` (クイッククラスター)、または `DependencyMatrix`の各レイアウトに設定します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
 
-   `NeighborhoodDistance` - マップがツリー レイアウトまたはクイック クラスター レイアウトに設定された場合に、選択したノードから指定されたリンク数 (1 ～ 7) 離れたノードのみ表示します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
+   `NeighborhoodDistance`-マップがツリーレイアウトまたはクイッククラスターレイアウトに設定されている場合、指定された数 (1-7) のリンクが選択したノードから離れているノードのみを表示します。 「[マップレイアウトの変更](../modeling/browse-and-rearrange-code-maps.md#Selecting)」を参照してください。
 
    例:
 
@@ -90,7 +90,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    この要素には、次の属性が必要です。
 
-   `Id` - ノードの一意の名前。`Label` 属性が別途指定されていない場合は、`Label` 属性の既定値です。 この名前は、名前を参照するリンクの `Source` 属性または `Target` 属性と一致する必要があります。
+   `Id`-個別の `Label` 属性が指定されていない場合に、ノードの一意の名前と `Label` 属性の既定値。 この名前は、名前を参照するリンクの `Source` 属性または `Target` 属性と一致する必要があります。
 
    追加できる属性 (省略可能) の一部を次に示します。
 
@@ -98,13 +98,13 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    スタイル属性。 「 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)」を参照してください。
 
-   `Category` - この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
+   `Category`-この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
 
-   `Property` - プロパティ値が同じ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
+   `Property`-同じプロパティ値を持つ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
 
    `Group` - ノードに他のノードが含まれている場合は、この属性を `Expanded` または `Collapsed` に設定して、そのコンテンツの表示と非表示を切り替えます。 `<Link/>` 属性を含み、親ノードをリンク元ノード、子ノードをリンク先ノードとして指定する `Category="Contains"` 要素が必要です。 「[グループコード要素](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)」を参照してください。
 
-   `Visibility` - この属性を `Visible`、`Hidden`、または `Collapsed` に設定します。 `System.Windows.Visibility`が使用されます。 「[ノードとリンクの非表示または表示](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)」を参照してください。
+   `Visibility`-この属性を `Visible`、`Hidden`、または `Collapsed`に設定します。 `System.Windows.Visibility`が使用されます。 「[ノードとリンクの非表示または表示](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)」を参照してください。
 
    `Reference` - この属性をドキュメントまたは URL へのリンクに設定します。 「[コード要素とリンクへのドキュメントまたは url のリンク」を](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)参照してください。
 
@@ -153,19 +153,19 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    この要素には、次の属性が必要です。
 
-   `Source` - リンク元ノード。
+   `Source`-リンクのソースノード
 
    `Target` - リンク先ノード。
 
    追加できる属性 (省略可能) の一部を次に示します。
 
-   `Label` - リンクの表示名。
+   `Label`-リンクの表示名
 
    スタイル属性。 「 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)」を参照してください。
 
-   `Category` - この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
+   `Category`-この属性を共有する要素を識別するカテゴリの名前。 詳細については、`<Category/>` 要素を参照してください。
 
-   `Property` - プロパティ値が同じ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
+   `Property`-同じプロパティ値を持つ要素を識別するプロパティの名前。 詳細については、`<Property/>` 要素を参照してください。
 
    例:
 
@@ -214,7 +214,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    `Label` - カテゴリのわかりやすい名前。
 
-   `BasedOn` - 現在の要素の `<Category/>` の継承元の親カテゴリ。
+   `BasedOn`-現在の要素の `<Category/>` を継承する親カテゴリ。
 
    この要素の例では、`FailedTest` カテゴリは、`Stroke` カテゴリから `PassedTest` 属性を継承します。 「 [DGML ファイルを編集してコードマップをカスタマイズ](../modeling/customize-code-maps-by-editing-the-dgml-files.md)する」の「階層カテゴリを作成するには」を参照してください。
 
@@ -265,9 +265,9 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 
    この要素には、次の属性が必要です。
 
-  - `Id` - プロパティの一意の名前。`Label` 属性が別途指定されていない場合は、`Label` 属性の既定値です。
+  - `Id`-個別の `Label` 属性が指定されていない場合に、プロパティの一意の名前と、`Label` 属性の既定値。
 
-  - `DataType` - プロパティに格納されるデータの型。
+  - `DataType`-プロパティによって格納されるデータの型
 
     プロパティを **[プロパティ]** ウィンドウに表示する場合は、`Label` プロパティを使用して、プロパティの表示名を指定します。
 

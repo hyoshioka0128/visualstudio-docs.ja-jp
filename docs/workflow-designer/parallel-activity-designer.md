@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650102"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593162"
 ---
 # <a name="parallel-activity-designer"></a>Parallel アクティビティ デザイナー
 
@@ -25,7 +25,7 @@ ms.locfileid: "72650102"
 
 <xref:System.Activities.Statements.Parallel> アクティビティは、子アクティビティを <xref:System.Activities.Statements.Parallel.Branches%2A> コレクションに格納します。 一部の子アクティビティがアイドル状態になる可能性がある場合は、<xref:System.Activities.Statements.Parallel> アクティビティの代わりに <xref:System.Activities.Statements.Sequence> アクティビティを使用してください。
 
-@No__t_0 アクティビティには、ユーザーが指定した Visual Basic 式を含む <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> プロパティがあります。 このプロパティは、各分岐の完了後に、<xref:System.Activities.Statements.Parallel> アクティビティによって評価されます。 **True**と評価された場合、<xref:System.Activities.Statements.Parallel> のアクティビティは、他の分岐を実行せずに完了します。 @No__t_0 が**True**と評価されない場合、そのすべての子アクティビティが完了した時点で <xref:System.Activities.Statements.Parallel> アクティビティが完了します。
+<xref:System.Activities.Statements.Parallel> アクティビティには、ユーザーが指定した Visual Basic 式を含む <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> プロパティがあります。 このプロパティは、各分岐の完了後に、<xref:System.Activities.Statements.Parallel> アクティビティによって評価されます。 **True**と評価された場合、<xref:System.Activities.Statements.Parallel> のアクティビティは、他の分岐を実行せずに完了します。 <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> が**True**と評価されない場合、そのすべての子アクティビティが完了した時点で <xref:System.Activities.Statements.Parallel> アクティビティが完了します。
 
 ### <a name="using-the-parallel-activity-designer"></a>Parallel アクティビティ デザイナーの使用
 
@@ -39,11 +39,11 @@ ms.locfileid: "72650102"
 
 次の表に、Parallel アクティビティのプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用状況|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は**Parallel**です。 この値は、必要に応じて、 **[プロパティ]** グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
+|<xref:System.Activities.Activity.DisplayName%2A>|[False]|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は**Parallel**です。 この値は、必要に応じて、 **[プロパティ]** グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|実行される子アクティビティのコレクションが格納されます。|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|分岐の完了後に評価されます。 **True**と評価された場合、スケジュールされた保留中の分岐は取り消されます。 このプロパティが設定されていない場合、または**False**に評価された場合、そのすべての子アクティビティが完了すると、アクティビティが完了します。 既定値は**null**です。|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|[False]|分岐の完了後に評価されます。 **True**と評価された場合、スケジュールされた保留中の分岐は取り消されます。 このプロパティが設定されていない場合、または**False**に評価された場合、そのすべての子アクティビティが完了すると、アクティビティが完了します。 既定値は **NULL**です。|
 
 ## <a name="see-also"></a>関連項目
 

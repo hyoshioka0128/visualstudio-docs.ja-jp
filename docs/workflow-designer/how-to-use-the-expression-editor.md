@@ -1,27 +1,27 @@
 ---
-title: ワークフローデザイナー-方法:式エディターを使用する
+title: 'ワークフローデザイナー-方法: 式エディターを使用する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc76139d6989421b49c8c80ef325b51a6934cb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aff5654214809cf2f57767005153ba557df487c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650271"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584544"
 ---
-# <a name="how-to-use-the-expression-editor"></a>方法: 式エディターを使用する
+# <a name="how-to-use-the-expression-editor"></a>式エディターを使用する方法
 
 式エディターは、式を入力および評価するために多くのワークフローアクティビティで使用されるワークフローデザイナーコントロールです。 式エディターでは、IntelliSense、色付け、ParamInfo、エラーの波線など、豊富な機能を備えた IDE 編集エクスペリエンスが提供されます。 入力した式は、コンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 エディターは、 **[式エディター]** ダイアログボックスとして開くこともできます。
 
-式は、引数またはプロパティにバインドされたリテラル値または Visual Basic コードです。 これらには、新しい値を生成するために操作と結合される値要素 (変数、定数、リテラル、プロパティなど) が含まれています。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、1つの等号 ("= =" ではなく "=") を使用して実行されます。ブール演算子は、記号 "& &" および "| |" ではなく "and" と "or" で、null の代わり**には使用されませ**ん. Visual Basic の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))」を参照してください。
+式は、引数またはプロパティにバインドされたリテラル値または Visual Basic コードです。 これらには、新しい値を生成するために操作と結合される値要素 (変数、定数、リテラル、プロパティなど) が含まれています。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、1つの等号 ("= =" ではなく "=") を使用して実行されます。ブール演算子は、記号 "& &" および "| |" ではなく "and" と "or" で、 **null**の代わり**には使用**されません。 Visual Basic の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))」を参照してください。
 
 **式エディター**は次のように動作します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72650271"
 
 3. <xref:System.Activities.Statements.Assign> アクティビティのアクティビティ デザイナーで、左側の式エディターをクリックします。
 
-     灰色のウォーターマーク文字列は、<xref:System.Activities.Statements.Assign> アクティビティ内の式エディターの既定のテキスト文字列 **> VB 式 \<Enter** **> \<To**します。
+     灰色のウォーターマークの文字列は、<xref:System.Activities.Statements.Assign> アクティビティの式エディターの既定のテキスト文字列 **> VB の式\<入力** **するために\<** します。
 
 4. 式を入力します。 文字列を入力する場合は、文字列を引用符で囲みます。 式の引数を変数にバインドする場合は、引用符を省略してください。
 

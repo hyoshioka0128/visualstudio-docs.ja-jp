@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597114"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 
-**[プロパティ]** ウィンドウ、ダイアログボックス、または変数デザイナーなどのデザイナーでは、データ型の一覧から **[型を参照]** を選択すると、 **[.Net 型の参照と選択]** ダイアログボックスが表示されます (省略形は "Type" と呼ばれます)。ブラウザー ")。 このダイアログ ボックスでは、アセンブリとプロジェクトのツリー表示から型を選択できます。
+**[プロパティ]** ウィンドウ、ダイアログボックス、または変数デザイナーなどのデザイナーで、データ型の一覧から **[型を参照]** を選択すると、 **[.Net 型の参照と選択]** ダイアログボックスが表示されます ("型ブラウザー" という省略形で参照されます)。 このダイアログ ボックスでは、アセンブリとプロジェクトのツリー表示から型を選択できます。
 
 このダイアログ ボックスは、次のようなさまざなユーザー シナリオで使用されます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "73189799"
 
 1. **[型名]** ボックスに、使用する型の名前を入力します。
 
-2. 次のいずれかの操作を行います。
+2. 以下のいずれかを実行します。
 
     - 使用する型の名前が **[型名]** ボックスのツリーに表示されたら、その型をダブルクリックして選択します。
 
@@ -63,9 +63,9 @@ ms.locfileid: "73189799"
 
 **[型名]** ボックスの型の一覧は、一致を検索するためにさらに文字を入力すると短くなります。 入力した文字列で始まる fullyqualified 名を持つ型、または入力した文字列で短い名前を持つ型のみが、フィルター処理されたリストに表示されます。
 
-(例:
+例:
 
-1. 入力**操作**は <xref:System.OperationCanceledException> と一致しますが、<xref:System.InvalidOperationException> は一致しません。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
+1. 入力**操作**は <xref:System.OperationCanceledException> と一致しますが、<xref:System.InvalidOperationException>は一致しません。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
 2. 型指定**ジェネリック**は <xref:System.GenericUriParser> に一致しますが、<xref:System.Collections.Generic> 名前空間の型には一致しません。 <xref:System.Collections.Generic> 名前空間の型を検索するには、名前空間の完全修飾名を入力します。
 

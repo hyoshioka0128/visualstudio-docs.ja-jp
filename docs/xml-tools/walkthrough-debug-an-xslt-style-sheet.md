@@ -3,17 +3,17 @@ title: XSLT スタイルシートのデバッグ
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604613"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592478"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイルシートのデバッグ
 
@@ -44,11 +44,11 @@ ms.locfileid: "72604613"
 
    - 12行目の任意の場所をクリックし、 **F9**キーを押します。
 
-   - @No__t_0 開始タグを右クリックし、 **[ブレークポイント]** を選択して**ブレークポイント  >  挿入**します。
+   - `xsl:if` 開始タグを右クリックし、 **[ブレークポイント]** を選択して**ブレークポイント > 挿入**します。
 
       ![Visual Studio で XSL ファイルにブレークポイントを挿入する](media/insert-breakpoint.PNG)
 
-6. メニューバーで  **XML**  >  **XSLT デバッグの開始** を選択します (または、F5 キーを押し +**F5**キーを押します)。
+6. メニューバーで  **XML** > **XSLT デバッグの開始** を選択します (または、F5 キーを押し+**F5**キーを押します)。
 
    デバッグプロセスが開始されます。
 
@@ -56,23 +56,23 @@ ms.locfileid: "72604613"
 
    **[自動変数]** 、 **[ローカル]** 、 **[ウォッチ 1]** の各ウィンドウは、Visual Studio ウィンドウの下部に表示されます。 [**ローカル] ウィンドウには、** すべてのローカル変数とその現在の値が表示されます。 ここには、スタイル シートで定義されている変数や、コンテキスト内に現在存在するノードを追跡するためにデバッガーが使用する変数なども表示されます。
 
-## <a name="watch-window"></a>[ウォッチ] ウィンドウ
+## <a name="watch-window"></a>監視ウィンドウ
 
 2つの変数を **[ウォッチ 1]** ウィンドウに追加して、入力ファイルが処理されるときに値を調べることができるようにします。 (ウォッチする変数が既に存在する場合は、 **[ローカル]** ウィンドウを使用して値を確認することもできます)。
 
-1. **[デバッグ]** メニューの [ **Windows**  > **watch** ] をクリックし  > **ウォッチ 1**をクリックします。
+1. **[デバッグ]** メニューの [ **Windows** > **watch** ] をクリックし > **ウォッチ 1**をクリックします。
 
    **[ウォッチ 1]** ウィンドウが表示されます。
 
 2. **[名前]** フィールドに「`$bookAverage`」**と入力し、enter キーを**押します。
 
-   @No__t_0 変数の値は、 **[値]** フィールドに表示されます。
+   `$bookAverage` 変数の値は、 **[値]** フィールドに表示されます。
 
 3. 次の行で、 **[名前]** フィールドに「`self::node()`」と入力し **、enter キーを押します。**
 
-   `self::node()` は、現在のコンテキスト ノードに評価される XPath 式です。 `self::node()` XPath 式の値は、最初の book ノードです。 この値は、変換処理の進行につれて変化します。
+   `self::node()` は、現在のコンテキストノードに評価される XPath 式です。 `self::node()` XPath 式の値は、最初の book ノードです。 この値は、変換処理の進行につれて変化します。
 
-4. [@No__t_0] ノードを展開し、[値の `price`] ノードを展開します。
+4. [`self::node()`] ノードを展開し、[値の `price`] ノードを展開します。
 
    ![Visual Studio での XSLT デバッグ時のウォッチウィンドウ](media/xslt-debugging-watch-window.png)
 
@@ -90,13 +90,13 @@ ms.locfileid: "72604613"
 
    2番目の book ノードは `xsl:if` 条件を満たしていないため、book ノードは*below-average*出力ファイルに追加されません。 デバッガーは、スタイルシートの `xsl:if` 要素に再度配置されるまで実行を続けます。 これで、デバッガーが*books.xml*ファイルの3番目の `book` ノードに配置されました。
 
-   **[ウォッチ 1]** ウィンドウで、`self::node()` の値が3番目の book ノードに変わります。 @No__t_0 要素の値を調べることにより、価格が平均値未満であることを確認できます。 @No__t_0 条件は成功します。
+   **[ウォッチ 1]** ウィンドウで、`self::node()` の値が3番目の book ノードに変わります。 `price` 要素の値を調べることにより、価格が平均値未満であることを確認できます。 `xsl:if` 条件は成功します。
 
 3. **F5** キーを押して続行します。
 
-   @No__t_0 条件が満たされたため、 *below-average*出力ファイルに3番目の書籍が追加されます。 XML ドキュメント内の書籍がすべて処理され、デバッガーが停止します。
+   `xsl:if` 条件が満たされたため、 *below-average*出力ファイルに3番目の書籍が追加されます。 XML ドキュメント内の書籍がすべて処理され、デバッガーが停止します。
 
-## <a name="sample-files"></a>サンプルファイル
+## <a name="sample-files"></a>サンプル ファイル
 
 このチュートリアルでは、次の 2 つのファイルを使用します。
 

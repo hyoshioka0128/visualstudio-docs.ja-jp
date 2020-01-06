@@ -4,27 +4,27 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83edb231819a47c3c8a6f7a1943ae9086e06467d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653883"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596672"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの配置
 
-任意のコンピューターで Visual Studio のカスタムディレクティブプロセッサを使用するには、このトピックで説明されているいずれかの方法で登録する必要があります。
+任意のコンピューターで Visual Studio のカスタム ディレクティブ プロセッサを使用するには、このトピックで説明する方法のいずれかによって登録する必要があります。
 
 次の方法があります。
 
-- [Visual Studio 拡張機能](../extensibility/shipping-visual-studio-extensions.md)。 これを使用すると、ディレクティブ プロセッサを自分のコンピューターと他のコンピューターの両方でインストールおよびアンインストールできます。 通常は、他の機能も同じ VSIX にパッケージ化します。
+- [Visual Studio 拡張機能](../extensibility/shipping-visual-studio-extensions.md) これを使用すると、ディレクティブ プロセッサを自分のコンピューターと他のコンピューターの両方でインストールおよびアンインストールできます。 通常は、他の機能も同じ VSIX にパッケージ化します。
 
-- [VSPackage](../extensibility/internals/vspackages.md)。 ディレクティブ プロセッサ以外の機能も含む VSPackage を定義する場合は、ディレクティブ プロセッサの便利な登録方法を利用できます。
+- [VSPackage](../extensibility/internals/vspackages.md) ディレクティブ プロセッサ以外の機能も含む VSPackage を定義する場合は、ディレクティブ プロセッサの便利な登録方法を利用できます。
 
 - レジストリ キーを設定する。 この方法では、ディレクティブ プロセッサのレジストリ エントリを追加します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "72653883"
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX でのディレクティブ プロセッサの配置
 
-カスタムディレクティブプロセッサを[Visual Studio 拡張機能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md)に追加できます。
+カスタム ディレクティブ プロセッサを、[Visual Studio 拡張機能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md) に追加することができます。
 
  .vsix ファイルに次の 2 つのアイテムが格納されていることを確認する必要があります。
 
@@ -48,29 +48,29 @@ ms.locfileid: "72653883"
 
 1. 新しい**VSIX プロジェクト**プロジェクトを作成します。
 
-2. **Source.extension.vsixmanifest**で、コンテンツの種類とサポートされているエディションを設定します。
+2. **Source.extension.vsixmanifest** のコンテンツの種類をサポートされているエディションに設定します。
 
-    1. VSIX マニフェストエディターの **[アセット]** タブで、 **[新規作成]** をクリックし、新しい項目のプロパティを設定します。
+    1. VVSIX マニフェスト エディターの **Assets** タブで、**New** を選択し、新しい項目のプロパティを設定します。
 
-         **コンテンツの種類** = **VSPackage**
+         **Content Type** = **VSPackage**
 
-         *現在のプロジェクト*\<**ソースプロジェクト** =  >
+         **Source Project** = \<*現在のプロジェクト*>
 
-    2. **[選択されたエディション]** をクリックし、ディレクティブプロセッサを使用できるようにするインストールの種類を確認します。
+    2. **Selected Editions** をクリックして、ディレクティブ プロセッサを使用できるようにしたいインストールの種類を確認します。
 
 3. .pkgdef ファイルを追加し、そのプロパティが VSIX に含まれるように設定します。
 
-    1. テキストファイルを作成し、*assemblyName*> \< という名前を指定します。
+    1. テキスト ファイルを作成し、名前を \<*assemblyName*>.pkgdef にします。
 
          \<*assemblyName*> は通常、プロジェクトの名前と同じです。
 
     2. ソリューション エクスプローラーでこのファイルを選択し、そのプロパティを次のように設定します。
 
-         **ビルドアクション** = **コンテンツ**
+         **[ビルド アクション]**  =  **[コンテンツ]**
 
-         **出力ディレクトリにコピー**  = **常にコピー**する
+         **出力ディレクトリにコピー** = **常にコピー**する
 
-         **VSIX に含める** = **True**
+         **Include in VSIX** = **True**
 
     3. VSIX の名前を設定し、ID が一意であることを確認します。
 
@@ -89,11 +89,11 @@ ms.locfileid: "72653883"
 
 5. 以下の参照をプロジェクトに追加します。
 
-    - **VisualStudio。 \* ます。0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **VisualStudio.... \*. 0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    - **VisualStudio.... \* Vshost.exe. 0**
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6. カスタム ディレクティブ プロセッサ クラスをプロジェクトに追加します。
 
@@ -101,7 +101,7 @@ ms.locfileid: "72653883"
 
 #### <a name="to-install-the-custom-directive-processor"></a>カスタム ディレクティブ プロセッサをインストールするには
 
-1. Windows エクスプローラーで、ビルドディレクトリ (通常は bin\Debug または bin\Release) を開きます。
+1. エクスプローラーで、ビルド ディレクトリ (通常は bin\Debug または bin\Release) を開きます。
 
 2. 別のコンピューターにディレクティブ プロセッサをインストールする場合は、そのコンピューターに .vsix ファイルをコピーします。
 
@@ -113,9 +113,9 @@ ms.locfileid: "72653883"
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>カスタム ディレクティブ プロセッサをアンインストールするか、一時的に無効にするには
 
-1. Visual Studio の **[ツール]** メニューで、 **[拡張機能マネージャー]** をクリックします。
+1. Visual Studio の **ツール** メニューで、**拡張機能マネージャー** をクリックします。
 
-2. ディレクティブプロセッサが含まれている VSIX を選択し、 **[アンインストール]** または **[無効]** をクリックします。
+2. ディレクティブ プロセッサを含む VSIX を選択し、 **[アンインストール]** または **[無効化]** をクリックします。
 
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>VSIX に含まれるディレクティブ プロセッサのトラブルシューティング
  ディレクティブ プロセッサが機能しない場合は、次のヒントを参考にしてください。
@@ -124,7 +124,7 @@ ms.locfileid: "72653883"
 
 - `IsDirectiveSupported` メソッドは、`true` の名前が渡されたときに `CustomDirective` を返す必要があります。
 
-- 拡張機能マネージャーで拡張機能が表示されないが、システムでインストールできない場合は、 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ Extensions \\** から拡張機能を削除します。
+- 拡張機能マネージャーで拡張機能が表示されず、システムがインストールを許可しない場合、 **%localappdata%\Microsoft\VisualStudio\\\*.0\Extensions\\** から拡張機能を削除してください.
 
 - .vsix ファイルを開き、そのコンテンツを調べます。 .vsix ファイルを開くには、ファイル名拡張子を .zip に変更します。 このファイルに .dll、.pkgdef、および extension.vsixmanifest の各ファイルが含まれていることを確認します。 extension.vsixmanifest ファイルでは、SupportedProducts ノードに適切なリストが含まれ、なおかつ Content ノードに VsPackage ノードが含まれている必要があります。
 
@@ -156,25 +156,25 @@ ms.locfileid: "72653883"
  これは、カスタム ディレクティブ プロセッサをインストールする方法としては、最も優先順位の低い方法です。 この方法では、ディレクティブ プロセッサを簡単に有効化および無効化できないうえに、ディレクティブ プロセッサを他のユーザーに配布することもできません。
 
 > [!CAUTION]
-> レジストリを誤って編集すると、システムに重大な障害をもたらす可能性があります。 レジストリを変更する前に、コンピューター上の重要なデータはすべてバックアップしてください。
+> レジストリを誤って編集すると、システムに重大な障害が発生する場合があります。 レジストリを変更する前に、コンピューター上の重要なデータはすべてバックアップしてください。
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>レジストリ キーを設定してディレクティブ プロセッサを登録するには
 
-1. `regedit` を実行します。
+1. `regedit`を実行します。
 
 2. レジストリ エディターで、次のキーに移動します。
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* .0 \ .0\ Texttemplating\directiveprocessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\\\*.0 \ .0\ Texttemplating\directiveprocessors**
 
-    Visual Studio の実験用バージョンにディレクティブプロセッサをインストールする場合は、"11.0" の後に "Exp" を挿入します。
+    Visual Studio の実験的なバージョンでディレクティブ プロセッサをインストールする場合は、"11.0" の後に "Exp" を挿入します。
 
 3. ディレクティブ プロセッサ クラスと同じ名前のレジストリ キーを追加します。
 
-   - レジストリツリーで、 **[DirectiveProcessors]** ノードを右クリックし、 **[新規作成]** をポイントして、 **[キー]** をクリックします。
+   - レジストリ ツリーの **DirectiveProcessors** ノードで右クリックし、 **[新規]** をポイントし、 **[キー]** をクリックします。
 
 4. 新しいノードで、クラスとコードベース、またはクラスとアセンブリの文字列値を次の表に従って追加します。
 
-   1. 作成したノードを右クリックして **[新規]** をポイントし、 **[文字列値]** をクリックします。
+   1. 作成したノードを右クリックし、 **[新規]** をポイントし、 **[文字列値]** をクリックします。
 
    2. 値の名前を編集します。
 
@@ -182,19 +182,19 @@ ms.locfileid: "72653883"
 
    カスタム ディレクティブ プロセッサが GAC 内にない場合は、レジストリ サブキーを次の表に従って設定します。
 
-|名|[種類]|データ|
+|[名前]|の型|データ|
 |-|-|-|
-|(既定)|REG_SZ|(値が設定されていません)|
-|インスタンス|REG_SZ|**\<Namespace 名 >。\<Class 名 >**|
-|CodeBase|REG_SZ|**アセンブリ名 < \\ パス > \<Your \>**|
+|(既定)|REG_SZ|(値の設定なし)|
+|&lt;クラス&gt; のすべてのオブジェクト|REG_SZ|**\<Namespace 名>.\<クラス名>**|
+|CodeBase|REG_SZ|**\<パス>\\<アセンブリ名\>**|
 
  アセンブリが GAC に含まれている場合は、レジストリ サブキーを次の表に従って設定します。
 
-|名|[種類]|データ|
+|[名前]|の型|データ|
 |-|-|-|
-|(既定)|REG_SZ|(値が設定されていません)|
-|インスタンス|REG_SZ|**完全修飾クラス名**を \< >|
-|Assembly|REG_SZ|**GAC にアセンブリ名を**\< >|
+|(既定)|REG_SZ|(値の設定なし)|
+|&lt;クラス&gt; のすべてのオブジェクト|REG_SZ|**完全修飾クラス名**を \<>|
+|Assembly|REG_SZ|\<**GAC におけるアセンブリ名**>|
 
 ## <a name="see-also"></a>関連項目
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642719"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586810"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>データを検索する Windows フォームを作成する
 
@@ -43,7 +43,7 @@ ms.locfileid: "72642719"
 
 - フォームにパラメーターを入力し、パラメーター化されたクエリを実行します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -127,7 +127,7 @@ ms.locfileid: "72642719"
 
      **FillByCityToolStrip** がフォームに追加されます。
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
 
 アプリケーションを実行すると、フォームが開き、パラメーターを入力として取得できるようになります。
 
@@ -137,7 +137,7 @@ ms.locfileid: "72642719"
 
      データグリッドには、条件を満たす顧客が設定されます。 この例では、 **[City]** 列の値が **London** の顧客だけがデータ グリッドに表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 アプリケーションの要件に応じて、パラメーター付きのフォームを作成した後に、追加の操作を実行できます。 このチュートリアルで行うことができる拡張には次のものがあります。
 

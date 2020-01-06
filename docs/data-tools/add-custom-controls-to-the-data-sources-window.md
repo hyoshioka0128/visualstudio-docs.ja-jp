@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648917"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587109"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>[データ ソース] ウィンドウにカスタム コントロールを追加する
 
@@ -39,7 +39,7 @@ ms.locfileid: "72648917"
 2. **[データソース]** ウィンドウで、ウィンドウに追加したデータソースの一部であるアイテムをクリックし、アイテムのドロップダウンメニューをクリックします。
 
    > [!TIP]
-   > [データソース] ウィンドウが開いていない場合は、[**他の Windows**  > **データソース**を**表示** > ] を選択して開きます。
+   > [データソース] ウィンドウが開いていない場合は、[**他の Windows** > **データソース**を**表示** > ] を選択して開きます。
 
 3. ドロップダウンメニューで、 **[カスタマイズ]** をクリックします。 次のいずれかのダイアログボックスが表示されます。
 
@@ -78,9 +78,9 @@ ms.locfileid: "72648917"
 
     |属性|説明|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|この属性は、<xref:System.Windows.Forms.TextBox> などのデータの1つの列 (またはプロパティ) を表示する単純なコントロールに実装します。|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|@No__t_0 などのデータのリスト (またはテーブル) を表示するコントロールに対して、この属性を実装します。|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|この属性は、データのリスト (またはテーブル) を表示するコントロールに実装しますが、1つの列またはプロパティ (<xref:System.Windows.Forms.ComboBox> など) を提示する必要もあります。|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|この属性は、<xref:System.Windows.Forms.TextBox>などのデータの1つの列 (またはプロパティ) を表示する単純なコントロールに実装します。|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|<xref:System.Windows.Forms.DataGridView>などのデータのリスト (またはテーブル) を表示するコントロールに対して、この属性を実装します。|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|この属性は、データのリスト (またはテーブル) を表示するコントロールに実装しますが、1つの列またはプロパティ (<xref:System.Windows.Forms.ComboBox>など) を提示する必要もあります。|
 
 2. Windows フォームの場合は、 **[オプション]** ダイアログボックスで **[データ UI のカスタマイズ]** ページを開きます。 または、WPF の場合は、 **[コントロールのバインドのカスタマイズ]** ダイアログボックスを開きます。 詳細については、「[データ型のバインド可能なコントロールの一覧をカスタマイズ](#customize-the-bindable-controls-list)する」を参照してください。
 

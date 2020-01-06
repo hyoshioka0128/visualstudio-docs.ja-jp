@@ -3,17 +3,17 @@ title: XML スキーマを作成する
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592777"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>方法: XML ドキュメントから XML スキーマを作成する
 
@@ -33,7 +33,7 @@ Xml エディターでは、xml ドキュメントから XML スキーマ定義�
 
 1. Visual Studio で XML ファイルを開きます。
 
-2. メニューバーで、[ **XML**  > **スキーマの作成**] を選択します。
+2. メニューバーで、[ **XML** > **スキーマの作成**] を選択します。
 
    Xml ファイル内の名前空間ごとに、XML スキーマドキュメントが作成されて開きます。 各スキーマは、一時的にその他のファイルとして開かれます。 スキーマは、ディスクに保存するか、プロジェクトに追加するか、破棄することができます。
 

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589696"
 ---
 # <a name="customize-the-properties-window"></a>プロパティウィンドウをカスタマイズする
 
@@ -26,7 +26,7 @@ Visual Studio のドメイン固有言語 (DSL) で、[プロパティ] ウィ�
 
 DSL 定義でプロパティの名前を設定すると、その表示名が自動的に名前のコピーに設定されます。 "Futex" のような Pascal 形式の名前を記述した場合、表示名には自動的にスペース "燃料ゲージ" が含まれます。 ただし、表示名を明示的に別の値に設定することもできます。
 
-**説明**。 ドメインプロパティの説明は、次の2つの場所に表示されます。
+**説明**です。 ドメインプロパティの説明は、次の2つの場所に表示されます。
 
 - ユーザーがプロパティを選択したときに、[プロパティ] ウィンドウの下部に表示されます。 これを使用すると、プロパティが表す内容をユーザーに説明することができます。
 
@@ -40,7 +40,7 @@ DSL 定義でプロパティの名前を設定すると、その表示名が自�
 
 DSL 定義でシェイプクラスを右クリックし、 **[公開の追加]** をポイントして、機能を選択します。
 
-図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および**FillGradientMode**の各プロパティを公開できます。 コネクタでは、**Textcolor**、**ダッシュスタイル**、および**太さ**の各プロパティ `,`**色**を公開できます。 ダイアグラムでは、 **FillColor**プロパティと**textcolor**プロパティを公開できます。
+図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および**FillGradientMode**の各プロパティを公開できます。 コネクタでは、 **Textcolor**、**ダッシュスタイル**、および**太さ**の各プロパティ`,`**色**を公開できます。 ダイアグラムでは、 **FillColor**プロパティと**textcolor**プロパティを公開できます。
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>転送: 関連する要素のプロパティを表示します。
 
@@ -52,7 +52,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 ユーザーが図形またはコネクタ、またはエクスプローラーで要素を選択すると、次のプロパティがプロパティウィンドウに表示されます。
 
-- モデル要素のドメインクラスで定義されているドメインプロパティ。基本クラスで定義されているものも含まれます。 例外として、`False` に**参照できるように設定し**たドメインプロパティがあります。
+- モデル要素のドメインクラスで定義されているドメインプロパティ。基本クラスで定義されているものも含まれます。 例外として、`False`に**参照できるように設定し**たドメインプロパティがあります。
 
 - 多重度が 0 ..1 のリレーションシップによってリンクされる要素の名前。 これにより、リレーションシップのコネクタマッピングが定義されていない場合でも、必要に応じてリンクされた要素を表示するための便利な方法が提供されます。
 
@@ -62,7 +62,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 ### <a name="add-property-forwarding"></a>プロパティ転送の追加
 
-プロパティを転送するには、ドメイン型記述子を定義します。 2つのドメインクラス間にドメインリレーションシップがある場合は、ドメイン型記述子を使用して、最初のクラスのドメインプロパティを2番目のドメインクラスのドメインプロパティの値に設定できます。 たとえば、**書籍**ドメインクラスと**作成者**ドメインクラスとの間にリレーションシップがある場合は、ドメイン型記述子を使用して、ユーザーが次のように、書籍の**作成者**の**Name**プロパティをプロパティウィンドウに表示させることができます。ブックを選択します。
+プロパティを転送するには、ドメイン型記述子を定義します。 2つのドメインクラス間にドメインリレーションシップがある場合は、ドメイン型記述子を使用して、最初のクラスのドメインプロパティを2番目のドメインクラスのドメインプロパティの値に設定できます。 たとえば、**書籍**ドメインクラスと**作成者**ドメインクラスとの間にリレーションシップがある場合、ドメイン型記述子を使用して、ユーザーが本を選択したときに本の**著者**の**Name**プロパティをプロパティウィンドウに表示させることができます。
 
 > [!NOTE]
 > プロパティ転送は、ユーザーがモデルを編集している場合にのみプロパティウィンドウに影響します。 受信側クラスのドメインプロパティは定義されません。 DSL 定義またはプログラムコードの他の部分で転送されたドメインプロパティにアクセスするには、転送する要素にアクセスする必要があります。
@@ -146,9 +146,9 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 プロパティの属性を設定するには、プロパティウィンドウの**カスタム属性**エントリを使用します。
 
-@No__t_0 の型は、2番目のパラメーターで指定した型から派生している必要があります。 2番目のパラメーターは <xref:System.Drawing.Design.UITypeEditor> または <xref:System.ComponentModel.ComponentEditor> のいずれかである必要があります。 詳細については、「<xref:System.ComponentModel.EditorAttribute>」を参照してください。
+`AnEditor` の型は、2番目のパラメーターで指定した型から派生している必要があります。 2番目のパラメーターは <xref:System.Drawing.Design.UITypeEditor> または <xref:System.ComponentModel.ComponentEditor>のいずれかである必要があります。 詳細については、「 <xref:System.ComponentModel.EditorAttribute>」を参照してください。
 
-独自のエディターまたは .NET エディター (<xref:System.Windows.Forms.Design.FileNameEditor> や <xref:System.Drawing.Design.ImageEditor> など) を指定できます。 たとえば、次の手順を使用して、ユーザーがファイル名を入力できるプロパティを設定します。
+独自のエディターまたは .NET エディター (<xref:System.Windows.Forms.Design.FileNameEditor> や <xref:System.Drawing.Design.ImageEditor>など) を指定できます。 たとえば、次の手順を使用して、ユーザーがファイル名を入力できるプロパティを設定します。
 
 #### <a name="define-a-file-name-domain-property"></a>ファイル名ドメインプロパティの定義
 
@@ -169,7 +169,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
     1. CTRL キーを押しながら F5 キーを押すか、F5 キーを押します。 デバッグソリューションで、テストファイルを開きます。 ドメインクラスの要素を作成し、それを選択します。
 
-    2. プロパティウィンドウで、ドメイン プロパティを選択します。 [値] フィールドには、省略記号 **[...]** が表示されます。
+    2. プロパティウィンドウで、ドメイン プロパティを選択します。 [値] フィールドは、省略記号を示しています **[...]** 。
 
     3. 省略記号をクリックします。 ファイルのダイアログボックスが表示されます。 ファイルを選択して、ダイアログボックスを閉じます。 これで、ファイルパスがドメインプロパティの値になりました。
 
@@ -177,18 +177,18 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 独自のエディターを定義できます。 これは、ユーザーが定義した型を編集できるようにするか、標準型を特別な方法で編集するために行います。 たとえば、式を表す文字列をユーザーが入力できるようにすることができます。
 
-@No__t_0 から派生したクラスを記述することによって、エディターを定義します。 クラスは次をオーバーライドする必要があります。
+<xref:System.Drawing.Design.UITypeEditor>から派生したクラスを記述することによって、エディターを定義します。 クラスは次をオーバーライドする必要があります。
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>、ユーザーと対話し、プロパティ値を更新します。
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>、エディターでダイアログを開くか、ドロップダウンメニューを提供するかを指定します。
 
-プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには、`GetPaintValueSupported` をオーバーライドし、`PaintValue` します。  詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
+プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには、`GetPaintValueSupported`をオーバーライドし、`PaintValue`します。  詳細については、「 <xref:System.Drawing.Design.UITypeEditor>」を参照してください。
 
 > [!NOTE]
 > **Dsl**プロジェクト内の別のコードファイルにコードを追加します。
 
-(例:
+例:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -210,7 +210,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
+詳細については、「 <xref:System.Drawing.Design.UITypeEditor>」を参照してください。
 
 ## <a name="provide-a-drop-down-list-of-values"></a>値のドロップダウンリストを指定する
 
@@ -226,7 +226,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-<xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl**プロジェクトの別のファイルにコードを追加します。 (例:
+<xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl**プロジェクトの別のファイルにコードを追加します。 例:
 
 ```csharp
 /// <summary>
