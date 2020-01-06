@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72577280"
 ---
 # <a name="the-precision-is-out-of-range"></a>有効桁数の範囲を超えています。
-関数**toPrecision**に無効な引数を渡そうとしました。 **ToPrecision**の引数は、1 ~ 21 (両端を含む) でなければなりません。  
+関数 **Number.prototype.toPrecision** は、無効な引数を受け取ることができません。 関数 **ToPrecision** への引数は、1 ～ 21 の範囲内である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
