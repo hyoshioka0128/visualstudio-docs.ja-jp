@@ -26,9 +26,9 @@ ms.locfileid: "72575645"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 示されている行番号でプログラムの構文を再確認します。  
+- 示されている行番号のプログラムの構文を再確認します。  
   
-- 誘導かっこまたは中かっこを検索します。  
+- かっこや中かっこの使用に間違いがないかを確認します。  
   
 ## <a name="see-also"></a>関連項目  
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)
