@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648899"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587057"
 ---
 # <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 
@@ -46,7 +46,7 @@ Visual Studio の .NET data tools のコンテキストでは、データ*ソー
 作成したデータソースは、 **[データソース]** ツールウィンドウに表示されます。
 
 > [!TIP]
-> **[データソース]** ウィンドウを開くには、プロジェクトが開いていることを確認し、 **Shift**キーを押し +**Alt** +**D**キーを押すか、[ > **その他の Windows**  > **データソース** **] を**クリックします。
+> **[データソース]** ウィンドウを開くには、プロジェクトが開いていることを確認し、 **Shift**キーを押し+**Alt**+**D**キーを押すか、[ > **その他の Windows** > **データソース** **] を**クリックします。
 
 データソースは、 **[データソース]** ウィンドウからフォームデザインサーフェイスまたはコントロールにドラッグできます。 これにより、データストアのデータを表示する定型コードが生成されます。
 
@@ -66,7 +66,7 @@ Visual Studio の .NET data tools のコンテキストでは、データ*ソー
 
 データソースとして Entity Framework モデルを作成するには:
 
-1. **Entity Data Model ウィザード**を実行してエンティティクラスを作成します。 **[プロジェクト]** を選択し  > **新しい項目** > **ADO.NET Entity Data Model**に追加します。
+1. **Entity Data Model ウィザード**を実行してエンティティクラスを作成します。 **[プロジェクト]** を選択し > **新しい項目** > **ADO.NET Entity Data Model**に追加します。
 
    ![新しい Entity Framework モデルプロジェクト項目](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -80,7 +80,7 @@ Visual Studio の .NET data tools のコンテキストでは、データ*ソー
 
 ## <a name="data-source-for-a-service"></a>サービスのデータソース
 
-サービスからデータソースを作成するには、**データソース構成ウィザード**を実行し、**サービス**データソースの種類を選択します。 これは、 **[サービス参照の追加]** ダイアログボックスへのショートカットに過ぎません。このダイアログボックスにアクセスするには、**ソリューションエクスプローラー**でプロジェクトを右クリックし、 **[サービス参照の追加]** を選択します。
+サービスからデータソースを作成するには、**データソース構成ウィザード**を実行し、**サービス**データソースの種類を選択します。 これのショートカットに過ぎない、**サービス参照の追加**でプロジェクトを右クリックしてアクセスすることもできますこのダイアログ ボックスで、**ソリューション エクスプ ローラー**を選択すると**サービス参照の追加**。
 
 サービスからデータ ソースを作成すると、Visual Studio によりサービス参照がプロジェクトに追加されます。 また、Visual Studio では、サービスから返されるオブジェクトに対応するプロキシオブジェクトも作成されます。 たとえば、データセットを返すサービスは、プロジェクト内でデータセットとして表現され、特定の型を返すサービスは、プロジェクト内で、返される型として表現されます。
 
