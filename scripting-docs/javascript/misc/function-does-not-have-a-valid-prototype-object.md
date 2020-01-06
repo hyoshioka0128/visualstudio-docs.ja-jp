@@ -29,5 +29,5 @@ ms.locfileid: "72574604"
 - 関数の `prototype` プロパティが有効な [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] オブジェクトを参照していることを確認します。  
   
 ## <a name="see-also"></a>参照  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の   
+ [Function オブジェクト](../../javascript/reference/function-object-javascript.md)  
  [prototype プロパティ (Object)](../../javascript/reference/prototype-property-object-javascript.md)
