@@ -34,10 +34,10 @@ ms.locfileid: "72572352"
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- **this** に値を割り当てないようにします。 インスタンス化されたオブジェクトのプロパティまたはメソッドにアクセスするには、ドット演算子(例: **circle. radius**) を使用します。
+- **this** に値を割り当てないようにします。インスタンス化されたオブジェクトのプロパティまたはメソッドにアクセスするには、ドット演算子(例: **circle. radius**) を使用します。
 
   > [!NOTE]
-  > ユーザーが作成した変数に名前を指定する**ことはでき**ません。[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] の予約語です。
+  > ユーザーが作成した変数に **this** という名前を付けることはできません。これは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] の予約語です。
 
 ## <a name="see-also"></a>関連項目
 
