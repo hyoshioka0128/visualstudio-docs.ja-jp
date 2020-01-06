@@ -29,6 +29,7 @@ JScript ステートメントが、JScript の 1 つ以上の文法規則に違�
 - 示されている行番号のプログラムの構文を再確認します。
   
 - かっこや中かっこの使用に間違いがないかを確認します。
+
   
 ## <a name="see-also"></a>関連項目  
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)
