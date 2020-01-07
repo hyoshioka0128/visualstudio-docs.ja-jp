@@ -198,6 +198,6 @@ cd ../
 
 ## <a name="see-also"></a>関連項目
 
-- [Vue の概要ガイド](https://vuejs.org/v2/guide)。
-- [Vue CLI プロジェクト](https://github.com/vuejs/vue-cli)。
-- [webpack 構成ドキュメント](https://webpack.js.org/configuration/)。
+- [Vue の概要ガイド](https://vuejs.org/v2/guide)
+- [Vue CLI プロジェクト](https://github.com/vuejs/vue-cli)
+- [webpack 構成ドキュメント](https://webpack.js.org/configuration/)
