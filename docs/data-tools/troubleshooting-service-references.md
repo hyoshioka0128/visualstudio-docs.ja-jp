@@ -11,17 +11,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28ff14f10cd6ad5612551bb65b7b17f0280358f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639596"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586121"
 ---
 # <a name="troubleshoot-service-references"></a>サービス参照をトラブルシューティングする
 
@@ -29,13 +29,13 @@ ms.locfileid: "72639596"
 
 ## <a name="error-returning-data-from-a-service"></a>サービスからデータを取得中にエラーが発生した
 
-サービスから `DataSet` または `DataTable` を返すと、"受信メッセージの最大サイズクォータを超えました" という例外が発生することがあります。 既定では、一部のバインドの `MaxReceivedMessageSize` プロパティは比較的小さい値に設定されており、サービス拒否攻撃への影響を制限します。 この値は、例外を回避するために増やすことができます。 詳細については、「<xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
+サービスから `DataSet` または `DataTable` を返すと、"受信メッセージの最大サイズクォータを超えました" という例外が発生することがあります。 既定では、一部のバインドの `MaxReceivedMessageSize` プロパティは比較的小さい値に設定されており、サービス拒否攻撃への影響を制限します。 この値は、例外を回避するために増やすことができます。 詳細については、「 <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
 
 このエラーを修復するには:
 
 1. **ソリューションエクスプローラー**で、 *app.config*ファイルをダブルクリックして開きます。
 
-2. @No__t_0 プロパティを見つけて、それより大きい値に変更します。
+2. `MaxReceivedMessageSize` プロパティを見つけて、それより大きい値に変更します。
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>ソリューションでサービスが見つかりません
 
@@ -60,9 +60,9 @@ ms.locfileid: "72639596"
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>生成されたクラス設定のアクセスレベルは無効です
 
-**[サービス参照の構成]** ダイアログボックスの **[生成されたクラスのアクセスレベル]** オプションを **[内部]** または **[Friend]** に設定すると、必ずしも機能しないことがあります。 このオプションは、ダイアログボックスで設定されているように見えますが、結果として得られるサポートクラスは `Public` のアクセスレベルで生成されます。
+**[サービス参照の構成]** ダイアログボックスの **[生成されたクラスのアクセスレベル]** オプションを **[内部]** または **[Friend]** に設定すると、必ずしも機能しないことがあります。 このオプションは、ダイアログボックスで設定されているように見えますが、結果として得られるサポートクラスは `Public`のアクセスレベルで生成されます。
 
-これは、<xref:System.Xml.Serialization.XmlSerializer> を使用してシリアル化されたものなど、特定の種類の既知の制限です。
+これは、<xref:System.Xml.Serialization.XmlSerializer>を使用してシリアル化されたものなど、特定の種類の既知の制限です。
 
 ## <a name="error-debugging-service-code"></a>サービスコードのデバッグエラー
 
@@ -90,7 +90,7 @@ ms.locfileid: "72639596"
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>ブラウザーに WCF Data Services が表示されない
 
-@No__t_0 のデータの XML 表現を表示しようとすると、Internet Explorer によってデータが RSS フィードとして誤って解釈されることがあります。 RSS フィードを表示するオプションが無効になっていることを確認します。
+[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]のデータの XML 表現を表示しようとすると、Internet Explorer によってデータが RSS フィードとして誤って解釈されることがあります。 RSS フィードを表示するオプションが無効になっていることを確認します。
 
 このエラーを解決するには、RSS フィードを無効にします。
 

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652297"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590593"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>依存関係図へのカスタム プロパティの追加
 
@@ -63,9 +63,9 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 [Ilayerelement](/previous-versions/ff644511(v=vs.140))またはその派生クラスには、次のようなプロパティを定義できます。
 
-- `ILayerModel` - モデル
+- `ILayerModel`-モデル
 
-- `ILayer` - 各レイヤー
+- `ILayer`-各レイヤー
 
 - `ILayerDependencyLink` - レイヤー間のリンク
 
@@ -73,7 +73,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
 
 次のコードは、標準的なカスタム プロパティ記述子です。 この例では、Boolean プロパティがレイヤー モデル (`ILayerModel`) で定義されており、ユーザーはこれを使用してカスタム検証メソッドに値を提供できます。
 

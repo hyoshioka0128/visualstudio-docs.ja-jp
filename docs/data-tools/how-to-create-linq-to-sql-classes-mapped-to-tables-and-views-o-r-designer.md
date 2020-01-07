@@ -3,21 +3,21 @@ title: LINQ to SQL クラスをテーブル/ビューにマップする (O/R デ
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a06d162a9f439690753f23f74ab9923c3201716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b0e3103c1b4faa62ff82dafe8ba4aa0ef9193f06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586498"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>方法: テーブルとビューにマップされた LINQ to SQL クラスを作成する (O/R デザイナー)
 
-データベース テーブルおよびビューにマップされた [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] クラスは、*エンティティ クラス*と呼ばれます。 エンティティ クラスはレコードにマップされますが、エンティティ クラスの個々のプロパティはレコードを構成する個々の列にマップされます。 テーブルまたはビューを**サーバーエクスプローラー**から、または[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)に**データベースエクスプローラー**ドラッグして、データベースのテーブルまたはビューに基づくエンティティクラスを作成します。 **O/R デザイナー**は、クラスを生成し、特定の [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性を適用して [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 機能 (<xref:System.Data.Linq.DataContext> のデータ通信と編集機能) を有効にします。 @No__t_0 クラスの詳細については、「 [LINQ to SQL オブジェクトモデル](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)」を参照してください。
+データベース テーブルおよびビューにマップされた [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] クラスは、*エンティティ クラス*と呼ばれます。 エンティティ クラスはレコードにマップされますが、エンティティ クラスの個々のプロパティはレコードを構成する個々の列にマップされます。 テーブルまたはビューを**サーバーエクスプローラー**から、または[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)に**データベースエクスプローラー**ドラッグして、データベースのテーブルまたはビューに基づくエンティティクラスを作成します。 **O/R デザイナー**は、クラスを生成し、特定の [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性を適用して [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 機能 (<xref:System.Data.Linq.DataContext>のデータ通信と編集機能) を有効にします。 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] クラスの詳細については、「 [LINQ to SQL オブジェクトモデル](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)」を参照してください。
 
 > [!NOTE]
 > **O/R デザイナー**は、1:1 のマッピング関係のみをサポートするため、単純なオブジェクトリレーショナルマッパーです。 つまり、エンティティ クラスには、データベース テーブルまたはビューとの 1:1 のマッピング関係しか持たせることができません。 1 つのエンティティ クラスを複数のテーブルにマップするなど、複雑なマッピングはサポートされていません。 ただし、複数の関連テーブルを結合するビューにエンティティ クラスをマップすることはできます。

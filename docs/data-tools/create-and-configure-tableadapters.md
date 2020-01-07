@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648601"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586784"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tableadapter の作成および構成
 
@@ -51,10 +51,10 @@ Tableadapter とそれに関連する Datatable を作成または編集する�
 
 - また、TableAdapter の**SELECT**、 **INSERT**、 **UPDATE**、および**DELETE**の各コマンドに対して、既存のストアドプロシージャを実行することもできます。 たとえば、 **Update**コマンドに割り当てられているストアドプロシージャは、`TableAdapter.Update()` メソッドが呼び出されたときに実行されます。
 
-選択したストアド プロシージャのパラメーターを、データ テーブルの対応する列に割り当てます。 たとえば、ストアドプロシージャがテーブルの `CompanyName` 列に渡す `@CompanyName` という名前のパラメーターを受け取る場合は、`@CompanyName` パラメーターの**Source 列**を `CompanyName` に設定します。
+選択したストアド プロシージャのパラメーターを、データ テーブルの対応する列に割り当てます。 たとえば、ストアドプロシージャがテーブルの `CompanyName` 列に渡す `@CompanyName` という名前のパラメーターを受け取る場合は、`@CompanyName` パラメーターの**Source 列**を `CompanyName`に設定します。
 
 > [!NOTE]
-> SELECT コマンドに割り当てられているストアドプロシージャは、ウィザードの次の手順で名前を指定した TableAdapter のメソッドを呼び出すことによって実行されます。 既定のメソッドは `Fill` であるため、通常は SELECT プロシージャを実行するために使用されるコードが `TableAdapter.Fill(tableName)` ます。 既定の名前を `Fill` から変更する場合は、`Fill` を割り当てた名前に置き換え、"TableAdapter" を TableAdapter の実際の名前 (たとえば、`CustomersTableAdapter`) に置き換えます。
+> SELECT コマンドに割り当てられているストアドプロシージャは、ウィザードの次の手順で名前を指定した TableAdapter のメソッドを呼び出すことによって実行されます。 既定のメソッドは `Fill`であるため、通常は SELECT プロシージャを実行するために使用されるコードが `TableAdapter.Fill(tableName)`ます。 既定の名前を `Fill`から変更する場合は、`Fill` を割り当てた名前に置き換え、"TableAdapter" を TableAdapter の実際の名前 (たとえば、`CustomersTableAdapter`) に置き換えます。
 
 - **[更新を直接データベースに送信するメソッドを作成する]** オプションを選択することは、`GenerateDBDirectMethods` プロパティを true に設定することと同じです。 元の SQL ステートメントに十分な情報が含まれていないか、クエリが更新可能なクエリではない場合、このオプションは使用できません。 たとえば、**結合**クエリや、単一の (スカラー) 値を返すクエリで、このような状況が発生する可能性があります。
 
@@ -74,7 +74,7 @@ TableAdapter の main `Fill` メソッドに対して行った変更は、関連
 
 Tableadapter クエリの構成ウィザードを使用すると、TableAdapter の追加のクエリを作成および編集できます。 これらの追加のクエリは、スカラー値を返さない限り、テーブルスキーマに準拠している必要があります。  各追加クエリには、指定した名前が付いています。
 
-次の例は、`FillByCity` という名前の追加のクエリを呼び出す方法を示しています。
+次の例は、`FillByCity`という名前の追加のクエリを呼び出す方法を示しています。
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
@@ -82,7 +82,7 @@ Tableadapter クエリの構成ウィザードを使用すると、TableAdapter 
 
 1. **データセット デザイナー**でご自分のデータセットを開きます。
 
-2. 新しいクエリを作成する場合は、**ツールボックス**の **[データセット]** タブから**クエリ**オブジェクトを <xref:System.Data.DataTable> にドラッグするか、TableAdapter のショートカットメニューから **[クエリの追加]** を選択します。 **クエリ**オブジェクトを**データセットデザイナー**の空の領域にドラッグして、関連付けられた <xref:System.Data.DataTable> を含まない TableAdapter を作成することもできます。 これらのクエリは、単一の (スカラー) 値を返すことも、データベースに対して UPDATE、INSERT、または DELETE コマンドを実行することもできます。
+2. 新しいクエリを作成する場合は、**ツールボックス**の **[データセット]** タブから**クエリ**オブジェクトを <xref:System.Data.DataTable>にドラッグするか、TableAdapter のショートカットメニューから **[クエリの追加]** を選択します。 **クエリ**オブジェクトを**データセットデザイナー**の空の領域にドラッグして、関連付けられた <xref:System.Data.DataTable>を含まない TableAdapter を作成することもできます。 これらのクエリは、単一の (スカラー) 値を返すことも、データベースに対して UPDATE、INSERT、または DELETE コマンドを実行することもできます。
 
 3. **[データ接続の選択]** 画面で、クエリが使用する接続を選択または作成します。
 
@@ -110,7 +110,7 @@ Tableadapter クエリの構成ウィザードを使用すると、TableAdapter 
 
      グローバルクエリを追加するには、 **[ツールボックス]** の **[データセット]** タブから**データセットデザイナー**の空の領域に**クエリ**オブジェクトをドラッグします。
 
-- @No__t_0 など、目的のタスクを実行するクエリを指定します。
+- `SELECT COUNT(*) AS CustomerCount FROM Customers`など、目的のタスクを実行するクエリを指定します。
 
     > [!NOTE]
     > **クエリ**オブジェクトを**データセットデザイナー**に直接ドラッグすると、スカラー (単一) 値のみを返すメソッドが作成されます。 選択したクエリまたはストアドプロシージャで複数の値が返される場合がありますが、ウィザードによって作成されるメソッドは、1つの値のみを返します。 たとえば、クエリは、返されたデータの最初の行の最初の列を返す場合があります。

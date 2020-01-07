@@ -3,17 +3,17 @@ title: DataContext メソッド (O-R デザイナー)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e81f2337931f565e0068a852bf9b8284350690c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b9d322ea9c805b7fc1ce55dbf93b72b29958af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648541"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586706"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext メソッド (O/R デザイナー)
 
@@ -26,7 +26,7 @@ ms.locfileid: "72648541"
 ストアドプロシージャおよび関数にマップされる <xref:System.Data.Linq.DataContext> メソッドは、 **O/R デザイナー**の **[メソッド]** ペインに表示されます。 **[メソッド]** ペインは、 **[エンティティ]** ペイン (メインのデザイン サーフェイス) の横に表示されているペインです。 **メソッド**ペインには、 **O/R デザイナー**を使用して作成したすべての <xref:System.Data.Linq.DataContext> メソッドが一覧表示されます。 既定では、**メソッド**ペインは空です。ストアドプロシージャまたは関数を**サーバーエクスプローラー**または**データベースエクスプローラー**から**O/R デザイナー**にドラッグして <xref:System.Data.Linq.DataContext> メソッドを作成し、**メソッド**ペインにデータを設定します。 詳細については、「[方法: ストアドプロシージャおよび関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)」を参照してください。
 
 > [!NOTE]
-> メソッドペインを開いて閉じます。そのためには、 **O/R デザイナー**を右クリックし、[**メソッドペインの非表示]** または **[メソッドペインの表示]** をクリックするか、キーボードショートカットの**CTRL** +**1**を使用します。
+> メソッドペインを開いて閉じます。そのためには、 **O/R デザイナー**を右クリックし、[**メソッドペインの非表示]** または **[メソッドペインの表示]** をクリックするか、キーボードショートカットの**CTRL**+**1**を使用します。
 
 ## <a name="two-types-of-datacontext-methods"></a>2 種類の DataContext メソッド
 
@@ -34,7 +34,7 @@ DataContext メソッドは、データベース内のストアド プロシー�
 
 - 1 つ以上の結果セットを返す <xref:System.Data.Linq.DataContext> メソッド
 
-   この種類の <xref:System.Data.Linq.DataContext> メソッドは、アプリケーションでデータベース内のストアド プロシージャおよび関数を実行し、結果を返すことだけが必要な場合に作成します。 詳細については、「[方法: ストアドプロシージャおよび関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)」、「ISingleResult \<T >」、および「<xref:System.Data.Linq.IMultipleResults>」を参照してください。
+   この種類の <xref:System.Data.Linq.DataContext> メソッドは、アプリケーションでデータベース内のストアド プロシージャおよび関数を実行し、結果を返すことだけが必要な場合に作成します。 詳細については、「[方法: ストアドプロシージャおよび関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)」、「ISingleResult\<t >」、および「<xref:System.Data.Linq.IMultipleResults>」を参照してください。
 
 - 結果セットを返さない <xref:System.Data.Linq.DataContext> メソッド (特定のエンティティ クラスの挿入、更新、削除など)
 

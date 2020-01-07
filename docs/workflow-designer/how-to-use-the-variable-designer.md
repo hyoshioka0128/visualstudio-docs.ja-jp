@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650250"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593175"
 ---
 # <a name="how-to-use-the-variable-designer"></a>変数デザイナーを使用する方法
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650250"
 
 3. デザインキャンバスの左下隅にある **[変数]** ボタンをクリックして、変数デザイナーを開きます。 変数デザイナーが表示されます。
 
-4. **[変数の作成]** という名前の空の行をクリックします。 次の既定値を使用して新しい変数を含む新しい行が追加されます **。ここで**、x は整数であり、x は、**一意の変数名を作成**するために自動的にインクリメントされる1の整数です。**スコープ**のを入力し、**シーケンス**を入力します。 **既定**では、値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
+4. **[変数の作成]** という名前の空の行をクリックします。 次の既定値を使用して新しい変数を含む新しい行が追加されます **。ここで**、x は整数です。ここで、x は、一意の変数名を作成するために自動的にインクリメントされる整数、**変数型**の場合は**String** 、**スコープ**の場合は**シーケンス**です。 **既定**では、値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
 
     > [!NOTE]
     > 変数を削除するには、変数をクリックして選択し、 **del**キーを押します。

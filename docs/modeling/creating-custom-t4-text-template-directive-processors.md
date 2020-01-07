@@ -4,25 +4,25 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 836e2c24d9f236c7b87dfff60b934221b7645f1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654063"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597179"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する
 
-*テキストテンプレート変換プロセス*では、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 *テキストテンプレート変換エンジン*はプロセスを制御し、エンジンはテキストテンプレート変換ホストと1つ以上のテキストテンプレート*ディレクティブプロセッサ*を操作してプロセスを完了します。 詳細については、「[テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
+*テキストテンプレート変換プロセス*では、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 *テキストテンプレート変換エンジン*はプロセスを制御し、エンジンはテキストテンプレート変換ホストと1つ以上のテキストテンプレート*ディレクティブプロセッサ*を操作してプロセスを完了します。 詳細については、次を参照してください。 [テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)
 
 カスタム ディレクティブ プロセッサを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> を継承するクラスを作成します。
 
-これらの2つの違いは、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> は、ユーザーからパラメーターを取得し、テンプレートの出力ファイルを生成するコードを生成するために必要な最小限のインターフェイスを実装することです。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> は、要求/提供デザインパターンを実装します。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> は、`requires` と `provides` の2つの特別なパラメーターを処理します。  たとえば、カスタムディレクティブプロセッサは、ユーザーからのファイル名を受け取り、ファイルを開いて読み取り、そのファイルのテキストを `fileText` という名前の変数に格納する場合があります。 @No__t_0 クラスのサブクラスは、`requires` パラメーターの値としてユーザーからファイル名を受け取り、`provides` パラメーターの値としてテキストを格納する変数の名前を受け取る場合があります。 このプロセッサは、ファイルを開いて読み取り、指定した変数にファイルのテキストを格納します。
+これらの2つの違いは、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> は、ユーザーからパラメーターを取得し、テンプレートの出力ファイルを生成するコードを生成するために必要な最小限のインターフェイスを実装することです。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> は、要求/提供デザインパターンを実装します。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> は、`requires` と `provides`の2つの特別なパラメーターを処理します。  たとえば、カスタムディレクティブプロセッサは、ユーザーからのファイル名を受け取り、ファイルを開いて読み取り、そのファイルのテキストを `fileText`という名前の変数に格納する場合があります。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> クラスのサブクラスは、`requires` パラメーターの値としてユーザーからファイル名を受け取り、`provides` パラメーターの値としてテキストを格納する変数の名前を受け取る場合があります。 このプロセッサは、ファイルを開いて読み取り、指定した変数にファイルのテキストを格納します。
 
 Visual Studio でテキストテンプレートからカスタムディレクティブプロセッサを呼び出す前に、それを登録する必要があります。
 
@@ -46,7 +46,7 @@ Visual Studio でテキストテンプレートからカスタムディレクテ
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>カスタムディレクティブプロセッサの主要部分
 
-ディレクティブプロセッサを開発するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> のいずれかから継承するクラスを作成する必要があります。
+ディレクティブプロセッサを開発するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>のいずれかから継承するクラスを作成する必要があります。
 
 実装する必要がある最も重要な `DirectiveProcessor` メソッドは次のとおりです。
 

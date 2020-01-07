@@ -42,24 +42,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642116"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586719"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 
 > [!NOTE]
 > データセットと関連クラスは、アプリケーションがデータベースから切断されている間に、アプリケーションがメモリ内のデータを処理できるようにする、2000年より前のレガシ .NET テクノロジです。 これらは、ユーザーがデータを変更し、変更をデータベースに保存できるようにするアプリケーションに特に役立ちます。 データセットは非常に優れたテクノロジであることが実証されていますが、新しい .NET アプリケーションでは Entity Framework を使用することをお勧めします。 Entity Framework では、オブジェクトモデルとして表形式データを操作するためのより自然な方法が提供されます。これにより、プログラミングインターフェイスがより簡単になります。
 
-@No__t_0 オブジェクトは、実質的にはミニデータベースであるメモリ内オブジェクトです。 これには、`DataTable`、`DataColumn`、および `DataRow` オブジェクトが含まれており、開いている接続を維持しなくても、1つまたは複数のデータベースのデータを格納および変更できます。 データセットは、データへの変更に関する情報を保持するため、アプリケーションが再接続されると、更新プログラムを追跡してデータベースに送り返すことができます。
+`DataSet` オブジェクトは、実質的にはミニデータベースであるメモリ内オブジェクトです。 これには、`DataTable`、`DataColumn`、および `DataRow` オブジェクトが含まれており、開いている接続を維持しなくても、1つまたは複数のデータベースのデータを格納および変更できます。 データセットは、データへの変更に関する情報を保持するため、アプリケーションが再接続されると、更新プログラムを追跡してデータベースに送り返すことができます。
 
 データセットと関連クラスは、.NET API の <xref:System.Data?displayProperty=fullName> 名前空間で定義されています。 ADO.NET を使用して、コード内でデータセットを動的に作成および変更できます。 このセクションのドキュメントでは、Visual Studio デザイナーを使用してデータセットを操作する方法について説明します。 デザイナーで作成されたデータセットは、 **TableAdapter**オブジェクトを使用してデータベースとやり取りします。 プログラムによって作成されるデータセットは、 **DataAdapter**オブジェクトを使用します。 プログラムによるデータセットの作成の詳細については、「 [dataadapter And datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)」を参照してください。
 

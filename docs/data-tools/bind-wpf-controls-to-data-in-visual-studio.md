@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924524"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586953"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 
@@ -50,14 +50,14 @@ Visual Studio でデータバインドコントロールを作成する方法に
 
 次の表に、 **[データソース]** ウィンドウで、Visual Studio がデータソースの種類ごとに生成する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] とコードを示します。
 
-| データ ソース | コントロールをデータ ソースにバインドする XAML の生成 | データ ソースにデータを読み込むコードの生成 |
+| [データ ソース] | コントロールをデータ ソースにバインドする XAML の生成 | データ ソースにデータを読み込むコードの生成 |
 | - | - | - |
-| データセット | [はい] | [はい] |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [はい] | [はい] |
-| [サービス] | [はい] | Ｘ |
-| Object | [はい] | Ｘ |
+| データセット | ○ | ○ |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | ○ | ○ |
+| サービス | ○ | いいえ |
+| オブジェクト | ○ | いいえ |
 
-### <a name="datasets"></a>データセット
+### <a name="datasets"></a>[データセット]
 
 **[データソース]** ウィンドウからデザイナーにテーブルまたは列をドラッグすると、Visual Studio によって、次の操作を実行する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] が生成されます。
 
@@ -79,7 +79,7 @@ Visual Studio は、分離コード ファイルに次の変更も加えます�
 
 Visual Studio は、分離コード ファイルに次の変更も加えます。
 
-- デザイナーにドラッグされたエンティティ (または、デザイナーにドラッグされたプロパティを含むエンティティ) のクエリを返す新しいメソッドを追加する。 新しいメソッドには `Get<EntityName>Query` という名前が付いています。 `\<EntityName>` はエンティティの名前です。
+- デザイナーにドラッグされたエンティティ (または、デザイナーにドラッグされたプロパティを含むエンティティ) のクエリを返す新しいメソッドを追加する。 新しいメソッドには `Get<EntityName>Query`という名前が付いています。 `\<EntityName>` はエンティティの名前です。
 
 - コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベントハンドラーは `Get<EntityName>Query` メソッドを呼び出して、エンティティにデータを格納し、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得してから、最初のデータ項目を現在の項目にします。 <xref:System.Windows.FrameworkElement.Loaded> イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
 

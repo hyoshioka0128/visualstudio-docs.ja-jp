@@ -2,24 +2,22 @@
 title: データアクセスとツール
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807055"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587096"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
 
@@ -35,7 +33,7 @@ JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では
 
 **Microsoft Azure**
 
-- SQL Database
+- SQL データベース
 - Azure Cosmos DB
 - ストレージ (blob、テーブル、キュー、ファイル)
 - SQL Data Warehouse
@@ -67,18 +65,18 @@ JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では
 
 ::: moniker range="vs-2017"
 
-多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の NuGet パッケージマネージャー (**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージの管理**) を使用して、オファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらの製品を参照するには、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、[ > **ツール**] の **[拡張機能と更新プログラム]** に移動して、ダイアログボックスの左側のウィンドウで **[オンライン]** を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
+多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の NuGet パッケージマネージャー (**ツール** > **nuget パッケージマネージャー** > **ソリューションの nuget パッケージの管理**) を使用して、オファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらの製品を参照するには、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、[ > **ツール**] の **[拡張機能と更新プログラム]** に移動して、ダイアログボックスの左側のウィンドウで **[オンライン]** を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の NuGet パッケージマネージャー (**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージの管理**) を使用して、オファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらのオファリングを参照するには、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、 **[拡張]** 機能  >  拡張 **[機能の管理]** の順に移動して、ダイアログボックスの左側のウィンドウで **[オンライン]** を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
+多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の NuGet パッケージマネージャー (**ツール** > **nuget パッケージマネージャー** > **ソリューションの nuget パッケージの管理**) を使用して、オファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらのオファリングを参照するには、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、 **[拡張]** 機能 > 拡張 **[機能の管理]** の順に移動して、ダイアログボックスの左側のウィンドウで **[オンライン]** を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
 
 ::: moniker-end
 
 > [!NOTE]
-> SQL Server 2005 の延長サポートは、2016年4月12日に終了しました。 Visual Studio 2015 以降のデータツールが SQL Server 2005 と引き続き動作することは保証されていません。 詳細については、 [SQL Server 2005 のサポート終了](https://www.microsoft.com/sql-server/sql-server-2005)に関するお知らせを参照してください。
+> SQL Server 2005 の延長サポートは 2016 年 4 月 12 日で終了しました。 Visual Studio 2015 以降のデータツールが SQL Server 2005 と引き続き動作することは保証されていません。 詳細については、 [SQL Server 2005 のサポート終了](https://www.microsoft.com/sql-server/sql-server-2005)に関するお知らせを参照してください。
 
 ## <a name="net-languages"></a>.NET 言語
 
@@ -106,7 +104,7 @@ ADO.NET で使用するデータベースには、カスタム*ADO.NET データ
 
 [データセット](../data-tools/dataset-tools-in-visual-studio.md)3つのモデリングテクノロジの中で最も古いもの。 これは主に、大量のデータを処理したり、複雑なクエリや変換を実行したりしない "フォームオーバーデータ" アプリケーションを迅速に開発するために設計されています。 DataSet オブジェクトは、.NET オブジェクトよりはるかに多くの SQL database オブジェクトに似た DataTable オブジェクトと DataRow オブジェクトで構成されています。 SQL データソースに基づく比較的単純なアプリケーションの場合でも、データセットが適している可能性があります。
 
-これらのテクノロジを使用する必要はありません。 特にパフォーマンスが重要な場合は、DataReader オブジェクトを使用してデータベースを読み取り、必要な値を List \<T > などのコレクションオブジェクトにコピーするだけで済みます。
+これらのテクノロジを使用する必要はありません。 特にパフォーマンスが重要な場合には、DataReader オブジェクトを使用してデータベースを読み取り、必要な値を List\<T > などのコレクションオブジェクトにコピーするだけで済みます。
 
 ## <a name="native-c"></a>ネイティブ C++
 
@@ -116,7 +114,7 @@ C++rest サービスを使用するプログラムは、 [ C++ rest SDK](https:/
 
 C++Microsoft Azure Storage で動作するプログラムでは、 [Microsoft Azure Storage クライアント](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)を使用できます。
 
-データモデリング &mdash;Visual Studio では、のC++ORM レイヤーは提供されていません。 [Odbc](https://www.codesynthesis.com/products/odb/)は、の広く普及してC++いるオープンソースの ORM です。
+Visual Studio&mdash;のデータモデリングでは、のC++ORM レイヤーは提供されていません。 [Odbc](https://www.codesynthesis.com/products/odb/)は、の広く普及してC++いるオープンソースの ORM です。
 
 アプリからC++データベースに接続する方法の詳細については、「[用C++Visual Studio data tools ](../data-tools/visual-studio-data-tools-for-cpp.md)」を参照してください。 レガシビジュアルC++データアクセステクノロジの詳細については、「[データアクセス](/cpp/data/data-access-in-cpp)」を参照してください。
 
@@ -134,24 +132,24 @@ Python アプリケーションを作成するには、 [Visual Studio で pytho
 
 ## <a name="related-topics"></a>関連トピック
 
-[MICROSOFT AI プラットフォーム](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;Provides、Cortana Analytics Suite やモノのインターネットのサポートなど、microsoft のインテリジェントクラウドの概要を説明します。
+[MICROSOFT AI platform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;には、Cortana Analytics Suite やモノのインターネットのサポートなど、microsoft のインテリジェントクラウドの概要が記載されています。
 
-[Microsoft Azure Storage](/azure/storage/) &mdash;Describes Azure Storage、および Azure blob、テーブル、キュー、およびファイルを使用してアプリケーションを作成する方法について説明します。
+[Microsoft Azure Storage](/azure/storage/)&mdash;では Azure Storage について説明し、Azure blob、テーブル、キュー、およびファイルを使用してアプリケーションを作成する方法について説明します。
 
-[Azure SQL Database](/azure/sql-database/) &mdash;Describes、サービスとしてのリレーショナルデータベースである Azure SQL Database に接続する方法を説明します。
+[Azure SQL Database](/azure/sql-database/)&mdash;では、サービスとしてのリレーショナルデータベースである Azure SQL Database に接続する方法について説明します。
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)は、データに接続されたアプリケーションとデータベースの設計、探索、テスト、および配置を簡素化するツールを &mdash;Describes します。
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;では、データに接続されたアプリケーションとデータベースの設計、探索、テスト、および配置を簡素化するツールについて説明します。
 
-[ADO.NET](/dotnet/framework/data/adonet/index) &mdash; ADO.NET のアーキテクチャについて説明します。また、ADO.NET のクラスを使用してアプリケーション データを管理し、データ ソースおよび XML と対話する方法についても説明します。
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash; ADO.NET のアーキテクチャについて説明します。また、ADO.NET のクラスを使用してアプリケーション データを管理し、データ ソースおよび XML と対話する方法についても説明します。
 
-[ADO.NET Entity Framework](/ef/ef6/)は、開発者がリレーショナルデータベースに対して直接ではなく、概念モデルに対してプログラミングできるデータアプリケーションを作成する方法を &mdash;Describes ます。
+[ADO.NET Entity Framework](/ef/ef6/)&mdash;では、開発者がリレーショナルデータベースに対して直接ではなく、概念モデルに対してプログラミングを行うことができるデータアプリケーションを作成する方法について説明します。
 
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] を使用して、web 上または[Open Data Protocol (OData)](https://www.odata.org/)を実装するイントラネットにデータサービスを配置する方法について説明します。
 
-[Office ソリューションのデータ](../vsto/data-in-office-solutions.md)&mdash;Contains、office ソリューションでのデータの動作について説明するトピックへのリンクを示します。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
+[Office ソリューション&mdash;のデータ](../vsto/data-in-office-solutions.md)には、office ソリューションでのデータの動作について説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 
-[LINQ (統合言語クエリ)](/dotnet/csharp/linq/)には、および Visual Basic にC#組み込まれているクエリ機能 &mdash;Describes、リレーショナルデータベース、XML ドキュメント、データセット、およびメモリ内コレクションに対してクエリを実行するための共通のモデルがあります。
+[LINQ (統合言語クエリ)](/dotnet/csharp/linq/)&mdash;は、と Visual Basic にC#組み込まれているクエリ機能、およびリレーショナルデータベース、XML ドキュメント、データセット、およびメモリ内コレクションに対してクエリを実行するための一般的なモデルについて説明します。
 
-[Visual Studio の Xml ツール](../xml-tools/xml-tools-in-visual-studio.md)では、xml データの操作、XSLT のデバッグ、.net xml 機能、xml クエリのアーキテクチャを &mdash;Discusses ます。
+[Visual Studio&mdash;の Xml ツール](../xml-tools/xml-tools-in-visual-studio.md)では、xml データの操作、XSLT のデバッグ、.net XML 機能、xml クエリのアーキテクチャについて説明しています。
 
-[Xml ドキュメントとデータ](/dotnet/standard/data/xml/index)&mdash;Provides、.NET で xml ドキュメントとデータを操作する包括的で統合された一連のクラスの概要を説明します。
+[Xml ドキュメントとデータ](/dotnet/standard/data/xml/index)&mdash;では、.NET で xml ドキュメントとデータを操作する包括的で統合された一連のクラスについて概要を説明します。

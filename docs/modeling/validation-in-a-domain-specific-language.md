@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748168"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594007"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>ドメイン固有言語における検証
 ドメイン固有言語 (DSL) の作成者は、検証制約を定義して、ユーザーが作成したモデルが意味を持つことを確認できます。 たとえば、DSL でユーザーが人々とその先祖の家系図を描くことができる場合、子の誕生日が親の誕生日よりも後であることを確認する制約を作成できます。
@@ -58,7 +58,7 @@ ms.locfileid: "72748168"
 
    2. DSL エクスプローラーで、 **[エディター]** ノードを展開し、 **[検証]** を選択します。
 
-   3. プロパティウィンドウで、 **[使用]** プロパティを `true` に設定します。 これらのプロパティをすべて設定すると利便性が最高になります。
+   3. プロパティウィンドウで、 **[使用]** プロパティを `true`に設定します。 これらのプロパティをすべて設定すると利便性が最高になります。
 
    4. **ソリューションエクスプローラー**ツールバーの **[すべてのテンプレートの変換]** をクリックします。
 
@@ -82,7 +82,7 @@ ms.locfileid: "72748168"
 
     ValidationCategories はメソッドが実行されるタイミングを指定します。
 
-   (例:
+   例:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  このコードについては次の点に注意してください。
 
-- 検証メソッドをドメイン クラスまたはドメイン リレーションシップに追加できます。 これらの型のコードは、 **Code\Domain \*** に含まれています。
+- 検証メソッドをドメイン クラスまたはドメイン リレーションシップに追加できます。 これらの型のコードは、 **Code\Domain\*** に含まれています。
 
 - 各検証メソッドはそのクラスおよびサブクラスのすべてのインスタンスに適用されます。 ドメイン リレーションシップの場合、各インスタンスは 2 つのモデル要素間のリンクです。
 
@@ -144,7 +144,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>検証カテゴリ
  <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 属性で、検証メソッドをいつ実行するかを指定します。
 
-|カテゴリ|実行|
+|[カテゴリ]|実行|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|ユーザーが検証メニュー コマンドを呼び出すとき。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|モデル ファイルが開くとき。|
@@ -177,7 +177,7 @@ public partial class Person
 
  欠点は組み合わされたメソッドが管理しにくいことと、すべての制約が同じ `ValidationCategories` を含む必要があることです。 したがって、可能であれば、各制約を別々のメソッドに維持することをお勧めします。
 
- **コンテキストキャッシュ内の値を渡します。** コンテキスト パラメーターは任意の値を配置可能なディクショナリを持っています。 このディクショナリは検証が実行中保持されます。 たとえば、特定の検証メソッドはコンテキスト内でエラー カウントを維持し、繰り返しのメッセージでエラー ウィンドウがあふれることを防ぐために使用できます。 (例:
+ **コンテキストキャッシュ内の値を渡します。** コンテキスト パラメーターは任意の値を配置可能なディクショナリを持っています。 このディクショナリは検証が実行中保持されます。 たとえば、特定の検証メソッドはコンテキスト内でエラー カウントを維持し、繰り返しのメッセージでエラー ウィンドウがあふれることを防ぐために使用できます。 例:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  ドメイン リレーションシップのロールの多重度を 1..* または 1..1 に設定し、ユーザーがこのリレーションシップのリンクを作成しない場合、検証エラー メッセージが表示されます。
 
- たとえば、DSL に "Person" と "PersonLivesInTown" というクラスがあるとします。このリレーションシップは、町の役割でリレーションシップ**1.. \\** * と関係しています。次に、町のない人物ごとにエラーメッセージが表示されます。
+ たとえば、DSL に "Person" と "PersonLivesInTown" というクラスがあるとします。このリレーションシップは、町の役割でリレーションシップ**1..\\** * と関係しています。次に、町のない人物ごとにエラーメッセージが表示されます。
 
 ## <a name="running-validation-from-program-code"></a>プログラム コードからの検証の実行
  ValidationController をアクセスまたは作成することにより検証を実行できます。 エラーウィンドウでユーザーにエラーを表示する場合は、ダイアグラムの DocData にアタッチされている ValidationController を使用します。 たとえば、メニュー コマンドを作成する場合、コマンド セット クラスで `CurrentDocData.ValidationController` を使用できます。
@@ -213,7 +213,7 @@ partial class MyLanguageCommandSet
 
  詳細については、「[方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
- 別個の検証コントローラーを作成して、独自にエラーを管理することもできます。 (例:
+ 別個の検証コントローラーを作成して、独自にエラーを管理することもできます。 例:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -327,9 +327,9 @@ validationController.ValidateCustom
 
  ただし、これらの手法は推奨されません。 通常、無効なモデルの修正方法をユーザーに決めてもらう方が適切です。
 
- **変更を調整して、モデルを有効に復元します。** たとえば、ユーザーが許容される最大値を超えてプロパティを設定した場合、プロパティを最大値にリセットできます。 そのためには、規則を定義します。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+ **変更を調整して、モデルを有効に復元します。** たとえば、ユーザーが許容される最大値を超えてプロパティを設定した場合、プロパティを最大値にリセットできます。 そのためには、規則を定義します。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
 
- **無効な変更が試行された場合は、トランザクションをロールバックします。** この目的のために規則を定義することもできますが、場合によっては、プロパティハンドラー **OnValueChanging ()** をオーバーライドしたり、トランザクションをロールバックするための `OnDeleted().` などのメソッドをオーバーライドしたり、`this.Store.TransactionManager.CurrentTransaction.Rollback().` を使用したりすることができます。詳細については、「ドメインのプロパティ」を参照してください。 [値の変更ハンドラー](../modeling/domain-property-value-change-handlers.md)。
+ **無効な変更が試行された場合は、トランザクションをロールバックします。** この目的に対してルールを定義することもできますが、場合によっては、プロパティハンドラ**OnValueChanging ()** をオーバーライドしたり、`this.Store.TransactionManager.CurrentTransaction.Rollback().` トランザクションをロールバックするための `OnDeleted().` などのメソッドをオーバーライドしたりすることができます。詳細については、「[ドメインプロパティ値の変更ハンドラー](../modeling/domain-property-value-change-handlers.md)」を参照してください。
 
 > [!WARNING]
 > 変更が調整またはロールバックされたことをユーザーが認識できるようにします。 たとえば、`System.Windows.Forms.MessageBox.Show("message").` を使用します。

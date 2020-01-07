@@ -2,17 +2,17 @@
 title: ダイアグラムへの背景イメージの設定
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8806571939cb057852ddd9cca971f9415339ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748248"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591958"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>ダイアグラムへの背景イメージの設定
 Visual Studio の視覚化およびモデリング SDK では、カスタムコードを使用して、生成されたデザイナーの背景イメージを設定できます。

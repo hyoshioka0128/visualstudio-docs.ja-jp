@@ -7,17 +7,17 @@ helpviewer_keywords:
 - database compatibility
 - databases for Visual Studio
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806999"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586407"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio 向けの互換性のあるデータベース システム
 
@@ -29,7 +29,7 @@ Azure storage Api を使用している場合は、運用環境にデプロイ�
 
 次の一覧には、Visual Studio プロジェクトで使用できる一般的なデータベースシステムがいくつか含まれています。 この一覧は完全ではありません。 Visual Studio ツールとの緊密な統合を可能にする ADO.NET データプロバイダーを提供するサードパーティベンダーの一覧については、「 [ADO.NET Data providers](/dotnet/framework/data/adonet/data-providers)」を参照してください。
 
-## <a name="microsoft-sql-server"></a>Microsoft SQL Server
+## <a name="microsoft-sql-server"></a>[Microsoft SQL Server]
 
 SQL Server は、Microsoft の主要なデータベースオファリングです。 SQL Server 2016 は、画期的なパフォーマンス、高度なセキュリティ、豊富で統合されたレポートと分析を提供します。 さまざまなエディションに付属しています。これは、拡張性の高い高パフォーマンスのビジネス分析から、1台のコンピューターで使用できるように設計されています。 SQL Server Express は、再配布と埋め込み用に調整された SQL Server のフル機能エディションです。  LocalDB は SQL Server Express の簡略化されたエディションであり、構成を必要とせず、アプリケーションのプロセスで実行できます。 [SQL Server Express のダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)から、または両方の製品をダウンロードできます。 このセクションの SQL の例の多くは、SQL Server LocalDB を使用しています。 SQL Server Management Studio (SSMS) は、Visual Studio SQL Server オブジェクトエクスプローラーで提供される機能よりも多くの機能を備えたスタンドアロンのデータベース管理アプリケーションです。 前のリンクから SSMS を取得できます。
 
@@ -39,15 +39,15 @@ Oracle データベースの有料または無料のエディションは、 [or
 
 ## <a name="mysql"></a>MySQL
 
-MySQL は、企業や web サイトで広く使用されている、広く普及しているオープンソースのデータベースシステムです。 Mysql、mysql for Visual Studio、および関連製品のダウンロードは、 [Windows 上の mysql](https://www.mysql.com/why-mysql/windows/)にあります。 サードパーティは、さまざまな Visual Studio 拡張機能と、MySQL 用のスタンドアロン管理アプリケーションを提供します。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。
+MySQL は、企業や web サイトで広く使用されている、広く普及しているオープンソースのデータベースシステムです。 Mysql、mysql for Visual Studio、および関連製品のダウンロードは、 [Windows 上の mysql](https://www.mysql.com/why-mysql/windows/)にあります。 サードパーティは、さまざまな Visual Studio 拡張機能と、MySQL 用のスタンドアロン管理アプリケーションを提供します。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー** > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL は、オープンソースの無料のオブジェクトリレーショナルデータベースシステムです。 Windows にインストールするには、 [PostgreSQL のダウンロードページ](https://www.postgresql.org/download/windows/)からダウンロードできます。 また、ソースコードから PostgreSQL を構築することもできます。 PostgreSQL コアシステムには、C 言語インターフェイスが含まれています。 多くのサードパーティは、.NET アプリケーションから PostgreSQL を使用するための NuGet パッケージを提供しています。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。 おそらく、最も一般的なパッケージは[npgsql.org](http://www.npgsql.org)によって提供されます。
+PostgreSQL は、オープンソースの無料のオブジェクトリレーショナルデータベースシステムです。 Windows にインストールするには、 [PostgreSQL のダウンロードページ](https://www.postgresql.org/download/windows/)からダウンロードできます。 また、ソースコードから PostgreSQL を構築することもできます。 PostgreSQL コアシステムには、C 言語インターフェイスが含まれています。 多くのサードパーティは、.NET アプリケーションから PostgreSQL を使用するための NuGet パッケージを提供しています。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー** > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。 おそらく、最も一般的なパッケージは[npgsql.org](http://www.npgsql.org)によって提供されます。
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite は、アプリケーション独自のプロセスで実行される埋め込みの SQL データベースエンジンです。 これは、 [SQLite ダウンロードページ](https://www.sqlite.org/download.html)からダウンロードできます。 SQLite 用のサードパーティ製の NuGet パッケージも多数用意されています。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー**  > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。
+SQLite は、アプリケーション独自のプロセスで実行される埋め込みの SQL データベースエンジンです。 これは、 [SQLite ダウンロードページ](https://www.sqlite.org/download.html)からダウンロードできます。 SQLite 用のサードパーティ製の NuGet パッケージも多数用意されています。 NuGet パッケージマネージャー ([**ツール** > **nuget パッケージマネージャー** > **ソリューションの nuget パッケージを管理**する]) でオファリングを参照できます。
 
 ## <a name="firebird"></a>Firebird
 

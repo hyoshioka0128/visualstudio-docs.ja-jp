@@ -3,9 +3,6 @@ title: CRT ライブラリを使用したメモリリークの検出 |Microsoft 
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829943"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404977"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>CRT ライブラリを使用したメモリ リークの検出
 
 メモリリークは、C/C++アプリで最も微妙で検出しにくいバグの1つです。 メモリリークが発生したため、以前に割り当てられたメモリの割り当てを正しく解除できませんでした。 わずかなメモリリークは最初は認識されない場合がありますが、時間の経過と共に、アプリでメモリ不足が発生した場合にパフォーマンスが低下するという現象が発生する可能性があります。 使用可能なすべてのメモリを使用するリークしているアプリによって、他のアプリがクラッシュする可能性があります。これにより、アプリの責任として混乱が生じます。 無害なメモリリークであっても、修正が必要な他の問題を示している可能性があります。
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーと C ランタイムライブラリ (CRT) は、メモリリークを検出して特定するのに役立ちます。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーと C ランタイムライブラリ (CRT) は、メモリリークを検出して特定するのに役立ちます。
 
 ## <a name="enable-memory-leak-detection"></a>メモリリーク検出の有効化
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>メモリ状態の比較
- メモリ リークの位置を特定するためのもう 1 つの方法では、ある時点におけるアプリケーションのメモリ状態のスナップショットを取得します。 アプリケーションの特定の時点でメモリ状態のスナップショットを取得するには、`_CrtMemState` 構造体を作成し、それを `_CrtMemCheckpoint` 関数に渡します。
+
+メモリ リークの位置を特定するためのもう 1 つの方法では、ある時点におけるアプリケーションのメモリ状態のスナップショットを取得します。 アプリケーションの特定の時点でメモリ状態のスナップショットを取得するには、`_CrtMemState` 構造体を作成し、それを `_CrtMemCheckpoint` 関数に渡します。
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 メモリリークを検出する方法の1つは、アプリの先頭と末尾に `_CrtMemCheckpoint` 呼び出しを配置し、`_CrtMemDifference` を使用して結果を比較することです。 `_CrtMemDifference` がメモリリークを示している場合は、リークの原因が特定されるまで、`_CrtMemCheckpoint` 呼び出しを追加して、バイナリ検索を使用してプログラムを分割できます。
 
 ## <a name="false-positives"></a>誤検知
+
  ライブラリによって、CRT ブロックやクライアントブロックではなく通常のブロックとして内部割り当てがマークされている場合は、`_CrtDumpMemoryLeaks` によってメモリリークが誤って示されることがあります。 その場合、 `_CrtDumpMemoryLeaks` では、ユーザー割り当てとライブラリの内部的な割り当てを区別することができません。 ライブラリ割り当てのグローバル デストラクターが、 `_CrtDumpMemoryLeaks`の呼び出しポイント後に実行される場合、すべての内部ライブラリ割り当てがメモリ リークとして報告されます。 Visual Studio .NET より前のバージョンの標準テンプレートライブラリでは、`_CrtDumpMemoryLeaks` によってこのような誤検知が報告される場合があります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
+
 - [CRT デバッグ ヒープの詳細](../debugger/crt-debug-heap-details.md)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

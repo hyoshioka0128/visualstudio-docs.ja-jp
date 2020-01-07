@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648234"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586342"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 データセット内の特定のレコードを検索するには、DataTable の `FindBy` メソッドを使用し、テーブルの Rows コレクションをループ処理する独自の foreach ステートメントを記述するか、 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)を使用します。
@@ -35,14 +35,14 @@ ms.locfileid: "72648234"
 
 - 行を検索するには、テーブルの主キーを使用する、厳密に型指定された `FindBy` メソッドを呼び出します。
 
-     次の例では、`CustomerID` 列が `Customers` テーブルの主キーです。 これは、生成された `FindBy` メソッドが `FindByCustomerID` であることを意味します。 この例では、生成された `FindBy` メソッドを使用して、特定の <xref:System.Data.DataRow> を変数に割り当てる方法を示します。
+     次の例では、`CustomerID` 列が `Customers` テーブルの主キーです。 これは、生成された `FindBy` メソッドが `FindByCustomerID`であることを意味します。 この例では、生成された `FindBy` メソッドを使用して、特定の <xref:System.Data.DataRow> を変数に割り当てる方法を示します。
 
      [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
      [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>主キーの値を持つ型指定されていないデータセット内の行を検索するには
 
-- @No__t_1 コレクションの <xref:System.Data.DataRowCollection.Find%2A> メソッドを呼び出して、プライマリキーをパラメーターとして渡します。
+- <xref:System.Data.DataRowCollection> コレクションの <xref:System.Data.DataRowCollection.Find%2A> メソッドを呼び出して、プライマリキーをパラメーターとして渡します。
 
      次の例は、`foundRow` という名前の新しい行を宣言し、<xref:System.Data.DataRowCollection.Find%2A> メソッドの戻り値を割り当てる方法を示しています。 主キーが見つかった場合は、列インデックス1の内容がメッセージボックスに表示されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "72648234"
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>任意の列の値に基づいて行を検索するには
 
-- データテーブルは <xref:System.Data.DataTable.Select%2A> メソッドを使用して作成されます。このメソッドは、<xref:System.Data.DataTable.Select%2A> メソッドに渡される式に基づいて <xref:System.Data.DataRow>s の配列を返します。 有効な式の作成の詳細については、<xref:System.Data.DataColumn.Expression%2A> プロパティに関するページの「式の構文」セクションを参照してください。
+- データテーブルは <xref:System.Data.DataTable.Select%2A> メソッドを使用して作成されます。このメソッドは、<xref:System.Data.DataTable.Select%2A> メソッドに渡される式に基づいて <xref:System.Data.DataRow>の配列を返します。 有効な式の作成の詳細については、<xref:System.Data.DataColumn.Expression%2A> プロパティに関するページの「式の構文」セクションを参照してください。
 
      次の例は、<xref:System.Data.DataTable> の <xref:System.Data.DataTable.Select%2A> メソッドを使用して特定の行を検索する方法を示しています。
 
@@ -70,13 +70,13 @@ ms.locfileid: "72648234"
 > [!NOTE]
 > Windows フォームアプリケーションで作業していて、データバインディング機能を使用してデータを表示している場合は、デザイナーで生成されたフォームによってアプリケーションに十分な機能が提供されることがあります。 詳細については、「 [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 具体的には、「[データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
 
-次のコード例は、型指定されたデータセット内の上下関係を移動する方法を示しています。 このコード例では、型指定された <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) および生成された FindBy*PrimaryKey* (`FindByCustomerID`) メソッドを使用して目的の行を検索し、関連レコードを返します。 これらの例は、次のものがある場合にのみ、正しくコンパイルされて実行されます。
+次のコード例は、型指定されたデータセット内の上下関係を移動する方法を示しています。 このコード例では、型指定された <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) および生成された FindBy*PrimaryKey* (`FindByCustomerID`) メソッドを使用して目的の行を検索し、関連するレコードを返します。 これらの例は、次のものがある場合にのみ、正しくコンパイルされて実行されます。
 
-- @No__t_1 テーブルを持つ `NorthwindDataSet` という名前のデータセットのインスタンス。
+- `Customers` テーブルを持つ `NorthwindDataSet` という名前のデータセットのインスタンス。
 
-- @No__t_0 テーブルです。
+- `Orders` テーブルです。
 
-- 2つのテーブル `FK_Orders_Customers`relating という名前のリレーションシップ。
+- 2つのテーブルを関連付ける `FK_Orders_Customers`という名前のリレーションシップ。
 
 また、返されるレコードのデータを両方のテーブルに格納する必要があります。
 

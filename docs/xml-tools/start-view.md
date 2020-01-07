@@ -1,19 +1,19 @@
 ---
-title: XML スキーマ デザイナーの開始ビュー
+title: XML スキーマ デザイナーのスタート ビュー
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1978760aba90b884099085c995372f9612be3c8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608500"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592530"
 ---
 # <a name="start-view"></a>スタート ビュー
 
@@ -21,9 +21,9 @@ ms.locfileid: "72608500"
 
 [スタート] ビューには、[*透かし*] ウィンドウと **[スキーマセットの詳細]** ペインの2つの主要なセクションがあります。 さらに、XSD デザイナーのすべてのビューで使用できるツール バーも含まれています。
 
-![XML スキーマ デザイナーの開始ビュー](../xml-tools/media/xsddesigner_startview.gif)
+![XML スキーマ デザイナーのスタート ビュー](../xml-tools/media/xsddesigner_startview.gif)
 
-## <a name="watermark"></a>ウォーターマーク
+## <a name="watermark"></a>制限値
 
 [透かし] ウィンドウには、すべての XSD デザイナービュー、XML エディター、および**Xml スキーマエクスプローラー**へのリンクの一覧が表示されます。 スキーマ セットにエラーがある場合、一覧の最後に "スキーマ セット内のエラーを表示および修正するには、エラー一覧を使用します" というテキストが表示されます。
 
@@ -41,9 +41,9 @@ XML スキーマデザイナーのツールバーから、スタートビュー�
 
 |オプション|説明|
 |-|-----------------|
-|**スタートビューの表示**|スタート ビューに切り替えます。 このビューには、キーボードショートカット ( **Ctrl** +**1**) を使用してアクセスできます。|
-|**コンテンツモデルビューの表示**|コンテンツ モデル ビューに切り替えます。 このビューには、キーボードショートカットの**Ctrl** +**2**を使用してアクセスできます。|
-|**グラフビューの表示**|グラフ ビューに切り替えます。 このビューには、キーボードショートカットの**Ctrl** +**3**を使用してアクセスできます。|
+|**スタートビューの表示**|スタート ビューに切り替えます。 このビューには、キーボードショートカット ( **Ctrl**+**1**) を使用してアクセスできます。|
+|**コンテンツモデルビューの表示**|コンテンツ モデル ビューに切り替えます。 このビューには、キーボードショートカットの**Ctrl**+**2**を使用してアクセスできます。|
+|**グラフビューの表示**|グラフ ビューに切り替えます。 このビューには、キーボードショートカットの**Ctrl**+**3**を使用してアクセスできます。|
 
 ## <a name="see-also"></a>関連項目
 

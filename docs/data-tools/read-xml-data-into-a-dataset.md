@@ -15,23 +15,23 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641374"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586329"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 
 ADO.NET には、XML データを操作するための単純なメソッドが用意されています。 このチュートリアルでは、XML データをデータセットに読み込む Windows アプリケーションを作成します。 次に、データセットが <xref:System.Windows.Forms.DataGridView> コントロールに表示されます。 最後に、XML ファイルの内容に基づく XML スキーマがテキストボックスに表示されます。
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
+## <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
 または Visual Basic 用の新しい**Windows フォームアプリ**プロジェクトを作成します。 C# プロジェクトに**ReadingXML**という名前を指定します。
 
@@ -141,14 +141,14 @@ ADO.NET には、XML データを操作するための単純なメソッドが�
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**垂直方向**|
-    |`Button1`|**Name**|`ReadXmlButton`|
-    ||**[テキスト]**|`Read XML`|
-    |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**[テキスト]**|`Show Schema`|
+    |`Button1`|**名前**|`ReadXmlButton`|
+    ||**テキスト**|`Read XML`|
+    |`Button2`|**名前**|`ShowSchemaButton`|
+    ||**テキスト**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML データを受け取るデータセットを作成する
 
-この手順では、`authors` という名前の新しいデータセットを作成します。 データセットの詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」を参照してください。
+この手順では、`authors`という名前の新しいデータセットを作成します。 データセットの詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」を参照してください。
 
 1. **ソリューションエクスプローラー**で、 **Form1**のソースファイルを選択し、 **[ソリューションエクスプローラー]** ツールバーの **[デザイナーの表示]** をクリックします。
 
@@ -158,7 +158,7 @@ ADO.NET には、XML データを操作するための単純なメソッドが�
 
      **DataSet1**がコンポーネントトレイに追加されます。
 
-4. **プロパティ** ウィンドウで、**名前** と `AuthorsDataSet` の <xref:System.Data.DataSet.DataSetName%2A> プロパティを設定します。
+4. **プロパティ** ウィンドウで、**名前** と `AuthorsDataSet`の <xref:System.Data.DataSet.DataSetName%2A> プロパティを設定します。
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>XML ファイルをデータセットに読み込むイベントハンドラーを作成する
 
@@ -170,16 +170,16 @@ ADO.NET には、XML データを操作するための単純なメソッドが�
 
      **コードエディター**が `ReadXmlButton_Click` イベントハンドラーで開きます。
 
-3. @No__t_0 イベントハンドラーに次のコードを入力します。
+3. `ReadXmlButton_Click` イベントハンドラーに次のコードを入力します。
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4. @No__t_0 イベントハンドラーのコードで、`filepath =` エントリを正しいパスに変更します。
+4. `ReadXMLButton_Click` イベントハンドラーのコードで、`filepath =` エントリを正しいパスに変更します。
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>イベントハンドラーを作成し、テキストボックスにスキーマを表示します。
 
-**[スキーマの表示]** ボタンをクリックすると、スキーマを格納し、<xref:System.Windows.Forms.TextBox>control に表示される <xref:System.IO.StringWriter> オブジェクトが作成されます。
+**[スキーマの表示]** ボタンをクリックすると、スキーマを格納し、<xref:System.Windows.Forms.TextBox>コントロールに表示される <xref:System.IO.StringWriter> オブジェクトが作成されます。
 
 1. **ソリューションエクスプローラー**で **[Form1]** を選択し、 **[ビューデザイナー]** をクリックします。
 
@@ -206,11 +206,11 @@ ADO.NET には、XML データを操作するための単純なメソッドが�
 
      このテキストボックスには、XML ファイルの XML スキーマが表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 このチュートリアルでは、xml ファイルをデータセットに読み込む方法、および XML ファイルの内容に基づいてスキーマを作成する方法の基本について説明します。 次に、次のタスクについて説明します。
 
-- データセット内のデータを編集し、XML として書き戻します。 詳細については、「<xref:System.Data.DataSet.WriteXml%2A>」を参照してください。
+- データセット内のデータを編集し、XML として書き戻します。 詳細については、「 <xref:System.Data.DataSet.WriteXml%2A>」を参照してください。
 
 - データセット内のデータを編集し、データベースに書き込みます。
 

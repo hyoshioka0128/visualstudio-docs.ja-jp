@@ -3,17 +3,17 @@ title: '方法 : XML スキーマから XML スニペットを生成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645378"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592686"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: xml スキーマから XML スニペットを生成する
 
@@ -41,7 +41,7 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 
 - スキーマ型が atomic 型である場合、エディターは atomic 型を取得し、atomic 型名を挿入します。 派生した単純型の場合、基本の単純型が使用されます。 list 型の場合、atomic 型は `itemType` になります。 union 型の場合、atomic 型は最初の `memberType` の atomic 型になります。
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
 
 このセクションの手順では、XML エディターのスキーマで生成された XML スニペット機能を使用する方法について説明します。
 
@@ -56,7 +56,7 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。
 
-3. ドキュメントのプロパティウィンドウで、 **[スキーマ]** フィールドの参照ボタン (. **[..]** ) をクリックします。
+3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします ( **...** ) で、**スキーマ**フィールド。
 
      **[XSD スキーマ]** ダイアログボックスが表示されます。
 
@@ -90,7 +90,7 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 
 4. **Tab**キーを押して、スキーマ情報に基づいて `Contact` 要素の XML データを生成します。
 
-## <a name="input"></a>入力
+## <a name="input"></a>[入力]
 
 このチュートリアルでは、次のスキーマ ファイルを使用します。
 
@@ -141,7 +141,7 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 
 ### <a name="output"></a>出力
 
-`Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 @No__t_0 とマークされた項目は、XML スニペット内の編集可能なフィールドを指定します。
+`Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 `bold` とマークされた項目は、XML スニペット内の編集可能なフィールドを指定します。
 
 ```xml
 <Contact>

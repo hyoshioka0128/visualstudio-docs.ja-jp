@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648068"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586004"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>チュートリアル: データセットデザイナーでの DataTable の作成
 
@@ -25,7 +25,7 @@ ms.locfileid: "72648068"
 
 ## <a name="create-a-new-windows-forms-application"></a>新しい Windows フォーム アプリケーションを作成する
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -53,13 +53,13 @@ ms.locfileid: "72648068"
 
      **DataTable1**という名前のテーブルがデータセットに追加されます。
 
-2. **DataTable1**のタイトルバーをクリックし、`Music` 名前を変更します。
+2. **DataTable1**のタイトルバーをクリックし、`Music`名前を変更します。
 
 ## <a name="add-columns-to-the-datatable"></a>DataTable への列の追加
 
 1. **[Music]** テーブルを右クリックします。 **[追加]** をポイントして、 **[列]** をクリックします。
 
-2. 列に `SongID` という名前を指定します。
+2. 列に `SongID`という名前を指定します。
 
 3. **[プロパティ]** ウィンドウで、 <xref:System.Data.DataColumn.DataType%2A> プロパティを <xref:System.Int16?displayProperty=fullName>に設定します。
 

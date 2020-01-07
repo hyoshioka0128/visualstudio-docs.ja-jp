@@ -3,17 +3,17 @@ title: XML スキーマエクスプローラーのコンテキストメニュー
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651203"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592894"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>コンテキストメニュー (XML スキーマエクスプローラー)
 
@@ -47,7 +47,7 @@ ms.locfileid: "72651203"
 |オプション|説明|
 |-|-----------------|
 |**すべての受信参照を表示**|選択したファイルが include ステートメントおよび import ステートメントの `schemaLocation` 属性で指定されたすべてのファイルを検索して強調表示します。|
-|**すべての送信参照を表示**|以下のものを検索して強調表示します。<br /><br /> -@No__t_0 属性を持たないすべての import ステートメントの namespace 属性で指定されたすべての名前空間。<br />-すべての import ステートメントおよび include ステートメントの `schemaLocation` 属性で指定されているすべてのファイル。|
+|**すべての送信参照を表示**|以下のものを検索して強調表示します。<br /><br /> -`schemaLocation` 属性を持たないすべての import ステートメントの namespace 属性で指定されたすべての名前空間。<br />-すべての import ステートメントおよび include ステートメントの `schemaLocation` 属性で指定されているすべてのファイル。|
 |**グローバル型の表示**|このファイル内のすべてのグローバル型を検索して強調表示します。|
 |**グローバル要素の表示**|このファイル内のすべてのグローバル要素を検索して強調表示します。|
 |**[コードの表示]**|XML エディターで選択したノードを含むファイルを開きます。 Xml スキーマエクスプローラーで選択されている項目は、XML エディターでも選択されます。|

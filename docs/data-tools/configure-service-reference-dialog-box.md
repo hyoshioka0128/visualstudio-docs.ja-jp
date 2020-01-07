@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642860"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586927"
 ---
 # <a name="configure-service-reference-dialog-box"></a>[サービス参照の構成] ダイアログ ボックス
 
@@ -71,11 +71,11 @@ WCF クライアントに対してメッセージコントラクト型を生成�
 
 **[コレクション型]**
 
-WCF クライアントのリスト コレクション型を指定します。 既定の型は <xref:System.Array> です。
+WCF クライアントのリスト コレクション型を指定します。 既定の種類は <xref:System.Array> です。
 
 **[ディクショナリ コレクション型]**
 
-WCF クライアントのディクショナリ コレクション型を指定します。 既定の型は <xref:System.Collections.Generic.Dictionary%602> です。
+WCF クライアントのディクショナリ コレクション型を指定します。 既定の種類は <xref:System.Collections.Generic.Dictionary%602> です。
 
 **[参照されたアセンブリで型を再利用]**
 
@@ -83,7 +83,7 @@ WCF クライアントのディクショナリ コレクション型を指定し
 
 **[参照されたアセンブリすべてで型を再利用]**
 
-選択すると、[参照された**アセンブリ] の一覧**にあるすべての型が、可能な場合は再利用されます。 既定では、このチェック ボックスはオンになっています。
+選択すると、[参照された**アセンブリ] の一覧**にあるすべての型が、可能な場合は再利用されます。 既定では、このオプションが選択されています。
 
 **[参照されたアセンブリを指定して型を再利用]**
 

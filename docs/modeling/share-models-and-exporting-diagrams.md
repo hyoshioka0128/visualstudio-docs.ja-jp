@@ -5,22 +5,22 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d097f76bcdb419be56d7fd1501fb93e872b1b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748235"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591919"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>モデルおよびエクスポート ダイアグラムの共有
 Visual Studio では、いくつかの方法でモデルと図を同僚と共有できます。
 
- この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+ Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
 ## <a name="working-on-a-model-as-a-team"></a>チームとしてのモデルの操作
  Visual Studio のユーザーは、モデル、依存関係図、および有向グラフを作成および編集できます。
@@ -30,7 +30,7 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
  中規模または大規模なプロジェクトでモデルを整理する方法については、「[モデリングソリューションの構造](../modeling/structure-your-modeling-solution.md)」を参照してください。
 
 ## <a name="reading-and-reviewing-models"></a>モデルの読み取りと確認
- 一部のバージョンの Visual Studio (モデルを作成することはできません) を使用するチームメンバーは、モデル、モデリング図、および有向グラフを読み取ることができますが、編集することはできません。  この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+ 一部のバージョンの Visual Studio (モデルを作成することはできません) を使用するチームメンバーは、モデル、モデリング図、および有向グラフを読み取ることができますが、編集することはできません。  Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
  依存関係図は、それが作成されたモデル内でのみ開くことができます。 このため、図にアクセスするには、すべてのモデリング プロジェクト ファイルまたはそのコピーへのアクセスを提供する必要があります。
 
@@ -43,7 +43,7 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|[タイトル]|説明|
 |-|-|
 |[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)|大規模または中規模のプロジェクトでモデルを共有します。|
 |[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|図の一部を PowerPoint や Word などのアプリケーションにコピーすることも、図 を XPS ファイルに出力することもできます。|

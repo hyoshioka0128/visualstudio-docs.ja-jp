@@ -2,17 +2,17 @@
 title: '方法: トランザクションを使用してモデルを更新する'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a08ea67477f42008c35b6f141351beaeee03d27b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661145"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594605"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>方法: トランザクションを使用してモデルを更新する
 トランザクションでは、ストアに加えられた変更がグループとして扱われるようにします。 グループ化された変更は、1つの単位としてコミットまたはロールバックできます。
@@ -77,7 +77,7 @@ catch (Exception ex)
 
  元に戻す、やり直し、またはロールバックコマンドを実行しても、ルールは起動されません。
 
-## <a name="transaction-context"></a>トランザクションコンテキスト
+## <a name="transaction-context"></a>トランザクション コンテキスト
  各トランザクションには、必要なすべての情報を格納できるディクショナリがあります。
 
  `store.TransactionManager`

@@ -3,17 +3,17 @@ title: XSLT スタイル シートの編集
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc987f8362d5daf435b7e9de860cc13f16a1aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646058"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592842"
 ---
 # <a name="edit-xslt-style-sheets"></a>XSLT スタイル シートの編集
 
@@ -25,7 +25,7 @@ XSLT スタイル シートの操作時に固有な機能の説明を次の表�
 
 **構文の色分け**
 
-@No__t_0 や `match` などの XSLT キーワードは、 **[フォントおよび色]** 設定で指定された xslt キーワードの色で表示されます。
+`template` や `match`などの XSLT キーワードは、 **[フォントおよび色]** 設定で指定された xslt キーワードの色で表示されます。
 
 **波下線**
 

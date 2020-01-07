@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903886"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404277"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>コードエディターでデータヒントのデータ値を表示する
 
@@ -96,7 +96,7 @@ DataTip の変数または要素の値を編集するには、値を選択し、
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>DataTips でプロパティをピン留めする (Visual Studio 2019 バージョン 16.4 Preview 3 以降でサポート)
+## <a name="pin-properties-in-datatips"></a>DataTips のプロパティを固定する
 
 > [!NOTE]
 > この機能は、.NET Core 3.0 以降でサポートされています。
@@ -137,7 +137,7 @@ DataTips を XML ファイルにエクスポートすることができます。
 
 1. **[Datatip のインポート]** ダイアログボックスで、開く datatips XML ファイルを選択し、 **[開く]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッグとは](../debugger/what-is-debugging.md)
 - [デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)
 - [デバッグに関する最初の確認](../debugger/debugger-feature-tour.md)

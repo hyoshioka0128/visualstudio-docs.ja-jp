@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658409"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590242"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 
@@ -44,7 +44,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 > [!NOTE]
 > これらのトピックでは、"システム" という用語は、開発中のシステムまたはアプリケーションを意味します。 システムは、数多くのソフトウェアおよびハードウェア コンポーネントが大規模に収集されたものを指す場合があります。また、1 つのアプリケーションの場合もあれば、大規模なシステム内の 1 つのソフトウェア コンポーネントを指すこともあります。 いずれの場合でも、要求モデルは、ユーザー インターフェイスを使用するか、API を使用するかにかかわらず、システムの外側から確認できる動作を記述します。
 
-## <a name="common-tasks"></a>一般的なタスク
+## <a name="common-tasks"></a>よく使用するタスク
 
 ユーザー要求について、複数の異なるビューを作成することができます。  各ビューは、特定の種類の情報を提供します。  これらのビューを作成するときは、頻繁にビューを切り替えることをお勧めします。 任意のビューから開始することができます。
 
@@ -60,7 +60,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
 ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。
 
-多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらの*静的ビジネスルール*は、概念クラス図の関連クラスに関連付けられたコメントとして記述できます。 (例:
+多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらの*静的ビジネスルール*は、概念クラス図の関連クラスに関連付けられたコメントとして記述できます。 例:
 
 ![Order クラスにアタッチされたコメント内のルール](../modeling/media/uml_reqmcd2.png)
 
@@ -72,13 +72,13 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
 詳細については、次のトピックを参照してください。
 
-|詳細|読み取り|
+|トピック|読み取り|
 |-|-|
 |ビジネス ルールに準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-サービス品質要求には、いくつかのカテゴリがあります。 次に例を示します。
+サービス品質要求には、いくつかのカテゴリがあります。 フォルダーには次のようなものがあります。
 
 - パフォーマンス
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924550"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586966"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
 
@@ -40,7 +40,7 @@ ms.locfileid: "72924550"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
@@ -72,7 +72,7 @@ WCF Data Service を使用してアプリケーションにデータを公開す
 
 2. [インストールされたテンプレート] ボックスの一覧で、 **[データ]** をクリックし、 **[ADO.NET エンティティ データ モデル]** プロジェクト項目を選択します。
 
-3. 名前を `AdventureWorksModel.edmx` に変更し、 **[追加]** をクリックします。
+3. 名前を `AdventureWorksModel.edmx`に変更し、 **[追加]** をクリックします。
 
      **Entity Data Model** ウィザードが開きます。
 
@@ -173,7 +173,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. プロジェクトをビルドします。
+3. プロジェクトをビルドする。
 
 ## <a name="create-the-data-bound-controls"></a>データバインドコントロールの作成
 
@@ -259,13 +259,13 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
 
 アプリケーションをビルドして実行し、顧客レコードを表示および更新できることを確認します。
 
 1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 ソリューションがエラーなしでビルドされることを確認します。
 
-2. **Ctrl** +**F5**キーを押します。
+2. **Ctrl**+**F5**キーを押します。
 
      Visual Studio によって、**AdventureWorksService** プロジェクトがデバッグなしで開始されます。
 
@@ -287,7 +287,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 8. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 このチュートリアルを完了した後、関連する次のタスクを実行できます。
 

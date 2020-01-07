@@ -3,17 +3,17 @@ title: 生成されたコードのコード分析違反を抑制する
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab2ffce28103059414cef8f1b556152485a12ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587434"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>方法: 生成されたコードのコード分析の警告を非表示にする
 
@@ -32,5 +32,5 @@ ms.locfileid: "72649401"
 
 3. [**生成されたコードから結果**を表示しない] チェックボックスをオンにします。
 
-> [!NOTE]
-> レガシ分析からの警告のみを非表示にすることができます。 現時点では、[アナライザー](roslyn-analyzers-overview.md)からのコード分析の警告を抑制することはできません。
+> [!IMPORTANT]
+> レガシ分析からの警告のみを非表示にすることができます。 この設定のプロパティページは非推奨とされており、今後の製品リリースでは削除される予定です。 現時点では、[アナライザー](roslyn-analyzers-overview.md)からのコード分析の警告を抑制することはできません。

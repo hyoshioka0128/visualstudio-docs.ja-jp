@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641099"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586238"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>チュートリアル: トランザクションにデータを保存する
 
 このチュートリアルでは、<xref:System.Transactions> 名前空間を使用してトランザクションにデータを保存する方法について説明します。 このチュートリアルでは、Windows フォームアプリケーションを作成します。 データソース構成ウィザードを使用して、Northwind サンプルデータベースに2つのテーブルのデータセットを作成します。 データバインドコントロールを Windows フォームに追加し、BindingNavigator の [保存] ボタンのコードを変更して、TransactionScope 内のデータベースを更新します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "72641099"
 
 最初の手順では、 **Windows フォームアプリケーション**を作成します。
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -84,7 +84,7 @@ ms.locfileid: "72641099"
 
 7. **[データベースオブジェクトの選択]** 画面で、 **[テーブル]** ノードを展開します。
 
-8. @No__t_0 テーブルと `Orders` テーブルを選択し、 **[完了]** を選択します。
+8. `Customers` テーブルと `Orders` テーブルを選択し、 **[完了]** を選択します。
 
      プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
 
@@ -108,7 +108,7 @@ ms.locfileid: "72641099"
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>System.Transactions の DLL ファイルへの参照を追加するには
 
-1. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
+1. **[プロジェクト]** メニューの **[参照の追加]** を選択します。
 
 2. **[.Net]** タブで [ **system.string] を選択し**、[ **OK]** を選択します。
 
@@ -116,7 +116,7 @@ ms.locfileid: "72641099"
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>BindingNavigator の SaveItem ボタンのコードを変更する
 
-フォームに最初にドロップされたテーブルに対して、既定では、<xref:System.Windows.Forms.BindingNavigator> の [保存] ボタンの `click` イベントにコードが追加されます。 追加テーブルを更新する場合は、手動でコードを追加する必要があります。 このチュートリアルでは、[保存] ボタンのクリックイベントハンドラーから既存の保存コードをリファクターします。 また、行を追加または削除する必要があるかどうかに基づいて、特定の更新機能を提供するためのメソッドもいくつか作成します。
+フォームに最初にドロップされたテーブルに対して、既定では、<xref:System.Windows.Forms.BindingNavigator>の [保存] ボタンの `click` イベントにコードが追加されます。 追加テーブルを更新する場合は、手動でコードを追加する必要があります。 このチュートリアルでは、[保存] ボタンのクリックイベントハンドラーから既存の保存コードをリファクターします。 また、行を追加または削除する必要があるかどうかに基づいて、特定の更新機能を提供するためのメソッドもいくつか作成します。
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>自動生成された保存コードを変更するには
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df72c6978f5ab34a86c74dbc1ea349db5aa4457
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 2b7dfd28d70b80fd2d0f854b7db3550862b32814
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491309"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404369"
 ---
 # <a name="how-to-install-a-visualizer"></a>方法 : ビジュアライザーをインストールする
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
@@ -30,11 +30,12 @@ ms.locfileid: "74491309"
 > [!NOTE]
 > UWP アプリでは、標準のテキスト、HTML、XML、および JSON ビジュアライザーのみがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
 
+::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>ビジュアライザー for Visual Studio 2019 をインストールするには
   
-1. 作成したビジュアライザーを含むダイナミック リンク ライブラリ (DLL: Dynamic Link Library) を探します。
+1. 作成したビジュアライザーが含まれている DLL を見つけます。
 
-2. [デバッガー側](create-custom-visualizers-of-data.md#to-create-the-debugger-side)DLL を次のいずれかの場所にコピーします。
+2. [デバッガー側](create-custom-visualizers-of-data.md#to-create-the-debugger-side)dll (およびそれが依存するすべての dll) を、次のいずれかの場所にコピーします。
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
@@ -53,10 +54,15 @@ ms.locfileid: "74491309"
 
 4. デバッグ セッションを再開します。
 
+> [!NOTE]
+> この手順は、Visual Studio 2017 およびそれ以前のバージョンでは異なります。 この記事の[前のバージョン](how-to-install-a-visualizer.md?view=vs-2017)を参照してください。
+::: moniker-end
+
+::: moniker range="vs-2017"
 ### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>ビジュアライザー for Visual Studio 2017 およびそれ以前のバージョンをインストールするには
 
 > [!IMPORTANT]
-> Visual Studio 2017 以前でサポートされているのは .NET Framework ビジュアライザーのみです
+> Visual Studio 2017 以前では、.NET Framework ビジュアライザーのみがサポートされています。
 
 1. 作成したビジュアライザーを含むダイナミック リンク ライブラリ (DLL: Dynamic Link Library) を探します。
 
@@ -70,7 +76,8 @@ ms.locfileid: "74491309"
 
 > [!NOTE]
 > マネージド ビジュアライザーをリモート デバッグで使用するには、DLL をリモート コンピューター上の同じパスにコピーします。
+::: moniker-end
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
 - [方法 : ビジュアライザーを記述する](create-custom-visualizers-of-data.md)

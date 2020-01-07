@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11743756ffd8f59520448d2687dbada6d4eaca40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608046"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592335"
 ---
 # <a name="xml-schemas-dialog-box"></a>[XML スキーマ] ダイアログ ボックス
 
@@ -23,13 +23,13 @@ ms.locfileid: "72608046"
 
 **[Xml スキーマ]** ダイアログボックスにアクセスするには、ドキュメントのプロパティ ウィンドウの **[スキーマ]** ボタンをクリックするか、 **[Xml]** メニューの **[スキーマ]** を選択します。
 
-## <a name="uielement-list"></a>UIElement の一覧
+## <a name="uielement-list"></a>UI 要素一覧
 
 **使用**
 
 XML スキーマの使用方法を選択します。
 
-- **自動**。 このスキーマは現在のドキュメントで使用されていませんが、自動的な関連付けには使用できます。 XML ドキュメントでこのスキーマの `targetNamespace` に一致する名前空間を宣言すると、スキーマが自動的に関連付けられ、スキーマ セットに含まれます。
+- **[自動]** 。 このスキーマは現在のドキュメントで使用されていませんが、自動的な関連付けには使用できます。 XML ドキュメントでこのスキーマの `targetNamespace` に一致する名前空間を宣言すると、スキーマが自動的に関連付けられ、スキーマ セットに含まれます。
 
 - **このスキーマを使用**します。 このスキーマは、現在のドキュメントで使用されています。 ユーザーがこの列をクリックしてこのスキーマが使用されることを明示的に要求したか、一致する `targetNamespace` に基づいてスキーマが自動的に関連付けられたかのいずれかです。
 
@@ -39,7 +39,7 @@ XML スキーマの使用方法を選択します。
 
 XML スキーマに関連付けられているターゲット名前空間が表示されます。
 
-**ファイル名**
+**[ファイル名]**
 
 XML スキーマ ファイル名が表示されます。
 

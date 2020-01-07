@@ -3,17 +3,17 @@ title: XSD スキーマ ファイルを作成して編集する
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2df904b4f5351611e4d15775f68d94db4cc876e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 976448709f7ecf9eaff0a563b867f12b3d9fa770
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645946"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592764"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>方法: XSD スキーマファイルを作成および編集する
 
@@ -21,7 +21,7 @@ ms.locfileid: "72645946"
 
 ## <a name="to-create-a-new-xml-schema-file"></a>新しい XML スキーマ ファイルを作成するには
 
-1. Visual Studio で、 **[ファイル]** メニューを開き、[**新しい** > **ファイル**] を選択します。 または、 **Ctrl** +**N**のキーボードショートカットを使用します。
+1. Visual Studio で、 **[ファイル]** メニューを開き、[**新しい** > **ファイル**] を選択します。 または、 **Ctrl**+**N**のキーボードショートカットを使用します。
 
 2. **[新しいファイル]** ダイアログボックスで **[XML スキーマ]** を選択し、 **[開く]** を選択します。
 

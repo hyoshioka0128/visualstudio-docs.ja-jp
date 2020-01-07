@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189450"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565943"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL コードについて
 
@@ -58,7 +58,7 @@ ms.locfileid: "73189450"
 ## <a name="generated-files-in-dsl"></a>Dsl 内に生成されるファイル
  次の生成されたファイルが**Dsl**プロジェクトに表示されます。
 
- *Dsl* `Schema.xsd`
+ *YourDsl* `Schema.xsd`
 
  DSL のインスタンスを含むファイルのスキーマ。 このファイルは、コンパイル (**bin**) ディレクトリにコピーされます。 DSL をインストールするときに、このファイルを、モデルファイルを検証できるように、このファイルをコンピューターの**Visual Studio 11.0 \ xml¥スキーマ**にコピーできます。 詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 
@@ -70,7 +70,7 @@ ms.locfileid: "73189450"
 
  (コンポーネント ソリューションの例で、接続ビルダーの 1 つは ConnectionBuilder という名前ですが、ドメイン リレーションシップは Connection という名前なので、これは偶然の一致です)
 
- リレーションシップは、*リレーションシップ*`Builder.Connect()` メソッドで作成されます。 既定のバージョンは、ソースとターゲットのモデル要素が受け入れ可能であることを検証し、リレーションシップをインスタンス化します。 (例:
+ リレーションシップは、*リレーションシップ*`Builder.Connect()` メソッドで作成されます。 既定のバージョンは、ソースとターゲットのモデル要素が受け入れ可能であることを検証し、リレーションシップをインスタンス化します。 例:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ ms.locfileid: "73189450"
 
 - 要素グループ プロトタイプ (EGP) ハンドラー メソッド。 これは、ユーザーが別の要素をこのクラスのインスタンスに*マージ*(追加) できる場合に必要です。 通常、ユーザーは、要素ツールや別の図形からのドラッグまたは貼り付けにより、この操作を実行します。
 
-   DSL の例で、入力ポートまたは出力ポートはコンポーネントにマージできます。 また、コンポーネントとコメントはモデルにマージできます。 次に、
+   DSL の例で、入力ポートまたは出力ポートはコンポーネントにマージできます。 また、コンポーネントとコメントはモデルにマージできます。 [曜日]
 
    コンポーネント クラス内の EGP ハンドラー メソッドにより、コンポーネントはポートを受け入れることができますが、コメントを受け入れることはできません。 ルート モデル クラス内の EGP ハンドラーはコメントとコンポーネントを受け入れますが、ポートは受け入れません。
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  このファイルをカスタマイズするには、`.tt` ファイルを編集します。
 
 > [!WARNING]
-> .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューションエクスプローラーで、ファイルを選択し、 **[VSIX に含める]** プロパティが `True` になっていることを確認します。
+> .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューションエクスプローラーで、ファイルを選択し、 **[VSIX に含める]** プロパティが `True`になっていることを確認します。
 
  このファイルは、DSL が Visual Studio Integration Extension (VSIX) にパッケージ化される方法を制御します。 詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 

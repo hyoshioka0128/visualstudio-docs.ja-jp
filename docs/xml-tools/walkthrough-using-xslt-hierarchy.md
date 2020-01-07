@@ -2,15 +2,15 @@
 title: 'チュートリアル: XSLT 階層の使用'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604444"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592452"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>チュートリアル: XSLT 階層の使用
 
@@ -103,11 +103,11 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
     </xsl:stylesheet>
     ```
 
-4. @No__t_0 命令にブレークポイントを追加します。
+4. `<xsl:include href="xslincludefile.xsl" />`命令にブレークポイントを追加します。
 
 5. デバッグを開始します。
 
-6. @No__t_0 命令でデバッガーが停止したら、 **[ステップイン]** ボタンをクリックします。 参照されているスタイルシートでデバッグを続行できます。 階層が表示され、デザイナーに正しいパスが示されます。
+6. `<xsl:include href="xslincludefile.xsl" />`命令でデバッガーが停止したら、 **[ステップイン]** ボタンをクリックします。 参照されているスタイルシートでデバッグを続行できます。 階層が表示され、デザイナーに正しいパスが示されます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -2,19 +2,19 @@
 title: XSLT コードをデバッグする方法
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646074"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592855"
 ---
 # <a name="debugging-xslt"></a>XSLT のデバッグ
 
@@ -33,11 +33,11 @@ Visual Studio で XSLT コードをデバッグできます。 XSLT デバッガ
 
 1. Visual Studio でスタイルシートまたは XML ファイルを開きます。
 
-1. **[XML]** メニューの **[XSLT デバッグの開始]** を選択するか、 **Alt**キーを押し +**F5**キーを押します。
+1. **[XML]** メニューの **[XSLT デバッグの開始]** を選択するか、 **Alt**キーを押し+**F5**キーを押します。
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>XSLT を使用するアプリからデバッグする
 
-アプリケーションのデバッグ中に XSLT にステップインできます。 @No__t_1 の呼び出しで**F11**キーを押すと、デバッガーは XSLT コードにステップインできます。
+アプリケーションのデバッグ中に XSLT にステップインできます。 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> の呼び出しで**F11**キーを押すと、デバッガーは XSLT コードにステップインできます。
 
 > [!NOTE]
 > <xref:System.Xml.Xsl.XslTransform> クラスから XSLT へのステップ インは、サポートされていません。 デバッグ中の XSLT へのステップ インをサポートしている XSLT プロセッサは、<xref:System.Xml.Xsl.XslCompiledTransform> クラスだけです。
@@ -52,7 +52,7 @@ Visual Studio で XSLT コードをデバッグできます。 XSLT デバッガ
 
    または、ブレーク ポイントをスタイル シートに追加し、アプリケーションを実行することもできます。
 
-### <a name="example"></a>例
+### <a name="example"></a>使用例
 
 C# XSLT プログラムの例を次に示します。 この例は、XSLT のデバッグを有効にする方法を示しています。
 
@@ -76,7 +76,7 @@ namespace ConsoleApplication
       XslCompiledTransform xslt = new XslCompiledTransform(true);
 
       // Compile the style sheet.
-      xslt.Load(stylesheet)
+      xslt.Load(stylesheet);
 
       // Execute the XSLT transform.
       FileStream outputStream = new FileStream(outputFile, FileMode.Append);

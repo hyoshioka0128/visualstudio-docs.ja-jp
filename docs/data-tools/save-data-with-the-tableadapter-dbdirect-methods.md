@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586212"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect メソッドを使用してデータを保存する
 
-このチュートリアルでは、TableAdapter の DBDirect メソッドを使用してデータベースに対して SQL ステートメントを直接実行するための詳細な手順について説明します。 TableAdapter の DBDirect メソッドを使用すると、データベースの更新をきめ細かいレベルで制御できます。 これらのメソッドを使用すると、アプリケーションで必要に応じて個々の `Insert`、`Update`、および `Delete` メソッドを呼び出すことによって、特定の SQL ステートメントおよびストアドプロシージャを実行できます (更新を実行するオーバーロードされた `Update` メソッドではなく、挿入、、および DELETE ステートメントはすべて1回の呼び出しで)。
+このチュートリアルでは、TableAdapter の DBDirect メソッドを使用してデータベースに対して SQL ステートメントを直接実行するための詳細な手順について説明します。 TableAdapter の DBDirect メソッドを使用すると、データベースの更新をきめ細かいレベルで制御できます。 これらのメソッドを使用すると、アプリケーションで必要に応じて個々の `Insert`、`Update`、および `Delete` メソッドを呼び出すことによって、特定の SQL ステートメントおよびストアドプロシージャを実行できます (UPDATE、INSERT、および DELETE ステートメントをすべて1回の呼び出しで実行するオーバーロードされた `Update` メソッドとは異なります)。
 
 このチュートリアルでは、次の作業を行う方法について説明します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72641159"
 
 - データベースに直接アクセスして、挿入、更新、および削除を実行するメソッドを追加します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "72641159"
 
 最初の手順では、 **Windows フォームアプリケーション**を作成します。
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "72641159"
 
 7. **[データベースオブジェクトの選択]** 画面で、 **[テーブル]** ノードを展開します。
 
-8. @No__t_0 テーブルを選択し、 **[完了]** を選択します。
+8. `Region` テーブルを選択し、 **[完了]** を選択します。
 
      プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Region` テーブルが表示されます。
 
@@ -117,7 +117,7 @@ Windows フォームにデータバインドコントロールを作成するに
 
 2. 各ボタンの **[名前]** および **[テキスト]** プロパティを設定します。
 
-    |名|テキスト|
+    |[名前]|テキスト|
     |----------|----------|
     |`InsertButton`|**[挿入]**|
     |`UpdateButton`|**更新**|
@@ -160,7 +160,7 @@ Windows フォームにデータバインドコントロールを作成するに
 
 - **[削除]** ボタンを選択し、レコードがグリッドから削除されていることを確認します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 アプリケーションの要件によっては、データバインドフォームの作成後に実行する必要があるいくつかの手順があります。 このチュートリアルで行うことができる拡張には次のものがあります。
 

@@ -3,23 +3,23 @@ title: ワークフローデザイナー-フローチャートアクティビテ
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01727901f5ce063a16954f98914833ba39f8ab5d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a4503a9653123bf0b0668f5686b9fdb94c97a7bb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189679"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597023"
 ---
 # <a name="flowchart-activity-designers"></a>フローチャート アクティビティ デザイナー
 
 ワークフローデザイナーには、ワークフローを構築するときに使用できるシステム指定のアクティビティが多数含まれています。 このセクションでは、ワークフロー内のフローチャートの管理を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。
 
-## <a name="reference"></a>辞書／辞典／その他
+## <a name="reference"></a>参照先
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>
@@ -28,7 +28,7 @@ ms.locfileid: "73189679"
 
  <xref:System.Activities.Statements.FlowSwitch%601>
 
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション
  他の種類のアクティビティ デザイナーについては、次のトピックを参照してください。
 
  [制御フロー](../workflow-designer/control-flow-activity-designers.md)

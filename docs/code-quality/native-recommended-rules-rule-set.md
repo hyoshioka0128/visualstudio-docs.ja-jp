@@ -2,17 +2,17 @@
 title: "\"ネイティブ推奨規則\" 規則セット"
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc5112262dd36e431a34becd36729ea9a3c186f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d8080005b9d1d9cbd055e0475517738223bba1d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649164"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587265"
 ---
 # <a name="native-recommended-rules-rule-set"></a>"ネイティブ推奨規則" 規則セット
 
@@ -154,7 +154,7 @@ ms.locfileid: "72649164"
 |[C28020](../code-quality/c28020.md)|この呼び出しでは式が true ではありません|
 |[C28021](../code-quality/c28021.md)|注釈が付けられているパラメーターはポインターである必要があります|
 |[C28022](../code-quality/c28022.md)|この関数の関数クラスは、定義に使用された typedef の関数クラスと一致しません。|
-|[C28023](../code-quality/c28023.md)|割り当てられる、または渡される関数には、少なくとも1つのクラスの注釈 \_ \_class \_Function が含まれている必要があります|
+|[C28023](../code-quality/c28023.md)|割り当てられている、または渡される関数には、少なくとも1つのクラスのクラス\_ 注釈\_\_関数が必要です|
 |[C28024](../code-quality/c28024.md)|割り当てられている関数ポインターには、function クラスで注釈が付けられています。関数クラスは、関数クラスのリストに含まれていません。|
 |[C28039](../code-quality/c28039.md)|実際のパラメーターの型は、型と完全に一致している必要があります|
 |[C28112](../code-quality/c28112.md)|インタロック関数を介してアクセスされる変数には、常にインタロックされた関数を介してアクセスする必要があります。|
@@ -172,14 +172,14 @@ ms.locfileid: "72649164"
 |[C28196](../code-quality/c28196.md)|要件が満たされていません。 (式は true に評価されません)|
 |[C28202](../code-quality/c28202.md)|静的でないメンバーへの参照が正しくありません|
 |[C28203](../code-quality/c28203.md)|クラス メンバーへのあいまいな参照です。|
-|[C28205](../code-quality/c28205.md)|無効なコンテキストで使用されている \_ \_failure の \_Success \_ または \_On|
+|[C28205](../code-quality/c28205.md)|無効なコンテキストで使用されている\_\_ 障害の \_成功\_ または \_|
 |[C28206](../code-quality/c28206.md)|左側のオペランドは構造体をポイントするため、'-> ' を使用します|
 |[C28207](../code-quality/c28207.md)|左側のオペランドは構造体であるため、'.' を使用します|
 |[C28209](../code-quality/c28209.md)|シンボルの宣言に競合する宣言があります。|
 |[C28210](../code-quality/c28210.md)|__on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません|
 |[C28211](../code-quality/c28211.md)|SAL_context には静的コンテキスト名が必要です|
 |[C28212](../code-quality/c28212.md)|注釈にはポインター式が必要です|
-|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釈は、前の宣言を変更せずに参照するために使用する必要があります。|
+|[C28213](../code-quality/c28213.md)|注釈\_\_ 注釈\_使用する \_は、注釈を変更せずに前の宣言を参照するために使用する必要があります。|
 |[C28214](../code-quality/c28214.md)|属性パラメーター名は、p1...p9 である必要があります|
 |[C28215](../code-quality/c28215.md)|typefix は、既に typefix のあるパラメーターには適用できません|
 |[C28216](../code-quality/c28216.md)|checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。|
@@ -222,7 +222,7 @@ ms.locfileid: "72649164"
 |[C28267](../code-quality/c28267.md)|注釈での構文エラーが、関数の注釈で見つかりました。|
 |[C28272](../code-quality/c28272.md)|検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません|
 |[C28273](../code-quality/c28273.md)|関数について、手がかりには関数宣言との一貫性がありません。|
-|[C28275](../code-quality/c28275.md)|@No__t_2 \_value \_Macro するパラメーターが null です|
+|[C28275](../code-quality/c28275.md)|\_マクロ\_値\_ のパラメーターが null です|
 |[C28279](../code-quality/c28279.md)|シンボルについて、'begin' はありましたが、対応する 'end' がありません|
 |[C28280](../code-quality/c28280.md)|シンボルについて、'end' はありましたが、対応する 'begin' がありません|
 |[C28282](../code-quality/c28282.md)|書式指定文字列は、前提条件の中に存在する必要があります|

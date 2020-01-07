@@ -13,21 +13,21 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648437"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586602"
 ---
 # <a name="handle-a-concurrency-exception"></a>コンカレンシー例外を処理する
 
-2 人のユーザーが同じデータベースの同じデータを同時に変更しようとすると、コンカレンシー例外 (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) が発生します。 このチュートリアルでは、<xref:System.Data.DBConcurrencyException> をキャッチする方法を示す Windows アプリケーションを作成し、エラーの原因となった行を見つけて、その処理方法の方法を学習します。
+2 人のユーザーが同じデータベースの同じデータを同時に変更しようとすると、コンカレンシー例外 (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) が発生します。 このチュートリアルでは、<xref:System.Data.DBConcurrencyException>をキャッチする方法を示す Windows アプリケーションを作成し、エラーの原因となった行を見つけて、その処理方法の方法を学習します。
 
 ここでは次の手順を実行します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72648437"
 
 7. エラーをキャッチし、操作を継続してデータベースを更新するか、または更新をキャンセルするかを判断できるように、レコードの異なるバージョンを表示します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -63,11 +63,11 @@ ms.locfileid: "72648437"
 
        しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
+## <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
 まず、新しい Windows フォームアプリケーションを作成します。
 
-1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
+1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -112,7 +112,7 @@ ms.locfileid: "72648437"
 
 4. テーブルをフォームの空の領域にドラッグします。
 
-     "**顧客 Sdatagridview**" という名前の <xref:System.Windows.Forms.DataGridView> コントロールと、"**顧客 sbindingnavigator**" という名前の <xref:System.Windows.Forms.BindingNavigator> が、<xref:System.Windows.Forms.BindingSource> にバインドされているフォームに追加されます。 次に、NorthwindDataSet の Customers テーブルにバインドされます。
+     "**顧客 Sdatagridview**" という名前の <xref:System.Windows.Forms.DataGridView> コントロールと、"**顧客 sbindingnavigator**" という名前の <xref:System.Windows.Forms.BindingNavigator> が、<xref:System.Windows.Forms.BindingSource>にバインドされているフォームに追加されます。 次に、NorthwindDataSet の Customers テーブルにバインドされます。
 
 ## <a name="test-the-form"></a>フォームをテストする
 
@@ -122,7 +122,7 @@ ms.locfileid: "72648437"
 
      フォームには、Customers テーブルのデータを格納する <xref:System.Windows.Forms.DataGridView> コントロールが表示されます。
 
-2. **[デバッグ]** メニューの **[デバッグの停止]** をクリックします。
+2. **[デバッグ]** メニューの **[デバッグの停止]** を選択します。
 
 ## <a name="handle-concurrency-errors"></a>同時実行エラーの処理
 
@@ -153,7 +153,7 @@ ms.locfileid: "72648437"
 更新を実行しようとしたときに例外が発生した場合、通常は、発生した例外によって提供された情報を使用して何らかの処理を行います。 このセクションでは、データベースの更新を試みるコードを追加します。 また、発生する可能性のある <xref:System.Data.DBConcurrencyException> や、その他の例外も処理します。
 
 > [!NOTE]
-> @No__t_0 メソッドと `ProcessDialogResults` メソッドは、このチュートリアルの後半で追加します。
+> `CreateMessage` メソッドと `ProcessDialogResults` メソッドは、このチュートリアルの後半で追加します。
 
 1. `Form1_Load` メソッドの下に次のコードを追加します。
 
@@ -191,7 +191,7 @@ ms.locfileid: "72648437"
 
 2. フォームが表示されたら、実行を継続したまま Visual Studio IDE に切り替えます。
 
-3. **[表示]** メニューの **[サーバーエクスプローラー]** をクリックします。
+3. **[表示]** メニューの **[サーバー エクスプローラー]** を選択します。
 
 4. **サーバー エクスプローラー**で、アプリケーションで使用する接続を展開し、次に **[テーブル]** ノードを展開します。
 
