@@ -1,4 +1,4 @@
----
+﻿---
 title: マネージコード用のカスタムコード分析チェックインポリシー
 ms.date: 11/04/2016
 ms.topic: conceptual

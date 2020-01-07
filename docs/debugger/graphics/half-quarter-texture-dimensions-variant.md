@@ -1,4 +1,4 @@
----
+﻿---
 title: 半四半期のテクスチャディメンションバリアント |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

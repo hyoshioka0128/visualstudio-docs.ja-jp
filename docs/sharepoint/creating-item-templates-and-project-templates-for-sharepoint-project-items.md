@@ -1,4 +1,4 @@
----
+﻿---
 title: SharePoint プロジェクト項目の項目テンプレート/プロジェクトテンプレート
 ms.date: 02/02/2017
 ms.topic: conceptual

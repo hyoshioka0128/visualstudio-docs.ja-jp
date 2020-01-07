@@ -1,4 +1,4 @@
----
+﻿---
 title: ヒントとテクニック | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -146,3 +146,4 @@ Visual Studio では、このトピックのショートカットを使用して
 - [Visual Studio ブログ](https://devblogs.microsoft.com/visualstudio/)
 - [Visual Studio のヒントとテクニックに関するブログ](https://blogs.msdn.microsoft.com/zainnab/)
 - [Visual Studio ツールボックス (チャネル 9)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+

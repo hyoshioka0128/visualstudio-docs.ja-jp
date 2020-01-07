@@ -1,4 +1,4 @@
----
+﻿---
 title: '[Visual Basic の既定値] ([オプション] ダイアログ ボックス - [プロジェクト]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

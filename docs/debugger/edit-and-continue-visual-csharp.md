@@ -1,4 +1,4 @@
----
+﻿---
 title: エディットコンティニュ (ビジュアルC#) |Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual

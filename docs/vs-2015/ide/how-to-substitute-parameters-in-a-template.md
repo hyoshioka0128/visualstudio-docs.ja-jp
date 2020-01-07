@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : テンプレート内のパラメーターを置き換える | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

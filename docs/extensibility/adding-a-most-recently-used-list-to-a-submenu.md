@@ -1,4 +1,4 @@
----
+﻿---
 title: 最近使用した一覧のサブメニューへの追加 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

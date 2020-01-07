@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : MSBuild で特殊文字をエスケープする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -45,6 +45,6 @@ ms.locfileid: "68178349"
   
 - 特殊文字の代わりに % *xx* という表記を使用します。ここで、*xx* は ASCII 文字の 16 進値を表します。 たとえば、アスタリスク (*) をリテラル文字として使用するには、値 `%2A` を使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md) [項目](../msbuild/msbuild-items.md)

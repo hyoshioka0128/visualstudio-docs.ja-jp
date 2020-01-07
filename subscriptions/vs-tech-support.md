@@ -1,4 +1,4 @@
----
+﻿---
 title: テクニカル サポート特典
 author: evanwindom
 ms.author: lank

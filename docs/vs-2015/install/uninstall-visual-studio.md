@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio 2015 のアンインストール | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016

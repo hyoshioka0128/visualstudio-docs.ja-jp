@@ -1,4 +1,4 @@
----
+﻿---
 title: '[国際対応の設定] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ツールボックス アイテムの選択]、[WPF コンポーネント] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

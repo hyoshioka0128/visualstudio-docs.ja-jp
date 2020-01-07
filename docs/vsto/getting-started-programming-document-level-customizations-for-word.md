@@ -21,13 +21,13 @@ ms.lasthandoff: 04/23/2019
 ms.locfileid: "62971798"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
-  開始した場合は取得する Visual Studio を使用して Microsoft Office Word のドキュメント レベルのカスタマイズを作成する、次を知る必要がありますに示します。
+  ここでは、Visual Studio を使用して Microsoft Office Word 向けのドキュメント レベルのカスタマイズを作成し始めるために必要な事柄を説明します。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
 ## <a name="understand-how-document-level-customizations-for-word-work"></a>Word のドキュメント レベルのカスタマイズの作用についての理解
  作成する各 Word のカスタマイズは、単一の文書に基づいたものになります。 カスタマイズの使用を開始するには、エンドユーザーがドキュメントを開くかまたは Word テンプレートからドキュメントを作成します。 たとえば特定の領域にカーソルを移動したり、ボタンやメニュー項目をクリックしたりするなどのドキュメントでのイベントにより、アセンブリ内でイベント処理メソッドを呼び出すことができます。 ドキュメントが閉じられると、カスタマイズにより提供された機能は Word で使用できなくなります。
-
+ 
  詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
 
 ## <a name="create-document-level-projects-for-word"></a>Word 用のドキュメント レベル プロジェクトの作成

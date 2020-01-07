@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio による双方向言語用アプリケーションの作成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

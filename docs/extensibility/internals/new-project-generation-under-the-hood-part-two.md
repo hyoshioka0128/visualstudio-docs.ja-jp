@@ -1,4 +1,4 @@
----
+﻿---
 title: '新しいプロジェクトの生成: 内部的には、パート 2 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,7 +20,6 @@ ms.locfileid: "66311019"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 
-[新規プロジェクトの生成：パート1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) で**新規プロジェク**トのダイアログボックスの表示方法について説明しました。 **Visual C# Windows アプリケーション** を選択し、**名前** と **場所** のテキストボックスに入力し、[OK]をクリックしたと仮定します。
 
 ## <a name="generating-the-solution-files"></a>ソリューション ファイルを生成します。
  アプリケーション テンプレートを選択するように指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を解凍して、対応する .vstemplate ファイルを開くと、このファイル内の XML コマンドを解釈するためのテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。

@@ -22,11 +22,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573683"
 ---
 # <a name="string-expected"></a>文字列が必要です。
-`String` 型以外のオブジェクトで、**String.prototype.toString** メソッドまたは **String.prototype.valueOf** メソッドを呼び出しました。 この場合の呼び出し元のオブジェクトは、`String` 型である必要があります。  
+`String` 型以外のオブジェクトで、**String.prototype.toString** メソッドまたは **String.prototype.valueOf** メソッドを呼び出しました。この場合の呼び出し元のオブジェクトは、`String` 型である必要があります。
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **String.prototype.toString** メソッドまたは **String.prototype.valueOf** メソッドの呼び出しは、`String` 型のオブジェクトでのみ行います。  
+- **String.prototype.toString** メソッドまたは **String.prototype.valueOf** メソッドの呼び出しは、`String` 型のオブジェクトでのみ行います。
   
 ## <a name="see-also"></a>参照  
  [文字列オブジェクト](../../javascript/reference/string-object-javascript.md)   

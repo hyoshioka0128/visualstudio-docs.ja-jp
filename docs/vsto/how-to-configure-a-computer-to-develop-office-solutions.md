@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Office ソリューションを開発するようにコンピューターを構成する'
 ms.date: 02/02/2017
 ms.topic: conceptual

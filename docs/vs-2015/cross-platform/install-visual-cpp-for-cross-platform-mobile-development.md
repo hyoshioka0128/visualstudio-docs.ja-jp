@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual C++ for Cross-Platform Mobile Development のインストール | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -133,6 +133,6 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
 4. **[OK]** を選んで、カスタム ツール フォルダーの場所を保存します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [iOS を使用してビルドするためのツールのインストールおよび構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ クロスプラットフォーム モバイル](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

@@ -1,4 +1,4 @@
----
+﻿---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[書式設定] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

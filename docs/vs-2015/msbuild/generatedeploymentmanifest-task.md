@@ -1,4 +1,4 @@
----
+﻿---
 title: GenerateDeploymentManifest タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -65,7 +65,7 @@ ms.locfileid: "68149591"
 ## <a name="remarks"></a>Remarks  
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、[「Task Base Class」](../msbuild/task-base-class.md) を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [タスク](../msbuild/msbuild-tasks.md)   
  [GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)   
  [SignFile タスク](../msbuild/signfile-task.md)   

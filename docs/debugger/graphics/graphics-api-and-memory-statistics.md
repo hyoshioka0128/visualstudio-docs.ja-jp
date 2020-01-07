@@ -1,4 +1,4 @@
----
+﻿---
 title: グラフィックス API とメモリの統計情報 |Microsoft Docs
 ms.date: 03/02/2017
 ms.topic: conceptual

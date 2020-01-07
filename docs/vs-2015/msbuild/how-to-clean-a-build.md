@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : ビルドをクリーンする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -101,7 +101,7 @@ ms.locfileid: "68156649"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Exec タスク](../msbuild/exec-task.md)   
  [MakeDir タスク](../msbuild/makedir-task.md)   
  [RemoveDir タスク](../msbuild/removedir-task.md)   

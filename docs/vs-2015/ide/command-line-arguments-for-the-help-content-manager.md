@@ -1,4 +1,4 @@
----
+﻿---
 title: ヘルプ コンテンツ マネージャーのコマンド ライン引数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

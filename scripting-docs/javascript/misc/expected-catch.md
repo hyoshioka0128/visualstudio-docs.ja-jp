@@ -1,4 +1,4 @@
----
+﻿---
 title: "' Catch ' | が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -31,5 +31,5 @@ ms.locfileid: "72573429"
 - 使用してください、**finally**ブロックの代わりに、**catch** ブロックします。  
   
 ## <a name="see-also"></a>参照  
- [お試しください...キャッチ...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)の   
+ [try...catch...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)  
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)

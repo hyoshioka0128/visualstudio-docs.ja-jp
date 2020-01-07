@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 複数のプロジェクト ファイルで同じターゲットを使用する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -114,6 +114,6 @@ ms.locfileid: "68178328"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [ターゲット](../msbuild/msbuild-targets.md)

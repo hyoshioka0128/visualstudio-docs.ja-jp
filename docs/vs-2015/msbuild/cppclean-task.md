@@ -1,4 +1,4 @@
----
+﻿---
 title: CPPClean タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -45,5 +45,5 @@ Visual C++ プロジェクトのビルド時に MSBuild によって作成され
 
 ## <a name="remarks"></a>Remarks  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

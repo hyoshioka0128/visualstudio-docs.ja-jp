@@ -1,4 +1,4 @@
----
+﻿---
 title: .NET Framework を対象とする Office プロジェクトの変更をデザインする
 ms.date: 02/02/2017
 ms.topic: conceptual

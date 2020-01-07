@@ -1,4 +1,4 @@
----
+﻿---
 title: '依存関係図: ガイドライン'
 ms.date: 09/28/2018
 ms.topic: conceptual
