@@ -66,7 +66,7 @@ ms.locfileid: "63442417"
 
   [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]
 
-  値と参照型パラメーターの詳細については、次を参照してください[値と参照渡しの引数を渡す&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic) 用と[パラメーターを渡す&#40;C&#35; 。プログラミング ガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)します。
+  値と参照型パラメーターの詳細については、[引数の値渡しと参照渡し](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference)と [パラメーターの引き渡し (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
