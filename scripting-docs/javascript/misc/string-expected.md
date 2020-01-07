@@ -26,7 +26,7 @@ ms.locfileid: "72573683"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **String.prototype.toString** メソッドまたは **String.prototype.valueOf** メソッドの呼び出しは、`String` 型のオブジェクトでだけ行います。
+- **String.prototype.toString** メソッドまたは **String.prototype.valueOf** メソッドの呼び出しは、`String` 型のオブジェクトでのみ行います。
   
 ## <a name="see-also"></a>参照  
  [文字列オブジェクト](../../javascript/reference/string-object-javascript.md)   
