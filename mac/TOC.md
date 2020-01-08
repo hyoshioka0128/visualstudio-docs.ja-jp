@@ -25,6 +25,7 @@
 ## [プロジェクトの新規作成](create-new-projects.md)
 ## [プロジェクト項目の追加と削除](add-and-remove-project-items.md)
 ## [ソリューションとプロジェクト プロパティの管理](managing-solutions-and-project-properties.md)
+## [マルチ ターゲット](project-multitargeting.md)
 ## プロジェクト内の参照の管理
 ### [概要](managing-references-in-a-project.md)
 ### [チュートリアル - プロジェクトに NuGet パッケージを含める](nuget-walkthrough.md)
@@ -35,6 +36,8 @@
 ## [エディターの機能](source-editor.md)
 ## [リファクタリング](refactoring.md)
 ## [IntelliSense](intellisense.md)
+## [インポート項目を表示](show-imports.md)
+## [マルチキャレットの編集](multi-caret-editing.md)
 ## [コメント](comments.md)
 ## [エディターの動作](editor-behavior.md)
 ## [タスク コメント](task-comments.md)
@@ -47,6 +50,7 @@
 # デバッグ
 ## [概要](debugging.md)
 ## [データの視覚化](data-visualizations.md)
+## [ソース リンクを使用した NuGet パッケージのデバッグ](source-link.md)
 
 # コードのコンパイルとビルド
 ## [概要](compiling-and-building.md)
