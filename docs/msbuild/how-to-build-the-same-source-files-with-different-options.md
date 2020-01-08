@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, modifying
 - Hello World example [Visual Studio]
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b196ae92b7388e8b9f4e1cee60a62b3839a9c120
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977334"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585233"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>方法: 同じソース ファイルを異なるオプションでビルドする
 プロジェクトをビルドする場合、同じコンポーネントを異なるビルド オプションでコンパイルすることがよくあります。 たとえば、シンボル情報を付ければデバッグ ビルドを作成でき、シンボル情報なしで最適化を有効にすればリリース ビルドを作成できます。 あるいは、x86 や [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] などのように、特定のプラットフォーム上で実行するようにプロジェクトをビルドできます。 これらのいずれの場合も、ほとんどのビルド オプションは同じままで、ビルド構成を制御するためにいくつかのオプションが変更されるだけです。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、異なるビルド構成を作成するためにプロパティと条件を使用します。
@@ -58,7 +58,7 @@ ms.locfileid: "62977334"
   msbuild file.proj -property:Flavor=Debug
   ```
 
-  または
+  or
 
   ```cmd
   Msbuild file.proj -p:Flavor=Debug
@@ -66,13 +66,13 @@ ms.locfileid: "62977334"
 
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>コマンド ライン上で 2 つ以上のプロジェクト プロパティを指定するには
 
-- **-property** または **-p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**-property** または **-p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 次に例を示します。
+- **-property** または **-p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、 **-property** または **-p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 次に例を示します。
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
   ```
 
-  または
+  or
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86

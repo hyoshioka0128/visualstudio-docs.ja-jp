@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656509"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593760"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>方法: surround-with コード スニペットを使用する
 
@@ -27,7 +27,7 @@ ms.locfileid: "72656509"
 
 1. **コード エディター**で、囲むテキストを選択します。
 
-1. **Ctrl** + **K** キー、**Ctrl** + **S** キーの順に押します。
+1. **Ctrl**+**K** キー、**Ctrl**+**S** キーの順に押します。
 
 1. マウスを使うか、またはコード スニペットの名前を入力してから **Tab** または **Enter** キーを押して、コード スニペット リストからコード スニペットを選択します。
 

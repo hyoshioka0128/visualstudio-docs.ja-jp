@@ -3,8 +3,8 @@ title: Visual Studio Enterprise のワークロード ID とコンポーネン�
 titleSuffix: ''
 description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 345a0c808c00281e1dcf10306520416eaa1eeafe
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 5fb488bf573e37b8961639b952debe1b999d039a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797336"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588474"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise のコンポーネント ディレクトリ
 

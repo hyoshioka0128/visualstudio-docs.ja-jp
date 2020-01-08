@@ -14,17 +14,17 @@ helpviewer_keywords:
 - <Choose> Element [MSBuild]
 - Choose Element [MSBuild]
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 316343e355f9cf3070f04660d89f9fbfd15484d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954870"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593370"
 ---
 # <a name="choose-element-msbuild"></a>Choose 要素 (MSBuild)
 子要素を評価して、`ItemGroup` 要素および/または `PropertyGroup` 要素の 1 つのセットを評価対象に選択します。
@@ -61,7 +61,7 @@ ms.locfileid: "62954870"
 | [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
 | [When](../msbuild/when-element-msbuild.md) | `Choose` 要素で選ぶ対象のコード ブロックを指定します。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。
 
 ## <a name="example"></a>例

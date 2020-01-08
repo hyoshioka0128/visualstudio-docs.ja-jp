@@ -8,17 +8,17 @@ helpviewer_keywords:
 - graphs, analyzing load tests
 - load tests, zooming with graphs
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8e37d7ce5f4f52074904aa353ad6d02d65f5ca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653256"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594365"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>方法:ロード テスト結果でグラフの領域にズーム インする
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>方法: ロード テスト結果でグラフの領域にズーム インする
 
 ロード テストを完了したら、ズーム バーを使用して、グラフの領域にズーム インしてスクロールできます。 ズーム インすると、ロード テストの実行中に生成されたデータをより詳細に確認できます。
 

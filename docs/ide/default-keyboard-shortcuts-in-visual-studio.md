@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652492"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596282"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
@@ -536,7 +536,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|なし|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|**Shift + Alt + ↓**|
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + ←**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + →**|

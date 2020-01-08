@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks specific to C++
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6ea400d7473fae27ac4b17d9e3692748db549f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593825"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>C++ に固有の MSBuild タスク
 タスクでは、ビルド プロセスの間に実行するコードを指定します。 C++ をインストールすると、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でインストールされるタスクに加えて、以下のタスクを使用できます。 詳細については、「[MSBuild (C++) の概要](/cpp/build/msbuild-visual-cpp-overview)」を参照してください。

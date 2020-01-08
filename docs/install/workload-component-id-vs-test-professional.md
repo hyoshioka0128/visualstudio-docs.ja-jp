@@ -2,8 +2,8 @@
 title: Visual Studio Test Professional のワークロードとコンポーネント ID
 titleSuffix: ''
 description: Visual Studio のワークロードとコンポーネント ID を使用して、あらゆる側面からテストを行う担当者向けの統合テスト ツールを提供します
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: d61105a16919e8384aad961d62a81ff3a8688b25
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 9ed75c9731d36f48dcb50be7f929c4cba5ed3b6c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213651"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590899"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional のコンポーネント ディレクトリ
 
@@ -45,7 +45,7 @@ VSIX マニフェストで依存関係を設定するときは、コンポーネ
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 必須
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | 必須
@@ -54,7 +54,7 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | name | Version
+コンポーネント ID | 名前 | バージョン
 --- | --- | ---
 N/A | N/A | N/A
 

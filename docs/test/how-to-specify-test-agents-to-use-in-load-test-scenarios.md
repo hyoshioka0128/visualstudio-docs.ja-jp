@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588929"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>方法:ロード テスト シナリオで使用するテスト エージェントを指定する
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>方法: ロード テスト シナリオで使用するテスト エージェントを指定する
 
 **新しいロード テスト ウィザード**でロード テストを作成した後、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。
 

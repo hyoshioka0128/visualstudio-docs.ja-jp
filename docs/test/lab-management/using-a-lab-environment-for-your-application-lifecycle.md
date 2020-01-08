@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c9d7e90e0c4eb48a19c36ad86d8f438080b38d62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653098"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588903"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>DevOps でラボ環境を使用する
 

@@ -1,5 +1,5 @@
 ---
-title: 方法:ロード テスト結果をリポジトリにインポートする
+title: '方法: ロード テスト結果をリポジトリにインポートする'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load tests, importing results
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 067c9a9d20f3fe456f93086f2099183fd514d91a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bbc8c352c7bf3cda0524f07aa82b6ccbe70602b2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653508"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589033"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>方法:ロード テスト結果をリポジトリにインポートする
+# <a name="how-to-import-load-test-results-into-a-repository"></a>方法: ロード テスト結果をリポジトリにインポートする
 
 ロード テストを実行すると、実行中に収集された情報がロード テストの結果リポジトリに保存されます。 ロード テストの結果リポジトリには、パフォーマンス カウンター データとエラー情報が含まれています。 詳細については、「[ロード テストの結果リポジトリ内のロード テスト結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)」を参照してください。
 

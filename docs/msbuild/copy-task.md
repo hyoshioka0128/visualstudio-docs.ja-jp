@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, Copy task
 - Copy task [MSBuild]
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827117"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596087"
 ---
 # <a name="copy-task"></a>Copy タスク
 ファイルをファイル システム上の新しい場所にコピーします。
@@ -65,7 +65,7 @@ ms.locfileid: "62827117"
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 `DestinationFolder` パラメーターか `DestinationFiles` パラメーターのいずれかを指定する必要がありますが、両方は指定できません。 両方を指定した場合、タスクは失敗し、エラーがログに記録されます。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。

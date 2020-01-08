@@ -7,17 +7,17 @@ helpviewer_keywords:
 - bidirectional language support
 - Arabic, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa91a1f3342039821dc1e0a2ea89c8b0e25f224
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647368"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591997"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio での双方向言語のサポート
 
@@ -58,7 +58,7 @@ Visual Studio は Unicode をサポートしているため、システムで適
 
 - プロパティ値。
 
-   アラビア語およびヘブライ語のテキストは、 **[プロパティ]** ウィンドウで使用できます。 このウィンドウでは、Windows の標準のキーストロークを使用して、右から左への読み取り順序と左から右への読み取り順序を切り替えることができます (**Ctrl** キー + **右 Shift**キーを押すと右から左への読み取り順序、**Ctrl**  キー + **左 Shift** キーを押すと左から右への読み取り順序になります)。
+   アラビア語およびヘブライ語のテキストは、 **[プロパティ]** ウィンドウで使用できます。 このウィンドウでは、Windows の標準のキーストロークを使用して、右から左への読み取り順序と左から右への読み取り順序を切り替えることができます (**Ctrl** キー +**右 Shift**キーを押すと右から左への読み取り順序、**Ctrl**  キー +**左 Shift** キーを押すと左から右への読み取り順序になります)。
 
 - コードおよびリテラル テキスト。
 

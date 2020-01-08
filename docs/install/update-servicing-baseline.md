@@ -5,25 +5,25 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: doughall
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888579"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590957"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>サービス ベースライン使用時の Visual Studio の更新
 
 Visual Studio は、製品のライフサイクルの間に頻繁に更新されます。 2 種類の更新があります。 
 
-* **マイナー リリース更新** &mdash; たとえば、16.0 から 16.1 &mdash; 新しい機能とコンポーネントが含まれます。  
+* **マイナー リリース更新**&mdash; たとえば、16.0 から 16.1 &mdash; 新しい機能とコンポーネントが含まれます。  
 * **サービス更新** — たとえば、16.0.4 から 16.0.5 — 重要な問題だけに対象を絞った修正が含まれます。
 
 エンタープライズ管理者は、各クライアントをサービス ベースラインに留めることを選択できます。 サービス ベースラインは、次のサービス ベースラインのリリースから 1 年間、サービス更新プログラムによりサポートされます。

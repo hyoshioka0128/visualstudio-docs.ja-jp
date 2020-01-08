@@ -11,17 +11,17 @@ helpviewer_keywords:
 - special characters to escape
 - msbuild, special characters to escape
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7df1c087e35fd188461382e4f44de6ab703964
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 686640cbe3c93cbe3d938cd3025a77129c829bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595112"
 ---
 # <a name="special-characters-to-escape"></a>エスケープする特殊文字
 特殊文字は、使用するコンテキストで特別な意味を持つ場合にのみ、エスケープする必要があります。 たとえば、アスタリスク (*) は、項目定義の Include 属性と Exclude 属性、または <xref:Microsoft.Build.Tasks.CreateItem> の呼び出しでのみ、特殊文字となります。 その他のすべての場合において、アスタリスクはリテラルのアスタリスクとして扱われます。 プロジェクト ファイルではアスタリスクをエスケープする必要はありませんが、そのようにしても問題はありません。
@@ -30,7 +30,7 @@ ms.locfileid: "71481965"
 
  エスケープする特殊文字の完全な一覧は次のとおりです。
 
-|Character|説明|
+|文字|説明|
 |---------------|-----------------|
 |%|パーセント記号は、メタデータを参照するために使用します。|
 |$|ドル記号は、プロパティを参照するために使用します。|

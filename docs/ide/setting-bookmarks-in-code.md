@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ac1e911b00c79c64b77dca30b89a1bec74723f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621622"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595437"
 ---
 # <a name="set-bookmarks-in-code"></a>コードへのブックマークの設定
 
@@ -27,7 +27,7 @@ ms.locfileid: "72621622"
 
 ## <a name="manage-bookmarks"></a>ブックマークの管理
 
-ブックマークを追加するには、ブックマークを設定する行にカーソルを置きます。 **[ブックマークの切り替え]** ボタンを選択するか、または**Ctrl** + **K** キー、**Ctrl** + **K** キーを押します。 これで、ブックマークが追加されます。 もう一度、 **[ブックマークの切り替え]** ボタンをクリックすると (または **Ctrl** + **K** キー、**Ctrl** + **K** キーを押すと)、ブックマークが削除されます。
+ブックマークを追加するには、ブックマークを設定する行にカーソルを置きます。 **[ブックマークの切り替え]** ボタンを選択するか、または**Ctrl**+**K** キー、**Ctrl**+**K** キーを押します。 これで、ブックマークが追加されます。 もう一度、 **[ブックマークの切り替え]** ボタンをクリックすると (または **Ctrl**+**K** キー、**Ctrl**+**K** キーを押すと)、ブックマークが削除されます。
 
 ブックマークが何を表しているかをひとめでわかるようにするには、右クリックまたはコンテキスト メニューから**ブックマーク ウィンドウ**を表示し、ブックマークの名前を変更します。 ブックマークを削除するには、ブックマーク ウィンドウの **[削除]** ボタンをクリックします。
 

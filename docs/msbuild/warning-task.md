@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779092"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567139"
 ---
 # <a name="warning-task"></a>Warning タスク
 条件付きステートメントの評価に基づいてビルド中の警告をログに記録します。
@@ -38,7 +38,7 @@ ms.locfileid: "62779092"
 | `HelpKeyword` | 省略可能な `String` 型のパラメーターです。<br /><br /> 警告に関連付けるヘルプ キーワード。 |
 | `Text` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Condition` パラメーターが `true` と評価された場合に、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] がログに記録する警告テキストです。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `Warning` タスクでは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトは、次のビルド手順に進む前に、必要な構成の存在を確認できます。
 
  `Warning` タスクの `Condition` パラメーターが `true` と評価される場合、`Text` パラメーターの値がログに記録され、ビルドが引き続き実行されます。 `Condition` パラメーターが存在しない場合は、警告テキストがログに記録されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。

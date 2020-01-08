@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Error task [MSBuild]
 - MSBuild, Error task
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821136"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596360"
 ---
 # <a name="error-task"></a>Error タスク
 ビルドを停止し、条件付きステートメントの評価に基づいてエラーをログに記録します。
@@ -38,7 +38,7 @@ ms.locfileid: "62821136"
 | `HelpKeyword` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーに関連付けるヘルプ キーワード。 |
 | `Text` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Condition` パラメーターが `true` と評価された場合に、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] がログに記録するエラー テキストです。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 `Error` タスクにより、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトはロガーに対してメッセージ テキストを発行し、ビルドの実行を中断することができます。
 
 `Condition` パラメーターが `true` と評価されると、ビルドを中止し、ログにエラーを記録します。 `Condition` パラメーターが存在しない場合には、エラーがログ記録され、ビルドの実行が中止されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。
