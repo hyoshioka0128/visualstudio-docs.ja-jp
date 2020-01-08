@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, ReadLinesFromFile task
 - ReadLinesFromFile task [MSBuild]
 ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b08ab26b30abe767674d51795dd4f3a4cfac01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aeb6e43e315aceef5028e77480b2817cd8edb030
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597361"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile タスク
 テキスト ファイルからアイテムの一覧を読み込みます。
@@ -36,7 +36,7 @@ ms.locfileid: "62974632"
 |`File`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 読み取るファイルを指定します。 ファイルでは、行あたり 1 項目にする必要があります。|
 |`Lines`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ファイルから読み込まれた行が含まれます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例

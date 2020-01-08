@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445297"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567295"
 ---
 # <a name="walkthrough-use-msbuild"></a>チュートリアル: MSBuild の使用
 
@@ -38,14 +38,14 @@ MSBuild は、Visual Studio から実行することも、**コマンド ウィ�
 1. Visual Studio を開き、プロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**winforms**」と入力します。**[新しい Windows フォーム アプリの作成 (.NET Framework)]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**winforms**」と入力します。 **[新しい Windows フォーム アプリの作成 (.NET Framework)]** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
 
-    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「*D:\\*」など)。 **[ソリューション]**、**[ソリューション名]** (**BuildApp**)、および **[フレームワーク]** の既定値をそのまま使用します。
+    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「*D:\\* 」など)。 **[ソリューション]** 、 **[ソリューション名]** (**BuildApp**)、および **[フレームワーク]** の既定値をそのまま使用します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** > **[Windows Desktop]** を展開し、**[Windows フォーム アプリ (.NET Framework)]** を選択します。 次に、**[OK]** を選択します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]**  >  **[Windows Desktop]** を展開し、 **[Windows フォーム アプリ (.NET Framework)]** を選択します。 次に、 **[OK]** を選択します。
 
-    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「*D:\\*」など)。 それ以外は、既定値をそのまま使用します (**[ソリューションのディレクトリを作成]** はオン、**[ソース管理に追加]** はオフ、**[ソリューション名]** は **BuildApp**)。
+    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「*D:\\* 」など)。 それ以外は、既定値をそのまま使用します ( **[ソリューションのディレクトリを作成]** はオン、 **[ソース管理に追加]** はオフ、 **[ソリューション名]** は **BuildApp**)。
     ::: moniker-end
 
 1. **[OK]** または **[作成]** をクリックして、プロジェクト ファイルを作成します。
@@ -58,11 +58,11 @@ MSBuild は、Visual Studio から実行することも、**コマンド ウィ�
 
 1. **ソリューション エクスプローラー**で、**BuildApp** というプロジェクト ノードをクリックします。
 
-2. **プロパティ** ブラウザーで、**[プロジェクト ファイル]** プロパティが *BuildApp.csproj* になっていることを確認します。 プロジェクト ファイルはすべて、名前に *proj* というサフィックスが付いています。 Visual Basic プロジェクトを作成した場合は、プロジェクト ファイルの名前が *BuildApp.vbproj* になります。
+2. **プロパティ** ブラウザーで、 **[プロジェクト ファイル]** プロパティが *BuildApp.csproj* になっていることを確認します。 プロジェクト ファイルはすべて、名前に *proj* というサフィックスが付いています。 Visual Basic プロジェクトを作成した場合は、プロジェクト ファイルの名前が *BuildApp.vbproj* になります。
 
-3. プロジェクト ノードを右クリックし、**[プロジェクトのアンロード]** をクリックします。
+3. プロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** をクリックします。
 
-4. プロジェクト ノードを再度右クリックし、**[BuildApp.csproj の編集]** をクリックします。
+4. プロジェクト ノードを再度右クリックし、 **[BuildApp.csproj の編集]** をクリックします。
 
      コード エディターにプロジェクト ファイルが表示されます。
 
@@ -255,11 +255,11 @@ $(PropertyName)
 
 ### <a name="reserved-properties"></a>予約済みのプロパティ
 
- MSBuild では、プロジェクト ファイルに関する情報や MSBuild のバイナリに関する情報を保持するために、いくつかのプロパティ名が予約されています。 たとえば、MSBuildToolsPath も予約済みのプロパティの 1 つです。 予約済みのプロパティは、他のプロパティと同じように $ 表記で参照できます。 詳細については、「[方法 :プロジェクト ファイルの名前または場所を参照する](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)」および「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」をご覧ください。
+ MSBuild では、プロジェクト ファイルに関する情報や MSBuild のバイナリに関する情報を保持するために、いくつかのプロパティ名が予約されています。 たとえば、MSBuildToolsPath も予約済みのプロパティの 1 つです。 予約済みのプロパティは、他のプロパティと同じように $ 表記で参照できます。 詳細については、[プロジェクト ファイルの名前または場所を参照する](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)」および「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」をご覧ください。
 
 ### <a name="environment-variables"></a>環境変数
 
- プロジェクト ファイルで環境変数を参照する場合も、ビルド プロパティを参照するときと同じ方法を使用します。 たとえば、プロジェクト ファイルで PATH 環境変数を使用するには、$(Path) と記述します。 プロジェクト ファイルに、環境変数と同じ名前のプロパティが定義されている場合、環境変数の値はプロジェクト内のプロパティによってオーバーライドされます。 詳細については、「[方法 :ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」をご覧ください。
+ プロジェクト ファイルで環境変数を参照する場合も、ビルド プロパティを参照するときと同じ方法を使用します。 たとえば、プロジェクト ファイルで PATH 環境変数を使用するには、$(Path) と記述します。 プロジェクト ファイルに、環境変数と同じ名前のプロパティが定義されている場合、環境変数の値はプロジェクト内のプロパティによってオーバーライドされます。 詳細については、[ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」をご覧ください。
 
 ## <a name="set-properties-from-the-command-line"></a>コマンドラインからプロパティを設定する
 

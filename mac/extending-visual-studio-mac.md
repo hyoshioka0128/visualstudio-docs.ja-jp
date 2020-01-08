@@ -3,15 +3,15 @@ title: Visual Studio for Mac の拡張
 description: Visual Studio for Mac の機能は、拡張機能パッケージというモジュールを使用して拡張できます。 このガイドの最初の第 1 部では、ドキュメントに日時を挿入する単純な Visual Studio for Mac 拡張機能パッケージを作成します。 このガイドの第 2 部では、拡張機能パッケージ システムの基礎と、Visual Studio for Mac の基礎を形成するコア API の一部を紹介します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/07/2019
+ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 76f8f4945542d1b2fd4dce230d750db4c965af76
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983270"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735832"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -72,10 +72,10 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
-  <command id="DateInserter.DateInserterCommands.InsertDate"
+  <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
-            defaulthandler="DateInserter.InsertDateHandler" />
+            defaultHandler="DateInserter.InsertDateHandler" />
 </Extension>
 ```
 
@@ -92,7 +92,7 @@ CommandItem 拡張機能を `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイント�
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
-  <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
+  <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
 ```
 

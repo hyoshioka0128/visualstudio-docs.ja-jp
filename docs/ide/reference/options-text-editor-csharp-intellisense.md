@@ -11,17 +11,17 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666241"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596217"
 ---
 # <a name="options-text-editor-c-intellisense"></a>[オプション]、[テキスト エディター]、[C#]、[IntelliSense]
 
@@ -33,7 +33,7 @@ C# での IntelliSense の動作設定を変更するには、 **[IntelliSense]*
 
 - 文字が入力された後に入力候補一覧を表示する*
 
-   このオプションを選択すると、入力を開始したときに IntelliSense によって入力候補一覧が自動的に表示されます。 このオプションを選択しない場合でも、IntelliSense の入力候補は **[IntelliSense]** メニューから、または **Ctrl** + **Space** キーを押して、使うことができます。
+   このオプションを選択すると、入力を開始したときに IntelliSense によって入力候補一覧が自動的に表示されます。 このオプションを選択しない場合でも、IntelliSense の入力候補は **[IntelliSense]** メニューから、または **Ctrl**+**Space** キーを押して、使うことができます。
 
 - 文字が削除された後に入力候補一覧を表示する
 
@@ -53,7 +53,7 @@ C# での IntelliSense の動作設定を変更するには、 **[IntelliSense]*
 
 - 識別子の後に ? Tab を入力したときにスニペットを含める
 
-   このオプションをオンにした場合、識別子の後で **?** + **Tab** キーを押すと、IntelliSense によって C# コード スニペットのエイリアスが入力候補一覧に追加されます。
+   このオプションをオンにした場合、識別子の後で **?** +**Tab** キーを押すと、IntelliSense によって C# コード スニペットのエイリアスが入力候補一覧に追加されます。
 
 ## <a name="enter-key-behavior"></a>Enter キー入力時動作
 

@@ -4,15 +4,15 @@ ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test agents and controllers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 657037cdb3ef36c4ef81c72cb4fc43f6a94203a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665172"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597348"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>ロード テストを実行するためのテスト エージェントおよびテスト コントローラーの概要
 

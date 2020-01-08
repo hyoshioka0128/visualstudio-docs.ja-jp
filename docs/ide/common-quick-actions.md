@@ -3,20 +3,20 @@ title: 共通のクイック アクション
 description: スペルミスのあるキーワードや記号の修正、マージの競合の解決、必要なインポートの削除、型の生成、ローカル変数の導入など、C# および Visual Basic での最も一般的なクイック アクション
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585523"
 ---
 # <a name="common-quick-actions"></a>共通のクイック アクション
 

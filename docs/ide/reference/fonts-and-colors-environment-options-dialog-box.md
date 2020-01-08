@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667020"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595619"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Find and Replace, Options dialog box
 - Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c9d1f75eef2b785c8fa96bd721144480e134fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654385"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569570"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>[検索と置換] ([オプション] ダイアログ ボックス - [環境])
 

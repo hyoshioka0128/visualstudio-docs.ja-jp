@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747888"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595489"
 ---
 # <a name="list-threads-command"></a>ListThreads コマンド
 現在のプログラムのスレッド一覧を表示します。
@@ -35,7 +35,7 @@ Debug.ListThreads [index]
 
 任意。 スレッドをインデックスで選択して、現在のスレッドにします。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 指定した場合、`index` 引数により、示されたスレッドが現在のスレッドとしてマークされます。 一覧の現在のスレッドの横にはアスタリスク (*) が表示されます。
 
 ## <a name="example"></a>例

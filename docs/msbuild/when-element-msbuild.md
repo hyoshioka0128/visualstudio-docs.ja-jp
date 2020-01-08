@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 481be1f0e9c5444e56c95b13e938cda1d541af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566898"
 ---
 # <a name="when-element-msbuild"></a>When 要素 (MSBuild)
 `Choose` 要素で選ぶ対象のコード ブロックを指定します。
@@ -63,7 +63,7 @@ ms.locfileid: "62777959"
 |-------------|-----------------|
 |[Choose 要素 (MSBuild)](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `Condition` 属性が true と評価された場合、その `When` 要素の子の `ItemGroup` 要素と `PropertyGroup` 要素が実行されて、後続の `When` 要素はすべてスキップされます。
 
  `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66c8b597e999f1eab3a52c663537ee94fe4f40a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817441"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592127"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild の詳細な概念
 このセクションのドキュメントでは、MSBuild を使用して実行するビルドを向上させる高度なテクニックの使用方法について説明します。

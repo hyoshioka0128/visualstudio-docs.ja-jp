@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888030"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595385"
 ---
 # <a name="csc-task"></a>Csc タスク
 *csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「[C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
@@ -80,7 +80,7 @@ ms.locfileid: "70888030"
 | `Win32Manifest` | 省略可能な `String` 型のパラメーターです。<br /><br /> 追加する Win32 マニフェストを指定します。 |
 | `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[-win32res (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)」をご覧ください。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 上記のパラメーター以外に、このタスクは `Microsoft.Build.Tasks.ManagedCompiler` クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから継承されますが、それにはさらに <xref:Microsoft.Build.Utilities.ToolTask> クラスという継承元が存在します。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例

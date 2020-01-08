@@ -12,17 +12,17 @@ helpviewer_keywords:
 - resources [Visual Studio]
 - Resources page in Project Designer
 - application resources [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29e4fbbd8d50001807f3d90a82d18e40a3674d01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654246"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593695"
 ---
 # <a name="manage-application-resources-net"></a>アプリケーション リソースの管理 (.NET)
 
@@ -39,7 +39,7 @@ ms.locfileid: "72654246"
 
 - **ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、 **[プロパティ]** を選びます
 - **Ctrl**+**Q** 検索ボックスでの「**プロジェクト プロパティ**」の入力
-- **ソリューション エクスプローラー**で **Alt** + **Enter** キーを押します。
+- **ソリューション エクスプローラー**で **Alt**+**Enter** キーを押します。
 
 **[リソース]** タブをクリックします。プロジェクトにまだ *.resx* ファイルが含まれていない場合や、異なる種類のリソースを追加および削除する場合、また既存のリソースを変更する場合は、.resx ファイルを追加できます。
 

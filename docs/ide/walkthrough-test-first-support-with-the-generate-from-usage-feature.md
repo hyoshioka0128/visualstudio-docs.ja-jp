@@ -8,17 +8,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647157"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596893"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファースト開発
 
@@ -129,7 +129,7 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
 
 ### <a name="run-the-tests"></a>テストを実行
 
-1. **[テスト]** メニューで **[実行]**  >  **[すべてのテスト]** を選びます。
+1. **[テスト]** メニューで **[実行]**  >  **[すべてのテスト]** を選択します。
 
      **[実行]**  >  **[すべてのテスト]** コマンドは、現在のソリューション用に作成されたテスト フレームワークですべてのテストを実行します。 この場合、2 つのテストがありますが、どちらも失敗することが予想されます。 `DefaultAutomobileIsInitializedCorrectly` テストは、 `Assert.IsTrue` 条件が `False`を返すため失敗します。 `AutomobileWithModelNameCanStart` テストは、 `Start` クラスの `Automobile` メソッドが例外をスローするため失敗します。
 

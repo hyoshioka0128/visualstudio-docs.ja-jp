@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747743"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565878"
 ---
 # <a name="shell-command"></a>Shell コマンド
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内から実行可能プログラムを起動します。
@@ -56,7 +56,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
 任意。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 /dir、/o、/c の各スイッチは、`Tools.Shell` の直後に指定する必要があります。 実行可能ファイルの名前の後に指定した内容は、その実行可能ファイルにコマンド ライン引数として渡されます。
 
 定義済みの `Shell` エイリアスは、`Tools.Shell` の代わりに使用できます。

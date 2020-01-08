@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440030"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595073"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準ツールセット構成とカスタム ツールセット構成
 MSBuild ツールセットには、アプリケーション プロジェクトのビルドに使用できるタスク、ターゲット、およびツールへの参照が含まれています。 MSBuild には標準ツールセットが用意されていますが、カスタム ツールセットを作成することもできます。 ツールセットを指定する方法については、「[ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」を参照してください。
@@ -108,7 +108,7 @@ Visual Studio 2017 以降のバージョンでは、MSBuild のパスにレジ�
 
 - **$(MSBuildBinPath)** は、`ToolsVersion` が定義されているレジストリまたは構成ファイルで指定された `ToolsPath` 値に設定されます。 レジストリまたは構成ファイルの `$(MSBuildToolsPath)` 設定は、コア タスクとコア ターゲットの場所を指定します。 プロジェクト ファイルでは、この設定が $(MSBuildBinPath) プロパティにマップされ、さらに $(MSBuildToolsPath) プロパティにもマップされます。
 
-- `$(MSBuildToolsPath)`: このプロパティは予約済みのプロパティであり、構成ファイルで指定されている MSBuildToolsPath プロパティによって提供されます  (このプロパティは `$(MSBuildBinPath)` に代わるものです。 ただし、`$(MSBuildBinPath)` も互換性のために残されています)。カスタム ツールセットでは、`$(MSBuildToolsPath)` または `$(MSBuildBinPath)` のいずれか一方を定義してください。両方定義する場合は、これらのプロパティは同じ値になる必要があります。
+- `$(MSBuildToolsPath)`: このプロパティは予約済みのプロパティであり、構成ファイルで指定されている MSBuildToolsPath プロパティによって提供されます (このプロパティは `$(MSBuildBinPath)` に代わるものです。 ただし、`$(MSBuildBinPath)` も互換性のために残されています)。カスタム ツールセットでは、`$(MSBuildToolsPath)` または `$(MSBuildBinPath)` のいずれか一方を定義してください。両方定義する場合は、これらのプロパティは同じ値になる必要があります。
 
   MSBuildToolsPath プロパティを追加する場合と同じ構文を使用して、ToolsVersion 固有のカスタム プロパティを構成ファイルに追加することもできます。 このようなカスタム プロパティをプロジェクト ファイルで利用できるようにするには、構成ファイルに指定された値の名前と同じ名前を使用します。 構成ファイルではツールセットを定義できますが、サブツールセットは定義できません。
 

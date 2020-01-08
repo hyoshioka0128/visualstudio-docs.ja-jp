@@ -8,17 +8,17 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653332"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594761"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>方法:テスト コントローラーおよびテスト エージェントのタイムアウト期限を指定する
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>方法: テスト コントローラーおよびテスト エージェントのタイムアウト期限を指定する
 
 テスト コントローラーもテスト エージェントも、相互の応答またはデータ ソースからの応答をどのくらいの時間待機するかを指定するいくつかのタイムアウト設定を持っています。この時間を超えると、失敗としてエラーになります。 特定の状況下では、トポロジや他の環境の問題の要件に合わせてタイムアウト値を編集しなければならない場合があります。 タイムアウト値を編集するには、以下の手順で説明されているように、テスト コントローラーまたはテスト エージェントと関連付けられている XML 構成ファイルを編集します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "72653332"
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    または
+    \- または -
 
     キーを追加して、タイムアウト値を指定します。 たとえば、次のように、`AgentInitializeTimeout` キーを `<appSettings>` セクションに追加して、値を 5 分に指定します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "72653332"
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    または
+    \- または -
 
     キーを追加して、タイムアウト値を指定します。 たとえば、次のように、`RemotingTimeoutSeconds` キーを `<appSettings>` セクションに追加して、値を 15 分に指定します。
 

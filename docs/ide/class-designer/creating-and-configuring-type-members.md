@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647749"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590411"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>クラス デザイナーでの型メンバーの作成および構成
 
@@ -58,7 +58,7 @@ ms.locfileid: "72647749"
 |タスク|関連する参照先|
 |----------| - |
 |**作業の開始:** 型のメンバーを作成および構成する前に、 **[クラスの詳細]** ウィンドウを開く必要があります。|- [[クラスの詳細] ウィンドウを開く](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [クラスの詳細の使用上の注意](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [読み取り専用の情報の表示](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [クラス ダイアグラムおよびクラスの詳細情報のウィンドウでのキーボードとマウスのショートカット](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**型のメンバーの作成および変更:**  **[クラスの詳細]** ウィンドウを使用して、新しいメンバーの作成、メンバーの変更、およびメソッドへのパラメーターの追加を行うことができます。|- [メンバーの作成](creating-and-configuring-type-members.md#create-members)<br />- [型のメンバーの変更](creating-and-configuring-type-members.md#modify-type-members)<br />- [メソッドへのパラメーターの追加](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**型のメンバーの作成および変更:** **[クラスの詳細]** ウィンドウを使用して、新しいメンバーの作成、メンバーの変更、およびメソッドへのパラメーターの追加を行うことができます。|- [メンバーの作成](creating-and-configuring-type-members.md#create-members)<br />- [型のメンバーの変更](creating-and-configuring-type-members.md#modify-type-members)<br />- [メソッドへのパラメーターの追加](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>[クラスの詳細] ウィンドウを開く
 

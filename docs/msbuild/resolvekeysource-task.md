@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ResolveKeySource task [MSBuild]
 - MSBuild, ResolveKeySource task
 ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123c45ed23743335a1c4db2000dd241cb92ce291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09b3917e1c67014a780d11e2ae9a944844e63e25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810637"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595190"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource タスク
 厳密な名前のキーのソースを確認します。
@@ -44,7 +44,7 @@ ms.locfileid: "62810637"
 |`ShowImportDialogDespitePreviousFailures`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、以前のエラーにかかわらず、インポート ダイアログを表示します。|
 |`SuppressAutoClosePasswordPrompt`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> パスワード入力のダイアログを自動終了させない必要があるかどうかを指定するブール値を取得または設定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
