@@ -1,5 +1,5 @@
 ---
-title: ブール値が必要です。Microsoft Docs
+title: ブール値が必要です。 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576059"
 ---
 # <a name="boolean-expected"></a>ブール値が必要です。
-@No__t_2 以外の型のオブジェクトに対して、**ブール値のプロトタイプ**または**ブール値**を呼び出そうとしました。 この種類の呼び出しのオブジェクトは `Boolean` 型である必要があります。 (例:
+`Boolean` 型以外のオブジェクトで、**Boolean.prototype.toString** メソッドまたは **Boolean.prototype.valueOf**メソッドを呼び出しました。この場合の呼び出し元のオブジェクトは、`Boolean` 型である必要があります。 (例:
 
 ```JavaScript
 var o = new Object;
@@ -32,7 +32,7 @@ o.f();
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- **ブール型の**オブジェクトに対してのみ、ブール型の**プロトタイプ**または**ブール**型の値のメソッドを呼び出します。
+- **Boolean.prototype.toString** メソッドまたは **Boolean.prototype.valueOf** メソッドの呼び出しは、**Boolean** 型のオブジェクトでだけ行います。
 
 ## <a name="see-also"></a>関連項目
 
