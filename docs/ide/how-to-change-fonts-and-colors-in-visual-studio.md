@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4527592b5638b171aa39f88e254bd8adf5c73b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588877"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>方法: Visual Studio で使用するフォントと色を変更する
 
@@ -27,7 +27,7 @@ Visual Studio の中にある IDE のフレームおよびツール ウィンド
 
 ## <a name="change-the-color-theme-of-the-ide"></a>IDE の配色テーマの変更
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 1. オプションの一覧で、 **[環境]**  >  **[全般]** の順に選びます。
 
@@ -52,7 +52,7 @@ IDE 内にあるすべてのウィンドウとダイアログ ボックスに関
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>IDE 内のすべてのテキストのフォントとサイズを変更するには
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 1. オプションの一覧で、 **[環境]**  >  **[フォントおよび色]** の順に選びます。
 

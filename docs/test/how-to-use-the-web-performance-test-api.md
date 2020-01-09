@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653297"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594337"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>方法:Web パフォーマンス テスト API を使用する
+# <a name="how-to-use-the-web-performance-test-api"></a>方法: Web パフォーマンス テスト API を使用する
 
 Web パフォーマンス テストのコードを記述できます。 Web パフォーマンス テスト API は、コード化された Web パフォーマンス テスト、Web パフォーマンス テスト プラグイン、要求プラグイン、要求、抽出規則、検証規則を作成するために使用します。 これらの種類を構成するクラスは、この API のコア クラスです。 この API の他の種類は、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest> オブジェクト、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> オブジェクト、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> オブジェクト、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest> オブジェクト、<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> オブジェクト、および <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> オブジェクトの作成をサポートするために使用されます。 カスタマイズされた Web パフォーマンス テストを作成するには、<xref:Microsoft.VisualStudio.TestTools.WebTesting> 名前空間を使用します。
 

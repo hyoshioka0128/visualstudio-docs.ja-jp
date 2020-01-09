@@ -2,17 +2,17 @@
 title: テスト駆動型開発のチュートリアル
 ms.date: 07/24/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d62989ffe5444f94cf3b062cde16399c08322b16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646668"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566281"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>チュートリアル: テスト エクスプローラーを使用したテスト駆動開発
 

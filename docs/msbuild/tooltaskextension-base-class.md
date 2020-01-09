@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720569"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594969"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基本クラス
 多くのタスクが <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスを継承します。このクラスは <xref:Microsoft.Build.Utilities.ToolTask> クラスから継承され、さらに、このクラス自体は <xref:Microsoft.Build.Utilities.Task> から継承されます。 この継承チェーンにより、これらのクラスから派生したタスクにいくつかのパラメーターが追加されます。 このドキュメントでは、これらのパラメーターを示します。

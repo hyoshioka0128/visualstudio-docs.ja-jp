@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f3889cf1d9088f39b4efc4e4d01197ffaaaa77
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912064"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593968"
 ---
 # <a name="msbuild-reference"></a>MSBuild リファレンス
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド システムです。 次のリンクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] リファレンス情報を示すトピックへのリンクです。
@@ -70,7 +70,7 @@ ms.locfileid: "72912064"
 
  コマンド ライン スイッチを含む *.rsp* ファイルについて説明します。
 
-- [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web サイトとニュースグループへのリンクを示します。
+- [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web サイトとニュースグループへのリンクを示します。
 
 - [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
 

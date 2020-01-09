@@ -2,8 +2,8 @@
 title: クラスまたは型の生成
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595632"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio でクラスまたは型を生成する
 
@@ -58,8 +58,8 @@ ms.locfileid: "72660073"
 
 3. ドロップダウン メニューからいずれかのオプションを選択します。
 
-   - [新しいファイルにクラス '*TypeName*' を生成する] &mdash; *TypeName* という名前のクラスを *TypeName*.cs/.vb という名前のファイルに作成します。
-   - [クラス '*TypeName*' を生成する] &mdash; *TypeName* という名前のクラスを現在のファイルに作成します。
+   - [新しいファイルにクラス '*TypeName*' を生成する] &mdash;*TypeName* という名前のクラスを *TypeName*.cs/.vb という名前のファイルに作成します。
+   - [クラス '*TypeName*' を生成する] &mdash;*TypeName* という名前のクラスを現在のファイルに作成します。
    - [入れ子クラス '*TypeName*' を生成する] &mdash; 現在のクラス内に入れ子になった *TypeName* という名前のクラスを作成します。
    - [新しい型の生成] &mdash; 指定したすべてのプロパティを持つ新しいクラスまたは構造体を作成します。
 
@@ -74,7 +74,7 @@ ms.locfileid: "72660073"
    --- | ---
    Access | 型に *[既定]* 、 *[内部]* 、または *[パブリック]* アクセスを設定します。
    種類 | *[クラス]* または *[構造体]* として設定できます。
-   name | 変更できません。入力済みの名前になります。
+   名前 | 変更できません。入力済みの名前になります。
    Project | ソリューションに複数のプロジェクトがある場合、クラス/構造体を置くプロジェクトを選択できます。
    ファイル名 | 新しいファイルを作成することも、既存のファイルに型を追加することもできます。
 

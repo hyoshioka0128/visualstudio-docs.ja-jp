@@ -2,17 +2,17 @@
 title: 抽象クラスの実装
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8d61e6e2632d62d7244ec0918e56816c3a028e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662477"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568907"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio で抽象クラスを実装する
 
@@ -22,7 +22,7 @@ ms.locfileid: "72662477"
 
 - Visual Basic
 
-**機能:** 抽象クラスを実装するために必要なコードをすぐに生成できます。
+**概要:** 抽象クラスを実装するために必要なコードをすぐに生成できます。
 
 **条件:** 抽象クラスから継承したいとき。
 

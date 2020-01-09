@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, FindUnderPath task
 - FindUnderPath task [MSBuild]
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33912df490b148c91c2a0d152f979bd6149d8ae3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539708"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566073"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath タスク
 指定した項目コレクションの中で、指定したフォルダーの中にあるか、下にあるパスが含まれる項目を判断します。
@@ -39,7 +39,7 @@ ms.locfileid: "62539708"
 |`Path`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 参照として使用するフォルダー パスを指定します。|
 |`UpdateToAbsolutePaths`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、出力項目のパスが絶対パスになります。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例

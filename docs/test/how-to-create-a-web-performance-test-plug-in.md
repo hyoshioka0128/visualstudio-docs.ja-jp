@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Web performance tests, creating plug-ins
 - plug-ins, creating in Web performance tests
 ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 318cc217bee235842ebc206b0461dcd7c9aeceaa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc2eeafa41b953f9d853c7ff435a6a9706ae73ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653614"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589111"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>方法: Web パフォーマンス テスト プラグインを作成する
 
@@ -29,7 +29,7 @@ Web パフォーマンス テスト プラグインを使用すると、Web パ�
 記録した Web パフォーマンス テストではカスタマイズされた Web パフォーマンス テスト プラグインを使用できるため、最小限のコードを記述するだけで、Web パフォーマンス テストをより高度に制御できるようになります。 ただし、コード化された Web パフォーマンス テストでそれらを使用することもできます。 詳細については、「[Generate and run a coded web performance test](../test/generate-and-run-a-coded-web-performance-test.md)」(コード化された Web パフォーマンス テストの生成と実行) を参照してください。
 
 > [!NOTE]
-> ロード テスト プラグインも作成できます。「[方法: ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)」を参照してください。
+> ロード テスト プラグインも作成できます。「[方法:ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)」を参照してください。
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>カスタム Web パフォーマンス テスト プラグインを作成するには
 

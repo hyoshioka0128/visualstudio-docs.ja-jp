@@ -3,16 +3,16 @@ title: 複数のスタートアップ プロジェクトを設定する
 description: この記事では、実行時またはデバッグ時に開始する複数のプロジェクトを設定する方法について説明します。
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 02/21/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 3c7c3e00615463ba657ad93022f60ca856e026d6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 46e6447e07d2ee8439fcd86f5d1519beaa1e4609
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872378"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406694"
 ---
 # <a name="set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定する
 

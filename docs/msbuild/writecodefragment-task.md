@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, WriteCodeFragment task
 - WriteCodeFragment task [MSBuild]
 ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59938817c06a29b8842cbbe080ef8b477af5d39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778161"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567399"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment タスク
 指定された生成済みのコード片から一時コード ファイルを生成します。 ファイルは削除されません。
@@ -36,7 +36,7 @@ ms.locfileid: "62778161"
 |`OutputDirectory`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 生成されたコードの出力先フォルダーを指定します。一般的には、中間フォルダーにします。|
 |`OutputFile`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型の出力パラメーターです。<br /><br /> 生成されたファイルのパスを指定します。 ファイル名を使用してこのパラメーターを設定する場合、出力先フォルダーがファイル名の前に付加されます。 ルートを使用して設定される場合、出力先フォルダーは無視されます。<br /><br /> このパラメーターが設定されない場合、出力ファイル名が出力先フォルダー、任意のファイル名、指定言語の既定のファイル名拡張子になります。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目

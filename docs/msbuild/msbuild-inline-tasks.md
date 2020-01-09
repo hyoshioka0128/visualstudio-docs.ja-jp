@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416856"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593656"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。

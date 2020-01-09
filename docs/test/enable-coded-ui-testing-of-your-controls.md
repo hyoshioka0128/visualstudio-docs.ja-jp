@@ -2,17 +2,17 @@
 title: コントロールのコード化された UI テストの有効化
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: ea58dc703c5ad860683017c39d9d37d9b5cccd04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: feb7785678be4b6f2c26bbcff93bf7d3e6632116
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664943"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589618"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストを有効化する
 

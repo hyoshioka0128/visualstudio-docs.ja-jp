@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf77e4630cd52e8dcb354b5625ae24eabc9d8ae9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9576bdf06593ae3cde3bc29e2585a7ab475671a3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912083"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566619"
 ---
 # <a name="msbuild-conditions"></a>MSBuild の条件
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、`Condition` 属性が許可されている場所ならどこでも適用できる、特定の条件のセットをサポートしています。 次の表は、その条件を説明したものです。

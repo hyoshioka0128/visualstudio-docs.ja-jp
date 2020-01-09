@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585887"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 

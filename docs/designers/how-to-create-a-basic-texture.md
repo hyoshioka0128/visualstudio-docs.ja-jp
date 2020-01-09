@@ -3,17 +3,17 @@ title: '方法: 基本的なテクスチャを作成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635865"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589457"
 ---
 # <a name="how-to-create-a-basic-texture"></a>方法: 基本的なテクスチャを作成する
 

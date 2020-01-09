@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c82b7456e0fc497b753c87f7a4d6808c81d5ab2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823029"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593409"
 ---
 # <a name="build-loggers"></a>ビルド ロガー
 ロガーを使うと、ビルドの出力をカスタマイズして、特定のビルド イベントに対する応答のメッセージ、エラー、または警告を表示できます。 各ロガーは、*Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ILogger> インターフェイスを実装する .NET クラスとして実装されます。
@@ -40,14 +40,14 @@ ms.locfileid: "62823029"
 [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]
 
 ## <a name="respond-to-logger-verbosity-values"></a>ロガーの詳細値に応答する
-MSBuild.exe の **-verbosity** スイッチに特定の値が含まれる場合にのみ、イベントから情報を記録したいことがあります。 次の例の <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> イベント ハンドラーは、**-verbosity** スイッチによって設定される <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> プロパティが <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` に等しい場合にのみ、メッセージを記録します。
+MSBuild.exe の **-verbosity** スイッチに特定の値が含まれる場合にのみ、イベントから情報を記録したいことがあります。 次の例の <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> イベント ハンドラーは、 **-verbosity** スイッチによって設定される <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> プロパティが <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` に等しい場合にのみ、メッセージを記録します。
 
 [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
 
 ## <a name="specify-a-logger"></a>ロガーを指定する
 ロガーがアセンブリにコンパイルされた後は、ビルドの間にそのロガーを使うように [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に指定する必要があります。 これは、*MSBuild.exe* で **-logger** スイッチを使って行います。 *MSBuild.exe* で使用可能なスイッチについて詳しくは、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
 
-次のコマンド ラインは、プロジェクト *MyProject.csproj* をビルドし、*SimpleLogger.dll* で実装されているロガー クラスを使います。 **-nologo** スイッチはバナーと著作権のメッセージを非表示にし、**-noconsolelogger** スイッチは既定の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] コンソール ロガーを無効にします。
+次のコマンド ラインは、プロジェクト *MyProject.csproj* をビルドし、*SimpleLogger.dll* で実装されているロガー クラスを使います。 **-nologo** スイッチはバナーと著作権のメッセージを非表示にし、 **-noconsolelogger** スイッチは既定の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] コンソール ロガーを無効にします。
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll

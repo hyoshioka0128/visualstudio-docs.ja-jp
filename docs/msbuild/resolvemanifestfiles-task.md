@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ResolveManifestFiles task [MSBuild]
 - MSBuild, ResolveManifestFiles task
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebb7c2449657112f3f13abc6c4589cba4f7ceb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ebbc2a036700c26ccd6ca3bec7b235722432e9f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970784"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595177"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles タスク
 ビルド処理に含まれる各種のアイテム (ビルド済みアイテム、依存関係、サテライト、コンテンツ、デバッグ シンボル、ドキュメントなど) をマニフェスト生成のためのファイルに解決します。
@@ -46,7 +46,7 @@ ms.locfileid: "62970784"
 |`TargetCulture`|省略可能な `String` 型のパラメーターです。<br /><br /> サテライト アセンブリのターゲット カルチャを指定します。|
 |`TargetFrameworkVersion`|省略可能な `String` 型のパラメーターです。<br /><br /> 対象とする .NET Framework のバージョンを指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目

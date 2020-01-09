@@ -24,6 +24,7 @@ ms.locfileid: "72576059"
 # <a name="boolean-expected"></a>ブール値が必要です。
 `Boolean` 型以外のオブジェクトで、**Boolean.prototype.toString** メソッドまたは **Boolean.prototype.valueOf**メソッドを呼び出しました。この場合の呼び出し元のオブジェクトは、`Boolean` 型である必要があります。 (例:
 
+
 ```JavaScript
 var o = new Object;
 o.f = Boolean.prototype.toString;

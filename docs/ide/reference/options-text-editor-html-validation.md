@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666119"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568283"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[検証]
 
@@ -27,7 +27,7 @@ ms.locfileid: "72666119"
 
    スキーマは、要素、属性、およびそのスキーマで有効な大文字小文字の設定を決定します。 IntelliSense で使用できるタグと属性も決定します。
 
-   Visual Studio がページの **<!DOCTYPE>** 宣言と **html** 要素の内容を使用してスキーマを判断するように設定するには、このオプションを選択します。 たとえば、このオプションを選択しているときに、ページに `<!DOCTYPE html>` 宣言が含まれている場合、Visual Studio では HTML5 スキーマが使用されます。 ただし、**html** タグに **xmlns** 属性 (`<html xmlns="http://www.w3.org/1999/xhtml">` など) が含まれている場合、Visual Studio では XHTML5 スキーマが使用されます。
+   Visual Studio がページの **<!DOCTYPE>** 宣言と **html** 要素の内容を使用してスキーマを判断するように設定するには、このオプションを選択します。 たとえば、このオプションを選択しているときに、ページに `<!DOCTYPE html>` 宣言が含まれている場合、Visual Studio では HTML5 スキーマが使用されます。 ただし、**html** タグに **xmlns** 属性 (`<html>` など) が含まれている場合、Visual Studio では XHTML5 スキーマが使用されます。
 
 - **DOCTYPE が見つからないときのターゲット**
 

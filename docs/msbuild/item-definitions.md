@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006782"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573782"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 では、[ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素を使用することにより、プロジェクト ファイルに項目を静的に宣言できます。 ただし、メタデータは、すべての項目に共通であっても項目単位でしか追加できません。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 以降には、この制限を克服する [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) という名前のプロジェクト要素が導入されました。 *ItemDefinitionGroup* を使用して一連の項目定義を定義すると、名前付きの項目の種類に含まれるすべての項目に既定のメタデータ値を追加できます。
@@ -24,7 +24,7 @@ ms.locfileid: "63006782"
 
 - 項目の既定のグローバル メタデータをターゲットの外部で定義できます。 これにより、指定した種類のすべての項目に同じメタデータが適用されます。
 
-- 項目の種類には複数の定義を指定できます。 項目の種類に複数のメタデータ指定を追加すると、最後の指定が優先されます  \(メタデータのインポート順序はプロパティの場合と同じです。\)
+- 項目の種類には複数の定義を指定できます。 項目の種類に複数のメタデータ指定を追加すると、最後の指定が優先されます \(メタデータのインポート順序はプロパティの場合と同じです。\)
 
 - メタデータは追加的に指定できます。 たとえば、CDefines の値は設定されるプロパティに応じて条件付きで累積されます。 たとえば、`MT;STD_CALL;DEBUG;UNICODE` のようにします。
 

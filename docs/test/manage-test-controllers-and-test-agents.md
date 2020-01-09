@@ -2,17 +2,17 @@
 title: テスト コントローラーとテスト エージェントの管理
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652928"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584414"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>テスト コントローラーとテスト エージェントの管理
 

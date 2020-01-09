@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [.NET Framework], environment variables
 - MSBuild, environment variables
 ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3e79fdbadffadc188610523eeb505df0ffa15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412410"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574419"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>方法: ビルドで環境変数を使用する
 プロジェクトをビルドするとき、プロジェクト ファイルまたはプロジェクトを構成するファイルに含まれていない情報を使用してビルド オプションを設定する必要がある場合があります。 通常、この情報は環境変数に格納されます。

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538954"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588656"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 
@@ -48,7 +48,7 @@ CodeLens では、エディターを離れずにコードに関する情報を�
 
 C# コードまたは Visual Basic コードでの参照を検索することができます。
 
-1. **参照**インジケーターを選択するか、または **Alt** + **2** キーを押します。
+1. **参照**インジケーターを選択するか、または **Alt**+**2** キーを押します。
 
    ![CodeLens 参照](../ide/media/codelens-view-references.png)
 
@@ -130,13 +130,13 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ![CodeLens:コードが分岐された時期の確認](../ide/media/codelensfirstbranchconceptual.png)
 
-メイン分岐で、コードを変更したユーザーの数と、変更の数を確認できます。それには、**Alt** + **6**キーを押します。
+メイン分岐で、コードを変更したユーザーの数と、変更の数を確認できます。それには、**Alt**+**6**キーを押します。
 
 ![CodeLens:この分岐での変更数を検索](../ide/media/codelens-branch-changes.png)
 
 ### <a name="find-when-your-code-was-branched"></a>コードが分岐された時期の確認
 
-コードが分岐された時期を確認するには、子分岐のコードに移動します。 次に、**変更**インジケーターを選択するか、**Alt** + **6** キーを押します。
+コードが分岐された時期を確認するには、子分岐のコードに移動します。 次に、**変更**インジケーターを選択するか、**Alt**+**6** キーを押します。
 
 ![CodeLens:コードが分岐された時期の確認](../ide/media/codelens-first-branch.png)
 
@@ -164,7 +164,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>追加される変更をローカル バージョンと比較します
 
-追加される変更をローカル バージョンと比較するには、**Shift** + **F10** キーを押すか、または変更セットをダブルクリックします。
+追加される変更をローカル バージョンと比較するには、**Shift**+**F10** キーを押すか、または変更セットをダブルクリックします。
 
 ![CodeLens:受信した変更をローカルと比較](../ide/media/codelens-branch-incoming-change-menu.png)
 
@@ -185,7 +185,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ## <a name="linked-work-items"></a>リンクされた作業項目
 
-リンクされた作業項目を検出するには、**作業項目**インジケーターを選択するか、または **Alt** + **8** キーを押します。
+リンクされた作業項目を検出するには、**作業項目**インジケーターを選択するか、または **Alt**+**8** キーを押します。
 
 ![CodeLens - 特定のコードの作業項目を検出する](../ide/media/codelens-work-items.png)
 
@@ -197,13 +197,13 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ## <a name="linked-bugs"></a>リンクされているバグ
 
-リンクされているバグを検出するには、**バグ** インジケーターを選択するか、または **Alt** + **7** キーを押します。
+リンクされているバグを検出するには、**バグ** インジケーターを選択するか、または **Alt**+**7** キーを押します。
 
 ![CodeLens - 変更セットにリンクされたバグを検出する](../ide/media/codelens-bugs-changesets.png)
 
 ## <a name="contact-the-owner-of-an-item"></a>項目の所有者に連絡する
 
-項目の所有者を確認するには、**所有者**インジケーターを選択するか、または **Alt** + **5** キーを押します。
+項目の所有者を確認するには、**所有者**インジケーターを選択するか、または **Alt**+**5** キーを押します。
 
 ![項目の所有者に連絡する](../ide/media/codelens-contact-item-owner.png)
 
@@ -219,7 +219,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 2. CodeLens テスト インジケーターを読み込むためにアプリケーションをまだビルドしていない場合は、ビルドします。 
 
-3. コード用のテストをレビューするには、**Alt** + **3** キーを押します。
+3. コード用のテストをレビューするには、**Alt**+**3** キーを押します。
 
      ![CodeLens - コード エディターでテスト状態を選択する](../ide/media/codelens-choose-test-indicator.png)
 
@@ -231,7 +231,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
      ![CodeLens - 単体テストの定義に移動する](../ide/media/codelens-unit-test-definition.png)
 
-6. テストの結果を確認するには、テスト状態インジケーター (![テスト失敗アイコン](../ide/media/codelenstestfailedicon.png)または![テスト成功アイコン](../ide/media/codelenstestpassedicon.png)) を選択するか、**Alt** + **1** キーを押します。
+6. テストの結果を確認するには、テスト状態インジケーター (![テスト失敗アイコン](../ide/media/codelenstestfailedicon.png)または![テスト成功アイコン](../ide/media/codelenstestpassedicon.png)) を選択するか、**Alt**+**1** キーを押します。
 
      ![CodeLens - 単体テストの結果を表示する](../ide/media/codelens-unit-test-result.png)
 
@@ -270,7 +270,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 - DevOps 関連のインジケーターは、作業項目がコードにリンクされていて、リンクされた作業項目を開くアクセス許可をユーザーが持っている場合にだけ表示されます。 [チーム メンバーのアクセス許可](/azure/devops/organizations/security/view-permissions?view=vsts)があることを確認してください。
 
-- アプリケーション コードに単体テストがない場合は、単体テスト インジケーターが表示されません。 テスト状態インジケーターは、テスト プロジェクトに自動的に表示されます。 アプリケーション コードに単体テストがあることがわかっているのに、テスト インジケーターが表示されない場合は、ソリューションのビルドを試みます (**Ctrl** + **Shift** + **B**)。
+- アプリケーション コードに単体テストがない場合は、単体テスト インジケーターが表示されません。 テスト状態インジケーターは、テスト プロジェクトに自動的に表示されます。 アプリケーション コードに単体テストがあることがわかっているのに、テスト インジケーターが表示されない場合は、ソリューションのビルドを試みます (**Ctrl**+**Shift**+**B**)。
 
 ::: moniker range=">=vs-2019"
 
@@ -312,7 +312,7 @@ CodeLens では、異なるバージョン の Lync または Skype はインス
 
 キーボードを使用するには:
 
-1. **Alt** + **T** + **O** キーを押して、 **[オプション]** ダイアログ ボックスを開きます。
+1. **Alt**+**T**+**O** キーを押して、 **[オプション]** ダイアログ ボックスを開きます。
 
 2. **上方向** キーまたは **下方向** キーを押して **[環境]** ノードに移動するか、 **左方向** キーを押してノードを展開します。
 

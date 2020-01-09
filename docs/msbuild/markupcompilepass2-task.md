@@ -11,17 +11,17 @@ helpviewer_keywords:
 - performing second-pass markup [WPF MSBuild], MarkupCompilePass2 task
 - MarkupCompilePass2 task [WPF MSBuild]
 - MarkupCompilePass2 task [WPF MSBuild], parameters
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d929abc6581bf77dfd6ff5cf8b23d450a78a6f6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f239670200a75dc3494b22b9a6aa761b1736119d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817347"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592218"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 タスク
 
@@ -36,7 +36,7 @@ ms.locfileid: "62817347"
 | `AssemblyName` | 必須の **String** 型のパラメーターです。<br /><br /> プロジェクトのために生成されるアセンブリの短い名前を指定します。 たとえば、プロジェクトが *WinExeAssembly.exe* という名前の [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] 実行可能ファイルを生成する場合、**AssemblyName** パラメーターの値は **WinExeAssembly** になります。 |
 | `GeneratedBaml` | 省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式で生成されたファイルの一覧を含みます。 |
 | `KnownReferencePaths` | 省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されないアセンブリへの参照を指定します。 [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)]、[!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] インストール ディレクトリなどにあるアセンブリが含まれます。 |
-| `Language` | 必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#**、**VB**、**JScript**、**C++** です。 |
+| `Language` | 必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#** 、**VB**、**JScript**、**C++** です。 |
 | `LocalizationDirectivesToLocFile` | 省略可能な **String** 型のパラメーターです。<br /><br /> 各ソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルのローカリゼーション情報を生成する方法を指定します。 有効なオプションは、**None**、**CommentsOnly**、および **All** です。 |
 | `OutputPath` | 必須の **String** 型のパラメーターです。<br /><br /> [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルが生成されるディレクトリを指定します。 |
 | `OutputType` | 必須の **String** 型のパラメーターです。<br /><br /> プロジェクトで生成されるアセンブリの型を指定します。 有効なオプションは、**winexe**、**exe**、**library**、および **netmodule** です。 |
@@ -44,7 +44,7 @@ ms.locfileid: "62817347"
 | `RootNamespace` | 省略可能な **String** 型のパラメーターです。<br /><br /> プロジェクト内部にあるクラスのルート名前空間を指定します。 **RootNamespace** は、対応する [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルが `x:Class` 属性を含まない場合に、生成されるマネージド コード ファイルの既定の名前空間としても使用されます。 |
 | `XAMLDebuggingInformation` | 省略可能な **Boolean** 型のパラメーターです。<br /><br /> **true** の場合、デバッグを支援するための診断情報が生成され、コンパイルされた [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 内に追加されます。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 **MarkupCompilePass2** を実行する前に、マークアップ コンパイル パスが延期された [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルによって使用される型を含む、一時アセンブリを生成する必要があります。 一時アセンブリを生成するには、**GenerateTemporaryTargetAssembly** タスクを実行します。
 

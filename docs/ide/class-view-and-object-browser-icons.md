@@ -11,17 +11,17 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647623"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588396"
 ---
 # <a name="class-view-and-object-browser-icons"></a>[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン
 

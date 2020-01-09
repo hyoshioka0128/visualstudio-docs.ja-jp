@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d49dd7d191ad470639debc50fbed23d5066233
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654487"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595697"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /Edit [File1[ FileN]...]
 
   任意。 Visual Studio の既存インスタンスで開く 1 つ以上の追加ファイル。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 ファイルが指定されていない場合は、既存の Visual Studio インスタンスがフォーカスを受け取ります。 ファイルが指定されておらず、Visual Studio のインスタンスが存在しない場合、簡略化されたウィンドウ レイアウトでインスタンスが作成されます。
 

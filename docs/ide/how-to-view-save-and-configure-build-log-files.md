@@ -4,17 +4,17 @@ ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 923e8bb50b1caa323c602334c1d9a28b072043bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154810"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591321"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
@@ -46,7 +46,7 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>ビルド ログに含める情報の量を変更するには
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[プロジェクトおよびソリューション]** ページで、 **[ビルド/実行]** ページを選択します。
 
