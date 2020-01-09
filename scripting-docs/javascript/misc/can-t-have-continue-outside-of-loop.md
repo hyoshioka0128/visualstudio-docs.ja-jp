@@ -1,5 +1,5 @@
 ﻿---
-title: "' Continue ' をループの外側に設定することはできません |Microsoft Docs"
+title: "'continue' をループの外に設定できません。 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -48,6 +48,6 @@ ms.locfileid: "72572383"
   - **for/in** ループ  
   
 ## <a name="see-also"></a>参照  
- [Continue ステートメント](../../javascript/reference/continue-statement-javascript.md)   
+ [continue ステートメント](../../javascript/reference/continue-statement-javascript.md)   
  [プログラムフローの制御](../../javascript/controlling-program-flow-javascript.md)   
  [スクリプトのトラブルシューティング](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
