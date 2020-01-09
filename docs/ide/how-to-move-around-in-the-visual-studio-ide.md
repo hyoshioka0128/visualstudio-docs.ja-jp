@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3aa39c1c9748eb3a9270a66a3a6bbcb43fdcea2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590996"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>方法:Visual Studio IDE 内で移動する
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>方法: Visual Studio IDE 内で移動する
 
 統合開発環境 (IDE) は、ユーザー設定やプロジェクトの要件に応じて、いくつかの異なる方法で、ウィンドウからウィンドウへ、またはファイルからファイルへ移動できるように設計されています。 エディターで開いているファイルを順番に表示することも、IDE 内でアクティブなすべてのツール ウィンドウを順番に表示することもできます。 また、最後にアクセスした順序に関係なく、エディターで開いている任意のファイルに直接切り替えることもできます。 これらの機能は、IDE で作業するときの生産性を向上するのに役立ちます。
 
@@ -43,9 +43,9 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>使用順に開いているファイル内を移動するには
 
-- 最近使用した順序で開いているドキュメントをアクティブにするには、**Ctrl** + **-** (ハイフン) キーを押します。
+- 最近使用した順序で開いているドキュメントをアクティブにするには、**Ctrl**+ **-** (ハイフン) キーを押します。
 
-- 逆の順序で開いているドキュメントをアクティブにするには、**Ctrl** + **Shift** + **-** (ハイフン) キーを押します。
+- 逆の順序で開いているドキュメントをアクティブにするには、**Ctrl**+**Shift**+ **-** (ハイフン) キーを押します。
 
     > [!NOTE]
     > **[戻る]** と **[次に進む]** は **[表示]** メニューにもあります。
@@ -56,7 +56,7 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
 ![Visual Studio IDE ナビゲーター](../ide/media/vs2015_ide_navigator.png)
 
-`Window.PreviousDocumentWindowNav` では最後にアクセスしたファイルに移動することができ、`Window.NextDocumentWindowNav` では逆の順序で移動することができます。 **[全般的な開発設定]** では、**Shift** + **Alt** + **F7** が `Window.PreviousDocumentWindowNav` に、**Alt** + **F7** が `Window.NextDocumentWindowNav` に割り当てられています。
+`Window.PreviousDocumentWindowNav` では最後にアクセスしたファイルに移動することができ、`Window.NextDocumentWindowNav` では逆の順序で移動することができます。 **[全般的な開発設定]** では、**Shift**+**Alt**+**F7** が `Window.PreviousDocumentWindowNav` に、**Alt**+**F7** が `Window.NextDocumentWindowNav` に割り当てられています。
 
 > [!NOTE]
 > 使っている設定の組み合わせの中に、このコマンドに割り当てられているショートカット キーの組み合わせがない場合は、 **[オプション]** ダイアログ ボックスの **[キーボード]** ページを使って、独自のカスタム コマンドを割り当てることができます。 詳しくは、「[キーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
@@ -80,7 +80,7 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>IDE のツール ウィンドウ間を移動する
 
-**IDE Navigator** では、IDE で開いているツール ウィンドウを順番に表示することもできます。 2 つのコマンドのいずれかを使って **IDE Navigator** にアクセスし、表示したい順番でツール ウィンドウを切り替えることができます。 `Window.PreviousToolWindowNav` では最後にアクセスしたファイルに移動することができ、`Window.NextToolWindowNav` では逆の順序で移動することができます。 **[全般的な開発設定]** では、**Shift** + **Alt** + **F7** が `Window.PreviousDocumentWindowNav` に、**Alt** + **F7** が `Window.NextDocumentWindowNav` に割り当てられています。
+**IDE Navigator** では、IDE で開いているツール ウィンドウを順番に表示することもできます。 2 つのコマンドのいずれかを使って **IDE Navigator** にアクセスし、表示したい順番でツール ウィンドウを切り替えることができます。 `Window.PreviousToolWindowNav` では最後にアクセスしたファイルに移動することができ、`Window.NextToolWindowNav` では逆の順序で移動することができます。 **[全般的な開発設定]** では、**Shift**+**Alt**+**F7** が `Window.PreviousDocumentWindowNav` に、**Alt**+**F7** が `Window.NextDocumentWindowNav` に割り当てられています。
 
 > [!NOTE]
 > 使っている設定の組み合わせの中に、このコマンドに割り当てられているショートカット キーの組み合わせがない場合は、 **[オプション]** ダイアログ ボックスの **[キーボード]** ページを使って、独自のカスタム コマンドを割り当てることができます。 詳しくは、「[キーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
@@ -90,7 +90,7 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 - **Alt**+**F7** キーを押して、**IDE Navigator** を表示します。 切り替える対象のウィンドウが選択されるまで、**Alt** キーを押したまま繰り返し **F7** キーを押します。
 
     > [!TIP]
-    > **[アクティブなツール ウィンドウ]** リストの順番を逆に切り替えるには、**Shift** + **Alt** キーを押したまま **F7** キーを押します。
+    > **[アクティブなツール ウィンドウ]** リストの順番を逆に切り替えるには、**Shift**+**Alt** キーを押したまま **F7** キーを押します。
 
 ## <a name="see-also"></a>関連項目
 
