@@ -1,5 +1,5 @@
 ---
-title: 16進数字 | が必要です。Microsoft Docs
+title: 16 進数の数字が必要です。 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -33,7 +33,7 @@ z = "\u1A5F";
 - Unicode の16進数は \u で始まり、数字0-9、大文字の A ~ F、小文字 (a ~ f) のみが含まれていることを確認してください。とは4桁にグループ化されています。  
   
     > [!NOTE]
-    > 文字列でリテラルテキスト \u を使用する場合は、2つの円記号 (\\ \u) を使用して、最初の円記号をエスケープします。  
+    > 文字列でリテラルテキスト \u を使用する場合は、2つの円記号 (\\\u) を使用して、最初の円記号をエスケープします。  
   
 ## <a name="see-also"></a>関連項目  
  [データの種類](../../javascript/data-types-javascript.md)
