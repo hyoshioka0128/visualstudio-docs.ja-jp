@@ -10,22 +10,22 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654442"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569664"
 ---
 # <a name="error-list-window"></a>[エラー一覧] ウィンドウ
 
 > [!NOTE]
-> **[エラー一覧]** には、特定のエラー メッセージに関する情報が表示されます。 **[出力]** ウィンドウから、エラー番号またはエラー文字列のテキストをコピーできます。 **[出力]** ウィンドウを表示するには、**Ctrl** + **Alt** + **O** キーを押します。 「[[出力] ウィンドウ](../../ide/reference/output-window.md)」をご覧ください。
+> **[エラー一覧]** には、特定のエラー メッセージに関する情報が表示されます。 **[出力]** ウィンドウから、エラー番号またはエラー文字列のテキストをコピーできます。 **[出力]** ウィンドウを表示するには、**Ctrl**+**Alt**+**O** キーを押します。 「[[出力] ウィンドウ](../../ide/reference/output-window.md)」をご覧ください。
 
 **[エラー一覧]** ウィンドウでは、次のタスクを実行できます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "72654442"
 
 - 特定の用語の検索、および現在のプロジェクトまたはドキュメントだけへの検索範囲の設定。
 
-**[エラー一覧]** を表示するには、 **[表示]** 、 **[エラー一覧]** の順に選択するか、**Ctrl** + **\\** + **E** キーを押します。
+**[エラー一覧]** を表示するには、 **[表示]** 、 **[エラー一覧]** の順に選択するか、**Ctrl**+ **\\** +**E** キーを押します。
 
 **[エラー]** 、 **[警告]** 、および **[メッセージ]** タブを選び、異なるレベルの情報を参照できます。
 
