@@ -1,5 +1,5 @@
 ---
-title: エンコードされる URI に無効な文字 | が含まれています。Microsoft Docs
+title: エンコードする URI は無効な文字を含んでいます。 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -33,5 +33,5 @@ URI (Uniform Resource Identifier) としてエンコードされた文字列に�
     ```  
   
 ## <a name="see-also"></a>参照  
- [EncodeURI 関数](../../javascript/reference/encodeuri-function-javascript.md)   
+ [encodeURI 関数](../../javascript/reference/encodeuri-function-javascript.md)   
  [encodeURIComponent 関数](../../javascript/reference/encodeuricomponent-function-javascript.md)
