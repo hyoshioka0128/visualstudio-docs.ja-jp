@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Code Editor, indenting
 - Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45cee31df08461731c14e2ac1fdef8456a882800
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666369"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594748"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>[オプション]、[テキスト エディター]、[すべての言語]、[タブ]
 
@@ -59,7 +59,7 @@ ms.locfileid: "72666369"
 
 ## <a name="indenting"></a>インデント
 
-なし
+None
 
 選択すると、新しい行に対するインデントは行われません。 カーソルは、新しい行の最初の列に移動します。
 

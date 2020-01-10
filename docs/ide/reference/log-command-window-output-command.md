@@ -8,17 +8,17 @@ helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2056cf335f2cf6024e6ebb4b5daff72e54dd9d50
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610432"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568660"
 ---
 # <a name="log-command-window-output-command"></a>コマンド ウィンドウ出力のログを記録するコマンド
 
@@ -49,7 +49,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 /overwrite\
 任意。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
 
