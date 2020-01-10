@@ -32,7 +32,7 @@ break labelname;
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Break**キーワードが外側のループまたは switch ステートメントの内側にあることを確認します。  
+- **break**キーワードが外側のループまたは switch ステートメントの内側にあることを確認します。  
   
 ## <a name="see-also"></a>参照  
  [break ステートメント](../../javascript/reference/break-statement-javascript.md)   
