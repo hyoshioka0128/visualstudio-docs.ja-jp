@@ -3,17 +3,17 @@ title: 'ワークフローデザイナー-方法: 階層リンクナビゲーシ
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a851ea074a78349c9e52ef127bf2814d203bf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650311"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584570"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>階層リンク バーを使用する方法
 
@@ -47,7 +47,7 @@ ms.locfileid: "72650311"
 2. すべて展開 または すべて折りたたみ 状態を適用したら、表示された **復元** ボタンをクリックして、各アクティビティに以前に適用された状態を確認できます。
 
     > [!WARNING]
-    > @No__t_0 などのアクティビティが適切に展開されていない場合は、**フローチャート**デザイナーで すべて **[展開]** ボタンと **[すべて折りたたみ]** ボタンに関連付けられている機能が無効になります。 **フローチャート**デザイナーの詳細については、「[フローチャート](../workflow-designer/flowchart-activity-designer.md)」を参照してください。
+    > <xref:System.Activities.Statements.Flowchart>などのアクティビティが適切に展開されていない場合は、**フローチャート**デザイナーで すべて **[展開]** ボタンと **[すべて折りたたみ]** ボタンに関連付けられている機能が無効になります。 **フローチャート**デザイナーの詳細については、「[フローチャート](../workflow-designer/flowchart-activity-designer.md)」を参照してください。
 
     > [!WARNING]
     > また、[すべて展開] は、**スイッチ**および**TryCatch**アクティビティデザイナーで特殊な効果を持ちます。 **[すべて展開]** をクリックすると、すべてのスイッチケースとすべての try/catch/finally ブロックが表示されます。 **[復元]** または **[すべて折りたたみ]** をクリックすると、これらのデザイナーが既定の状態に戻ります。この状態では、個々の case/block をクリックすると、その内容を表示できます。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587785"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
 
@@ -33,7 +33,7 @@ ms.locfileid: "72610843"
 |[CA0052](ca0052.md)|分析するターゲットが選択されていません。|
 |[CA0053](ca0053.md)|規則アセンブリを読み込むことができませんでした。|
 |[CA0054](ca0054.md)|カスタム規則アセンブリに無効な XML リソースが含まれています。|
-|[CA0055](ca0055.md)|ファイルを読み込めませんでした: \<path >|
+|[CA0055](ca0055.md)|ファイルを読み込めませんでした:\<パス >|
 |[CA0056](ca0056.md)|プロジェクトファイルの分析ツールのバージョンが正しくありません。|
 |[CA0057](ca0057.md)|現在のターゲットとルールのセットに違反をマップすることはできません。|
 |[CA0058](ca0058.md)|参照されたアセンブリを読み込めません。|
@@ -58,5 +58,5 @@ ms.locfileid: "72610843"
 
 ## <a name="related-sections"></a>関連項目
 
-- [コード分析ポリシー エラー](../code-quality/code-analysis-policy-errors.md)
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 - [マネージド コードの品質の分析](../code-quality/code-analysis-for-managed-code-overview.md)

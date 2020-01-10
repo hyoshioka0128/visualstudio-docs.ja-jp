@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681107"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595203"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference タスク
 
@@ -78,7 +78,7 @@ ms.locfileid: "68681107"
 > [!NOTE]
 > タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task 基底クラス](../msbuild/task-base-class.md)」を参照してください。
 

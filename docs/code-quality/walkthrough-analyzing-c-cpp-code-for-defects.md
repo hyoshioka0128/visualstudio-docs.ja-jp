@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018343"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401019"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル : C/C++ コード分析による障害の検出
 
@@ -28,7 +28,7 @@ ms.locfileid: "72018343"
 - 警告をエラーとして扱います。
 - コード障害分析を改善するためにソースコードに注釈を付けます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>Prerequisites
 
 - [デモサンプル](../code-quality/demo-sample.md)のコピー。
 - C/C++の基本を理解している。
@@ -67,9 +67,9 @@ ms.locfileid: "72018343"
 
      警告 C6230: 意味の異なる型の間の暗黙的なキャストです: ブール値のコンテキストで HRESULT を使用しています。
 
-     コードエディターでは、関数 `bool ProcessDomain()`で警告の原因となった行が表示されます。 この警告は、ブール型の結果が想定される ' if ' ステートメントで HRESULT が使用されていることを示します。
+     コードエディターでは、関数 `bool ProcessDomain()`で警告の原因となった行が表示されます。 この警告は、ブール型の結果が想定される ' if ' ステートメントで `HRESULT` が使用されていることを示します。  これは通常、`S_OK` HRESULT がその関数から返された場合は成功を示していますが、ブール値に変換されると `false`に評価されるため、これは誤りです。
 
-3. SUCCEEDED マクロを使用して、この警告を修正します。 コードは次のコードのようになります。
+3. `SUCCEEDED` マクロを使用してこの警告を修正します。このマクロは、`HRESULT` の戻り値が成功を示す場合に `true` に変換します。 コードは次のコードのようになります。
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -128,11 +128,11 @@ ms.locfileid: "72018343"
 8. この警告を解決するには、' if ' ステートメントを使用して戻り値をテストします。 コードは次のコードのようになります。
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ ms.locfileid: "72018343"
 
 ### <a name="to-use-source-code-annotation"></a>ソースコードの注釈を使用するには
 
-1. 次の例に示すように、Pre および Post 条件を使用して、関数 `AddTail` の仮パラメーターと戻り値に注釈を設定します。
+1. ポインター値が null であることを示すために、関数 `AddTail` の仮パラメーターと戻り値に注釈を設定します。
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. コメントプロジェクトを再構築します。
@@ -160,23 +156,20 @@ ms.locfileid: "72018343"
 
      この警告は、関数に渡されたノードが null である可能性があることを示し、警告が発生した行番号を示します。
 
-4. この警告を解決するには、' if ' ステートメントを使用して戻り値をテストします。 コードは次のコードのようになります。
+4. この警告を解決するには、関数の先頭にある ' if ' ステートメントを使用して、渡された値をテストします。 コードは次のコードのようになります。
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. コメントプロジェクトを再構築します。
 
-     プロジェクトがビルドされ、警告やエラーは発生しません。
+     プロジェクトは、警告やエラーなしでビルドされるようになりました。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [チュートリアル: コード障害に対するマネージコードの分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [C/C++のコード分析](../code-quality/code-analysis-for-c-cpp-overview.md)

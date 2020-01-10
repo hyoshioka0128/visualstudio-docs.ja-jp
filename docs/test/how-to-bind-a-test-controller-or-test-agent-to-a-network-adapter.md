@@ -8,17 +8,17 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643780"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594787"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>方法:ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>方法: ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする
 
 テスト コントローラーまたはテスト エージェント ソフトウェアがインストールされているコンピューターに複数のネットワーク アダプターがある場合は、テスト コントローラーまたはテスト エージェントを識別するために、コンピューター名の代わりに IP アドレスを指定する必要があります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72643780"
 
 2. 結果ペインの **[名前]** 列で **[Visual Studio Test Controller]** サービスを右クリックし、 **[停止]** をクリックします。
 
-     または
+     \- または -
 
      管理者特権でのコマンド プロンプトを開き、次のコマンドを実行します。
 
@@ -95,7 +95,7 @@ ms.locfileid: "72643780"
 
 2. 結果ウィンドウの **[名前]** 列で **[Visual Studio Test Agent]** サービスを右クリックし、 **[停止]** をクリックします。
 
-     または
+     \- または -
 
      管理者特権でのコマンド プロンプトを開き、次のコマンドを実行します。
 

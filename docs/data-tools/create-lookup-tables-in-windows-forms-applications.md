@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642251"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586771"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows フォーム アプリケーションでルックアップ テーブルを作成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "72642251"
 
 ## <a name="to-databind-a-lookup-control"></a>検索コントロールをデータバインドするには
 
-1. プロジェクトを開いた状態で、**データソース** ウィンドウを開きます。そのために**は  > ** **他の Windows**  > **データソース** をクリックします。
+1. プロジェクトを開いた状態で、**データソース** ウィンドウを開きます。そのために**は > ** **他の Windows** > **データソース** をクリックします。
 
     > [!NOTE]
     > 検索テーブルを作成するには、関連付けられた 2 つのテーブルまたはオブジェクトが **[データ ソース]** ウィンドウで使用可能になっている必要があります。 詳細については、「[データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。

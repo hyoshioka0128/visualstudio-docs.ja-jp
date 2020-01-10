@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650762"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597127"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス
 
@@ -23,15 +23,15 @@ ms.locfileid: "72650762"
 
 |||
 |-|-|
-|**横書き**|パラメーターがメソッドに入っていくデータ フロー、メソッドから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
-|**Type**|新しいパラメーターの型名。|
+|**[方向]**|パラメーターがメソッドに入っていくデータ フロー、メソッドから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
+|**型**|新しいパラメーターの型名。|
 |**[値]**|新しいパラメーターに既定値を割り当てるために使用される Visual Basic 式|
 
 次の表では、<xref:System.Activities.Statements.InvokeDelegate> デザイナーによって使用される **[引数の追加]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |||
 |-|-|
-|**Name**|引数の名前。|
-|**横書き**|引数がデリゲートに入っていくデータ フロー、デリゲートから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
-|**Type**|新しい引数の型名。|
+|**名前**|引数の名前です。|
+|**[方向]**|引数がデリゲートに入っていくデータ フロー、デリゲートから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
+|**型**|新しい引数の型名。|
 |**[値]**|デリゲート引数のこのインスタンスに使用する値。|

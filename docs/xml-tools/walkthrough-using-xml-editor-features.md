@@ -3,17 +3,17 @@ title: 'チュートリアル: XML エディター機能の使用'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604457"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592465"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>チュートリアル: XML エディター機能の使用
 
@@ -30,7 +30,7 @@ ms.locfileid: "72604457"
 
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。
 
-3. ドキュメントのプロパティウィンドウで、 **[スキーマ]** フィールドの参照ボタン (. **[..]** ) をクリックします。
+3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします ( **...** ) で、**スキーマ**フィールド。
 
      **[XSD スキーマ]** ダイアログボックスが表示されます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72604457"
 
     - ルート要素を追加する**従業員**。
 
-2. **@No__t_1!--** を選択してコメントノードを追加し **、enter キーを押します**。
+2. **&lt;!--** を選択してコメントノードを追加し **、enter キーを押します**。
 
      エディターによってコメントの終了タグが挿入され、コメントの開始タグと終了タグの間にカーソルが置かれます。
 
@@ -72,7 +72,7 @@ ms.locfileid: "72604457"
 
 6. エディターによって終了タグが追加されます。 終了タグは、検証エラーを示す波下線付きで追加されます。 **ツールヒント**にメッセージが表示されます。**要素 ' employee ' に不完全な内容が含まれています。' ID ' が必要**です。
 
-7. 「@No__t_0」と入力し、メンバー ボックスの一覧から  **ID** を選択します。 次に、「`>`」と入力します。
+7. 「`<`」と入力し、メンバー ボックスの一覧から  **ID** を選択します。 次に、「`>`」と入力します。
 
      エディターには XML 要素 `<ID></ID>` が追加され、ID 開始タグの後にカーソルが置かれます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "72604457"
 
      ID 要素の値の下に波線と**ツールヒント**がクリアされます。 Employee end タグの**ツールヒント**に、 **"要素 ' employee ' に不完全な内容が含まれています" というメッセージが表示されるようになりました。' 入社日 ' が必要**です。
 
-11. ID 終了タグの後にカーソルを置き、`<` に「」と入力し、メンバーリストから **[入社日]** を選択して、「`>`」と入力します。
+11. ID 終了タグの後にカーソルを置き、`<`に「」と入力し、メンバーリストから **[入社日]** を選択して、「`>`」と入力します。
 
      エディターには XML 要素 `<hire-date></hire-date>` が追加され、hire-date 開始タグの後にカーソルが置かれます。
 
@@ -96,7 +96,7 @@ ms.locfileid: "72604457"
 
 ## <a name="to-format-the-xml-document"></a>XML ドキュメントに書式を設定するには
 
-- XML エディター ツールバーの **ドキュメントの書式設定** ボタンを選択するか、 **ctrl** +**E**、**D**キーを押します。
+- XML エディター ツールバーの **ドキュメントの書式設定** ボタンを選択するか、 **ctrl**+**E**、**D**キーを押します。
 
    ![Visual Studio の [XML ドキュメントの書式設定] ボタン](media/format-xml-document.png)
 

@@ -2,17 +2,17 @@
 title: MEF による DSL の拡張
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657510"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596607"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 
@@ -107,7 +107,7 @@ MEF の詳細については、「 [Managed Extensibility Framework (mef)](/dotn
 
 5. DSL エクスプローラーで、 **[Editor\ Validation]** を選択します。
 
-6. プロパティウィンドウで、[**使用**する] という名前のプロパティの少なくとも1つが `true` になっていることを確認します。
+6. プロパティウィンドウで、[**使用**する] という名前のプロパティの少なくとも1つが `true`になっていることを確認します。
 
 7. **ソリューションエクスプローラー**ツールバーで、 **[すべてのテンプレートの変換]** をクリックします。
 
@@ -129,17 +129,17 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
    - このアセンブリには、通常、"で終わる名前が付いています。Dsl .dll "。
 
-   - DSL プロジェクトにアクセスできる場合は、ディレクトリ**dsl \\bin \\** の下にアセンブリファイルがあり \*
+   - DSL プロジェクトにアクセスできる場合は、ディレクトリ**dsl\\bin\\** の下にアセンブリファイルがあることを確認でき \*
 
    - DSL VSIX ファイルにアクセスできる場合は、VSIX ファイルのファイル名拡張子を ".zip" に変更することで、アセンブリを見つけることができます。 .Zip ファイルを圧縮解除します。
 
 3. 次の .NET アセンブリへの参照を追加します。
 
-   - VisualStudio のようになります。
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - VisualStudio.........................
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - VisualStudio...........................
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
@@ -157,7 +157,7 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
    1. Source.extension.vsixmanifest で、 **[参照の追加]** をクリックし**ます**。
 
-   2. ダイアログボックスで、 **[ペイロードの追加]** をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **\\bin \\ \* の Dslpackage**で DSL ソリューションに組み込まれています。
+   2. ダイアログボックスで、 **[ペイロードの追加]** をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **Dslpackage\\bin\\\*** の DSL ソリューションに組み込まれています。
 
        これにより、ユーザーは DSL と拡張機能を同時にインストールできるようになります。 ユーザーが既に DSL をインストールしている場合は、拡張機能のみがインストールされます。
 
@@ -175,7 +175,7 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
 ### <a name="menu-commands"></a>メニュー コマンド
 
-メニューコマンドを記述するには、<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> を実装するクラスを定義し、dsl `CommandExtension` という名前の、DSL で定義されている属性を使用してクラスにプレフィックス*を付けます*。 複数のメニューコマンドクラスを記述することができます。
+メニューコマンドを記述するには、<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> を実装するクラスを定義し、dsl`CommandExtension`という名前の、DSL で定義されている属性を使用してクラスにプレフィックス*を付けます*。 複数のメニューコマンドクラスを記述することができます。
 
 `QueryStatus()` は、ユーザーが図を右クリックするたびに呼び出されます。 現在の選択範囲を検査し、コマンドが適用可能かどうかを示す `command.Enabled` を設定する必要があります。
 
@@ -321,7 +321,7 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>検証制約
 
-検証メソッドは、DSL によって生成される `ValidationExtension` の属性と、<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> によってマークされます。 メソッドは、属性でマークされていないクラスで使用できます。
+検証メソッドは、DSL によって生成される `ValidationExtension` の属性と、<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>によってマークされます。 メソッドは、属性でマークされていないクラスで使用できます。
 
 詳細については、「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 

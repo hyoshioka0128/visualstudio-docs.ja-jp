@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <Otherwise> Element [MSBuild]
 - Otherwise Element [MSBuild]
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2dd064b556596f27ae2130697cdd9435d8185
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963742"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594843"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 要素 (MSBuild)
 すべての `When` 要素が `false` と評価された場合にのみ実行するコード ブロックを指定します。
@@ -60,7 +60,7 @@ ms.locfileid: "62963742"
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  1 つの `Choose` 要素が持つことのできる `Otherwise` 要素の数は 1 つだけです。また、これは最後の要素である必要があります。
 
  `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。

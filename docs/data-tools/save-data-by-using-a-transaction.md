@@ -11,25 +11,25 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: beadb43d7eed78f04fc60ce1307045e9badac205
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641308"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586277"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>方法: トランザクションを使用してデータを保存する
 
-トランザクションにデータを保存するには、<xref:System.Transactions> 名前空間を使用します。 @No__t_0 オブジェクトを使用して、自動的に管理されるトランザクションに参加します。
+トランザクションにデータを保存するには、<xref:System.Transactions> 名前空間を使用します。 <xref:System.Transactions.TransactionScope> オブジェクトを使用して、自動的に管理されるトランザクションに参加します。
 
 プロジェクト*は、system.string アセンブリへ*の参照を使用して作成されるわけではないため、トランザクションを使用するプロジェクトへの参照を手動で追加する必要があります。
 
-トランザクションを実装する最も簡単な方法は、`using` ステートメントで <xref:System.Transactions.TransactionScope> オブジェクトをインスタンス化することです。 (詳細については、「 [using ステートメント](/dotnet/visual-basic/language-reference/statements/using-statement)」および「 [using ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)」を参照してください)。@No__t_2 ステートメント内で実行されるコードは、トランザクションに参加します。
+トランザクションを実装する最も簡単な方法は、`using` ステートメントで <xref:System.Transactions.TransactionScope> オブジェクトをインスタンス化することです。 (詳細については、「 [using ステートメント](/dotnet/visual-basic/language-reference/statements/using-statement)」および「 [using ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)」を参照してください)。`using` ステートメント内で実行されるコードは、トランザクションに参加します。
 
 トランザクションをコミットするには、using ブロックの最後のステートメントとして <xref:System.Transactions.TransactionScope.Complete%2A> メソッドを呼び出します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "72641308"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>System.object への参照を追加するには
 
-1. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
+1. **[プロジェクト]** メニューの **[参照の追加]** を選択します。
 
 2. **[.Net]** タブ (SQL Server プロジェクトの **[SQL Server]** タブ) で [ **system.string] を選択し**、 **[OK]** を選択します。
 

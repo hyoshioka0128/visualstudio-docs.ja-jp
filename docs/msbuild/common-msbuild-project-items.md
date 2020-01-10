@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
-ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
+ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73956143"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596152"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
@@ -34,7 +34,7 @@ ms.locfileid: "73956143"
 |項目メタデータの名前|説明|
 |---------------|-----------------|
 |HintPath|省略可能な文字列。 アセンブリの相対パスまたは絶対パスを指定します。|
-|name|省略可能な文字列。 アセンブリの表示名を指定します (たとえば、"System.Windows.Forms")。|
+|名前|省略可能な文字列。 アセンブリの表示名を指定します (たとえば、"System.Windows.Forms")。|
 |FusionName|省略可能な文字列。 項目の簡易または厳密な fusion 名を指定します。<br /><br /> この属性が存在する場合、fusion 名を得るためにアセンブリ ファイルを開く必要がないため、時間を節約できます。|
 |SpecificVersion|省略可能なブール値。 fusion 名の特定のバージョンを参照する必要があるかどうかを指定します。|
 |Aliases|省略可能な文字列。 参照の任意のエイリアスです。|
@@ -45,7 +45,7 @@ ms.locfileid: "73956143"
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
-|name|省略可能な文字列。 コンポーネントの表示名を指定します。|
+|名前|省略可能な文字列。 コンポーネントの表示名を指定します。|
 |GUID|必須の文字列。 コンポーネントの GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|
 |VersionMajor|必須の文字列。 コンポーネントのメジャー バージョン番号を指定します。 たとえば、完全なバージョン番号が "5.46" である場合、"5" を指定します。|
 |VersionMinor|必須の文字列。 コンポーネントのマイナー バージョン番号を指定します。 たとえば、完全なバージョン番号が "5.46" である場合、"46" を指定します。|
@@ -65,7 +65,7 @@ ms.locfileid: "73956143"
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
-|name|必須の文字列。 マニフェスト ファイルの基本名を指定します。|
+|名前|必須の文字列。 マニフェスト ファイルの基本名を指定します。|
 |HintPath|必須の文字列。 マニフェスト ファイルの相対パスを指定します。|
 
 ### <a name="projectreference"></a>ProjectReference
@@ -73,7 +73,7 @@ ms.locfileid: "73956143"
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
-|name|省略可能な文字列。 参照の表示名を指定します。|
+|名前|省略可能な文字列。 参照の表示名を指定します。|
 |Project|省略可能な文字列。 参照の GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|
 |Package|省略可能な文字列。 参照されるプロジェクト ファイルのパスを指定します。|
 |ReferenceOutputAssembly|省略可能なブール値。 `false` を設定した場合、このプロジェクトの [Reference](#reference) として参照されたプロジェクトの出力は含まれませんが、このプロジェクトをビルドする前の他のプロジェクトのビルドは保証されます。 既定値は `true` です。|

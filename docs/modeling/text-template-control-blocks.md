@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606076"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591789"
 ---
 # <a name="text-template-control-blocks"></a>テキスト テンプレートのコントロール ブロック
 コントロール ブロックを使用すると、出力を変更するためにテキスト テンプレートにコードを記述できます。 コントロール ブロックは 3 種類あり、左山かっこで区別されます。
@@ -62,7 +62,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> 常に {...} を使用する 埋め込まれたプレーンテキストを含む入れ子になったステートメントを区切る。 次の例は正しく動作しません。
+> プレーン テキストの埋め込みを含む入れ子になったステートメントを区切るためには、 {...} を常に使用します。 次の例は正しく動作しません。
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 > 同じテンプレート ファイル内で、クラス機能コントロール ブロックの後に標準コントロール ブロックを配置することはできません。 ただし、この制限は、`<#@include#>` ディレクティブを使用した結果には適用されません。 各インクルード ファイルでは、標準ブロックの後にクラス機能ブロックを配置できます。
 
- クラス機能コントロール ブロック内にテキスト ブロックと式ブロックを埋め込むことによって、出力を生成する関数を作成できます。 (例:
+ クラス機能コントロール ブロック内にテキスト ブロックと式ブロックを埋め込むことによって、出力を生成する関数を作成できます。 例:
 
 ```
 <#+
@@ -141,11 +141,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>コントロール ブロックの使用方法
- 1 つのテンプレート内の標準コントロール ブロックと式コントロール ブロックのコード (インクルードされたテンプレート内のコードも含む) はすべて結合され、生成されるコードの `TransformText()` メソッドを形成します (@No__t_0 ディレクティブを使用して他のテキストテンプレートを含める方法の詳細については、「 [T4 テキストテンプレートのディレクティブ](../modeling/t4-text-template-directives.md)」を参照してください)。
+ 1 つのテンプレート内の標準コントロール ブロックと式コントロール ブロックのコード (インクルードされたテンプレート内のコードも含む) はすべて結合され、生成されるコードの `TransformText()` メソッドを形成します `include`ディレクティブによる他のテキスト テンプレートをインクルードすることについての詳細は、次を参照してください。[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md))
 
  コントロール ブロックの使用時には、次の考慮事項に留意してください。
 
-- **言語.** テキスト テンプレートでは、C# または Visual Basic のコードを使用できます。 既定の言語は C# ですが、`template` ディレクティブの `language` パラメーターで Visual Basic を指定できます。 (@No__t_0 ディレクティブの詳細については、「 [T4 テキストテンプレートのディレクティブ](../modeling/t4-text-template-directives.md)」を参照してください)。
+- **言語**。 テキスト テンプレートでは、C# または Visual Basic のコードを使用できます。 既定の言語は C# ですが、`template` ディレクティブの `language` パラメーターで Visual Basic を指定できます。 (詳細については、`template`ディレクティブを参照してください。[T4 テキスト テンプレート ディレクティブ](../modeling/t4-text-template-directives.md))
 
      コントロール ブロックで使用する言語は、テキスト テンプレートで生成するテキストの言語または書式とは無関係です。 Visual Basic コードを使用して C# を生成することも、C# コードを使用して Visual Basic を生成することもできます。
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079365"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596165"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストと配置マニフェストの署名
 
@@ -96,7 +96,7 @@ ClickOnce 配置の詳細については、「[ClickOnce のセキュリティ�
 
 2. **[署名]** ページの **[ClickOnce マニフェストに署名する]** チェック ボックスをオフにします。
 
-3. アプリケーションの 1 つのバージョンのみ使用できるように発行バージョンをリセットします。 既定では、アプリケーションを発行するたびに発行バージョンのリビジョン番号が自動的にインクリメントされます。 詳細については、「[方法 :ClickOnce の発行バージョンを設定する](../deployment/how-to-set-the-clickonce-publish-version.md)」を参照してください。
+3. アプリケーションの 1 つのバージョンのみ使用できるように発行バージョンをリセットします。 既定では、アプリケーションを発行するたびに発行バージョンのリビジョン番号が自動的にインクリメントされます。 詳細については、[ClickOnce の発行バージョンを設定する](../deployment/how-to-set-the-clickonce-publish-version.md)」を参照してください。
 
 4. アプリケーションを発行します。
 

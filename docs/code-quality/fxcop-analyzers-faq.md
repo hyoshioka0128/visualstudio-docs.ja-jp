@@ -4,17 +4,17 @@ ms.date: 09/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dffc3773714336162b3b863fa03a6964b68a3673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 517a583c859870b979c89c4fe2f55cd3bc0fc913
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649584"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587616"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop および FxCop アナライザーに関してよく寄せられる質問
 
@@ -31,11 +31,11 @@ FxCop アナライザーは .NET Compiler Platform ("Roslyn") に基づいてい
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>[コード分析の実行] コマンドで FxCop アナライザーを実行できますか?
 
-いいえ。 [@No__t_1**分析**] を選択して**コード分析を実行**すると、従来の分析が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
+No: [ > **分析**] を選択して**コード分析を実行**すると、従来の分析が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild プロジェクト プロパティはアナライザーを実行しますか?
 
-いいえ。 (たとえば *.csproj* の) プロジェクト ファイル内の **RunCodeAnalysis** プロパティは、従来の FxCop を実行するためのみに使用します。 これは、**FxCopCmd.exe** を起動するビルド後の msbuild タスクを実行します。 これは、Visual Studio で **[分析]**  >  **[コード分析の実行]** を選択するのと同等です。
+No: (たとえば *.csproj* の) プロジェクト ファイル内の **RunCodeAnalysis** プロパティは、従来の FxCop を実行するためのみに使用します。 これは、**FxCopCmd.exe** を起動するビルド後の msbuild タスクを実行します。 これは、Visual Studio で **[分析]**  >  **[コード分析の実行]** を選択するのと同等です。
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>では FxCop アナライザーはどのように実行するのですか?
 
@@ -43,7 +43,7 @@ FxCop アナライザーを実行するには、まずそれ用に [NuGet パッ
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop アナライザーの NuGet パッケージをインストールした後でも警告 CA0507 を取得する
 
-FxCop アナライザーがインストールされていても、警告が引き続き表示される場合は **、ビルド中に実行される fxcop アナライザーを優先して、"コード分析の実行" が非推奨**となりました。プロジェクトで**runcodeanalysis** msbuild プロパティを設定する必要がある場合があります。 [ファイル](../ide/solutions-and-projects-in-visual-studio.md#project-file)を**false**にします。 それ以外の場合、レガシ分析は各ビルドの後に実行されます。
+FxCop アナライザーがインストールされていても、警告が引き続き表示される場合は、**ビルド中に実行される fxcop アナライザーを優先して、"コード分析の実行" が非推奨**となりました[。プロジェクトファイル](../ide/solutions-and-projects-in-visual-studio.md#project-file)の**runcodeanalysis** msbuild プロパティを**false**に設定する必要がある場合があります。 それ以外の場合、レガシ分析は各ビルドの後に実行されます。
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

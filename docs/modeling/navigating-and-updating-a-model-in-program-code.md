@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658359"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566177"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>プログラム コードのモデル内を移動し、モデルを更新する
 
@@ -42,7 +42,7 @@ ms.locfileid: "72658359"
 
 ## <a name="navigation"></a>モデル内の移動
 
-### <a name="properties"></a>プロパティ
+### <a name="properties"></a>[プロパティ]
  DSL 定義で定義したドメインプロパティは、プログラムコードでアクセスできるプロパティになります。
 
  `Person henry = ...;`
@@ -55,7 +55,7 @@ ms.locfileid: "72658359"
 
  `henry.Name = "Henry VIII";`
 
- DSL 定義の場合、プロパティの**種類**が**計算**されますが、設定することはできません。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
+ DSL 定義の場合、プロパティの**種類**が**計算**されますが、設定することはできません。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。
 
 ### <a name="relationships"></a>リレーションシップ
  DSL 定義で定義したドメインリレーションシップは、プロパティのペアになります。1つはリレーションシップの端にあるクラスです。 DslDefinition ダイアグラムには、プロパティの名前がリレーションシップの各側のロールのラベルとして表示されます。 ロールの多重度に応じて、プロパティの型は、リレーションシップのもう一方の端のクラス、またはそのクラスのコレクションのいずれかになります。
@@ -64,7 +64,7 @@ ms.locfileid: "72658359"
 
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`
 
- リレーションシップの反対側のプロパティは、常に相互に関係しています。 リンクが作成または削除されると、両方の要素のロールプロパティが更新されます。 次の式 (`System.Linq` の拡張機能を使用) は、この例の ParentsHaveChildren リレーションシップに対して常に true です。
+ リレーションシップの反対側のプロパティは、常に相互に関係しています。 リンクが作成または削除されると、両方の要素のロールプロパティが更新されます。 次の式 (`System.Linq`の拡張機能を使用) は、この例の ParentsHaveChildren リレーションシップに対して常に true です。
 
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`
 
@@ -80,11 +80,11 @@ ms.locfileid: "72658359"
 
  `link == null || link.Parent == henry && link.Child == edward`
 
- 既定では、リレーションシップの1つ以上のインスタンスがモデル要素のペアをリンクすることはできません。 しかし、DSL 定義の場合、リレーションシップに対して `Allow Duplicates` フラグが true に設定されていると、複数のリンクが存在し、`GetLinks` を使用する必要があります。
+ 既定では、リレーションシップの1つ以上のインスタンスがモデル要素のペアをリンクすることはできません。 しかし、DSL 定義の場合、リレーションシップに対して `Allow Duplicates` フラグが true に設定されていると、複数のリンクが存在し、`GetLinks`を使用する必要があります。
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- リンクにアクセスするための他の方法もあります。 (例:
+ リンクにアクセスするための他の方法もあります。 例:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "72658359"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="metadata"></a>クラス情報へのアクセス
- DSL 定義のクラス、リレーションシップ、およびその他の側面に関する情報を取得できます。 (例:
+ DSL 定義のクラス、リレーションシップ、およびその他の側面に関する情報を取得できます。 例:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -129,7 +129,7 @@ ms.locfileid: "72658359"
 - ElementLink-すべてのリレーションシップは Elementlink です
 
 ## <a name="transaction"></a>トランザクション内で変更を実行する
- プログラムコードによってストア内の何かが変更されるたびに、トランザクション内で実行する必要があります。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそれらのプロパティに適用されます。 詳細については、「<xref:Microsoft.VisualStudio.Modeling.Transaction>」を参照してください。
+ プログラムコードによってストア内の何かが変更されるたびに、トランザクション内で実行する必要があります。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそれらのプロパティに適用されます。 詳細については、「 <xref:Microsoft.VisualStudio.Modeling.Transaction>」を参照してください。
 
  トランザクションを管理する最も便利な方法は、`try...catch` ステートメントで囲まれた `using` ステートメントを使用することです。
 
@@ -199,23 +199,23 @@ using (Transaction t =
 
  リレーションシップのインスタンスを作成するには、次の3つの方法があります。 これら3つのメソッドは、それぞれ同じ効果を持ちます。
 
-- ソースロールプレーヤーのプロパティを設定します。 (例:
+- ソースロールプレーヤーのプロパティを設定します。 例:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- ターゲットロールプレーヤーのプロパティを設定します。 (例:
+- ターゲットロールプレーヤーのプロパティを設定します。 例:
 
   - `edward.familyTreeModel = familyTree;`
 
-       このロールの複数要素の接続性は `1..1` ため、値を割り当てます。
+       このロールの複数要素の接続性は `1..1`ため、値を割り当てます。
 
   - `henry.Children.Add(edward);`
 
-       このロールの複数要素の接続性が `0..*` ため、コレクションにを追加します。
+       このロールの複数要素の接続性が `0..*`ため、コレクションにを追加します。
 
-- リレーションシップのインスタンスを明示的に構築します。 (例:
+- リレーションシップのインスタンスを明示的に構築します。 例:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -227,17 +227,17 @@ using (Transaction t =
 
 ## <a name="deleteelements"></a>要素の削除
 
-@No__t_0 を呼び出して要素を削除します。
+`Delete()`を呼び出して要素を削除します。
 
 `henry.Delete();`
 
 この操作では、次の項目も削除されます。
 
-- 要素との間のリレーションシップリンク。 たとえば、`edward.Parents` には `henry` が含まれなくなります。
+- 要素との間のリレーションシップリンク。 たとえば、`edward.Parents` には `henry`が含まれなくなります。
 
-- @No__t_0 フラグが true であるロールの要素。 たとえば、要素を表示する図形は削除されます。
+- `PropagatesDelete` フラグが true であるロールの要素。 たとえば、要素を表示する図形は削除されます。
 
-既定では、埋め込みリレーションシップはすべて、ターゲットロールで `PropagatesDelete` true になります。 @No__t_0 を削除しても `familyTree` は削除されませんが、`familyTree.Delete()` によってすべての `Persons` が削除されます。
+既定では、埋め込みリレーションシップはすべて、ターゲットロールで `PropagatesDelete` true になります。 `henry` を削除しても `familyTree`は削除されませんが、`familyTree.Delete()` によってすべての `Persons`が削除されます。
 
 既定では、`PropagatesDelete` は参照リレーションシップのロールに対して true ではありません。
 
@@ -247,7 +247,7 @@ using (Transaction t =
 
 (この特定の例では、`ParentsHaveChildren` 関係のロールに対して `PropagatesDelete` が `false` されるため、効果はありません)。
 
-場合によっては、要素または伝達によって削除される要素に、ロックが存在しても削除できません。 @No__t_0 を使用すると、要素を削除できるかどうかを確認できます。
+場合によっては、要素または伝達によって削除される要素に、ロックが存在しても削除できません。 `element.CanDelete()` を使用すると、要素を削除できるかどうかを確認できます。
 
 ## <a name="deletelinks"></a>リレーションシップリンクの削除
  リレーションシップリンクを削除するには、ロールプロパティから要素を削除します。
@@ -285,13 +285,13 @@ using (Transaction t =
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>固定
- ロックによって変更が禁止されている可能性があります。 ロックは、個々の要素、パーティション、およびストアで設定できます。 これらのレベルのいずれかが、変更の種類を妨げるロックを持っている場合は、例外がスローされることがあります。 ロックが設定されているかどうかは、要素を使用して検出できます。GetLocks ()。これは、<xref:Microsoft.VisualStudio.Modeling.Immutability> 名前空間で定義されている拡張メソッドです。
+## <a name="locks"></a> Locks
+ ロックによって変更が禁止されている可能性があります。 ロックは、個々の要素、パーティション、およびストアで設定できます。 これらのレベルのいずれかが、変更の種類を妨げるロックを持っている場合は、例外がスローされることがあります。 ロックが設定されているかどうかは、要素を使用して検出できます。GetLocks ()。これは、<xref:Microsoft.VisualStudio.Modeling.Immutability>名前空間で定義されている拡張メソッドです。
 
  詳細については、「[ロックポリシーを定義して読み取り専用セグメントを作成する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)」を参照してください。
 
 ## <a name="copy"></a>コピーと貼り付け
- 要素または要素のグループを <xref:System.Windows.Forms.IDataObject> にコピーできます。
+ 要素または要素のグループを <xref:System.Windows.Forms.IDataObject>にコピーできます。
 
 ```csharp
 Person person = personShape.ModelElement as Person;
@@ -313,7 +313,7 @@ using (Transaction t = targetDiagram.Store.
 }
 ```
 
- `Merge ()` は、`PresentationElement` または `ModelElement` を受け入れることができます。 @No__t_0 を指定する場合は、3番目のパラメーターとしてターゲットダイアグラム上の位置を指定することもできます。
+ `Merge ()` は、`PresentationElement` または `ModelElement`を受け入れることができます。 `PresentationElement`を指定する場合は、3番目のパラメーターとしてターゲットダイアグラム上の位置を指定することもできます。
 
 ## <a name="diagrams"></a>ダイアグラムの移動と更新
  DSL では、Person や Song などの概念を表すドメインモデル要素は、図に表示される内容を表す shape 要素とは別のものです。 ドメインモデル要素は、概念の重要なプロパティと関係を格納します。 図形要素には、オブジェクトのビューのサイズ、位置、および色、およびそのコンポーネントパーツのレイアウトが格納されます。
@@ -323,19 +323,19 @@ using (Transaction t = targetDiagram.Store.
 
  DSL 定義では、指定した各要素によって、次のいずれかの標準クラスから派生したクラスが作成されます。
 
-|要素の種類|基底クラス|
+|要素の種類|[基底クラス]|
 |-|-|
 |ドメインクラス|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |ドメインリレーションシップ|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
-|形式|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
+|[図形]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
 |コネクタ|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |図|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
- 図の要素は、通常、モデル要素を表します。 通常は (常にではありません)、<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> はドメインクラスのインスタンスを表し、<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> はドメインリレーションシップのインスタンスを表します。 @No__t_0 リレーションシップは、ノードまたはリンク図形を、それが表すモデル要素にリンクします。
+ 図の要素は、通常、モデル要素を表します。 通常は (常にではありません)、<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> はドメインクラスのインスタンスを表し、<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> はドメインリレーションシップのインスタンスを表します。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> リレーションシップは、ノードまたはリンク図形を、それが表すモデル要素にリンクします。
 
  すべてのノードまたはリンク図形は、1つの図に属します。 バイナリリンク図形は、2つのノード図形を接続します。
 
- 図形は、2つのセットに子図形を持つことができます。 @No__t_0 セット内の図形は、その親の境界ボックスに限定されます。 @No__t_0 リスト内の図形は、親の境界の外側または一部に表示できます。たとえば、ラベルやポートなどです。 図には `RelativeChildShapes` がなく、`Parent` もありません。
+ 図形は、2つのセットに子図形を持つことができます。 `NestedChildShapes` セット内の図形は、その親の境界ボックスに限定されます。 `RelativeChildShapes` リスト内の図形は、親の境界の外側または一部に表示できます。たとえば、ラベルやポートなどです。 図には `RelativeChildShapes` がなく、`Parent`もありません。
 
 ### <a name="views"></a>図形と要素間の移動
  ドメインモデル要素と図形要素は、<xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> リレーションシップによって関連付けられます。
@@ -401,13 +401,13 @@ FamilyTreeDiagram diagram =
 
  ------- <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>
 
- *図形*の ------- 
+ ------- *YourShape*
 
  ----- <xref:Microsoft.VisualStudio.Modeling.Diagrams.LinkShape>
 
  ------- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>
 
- *コネクタ*を --------- 
+ --------- *YourConnector*
 
 ### <a name="shapeProperties"></a>図形とコネクタのプロパティ
  ほとんどの場合、図形に対して明示的な変更を行う必要はありません。 モデル要素を変更すると、"修正" ルールによって図形とコネクタが更新されます。 詳細については、「[変更に対する応答と反映](../modeling/responding-to-and-propagating-changes.md)」を参照してください。
@@ -428,7 +428,7 @@ FamilyTreeDiagram diagram =
 
 要素を作成し、埋め込みリレーションシップのツリーにリンクすると、図形が自動的に作成され、関連付けられます。 これは、トランザクションの終了時に実行される "fixup" 規則によって行われます。 ただし、図形は自動的に割り当てられた場所に表示され、その図形、色、およびその他の機能には既定値が設定されます。 図形の作成方法を制御するには、merge 関数を使用します。 まず、追加する要素を ElementGroup に追加してから、そのグループをダイアグラムにマージする必要があります。
 
-このメソッドは次のとおりです。
+この方法では:
 
 - プロパティが要素名として割り当てられている場合は、名前を設定します。
 
@@ -469,7 +469,7 @@ partial class MyDiagram
 }
 ```
 
- 複数の図形を指定する場合は、`AbsoluteBounds` を使用して相対位置を設定します。
+ 複数の図形を指定する場合は、`AbsoluteBounds`を使用して相対位置を設定します。
 
  この方法を使用して、コネクタの色やその他の公開プロパティを設定することもできます。
 

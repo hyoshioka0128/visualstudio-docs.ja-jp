@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 329040a1d572741fc6971c312ce9364659644b59
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 757b0b685094e40f48f659bd978087b20a8133c7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300577"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850577"
 ---
 # <a name="accessibility-products-and-services-blend"></a>アクセシビリティ製品およびサービス (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ ms.locfileid: "74300577"
 - "詳細情報"
 
 > [!NOTE]
-> このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、 [マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkID=75069) にアクセスし、Microsoft Support Services の電話番号と住所の一覧をご覧ください。 このセクションに記載されている製品およびサービスがお住まいの地域で提供されているかどうかを調べるには、各現地法人に問い合わせてください。 アクセシビリティに関する情報は、日本語やフランス語などの他の言語でも提供されています。
+> このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、 [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/enable) にアクセスし、Microsoft Support Services の電話番号と住所の一覧をご覧ください。 このセクションに記載されている製品およびサービスがお住まいの地域で提供されているかどうかを調べるには、各現地法人に問い合わせてください。 アクセシビリティに関する情報は、日本語やフランス語などの他の言語でも提供されています。
 
 ## <a name="accessibility-features-of-windows"></a>Windows のアクセシビリティ機能
- Windows オペレーティング システムには、多くのアクセシビリティ機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 これらの機能は、セットアップ中にインストールされます。 これらの機能について詳しくは、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkID=75069)をご覧ください。
+ Windows オペレーティング システムには、多くのアクセシビリティ機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 これらの機能は、セットアップ中にインストールされます。 これらの機能について詳しくは、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/enable)をご覧ください。
 
 ### <a name="free-step-by-step-tutorials"></a>無料の操作手順チュートリアル
  Microsoft では、アクセシビリティに関するオプションの選択とコンピューターの設定について、詳細な手順を示すチュートリアルを用意しています。 この情報は隣り合わせに表示されるため、マウス、キーボード、またはその組み合わせの使用方法が一目で分かります。
 
- Microsoft 製品のステップバイステップ チュートリアルを参照するには、 [マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkID=75069)をご覧ください。
+ Microsoft 製品のステップバイステップ チュートリアルを参照するには、 [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/enable)をご覧ください。
 
 ### <a name="assistive-technology-products-for-windows"></a>Windows の支援技術製品
- 障碍のある方にコンピューターをより使いやすくする、さまざまな支援技術製品をご利用いただけます。 Windows で使用できるユーザー補助技術製品のカタログを [マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkID=75069)で検索できます。
+ 障碍のある方にコンピューターをより使いやすくする、さまざまな支援技術製品をご利用いただけます。 Windows で使用できるユーザー補助技術製品のカタログを [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/enable)で検索できます。
 
  支援技術製品を使用する場合は、ソフトウェアまたはハードウェアをアップグレードする前に、互換性の問題を支援技術ベンダーにお問い合わせください。
 
 ## <a name="documentation-in-alternative-formats"></a>別形式のドキュメント
- 印刷ドキュメントを読んだり使用したりするのが難しい場合は、多くの Microsoft 製品でより使いやすい形式のドキュメントをご利用できます。 ユーザー補助製品ドキュメントの索引が、 [マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkID=75069)に示されています。
+ 印刷ドキュメントを読んだり使用したりするのが難しい場合は、多くの Microsoft 製品でより使いやすい形式のドキュメントをご利用できます。 ユーザー補助製品ドキュメントの索引が、 [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/enable)に示されています。
 
  さらに、Recording for the Blind & Dyslexic, Inc (RFB&D) からその他の Microsoft の出版物を入手できます。 RFB&D では、RFB&D の配送サービスに登録したメンバーにこれらの出版物を配布しています。 Microsoft 製品のドキュメントおよび Microsoft Press 発行の出版物の在庫については、次までお問い合わせください。
 
@@ -62,7 +62,7 @@ ms.locfileid: "74300577"
 
  Fax: (609) 987-8116
 
- [Learning Ally サイト](https://go.microsoft.com/fwlink/?LinkId=111110)
+ [Learning Ally サイト](https://www.learningally.org/)
 
  Web アドレスは変更される場合があるので、ここに示したサイトに接続できないこともあります。
 
@@ -76,4 +76,4 @@ ms.locfileid: "74300577"
  Microsoft サポート サービスは、サービスを利用された時点での価格および契約条件が適用されます。
 
 ## <a name="for-more-information"></a>詳細情報
- コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかについて詳しくは、 [マイクロソフト アクセシビリティ ホーム](https://go.microsoft.com/fwlink/?LinkID=75069)をご覧ください。
+ コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかについて詳しくは、 [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/enable)をご覧ください。

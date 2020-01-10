@@ -3,17 +3,17 @@ title: XSLT デバッガーウィンドウ
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646089"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592881"
 ---
 # <a name="debugger-user-interface-xslt"></a>デバッガーユーザーインターフェイス (XSLT)
 
@@ -25,7 +25,7 @@ ms.locfileid: "72646089"
 
 [ローカル] ウィンドウには、スタイル シートで定義されているすべての変数に関する情報が表示されます。 [ローカル] ウィンドウには、次の 3 列の情報が含まれています。
 
-**Name**
+**名前**
 
 この列には、現在のスコープに存在するすべてのローカル変数の名前が含まれています。 ノードセットには、サブフォルダーを表示するためにドリルダウンできるツリーコントロールがあります。
 
@@ -33,13 +33,13 @@ ms.locfileid: "72646089"
 
 この列には、各変数に格納されている値が表示されます。 属性、処理命令、コメント、テキスト、および CDATA のノードについては、ノードのテキスト値が表示されます。 名前空間ノードについては、名前空間 URI が表示されます。
 
-**Type**
+**型**
 
 この列は、**名前**列に表示される各変数のデータ型を識別します。
 
 [ローカル] ウィンドウには、XSLT 変換のコンテキストを追跡する定義済みのコンテキスト変数も表示されます。 XSLT デバッガーが使用する定義済みのコンテキスト変数について次の表で説明します。
 
-|名|説明|
+|[名前]|説明|
 |-|-----------------|
 |`last()`|コンテキスト サイズです。|
 |`position()`|コンテキスト サイズを基準としたコンテキスト ノードの位置、つまりインデックス番号です。|
@@ -64,7 +64,7 @@ ms.locfileid: "72646089"
 
 [ブレークポイント] ウィンドウは、他の Visual Studio デバッガーと同様に動作します。
 
-## <a name="watch-window"></a>[ウォッチ] ウィンドウ
+## <a name="watch-window"></a>監視ウィンドウ
 
 [ウォッチ] ウィンドウは、変数を評価するために使用されます。 変数の値を変更することもできます。
 
@@ -88,7 +88,7 @@ XPath 式の評価に関する制限事項を次に示します。
 
 - 使用できるのは組み込みの XPath 関数のみです。
 
-- @No__t_0 や `key()` などの組み込みの XSLT 関数は使用できません。
+- `document()` や `key()` などの組み込みの XSLT 関数は使用できません。
 
 - ユーザー定義関数は使用できません。
 

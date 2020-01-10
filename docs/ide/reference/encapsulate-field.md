@@ -2,8 +2,8 @@
 title: フィールドをプロパティにリファクタリングする
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e47a62fcea8306c22564e50adde436b4f35e549
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654476"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569713"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>フィールドのカプセル化リファクタリング
 

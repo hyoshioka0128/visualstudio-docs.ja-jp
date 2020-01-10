@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647075"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590658"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 
@@ -33,7 +33,7 @@ Microsoft アカウントまたは組織アカウントで、Visual Studio に�
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>サーバー エクスプローラーで Azure アカウントにアクセス
 
-サーバー エクスプローラーを開くには、 **[表示]**  >  **[サーバー エクスプローラー]** を選択します (または、"全般" [環境設定](../ide/environment-settings.md)を使用している場合は、**Ctrl** + **Alt** + **S** キーを押します)。 **Azure** ノードを展開し、Visual Studio にサインインするときに使用したアカウントに関連付けられた Azure アカウントで使用可能なリソースが含まれることを確認します。 次の図のように表示されます。
+サーバー エクスプローラーを開くには、 **[表示]**  >  **[サーバー エクスプローラー]** を選択します (または、"全般" [環境設定](../ide/environment-settings.md)を使用している場合は、**Ctrl**+**Alt**+**S** キーを押します)。 **Azure** ノードを展開し、Visual Studio にサインインするときに使用したアカウントに関連付けられた Azure アカウントで使用可能なリソースが含まれることを確認します。 次の図のように表示されます。
 
 ![Azure ノードが展開されたサーバー エクスプローラー](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -107,7 +107,7 @@ ASP.NET でのさまざまな種類の認証について詳しくは、「[Visua
 
    ![デバイス コード フローの URL とコード](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. **Ctrl** + **C** キーを押してダイアログのテキストをコピーし、 **[OK]** を選択してダイアログを閉じます。 コピーしたテキストをメモ帳などのテキスト エディターに貼り付けます。 これにより、次のステップでコードをコピーしやすくなります。
+1. **Ctrl**+**C** キーを押してダイアログのテキストをコピーし、 **[OK]** を選択してダイアログを閉じます。 コピーしたテキストをメモ帳などのテキスト エディターに貼り付けます。 これにより、次のステップでコードをコピーしやすくなります。
 
 1. Visual Studio へのサインインに使用するマシンまたは Web ブラウザーでデバイス ログイン URL に移動し、 **[コード]** ボックスにコピーしたコードを貼り付けるか入力します。
 

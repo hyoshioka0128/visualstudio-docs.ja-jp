@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572249"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>エンコードする URI は無効な文字を含んでいます。
-文字列を URI (Uniform Resource Identifier) としてエンコードしようとしましたが、無効な文字が含まれていました。 Uri に変換する文字列内では、ほとんどの文字が有効ですが、一部の Unicode 文字シーケンスは無効です。  
+URI (Uniform Resource Identifier) としてエンコードされた文字列に、無効な文字が含まれています。 文字列の大半の文字は正常に URI に変換できますが、一部に無効な Unicode 文字シーケンスがあります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

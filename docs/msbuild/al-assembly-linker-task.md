@@ -13,17 +13,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90e6c94d07b73e79d793982944bca395a562df2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951286"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593474"
 ---
 # <a name="al-assembly-linker-task"></a>AL (アセンブリ リンカー) タスク
 AL タスクは、[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] と共に配布されるツールである *AL.exe* をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 *AL.exe* について詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」をご覧ください。
@@ -66,9 +66,9 @@ AL タスクは、[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)
 | `Trademark` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリの `Trademark` フィールドに文字列を指定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/trade[mark]` オプションのドキュメントをご覧ください。 |
 | `Version` | 省略可能な `String` 型のパラメーターです。<br /><br /> このアセンブリのバージョン情報を指定します。 文字列の形式は、*major.minor.build.revision* です。 既定値は 0 です。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/v[ersion]` オプションのドキュメントをご覧ください。 |
 | `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> *.ico* ファイルをアセンブリに挿入します。 この *.ico* ファイルは、エクスプローラーにおける出力ファイルの視覚的な表現を提供します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/win32icon` オプションに対応します。 |
-| `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース (*.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/win32res` オプションのドキュメントをご覧ください。 |
+| `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/win32res` オプションのドキュメントをご覧ください。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例

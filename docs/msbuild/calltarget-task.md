@@ -11,17 +11,17 @@ helpviewer_keywords:
 - CallTarget task [MSBuild]
 - MSBuild, CallTarget task
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7aac5078f5fec4da59538543a9d6123f4473c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bad6ab828af1f62818636b3af11232294256c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593383"
 ---
 # <a name="calltarget-task"></a>CallTarget タスク
 プロジェクト ファイル内で指定されたターゲットを呼び出します。
@@ -36,7 +36,7 @@ ms.locfileid: "62823268"
 | `Targets` | 省略可能な `String[]` 型のパラメーターです。<br /><br /> ビルドする 1 つまたは複数のターゲットを指定します。 |
 | `UseResultsCache` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、キャッシュされた結果が返されます (存在する場合)。<br /><br /> **メモ** MSBuild タスクが実行された場合、その出力は、ビルド項目のリストとしてスコープ ((ProjectFileName, GlobalProperties)[TargetNames]) にキャッシュされます。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `Targets` に指定されたターゲットのビルドが失敗し、`RunEachTargetSeparately` が `true` に設定されている場合、タスクは残りのターゲットのビルドを続行します。
 
  既定のターゲットをビルドする場合は、[MSBuild タスク](../msbuild/msbuild-task.md)を使用して、`Projects` パラメーターを `$(MSBuildProjectFile)` と等しくなるように設定します。

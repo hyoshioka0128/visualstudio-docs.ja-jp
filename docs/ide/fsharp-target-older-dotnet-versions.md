@@ -3,18 +3,18 @@ title: 以前のバージョンの .NET Framework を F# のターゲットに�
 description: Visual Studio で F# を使用するときに、以前のバージョンの .NET Framework をターゲットにする場合について説明します。
 ms.date: 07/11/2018
 ms.topic: troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: df263ee4b2bd6ec7b6239826725a85c26f0acf80
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b5cf62dadc38802e477c7588416b4003304e852
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603528"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584583"
 ---
 # <a name="target-older-versions-of-net-f"></a>以前のバージョンの .NET をターゲットにする (F#)
 

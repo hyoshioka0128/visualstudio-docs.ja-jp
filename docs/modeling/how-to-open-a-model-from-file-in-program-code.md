@@ -2,17 +2,17 @@
 title: '方法: プログラム コード内のファイルからモデルを開く'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661176"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594618"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 
@@ -33,15 +33,15 @@ DSL モデルは任意のアプリケーションで開くことができます�
 > [!NOTE]
 > ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル**にすることはできません。
 
-## <a name="references"></a>関連項目
+## <a name="references"></a>参照
 
 次の参照を Visual Studio アプリケーションプロジェクトに追加します。
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - **[参照の追加]** ダイアログボックスの **[.net]** タブにこれが表示されない場合は、 **[参照]** タブをクリックし、`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` に移動します。
+  - **[参照の追加]** ダイアログボックスの **[.net]** タブにこれが表示されない場合は、 **[参照]** タブをクリックし、`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`に移動します。
 
-- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject* `.Dsl.dll`。
+- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject*`.Dsl.dll`。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL の重要なクラス
 
@@ -49,7 +49,7 @@ DSL を読み取るコードを記述する前に、DSL によって生成され
 
 次のクラスを識別する必要があります。
 
-- 自分の*Dslrootclass* -`DslDefinition.dsl` 内のルートクラスの名前です。
+- 自分の*Dslrootclass* -`DslDefinition.dsl`内のルートクラスの名前です。
 
 - *Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトの `SerializationHelper.cs` で定義されています。
 

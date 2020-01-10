@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658329"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595892"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>生成されたクラスをオーバーライドして拡張する
 
@@ -28,7 +28,7 @@ DSL 定義は、ドメイン固有の言語に基づいた強力なツールセ�
 
 部分クラス定義を使用すると、クラスを複数の場所で定義できます。 これにより、自分で記述したコードから生成されたコードを分離することができます。 手動で記述したコードでは、生成されたコードによって継承されるクラスをオーバーライドできます。
 
-たとえば、DSL 定義で `Book` という名前のドメインクラスを定義する場合、オーバーライドメソッドを追加するカスタムコードを記述できます。
+たとえば、DSL 定義で `Book`という名前のドメインクラスを定義する場合、オーバーライドメソッドを追加するカスタムコードを記述できます。
 
 ```csharp
 public partial class Book
@@ -52,13 +52,13 @@ public partial class Book
 
 それでも、これらのメソッドをオーバーライドするには、ドメインクラスの [**二重の派生**フラグを生成する] を設定します。 これにより、2つのクラスが生成されます。1つはもう一方の抽象基本クラスです。 すべてのメソッドとプロパティの定義は基底クラスにあり、コンストラクターだけが派生クラスに含まれています。
 
-たとえば、サンプルライブラリの dsl では、`CirculationBook` ドメインクラスの `Generates``Double Derived` プロパティが `true` に設定されています。 このドメインクラスの生成されたコードには、次の2つのクラスが含まれています。
+たとえば、サンプルライブラリの dsl では、`CirculationBook` ドメインクラスの `Generates``Double Derived` プロパティが `true`に設定されています。 このドメインクラスの生成されたコードには、次の2つのクラスが含まれています。
 
 - `CirculationBookBase`。これは abstract であり、すべてのメソッドとプロパティが含まれています。
 
-- `CirculationBook`。 `CirculationBookBase` から派生します。 コンストラクターを除き、空です。
+- `CirculationBook`。 `CirculationBookBase`から派生します。 コンストラクターを除き、空です。
 
-任意のメソッドをオーバーライドするには、`CirculationBook` などの派生クラスの部分定義を作成します。 生成されたメソッドと、モデリングフレームワークから継承されたメソッドの両方をオーバーライドできます。
+任意のメソッドをオーバーライドするには、`CirculationBook`などの派生クラスの部分定義を作成します。 生成されたメソッドと、モデリングフレームワークから継承されたメソッドの両方をオーバーライドできます。
 
 このメソッドは、モデル要素、リレーションシップ、図形、図、コネクタなど、すべての種類の要素で使用できます。 その他の生成されたクラスのメソッドをオーバーライドすることもできます。 ToolboxHelper などの生成されたクラスの中には、常に二重に派生するものがあります。
 
@@ -80,7 +80,7 @@ public partial class Book
 
 トランザクションマネージャーでは、プロパティの変更など、指定されたイベントが発生したトランザクションの終了前に実行される規則を定義できます。 通常、ルールは、ストア内の異なる要素間で synchronism を維持するために使用されます。 たとえば、ルールを使用して、モデルの現在の状態がダイアグラムに表示されるようにします。
 
-規則はクラス単位で定義されるため、各オブジェクトに規則を登録するコードを用意する必要はありません。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+規則はクラス単位で定義されるため、各オブジェクトに規則を登録するコードを用意する必要はありません。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
 
 ### <a name="store-events"></a>ストアイベント
 

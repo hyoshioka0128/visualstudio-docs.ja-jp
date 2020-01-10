@@ -3,17 +3,17 @@ title: XML リテラルと XML スキーマ エクスプローラーの統合
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf073145b0deb21a2ec29ac1fff16be08fb24593
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 576f403d92ae1c80d9c7fba1757278ae5c5f25ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986302"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592595"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Xml リテラルと XML スキーマエクスプローラーの統合
 
@@ -23,11 +23,11 @@ Visual Basic では XML リテラルがサポートされているため、Visua
 
 Visual Basic プロジェクト内の XSD ファイルに XML リテラルが含まれている場合は、xml スキーマ**エクスプローラー**で xml スキーマセットを表示できます。 XML リテラルに関連付けられているスキーマセットを表示するには、xml リテラルまたは XML 名前空間インポートで XML ノードを右クリックし、 **[スキーマエクスプローラーで表示]** を選択します。
 
-![Visual Basic XML リテラル (XML スキーマ エクスプローラー)](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
+![Visual Basic XML リテラル; XML スキーマ エクスプローラー](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
 
 これにより、 **XML スキーマエクスプローラー**が Visual Basic ファイルと並行して開きます。
 
-![Visual Basic XML リテラル (XML スキーマ エクスプローラー)](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
+![Visual Basic XML リテラル; XML スキーマ エクスプローラー](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
 ## <a name="see-also"></a>関連項目
 

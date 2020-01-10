@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, LC task
 - LC task [MSBuild]
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86525b2c4ddcf36ca85feee31f89f0003f1f9775
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817500"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590827"
 ---
 # <a name="lc-task"></a>LC タスク
 *LC.exe* をラップします。LC.exe は *.licx* ファイルから *.license* ファイルを生成します。 *LC.exe* の詳細については、「[Lc.exe (ライセンス コンパイラ)](/dotnet/framework/tools/lc-exe-license-compiler)」を参照してください。
@@ -36,7 +36,7 @@ ms.locfileid: "62817500"
 |`LicenseTarget`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> *.licenses* ファイルを生成する実行可能ファイルを指定します。|
 |`NoLogo`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> Microsoft 著作権情報を表示しません。|
 |`OutputDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> 出力 *.licenses* ファイルを配置するディレクトリを指定します。|
-|`OutputLicense`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型の出力パラメーターです。<br /><br /> *.licenses* ファイルの名前を指定します。 名前を指定しなかった場合は、*.licx* ファイルの名前が使用され、*.licenses* ファイルは、*.licx* ファイルが含まれているディレクトリに配置されます。|
+|`OutputLicense`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型の出力パラメーターです。<br /><br /> *.licenses* ファイルの名前を指定します。 名前を指定しなかった場合は、 *.licx* ファイルの名前が使用され、 *.licenses* ファイルは、 *.licx* ファイルが含まれているディレクトリに配置されます。|
 |`ReferencedAssemblies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> *.license* ファイルの生成時に読み込む参照コンポーネントを指定します。|
 |`SdkToolsPath`|省略可能な `String` 型のパラメーターです。<br /><br /> *resgen.exe* などの SDK ツールのパスを指定します。|
 |`Sources`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> *.licenses* ファイルに組み込むライセンス付きコンポーネントを格納するアイテムを指定します。 詳細については、「[Lc.exe (ライセンス コンパイラ)](/dotnet/framework/tools/lc-exe-license-compiler)」にある `/complist` スイッチの説明を参照してください。|

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747353"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593357"
 ---
 # <a name="cl-task"></a>CL タスク
 Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コンパイラは、実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*) ファイル、またはコード モジュール ( *.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」を参照してください。

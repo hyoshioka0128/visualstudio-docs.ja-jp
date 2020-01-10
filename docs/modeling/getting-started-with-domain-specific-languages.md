@@ -2,24 +2,24 @@
 title: ドメイン固有言語の概要
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985052"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596568"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 
 このトピックでは、モデリング SDK for Visual Studio で作成されたドメイン固有言語 (DSL) の定義と使用に関する基本的な概念について説明します。
 
 > [!NOTE]
-> テキストテンプレート変換 SDK と Visual Studio モデリング SDK は、Visual Studio の特定の機能をインストールするときに自動的にインストールされます。 詳細については、[このブログ投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
+> テキストテンプレート変換 SDK と Visual Studio モデリング SDK は、Visual Studio の特定の機能をインストールするときに自動的にインストールされます。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
 
 Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、「[視覚化とモデリング SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) 」で確認できます。
 
@@ -37,7 +37,7 @@ Dsl の主要なアプリケーションの1つは、プログラムコード、
 
 この概要の残りの部分では、Visual Studio でドメイン固有言語を作成および使用するための基本的な操作について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
@@ -147,11 +147,11 @@ DSL 定義では、モデルを図に表示する方法を指定できます。 
 
 モデルを編集しているときに、 **[エクスプローラー]** ビューでモデルをツリーとして表示できます。 図に図形を追加すると、モデル要素もエクスプローラーに表示されます。 図がない場合でも、エクスプローラーを使用できます。
 
-Visual Studio のデバッグインスタンスにエクスプローラーが表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、[ *\<Your 言語 >* **エクスプローラー**] をクリックします。
+Visual Studio のデバッグインスタンスにエクスプローラーが表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、[*言語 >* **エクスプローラー**を\<] をクリックします。
 
 ### <a name="the-api-of-your-dsl"></a>DSL の API
 
-DSL は、DSL のインスタンスであるモデルの読み取りと更新を可能にする API を生成します。 API の1つのアプリケーションは、モデルからテキストファイルを生成することです。 詳細については、「 [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。
+DSL は、DSL のインスタンスであるモデルの読み取りと更新を可能にする API を生成します。 API の1つのアプリケーションは、モデルからテキストファイルを生成することです。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) テンプレートの構文の詳細については、次を参照してください。
 
 デバッグソリューションで、拡張子が ".tt" のテンプレートファイルを開きます。 これらのサンプルでは、モデルからテキストを生成し、DSL の API をテストできるようにする方法を示します。 サンプルの1つは、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]の別の [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]で記述されています。
 
@@ -209,7 +209,7 @@ DSL には、さまざまな拡張機能を作成できます。 次の例では
 
     2. プロパティウィンドウを開き、DSL エクスプローラーとプロパティを同時に表示できるように配置します。
 
-    3. DSL エクスプローラーで、**エディター**、**ツールボックス タブ**、 *\<your DSL >* 、**ツール** の順に展開します。
+    3. DSL エクスプローラーで、 **[エディター]** 、[**ツールボックス] タブ**、 *Dsl >\<* 、 **[ツール]** の順に展開します。
 
     4. **[要素]** をクリックします。 これは、要素の作成に使用されるツールボックス項目です。
 
@@ -264,7 +264,7 @@ DSL には、さまざまな拡張機能を作成できます。 次の例では
 
 3. デコレーターをプロパティにマップします。
 
-   1. DSL の詳細ウィンドウを開きます。 通常は、[出力] ウィンドウの横にあるタブに表示されます。 表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[DSL の詳細]** をクリックします。
+   1. [DSL Details] (DSL の詳細) ウィンドウを開きます。 通常は、[出力] ウィンドウの横にあるタブに表示されます。 表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[DSL の詳細]** をクリックします。
 
    2. DSL 定義図で、 **Person**ドメインクラスを shape クラスに接続する線をクリックします。
 

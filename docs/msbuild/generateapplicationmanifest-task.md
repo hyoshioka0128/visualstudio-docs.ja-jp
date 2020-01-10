@@ -14,17 +14,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 446f4728f92d5a486afea1a7c03c8d5006690bfc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003643"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589306"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest タスク
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェストまたはネイティブ マニフェストを生成します。 ネイティブ マニフェストでは、コンポーネントの一意の ID を定義し、コンポーネントを構成するアセンブリおよびファイルを指定することによって、コンポーネントを記述します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェストはネイティブ マニフェストを拡張するもので、アプリケーションのエントリ ポイントとセキュリティ レベルを指定します。
@@ -45,7 +45,7 @@ ms.locfileid: "63003643"
 | `FileAssociations` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ClickOnce の配置マニフェストに関連付けられている 1 つまたは複数のファイルの種類のリストを指定します。<br /><br /> ファイルの関連付けは、.NET Framework 3.5 以降が対象となっている場合にのみ有効です。 |
 | `Files` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> マニフェストに含めるファイルです。 各ファイルの完全パスを指定します。 |
 | `HostInBrowser` | 省略可能な <xref:System.Boolean> 型のパラメーターです。<br /><br /> `true` の場合、WPF Web ブラウザー アプリケーションのように、アプリケーションがブラウザーでホストされます。 |
-| `IconFile` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> アプリケーション アイコンのファイルを示します。 アプリケーション アイコンは、作成されるアプリケーション マニフェストに記述され、**[スタート]** メニューおよび **[プログラムの追加と削除]** ダイアログで使用されます。 指定しなかった場合には、既定のアイコンが使用されます。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。 |
+| `IconFile` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> アプリケーション アイコンのファイルを示します。 アプリケーション アイコンは、作成されるアプリケーション マニフェストに記述され、 **[スタート]** メニューおよび **[プログラムの追加と削除]** ダイアログで使用されます。 指定しなかった場合には、既定のアイコンが使用されます。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。 |
 | `InputManifest` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> マニフェスト ジェネレーターのベースとして使用する、入力 XML ドキュメントを指定します。 これによって、アプリケーション セキュリティまたはカスタム マニフェスト定義など、構造化されたデータが出力マニフェストに反映されます。 XML ドキュメントのルート要素は、asmv1 名前空間内のアセンブリ ノードである必要があります。 |
 | `IsolatedComReferences` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 作成されるマニフェスト内で分離する COM コンポーネントを指定します。 このパラメーターを使用すると、"登録を必要としない COM" の配置用に COM コンポーネントを分離できます。 この機能は、標準の COM 登録の定義を使用してマニフェストを自動作成することによって実現されています。 ただし、正しく動作するためには、ビルド処理を行っているコンピューターに、対象の COM コンポーネントが登録されている必要があります。 |
 | `ManifestType` | 省略可能な `String` 型のパラメーターです。<br /><br /> 作成するマニフェストの種類を指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> このパラメーターが指定されていない場合は、既定の `ClickOnce` が使用されます。 |
@@ -53,8 +53,8 @@ ms.locfileid: "63003643"
 | `OSVersion` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションで必要なオペレーティング システム (OS) の最低限のバージョンを指定します。 たとえば、"5.1.2600.0" という値は、オペレーティング システムが Windows XP であることを示しています。 このパラメーターを指定しなかった場合には、.NET Framework. でサポートされている最低限の OS である Windows 98 Second Edition を示す "4.10.0.0" が使用されます。 タスクがネイティブ マニフェストを生成する場合には、この入力は無視されます。 |
 | `OutputManifest` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型の出力パラメーターです。<br /><br /> 生成される出力マニフェスト ファイルの名前を指定します。 このパラメーターが指定されていない場合、出力ファイルの名前は、生成されるマニフェストの ID から推測されます。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの対象プラットフォームを指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> このパラメーターが指定されていない場合は、既定の `AnyCPU` が使用されます。 |
-| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーション名を示します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、**[スタート]** メニューに表示する名前として使用され、**[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
-| `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、**[スタート]** メニューに表示するフォルダー名として使用され、**[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーション名を示します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示する名前として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示するフォルダー名として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
 | `RequiresMinimumFramework35SP1` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、アプリケーションでは .NET Framework 3.5 SP1 またはそれ以降のバージョンが必要です。 |
 | `TargetCulture` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションのカルチャを示し、生成されるマニフェストのアセンブリ ID の `Language` フィールドを指定します。 このパラメーターを指定しなかった場合、アプリケーションは、カルチャに依存しないと仮定されます。 |
 | `TargetFrameworkMoniker` | 省略可能な `String` 型のパラメーターです。<br /><br /> ターゲット フレームワーク モニカーを指定します。 |
@@ -64,7 +64,7 @@ ms.locfileid: "63003643"
 | `TrustInfoFile` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> アプリケーションのセキュリティを指定する XML ドキュメントを示します。 XML ドキュメントのルート要素は、asmv2 名前空間内の trustInfo ノードである必要があります。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。 |
 | `UseApplicationTrust` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、`Product`、`Publisher`、および `SupportUrl` の各プロパティがアプリケーション マニフェストに書き込まれます。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、「[Task Base Class](../msbuild/task-base-class.md)」を参照してください。
 
 `GenerateDeploymentManifest` タスクの使用方法については、「[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)」を参照してください。

@@ -1,5 +1,5 @@
 ---
-title: 小数部の桁数が範囲外です |Microsoft Docs
+title: 小数の桁数が有効範囲を超えています |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript

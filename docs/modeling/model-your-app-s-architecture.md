@@ -4,22 +4,22 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba455730ddac9b2a02b8f0580711499d6a779f49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747535"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590229"
 ---
 # <a name="model-your-app39s-architecture"></a>アプリ&#39;のアーキテクチャをモデル化する
 ソフトウェアシステムまたはアプリケーションがユーザーのニーズを満たしているかどうかを確認するために、Visual Studio でソフトウェアシステムまたはアプリケーションの全体的な構造と動作についての説明の一部としてモデルを作成できます。 モデルを使用して、設計全体で使用するパターンを記述することもできます。 これらのモデルは、既存のアーキテクチャの理解、変更についての話し合い、開発者の意図の伝達に役立ちます。
 
- この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+ Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
  モデルの目的は、自然言語による記述のあいまいさを減らし、開発者同士が設計を視覚化してさまざまな設計について話し合えるようにすることです。 モデルは、他のドキュメントまたはディスカッションと一緒に使用する必要があります。 モデルだけでは、アーキテクチャの完全な仕様を表すことができません。
 
@@ -43,7 +43,7 @@ ms.locfileid: "72747535"
 
 - [アーキテクチャパターン](#BigDecisions)。 システムのコア テクノロジとアーキテクチャ要素の選択。
 
-- コンポーネントとインターフェイスのデータモデル。 クラス図を描画して、コンポーネント間で受け渡され、コンポーネントの内部に格納される情報を記述できます。
+- コンポーネントとインターフェイスのデータ モデル。 クラス図を描画して、コンポーネント間で受け渡され、コンポーネントの内部に格納される情報を記述できます。
 
 ## <a name="Requirements"></a>要件について
  アプリケーション全体の概要設計は、要求モデルなどの、ユーザーのニーズを示す他の記述と組み合わせると、最も効果的に作成できます。 要件モデルの詳細については、「[ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。

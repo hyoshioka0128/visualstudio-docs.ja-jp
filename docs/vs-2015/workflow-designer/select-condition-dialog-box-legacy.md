@@ -13,25 +13,25 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b097baaa882b42f1569244992bd28f30093ffb58
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301454"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846191"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>[条件の選択] ダイアログ ボックス (レガシ)
 このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)]の **[条件の選択**] ダイアログボックスの使用方法について説明します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
 
  **[条件の選択**] ダイアログボックスを使用して、アクティビティの condition プロパティに割り当てる宣言的ルール条件を選択します。 これらのルール条件は、Windows Workflow Foundation の事前定義アクティビティにプロパティとして公開されています。
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
   **[条件の選択**] ダイアログボックスにアクセスする方法の詳細については、「[方法: 宣言型の規則の条件を作成する (レガシ)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)」を参照してください。
 
@@ -44,11 +44,11 @@ ms.locfileid: "74301454"
 |**名前の変更...**|これをクリックすると、選択したルール条件の名前を変更するためのダイアログ ボックスが表示されます。|
 |**削除**|これをクリックすると、選択したルール条件が削除されます。|
 |**条件のプレビュー**|選択したルール条件の条件式が表示されます。|
-|**わかりました**|これをクリックすると、選択したルール条件がアクティビティの条件に割り当てられます。|
+|**[OK]**|これをクリックすると、選択したルール条件がアクティビティの条件に割り当てられます。|
 
  ルール条件の作成と編集の詳細については、「[[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)」を参照してください。
 
- 条件の詳細については、「[ワークフローでの条件の使用](https://go.microsoft.com/fwlink?LinkID=65009)」を参照してください。
+ 条件の詳細については、「[ワークフローでの条件の使用](https://msdn2.microsoft.com/library/bb628447.aspx)」を参照してください。
 
-## <a name="see-also"></a>関連項目
- [[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [方法: 宣言的ルール条件を作成する (レガシ)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [ワークフローの条件](https://go.microsoft.com/fwlink?LinkID=65009)を使用する[Conditionedactivitygroup アクティビティ](https://go.microsoft.com/fwlink?LinkID=65066)を使用して[IfElseBranchActivity アクティビティ](https://go.microsoft.com/fwlink?LinkID=65075)を使用して、 [replicatoractivity アクティビティ](https://go.microsoft.com/fwlink?LinkID=65080)を使用[して](https://go.microsoft.com/fwlink?LinkID=65091) [Windows Workflow Foundation UI ヘルプ](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>参照
+ [[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [方法: 宣言的ルール条件を作成する (レガシ)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [ワークフローの条件](https://msdn2.microsoft.com/library/bb628447.aspx)を使用する[Conditionedactivitygroup アクティビティ](https://msdn2.microsoft.com/library/bb675237.aspx)を使用して[IfElseBranchActivity アクティビティ](https://msdn2.microsoft.com/library/bb628465.aspx)を使用して、 [replicatoractivity アクティビティ](https://msdn2.microsoft.com/library/bb628544.aspx)を使用[して](https://msdn2.microsoft.com/library/bb628552.aspx) [Windows Workflow Foundation UI ヘルプ](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

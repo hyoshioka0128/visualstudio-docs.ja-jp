@@ -3,17 +3,17 @@ title: Xml スキーマデザイナーと XML エディターの統合
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9df2d97a6ff68299ab70545683970188eb1bfea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23a9220d84e2fb1a15545d1a880b0084952da77f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601781"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592582"
 ---
 # <a name="integration-with-xml-editor"></a>XML エディターとの統合
 

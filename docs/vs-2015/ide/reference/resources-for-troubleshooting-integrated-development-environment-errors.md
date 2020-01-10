@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d3048d16da507d9d63ea9d3df77b4e88d5a5e59
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 07a84648a24a709b47b60ee9e2a6e5d342777d77
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297766"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851649"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -107,12 +107,12 @@ ms.locfileid: "74297766"
 一部のエラー メッセージには、関連する固有のヘルプ トピックがありません。 エラー メッセージの情報では問題を解決できなかった場合は、サポート技術情報の文書、開発者コミュニティ、製品サポートなど、その他のリソースを利用できます。
 
 ## <a name="knowledge-base-articles"></a>サポート技術情報の文書
- サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 KB の文書には、[Microsoft サポート](https://go.microsoft.com/fwlink/?linkid=1782) Web サイトでアクセスできます。
+ サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 KB の文書には、[Microsoft サポート](https://support.microsoft.com/) Web サイトでアクセスできます。
 
 ## <a name="the-developer-community"></a>開発者コミュニティ
  フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。
 
  フォーラム、ブログ、チャットなどのリソースには、[マイクロソフト コミュニティ](https://techcommunity.microsoft.com/) Web サイトでアクセスできます。
 
-## <a name="product-support"></a>製品のサポート
- 他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](https://go.microsoft.com/fwlink/?linkid=1782) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../../ide/talk-to-us.md)」をご覧ください。
+## <a name="product-support"></a>製品サポート
+ 他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](https://support.microsoft.com/) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../../ide/talk-to-us.md)」をご覧ください。

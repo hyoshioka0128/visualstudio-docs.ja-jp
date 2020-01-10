@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91ac811c1f55fdb9a662db679ebd2d038ecdd5dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653449"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588981"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>方法: ロード テストのアクティブな実行設定を選択する
 
@@ -26,7 +26,7 @@ ms.locfileid: "72653449"
 > [!NOTE]
 > 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
 
-ロード テストに含まれている実行設定ノードが、 **[実行設定]** フォルダー下に 1 つだけの場合は、そのノードが常にアクティブ ノードになります。 ロード テストに複数の実行設定ノードが含まれている場合は、ロード テストを実行する際に使用するノードを 1 つ選択します。 「[方法: ロード テストに追加の実行設定を追加する](../test/how-to-add-additional-run-settings-to-a-load-test.md)」を参照してください。
+ロード テストに含まれている実行設定ノードが、 **[実行設定]** フォルダー下に 1 つだけの場合は、そのノードが常にアクティブ ノードになります。 ロード テストに複数の実行設定ノードが含まれている場合は、ロード テストを実行する際に使用するノードを 1 つ選択します。 「[方法:ロード テストに追加の実行設定を追加する](../test/how-to-add-additional-run-settings-to-a-load-test.md)」を参照してください。
 
 **ロード テスト エディター**で、アクティブな実行設定は "[Active]" というサフィックスで識別されます。
 

@@ -2,18 +2,18 @@
 title: shim を使用して単体テストのためにアプリケーションを分離する
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982812"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585536"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim を使用して単体テストのためにアプリを分離する
 

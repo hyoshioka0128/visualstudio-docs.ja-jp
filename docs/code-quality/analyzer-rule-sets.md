@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2cf385aaf24db2172a61ddbe7ecf77dcbe40f3c
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537783"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573288"
 ---
 # <a name="enable-a-category-of-rules"></a>ルールのカテゴリを有効にする
 
@@ -32,7 +32,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 - Documentation
 - グローバリゼーション
 - 相互運用性
-- やすさ
+- 保守容易性
 - 名前付け
 - パフォーマンス
 - FxCop からの移植
@@ -102,7 +102,7 @@ FxCopAnalyzers analyzer パッケージの定義済みの規則セットファ�
 
    これで、選択した規則セットで有効になっている規則に対する規則違反のみが表示されるようになりました。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [アナライザーに関する FAQ](analyzers-faq.md)
 - [.NET Compiler Platform アナライザーの概要](roslyn-analyzers-overview.md)

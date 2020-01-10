@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665039"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593240"
 ---
 # <a name="edit-load-test-scenarios"></a>ロード テスト シナリオの編集
 

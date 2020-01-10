@@ -2,17 +2,17 @@
 title: '方法: ドラッグ アンド ドロップ ハンドラーを追加する'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985096"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594696"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
@@ -22,7 +22,7 @@ ms.locfileid: "72985096"
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義
 
-`OnDragDrop`、`OnDoubleClick`、`OnDragOver`、および他のメソッドはオーバーライドできます。
+`OnDragDrop`、`OnDoubleClick`、`OnDragOver`、およびその他のメソッドはオーバーライドできます。
 
 新しいコード ファイルを DSL プロジェクトに追加します。 ジェスチャハンドラーの場合は、通常、少なくとも次の `using` ディレクティブが必要です。
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 新しいファイル内で、ドラッグ操作に応答する必要がある図形または図クラスの部分クラスを定義します。 次のメソッドをオーバーライドします。
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- このメソッドは、ドラッグ操作時にマウス ポインターが図形の中に入ると呼び出されます。 メソッドはユーザーがドラッグしている項目を検査し、Effect プロパティを設定して、ユーザーがこの図形の上に項目をドロップできるかどうかを示す必要があります。 Effect プロパティは、カーソルがこの図形の上にある間の外観を決定するほか、ユーザーがマウス ボタンを離したときに `OnDragDrop()` が呼び出されるかどうかを決定します。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>-このメソッドは、ドラッグ操作中にマウスポインターが図形を入力したときに呼び出されます。 メソッドはユーザーがドラッグしている項目を検査し、Effect プロパティを設定して、ユーザーがこの図形の上に項目をドロップできるかどうかを示す必要があります。 Effect プロパティは、カーソルがこの図形の上にある間の外観を決定するほか、ユーザーがマウス ボタンを離したときに `OnDragDrop()` が呼び出されるかどうかを決定します。
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -124,11 +124,11 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ドラッグ ソース情報が使用可能な形式を見つけるには、コードをデバッグ モードで実行し、ブレークポイントを `OnDragOver()` または `CanDragDrop()` のエントリに設定します。 `DiagramDragEventArgs` パラメーターの値を確認します。 情報は次の 2 つの形式で提供されます。
 
-- <xref:System.Windows.Forms.IDataObject> `Data`-このプロパティは、通常は複数の形式で、ソースオブジェクトのシリアル化されたバージョンを格納します。 最も有用な関数は次のとおりです。
+- <xref:System.Windows.Forms.IDataObject>`Data`-このプロパティは、通常は複数の形式で、ソースオブジェクトのシリアル化されたバージョンを格納します。 最も有用な関数は次のとおりです。
 
   - GetDataFormats ()-ドラッグしたオブジェクトをデコードできる形式が一覧表示されます。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
 
-  - `diagramEventArgs.Data.GetData(format)`-ドラッグしたオブジェクトを指定した形式でデコードします。 オブジェクトを適切な型にキャストします。 (例:
+  - `diagramEventArgs.Data.GetData(format)`-ドラッグしたオブジェクトを指定した形式でデコードします。 オブジェクトを適切な型にキャストします。 例:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      UML 図形を受け入れるには、実験で UML 図形クラスの Guid を確認します。 通常、どの図でも要素の種類には複数あることに注意してください。 また、DSL または UML 図からドラッグするオブジェクトは図形であり、モデル要素ではありません。
 
-`DiagramDragEventArgs` には、現在のマウス ポインターの位置およびユーザーが CTRL、ALT、SHIFT のうちどのキーを押したのかを示すプロパティも含まれます。
+`DiagramDragEventArgs` には、現在のマウスポインターの位置と、ユーザーが CTRL、ALT、または SHIFT キーを押しているかどうかを示すプロパティもあります。
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>ドラッグした要素の元を取得する方法
 
@@ -160,7 +160,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ソース DSL に Visual Studio モデルバスでアクセスできるようにします。
 
-1. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン画面を右クリックし、 **[Modelbus の有効化]** をクリックします。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
+1. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
 
 2. **[すべてのテンプレートの変換]** をクリックし、ソリューションをリビルドします。
 

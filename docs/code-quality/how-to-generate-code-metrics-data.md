@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568838"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587473"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
@@ -24,7 +24,7 @@ ms.locfileid: "73568838"
 
 - [FxCop アナライザー](#fxcop-analyzers-code-metrics-rules)をインストールし、それに含まれる4つのコードメトリックス (保守性) ルールを有効にします。
 
-- Visual Studio 内で [ [ **Analyze**  > **Calculate Code Metrics** ](#calculate-code-metrics-menu-command) ] メニューコマンドを選択します。
+- Visual Studio 内で [ [ **Analyze** > **Calculate Code Metrics** ](#calculate-code-metrics-menu-command) ] メニューコマンドを選択します。
 
 - および Visual Basic プロジェクトの場合C#は、[コマンドライン](#command-line-code-metrics)から実行します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "73568838"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>構成
+### <a name="configuration"></a>の構成
 
 FxCop アナライザーパッケージのコードメトリックスルールが起動するしきい値を構成できます。
 
@@ -62,7 +62,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
    この例では、ルール[CA1502](ca1502.md)は、メソッドのサイクロマティック複雑度が10を超える場合に起動するように構成されています。
 
-3. Visual Studio の **[プロパティ]** ウィンドウまたはプロジェクトファイルで、構成ファイルのビルドアクションを[**additionalfiles**](../ide/build-actions.md#build-action-values)としてマークします。 (例:
+3. Visual Studio の **[プロパティ]** ウィンドウまたはプロジェクトファイルで、構成ファイルのビルドアクションを[**additionalfiles**](../ide/build-actions.md#build-action-values)としてマークします。 例:
 
    ```xml
    <ItemGroup>
@@ -72,13 +72,13 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
 ## <a name="calculate-code-metrics-menu-command"></a>[コードメトリックスの計算] メニューコマンド
 
-[ **Analyze**  > **Calculate code metrics** ] メニューを使用して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
+[ **Analyze** > **Calculate code metrics** ] メニューを使用して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコードメトリックスの結果を生成する
 
 ソリューション全体に対するコードメトリックスの結果は、次のいずれかの方法で生成できます。
 
-- メニューバーで、 **[分析]** を選択し、**ソリューションの** **コードメトリックス** >  を計算  >  ます。
+- メニューバーで、 **[分析]** を選択し、**ソリューションの** **コードメトリックス** > を計算 > ます。
 
 - **ソリューションエクスプローラー**で、ソリューションを右クリックし、 **[コードメトリックスの計算]** をクリックします。
 
@@ -90,7 +90,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
 1. **ソリューションエクスプローラー**で、1つ以上のプロジェクトを選択します。
 
-1. メニューバーから **[分析]** を選択し、**選択したプロジェクトの** **コードメトリックス** >  を計算  >  ます。
+1. メニューバーから **[分析]** を選択し、**選択したプロジェクトの** **コードメトリックス** > を計算 > ます。
 
 結果が生成され、 **[コードメトリックスの結果]** ウィンドウが表示されます。 結果の詳細を表示するには、**階層**内のツリーを展開します。
 
@@ -111,7 +111,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft CodeAnalysis. メトリック NuGet パッケージ
 
-コマンドラインからコードメトリックスデータを生成する最も簡単な方法は、 [Microsoft CodeAnalysis. metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet パッケージをインストールすることです。 パッケージをインストールしたら、プロジェクトファイルが格納されているディレクトリから `msbuild /t:Metrics` を実行します。 (例:
+コマンドラインからコードメトリックスデータを生成する最も簡単な方法は、 [Microsoft CodeAnalysis. metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet パッケージをインストールすることです。 パッケージをインストールしたら、プロジェクトファイルが格納されているディレクトリから `msbuild /t:Metrics` を実行します。 例:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-出力ファイル名をオーバーライドするには、`/p:MetricsOutputFile=<filename>` を指定します。 `/p:LEGACY_CODE_METRICS_MODE=true`を指定して、[レガシスタイルの](#previous-versions)コードメトリックスデータを取得することもできます。 (例:
+出力ファイル名をオーバーライドするには、`/p:MetricsOutputFile=<filename>`を指定します。 `/p:LEGACY_CODE_METRICS_MODE=true`を指定して、[レガシスタイルの](#previous-versions)コードメトリックスデータを取得することもできます。 例:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -231,7 +231,7 @@ NuGet パッケージをインストールしない場合は、 *Metrics*実行�
 
 #### <a name="metricsexe-usage"></a>Metrics の使用状況
 
-*Metrics*を実行するには、プロジェクトまたはソリューションと出力 XML ファイルを引数として指定します。 (例:
+*Metrics*を実行するには、プロジェクトまたはソリューションと出力 XML ファイルを引数として指定します。 例:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -265,5 +265,5 @@ Visual Studio 2015 には、 *metrics .exe*とも呼ばれるコマンドライ�
 
 ## <a name="see-also"></a>関連項目
 
-- [[コードメトリックスの結果] ウィンドウを使用する](../code-quality/working-with-code-metrics-data.md)
+- [コード メトリックスの結果 ウィンドウを使用します。](../code-quality/working-with-code-metrics-data.md)
 - [コードメトリックスの値](../code-quality/code-metrics-values.md)

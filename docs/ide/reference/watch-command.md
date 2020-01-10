@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Watch command
 - Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 411452ba0cf8f8625ee67bca51c2f3735f6dc924
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747694"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585653"
 ---
 # <a name="watch-command"></a>Watch コマンド
 指定したインスタンスの **[ウォッチ]** ウィンドウを作成し、開きます。 **[ウォッチ]** ウィンドウを使用すると、変数、式、レジスタの値の計算し、それらの値を編集し、結果を保存することができます。
@@ -34,7 +34,7 @@ Debug.Watch[index]
 `index`\
 必須です。 [ウォッチ] ウィンドウのインスタンス番号。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 `index` は整数でなければなりません。 有効値は 1、2、3、または 4 です。
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648193"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586251"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>データベースへのデータの保存 (複数テーブル)
 
@@ -41,7 +41,7 @@ ms.locfileid: "72648193"
 
 - データセット内の更新されたデータをデータベースに返送するコードを変更します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
@@ -95,7 +95,7 @@ ms.locfileid: "72648193"
 
 ## <a name="set-the-controls-to-be-created"></a>作成するコントロールを設定する
 
-このチュートリアルでは、`Customers` テーブルのデータは、個々のコントロールにデータが表示される**詳細**レイアウトに含まれています。 @No__t_0 テーブルのデータは、<xref:System.Windows.Forms.DataGridView> コントロールに表示される**グリッド**レイアウトに含まれています。
+このチュートリアルでは、`Customers` テーブルのデータは、個々のコントロールにデータが表示される**詳細**レイアウトに含まれています。 `Orders` テーブルのデータは、<xref:System.Windows.Forms.DataGridView> コントロールに表示される**グリッド**レイアウトに含まれています。
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>[データ ソース] ウィンドウの項目にドロップ タイプを設定するには
 
@@ -127,14 +127,14 @@ ms.locfileid: "72648193"
 
 ### <a name="to-add-update-logic-to-the-application"></a>アプリケーションに更新ロジックを追加するには
 
-1. @No__t_1 の **[保存]** ボタンを選択します。 これにより、コードエディターが開き、`bindingNavigatorSaveItem_Click` イベントハンドラーが表示されます。
+1. <xref:System.Windows.Forms.BindingNavigator>の **[保存]** ボタンを選択します。 これにより、コードエディターが開き、`bindingNavigatorSaveItem_Click` イベントハンドラーが表示されます。
 
 2. イベント ハンドラーのコードを、関連する TableAdapter の `Update` メソッドを呼び出すコードに置き換えます。 次のコードは、最初に、各 <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>、<xref:System.Data.DataRowState.Added>、および <xref:System.Data.DataRowState.Modified>) の更新済み情報を保持する 3 つの一時的なデータ テーブルを作成します。 更新プログラムは正しい順序で実行されます。 コードは、次のようになります。
 
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
 
 1. **F5**キーを押します。
 

@@ -3,20 +3,20 @@ title: 一致するファイルへの型の移動リファクタリング
 description: 型を同じ名前の別のファイルに移動します。 型名を右クリックして [クイック アクションとリファクタリング] を選択し、[型を <TypeName>.cs に移動] を選択します。
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666487"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585272"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>一致するファイルへの型の移動リファクタリング
 
@@ -26,7 +26,7 @@ ms.locfileid: "72666487"
 
 - Visual Basic
 
-**機能:** 選択した型を同じ名前の別のファイルに移動できます。
+**概要:** 選択した型を同じ名前の別のファイルに移動できます。
 
 **条件:** 同じファイルに複数のクラス、構造体、インターフェイスなどがあり、分離したいとき。
 

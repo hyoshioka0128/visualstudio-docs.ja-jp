@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660c93c5e1ee6b41369ebbfc9f43c4c047042589
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597270"
 ---
 # <a name="about-domain-specific-languages"></a>ドメイン固有言語について
 
@@ -68,13 +68,13 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
 - 成果物の生成
 
-- シリアル化
+- Serialization
 
 - Visual Studio との統合
 
 ### <a name="notation"></a>Notation
 
-ドメイン固有言語には、ドメイン固有の構造を表すために簡単に定義および拡張できる要素の小さなセットが必要です。 表記は、要素を表す図形と、要素間の関係を表すコネクタ (グラフィカルな図サーフェイス) で構成されます。 @No__t_0 では、ドメイン固有言語の要素を表すように図形を拡張および調整できます。
+ドメイン固有言語には、ドメイン固有の構造を表すために簡単に定義および拡張できる要素の小さなセットが必要です。 表記は、要素を表す図形と、要素間の関係を表すコネクタ (グラフィカルな図サーフェイス) で構成されます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]では、ドメイン固有言語の要素を表すように図形を拡張および調整できます。
 
 ### <a name="domain-model"></a>ドメインモデル
 
@@ -82,15 +82,15 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
 ### <a name="artifact-generation"></a>成果物の生成
 
-ドメイン固有言語の主な目的の1つは、ソースコード、XML ファイル、またはその他の使用可能なデータなどのアーティファクトを生成することです。 通常、モデルの変更は、成果物の変更を意味します。 @No__t_0 を使用すると、成果物を生成し、モデルを変更したときにそれらを再生成することができます。
+ドメイン固有言語の主な目的の1つは、ソースコード、XML ファイル、またはその他の使用可能なデータなどのアーティファクトを生成することです。 通常、モデルの変更は、成果物の変更を意味します。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] を使用すると、成果物を生成し、モデルを変更したときにそれらを再生成することができます。
 
-### <a name="serialization"></a>シリアル化
+### <a name="serialization"></a>Serialization
 
 ドメイン固有言語は、編集、保存、終了、再読み込みが可能な何らかの形式で保存する必要があります。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] では、ドメイン固有言語をシリアル化または永続化する方法を定義およびカスタマイズできる XML 形式が使用されます。
 
 ### <a name="integration-with-visual-studio"></a>Visual Studio との統合
 
-@No__t_0 は Visual Studio でホストされるため、Visual Studio の多くのウィンドウとコントロールが拡張されます。 また、メニューコマンド、ツールボックス項目、およびユーザーインターフェイスのその他の要素の動作をカスタマイズすることもできます。
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] は Visual Studio でホストされるため、Visual Studio の多くのウィンドウとコントロールが拡張されます。 また、メニューコマンド、ツールボックス項目、およびユーザーインターフェイスのその他の要素の動作をカスタマイズすることもできます。
 
 また、ドメイン固有言語のモデルバスアダプターを作成することもできます。 このアダプターを使用すると、モデル内のモデルと要素を参照でき、DSL のインスタンスにアクセスして更新できるコードを記述できます。 強力なモデルバスメカニズムを使用することにより、複数のモデルで動作する Visual Studio 拡張機能を作成できます。 また、モデルを使用するスタンドアロンアプリケーションを作成することもできます。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。
 

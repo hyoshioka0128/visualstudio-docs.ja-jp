@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443415"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585900"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用する MSBuild インライン タスク
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) と同様に、RoslynCodeTaskFactory ではクロス プラットフォームの Roslyn コンパイラを使用して、インライン タスクとして使用するためのメモリ内タスク アセンブリを生成します。  RoslynCodeTaskFactory タスクは、.NET Standard をターゲットとし、.NET Framework や .NET Core のランタイムだけでなく、Linux や Mac OS などの他のプラットフォームでも機能します。
@@ -24,7 +24,7 @@ ms.locfileid: "63443415"
 >RoslynCodeTaskFactory は MSBuild 15.8 以降でのみ使用できます。
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用したインライン タスクの構造
- RoslynCodeTaskFactory インライン タスクは、[CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) とまったく同じ方法で宣言されています。唯一の違いは、.NET Standard をターゲットとしていることです。  インライン タスクとそれを格納する `UsingTask` 要素は通常、*.targets* ファイルに含められ、必要に応じて他のプロジェクト ファイルにインポートされます。 基本的なインライン タスクの例を次に示します。 このタスクでは何も実行されないことに注意してください。
+ RoslynCodeTaskFactory インライン タスクは、[CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) とまったく同じ方法で宣言されています。唯一の違いは、.NET Standard をターゲットとしていることです。  インライン タスクとそれを格納する `UsingTask` 要素は通常、 *.targets* ファイルに含められ、必要に応じて他のプロジェクト ファイルにインポートされます。 基本的なインライン タスクの例を次に示します。 このタスクでは何も実行されないことに注意してください。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -137,7 +137,7 @@ HelloWorld タスクを *HelloWorld.targets* という名前のファイルに�
 
 - `Required` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターは必須で、タスクを呼び出す前に値を指定する必要があります。
 
-- `ParameterType` は省略可能な属性で、既定値は `System.String` です。 System.Convert.ChangeType を使用して文字列との間で変換できる項目または値の完全修飾型に設定できます  (つまり、外部タスクとの受け渡しが可能なすべての型)。
+- `ParameterType` は省略可能な属性で、既定値は `System.String` です。 System.Convert.ChangeType を使用して文字列との間で変換できる項目または値の完全修飾型に設定できます (つまり、外部タスクとの受け渡しが可能なすべての型)。
 
 - `Output` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターの値を、Execute メソッドから戻る前に指定する必要があります。
 

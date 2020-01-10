@@ -10,21 +10,21 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648209"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586264"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>オブジェクトからデータベースにデータを保存する
 
-オブジェクトの値を TableAdapter の DBDirect メソッドの1つ (`TableAdapter.Insert` など) に渡すことによって、オブジェクトのデータをデータベースに保存できます。 詳細については、「 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
+オブジェクトの値を TableAdapter の DBDirect メソッドの1つ (`TableAdapter.Insert`など) に渡すことによって、オブジェクトのデータをデータベースに保存できます。 詳細については、「 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
 オブジェクトのコレクションからデータを保存するには、オブジェクトのコレクションをループ処理し (たとえば、for-next ループ)、TableAdapter の `DBDirect` メソッドのいずれかを使用して、各オブジェクトの値をデータベースに送信します。
 
@@ -36,12 +36,12 @@ ms.locfileid: "72648209"
 |TableAdapter DBDirect メソッド|説明|
 | - |-----------------|
 |`TableAdapter.Insert`|データベースに新しいレコードを追加し、個々の列の値をメソッドのパラメーターとして渡すことができるようにします。|
-|`TableAdapter.Update`|データベース内の既存のレコードを更新します。 @No__t_0 メソッドは、元の列と新しい列の値をメソッドのパラメーターとして受け取ります。 元の値は元のレコードを検索するために使用され、新しい値はそのレコードを更新するために使用されます。<br /><br /> @No__t_0 メソッドは、メソッドパラメーターとして <xref:System.Data.DataSet>、<xref:System.Data.DataTable>、<xref:System.Data.DataRow>、または <xref:System.Data.DataRow>s の配列を取得することによって、データセットの変更をデータベースに戻すためにも使用されます。|
+|`TableAdapter.Update`|データベース内の既存のレコードを更新します。 `Update` メソッドは、元の列と新しい列の値をメソッドのパラメーターとして受け取ります。 元の値は元のレコードを検索するために使用され、新しい値はそのレコードを更新するために使用されます。<br /><br /> `TableAdapter.Update` メソッドは、<xref:System.Data.DataSet>、<xref:System.Data.DataTable>、<xref:System.Data.DataRow>、または <xref:System.Data.DataRow>s の配列をメソッドパラメーターとして取得することによって、データセットの変更をデータベースに戻すためにも使用されます。|
 |`TableAdapter.Delete`|メソッドパラメーターとして渡された元の列の値に基づいて、データベースから既存のレコードを削除します。|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>オブジェクトからデータベースに新しいレコードを保存するには
 
-- @No__t_0 メソッドに値を渡してレコードを作成します。
+- `TableAdapter.Insert` メソッドに値を渡してレコードを作成します。
 
      次の例では、`currentCustomer` オブジェクトの値を `TableAdapter.Insert` メソッドに渡すことによって、`Customers` テーブルに新しい顧客レコードを作成します。
 

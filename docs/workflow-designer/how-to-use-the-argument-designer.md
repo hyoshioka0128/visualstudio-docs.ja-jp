@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650284"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584557"
 ---
 # <a name="how-to-use-the-argument-designer"></a>引数デザイナーを使用する方法
 
@@ -28,7 +28,7 @@ ms.locfileid: "72650284"
 
 2. デザインキャンバスの左下隅にある **[引数]** ボタンをクリックして、引数デザイナーを開きます。 引数デザイナーが表示されます。
 
-3. **[引数の作成]** というラベルの付いた空の行をクリックします。 これにより、新しい引数を含む新しい行が追加されます。**名前**には argumentx を使用します。ここ**で** **、x**は、一意の引数名を作成するために自動的にインクリメントされる初期値1を持つ整数です。**引数の型**に**文字列**を指定します。 **既定値**の値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
+3. **[引数の作成]** というラベルの付いた空の行をクリックします。 これにより、新しい引数を含む新しい行が追加されます。**名前**には argumentx を使用します。ここで、x は、一意の引数名を作成するために自動的にインクリメントされ、**方向**が、**引数の型**が**String** **で**ある整数です。 **既定値**の値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
 
     > [!NOTE]
     > 引数を削除するには、引数をクリックして選択し、 **del**キーを押します。

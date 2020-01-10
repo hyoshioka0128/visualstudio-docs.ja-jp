@@ -4,27 +4,27 @@ ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bf3d8a188899e27e7a83d875cf970583858ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594709"
 ---
-# <a name="domain-property-value-change-handlers"></a>ドメインプロパティ値の変更ハンドラー
+# <a name="domain-property-value-change-handlers"></a>ドメイン プロパティ値変更ハンドラー
 
-Visual Studio ドメイン固有言語では、ドメインプロパティの値が変更されると、ドメインプロパティハンドラーで `OnValueChanging()` および `OnValueChanged()` メソッドが呼び出されます。 変更に応答するために、これらのメソッドをオーバーライドできます。
+ドメイン プロパティの値が変更されたときに、Visual Studio のドメイン固有言語における、`OnValueChanging()`と`OnValueChanged()`メソッドは、ドメイン プロパティ ハンドラーで呼び出されます。 変更に応答するために、これらのメソッドをオーバーライドできます。
 
-## <a name="override-the-property-handler-methods"></a>プロパティハンドラーメソッドのオーバーライド
+## <a name="override-the-property-handler-methods"></a>プロパティ ハンドラー メソッドをオーバーライドします。
 
-ドメイン固有言語の各ドメイン プロパティは親のドメイン クラス内で入れ子になっているクラスにより処理されます。 その名前は、 *PropertyName*propertyhandler という形式に従います。 このプロパティハンドラークラスを検査するには、ファイルを**生成**します。 このクラスで、`OnValueChanging()` は値が変更される直前に呼び出され、`OnValueChanged()` は値が変更された直後に呼び出されます。
+ドメイン固有言語の各ドメイン プロパティは親のドメイン クラス内で入れ子になっているクラスにより処理されます。 その名前形式に従います*PropertyName*PropertyHandler します。 ファイル内のこのプロパティ ハンドラー クラスを検査する**Dsl\Generated Code\DomainClasses.cs**します。 このクラスで、`OnValueChanging()` は値が変更される直前に呼び出され、`OnValueChanged()` は値が変更された直後に呼び出されます。
 
-たとえば、`Comment` という名前のドメインクラスに `Text` という名前の文字列ドメインプロパティがあり、`TextLengthCount` という名前の整数プロパティを持つとします。 @No__t_0 常に `Text` 文字列の長さを含むようにするには、Dsl プロジェクト内の別のファイルに次のコードを記述します。
+たとえば、という名前のドメイン クラス`Comment`という名前の文字列ドメイン プロパティを持つ`Text`という名前の整数プロパティ`TextLengthCount`します。 発生する`TextLengthCount`の長さを格納するには、常に、`Text`文字列、Dsl プロジェクト内の別のファイルに次のコードを記述する可能性があります。
 
 ```csharp
 // Domain Class "Comment":
@@ -60,7 +60,7 @@ public partial class Comment
 
 - 変更ハンドラーを使用して新しい値を変更することはできません。 たとえば、値を特定の範囲に制限する場合などは、`ChangeRule` を定義します。
 
-- リレーションシップのロールを表すプロパティに変更ハンドラーを追加することはできません。 その代わり、リレーションシップ クラス上で `AddRule` および `DeleteRule` を定義します。 これらの規則は、リンクが作成または変更されるとトリガーされます。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+- リレーションシップのロールを表すプロパティに変更ハンドラーを追加することはできません。 その代わり、リレーションシップ クラス上で `AddRule` および `DeleteRule` を定義します。 これらの規則は、リンクが作成または変更されるとトリガーされます。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
 
 ### <a name="changes-in-and-out-of-the-store"></a>ストア内外の変更
 
@@ -81,7 +81,7 @@ if (!store.InUndoRedoOrRollback && !store. InSerializationTransaction)
 
 対照的に、プロパティ ハンドラーが、たとえばファイル、データベース、またはストア以外の変数など、ストアの外側に変更を伝達する場合、ユーザーが元に戻したり、やり直したりするときに、外部の値が更新されるように、それらの変更を常に実行する必要があります。
 
-### <a name="cancel-a-change"></a>変更の取り消し
+### <a name="cancel-a-change"></a>変更をキャンセルします。
 
 変更を防ぐ場合、現在のトランザクションをロールバックできます。 たとえば、プロパティが常に特定の範囲内になるようにすることが望ましい場合があるかもしれません。
 
@@ -97,19 +97,19 @@ if (newValue > 10)
 
 前述の例は OnValueChanged() を使用して、あるドメイン プロパティから別のドメイン プロパティへ値を伝達する方法を示しています。 各プロパティは独自の格納値を持っています。
 
-代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
+代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。
 
-前の例の代わりに、DSL 定義で**計算**されるように `TextLengthCount` の**Kind**フィールドを設定できます。 このドメインプロパティに対して独自の**Get**メソッドを指定します。 **Get**メソッドは、`Text` 文字列の現在の長さを返します。
+設定することが、前の例ではなく、**種類**フィールド`TextLengthCount`する**Calculated** DSL 定義で。 独自に提供するよう**取得**このドメイン プロパティのメソッド。 **取得**メソッドは現在の長さを返します、`Text`文字列。
 
 ただし、計算されるプロパティの潜在的な欠点は、値が使用されるたびに式が評価されるため、パフォーマンスの問題が生じる可能性があることです。 また、計算されるプロパティに OnValueChanging() および OnValueChanged() はありません。
 
 ### <a name="alternative-technique-change-rules"></a>代替手法: 変更規則
 
-変更を定義すると、プロパティの値が変更されるトランザクションの最後に実行されます。  詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+ChangeRule を定義する場合は、プロパティの値が変化するトランザクションの最後に実行されます。  詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
 
-1 つのトランザクション内で複数の変更があった場合、ChangeRule はそれらすべてが完了したときに実行されます。 これに対して、OnValue...メソッドは、一部の変更が実行されていない場合に実行されます。 目的に応じて、ChangeRule が適切である場合があります。
+1 つのトランザクション内で複数の変更があった場合、ChangeRule はそれらすべてが完了したときに実行されます。 一方、的に、OnValue. メソッドは一部の変更が行われないときに実行されます。 目的に応じて、ChangeRule が適切である場合があります。
 
-また、変更を使用して、プロパティの新しい値を調整し、特定の範囲内に維持することもできます。
+特定の範囲内に保つために、プロパティの新しい値を調整するのに、ChangeRule を使用することもできます。
 
 > [!WARNING]
 > ある規則がストア コンテンツに対して変更を加えた場合、他の規則とプロパティ ハンドラーがトリガーされることがあります。 規則がそれ自体をトリガーしたプロパティを変更した場合、その規則は再度呼び出されることになります。 終わりのないトリガーにならないように注意して規則を定義してください。
@@ -142,7 +142,7 @@ public partial class MyDomainModel
 }
 ```
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
 
 ### <a name="description"></a>説明
 

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299405"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850139"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ ms.locfileid: "74299405"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>[前提条件]
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
+- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://codeplex.com/SqlServerSamples)からダウンロードできます。
 
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- WCF Data Services。 詳細については、「[概要](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)」を参照してください。
+- WCF Data Services。 詳細については、[概要](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)に関するページを参照してください。
 
 - [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] のデータ モデル。
 
@@ -61,7 +61,7 @@ ms.locfileid: "74299405"
 
 - WPF デザイナーの操作。 詳細については、「 [WPF と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)」を参照してください。
 
-- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
+- WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
 
 ## <a name="create-the-service-project"></a>サービスプロジェクトを作成する
  このチュートリアルでは、まず [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] のプロジェクトを作成します。
@@ -76,14 +76,14 @@ ms.locfileid: "74299405"
 
 4. **[ASP.NET Web アプリケーション]** プロジェクト テンプレートを選択します。
 
-5. **[名前]** ボックスに「`AdventureWorksService`」と入力し、[ **OK]** をクリックします。
+5. **[名前]** ボックスに「`AdventureWorksService`」と入力し、 **[OK]** をクリックします。
 
      Visual Studio によって `AdventureWorksService` プロジェクトが作成されます。
 
 6. **ソリューション エクスプローラー**で、**Default.aspx** を右クリックし、 **[削除]** を選択します。 このファイルは、このチュートリアルでは必要ありません。
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>サービスの Entity Data Model を作成する
- [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] では、次の2種類のデータモデルがサポートされています。エンティティデータモデル、および <xref:System.Linq.IQueryable%601> インターフェイスを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されるカスタムデータモデル。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。
+ [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] は、エンティティデータモデルと、<xref:System.Linq.IQueryable%601> インターフェイスを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されるカスタムデータモデルの2種類のデータモデルをサポートしています。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。
 
 #### <a name="to-create-an-entity-data-model"></a>Entity Data Model を作成するには
 
@@ -196,7 +196,7 @@ ms.locfileid: "74299405"
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. プロジェクトをビルドします。
+3. プロジェクトをビルドする。
 
 ## <a name="create-the-data-bound-controls"></a>データバインドコントロールの作成
  **[データソース]** ウィンドウからデザイナーに [`SalesOrderHeaders`] ノードをドラッグして、顧客レコードを表示するコントロールを作成します。
@@ -242,7 +242,7 @@ ms.locfileid: "74299405"
 
 #### <a name="to-load-the-data-from-the-service"></a>サービスからデータを読み込むには
 
-1. デザイナーで、`Window_Loaded` イベントハンドラーを作成するには、次のように表示されるテキストをダブルクリックします。**Mainwindow.xaml**。
+1. 作成するため、デザイナーで、`Window_Loaded`イベント ハンドラーを読み取るテキストをダブルクリックします**MainWindow**。
 
 2. イベント ハンドラーを次のコードで置き換えます。 このコードの *localhost* アドレスは、使用している開発コンピューターのローカル ホスト アドレスで置き換えてください。
 
@@ -315,12 +315,12 @@ ms.locfileid: "74299405"
 
 8. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了した後、関連する次のタスクを実行できます。
 
 - Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、「[データセットへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)」を参照してください。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル:WPF アプリケーションでの関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual studio でのデータへの wpf コントロールの](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)[バインド visual studio で](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)のデータへの wpf コントロールのバインド[dataset への Wpf](../data-tools/bind-wpf-controls-to-a-dataset.md) [概要](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)コントロールのバインド[Entity Framework 概要](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) [wpf と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)[データバインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

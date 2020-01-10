@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924549"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586979"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -38,7 +38,7 @@ ms.locfileid: "72924549"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
@@ -50,7 +50,7 @@ ms.locfileid: "72924549"
 
 - データセットおよび TableAdapter。 詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」および「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
-- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」をご覧ください。
+- WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」をご覧ください。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 
@@ -60,7 +60,7 @@ ms.locfileid: "72924549"
 
 1. Visual Studio を開きます。
 
-2. **[ファイル]** メニューで、 **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. **[ファイル]** メニューの [**新しい**>**プロジェクト**] をクリックします。
 
 3. **[Visual Basic]** または **[Visual C#]** を展開し、 **[Windows]** を選択します。
 
@@ -112,7 +112,7 @@ ms.locfileid: "72924549"
 
    Visual Studio によって新しい `AdventureWorksLTDataSet.xsd` ファイルがプロジェクトに追加され、対応する**adventureworksltdataset.xsd**アイテムが **[データソース]** ウィンドウに追加されます。 `AdventureWorksLTDataSet.xsd` ファイルでは、`AdventureWorksLTDataSet` という名前の型指定されたデータセットと `ProductTableAdapter`という名前の TableAdapter が定義されています。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
 
-9. プロジェクトをビルドします。
+9. プロジェクトをビルドする。
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>TableAdapter の既定の fill メソッドを編集する
 
@@ -154,7 +154,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. プロジェクトをビルドします。
+3. プロジェクトをビルドする。
 
 ## <a name="create-data-bound-controls"></a>データ バインド コントロールを作成する
 
@@ -230,7 +230,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
     > [!NOTE]
     > この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 詳細については、「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
 
 アプリケーションをビルドして実行します。 製品レコードを表示および更新できることを確認します。
 
@@ -250,7 +250,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 5. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 このチュートリアルを完了すると、次の関連タスクを試すことができます。
 
