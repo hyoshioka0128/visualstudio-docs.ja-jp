@@ -37,5 +37,5 @@ ms.locfileid: "72572255"
 - 有効な Uri のみをデコードしようとしていることを確認します。 無効な文字が含まれている可能性があるため、通常の [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 文字列をデコードすることはできません。  
   
 ## <a name="see-also"></a>参照  
- [DecodeURI 関数](../../javascript/reference/decodeuri-function-javascript.md)   
+ [decodeURI 関数](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent 関数](../../javascript/reference/decodeuricomponent-function-javascript.md)
