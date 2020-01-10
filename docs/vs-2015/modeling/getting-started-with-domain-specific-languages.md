@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300916"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847187"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、モデリング SDK for Visual Studio で作成されたドメイン固有言語 (DSL) の定義と使用に関する基本的な概念について説明します。
 
- Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>ドメイン固有の言語でできること
  ドメイン固有言語は、特定の目的に使用するように設計された表記で、通常はグラフィックです。 これに対して、UML などの言語は汎用的なものです。 DSL では、モデル要素とそのリレーションシップの種類と、それらを画面に表示する方法を定義できます。
@@ -36,13 +36,13 @@ ms.locfileid: "74300916"
 
  この概要の残りの部分では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でドメイン固有言語を作成および使用する基本的な操作について説明します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Visual Studio のモデリング SDK|[MSDK のダウンロード](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>DSL ソリューションの作成
@@ -58,7 +58,7 @@ ms.locfileid: "74300916"
 
     ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. **[名前]** ボックスに「 **FamilyTree**」と入力します。 **[OK]** をクリックすると、
+4. **[名前]** ボックスに「 **FamilyTree**」と入力します。 **[OK]** をクリックします。
 
     **ドメイン固有言語ウィザード**が開き、テンプレート DSL ソリューションの一覧が表示されます。
 
@@ -141,10 +141,10 @@ ms.locfileid: "74300916"
 
  モデルを編集しているときに、 **[エクスプローラー]** ビューでモデルをツリーとして表示できます。 図に図形を追加すると、モデル要素もエクスプローラーに表示されます。 図がない場合でも、エクスプローラーを使用できます。
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のデバッグインスタンスにエクスプローラーが表示されない場合は、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、[*言語の\<>* **エクスプローラー**] をクリックします。
+ デバッグ インスタンスで、エクスプ ローラーを表示できないかどうか[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ビュー**  メニューをポイント**その他の Windows**、 をクリックし、 *\<Your 言語>* **エクスプ ローラー**します。
 
 ### <a name="the-api-of-your-dsl"></a>DSL の API
- DSL は、DSL のインスタンスであるモデルの読み取りと更新を可能にする API を生成します。 API の1つのアプリケーションは、モデルからテキストファイルを生成することです。 詳細については、「 [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。
+ DSL は、DSL のインスタンスであるモデルの読み取りと更新を可能にする API を生成します。 API の1つのアプリケーションは、モデルからテキストファイルを生成することです。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) テンプレートの構文の詳細については、次を参照してください。
 
  デバッグソリューションで、拡張子が ".tt" のテンプレートファイルを開きます。 これらのサンプルでは、モデルからテキストを生成し、DSL の API をテストできるようにする方法を示します。 サンプルの1つは、[!INCLUDE[csprcs](../includes/csprcs-md.md)]の別の [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]で記述されています。
 
@@ -398,5 +398,5 @@ ms.locfileid: "74300916"
 
 2. 引き続き使用する実験的な Dsl またはその他の試験的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能を再構築します。
 
-## <a name="see-also"></a>関連項目
- [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+## <a name="see-also"></a>参照
+ [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
