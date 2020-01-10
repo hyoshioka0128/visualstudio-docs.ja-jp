@@ -4,17 +4,17 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655853"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594722"
 ---
-# <a name="how-to-create-item-templates"></a>方法:項目テンプレートを作成する
+# <a name="how-to-create-item-templates"></a>方法: 項目テンプレートを作成する
 
 この記事では、**テンプレートのエクスポート ウィザード**を使って項目テンプレートを作成する方法を示します。 テンプレートを複数のファイルで構成する場合は、「[方法:複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」を参照してください。
 
