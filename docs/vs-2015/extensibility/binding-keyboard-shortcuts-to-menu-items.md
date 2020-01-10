@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295624"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852213"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>キーボード ショートカットのメニュー項目へのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,13 +77,13 @@ ms.locfileid: "74295624"
   
    ほとんどの場合、2番目の修飾子がなければ**Shift**キーを使用しないでください。これを押すと、ほとんどの英数字キーが大文字または記号を入力することになります。  
   
-   仮想キーコードを使用すると、関数キーや**BACKSPACE**キーなど、文字が関連付けられていない特殊なキーにアクセスできます。 詳細については、「[仮想キーコード](https://go.microsoft.com/fwlink/?LinkID=105932)」を参照してください。  
+   仮想キーコードを使用すると、関数キーや**BACKSPACE**キーなど、文字が関連付けられていない特殊なキーにアクセスできます。 詳細については、「[仮想キーコード](https://msdn2.microsoft.com/library/ms645540.aspx)」を参照してください。  
   
    Visual Studio エディターでコマンドを使用できるようにするには、`editor` 属性を `guidVSStd97`に設定します。  
   
    このコマンドをカスタムエディターでのみ使用できるようにするには、カスタムエディターを含む VSPackage を作成したときに [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] パッケージテンプレートによって生成されたカスタムエディターの名前に `editor` 属性を設定します。 名前の値を確認するには、`name` 属性が "`editorfactory`" で終わる `<GuidSymbol>` ノードの `<Symbols>` セクションを調べます。これはカスタムエディターの名前です。  
   
-## <a name="example"></a>例  
+## <a name="example"></a>使用例  
  この例では、キーボードショートカットの CTRL + ALT + C キーを `MyPackage`という名前のパッケージ内の `cmdidMyCommand` という名前のコマンドにバインドします。  
   
 ```  
@@ -100,12 +100,12 @@ ms.locfileid: "74295624"
 </CommandTable>  
 ```  
   
-## <a name="example"></a>例  
+## <a name="example"></a>使用例  
  この例では、`TestEditor`という名前のプロジェクト内の `cmdidBold` という名前のコマンドに、キーボードショートカットの CTL + B をバインドします。 このコマンドは、カスタムエディターでのみ使用でき、他のエディターでは使用できません。  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)

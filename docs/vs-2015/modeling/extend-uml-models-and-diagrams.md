@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301043"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849800"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "74301043"
 
  Fabrikam 社のツール チームは、一連の拡張機能を作成して開発チームを支援します。 以降のセクションでは、定義可能なさまざまな拡張機能について説明します。 これらの手法のいくつかを 1 つの Visual Studio 拡張機能に結合できます。
 
- 詳細については、こちらのビデオを参照してください。「![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")」 MSDN の「[操作方法シリーズ: UML ツールと機能拡張](https://go.microsoft.com/fwlink/?LinkId=214467)」を参照してください。
+ 詳細については、こちらのビデオを参照してください。「![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")」 MSDN の「[操作方法シリーズ: UML ツールと機能拡張](https://msdn.microsoft.com/vstudio/ff859492)」を参照してください。
 
-## <a name="Requirements"></a> 必要条件
+## <a name="Requirements"></a> 要件
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
@@ -113,10 +113,10 @@ ms.locfileid: "74301043"
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと機能拡張](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: Visual Studio を使用した UML](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと機能拡張](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Visual Studio を使用した UML](https://channel9.msdn.com/posts/clinted/)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [UML モデリング機能拡張のためのアプリ API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)[のモデルの作成](../modeling/create-models-for-your-app.md)

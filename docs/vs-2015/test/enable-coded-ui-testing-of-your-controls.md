@@ -8,19 +8,19 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302577"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851802"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストの有効化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード化された UI テスト フレームワークのサポートを実装している場合は、コントロールをより簡単にテストできます。 サポート レベルを徐々に上げることができます。 記録と再生およびプロパティの検証のサポートから始めることができます。 この最初のサポートに加えて、コード化された UI テスト ビルダーがコントロールのカスタム プロパティを認識し、生成されたコードからそれらのプロパティにアクセスするためのカスタム クラスを提供できるようにすることができます。 また、コード化された UI テスト ビルダーが、記録される操作の目的に近い方法で操作をキャプチャできるようにすることもできます。
 
- **このトピックの内容:**
+ **このトピックの内容**
 
 1. [アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
 
@@ -536,7 +536,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- Visual Studio 2012 を使用した継続的デリバリーのための [テスト–第2章:単体テスト:内部](https://go.microsoft.com/fwlink/?LinkID=255188) のテスト
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>関連項目
 

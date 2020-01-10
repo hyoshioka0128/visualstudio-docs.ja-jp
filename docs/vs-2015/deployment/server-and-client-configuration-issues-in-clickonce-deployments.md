@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a78fab1986c7fae50bbb4c8149e8f2c89ec4873
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295211"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844993"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce とプロキシ認証  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] は .NET Framework 3.5 以降の Windows 統合プロキシ認証のサポートを提供します。 特定の machine.config ディレクティブは必要ありません。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] は、基本やダイジェストなどの他の認証プロトコルをサポートしていません。  
   
- また、.NET Framework 2.0 に修正プログラムを適用して、この機能を有効にすることもできます。 詳細については、「 https://go.microsoft.com/fwlink/?LinkId=158730」を参照してください。  
+ また、.NET Framework 2.0 に修正プログラムを適用して、この機能を有効にすることもできます。 詳細については、「 https://go.microsoft.com/fwlink/?LinkId=158730 」を参照してください。  
   
  詳細については、「 [\<defaultProxy > 要素 (ネットワーク設定)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)」を参照してください。  
   
@@ -95,7 +95,7 @@ Windows Server でインターネットインフォメーションサービス (
  Visual Studio を使用して ClickOnce アプリケーションを発行する場合は、マップされたドライブをインストール場所として指定することはできません。 ただし、マニフェストジェネレーターとエディター (Mage.exe および Mageui.exe) を使用して、マップされたドライブからインストールするように ClickOnce アプリケーションを変更することができます。 詳細については、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)と[MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>アプリケーションのインストールで FTP プロトコルがサポートされていない  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] は、HTTP 1.1 Web サーバーまたはファイルサーバーからのアプリケーションのインストールをサポートしています。 ファイル転送プロトコルの FTP は、アプリケーションのインストールではサポートされていません。 FTP を使用してアプリケーションのみを発行できます。 次の表は、これらの違いをまとめたものです。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] は、HTTP 1.1 Web サーバーまたはファイルサーバーからのアプリケーションのインストールをサポートしています。 ファイル転送プロトコルの FTP は、アプリケーションのインストールではサポートされていません。 FTP を使用してアプリケーションのみを発行できます。 次の表は、その違いをまとめたものです。  
   
 |URL の種類|説明|  
 |--------------|-----------------|  
@@ -121,7 +121,7 @@ Windows Server でインターネットインフォメーションサービス (
   
 - 拡張子が "*" で mime タイプが "application/オクテット-stream" の MIME タイプを作成した場合、ブロックされていないファイルの種類のファイルをダウンロードできます。 (ただし、.aspx や .asmx などのブロックされたファイルの種類はダウンロードできません)。  
   
-  Windows Server で MIME の種類を構成する具体的な手順については、マイクロソフトサポート技術情報の記事 KB326965 「IIS 6.0 は不明な MIME の種類を提供しません」を参照してください。 [https://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
+  Windows Server で MIME の種類を構成する具体的な手順については、マイクロソフトサポート技術情報の記事 KB326965 「IIS 6.0 は不明な MIME の種類を提供しません」を参照してください。 [https://support.microsoft.com/default.aspx?scid=kb ; en-us; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
   
 ## <a name="content-type-mappings"></a>コンテンツの種類のマッピング  
  HTTP 経由で公開する場合、アプリケーションファイルのコンテンツの種類 (MIME の種類とも呼ばれます) は、"application/x-ms-application" にする必要があります。 サーバーに [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] がインストールされている場合は、自動的に設定されます。 これがインストールされていない場合は、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーション vroot (またはサーバー全体) に対して MIME の種類の関連付けを作成する必要があります。  
@@ -133,9 +133,9 @@ Windows Server でインターネットインフォメーションサービス (
   
  IIS を使用している場合は、HTTP 圧縮を簡単に有効にすることができます。 ただし、HTTP 圧縮を有効にすると、特定のファイルの種類 (つまり、HTML ファイルとテキストファイル) に対してのみ有効になります。 アセンブリ (.dll)、XML (.xml)、配置マニフェスト (. application)、およびアプリケーションマニフェスト (.manifest) の圧縮を有効にするには、これらのファイルの種類を、IIS で圧縮する型のリストに追加する必要があります。 ファイルの種類を配置に追加するまでは、テキストファイルと HTML ファイルのみが圧縮されます。  
   
- IIS の詳細な手順については、「 [HTTP 圧縮用に追加のドキュメントの種類を指定する方法](https://go.microsoft.com/fwlink/?LinkId=178459)」を参照してください。  
+ IIS の詳細な手順については、「 [HTTP 圧縮用に追加のドキュメントの種類を指定する方法](https://support.microsoft.com/kb/234497)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)   
  [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)

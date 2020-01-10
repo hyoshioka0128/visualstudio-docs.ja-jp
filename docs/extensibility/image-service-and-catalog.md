@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2647c09718f17235a3024f5787a0b85a7633ee1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982252"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848920"
 ---
 # <a name="image-service-and-catalog"></a>イメージサービスとカタログ
 このクックブックには、visual studio イメージサービスと Visual Studio 2015 で導入されたイメージカタログを採用するためのガイダンスとベストプラクティスが含まれています。
@@ -43,7 +43,7 @@ ms.locfileid: "72982252"
 
   ![イメージサービスの前後](../extensibility/media/image-service-before-and-after.png "前後のイメージ サービス")
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>機能のしくみ
  イメージサービスは、サポートされているすべての UI フレームワークに適したビットマップイメージを提供できます。
 
 - WPF: BitmapSource
@@ -89,7 +89,7 @@ ms.locfileid: "72982252"
 </ImageManifest>
 ```
 
- **文字**
+ **シンボル**
 
  読みやすく、保守を容易にするために、イメージマニフェストでは属性値にシンボルを使用できます。 シンボルは次のように定義されます。
 
@@ -105,7 +105,7 @@ ms.locfileid: "72982252"
 |||
 |-|-|
 |**要素**|**定義**|
-|インポート|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
+|[インポート]|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
 |GUID|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|
 |ID|シンボルは ID を表し、負でない整数である必要があります|
 |文字列型|シンボルは任意の文字列値を表します。|
@@ -122,13 +122,13 @@ ms.locfileid: "72982252"
 
 |||
 |-|-|
-|**表す**|**説明**|
+|**記号**|**説明**|
 |CommonProgramFiles|% CommonProgramFiles% 環境変数の値|
 |LocalAppData|% LocalAppData% 環境変数の値|
 |ManifestFolder|マニフェストファイルを含むフォルダー|
 |マイドキュメント|現在のユーザーの [マイドキュメント] フォルダーの完全なパス|
 |ProgramFiles|% ProgramFiles% 環境変数の値|
-|システム|*Windows\System32*フォルダー|
+|System|*Windows\System32*フォルダー|
 |WinDir|% WinDir% 環境変数の値|
 
  **イメージ**
@@ -164,15 +164,15 @@ ms.locfileid: "72982252"
 |||
 |-|-|
 |**属性**|**定義**|
-|URI|必要イメージの読み込み元となる場所を定義する URI。 次のいずれかを指定できます。<br /><br /> -Application:///機関を使用する[パック URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-コンポーネントの絶対リソース参照<br />-ネイティブリソースを含むファイルへのパス|
-|背景|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> *ダーク:* ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark* *の場合*、ソースの色は反転されません。 Background が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。|
+|URI|必要イメージの読み込み元となる場所を定義する URI。 次のいずれかです。<br /><br /> -Application:///機関を使用する[パック URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-コンポーネントの絶対リソース参照<br />-ネイティブリソースを含むファイルへのパス|
+|の背景情報|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかです。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> *ダーク:* ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark* *の場合*、ソースの色は反転されません。 Background が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。|
 
 \<ソース > 要素には、次の省略可能なサブ要素のうち1つだけを指定できます。
 
 ||||
 |-|-|-|
 |**要素**|**属性 (すべて必須)**|**定義**|
-|\<サイズ >|[値]|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|
+|\<サイズ >|Value|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|
 |\<SizeRange >|MinSize、MaxSize|ソースは、MinSize から MaxSize (デバイスユニット単位) のイメージに使用されます。 画像は正方形になります。|
 |ディメンションの \<|幅、高さ|ソースは、指定された幅と高さ (デバイス単位) のイメージに使用されます。|
 |\<DimensionRange >|MinWidth、Minwidth、<br /><br /> MaxWidth、Maxwidth|ソースは、幅/高さの最小値から最大幅/高さ (デバイス単位) までのイメージに使用されます。|
@@ -186,7 +186,7 @@ ms.locfileid: "72982252"
 |||
 |-|-|
 |**属性**|**定義**|
-|[種類]|必要ネイティブリソースの型 (XAML または PNG)|
+|の型|必要ネイティブリソースの型 (XAML または PNG)|
 |ID|必要ネイティブリソースの整数の ID 部分|
 
  **ImageList**
@@ -234,7 +234,7 @@ ms.locfileid: "72982252"
 
   - **EmbedInteropTypes**は true に設定する必要があります。
 
-- *VisualStudio. .dll*
+- *Microsoft.VisualStudio.Utilities.dll*
 
   - WPF UI で**ImageBackgroundColor**の**BrushToColorConverter**を使用する場合に必要です。
 
@@ -563,7 +563,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  **以前のバージョンの Visual Studio でも、vsct ファイルを読み取る必要がある場合はどうすればよいでしょうか。**
 
- 以前のバージョンの Visual Studio では、 **Iconismoniker**コマンドフラグは認識されません。 イメージサービスのイメージは、それをサポートするバージョンの Visual Studio で使用できますが、以前のバージョンの Visual Studio では引き続き古い形式のイメージを使用できます。 これを行うには、(そのため、以前のバージョンの Visual Studio と互換性がある) *vsct*ファイルを変更せずに、.csv ファイルの \<ビットマップに定義*されて*いる GUID と ID のペアからマップされる CSV (コンマ区切り値) ファイルを作成し >要素をイメージモニカー GUID/ID ペアにします。
+ 以前のバージョンの Visual Studio では、 **Iconismoniker**コマンドフラグは認識されません。 イメージサービスのイメージは、それをサポートするバージョンの Visual Studio で使用できますが、以前のバージョンの Visual Studio では引き続き古い形式のイメージを使用できます。 これを行うには、(そのため、以前のバージョンの Visual Studio と互換性がある) *vsct*ファイルを変更せずに、.csv ファイルの \<ビットマップ > 要素で定義されている GUID と id のペアからイメージモニカー GUID/id ペアにマップする CSV (コンマ区切り値) ファイルを作成*します。*
 
  マッピング CSV ファイルの形式は次のとおりです。
 
@@ -579,14 +579,14 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]
 ```
 
- **Iconmappingfilename**は $PackageFolder $ (上の例のように) で暗黙的にルート化された相対パスか、または環境変数で定義されたディレクトリ ( *@ "%UserProfile%\dir1\dir2\" など) で明示的にルートされた絶対パスです。MyMappingFile .csv "* 。
+ **IconMappingFilename**が相対パスか、暗黙的にルート (上記の例) のように $PackageFolder$ または絶対パスは、次のように、環境変数が定義されているディレクトリを明示的にルートと *@%UserProfile%\dir1\dir2\MyMappingFile.csv」* 。
 
 ## <a name="how-do-i-port-a-project-system"></a>プロジェクトシステムを操作方法ポート
  **プロジェクトの ImageMonikers を指定する方法**
 
 1. プロジェクトの**IVsHierarchy**に**VSHPROPID_SupportsIconMonikers**を実装し、true を返します。
 
-2. **VSHPROPID_IconMonikerImageList** (元のプロジェクトが**VSHPROPID_IconImgList**を使用している場合) または**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**のいずれかを実装します。**VSHPROPID_OpenFolderIconMonikerId** (元のプロジェクトで**VSHPROPID_IconHandle**と**VSHPROPID_OpenFolderIconHandle**が使用されている場合)。
+2. **VSHPROPID_IconMonikerImageList** (元のプロジェクトが**VSHPROPID_IconImgList**使用されている場合) または**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**、 **VSHPROPID_OpenFolderIconMonikerId**を実装します (元のプロジェクトが**VSHPROPID_IconHandle**と**VSHPROPID_OpenFolderIconHandle**を使用していた場合)。
 
 3. 拡張ポイントが要求した場合、アイコンの元の VSHPROPIDs の実装を変更して、アイコンの "レガシ" バージョンを作成します。 **IVsImageService2**は、これらのアイコンを取得するために必要な機能を提供します。
 
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. イメージサービスを使用して、更新されたマッピングによってモニカーを要求するようにコードを更新します。 (これは、マネージコードの**CrispImages**を更新したり、イメージサービスから hbitmaps や hbitmaps を要求したり、ネイティブコードの周囲に渡したりすることを意味します)。
 
 ## <a name="testing-your-images"></a>イメージのテスト
- イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは[Visual Studio 2015 SDK](visual-studio-sdk.md)で入手できます。 このツールとその他のドキュメントについては、[こちら](https://aka.ms/VSImageThemeTools)を参照してください。
+ イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは[Visual Studio 2015 SDK](visual-studio-sdk.md)で入手できます。 このツールとその他のドキュメントについては、[こちら](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN)を参照してください。
 
 ## <a name="additional-resources"></a>その他の技術情報
 
@@ -744,7 +744,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  イメージライブラリビューアーツールでは、イメージマニフェストを読み込んで、Visual Studio がマニフェストを正しく作成するのと同じ方法でユーザーが操作できるようにすることができます。 ユーザーは、背景、サイズ、DPI 設定、ハイコントラストなどの設定を変更できます。 また、マニフェスト内のエラーを検出するための読み込み情報が表示され、マニフェスト内の各イメージのソース情報が表示されます。
 
-## <a name="faq"></a>よくあるご質問
+## <a name="faq"></a>よく寄せられる質問
 
 - \<参照を読み込むときに含める必要がある依存関係がある場合は、VisualStudio. * を指定します。14.0. デザイン時 "/>?
 
@@ -798,7 +798,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |ImageName. Bitmap|KnownImageIds. イメージ|
     |ImageName. アイコン|KnownImageIds. IconFile|
     |ImageName. イメージ|KnownImageIds. イメージ|
-    |ImageMap|KnownImageIds|
+    |ImageName.ImageMap|KnownImageIds|
     |ImageName. XWorld|KnownImageIds|
     |ImageName. Audio|KnownImageIds。サウンド|
     |ImageName. ビデオ|KnownImageIds。メディア|
@@ -807,7 +807,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |ImageName. DataEnvironment|KnownImageIds. DataTable|
     |ImageName ファイル|KnownImageIds. レポート|
     |DanglingReference|KnownImageIds. ReferenceWarning|
-    |ImageName ファイル|KnownImageIds|
+    |ImageName.XsltFile|KnownImageIds|
     |ImageName. カーソル|KnownImageIds. カーソルファイル|
     |ImageName. Appデザイナフォルダー|KnownImageIds. プロパティ|
     |ImageName. データ|KnownImageIds. データベース|
@@ -824,7 +824,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |ImageName. SharedProjectVc|KnownImageIds. CPPSharedProject|
     |ImageName. SharedProjectJs|KnownImageIds|
     |CSharpCodeFile|KnownImageIds|
-    |ImageName. VisualBasicCodeFile|KnownImageIds|
+    |ImageName. VisualBasicCodeFile|KnownImageIds.VBFileNode|
 
   - 入力候補一覧のプロバイダーを更新しています。 以前の**StandardGlyphGroup**値と**standardglyph**値に一致する**knownmonikers**は何ですか。
 
@@ -1018,17 +1018,17 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||参照|
+    |GlyphAssembly||参照先|
     |GlyphLibrary||ライブラリ|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|
     |GlyphCppProject||CPPProjectNode|
-    |GlyphDialogId||ダイアログ|
+    |GlyphDialogId||Dialog|
     |GlyphOpenFolder||開かれたフォルダー|
     |GlyphClosedFolder||閉じたフォルダー|
     |GlyphArrow||GoToNext|
     |GlyphCSharpFile||CSFileNode|
-    |GlyphCSharpExpansion||短い|
+    |GlyphCSharpExpansion||スニペット|
     |GlyphKeyword||IntellisenseKeyword|
     |GlyphInformation||StatusInformation|
     |GlyphReference||ClassMethodReference|

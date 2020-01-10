@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297904"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850747"
 ---
-# <a name="network-usage"></a>ネットワーク使用量
+# <a name="network-usage"></a>ネットワーク使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。  
@@ -59,7 +59,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 |**ヘッダー**|イベントの要求ヘッダーに関する情報。|  
 |**本文**|要求と応答のペイロード データ。|  
 |**パラメーター**|クエリ文字列パラメーター名と値。|  
-|**Cookie**|応答と要求の cookie データ。|  
+|**クッキー**|応答と要求の cookie データ。|  
 |**タイミング**|選択したリソースの取得中のステージのグラフ。|  
   
  ネットワークの **[概要]** バーは、ある特定の時点で表示されているネットワーク操作の数、転送されたデータの量、データのダウンロードに要した時間、および表示可能なエラー (4xx 応答または 5xx 応答が返された要求) の数を示しています。  
@@ -73,7 +73,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
   
 3. ([本文] タブ内の) [応答の整形出力] ボタンは、コンテンツをさらに読みやすくして、JSON、XML、HTML、CSS、JavaScript、および TypeScript の応答のペイロードを解析できるようにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッグなしでプロファイリングツールを実行](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio ブログ: Visual Studio のネットワーク インスペクターの紹介](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Visual Studio ブログ: Visual Studio のネットワーク インスペクターの紹介](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 ビデオ: Visual Studio 診断ツール - 新しいネットワーク プロファイラー](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

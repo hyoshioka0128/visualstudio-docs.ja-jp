@@ -22,11 +22,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575917"
 ---
 # <a name="expected-while"></a>'while' が必要です
-`while` 条件が `do...while` ループに含まれていませんでした。 **Do**ステートメントには、コードブロックの末尾に対応する `while` テストが必要です。  
+`do...while` ループに、`while` 条件がありません。 **Do** ステートメントでは、対応する `while` テスト ステートメントをコード ブロックの最後に指定する必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 右中かっこの後に `while` test ステートメントを含めます。  
+- ブロックの終わりを表す右中かっこの後ろに `while` テスト ステートメントを追加します。  
   
 ## <a name="see-also"></a>参照  
  [While ステートメント](../../javascript/reference/while-statement-javascript.md)   

@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301176"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851360"
 ---
 # <a name="image-service-and-catalog"></a>イメージ サービスとカタログ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "74301176"
 
   ![イメージサービスの前後](../extensibility/media/image-service-before-and-after.png "前後のイメージ サービス")  
 
-## <a name="how-it-works"></a>しくみ  
+## <a name="how-it-works"></a>機能のしくみ  
  イメージサービスは、サポートされているすべての UI フレームワークに適したビットマップイメージを提供できます。  
 
 - WPF: BitmapSource  
@@ -89,7 +89,7 @@ ms.locfileid: "74301176"
 </ImageManifest>  
 ```  
 
- **文字**  
+ **シンボル**  
 
  読みやすく、保守を容易にするために、イメージマニフェストでは属性値にシンボルを使用できます。 シンボルは次のように定義されます。  
 
@@ -105,10 +105,10 @@ ms.locfileid: "74301176"
 |||  
 |-|-|  
 |**要素**|**定義**|  
-|インポート|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|  
-|Guid|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|  
+|[インポート]|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|  
+|GUID|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|  
 |ID|シンボルは ID を表し、負でない整数である必要があります|  
-|String|シンボルは任意の文字列値を表します。|  
+|文字列型|シンボルは任意の文字列値を表します。|  
 
  シンボルは大文字と小文字が区別され、$ (symbol-name) 構文を使用して参照されます。  
 
@@ -122,7 +122,7 @@ ms.locfileid: "74301176"
 
 |||  
 |-|-|  
-|**表す**|**説明**|  
+|**記号**|**説明**|  
 |CommonProgramFiles|% CommonProgramFiles% 環境変数の値|  
 |LocalAppData|% LocalAppData% 環境変数の値|  
 |ManifestFolder|マニフェストファイルを含むフォルダー|  
@@ -147,11 +147,11 @@ ms.locfileid: "74301176"
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|Guid|必要イメージモニカーの GUID 部分|  
+|GUID|必要イメージモニカーの GUID 部分|  
 |ID|必要イメージモニカーの ID 部分|  
 |AllowColorInversion|[省略可能、既定値は true]画像の色を、濃色の背景で使用するときにプログラムによって反転するかどうかを示します。|  
 
- **ソース**  
+ **Source**  
 
  \<Source > 要素は、単一のイメージソース資産 (XAML および PNG) を定義します。  
 
@@ -165,7 +165,7 @@ ms.locfileid: "74301176"
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **属性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               必要イメージの読み込み元となる場所を定義する URI。 次のいずれかです。<br /><br /> -Application:///機関を使用する[パック URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-コンポーネントの絶対リソース参照<br />-ネイティブリソースを含むファイルへのパス                                                                                                                                                                                                                                                                                                               |
-|  背景   | Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかです。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> <em>ダーク:</em>ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark* *の場合*、ソースの色は反転されません。 Background が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。 |
+|  の背景情報   | Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかです。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> <em>ダーク:</em>ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark* *の場合*、ソースの色は反転されません。 Background が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  \<ソース > 要素には、次の省略可能なサブ要素のうち1つだけを指定できます。  
@@ -173,9 +173,9 @@ ms.locfileid: "74301176"
 ||||  
 |-|-|-|  
 |**要素**|**属性 (すべて必須)**|**定義**|  
-|\<サイズ >|値|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|  
+|\<サイズ >|Value|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|  
 |\<SizeRange >|MinSize、MaxSize|ソースは、MinSize から MaxSize (デバイスユニット単位) のイメージに使用されます。 画像は正方形になります。|  
-|ディメンションの \<>|幅、高さ|ソースは、指定された幅と高さ (デバイス単位) のイメージに使用されます。|  
+|ディメンションの \<|幅、高さ|ソースは、指定された幅と高さ (デバイス単位) のイメージに使用されます。|  
 |\<DimensionRange >|MinWidth、Minwidth、<br /><br /> MaxWidth、Maxwidth|ソースは、幅/高さの最小値から最大幅/高さ (デバイス単位) までのイメージに使用されます。|  
 
  \<ソースの > 要素には、省略可能な \<Nの Esource > サブ要素を含めることもできます。これにより、マネージアセンブリではなくネイティブアセンブリから読み込まれた \<ソース > が定義されます。  
@@ -187,7 +187,7 @@ ms.locfileid: "74301176"
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|種類|必要ネイティブリソースの型 (XAML または PNG)|  
+|の型|必要ネイティブリソースの型 (XAML または PNG)|  
 |ID|必要ネイティブリソースの整数の ID 部分|  
 
  **ImageList**  
@@ -204,7 +204,7 @@ ms.locfileid: "74301176"
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|Guid|必要イメージモニカーの GUID 部分|  
+|GUID|必要イメージモニカーの GUID 部分|  
 |ID|必要イメージモニカーの ID 部分|  
 |外部|[省略可能、既定値は false]イメージモニカーが現在のマニフェスト内のイメージを参照しているかどうかを示します。|  
 
@@ -235,7 +235,7 @@ ms.locfileid: "74301176"
 
   - **EmbedInteropTypes**を true に設定する必要があります。  
 
-- **VisualStudio. .dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
   - **BrushToColorConverter**を imageutilities に使用する場合は必須です。WPF UI の**Imagebackgroundcolor**  
 
@@ -580,7 +580,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
        - \<モニカー > は、イメージと一致するが、"Knownmoniker" を持つ**Knownmoniker**に置き換える必要があります。 名前から削除されます。  
 
-   - < インポートマニフェスト = "$ (ManifestFolder)\\<\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\> への相対インストールディレクトリパスを \<シンボル > セクションの先頭に追加します。  
+   - < インポートマニフェスト = "$ (ManifestFolder)\\\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\> への相対インストールディレクトリパスを \<シンボル > セクションの先頭に追加します。  
 
        - 相対パスは、マニフェストのセットアップ作成で定義されている配置場所によって決まります。  
 
@@ -650,11 +650,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. イメージサービスを使用して、更新されたマッピングによってモニカーを要求するようにコードを更新します。 (これは、マネージコードの**CrispImages**を更新したり、イメージサービスから hbitmaps や hbitmaps を要求したり、ネイティブコードの周囲に渡したりすることを意味します)。  
 
 ## <a name="testing-your-images"></a>イメージのテスト  
- イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)で入手できます。 このツールとその他のドキュメントについては、[こちら](https://aka.ms/VSImageThemeTools)を参照してください。  
+ イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)で入手できます。 このツールとその他のドキュメントについては、[こちら](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN)を参照してください。  
 
-## <a name="additional-resources"></a>その他のリソース  
+## <a name="additional-resources"></a>その他の技術情報  
 
-### <a name="samples"></a>Samples  
+### <a name="samples"></a>サンプル  
  GitHub の Visual Studio サンプルのいくつかが更新され、さまざまな Visual Studio 機能拡張ポイントの一部としてイメージサービスを使用する方法が示されるようになりました。  
 
  最新のサンプルについては、 [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples)を確認してください。  
@@ -948,17 +948,17 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||参照|  
+    |GlyphAssembly||参照先|  
     |GlyphLibrary||ライブラリ|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
     |GlyphCppProject||CPPProjectNode|  
-    |GlyphDialogId||ダイアログ|  
+    |GlyphDialogId||Dialog|  
     |GlyphOpenFolder||開かれたフォルダー|  
     |GlyphClosedFolder||閉じたフォルダー|  
     |GlyphArrow||GoToNext|  
     |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||短い|  
+    |GlyphCSharpExpansion||スニペット|  
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  

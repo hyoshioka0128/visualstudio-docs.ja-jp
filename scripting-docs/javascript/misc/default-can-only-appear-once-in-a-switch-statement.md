@@ -1,4 +1,4 @@
----
+﻿---
 title: "' default ' は、' switch ' ステートメント | で1回のみ使用できますMicrosoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

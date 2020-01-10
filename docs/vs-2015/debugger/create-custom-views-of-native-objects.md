@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299483"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850203"
 ---
 # <a name="create-custom-views-of-native-objects"></a>ネイティブ オブジェクトのカスタム ビューを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]** 、 *
 ## <a name="BKMK_Why_create_visualizations_"></a> Natvis 視覚化を作成する理由  
  Natvis フレームワークを使用して型の視覚化ルールを作成すると、開発者がデバッグ中に型を確認しやすくなります。  
 
- たとえば、次の画像に示しているのは、カスタム視覚化が適用されずにデバッガーに表示された [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) 型の変数です。  
+ たとえば、次の画像に示しているのは、カスタム視覚化が適用されずにデバッガーに表示された [Windows::UI::Xaml::Controls::TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) 型の変数です。  
 
  ![TextBox の既定の視覚化](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
@@ -150,7 +150,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]** 、 *
 </AutoVisualizer>  
 ```  
 
-### <a name="BKMK_Type"></a> 型の要素  
+### <a name="BKMK_Type"></a> Type 要素  
  基本的な型は、次のようになります。  
 
 ```xml  
@@ -171,7 +171,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]** 、 *
 
 3. その型のメンバーが変数ウィンドウで展開されたときにどのように表示されるか ( `Expand` ノード)。  
 
-   **テンプレート クラス** `Name` 要素の `Type` 属性には、アスタリスク ( `*` ) をワイルドカード文字として使用して、テンプレート クラス名を指定できます。  
+   **テンプレート クラス**`Name` 要素の `Type` 属性には、アスタリスク ( `*` ) をワイルドカード文字として使用して、テンプレート クラス名を指定できます。  
 
 ```xml  
 <Type Name="ATL::CAtlArray&lt;*&gt;">  
@@ -196,7 +196,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]** 、 *
 </Type>  
 ```  
 
- `Inheritable` の既定値は `true` です。  
+ `Inheritable` の既定値は `true`です。  
 
 #### <a name="priority-attribute"></a>Priority 属性  
  `Priority` 属性には、定義が解析に失敗した場合、代替の定義が使用される順序を指定します。 `Priority` の有効な値は、 `Low`、 `MediumLow`、`Medium`、 `MediumHigh`、および `High`、であり、既定値は `Medium`です。  
@@ -224,7 +224,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]** 、 *
 ```  
 
 #### <a name="BKMK_Versioning"></a> Version 要素  
- `Version` 要素を使用して、視覚化の適用範囲を特定のモジュールとそれらのバージョンに制限すると、名前の競合を最小限に抑えることができ、型のバージョンごとに異なる視覚化を使用できます。 例 :  
+ `Version` 要素を使用して、視覚化の適用範囲を特定のモジュールとそれらのバージョンに制限すると、名前の競合を最小限に抑えることができ、型のバージョンごとに異なる視覚化を使用できます。 例:  
 
 ```xml  
 <Type Name="DirectUI::Border">  

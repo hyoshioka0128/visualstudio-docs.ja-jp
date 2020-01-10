@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7a8b9a4b52fce5fb838c12ccf057fd0e80619cd7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301431"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851258"
 ---
 # <a name="unit-test-your-code"></a>コードの単体テスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "74301431"
 |**コード カバレッジを使用して、単体テストでテストされたプロジェクトのコードの割合を調べる:** [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] のテスト ツールのコード カバレッジ機能について学習します。|-   [コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**単体テストにロード テストを使用したストレスおよびパフォーマンスの分析の実行:** ロード テストを作成し、それに単体テストを追加すると、アプリケーションのパフォーマンスおよびストレスの問題を分離するのに役立ちます。 **注:** ロード テストを作成して使用するには、Visual Studio Enterprise が必要です。|-   [ロード テストの作成と編集](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [方法: ロード テスト シナリオに、Web パフォーマンス テストと単体テストを追加する](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [方法: ロード テスト シナリオから、Web パフォーマンス テストと単体テストを削除する](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**品質ゲートの設定と適用:** 品質ゲートを作成し、コードがチェックインされる前にテストを実行することで、コードの品質を保証できます。|-   [品質ゲートの設定と適用](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**単体テストの種類の拡張:** 単体テスト フレームワークにはない場合がある機能をテストに追加できます。 たとえば、テストを通常のユーザーとして実行するかどうかを指定するテスト プロパティを追加できます。 また、フレームワークを拡張して、行の属性をメソッドに追加し、テスト内でその行のデータを使用することもできます。|単体テスト フレームワークを拡張する方法のサンプル コードについては、次の [Microsoft Web サイト](https://go.microsoft.com/fwlink/?LinkId=185591)を参照してください。|
+|**単体テストの種類の拡張:** 単体テスト フレームワークにはない場合がある機能をテストに追加できます。 たとえば、テストを通常のユーザーとして実行するかどうかを指定するテスト プロパティを追加できます。 また、フレームワークを拡張して、行の属性をメソッドに追加し、テスト内でその行のデータを使用することもできます。|単体テスト フレームワークを拡張する方法のサンプル コードについては、次の [Microsoft Web サイト](https://msdn.microsoft.com/vstudio/ff420671.aspx)を参照してください。|
 |**テストのオプションを設定する:** たとえば、テスト結果が格納される場所を指定できます。|[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>関連するタスク
@@ -63,7 +63,7 @@ ms.locfileid: "74301431"
 
  [!INCLUDE[TCMext](../includes/tcmext-md.md)] を使用するのではなく、Visual Studio を使用して自動テストを実行する方法へのリンクを示します。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>参照先
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 単体テストの名前空間について説明します。この名前空間には、単体テストをサポートする属性、例外、アサート、およびその他のクラスが用意されています。
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> は、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] および Web サービスの単体テストをサポートすることによって UnitTesting 名前空間を拡張する unittesting. Web 名前空間について説明します。
@@ -71,16 +71,16 @@ ms.locfileid: "74301431"
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="videos"></a>Videos
- [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9: XAML を使用した Windows ストア アプリのビルドの単体テスト](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Forums
- [Visual Studio の単体テスト](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio の単体テスト](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
-### <a name="reference"></a>参照
- [単体テストのコンテンツ インデックス](https://go.microsoft.com/fwlink/?LinkID=254719)
+### <a name="reference"></a>参照先
+ [単体テストのコンテンツ インデックス](https://blogs.msdn.com/b/mathew_aniyan/archive/2012/05/17/content-index-for-unit-test.aspx)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [アプリケーションをテストする](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)[コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)

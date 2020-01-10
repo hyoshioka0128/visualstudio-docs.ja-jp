@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299836"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844369"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74299836"
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725)。 オプション機能の一覧からユニバーサル Windows アプリ開発ツールが選択されていることを確認します。 これらのツールがないと、ユニバーサル アプリを作成することができません。
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/)。 オプション機能の一覧からユニバーサル Windows アプリ開発ツールが選択されていることを確認します。 これらのツールがないと、ユニバーサル アプリを作成することができません。
 
   このソフトウェアをインストールしたら、開発用に [Windows 10 デバイスを有効にする](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 必要があります。 (Windows 10 デバイスごとに開発者ライセンスは必要ありません。)
 

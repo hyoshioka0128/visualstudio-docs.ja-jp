@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 31d36a89473cd0c6a0b55e484fee2ce1d7045b15
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300051"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850892"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74300051"
   
  プロセスのワーキング セットのサイズには、プロセスが現在使用している仮想メモリ量が反映されます。 これは、アプリケーションの実行に使用できる物理メモリ (または RAM) の量と、実行中の他のプロセスによる物理メモリの競合の影響も受けます。 物理メモリが制約されている場合、オペレーティング システムがプロセス ワーキング セットの非アクティブなページを定期的に適切にトリミングして、アクティブなプロセス全体でメモリ使用量を均衡化するため、プロセス ワーキング セットの値は大幅に変わる傾向があります。  
   
- プロセスのワーキング セットの詳細については、MSDN の Windows のメモリ管理のドキュメントの「[Working Set](https://go.microsoft.com/fwlink/?LinkId=177830)」 (ワーキング セット) を参照してください。  
+ プロセスのワーキング セットの詳細については、MSDN の Windows のメモリ管理のドキュメントの「[Working Set](https://msdn.microsoft.com/library/cc441804.aspx)」 (ワーキング セット) を参照してください。  
   
 ## <a name="how-to-use-rule-data"></a>規則データの使用方法  
  規則の値を使用して、特定のプログラムの異なるバージョンやビルドを比較したり、さまざまなプロファイリング シナリオにおけるアプリケーションのパフォーマンスを確認したりします。  

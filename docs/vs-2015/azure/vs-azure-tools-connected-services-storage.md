@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8b03d1e698108fac2f81d1e3263d7b38ff82b1dc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300169"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852346"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加
 Visual Studio では、 **[接続済みサービスの追加]** ダイアログを使用して、次のサービスを Azure Storage に接続できます。
@@ -63,9 +63,9 @@ Visual Studio では、 **[接続済みサービスの追加]** ダイアログ�
 ## <a name="how-your-project-is-modified"></a>プロジェクトを変更する方法
 ダイアログが完了すると、Visual Studio は参照を追加し、特定の構成ファイルを変更します。 具体的な変更内容はプロジェクトの種類によって異なります。
 
-- ASP.NET プロジェクト - [変更内容 – ASP.NET プロジェクト](https://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core プロジェクト - [変更内容 – ASP.NET 5 プロジェクト](https://go.microsoft.com/fwlink/p/?LinkId=513124)
-- クラウド サービス プロジェクト (Web ロールおよび worker ロール) - [変更内容 – クラウド サービス プロジェクト](https://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET プロジェクト - [変更内容 – ASP.NET プロジェクト](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core プロジェクト - [変更内容 – ASP.NET 5 プロジェクト](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- クラウド サービス プロジェクト (Web ロールおよび worker ロール) - [変更内容 – クラウド サービス プロジェクト](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob プロジェクト - [変更内容 - WebJob プロジェクト](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>次のステップ:

@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301351"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845439"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>レイヤー図を使用したコードの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "74301351"
 
   この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](https://go.microsoft.com/fwlink/?LinkID=252073)参照してください。
+  Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)参照してください。
 
 > [!IMPORTANT]
 > Team Foundation ビルドを使用してレイヤー検証を実行する場合は、ビルド サーバーに同じバージョンの Visual Studio をインストールすることも必要です。
@@ -205,7 +205,7 @@ ms.locfileid: "74301351"
 
 - [ビルド プロセス テンプレートのカスタマイズ](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [実行中のビルドの進行状況を監視する](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [実行中のビルドの進行状況の監視](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
 ## <a name="TroubleshootingValidation"></a>レイヤー検証に関する問題のトラブルシューティング
  レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、「[レイヤー検証エラーの理解と解決](#UnderstandingValidationErrors)」を参照してください。
@@ -229,19 +229,19 @@ ms.locfileid: "74301351"
 |----------------|---------------------|
 |*Artifactn*(*artifacttypen*)|*Artifactn*は、レイヤー図のレイヤーに関連付けられている成果物です。<br /><br /> *Artifacttypen*は、**クラス**や**メソッド**など、 *artifactn*の種類です。たとえば、次のようになります。<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|名前空間の名前。|
-|*レイヤー Namen*|レイヤー図のレイヤーの名前。|
+|*LayerNameN*|レイヤー図のレイヤーの名前。|
 |*DependencyType*|*Artifact1*と*Artifact2*の間の依存関係の種類。 たとえば、 *Artifact1*には*Artifact2*との**呼び出し**関係があります。|
 
 |**エラー構文**|**エラーの説明**|
 |----------------------|---------------------------|
-|AV0001: 無効な依存関係: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー: *LayerName1*、 *LayerName2* &#124;の依存関係: *dependencytype*|LayerName1 が*LayerName2*に直接依存してい*ないため、* *LayerName1*の*Artifact1*は*LayerName2*の*Artifact2*に依存していてはなりません。|
+|AV0001: 無効な依存関係: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー: *LayerName1*、 *LayerName2* &#124;の依存関係: *dependencytype*|*LayerName1* が*LayerName2*に直接依存していないため、 *LayerName1*の*Artifact1*は*LayerName2*の*Artifact2*に依存していてはなりません。|
 |AV1001: 無効な名前空間:*成果物*<br /><br /> レイヤー: $ *ername* &#124;必須の名前空間: *NamespaceName1* &#124;現在の名前空間: *NamespaceName2*|$ *Ername*は、関連付けられた成果物が*NamespaceName1*に属している必要があります。 *アーティファクト*は、 *NamespaceName1*ではなく、 *NamespaceName2*にあります。|
 |AV1002: 禁止された名前空間に依存します: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> レイヤー: $ *ername* &#124;禁止された名前空間: *NamespaceName* &#124;の依存関係: *dependencytype*|$ *Ername*は、関連付けられている成果物が*NamespaceName*に依存していないことが必要です。 *Artifact2*が*NamespaceName*にあるため、 *Artifact1*を*Artifact2*に依存させることはできません。|
 |AV1003: 禁止された名前空間:*成果物*(*artifacttype*)<br /><br /> レイヤー: $ *ername* &#124;禁止された名前空間: *NamespaceName*|$ *Ername*は、関連付けられた成果物が*NamespaceName*に属することができません。 *成果物*は*NamespaceName*に属します。|
-|AV3001: 見つからないリンク: '*成果物*' へのレイヤー ' レイヤ*ername*' リンクが見つかりません。 アセンブリ参照が存在することを確認してください。|検索できない成果*物へのリンクが*あります。 たとえば、モデリング プロジェクトでクラスを含むアセンブリへの参照が欠落しているために、クラスへのリンクが欠落している場合があります。|
+|AV3001: 見つからないリンク: '*成果物*' へのレイヤー ' レイヤ*ername*' リンクが見つかりません。 アセンブリ参照が存在することを確認してください。|成果物への *LayerName* リンクが見つかりません。 たとえば、モデリング プロジェクトでクラスを含むアセンブリへの参照が欠落しているために、クラスへのリンクが欠落している場合があります。|
 |AV9001: アーキテクチャの検証で内部エラーが検出されました。 結果が不完全である可能性があります。 詳細については、ビルド イベント ログの詳細または出力ウィンドウを参照してください。|詳細については、ビルド イベント ログまたは出力ウィンドウを参照してください。|
 
 ## <a name="security"></a>セキュリティ
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)

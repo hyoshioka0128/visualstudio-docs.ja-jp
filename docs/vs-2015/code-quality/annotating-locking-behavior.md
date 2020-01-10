@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295829"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850170"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "74295829"
 ## <a name="locking-annotations"></a>ロックの注釈  
  次の表に、ロックの注釈の一覧を示します。  
   
-|Annotation|説明|  
+|注釈|説明|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの排他ロックカウントによって関数がインクリメントされることを示します。|  
 |`_Acquires_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトのロックカウントによって関数がインクリメントされることを示します。|  
@@ -91,7 +91,7 @@ ms.locfileid: "74295829"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>非公開のロック オブジェクトに対する SAL の組み込み  
  特定のロックオブジェクトは、関連付けられているロック関数の実装によって公開されません。  次の表に、これらの非公開のロックオブジェクトを操作する関数に対する注釈を有効にする SAL 組み込み変数を示します。  
   
-|Annotation|説明|  
+|注釈|説明|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|キャンセルスピンロックについて説明します。|  
 |`_Global_critical_region_`|クリティカル領域について説明します。|  
@@ -101,14 +101,14 @@ ms.locfileid: "74295829"
 ## <a name="shared-data-access-annotations"></a>共有データ アクセスの注釈  
  次の表は、共有データアクセスの注釈を示しています。  
   
-|Annotation|説明|  
+|注釈|説明|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|  
 |`_Interlocked_`|変数に注釈をし、`_Guarded_by_(_Global_interlock_)`に相当します。|  
 |`_Interlocked_operand_`|注釈付き関数のパラメーターは、さまざまなインタロックされた関数のいずれかのターゲットオペランドです。  これらのオペランドには、特定の追加プロパティが必要です。|  
 |`_Write_guarded_by_(expr)`|変数に注釈を付け、変数が変更されるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [SAL](../code-quality/understanding-sal.md)  について  
  [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
@@ -117,4 +117,4 @@ ms.locfileid: "74295829"
  [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
  [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベストプラクティスと例](../code-quality/best-practices-and-examples-sal.md)   
- [コード分析チームのブログ](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)

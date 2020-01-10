@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1121058d38d129b417cbd79b685e5bd549353a7c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290326"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845251"
 ---
 # <a name="globalizing-and-localizing-applications"></a>アプリケーションのグローバライズとローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "74290326"
  [アプリケーションのグローバル](../ide/globalizing-applications.md)化複数のカルチャをサポートするアプリケーションの作成に関するページへのリンクを示します。
 
 ## <a name="related-sections"></a>関連セクション
- [アプリのグローバル化 (JavaScript と HTML を使用した Windows ストアアプリ)](https://go.microsoft.com/fwlink/?LinkId=258266)JavaScript と HTML を使用してビルドされた [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリをグローバライズおよびローカライズするための方法に関するトピックとガイドラインが含まれています。
+ [アプリのグローバル化 (JavaScript と HTML を使用した Windows ストアアプリ)](https://msdn.microsoft.com/library/windows/apps/hh465006.aspx)JavaScript と HTML を使用してビルドされた [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリをグローバライズおよびローカライズするための方法に関するトピックとガイドラインが含まれています。
 
- [アプリのグローバル化 (/Vb/ C#C++および xaml を使用した Windows ストアアプリ)](https://go.microsoft.com/fwlink/?LinkId=258267)には、xaml とビジュアルC#、Visual Basic、またはビジュアルC++を使用してビルドされた [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリをグローバライズおよびローカライズするための方法に関するトピックとガイドラインが含まれています。
+ [アプリのグローバル化 (/Vb/ C#C++および xaml を使用した Windows ストアアプリ)](https://msdn.microsoft.com/library/windows/apps/xaml/Hh965328(v=win.10).aspx)には、xaml とビジュアルC#、Visual Basic、またはビジュアルC++を使用してビルドされた [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリをグローバライズおよびローカライズするための方法に関するトピックとガイドラインが含まれています。
 
  [国際対応アプリケーションを開発するためのベストプラクティス](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)各国のユーザー向けのプログラミングについての背景情報を提供します。
 
