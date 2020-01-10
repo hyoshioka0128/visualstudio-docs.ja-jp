@@ -22,11 +22,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572887"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' は 'switch' ステートメントのなかに、一度のみ表示できます。
-Switch ステートメント内で**default**ステートメントを複数回使用しようとしました。 既定のケースでは、switch ステートメントの最後の case ステートメント (フォールスルーケース) になります。  
+switch ステートメントで、**default** ステートメントを複数回使用しようとしました。 default case は、switch ステートメントの最後の case ステートメント (式の値と一致しなかった場合に実行される case) である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- `switch` ステートメントから余分な**既定**の case ステートメントを削除します (switch ステートメントでは、既定の case ステートメントを1つだけ使用します)。  
+- `switch` ステートメントで、**default** case ステートメントを一度だけ使用するようにします (switch ステートメントでは、既定の case ステートメントを 1 つだけ使用します)。  
   
 ## <a name="see-also"></a>参照  
  [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の   
