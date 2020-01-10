@@ -11,25 +11,25 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299802"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844322"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development のインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlink/p/?LinkId=536383) は、Visual Studio 2015 付属のインストール可能なコンポーネントです。 クロス プラットフォームの Visual Studio テンプレートが含まれており、クロス プラットフォーム ツールおよび SDK をインストールしてすぐに開始できるようにします。それらを自分で検索、ダウンロード、構成する必要はありません。 これらのツールを Visual Studio で使用することで、クロス プラットフォーム プロジェクトを簡単に作成、編集、デバッグ、テストできます。 このトピックでは、Visual Studio を使用してクロス プラットフォーム アプリを開発するために必要なツールとサード パーティのソフトウェアをインストールする方法について説明します。 コンポーネントの概要については、「 [Visual C++ クロスプラットフォーム モバイル](https://go.microsoft.com/fwlink/p/?LinkId=536387)」をご覧ください。  
   
- [必要条件](#Requirements)   
+ [要件](#Requirements)   
  [ツールの取得](#GetTheTools)   
  [ツールのインストール](#InstallTheTools)   
  [Install tools for iOS](#InstallForiOS)   
  [手動による依存関係のインストールまたは更新](#ThirdParty)  
   
-## <a name="Requirements"></a> 必要条件  
+## <a name="Requirements"></a> 要件  
   
 - インストール要件については、「 [Visual Studio 2015 のシステム要件](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)」をご覧ください。  
   
@@ -38,14 +38,14 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
   特定のデバイス プラットフォームのアプリをビルドするには、いくつかの追加要件があります。  
   
-- Windows Phone エミュレーターおよび Microsoft Visual Studio Emulator for Android には、Hyper-V を実行できるコンピューターが必要です。 エミュレーターをインストールして実行する前に、Windows の Hyper-V 機能を有効にする必要があります。 詳細については、エミュレーターの「 [システム要件](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)」を参照してください。  
+- Windows Phone エミュレーターおよび Microsoft Visual Studio Emulator for Android には、Hyper-V を実行できるコンピューターが必要です。 エミュレーターをインストールして実行する前に、Windows の Hyper-V 機能を有効にする必要があります。 詳細については、エミュレーターの[システム要件](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)をご覧ください。  
   
-- Android SDK に付属している x86 Android エミュレーターは、Intel HAXM ドライバーを実行できるコンピューター向けに最適化されています。 このドライバーには、VT-x および Execute Disable Bit をサポートしている Intel x64 プロセッサが必要です。 詳しくは、「 [Intel® Hardware Accelerated Execution Manager のインストール手順 - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385)」をご覧ください。  
+- Android SDK に付属している x86 Android エミュレーターは、Intel HAXM ドライバーを実行できるコンピューター向けに最適化されています。 このドライバーには、VT-x および Execute Disable Bit をサポートしている Intel x64 プロセッサが必要です。 詳しくは、「 [Intel® Hardware Accelerated Execution Manager のインストール手順 - Microsoft Windows](https://github.com/intel/haxm)」をご覧ください。  
   
 - iOS 用のコードをビルドするには、Apple ID、iOS Developer Program アカウント、[Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) 以降を OS X Mavericks 以降のバージョンで実行できる Mac コンピューターが必要です。 簡単なインストール手順については、「 [Install tools for iOS](#InstallForiOS)」をご覧ください。  
   
 ## <a name="GetTheTools"></a> ツールの取得  
- Visual C++ for Cross-Platform Mobile Development は、Visual Studio の Community、Professional、Enterprise エディションに付属しているインストール可能なコンポーネントです。 Visual Studio を入手するには、「[Visual Studio 2015 のダウンロード](https://go.microsoft.com/fwlink/p/?linkid=517106)」のページにアクセスして、Visual Studio 2015 with Update 2 以降をインストールしてください。  
+ Visual C++ for Cross-Platform Mobile Development は、Visual Studio の Community、Professional、Enterprise エディションに付属しているインストール可能なコンポーネントです。 Visual Studio を入手するには、「[Visual Studio 2015 のダウンロード](https://visualstudio.microsoft.com/downloads/)」のページにアクセスして、Visual Studio 2015 with Update 2 以降をインストールしてください。  
   
 ## <a name="InstallTheTools"></a> ツールのインストール  
  Visual Studio 2015 のインストーラーには、Visual C++ for Cross-Platform Mobile Development をインストールするオプションが含まれています。 このオプションを選択すると、必要な C++ 言語ツール、Visual Studio 用のテンプレートとコンポーネント、Android のビルドとデバッグに必要な GCC および Clang ツールセット、iOS 開発用の Mac と通信するためのコンポーネントがインストールされます。 また、iOS および Android アプリの開発をサポートするために必要なサードパーティ製のツールとソフトウェア開発キットもすべてインストールされます。 これらのサードパーティ製ツールのほとんどは、Android プラットフォームのサポートに必要なオープン ソースのソフトウェアです。  
@@ -68,7 +68,7 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
      ユニバーサル Windows アプリをビルドし、Android および iOS プロジェクトとの間でコードを共有するには、 **[機能の選択]** で、 **[Windows 開発と Web 開発]** を展開し、 **[ユニバーサル Windows アプリ開発ツール]** をオンにします。 ユニバーサル Windows アプリをビルドする予定がない場合は、このオプションを省略できます。  
   
-     **[次へ]** をクリックして続行します。  
+     **[次へ]** を選択して続行します。  
   
 3. サードパーティ製コンポーネントには、それぞれ独自のライセンス条項があります。 ライセンス条項を表示するには、各コンポーネントの横にある **[ライセンス条項]** リンクを選びます。 **[インストール]** を選択して、コンポーネントを追加し、Visual Studio と、Visual C++ for Cross-Platform Mobile Development をインストールします。  
   
@@ -133,6 +133,6 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
 4. **[OK]** を選んで、カスタム ツール フォルダーの場所を保存します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [iOS を使用してビルドするためのツールのインストールおよび構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ クロスプラットフォーム モバイル](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

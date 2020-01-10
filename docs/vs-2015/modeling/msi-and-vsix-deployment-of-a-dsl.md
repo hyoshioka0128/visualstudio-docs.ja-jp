@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5770fb604c1c700919f2e738a00ee07cc969b355
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297744"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850112"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "74297744"
 ## <a name="which"></a>VSIX と MSI の展開の選択
  ドメイン固有言語を展開するには、次の2つの方法があります。
 
-|メソッド|メリット|
+|メソッド|利点|
 |------------|--------------|
 |VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能)|デプロイが非常に簡単: DslPackage プロジェクトから **.vsix**ファイルをコピーして実行します。<br /><br /> 詳細について[は、「VSX を使用した DSL のインストールとアンインストール](#Installing)」を参照してください。|
 |MSI (インストーラーファイル)|-ユーザーが DSL ファイルをダブルクリックして [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を開けるようにします。<br />-ターゲットコンピューターの DSL ファイルの種類にアイコンを関連付けます。<br />-XSD (XML スキーマ) を DSL ファイルの種類に関連付けます。 これにより、ファイルが [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]に読み込まれるときに警告が回避されます。<br /><br /> MSI を作成するには、ソリューションにセットアッププロジェクトを追加する必要があります。<br /><br /> 詳細については、「 [MSI ファイルを使用した DSL の展開](#msi)」を参照してください。|
@@ -64,14 +64,14 @@ ms.locfileid: "74297744"
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *Localappdata* **\Microsoft\VisualStudio\10.0\Extensions**
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
 ## <a name="msi"></a>MSI で DSL を展開する
  DSL 用の MSI (Windows インストーラー) ファイルを定義することで、ユーザーが Windows エクスプローラーから DSL ファイルを開けるようにすることができます。 また、アイコンと短い説明をファイル名の拡張子に関連付けることもできます。 また、MSI では、DSL ファイルの検証に使用できる XSD をインストールできます。 必要に応じて、同時にインストールされる他のコンポーネントを MSI に追加することができます。
 
  MSI ファイルおよびその他の展開オプションの詳細については、「[アプリケーション、サービス、およびコンポーネントの展開](../deployment/deploying-applications-services-and-components.md)」を参照してください。
 
- MSI をビルドするには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションにセットアッププロジェクトを追加します。 セットアッププロジェクトを作成する最も簡単な方法は、CreateMsiSetupProject.tt テンプレートを使用することです。このテンプレートは、 [Vmsdk サイト](https://go.microsoft.com/fwlink/?LinkID=186128)からダウンロードできます。
+ MSI をビルドするには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションにセットアッププロジェクトを追加します。 セットアッププロジェクトを作成する最も簡単な方法は、CreateMsiSetupProject.tt テンプレートを使用することです。このテンプレートは、 [Vmsdk サイト](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)からダウンロードできます。
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>DSL を MSI に展開するには
 
@@ -93,19 +93,19 @@ ms.locfileid: "74297744"
 
        - 説明
 
-       - バージョン
+       - Version
 
    - **[エディター]** ノードをクリックし、プロパティウィンドウの **[アイコン]** をクリックします。 **Dslpackage\ Resources**でアイコンファイルを参照するように値を設定し**ます。たとえば、ファイル .ico などです。**
 
    - **[ビルド]** メニューの **[Configuration Manager]** を開き、 **[リリース]** や **[デバッグ]** など、ビルドする構成を選択します。
 
-4. [視覚化とモデリング SDK のホームページ](https://go.microsoft.com/fwlink/?LinkID=186128)にアクセスし、 **[ダウンロード]** タブから**CreateMsiSetupProject.tt**をダウンロードします。
+4. [視覚化とモデリング SDK のホームページ](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)にアクセスし、 **[ダウンロード]** タブから**CreateMsiSetupProject.tt**をダウンロードします。
 
 5. Dsl プロジェクトに**CreateMsiSetupProject.tt**を追加します。
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、CreateMsiSetupProject という名前のファイルが作成されます。 **.vdproj**です。
 
-6. Windows エクスプローラーで、Dsl\\*. .vdproj を Setup という名前の新しいフォルダーにコピーします。
+6. Windows エクスプローラで、コピー Dsl\\\*.vdproj を新しいフォルダーにセットアップをという名前です。
 
     (必要に応じて、Dsl プロジェクトから CreateMsiSetupProject.tt を除外できるようになりました)。
 
@@ -129,7 +129,7 @@ ms.locfileid: "74297744"
 
     - ファイルをダブルクリックすると [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が起動し、dsl エディターで DSL ファイルが開きます。
 
-    必要に応じて、テキストテンプレートを使用する代わりに、手動でセットアッププロジェクトを作成することもできます。 この手順を含むチュートリアルについては、[視覚化とモデリング SDK ラボ](https://go.microsoft.com/fwlink/?LinkId=208878)の第5章を参照してください。
+    必要に応じて、テキストテンプレートを使用する代わりに、手動でセットアッププロジェクトを作成することもできます。 この手順を含むチュートリアルについては、[視覚化とモデリング SDK ラボ](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)の第5章を参照してください。
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>MSI からインストールされた DSL をアンインストールするには
 

@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ef6ae6b042b1616997821febe156ef5cac3b7f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299708"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850377"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
   以前に Visual Studio の拡張機能を作成したことがない場合は、これらの機能の詳細を確認し、 [Visual Studio 拡張機能の開発を開始](../extensibility/starting-to-develop-visual-studio-extensions.md)する必要があります。  
   
 ## <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK のインストール  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
+ Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 ## <a name="whats-new-in-the-visual-studio-2015-sdk"></a>Visual Studio 2015 SDK の新機能  
  Visual Studio SDK には、電球や新しいプロジェクトアイテムなど、いくつかの新機能があり、VSIX パッケージを使用してメニューコマンド、ツールウィンドウ、およびエディター拡張機能を作成できます。 詳細については、「 [Visual Studio 2015 SDK の新機能](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)」を参照してください。  
@@ -56,13 +56,13 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
  [イメージサービスとカタログ](../extensibility/image-service-and-catalog.md)を活用して、優れたイメージ管理と高 DPI とテーマのサポートを実現します。  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>既存の Visual Studio 拡張機能の検索とインストール  
- Visual Studio 拡張機能は、 **[ツール]** メニューの **[拡張機能と更新プログラム]** ダイアログで確認できます。 詳細については、「[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。 また、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で拡張機能を検索することもできます。  
+ **ツール**メニューの**拡張機能と更新**ダイアログでVisual Studio 拡張機能を見つけることができます。 詳細については、「[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。 また、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で拡張機能を検索することもできます。  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK のリファレンス  
- Visual studio sdk API リファレンスについては、「 [Visual STUDIO Sdk リファレンス](../extensibility/visual-studio-sdk-reference.md)」を参照してください。  
+ [Visual Studio SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)でVisual Studio SDK の API リファレンスを検索できます。  
   
 ## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK のサンプル  
- VS SDK 拡張機能のオープンソースの例については、GitHub の「 [Visual Studio のサンプル](https://aka.ms/vs2015sdksamples)」を参照してください。 この GitHub リポジトリには、Visual Studio のさまざまな拡張機能を示すサンプルが含まれています。  
+ GitHub の[Visual Studio のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)で VS SDK 拡張機能のオープン ソースの例を検索できます。 この GitHub リポジトリには、Visual Studio のさまざまな拡張機能を示すサンプルが含まれています。  
   
 ## <a name="other-visual-studio-sdk-resources"></a>その他の Visual Studio SDK リソース  
  VSSDK について不明な点がある場合、または拡張機能の開発経験を共有する場合は、 [Visual Studio 機能拡張フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)または[ExtendVS Group チャット](https://gitter.im/Microsoft/extendvs)を使用できます。  
@@ -75,7 +75,7 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
   
 - [拡張 (Visual Studio を)](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [メニューコマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [方法: 機能拡張プロジェクトを Visual Studio 2015  に移行する](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)  
  [FAQ: アドインから VSPackage Extensions への変換](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   

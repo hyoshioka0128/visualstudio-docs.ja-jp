@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300316"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849817"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>[詳細設定] ダイアログ ボックス (コンカレンシー ビジュアライザー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300316"
  .exe ファイルや .dll ファイルのパスは、トレースが収集されるときにトレース ファイルに保存されます。  この設定を変更しても、以前に収集されたトレースには影響しません。  
   
 ## <a name="buffering"></a>バッファリング  
- コンカレンシー ビジュアライザーは、トレースを収集するときに Windows イベント トレーシング (ETW) を使います。  ETW は、イベントを格納するときにさまざまなバッファーを使います。  ETW バッファーの既定の設定は、すべての場合に最適であるとは限らず、状況によっては、イベントが失われるといった問題が発生する可能性があります。  [バッファリング] タブを使って、ETW バッファーの設定を構成できます。 詳しくは、「[Event Tracing](https://go.microsoft.com/fwlink/?LinkId=234579)」(イベント トレース) および「[EVENT_TRACE_PROPERTIES structure](https://go.microsoft.com/fwlink/?LinkId=234580)」(EVENT_TRACE_PROPERTIES 構造体) をご覧ください。  
+ コンカレンシー ビジュアライザーは、トレースを収集するときに Windows イベント トレーシング (ETW) を使います。  ETW は、イベントを格納するときにさまざまなバッファーを使います。  ETW バッファーの既定の設定は、すべての場合に最適であるとは限らず、状況によっては、イベントが失われるといった問題が発生する可能性があります。  [バッファリング] タブを使って、ETW バッファーの設定を構成できます。 詳しくは、「[Event Tracing](https://msdn.microsoft.com/library/bb968803(VS.85).aspx)」(イベント トレース) および「[EVENT_TRACE_PROPERTIES structure](https://msdn.microsoft.com/library/aa363784(VS.85).aspx)」(EVENT_TRACE_PROPERTIES 構造体) をご覧ください。  
   
 ## <a name="filter"></a>フィルター  
  [フィルター] タブでは、コンカレンシー ビジュアライザーが収集するイベントのセットを選ぶことができます。 イベントのサブセットを選ぶと、レポートに表示されるデータの種類が制限され、各トレースのサイズが小さくなり、トレースの処理に必要な時間が短くなります。  

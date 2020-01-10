@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297687"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850097"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - ドメイン固有言語
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ ms.locfileid: "74297687"
 ## <a name="samples-and-the-latest-information"></a>サンプルおよび最新情報
  [モデリング SDK for Visual Studio 2015 のダウンロード](https://www.microsoft.com/download/details.aspx?id=48148)
 
- モデリング SDK for Visual Studio の[サンプル](https://go.microsoft.com/fwlink/?LinkId=186128)です。
+ モデリング SDK for Visual Studio の[サンプル](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)です。
 
- 高度な手法とトラブルシューティングのガイダンスについては、「 [Visual STUDIO DSL & モデリングツールの機能拡張フォーラム](https://go.microsoft.com/fwlink/?LinkID=186074)」を参照してください。
+ 高度な技法とトラブルシューティングに関するガイダンスについては、次を参照してください。 [Visual Studio DSL & Modeling Tools 機能拡張フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)します。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)

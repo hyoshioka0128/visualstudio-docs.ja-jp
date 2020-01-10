@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295699"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850818"
 ---
 # <a name="memory-usage-without-debugging"></a>デバッグなしのメモリ使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "74295699"
  スナップショットを収集するには、新しい診断セッションを開始します。 メモリのデータをキャプチャしたいときは **[スナップショットの取得]** をクリックします。 レポートを生成するには、 **[停止]** をクリックします。  
   
 ## <a name="BKMK_Memory_Usage_overview_page"></a> メモリ使用量の概要ページ  
- データ収集を停止すると、メモリ使用量ツールはアプリを停止し、概要レポートが表示されます。  
+ データ コレクションを停止すると、メモリ使用量ツールはアプリを停止し、概要レポートが表示されます。  
   
  ![メモリ使用量の概要ページ](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
@@ -202,9 +202,9 @@ ms.locfileid: "74295699"
 |**サイズ (バイト)**|インスタンスの場合は、指定したスナップショットに含まれるオブジェクトのサイズ (インスタンスに含まれているオブジェクトのサイズは除く)。<br /><br /> 型の場合は、指定したスナップショットに含まれるその型のインスタンスの合計サイズ (インスタンスに含まれているオブジェクトのサイズは除く)。|  
 |**包括サイズ (バイト)**|指定したスナップショットに含まれているオブジェクトのサイズ (オブジェクトに含まれているオブジェクトのサイズを含む)。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [JavaScript メモリ](../profiling/javascript-memory.md)   
  [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [パフォーマンスと診断ツールの実行](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Visual Studio で新しいメモリ使用量ツールでメモリの問題を診断する](https://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Visual Studio で新しいメモリ使用量ツールでメモリの問題を診断する](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)

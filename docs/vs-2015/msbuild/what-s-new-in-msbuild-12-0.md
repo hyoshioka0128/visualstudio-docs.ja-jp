@@ -9,17 +9,17 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301292"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844455"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0 の新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSBuild は、.NET Framework の一部ではなく Visual Studio の一部としてインストールされます。 MSBuild の現在のバージョン番号は 12.0 です。 MSBuild を個別にインストールする場合は、[MSBuild ダウンロード](https://go.microsoft.com/fwlink/?LinkId=309745)からインストール パッケージをダウンロードします。  
+MSBuild は、.NET Framework の一部ではなく Visual Studio の一部としてインストールされます。 MSBuild の現在のバージョン番号は 12.0 です。 MSBuild を個別にインストールする場合は、[MSBuild ダウンロード](https://www.microsoft.com/download/details.aspx?id=40760)からインストール パッケージをダウンロードします。  
   
 ## <a name="changed-path"></a>変更されたパス  
  MSBuild は、 *%ProgramFiles%* の下に直接インストールされます (例: C:\Program Files\MSBuild\\)。  

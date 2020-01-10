@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296830"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845575"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>チュートリアル: コード スニペットを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "74296830"
 コード スニペットは、わずかな手順で作成できます。 必要な操作は、XML ファイルを作成し、適切な要素を指定して、コードを追加するだけです。 コードには、参照や置換パラメーターを追加することもできます。 Visual Studio インストールにスニペットを追加するには、コード スニペット マネージャー ( **[ツール]、[コード スニペット マネージャー]** ) の [インポート] を使用します。
 
 > [!TIP]
-> コード スニペットをより簡単に作成する方法の詳細については、CodePlex の Web サイトで、[Snippet Editor](https://go.microsoft.com/fwlink/?LinkId=251033) などのコミュニティ ツールを検索してください。
+> コード スニペットをより簡単に作成する方法の詳細については、CodePlex の Web サイトで、[Snippet Editor](https://snippeteditor.codeplex.com/) などのコミュニティ ツールを検索してください。
 
 ## <a name="snippet-template"></a>スニペット テンプレート
  基本的なスニペット テンプレートを次に示します。
@@ -75,7 +75,7 @@ ms.locfileid: "74296830"
 
 1. コード スニペット マネージャーを使用すると、独自のスニペットを Visual Studio インストールに追加できます。 コード スニペット マネージャーを開きます ( **[ツール]、[コード スニペット マネージャー]** )。
 
-2. [インポート] ボタンをクリックします。
+2. **[インポート]** ボタンをクリックします。
 
 3. 前の手順でコード スニペットを保存した場所に移動し、コード スニペットを選択して、 **[開く]** をクリックします。
 
@@ -261,5 +261,5 @@ ms.locfileid: "74296830"
 
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)

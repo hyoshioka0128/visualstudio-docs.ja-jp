@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298027"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851027"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio のこのバージョンは、旧バージョンの Visual Studio が既にインストールされたコンピューターにもインストールできます。 インストールに失敗した場合は、 [ログ収集ツール](https://go.microsoft.com/fwlink/?LinkId=262077) を使用して失敗に関する情報を収集し、自分で問題をデバッグできます。
+Visual Studio のこのバージョンは、旧バージョンの Visual Studio が既にインストールされたコンピューターにもインストールできます。 インストールに失敗した場合は、 [ログ収集ツール](https://www.microsoft.com/download/details.aspx?id=12493) を使用して失敗に関する情報を収集し、自分で問題をデバッグできます。
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョンをリリースされた順にインストールすることをお勧めします。 たとえば、Visual Studio 2015 をインストールする前に Visual Studio 2013 をインストールします。
@@ -36,7 +36,7 @@ Visual Studio のこのバージョンは、旧バージョンの Visual Studio 
 
 - 複数のバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がコンピューターにインストールされている場合、そのうちの 1 つのバージョンをアンインストールすると、すべてのバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のファイルの関連付けが削除されます。 ファイルの関連付けを再度割り当てるには、 **[オプション]** ダイアログ ボックスの **[環境]** 、 **[全般]** ページにある [[ファイルの関連付けを復元]](../ide/reference/general-environment-options-dialog-box.md) を使用します。
 
-- すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) またはソフトウェア発行者から入手した拡張機能を再インストールする必要があります。
+- すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/) またはソフトウェア発行者から入手した拡張機能を再インストールする必要があります。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework のバージョンと複数バージョンのインストール
 

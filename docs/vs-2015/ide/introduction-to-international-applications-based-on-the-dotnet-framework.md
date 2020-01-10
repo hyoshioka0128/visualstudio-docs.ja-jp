@@ -26,12 +26,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f394cca9a248b5304a165f68a60b966d8e3684b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d57cee8591196d12e51e58fb0e5e6a4a2cdf94a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291367"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848374"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>.NET Framework ベースの国際対応アプリケーションの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74291367"
 
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のローカリゼーション モデルは、アプリケーション コードとフォールバック リソース (アプリケーションが最初に開発されたときに使用された言語の文字列、イメージ、およびその他のオブジェクト) の両方を含むメイン アセンブリで構成されています。 ローカライズされた各アプリケーションには、サテライト アセンブリ (ローカライズされたリソースのみを含むアセンブリ) があります。 メイン アセンブリには常にフォールバック リソースが含まれるため、ローカライズされたサテライト アセンブリでリソースが見つからない場合、<xref:System.Resources.ResourceManager> はそのリソースを階層的に読み込もうとし、最終的にはメイン アセンブリのリソースに戻ります。 リソースのフォールバック システムの詳細については、「[ローカリゼーション用リソースの階層編成](../ide/hierarchical-organization-of-resources-for-localization.md)」を参照してください。
 
- Microsoft のローカライズされたすべての製品に関する用語集も、ローカリゼーション リソースとして使用するよう考えてください。 この CSV ファイルには、12,000 を超える英語の用語と、最大 59 種類の言語に翻訳された用語が含まれます。 用語集は、[Microsoft Terminology Translations](https://go.microsoft.com/fwlink/?LinkId=128146) Web ページからダウンロードできます。
+ Microsoft のローカライズされたすべての製品に関する用語集も、ローカリゼーション リソースとして使用するよう考えてください。 この CSV ファイルには、12,000 を超える英語の用語と、最大 59 種類の言語に翻訳された用語が含まれます。 用語集は、[Microsoft Terminology Translations](https://msdn.microsoft.com/goglobal/bb688105.aspx) Web ページからダウンロードできます。
 
  Windows フォーム アプリケーションのプロジェクト システムでは、フォールバックと必要な追加の UI カルチャの両方のリソース ファイルを生成できます。 フォールバック リソース ファイルがメイン アセンブリに組み込まれてから、カルチャ固有のリソース ファイルがサテライト アセンブリ (UI カルチャごとに 1 つ) に組み込まれます。 プロジェクトをビルドすると、リソース ファイルは Visual Studio XML 形式 (.resx) から中間バイナリ形式 (.resources) にコンパイルされ、その後、サテライト アセンブリに埋め込まれます。
 

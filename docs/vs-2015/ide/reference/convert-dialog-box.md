@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bc65e58aa5bdea786aba05236b6fa684780ccae2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 24aac8ade6bdc01958cf2c206d48bd18b751d898
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296084"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850827"
 ---
 # <a name="convert-dialog-box"></a>[変換] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**[変換]** ダイアログ ボックスでは、古いプロジェクトから新しいプロジェクトを作成するための変換ツールを選択できます。たとえば、Visual Basic 6 プロジェクトから [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] プロジェクトを作成するような場合です。 また、CodePlex の Web サイトで入手できる [Visual Studio Project Converter](https://go.microsoft.com/fwlink/?LinkID=246465)を使用して、旧バージョンの Visual Studio で作成したプロジェクトをアップグレードすることもできます。
+**[変換]** ダイアログ ボックスでは、古いプロジェクトから新しいプロジェクトを作成するための変換ツールを選択できます。たとえば、Visual Basic 6 プロジェクトから [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] プロジェクトを作成するような場合です。 また、CodePlex の Web サイトで入手できる [Visual Studio Project Converter](https://vsprojectconverter.codeplex.com/)を使用して、旧バージョンの Visual Studio で作成したプロジェクトをアップグレードすることもできます。
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 

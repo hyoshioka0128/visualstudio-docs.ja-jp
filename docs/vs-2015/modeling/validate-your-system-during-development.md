@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301338"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845392"
 ---
 # <a name="validate-your-system-during-development"></a>開発時のシステムの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Visual Studio を使用すると、ソフトウェアがユーザーの要件と
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Doug 7: Visual Studio 2010 を使用したコードの理解とシステム設計](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: レイヤー図を使用したアプリケーションの設計](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "P\ ビデオ ")[操作方法シリーズ: レイヤー図を使用してコードを検証する方法](https://go.microsoft.com/fwlink/?LinkID=214405)|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|-   [Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Doug 7: Visual Studio 2010 を使用したコードの理解とシステム設計](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: レイヤー図を使用したアプリケーションの設計](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: レイヤー図を使用してコードを検証する方法](https://msdn.microsoft.com/vstudio/gg501755)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**ブログ**|-   [Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)[モデルユーザー要件モデル](../modeling/model-user-requirements.md)の[分析とモデリングアーキテクチャ](../modeling/analyze-and-model-your-architecture.md)

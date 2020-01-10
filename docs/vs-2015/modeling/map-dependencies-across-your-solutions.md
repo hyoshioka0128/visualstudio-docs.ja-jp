@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296327"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847628"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>複数のソリューション間の依存関係のマッピング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "74296327"
 
  **ビデオ**:
 
-- [視覚化によるコードの依存関係の理解](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [視覚化によるコードの依存関係の理解](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [変更の影響の視覚化](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [変更の影響の視覚化](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [コード マップで複雑なコードを理解する](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [コード マップで複雑なコードを理解する](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a> コード マップの概要
  **コード マップを使用するには、次のいずれかが必要です**。
@@ -181,7 +181,7 @@ ms.locfileid: "74296327"
 
      ![リレーションシップを表示する項目を選択します](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")
 
-    参照:
+    次の用語も参照:
 
 - [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)
 
@@ -232,7 +232,7 @@ ms.locfileid: "74296327"
 
      コードに含まれるがマップに表示されないメンバーを表示するには、グループの左上隅にある**再フェッチ children**アイコン![再フェッチ children アイコン](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")をクリックします。
 
-6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 あるいは、1 つまたは複数の項目を選択し、ショートカット メニューを開き、マップに追加する関連項目の種類の **[表示...]** オプションを選択します。 例 :
+6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 あるいは、1 つまたは複数の項目を選択し、ショートカット メニューを開き、マップに追加する関連項目の種類の **[表示...]** オプションを選択します。 例:
 
      **アセンブリ**の場合、次のように選択します。
 
@@ -344,9 +344,9 @@ ms.locfileid: "74296327"
 ### <a name="share-the-map-with-other-visual-studio-users"></a>マップを他の Visual Studio ユーザーと共有する
  マップを保存するには、 **[ファイル]** メニューを使用します。
 
- または
+ -または-
 
- 特定のプロジェクトの一部としてマップを保存するには、マップのツールバーで、 **共有**、 **CodeMapName** \< *.dgml*>**移動** の順にクリックし、マップの保存先のプロジェクトを選択します。
+ マップを特定のプロジェクトの一部として保存するには、マップのツールバーで **[共有]** を選択し、\<*CodeMapName*>をに**移動**します。次**に**、マップを保存するプロジェクトを選択します。
 
  ![マップを別のプロジェクトに移動する](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 

@@ -12,19 +12,19 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291261"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850349"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>チュートリアル: 基本的な分離シェルアプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、分離シェルソリューションを作成する方法、ツールウィンドウに関するヘルプをカスタマイズする方法、および分離シェルをインストールするセットアッププログラムを作成する方法について説明します。  
   
-## <a name="prerequisites"></a>前提条件  
+## <a name="prerequisites"></a>[前提条件]  
  このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。 分離シェルをデプロイするには、Visual Studio Shell (分離) 再頒布可能パッケージも使用する必要があります。  
   
 ## <a name="creating-an-isolated-shell-solution"></a>分離シェルソリューションの作成  
@@ -115,7 +115,7 @@ ms.locfileid: "74291261"
   
 2. 次の行のコメントを解除します。  
   
-     [$RootKey $ \ パッケージ\\{87 569315 ミリ秒 40 a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. ソリューションをリビルドし、分離シェルのデバッグを開始します。 XML ファイルを開きます (たとえば、\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct.)。 ファイル内の XML キーワードが色分けされていないこと、および行に "<" と入力しても XML ツールヒントが表示されないことを確認します。  
   
@@ -163,7 +163,7 @@ ms.locfileid: "74291261"
 6. ソリューションをリビルドし、分離シェルのデバッグを開始します。 [ヘルプ/バージョン情報] ボックスは、ほぼ正方形である必要があります。  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>分離シェルアプリケーションを展開する前に  
- 分離シェルアプリケーションは、Visual Studio Shell (分離) 再頒布可能パッケージがインストールされている任意のコンピューターにインストールできます。 再頒布可能パッケージの詳細については、 [Visual Studio 機能拡張ダウンロード](https://go.microsoft.com/fwlink/?LinkID=119298)の web サイトを参照してください。  
+ 分離シェルアプリケーションは、Visual Studio Shell (分離) 再頒布可能パッケージがインストールされている任意のコンピューターにインストールできます。 再頒布可能パッケージの詳細については、 [Visual Studio 機能拡張ダウンロード](https://msdn.microsoft.com/vstudio/bb984878.aspx)の web サイトを参照してください。  
   
 ## <a name="deploying-the-isolated-shell-application"></a>分離シェルアプリケーションの展開  
  セットアッププロジェクトを作成して、対象のコンピューターに分離シェルアプリケーションを配置します。 次の項目を指定する必要があります。  
@@ -216,7 +216,7 @@ ms.locfileid: "74291261"
   
     7. スプラッシュ .bmp  
   
-5. **[プロジェクト出力の追加]** ボタンをクリックし、 **Myvsshellstub/プライマリ出力**を追加します。 **[OK]** をクリックすると、  
+5. **[プロジェクト出力の追加]** ボタンをクリックし、 **Myvsshellstub/プライマリ出力**を追加します。 **[OK]** をクリックします。  
   
 6. 左側のウィンドウの **[対象コンピューター]** で、 **Fabrikam MUSIC Editor [INSTALLDIR]** ノードを右クリックし、 **[Extensions]** という名前の**新しいフォルダー**を追加します。  
   
@@ -248,7 +248,7 @@ ms.locfileid: "74291261"
   
 18. **[検索する項目]** ウィンドウで、ドロップダウンリストの **[レジストリエントリ]** を選択し、 **[次へ]** をクリックします。  
   
-19. **[検索方法]** を選択してください ウィンドウで、レジストリルートとして **[HKEY_LOCAL_MACHINE]** を選択します。 64ビットシステムの場合は「 **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 」、32ビットシステムの場合は「 **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 」と入力し、レジストリ値として「 **Install** 」と入力します。 **[次へ]** をクリックします。  
+19. **[検索方法]** を選択してください ウィンドウで、レジストリルートとして **[HKEY_LOCAL_MACHINE]** を選択します。 64ビットシステムの場合は「 **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 」、32ビットシステムの場合は「 **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 」と入力し、レジストリ値として「 **Install** 」と入力します。 [次へ] をクリックします。  
   
 20. [値を入力し**てください]** ウィンドウで、「**この製品をインストールするには、Visual Studio 2015 の分離シェル再頒布可能パッケージが必要です**」と入力します。 表示テキストとして、 **[完了]** をクリックします。  
   
