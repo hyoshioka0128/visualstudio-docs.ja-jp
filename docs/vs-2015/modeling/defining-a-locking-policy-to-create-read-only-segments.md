@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295818"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849566"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74295818"
 > [!NOTE]
 > ロックポリシーは、リフレクションを使用することによって回避できます。 サードパーティの開発者には明確な境界が用意されていますが、強力なセキュリティは提供されていません。
 
- 詳細とサンプルについては、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の[視覚化とモデリング](https://go.microsoft.com/fwlink/?LinkId=186128)に関する SDK Web サイトを参照してください。
+ 詳細とサンプルについては、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の[視覚化とモデリング](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)に関する SDK Web サイトを参照してください。
 
 ## <a name="setting-and-getting-locks"></a>設定と取得 (ロックを)
  ストア、パーティション、または個々の要素に対してロックを設定できます。 たとえば、次のステートメントを実行すると、モデル要素が削除されるのを防ぐことができます。また、プロパティが変更されるのを防ぐことができます。
@@ -55,7 +55,7 @@ partition.SetLocks(Locks.Delete);
 
  ストアに設定されているロックは、パーティションおよび要素のロックの設定に関係なく、すべての要素に適用されます。
 
-### <a name="using-locks"></a>ロックの使用
+### <a name="using-locks"></a>ロックを使用する
  ロックを使用して、次の例のようなスキームを実装できます。
 
 - コメントを表すものを除き、すべての要素とリレーションシップへの変更を禁止します。 これにより、ユーザーは変更せずにモデルに注釈を付けることができます。
@@ -77,16 +77,16 @@ partition.SetLocks(Locks.Delete);
 
   パーティションまたはストアにロックを設定することはできません。また、同時に個々の要素のロックを無効にすることもできません。
 
-|値|`IsLocked(Value)` が true の場合|
+|Value|`IsLocked(Value)` が true の場合|
 |-----------|------------------------------------------|
-|なし|制限はありません。|
-|プロパティ|要素のドメインプロパティは変更できません。 これは、リレーションシップのドメインクラスの役割によって生成されるプロパティには適用されません。|
+|[なし]|制限はありません。|
+|property|要素のドメインプロパティは変更できません。 これは、リレーションシップのドメインクラスの役割によって生成されるプロパティには適用されません。|
 |追加|パーティションまたはストアに新しい要素とリンクを作成することはできません。<br /><br /> `ModelElement`には適用されません。|
 |[移動]|`element.IsLocked(Move)` が true の場合、または `targetPartition.IsLocked(Move)` が true の場合、パーティション間で要素を移動することはできません。|
-|削除|要素自体、または削除が反映される要素 (埋め込み要素や図形など) に対してこのロックが設定されている場合、要素を削除することはできません。<br /><br /> `element.CanDelete()` を使用すると、要素を削除できるかどうかを検出できます。|
-|並び|Roleplayer でのリンクの順序を変更することはできません。|
+|[削除]|要素自体、または削除が反映される要素 (埋め込み要素や図形など) に対してこのロックが設定されている場合、要素を削除することはできません。<br /><br /> `element.CanDelete()` を使用すると、要素を削除できるかどうかを検出できます。|
+|並べ替え|Roleplayer でのリンクの順序を変更することはできません。|
 |RolePlayer|この要素をソースとするリンクのセットは変更できません。 たとえば、新しい要素をこの要素の下に埋め込むことはできません。 これは、この要素がターゲットであるリンクには影響しません。<br /><br /> この要素がリンクの場合、ソースとターゲットは影響を受けません。|
-|[すべて]|他の値のビットごとの OR。|
+|すべての|他の値のビットごとの OR。|
 
 ## <a name="locking-policies"></a>ロックポリシー
  DSL の作成者は、*ロックポリシー*を定義できます。 ロックポリシーは、特定のロックが設定されないようにするか、特定のロックを設定する必要があるように、SetLocks () の操作を軽減します。 通常は、ロックポリシーを使用して、ユーザーまたは開発者が、`private`変数を宣言するのと同じ方法で、誤って DSL の使用を contravening ことを防ぐことができます。
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  これらのメソッドは、Store、Partition、または ModelElement で `SetLocks()` する呼び出しが行われたときに呼び出されます。 各メソッドには、推奨されるロックのセットが用意されています。 提案されたセットを返すことも、ロックを追加および削除することもできます。
 
- 例 :
+ 例:
 
 ```
 using Microsoft.VisualStudio.Modeling;

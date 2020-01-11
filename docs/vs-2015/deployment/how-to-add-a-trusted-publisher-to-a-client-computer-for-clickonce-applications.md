@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289713"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847694"
 ---
-# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>方法 : ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する
+# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 信頼されたアプリケーションの配置を使用すると、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションをユーザーに確認することなく高いレベルの信頼で実行できるように、クライアント コンピューターを構成できます。 以下の手順では、コマンド ライン ツールの CertMgr.exe を使用して、クライアント コンピューターの信頼された発行者ストアに発行者の証明書を追加する方法について説明します。  
@@ -41,7 +41,7 @@ ms.locfileid: "74289713"
   
 1. CA からデジタル証明書を取得します。  
   
-2. 証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](https://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。  
+2. 証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](https://technet.microsoft.com/library/cc730988(WS.10).aspx)」を参照してください。  
   
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "74289713"
   
 1. CA からデジタル証明書を取得します。  
   
-2. 証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](https://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。  
+2. 証明書を Base64 X.509 (.cer) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](https://technet.microsoft.com/library/cc730988(WS.10).aspx)」を参照してください。  
   
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。  
   
@@ -59,15 +59,15 @@ ms.locfileid: "74289713"
   
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル : ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
  [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [方法 : ClickOnce のセキュリティ設定を有効にする](../deployment/how-to-enable-clickonce-security-settings.md)   
- [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [方法 : ClickOnce アプリケーションのセキュリティ ゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [方法 : ClickOnce アプリケーションのカスタム アクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する   

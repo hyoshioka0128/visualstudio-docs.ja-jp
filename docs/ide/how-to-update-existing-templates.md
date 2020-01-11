@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656538"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591360"
 ---
-# <a name="how-to-update-existing-templates"></a>方法:既存のテンプレートを更新する
+# <a name="how-to-update-existing-templates"></a>方法: 既存のテンプレートを更新する
 
 テンプレートを作成し、複数のファイルを *.zip* ファイルに圧縮した後で、テンプレートを変更できます。 それには、テンプレートのファイルを手動で変更するか、テンプレートに基づいてプロジェクトから新しいテンプレートをエクスポートします。
 

@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299928"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851060"
 ---
 # <a name="talk-to-us"></a>ご意見
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Visual Studio の最新のドキュメントについては、「[お問い合�
  Visual Studio のプレリリース版には、 **[この製品を評価する]** メニュー項目があり、実行しているビルドの品質に関するフィードバックを送信できます。 これは製品のリリース版には表示されません。
 
 ## <a name="i-need-help"></a>ヘルプに関する情報
- オンライン ヘルプは、「 [Microsoft サポート](https://go.microsoft.com/fwlink/?LinkID=99019) 」で提供されています。
+ オンライン ヘルプは、「 [Microsoft サポート](https://support.microsoft.com/) 」で提供されています。
 
  米国とカナダ以外の国でのサポートは異なる場合があります。 地域別のサポート連絡先の一覧については、「 [Microsoft Worldwide サイト](https://www.microsoft.com/worldwide/)」をご覧ください。
 
  詳細については、「 [サポートの概要](https://visualstudio.microsoft.com/support/)」をご覧ください。
 
- マイクロソフトから直接の管理サポートを必要とする大規模な組織では、さまざまなプレミア サポートをとおして契約できます。 詳細については、「 [Microsoft Services プレミア サポート](https://go.microsoft.com/fwlink/?LinkId=258223)」をご覧ください。
+ マイクロソフトから直接の管理サポートを必要とする大規模な組織では、さまざまなプレミア サポートをとおして契約できます。 詳細については、「 [Microsoft Services プレミア サポート](https://www.microsoft.com/industry/services/support)」をご覧ください。
 
  製品が新しいコンピューターやデバイスに最初からインストールされていた場合は、ハードウェアの製造元がこのソフトウェアの技術サポートや支援を行います。 サポートについては、製造元に直接お問い合わせください。
 
  Microsoft サポート サービスは、当時最新だった価格、条項、および条件に基づきます。 料金および条件は将来予告なしに変更することがあります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio 2015 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

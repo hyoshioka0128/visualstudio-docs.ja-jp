@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300246"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852009"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 モデリング図を使用すると、コードや、ソフトウェア システムで対応する必要があるユーザー要求について、効果的に理解して明確にし、アイデアを伝え合うことができます。 たとえば、ユーザー要求を記述して伝えるために、UML (Unified Modeling Language: 統一モデリング言語) のユース ケース図、アクティビティ図、クラス図、およびシーケンス図を使用できます。 システムの機能を記述して伝えるために、UML のコンポーネント図、クラス図、アクティビティ図、およびシーケンス図を使用できます。
 
- 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
+ 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)」を参照してください。
 
  このリリースでは、次の UML 図を作成できます。
 
@@ -73,7 +73,7 @@ ms.locfileid: "74300246"
 
 ## <a name="common-tasks"></a>一般的なタスク
 
-|**トピック**|**タスク**|
+|**トピック**|**Task**|
 |---------------|--------------|
 |[UML モデリング プロジェクトおよびダイアグラムを作成する](../modeling/create-uml-modeling-projects-and-diagrams.md)|**モデルを作成**し、ダイアグラムを追加します。|
 |[UML モデルおよびダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)|モデルを編集するための**図を描画**します。|
@@ -85,7 +85,7 @@ ms.locfileid: "74300246"
 
 ## <a name="related-tasks"></a>関連タスク
 
-|**トピック**|**タスク**|
+|**トピック**|**Task**|
 |---------------|--------------|
 |[コードの視覚化](../modeling/visualize-code.md)|コード マップとレイヤー図を作成して、よく知らないコードの理解を深めます。|
 |[ユーザー要件のモデリング](../modeling/model-user-requirements.md)|モデルを使用して、ユーザーのニーズを明確にして伝えます。|
@@ -98,4 +98,4 @@ ms.locfileid: "74300246"
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

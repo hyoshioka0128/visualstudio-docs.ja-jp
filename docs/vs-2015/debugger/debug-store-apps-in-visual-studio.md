@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298337"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850504"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Visual Studio でのストア アプリのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,5 +38,5 @@ Visual Studio デバッガーにより、プログラムの実行を制御して
 |[デバッグ セッションのナビゲート (XAML および C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|「デバッガー ナビゲーション」では、簡単なアプリを使って、デバッグの開始と停止、コード内の移動、プログラムの状態の表示と変更を行う方法を説明します。|
 |[Windows ストアの中断イベント、再開イベント、およびバックグラウンド イベントのトリガー](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|デバッガーは、アプリを中断、再開、および終了する Windows のプロセス継続時間管理 (PLM) イベントを無効にします。 これらのイベントは、デバッガー ツール バーでトリガーさせることができます。<br /><br /> バックグラウンド タスクは、アプリが中断された場合でも重要な操作を実行できるようにします。 デバッガーは、これらのバックグラウンド タスクを開始してデバッグできるようにします。|
 
-## <a name="see-also"></a>関連項目
- [Visual Studio でのデバッグ (MSDN ライブラリ)](https://go.microsoft.com/fwlink/?LinkID=226896)
+## <a name="see-also"></a>参照
+ [Visual Studio でのデバッグ (MSDN ライブラリ)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

@@ -3,8 +3,8 @@ title: Visual Studio のワークロードとコンポーネント ID
 titleSuffix: ''
 description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: a5da7186bcc67fb61e80fdd691142423b879f312
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211379"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588435"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio のワークロードとコンポーネント ID
 

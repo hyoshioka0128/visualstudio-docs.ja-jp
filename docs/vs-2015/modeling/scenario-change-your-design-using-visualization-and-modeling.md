@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0954a38a2667331c537487a706d1d2d13a07f6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296020"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850910"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ: 視覚化およびモデリングを使用したデザインの変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ ms.locfileid: "74296020"
 |**マップまたは図**|**表示される内容**|
 |------------------------|---------------|
 |*コード マップ*<br /><br /> 参照トピック<br /><br /> [ソリューション間の依存関係をマップ -   に](../modeling/map-dependencies-across-your-solutions.md)は<br />[コードマップを参照および再配置](../modeling/browse-and-rearrange-code-maps.md)-   には<br />[DGML ファイルを編集してコードマップをカスタマイズ -   には](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|コード内の依存関係とその他の関係。<br /><br /> たとえば、Dinner Now はまず、アセンブリのコード マップでアセンブリとその依存関係の概要を確認するとします。 そのとき、マップの詳細を表示してそれらのアセンブリの名前空間やクラスを調べることができます。<br /><br /> さらに、コードの特定の領域やその他の種類のリレーションシップを調べるためのマップを生成することもできます。 対象となる領域やリレーションシップを見つけて選択するにはソリューション エクスプローラーを使用します。|
-|*コード ベースのクラス図*<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|コード内の既存のクラス。|
+|*コード ベースのクラス図*<br /><br /> 「 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|コード内の既存のクラス。|
 
  たとえば、開発者はコード マップを作成します。 新しいシナリオの影響を受ける領域に合わせてスコープを調整します。 次のマップでは、それらの領域が選択されて強調表示されています。
 
@@ -264,7 +264,7 @@ ms.locfileid: "74296020"
 |------------------|-------------------|
 |*アクティビティ図 (UML)*<br /><br /> 参照トピック<br /><br /> -   [UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)<br />[UML アクティビティ図の -   : ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)|顧客が以前に利用したことのあるレストランで注文を行った場合に、それを検出して顧客にレビューを求めるときに実行されるステップのフロー。|
 |*クラスダイアグラム (UML)*<br /><br /> 参照トピック<br /><br /> -   [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)<br />-   [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|論理クラスとその関係。 たとえば、レビューを表す **Review** という新しいクラスを追加して、 **Restaurant**、 **Menu**、 **Customer**などの他のエンティティとの関係を記述します。<br /><br /> レビューを顧客に関連付けるには、システムで顧客の詳細を格納する必要があります。 UML クラス図を使用すると、それらの詳細がわかりやすくなります。|
-|*コード ベースのクラス図*<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|コード内の既存のクラス。|
+|*コード ベースのクラス図*<br /><br /> 「 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|コード内の既存のクラス。|
 |*コンポーネント図 (UML)*<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|システムの高レベルのパート (Dinner Now Web サイトなど) とそのインターフェイス。 これらのインターフェイスは、コンポーネントがメソッドやサービスを提供および使用して相互作用する方法を定義します。|
 |*シーケンス図 (UML)*<br /><br /> 参照トピック<br /><br /> -   [UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)<br />[UML シーケンス図の -   : ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|インスタンス間の相互作用のシーケンス。|
 
@@ -363,7 +363,7 @@ ms.locfileid: "74296020"
 
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
 
-- [バージョン管理の使用](https://go.microsoft.com/fwlink/?LinkID=525605)
+- [バージョン管理の使用](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [アプリケーションのビルド](/azure/devops/pipelines/index)
 
@@ -665,7 +665,7 @@ ms.locfileid: "74296020"
 |レイヤー図|システムの論理アーキテクチャ。 レイヤー検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 既存のレイヤーまたは必要なレイヤーを特定するには、コード マップを生成し、関連する項目をグループ化します。 レイヤー図を作成する場合は、次のトピックを参照してください。<br /><br /> [コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />-   [レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)|
 |コンポーネント図|コンポーネントとそのインターフェイスおよび関係。<br /><br /> コンポーネントを特定するには、コード マップを生成し、項目をシステム内の機能別にグループ化します。<br /><br /> 参照トピック<br /><br /> -   [UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)<br />-   [UML コンポーネント図: ガイドライン](../modeling/uml-component-diagrams-guidelines.md)|
 |クラス図 (UML)|クラスとその属性、操作、および関係。<br /><br /> これらの要素を特定するには、それらの要素を示す UML クラス図を作成します。<br /><br /> 参照トピック<br /><br /> -   [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)<br />-   [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
-|クラス図 (コード ベース)|特定のプロジェクトに対するコード内の既存のクラス。<br /><br /> コード内の既存のクラスを視覚化して変更するには、クラス デザイナーを使用します。<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|
+|クラス図 (コード ベース)|特定のプロジェクトに対するコード内の既存のクラス。<br /><br /> コード内の既存のクラスを視覚化して変更するには、クラス デザイナーを使用します。<br /><br /> 「 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。|
 
 ### <a name="DescribeSequence"></a>相互作用の説明: シーケンス図
  シーケンス図は、システムのパート間の一連の相互作用を記述します。 パートの規模に制限はなく、 たとえば、プログラムの個々のオブジェクトから大規模なサブシステムや外部アクターまでが対象に含まれます。 相互作用の規模と種類にも制限はなく、 たとえば、個々のメッセージから長時間にわたるトランザクションまでが対象に含まれます。関数呼び出しや Web サービス メッセージも相互作用として記述できます。
@@ -882,7 +882,7 @@ ms.locfileid: "74296020"
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コードを視覚化](../modeling/visualize-code.md)する[アプリの](../modeling/create-models-for-your-app.md)モデルを作成[する開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)[開発時のシステムの検証](../modeling/validate-your-system-during-development.md) [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)

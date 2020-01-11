@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 74a8234dfc38ef5ef41cd77b2ce10eaf54018622
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300235"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850089"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API を使用して関係をナビゲートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ foreach (IRelationship relationship in
 
 ```
 
-### <a name="association"></a>アソシエーション
+### <a name="association"></a>関連付け
  関連付けとは、それぞれが分類子に属している 2 つのプロパティ間のリレーションシップのことです。
 
 ```
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>リレーションシップの列挙
- 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable < > インターフェイスに準拠しています。 これは、 [linq のクエリ式](https://go.microsoft.com/fwlink/?LinkId=168834)と、 **linq**名前空間で定義されている拡張メソッドを使用できることを意味します。
+ 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable < > インターフェイスに準拠しています。 これは、 [linq のクエリ式](https://docs.microsoft.com/dotnet/csharp/linq/index)と、 **linq**名前空間で定義されている拡張メソッドを使用できることを意味します。
 
- 例 :
+ 例:
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Uml モデルとダイアグラムの拡張](../modeling/extend-uml-models-and-diagrams.md) [uml モデルへの移動](../modeling/navigate-the-uml-model.md)

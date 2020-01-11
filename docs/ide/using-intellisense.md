@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647357"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565345"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio での IntelliSense
 
@@ -74,7 +74,7 @@ C++ コードのクイック ヒントをオフにするには、 **[ツール]*
 
 ## <a name="complete-word"></a>入力候補
 
-入力候補では、特定できる部分まで変数名、コマンド名、または関数名を入力すると、残りの部分が補完されます。 入力候補を起動するには、 **[編集]**  >  **[IntelliSense]**  >  **[入力候補]** の順に選択するか、**Ctrl** + **Space** キーを押すか、エディターのツール バーで **[入力候補]** を選択します。
+入力候補では、特定できる部分まで変数名、コマンド名、または関数名を入力すると、残りの部分が補完されます。 入力候補を起動するには、 **[編集]**  >  **[IntelliSense]**  >  **[入力候補]** の順に選択するか、**Ctrl**+**Space** キーを押すか、エディターのツール バーで **[入力候補]** を選択します。
 
 ## <a name="intellisense-options"></a>IntelliSense オプション
 

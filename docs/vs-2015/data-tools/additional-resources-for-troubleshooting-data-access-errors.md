@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299449"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846522"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>データ アクセス エラーのトラブルシューティングのための追加のリソース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 MSDN で利用できるデータ関連のフォーラムの一覧を次に示します。
 
- [データコントロールとデータバインドの Windows フォーム](https://go.microsoft.com/fwlink/?LinkId=160179)Windows フォームでのデータアクセスに関する質問や一般的な議論のためのフォーラムです。
+ [データコントロールとデータバインドの Windows フォーム](https://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads)Windows フォームでのデータアクセスに関する質問や一般的な議論のためのフォーラムです。
 
- [ADO.NET データセットフォーラム](https://go.microsoft.com/fwlink/?LinkId=160180)データセットに関する質問や一般的な議論のためのフォーラムを提供します。
+ [ADO.NET データセットフォーラム](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataset/threads)データセットに関する質問や一般的な議論のためのフォーラムを提供します。
 
- [ADO.NET Entity Framework と LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520)Entity Framework アプリケーションと LINQ to Entities 言語に関する質問や一般的な議論のためのフォーラムです。
+ [ADO.NET Entity Framework と LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/)Entity Framework アプリケーションと LINQ to Entities 言語に関する質問や一般的な議論のためのフォーラムです。
 
- [WCF Data Services フォーラム](https://go.microsoft.com/fwlink/?LinkId=160181)データサービスに関する質問や一般的な議論のためのフォーラムを提供します。
+ [WCF Data Services フォーラム](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataservices/threads)データサービスに関する質問や一般的な議論のためのフォーラムを提供します。
 
- [SQL Server データアクセスフォーラム](https://go.microsoft.com/fwlink/?LinkID=160184)Microsoft SQL Server でのデータへのアクセスに関する質問や一般的な議論のためのフォーラムを提供します。
+ [SQL Server データアクセスフォーラム](https://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads)Microsoft SQL Server でのデータへのアクセスに関する質問や一般的な議論のためのフォーラムを提供します。
 
- [Linq TO SQL フォーラム](https://go.microsoft.com/fwlink/?LinkId=160183)Linq to SQL に関する質問や一般的な議論のためのフォーラムを提供します。
+ [Linq TO SQL フォーラム](https://social.msdn.microsoft.com/Forums/en-US/linqtosql/threads)Linq to SQL に関する質問や一般的な議論のためのフォーラムを提供します。
 
- [ADO.NET データプロバイダーフォーラム](https://go.microsoft.com/fwlink/?LinkId=160182)さまざまな .NET Framework データプロバイダーに関する質問や一般的な議論のためのフォーラムです。
+ [ADO.NET データプロバイダーフォーラム](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads)さまざまな .NET Framework データプロバイダーに関する質問や一般的な議論のためのフォーラムです。
 
- SQL Server への接続のトラブルシューティング方法の詳細については、「 [SQL Server データベースエンジンへの接続に関するトラブルシューティングの方法](https://go.microsoft.com/fwlink/?LinkID=246151)」を参照してください。
+ SQL Server への接続のトラブルシューティング方法の詳細については、「 [SQL Server データベースエンジンへの接続に関するトラブルシューティングの方法](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

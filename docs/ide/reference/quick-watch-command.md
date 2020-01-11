@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Quick Watch command
 - Debug.Quickwatch command
 ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1de6841f25bcc6f6c45bde93fdd4cf2cb49481ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747807"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565631"
 ---
 # <a name="quick-watch-command"></a>QuickWatch コマンド
 選択または指定したテキストが [[クイック ウォッチ]](../../debugger/watch-and-quickwatch-windows.md) ウィンドウの [式] フィールドに表示されます。 このダイアログ ボックスを利用し、デバッガーが認識する変数または式の現在値やレジスタのコンテンツの現在値を計算できます。 さらに、非定数の変数の値やレジストリのコンテンツの値を変更できます。
@@ -34,7 +34,7 @@ Debug.QuickWatchq [text]
 `text`\
 任意。 **[クイック ウォッチ]** ダイアログ ボックスに追加するテキスト。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 `text` を省略した場合、カーソルで現在選択されているテキストや単語がウォッチ ウィンドウに追加されます。
 

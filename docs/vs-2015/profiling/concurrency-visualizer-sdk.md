@@ -11,19 +11,19 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300635"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851006"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを*マーカー*と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](https://go.microsoft.com/fwlink/?LinkId=235405)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
+コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを*マーカー*と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>[プロパティ]
  フラグ、スパン、およびメッセージにはそれぞれ、カテゴリおよび重要度という 2 つのプロパティがあります。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、これらのプロパティを使用して、表示されるマーカーのセットをフィルター処理することができます。 また、これらのプロパティはマーカーの視覚表示に影響します。 たとえば、フラグのサイズを使用して重要度を表します。 また、色を使用してカテゴリを示します。
 
 ## <a name="basic-usage"></a>基本的な使用方法
@@ -123,7 +123,7 @@ C#、Visual Basic、および他のマネージド コードでは、[Markers](/
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|[タイトル]|説明|
 |-----------|-----------------|
 |[C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)|C++ のコンカレンシー ビジュアライザー API について説明します。|
 |[C ライブラリ リファレンス](../profiling/c-library-reference.md)|C のコンカレンシー ビジュアライザー API について説明します。|

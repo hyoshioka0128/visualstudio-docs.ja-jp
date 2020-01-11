@@ -3,19 +3,19 @@ title: プロジェクトと NuGet パッケージのコンパイラの警告を
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747945"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591425"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>方法:コンパイラ警告の非表示
+# <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラ警告の非表示
 
 1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 

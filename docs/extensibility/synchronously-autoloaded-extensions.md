@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 71ba7e8ee1b847137386c7714745f6668be4cabc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406640"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848736"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>同期的に自動的に読み込む拡張機能
 
@@ -54,4 +54,4 @@ Entry =**許可**
 拡張機能の作成者は、「 [AsyncPackage への移行](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)」の手順に従って、パッケージを非同期自動読み込みに移行する方法を確認できます。
 
 ## <a name="see-also"></a>関連項目
-Visual Studio 2019 での同期自動読み込みの設定の詳細については、「同期自動読み込みの[動作](https://aka.ms/AA52xzw)」ページを参照してください。
+Visual Studio 2019 での同期自動読み込みの設定の詳細については、「同期自動読み込みの[動作](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/)」ページを参照してください。

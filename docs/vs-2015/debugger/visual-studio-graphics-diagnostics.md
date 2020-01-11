@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296914"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847826"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio*グラフィックス診断*は、Direct3D アプリのレンダ�
  [はじめに](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  Visual Studio のグラフィックス診断をインストールする方法と、Direct3D アプリに対してグラフィックス診断の使用を開始する方法を説明します。  
   
- [グラフィックス情報をキャプチャする](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  グラフィックス診断を使用してアプリのレンダリングの問題を調べるには、まず、アプリが DirectX を使用する方法に関する情報を記録する必要があります。 アプリが通常どおりに実行されているときの記録セッション中に関心があるフレームを "*キャプチャ*" (つまり、選択) します。 キャプチャには、フレームがレンダリングされる方法に関する詳細情報が含まれています。 キャプチャした情報をグラフィックス ログのドキュメントとして保存し、後で調べたり、チームの他のメンバーと共有したりできます。  
   
  [GPU 使用率](../debugger/gpu-usage.md)  
@@ -81,7 +81,7 @@ Visual Studio*グラフィックス診断*は、Direct3D アプリのレンダ�
   
 ## <a name="related-sections"></a>関連セクション  
   
-|タイトル|説明|  
+|[タイトル]|説明|  
 |-----------|-----------------|  
 |[Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデバッグ機能を紹介します。|  
-|[DirectX のグラフィックスとゲーム](https://go.microsoft.com/fwlink/?LinkId=256498)|DirectX グラフィックスの手法を説明する文書を提供します。|
+|[DirectX のグラフィックスとゲーム](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|DirectX グラフィックスの手法を説明する文書を提供します。|

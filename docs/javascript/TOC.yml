@@ -20,6 +20,8 @@
       href: tutorial-nodejs.md
     - name: React を使用した Node.js アプリの作成
       href: tutorial-nodejs-with-react-and-jsx.md
+    - name: TypeScript を使用した ASP.NET Core アプリの作成
+      href: tutorial-aspnet-with-typescript.md
     - name: Node.js アプリを Linux App Service に発行する
       href: publish-nodejs-app-azure.md
 - name: 使い方ガイド

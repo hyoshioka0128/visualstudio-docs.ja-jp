@@ -11,17 +11,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295845"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849734"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML モデルの検証制約を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定した条件をモデルが満たしているかどうかをテストする検証制約を定義できます。 たとえば、ユーザーが継承関係のループを作成していないことを確認するための制約を定義できます。 制約は、ユーザーがモデルを開くか、または保存しようとしたときに実行されるほか、手動で実行することもできます。 制約が失敗した場合は、ユーザー定義のエラー メッセージがエラー ウィンドウに追加されます。 これらの制約を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
+指定した条件をモデルが満たしているかどうかをテストする検証制約を定義できます。 たとえば、ユーザーが継承関係のループを作成していないことを確認するための制約を定義できます。 制約は、ユーザーがモデルを開くか、または保存しようとしたときに実行されるほか、手動で実行することもできます。 制約が失敗した場合は、ユーザー定義のエラー メッセージがエラー ウィンドウに追加されます。 これらの制約を[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
  また、モデルをデータベースなどの外部リソースに照らし合わせて検証する制約も定義できます。 レイヤー図に対してプログラムコードを検証する場合は、「[レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. クラス ライブラリ プロジェクトを作成し、それを既存の VSIX ソリューションに追加するか、または新規のソリューションを作成します。
 
-    1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
+    1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
 
     2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -394,9 +394,9 @@ context.LogError(... , usecase);
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、次の場所からファイルを削除することによって拡張機能を削除できます。 *% Localappdata%* は通常*DriveName*: \ Users\\*UserName*\appdata\local です):
 
-   *% Localappdata%* **\Microsoft\VisualStudio\\[バージョン] \ 拡張機能**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="Example"></a> 例
+## <a name="Example"></a> 「例」
  この例は、要素間の依存関係におけるループを検索します。
 
  保存したときと検証メニュー コマンドを選択したときに検証が実行されます。
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [UML API を使用して](../modeling/programming-with-the-uml-api.md)[モデリング拡張機能のプログラミングを定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md)
