@@ -11,15 +11,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: bcc290bfd9d646355479c2a9fe83a48f43dfa432
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298043"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849996"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>サービス構成とプロファイルを管理する方法
-## <a name="overview"></a>概要
+## <a name="overview"></a>の概要
 クラウド サービスを発行すると、Visual Studio は、サービス構成とプロファイルという 2 種類の構成ファイルに構成情報を保存します。 サービス構成 (.cscfg ファイル) には、Azure クラウド サービスのデプロイ環境の設定が保存されます。 Azure は、クラウド サービスを管理するときに、これらの構成ファイルを使用します。 その一方で、プロファイル (.azurePubxml ファイル) には、クラウド サービスの発行設定が保存されます。 この設定は、発行ウィザードで選択された内容の記録であり、Visual Studio によってローカルで使用されます。 ここでは、両方の種類の構成ファイルを使用する方法について説明します。
 
 ## <a name="service-configurations"></a>サービス構成
@@ -29,7 +29,7 @@ ms.locfileid: "74298043"
 
 ![サービス構成の管理](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
-役割のプロパティ ページから **[構成の変更]** ダイアログ ボックスを開くこともできます。 Azure プロジェクトのロールのプロパティを開くには、ロールのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[設定]** タブで、 **[サービス構成]** ボックスの一覧を展開し、 **[管理]** を選択して **[構成の管理]** ダイアログ ボックスを開きます。
+ロールのプロパティ ページから **[構成の管理]** ダイアログ ボックスを開くこともできます。 Azure プロジェクトのロールのプロパティを開くには、ロールのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[設定]** タブで、 **[サービス構成]** ボックスの一覧を展開し、 **[管理]** を選択して **[構成の管理]** ダイアログ ボックスを開きます。
 
 ### <a name="to-add-a-service-configuration"></a>サービス構成を追加するには
 1. ソリューション エクスプローラーで、Azure プロジェクトのショートカット メニューを開き、 **[構成の管理]** を選択します。
@@ -58,12 +58,12 @@ ms.locfileid: "74298043"
     ソリューション エクスプローラーの Azure プロジェクトの中のサービス構成ファイルの名前が変更されます。
 
 ### <a name="to-change-a-service-configuration"></a>サービス構成を変更するには
-* サービス構成を変更する場合は、Azure プロジェクトで変更するロールのショートカット メニューを開き、 **[プロパティ]** を選択します。 詳細については[、「方法: Visual Studio を使用して Azure クラウドサービスのロールを構成する](vs-azure-tools-configure-roles-for-cloud-service.md)」を参照してください。
+* サービス構成を変更する場合は、Azure プロジェクトで変更するロールのショートカット メニューを開き、 **[プロパティ]** を選択します。 詳細については、「 [方法: Visual Studio を使用した Azure クラウド サービスのロールの構成](vs-azure-tools-configure-roles-for-cloud-service.md) 」を参照してください。
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>プロファイルを使用してさまざまな設定を組み合わせる
 プロファイルを使用すると、目的に応じて異なる設定の組み合わせを自動的に**発行ウィザード**に入力できます。 たとえば、デバッグ用にプロファイルを 1 つ作成し、リリース ビルド用に別のプロファイルを作成します。 その場合、**デバッグ** プロファイルでは **IntelliTrace** が有効になり、**デバッグ**構成が選択されます。**リリース** プロフィールでは **IntelliTrace** が無効になり、**リリース**構成が選択されます。 また、別のプロファイルを使用して、別のストレージ アカウントでサービスをデプロイすることもできます。
 
-初めてウィザードを実行すると、既定のプロファイルが作成されます。 プロファイルが格納されたファイルは、.azurePubXml という拡張子付きで Azure プロジェクトの **Profiles** フォルダーの下に追加されます。 後でウィザードを実行するときに手動で別の選択を指定すると、ファイルは自動的に更新されます。 次の手順を実行する前に、クラウド サービスを少なくとも 1 回発行する必要があります。
+初めてウィザードを実行すると、既定のプロファイルが作成されます。 プロファイルが格納されたファイルは、.azurePubXml 拡張子が付き、Azure プロジェクトの **Profiles** フォルダーの下に追加されます。 後でウィザードを実行するときに手動で別の選択を指定すると、ファイルは自動的に更新されます。 次の手順を実行する前に、クラウド サービスを少なくとも 1 回発行する必要があります。
 
 ### <a name="to-add-a-profile"></a>プロファイルを追加するには
 1. Azure プロジェクトのショートカット メニューを開き、 **[発行]** を選択します。
@@ -80,7 +80,7 @@ ms.locfileid: "74298043"
    
     新しいプロファイルが [ターゲット プロファイル] ボックスの一覧に表示されます。
 6. **[ターゲット プロファイル]** ボックスの一覧で、先ほど作成したプロファイルを選択します。 選択したプロファイルで選択されている内容が、発行ウィザードの設定項目に入力されます。
-7. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、このプロファイルの設定をカスタマイズします。 詳細については、 [Azure アプリケーションの公開ウィザード](https://go.microsoft.com/fwlink/p/?LinkID=623085) に関するページを参照してください。
+7. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、このプロファイルの設定をカスタマイズします。 詳細については、 [Azure アプリケーションの公開ウィザード](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) に関するページを参照してください。
 8. 設定のカスタマイズが完了したら、 **[次へ]** を選択して [設定] ページに戻ります。 プロファイルが保存されるのは、これらの設定を使用してサービスを発行したときか、プロファイルの一覧の横にある **[保存]** を選択したときです。
 
 ### <a name="to-rename-or-delete-a-profile"></a>プロファイルを削除するには
@@ -93,9 +93,9 @@ ms.locfileid: "74298043"
 ### <a name="to-change-a-profile"></a>プロファイルを変更するには
 1. Azure プロジェクトのショートカット メニューを開き、 **[発行]** を選択します。
 2. **[ターゲット プロファイル]** ボックスの一覧で、変更するプロファイルを選択します。
-3. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、目的の設定を変更します。 詳細については、 [Azure アプリケーションの公開ウィザード](https://go.microsoft.com/fwlink/p/?LinkID=623085) に関するページを参照してください。
+3. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、目的の設定を変更します。 詳細については、 [Azure アプリケーションの公開ウィザード](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) に関するページを参照してください。
 4. 設定の変更が完了したら、 **[次へ]** を選択して **[設定]** ページに戻ります。
 5. (省略可能) **[発行]** を選択し、新しい設定を使用してクラウド サービスを発行します。 この時点でクラウド サービスを発行せずに発行ウィザードを閉じると、変更をプロファイルに保存するかどうかをたずねるメッセージが表示されます。
 
 ## <a name="next-steps"></a>次のステップ:
-Visual Studio で Azure プロジェクトの他の部分を構成する方法については、 [Azure プロジェクトの構成](https://go.microsoft.com/fwlink/p/?LinkID=623075)
+Visual Studio で Azure プロジェクトの他の部分を構成する方法については、 [Azure プロジェクトの構成](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)

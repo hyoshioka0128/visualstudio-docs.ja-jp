@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415755"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776118"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、Azure Virtual Machines と Azure Virtual Machine Scale Sets 上のライブ ASP.NET アプリをデバッグする
 
@@ -33,7 +33,7 @@ ms.locfileid: "68415755"
 > * スナップポイントを設定してスナップショットを表示する
 > * ログポイントを設定する
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>[前提条件]
 
 * Azure Virtual Machines (VM) と Azure Virtual Machine Scale Sets のスナップショットデバッガーは、 **azure 開発ワークロード**を使用した Visual Studio 2019 Enterprise 以上でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
@@ -43,6 +43,9 @@ ms.locfileid: "68415755"
   * .NET Framework 4.6.1 以降で実行されている ASP.NET アプリケーション。
   * Windows の .NET Core 2.0 以降で実行されている ASP.NET Core アプリケーション。
 
+  > [!NOTE]
+  >  32ビットの Windows で実行されている Visual Studio Enterprise は、スナップショットを表示できません。
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>プロジェクトを開いてスナップショット デバッガーを起動する
 
 1. デバッグのスナップショットを取得するプロジェクトを開きます。
@@ -50,7 +53,7 @@ ms.locfileid: "68415755"
     > [!IMPORTANT]
     > スナップショットデバッグを行うには、Azure Virtual Machine\Virtual Machine Scale Set サービスに発行されている*のと同じバージョンのソースコード*を開く必要があります。
 
-1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Web アプリがデプロイされている Azure 仮想 Machine\Virtual マシンスケールセットと Azure ストレージアカウントを選択し、 **[アタッチ]** をクリックします。 スナップショットデバッガー [Azure Kubernetes Service](debug-live-azure-kubernetes.md)と[Azure App Service](debug-live-azure-applications.md)もサポートしています。
+1. **[デバッグ > アタッチスナップショットデバッガー...]** を選択します。Web アプリがデプロイされている Azure 仮想 Machine\Virtual マシンスケールセットと Azure ストレージアカウントを選択し、 **[アタッチ]** をクリックします。 スナップショットデバッガー [Azure Kubernetes Service](debug-live-azure-kubernetes.md)と[Azure App Service](debug-live-azure-applications.md)もサポートしています。
 
     ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -145,7 +148,7 @@ ms.locfileid: "68415755"
 
     **[アプリケーション ログに送信します]** を選択した場合、ログポイントにヒットすると、[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs) など、`System.Diagnostics.Trace` (.NET Core では `ILogger`) からメッセージを表示できる任意の場所にメッセージが表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
 このチュートリアルでは、Azure Virtual Machines および Azure Virtual Machine Scale Sets 用のスナップショット デバッガーの使用方法を学習しました。 必要に応じて、この機能の詳細な記事を参照してください。
 

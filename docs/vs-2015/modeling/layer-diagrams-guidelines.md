@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299458"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850631"
 ---
 # <a name="layer-diagrams-guidelines"></a>レイヤー図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio で*レイヤー図*を作成して、アプリのアーキテクチャを大まかに記述します。 コードをレイヤー図に照らして検証することで、作成したコードがこの図と一貫性があるかどうかを確認します。 レイヤーの検証をビルド プロセスに含めることもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](https://go.microsoft.com/fwlink/?LinkID=252073)参照してください。
+Visual Studio で*レイヤー図*を作成して、アプリのアーキテクチャを大まかに記述します。 コードをレイヤー図に照らして検証することで、作成したコードがこの図と一貫性があるかどうかを確認します。 レイヤーの検証をビルド プロセスに含めることもできます。 「 [Channel 9 ビデオ: レイヤー図を使用したアーキテクチャの設計と検証」を](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -66,7 +66,7 @@ Visual Studio で*レイヤー図*を作成して、アプリのアーキテク�
 ## <a name="CreateLayers"></a>機能領域またはコンポーネントを表すレイヤーを定義する
  レイヤーは、プロジェクト、コードファイル、名前空間、クラス、メソッドなどの*成果物*の論理グループを表します。 Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクトの成果物からレイヤーを生成したり、Word ファイルや PowerPoint プレゼンテーションなどのドキュメントをリンクして仕様や計画をレイヤーに添付したりすることができます。 各レイヤーは、図では四角形として表示されます。また各レイヤーでは、レイヤーにリンクされている成果物の数が表示されます。 レイヤーには、より具体的なタスクを記述する入れ子になったレイヤーを含めることができます。
 
- 一般的に、レイヤーには、その機能に合わせて "プレゼンテーション" や "サービス" などの名前を付けます。 密に相互依存している成果物は、同じレイヤーに配置します。 別々に更新できる成果物や別のアプリケーションで使用できる成果物は、異なるレイヤーに配置してください。 レイヤーパターンの詳細については、 [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794)のパターン & プラクティスに関するサイトを参照してください。
+ 一般的に、レイヤーには、その機能に合わせて "プレゼンテーション" や "サービス" などの名前を付けます。 密に相互依存している成果物は、同じレイヤーに配置します。 別々に更新できる成果物や別のアプリケーションで使用できる成果物は、異なるレイヤーに配置してください。 レイヤーパターンの詳細については、 [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)のパターン & プラクティスに関するサイトを参照してください。
 
 > [!TIP]
 > 一部のタイプの成果物は、レイヤーにリンクすることはできますが、レイヤー図と照らし合わせた検証はサポートしていません。 成果物が検証をサポートしているかどうかを確認するには、**レイヤーエクスプローラー**を開き、成果物のリンクの "**検証をサポート**" プロパティを確認します。 「[レイヤー間の既存の依存関係の検出](#Generate)」を参照してください。
@@ -115,7 +115,7 @@ Visual Studio で*レイヤー図*を作成して、アプリのアーキテク�
 ## <a name="NewAreas"></a>アプリケーションの新しい領域を設計する
  新規プロジェクトの開発を新たに開始する場合や、新規プロジェクトで新しい領域の設計を開始する場合、コードの開発前にレイヤーと依存関係を描画することで、主要なコンポーネントを把握できます。
 
-- 可能であれば、**特定できるアーキテクチャパターン**をレイヤー図に表示します。 たとえば、デスクトップ アプリケーションを示すレイヤー図には、プレゼンテーション、ドメイン ロジック、データ ストアなどのレイヤーを追加できます。 アプリケーションの単一の機能をカバーするレイヤー図には、モデル、ビュー、コントローラーなどのレイヤーを追加できます。 このようなパターンの詳細については、「[パターン & プラクティス: アプリケーションアーキテクチャ](https://go.microsoft.com/fwlink/?LinkId=145794)」を参照してください。
+- 可能であれば、**特定できるアーキテクチャパターン**をレイヤー図に表示します。 たとえば、デスクトップ アプリケーションを示すレイヤー図には、プレゼンテーション、ドメイン ロジック、データ ストアなどのレイヤーを追加できます。 アプリケーションの単一の機能をカバーするレイヤー図には、モデル、ビュー、コントローラーなどのレイヤーを追加できます。 このようなパターンの詳細については、「[パターン & プラクティス: アプリケーションアーキテクチャ](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)」を参照してください。
 
      類似のパターンを生成することがよくある場合は、カスタム ツールを生成します。 「[カスタムモデリングツールボックスアイテムの定義」を](../modeling/define-a-custom-modeling-toolbox-item.md)参照してください。
 
@@ -162,5 +162,5 @@ Visual Studio で*レイヤー図*を作成して、アプリのアーキテク�
 ## <a name="BuildValidation"></a>ビルドプロセスにレイヤー検証を含める
  今後、レイヤー図に従ってコードを変更できるように、ソリューションの標準のビルド処理にレイヤー検証を組み込むことができます。 他のチーム メンバーがソリューションをビルドした際には、コード内の依存関係とレイヤー図上の依存関係の相違がビルド エラーとして報告されます。 ビルドプロセスにレイヤー検証を含める方法の詳細については、「[レイヤー図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)[コードからレイヤー図を作成する](../modeling/create-layer-diagrams-from-your-code.md)

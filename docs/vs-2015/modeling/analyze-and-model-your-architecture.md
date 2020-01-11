@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c421af5aa6c91535b05f0beca88099ea7a2eaa
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a505cd9fd40a47c58135506cf7e022409e9b77e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297952"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852060"
 ---
 # <a name="analyze-and-model-your-architecture"></a>アーキテクチャを分析およびモデルする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,14 +48,14 @@ Visual Studio アーキテクチャおよびモデリング ツールを使用�
 
  各機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="to"></a>目的
+## <a name="to"></a>終了
 
 |||
 |-|-|
-|**コードの視覚化**:<br /><br /> -コードマップを作成して、コードの編成と関係を確認します。 アセンブリ、名前空間、クラス、メソッドなどの間の依存関係を視覚化します。<br />-コードからクラスダイアグラムを作成して、特定のプロジェクトのクラス構造とメンバーを参照してください。<br />-コードを検証するためのレイヤー図を作成することにより、コードとそのデザインとの間の競合を検出します。<br /><br /> **注**: Visual Studio のこのリリースでは、 *依存関係グラフ* の代わりに、 *コード マップ*という用語を使用します。 一般的に、 *グラフ* という用語が単独で使用される場合は、有向グラフまたは DGML 図 (またはドキュメント) を表します。 コード マップは、DGML 図の特化された型です。|-   [コードの視覚化](../modeling/visualize-code.md)<br />[クラスとその他の型 (クラスデザイナー) の操作](../ide/working-with-classes-and-other-types-class-designer.md)-   <br />-   [ビデオ: 視覚化によるコードの依存関係の理解 (Channel 9)](https://go.microsoft.com/fwlink/?LinkID=252065)<br />-   [ビデオ: 変更の影響の視覚化 (Channel 9)](https://go.microsoft.com/fwlink/?LinkID=252068)|
-|**ユーザーの要求を記述して伝達する**:<br /><br /> -ユーザーストーリー、ビジネスルール、およびその他の要件を明確にし、ユースケース図、アクティビティ図、クラス図などの UML 図を描画して一貫性を保つことができます。|[アプリのモデルを作成 -   には](../modeling/create-models-for-your-app.md)<br />-   [モデルのユーザー要件](../modeling/model-user-requirements.md)<br />-   [ビデオ: モデリングによるアーキテクチャの改善 (Channel 9)](https://go.microsoft.com/fwlink/?LinkID=252078)|
-|**アーキテクチャを定義する**:<br /><br /> -UML コンポーネント、クラス、およびシーケンス図を描画して、ソフトウェアシステムの大規模な構造とデザインパターンをモデル化します。<br />-レイヤー図を作成することによって、コードのコンポーネント間の依存関係に対する制約を定義し、適用します。|[アプリのモデルを作成 -   には](../modeling/create-models-for-your-app.md)<br />[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を -   モデル化する<br />-   [ビデオ: モデリングによるアーキテクチャの改善 (Channel 9)](https://go.microsoft.com/fwlink/?LinkID=252078)<br />-   [ビデオ: レイヤー図を使用したアーキテクチャの設計と検証 (Channel 9)](https://go.microsoft.com/fwlink/?LinkID=252073)|
-|**要求と、必要とされる設計を照らし合わせてシステムを検証する:**<br /><br /> -要求モデルに基づいて、受け入れテストまたはシステムテストを定義します。 これにより、テストとユーザーの要求との間に強固な関係が生成され、要求が変更された場合にシステムをより簡単に更新できます。<br />-目的のアーキテクチャを記述するレイヤー図でコードの依存関係を検証し、設計と競合する可能性のある変更を防止します。|[開発中にシステムを検証](../modeling/validate-your-system-during-development.md)-   には<br />-   [ビデオ: レイヤー図を使用したアーキテクチャの設計と検証 (Channel 9)](https://go.microsoft.com/fwlink/?LinkID=252073)|
+|**コードの視覚化**:<br /><br /> -コードマップを作成して、コードの編成と関係を確認します。 アセンブリ、名前空間、クラス、メソッドなどの間の依存関係を視覚化します。<br />-コードからクラスダイアグラムを作成して、特定のプロジェクトのクラス構造とメンバーを参照してください。<br />-コードを検証するためのレイヤー図を作成することにより、コードとそのデザインとの間の競合を検出します。<br /><br /> **注**: Visual Studio のこのリリースでは、 *依存関係グラフ* の代わりに、 *コード マップ*という用語を使用します。 一般的に、 *グラフ* という用語が単独で使用される場合は、有向グラフまたは DGML 図 (またはドキュメント) を表します。 コード マップは、DGML 図の特化された型です。|-   [コードの視覚化](../modeling/visualize-code.md)<br />[クラスとその他の型 (クラスデザイナー) の操作](../ide/working-with-classes-and-other-types-class-designer.md)-   <br />-   [ビデオ: 視覚化によるコードの依存関係の理解 (Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)<br />-   [ビデオ: 変更の影響の視覚化 (Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)|
+|**ユーザーの要求を記述して伝達する**:<br /><br /> -ユーザーストーリー、ビジネスルール、およびその他の要件を明確にし、ユースケース図、アクティビティ図、クラス図などの UML 図を描画して一貫性を保つことができます。|[アプリのモデルを作成 -   には](../modeling/create-models-for-your-app.md)<br />-   [モデルのユーザー要件](../modeling/model-user-requirements.md)<br />-   [ビデオ: モデリングによるアーキテクチャの改善 (Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)|
+|**アーキテクチャを定義する**:<br /><br /> -UML コンポーネント、クラス、およびシーケンス図を描画して、ソフトウェアシステムの大規模な構造とデザインパターンをモデル化します。<br />-レイヤー図を作成することによって、コードのコンポーネント間の依存関係に対する制約を定義し、適用します。|[アプリのモデルを作成 -   には](../modeling/create-models-for-your-app.md)<br />[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を -   モデル化する<br />-   [ビデオ: モデリングによるアーキテクチャの改善 (Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)<br />-   [ビデオ: レイヤー図を使用したアーキテクチャの設計と検証 (Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)|
+|**要求と、必要とされる設計を照らし合わせてシステムを検証する:**<br /><br /> -要求モデルに基づいて、受け入れテストまたはシステムテストを定義します。 これにより、テストとユーザーの要求との間に強固な関係が生成され、要求が変更された場合にシステムをより簡単に更新できます。<br />-目的のアーキテクチャを記述するレイヤー図でコードの依存関係を検証し、設計と競合する可能性のある変更を防止します。|[開発中にシステムを検証](../modeling/validate-your-system-during-development.md)-   には<br />-   [ビデオ: レイヤー図を使用したアーキテクチャの設計と検証 (Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)|
 |**Team Foundation バージョン コントロールを使用してモデル、図、およびコード マップを共有する**:<br /><br /> -コードマップ、モデリングプロジェクト、UML 図、およびレイヤー図を Team Foundation バージョン管理下に配置して、共有できるようにします。|Team Foundation のバージョン コントロール下でこれらの項目を使用するユーザーが複数いる場合は、バージョン管理の問題を回避するために、次のガイドラインを使用します。<br /><br /> [バージョン管理の下でモデルとダイアグラムを管理](../modeling/manage-models-and-diagrams-under-version-control.md)-   には|
 |**UML 言語やドメイン固有の言語から、アプリケーションの各部分を生成または構成する**:<br /><br /> -要件の変更に対するデザインの応答性を高め、製品ラインを通じて簡単に変化させることができます。|[モデルからアプリを生成して構成 -   に](../modeling/generate-and-configure-your-app-from-models.md)は|
 |**モデルと図をカスタマイズする**:<br /><br /> -UML 要素の追加プロパティを定義することによってモデルを使用する方法、モデルがビジネスルールに準拠していることを確認するための検証制約、および追加のメニューコマンドとツールボックス項目を定義することで、モデルを調整します。<br />-ドメイン固有の言語を独自に作成します。|[UML モデルおよび図を拡張](../modeling/extend-uml-models-and-diagrams.md)-   には<br />-   [モデリング SDK For Visual Studio-ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -74,9 +74,9 @@ Visual Studio アーキテクチャおよびモデリング ツールを使用�
 
 |||
 |-|-|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio 2015 でのモデリングの新機能](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps とアプリケーション ライフサイクル管理](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

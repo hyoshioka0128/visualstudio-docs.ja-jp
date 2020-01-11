@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297616"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851420"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 **[プロパティ]** ウィンドウ、ダイアログボックス、または変数デザイナーなどのデザイナーで、 **[型の参照]** を選択します。 データ型の一覧からは、 **[.Net 型の参照と選択]** ダイアログボックスが表示されます ("型ブラウザー" として省略形で参照されています)。 このダイアログ ボックスでは、アセンブリとプロジェクトのツリー表示から型を選択できます。
@@ -31,7 +31,7 @@ ms.locfileid: "74297616"
 - <xref:System.Activities.Statements.TryCatch> アクティビティに catch を追加する。
 
 > [!NOTE]
-> 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 詳細については、「[ジャグ配列](https://go.microsoft.com/fwlink/?LinkId=195226)と[多次元配列](https://go.microsoft.com/fwlink/?LinkId=195227)」を参照してください。
+> 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 詳細については、「[ジャグ配列](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx)と[多次元配列](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx)」を参照してください。
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>型ブラウザーでの値型または参照型の選択
 
@@ -61,7 +61,7 @@ ms.locfileid: "74297616"
 ## <a name="filtering-search-results-in-the-type-browser"></a>型ブラウザーでの検索結果のフィルター処理
  **[型名]** ボックスの型の一覧は、一致を検索するためにさらに文字を入力すると短くなります。 フィルター処理された一覧には、入力した文字列で完全修飾名が始まる型、または、入力した文字列で始まる短い名前を持つ型のみが表示されます。
 
- 例 :
+ 例:
 
 1. 入力**操作**は <xref:System.OperationCanceledException> と一致しますが、<xref:System.InvalidOperationException>は一致しません。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
@@ -70,5 +70,5 @@ ms.locfileid: "74297616"
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>型ブラウザー ダイアログを使用したサービス コントラクトの選択
  サービス コントラクト型を選択すると、型ブラウザーは <xref:System.ServiceModel.ServiceContractAttribute> 属性を持つ型だけを表示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [アクティビティ デザイナーの使用](../workflow-designer/using-the-activity-designers.md)

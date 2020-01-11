@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299910"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851317"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>チュートリアル 1: ピクチャ ビューアーの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "74299910"
 
   ![このチュートリアルで作成する画像](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")このチュートリアルで作成する画像
 
-  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[操作方法: Visual Basic でのピクチャビューアーの作成](https://go.microsoft.com/fwlink/?LinkId=205207)」または「[操作方法: 画像ビューアー C#の作成方法](https://go.microsoft.com/fwlink/?LinkId=205198)」を参照してください。
+  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[操作方法: Visual Basic でのピクチャビューアーの作成](https://msdn.microsoft.com/vstudio/gg315352)」または「[操作方法: 画像ビューアー C#の作成方法](https://msdn.microsoft.com/vcsharp/gg278960.aspx)」を参照してください。
 
 > [!NOTE]
 > これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。 このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
@@ -50,7 +50,7 @@ ms.locfileid: "74299910"
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|[タイトル]|説明|
 |-----------|-----------------|
 |[手順 1: Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)|最初に Windows フォーム アプリケーション プロジェクトを作成します。|
 |[手順 2: プログラムの実行](../ide/step-2-run-your-program.md)|前の手順で作成した Windows フォーム アプリケーション プログラムを実行します。|

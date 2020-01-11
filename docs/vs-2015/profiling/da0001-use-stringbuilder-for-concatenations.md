@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: faa0cf18bfd9810d84e01028b3f787b3b2c99578
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295958"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844743"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder を使用して連結してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Visual Studio の最新のドキュメントについては、「 [DA0001: Strin
 |||  
 |-|-|  
 |ルール ID|DA0001|  
-|カテゴリ|.NET Framework の使用|  
+|[カテゴリ]|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション|  
-|Message|文字列の連結に StringBuilder を使用することを検討してください。|  
+|[メッセージ]|文字列の連結に StringBuilder を使用することを検討してください。|  
 |［メッセージの種類］|［警告］|  
   
 ## <a name="cause"></a>原因  
@@ -45,4 +45,4 @@ Visual Studio の最新のドキュメントについては、「 [DA0001: Strin
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、サンプリング プロファイル データの[関数の詳細ビュー](../profiling/function-details-view.md)に移動します。 文字列連結を最も頻繁に使用するプログラムをセクションを特定します。 頻繁な文字列連結など、複雑な文字列操作には StringBuilder クラスを使用します。  
   
- 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](https://go.microsoft.com/fwlink/?LinkId=177816)」の「[文字列処理](https://go.microsoft.com/fwlink/?LinkId=177817)」を参照してください。
+ 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](https://msdn.microsoft.com/library/ms998547.aspx)」の「[文字列処理](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26)」を参照してください。

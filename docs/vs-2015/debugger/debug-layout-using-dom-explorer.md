@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298384"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850072"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM Explorer を使用したレイアウトのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows および Windows Phone] (../Image/windows_and_phone_content "windows_and_phone_content")  
   
- DOM Explorer の **[レイアウト]** タブには、 [アプリ、Windows Phone ストア アプリ、または Visual Studio Tools for Apache Cordova を使用して作成されたアプリで選択される要素について、](https://go.microsoft.com/fwlink/?LinkID=238778) CSS ボックス モデル [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] が表示されます。 このボックス モデルのビジュアル表現を使用して、要素の外観に影響するレイアウト関連の値を特定して変更することができます。  
+ DOM Explorer の **[レイアウト]** タブには、 [アプリ、Windows Phone ストア アプリ、または Visual Studio Tools for Apache Cordova を使用して作成されたアプリで選択される要素について、](https://www.w3.org/TR/CSS2/box.html) CSS ボックス モデル [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] が表示されます。 このボックス モデルのビジュアル表現を使用して、要素の外観に影響するレイアウト関連の値を特定して変更することができます。  
   
 > [!TIP]
 > **[レイアウト]** タブで行った変更は永続的ではありません。 ソース コードを永続的に変更してアプリを更新するには、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタン (Windows ストア アプリと Windows Phone ストア アプリのみ) を使用します。 これにより、デバッガーを再起動せずに済みます。  
@@ -126,7 +126,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content "windows_an
   
 15. Phone エミュレーターまたはシミュレーターに切り替えます。 更新された左余白の値がセクション 4 のイメージに適用されています。 これらの値は、margin-left 規則の **[計算済み]** タブでも更新されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [クイックスタート: HTML と CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [DOM Explorer  を使用した CSS スタイルのデバッグ](../debugger/debug-css-styles-using-dom-explorer.md)  
  [DOM イベント リスナーの表示](../debugger/view-dom-event-listeners.md)

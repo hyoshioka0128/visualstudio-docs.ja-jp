@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299572"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850213"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual Studio には、分散アプリケーションを作成するための Mi
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] は、セキュリティで保護され、信頼性が高く、トランザクション可能で、相互運用可能な分散アプリケーションを作成するための統合フレームワークです。 これにより、ASMX Web サービス、.NET リモート処理、エンタープライズサービス (DCOM)、MSMQ などの古いプロセス間通信テクノロジが置き換えられます。 WCF は、これらのすべてのテクノロジの機能を統一されたプログラミングモデルで統合します。 これにより、分散アプリケーションの開発経験が簡単になります。
 
 #### <a name="what-are-wcf-data-services"></a>WCF Data Services とは
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] は、Open Data (OData) プロトコル標準の実装です。  WCF Data Services を使用すると、表形式のデータを一連の REST Api として公開できるため、GET、POST、PUT、DELETE などの標準的な HTTP 動詞を使用してデータを返すことができます。 サーバー側では、新しい OData サービスを作成するために[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)によって WCF Data Services が置き換えられます。 WCF Data Services クライアントライブラリは、Visual Studio (**Project &#124;サービス参照の追加**) から .net アプリケーションで OData サービスを使用する場合にも引き続き適しています。 詳細については、「[WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952)」を参照してください。
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] は、Open Data (OData) プロトコル標準の実装です。  WCF Data Services を使用すると、表形式のデータを一連の REST Api として公開できるため、GET、POST、PUT、DELETE などの標準的な HTTP 動詞を使用してデータを返すことができます。 サーバー側では、新しい OData サービスを作成するために[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)によって WCF Data Services が置き換えられます。 WCF Data Services クライアントライブラリは、Visual Studio (**Project &#124;サービス参照の追加**) から .net アプリケーションで OData サービスを使用する場合にも引き続き適しています。 詳細については、「[WCF Data Services 4.5](https://msdn.microsoft.com/library/cc668792.aspx)」を参照してください。
 
 ### <a name="wcf-programming-model"></a>WCF プログラミングモデル
  Wcf プログラミングモデルは、WCF サービスと WCF クライアントの2つのエンティティ間の通信に基づいています。 プログラミングモデルは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]の <xref:System.ServiceModel> 名前空間にカプセル化されています。
@@ -101,7 +101,7 @@ Visual Studio には、分散アプリケーションを作成するための Mi
 
  WCF サービスホストの詳細については、「 [Wcf サービスホスト (wcfsvchost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)」を参照してください。
 
-#### <a name="wcf-test-client"></a>WCF のテスト用クライアント
+#### <a name="wcf-test-client"></a>WCF テスト クライアント
  WCF テストクライアントツールを使用すると、テストパラメーターを入力し、その入力を WCF サービスに送信し、サービスから返される応答を表示できます。 WCF サービスホストと組み合わせて使用すると、便利なサービステストエクスペリエンスが提供されます。 ツールは \Common7\IDE フォルダーにあります。このフォルダーは、Visual Studio 2015 の C: ドライブにインストールされています。 **C:\Program files (x86) \Microsoft Visual studio 14.0 \ Common7\IDE\\** です。
 
  F5 キーを押して WCF サービスプロジェクトをデバッグすると、WCF テストクライアントが開き、構成ファイルで定義されているサービスエンドポイントの一覧が表示されます。 パラメーターをテストしてサービスを開始し、このプロセスを繰り返してサービスを継続的にテストして検証することができます。
@@ -232,7 +232,7 @@ Visual Studio には、分散アプリケーションを作成するための Mi
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|[タイトル]|説明|
 |-----------|-----------------|
 |[チュートリアル : Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で WCF サービスを作成および使用する手順について説明します。|
 |[チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を作成して使用する方法を順を追って説明します。|
@@ -245,10 +245,10 @@ Visual Studio には、分散アプリケーションを作成するための Mi
 |[チュートリアル : n 層データ アプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|型指定されたデータセットを作成し、TableAdapter とデータセット コードを複数のプロジェクトに分離する手順について説明します。|
 |[[サービス参照の構成] ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)|**[サービス参照の構成]** ダイアログボックスのユーザーインターフェイス要素について説明します。|
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>参照先
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

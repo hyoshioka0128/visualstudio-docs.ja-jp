@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295748"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851561"
 ---
 # <a name="step-3-set-your-form-properties"></a>手順 3: フォームのプロパティの設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 次に、 **[プロパティ]** ウィンドウを使用してフォームの外観を変更します。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](https://go.microsoft.com/fwlink/?LinkId=205209)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](https://go.microsoft.com/fwlink/?LinkId=205199)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](https://msdn.microsoft.com/vbasic/gg315352.aspx)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-set-your-form-properties"></a>フォームのプロパティを設定するには
 

@@ -2,8 +2,8 @@
 title: 名前の変更のリファクタリング
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655618"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565462"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>コード シンボルの名前の変更のリファクタリング
 
@@ -68,7 +68,7 @@ ms.locfileid: "72655618"
 
 4. 変更を確認した後は、 **[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 - Visual Studio 2019 バージョン 16.3 以降では、ある型の名前がそれが含まれているファイルの名前に一致するとき、その型の名前を変更すると、ファイルの名前も同時に変更できるチェックボックスが表示されます。 クラス、インターフェイス、または列挙型の名前を変更するとき、このオプションが表示されます。 このオプションは、複数の定義を持つ部分型ではサポートされていません。
 

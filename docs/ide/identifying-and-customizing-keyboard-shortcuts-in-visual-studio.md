@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom shortcut keys [Visual Studio]
 - customizing keyboard shortcuts [Visual Studio]
 - exporting shortcut keys [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585c50818148235cebcdda3f18a9ed91f1a2aa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656481"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591334"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio でのキーボード ショートカットの識別とカスタマイズ
 
@@ -43,7 +43,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 ## <a name="identify-a-keyboard-shortcut"></a>ショートカット キーの確認
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[環境]** を展開し、 **[キーボード]** を選択します。
 
@@ -63,7 +63,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 ## <a name="customize-a-keyboard-shortcut"></a>ショートカット キーのカスタマイズ
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[環境]** を展開し、 **[キーボード]** を選択します。
 

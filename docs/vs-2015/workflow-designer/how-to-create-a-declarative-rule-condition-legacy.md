@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297494"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849331"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>方法: 宣言的ルール条件を作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してルール条件を宣言する方法について説明します。
@@ -27,17 +27,17 @@ ms.locfileid: "74297494"
 
  宣言的ルール条件は、次のような Windows Workflow Foundation 事前定義アクティビティで使用されます。
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [(Sequentialworkflowactivity)](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>ルール条件エディタを使って宣言的ルール条件を作成するには
 
@@ -63,5 +63,5 @@ ms.locfileid: "74297494"
 
      **[条件の選択**] ダイアログボックスの使用方法の詳細については、「 [[条件の選択] ダイアログボックス (レガシ)](../workflow-designer/select-condition-dialog-box-legacy.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
- [レガシワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md) [ConditionedActivityGroup を](https://go.microsoft.com/fwlink?LinkID=65066)使用した[IfElseBranchActivity アクティビティ](https://go.microsoft.com/fwlink?LinkID=65075)[の使用 [](https://go.microsoft.com/fwlink?LinkID=65080) [While](https://go.microsoft.com/fwlink?LinkID=65091)アクティビティ[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [[条件の選択] ダイアログボックス (レガシ](../workflow-designer/select-condition-dialog-box-legacy.md))[ワークフロー内の条件](https://go.microsoft.com/fwlink?LinkID=65009)の使用
+## <a name="see-also"></a>参照
+ [レガシワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md) [ConditionedActivityGroup を](https://msdn2.microsoft.com/library/bb675237.aspx)使用した[IfElseBranchActivity アクティビティ](https://msdn2.microsoft.com/library/bb628465.aspx)[の使用 [](https://msdn2.microsoft.com/library/bb628544.aspx) [While](https://msdn2.microsoft.com/library/bb628552.aspx)アクティビティ[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [[条件の選択] ダイアログボックス (レガシ](../workflow-designer/select-condition-dialog-box-legacy.md))[ワークフロー内の条件](https://msdn2.microsoft.com/library/bb628447.aspx)の使用

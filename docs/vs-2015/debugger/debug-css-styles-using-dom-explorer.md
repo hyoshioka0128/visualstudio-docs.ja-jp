@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299500"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852421"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM Explorer を使用した CSS スタイルのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content "windows_an
     > [!TIP]
     > アプリがシミュレーターに表示されたら、Visual Studio ウィンドウの真横にシミュレーターを配置します。こうすると CSS のスタイルに加えた変更と選択した結果をすぐに確認できます。  
   
-6. Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。 **[要素の選択]** ボタンを次に示します。 ![DOM Explorer の [要素の選択] ボタン](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
+6. Visual Studio に切り替え、DOM Explorer で **[要素の選択]** をクリックします (または Ctrl + B キーを押します)。 これで選択モードが変更され、項目をクリックで選択できるようになります。同時に、アプリが前面に表示されます。 モードは、シングルクリックで元に戻ります。 **[要素の選択]** ボタンを次に示します。 ![DOM Explorer の [要素の選択] ボタン](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > HTML 要素は DOM Explorer で直接選択することもできます。 要素の選択の詳細については、「[クイックスタート: HTML と CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)」を参照してください。  
@@ -156,8 +156,8 @@ Windows および Windows Phone] (../Image/windows_and_phone_content "windows_an
   
 16. ソース CSS ファイルに変更を加えるには、 **[スタイル]** タブの **[.css]** リンクをクリックします。これにより、[.css] が開きます。ここでは、アプリコードの `color` スタイルの値を変更できます。 デバッガーを停止して再起動せずにアプリを更新するには、 **[デバッグ]** ツールバーの [ ![Windows アプリケーションの更新] ボタン](../debugger/media/js-refresh.png "JS_Refresh")( **[windows アプリケーションの更新]** ) をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [クイックスタート: HTML と CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [DOM Explorer  を使用したレイアウトのデバッグ](../debugger/debug-layout-using-dom-explorer.md)  
  [DOM イベントリスナーの表示](../debugger/view-dom-event-listeners.md)   
- [製品のサポートとユーザー補助](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [製品のサポートとユーザー補助](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)
