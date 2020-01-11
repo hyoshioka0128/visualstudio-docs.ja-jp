@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575917"
 ---
 # <a name="expected-while"></a>'while' が必要です。
-`do...while` ループに、`while` 条件がありません。**Do** ステートメントでは、対応する `while` テスト ステートメントをコード ブロックの最後に指定する必要があります。  
+`do...while` ループに、`while` 条件がありません。 **Do** ステートメントでは、対応する `while` テスト ステートメントをコード ブロックの最後に指定する必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

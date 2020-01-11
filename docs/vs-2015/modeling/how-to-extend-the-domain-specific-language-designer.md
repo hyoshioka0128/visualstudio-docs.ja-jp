@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300895"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850691"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL 定義を編集するために使用するデザイナーの拡張機能を作成できます。 拡張の種類としては、メニューコマンドの追加、ドラッグアンドクリックによるジェスチャのハンドラーの追加、特定の種類の値や関係が変更されたときにトリガーされるルールなどがあります。 拡張機能は、Visual Studio Integration Extension (VSIX) としてパッケージ化し、他のユーザーに配布することができます。
 
- サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK (VMSDK)」 Web サイト](https://go.microsoft.com/fwlink/?LinkID=186128)を参照してください。
+ サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK (VMSDK)」 Web サイト](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)を参照してください。
 
 ## <a name="setting-up-the-solution"></a>ソリューションの設定
  拡張機能のコードを含むプロジェクトと、プロジェクトをエクスポートする VSIX プロジェクトを設定します。 ソリューションには、同じ VSIX に組み込まれている他のプロジェクトを含めることができます。
@@ -71,7 +71,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
  拡張機能をメイン [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、および他のコンピューターに展開するには、次の手順を実行します。
 
-1. Vsix のインストールファイルを検索するには、vsix プロジェクトの bin\\*\\\*.vsix を使用します。
+1. VSIX プロジェクトの箱で、VSIX のインストール ファイルを見つける\\*\*\\\*.vsix
 
 2. このファイルを対象のコンピュータにコピーし、Windows エクスプローラ (またはファイルエクスプローラー) でダブルクリックします。
 
@@ -79,7 +79,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
    拡張機能をアンインストールするには、次の手順を実行します。
 
-3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で、 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ツール** メニューのをクリックして**拡張機能マネージャー**です。
 
 4. 拡張機能を選択して削除します。
 

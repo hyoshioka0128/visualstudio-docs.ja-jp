@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299296"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851516"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>カスタム モデリング ツールボックス アイテムを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ ms.locfileid: "74299296"
 > 図ファイルを単独で使用して試した後に .tbxinfo ファイルを使用し始めた場合、ツールボックスには、ツールボックス アイテムの古いバージョンと新しいバージョンの両方が含まれる場合があります。 これは、.tbxinfo ファイルで図ファイルの名前が間違っている場合にも発生します。 この問題が発生した場合は、ツールボックスのショートカットメニューで **[ツールボックスのリセット]** を選択します。 カスタム ツールボックス アイテムが表示されなくなります。 Visual Studio を再起動すると、正しいカスタム アイテムが表示されます。
 
 ## <a name="Extension"></a>Visual Studio 拡張機能にツールボックスアイテムを配布する方法
- ツールボックスアイテムを Visual Studio 拡張機能 (VSIX) にパッケージ化することで、他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザーに配布できます。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、「 [Visual Studio 拡張機能の配置](https://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
+ ツールボックスアイテムを Visual Studio 拡張機能 (VSIX) にパッケージ化することで、他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザーに配布できます。 コマンド、プロファイルなどの拡張機能を同じ VSIX ファイルにパッケージ化できます。 詳細については、「 [Visual Studio 拡張機能の配置](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)」を参照してください。
 
  Visual Studio 拡張機能をビルドするには、通常は VSIX プロジェクトのテンプレートを使用します。 これを行うには、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] をインストールしておく必要があります。
 
@@ -155,7 +155,7 @@ ms.locfileid: "74299296"
 
      新しい Visual Studio 拡張機能プロジェクトを定義します。
 
-    1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
+    1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
 
     2. **[新しいプロジェクト]** ダイアログボックスの **[インストールされているテンプレート]** で、 **[ビジュアルC# ]** 、 **[機能拡張]** 、 **[VSIX プロジェクト]** の順に選択します。
 
@@ -170,7 +170,7 @@ ms.locfileid: "74299296"
 
      **出力ディレクトリにコピー** = **常にコピー**する
 
-     **ビルドアクション** = **コンテンツ**
+     **[ビルド アクション]**  =  **[コンテンツ]**
 
      **VSIX に含める** = **true**
 
@@ -220,7 +220,7 @@ ms.locfileid: "74299296"
 
 3. 言語のカルチャ コードを名前にしたフォルダーに、追加のアセンブリをそれぞれ配置します。 たとえば、フランス語版のアセンブリを**fr**という名前のフォルダー内に配置します。
 
-4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
+4. `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
 
 5. Visual Studio 拡張機能をビルドして配布します。
 
@@ -233,5 +233,5 @@ ms.locfileid: "74299296"
 
  さらに、 **[ツールボックスのリセット]** コマンドを実行すると、カスタムツールは表示されなくなります。 しかし、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] を再起動すると再び表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)[するプロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[モデリング図のメニューコマンド](../modeling/define-a-menu-command-on-a-modeling-diagram.md)の定義[uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する

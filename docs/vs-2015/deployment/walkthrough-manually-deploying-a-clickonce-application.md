@@ -21,24 +21,24 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294681"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844935"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル : ClickOnce アプリケーションを手動で配置する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置できない場合、または、信頼されたアプリケーションの配置などの高度な配置機能を使用する必要がある場合は、Mage.exe コマンドラインツールを使用して、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] マニフェストを作成する必要があります。 このチュートリアルでは、コマンドラインバージョン (Mage.exe) またはマニフェスト生成および編集ツールのグラフィカルバージョン (Mageui.exe) を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開を作成する方法について説明します。  
   
-## <a name="prerequisites"></a>前提条件  
+## <a name="prerequisites"></a>[前提条件]  
  このチュートリアルでは、デプロイを構築する前に選択する必要があるいくつかの前提条件とオプションについて説明します。  
   
 - Mage.exe と Mageui.exe をインストールします。  
   
-     Mage.exe と Mageui.exe は、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]の一部です。 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] がインストールされているか、Visual Studio に含まれているバージョンの [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] である必要があります。 詳細については、MSDN の「 [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) 」を参照してください。  
+     Mage.exe と Mageui.exe は、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]の一部です。 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] がインストールされているか、Visual Studio に含まれているバージョンの [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] である必要があります。 詳細については、MSDN の「 [Windows SDK](https://msdn.microsoft.com/windowsserver/bb980924.aspx) 」を参照してください。  
   
 - デプロイするアプリケーションを指定します。  
   
@@ -61,7 +61,7 @@ Visual Studio を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
   
 - アプリケーションに UAC 情報を含むマニフェストがないことを確認します。  
   
-     アプリケーションに、`<dependentAssembly>` 要素などのユーザーアカウント制御 (UAC) 情報を含むマニフェストが含まれているかどうかを確認する必要があります。 アプリケーションマニフェストを確認するには、Windows Sysinternals [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035)ユーティリティを使用します。  
+     アプリケーションに、`<dependentAssembly>` 要素などのユーザーアカウント制御 (UAC) 情報を含むマニフェストが含まれているかどうかを確認する必要があります。 アプリケーションマニフェストを確認するには、Windows Sysinternals [Sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx)ユーティリティを使用します。  
   
      アプリケーションに UAC の詳細を含むマニフェストが含まれている場合は、UAC 情報を使用せずにアプリケーションを再構築する必要があります。 Visual Studio C#のプロジェクトの場合は、プロジェクトのプロパティを開き、アプリケーション タブを選択します。**マニフェスト** ドロップダウンリストで、**マニフェストなしでアプリケーションを作成**する を選択します。 Visual Studio の Visual Basic プロジェクトの場合は、プロジェクトのプロパティを開いて アプリケーション タブを選択し、 **UAC 設定の表示** をクリックします。 開いているマニフェストファイルで、1つの `<asmv1:assembly>` 要素内のすべての要素を削除します。  
   
@@ -117,7 +117,7 @@ Visual Studio を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-     、または  
+     または  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
@@ -125,7 +125,7 @@ Visual Studio を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
   
 10. Deployment ディレクトリ内のすべてのファイルを、展開先またはメディアにコピーします。 Web サイトまたは FTP サイトのフォルダー、ファイル共有、または CD-ROM を指定できます。  
   
-11. アプリケーションをインストールするために必要な URL、UNC、または物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストへの完全パスをユーザーに付与する必要があります。 たとえば、apptodeploy ディレクトリの http://webserver01/ に AppToDeploy がデプロイされている場合、完全な URL パスは http://webserver01/AppToDeploy/AppToDeploy.applicationになります。  
+11. アプリケーションをインストールするために必要な URL、UNC、または物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストへの完全パスをユーザーに付与する必要があります。 AppToDeploy を配置する場合の例の http://webserver01/ AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.application します。  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Mageui.exe グラフィックツールを使用してアプリケーションを配置するには  
   
@@ -162,11 +162,11 @@ Visual Studio を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
   
 13. ファイルシステムにファイルとして保存されている証明書がある場合は、[**証明書ファイルで署名**する] オプションを使用して、省略記号 ( **..** .) ボタンを使用してファイルシステムから証明書を選択します。 次に、証明書のパスワードを入力します。  
   
-     または  
+     -または-  
   
      お使いのコンピューターからアクセスできる証明書ストアに証明書が保持されている場合は、[**保存された証明書で署名**する] オプションを選択し、提供された一覧から証明書を選択します。  
   
-14. **[OK]** をクリックして、アプリケーションマニフェストに署名します。 [名前を付けて保存] ダイアログ ボックスが開きます。  
+14. **[OK]** をクリックして、アプリケーションマニフェストに署名します。 [名前を付けて保存] ダイアログ ボックスが表示されます。  
   
 15. 名前を付けて保存 ダイアログボックスで、バージョンディレクトリを指定し、**保存** をクリックします。  
   
@@ -190,24 +190,24 @@ Visual Studio を使用して [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
   
 25. ファイルシステムにファイルとして保存されている証明書がある場合は、[**証明書ファイルで署名**する] オプションを使用して、省略記号 ( **..** .) ボタンを使用してファイルシステムから証明書を選択します。 次に、証明書のパスワードを入力します。  
   
-     または  
+     -または-  
   
      お使いのコンピューターからアクセスできる証明書ストアに証明書が保持されている場合は、[**保存された証明書で署名**する] オプションを選択し、提供された一覧から証明書を選択します。  
   
-26. **[OK]** をクリックして、配置マニフェストに署名します。 [名前を付けて保存] ダイアログ ボックスが開きます。  
+26. **[OK]** をクリックして、配置マニフェストに署名します。 [名前を付けて保存] ダイアログ ボックスが表示されます。  
   
 27. **[名前を付けて保存]** ダイアログボックスで、1つ上のディレクトリをデプロイのルートに移動し、 **[保存]** をクリックします。  
   
 28. Deployment ディレクトリ内のすべてのファイルを、展開先またはメディアにコピーします。 Web サイトまたは FTP サイトのフォルダー、ファイル共有、または CD-ROM を指定できます。  
   
-29. アプリケーションをインストールするために必要な URL、UNC、または物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストの完全パスをユーザーに付与する必要があります。 たとえば、apptodeploy ディレクトリの http://webserver01/ に AppToDeploy がデプロイされている場合、完全な URL パスは http://webserver01/AppToDeploy/AppToDeploy.applicationになります。  
+29. アプリケーションをインストールするために必要な URL、UNC、または物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストの完全パスをユーザーに付与する必要があります。 AppToDeploy を配置する場合の例の http://webserver01/ AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.application します。  
   
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
  新しいバージョンのアプリケーションを展開する必要がある場合は、新しいバージョン (たとえば、1.0.0.1) の後にという名前の新しいディレクトリを作成し、新しいディレクトリに新しいアプリケーションファイルをコピーします。 次に、前の手順に従って、新しいアプリケーションマニフェストを作成して署名し、配置マニフェストを更新して署名する必要があります。 Mage.exe `-New` と `–Update` 呼び出しの両方で同じ上位バージョンを指定するように注意してください。これは、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] のバージョンが上位の整数で最も重要なものであるためです。 Mageui.exe を使用した場合、配置マニフェストを更新するには、 **[アプリケーション参照]** タブをクリックし、 **[マニフェストの選択]** ボタンをクリックして、更新されたアプリケーションマニフェストを選択します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)

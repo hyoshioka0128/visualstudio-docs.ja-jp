@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297975"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851249"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "74297975"
 
 1. **[テスト]** メニューの **[コード カバレッジの分析]** を選択します。
 
-2. 実行された行を確認するには、[![コードカバレッジの色分け表示] アイコン](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[**コードカバレッジの色分けを表示**する] を選択します。
+2. 実行された行を表示するには、![[コード カバレッジの色分けを表示] アイコン](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon") **[コード カバレッジの色分けを表示]** を選択します。
 
      色を変更したり太字を使用したりする場合は、 **[ツール]** 、 **[オプション]** 、 **[環境]** 、 **[フォントおよび色]** 、 **[設定の表示: テキスト エディター]** の順に選択します。 **[表示項目]** でカバレッジ項目を調整します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "74297975"
 >   アンマネージ (ネイティブ) コードを操作している場合は、デバッグ ビルドを使用します。
 >   - 各アセンブリのシンボル (.pdb) ファイルが生成されていることを確認します。
 >
->   期待した結果が得られない場合は、「[トラブルシューティング コード カバレッジ](../test/troubleshooting-code-coverage.md)」を参照してください。 。 コードを更新した後は、コード カバレッジを忘れずに再度実行します。 コードの変更後やテストの実行後に、カバレッジ結果とコードの色分けは自動的には更新されません。
+>   期待した結果が得られない場合は、「[トラブルシューティング コード カバレッジ](../test/troubleshooting-code-coverage.md)」を参照してください。 を確認しています。 コードを更新した後は、コード カバレッジを忘れずに再度実行します。 コードの変更後やテストの実行後に、カバレッジ結果とコードの色分けは自動的には更新されません。
 
 ## <a name="reporting-in-blocks-or-lines"></a>ブロック単位または行単位で報告する
  コード カバレッジは、*ブロック*単位でカウントされます。 ブロックは、エントリ ポイントと終了ポイントを 1 つだけ持つ、コードの部分です。  プログラムの制御フローがテストの実行中にブロックを通過すると、そのブロックはカバー済みとしてカウントされます。 ブロックが使用された回数は、結果には影響しません。
@@ -81,7 +81,7 @@ ms.locfileid: "74297975"
 
  たとえば、入力が "2" のテストを実行したときに、特定の関数の 50% がカバーされるとします。 入力を "-2" にして再度テストを実行すると、カバレッジの色分けビューで、関数の残りの 50% がカバーされていることがわかるとします。 ここで、2 つのテスト実行の結果をマージすると、レポートやカバレッジの色分けビューで、関数の 100% がカバーされたことが表示されます。
 
- ![コードカバレッジウィンドウの [マージ] ボタンのアイコン](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")を使用して、**コードカバレッジの結果をマージ**します。 最新の実行またはインポートされた結果を任意の組み合わせで選択できます。 エクスポートされた結果を結合する場合は、まず、それらをインポートする必要があります。
+ そのためには、![[コード カバレッジ] ウィンドウの [マージ] ボタンのアイコン](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon") **[コード カバレッジの結果のマージ]** を使用します。 最新の実行またはインポートされた結果を任意の組み合わせで選択できます。 エクスポートされた結果を結合する場合は、まず、それらをインポートする必要があります。
 
  マージ操作の結果を保存するには、 **[コード カバレッジの結果のエクスポート]** を使用します。
 
@@ -96,7 +96,7 @@ ms.locfileid: "74297975"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>コード カバレッジの結果から要素を除外する
  コードがテキスト テンプレートから生成された場合のように、コード内の特定の要素をカバレッジのスコアから除外する必要があることがあります。 その場合は、コード要素であるクラス、構造体、メソッド、プロパティ、プロパティ set または get アクセス操作子、およびイベントに、属性 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` を追加します。 クラスを除外しても、派生クラスは除外されないことに注意してください。
 
- 例 :
+ 例:
 
 ```csharp
 
@@ -223,7 +223,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *sourcefilepath* `");`
 
 - *ExclusionName* は任意の一意の名前です。
 
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      Windows の **[スタート]** メニューで **[すべてのプログラム]** 、 **[Microsoft Visual Studio]** 、 **[Visual Studio Tools]** 、 **[開発者コマンド プロンプト]** の順に選択します。
 
-2. Run:
+2. 実行:
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コードカバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)コード[カバレッジ](../test/troubleshooting-code-coverage.md)[の単体テストコードのテスト](../test/unit-test-your-code.md)

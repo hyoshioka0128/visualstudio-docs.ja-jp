@@ -1,5 +1,5 @@
 ---
-title: "' = ' が必要です。 (JavaScript) |Microsoft Docs"
+title: "'=' が必要です。 (JavaScript) |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573388"
 ---
 # <a name="expected--javascript"></a>'=' が必要です。(JavaScript)
-条件付きコンパイルステートメントで使用する変数を作成しようとしましたが、変数と代入する値の間に等号がありませんでした。  
+条件付きコンパイルステートメントで使用される変数で、変数と代入される値の間に等号(=) がありません。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
@@ -33,5 +33,5 @@ ms.locfileid: "72573388"
     ```  
   
 ## <a name="see-also"></a>参照  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

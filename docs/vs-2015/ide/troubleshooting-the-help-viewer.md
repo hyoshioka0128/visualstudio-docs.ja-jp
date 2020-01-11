@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299899"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851079"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>ヘルプ ビューアーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ ms.locfileid: "74299899"
 
 5. Windows Search の役割サービスを選択します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の資料
  次のリソースを使用して、ヘルプ ビューアーで詳細情報を取得し、フィードバックを提供することができます。
 
-- フィードバックを提供するには、Microsoft の Web サイト、[Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) をご覧になるか、[hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com) まで電子メールを送信してください。
+- フィードバックを提供するには、Microsoft の Web サイト、[Microsoft Connect](https://connect.microsoft.com/) をご覧になるか、[hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com) まで電子メールを送信してください。
 
-- 詳細については、[Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) (デベロッパー ドキュメントおよびヘルプ システム) フォーラムおよび [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) (ヘルプ ガイ) ブログを参照してください。
+- 詳細については、[Developer Documentation and Help System](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) (デベロッパー ドキュメントおよびヘルプ システム) フォーラムおよび [The Help Guy](https://blogs.msdn.com/b/thehelpguy/) (ヘルプ ガイ) ブログを参照してください。
 
-## <a name="see-also"></a>関連項目
- [ヘルプ ビューアー 2.1 の管理者ガイド](https://go.microsoft.com/fwlink/?LinkId=243985)
+## <a name="see-also"></a>参照
+ [ヘルプ ビューアー 2.1 の管理者ガイド](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

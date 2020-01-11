@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298129"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846555"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -32,14 +32,14 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>構成
+## <a name="configuration"></a>の構成
 デプロイの詳細が記述されている JSON 構成ファイルへのパス。
 
-| パラメーター | 既定値 |
+| パラメータ | 既定値 |
 | --- | --- |
-| エイリアス |none |
-| 必須 |true |
-| [位置] |名前付き |
+| Aliases |none |
+| 必須? |true |
+| 位置 |named |
 | 既定値 |none |
 | パイプライン入力を許可する |false |
 | ワイルドカード文字を許可する |false |
@@ -47,23 +47,23 @@ Publish-WebApplicationWebSite
 ## <a name="subscriptionname"></a>SubscriptionName
 Web サイトを作成する Azure サブスクリプションの名前。
 
-| パラメーター | 既定値 |
+| パラメータ | 既定値 |
 | --- | --- |
-| エイリアス |none |
-| 必須 |false |
-| [位置] |名前付き |
+| Aliases |none |
+| 必須? |false |
+| 位置 |named |
 | 既定値 |none |
 | パイプライン入力を許可する |false |
 | ワイルドカード文字を許可する |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](https://go.microsoft.com/fwlink/p/?LinkID=623089)」を参照してください。
+Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019)」を参照してください。
 
-| パラメーター | 既定値 |
+| パラメータ | 既定値 |
 | --- | --- |
-| エイリアス |none |
-| 必須 |false |
-| [位置] |名前付き |
+| Aliases |none |
+| 必須? |false |
+| 位置 |named |
 | 既定値 |none |
 | パイプライン入力を許可する |false |
 | ワイルドカード文字を許可する |false |
@@ -71,11 +71,11 @@ Web サイトに発行する Web デプロイ パッケージへのパス。 Vis
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Azure の SQL データベースのユーザー名およびパスワード。
 
-| パラメーター | 既定値 |
+| パラメータ | 既定値 |
 | --- | --- |
-| エイリアス |none |
-| 必須 |false |
-| [位置] |名前付き |
+| Aliases |none |
+| 必須? |false |
+| 位置 |named |
 | 既定値 |none |
 | パイプライン入力を許可する |false |
 | ワイルドカード文字を許可する |false |
@@ -83,16 +83,16 @@ Azure の SQL データベースのユーザー名およびパスワード。
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 true の場合、スクリプトからのメッセージは出力ストリームに出力されます。
 
-| パラメーター | 既定値 |
+| パラメータ | 既定値 |
 | --- | --- |
-| エイリアス |none |
-| 必須 |false |
-| [位置] |名前付き |
+| Aliases |none |
+| 必須? |false |
+| 位置 |named |
 | 既定値 |false |
 | パイプライン入力を許可する |false |
 | ワイルドカード文字を許可する |false |
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>Remarks
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 この中には、Web サイトの名前やユーザー名など、プロジェクトの作成時に指定した情報が含まれます。 また、プロビジョニングを行うデータベースがある場合はそれも含まれます。 次のコードは JSON 構成ファイルの例を示しています。

@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297140"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850120"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML シーケンス図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
   - 生存線を右クリックし、 **[クラスの作成]** を選択します。
 
-     または
+     -または-
 
   - 生存線を選択し、 **F4**キーを押します。次に、 **[プロパティ]** ウィンドウで、 **type**プロパティを既存の型に設定するか、新しい型の名前を指定します。 メッセージラベルを右クリックし、[操作の**作成**] を選択します。
 
@@ -442,5 +442,5 @@ Visual Studio では、*シーケンス図*を描画して相互作用を示す�
 
 5. 新しいメッセージをフラグメントに追加するには、メッセージ ツールを使用するか、コピーして貼り付けます。
 
-## <a name="see-also"></a>関連項目
- [Uml シーケンス図: リファレンス:](../modeling/uml-sequence-diagrams-reference.md) [uml モデルおよび図の編集](../modeling/edit-uml-models-and-diagrams.md) [uml ユースケース図:](../modeling/uml-use-case-diagrams-reference.md)リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス[uml コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス[uml コンポーネント図](../modeling/uml-component-diagrams-reference.md) [: リファレンス uml](https://go.microsoft.com/fwlink/?LinkId=201113)コンポーネント図
+## <a name="see-also"></a>参照
+ [Uml シーケンス図: リファレンス:](../modeling/uml-sequence-diagrams-reference.md) [uml モデルおよび図の編集](../modeling/edit-uml-models-and-diagrams.md) [uml ユースケース図:](../modeling/uml-use-case-diagrams-reference.md)リファレンス uml[クラス図](../modeling/uml-class-diagrams-reference.md): リファレンス[uml コンポーネント図](../modeling/uml-component-diagrams-reference.md): リファレンス[uml コンポーネント図](../modeling/uml-component-diagrams-reference.md) [: リファレンス uml](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)コンポーネント図

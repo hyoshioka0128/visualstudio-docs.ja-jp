@@ -21,17 +21,17 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 21421776506868942e9dc562db4f456c2012fce7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918704"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592023"
 ---
 # <a name="understand-build-configurations"></a>ビルド構成について
 
@@ -41,9 +41,9 @@ ms.locfileid: "68918704"
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac でのビルド構成](/visualstudio/mac/configurations)に関するページを参照してください。
 
 > [!NOTE]
-> ツール バーでソリューション構成設定を見つけることができず、 **[構成マネージャー]** にアクセスできないときは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開発設定を適用できます。 詳細については、「[方法 :Visual Basic 開発者設定が適用された構成を管理する](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)」を参照してください。
+> ツール バーでソリューション構成設定を見つけることができず、 **[構成マネージャー]** にアクセスできないときは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開発設定を適用できます。 詳細については、[Visual Basic 開発者設定が適用された構成を管理する](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)」を参照してください。
 
-既定では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] テンプレートを使用して作成されたプロジェクトには、デバッグ構成とリリース構成が含まれます。 デバッグ構成ではアプリのデバッグがサポートされ、リリース構成では展開可能なバージョンのアプリがビルドされます。 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。 カスタム ソリューション構成とプロジェクト構成を作成することもできます。 詳細については、「[方法 :構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。
+既定では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] テンプレートを使用して作成されたプロジェクトには、デバッグ構成とリリース構成が含まれます。 デバッグ構成ではアプリのデバッグがサポートされ、リリース構成では展開可能なバージョンのアプリがビルドされます。 詳細については、[デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。 カスタム ソリューション構成とプロジェクト構成を作成することもできます。 詳細については、[構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
 ## <a name="solution-configurations"></a>ソリューション構成
 

@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a13aeeb3394ee6b8896376c0e7d520b90fb56fa6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302824"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846154"
 ---
 # <a name="using-the-legacy-activity-designer"></a>従来のアクティビティ デザイナーの使用
 このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)]でアクティビティ デザイナーを使用する方法について説明します。 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とする場合は、従来のデザイナーを使用します。
@@ -46,15 +46,15 @@ ms.locfileid: "74302824"
 ## <a name="configuring-an-activity"></a>アクティビティの構成
  アクティビティ デザイナがアクティブであるときに、プロパティ ブラウザを使用すると、次の表にリストされているプロパティを構成できます。
 
-|プロパティ|コメント|
+|property|コメント|
 |--------------|--------------|
 |**名前**|アクティビティの名前。|
-|**基本クラス**|アクティビティの派生元の基本クラス。 既定の基底クラスは[Sequenceactivity](https://go.microsoft.com/fwlink?LinkID=65020)です。 **[プロパティ]** ウィンドウで、**基本クラス**の省略記号 **[...]** をクリックして、[ [.net 型の参照と選択] ダイアログボックス (レガシ)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)で別の基本クラスを選択します。|
+|**基本クラス**|アクティビティの派生元の基本クラス。 既定の基底クラスは[Sequenceactivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx)です。 **[プロパティ]** ウィンドウで、**基本クラス**の省略記号 **[...]** をクリックして、[ [.net 型の参照と選択] ダイアログボックス (レガシ)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)で別の基本クラスを選択します。|
 |**説明**|アクティビティに関するユーザー定義の説明。|
-|**Enabled**|アクティビティの実行と検証を有効にするには、既定で**True**に設定します。 アクティビティの実行と検証を無効にするには、 **False**に設定します。 アクティビティの実行と検証の詳細については、「[ワークフローアクティビティの開発](https://go.microsoft.com/fwlink?LinkID=65024)」を参照してください。|
+|**Enabled**|アクティビティの実行と検証を有効にするには、既定で**True**に設定します。 アクティビティの実行と検証を無効にするには、 **False**に設定します。 アクティビティの実行と検証の詳細については、「[ワークフローアクティビティの開発](https://msdn2.microsoft.com/library/ms734413.aspx)」を参照してください。|
 
 ## <a name="adding-child-activities"></a>子アクティビティの追加
  子アクティビティを、ツールボックスから設計中のアクティビティまでドラッグすることができます。 その後、プロパティ ブラウザを使ってそれぞれの子アクティビティを構成できます。
 
-## <a name="see-also"></a>関連項目
- [ワークフローアクティビティの開発](https://go.microsoft.com/fwlink?LinkID=65024)[カスタムアクティビティの作成](https://go.microsoft.com/fwlink?LinkID=65021)[従来のワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md)[カスタムアクティビティのサンプル](https://go.microsoft.com/fwlink?LinkID=65022)方法:[従来のワークフローデザイナーを使用して](../workflow-designer/using-the-legacy-workflow-designer.md)[ワークフローアクティビティライブラリ (レガシ) を作成する](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
+## <a name="see-also"></a>参照
+ [ワークフローアクティビティの開発](https://msdn2.microsoft.com/library/ms734413.aspx)[カスタムアクティビティの作成](https://msdn2.microsoft.com/library/bb675228.aspx)[従来のワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md)[カスタムアクティビティのサンプル](https://msdn2.microsoft.com/library/bb472471.aspx)方法:[従来のワークフローデザイナーを使用して](../workflow-designer/using-the-legacy-workflow-designer.md)[ワークフローアクティビティライブラリ (レガシ) を作成する](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)

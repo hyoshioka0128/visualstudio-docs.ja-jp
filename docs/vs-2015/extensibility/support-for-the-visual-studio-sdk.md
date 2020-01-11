@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e404d569776eef1cd2146ed636177be30151aaab
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5b1b4846bcceba2325da1c835b59a48e651190a1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299739"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852120"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK のサポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ Visual Studio 統合開発環境 (IDE) を拡張する方法について質問�
 ## <a name="free-support"></a>無料サポート  
   
 ### <a name="msdn-development-center"></a>MSDN 開発センター  
- MSDN の[Visual Studio 機能拡張デベロッパーセンター](https://go.microsoft.com/fwlink/?LinkID=84381)には、visual studio の拡張方法に関する質問に回答するためのリソースが含まれています。 たとえば、VSIP 開発者向けブログへのリンクがいくつかあります。  
+ MSDN の[Visual Studio 機能拡張デベロッパーセンター](https://msdn.microsoft.com/vstudio/default.aspx)には、visual studio の拡張方法に関する質問に回答するためのリソースが含まれています。 たとえば、VSIP 開発者向けブログへのリンクがいくつかあります。  
   
 ### <a name="microsoft-newsgroups"></a>Microsoft ニュースグループ  
  Visual studio 開発チームのメンバー、および Visual Studio を拡張するその他の開発者のメンバーは、多くの場合、microsoft. public. vstudio の機能拡張ニュースグループに参加します。 このニュースグループは、管理されたニュースグループです。 MSDN ユニバーサルサブスクライバーの場合は、Microsoft が応答できるように、スパムなしのエイリアスを登録するようにしてください。  
   
 ### <a name="msdn-forums"></a>MSDN フォーラム  
- [MSDN フォーラム](https://go.microsoft.com/fwlink/?LinkID=76632)では、仲間や専門家とチャットする別の方法が提供されています。 フォーラムのグラフィカルユーザーインターフェイス (UI) は、ニュースグループよりも使いやすくするように設計されています。 [Visual Studio 機能拡張フォーラム](https://go.microsoft.com/fwlink/?LinkID=121964)は、拡張性に関する質問への回答の検索を開始するのに最適な場所です。 他のユーザーが既に同じ質問をしている可能性があるため、質問する前に必ず検索してください。  
+ [MSDN フォーラム](https://social.msdn.microsoft.com/forums/categories/)では、仲間や専門家とチャットする別の方法が提供されています。 フォーラムのグラフィカルユーザーインターフェイス (UI) は、ニュースグループよりも使いやすくするように設計されています。 [Visual Studio 機能拡張フォーラム](https://msdn.microsoft.com/vsx/default.aspx)は、拡張性に関する質問への回答の検索を開始するのに最適な場所です。 他のユーザーが既に同じ質問をしている可能性があるため、質問する前に必ず検索してください。  
   
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/)は、拡張機能とサンプルコードを格納する場所です。 Visual Studio での生産性とユーザーエクスペリエンスを向上させるツール、Vspackage と Managed Extensibility Framework (MEF) の使用方法を示すサンプルアプリケーション、およびその他の種類のサンプルが用意されています。  
   
 ### <a name="codeplex"></a>Codeplex  
- [CodePlex](https://go.microsoft.com/fwlink/?LinkId=76627)は、Microsoft オープンソースのプロジェクトホスティング Web サイトです。 CodePlex を使用して、新しいプロジェクトの作成と共有、既存のプロジェクトへの貢献、サイトでのアプリケーションの使用、フィードバックの提供を行うことができます。 以前のバージョンの [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] に含まれていたすべての Powertoy (およびそのドキュメント) は、CodePlex で入手できるようになりました。  
+ [CodePlex](https://www.codeplex.com/)は、Microsoft オープンソースのプロジェクトホスティング Web サイトです。 CodePlex を使用して、新しいプロジェクトの作成と共有、既存のプロジェクトへの貢献、サイトでのアプリケーションの使用、フィードバックの提供を行うことができます。 以前のバージョンの [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] に含まれていたすべての Powertoy (およびそのドキュメント) は、CodePlex で入手できるようになりました。  
   
 ## <a name="included-support"></a>含まれるサポート  
   
@@ -63,7 +63,7 @@ Visual Studio 統合開発環境 (IDE) を拡張する方法について質問�
   
  VSIP プログラムと共に Premier サポートオファリングに関する質問は、 [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com)に送信できます。 新しいパートナーアドバンテージプログラムに関する質問は、 [advantg@microsoft.com](mailto:advantg@microsoft.com)に送信できます。  
   
- 個々のサポートリクエストに関する情報は、[個々のサポートリクエスト](https://go.microsoft.com/fwlink/?LinkID=82385)に記載されています。  
+ 個々のサポートリクエストに関する情報は、[個々のサポートリクエスト](https://support.microsoft.com/oas/default.aspx?gprid=3040)に記載されています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ご意見](../ide/talk-to-us.md)

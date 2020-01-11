@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 9a95cd84ede6befded37f9d875535f39846de50a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291050"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849939"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>サーバー エクスプローラーから Azure Virtual Machines へのアクセス
 
@@ -24,22 +24,22 @@ Azure でホストされている仮想マシンがある場合は、サーバ�
 
 1. Cloud Explorer で仮想マシンを選択し、F4 キーを押してプロパティ ウィンドウを表示します。
 
-    次の表に示したのは、アクセスできるプロパティの一覧です。ただし、これらはすべて読み取り専用です。 これらのプロパティを変更するには、[Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) を使用します。
+    次の表に示したのは、アクセスできるプロパティの一覧です。ただし、これらはすべて読み取り専用です。 これらのプロパティを変更するには、[Azure Portal](https://portal.azure.com/) を使用します。
 
-   | プロパティ | 説明 |
+   | property | 説明 |
    | --- | --- |
    | DNS 名 |仮想マシンのインターネット アドレスを含む URL。 |
    | 環境 |仮想マシンの場合、このプロパティの値は常に [運用] です。 |
-   | Name |仮想マシンの名前。 |
+   | [名前] |仮想マシンの名前。 |
    | サイズ |仮想マシンのサイズ。使用できるメモリとディスク領域のサイズが反映されます。 詳細については、[仮想マシンのサイズ](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)に関する記事をご覧ください。 |
-   | 状態 |"開始中"、"開始"、"停止中"、"停止"、"状態を取得中" などの値があります。 "状態を取得中" と表示された場合、現在の状態は不明です。 このプロパティの値は、[Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) で使用される値とは異なります。 |
-   | SubscriptionID |ご利用の Azure アカウントのサブスクリプション ID。 この情報を [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) に表示するには、サブスクリプションのプロパティを表示します。 |
+   | 状態 |"開始中"、"開始"、"停止中"、"停止"、"状態を取得中" などの値があります。 "状態を取得中" と表示された場合、現在の状態は不明です。 このプロパティの値は、[Azure Portal](https://portal.azure.com/) で使用される値とは異なります。 |
+   | SubscriptionID |ご利用の Azure アカウントのサブスクリプション ID。 この情報を [Azure Portal](https://portal.azure.com/) に表示するには、サブスクリプションのプロパティを表示します。 |
 2. エンドポイント ノードを選択し、 **[プロパティ]** ウィンドウを表示します。
-3. 次の表は、エンドポイントに関してアクセスできるプロパティの説明です。これらは読み取り専用となります。 仮想マシンのエンドポイントを追加または編集するには、[Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) を使用します。 
+3. 次の表は、エンドポイントに関してアクセスできるプロパティの説明です。これらは読み取り専用となります。 仮想マシンのエンドポイントを追加または編集するには、[Azure Portal](https://portal.azure.com/) を使用します。 
 
-   | プロパティ | 説明 |
+   | property | 説明 |
    | --- | --- |
-   | Name |エンドポイントの ID。 |
+   | [名前] |エンドポイントの ID。 |
    | プライベート ポート |アプリケーションの内部ネットワーク アクセス用ポート。 |
    | [プロトコル] |このエンドポイントのトランスポート レイヤーで使用されるプロトコル (TCP または UDP)。 |
    | パブリック ポート |アプリケーションに外部からアクセスする際に使用するポート。 |

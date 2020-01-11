@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538981"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851488"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
  Visual Studio Tools for Apache Cordova は、Microsoft とオープン ソース Apache Cordova コミュニティとの密接な共同作業の成果物です。 これらのツールは、HTML、CSS、および JavaScript (または Typescript) を使用したクロス プラットフォームのモバイル開発を可能にします。 1 つのコード ベースを使用して Android、iOS、および Windows を対象とし、Visual Studio IDE に含まれる JavaScript IntelliSense、DOM Explorer、JavaScript コンソール、ブレークポイント、ウォッチ、ローカル、Just My Code などの豊富な機能を利用できます。  Visual Studio Tools for Apache Cordova では、一般的な JavaScript API を提供するプラグインによってすべてのプラットフォーム上のネイティブ デバイス機能にアプリがアクセスできるようになります。 開始するには、「 [Apache Cordova の Visual Studio Tools の概要](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)」を参照してください。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity を使った C# のクロス プラットフォームのモバイル ゲーム
- Unity は、マルチプラットフォームの 2D および 3D ゲーム開発用に広く使用されているプラットフォームです。 ゲームを C# で作成し、Android、iOS、Windows Phone、その他の多くのプラットフォームでネイティブに実行できます。 Visual Studio Tools for Unity は、Unity と Visual Studio IDE を統合させる拡張機能です。 この拡張機能により、Unity 開発者用に設計された生産性機能に加えて、Visual Studio IDE のすべての機能とデバッガーが使用できるようになります。 Visual Studio Tools for Unity 2.0 Preview 2 には Visual Studio 2015 のためのサポートが追加されており、さらに [ローカル] ウィンドウや [ウォッチ] ウィンドウでのオブジェクト表示方法の改善など、数々の機能が新たに追加されています。 Microsoft は最近、Visual Studio Tools for Unity の作成元の SyntaxTree を買収しました。 Visual Studio Tools for Unity 2.0 Preview 2 のダウンロードおよび Visual Studio Tools for Unity の詳細については、「 [Visual Studio による Unity ゲームのビルド](https://aka.ms/vstu)」を参照してください。
+ Unity は、マルチプラットフォームの 2D および 3D ゲーム開発用に広く使用されているプラットフォームです。 ゲームを C# で作成し、Android、iOS、Windows Phone、その他の多くのプラットフォームでネイティブに実行できます。 Visual Studio Tools for Unity は、Unity と Visual Studio IDE を統合させる拡張機能です。 この拡張機能により、Unity 開発者用に設計された生産性機能に加えて、Visual Studio IDE のすべての機能とデバッガーが使用できるようになります。 Visual Studio Tools for Unity 2.0 Preview 2 には Visual Studio 2015 のためのサポートが追加されており、さらに [ローカル] ウィンドウや [ウォッチ] ウィンドウでのオブジェクト表示方法の改善など、数々の機能が新たに追加されています。 Microsoft は最近、Visual Studio Tools for Unity の作成元の SyntaxTree を買収しました。 Visual Studio Tools for Unity 2.0 Preview 2 のダウンロードおよび Visual Studio Tools for Unity の詳細については、「 [Visual Studio による Unity ゲームのビルド](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)」を参照してください。
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>ネイティブ C++ 用のクロス プラットフォーム アプリおよびライブラリ
  C++ は、ほとんどのモバイル デバイスでネイティブに使用可能な言語です。 C++ を使用すると、複数のモバイル プラットフォーム ターゲット用にビルドできるクロス プラットフォームの共有コード ライブラリを作成できます。 モバイル アプリ全体を C++ で作成することもできます。 Visual C++ には、クロス プラットフォームのコードを編集、ビルド、配置、およびデバッグするためのツールが用意されています。 Windows アプリ用のテンプレートだけでなく、Android Native Activity アプリ用のプロジェクト、iOS アプリ用のプロジェクト、または Xamarin ハイブリッド アプリを含む複数のプラットフォーム用の共有コード ライブラリ オブジェクトも、テンプレートから作成できます。 プラットフォーム固有の IntelliSense を使用すると、API を調べて、Android ターゲット、iOS ターゲット、または Windows ターゲット用の正しいコードを生成することができます。 x86 または ARM ネイティブ プラットフォーム用のビルドを構成し、iOS シミュレーターやネットワークに接続された Mac 上の iOS デバイスにコードを配置したり、直接接続された Android デバイスにコードを配置したり、パフォーマンスの優れた Microsoft Visual Studio Emulator for Android をテストに使用したりできます。 Visual Studio デバッガーでは、ブレークポイントやウォッチ変数の設定、スタックの表示、C++ コードのステップスルー実行が可能です。 最も固有性の高いプラットフォームのコード以外のすべてのコードを複数のアプリ プラットフォームで共有し、Visual Studio の 1 つのソリューションでそれらをすべてビルドすることができます。
@@ -177,7 +177,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
  ![Visual Studio のカスタムレイアウトメニュー項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>通知ハブ
- スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳細については、「 [Visual Studio の通知](./ide/visual-studio-notifications.md)」を参照してください。
+ スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳しくは、「[Visual Studio の通知](./ide/visual-studio-notifications.md)」をご覧ください。
 
 ### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: コードに何が起こったかを検索します (Enterprise Edition と Professional Edition のみ)。
  エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 Visual Studio Team Services (VSTS) または Team Foundation Server (TFS) に格納されているコードについて、作業項目、バグ、コード レビューなどの変更やその他の履歴を確認できます。
@@ -257,7 +257,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 ### <a name="send-a-frown"></a>問題点、改善点の報告
  製品のどこをどう改善したらよいかについてご意見をお寄せいただくなら、今後の作業においてお客様が最も気にかけておられる点を優先的に取り上げることができます。 何か気になる点がありましたら、IDE の中から直接に **[問題点、改善点の報告]** 機能を使用してご報告ください。 そのプロセスも極めてシンプルなものにしてあります。
 
- タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳細については、「 [Talk to Us](./ide/talk-to-us.md)」を参照してください。
+ タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳しくは、「[ご意見](./ide/talk-to-us.md)」をご覧ください。
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>クラッシュ、ハング、パフォーマンスの問題についての報告
  気になる点のちょっとしたメモでは済ませられない問題が発生するかもしれません。 ハング、クラッシュ、あるいはパフォーマンスに関する問題が発生した場合は、問題点、改善点の報告をした後に表示されるダイアログを使用することによって、簡単な操作でその再現手順、クラッシュ ダンプ、トレース ファイルをお送りいただくことが可能です。
@@ -267,7 +267,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 ## <a name="see-also"></a>参照
 
 * [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
-* [Visual Studio における Xamarin を使用したネイティブ UI を備えたアプリの作成](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
+* [Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Visual C++ を使ったクロスプラットフォーム モバイル アプリをビルドする](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [IntelliTest でのコードの単体テストの生成](./test/generate-unit-tests-for-your-code-with-intellitest.md)
 * [複数のユーザー アカウントを使って作業する](./ide/work-with-multiple-user-accounts.md)

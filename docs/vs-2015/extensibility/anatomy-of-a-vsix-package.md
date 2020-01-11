@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295646"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852282"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX パッケージの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +59,4 @@ VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を�
 ## <a name="content_typesxml"></a>[Content_Types].xml  
  [Content_Types] .xml ファイルは、展開された .vsix ファイル内のファイルの種類を識別します。 Visual Studio では、パッケージのインストール時にこのファイルを使用しますが、ファイル自体はインストールしません。 このファイルの詳細については、 [Content_types\].Xml ファイルの構造](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)を参照してください。  
   
- Open パッケージング規約 (OPC) 標準では、[Content_Types] .xml ファイルが必要です。 OPC の詳細については、「 [opc: データをパッケージ化するための新しい標準](https://go.microsoft.com/fwlink/?LinkID=148207)」を参照してください。
+ Open パッケージング規約 (OPC) 標準では、[Content_Types] .xml ファイルが必要です。 OPC の詳細については、「 [opc: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)」を参照してください。

@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25320da07249abee0ab0cddd48662585a7a809dd
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745992"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846745"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Visual Studio での Clang-Tidy の使用
 
@@ -34,7 +34,7 @@ Clang-コンパイルが成功した後に実行されます。場合によっ�
 
 ## <a name="cmake"></a>CMake
 
-CMake プロジェクトでは、`CMakeSettings.json` 内で Clang-Tidy チェックを構成できます。 開いたら、CMake プロジェクト設定エディターの右上隅にある [JSON の編集] をクリックします。 次のキーが認識されます。
+CMake プロジェクトでは、`CMakeSettings.json`内で Clang-Tidy チェックを構成できます。 開いたら、CMake プロジェクト設定エディターの右上隅にある [JSON の編集] をクリックします。 次のキーが認識されます。
 
 - `enableMicrosoftCodeAnalysis`: Microsoft コード分析を有効にします
 - `enableClangTidyCodeAnalysis`: Clang-Tidy 分析を有効にします
@@ -52,5 +52,5 @@ Clang-tidy**チェック**オプションを使用して、Visual Studio 内で 
 
 ## <a name="see-also"></a>関連項目
 
-- [Clang/LLVM の MSBuild プロジェクトのサポート](https://aka.ms/cpp/clangmsbuild)
-- [Clang/LLVM での CMake プロジェクトのサポート](https://aka.ms/cpp/clangcmake)
+- [Clang/LLVM の MSBuild プロジェクトのサポート](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
+- [Clang/LLVM での CMake プロジェクトのサポート](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)

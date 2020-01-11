@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301322"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851351"
 ---
 # <a name="visualize-code"></a>コードの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の視覚化ツールとモデリング ツールを使って、既存のコードを理解し、アプリケーションを記述することができます。 これにより、自分が実行した変更がコードにどのような影響を与えるかを理解し、その変更に起因する作業とリスクを評価することができます。 例 :
+Visual Studio の視覚化ツールとモデリング ツールを使って、既存のコードを理解し、アプリケーションを記述することができます。 これにより、自分が実行した変更がコードにどのような影響を与えるかを理解し、その変更に起因する作業とリスクを評価することができます。 例:
 
 - コード内のリレーションシップを理解するには、そのリレーションシップをビジュアルにマッピングします。
 
@@ -50,9 +50,9 @@ Visual Studio の視覚化ツールとモデリング ツールを使って、�
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャフォーラム](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャフォーラム](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [シナリオ: 視覚化とモデリングを使用して設計を変更する](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[アーキテクチャ分析とモデリングアーキテクチャ](../modeling/analyze-and-model-your-architecture.md)[アプリモデルのモデルを作成](../modeling/create-models-for-your-app.md)する[ユーザーの要件](../modeling/model-user-requirements.md)[モデルアプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を[開発プロセスで使用するモデルを使用する](../modeling/use-models-in-your-development-process.md)

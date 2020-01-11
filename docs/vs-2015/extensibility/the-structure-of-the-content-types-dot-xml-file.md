@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301234"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846367"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Content_types] .xml ファイルの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301234"
 VSIX パッケージ内のコンテンツの種類に関する情報を格納します。 Visual Studio では、[Content_Types] .xml ファイルを使用してパッケージをインストールしますが、ファイル自体はインストールしません。  
   
 > [!NOTE]
-> このトピックは、VSIX パッケージで使用される [Content_Type] .xml ファイルにのみ適用されますが、[Content_Types] .xml ファイルの種類は、 *Open パッケージング規則 (OPC)* 標準の一部です。 詳細については、MSDN Web サイトの「 [OPC: データをパッケージ化するための新しい標準](https://go.microsoft.com/fwlink/?LinkID=148207)」を参照してください。  
+> このトピックは、VSIX パッケージで使用される [Content_Type] .xml ファイルにのみ適用されますが、[Content_Types] .xml ファイルの種類は、 *Open パッケージング規則 (OPC)* 標準の一部です。 詳細については、MSDN Web サイトの「 [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)」を参照してください。  
   
 ## <a name="attributes-and-elements"></a>属性と要素  
  次のセクションでは、ルート要素とその属性および子要素について説明します。  
@@ -45,7 +45,7 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
   
 ### <a name="attribute-name-attribute"></a>{属性名}属性  
   
-|                           値                           |                説明                |
+|                           Value                           |                説明                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | コンテンツタイプスキーマの場所。 |
   
@@ -68,22 +68,22 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
   
 |拡張子|ContentType|  
 |---------------|-----------------|  
-|拡張子|text/plain|  
+|txt|text/plain|  
 |.pkgdef|text/plain|  
 |xml|text/xml|  
 |source.extension.vsixmanifest|text/xml|  
 |htm または html|text/html|  
 |rtf|アプリケーション/rtf|  
 |pdf|アプリケーション/pdf|  
-|アニメーション|image/gif|  
+|gif|image/gif|  
 |jpg または jpeg|イメージ/jpg|  
-|tiff|画像/tiff|  
+|tiff|image/tiff|  
 |vsix|アプリケーション/zip|  
 |zip|アプリケーション/zip|  
 |dll|application/octet-stream|  
 |その他のすべてのファイルの種類|application/octet-stream|  
   
-## <a name="example"></a>例  
+## <a name="example"></a>使用例  
   
 ### <a name="description"></a>説明  
  次の [Content_Types] .xml ファイルには、一般的な VSIX パッケージが記述されています。  
@@ -101,7 +101,7 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
 </Types>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: データをパッケージ化するための新しい標準](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)

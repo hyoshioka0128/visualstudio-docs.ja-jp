@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297954"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851215"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでのさまざまな Web ブラウザーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "74297954"
 
     2. **[共通言語ランタイム例外]** で、 **[ユーザーにハンドルされていないとき]** をオフにします。
 
-## <a name="generate"></a> *コード化された UI テストで、BrowserWindow.CurrentBrowser を変更するオプションが表示されません。*
+## <a name="generate"></a>*コード化された UI テストで、[Browserwindow] を変更するオプションが表示されません。*
  さまざまな Web ブラウザーを使用するコード化された UI テストをサポートしないバージョンの [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise を使用する必要があります。
 
  *その他に知っておく必要があること*
@@ -139,17 +139,17 @@ ms.locfileid: "74297954"
  [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>よく寄せられる質問
- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>フォーラム
- [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Ui オートメーションを使用して、コード](../test/use-ui-automation-to-test-your-code.md)化された ui テスト[と操作の記録に対してサポートされている構成とプラットフォームの](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)テストコード化された ui テストの[ログ](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

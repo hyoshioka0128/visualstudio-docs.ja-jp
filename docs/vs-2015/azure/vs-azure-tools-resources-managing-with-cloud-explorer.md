@@ -11,23 +11,23 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: f6ccc19ccc21b7cabcd553e9d040d20a89ed6ccb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298077"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850008"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
 
 Cloud Explorer を使用すると、Azure リソースやリソース グループを表示し、そのプロパティを調べることができます。また、開発者は Visual Studio 内から重要な診断操作を実行できます。
 
-[Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) と同様に、Cloud Explorer は Azure Resource Manager スタックを基盤としています。 そのため、Cloud Explorer はリソース (Azure リソース グループなど) と Azure サービス (Logic Apps や API Apps など) を認識し、[ロールベースのアクセス制御](/azure/role-based-access-control/role-assignments-portal) (RBAC) をサポートします。
+[Azure Portal](https://portal.azure.com/) と同様に、Cloud Explorer は Azure Resource Manager スタックを基盤としています。 そのため、Cloud Explorer はリソース (Azure リソース グループなど) と Azure サービス (Logic Apps や API Apps など) を認識し、[ロールベースのアクセス制御](/azure/role-based-access-control/role-assignments-portal) (RBAC) をサポートします。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
 
 * [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657)を使用した Visual Studio 2015。
-* Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](https://go.microsoft.com/fwlink/?LinkId=623901)するか、[Visual Studio サブスクライバー特典を有効](https://go.microsoft.com/fwlink/?LinkId=623901)にします。
+* Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)するか、[Visual Studio サブスクライバー特典を有効](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)にします。
 
 > [!NOTE]
 > Cloud Explorer を表示するには、メニュー バーの **[表示]**  >  **[Cloud Explorer]** を選択します。
@@ -78,7 +78,7 @@ Azure リソースを表示するには、 **[リソースの種類]** ビュー
 
 1. コンテキスト メニューで目的のビューを選択します。
 
-   * **[リソースの種類]** ビュー - [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) で使用される一般的なビュー。Web アプリ、ストレージ アカウント、仮想マシンなどの Azure リソースが種類ごとに表示されます。
+   * **[リソースの種類]** ビュー - [Azure Portal](https://portal.azure.com/) で使用される一般的なビュー。Web アプリ、ストレージ アカウント、仮想マシンなどの Azure リソースが種類ごとに表示されます。
    * **[リソース グループ]** ビュー - Azure リソースが、関連付けられている Azure リソース グループで分類されます。 リソース グループとは Azure リソースの集まりで、通常は特定のアプリケーションで使用されます。 Azure リソース グループについて詳しくは、「[Azure リソース マネージャーの概要](/azure/azure-resource-manager/resource-group-overview)」をご覧ください。
 
    次の図では、2 つのリソース ビューを比較しています。
@@ -97,7 +97,7 @@ Cloud Explorer で Azure リソースに移動してその情報を表示する�
 
   ![Cloud Explorer のスクリーンショット](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-すべてのリソースには、 **[ポータルで開く]** というアクションがあります。 このアクションを選択すると、選択したリソースが [Azure ポータル](https://go.microsoft.com/fwlink/p/?LinkID=525040)で表示されます。 **[ポータルで開く]** 機能は、深く入れ子になったリソースに移動する場合に便利です。
+すべてのリソースには、 **[ポータルで開く]** というアクションがあります。 このアクションを選択すると、選択したリソースが [Azure ポータル](https://portal.azure.com/)で表示されます。 **[ポータルで開く]** 機能は、深く入れ子になったリソースに移動する場合に便利です。
 
 その他のアクションやプロパティ値も、Azure リソースに基づいて表示される場合があります。 たとえば、Web Apps と Logic Apps には、 **[ポータルで開く]** に加えて、 **[ブラウザーで開く]** と **[デバッガーのアタッチ]** というアクションもあります。 エディターを開くアクションは、ストレージ アカウントの BLOB、キュー、またはテーブルを選択すると表示されます。 Azure アプリには **URL** と**状態**プロパティがあるのに対し、ストレージ リソースにはキーと接続文字列のプロパティがあります。
 
