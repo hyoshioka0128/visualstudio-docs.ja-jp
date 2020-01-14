@@ -22,14 +22,14 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298925"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847220"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace"></a>[IntelliTrace]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックの最新バージョンについては、「 [IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace) 」を参照してください。  
@@ -128,7 +128,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 - **.NET Framework イベント**  
   
-   既定では、IntelliTrace は最も一般的な .NET Framework のイベントを記録します。 例 :  
+   既定では、IntelliTrace は最も一般的な .NET Framework のイベントを記録します。 例:  
   
   - ファイル アクセス イベントの場合、IntelliTrace はファイル名を収集します。  
   
@@ -136,7 +136,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 - **SharePoint 2010 アプリケーション イベントと SharePoint 2013 アプリケーション イベント**  
   
-   Visual Studio の外部で実行されている SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのユーザー プロファイル イベントと Unified Logging System (ULS) イベントのサブセットを記録できます。 これらのイベントを .iTrace ファイルに保存できます。 Visual Studio Enterprise 2015、以前のバージョンの Visual Studio Ultimate、または**トレース**モードで実行されている[Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384)が必要です。  
+   Visual Studio の外部で実行されている SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのユーザー プロファイル イベントと Unified Logging System (ULS) イベントのサブセットを記録できます。 これらのイベントを .iTrace ファイルに保存できます。 Visual Studio Enterprise 2015、以前のバージョンの Visual Studio Ultimate、または**トレース**モードで実行されている[Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771)が必要です。  
   
    .iTrace ファイルを開いたら、SharePoint 相関 ID を入力して対応する Web 要求を見つけ、記録されたイベントを表示し、特定のイベントからのデバッグを開始します。 ファイルにハンドルされない例外が含まれている場合は、相関 ID を選択して例外のデバッグを開始できます。  
   
@@ -186,7 +186,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
  [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>ブログ  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>Forums  
- [Visual Studio の診断](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio の診断](https://social.msdn.microsoft.com/Forums/vsdebug)

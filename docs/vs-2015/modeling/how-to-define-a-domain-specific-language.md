@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299552"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850696"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ドメイン固有言語 (DSL) を定義するには、テンプレートから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 ソリューションの主要な機能は DSL 定義図です。これは DslDefinition.dsl に保存されています。 DSL 定義は、DSL のクラスとシェイプを定義します。 これらの要素を変更および追加した後で、プログラム コードを追加して DSL を詳細にカスタマイズできます。
 
- Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。これについては、こちらのサイトを参照してください。[Visualizaton モデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="templates"></a>テンプレートソリューションの選択
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  ドメイン固有言語を新規に作成するには、ドメイン固有言語プロジェクト テンプレートを使用して新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "74299552"
        > [!NOTE]
        > クラス図またはコンポーネント図を作成する場合は、UML モデルの使用を検討してください。 UML モデリング ツールには、1 つのモデルの周りで統合される図のセットが用意されています。 これらの図は拡張可能であり、ModelBus を使用して DSL と統合できます。 詳細については、「[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)」を参照してください。
 
-   - Windows フォームまたは WPF サーフェイスに表示される DSL を作成するには、 **[最小の WinForm デザイナー]** または **[最小の wpf デザイナー]** を選択します。 エディターを定義するコードを記述する必要があります。 詳細については、次のトピックを参照してください。
+   - Windows フォームまたは WPF サーフェイスに表示される DSL を作成するには、 **[最小の WinForm デザイナー]** または **[最小の wpf デザイナー]** を選択します。 エディターを定義するコードを記述する必要があります。 詳細については、以下のトピックを参照してください。
 
         [Windows フォームに基づくドメイン固有言語の作成](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -170,9 +170,9 @@ ms.locfileid: "74299552"
 
 |要素の表示方法|親 (埋め込み) クラス|DSL ソリューション テンプレートの例|
 |------------------------------|--------------------------------|--------------------------------------|
-|図のシェイプ。<br /><br /> スイムレーン。|DSL のルート クラス。|最小言語。<br /><br /> タスクフロー:アクタークラス。|
-|スイムレーンのシェイプ。|スイムレーンとして表示される要素のドメイン クラス。|タスクフロー:Task クラス。|
-|シェイプ内のリストの項目。コンテナーが削除されると、項目も削除されます。<br /><br /> シェイプの境界上のポート。|コンテナー シェイプにマップされるドメイン クラス。|クラス ダイアグラム:属性クラス。<br /><br /> コンポーネント図:Port クラス。|
+|図のシェイプ。<br /><br /> スイムレーン。|DSL のルート クラス。|最小言語。<br /><br /> タスク フロー: Actor クラス。|
+|スイムレーンのシェイプ。|スイムレーンとして表示される要素のドメイン クラス。|タスク フロー: Task クラス。|
+|シェイプ内のリストの項目。コンテナーが削除されると、項目も削除されます。<br /><br /> シェイプの境界上のポート。|コンテナー シェイプにマップされるドメイン クラス。|クラス図: Attribute クラス。<br /><br /> コンポーネント図: Port クラス。|
 |リストの項目。コンテナーが削除されても、項目は削除されません。|DSL のルート クラス。<br /><br /> リストには参照リンクが表示されます。||
 |直接表示されません。|パーツを構成するクラス。||
 
@@ -188,7 +188,7 @@ ms.locfileid: "74299552"
 > 埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親の機能を継承しません。
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>各ドメイン クラスへのドメイン プロパティの追加
- ドメイン プロパティには値が格納されます。 以下に例を示します。名前、タイトル、発行日。
+ ドメイン プロパティには値が格納されます。 例えば、Name、Title、Publication Date などです。
 
  クラスの **[ドメインのプロパティ]** をクリックし、enter キーを押して、プロパティの名前を入力します。 ドメイン プロパティの既定の型は String です。 型を変更する場合は、ドメイン プロパティを選択し、**プロパティ** ウィンドウで**型**を設定します。 目的の型がドロップダウンリストにない場合は、「[プロパティの型の追加](#addTypes)」を参照してください。
 
@@ -228,7 +228,7 @@ ms.locfileid: "74299552"
 
 5. 新しいインスタンスを作成するときに、各インスタンスに異なる名前が付いていることを確認します。 これは、ドメインプロパティで**Is 要素名フラグが**設定されている場合にのみ発生します。
 
-6. **ドメインのプロパティを確認します。クラスのインスタンスが選択された状態で、プロパティウィンドウを検査** ます。 このドメイン クラスに定義したドメイン プロパティが表示されます。
+6. **ドメインのプロパティを確認します。クラスのインスタンスを選択して**、プロパティウィンドウを調べます。 このドメイン クラスに定義したドメイン プロパティが表示されます。
 
 7. **ファイルを保存して閉じ、再度開き**ます。 ノードを展開すると、作成したすべてのインスタンスがエクスプローラーに表示されるはずです。
 
@@ -410,14 +410,14 @@ ms.locfileid: "74299552"
 
    コネクタを初めてテストした後に、コネクタのプロパティをいくつか調整し、拡張機能を追加する必要がある場合があります。 詳細については、「[ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
 
-## <a name="compartments"></a>リストを含む図形を定義します。コンパートメントシェイプ
+## <a name="compartments"></a>リストを含む図形の定義: コンパートメントシェイプ
  コンパートメント シェイプには、1 つ以上の項目リストが含まれています。 たとえば Music Library DSL では、コンパートメント シェイプを使用して Album (音楽) を表すことができます。 各 Album には Song のリストがあります。
 
  ![コンパートメントシェイプ](../modeling/media/compartmentshape.png "CompartmentShape")
 
  DSL 定義でこれを実現する最も簡単な方法は、コンテナーのドメイン クラスを １ つ定義し、各リストを表すドメイン クラスを 1 つずつ定義する方法です。 コンテナー クラスはコンパートメント シェイプにマップされます。
 
- ![シェイプマップ](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![図形マップ](../modeling/media/music-mapcomp.png "Music_MapComp")
 
  詳細については、「[コンパートメントシェイプのプロパティ](../modeling/properties-of-compartment-shapes.md)」を参照してください。
 
@@ -606,12 +606,12 @@ ms.locfileid: "74299552"
 
  したがって、DSL 定義で一部のリレーションシップを変更するときには、定義の保存時またはすべてのテンプレートの変換時に、エラーが報告されることがよくある点に注意してください。 ほとんどのエラーは容易に修正できます。 エラーの発生場所を確認するには、エラー レポートをダブルクリックします。
 
- 「[方法: ドメイン固有言語の名前空間を変更](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)ます。
+ 「[方法: ドメイン固有言語の名前空間を変更する](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)」も参照してください。
 
 ## <a name="trouble"></a> トラブルシューティング
- 次の表に、DSL の設計時によく発生する問題を示し、併せて解決策を提示します。 その他のアドバイスについては、「[視覚化ツール Extensibililty フォーラム](https://go.microsoft.com/fwlink/?LinkId=186074)」を参照してください。
+ 次の表に、DSL の設計時によく発生する問題を示し、併せて解決策を提示します。 その他のアドバイスについては、「[視覚化ツール Extensibililty フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)」を参照してください。
 
-|問題|提案される解決策|
+|Problem|提案される解決策|
 |-------------|----------------|
 |DSL 定義ファイルで行った変更が反映されない。|ソリューションエクスプローラー上のツールバーにある **[すべてのテンプレートの変換]** をクリックし、ソリューションをリビルドします。|
 |シェイプにプロパティ値ではなくデコレータ名が表示される。|デコレータ マッピングを設定します。 DSL 定義図で図要素マップをクリックします。図要素マップは、ドメイン クラスとシェイプ クラスの間に表示される灰色の線です。<br /><br /> DSL の**詳細**ウィンドウを開きます。 表示されない場合は、表示 メニューの **その他のウィンドウ** をポイントし、**DSL の詳細** をクリックします。<br /><br /> **[デコレータマップ]** タブをクリックします。デコレータの名前を選択します。 その横のボックスがオンになっていることを確認します。 **[表示プロパティ]** で、ドメインプロパティの名前を選択します。<br /><br /> 詳細については、図の「[図形](#shapes)」を参照してください。|
@@ -619,8 +619,8 @@ ms.locfileid: "74299552"
 |ドメイン クラスを作成したが、言語エクスプローラーでインスタンスを作成できない。|ルートを除くすべてのドメイン クラスは、埋め込みリレーションシップのターゲットである必要があります。|
 |DSL のエクスプローラーで、要素がその型の名前でのみ表示される。|DSL 定義で、クラスのドメインプロパティを選択し、プロパティウィンドウで **[要素名]** を true に設定します。|
 |DSL が常に XML エディタで開かれる。|これは、ファイルの読み取り中に発生したエラーが原因で起こります。 ただし、そのエラーを修正した後でも、エディターを DSL デザイナーに明示的にリセットする必要があります。<br /><br /> プロジェクト項目を右クリックし、[**ファイルを開くアプリケーション**の選択] をクリックして、_言語_**デザイナー (既定)** を選択します。|
-|アセンブリ名を変更した後に、DSL のツールボックスが表示されない。|詳細につい**ては**、「検査と更新」を参照してください。詳細については、「[方法:ドメイン固有言語の名前空間を変更](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)ます。|
-|アセンブリ名を変更していないのに、DSL のツールボックスが表示されない。<br /><br /> あるいは、拡張機能の読み込みに失敗したことを示すメッセージ ボックスが表示される。|実験用インスタンスをリセットして、ソリューションをリビルドします。<br /><br /> 1.Windows の スタート メニューの **[すべてのプログラム]** で、[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]、 **[ツール]** の順に展開し、 **[Microsoft Visual Studio 実験用インスタンスのリセット]** をクリックします。<br />2.[[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**ビルド**] メニューの **[ソリューションのリビルド]** をクリックします。|
+|アセンブリ名を変更した後に、DSL のツールボックスが表示されない。|詳細については、「[方法: ドメイン固有言語の名前空間を変更する方法](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) **」を参照**してください。|
+|アセンブリ名を変更していないのに、DSL のツールボックスが表示されない。<br /><br /> あるいは、拡張機能の読み込みに失敗したことを示すメッセージ ボックスが表示される。|実験用インスタンスをリセットして、ソリューションをリビルドします。<br /><br /> 1. Windows の スタート メニューの **[すべてのプログラム]** で、[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]、 **[ツール]** の順に展開し、 **[Microsoft Visual Studio 実験用インスタンスのリセット]** をクリックします。<br />2. [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**ビルド**] メニューの **[ソリューションのリビルド]** をクリックします。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  ドメイン固有言語を[使用したはじめに](../modeling/getting-started-with-domain-specific-languages.md) [Windows フォームベース](../modeling/creating-a-windows-forms-based-domain-specific-language.md)のドメイン固有言語の作成[WPF ベースのドメイン固有](../modeling/creating-a-wpf-based-domain-specific-language.md)言語の作成

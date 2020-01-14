@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301229"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851622"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio へのサインイン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio にサインインする必要がある理由
  Visual Studio にサインインすると、次の利点が得られます。
 
-- 無料のソフトウェア、トレーニング、サポートなど、Visual Studio Dev Essentials プログラムにおける**さまざまな特典にアクセスできます** 。 詳細については、「 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 」をご覧ください。
+- 無料のソフトウェア、トレーニング、サポートなど、Visual Studio Dev Essentials プログラムにおける**さまざまな特典にアクセスできます** 。 詳細については、「 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 」をご覧ください。
 
-- **Visual Studio の設定を同期する** – どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 「[Visual Studio での同期された設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)」をご覧ください。
+- **Visual Studio の設定を同期する** – どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 「 [Visual Studio での同期された設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)」をご覧ください。
 
 - **Visual Studio Express エディションのロックを完全に解除する** – 任意のエディションの Visual Studio Express を、30 日の評価期間にとらわれることなく使用できます。
 

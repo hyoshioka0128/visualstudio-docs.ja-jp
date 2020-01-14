@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298328"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850517"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend での XAML のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "74298328"
   
 - XAML 要素が許可されていない場所にある。  
   
-  共通 XAML 構文の詳細については、「[Basic XAML syntax guide](https://go.microsoft.com/fwlink/?LinkId=329942)」 (基本的な XAML 構文のガイド) を参照してください。  
+  共通 XAML 構文の詳細については、「[Basic XAML syntax guide](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx)」 (基本的な XAML 構文のガイド) を参照してください。  
   
   また、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] での単純な分離コード構文エラー、コンパイル エラー、およびランタイム エラーを識別して、解決できます。 ただし、分離コード エラーは Visual Studio で識別して解決する方が簡単です。  
   
@@ -123,7 +123,7 @@ ms.locfileid: "74298328"
 ## <a name="debugging-in-visual-studio"></a>Visual Studio でのデバッグ  
  アプリ内のコードをさらに簡単にデバッグするために、Visual Studio で [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] プロジェクトを開くことができます。 Visual Studio で [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] プロジェクトを開くには、 **[プロジェクト]** パネルでプロジェクトを右クリックし、次に **[Visual Studio で編集]** をクリックします。 Visual Studio でデバッグ セッションを完了したら、Ctrl + Shift + S キーを押してすべての変更を保存し、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] に戻ります。 プロジェクトの再読み込みを求めるメッセージが表示されます。 **[すべてはい]** をクリックして [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] での作業を続けます。  
   
- アプリのデバッグの詳細については、「 [Visual Studio での Windows ストアアプリのデバッグ](https://go.microsoft.com/fwlink/?LinkId=329944)」を参照してください。  
+ アプリのデバッグの詳細については、「 [Visual Studio での Windows ストアアプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx)」を参照してください。  
   
-## <a name="getting-help"></a>ヘルプの表示  
- [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] アプリのデバッグに関するヘルプが必要な場合は、 [Windows ストアアプリのコミュニティフォーラム](https://go.microsoft.com/fwlink/?LinkId=280308)で、問題に関連する投稿や質問を投稿することができます。
+## <a name="getting-help"></a>ヘルプ情報の入手  
+ [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] アプリのデバッグに関するヘルプが必要な場合は、 [Windows ストアアプリのコミュニティフォーラム](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)で、問題に関連する投稿や質問を投稿することができます。

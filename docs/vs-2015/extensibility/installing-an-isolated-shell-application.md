@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301159"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851710"
 ---
 # <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "74301159"
   
 - セットアップブートストラップを作成します。  
   
-  このドキュメントのコード例はすべて、「[シェルデプロイのサンプル](https://go.microsoft.com/fwlink/?LinkId=262245)」から入手できます。このサンプルは、MSDN web サイトのコードギャラリーからダウンロードできます。 このサンプルは、これらの各手順を実行した結果を示しています。  
+  このドキュメントのコード例はすべて、「[シェルデプロイのサンプル](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7)」から入手できます。このサンプルは、MSDN web サイトのコードギャラリーからダウンロードできます。 このサンプルは、これらの各手順を実行した結果を示しています。  
   
-## <a name="prerequisites"></a>前提条件  
+## <a name="prerequisites"></a>[前提条件]  
  このトピックで説明する手順を実行するには、次のツールをコンピューターにインストールする必要があります。  
   
 - Visual Studio SDK  
   
-- [WINDOWS インストーラー XML ツールセット](https://go.microsoft.com/fwlink/?LinkId=82720)バージョン3.6  
+- [WINDOWS インストーラー XML ツールセット](http://wix.sourceforge.net/)バージョン3.6  
   
   このサンプルでは、すべてのシェルが必要としない Microsoft の視覚化およびモデリング SDK も必要です。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "74301159"
 2. VSIX マニフェストを含むプロジェクトごとに、ビルドタスクを編集して、MSI がインストールされる場所にコンテンツを出力します。 VSIX マニフェストをビルド出力に含めますが、.vsix ファイルはビルドしません。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>シェルの MSI の作成  
- MSI パッケージをビルドするには、標準のセットアッププロジェクトよりも柔軟性が高いため、 [WINDOWS インストーラー XML ツールセット](https://go.microsoft.com/fwlink/?LinkId=82720)を使用することをお勧めします。  
+ MSI パッケージをビルドするには、標準のセットアッププロジェクトよりも柔軟性が高いため、 [WINDOWS インストーラー XML ツールセット](http://wix.sourceforge.net/)を使用することをお勧めします。  
   
  製品の wxs ファイルで、検出ブロックとシェルコンポーネントのレイアウトを設定します。  
   
@@ -178,8 +178,8 @@ ms.locfileid: "74301159"
   
     |*ProjectName*. reg|ApplicationRegisty。 wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT/CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE オブジェクト"|\<RegistryKey Id = ' DteClsidRegKey ' Root = ' HKCR ' Key = ' $ (var.DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' $ (var.短い Productname) DTE オブジェクト '/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT/CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \ localserver32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id = ' DteLocSrv32RegKey ' Root = ' HKCR ' Key = ' $ (var.DteClsidRegKey) \ localserver32 ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' [INSTALLDIR] $ (var.短い Productname) .exe '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE オブジェクト"|\<RegistryKey Id = ' DteClsidRegKey ' Root = ' HKCR ' Key = ' $ (var.DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey >|  
   
      この例では、Var. DteClsidRegKey は先頭行のレジストリキーに解決されます。 Var. 短い Productname が `PhotoStudio`に解決されます。  
   
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

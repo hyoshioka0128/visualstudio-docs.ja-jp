@@ -12,19 +12,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298726"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850451"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>モデリング拡張機能を定義およびインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、モデリング図に対して拡張機能を定義することができます。 これにより、図とモデルを各自のニーズに適応させることができます。 たとえば、メニュー コマンド、UML プロファイル、検証制約、およびツールボックスの項目を定義できます。 単一の拡張機能で複数のコンポーネントを定義できます。 また、これらの拡張機能を [VSIX (Visual Studio Integration Extension)](https://go.microsoft.com/fwlink/?LinkId=160780)の形式で他の Visual Studio ユーザーに配布することもできます。 Visual Studio で VSIX プロジェクトを使用して VSIX を作成できます。
+Visual Studio では、モデリング図に対して拡張機能を定義することができます。 これにより、図とモデルを各自のニーズに適応させることができます。 たとえば、メニュー コマンド、UML プロファイル、検証制約、およびツールボックスの項目を定義できます。 単一の拡張機能で複数のコンポーネントを定義できます。 また、これらの拡張機能を [VSIX (Visual Studio Integration Extension)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)の形式で他の Visual Studio ユーザーに配布することもできます。 Visual Studio で VSIX プロジェクトを使用して VSIX を作成できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -74,9 +74,9 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
         |||
         |-|-|
-        |**型** =|**Microsoft.VisualStudio.MefComponent**|
+        |**[種類]**  =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**現在のソリューション内のプロジェクト**|
-        |**プロジェクト** =|*クラスライブラリプロジェクト*|
+        |**Project** =|*クラスライブラリプロジェクト*|
         |**このフォルダーに埋め込み** =|*指定*|
 
          その他の種類のコンポーネントについては、次のセクションのリンクを参照してください。
@@ -140,5 +140,5 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
    *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [プロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[カスタムモデリングツールボックスアイテムを](../modeling/define-a-custom-modeling-toolbox-item.md)定義する[uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する[モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する

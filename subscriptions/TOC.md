@@ -2,7 +2,7 @@
 # [新機能](whats-new-in-subscriptions.md)
 # サブスクリプション
 ## サブスクリプションの購入
-### [小売](https://visualstudio.microsoft.com/vs/pricing)
+### [販売](https://visualstudio.microsoft.com/vs/pricing)
 ### クラウド 
 #### [概要](vscloud-overview.md)
 #### [請求に関する FAQ](vscloud-billing-faq.md)
@@ -88,7 +88,7 @@
 ### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
 ### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
 # リソース
-## [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
+## [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
 ## [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
 ## [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
