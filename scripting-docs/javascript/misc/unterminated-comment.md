@@ -1,5 +1,5 @@
 ---
-title: 未終了のコメントです。| Microsoft Docs
+title: 未終了のコメントです |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
