@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 55ec2cf2f2a6ebf4186f81f6f3dd61766acd7958
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852412"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918892"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズおよび拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()`をオーバーライドします。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>の例を参照してください。|
 |任意の図形に背景画像を設定する|InitializeInstanceResources () をオーバーライドして、固定された ImageField を追加します。 図の「[プレゼンテーションのカスタマイズ」を](../modeling/customizing-presentation-on-the-diagram.md)参照してください。|
 |図形を任意の深さに入れ子にする|再帰的な埋め込みツリーを設定します。 図形を含めるように BoundsRules を定義します。 図の「[プレゼンテーションのカスタマイズ」を](../modeling/customizing-presentation-on-the-diagram.md)参照してください。|
-|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)」を参照してください。|
+|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。|
 |テキストフィールド他の値から派生した値が表示されます。|テキストデコレータを計算済みまたはカスタムのストレージドメインプロパティにマップします。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。|
 |モデル要素間または図形間での変更の反映|「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。|
 |ストアの外部にある他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能などのリソースに変更を反映します。|「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。|

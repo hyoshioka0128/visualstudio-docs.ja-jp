@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7d76bf1a889f7c91ced6b85ce16ebeb6e9a1b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd46d2164ccb3cd26831160235b992d699229e2c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737511"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916191"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>エラー: リモート コンピューターが [リモート接続] ダイアログに表示されません
 リモート コンピューターが [リモート接続] ダイアログ ボックスに表示されない場合、下記の一般的な原因を確認してください。
 
- マネージド互換モードを使用している場合は、Visual Studio 2010 用のマニュアルの「[リモート デバッグのトラブルシューティング - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))」を調べてください。
+ マネージド互換モードを使用している場合は、Visual Studio 2010 用のマニュアルの「[リモート デバッグのトラブルシューティング - Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))」を調べてください。
 
 ### <a name="common-causes-for-this-error"></a>このエラーの一般的な原因
 

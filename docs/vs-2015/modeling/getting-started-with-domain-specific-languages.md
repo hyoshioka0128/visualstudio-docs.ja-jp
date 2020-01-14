@@ -9,19 +9,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c7e8ca0fa1558ce0a2d37d4e11a35ba10a27fd2d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847187"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919088"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、モデリング SDK for Visual Studio で作成されたドメイン固有言語 (DSL) の定義と使用に関する基本的な概念について説明します。
-
- Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>ドメイン固有の言語でできること
  ドメイン固有言語は、特定の目的に使用するように設計された表記で、通常はグラフィックです。 これに対して、UML などの言語は汎用的なものです。 DSL では、モデル要素とそのリレーションシップの種類と、それらを画面に表示する方法を定義できます。
@@ -42,7 +40,7 @@ ms.locfileid: "75847187"
 |||
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Visual Studio のモデリング SDK|[MSDK のダウンロード](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>DSL ソリューションの作成
@@ -399,4 +397,4 @@ ms.locfileid: "75847187"
 2. 引き続き使用する実験的な Dsl またはその他の試験的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能を再構築します。
 
 ## <a name="see-also"></a>参照
- [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [モデル、クラス、およびリレーションシップについ](../modeling/understanding-models-classes-and-relationships.md)て[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [visualizaton モデリング SDK](https://www.microsoft.com/download/details.aspx?id=48148)

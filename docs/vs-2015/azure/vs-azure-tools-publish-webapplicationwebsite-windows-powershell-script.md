@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846555"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915553"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -57,7 +57,7 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | ワイルドカード文字を許可する |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019)」を参照してください。
+Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md)」を参照してください。
 
 | パラメータ | 既定値 |
 | --- | --- |

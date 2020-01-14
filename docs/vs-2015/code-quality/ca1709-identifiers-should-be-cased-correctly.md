@@ -15,23 +15,23 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669192"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919233"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「 [CA1709: identifier は大文字にする必要があり](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)ます」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [CA1709: identifier は大文字にする必要があり](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)ます」を参照してください。
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|カテゴリ|Microsoft.Naming|
+|[カテゴリ]|Microsoft.Naming|
 |互換性に影響する変更点|中断-アセンブリ、名前空間、型、メンバー、およびパラメーターで発生した場合。<br /><br /> 非ブレーク-ジェネリック型パラメーターで発生した場合。|
 
 ## <a name="cause"></a>原因

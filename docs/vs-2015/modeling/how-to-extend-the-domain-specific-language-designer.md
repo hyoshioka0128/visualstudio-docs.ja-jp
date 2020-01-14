@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850691"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916798"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL 定義を編集するために使用するデザイナーの拡張機能を作成できます。 拡張の種類としては、メニューコマンドの追加、ドラッグアンドクリックによるジェスチャのハンドラーの追加、特定の種類の値や関係が変更されたときにトリガーされるルールなどがあります。 拡張機能は、Visual Studio Integration Extension (VSIX) としてパッケージ化し、他のユーザーに配布することができます。
-
- サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK (VMSDK)」 Web サイト](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)を参照してください。
 
 ## <a name="setting-up-the-solution"></a>ソリューションの設定
  拡張機能のコードを含むプロジェクトと、プロジェクトをエクスポートする VSIX プロジェクトを設定します。 ソリューションには、同じ VSIX に組み込まれている他のプロジェクトを含めることができます。

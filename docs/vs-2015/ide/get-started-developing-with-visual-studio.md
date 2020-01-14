@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f005ea0fce0ccf33902b6ebfd6822640782ef20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292055"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917593"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio を使用した開発の開始
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Visual Studio へようこそ。 製品を [ダウンロード](https://visualst
 
 - **[Web アプリを作成する](https://www.visualstudio.com/features/modern-web-tooling-vs):** 最新の Web アプリケーションを作成して配置するツール。
 
-     [チュートリアルの実施](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [ドキュメントの参照](https://docs.asp.net/) &#124;                                   [ビデオを見る](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
+     [チュートリアルの実施](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [ドキュメントの参照](https://docs.asp.net/) &#124;                                   [ビデオを見る](/aspnet/core/?view=aspnetcore-3.0)
 
-- **[HTML/JavaScript (Apache Cordova) でクロスプラット フォームのモバイル アプリを作成する](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** :               Apache Cordova は HTML/CSS/JavaScript に基づいたオープンソースのクロスプラットフォーム環境です。  JavaScript コードは、特定のプラットフォームを対象とし、デバイスのすべてのハードウェア機能へのアクセスを可能にするラッパーで実行されます。 Apple Store、Android ストア、Windows ストア用のアプリを開発します。
+- **[HTML/JavaScript (Apache Cordova) でクロスプラット フォームのモバイル アプリを作成する](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** :               Apache Cordova は HTML/CSS/JavaScript に基づいたオープンソースのクロスプラットフォーム環境です。  JavaScript コードは、特定のプラットフォームを対象とし、デバイスのすべてのハードウェア機能へのアクセスを可能にするラッパーで実行されます。 Apple Store、Android ストア、Windows ストア用のアプリを開発します。
 
-     [サンプルの読み込み](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [チュートリアルの実施](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [ドキュメントの参照](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [ビデオを見る](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [サンプルの読み込み](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [チュートリアルの実施](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [ドキュメントの参照](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [ビデオを見る](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[C# または Visual Basic (Xamarin) でクロスプラットフォームのモバイル アプリを作成する](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio と Xamarin 用ツールを使用して、Android、iOS、およびユニバーサル Windows プラットフォーム上で共有コード ベースから実行されるモバイル アプリの作成を開始します。
 

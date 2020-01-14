@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849939"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917096"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>サーバー エクスプローラーから Azure Virtual Machines へのアクセス
 
@@ -31,7 +31,7 @@ Azure でホストされている仮想マシンがある場合は、サーバ�
    | DNS 名 |仮想マシンのインターネット アドレスを含む URL。 |
    | 環境 |仮想マシンの場合、このプロパティの値は常に [運用] です。 |
    | [名前] |仮想マシンの名前。 |
-   | サイズ |仮想マシンのサイズ。使用できるメモリとディスク領域のサイズが反映されます。 詳細については、[仮想マシンのサイズ](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)に関する記事をご覧ください。 |
+   | サイズ |仮想マシンのサイズ。使用できるメモリとディスク領域のサイズが反映されます。 詳細については、[仮想マシンのサイズ](/azure/cloud-services/cloud-services-sizes-specs)に関する記事をご覧ください。 |
    | 状態 |"開始中"、"開始"、"停止中"、"停止"、"状態を取得中" などの値があります。 "状態を取得中" と表示された場合、現在の状態は不明です。 このプロパティの値は、[Azure Portal](https://portal.azure.com/) で使用される値とは異なります。 |
    | SubscriptionID |ご利用の Azure アカウントのサブスクリプション ID。 この情報を [Azure Portal](https://portal.azure.com/) に表示するには、サブスクリプションのプロパティを表示します。 |
 2. エンドポイント ノードを選択し、 **[プロパティ]** ウィンドウを表示します。

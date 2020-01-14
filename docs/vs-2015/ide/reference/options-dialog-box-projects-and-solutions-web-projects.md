@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 90da4845ca5edcf68a977ea79a73e06fa4c4455b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297872"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917667"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト]\([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,6 +29,6 @@ ms.locfileid: "74297872"
 > 使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**Web 設定**を考慮して記述されています。 設定を表示または変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="settings"></a>設定
- **Web サイトおよびプロジェクトに64ビットバージョンの IIS Express を使用する**Visual Studio 開発サーバーではなく IIS Express を使用するには、このオプションを選択します。 詳細については、「[Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express)」 (IIS Express の紹介) と「[IIS Express の概要](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)」を参照してください。 このオプションは、既定の設定で無効になっています。
+ **Web サイトおよびプロジェクトに64ビットバージョンの IIS Express を使用する**Visual Studio 開発サーバーではなく IIS Express を使用するには、このオプションを選択します。 詳細については、「[Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express)」 (IIS Express の紹介) と「[IIS Express の概要](/iis/extensions/introduction-to-iis-express/iis-express-overview)」を参照してください。 このオプションは、既定の設定で無効になっています。
 
  **[エラー一覧にエラーがある場合に web アプリケーションを実行する前に警告する]** このチェックボックスをオンにすると、web アプリケーションがエラーなしでコンパイルされない場合に実行しようとすると、警告が表示されます。

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849925"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918572"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用したコード生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "75849925"
  このプロジェクト例では、テンプレートでサンプル XML ファイルを読み取り、ノードの各型に対応するクラスを生成します。 手入力のコードでは、これらのクラスを使用して XML ファイルを操作できます。 また、同じノード型を使用する他のファイルでも、アプリケーションを実行できます。 サンプル XML ファイルの目的は、アプリケーションで対応できるようにするすべてのノード型の例を提供することです。
 
 > [!NOTE]
-> [に含まれるアプリケーション](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
+> [に含まれるアプリケーション](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
 
  サンプル ファイルは次のとおりです。
 

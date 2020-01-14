@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295554"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915984"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>方法: 機能拡張プロジェクトを Visual Studio 2015 に移行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "74295554"
   
 2. アップグレードが完了したら、外部プログラムのパスを devenv.exe の新しいバージョンに変更します。 **ソリューションエクスプローラー**でプロジェクトノードを右クリックし、 **[プロパティ]** を選択します。 **[デバッグ]** タブで、 **[外部プログラムを開始]** のテキストボックスを見つけ、Devenv.exe のパスを Visual Studio 2015 のパスに変更します。これは次のようになります。  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
 3. VisualStudio への参照を追加します。 (**ソリューションエクスプローラー**でプロジェクトノードを右クリックし、 **[追加/参照]** をクリックします。 **[拡張]** タブを選択し、 **14.0**を確認します。)  
   
@@ -45,7 +45,7 @@ ms.locfileid: "74295554"
   
 2. プロジェクトから VS SDK 参照アセンブリを選択し、右クリックして**削除**します。  
   
-3. VS SDK 参照アセンブリの NuGet バージョンを追加します。  **ソリューションエクスプローラー参照** ノードで、**NuGet パッケージの管理** を開きます。 ダイアログで、ユーザー アカウントを追加します。  このダイアログの詳細については、「[ダイアログを使用した NuGet パッケージの管理](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。 VS SDK 参照アセンブリは、 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)によって[nuget.org](https://www.nuget.org/)に公開されます。  
+3. VS SDK 参照アセンブリの NuGet バージョンを追加します。  **ソリューションエクスプローラー参照** ノードで、**NuGet パッケージの管理** を開きます。 ダイアログで、ユーザー アカウントを追加します。  このダイアログの詳細については、「[ダイアログを使用した NuGet パッケージの管理](/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。 VS SDK 参照アセンブリは、 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)によって[nuget.org](https://www.nuget.org/)に公開されます。  
   
 4. **パッケージソース**として**nuget.org**を使用して、目的の参照アセンブリに一致する nuget パッケージ名 (例: VisualStudio) を検索し、プロジェクトにインストールします。  NuGet では、初期アセンブリの依存関係を満たすために、複数の参照アセンブリを追加できます。  
   

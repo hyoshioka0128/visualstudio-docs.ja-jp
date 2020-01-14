@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666682"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918763"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: シリアル化メソッドを正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「 [CA2238: シリアル化メソッドの適切な実装](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [CA2238: シリアル化メソッドの適切な実装](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)」を参照してください。
 
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|カテゴリ|Microsoft. 使用方法|
+|[カテゴリ]|Microsoft.Usage|
 |互換性に影響する変更点|中断-メソッドがアセンブリの外部で参照可能な場合。<br /><br /> 非互換性-メソッドがアセンブリの外部で参照できない場合。|
 
 ## <a name="cause"></a>原因
@@ -48,7 +48,7 @@ Visual Studio の最新のドキュメントについては、「 [CA2238: シ�
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  シリアル化イベントハンドラーは <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 型の1つのパラメーターを受け取り `void` を返し、`private` 可視性を持ちます。
+  シリアル化イベントハンドラーは <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>型の1つのパラメーターを受け取り `void`を返し、`private` 可視性を持ちます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、シリアル化イベントハンドラーの署名、戻り値の型、または可視性を修正します。
@@ -56,7 +56,7 @@ Visual Studio の最新のドキュメントについては、「 [CA2238: シ�
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
  次の例は、正しく宣言されたシリアル化イベントハンドラーを示しています。
 
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/cs/FxCop.Usage.SerializationEventHandlers.cs#1)]

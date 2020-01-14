@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671573"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918221"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: 適切な用語を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「 [CA1726: Use 好ましい terms](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms)」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [CA1726: Use 好ましい terms](/visualstudio/code-quality/ca1726-use-preferred-terms)」を参照してください。
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|カテゴリ|Microsoft.Naming|
+|[カテゴリ]|Microsoft.Naming|
 |互換性に影響する変更点|中断-アセンブリで発生した場合<br /><br /> 中断なし-型パラメーターで発生した場合|
 
 ## <a name="cause"></a>原因
@@ -49,7 +49,7 @@ Visual Studio の最新のドキュメントについては、「 [CA1726: Use �
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` または `Flags`|置換語句はありません。 使用しないでください。|
+|`Flag` または `Flags`|置換語句はありません。 [使用しない]。|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

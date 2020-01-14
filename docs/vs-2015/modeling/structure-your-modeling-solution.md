@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850800"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917313"
 ---
 # <a name="structure-your-modeling-solution"></a>モデリング ソリューションの構築
 
@@ -34,7 +34,7 @@ ms.locfileid: "75850800"
 
 #### <a name="to-divide-an-application-into-layers"></a>1 つのアプリケーションを複数のレイヤーに分割するには
 
-1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN)」の「application アーキタイプ」で説明しています。
+1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](/previous-versions/msp-n-p/ee658107(v=pandp.10))」の「application アーキタイプ」で説明しています。
 
 2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。このソリューションを「アーキテクチャ ソリューション」と呼びます。 このソリューションは、システムの全体設計の作成に使われます。 このソリューションにはモデルは含まれますが、コードは含まれません。
 

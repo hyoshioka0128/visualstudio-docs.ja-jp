@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850385"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919201"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio の分離シェル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio の分離シェルを使用すると、他のバージョンの Vi
   
  分離シェルプロジェクトを操作するには、Visual Studio SDK をインストールする必要があります。 Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
- 分離シェルアプリケーションを作成するには、まず Visual Studio シェル分離プロジェクトを使用します。 このプロジェクトには、独自の分離シェルアプリケーションを開発およびテストするために必要なすべてのものが含まれています。 アプリケーションを配置するセットアッププログラムを作成する準備ができたら、 [Microsoft Visual Studio Shell (Isolated) 再頒布可能パッケージ](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J)から分離シェル再頒布可能パッケージを取得する必要があります。  
+ 分離シェルアプリケーションを作成するには、まず Visual Studio シェル分離プロジェクトを使用します。 このプロジェクトには、独自の分離シェルアプリケーションを開発およびテストするために必要なすべてのものが含まれています。 アプリケーションを配置するセットアッププログラムを作成する準備ができたら、 [Microsoft Visual Studio Shell (Isolated) 再頒布可能パッケージ](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)から分離シェル再頒布可能パッケージを取得する必要があります。  
   
 > [!NOTE]
 > 分離シェル再頒布可能パッケージにアクセスする前に、簡単な顧客アンケートにご記入ください。  アンケートの入力後に、再頒布可能パッケージのダウンロード リンクを含む Visual Studio の接続ページに移動します。  ダウンロードリンクについては、後で Visual Studio Connect サイトにアクセスするときに、[**プログラム&#124; ] [VISUAL STUDIO 2015 統合および分離シェル**] タブで確認できます。  

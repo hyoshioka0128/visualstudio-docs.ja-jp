@@ -11,26 +11,26 @@ ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: b1617ab8bd61857b29d78dc800ca70e26a7c8ff2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852274"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915610"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ
 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 実際には、IntelliTrace は Azure アプリケーションが Azure のクラウド サービスとして実行されている際にキー コードの実行および環境データを記録し、その記録されたデータを Visual Studio で再生できるようにします。 
 
 Visual Studio Enterprise がインストールされており、Azure アプリケーションが .NET Framework 4 以降のバージョンを対象としている場合に IntelliTrace を使用することができます。 IntelliTrace は、Azure ロールの情報を収集します。 これらのロールの仮想マシンは、常に 64 ビット オペレーティング システムを実行します。
 
-代わりに、[リモート デバッグ](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debugging-cloud-services-overview?view=vs-2019)を使用して、Azure で実行されているクラウド サービスに直接接続することができます。
+代わりに、[リモート デバッグ](vs-azure-tools-debugging-cloud-services-overview.md)を使用して、Azure で実行されているクラウド サービスに直接接続することができます。
 
 > [!IMPORTANT]
 > IntelliTrace は、デバッグ シナリオのみを対象としており、運用環境のデプロイには使用できません。
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>IntelliTrace の Azure アプリケーションを構成する
-IntelliTrace を Azure アプリケーションで有効にするには、Visual Studio Azure プロジェクトからアプリケーションを作成し、発行する必要があります。 IntelliTrace は Azure に発行する前に Azure アプリケーション向けに構成する必要があります。 IntelliTrace を構成せずにアプリケーションを発行する場合は、プロジェクトを再発行する必要があります。 詳細については、[Visual Studio を使用した Azure クラウド サービス プロジェクトの発行](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019)に関する記事をご覧ください。
+IntelliTrace を Azure アプリケーションで有効にするには、Visual Studio Azure プロジェクトからアプリケーションを作成し、発行する必要があります。 IntelliTrace は Azure に発行する前に Azure アプリケーション向けに構成する必要があります。 IntelliTrace を構成せずにアプリケーションを発行する場合は、プロジェクトを再発行する必要があります。 詳細については、[Visual Studio を使用した Azure クラウド サービス プロジェクトの発行](vs-azure-tools-publishing-a-cloud-service.md)に関する記事をご覧ください。
 
 1. Azure アプリケーションをデプロイする準備ができたら、プロジェクトのビルド ターゲットが **[デバッグ]** に設定されていることを確認します。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298194"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918776"
 ---
 # <a name="getting-started-with-python"></a>Python の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Python を使用した UI 構築の主要なオファリングは[Qt プロジ�
   
 Windows、Mac、および Linux をサポートしている Azure SDK for Python を使用すると、Microsoft Azure サービスの使用と管理が簡単になります。 詳細については、次のリソースを参照してください。 
 
-- SDK をインストールするには、「[Python Package Index (Python パッケージ インデックス)](https://pypi.python.org/pypi/azure)」を使用するか、Azure ドキュメントの 「[Python と SDK のインストール](https://docs.microsoft.com/azure/python/python-sdk-azure-install)」の手順に従ってください。 
+- SDK をインストールするには、「[Python Package Index (Python パッケージ インデックス)](https://pypi.python.org/pypi/azure)」を使用するか、Azure ドキュメントの 「[Python と SDK のインストール](/azure/python/python-sdk-azure-install)」の手順に従ってください。 
 - [Azure SDK for Python デベロッパー センター](https://azure.microsoft.com/develop/python/)には、チュートリアルによるインストールからドキュメント化までの多数のヘルプがあります。  いくつかの要点を以下に示します。  
 - 使い方ガイド:
   - [Python から Azure BLOB ストレージを使用する方法](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
@@ -89,7 +89,7 @@ Windows、Mac、および Linux をサポートしている Azure SDK for Python
 
 IPython と科学技術計算のライブラリ (matplotlib、scipy、numpy など) を[カリフォルニア大学アーバイン校](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack)から入手することをお勧めします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
 
 [PTVS の概要: Visual Studio のセットアップ](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [PTVS の概要: コーディングの開始 (プロジェクト)](../python/getting-started-with-ptvs-start-coding-projects.md)

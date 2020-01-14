@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851898"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915600"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>クラウド サービスのパフォーマンスのテスト
 ## <a name="overview"></a>の概要
 クラウド サービスのパフォーマンスは次の方法でテストすることができます。
 
-* Azure Diagnostics を使用して、要求と接続に関する情報を収集し、顧客の観点からサービスを実行する方法を示すサイトの統計情報を確認します。 開始するには、「 [Azure Cloud Services および Virtual Machines 用の診断の構成](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019)」を参照してください。
+* Azure Diagnostics を使用して、要求と接続に関する情報を収集し、顧客の観点からサービスを実行する方法を示すサイトの統計情報を確認します。 開始するには、「 [Azure Cloud Services および Virtual Machines 用の診断の構成](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)」を参照してください。
 * Virtual Studio のプロファイラーを使用して、サービスの実行方法について計算的側面から詳細な分析を取得します。 このトピックの説明のように、プロファイラーを使用して Azure で実行されるサービスのパフォーマンスを測定できます。 計算エミュレーターでローカルに実行されるサービスのパフォーマンスをプロファイラーで測定する方法については、「 [Visual Studio プロファイラーを使用した、Azure 計算エミュレーターでのクラウド サービスのパフォーマンスのローカルなテスト](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/)」を参照してください。
 
 ## <a name="choosing-a-performance-testing-method"></a>パフォーマンスのテスト方法を選択する
@@ -84,7 +84,7 @@ Visual Studio でのパフォーマンスのプロファイルの詳細につい
 > 
 
 ### <a name="to-configure-profiling-settings"></a>プロファイル設定を構成するには
-1. ソリューション エクスプローラーで Azure プロジェクトのショートカット メニューを開き、 **[発行]** を選択します。 クラウド サービスを発行する方法の詳細については、「 [Azure Tools を使用したクラウド サービスの発行](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019)」を参照してください。
+1. ソリューション エクスプローラーで Azure プロジェクトのショートカット メニューを開き、 **[発行]** を選択します。 クラウド サービスを発行する方法の詳細については、「 [Azure Tools を使用したクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)」を参照してください。
 2. **[Azure アプリケーションの公開]** ダイアログ ボックスで、 **[詳細設定]** タブを選択します。
 3. プロファイルを有効にするには、 **[プロファイルを有効にする]** チェック ボックスをオンにします。
 4. プロファイル設定を構成するには、 **[設定]** ハイパーリンクをクリックします。 [プロファイル設定] ダイアログ ボックスが表示されます。

@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cf4d63d7d00e91daa2564992f801896075f73aab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849888"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918942"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>実行中のプロセスへのアタッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ ms.locfileid: "75849888"
 
 信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーによって所有されているプロセスにアタッチすると、危険なことができます。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)。
 
-リモート デスクトップ (ターミナル サービス) セッションでのデバッグ時には、 **[選択可能なプロセス]** ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 Visual Studio を、制限付きユーザー アカウントを持つユーザーとして実行している場合、 **[選択可能なプロセス]** ボックスの一覧には、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行するか、ターミナル サービス セッションからではなくサーバー コンソールから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。 これらの回避策のいずれも使用できない場合は、Windows コマンドラインから `vsjitdebugger.exe -p` *ProcessId*を実行してプロセスにアタッチすることをお勧めします。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、「  [WDK と WinDbg のダウンロード](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)」で Windows 対応のデバッグ ツールをダウンロードし、インストールします。
+リモート デスクトップ (ターミナル サービス) セッションでのデバッグ時には、 **[選択可能なプロセス]** ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 Visual Studio を、制限付きユーザー アカウントを持つユーザーとして実行している場合、 **[選択可能なプロセス]** ボックスの一覧には、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行するか、ターミナル サービス セッションからではなくサーバー コンソールから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。 これらの回避策のいずれも使用できない場合は、Windows コマンドラインから `vsjitdebugger.exe -p` *ProcessId*を実行してプロセスにアタッチすることをお勧めします。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、「  [WDK と WinDbg のダウンロード](/windows-hardware/drivers/dashboard/)」で Windows 対応のデバッグ ツールをダウンロードし、インストールします。
 
 ## <a name="BKMK_Scenarios"></a>一般的なデバッグシナリオ
 

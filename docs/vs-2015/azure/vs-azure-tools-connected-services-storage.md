@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 8b03d1e698108fac2f81d1e3263d7b38ff82b1dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852346"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916694"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加
 Visual Studio では、 **[接続済みサービスの追加]** ダイアログを使用して、次のサービスを Azure Storage に接続できます。
@@ -63,12 +63,12 @@ Visual Studio では、 **[接続済みサービスの追加]** ダイアログ�
 ## <a name="how-your-project-is-modified"></a>プロジェクトを変更する方法
 ダイアログが完了すると、Visual Studio は参照を追加し、特定の構成ファイルを変更します。 具体的な変更内容はプロジェクトの種類によって異なります。
 
-- ASP.NET プロジェクト - [変更内容 – ASP.NET プロジェクト](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- ASP.NET Core プロジェクト - [変更内容 – ASP.NET 5 プロジェクト](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- クラウド サービス プロジェクト (Web ロールおよび worker ロール) - [変更内容 – クラウド サービス プロジェクト](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
+- ASP.NET プロジェクト - [変更内容 – ASP.NET プロジェクト](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core プロジェクト - [変更内容 – ASP.NET 5 プロジェクト](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- クラウド サービス プロジェクト (Web ロールおよび worker ロール) - [変更内容 – クラウド サービス プロジェクト](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob プロジェクト - [変更内容 - WebJob プロジェクト](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>次のステップ:
 - [MSDN フォーラム: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure Storage チーム ブログ](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-- [Azure Storage のドキュメント](https://docs.microsoft.com/azure/storage/)
+- [Azure Storage のドキュメント](/azure/storage/)

@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844915"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918270"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|
 |概念クラスからコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
- 概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。 次の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能では、方向性を示さない矢印が既定の設定になります: [サンプル: UML ドメイン モデリング機能](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ 概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。
@@ -239,4 +239,4 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
   さまざまな図が提供するビュー間の関係を調べることで、ユーザーの作業に関する主要な概念をすばやく理解し、システムに何が必要かをユーザーが理解できるようにします。 また、利害関係者がほとんど意識していない要求についても、より深く理解することができます。 プロジェクトの初期段階で、これらの機能を少なくとも簡略化された形式で開発し、ユーザーがその機能を試してみることを計画できます。
 
 ## <a name="see-also"></a>参照
- [Uml モデルおよび図の編集](../modeling/edit-uml-models-and-diagrams.md)[モデルからのテストの作成](../modeling/develop-tests-from-a-model.md)[開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)の使用モデル[サンプル vs 拡張機能: uml ドメインモデリング機能](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)サンプル Vs 拡張機能: uml 要素を[ステレオタイプ別に色](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)を設定するサンプル vs 拡張機能: uml[図に](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)uml[要素をリンクする](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)[ビデオ: ビジネスドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)[モデルからのテストの作成](../modeling/develop-tests-from-a-model.md)[開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)[ビデオ: ビジネスドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
