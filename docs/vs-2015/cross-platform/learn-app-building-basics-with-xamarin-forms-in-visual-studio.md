@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 09da3bd59163cbef8b33b1d5ece732330e32eac7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299763"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918928"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio での Xamarin Froms を使用したアプリ作成の基本事項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74299763"
 
 1. Visual Studio では、新しい **[空のアプリケーション (Xamarin.Forms ポータブル)]** ソリューションを作成し、名前を「 **WeatherApp**」とします。 このテンプレートは、検索フィールドに「 **Xamarin.Forms** 」と入力することによって、最も簡単に見つけることができます。
 
-     これがない場合は、Xamarin をインストールするか、Visual Studio 2015 の機能を有効にする必要があります。「[セットアップとインストール](../cross-platform/setup-and-install.md)」をご覧ください。
+     これがない場合は、Xamarin をインストールするか、Visual Studio 2015 の機能を有効にする必要があります。「 [Setup and install](../cross-platform/setup-and-install.md)」をご覧ください。
 
      ![新しい空のアプリケーション&#40;Xamarin. フォームポータブル&#41;プロジェクトを作成する](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin フォームガイド2")
 
@@ -71,7 +71,7 @@ ms.locfileid: "74299763"
 
     - **[バージョン]** フィールドを利用可能な **最新の安定した** バージョンに更新します。
 
-    - **[Update]** をクリックします。
+    - **[更新]** をクリックします。
 
          ![Xamarin. Forms NuGet パッケージの更新](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin フォームガイド4")
 
@@ -287,10 +287,10 @@ ms.locfileid: "74299763"
 
      ![ボタンをタップする前と後の Weather アプリ](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin フォームガイド8")
 
-## <a name="finish"></a>UI の外観をすべてのプラットフォームについてネイティブなものにする
+## <a name="finish"></a> プラットフォーム間で UI をネイティブの外観で終了する
  Xamarin.Forms は各プラットフォームのネイティブ UI コントロールをレンダリングして、アプリが自動的にネイティブな外観を持つようにします。 これをさらに見やすくするには、郵便番号用の入力フィールドで UI を終了し、サービスから返された気象データを表示します。
 
-1. **WeatherPage.xaml** の内容を次のコードで置き換えます。 すべての要素は、前述のとおり **x:Name** 属性を使用して名前を付けられ、それらの要素がコードから参照できるようになっていることに注意してください。 Xamarin.Forms は、さまざまな [レイアウト オプション](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com) も提供します。ここで、WeatherPage は [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com) を使用しています。
+1. **WeatherPage.xaml** の内容を次のコードで置き換えます。 すべての要素は、前述のとおり **x:Name** 属性を使用して名前を付けられ、それらの要素がコードから参照できるようになっていることに注意してください。 Xamarin.Forms は、さまざまな [レイアウト オプション](/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com) も提供します。ここで、WeatherPage は [StackLayout](/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com) を使用しています。
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ ms.locfileid: "74299763"
    </ContentPage>
    ```
 
-    Xamarin.Forms の **OnPlatform** タグの使用に注意してください。 **OnPlatform** により、アプリが実行されている現在のプラットフォーム固有のプロパティ値が選択されます ( [外部 XAML 構文](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com) をご覧ください)。 このタグは、個々のデータ フィールドにテキストの色を設定するために使用します。Android と Windows Phone には白、iOS には黒を指定します。 **OnPlatform** を任意のプロパティおよび任意のデータ型に対して使用し、プラットフォーム固有の調整を XAML の任意の場所に行うことができます。 分離コード ファイルで、 [Device.OnPlatform API](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) を同じ目的のために使用することができます。
+    Xamarin.Forms の **OnPlatform** タグの使用に注意してください。 **OnPlatform** により、アプリが実行されている現在のプラットフォーム固有のプロパティ値が選択されます ( [外部 XAML 構文](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com) をご覧ください)。 このタグは、個々のデータ フィールドにテキストの色を設定するために使用します。Android と Windows Phone には白、iOS には黒を指定します。 **OnPlatform** を任意のプロパティおよび任意のデータ型に対して使用し、プラットフォーム固有の調整を XAML の任意の場所に行うことができます。 分離コード ファイルで、 [Device.OnPlatform API](/xamarin/xamarin-forms/platform/device) を同じ目的のために使用することができます。
 
 2. **WeatherPage.xaml.cs**で、 **GetWeatherBtn_Clicked** イベント ハンドラーを次のコードで置き換えます。 このコードは、入力フィールドに郵便番号があることを確認し、その郵便番号のデータを取得し、全画面のバインド コンテキストを結果の Weather インスタンスに設定してから、ボタン テキストを “再検索” に設定します。 UI の各ラベルが Weather クラスのプロパティにバインドされるため、画面のバインド コンテキストを **Weather** インスタンスに設定すると、それらのラベルが自動的に更新されることに注意してください。
 

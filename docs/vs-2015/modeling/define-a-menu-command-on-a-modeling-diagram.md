@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850461"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918836"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>モデリング図にメニュー コマンドを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,4 +363,5 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>参照
- [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[モデリング図にジェスチャハンドラーを](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[するカスタムモデリングツールボックスアイテムを定義する](../modeling/define-a-custom-modeling-toolbox-item.md)UML[モデルの検証制約の定義](../modeling/define-validation-constraints-for-uml-models.md)uml API を使用した Uml モデルの[編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)Uml [api](../modeling/programming-with-the-uml-api.md)の[サンプル: uml 図で図形を整列するコマンド](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[モデリング図にジェスチャハンドラーを](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[するカスタムモデリングツールボックス項目を定義する](../modeling/define-a-custom-modeling-toolbox-item.md) [uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する uml api を使用して uml シーケンス図を編集する uml [api](../modeling/programming-with-the-uml-api.md)を使用し[て uml シーケンス図を編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)する
+ 

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846360"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918624"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office での COM、VSTO、および VBA アドインの開発に関するベストプラクティス
   Office 用の COM、VSTO、または VBA アドインを開発している場合は、この記事で説明されている開発のベストプラクティスに従ってください。   これにより、次のメリットが得られます。
@@ -61,7 +61,7 @@ VBA コードを記述する場合は、64ビットセーフな declare ステ�
 
 Office クライアントアプリケーション (Word、Excel など) のサポートステートメントを提供するには、まず、アドインが現在の Office リリースで実行されていることを確認し、今後のリリースでアドインが破損した場合に、更新プログラムの提供を確定します。 Microsoft が新しいビルドをリリースしたとき、または Office に更新プログラムをリリースしたときに、アドインをテストする必要はありません。 Microsoft では、Office の COM、VSTO、および VBA の拡張プラットフォームを変更することはほとんどありません。これらの変更については、ドキュメントをご覧ください。
 
->重要: Microsoft では、準備レポートと ISV 連絡先情報のサポートされているアドインの一覧を保持しています。 アドインを表示するには、「 [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows)」を参照してください。
+>重要: Microsoft では、準備レポートと ISV 連絡先情報のサポートされているアドインの一覧を保持しています。 アドインを表示するには、「 [/configmgr/desktop-analytics/ready-for-windows](/configmgr/desktop-analytics/ready-for-windows)」を参照してください。
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>プロセスモニターを使用してインストールまたは読み込みに関する問題をデバッグする
 インストールまたは読み込み中にアドインに互換性の問題がある場合は、ファイルまたはレジストリへのアクセスに関する問題に関連している可能性があります。 [プロセスモニター](/sysinternals/downloads/procmon)または同様のデバッグツールを使用して、動作中の環境に対する動作をログに記録して比較し、問題を特定することができます。

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 72c5968fccb55a265639ff05c600bd5f97a9f90a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852104"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919056"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 定義への拡張機能の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ DSL 定義の拡張機能を使用すると、ドメイン固有言語 (DSL) に
 
   拡張 DSL のユーザーは、追加機能のインスタンスを含むモデルを作成して保存できます。また、適切な拡張機能をインストールした他のユーザーがそれらを読み取ることができます。 拡張機能をインストールしていないユーザーは、追加機能を使用できませんが、追加の機能を失うことなく、モデルを更新して保存することができます。
 
-  サンプルコードとこの機能の詳細については、「 [Visual Studio の視覚化とモデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 」 Web サイトを参照してください。
+  サンプルコードとこの機能の詳細については、「 [Visual Studio の視覚化とモデリング SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) 」 Web サイトを参照してください。
 
 ## <a name="see-also"></a>参照
- [Visual Studio の視覚化およびモデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Visual Studio の視覚化およびモデリング SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

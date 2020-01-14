@@ -12,17 +12,17 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9403121a235d71a42639121458fc37607180b18a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851338"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944253"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラーのレジストリ情報を生成する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-RegPkg ユーティリティを使用して、マネージ VSPackage の登録マニフェストを生成できます。 マニフェストは、Windows インストーラーセットアップパッケージに組み込むことができます。 RegPkg では、 [WINDOWS インストーラー XML ツールセット](http://wix.sourceforge.net/)に基づいてセットアップのソースファイルに含めることができるファイルを生成することもできます。  
+RegPkg ユーティリティを使用して、マネージ VSPackage の登録マニフェストを生成できます。 マニフェストは、Windows インストーラーセットアップパッケージに組み込むことができます。 RegPkg では、 [WINDOWS インストーラー XML ツールセット](https://documentation.help/WiX-Toolset/index.html)に基づいてセットアップのソースファイルに含めることができるファイルを生成することもできます。
   
 > [!IMPORTANT]
 > RegPkg では、開発システムに固有のパス名が生成されるため、RegPkg を使用するたびに、適切な Windows インストーラー書式設定されたプロパティを使用するように出力を編集する必要があります。 たとえば、InprocServer32 値は **[Systemfolder] mscoree.dll .dll**で、パスは **[#filekey]** および **[$componentkey]** を使用する必要があります。 この方法で出力を調整すると、別のドライブまたは別のディレクトリに Windows がインストールされているコンピューター、ローカライズされたディレクトリ名、およびユーザーが選択できるパスがサポートされます。 詳細については、「Windows インストーラー SDK での[書式設定](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp)」を参照してください。 開発システムパスの RegPkg 規則 (たとえば、形式 File_*filename*) に従う場合は、変更を減らす必要があります。  

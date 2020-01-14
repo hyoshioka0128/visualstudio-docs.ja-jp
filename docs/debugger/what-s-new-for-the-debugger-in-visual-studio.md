@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210590"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944227"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 のデバッガーの新機能
 
@@ -46,29 +46,29 @@ ms.locfileid: "71210590"
 
     ![[前に戻る] ボタンと [次へ進む] ボタン](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
 
-    詳細について、[IntelliTrace を使用して以前のアプリの状態を検査する](../debugger/view-historical-application-state.md)方法に関するページを参照してください。
+    詳細について、[IntelliTrace を使用して以前のアプリの状態を検査する](view-historical-application-state.md)方法に関するページを参照してください。
 
 - 例外**ヘルパー**は、例外処理アシスタントを置き換え、エラーが発生した非モーダルダイアログボックスに表示されます。 **例外ヘルパー**を使用すると、内部例外にすばやくアクセスでき、デバッガーによる追加の分析 (利用可能な場合) が可能になり、例外の**例外設定**にすぐにアクセスできるようになります。 例外ヘルパーは、表示する必要があるものをブロックしている場合に、フローティングビューにドラッグすることもできます。
 
     たとえば、 **NullReferenceException**は、null 参照 (追加情報) を持つ変数を表示するようになりました。
 
-    ![デバッガーの例外ヘルパー](../debugger/media/dbg-exception-helper.png "Dbgexceptionhelper")
+    ![デバッガーの例外ヘルパー](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    詳細については、「[Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)」 (Visual Studio で新しい例外ヘルパーを使用する) のブログの投稿を参照してください。
+    詳細については、「[Using the New Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/)」 (Visual Studio で新しい例外ヘルパーを使用する) のブログの投稿を参照してください。
 
 - デバッガーで一時停止中にコード行を実行できるようになりました。**この**緑色の矢印アイコンをクリックすると、コード行の上にカーソルを置くとアイコンが表示されます。 これにより、一時的なブレークポイントを設定する必要がなくなります。
 
-    ![デバッガーの実行をクリックし]ます(../debugger/media/dbg-run-to-click.png "Dbgruntoclick")
+    ![デバッガーの実行をクリックします](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
 - 例外 **[設定]** ダイアログボックスで例外の条件を設定できます (これを行うには、例外設定 ダイアログボックスの **[条件の編集]** アイコンを使用するか、例外の右クリックメニューを使用します)。現在サポートされている条件には、例外に含めたり除外したりするモジュール名が含まれます。
 
-    ![例外に関する条件](../debugger/media/dbg-conditional-exception.png "Dbgconditionalexception")
+    ![例外に関する条件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
 - [プロセスにアタッチ] ダイアログボックスには、アタッチする必要があるプロセスをより迅速に識別するのに役立つ新しい検索機能が追加されています。
 
-    ![プロセスにアタッチして検索](../debugger/media/dbg-attach-to-process-search.png "Dbgattachtoprocesssearch")
+    ![プロセスにアタッチして検索](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-これらの新機能の詳細については、「」 [ [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]のリリースノート](/visualstudio/releasenotes/vs2017-relnotes)を参照してください。
+これらの新機能の詳細については、 [[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]のリリースノート](/visualstudio/releasenotes/vs2017-relnotes)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

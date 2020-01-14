@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299678"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917330"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Visual&#39;STUDIO 2015 SDK の新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Visual Studio 2017 以降では、カスタムプロジェクトと項目テン�
 - [Image Service Tools](../extensibility/internals/image-service-tools.md)を使用すると、Visual Studio のイメージマニフェストファイルを操作できます。
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Visual Studio SDK を Visual Studio に追加するための新しい方法
- Visual Studio 2015 以降では、Visual Studio SDK を個別にダウンロードする必要はありません。 代わりに、通常のインストールプロセスの一部としてインストールすることも、後でインストールすることもできます。 VSIX ソリューションを開いたり作成したりすると、Visual Studio によって Visual Studio Extensibility Tools をインストールするように求めるメッセージが表示されます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
+ Visual Studio 2015 以降では、Visual Studio SDK を個別にダウンロードする必要はありません。 代わりに、通常のインストールプロセスの一部としてインストールすることも、後でインストールすることもできます。 VSIX ソリューションを開いたり作成したりすると、Visual Studio によって Visual Studio Extensibility Tools をインストールするように求めるメッセージが表示されます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
 
 ## <a name="new-ways-of-creating-extensions"></a>拡張機能を作成するための新しい方法
  Visual Studio 2015 SDK 以降では、使用しているプログラミング言語に応じて、拡張機能を作成するためのさまざまなオプションが用意されています。
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# および Visual Basic
- C#と Visual Basic には、vspackage、メニューコマンド、ツールウィンドウ、エディター分類子、エディターの装飾、エディターの余白拡張機能を作成するためのプロジェクト項目テンプレートが豊富に用意されています。 これらのいずれかまたはすべてを標準の VSIX プロジェクトに追加できます。 詳細については、次をご覧ください。
+ C#と Visual Basic には、vspackage、メニューコマンド、ツールウィンドウ、エディター分類子、エディターの装飾、エディターの余白拡張機能を作成するためのプロジェクト項目テンプレートが豊富に用意されています。 これらのいずれかまたはすべてを標準の VSIX プロジェクトに追加できます。 詳細については、次のトピックを参照してください。
 
 - [メニュー コマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ Visual Studio 2017 以降では、カスタムプロジェクトと項目テン�
  のC++場合、VSPackage ウィザードでは、メニューコマンド、ツールウィンドウ、およびカスタムエディターがサポートされています。 **ビジュアルC++ /機能拡張**の **[新しいプロジェクト]** ダイアログで検索します。
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>NuGet を使用した VS SDK 参照アセンブリ
- 拡張機能プロジェクトの移植性と共有を強化するために、VS SDK 参照アセンブリの NuGet バージョンを使用できます。  これらは、 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)によって発行された[nuget.org](https://www.nuget.org/)で使用でき、Visual Studio の [参照] **/[nuget パッケージの管理**] ダイアログボックスを使用して簡単にプロジェクトまたはソリューションに追加できます。 VS SDK[メタパッケージ](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)を使用して、特定の機能拡張アセンブリに個別の参照を追加したり、すべての vs sdk 参照アセンブリを一度に追加したりできます。 NuGet の詳細については、「 [nuget の概要](https://docs.microsoft.com/nuget/)」および「[ダイアログを使用した Nuget パッケージの管理](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。
+ 拡張機能プロジェクトの移植性と共有を強化するために、VS SDK 参照アセンブリの NuGet バージョンを使用できます。  これらは、 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)によって発行された[nuget.org](https://www.nuget.org/)で使用でき、Visual Studio の [参照] **/[nuget パッケージの管理**] ダイアログボックスを使用して簡単にプロジェクトまたはソリューションに追加できます。 VS SDK[メタパッケージ](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)を使用して、特定の機能拡張アセンブリに個別の参照を追加したり、すべての vs sdk 参照アセンブリを一度に追加したりできます。 NuGet の詳細については、「 [nuget の概要](/nuget/)」および「[ダイアログを使用した Nuget パッケージの管理](/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。
 
  VS SDK 参照アセンブリの NuGet バージョンを使用する場合、プロジェクトを開いてビルドするために、別のユーザーが VS SDK をインストールする必要はありません。  NuGet 参照アセンブリと VS SDK ビルドツールは、そのプロジェクトのコンピューターに自動的にインストールされます。
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5d32a7efa050d04c848ec8add761d0d235e95304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 01c0c8613ec2e4fe72613867d623d510d9734e45
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849126"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917655"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する
 
@@ -179,7 +179,7 @@ WPF | Managed Desktop Workload コア | Microsoft.VisualStudio.Component.Managed
 
 ## <a name="find-component-ids"></a>コンポーネント Id の検索
 
-Visual Studio 製品によって並べ替えられたコンポーネントの一覧は、 [Visual studio 2017 のワークロードとコンポーネント id](https://docs.microsoft.com/visualstudio/install/workload-and-component-ids?view=vs-2019)にあります。 マニフェスト内の前提条件 Id には、これらのコンポーネント Id を使用します。
+Visual Studio 製品によって並べ替えられたコンポーネントの一覧は、 [Visual studio 2017 のワークロードとコンポーネント id](/visualstudio/install/workload-and-component-ids?view=vs-2019)にあります。 マニフェスト内の前提条件 Id には、これらのコンポーネント Id を使用します。
 
 どのコンポーネントには、特定のバイナリが含まれていますが不明な場合は、ダウンロード、[コンポーネント バイナリ マッピング スプレッドシート](https://aka.ms/vs2017componentid-binaries) します。
 

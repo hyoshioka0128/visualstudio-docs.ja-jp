@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431676"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916442"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>デバッグ エラーと警告関連のダイアログ ボックス
 ここでは、アプリケーションのデバッグ中に表示される可能性があるエラーおよび警告のダイアログ ボックスの一覧を示します。
@@ -58,14 +58,14 @@ ms.locfileid: "72431676"
 
  [エラー : "Debugging Isn't Possible Because a Kernel Debugger is Enabled on the System"](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション
  [スクリプトと Web のデバッグ: エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [リモート デバッグ エラー](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [アタッチ エラー](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [アタッチ エラー](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [SQL デバッグ セットアップのトラブルシューティング](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [SQL デバッグ セットアップのトラブルシューティング](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
 

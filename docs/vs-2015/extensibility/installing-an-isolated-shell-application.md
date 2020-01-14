@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851710"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944260"
 ---
 # <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "75851710"
   
 - Visual Studio SDK  
   
-- [WINDOWS インストーラー XML ツールセット](http://wix.sourceforge.net/)バージョン3.6  
+- [WINDOWS インストーラー XML ツールセット](https://documentation.help/WiX-Toolset/index.html/)バージョン3.6  
   
   このサンプルでは、すべてのシェルが必要としない Microsoft の視覚化およびモデリング SDK も必要です。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "75851710"
 2. VSIX マニフェストを含むプロジェクトごとに、ビルドタスクを編集して、MSI がインストールされる場所にコンテンツを出力します。 VSIX マニフェストをビルド出力に含めますが、.vsix ファイルはビルドしません。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>シェルの MSI の作成  
- MSI パッケージをビルドするには、標準のセットアッププロジェクトよりも柔軟性が高いため、 [WINDOWS インストーラー XML ツールセット](http://wix.sourceforge.net/)を使用することをお勧めします。  
+ MSI パッケージをビルドするには、標準のセットアッププロジェクトよりも柔軟性が高いため、 [WINDOWS インストーラー XML ツールセット](https://documentation.help/WiX-Toolset/index.html)を使用することをお勧めします。  
   
  製品の wxs ファイルで、検出ブロックとシェルコンポーネントのレイアウトを設定します。  
   

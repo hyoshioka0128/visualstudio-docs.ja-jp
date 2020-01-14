@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849996"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917355"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>サービス構成とプロファイルを管理する方法
 ## <a name="overview"></a>の概要
@@ -80,7 +80,7 @@ ms.locfileid: "75849996"
    
     新しいプロファイルが [ターゲット プロファイル] ボックスの一覧に表示されます。
 6. **[ターゲット プロファイル]** ボックスの一覧で、先ほど作成したプロファイルを選択します。 選択したプロファイルで選択されている内容が、発行ウィザードの設定項目に入力されます。
-7. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、このプロファイルの設定をカスタマイズします。 詳細については、 [Azure アプリケーションの公開ウィザード](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) に関するページを参照してください。
+7. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、このプロファイルの設定をカスタマイズします。 詳細については、 [Azure アプリケーションの公開ウィザード](vs-azure-tools-publish-azure-application-wizard.md) に関するページを参照してください。
 8. 設定のカスタマイズが完了したら、 **[次へ]** を選択して [設定] ページに戻ります。 プロファイルが保存されるのは、これらの設定を使用してサービスを発行したときか、プロファイルの一覧の横にある **[保存]** を選択したときです。
 
 ### <a name="to-rename-or-delete-a-profile"></a>プロファイルを削除するには
@@ -93,9 +93,9 @@ ms.locfileid: "75849996"
 ### <a name="to-change-a-profile"></a>プロファイルを変更するには
 1. Azure プロジェクトのショートカット メニューを開き、 **[発行]** を選択します。
 2. **[ターゲット プロファイル]** ボックスの一覧で、変更するプロファイルを選択します。
-3. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、目的の設定を変更します。 詳細については、 [Azure アプリケーションの公開ウィザード](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) に関するページを参照してください。
+3. **[前へ]** と **[次へ]** を選択して発行ウィザードの各ページを表示し、目的の設定を変更します。 詳細については、 [Azure アプリケーションの公開ウィザード](vs-azure-tools-publish-azure-application-wizard.md) に関するページを参照してください。
 4. 設定の変更が完了したら、 **[次へ]** を選択して **[設定]** ページに戻ります。
 5. (省略可能) **[発行]** を選択し、新しい設定を使用してクラウド サービスを発行します。 この時点でクラウド サービスを発行せずに発行ウィザードを閉じると、変更をプロファイルに保存するかどうかをたずねるメッセージが表示されます。
 
 ## <a name="next-steps"></a>次のステップ:
-Visual Studio で Azure プロジェクトの他の部分を構成する方法については、 [Azure プロジェクトの構成](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Visual Studio で Azure プロジェクトの他の部分を構成する方法については、 [Azure プロジェクトの構成](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

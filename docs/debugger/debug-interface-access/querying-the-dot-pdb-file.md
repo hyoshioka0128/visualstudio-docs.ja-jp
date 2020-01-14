@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738580"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917106"
 ---
 # <a name="querying-the-pdb-file"></a>.Pdb ファイルの照会
-プログラムデータベースファイル (拡張子 .pdb) は、プロジェクトのコンパイルとリンクの過程で収集された型とシンボリックデバッグ情報を含むバイナリファイルです。 PDB ファイルは、 **/zi**または **/zi**を使用しC++て C/プログラムをコンパイルするか、 **/debug**オプションを使用して [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]、または [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] プログラムをコンパイルすると作成されます。 オブジェクトファイルには、デバッグ情報の .pdb ファイルへの参照が含まれています。 Pdb ファイルの詳細については、「 [Pdb ファイル](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))」を参照してください。 DIA アプリケーションでは、次の一般的な手順を使用して、実行可能イメージ内のさまざまなシンボル、オブジェクト、およびデータ要素の詳細を取得できます。
+プログラムデータベースファイル (拡張子 .pdb) は、プロジェクトのコンパイルとリンクの過程で収集された型とシンボリックデバッグ情報を含むバイナリファイルです。 PDB ファイルは、 **/zi**または **/zi**を使用しC++て C/プログラムをコンパイルするか、 **/debug**オプションを使用して [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]、または [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] プログラムをコンパイルすると作成されます。 オブジェクトファイルには、デバッグ情報の .pdb ファイルへの参照が含まれています。 Pdb ファイルの詳細については、「 [Pdb ファイル](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))」を参照してください。 DIA アプリケーションでは、次の一般的な手順を使用して、実行可能イメージ内のさまざまなシンボル、オブジェクト、およびデータ要素の詳細を取得できます。
 
 ### <a name="to-query-the-pdb-file"></a>.Pdb ファイルに対してクエリを実行するには
 
@@ -65,7 +65,7 @@ ms.locfileid: "72738580"
     }
     ```
 
-4. @No__t_0 のメソッドを使用して、データソース内のシンボルを照会します。
+4. `IDiaSession` のメソッドを使用して、データソース内のシンボルを照会します。
 
     ```C++
     CComPtr<IDiaSymbol> pglobal;
@@ -75,7 +75,7 @@ ms.locfileid: "72738580"
     }
     ```
 
-5. @No__t_0 インターフェイスを使用して、シンボルやデバッグ情報のその他の要素を列挙し、スキャンします。
+5. `IDiaEnum*` インターフェイスを使用して、シンボルやデバッグ情報のその他の要素を列挙し、スキャンします。
 
     ```C++
     CComPtr<IDiaEnumTables> pTables;

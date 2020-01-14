@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296790"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917782"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,12 +51,12 @@ ms.locfileid: "74296790"
     > [!WARNING]
     > 特定のコンピューター上の Visual Studio 2015 でストアアプリを初めて作成する場合は、[**設定&#124; ] に移動して、デバイスを開発モード用に有効にするように求めるメッセージが表示されます。コンピューター上の&#124;開発者のための更新プログラムとセキュリティ**。 詳細については、「[デバイスを開発用に有効にする](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)」を参照してください。
 
-### <a name="access_azure"></a>Web プロジェクトで Azure Active Directory にアクセス
+### <a name="access_azure"></a> Web プロジェクトで Azure Active Directory にアクセス
  Azure AD では、ASP.NET MVC の Web アプリケーションでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証をサポートしています。 ドメイン認証は個々のユーザー アカウント認証とは異なります。Active Directory ドメインにアクセスできるユーザーは、既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Office 365 アプリでは、ドメイン認証も使用できます。 これを実際に見るには、Web アプリケーションを作成します ( **[ファイル]、[新しいプロジェクト]、[C#]、[クラウド]、[ASP.NET Web アプリケーション]** )。 新しい ASP.NET プロジェクトのダイアログで、 **[認証の変更]** を選択します。 認証ウィザードが表示され、アプリケーションで使用する認証の種類を選択できます。
 
  ![ASP.NET の認証ダイアログの変更](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- ASP.NET での異なる種類の認証について詳しくは、「 [Visual Studio 2013 での ASP.NET Web プロジェクトの作成](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 」をご覧ください (認証に関する情報は Visual Studio 2015 にも引き続き該当します)。
+ ASP.NET での異なる種類の認証について詳しくは、「 [Visual Studio 2013 での ASP.NET Web プロジェクトの作成](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 」をご覧ください (認証に関する情報は Visual Studio 2015 にも引き続き該当します)。
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Visual Studio Team Services のアカウントへのアクセス
  メイン メニューから、 **[チーム] > [Team Foundation Server への接続]** を選択して、**チーム エクスプローラー** ウィンドウを開きます。 **[チーム プロジェクトの選択]** をクリックすると、 **[Team Foundation Server の選択]** にあるリスト ボックスに Visual Studio Team Services アカウントの URL が表示されます。 URL を選択すると、資格情報を再入力しなくてもログインできます。
