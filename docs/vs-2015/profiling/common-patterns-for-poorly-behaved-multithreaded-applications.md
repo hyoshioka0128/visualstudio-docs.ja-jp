@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300664"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852164"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300664"
   
  コンカレンシー ビジュアライザーを使用すると、次の図のように、[CPU 使用状況] ビューでこの現象を確認することもできます。[CPU 使用状況] ビューでは、複数のスレッドが存在する場合でも、1 つの論理コアのみが使用されます。  
   
- 詳細については、MSDN ブログ Web サイトの Hazim Shafi のブログ「[Parallel Performance Tools For Windows](https://go.microsoft.com/fwlink/?LinkID=160569)」(Windows 用並列パフォーマンス ツール) の「Performance Pattern 1: Identifying Lock Contention」(パフォーマンス パターン 1: ロック競合の特定) を参照してください。  
+ 詳細については、MSDN ブログ Web サイトの Hazim Shafi のブログ「[Parallel Performance Tools For Windows](https://blogs.msdn.com/hshafi)」(Windows 用並列パフォーマンス ツール) の「Performance Pattern 1: Identifying Lock Contention」(パフォーマンス パターン 1: ロック競合の特定) を参照してください。  
   
  ![ロックの競合](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -66,5 +66,5 @@ ms.locfileid: "74300664"
   
  ロック コンボイは、早い者勝ちの順序でアプリケーションがロックを取得したときと、ロックの到着率が取得率よりも高いときに発生します。 これら 2 つの条件が組み合わさると、ロックの要求によってバックアップが開始されます。 この問題を解決するには、"不公平な" ロック (最初のスレッドにロック解除状態で検索するアクセス権を与えるロック) を使用する方法があります。 前の図は、このコンボイ動作を示しています。 この問題を解決するには、同期オブジェクトの競合を減らし、不公平なロックを使用してみてください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

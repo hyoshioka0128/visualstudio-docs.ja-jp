@@ -20,19 +20,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294737"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850612"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを展開するときに発生する可能性がある一般的なエラーと、それぞれの問題を解決するための手順を示します。  
   
-## <a name="general-errors"></a>一般的なエラー  
+## <a name="general-errors"></a>一般エラー  
   
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>アプリケーションファイルを検索しようとしたとき、Internet Explorer で何も実行されない、または XML が表示される、または [実行] または [名前を付けて保存] ダイアログボックスが表示される  
  このエラーは、サーバーまたはクライアントにコンテンツの種類 (MIME の種類とも呼ばれます) が正しく登録されていないことが原因である可能性があります。  
@@ -105,7 +105,7 @@ ms.locfileid: "74294737"
  URL を使用して発行する場合は、対象のコンピューターで FrontPage Server Extensions 有効になっていることを確認します。  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラーメッセージ: Web サイト '\<サイト > ' を作成できません。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。  
- 発行元のコンピューターに Microsoft Visual Studio Web オーサリングコンポーネントがインストールされていることを確認します。 Express ユーザーの場合、このコンポーネントは既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)」を参照してください。  
+ 発行元のコンピューターに Microsoft Visual Studio Web オーサリングコンポーネントがインストールされていることを確認します。 Express ユーザーの場合、このコンポーネントは既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us)」を参照してください。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラーメッセージ: ファイル ' 6.0.0.0, Version =, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32 ' が見つかりませんでした。  
  このエラーメッセージは、visual スタイルが有効になっている WPF アプリケーションを公開しようとしたときに表示されます。 この問題を解決するには、「[方法: Visual スタイルが有効になっている WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)する」を参照してください。  
@@ -139,6 +139,6 @@ ms.locfileid: "74294737"
 |ネットワーク経由でショートカットをアクティブ化することはできません。|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションへのショートカットは、ローカルハードディスク上でのみ開始できます。 リモートサーバー上のショートカットファイルを指す URL を開くことによって開始することはできません。|  
 |アプリケーションが大きすぎて、部分信頼でオンラインで実行できません。 詳細については、アプリケーションベンダーまたはシステム管理者にお問い合わせください。|部分信頼で実行されるアプリケーションは、オンラインアプリケーションクォータの半分 (既定では 250 MB) より大きくすることはできません。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)

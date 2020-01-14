@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298274"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847784"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce と Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * は、業界標準の暗号化を使用して、アプリケー�
 ## <a name="authenticode-and-code-signing"></a>Authenticode とコード署名  
  *デジタル証明書* は、証明書の発行先であるアプリケーション発行者と証明書を発行した機関を示すメタデータと共に、暗号化公開キー/秘密キーのペアが格納されたファイルです。  
   
- Authenticode 証明書にはさまざまな種類があります。 それぞれの証明書は、異なる種類の署名用に構成されています。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの場合、コード署名で有効な Authenticode 証明書が必要です。 電子メールのデジタル証明書など、別の種類の証明書によって [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションへの署名を試みた場合、アプリケーションは動作しません。 詳細については、「 [Introduction to Code Signing](https://go.microsoft.com/fwlink/?LinkId=179452)」 (コード署名の概要) を参照してください。  
+ Authenticode 証明書にはさまざまな種類があります。 それぞれの証明書は、異なる種類の署名用に構成されています。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの場合、コード署名で有効な Authenticode 証明書が必要です。 電子メールのデジタル証明書など、別の種類の証明書によって [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションへの署名を試みた場合、アプリケーションは動作しません。 詳細については、「 [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361.aspx)」 (コード署名の概要) を参照してください。  
   
  コード署名の証明書は、次の 3 つの方法のいずれかで取得することができます。  
   
@@ -65,13 +65,13 @@ Authenticode * は、業界標準の暗号化を使用して、アプリケー�
   
 - アプリケーションをアンインストールし、有効な証明書を含む新しいバージョンを再インストールします。  
   
-- 証明書を更新するコマンド ライン アセンブリを作成します。 このプロセスの詳細な手順については、 [Microsoft サポートの記事 925521](https://go.microsoft.com/fwlink/?LinkId=179454)を参照してください。  
+- 証明書を更新するコマンド ライン アセンブリを作成します。 このプロセスの詳細な手順については、 [Microsoft サポートの記事 925521](https://support.microsoft.com/kb/925521)を参照してください。  
   
 ### <a name="storing-certificates"></a>証明書の格納  
   
 - 証明書は .pfx ファイルとしてファイル システムに格納できます。また、キー コンテナーの内部に格納することもできます。 Windows ドメインのユーザーは、多数のキー コンテナーを持つことができます。 .pfx に保存するよう指定しない限り、既定では、MakeCert.exe が個人のキー コンテナーに証明書を格納します。 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 配置の作成に使用する [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ツールである Mage.exe と MageUI.exe を使用すると、このどちらの方法で格納された証明書も使用できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
  [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   

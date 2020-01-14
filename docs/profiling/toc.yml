@@ -30,6 +30,8 @@
       items:
         - name: メモリ使用量の分析
           href: analyze-memory-usage.md
+        - name: .NET オブジェクトのメモリ使用量の分析
+          href: dotnet-alloc-tool.md
         - name: カスタム ネイティブ ETW ヒープ イベント
           href: custom-native-etw-heap-events.md
         - name: デバッガーなしのメモリ使用量

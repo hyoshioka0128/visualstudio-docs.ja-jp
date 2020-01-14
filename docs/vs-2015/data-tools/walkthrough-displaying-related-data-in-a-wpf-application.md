@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299583"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850237"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>チュートリアル: WPF アプリケーションでの関連データの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ ms.locfileid: "74299583"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で初期化します。
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
+- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://codeplex.com/SqlServerSamples)からダウンロードできます。
 
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
@@ -71,9 +71,9 @@ ms.locfileid: "74299583"
 
 5. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。
 
-6. **[名前]** ボックスに「`AdventureWorksOrdersViewer`」と入力します。
+6. **[名前]** ボックスに「 `AdventureWorksOrdersViewer`」と入力します。
 
-7. **[OK]** をクリックすると、
+7. **[OK]** をクリックします。
 
      Visual Studio によって `AdventureWorksOrdersViewer` プロジェクトが作成されます。
 
@@ -94,7 +94,7 @@ ms.locfileid: "74299583"
 
    - AdventureWorksLT サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これを選択します。
 
-      または
+      -または-
 
    - **[新しい接続]** をクリックし、AdventureWorksLT データベースへの接続を作成します。
 
@@ -143,7 +143,7 @@ ms.locfileid: "74299583"
 
    - **TaxAmt**
 
-   - **おける**
+   - **Freight**
 
    - **rowguid**
 
@@ -202,8 +202,8 @@ ms.locfileid: "74299583"
 
 2. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了した後、Visual Studio の **[データソース]** ウィンドウを使用して、WPF コントロールを他の種類のデータソースにバインドする方法について説明します。 詳細については、「 [WCF データサービスへの wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」および「[データセットへの Wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio でのデータへの wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [wpf アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)

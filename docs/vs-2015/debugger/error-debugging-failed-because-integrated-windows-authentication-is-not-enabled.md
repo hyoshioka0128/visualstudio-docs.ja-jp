@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299791"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851924"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー ： Windows 統合認証が無効になっているため、デバッグに失敗しました。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "74299791"
   
 10. **[インターネット インフォメーション サービス (IIS) マネージャー]** ウィンドウを閉じます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Microsoft ダイジェスト認証](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Microsoft ダイジェスト認証](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [IIS 7.0 および Visual Studio を使用した Windows Vista での Web アプリケーションの実行](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

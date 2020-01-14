@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297283"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850188"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML クラス図: ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 > [!NOTE]
-> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 「[クラスと型の設計と表示](https://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
+> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 「[クラスと型の設計と表示](https://msdn.microsoft.com/library/ab7aty24.aspx)」を参照してください。
 
 ## <a name="Using"></a>UML クラス図の使用
  UML クラス図は、さまざまな用途に使用できます。
@@ -194,7 +194,7 @@ Visual Studio では、 *UML クラス図*を使用して、データ型とそ�
 
  `[1]`
 
- 指定された型の 1 つの値。 既定値です。
+ 指定された型の 1 つの値。 これは既定です。
 
  `[0..1]`
 
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- 例 :
+ 例:
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  ただし、 **[プロパティ]** ウィンドウでは**静的**プロパティと**抽象**プロパティのみを設定できます。
 
 #### <a name="full-signature"></a>完全なシグニチャ
- 属性または操作のシグニチャを編集するときに、行の末尾および各パラメーターの後に追加のプロパティが表示されることがあります。 これらのプロパティは、中かっこ {...} で囲まれて表示されます。 これらのプロパティは、編集または追加できます。 例 :
+ 属性または操作のシグニチャを編集するときに、行の末尾および各パラメーターの後に追加のプロパティが表示されることがあります。 これらのプロパティは、中かっこ {...} で囲まれて表示されます。 これらのプロパティは、編集または追加できます。 例:
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -300,7 +300,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `unique`
 
- **一意**
+ **[UNIQUE]**
 
  コレクション内に重複する値は存在しません。 多重度が 1 を超える型に適用されます。
 
@@ -322,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  属性は、他の属性または関連の値から計算されます。
 
- "/" は、属性の名前の前に表示されます。 例 :
+ "/" は、属性の名前の前に表示されます。 例:
 
 ```
 /TotalPrice: Integer
@@ -472,5 +472,5 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
      これらのプロパティを設定し、提供されるテンプレートをカスタマイズする方法の詳細については、「 [UML クラス図からコードを生成](../modeling/generate-code-from-uml-class-diagrams.md)する」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Uml モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md) [uml クラス図: 参照](../modeling/uml-class-diagrams-reference.md)[モデルユーザー要件](../modeling/model-user-requirements.md) [Uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md) [uml シーケンス図](../modeling/uml-sequence-diagrams-reference.md): リファレンス Uml[ユースケース図](../modeling/uml-use-case-diagrams-reference.md): リファレンス[uml コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)

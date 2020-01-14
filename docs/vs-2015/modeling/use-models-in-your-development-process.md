@@ -11,17 +11,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298264"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852181"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
+Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)」を参照してください。
 
  どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -132,10 +132,10 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 |**カテゴリ**|**Links**|
 |------------------|---------------|
-|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "P\ ビデオ ") [9: Visual Studio 2010 を使用した UML](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "P\ ビデオ ")[操作方法シリーズ: UML ツールと拡張機能 (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
-|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Visual Studio 2010 を使用した UML](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと拡張機能 (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
+|**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [アジャイル開発でモデルを使用する](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)[アプリモデルのモデルを作成](../modeling/create-models-for-your-app.md)[するユーザー要件](../modeling/model-user-requirements.md)[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)をモデル化する[モデリングソリューション](../modeling/structure-your-modeling-solution.md)のモデル構造[からテストを開発](../modeling/develop-tests-from-a-model.md)する

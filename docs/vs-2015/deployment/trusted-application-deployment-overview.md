@@ -17,14 +17,14 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294699"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847706"
 ---
-# <a name="trusted-application-deployment-overview"></a>信頼されたアプリケーションの配置の概要
+# <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、信頼されたアプリケーションの配置テクノロジを使用して、昇格されたアクセス許可を持つ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置する方法の概要を示します。  
@@ -74,7 +74,7 @@ ms.locfileid: "74294699"
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>発行元を信頼された発行元ストアに追加する  
  開発した [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに高いレベルの信頼を与えるには、そのアプリケーションを実行する各クライアント コンピューターに対して、発行元の証明書を信頼された発行元として追加する必要があります。 これは 1 回だけ実行する構成タスクです。 この構成が完了すると、同じ発行元の証明書で署名された [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを必要なだけ配置し、そのすべてに高い信頼を与えて実行できます。  
   
- Windows オペレーティング システムを実行する会社のイントラネットなど、管理されたデスクトップ環境にアプリケーションを配置する場合には、グループ ポリシーと一緒に新しい証明書信頼リスト (CTL) を作成することによって、信頼された発行者元クライアント コンピューターの発行元ストアに追加できます。 詳細については、「 [グループ ポリシー オブジェクト用の証明書信頼リストを作成する](https://go.microsoft.com/fwlink/?LinkId=102576)」を参照してください。  
+ Windows オペレーティング システムを実行する会社のイントラネットなど、管理されたデスクトップ環境にアプリケーションを配置する場合には、グループ ポリシーと一緒に新しい証明書信頼リスト (CTL) を作成することによって、信頼された発行者元クライアント コンピューターの発行元ストアに追加できます。 詳細については、「 [グループ ポリシー オブジェクト用の証明書信頼リストを作成する](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7)」を参照してください。  
   
  管理されたデスクトップ環境にアプリケーションを配置しない場合には、次のような方法で信頼された発行元ストアに証明書を追加できます。  
   
@@ -104,6 +104,6 @@ ms.locfileid: "74294699"
 ## <a name="limitations-of-trusted-application-deployment"></a>信頼されたアプリケーションの配置に関する制限事項  
  信頼されたアプリケーションの配置は、Web 経由または会社のファイル共有から配置される [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに昇格された信頼を与えるために使用できます。 CD で配布される [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションには既定で完全信頼が付与されるため、信頼されたアプリケーションの配置を使用する必要はありません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [チュートリアル : ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
