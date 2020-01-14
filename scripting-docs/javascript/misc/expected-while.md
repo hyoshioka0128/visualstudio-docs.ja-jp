@@ -1,5 +1,5 @@
 ---
-title: "'While' が必要です。| Microsoft Docs"
+title: "'While' が必要です| Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575917"
 ---
-# <a name="expected-while"></a>'while' が必要です。
+# <a name="expected-while"></a>'while' が必要です
 `do...while` ループに、`while` 条件がありません。 **Do** ステートメントでは、対応する `while` テスト ステートメントをコード ブロックの最後に指定する必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
