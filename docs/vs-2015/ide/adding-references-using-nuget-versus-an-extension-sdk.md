@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cdc597bcbdb79c7040f040084493fe015ee1c08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852228"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917348"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>拡張 SDK と比較して NuGet を使用した参照の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio を対象とする NuGet 拡張機能、またはソフトウェア開発キット (SDK) を使用して、Visual Studio プロジェクト内で使用するためのパッケージを提供できます。 このトピックでは 2 つのメカニズムの類似点と相違点を説明し、特定のタスクにとって最善のメカニズムを選択しやすくなります。
 
-- NuGet は、オープン ソースのパッケージ管理システムであり、ライブラリをプロジェクトのソリューションに組み込むプロセスを簡略化します。 詳細については、[NuGet の概要](https://docs.microsoft.com/nuget/what-is-nuget)に関するページを参照してください。
+- NuGet は、オープン ソースのパッケージ管理システムであり、ライブラリをプロジェクトのソリューションに組み込むプロセスを簡略化します。 詳細については、[NuGet の概要](/nuget/what-is-nuget)に関するページを参照してください。
 
 - SDK は、Visual Studio が単一の参照項目として取り扱うファイルのコレクションです。 **[参照マネージャー]** ダイアログ ボックスでは、このダイアログ ボックスを表示した時点で開いていたプロジェクトに関連するすべての SDK が一覧表示されます。 SDK をプロジェクトに追加すると、IntelliSense、 **[ツールボックス]** 、デザイナー、 **[オブジェクト ブラウザー]** 、MSBuild、配置、デバッグおよびパッケージの各機能を通じて、その SDK のすべての内容にアクセスできます。 詳細については、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」 (ソフトウェア開発キットの作成) を参照してください。
 

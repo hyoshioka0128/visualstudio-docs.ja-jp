@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: パートナーがお客様の Visual Studio サブスクリプションを管理する方法について説明します。
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000898"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850552"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>お客様に代わってサブスクリプションを管理するパートナー
 Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、従う手順がいくつかあります。 次のようなプロセスです。
@@ -50,7 +50,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio ライセンス ホワイト ペーパー](https://aka.ms/vslicensing)
+- [Visual Studio ライセンス ホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

@@ -18,28 +18,26 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: HT
+ms.openlocfilehash: 03c0da634ea740517380896542e9df5e6c7a5fbd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850696"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918593"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ドメイン固有言語 (DSL) を定義するには、テンプレートから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 ソリューションの主要な機能は DSL 定義図です。これは DslDefinition.dsl に保存されています。 DSL 定義は、DSL のクラスとシェイプを定義します。 これらの要素を変更および追加した後で、プログラム コードを追加して DSL を詳細にカスタマイズできます。
 
- Dsl を初めて使用する場合は、 **Dsl ツールラボ**を使用することをお勧めします。このラボは、次のサイトにあります。 [Visualizaton モデリング SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
-
 ## <a name="templates"></a>テンプレートソリューションの選択
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[SDK のダウンロードのモデリング](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  ドメイン固有言語を新規に作成するには、ドメイン固有言語プロジェクト テンプレートを使用して新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。
 

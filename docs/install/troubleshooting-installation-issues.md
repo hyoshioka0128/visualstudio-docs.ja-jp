@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594488"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849593"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
@@ -127,11 +127,11 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 セットアップ ログは、インストールに関する問題の多くをトラブルシューティングするために必要です。 Visual Studio インストーラーの [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) を使用して問題を送信するとき、レポートには自動でこれらのログが含まれます。
 
-Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET Framework ログ収集ツール](https://aka.ms/vscollect)を使用して、これらのセットアップ ログを提供する必要がある場合があります。 このログ収集ツールは、Visual Studio にインストールされている .NET Framework、Windows SDK、SQL Server などのすべてのコンポーネントからセットアップ ログを収集します。 また、コンピューター情報、Windows インストーラーのインベントリ、Visual Studio インストーラーの Windows イベント ログ情報、Windows インストーラー、システムの復元に関する情報を収集します。
+Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET Framework ログ収集ツール](https://www.microsoft.com/download/details.aspx?id=12493)を使用して、これらのセットアップ ログを提供する必要がある場合があります。 このログ収集ツールは、Visual Studio にインストールされている .NET Framework、Windows SDK、SQL Server などのすべてのコンポーネントからセットアップ ログを収集します。 また、コンピューター情報、Windows インストーラーのインベントリ、Visual Studio インストーラーの Windows イベント ログ情報、Windows インストーラー、システムの復元に関する情報を収集します。
 
 ログを収集するには:
 
-1. [ツールをダウンロード](https://aka.ms/vscollect)します。
+1. [ツールをダウンロード](https://www.microsoft.com/download/details.aspx?id=12493)します。
 2. 管理コマンド プロンプトを開きます。
 3. ツールを保存したディレクトリから `Collect.exe` を実行します。
 4. `%TEMP%` ディレクトリで結果の `vslogs.zip` ファイルを探します (例: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`)。

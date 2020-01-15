@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします'
                   href: ca3147.md
+                - name: 'CA5358:安全ではない暗号モードを使用しないでください'
+                  href: ca5358.md
                 - name: 'CA5361: 強力な暗号の SChannel の使用を無効にしません'
                   href: ca5361.md
                 - name: 'CA5363:要求の検証を無効にしません'

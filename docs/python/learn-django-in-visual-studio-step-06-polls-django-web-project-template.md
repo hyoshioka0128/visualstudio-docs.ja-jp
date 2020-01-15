@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254379"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755583"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>手順 6: ポーリング Django Web プロジェクト テンプレートを使用する
 
@@ -160,7 +160,7 @@ def seed(request):
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>質問:Django 管理ユーティリティを使用してデータベースを初期化することはできますか
 
-回答:はい。[django-admin loaddata コマンド](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata)を使用して、アプリのシード処理ページと同じタスクを実行できます。 完成した Web アプリ上で作業する場合は、2 つの方法を組み合わせて使用することができます。コマンド ラインからデータベースを初期化してから、ハードコーディングしたファイルに頼らずに他の任意の JSON に送信できる API にこのシード ページを変換するという方法です。
+回答:はい。[django-admin loaddata コマンド](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata)を使用して、アプリのシード処理ページと同じタスクを実行できます。 完成した Web アプリ上で作業する場合は、2 つの方法を組み合わせて使用することができます。コマンド ラインからデータベースを初期化してから、ハードコーディングしたファイルに頼らずに他の任意の JSON に送信できる API にこのシード ページを変換するという方法です。
 
 ## <a name="step-6-3-use-migrations"></a>手順 6-3:移行を使用する
 

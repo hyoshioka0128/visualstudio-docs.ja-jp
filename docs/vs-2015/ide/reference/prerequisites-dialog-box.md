@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8e5e004d2e337900d88f72d92bfd439103b87e0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bbd3e348aa4495a897e57ec46d16273a46dccdf1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297844"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851671"
 ---
 # <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74297844"
 |-------------|-----------------|
 |**必須コンポーネントをインストールするセットアップ プログラムを作成する**|必須コンポーネントをアプリケーションのセットアップ プログラム (Setup.exe) に含め、依存関係の順序に従って、それらのコンポーネントがアプリケーションより先にインストールされるようにします。 既定では、このチェック ボックスはオンになっています。 オフにした場合、Setup.exe は作成されません。|
 |**インストールする必須コンポーネントを選択する**|[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]、Crystal Reports などのコンポーネントをインストールするかどうかを指定します。<br /><br /> たとえば、 **[SQL Server 2005 Express Edition SP2]** の横のチェック ボックスをオンにした場合、セットアップ プログラムは、ターゲット コンピューターにこのコンポーネントがインストールされているかどうかを確認し、インストールされていなければインストールします。<br /><br /> 各必須パッケージの詳細については、後の「必須コンポーネント情報」を参照してください。|
-|**再頒布可能コンポーネントについては、Microsoft Update を確認してください**|このリンクをクリックすると、[コンポーネントを再配布するための追加ブートストラップ パッケージ](https://go.microsoft.com/fwlink/?LinkId=208835)の Web サイトが表示されて、更新プログラムがあるかどうかを確認できます。|
+|**再頒布可能コンポーネントについては、Microsoft Update を確認してください**|このリンクをクリックすると、[コンポーネントを再配布するための追加ブートストラップ パッケージ](https://msdn.microsoft.com/vstudio/bb898654.aspx)の Web サイトが表示されて、更新プログラムがあるかどうかを確認できます。|
 |**必須コンポーネントをコンポーネントの開発元の Web サイトからダウンロードする**|販売元の Web サイトから必須コンポーネントをインストールするように指定します。 これは、既定の設定です。|
 |**アプリケーションと同じ場所から必須コンポーネントをダウンロードする**|アプリケーションと同じ場所から必須コンポーネントをインストールするように指定します。 これにより、すべての必須パッケージが発行場所にコピーされます。 このオプションを使用するには、必須パッケージが開発用コンピューターに存在する必要があります。|
 |**次の場所から必須コンポーネントをダウンロード**|選択した場所から必須コンポーネントをインストールするように指定します。 場所は、 **[参照]** ボタンを使って指定できます。|
@@ -56,9 +56,9 @@ ms.locfileid: "74297844"
 |**Microsoft Visual F# Runtime for .NET 2.0**|関数型プログラミング、および従来のオブジェクト指向プログラミングと命令型 (手続き型) プログラミングをサポートする、Visual F# ランタイム ライブラリ (x86 オペレーティング システムおよび x64 オペレーティング システム用) をインストールします。 アプリケーションまたはそのコンポーネントを Visual F# と .NET Framework 2.0、.NET Framework 3.0、または .NET Framework 3.5 で作成する場合、このパッケージをインストールする必要があります。<br /><br /> (詳細については、「[F# 言語リファレンス](https://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf)」を参照してください)。|
 |**Microsoft Visual F# Runtime for .NET 4.0**|関数型プログラミング、および従来のオブジェクト指向プログラミングと命令型 (手続き型) プログラミングをサポートする、Visual F# ランタイム ライブラリ (x86 オペレーティング システムおよび x64 オペレーティング システム用) をインストールします。 アプリケーションまたはそのコンポーネントを Visual F# および .NET Framework 4 で作成する場合、このパッケージをインストールする必要があります。<br /><br /> (詳細については、「[F# 言語リファレンス](https://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf)」を参照してください)。|
 |**Microsoft Visual Studio 2010 Report Viewer**|Windows フォームおよび ASP.NET アプリケーションに豊富なデータ レポート機能を追加するために使用できる、レポート ビューアー コントロールをインストールします。|
-|**Microsoft Visual Studio 2010 for Office Runtime (x86 および x64)**|Visual Studio の Office 開発ツールには、Microsoft Office と連携するカスタマイズされたビジネス ソリューションを作成するための、統合された使いやすいツールが用意されています。 Office アプリケーションをユーザー インターフェイスとして使用するマネージド スマート クライアント ソリューションを作成できます。 開発者は、これらのツールを使って、配置と保守が容易な、安全なソリューションを作成できます。<br /><br /> 詳細については、「[方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)」を参照してください。|
+|**Microsoft Visual Studio 2010 for Office Runtime (x86 および x64)**|Visual Studio の Office 開発ツールには、Microsoft Office と連携するカスタマイズされたビジネス ソリューションを作成するための、統合された使いやすいツールが用意されています。 Office アプリケーションをユーザー インターフェイスとして使用するマネージド スマート クライアント ソリューションを作成できます。 開発者は、これらのツールを使って、配置と保守が容易な、安全なソリューションを作成できます。<br /><br /> 詳細については、[ClickOnce を使用して Office ソリューションを発行する方法](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)に関する記事をご覧ください。|
 |**SQL Server 2005 Express Edition SP2 (x86)**|Microsoft SQL Server 2005 Express Edition SP2 をインストールします。これは、[!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)] に基づくデータベース アプリケーションです。 SQL Server Express は、Microsoft SQL Server Desktop Engine (MSDE) の後継製品です。 SQL Server Express は無償で提供され、契約書に従って再配布することが可能であり、クライアント データベースとしても、基本サーバー データベースとしても機能します。 SQL Server Express は、以下の相違点を除いて SQL Server 2005 と同じです。<br /><br /> -   エンタープライズ機能をサポートしません。<br />-   1 台の CPU に制限されます。<br />-   バッファー プール用メモリが 1 ギガバイト (GB) に制限されます。<br />-   データベースの最大サイズは 4 GB です。|
-|**SQL Server 2008 Express**|Microsoft SQL Server 2008 Express をインストールします。Microsoft SQL Server 2008 Express は、Microsoft SQL Server 2008 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。 アプリケーションと共に SQL Server 2008 Express を配布するには、無償の登録が必要です。<br /><br /> ブートストラップの動作を次に示します。<br /><br /> -   コンピューターに SQL Server 2008 Express またはそれ以降が既にインストールされている場合は、SQL Server 2008 Express またはそれ以降のままです。<br />-   コンピューターに SQL Server 2008 Express またはそれ以降のいずれのバージョンもインストールされていない場合は、パッケージによって最新バージョンの SQL Server 2008 Express SP1 がインストールされます。<br /><br /> SQL Server 2008 Express の詳細については、[http://go.microsoft.com/fwlink/?LinkId=183586](https://go.microsoft.com/fwlink/?LinkId=183586) をご覧ください。|
+|**SQL Server 2008 Express**|Microsoft SQL Server 2008 Express をインストールします。Microsoft SQL Server 2008 Express は、Microsoft SQL Server 2008 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。 アプリケーションと共に SQL Server 2008 Express を配布するには、無償の登録が必要です。<br /><br /> ブートストラップの動作を次に示します。<br /><br /> -   コンピューターに SQL Server 2008 Express またはそれ以降が既にインストールされている場合は、SQL Server 2008 Express またはそれ以降のままです。<br />-   コンピューターに SQL Server 2008 Express またはそれ以降のいずれのバージョンもインストールされていない場合は、パッケージによって最新バージョンの SQL Server 2008 Express SP1 がインストールされます。<br /><br /> SQL Server 2008 Express の詳細については、[http://go.microsoft.com/fwlink/?LinkId=183586](https://www.microsoft.com/sqlserver/2008/en/us/express.aspx) をご覧ください。|
 |**Visual C++ 2010 ランタイム ライブラリ (IA64)**|Itanium アーキテクチャに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](https://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)」を参照してください。|
 |**Visual C++ 2010 ランタイム ライブラリ (x64)**|x64 オペレーティング システムに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](https://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)」を参照してください。|
 |**Visual C++ 2010 ランタイム ライブラリ (x86)**|x86 オペレーティング システムに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](https://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)」を参照してください。|

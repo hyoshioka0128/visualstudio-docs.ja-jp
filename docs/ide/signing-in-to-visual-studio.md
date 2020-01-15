@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594540"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845902"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio にサインイン
 
@@ -30,7 +30,7 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 
 期待できる内容とサイン後に行うことができる内容の完全なリストを以下に示します。
 
-- **Visual Studio Dev Essentials プログラムにアクセスする** - このプログラムには、無料のソフトウェア提供サービス、トレーニング、サポートなどが含まれます。 詳細については、「 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 」をご覧ください。
+- **Visual Studio Dev Essentials プログラムにアクセスする** - このプログラムには、無料のソフトウェア提供サービス、トレーニング、サポートなどが含まれます。 詳細については、「 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 」をご覧ください。
 
 - **Visual Studio の設定を同期する** - どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 「[Visual Studio での同期された設定](../ide/synchronized-settings-in-visual-studio.md)」をご覧ください。
 

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dc49a628cdf5695df7744295d2c1d990986bcfbe
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295638"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845544"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74295638"
 ||Visual Studio の評価版からアップグレードする。|[方法: 評価版の Visual Studio からアップグレードする](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||ローカル ヘルプ コンテンツをインストール、更新、または削除する。|[ローカル コンテンツのインストールと管理](../ide/install-and-manage-local-content.md)|
 |アプリケーションの種類|SharePoint 2010 のソリューションを開発する。|[SharePoint ソリューションの開発要件](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] の開発者ライセンスを取得する。|[開発者用ライセンスの取得](https://go.microsoft.com/fwlink/?LinkID=241313)|
+||[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] の開発者ライセンスを取得する。|[開発者用ライセンスの取得](https://msdn.microsoft.com/library/windows/apps/hh974578.aspx)|
 |ツールボックス|**ツールボックス**にクラシック COM コントロールを追加する。|[ツールボックスの使用](../ide/using-the-toolbox.md)|
 |アドイン|IDE でクラシック COM を使用して記述されたアドインをインストールおよび使用する。|[アドインおよびウィザードの作成](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |ビルド|コンポーネントを登録するビルド後のイベントを使用する。|[カスタム ビルド ステップとビルド イベントについて](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -45,10 +45,10 @@ ms.locfileid: "74295638"
 |デバッグ|昇格されたアクセス許可で実行されたアプリケーションをデバッグする。|[デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)|
 ||ASP.NET Web サイトなど、別のユーザー アカウントで実行されたアプリケーションをデバッグする。|[ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||XAML ブラウザー アプリケーション (XBAP) をゾーンでデバッグする。|[WPF ホスト (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||エミュレーターを使用して、Microsoft Azure クラウド サービス プロジェクトをデバッグする。|[Visual Studio でのクラウド サービスのデバッグ](https://go.microsoft.com/fwlink/?LinkId=266725)|
+||エミュレーターを使用して、Microsoft Azure クラウド サービス プロジェクトをデバッグする。|[Visual Studio でのクラウド サービスのデバッグ](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
 ||リモート デバッグのファイアウォールを構成する。|[デバイスのリモート ツールのセットアップ](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |パフォーマンス ツール|アプリケーションをプロファイルする。|[パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)|
-|配置|ローカル コンピューターでインターネット インフォメーション サービス (IIS) に Web アプリケーションを配置する。|[Visual Studio または Visual Web Developer を使用しているホスティング プロバイダーへの ASP.NET Web アプリケーションの配置: テスト環境としての IIS への配置](https://go.microsoft.com/fwlink/?LinkId=266478)|
+|配置|ローカル コンピューターでインターネット インフォメーション サービス (IIS) に Web アプリケーションを配置する。|[Visual Studio または Visual Web Developer を使用したホスティング プロバイダーへの ASP.NET Web アプリケーションの配置:テスト環境としての IIS への配置](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
 |Microsoft にフィードバックを提供する。|Visual Studio カスタマー エクスペリエンス向上プログラムへの参加方法を変更する。|[方法: フィードバックを送信する](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>管理者としての Visual Studio の実行
@@ -66,9 +66,9 @@ ms.locfileid: "74295638"
 
 1. **[スタート]** メニューをクリックし、 **[すべてのプログラム]** をクリックします。
 
-2. **[Microsoft Visual Studio** *Version]* フォルダーで、 **[Visual Studio** *Version]* をクリックし、ショートカット メニューを開き、 **[管理者として実行]** をクリックします。
+2. **Microsoft Visual Studio** "*バージョン*" フォルダーで、**Visual Studio** "*Version*" を選択してショートカット メニューを開き、 **[管理者として実行]** を選択します。
 
      Visual Studio の起動時には、 **[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)
+ [Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [visual studio 2015 のインストール](../install/install-visual-studio-2015.md)

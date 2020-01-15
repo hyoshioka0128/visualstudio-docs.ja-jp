@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dc4538d04a9c683bf1d8e5443b8eb18c206e4721
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984971"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851959"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -162,7 +162,7 @@ public enum DateInserterCommands
 ## <a name="additional-information"></a>追加情報
 
 > [!NOTE]
-> 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://aka.ms/vsmac-extensions-survey)」フォームに記入してお知らせください。
+> 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)」フォームに記入してお知らせください。
 
 ## <a name="see-also"></a>関連項目
 
