@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start Page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a415c8a61e360ed1bcc323214d4144b2875cc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652552"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567217"
 ---
 # <a name="customize-startup"></a>スタートアップをカスタマイズする
 
@@ -32,7 +32,7 @@ Visual Studio のスタートアップ エクスペリエンスは何種類か�
 
 ## <a name="to-change-the-startup-item"></a>スタートアップ アイテムを変更する
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[環境]** を展開し、 **[スタートアップ]** を選びます。
 
@@ -58,7 +58,7 @@ Visual Studio SDK を使用して[独自のカスタム スタート ページ�
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>表示するカスタム スタート ページを選択する
 
-1. メニュー バーで、 **[ツール]** > **[オプション]** の順に選択します。
+1. メニュー バーで **[ツール]** > **[オプション]** の順に選択します。
 
 1. **[環境]** を展開し、 **[スタートアップ]** を選びます。
 

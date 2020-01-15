@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659893"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590502"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -120,7 +120,7 @@ public void Withdraw(double amount)
 
 **単体テスト プロジェクトをソリューションに追加するには**
 
-1. **ソリューション エクスプローラー**で、ソリューションを右クリックして、 **[追加]**  >  **[新しい** **プロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**でソリューションを右クリックし、 **[追加]**  >  **[新しい** **プロジェクト]** を選択します。
 
 ::: moniker range="vs-2017"
 

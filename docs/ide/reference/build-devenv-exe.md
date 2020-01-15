@@ -9,17 +9,17 @@ helpviewer_keywords:
 - build Devenv switch
 - command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aef4dcdc9069c1bbfe71a90bbaba214ebcd18ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667882"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595762"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -53,7 +53,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 - `/Build` スイッチを指定すると、統合開発環境 (IDE) 内の **[ソリューションのビルド]** メニュー コマンドと同じ機能が実行されます。
 

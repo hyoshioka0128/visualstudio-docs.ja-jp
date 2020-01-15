@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974360"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590151"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio でインストールの場所を選択する
 
@@ -44,13 +44,13 @@ ms.locfileid: "62974360"
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio をインストールするときに、**[インストールの場所]** タブを選びます。
+1. Visual Studio をインストールするときに、 **[インストールの場所]** タブを選びます。
 
    ![Visual Studio 2017 - インストールの場所を選択する](media/vs-installation-locations.png "インストールの場所を選択します。")
 
 1. **[Visual Studio IDE]** セクションで、既定値をそのまま使います。 Visual Studio では、コア製品がインストールされ、このバージョンの Visual Studio に固有のファイルが含まれます。
 
-   ![[インストールの場所] タブの [Visual Studio IDE] セクション](media/vs-installation-locations-ide.png "[インストールの場所] タブの [Visual Studio IDE] セクションで既定値を受け入れます。")
+   ![[インストールの場所] タブの [Visual Studio IDE] セクション](media/vs-installation-locations-ide.png "[インストールの場所] タブの [Visual Studio IDE] セクションで、既定の設定をそのまま使用します。")
 
    > [!TIP]
    > システム ドライブがソリッドステート ドライブ (SSD) の場合は、ご利用のシステム ドライブ上の既定の場所をそのまま使用することをお勧めします。 その理由は、 Visual Studio を使って開発する場合、多くのファイルに対して読み取り、書き込みを行うからです。これにより、ディスク I/O アクティビティが増加します。 最も速いドライブで負荷を処理するのが最善の選択です。
@@ -78,7 +78,7 @@ ms.locfileid: "62974360"
 
 ::: moniker range="vs-2019"
 
-1. Visual Studio をインストールするときに、**[インストールの場所]** タブを選びます。
+1. Visual Studio をインストールするときに、 **[インストールの場所]** タブを選びます。
 
    ![Visual Studio 2019 - インストールの場所を選択する](media/vs-2019/vs-installer-installation-locations.png "インストールの場所を選択します。")
 

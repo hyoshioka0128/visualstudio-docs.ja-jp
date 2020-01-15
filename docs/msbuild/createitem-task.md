@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385916"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590073"
 ---
 # <a name="createitem-task"></a>CreateItem タスク
 項目コレクションに入力項目を設定します。 これにより、リスト間で項目をコピーできるようになります。
@@ -36,12 +36,12 @@ ms.locfileid: "63385916"
 
 |パラメーター|説明|
 |---------------|-----------------|
-|`AdditionalMetadata`|省略可能な `String` 型の配列パラメーターです。<br /><br /> 出力項目にアタッチする追加のメタデータを指定します。  項目のメタデータの名前と値を次の構文で指定します。<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> メタデータの名前と値のペアを複数指定する場合は、セミコロンで区切る必要があります。 名前または値にセミコロンまたは他の特殊文字が含まれる場合は、エスケープする必要があります。 詳細については、「[方法 :MSBuild で特殊文字をエスケープする](../msbuild/how-to-escape-special-characters-in-msbuild.md)」を参照してください。|
+|`AdditionalMetadata`|省略可能な `String` 型の配列パラメーターです。<br /><br /> 出力項目にアタッチする追加のメタデータを指定します。  項目のメタデータの名前と値を次の構文で指定します。<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> メタデータの名前と値のペアを複数指定する場合は、セミコロンで区切る必要があります。 名前または値にセミコロンまたは他の特殊文字が含まれる場合は、エスケープする必要があります。 詳細については、[MSBuild で特殊文字をエスケープする](../msbuild/how-to-escape-special-characters-in-msbuild.md)」を参照してください。|
 |`Exclude`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 出力項目コレクションから除外する項目を指定します。 このパラメーターには、ワイルドカードの指定を含めることができます。 詳細については、「[項目](../msbuild/msbuild-items.md)」と「[方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)」をご覧ください。|
 |`Include`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` パラメーター。<br /><br /> 出力項目のコレクションに含める項目を指定します。 このパラメーターには、ワイルドカードの指定を含めることができます。|
 |`PreserveExistingMetadata`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `True` の場合は、まだ存在しない場合にのみ追加メタデータを適用します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例

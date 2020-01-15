@@ -2,17 +2,17 @@
 title: .runsettings ファイルを使用して単体テストを構成する
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771500"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593253"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -28,7 +28,7 @@ Visual Studio の単体テストは、 *.runsettings* ファイルを使用し�
 
 ::: moniker range="vs-2017"
 
-IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** で、 *.runsettings* ファイルを選択します。
+IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** を選択し、 *.runsettings* ファイルを選択します。
 
 ![Visual Studio 2017 の [テスト設定ファイルの選択] メニュー](media/select-test-settings-file.png)
 
@@ -78,7 +78,7 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
     
       ![Visual Studio 2019 での [runsettings ファイルの自動検出] メニュー](media/vs-2019/auto-detect-runsettings-menu.png)
 
-- IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** の順に選択してから、 *.runsettings* ファイルを選択します。
+- IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** を選択し、 *.runsettings* ファイルを選択します。
 
    ![Visual Studio 2019 の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
       
@@ -95,13 +95,13 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
    ::: moniker range="vs-2017"
 
-   Windows の **[スタート]** メニューから、 **[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** の順に選択します。
+   Windows の **[スタート]** メニューから、 **[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** を選択します。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** の順に選択します。
+   Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** を選択します。
 
    ::: moniker-end
 

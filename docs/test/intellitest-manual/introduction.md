@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653170"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591600"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest の概要
 
@@ -77,6 +77,9 @@ public partial class HelloWorldTest {
 6. "Hello\0\0"
 7. "Hello\0World!"
 8. "Hello World!"
+
+> [!NOTE]
+> ビルドの問題については、Microsoft.VisualStudio.TestPlatform.TestFramework と Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions の参照を Microsoft.VisualStudio.QualityTools.UnitTestFramework への参照に置き換えてみてください。
 
 生成されたテストが保存される場所については、「[IntelliTest でのコードの単体テストの生成](../../test/generate-unit-tests-for-your-code-with-intellitest.md)」を参照してください。 生成されたテスト コードには、次のコードのようなテストを含める必要があります。
 

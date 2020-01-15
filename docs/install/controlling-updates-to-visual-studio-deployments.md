@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cdf4d4e6fb90b18c8141d1d176629539a0a4f8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974193"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570584"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する
 
@@ -90,7 +90,7 @@ Visual Studio が更新プログラムを検索する場所を変更すること
 
 上述のとおり、Visual Studio はそのインストール元である場所 (ネットワーク共有やインターネットなど) で更新プログラムが利用できないか確認します。 更新プログラムが利用可能になると、Visual Studio では、ユーザーへの通知としてウィンドウの右下隅に通知アイコンが表示されます。
 
-   ![Visual Studio IDE にある通知アイコン](media/vs-2019/notification-bar.png "Visual Studio IDE にある通知アイコン")
+   ![Visual Studio IDE の通知アイコン](media/vs-2019/notification-bar.png "Visual Studio IDE の通知アイコン")
 
 ::: moniker-end
 

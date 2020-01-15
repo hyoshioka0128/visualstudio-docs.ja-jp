@@ -7,23 +7,23 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647263"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594163"
 ---
 # <a name="c-code-snippets"></a>C# コード スニペット
 
 コード スニペットは、あらかじめ用意されているコードのスニペットで、コードにすぐに挿入できます。 たとえば、`for` コード スニペットは空の `for` ループを作成します。 一部のコード スニペットは surround-with コード スニペットであり、コード行を選んでから、選んだコード行を組み込むコード スニペットを選ぶことができます。 たとえば、コード行を選んでから `for` コード スニペットをアクティブにすると、選んだコード行がループ ブロックの中に含まれる `for` ループが作成されます。 コード スニペットを使うと、速く、容易に、信頼性の高いプログラム コードを作成できます。
 
-カーソル位置にコード スニペットを挿入したり、現在選択されているコード ブロックを囲むように surround-with コード スニペットを挿入したりすることができます。 コード スニペット挿入機能は、 **[IntelliSense]** メニューの **[コード スニペットの挿入]** または **[ブロックの挿入]** コマンドを使って、またはキーボード ショートカットの場合はそれぞれ **Ctrl** + **K**、**X** キーの順に押すか、**Ctrl** + **K**、**S** キーの順に押すことで、呼び出すことができます。
+カーソル位置にコード スニペットを挿入したり、現在選択されているコード ブロックを囲むように surround-with コード スニペットを挿入したりすることができます。 コード スニペット挿入機能は、 **[IntelliSense]** メニューの **[コード スニペットの挿入]** または **[ブロックの挿入]** コマンドを使って、またはキーボード ショートカットの場合はそれぞれ **Ctrl**+**K**、**X** キーの順に押すか、**Ctrl**+**K**、**S** キーの順に押すことで、呼び出すことができます。
 
 **コード スニペット挿入機能**では、すべての利用可能なコード スニペットのコード スニペット名が表示されます。 また、コード スニペット挿入機能には、コード スニペットの名前または名前の一部を入力できる入力ダイアログ ボックスもあります。 最も近いコード スニペット名が強調表示されます。 **Tab** キーを押すと、コード スニペット挿入機能が閉じて、現在選択されているコード スニペットが挿入されます。 **Esc** キーを押すか、コード エディターをマウスでクリックすると、コード スニペットを挿入することなくコード スニペット挿入機能が閉じます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "72647263"
 |tryf|[try-finally](/dotnet/csharp/language-reference/keywords/try-finally) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |unchecked|[unchecked](/dotnet/csharp/language-reference/keywords/unchecked) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |unsafe|[unsafe](/dotnet/csharp/language-reference/keywords/unsafe) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
-|使用|[using](/dotnet/csharp/language-reference/keywords/using-directive) ディレクティブを作成します。|名前空間 (グローバル名前空間を含む) の内部。|
+|using|[using](/dotnet/csharp/language-reference/keywords/using-directive) ディレクティブを作成します。|名前空間 (グローバル名前空間を含む) の内部。|
 |while|[while](/dotnet/csharp/language-reference/keywords/while) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 
 ## <a name="see-also"></a>関連項目

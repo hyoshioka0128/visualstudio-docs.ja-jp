@@ -4,17 +4,17 @@ ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caa8fde228d83cbb14b911965573e78648133b81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647816"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567269"
 ---
 # <a name="learn-about-projects-and-solutions"></a>プロジェクトとソリューションについて理解する
 
@@ -83,7 +83,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2017"
 
-1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリック メニューまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリックまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
 
    **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
 
@@ -100,7 +100,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range=">=vs-2019"
 
-1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリック メニューまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリックまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
 
    **[新しいプロジェクトの追加]** ダイアログ ボックスが開きます。
 
@@ -163,7 +163,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 単体テスト プロジェクトをソリューションに追加してみましょう。 今度はプロジェクト テンプレートから開始します。これにより、プロジェクトに追加のコード ファイルを追加する必要がなくなります。
 
-1. **ソリューション エクスプローラー**で**ソリューション 'QuickSolution'** の右クリックまたはコンテキスト メニューから、 **[追加]** 、 >  **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリック メニューまたはコンテキスト メニューから、 **[追加]**  >  **[新しいプロジェクト]** を選択します。
 
 ::: moniker range="vs-2017"
 

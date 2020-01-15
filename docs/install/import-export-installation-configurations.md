@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: dddd34c9d57497a011f58bdb643c670ed84f6ded
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849035"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596854"
 ---
 # <a name="import-or-export-installation-configurations"></a>インストール構成をインポートまたはエクスポートする
 
@@ -44,15 +44,15 @@ ms.locfileid: "65849035"
 
 1. Visual Studio インストーラーを開きます。
 
-1. 製品カードで **[その他]** ボタンを選択し、**[構成のエクスポート]** を選択します。
+1. 製品カードで **[その他]** ボタンを選択し、 **[構成のエクスポート]** を選択します。
 
    ![Visual Studio インストーラーの製品カードから構成をエクスポートする](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. .vsconfig ファイルを保存する場所を参照するか入力して、**[詳細の確認]** を選択します。
+1. .vsconfig ファイルを保存する場所を参照するか入力して、 **[詳細の確認]** を選択します。
 
    ![Visual Studio インストーラーから構成をエクスポートする](../install/media/vs-2019/export-configuration-confirmation.png)
 
-1. 必要なワークロードとコンポーネントがあることを確認してから、**[エクスポート]** を選択します。
+1. 必要なワークロードとコンポーネントがあることを確認してから、 **[エクスポート]** を選択します。
 
 ## <a name="import-a-configuration"></a>構成をインポートする
 
@@ -60,11 +60,11 @@ ms.locfileid: "65849035"
 
 1. Visual Studio インストーラーを開きます。
 
-1. 製品カードで **[その他]** ボタンを選択し、**[構成のインポート]** を選択します。
+1. 製品カードで **[その他]** ボタンを選択し、 **[構成のインポート]** を選択します。
 
-1. インポートする .vsconfig ファイルを見つけて、**[詳細の確認]** を選択します。
+1. インポートする .vsconfig ファイルを見つけて、 **[詳細の確認]** を選択します。
 
-1. 必要なワークロードとコンポーネントがあることを確認してから、**[閉じる]** を選択します。
+1. 必要なワークロードとコンポーネントがあることを確認してから、 **[閉じる]** を選択します。
 
 ::: moniker range="vs-2019"
 
@@ -78,11 +78,11 @@ ms.locfileid: "65849035"
 
 1. ソリューション ファイルを右クリックします。
 
-1. **[追加]**>**[インストール構成ファイル]** を選択します。
+1. **[追加]** > **[インストール構成ファイル]** を選択します。
 
-1. .vsconfig ファイルを保存する場所を確認し、**[詳細の確認]** を選択します。
+1. .vsconfig ファイルを保存する場所を確認し、 **[詳細の確認]** を選択します。
 
-1. 必要なワークロードとコンポーネントがあることを確認してから、**[エクスポート]** を選択します。
+1. 必要なワークロードとコンポーネントがあることを確認してから、 **[エクスポート]** を選択します。
 
 ::: moniker-end
 
