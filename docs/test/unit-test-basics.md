@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590502"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846927"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -91,13 +91,16 @@ public void Withdraw(double amount)
 
    ::: moniker range="vs-2017"
    ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > **[単体テストの作成]** メニュー コマンドは、.NET Framework を対象とするマネージド コードに対してのみ使用できます (.NET Core では使用できません)。
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > **[単体テストの作成]** メニュー コマンドは、マネージド コードに対してのみ使用できます。
+   ::: moniker-end
 
 2. **[OK]** をクリックして、既定値をそのまま使用して単体テストを作成するか、単体テスト プロジェクトと単体テストの作成と名前付けに使用される値を変更します。 単体テスト メソッドに既定で追加されるコードを選択することができます。
 
