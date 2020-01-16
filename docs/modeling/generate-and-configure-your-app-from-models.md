@@ -2,17 +2,17 @@
 title: モデルからアプリを生成し構成する
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748398"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114900"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>モデルからアプリを生成し構成する
 モデルからアプリケーションのパーツを生成または構成できます。
@@ -20,7 +20,7 @@ ms.locfileid: "72748398"
  このモデルは、コードと比べて、要求をより直接的に表します。 アプリケーションの動作をモデルから直接派生させることで、コードを更新するよりも迅速かつ確実に、要求の変更に対応できます。 派生を設定するには特定の初期作業が必要ですが、要求の変更が予想される場合、または製品のバリエーションを複数予定している場合、この投資は取り戻すことができます。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>モデルからアプリケーション コードを生成する
- コードを生成する最も簡単な方法は、テキスト テンプレートを使用することです。 モデルを保持するのと同じ Visual Studio ソリューションでコードを生成できます。 詳細については次を参照してください:
+ コードを生成する最も簡単な方法は、テキスト テンプレートを使用することです。 モデルを保持するのと同じ Visual Studio ソリューションでコードを生成できます。 詳細については、次のトピックを参照してください。
 
 - [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +35,7 @@ ms.locfileid: "72748398"
   ただし、既存のアプリケーションで始めた場合、モデルによって制御されているさまざまな動作を分離し、独立して変化させることができるようにするには、数多くのリファクタリングが必要となる可能性があります。 プロジェクトのコストを見積もる際に、アプリケーションのこの側面を評価することをお勧めします。
 
 ## <a name="configuring-your-application-from-a-model"></a>モデルからアプリケーションを構成する
- 実行時にアプリケーションの動作を変化させる場合は、コードの生成を使うことはできません。これは、アプリケーションをコンパイルする前に、ソース コードが生成されるためです。 代わりに、モデルを読み取るようにアプリケーションを設計し、それに応じて動作を変更することができます。 詳細については次を参照してください:
+ 実行時にアプリケーションの動作を変化させる場合は、コードの生成を使うことはできません。これは、アプリケーションをコンパイルする前に、ソース コードが生成されるためです。 代わりに、モデルを読み取るようにアプリケーションを設計し、それに応じて動作を変更することができます。 詳細については、次のトピックを参照してください。
 
 - [方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 

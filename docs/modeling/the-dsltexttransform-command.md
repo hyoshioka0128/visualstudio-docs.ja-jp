@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a303fc3ddb880402e3f998b2360122f6f056b757
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 32c01401eda8fb1bbe2bdcfc2950a51b968e98b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605939"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114903"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform コマンド
 DslTextTransform は、TextTransform を呼び出すスクリプトであり、共通のオプションを使用して実行されます。 DslTextTransformation を使用すると、[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] プロジェクトの夜間ビルドを自動化できます。 詳細については、「 [TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)」を参照してください。
 
  DslTextTransform は、次のディレクトリにあります。
 
- **\<Visual Studio SDK インストールパス > \VisualStudioIntegration\Tools\Bin**
+ **\<Visual Studio SDK Installation Path>\VisualStudioIntegration\Tools\Bin**
 
  DslTextTransform への入力として、次の引数を指定できます。
 

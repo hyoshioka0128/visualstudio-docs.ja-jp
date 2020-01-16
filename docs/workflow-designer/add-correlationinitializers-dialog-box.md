@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d69b53e21d11cba99a9e897871c6f9e0320352f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d2a0b0f7c76b392d5d2d0135c3ab6e370f8678e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650770"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114303"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックス
 
@@ -24,7 +24,7 @@ ms.locfileid: "72650770"
 このダイアログボックスで指定したコレクション内の関連付け初期化子は、メッセージングアクティビティ間の次の相関関係を初期化できます。
 
 - クエリベース
-- コンテキスト
+- context
 - コールバックコンテキスト
 - 要求-応答
 
@@ -33,7 +33,7 @@ ms.locfileid: "72650770"
 |UI 要素|説明|
 |-|-----------------|
 |**初期化子の追加**|**[初期化の追加]** ボックスをクリックして、追加の初期化子をコレクションに追加します。|
-|**関連付けの種類**|関連付け初期化子の種類を指定します。 次の 4 種類から選択できます。<br /><br /> 1. <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> を指定するコールバック関連付け初期化子。<br />2. <xref:System.ServiceModel.Activities.CorrelationInitializer> を指定するコンテキスト関連付け初期化子。<br />3. <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> を指定するための要求と応答の関連付け初期化子。<br />4. <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> を指定するためのクエリ関連付け初期化子。<br /><br /> **Correlationtype**を編集するには<br /><br /> 1. **[初期化子の追加]** DataGrid の特定の行にタブを追加します。<br />2. **Correlationtypecombobox**にフォーカスを設定するには、 **ctrl** +**tab**キーを押します。<br />3. Alt + ↓キーを押して、**コンボボックス**をポップアップ表示して編集します。|
+|**関連付けの種類**|関連付け初期化子の種類を指定します。 次の 4 種類から選択できます。<br /><br /> 1. <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>を指定するコールバック関連付け初期化子。<br />2. <xref:System.ServiceModel.Activities.CorrelationInitializer>を指定するコンテキスト関連付け初期化子。<br />3. <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>を指定するための要求と応答の関連付け初期化子。<br />4. <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>を指定するためのクエリ関連付け初期化子。<br /><br /> **Correlationtype**を編集するには<br /><br /> 1. **[初期化子の追加]** DataGrid の特定の行にタブを追加します。<br />2. **Correlationtypecombobox**にフォーカスを設定するには、 **ctrl**+**tab**キーを押します。<br />3. Alt + ↓キーを押して、**コンボボックス**をポップアップ表示して編集します。|
 |**XPath クエリ**|送受信メッセージから相関関係データを抽出するためのクエリを含む、キーと値のペア。 このリストは、<xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 型を使用している場合にのみ有効です。|
 
 ## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックスを開くには

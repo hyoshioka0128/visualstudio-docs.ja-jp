@@ -1,21 +1,21 @@
 ---
-title: アーキテクチャツールのガイダンス
+title: アーキテクチャ ツー リング ガイダンス
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7ca51504ab1ac76003fb8452f43b0491100ea1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 026fe95eb9e32e335832e782ffde72c93f89dc67
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663719"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111399"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio アーキテクチャ ツーリング ガイダンス
 
-このアーキテクチャツールのガイダンスは、Visual Studio 2010 のモデリングツールの使用に関する実用的なガイダンスのダウンロード可能なパッケージです。 ここでは、すべてのモデリングツールを統合方式で使用する方法の概要を示し、ツールが使用される最も一般的なシナリオについて説明します。
+このアーキテクチャ ツー リング ガイダンスは、Visual Studio 2010 でのモデリング ツールの使用方法についての実用的なガイダンスのダウンロード可能なパッケージです。 統合では、すべてのモデリング ツールを使用する方法の概要を示し、ツールを使用する最も一般的なシナリオについて説明します。
 
-このコンテンツは Visual Studio ALM Rangers によって作成されています。これは、Visual Studio 製品チーム、Microsoft サービス、Microsoft の最も重要な専門家 (Mvp)、および Visual Studio Community の潜在顧客のメンバーを持つ特別なグループです。
+コンテンツは、Visual Studio ALM Rangers、Visual Studio 製品チーム、Microsoft Services、Microsoft Valued Professionals (Mvp)、および Visual Studio コミュニティ潜在顧客からのメンバーを持つ特別なグループで作成されました。
