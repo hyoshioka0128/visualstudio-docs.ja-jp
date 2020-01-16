@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406106"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918163"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>パフォーマンスの問題が修正される可能性を高める方法
 
-[[問題の報告]](https://aka.ms/vs-rap) ツールは、さまざまな問題を報告するために Visual Studio ユーザーによって広く使用されています。 Visual Studio チームは、ユーザー フィードバックのクラッシュとパフォーマンス低下の傾向を把握し、広範なユーザーに影響を与える問題に対処します。 特定のフィードバック チケットがより実用的なものになれば、製品チームによって迅速に診断および解決される可能性が高まります。 このドキュメントでは、報告をより実用的なものにするために、クラッシュまたはパフォーマンス低下の問題を報告する際のベスト プラクティスについて説明します。
+[[問題の報告]](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) ツールは、さまざまな問題を報告するために Visual Studio ユーザーによって広く使用されています。 Visual Studio チームは、ユーザー フィードバックのクラッシュとパフォーマンス低下の傾向を把握し、広範なユーザーに影響を与える問題に対処します。 特定のフィードバック チケットがより実用的なものになれば、製品チームによって迅速に診断および解決される可能性が高まります。 このドキュメントでは、報告をより実用的なものにするために、クラッシュまたはパフォーマンス低下の問題を報告する際のベスト プラクティスについて説明します。
 
 ## <a name="general-best-practices"></a>全般的なベスト プラクティス
 
@@ -55,7 +55,7 @@ Visual Studio は、多数の言語、プロジェクトの種類、プラット
 
 - フィードバックの一部としてリンク可能または提供可能なサンプル コードまたはプロジェクトで再現できる (手順でプロジェクトまたはドキュメントを開く場合)
 
-これらの問題については、[問題を報告する方法](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関するページの手順に従うとともに、次の項目を含めてください。
+これらの問題については、[問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関するページの手順に従うとともに、次の項目を含めてください。
 
 -   問題を再現する手順。
 
@@ -87,7 +87,7 @@ reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
 Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 ```
 
-必要に応じて、ダンプ カウントとダンプ フォルダーをカスタマイズします。 これらの設定の詳細については、[こちら](https://docs.microsoft.com/windows/win32/wer/collecting-user-mode-dumps?redirectedfrom=MSDN)を参照してください。
+必要に応じて、ダンプ カウントとダンプ フォルダーをカスタマイズします。 これらの設定の詳細については、[こちら](/windows/win32/wer/collecting-user-mode-dumps)を参照してください。
 
 > [!NOTE]
 > タスク マネージャーを使用してキャプチャされたダンプはビット数が間違っている可能性があるため、あまり有用ではありません。 前述の手順は、ヒープ ダンプをキャプチャする場合に推奨される方法です。 タスク マネージャーを使用する場合は、現在実行されているタスク マネージャーを閉じ、32 ビットのタスク マネージャー (%windir%\\syswow64\\taskmgr.exe) を起動して、そこからヒープ ダンプを収集します。
@@ -103,7 +103,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 2.  可能であれば、フィードバックを送信する前にファイルを zip 形式 (\*.zip) にしてサイズを小さくします。
 
-3.  [問題を報告する方法](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関する手順に従って、新しいフィードバック項目にヒープ ダンプをアタッチします。
+3.  [問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関する手順に従って、新しいフィードバック項目にヒープ ダンプをアタッチします。
 
 > [!NOTE] 
 > **最も有用なフィードバック:** このケースに対して最も有用なフィードバックは、クラッシュ時にキャプチャされたヒープ ダンプです。
@@ -118,7 +118,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 **不明な無応答**
 
 無応答が予期しない形で発生する場合は、次の発生時に Visual Studio の新しいインスタンスを起動し、そのインスタンスの問題を報告します。
-[[記録] 画面](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)で、応答しない Visual Studio セッションを選択してください。
+[[記録] 画面](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)で、応答しない Visual Studio セッションを選択してください。
 
 応答しない Visual Studio インスタンスが管理者モードで起動された場合は、2 番目のインスタンスも管理者モードで起動する必要があります。
 
@@ -145,7 +145,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 3.  Visual Studio の新しいコピーで、 **[問題の報告]** ツールを開きます。
 
-4.  "トレースとヒープ ダンプを提供する (オプション)" 手順に到達するまで、[問題を報告する方法](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関する手順に従います。
+4.  "トレースとヒープ ダンプを提供する (オプション)" 手順に到達するまで、[問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関する手順に従います。
 
 5.  Visual Studio の最初のコピー (パフォーマンスの問題が発生したもの) を記録するよう選択し、記録を開始します。
 
@@ -165,7 +165,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 パフォーマンス トレースを記録しているときに、報告を作成する低速度操作または高 CPU 使用率イベントが終了したら、すぐに記録を停止します。 収集される情報が多すぎると、最も古い情報が上書きされます。 関心のある操作の後すぐに (数秒以内に) トレースが停止しない場合は、有用なトレース データが上書きされます。
 
-開発者コミュニティ Web サイトの既存のフィードバック項目に、パフォーマンス トレースを直接アタッチしないでください。 追加情報の要求/提供は、Visual Studio の組み込みの [問題の報告] ツールでサポートされているワークフローです。 以前のフィードバック項目を解決するためにパフォーマンス トレースが必要な場合は、フィードバック項目の状態を [さらに情報が必要です] に設定します。これにより、新しい問題を報告する場合と同じように応答できます。 詳細な手順については、[問題の報告] ツールのドキュメントにある [[さらに情報が必要です] に関するセクション](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)を参照してください。
+開発者コミュニティ Web サイトの既存のフィードバック項目に、パフォーマンス トレースを直接アタッチしないでください。 追加情報の要求/提供は、Visual Studio の組み込みの [問題の報告] ツールでサポートされているワークフローです。 以前のフィードバック項目を解決するためにパフォーマンス トレースが必要な場合は、フィードバック項目の状態を [さらに情報が必要です] に設定します。これにより、新しい問題を報告する場合と同じように応答できます。 詳細な手順については、[問題の報告] ツールのドキュメントにある [[さらに情報が必要です] に関するセクション](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)を参照してください。
 
 > [!NOTE] 
 > **最も有用なフィードバック:** ほとんどすべての低速度/高 CPU 使用率の問題について、最も有用なフィードバックは、試行していた操作の概要と、その間の動作をキャプチャしたパフォーマンス トレース (\*.etl.zip) です。
@@ -188,7 +188,7 @@ Visual Studio と並行して実行され、Visual Studio のメイン プロセ
     -   グローバル環境変数 **ServiceHubTraceLevel** を **All** に設定します
     -   問題を再現します。
 
-2.  [こちら](https://aka.ms/vscollect)から、Microsoft Visual Studio および .NET Framework ログ収集ツールをダウンロードします。
+2.  [こちら](https://www.microsoft.com/download/details.aspx?id=12493)から、Microsoft Visual Studio および .NET Framework ログ収集ツールをダウンロードします。
 3.  ツールを実行します。 これにより、 **%temp%/vslogs.zip** に zip ファイルが出力されます。 このファイルをご自分のフィードバックに添付してください。
 
 ## <a name="see-also"></a>関連項目

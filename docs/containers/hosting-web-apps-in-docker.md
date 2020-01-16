@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 200c94950c9dd6309481e7d79b27eeba166a0e1f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: cfed918633f62700f464ee5f9911fbbfc6463c36
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402517"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916911"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Visual Studio を使用して ASP.NET Docker コンテナーをコンテナー レジストリにデプロイする
 
@@ -58,7 +58,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
     | **DNS プレフィックス** | グローバルに一意の名前 | コンテナー レジストリを一意に識別する名前。 |
     | **サブスクリプション** | サブスクリプションの選択 | 使用する Azure サブスクリプション。 |
     | **[リソース グループ](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  コンテナー レジストリを作成するリソース グループの名前。 新しいリソース グループを作成する場合は、 **[新規]** を選択します。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
     | **レジストリの場所** | 近くの場所 | [[地域]](https://azure.microsoft.com/regions/) で、自分に近いか、またはコンテナー レジストリを使用する他のサービスに近い場所を選択します。 |
 
     ![Visual Studio の Azure コンテナー レジストリを作成するダイアログ](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
