@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416423"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596529"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン
 
@@ -59,15 +59,15 @@ ms.locfileid: "68416423"
 
 1. **ソリューション エクスプローラー**で、プロジェクトを選択するか開きます。
 
-2. メニュー バーで、 **[ビルド]** を選択してから、 **[<プロジェクト名> のビルド]** または **[<プロジェクト名> のリビルド]** を選択します。
+2. メニュー バーで、 **[ビルド]** を選択してから、 **[ *<プロジェクト名>* のビルド]** または **[ *<プロジェクト名>* のリビルド]** を選択します。
 
-    - **[<プロジェクト名> のビルド]** を選択すると、最新のビルド以降に変更されたプロジェクト コンポーネントのみがビルドされます。
+    - **[ *<プロジェクト名>* のビルド]** を選択すると、最新のビルド以降に変更されたプロジェクト コンポーネントのみがビルドされます。
 
-    - **[<プロジェクト名> のリビルド]** を選択すると、プロジェクトが "クリーン" されてから、プロジェクト ファイルとすべてのプロジェクト コンポーネントがビルドされます。
+    - **[ *<プロジェクト名>* のリビルド]** を選択すると、プロジェクトが "クリーン" されてから、プロジェクト ファイルとすべてのプロジェクト コンポーネントがビルドされます。
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>スタートアップ プロジェクトとその依存関係のみをビルドするには
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[オプション]** ダイアログ ボックスで、 **[プロジェクトおよびソリューション]** ノードを展開してから、 **[ビルド/実行]** ページを選択します。
 
@@ -87,13 +87,13 @@ ms.locfileid: "68416423"
 
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトを選択してから、メニュー バーで **[ビルド]** 、 **[プロジェクトのみ]** の順に選択し、以下のコマンドのいずれかを選択します。
 
-- *プロジェクト名* **のみをビルド**
+- ***<プロジェクト名>* のみをビルド**
 
-- *プロジェクト名* **のみをリビルド**
+- ***<プロジェクト名>* のみをリビルド**
 
-- *プロジェクト名* **のみ消去**
+- ***<プロジェクト名>* のみをクリーン**
 
-- *プロジェクト名* **へのみリンク**
+- ***<プロジェクト名>* へのみリンク**
 
 これらのコマンドは、選択されている [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトにのみ適用されます。プロジェクトの依存関係やソリューション ファイルのビルド、リビルド、クリーン、リンクは行われません。 使用している [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のバージョンに応じて、 **[プロジェクトのみ]** のサブメニューに他のコマンドが含まれる場合があります。
 
