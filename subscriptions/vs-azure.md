@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810041"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405288"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -23,19 +23,23 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
    > [!div class="mx-imgBorder"]
    > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
 
-3. 既存の Azure サブスクリプションがない場合は、Azure サブスクリプションの作成に必要な情報を入力して、使用条件に同意するチェック ボックスをオンにしてから、 **[サインアップ]** をクリックします。
+3. 既存の Azure サブスクリプションがない場合は、必要な情報を入力して Azure サブスクリプションを作成するように求められます。  最初の手順は、ご自分の個人情報を入力してから、 **[次へ]** をクリックすることです。
    > [!div class="mx-imgBorder"]
-   > ![Azure のサインアップ](_img/vs-azure/vs-azure-sign-up-cropped.png) 既存のサブスクリプションがある場合は、このチェック ボックスをオンにして契約に同意し、 **[サインアップ]** をクリックします。
+   > ![Azure のサインアップ](_img/vs-azure/vs-azure-about-you.png)
 
-4. アカウントの準備ができると、Azure サポート プラン (別売り) を選ぶか、Azure サブスクリプションで始めることができます。
+4. 次に、簡単な確認コードを使用して本人確認を行う必要があります。 電話番号を入力し、コードをテキストで受け取るか、または電話で受け取るかを選択します。  受け取ったコードを入力して、 **[コードの確認]** をクリックします。   
    > [!div class="mx-imgBorder"]
-   > ![Azure 準備作業](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Azure 準備作業](_img/vs-azure/vs-azure-identity.png)
 
-5. Azure ダッシュボードのクイック スタート センターが読み込まれます。  
+5. 最後の手順として、チェックボックスをオンにして使用条件に同意した後、 **[サインアップ]** をクリックします。  必要な作業は以上です。
    > [!div class="mx-imgBorder"]
-   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Azure 準備作業](_img/vs-azure/vs-azure-agreement.png)
 
-6. 後で簡単にアクセスできるようにするには、[Azure Portal](https://portal.azure.com) にブックマークを付けます。
+0. Azure ダッシュボードのクイック スタート センターが読み込まれます。  
+   > [!div class="mx-imgBorder"]
+   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. 後で簡単にアクセスできるように、[Azure portal](https://portal.azure.com) をブックマークします。
 
 
 ## <a name="eligibility"></a>特典を受ける条件

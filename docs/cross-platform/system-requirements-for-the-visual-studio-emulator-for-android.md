@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815475"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916804"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のシステム要件
 
@@ -71,7 +71,7 @@ Hyper-V の要件
 
 RAM と Windows の要件を確認するには、コントロール パネルで [システムとセキュリティ] を選択し、[システム] を選択します。
 
-![システム要件を確認する](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
+![システム必要条件の確認](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
@@ -107,7 +107,7 @@ Windows での Hyper-V の要件
 
 |必要条件|この要件を確認して有効にする方法|
 |-----------------|----------------------------------------------|
-|Hyper-V がインストールされている必要があります。|[Windows Phone エミュレーターの Hyper-V を有効にする](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))ために使用する同じ手順に従ってください。<br /><br /> サービス スナップインで **Hyper-V 仮想マシン管理** サービスの状態を確認します。|
+|Hyper-V がインストールされている必要があります。|[Windows Phone エミュレーターの Hyper-V を有効にする](/previous-versions/windows/apps/jj863509(v=vs.105))ために使用する同じ手順に従ってください。<br /><br /> サービス スナップインで **Hyper-V 仮想マシン管理** サービスの状態を確認します。|
 |Hyper-V が実行されている必要があります。|サービスの管理の詳細については、以下のトピックを参照してください。<br /><br /> -   [サービスの開始、停止、一時停止、再開、または再起動](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [サービスを開始する方法を構成します。](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  ローカルの Hyper-V Administrators グループのメンバーである必要があります。
@@ -119,7 +119,7 @@ Windows での Hyper-V の要件
 > [!IMPORTANT]
 > グループに参加した場合は、変更を有効にするためにログオフするか、再起動します。
 
- ![ Hyper&#45;V Administrators セキュリティ グループに参加する](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Hyper&#45;V Administrators セキュリティ グループへの参加](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  手動で自分をグループに追加するには、[ローカル ユーザーとグループ] スナップインを開きます。
 

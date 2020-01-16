@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516448"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916745"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>クイック スタート: Visual Studio で React シングルページ アプリを含む Docker を使用する
 
@@ -49,7 +49,7 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 1. プロジェクト ノードを右クリックし、 **[追加]** > **[Docker サポート]** を選択して、プロジェクトに Dockerfile を追加します。
 
-   ![Docker サポートの追加](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Docker サポートを追加する](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. コンテナーの種類を選択し、 **[OK]** をクリックします。
 ::: moniker-end
@@ -61,7 +61,7 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 1. プロジェクト ノードを右クリックし、 **[追加]** > **[Docker サポート]** を選択して、プロジェクトに Dockerfile を追加します。
 
-   ![Docker サポートの追加](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Docker サポートを追加する](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. コンテナーの種類を選択します。
 ::: moniker-end
@@ -227,7 +227,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
     | **DNS プレフィックス** | グローバルに一意の名前 | コンテナー レジストリを一意に識別する名前。 |
     | **サブスクリプション** | サブスクリプションの選択 | 使用する Azure サブスクリプション。 |
     | **[リソース グループ](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  コンテナー レジストリを作成するリソース グループの名前。 新しいリソース グループを作成する場合は、 **[新規]** を選択します。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
     | **レジストリの場所** | 近くの場所 | [[地域]](https://azure.microsoft.com/regions/) で、自分に近いか、またはコンテナー レジストリを使用する他のサービスに近い場所を選択します。 |
 
     ![Visual Studio の Azure コンテナー レジストリを作成するダイアログ][0]

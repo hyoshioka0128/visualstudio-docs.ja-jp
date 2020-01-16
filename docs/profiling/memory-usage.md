@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254612"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929232"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio でのメモリ使用量の測定
 
@@ -54,24 +54,24 @@ ms.locfileid: "71254612"
 
 4. ツールバーにある **[ツールの選択]** の設定で、 **[メモリ使用量]** を選択します。
 
-     ![診断ツールを表示する](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
+     ![診断ツールを表示](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5. **[デバッグ]、[デバッグの開始]** の順にクリックします (あるいは、ツール バーの **[開始]** をクリックするか、**F5** を押します)。
 
      アプリケーションが読み込みを完了すると、診断ツールの概要ビューが表示されます。
 
-     ![診断ツールの概要タブ](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![[診断ツール] の [概要] タブ](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      > メモリ データの収集はネイティブ アプリや混在モードのアプリのパフォーマンスに影響する可能性があるため、既定でメモリのスナップショットは無効になっています。 ネイティブ アプリや混在モードのアプリのスナップショットを有効にするには、デバッグ セッションを開始します (ショートカット キー: **F5**)。 **[診断ツール]** ウィンドウが表示されたら、 **[メモリ使用量]** タブ、 **[ヒープのプロファイル]** の順に選択します。
      >
      >  ![スナップショットを有効にする](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  デバッグを停止 (ショートカット キー: **Shift** + **F5**) してから再開します。
+     >  デバッグを停止 (ショートカット キー: **Shift**+**F5**) してから再開します。
 
 6. デバッグ セッションの開始時にスナップショットを取得するには、 **[メモリ使用量]** 概要ツールバーで **[スナップショットの取得]** を選択します。 (ここにもブレークポイントを設定すると役に立つ場合があります。)
 
-    ![スナップショットを取得する](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![スナップショットの取得](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > メモリ比較のベースラインを作成するには、デバッグ セッションの開始時に、スナップショットを取得することを検討します。
@@ -101,7 +101,7 @@ ms.locfileid: "71254612"
 
 メモリ使用量を分析するには、リンクを 1 つクリックして、メモリ使用量の詳細なレポートを開きます。
 
-- 現在のスナップショットと前のスナップショットの相違点の詳細を表示するには、矢印の左にある変更リンクを選択します (![メモリ使用量増加](../profiling/media/prof-tour-mem-usage-up-arrow.png "メモリ使用量増加"))。 赤い矢印はメモリ使用量が増加したことを示し、緑の矢印は減少したことを示しています。
+- 現在のスナップショットと前のスナップショットの相違点の詳細を表示するには、矢印の左にある変更リンクを選択します (![メモリ使用量増加](../profiling/media/prof-tour-mem-usage-up-arrow.png "メモリ使用量の増加"))。 赤い矢印はメモリ使用量が増加したことを示し、緑の矢印は減少したことを示しています。
 
 > [!TIP]
 > より迅速にメモリの問題を識別するために、Diff レポートは、総数が最も増加したオブジェクト型の順 ( **[オブジェクト (相違)]** 列の変更リンクをクリック) や、総ヒープ サイズが最も増加したオブジェクト型の順 ( **[ヒープ サイズ (相違)]** 変更リンクをクリック) に並べ替えられています。
@@ -119,11 +119,11 @@ ms.locfileid: "71254612"
 
  下のウィンドウの **[ルートのパス]** ツリーには、上ウィンドウで選択されている型を参照するオブジェクトが表示されます。 .NET Framework のガベージ コレクターがオブジェクトのメモリをクリーンアップするのは、そのオブジェクトを参照する最後の型が解放されたときに限られます。
 
- **[参照される型]** ツリーには、上のウィンドウで選択されている型に保持されている参照が表示されます。
+ **[参照されるオブジェクト]** ツリーには、上のウィンドウで選択されている型に保持されている参照が表示されます。
 
- ![マネージド参照型のレポート ビュー](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![マネージド参照オブジェクトのレポート ビュー](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- 上のウィンドウで選択した型のインスタンスを表示するには、![[インスタンス] アイコン](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") アイコンを選択します。
+ 上のウィンドウで選択した型のインスタンスを表示するには、![インスタンス アイコン](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") アイコンを選択します。
 
  ![インスタンス ビュー](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
@@ -150,7 +150,7 @@ ms.locfileid: "71254612"
 
 - **[診断ツール]** ウィンドウの **[メモリ使用量]** タブで、概要テーブルのセルにある変更リンクを選択します。
 
-   ![変更 &#40;diff&#41; レポートの選択](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![変更 &#40;差分&#41; レポートを選択](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - マネージド レポート、もしくはネイティブ レポートの **[比較対象]** 一覧でスナップショットを選択します。
 

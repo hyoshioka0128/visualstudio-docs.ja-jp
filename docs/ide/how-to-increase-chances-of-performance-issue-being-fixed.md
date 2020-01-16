@@ -5,18 +5,18 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903995"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406106"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>パフォーマンスの問題が修正される可能性を高める方法
 
 [[問題の報告]](https://aka.ms/vs-rap) ツールは、さまざまな問題を報告するために Visual Studio ユーザーによって広く使用されています。 Visual Studio チームは、ユーザー フィードバックのクラッシュとパフォーマンス低下の傾向を把握し、広範なユーザーに影響を与える問題に対処します。 特定のフィードバック チケットがより実用的なものになれば、製品チームによって迅速に診断および解決される可能性が高まります。 このドキュメントでは、報告をより実用的なものにするために、クラッシュまたはパフォーマンス低下の問題を報告する際のベスト プラクティスについて説明します。
 
-## <a name="general-best-practices"></a>一般的なベスト プラクティス
+## <a name="general-best-practices"></a>全般的なベスト プラクティス
 
 Visual Studio は、多数の言語、プロジェクトの種類、プラットフォームなどをサポートする大規模で複雑なプラットフォームです。 その動作は、インストールされてセッションでアクティブになっているコンポーネント、インストールされている拡張機能、Visual Studio の設定、コンピューターの構成、および編集されるコードの構造に左右されます。 このようにさまざまな要因があるため、見かけ上の症状が同じであっても、あるユーザーからの問題報告と別のユーザーからの問題報告との間で、基になる問題が同じであるかどうかを判断するのは困難です。 したがってここでは、特定の問題報告が診断される可能性を高めるためのベスト プラクティスをいくつか紹介します。
 
@@ -40,7 +40,9 @@ Visual Studio は、多数の言語、プロジェクトの種類、プラット
 
 -   [高 CPU 使用率:](#slowness-and-high-cpu-issues)CPU 使用率が長時間にわたって予想外に高くなる
 
-## <a name="crashes"></a>Crashes
+-   [アウトプロセスの問題:](#out-of-process-issues)Visual Studio のサテライト プロセスに起因する問題
+
+## <a name="crashes"></a>クラッシュ
 プロセス (Visual Studio) が予期せず終了すると、クラッシュが発生する
 
 **直接再現可能なクラッシュ**
@@ -171,6 +173,23 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 **高度なパフォーマンス トレース**
 
 ほとんどのシナリオでは、[問題の報告] ツールのトレース コレクション機能で十分です。 ただし、トレース コレクションをさらに制御する必要がある場合は (たとえば、バッファー サイズが大きいトレース)、PerfView ツールを使用するのが適切です。 PerfView ツールを使用してパフォーマンス トレースを手動で記録する手順については、[PerfView を使用したパフォーマンス トレースの記録](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)に関するページを参照してください。
+
+## <a name="out-of-process-issues"></a>アウトプロセスの問題
+
+> [!NOTE]
+> Visual Studio 2019 バージョン 16.3 以降では、[問題の報告] ツールを使用して送信されたフィードバックに、アウトプロセスのログが自動的に添付されます。 ただし、問題を直接再現できる場合でも、以下の手順に従って、問題の診断に役立つ情報をさらに追加することができます。
+
+Visual Studio と並行して実行され、Visual Studio のメイン プロセスの外部からさまざまな機能を提供するサテライト プロセスが多数あります。 これらのサテライト プロセスのいずれかでエラーが発生した場合、これは通常、Visual Studio 側では、'StreamJsonRpc.RemoteInvocationException' または 'StreamJsonRpc.ConnectionLostException' として表示されます。
+
+これらの種類の問題を解決しやすくするための最善策は、次の手順に従って収集できる追加のログを提供することです。
+
+1.  この問題を直接再現できる場合は、まず **%temp%/servicehub/logs** フォルダーを削除します。 この問題を再現できない場合は、このフォルダーをそのまま残し、次の箇条書きは無視してください。
+
+    -   グローバル環境変数 **ServiceHubTraceLevel** を **All** に設定します
+    -   問題を再現します。
+
+2.  [こちら](https://aka.ms/vscollect)から、Microsoft Visual Studio および .NET Framework ログ収集ツールをダウンロードします。
+3.  ツールを実行します。 これにより、 **%temp%/vslogs.zip** に zip ファイルが出力されます。 このファイルをご自分のフィードバックに添付してください。
 
 ## <a name="see-also"></a>関連項目
 

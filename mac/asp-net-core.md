@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913324"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404997"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -118,9 +118,9 @@ ASP.NET Core アプリにより、その main メソッドで Web サーバー�
 
 事前作成済みテンプレートの `Configure` メソッドは、いくつかのことを行うように作成されています。 最初に、開発中に使用するために、例外処理ページを構成します。 次に、簡単な "Hello World" で要求元の Web ページに応答を送信します。
 
-この簡単な "Hello World" プロジェクトは、コードを追加しなくても実行できるようになりました。 アプリを実行し、それをブラウザーで表示するには、ツールバーの [再生] ボタン (三角形) を押します。
+この簡単な "Hello World" プロジェクトは、コードを追加しなくても実行できるようになりました。 アプリを実行する場合、再生ボタンの右側にあるドロップダウンを使用してどのブラウザーでアプリを実行するか選択するか、または単に再生 (三角形) ボタンを押して既定のブラウザーを使用するか、いずれかを選べます。
 
-![アプリを実行する](media/asp-net-core-2019-run-debug.png)
+![ブラウザーでの実行](media/asp-net-web-picker.png)
 
 Visual Studio for Mac では、ランダムのポートを利用して Web プロジェクトを起動します。 利用されているポートを調べるには、アプリケーション出力を開きます。これは **[表示]、[パッド]** にあります。 出力は下の画像のようになります。
 

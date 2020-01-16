@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850333"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918799"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>方法: Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、「[Visual C++ 移植とアップグレードのガイド](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)」をご覧ください。
+Visual Studio 2017 の最新ドキュメントについては、「[Visual C++ 移植とアップグレードのガイド](/cpp/porting/visual-cpp-porting-and-upgrading-guide)」をご覧ください。
 
 旧バージョンの Visual Studio で作成された Visual C++ プロジェクトを初めて開くと、そのプロジェクトを更新するよう求めるメッセージが表示されることがあります。 Visual C++ コンパイラおよびライブラリを最新バージョンにアップグレードするかどうかを確認するメッセージです。 アップグレードのオプションは、プロジェクトの作成に使用された [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョンによって異なります。
 

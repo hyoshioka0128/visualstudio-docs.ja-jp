@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189418"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929247"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>クイック スタート: プロファイリング ツールの概要
 
@@ -38,7 +38,7 @@ Visual Studio にはさまざまなプロファイリング ツールがあり�
 
 ## <a name="analyze-cpu-usage"></a>CPU 使用率の分析
 
-アプリのパフォーマンスを分析するとき、CPU 使用率ツールから始めると効率的です。 アプリが使用している CPU リソースについて理解できます。 CPU 使用率ツールの詳しいチュートリアルについては、「[パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)」を参照してください。
+アプリのパフォーマンスを分析するとき、CPU 使用率ツールから始めると効率的です。 アプリが使用している CPU リソースについて理解できます。 CPU 使用率ツールの詳しいチュートリアルについては、「[CPU 使用率を分析することでアプリケーションのパフォーマンスを測定する](../profiling/beginners-guide-to-performance-profiling.md)」を参照してください。
 
 診断ツールの **[概要]** ビューから、 **[CPU プロファイルの有効化]** を選択します (デバッグ セッションに入っている必要があります)。
 

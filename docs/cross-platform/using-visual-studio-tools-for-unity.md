@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253040"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916578"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 
@@ -33,7 +33,7 @@ Visual Studio を [Unity の外部スクリプト エディターとして設定
 
 Visual Studio から簡単に Unity スクリプトに関するドキュメントにアクセスできます。 Visual Studio Tools for Unity は、ローカルの API ドキュメントを見つけられない場合、ドキュメントをオンラインで検索することを試みます。
 
-- Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、**Ctrl** + **Alt** + **M** キー、**Ctrl** + **H** キーの順に押します。
+- Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、**Ctrl**+**Alt**+**M** キー、**Ctrl**+**H** キーの順に押します。
 
 ## <a name="intellisense-for-unity-api-messages"></a>Unity API メッセージ用の IntelliSense
 
@@ -71,7 +71,7 @@ MonoBehavior ウィザードを使用して、Unity API のすべてのメソッ
 
 MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定義を作成するには:
 
-1. Visual Studio で、メソッドの挿入位置にカーソルを合わせてから、**Ctrl** + **Shift** + **M** キーを押して MonoBehavior ウィザードを起動します。
+1. Visual Studio で、メソッドの挿入位置にカーソルを合わせてから、**Ctrl**+**Shift**+**M** キーを押して MonoBehavior ウィザードを起動します。
 
 2. **[スクリプト メソッドの作成]** ウィンドウで、追加する各メソッドの名前の横にあるチェック ボックスをオンにします。
 
@@ -87,13 +87,13 @@ MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定�
 
 ## <a name="unity-project-explorer"></a>Unity プロジェクト エクスプローラー
 
-![Unity プロジェクト エクスプローラー ウィンドウ。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Unity プロジェクト エクスプ ローラー ウィンドウ。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 Unity Project Explorer にはすべての Unity プロジェクト ファイルとディレクトリが、Unity エディターで表示されるのと同じ方法で表示されます。 これは、通常の Visual Studio ソリューション エクスプローラーを使用して Unity スクリプト間を移動するのとは異なります。そこではそれらが Visual Studio によって生成されるプロジェクトとソリューションに編成されます。
 
-- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット:**Alt** + **Shift** + **E**
+- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット:**Alt**+**Shift**+**E**
 
-   ![Unity プロジェクト エクスプローラー ウィンドウを表示します。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Unity プロジェクト エクスプ ローラー ウィンドウを表示します。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Unity のデバッグ
 
@@ -133,7 +133,7 @@ Visual Studio でのデバッグの詳細については、「[First look at the
 
 [再生] ボタンのラベルが **[Unity にアタッチして再生]** になります。 これで、このボタンをクリックするか、キーボード ショートカット **F5** を使用すると、Visual Studio デバッガーにアタッチされるだけでなく、自動的に Unity エディターに切り替わり、エディターでゲームが実行されます。
 
-Visual Studio の **[停止]** ボタンをクリックするかキーボード ショートカット **Shift** + **F5** キーを使用すると、Unity エディターで実行されているゲームが自動的に停止します。
+Visual Studio の **[停止]** ボタンをクリックするかキーボード ショートカット **Shift**+**F5** キーを使用すると、Unity エディターで実行されているゲームが自動的に停止します。
 
 ### <a name="debug-unity-player-builds"></a>Unity プレーヤー ビルドのデバッグ
 
@@ -163,7 +163,7 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
    **コンピューター** Unity のこのインスタンスが実行されているコンピューターまたはデバイスの名前。
 
-   **タイプ** Unity のこのインスタンスが Unity エディターの一部として実行されている場合は **Editor** です。Unity のこのインスタンスがスタンドアロン プレーヤーの場合は **Player** です。
+   Unity のこのインスタンスが Unity エディターの一部として実行されている場合は **Type** **Editor** です。Unity のこのインスタンスがスタンドアロン プレーヤーの場合は **Player** です。
 
    **ポート** Unity のこのインスタンスが通信に使用している UDP ソケットのポート番号。
 
@@ -202,7 +202,7 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
    PDB ファイルには DLL のデバッグのシンボルや、DLL コードからソース コード フォームへのマップが格納されているため、デバッグには PDB ファイルが必要です。 レガシ ランタイムをターゲットにしている場合、Visual Studio Tools for Unity は、DLL と PDB からの情報を使用して DLL.MDB ファイルを作成します。このファイルは、レガシ Unity スクリプト エンジンが使用するデバッグ シンボル形式になっています。 新しいランタイムをターゲットにしていて、Portable-PDB を使用している場合、新しい Unity ランタイムは Portable-PDB をネイティブで使用できるため、Visual Studio Tools for Unity ではシンボル変換が試行されません。
 
-   PDB 生成の詳細については、[ここ](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)を参照してください。 新しいランタイムをターゲットにしている場合は、Portable-PDB を適切に生成するために、[Debugging Information]\(デバッグ情報\) が [移植可能] に設定されていることを確認します。 レガシ ランタイムをターゲットにしている場合は、[全体] を使用する必要があります。
+   PDB 生成の詳細については、[ここ](/visualstudio/debugger/how-to-set-debug-and-release-configurations)を参照してください。 新しいランタイムをターゲットにしている場合は、Portable-PDB を適切に生成するために、[Debugging Information]\(デバッグ情報\) が [移植可能] に設定されていることを確認します。 レガシ ランタイムをターゲットにしている場合は、[全体] を使用する必要があります。
 
 4. コードをデバッグします。 これで、Unity プロジェクトのソース コードと DLL ソース コードを一緒にしてデバッグできるようになりました。ブレークポイントやコードのステップ実行など、いつも使用しているデバッグ機能をすべて使用できます。
 
@@ -212,9 +212,9 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
 |コマンド|ショートカット|シュートカット コマンド名|
 |-------------|--------------|---------------------------|
-|MonoBehavior ウィザードを開く|**Ctrl** + **Shift** + **M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Unity プロジェクト エクスプローラーを開く|**Alt** + **Shift** + **E**|**View.UnityProjectExplorer**|
-|Unity のドキュメントにアクセスする|**Ctrl** + **Alt** + **M、Ctrl** + **H**|**Help.UnityAPIReference**|
+|MonoBehavior ウィザードを開く|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Unity プロジェクト エクスプローラーを開く|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
+|Unity のドキュメントにアクセスする|**Ctrl**+**Alt**+**M、Ctrl**+**H**|**Help.UnityAPIReference**|
 |Unity のデバッガー (プレーヤーまたはエディター) にアタッチする|**_既定値なし_**|**Debug.AttachUnityDebugger**|
 
 既定値では不便な場合は、ショートカット キーの組み合わせを変更できます。 変更方法については、「[Visual Studio でのキーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
