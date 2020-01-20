@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
-  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
+  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2019
-  ms.locfileid: "74474001"
+  ms.lasthandoff: 01/17/2020
+  ms.locfileid: "76256477"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -178,7 +178,7 @@ additionalContent:
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Office/Sharepoint 開発
         url: https://developer.microsoft.com/office/docs
-    - title: Windows
+    - title: デスクトップおよびモバイル
       links:
       - text: .NET デスクトップ開発
         url: /dotnet/framework/develop-client-apps
@@ -186,17 +186,17 @@ additionalContent:
         url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: C++ での Windows 開発
         url: /cpp/windows/desktop-applications-visual-cpp
-    - title: モバイルとゲーム
-      links:
       - text: .NET (Xamarin) によるモバイル開発
         url: /xamarin/
-      - text: Unity でのゲーム開発
-        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: C++ でのモバイル開発
+        url: /visualstudio/cross-platform/
       - text: JavaScript でのモバイル開発
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (Visual Studio 2017 および 2015 のみ)
-      - text: C++ でのモバイル開発
-        url: /visualstudio/cross-platform/
+    - title: ゲーム
+      links:
+      - text: Unity でのゲーム開発
+        url: ../cross-platform/visual-studio-tools-for-unity.md
       - text: C++ によるゲーム開発
         url: /windows/uwp/gaming/e2e
     - title: 他のツールセット
