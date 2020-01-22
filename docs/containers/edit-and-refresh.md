@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400917"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916518"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>ローカルの Docker コンテナーでのアプリのデバッグ
 
@@ -60,6 +60,28 @@ Docker コンテナーは .NET Framework プロジェクトと .NET Core プロ�
 変更をすばやく反復する目的で、コンテナーでアプリケーションを起動できます。 次に、変更を続け、IIS Express の場合と同じように変更を表示します。
 
 1. 使用しているコンテナーの種類 (Linux または Windows) が使用されるように Docker が設定されていることを確認します。 タスク バーの Docker アイコンを右クリックして、必要に応じて **[Switch to Linux containers]\(Linux コンテナーに切り替える\)** または **[Switch to Windows containers]\(Windows コンテナーに切り替える\)** を選択します。
+
+1. (.NET Core 3 以降のみ) このセクションで説明しているようにコードを編集して実行中のサイトを更新する処理は、.NET Core 3.0 以降の既定テンプレートでは有効ではありません。 有効にするには、NuGet パッケージ [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/) を追加します。 *Startup.cs* で、拡張メソッド `IMvcBuilder.AddRazorRuntimeCompilation` への呼び出しを `ConfigureServices` メソッドのコードに追加します。 これを有効にする必要があるのはデバッグ モードのみなので、コードは次のようになります。
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   詳細については、「[ASP.NET Core での Razor ファイルのコンパイル](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)」を参照してください。
 
 1. **[ソリューション構成]** を **[デバッグ]** に設定します。 次に、**Ctrl**+**F5** を押し、Docker イメージをビルドしてローカルで実行します。
 
@@ -138,6 +160,6 @@ Docker コンテナーは .NET Framework プロジェクトと .NET Core プロ�
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Visual Studio、Windows、Azure を使用した Docker の詳細
 
 * [Visual Studio でコンテナーを開発する](/visualstudio/containers)方法について説明します。
-* Docker コンテナーをビルドし、デプロイする方法については、「[Azure Pipelines 向けの Docker の統合](https://aka.ms/dockertoolsforvsts)」を参照してください。
-* Windows Server と Nano Server に関する記事の索引が必要であれば、「[Windows コンテナー情報](https://aka.ms/containers)」を参照してください。
+* Docker コンテナーをビルドし、デプロイする方法については、「[Azure Pipelines 向けの Docker の統合](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)」を参照してください。
+* Windows Server と Nano Server に関する記事の索引が必要であれば、「[Windows コンテナー情報](/virtualization/windowscontainers/)」を参照してください。
 * Azure Kubernetes Service の詳細は[こちら](https://azure.microsoft.com/services/kubernetes-service/)をご覧ください。また、[Azure Kubernetes Service ドキュメント](/azure/aks)を確認してください。
