@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b422b1844ffb30c1c6f2f8fa8845995c98c794e4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416835"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115158"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法: Visual Basic 開発者設定が適用されたビルド構成を管理する
 

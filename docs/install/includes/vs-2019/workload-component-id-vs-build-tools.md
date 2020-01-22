@@ -3,19 +3,19 @@ title: Visual Studio Build Tools 2019 のワークロード ID とコンポー�
 titleSuffix: ''
 description: Visual Studio のワークロード ID とコンポーネント ID を使用して Windows ベースのクラシック アプリケーションを構築する
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1e9fa33bbd8604f4260b61767f69b85e3263198b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9f3920b7b746e4329cf94760e983d43e3579e8d3
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795763"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159405"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開発ビルド ツール
 
@@ -25,7 +25,7 @@ ms.locfileid: "74795763"
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
@@ -68,7 +68,7 @@ Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | Optional
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 推奨
@@ -88,7 +88,7 @@ Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools - ビ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | 必須
@@ -126,7 +126,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# コンパイラ | 16.0.2852
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools のコア | 16.0.28315.86 | 必須
@@ -140,7 +140,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Ros
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core ビルド ツール | 16.3.29102.218 | 必須
 Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | 必須
@@ -155,7 +155,7 @@ Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.4.
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild サポート | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 必須
@@ -168,7 +168,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.2942
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce ビルド ツール | 16.0.28625.61 | 必須
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
@@ -206,7 +206,7 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | .NET Framework 4.8 開発ツ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.Component.NetFX.Native | .NET Native | 16.4.29429.68 | 必須
@@ -242,7 +242,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | C++ (v141) ユニ
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | C++ Build Tools のコア機能 | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 再頒布可能パッケージの更新プログラム | 16.4.29429.68 | 必須
@@ -281,7 +281,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Windows 用 C++
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 必須
@@ -306,7 +306,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
@@ -348,7 +348,7 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | .NET Framework 4.8 開発ツ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | 必須
@@ -362,7 +362,7 @@ Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.1
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | name | Version
+コンポーネント ID | 名前 | バージョン
 --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.2 | .NET Core 2.2 ランタイム | 16.4.29519.181
 Microsoft.Net.Core.Component.SDK.3.0 | .NET Core 3.0 ランタイム | 16.4.29519.181
