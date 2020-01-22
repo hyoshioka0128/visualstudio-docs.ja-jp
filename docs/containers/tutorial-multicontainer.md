@@ -3,15 +3,15 @@ title: Docker Compose と ASP.NET Core を使用した複数コンテナーの�
 author: ghogen
 description: Docker Compose を使用して複数のコンテナーを使用する方法について説明します
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399751"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916510"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>チュートリアル: Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -98,7 +98,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
     
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
-          <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
           <p>@ViewData["Message"]</p>
       </div>
       ```
@@ -114,7 +114,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
         }
       ```
 
-    .NET Core 3.1 では、既に存在する WeatherForecast API を使用できるため、これは必要ありません。 ただし、*Startup.cs* の `Configure` メソッドの `UseHttpsRedirections` の呼び出しをコメント アウトする必要があります。このコードでは、Web API を呼び出すために、HTTPS ではなく HTTP が使用されているためです。
+    .NET Core 3.1 では、既に存在する WeatherForecast API を使用できるため、これは必要ありません。 ただし、*Startup.cs* の `Configure` メソッドの <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> の呼び出しをコメント アウトする必要があります。このコードでは、Web API を呼び出すために、HTTPS ではなく HTTP が使用されているためです。
 
     ```csharp
                 //app.UseHttpsRedirection();
