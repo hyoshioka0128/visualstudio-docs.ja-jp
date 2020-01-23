@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735832"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852039"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>新しいエディターの拡張
 
-Visual Studio for Mac には、Visual Studio on Windows と同じエディター レイヤーの上に構築された[新しいネイティブ Cocoa テキスト エディター UI が導入されています](https://aka.ms/vs/mac/editor/learn-more)。
+Visual Studio for Mac には、Visual Studio on Windows と同じエディター レイヤーの上に構築された[新しいネイティブ Cocoa テキスト エディター UI が導入されています](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW)。
 
 Visual Studio と Visual Studio for Mac 間でのエディターの共有による多くのメリットの 1 つに、Visual Studio エディターをターゲットとするコードを Visual Studio for Mac で実行するように適応させることができるという点があります。
 
@@ -191,7 +191,7 @@ Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、�
 ## <a name="additional-information"></a>追加情報
 
 > [!NOTE]
-> 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://aka.ms/vsmac-extensions-survey)」フォームに記入してお知らせください。
+> 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)」フォームに記入してお知らせください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300388"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851831"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -265,15 +265,15 @@ attribute of the Assembly element in the .fakes:
 |種類|追加される文字列|
 |-----------|-------------------------|
 |**型**`T`|T<br /><br /> 名前空間、入れ子になった構造体、およびジェネリック チックは削除されます。|
-|**out パラメーター** `out T`|`TOut`|
+|**out パラメーター**`out T`|`TOut`|
 |**ref パラメーター** `ref T`|`TRef`|
-|**配列型** `T[]`|`TArray`|
+|**配列型**`T[]`|`TArray`|
 |**多次元配列**型 `T[ , , ]`|`T3`|
 |**ポインター**型 `T*`|`TPtr`|
-|**ジェネリック型** `T<R1, …>`|`TOfR1`|
-|型 `C<TType>` の**ジェネリック型引数** `!i`|`Ti`|
-|メソッド `M<MMethod>` の**ジェネリック メソッド引数** `!!i`|`Mi`|
-|**入れ子にされた型** `N.T`|`N` が追加され、その後に `T`|
+|**ジェネリック型**`T<R1, …>`|`TOfR1`|
+|型 `C<TType>` の**ジェネリック型引数**`!i`|`Ti`|
+|メソッド `M<MMethod>` の**ジェネリック メソッド引数**`!!i`|`Mi`|
+|**入れ子にされた型**`N.T`|`N` が追加され、その後に `T`|
 
 ### <a name="BKMK_Recursive_rules"></a> 再帰的な規則
  次の規則は再帰的に適用されます。
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> 外部リソース
 
 ### <a name="BKMK_Guidance"></a> ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章:単体テスト:内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>関連項目
  [Microsoft Fakes を使用したテストでのコードの分離](../test/isolating-code-under-test-with-microsoft-fakes.md)

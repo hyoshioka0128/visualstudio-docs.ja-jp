@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9be8cd5107b109e084fcd75bc30ae0f32ab43a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655740"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567776"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -59,9 +59,9 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
-- `devenv`、`/Build`、`/Clean`、`/Rebuild`、または `/Deploy` コマンドの一部として使用する必要があります。
+- `devenv` `/Build`、`/Clean`、`/Rebuild`、または `/Deploy` コマンドの一部として使用する必要があります。
 
 - 空白を含む文字列を二重引用符で囲みます。
 

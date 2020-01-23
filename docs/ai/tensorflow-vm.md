@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427573"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915824"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>クラウドで TensorFlow モデルをトレーニングする
 
-このチュートリアルでは、Azure [ディープ ラーニング](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)仮想マシンの [MNIST データセット](http://yann.lecun.com/exdb/mnist/)を使って、TensorFlow モデルをトレーニングします。
+このチュートリアルでは、Azure [ディープ ラーニング](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)仮想マシンの [MNIST データセット](http://yann.lecun.com/exdb/mnist/)を使って、TensorFlow モデルをトレーニングします。
 
 MNIST データベースには、60,000 例のトレーニング セットと、手書きの数字の 10,000 例のテスト セットが含まれます。
 
@@ -31,7 +31,7 @@ MNIST データベースには、60,000 例のトレーニング セットと、
 > [!NOTE]
 > **[OS の種類]** を Linux に設定します。
 
-ディープ ラーニング仮想マシンのセットアップ方法については、[こちら](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)をご覧ください。
+ディープ ラーニング仮想マシンのセットアップ方法については、[こちら](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)をご覧ください。
 
 ### <a name="remove-comment-in-parens"></a>かっこ内のコメントを削除する
 
@@ -45,7 +45,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 
 ## <a name="open-project"></a>プロジェクトを開く
 
-- Visual Studio を起動し、**[ファイル] > [開く] > [プロジェクト/ソリューション]** の順に選びます。
+- Visual Studio を起動し、 **[ファイル] > [開く] > [プロジェクト/ソリューション]** の順に選びます。
 
 - ダウンロードしたサンプル リポジトリで **Tensorflow Examples** フォルダーを選び、**TensorflowExamples.sln** ファイルを開きます。
 
@@ -60,7 +60,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 ![新しいリモート マシンを追加する](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>ジョブを Azure VM に送信する
-**ソリューション エクスプローラー**で MNIST プロジェクトを右クリックし、**[ジョブの送信]** を選びます。
+**ソリューション エクスプローラー**で MNIST プロジェクトを右クリックし、 **[ジョブの送信]** を選びます。
 
 ![リモート マシンへのジョブの送信](media/tensorflow-vm/job-submission.png)
 

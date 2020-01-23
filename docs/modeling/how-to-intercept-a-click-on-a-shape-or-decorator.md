@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748378"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114523"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 次の手順では、図形またはアイコンデコレータのクリックをインターセプトする方法を示します。 クリック、ダブルクリック、ドラッグなどのジェスチャをインターセプトし、要素を応答させることができます。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>図形のクリックをインターセプトするには
- Dsl プロジェクトで、生成されたコードファイルとは別のコードファイルで、shape クラスの部分クラス定義を記述します。 @No__t_0、または `On...` で始まる名前を持つ他のメソッドの1つをオーバーライドします。 (例:
+ Dsl プロジェクトで、生成されたコードファイルとは別のコードファイルで、shape クラスの部分クラス定義を記述します。 `OnDoubleClick()`、または `On...`で始まる名前を持つ他のメソッドの1つをオーバーライドします。 例:
 
 ```csharp
 public partial class MyShape // change
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> イベントを含んでいる図形または図に渡す場合を除き、`e.Handled` を `true` に設定します。
+> イベントを含んでいる図形または図に渡す場合を除き、`e.Handled` を `true`に設定します。
 
 ## <a name="to-intercept-clicks-on-decorators"></a>デコレーターのクリックをインターセプトするには
  Image デコレーターは、Ondoubleclick: メソッドを持つ ImageField クラスのインスタンスで実行されます。 ImageField サブクラスを作成すると、クリックをインターセプトできます。 これらのフィールドは、InitializeShapeFields メソッドで設定されます。 そのため、通常の ImageField ではなく、サブクラスをインスタンス化するようにメソッドを変更する必要があります。 InitializeShapeFields メソッドは、shape クラスの生成されたコードに含まれています。 次の手順で説明するように `Generates Double Derived` プロパティを設定した場合は、shape クラスをオーバーライドできます。
@@ -47,7 +47,7 @@ public partial class MyShape // change
 
 2. アイコンデコレータを持つ図形を選択または作成し、それをドメインクラスにマップします。
 
-3. @No__t_0 フォルダー内のファイルとは別のコードファイルで、ImageField の新しいサブクラスを作成します。
+3. `GeneratedCode` フォルダー内のファイルとは別のコードファイルで、ImageField の新しいサブクラスを作成します。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -129,11 +129,11 @@ public partial class MyShape // change
 
 4. このコード内のドメインクラスと図形名を、独自の DSL と一致するように調整します。
 
-   要約すると、コードは次のように機能します。 この例では、`ClassShape` はコンパートメントシェイプの名前です。
+   要約すると、コードは次のように機能します。 この例では、`ClassShape` がコンパートメントシェイプの名前です。
 
 - 一連のマウスイベントハンドラーは、作成時に各コンパートメントインスタンスにアタッチされます。
 
-- @No__t_0 イベントには、現在のアイテムが格納されます。
+- `ClassShape.MouseDown` イベントには、現在のアイテムが格納されます。
 
 - マウスを現在の項目の外に移動すると、MouseAction のインスタンスが作成されます。これにより、カーソルが設定され、マウスが解放されるまでキャプチャされます。
 

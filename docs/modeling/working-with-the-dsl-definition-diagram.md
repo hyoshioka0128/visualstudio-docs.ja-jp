@@ -11,23 +11,23 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Show Map Lines
 - Domain-Specific Language Tools, Show As Class
 - Domain-Specific Language Tools, Bring Tree Here
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748147"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115287"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 定義図の使用
-@No__t_0 定義の図は、ドメイン固有言語を定義するための重要なツールです。 ドメイン モデルに要素を追加し、図で関係を定義し、図のレイアウトを読みやすいように変更できます。
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 定義の図は、ドメイン固有言語を定義するための重要なツールです。 ドメイン モデルに要素を追加し、図で関係を定義し、図のレイアウトを読みやすいように変更できます。
 
 ## <a name="the-layout-of-the-diagram"></a>図のレイアウト
- @No__t_0 定義ダイアグラムには、 **[クラスとリレーションシップ]** パーティションと **[ダイアグラム要素]** パーティションの2つのパーティションがあります。 **[クラスとリレーションシップ]** パーティションには、ドメインクラス、ドメインリレーションシップ、および継承が表示されます。 **ダイアグラム要素**パーティションには、シェイプクラス、コネクタクラス、スイムレーンクラス、および生成されたデザイナーダイアグラムが表示されます。
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 定義ダイアグラムには、 **[クラスとリレーションシップ]** パーティションと **[ダイアグラム要素]** パーティションの2つのパーティションがあります。 **[クラスとリレーションシップ]** パーティションには、ドメインクラス、ドメインリレーションシップ、および継承が表示されます。 **ダイアグラム要素**パーティションには、シェイプクラス、コネクタクラス、スイムレーンクラス、および生成されたデザイナーダイアグラムが表示されます。
 
  ドメインクラスは、**クラスとリレーションシップ**のパーティション内の複数の場所に表示できます。 ドメイン クラスの定義は、他のドメイン クラスの基底クラスである場合、継承ツリーを表示します。埋め込みまたは参照リレーションシップのソースである場合は、リレーションシップ ツリーを表示します。 ドメイン クラスのプレースホルダーは、埋め込みまたは参照リレーションシップのターゲットとして表示されます。 既定では、プレースホルダー要素は **[ドメインプロパティ]** コンパートメントが折りたたまれた状態で表示されます。 継承、埋め込み、参照リレーションシップは表示されません。
 

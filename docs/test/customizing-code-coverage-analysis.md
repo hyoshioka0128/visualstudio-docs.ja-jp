@@ -2,17 +2,17 @@
 title: コード カバレッジ分析のカスタマイズ
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665063"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918646"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -51,7 +51,7 @@ ms.locfileid: "72665063"
 
 ::: moniker range="vs-2017"
 
-カスタム設定のオンとオフを切り替えるには、 **[テスト]** > **[テストの設定]** メニューで、ファイルを選択したり選択解除したりします。
+カスタム設定のオンとオフを切り替えるには、 **[テスト]** > **[テストの設定]** メニューでファイルを選択したり選択解除したりします。
 
 ![Visual Studio 2017 でのカスタム設定ファイルがある設定メニュー](../test/media/codecoverage-settingsfile.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "72665063"
 
 ### <a name="regular-expressions"></a>正規表現
 
-Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 次に例をいくつか示します。
+Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 次に、例を示します。
 
 - **.\*** は任意の文字の文字列と一致します
 
@@ -197,7 +197,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--
 About include/exclude lists:
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.
-Each element in the list is a regular expression (ECMAScript syntax). See https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio.
+Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio.
 An item must first match at least one entry in the include list to be included.
 Included items must then not match any entries in the exclude list to remain included.
 -->

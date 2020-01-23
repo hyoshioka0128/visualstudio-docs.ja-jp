@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706792"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916937"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
 
@@ -103,7 +103,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="volume-mapping"></a>ボリューム マッピング
 
-デバッグをコンテナーで機能させるために、Visual Studio では、ボリューム マッピングを使用してホスト マシンからデバッガーと NuGet フォルダーをマップします。 コンテナーにマウントされるボリュームは次のとおりです。
+デバッグをコンテナーで機能させるために、Visual Studio では、ボリューム マッピングを使用してホスト マシンからデバッガーと NuGet フォルダーをマップします。 ボリューム マッピングの詳細については、Docker のドキュメント ([こちら](https://docs.docker.com/storage/volumes/)) を参照してください。 コンテナーにマウントされるボリュームは次のとおりです。
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ ASP.NET CoreWeb アプリの場合、SSL 証明書とユーザー シークレ�
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>SSL 対応 ASP.NET Core アプリ
 
-Visual Studio のコンテナー ツールは、コンテナーがない場合に想定される方法で、開発証明書を使用した SSL 対応 ASP.NET Core アプリのデバッグをサポートしています。 それを実現するために、Visual Studio では、証明書をエクスポートしてコンテナーで使用できるようにするために、さらにいくつかの手順を追加しています。 フローは次のとおりです。
+Visual Studio のコンテナー ツールは、コンテナーがない場合に想定される方法で、開発証明書を使用した SSL 対応 ASP.NET Core アプリのデバッグをサポートしています。 それを実現するために、Visual Studio では、証明書をエクスポートしてコンテナーで使用できるようにするために、さらにいくつかの手順を追加しています。 コンテナーでデバッグするときの Visual Studio の処理フローを次に示します。
 
 1. ローカル開発証明書が存在し、`dev-certs` ツールを介してホスト マシン上で信頼されていることを確認します。
 2. この特定のアプリのユーザー シークレット ストアに保存されているセキュリティで保護されたパスワードを使用して、証明書を %APPDATA%\ASP.NET\Https にエクスポートします。
-3. 次のディレクトリのボリューム マウントを行います。
+3. 次のディレクトリのボリュームマウントを行います。
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core により、*Https* フォルダー以下のアセンブリ名に�
 }
 ```
 
-コンテナー内の ASP.NET Core アプリで SSL を使用する方法の詳細については、「[HTTPS 経由で Docker を使用して ASP.NET Core イメージをホストする](https://docs.microsoft.com/aspnet/core/security/docker-https)」を参照してください。
+構成でコンテナー化されたビルドとコンテナー化されていないビルドの両方がサポートされている場合は、環境変数を使用する必要があります。これは、パスがコンテナー環境に固有であるためです。
+
+コンテナー内の ASP.NET Core アプリで SSL を使用する方法の詳細については、「[HTTPS 経由で Docker を使用して ASP.NET Core イメージをホストする](/aspnet/core/security/docker-https)」を参照してください。
 
 ## <a name="debugging"></a>デバッグ
 

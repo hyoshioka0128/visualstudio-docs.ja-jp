@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188727"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846940"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 
@@ -21,7 +21,7 @@ ms.locfileid: "73188727"
 ## <a name="prerequisites"></a>必須コンポーネント
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019 バージョン 16.4 Preview 2](https://visualstudio.microsoft.com/downloads) 以降、または以前のバージョンの Visual Studio 2019 を使用している場合は[コンテナー ウィンドウ拡張機能](https://aka.ms/vscontainerspreview)をインストールします。
+- [Visual Studio 2019 バージョン 16.4 Preview 2](https://visualstudio.microsoft.com/downloads) 以降、または以前のバージョンの Visual Studio 2019 を使用している場合は[コンテナー ウィンドウ拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions)をインストールします。
 
 ## <a name="view-information-about-your-containers"></a>コンテナーに関する情報を表示する
 
@@ -60,7 +60,7 @@ ms.locfileid: "73188727"
 ログを消去するには、 **[ログ]** タブの **[クリア]** ボタンを使用します。すべてのログを取得するには、 **[更新]** ボタンを使用します。
 
 > [!NOTE]
-> Windows コンテナーでデバッグを使用しないで実行すると、Visual Studio により stdout と stderr が **[出力]** ウィンドウに自動的にリダイレクトされるため、**Ctrl** + **F5** キーを使用して Visual Studio から開始されたコンテナーでは、このタブにログが表示されません。代わりに **[出力]** ウィンドウを使用します。
+> Windows コンテナーでデバッグを使用しないで実行すると、Visual Studio により stdout と stderr が **[出力]** ウィンドウに自動的にリダイレクトされるため、**Ctrl**+**F5** キーを使用して Visual Studio から開始されたコンテナーでは、このタブにログが表示されません。代わりに **[出力]** ウィンドウを使用します。
 
 ## <a name="view-the-filesystem"></a>ファイルシステムを表示する
 

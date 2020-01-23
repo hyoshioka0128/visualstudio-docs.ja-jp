@@ -3,15 +3,15 @@ title: Docker Compose と ASP.NET Core を使用した複数コンテナーの�
 author: ghogen
 description: Docker Compose を使用して複数のコンテナーを使用する方法について説明します
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ce6e98e2d068cd569247c4c4ea869c4280101d47
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126089"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916510"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>チュートリアル: Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -28,6 +28,7 @@ ms.locfileid: "71126089"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core 2.2 を使って開発するための [.NET Core 2.2 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* .NET Core 3.1 を使って開発するための [.NET Core 3 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Web アプリケーション プロジェクトを作成する
@@ -54,7 +55,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 
 ## <a name="create-a-web-api-project"></a>Web API プロジェクトを作成する
 
-同じソリューションにプロジェクトを追加し、*MyWebAPI* という名前を付けます。 プロジェクト タイプとして **API** を選択し、 **[HTTPS 用の構成]** チェックボックスをオフにします。 この設計では、同じ Web アプリケーション内のコンテナー間の通信ではなく、クライアントとの通信にのみ SSL を使用します。 `WebFrontEnd` のみが HTTPS を必要とします。
+同じソリューションにプロジェクトを追加し、*MyWebAPI* という名前を付けます。 プロジェクト タイプとして **API** を選択し、 **[HTTPS 用の構成]** チェックボックスをオフにします。 この設計では、同じ Web アプリケーション内のコンテナー間の通信ではなく、クライアントとの通信にのみ SSL を使用します。 `WebFrontEnd` のみが HTTPS を必要とし、例のコードでは、そのチェックボックスをオフにしていることを前提としています。
 
 ::: moniker range="vs-2017"
    ![Web API プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -76,12 +77,15 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://mywebapi/api/values/1");
+          // request.RequestUri = new Uri("http://mywebapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)
+          request.RequestUri = new Uri("http://mywebapi/api/values/1"); // ASP.NET 2.x
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
+
+   Visual Studio 2019 以降の .NET Core 3.1 では、Web API テンプレートで WeatherForecast API が使用されるため、この行のコメントを解除し、ASP.NET 2.x 用の行をコメント アウトします。
 
 1. *Index.cshtml* ファイルで、`ViewData["Message"]` を表示する行を追加し、ファイルを次のコードのようにします。
     
@@ -94,12 +98,12 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
     
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
-          <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
           <p>@ViewData["Message"]</p>
       </div>
       ```
 
-1. 次に、Web API プロジェクトで、Values コントローラーにコードを追加し、*webfrontend* から追加した呼び出しに対して API によって返されるメッセージをカスタマイズします。
+1. (ASP.NET 2.x のみ) 次に、Web API プロジェクトで、Values コントローラーにコードを追加し、*webfrontend* から追加した呼び出しに対して API によって返されるメッセージをカスタマイズします。
     
       ```csharp
         // GET api/values/5
@@ -109,6 +113,12 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
             return "webapi (with value " + id + ")";
         }
       ```
+
+    .NET Core 3.1 では、既に存在する WeatherForecast API を使用できるため、これは必要ありません。 ただし、*Startup.cs* の `Configure` メソッドの <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> の呼び出しをコメント アウトする必要があります。このコードでは、Web API を呼び出すために、HTTPS ではなく HTTP が使用されているためです。
+
+    ```csharp
+                //app.UseHttpsRedirection();
+    ```
 
 1. `WebFrontEnd` プロジェクトで、 **[追加] > [コンテナー オーケストレーター サポート]** の順に選択します。 **[Docker サポート オプション]** ダイアログが表示されます。
 
@@ -163,15 +173,17 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. サイトをローカルで実行して (F5 キーまたは Ctrl + F5 キー)、想定どおりに動作することを確認します。 すべてが正しく構成されている場合、"Hello from webfrontend and webapi (with value 1)" というメッセージが表示されます。
+1. サイトをローカルで実行して (F5 キーまたは Ctrl + F5 キー)、想定どおりに動作することを確認します。 .NET Core 2.x バージョンですべてが正しく構成されている場合、"Hello from webfrontend and webapi (with value 1)" というメッセージが表示されます。  .NET Core 3 では、天気予報データが表示されます。
 
    コンテナー オーケストレーションを追加するときに使用する最初のプロジェクトは、実行またはデバッグの際に起動されるように設定されます。 docker-compose プロジェクトの **[プロジェクトのプロパティ]** で、起動アクションを構成できます。  docker-compose プロジェクト ノードで、右クリックしてコンテキスト メニューを開き、 **[プロパティ]** を選択するか、Alt + Enter キーを押します。  次のスクリーンショットは、ここで使用するソリューションに必要なプロパティを示しています。  たとえば、 **[サービス URL]** プロパティをカスタマイズすることで読み込まれるページを変更できます。
 
    ![docker-compose プロジェクト プロパティのスクリーンショット](media/tutorial-multicontainer/launch-action.png)
 
-   起動すると、このように表示されます。
+   起動時に表示されるものを次に示します (.NET Core 2.x バージョン)。
 
    ![実行中の Web アプリのスクリーンショット](media/tutorial-multicontainer/webfrontend.png)
+
+   .NET 3.1 の Web アプリでは、JSON 形式で気象データが表示されます。
 
 ## <a name="next-steps"></a>次の手順
 

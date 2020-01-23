@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72bf11519ec500082304fde431122d05ee65db54
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186014"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124518"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,27 +62,27 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 | コンポーネントまたはパッケージ | ソリューション |
 |-|-|
 | Dotfuscator および Analytics Community Edition 5.19.1 (**Windows 7 SP1** や **Windows Server 2008 R2** にインストールされているような、Community、Professional、および Enterprise エディションの Visual Studio の場合) | オフラインのマシンで **Windows 7 SP1** または **Windows Server 2008 R2** を稼働している場合は、Visual Studio 2015 をインストールする前に次の手順を実行する必要があります。<br /><br /> 1.CTL ファイルをダウンロードするファイルまたは Web サーバーを構成します。<br /><br /> 2.  接続なしの環境の Microsoft 自動更新の URL をリダイレクトします。<br /><br /> 詳細については、Microsoft TechNet サイトの「[Configure Trusted Roots and Disallowed Certificates (信頼されたルートおよび許可されない証明書を構成する)](https://technet.microsoft.com/library/dn265983.aspx)」ページをご覧ください。 |
-| Android SDK セットアップ (API レベル) | Android SDK (API レベル) パッケージをインストールするには、インターネットに接続する必要があります。 制限付きネットワークを使用している場合は、Visual Studio のインストール時に次の URL へのアクセスを許可する必要があります。<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />プロキシ設定で考えられる問題を解決する方法の詳細については、ブログ投稿の「[Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/)」(プロキシ経由で Visual Studio 2015 をインストールできない (Android SDK セットアップ)) を参照してください。 |
-| Visual Studio 機能拡張の項目テンプレート<br /><br /> Visual Studio 向け GitHub 拡張<br /><br /> PowerShell Tools for Visual Studio | Visual Studio 2015 をインストールする際にインターネットに接続出来ない場合は、特別なオフライン フィードを使ってオフライン インストール レイアウトを生成することができます。 **注:** この特別なフィードには、Visual Studio 2015 に対する最新の更新プログラムが含まれています。 <br /><br /> 特別なオフライン フィードを作成するには、次のコマンドを実行します: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> たとえば、英語版の Visual Studio 2015 Enterprise の特別なオフライン フィードについては、次を実行します。<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 任意の言語の特別なオフライン フィードを作成するために使える URL の完全な一覧については、次の表をご覧ください。 |
+| Android SDK セットアップ (API レベル) | Android SDK (API レベル) パッケージをインストールするには、インターネットに接続する必要があります。 制限付きネットワークを使用している場合は、Visual Studio のインストール時に次の URL へのアクセスを許可する必要があります。<br /><br /> -   https://dl.google.com:443<br />-   https://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />プロキシ設定で考えられる問題を解決する方法の詳細については、ブログ投稿の「[Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/)」(プロキシ経由で Visual Studio 2015 をインストールできない (Android SDK セットアップ)) を参照してください。 |
+| Visual Studio 機能拡張の項目テンプレート<br /><br /> Visual Studio 向け GitHub 拡張<br /><br /> PowerShell Tools for Visual Studio | Visual Studio 2015 をインストールする際にインターネットに接続出来ない場合は、特別なオフライン フィードを使ってオフライン インストール レイアウトを生成することができます。 **注:** この特別なフィードには、Visual Studio 2015 に対する最新の更新プログラムが含まれています。 <br /><br /> 特別なオフライン フィードを作成するには、次のコマンドを実行します: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> たとえば、英語版の Visual Studio 2015 Enterprise の特別なオフライン フィードについては、次を実行します。<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 任意の言語の特別なオフライン フィードを作成するために使える URL の完全な一覧については、次の表をご覧ください。 |
 
  上記の表に示すように、次の URL を使って、言語固有の特別なオフライン フィードを作成します。
 
 |       言語        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
-| 簡体中国語  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| 繁体中国語 | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
-|         チェコ語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
-|        ドイツ語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
-|        英語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
-|        スペイン語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
-|        フランス語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
-|        イタリア語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
-|       日本語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
-|        韓国語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
-|        ポーランド語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
-|      ポルトガル語       | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
-|        ロシア語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
-|        トルコ語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
+| 簡体中国語  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| 繁体中国語 | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+|         チェコ語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
+|        ドイツ語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
+|        英語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
+|        スペイン語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
+|        フランス語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
+|        イタリア語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
+|       日本語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
+|        韓国語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
+|        ポーランド語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
+|      ポルトガル語       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
+|        ロシア語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
+|        トルコ語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>関連項目
 

@@ -2,17 +2,17 @@
 title: Microsoft Fakes:コードの生成とコンパイル、名前付け規則
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665246"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589332"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 
@@ -256,15 +256,15 @@ attribute of the Assembly element in the .fakes:
 |種類|追加される文字列|
 |-|-|
 |**型**`T`|T<br /><br /> 名前空間、入れ子になった構造体、およびジェネリック チックは削除されます。|
-|**out パラメーター** `out T`|`TOut`|
+|**out パラメーター**`out T`|`TOut`|
 |**ref パラメーター** `ref T`|`TRef`|
-|**配列型** `T[]`|`TArray`|
+|**配列型**`T[]`|`TArray`|
 |**多次元配列**型 `T[ , , ]`|`T3`|
 |**ポインター**型 `T*`|`TPtr`|
-|**ジェネリック型** `T<R1, ...>`|`TOfR1`|
-|型 `C<TType>` の**ジェネリック型引数** `!i`|`Ti`|
-|メソッド `M<MMethod>` の**ジェネリック メソッド引数** `!!i`|`Mi`|
-|**入れ子にされた型** `N.T`|`N` が追加され、その後に `T`|
+|**ジェネリック型**`T<R1, ...>`|`TOfR1`|
+|型 `C<TType>` の**ジェネリック型引数**`!i`|`Ti`|
+|メソッド `M<MMethod>` の**ジェネリック メソッド引数**`!!i`|`Mi`|
+|**入れ子にされた型**`N.T`|`N` が追加され、その後に `T`|
 
 ### <a name="recursive-rules"></a>再帰的な規則
 

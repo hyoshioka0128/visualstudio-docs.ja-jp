@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649476"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587538"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 
@@ -25,7 +25,7 @@ ms.locfileid: "72649476"
 > [!NOTE]
 > この機能は、Team Foundation Server を使用している場合にのみ使用できます。
 
-コード分析チェックインポリシーは、プロジェクトの設定で設定され、各コードプロジェクトに適用されます。 コード分析の実行は、コードプロジェクトのプロジェクト (. proj) ファイルのコードプロジェクトに対して構成されます。 コード分析の実行は、ローカルコンピューター上で実行されます。 コード分析のチェックインポリシーを有効にする場合、チェックインするコードプロジェクト内のファイルは、最後の編集の後にコンパイルする必要があります。また、少なくとも、プロジェクト設定の規則は、変更を含むコンピューターで実行する必要があります。が作成されました。
+コード分析チェックインポリシーは、プロジェクトの設定で設定され、各コードプロジェクトに適用されます。 コード分析の実行は、コードプロジェクトのプロジェクト (.proj) ファイルのコードプロジェクトに対して構成されます。 コード分析の実行は、ローカルコンピューター上で実行されます。 コード分析のチェックインポリシーを有効にする場合、チェックインするコードプロジェクト内のファイルは、最後の編集の後にコンパイルする必要があります。また、少なくとも、プロジェクト設定の規則は、変更を含むコンピューターで実行する必要があります。が作成されました。
 
 - マネージコードの場合は、コード分析規則のサブセットを含む*規則セット*を指定して、チェックインポリシーを設定します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72649476"
 
 次のオプションをオンまたはオフにします。
 
-|オプション|説明|
+|OPTION|説明|
 |------------|-----------------|
 |**現在のソリューションの一部であるファイルのみを含めるようにチェックインを強制します。**|コード分析は、ソリューションおよびプロジェクト構成ファイルで指定されたファイルに対してのみ実行できます。 このポリシーは、ソリューションの一部であるすべてのコードが分析されることを保証します。|
 |**C/C++コード分析 (/analyze) を適用する**|をチェックインする前にC++ 、コード分析を実行するために、すべての C またはプロジェクトが/analyze コンパイラオプションを使用してビルドされている必要があります。|
@@ -61,7 +61,7 @@ ms.locfileid: "72649476"
 
 - Microsoft 標準規則セットを選択してください。
 
-- [**ソース管理から規則セットを \<Select] をクリックして、カスタム規則セットを選択してください...>** 。 次に、ソース管理ブラウザーで、規則セットのバージョンコントロールパスを入力します。 バージョンコントロールパスの構文は次のとおりです。
+- [**ソース管理から規則セットを選択して\<] をクリックして、カスタム規則セットを選択してください...>** 。 次に、ソース管理ブラウザーで、規則セットのバージョンコントロールパスを入力します。 バージョンコントロールパスの構文は次のとおりです。
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ ms.locfileid: "72649476"
 
 ## <a name="see-also"></a>関連項目
 
-- [コード分析チェックインポリシーを作成して使用する](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [マネージド コード用のカスタム コード分析チェックイン ポリシーを実装する](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

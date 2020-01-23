@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596269"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775892"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -81,7 +81,7 @@ ms.locfileid: "75596269"
   - ダンプ ファイル
 
 > [!NOTE]
-> ログ ファイル、スクリーンショット、および記録データは、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログとファイルは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。
+> 送信されたログ ファイル、スクリーンショット、および記録データにより、Microsoft はより深く状況を理解して問題に対応できるようになります。  そのため、これらを含めることをお勧めします。 お客様のプライバシーを保護するため、添付されるログ ファイル、スクリーンショット、および記録データはすべて、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかをレポートを送信する前に確認できます。 レポートからシステム ログ ファイルを除外するには、[サマリー] 手順で [システム ログのアタッチ] をオフにします。 次のスクリーンショットを参照してください。 
   > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
 
 

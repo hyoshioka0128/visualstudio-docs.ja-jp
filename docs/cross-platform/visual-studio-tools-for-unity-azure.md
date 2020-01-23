@@ -12,12 +12,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a07a7f04cae433803d012302555821fc851075
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818369"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916826"
 ---
 # <a name="program-with-unity-and-azure"></a>Unity と Azure を使用したプログラミング
 
@@ -30,12 +30,12 @@ Azure は、製品利用統計情報やその他のゲーム データをクラ�
 
 [サンドボックス](/sandbox/)に関するページにアクセスして、Unity で以下の試験段階の Azure SDK をお試しください。
 
-* [Azure Storage SDK for Unity](https://aka.ms/azstoragegamedev)
-* [Azure Event Hubs SDK for Unity](https://aka.ms/azeventhubsgamedev)
-* [Azure Mobile Apps SDK for Unity](https://aka.ms/azmobileappsgamedev)
+* [Azure Storage SDK for Unity](/sandbox/gamedev/unity/azure-storage-unity?wt.mc_id=azgamedev-sandbox-brpeek)
+* [Azure Event Hubs SDK for Unity](/sandbox/gamedev/unity/azure-event-hubs-unity?WT.mc_id=azgamedev-sandbox-brpeek)
+* [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity?WT.mc_id=azgamedev-sandbox-brpeek)
 
 ## <a name="azure-sdk-sample"></a>Azure SDK のサンプル
 
-Azure Easy Tables SDK と Unity を使用する[簡単なサンプル ゲーム](https://aka.ms/azmobileappsracer)もあります。 このゲームは、Azure Easy Tables データ ストレージを使用して、ハイスコア ランキングを追跡し、ゲーム内テレメトリを保存します。また、このゲームは [GitHub からダウンロード](https://aka.ms/azsamples-unity)できます。
+Azure Easy Tables SDK と Unity を使用する[簡単なサンプル ゲーム](/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer)もあります。 このゲームは、Azure Easy Tables データ ストレージを使用して、ハイスコア ランキングを追跡し、ゲーム内テレメトリを保存します。また、このゲームは [GitHub からダウンロード](https://github.com/BrianPeek/AzureSamples-Unity)できます。
 
 ![サンプル ゲームのスクリーンショット](media/vstu_azure-test-sample-game-image2.png)

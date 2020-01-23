@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 3e6ecfc1c08f30eb0232f230d955967d95bc32ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
+ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566970"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022339"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 の新機能
 
-この記事では、MSBuild 16.0 で更新された機能とプロパティについて説明します。 詳細なリリース ノート (ドラフトのみ) については、[MSBuild 16.0](https://gist.github.com/rainersigwald/009627466f03964d0028e16fda633d9c) をご覧ください。
+この記事では、MSBuild 16.0 で更新された機能とプロパティについて説明します。 詳細なリリース ノートについては、「[MSBuild 16.0](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831)」をご覧ください。
 
 ## <a name="changed-path"></a>変更されたパス
 

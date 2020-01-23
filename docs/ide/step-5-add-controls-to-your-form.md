@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119001"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589969"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>手順 5: フォームへのコントロールの追加
 
@@ -23,7 +23,7 @@ ms.locfileid: "71119001"
 
 ## <a name="how-to-add-controls-to-your-form"></a>フォームにコントロールを追加する方法
 
-1. Visual Studio IDE の左側にある **[ツールボックス]** タブを選択し (または、**Ctrl** + **Alt** + **X** キーを押して)、次に **[コモン コントロール]** グループを展開します。 フォームで使用する最も一般的なコントロールが表示されます。
+1. Visual Studio IDE の左側にある **[ツールボックス]** タブを選択し (または、**Ctrl**+**Alt**+**X** キーを押して)、次に **[コモン コントロール]** グループを展開します。 フォームで使用する最も一般的なコントロールが表示されます。
 
 1. **PictureBox** 項目をダブルクリックして、フォームに PictureBox コントロールを追加します。 TableLayoutPanel がフォーム全体にドッキングされているため、PictureBox コントロールは最初の空のセルに追加されます (左上隅)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "71119001"
 
 1. フォームで **TableLayoutPanel** を選択し、フォームに CheckBox コントロールを追加します。 **ツールボックス**の **CheckBox** 項目をダブルクリックすると、新しい CheckBox コントロールがテーブル内の次の空いているセルに追加されます。 PictureBox が TableLayoutPanel の最初の 2 つのセルを使用しているため、CheckBox コントロールは左下のセルに追加されます。 **Text** プロパティを選択し、次の図に示すように、「**Stretch**」と入力します。
 
-    ![Stretch プロパティのある TextBox コントロール](../ide/media/express_pictureviewercheckbox.png)<br/>***Stretch*** *プロパティ*のある ***TextBox*** *コントロール*
+    ![Stretch プロパティのある TextBox コントロール](../ide/media/express_pictureviewercheckbox.png)<br/>"***Stretch*** *プロパティのある* ***TextBox*** *コントロール*"
 
 1. フォームの **TableLayoutPanel** を選択し、**ツールボックス**の **[コンテナー]** グループ (TableLayoutPanel コントロールを取得したグループ) に移動し、**FlowLayoutPanel** 項目をダブルクリックして、新しいコントロールを最後のセル (右下) に追加します。 次に、FlowLayoutPanel を TableLayoutPanel にドッキングします。 それには、FlowLayoutPanel の黒い三角形のタスク一覧で **[親コンテナーにドッキングする]** を選択するか、または FlowLayoutPanel の **Dock** プロパティを **Fill** に設定します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "71119001"
 
 1. 追加した新しい FlowLayoutPanel を選択します。 **ツールボックス**の **[コモン コントロール]** に移動し、**Button** 項目をダブルクリックします。**button1** というボタン コントロールが FlowLayoutPanel に追加されます。 この手順を繰り返して次のボタンを追加します。 既に **button1** というボタンがあることが IDE で認識され、次のボタンには **button2** という名前が付けられます。
 
-1. 通常は、他のボタンも**ツールボックス**を使用して追加します。 ここでは、**button2** を選択し、メニュー バーから **[編集]**  >  **[コピー]** を選択します (または、**Ctrl** + **C** キーを押します)。 次に、メニュー バーから **[編集]**  >  **[貼り付け]** を選択して (または、**Ctrl** + **V** キーを押して)、コピーしたボタンを貼り付けます。 続けてもう一度貼り付けます。 IDE により **button3** と **button4** が FlowLayoutPanel に追加されることに注意してください。
+1. 通常は、他のボタンも**ツールボックス**を使用して追加します。 ここでは、**button2** を選択し、メニュー バーから **[編集]**  >  **[コピー]** を選択します (または、**Ctrl**+**C** キーを押します)。 次に、メニュー バーから **[編集]**  >  **[貼り付け]** を選択して (または、**Ctrl**+**V** キーを押して)、コピーしたボタンを貼り付けます。 続けてもう一度貼り付けます。 IDE により **button3** と **button4** が FlowLayoutPanel に追加されることに注意してください。
 
     > [!NOTE]
     > コピーと貼り付けは、どのコントロールにも使用できます。 IDE では、論理的な方法で新しいコントロールに名前を付けて配置します。 コントロールをコンテナーに貼り付けると、IDE によって、配置できる次の論理的なスペースが選択されます。
@@ -74,7 +74,7 @@ ms.locfileid: "71119001"
 
    これで、ボタンのサイズと順序が適切に設定されました (4 つすべてのボタンを選択していれば、4 つすべての **AutoSize** プロパティを同時に変更することができます)。4 つのボタンは次の図のようになります。
 
-    ![4 つのボタンがある Picture Viewer](../ide/media/express_autosize.png)<br/>*4 つのボタンがある* ***Picture Viewer***
+    ![4 つのボタンがある Picture Viewer](../ide/media/express_autosize.png)<br/>"*4 つのボタンがある* ***Picture Viewer***"
 
 1. 次に、プログラムを再度実行して、変更を確認します。
 

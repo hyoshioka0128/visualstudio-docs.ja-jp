@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647170"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115397"
 ---
 # <a name="walkthrough-build-an-application"></a>チュートリアル: アプリケーションを構築する
 
@@ -65,7 +65,7 @@ ms.locfileid: "72647170"
 
 ### <a name="build-the-solution"></a>ソリューションをビルドする
 
-- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、**Ctrl** + **Shift** + **B** キーを押します。
+- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、**Ctrl**+**Shift**+**B** キーを押します。
 
     **[出力]** ウィンドウに、ビルドの結果が表示されます。 ビルドに成功しました。
 
@@ -154,7 +154,7 @@ ms.locfileid: "72647170"
 
      ビルド情報には、ビルドの開始時刻 (出力の先頭にあります) とファイルが処理された順序が含まれています。 この情報には、ビルド時に Visual Studio で実行される実際のコンパイラ構文も含まれています。
 
-     たとえば、C# のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) オプションには、このトピックで指定した警告コード **1762** が、他の 3 つの警告と共に示されます。
+     たとえば、C# のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) オプションには、このトピックで指定した警告コード **0168** が、他の 3 つの警告と共に示されます。
 
      Visual Basic のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) には除外する特定の警告が含まれていないため、警告は表示されません。
 

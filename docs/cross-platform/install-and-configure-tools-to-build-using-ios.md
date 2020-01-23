@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588872"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846904"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
-Visual Studio でクロスプラットフォームの **C++ によるモバイル開発**ツールを使用して、iOS Simulator または iOS デバイス用の iOS コードを編集、デバッグ、配置することができます。 ただし、ライセンスの制限により、コードのビルドと実行はリモート環境の Mac で行う必要があります。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。
+Visual Studio でクロスプラットフォームの **C++ によるモバイル開発**ツールを使用して、iOS Simulator または iOS デバイス用の iOS コードを編集、デバッグ、配置することができます。 ただし、ライセンスの制限により、コードのビルドと実行はリモート環境の Mac で行う必要があります。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](https://www.npmjs.com/package/vcremote)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。
 
 > [!NOTE]
 > Mac ではなくクラウド ホスト型 Mac サービスを使用する場合の詳細については、「[Visual Studio をクラウドでホストされた Mac に接続するよう構成する](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)」をご覧ください。 ここでは、Visual Studio Tools for Apache Cordova を使用してビルドする場合の手順を説明します。 C++ を使用してビルドする場合は、`remotebuild` を `vcremote` に置き換えます。
@@ -68,7 +68,7 @@ iOS のコードを開発するためのリモート エージェントをイン
 
 ## <a name="Install"></a> iOS 用リモート エージェントをインストールする
 
-C++ によるモバイル開発ワークロードをインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988) と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
+C++ によるモバイル開発ワークロードをインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://www.npmjs.com/package/vcremote) と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
 
 リモート エージェントをインストールする前に、[前提条件](#prerequisites)を満たしていること、および「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)」のインストール手順が完了していることを確認してください。
 
@@ -125,7 +125,7 @@ Visual Studio で iOS コードをビルドして実行するには、リモー�
 
 #### <a name="to-stop-the-remote-agent"></a>リモート エージェントを停止するには
 
-- `vcremote` が実行されているターミナル ウィンドウで、**Control** + **C** キーを押します。
+- `vcremote` が実行されているターミナル ウィンドウで、**Control**+**C** キーを押します。
 
 ## <a name="ConfigureVS"></a> Visual Studio でリモート エージェントを構成する
 

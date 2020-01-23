@@ -1,16 +1,17 @@
 ---
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
+manager: jillfra
 ms.date: 03/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 8ac5470a5725e349a532e8a43b6b5a7aa1e41e64
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: eedcaa34ffa602aa53debaef52c5a028da3ab6d4
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176816"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76158874"
 ---
 VSIX マニフェストで依存関係を設定するときは、コンポーネント ID のみを指定する必要があります。 このページの表を使用して、コンポーネントの最小の依存関係を確認してください。 シナリオによって、1 つのワークロードの 1 つのコンポーネントだけを指定する場合もあれば、 1 つのワークロードの複数のコンポーネントを指定したり、複数のワークロードの複数のコンポーネントを指定したりする場合もあります。 詳細については、「[方法: 機能拡張プロジェクトを Visual Studio 2017 に移行](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017)」ページを参照してください。
 

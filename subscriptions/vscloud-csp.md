@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: クラウド ソリューション プロバイダーが顧客のために Visual Studio クラウド サブスクリプションを購入および管理する方法について説明します。
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787746"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851398"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>顧客用に Visual Studio クラウド サブスクリプションを購入して管理する
 [クラウド ソリューション プロバイダー (CSP)](https://partner.microsoft.com/cloud-solution-provider) プログラムのパートナーは、顧客のために Visual Studio Enterprise クラウド サブスクリプションと Visual Studio Professional クラウド サブスクリプションを購入できます。
@@ -68,7 +68,7 @@ CSP パートナー向けの Visual Studio の価格を見るには、[パート
 
 このスプレッドシートの見方を次に示します。
 
-| メーター カテゴリ    |   name                 |  [単位]                                |           内容                          |
+| メーター カテゴリ    |   名前                 |  [単位]                                |           内容                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | エンタープライズ             |  サブスクリプション                         | Visual Studio Enterprise - 月間プラン サブスクリプション   |
 | Visual Studio     | 2 次元形式           |  サブスクリプション                         | Visual Studio Professional - 月間プラン サブスクリプション |
@@ -103,5 +103,5 @@ A: サブスクリプションの*各タイプ内*で 6 番目以降のすべて
 A: いいえ、Visual Studio サブスクリプションの価格は一定です。 新規サブスクリプションも継続サブスクリプションも同じ価格です。
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Q:CSP には Azure 開発/テスト価格オプションがありますか。
-A: 現時点ではありません。 顧客には [Azure 開発/テスト価格](https://aka.ms/azuredevtestpricing)の特典がありますが、CSP に対しては特に何もありません。
+A: 現時点ではありません。 顧客には [Azure 開発/テスト価格](https://azure.microsoft.com/pricing/dev-test/)の特典がありますが、CSP に対しては特に何もありません。
 

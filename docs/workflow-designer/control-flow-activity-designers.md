@@ -3,23 +3,23 @@ title: ワークフローデザイナー制御フローアクティビティデ�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189768"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114673"
 ---
 # <a name="control-flow-activity-designers"></a>制御フロー アクティビティ デザイナー
 
 ワークフローデザイナーには、ワークフローを構築するときに使用できるシステム指定のアクティビティが多数含まれています。 このセクションでは、ワークフロー内のフローの制御を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。
 
-## <a name="reference"></a>辞書／辞典／その他
+## <a name="reference"></a>参照先
 
  <xref:System.Activities.Activity>
 
@@ -43,7 +43,7 @@ ms.locfileid: "73189768"
 
  <xref:System.Activities.Statements.While>
 
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション
 
 その他の種類のアクティビティデザイナーについては、次のトピックを参照してください。
 
@@ -63,6 +63,6 @@ ms.locfileid: "73189768"
 
  [エラー処理](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="external-resources"></a>外部リソース
+## <a name="external-resources"></a>外部資料
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)

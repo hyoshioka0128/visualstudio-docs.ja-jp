@@ -5,19 +5,19 @@ description: Visual Studio 2017 のインストールを修復する方法につ
 ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681344"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114735"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio を修復します
 
@@ -36,7 +36,7 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 1. インストーラーを開き、 **[その他]** を選択した後、 **[修復]** を選択します。
 
-    ![Visual Studio インストーラーからの Visual Studio の修復](media/repair-visual-studio.png "Visual Studio インストーラーからの Visual Studio の修復")
+    ![Visual Studio インストーラーから Visual Studio を修復する](media/repair-visual-studio.png "Visual Studio インストーラーから Visual Studio を修復する")
 
    > [!NOTE]
    > Visual Studio を修復すると、環境がリセットされます。 昇格なしでインストールした、ユーザーごとの拡張機能などのローカル カスタマイズや、ユーザー設定、およびプロファイルが削除されます。 テーマ、色、キー バインドなど、同期された設定が復元されます。

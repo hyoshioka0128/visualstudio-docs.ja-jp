@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 大規模なチームおよび外部請負業者に対するサブスクリプションを管理する管理者の責任について説明します。
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491692"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850046"
 ---
 # <a name="large-teams-and-external-contractors"></a>大規模なチームおよび外部請負業者
 Visual Studio サブスクリプションの管理者は責任を持って、Visual Studio でライセンス付与されたソフトウェアと対話する各ユーザーが、自身の Visual Studio サブスクリプションで適切にライセンス付与されていることを確認します。
@@ -29,7 +29,7 @@ Visual Studio サブスクリプションの管理者は責任を持って、Vis
 外部の請負業者が、Visual Studio のライセンスが付与された環境で作業に参加するため、ライセンスを持ち込むことができます。 Microsoft 認定パートナーは、内部使用のために無料の Visual Studio サブスクリプションをいくつか受け取ることができます。 ただし、これらのサブスクリプションでは、顧客向けのカスタム ソフトウェアの開発などの収益性のあるアクティビティはカバーされません。 パートナーに、パートナーが用意する予定のライセンスと、あなたの会社に購入を求めているライセンスについて説明する証明書を送付するように依頼します。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
+- [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

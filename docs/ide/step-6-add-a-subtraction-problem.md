@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 611df946b97f97832b7debfac3d11c5b7972cdae
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562581"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776104"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>手順 6: 減算問題を追加する
 このチュートリアルの第 6 部では、減算問題を追加し、次のタスクを実行する方法を説明します。
@@ -32,9 +32,7 @@ ms.locfileid: "72562581"
 - タイマーの <xref:System.Windows.Forms.Timer.Tick> イベント ハンドラーを、残り時間がなくなったら正しい答えを表示するように更新します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。
-> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
-> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ## <a name="to-add-a-subtraction-problem"></a>減算問題を追加するには
 
@@ -62,12 +60,12 @@ ms.locfileid: "72562581"
      複数の方法で、このチュートリアルで前に randomizer と名付けた、Random クラスの `Next()` メソッドを呼び出すことができます。 複数の方法で呼び出すことができるメソッドをオーバーロード メソッドと呼び、IntelliSense を使用して確認することができます。 `Next()` メソッドについての IntelliSense ウィンドウのツールヒントをもう一度見てください。
 
      ![IntelliSense ウィンドウのツール ヒント](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** *ウィンドウのツール ヒント*
+"***IntelliSense*** *ウィンドウのツール ヒント*"
 
      ツールヒントには " **(+ 2 オーバーロード)** " と表示され、これは他の 2 つの方法で `Next()` メソッドを呼び出せることを意味します。 オーバーロードには、異なる数または型の引数が含まれていて、互いに動作が若干異なります。 たとえば、メソッドは単一の整数引数を受け取ることがあり、さらにオーバーロードの 1 つは整数と文字列を受け取ることがありますが、 目的に基づいて適切なオーバーロードを選択します。 `StartTheQuiz()` メソッドにコードを追加すると、`randomizer.Next(` を入力するとすぐに、詳細情報が IntelliSense ウィンドウに表示されます。 別のオーバーロードに切り替えるには、次の図に示すように、**上矢印**キーおよび**下矢印**キーを押します。
 
      ![IntelliSense 内での Next&#40;&#41; メソッドのオーバーライド](../ide/media/express_nextoverload.png)<br/>
-***IntelliSense*** 内での ***Next()*** *メソッドの* *オーバーライド*
+"***IntelliSense 内での*** ***Next()*** *メソッド* *のオーバーライド*"
 
      この場合、最小値と最大値を指定できるため、最後のオーバーロードを選択する必要があります。
 
@@ -88,7 +86,7 @@ ms.locfileid: "72562581"
      プログラムには、次の図に示すように減算問題が含まれます。
 
      ![減算の問題のある計算クイズ](../ide/media/express_addsubtract.png)<br/>
-***減算の問題のある****計算クイズ*
+"*減算の問題のある****計算クイズ***"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

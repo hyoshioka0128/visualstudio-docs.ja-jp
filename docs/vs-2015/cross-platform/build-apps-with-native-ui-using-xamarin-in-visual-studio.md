@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297924"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918340"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "74297924"
 >
 >   - [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (1 つの画面を使用した簡単なアプリ)
 >   - [Hello, Android マルチスクリーン](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (画面間でナビゲーションを使用したアプリ)
->   - [Android フラグメント チュートリアル](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (特に、マスター/詳細画面で使用)
+>   - [Android フラグメント チュートリアル](/xamarin/android/platform/fragments/implementing-with-fragments/) (特に、マスター/詳細画面で使用)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Hello, iOS マルチスクリーン](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Xamarin.Forms (共有 UI) を使用した Xamarin アプリ
@@ -93,7 +93,7 @@ ms.locfileid: "74297924"
 
 5. ソリューションをビルドし、ビルド エラーがないことを確認します。
 
-## <a name="dataservice"></a> 共有データ サービス コードの記述
+## <a name="dataservice"></a>共有データ サービス コードの記述
  **WeatherApp (ポータブル)** プロジェクトは、すべてのプラットフォームで共有されているポータブル クラス ライブラリ (PCL) 用のコードを記述する場所です。 PCL は、iOS、Android、Windows Phone 用のプロジェクトでビルドされたアプリ パッケージに自動的に含まれます。
 
  次の手順では、PCL にコードを追加して、気象サービスからのデータにアクセスし、データを格納します。
@@ -230,7 +230,7 @@ ms.locfileid: "74297924"
 1. **ソリューション エクスプ ローラー**で、 **[WeatherApp.Droid]** > **[リソース]** > **[レイアウト]** フォルダーを開き、**Main.axml** を開きます。 ビジュアル デザイナーでファイルが開きます。 (Java 関連のエラーが表示された場合は、この[ブログの投稿](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)を参照してください。)
 
     > [!TIP]
-    > このプロジェクトには、他にも多くのファイルがあります。 それらの説明はこのトピックの範囲を超えていますが、Android プロジェクトの構造を詳細に知りたい場合は、xamarin.com で Hello Android のトピックにある「[Part 2 Deep Dive](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows)」を参照してください。
+    > このプロジェクトには、他にも多くのファイルがあります。 それらの説明はこのトピックの範囲を超えていますが、Android プロジェクトの構造を詳細に知りたい場合は、xamarin.com で Hello Android のトピックにある「[Part 2 Deep Dive](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows)」を参照してください。
 
 2. デザイナーで表示される既定のボタンを選択し、削除します。
 
@@ -247,10 +247,10 @@ ms.locfileid: "74297924"
 
 7. **[プロパティ]** ウィンドウで、次のプロパティを設定します (注: [プロパティ] ウィンドウのツール バーにある並べ替えボタンを使用して、一覧をアルファベット順に並べ替えるとわかりやすくなります)。
 
-    |プロパティ|[値]|
+    |property|Value|
     |--------------|-----------|
-    |**text**|**Search by Zip Code**|
-    |**id**|`@+id/ZipCodeSearchLabel`|
+    |**テキスト**|**Search by Zip Code**|
+    |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -279,9 +279,9 @@ ms.locfileid: "74297924"
 
 9. **[プロパティ]** ウィンドウで、次のプロパティを設定します。
 
-    |プロパティ|[値]|
+    |property|Value|
     |--------------|-----------|
-    |**text**|**[郵便番号]**|
+    |**テキスト**|**[郵便番号]**|
     |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
@@ -301,9 +301,9 @@ ms.locfileid: "74297924"
 
 10. **[ツールボックス]** から **[Number]** コントロールを **[RelativeLayout]** にドラッグし、 **[Zip Code]** ラベルの下に配置します。 その後、次のプロパティを設定します。
 
-    |プロパティ|[値]|
+    |property|Value|
     |--------------|-----------|
-    |**id**|`@+id/zipCodeEntry`|
+    |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -324,7 +324,7 @@ ms.locfileid: "74297924"
 
 11. **[ツールボックス]** から、 **[Button]** を **[RelativeLayout]** コントロールにドラッグして、[zipCodeEntry] コントロールの右に配置します。 次に、以下のプロパティを設定します。
 
-    |プロパティ|[値]|
+    |property|Value|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
     |**テキスト**|**Get Weather**|
@@ -518,7 +518,7 @@ ms.locfileid: "74297924"
 
 2. 適切なデバイスまたはエミュレーターのターゲットを選択し、F5 キーを押してアプリケーションを開始します。
 
-3. デバイスまたはエミュレーターで、有効な米国郵便番号を編集ボックスに入力します (例:60601) をクリックし、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
+3. デバイスまたはエミュレーターで、米国の有効な郵便番号 (例: 60601) を編集ボックスに入力してから、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
 
      ![Android および Windows Phone 用の天気予報アプリ](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -624,7 +624,7 @@ ms.locfileid: "74297924"
 
 2. F5 キーを押すとアプリが起動します。
 
-3. Windows Phone エミュレーターで、有効な米国郵便番号を編集ボックスに入力します (例:60601) をクリックし、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
+3. Windows Phone エミュレーターで、米国の有効な郵便番号を編集ボックスに入力 (例: 60601) してから、 **[Get Weather]** をクリックします。 該当する地域の気象データがコントロールに表示されます。
 
      ![実行中のアプリの Windows バージョン](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -636,11 +636,11 @@ ms.locfileid: "74297924"
 
  iOS 用のネイティブ UI を追加することで、このサンプルを拡張します。 そのためには、Xcode と Xamarin がインストールされているローカル ネットワーク上の Mac に接続する必要があります。 接続すると、Visual Studio で直接 iOS デザイナーを使用することができます。 完成したアプリを確認するには、[GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)を参照してください。
 
- また、[Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com) のチュートリアルもご覧ください。 このページで正しい手順のセットを表示するには、必ず xamarin.com 上のページの右上で "Visual Studio" を選びます。
+ また、[Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com) のチュートリアルもご覧ください。 このページで正しい手順のセットを表示するには、必ず xamarin.com 上のページの右上で "Visual Studio" を選びます。
 
  **共有プロジェクトにプラットフォーム固有のコードを追加する**
 
- PCL はコンパイルされてから各プラットフォーム固有のアプリ パッケージに組み込まれるため、PCL の共有コードはプラットフォームに中立的です。 条件付きコンパイルを使用してプラットフォーム固有のコードを区別した共有コードを記述する場合は、*共有*プロジェクトを使用することができます。 詳細については、[コード共有オプション](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com) の説明を参照してください。
+ PCL はコンパイルされてから各プラットフォーム固有のアプリ パッケージに組み込まれるため、PCL の共有コードはプラットフォームに中立的です。 条件付きコンパイルを使用してプラットフォーム固有のコードを区別した共有コードを記述する場合は、*共有*プロジェクトを使用することができます。 詳細については、[コード共有オプション](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com) の説明を参照してください。
 
-## <a name="see-also"></a>関連項目
- [Xamarin 開発者サイト](https://docs.microsoft.com/xamarin/) [Windows デベロッパーセンター](https://dev.windows.com/en-us) [Swift C#およびクイックリファレンスポスター](https://aka.ms/scposter)
+## <a name="see-also"></a>参照
+ [Xamarin 開発者サイト](/xamarin/) [Windows デベロッパーセンター](https://dev.windows.com/en-us) [Swift C#およびクイックリファレンスポスター](https://aka.ms/scposter)

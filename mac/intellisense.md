@@ -4,12 +4,12 @@ description: Visual Studio for Mac で IntelliSense を使用することに関�
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026571"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405804"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -23,10 +23,10 @@ C# コード ファイルなど、サポートされているファイル内で�
 
 入力候補ウィンドウには、入力候補を種類で絞り込むための機能もあります。 たとえば、クラスやデリゲートなどの型のみを表すように一覧のメンバーを制限できます。 このフィルタリング プロセスは、フィルタリングされる型を表す特定のアイコンをクリックするか、特定の型に対応しているキーボード ショートカットで有効にできます。 入力候補ウィンドウの下部には次のようなアイコンがあります。
 
-| アイコン                         | name          | キーワード    | ホット キー |
+| アイコン                         | 名前          | キーワード    | ホット キー |
 | -----------------------------|---------------| -----------|--------|
 | ![クラス アイコン](media/classes-icon.png)  | class         | `class`    |  ⌥C
-| ![定数アイコン](media/constant-icon.png) | 定数      | `const`    |  ⌥O
+| ![定数アイコン](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![デリゲート アイコン](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
 | ![列挙型アイコン](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![イベント アイコン](media/event-icon.png)    | event         |            |  ⌥V
@@ -42,16 +42,6 @@ C# コード ファイルなど、サポートされているファイル内で�
 いずれかのアイコンをクリックするか、対応するホットキーを押すと、入力候補一覧はフィルター セットで定義されている型にのみ制限されます。  
 
 ![IntelliSense の型によるフィルター処理](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>[Show Import Items]\(インポート項目を表示\)
-
-既定では、IntelliSense の入力候補は、プロジェクトにインポートされているライブラリからのみ、入力候補を表示します。 たとえば、`using` 経由で `System.Collections.Generic` をインポートしていない場合、`List<>` の入力候補は表示されません。 インポートしていないライブラリから入力候補を表示するには、Visual Studio for Mac の基本設定内で **[Show Import Items]\(インポート項目を表示\)** を有効にする必要があります。 この設定は **[基本設定]、[テキスト エディター]、[IntelliSense]** の順に選択すると見つかります。
-
-![IntelliSense の [Show Import Items]\(インポート項目を表示\)](media/intellisense-showimport.png)
-
-**[Show Import Items]\(インポート項目を表示\)** を有効にすると、まだインポートしていない入力候補が入力候補一覧に含まれます。 宣言されていないライブラリに対応する項目を選択すると、そのライブラリの `using` ステートメントがコード ファイルのヘッダーに自動的に追加されます。 入力候補が属しているライブラリの名前も入力候補自体と共に一覧表示されます。
-
-![[Show Import Items]\(インポート項目を表示\) の一覧](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>パラメーター ウィンドウ
 

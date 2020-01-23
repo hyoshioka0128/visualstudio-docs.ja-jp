@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300742"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848384"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 ### <a name="UserDefined"></a> ユーザー定義の変数、関数、およびオブジェクト
  JavaScript ファイルを変更すると、開かれているドキュメントと参照されているドキュメントが [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] でスキャンされ、利用できるすべてのコード リソースが確認されます。 これには、ご自分で作成した変数、関数、およびオブジェクトが含まれます。 その後、これらのリソースが JavaScript IntelliSense で利用できるようになります。
 
- ユーザー定義の変数、関数、およびオブジェクトの詳細については、MSDN Web サイト上の[独自のオブジェクトの作成](https://go.microsoft.com/fwlink/?LinkId=108671)に関するページを参照してください。
+ ユーザー定義の変数、関数、およびオブジェクトの詳細については、MSDN Web サイト上の[独自のオブジェクトの作成](https://msdn.microsoft.com/library/202863ha.aspx)に関するページを参照してください。
 
 ### <a name="External"></a> 外部ファイル参照
  コードの IntelliSense サポートを実現するために、さまざまな種類の外部ファイル参照を含めることができます。 外部ファイル参照は、スクリプト参照または参照ディレクティブの場合があり、参照グループを使って指定することもできます。
@@ -157,7 +157,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 </asp:ScriptManager>
 ```
 
- IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、「[Walkthrough: Embedding a JavaScript File as a Resource in an Assembly (チュートリアル: アセンブリ内のリソースとしての JavaScript ファイルの埋め込み)](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)」を参照してください。
+ IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、次を参照してください: 「[チュートリアル:アセンブリ内のリソースとしての JavaScript ファイルの埋め込み](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)」。
 
 #### <a name="ReferenceDirectives"></a> 参照ディレクティブ
  `reference` ディレクティブを使用すると、現在編集中のスクリプトとその他のスクリプトとの間の関係を [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] で確立できます。 `reference` ディレクティブにより、現在のスクリプト ファイル内のスクリプトのコンテキストにスクリプト ファイルを含めることができます。 これにより、コードの入力時に、外部で定義されている関数、型、およびフィールドを IntelliSense で参照できます。
@@ -283,6 +283,6 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 - [JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)
 - [識別子の入力候補](../ide/statement-completion-for-identifiers.md)
 - [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)
-- [DHTML オブジェクト モデルについて](https://go.microsoft.com/fwlink/?LinkID=92344)
+- [DHTML オブジェクト モデルについて](https://msdn2.microsoft.com/library/ms533022.aspx)
 - [リスト メンバー](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [SRC 属性 &#124; src プロパティ](https://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC 属性 &#124; src プロパティ](https://msdn2.microsoft.com/library/ms534642.aspx)

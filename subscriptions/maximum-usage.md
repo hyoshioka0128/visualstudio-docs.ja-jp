@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 割り当てられているサブスクリプションの最大数を管理ポータルで表示する方法について説明します
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491724"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852339"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>最大使用量機能を使用して割り当てられているサブスクリプション数を追跡する
 Visual Studio のサブスクリプション管理ポータルの新機能を使用すると、購入して割り当てたサブスクリプション数を追跡し、過去 1 年間と全契約期間の割り当てた各レベルのサブスクリプションのピーク数を特定できます。 
@@ -42,7 +42,7 @@ Visual Studio のサブスクリプション管理ポータルの新機能を使
 A: 概要の情報には、*現在*の割り当てと、各契約レベルで使用できるサブスクリプションが表示されます。  これは、現在の年度または契約期間中に契約に割り当てられた最大サブスクリプション数とは大きく異なる場合があります。  最大使用量機能を使用すると、最大割り当てレベルに達した時期とそのレベルを確認できます。  この点は重要な違いです。調整中のサブスクリプションに対する請求は、1 年間の任意の時点で割り当てられた最大サブスクリプション数に基づいているためです。 
 
 ## <a name="resources"></a>リソース
-- [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
+- [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

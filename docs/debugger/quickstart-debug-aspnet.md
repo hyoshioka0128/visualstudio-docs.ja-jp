@@ -1,6 +1,6 @@
 ---
-title: ASP.NET をデバッグする
-description: Visual Studio デバッガーを使用して ASP.NET をデバッグする
+title: ASP.NET Core をデバッグする
+description: Visual Studio デバッガーを使用して ASP.NET Core をデバッグする
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679255"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847871"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して ASP.NET をデバッグする
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して ASP.NET Core をデバッグする
 
 Visual Studio デバッガーでは、アプリのデバッグに役立つ多くの強力な機能が提供されます。 このトピックでは、基本的な機能のいくつかを簡単に紹介します。
 
@@ -28,17 +28,17 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 1. Visual Studio を開きます。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力し、**[テンプレート]** を選択してから、**[新しい ASP.NET Core Web アプリケーションの作成]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力し、 **[テンプレート]** を選択してから、 **[新しい ASP.NET Core Web アプリケーションの作成]** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C#]** の下にある **[Web]** を選択し、次に、真ん中のウィンドウで **[ASP.NET Core Web アプリケーション]** を選択します。 「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、 **[Visual C#]** の下にある **[Web]** を選択し、次に、真ん中のウィンドウで **[ASP.NET Core Web アプリケーション]** を選択します。 「**MyDbgApp**」のような名前を入力し、 **[OK]** をクリックします。
 
-    表示されたダイアログ ボックスの中央のウィンドウで、**[Web アプリケーション]** を選択し、**[OK]** をクリックします。
+    表示されたダイアログ ボックスの中央のウィンドウで、 **[Web アプリケーション]** を選択し、 **[OK]** をクリックします。
 
     ![Web アプリケーションを選ぶ](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
     ::: moniker-end
 
-    **[ASP.NET Core Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**[ツール]** > **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
+    **[ASP.NET Core Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、 **[ツール]**  >  **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
 
     Visual Studio によってプロジェクトが作成されます。
 
@@ -117,7 +117,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 2. データヒントを展開して、`c2` オブジェクトの現在のプロパティ値を確認します。
 
-3. コードを実行している間に `c2` の値を引き続き表示できるようにデータヒントをピン留めする場合は、小さいピン アイコンをクリックします  (ピン留めしたデータヒントを任意の場所に移動することができます)。
+3. コードを実行している間に `c2` の値を引き続き表示できるようにデータヒントをピン留めする場合は、小さいピン アイコンをクリックします (ピン留めしたデータヒントを任意の場所に移動することができます)。
 
 ## <a name="edit-code-and-continue-debugging"></a>コードを編集してデバッグを続行する
 
@@ -125,7 +125,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 1. `OnGet` メソッドで、`result.First.Value` の 2 番目のインスタンスをクリックし、`result.First.Value` を `result.Last.Value` に変更します。
 
-1. **F10** キー (または **[デバッグ] > [ステップ オーバー]**) を数回押して、デバッガーを進めて編集したコードを実行します。
+1. **F10** キー (または **[デバッグ] > [ステップ オーバー]** ) を数回押して、デバッガーを進めて編集したコードを実行します。
 
     ![エディット コンティニュ](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "エディット コンティニュ")
 

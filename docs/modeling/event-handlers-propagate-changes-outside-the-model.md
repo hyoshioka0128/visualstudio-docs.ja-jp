@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747559"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114594"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>イベント ハンドラーによって変更内容がモデル外に反映される
 
@@ -25,7 +25,7 @@ ms.locfileid: "72747559"
 
 ### <a name="to-define-a-store-event"></a>ストアイベントを定義するには
 
-1. 監視するイベントの種類を選択します。 完全な一覧については、<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> のプロパティを参照してください。 各プロパティは、イベントの種類に対応します。 最も頻繁に使用されるイベントの種類は次のとおりです。
+1. 監視するイベントの種類を選択します。 完全な一覧については、<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>のプロパティを参照してください。 各プロパティは、イベントの種類に対応します。 最も頻繁に使用されるイベントの種類は次のとおりです。
 
     - モデル要素、リレーションシップリンク、シェイプ、またはコネクタが作成されたときに `ElementAdded` トリガーされます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "72747559"
 
 2. **Dslpackage**プロジェクト内の別のコードファイルに_dsl_**docdata**の部分クラス定義を追加します。
 
-3. 次の例に示すように、イベントのコードをメソッドとして記述します。 @No__t_1 にアクセスする場合を除き、`static` できます。
+3. 次の例に示すように、イベントのコードをメソッドとして記述します。 `DocData`にアクセスする場合を除き、`static`できます。
 
 4. ハンドラーを登録するには、`OnDocumentLoaded()` をオーバーライドします。 複数のハンドラーがある場合は、それらすべてを同じ場所に登録できます。
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>イベントを使用して、ストアで取り消し可能な調整を行う
 
-ストアイベントは、トランザクションがコミットされた後にイベントハンドラーが実行されるため、通常、ストア内の変更を反映するためには使用されません。 代わりに、ストアルールを使用します。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+ストアイベントは、トランザクションがコミットされた後にイベントハンドラーが実行されるため、通常、ストア内の変更を反映するためには使用されません。 代わりに、ストアルールを使用します。 詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
 
 ただし、ユーザーが元のイベントとは別に追加の更新を元に戻すことができるようにする場合は、イベントハンドラーを使用してストアに追加の更新を行うことができます。 たとえば、小文字がアルバムタイトルの通常の規則であるとします。 ユーザーが大文字で入力した後、タイトルを小文字に修正するストアイベントハンドラーを作成できます。 ただし、ユーザーは、[元に戻す] コマンドを使用して修正をキャンセルし、大文字を復元できます。 2番目の元に戻すと、ユーザーの変更が削除されます。
 
@@ -174,14 +174,14 @@ private static void AlbumTitleAdjuster(object sender,
 |-|-|
 |追加される element|ドメインクラス、ドメインリレーションシップ、図形、コネクタ、または図のインスタンスが作成されます。|
 |ElementDeleted|モデル要素がストアの要素ディレクトリから削除されており、リレーションシップのソースまたはターゲットではなくなっています。 要素は実際にはメモリから削除されませんが、将来の元に戻す場合に保持されます。|
-|Elementを開始しました|外側のトランザクションの終了時に呼び出されます。|
-|Elementの終了|他のすべてのイベントが処理されたときに呼び出されます。|
+|ElementEventsBegun|外側のトランザクションの終了時に呼び出されます。|
+|ElementEventsEnded|他のすべてのイベントが処理されたときに呼び出されます。|
 |ElementMoved|モデル要素が1つのストアパーティションから別のストアパーティションに移動されました。<br /><br /> これは、図の図形の位置とは関係ありません。|
 |ElementPropertyChanged|ドメインプロパティの値が変更されました。 これは、古い値と新しい値が等しくない場合にのみ実行されます。|
 |RolePlayerChanged|リレーションシップの2つのロール (両端) のいずれかが、新しい要素を参照しています。|
 |RolePlayerOrderChanged|複数要素の接続性が1より大きいロールでは、リンクの順序が変更されています。|
 |トランザクションの開始||
-|トランザクションコミット済み||
+|TransactionCommitted||
 |トランザクションロールバック||
 
 ## <a name="see-also"></a>関連項目

@@ -11,18 +11,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 84f6ddc2012617a5216c58fa0761dc100fb8942f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745921"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402743"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>コード分析のためのサンプル C++ プロジェクト
 
 「[チュートリアル:C/C++ コード分析による障害の検出](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)」のためのサンプルの作成方法を以下の手順で示します。 この手順で次が作成されます。
 
-- CppDemo という名前の Visual Studio。
+- CppDemo という名前の [!INCLUDEvsprvs] ソリューション。
 
 - CodeDefects という名前のスタティック ライブラリ プロジェクト。
 
@@ -32,19 +32,17 @@ ms.locfileid: "72745921"
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo ソリューションと CodeDefects プロジェクトを作成する
 
-1. **[ファイル]** メニューをクリックし、 **[新規作成]** をポイントし、 **[新しいプロジェクト]** をクリックします。
+1. [!INCLUDEvsprvs] を開き、 **[新しいプロジェクトの作成]** を選択します
 
-2. **[プロジェクトの種類]** ツリー リストで、C++ が VS の既定の言語になっていない場合、 **[その他の言語]** を展開します。
+2. 言語のフィルターを **C++** に変更します
 
-3. **[Visual C++]** を展開し、 **[全般]** をクリックします。
+3. **[空のプロジェクト]** を選択して **[次へ]** をクリックします
 
-4. **[テンプレート]** で **[空のプロジェクト]** をクリックします。
+4. **[プロジェクト名]** テキスト ボックスに「**CodeDefects**」と入力します
 
-5. **[名前]** テキスト ボックスに「**CodeDefects**」と入力します。
+5. **[ソリューション名]** テキスト ボックスに「**CppDemo**」と入力します
 
-6. **[ソリューションのディレクトリを作成]** チェック ボックスをオンにします。
-
-7. **[ソリューション名]** テキスト ボックスに「**CppDemo**」と入力します。
+6. **[作成]**
 
 ## <a name="configure-the-codedefects-project-as-a-static-library"></a>CodeDefects プロジェクトをスタティック ライブラリとして構成する
 
@@ -52,9 +50,9 @@ ms.locfileid: "72745921"
 
 2. **[構成プロパティ]** を展開し、 **[全般]** をクリックします。
 
-3. **[全般]** リストで **[ターゲットの拡張子]** の隣にある列のテキストを選択し、「 **.lib**」と入力します。
+3. **[全般]** の一覧で、 **[構成の種類]** を **[スタティック ライブラリ (.lib)]** に変更します。
 
-4. **[プロジェクトの既定値]** で **[構成のタイプ]** の隣にある列をクリックし、 **[スタティック ライブラリ (.lib)]** をクリックします。
+4. **[詳細]** の一覧で、 **[ターゲット ファイルの拡張子]** を **.lib** に変更します
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>CodeDefects プロジェクトにヘッダーとソース ファイルを追加する
 
@@ -64,27 +62,23 @@ ms.locfileid: "72745921"
 
 3. **[名前]** ボックスに「**Bug.h**」と入力し、 **[追加]** をクリックします。
 
-4. 次のコードをコピーし、Visual Studio エディターで *Bug.h* ファイルに貼り付けます。
+4. 次のコードをコピーし、エディターで *Bug.h* ファイルに貼り付けます。
 
-    ```cpp
-    #include <windows.h>
+```cpp
+#pragma once
 
-    //
-    //These 3 functions are consumed by the sample
-    //  but are not defined. This project cannot be linked!
-    //
+#include <windows.h>
 
-    bool CheckDomain( LPCSTR );
-    HRESULT ReadUserAccount();
+// These functions are consumed by the sample
+// but are not defined. This project cannot be linked!
+bool CheckDomain(LPCTSTR);
+HRESULT ReadUserAccount();
 
-    //
-    //These constants define the common sizes of the
-    //  user account information throughout the program
-    //
-
-    const int USER_ACCOUNT_LEN = 256;
-    const int ACCOUNT_DOMAIN_LEN = 128;
-    ```
+// These constants define the common sizes of the
+// user account information throughout the program
+const int USER_ACCOUNT_LEN = 256;
+const int ACCOUNT_DOMAIN_LEN = 128;
+```
 
 5. ソリューション エクスプローラーで、 **[ソース ファイル]** を右クリックし、 **[新規作成]** をポイントし、 **[新しい項目]** をクリックします。
 
@@ -92,65 +86,63 @@ ms.locfileid: "72745921"
 
 7. **[名前]** ボックスに「**Bug.cpp**」と入力し、 **[追加]** をクリックします。
 
-8. 次のコードをコピーし、Visual Studio エディターで *Bug.cpp* ファイルに貼り付けます。
+8. 次のコードをコピーし、エディターで *Bug.cpp* ファイルに貼り付けます。
 
-    ```cpp
-    #include <stdlib.h>
-    #include "Bug.h"
+```cpp
+#include "Bug.h"
 
-    // the user account
-    TCHAR g_userAccount[USER_ACCOUNT_LEN] = "";
-    int len = 0;
+// the user account
+TCHAR g_userAccount[USER_ACCOUNT_LEN] = {};
+int len = 0;
 
-    bool ProcessDomain()
+bool ProcessDomain()
+{
+    TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
+    // ReadUserAccount gets a 'domain\user' input from
+    //the user into the global 'g_userAccount'
+    if (ReadUserAccount())
     {
-        TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
-        // ReadUserAccount gets a 'domain\user' input from
-        //the user into the global 'g_userAccount'
-        if (ReadUserAccount() )
+        // Copies part of the string prior to the '\'
+        // character onto the 'domain' buffer
+        for (len = 0; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != L'\0'); len++)
         {
-
-            // Copies part of the string prior to the '\'
-            // character onto the 'domain' buffer
-            for( len = 0 ; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != '\0') ; len++  )
+            if (g_userAccount[len] == '\\')
             {
-                if ( g_userAccount[len] == '\\' )
-                {
-                    // Stops copying on the domain and user separator ('\')
-                    break;
-                }
-                domain[len] = g_userAccount[len];
+                // Stops copying on the domain and user separator ('\')
+                break;
             }
-            if((len= ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
-            {
-                // '\' was not found. Invalid domain\user string.
-                delete [] domain;
-                return false;
-            }
-            else
-            {
-                domain[len]='\0';
-            }
-            // Process domain string
-            bool result = CheckDomain( domain );
-
-            delete[] domain;
-            return result;
+            domain[len] = g_userAccount[len];
         }
-        return false;
-    }
-
-    int path_dependent(int n)
-    {
-        int i;
-        int j;
-        if (n == 0)
-            i = 1;
+        if ((len = ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
+        {
+            // '\' was not found. Invalid domain\user string.
+            delete[] domain;
+            return false;
+        }
         else
-            j = 1;
-        return i+j;
+        {
+            domain[len] = '\0';
+        }
+        // Process domain string
+        bool result = CheckDomain(domain);
+
+        delete[] domain;
+        return result;
     }
-    ```
+    return false;
+}
+
+int path_dependent(int n)
+{
+    int i;
+    int j;
+    if (n == 0)
+        i = 1;
+    else
+        j = 1;
+    return i + j;
+}
+```
 
 9. **[ファイル]** メニューをクリックし、 **[すべて保存]** をクリックします。
 
@@ -158,17 +150,18 @@ ms.locfileid: "72745921"
 
 1. ソリューション エクスプローラーで **[CppDemo]** をクリックし、 **[追加]** をポイントして **[新しいプロジェクト]** をクリックします。
 
-2. **[新しいプロジェクトの追加]** ダイアログ ボックスで [Visual C++] を展開し、 **[全般]** をクリックし、 **[空のプロジェクト]** をクリックします。
+2. **[新しいプロジェクトの追加]** ダイアログ ボックスで、言語のフィルターを **[C++]** に変更して **[空のプロジェクト]** を選択してから、 **[次へ]** をクリックします。
 
-3. **[名前]** テキスト ボックスに「**Annotations**」と入力し、 **[追加]** をクリックします。
+3. **[プロジェクト名]** テキスト ボックスに「**Annotations**」と入力し、 **[作成]** をクリックします。
 
 4. ソリューション エクスプローラーで **Annotations** を右クリックし、 **[プロパティ]** をクリックします。
 
 5. **[構成プロパティ]** を展開し、 **[全般]** をクリックします。
 
-6. **[全般]** リストで **[ターゲットの拡張子]** の隣にある列のテキストを選択し、「 **.lib**」と入力します。
+6. **[全般]** の一覧で、 **[構成の種類]** を変更し、 **[スタティック ライブラリ (.lib)]** をクリックします。
 
-7. **[プロジェクトの既定値]** で **[構成のタイプ]** の隣にある列をクリックし、 **[スタティック ライブラリ (.lib)]** をクリックします。
+7. **[詳細]** の一覧で **[ターゲット ファイルの拡張子]** の隣にある列のテキストを選択し、「 **.lib**」と入力します。
+
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>ヘッダー ファイルとソース ファイルを注釈プロジェクトに追加する
 
@@ -178,22 +171,22 @@ ms.locfileid: "72745921"
 
 3. **[名前]** テキスト ボックスに「**annotations.h**」と入力し、 **[追加]** をクリックします。
 
-4. 次のコードをコピーし、Visual Studio エディターで *annotations.h* ファイルに貼り付けます。
+4. 次のコードをコピーし、エディターで *annotations.h* ファイルに貼り付けます。
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
+```cpp
+#pragma once
+#include <sal.h>
 
-    struct LinkedList
-    {
-        struct LinkedList* next;
-        int data;
-    };
+struct LinkedList
+{
+    struct LinkedList* next;
+    int data;
+};
 
-    typedef struct LinkedList LinkedList;
+typedef struct LinkedList LinkedList;
 
-    [returnvalue:SA_Post( Null=SA_Maybe )] LinkedList* AllocateNode();
-
-    ```
+_Ret_maybenull_ LinkedList* AllocateNode();
+```
 
 5. ソリューション エクスプローラーで、 **[ソース ファイル]** を右クリックし、 **[新規作成]** をポイントし、 **[新しい項目]** をクリックします。
 
@@ -201,33 +194,30 @@ ms.locfileid: "72745921"
 
 7. **[名前]** テキスト ボックスに「**annotations.cpp**」と入力し、 **[追加]** をクリックします。
 
-8. 次のコードをコピーし、Visual Studio エディターで *annotations.cpp* ファイルに貼り付けます。
+8. 次のコードをコピーし、エディターで *annotations.cpp* ファイルに貼り付けます。
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
-    #include <windows.h>
-    #include <stdlib.h>
-    #include "annotations.h"
+```cpp
+#include "annotations.h"
 
-    LinkedList* AddTail( LinkedList *node, int value )
+LinkedList* AddTail(LinkedList* node, int value)
+{
+    // finds the last node
+    while (node->next != nullptr)
     {
-        LinkedList *newNode = NULL;
-
-        // finds the last node
-        while ( node->next != NULL )
-        {
-            node = node->next;
-        }
-
-        // appends the new node
-        newNode = AllocateNode();
-        newNode->data = value;
-        newNode->next = 0;
-        node->next = newNode;
-
-        return newNode;
+        node = node->next;
     }
 
-    ```
+    // appends the new node
+    LinkedList* newNode = AllocateNode();
+    newNode->data = value;
+    newNode->next = 0;
+    node->next = newNode;
+
+    return newNode;
+}
+```
 
 9. **[ファイル]** メニューをクリックし、 **[すべて保存]** をクリックします。
+
+
+これでソリューションが完成し、エラーなしでビルドされるはずです。

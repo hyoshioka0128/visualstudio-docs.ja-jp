@@ -32,7 +32,7 @@ Visual Studio サブスクリプションからダウンロードされた開発
 製品レベルの説明: **[Unavailable support plans]\(使用不可のサポート プラン\)** を展開します。 **[Support plan cannot be used for support on the specified product (Code: 8)]\(サポート プランは指定した製品のサポートには使用できません (コード: 8)\)** が表示される場合、お客様のサポート契約は、選択した製品バージョンには使用できません。
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
-1. [https://my.visualstudio.com/Benefits](https://my.visualstudio.com/Benefits ) に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
+1. https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![テクニカル サポート特典タイル](_img/vs-tech-support/vs-tech-support-tile.png)
 2. これで担当者とのチャット セッションが開始されます。担当者は、ユーザーの**契約 ID** と**アクセス ID** を作成して、ユーザーが保存できるようにそれらをメールを通じてユーザーに提供することができます。

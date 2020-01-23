@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645887"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591048"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法: プロジェクト テンプレートと項目テンプレートを配置して整理する
 
@@ -106,7 +106,7 @@ ms.locfileid: "72645887"
 
 1. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
-1. **[ファイル]** メニューで、 **[新規]** > **[プロジェクト]** の順にクリックします。
+1. **[ファイル]** メニューで、 **[新規]** > **[プロジェクト]** を選択します。
 
    **HelloWorld** カテゴリが、 **[新しいプロジェクト]** ダイアログ ボックスの **[インストール済み]** > **[Visual C#]** に表示されます。
 
@@ -146,7 +146,7 @@ ms.locfileid: "72645887"
 
 1. *.vstemplate* ファイルを保存して、閉じます。
 
-1. テンプレートのファイルを選んで右クリックし、 **[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選択します。
+1. テンプレートのファイルを選んで右クリックし、 **[送る]** > **[圧縮 (zip 形式) フォルダー]** を選択します。
 
    ファイルは *.zip* ファイルに圧縮されます。
 

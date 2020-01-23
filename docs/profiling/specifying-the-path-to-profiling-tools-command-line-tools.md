@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771579"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406303"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>プロファイル ツールのコマンド ライン ツールへのパスの指定
 
@@ -22,9 +22,7 @@ ms.locfileid: "74771579"
 
 ## <a name="32-bit-computers"></a>32 ビット コンピューター
 
-::: moniker range="vs-2017"
- ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。
-::: moniker-end
+ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。
 
  マネージド コード用のプロファイラー API は、*Microsoft.VisualStudio.Profiler.dll* にあります。 この DLL は、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにあります。
 
@@ -32,12 +30,14 @@ ms.locfileid: "74771579"
 
 64 ビット コンピューターでは、プロファイリングするアプリケーションのターゲット プラットフォームに応じてパスを指定します。
 
-::: moniker range="vs-2017"
 - 32 ビット アプリケーションの場合、既定のプロファイリング ツール ディレクトリは以下のとおりです。
 
-     (ネイティブ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (マネージド) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     (ネイティブ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     (マネージド) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - 64 ビット アプリケーションの場合、既定のプロファイリング ツール ディレクトリは以下のとおりです。
 
-     (ネイティブ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (マネージド) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     (ネイティブ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     (マネージド) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

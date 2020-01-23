@@ -7,31 +7,28 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d583553c0382598681ab3aa52ca3a41a27ed2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585497"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269097"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio でのコンパイルとビルド
 
-ソース コードをビルドすると、ビルド エンジンによってアセンブリと実行可能アプリケーションが作成されます。 基本的に、ビルド プロセスはどのプロジェクト タイプでも (Windows、ASP.NET、モバイル アプリなど)、よく似ています。 同様に、どのプログラミング言語でも (C#、Visual Basic、C++、F# など) ビルド プロセスは似ています。
-
-コードを何度もビルドすることによって、構文の誤り、キーワードのスペルミス、型の不一致などのコンパイル時エラーをすばやく特定できます。 また、コードのデバッグ バージョンをビルドして実行することにより、ロジック エラーやセマンティック エラーなどの実行時エラーを検出して修正できます。
-
-ビルドの成功とは、アプリケーションのソース コードの構文が正しいことと、ライブラリやアセンブリなどのコンポーネントへの静的参照をすべて解決できることの確認です。 アプリケーション実行可能ファイルが生成されます。[デバッグ環境](../debugger/index.yml)だけでなく、手動と自動のさまざまなテストを通して[コードの品質を検証](../test/improve-code-quality.md)して、正しく機能することをテストできます。 アプリケーションのテストが完了したら、リリース バージョンをコンパイルしてユーザーにリリースします。 このプロセスの入門資料については、「[チュートリアル:アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)」を参照してください。
+IDE の中でのビルド方法の入門資料については、「[チュートリアル:アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
 
 Visual Studio IDE、MSBuild コマンド ライン ツール、Azure Pipelines のいずれかの方法を使用して、アプリケーションをビルドすることができます。
 
 | ビルド方法 | 利点 |
 | --- |--- | --- |
 | IDE |- ビルドを即座に作成してデバッガーでテストできます。<br />- マルチプロセッサ ビルドを実行します (C++ や C# のプロジェクトの場合)。<br />- ビルド システムのさまざまな面をカスタマイズできます。 |
+| CMake | - CMake ツールを使用してプロジェクトをビルドします<br />- Linux および Windows プラットフォーム全体で同じビルド システムを使用します。 |
 | MSBuild コマンドライン| - Visual Studio をインストールせずにプロジェクトをビルドできます。<br />- すべてのプロジェクト タイプでマルチ プロセッサ ビルドを実行できます。<br />- ビルド システムのほとんどの部分をカスタマイズできます。|
 | Azure Pipelines | - ビルド プロセスを継続的インテグレーション/継続的デリバリー パイプラインの一部として自動化できます。<br />- 自動テストをすべてのビルドに適用します。<br />- クラウド ベースのリソースをほぼ無制限にビルド プロセスに使用できます。<br />- ビルド ワークフローの変更やビルド アクティビティの作成が可能です。実行するタスクを大幅にカスタマイズできます。|
 
@@ -60,3 +57,4 @@ IDE の中でのビルド方法の入門資料については、「[チュート
 
 - [Web サイト プロジェクトのビルド (コンパイル)](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [コンパイルとビルド (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)
+- [Visual Studio の CMake プロジェクト](/cpp/build/cmake-projects-in-visual-studio)

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293678"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115077"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -50,18 +50,18 @@ IDE 内から直接使用しやすくするために、インストールと更�
 
 1. 通知フラグを選択して**通知**ハブを開き、インストールする更新プログラムを選択します。
 
-   ![通知ハブを使用して Visual Studio 2017 を更新する](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017 の 通知ハブ")
+   ![通知ハブを使用して Visual Studio 2017 を更新する](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017 の通知ハブ")
 
       > [!TIP]
       > Visual Studio 2017 のエディションに対する更新プログラムは累積になっているため、常に最新のバージョン番号のものをインストールしてください。
 
 1. **[更新]** ダイアログ ボックスが開いたら、 **[今すぐ更新]** を選択します。
 
-    ![通知ハブから [更新] ダイアログ ボックスを使用して Visual Studio 2017 を更新する](media/vs-update-now-from-notifications-hub.png "Visual Studio の通知ハブの [更新] ダイアログ ボックス")
+    ![通知ハブの [更新] ダイアログボックスを使用して Visual Studio 2017 を更新する](media/vs-update-now-from-notifications-hub.png "Visual Studio の通知ハブの [更新] ダイアログ ボックス")
 
      [ユーザー アクセス制御] ダイアログ ボックスが開いたら、 **[はい]** を選択します。 [お待ちください] ダイアログが表示されることがあります。処理が完了すると、Visual Studio インストーラーが開き、更新が開始されます。
 
-     ![バージョン 15.6 の Visual Studio インストーラーの新しいエクスペリエンス](media/visual-studio-15dot6-installer.png "バージョン 15.6 の Visual Studio インストーラーの新しいエクスペリエンス")
+     ![バージョン 15.6 の新しい Visual Studio インストーラー エクスペリエンス](media/visual-studio-15dot6-installer.png "バージョン 15.6 の新しい Visual Studio インストーラー エクスペリエンス")
 
      更新が続行されます。 処理が完了すると、Visual Studio が再起動されます。
 
@@ -112,7 +112,7 @@ Visual Studio の以前のバージョンと同様に、Visual Studio インス�
 
 1. 更新プログラムがある場合、Visual Studio には対応する通知フラグが表示されます。
 
-   ![通知ハブを使用して Visual Studio 2017 を更新する](media/notification-flag.png "Visual Studio の更新プログラムがあることを知らせる通知フラグ")
+   ![通知ハブを使用して Visual Studio 2017 を更新する](media/notification-flag.png "Visual Studio の更新の通知フラグ")
 
    通知フラグを選択して、**通知**ハブを開きます。
 
@@ -143,7 +143,7 @@ Visual Studio は、Visual Studio 自体またはいずれかのコンポーネ�
 
 通知を無視することを選択した場合は、Visual Studio で表示されなくなります。 無視される通知のリストをリセットする場合は、通知ハブの **[設定]** ボタンを選択します。
 
-   ![通知オプションを表示するために通知ハブの [設定] ボタンを選択する](media/vs-notifications-hub-settings-button.png "通知オプションを表示するために通知ハブの [設定] ボタンを選択する")
+   ![通知ハブの設定ボタンを選択して通知オプションを表示する](media/vs-notifications-hub-settings-button.png "通知ハブの [設定] ボタンを選択して通知オプションを表示する")
 
 ### <a name="update-by-using-the-visual-studio-installer"></a>Visual Studio インストーラーを使用して更新する
 
@@ -216,11 +216,11 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
     Visual Studio が開きます。 IDE 内に、**Visual Studio 2019 の更新プログラム**に関するメッセージが表示されます。
 
-    ![IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ](media/vs-2019/update-visual-studio-ide-message.png "IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ")
+    ![IDE 内の "Visual Studio 2019 の更新プログラム" に関するメッセージ](media/vs-2019/update-visual-studio-ide-message.png "IDE 内の "Visual Studio 2019 の更新プログラム" に関するメッセージ")
 
 1. **Visual Studio 2019 の更新プログラム**に関するメッセージで、 **[詳細の表示]** を選択します。
 
-   ![Visual Studio 2019 IDE の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する](media/vs-2019/update-visual-studio-ide-view-details.png "Visual Studio 2019 の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する")
+   ![Visual Studio 2019 の更新プログラムに関するメッセージで [詳細の表示] を選択する](media/vs-2019/update-visual-studio-ide-view-details.png "Visual Studio 2019 の更新プログラムに関するメッセージで [詳細の表示] ボタンを選択する")
 
 1. **[更新プログラムがダウンロードされてインストールの準備完了]** ダイアログ ボックスで、 **[更新]** を選択します。
 
@@ -232,10 +232,10 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
 1. メニュー バーから、 **[ヘルプ]** を選択して、 **[更新プログラムの確認]** を選択します。
 
-     ![[ヘルプ] メニューから '更新プログラムの確認' を選択する](media/vs-2019/vs-ide-check-updates-help-menu.png "[ヘルプ] メニューから '更新プログラムの確認' を選択する")
+     ![[ヘルプ] メニューから [更新プログラムの確認] を選択する](media/vs-2019/vs-ide-check-updates-help-menu.png "[ヘルプ] メニューから [更新プログラムの確認] を選択する")
 
     > [!NOTE]
-    > 更新プログラムを確認するには、IDE にある検索ボックスを使用することもできます。 **Ctrl** + **Q** キーを押し、「更新プログラムの確認」と入力して、一致した検索結果を選択します。
+    > 更新プログラムを確認するには、IDE にある検索ボックスを使用することもできます。 **Ctrl**+**Q** キーを押し、「更新プログラムの確認」と入力して、一致した検索結果を選択します。
 
 1. **[利用可能な更新プログラムがあります]** ダイアログ ボックスで、 **[更新]** を選択します。
 
@@ -249,11 +249,11 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
 1. Visual Studio IDE の右下隅にある通知アイコンを選択して、 **[通知]** ハブを開きます。
 
-   ![Visual Studio IDE にある通知アイコン](media/vs-2019/notification-bar.png "Visual Studio IDE にある通知アイコン")
+   ![Visual Studio IDE の通知アイコン](media/vs-2019/notification-bar.png "Visual Studio IDE の通知アイコン")
 
 1. **[通知] ハブ**では、インストールする更新プログラムを選択して、 **[詳細表示]** を選択します。
 
-     ![Visual Studio 2019 にある [通知] ハブ](media/vs-2019/notification-hub-update.png "Visual Studio 2019 にある [通知] ハブ")
+     ![Visual Studio 2019 の通知ハブ](media/vs-2019/notification-hub-update.png "Visual Studio 2019 の通知ハブ")
 
       > [!TIP]
       > Visual Studio 2019 のエディションに対する更新プログラムは累積になっているため、常に最新のバージョン番号のものをインストールしてください。
@@ -275,7 +275,7 @@ Visual Studio の更新設定は、いくつかの異なる方法でカスタマ
 
 次の手順に従います。
 
-1. メニュー バーで、 **[ツール]** > **[オプション]** の順に選択します。
+1. メニュー バーで **[ツール]** > **[オプション]** の順に選択します。
 
 2. **[環境]** を展開してから、 **[製品の更新プログラム]** を選択します。
 
