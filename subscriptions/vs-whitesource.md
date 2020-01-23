@@ -6,16 +6,16 @@ manager: lank
 ms.date: 01/06/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75866163"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114324"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
-オープン ソースの脆弱性を見つけ出して修正し、使用しているビルドのすべてのオープン ソース コンポーネントに関する包括的なインベントリとライセンスのレポートを作成します。 
+オープン ソースの脆弱性を見つけ出して修正し、使用しているビルドのすべてのオープン ソース コンポーネントに関する包括的なインベントリとライセンスのレポートを作成します。 Visual Studio Enterprise サブスクリプションでは、6 か月の無制限のスキャンを受けられます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 

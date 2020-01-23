@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491676"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281699"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -47,7 +47,7 @@ MPN でコンピテンシーを取得するか、Action Pack を購入したパ�
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Action Pack を購入するパートナー向けのサブスクリプション
 
-コンピテンシーを持つパートナーは、Action Pack を購入する対象ではありません。 パートナーごとに Action Pack を 1 つだけ購入できます。
+コンピテンシーを持つパートナーは、Action Pack を購入する資格があります。 パートナーごとに Action Pack を 1 つだけ購入できます。
 
 Action Pack では、パートナーは **Visual Studio Professional (MPN) サブスクリプションを 3 つ**取得します。 Visual Studio Professional (MPN) は、市場で販売されているのと同等のものではない、カスタム プランです。 含まれる内容は次のとおりです。
 

@@ -2,22 +2,21 @@
 title: Visual Studio のビルド番号とリリース日
 titleSuffix: ''
 description: Visual Studio の現在までのリリース済みバージョンおよびビルド番号のリリース日順の一覧。
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/17/2019
+ms.date: 01/15/2020
 ms.topic: reference
-ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6864f6ad7819cf163c20f0d604d90370454b53a4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590901"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114181"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -29,6 +28,8 @@ ms.locfileid: "75590901"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.3 | 解放 | 2020 年 1 月 14 日 | 16.4.29709.97 |
+| 16.0.11 | 解放 | 2020 年 1 月 14 日 | 16.0.28803.653 |
 | 16.4.2 | 解放 | 2019 年 12 月 17 日 | 16.4.29613.14 |
 | 16.4.1 | 解放 | 2019 年 12 月 10 日 | 16.4.29609.76 |
 | 16.0.10 | 解放 | 2019 年 12 月 10 日 | 16.0.28803.631 |
@@ -119,6 +120,7 @@ ms.locfileid: "75590901"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.19 | 解放 | 2020 年 1 月 14 日 | 15.9.28307.1000 |
 | 15.0.28 | 解放 | 2019 年 12 月 11 日 | 15.0.26228.102 |
 | 15.9.18 | 解放 | 2019 年 12 月 10 日 | 15.9.28307.960 |
 | 15.9.17 | 解放 | 2019 年 10 月 15 日 | 15.9.28307.905 |
