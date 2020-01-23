@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654211"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594410"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Visual Studio の機能拡張を管理する
 
@@ -57,7 +57,7 @@ Visual Studio 内から拡張機能をインストールするには:
 
 1. **[ツール]** の **[拡張機能と更新プログラム]** で、インストールする拡張機能を見つけます。 拡張機能の名前か名前の一部がわかっている場合は、 **[検索]** ウィンドウで検索できます。
 
-2. **[Download]** を選択します。
+2. **[ダウンロード]** を選択します。
 
    拡張機能がインストール対象としてスケジュールされます。 拡張機能は Visual Studio のすべてのインスタンスが閉じられた後にインストールされます。
 
@@ -81,7 +81,7 @@ Visual Studio 内から拡張機能をインストールするには:
 
 1. **[拡張機能]** の **[拡張機能の管理]** で、インストールする拡張機能を見つけます。 (拡張機能の名前か名前の一部がわかっている場合は、 **[検索]** ウィンドウで検索できます。)
 
-2. **[Download]** を選択します。
+2. **[ダウンロード]** を選択します。
 
    拡張機能がインストール対象としてスケジュールされます。 拡張機能は Visual Studio のすべてのインスタンスが閉じられた後にインストールされます。
 
@@ -182,13 +182,13 @@ Visual Studio では、前回のセッション中に拡張機能がクラッシ
 
 ::: moniker range="vs-2017"
 
-**[ツール]** の **[拡張機能と更新プログラム]** ダイアログ ボックスを使用すると、次のサンプル関連タスクを実行できます。
+**[ツール]** > **[拡張機能と更新プログラム]** ダイアログ ボックスを使用すると、次のサンプル関連タスクを実行できます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**[拡張機能]** の **[拡張機能の管理]** ダイアログ ボックスを使用すると、次のサンプル関連タスクを実行できます。
+**[拡張機能]** > **[拡張機能の管理]** ダイアログ ボックスを使用すると、次のサンプル関連タスクを実行できます。
 
 ::: moniker-end
 

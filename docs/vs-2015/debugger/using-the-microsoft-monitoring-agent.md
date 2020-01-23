@@ -9,17 +9,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4297cfee592977cd09ba9c0abe36e12f7986181
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d1c63b866b35ef9b029364002360d29fa72f2b9b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845612"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918969"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「 [Microsoft Monitoring Agent の使用](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [Microsoft Monitoring Agent の使用](/visualstudio/debugger/using-the-microsoft-monitoring-agent)」を参照してください。
 
 **Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 このログファイルは、すべての Visual Studio 診断ツールで問題をデバッグするために Visual Studio Enterprise (ただし、Professional または Community edition ではない) で開くことができます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/azure-monitor/app/app-insights-overview) および [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。  
   

@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632573"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590216"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Visual Basic を使用するプロジェクトとソリューションについて理解する
 
@@ -53,7 +53,7 @@ ms.locfileid: "72632573"
 
 1. Visual Studio を開きます。
 
-1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "72632573"
 
 ::: moniker range="vs-2017"
 
-1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリック メニューまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリックまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
 
    **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
 
@@ -104,7 +104,7 @@ ms.locfileid: "72632573"
 
 ::: moniker range=">=vs-2019"
 
-1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリック メニューまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリックまたはコンテキスト メニューから、 **[追加]** > **[新しいプロジェクト]** を選択します。
 
    **[新しいプロジェクトの追加]** ダイアログ ボックスが開きます。
 
@@ -157,7 +157,7 @@ ms.locfileid: "72632573"
 
 単体テスト プロジェクトをソリューションに追加してみましょう。 今度はプロジェクト テンプレートから開始します。これにより、プロジェクトに追加のコード ファイルを追加する必要がなくなります。
 
-1. **ソリューション エクスプローラー**で**ソリューション 'QuickSolution'** の右クリックまたはコンテキスト メニューから、 **[追加]** 、 >  **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で**ソリューション "QuickSolution"** の右クリック メニューまたはコンテキスト メニューから、 **[追加]**  >  **[新しいプロジェクト]** を選択します。
 
 ::: moniker range="Vs-2017"
 

@@ -2,20 +2,20 @@
 title: クイック アクション、電球、ねじ回し
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666753"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596958"
 ---
 # <a name="quick-actions"></a>クイック アクション
 
@@ -50,7 +50,7 @@ ms.locfileid: "72666753"
 
 ## <a name="icons"></a>アイコン
 
-クイック アクションが使用可能なときに表示されるアイコンは、使用可能な解決策またはリファクタリングの種類を示します。 *ねじ回し*![ねじ回しアイコン](media/screwdriver-icon.png) アイコンは、コードを変更するのに使用可能なアクションがあることを示すだけで、必ずしもそれらを使用する必要はありません。 *黄色の電球* ![電球アイコン](media/light-bulb-icon.png) アイコンは、コードを改善するために実行する*必要がある*使用可能なアクションがあることを示します。 *エラー電球* ![エラー電球アイコン](media/error-light-bulb-icon.png) アイコンは、コード内のエラーを修正するために使用可能なアクションがあることを示します。
+クイック アクションが使用可能なときに表示されるアイコンは、使用可能な解決策またはリファクタリングの種類を示します。 *ねじ回し* ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンは、コードを変更するのに使用可能なアクションがあることを示すだけで、必ずしもそれらを使用する必要はありません。 *黄色の電球* ![電球アイコン](media/light-bulb-icon.png) アイコンは、コードを改善するために実行する*必要がある*使用可能なアクションがあることを示します。 *エラー電球* ![エラー電球アイコン](media/error-light-bulb-icon.png) アイコンは、コード内のエラーを修正するために使用可能なアクションがあることを示します。
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>電球やねじ回しを表示するには
 
@@ -62,7 +62,7 @@ ms.locfileid: "72666753"
 
 - 該当するコード行にキャレット (カーソル) を移動したとき、エディターの左余白に
 
-行のどこかで **Ctrl** + **.** キーを押しても、 使用可能なクイック アクションとリファクタリングの一覧が表示されます。
+行のどこかで **Ctrl**+ **.** キーを押しても、 使用可能なクイック アクションとリファクタリングの一覧が表示されます。
 
 修正候補を表示するには、電球の横の下矢印を選択するか、 **[修正候補を表示する]** リンクを選択します。 使用可能なクイック アクションのリストが表示されます。
 

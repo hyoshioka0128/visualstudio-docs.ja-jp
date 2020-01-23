@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777717"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916468"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
@@ -25,10 +25,10 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 > ほとんどのシナリオで、Visual Studio Emulator for Android の代わりに Google Android エミュレーターの使用をお勧めします。
 > - Visual Studio 2015 以降、Visual Studio Emulator for Android はサポートされていません。
 > - Visual Studio Emulator for Android の場合、Android バージョン 6.0 より後のエミュレーター イメージを利用できません。
-> - Google Android Emulator は現在、[Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v) に対応しています。
+> - Google Android Emulator は現在、[Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v) に対応しています。
 > - Visual Studio Tools for Apache Cordova は Google Android Emulator と連動します。 詳細については、「[Run your Apache Cordova app on Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator)」 (Android で Apache Cordova アプリを実行する) を参照してください (この記事で説明したとおり、Hyper-V は無効にする必要はなくなりました)。
 >
-> Google Android エミュレーターの構成と使用の詳細については、「[Android Emulator のセットアップ](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)」を参照してください。
+> Google Android エミュレーターの構成と使用の詳細については、「[Android Emulator のセットアップ](/xamarin/android/get-started/installation/android-emulator/)」を参照してください。
 
  Visual Studio Emulator for Android は、実際のデバイスに匹敵するパフォーマンスを提供するように設計されています。 ただし、アプリを公開する前に、物理デバイスでアプリをテストすることをお勧めします。
 

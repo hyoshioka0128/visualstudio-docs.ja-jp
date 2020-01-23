@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850395"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919164"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
 
@@ -50,7 +50,7 @@ Azure コンピューティング エミュレーターを使用してローカ�
 クラウド サービスのリモート デバッグを有効にしても、パフォーマンスが低下したり、追加料金が発生したりすることはありません。 運用サービスでは、サービスを利用するクライアントに悪影響が生じる可能性があるため、リモート デバッグを使用しないでください。
 
 > [!NOTE]
-> Visual Studio からクラウド サービスを発行する場合、.NET Framework 4 または .NET Framework 4.5 を対象とするサービスのどのロールに対しても **IntelliTrace** を有効にできます。 **IntelliTrace**を使用すると、過去にロール インスタンスで発生したイベントを調べ、そのときのコンテキストを再現できます。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)に関するページ、および「[IntelliTrace の使用](https://msdn.microsoft.com/library/dd264915.aspx)」を参照してください。
+> Visual Studio からクラウド サービスを発行する場合、.NET Framework 4 または .NET Framework 4.5 を対象とするサービスのどのロールに対しても **IntelliTrace** を有効にできます。 **IntelliTrace**を使用すると、過去にロール インスタンスで発生したイベントを調べ、そのときのコンテキストを再現できます。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-intellitrace-debug-published-cloud-services.md)に関するページ、および「[IntelliTrace の使用](../debugger/intellitrace.md)」を参照してください。
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>クラウド サービスのリモート デバッグを有効にするには
 
@@ -150,7 +150,7 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
     > [!NOTE]
     > まだ Azure アカウントにサインインしていない場合は、サインインするように求められます。
 
-3. 仮想マシンのさまざまな設定を選択し、 **[OK]** を選択します。 詳細については、「 [Virtual Machines](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) 」を参照してください。
+3. 仮想マシンのさまざまな設定を選択し、 **[OK]** を選択します。 詳細については、「 [Virtual Machines](/previous-versions/azure/jj156003(v=azure.100)) 」を参照してください。
 
     [DNS 名] に入力した名前が仮想マシンの名前になります。
 
@@ -188,6 +188,6 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
 ## <a name="next-steps"></a>次のステップ:
 
-* **IntelliTrace** を使用して、リリース サーバーから呼び出しおよびイベントのログを収集します。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)に関するページを参照してください。
+* **IntelliTrace** を使用して、リリース サーバーから呼び出しおよびイベントのログを収集します。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-intellitrace-debug-published-cloud-services.md)に関するページを参照してください。
 
 * **Azure Diagnostics** を使用して、ロールが開発環境と Azure のどちらで実行されているかにかかわらず、ロール内で実行されているコードの詳細な情報をログに記録します。 「 [Azure Diagnostics を使用したログ データの収集](https://msdn.microsoft.com/library/gg433048.aspx)」を参照してください。

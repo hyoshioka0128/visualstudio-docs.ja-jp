@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ba7fd495d3ab3bdfd53752cb20d6a45d10892
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118913"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589956"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>手順 7: フォームへのダイアログ コンポーネントの追加
 
@@ -32,7 +32,7 @@ ms.locfileid: "71118913"
 
 1. **openFileDialog1** というコンポーネントをフォームに追加するには、 **[OpenFileDialog]** をダブルクリックします。 **colorDialog1** というコンポーネントをフォームに追加するには、**ツールボックス**の **[ColorDialog]** をダブルクリックします (このコンポーネントはチュートリアルの次の手順で使用します)。**Windows フォーム デザイナー**の下部の領域 (**Picture Viewer** フォームの下) に、次の図に示すように、追加した 2 つのダイアログ コンポーネントのそれぞれに対応するアイコンが表示されます。
 
-     ![ダイアログ コンポーネント](../ide/media/express_dialogsadded.png)<br>***ダイアログ*** *コンポーネント*
+     ![ダイアログ コンポーネント](../ide/media/express_dialogsadded.png)<br>"***ダイアログ*** *コンポーネント*"
 
 1. **Windows フォーム デザイナー**の下部にある領域で **[openFileDialog1]** アイコンを選択します。 2 つのプロパティを次のように設定します。
 

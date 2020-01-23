@@ -3,17 +3,17 @@ title: XML スキーマ デザイナーのワークスペース
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608258"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592374"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>XML スキーマデザイナーのワークスペースビュー
 
@@ -47,4 +47,4 @@ XML スキーマ デザイナー (XSD デザイナー) は、XML スキーマを
 
 - スタート ビューのウォーターマークか、空白のコンテンツ モデル ビューまたはグラフ ビューのウォーターマーク。
 
-- キー[スタート] ビューには**ctrl** +**1** 、グラフビューには Ctrl +**2** **、コンテンツ**モデルビューには ctrl +**3**を**使用します**。
+- キー[スタート] ビューには**ctrl**+**1** 、グラフビューには Ctrl+**2** **、コンテンツ**モデルビューには ctrl+**3**を**使用します**。

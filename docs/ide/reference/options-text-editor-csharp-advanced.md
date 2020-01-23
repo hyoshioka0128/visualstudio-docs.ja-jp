@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596230"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124505"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 
@@ -87,7 +87,7 @@ ms.locfileid: "75596230"
    using System.Linq;
    ```
 
-- 参照アセンブリの型に using を提案する
+- .NET Framework アセンブリの型に using を提案する
 - NuGet パッケージの型に using を提案する
 
    これらのオプションを選択した場合、[クイック アクション](../quick-actions.md)を使用して NuGet パッケージをインストールし、参照されていない型の `using` ディレクティブを追加できます。

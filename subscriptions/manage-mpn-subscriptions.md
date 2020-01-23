@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
+ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605455"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492911"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションを管理する
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。
@@ -53,7 +53,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 
 ## <a name="resources-and-references"></a>リソースと参照
 - Microsoft Partner Network (MPN) [Visual Studio サブスクリプション](https://partner.microsoft.com/membership/msdn-subscriptions)に関する詳細
-- Microsoft Partner Network 「[Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)」 (ソフトウェアとオンライン サービスの特典に関するプログラム管理者ガイド)
+- Microsoft Partner Network 「[Program Administrator Guide to Software and Online Services Benefits](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits)」 (ソフトウェアとオンライン サービスの特典に関するプログラム管理者ガイド)
   - 6 ページ: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Action Pack への連絡先ロールと Visual Studio サブスクリプションの割り当て)
   > [!NOTE]
   > Visual Studio サブスクリプションには、技術担当者ロールが必要
@@ -61,3 +61,5 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 
 ## <a name="next-steps"></a>次の手順
 サブスクライバーのサブスクリプションへのアクセスに関する問題を解決するには、サブスクライバーとプログラム管理者が、Microsoft Partner Network のサポート チームと直接作業する必要があります。 [パートナーのサポート](https://partner.microsoft.com/support) ページをご覧ください (MPN サインイン資格情報が必要です)。
+
+https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.;_ylu=X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV=2/RE=1577405628/RO=10/RU=https%3a%2f%2fassetsprod.microsoft.com%2fmpn%2fProgram-Administrator-Guide-to-Software-and-Online-Services-Benefits/RK=2/RS=xsA5OL.9t6QqJlvFYZ3OPnZkC_k-

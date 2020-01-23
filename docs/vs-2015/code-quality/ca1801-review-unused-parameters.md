@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671526"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918172"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: 使用されていないパラメーターを再確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「 [CA1801: 使用](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)されていないパラメーターの確認」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [CA1801: 使用](/visualstudio/code-quality/ca1801-review-unused-parameters)されていないパラメーターの確認」を参照してください。
 
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|カテゴリ|Microsoft. 使用方法|
+|[カテゴリ]|Microsoft.Usage|
 |互換性に影響する変更点|非重大-変更に関係なく、メンバーがアセンブリの外部で参照できない場合。<br /><br /> 非ブレーク-本文内でパラメーターを使用するようにメンバーを変更した場合。<br /><br /> 中断-パラメーターを削除すると、アセンブリの外部から参照できるようになります。|
 
 ## <a name="cause"></a>原因
@@ -42,13 +42,13 @@ Visual Studio の最新のドキュメントについては、「 [CA1801: 使�
 
 - イベントハンドラーとして使用されるメソッド。
 
-- @No__t_0 `MustOverride` (Visual Basic) 修飾子で宣言されたメソッド。
+- `abstract``MustOverride` (Visual Basic) 修飾子で宣言されたメソッド。
 
-- @No__t_0 `Overridable` (Visual Basic) 修飾子で宣言されたメソッド。
+- `virtual``Overridable` (Visual Basic) 修飾子で宣言されたメソッド。
 
-- @No__t_0 `Overrides` (Visual Basic) 修飾子で宣言されたメソッド。
+- `override``Overrides` (Visual Basic) 修飾子で宣言されたメソッド。
 
-- @No__t_0 (`Declare` ステートメント Visual Basic) 修飾子で宣言されたメソッド。
+- `extern` (`Declare` ステートメント Visual Basic) 修飾子で宣言されたメソッド。
 
 ## <a name="rule-description"></a>規則の説明
  メソッド本体で使用されていない非仮想メソッドのパラメーターを確認して、アクセスできなかった部分に対して正しくないことを確認します。 未使用のパラメーターを使用すると、メンテナンスとパフォーマンスのコストが発生します。
@@ -61,7 +61,7 @@ Visual Studio の最新のドキュメントについては、「 [CA1801: 使�
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  以前に出荷されたコードについては、この修正プログラムが互換性に影響する変更になるという警告を抑制するのは安全です。
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
  次の例は、2つのメソッドを示しています。 1つのメソッドが規則に違反し、もう一方のメソッドが規則を満たしています。
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]

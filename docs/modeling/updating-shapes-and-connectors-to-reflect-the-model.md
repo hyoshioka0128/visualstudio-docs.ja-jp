@@ -2,17 +2,17 @@
 title: シェイプおよびコネクタの更新とモデルへの反映
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663796"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115024"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>シェイプおよびコネクタを更新してモデルに反映する
 
@@ -37,7 +37,7 @@ DSL 定義で、shape クラスを右クリックし、公開の **[追加]** �
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-ユーザーではなく、プログラムの制御下でプロパティ変数を作成する場合は、DSL 定義図の **[塗りつぶしの色]** などの新しいドメインプロパティを選択します。 次に、プロパティウィンドウで、set**が**`false` に参照可能になるか、または**UI が読み取り専用**に設定されて `true` ます。
+ユーザーではなく、プログラムの制御下でプロパティ変数を作成する場合は、DSL 定義図の **[塗りつぶしの色]** などの新しいドメインプロパティを選択します。 次に、プロパティウィンドウで、set**が**`false` に参照可能になるか、または**UI が読み取り専用**に設定されて `true`ます。
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>色、スタイル、または場所をモデル要素のプロパティに依存するように変更規則を定義する
  モデルの他の部分に依存する図形の外観を更新する規則を定義できます。 たとえば、モデル要素のプロパティに応じて図形の色を更新するように、モデル要素に対して変更規則を定義できます。 変更規則の詳細については、「[規則によってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
@@ -84,7 +84,7 @@ DSL 定義で、shape クラスを右クリックし、公開の **[追加]** �
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured を使用して図形のプロパティを初期化する
 
-図形が最初に作成されたときに図形のプロパティを設定するには、ダイアグラムクラスの部分定義で `OnChildConfigured()` オーバーライドします。 図クラスは DSL 定義で指定されており、生成されたコードは、生成されたコードに含まれて**います。** (例:
+図形が最初に作成されたときに図形のプロパティを設定するには、ダイアグラムクラスの部分定義で `OnChildConfigured()` オーバーライドします。 図クラスは DSL 定義で指定されており、生成されたコードは、生成されたコードに含まれて**います。** 例:
 
 ```csharp
 partial class MyLanguageDiagram
@@ -112,7 +112,7 @@ partial class MyLanguageDiagram
 
 図形の一部の機能 (影があるかどうかなど)、またはコネクタの矢印のスタイルでは、機能をドメインプロパティとして公開するための組み込みメソッドはありません。  このような機能に対する変更は、トランザクションシステムの制御下にありません。 そのため、ユーザーが Undo コマンドを実行したときにルールが呼び出されないため、ルールを使用してそれらを更新するのは適切ではありません。
 
-代わりに、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> を使用して、このような機能を更新できます。 次の例では、コネクタの矢印スタイルは、コネクタによって表示されるリレーションシップのドメインプロパティの値によって制御されています。
+代わりに、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>を使用して、このような機能を更新できます。 次の例では、コネクタの矢印スタイルは、コネクタによって表示されるリレーションシップのドメインプロパティの値によって制御されています。
 
 ```csharp
 public partial class ArrowConnector // My connector class.

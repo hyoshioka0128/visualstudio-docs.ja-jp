@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491262"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851417"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 必ず[クラウド サブスクリプションの特典と価格を比較](https://visualstudio.microsoft.com/vs/pricing/)して、各 Visual Studio サブスクリプションの特典、クラウドと標準の Visual Studio サブスクリプションの比較、サブスクライバー特典の詳細などを理解してください。
@@ -37,7 +37,7 @@ A: 適切な特権があるかどうかを確認する最も簡単な方法は�
 お使いのログインに現在リンクされている Azure サブスクリプションの一覧が表示されるので、そこから Azure サブスクリプション (請求先アカウント) を選ぶ必要があります。
 Azure サブスクリプションの名前として既定で表示される種類は請求先アカウント ("従量課金制"、"Enterprise Agreement" など) なので、通常、Azure サブスクリプションが Enterprise Agreement の一部かどうかは明白です。
 
-もう 1 つの方法は、[Azure Enterprise Portal](https://ea.azure.com) にアクセスしてみることです。  正常にアクセスできる場合、エンタープライズ管理者ロールまたはアカウント所有者ロールを既に持っています。 Enterprise Agreement で新しい Azure 請求先アカウントを設定できるのは、アカウント所有者だけです。 Azure Enterprise Portal にアクセスできない場合は、組織のエンタープライズ管理者を調べて、その管理者に Azure Enterprise Portal で自分をアカウント所有者として追加するよう依頼してください。  誰に頼めばよいかわからない場合は、[サポート チケットを送信](https://aka.ms/AzureEntSupport)して、連絡先情報を要求できます。  サポート チケットを送信するときは、組織の名前と、Enterprise Agreement の登録番号が必要です。
+もう 1 つの方法は、[Azure Enterprise Portal](https://ea.azure.com) にアクセスしてみることです。  正常にアクセスできる場合、エンタープライズ管理者ロールまたはアカウント所有者ロールを既に持っています。 Enterprise Agreement で新しい Azure 請求先アカウントを設定できるのは、アカウント所有者だけです。 Azure Enterprise Portal にアクセスできない場合は、組織のエンタープライズ管理者を調べて、その管理者に Azure Enterprise Portal で自分をアカウント所有者として追加するよう依頼してください。  誰に頼めばよいかわからない場合は、[サポート チケットを送信](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c)して、連絡先情報を要求できます。  サポート チケットを送信するときは、組織の名前と、Enterprise Agreement の登録番号が必要です。
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q:Enterprise Agreement の Azure 年額コミットメント資金を使って、Visual Studio クラウド サブスクリプションを購入することはできますか。
 A: いいえ、これらの前払い資金では、Visual Studio クラウド サブスクリプションを購入することはできません。 EA 用に作成された Azure サブスクリプションを選んで Visual Studio クラウド サブスクリプションを購入すると、料金は次の "超過分" 請求書に表示されます。 通常これは毎月発生しますが、一部の EA 顧客については、過去のルールにより、超過分請求書が数か月間発行されない可能性があります。 超過分請求書が発生しないで追加購入 (Azure 年額コミットメントの資金の対象ではない購入) できる量を知る必要がある場合は、EA のライセンス スペシャリストに問い合わせてください。

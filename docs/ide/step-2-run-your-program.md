@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950715"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588747"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>手順 2: Picture Viewer アプリを実行する
 
@@ -32,7 +32,7 @@ Windows フォーム アプリ プロジェクトを作成するとき、実際�
     - ツールバーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
       ![[デバッグの開始] ツール バー ボタン](../ide/media/express_icondebug.png)<br>
-      ***[デバッグの開始]*** *ツールバー ボタン*
+      "***[デバッグの開始]*** *ツール バー ボタン*"
 
 1. Visual Studio でアプリが実行され、**Form1** というウィンドウが表示されます。 次のスクリーンショットは、先ほど作成したアプリを示しています。 アプリが実行されているので、すぐにそれに追加します。
 
@@ -42,7 +42,7 @@ Windows フォーム アプリ プロジェクトを作成するとき、実際�
 1. Visual Studio 統合開発環境 (IDE) に戻り、新しいツール バーを参照します。 アプリケーションを実行すると、追加ボタンがツール バーに表示されます。 これらのボタンを使用するとアプリの停止や開始などの操作ができ、発生する可能性のあるエラー (バグ) の追跡に役立ちます。 この例では、アプリを開始および停止するために使用しています。
 
      ![デバッグ ツール バー](../ide/media/express_debugtoolbar.png)<br>
-***デバッグ*** *ツール バー*
+"***デバッグ*** *ツール バー*"
 
 1. アプリを停止するには、次のいずれかの方法を使用します。
 

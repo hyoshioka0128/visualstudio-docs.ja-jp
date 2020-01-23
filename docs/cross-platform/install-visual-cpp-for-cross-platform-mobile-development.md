@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588877"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916490"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++ によるクロスプラットフォーム モバイル開発をインストールする
 
@@ -98,7 +98,7 @@ Visual Studio を使用して、iOS のコードを編集およびデバッグ�
 
 Android SDK ディレクトリにある SDK Manager アプリをもう一度実行すると、SDK を更新したり、オプション ツールや追加の API レベルをインストールしたりできます。 **[管理者として実行]** を使用して SDK Manager アプリを実行しなければ、更新のインストールが失敗する可能性があります。 Android アプリのビルドで問題が発生した場合は、SDK Manager を確認して、インストール済み SDK の更新プログラムの有無を調べてください。
 
-Android SDK に付属する一部の Android エミュレーターを使用するには、ハードウェア アクセラレータのセットアップが必要になる場合があります。 詳細については、「[エミュレーターのパフォーマンスのためのハードウェア高速化 (Hyper-V と HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)」を参照してください。
+Android SDK に付属する一部の Android エミュレーターを使用するには、ハードウェア アクセラレータのセットアップが必要になる場合があります。 詳細については、「[エミュレーターのパフォーマンスのためのハードウェア高速化 (Hyper-V と HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)」を参照してください。
 
 ほとんどの場合、Visual Studio によって、インストールしたサードパーティ製ソフトウェアの構成が検出され、内部環境変数にインストール パスが保持されます。 これらのクロス プラットフォーム開発ツールの既定のパスは、Visual Studio IDE でオーバーライドできます。
 
@@ -117,4 +117,4 @@ Android SDK に付属する一部の Android エミュレーターを使用す�
 ## <a name="see-also"></a>関連項目
 
 - [iOS を使用してビルドするためのツールのインストールおよび構成](install-and-configure-tools-to-build-using-ios.md)
-- [Visual C++ クロスプラットフォーム モバイル](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Visual C++ クロスプラットフォーム モバイル](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)

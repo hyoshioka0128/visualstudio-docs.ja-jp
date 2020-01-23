@@ -2,17 +2,17 @@
 title: パフォーマンスを向上させるためのヒント
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647148"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944203"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
@@ -39,11 +39,11 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
 自動ファイル復元を無効にした場合、[[移動]](../ide/go-to.md) コマンドのいずれかを使用することで、開くファイルにすばやく移動できます。
 
-- 一般的な **[移動]** 機能の場合は、 **[編集]**  >  **[移動]**  >  **[すべてに移動]** の順に選択するか、**Ctrl** + **T** キーを押します。
+- 一般的な **[移動]** 機能の場合は、 **[編集]**  >  **[移動]**  >  **[すべてに移動]** の順に選択するか、**Ctrl**+**T** キーを押します。
 
-- **[編集]**  >  **[移動]**  >  **[最後の編集の場所へ移動]** を使用するか、**Ctrl** + **Shift** + **Backspace** キーを押すことで、ソリューション内の最後の編集の場所に移動することができます。
+- **[編集]**  >  **[移動]**  >  **[最後の編集の場所へ移動]** を使用するか、**Ctrl**+ **Shift**+**Backspace** キーを押すことで、ソリューション内の最後の編集の場所に移動することができます。
 
-- ソリューション内の最近アクセスしたファイルの一覧を表示するには、 **[最近使ったファイルに移動]** を使用します。 **[編集]**  >  **[移動]**  >  **[最近使ったファイルに移動]** の順に選択するか、**Ctrl** + **1** キー、**Ctrl** + **R** キーを押します。
+- ソリューション内の最近アクセスしたファイルの一覧を表示するには、 **[最近使ったファイルに移動]** を使用します。 **[編集]**  >  **[移動]**  >  **[最近使ったファイルに移動]** の順に選択するか、**Ctrl**+**1** キー、**Ctrl**+**R** キーを押します。
 
 ## <a name="configure-debugging-options"></a>デバッグ オプションを構成する
 
@@ -63,7 +63,7 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
     オプションを **[すべてのモジュール]** ではなく **[指定したモジュールのみ]** に設定した後、読み込むモジュールを指定します。 デバッグ中に、 **[モジュール]** ウィンドウで特定のモジュールを右クリックして、シンボルの読み込みにモジュールを明示的に含めることもできます (デバッグ中にウィンドウを開くには、 **[デバッグ]**  >  **[Windows]**  >  **[モジュール]** の順に選択します)。
 
-    詳細については、「[Understanding symbol files and Visual Studio’s symbol settings](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)」(シンボル ファイルおよび Visual Studio のシンボルの設定について) を参照してください。
+    詳細については、「[Understanding symbol files and Visual Studio’s symbol settings](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019)」(シンボル ファイルおよび Visual Studio のシンボルの設定について) を参照してください。
 
 - **診断ツールを無効にする**
 
@@ -107,13 +107,13 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
    ::: moniker range="vs-2017"
 
-    拡張機能を無効にするには、 **[ツール]** > **[拡張機能と更新プログラム]** の順に選び、特定の拡張機能を無効にします。
+    拡張機能を無効にするには、 **[ツール]** > **[拡張機能と更新プログラム]** を選択し、特定の拡張機能を無効にします。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    拡張機能を無効にするには、 **[拡張機能]** > **[拡張機能の管理]** の順に選び、特定の拡張機能を無効にします。
+    拡張機能を無効にするには、 **[拡張機能]** > **[拡張機能の管理]** を選択し、特定の拡張機能を無効にします。
 
    ::: moniker-end
 

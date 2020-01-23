@@ -1,7 +1,7 @@
 ---
-title: '方法: Visual Studio のロックを解除する'
-titleSuffix: ''
-ms.date: 03/30/2019
+title: 試用版を延長する、またはライセンスを更新する
+description: Visual Studio の無料試用期間を延長する方法、オンライン サブスクリプションまたはプロダクト キーを使用して Visual Studio のロックを解除する方法、古いライセンスまたは期限切れのライセンスを更新する方法について説明します。
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -11,24 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: db0f75b3e4c2f066b7a9d79976a50efd3364d7bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926300"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591373"
 ---
-# <a name="how-to-unlock-visual-studio"></a>方法: Visual Studio のロックを解除する
+# <a name="extend-a-trial-version-or-update-a-license"></a>試用版を延長する、またはライセンスを更新する
 
-Visual Studio は最大で 30 日間無料で評価できます。 IDE にサインインすると、試用期間が 90 日に延長されます。 Visual Studio の使用を続けるには、次のいずれかの方法で IDE のロックを解除します。
+[Visual Studio Professional または Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) の無料試用版を 30 日間評価できます。 サインインすると、試用期間を 90 日まで延長できます (Visual Studio Community は無料です。試用期間はありません。 ただし、[ライセンスを常に最新の状態に保つ](#update-a-stale-license)ために、定期的に[サインイン](signing-in-to-visual-studio.md)する必要があります)。
 
-- オンライン サブスクリプションを使用する。
+試用期間が終了した後も Visual Studio を引き続き使用するには、[オンライン サブスクリプション](#use-an-online-subscription)または[プロダクト キー](#enter-a-product-key)を使用してロックを解除します。
 
-- プロダクト キーを入力する。
-
-## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>オンライン サブスクリプションを使用して Visual Studio のロックを解除するには
-
-Microsoft アカウントか、職場または学校アカウントに関連付けられた Visual Studio サブスクリプションまたは Azure DevOps 組織を使用して Visual Studio のロックを解除するには、次の手順を行います。
+## <a name="use-an-online-subscription"></a>オンライン サブスクリプションを使用する
 
 1. IDE の右上隅にある **[サインイン]** ボタンを選択します (または、 **[ファイル]**  >  **[アカウントの設定]** の順に移動して **[アカウントの設定]** ダイアログを開き、 **[サインイン]** ボタンを選択します)。
 
@@ -37,7 +33,9 @@ Microsoft アカウントか、職場または学校アカウントに関連付�
 > [!IMPORTANT]
 > **チーム エクスプローラー**のツール ウィンドウから Azure DevOps 組織に接続すると、Visual Studio は関連付けられているオンライン サブスクリプションを自動的に検索します。 Azure DevOps 組織に接続した場合は、Microsoft アカウントと、職場または学校アカウントの両方を使用してサインインできます。 そのユーザー アカウントのオンライン サブスクリプションが存在する場合は、Visual Studio は自動的に IDE のロックを解除します。
 
-## <a name="to-unlock-visual-studio-with-a-product-key"></a>プロダクト キーを使って Visual Studio のロックを解除するには
+Visual Studio サブスクリプションとそのしくみの詳細については、[サブスクリプション サポートに関する FAQ](https://visualstudio.microsoft.com/subscriptions/support/) ページを参照してください。
+
+## <a name="enter-a-product-key"></a>プロダクト キーを入力する
 
 1. **[ファイル]**  >  **[アカウントの設定]** の順に選択して **[アカウントの設定]** ダイアログを開き、 **[プロダクト キーを使用してライセンスを取得します]** リンクを選択します。
 
@@ -46,30 +44,39 @@ Microsoft アカウントか、職場または学校アカウントに関連付�
 > [!TIP]
 > Visual Studio のプレリリース版には、プロダクト キーはありません。 プレリリース版を使用するには、IDE にサインインする必要があります。
 
-## <a name="address-license-problem-states"></a>ライセンスの問題状態に対応する
+Visual Studio の Visual Studio プロダクト キーとその入手方法の詳細については、「[Visual Studio サブスクリプションでのプロダクト キーの使用](/visualstudio/subscriptions/product-keys)」ページを参照してください。
 
-### <a name="update-stale-licenses"></a>古いライセンスを更新する
+## <a name="update-a-stale-license"></a>古いライセンスを更新する
 
-Visual Studio のライセンスが古くなっているという、次のようなメッセージが表示されることがあります。 「ライセンスが古くなったため、更新する必要があります。」
+Visual Studio に "ライセンスが古くなったため、更新する必要があります" というメッセージが表示される場合があります。
 
 ![Visual Studio の古いライセンスに関するメッセージ](../ide/media/vs2017_stale-license.png)
 
-このメッセージは、使用しているサブスクリプションはまだ有効だが、サブスクリプションを最新の状態に維持するために Visual Studio が使用するライセンス トークンが更新されなかったため、次のいずれかの理由でライセンス トークンが古くなったことを示します。
+このメッセージは、サブスクリプションがまだ有効な期間でも、Visual Studio でサブスクリプションを最新の状態に保つために使用されるライセンス トークンが更新されていないことを示します。 Visual Studio では、次のいずれかの理由により、ライセンスが古いと報告されます。
 
-- 長期間にわたって Visual Studio を使用しなかったか、インターネット接続がなかった。
-- Visual Studio からサインアウトした。
+* Visual Studio を使用していないか、長期間インターネットに接続していません。
+* Visual Studio からサインアウトした。
 
 ライセンス トークンの有効期限が切れる前に、資格情報の再入力を求めるメッセージが Visual Studio により表示されます。
 
-資格情報を再入力しない場合、トークンの有効期限が近づきます。この場合、 **[アカウントの設定]** ダイアログで、トークンの有効期限が完全に切れるまでの日数が通知されます。 トークンの有効期限が切れた後で Visual Studio を引き続き使用するには、アカウントの資格情報を再入力する必要があります。
+資格情報を再入力しない場合、トークンの有効期限が近づきます。この場合、 **[アカウントの設定]** ダイアログで、トークンの有効期限が切れるまでの日数が通知されます。 トークンの有効期限が切れた後で Visual Studio を引き続き使用するには、アカウントの資格情報を再入力する必要があります。
 
 > [!Important]
 > インターネットへのアクセスが限定的またはアクセスできない環境で長期間にわたって Visual Studio を使用している場合は、Visual Studio の中断を回避するためにプロダクト キーを使用してロックを解除する必要があります。
 
-### <a name="update-expired-licenses"></a>有効期限が切れたライセンスを更新する
+## <a name="update-an-expired-license"></a>期限切れのライセンスを更新する
 
-サブスクリプションの有効期限が完全に切れ、Visual Studio へのアクセス権がなくなった場合は、サブスクリプションを更新するか、サブスクリプションのある別のアカウントを追加する必要があります。 使用中のライセンスの詳細については、 **[ファイル]**  >  **[アカウントの設定]** の順に移動し、ダイアログの右側にあるライセンス情報を参照してください。 異なるアカウントに関連付けられている別のサブスクリプションがある場合は、 **[アカウントの追加]** リンクを選択して、ダイアログ ボックスの左側にある **[すべてのアカウント]** 一覧にそのアカウントを追加します。
+サブスクリプションの有効期限が切れ、Visual Studio へのアクセス権がなくなった場合は、サブスクリプションを更新するか、サブスクリプションのある別のアカウントを追加する必要があります。 使用中のライセンスの詳細については、 **[ファイル]**  >  **[アカウントの設定]** の順に移動し、ダイアログの右側にあるライセンス情報を参照してください。 異なるアカウントに関連付けられている別のサブスクリプションがある場合は、 **[アカウントの追加]** リンクを選択して、ダイアログ ボックスの左側にある **[すべてのアカウント]** 一覧にそのアカウントを追加します。
+
+## <a name="get-support"></a>サポートを受ける
+
+問題が発生した場合に備え、 問題が発生した場合は、次のようなサポート オプションを利用できます。
+
+* [問題の報告](how-to-report-a-problem-with-visual-studio.md)ツールを使用して、製品の問題を報告します。
+* サブスクリプション、アカウント、および課金に関する質問への回答は、[サブスクリプションのサポートに関する FAQ](https://visualstudio.microsoft.com/subscriptions/support/) を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)
+* [Visual Studio の各エディションの比較](https://visualstudio.microsoft.com/vs/compare/)
+* [Visual Studio サブスクリプションの詳細情報](/visualstudio/subscriptions/)

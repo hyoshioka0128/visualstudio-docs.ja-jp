@@ -2,19 +2,19 @@
 title: Visual Studio Build Tools 2017 のワークロード ID とコンポーネント ID
 titleSuffix: ''
 description: Visual Studio のワークロード ID とコンポーネント ID を使用して Windows ベースのクラシック アプリケーションを構築する
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176897"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159060"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開発ビルド ツール
 
@@ -24,7 +24,7 @@ ms.locfileid: "68176897"
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | 必須
@@ -68,7 +68,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開発ツ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 15.6.27406.0 | 推奨
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 15.6.27406.0 | 推奨
@@ -89,7 +89,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | スタティック分�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必須
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必須
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# コンパイラ | 15.8.2782
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必須
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools のコア | 15.6.27309.0 | 必須
@@ -145,7 +145,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Ros
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開発ツール | 15.8.27924.0 | 必須
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core ビルド ツール | 15.8.27906.1 | 必須
@@ -161,7 +161,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開発ツール | 15.6
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild サポート | 15.8.27825.0 | 必須
 Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | 必須
@@ -174,7 +174,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.2821
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce ビルド ツール | 15.7.27617.1 | 必須
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必須
@@ -214,7 +214,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開発ツ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必須
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | 必須
@@ -249,7 +249,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | スタティック分析ツール | 15.0.26208.0 | 必須
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ Build Tools のコア機能 | 15.8.27729.1 | 必須
@@ -295,7 +295,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必須
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必須
@@ -321,7 +321,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 バージョン 15
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | 必須
@@ -366,7 +366,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開発ツール | 15.6
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必須
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必須
@@ -380,7 +380,7 @@ Component.OpenJDK | Microsoft 配布の OpenJDK | 15.9.28125.51 | Optional
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | name | Version
+コンポーネント ID | 名前 | バージョン
 --- | --- | ---
 Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.8.27729.1

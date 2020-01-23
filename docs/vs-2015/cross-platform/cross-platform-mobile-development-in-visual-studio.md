@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1efc8ea7f40c3098e681cc80ac90789b629630a9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297889"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918290"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 - [Android、iOS、および Windows 用のクロスプラットフォーム ゲームを Visual Studio Tools for Unity を使用してビルドする](#Unity)
 
 ## <a name="NET"></a> Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)
- ![ハードウェア](../cross-platform/media/homedevices.png "HomeDevices")
+ ![デバイス](../cross-platform/media/homedevices.png "HomeDevices")
 
  Xamarin を利用すれば、コードや UI を共有し、同じソリューションで Android、iOS、Windows を対象にできます。
 
@@ -67,7 +67,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>すべてのデバイス用にレンダリングするページを 1 セット、Xamarin.Forms を使用してデザインする
  アプリのデザインの複雑さによっては、プロジェクト テンプレートの [ *Mobile Apps* ] グループにある **[Xamarin.Forms]** テンプレートを使用して作成することを検討します。 Xamarin.Forms は、Android、iOS、Windows 間で共有できる単一のユーザー インターフェイスを作成する UI ツールキットです。  Xamarin.Forms ソリューションをコンパイルすると、Android アプリ、iOS アプリ、Windows アプリが生成されます。 詳細については、「[Xamarin によるモバイル開発の概要](../cross-platform/learn-about-mobile-development-with-xamarin.md)」を参照してください。
 
-#### <a name="ShareHTML"></a> Android、iOS、Windows アプリ間でコードを共有する
+#### <a name="ShareHTML"></a> Android、iOS、および Windows アプリ間でコードを共有する
  Xamarin.Forms を使用せず、プラットフォームごとに個別にデザインすることにした場合は、UI 以外のコードの大部分をプラットフォームのプロジェクト (Android、iOS、および Windows) 間で共有できます。 これには、ビジネス ロジック、クラウド統合、データベース アクセス、または .NET Framework を対象とするその他のコードが含まれます。 特定のプラットフォームを対象とするコードのみ、共有することができません。
 
  ![Windows、iOs、Android の UI でコードを共有](../cross-platform/media/sharecode.png "ShareCode")
@@ -76,7 +76,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
 |**詳細を表示**|
 |--------------------|
-|共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方のいずれを使用してコードを共有するかを選択する。<br /><br /> [プラットフォーム間でコードを共有する](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework ブログ)<br /><br /> [コード共有のオプション](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [.NET Framework によるコード共有のオプション](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN ライブラリ)|
+|共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方のいずれを使用してコードを共有するかを選択する。<br /><br /> [プラットフォーム間でコードを共有する](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework ブログ)<br /><br /> [コード共有のオプション](/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [.NET Framework によるコード共有のオプション](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN ライブラリ)|
 
 ### <a name="WindowsHTML"></a> Windows 10 デバイスを対象にする
  ![Windows デバイス](../cross-platform/media/windowsdevices.png "Windows デバイス")
@@ -95,7 +95,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[アプリを Universal Windows Platform (UWP) へ移行する](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)
- ![ハードウェア](../cross-platform/media/homedevices.png "HomeDevices")
+ ![デバイス](../cross-platform/media/homedevices.png "HomeDevices")
 
  HTML と JavaScript に精通した Web 開発者は、Visual Studio Tools for Apache Cordova を使用して、Windows、Android、および iOS を対象とすることができます。 これらのアプリは 3 つのすべてのプラットフォームを対象にすることができ、開発者が最も慣れているスキルとプロセスを使用してアプリを作成できます。
 
@@ -116,7 +116,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |**詳細を表示**|
 |--------------------|
 |[Visual Studio のインストール](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Visual Studio Tools for Apache Cordova の使用を開始する](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Visual Studio Tools for Apache Cordova の使用を開始する](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
 |[Visual Studio Emulator for Android について学習する](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a> Android および Windows 用のアプリをビルドする (C++)
@@ -169,8 +169,8 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 |[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (ビデオ)|
 |[Unity について学習する](https://unity.com/) (Unity Web サイト)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio プロジェクトに Office 365 API を追加する](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Azure モバイル サービス](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

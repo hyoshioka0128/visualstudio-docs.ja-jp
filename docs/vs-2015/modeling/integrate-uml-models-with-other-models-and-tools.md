@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d7742c988e0193c8175621a08478b6225c8670
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850640"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918353"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>UML モデルを他のモデルおよびツールと統合する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,11 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
    詳細については、「プロファイルを定義して[UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)」を参照してください。
 
-   メニューコマンドおよびジェスチャハンドラーと共にプロファイルが配置されるサンプルプロジェクトについては、「[サンプル: UML プロファイル](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)」を参照してください。
-
 - **形式.** 一連の文字列を任意の UML 要素にアタッチできます。 ファイル名や別の要素の GUID などの情報を格納するコードを記述することもできます。 これは、追加の定義を行わなくても行えます。 参照は、ユーザーには直接表示されません。
 
-   詳細については、「 [UML モデル要素に参照文字列をアタッチする](../modeling/attach-reference-strings-to-uml-model-elements.md)」を参照してください。 サンプルについては、「 [UML 要素を図またはその他のファイルにリンクする](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)」を参照してください。
-
-  参照をモデル要素にエンコードするには次の 2 つの方法があります。
+参照をモデル要素にエンコードするには次の 2 つの方法があります。
 
 - ターゲットモデル要素の**GUID とファイル名**、およびターゲットモデル要素を含むモデル、またはそれを表示する特定の図。
-
-   例については、「 [UML 要素を図またはその他のファイルにリンクする](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)」を参照してください。
 
 - **ModelBus 参照。** ModelBus は、モデル間の参照を作成および解決するためのフレームワークです。 これには、モデル内の要素をユーザーが選択できるようにする ModelBus ピッカーが含まれます。 これは、対象のモデルに変更があったために失われた参照をユーザーが解決するのにも役立ちます。
 
@@ -61,8 +55,6 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
 1. **Vmsdk ルール**を使用して、同じモデル内の変更を反映することができます。
 
-    例については、「 [UML 要素を図またはその他のファイルにリンクする](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)」を参照してください。
-
 2. **Vmsdk イベント**を使用して、モデルの外部の変更を反映することができます。たとえば、リンクドキュメントのファイル名を変更したり、別のモデルの要素を変更したりできます。
 
    これらのメカニズムの詳細については、「[方法: UML モデルの変更に対応する](../misc/how-to-respond-to-changes-in-a-uml-model.md)」を参照してください。
@@ -71,30 +63,5 @@ UML 要素の場合、他の UML 要素、ファイル、またはその他の�
 
    詳細については、「[モデリング図でのジェスチャハンドラーの定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)」および「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
 
-## <a name="samples"></a>サンプル
- [UML 要素を図またはその他のファイルにリンクする](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)コードサンプルを参照してください。 このサンプルを使用すると、ユーザーは任意の UML 要素にファイルをドラッグし、後でその要素をダブルクリックしてファイルを開くことができます。 たとえば、アクティビティ図を、ユースケース要素にリンクすることができます。 リンクが設定されている要素はアイコンで示されます。
-
- このコード サンプルでは、以下の技法を説明します。
-
-- [UML モデル要素に参照文字列をアタッチする](../modeling/attach-reference-strings-to-uml-model-elements.md)
-
-   このサンプル コードは、要素に関連付けられている参照文字列にファイル パスと要素 GUID を格納します。
-
-- UML 要素にデコレータを追加する方法。 デコレーターに関する一般的な情報については、「[テキストフィールドおよびイメージフィールドのカスタマイズ](../modeling/customizing-text-and-image-fields.md)」を参照してください。
-
-   サンプルは、UML 図形にイメージのデコレータを追加します。
-
-- [方法: UML モデル内で変更に応答する](../misc/how-to-respond-to-changes-in-a-uml-model.md)
-
-   このサンプルでは、図に表示される新しい図形に応答するルールを定義する方法を示します。
-
-- [モデリング図にメニュー コマンドを定義する](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-- [モデリング図にジェスチャ ハンドラーを定義する](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-   このサンプルでは、Windows エクスプローラー (またはエクスプローラー)、ソリューション エクスプローラー、およびその他の UML 要素からドラッグした項目を処理する方法について説明しています。
-
-  DSL で UML モデルを読み取る例については、「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
-
 ## <a name="see-also"></a>参照
- [モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)[するモデリング図にジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する[方法: ドラッグアンドドロップハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)する方法: [uml モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)する[サンプル: uml プロファイル](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)uml[要素を図またはその他のファイルにリンクする](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する[モデリング図にジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する[方法: ドラッグアンドドロップハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)する方法[: UML モデルの変更に応答](../misc/how-to-respond-to-changes-in-a-uml-model.md)する

@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851452"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915653"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
@@ -110,7 +110,7 @@ Azure 仮想マシンの診断データを Visual Studio で収集できます�
     ![Azure 仮想マシン拡張機能をインストールする](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > 他の診断拡張機能も仮想マシンで使用できます。 詳細については、「[Windows 用の仮想マシン拡張機能とその機能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)」を参照してください。
+   > 他の診断拡張機能も仮想マシンで使用できます。 詳細については、「[Windows 用の仮想マシン拡張機能とその機能](/azure/virtual-machines/windows/extensions-features)」を参照してください。
    >
    >
 5. 拡張機能を追加してその **[診断構成]** ダイアログ ボックスを表示するには、 **[追加]** を選択します。

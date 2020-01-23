@@ -14,12 +14,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b74222804e9ed42e6f8263cbe6ad0daf19cda81f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300325"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918740"
 ---
 # <a name="signing-vsix-packages"></a>VSIX パッケージの署名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "74300325"
   
 1. プロジェクトに VSIX を追加します。  
   
-2. ソリューションエクスプローラーのプロジェクトノードを右クリックし、[**追加&#124; ] [NuGet パッケージの管理**] の順に選択します。  Nuget と NuGet パッケージの追加の詳細については、「 [nuget の概要](https://docs.microsoft.com/nuget/)」および「[ダイアログを使用した Nuget パッケージの管理](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。  
+2. ソリューションエクスプローラーのプロジェクトノードを右クリックし、[**追加&#124; ] [NuGet パッケージの管理**] の順に選択します。  Nuget と NuGet パッケージの追加の詳細については、「 [nuget の概要](/nuget/)」および「[ダイアログを使用した Nuget パッケージの管理](/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。  
   
 3. VisualStudioExtensibility から VSIXSignTool を検索し、NuGet パッケージをインストールします。  
   
@@ -48,5 +48,5 @@ ms.locfileid: "74300325"
   
    VSIXSignTool sign/f \<certfile >/p \<password > \<VSIXfile >  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)

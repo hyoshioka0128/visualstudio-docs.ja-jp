@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738133"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916280"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備: コンソールプロジェクトC#( C++、、Visual Basic F#、)
 
-コンソールプロジェクトのデバッグの準備は、Windows プロジェクトのデバッグの準備と似ています。コマンドライン引数の設定や、デバッグのためにアプリを一時停止する方法など、いくつかの考慮事項があります。 詳細については、次を参照してください。 [Windows フォーム アプリケーション](../debugger/debugging-preparation-windows-forms-applications.md)、および[デバッグの準備。 Windows フォーム アプリケーション (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 コンソール アプリケーションはどれも類似しているため、このトピックでは次のプロジェクトの種類について説明します。
+コンソールプロジェクトのデバッグの準備は、Windows プロジェクトのデバッグの準備と似ています。コマンドライン引数の設定や、デバッグのためにアプリを一時停止する方法など、いくつかの考慮事項があります。 詳細については、次を参照してください。 [Windows フォーム アプリケーション](../debugger/debugging-preparation-windows-forms-applications.md)、および[デバッグの準備。 Windows フォーム アプリケーション (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 コンソール アプリケーションはどれも類似しているため、このトピックでは次のプロジェクトの種類について説明します。
 
 - C#、Visual Basic、 F#コンソールアプリケーション
 
@@ -43,7 +43,7 @@ ms.locfileid: "72738133"
 
 すべてのプロジェクト プロパティと同様に、これらの引数はデバッグ セッション間および Visual Studio セッション間で保持されます。 このため、対象のコンソール アプリケーションを以前にデバッグしたことがある場合は、前回のセッションで **[\<プロジェクト名> プロパティ ページ]** ダイアログ ボックスに入力した引数が存在する場合があります。
 
-## <a name="start-the-application"></a>アプリケーションを起動する
+## <a name="start-the-application"></a>アプリケーションの起動
 
  いくつかのコンソール アプリケーションが起動すると、それらのアプリケーションは最後まで実行されてから終了します。 この動作のため、実行を中断してデバッグする時間が十分ない場合があります。 アプリケーションをデバッグできるようにするには、次のいずれかの手順に従ってアプリケーションを起動します。
 

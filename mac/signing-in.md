@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983658"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844260"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
 
 Visual Studio for Mac にサインインすると、[サブスクリプションがアクティブ化](enable-subscription.md)されます。 Visual Studio for Mac をダウンロードすると、既定で Community Edition が常に取得されます。 [Professional または Enterprise のライセンス](https://visualstudio.microsoft.com/vs/compare/)をお持ちの場合は、最初の実行時にサインインして、追加機能のロックを解除する必要があります。 さらに、次のことが可能になります。
 
-* **Visual Studio Dev Essentials プログラムにアクセスする** – このプログラムには、無料のソフトウェア提供サービス、トレーニング、サポートなどが含まれます。 詳細については、「 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 」をご覧ください。
+* **Visual Studio Dev Essentials プログラムにアクセスする** – このプログラムには、無料のソフトウェア提供サービス、トレーニング、サポートなどが含まれます。 詳細については、「 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 」をご覧ください。
 
 * IDE で **Azure に自動的に接続される**ようになり、同じアカウントの資格情報を再度要求されることはなくなります。
 

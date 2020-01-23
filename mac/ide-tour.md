@@ -3,15 +3,15 @@ title: Visual Studio for Mac ツアー
 description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984707"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405829"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac ツアー
 
@@ -123,7 +123,7 @@ Visual Studio for Mac には、コードをリファクターする 2 つの便�
 
 ## <a name="debugging"></a>デバッグ
 
-Visual Studio for Mac には、Xamarin.iOS、Xamarin.Mac、Xamarin.Android アプリケーションのデバッグをサポートするネイティブ デバッガーが備わっています。 Visual Studio for Mac では、IDE ですべてのプラットフォームでマネージド コードをデバッグするために、Mono ランタイムに実装されている Mono Soft Debugger を使用しています。 デバッグの詳細については、「[Xamarin を使ったデバッグ](/visualstudio/mac/debugging)」を参照してください。
+Visual Studio for Mac には、.NET Core、.NET Framework、Unity、および Xamarin プロジェクトをサポートするデバッガーが用意されています。 Visual Studio for Mac では、.NET Core デバッガーと Mono Soft Debugger が使用されており、この IDE であらゆるプラットフォームにわたるマネージド コードをデバッグできます。 デバッグの詳細については、「[Xamarin を使ったデバッグ](/visualstudio/mac/debugging)」を参照してください。
 
 デバッガーには、文字列、色、URL だけでなく、サイズ、座標、ベジエ曲線などの特殊な種類の高機能なビジュアライザーが含まれています。
 

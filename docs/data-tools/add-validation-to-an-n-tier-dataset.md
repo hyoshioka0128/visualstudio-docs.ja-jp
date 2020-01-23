@@ -10,17 +10,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff9b2bab755a341d512669578c40ae71f554c235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 426399022c2484dca28bb4f4e1f26c14783a3d19
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648877"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113315"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 層データセットに検証を追加する
 n 層ソリューションに分離されたデータセットへの検証の追加は、単一ファイルのデータセット (1 つのプロジェクト内のデータセット) に検証を追加するのと基本的には同じです。 データで検証を実行する位置として推奨されるのは、データ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントや <xref:System.Data.DataTable.RowChanging> イベントの発生時です。
@@ -34,7 +34,7 @@ n 層ソリューションに分離されたデータセットへの検証の追
 > C# では、<xref:System.Data.DataTable.ColumnChanging> イベントおよび <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 イベントハンドラーを手動で作成し、基になるイベントにイベントハンドラーをフックする必要があります。 次の手順では、Visual Basic とC#の両方で必要なイベントハンドラーを作成する方法について説明します。
 
 ## <a name="validate-changes-to-individual-columns"></a>個々の列に対する変更を検証する
-個々の列の値は、<xref:System.Data.DataTable.ColumnChanging> イベントを処理することにより検証します。 @No__t_0 イベントは、列の値が変更されたときに発生します。 **データセットデザイナー**の目的の列をダブルクリックして、<xref:System.Data.DataTable.ColumnChanging> イベントのイベントハンドラーを作成します。
+個々の列の値は、<xref:System.Data.DataTable.ColumnChanging> イベントを処理することにより検証します。 <xref:System.Data.DataTable.ColumnChanging> イベントは、列の値が変更されたときに発生します。 **データセットデザイナー**の目的の列をダブルクリックして、<xref:System.Data.DataTable.ColumnChanging> イベントのイベントハンドラーを作成します。
 
 最初に列をダブルクリックすると、デザイナーにより <xref:System.Data.DataTable.ColumnChanging> イベントのイベント ハンドラーが生成されます。 特定の列をテストする `If...Then` ステートメントも作成されます。 たとえば、Northwind Orders テーブルの **[締切日]** 列をダブルクリックすると、次のコードが生成されます。
 
@@ -62,7 +62,7 @@ End Sub
 
 3. アプリケーションの要件を満たすデータが `e.ProposedValue` に含まれていることを検証するコードを追加します。 指定された値が受け入れられない場合、エラーがあることを表すように該当する列を設定します。
 
-     次のコード例では、 **Quantity**列に0より大きい値が含まれていることを検証します。 **Quantity**が0以下の場合、列はエラーに設定されます。 @No__t_0 句は、 **Quantity**が0を超える場合にエラーをクリアします。 列変更イベント ハンドラー内のコードは、次のようになります。
+     次のコード例では、 **Quantity**列に0より大きい値が含まれていることを検証します。 **Quantity**が0以下の場合、列はエラーに設定されます。 `Else` 句は、 **Quantity**が0を超える場合にエラーをクリアします。 列変更イベント ハンドラー内のコードは、次のようになります。
 
     ```vb
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then
@@ -117,7 +117,7 @@ End Sub
      `RowChanging` イベント ハンドラーを使用して部分クラスが作成され、コード エディターが開きます。
 
     > [!NOTE]
-    > C# プロジェクトでは、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 @No__t_0 イベントを処理し、コードを実行してから、テーブルの初期化メソッドでイベントをフックするメソッドを作成する必要があります。
+    > C# プロジェクトでは、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 <xref:System.Data.DataTable.RowChanging> イベントを処理し、コードを実行してから、テーブルの初期化メソッドでイベントをフックするメソッドを作成する必要があります。
 
 3. 部分クラスの宣言内にユーザー コードを追加します。
 

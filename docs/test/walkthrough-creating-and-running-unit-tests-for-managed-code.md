@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659656"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590710"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
@@ -30,11 +30,11 @@ ms.locfileid: "72659656"
 
 1. Visual Studio を開きます。
 
-2. **[ファイル]** メニューで、 **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. **[ファイル]** メニューの **[新規]** > **[プロジェクト]** を選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-3. **[Visual C#]** の **[.NET Core]** カテゴリで、 **[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** プロジェクト テンプレートを選択します。
+3. **[Visual C#]** > **[.NET Core]** カテゴリで、 **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートを選択します。
 
 4. プロジェクトに「**Bank**」という名前を設定してから、 **[OK]** をクリックします。
 

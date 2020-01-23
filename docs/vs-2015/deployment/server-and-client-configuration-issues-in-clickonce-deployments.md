@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844993"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918811"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Windows Server でインターネットインフォメーションサービス (
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]では、クライアントにストリームを送信する前に、GZIP アルゴリズムを使用してデータストリームを圧縮する Web サーバーテクノロジである HTTP 圧縮を使用するダウンロードを実行できます。 クライアント (この場合は [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]) では、ファイルを読み取る前にストリームが圧縮解除されます。  
   
  IIS を使用している場合は、HTTP 圧縮を簡単に有効にすることができます。 ただし、HTTP 圧縮を有効にすると、特定のファイルの種類 (つまり、HTML ファイルとテキストファイル) に対してのみ有効になります。 アセンブリ (.dll)、XML (.xml)、配置マニフェスト (. application)、およびアプリケーションマニフェスト (.manifest) の圧縮を有効にするには、これらのファイルの種類を、IIS で圧縮する型のリストに追加する必要があります。 ファイルの種類を配置に追加するまでは、テキストファイルと HTML ファイルのみが圧縮されます。  
-  
- IIS の詳細な手順については、「 [HTTP 圧縮用に追加のドキュメントの種類を指定する方法](https://support.microsoft.com/kb/234497)」を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)   

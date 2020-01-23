@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301089"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918956"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>デバッガーでの例外の管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ ms.locfileid: "74301089"
   
 3. この設定は、特定の例外に対して変更することも (例外を選択し、右クリックし、 **[ユーザー コードで処理されない場合は続行]** を選択または選択解除する)、例外のカテゴリ全体 (たとえば、すべての共通言語ランタイム例外) に対して変更することもできます。  
   
-   たとえば、ASP.NET Web アプリケーションは、例外を HTTP 500 状態コードに変換して処理します ([ASP.NET API での例外の処理](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling))。この場合、例外の原因を特定できないことがあります。 次の例では、ユーザー コードは、 `String.Format()` をスローする <xref:System.FormatException>を呼び出します。 実行は次のように中断されます。  
+   たとえば、ASP.NET Web アプリケーションは、例外を HTTP 500 状態コードに変換して処理します ([ASP.NET API での例外の処理](/aspnet/web-api/overview/error-handling/exception-handling))。この場合、例外の原因を特定できないことがあります。 次の例では、ユーザー コードは、 `String.Format()` をスローする <xref:System.FormatException>を呼び出します。 実行は次のように中断されます。  
   
    ![ユーザー&#45;による例外の発生時に中断する](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
@@ -181,7 +181,7 @@ public class GenericException<T> : Exception
   
  ![汎用例外を追加しています](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [例外  後の実行の継続](../debugger/continuing-execution-after-an-exception.md)  
  [方法: 例外の後にシステムコードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [方法: ネイティブランタイムチェックを使用](../debugger/how-to-use-native-run-time-checks.md)する   

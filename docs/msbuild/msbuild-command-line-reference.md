@@ -12,17 +12,17 @@ helpviewer_keywords:
 - MSBuild, command line reference
 - msbuild.exe
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: e8cd04d16f35ae2cc1edaf43ae9f8803c3e424ba
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589254"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild コマンド ライン リファレンス
 *MSBuild.exe* を使用してプロジェクト ファイルやソリューション ファイルをビルドするとき、スイッチをいくつか含めて、プロセスのさまざまな側面を指定できます。

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849566"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918854"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "75849566"
 > [!NOTE]
 > ロックポリシーは、リフレクションを使用することによって回避できます。 サードパーティの開発者には明確な境界が用意されていますが、強力なセキュリティは提供されていません。
 
- 詳細とサンプルについては、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の[視覚化とモデリング](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)に関する SDK Web サイトを参照してください。
+ 詳細については、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の[視覚化とモデリング](https://www.microsoft.com/download/details.aspx?id=48148)に関する SDK Web サイトを参照してください。
 
 ## <a name="setting-and-getting-locks"></a>設定と取得 (ロックを)
  ストア、パーティション、または個々の要素に対してロックを設定できます。 たとえば、次のステートメントを実行すると、モデル要素が削除されるのを防ぐことができます。また、プロパティが変更されるのを防ぐことができます。

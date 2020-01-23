@@ -6,17 +6,17 @@ f1_keywords:
 - vs.newproject
 helpviewer_keywords:
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35302e8f749563ab173e7be15e944f8462fdb18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652648"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585471"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Visual Studio で新しいプロジェクトを作成する
 
@@ -59,7 +59,7 @@ Visual Studio 2019 では、いくつかの方法で新しいプロジェクト�
 
 ![VS 2019 のスタート ウィンドウから新しいプロジェクトを作成する](media/vs-2019/start-window-create-new-project.png)
 
-Visual Studio 開発環境が既に開いている場合は、メニュー バーで **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択するか、またはツールバー上で **[新しいプロジェクト]** をクリックすることで、新しいプロジェクトを作成できます。
+Visual Studio 開発環境が既に開いている場合は、メニュー バーで **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択するか、またはツール バー上で **[新しいプロジェクト]** をクリックすることで、新しいプロジェクトを作成できます。
 
 ![Visual Studio 2019 の [新しいプロジェクト] ボタン](media/vs-2019/new-project-button.png)
 

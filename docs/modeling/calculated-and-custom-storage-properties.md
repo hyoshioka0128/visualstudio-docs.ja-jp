@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748540"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115199"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算プロパティおよびカスタム格納プロパティ
 ドメイン固有言語 (DSL) 内のすべてのドメインプロパティは、図および言語エクスプローラーでユーザーに表示できます。また、プログラムコードからアクセスすることもできます。 ただし、プロパティの値が格納される方法は異なります。
@@ -25,8 +25,8 @@ ms.locfileid: "72748540"
 |ドメインプロパティの種類|説明|
 |-|-|
 |**Standard** (既定値)|*ストア*に保存され、ファイルにシリアル化されるドメインプロパティ。|
-|**計算**|ストアに保存されていないが、他の値から計算される読み取り専用のドメインプロパティ。<br /><br /> たとえば、`Person.Age` は `Person.BirthDate` から計算できます。<br /><br /> 計算を実行するコードを指定する必要があります。 通常は、他のドメインプロパティから値を計算します。 ただし、外部リソースを使用することもできます。|
-|**カスタムストレージ**|ストアに直接保存されるのではなく、get と set の両方が可能なドメインプロパティ。<br /><br /> 値を取得および設定するメソッドを指定する必要があります。<br /><br /> たとえば、`Person.FullAddress` は `Person.StreetAddress`、`Person.City`、および `Person.PostalCode` に格納できます。<br /><br /> 外部リソースにアクセスすることもできます。たとえば、データベースから値を取得して設定することができます。<br /><br /> @No__t_0 が true の場合、コードでストアに値を設定することはできません。 「[トランザクションとカスタム setter」を](#setters)参照してください。|
+|**計算**|ストアに保存されていないが、他の値から計算される読み取り専用のドメインプロパティ。<br /><br /> たとえば、`Person.Age` は `Person.BirthDate`から計算できます。<br /><br /> 計算を実行するコードを指定する必要があります。 通常は、他のドメインプロパティから値を計算します。 ただし、外部リソースを使用することもできます。|
+|**カスタムストレージ**|ストアに直接保存されるのではなく、get と set の両方が可能なドメインプロパティ。<br /><br /> 値を取得および設定するメソッドを指定する必要があります。<br /><br /> たとえば、`Person.FullAddress` は `Person.StreetAddress`、`Person.City`、および `Person.PostalCode`に格納できます。<br /><br /> 外部リソースにアクセスすることもできます。たとえば、データベースから値を取得して設定することができます。<br /><br /> `Store.InUndoRedoOrRollback` が true の場合、コードでストアに値を設定することはできません。 「[トランザクションとカスタム setter」を](#setters)参照してください。|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>計算またはカスタムストレージプロパティのコードを提供する
  ドメインプロパティの種類を [計算済み] または [カスタムストレージ] に設定する場合は、アクセス方法を指定する必要があります。 ソリューションをビルドすると、必要なものがエラーレポートに表示されます。
@@ -52,7 +52,7 @@ ms.locfileid: "72748540"
     > [!NOTE]
     > このファイルは、DslDefinition. dsl から生成されます。 このファイルを編集すると、次回 **[すべてのテンプレートの変換]** をクリックしたときに変更内容が失われます。 代わりに、必要なメソッドを別のファイルに追加します。
 
-6. クラスファイルを作成するか、別のフォルダーに開きます。たとえば、CustomCode \\*domainclass*.cs にします。
+6. クラスファイルを作成するか、別のフォルダーに開きます。たとえば、CustomCode\\*domainclass*.cs にします。
 
      名前空間が生成されたコードと同じであることを確認します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72748540"
     }  }
     ```
 
-8. **[種類]** を **[カスタムストレージ]** に設定した場合は、`Set` メソッドも指定する必要があります。 (例:
+8. **[種類]** を **[カスタムストレージ]** に設定した場合は、`Set` メソッドも指定する必要があります。 例:
 
     ```
     void SetAgeValue(int value)
@@ -75,7 +75,7 @@ ms.locfileid: "72748540"
             System.DateTime.Today.Year - value; }
     ```
 
-     @No__t_0 が true の場合、コードでストアに値を設定することはできません。 「[トランザクションとカスタム setter」を](#setters)参照してください。
+     `Store.InUndoRedoOrRollback` が true の場合、コードでストアに値を設定することはできません。 「[トランザクションとカスタム setter」を](#setters)参照してください。
 
 9. ソリューションをビルドして実行します。
 
@@ -84,13 +84,13 @@ ms.locfileid: "72748540"
 ## <a name="setters"></a>トランザクションとカスタム Setter
  メソッドは通常、アクティブなトランザクションの内部で呼び出されるので、[カスタムストレージの設定方法] プロパティでは、トランザクションを開く必要はありません。
 
- ただし、ユーザーが Undo または Redo を呼び出した場合、またはトランザクションがロールバックされている場合にも、Set メソッドを呼び出すことができます。 @No__t_0 が true の場合、Set メソッドは次のように動作します。
+ ただし、ユーザーが Undo または Redo を呼び出した場合、またはトランザクションがロールバックされている場合にも、Set メソッドを呼び出すことができます。 <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> が true の場合、Set メソッドは次のように動作します。
 
 - 他のドメインプロパティに値を割り当てるなど、ストアに変更を加えることはできません。 これらの値は、元に戻すマネージャーによって設定されます。
 
 - ただし、データベースやファイルの内容などの外部リソースや、ストアの外部にあるオブジェクトを更新する必要があります。 これにより、ストア内の値と共に synchronism に保持されます。
 
-  (例:
+  例:
 
 ```
 void SetAgeValue(int value)

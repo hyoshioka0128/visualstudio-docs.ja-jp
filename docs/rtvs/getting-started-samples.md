@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950485"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843819"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio のサンプル プロジェクト
 
@@ -65,7 +65,7 @@ ms.locfileid: "62950485"
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Microsoft R Open と Microsoft ML Server の特別な点
 
-[Microsoft R Open](https://aka.ms/rtvs-r-open) (Microsoft が配布する R) は、次の 2 つの重要な点が [CRAN R](https://cran.r-project.org/) とは異なります。
+[Microsoft R Open](https://mran.revolutionanalytics.com/download/) (Microsoft が配布する R) は、次の 2 つの重要な点が [CRAN R](https://cran.r-project.org/) とは異なります。
 
 1. [Intel 数値演算ライブラリ](https://software.intel.com/intel-mkl)と併用時の[優れた計算性能](https://mran.revolutionanalytics.com/rro/#intelmkl1)。 ライブラリは、Microsoft R Open と共に使用するために、Microsoft から無料でダウンロードして入手できます。
 

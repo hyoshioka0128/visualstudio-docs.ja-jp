@@ -2,17 +2,17 @@
 title: コピー動作のカスタマイズ
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4e3ab9a30b373e2421607f6dd1609b13adad3087
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984302"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115350"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio の視覚化およびモデリング SDK で作成されたドメイン固有言語 (DSL) では、ユーザーが要素をコピーして貼り付けるときの動作を変更できます。
@@ -80,10 +80,10 @@ partial class MyDslClipboardCommandSet
  `ClipboardCommandSet.ProcessOnPasteCommand()` をオーバーライドし、基本のメソッドを呼び出した後で、追加のリンクを作成します。
 
  外部アプリケーションに**要素をコピーできる形式をカスタマイズ**します。たとえば、ビットマップフォームに境界線を追加します。
-DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
+DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
 
  **コピーコマンドによって要素がクリップボードにコピーされる方法をカスタマイズします。ただし、ドラッグ操作ではコピーしません。**
-DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
+DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
 
  **コピーと貼り付けを使用して図形のレイアウトを保持します。**
 ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)の例をご覧ください。
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  ElementOperations クラスに次の 2 つのメソッドを定義します。
 
-- ソース要素をターゲットの図形、コネクタ、または図にドラッグ可能かどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
+- ソース要素をターゲット図形、コネクタ、または図にドラッグできるかどうかを決定する `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`。
 
 - ソース要素をターゲットに結合する `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`。
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()` は、マウスが図の上を移動するときにユーザーに示されるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。
+ `CanMerge()` は、マウスを図の上に移動したときにユーザーに与えられるフィードバックを決定するために呼び出されます。 メソッドへのパラメーターは、マウスを置く要素とドラッグ操作が実行されたソースに関するデータです。 ユーザーは画面上の任意の場所からドラッグできます。 したがって、ソース オブジェクトとして多数の種類が考えられ、さまざまな形式でシリアル化されます。 ソースが DSL または UML モデルの場合、データ パラメーターは <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> のシリアル化です。 ドラッグ、コピー、およびツールボックス操作は ElementGroupPrototypes を使用してモデルの断片を表します。
 
  要素グループ プロトタイプは任意の数の要素およびリンクを含むことができます。 要素の種類はその GUID により識別できます。 GUID はドラッグした図形のものであり、基になるモデル要素のものではありません。 次の例で、`CanMerge()` は、クラスの図形を UML 図からこの図にドラッグした場合に true を返します。
 
@@ -367,7 +367,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  ユーザーが CTRL+C キーを押すか、またはコピー メニュー コマンドを使用すると、メソッド <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> が呼び出されます。 この設定方法については、「 **」を参照**してください。 コマンドの設定方法の詳細については、「[方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
- DslPackage プロジェクトに*Mydsl* `ClipboardCommandSet` の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドできます。
+ DslPackage プロジェクトに*Mydsl*`ClipboardCommandSet` の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドできます。
 
 ```csharp
 using System.Collections.Generic;

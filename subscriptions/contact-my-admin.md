@@ -19,7 +19,7 @@ ms.locfileid: "74491577"
 多くの組織は大規模かつ複雑であるため、管理者が誰なのか知らず、どこでサポートを得たらよいのかは簡単にはわからないことがあります。  Microsoft は、管理者に連絡するための新しい機能をサブスクライバー ポータルに追加しました。   
 
 ## <a name="how-to-contact-your-admin"></a>管理者に連絡する方法
-1. [https://my.visualstudio.com](https://my.visualstudio.com ) でサブスクライバー ポータルにサインインします。
+1. https://my.visualstudio.com でサブスクライバー ポータルにサインインします。
 2. **[サブスクリプション]** タブをクリックします。 
 3. 右上にある **[Contact my Admin]\(管理者に問い合わせる\)** をクリックします。 
    > [!div class="mx-imgBorder"]

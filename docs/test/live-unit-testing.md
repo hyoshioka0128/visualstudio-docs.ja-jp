@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652999"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851441"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing を構成して使用する方法
 
@@ -79,7 +79,7 @@ Live Unit Testing を構成するには、Visual Studio の最上位メニュー
 
 ## <a name="start-pause-and-stop"></a>開始、一時停止、停止
 
-Live Unit Testing を有効にするには、Visual Studio の最上位メニューから **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選択します。 Live Unit Testing を有効にすると、 **[Live Unit Testing]** メニューのオプションが、 **[開始]** の 1 項目から、 **[一時停止]** 、 **[停止]** 、 **[Reset Clean]/(クリーンのリセット/)** に変わります。
+Live Unit Testing を有効にするには、Visual Studio の最上位メニューから **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選択します。 Live Unit Testing を有効にすると、 **[Live Unit Testing]** メニューで使用可能なオプションが、 **[開始]** の 1 項目から、 **[一時停止]** と **[停止]** に変わります。
 
 - **[一時停止]** では、Live Unit Testing が一時的に中断されます。
 
@@ -87,10 +87,8 @@ Live Unit Testing を有効にするには、Visual Studio の最上位メニュ
 
 - **[停止]** では、Live Unit Testing が完全に停止されます。 Live Unit Testing は収集したすべてのデータを破棄します。
 
-- **[Reset Clean]/(クリーンのリセット/)** では、Live Unit Testing が停止され、保持されたデータが削除されて、Live Unit Testing が再起動されます。
-
 > [!NOTE]
-> 単体テスト プロジェクトが含まれていないソリューションで Live Unit Testing を開始する場合、**Live Unit Testing** メニューには **[一時停止]** 、 **[停止]** 、 **[Reset Clean]\(クリーンのリセット\)** の各オプションが表示されますが、Live Unit Testing は開始されません。 **[出力]** ウィンドウには、"このソリューションではサポートされているテスト アダプターが参照されていません..." という内容で始まるメッセージが表示されます。
+> 単体テスト プロジェクトが含まれていないソリューションで Live Unit Testing を開始する場合、**Live Unit Testing** メニューには **[一時停止]** と **[停止]** の各オプションが表示されますが、Live Unit Testing は開始されません。 **[出力]** ウィンドウには、"このソリューションではサポートされているテスト アダプターが参照されていません..." という内容で始まるメッセージが表示されます。
 
 いつでも、Live Unit Testing を一時停止または完全に停止できます。 たとえば、リファクタリングの途中で、しばらくテストが中断されることがわかっている場合に、これを行うことがあります。
 
@@ -156,7 +154,7 @@ Live Unit Testing で自動的にテストを実行してテスト結果を更�
 ソリューションに 10 個以上のプロジェクトがある場合、Visual Studio で以下の操作を行うと、次のダイアログが表示されます。
 
 - 保持されたデータがない状態で、Live Unit Testing を開始します
-- **[テスト]**  >  **[Live Unit Testing]**  >  **[Reset Clean]/(クリーンのリセット/)** を選択します
+- **[ツール]**  >  **[オプション]**  >  **[Live Unit Testing]**  >  **[Delete Persisted Data]\(持続データの削除\)** を選択します
 
 ![多数のプロジェクト用の Live Unit Testing ダイアログ](media/lut-large-project.png)
 
@@ -200,6 +198,6 @@ Live Unit Testing からテストのアセンブリ全体を除外するには�
 ## <a name="see-also"></a>関連項目
 
 - [コード テスト ツール](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Live Unit Testing のブログ](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Live Unit Testing のブログ](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
 - [ライブ単体テストに関する FAQ](live-unit-testing-faq.md)
 - [Channel 9 ビデオ: Visual Studio の Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

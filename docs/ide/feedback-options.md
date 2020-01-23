@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853491"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847462"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio フィードバック オプション
 
@@ -75,12 +75,12 @@ Visual Studio の品質向上のためのアイデアやご提案をお持ちの
 
 ## <a name="contact-microsoft-support"></a>Microsoft サポートに問い合わせる
 
-Visual Studio のサポート情報については、[製品のライフ サイクルとサービス](/visualstudio/releases/2019/servicing/)に関するページを参照してください。 その他の Microsoft 製品とサービスについては、オンラインヘルプの「[Microsoft サポート](https://go.microsoft.com/fwlink/?LinkID=99019)」を参照してください。
+Visual Studio のサポート情報については、[製品のライフ サイクルとサービス](/visualstudio/releases/2019/servicing/)に関するページを参照してください。 その他の Microsoft 製品とサービスについては、オンラインヘルプの「[Microsoft サポート](https://support.microsoft.com/)」を参照してください。
 
 > [!NOTE]
 > 米国とカナダ以外の国でのサポートは異なる場合があります。 地域別のサポート連絡先の一覧については、[世界各国の Microsoft サイト](https://www.microsoft.com/worldwide/)に関するページを参照してください。
 
-マイクロソフトから直接の管理サポートを必要とする大規模な組織では、さまざまなエンタープライズ レベルのサポートを契約できます。 詳細については、[Microsoft Enterprise サポート ソリューション](https://go.microsoft.com/fwlink/?LinkId=258223)に関するページを参照してください。
+マイクロソフトから直接の管理サポートを必要とする大規模な組織では、さまざまなエンタープライズ レベルのサポートを契約できます。 詳細については、[Microsoft Enterprise サポート ソリューション](https://www.microsoft.com/industry/services/support)に関するページを参照してください。
 
 製品が新しいコンピューターやデバイスに最初からインストールされていた場合は、ハードウェアの製造元がこのソフトウェアの技術サポートや支援を行います。 サポートについては、製造元に直接お問い合わせください。
 

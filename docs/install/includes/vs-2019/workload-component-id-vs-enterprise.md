@@ -3,19 +3,19 @@ title: Visual Studio Enterprise 2019 のワークロードとコンポーネン�
 titleSuffix: ''
 description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 58c7d8775a1db09d2628eb6946924ae3543b80e4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9edadea9109fcd3c543ca3bd3cd777fbd488351a
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795567"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76158921"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio のコア エディター (Visual Studio Enterprise 2019 に付属)
 
@@ -25,7 +25,7 @@ ms.locfileid: "74795567"
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio のコア エディター | 16.1.28811.260 | 必須
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ ユーザー用 Visual Studio スタート ページ | 16.0.28315.86 | Optional
@@ -38,7 +38,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ ユーザー用 V
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs ツール | 16.0.28714.129 | 必須
@@ -92,7 +92,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.4.29519.181 | 推奨
 Microsoft.VisualStudio.Component.AspNet45 | 高度な ASP.NET 機能 | 16.0.28315.86 | 推奨
 Microsoft.VisualStudio.Component.Azure.Kubernetes.Tools | Visual Studio Tools for Kubernetes | 16.0.28625.61 | 推奨
-Microsoft.VisualStudio.Component.Azure.Powershell | Azure PowerShell | 16.4.29429.68 | 推奨
+Microsoft.VisualStudio.Component.Azure.Powershell | Azure Powershell | 16.4.29429.68 | 推奨
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Azure Resource Manager コア ツール | 16.4.29409.204 | 推奨
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric Tools | 16.4.29313.120 | 推奨
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services コア ツール | 16.4.29409.204 | 推奨
@@ -124,7 +124,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 推奨
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 推奨
@@ -179,7 +179,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F# デスクトップ言語の
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 言語サポート | 16.4.29429.68 | 推奨
 Microsoft.Component.PythonTools.Minicondax64 | Python miniconda | 16.2.29003.222 | 推奨
@@ -210,7 +210,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | 必須
@@ -289,7 +289,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET と Web 開�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開発ツール | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.0.28517.75 | 必須
@@ -308,7 +308,7 @@ Component.UnityEngine.x86 | Unity 5.6 32 ビット エディター | 16.1.28811.
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.MDD.Linux | Linux 開発用 C++ | 16.4.29511.114 | 必須
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | 必須
@@ -325,7 +325,7 @@ Component.MDD.Linux.GCC.arm | 埋め込み開発ツールと IoT 開発ツール
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.VisualStudio.Component.ClassDesigner | クラス デザイナー | 16.0.28528.71 | 必須
@@ -379,7 +379,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Windows 用 C++
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | 必須
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ コア機能 | 16.0.28625.61 | 必須
@@ -426,7 +426,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.Android.SDK25.Private | Android SDK セットアップ (API レベル 25) (C++ を使用したモバイル開発のためにローカルにインストール) | 16.0.28625.61 | 必須
 Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.1.28811.260 | 必須
@@ -450,7 +450,7 @@ Component.MDD.IOS | C++ iOS 開発ツール | 16.0.28517.75 | Optional
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
@@ -517,7 +517,7 @@ Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging | MSIX パッケージ化�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.1.28811.260 | 必須
 Component.Xamarin | Xamarin | 16.4.29409.204 | 必須
@@ -547,7 +547,7 @@ Component.Android.SDK28 | Android SDK セットアップ (API レベル 28) | 16
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
@@ -636,7 +636,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開発時の IIS サポ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診断 | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript および TypeScript の言語サポート | 16.4.29409.204 | 必須
@@ -659,7 +659,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 言語サービス | 16.0.28714.129 | 必須
 Component.Microsoft.Web.LibraryManager | ライブラリ マネージャー | 16.0.28315.86 | 必須
@@ -721,7 +721,7 @@ Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundati
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 言語サポート | 16.4.29429.68 | 必須
 Component.CPython3.x64 | Python 3 64 ビット (3.7.5) | 3.7.5 | 推奨
@@ -784,7 +784,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET と Web の開発ツール�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.NetFX.Native | .NET Native | 16.4.29429.68 | 必須
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 16.0.28315.86 | 必須
@@ -841,7 +841,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | C++ (v141) ユニバーサ�
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 必須
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 必須
@@ -865,7 +865,7 @@ Microsoft.VisualStudio.Component.DslTools | Modeling SDK | 16.0.28315.86 | Optio
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | name | Version
+コンポーネント ID | 名前 | バージョン
 --- | --- | ---
 Component.GitHub.VisualStudio | Visual Studio 用の GitHub 拡張機能 | 2.5.9.5485
 Component.Xamarin.Inspector | Xamarin Inspector | 16.0.28315.86

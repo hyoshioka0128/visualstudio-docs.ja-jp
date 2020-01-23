@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605984"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114922"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 
@@ -26,9 +26,9 @@ ms.locfileid: "72605984"
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイルの各セクション
 
-ルート要素は > \<Dsl、その属性は、ドメイン固有言語の名前、名前空間、およびバージョン管理のためのメジャーバージョン番号とマイナーバージョン番号を指定します。 `DslDefinitionModel` スキーマは、有効な DslDefinition.dsl ファイルの内容と構造を定義します。
+ルート要素は Dsl > \<、その属性は、ドメイン固有言語の名前、名前空間、およびバージョン管理のためのメジャーバージョン番号とマイナーバージョン番号を識別します。 `DslDefinitionModel` スキーマは、有効な DslDefinition.dsl ファイルの内容と構造を定義します。
 
-@No__t_0Dsl > ルート要素の子要素は次のとおりです。
+\<Dsl > ルート要素の子要素は次のとおりです。
 
 ### <a name="classes"></a>クラス
 
@@ -40,7 +40,7 @@ ms.locfileid: "72605984"
 
 ### <a name="types"></a>種類
 
-このセクションでは、各型とその名前空間を定義します。 ドメイン プロパティには 2 つの型があります。 `DomainEnumerations` はモデルで定義され、DomainModel.cs に型を生成します。 `ExternalTypes` は、それ以外の場所で定義されている型 (`String` や `Int32` など) を参照するだけであり、何も生成しません。
+このセクションでは、各型とその名前空間を定義します。 ドメイン プロパティには 2 つの型があります。 `DomainEnumerations` は、モデルで定義され、DomainModel.cs に型を生成します。 `ExternalTypes` は、他の場所 (`String` や `Int32`など) で定義されている型を参照し、何も生成しません。
 
 ### <a name="shapes"></a>図形
 
@@ -66,7 +66,7 @@ ms.locfileid: "72605984"
 
 このセクションでは図を定義します。このセクションを使用して、背景色やルート クラスなどのプロパティを指定できます。 (ルートクラスは、図全体で表されるドメインクラスです)。また、[ダイアグラム] セクションには、各ドメインクラスまたはリレーションシップを表す図形またはコネクタを指定する、[のマップ] 要素と [端子] マップ要素も含まれています。
 
-### <a name="designer"></a>Designer
+### <a name="designer"></a>デザイナー
 
 このセクションでは、デザイナー (エディター) を定義します。これにより、**ツールボックス**、検証設定、図、およびシリアル化スキームがまとめられます。 Designer セクションでは、モデルのルート クラスも定義されます。これは通常、図のルート クラスでもあります。
 
@@ -148,7 +148,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 </DomainClass>
 ```
 
-`NamedElement` は、`Component` などのその他の複数のクラスの基底クラスであり、`Name` から継承した `NamedElement` プロパティのほかに固有のプロパティを持ちます。 BaseClass 子ノードにはモニカー参照が含まれています。 参照先クラスは同じ名前空間内にあるので、モニカーで必要となるのはその名前だけです。
+`NamedElement` は、`NamedElement`から継承した `Name` プロパティに加えて独自のプロパティを持つ、`Component`など、他のいくつかのクラスの基本となります。 BaseClass 子ノードにはモニカー参照が含まれています。 参照先クラスは同じ名前空間内にあるので、モニカーで必要となるのはその名前だけです。
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,13 +168,13 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 - **Id。** この属性は GUID です。 ファイルに値を指定しないと、Domain-Specific Language Designer によって値が作成されます。 (このドキュメントの説明では、スペースを節約するためこの属性は通常省略しています。)
 
-- **名前と名前空間。** これらの属性は、生成されたコード内のクラスの名前と名前空間を指定します。 これらの属性の組み合わせは、ドメイン固有言語内で一意である必要があります。
+- **名前と名前空間。** これらの属性は、生成されるコードにクラスの名前と名前空間を指定します。 これらの属性の組み合わせは、ドメイン固有言語内で一意である必要があります。
 
-- **InheritanceModifier.** この属性は、"abstract"、"sealed"、または none です。
+- **InheritanceModifier.** この属性は "abstract"、"sealed" または none です。
 
-- **名.** この属性は、 **[プロパティ]** ウィンドウに表示される名前です。 DisplayName 属性には、スペースとその他の句読点を使用できます。
+- **DisplayName.** この属性は、 **[プロパティ]** ウィンドウに表示される名前です。 DisplayName 属性には、スペースとその他の句読点を使用できます。
 
-- **GeneratesDoubleDerived.** この属性が true に設定されている場合、2つのクラスが生成され、一方がもう一方のサブクラスになります。 生成されるすべてのメソッドは基底クラスに含まれ、コンストラクターはサブクラスに含まれます。 この属性を設定すると、カスタム コードで生成されるメソッドをすべてオーバーライドできます。
+- **GeneratesDoubleDerived.** この属性が true に設定されている場合は、2 つのクラスが生成されます。このうち 1 つは、もう 1 つのクラスのサブクラスです。 生成されるすべてのメソッドは基底クラスに含まれ、コンストラクターはサブクラスに含まれます。 この属性を設定すると、カスタム コードで生成されるメソッドをすべてオーバーライドできます。
 
 - **Hascustomconstructor**。 この属性が true に設定されている場合、生成されるコードからコンストラクターが省略されるため、独自のコンストラクターを作成できます。
 
@@ -188,7 +188,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 - `Classes` セクションにリストされているドメイン クラスごとに C# クラスが生成されます。 C# クラスは Dsl\GeneratedCode\DomainClasses.cs に生成されます。
 
-### <a name="properties"></a>プロパティ
+### <a name="properties"></a>[プロパティ]
 
 各ドメイン プロパティには、名前と型があります。 この名前は、ドメイン クラスとその中間基底クラス内で固有である必要があります。
 
@@ -465,7 +465,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 (Connection リレーションシップには、要素と属性の名前を指定する独自の XML クラス データがあります。)
 
-**Omitelement**属性が true に設定されている場合、リレーションシップロール名は省略されます。これにより、シリアル化されたファイルがでされ、2つのクラスに複数のリレーションシップがない場合は、明確になります。 (例:
+**Omitelement**属性が true に設定されている場合、リレーションシップロール名は省略されます。これにより、シリアル化されたファイルがでされ、2つのクラスに複数のリレーションシップがない場合は、明確になります。 例:
 
 ```xml
 <component name="Component3">
@@ -498,7 +498,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators は、`Connector` と `Decorator` の間の埋め込みリレーションシップです。 `UseFullForm` が設定されているため、Connector オブジェクトからの各リンクのプロパティ リストに、リレーションシップの名前が含まれます。 ただし `OmitElement` も設定されているため、`RoleElementName` 内部に埋め込まれている複数のリンクは `Connector` によって囲まれません。
+- ConnectorHasDecorators は、`Connector` と `Decorator` の間の埋め込みリレーションシップです。 `UseFullForm` は、コネクタオブジェクトからの各リンクのプロパティの一覧と共に、リレーションシップの名前が表示されるように設定されています。 ただし `OmitElement` も設定されているため、`RoleElementName` 内部に埋め込まれている複数のリンクは `Connector` によって囲まれません。
 
 ```xml
 <Connector Name="AssociationLink" ...>

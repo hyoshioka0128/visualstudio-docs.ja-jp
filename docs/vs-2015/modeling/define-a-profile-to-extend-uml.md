@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850482"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918876"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>プロファイルを定義して UML を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ ms.locfileid: "75850482"
 7. 前のセクションで説明したように、拡張機能プロジェクトをビルドするか、またはすべてのファイルを圧縮して、Visual Studio 拡張機能を生成します。
 
 ## <a name="Schema"></a>プロファイルの構造
- UML プロファイルの XSD ファイルについては、「[ステレオタイプとプロファイルの xsd の設定](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)」のサンプルを参照してください。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
+
+ プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
 
  **%ProgramFiles%\Microsoft Visual Studio [version] \ xmlschema**
 
@@ -365,4 +366,5 @@ ms.locfileid: "75850482"
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。
 
 ## <a name="see-also"></a>参照
- [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)サンプル: ステレオタイプに[よる uml 要素の色](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)の[設定サンプル: ステレオタイプの設定、プロファイル XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)
+ 

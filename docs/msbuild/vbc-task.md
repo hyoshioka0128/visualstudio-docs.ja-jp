@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577773"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591139"
 ---
 # <a name="vbc-task"></a>Vbc タスク
-実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*)、またはコード モジュール (*.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。
+実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*)、またはコード モジュール ( *.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
  `Vbc` タスクのパラメーターの説明を次の表に示します。
@@ -43,7 +43,7 @@ ms.locfileid: "62577773"
 | `Deterministic` | 省略可能な `Boolean` 型のパラメーターです。<br/><br/> `true` の場合、バイナリ コンテンツがコンパイル全体で同一のアセンブリをコンパイラに出力させます (入力が同一である場合)。<br/><br/>詳細については、「[-deterministic](/dotnet/visual-basic/reference/command-line-compiler/deterministic)」を参照してください。 |
 | `DisabledWarnings` | 省略可能な `String` 型のパラメーターです。<br /><br /> 指定された警告の出力を抑制します。 警告 ID の数値だけを指定します。 複数の警告を指定するときは、セミコロン (;) で区切ります。 このパラメーターは、*vbc.exe* コンパイラの [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) スイッチに相当します。 |
 | `DocumentationFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> 指定した XML ファイルにドキュメント コメントを出力します。 このパラメーターは `GenerateDocumentation` 属性をオーバーライドします。 詳細については、「[-doc](/dotnet/visual-basic/reference/command-line-compiler/doc)」を参照してください。 |
-| `EmitDebugInformation` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、デバッグ情報が生成され、*.pdb* ファイルに格納されます。 詳細については、「[-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。 |
+| `EmitDebugInformation` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、デバッグ情報が生成され、 *.pdb* ファイルに格納されます。 詳細については、「[-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。 |
 | `ErrorReport` | 省略可能な `String` 型のパラメーターです。<br /><br /> 内部コンパイル エラーの報告方法を指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> `prompt` を指定した場合、内部コンパイラ エラーが発生すると、ユーザーはエラー データを Microsoft に送信するかどうかを選択するように求められます。<br /><br /> `send` を指定した場合、内部コンパイラ エラーが発生すると、エラー データが Microsoft に送信されます。<br /><br /> 既定値は `none` です。テキスト出力のみでエラーが報告されます。<br /><br /> このパラメーターは、*vbc.exe* コンパイラの [-errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport) スイッチに相当します。 |
 | `FileAlignment` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> 出力ファイルでセクションをアラインするサイズをバイト単位で指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> このパラメーターは、*vbc.exe* コンパイラの [-filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) スイッチに相当します。 |
 | `GenerateDocumentation` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ドキュメント情報が生成され、タスクが作成する実行可能ファイルまたはライブラリの名前が与えられた XML ファイルに格納されます。 詳細については、「[-doc](/dotnet/visual-basic/reference/command-line-compiler/doc)」を参照してください。 |
@@ -85,9 +85,9 @@ ms.locfileid: "62577773"
 | `WarningsAsErrors` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーとして扱う警告の一覧を指定します。 詳細については、「[-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)」を参照してください。<br /><br /> このパラメーターは `TreatWarningsAsErrors` パラメーターをオーバーライドします。 |
 | `WarningsNotAsErrors` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーとして扱わない警告の一覧を指定します。 詳細については、「[-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)」を参照してください。<br /><br /> このパラメーターは、`TreatWarningsAsErrors` パラメーターが `true` に設定されている場合にのみ役に立ちます。 |
 | `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> **ファイル エクスプローラー**で出力ファイルを適切に表示する *.ico* ファイルをアセンブリに挿入します。 このパラメーターは、*vbc.exe* コンパイラの [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) スイッチに相当します。 |
-| `Win32Resources` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース (*.res* ファイル) を出力ファイルに挿入します。 このパラメーターは、*vbc.exe* コンパイラの [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) スイッチに相当します。 |
+| `Win32Resources` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 このパラメーターは、*vbc.exe* コンパイラの [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) スイッチに相当します。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例

@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650426"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111439"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision アクティビティ デザイナー
 
@@ -27,23 +27,23 @@ ms.locfileid: "72650426"
 
 ### <a name="using-the-flowdecision-designer"></a>FlowDecision デザイナーの使用
 
-**Flowdecision**デザイナーは、 **[ツールボックス]** の **[フローチャート]** カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの **[ツールボックス]** タブをクリックします。 または、 **[表示]** メニューの **[ツールボックス]** を選択するか、 **ctrl** +**Alt** +**X**キーを押します。
+**Flowdecision**デザイナーは、 **[ツールボックス]** の **[フローチャート]** カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの **[ツールボックス]** タブをクリックします。 または、 **[表示]** メニューの **[ツールボックス]** を選択するか、 **ctrl**+**Alt**+**X**キーを押します。
 
 **Flowdecision**デザイナーは、 **[ツールボックス]** からドラッグして、 **Flowchart**アクティビティデザイナー内のワークフローデザイナー画面にドロップできます。 これにより、<xref:System.Activities.Statements.Flowchart> アクティビティ内で**決定**された <xref:System.Activities.Statements.FlowDecision> が作成されます。 デザイナー上にマウスポインターを置くと、2つの分岐の**True**および**False**の四角形ハンドルが表示されます。
 
 **Flowdecision**デザイナーと他のデザイナーを**フローチャート**にドラッグすると、ノードをリンクして実行の順序を指定できます。 ソースノード ( **Flowdecision**の**True**と**False**の分岐を含む) と宛先ノードの間にリンクを作成するには、ソースノードのデザイナー上にマウスポインターを移動します。 そのハンドルのどちらかをクリックし、マウス ボタンを押したまま、接続先ノードにマウス ポインターを置いたときと同じように表示されるハンドルのどちらかにドラッグします。 マウス ボタンを放すと、これら 2 つのノードの間にリンクが作成されます。このリンクは、接続元デザイナーから接続先デザイナーへの矢印で表されます。
 
-@No__t_0 を示す式は、 **[プロパティ]** ウィンドウの **[条件]** ボックスに「VB の式を入力する」というヒントテキストが表示されている場所をクリックして入力できます。
+<xref:System.Activities.Statements.FlowDecision.Condition%2A> を示す式は、 **[プロパティ]** ウィンドウの **[条件]** ボックスに「VB の式を入力する」というヒントテキストが表示されている場所をクリックして入力できます。
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision プロパティ
 
 次の表に、<xref:System.Activities.Statements.FlowDecision> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドまたはデザイナー画面で編集できます。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用状況|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|フロー制御が使用するパスを決定する条件。|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされた場合にフロー制御で使用されるパス。|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされない場合にフロー制御で使用されるパス。|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|[False]|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされた場合にフロー制御で使用されるパス。|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|[False]|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされない場合にフロー制御で使用されるパス。|
 
 ## <a name="see-also"></a>関連項目
 

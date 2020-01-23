@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461504"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115104"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>方法: ビルド イベントを指定する (Visual Basic)
 

@@ -4,17 +4,17 @@ ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cf70ad5e28286d3906b1d670303e5fdfad4cbbe2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+author: mikejo5000
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982947"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845809"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム
 
@@ -25,7 +25,7 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**要件**
+**必要条件**
 
 - Visual Studio Enterprise
 
@@ -54,7 +54,7 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | サポートされていません。 |
 | Chrome<br /><br /> Firefox | 操作手順の記録はサポートされていません。 コード化された UI テストは、Chrome および Firefox ブラウザー上で、Visual Studio 2012 Update 4 以降で再生できます。 詳細については、 [こちら](using-different-web-browsers-with-coded-ui-tests.md) を参照してください。 |
 | Opera<br /><br /> Safari | サポートされていません。 |
-| Silverlight | サポートされていません。<br /><br /> ただし、Visual Studio 2013 の場合、Visual Studio ギャラリーから [Silverlight 用 Microsoft Visual Studio 2013 のコード化された UI テスト プラグイン](https://go.microsoft.com/fwlink/?LinkId=691026) をダウンロードできます。 |
+| Silverlight | サポートされていません。<br /><br /> ただし、Visual Studio 2013 の場合、Visual Studio ギャラリーから [Silverlight 用 Microsoft Visual Studio 2013 のコード化された UI テスト プラグイン](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) をダウンロードできます。 |
 | Flash および Java | サポートされていません。 |
 | Windows フォーム 2.0 以降 | 完全にサポートされています。 **注:** NetFx コントロールは完全にサポートされていますが、一部のサードパーティ コントロールはサポートされていません。 |
 | WPF 3.5 以降 | 完全にサポートされています。<br /><br /> **メモ** NetFx コントロールは完全にサポートされていますが、一部のサードパーティ コントロールはサポートされていません。 |

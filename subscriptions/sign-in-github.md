@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: GitHub アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 6279c9399a42bc07579f48c887987b4b662da9da
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315373"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944199"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub アカウントで Visual Studio サブスクリプションにサインインする 
 
@@ -49,7 +49,7 @@ A: Xbox コンソールなど、一部の Microsoft 製品では、そのサイ�
 A: まったくありません。 GitHub パスワードが変更されることはありません。Microsoft アカウントにサインインする別の方法が与えられるだけです。 メール アドレスを使用してサインインするときは常に、Microsoft アカウントのパスワードでサインインするか、GitHub に移動してサインインするという選択肢が与えられます。 パスワードを追加する必要がある場合、GitHub アカウントのパスワードとは異なるパスワードにすることを強くお勧めします。
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>Q:GitHub を使用して作成したアカウントに認証アプリを追加することを検討しています。  それは可能ですか?
-A: 問題はありません。アプリをダウンロードし、自分のメール アドレスでサインインしてください。 メール アドレスでサインインすると、[認証アプリ](https://go.microsoft.com/fwlink/?linkid=2090219)か GitHub を資格情報として選択するように求められます。
+A: 問題はありません。アプリをダウンロードし、自分のメール アドレスでサインインしてください。 メール アドレスでサインインすると、[認証アプリ](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6)か GitHub を資格情報として選択するように求められます。
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Q:GitHub と Microsoft アカウント (MSA) の両方で 2 要素認証を有効にしたが、MSA にサインインすると、依然として 2 回の認証が求められます。  なぜでしょうか。
 A: セキュリティ上の制約により、Microsoft は GitHub によるサインインを 1 要素認証として数えます。このことは、2 要素認証を有効にしている場合でも同じです。 そのため、Microsoft アカウントのためにもう一度認証する必要があります。 

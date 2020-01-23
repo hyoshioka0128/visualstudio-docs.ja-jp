@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851488"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919252"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
 - **C# / Xamarin**。 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
 
-     デバッグ機能については、[Xamarin 開発者ガイド](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) の「 [Debugging](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) 」 (iOS) および「 [Debug on Device](https://docs.microsoft.com/xamarin/) 」で説明されています。
+     デバッグ機能については、[Xamarin 開発者ガイド](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) の「 [Debugging](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) 」 (iOS) および「 [Debug on Device](/xamarin/) 」で説明されています。
 
 - **C++ / Android**。 [Visual C for Cross-platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) テンプレートを [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) などのサード パーティ製ツールとともに使用して、Windows および Android のネイティブ アプリを作成します。
 

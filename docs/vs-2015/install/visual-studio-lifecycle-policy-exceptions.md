@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 246ffa914ba21b9b2813abca1bae063162576486
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852142"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918488"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio のライフサイクル ポリシーの例外
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio には、多数のコンパイラ、言語、ランタイム、環
 |[Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange Web サービス|  
 |[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
-|これらのコンポーネントの更新プログラムは NuGet 経由で配布され、標準的な Microsoft のライフサイクル ポリシーには従いません。  詳細については、「[http://docs.nuget.org/](https://docs.microsoft.com/nuget/)」を参照してください。|Microsoft .NET Framework 4.5 用の JSON Web トークン ハンドラー<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web 最適化フレームワーク<br /><br /> WebGrease|  
+|これらのコンポーネントの更新プログラムは NuGet 経由で配布され、標準的な Microsoft のライフサイクル ポリシーには従いません。  詳細については、「[http://docs.nuget.org/](/nuget/)」を参照してください。|Microsoft .NET Framework 4.5 用の JSON Web トークン ハンドラー<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web 最適化フレームワーク<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[オンライン サービス ポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  

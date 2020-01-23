@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239428"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944230"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity で.NET 4.x を使用する
 
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>文字列補間
 
-以前の .NET 3.5 ランタイムでは、文字列の連結に面倒な構文が必要でした。 .NET 4.x ランタイムでは、[`$` 文字列補間](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated)機能によって、より直接的で読み取り可能な構文の文字列に式を挿入することができるようになりました。
+以前の .NET 3.5 ランタイムでは、文字列の連結に面倒な構文が必要でした。 .NET 4.x ランタイムでは、[`$` 文字列補間](/dotnet/csharp/language-reference/tokens/interpolated)機能によって、より直接的で読み取り可能な構文の文字列に式を挿入することができるようになりました。
 
 ```csharp
 // .NET 3.5
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>式形式のメンバー
 
-.NET 4.x ランタイムでより新しい C# 構文が利用可能になったことにより、関数の本文を[ラムダ式](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)で置き換え、より簡潔にすることができます。
+.NET 4.x ランタイムでより新しい C# 構文が利用可能になったことにより、関数の本文を[ラムダ式](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)で置き換え、より簡潔にすることができます。
 
 ```csharp
 // .NET 3.5
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>タスク ベースの非同期パターン (TAP)
 
-[非同期プログラミング](https://docs.microsoft.com/dotnet/csharp/async)では、アプリケーションが応答しなくならないようにしながら、時間のかかる操作を行うことができます。 この機能では、時間のかかる操作の結果に依存するコードが続行される前に、その操作が終わるのを待つこともできます。 たとえば、ファイルの読み込みやネットワーク操作の完了を待つことができます。
+[非同期プログラミング](/dotnet/csharp/async)では、アプリケーションが応答しなくならないようにしながら、時間のかかる操作を行うことができます。 この機能では、時間のかかる操作の結果に依存するコードが続行される前に、その操作が終わるのを待つこともできます。 たとえば、ファイルの読み込みやネットワーク操作の完了を待つことができます。
 
-Unity では、非同期プログラミングは通常[コルーチン](https://docs.unity3d.com/Manual/Coroutines.html)で実行されます。 ただし、C# 5 以降の .NET 開発で推奨されるのは、[System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) で `async` と `await` のキーワードを使用する[タスクベースの非同期パターン (TAP)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) の方法となりました。 つまり、`async` 関数では、残りのアプリケーションのアップデートをブロックせずに、タスクの完了を `await` できます。
+Unity では、非同期プログラミングは通常[コルーチン](https://docs.unity3d.com/Manual/Coroutines.html)で実行されます。 ただし、C# 5 以降の .NET 開発で推奨されるのは、[System.Threading.Task](/dotnet/api/system.threading.tasks.task) で `async` と `await` のキーワードを使用する[タスクベースの非同期パターン (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) の方法となりました。 つまり、`async` 関数では、残りのアプリケーションのアップデートをブロックせずに、タスクの完了を `await` できます。
 
 ```csharp
 // Unity coroutine
@@ -229,7 +229,7 @@ Unity 固有のニュアンスでは、TAP は開発者が考慮すべき複雑�
 
 次に、Unity で TAP の使用を開始する場合のヒントを示します。
 
-* 待機することが期待されている非同期関数には、[`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) または [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1) の戻り値の型が必要です。
+* 待機することが期待されている非同期関数には、[`Task`](/dotnet/api/system.threading.tasks.task) または [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1) の戻り値の型が必要です。
 * タスクを戻す非同期関数には、その名前に **"Async"** のサフィックスが設定されている必要があります。 "Async" のサフィックスは、関数が常に待機している必要があることを示します。
 * 従来の同期コードから非同期関数を実行する関数には、`async void` の戻り値の型のみを使用します。 このような関数は、それだけでは待機できず、名前に "Async" のサフィックスがあるべきではありません。
 * Unity は UnitySynchronizationContext を使用し、既定でメインのスレッドで async 関数が実行されるのを保証します。 Unity の API には、メインのスレッド外ではアクセスできません。
@@ -274,7 +274,7 @@ private void RecordHighScore(string playerName)
 
 ### <a name="caller-info-attributes"></a>呼び出し元情報属性
 
-[呼び出し元情報属性](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information)では、メソッドの呼び出し元の情報を得ることができます。 呼び出し元情報属性では、使用する各パラメーターの既定値を提供する必要があります。
+[呼び出し元情報属性](/dotnet/csharp/programming-guide/concepts/caller-information)では、メソッドの呼び出し元の情報を得ることができます。 呼び出し元情報属性では、使用する各パラメーターの既定値を提供する必要があります。
 
 ```csharp
 private void Start ()
@@ -300,7 +300,7 @@ public void ShowCallerInfo(string message,
 
 ### <a name="using-static"></a>Using static
 
-[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) では、そのクラス名を入力せずに、静的な関数を使用できます。 using static では、同じクラスからのいくつかの静的な関数を使用する必要がある場合、領域と時間を節約できます。
+[Using static](/dotnet/csharp/language-reference/keywords/using-static) では、そのクラス名を入力せずに、静的な関数を使用できます。 using static では、同じクラスからのいくつかの静的な関数を使用する必要がある場合、領域と時間を節約できます。
 
 ```csharp
 // .NET 3.5
@@ -344,8 +344,8 @@ iOS などのプラットフォームにゲームをエクスポートする場�
 ## <a name="additional-resources"></a>その他の技術情報
 
 * [Unity ブログ - Unity 2018.2 でのスクリプティング ランタイムの機能強化](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
-* [C# の歴史](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
-* [C# 6 の新機能](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
-* [コルーチンおよび TAP を使用した Unity での非同期プログラミング](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
+* [C# の歴史](/dotnet/csharp/whats-new/csharp-version-history)
+* [C# 6 の新機能](/dotnet/csharp/whats-new/csharp-6)
+* [コルーチンおよび TAP を使用した Unity での非同期プログラミング](/archive/blogs/appconsult/unity-coroutine-tap-en-us)
 * [Unity 2017 でのコルーチンの代わりの Async-Await](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Unity フォーラム - 試験段階のスクリプティングのプレビュー](https://forum.unity.com/forums/experimental-scripting-previews.107/)

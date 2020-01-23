@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647834"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596048"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
@@ -107,7 +107,7 @@ Community、Professional、Enterprise という 3 つのエディションの Vi
    Visual Studio には非常に多くのメニュー、オプション、およびプロパティがあるため、手に負えないもののように思える場合があるかもしれません。 検索ボックスは、Visual Studio 内で必要な情報を迅速に見つけるのに役立ちます。 探しているものを表す名前の入力を開始すると、Visual Studio に結果がリストされ、目的の場所に正確に移動できます。 Visual Studio に機能を追加する必要がある場合 (追加のプログラミング言語に対してサポートを追加するなど)、検索ボックスの結果として、ワークロードまたは個々のコンポーネントをインストールするための Visual Studio インストーラーが開かれます。
 
    > [!TIP]
-   > 検索ボックスのショートカットとしては、**Ctrl** + **Q** キーを押します。
+   > 検索ボックスのショートカットとしては、**Ctrl**+**Q** キーを押します。
 
    ::: moniker range="vs-2017"
 
@@ -302,7 +302,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl** + **F5 キー**を押します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー**を押します。
 
    ![[デバッグ]、[デバッグなしで開始] メニューを選択](../media/overview-start-without-debugging.png)
 
@@ -369,7 +369,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl** + **F5 キー**を押します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー**を押します。
 
    ![[デバッグ]、[デバッグなしで開始] メニューを選択](media/vs-2019/start-without-debugging.png)
 
@@ -459,7 +459,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range="vs-2017"
 
-10. **Ctrl** + **F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range=">=vs-2019"
 
-10. **Ctrl** + **F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/vs-2019/overview-console-final.png)
 

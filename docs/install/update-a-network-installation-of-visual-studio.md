@@ -1,26 +1,26 @@
 ---
 title: ネットワーク ベース インストールを更新する
 description: --layout コマンドを実行して Visual Studio のネットワークベース インストールを更新する方法について説明します
-ms.date: 10/07/2019
+ms.date: 01/08/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594436"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114976"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
@@ -28,17 +28,20 @@ ms.locfileid: "75594436"
 
 ## <a name="how-to-update-a-network-layout"></a>ネットワーク レイアウトの更新方法
 
+> [!IMPORTANT]
+> これらの手順では、既にネットワーク インストール レイアウトを作成していることを前提としています。 手順の詳細については、「[Visual Studio のネットワーク インストールを作成する](create-a-network-installation-of-visual-studio.md)」ページを参照してください。
+
 最新の更新プログラムが含まれるように、ネットワーク インストールの共有を更新するには、`--layout` コマンドを実行して、更新されたパッケージの増分をダウンロードします。
 
 ::: moniker range="vs-2017"
 
-**15.3 の新機能**:最初にネットワーク レイアウトを作成したときに部分的レイアウトを選択した場合は、その設定が保存されます。 以後のレイアウト コマンドでは以前のオプションと、指定した新しいすべてのオプションが使用されます。 以前のバージョンのレイアウトを使用している場合は、コンテンツの更新時に最初にネットワーク インストール レイアウトを作成したときに使用したものと同じコマンドライン パラメーター (つまり、同じワークロードと言語) を使用してください。
+**15.3 の新機能**:[最初にネットワーク レイアウトを作成](create-a-network-installation-of-visual-studio.md)したときに部分的レイアウトを選択した場合は、その設定が保存されます。 以後のレイアウト コマンドでは以前のオプションと、指定した新しいすべてのオプションが使用されます。 以前のバージョンのレイアウトを使用している場合は、コンテンツの更新時に最初にネットワーク インストール レイアウトを作成したときに使用したものと同じコマンドライン パラメーター (つまり、同じワークロードと言語) を使用してください。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-最初にネットワーク レイアウトを作成したときに部分的レイアウトを選択した場合は、その設定が保存されます。 以後のレイアウト コマンドでは以前のオプションと、指定した新しいすべてのオプションが使用されます。
+[最初にネットワーク レイアウトを作成](create-a-network-installation-of-visual-studio.md)したときに部分的レイアウトを選択した場合は、その設定が保存されます。 以後のレイアウト コマンドでは以前のオプションと、指定した新しいすべてのオプションが使用されます。
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ ms.locfileid: "75594436"
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="how-to-deploy-an-update-to-client-machines"></a>クライアント マシンに更新を配置する方法
+## <a name="deploy-an-update-to-client-machines"></a>クライアント マシンに更新を配置する
 
 ネットワーク環境が構成される方法によって、更新プログラムをエンタープライズ管理者が配置することも、クライアント マシンから開始することもできます。
 
@@ -111,7 +114,7 @@ ms.locfileid: "75594436"
 > [!TIP]
 > 更新通知をユーザーに表示するときの制御方法の詳細については、「[Control updates to network-based Visual Studio deployments](controlling-updates-to-visual-studio-deployments.md)」 (ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する) を参照してください。
 
-## <a name="how-to-verify-a-layout"></a>レイアウトを検証する方法
+## <a name="verify-a-layout"></a>レイアウトを検証する
 
 `--verify` を使用して指定したオフライン キャッシュに対する検証を行います。 パッケージ ファイルが見つからないか、無効であるかどうかがチェックされます。 検証の最後に、見つからないファイルと無効なファイルのリストを出力します。
 
@@ -129,7 +132,7 @@ Microsoft は定期的に Visual Studio の更新プログラムを提供して�
 > [!NOTE]
 > 検証は、特定のマイナー バージョンの Visual Studio の最新のバージョンに対してのみ機能します。 新しいバージョンがリリースされるとすぐに、検証は、同じマイナー バージョンの以前の修正プログラム レベル リリースに対しては機能しなくなります。
 
-## <a name="how-to-fix-a-layout"></a>レイアウトの修正方法
+## <a name="fix-a-layout"></a>レイアウトを修正する
 
 `--fix` を使用して `--verify` と同じ検証を実行して、特定された問題の修正も試みます。 `--fix` の処理にはインターネット接続が必要なため、`--fix` を呼び出す前に、コンピューターがインターネットに接続していることを確認してください。
 
@@ -139,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 layoutDir 内の vs_enterprise.exe を呼び出すことができます。
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>以前のバージョンをレイアウトから削除する方法
+## <a name="remove-older-versions-from-a-layout"></a>以前のバージョンをレイアウトから削除する
 
 オフライン キャッシュにレイアウトの更新を実行した後、レイアウト キャッシュ フォルダーには最新の Visual Studio のインストールに不要な古いパッケージがいくつか含まれている場合があります。 `--clean` オプションを使用すると、オフライン キャッシュ フォルダーから古いパッケージを削除できます。
 
@@ -165,7 +168,13 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 このコマンドを実行すると、セットアップでオフライン キャッシュ フォルダーが分析され、削除されるファイルのリストが検索されます。 このリストで、削除されるファイルを確認し、削除を確定できます。
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+## <a name="get-support-for-your-offline-installer"></a>オフライン インストーラーのサポートを受ける
+
+オフライン インストールに問題が発生した場合は、マイクロソフトにお知らせください。 問題報告の最善の方法として、[[問題を報告する]](../ide/how-to-report-a-problem-with-visual-studio.md) ツールを使用できます。 このツールでは、テレメトリとログを送信できます。これを、マイクロソフトは問題の診断と解決に役立てます。
+
+インストール関連の問題については、[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションも用意されています。
+
+他にも利用可能なサポート オプションがあります。 一覧については、[フィードバック](../ide/feedback-options.md)に関するページをご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

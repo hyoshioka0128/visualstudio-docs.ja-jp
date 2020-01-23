@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631119"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585432"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -503,10 +503,10 @@ IntelliSense コード スニペットによって使用されるインポート
 
 ## <a name="shortcut-element"></a>Shortcut 要素
 
-スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素のテキスト値には、英数字、ハイフン (-)、およびアンダースコア (_) のみを含めることができます。
+スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素のテキスト値には、英数字、アンダースコア ( _ ) のみを含めることができます。
 
 > [!CAUTION]
-> _ と - の文字は C++ スニペットのショートカットではサポートされていません。
+> アンダースコア ( _ ) の文字は C++ スニペットのショートカットではサポートされていません。
 
 ```xml
 <Shortcut>
