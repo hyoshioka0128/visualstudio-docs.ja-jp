@@ -29,5 +29,5 @@ ms.locfileid: "72573437"
 - 対応する<strong>@end</strong>ステートメントを追加します。  
   
 ## <a name="see-also"></a>参照  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

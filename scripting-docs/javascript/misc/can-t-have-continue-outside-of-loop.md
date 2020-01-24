@@ -1,5 +1,5 @@
 ---
-title: "' Continue ' を loop の外側に設定することはできません |Microsoft Docs"
+title: "' Continue ' をループの外側に設定することはできません |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript

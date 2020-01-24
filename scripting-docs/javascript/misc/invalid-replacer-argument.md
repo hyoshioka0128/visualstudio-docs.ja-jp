@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>参照  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の   
+ [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)   
  [JSON. Parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)

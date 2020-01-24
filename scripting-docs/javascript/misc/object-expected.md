@@ -47,5 +47,5 @@ ms.locfileid: "72573733"
     ```  
   
 ## <a name="see-also"></a>参照  
- [オブジェクトオブジェクト](../../javascript/reference/object-object-javascript.md)の   
+ [オブジェクトオブジェクト](../../javascript/reference/object-object-javascript.md)   
  [オブジェクトと配列](../../javascript/objects-and-arrays-javascript.md)
