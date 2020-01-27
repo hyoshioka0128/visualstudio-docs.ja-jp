@@ -1,5 +1,5 @@
 ---
-title: 関数に有効なプロトタイプオブジェクト | がありません。Microsoft Docs
+title: 関数には、有効なプロトタイプ オブジェクトが存在しません。 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript

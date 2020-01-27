@@ -29,5 +29,5 @@ ms.locfileid: "72573716"
 - データメンバーの名前を正しく入力したことを確認します。  
   
 ## <a name="see-also"></a>参照  
- [オブジェクトオブジェクト](../../javascript/reference/object-object-javascript.md)の   
+ [object オブジェクト](../../javascript/reference/object-object-javascript.md)   
  [オブジェクトと配列](../../javascript/objects-and-arrays-javascript.md)
