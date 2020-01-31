@@ -1,5 +1,5 @@
 ---
-title: Visual Basic でビジュアライザーを記述 |Microsoft Docs
+title: Visual Basic | でビジュアライザーを記述します。Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/12/2019
 ms.topic: conceptual
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408364"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542608"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>チュートリアル: Visual Basic でビジュアライザーを記述する
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>チュートリアル : Visual Basic でビジュアライザーを記述する
 このチュートリアルでは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この単純な文字列のビジュアライザーは基本的な例で、プロジェクトに合わせて他のデータ型向けのビジュアライザーを作成するときに参考になります。
 
 > [!NOTE]
-> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
+> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
 
 ビジュアライザー コードは、デバッガーによって読み取られる DLL に配置する必要があります。 最初の手順として、DLL のクラス ライブラリ プロジェクトを作成します。
 
@@ -39,13 +39,13 @@ ms.locfileid: "63408364"
 1. 新しいクラス ライブラリ プロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「 **visual basic**、選択**テンプレート**、を選択し、**新しいクラス ライブラリ (.NET Standard)作成**. 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl キーを押しながら Q キーを押し**て検索ボックスを開き、「 **visual basic**」と入力します。次に、 **[テンプレート]** を選択し、[**新しいクラスライブラリの作成] (.NET Framework)** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 左側のウィンドウで、**新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**、選択 **.NET Standard**、中央のペインの **クラス ライブラリ (.NET標準)** します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログボックスの左ペインで、 **[Visual Basic]** の **[.NET Standard]** を選択し、中央のペインで **[クラスライブラリ (.NET Standard)]** を選択します。
     ::: moniker-end
 
-2. クラス ライブラリでは、適切な名前を入力します。 `MyFirstVisualizer`、順にクリックします**作成**または**OK**します。
+2. クラスライブラリの適切な名前 (`MyFirstVisualizer`など) を入力し、 **[作成]** または **[OK]** をクリックします。
 
    クラス ライブラリを作成したら、Microsoft.VisualStudio.DebuggerVisualizers.DLL への参照を追加することによって、この DLL で定義されているクラスを使用できるようにします。 ただし、最初にプロジェクトにわかりやすい名前を付けます。
 
@@ -56,13 +56,13 @@ ms.locfileid: "63408364"
 2. Class1.vb の名前を、DebuggerSide.vb などのわかりやすい名前に変更します。
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、新しいファイル名に合わせて DebuggerSide.vb のクラス宣言が自動的に変更されます。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、新しいファイル名に一致するように、デバッガーのクラス宣言が自動的に変更されます。
 
-3. **ソリューション エクスプローラー**で、**[My First Visualizer]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+3. **ソリューション エクスプローラー**で、 **[My First Visualizer]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-4. **参照の追加**] ダイアログ ボックス [、**参照**] タブで [**参照**Microsoft.VisualStudio.DebuggerVisualizers.DLL を見つけるとします。
+4. **[参照の追加]** ダイアログボックスの [**参照] タブで**、 **[参照]** を選択し、VisualStudio を見つけます。
 
-    DLL を検索する *\<Visual Studio インストール ディレクトリ > \Common7\IDE\PublicAssemblies* Visual Studio のインストール ディレクトリのサブディレクトリ。
+    DLL は、Visual studio のインストールディレクトリの \Common7\IDE\PublicAssemblies サブディレクトリ *> Visual Studio インストールディレクトリ\<* にあります。
 
 5. **[OK]** をクリックします。
 
@@ -90,7 +90,7 @@ ms.locfileid: "63408364"
    Inherits DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer` には、オーバーライドする必要がある抽象メソッドが 1 つ (`Show`) あります。
+   `DialogDebuggerVisualizer` には、オーバーライドする必要がある抽象メソッドが1つ `Show`あります。
 
 ### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>DialogDebuggerVisualizer.Show メソッドをオーバーライドするには
 
@@ -106,11 +106,11 @@ ms.locfileid: "63408364"
 
 ### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms を追加するには
 
-1. **ソリューション エクスプローラー**で、**[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-2. **参照の追加**] ダイアログ ボックスの [、**参照**] タブで [**参照**System.Windows.Forms.DLL を見つけてします。
+2. **[参照の追加]** ダイアログボックスの [**参照] タブで**、 **[参照]** を選択し、system.string を見つけます。
 
-    DLL を検索する*C:\Windows\Microsoft.NET\Framework\v4.0.30319*します。
+    DLL は*C:\Windows\Microsoft.NET\Framework\v4.0.30319*で見つけることができます。
 
 3. **[OK]** をクリックします。
 
@@ -168,16 +168,16 @@ ms.locfileid: "63408364"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>ソリューションにコンソール アプリケーション プロジェクトを追加するには
 
-1. ソリューション エクスプ ローラーでソリューションを右クリックし、選択**追加**、 をクリックし、**新しいプロジェクト**します。
+1. ソリューションエクスプローラーで、ソリューションを右クリックし、 **[追加]** をクリックして、 **[新しいプロジェクト]** をクリックします。
 
     ::: moniker range=">=vs-2019"
-    検索ボックスに「 **visual basic**、選択**テンプレート**、を選択し、**新しいコンソール アプリ (.NET Framework) の作成**です。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    検索ボックスに「 **visual basic**」と入力し、 **[テンプレート]** を選択します。次に、 **[新しいコンソールアプリを作成します (.NET Framework)]** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。
     ::: moniker-end
 
-2. クラス ライブラリでは、適切な名前を入力します。 `MyTestConsole`、順にクリックします**作成**または**OK**します。
+2. クラスライブラリの適切な名前 (`MyTestConsole`など) を入力し、 **[作成]** または **[OK]** をクリックします。
 
    次に、必要な参照を追加して、MyTestConsole が MyFirstVisualizer を呼び出すことができるようにします。
 
@@ -185,7 +185,7 @@ ms.locfileid: "63408364"
 
 1. **ソリューション エクスプローラー**で、**MyTestConsole** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
-2. **参照の追加** ダイアログ ボックスで、**参照** タブで、Microsoft.VisualStudio.DebuggerVisualizers をクリックします。
+2. **参照の追加** ダイアログボックスの **参照** タブで、VisualStudio ビジュアライザー をクリックします。
 
 3. **[OK]** をクリックします。
 
@@ -206,7 +206,7 @@ ms.locfileid: "63408364"
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、新しいファイル名に合わせて TestConsole.vb のクラス宣言が自動的に変更されることに注意してください。
 
-3. でテスト コンソール。 vb では、次の追加`Imports`ステートメント。
+3. TestConsole で。 vb で、次の `Imports` ステートメントを追加します。
 
    ```vb
    Imports MyFirstVisualizer
@@ -231,10 +231,10 @@ ms.locfileid: "63408364"
 
    テストは成功です。 これで、最初のビジュアライザーの作成とテストが完了しました。
 
-   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、「[方法 :ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)」を参照してください。
+   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、「[方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 - [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)
-- [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
+- [方法 : ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

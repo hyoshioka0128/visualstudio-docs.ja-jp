@@ -1,4 +1,4 @@
----
+﻿---
 title: "' return ' ステートメントが関数の外にあります |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
