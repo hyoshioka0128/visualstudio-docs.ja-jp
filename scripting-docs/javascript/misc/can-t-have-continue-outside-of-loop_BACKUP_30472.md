@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ﻿---
+title: "'continue' をループの外に設定できません |Microsoft Docs"
+||||||| merged common ancestors
+---
+title: "' Continue ' を loop の外側に設定することはできません |Microsoft Docs"
+=======
+---
 title: "' Continue ' をループの外側に設定することはできません |Microsoft Docs"
+>>>>>>> fc7e5f037bf64385520270a1df03d96c808150b8
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript

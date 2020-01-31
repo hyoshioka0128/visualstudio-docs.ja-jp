@@ -26,7 +26,7 @@ ms.locfileid: "72577280"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 'toPrecision' の引数が大きすぎるか、または小さすぎないことを確認してください。  
+- `toPrecision` の引数が大きすぎるか、または小さすぎないことを確認してください。  
   
 ## <a name="see-also"></a>関連項目  
  [toPrecision メソッド (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

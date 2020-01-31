@@ -1,4 +1,4 @@
----
+﻿---
 title: エンコードする URI は無効な文字を含んでいます。 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

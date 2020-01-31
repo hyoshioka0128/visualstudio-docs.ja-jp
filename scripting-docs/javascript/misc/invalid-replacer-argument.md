@@ -1,4 +1,4 @@
----
+﻿---
 title: 無効な置換関数 argument |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>参照  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)
+ [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)   
  [JSON. Parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)

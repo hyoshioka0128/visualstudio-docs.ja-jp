@@ -1,4 +1,4 @@
----
+﻿---
 title: "'} ' が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -29,5 +29,5 @@ ms.locfileid: "72577554"
 - 関数、ループ、ブロック、またはオブジェクト初期化子の終わりを示す右中かっこを追加します。  
   
 ## <a name="see-also"></a>参照  
- [Function オブジェクト](../../javascript/reference/function-object-javascript.md) 
+ [Function オブジェクト](../../javascript/reference/function-object-javascript.md)   
  [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)
