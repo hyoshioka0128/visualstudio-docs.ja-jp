@@ -52,6 +52,8 @@
       items:
         - name: デバッガー ウィンドウでデータを検査する
           href: debugger-windows.md
+        - name: 例外の検査
+          href: exception-helper.md
         - name: 変数の検査
           href: autos-and-locals-windows.md
         - name: ウォッチ変数
@@ -680,7 +682,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: デバッガーのセキュリティ
       href: debugger-security.md
-- name: 辞書／辞典／その他
+- name: 関連項目
   items:
     - name: デバッグ用ユーザー インターフェイス リファレンス
       items:

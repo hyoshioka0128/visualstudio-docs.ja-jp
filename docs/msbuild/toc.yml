@@ -1,4 +1,4 @@
-- name: MsBuild
+- name: MSBuild
   items:
     - name: MsBuild
       href: msbuild.md
@@ -8,7 +8,8 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild の概念
       items:
-        - name: MSBuild の概念 - 概要
+        - name: 概要
+          displayName: msbuild concepts
           href: msbuild-concepts.md
         - name: プロパティ
           items:
@@ -134,7 +135,7 @@
               href: resolving-assemblies-at-design-time.md
             - name: ターゲットとタスクの構成
               items:
-                - name: ターゲットとタスクの構成
+                - name: 概要
                   href: configuring-targets-and-tasks.md
                 - name: ターゲットとタスクを構成する
                   href: how-to-configure-targets-and-tasks.md
@@ -142,7 +143,8 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: ファイルの追跡
           items:
-            - name: ファイルの追跡 - 概要
+            - name: 概要
+              displayName: file tracking
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -168,7 +170,8 @@
           href: msbuild-best-practices.md
     - name: ログの記録
       items:
-        - name: MSBuild でのログ - 概要
+        - name: 概要
+          displayName: logging
           href: logging-in-msbuild.md
         - name: MSBuild でのビルド ログの取得
           href: obtaining-build-logs-with-msbuild.md
@@ -186,63 +189,67 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild リファレンス
       items:
-        - name: MSBuild リファレンス - 概要
+        - name: 概要
+          displayName: msbuild reference
           href: msbuild-reference.md
         - name: MSBuild プロジェクト ファイル スキーマ リファレンス
           items:
-            - name: MSBuild プロジェクト ファイル スキーマ リファレンス - 概要
+            - name: 概要
+              displayName: Project File Schema Reference
               href: msbuild-project-file-schema-reference.md
-            - name: Choose 要素 (MSBuild)
+            - name: Choose 要素
               href: choose-element-msbuild.md
-            - name: Import 要素 (MSBuild)
+            - name: Import 要素
               href: import-element-msbuild.md
             - name: ImportGroup 要素
               href: importgroup-element.md
-            - name: Item 要素 (MSBuild)
+            - name: Item 要素
               href: item-element-msbuild.md
-            - name: ItemDefinitionGroup 要素 (MSBuild)
+            - name: ItemDefinitionGroup 要素
               href: itemdefinitiongroup-element-msbuild.md
-            - name: ItemGroup 要素 (MSBuild)
+            - name: ItemGroup 要素
               href: itemgroup-element-msbuild.md
-            - name: ItemMetadata 要素 (MSBuild)
+            - name: ItemMetadata 要素
               href: itemmetadata-element-msbuild.md
-            - name: OnError 要素 (MSBuild)
+            - name: OnError 要素
               href: onerror-element-msbuild.md
-            - name: Otherwise 要素 (MSBuild)
+            - name: Otherwise 要素
               href: otherwise-element-msbuild.md
-            - name: Output 要素 (MSBuild)
+            - name: Output 要素
               href: output-element-msbuild.md
             - name: Parameter 要素
               href: parameter-element.md
             - name: ParameterGroup 要素
               href: parametergroup-element.md
-            - name: Project 要素 (MSBuild)
+            - name: Project 要素
               href: project-element-msbuild.md
-            - name: ProjectExtensions 要素 (MSBuild)
+            - name: ProjectExtensions 要素
               href: projectextensions-element-msbuild.md
-            - name: Property 要素 (MSBuild)
+            - name: Property 要素
               href: property-element-msbuild.md
-            - name: PropertyGroup 要素 (MSBuild)
+            - name: PropertyGroup 要素
               href: propertygroup-element-msbuild.md
-            - name: Sdk 要素 (MSBuild)
+            - name: Sdk 要素
               href: sdk-element-msbuild.md
-            - name: Target 要素 (MSBuild)
+            - name: Target 要素
               href: target-element-msbuild.md
-            - name: Task 要素 (MSBuild)
+            - name: Task 要素
               href: task-element-msbuild.md
-            - name: TaskBody 要素 (MSBuild)
+            - name: TaskBody 要素
               href: taskbody-element-msbuild.md
-            - name: UsingTask 要素 (MSBuild)
+            - name: UsingTask 要素
               href: usingtask-element-msbuild.md
-            - name: When 要素 (MSBuild)
+            - name: When 要素
               href: when-element-msbuild.md
         - name: タスク リファレンス
           items:
-            - name: MSBuild タスク リファレンス - 概要
+            - name: 概要
+              displayName: Task Reference
               href: msbuild-task-reference.md
-            - name: Visual C++ に固有のタスク
+            - name: C++ に固有のタスク
               items:
-                - name: Visual C++ に固有の MSBuild タスク - 概要
+                - name: 概要
+                  displayName: C++ tasks
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake タスク
                   href: bscmake-task.md
@@ -442,13 +449,15 @@
           href: msbuild-response-files.md
         - name: WPF リファレンス
           items:
-            - name: WPF MSBuild リファレンス - 概要
+            - name: 概要
+              displayName: WPF MSBuild Reference
               href: wpf-msbuild-reference.md
             - name: WPF .Targets ファイル
               href: wpf-dot-targets-files.md
             - name: WPF タスク リファレンス
               items:
-                - name: WPF MSBuild タスク リファレンス - 概要
+                - name: 概要
+                  displayName: WPF MSBuild Task Reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier タスク
                   href: fileclassifier-task.md
@@ -472,7 +481,8 @@
           href: special-characters-to-escape.md
     - name: MSBuild のプログラムでの使用
       items:
-        - name: MSBuild のプログラムでの使用
+        - name: 概要
+          displayName: Use MSBuild Programmatically
           href: msbuild-api.md
         - name: MSBuild 15 への更新
           href: updating-an-existing-application.md
