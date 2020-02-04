@@ -38,6 +38,8 @@
 - name: Visual Studio を学ぶ
   expanded: true
   items:
+    - name: プログラムを実行する
+      href: run-program.md
     - name: リポジトリからプロジェクトを開く
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: コードを作成して編集する
