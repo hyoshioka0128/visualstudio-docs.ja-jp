@@ -4,15 +4,15 @@ description: Visual Studio でツール ウィンドウを使用してアプリ�
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846940"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027304"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 
