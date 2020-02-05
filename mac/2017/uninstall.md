@@ -6,20 +6,18 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74985141"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892156"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
 Visual Studio for Mac のようなスタンドアロン アプリなど、クロスプラットフォーム アプリケーション開発が可能な Xamarin 製品がいくつかあります。
 
 このガイドを使用すると、関連するセクションに移動することで、各製品を個別にアンインストールすることができます。または、「[アンインストール スクリプト](#uninstall-script)」で示されるスクリプトを使用して、すべてをアンインストールすることができます。
-
-以前に Xamarin Studio を自分のマシンにインストールしてある場合は、以下の手順に加えて、「[Xamarin のアンインストール](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)」ガイドの手順にも従うことが必要な場合もあります。
 
 ## <a name="uninstall-script"></a>アンインストール スクリプト
 
