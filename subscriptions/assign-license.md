@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: 管理者がサブスクライバーにライセンスを割り当てる方法を説明します
-ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797374"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892182"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理者ポータルでライセンスを割り当てる
 Visual Studio サブスクリプションの管理者は、管理者ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
@@ -33,7 +33,7 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
    > [!div class="mx-imgBorder"]
    > ![ダウンロードにアクセスする](media/access-to-downloads.png)
 
-       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
+    サブスクリプションに独自の参照メモを追加する場合は、 **[Add reference]\(参照の追加\)** セクションで追加できます。
    > [!div class="mx-imgBorder"]
    > ![サブスクリプションごとに独自の参照メモを追加する](media/add-subscriber-reference-notes.png)
 
