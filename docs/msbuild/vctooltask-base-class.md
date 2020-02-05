@@ -34,7 +34,7 @@ ms.locfileid: "75591672"
 |**EnableErrorListRegex**|省略可能な **bool** 型のパラメーターです。<br/><br/>既定値は `true` です。|
 |**ErrorListRegex**|省略可能な **ITaskItem[]** パラメーターです。|
 |**ErrorListListExclusion**|省略可能な **ITaskItem[]** パラメーターです。|
-|**GenerateCommandLine**|省略可能な **string** 型のパラメーターです。<br/><br/>値 **CommandLineFormat***format* [default = CommandLineFormat.ForBuildLog] および **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] を使用します。|
+|**GenerateCommandLine**|省略可能な **string** 型のパラメーターです。<br/><br/>値 **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] および **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] を使用します。|
 |**GenerateCommandLineExceptSwitches**|省略可能な **string** 型のパラメーターです。<br/><br/>値 **string[]** *switchesToRemove*, **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog], および **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] を使用します。|
 
 ## <a name="see-also"></a>関連項目
