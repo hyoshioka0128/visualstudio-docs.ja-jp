@@ -1,7 +1,7 @@
 ---
 title: ファイアウォールまたはプロキシ サーバーの内側にインストールして使用する
 description: ファイアウォールまたはプロキシ サーバーを使用する場合に、許可リストに追加したり、開いたりすることがあるドメイン URL、ポート、プロトコルを確認します
-ms.date: 05/22/2019
+ms.date: 02/01/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 474042f88b0bee90f2bdd61298e09c5fabfa122c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114931"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027565"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -53,6 +53,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | dl.xamarin.com | パッケージのダウンロード場所を設定する |
 | xamarin-downloads.azureedge.net | Android SDK パッケージのダウンロード リストの場所 |
 | marketplace.visualstudio.com | Visual Studio 拡張機能のダウンロード場所 |
+| \*.gallerycdn.vsassets.io  | Visual Studio 拡張機能のダウンロード場所 |
 | visualstudio.microsoft.com | ドキュメントの場所 |
 | docs.microsoft.com | ドキュメントの場所 |
 | msdn.microsoft.com | ドキュメントの場所 |
@@ -76,6 +77,10 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | www\.incredibuild.com | C++ によるゲーム開発 (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | C++ によるゲーム開発 (IncrediBuild) |
 | www\.python.org | Python 開発 (Python) <br /><br />データ サイエンスと分析のアプリケーション (Python) |
+| developerservices2.apple.com | Xamarin.iOS provisioning |
+| developer.apple.com | Xamarin.iOS provisioning |
+| appstoreconnect.apple.com | Xamarin.iOS provisioning |
+| idmsa.apple.com | Xamarin.iOS provisioning |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio および Azure Services の使用
@@ -88,24 +93,24 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | - | - | - | - | - |
 | URL<br>解決 | go.microsoft.com<br><br>aka.ms | | | URL を短くするために使用されます。後で長い URL に解決されます。 |
 | スタート ページ | vsstartpage.blob.core.windows.net | | 443 | スタート ページに示される開発者向けニュースを表示するために使用されます (Visual Studio 2017 のみ) |
-| 対象の<br> 通知 <br>サービス | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | 通知のグローバル リストを、特定の種類のコンピューター/使用状況シナリオにのみ適用されるリストへとフィルター処理するために使用されます。 |
+| 対象の<br> 通知 <br>サービス | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | | 443<br><br>443 | 通知のグローバル リストを、特定の種類のコンピューター/使用状況シナリオにのみ適用されるリストへとフィルター処理するために使用されます。 |
 | 拡張子 <br>更新チェック | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | インストールした拡張機能の更新プログラムが利用可能になったときに通知を提供するために使用されます。 <br><br> サインインの場所として使用されます。 |
 | AI プロジェクト <br>統合 | az861674.vo.msecnd.net | | 443<br> | 登録されている Application Insights アカウントに使用状況データを送信する新しいプロジェクトを構成するために使用されます。 |
 | コード レンズ | codelensprodscus1su0.app.<br>codelens.visualstudio.com | | 443 | ファイルの最終更新日時、変更のタイムライン、変更が関連付けられている作業項目、作成者など、エディター内に情報を提供するために使用されます。 |
 | 実験用 <br>機能の有効化 | visualstudio-devdiv-c2s.msedge.net | | 80 | 実験用の新しい機能や機能の変更をアクティブ化するために使用されます。 |
-| 識別情報 “バッジ” <br>(ユーザー名とアバター)<br>and <br>ローミング設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | IDE でユーザーの名前とアバターを表示するために使用されます。 <br><br> あるコンピューターから別のコンピューターに設定の変更が確実にローミングするように使用されます。 |
+| 識別情報 “バッジ” <br>(ユーザー名とアバター)<br>and <br>ローミング設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | | 443 | IDE でユーザーの名前とアバターを表示するために使用されます。 <br><br> あるコンピューターから別のコンピューターに設定の変更が確実にローミングするように使用されます。 |
 | リモート設定 | az700632.vo.msecnd.net | | 443 | Visual Studio で問題を引き起こすことがわかっている拡張機能をオフにするために使用されます。 |
 | Windows ツール | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https | 443 | Windows アプリ ストアのシナリオで使用されます。 |
 | JSON スキーマ <br>探索 <br><br>JSON スキーマ <br>定義<br><br>JSON スキーマ <br>サポート <br>Azure リソース | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http<br>https<br><br>http<br><br>https | 80<br>443 <br><br> 443<br><br>443 | JSON ドキュメントの編集時にユーザーによって使用される可能性のある JSON スキーマを検出およびダウンロードするために使用されます。 <br><br>Json 用のメタ検証スキーマを取得するために使用されます。<br><br>Azure Resource Manager 展開テンプレート用の現在のスキーマを取得するために使用されます。 |
 | NPM パッケージ <br>探索 | Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443 | NPM パッケージを検索する場合に必要であり、Web プロジェクトでのクライアント側スクリプト パッケージのインストールに使用されます。 |
 | Bower パッケージ<br> アイコン<br><br>Bower パッケージ <br>search | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http<br><br>https<br>http<br>https | 80<br><br>443<br>80<br>443 | 既定の Bower パッケージ アイコンを指定します。  <br><br>Bower パッケージを検索する機能を提供します。 |
-| NuGet<br><br>NuGet パッケージ<br> 探索 | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | 署名された NuGet パッケージを確認するために使用されます。<br><br>NuGet パッケージおよびバージョンを検索するために必要です。 |
+| NuGet<br><br>NuGet パッケージ<br> 探索 | api.nuget.org <br>www.nuget.org <br>nuget.org <br>azuresearch-usnc.nuget.org <br>azuresearch-ussc.nuget.org <br>licenses.nuget.org <br>nuget.cdn.azure.cn <br>azuresearch-ea.nuget.org <br>azuresearch-sea.nuget.org <br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | 署名された NuGet パッケージを確認するために使用されます。<br><br>NuGet パッケージおよびバージョンを検索するために必要です。 |
 | GitHub リポジトリの情報 | api.github.com | https | 443 | Bower パッケージに関する追加情報を取得するために必要です。 |
 | Web リンター | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>エクスプローラー テンプレート<br>探索 <br><br>Cookiecutter <br>エクスプローラー プロジェクトの<br> 作成 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | 推奨されるフィードから、および GitHub リポジトリから、オンライン テンプレートを検出するために使用されます <br><br>Python パッケージ インデックス (PyPI) からの cookiecutter Python パッケージの 1 回限りのオンデマンド インストールを必要とする cookiecutter テンプレートからプロジェクトを作成するために使用されます。 |
 | Python パッケージ <br>探索<br><br>Python パッケージ <br>管理<br><br>新規作成 <br>Python <br> プロジェクト <br>テンプレートの使用 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | pip パッケージを検索する機能を提供します。<br><br>pip が存在しない場合に、pip を自動的にインストールするために使用されます。 <br><br>次の新しい Python プロジェクト テンプレートを cookiecutter テンプレート URL に解決するために使用されます。<br> - 分類子プロジェクト<br>- クラスタリング プロジェクト <br> - 回帰プロジェクト <br> - PyKinect を使用した PyGame <br> - Pyvot プロジェクト |
 | Office Web <br>アドイン <br> file:/// <br>検証 <br>サービス | verificationservice.osi.office.net | https | 443 | Office Web アドインのマニフェストを検証するために使用されます。 |
-| SharePoint と <br>Office アドイン | sharepoint.com | https | 443 | SharePoint および Office のアドインを SharePoint Online に発行し、テストするために使用されます。 |
+| SharePoint と <br>Office アドイン | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https | 443 | SharePoint および Office のアドインを SharePoint Online および Office 365 に発行し、テストするために使用されます |
 | ワークフロー マネージャー <br>テスト サービス<br> Host | | http | 12292 | SharePoint アドインをワークフローでテストするために自動的に作成されるファイアウォール規則です。 |
 | 自動的に収集される <br>信頼性の統計情報 <br>と、 <br>Azure SDK および SQL Tools 用の <br>その他の<br> カスタマー エクスペリエンス向上プログラム <br>(CEIP) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https | 443 | ユーザーから Microsoft に信頼性の統計情報 (クラッシュ/ハング データ) を送信するために使用されます。 Windows エラー報告を有効にした場合、実際のクラッシュ/ハング ダンプは引き続きアップロードされ、統計情報のみが抑制されます。 <br>Azure Tools SDK 拡張機能の匿名の利用状況パターン、および SQL ツールの利用状況パターンを Visual Studio に対して明らかにします。 |
 | Visual Studio <br> カスタマー エクスペリエンス <br>向上プログラム (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https | 443 | 匿名の利用状況のパターンとエラー ログを収集するために使用されます。 <br><br>UI のフリーズ問題を追跡するために使用されます。 |
@@ -124,6 +129,16 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | ジョブのコンパイル、送信、表示、診断、およびデバッグのために使用されます。ADLS ファイルを参照するために使用されます。ファイルをアップロードおよびダウンロードするために使用されます。 |
 | パッケージ サービス | [アカウント].visualstudio.com <br/> [アカウント].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 特定のビルド タスク (NuGet Tool インストーラー、Node Tool インストーラーなど) にのみ、またはフィードで公共のアップストリームを使用する場合にのみ、\*.npmjs.org、\*.nuget.org、\*.nodejs.org が必要です。 パッケージ サービスの中心的機能には、他の 3 つのドメインが必要です。 |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Azure DevOps Services と接続するために使用 |
+| 開発者コミュニティ | sendvsfeedback2.azurewebsites.net/api | https | 443 | Developer Community フィードバック ツール API を呼び出すために使用されます (個人の懸案事項、検索、投票、コメント、送信、アップロード、再開) |
+| Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https | 443 | Intellicode API を呼び出すために使用されます |
+| Live Share | \*.liveshare.vsengsaas.visualstudio.com| https | 443 | Live Share API を呼び出すために使用されます |
+| Visual Studio Online | \*.online.visualstudio.com | https | 443 | Visual Studio Online API を呼び出すために使用されます |
+| JavaScript の自動型取得 | registry.npmjs.org | https | 443 | TypeScript 型定義を使用して一般的な JavaScript ライブラリに Intellisense を提供するために使用されます |
+| Visual Studio サブスクリプションのライセンス サービス | app.vssps.visualstudio.com/apis/Licensing/ClientRights | https | 443 | オンライン アクティブ化用のライセンス |
+| デバッガー | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.commsdl.microsoft.com/download/symbols | https | 443 | 1. <br>Unix/MacOS での .NET Core デバッグ用のデバッガー ビットを SSH 経由でダウンロードするために使用されます <br><br>2. <br>リモート Windows Docker コンテナー デバッグ用のデバッガー ビットをダウンロードするために使用されます<br><br> 3. .NET Framework ソースのステッピングを有効にするために使用されます <br><br> 4. <br>(ユーザーがオプトインする場合) nuget.org シンボル サーバーに発行されたシンボルをダウンロードするために使用されます。<br><br> 5. (ユーザーがオプトインする場合) MS シンボルとバイナリをダウンロードするために使用されます。ダンプでマネージド コードをデバッグするために必要になることもあります |
+| Visual Studio Online| \*.online.visualstudio.com | https | 443 | Visual Studio Online API を呼び出すために使用されます |
+| Xamarin Android アプリの発行 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https | 443 | Google Play ストア サービスとやりとりして、Visual Studio から Xamarin Android アプリケーションを直接発行またはアップロードするために使用されます。 |
+| Azure Container Registry | *.azurecr.io | https | 443 | CICD パイプラインの構成のために、Azure でホストされているコンテナー レジストリにアクセスします |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>ネットワーク関連のエラーをトラブルシューティングする

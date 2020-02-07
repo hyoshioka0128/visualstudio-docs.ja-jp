@@ -1,29 +1,31 @@
 ---
-title: Visual Studio デバッガーを使用した C++ のデバッグについて理解する
+title: 'チュートリアル: C++ コードをデバッグする'
 description: Visual Studio デバッガーを起動し、コードをステップ実行し、データを検査する方法について説明します。
-ms.custom: debug-experiment
-ms.date: 08/01/2018
+ms.custom: debug-experiment, seodec18, get-started
+ms.date: 02/04/2020
+ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
 - C++
 helpviewer_keywords:
 - debugger
-ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070cbcc79a79aea16e37f17ea775ce7838b41d59
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179811"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027379"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル:Visual Studio を使用した C++ のデバッグについて理解する
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した C++ のデバッグについて理解する
 
 この記事では、ステップ バイ ステップのチュートリアルで Visual Studio デバッガーの機能を紹介します。 デバッガー機能の概要を確認したい場合は、「[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)」を参照してください。 "*ご自分のアプリをデバッグする*" 場合、通常、それはデバッガーをアタッチした状態でご自分のアプリケーションを実行することを意味します。 これを行う場合、デバッガーには、ご自分のコードが実行されている間にそのコードによって何が行われているのかを確認するためのさまざまな方法が用意されています。 ご自分のコードをステップ実行して変数内に格納されている値を確認したり、変数に対してウォッチ式を設定して値が変わるタイミングを確認したり、コードの実行パスを調べたり、コードの分岐が実行されているかどうかを確認したりできます。 コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に[超初心者向けのデバッグ方法](../debugger/debugging-absolute-beginners.md)に関するページを参照することをお勧めします。
+
+デモ アプリは C++ ですが、ほとんどの機能は C#、Visual Basic、F#、Python、JavaScript、および Visual Studio でサポートされているその他の言語にも適用されます (F# ではエディット コンティニュはサポートされていません。 F# および JavaScript は、 **[自動変数]** ウィンドウをサポートしていません)。 スクリーン ショットは C++ になっています。
 
 このチュートリアルでは、次の作業を行います。
 
@@ -46,272 +48,250 @@ Visual Studio 2017 および **C++ によるデスクトップ開発**ワーク�
 
 ::: moniker-end
 
-Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads)  ページに移動し、無料試用版をインストールしてください。
+::: moniker range="vs-2017"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
 
 Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、 **[変更]** の順に選択します。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio を開きます。
+まず、C++ コンソール プロジェクトを作成します。 このプロジェクトの種類には、必要となるすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
-    ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**c++** 」と入力し、 **[テンプレート]** 、 **[新しいコンソール アプリ プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**get-started-debugging** のような名前を入力して、 **[作成]** をクリックします。
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、 **[Visual C++]** の下にある **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、 **[OK]** をクリックします。
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動して、Visual Studio インストーラーを開きます。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、 **[変更]** の順に選択します。
+1. Visual Studio 2017 を開きます。
 
-    Visual Studio によってプロジェクトが作成されます。
+2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. *get-started-debugging.cpp* 内で、以下のコード
+3. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C++]** を展開し、 **[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows コンソール アプリケーション]** を選択します。 次に、プロジェクトに *get-started-debugging* という名前を指定します。
 
-    ```c++
-    int main()
-    {
-        return 0;
-    }
-    ```
+     **[コンソール アプリ]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。
 
-    を、次のコードで置換します。
+     Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
 
-    ```c++
-    #include "pch.h"
+::: moniker-end
 
+::: moniker range="vs-2019"
+
+1. Visual Studio 2019 を開きます。
+
+   スタート ウィンドウが開いていない場合は、 **[ファイル]** > **[スタート ウィンドウ]** の順に選択します。
+
+1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語の一覧から **[C++]** を選択し、プラットフォームの一覧から **[Windows]** を選択します。 
+
+   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
+
+   ![コンソール アプリ用の C++ テンプレートを選択する](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
+
+   > [!NOTE]
+   > **[コンソール アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[C++ によるデスクトップ開発]** ワークロードを選択します。
+
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*get-started-debugging*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
+
+::: moniker-end
+
+## <a name="create-the-application"></a>アプリケーションを作成する
+
+1. *get-started-debugging.cpp* で、既定のコードのすべてを次のコードに置き換えます。
+
+    ```cpp
     #include <string>
     #include <vector>
     #include <iostream>
 
-    class Shape
+    void SendMessage(const std::wstring& name, int msg)
     {
-        int privateX = 0;
-        int privateY = 0;
-        int privateHeight = 0;
-        int privateWidth = 0;
-
-        int getX() const { return privateX; }
-        void setX(int value) { privateX = value; }
-
-        int getY() const { return privateY; }
-        void setY(int value) { privateY = value; }
-
-        int getHeight() const { return privateHeight; }
-        void setHeight(int value) { privateHeight = value; }
-
-        int getWidth() const { return privateWidth; }
-        void setWidth(int value) { privateWidth = value; }
-
-        public:
-        // Virtual method
-        virtual void Draw()
-        {
-            std::wcout << L"Performing base class drawing tasks" << std::endl;
-        }
-    };
-
-    class Circle : public Shape
-    {
-        public:
-        void Draw() override
-        {
-        // Code to draw a circle...
-        std::wcout << L"Drawing a circle" << std::endl;
-        Shape::Draw();
-        }
-    };
-
-    class Rectangle : public Shape
-    {
-        public:
-        void Draw() override
-        {
-        // Code to draw a rectangle...
-        std::wcout << L"Drawing a rectangle" << std::endl;
-        Shape::Draw();
-        }
-    };
-
-    class Triangle : public Shape
-    {
-        public:
-        void Draw() override
-        {
-        // Code to draw a triangle...
-        std::wcout << L"Drawing a trangle" << std::endl;
-        Shape::Draw();
-        }
-    };
-
-    int main(std::vector<std::wstring> &args)
-    {
-        auto shapes = std::vector<Shape*>
-        {
-            new Rectangle(),
-            new Triangle(),
-            new Circle()
-        };
-
-        for (auto shape : shapes)
-        {
-            shape->Draw();
-        }
+        std::wcout << L"Hello, " << name << L"! Count to " << msg << std::endl;
     }
 
-    /* Output:
-    Drawing a rectangle
-    Performing base class drawing tasks
-    Drawing a triangle
-    Performing base class drawing tasks
-    Drawing a circle
-    Performing base class drawing tasks
-    */
+    int main()
+    {
+        std::vector<wchar_t> letters = { L'f', L'r', L'e', L'd', L' ', L's', L'm', L'i', L't', L'h' };
+        std::wstring name = L"";
+        std::vector<int> a(10);
+        std::wstring key = L"";
+
+        for (int i = 0; i < letters.size(); i++)
+        {
+            name += letters[i];
+            a[i] = i + 1;
+            SendMessage(name, a[i]);
+        }
+        std::wcin >> key;
+        return 0;
+    }
     ```
 
 ## <a name="start-the-debugger"></a>デバッガーを起動する
 
-1. **F5** キーを押す ( **[デバッグ] > [デバッグの開始]** ) か、またはデバッグ ツールバーの **[デバッグの開始]** ボタン![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始")を選択します。
+1. **F5** キー ( **[デバッグ] > [デバッグの開始]** ) を押すか、デバッグ ツールバーの **[デバッグの開始]** ボタン ![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始") を押します。
 
      **F5** キーを押すと、デバッガーがアプリ プロセスにアタッチされた状態でアプリが起動されますが、現時点で、コードを調べるために特別なことは何も行っていません。 したがって、アプリが読み込まれたにすぎず、コンソール出力が表示されます。
 
-    ```
-    Drawing a rectangle
-    Performing base class drawing tasks
-    Drawing a triangle
-    Performing base class drawing tasks
-    Drawing a circle
-    Performing base class drawing tasks
+    ```cmd
+    Hello, f! Count to 1
+    Hello, fr! Count to 2
+    Hello, fre! Count to 3
+    Hello, fred! Count to 4
+    Hello, fred ! Count to 5
+    Hello, fred s! Count to 6
+    Hello, fred sm! Count to 7
+    Hello, fred smi! Count to 8
+    Hello, fred smit! Count to 9
+    Hello, fred smith! Count to 10
     ```
 
      このチュートリアルでは、デバッガーを使用してこのアプリを詳しく見て行くと共に、デバッガーの機能についても説明します。
 
-2. 赤色の停止![デバッグの停止](../debugger/media/dbg-tour-stop-debugging.png "デバッグの停止")ボタンを押して、デバッガーを停止します。
+2. 赤色の停止![ デバッグの停止 ](../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします")ボタンを押して、デバッガーを停止します (**Shift** + **F5** キー)。
+
+3. コンソール ウィンドウで、任意のキーを押し、**Enter** キーを押してコンソール ウィンドウを閉じます。
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>ブレークポイントを設定し、デバッガーを開始する
 
 1. `main` 関数の `for` ループ内で、ブレークポイントを設定します。そのためには、次のコード行の左余白をクリックします。
 
-    `shape->Draw()`
+    `name += letters[i];`
 
-    ブレークポイントを設定した場所に赤い円が表示されます。
+    ブレークポイントを設定した場所に赤い円![ ブレークポイント ](../debugger/media/dbg-breakpoint.png "ブレークポイント")が表示されます。
 
-    ブレークポイントは、信頼できるデバッグの最も基本的で重要な機能です。 ブレークポイントは、Visual Studio が実行コードを中断する場所を示します。これにより、変数の値またはメモリの動作を確認したり、コードの分岐が実行されるかどうかを確認したりすることができます。
+    ブレークポイントは、信頼できるデバッグの最も基本的で重要な機能の 1 つです。 ブレークポイントは、Visual Studio が実行コードを中断する場所を示します。これにより、変数の値またはメモリの動作を確認したり、コードの分岐が実行されるかどうかを確認したりすることができます。
 
-2. **F5** キーを押すか、または **[デバッグの開始]** ボタン ![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始" をクリックします。アプリが起動され、デバッガーが実行されてブレークポイントを設定したコード行まで進みます。
+2. **F5** キーを押すか、 **[デバッグの開始]** ボタン ![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始") を押します。アプリが起動され、ブレークポイントを設定したコード行までデバッガーが実行されます。
 
-    ![ブレークポイントを設定してそこにヒットする](../debugger/media/get-started-set-breakpoint-cpp.gif)
+    ![ブレークポイントを設定してそこにヒットする](../debugger/media/get-started-set-breakpoint-cpp.png)
 
     黄色の矢印はデバッガーが一時停止しているステートメントを表します。デバッガーの一時停止によってアプリの実行も同じポイントで中断されます (このステートメントはまだ実行されていません)。
 
      アプリがまだ実行されていない場合、**F5** キーを押すとデバッガーが起動し、最初のブレークポイントで停止します。 それ以外の場合、**F5** キーを押すと、アプリの実行が続行され、次のブレークポイントまで進みます。
 
-    ブレークポイントは、詳細に調べたいコード行またはコード セクションがわかっている場合に便利な機能です。
+    ブレークポイントは、詳細に調べたいコード行またはコード セクションがわかっている場合に便利な機能です。 条件付きブレークポイントなど、設定できるさまざまな種類のブレークポイントについては、[ブレークポイントの使用](../debugger/using-breakpoints.md)に関するページを参照してください。
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>ステップ コマンドを使用してデバッガーでコード内を移動する
 
 ほとんどの場合、ここではキーボード ショートカットを使用します。それはデバッガーでご自分のアプリをすばやく実行するのに便利な方法だからです (コマンド メニューなどの対応するコマンドはかっこ内に示します)。
 
-1. `main` 関数内の `shape->Draw` メソッド呼び出しで一時停止している間に、**F11** キーを押して (または **[デバッグ] > [ステップ イン]** の順に選択して)、`Rectangle` クラスのコードに進みます。
+1. `main` メソッド内の `for` ループで一時停止している間に、**F11** キーを 2 度押して (または **[デバッグ] > [ステップ イン]** の順に選択して)、`SendMessage` メソッド呼び出しに進みます。
 
-     ![F11 キーを使用して、コードにステップ インする](../debugger/media/get-started-f11-cpp.png "F11 キーによるステップ イン")
+     **F11** キーを 2 回押したら、次のコード行が表示されるはずです。
+
+     `SendMessage(name, a[i]);`
+
+1. **F11** キーをもう一度押して `SendMessage` メソッドにステップインします。
+
+     黄色のポインターが `SendMessage` メソッドに進みます。
+
+     ![F11 キーを使用してコードにステップ インする](../debugger/media/get-started-f11-cpp.png "F10 ステップ イン")
 
      F11 キーは **[ステップ イン]** コマンドであり、アプリの実行が一度に 1 ステートメント進められます。 F11 キーは実行フローを最も詳しく確認することができる便利な方法です。 (他にコード内をより速く移動するためのオプションについても紹介します)既定では、非ユーザー コードはデバッガーによってスキップされます (詳細については、[マイ コードのみ](../debugger/just-my-code.md)に関するページを参照)。
 
-2. `Shape::Draw` メソッド呼び出し上でデバッガーが停止するまで数回 **F10** キーを押し (または **[デバッグ] > [ステップ オーバー]** の順に選択し)、次にもう一度 **F10** キーを押します。
-
-     ![F10 キーを使用してコードをステップ オーバーする](../debugger/media/get-started-step-over-cpp.png "F10 キーによるステップ オーバー")
-
-     今回は、デバッガーが基本クラス (`Shape`) の `Draw` メソッドにステップ インしていないことに注目してください。 **F10** キーを押すと、ご利用のアプリのコード内の関数またはメソッドにステップ インすることなく、デバッガーが進められます (コードはまだ実行されています)。 `Shape::Draw` メソッド呼び出し上で F10 キーを押すことによって (**F11** キーではなく)、基底クラスで `Draw` 用の実装コードをスキップしました (現時点で関係ないと思われるため)。
-
-## <a name="navigate-code-using-run-to-click"></a>[クリックで実行] を使用してコード内を移動する
-
-1. コード エディター内で下方にスクロールして `Triangle` クラス内の `std::cout` にカーソルを合わせ、それによって左側に緑色の **[クリックで実行]** ボタン![クリックで実行](../debugger/media/dbg-tour-run-to-click.png "クリックで実行")が表示されるのを確認します。
-
-     ![[クリックで実行] 機能を使用する](../debugger/media/get-started-run-to-click-cpp.png "[クリックで実行]")
-
-   > [!NOTE]
-   > **[クリックで実行]** ボタンは [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] の新機能です。 緑色の矢印ボタンが表示されない場合、この例では代わりに **F11** キーを使用してデバッガーを適切な場所まで進めます。
-
-2. **[クリックで実行]** ボタン![クリックで実行](../debugger/media/dbg-tour-run-to-click.png "クリックで実行")をクリックします。
-
-    このボタンを使用することは、一時的なブレークポイントを設定することに似ています。 **[クリックで実行]** はアプリ コードの表示領域内をすばやく移動するのに便利です (開いている任意のファイル内でクリックすることができます)。
-
-    デバッガーは `Triangle` クラスの `std::cout` メソッド実装に進みます。
-
-    一時停止したところで、入力ミスがあることに気づきました。 出力 "Drawing a trangle" にはスペルの誤りがあります。 デバッガーでアプリを実行しながら、ここでスペルミスを修正することができます。
-
-## <a name="edit-code-and-continue-debugging"></a>コードを編集してデバッグを続行する
-
-1. "Drawing a trangle" 内をクリックし、"trangle" を "triangle" に変更するという修正を加えます。
-
-1. もう 1 回 **F11** キーを押すと、コードが再コンパイルされているというメッセージが表示され、デバッガーが再び進められます。
-
-    > [!NOTE]
-    > デバッガー内で編集するコードの種類によっては、警告メッセージが表示される場合があります。 一部のシナリオでは、続行する前にコードを再コンパイルする必要があります。
-
-## <a name="step-out"></a>ステップ アウト
-
-たとえば、`Triangle` クラス内の `Draw` メソッドの確認を終了しました。そこで、この関数からは抜け出したいけれども、デバッガーには留まっていたいとします。 これを行うには、 **[ステップ アウト]** コマンドを使用します。
+     たとえば、`SendMessage` メソッドの確認を終了しました。そこで、このメソッドからは抜け出したいけれども、デバッガーには留まっていたいとします。 これを行うには、 **[ステップ アウト]** コマンドを使用します。
 
 1. **Shift** + **F11** キーを押します (または **[デバッグ] > [ステップ アウト]** の順に選択します)。
 
-     このコマンドを使用すると、アプリの実行が再開され (そしてデバッガーが前へ進められ)、現在の関数から制御が戻るまで続けられます。
+     このコマンドを使用すると、アプリの実行が再開され (そしてデバッガーが前へ進められ)、現在のメソッドまたは関数から制御が戻るまで続けられます。
 
-     `main` メソッド内の `for` ループに戻る必要があります。
+     `SendMessage` メソッド呼び出しで一時停止している、`main` メソッド内の `for` ループに戻る必要があります。
+
+1. `SendMessage` メソッドの呼び出しに再び戻るまで、**F11** キーを何度か押します。
+
+1. メソッドの呼び出しで一時停止している間に、一度、**F10** キーを押します (または、 **[デバッグ] > [ステップ オーバー]** を選択します)。
+
+     ![F10 キーを使用してコードをステップ オーバーする](../debugger/media/get-started-step-over-cpp.png "F10 ステップ オーバー")
+
+     今回は、デバッガーが `SendMessage` メソッドにステップ インしていないことに注目してください。 **F10** キーを押すと、ご利用のアプリのコード内の関数またはメソッドにステップ インすることなく、デバッガーが進められます (コードはまだ実行されています)。 `SendMessage` メソッド呼び出し上で (**F11** キーではなく) **F10** キーを押して、`SendMessage` 用の実装コードをスキップしました (現時点で関係ないと思われるため)。 ご利用のコード内を移動するさまざまな方法の詳細については、[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)に関するページを参照してください。
+
+## <a name="navigate-code-using-run-to-click"></a>[クリックで実行] を使用してコード内を移動する
+
+1. **F5** キーを押して、ブレークポイントに進みます。
+
+1. コード エディター内で下方にスクロールして `SendMessage` メソッド内の `std::wcout` 関数にカーソルを合わせ、それによって左側に緑色の **[クリックで実行]** ボタン ![クリックで実行](../debugger/media/dbg-tour-run-to-click.png "RunToClick") が表示されるのを確認します。 ボタンのヒントには、[ここまで実行します] と表示されます。
+
+     ![[クリックで実行] 機能を使用する](../debugger/media/get-started-run-to-click-cpp.png "[Run To Click (クリックで実行)]")
+
+   > [!NOTE]
+   > **[クリックで実行]** ボタンは [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] の新機能です。 (緑色の矢印ボタンが表示されない場合、この例では代わりに **F11** キーを使用してデバッガーを適切な場所まで進めます。)
+
+2. **[クリックで実行]** ボタン ![クリックで実行](../debugger/media/dbg-tour-run-to-click.png "RunToClick") をクリックします。
+
+    デバッガーが `std::wcout` 関数に進みます。
+
+    このボタンを使用することは、一時的なブレークポイントを設定することに似ています。 **[クリックで実行]** はアプリ コードの表示領域内をすばやく移動するのに便利です (開いている任意のファイル内でクリックすることができます)。
 
 ## <a name="restart-your-app-quickly"></a>アプリを簡単に再起動する
 
-デバッグ ツールバーにある **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックします (**Ctrl** + **Shift** + **F5**)。
+[デバッグ] ツール バーの **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックします (**Ctrl** + **Shift** + **F5** キー)。
 
 **[再起動]** を押すと、アプリを停止してからデバッガーを再起動する場合と比較して時間の節約になります。 デバッガーは、コードを実行すると最初にヒットするブレークポイントで一時停止します。
 
-`shape->Draw()` メソッド上で設定したブレークポイントでデバッガーが再び停止します。
+デバッガーは、前に `for` ループ内に設定したブレークポイントで再び停止します。
 
 ## <a name="inspect-variables-with-data-tips"></a>データ ヒントを使用して変数を確認する
 
 変数を調べることができる機能は、デバッガーの機能の中でも最も便利な機能の 1 つに挙げられ、それを行うにはさまざまな方法を利用できます。 多くの場合、問題のデバッグを試みるときは、特定のタイミングで変数に期待する値がそのとおりに変数に格納されているかどうかの確認を試みます。
 
-1. `shape->Draw()` メソッド上で一時停止しているときに、`shapes` コンテナー (ベクター オブジェクト) にカーソルを合わせます。すると、そのプロパティの既定値 (`size` プロパティ) に `size=3` が示されます。
+1. `name += letters[i]` ステートメントで一時停止しているときに、`letters` 変数にカーソルを合わせます。その既定値 `size={10}` が表示されます。
 
-1. `shapes` オブジェクトを展開してそのプロパティをすべて表示します。たとえば、メモリ アドレスが含まれる配列 `[0]` の最初のインデックスなどが表示されます。
+1. `letters` 変数を展開してそのプロパティを表示します。これには変数が含むすべての要素が入っています。
 
-    さらにオブジェクトを展開することで、プロパティを表示することができます。
+1. 次に、`name` 変数にカーソルを合わせると、その現在の値である空の文字列が表示されます。
 
-1. 四角形の `privateHeight` プロパティを表示するには、最初のインデックス `[0]` を展開します。
+1. 数回、**F5** キー (または **[デバッグ]**  >  **[続行]** ) を押して、`for` ループを数回繰り返します。ブレークポイントで再び一時停止したら、`name` 変数にカーソルを合わせて毎回値を確認します。
 
      ![データ ヒントを表示する](../debugger/media/get-started-data-tip-cpp.png "データ ヒントを表示する")
 
-     多くの場合、デバッグを行うとき、オブジェクト上でプロパティ値を簡単に確認できると便利です。データ ヒントはお勧めの手法です。
+     変数の値は、`for` ループが繰り返されるたびに変化し、表示される値は、`f`、次は `fr`、その次は `fre` という具合になります。
+
+     デバッグ時に、変数のプロパティ値に期待どおりの値が格納されているかどうかをすばやく確認したい場合がよくあります。データ ヒントはそれを行うのに適した方法です。
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>[自動変数] ウィンドウと [ローカル] ウィンドウを使用して変数を確認する
 
 1. コード エディターの下部にある **[自動変数]** ウィンドウを見てください。
 
-     ![[自動変数] ウィンドウで変数を確認する](../debugger/media/get-started-autos-window-cpp.png "[自動変数] ウィンドウ")
+    ウィンドウが閉じている場合は、デバッガーが一時停止している間に、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[自動変数]** の順に選択します。
 
-    **[自動変数]** ウィンドウには、変数とその現在の値が表示されます。 C++ の場合、 **[自動変数]** ウィンドウには、先行する 3 行のコードに含まれている変数が表示されます。
+    **[自動変数]** ウィンドウには、変数とその現在の値が表示されます。 **[自動変数]** ウィンドウには、現在の行または前の行で使用されるすべての変数が表示されます (言語固有の動作についてはドキュメントを参照してください)。
 
-2. 次に、 **[自動変数]** ウィンドウの隣にあるタブ内の **[ローカル]** ウィンドウを見てください。
+1. 次に、 **[自動変数]** ウィンドウの隣にあるタブ内の **[ローカル]** ウィンドウを見てください。
 
-    **[ローカル]** ウィンドウを確認すれば、現在の[スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在のコードの実行コンテキスト) に含まれている変数がわかります。
+1. `letters` 変数を展開して、それに含まれている要素を表示します。
+
+     ![[ローカル] ウィンドウでの変数の検査](../debugger/media/get-started-locals-window-cpp.png "ローカル ウィンドウ")
+
+    **[ローカル]** ウィンドウを確認すれば、現在の[スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
 
 ## <a name="set-a-watch"></a>ウォッチ式を設定する
 
-1. メインのコード エディター ウィンドウで、`shapes` オブジェクトを右クリックして、 **[ウォッチ式の追加]** を選択します。
+1. メインのコード エディター ウィンドウで、`name` 変数を右クリックして、 **[ウォッチ式の追加]** を選択します。
 
     コード エディターの下部に **[ウォッチ]** ウィンドウが表示されます。 **[ウォッチ]** ウィンドウを使用することで、監視する変数 (または式) を指定できます。
 
-    `shapes` オブジェクトに対してウォッチ式が設定されたので、デバッガー内を移動しながらその値の変化を確認することができます。 その他の変数ウィンドウとは異なり、 **[ウォッチ]** ウィンドウには監視対象の変数が常に表示されます (対象外のときは淡色表示となります)。
+    これで、`name` 変数に対してウォッチ式が設定されたので、デバッガー内を移動しながらその値の変化を確認することができます。 その他の変数ウィンドウとは異なり、 **[ウォッチ]** ウィンドウには監視対象の変数が常に表示されます (対象外のときは淡色表示となります)。
 
 ## <a name="examine-the-call-stack"></a>呼び出し履歴を調べる
 
 1. `for` ループ内で一時停止しているときに、 **[呼び出し履歴]** ウィンドウをクリックします。このウィンドウは既定では右下ペイン内に表示されます。
 
-2. コード エディター内でデバッガーが `Rectangle` クラスの `Shape::Draw` メソッド内で一時停止するのを確認できるまで、**F11** キーを数回押します。 **[呼び出し履歴]** ウィンドウを見てください。
+    ウィンドウが閉じている場合は、デバッガーが一時停止している間に、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[呼び出し履歴]** の順に選択します。
+
+2. デバッガーが `SendMessage` メソッド内で一時停止するのを確認できるまで、**F11** キーを数回押します。 **[呼び出し履歴]** ウィンドウを見てください。
 
     ![呼び出し履歴を調べる](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
 
-    **[呼び出し履歴]** ウィンドウには、メソッドおよび関数が呼び出されている順番が表示されます。 先頭行には、現在の関数が表示されます (この例の `Rectangle::Draw` メソッド)。 2 行目には、`Rectangle::Draw` が `main` 関数から呼び出されたことが表示されます。3 行目以降にも同様の内容が表示されます。
+    **[呼び出し履歴]** ウィンドウには、メソッドおよび関数が呼び出されている順番が表示されます。 先頭行には、現在の関数が表示されます (このアプリでは `SendMessage` メソッド)。 2 行目には、`SendMessage` が `main` メソッドから呼び出されたことが表示され、後もこのような具合に表示されます。
 
    > [!NOTE]
    > **[呼び出し履歴]** ウィンドウは、Eclipse のような一部の IDE におけるデバッグ パースペクティブに似ています。
@@ -320,15 +300,17 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
     コード行をダブルクリックすることで、ソース コードに移動できます。また、それによって、デバッガーで検査されている現在のスコープを変更することもできます。 このアクションを行っても、デバッガーは前に進みません。
 
-    **[呼び出し履歴]** ウィンドウから右クリック メニューを使用して他の操作を行うこともできます。 たとえば、指定した関数にブレークポイントを挿入したり、 **[カーソル行の前まで実行]** を使用してデバッガーを進めたり、ソース コードの調査を開始したりできます。 詳細については、「[方法 :呼び出し履歴を調べる](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。
+    **[呼び出し履歴]** ウィンドウから右クリック メニューを使用して他の操作を行うこともできます。 たとえば、指定した関数にブレークポイントを挿入したり、 **[カーソル行の前まで実行]** を使用してデバッガーを進めたり、ソース コードの調査を開始したりできます。 詳細については、[呼び出し履歴を調べる](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。
 
 ## <a name="change-the-execution-flow"></a>実行フローを変更する
 
-1. `Shape::Draw` メソッド呼び出し内でデバッガーが一時停止した状態で、マウスを使用して左側にある黄色の矢印 (実行ポインター) をつかみ、その黄色の矢印を 1 行上にある `std::cout` メソッド呼び出しまで移動します。
+1. **F11** キーを 2 回押して、`std::wcout` 関数を実行します。
+
+1. `SendMessage` メソッド呼び出し内でデバッガーが一時停止した状態で、マウスを使用して左側にある黄色の矢印 (実行ポインター) をつかみ、その黄色の矢印を 1 行上に移動して、`std::wcout` に戻ります。
 
 1. **F11** キーを押します。
 
-    デバッガーにより `std::cout` メソッドが返されます (これはコンソール ウィンドウの出力に表示されます)。
+    デバッガーにより `std::wcout` 関数が返されます (これはコンソール ウィンドウの出力に表示されます)。
 
     実行フローを変更することにより、さまざまなコード実行パスをテストしたり、デバッガーを再起動することなくコードを再実行したりできます。
 
@@ -345,3 +327,4 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 > [!div class="nextstepaction"]
 > [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
+

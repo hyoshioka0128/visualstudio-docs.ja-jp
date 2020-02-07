@@ -11,23 +11,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e93e7d30a194df70260ef010b81c3026299f8565
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595060"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923320"
 ---
 # <a name="msbuild"></a>MSBuild
+
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
 
  Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj*、*vbproj*、*vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
 
  C++ に対する MSBuild の詳細については、「[MSBuild (C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
 
- 次の例では、Visual Studio IDE の代わりに、MSBuild コマンド ラインでビルドを実行する状況について説明します。
+ 次の例では、Visual Studio IDE ではなくコマンド ラインから MSBuild を呼び出してビルドを実行する状況について説明します。
 
-- Visual Studio 2013 がインストールされていません。 ([Visual Studio なしの MSBuild をダウンロードする](https://visualstudio.microsoft.com/downloads/?q=build+tools))
+- Visual Studio 2013 がインストールされていません。 ([Visual Studio なしの MSBuild をダウンロードする](https://visualstudio.microsoft.com/downloads/?q=build+tools))。
 
 - MSBuild の 64 ビット バージョンを使用することを希望しています。 通常は MSBuild のこのバージョンは不要ですが、このバージョンを使用すると、MSBuild はより多くのメモリにアクセスできます。
 
@@ -43,12 +44,12 @@ ms.locfileid: "75595060"
 
   - 後処理手順を実行します。 たとえば、1 つのアセンブリに対して、異なる複数のバージョンをスタンプとして割り当てることがあります。
 
-Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、単一の MSBuild コマンド ラインを使用して、複数の開発者から取得して統合したコードをビルドすることもできます。
+Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、コマンド ラインから MSBuild を実行して、複数の開発者から取得して統合したコードをビルドすることもできます。 また、MSBuild を使用する [.NET Core コマンドライン インターフェイス (CLI)](/dotnet/core/tools/) を使用して、.NET Core プロジェクトをビルドすることもできます。
 
 > [!NOTE]
-> Team Foundation ビルドを使用して、アプリケーションのコンパイル、テスト、および配置を自動的に実行することもできます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Team Foundation ビルドは、MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+> Azure Pipelines を使用して、アプリケーションを自動的にコンパイル、テスト、および配置することができます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Azure Pipelines では MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
 
- ここでは、MSBuild の概要について説明します。 入門チュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
+この記事では、MSBuild の概要について説明します。 入門チュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>コマンド プロンプトでの MSBuild の使用
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] をコマンド プロンプトで実行するには、*MSBuild.exe* にプロジェクト ファイルを渡し、適切なコマンド ライン オプションを指定して実行します。 コマンド ライン オプションでは、プロパティを設定したり、特定のターゲットを実行したりできるほか、ビルド処理を制御するその他のオプションも設定できます。 たとえば、`Configuration` プロパティを `Debug` に設定して *MyProj.proj* ファイルをビルドするには、次のコマンド ライン構文を使用します。
@@ -116,7 +117,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  タスクの実行ロジックはマネージド コードで記述され、[UsingTask](../msbuild/usingtask-element-msbuild.md) 要素を使用して [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にマップされます。 <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するマネージド型を記述することにより、独自のタスクを作成できます。 タスクを記述する方法の詳細については、「[タスクの作成](../msbuild/task-writing.md)」をご覧ください。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、実際の要件に合わせて変更できる一般的なタスクが含まれています。  例は、ファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、Visual C# ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などです。 使用可能なタスクと使用法については、「[タスク リファレンス](../msbuild/msbuild-task-reference.md)」をご覧ください。
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、実際の要件に合わせて変更できる一般的なタスクが含まれています。 例は、ファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、Visual C# ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などです。 使用可能なタスクと使用法については、「[タスク リファレンス](../msbuild/msbuild-task-reference.md)」をご覧ください。
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルでタスクを実行するには、タスク名を名前に持つ要素を [Target](../msbuild/target-element-msbuild.md) 要素の子として作成します。 一般に、タスクは、要素の属性として渡されるパラメーターを受け取ります。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のプロパティと項目の両方をパラメーターとして使用できます。 たとえば、次のコードでは、[MakeDir](../msbuild/makedir-task.md) タスクを呼び出し、先ほどの例で宣言した `BuildDir` プロパティの値を渡しています。
 
@@ -183,6 +184,8 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | MSBuild に関する詳細な情報を提供するコミュニティやサポートのリソースを紹介します。 |
 
 ## <a name="reference"></a>関連項目
-- [MSBuild リファレンス](../msbuild/msbuild-reference.md) リファレンス情報を示すトピックへのリンクを提供します。
+- [MSBuild リファレンス](../msbuild/msbuild-reference.md)\
+ リファレンス情報を示すトピックへのリンクを提供します。
 
-- [用語集](msbuild-glossary.md) MSBuild の一般的な用語を定義します。
+- [用語集](msbuild-glossary.md)\
+ MSBuild で共通に使用される用語を定義します。

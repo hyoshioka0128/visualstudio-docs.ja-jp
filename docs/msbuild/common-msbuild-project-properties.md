@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596191"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027628"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
@@ -83,6 +83,7 @@ ms.locfileid: "75596191"
 | OptionExplicit | `true` に設定された場合にソース コードで変数が明示的に宣言されていることを要求するブール値です。 このプロパティは、`/optionexplicit` コンパイラ スイッチに相当します。 |
 | OptionInfer | `true` に設定された場合に変数の型の推論を可能にするブール値です。 このプロパティは、`/optioninfer` コンパイラ スイッチに相当します。 |
 | OptionStrict | `true` に設定された場合にビルド タスクで厳密な型のセマンティクスを適用して暗黙の型変換を制限するブール値です。 このプロパティは、*vbc.exe* コンパイラの `/optionstrict` スイッチに相当します。 |
+| OutDir | プロジェクトまたはソリューションの最終的な出力場所を示します。 ソリューションをビルドする場合、OutDir を使用すれば、複数のプロジェクト出力を 1 つの場所で収集できます。 さらに、OutDir は、参照を解決する場合に使用される AssemblySearchPaths に取り込まれます。 たとえば、*bin\Debug* です。 |
 | OutputPath | 出力ディレクトリへのパスを、*bin\Debug* のようにプロジェクト ディレクトリを基準とする相対パスで指定します。 |
 | OutputType | 出力ファイルのファイル形式を指定します。 このパラメーターには、次のいずれかの値を指定できます。<br /><br /> -   Library。 コード ライブラリを作成します。 これは既定値です。<br />-   Exe。 コンソール アプリケーションを作成します。<br />-   Module。 モジュールを作成します。<br />-   Winexe。 Windows ベースのプログラムを作成します。<br /><br /> このプロパティは、*vbc.exe* コンパイラの `/target` スイッチに相当します。 |
 | OverwriteReadOnlyFiles | ビルドにおいて読み取り専用ファイルを上書きするかエラーを発生させるかを示すブール値です。 |

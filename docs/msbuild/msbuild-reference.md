@@ -15,69 +15,59 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 92d8db803dd6e20a9a1d954847b63d3a02ddd257
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593968"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826537"
 ---
 # <a name="msbuild-reference"></a>MSBuild リファレンス
+
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド システムです。 次のリンクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] リファレンス情報を示すトピックへのリンクです。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)\
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイル形式を構成する XML 要素について説明します。
 
-- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
-
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)\
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれる一般的なタスクの一部について説明します。
 
-- [条件](../msbuild/msbuild-conditions.md)
-
+- [条件](../msbuild/msbuild-conditions.md)\
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイルで使用可能な条件について説明します。
 
-- [条件構造](../msbuild/msbuild-conditional-constructs.md)
-
+- [条件構造](../msbuild/msbuild-conditional-constructs.md)\
  `Choose`、`When`、`Otherwise` の各要素の使用方法について説明します。
 
-- [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
+- [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)\
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の予約済みプロパティについて説明します。
 
-- [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)
-
+- [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)\
  すべてのプロジェクト タイプに共通するプロジェクト プロパティについて説明します。特定のプロジェクト タイプで頻繁に使用されるプロパティについても説明します。
 
-- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
-
+- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)\
  すべてのプロジェクト タイプに共通するプロジェクト項目について説明します。特定のプロジェクト タイプで頻繁に使用される項目についても説明します。
 
-- [コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)
-
+- [コマンドライン リファレンス](../msbuild/msbuild-command-line-reference.md)\
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe で使用される引数とスイッチについて説明します。
 
-- [.Targets ファイル](../msbuild/msbuild-dot-targets-files.md)
-
+- [.Targets ファイル](../msbuild/msbuild-dot-targets-files.md)\
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれる *.Targets* ファイルについて説明します。
 
-- [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)
-
+- [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)\
  すべての項目と共に作成されるメタデータを一覧表示します。
 
-- [応答ファイル](../msbuild/msbuild-response-files.md)
-
+- [応答ファイル](../msbuild/msbuild-response-files.md)\
  コマンド ライン スイッチを含む *.rsp* ファイルについて説明します。
 
-- [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web サイトとニュースグループへのリンクを示します。
+- [その他の技術情報](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web サイトとニュースグループへのリンクを示します。
 
-- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
-
+- [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)\
  Windows Presentation Foundation (WPF) の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ターゲットとタスク リファレンスを示します。
 
-- [エスケープする特殊文字](../msbuild/special-characters-to-escape.md)
-
+- [エスケープする特殊文字](../msbuild/special-characters-to-escape.md)\
  正しく解釈するために "エスケープ" する必要のある文字を一覧表示します。 エスケープ シーケンスは、それに続く部分を別の方法で解釈することを示す一連の文字です。
 
 ## <a name="see-also"></a>関連項目

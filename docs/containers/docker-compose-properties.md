@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916930"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826459"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose のビルド プロパティ
 
@@ -109,6 +109,20 @@ services:
 |com.microsoft.visualstudio.debuggee.killprogram|このコマンドは、(必要なときに) コンテナー内で実行されているデバッグ対象プログラムを停止する目的で使用されます。|
 |com.microsoft.visualstudio.debuggee.program|デバッグの開始時に起動するプログラム。 .NET Core アプリの場合、この設定は通常、**dotnet** です。|
 |com.microsoft.visualstudio.debuggee.workingdirectory|デバッグの開始時に開始ディレクトリとして使用されるディレクトリ。 この設定は通常、Linux コンテナーの場合は */app*、Windows コンテナーの場合は *C:\app* になります。|
+
+## <a name="customize-the-app-startup-process"></a>アプリのスタートアップ プロセスをカスタマイズする
+
+`entrypoint` 設定を使用してアプリを起動する前に、コマンドまたはカスタム スクリプトを実行して、アプリを構成に依存させることができます。 たとえば、`update-ca-certificates` を実行して、証明書を**リリース** モードではなく**デバッグ** モードでのみ設定する必要がある場合、次のコードを *docker-compose.vs.debug.yml* にのみ追加できます。
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+*docker-compose.vs.release.yml* または *docker-compose.vs.debug.yml* を省略した場合は、Visual Studio によって既定の設定に基づいてどちらかが生成されます。
 
 ## <a name="next-steps"></a>次の手順
 
