@@ -2,8 +2,7 @@
 title: Visual Studio の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
-ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/19/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 07aa8afbb4e4ca3970a0f082ec6649a90bfaf2ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112705"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922884"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -144,6 +143,9 @@ ms.locfileid: "76112705"
 ## <a name="modify-individual-components"></a>個々のコンポーネントの変更
 
 ワークロードを使用せずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個別のコンポーネント]** タブを選択し、必要なコンポーネントを選択して、画面の指示に従います。
+
+>[!TIP]
+> SQL Server Data Tools (SSDT) については、「[Visual Studio の SQL Server Data Tools (SSDT) をダウンロードし、インストールする](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)」を参照してください。
 
 ## <a name="modify-language-packs"></a>言語パックの変更
 

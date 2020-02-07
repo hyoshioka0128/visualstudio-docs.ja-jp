@@ -1,18 +1,18 @@
 ---
 title: C++ 用の CTest を使用する方法
-ms.date: 05/01/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720550"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826524"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Visual Studio 2017 以降で C++ 用の CTest を使用する方法
 
@@ -20,7 +20,7 @@ CMake (CTest を含む) は、**C++ によるデスクトップ開発**ワーク
 
 ## <a name="to-write-tests"></a>テストを記述するには
 
-Visual Studio の CMake サポートでは、Visual Studio プロジェクト システムを必要としません。 したがって、任意の CMake 環境の場合と同様に、CTest テストを記述して構成します。 `enable_testing()` コマンドを使用してテストを有効にし、`add_test()` コマンドを使用して新しいテストを追加します。 CTest の詳細については、[CMake のドキュメント](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest)を参照してください。 
+Visual Studio の CMake サポートでは、Visual Studio プロジェクト システムを必要としません。 したがって、任意の CMake 環境の場合と同様に、CTest テストを記述して構成します。 `enable_testing()` コマンドを使用してテストを有効にし、`add_test()` コマンドまたは `gtest_discover_tests()` コマンドを使用して新しいテストを追加します。 CTest の詳細については、[CMake のドキュメント](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest)を参照してください。 
 
 Visual Studio での CMake 使用について詳しくは、「[Visual Studio の CMake プロジェクト](/cpp/build/cmake-projects-in-visual-studio)」をご覧ください。
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596867"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923266"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
 
@@ -65,6 +65,12 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 出力ファイルがターゲットとするプロセッサを指定します。 32 ビット Intel 互換プロセッサの場合は **[x86]** を、64 ビット Intel 互換プロセッサの場合は **[x64]** を、ARM プロセッサの場合は **[ARM]** をそれぞれ選択します。または、どのプロセッサでもかまわないことを指定する場合は、 **[Any CPU]** を選択します。 **[Any CPU]** はプロジェクトの既定の値であり、さまざまなハードウェアでアプリケーションを実行できるようにします。
 
 詳しくは、「[/platform (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)」をご覧ください。
+
+**NULL 値の使用**
+
+プロジェクト全体の C# の null 許容コンテキストを指定します。 この UI オプションは Visual Studio 16.5 で導入されたものであり、C# 8.0 以降を使用するプロジェクトでのみ有効です。
+
+詳細については、「[null 許容コンテキスト](/dotnet/csharp/nullable-references#nullable-contexts)」を参照してください。
 
 **32 ビットを優先**
 
