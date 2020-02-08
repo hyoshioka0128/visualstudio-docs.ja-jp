@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916937"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027263"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Dockerfile 内の行は、Microsoft Container Registry (mcr.microsoft.com) の Nano Server イメージから始まり、ポート 80 および 443 を公開する中間イメージ `base` を作成し、作業ディレクトリを `/app` に設定します。
+Dockerfile 内の行は、Microsoft Container Registry (mcr.microsoft.com) の Debian イメージから始まり、ポート 80 および 443 を公開する中間イメージ `base` を作成し、作業ディレクトリを `/app` に設定します。
 
 次のステージは `build` で、次のように表示されます。
 

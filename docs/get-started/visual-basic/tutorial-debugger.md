@@ -2,11 +2,11 @@
 title: 'チュートリアル: Visual Basic コードをデバッグする'
 description: Visual Studio デバッガーを起動し、コードをステップ実行し、データを検査する方法について説明します。
 ms.custom: debug-experiment, seodec18, get-started
-ms.date: 11/27/2018
+ms.date: 02/03/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
-- CSharp
+- VB
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
@@ -15,16 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829988"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027239"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した Visual Basic コードのデバッグについて理解する
 
 この記事では、ステップ バイ ステップのチュートリアルで Visual Studio デバッガーの機能を紹介します。 デバッガー機能の概要を確認したい場合は、「[デバッガーでのはじめに](../../debugger/debugger-feature-tour.md)」を参照してください。 "*ご自分のアプリをデバッグする*" 場合、通常、それはデバッガーをアタッチした状態でご自分のアプリケーションを実行することを意味します。 これを行う場合、デバッガーには、ご自分のコードが実行されている間にそのコードによって何が行われているのかを確認するためのさまざまな方法が用意されています。 ご自分のコードをステップ実行して変数内に格納されている値を確認したり、変数に対してウォッチ式を設定して値が変わるタイミングを確認したり、コードの実行パスを調べたり、コードの分岐が実行されているかどうかを確認したりできます。 コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に[超初心者向けのデバッグ方法](../../debugger/debugging-absolute-beginners.md)に関するページを参照することをお勧めします。
+
+デモ アプリは Visual Basic ですが、ほとんどの機能は C#、C++、F#、Python、JavaScript、および Visual Studio でサポートされているその他の言語にも適用されます (F# はエディット コンティニュをサポートしていません。 F# および JavaScript は、 **[自動変数]** ウィンドウをサポートしていません)。 スクリーンショットは Visual Basic のものです。
 
 このチュートリアルでは、次の作業を行います。
 
@@ -38,12 +40,12 @@ ms.locfileid: "74829988"
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 および **.NET デスクトップ開発**ワークロードをインストールしている必要があります。
+Visual Studio 2019 をインストールし、 **.NET Core クロスプラットフォームの開発**ワークロードを用意しておく必要があります。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 および **.NET デスクトップ開発**ワークロードをインストールしている必要があります。
+Visual Studio 2017 をインストールし、 **.NET Core クロスプラットフォームの開発**ワークロードを用意しておく必要があります。
 
 ::: moniker-end
 
@@ -59,140 +61,75 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker-end
 
-Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発**ワークロードを選択し、 **[変更]** を選択します。
+Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio を開きます。
+まず、.NET Core コンソール プロジェクトを作成します。 このプロジェクトの種類には、必要となるすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
-    ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**visual basic**」と入力して、 **[テンプレート]** を選択した後、 **[新しいコンソール アプリ (.NET Core) プロジェクトの作成]** 、 **[Create new Console App (.NET Framework) project]\(新しいコンソール アプリ (.NET Framework) プロジェクトの作成\)** のいずれかを選択します。 表示されたダイアログ ボックスで、**get-started-debugging** のような名前を入力して、 **[作成]** をクリックします。
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。 次に、「**get-started-debugging**」ような名前を入力し、 **[OK]** をクリックします。
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    **[コンソール アプリ (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、 **[ツール]**  >  **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **.NET デスクトップ開発**ワークロードを選択し、 **[変更]** を選択します。
+1. Visual Studio 2017 を開きます。
 
-    Visual Studio によってプロジェクトが作成されます。
+2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-1. *Module1.vb* で、すべての既定のコード
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、プロジェクトに *get-started-debugging* という名前を指定します。
 
-    ```vb
-    Module Module1
+     **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。
 
-        Sub Main()
-        End Sub
+     Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
 
-    End Module
-    ```
+::: moniker-end
 
-    を、次のコードで置換します。
+::: moniker range="vs-2019"
+
+1. Visual Studio 2019 を開きます。
+
+   スタート ウィンドウが開いていない場合は、 **[ファイル]** 、 **[スタート ウィンドウ]** の順に選択します。
+
+1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+
+   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+
+   ![コンソール アプリ (.NET Core) 用の Visual Basic テンプレートを選択します。](../visual-basic/media/vs-2019/get-started-create-console-project.png)
+
+   > [!NOTE]
+   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*get-started-debugging*」と入力します。 次に、 **[作成]** を選択します。
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
+   
+::: moniker-end
+
+## <a name="create-the-application"></a>アプリケーションを作成する
+
+1. *Program.vb* で、既定のコードをすべて次のコードに置き換えます。
 
     ```vb
     Imports System
-    Imports System.Collections.Generic
 
-    Public Class Shape
+    Class ArrayExample
+        Public Shared Sub Main()
+            Dim letters As Char() = {"f"c, "r"c, "e"c, "d"c, " "c, "s"c, "m"c, "i"c, "t"c, "h"c}
+            Dim name As String = ""
+            Dim a As Integer() = New Integer(9) {}
 
-      ' A few example members
-        Public Property X As Integer
-            Get
-                Return X
-            End Get
-            Set
-            End Set
-        End Property
-
-        Public Property Y As Integer
-            Get
-                Return Y
-            End Get
-            Set
-            End Set
-        End Property
-
-        Public Property Height As Integer
-            Get
-                Return Height
-            End Get
-            Set
-            End Set
-        End Property
-
-        Public Property Width As Integer
-            Get
-                Return Width
-            End Get
-            Set
-            End Set
-        End Property
-
-        ' Virtual method
-        Public Overridable Sub Draw()
-            Console.WriteLine("Performing base class drawing tasks")
-        End Sub
-    End Class
-
-    Public Class Circle
-        Inherits Shape
-
-        Public Overrides Sub Draw()
-            ' Code to draw a circle...
-            Console.WriteLine("Drawing a circle")
-            MyBase.Draw()
-        End Sub
-    End Class
-
-    Public Class Rectangle
-        Inherits Shape
-
-        Public Overrides Sub Draw()
-            ' Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle")
-            MyBase.Draw()
-        End Sub
-    End Class
-
-    Public Class Triangle
-        Inherits Shape
-
-        Public Overrides Sub Draw()
-            ' Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle")
-            MyBase.Draw()
-        End Sub
-    End Class
-
-    Module Module1
-
-        Sub Main(ByVal args() As String)
-
-            Dim shapes = New List(Of Shape) From
-            {
-                New Rectangle,
-                New Triangle,
-                New Circle
-            }
-
-            For Each shape In shapes
-                shape.Draw()
+            For i As Integer = 0 To letters.Length - 1
+                name += letters(i)
+                a(i) = i + 1
+                SendMessage(name, a(i))
             Next
-            ' Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.")
-            Console.ReadKey()
 
+            Console.ReadKey()
         End Sub
 
-    End Module
-
-    ' Output:
-    '    Drawing a rectangle
-    '    Performing base class drawing tasks
-    '    Drawing a triangle
-    '    Performing base class drawing tasks
-    '    Drawing a circle
-    '    Performing base class drawing tasks
+        Private Shared Sub SendMessage(ByVal name As String, ByVal msg As Integer)
+            Console.WriteLine("Hello, " & name & "! Count to " & msg)
+        End Sub
+    End Class
     ```
 
 ## <a name="start-the-debugger"></a>デバッガーを起動する
@@ -202,91 +139,94 @@ Visual Studio は既にあり、ワークロードだけをインストールす
      **F5** キーを押すと、デバッガーがアプリ プロセスにアタッチされた状態でアプリが起動されますが、現時点で、コードを調べるために特別なことは何も行っていません。 したがって、アプリが読み込まれたにすぎず、コンソール出力が表示されます。
 
     ```cmd
-    Drawing a rectangle
-    Performing base class drawing tasks
-    Drawing a triangle
-    Performing base class drawing tasks
-    Drawing a circle
-    Performing base class drawing tasks
+    Hello, f! Count to 1
+    Hello, fr! Count to 2
+    Hello, fre! Count to 3
+    Hello, fred! Count to 4
+    Hello, fred ! Count to 5
+    Hello, fred s! Count to 6
+    Hello, fred sm! Count to 7
+    Hello, fred smi! Count to 8
+    Hello, fred smit! Count to 9
+    Hello, fred smith! Count to 10
     ```
 
      このチュートリアルでは、デバッガーを使用してこのアプリを詳しく見て行くと共に、デバッガーの機能についても説明します。
 
-2. 赤色の停止 ![デバッグの停止](../../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします") ボタンを押して、デバッガーを停止します。
+2. 赤色の停止 ![デバッグの停止](../../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします") ボタンを押し、デバッガーを停止します (**Shift** + **F5** キー)。
+
+3. コンソール ウィンドウで、任意のキーを押してコンソール ウィンドウを閉じます。
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>ブレークポイントを設定し、デバッガーを開始する
 
-1. `Main` 関数の `For Each` ループ内で、ブレークポイントを設定します。そのためには、次のコード行の左余白をクリックします。
+1. `Main` 関数の `For` ループ内で、ブレークポイントを設定します。そのためには、次のコード行の左余白をクリックします。
 
-    `shape.Draw()`
+    `name += letters(i)`
 
-    ブレークポイントを設定した場所に赤い円が表示されます。
+    ブレークポイントを設定した場所に赤い円 ![ブレークポイント](../../debugger/media/dbg-breakpoint.png "ブレークポイント") が表示されます。
 
-    ![ブレークポイントの設定](../visual-basic/media/get-started-set-breakpoint-vb.png)
-
-    ブレークポイントは、信頼できるデバッグの最も基本的で重要な機能です。 ブレークポイントは、Visual Studio が実行コードを中断する場所を示します。これにより、変数の値またはメモリの動作を確認したり、コードの分岐が実行されるかどうかを確認したりすることができます。
+    ブレークポイントは、信頼できるデバッグの最も基本的で重要な機能の 1 つです。 ブレークポイントは、Visual Studio が実行コードを中断する場所を示します。これにより、変数の値またはメモリの動作を確認したり、コードの分岐が実行されるかどうかを確認したりすることができます。
 
 2. **F5** キーを押すか、 **[デバッグの開始]** ボタン ![デバッグの開始](../../debugger/media/dbg-tour-start-debugging.png "デバッグの開始") を押します。アプリが起動され、ブレークポイントを設定したコード行までデバッガーが実行されます。
 
-    ![ブレークポイントに到達する](../visual-basic/media/get-started-hit-breakpoint-vb.png)
+    ![ブレークポイントを設定してそこにヒットする](../visual-basic/media/get-started-hit-breakpoint-vb.png)
 
     黄色の矢印はデバッガーが一時停止しているステートメントを表します。デバッガーの一時停止によってアプリの実行も同じポイントで中断されます (このステートメントはまだ実行されていません)。
 
      アプリがまだ実行されていない場合、**F5** キーを押すとデバッガーが起動し、最初のブレークポイントで停止します。 それ以外の場合、**F5** キーを押すと、アプリの実行が続行され、次のブレークポイントまで進みます。
 
-    ブレークポイントは、詳細に調べたいコード行またはコード セクションがわかっている場合に便利な機能です。
+    ブレークポイントは、詳細に調べたいコード行またはコード セクションがわかっている場合に便利な機能です。 条件付きブレークポイントなど、設定できるさまざまな種類のブレークポイントについては、[ブレークポイントの使用](../../debugger/using-breakpoints.md)に関するページを参照してください。
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>ステップ コマンドを使用してデバッガーでコード内を移動する
 
 ほとんどの場合、ここではキーボード ショートカットを使用します。それはデバッガーでご自分のアプリをすばやく実行するのに便利な方法だからです (コマンド メニューなどの対応するコマンドはかっこ内に示します)。
 
-1. `Main` 関数内の `shape.Draw` メソッド呼び出しで一時停止している間に、**F11** キーを押して (または **[デバッグ] > [ステップ イン]** の順に選択して)、`Rectangle` クラスのコードに進みます。
+1. `Main` メソッド内の `For` ループで一時停止している間に、**F11** キーを 2 度押して (または **[デバッグ]、[ステップ イン]** の順に選択して)、`SendMessage` メソッド呼び出しに進みます。
 
-     ![F11 キーを使用してコードにステップ インする](../visual-basic/media/get-started-f11-vb.png "F11 ステップ イン")
+     **F11** キーを 2 回押したら、次のコード行が表示されるはずです。
+
+     `SendMessage(name, a(i))`
+
+1. **F11** キーをもう一度押して `SendMessage` メソッドにステップインします。
+
+     黄色のポインターが `SendMessage` メソッドに進みます。
+
+     ![F11 キーを使用してコードにステップ インする](../visual-basic/media/get-started-f11-vb.png "F10 ステップ イン")
 
      F11 キーは **[ステップ イン]** コマンドであり、アプリの実行が一度に 1 ステートメント進められます。 F11 キーは実行フローを最も詳しく確認することができる便利な方法です。 (他にコード内をより速く移動するためのオプションについても紹介します)既定では、非ユーザー コードはデバッガーによってスキップされます (詳細については、[マイ コードのみ](../../debugger/just-my-code.md)に関するページを参照)。
 
-2. `MyBase.Draw` メソッド呼び出し上でデバッガーが停止するまで数回 **F10** キーを押し (または **[デバッグ] > [ステップ オーバー]** の順に選択し)、次にもう一度 **F10** キーを押します。
+     たとえば、`SendMessage` メソッドの確認を終了しました。そこで、このメソッドからは抜け出したいけれども、デバッガーには留まっていたいとします。 これを行うには、 **[ステップ アウト]** コマンドを使用します。
+
+1. **Shift** + **F11** キーを押します (または **[デバッグ] > [ステップ アウト]** の順に選択します)。
+
+     このコマンドを使用すると、アプリの実行が再開され (そしてデバッガーが前へ進められ)、現在のメソッドまたは関数から制御が戻るまで続けられます。
+
+     `SendMessage` メソッド呼び出しで一時停止している、`Main` メソッド内の `For` ループに戻る必要があります。
+
+1. `SendMessage` メソッドの呼び出しに再び戻るまで、**F11** キーを何度か押します。
+
+1. メソッドの呼び出しで一時停止している間に、一度、**F10** キーを押します (または、 **[デバッグ]、[ステップ オーバー]** の順に選択します)。
 
      ![F10 キーを使用してコードをステップ オーバーする](../visual-basic/media/get-started-step-over-vb.png "F10 ステップ オーバー")
 
-     今回は、デバッガーが基本クラス (`Shape`) の `Draw` メソッドにステップ インしていないことに注目してください。 **F10** キーを押すと、ご利用のアプリのコード内の関数またはメソッドにステップ インすることなく、デバッガーが進められます (コードはまだ実行されています)。 `MyBase.Draw` メソッド呼び出し上で (**F11** キーではなく) **F10** キーを押して、`MyBase.Draw` 用の実装コードをスキップしました (現時点で関係ないと思われるため)。
+     今回は、デバッガーが `SendMessage` メソッドにステップ インしていないことに注目してください。 **F10** キーを押すと、ご利用のアプリのコード内の関数またはメソッドにステップ インすることなく、デバッガーが進められます (コードはまだ実行されています)。 `SendMessage` メソッド呼び出し上で (**F11** キーではなく) **F10** キーを押して、`SendMessage` 用の実装コードをスキップしました (現時点で関係ないと思われるため)。 ご利用のコード内を移動するさまざまな方法の詳細については、[デバッガーでのコード間の移動](../../debugger/navigating-through-code-with-the-debugger.md)に関するページを参照してください。
 
 ## <a name="navigate-code-using-run-to-click"></a>[クリックで実行] を使用してコード内を移動する
 
-1. コード エディター内で下方にスクロールして `Triangle` クラス内の `Console.WriteLine` メソッドにカーソルを合わせ、それによって左側に緑色の **[クリックで実行]** ボタン ![クリックで実行](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") が表示されるのを確認します。 ボタンのヒントには、[ここまで実行します] と表示されます。
+1. **F5** キーを押し、もう一度ブレークポイントに進みます。
+
+1. コード エディター内で下方にスクロールして `SendMessage` メソッド内の `Console.WriteLine` メソッドにカーソルを合わせ、それによって左側に緑色の **[クリックで実行]** ボタン ![クリックで実行](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") が表示されるのを確認します。 ボタンのヒントには、[ここまで実行します] と表示されます。
 
      ![[クリックで実行] 機能を使用する](../visual-basic/media/get-started-run-to-click-vb.png "[Run To Click (クリックで実行)]")
 
    > [!NOTE]
-   > **[クリックで実行]** ボタンは [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] の新機能です。 緑色の矢印ボタンが表示されない場合、この例では代わりに **F11** キーを使用してデバッガーを適切な場所まで進めます。
+   > **[クリックで実行]** ボタンは [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] の新機能です。 (緑色の矢印ボタンが表示されない場合、この例では代わりに **F11** キーを使用してデバッガーを適切な場所まで進めます。)
 
 2. **[クリックで実行]** ボタン ![クリックで実行](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") をクリックします。
 
+    デバッガーが `Console.WriteLine` メソッドに進みます。
+
     このボタンを使用することは、一時的なブレークポイントを設定することに似ています。 **[クリックで実行]** はアプリ コードの表示領域内をすばやく移動するのに便利です (開いている任意のファイル内でクリックすることができます)。
-
-    デバッガーは `Triangle` クラスの `Console.WriteLine` メソッド実装に進みます。 (前に設定したブレークポイントで先にデバッガーが一時停止する場合は、もう一度 **[クリックで実行]** を使用して `Console.WriteLine` までデバッガーを進めます。)
-
-    一時停止したところで、入力ミスがあることに気づきました。 出力 "Drawing a trangle" にはスペルの誤りがあります。 デバッガーでアプリを実行しながら、ここでスペルミスを修正することができます。
-
-## <a name="edit-code-and-continue-debugging"></a>コードを編集してデバッグを続行する
-
-1. "Drawing a trangle" 内をクリックし、"trangle" を "triangle" に変更するという修正を加えます。
-
-1. **F11** キーを 1 回押します。デバッガーが再び前に進むのがわかります。
-
-    > [!NOTE]
-    > デバッガー内で編集するコードの種類によっては、警告メッセージが表示される場合があります。 一部のシナリオでは、続行する前にコードを再コンパイルする必要があります。
-
-## <a name="step-out"></a>ステップ アウト
-
-たとえば、`Triangle` クラス内の `Draw` メソッドの確認を終了しました。そこで、この関数からは抜け出したいけれども、デバッガーには留まっていたいとします。 これを行うには、 **[ステップ アウト]** コマンドを使用します。
-
-1. **Shift** + **F11** キーを押します (または **[デバッグ] > [ステップ アウト]** の順に選択します)。
-
-     このコマンドを使用すると、アプリの実行が再開され (そしてデバッガーが前へ進められ)、現在の関数から制御が戻るまで続けられます。
-
-     `Main` メソッド内の `For Each` ループに戻る必要があります。 そうでない場合は、もう一度 **Shift** + **F11** キーを押します。
 
 ## <a name="restart-your-app-quickly"></a>アプリを簡単に再起動する
 
@@ -294,51 +234,59 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 **[再起動]** を押すと、アプリを停止してからデバッガーを再起動する場合と比較して時間の節約になります。 デバッガーは、コードを実行すると最初にヒットするブレークポイントで一時停止します。
 
-`shape.Draw()` メソッド上で設定したブレークポイントでデバッガーが再び停止します。
+デバッガーは、前に `For` ループ内に設定したブレークポイントで再び停止します。
 
 ## <a name="inspect-variables-with-data-tips"></a>データ ヒントを使用して変数を確認する
 
 変数を調べることができる機能は、デバッガーの機能の中でも最も便利な機能の 1 つに挙げられ、それを行うにはさまざまな方法を利用できます。 多くの場合、問題のデバッグを試みるときは、特定のタイミングで変数に期待する値がそのとおりに変数に格納されているかどうかの確認を試みます。
 
-1. `shape.Draw()` メソッド上で一時停止しているときに、`shapes` オブジェクトにカーソルを合わせます。すると、そのプロパティの既定値 (`Count` プロパティ) が表示されます。
+1. `name += letters[i]` ステートメントで一時停止しているときに、`letters` 変数にカーソルを合わせます。その既定値、つまり、配列の最初の要素の値である `"f"c` が表示されます。
 
-1. `shapes` オブジェクトを展開してそのプロパティをすべて表示します。たとえば、`Rectangle` の値が含まれる配列 `[0]` の最初のインデックスなどが表示されます。
+1. 次に、`name` 変数にカーソルを合わせると、その現在の値である空の文字列が表示されます。
+
+1. 数回、**F5** キーを押して (または **[デバッグ]** 、 **[続行]** の順に選択して)、`For` ループを数回繰り返します。ブレークポイントで再び一時停止したら、`name` 変数にカーソルを合わせて毎回値を確認します。
 
      ![データ ヒントを表示する](../visual-basic/media/get-started-data-tip-vb.png "データ ヒントを表示する")
 
-    さらにオブジェクトを展開することで、四角形の `Height` プロパティなどのプロパティを表示することができます。
+     変数の値は、`For` ループが繰り返されるたびに変化し、表示される値は、`f`、次は `fr`、その次は `fre` という具合になります。
 
-    多くの場合、デバッグを行うときは、オブジェクト上のプロパティ値を簡単な方法で確認したいと思います。データ ヒントは、これに適した方法です。
+     デバッグ時に、変数のプロパティ値に期待どおりの値が格納されているかどうかをすばやく確認したい場合がよくあります。データ ヒントはそれを行うのに適した方法です。
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>[自動変数] ウィンドウと [ローカル] ウィンドウを使用して変数を確認する
 
 1. コード エディターの下部にある **[自動変数]** ウィンドウを見てください。
 
-     ![[自動変数] ウィンドウで変数を検査する](../visual-basic/media/get-started-autos-window-vb.png "[自動変数] ウィンドウ")
+    ウィンドウが閉じている場合は、デバッガーが一時停止している間に、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[自動変数]** の順に選択します。
 
     **[自動変数]** ウィンドウには、変数とその現在の値が表示されます。 **[自動変数]** ウィンドウには、現在の行または前の行で使用されるすべての変数が表示されます (言語固有の動作についてはドキュメントを参照してください)。
 
-2. 次に、 **[自動変数]** ウィンドウの隣にあるタブ内の **[ローカル]** ウィンドウを見てください。
+1. 次に、 **[自動変数]** ウィンドウの隣にあるタブ内の **[ローカル]** ウィンドウを見てください。
+
+1. `letters` 変数を展開して、それに含まれている要素を表示します。
+
+     ![[ローカル] ウィンドウでの変数の検査](../visual-basic/media/get-started-locals-window-vb.png "ローカル ウィンドウ")
 
     **[ローカル]** ウィンドウを確認すれば、現在の[スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
 
 ## <a name="set-a-watch"></a>ウォッチ式を設定する
 
-1. メインのコード エディター ウィンドウで、`shapes` オブジェクトを右クリックして、 **[ウォッチ式の追加]** を選択します。
+1. メインのコード エディター ウィンドウで、`name` 変数を右クリックして、 **[ウォッチ式の追加]** を選択します。
 
     コード エディターの下部に **[ウォッチ]** ウィンドウが表示されます。 **[ウォッチ]** ウィンドウを使用することで、監視する変数 (または式) を指定できます。
 
-    `shapes` オブジェクトに対してウォッチ式が設定されたので、デバッガー内を移動しながらその値の変化を確認することができます。 その他の変数ウィンドウとは異なり、 **[ウォッチ]** ウィンドウには監視対象の変数が常に表示されます (対象外のときは淡色表示となります)。
+    これで、`name` 変数に対してウォッチ式が設定されたので、デバッガー内を移動しながらその値の変化を確認することができます。 その他の変数ウィンドウとは異なり、 **[ウォッチ]** ウィンドウには監視対象の変数が常に表示されます (対象外のときは淡色表示となります)。
 
 ## <a name="examine-the-call-stack"></a>呼び出し履歴を調べる
 
-1. `For Each` ループ内で一時停止しているときに、 **[呼び出し履歴]** ウィンドウをクリックします。このウィンドウは既定では右下ペイン内に表示されます。
+1. `For` ループ内で一時停止しているときに、 **[呼び出し履歴]** ウィンドウをクリックします。このウィンドウは既定では右下ペイン内に表示されます。
 
-2. コード エディター内でデバッガーが `Rectangle` クラスの `MyBase.Draw` メソッド内で一時停止するのを確認できるまで、**F11** キーを数回押します。 **[呼び出し履歴]** ウィンドウを見てください。
+    ウィンドウが閉じている場合は、デバッガーが一時停止している間に、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[呼び出し履歴]** の順に選択します。
+
+2. デバッガーが `SendMessage` メソッド内で一時停止するのを確認できるまで、**F11** キーを数回押します。 **[呼び出し履歴]** ウィンドウを見てください。
 
     ![呼び出し履歴を調べる](../visual-basic/media/get-started-call-stack-vb.png "ExamineCallStack")
 
-    **[呼び出し履歴]** ウィンドウには、メソッドおよび関数が呼び出されている順番が表示されます。 先頭行には、現在の関数が表示されます (このアプリでは `Rectangle.Draw` メソッド)。 2 行目には、`Rectangle.Draw` が `Main` 関数から呼び出されたことが表示されます。3 行目以降にも同様の内容が表示されます。
+    **[呼び出し履歴]** ウィンドウには、メソッドおよび関数が呼び出されている順番が表示されます。 先頭行には、現在の関数が表示されます (このアプリでは `SendMessage` メソッド)。 2 行目には、`SendMessage` が `Main` メソッドから呼び出されたことが表示され、後もこのような具合に表示されます。
 
    > [!NOTE]
    > **[呼び出し履歴]** ウィンドウは、Eclipse のような一部の IDE におけるデバッグ パースペクティブに似ています。
@@ -351,11 +299,13 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 ## <a name="change-the-execution-flow"></a>実行フローを変更する
 
-1. `Rectangle` クラスの `MyBase.Draw` メソッド呼び出し内でデバッガーが一時停止した状態で、マウスを使用して左側にある黄色の矢印 (実行ポインター) をつかみ、その黄色の矢印を 1 行上にある `Console.WriteLine` メソッド呼び出しまで移動します。
+1. **F11** キーを 2 回押して、`Console.WriteLine` メソッドを実行します。
+
+1. `SendMessage` メソッド呼び出し内でデバッガーが一時停止した状態で、マウスを使用して左側にある黄色の矢印 (実行ポインター) をつかみ、その黄色の矢印を 1 行上に移動して、`Console.WriteLine` に戻ります。
 
 1. **F11** キーを押します。
 
-    デバッガーにより `Console.WriteLine` メソッドが返されます (コンソール ウィンドウの出力に重複する出力が表示されます)。
+    デバッガーにより `Console.WriteLine` メソッドが返されます (これはコンソール ウィンドウの出力に表示されます)。
 
     実行フローを変更することにより、さまざまなコード実行パスをテストしたり、デバッガーを再起動することなくコードを再実行したりできます。
 

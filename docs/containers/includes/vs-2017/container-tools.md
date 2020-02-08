@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 63d2f021aabc3d9152900ad62f072ec1a35a8e5b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927982"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922963"
 ---
 Visual Studio を使用すると、コンテナー化された ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ACR に発行します。
 
@@ -29,12 +29,14 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 1. Visual Studio のメニューで、 **[ファイル]、[新規作成]、[プロジェクト]** の順に選択します。
 1. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** セクションで、 **[Visual C#]、[Web]** の順に選択します。
-1. **[ASP.NET Core Web アプリケーション]** を選択します。
+1. **[ASP.NET Core Web アプリケーション]** を選択します。または、.NET Core ではなく .NET Framework を使用する場合は、 **[ASP.NET Web アプリケーション]** を選択します。
 1. 新しいアプリケーションに名前を設定 (または、既定の名前をそのまま使用) して、 **[OK]** を選択します。
 1. **[Web アプリケーション]** を選択します。
 1. **[Docker サポートを有効にする]** チェック ボックスをオンにします。
 
    ![[Enable Docker Support]\(Docker サポートを有効にする\) チェック ボックス](../../media/container-tools/enable-docker-support.PNG)
+
+   このスクリーンショットには .NET Core が表示されています。 .NET Framework を使用している場合は、少し異なります。
 
 1. コンテナーの種類 (Windows または Linux) を選択し、 **[OK]** をクリックします。
 
@@ -65,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。
+前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。 .NET Framework を使用している場合、基本イメージは異なります。
 
 新しいプロジェクト ダイアログの **[Configure for HTTPS]\(HTTPS 用に構成する\)** チェック ボックスがオンになっている場合、*Dockerfile* は 2 つのポートを公開します。 1 つのポートは HTTP トラフィック用、もう 1 つのポートは HTTPS 用に使用されます。 チェック ボックスがオンになっていない場合は、HTTP トラフィック用に単一のポート (80) が公開されます。
 
