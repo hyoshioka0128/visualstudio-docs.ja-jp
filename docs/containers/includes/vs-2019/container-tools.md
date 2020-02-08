@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Docker と ASP.NET Core
+title: Visual Studio Tools for Docker と ASP.NET
 author: ghogen
 description: Visual Studio 2019 ツールと Docker for Windows を使用する方法について説明します
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927850"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922984"
 ---
 Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
 
@@ -20,7 +20,7 @@ Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-* .NET Core 2.2 を使って開発するための [.NET Core 2.2 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* .NET Core を使って開発するための [.NET Core 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/)
 * Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 
 ## <a name="installation-and-setup"></a>インストールとセットアップ
@@ -29,10 +29,12 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 ## <a name="add-a-project-to-a-docker-container"></a>Docker コンテナーにプロジェクトを追加する
 
-1. **[ASP.NET Core Web アプリケーション]** テンプレートを使って新しいプロジェクトを作成します。
+1. **[ASP.NET Core Web アプリケーション]** テンプレートを使用して新しいプロジェクトを作成します。または、.NET Core ではなく .NET Framework を使用する場合は、 **[ASP.NET Web アプリケーション (.NET Framework)]** を選択します。
 1. **[Web アプリケーション]** を選択し、 **[Enable Docker Support]\(Docker サポートを有効にする\)** チェックボックスがオンになっていることを確認します。
 
    ![[Enable Docker Support]\(Docker サポートを有効にする\) チェック ボックス](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   このスクリーンショットには .NET Core が表示されています。 .NET Framework を使用している場合は、少し異なります。
 
 1. コンテナーの種類 (Windows または Linux) を選択し、 **[作成]** をクリックします。
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。
+前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。 .NET Framework を使用している場合、基本イメージは異なります。
 
 新しいプロジェクト ダイアログの **[Configure for HTTPS]\(HTTPS 用に構成する\)** チェック ボックスがオンになっている場合、*Dockerfile* は 2 つのポートを公開します。 1 つのポートは HTTP トラフィック用、もう 1 つのポートは HTTPS 用に使用されます。 チェック ボックスがオンになっていない場合は、HTTP トラフィック用に単一のポート (80) が公開されます。
 
@@ -71,7 +73,7 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 ツールバーのデバッグ ドロップダウンから **[Docker]** を選択し、アプリのデバッグを開始します。 証明書の信頼を求めるメッセージが表示される場合があります。続行するには、証明書を信頼することを選びます。
 
-**[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。
+**[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。 初めての場合、基本イメージのダウンロードにしばらく時間がかかる場合がありますが、以降の実行でははるかに高速になります。
 
 ## <a name="containers-window"></a>コンテナー ウィンドウ
 

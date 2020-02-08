@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588630"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542660"
 ---
 # <a name="language-conventions"></a>言語規則
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **ルール名** | csharp_prefer_braces |
 | **ルール ID** | IDE0011 |
 | **該当言語** | C# |
-| **値** | `true` - コードが 1 行であっても中かっこを使用します<br /><br />`false` - 中かっこは使用しません (許可されている場合) |
+| **値** | `true` - コードが 1 行であっても中かっこを使用します<br /><br />`false` - 中かっこは使用しません (許可されている場合)<br /><br />`when_multiline` - 複数の行で中かっこを使用します |
 | **Visual Studio の既定値** | `true:silent` |
 
 コード例:
