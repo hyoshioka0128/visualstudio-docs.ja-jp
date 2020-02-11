@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405210"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091783"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis フレームワークを使用C++してデバッガーでオブジェクトのカスタムビューを作成する
 
@@ -186,7 +186,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 `AutoVisualizer` 要素は、[型](#BKMK_Type)、 [HResult](#BKMK_HResult)、 [Uivisualizer](#BKMK_UIVisualizer)、および[customvisualizer](#BKMK_CustomVisualizer)の子を持つことができます。
 
-### <a name="BKMK_Type"></a> Type 要素
+### <a name="BKMK_Type"></a> 型の要素
 
 基本的な `Type` は、次の例のようになります。
 
@@ -224,7 +224,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 視覚化エントリの検証に失敗した場合は、次に利用可能な視覚エフェクトが使用されます。
 
 #### <a name="inheritable-attribute"></a>継承可能な属性
-省略可能な `Inheritable` 属性は、視覚エフェクトが基本データ型にのみ適用されるか、基本データ型とすべての派生型にのみ適用されるかを指定します。 `Inheritable` の既定値は `true`です。
+省略可能な `Inheritable` 属性は、視覚エフェクトが基本データ型にのみ適用されるか、基本データ型とすべての派生型にのみ適用されるかを指定します。 `Inheritable` の既定値は `true` です。
 
 次の例では、視覚化は `BaseClass` の種類にのみ適用されます。
 
@@ -670,7 +670,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 - 属性ペアの `ServiceId` - `Id` `UIVisualizer`を識別します。 `ServiceId` は、ビジュアライザーパッケージが公開するサービスの GUID です。 `Id` は、サービスが複数を提供する場合にビジュアライザーを区別する一意の識別子です。 前の例では、同じビジュアライザーサービスに2つのビジュアライザーが用意されています。
 
-- `MenuName` 属性は、デバッガーの虫眼鏡アイコンの横にあるドロップダウンリストに表示されるビジュアライザー名を定義します。 例:
+- `MenuName` 属性は、デバッガーの虫眼鏡アイコンの横にあるドロップダウンリストに表示されるビジュアライザー名を定義します。 例 :
 
   ![UIVisualizer メニューのショートカットメニュー](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer メニューのショートカット メニュー")
 
@@ -690,3 +690,9 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 XML Natvis 定義とは異なり、カスタムビジュアライザーを記述するには多くの作業が必要ですが、Natvis がサポートしている内容やサポートされていない機能についての制約があります。 カスタムビジュアライザーは、デバッガーの機能拡張 Api の完全なセットにアクセスできます。この Api は、デバッグ対象のプロセスに対してクエリや変更を行ったり、Visual Studio の他の部分と通信したりすることができます。
 
  `CustomVisualizer` 要素の `Condition`、`IncludeView`、および `ExcludeView` 属性を使用できます。
+
+ ## <a name="limitations"></a>制限事項
+
+Natvis のカスタマイズは、クラスと構造体では機能しますが、typedef は使用できません。
+
+Natvis は、プリミティブ型 (`int`、`bool`など) またはプリミティブ型へのポインターのビジュアライザーをサポートしていません。 このシナリオでは、ユースケースに適した[書式指定子](../debugger/format-specifiers-in-cpp.md)を使用するオプションが1つあります。 たとえば、コードで `double* mydoublearray` を使用する場合は、最初の100要素を表示する式 `mydoublearray, [100]`のように、デバッガーの **[ウォッチ]** ウィンドウで配列書式指定子を使用できます。
