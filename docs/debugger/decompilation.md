@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091874"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144781"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>デバッグ中に .NET アセンブリからソースコードを生成する
 
@@ -80,8 +80,27 @@ Ilspy を使用してソースコードを生成することができるのは�
 - ブレークポイントは、常に一致するソーシングの場所にバインドされるとは限りません。
 - ステップ実行では、常に正しい場所にステップインするとは限りません。
 - ローカル変数の名前が正確でない可能性があります。
+- 一部の変数は、評価に使用できない場合があります。
 
 詳細については、GitHub の問題に関する IChsarpCompiler を参照してください。[デコンパイラと VS デバッガーの統合](https://github.com/icsharpcode/ILSpy/issues/1901)です。
+
+### <a name="decompilation-reliability"></a>Ilspy の信頼性
+
+Ilspy の試行が比較的少ない場合、エラーが発生する可能性があります。 これは、ILSpy のシーケンスポイントの null 参照エラーが原因です。  これらの問題をキャッチし、ilspy の試行を適切に失敗させることによって、障害を軽減しました。
+
+詳細については、GitHub の問題に関する IChsarpCompiler を参照してください。[デコンパイラと VS デバッガーの統合](https://github.com/icsharpcode/ILSpy/issues/1901)です。
+
+### <a name="limitations-with-async-code"></a>非同期コードに関する制限事項
+
+非同期/待機コードパターンを使用した逆コンパイルモジュールの結果は不完全であるか、完全に失敗する可能性があります。 Async/await および yield ステートマシンの ILSpy 実装は、部分的にのみ実装されています。 
+
+詳細については、「GitHub の問題: [PDB ジェネレーターの状態](https://github.com/icsharpcode/ILSpy/issues/1422)」を参照してください。
+
+### <a name="just-my-code"></a>マイ コードのみ
+
+[マイコードのみ (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code)設定を使用すると、Visual Studio はシステム、フレームワーク、ライブラリ、およびその他の非ユーザーの呼び出しをステップオーバーできます。 デバッグセッション中に、 **[モジュール]** ウィンドウには、デバッガーがマイコード (ユーザーコード) として扱うコードモジュールが表示されます。
+
+最適化またはリリースモジュールの ilspy では、非ユーザーコードが生成されます。 たとえば、デバッガーがデコンパイルの非ユーザーコードで中断した場合、 **[ソースなし]** ウィンドウが表示されます。 マイコードのみを無効にするには、 **[ツール]**  >  **[オプション]** (または**デバッグ** > **オプション**) に移動**し >** **[全般**] を選択し、[ ** > を有効に**する] をオフにします。
 
 ### <a name="extracted-sources"></a>抽出されたソース
 

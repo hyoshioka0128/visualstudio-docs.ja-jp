@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911567"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144796"
 ---
 # <a name="debugging-gpu-code"></a>GPU コードのデバッグ
 グラフィックス処理装置 (GPU) で実行されている C++ コードをデバッグできます。 Visual Studio での GPU デバッグのサポートには、競合の検出、プロセスの開始、プロセスへのアタッチ、デバッグ ウィンドウへの統合が含まれます。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
- デバッグは [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] でサポートされています。 ソフトウェア エミュレーターでデバッグするには、[!INCLUDE[win8](../debugger/includes/win8_md.md)] または [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] が必要です。 ハードウェアでデバッグするには、使用するグラフィックス カードのドライバーをインストールする必要があります。 ハードウェア ベンダーによってはデバッガーの一部の機能が実装されていない場合があります。 制限については、ベンダーのドキュメントを参照してください。
+ デバッグは、[!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、Windows 10、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]、および Windows Server 2016 でサポートされています。 ソフトウェアエミュレーター、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、Windows 10、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]のデバッグについては、Windows Server 2016 が必要です。 ハードウェアでデバッグするには、使用するグラフィックス カードのドライバーをインストールする必要があります。 ハードウェア ベンダーによってはデバッガーの一部の機能が実装されていない場合があります。 制限については、ベンダーのドキュメントを参照してください。
 
 > [!NOTE]
 > Visual Studio での GPU デバッグをサポートする独立系ハードウェア ベンダーは、VSD3DDebug インターフェイスを実装し、独自のドライバーを対象とする DLL を作成する必要があります。
@@ -47,7 +47,7 @@ ms.locfileid: "72911567"
 2. **[現在の Tile をカーソル行の前まで実行]** コマンドは、現在の Tile 内のすべてのスレッドがカーソル位置に達するまでアプリを実行してから中断します。
 
 ## <a name="debugging-windows"></a>デバッグ ウィンドウ
- 特定のデバッグ ウィンドウを使用することで、GPU スレッドを調べたり、スレッドにフラグを設定したり、スレッドを凍結したりできます。 詳細については次を参照してください:
+ 特定のデバッグ ウィンドウを使用することで、GPU スレッドを調べたり、スレッドにフラグを設定したり、スレッドを凍結したりできます。 詳細については、次を参照してください。
 
 - [[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)
 
@@ -65,7 +65,7 @@ ms.locfileid: "72911567"
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 ### <a name="specifying-an-accelerator"></a>アクセラレータの指定
- GPU コード内のブレークポイントがヒットするのは、コードが [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF) アクセラレータで実行されている場合のみです。 コード内でアクセラレータを指定していない場合は、REF アクセラレータがプロジェクトのプロパティの **[デバッグ アクセラレータの種類]** で自動的に選択されます。 コード内でアクセラレータを明示的に選択している場合、REF アクセラレータはデバッグ中に使用されません。GPU ハードウェアがデバッグをサポートしていない限り、ブレークポイントがヒットすることはありません。 この問題を解決するには、デバッグ中に REF アクセラレータを使用するようにコードを記述します。 詳細については、「プロジェクトのプロパティ」および「 [ C++デバッグ構成の](../debugger/project-settings-for-a-cpp-debug-configuration.md)[アクセラレータと accelerator_view オブジェクトの使用](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects)」および「プロジェクト設定」を参照してください。
+ GPU コード内のブレークポイントがヒットするのは、コードが [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF) アクセラレータで実行されている場合のみです。 コード内でアクセラレータを指定していない場合は、REF アクセラレータがプロジェクトのプロパティの **[デバッグ アクセラレータの種類]** で自動的に選択されます。 コード内でアクセラレータを明示的に選択している場合、REF アクセラレータはデバッグ中に使用されません。GPU ハードウェアがデバッグをサポートしていない限り、ブレークポイントがヒットすることはありません。 この問題を解決するには、デバッグ中に REF アクセラレータを使用するようにコードを記述します。 詳細については、「プロジェクトのプロパティ」および「[アクセラレータを使用する](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects)」および「accelerator_view オブジェクトと[プロジェクトのC++設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
 ### <a name="conditional-breakpoints"></a>条件付きブレークポイント
  GPU コード内の条件付きブレークポイントはサポートされていますが、すべての式をデバイス上で評価できるとは限りません。 式はデバイスで評価できないと、デバッガーで評価されます。 デバッガーでの処理はデバイスでの処理よりも遅くなる可能性があります。
@@ -79,7 +79,7 @@ ms.locfileid: "72911567"
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>エラー: リモート サイトでタイムアウト検出と復旧 (TDR) を無効にする必要があります。
  Windows のタイムアウト検出と復旧 (TDR) で設定されている既定の時間間隔より、C++ AMP の計算が長くかかっている可能性があります。 その場合、計算は取り消され、データは失われます。 詳細については、「[Handling TDRs in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/)」 (C++ AMP での TDR の処理) を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Visual Studio で GPU デバッグを開始する](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)
