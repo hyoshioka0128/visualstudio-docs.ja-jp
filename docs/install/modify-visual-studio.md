@@ -2,7 +2,7 @@
 title: Visual Studio の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922884"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125352"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -123,6 +123,9 @@ ms.locfileid: "76922884"
 ::: moniker range="vs-2019"
 
  ワークロードには、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+
+ > [!TIP]
+>開発に必要なツールとコンポーネントのバンドルについて詳しくは、「[Visual Studio ワークロード](https://visualstudio.microsoft.com/vs/#workloads)」をご覧ください。
 
 1. Visual Studio インストーラーで、 **[ワークロード]** タブを選択し、目的のワークロードを選択または選択解除します。
 
