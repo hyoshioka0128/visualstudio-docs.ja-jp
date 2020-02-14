@@ -1,48 +1,52 @@
 ---
-title: Office 365 特典 | Microsoft Docs
+title: Office 365 Pro Plus 特典 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
-description: 一部の Visual Studio サブスクリプションに含まれる Office 365 特典について説明します。
-ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+description: 一部の Visual Studio サブスクリプションに含まれる Office 365 Pro Plus 特典について説明します。
+ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967350"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036728"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365 Pro Plus
 
-最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
+最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 Pro Plus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
 
 > [!NOTE]
-> ご利用の Visual Studio サブスクリプションでは、Office 365 を運用環境で使用することができます。  
+> ご利用の Visual Studio サブスクリプションでは、Office 365 Pro Plus を運用環境で使用することができます。  
 
-## <a name="getting-started-with-office-365"></a>Office 365 の概要 
+> [!IMPORTANT]
+> Office 365 Pro Plus のプロダクトキーの取得に関する問題が検出されています。  Microsoft ではこの問題に取り組んでおり、問題が解決されると更新プログラムが提供されます。 
 
-次の手順で Office 365 をダウンロードし、アクティブ化します。
+
+## <a name="getting-started-with-office-365-pro-plus"></a>Office 365 Pro Plus の概要
+
+次の手順で Office 365 Pro Plus をダウンロードし、アクティブ化します。
 1. Visual Studio Enterprise サブスクリプションにサインインします。
 2. **[ダウンロード]** タブをクリックします。
-3. おすすめダウンロード リストが表示されます。 Office リストから **[Office 365]** を選択します。
+3. おすすめダウンロード リストが表示されます。 Office リストから **[Office 365 Pro Plus]** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 のダウンロード](_img/vs-office365/vs-office365-downloads.png)
-0. Office 365 をインストールするには、プロダクト キーが必要です。  Office 365 リストにある **[キーの取得]** をクリックします。
+   > ![Office 365 Pro Plus のダウンロード](_img/vs-office365/vs-office365-downloads.png)
+0. Office 365 Pro Plus をインストールするには、プロダクト キーが必要です。  Office 365 Pro Plus リストにある **[キーの取得]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 のプロダクト キーの入手](_img/vs-office365/vs-office365-get-key.png)
+   > ![Office 365 Pro Plus のプロダクト キーの取得](_img/vs-office365/vs-office365-get-key.png)
 0. フライ アウト ウィンドウに、既に要求しているすべてのキーと、利用可能なキーが表示されます。  新しいキーを入手するには、**Office Professional Plus 2019** リストにある **[キーの要求]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 のプロダクト キーの要求](_img/vs-office365/vs-office365-claim-key.png)
+   > ![Office 365 Pro Plus のプロダクト キーの要求](_img/vs-office365/vs-office365-claim-key.png)
 0. 要求したキーをメモします (いつでもこのリストに戻って確認することができます)。
 0. ポップアップ ウィンドウを閉じます。
 0. **[ダウンロード]** ボタンをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 のダウンロードの開始](_img/vs-office365/vs-office365-download-button.png)
+   > ![Office 365 Pro Plus のダウンロードの開始](_img/vs-office365/vs-office365-download-button.png)
 0. Microsoft アカウントでサインインします (既にサインインしている場合は **[次へ]** をクリックします)。
 0. プロダクト キー、国または地域、言語を入力し、 **[次へ]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Office 365 のプロダクト キーの入力](_img/vs-office365/vs-office365-enter-key.png)
+   > ![Office 365 Pro Plus のプロダクト キーの入力](_img/vs-office365/vs-office365-enter-key.png)
 0. もう一度 **[次へ]** をクリックします。
 0. **[インストール]** をクリックして Office アプリケーションをインストールします。
 
@@ -77,3 +81,9 @@ Visual Studio サブスクリプションを最大限に活用できるように
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest の個人クレジット](vs-azure.md) Office 用アプリケーションを開発する予定がある場合は、[Office Developer サブスクリプション](vs-office-dev.md)をアクティブ化します。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
