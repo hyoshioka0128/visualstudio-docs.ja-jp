@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 辞書／辞典／その他
+        - name: 関連項目
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -382,6 +382,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: if ステートメントを反転させる
                   href: ide/reference/invert-if-statement.md
+                - name: 静的ローカル関数のリファクタリング オプション
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: 参照の近くへの宣言の移動
                   href: ide/reference/move-declaration-near-reference.md
                 - name: 一致するファイルへの型の移動
@@ -591,7 +593,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Windows フォーム デザイナーの DPI 認識を無効にする
               href: designers/disable-dpi-awareness.md
-            - name: 辞書／辞典／その他
+            - name: 関連項目
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -916,7 +918,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 辞書／辞典／その他
+- name: 関連項目
   items:
     - name: キーボード ショートカット
       items:
@@ -928,7 +930,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio のコマンド
       items:
-        - name: 辞書／辞典／その他
+        - name: 関連項目
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: コマンドの別名
@@ -1182,7 +1184,7 @@
           href: ide/reference/output-window.md
         - name: プロジェクトのプロパティ
           items:
-            - name: 辞書／辞典／その他
+            - name: 関連項目
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: '[アプリケーション] ページ (プロジェクト デザイナー) (UWP)'
@@ -1253,7 +1255,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: ツールボックス
           items:
-            - name: 辞書／辞典／その他
+            - name: 関連項目
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'ツールボックス、[コンポーネント] タブ'
@@ -1264,7 +1266,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv コマンドライン スイッチ
       items:
-        - name: 辞書／辞典／その他
+        - name: 関連項目
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
