@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401019"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271814"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル : C/C++ コード分析による障害の検出
 
@@ -28,7 +28,7 @@ ms.locfileid: "75401019"
 - 警告をエラーとして扱います。
 - コード障害分析を改善するためにソースコードに注釈を付けます。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>前提条件
 
 - [デモサンプル](../code-quality/demo-sample.md)のコピー。
 - C/C++の基本を理解している。
@@ -169,7 +169,7 @@ ms.locfileid: "75401019"
 
      プロジェクトは、警告やエラーなしでビルドされるようになりました。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [チュートリアル: コード障害に対するマネージコードの分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [C/C++のコード分析](../code-quality/code-analysis-for-c-cpp-overview.md)

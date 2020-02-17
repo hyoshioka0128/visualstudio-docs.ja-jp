@@ -1,0 +1,77 @@
+### YamlMime:Landing
+title: Visual Studio データ ツールのドキュメント
+summary: Visual Studio と .NET ツールを使用してデータ アプリケーションを開発する
+metadata:
+  title: データ ソリューションを開発する
+  description: .NET ツール、SQL Server Data Tools、Azure Data Lake、Azure HDInsight、Azure Stream Analytics などの、Visual Studio でデータ ソリューションを開発するためのさまざまなツールについて説明します。
+  ms.date: 01/01/2018
+  author: ghogen
+  ms.author: ghogen
+  ms.topic: landing-page
+  ms.workload:
+  - data-storage
+  ms.openlocfilehash: b7ac7cd7e968e4ea975e87ff5357be0d6e693f76
+  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/15/2020
+  ms.locfileid: "77280736"
+landingContent:
+- title: .NET
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET 用の Visual Studio データ ツール
+      url: visual-studio-data-tools-for-dotnet.md
+    - text: データセットのツール
+      url: dataset-tools-in-visual-studio.md
+    - text: Entity Framework のツール
+      url: entity-data-model-tools-in-visual-studio.md
+    - text: SQL ツールへのリンク
+      url: linq-to-sql-tools-in-visual-studio2.md
+    - text: WCF および WCF Data Services (OData) ツール
+      url: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
+  - linkListType: tutorial
+    links:
+    - text: ADO.NET データ アプリケーション
+      url: create-a-simple-data-application-by-using-adonet.md
+    - text: WPF と Entity Framework 6
+      url: create-a-simple-data-application-with-wpf-and-entity-framework-6.md
+    - text: n 層データ アプリケーション
+      url: walkthrough-creating-an-n-tier-data-application.md
+    - text: WPF と Entity Framework を使用した WCF Data Service
+      url: walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md
+  - linkListType: concept
+    links:
+    - text: ADO.NET
+      url: /dotnet/framework/data/adonet/index
+    - text: Entity Framework 6
+      url: /ef/ef6/
+    - text: Entity Framework Core
+      url: /ef/core/
+- title: データ ツール
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio でのデータの使用
+      url: /visualstudio/data-tools/accessing-data-in-visual-studio
+    - text: SQL Server Data Tools の操作
+      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15
+    - text: C++ でのデータ アクセス
+      url: /cpp/data/data-access-in-cpp?view=vs-2019
+- title: Azure
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure SQL データベース
+      url: /azure/sql-database/sql-database-connect-query-dotnet-visual-studio
+    - text: Cosmos DB - .NET コンソール アプリ
+      url: /azure/cosmos-db/sql-api-get-started
+    - text: Cosmos DB - .NET Web アプリ
+      url: /azure/cosmos-db/sql-api-dotnet-application
+    - text: Azure Data Lake Analytics
+      url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - text: HDInsight
+      url: /azure/hdinsight/hdinsight-hadoop-visual-studio-tools-get-started
+    - text: Azure Stream Analytics
+      url: /azure/stream-analytics/stream-analytics-tools-for-visual-studio

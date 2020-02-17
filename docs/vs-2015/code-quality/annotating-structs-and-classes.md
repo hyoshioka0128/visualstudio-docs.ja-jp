@@ -21,44 +21,44 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157076"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271574"
 ---
 # <a name="annotating-structs-and-classes"></a>構造体とクラスに注釈を付ける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-インバリアントのように動作する注釈を使用して構造体とクラスのメンバーに注釈を付けることができます: これらは true に、関数呼び出し、または関数の開始/終了パラメーターまたは結果の値として外側の構造体を含むと見なされます。  
+インバリアントとして機能する注釈を使用して、構造体とクラスのメンバーに注釈を付けることができます。これらは、外側の構造体をパラメーターまたは結果値として含む関数の呼び出しまたは関数の開始/終了時に true と見なされます。  
   
 ## <a name="struct-and-class-annotations"></a>構造体とクラスの注釈  
   
 - `_Field_range_(low, high)`  
   
-     フィールドがから (包括) の範囲である`low`に`high`します。  等価`_Satisfies_(_Curr_ >= low && _Curr_ <= high)`適切なプリトリガーまたは条件を使用して、注釈付きのオブジェクトに適用します。  
+     フィールドは、`low` から `high`までの範囲内にあります。  適切な事前条件または事後条件を使用して、注釈付きオブジェクトに適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` と同じです。  
   
-- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
+- `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     要素 (またはバイト数) とで指定された書き込み可能なサイズのフィールド`size`します。  
+     `size`によって指定された、要素 (またはバイト) に書き込み可能サイズを持つフィールド。  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`、`_Field_size_part_opt_(size, count)`、`_Field_size_bytes_part_(size, count)`、`_Field_size_bytes_part_opt_(size, count)`  
   
-     要素 (またはバイト数) とで指定された書き込み可能なサイズのフィールド`size`、および`count`は読み取り可能なそれらの要素 (バイト単位)。  
+     `size`によって指定された要素 (またはバイト) 内の書き込み可能サイズを持つフィールド、および読み取り可能な要素の `count` (バイト)。  
   
-- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
+- `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     読み取りと書き込みの両方のサイズの要素 (またはバイト数) とで指定されたフィールド`size`します。  
+     `size`によって指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド。  
   
 - `_Struct_size_bytes_(size)`  
   
-     読み取りと書き込みの両方のサイズの要素 (またはバイト数) とで指定されたフィールド`size`します。  
+     `size`によって指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド。  
   
-     構造体またはクラスの宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例えば:  
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、`size`によって指定されたバイト数を持つ、宣言された型よりも大きい可能性があることを示します。  次に例を示します。  
   
     ```cpp  
   
@@ -70,18 +70,18 @@ ms.locfileid: "68157076"
   
     ```  
   
-     パラメーターのバイト単位のバッファー サイズ`pM`型の`MyStruct *`が表示されます。  
+     `MyStruct *` 型のパラメーター `pM` のバイト単位のバッファーサイズは次のようになります。  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>関連項目  
- [SAL 注釈を使用して C/C++ のコード障害を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL について](../code-quality/understanding-sal.md)   
- [関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)   
+## <a name="see-also"></a>参照  
+ [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL](../code-quality/understanding-sal.md)  について  
+ [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
  [ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)   
- [注釈を適用するタイミングと場所を指定します。](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
  [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)

@@ -123,15 +123,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bd9107bed68b9b5b6f88a239b3b155440b0e654c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852392"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271621"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "75852392"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  例:  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  次に例を示します。  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "75852392"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  例:  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  次に例を示します。  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "75852392"
   
 - `_Struct_size_bytes_(size)`  
   
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  例:  
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  次に例を示します。  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -492,7 +492,7 @@ ms.locfileid: "75852392"
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
-## <a name="related-resources"></a>関連資料  
+## <a name="related-resources"></a>関連リソース  
  [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>参照  

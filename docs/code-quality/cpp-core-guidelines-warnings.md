@@ -3,17 +3,17 @@ title: C++コアガイドラインの警告
 ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
-author: mblome
-ms.author: mblome
+author: corob
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69adb52b4fa7649bd99ecb5d4e29aa69390f6076
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4bcd32d633c2b88bba53aa79b670a59bda1ebef3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807110"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271396"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -35,7 +35,7 @@ Bjarne Stroustrup によって作成されC++たコアガイドラインは、�
 
 C++コアチェック規則セットを有効または無効にするには、プロジェクトの **[プロパティページ]** ダイアログを開きます。 **[構成プロパティ]** で、 **[コード分析]** 、 **[拡張機能]** の順に展開します。 **[コアチェック (リリース) をC++有効]** にする または **[ C++コアチェックを有効にする (試験段階)** ] の横にあるドロップダウンコントロールで、[**はい]** または **[いいえ]** を選択します。 **[OK]** または **[適用]** を選択して、変更を保存します。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ここでは、 C++主要なチェック規則によって検出される可能性のあるいくつかの問題の例を示します。
 
@@ -64,7 +64,7 @@ int main()
 
 - C26485 はルールの境界です。 3: 配列からポインターへの減衰がありません。
 
-- C26481 は rule Bounds です。 1: ポインター演算は使用しないでください。 代わりに、`span` を使用してください。
+- C26481 は rule Bounds です。 1: ポインター演算は使用しないでください。 代わりに `span` を使用してください
 
 このコードC++をコンパイルするときに、コアチェックのコード分析のルールセットがインストールされ、有効になっている場合、最初の2つの警告が出力されますが、3番目の警告は抑制されます。 コード例のビルド出力を次に示します。
 
@@ -78,13 +78,13 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-コードC++をより適切に記述するための主要ガイドラインがあります。 ただし、ルールまたはプロファイルを適用できないインスタンスがある場合は、コード内で直接非表示にするのが簡単です。 @No__t_0 属性を使用して、次C++のコードブロックの規則違反を検出および報告するようにコアチェックを維持することができます。 個々のステートメントをマークして、特定のルールを抑制することができます。 特定のルール番号を含めずに `[[gsl::suppress(bounds)]]` を記述して、境界プロファイル全体を抑制することもできます。
+コードC++をより適切に記述するための主要ガイドラインがあります。 ただし、ルールまたはプロファイルを適用できないインスタンスがある場合は、コード内で直接非表示にするのが簡単です。 `gsl::suppress` 属性を使用して、次C++のコードブロックの規則違反を検出および報告するようにコアチェックを維持することができます。 個々のステートメントをマークして、特定のルールを抑制することができます。 特定のルール番号を含めずに `[[gsl::suppress(bounds)]]` を記述して、境界プロファイル全体を抑制することもできます。
 
 ## <a name="supported-rule-sets"></a>サポートされている規則セット
 
 新しいルールがC++コアガイドラインチェッカーに追加されると、既存のコードに対して生成される警告の数が増加する可能性があります。 定義済みの規則セットを使用して、有効にする規則の種類をフィルター処理できます。 Visual Studio 2017 バージョン15.3 の場合、サポートされている規則セットは次のとおりです。
 
-- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **所有者ポインターの規則**[は、 C++コアガイドラインから > 所有者\<t に関連するリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
 - **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
 
@@ -98,7 +98,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
 警告を1つまたは複数のグループに制限することを選択できます。 **ネイティブの最小**および**ネイティブで推奨**されるC++規則セットには、他の PREfast チェックに加えて、コアチェック規則が含まれています。 使用可能な規則セットを表示するには、プロジェクトのプロパティ ダイアログボックスを開き、**コード分析** を選択し、**規則セット** コンボボックスでドロップダウンを開き、 **複数の規則セットを選択**します を選択します。 Visual Studio での規則セットの使用方法の詳細については、「[規則セットを使用したコード分析規則のグループ化](using-rule-sets-to-group-code-analysis-rules.md)」を参照してください。
 
-## <a name="macros"></a>[マクロ]
+## <a name="macros"></a>マクロ
 
 コアC++ガイドラインチェッカーには、コード内の警告のカテゴリ全体を簡単に抑制できるようにするマクロを定義するヘッダーファイルが付属しています。
 
@@ -152,9 +152,9 @@ Microsoft C++コンパイラでは、gsl 抑制属性のサポートが制限さ
 
 2. [プロパティ] を選択します。 **C/C++|コマンドライン**
 
-3. **[追加オプション]** ウィンドウで、`/wd26400` を追加します。
+3. **[追加オプション]** ウィンドウで、`/wd26400`を追加します。
 
-[コマンドライン] オプションを使用すると、`/analyze-` を指定することによって、ファイルのすべてのコード分析を一時的に無効にすることができます。 これにより、' */analyze ' を '/analyze e-' でオーバーライド*する警告 D9025 が生成されます。これにより、後でコード分析を再度有効にするように通知されます。
+[コマンドライン] オプションを使用すると、`/analyze-`を指定することによって、ファイルのすべてのコード分析を一時的に無効にすることができます。 これにより、' */analyze ' を '/analyze e-' でオーバーライド*する警告 D9025 が生成されます。これにより、後でコード分析を再度有効にするように通知されます。
 
 ## <a name="corecheck_per_file"></a>特定のC++プロジェクトファイルに対する主要なガイドラインチェッカーの有効化
 
