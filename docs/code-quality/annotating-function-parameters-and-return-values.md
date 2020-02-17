@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879270"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271079"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 この記事では、単純な関数パラメーター (スカラー、構造体とクラスへのポインター)、およびほとんどの種類のバッファーに対する注釈の一般的な使用方法について説明します。  この記事では、注釈の一般的な使用パターンについても説明します。 関数に関連するその他の注釈については、「[関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)」を参照してください。
@@ -220,7 +220,7 @@ ms.locfileid: "74879270"
 
      `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後状態では、`c`番目の要素までの要素が有効である必要があります。  `_bytes_` variant は、サイズが要素数ではなくバイト数でわかっている場合に使用できます。
      
-     例:
+     次に例を示します。
 
      ```cpp
      void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
@@ -251,7 +251,7 @@ ms.locfileid: "74879270"
 
      `p - _Curr_` (つまり、`p` をマイナス `_Curr_`) する配列へのポインターが有効な式です。  `p` 前の要素は、事前状態で有効である必要があります。
 
-    例:
+    たとえば次のようになります。
     ```cpp
     int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
     ```
@@ -516,7 +516,7 @@ ms.locfileid: "74879270"
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  例:
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  次に例を示します。
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -524,7 +524,7 @@ ms.locfileid: "74879270"
 
      `min(pM->nSize, sizeof(MyStruct))`
 
-## <a name="related-resources"></a>関連資料
+## <a name="related-resources"></a>関連リソース
 
 [コード分析チームのブログ](https://blogs.msdn.microsoft.com/codeanalysis/)
 

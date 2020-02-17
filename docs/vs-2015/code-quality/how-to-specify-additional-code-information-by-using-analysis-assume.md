@@ -1,5 +1,5 @@
 ---
-title: '方法: _Analysis_assume を使用してコードを追加情報を指定します |Microsoft Docs'
+title: '方法: __analysis_assume | を使用して追加のコード情報を指定するMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - __analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685821"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277976"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>方法: __analysis_assume を使用して追加のコード情報を指定する
+# <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>方法: __analysis_assume を使用して追加のコード情報を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-C/C++ コード分析のプロセスを支援し、警告を減らすは、コード分析ツールへのヒントを指定できます。 追加情報を提供するには、次の関数を使用します。  
+C/C++ code のコード分析ツールにヒントを提供して、分析プロセスを支援し、警告を減らすことができます。 追加情報を提供するには、次の関数を使用します。  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr` -任意の式は true と評価されると見なされます。  
+ `expr`-true と評価されることを想定している任意の式。  
   
- コード分析ツールでは、関数が表示され、式が変更されるまで、たとえば、変数への代入によってが true の時点で、式で表される条件のことを前提としています。  
+ コード分析ツールでは、式によって表される条件が、関数が出現する位置で true であることを前提としています。また、変数への代入などによって、式が変更されるまでは true のままです。  
   
 > [!NOTE]
-> `__analysis_assume` コードの最適化には影響しません。 コード分析ツールでは、外部`__analysis_assume`操作なしとして定義されます。  
+> `__analysis_assume` は、コードの最適化には影響しません。 コード分析ツールの外部では、`__analysis_assume` は no op として定義されます。  
   
 ## <a name="example"></a>例  
- 次のコードでは`__analysis_assume`コード分析の警告を解決する[C6388](../code-quality/c6388.md):  
+ 次のコードでは、`__analysis_assume` を使用して、コード分析の警告[C6388](../code-quality/c6388.md)を修正します。  
   
 ```  
 #include<windows.h>  
@@ -58,5 +58,5 @@ void test( )
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [__assume](https://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)

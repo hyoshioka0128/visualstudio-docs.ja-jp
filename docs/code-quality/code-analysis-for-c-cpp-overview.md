@@ -16,17 +16,17 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4991a72b2761e96e143bfa33e0b55f9a4e9467c6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806310"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271219"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 
@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 ビルド システムの統合機能を使用すると、コード分析ツールを [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] ビルド プロセスのステップとして実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイックスタート: C/のコード分析C++](quick-start-code-analysis-for-c-cpp.md)
 - [チュートリアル: C/C++コードを分析して欠陥を分析する](walkthrough-analyzing-c-cpp-code-for-defects.md)

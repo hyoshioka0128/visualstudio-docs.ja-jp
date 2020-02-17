@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445636"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272320"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>クイックスタート: C/C++ のコード分析
 
@@ -107,6 +107,6 @@ Visual Studio には、ネイティブ コードの規則として 2 つの標�
 
 - **警告を重要度順にフィルター処理する**: 既定では、コード分析メッセージには**警告**の重大度が割り当てられます。 1つまたは複数のメッセージの重大度を、カスタム規則セットの**エラー**として割り当てることができます。 **エラー一覧**の **重要度** 列で、ドロップダウン矢印をクリックし、フィルター アイコンをクリックします。 **[警告]** または **[エラー]** を選択すると、それぞれの重要度が割り当てられているメッセージのみが表示されます。 すべてのメッセージを表示するには、[**すべて選択]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C/のコード分析C++](../code-quality/code-analysis-for-c-cpp-overview.md)

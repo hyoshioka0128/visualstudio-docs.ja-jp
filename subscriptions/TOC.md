@@ -27,7 +27,7 @@
 ### ツール
 #### [Azure DevTest の個人クレジット](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure 重量課金](vs-azure-payg.md)
+#### [Azure DevTest の従量課金制](vs-azure-payg.md)
 #### [CAST の強調表示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
@@ -83,8 +83,8 @@
 ### [サブスクリプションのエクスポート](exporting-subscriptions.md)
 ### [超過](handle-overclaimed-license.md)
 ### [最大使用量](maximum-usage.md)
-### [有効期限が切れたサブスクリプション](handle-expired-license.md)
-### [エイリアスを使用するサブスクライバー](aliasing.md)
+### [有効期限が切れたサブスクリプションに対応する](handle-expired-license.md)
+### [サブスクライバーのサインイン シナリオ](aliasing.md)
 ### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
 ### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
 # リソース

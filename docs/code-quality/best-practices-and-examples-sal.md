@@ -2,17 +2,17 @@
 title: ベスト プラクティスと例 (SAL)
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 601d90ed7e310f058fbf816469fef7374363951f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789779"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265139"
 ---
 # <a name="best-practices-and-examples-sal"></a>ベスト プラクティスと例 (SAL)
 ここでは、ソースコード注釈言語 (SAL) を最大限に活用し、いくつかの一般的な問題を回避する方法をいくつか紹介します。
@@ -63,7 +63,7 @@ void Func2(_Out_ int *p1)
 
 ## <a name="_pre_defensive_-and-_post_defensive_"></a>\_防御\_ と \_\_防御を \_\_
 
-関数が信頼境界にある場合は、`_Pre_defensive_` 注釈を使用することをお勧めします。  "防御" 修飾子は、呼び出しの時点で、インターフェイスを厳密に確認する必要があることを示すために、特定の注釈を変更します。ただし、実装本文では、正しくないパラメーターが渡される可能性があると想定する必要があります。 この場合、`_In_ _Pre_defensive_` は信頼境界で推奨されます。これは、呼び出し元が NULL を渡すとエラーが発生し、関数本体は、パラメーターが NULL であるかどうかとして分析され、先にポインターを逆参照しようとすると、NULL を確認すると、フラグが設定されます。  `_Post_defensive_` 注釈は、信頼できるパーティが呼び出し元であると見なされ、信頼されていないコードが呼び出されたコードであるコールバックで使用することもできます。
+関数が信頼境界にある場合は、`_Pre_defensive_` 注釈を使用することをお勧めします。  "防御" 修飾子は、呼び出しの時点で、インターフェイスを厳密に確認する必要があることを示すために、特定の注釈を変更します。ただし、実装本文では、正しくないパラメーターが渡される可能性があると想定する必要があります。 この場合、`_In_ _Pre_defensive_` は信頼境界で推奨されています。これは、呼び出し元が NULL を渡すとエラーが発生した場合でも、パラメーターが null であるかのように関数本体が分析され、最初に NULL をチェックしないでポインターを逆参照しようとすると、フラグが設定されます。  `_Post_defensive_` 注釈は、信頼できるパーティが呼び出し元であると見なされ、信頼されていないコードが呼び出されたコードであるコールバックで使用することもできます。
 
 ## <a name="_out_writes_"></a>\_\_書き込み\_
 
@@ -185,7 +185,7 @@ int Func2(_In_ MyData *p, int flag);
 
 ## <a name="true-in-_success_"></a>\_成功した場合は TRUE\_
 
-戻り値が0以外の場合に関数が成功した場合は、`return == TRUE` ではなく、成功の条件として `return != 0` を使用します。 0以外の場合、必ずしもコンパイラが `TRUE` に提供する実際の値と等価であるとは限りません。 `_Success_` するパラメーターは式であり、次の式は等価として評価されます。 `return != 0`、`return != false`、`return != FALSE`、および `return` をパラメーターまたは比較なしで評価します。
+戻り値が0以外の場合に関数が成功した場合は、`return == TRUE`ではなく、成功の条件として `return != 0` を使用します。 0以外の場合、必ずしもコンパイラが `TRUE`に提供する実際の値と等価であるとは限りません。 `_Success_` するパラメーターは式であり、次の式は等価として評価されます。 `return != 0`、`return != false`、`return != FALSE`、および `return` をパラメーターまたは比較なしで評価します。
 
 ```cpp
 // Incorrect

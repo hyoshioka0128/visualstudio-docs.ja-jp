@@ -3,21 +3,21 @@ title: SAL について
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807088"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271826"
 ---
 # <a name="understanding-sal"></a>SAL について
 
-Microsoft ソースコード注釈言語 (SAL) は、関数がパラメーターをどのように使用するか、そのパラメーターについての前提条件、および終了時に実行する保証を記述するために使用できる一連の注釈を提供します。 注釈は、ヘッダーファイル `<sal.h>` で定義されています。 の Visual Studio code 分析C++では、SAL 注釈を使用して関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、「 [Windows ドライバーの sal 2.0 注釈](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)」を参照してください。
+Microsoft ソースコード注釈言語 (SAL) は、関数がパラメーターをどのように使用するか、そのパラメーターについての前提条件、および終了時に実行する保証を記述するために使用できる一連の注釈を提供します。 注釈は、ヘッダーファイル `<sal.h>`で定義されています。 の Visual Studio code 分析C++では、SAL 注釈を使用して関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、「 [Windows ドライバーの sal 2.0 注釈](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)」を参照してください。
 
 ネイティブでは、 C++ C とは、開発者がインテントと非分散を一貫して表現するための限られた方法のみを提供します。 SAL 注釈を使用すると、関数を使用する開発者がその使用方法について理解を深めることができるように、関数をより詳細に記述できます。
 
@@ -27,7 +27,7 @@ Microsoft ソースコード注釈言語 (SAL) は、関数がパラメーター
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL でコードの価値を高める
 
-SAL は、人間とコード分析ツールの両方において、コードのデザインを理解しやすくするのに役立ちます。 次の例は、C ランタイム関数 `memcpy` を示しています。
+SAL は、人間とコード分析ツールの両方において、コードのデザインを理解しやすくするのに役立ちます。 次の例は、C ランタイム関数 `memcpy`を示しています。
 
 ```cpp
 
@@ -38,7 +38,7 @@ void * memcpy(
 );
 ```
 
-この関数の動作を確認できますか。 関数が実装または呼び出された場合、プログラムの正確性を確保するために、特定のプロパティを維持する必要があります。 例に示すような宣言を調べるだけで、何があるのかわかりません。 SAL 注釈がない場合は、ドキュメントまたはコードのコメントに依存する必要があります。 @No__t_0 の MSDN ドキュメントは次のようになります。
+この関数の動作を確認できますか。 関数が実装または呼び出された場合、プログラムの正確性を確保するために、特定のプロパティを維持する必要があります。 例に示すような宣言を調べるだけで、何があるのかわかりません。 SAL 注釈がない場合は、ドキュメントまたはコードのコメントに依存する必要があります。 `memcpy` の MSDN ドキュメントは次のようになります。
 
 > "Src のバイト数をコピーして dest にコピーします。 コピー元とコピー先が重複する場合、memcpy の動作は未定義です。 重複する領域を処理するには、memmove を使用します。
 > **セキュリティに関する注意:** コピー先のバッファーがコピー元のバッファーのサイズと同じか、それより大きいことを確認してください。 詳細については、「バッファーオーバーランの回避」を参照してください。
@@ -49,7 +49,7 @@ void * memcpy(
 
 - コピー先のバッファーは、少なくともコピー元のバッファーと同じサイズである必要があります。
 
-ただし、コンパイラはドキュメントや非公式のコメントを読み取ることができません。 2つのバッファーと `count` の間にリレーションシップがあることはわかりません。また、リレーションシップを効果的に推測することもできません。 次に示すように、SAL を使用すると、関数のプロパティと実装についてより明確にすることができます。
+ただし、コンパイラはドキュメントや非公式のコメントを読み取ることができません。 2つのバッファーと `count`の間にリレーションシップがあることはわかりません。また、リレーションシップを効果的に推測することもできません。 次に示すように、SAL を使用すると、関数のプロパティと実装についてより明確にすることができます。
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-これらの注釈は MSDN ドキュメントの情報に似ていますが、より簡潔で、意味のあるパターンに従うことに注意してください。 このコードを読むと、この関数のプロパティをすばやく理解し、バッファーオーバーランのセキュリティ問題を回避する方法を確認できます。 さらに、SAL が提供するセマンティックパターンを使用すると、潜在的なバグを早期に検出する際の自動化されたコード分析ツールの効率と効果を向上させることができます。 @No__t_0 のこのようなバグのある実装をだれかが書いているとします。
+これらの注釈は MSDN ドキュメントの情報に似ていますが、より簡潔で、意味のあるパターンに従うことに注意してください。 このコードを読むと、この関数のプロパティをすばやく理解し、バッファーオーバーランのセキュリティ問題を回避する方法を確認できます。 さらに、SAL が提供するセマンティックパターンを使用すると、潜在的なバグを早期に検出する際の自動化されたコード分析ツールの効率と効果を向上させることができます。 `wmemcpy`のこのようなバグのある実装をだれかが書いているとします。
 
 ```cpp
 
@@ -154,7 +154,7 @@ void BadInCaller()
 }
 ```
 
-この例で Visual Studio Code 分析を使用すると、呼び出し元が Null 以外のポインターを `pInt` のために初期化されたバッファーに渡すことが検証されます。 この場合、`pInt` ポインターを NULL にすることはできません。
+この例で Visual Studio Code 分析を使用すると、呼び出し元が Null 以外のポインターを `pInt`のために初期化されたバッファーに渡すことが検証されます。 この場合、`pInt` ポインターを NULL にすることはできません。
 
 ### <a name="example-the-_in_opt_-annotation"></a>例:\_opt\_ 注釈の \_
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code の分析では、呼び出し元が NULL 以外のポインターを `pInt` 用に初期化されたバッファーに渡すこと、およびが返される前に `pInt` が NULL 以外で、バッファーが初期化されることを検証します。
+Visual Studio Code の分析では、呼び出し元が NULL 以外のポインターを `pInt`用に初期化されたバッファーに渡すこと、およびが返される前に `pInt` が NULL 以外で、バッファーが初期化されることを検証します。
 
 ### <a name="example-the-_inout_opt_-annotation"></a>例: \_Inout\_opt\_ 注釈
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code の分析では、呼び出し元が `*pInt` に対して NULL 以外のポインターを渡し、バッファーが返される前に関数によって初期化されることを検証します。
+Visual Studio Code の分析では、呼び出し元が `*pInt`に対して NULL 以外のポインターを渡し、バッファーが返される前に関数によって初期化されることを検証します。
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>例: \_Outptr\_opt\_ 注釈
 
@@ -400,11 +400,11 @@ Microsoft パブリックヘッダーには既に注釈が付けられていま�
 
 または、すべてのパラメーターに注釈を付けて、目的を明確にし、注釈が完了したことを簡単に確認できるようにすることもできます。
 
-## <a name="related-resources"></a>関連資料
+## <a name="related-resources"></a>関連リソース
 
 [コード分析チームのブログ](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)

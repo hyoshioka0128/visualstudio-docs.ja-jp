@@ -2,17 +2,17 @@
 title: C++ Core ガイドライン チェッカーの使用
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 95b3af7db7fc0e4c71d78716714031fd07dbdab5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807075"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271774"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -31,7 +31,7 @@ Bjarne Stroustrup によって作成されC++たコアガイドラインは、�
 
 ![追加C++のコアチェックルールセットのドロップダウン](media/cppcorecheck_codeanalysis_extensions.png)
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 ここでは、 C++主要なチェック規則によって検出される可能性のあるいくつかの問題の例を示します。
 
 ```cpp
@@ -59,7 +59,7 @@ int main()
 
 - C26485 はルールの境界です。 3: 配列からポインターへの減衰がありません。
 
-- C26481 は rule Bounds です。 1: ポインター演算は使用しないでください。 代わりに、`span` を使用してください。
+- C26481 は rule Bounds です。 1: ポインター演算は使用しないでください。 代わりに `span` を使用してください
 
 このコードC++をコンパイルするときに、コアチェックのコード分析のルールセットがインストールされ、有効になっている場合、最初の2つの警告が出力されますが、3番目の警告は抑制されます。 コード例のビルド出力を次に示します。
 
@@ -73,14 +73,14 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-コードC++をより適切に記述するための主要ガイドラインがあります。 ただし、ルールまたはプロファイルを適用できないインスタンスがある場合は、コード内で直接非表示にするのが簡単です。 @No__t_0 属性を使用して、次C++のコードブロックの規則違反を検出および報告するようにコアチェックを維持することができます。 個々のステートメントをマークして、特定のルールを抑制することができます。 特定のルール番号を含めずに `[[gsl::suppress(bounds)]]` を記述して、境界プロファイル全体を抑制することもできます。
+コードC++をより適切に記述するための主要ガイドラインがあります。 ただし、ルールまたはプロファイルを適用できないインスタンスがある場合は、コード内で直接非表示にするのが簡単です。 `gsl::suppress` 属性を使用して、次C++のコードブロックの規則違反を検出および報告するようにコアチェックを維持することができます。 個々のステートメントをマークして、特定のルールを抑制することができます。 特定のルール番号を含めずに `[[gsl::suppress(bounds)]]` を記述して、境界プロファイル全体を抑制することもできます。
 
 ## <a name="supported-rule-sets"></a>サポートされている規則セット
 新しいルールがC++コアガイドラインチェッカーに追加されると、既存のコードに対して生成される警告の数が増加する可能性があります。 定義済みの規則セットを使用して、有効にする規則の種類をフィルター処理できます。
 ほとんどの規則のリファレンストピックについては、「 [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md)」を参照してください。
 
 Visual Studio 2017 バージョン15.3 の場合、サポートされている規則セットは次のとおりです。
-- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **所有者ポインターの規則**[は、 C++コアガイドラインから > 所有者\<t に関連するリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
 - **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
 
@@ -107,7 +107,7 @@ Visual Studio 2017 バージョン15.3 の場合、サポートされている�
 
 警告を1つまたは複数のグループに制限することを選択できます。 **ネイティブの最小**および**ネイティブで推奨**されるC++規則セットには、他の PREfast チェックに加えて、コアチェック規則が含まれています。 使用可能な規則セットを表示するには、プロジェクトのプロパティ ダイアログボックスを開き、**コード分析** を選択し、**規則セット** コンボボックスでドロップダウンを開き、 **複数の規則セットを選択**します を選択します。 Visual Studio での規則セットの使用方法の詳細については、「[規則セットを使用したコード分析規則のグループ化](using-rule-sets-to-group-code-analysis-rules.md)」を参照してください。
 
-## <a name="macros"></a>[マクロ]
+## <a name="macros"></a>マクロ
 
 コアC++ガイドラインチェッカーには、コード内の警告のカテゴリ全体を簡単に抑制できるようにするマクロを定義するヘッダーファイルが付属しています。
 
@@ -161,9 +161,9 @@ Microsoft C++コンパイラでは、gsl 抑制属性のサポートが制限さ
 
 2. [プロパティ] を選択します。 **C/C++|コマンドライン**
 
-3. **[追加オプション]** ウィンドウで、`/wd26400` を追加します。
+3. **[追加オプション]** ウィンドウで、`/wd26400`を追加します。
 
-コマンドラインオプションを使用して、`/analyze-` を指定することにより、ファイルのすべてのコード分析を一時的に無効にすることができます。 これ*により、'/analyze ' を '/analyze e-' でオーバーライド*する警告 D9025 が生成されます。これにより、後でコード分析を再度有効にするように通知されます。
+コマンドラインオプションを使用して、`/analyze-`を指定することにより、ファイルのすべてのコード分析を一時的に無効にすることができます。 これ*により、'/analyze ' を '/analyze e-' でオーバーライド*する警告 D9025 が生成されます。これにより、後でコード分析を再度有効にするように通知されます。
 
 ## <a name="corecheck_per_file"></a>特定のC++プロジェクトファイルでコアガイドラインチェッカーを有効にする
 
@@ -253,6 +253,6 @@ Visual Studio 2015 を使用する場合、 C++コアチェックのコード分
 
    NuGet パッケージは、プロジェクトに対してコード分析を有効にしたときに呼び出される追加の MSBuild *. .targets*ファイルをプロジェクトに追加します。 この *.targets*ファイルは、Visual C++ Studio コード分析ツールに追加の拡張機能としてコアチェック規則を追加します。 パッケージがインストールされている場合は、[プロパティページ] ダイアログボックスを使用して、リリースおよび試験的な規則を有効または無効にすることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio C++ Core Check リファレンス](code-analysis-for-cpp-corecheck.md)

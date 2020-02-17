@@ -19,17 +19,17 @@ f1_keywords:
 - _Field_size_full_opt_
 - _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 0ebcd88df8508ae534ab51289016261193f54380
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271035"
 ---
 # <a name="annotating-structs-and-classes"></a>構造体とクラスに注釈を付ける
 
@@ -41,15 +41,15 @@ ms.locfileid: "74879257"
 
      フィールドは、`low` から `high`までの範囲内にあります。  適切な事前条件または事後条件を使用して、注釈付きオブジェクトに適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` と同じです。
 
-- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
+- `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
      `size`によって指定された、要素 (またはバイト) に書き込み可能サイズを持つフィールド。
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`、`_Field_size_part_opt_(size, count)`、`_Field_size_bytes_part_(size, count)`、`_Field_size_bytes_part_opt_(size, count)`
 
      `size`によって指定された要素 (またはバイト) 内の書き込み可能サイズを持つフィールド、および読み取り可能な要素の `count` (バイト)。
 
-- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
+- `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
      `size`によって指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド。
 
@@ -59,7 +59,7 @@ ms.locfileid: "74879257"
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、`size`によって指定されたバイト数を持つ、宣言された型よりも大きい可能性があることを示します。  例:
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、`size`によって指定されたバイト数を持つ、宣言された型よりも大きい可能性があることを示します。  次に例を示します。
 
     ```cpp
 
@@ -77,7 +77,7 @@ ms.locfileid: "74879257"
     min(pM->nSize, sizeof(MyStruct))
     ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ```cpp
 #include <sal.h>
@@ -105,7 +105,7 @@ struct MyBuffer
 
 この例のメモ:
 
-- `_Field_z_` は `_Null_terminated_` と同じです。  [名前] フィールドの `_Field_z_` では、[名前] フィールドが null で終わる文字列であることを指定します。
+- `_Field_z_` は `_Null_terminated_` に相当します。  [名前] フィールドの `_Field_z_` では、[名前] フィールドが null で終わる文字列であることを指定します。
 - `bufferSize` の `_Field_range_` は、`bufferSize` の値が1から `MaxBufferSize` (両方を含む) であることを指定します。
 - `_Struct_size_bytes_` と `_Field_size_` の注釈の最終的な結果は同等です。 同様のレイアウトを持つ構造体またはクラスの場合、`_Field_size_` は、同等の `_Struct_size_bytes_` 注釈よりも参照と計算が少なくなるため、読み取りと保守が簡単になります。 `_Field_size_` では、バイトサイズへの変換は必要ありません。 Byte サイズが唯一のオプションである場合 (たとえば、void ポインターフィールドの場合) は、`_Field_size_bytes_` を使用できます。 `_Struct_size_bytes_` と `_Field_size_` の両方が存在する場合は、両方ともツールで使用できます。 2つの注釈が一致しない場合の対処方法は、ツールによって異なります。
 

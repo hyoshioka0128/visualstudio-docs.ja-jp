@@ -27,17 +27,17 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ae15230557ee0c415082f981a7ad3588694eadea
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402028"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265133"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 マルチスレッドプログラムの同時実行のバグを回避するには、常に適切なロックの規範に従い、SAL 注釈を使用します。
@@ -64,7 +64,7 @@ SAL は、重要なセクション、ミューテックス、スピンロック�
 ## <a name="locking-annotations"></a>ロックの注釈
 次の表に、ロックの注釈の一覧を示します。
 
-|注釈|説明|
+|注釈|[説明]|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの排他ロックカウントによって関数がインクリメントされることを示します。|
 |`_Acquires_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトのロックカウントによって関数がインクリメントされることを示します。|
@@ -88,7 +88,7 @@ SAL は、重要なセクション、ミューテックス、スピンロック�
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>非公開のロック オブジェクトに対する SAL の組み込み
 特定のロックオブジェクトは、関連付けられているロック関数の実装によって公開されません。  次の表に、これらの非公開のロックオブジェクトを操作する関数に対する注釈を有効にする SAL 組み込み変数を示します。
 
-|注釈|説明|
+|注釈|[説明]|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|キャンセルスピンロックについて説明します。|
 |`_Global_critical_region_`|クリティカル領域について説明します。|
@@ -98,7 +98,7 @@ SAL は、重要なセクション、ミューテックス、スピンロック�
 ## <a name="shared-data-access-annotations"></a>共有データ アクセスの注釈
 次の表は、共有データアクセスの注釈を示しています。
 
-|注釈|説明|
+|注釈|[説明]|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|
 |`_Interlocked_`|変数に注釈をし、`_Guarded_by_(_Global_interlock_)`に相当します。|
@@ -108,7 +108,7 @@ SAL は、重要なセクション、ミューテックス、スピンロック�
 ## <a name="smart-lock-and-raii-annotations"></a>注釈の Smart Lock と RAII
 通常、スマートロックはネイティブロックをラップし、その有効期間を管理します。 次の表に、`move` セマンティクスをサポートするスマートロックと RAII コーディングパターンで使用できる注釈を示します。
 
-|注釈|説明|
+|注釈|[説明]|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|スマートロックが取得されたことを想定するようにアナライザーに指示します。 この注釈では、パラメーターとして参照ロックの種類が想定されています。|
 |`_Analysis_assume_smart_lock_released_`|スマートロックが解放されたことを想定するようにアナライザーに指示します。 この注釈では、パラメーターとして参照ロックの種類が想定されています。|
