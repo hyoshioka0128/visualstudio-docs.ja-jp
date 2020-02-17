@@ -78,7 +78,7 @@ TypeScript や Babel などのトランスパイラによってソースが縮�
 2. デバッグが有効な状態でブラウザーを起動します。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 以降では、ブラウザーの起動時に `--remote-debugging-port=9222` フラグを設定することもできます。 **[デバッグ]** ツール バーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーに **Edge でのデバッグ**や **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-v16.2)を参照してください。
+    Visual Studio 2019 以降では、ブラウザーの起動時に `--remote-debugging-port=9222` フラグを設定することもできます。 **[デバッグ]** ツール バーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーに **Microsoft Edge でのデバッグ**や **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-v16.2)を参照してください。
 
     ![ブラウザーをデバッグが有効な状態で開くように設定する](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
