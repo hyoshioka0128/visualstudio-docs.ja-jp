@@ -6,15 +6,15 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848461"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278444"
 ---
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL の基礎  
  SAL は、使用パターンによって分類される4つの基本的な種類のパラメーターを定義します。  
   
-|[カテゴリ]|パラメーター注釈|説明|  
+|カテゴリ|パラメーター注釈|説明|  
 |--------------|--------------------------|-----------------|  
 |**呼び出された関数への入力**|`_In_`|呼び出された関数にデータが渡され、読み取り専用として扱われます。|  
 |**呼び出された関数への入力と、呼び出し元への出力**|`_Inout_`|使用可能なデータは関数に渡され、変更される可能性があります。|  
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  ここでは、基本的な SAL 注釈のコード例を示します。  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Visual Studio Code 分析ツールを使用して問題を検出する  
- この例では、Visual Studio Code 分析ツールを SAL 注釈と共に使用して、コードの欠陥を検出します。 その実行方法を次に示します。  
+ この例では、Visual Studio Code 分析ツールを SAL 注釈と共に使用して、コードの欠陥を検出します。 その方法を次に示します。  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio Code 分析ツールと SAL を使用するには  
   
@@ -408,7 +408,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
   または、すべてのパラメーターに注釈を付けて、目的を明確にし、注釈が完了したことを簡単に確認できるようにすることもできます。  
   
-## <a name="related-resources"></a>関連資料  
+## <a name="related-resources"></a>関連リソース  
  [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>参照  
