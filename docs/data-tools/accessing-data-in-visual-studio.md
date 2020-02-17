@@ -38,7 +38,7 @@ JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では
 
 **Microsoft Azure**
 
-- SQL Database に移動
+- SQL Database
 - Azure Cosmos DB
 - ストレージ (blob、テーブル、キュー、ファイル)
 - SQL Data Warehouse
