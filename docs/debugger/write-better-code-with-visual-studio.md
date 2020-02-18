@@ -4,7 +4,7 @@ description: Visual Studio を使用して例外を修正し、エラーを修�
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000168"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416388"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>より優れたコードを記述するためのデバッグ手法とツール
 
@@ -42,14 +42,26 @@ ms.locfileid: "72000168"
 
 アプリを作成するには:
 
-1. Visual Studio を開き、[**ファイル** > **新しい** > **プロジェクト**] を選択します。 **[ビジュアルC# ]** で、 **[Windows デスクトップ]** または **[.net Core]** を選択し、中央のウィンドウで**コンソールアプリ**を選択します。
+1. 作成するアプリの種類に応じて、Visual Studio がインストールされており、 **.Net Core クロスプラットフォームの開発**または **.net デスクトップ開発**のワークロードのいずれかがインストールされている必要があります。
 
-    > [!NOTE]
-    > **[コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** または **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
 
-2. **[名前]** フィールドに「 **Console_Parse_JSON** 」と入力し、[ **OK]** をクリックします。 Visual Studio によってプロジェクトが作成されます。
+    Visual Studio は既にインストールされていて、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** の順にクリックします。 Visual Studio インストーラーが起動します。 **.Net Core クロスプラットフォーム開発**ワークロードまたは **.net デスクトップ開発**ワークロードを選択し、 **[変更]** を選択します。
 
-3. プロジェクトの*Program.cs*ファイルの既定のコードを、次のサンプルコードに置き換えます。
+1. Visual Studio を開きます。
+
+    ::: moniker range=">=vs-2019"
+    スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。 検索ボックスに「 **console** 」と入力し、**コンソールアプリ (.net Core)** または**コンソールアプリ (.NET Framework)** のいずれかを選択します。 **[次へ]** を選択します。 **Console_Parse_JSON**のようなプロジェクト名を入力し、 **[作成]** をクリックします。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    上部のメニュー バーで、 **[ファイル]** 、 > [新規作成] **、** [プロジェクト] >  の順に選択します。 **[新しいプロジェクト]** ダイアログボックスの左ペインで、 **[ビジュアルC# ]** の下の **[コンソールアプリ]** を選択し、中央のウィンドウで **[コンソールアプリ (.net Core)]** または **[コンソールアプリ (.NET Framework)]** を選択します。 **Console_Parse_JSON**のような名前を入力し、[ **OK]** をクリックします。
+    ::: moniker-end
+
+    **コンソールアプリ (.Net Core)** または**コンソールアプリ (.NET Framework)** のプロジェクトテンプレートが表示されない場合は、 **[ツール]**  >  **[ツールと機能の取得]** に移動して、Visual Studio インストーラーを開きます。 **.Net Core クロスプラットフォーム開発**ワークロードまたは **.net デスクトップ開発**ワークロードのいずれかを選択し、 **[変更]** を選択します。
+
+    Visual Studio によってコンソール プロジェクトが作成され、ソリューション エクスプローラーの右側のウィンドウに表示されます。
+
+1. プロジェクトの*Program.cs*ファイルの既定のコードを、次のサンプルコードに置き換えます。
 
 ```csharp
 using System;
@@ -209,7 +221,7 @@ namespace Console_Parse_JSON
 internal string points;
 ```
 
-変更後は次のようになります。
+これを、次のように変更します。
 
 ```csharp
 [DataMember]
@@ -241,7 +253,7 @@ item.totalpoints += users[i].points;
 
 すべての赤の波線を修正し、少なくとも調査している場合は、すべての緑の波線が表示されたら、デバッガーを起動してアプリを実行する準備ができています。
 
-**F5** キー ( **[デバッグ] > [デバッグの開始]** ) を押すか、またはデバッグ ツールバーの **[デバッグの開始]** ボタン ![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始") を選択します。
+**F5**キー (デバッグを**開始 >** デバッグ) を押すか、[デバッグの**開始**] ボタンをクリックしてデバッグツールバーの [![デバッグ開始]](../debugger/media/dbg-tour-start-debugging.png "[デバッグ]")をクリックします。
 
 この時点で、サンプルアプリは `SerializationException` 例外 (ランタイムエラー) をスローします。 つまり、アプリでは、シリアル化しようとしているデータに対してチョークが発生します。 デバッグモード (デバッガーにアタッチされている) でアプリを起動したため、デバッガーの例外ヘルパーは例外をスローしたコードに直接アクセスし、役に立つエラーメッセージを表示します。
 
@@ -251,7 +263,7 @@ item.totalpoints += users[i].points;
 
 例外が発生した場合は、次のいくつかの質問に答える必要があります。
 
-* この例外は、修正できるバグだけですか。 または
+* この例外は、修正できるバグだけですか。 または、
 
 * この例外は、ユーザーが遭遇する可能性があるものですか。
 
@@ -261,7 +273,7 @@ item.totalpoints += users[i].points;
 users = ser.ReadObject(ms) as User[];
 ```
 
-を、次のコードで置換します。
+次のコードに置き換えます。
 
 ```csharp
 try
@@ -300,7 +312,7 @@ catch (SerializationException)
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Assert を使用してコードインテントを明確にする
 
-デバッグ ツールバーにある **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックします (**Ctrl** + **Shift** + **F5**)。 これにより、アプリがより少数の手順で再起動されます。 コンソールウィンドウに次の出力が表示されます。
+[デバッグ] ツール バーの **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックします (**Ctrl** + **Shift** + **F5** キー)。 これにより、アプリがより少数の手順で再起動されます。 コンソールウィンドウに次の出力が表示されます。
 
 ![出力に Null 値があります](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +348,7 @@ if (existingUser == false)
 
 この方法でインテントを指定することにより、要件を適用できます。 これは、開発中にバグを表面化させるために使用できる簡単で便利な方法です。 (`assert` ステートメントは、単体テストのメイン要素としても使用されます)。
 
-デバッグ ツールバーにある **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックします (**Ctrl** + **Shift** + **F5**)。
+[デバッグ] ツール バーの **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンをクリックします (**Ctrl** + **Shift** + **F5** キー)。
 
 > [!NOTE]
 > `assert` コードは、デバッグビルドでのみアクティブです。
@@ -358,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-を、次のコードで置換します。
+次のコードに置き換えます。
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)
@@ -405,7 +417,7 @@ Debug.Assert(users[0].points > 0);
 
 別の種類のバグには、アプリの実行速度を低下させたり、メモリを過剰に使用したりする非効率的なコードが含まれます。 一般に、パフォーマンスの最適化は、アプリ開発で後から実行するものです。 ただし、早い段階でパフォーマンスの問題が発生する可能性があります (たとえば、アプリの一部が低速で実行されていることがわかります)。また、プロファイリングツールでアプリを事前にテストしなければならないことがあります。 CPU 使用率ツールやメモリアナライザーなどのプロファイリングツールの詳細については、「[プロファイリングツールの](../profiling/profiling-feature-tour.md)概要」を参照してください。
 
-## <a name="next-steps"></a>次のステップ:
+## <a name="next-steps"></a>次のステップ
 
 この記事では、コード内の多くの一般的なバグを回避して修正する方法と、デバッガーを使用するタイミングについて説明しました。 次に、Visual Studio デバッガーを使用してバグを修正する方法の詳細について説明します。
 

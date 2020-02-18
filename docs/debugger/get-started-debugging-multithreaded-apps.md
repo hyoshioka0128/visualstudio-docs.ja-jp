@@ -2,7 +2,7 @@
 title: マルチスレッドアプリケーションのデバッグについて学習する
 description: Visual Studio の [並列スタック] ウィンドウと [並列ウォッチ] ウィンドウを使用したデバッグ
 ms.custom: ''
-ms.date: 11/16/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21d5174c9a909e9ad8031dfb7585abc52a7e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091796"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416408"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチスレッドアプリケーションのデバッグをC#開始する ( C++、Visual Basic、)
 
@@ -34,7 +34,7 @@ Visual Studio には、マルチスレッドアプリケーションのデバッ
 
 - 使用するサンプルの<xref:System.Threading.Tasks.Task>(マネージ コード) を参照してください (C++)、同時実行ランタイムと[チュートリアル: 並行アプリケーションをデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)します。 ほとんどのマルチスレッドアプリケーションの種類に適用される一般的なデバッグのヒントについては、そのトピックとこのトピックの両方を参照してください。
 
-まず、マルチスレッドアプリケーションプロジェクトが必要です。 以下に例を示します。
+まず、マルチスレッドアプリケーションプロジェクトが必要です。 例を次に示します。
 
 ## <a name="create-a-multithreaded-app-project"></a>マルチスレッドアプリプロジェクトを作成する
 
