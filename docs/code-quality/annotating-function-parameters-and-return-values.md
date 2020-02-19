@@ -220,7 +220,7 @@ ms.locfileid: "77271079"
 
      `s` 要素の配列へのポインター。  要素は、事前状態で有効である必要はありません。  事後状態では、`c`番目の要素までの要素が有効である必要があります。  `_bytes_` variant は、サイズが要素数ではなくバイト数でわかっている場合に使用できます。
      
-     次に例を示します。
+     例 :
 
      ```cpp
      void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
@@ -251,7 +251,7 @@ ms.locfileid: "77271079"
 
      `p - _Curr_` (つまり、`p` をマイナス `_Curr_`) する配列へのポインターが有効な式です。  `p` 前の要素は、事前状態で有効である必要があります。
 
-    たとえば次のようになります。
+    例:
     ```cpp
     int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
     ```
@@ -516,7 +516,7 @@ ms.locfileid: "77271079"
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  次に例を示します。
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  例 :
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 

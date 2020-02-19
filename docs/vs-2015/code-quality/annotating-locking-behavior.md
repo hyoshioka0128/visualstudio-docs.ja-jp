@@ -67,7 +67,7 @@ ms.locfileid: "77271593"
 ## <a name="locking-annotations"></a>ロックの注釈  
  次の表に、ロックの注釈の一覧を示します。  
   
-|Annotation|Description|  
+|Annotation|説明|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの排他ロックカウントによって関数がインクリメントされることを示します。|  
 |`_Acquires_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトのロックカウントによって関数がインクリメントされることを示します。|  
@@ -91,7 +91,7 @@ ms.locfileid: "77271593"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>非公開のロック オブジェクトに対する SAL の組み込み  
  特定のロックオブジェクトは、関連付けられているロック関数の実装によって公開されません。  次の表に、これらの非公開のロックオブジェクトを操作する関数に対する注釈を有効にする SAL 組み込み変数を示します。  
   
-|Annotation|Description|  
+|Annotation|説明|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|キャンセルスピンロックについて説明します。|  
 |`_Global_critical_region_`|クリティカル領域について説明します。|  
@@ -101,7 +101,7 @@ ms.locfileid: "77271593"
 ## <a name="shared-data-access-annotations"></a>共有データ アクセスの注釈  
  次の表は、共有データアクセスの注釈を示しています。  
   
-|Annotation|Description|  
+|Annotation|説明|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|  
 |`_Interlocked_`|変数に注釈をし、`_Guarded_by_(_Global_interlock_)`に相当します。|  

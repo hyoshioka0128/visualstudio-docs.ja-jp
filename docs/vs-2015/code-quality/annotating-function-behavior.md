@@ -36,7 +36,7 @@ ms.locfileid: "77277871"
 ## <a name="function-annotations"></a>関数の注釈  
  次の注釈は、関数全体に適用され、どのように動作するか、またはどのように動作するかを説明します。  
   
-|Annotation|説明|  
+|Annotation|Description|  
 |----------------|-----------------|  
 |`_Called_from_function_class_(name)`|スタンドアロン専用ではありません。代わりに、`_When_` 注釈と共に使用する述語です。 詳細については、「[注釈を適用するタイミングと場所の指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)」を参照してください。<br /><br /> `name` パラメーターは任意の文字列であり、一部の関数の宣言で `_Function_class_` 注釈にも含まれます。  現在分析されている関数に、同じ値の `name`を持つ `_Function_class_` を使用して注釈が付けられている場合、`_Called_from_function_class_` は0以外の値を返します。それ以外の場合は0を返します。|  
 |`_Check_return_`|戻り値に注釈を指定し、呼び出し元がそれを検査する必要があることを示します。 関数が void コンテキストで呼び出された場合、チェッカーはエラーを報告します。|  
@@ -49,7 +49,7 @@ ms.locfileid: "77277871"
 ## <a name="successfailure-annotations"></a>成功または失敗の注釈  
  関数が失敗する場合があります。関数が成功すると、結果が不完全になるか、結果と異なる可能性があります。  次の一覧の注釈は、エラーの動作を表現する方法を示しています。  これらの注釈を使用するには、成功したかどうかを判断するために有効にする必要があります。したがって、`_Success_` 注釈が必要です。  `NTSTATUS` と `HRESULT` には既に `_Success_` 注釈が組み込まれていることに注意してください。ただし、`NTSTATUS` または `HRESULT`に独自の `_Success_` 注釈を指定すると、組み込みの注釈がオーバーライドされます。  
   
-|Annotation|説明|  
+|Annotation|Description|  
 |----------------|-----------------|  
 |`_Always_(anno_list)`|`anno_list _On_failure_(anno_list)`と同じです。つまり、関数が成功したかどうかにかかわらず、`anno_list` 内の注釈が適用されます。|  
 |`_On_failure_(anno_list)`|`_Success_` が、明示的に、または typedef で `_Return_type_success_` によって暗黙的にまたは暗黙的に関数に注釈を付けるためにも使用される場合にのみ使用されます。 `_On_failure_` 注釈が関数パラメーターまたは戻り値に存在する場合、`anno_list` (キリスト) の各注釈は `_When_(!expr, anno)`としてコード化されているかのように動作します。 `expr` は、必須の `_Success_` 注釈のパラメーターです。 これは、すべての事後条件に対する `_Success_` の暗黙のアプリケーションが `_On_failure_`に適用されないことを意味します。|  

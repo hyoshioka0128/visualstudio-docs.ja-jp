@@ -219,7 +219,7 @@ ms.locfileid: "77271621"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  次に例を示します。  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  例 :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "77271621"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  次に例を示します。  
+     つまり、前の状態に `s` するためにバッファーに存在するすべての要素は、post 状態で有効です。  例 :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "77271621"
   
 - `_Struct_size_bytes_(size)`  
   
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  次に例を示します。  
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size`によって指定されるバイト数です。  例 :  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
