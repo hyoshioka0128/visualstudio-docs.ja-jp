@@ -2,17 +2,17 @@
 title: UWP アプリ用の C++ DLL をテストする方法
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
-author: mikeblome
-ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+author: corob-msft
+ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748086"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77274446"
 ---
 # <a name="how-to-test-a-c-dll"></a>C++ DLL をテストする方法
 
@@ -26,7 +26,7 @@ ms.locfileid: "72748086"
 
 ::: moniker range="vs-2019"
 
-まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクトの作成]** ダイアログで検索ボックスに "test" と入力し、 **[言語]** を C++ に設定します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
+まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 **[新しいプロジェクトの作成]** ダイアログで検索ボックスに "test" と入力し、 **[言語]** を C++ に設定します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
 
    ![新しい UWP テスト プロジェクトを作成する](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "72748086"
 
 ::: moniker range="vs-2017"
 
-まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログで **[インストール済み]** 、 **[Visual C++]** の順に展開し、 **[Windows ユニバーサル]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
+まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 **[新しいプロジェクト]** ダイアログで **[インストール済み]** 、 **[Visual C++]** の順に展開し、 **[Windows ユニバーサル]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
 
 ::: moniker-end
 

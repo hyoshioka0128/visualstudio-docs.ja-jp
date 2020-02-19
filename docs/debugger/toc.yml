@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: C++ アプリをデバッグする
       href: quickstart-debug-with-cplusplus.md
-    - name: ASP.NET アプリをデバッグする
+    - name: ASP.NET Core アプリをデバッグする
       href: quickstart-debug-aspnet.md
 - name: チュートリアル
   items:
