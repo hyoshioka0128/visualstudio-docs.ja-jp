@@ -3,15 +3,15 @@ title: Visual Studio + GitHub のオファー | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: 新しい Visual Studio + GitHub オファーの詳細情報
-ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d8507667f214430513ba2ad84bbe787e5a042899
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238143"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439141"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の概要  
 
@@ -79,3 +79,10 @@ A: GitHub Enterprise サブスクリプションと共に、完全な Visual Stu
 
 ## <a name="next-steps"></a>次の手順
 GitHub を初めて使用する場合は、[GitHub Learning Lab](https://lab.github.com/) をご覧ください。そこでは、興味深く実用的な一連のプロジェクトが示され、役に立つフィードバックが共有されています。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
+

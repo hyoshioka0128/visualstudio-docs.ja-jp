@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Emulator for Android のトラブルシューティング | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 author: conceptdev
 ms.author: crdun
 manager: crdun
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777814"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272074"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
@@ -179,7 +181,7 @@ ms.locfileid: "72777814"
 
   6. Windows 8 Professional 以上を実行していることを確認します (Windows Server 2008 はサポートされていません)。 Windows Server 2012 はサポートされていますが、デスクトップ エクスペリエンスを有効にする必要があります。
 
-     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー** + **R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
+     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー**+**R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
 
      プロセッサが最小要件を満たしているにもかかわらず、ハイパーバイザーでまだ障害が発生する場合は、コンピューターに使用可能な BIOS アップグレードがあるかどうかを確認してみてください。 アップグレードがあり、アップグレードすることを選択する場合は、BIOS のアップグレード時に製造元からの注意事項 (BIOS が完全に破損する可能性のある、停電により BIOS ファームウェアのアップグレードが中断されないようにするなど) をすべて確認してください。
 

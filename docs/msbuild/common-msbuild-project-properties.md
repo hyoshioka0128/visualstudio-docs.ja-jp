@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027628"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275498"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
@@ -43,8 +43,8 @@ ms.locfileid: "77027628"
 | AssemblySearchPaths | ビルド時に参照アセンブリを解決するときに検索する場所のリストです。 このリストでは、先頭から順に優先度が低くなるため、パスを指定する順序が意味を持ちます。 |
 | AssemblyName | プロジェクトのビルド後に生成される最終的な出力アセンブリの名前です。 |
 | BaseAddress | メイン出力アセンブリのベース アドレスを指定します。‎ このプロパティは、`/baseaddress` コンパイラ スイッチに相当します。 |
-| BaseOutputPath | 出力ファイルのベース パスを指定します。 設定されている場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は `OutputPath = $(BaseOutputPath)\$(Configuration)\` を使用します。 構文例: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BaseIntermediateOutputPath | すべての構成固有の中間出力ファイルが作成されるトップレベル フォルダーです。 既定値は `obj\` です。 次にコード例を示します。`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseOutputPath | 出力ファイルのベース パスを指定します。 設定されている場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は `OutputPath = $(BaseOutputPath)\$(Configuration)\` を使用します。 構文例: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BuildInParallel | Multi-Proc [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の使用時に複数のプロジェクト参照を同時にビルドまたはクリーンするかどうかを示すブール値です。 既定値は `true` です。システムに複数のコアまたはプロセッサがある場合に既定値を使用すると、複数のプロジェクトが同時にビルドされます。 |
 | BuildProjectReferences | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によってプロジェクト参照をビルドするかどうかを示すブール値です。 プロジェクトを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: Integrated Development Environment) でビルドしている場合は `false` に自動的に設定され、それ以外の場合は `true` に設定されます。 `-p:BuildProjectReferences=false` をコマンド ラインで指定して、参照先のプロジェクトが最新かどうかのチェックを回避できます。 |
 | CleanFile | "クリーン キャッシュ" として使用されるファイルの名前です。 クリーン キャッシュとは、クリーン操作の実行中に削除される対象の生成されたファイルのリストです。 このファイルは、ビルド プロセスによって中間出力パスに追加されます。<br /><br /> このプロパティでは、パス情報を含まないファイル名だけを指定します。 |
@@ -72,8 +72,8 @@ ms.locfileid: "77027628"
 | IntermediateOutputPath | 中間出力ファイルの完全パスであり、パスが指定されていない場合に `BaseIntermediateOutputPath` を基に生成されます。 たとえば、 *\obj\debug\\* のようなパスが生成されます。 |
 | KeyContainerName | 厳密名キーのコンテナー名です。 |
 | KeyOriginatorFile | 厳密名キー ファイルの名前です。 |
-| MSBuildProjectExtensionsPath | プロジェクト拡張機能が配置されるパスを指定します。 既定では、`BaseIntermediateOutputPath` と同じ値が使用されます。 |
 | ModuleAssemblyName | コンパイル済みモジュールを組み込むアセンブリの名前です。 このプロパティは、`/moduleassemblyname` コンパイラ スイッチに相当します。 |
+| MSBuildProjectExtensionsPath | プロジェクト拡張機能が配置されるパスを指定します。 既定では、`BaseIntermediateOutputPath` と同じ値が使用されます。 |
 | NoLogo | コンパイラ ロゴをオフにするかどうかを示すブール値です。 このプロパティは、`/nologo` コンパイラ スイッチに相当します。 |
 | NoStdLib | 標準ライブラリ (*mscorlib.dll*) の参照を回避するかどうかを示すブール値です。 既定値は `false` です。 |
 | NoVBRuntimeReference | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ランタイム (*Microsoft.VisualBasic.dll*) を参照としてプロジェクトに含めるかどうかを示すブール値です。 |
@@ -90,13 +90,10 @@ ms.locfileid: "77027628"
 | PathMap | コンパイラによるソース パス名出力への物理パスのマップ方法を指定します。 このプロパティは、*csc.exe* コンパイラの `/pathmap` スイッチに相当します。 |
 | PdbFile | 出力する *.pdb* ファイルの名前です。 このプロパティは、*csc.exe* コンパイラの `/pdb` スイッチに相当します。 |
 | プラットフォーム | ビルドの対象とするオペレーティング システムです。 有効な値は "Any CPU"、"x86"、および "x64" です。 |
-| ProduceReferenceAssembly | `true` に設定すると、現在のアセンブリに対して[参照アセンブリ](/dotnet/standard/assembly/reference-assemblies)の生成が可能になるブール値。 この機能の利用時、`Deterministic` を `true` にする必要があります。 このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refout` スイッチに対応します。 |
-| ProduceOnlyReferenceAssembly | コンパイル済みコードではなく参照アセンブリのみを発行するようにコンパイラに指示するブール値。 `ProduceReferenceAssembly` と同時に使用することはできません。  このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refonly` スイッチに対応します。 |
-| RemoveIntegerChecks | 整数オーバーフロー エラー チェックを無効にするかどうかを示すブール値です。 既定値は `false` です。 このプロパティは、*vbc.exe* コンパイラの `/removeintchecks` スイッチに相当します。 |
-| SGenUseProxyTypes | *SGen.exe* によってプロキシ型を生成するかどうかを示すブール値です。 これは、*GenerateSerializationAssemblies* がオンに設定されているときにのみに適用されます。また、.NET Framework 専用です。<br /><br /> SGen ターゲットは、このプロパティを使用して UseProxyTypes フラグを設定します。 このプロパティの既定値は true で、これを変更するための UI はありません。 webservice 以外の型のシリアル化アセンブリを生成するには、*Microsoft.Common.Targets* または *C#/VB.targets* をインポートする前に、このプロパティをプロジェクト ファイルに追加し、その値を false に設定します。 |
-| SGenToolPath | *SGen.exe* の現在のバージョンがオーバーライドされた場合に *SGen.exe* を取得する場所を示すツール パスです (省略可能)。 このプロパティは .NET Framework にのみ使用されます。|
-| StartupObject | Main メソッドまたは Sub Main プロシージャを含むクラスまたはモジュールを指定します。 このプロパティは、`/main` コンパイラ スイッチに相当します。 |
 | ProcessorArchitecture | アセンブリ参照を解決するときに使用されるプロセッサ アーキテクチャです。 有効な値は "msil"、"x86"、"amd64"、または "ia64" です。 |
+| ProduceOnlyReferenceAssembly | コンパイル済みコードではなく参照アセンブリのみを発行するようにコンパイラに指示するブール値。 `ProduceReferenceAssembly` と同時に使用することはできません。  このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refonly` スイッチに対応します。 |
+| ProduceReferenceAssembly | `true` に設定すると、現在のアセンブリに対して[参照アセンブリ](/dotnet/standard/assembly/reference-assemblies)の生成が可能になるブール値。 この機能の利用時、`Deterministic` を `true` にする必要があります。 このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refout` スイッチに対応します。 |
+| RemoveIntegerChecks | 整数オーバーフロー エラー チェックを無効にするかどうかを示すブール値です。 既定値は `false` です。 このプロパティは、*vbc.exe* コンパイラの `/removeintchecks` スイッチに相当します。 |
 | RootNamespace | 埋め込みリソースに名前を付けるときに使用するルート名前空間です。 この名前空間が埋め込みリソース マニフェスト名の一部になります。 |
 | Satellite_AlgorithmId | サテライト アセンブリの作成時に使用する *AL.exe* ハッシュ アルゴリズムの ID です。 |
 | Satellite_BaseAddress | `CreateSatelliteAssemblies` ターゲットを使用してカルチャ固有のサテライト アセンブリをビルドするときに使用するベース アドレスです。 |
@@ -117,6 +114,9 @@ ms.locfileid: "77027628"
 | Satellite_Version | サテライト アセンブリのバージョン情報を指定します。 |
 | Satellite_Win32Icon | サテライト アセンブリに *.ico* アイコン ファイルを挿入します。 |
 | Satellite_Win32Resource | サテライト アセンブリに Win32 リソース ( *.res* ファイル) を挿入します。 |
+| SGenToolPath | *SGen.exe* の現在のバージョンがオーバーライドされた場合に *SGen.exe* を取得する場所を示すツール パスです (省略可能)。 このプロパティは .NET Framework にのみ使用されます。|
+| SGenUseProxyTypes | *SGen.exe* によってプロキシ型を生成するかどうかを示すブール値です。 これは、*GenerateSerializationAssemblies* がオンに設定されているときにのみに適用されます。また、.NET Framework 専用です。<br /><br /> SGen ターゲットは、このプロパティを使用して UseProxyTypes フラグを設定します。 このプロパティの既定値は true で、これを変更するための UI はありません。 webservice 以外の型のシリアル化アセンブリを生成するには、*Microsoft.Common.Targets* または *C#/VB.targets* をインポートする前に、このプロパティをプロジェクト ファイルに追加し、その値を false に設定します。 |
+| StartupObject | Main メソッドまたは Sub Main プロシージャを含むクラスまたはモジュールを指定します。 このプロパティは、`/main` コンパイラ スイッチに相当します。 |
 | SubsystemVersion | 生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値については、「[/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion)」または「[/subsystemversion (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option)」を参照してください。 |
 | TargetCompactFramework | ビルドするアプリケーションの実行に必要な .NET Compact Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |
 | TargetFrameworkVersion | ビルドするアプリケーションの実行に必要な .NET Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |

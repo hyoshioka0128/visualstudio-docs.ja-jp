@@ -3,15 +3,15 @@ title: 運用前環境のインベントリ | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: 運用前環境のインベントリを実施する管理者の責任について説明します
-ms.openlocfilehash: 8218b1802a6369aed00be63572c80cba7b5c29f3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0eacd177b0901d866bbb974aca81a0e77cdaf25d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849821"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439121"
 ---
 # <a name="inventory-of-pre-production-environment"></a>運用前環境のインベントリ
 Visual Studio サブスクリプションは、デバイスではなくユーザーをカウントすることで、資産管理を簡略化します。
@@ -35,3 +35,9 @@ Visual Studio の管理者は、Visual Studio サブスクリプションを**�
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)
 - [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)

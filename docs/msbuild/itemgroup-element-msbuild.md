@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd21d7da710a82d9396766971244aa5f7f9bbd4d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573444"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278792"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 要素 (MSBuild)
 ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべての項目は、`ItemGroup` 要素の子として指定する必要があります。
@@ -33,7 +33,8 @@ ms.locfileid: "75573444"
 ## <a name="syntax"></a>構文
 
 ```xml
-<ItemGroup Condition="'String A' == 'String B'">
+<ItemGroup Condition="'String A' == 'String B'"
+           Label="Label">
     <Item1>... </Item1>
     <Item2>... </Item2>
 </ItemGroup>
@@ -47,6 +48,7 @@ ms.locfileid: "75573444"
 |属性|説明|
 |---------------|-----------------|
 |`Condition`|省略可能な属性です。 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
+|`Label`|省略可能な属性です。 `ItemGroup` を識別します。|
 
 ### <a name="child-elements"></a>子要素
 

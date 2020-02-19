@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションでソフトウェア タイト�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/18/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
-ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095402"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439167"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
@@ -51,3 +51,9 @@ ms.locfileid: "71095402"
 プロダクト キーの検索、要求、エクスポートの詳細については、プロダクト キーのドキュメントをご覧ください。
 - [プロダクト キーの概要](product-keys.md)
 - [キーを探して要求する](find-keys.md)
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)

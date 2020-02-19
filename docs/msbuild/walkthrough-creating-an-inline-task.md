@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3856c658c4d3d2598b69cc9bf77f95c219b187b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590047"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271178"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>チュートリアル: インライン タスクの作成
 MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 .NET Framework Version 4 以降では、プロジェクト ファイルでタスクをインラインで作成できます。 個別のアセンブリを作成してタスクをホストする必要はありません。 詳細については、「[インライン タスク](../msbuild/msbuild-inline-tasks.md)」を参照してください。
@@ -74,7 +74,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
      <ParameterGroup />
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage("Hello, world!", MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, "Hello, world!");
        </Code>
      </Task>
    </UsingTask>
@@ -121,7 +121,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
      </ParameterGroup>
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage(Text, MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, Text);
        </Code>
      </Task>
    </UsingTask>

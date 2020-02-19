@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114408"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173086"
 ---
 # <a name="application-property-page-uwp-projects"></a>アプリケーション プロパティ ページ (UWP プロジェクト)
 
@@ -38,7 +38,7 @@ ms.locfileid: "76114408"
 
 **アセンブリ情報**&mdash;このボタンをクリックすると、[[アセンブリ情報] ダイアログ ボックス](../../ide/reference/assembly-information-dialog-box.md)が表示されます。
 
-**パッケージ マニフェスト**&mdash;このボタンを選択すると、マニフェスト デザイナーが表示されます。 マニフェスト デザイナーには、**ソリューション エクスプローラー**で _Package.appxmanifest_ ファイルを選択して、アクセスすることもできます。 詳細については、「[マニフェスト デザイナーを使ってパッケージを構成する](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)」を参照してください。
+**パッケージ マニフェスト**&mdash;このボタンを選択すると、マニフェスト デザイナーが表示されます。 マニフェスト デザイナーには、**ソリューション エクスプローラー**で _Package.appxmanifest_ ファイルを選択して、アクセスすることもできます。 詳細については、「[マニフェスト デザイナーを使ってパッケージを構成する](/windows/msix/package/packaging-uwp-apps#configure-your-project)」を参照してください。
 
 ## <a name="targeting-section"></a>[ターゲット] セクション
 
