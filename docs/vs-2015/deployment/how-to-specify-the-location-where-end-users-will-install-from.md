@@ -1,5 +1,5 @@
 ---
-title: '方法: エンドユーザーがインストールする場所の指定 |Microsoft Docs'
+title: '方法: エンドユーザーがインストールする場所を指定する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,33 +18,33 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159131"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476906"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>方法: エンド ユーザーがインストールを開始する場所を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-発行するときに、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションをダウンロードしてインストール、アプリケーションにアクセスするユーザーの場所は必ずしも、アプリケーションを最初に発行する場所。 たとえば、一部の組織で、開発者は、ステージング サーバーにアプリケーションを公開可能性があり、管理者は、アプリケーションを Web サーバーを移動し。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを公開する場合、ユーザーがアプリケーションをダウンロードしてインストールする場所は必ずしも、アプリケーションを最初に発行する場所とは限りません。 たとえば、一部の組織では、開発者がアプリケーションをステージングサーバーに発行した後、管理者がアプリケーションを Web サーバーに移動する場合があります。  
   
- この場合、使用することができます、`Installation URL`プロパティをユーザーは、アプリケーションのダウンロードにアクセスする Web サーバーを指定します。 これは、機能は、アプリケーション マニフェストが更新プログラムを検索する場所を認識できるように必要です。  
+ この場合は、[`Installation URL`] プロパティを使用して、ユーザーがアプリケーションをダウンロードする Web サーバーを指定できます。 これは、アプリケーションマニフェストが更新プログラムを検索する場所を認識できるようにするために必要です。  
   
- `Installation URL`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
+ `Installation URL` プロパティは、**プロジェクトデザイナー**の [**発行**] ページで設定できます。  
   
- **注**、`Installation URL`を使用してプロパティを設定することも、**発行ウィザード**します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
+ **メモ**`Installation URL` プロパティは、 **Publishwizard**を使用して設定することもできます。 詳細については、「[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。  
   
 ### <a name="to-specify-an-installation-url"></a>インストール URL を指定するには  
   
-1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2. **発行**タブをクリックします。  
+2. **[公開]** タブをクリックします。  
   
-3. インストール URL フィールドに、形式を使用して完全修飾 URL を使用して、インストール場所を入力します。 http://www.microsoft.com/ApplicationName 、または UNC パス形式を使用して\\ \Server\ApplicationName します。  
+3. [インストール URL] フィールドに、https://www.microsoft.com/ApplicationNameの形式で完全修飾 URL を使用してインストール場所を入力するか \\\Server\ApplicationName. の形式を使用して UNC パスを入力します。  
   
-## <a name="see-also"></a>関連項目  
- [方法: Visual Studio がファイルをコピーする場所を指定します。](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+## <a name="see-also"></a>参照  
+ [方法: Visual Studio がファイルをコピーする場所を指定する](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

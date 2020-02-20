@@ -11,26 +11,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667964"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476980"
 ---
 # <a name="how-to-distribute-code-snippets"></a>方法: コード スニペットを配布する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード スニペットは、友人に配布することができます。友人は、コード スニペット マネージャーを使用して、そのスニペットを自分のコンピューターにインストールできます。 ただし、配布するスニペットが複数ある場合や、スニペットをより広範に配布する場合は、スニペット ファイルを Visual Studio 拡張機能に含めると、Visual Studio ユーザーはこれをインストールできます。
 
- Visual Studio 拡張機能を作成するには、Visual Studio SDK をインストールする必要があります。 Visual studio [2015 のダウンロード](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)で、visual studio のインストールに一致する vssdk のバージョンを見つけます。
+ Visual Studio 拡張機能を作成するには、Visual Studio SDK をインストールする必要があります。 Visual studio [2015 のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/)で、visual studio のインストールに一致する vssdk のバージョンを見つけます。
 
 ## <a name="setting-up-the-extension"></a>拡張機能を設定する
  この手順では、「[チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)」で作成したのと同じ Hello World コード スニペットを使います。 .snippet のテキストは用意されているため、前の手順に戻ってコード スニペットを作成する必要はありません。
 
-1. **TestSnippet** という新しい VSIX プロジェクトを作成します ( **[ファイル] > [新規作成] > [プロジェクト] > [Visual C#]\(または [Visual Basic]) > [拡張]** )。
+1. **TestSnippet** という新しい VSIX プロジェクトを作成します  (**[ファイル] > [新規作成] > [プロジェクト] > [Visual C#]\(または [Visual Basic]) > [拡張]**)。
 
-2. **TestSnippet** プロジェクトで新しい XML ファイルを追加し、**VBCodeSnippet.snippet** という名前を付けます。 内容を次のコードに置き換えます。
+2. **TestSnippet** プロジェクトで新しい XML ファイルを追加し、**VBCodeSnippet.snippet** という名前を付けます。 次のコンテンツに置き換えます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -62,7 +62,7 @@ ms.locfileid: "72667964"
 
 2. .snippet ファイルを **HelloWorldVB** フォルダーに移動します。
 
-3. ソリューション エクスプローラーで .snippet ファイルを選び、 **[プロパティ]** ウィンドウで **[ビルド アクション]** を **[コンテンツ]** に、 **[出力ディレクトリにコピー]** を **[常にコピーする]** に、 **[VSIX に含める]** を **[true]** に、それぞれ設定します。
+3. ソリューション エクスプローラーで .snippet ファイルを選び、**[プロパティ]** ウィンドウで **[ビルド アクション]** を **[コンテンツ]** に、**[出力ディレクトリにコピー]** を **[常にコピーする]** に、**[VSIX に含める]** を **[true]** に、それぞれ設定します。
 
 #### <a name="adding-the-pkgdef-file"></a>.pkgdef ファイルの追加
 
@@ -80,11 +80,11 @@ ms.locfileid: "72667964"
 
      このキーを調べると、さまざまな言語を指定する方法が分かります。
 
-3. ソリューション エクスプローラーで .pkgdef ファイルを選び、 **[プロパティ]** ウィンドウで **[ビルド アクション]** を **[コンテンツ]** に、 **[出力ディレクトリにコピー]** を **[常にコピーする]** に、 **[VSIX に含める]** を **[true]** に、それぞれ設定します。
+3. ソリューション エクスプローラーで .pkgdef ファイルを選び、**[プロパティ]** ウィンドウで **[ビルド アクション]** を **[コンテンツ]** に、**[出力ディレクトリにコピー]** を **[常にコピーする]** に、**[VSIX に含める]** を **[true]** に、それぞれ設定します。
 
-4. VSIX マニフェストに .pkgdef ファイルを資産として追加します。 source.extension.vsixmanifest ファイルで、 **[資産]** タブに移動し、 **[新規]** をクリックします。
+4. VSIX マニフェストに .pkgdef ファイルを資産として追加します。 source.extension.vsixmanifest ファイルで、**[資産]** タブに移動し、**[新規]** をクリックします。
 
-5. **[新しい資産の追加]** ダイアログ ボックスで、 **[型]** を **Microsoft.VisualStudio.VsPackage** に、 **[種類]** を **[ファイル システム上のファイル]** に、 **[パス]** を **[HelloWorldVB.pkgdef]** (ドロップダウン リストに表示される) に、それぞれ設定します。
+5. **[新しい資産の追加]** ダイアログ ボックスで、**[型]** を **Microsoft.VisualStudio.VsPackage** に、**[種類]** を **[ファイル システム上のファイル]** に、**[パス]** を **[HelloWorldVB.pkgdef]** (ドロップダウン リストに表示される) に、それぞれ設定します。
 
 ### <a name="testing-the-snippet"></a>スニペットのテスト
 
@@ -92,7 +92,7 @@ ms.locfileid: "72667964"
 
 2. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の 2 番目のインスタンスが表示されます。
 
-3. 実験用インスタンスで、 **[ツール] > [コード スニペット マネージャー]** に移動し、 **[言語]** を **[基本]** に設定します。 フォルダーの 1 つとして HelloWorldVB が表示されるはずです。そのフォルダーを展開すると HelloWorldVB スニペットを表示できます。
+3. 実験用インスタンスで、**[ツール] > [コード スニペット マネージャー]** に移動し、**[言語]** を **[基本]** に設定します。 フォルダーの 1 つとして HelloWorldVB が表示されるはずです。そのフォルダーを展開すると HelloWorldVB スニペットを表示できます。
 
 4. スニペットをテストします。 実験用インスタンスで、Visual Basic プロジェクトを開き、コード ファイルのいずれかを開きます。 コードの任意の場所にカーソルを置いて右クリックし、コンテキスト メニューで **[スニペットの挿入]** を選びます。
 
