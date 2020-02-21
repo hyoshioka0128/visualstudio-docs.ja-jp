@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144781"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506517"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>デバッグ中に .NET アセンブリからソースコードを生成する
 
@@ -82,13 +82,13 @@ Ilspy を使用してソースコードを生成することができるのは�
 - ローカル変数の名前が正確でない可能性があります。
 - 一部の変数は、評価に使用できない場合があります。
 
-詳細については、GitHub の問題に関する IChsarpCompiler を参照してください。[デコンパイラと VS デバッガーの統合](https://github.com/icsharpcode/ILSpy/issues/1901)です。
+詳細については、GitHub の問題に関する ICSharpCode を参照してください。[デコンパイラと VS デバッガーの統合](https://github.com/icsharpcode/ILSpy/issues/1901)です。
 
 ### <a name="decompilation-reliability"></a>Ilspy の信頼性
 
 Ilspy の試行が比較的少ない場合、エラーが発生する可能性があります。 これは、ILSpy のシーケンスポイントの null 参照エラーが原因です。  これらの問題をキャッチし、ilspy の試行を適切に失敗させることによって、障害を軽減しました。
 
-詳細については、GitHub の問題に関する IChsarpCompiler を参照してください。[デコンパイラと VS デバッガーの統合](https://github.com/icsharpcode/ILSpy/issues/1901)です。
+詳細については、GitHub の問題に関する ICSharpCode を参照してください。[デコンパイラと VS デバッガーの統合](https://github.com/icsharpcode/ILSpy/issues/1901)です。
 
 ### <a name="limitations-with-async-code"></a>非同期コードに関する制限事項
 

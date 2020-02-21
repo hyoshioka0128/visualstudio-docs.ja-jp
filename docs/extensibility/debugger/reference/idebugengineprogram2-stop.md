@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::Stop |Microsoft Docs
+title: 'IDebugEngineProgram2:: Stop |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba93c88eb3d7e996b2a5f19dda605653af090c94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345214"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506453"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 このプログラムで実行されているすべてのスレッドを停止します。
@@ -38,13 +38,13 @@ int Stop();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK`を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 複数のプログラムの環境でこのプログラムをデバッグするときに、このメソッドが呼び出されます。 他のプログラムから stopping イベントが受信したときに、このメソッドは、このプログラムで呼び出されます。 このメソッドの実装を非同期にする必要があります。すべてのスレッドがこのメソッドが戻る前に停止する必要あります。 このメソッドの実装を呼び出す可能性があります、 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)このプログラムのメソッド。
+## <a name="remarks"></a>コメント
+ このメソッドは、このプログラムがマルチプログラム環境でデバッグされているときに呼び出されます。 他のプログラムからの停止イベントを受信すると、このメソッドがこのプログラムで呼び出されます。 このメソッドの実装は非同期である必要があります。つまり、このメソッドから制御が戻る前に、すべてのスレッドを停止する必要はありません。 このメソッドの実装は、このプログラムでの[Causebreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)メソッドの呼び出しと同じように簡単に行うことができます。
 
- このメソッドへの応答では、デバッグ イベントは送信されません。
+ 実装者は、プログラムが停止したときに[IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md)を送信する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

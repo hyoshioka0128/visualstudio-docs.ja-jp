@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718708"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506402"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
 次に、VSPackage と問題を解決するためのヒントについて、一般的な問題を示します。
@@ -27,7 +27,7 @@ ms.locfileid: "72718708"
 
    セーフモードで [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を開始するには、コマンドプロンプトで「 **devenv.exe/セーフ**モード」と入力します。
 
-   このプロセスでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] に含まれている Vspackage を除き、Vspackage は読み込まれません。
+   このプロセスでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]に含まれている Vspackage を除き、Vspackage は読み込まれません。
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>読み込まれない VSPackage のトラブルシューティングを行うには
 
@@ -35,7 +35,7 @@ ms.locfileid: "72718708"
 
     詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
-2. VSPackage が実験的なレジストリルートで実行されるように設定されている場合は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の実験用バージョンを実行していることを確認してください。
+2. VSPackage が実験的なレジストリルートで実行されるように設定されている場合は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]の実験用バージョンを実行していることを確認してください。
 
     実験的なバージョンを実行するには、コマンドウィンドウに「 **devenv/rootsuffix exp**」と入力します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "72718708"
 4. VSPackage の読み込みに失敗した [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のインスタンスの**出力**ウィンドウを開きます。 VSPackage が読み込みに失敗した理由に関する情報が、そのウィンドウに表示されることがあります。
 
    > [!NOTE]
-   > @No__t_1 統合開発環境 (IDE) から [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の実験用バージョンを起動している場合は、両方のバージョンの**出力**ウィンドウを調べます。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) から [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の実験用バージョンを起動している場合は、両方のバージョンの**出力**ウィンドウを調べます。
 
 5. アクティビティログを確認します。
 
@@ -60,13 +60,13 @@ ms.locfileid: "72718708"
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>コマンドをクリックしたときに表示されない、またはエラーが発生するコマンドのトラブルシューティングを行うには
 
-1. @No__t_0 コマンドプロンプトで次のように入力して、新規または変更されたメニューコマンドと IDE 内の既存のコマンドをマージ**します。**
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] コマンドプロンプトで次のように入力して、新規または変更されたメニューコマンドと IDE 内の既存のコマンドをマージ**します。**
 
-2. @No__t_0 が VSPackage の UI を見つけられることを確認します。
+2. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] が VSPackage の UI を見つけられることを確認します。
 
    1. レジストリの Packages セクションで、VSPackage の CLSID を探します。
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* パッケージ
+        HKLM\Software\Microsoft\Visual Studio\\ *\<バージョン >* \ パッケージ
 
    2. SatelliteDll サブキーによって指定されたパスが正しいことを確認します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "72718708"
 
     2. 次**のシンボルファイル (.pdb) の場所**を追加します。
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. パフォーマンスを向上させるには、シンボルキャッシュフォルダーを指定します。次に例を示します。
 
@@ -119,9 +119,9 @@ ms.locfileid: "72718708"
 
 2. アンマネージコードの場合は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID レジストリノードで VSPackage の CLSID を見つけます。
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* /CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<バージョン >* /CLSID
 
    InprocServer32 エントリが VSPackage dll の正しいパスを持っていることを確認します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [VSPackage](../extensibility/internals/vspackages.md)

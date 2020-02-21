@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetSymbolPath |Microsoft Docs
+title: 'IDebugEngine3:: Setシンボル Path |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da2318e9e2e30ea4cf0dce4bef6abd03aef2b0d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0fe3000804971c8bd8cbf896a592bd11b875bfa8
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352474"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506381"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-デバッグ シンボルを検索するパスを設定します。
+デバッグシンボル用に検索されるパスを設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,28 +46,28 @@ int SetSymbolPath(
 ## <a name="parameters"></a>パラメーター
 
 `szSymbolSearchPath`\
-[in]シンボルの検索パスまたはパスを含む文字列。 詳細については、「解説」を参照してください。 null にすることはできません。
+からシンボルの検索パスを含む文字列。 詳細については、「解説」を参照してください。 NULL にすることはできません。
 
 `szSymbolCachePath`\
-[in]シンボルをキャッシュできるローカル パスを含む文字列。 null にすることはできません。
+からシンボルをキャッシュできるローカルパスを含む文字列。 NULL にすることはできません。
 
 `Flags`\
-[in]使用されません。常に 0 に設定します。
+から使用しません。常に0に設定されます。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合はエラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 文字列`szSymbolSearchPath`シンボルの検索には、セミコロンで区切られた 1 つまたは複数のパスの一覧を示します。 これらのパスは、ローカル パス、UNC 形式のパスまたは URL にあることができます。 これらのパスには、さまざまな種類の混在こともできます。 パスが UNC である場合 (たとえば、 \\\Symserver\Symbols)、デバッグ エンジンは、パスがシンボル サーバーがあり、によって指定されたパスでキャッシュして、そのサーバーからシンボルを読み込むことができるようかどうかかを確認する必要がありますして`szSymbolCachePath`します。
+## <a name="remarks"></a>コメント
+ 文字列 `szSymbolSearchPath` は、シンボルを検索するための、セミコロンで区切られた1つ以上のパスの一覧です。 これらのパスには、ローカルパス、UNC スタイルのパス、または URL を指定できます。 これらのパスは、異なる種類を混在させることもできます。 パスが UNC の場合 (たとえば、\\\ Sym\ シンボル)、デバッグエンジンはパスがシンボルサーバーであるかどうかを判断し、そのサーバーからシンボルを読み込み、`szSymbolCachePath`で指定されたパスにキャッシュする必要があります。
 
- シンボル パスは、1 つまたは複数のキャッシュの場所を含めることもできます。 キャッシュが最初に、最高の優先順位のキャッシュを使用して、優先順位の順序で一覧を表示してで区切られた * 記号。 例:
+ シンボルパスには、1つまたは複数のキャッシュの場所を含めることもできます。 キャッシュは優先順位順に一覧表示され、優先順位が最も高いキャッシュが先頭になり、* 記号で区切られます。 例 :
 
 ```
-\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com
+\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)メソッドは、シンボルの実際の負荷を実行します。
+ [Loadsymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)メソッドは、シンボルの実際の読み込みを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

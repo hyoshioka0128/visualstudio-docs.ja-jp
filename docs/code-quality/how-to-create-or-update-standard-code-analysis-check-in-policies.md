@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587538"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506509"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 
@@ -29,7 +29,7 @@ ms.locfileid: "75587538"
 
 - マネージコードの場合は、コード分析規則のサブセットを含む*規則セット*を指定して、チェックインポリシーを設定します。
 
-- C/C++コードの場合、Visual Studio 2017 バージョン15.6 以前では、チェックインポリシーですべてのコード分析規則が実行されている必要があります。 プリプロセッサディレクティブを追加して、Azure DevOps プロジェクト内の個々のコードプロジェクトの特定の規則を無効にすることができます。 15.7 以降では、 **/analyze: ルールセット**を使用して、実行するルールを指定できます。 詳細については、「[規則セットを使用C++して実行する規則を指定する](using-rule-sets-to-specify-the-cpp-rules-to-run.md)」を参照してください。
+- C/C++コードの場合、Visual Studio 2017 バージョン15.6 以前では、チェックインポリシーですべてのコード分析規則が実行されている必要があります。 プリプロセッサディレクティブを追加して、Azure DevOps プロジェクト内の個々のコードプロジェクトの特定の規則を無効にすることができます。 15.7 以降では、 **/analyze: ルールセット**を使用して、実行するルールを指定できます。 詳細については、「[規則セットを使用C++して実行する規則を指定する](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)」を参照してください。
 
 マネージコードのチェックインポリシーを指定すると、チームメンバーは、コードプロジェクトのコード分析設定を Azure DevOps プロジェクトポリシー設定と同期させることができます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "75587538"
 
 1. **[ソース管理]** ダイアログボックスで、 **[チェックインポリシー]** タブを選択します。
 
-1. 次のいずれかの操作を行います。
+1. 以下のいずれかを実行します。
 
     - **[追加]** をクリックして、新しいチェックインポリシーを作成します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "75587538"
 
 次のオプションをオンまたはオフにします。
 
-|OPTION|説明|
+|オプション|説明|
 |------------|-----------------|
 |**現在のソリューションの一部であるファイルのみを含めるようにチェックインを強制します。**|コード分析は、ソリューションおよびプロジェクト構成ファイルで指定されたファイルに対してのみ実行できます。 このポリシーは、ソリューションの一部であるすべてのコードが分析されることを保証します。|
 |**C/C++コード分析 (/analyze) を適用する**|をチェックインする前にC++ 、コード分析を実行するために、すべての C またはプロジェクトが/analyze コンパイラオプションを使用してビルドされている必要があります。|
@@ -67,6 +67,6 @@ ms.locfileid: "75587538"
 
 カスタムチェックインポリシー規則セットを作成して実装する方法の詳細については、「[マネージコードのカスタムチェックインポリシーを実装](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)する」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [マネージド コード用のカスタム コード分析チェックイン ポリシーを実装する](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)
