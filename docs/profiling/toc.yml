@@ -466,8 +466,6 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: プロファイラーのコマンド ラインを使用してスタンドアロンの .NET Framework コンポーネントをインストルメントし、メモリ データを収集する
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'チュートリアル: サンプリングを使ったコマンド ライン プロファイリング'
-                  href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET Web アプリケーション
               items:
                 - name: ASP.NET Web アプリケーションのコマンド ライン プロファイリング
