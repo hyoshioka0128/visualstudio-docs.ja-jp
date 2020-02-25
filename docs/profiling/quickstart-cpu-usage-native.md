@@ -1,7 +1,7 @@
 ---
 title: CPU 使用率データの分析 (C++)
 description: CPU 使用率診断ツールを使用して C++ アプリでのアプリのパフォーマンスを測定する
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128179"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279225"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>クイック スタート: Visual Studio の CPU 使用率データの分析 (C++)
 
@@ -30,17 +30,34 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio で、 **[ファイル]**  >  **[新しいプロジェクト]** の順に選択します。
+1. Visual Studio を開き、プロジェクトを作成します。
 
-2. **[Visual C++]** の下で **[Windows デスクトップ]** を選択し、真ん中のウィンドウで **[Windows コンソール アプリケーション]** を選択します。
+   ::: moniker range="vs-2017"
+   上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-    **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、 **[変更]** の順に選択します。
+   **[新しいプロジェクト]** ダイアログ ボックスの左側のペインで、 **[Visual C++]** を展開し、 **[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows コンソール アプリケーション]** を選択します。 次に、プロジェクトに *Diagnostics_Get_Started_Native* という名前を付けます。
 
-3. 「**Diagnostics_Get_Started_Native**」のような名前を入力し、 **[OK]** をクリックします。
+   **[Windows コンソール アプリケーション]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のペインにある **[Visual Studio インストーラーを開く]** リンクを選択します。 Visual Studio インストーラーが起動します。 **[C++ によるデスクトップ開発]** ワークロード、 **[変更]** の順に選択します。
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   スタート ウィンドウが開いていない場合は、 **[ファイル]** 、 **[スタート ウィンドウ]** の順に選択します。
 
-    Visual Studio によってプロジェクトが作成されます。
+   スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-4. *MyDbgApp.cpp* で、次のコードを置換します
+   **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語の一覧から **[C++]** を選択し、プラットフォームの一覧から **[Windows]** を選択します。
+
+   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
+
+   > [!NOTE]
+   > **[コンソール アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[C++ によるデスクトップ開発]** ワークロードを選択します。
+
+   **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*Diagnostics_Get_Started_Native*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+
+   ::: moniker-end
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
+
+1. *Diagnostics_Get_Started_Native* で、次のコードを置き換えます。
 
     ```c++
     int main()

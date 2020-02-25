@@ -15,18 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912029"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192404"
 ---
 # <a name="concurrency-visualizer"></a>コンカレンシー ビジュアライザー
 
 > [!NOTE]
 > コンカレンシー ビジュアライザーは、Visual Studio に対する任意の拡張機能です。 コンカレンシー ビジュアライザーとコンカレンシー ビジュアライザー コレクション ツールは、以下のリンクからダウンロードします。
 >
+> - [Visual Studio 2019 用コンカレンシー ビジュアライザー](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview)拡張機能をダウンロードします。
 > - [Visual Studio 2017 用コンカレンシー ビジュアライザー](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)拡張機能をダウンロードします。
 > - [Visual Studio 2015 用コンカレンシー ビジュアライザー](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015)拡張機能をダウンロードします。
 > - [Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) をダウンロードします。

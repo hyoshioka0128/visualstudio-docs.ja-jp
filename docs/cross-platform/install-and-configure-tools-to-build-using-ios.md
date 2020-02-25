@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846904"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272288"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
@@ -62,9 +62,9 @@ iOS のコードを開発するためのリモート エージェントをイン
 
    手動で署名する場合、アプリのプロビジョニング プロファイルを作成する必要があります。 プロビジョニング プロファイルを作成する方法の詳細については、「[Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8)」 (プロビジョニング プロファイルの作成) を参照してください。 
 
-- [Node.js](https://nodejs.org/) バージョン 8.11.3 と npm バージョン 5.6.0
+- [Node.js](https://nodejs.org/) バージョン 12.14.1 と npm バージョン 6.13.4
 
-   バージョン 8.11.3 の Node.js を Mac にインストールします。 Node.js パッケージをインストールする場合、それは npm バージョン 5.6.0 に付属しているはずです。 他のバージョンの Node.js と npm は、リモート エージェント `vcremote` で使用されている一部のモジュールに対応していない場合があり、`vcremote` のインストールが失敗する可能性があります。
+   バージョン 12.14.1 の Node.js を Mac にインストールします。 Node.js パッケージをインストールする場合、それは npm バージョン 6.13.4 に付属しているはずです。 他のバージョンの Node.js と npm は、リモート エージェント `vcremote` で使用されている一部のモジュールに対応していない場合があり、`vcremote` のインストールが失敗する可能性があります。 Node.js は、[Node Version Manager](https://nodejs.org/en/download/package-manager/#nvm) などのパッケージ マネージャーを使用してインストールすることをお勧めします。 `sudo` を使用すると、一部のモジュールがインストールに失敗する可能性があるため、Node.js のインストールにはコマンド `sudo` を使用しないようにしてください。
 
 ## <a name="Install"></a> iOS 用リモート エージェントをインストールする
 
@@ -74,11 +74,17 @@ C++ によるモバイル開発ワークロードをインストールすると�
 
 ### <a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには
 
-- Mac 上のターミナル アプリから、次のように入力します。
+- Mac 上のターミナル アプリから、現在使用されている Node.js のバージョンが、必須バージョン 12.14.1 であることを確認します。 バージョンを確認するには、次のコマンドを実行します。
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  適切なバージョンでない場合は、「必須コンポーネント」の Node.js のインストール手順に従う必要があります。 次に Node.js を再起動します。
 
-   グローバル インストール ( **-g**) スイッチが推奨されますが、必須ではありません。
+- 必須の Node.js が使用されていることを確認した後、次のコマンドを実行して、その Node.js バージョンで vcremote をインストールします。
+
+   `npm install -g --unsafe-perm vcremote`
+
+   グローバル インストール ( **-g**) スイッチが推奨されますが、必須ではありません。 グローバル インストール スイッチを使用しない場合、vcremote は、ターミナル アプリの現在のアクティブなパスの下にインストールされます。
 
    インストールの間に、Mac に `vcremote` がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) および 2 つの npm パッケージ `vcremote-lib` と `vcremote-utils` もインストールされます。 インストールが完了したら、スキップしたオプションの依存関係に関する警告は無視しても安全です。
 

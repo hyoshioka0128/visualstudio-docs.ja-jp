@@ -2,17 +2,17 @@
 title: C++ DLL 用の単体テストの記述
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926664"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279274"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio で C++ DLL 用の単体テストを作成する
 
@@ -58,13 +58,13 @@ ms.locfileid: "68926664"
 
       ::: moniker range="vs-2019"
 
-      1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクトの追加]** ダイアログで、 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次に **[ネイティブ単体テスト プロジェクト]** を選択します。
+      1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 **[新しいプロジェクトの追加]** ダイアログで、 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次に **[ネイティブ単体テスト プロジェクト]** を選択します。
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** 、 **[Visual C++]** 、 **[テスト]** 、 **[C++ 単体テスト プロジェクト]** の順に選択します。
+      1. **[ファイル]** メニューで、 **[新規]** > **[プロジェクト]** > **[Visual C++]** > **[テスト]** > **[C++ 単体テスト プロジェクト]** の順に選択します。
 
       ::: moniker-end
 
@@ -90,13 +90,13 @@ ms.locfileid: "68926664"
 
       ::: moniker range="vs-2019"
 
-      1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクトの追加]** ダイアログで、 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次に **[ネイティブ単体テスト プロジェクト]** を選択します。
+      1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 **[新しいプロジェクトの追加]** ダイアログで、 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次に **[ネイティブ単体テスト プロジェクト]** を選択します。
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** 、 **[Visual C++]** 、 **[テスト]** 、 **[C++ 単体テスト プロジェクト]** の順に選択します。
+      1. **[ファイル]** メニューで、 **[新規]** > **[プロジェクト]** > **[Visual C++]** > **[テスト]** > **[C++ 単体テスト プロジェクト]** の順に選択します。
 
       ::: moniker-end
 

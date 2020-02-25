@@ -2,7 +2,7 @@
 title: '手順 4: ASP.NET Core アプリから Web API を公開する'
 description: このビデオ チュートリアルとステップ バイ ステップの手順に従って、ASP.NET Core Web アプリに Web API を追加します。
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d3887c7cf665f9fd8d2789d460cc1a595e2bff
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553883"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271505"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>手順 4: ASP.NET Core アプリから Web API を公開する
 
@@ -37,7 +37,7 @@ Visual Studio 2019 で ASP.NET Core アプリを開きます。 アプリは、[
 
 ## <a name="add-an-api-controller"></a>API コントローラーを追加する
 
-プロジェクトを右クリックし、*Api* という名前の新しいフォルダーを追加します。 次に、このフォルダーを右クリックし、**[追加]** > **[新規スキャフォールディング アイテム]** を選択します。 **[Entity Framework を使用したアクションがある API コントローラー]** を選択します。 次に、既存のモデル クラスを選択し、**[追加]** をクリックします。
+プロジェクトを右クリックし、*Api* という名前の新しいフォルダーを追加します。 次に、このフォルダーを右クリックし、 **[追加]**  >  **[新規スキャフォールディング アイテム]** を選択します。 **[Entity Framework を使用したアクションがある API コントローラー]** を選択します。 次に、既存のモデル クラスを選択し、 **[追加]** をクリックします。
 
 ![Visual Studio 2019 ASP.NET Core のスキャフォールディングされた API コントローラー](media/vs-2019/vs2019-add-scaffold-api.png)
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>Swagger の追加
 
-Swagger は API のドキュメンテーションとテストを行うためのツールであり、サービスとミドルウェアのセットとして ASP.NET Core アプリに追加できます。 これを行うには、プロジェクトを右クリックし、**[NuGet パッケージの管理]** をクリックします。 **[参照]** をクリックし、`Swashbuckle.AspNetCore` を検索し、該当するパッケージをインストールします。
+Swagger は API のドキュメンテーションとテストを行うためのツールであり、サービスとミドルウェアのセットとして ASP.NET Core アプリに追加できます。 これを行うには、プロジェクトを右クリックし、 **[NuGet パッケージの管理]** をクリックします。 次に、 **[参照]** をクリックし、`Swashbuckle.AspNetCore` を検索して、4.0.1 バージョンをインストールします。
 
 ![Visual Studio 2019 - Nuget から Swashbuckle を追加する](media/vs-2019/vs2019-nuget-swashbuckle.png)
 

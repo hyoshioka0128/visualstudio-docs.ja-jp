@@ -2,7 +2,7 @@
 title: CPU 使用率データの分析 (C#、Visual Basic)
 description: CPU 使用率診断ツールを使用して C# と Visual Basic でアプリのパフォーマンスを測定する
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 92287c052282553a33222deb548609101d839291
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128193"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278679"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>クイック スタート: Visual Studio での CPU 使用率データの分析 (C#、Visual Basic)
 
@@ -29,15 +29,32 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio で、 **[ファイル]**  >  **[新しいプロジェクト]** の順に選択します。
+1. Visual Studio を開き、プロジェクトを作成します。
 
-2. **[Visual C#]** または **[Visual Basic]** の下で、 **[Windows デスクトップ]** を選択し、中央のウィンドウで [**コンソール アプリ (.NET Framework)]** を選択します。
+   ::: moniker range="vs-2017"
+   上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-    **[コンソール アプリ]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** ワークロードを選択し、 **[変更]** を選びます。
+   **[新しいプロジェクト]** ダイアログ ボックスの左側のペインで、 **[C#]** または **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、プロジェクトに *MyProfilerApp* という名前を付けます。
 
-3. 「**MyProfilerApp**」のような名前を入力し、 **[OK]** をクリックします。
+   **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。 Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   スタート ウィンドウが開いていない場合は、 **[ファイル]** 、 **[スタート ウィンドウ]** の順に選択します。
 
-    Visual Studio によってプロジェクトが作成されます。
+   スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+
+   **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[C#]** または **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
+
+   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+
+   > [!NOTE]
+   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+
+   **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyProfilerApp*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+
+   ::: moniker-end
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
 
 2. *Program.cs* を開き、すべてのコードを次のコードで置換します。
 

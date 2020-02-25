@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112528"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275443"
 ---
 # <a name="warnings-and-errors"></a>警告とエラー
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112528"
 * **制約の解決**
   * [ソリューションを具体化できません](#cannot-concretize-solution)
 
-* **ドメイン**
+* **ドメインまたはランタイム**
   * [オブジェクトを構築するための情報を指定してください](#help-construct)
   * [型を見つけるための情報を指定してください](#help-types)
   * [使用可能な型を推測しました](#usable-type-guessed)
@@ -254,7 +254,7 @@ IntelliTest は、すべての .NET 型の[テスト入力を生成します](in
 
 IntelliTest は、すべての .NET 型の[テスト入力を生成します](input-generation.md)。 型が抽象またはインターフェイスの場合、IntelliTest は、その型の特定の実装を選択する必要があります。 選択を行うには、どの型が存在するかを知る必要があります。
 
-この警告が表示されたときには、IntelliTest が、いくつかの参照先アセンブリを参照して実装の型を見つけたにもかかわらず、その型を使用するかどうかを確認できないか、別の場所により適切な使用可能な型があることを示しています。 IntelliTest は、単に有望と思われる型を選択しました。
+この警告が表示されたときは、IntelliTest で参照先アセンブリのいくつかを参照して実装の型が見つかったものの、その型を使用するかどうかを確認できないか、より適切な使用可能な型が別の場所にあることを示しています。 IntelliTest は、単に有望と思われる型を選択しました。
 
 この警告を回避するために、IntelliTest の型の選択をそのまま使用するか、対応する [PexUseType](attribute-glossary.md#pexusetype) を追加することによっての他の型を使用するように IntelliTest を補助します。
 

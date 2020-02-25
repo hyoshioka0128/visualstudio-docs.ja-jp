@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706998"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192417"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -60,15 +60,15 @@ ms.locfileid: "74706998"
 |          Visual Studio Enterprise with GitHub Enterprise          | VL  |   6 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL、Azure、リテール |   3 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional with GitHub Enterprise          | VL  |   3 か月    | はい<sup>2</sup> |
-|              Visual Studio Test Professional (標準)              |    VL、リテール     |   3 か月    | はい<sup>2</sup>  |
-|                      MSDN Platforms (標準)                       |    VL、リテール     |   3 か月    | はい<sup>2</sup>  |
+|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用できません    | N/A  |
+|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用できません    | N/A  |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用できません |       N/A       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       N/A       |
 ||
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine が含まれます。*
 
-<sup>2</sup>  *選択した Visual Studio サブスクリプションの Pluralsight 特典は、ご利用のサブスクリプションが更新されると、更新されます。たとえば、毎年更新する年間サブスクリプションをお持ちの場合、毎年更新すると特典を利用できるようになります。複数年のサブスクリプションをお持ちの場合、Pluralsight 特典はサブスクリプションの有効期間中に 1 回使用できます。複数年のサブスクリプションを更新した場合、更新後に特典が再度利用できるようになります。*
+<sup>2</sup> *選択した Visual Studio サブスクリプションの Pluralsight 特典は、ご利用のサブスクリプションが更新されると、更新されます。たとえば、毎年更新する年間サブスクリプションをお持ちの場合、毎年更新すると特典を利用できるようになります。複数年のサブスクリプションをお持ちの場合、Pluralsight 特典はサブスクリプションの有効期間中に 1 回使用できます。複数年のサブスクリプションを更新した場合、更新後に特典が再度利用できるようになります。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

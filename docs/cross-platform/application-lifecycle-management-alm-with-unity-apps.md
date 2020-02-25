@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777735"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272264"
 ---
 # <a name="devops-with-unity-apps"></a>Unity アプリを使用した DevOps
 
@@ -105,7 +105,7 @@ Unity を使ったバージョン管理に関する注意事項:
 |[マネージド コードの品質の分析](../code-quality/code-analysis-for-managed-code-overview.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[コード クローン検出を使用した重複コードの検出](https://msdn.microsoft.com/library/hh205279.aspx)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
+|[パフォーマンス ツール](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
 |[.NET Framework のメモリ分析の問題](https://msdn.microsoft.com/library/dn342825.aspx)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|
 
 ## <a name="release-management"></a>リリース管理

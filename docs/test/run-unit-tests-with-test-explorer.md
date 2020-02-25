@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585445"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278522"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -311,7 +311,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="diagnose-test-method-performance-issues"></a>テスト メソッドのパフォーマンスの問題を診断する
 
-テスト メソッドに時間がかかる原因を診断するには、テスト エクスプローラーでメソッドを選択し、右クリック メニューの **[選択したテストのプロファイル]** を選択します。 「[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)」を参照してください。
+テスト メソッドに時間がかかる原因を診断するには、テスト エクスプローラーでメソッドを選択し、右クリック メニューの **[選択したテストのプロファイル]** を選択します。 [インストルメンテーション プロファイリング レポート](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)を参照してください。
 
 ### <a name="analyze-unit-test-code-coverage"></a>単体テストのコード カバレッジを分析する
 

@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481974"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439125"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash タスク
 
-ファイルが予想されるファイル ハッシュと一致することを確認します。
+ファイルが予想されるファイル ハッシュと一致することを確認します。 ハッシュが一致しない場合、タスクは失敗します。
 
 このタスクは 15.8 で追加されましたが、16.0 より前の MSBuild バージョンで使用するには[回避策](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272)が必要です。
 
@@ -59,6 +59,30 @@ ms.locfileid: "71481974"
                     Hash="$(ExpectedHash)" />
   </Target>
 </Project>
+```
+
+MSBuild 16.5 以降では、ハッシュが一致しないときにビルドが失敗しないようにする場合 (たとえば、制御フローの条件としてハッシュ比較を使用している場合)、次のコードを使用して警告をメッセージにダウングレードできます。
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
 ```
 
 ## <a name="see-also"></a>関連項目
