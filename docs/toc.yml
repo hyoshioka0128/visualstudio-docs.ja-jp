@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: メソッドにパラメーターを追加する
                   href: ide/reference/add-parameter.md
+                - name: コンストラクターからプライベートフィールドを生成する
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: オーバーライドの生成
                   href: ide/reference/generate-override.md
                 - name: Equals および GetHashCode メソッドのオーバーライドの生成
@@ -374,6 +376,8 @@
                   href: ide/reference/extract-interface.md
                 - name: メソッドの抽出
                   href: ide/reference/extract-method.md
+                - name: ローカル関数を抽出する
+                  href: ide/reference/extract-local-function.md
                 - name: パラメーターを生成する
                   href: ide/reference/generate-parameter.md
                 - name: インラインの一時変数
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: 静的ローカル関数のリファクタリング オプション
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: メンバーを静的にする
+                  href: ide/reference/make-member-static.md
                 - name: 参照の近くへの宣言の移動
                   href: ide/reference/move-declaration-near-reference.md
                 - name: 一致するファイルへの型の移動
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 未使用値の割り当て、変数、およびパラメーター
                   href: ide/reference/unused-values-parameters.md
-                - name: 呼び出しチェーンのラップおよび配置
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: ラップ、インデント、およびパラメーターの整列
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: ラップ、インデント、およびリファクタリングの整理
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'チュートリアル: 使用法からのコードの生成'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense

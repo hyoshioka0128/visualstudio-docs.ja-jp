@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477000"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557973"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,13 +101,11 @@ ms.locfileid: "77477000"
   
     2. 次**のシンボルファイル (.pdb) の場所**を追加します。  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. パフォーマンスを向上させるには、シンボルキャッシュフォルダーを指定します。次に例を示します。  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>不足している VSPackage またはその依存関係の1つをトラブルシューティングするには  
   
@@ -117,7 +115,7 @@ ms.locfileid: "77477000"
   
    2. [**プロパティページ**] ダイアログボックスの [**参照**] タブを選択し、すべてのパスが正しいことを確認します。 または、**オブジェクトブラウザー**を使用して、参照先のオブジェクトを参照することもできます。  
   
-        マネージコードの場合は、 [fuslogvw.exe (アセンブリバインディングログビューアー)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)を使用して、失敗したアセンブリの読み込みの詳細を表示できます。  
+        マネージコードの場合は、 [fuslogvw.exe (アセンブリバインディングログビューアー)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)を使用して、失敗したアセンブリの読み込みの詳細を表示できます。  
   
 2. アンマネージコードの場合は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID レジストリノードで VSPackage の CLSID を見つけます。  
   

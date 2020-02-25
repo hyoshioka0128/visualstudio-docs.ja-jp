@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476906"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557989"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>方法: エンド ユーザーがインストールを開始する場所を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "77476906"
   
 2. **[公開]** タブをクリックします。  
   
-3. [インストール URL] フィールドに、https://www.microsoft.com/ApplicationNameの形式で完全修飾 URL を使用してインストール場所を入力するか \\\Server\ApplicationName. の形式を使用して UNC パスを入力します。  
+3. [インストール URL] フィールドに、`https://www.contoso.com/ApplicationName`の形式を使用した完全修飾 URL を使用するか、`\\Server\ApplicationName`の形式を使用した UNC パスを使用して、インストール先を入力します。  
   
 ## <a name="see-also"></a>参照  
  [方法: Visual Studio がファイルをコピーする場所を指定する](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
