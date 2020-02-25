@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599296"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578769"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio でのデバッグタスクの検索
 
@@ -75,7 +75,7 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 詳細については、「[デバッガーでのコード間の移動](navigating-through-code-with-the-debugger.md)」を参照してください。
 
-## <a name="inspect-data"></a>データの検査
+## <a name="inspect-data"></a>データを検査する
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>アプリの実行中に変数の値を確認する
 
@@ -101,7 +101,7 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 デバッガーのオプションとデバッガーのプロジェクト設定を構成するには、「[デバッガーの設定と準備](debugger-settings-and-preparation.md)」を参照してください。
 
-## <a name="additional-tasks"></a>その他のタスク
+## <a name="additional-tasks"></a>追加のタスク
 
 ### <a name="fix-an-exception"></a>例外を修正する
 
@@ -130,3 +130,7 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 ### <a name="debug-multithreaded-applications"></a>マルチスレッド アプリケーションのデバッグ
 
 「[マルチスレッドアプリケーションのデバッグ](debug-multithreaded-applications-in-visual-studio.md)」を参照してください。
+
+### <a name="fix-performance-issues"></a>パフォーマンスの問題を修正
+
+「[プロファイリングツールの概要」を](../profiling/profiling-feature-tour.md)参照してください。
