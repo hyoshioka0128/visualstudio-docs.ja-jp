@@ -8,19 +8,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e7a0917a07a3e36ec46b0f9e530dd55728e4ee
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180112"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579491"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>クイック スタート: Visual Studio を使用して初めての C# コンソール アプリを作成する
 
@@ -46,7 +46,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
 3. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *HelloWorld* という名前を付けます。
 
