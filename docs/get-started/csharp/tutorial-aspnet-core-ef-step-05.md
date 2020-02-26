@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970938"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580034"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>手順 5: Azure に ASP.NET Core アプリをデプロイする
 
@@ -37,7 +37,7 @@ Visual Studio 2019 で ASP.NET Core アプリを開きます。 アプリでは�
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service に発行する
 
-ソリューション エクスプローラー内でプロジェクトを右クリックし、**[発行]** を選択します。 **[App Service]** と **[新規作成]** の設定は既定のままにして、**[発行]** ボタンをクリックします。 Azure アカウントをまだお持ちでない場合は、**[無料 Azure アカウントを作成する]** をクリックして、簡単な登録プロセスを完了してください。
+ソリューション エクスプローラー内でプロジェクトを右クリックし、 **[発行]** を選択します。 **[App Service]** と **[新規作成]** の設定は既定のままにして、 **[発行]** ボタンをクリックします。 Azure アカウントをまだお持ちでない場合は、 **[無料 Azure アカウントを作成する]** をクリックして、簡単な登録プロセスを完了してください。
 
 SQL Server を追加します。 管理者のユーザー名とパスワードを指定します。
 
@@ -51,7 +51,7 @@ Application Insights を追加します。
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Azure portal およびホスト対象アプリを探索する
 
-App Service が作成されると、ブラウザー内でサイトが起動します。 読み込み中に Azure portal 内で App Service を探すこともできます。 App Service の使用可能なオプションを探索すると、**[概要]** セクションが見つかります。このセクションでは、アプリの起動や停止が可能です。
+App Service が作成されると、ブラウザー内でサイトが起動します。 読み込み中に Azure portal 内で App Service を探すこともできます。 App Service の使用可能なオプションを探索すると、 **[概要]** セクションが見つかります。このセクションでは、アプリの起動や停止が可能です。
 
 ![Azure App Service のオプション](media/vs-2019/vs2019-azure-app-service-menu-options.png)
 
@@ -73,9 +73,9 @@ Azure の場合、既定では、アプリから新しい SQL Server データ�
 
 ## <a name="test-the-app-running-in-azure"></a>Azure 内で実行されているアプリをテストする
 
-*/Games* パスに移動すると、新しいゲームを追加して、一覧表示できます。 次に、*/swagger* パスに移動すると、ここから Web API エンドポイントを使用して、アプリの API が機能しているかも確認できます。
+*/Games* パスに移動すると、新しいゲームを追加して、一覧表示できます。 次に、 */swagger* パスに移動すると、ここから Web API エンドポイントを使用して、アプリの API が機能しているかも確認できます。
 
-おめでとうございます!  このビデオ チュートリアル シリーズが完了しました。
+おめでとうございます! このビデオ チュートリアル シリーズが完了しました。
 
 ## <a name="next-steps"></a>次の手順
 

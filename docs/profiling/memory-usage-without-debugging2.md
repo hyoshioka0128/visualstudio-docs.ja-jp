@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910348"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578347"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>デバッガーなしでメモリ使用量を分析する
 
 **メモリ使用量**ツールでは、アプリのメモリ使用量を監視します。 ツールを使用して、Visual Studio で積極的に開発を行っているシナリオによるリアルタイムのメモリへの影響を調べることできます。 アプリのメモリ状態の詳細なスナップショットを取得し、そのスナップショットを比較してメモリの問題の根本原因を見つけることができます。
 
 **メモリ使用量**ツールは、デバッガーの有無に関わらず実行できます。 次の手順では、Visual Studio **パフォーマンス プロファイラー**でデバッガーなしで**メモリ使用量**ツールを使用する方法を示します。
-
->[!NOTE]
->- .NET Core アプリのメモリ使用量を測定するには、デバッガーと共に**メモリ使用量**ツールを使用する必要があります。 手順については、「[Profile memory usage in Visual Studio](memory-usage.md)」 (Visual Studio でのメモリ使用量のプロファイリング) を参照してください。
->- JavaScript や HTML UWP アプリでメモリ使用量を分析するには、**パフォーマンス プロファイラー**で [JavaScript メモリ](../profiling/javascript-memory.md) ツールを使用します。
 
 ## <a name="memory-usage-diagnostic-sessions"></a>メモリ使用量診断セッション
 
@@ -85,7 +81,7 @@ ms.locfileid: "72910348"
 
 ## <a name="memory-usage-snapshot-reports"></a>メモリ使用量のスナップショット レポート
 
-<a name="BKMK_Snapshot_report_trees"></a> **メモリ使用量**の概要ページでスナップショット リンクのいずれかを選択すると、新しいページにスナップショット レポートが開きます。
+<a name="BKMK_Snapshot_report_trees"></a>**メモリ使用量**の概要ページでスナップショット リンクのいずれかを選択すると、新しいページにスナップショット レポートが開きます。
 
 ![メモリ使用量のスナップショット レポート](../profiling/media/memuse_snapshotreport_all.png "メモリ使用量のスナップショット レポート")
 

@@ -17,17 +17,17 @@ helpviewer_keywords:
 - RC task (MSBuild (C++))
 - MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a0b19487551e7f132ea921eacdbcdb051104f9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912051"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578482"
 ---
 # <a name="rc-task"></a>RC タスク
 Microsoft Windows リソース コンパイラ ツールである *rc.exe* をラップします。 **RC** タスクは、カーソル、アイコン、ビットマップ、ダイアログ ボックス、フォントなどのリソースをコンパイルし、リソース ファイル ( *.res*) を作成します。 詳しくは、「[リソース コンパイラ](/windows/desktop/menurc/resource-compiler)」をご覧ください。

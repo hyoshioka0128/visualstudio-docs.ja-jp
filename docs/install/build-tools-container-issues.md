@@ -1,7 +1,7 @@
 ---
 title: コンテナーの既知の問題
 description: Windows コンテナーに Visual Studio Build Tools をインストールするときに発生する可能性がある既知の問題について説明します。
-ms.date: 07/03/2019
+ms.date: 02/18/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
+ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453383"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77611130"
 ---
 # <a name="known-issues-for-containers"></a>コンテナーの既知の問題
 

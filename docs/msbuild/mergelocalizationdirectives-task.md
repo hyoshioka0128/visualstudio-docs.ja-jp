@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MergeLocalizationDirectives task [WPF MSBuild]
 - moving localization comments and attributes to a separate file [WPF MSBuild]
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86c689122ac0ddfd9441122fdead64ecd8049e72
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817728"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579627"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives タスク
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> タスクは、1 つ以上の [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルのローカリゼーション属性とコメントを、アセンブリ全体で単一のファイルにマージします。
@@ -35,7 +35,7 @@ ms.locfileid: "62817728"
 | `GeneratedLocalizationFiles` | 必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式の個々のファイルに対するローカリゼーション ディレクティブ ファイルの一覧を指定します。 |
 | `OutputFile` | 省略可能な **String** 型の出力パラメーターです。<br /><br /> コンパイルされたローカリゼーション ディレクティブ アセンブリの出力パスを指定します。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] のコンテンツには、ローカリゼーション属性とコメントを追加できます。 [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] のローカリゼーション サポートを使用すると、ローカリゼーション属性とコメントを取り出し、生成されるアセンブリとは別の *.loc* ファイルに格納できます。 これを行うには、**LocalizationPropertyStorage** 属性を使用します。 ローカリゼーション属性とコメント、および **LocalizationPropertyStorage** の詳細については、「[ローカリゼーション属性とコメント](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)」を参照してください。
 
 ## <a name="example"></a>例

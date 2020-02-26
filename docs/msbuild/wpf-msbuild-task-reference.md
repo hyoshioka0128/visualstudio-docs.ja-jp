@@ -13,17 +13,17 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778327"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578192"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild タスク リファレンス
 Windows Presentation Foundation (WPF) のビルド プロセスは、マークアップのコンパイルやリソースのプロセスを含む追加のビルド タスクのセットで Microsoft ビルド エンジン (MSBuild) を拡張します。
@@ -55,7 +55,7 @@ Windows Presentation Foundation (WPF) のビルド プロセスは、マーク�
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 1 つ以上のリソース (*.jpg*、*.ico*、*.bmp*、バイナリ形式の [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]、その他の種類の拡張子) を *.resources* ファイルに埋め込みます。
+ 1 つ以上のリソース ( *.jpg*、 *.ico*、 *.bmp*、バイナリ形式の [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]、その他の種類の拡張子) を *.resources* ファイルに埋め込みます。
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -63,7 +63,7 @@ Windows Presentation Foundation (WPF) のビルド プロセスは、マーク�
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト (*\<プロジェクト名>.exe.manifest*) に追加します。
+ [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト ( *\<プロジェクト名>.exe.manifest*) に追加します。
 
 ## <a name="see-also"></a>関連項目
 - [MSBuild](../msbuild/msbuild.md)

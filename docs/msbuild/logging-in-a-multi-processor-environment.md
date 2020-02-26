@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65f0558e26583961d94ce380b59a60ecca45987b
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856027"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578528"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>マルチプロセッサ環境でのログ
 MSBuild では複数のプロセッサを使用できるため、プロジェクトのビルド時間が大幅に短縮されますが、同時にログの複雑性も高まります。 シングルプロセッサ環境であれば、logger は、イベント、メッセージ、警告、およびエラーを順序に従った予測可能な方法で処理できます。 それに対し、マルチプロセッサ環境では、イベントが複数のソースから同時に、または誤った順序で送られてくることがあります。 MSBuild には、マルチプロセッサ対応の新しい logger が用意されており、カスタム "転送 logger" を作成できます。

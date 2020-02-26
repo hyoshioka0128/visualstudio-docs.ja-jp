@@ -12,17 +12,17 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830172"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579683"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier タスク
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> タスクは、ソース リソースのセットをアセンブリに埋め込まれるリソースとして分類します。 ローカライズできないリソースは、メイン アプリケーション アセンブリに埋め込まれます。ローカライズ可能なリソースは、サテライト アセンブリに埋め込まれます。
@@ -40,7 +40,7 @@ ms.locfileid: "62830172"
 |`SatelliteEmbeddedFiles`|省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> **Culture** パラメーターで指定されたカルチャのサテライト アセンブリに埋め込まれる、ローカライズ可能なファイルを指定します。|
 |`SourceFiles`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> 分類するファイルのリストを指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 **Culture** パラメーターを設定しない場合、**SourceFiles** パラメーターを使用して指定したリソースは、すべてローカライズできないリソースになります。それ以外の場合は、**Localizable** 属性が **false** に設定されていない限り、ローカライズ可能なリソースになります。
 
 ## <a name="example"></a>例

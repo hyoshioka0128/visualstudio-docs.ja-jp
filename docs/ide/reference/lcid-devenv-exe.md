@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595528"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557933"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -53,13 +53,18 @@ Visual Studio でサポートされる言語の LCID の一覧を次の表に示
 |--------------|----------|
 |簡体中国語|2052|
 |繁体中国語|1028|
+|チェコ語|1029|
 |英語|1033|
 |フランス語|1036|
 |ドイツ語|1031|
 |イタリア語|1040|
 |日本語|1041|
 |韓国語|1042|
+|ポーランド語|1045|
+|ポルトガル語 (ブラジル)|1046|
+|ロシア語|1049|
 |スペイン語|3082|
+|トルコ語|1055
 
 ## <a name="example"></a>例
 

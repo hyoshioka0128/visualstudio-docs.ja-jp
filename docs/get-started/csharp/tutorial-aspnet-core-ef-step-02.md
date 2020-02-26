@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061124"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580074"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>手順 2: 最初の ASP.NET Core Web アプリを作成する
 
@@ -72,7 +72,7 @@ Visual Studio 2019 を起動し、 **[新しいプロジェクトの作成]** �
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-それでは、アプリケーションを実行し、ブラウザーで表示します。 アプリケーションは、**Ctrl** + **F5** キーを押すか、Visual Studio のメニューから **[デバッグ]**  >  **[デバッグなしで開始]** を選択して、実行できます。
+それでは、アプリケーションを実行し、ブラウザーで表示します。 アプリケーションは、**Ctrl**+**F5** キーを押すか、Visual Studio のメニューから **[デバッグ]**  >  **[デバッグなしで開始]** を選択して、実行できます。
 
 ## <a name="customize-the-application"></a>アプリケーションをカスタマイズする
 

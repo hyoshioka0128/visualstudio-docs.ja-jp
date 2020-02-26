@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNonMSBuildProjectOutput task
 - ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7060141f81054bf5daa27cdd09a07639be6e0ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d970437cd04a3f3d5467c905829e1d4229ab8a71
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996709"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578455"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput タスク
 MSBuild 以外のプロジェクト参照に対する出力ファイルを確認します。
@@ -36,7 +36,7 @@ MSBuild 以外のプロジェクト参照に対する出力ファイルを確認
 |`ResolvedOutputPaths`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 解決済みの参照パスの一覧が含まれます (また、元のプロジェクト参照属性を保持します)。|
 |`UnresolvedProjectReferences`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 出力の事前解決リストを使用して解決できなかったプロジェクト参照項目のリストが含まれます。<br /><br /> Visual Studio は非 MSBuild プロジェクトのみを事前解決するためです。つまり、この一覧のプロジェクト参照は MSBuild 形式です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目

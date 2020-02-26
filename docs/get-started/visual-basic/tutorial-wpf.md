@@ -9,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864700"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579954"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>チュートリアル: Visual Basic で単純なアプリケーションを作成する
 
@@ -63,7 +63,7 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
 ::: moniker range="vs-2017"
 
-1. 新しいプロジェクトを作成します。 メニュー バーで **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. 新しいプロジェクトを作成します。 メニュー バーから、 **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します。
 
      ![メニュー バーで [ファイル]、[新規作成]、[プロジェクト] を順にクリックします。](../media/exploreide-filenewproject.png)
 
@@ -104,13 +104,13 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ## <a name="design-the-user-interface-ui"></a>ユーザー インターフェイス (UI) のデザイン
 
-デザイナーを開いていない場合は、**ソリューション エクスプローラー**で *Greetings.xaml* を選択し、**Shift** + **F7** キーを押してデザイナーを開きます。
+デザイナーを開いていない場合は、**ソリューション エクスプローラー**で *Greetings.xaml* を選択し、**Shift**+**F7** キーを押してデザイナーを開きます。
 
 このアプリケーションに 3 種類のコントロール (<xref:System.Windows.Controls.TextBlock> コントロール、2 つの <xref:System.Windows.Controls.RadioButton> コントロール、および <xref:System.Windows.Controls.Button> コントロール) を追加します。
 
 ### <a name="add-a-textblock-control"></a>TextBlock コントロールを追加する
 
-1. **Ctrl** + **Q** キーを押して検索ボックスを有効にし、「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
+1. **Ctrl**+**Q** キーを押して検索ボックスを有効にし、「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
 
 2. **[ツールボックス]** で、 **[コモン WPF コントロール]** ノードを展開し、TextBlock コントロールを表示します。
 

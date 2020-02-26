@@ -14,24 +14,24 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (C++))
 - MSBuild (C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1ae0fbbcdb36c13a8c0ee91011f2b7d6fba9f5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747157"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578120"
 ---
 # <a name="xdcmake-task"></a>XDCMake タスク
 XML ドキュメント ツール (*xdcmake.exe*) をラップします。このツールは、XML ドキュメント コメント ( *.xdc*) ファイルを *.xml* ファイルにマージします。
 
  C++ のソース コードにドキュメンテーション コメントを記入し、[/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) コンパイラ オプションでコンパイルすると、 *.xdc* ファイルが作成されます。 詳細については、「[XDCMake リファレンス](/cpp/build/reference/xdcmake-reference)」、「[[XML ドキュメント ジェネレーター] プロパティ ページ](/cpp/build/reference/xml-document-generator-tool-property-pages)」、*xdcmake.exe* のコマンドライン ヘルプ オプション ( **/?** ) をご覧ください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  既定では、*xdcmake.exe* ツールはいくつかのコマンドライン オプションをサポートしています。 **/old** コマンドライン オプションを指定すると、追加のオプションがサポートされます。
 
 ## <a name="parameters"></a>パラメーター

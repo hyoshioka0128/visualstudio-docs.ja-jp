@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b0b461fa812d6fff8c4d6a258cb9dabf8b04f6db
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852291"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557832"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>方法: スタンドアロンのプロファイラーをインストールする
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE をインストールしなくても実行できるコマンドライン ベースのスタンドアロン プロファイラーを利用できます。 このような状況は、コンピューターに開発環境がインストールされていないときに発生します。 たとえば、本稼働中の Web サーバーには開発環境をインストールするべきではありません。
@@ -54,7 +54,6 @@ ms.locfileid: "75852291"
 
 ## <a name="see-also"></a>関連項目
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [チュートリアル: サンプリングを使ったコマンド ライン プロファイリング](../profiling/walkthrough-command-line-profiling-using-sampling.md)
 - [チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング](command-line-profiling-of-stand-alone-applications.md)
 - [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

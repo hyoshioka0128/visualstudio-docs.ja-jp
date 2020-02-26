@@ -20,17 +20,17 @@ helpviewer_keywords:
 - MSBuild (C++), LIB task
 - LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748094"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578541"
 ---
 # <a name="lib-task"></a>LIB タスク
 Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。 Library Manager は、COFF (Common Object File Format) オブジェクト ファイルのライブラリを作成および管理します。 また、エクスポートした定義を参照するためのエクスポート ファイルやインポート ライブラリも作成できます。 詳細については、「[LIB リファレンス](/cpp/build/reference/lib-reference)」と「[LIB の実行](/cpp/build/reference/running-lib)」を参照してください。
