@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Microsoft Store で購入した Visual Studio のサブスクリプションをアクティブ化する方法について説明します。
-ms.openlocfilehash: 8df8125280e17eba941e099d8d27b37a19de79b1
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 2fb3d958206cd3fcd76654b95d5be4b8d8e8a3a4
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439154"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476761"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Microsoft Store で購入したサブスクリプションをアクティブ化する方法
 Microsoft Store で Visual Studio のサブスクリプションを購入した場合は、購入後に受け取った支払いの確認ページまたは確認メールからライセンス認証手順を始めることができます。
@@ -35,7 +35,8 @@ Microsoft Store で Visual Studio のサブスクリプションを購入した�
 [[特典]](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ページにアクセスして、サブスクリプションに含まれるすべてのツール、サービス、トレーニング、サポートの特典を確認します。  使い始められるように [Visual Studio](vs-ide-benefit.md) と [Azure DevOps](vs-azure-devops.md) を設定することをお勧めします。 
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](/visualstudio/)
-- [Azure DevOps ドキュメント](/azure/devops/)
-- [Azure ドキュメント](/azure/)
-- [Microsoft 365 ドキュメント](/microsoft-365/)
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+

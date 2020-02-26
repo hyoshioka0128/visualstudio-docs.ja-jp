@@ -3,15 +3,15 @@ title: Visual Studio サブスクライバー データの匿名化 | Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: サブスクリプションへのアクセスを喪失したときに、サブスクライバー データがどのように匿名化されるかについて説明します。
-ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936911"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520840"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio サブスクライバー情報の匿名化
 サブスクライバーのサブスクリプションの使用をブロックするイベント (サブスクリプションの有効期限切れやサブスクライバーのサインイン アカウントの削除など) が発生すると、名前やサインイン アカウントなどのユーザーの個人情報は、基本的にスクランブルされ、使用できなくなります。  これは、サブスクライバーの個人情報を保護するために実行されます。
@@ -42,4 +42,10 @@ A: この問題を回避するには、次の 2 つの方法があります。
 - テナントを介して、AAD と MSA の ID を関連付けます。 
 
 ## <a name="next-steps"></a>次の手順
-[MSA と AAD の ID を関連付け](/azure/active-directory/b2b/add-users-administrator)て、匿名化を回避する方法について学習します。
+[MSA と AAD の ID を関連付け](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)て、匿名化を回避する方法について学習します。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
