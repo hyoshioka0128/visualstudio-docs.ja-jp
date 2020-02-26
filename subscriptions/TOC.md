@@ -28,6 +28,7 @@
 #### [Azure DevTest の個人クレジット](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest の従量課金制](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST の強調表示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
