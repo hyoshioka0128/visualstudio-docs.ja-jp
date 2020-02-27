@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b058883e30587ed656690796732b15750b6277
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647443"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579295"
 ---
 # <a name="step-7-keep-pairs-visible"></a>手順 7: ペアの表示の維持
 プレーヤーが一致しないアイコンのペアをクリックしている限り、ゲームは正常に動作します。 しかし、プレーヤーが一致するペアをクリックしたらどうなるでしょうか。 (<xref:System.Windows.Forms.Timer.Start> メソッドを使用して) タイマーを有効にしてアイコンを非表示にする代わりに、ゲームでは、それ自体をリセットすることで、クリックされた 2 つのラベルの色はリセットせずに、`firstClicked` 参照変数および `secondClicked` 参照変数を使用してラベルを追跡しないようにする必要があります。
@@ -62,7 +62,7 @@ ms.locfileid: "72647443"
 2. プログラムを保存したら実行し、フォームでアイコンのクリックを開始します。 一致しないペアをクリックした場合、タイマーの Tick イベントがトリガーされ、両方のアイコンが非表示になります。 一致するペアをクリックした場合、新しい `if` ステートメントが実行され、return ステートメントにより、メソッドでタイマーを開始するコードがスキップされるため、次の図に示すように、アイコンが表示されたままになります。
 
      ![このチュートリアルで作成するゲーム](../ide/media/express_finishedgame.png)<br/>
-*アイコンのペアが表示された****絵合わせゲーム***
+***アイコンのペアが表示された****絵合わせゲーム*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

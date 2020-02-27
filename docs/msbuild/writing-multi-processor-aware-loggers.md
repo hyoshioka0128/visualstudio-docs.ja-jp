@@ -7,17 +7,17 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443135"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579480"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>マルチプロセッサ対応のロガーの記述
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では複数のプロセッサを使用できるため、プロジェクトのビルド時間が短縮されますが、同時にビルド イベント ログの複雑性も高まります。 シングルプロセッサ環境では、イベント、メッセージ、警告、およびエラーが順序に従った予測可能な方法で logger に到着します。 それに対し、マルチプロセッサ環境では、イベントが複数のソースから同時に、または誤った順序で送られてくることがあります。 この問題を解決するために、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にはマルチプロセッサ対応の logger と新しいログ モデルが導入されており、カスタム "転送 logger" を作成できます。
@@ -33,7 +33,7 @@ ms.locfileid: "63443135"
 ### <a name="central-logging-model"></a>中央ログ モデル
  中央ログ モデルでは、*MSBuild.exe* の 1 つのインスタンスが "中央ノード" となり、中央ノードの子インスタンス ("セカンダリ ノード") が中央ノードにアタッチされ、それによってビルド タスクの実行が可能になります。
 
- ![中央 logger モデル](../msbuild/media/centralnode.png "CentralNode")
+ ![中央ロガー モデル](../msbuild/media/centralnode.png "CentralNode")
 
  中央ノードにアタッチされる各種の logger を "中央 logger" といいます。 いずれの logger でも一度に 1 つのインスタンスのみ中央ノードにアタッチできます。
 

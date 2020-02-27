@@ -12,17 +12,17 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], parameters
 - converting XAML projects to compiled binary format [WPF MSBuild]
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d72b0a63235de4cc93e97f6e85dc5728e5ebbf43
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979795"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579670"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 タスク
 
@@ -47,7 +47,7 @@ ms.locfileid: "62979795"
 | `GeneratedLocalizationFiles` | 省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> ローカライズ可能な各 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに対して生成されたローカリゼーション ファイルの一覧を含みます。 |
 | `HostInBrowser` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるアセンブリが [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] であるかどうかを指定します。 有効なオプションは、**true** および **false** です。 **true** の場合は、ブラウザーのホスト処理をサポートするコードが生成されます。 |
 | `KnownReferencePaths` | 省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されないアセンブリへの参照を指定します。 [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)]、[!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] インストール ディレクトリなどにあるアセンブリが含まれます。 |
-| `Language` | 必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#**、**VB**、**JScript**、**C++** です。 |
+| `Language` | 必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#** 、**VB**、**JScript**、**C++** です。 |
 | `LanguageSourceExtension` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルの拡張子に追加される拡張子を指定します。<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** パラメーターが特定の値に設定されていない場合、言語に応じた既定のソース ファイル名拡張子が使用されます。つまり、[!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)] では *.vb* になり、[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] では *.csharp* になります。 |
 | `LocalizationDirectivesToLocFile` | 省略可能な **String** 型のパラメーターです。<br /><br /> 各ソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルのローカリゼーション情報を生成する方法を指定します。 有効なオプションは、**None**、**CommentsOnly**、および **All** です。 |
 | `OutputPath` | 必須の **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルおよび [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルの出力先ディレクトリを指定します。 |
@@ -61,7 +61,7 @@ ms.locfileid: "62979795"
 | `UICulture` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成される [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルが埋め込まれる UI カルチャのサテライト アセンブリを指定します。 **UICulture** が設定されない場合、生成される [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] バイナリ形式ファイルは、メイン アセンブリに埋め込まれます。 |
 | `XAMLDebuggingInformation` | 省略可能な **Boolean** 型のパラメーターです。<br /><br /> **true** の場合、デバッグを支援するための診断情報が生成され、コンパイルされた [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 内に追加されます。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> タスクは通常、[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] をバイナリ形式にコンパイルしてコード ファイルを生成します。 同じプロジェクト内で定義される型への参照が [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに含まれている場合、**MarkupCompilePass1** は、バイナリ形式へのコンパイルを 2 番目のマークアップ コンパイル パス (**MarkupCompilePass2**) まで延期します。 このようなファイルでは、参照しているローカル定義の型がコンパイルされるまで待つ必要があるため、コンパイルを延期する必要があります。 ただし、[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに `x:Class` 属性がある場合、<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> はこのファイルの言語固有のコード ファイルを生成します。
 

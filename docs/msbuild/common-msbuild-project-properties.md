@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275498"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557885"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
@@ -68,6 +68,7 @@ ms.locfileid: "77275498"
 | FileAlignment | 出力ファイルでセクションをアラインするサイズをバイト単位で指定します。 有効値は 512、1024、2048、4096、および 8192 です。 このプロパティは、`/filealignment` コンパイラ スイッチに相当します。 |
 | FrameworkPathOverride | *mscorlib.dll* および *microsoft.visualbasic.dll* の位置を指定します。 このパラメーターは、*vbc.exe* コンパイラの `/sdkpath` スイッチに相当します。 |
 | GenerateDocumentation | (C#、Visual Basic) ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に *.xml* ファイルに格納されます。 |
+| GenerateFullPaths | (C#) [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) コンパイラ オプションの使用により、出力内のファイル名の完全なパスが生成されます。 |
 | GenerateSerializationAssemblies | XML シリアル化アセンブリを *SGen.exe* で生成するかどうかを示します。これはオン、自動、オフに設定できます。 このプロパティは、.NET Framework のみを対象とするアセンブリに使用されます。 .NET Standard アセンブリまたは .NET Core アセンブリに XML シリアル化アセンブリを生成するには、*Microsoft.XmlSerializer.Generator* パッケージを参照します。 |
 | IntermediateOutputPath | 中間出力ファイルの完全パスであり、パスが指定されていない場合に `BaseIntermediateOutputPath` を基に生成されます。 たとえば、 *\obj\debug\\* のようなパスが生成されます。 |
 | KeyContainerName | 厳密名キーのコンテナー名です。 |

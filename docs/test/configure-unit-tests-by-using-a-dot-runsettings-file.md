@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593253"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557950"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -249,14 +249,14 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
 **RunConfiguration** 要素には、次の要素を含めることができます。
 
-|ノード|既定値|値|
+|ノード|Default|値|
 |-|-|-|
 |**ResultsDirectory**||テスト結果が配置されるディレクトリ。|
 |**TargetFrameworkVersion**|Framework40|.NET Core ソースの場合は `FrameworkCore10`、UWP ベースのソースの場合は `FrameworkUap10`、.NET Framework 4.5 以降の場合は `Framework45`、.NET Framework 4.0 の場合は `Framework40`、.NET Framework 3.5 の場合は `Framework35`。<br /><br />この設定では、テストを検出して実行するために使用される単体テスト フレームワークのバージョンを指定します。 これは、単体テスト プロジェクトのビルド プロパティで指定した .NET プラットフォームのバージョンと異なっていてもかまいません。<br /><br />`TargetFrameworkVersion` 要素を *.runsettings* ファイルから省略した場合、フレームワークのバージョンはビルド済みバイナリに基づいてプラットフォームにより自動的に決定されます。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapter が配置されているディレクトリの 1 つまたは複数のパス|
-|**MaxCpuCount**|1|この設定では、単体テストを実行するときに、マシンで使用可能なコアを使用してテストを並列実行する程度を制御します。 テストの実行エンジンは、使用可能な各コア上の別個のプロセスとして起動し、実行するテストが入ったコンテナーを各コアに与えます。 コンテナーとしては、アセンブリ、DLL、または関連する成果物を指定できます。 テスト コンテナーはスケジューリングの単位です。 各コンテナーでは、テストはテスト フレームワークに従って実行されます。 コンテナーが多くある場合、あるコンテナー内のテストの実行を終了したプロセスには、次の使用可能なコンテナーが与えられます。<br /><br />MaxCpuCount には次の値を指定することができます。<br /><br />n。ここで n は、1 以上、コアの数以下です。最大 n 個のプロセスが起動されます<br /><br />n。ここで n はその他の値です。起動するプロセスの数は、利用可能なコアの数まで指定できます。|
+|**MaxCpuCount**|1|この設定では、単体テストを実行するときに、マシンで使用可能なコアを使用してテストを並列実行する程度を制御します。 テストの実行エンジンは、使用可能な各コア上の別個のプロセスとして起動し、実行するテストが入ったコンテナーを各コアに与えます。 コンテナーとしては、アセンブリ、DLL、または関連する成果物を指定できます。 テスト コンテナーはスケジューリングの単位です。 各コンテナーでは、テストはテスト フレームワークに従って実行されます。 コンテナーが多くある場合、あるコンテナー内のテストの実行を終了したプロセスには、次の使用可能なコンテナーが与えられます。<br /><br />MaxCpuCount には次の値を指定することができます。<br /><br />n。ここで n は、1 以上、コアの数以下です。最大 n 個のプロセスが起動されます<br /><br />n。ここで n はその他の値です。起動するプロセスの数は、利用可能なコアの数まで指定できます。 たとえば、"n = 0" と設定すると、環境に基づいて起動するプロセスの最適な数がプラットフォームによって自動的に決定されます。|
 |**TestSessionTimeout**||指定されたタイムアウトを超えたときにユーザーがテスト セッションを終了できるようにします。 タイムアウトを設定すると、リソースが適切に消費され、テスト セッションが設定された時間に制限されます。 この設定は、**Visual Studio 2017 バージョン 15.5** 以降で使用できます。|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>診断データ アダプター (データ コレクター)
@@ -325,7 +325,7 @@ public void HomePageTest()
 
 これらは、 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 属性を持つテスト メソッドを実行するテスト アダプターに固有の設定です。
 
-|構成|既定値|値|
+|構成|Default|値|
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 で、MSTest アダプターは処理速度を向上させ、よりスケーラブルになるように最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を **true** に設定します。<br /><br />たとえば、単体テスト用に指定された *app.config* ファイルがある場合は、この設定を使用することがあります。<br /><br />より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
 |**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|

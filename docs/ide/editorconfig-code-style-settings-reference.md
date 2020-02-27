@@ -1,6 +1,6 @@
 ---
 title: EditorConfig の .NET コーディング規則の設定
-ms.date: 06/14/2018
+ms.date: 02/21/2020
 ms.topic: reference
 helpviewer_keywords:
 - coding conventions [EditorConfig]
@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2c93a6e86ba82a75dabb8b2be77d2a82a3b4d599
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3ca9ed577fd253c81919f49a67c8286fbe28255
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566242"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557794"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig の .NET コーディング規則の設定
 
@@ -46,7 +46,7 @@ ms.locfileid: "75566242"
 
 ## <a name="example-editorconfig-file"></a>EditorConfig ファイルの例
 
-作業の開始に役立つように、ここでは既定のオプションを使用する *.editorconfig* ファイルの例を示します。
+作業の開始に役立つように、ここでは既定のオプションを使用する *.editorconfig* ファイルの例を示します。 Visual Studio では、このファイルを生成してプロジェクトに保存するには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]** > **[C#]** または **[Basic]** > **[コード スタイル]**  >  **[全般]** の順に選択します。 次に、 **[設定から editorconfig ファイルを生成]** ボタンをクリックします。 詳細については、「[コードのスタイル設定](code-styles-and-code-cleanup.md)」を参照してください。
 
 ```ini
 ###############################
@@ -70,9 +70,9 @@ charset = utf-8-bom
 ###############################
 
 [*.{cs,vb}]
+
 # Organize usings
 dotnet_sort_system_directives_first = true
-dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:silent
@@ -113,8 +113,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:silent
 
 # Style Definitions
 dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
-
-# Use PascalCase for constant fields
+# Use PascalCase for constant fields  
 dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
@@ -123,10 +122,11 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Code Style Rules         #
+# C# Coding Conventions       #
 ###############################
 
 [*.cs]
+
 # var preferences
 csharp_style_var_for_built_in_types = true:silent
 csharp_style_var_when_type_is_apparent = true:silent
@@ -140,7 +140,7 @@ csharp_style_expression_bodied_properties = true:silent
 csharp_style_expression_bodied_indexers = true:silent
 csharp_style_expression_bodied_accessors = true:silent
 
-# Pattern-matching preferences
+# Pattern matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -188,18 +188,17 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
-csharp_space_after_comma = true
-csharp_space_after_dot = false
 
 # Wrapping preferences
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-##################################
-# Visual Basic Code Style Rules  #
-##################################
+###############################
+# VB Coding Conventions       #
+###############################
 
 [*.vb]
+
 # Modifier preferences
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
@@ -208,4 +207,5 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 - [クイック アクション](../ide/quick-actions.md)
 - [移植可能なカスタム エディター オプションを作成する](../ide/create-portable-custom-editor-options.md)
-- [.NET コンパイラ プラットフォームの .editorconfig ファイル](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [.NET Compiler Platform "Roslyn" .editorconfig ファイル](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [.NET Compiler Platform ランタイム .editorconfig ファイル](https://github.com/dotnet/runtime/blob/master/.editorconfig)

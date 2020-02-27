@@ -15,19 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def9edb232a37bc58a56ffd1ec9a16bcb1b75092
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590320"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557805"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild プロジェクト ファイル スキーマ リファレンス
+
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML スキーマのすべての要素と、使用可能な属性および子要素をまとめた表を提供します。
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はプロジェクト ファイルを使用して、ビルド エンジンに何をどのようにビルドするかを指示します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML スキーマに準拠した XML ファイルです。 このセクションでは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の XML スキーマ定義 ( *.xsd*) ファイルについて説明します。
 
+MSBuild プロジェクト ファイルのスキーマ リンクは、Visual Studio 2017 以降では必要ありません。 存在する場合は、Visual Studio のバージョンに関係なく ` http://schemas.microsoft.com/developer/msbuild/2003` である必要があります。
+
 ## <a name="msbuild-xml-schema-elements"></a>MSBuild XML スキーマの要素
+
  次の表に、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML スキーマのすべての要素、および子要素と属性を示します。
 
 |要素|子要素|属性|
@@ -56,6 +60,7 @@ ms.locfileid: "75590320"
 |[When 要素 (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|条件|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [条件](../msbuild/msbuild-conditions.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

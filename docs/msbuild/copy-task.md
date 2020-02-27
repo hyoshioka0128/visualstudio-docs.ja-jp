@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596087"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558167"
 ---
 # <a name="copy-task"></a>Copy タスク
 ファイルをファイル システム上の新しい場所にコピーします。
@@ -36,7 +36,7 @@ ms.locfileid: "75596087"
 
 |パラメーター|説明|
 |---------------|-----------------|
-|`CopiedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 正常にコピーされたアイテムが格納されます。|
+|`CopiedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 正常にコピーされた項目が含まれます。これには、実際にはコピーされていないけれども、既に最新の状態であり、`SkipUnchangedFiles` が `true` であったためにスキップされたものも*含まれます*。|
 |`DestinationFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ソース ファイルのコピー先ファイルの一覧を指定します。 この一覧のファイルは、`SourceFiles` パラメーターに指定した一覧の内容と 1 対 1 で対応している必要があります。 つまり、`SourceFiles` の最初のファイルは、`DestinationFiles` の最初の場所にコピーされ、2 番目以降のファイルも同様に処理されます。|
 |`DestinationFolder`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> ファイルのコピー先ディレクトリを指定します。 ファイルではなく、ディレクトリである必要があります。 ディレクトリが存在しない場合は、自動的に作成されます。|
 |`OverwriteReadOnlyFiles`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> ファイルが読み取り専用としてマークされている場合でも、ファイルを上書きします。|

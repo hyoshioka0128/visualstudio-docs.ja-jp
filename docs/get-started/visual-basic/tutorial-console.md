@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829992"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579937"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
@@ -45,7 +45,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
 3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *WhatIsYourName* という名前を付けます。
 

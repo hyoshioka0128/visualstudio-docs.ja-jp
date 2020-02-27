@@ -6,18 +6,21 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
-ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439167"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476822"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
 
 > [!NOTE]
 > [[ダウンロード]](https://my.visualstudio.com/downloads/featured) ページには、サブスクリプションに含まれるダウンロードのみが表示されます。  複数のサブスクリプションまたはプログラムのメンバーシップがある場合は、所有している**最高サブスクリプション**のダウンロードが表示されます。現在、別のサブスクリプションを表示している場合でも同じです。  たとえば、ご利用の Visual Studio Enterprise サブスクリプションと Visual Studio Professional サブスクリプションが、どちらも同じサインイン ID に関連付けられている場合、現在 Professional サブスクリプションの特典が表示されていても、Enterprise サブスクリプションに含まれるダウンロードが表示されます。
+
+> [!NOTE]
+> Microsoft は、Office 365 のプロダクト キーの入手に関する問題を認識しています。  原因を調査しています。問題が解決されると、この記事が更新されます。 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>サブスクライバー ポータルでダウンロードを見つける方法
 [[ダウンロード]](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) ページにアクセスすると、製品の種類でグループ化された一般的なダウンロードが表示されます。  表示されている一般的なダウンロードのいずれかを選択するか、ページの上部にある検索バーを使用して任意の製品を検索できます。
@@ -53,7 +56,8 @@ ms.locfileid: "77439167"
 - [キーを探して要求する](find-keys.md)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](/visualstudio/)
-- [Azure DevOps ドキュメント](/azure/devops/)
-- [Azure ドキュメント](/azure/)
-- [Microsoft 365 ドキュメント](/microsoft-365/)
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+

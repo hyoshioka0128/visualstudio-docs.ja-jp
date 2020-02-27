@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab4c18006834cc1bef6841864e42609e09bc3a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3fe19549f61d646e08117198903b3ad9c1fd90dc
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585835"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557823"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild の予約済みおよび既知のプロパティ
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、プロジェクト ファイルに関する情報と [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のバイナリに関する情報を格納する一連の定義済みのプロパティが用意されています。 これらのプロパティは、他の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロパティと同じように評価されます。 たとえば、`MSBuildProjectFile` プロパティを使用するには、「`$(MSBuildProjectFile)`」と入力します。
@@ -36,6 +36,7 @@ ms.locfileid: "75585835"
 | `MSBuildExtensionsPath` | 既知 | .NET Framework 4 で導入: `MSBuildExtensionsPath` の既定値と `MSBuildExtensionsPath32` の既定値の間に違いはありません。 環境変数 `MSBUILDLEGACYEXTENSIONSPATH` を null 以外の値に設定すると、`MSBuildExtensionsPath` の既定値の動作を以前のバージョンで有効にすることができます。<br /><br /> .NET Framework 3.5 以前では、`MSBuildExtensionsPath` の既定値は、現在のプロセスのビット数に応じて、 *\Program Files\\* フォルダーまたは *\Program Files (x86)* フォルダーの下にある MSBuild サブフォルダーのパスを指していました。 たとえば、64 ビット コンピューター上の 32 ビット プロセスの場合、このプロパティが指すのは *\Program Files (x86)* フォルダーです。 64 ビット コンピューター上の 64 ビット プロセスの場合、このプロパティが指すのは *\Program Files* フォルダーです。<br /><br /> このプロパティに最後の円記号を含めないでください。<br /><br /> この場所は、カスタム ターゲット ファイルを格納するために役立ちます。 たとえば、ターゲット ファイルを *\Program Files\MSBuild\MyFiles\Northwind.targets* にインストールし、次の XML コードを使用して、プロジェクト ファイルにインポートできます。<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
 | `MSBuildExtensionsPath32` | 既知 | *\Program Files* フォルダーまたは *\Program Files (x86)* フォルダーの下にある [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] サブフォルダーのパス。 パスは常に、32 ビット コンピューター上の 32 ビットの *\Program Files (x86)* フォルダー、および 64 ビット コンピューター上の *\Program Files* を指します。 `MSBuildExtensionsPath` および `MSBuildExtensionsPath64` も参照してください。<br /><br /> このプロパティに最後の円記号を含めないでください。 |
 | `MSBuildExtensionsPath64` | 既知 | *\Program Files* フォルダーの下にある [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] サブフォルダーのパス。 64 ビット コンピューターの場合、このパスは常に *\Program Files* フォルダーを指します。 32 ビット コンピューターの場合、このパスは空白です。 `MSBuildExtensionsPath` および `MSBuildExtensionsPath32` も参照してください。<br /><br /> このプロパティに最後の円記号を含めないでください。 |
+| `MSBuildInteractive` | 予約されています。 | MSBuild が対話形式で実行されている場合は `true` であり、ユーザー入力が許可されます。 この設定は、`-interactive` コマンドライン オプションを使用して制御できます。 |
 | `MSBuildLastTaskResult` | 予約されています。 | 前のタスクがエラーを発生することなく完了した場合は、(警告があった場合でも) `true` を返します。前のタスクでエラーが発生した場合は、`false` を返します。 通常、エラーがタスクで発生する場合、プロジェクト内ではエラーは最後に発生します。 したがって、このプロパティの値は、次のシナリオ以外では `false` にはなりません。<br /><br /> - [Task 要素 (MSBuild)](../msbuild/task-element-msbuild.md) の `ContinueOnError` 属性が `WarnAndContinue` (または `true`) あるいは `ErrorAndContinue` に設定されている場合。<br /><br /> - `Target` に、子要素として [OnError 要素 (MSBuild)](../msbuild/onerror-element-msbuild.md) がある場合。 |
 | `MSBuildNodeCount` | 予約されています。 | ビルド時に使用する同時実行プロセスの最大数。 これは、コマンド ラインで **-maxcpucount** に指定した値です。 値を使用せずに **-maxcpucount** を指定した場合、`MSBuildNodeCount` はコンピューター上のプロセッサの数を示します。 詳細については、「[コマンドライン リファレンス](../msbuild/msbuild-command-line-reference.md)」と「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」を参照してください。 |
 | `MSBuildProgramFiles32` | 予約されています。 | 32 ビットのプログラム フォルダーの場所 (*C:\Program Files (x86)* など)。<br /><br /> このプロパティに最後の円記号を含めないでください。 |

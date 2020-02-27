@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567464"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557957"
 ---
 # <a name="delete-task"></a>Delete タスク
 指定されたファイルを削除します。
@@ -39,6 +39,9 @@ ms.locfileid: "75567464"
 
 ## <a name="remarks"></a>Remarks
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
+
+> [!WARNING]
+> `Delete` タスクでワイルドカードを使用する場合は注意してください。 `$(SomeProperty)\**\*.*` や `$(SomeProperty)/**/*.*` などの式を使用すると、間違ったファイルを簡単に削除できます。プロパティが空の文字列に評価される場合は特に、`Files` パラメーターがドライブのルートに評価され、削除したいものよりもはるかに多く削除される場合があります。
 
 ## <a name="example"></a>例
 次の例では、*MyApp.pdb* ファイルを削除します。
