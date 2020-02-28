@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
-  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
+  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "77265560"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77904062"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -150,7 +150,7 @@ additionalContent:
       url: ../profiling/index.yml
     - title: 拡張
       summary: 開発エクスペリエンスを向上させる独自の機能を Visual Studio IDE に追加します。
-      url: ../extensibility/index.md
+      url: ../extensibility/index.yml
     - title: データ
       summary: 任意のデータベースまたはサービス、および任意の場所 (ローカルまたはクラウド) に接続するデータ アプリを作成します。
       url: ../data-tools/accessing-data-in-visual-studio.md
@@ -202,7 +202,7 @@ additionalContent:
     - title: 他のツールセット
       links:
       - text: Visual Studio 拡張機能の開発
-        url: ../extensibility/index.md
+        url: ../extensibility/index.yml
       - text: C++ による Linux 開発
         url: /cpp/linux/
       - text: .NET Core クロスプラットフォームの開発

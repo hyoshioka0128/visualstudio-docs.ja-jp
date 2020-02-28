@@ -1,6 +1,6 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
     - name: MSBuild 16.0 の新機能
       href: whats-new-msbuild-16-0.md
@@ -85,7 +85,7 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: 予約済みの XML 文字をプロジェクト ファイルで使用する
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: 詳細な概念
+    - name: 高度な概念
       items:
         - name: MSBuild の詳細な概念
           href: msbuild-advanced-concepts.md
@@ -99,7 +99,7 @@
               href: item-metadata-in-target-batching.md
         - name: MSBuild 変換
           href: msbuild-transforms.md
-        - name: Visual Studio の統合
+        - name: Visual Studio の統合環境
           items:
             - name: Visual Studio の統合 (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -181,11 +181,11 @@
           href: logging-in-a-multi-processor-environment.md
         - name: マルチプロセッサ対応の logger の記述
           href: writing-multi-processor-aware-loggers.md
-        - name: 転送 logger の作成
+        - name: 転送ロガーの作成
           href: creating-forwarding-loggers.md
     - name: 'チュートリアル: MSBuild の使用'
       href: walkthrough-using-msbuild.md
-    - name: 'チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成'
+    - name: 'チュートリアル: MSBuild プロジェクト ファイルをゼロから作成する'
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild リファレンス
       items:
@@ -244,7 +244,7 @@
         - name: タスク リファレンス
           items:
             - name: 概要
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: C++ に固有のタスク
               items:
@@ -295,7 +295,7 @@
                   href: xsd-task.md
             - name: Task 基本クラス
               href: task-base-class.md
-            - name: TaskExtension 基本クラス
+            - name: TaskExtension 基底クラス
               href: taskextension-base-class.md
             - name: ToolTaskExtension 基本クラス
               href: tooltaskextension-base-class.md
@@ -441,23 +441,23 @@
           href: common-msbuild-project-items.md
         - name: MSBuild コマンド ライン リファレンス
           href: msbuild-command-line-reference.md
-        - name: MSBuild .Targets ファイル
+        - name: MSBuild .targets ファイル
           href: msbuild-dot-targets-files.md
-        - name: MSBuild 既知のアイテム メタデータ
+        - name: MSBuild の既知の項目メタデータ
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild 応答ファイル
           href: msbuild-response-files.md
         - name: WPF リファレンス
           items:
             - name: 概要
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
-            - name: WPF .Targets ファイル
+            - name: WPF .targets ファイル
               href: wpf-dot-targets-files.md
             - name: WPF タスク リファレンス
               items:
                 - name: 概要
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier タスク
                   href: fileclassifier-task.md
@@ -482,7 +482,7 @@
     - name: MSBuild のプログラムでの使用
       items:
         - name: 概要
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: MSBuild 15 への更新
           href: updating-an-existing-application.md
