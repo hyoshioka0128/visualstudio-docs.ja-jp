@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75775984"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181127"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチできます。 プロセスが実行された後、 **[デバッグ]** を選択して**プロセスにアタッチする**か、Visual Studio で**Ctrl**+**Alt**+**P**キーを押し > 、 **[プロセスにアタッチ]** ダイアログを使用してデバッガーをプロセスにアタッチします。
@@ -98,7 +98,7 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
    - **[接続ターゲット]** の横にあるドロップダウン矢印を選択し、ドロップダウンリストからコンピューター名を選択します。
    - **[接続先]** ボックスにコンピューター名を入力し、 **enter キーを**押します。
 
-     Visual Studio が必要なポートの形式で表示されるコンピューター名に追加されることを確認します **\<リモート コンピューター名>:ポート。**
+     Visual Studio によって、必要なポートがコンピューター名に追加されることを確認します。これは、 **\<リモートコンピューター名 >:p ort**という形式で表示されます。
 
      ::: moniker range=">= vs-2019"
 
@@ -152,6 +152,10 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
 どちらの方法も実行できない場合、3 つ目の方法として、Windows コマンド ラインから `vsjitdebugger.exe -p <ProcessId>` を実行することによって、プロセスにアタッチできます。 *Tlist.exe*を使用して、プロセス ID を確認できます。 *tlist.exe* を入手するには、[WDK と WinDbg のダウンロード](/windows-hardware/drivers/download-the-wdk)に関するページで Windows 用のデバッグ ツールをダウンロードし、インストールします。
 
 ::: moniker range=">= vs-2019"
+
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>SSH を使用して Linux で実行されている .NET Core プロセスにアタッチする
+
+詳細については、「 [SSH を使用して Linux で実行されているリモートデバッグ .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)」を参照してください。
 
 ## <a name="BKMK_Docker_Attach"></a>Linux Docker コンテナーで実行されているプロセスにアタッチする
 
@@ -218,13 +222,14 @@ C++ で記述されたコードにデバッガーをアタッチするには、�
 
 アタッチする実行中のプロセスをすばやく選択するには、Visual Studio で、Ctrl+**Alt**+**P** **キー**を押して、プロセス名の最初の文字を入力します。
 
-|通信の種類|Debug メソッド|プロセス名|メモとリンク|
+|シナリオ|Debug メソッド|[処理名]|メモとリンク|
 |-|-|-|-|
 |IIS サーバー上のリモートデバッグ ASP.NET 4 または4.5|リモートツールを使用して**プロセスにアタッチする**|*w3wp.exe*|「リモートの[IIS コンピューターでのリモートデバッグ ASP.NET」を](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)参照してください。|
-|IIS サーバー上のリモートデバッグ ASP.NET Core|リモートツールを使用して**プロセスにアタッチする**|*dotnet.exe*|アプリの展開については、「 [IIS への発行](https://docs.asp.net/en/latest/publishing/iis.html)」を参照してください。 デバッグについては、[リモートの IIS コンピューターでのリモートデバッグ ASP.NET Core に](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)関する参照を参照してください。|
+|IIS サーバー上のリモートデバッグ ASP.NET Core|リモートツールを使用して**プロセスにアタッチする**|*dotnet*または*appname*|アプリの展開については、「 [IIS への発行](https://docs.asp.net/en/latest/publishing/iis.html)」を参照してください。 デバッグについては、[リモートの IIS コンピューターでのリモートデバッグ ASP.NET Core に](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)関する参照を参照してください。|
 |サポートされているアプリの種類について、ローカル IIS サーバーでクライアント側スクリプトをデバッグする |**プロセスにアタッチを**使用する|*chrome .exe*、 *MicrosoftEdgeCP*、または*iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome の場合は、Chrome をデバッグモードで実行し、 **[アタッチ先]** フィールドで **[Webkit code]** を選択する必要もあります。|
 |ローカルコンピューター C#での、Visual Basic C++ 、またはアプリのデバッグ|[標準デバッグ] (**F5**) または **[プロセスにアタッチ]** を使用する|*\<アプリ名>.exe*|ほとんどのシナリオでは、標準のデバッグを使用して、**プロセスにアタッチ**しないようにします。|
 |Windows デスクトップアプリのリモートデバッグ|［リモート ツール］|N/A| 「[リモートデバッグ a C#または](../debugger/remote-debugging-csharp.md)アプリの Visual Basic」または「[アプリのリモートデバッグ」をC++ ](../debugger/remote-debugging-cpp.md)参照してください。|
+|Linux での .NET Core のデバッグ|**プロセスにアタッチを**使用する|*dotnet.exe*|SSH を使用するには、「 [ssh を使用して Linux で実行されているリモートデバッグ .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)」を参照してください。 Linux Docker コンテナーを使用するには、「 [Linux docker コンテナーで実行されているプロセスへのアタッチ](#BKMK_Docker_Attach)」を参照してください。|
 |デバッガーを使用せずにアプリを起動した後、ローカルコンピューターで ASP.NET アプリをデバッグする|**プロセスにアタッチを**使用する|*iiexpress.exe*|これは、プロファイリングの場合など、アプリの読み込みを高速化するために役立ちます。 |
 |サーバープロセスでサポートされているその他のアプリの種類をデバッグする|サーバーがリモートの場合は、リモートツールを使用し、**プロセスにアタッチ**します。|*chrome .exe*、 *iexplore.exe*、またはその他のプロセス|必要に応じて、リソースモニターを使用してプロセスを特定します。 「[Remote debugging](../debugger/remote-debugging.md)」(リモート デバッグ) を参照してください。|
 |ユニバーサル Windows アプリ (UWP)、OneCore、HoloLens、または IoT アプリのリモートデバッグ|インストールされているアプリ パッケージのデバッグ|N/A|「**プロセスにアタッチする**のではなく[、インストールされているアプリケーションパッケージをデバッグ](debug-installed-app-package.md)する」を参照してください。|
@@ -257,7 +262,7 @@ C++ で記述されたコードにデバッガーをアタッチするには、�
 
     1. **[プロセスにアタッチ]** ダイアログ ボックスの **[選択可能なプロセス]** の一覧で、プロセスを選択します。
 
-    2. **[選択]** を選びます。
+    2. **[選択]** を選択します。
 
     3. **[コードの種類の選択]** ダイアログ ボックスの **[次のコードの種類をデバッグする]** をクリックし、アタッチに失敗したコードの種類を選択します。 他のコードの種類の選択を解除します。
 
@@ -267,7 +272,7 @@ C++ で記述されたコードにデバッガーをアタッチするには、�
 
     このとき、アタッチは完全に失敗し、詳細なエラー メッセージが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [複数プロセスをデバッグする](../debugger/debug-multiple-processes.md)
 - [Just-In-Time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)

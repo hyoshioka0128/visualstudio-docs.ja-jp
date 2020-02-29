@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587447"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167625"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を表示しない
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **スコープ**-警告が抑制されている対象。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされる[スコープ](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)は次のとおりです。
 
-  - `module`-このスコープは、アセンブリに対する警告を抑制します。 これは、プロジェクト全体に適用されるグローバルな抑制です。
+  - [`module`](#module-suppression-scope) -このスコープは、アセンブリに対する警告を抑制します。 これは、プロジェクト全体に適用されるグローバルな抑制です。
 
   - `resource`-([レガシ FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md)のみ) このスコープでは、モジュール (アセンブリ) の一部であるリソースファイルに書き込まれた診断情報の警告が抑制されます。 このスコープは、ソースファイルの分析C#のみを行う Roslyn アナライザー診断のための VB コンパイラでは読み取り/適用されません。
 
@@ -96,11 +96,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 コード分析の警告は、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性が適用されるレベルでは抑制されます。 たとえば、属性は、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用できます。 この目的は、違反が発生したコードに対して抑制情報を密に結合することです。
 
-抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 例:
+抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 例 :
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 例:
+ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 例 :
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -174,11 +174,19 @@ public class Animal
 > [!NOTE]
 > `Target` には、常に完全修飾項目名が含まれます。
 
-## <a name="global-suppression-file"></a>グローバル抑制ファイル
+### <a name="global-suppression-file"></a>グローバル抑制ファイル
 
 グローバル抑制ファイルは、グローバルレベルの抑制またはターゲットを指定しない抑制のいずれかである抑制を保持します。 たとえば、アセンブリレベルの違反の抑制は、このファイルに格納されます。 また、一部の ASP.NET 抑制は、フォームの分離コードではプロジェクトレベルの設定が使用できないため、このファイルに格納されます。 グローバル抑制ファイルが作成され、プロジェクトに追加されます。その際、 **[エラー一覧]** ウィンドウで **[抑制]** コマンドの **[プロジェクトの抑制ファイルを]** 使用する オプションを初めて選択します。
 
-## <a name="see-also"></a>関連項目
+### <a name="module-suppression-scope"></a>モジュールの抑制スコープ
+
+**モジュール**スコープを使用すると、アセンブリ全体のコード品質違反を抑制できます。
+
+たとえば、 _globalsuppressions_プロジェクトファイルの次の属性は、ASP.NET Core プロジェクトの ConfigureAwait 違反を抑制します。
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="see-also"></a>参照
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091783"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167755"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis フレームワークを使用C++してデバッガーでオブジェクトのカスタムビューを作成する
 
@@ -94,6 +94,30 @@ Visual Studio デバッガーは、プロジェクト内のC++ natvis ファイ�
 >[!NOTE]
 >*.Pdb*から読み込まれた Natvis 規則は、 *.pdb*が参照するモジュールの型にのみ適用されます。 たとえば、Natvis `Test`という名前の型のエントリが*ある場合、このエントリは*、module1.vb の `Test` クラスにのみ適用さ*れます。* 別のモジュールも `Test`という名前のクラスを定義している場合は *、Natvis エントリは適用*されません。
 
+**VSIX パッケージを使用して*natvis*ファイルをインストールして登録するには、次のようにします。**
+
+VSIX パッケージは、 *natvis*ファイルをインストールして登録できます。 インストールされている場所に関係なく、すべての*natvis*ファイルがデバッグ中に自動的に取得されます。
+
+1. VSIX パッケージに*natvis*ファイルを含めます。 たとえば、次のようなプロジェクトファイルがあるとします。
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+     <ItemGroup>
+       <VSIXSourceItem Include="Visualizer.natvis" />
+     </ItemGroup>
+   </Project>
+   ```
+
+2. *Natvis*ファイルを*source.extension.vsixmanifest*ファイルに登録します。
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Assets>
+       <Asset Type="NativeVisualizer" Path="Visualizer.natvis"  />
+     </Assets>
+   </PackageManifest>
+   ```
+
 ### <a name="BKMK_natvis_location"></a>Natvis ファイルの場所
 
 複数のプロジェクトに適用する場合は、 *natvis*ファイルをユーザーディレクトリまたはシステムディレクトリに追加できます。
@@ -104,19 +128,21 @@ Visual Studio デバッガーは、プロジェクト内のC++ natvis ファイ�
 
 2. 読み込ま C++れたプロジェクトまたはトップレベルソリューションにある natvis ファイル。 このグループには、 C++クラスライブラリを含む、読み込まれたすべてのプロジェクトが含まれますが、他の言語のプロジェクトは含まれません。
 
+3. VSIX パッケージを使用してインストールおよび登録された*natvis ファイル。*
+
 ::: moniker range="vs-2017"
 
-3. ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2017 \ ビジュアライザー*)。
+4. ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2017 \ ビジュアライザー*)。
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2019 \ ビジュアライザー*)。
+4. ユーザー固有の Natvis ディレクトリ (たとえば、 *%USERPROFILE%\Documents\Visual Studio 2019 \ ビジュアライザー*)。
 
 ::: moniker-end
 
-4. システム全体の Natvis ディレクトリ ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 このディレクトリには、Visual Studio と共にインストールされる*natvis*ファイルがあります。 管理者のアクセス許可がある場合は、このディレクトリにファイルを追加できます。
+5. システム全体の Natvis ディレクトリ ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 このディレクトリには、Visual Studio と共にインストールされる*natvis*ファイルがあります。 管理者のアクセス許可がある場合は、このディレクトリにファイルを追加できます。
 
 ## <a name="modify-natvis-files-while-debugging"></a>デバッグ中に natvis ファイルを変更する
 
@@ -236,7 +262,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 #### <a name="priority-attribute"></a>Priority 属性
 
-省略可能な `Priority` 属性は、定義の解析に失敗した場合に、代替定義を使用する順序を指定します。 `Priority` に指定できる値は、`Low`、`MediumLow`、`Medium`、`MediumHigh`、および `High`です。 既定値は `Medium`です。 `Priority` 属性は、同じ*natvis*ファイル内の優先度のみを区別します。
+省略可能な `Priority` 属性は、定義の解析に失敗した場合に、代替定義を使用する順序を指定します。 `Priority` に指定できる値は、`Low`、`MediumLow`、`Medium`、`MediumHigh`、および `High`です。 既定値は `Medium` です。 `Priority` 属性は、同じ*natvis*ファイル内の優先度のみを区別します。
 
 次の例では、最初に 2015 STL と一致するエントリを解析します。 解析に失敗した場合、2013バージョンの STL の代替エントリが使用されます。
 
@@ -682,7 +708,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 </Type>
 ```
 
- メモリ内のビットマップを表示するために使用する[イメージウォッチ](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)拡張機能の `UIVisualizer` の例を確認できます。
+ メモリ内のビットマップを表示するために使用する[イメージウォッチ](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance)拡張機能の `UIVisualizer` の例を確認できます。
 
 ### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer 要素
  `CustomVisualizer` は、Visual Studio code で視覚エフェクトを制御するために記述する VSIX 拡張機能を指定する機能拡張ポイントです。 VSIX 拡張機能の記述の詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
