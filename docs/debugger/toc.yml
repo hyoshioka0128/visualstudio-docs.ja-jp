@@ -590,8 +590,6 @@
                   items:
                     - name: COM サーバーおよび COM コンテナーのデバッグ
                       href: com-server-and-container-debugging.md
-                    - name: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX コントロール
                   items:
                     - name: ActiveX コントロールをデバッグする

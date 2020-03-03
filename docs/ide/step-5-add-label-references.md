@@ -37,7 +37,7 @@ ms.locfileid: "77579331"
 
      変数は、オブジェクトを追跡していない間は、特殊な予約値 `null` (C# の場合) および `Nothing` (Visual Basic の場合) に設定されます。 そのため、プログラムが起動されると、`firstClicked` および `secondClicked` の両方が `null` または `Nothing` に設定されます。これは、変数が何も追跡していないことを意味しています。
 
-2. 新しい `firstClicked` 参照変数を使用するように <xref:System.Windows.Forms.Control.Click> イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます (必ずコメントと `if` ステートメント全体を含めてください)。
+2. 新しい `firstClicked` 参照変数を使用するように <xref:System.Windows.Forms.Control.Click> イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます  (必ずコメントと `if` ステートメント全体を含めてください)。
 
      [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
      [!code-csharp[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]
@@ -47,12 +47,12 @@ ms.locfileid: "77579331"
 4. 次のラベル コントロールをクリックすると、何も起こらないことに気付きます。 プログラムでは、プレーヤーがクリックした 1 つ目のラベルが既に追跡されているため、`firstClicked` は `null` (C# の場合) または `Nothing` (Visual Basic の場合) ではありません。 `if` ステートメントは、`firstClicked` が `null` または `Nothing` かどうかをチェックし、そうでないことがわかった場合は、`if` ステートメント内のステートメントを実行しません。 そのため、次の図に示すように、クリックされた 1 つ目のアイコンのみが黒になり、他のアイコンは非表示になります。
 
      ![1 つのアイコンが表示された絵合わせゲーム](../ide/media/express_tut4step5.png)<br/>
-***1 つのアイコンが表示された****絵合わせゲーム*
+***1 つのアイコンが表示された*** *絵合わせゲーム*
 
      この状況は、チュートリアルの次のステップで **Timer** コントロールを追加することで修正します。
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「 **[手順 6: タイマーの追加](../ide/step-6-add-a-timer.md)** 」をご覧ください。
+- チュートリアルの次の手順に進むには、「**[手順 6: タイマーの追加](../ide/step-6-add-a-timer.md)**」をご覧ください。
 
 - チュートリアルの前の手順に戻るには、「[手順 4:各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)」をご覧ください。

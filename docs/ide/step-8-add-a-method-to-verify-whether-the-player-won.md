@@ -43,10 +43,10 @@ ms.locfileid: "77579766"
 3. プログラムを保存し、実行します。 ゲームを実行し、すべてのアイコンを一致させます。 勝利すると、プログラムでは、次の図に示すように **MessageBox** が表示され、その後にボックスが閉じられます。
 
      ![MessageBox が表示された絵合わせゲーム](../ide/media/express_tut4step8.png)<br/>
-***MessageBox*** *が表示された****絵合わせゲーム***
+***MessageBox*** *が表示された* ***絵合わせゲーム***
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「 **[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)** 」をご覧ください。
+- チュートリアルの次の手順に進むには、「**[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)**」をご覧ください。
 
 - チュートリアルの前の手順に戻るには、「[手順 7:ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」をご覧ください。
