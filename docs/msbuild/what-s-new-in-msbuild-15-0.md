@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567281"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631030"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 の新機能
 
@@ -39,6 +39,7 @@ MSBuild は現在 [.NET Core SDK](https://www.microsoft.com/net/download/core) �
 - `SDK35ToolsPath` と `SDK40ToolsPath`: これらのプロパティは、このバージョンの Visual Studio に含まれている .NET Framework SDK を指しています (たとえば、4.X ツールの場合は 10.0A など)。
 
 ## <a name="updates"></a>更新
+
 - [Project 要素](../msbuild/project-element-msbuild.md)には新しい `SDK` 属性があります。 `Xmlns` 属性も省略できます。 `SDK` 属性の詳細については、「[方法:MSBuild プロジェクト SDK の参照](../msbuild/how-to-use-project-sdk.md)」、「[パッケージ、メタパッケージ、フレームワーク](/dotnet/core/packages)」、および「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
 - ターゲットの外部の [Item 要素](../msbuild/item-element-msbuild.md)には新しい `Update` 属性があります。 また、`Remove` 属性に対する制限も排除されました。
 - *Directory.Build.props* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。 `ImportDirectoryBuildTargets` プロパティを **false** に設定しない限り、このファイルは *Microsoft.Common.props* から自動的にインポートされます。 *Directory.Build.targets* は *Microsoft.Common.targets* によってインポートされます。
@@ -52,4 +53,5 @@ MSBuild は現在 [.NET Core SDK](https://www.microsoft.com/net/download/core) �
 - `GetPathOfFileAbove` は、直前のファイルのパスを返します。 その機能は `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />` の呼び出しと同じです
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild](../msbuild/msbuild.md)

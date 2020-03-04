@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b71f214a745222956c7dc9d582cc7fb2f1cfc427
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579690"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634241"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
+
 現在のコンテキストの追跡を終了します。
 
 ## <a name="syntax"></a>構文
@@ -32,10 +33,13 @@ HRESULT WINAPI EndTrackingContext();
 ```
 
 ## <a name="return-value"></a>戻り値
+
 コンテキストの追跡が終了した場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
+
 **ヘッダー:** *FileTracker.h*
 
 ## <a name="see-also"></a>関連項目
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

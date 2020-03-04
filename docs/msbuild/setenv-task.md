@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59523e3f6b12eb5921235efcf15d7937a14e7247
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5df538e7eb86a20dfc06e6e6558bded577ba3d2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595099"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632382"
 ---
 # <a name="setenv-task"></a>SetEnv タスク
+
 指定された環境変数の値を設定または削除します。
 
 ## <a name="parameters"></a>パラメーター
+
  **SetEnv** タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -41,4 +43,5 @@ ms.locfileid: "75595099"
 |**[値]**|省略可能な **String** 型のパラメーターです。<br /><br /> **Name** パラメーターによって指定される環境変数に割り当てられる値。 **Value** が空で変数が存在する場合、変数が削除されます。 変数が存在しない場合、操作が実行できなくてもエラーは発生しません。<br /><br /> 詳細については、「[Environment::SetEnvironmentVariable メソッド](xref:System.Environment.SetEnvironmentVariable%2A)」を参照してください。|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

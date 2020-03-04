@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585900"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633227"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用する MSBuild インライン タスク
+
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) と同様に、RoslynCodeTaskFactory ではクロス プラットフォームの Roslyn コンパイラを使用して、インライン タスクとして使用するためのメモリ内タスク アセンブリを生成します。  RoslynCodeTaskFactory タスクは、.NET Standard をターゲットとし、.NET Framework や .NET Core のランタイムだけでなく、Linux や Mac OS などの他のプラットフォームでも機能します。
 
 >[!NOTE]
 >RoslynCodeTaskFactory は MSBuild 15.8 以降でのみ使用できます。
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用したインライン タスクの構造
+
  RoslynCodeTaskFactory インライン タスクは、[CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) とまったく同じ方法で宣言されています。唯一の違いは、.NET Standard をターゲットとしていることです。  インライン タスクとそれを格納する `UsingTask` 要素は通常、 *.targets* ファイルに含められ、必要に応じて他のプロジェクト ファイルにインポートされます。 基本的なインライン タスクの例を次に示します。 このタスクでは何も実行されないことに注意してください。
 
 ```xml
@@ -68,6 +70,7 @@ ms.locfileid: "75585900"
 > `Task` 要素に含まれる要素はタスク ファクトリによって異なります。この例では、コード タスク ファクトリが格納されています。
 
 ### <a name="code-element"></a>コード要素
+
 `Task` 要素内の最後の子要素は `Code` 要素です。 `Code` 要素では、タスクにコンパイルするコードを記述するか参照します。 `Code` 要素に含める内容は、タスクを記述する方法に応じて異なります。
 
 `Language` 属性は、コードを記述する言語を指定します。 指定できる値は、`cs` (C# の場合) または `vb` (Visual Basic の場合) です。
@@ -88,6 +91,7 @@ ms.locfileid: "75585900"
 > ソース ファイル内のタスク クラスを定義する場合は、クラス名が、対応する [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素の `TaskName` 属性と一致する必要があります。
 
 ## <a name="hello-world"></a>Hello World
+
  これは RoslynCodeTaskFactory を使用したより堅牢なインライン タスクです。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の**出力**ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。
 
 ```xml
@@ -125,6 +129,7 @@ HelloWorld タスクを *HelloWorld.targets* という名前のファイルに�
 ```
 
 ## <a name="input-and-output-parameters"></a>入力パラメーターと出力パラメーター
+
  インライン タスクのパラメーターは、`ParameterGroup` 要素の子要素です。 どのパラメーターも、それを定義する要素の名前を受け取ります。 次のコードは、`Text` パラメーターを定義しています。
 
 ```xml
@@ -162,6 +167,7 @@ HelloWorld タスクを *HelloWorld.targets* という名前のファイルに�
 `Code` 要素の `Type` 属性が `Fragment` または `Method` の場合、すべてのパラメーターに対して自動的にプロパティが作成されます。 それ以外の場合は、タスクのソース コードで明示的にプロパティを宣言する必要があります。プロパティはパラメーター定義と完全に一致している必要があります。
 
 ## <a name="example"></a>例
+
  次のインライン タスクは、いくつかのメッセージを記録し、文字列を返します。
 
 ```xml
@@ -254,5 +260,6 @@ HelloWorld タスクを *HelloWorld.targets* という名前のファイルに�
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [チュートリアル: インライン タスクを作成する](../msbuild/walkthrough-creating-an-inline-task.md)

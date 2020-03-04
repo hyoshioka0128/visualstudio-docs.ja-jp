@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb6e43e315aceef5028e77480b2817cd8edb030
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597361"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632902"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile タスク
+
 テキスト ファイルからアイテムの一覧を読み込みます。
 
 ## <a name="parameters"></a>パラメーター
+
  `ReadLinesFromFile` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -37,9 +39,11 @@ ms.locfileid: "75597361"
 |`Lines`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ファイルから読み込まれた行が含まれます。|
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、`ReadLinesFromFile` タスクを利用し、テキスト ファイルの一覧から項目を作成します。 ファイルから読み込まれた項目は、`ItemsFromFile` 項目コレクションに保存されます。
 
 ```xml
@@ -62,6 +66,7 @@ ms.locfileid: "75597361"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [タスク](../msbuild/msbuild-tasks.md)

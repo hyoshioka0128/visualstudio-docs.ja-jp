@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b48529f82a908ea765151561a71c58cd2c7bc5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578421"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632096"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
+
 応答ファイルにルート マーカーを指定し、追跡コンテキストを開始します。
 
 ## <a name="syntax"></a>構文
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```
 
 #### <a name="parameters"></a>パラメーター
+
 [入力] `intermediateDirectory`
 
  追跡ログを格納するディレクトリ。
@@ -45,10 +47,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  ルート マーカーを含む応答ファイルのパス名。 あるコンテキストのすべての追跡をグループ化するためにルート名が使用されます。
 
 ## <a name="return-value"></a>戻り値
+
  追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
+
  **ヘッダー:** *FileTracker.h*
 
 ## <a name="see-also"></a>関連項目
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

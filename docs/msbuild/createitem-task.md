@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590073"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634332"
 ---
 # <a name="createitem-task"></a>CreateItem タスク
+
 項目コレクションに入力項目を設定します。 これにより、リスト間で項目をコピーできるようになります。
 
 > [!NOTE]
 > このタスクは非推奨とされます。 .NET Framework 3.5 以降、項目グループは [Target](../msbuild/target-element-msbuild.md) 要素内に配置できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 ## <a name="attributes"></a>属性
+
  `CreateItem` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -42,9 +44,11 @@ ms.locfileid: "75590073"
 |`PreserveExistingMetadata`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `True` の場合は、まだ存在しない場合にのみ追加メタデータを適用します。|
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次のコード例では、項目コレクション `MySourceItems` から、`MySourceItemsWithMetadata` という名前の新しい項目コレクションを作成します。 `CreateItem` タスクは、`MySourceItems` 項目コレクションの項目を新しい項目コレクションに設定します。 その後、名前が `MyMetadata` で値が `Hello` の追加メタデータ エントリを、新しいコレクションの各項目に追加します。
 
  タスクを実行した後、`MySourceItemsWithMetadata` 項目コレクションには項目 *file1.resx* と *file2.resx* が含まれ、どちらにも `MyMetadata` のメタデータ エントリが追加されています。 `MySourceItems` 項目コレクションは変更されません。
@@ -77,5 +81,6 @@ ms.locfileid: "75590073"
 |`MySourceItemsWithMetadata`|*file1.resx* (`MyMetadata="Hello"`)<br /><br /> *file2.resx* (`MyMetadata="Hello"`)|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)

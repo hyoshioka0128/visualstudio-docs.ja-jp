@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578541"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633591"
 ---
 # <a name="lib-task"></a>LIB タスク
+
 Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。 Library Manager は、COFF (Common Object File Format) オブジェクト ファイルのライブラリを作成および管理します。 また、エクスポートした定義を参照するためのエクスポート ファイルやインポート ライブラリも作成できます。 詳細については、「[LIB リファレンス](/cpp/build/reference/lib-reference)」と「[LIB の実行](/cpp/build/reference/running-lib)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  **LIB** タスクのパラメーターの説明を次の表に示します。 タスク パラメーターの大部分は、コマンド ライン オプションに対応します。
 
 |パラメーター|説明|
@@ -66,4 +68,5 @@ Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。 
 |**Verbose**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合は、セッションの進行状況の詳細を表示します。これには、追加される *.obj* ファイルの名前も含まれます。 情報は標準出力に送信され、ファイルにリダイレクトすることもできます。<br /><br /> 詳細については、「[LIB の実行](/cpp/build/reference/running-lib)」で **/VERBOSE** オプションを参照してください。|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

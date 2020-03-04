@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0c95c37e24f8c51453a849159073baff8dca0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593422"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634514"
 ---
 # <a name="bscmake-task"></a>BscMake タスク
+
 > [!IMPORTANT]
 > Visual Studio IDE では、BscMake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、*ソリューション* フォルダーの *sdf* ファイルに自動的に格納されます。
 
  Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。  *bscmake.exe* ツールは、コンパイル時に作成されるソース ブラウザー ファイル ( *.sbr*) からブラウザー情報ファイル ( *.bsc*) をビルドします。 *.bsc* ファイルを表示するには、**オブジェクト ブラウザー**を使用します。 詳細については、「[BSCMAKE リファレンス](/cpp/build/reference/bscmake-reference)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  **BscMake** タスクのパラメーターの説明を次の表に示します。 タスク パラメーターの大部分は、コマンド ライン オプションに対応します。
 
 |パラメーター|説明|
@@ -46,4 +48,5 @@ ms.locfileid: "75593422"
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

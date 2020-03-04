@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb4663013a73d88ed7c2118816007705834162c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578451"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632499"
 ---
 # <a name="resumetracking"></a>ResumeTracking
+
 現在のコンテキストで追跡を再開します。
 
 ## <a name="syntax"></a>構文
@@ -32,10 +33,13 @@ HRESULT WINAPI ResumeTracking();
 ```
 
 ## <a name="return-value"></a>戻り値
+
  追跡が再開された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。 コンテキストが利用できず、追跡を再開できない場合、**E_FAIL** が返されます。
 
 ## <a name="requirements"></a>必要条件
+
  **ヘッダー:** *FileTracker.h*
 
 ## <a name="see-also"></a>関連項目
+
 - [SuspendTracking](../msbuild/suspendtracking.md)

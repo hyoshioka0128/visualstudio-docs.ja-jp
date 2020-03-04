@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393077d6391a5c1f5f4088773013538efbedc9f7
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578711"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634566"
 ---
 # <a name="assignculture-task"></a>AssignCulture タスク
+
 このタスクは、有効な .NET カルチャ ID 文字列をファイル名の一部として含む可能性がある項目の一覧を受け取り、対応するカルチャ ID を含む `Culture` という名前のメタデータを持つ項目を生成します。 たとえば、ファイル名 *Form1.fr-fr.resx* には、"fr-fr" というカルチャ ID が埋め込まれています。したがって、このタスクでは、`fr-fr` と等しい値の `Culture` メタデータを持つ同じファイル名の項目が生成されます。 また、このタスクでは、ファイル名からカルチャを削除したファイル名の一覧も生成されます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
 `AssignCulture` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -40,9 +42,11 @@ ms.locfileid: "77578711"
 |`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> カルチャを割り当てるためのカルチャ名が埋め込まれたファイルの一覧を指定します。|
 
 ## <a name="remarks"></a>Remarks
+
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  `ResourceFiles` 項目コレクションを指定して `AssignCulture` タスクを実行する例を以下に示します。
 
 ```xml
@@ -78,5 +82,6 @@ ms.locfileid: "77578711"
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (カルチャ = "fr")<br /><br /> *MyResource2.XX.resx* (追加メタデータなし)|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

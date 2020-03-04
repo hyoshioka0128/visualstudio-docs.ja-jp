@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33912df490b148c91c2a0d152f979bd6149d8ae3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566073"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634137"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath タスク
+
 指定した項目コレクションの中で、指定したフォルダーの中にあるか、下にあるパスが含まれる項目を判断します。
 
 ## <a name="parameters"></a>パラメーター
+
 `FindUnderPath` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -40,9 +42,11 @@ ms.locfileid: "75566073"
 |`UpdateToAbsolutePaths`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、出力項目のパスが絶対パスになります。|
 
 ## <a name="remarks"></a>Remarks
+
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 次の例では、`FindUnderPath` タスクを利用し、`MyFiles` 項目に含まれるファイルに、`SearchPath` プロパティによって指定されるパスの下に存在するパスがあるか判断します。 タスク完了後、`FilesNotFoundInPath` 項目に *File1.txt* ファイルが含まれ、`FilesFoundInPath` 項目に *File2.txt* ファイルが含まれます。
 
 ```xml
@@ -73,6 +77,7 @@ ms.locfileid: "75566073"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

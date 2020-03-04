@@ -1,7 +1,7 @@
 ---
 title: C++ オブジェクトのカスタム ビューを作成する
 description: Natvis フレームワークを使用して、Visual Studio がデバッガーでネイティブ型を表示する方法をカスタマイズする
-ms.date: 10/31/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 064761d87b9aa851e40cf906e7734a3578dcad1a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167755"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234970"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis フレームワークを使用C++してデバッガーでオブジェクトのカスタムビューを作成する
 
@@ -537,7 +537,10 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 `ValueNode` は空のままにするか、`this` を使用して `LinkedListItems` ノード自体を参照することができます。
 
 #### <a name="customlistitems-expansion"></a>CustomListItems 展開
+
 `CustomListItems` 展開を使用して、ハッシュ テーブルなどのデータ構造を走査する際にカスタム ロジックを記述することができます。 `CustomListItems` を使用すると、評価する必要C++があるすべてのものに対して式を使用できるデータ構造を視覚化できますが、`ArrayItems`、`IndexListItems`、`LinkedListItems`のモールドにはあまり適合しません。
+
+`Exec` を使用すると、展開で定義されている変数とオブジェクトを使用して、`CustomListItems` 拡張の内部でコードを実行できます。 `Exec`では、論理演算子、算術演算子、代入演算子を使用できます。 式エバリュエーターでサポートされている[デバッガー組み込み関数](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state)を除き、`Exec` を使用して関数を評価することはできません。 C++
 
 次の `CAtlMap` 用ビジュアライザーは、`CustomListItems` が適切な場合の優れた例です。
 
@@ -569,24 +572,6 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
     </Expand>
 </Type>
 ```
-
-`Exec` を使用すると、展開で定義されている変数とオブジェクトを使用して、`CustomListItems` 拡張の内部でコードを実行できます。 `Exec`では、論理演算子、算術演算子、代入演算子を使用できます。 `Exec` を使用して関数を評価することはできません。
-
-`CustomListItems` は、次の組み込み関数をサポートしています。
-
-- `strlen`、`wcslen`、`strnlen`、`wcsnlen`、`strcmp`、`wcscmp`、`_stricmp`、`_strcmpi`、`_wcsicmp`、`strncmp`、`wcsncmp`、`_strnicmp`、`_wcsnicmp`、`memcmp`、`memicmp`、`wmemcmp`、`strchr`、`wcschr`、`memchr`、`wmemchr`、`strstr`、`wcsstr`、`__log2`、`__findNonNull`
-- `GetLastError`、`TlsGetValue`、`DecodeHString`、`WindowsGetStringLen`、`WindowsGetStringRawBuffer`、`WindowsCompareStringOrdinal`、`RoInspectCapturedStackBackTrace`、`CoDecodeProxy`、`GetEnvBlockLength`、`DecodeWinRTRestrictedException`、`DynamicMemberLookup`、`DecodePointer`、`DynamicCast`
-- `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
-- `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)`
-- `ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `Stdext_HashMap_Int_OperatorBracket_idx`
-- `Std_UnorderedMap_Int_OperatorBracket_idx`
-- `TreeTraverse_Init // Initializes a new tree traversal`
-- `TreeTraverse_Next // Returns nodes in a tree`
-- `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> TreeItems の展開
  視覚化された型がツリーを表す場合、デバッガーはツリーをたどり、 `TreeItems` ノードを使用してその子を表示できます。 `TreeItems` ノードを使用した `std::map` 型の視覚化を次に示します。
@@ -696,7 +681,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 - 属性ペアの `ServiceId` - `Id` `UIVisualizer`を識別します。 `ServiceId` は、ビジュアライザーパッケージが公開するサービスの GUID です。 `Id` は、サービスが複数を提供する場合にビジュアライザーを区別する一意の識別子です。 前の例では、同じビジュアライザーサービスに2つのビジュアライザーが用意されています。
 
-- `MenuName` 属性は、デバッガーの虫眼鏡アイコンの横にあるドロップダウンリストに表示されるビジュアライザー名を定義します。 例 :
+- `MenuName` 属性は、デバッガーの虫眼鏡アイコンの横にあるドロップダウンリストに表示されるビジュアライザー名を定義します。 次に例を示します。
 
   ![UIVisualizer メニューのショートカットメニュー](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer メニューのショートカット メニュー")
 

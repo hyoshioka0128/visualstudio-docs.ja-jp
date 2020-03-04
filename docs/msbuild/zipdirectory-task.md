@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588331"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630640"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory タスク
+
 ディレクトリのコンテンツから *.zip* アーカイブを作成します。
 
 >[!NOTE]
 >`ZipDirectory` タスクは MSBuild 15.8 以降でのみ使用できます。
 
 ## <a name="parameters"></a>パラメーター
+
  `ZipDirectory` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -45,9 +47,11 @@ ms.locfileid: "75588331"
 |`SourceDirectory`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> *.zip* アーカイブの作成元のディレクトリを指定します。|
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、プロジェクトのビルド後、出力ディレクトリから *.zip* アーカイブを作成します。
 
 ```xml
@@ -63,5 +67,6 @@ ms.locfileid: "75588331"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

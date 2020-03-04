@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594801"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634059"
 ---
 # <a name="generateresource-task"></a>GenerateResource タスク
+
 *.txt* ファイルおよび *.resx* (XML ベースのリソース形式) ファイルと共通言語ランタイムの *.resources* バイナリ ファイルとの間の変換を行います。 .resources ファイルは、ランタイム バイナリ実行可能ファイルに埋め込んだり、サテライト アセンブリにコンパイルしたりできます。 このタスクは通常、 *.txt* ファイルまたは *.resx* ファイルを *.resources* ファイルに変換するために使用します。 `GenerateResource` タスクの機能は [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の機能に似ています。
 
 ## <a name="parameters"></a>パラメーター
+
 `GenerateResource` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -61,6 +63,7 @@ ms.locfileid: "75594801"
 |`UseSourcePath`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、入力ファイルのディレクトリを使用して相対ファイル パスを解決することを指定します。|
 
 ## <a name="remarks"></a>Remarks
+
 *.resx* ファイルには、他のリソース ファイルへのリンクを含めることができるため、 *.resx* ファイルと *.resources* ファイルのタイムスタンプを比較するだけでは、出力が最新であるかどうかを確認できません。 `GenerateResource` タスクを使用すると、 *.resx* ファイル内のリンクをたどり、リンク先のファイルのタイムスタンプも確認できます。 したがって、`GenerateResource` タスクを持つターゲットについては、`Inputs` 属性と `Outputs` 属性の使用は基本的に避けてください。実行する必要のあるターゲットがスキップされてしまう可能性があります。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
@@ -68,6 +71,7 @@ ms.locfileid: "75594801"
 MSBuild 4.0 を使用して .NET 3.5 プロジェクトをターゲットにしている場合、x86 リソースでビルドが失敗することがあります。 この問題を回避するために、ターゲットを AnyCPU アセンブリとしてビルドできます。
 
 ## <a name="example"></a>例
+
 次の例では、`GenerateResource` タスクを使用して、`Resx` アイテム コレクションで指定されたファイルから *.resources* ファイルを作成します。
 
 ```xml
@@ -95,5 +99,6 @@ MSBuild 4.0 を使用して .NET 3.5 プロジェクトをターゲットにし�
 \<LogicalName> メタデータがない場合、リソースは *myAssembly.myResource.resources* という名前になります。  この例は、Visual Basic と Visual C# のビルド処理にのみ適用されます。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

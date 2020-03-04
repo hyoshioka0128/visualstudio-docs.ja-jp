@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567295"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631082"
 ---
 # <a name="walkthrough-use-msbuild"></a>チュートリアル: MSBuild の使用
 
@@ -192,6 +192,7 @@ Message タスクは、Text 属性の文字列値を入力として受け取り�
  上の行が、プロジェクト ファイルの後半に含まれていたり、プロジェクト ファイルの後半でインポートされるファイルに含まれていたりした場合は、TargetFrameworkVersion に "v3.5" という新しい値が割り当てられます。
 
 ## <a name="examine-a-property-value"></a>プロパティ値を確認する
+
  プロパティの値を取得するには、次の構文を使用します。ここで、PropertyName はプロパティの名前です。
 
 ```xml
@@ -411,6 +412,7 @@ Message タスクに変更を加えて、復帰と改行 (%0A%0D) を使用し�
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude、およびワイルドカード
+
  Include 属性でワイルドカード ("*"、"\*\*"、および "?") を使用して、項目を項目の種類に追加できます。 たとえば、オブジェクトに適用された
 
 ```xml
@@ -486,6 +488,7 @@ Exclude 属性は、同一の項目要素内にある Include 属性によって
     ```
 
 ## <a name="item-metadata"></a>項目メタデータ
+
  項目には、Include および Exclude 属性から収集した情報に加えて、メタデータが含まれます。 このメタデータは、項目の値だけでなく項目に関する詳細情報を必要とするタスクで使用できます。
 
  アイテム メタデータは、そのメタデータ名を名前に持つ要素を、項目の子として作成することにより、プロジェクト ファイルで宣言します。 項目には 0 以上のメタデータ値を指定できます。 たとえば、次の CSFile 項目には、値 "Fr" の Culture メタデータがあります。

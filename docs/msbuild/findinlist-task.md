@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650683c047f7df6422e25ef5b23201a2660b3125
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 915265a775f572467ad1296499bdd3201adc1f8b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591126"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634150"
 ---
 # <a name="findinlist-task"></a>FindInList タスク
+
 指定したリストで、一致する itemspec を含む項目を検索します。
 
 ## <a name="parameters"></a>パラメーター
+
  次の表では、[FindInList タスク](../msbuild/findinlist-task.md)のパラメーターについて説明します。
 
 |パラメーター|説明|
@@ -39,8 +41,10 @@ ms.locfileid: "75591126"
 |`MatchFileNameOnly`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、itemspec のファイル名の部分のみと照合します。それ以外の場合は、itemspec 全体と照合します。 既定値は `true`にする必要があります。|
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

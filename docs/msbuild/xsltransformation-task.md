@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b56d3b36545ecfe97015fc301ce3ce72e781ba
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 84bc83f60d133dcaf22c9fa690357fa2624adabd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588370"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630796"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation タスク
+
 XSLT またはコンパイルされた XSLT を利用して XML 入力を変換し、出力デバイスまたはファイルに出力します。
 
 ## <a name="parameters"></a>パラメーター
+
  `XslTransformation` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -40,8 +42,10 @@ XSLT またはコンパイルされた XSLT を利用して XML 入力を変換�
 |`XslInputPath`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> XSLT 入力ファイルを指定します。|
 
 ## <a name="remarks"></a>Remarks
+
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

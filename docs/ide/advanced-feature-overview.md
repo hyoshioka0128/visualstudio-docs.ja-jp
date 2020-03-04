@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591737"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235200"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -84,7 +84,7 @@ Visual Studio を使用して、macOS、Linux、Windows 用のアプリおよび
 
 - [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) を使用して、C# で 2D および 3D ゲームをビルドします。
 
-- iOS、Android、および Windows デバイス用のネイティブ C++ アプリをビルドします。 [C++ for Cross-Platform Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) を使用することによって、iOS、Android、および Windows 用にビルドされたライブラリ内で共通コードを共有します。
+- iOS、Android、および Windows デバイス用のネイティブ C++ アプリをビルドします。 [C++ for Cross-Platform Development](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development) を使用することによって、iOS、Android、および Windows 用にビルドされたライブラリ内で共通コードを共有します。
 
 - [Android エミュレーター](../cross-platform/visual-studio-emulator-for-android.md)で、Android アプリを展開、テスト、およびデバッグします。
 

@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590476"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634254"
 ---
 # <a name="downloadfile-task"></a>DownloadFile タスク
+
 ハイパーテキスト転送プロトコル (HTTP) を使って、指定したファイルをダウンロードします。
 
 >[!NOTE]
 >DownloadFile タスクは MSBuild 15.8 以降でのみ使用できます。
 
 ## <a name="parameters"></a>パラメーター
+
 `DownloadFile` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -49,9 +51,11 @@ ms.locfileid: "75590476"
 |`SourceUrl`|必須の `String` 型のパラメーターです。<br /><br /> ダウンロードする URL を指定します。|
 
 ## <a name="remarks"></a>Remarks
+
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 次の例では、プロジェクトをビルドする前にファイルをダウンロードし、それを `Content` 項目に含めます。
 
 ```xml
@@ -73,5 +77,6 @@ ms.locfileid: "75590476"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

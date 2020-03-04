@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592127"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633448"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild の詳細な概念
+
 このセクションのドキュメントでは、MSBuild を使用して実行するビルドを向上させる高度なテクニックの使用方法について説明します。
 
 ## <a name="related-topics"></a>関連トピック
@@ -32,5 +33,6 @@ ms.locfileid: "75592127"
 |[ベスト プラクティス](../msbuild/msbuild-best-practices.md)|MSBuild スクリプトを記述するためのベスト プラクティスを紹介します。|
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [MSBuild でのログ](../msbuild/logging-in-msbuild.md)

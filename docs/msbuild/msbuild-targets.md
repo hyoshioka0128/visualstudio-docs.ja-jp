@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593851"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633188"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 
@@ -105,6 +105,7 @@ Reference: 4.0
  すべての出力項目が最新の状態になっている場合、MSBuild はターゲットをスキップします。これがビルドのスピードを大幅に上げます。 これはターゲットのインクリメンタル ビルドと呼ばれています。 一部のファイルだけが最新の状態になっている場合、MSBuild は最新の項目なしでターゲットを実行します。 これはターゲットの部分的インクリメンタル ビルドと呼ばれています。 詳細については、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」を参照してください。
 
 ## <a name="default-build-targets"></a>既定のビルド ターゲット
+
 Microsoft.Common.CurrentVersion.Targets のパブリック ターゲットを次に示します。
 
 ```

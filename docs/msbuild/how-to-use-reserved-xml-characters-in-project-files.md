@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574328"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633773"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>方法: 予約済みの XML 文字をプロジェクト ファイルで使用する
+
 プロジェクト ファイルを作成するときに、たとえばプロパティ値やタスク パラメーター値の中で、予約済み XML 文字を使用する必要が生じることがあります。 しかし、いくつかの予約文字は、プロジェクト ファイルを解析できるようにするために、名前付きエンティティに置き換える必要があります。
 
 ## <a name="use-reserved-characters"></a>予約文字を使用する
+
  次の表は、プロジェクト ファイルを解析できるようにするために、対応する名前付きエンティティに置き換える必要がある予約済み XML 文字を示しています。
 
 |予約文字|名前付きエンティティ|
@@ -41,6 +43,7 @@ ms.locfileid: "75574328"
     ```
 
 ## <a name="example"></a>例
+
  次のコード例では、プロジェクト ファイルによって出力されるメッセージの中でファイル名を強調するために二重引用符が使用されています。
 
 ```xml
@@ -71,5 +74,6 @@ ms.locfileid: "75574328"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

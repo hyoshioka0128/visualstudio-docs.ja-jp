@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: 05b1a66eb6589f1d0d9502a754f67d0f9c31424f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851875"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235159"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
 管理者は組織のサブスクリプションを管理できます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。
@@ -34,6 +34,12 @@ Visual Studio サブスクリプションでは、開発チーム メンバー�
 | 運用環境向けではない | Visual Studio サブスクリプションのソフトウェアは、運用環境にはライセンス付与されません。運用環境には、受け入れテストやフィードバック以外にエンド ユーザーによってアクセスされる環境、実稼働データベースに接続している環境、ディザスター リカバリーまたは実稼働バックアップをサポートしている環境、またはアクティビティのピーク時に運用に使用される環境が含まれます。 この例外には、[Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)に記載されている特定のサブスクリプション レベルの特定の特典が含まれます。                                                                                            |
 | ライセンスの再割り当て                     | ユーザーがチームを離れ、ライセンスの必要がなくなった場合は、90 日が経過した後にそのライセンスを再割り当てすることができます。 ライセンスを再割り当てするときに、既に使用されているプロダクト キーは引き続き利用できるとしても置き換えられることはありません。 エンタープライズ契約 (EA) を締結している組織の場合、Pluralsight トレーニングなど、元のユーザーによって使用されていたすべての特典がリセットされます。                                                                                                                                                                                                                                                 |
 | エンド ユーザーの例外                  | ソフトウェア開発プロジェクトの最後に、エンド ユーザーは通常、アプリケーションを確認し、リリースに必要な条件を満たしているかどうかを判断します。 このプロセスは、ユーザー受け入れテスト (UAT) と呼ばれます。 ビジネス スポンサーや製品マネージャーなどのチーム メンバーは、エンド ユーザーの代理としての役割を果たすことができます。 Visual Studio サブスクリプションがないエンド ユーザーは、ソフトウェアの使用が Visual Studio のすべてのライセンス条項に準拠していれば、UAT のためにソフトウェアにアクセスできます。 プライマリ ロールがソフトウェアの設計、開発、またはテストのユーザーが、"エンド ユーザー" にも該当する場合はほとんどありません。 |
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 管理者の責任について詳しくは、以下をご覧ください。

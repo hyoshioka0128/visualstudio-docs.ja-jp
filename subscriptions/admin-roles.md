@@ -3,15 +3,15 @@ title: 管理ポータルでのスーパー管理者と管理者ロール
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: スーパー管理者と管理者ロール、および管理者を割り当てる方法について説明します。
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000942"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234830"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
 
@@ -39,6 +39,13 @@ ms.locfileid: "70000942"
 
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>次の手順
 - [サブスクリプションを割り当てる](assign-license.md)方法を学ぶ

@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590489"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633019"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
+
 プロジェクトおよびソリューションのツールセットは、次の 3 つの方法のいずれかで変更できます。
 
 1. コマンド ラインからプロジェクトまたはソリューションをビルドする場合は、`-ToolsVersion` スイッチ (省略形は `-tv`) を使用します。
@@ -28,6 +29,7 @@ ms.locfileid: "75590489"
 3. ソリューション内のプロジェクトに `$(ProjectToolsVersion)` プロパティを設定します。 これにより、他のプロジェクトとは異なるツールセットのバージョンを使用して、ソリューション内にプロジェクトをビルドできます。
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>コマンド ラインでのビルドでプロジェクトおよびソリューションの ToolsVersion 設定をオーバーライドする
+
  Visual Studio プロジェクトは通常、プロジェクト ファイルに指定された ToolsVersion でビルドされますが、コマンド ラインで `-ToolsVersion` (または `-tv`) スイッチを指定することによって、プロジェクト ファイルの ToolsVersion 値をオーバーライドし、すべてのプロジェクトとそのプロジェクト間依存関係を別のツールセットでビルドできます。 次に例を示します。
 
 ```cmd
@@ -39,6 +41,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
  コマンド ラインで `-tv` スイッチを使用するときには、特定のプロジェクトに `$(ProjectToolsVersion)` プロパティを指定し、ソリューション内の他のプロジェクトとは異なる ToolsVersion 値でビルドすることもできます。
 
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>MSBuild タスクの ToolsVersion パラメーターを使用して ToolsVersion 設定をオーバーライドする
+
  MSBuild タスクは、あるプロジェクトで別のプロジェクトをビルドするための主要な手段です。 MSBuild タスクには、プロジェクトに指定された値とは異なる ToolsVersion でプロジェクトをビルドすることが可能となる省略可能なタスク パラメーター `ToolsVersion` が用意されています。 このパラメーターを使用する方法を次の例に示します。
 
 1. 次のコードを含む *projectA.proj* という名前のファイルを作成します。
@@ -95,6 +98,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     ```
 
 ## <a name="order-of-precedence"></a>優先順位
+
  `ToolsVersion` は、次の優先順位に基づいて決定されます (順位の高いものから先に挙げています)。
 
 1. プロジェクトのビルドに使用される MSBuild タスクの `ToolsVersion` 属性。
@@ -124,6 +128,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     4. それ以外の場合は、現在の `ToolsVersion` を使用します。
 
 ## <a name="see-also"></a>関連項目
+
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

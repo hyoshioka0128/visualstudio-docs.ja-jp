@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278403"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633409"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild コマンド ライン リファレンス
 
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|既定のコンソール logger を無効にし、イベントのログをコンソールに記録しません。|
 
 ## <a name="example"></a>例
+
  *MyProject.proj* プロジェクトの `rebuild` ターゲットをビルドする例を次に示します。
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>例
+
  *MSBuild.exe* を使用して、より複雑なビルドを実行できます。 たとえばそれを使用して、ソリューション内の特定のプロジェクトの特定のターゲットをビルドできます。 `NotInSolutionFolder` プロジェクトをリビルドし、*NewFolder* ソリューション フォルダー内にある `InSolutionFolder` プロジェクトを消去する例を次に示します。
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)

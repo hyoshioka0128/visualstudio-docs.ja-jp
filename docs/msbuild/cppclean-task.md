@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596074"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634345"
 ---
 # <a name="cppclean-task"></a>CPPClean タスク
+
 C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。 ビルド ファイルを削除するプロセスは、*クリーニング* と呼ばれます。
 
 ## <a name="parameters"></a>パラメーター
+
  **CPPClean** タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -41,4 +43,5 @@ C++ プロジェクトのビルド時に MSBuild によって作成される一�
 |**FoldersToClean**|必須の `String` 型のパラメーターです。<br /><br /> 消去するディレクトリをセミコロンで区切ったリストを指定します。 完全パスまたは相対パスを指定することができ、パスにはワイルドカード記号 (*) を含めることができます。|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

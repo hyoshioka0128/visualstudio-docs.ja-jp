@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594843"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633045"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 要素 (MSBuild)
+
 すべての `When` 要素が `false` と評価された場合にのみ実行するコード ブロックを指定します。
 
  \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
@@ -41,9 +42,11 @@ ms.locfileid: "75594843"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
+
  なし。
 
 ### <a name="child-elements"></a>子要素
@@ -61,11 +64,13 @@ ms.locfileid: "75594843"
 |[Choose](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|
 
 ## <a name="remarks"></a>Remarks
+
  1 つの `Choose` 要素が持つことのできる `Otherwise` 要素の数は 1 つだけです。また、これは最後の要素である必要があります。
 
  `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次のプロジェクトでは、`Choose` 要素を使って、設定する `When` 要素のプロパティ値のセットを選んでいます。 両方の `When` 要素の `Condition` 属性が `false` と評価された場合、`Otherwise` 要素のプロパティ値が設定されます。
 
 ```xml
@@ -114,5 +119,6 @@ ms.locfileid: "75594843"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [条件構造](../msbuild/msbuild-conditional-constructs.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

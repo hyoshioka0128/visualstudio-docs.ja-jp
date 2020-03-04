@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579683"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634189"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier タスク
+
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> タスクは、ソース リソースのセットをアセンブリに埋め込まれるリソースとして分類します。 ローカライズできないリソースは、メイン アプリケーション アセンブリに埋め込まれます。ローカライズ可能なリソースは、サテライト アセンブリに埋め込まれます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
@@ -41,9 +42,11 @@ ms.locfileid: "77579683"
 |`SourceFiles`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> 分類するファイルのリストを指定します。|
 
 ## <a name="remarks"></a>Remarks
+
 **Culture** パラメーターを設定しない場合、**SourceFiles** パラメーターを使用して指定したリソースは、すべてローカライズできないリソースになります。それ以外の場合は、**Localizable** 属性が **false** に設定されていない限り、ローカライズ可能なリソースになります。
 
 ## <a name="example"></a>例
+
 次の例では、単一のソース ファイルをリソースとして分類し、French-Canadian (fr-CA) カルチャのサテライト アセンブリに埋め込みます。
 
 ```xml
@@ -64,6 +67,7 @@ ms.locfileid: "77579683"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
 - [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

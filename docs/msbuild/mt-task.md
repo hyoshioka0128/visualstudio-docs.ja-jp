@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595031"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633058"
 ---
 # <a name="mt-task"></a>MT タスク
+
 Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  以下の表で、**MT** タスクのパラメーターについて説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 > [!NOTE]
@@ -69,4 +71,5 @@ Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細�
 |**VerboseOutput**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、詳細なデバッグ情報を表示します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/verbose** オプションを参照してください。|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

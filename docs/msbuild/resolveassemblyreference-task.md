@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278358"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632759"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference タスク
+
 指定したアセンブリに依存するすべてのアセンブリを判断します。これには、2 番目と `n` 番目の依存関係も含まれます。
 
 ## <a name="parameters"></a>パラメーター
+
  `ResolveAssemblyReference` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -78,6 +80,7 @@ ms.locfileid: "77278358"
 |`TargetProcessorArchitecture`|省略可能な `String` 型のパラメーターです。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャです。 グローバル アセンブリ キャッシュ (GAC) の参照を解決するために使用されます。<br /><br /> このパラメーターの値には、`x86`、`IA64`、または `AMD64` を指定できます。<br /><br /> このパラメーターがない場合は、最初に、現在実行中のプロセスのアーキテクチャに一致するアセンブリが検討されます。 そのようなアセンブリが見つからない場合は、 `ProcessorArchitecture` 値が `MSIL` である GAC 内のアセンブリ、または `ProcessorArchitecture` 値のない GAC 内のアセンブリが検討されます。|
 
 ## <a name="warnings"></a>警告
+
  次の警告がログに記録されます。
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,8 +104,10 @@ ms.locfileid: "77278358"
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

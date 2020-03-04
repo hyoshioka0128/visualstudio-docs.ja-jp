@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558167"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634371"
 ---
 # <a name="copy-task"></a>Copy タスク
+
 ファイルをファイル システム上の新しい場所にコピーします。
 
 ## <a name="parameters"></a>パラメーター
+
 `Copy` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -47,6 +49,7 @@ ms.locfileid: "77558167"
 |`UseHardlinksIfPossible`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ファイルがコピーされるのではなく、コピーされたファイルのハード リンクが作成されます。|
 
 ## <a name="warnings"></a>警告
+
 次のような警告が記録されます。
 
 - `Copy.DestinationIsDirectory`
@@ -66,11 +69,13 @@ ms.locfileid: "77558167"
 - `Copy.RemovingReadOnlyAttribute`
 
 ## <a name="remarks"></a>Remarks
+
 `DestinationFolder` パラメーターか `DestinationFiles` パラメーターのいずれかを指定する必要がありますが、両方は指定できません。 両方を指定した場合、タスクは失敗し、エラーがログに記録されます。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 `MySourceFiles` アイテム コレクション内のアイテムを *C:\MyProject\Destination* にコピーする例を次に示します。
 
 ```xml
@@ -91,6 +96,7 @@ ms.locfileid: "77558167"
 ```
 
 ## <a name="example"></a>例
+
 再帰的なコピーを行う方法を次の例に示します。 このプロジェクトでは、*C:\MySourceTree* から *C:\MyDestinationTree* に、ディレクトリ構造を維持しながら、すべてのファイルが再帰的にコピーされます。
 
 ```xml
@@ -111,5 +117,6 @@ ms.locfileid: "77558167"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

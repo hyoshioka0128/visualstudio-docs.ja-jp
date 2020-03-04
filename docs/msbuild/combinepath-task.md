@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a52e0d770a535b0fa7d29a379a7f6aba63e62d78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 533f87eba9032efa7dc60ac682bbe400cb640727
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593344"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634436"
 ---
 # <a name="combinepath-task"></a>CombinePath タスク
-指定されたパスを 1 つのパスに結合します。
 
+指定されたパスを 1 つのパスに結合します。
 ## <a name="task-parameters"></a>タスク パラメーター
+
  [CombinePath タスク](../msbuild/combinepath-task.md)のパラメーターの説明を次の表に示します。
+
 
 |パラメーター|説明|
 |---------------|-----------------|
@@ -36,8 +38,10 @@ ms.locfileid: "75593344"
 |`CombinedPaths`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> このタスクによって作成される組み合わせたパス。|
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

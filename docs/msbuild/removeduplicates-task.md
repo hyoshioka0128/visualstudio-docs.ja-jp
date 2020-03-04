@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596009"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632785"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates タスク
+
 指定されたアイテム コレクションから、重複するアイテムを削除します。
 
 ## <a name="parameters"></a>パラメーター
+
  `RemoveDuplicates` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -37,11 +39,13 @@ ms.locfileid: "75596009"
 |`Inputs`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 重複した項目を削除する対象となる項目コレクションです。|
 
 ## <a name="remarks"></a>Remarks
+
  このタスクでは大文字と小文字が区別されず、重複の判断時、項目メタデータは比較されません。
 
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、`RemoveDuplicates` タスクを使用し、`MyItems` 項目コレクションから重複項目を削除します。 タスクが完了すると、`FilteredItems` 項目コレクションに含まれる項目が 1 つになります。
 
 ```xml
@@ -90,6 +94,7 @@ ms.locfileid: "75596009"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [タスク](../msbuild/msbuild-tasks.md)

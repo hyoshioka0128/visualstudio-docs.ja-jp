@@ -1,6 +1,6 @@
 ---
 title: デバッガー内の式 |Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736215"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235004"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーの式
 Visual Studio デバッガーには式エバリュエーターという機能があり、 **[クイック ウォッチ]** ダイアログ ボックス、 **[ウォッチ]** ウィンドウ、または **[イミディエイト]** ウィンドウで式を入力するときに役立ちます。 式エバリュエーターは **[ブレークポイント]** ウィンドウなど、他のデバッガー機能でも使用できます。
@@ -97,14 +97,14 @@ int main()
 
   デバッガーの組み込み関数は、式の評価をより便利にすることもできます。 たとえば、ブレークポイント条件に記述する際、 `strncmp(str, "asd")` は `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`よりもはるかに簡単です。 )
 
-|区分|組み込み関数|
+|領域|組み込み関数|
 |----------|-------------------------|
 |**文字列長**|strlen、wcslen、strnlen、wcsnlen|
 |**文字列比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|
-|**文字列検索**|strchr、wcschr、strstr、wcsstr|
-|**Win32**|GetLastError()、TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen()、WindowsGetStringRawBuffer()<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|
-|**その他の指定**|__log2<br /><br /> 指定した整数の底 2 の対数 (最も近い整数に切り捨てられます) を返します。|
+|**文字列検索**|strchr、wcstrstr r、memchr、wmemchr、、wcsstr|
+|**Win32**|GetLastError、TlsGetValue|
+|**Windows 8**|WindowsGetStringLen、WindowsGetStringRawBuffer<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|
+|**その他**|__log2//指定した整数の底2を返します。この値は、最も近い最小の整数に丸められます。<br /><br />__findNonNull、DecodeHString、WindowsCompareStringOrdinal、RoInspectCapturedStackBackTrace、CoDecodeProxy、GetEnvBlockLength、DecodeWinRTRestrictedException、DynamicMemberLookup、DecodePointer、DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx、Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] and 演算子 (インデックス < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] and 演算子 (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [インデックス < >] and 演算子 (インデックス < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] and 演算子 (tiled_index < >)<br /><br />新しいツリートラバーサルを TreeTraverse_Init//初期化します。<br /><br />TreeTraverse_Next//ツリー内のノードを返します。<br /><br />保留中のツリートラバーサル内のノードを TreeTraverse_Skip//スキップする|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - サポートされていない式
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - サポートされていない式
 
 ### <a name="dynamic-objects"></a>動的オブジェクト
-デバッガー式では、静的に型指定された変数を動的として使用できます。 @No__t_0 を実装するオブジェクトがウォッチウィンドウで評価されると、[動的ビュー] ノードが追加されます。 [動的ビュー] ノードにはオブジェクトのメンバーが表示されますが、そのメンバーの値を編集することはできません。
+デバッガー式では、静的に型指定された変数を動的として使用できます。 <xref:System.Dynamic.IDynamicMetaObjectProvider> を実装するオブジェクトがウォッチウィンドウで評価されると、[動的ビュー] ノードが追加されます。 [動的ビュー] ノードにはオブジェクトのメンバーが表示されますが、そのメンバーの値を編集することはできません。
 
 動的オブジェクトでは、以下の機能はサポートされていません。
 
@@ -204,7 +204,7 @@ int main()
 
 - 名前空間またはモジュール レベルのキーワード ( `End Sub` や `Module`など)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)
 - [Context Operator (C++)](../debugger/context-operator-cpp.md)
 - [C++ の書式指定子](../debugger/format-specifiers-in-csharp.md)

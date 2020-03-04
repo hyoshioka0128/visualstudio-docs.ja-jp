@@ -12,14 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1957bae45504e5654b3ed63c9fa0821a7f4c8758
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e7f79e04cc9afb4238c9f6292a99da684066a7d5
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596763"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632863"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>.NET Framework の拡張機能の登録
+
 .NET Framework の特定のバージョンを拡張するアセンブリを開発できます。 アセンブリが Visual Studio の **[参照の追加]** ダイアログ ボックスに表示されるようにするには、そのアセンブリを格納するフォルダーをシステム レジストリに追加する必要があります。
 
  たとえば、Trey Research 社では、.NET Framework 4 を拡張するライブラリを開発しており、プロジェクトが .NET Framework 4 を対象とするときはそのライブラリ アセンブリが **[参照の追加]** ダイアログ ボックスに表示されるようにするとします。 また、アセンブリは、32 ビット コンピューター上で実行される 32 ビット アセンブリまたは 64 ビット コンピューター上で実行される 64 ビット アセンブリであり、*C:\TreyResearch\Extensions4\\* フォルダーにインストールされるとします。
@@ -32,4 +33,5 @@ ms.locfileid: "75596763"
  32 ビット アセンブリを 64 ビット コンピューターに登録するには、Wow6432 ノードを使用します (例:**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\** )。
 
 ### <a name="see-also"></a>関連項目
+
 - [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md)

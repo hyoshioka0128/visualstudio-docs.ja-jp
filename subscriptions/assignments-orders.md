@@ -3,15 +3,15 @@ title: ユーザーの割り当てを追跡し、注文を処理する | Visual 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: ユーザーの割り当てを追跡して注文を処理する管理者の責任について説明します。
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967336"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235226"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>ユーザーの割り当てを追跡し、注文を処理する
 Visual Studio サブスクリプションの管理者は、Visual Studio の使用状況を追跡し、ボリューム ライセンス契約またはマイクロソフト製品/サービス契約に記載されているスケジュールに従って、使用率の増加に応じて注文を処理する必要があります。 新しい Visual Studio サブスクリプション管理ポータルは、使用可能なライセンスと使用済みのライセンスを示す便利なトラッカーにより、これを簡略化します。
@@ -36,6 +36,12 @@ Visual Studio サブスクリプションの管理者は、Visual Studio の使�
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise、MPSA、Select 契約
 Microsoft Enterprise Agreements (EA)、MPSA および Select Plus 契約では、長期にわたる Visual Studio ソフトウェアの使用とライセンスの柔軟性が得られます。 Visual Studio 管理者は、ソフトウェア ライセンスが契約期間中に定められた最大使用率になるように年間の調整注文を行う必要があります。
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
 管理者の責任について詳しくは、以下をご覧ください。
 - [管理者の責任](admin-responsibilities.md)
@@ -43,7 +49,3 @@ Microsoft Enterprise Agreements (EA)、MPSA および Select Plus 契約では�
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
 
-## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](/visualstudio/)
-- [Azure ドキュメント](/azure/)
-- [Azure DevOps](/azure/devops/)

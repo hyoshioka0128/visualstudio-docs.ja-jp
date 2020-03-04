@@ -13,14 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b36c4eb63c503132aaf434c64249e4a5fdd3872
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595255"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634111"
 ---
 # <a name="formatversion-task"></a>FormatVersion タスク
+
 バージョン番号にリビジョン番号を追加します。
 
 - ケース 1:入力:Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"
@@ -30,6 +31,7 @@ ms.locfileid: "75595255"
 - ケース 3:入力:Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>パラメーター
+
  `FormatVersion` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -40,8 +42,10 @@ ms.locfileid: "75595255"
 |`Version`|省略可能な `String` 型のパラメーターです。<br /><br /> 書式設定するバージョン番号文字列を指定します。|
 
 ## <a name="remarks"></a>Remarks
+
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

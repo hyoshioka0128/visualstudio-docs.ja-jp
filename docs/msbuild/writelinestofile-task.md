@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7f36d0876b1f757dee1a752c8461745783a21e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595333"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630666"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile タスク
+
 指定したアイテムのパスを指定したテキスト ファイルに書き込みます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
  `WriteLinestoFile` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -40,11 +42,13 @@ ms.locfileid: "75595333"
 |`WriteOnlyWhenDifferent`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ターゲット ファイルを指定すると、そのターゲット ファイルが最初に読み取られ、タスクによって書き込まれる内容と比較されます。 等しい場合、ファイルはディスクに書き込まれず、タイムスタンプが保持されます。|
 
 ## <a name="remarks"></a>Remarks
+
  `Overwrite` が `true` の場合、新しいファイルを作成し、内容をそのファイルに書き込んだ後、ファイルを閉じます。 既存のターゲット ファイルは上書きされます。 `Overwrite` が `false` の場合、ファイルにコンテンツを追加します。ターゲット ファイルがまだ存在しない場合は、ファイルを作成します。
 
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、`WriteLinesToFile` タスクを利用し、`MyTextFile` 項目コレクションにより指定されたファイルに、`MyItems` 項目コレクションの項目のパスを書き込みます。
 
 ```xml
@@ -92,5 +96,6 @@ dotnet %~dp0$(AssemblyName).dll %*
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

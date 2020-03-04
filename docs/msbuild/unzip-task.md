@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b02108e2ee47a31ced196643bf917b3b63c1c6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594904"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631511"
 ---
 # <a name="unzip-task"></a>Unzip タスク
+
 指定した場所に *.zip* アーカイブを解凍します。
 
 >[!NOTE]
 >`Unzip` タスクは MSBuild 15.8 以降でのみ使用できます。
 
 ## <a name="parameters"></a>パラメーター
+
  `Unzip` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -46,9 +48,11 @@ ms.locfileid: "75594904"
 |`SourceFiles`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 解凍する、1 つまたは複数のファイルを指定します。 複数のファイルを指定すると、同じフォルダーに整理されて解凍されます。|
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、アーカイブを解凍し、任意の読み取り専用ファイルを上書きします。
 
 ```xml
@@ -66,5 +70,6 @@ ms.locfileid: "75594904"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

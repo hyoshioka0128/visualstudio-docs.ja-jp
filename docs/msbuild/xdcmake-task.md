@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578120"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630653"
 ---
 # <a name="xdcmake-task"></a>XDCMake タスク
+
 XML ドキュメント ツール (*xdcmake.exe*) をラップします。このツールは、XML ドキュメント コメント ( *.xdc*) ファイルを *.xml* ファイルにマージします。
 
  C++ のソース コードにドキュメンテーション コメントを記入し、[/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) コンパイラ オプションでコンパイルすると、 *.xdc* ファイルが作成されます。 詳細については、「[XDCMake リファレンス](/cpp/build/reference/xdcmake-reference)」、「[[XML ドキュメント ジェネレーター] プロパティ ページ](/cpp/build/reference/xml-document-generator-tool-property-pages)」、*xdcmake.exe* のコマンドライン ヘルプ オプション ( **/?** ) をご覧ください。
 
 ## <a name="remarks"></a>Remarks
+
  既定では、*xdcmake.exe* ツールはいくつかのコマンドライン オプションをサポートしています。 **/old** コマンドライン オプションを指定すると、追加のオプションがサポートされます。
 
 ## <a name="parameters"></a>パラメーター
+
  **XDCMake** タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -50,4 +53,5 @@ XML ドキュメント ツール (*xdcmake.exe*) をラップします。この�
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

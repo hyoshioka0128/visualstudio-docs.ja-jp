@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585220"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633916"
 ---
 # <a name="how-to-clean-a-build"></a>方法: ビルドをクリーンする
-ビルドをクリーンするとき、すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルが残ります。 プロジェクト ファイルとコンポーネント ファイルから、中間ファイルと出力ファイルの新しいインスタンスをビルドできます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] とともに提供されている一般的なタスクのライブラリには、システム コマンドの実行に利用できる [Exec](../msbuild/exec-task.md) タスクが含まれています。 タスクのライブラリに関する情報については、「[タスク リファレンス](../msbuild/msbuild-task-reference.md)」を参照してください。
+
+ビルドをクリーンするとき、すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルが残ります。 プロジェクト ファイルとコンポーネント ファイルから、中間ファイルと出力ファイルの新しいインスタンスをビルドできます。 
 
 ## <a name="create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
+
  既定では、プロジェクトのコンパイル時に作成される *.exe* ファイルは、プロジェクトおよびソース ファイルと同じディレクトリに置かされます。 ただし、一般的には、出力項目は別個のディレクトリに作成されます。
 
-#### <a name="to-create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
+### <a name="to-create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
 
 1. `Property` 要素を利用し、ディレクトリの場所と名前を定義します。 たとえば、プロジェクトおよびソースファイルを含むディレクトリに *BuiltApp* という名前のディレクトリを作成します。
 
@@ -40,6 +42,7 @@ ms.locfileid: "75585220"
      ```
 
 ## <a name="remove-the-output-items"></a>出力項目を削除する
+
  中間ファイルと出力ファイルの新しいインスタンスを作成する前に、以前のインスタンスをすべて消去しておくことをお勧めします。 [RemoveDir](../msbuild/removedir-task.md) タスクを利用し、ディレクトリとそれに含まれるすべてのファイルとディレクトリをディスクから削除します。
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>ディレクトリとそのディレクトリに含まれるすべてのファイルを削除するには
@@ -49,6 +52,7 @@ ms.locfileid: "75585220"
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>例
+
  次のコード例プロジェクトには、新しいターゲット、`Clean` が含まれています。このターゲットは `RemoveDir` タスクを使用し、ディレクトリとそのディレクトリに含まれるすべてのファイルを削除します。 この例ではまた、`Compile` ターゲットは、ビルドのクリーン時に削除される出力項目に対して別個のディレクトリを作成します。
 
  `Compile` は既定のターゲットとして定義されます。そのため、別のターゲットを指定しない限り、自動的に使用されます。 コマンド ライン スイッチ **-target** を使用し、別のターゲットを指定します。 次に例を示します。
@@ -100,7 +104,7 @@ ms.locfileid: "75585220"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Exec タスク](../msbuild/exec-task.md)
+
 - [MakeDir タスク](../msbuild/makedir-task.md)
 - [RemoveDir タスク](../msbuild/removedir-task.md)
 - [Csc タスク](../msbuild/csc-task.md)
