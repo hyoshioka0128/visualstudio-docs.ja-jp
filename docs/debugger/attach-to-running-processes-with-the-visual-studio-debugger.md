@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: f2f00cde0c2ea3fad79c0f5ef75f3c33ad7afc22
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181127"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257190"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチできます。 プロセスが実行された後、 **[デバッグ]** を選択して**プロセスにアタッチする**か、Visual Studio で**Ctrl**+**Alt**+**P**キーを押し > 、 **[プロセスにアタッチ]** ダイアログを使用してデバッガーをプロセスにアタッチします。
@@ -229,7 +229,7 @@ C++ で記述されたコードにデバッガーをアタッチするには、�
 |サポートされているアプリの種類について、ローカル IIS サーバーでクライアント側スクリプトをデバッグする |**プロセスにアタッチを**使用する|*chrome .exe*、 *MicrosoftEdgeCP*、または*iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome の場合は、Chrome をデバッグモードで実行し、 **[アタッチ先]** フィールドで **[Webkit code]** を選択する必要もあります。|
 |ローカルコンピューター C#での、Visual Basic C++ 、またはアプリのデバッグ|[標準デバッグ] (**F5**) または **[プロセスにアタッチ]** を使用する|*\<アプリ名>.exe*|ほとんどのシナリオでは、標準のデバッグを使用して、**プロセスにアタッチ**しないようにします。|
 |Windows デスクトップアプリのリモートデバッグ|［リモート ツール］|N/A| 「[リモートデバッグ a C#または](../debugger/remote-debugging-csharp.md)アプリの Visual Basic」または「[アプリのリモートデバッグ」をC++ ](../debugger/remote-debugging-cpp.md)参照してください。|
-|Linux での .NET Core のデバッグ|**プロセスにアタッチを**使用する|*dotnet.exe*|SSH を使用するには、「 [ssh を使用して Linux で実行されているリモートデバッグ .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)」を参照してください。 Linux Docker コンテナーを使用するには、「 [Linux docker コンテナーで実行されているプロセスへのアタッチ](#BKMK_Docker_Attach)」を参照してください。|
+|Linux での .NET Core のデバッグ|**プロセスにアタッチを**使用する|*dotnet.exe*|SSH を使用するには、「 [ssh を使用して Linux で実行されているリモートデバッグ .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)」を参照してください。 |
 |デバッガーを使用せずにアプリを起動した後、ローカルコンピューターで ASP.NET アプリをデバッグする|**プロセスにアタッチを**使用する|*iiexpress.exe*|これは、プロファイリングの場合など、アプリの読み込みを高速化するために役立ちます。 |
 |サーバープロセスでサポートされているその他のアプリの種類をデバッグする|サーバーがリモートの場合は、リモートツールを使用し、**プロセスにアタッチ**します。|*chrome .exe*、 *iexplore.exe*、またはその他のプロセス|必要に応じて、リソースモニターを使用してプロセスを特定します。 「[Remote debugging](../debugger/remote-debugging.md)」(リモート デバッグ) を参照してください。|
 |ユニバーサル Windows アプリ (UWP)、OneCore、HoloLens、または IoT アプリのリモートデバッグ|インストールされているアプリ パッケージのデバッグ|N/A|「**プロセスにアタッチする**のではなく[、インストールされているアプリケーションパッケージをデバッグ](debug-installed-app-package.md)する」を参照してください。|
