@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587590"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408605"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -27,7 +27,7 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 
 このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md)に移植された fxcop 規則の一覧には次のものが含まれます。
 
-ルール ID | [タイトル]
+ルール ID | タイトル
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | ジェネリック型の静的メンバーを宣言しません
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
@@ -178,7 +178,7 @@ CA3061 | URL でスキーマを追加しない
 [CA3147](ca3147.md) | アンチ偽造トークンを検証する動詞ハンドラーをマークします
 [CA5350](ca5350.md) | 脆弱な暗号アルゴリズムを使用しないでください
 [CA5351](ca5351.md) | 破損した暗号アルゴリズムを使用しない
-CA5358 | Unsafe 暗号モードを使用しない
+CA5358 | 安全ではない暗号モードを使用しないでください
 CA5359 | 証明書の検証を無効にしない
 CA5360 | 逆シリアル化で危険なメソッドを呼び出さないでください
 CA5361 | 強力な暗号の SChannel 使用を無効にしない
@@ -344,6 +344,6 @@ CA9999 | アナライザーのバージョンが一致しません
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [FxCopAnalyzers の規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

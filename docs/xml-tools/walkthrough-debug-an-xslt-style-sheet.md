@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592478"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410111"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイルシートのデバッグ
 
@@ -24,7 +24,7 @@ ms.locfileid: "75592478"
 > [!NOTE]
 > XSLT デバッガーは、Visual Studio の Enterprise edition でのみ使用できます。
 
-## <a name="start-debugging"></a>[デバッグ開始]
+## <a name="start-debugging"></a>デバッグを開始する
 
 1. **[ファイル]** メニューの [ > **ファイル**を**開く**] を選択します。
 
@@ -155,6 +155,6 @@ ms.locfileid: "75592478"
 </bookstore>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [XSLT のデバッグ](../xml-tools/debugging-xslt.md)
