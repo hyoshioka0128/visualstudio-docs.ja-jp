@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596646"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410241"
 ---
 # <a name="extend-dependency-diagrams"></a>依存関係図の拡張
 
@@ -35,7 +35,7 @@ ms.locfileid: "75596646"
 
 レイヤー拡張機能を実行するコンピューターには、適切なエディションの Visual Studio がインストールされている必要があります。 依存関係図をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)
 - [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)

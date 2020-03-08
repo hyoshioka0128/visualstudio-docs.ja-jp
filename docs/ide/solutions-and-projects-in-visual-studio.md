@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590086"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408836"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -34,7 +34,7 @@ ms.locfileid: "75590086"
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac のプロジェクトおよびソリューション](/visualstudio/mac/projects-and-solutions)に関するページを参照してください。
 
-## <a name="projects"></a>プロジェクト
+## <a name="projects"></a>Projects
 
 Visual Studio で、アプリまたは Web サイトを作成するときは、"*プロジェクト*" から始めます。 論理的には、実行可能ファイル、ライブラリ、または Web サイトにコンパイルされる、すべてのファイルがプロジェクトに含まれています。 これらのファイルには、ソース コード、アイコン、イメージ、データ ファイルなどを含めることができます。 また、プロジェクトには、プログラムが通信するさまざまなサービスまたはコンポーネントで必要になる可能性がある、コンパイラ設定とその他の構成ファイルも含まれています。
 
@@ -47,13 +47,13 @@ Visual Studio では、[MSBuild](../msbuild/msbuild.md) を使用してソリュ
 > [!NOTE]
 > Visual Studio でソリューションまたはプロジェクトを使用して、コードの編集、ビルド、デバッグを行う必要はありません。 単に Visual Studio でソース ファイルを含むフォルダーを開いて編集を開始できます。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。
 
-## <a name="solutions"></a>解決策
+## <a name="solutions"></a>ソリューション
 
 プロジェクトは*ソリューション* 内に含まれます。 ソリューションは、その名前にもかかわらず、"答え" ではありません。 1 つ以上の関連するプロジェクト、およびビルド情報、Visual Studio ウィンドウの設定、特定のプロジェクトに関連付けられていないその他のファイルに対するコンテナーに過ぎません。 ソリューションは独自の形式を持つテキスト ファイル (拡張子 *.sln*) で記述され、手動での編集は想定されていません。
 
 Visual Studio では、ソリューションの設定を格納するために、2 種類のファイル ( *.sln* および *.suo*) を使用します。
 
-|拡張子|名前|説明|
+|拡張子|Name|説明|
 |---------------|----------|-----------------|
 |.sln|Visual Studio ソリューション|ソリューション内のプロジェクト、プロジェクト項目、およびソリューション項目を整理します。|
 |.suo|ソリューション ユーザー オプション|ユーザー レベルの設定やブレークポイントなどのカスタマイズを格納します。|
@@ -64,7 +64,7 @@ Visual Studio では、ソリューションの設定を格納するために、
 
 特定の方法で、頻繁にプロジェクトをカスタマイズする場合、新しいプロジェクトを作成するために使用できるカスタム プロジェクト テンプレートを作成できます。 詳細については、[プロジェクト テンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)に関するページをご覧ください。
 
-作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトとソリューション]**  >  **[場所]** の **[プロジェクトの場所]** で変更できます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](../ide/reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
+作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、 **[ツール]** [オプション] > [プロジェクトとソリューション] > [場所] >  の **[プロジェクトの場所]** で変更できます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](../ide/reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
 
 ## <a name="solution-explorer"></a>ソリューション エクスプローラー
 
@@ -76,7 +76,7 @@ Visual Studio では、ソリューションの設定を格納するために、
 
 ASP.NET Core プロジェクトでは、**ソリューション エクスプローラー**でファイルを入れ子にする方法をカスタマイズできます。 詳細については、[ソリューション エクスプローラーでのファイルの入れ子のカスタマイズ](file-nesting-solution-explorer.md)に関するページを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [プロジェクトとソリューション (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)
