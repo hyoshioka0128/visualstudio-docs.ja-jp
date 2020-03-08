@@ -1,5 +1,5 @@
 ---
-title: リモート デバッグ |Microsoft Docs
+title: リモートデバッグ |Microsoft Docs
 ms.custom:
 - remotedebugging
 - seodec18
@@ -22,42 +22,42 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043319"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409263"
 ---
-# <a name="remote-debugging"></a>Remote Debugging
+# <a name="remote-debugging"></a>リモート デバッグ
 別のコンピューターに配置されている Visual Studio アプリケーションをデバッグすることができます。 このデバッグを行うには、Visual Studio リモート デバッガーを使用します。
 
-リモート デバッグに関する詳細な手順については、これらのトピックを参照してください。
+リモートデバッグの詳細な手順については、次のトピックを参照してください。
 
-|シナリオ|リンク|
+|シナリオ|Link|
 |-|-|-|
-|Azure App Service|[スナップショット デバッガー](../debugger/debug-live-azure-applications.md)または[Azure での ASP.NET のリモート デバッグ](../debugger/remote-debugging-azure.md)|
-|Azure 仮想マシン|[Azure での ASP.NET のリモート デバッグ](../debugger/remote-debugging-azure.md)|
-|Azure Service Fabric|[Azure Service Fabric アプリケーションをデバッグします。](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
-|ASP.NET|[ASP.NET Core のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)または[リモート デバッグの ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Azure App Service|Azure での[スナップショットデバッガー](../debugger/debug-live-azure-applications.md)または[リモートデバッグ ASP.NET](../debugger/remote-debugging-azure.md)|
+|Azure VM|[Azure での ASP.NET のリモート デバッグ](../debugger/remote-debugging-azure.md)|
+|Azure Service Fabric|[Azure Service Fabric アプリケーションのデバッグ](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|ASP.NET|[リモートデバッグ ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)または[リモートデバッグ ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# または Visual Basic|[C# プロジェクトまたは Visual Basic プロジェクトのリモート デバッグ](../debugger/remote-debugging-csharp.md)|
 |C++|[C++ Project プロジェクトのリモート デバッグ](../debugger/remote-debugging-cpp.md)|
-|ユニバーサル Windows アプリ (UWP)|[リモート コンピューターで UWP アプリを実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)または[インストールされているアプリ パッケージのデバッグ](../debugger/debug-installed-app-package.md)|
+|ユニバーサル Windows アプリ (UWP)|[リモートコンピューターで UWP アプリを実行する](../debugger/run-windows-store-apps-on-a-remote-machine.md)か[、インストールされているアプリケーションパッケージをデバッグする](../debugger/debug-installed-app-package.md)|
 
-だけをダウンロードして、リモート デバッガーをインストールして、実際のシナリオについて、追加の手順は不要する場合、はこの記事の手順に従います。
+リモートデバッガーをダウンロードしてインストールするだけで、シナリオに関する追加の手順が不要な場合は、この記事の手順に従ってください。
 
 ## <a name="download-and-install-the-remote-tools"></a>リモート ツールのダウンロードおよびインストール
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="requirements_msvsmon"></a> 要件
+## <a name="requirements_msvsmon"></a> 必要条件
 
 [!INCLUDE [remote-debugger-requirements](../debugger/includes/remote-debugger-requirements.md)]
 
-## <a name="fileshare_msvsmon"></a> (省略可能)ファイル共有からリモート デバッガーを実行するには
+## <a name="fileshare_msvsmon"></a>Optionalファイル共有からリモートデバッガーを実行するには
 
-リモート デバッガーを検索することができます (*msvsmon.exe*) Visual Studio Community、Professional、または Enterprise が既にインストールされているコンピューターでします。 シナリオによっては、リモート デバッグをセットアップする最も簡単な方法では、ファイル共有からリモート デバッガー (msvsmon.exe) を実行します。 使用量の制限については、リモート デバッガーのヘルプ ページを参照してください (**ヘルプ > 使用状況**リモート デバッガーで)。
+リモートデバッガー (*msvsmon*) は、Visual Studio Community、Professional、または Enterprise が既にインストールされているコンピューターで見つけることができます。 場合によっては、リモートデバッグをセットアップする最も簡単な方法は、ファイル共有からリモートデバッガー (msvsmon) を実行することです。 使用に関する制限事項については、リモートデバッガーのヘルプページ (リモートデバッガーの**ヘルプ > 使用方法**) を参照してください。
 
-1. 検索*msvsmon.exe*で Visual Studio のバージョンに一致するディレクトリ。
+1. 使用している Visual Studio のバージョンと一致するディレクトリで、 *msvsmon*を見つけます。
 
    ::: moniker range=">=vs-2019"
 
@@ -74,12 +74,12 @@ ms.locfileid: "67043319"
 
    ::: moniker-end
 
-2. 共有、**リモート デバッガー** Visual Studio コンピューター上のフォルダー。
+2. Visual Studio コンピューターで**リモートデバッガー**フォルダーを共有します。
 
-3. リモートのコンピューターで実行して*msvsmon.exe*共有フォルダーから。 に従って、[セットアップ手順](#bkmk_setup)します。
+3. リモートコンピューターで、共有フォルダーから*msvsmon*を実行します。 セットアップの[指示](#bkmk_setup)に従います。
 
 > [!TIP]
-> コマンド ライン インストールおよびコマンド ライン リファレンスでは、ヘルプ ページをご覧ください*msvsmon.exe* 」と入力して``msvsmon.exe /?``で Visual Studio がインストールされているコンピューターでコマンドラインで (に移動または**ヘルプ > 使用状況**リモート デバッガーで)。
+> コマンドラインインストールおよびコマンドラインリファレンスについては、Visual Studio がインストールされているコンピューターのコマンドラインで ``msvsmon.exe /?`` を入力して、 *msvsmon*のヘルプページを参照してください (または、リモートデバッガーの [**ヘルプ > 使用状況]** を参照してください)。
 
 ## <a name="bkmk_setup"></a> リモート デバッガーのセットアップ
 
@@ -88,26 +88,26 @@ ms.locfileid: "67043319"
 ### <a name="configure_msvsmon"></a> リモート デバッガーの構成
 リモート デバッガーを初めて起動した後、リモート デバッガーの構成の一部を変更できます。
 
-- リモート デバッガーへの接続を選択するには、他のユーザーのアクセス許可を追加する必要がある場合**ツール > アクセス許可**します。 アクセス許可を付与または拒否するには、管理者特権が必要です。
+- 他のユーザーがリモートデバッガーに接続するためのアクセス許可を追加する必要がある場合は、 **[ツール > のアクセス許可]** を選択します。 アクセス許可を付与または拒否するには、管理者特権が必要です。
 
      > [!IMPORTANT]
-     > Visual Studio コンピューターを使用しているユーザー アカウントとは異なるユーザー アカウントでリモート デバッガーを実行することができますが、リモート デバッガーのアクセス許可を別のユーザー アカウントを追加する必要があります。
+     > リモートデバッガーは、Visual Studio コンピューターで使用しているユーザーアカウントとは異なるユーザーアカウントで実行できますが、リモートデバッガーのアクセス許可には、別のユーザーアカウントを追加する必要があります。
 
-     または、使用してコマンドラインからリモート デバッガーを起動、 **/allow\<ユーザー名 >** パラメーター: **msvsmon/allow \< username@computer>** します。
+     または、コマンドラインからリモートデバッガーを起動することもできます。これには、次のように指定します。 **\<ユーザー名 >** パラメーター: **msvsmon/allow \<username@computer>** 。
 
-- 認証モードや、ポート番号を変更したり、リモート ツールのタイムアウト値を指定する必要がある場合: 選択**ツール > オプション**します。
+- 認証モードまたはポート番号を変更する必要がある場合、またはリモートツールのタイムアウト値を指定する場合: **[ツール > オプション]** を選択します。
 
-     既定で使用されるポート番号の一覧については、次を参照してください。 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)します。
+     既定で使用されるポート番号の一覧については、「[リモートデバッガーのポートの割り当て](../debugger/remote-debugger-port-assignments.md)」を参照してください。
 
      > [!WARNING]
-     > リモート ツールを [認証なし] モードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
+     > リモート ツールを認証なしモードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
 
-## <a name="bkmk_configureService"></a> (省略可能)サービスとしてリモート デバッガーを構成します。
-ASP.NET およびその他のサーバー環境でデバッグ、リモート デバッガーを管理者として実行かを常に実行する場合は、サービスとしてリモート デバッガーを実行します。
+## <a name="bkmk_configureService"></a>Optionalリモートデバッガーをサービスとして構成する
+ASP.NET およびその他のサーバー環境でのデバッグでは、リモートデバッガーを管理者として実行するか、常に実行する場合は、リモートデバッガーをサービスとして実行する必要があります。
 
- サービスとしてリモート デバッガーを構成するには、以下の手順を実行します。
+ リモートデバッガーをサービスとして構成する場合は、次の手順を実行します。
 
-1. **リモート デバッガー構成ウィザード** (rdbgwiz.exe) を見つけます (このアプリケーションは、リモート デバッガーとは別のアプリケーションです)。このアプリケーションは、リモート ツールをインストールした場合にのみ入手でき、 Visual Studio と共にはインストールされません。
+1. **リモート デバッガー構成ウィザード** (rdbgwiz.exe) を見つけます (これは、リモートデバッガーとは別のアプリケーションです)。リモートツールをインストールする場合にのみ使用できます。 Visual Studio と共にはインストールされません。
 
 2. 構成ウィザードの実行を開始します。 最初のページが表示されたら、 **[次へ]** をクリックします。
 
@@ -115,7 +115,7 @@ ASP.NET およびその他のサーバー環境でデバッグ、リモート �
 
 4. ユーザー アカウントの名前とパスワードを追加します。
 
-    追加する必要があります、**サービスとしてログオン**ユーザー権限をこのアカウント (検索**ローカル セキュリティ ポリシー** (secpol.msc) で、**開始**ページまたはウィンドウ (または型**secpol**コマンド プロンプトで)。 ウィンドウが表示されたら、 **[ユーザー権利の割り当て]** をダブルクリックし、右ペインで **[サービスとしてログオン]** を見つけます。 これをダブルクリックします。 ユーザー アカウントを **[プロパティ]** ウィンドウに追加して **[OK]** をクリックします)。 **[次へ]** をクリックします。
+    **[サービスとしてログオン**] ユーザー権利をこのアカウントに追加する必要がある場合があります (**ローカルセキュリティポリシー** (secpol.msc) を**スタート**ページまたはウィンドウで検索します (または、コマンドプロンプトで「 **secpol.msc** 」と入力します)。 ウィンドウが表示されたら、 **[ユーザー権利の割り当て]** をダブルクリックし、右ペインで **[サービスとしてログオン]** を見つけます。 これをダブルクリックします。 ユーザー アカウントを **[プロパティ]** ウィンドウに追加して **[OK]** をクリックします)。 **[次へ]** をクリックします。
 
 5. リモート ツールが通信するネットワークの種類を選択します。 少なくとも 1 つのネットワークの種類を選択する必要があります。 コンピューターがドメインを介して接続されている場合は、最初の項目を選択する必要があります。 コンピューターがワークグループまたはホーム グループを介して接続されている場合は、2 番目または 3 番目の項目を選択する必要があります。 **[次へ]** をクリックします。
 
@@ -127,14 +127,14 @@ ASP.NET およびその他のサーバー環境でデバッグ、リモート �
 
    リモート デバッガー サービスは、 **[コントロール パネル] > [サービス]** で停止してから開始することができます。
 
-## <a name="set-up-debugging-with-remote-symbols"></a>リモート シンボルを使用したデバッグのセットアップします。
+## <a name="set-up-debugging-with-remote-symbols"></a>リモートシンボルを使用したデバッグの設定
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 - [Windows ファイアウォールをリモート デバッグ用に構成する](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [リモート デバッガーのポートの割り当て](../debugger/remote-debugger-port-assignments.md)
-- [リモート デバッグ、リモートの IIS コンピューター上の ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
+- [リモートの IIS コンピューターでのリモートデバッグ ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

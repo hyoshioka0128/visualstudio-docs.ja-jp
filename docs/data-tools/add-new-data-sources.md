@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587057"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408570"
 ---
 # <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 
@@ -80,7 +80,7 @@ Visual Studio の .NET data tools のコンテキストでは、データ*ソー
 
 ## <a name="data-source-for-a-service"></a>サービスのデータソース
 
-サービスからデータソースを作成するには、**データソース構成ウィザード**を実行し、**サービス**データソースの種類を選択します。 これのショートカットに過ぎない、**サービス参照の追加**でプロジェクトを右クリックしてアクセスすることもできますこのダイアログ ボックスで、**ソリューション エクスプ ローラー**を選択すると**サービス参照の追加**。
+サービスからデータソースを作成するには、**データソース構成ウィザード**を実行し、**サービス**データソースの種類を選択します。 これは、 **[サービス参照の追加]** ダイアログボックスへのショートカットに過ぎません。このダイアログボックスにアクセスするには、**ソリューションエクスプローラー**でプロジェクトを右クリックし、 **[サービス参照の追加]** を選択します。
 
 サービスからデータ ソースを作成すると、Visual Studio によりサービス参照がプロジェクトに追加されます。 また、Visual Studio では、サービスから返されるオブジェクトに対応するプロキシオブジェクトも作成されます。 たとえば、データセットを返すサービスは、プロジェクト内でデータセットとして表現され、特定の型を返すサービスは、プロジェクト内で、返される型として表現されます。
 
@@ -90,7 +90,7 @@ Visual Studio の .NET data tools のコンテキストでは、データ*ソー
 
 - [WCF サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- Web サービス
+- [Web サービス]
 
     > [!NOTE]
     > **[データソース]** ウィンドウに表示される項目は、サービスから返されるデータによって異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスが型指定されていないデータセットを返す場合、ウィザードを完了しても **[データソース]** ウィンドウに項目は表示されません。 これは、型指定されていないデータセットからはスキーマが提供されず、したがってウィザードでデータ ソースを作成するための十分な情報が得られないためです。
@@ -113,6 +113,6 @@ Visual Studio の .NET data tools のコンテキストでは、データ*ソー
 
 **データ ソース構成ウィザード**を実行し、データ ソースの種類として **[SharePoint]** を選択すると、SharePoint リストからデータ ソースを作成できます。 SharePoint は WCF Data Services を通じてデータを公開するため、SharePoint データソースの作成は、サービスからデータソースを作成する場合と同じです。 **データ ソース構成ウィザード**で **[SharePoint]** 項目をクリックすると、 **[サービス参照の追加]** ダイアログ ボックスが表示されます。このダイアログ ボックスで、SharePoint サーバーを指定することにより SharePoint データ サービスに接続します。 これには、SharePoint SDK が必要です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

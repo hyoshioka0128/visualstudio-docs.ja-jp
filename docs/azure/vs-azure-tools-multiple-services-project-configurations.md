@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911810"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408695"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>複数のサービス構成を使用するための Visual Studio での Azure プロジェクトの構成
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
 
 Visual Studio の Azure クラウド サービス プロジェクトには、`ServiceDefinition.csdef`、`ServiceConfiguration.Local.cscfg` および `ServiceConfiguration.Cloud.cscfg` の 3 つの構成ファイルが含まれています。
 
@@ -35,7 +35,7 @@ Visual Studio の Azure クラウド サービス プロジェクトには、`Se
 
 変更の影響を受ける `ServiceConfiguration.*.cscfg` ファイルを選択します。 既定では、ローカルとクラウドという種類があり、 **[管理...]** コマンドを使用して構成ファイルのコピー、名前の変更、および削除ができます。 これらのファイルがクラウド サービス プロジェクトに追加され、 **[ソリューション エクスプローラー]** に表示されます。 ただし、構成の名前変更や削除は、このコントロールからのみ実行できます。
 
-### <a name="instances"></a>インスタンス
+### <a name="instances"></a>Instances
 
 **[インスタンス数]** プロパティに、このロールに対してサービスが実行するインスタンスの数を設定します。
 
@@ -53,7 +53,7 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 既定では、Web ロールに対して診断が有効になっています。 Azure クラウド サービス プロジェクトとストレージ アカウントは、ローカル ストレージ エミュレーターを使用するように設定されています。 Azure にデプロイする準備ができたら、ビルダーのボタン ( **[…]** ) を選択すると、Azure Storage を代わりに使用できます。 要求時に、または自動的にスケジュールされた間隔で、ストレージ アカウントに診断データを転送できます。 Azure Diagnostics の詳細については、[Azure Cloud Services および Virtual Machines での診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
 
-## <a name="settings-page"></a>設定ページ
+## <a name="settings-page"></a>[設定] ページ
 
 **[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](/previous-versions/azure/dn602775(v=azure.11))によって提供されるクラス (具体的には[GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100))メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
 
