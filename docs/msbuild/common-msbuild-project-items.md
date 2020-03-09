@@ -15,20 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596152"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634449"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
 
+MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
 ## <a name="common-items"></a>共通の項目
+
  次に、プロジェクトの共通項目の一覧を示します。
+次に、プロジェクトの共通項目の一覧を示します。
 
 ### <a name="reference"></a>関連項目
+
  プロジェクト内のアセンブリ (マネージド) 参照を表します。
 
 |項目メタデータの名前|説明|
@@ -41,6 +44,7 @@ ms.locfileid: "75596152"
 |Private|省略可能なブール値。 参照を出力フォルダーにコピーする必要があるかどうかを指定します。 この属性は、Visual Studio IDE に存在する参照の **[ローカルにコピー]** プロパティに一致します。|
 
 ### <a name="comreference"></a>COMReference
+
  プロジェクト内の COM (アンマネージ) コンポーネント参照を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
 |項目メタデータの名前|説明|
@@ -54,6 +58,7 @@ ms.locfileid: "75596152"
 |Isolated|省略可能なブール値。 コンポーネントが Reg-Free コンポーネントであるかどうかを指定します。|
 
 ### <a name="comfilereference"></a>COMFileReference
+
  [ResolveComReference](resolvecomreference-task.md) ターゲットの `TypeLibFiles` パラメーターに渡されるタイプ ライブラリの一覧を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
 |項目メタデータの名前|説明|
@@ -61,6 +66,7 @@ ms.locfileid: "75596152"
 |WrapperTool|省略可能な文字列。 コンポーネントで使用されるラッパー ツールの名前を指定します (たとえば、"tlbimp")。|
 
 ### <a name="nativereference"></a>NativeReference
+
  ネイティブ マニフェスト ファイル、またはこのようなファイルへの参照を表します。
 
 |項目メタデータの名前|説明|
@@ -69,6 +75,7 @@ ms.locfileid: "75596152"
 |HintPath|必須の文字列。 マニフェスト ファイルの相対パスを指定します。|
 
 ### <a name="projectreference"></a>ProjectReference
+
  別のプロジェクトへの参照を表します。
 
 |項目メタデータの名前|説明|
@@ -79,17 +86,19 @@ ms.locfileid: "75596152"
 |ReferenceOutputAssembly|省略可能なブール値。 `false` を設定した場合、このプロジェクトの [Reference](#reference) として参照されたプロジェクトの出力は含まれませんが、このプロジェクトをビルドする前の他のプロジェクトのビルドは保証されます。 既定値は `true` です。|
 
 ### <a name="compile"></a>Compile
+
  コンパイラのソース ファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
 | DependentUpon | 省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。 |
-| AutoGen | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) で使用するプロジェクト用にファイルを生成するかどうかを指定します。 |
+| AutoGen | 省略可能なブール値。 Visual Studio 統合開発環境 (IDE) によってプロジェクト用にファイルが生成されたかどうかを示します。 |
 | Link | 省略可能な文字列。 プロジェクト ファイルの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
-| Visible | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。 |
+| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
+
  生成されるアセンブリに埋め込まれるリソースを表します。
 
 | 項目メタデータの名前 | 説明 |
@@ -99,11 +108,12 @@ ms.locfileid: "75596152"
 | LastGenOutput | 必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。 |
 | CustomToolNamespace | 必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。 |
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
-| Visible | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。 |
+| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 | LogicalName | 必須の文字列。 埋め込まれるリソースの論理名です。 |
 
 ### <a name="content"></a>Content
+
  プロジェクトにコンパイルはされないものの、プロジェクトと共に埋め込まれるか発行されることのあるファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
@@ -115,10 +125,11 @@ ms.locfileid: "75596152"
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
 | PublishState | 必須の文字列。 コンテンツの発行状態を示すもので、以下のいずれかの値を取ります。<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite |
 | IsAssembly | 省略可能なブール値。 ファイルがアセンブリであるかどうかを指定します。 |
-| Visible | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。 |
+| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="none"></a>None
+
  ビルド プロセスでは使用しないことが推奨されるファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
@@ -128,10 +139,11 @@ ms.locfileid: "75596152"
 | LastGenOutput | 必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。 |
 | CustomToolNamespace | 必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。 |
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
-| Visible | 省略可能なブール値。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の**ソリューション エクスプローラー**にファイルを表示するかどうかを指定します。 |
+| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
+
  `[AssemblyMetadata(key, value)]` として生成されるアセンブリ属性を表します。
 
 | 項目メタデータの名前 | 説明 |
@@ -143,13 +155,17 @@ ms.locfileid: "75596152"
 > これは、.NET Core SDK を使用するプロジェクトのみに適用されます。
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
- ビルドの基本アプリケーション マニフェストを表し、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置セキュリティ情報を含みます。
+
+ ビルドの基本アプリケーション マニフェストを表し、ClickOnce 配置セキュリティ情報を含みます。
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
+
  インポートする FxCop プロジェクトを表します。
 
 ### <a name="import"></a>インポート
- アセンブリを表します。このアセンブリの名前空間が、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] コンパイラによってインポートされます。
+
+ Visual Basic コンパイラによってその名前空間がインポートされるアセンブリを表します。
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)

@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566424"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631979"
 ---
 # <a name="target-element-msbuild"></a>Target 要素 (MSBuild)
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が順次実行するタスクのセットを格納します。
+
+MSBuild によって順次実行されるタスクのセットを格納します。
 
  \<Project> \<Target>
 
@@ -51,6 +52,7 @@ ms.locfileid: "75566424"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -72,7 +74,7 @@ ms.locfileid: "75566424"
 
 | 要素 | 説明 |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクのインスタンスを作成し、実行します。 1 つのターゲットに 0 個以上のタスクを指定できます。 |
+| [Task](../msbuild/task-element-msbuild.md) | MSBuild タスクのインスタンスを作成して、実行します。 1 つのターゲットに 0 個以上のタスクを指定できます。 |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | ユーザー定義の `Property` 要素のセットを格納します。 .NET Framework 3.5 以降では、`Target` 要素に `PropertyGroup` 要素を格納できます。 |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | ユーザー定義の `Item` 要素のセットを格納します。 .NET Framework 3.5 以降では、`Target` 要素に `ItemGroup` 要素を格納できます。 詳細については、「[項目](../msbuild/msbuild-items.md)」を参照してください。 |
 | [OnError](../msbuild/onerror-element-msbuild.md) | 失敗したタスクの `ContinueOnError` 属性が ErrorAndStop (または `false`) の場合、1 つ以上のターゲットが実行されます。 1 つのターゲットに 0 個以上の `OnError` 要素を指定できます。 `OnError` 要素がある場合は、`Target` 要素内で最後の要素である必要があります。<br /><br /> `ContinueOnError` 属性の詳細は、「[Task 要素 (MSBuild)](../msbuild/task-element-msbuild.md)」を参照してください。 |
@@ -81,10 +83,11 @@ ms.locfileid: "75566424"
 
 | 要素 | 説明 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 
 ## <a name="remarks"></a>Remarks
- 実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、[ターゲット](../msbuild/msbuild-targets.md) を参照してください。
+
+ 実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 MSBuild エンジンでは依存関係が、`DependsOnTargets` 属性に出現する順序で、左から右に実行されます。 詳細については、[ターゲット](../msbuild/msbuild-targets.md) を参照してください。
 
  MSBuild はインポートの順序に依存するので、特定の `Name` 属性を持つ最後のターゲットの定義が使われます。
 
@@ -101,6 +104,7 @@ ms.locfileid: "75566424"
  MSBuild 4 より前のバージョンでは、`Target` の `Outputs` に同じ項目に対する参照が複数ある場合は、常にそれらの重複項目が記録されていました。 出力数が多く、プロジェクトの相互依存関係が多数ある非常に大規模なビルドでは、無用な重複項目が原因で大量のメモリが無駄に使用されていました。 `KeepDuplicateOutputs` 属性が `true` に設定されている場合、この重複が記録されます。
 
 ## <a name="example"></a>例
+
  次のコード例では、`Csc` タスクを実行する `Target` 要素を示しています。
 
 ```xml
@@ -118,5 +122,6 @@ ms.locfileid: "75566424"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [ターゲット](../msbuild/msbuild-targets.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

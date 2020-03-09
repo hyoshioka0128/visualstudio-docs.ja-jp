@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592192"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633552"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild でのログ
+
 ログを使用すると、ビルドの進行状況を監視できます。 ログは、ログ ファイルにイベント、メッセージ、警告、エラーをキャプチャします。
 
 ## <a name="in-this-section"></a>このセクションの内容
+
 - [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でのログのさまざまな面を説明します。
+ MSBuild でのログ記録のさまざまな側面について説明します。
 
 - [ビルド ロガー](../msbuild/build-loggers.md)
 
@@ -42,4 +44,5 @@ ms.locfileid: "75592192"
  カスタム転送ロガーを作成する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
+
 - [複数プロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 複数のプロジェクトを並列に実行して、これらのプロジェクトをより速くビルドする方法について説明します。

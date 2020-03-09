@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
-ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
+ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76022339"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652808"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 の新機能
 
@@ -21,7 +21,7 @@ ms.locfileid: "76022339"
 
 ## <a name="changed-path"></a>変更されたパス
 
- MSBuild は Visual Studio の各バージョンの *\Current* フォルダーにインストールされます。 例: *C:\Program Files (x86)\Microsoft Visual Studio\Current\Enterprise\MSBuild*。 次の PowerShell モジュールを使用して MSBuild を検索することもできます: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
+ MSBuild は Visual Studio の各バージョンの *\Current* フォルダーにインストールされ、実行可能ファイルは *\Bin* サブフォルダーにインストールされます。 たとえば、Visual Studio 2019 Community でインストールされた *MSBuild.exe* へのパスは *C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* です。次の PowerShell モジュールを使用して MSBuild を配置することもできます: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
 
 ## <a name="changed-properties"></a>変更されたプロパティ
 
@@ -36,4 +36,5 @@ ms.locfileid: "76022339"
 MSBuild (および Visual Studio) では、.NET Framework 4.7.2 が対象とされるようになりました。 MSBuild API の新しい機能を使用したい場合は、ご利用のアセンブリもアップグレードする必要があります。ただし、既存のコードは引き続き機能します。
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild](../msbuild/msbuild.md)

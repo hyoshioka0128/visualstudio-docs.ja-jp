@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4305f27435d97c346ce623a21b37f011fd8da0cd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595125"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632304"
 ---
 # <a name="sgen-task"></a>SGen タスク
+
 指定されたアセンブリの種類に対応する XML シリアル化アセンブリを作成します。 このタスクは、XML シリアライザー ジェネレーター ツール (*Sgen.exe*) をラップするタスクです。 詳細については、「[XML シリアライザー ジェネレーター ツール (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  `SGen` タスクのパラメーターの説明を次の表に示します。
 
 | パラメーター | 説明 |
@@ -45,14 +47,16 @@ ms.locfileid: "75595125"
 | `SerializationAssemblyName` | 省略可能な `String` 型のパラメーターです。<br /><br /> 生成されるシリアル化アセンブリの名前を指定します。 |
 | `ShouldGenerateSerializer` | 必須の `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、SGen タスクでシリアル化アセンブリを生成する必要があります。 |
 | `Timeout` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> タスク実行を終了するまでの時間をミリ秒単位で指定します。 既定値は `Int.MaxValue` であり、タイムアウト期限がないことを示します。 |
-| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (*sgen.exe*) を読み込む場所を指定します。 このパラメーターを指定しないと、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を実行しているフレームワークのバージョンに対応する SDK インストール パスがタスクに使用されます。 |
+| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (*sgen.exe*) を読み込む場所を指定します。 このパラメーターを指定しない場合、タスクでは、MSBuild を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
 | `Types` | 省略可能な `String[]` 型のパラメーターです。<br /><br /> シリアル化コードを生成する特定の型の一覧を取得または設定します。 SGen は、これらの型に対してのみ、シリアル化コードを生成します。 |
 | `UseProxyTypes` | 必須の `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、SGen タスクでは XML Web サービス プロキシ型に対してのみシリアル化コードを生成します。 |
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9576bdf06593ae3cde3bc29e2585a7ab475671a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566619"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633370"
 ---
 # <a name="msbuild-conditions"></a>MSBuild の条件
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、`Condition` 属性が許可されている場所ならどこでも適用できる、特定の条件のセットをサポートしています。 次の表は、その条件を説明したものです。
+
+MSBuild では、`Condition` 属性が許可されている場所ならどこでも適用できる、特定の条件のセットがサポートされています。 次の表は、その条件を説明したものです。
 
 |条件|説明|
 |---------------|-----------------|
@@ -40,6 +41,7 @@ ms.locfileid: "75566619"
 |$if$ ( %expression% )、$else$、$endif$|指定した `%expression%` が、渡されるカスタム テンプレート パラメーターの文字列の値と一致するかどうかをチェックします。 `$if$` 条件が `true` と評価される場合、そのステートメントが実行されます。それ以外の場合、`$else$` 条件がチェックされます。 `$else$` 条件が `true` の場合、そのステートメントが実行されます。それ以外の場合、`$endif$` 条件は式の評価を終了します。<br /><br /> 使用の例については、「[Visual Studio Project/Item Template Parameter Logic](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)」(Visual Studio プロジェクト/項目テンプレート パラメーター ロジック) を参照してください。|
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [条件構造](../msbuild/msbuild-conditional-constructs.md)
 - [チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

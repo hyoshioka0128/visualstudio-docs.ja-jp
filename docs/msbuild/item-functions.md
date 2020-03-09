@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573795"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633682"
 ---
 # <a name="item-functions"></a>項目用の関数
-MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関数を呼び出し、プロジェクトの項目に関する情報を取得できます。 これらの関数により、Distinct() 項目の取得が簡素化され、項目をループ処理するよりも処理が速くなります。
+
+タスクとターゲット内のコードでは、項目用の関数を呼び出し、プロジェクトのその項目に関する情報を取得できます (MSBuild 4.0 以降)。 これらの関数により、個別の項目の取得が簡素化され、項目間をループ処理するよりも高速になります。
 
 ## <a name="string-item-functions"></a>文字列項目関数
+
 .NET Framework の String メソッドと String プロパティを利用し、あらゆる項目値を操作できます。 <xref:System.String> メソッドの場合、メソッド名を指定します。 <xref:System.String> プロパティの場合、"get_" の後にプロパティ名を指定します。
 
 項目に複数の文字列が含まれる場合、String メソッドまたはプロパティは各文字列で実行されます。
@@ -49,6 +51,7 @@ MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関�
 ```
 
 ## <a name="intrinsic-item-functions"></a>組み込み項目関数
+
 下の表は、項目に利用できる組み込み関数をまとめたものです。
 
 |関数|例|説明|
@@ -100,4 +103,5 @@ MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関�
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [項目](../msbuild/msbuild-items.md)

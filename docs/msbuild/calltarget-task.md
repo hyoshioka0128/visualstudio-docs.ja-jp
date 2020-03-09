@@ -16,27 +16,30 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bad6ab828af1f62818636b3af11232294256c03
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593383"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634488"
 ---
 # <a name="calltarget-task"></a>CallTarget タスク
+
 プロジェクト ファイル内で指定されたターゲットを呼び出します。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
  `CallTarget` タスクのパラメーターの説明を次の表に示します。
 
 | パラメーター | 説明 |
 |---------------------------| - |
-| `RunEachTargetSeparately` | 省略可能な `Boolean` 型の入力パラメーターです。<br /><br /> `true` の場合は、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンがターゲットごとに 1 回呼び出されます。 `false` の場合は、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンがすべてのターゲットをビルドするために 1 回呼び出されます。 既定値は `false` です。 |
+| `RunEachTargetSeparately` | 省略可能な `Boolean` 型の入力パラメーターです。<br /><br /> `true` の場合は、MSBuild エンジンがターゲットごとに 1 回呼び出されます。 `false` の場合は、MSBuild エンジンがすべてのターゲットをビルドするために 1 回呼び出されます。 既定値は `false` です。 |
 | `TargetOutputs` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ビルドされたすべてのターゲットの出力が含まれます。 |
 | `Targets` | 省略可能な `String[]` 型のパラメーターです。<br /><br /> ビルドする 1 つまたは複数のターゲットを指定します。 |
 | `UseResultsCache` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、キャッシュされた結果が返されます (存在する場合)。<br /><br /> **メモ** MSBuild タスクが実行された場合、その出力は、ビルド項目のリストとしてスコープ ((ProjectFileName, GlobalProperties)[TargetNames]) にキャッシュされます。 |
 
 ## <a name="remarks"></a>Remarks
+
  `Targets` に指定されたターゲットのビルドが失敗し、`RunEachTargetSeparately` が `true` に設定されている場合、タスクは残りのターゲットのビルドを続行します。
 
  既定のターゲットをビルドする場合は、[MSBuild タスク](../msbuild/msbuild-task.md)を使用して、`Projects` パラメーターを `$(MSBuildProjectFile)` と等しくなるように設定します。
@@ -44,6 +47,7 @@ ms.locfileid: "75593383"
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、`CallOtherTargets` 内から `TargetA` を呼び出します。
 
 ```xml
@@ -62,5 +66,6 @@ ms.locfileid: "75593383"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [ターゲット](../msbuild/msbuild-targets.md)

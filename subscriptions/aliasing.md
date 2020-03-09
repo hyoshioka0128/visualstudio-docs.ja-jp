@@ -3,110 +3,105 @@ title: 別名を使用した Visual Studio サブスクリプションへのサ�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/14/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77276622"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235135"
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある
+# <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
 
 ## <a name="what-is-aliasing"></a>別名定義とは
 "別名定義" という用語は、Windows (または Active Directory) へのサインインと電子メールへのアクセスに別々の ID を持っているユーザーを指します。
 
-別名定義は、"olivia@contoso.com" のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは "OliviaG@contoso.com" などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ユーザーが、 https://manage.visualstudio.com の Visual Studio サブスクリプション管理ポータルに表示されている "サインイン電子メール アドレス" を使用して自分のサブスクリプションにアクセスしていることを確認します。
+別名定義は、"JohnD@contoso.com" のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは "John.Doe@contoso.com" などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ボリューム ライセンス サービス センター (VLSC) を介してサブスクリプションを管理している多くのユーザーにとって、これがサインインが失敗する原因となる場合があります。指定したメール アドレス ("John.Doe@contoso.com") が、"職場または学校アカウント" オプションを通じて正常に認証するために必要なディレクトリ アドレス ("JohnD@contoso.com") と一致していないからです。  ユーザーが管理ポータル (https://manage.visualstudio.com ) に表示されている "サインイン電子メール アドレス" を使用してサブスクリプションにアクセスしていることを確認します。 
 
-## <a name="as-an-administrator-what-options-do-i-have"></a>管理者として選択できるオプションとは
+## <a name="what-are-the-potential-issues"></a>潜在的な問題は何か
 
-サブスクライバーのアカウントの種類に応じて、適用できるソリューションを以下で見つけます。
+サブスクライバーのアカウントの種類に応じて、次の 2 つの問題のいずれかが発生する可能性があります。 
 
-### <a name="work-or-school-account-upn-mismatch-issue"></a>職場または学校アカウントの UPN 不一致の問題
+### <a name="work-or-school-account-upn-mismatch-issue"></a>職場または学校アカウントの UPN 不一致の問題 
+社内で UserPrincipalName (UPN) がプライマリ SMTP アドレスとは異なる Active Directory 設定が行われている場合、UPN の不一致が発生する可能性があります。 
 
-ユーザー プリンシパル名 (UPN) の不一致は、UPN がプライマリ SMTP アドレスと異なる Active Directory が会社に設定されている場合に、発生する可能性があります。 
+#### <a name="how-to-detect-if-your-sign-in-address-is-impacted-by-a-upn-mismatch"></a>サインイン アドレスが UPN の不一致による影響を受けているかどうかを検出する方法 
 
-#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>ユーザーのサインイン アドレスに UPN の不一致があるかどうかを検出する方法
+1. サブスクリプション割り当ての電子メールに記載されているサインイン アドレスを使用して、 https://my.visualstudio.com/subscriptions にサインインします。
 
-ユーザーに次の手順を完了してもらいます。
+2. ページの右上に示されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  そうでない場合は、UPN が不一致になっており、サブスクリプションを表示することはできません。 
 
-1. サブスクリプション割り当ての電子メールに記載されているサインイン アドレスを使用して、 https://my.visualstudio.com にサインインします。  
+> [!div class="mx-imgBorder"]
+> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png)
 
-    > [!NOTE]
-    > サブスクリプション割り当ての電子メールがない場合は、管理ポータル内からメールを再送信することができます。  
+#### <a name="how-to-fix-a-upn-mismatch"></a>UPN の不一致を修正する方法
 
-2. **[サブスクリプション]** タブをクリックします。
-3. 右上の [次のアカウントでサインインしています] に表示されている電子メール アドレスが、サブスクリプション割り当ての電子メールに記載されているサインイン電子メール アドレスと同じであることを確認します。  そうでない場合は、サブスクリプションの特典を利用できません。 
+1. Visual Studio 管理ポータル (https://manage.visualstudio.com ) にアクセスします 
 
-   > [!div class="mx-imgBorder"]
-   > ![[サブスクリプション] ページ](_img/aliasing/aliasing-subscriptions-page.png)
+2. UPN の不一致の問題が発生しているサブスクライバーを見つけます ([フィルター](search-license.md)機能を使用すると、サブスクライバーを簡単に見つけることができます)。
 
-#### <a name="how-to-correct-the-upn-mismatch"></a>UPN の不一致を修正する方法
+3. サインイン電子メール アドレスをサブスクライバーの UPN に変更します 
 
-1. https://manage.visualstudio.com の Visual Studio 管理ポータルにアクセスします。 
+0. 変更を保存します 
 
-2. UPN 不一致の問題が発生しているユーザーを見つけます。  [フィルター](search-license.md)機能を使用すると、多数のサブスクリプションがある場合に、これを簡単に行うことができます。 
-
-3. サインイン電子メール アドレスをユーザーの UPN に変更します。
-
-4. 変更を保存します 
-
-5. サブスクライバー ポータルからログアウトし、UPN を使用してもう一度サインインするようにユーザーに依頼します。   
+0. サブスクリプション ポータルからサインアウトし、UPN を使用して再度アクセスするように、サブスクライバーに通知します 
 
 ### <a name="personal-account-aliasing-issue"></a>個人アカウントの別名の問題
 
-別名の問題も、個人のアカウントに影響を与える可能性があります。 
+Visual Studio サブスクリプション ポータルへのサインインに使用された電子メール アドレスが、サブスクリプションに関連付けられている電子メール アドレスと一致しない場合、個人のサブスクリプション アカウントで問題が発生する可能性もあります。 
 
-#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>個人のアカウントに別名の問題があるかどうかを検出する方法
+#### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>個人のサブスクリプション アカウントが別名の問題による影響を受けているかどうかを検出する方法
 
-1. https://my.visualstudio.com にサインインします。
+1. https://my.visualstudio.com/subscriptions にサインインします
 
-2. **[サブスクリプション]** タブをクリックし、サインインしているアドレスを確認します。 
+0. ページの右上に示されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  サインインした電子メール アドレスと、Web サイトへのアクセスに使用した電子メール アドレスが異なる場合は、アカウントと別名が競合しています。
 
-3. サインインした電子メール アドレスと、Web サイトへのアクセスに使用した電子メール アドレスが異なる場合は、アカウントと別名が競合しています。 
+#### <a name="how-to-fix-an-alias-issue"></a>別名の問題を修正する方法
 
-#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>個人アカウントの別名の問題を修正する方法
+Visual Studio プラットフォームでは、サブスクリプションの詳細を表示するためのプライマリ エイリアスが優先されます。 
 
-Visual Studio サブスクリプション プラットフォームでは、サブスクリプションの詳細を表示するためのプライマリ エイリアスが優先されます。  問題を解決するには、別の電子メール エイリアスをサインイン用のプライマリ エイリアスにする必要があります。 
+1. **Microsoft にサインインする方法の管理**に移動します。 メッセージが表示されたら Microsoft アカウントにサインインします。 
 
-1. [Microsoft にサインインする方法の管理](https://go.microsoft.com/fwlink/p/?linkid=842796)に移動します。
-2. メッセージが表示されたら Microsoft アカウントにサインインします。 
-3. [アカウント エイリアス] で、サブスクリプションの割り当てに使用する電子メール アドレスの横にある **[プライマリにする]** を選択します。 
-4. [アカウント エイリアス] で、サブスクリプションの割り当てに使用する電子メール アドレスの横にある [プライマリにする] を選択します。 
-5. Visual Studio サブスクライバー ポータル (https://my.visualstudio.com) にサインインします。 
-6. 新しいプライマリ エイリアスを使用してポータルにもう一度アクセスします。 
+2. [アカウント エイリアス] で、サブスクリプションの割り当てに使用する電子メール アドレスの横にある **[プライマリにする]** を選択します。 
 
-### <a name="ensure-a-successful-experience-for-your-users"></a>ユーザーのエクスペリエンスが成功したことを確認する
+> [!div class="mx-imgBorder"]
+> ![プライマリ電子メール アドレスの設定](_img//aliasing/account-aliases.png)
 
-管理者には、 https://my.visualstudio.com でユーザーのサインインを確実に成功させるために、次の 2 つのオプションがあります。 
+3. Visual Studio サブスクリプション ポータル (https://my.visualstudio.com) ) からサインアウトします 
 
-- 最初のオプション (推奨) は、 https://manage.visualstudio.com でのサインイン アドレスとしてディレクトリ アカウントを利用することです。
-- 2 番目のオプション (より安全性が低い) は、サブスクライバーがディレクトリの電子メール アドレスとは異なる電子メール アドレスを使用してサインインできるようにすることです。
+4. サブスクリプションの割り当てに使用したアカウントを使ってもう一度サインインすると、プライマリ エイリアスとして構成されています。 
 
-どちらのオプションも、管理ポータルで次の手順を行って構成します。
+## <a name="preventing-aliasing-issues"></a>別名の問題の防止
 
+管理者には、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でユーザーのサインインを確実に成功させるために、次の 2 つのオプションがあります。
+- 最初のオプション (推奨) では、Visual Studio サブスクリプション ポータル (https://my.visualstudio.com ) のサインインとして、ディレクトリ アカウントを利用します。  
+- 2 番目のオプション (より安全性が低い) では、サブスクライバーはディレクトリの電子メール アドレスとは異なる電子メール アドレスを使用してサインインできます。
+
+これらのどちらのオプションも、管理ポータル上で、次の手順を実行して構成します。  
 1. https://manage.visualstudio.com にサインインします。 
 
-2. 1 人のユーザーを変更する場合は、テーブルでそのユーザーを選択し、右クリックして編集します。 これにより、サインインの電子メール アドレスを変更できるパネルが開きます。  
+0. 1 人のユーザーを変更する場合は、テーブルでそのユーザーを選択し、右クリックして編集します。 これにより、サインインの電子メール アドレスを変更できるパネルが開きます。 サインイン電子メール アドレスのフィールドで必要な更新を行います。 [保存] をクリックすると、変更が有効になります。  
 
-3. サインイン電子メール アドレスのフィールドで必要な更新を行います。 
+0. このような変更を大量のユーザーに対して行う必要がある場合は、一括編集機能を利用できます。 詳細については、「[一括編集を使用して複数のサブスクライバーを編集する](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit)」を参照してください。
 
-4. [保存] をクリックすると、変更が有効になります。  
-このような変更を大量のユーザーに対して行う必要がある場合は、一括編集機能を利用できます。 その処理の詳細については、「[サブスクリプションの編集](edit-license.md)」の記事にある「**一括編集を使用した複数のサブスクライバーの編集**」セクションを参照してください。  
+> [!NOTE]
+> 個別変更および一括変更のどちらの場合も、サブスクライバーは、サインイン電子メール アドレスが変更されており、更新された電子メール アドレスを使用してサインインする必要があることを示した電子メールを受け取ります。 また、サブスクライバーが以前に他のサインイン アドレス下で特典を有効にした場合は、該当の他のサインイン アドレスを引き続き使用してアクセスする必要があることにも、注意してください。  
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
 - [個別のサブスクリプションの割り当て](assign-license.md)
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)
 - [サブスクリプションの編集](edit-license.md)
-- [サブスクリプションの削除](delete-license.md)
 - [最大使用量の確認](maximum-usage.md)
 
-## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](/visualstudio/)
-- [Azure DevOps ドキュメント](/azure/devops/)
-- [Azure ドキュメント](/azure/)
-- [Microsoft 365 ドキュメント](/microsoft-365/)
+

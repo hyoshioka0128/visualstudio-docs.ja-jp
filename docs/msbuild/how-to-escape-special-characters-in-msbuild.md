@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595008"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633877"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>方法: MSBuild で特殊文字をエスケープする
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルでは、特定の文字が特殊な意味を持ちます。 そのような文字の例として、セミコロン (`;`) およびアスタリスク (`*`) があります。 特殊文字の完全な一覧については、「[MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)」を参照してください。
+MSBuild プロジェクト ファイルでは、特定の文字が特殊な意味を持ちます。 そのような文字の例として、セミコロン (`;`) およびアスタリスク (`*`) があります。 特殊文字の完全な一覧については、「[MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)」を参照してください。
 
 これらの特殊文字をプロジェクト ファイル内でリテラルとして使用するには、構文 `%<xx>` を使ってそれらの文字を指定する必要があります。ここで、`<xx>` は文字の ASCII 16 進値を表します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "75595008"
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-名前にセミコロンを含むアイテムを宣言する場合は、構文 `%<xx>` を使用してセミコロンをエスケープし、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によって 2 つの別々のアイテムが宣言されることを防ぐ必要があります。 たとえば、次のアイテムではセミコロンをエスケープして、`MyFile.cs;MyClass.cs` という名前の 1 つのアイテムを宣言しています。
+名前にセミコロンを含む項目を宣言する場合は、構文 `%<xx>` を使用してセミコロンをエスケープし、MSBuild によって 2 つの別々の項目が宣言されることを防ぐ必要があります。 たとえば、次のアイテムではセミコロンをエスケープして、`MyFile.cs;MyClass.cs` という名前の 1 つのアイテムを宣言しています。
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>

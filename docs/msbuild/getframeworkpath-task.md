@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579644"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634007"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath タスク
+
+.NET Framework アセンブリのパスを取得します。
 .NET Framework アセンブリのパスを取得します。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
 `GetFrameworkPath` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -41,11 +44,13 @@ ms.locfileid: "77579644"
 |`Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 利用できる場合、最新のフレームワーク アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 
 ## <a name="remarks"></a>Remarks
-.NET Framework のいくつかのバージョンがインストールされている場合、このタスクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が実行されるように設計されているバージョンを返します。
+
+.NET Framework のいくつかのバージョンがインストールされている場合、このタスクでは、MSBuild が実行されるように設計されているバージョンが返されます。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 次の例では、`GetFrameworkPath` タスクを使用し、.NET Framework のパスを `FrameworkPath` プロパティに保存します。
 
 ```xml
@@ -61,5 +66,6 @@ ms.locfileid: "77579644"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592179"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633487"
 ---
 # <a name="message-task"></a>Message タスク
+
 ビルド中のメッセージをログに記録します。
 
 ## <a name="parameters"></a>パラメーター
+
  `Message` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -37,7 +39,8 @@ ms.locfileid: "75592179"
 |`Text`|省略可能な `String` 型のパラメーターです。<br /><br /> ログに記録するエラー テキスト。|
 
 ## <a name="remarks"></a>Remarks
- `Message` タスクを使用すると、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで、ビルド処理のさまざまな段階でロガーにメッセージを発行できます。
+
+ `Message` タスクを使用すると、MSBuild プロジェクトで、ビルド処理のさまざまな段階でロガーにメッセージを発行できます。
 
  `Condition` パラメーターが `true` と評価されると、`Text` パラメーターの値がログに記録され、ビルド処理が継続されます。 `Condition` パラメーターが存在しない場合は、メッセージ テキストがログに記録されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。
 
@@ -46,6 +49,7 @@ ms.locfileid: "75592179"
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次のコード例は、登録されているすべてのロガーにメッセージをログ記録します。
 
 ```xml
@@ -59,5 +63,6 @@ ms.locfileid: "75592179"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)

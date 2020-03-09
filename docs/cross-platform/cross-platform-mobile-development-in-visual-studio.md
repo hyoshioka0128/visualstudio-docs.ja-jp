@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916874"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234983"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 
@@ -60,7 +60,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
  Xamarin.Forms を使用せず、プラットフォームごとに個別にデザインすることにした場合は、UI 以外のコードの大部分をプラットフォームのプロジェクト (Android、iOS、および Windows) 間で共有できます。 これには、ビジネス ロジック、クラウド統合、データベース アクセス、または .NET Framework を対象とするその他のコードが含まれます。 特定のプラットフォームを対象とするコードのみ、共有することができません。
 
- ![Windows、iOs、Android の UI でコードを共有](../cross-platform/media/sharecode.png "ShareCode")
+ ![Windows、iOS、および Android の UI 間でコードを共有する](../cross-platform/media/sharecode.png "ShareCode")
 
  共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方を使用して、コードを共有できます。 共有プロジェクトに最適なコードもあれば、ポータブル クラス ライブラリ プロジェクトにより適したコードもあります。
 
@@ -96,7 +96,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
  これらの API はクロスプラットフォームであるため、記述するコードの大部分を 3 つのすべてのプラットフォーム間で共有できます。 このため、開発と保守のコストを削減できます。 また、ゼロから始める必要がありません。 他の種類の Web アプリケーションを既に作成してある場合は、Cordova アプリでそれらのファイルを共有できるため、修正や再設計の必要はありません。
 
- ![JavaScript でのマルチデバイス ハイブリッド アプリ](../cross-platform/media/multidevicehybridapps.png "JavaScript でのマルチデバイス ハイブリッド アプリ")
+ ![JavaScript でのマルチデバイス ハイブリッド アプリ](../cross-platform/media/multidevicehybridapps.png "JavaScript を使用したマルチデバイス ハイブリッド アプリ")
 
  作業を開始するには、Visual Studio をインストールして、セットアップ中に **[JavaScript によるモバイル開発]** 機能を選択します。 Cordova ツールにより、マルチプラットフォーム アプリをビルドするために必要なすべてのサード パーティのソフトウェアが自動的にインストールされます。
 
@@ -140,12 +140,12 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
 |**詳細を表示**|
 |--------------------|
-|[Visual Studio をダウンロードする](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[C++ によるクロスプラットフォーム モバイル開発をインストールする](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Visual Studio をダウンロードする](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[C++ によるクロスプラットフォーム モバイル開発をインストールする](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[C++ を使用して複数のプラットフォームを対象とすることについて学習する](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[必要なものをインストールしてから、Android 用のネイティブ アクティビティ アプリケーションを作成する](create-an-android-native-activity-app.md)|
+|[必要なものをインストールしてから、Android 用の C++ ネイティブ アクティビティ アプリケーションを作成する](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[Android と Windows アプリでの C++ コードの共有について学習する](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[C++ でのクロスプラットフォーム モバイル開発の例](cross-platform-mobile-development-examples.md)|
+|[C++ でのクロスプラットフォーム モバイル開発の例](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 

@@ -19,14 +19,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593370"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634475"
 ---
 # <a name="choose-element-msbuild"></a>Choose 要素 (MSBuild)
+
 子要素を評価して、`ItemGroup` 要素および/または `PropertyGroup` 要素の 1 つのセットを評価対象に選択します。
 
  \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
@@ -41,9 +42,11 @@ ms.locfileid: "75593370"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
+
  なし。
 
 ### <a name="child-elements"></a>子要素
@@ -58,13 +61,15 @@ ms.locfileid: "75593370"
 | 要素 | 説明 |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | すべての `When` 要素の条件が `false` と評価された場合に実行するコードのブロックを指定します。 |
-| [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 | [When](../msbuild/when-element-msbuild.md) | `Choose` 要素で選ぶ対象のコード ブロックを指定します。 |
 
 ## <a name="remarks"></a>Remarks
+
  `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次のプロジェクトでは、`Choose` 要素を使って、設定する `When` 要素のプロパティ値のセットを選んでいます。 両方の `When` 要素の `Condition` 属性が `false` と評価された場合、`Otherwise` 要素のプロパティ値が設定されます。
 
 ```xml
@@ -113,5 +118,6 @@ ms.locfileid: "75593370"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [条件構造](../msbuild/msbuild-conditional-constructs.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

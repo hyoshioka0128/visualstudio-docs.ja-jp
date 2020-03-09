@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585887"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169366"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 
@@ -61,7 +61,7 @@ ms.locfileid: "75585887"
 |safeitemrootname|`safeitemname` と同じ。|
 |safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
 |時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
-|specifiedSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`specifiedSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`specifiedSolutionName` は空白です。|
+|specifiedsolutionname|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`specifiedsolutionname` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`specifiedsolutionname` は空白です。|
 |userdomain|現在のユーザー ドメイン。|
 |username|現在のユーザー名。|
 |webnamespace|現在の Web サイトの名前。 このパラメーターは、Web フォーム テンプレートで一意のクラス名を保証するために使用されます。 この Web サイトが Web サーバーのルート ディレクトリにある場合、このテンプレート パラメーターは Web サーバーのルート ディレクトリとして解決されます。|

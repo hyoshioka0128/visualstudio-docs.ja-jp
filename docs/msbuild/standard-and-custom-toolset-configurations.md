@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fef5a84285afdaa429606937f3e537863b060ec8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595073"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632162"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準ツールセット構成とカスタム ツールセット構成
+
 MSBuild ツールセットには、アプリケーション プロジェクトのビルドに使用できるタスク、ターゲット、およびツールへの参照が含まれています。 MSBuild には標準ツールセットが用意されていますが、カスタム ツールセットを作成することもできます。 ツールセットを指定する方法については、「[ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」を参照してください。
 
 ## <a name="standard-toolset-configurations"></a>標準ツールセット構成
@@ -59,6 +60,7 @@ Visual Studio 2017 以降のバージョンでは、MSBuild のパスにレジ�
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET Framework 4 インストール パス**|
 
 ### <a name="sub-toolsets"></a>サブツールセット
+
  前の表のレジストリ キーにサブキーがある場合、MSBuild はそのサブキーを使って、親ツールセットのパスをオーバーライドするサブツールセットを決定します。 たとえば、次のようなサブキーがあります。
 
  **\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0**
@@ -71,7 +73,8 @@ Visual Studio 2017 以降のバージョンでは、MSBuild のパスにレジ�
 > これらの設定は変更しないことをお勧めします。 ただし、独自の設定を追加し、コンピューター全体に適用されるカスタム ツールセットの定義を指定することはできます。その手順については次のセクションで説明します。
 
 ## <a name="custom-toolset-definitions"></a>カスタム ツールセット定義
- 標準ツールセットがビルド要件に適合しない場合は、カスタム ツールセットを作成できます。 たとえば、ビルド ラボ シナリオで、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトをビルドするために個別のシステムが必要になる場合があります。 カスタム ツールセットを使用することにより、プロジェクトの作成時や *MSBuild.exe* の実行時に `ToolsVersion` 属性にカスタム値を割り当てることができます。 これを行うことで、`$(MSBuildToolsPath)` プロパティを使用して、該当のディレクトリから *.targets* ファイルをインポートできます。また、カスタム ツールセットを使用するすべてのプロジェクトで利用できる独自のカスタム ツールセット プロパティを定義することもできます。
+
+ 標準ツールセットがビルド要件に適合しない場合は、カスタム ツールセットを作成できます。 たとえば、ビルド ラボ シナリオで、C++ プロジェクトをビルドするために個別のシステムが必要になる場合があります。 カスタム ツールセットを使用することにより、プロジェクトの作成時や *MSBuild.exe* の実行時に `ToolsVersion` 属性にカスタム値を割り当てることができます。 これを行うことで、`$(MSBuildToolsPath)` プロパティを使用して、該当のディレクトリから *.targets* ファイルをインポートできます。また、カスタム ツールセットを使用するすべてのプロジェクトで利用できる独自のカスタム ツールセット プロパティを定義することもできます。
 
  カスタム ツールセットは、*MSBuild.exe* の構成ファイルに指定します。ただし、MSBuild エンジンをホストするカスタム ツールを使用している場合は、そのカスタム ツールの構成ファイルに指定します。 たとえば、*MyCustomToolset* という名前のツールセットを定義する場合は、*MSBuild.exe* の構成ファイルに次のようなツールセット定義を含めることができます。
 
@@ -99,7 +102,7 @@ Visual Studio 2017 以降のバージョンでは、MSBuild のパスにレジ�
 > [!NOTE]
 > コードが正しく読み込まれるようにするには、`<configSections>` を `<configuration>` セクション内の最初のサブセクションにする必要があります。
 
- `ToolsetConfigurationSection` は、どのような MSBuild ホストでもカスタム構成として使用できるカスタム構成セクションです。 カスタム ツールセットを使用した場合、ホストでは、構成ファイル エントリの提供を除き、ビルド エンジンの初期化処理は必要ありません。 レジストリにエントリを定義することにより、コンピューター全体を対象としたツールセットを指定して、そのツールセットを *MSBuild.exe*、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、および MSBuild のすべてのホストに適用できます。
+ `ToolsetConfigurationSection` は、どのような MSBuild ホストでもカスタム構成として使用できるカスタム構成セクションです。 カスタム ツールセットを使用した場合、ホストでは、構成ファイル エントリの提供を除き、ビルド エンジンの初期化処理は必要ありません。 レジストリにエントリを定義することにより、*MSBuild.exe*、Visual Studio、すべての MSBuild のホストに適用される、コンピューター全体を対象としたツールセットを指定できます。
 
 > [!NOTE]
 > レジストリに定義済みの `ToolsVersion` の設定を構成ファイルに定義した場合、2 つの定義はマージされません。 構成ファイル内の定義が優先され、同じ `ToolsVersion` のレジストリ内の設定は無視されます。
@@ -113,4 +116,5 @@ Visual Studio 2017 以降のバージョンでは、MSBuild のパスにレジ�
   MSBuildToolsPath プロパティを追加する場合と同じ構文を使用して、ToolsVersion 固有のカスタム プロパティを構成ファイルに追加することもできます。 このようなカスタム プロパティをプロジェクト ファイルで利用できるようにするには、構成ファイルに指定された値の名前と同じ名前を使用します。 構成ファイルではツールセットを定義できますが、サブツールセットは定義できません。
 
 ## <a name="see-also"></a>関連項目
+
 - [ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

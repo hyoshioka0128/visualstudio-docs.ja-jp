@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591139"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631238"
 ---
 # <a name="vbc-task"></a>Vbc タスク
+
 実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*)、またはコード モジュール ( *.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  `Vbc` タスクのパラメーターの説明を次の表に示します。
 
 | パラメーター | 説明 |
@@ -74,12 +76,12 @@ ms.locfileid: "75591139"
 | `RootNamespace` | 省略可能な `String` 型のパラメーターです。<br /><br /> すべての型宣言に対してルート名前空間を指定します。 このパラメーターは、*vbc.exe* コンパイラの [-rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) スイッチに相当します。 |
 | `SdkPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> *mscorlib.dll* および *microsoft.visualbasic.dll* の位置を指定します。 このパラメーターは、*vbc.exe* コンパイラの [-sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) スイッチに相当します。 |
 | `Sources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 1 つまたは複数の Visual Basic ソース ファイルを指定します。 |
-| `TargetCompactFramework` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、[!INCLUDE[Compact](../extensibility/includes/compact_md.md)] が対象となります。 このスイッチは、*vbc.exe* コンパイラの [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) スイッチに相当します。 |
+| `TargetCompactFramework` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクのターゲットは .NET Compact Framework になります。 このスイッチは、*vbc.exe* コンパイラの [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) スイッチに相当します。 |
 | `TargetType` | 省略可能な `String` 型のパラメーターです。<br /><br /> 出力ファイルのファイル形式を指定します。 このパラメーターには値として、コード ライブラリを作成する `library`、コンソール アプリケーションを作成する `exe`、モジュールを作成する `module`、Windows プログラムを作成する `winexe` を指定できます。 既定値は `library` です。 このパラメーターは、*vbc.exe* コンパイラの [-target](/dotnet/visual-basic/reference/command-line-compiler/target) スイッチに相当します。 |
 | `Timeout` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> タスク実行を終了するまでの時間をミリ秒単位で指定します。 既定値は `Int.MaxValue` であり、タイムアウト期限がないことを示します。 |
-| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (*vbc.exe*) を読み込む場所を指定します。 このパラメーターを指定しないと、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を実行しているフレームワークのバージョンに対応する SDK インストール パスがタスクに使用されます。 |
+| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (*vbc.exe*) を読み込む場所を指定します。 このパラメーターを指定しない場合、タスクでは、MSBuild を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
 | `TreatWarningsAsErrors` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、すべての警告がエラーとして処理されます。 詳細については、「[-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)」を参照してください。 |
-| `UseHostCompilerIfAvailable` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> 利用できる場合、インプロセス コンパイラ オブジェクトを使用するようにタスクに指示します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によってのみ使用されます。 |
+| `UseHostCompilerIfAvailable` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> 利用できる場合、インプロセス コンパイラ オブジェクトを使用するようにタスクに指示します。 Visual Studio によってのみ使用されます。 |
 | `Utf8Output` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> UTF-8 エンコードを使用してコンパイラ出力をログに記録します。 このパラメーターは、*vbc.exe* コンパイラの [-utf8output](/dotnet/visual-basic/reference/command-line-compiler/utf8output) スイッチに相当します。 |
 | `Verbosity` | 省略可能な `String` 型のパラメーターです。<br /><br /> コンパイラ出力の詳細度を指定します。 詳細度は `Quiet`、`Normal` (既定)、または `Verbose` です。 |
 | `WarningsAsErrors` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーとして扱う警告の一覧を指定します。 詳細については、「[-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)」を参照してください。<br /><br /> このパラメーターは `TreatWarningsAsErrors` パラメーターをオーバーライドします。 |
@@ -88,9 +90,11 @@ ms.locfileid: "75591139"
 | `Win32Resources` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 このパラメーターは、*vbc.exe* コンパイラの [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) スイッチに相当します。 |
 
 ## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、Visual Basic プロジェクトがコンパイルされます。
 
 ```xml
@@ -102,6 +106,7 @@ ms.locfileid: "75591139"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

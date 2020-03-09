@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1b0e774d70c5787a7221aa0dfa7b0834dac7e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588292"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652795"
 ---
 # <a name="customize-your-build"></a>ビルドのカスタマイズ
 
@@ -188,6 +188,72 @@ MSBuild でソリューション ファイルがビルドされるとき、最�
  </Target>
 </Project>
 ```
+
+## <a name="customize-all-net-builds"></a>すべての .NET ビルドをカスタマイズする
+
+ビルド サーバーを管理する場合は、サーバー上のすべてのビルドに対してグローバルに MSBuild 設定を構成することが必要な場合があります。  原理的には、グローバルな *Microsoft.Common.Targets* ファイルまたは *Microsoft.Common.Props* ファイルを変更することができますが、より優れた方法があります。 特定の MSBuild プロパティを使用し、特定のカスタムの `.targets` および `.props` ファイルを追加することで、特定のプロジェクト タイプ (すべての C# プロジェクトなど) のすべてのビルドに影響を与えることができます。
+
+MSBuild または Visual Studio のインストールによって管理されているすべての C# または Visual Basic ビルドに影響を与えるには、*Microsoft.Common.targets* の前後に実行されるターゲットを使用してファイル *Custom.Before.Microsoft.Common.Targets* または *Custom.After.Microsoft.Common.Targets* を作成するか、*Microsoft.Common.props* の前後に処理されるプロパティを使用してファイル *Custom.Before.Microsoft.Common.Props* または *Custom.After.Microsoft.Common.Props* を作成します。
+
+次の MSBuild プロパティを使用して、これらのファイルの場所を指定できます。
+
+- CustomBeforeMicrosoftCommonProps
+- CustomBeforeMicrosoftCommonTargets
+- CustomAfterMicrosoftCommonProps
+- CustomAfterMicrosoftCommonTargets
+- CustomBeforeMicrosoftCSharpProps
+- CustomBeforeMicrosoftVisualBasicProps
+- CustomAfterMicrosoftCSharpProps
+- CustomAfterMicrosoftVisualBasicProps
+- CustomBeforeMicrosoftCSharpTargets
+- CustomBeforeMicrosoftVisualBasicTargets
+- CustomAfterMicrosoftCSharpTargets
+- CustomAfterMicrosoftVisualBasicTargets
+
+これらのプロパティの *Common* バージョンは、C# プロジェクトおよび Visual Basic プロジェクトの両方に影響を与えます。 これらのプロパティは、MSBuild コマンド ラインで設定できます。
+
+```cmd
+msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
+```
+
+最適な方法はご自身のシナリオによって異なります。 専用のビルド サーバーがあり、そのサーバー上で実行される適切なプロジェクト タイプのすべてのビルドにおいて、特定のターゲットが必ず実行されるようにする場合は、グローバルなカスタムの `.targets` または `.props` ファイルを使用することをお勧めします。  特定の条件が適用される場合にのみカスタム ターゲットを実行したい場合は、別のファイルの場所を使用し、必要な場合にのみ MSBuild コマンド ラインで適切な MSBuild プロパティを設定することで、そのファイルへのパスを設定します。
+
+> [!WARNING]
+> Visual Studio では、一致する型のプロジェクトをビルドするときに MSBuild フォルダー内でカスタムの `.targets` または `.props` ファイルが見つかった場合、必ずそれらを使用します。 これにより、意図しない結果が生じる可能性があります。正しく実行されないと、コンピューター上での Visual Studio のビルド機能が無効になる場合があります。
+
+## <a name="customize-all-c-builds"></a>すべての C++ ビルドをカスタマイズする
+
+C++ プロジェクトの場合、前述のカスタムの `.targets` および `.props` ファイルは無視されます。 C++ プロジェクトの場合は、各プラットフォーム用に `.targets` ファイルを作成し、それらのプラットフォーム用の適切なインポート フォルダーにそれらを配置することができます。
+
+Win32 プラットフォーム用の `.targets` ファイルである *Microsoft.Cpp.Win32.targets* には、次の `Import` 要素が含まれています。
+
+```xml
+<Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"
+        Condition="Exists('$(VCTargetsPath)\Platforms\Win32\ImportBefore')"
+/>
+```
+
+同じファイルの末尾付近にも、似た要素があります。
+
+```xml
+<Import Project="$(VCTargetsPath)\Platforms\Win32\ImportAfter\*.targets"
+        Condition="Exists('$(VCTargetsPath)\Platforms\Win32\ImportAfter')"
+/>
+```
+
+他のターゲット プラットフォーム用の似たインポート要素は、"*%ProgramFiles32%\MSBuild\Microsoft.Cpp\v{バージョン}\Platforms\*" に存在します。
+
+プラットフォームに応じた適切なフォルダーに `.targets` ファイルを配置すると、MSBuild によって、そのプラットフォーム用のすべての C++ ビルドにファイルがインポートされます。 必要に応じて、複数の `.targets` ファイルをそこに置くことができます。
+
+### <a name="specify-a-custom-import-on-the-command-line"></a>コマンド ラインでカスタム インポートを指定する
+
+C++ プロジェクトの特定のビルドに追加したいカスタムの `.targets` のために、コマンド ラインでプロパティ `ForceImportBeforeCppTargets`、`ForceImportAfterCppTargets` のいずれかまたは両方を設定します。
+
+```cmd
+msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.Cpp.Targets" MyCppProject.vcxproj
+```
+
+グローバル設定の場合 (たとえば、ビルド サーバー上の 1 つのプラットフォーム用のすべての C++ ビルドに影響を与える場合)、2 つの方法があります。 まず、常に設定されるシステム環境変数を使用して、これらのプロパティを設定できます。 これが機能するのは、MSBuild によって常に環境が読み取られ、すべての環境変数に対するプロパティが作成 (またはオーバーライド) されるためです。
 
 ## <a name="see-also"></a>関連項目
 

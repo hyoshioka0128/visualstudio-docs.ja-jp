@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd21d7da710a82d9396766971244aa5f7f9bbd4d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278792"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633643"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 要素 (MSBuild)
-ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべての項目は、`ItemGroup` 要素の子として指定する必要があります。
+
+ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 MSBuild プロジェクトで使用されるすべての項目が、`ItemGroup` 要素の子として指定されている必要があります。
 
 \<Project> \<ItemGroup>
 
@@ -41,6 +42,7 @@ ms.locfileid: "77278792"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
 以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -60,10 +62,11 @@ ms.locfileid: "77278792"
 
 | 要素 | 説明 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 | [Target](../msbuild/target-element-msbuild.md) | .NET Framework 3.5 以降、`Target` 要素の中に `ItemGroup` 要素を使用できるようになりました。 詳細については、[ターゲット](../msbuild/msbuild-targets.md) を参照してください。 |
 
 ## <a name="example"></a>例
+
 次のコード例は、`ItemGroup` 要素の中で宣言されたユーザー定義の項目コレクション `Res` および `CodeFiles` を示しています。 `Res` 項目コレクション内のそれぞれの項目には、ユーザー定義の子要素 [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) が含まれています。
 
 ```xml
@@ -84,6 +87,7 @@ ms.locfileid: "77278792"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)
 - [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

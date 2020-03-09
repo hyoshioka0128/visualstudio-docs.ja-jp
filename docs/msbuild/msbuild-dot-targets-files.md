@@ -16,17 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc5df9c4eba4195400b6a41fa50a5c88257d70e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566554"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633357"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets ファイル
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] には、項目、プロパティ、ターゲット、および一般的なシナリオ用のタスクが含まれているいくつかの *.targets* ファイルが含まれます。 これらのファイルはほぼすべて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロジェクト ファイル自動的にインポートされ、これによってメンテナンスが簡素化されて読みやすさが向上します。
 
- 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 たとえば、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって作成された [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトは、*Microsoft.Common.targets* をインポートする *Microsoft.CSharp.targets* をインポートします。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクト自体はそのプロジェクトに固有の項目とプロパティを定義しますが、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの標準のビルド規則は、インポートされた *.targets* ファイルで定義されます。
+MSBuild には、項目、プロパティ、ターゲット、および一般的なシナリオ用のタスクが含まれているいくつかの *.targets* ファイルが含まれます。 これらのファイルは、保守を簡素化し読みやすくするために、ほとんどの Visual Studio プロジェクト ファイルに自動的にインポートされます。
+
+ 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 たとえば、Visual Studio によって作成された C# プロジェクトは、*Microsoft.Common.targets* をインポートする *Microsoft.CSharp.targets* をインポートします。 C# プロジェクト自体はそのプロジェクトに固有の項目とプロパティを定義しますが、C# プロジェクト用の標準のビルド規則は、インポートされた *.targets* ファイルで定義されます。
 
  `$(MSBuildToolsPath)` 値によって、これらの共通 *.targets* ファイルのパスが指定されます。 `ToolsVersion` が 4.0 の場合、ファイルは次の場所にあります。 *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
@@ -37,14 +38,16 @@ ms.locfileid: "75566554"
 
 | *.targets* ファイル | 説明 |
 |---------------------------------| - |
-| *Microsoft.Common.targets* | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトおよび [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている *Microsoft.CSharp.targets* や *Microsoft.VisualBasic.targets* ファイルによってインポートされます: `<Import Project="Microsoft.Common.targets" />` |
+| *Microsoft.Common.targets* | Visual Basic および C# プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている *Microsoft.CSharp.targets* や *Microsoft.VisualBasic.targets* ファイルによってインポートされます: `<Import Project="Microsoft.Common.targets" />` |
 | *Microsoft.CSharp.targets* | Visual C# プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual C# プロジェクト ファイル ( *.csproj*) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
 | *Microsoft.VisualBasic.targets* | Visual Basic プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual Basic プロジェクト ファイル ( *.vbproj*) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
+
 *Directory.Build.targets* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。 **ImportDirectoryBuildTargets** プロパティを **false** に設定しない限り、このファイルは *Microsoft.Common.targets* から自動的にインポートされます。 詳細については、「[ビルドのカスタマイズ](customize-your-build.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

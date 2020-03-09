@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aef20a322ad3743ed1cb89955654456dff670e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591451"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634215"
 ---
 # <a name="exec-task"></a>Exec タスク
+
 指定された引数を使って、指定されたプログラムまたはコマンドを実行します。
 
 ## <a name="parameters"></a>パラメーター
+
 `Exec` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -48,13 +50,15 @@ ms.locfileid: "75591451"
 |`WorkingDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> コマンドを実行するディレクトリを指定します。<br /><br />既定:プロジェクトの現在の作業ディレクトリ。|
 
 ## <a name="remarks"></a>Remarks
-このタスクは、実行したいジョブの特定の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクを使用できないときに便利です。 ただし、`Exec` タスクは、固有のタスクとは異なり、実行したツールまたはコマンドの結果に基づいて追加処理や条件演算を行うことはできません。
+
+このタスクは、実行したいジョブの特定の MSBuild タスクを使用できないときに便利です。 ただし、`Exec` タスクは、固有のタスクとは異なり、実行したツールまたはコマンドの結果に基づいて追加処理や条件演算を行うことはできません。
 
 `Exec` タスクは、プロセスを直接呼び出す代わりに *cmd.exe* を呼び出します。
 
 このドキュメントにリストされているパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 次の例では、`Exec` タスクを使ってコマンドを実行します。
 
 ```xml
@@ -71,5 +75,6 @@ ms.locfileid: "75591451"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

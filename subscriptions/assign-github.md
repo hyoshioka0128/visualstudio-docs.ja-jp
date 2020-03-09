@@ -3,15 +3,15 @@ title: Visual Studio + GitHub Enterprise オファー | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise オファーでのサブスクリプションの管理
-ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: e48b047862daa80452e1b2128dc74fee8bd1039e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558156"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263332"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise を使用して Visual Studio サブスクリプションを管理する
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
@@ -19,7 +19,7 @@ Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visu
 組織が Visual Studio Subscriptions with GitHub Enterprise を購入すると、2 つの部分に分かれてプロビジョニングおよび管理されます。
 
 ## <a name="manage-visual-studio-subscriptions"></a>Visual Studio サブスクリプションを管理する
-組織が Visual Studio Subscriptions with GitHub Enterprise を購入すると、サブスクリプションの Visual Studio 部分がすぐにプロビジョニングされ、Visual studio の[サブスクリプション管理](https://manage.visualstudio.com)ポータルで割り当てと管理にこれらのサブスクリプションを使用できます。 
+組織が Visual Studio Subscriptions with GitHub Enterprise を購入すると、サブスクリプションの Visual Studio の部分がすぐにプロビジョニングされ、Visual Studio [サブスクリプション管理](https://manage.visualstudio.com)ポータルでの割り当てと管理に、そのサブスクリプションを使用できるようになります。 
 
 サブスクリプションの管理の詳細については、次のトピックをご覧ください。
 - [管理ポータルの使用](using-admin-portal.md)
@@ -31,7 +31,7 @@ Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visu
 > [!Important]
 > Visual Studio Subscriptions with GitHub Enterprise が Visual Studio サブスクリプション管理者によって割り当てられていて、これらのサブスクリプションが一度も購入されていない場合、これらは組織内の GitHub Enterprise 管理者に対して表示されません。 GitHub Enterprise サブスクリプションが表示されるようにするには、最初にサブスクリプションが割り当てられたときに、Visual Studio Professional with GitHub Enterprise または Visual Studio Enterprise with GitHub Enterprise の**少なくとも 1 つの**サブスクリプションを含む購入を行う必要があります。  
 >
-> 割り当てられている GitHub サブスクリプションごとに、このサブスクリプションのライセンス要件への準拠を維持するために、お客様の責任下で、管理ポータルで対応する Visual Studio with GitHub サブスクリプションが割り当てられていることを確認する必要があります。
+> 割り当てられている GitHub サブスクリプションごとに、このサブスクリプションのライセンス要件への準拠を維持するために、お客様の責任下で、Visual Studio サブスクリプション管理ポータルで対応する Visual Studio with GitHub サブスクリプションが割り当てられていることを確認します。
 
 ## <a name="manage-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションを管理する
 GitHub Enterprise サブスクリプションが購入されると、GitHub ではお客様との連携がなされて、GitHub にアクセスする組織が作成および構成され、管理者が識別されます。  すると、これらの管理者は、管理者として設定されていることを示す通知を受け取ります。  
@@ -71,5 +71,20 @@ GitHub ヘルプでは、組織における GitHub Enterprise Server の実装�
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
+Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
+- [個別のサブスクリプションの割り当て](assign-license.md)
+- [複数のサブスクリプションを管理する](assign-license-bulk.md)
+- [サブスクリプションの編集](edit-license.md)
+- [サブスクリプションの削除](delete-license.md)
+- [最大使用量の確認](maximum-usage.md)
+
 Visual Studio Subscriptions with GitHub Enterprise の管理の詳細については、Visual Studio の[サブスクリプション管理ポータル](https://visualstudio.microsoft.com/subscriptions-administration/)をご覧ください。
+
+

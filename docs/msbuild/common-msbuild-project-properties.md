@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557885"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634423"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
+
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
 
  Visual Studio のプロジェクト ファイル ( *.csproj*、 *.vbproj*、 *.vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 詳しくは、「[MSBuild .Targets ファイル](../msbuild/msbuild-dot-targets-files.md)」をご覧ください。
@@ -38,20 +39,20 @@ ms.locfileid: "77557885"
 | AddModules | 指定ファイル内のすべての型情報をコンパイル対象のプロジェクトで使用できるようにします。 このプロパティは、`/addModules` コンパイラ スイッチに相当します。 |
 | ALToolPath | *AL.exe* の保存先のパスです。 このプロパティによって、*AL.exe* の現在のバージョンをオーバーライドし、別のバージョンを使用できます。 |
 | ApplicationIcon | Win32 アイコンとして埋め込むためにコンパイラに渡す *.ico* アイコン ファイルです。 このプロパティは、`/win32icon` コンパイラ スイッチに相当します。 |
-| ApplicationManifest | 外部のユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報を生成するのに使用するファイルのパスを指定します。 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] を対象とする Visual Studio プロジェクトにのみ適用されます。<br /><br /> ほとんどの場合、マニフェストは埋め込まれます。 ただし、登録を必要としない COM 配置または [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置を使用する場合は、アプリケーション アセンブリと共にインストールされる外部ファイルをマニフェストとして使用できます。 詳細については、このトピックの NoWin32Manifest プロパティを参照してください。 |
+| ApplicationManifest | 外部のユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報を生成するのに使用するファイルのパスを指定します。 Windows Vista をターゲットとする Visual Studio プロジェクトにのみ適用されます。<br /><br /> ほとんどの場合、マニフェストは埋め込まれます。 ただし、登録を必要としない COM 配置または ClickOnce 配置を使用する場合は、アプリケーション アセンブリと共にインストールされる外部ファイルをマニフェストとして使用できます。 詳細については、このトピックの NoWin32Manifest プロパティを参照してください。 |
 | AssemblyOriginatorKeyFile | アセンブリ ( *.snk* または *.pfx*) に署名するために使用されるファイルを指定します。また、このファイルは [ResolveKeySource タスク](../msbuild/resolvekeysource-task.md)に渡され、アセンブリの署名に使用される実際のキーが生成されます。 |
 | AssemblySearchPaths | ビルド時に参照アセンブリを解決するときに検索する場所のリストです。 このリストでは、先頭から順に優先度が低くなるため、パスを指定する順序が意味を持ちます。 |
 | AssemblyName | プロジェクトのビルド後に生成される最終的な出力アセンブリの名前です。 |
 | BaseAddress | メイン出力アセンブリのベース アドレスを指定します。‎ このプロパティは、`/baseaddress` コンパイラ スイッチに相当します。 |
 | BaseIntermediateOutputPath | すべての構成固有の中間出力ファイルが作成されるトップレベル フォルダーです。 既定値は `obj\` です。 次にコード例を示します。`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
-| BaseOutputPath | 出力ファイルのベース パスを指定します。 設定されている場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は `OutputPath = $(BaseOutputPath)\$(Configuration)\` を使用します。 構文例: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
-| BuildInParallel | Multi-Proc [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の使用時に複数のプロジェクト参照を同時にビルドまたはクリーンするかどうかを示すブール値です。 既定値は `true` です。システムに複数のコアまたはプロセッサがある場合に既定値を使用すると、複数のプロジェクトが同時にビルドされます。 |
-| BuildProjectReferences | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によってプロジェクト参照をビルドするかどうかを示すブール値です。 プロジェクトを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: Integrated Development Environment) でビルドしている場合は `false` に自動的に設定され、それ以外の場合は `true` に設定されます。 `-p:BuildProjectReferences=false` をコマンド ラインで指定して、参照先のプロジェクトが最新かどうかのチェックを回避できます。 |
+| BaseOutputPath | 出力ファイルのベース パスを指定します。 これが設定されている場合、MSBuild では `OutputPath = $(BaseOutputPath)\$(Configuration)\` が使用されます。 構文例: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
+| BuildInParallel | 複数プロセッサの MSBuild が使用されている場合に、複数のプロジェクト参照を並列にビルドまたはクリーンするかどうかを示すブール値です。 既定値は `true` です。システムに複数のコアまたはプロセッサがある場合に既定値を使用すると、複数のプロジェクトが同時にビルドされます。 |
+| BuildProjectReferences | MSBuild によってプロジェクト参照がビルドされるかどうかを示すブール値です。 プロジェクトを Visual Studio 統合開発環境 (IDE) でビルドしている場合は自動的に `false` に設定され、それ以外の場合は `true` に設定されます。 `-p:BuildProjectReferences=false` をコマンド ラインで指定して、参照先のプロジェクトが最新かどうかのチェックを回避できます。 |
 | CleanFile | "クリーン キャッシュ" として使用されるファイルの名前です。 クリーン キャッシュとは、クリーン操作の実行中に削除される対象の生成されたファイルのリストです。 このファイルは、ビルド プロセスによって中間出力パスに追加されます。<br /><br /> このプロパティでは、パス情報を含まないファイル名だけを指定します。 |
 | CodePage | コンパイルですべてのソース コード ファイルに使用するコード ページを指定します。 このプロパティは、`/codepage` コンパイラ スイッチに相当します。 |
 | CompilerResponseFile | コンパイラ タスクに渡すことができる応答ファイルです (省略可能)。 |
 | 構成 | ビルドする構成です。"Debug" と "Release" のいずれかを指定します。 |
-| CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] コンパイラ *csc.exe* のパスです。 |
+| CscToolPath | C# コンパイラ *csc.exe* のパスです。 |
 | CustomBeforeMicrosoftCommonTargets | 共通ターゲットのインポートの前に自動的にインポートされるプロジェクト ファイルまたは targets ファイルの名前です。 |
 | DebugSymbols | ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> コマンド ラインで **-p:DebugSymbols=false** と設定すると、プログラム データベース ( *.pdb*) シンボル ファイルの生成が無効になります。 |
 | DebugType | 生成するデバッグ情報のレベルを定義します。 有効な値は "full"、"pdbonly"、"portable"、"embedded、"および "none" です。 |
@@ -61,10 +62,10 @@ ms.locfileid: "77557885"
 | DelaySign | アセンブリに完全署名ではなく遅延署名するかどうかを示すブール値です。 |
 | Deterministic | コンパイラが同じ入力に対して同じアセンブリを生成するかどうかを指示するブール値。 このパラメーターは、*vbc.exe* および *csc.exe* コンパイラの `/deterministic` スイッチに相当します。 |
 | DisabledWarnings | 指定された警告の出力を抑制します。 警告 ID の数値だけを指定してください。 複数の警告を指定するときは、セミコロン (;) で区切ります。 このパラメーターは、*vbc.exe* コンパイラの `/nowarn` スイッチに相当します。 |
-| DisableFastUpToDateCheck | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のみに適用されるブール値です。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ビルド マネージャーは、FastUpToDateCheck と呼ばれるプロセスを使用して、プロジェクトをリビルドして最新の状態にする必要があるかどうかを判断します。 この判断を行う機能としては、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] より、このプロセスの方が高速です。 DisableFastUpToDateCheck プロパティを `true` に設定すると、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ビルド マネージャーをバイパスし、プロジェクトが最新の状態かどうかを判断するために [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を使用するように強制できます。 |
+| DisableFastUpToDateCheck | Visual Studio のみに適用されるブール値です。 Visual Studio ビルド マネージャーは、FastUpToDateCheck と呼ばれるプロセスを使用して、プロジェクトをリビルドして最新の状態にする必要があるかどうかを判断します。 このプロセスは、MSBuild を使用してこれを判断するよりも高速です。 DisableFastUpToDateCheck プロパティを `true` に設定すると、Visual Studio ビルド マネージャーをバイパスし、プロジェクトが最新の状態かどうかを判断するために MSBuild を使用するように強制できます。 |
 | DocumentationFile | XML ドキュメント ファイルとして生成されるファイルの名前です。 この名前はファイル名のみを示し、パス情報は含んでいません。 |
 | ErrorReport | コンパイラ タスクで内部コンパイル エラーを報告するかどうかを指定します。 有効な値は "prompt"、"send"、または "none" です。 このプロパティは、`/errorreport` コンパイラ スイッチに相当します。 |
-| ExcludeDeploymentUrl | プロジェクト ファイルに次の要素が含まれている場合は、[GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)によって、deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注:** ExcludeDeploymentUrl は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE では公開されていないため、プロジェクト ファイルを手動で編集する方法でのみ設定できます。 このプロパティを設定しても、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内での発行には影響はありません。つまり、PublishUrl で指定された URL に deploymentProvider タグが追加されます。 |
+| ExcludeDeploymentUrl | プロジェクト ファイルに次の要素が含まれている場合は、[GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)によって、deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注:** ExcludeDeploymentUrl は Visual Studio IDE では公開されていないため、プロジェクト ファイルを手動で編集することでのみ設定できます。 このプロパティを設定しても、Visual Studio 内での発行には影響はありません。つまり、PublishUrl で指定された URL に引き続き deploymentProvider タグが追加されます。 |
 | FileAlignment | 出力ファイルでセクションをアラインするサイズをバイト単位で指定します。 有効値は 512、1024、2048、4096、および 8192 です。 このプロパティは、`/filealignment` コンパイラ スイッチに相当します。 |
 | FrameworkPathOverride | *mscorlib.dll* および *microsoft.visualbasic.dll* の位置を指定します。 このパラメーターは、*vbc.exe* コンパイラの `/sdkpath` スイッチに相当します。 |
 | GenerateDocumentation | (C#、Visual Basic) ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に *.xml* ファイルに格納されます。 |
@@ -77,8 +78,8 @@ ms.locfileid: "77557885"
 | MSBuildProjectExtensionsPath | プロジェクト拡張機能が配置されるパスを指定します。 既定では、`BaseIntermediateOutputPath` と同じ値が使用されます。 |
 | NoLogo | コンパイラ ロゴをオフにするかどうかを示すブール値です。 このプロパティは、`/nologo` コンパイラ スイッチに相当します。 |
 | NoStdLib | 標準ライブラリ (*mscorlib.dll*) の参照を回避するかどうかを示すブール値です。 既定値は `false` です。 |
-| NoVBRuntimeReference | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ランタイム (*Microsoft.VisualBasic.dll*) を参照としてプロジェクトに含めるかどうかを示すブール値です。 |
-| NoWin32Manifest | ユーザー アカウント制御 (UAC) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むかどうかを示すブール値です。 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] を対象とする Visual Studio プロジェクトにのみ適用されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] および登録を必要としない COM を使用して配置されたプロジェクトでは、この要素無視されます。 `False` (既定値) は、ユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むことを指定します。 `True`を指定すると、UAC マニフェスト情報は埋め込まれません。<br /><br /> このプロパティは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を対象とする [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] プロジェクトにのみ適用されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] および登録を必要としない COM を使用して配置されたプロジェクトでは、このプロパティは無視されます。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でマニフェスト情報をアプリケーションの実行可能ファイルに埋め込まない場合に限り、NoWin32Manifest を追加してください。このプロセスは "*仮想化*" と呼ばれます。 仮想化を使用するには、次のように `<ApplicationManifest>` と共に `<NoWin32Manifest>` を設定します。<br /><br /> -   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトの場合は、`<ApplicationManifest>` ノードを削除します ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトでは、`<ApplicationManifest>` ノードが存在すると、`<NoWin32Manifest>` は無視されます)。<br />-   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの場合は、`<ApplicationManifest>` を `False` に設定し、`<NoWin32Manifest>` を `True` に設定します ([!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトでは、`<ApplicationManifest>` は `<NoWin32Manifest>` によりオーバーライドされます)。<br /> このプロパティは、*vbc.exe* コンパイラの `/nowin32manifest` スイッチに相当します。 |
+| NoVBRuntimeReference | Visual Basic ランタイム (*Microsoft.VisualBasic.dll*) を参照としてプロジェクトに含めるかどうかを示すブール値です。 |
+| NoWin32Manifest | ユーザー アカウント制御 (UAC) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むかどうかを示すブール値です。 Windows Vista をターゲットとする Visual Studio プロジェクトにのみ適用されます。 ClickOnce および登録を必要としない COM を使用して配置されたプロジェクトでは、この要素は無視されます。 `False` (既定値) は、ユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むことを指定します。 `True`を指定すると、UAC マニフェスト情報は埋め込まれません。<br /><br /> このプロパティは、Windows Vista をターゲットとする Visual Studio プロジェクトにのみ適用されます。 ClickOnce および登録を必要としない COM を使用して配置されたプロジェクトでは、このプロパティは無視されます。<br /><br /> Visual Studio でマニフェスト情報がアプリケーションの実行可能ファイルに埋め込まれないようにしたい場合にのみ、NoWin32Manifest を追加してください。このプロセスは "*仮想化*" と呼ばれます。 仮想化を使用するには、次のように `<ApplicationManifest>` と共に `<NoWin32Manifest>` を設定します。<br /><br /> -   Visual Basic プロジェクトの場合は、`<ApplicationManifest>` ノードを削除します。 (Visual Basic プロジェクトでは、`<ApplicationManifest>` ノードが存在すると、`<NoWin32Manifest>` は無視されます。)<br />-   C# プロジェクトの場合は、`<ApplicationManifest>` を `False` に設定し、`<NoWin32Manifest>` を `True` に設定します。 (C# プロジェクトでは、`<ApplicationManifest>` によって `<NoWin32Manifest>` がオーバーライドされます。)<br /> このプロパティは、*vbc.exe* コンパイラの `/nowin32manifest` スイッチに相当します。 |
 | Optimize | `true` に設定された場合にコンパイラの最適化を有効にするブール値です。 このプロパティは、`/optimize` コンパイラ スイッチに相当します。 |
 | OptionCompare | 文字列比較の方法を指定します。 有効な値は "binary" または "text" です。 このプロパティは、*vbc.exe* コンパイラの `/optioncompare` スイッチに相当します。 |
 | OptionExplicit | `true` に設定された場合にソース コードで変数が明示的に宣言されていることを要求するブール値です。 このプロパティは、`/optionexplicit` コンパイラ スイッチに相当します。 |
@@ -122,10 +123,10 @@ ms.locfileid: "77557885"
 | TargetCompactFramework | ビルドするアプリケーションの実行に必要な .NET Compact Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |
 | TargetFrameworkVersion | ビルドするアプリケーションの実行に必要な .NET Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |
 | TreatWarningsAsErrors | ブール値パラメーターであり、`true` に設定すると、すべての警告がエラーとして扱われます。 このパラメーターは、`/nowarn` コンパイラ スイッチに相当します。 |
-| UseHostCompilerIfAvailable | ブール値パラメーターであり、`true` に設定すると、ビルド タスクはインプロセス コンパイラを使用します (インプロセス コンパイラが用意されている場合)。 このパラメーターは [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でのみ使用されます。 |
+| UseHostCompilerIfAvailable | ブール値パラメーターであり、`true` に設定すると、ビルド タスクはインプロセス コンパイラを使用します (インプロセス コンパイラが用意されている場合)。 このパラメーターは Visual Studio でのみ使用されます。 |
 | Utf8Output | ブール値パラメーターであり、`true` に設定すると、コンパイラ出力が UTF-8 エンコーディングでログに記録されます。 このパラメーターは、`/utf8Output` コンパイラ スイッチに相当します。 |
 | VbcToolPath | *vbc.exe* の現在のバージョンがオーバーライドされた場合に *vbc.exe* の別の場所を示すパスです (省略可能)。 |
-| VbcVerbosity | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] コンパイラ出力の詳細度を指定します。 有効な値は "Quiet"、"Normal" (既定値)、または "Verbose" です。 |
+| VbcVerbosity | Visual Basic コンパイラの出力の詳細を指定します。 有効な値は "Quiet"、"Normal" (既定値)、または "Verbose" です。 |
 | VisualStudioVersion | このプロジェクトが実行されている Visual Studio のバージョンを指定します。 このプロパティが指定されていない場合、MSBuild によって適切な既定値に設定されます。<br /><br /> このプロパティは複数の種類のプロジェクトで使用され、ビルドで利用されるターゲットのセットが指定されます。 `ToolsVersion` がプロジェクトに対して 4.0 以上に設定されている場合、`VisualStudioVersion` によって、使用するサブツールセットが指定されます。 詳細については、「[ツール セット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」を参照してください。 |
 | WarningsAsErrors | エラーとして扱う警告の一覧を指定します。 このパラメーターは、`/warnaserror` コンパイラ スイッチに相当します。 |
 | WarningsNotAsErrors | エラーとして扱わない警告の一覧を指定します。 このパラメーターは、`/warnaserror` コンパイラ スイッチに相当します。 |
@@ -133,4 +134,5 @@ ms.locfileid: "77557885"
 | Win32Resource | 最終的なアセンブリに埋め込む Win32 リソースのファイル名です。 このパラメーターは、`/win32resource` コンパイラ スイッチに相当します。 |
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574419"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633786"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>方法: ビルドで環境変数を使用する
+
 プロジェクトをビルドするとき、プロジェクト ファイルまたはプロジェクトを構成するファイルに含まれていない情報を使用してビルド オプションを設定する必要がある場合があります。 通常、この情報は環境変数に格納されます。
 
 ## <a name="reference-environment-variables"></a>環境変数を参照する
- 環境変数はすべて、プロパティとして [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) プロジェクト ファイルで使用可能です。
+
+ すべての環境変数は、Microsoft Build Engine (MSBuild) プロジェクト ファイルでプロパティとして使用可能です。
 
 > [!NOTE]
 > プロジェクト ファイルに、環境変数と同じ名前のプロパティが明示的に定義されている場合、環境変数の値はプロジェクト ファイル内のプロパティによってオーバーライドされます。
@@ -46,6 +48,7 @@ ms.locfileid: "75574419"
     > プロパティ名は大文字と小文字が区別されないため、`$(ToolsPath)` と `$(TOOLSPATH)` の両方が同じプロパティまたは環境変数を参照します。
 
 ## <a name="example"></a>例
+
  次のプロジェクト ファイルは、環境変数を使用して、ディレクトリの場所を指定します。
 
 ```xml
@@ -63,6 +66,7 @@ ms.locfileid: "75574419"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild プロパティ](../msbuild/msbuild-properties.md)
 - [方法: 同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1aee1a6ae3abc06846523df9470ad75d316a50b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592088"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263150"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild のベスト プラクティス
+
 MSBuild スクリプトを記述するための次のベスト プラクティスを推奨します。
 
 - 既定のプロパティ値は、コマンド ラインで既定値をオーバーライドできるプロパティを宣言するのではなく、`Condition` 属性を使用して処理することをお勧めします。 たとえば、次を使用します。
@@ -29,7 +30,8 @@ MSBuild スクリプトを記述するための次のベスト プラクティ�
 </MyProperty>
 ```
 
-- 項目を選択するときに、ワイルドカードを避けます。 代わりに、ファイルを明示的に指定します。 ファイルを追加または削除する場合に発生する可能性のあるエラーを追跡しやすくなります。
+- 通常は、項目の選択時にワイルドカードを使用しないようにします。 代わりに、ファイルを明示的に指定します。 これは、ほとんどのプロジェクトの種類では、項目の追加や削除時などのさまざまなタイミングで MSBuild によってワイルドカードが展開され、予期しない動作が発生する可能性があるためです。 これに対する例外は、ワイルドカードを正しく処理する .NET Core SDK スタイルのプロジェクト内にあります。
 
 ## <a name="see-also"></a>関連項目
+
 - [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

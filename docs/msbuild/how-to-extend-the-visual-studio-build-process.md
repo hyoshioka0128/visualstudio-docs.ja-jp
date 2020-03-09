@@ -14,22 +14,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75575927"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633851"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド処理は、プロジェクト ファイルにインポートされる一連の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* ファイルによって定義されます。 このインポートされるファイルの 1 つである *Microsoft.Common.targets* を拡張することで、ビルド処理の複数のポイントでカスタム タスクを実行できます。 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド処理を拡張するための 2 つの方法について説明します。
+
+Visual Studio のビルド処理は、プロジェクト ファイルにインポートされる一連の MSBuild *.targets* ファイルによって定義されます。 このインポートされるファイルの 1 つである *Microsoft.Common.targets* を拡張することで、ビルド処理の複数のポイントでカスタム タスクを実行できます。 この記事では、Visual Studio のビルド処理を拡張するために使用できる 2 つの方法について説明します。
 
 - 共通のターゲット (*Microsoft.Common.targets* またはインポートされるファイル) で定義されている特定の定義済みターゲットをオーバーライドする。
 
 - 共通のターゲットで定義されている "DependsOn" プロパティをオーバーライドする。
+## <a name="override-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
 
 ## <a name="override-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
-共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットを、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットを呼び出します。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクを利用し、ビルド処理をさらに細かく制御できます。
+
+共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、MSBuild では、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットが呼び出され、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットが呼び出されます。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、MSBuild タスクを利用し、ビルド処理をさらに細かく制御できます。
+共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、MSBuild では、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットが呼び出され、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットが呼び出されます。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、MSBuild タスクを利用し、ビルド処理をさらに細かく制御できます。
 
 > [!NOTE]
 > SDK スタイルのプロジェクトでは、*プロジェクト ファイルの最後の行の後に*、ターゲットが暗黙的にインポートされます。 つまり、インポートを手動で指定しない限り、既定のターゲットをオーバーライドすることはできないということです。詳しくは、「[方法: MSBuild プロジェクト SDK の使用](how-to-use-project-sdk.md)」で説明されています。
@@ -67,7 +71,8 @@ ms.locfileid: "75575927"
 |`BeforeResGen`、`AfterResGen`|これらのターゲットのいずれかに挿入されているタスクは、リソース生成の前または後に実行されます。|
 
 ## <a name="override-dependson-properties"></a>DependsOn プロパティをオーバーライドする
-事前定義済みターゲットのオーバーライドはビルド処理を拡張する簡単な方法ですが、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はターゲットの定義を順次評価するため、プロジェクトをインポートする別のプロジェクトが既にオーバーライドしているターゲットをオーバーライドすることを阻止できません。 そのため、たとえば、プロジェクト ファイルに定義されている最後の `AfterBuild` ターゲットが、その他すべてのプロジェクトがインポートされた後に、ビルド中に使用されるターゲットになります。
+
+事前定義済みターゲットのオーバーライドはビルド処理を拡張する簡単な方法ですが、MSBuild ではターゲットの定義が順番に評価されるため、プロジェクトをインポートする別のプロジェクトが、既にオーバーライドしているターゲットをオーバーライドすることを防ぐことはできません。 そのため、たとえば、プロジェクト ファイルに定義されている最後の `AfterBuild` ターゲットが、その他すべてのプロジェクトがインポートされた後に、ビルド中に使用されるターゲットになります。
 
 共通のターゲット全体で `DependsOnTargets` 属性で使用される DependsOn プロパティをオーバーライドすることで、ターゲットの意図しないオーバーライドを防ぐことができます。 たとえば、`Build` ターゲットには、`DependsOnTargets` 属性値 `"$(BuildDependsOn)"` が含まれています。 次の例を考えてみましょう。
 
@@ -127,6 +132,7 @@ XML のこの部分は、`Build` ターゲットを実行するには、`BuildDe
 |`CompileDependsOn`|コンパイル手順の前または後にカスタム プロセスを挿入する場合にオーバーライドするプロパティ。|
 
 ## <a name="see-also"></a>関連項目
+
 - [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [.targets ファイル](../msbuild/msbuild-dot-targets-files.md)

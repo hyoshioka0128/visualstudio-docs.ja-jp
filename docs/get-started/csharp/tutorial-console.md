@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580015"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215428"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -329,15 +329,15 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 では、始めましょう。
 
-1. 次のコード ブロックの "*後*" にあるものをすべて削除します。
+1. 中かっこで囲まれている `Calculator` 名前空間内のすべてを削除します。
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. そして、次のように、新しい `Calculator` クラスを追加します。
