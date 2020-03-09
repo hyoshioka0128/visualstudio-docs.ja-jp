@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428769"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235107"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート: Visual Studio を使用して初めての Vue.js アプリを作成する
 
@@ -43,7 +43,9 @@ ms.locfileid: "73428769"
 
 * Node.js ランタイムをインストールしている必要があります。
 
-    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択します)。
+    インストールされていない場合は、[Node.js](https://nodejs.org/en/download/) Web サイトから LTS バージョンをインストールして、外部のフレームワークおよびライブラリとの最善の互換性を確保することをお勧めします。 Node.js は、32 ビットおよび 64 ビット アーキテクチャ用にビルドされています。 Visual Studio の Node.js ツールは Node.js ワークロードに含まれており、両方のバージョンをサポートしています。 必要なのは 1 つだけであり、Node.js インストーラーでは、一度に 1 つのインストールのみをサポートしています。
+    
+    一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストール済みのランタイムが検出されない場合は、プロパティ ページ上のインストール済みのランタイムを参照するようにプロジェクトを構成できます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択し、 **[Node.exe のパス]** を設定します)。 Node.js のグローバル インストールを使用するか、または Node.js プロジェクトごとにローカル インタープリターへのパスを指定することが可能です。 
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
@@ -51,7 +53,7 @@ ms.locfileid: "73428769"
 
 1. Node.js ランタイムがまだインストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。
 
-    一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択します)。
+    詳細については、前提条件を参照してください。
 
 1. Visual Studio を開きます。
 
@@ -63,7 +65,7 @@ ms.locfileid: "73428769"
     ![Vue.js テンプレート](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[JavaScript]** または **[TypeScript]** を展開して、 **[Node.js]** を選択します。 中央のウィンドウで、 **[Basic Vue.js Web アプリケーション]** を選択し、名前に「**basic-vuejs**」と入力してから、 **[OK]** を選択します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[JavaScript]** または **[TypeScript]** を展開して、 **[Node.js]** を選択します。 中央のウィンドウで、 **[Basic Vue.js Web アプリケーション]** を選択し、名前に「**basic-vuejs**」と入力してから、 **[OK]** を選択します。
 
     ![Vue.js テンプレート](../javascript/media/vuejs-template.png)
     ::: moniker-end
