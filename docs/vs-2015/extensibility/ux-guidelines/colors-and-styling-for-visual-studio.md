@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291605"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410083"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "74291605"
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio のインターフェイス要素に色を割り当てる方法
  UI 要素に最適な方法を選択します。
 
-|UI|メソッド|どのようなものでしょうか。|
+|UI|方法|どのようなものでしょうか。|
 |-------------|------------|--------------------|
 |ダイアログボックスが埋め込まれています。|**システムカラー**|オペレーティングシステムが UI 要素の色や外観を定義できるようにするシステム名 (コモンダイアログコントロールなど)。|
 |VS 環境全体と一貫性を持たせ、共有トークンのカテゴリとセマンティックの意味に一致する UI 要素があるカスタム UI があること。|**共通の共有色**|特定の UI 要素の既存の定義済みの色のトークン名|
-|個々の機能または機能グループがあり、類似の要素に対して共有色はありません。|**色のカスタマイズ**|領域に固有であり、他の UI と共有することを意図していない色トークン名|
+|個々の機能または機能グループがあり、類似の要素に対して共有色はありません。|**[作成した色]**|領域に固有であり、他の UI と共有することを意図していない色トークン名|
 |エンドユーザーが UI またはコンテンツ (たとえば、テキストエディターや特殊なデザイナーウィンドウなど) をカスタマイズできるようにする。|**エンドユーザーのカスタマイズ**<br /><br /> **(ツール > オプション ダイアログ)**|**ツール > オプション** ダイアログボックスの フォントおよび色 ページ、または1つの UI 機能に固有の特別なページで定義された設定。|
 
 ### <a name="visual-studio-themes"></a>Visual Studio のテーマ
@@ -71,7 +71,7 @@ ms.locfileid: "74291605"
  共通の共有色を使用する前に、それらを正しく使用する方法を理解しておく必要があります。 共通の共有色が不適切に使用されていると、ユーザーのエクスペリエンスが一貫していないか、混乱を招く可能性があります。
 
 ### <a name="user-customizable-colors"></a>ユーザーがカスタマイズ可能な色
- 参照トピック[公開 (エンドユーザーの色を)](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+ 参照:[エンドユーザーの色の公開](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
  場合によっては、コードエディターやデザインサーフェイスを作成するときなど、エンドユーザーが UI をカスタマイズできるようにする必要があります。 カスタマイズ可能な UI コンポーネントは、 **[ツール > オプション]** ダイアログボックスの **[フォントおよび色]** セクションにあります。ユーザーは、前景色、背景色、またはその両方を変更することができます。
 
@@ -270,7 +270,7 @@ protected override void Dispose(bool disposing)
 3. **UI のどの部分が最も重要であるかを判断し、コンテンツ領域が確実に表示されるようにします。** 色の色合いの微妙な違いは通常は区別されないので、さまざまなコンテンツ領域の色のバリエーションが存在しないので、強い境界線の色を使用するとコンテンツ領域を定義するのが一般的です。
 
 ### <a name="system-color-set"></a>システムカラーセット
- [WPF チームブログの表は次のとおりです。SystemColors リファレンス](https://devblogs.microsoft.com/wpf/systemcolors-reference/) は、システムカラー名の完全なセットと、各テーマに表示される対応する色相を示します。
+ [「WPF チームブログ: SystemColors リファレンス](https://devblogs.microsoft.com/wpf/systemcolors-reference/)」の表は、システムカラー名の完全なセットと、各テーマに表示される対応する色相を示しています。
 
  この限られた色のセットを UI に適用する場合*は、"通常の" テーマに含まれていた微妙な詳細が失われることが予想さ*れます。 次に示すのは、ツールウィンドウ内の領域を区別するために使用される細い灰色の色を持つ UI の例です。 ハイコントラストモードで表示されている同じウィンドウと組み合わせて使用すると、すべての背景が同じ色合いであり、それらの領域の枠線が境界線だけで示されていることがわかります。
 
@@ -300,7 +300,7 @@ protected override void Dispose(bool disposing)
 ### <a name="usage-patterns"></a>使用パターン
  多くの一般的な UI 要素には、既にハイコントラスト色が定義されています。 独自のシステムカラー名を選択するときに、これらの使用パターンを参照して、UI 要素と同様のコンポーネントとの一貫性を保つことができます。
 
-|システムカラー|使用方法|
+|システムカラー|使用法|
 |------------------|-----------|
 |ActiveCaption|-ホバー時のアクティブな IDE と rafted のウィンドウボタンのグリフ<br />-IDE および rafted ウィンドウのタイトルバーの背景<br />-既定のステータスバーの背景|
 |ActiveCaptionText|-アクティブな IDE および rafted ウィンドウ (タイトルバーの前景) (テキストとグリフ)<br />-ホバー時と押したときのアクティブなウィンドウボタンの背景と境界線|
@@ -319,7 +319,7 @@ protected override void Dispose(bool disposing)
 |メニュー|-ドロップダウンメニューの背景<br />-Checked および disabled チェックマークの背景|
 |MenuText|-ドロップダウンメニューの境界線<br />-チェックマークチェック<br />-メニューグリフ<br />-ドロップダウンメニューのテキスト<br />-選択されたアイコンの境界線|
 |スクロール バー|-Scrollbar と scrollbar の矢印の背景、すべての状態|
-|Window|-[自動的に隠す] タブの背景<br />-メニューバーとコマンドシェルフの背景<br />-見るまたは選択されていないドキュメントウィンドウタブの背景とドキュメントの境界線 (開いているタブと仮のタブの両方)<br />-見るツールウィンドウのタイトルバーの背景<br />-ツールウィンドウタブの背景 (選択されているか選択されていません)|
+|ウィンドウ|-[自動的に隠す] タブの背景<br />-メニューバーとコマンドシェルフの背景<br />-見るまたは選択されていないドキュメントウィンドウタブの背景とドキュメントの境界線 (開いているタブと仮のタブの両方)<br />-見るツールウィンドウのタイトルバーの背景<br />-ツールウィンドウタブの背景 (選択されているか選択されていません)|
 |WindowFrame|-IDE の境界線|
 |WindowText|-[自動的に隠す] タブの前景<br />-選択したツールウィンドウタブの前景<br />-見るドキュメントウィンドウのタブと見るまたは選択されていない一時的なタブの前景<br />-ツリービューの既定の前景と選択されていないグリフにマウスポインターを合わせる<br />-ツールウィンドウの選択したタブの枠線<br />-Scrollbar thumb の背景、罫線、およびグリフ|
 
@@ -348,10 +348,10 @@ protected override void Dispose(bool disposing)
 
  次の2つの値を使用してレジストリを設定します。
 
-|名前|型|data|説明|
+|Name|種類|Data|Description|
 |----------|----------|----------|-----------------|
 |カテゴリ|REG_SZ|GUID|カテゴリを識別するために作成された GUID|
-|[パッケージ]|REG_SZ|GUID|カテゴリをサポートする VSPackage サービスの GUID|
+|Package|REG_SZ|GUID|カテゴリをサポートする VSPackage サービスの GUID|
 
  レジストリに指定されたサービスは、対応するカテゴリの[Ivsfontandcolordefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)の実装を提供する必要があります。
 
@@ -360,10 +360,10 @@ protected override void Dispose(bool disposing)
 
  次の2つの値を使用してレジストリを設定します。
 
-|名前|型|data|説明|
+|Name|種類|Data|Description|
 |----------|----------|----------|-----------------|
 |カテゴリ|REG_SZ|GUID|カテゴリを識別するために作成された GUID|
-|[パッケージ]|REG_SZ|GUID|カテゴリをサポートする VSPackage サービスの GUID|
+|Package|REG_SZ|GUID|カテゴリをサポートする VSPackage サービスの GUID|
 
  レジストリに指定されたサービスは、対応するグループの**T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup**の実装を提供する必要があります。
 
