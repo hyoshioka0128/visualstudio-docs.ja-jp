@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235004"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78924924"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーの式
 Visual Studio デバッガーには式エバリュエーターという機能があり、 **[クイック ウォッチ]** ダイアログ ボックス、 **[ウォッチ]** ウィンドウ、または **[イミディエイト]** ウィンドウで式を入力するときに役立ちます。 式エバリュエーターは **[ブレークポイント]** ウィンドウなど、他のデバッガー機能でも使用できます。
@@ -99,12 +99,12 @@ int main()
 
 |領域|組み込み関数|
 |----------|-------------------------|
-|**文字列長**|strlen、wcslen、strnlen、wcsnlen|
-|**文字列比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|
-|**文字列検索**|strchr、wcstrstr r、memchr、wmemchr、、wcsstr|
-|**Win32**|GetLastError、TlsGetValue|
-|**Windows 8**|WindowsGetStringLen、WindowsGetStringRawBuffer<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|
-|**その他**|__log2//指定した整数の底2を返します。この値は、最も近い最小の整数に丸められます。<br /><br />__findNonNull、DecodeHString、WindowsCompareStringOrdinal、RoInspectCapturedStackBackTrace、CoDecodeProxy、GetEnvBlockLength、DecodeWinRTRestrictedException、DynamicMemberLookup、DecodePointer、DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx、Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] and 演算子 (インデックス < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] and 演算子 (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [インデックス < >] and 演算子 (インデックス < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] and 演算子 (tiled_index < >)<br /><br />新しいツリートラバーサルを TreeTraverse_Init//初期化します。<br /><br />TreeTraverse_Next//ツリー内のノードを返します。<br /><br />保留中のツリートラバーサル内のノードを TreeTraverse_Skip//スキップする|
+|**文字列長**|[strlen、wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)、 [strnlen、wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**文字列比較**|[strcmp、wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp)、 [stricmp、wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp)、 [_stricmp、_strcmpi、_wcsicmp、_wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)、 [strncmp、wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)、 [strnicmp、wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp)、 [_strnicmp、_wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**文字列検索**|[strchr、wcstrstr r](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)、 [memchr、wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr)、 [、wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)、 [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)、 [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)、 [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)、 [windowscomparestringordinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal)、 [windowscomparestringordinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)、 [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|
+|**その他**|__log2//指定した整数の底2を返します。この値は、最も近い最小の整数に丸められます。<br /><br />__findNonNull、DecodeHString、DecodeWinRTRestrictedException、DynamicCast、DynamicMemberLookup、GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx、Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] and 演算子 (インデックス < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] and 演算子 (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [インデックス < >] and 演算子 (インデックス < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] and 演算子 (tiled_index < >)<br /><br />新しいツリートラバーサルを TreeTraverse_Init//初期化します。<br /><br />TreeTraverse_Next//ツリー内のノードを返します。<br /><br />保留中のツリートラバーサル内のノードを TreeTraverse_Skip//スキップする|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - サポートされていない式
 
