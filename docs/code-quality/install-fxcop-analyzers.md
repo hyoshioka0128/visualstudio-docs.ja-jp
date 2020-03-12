@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 78935673dbf57f75988d4c0a9e862b11e2fe855f
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587460"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937527"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio で FxCop アナライザーをインストールする
 
@@ -32,7 +32,7 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 
    ![Visual Studio の [プロパティ] ページから FxCop アナライザーパッケージをインストールする](media/install-fxcop-properties-page.png)
 
-2. [インストール] を選択します。
+2. **[インストール]** を選択します。
 
    Visual Studio によって、FxCopAnalyzers パッケージの最新バージョンがインストールされます。 アセンブリは、[**参照** > **アナライザー**] の下の**ソリューションエクスプローラー**に表示されます。
 
@@ -152,8 +152,8 @@ Visual Studio 2017 バージョン15.5 以降では、マネージプロジェ�
 
 ::: moniker-end
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコードアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [Visual Studio でコード アナライザーを使用する](../code-quality/use-roslyn-analyzers.md)
-- [レガシ分析からコードアナライザーへの移行](../code-quality/fxcop-analyzers.yml)
+- [レガシ分析からコードアナライザーへの移行](../code-quality/migrate-from-legacy-analysis-to-fxcop-analyzers.md)
