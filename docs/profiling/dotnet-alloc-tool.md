@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75886762"
 ---
 # <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>.NET オブジェクト割り当てツールを使用してメモリ使用量を分析する
@@ -49,9 +49,9 @@ ms.locfileid: "75886762"
 
 ## <a name="understand-your-data"></a>データを理解する
 
-### <a name="collection"></a>Collection
+### <a name="collection"></a>コレクション
 
-![コレクション](../profiling/media/collection.png "Collection")
+![コレクション](../profiling/media/collection.png "コレクション")
 
 コレクション ビューでは、ガベージ コレクション中に収集されたオブジェクトの数と保持された数を確認できます。 また、このビューには、収集されたオブジェクトと残ったオブジェクトを種類別に視覚化するためのいくつかの円グラフもあります。
 

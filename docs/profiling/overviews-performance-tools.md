@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772668"
 ---
 # <a name="overviews-performance-tools"></a>概要 (パフォーマンス ツール)
@@ -56,7 +56,7 @@ ms.locfileid: "74772668"
 
  [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] でのサンプリング データの収集およびセッション間のアプリケーションのプロファイリングをするのに必要な問題や手順について説明します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [はじめに](../profiling/getting-started-with-performance-tools.md)
-- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)
+- [作業の開始](../profiling/getting-started-with-performance-tools.md)
+- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)

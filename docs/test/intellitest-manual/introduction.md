@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591600"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest の概要
@@ -46,7 +46,7 @@ IntelliTest は早い段階でバグを発見することができ、テスト�
 
 ## <a name="the-hello-world-of-intellitest"></a>IntelliTest の Hello World
 
-IntelliTest はテスト済みのプログラムに関連する入力を検索します。つまり、これを使用して有名な **Hello World!** 文字列を生成できます。 これは、C# MSTest ベースのテスト プロジェクトを作成し、**Microsoft.Pex.Framework** への参照を追加していることを前提としています。 別のテスト フレームワークを使用している場合は、C# クラス ライブラリを作成し、プロジェクトの設定方法に関するテスト フレームワークのドキュメントを参照してください。
+IntelliTest はテスト済みのプログラムに関連する入力を検索します。つまり、これを使用して有名な **Hello World!** string。 これは、C# MSTest ベースのテスト プロジェクトを作成し、**Microsoft.Pex.Framework** への参照を追加していることを前提としています。 別のテスト フレームワークを使用している場合は、C# クラス ライブラリを作成し、プロジェクトの設定方法に関するテスト フレームワークのドキュメントを参照してください。
 
 次の例は、**value** という名前のパラメーターで 2 つの制約を作成して、IntelliTest が必要な文字列を生成できるようにします。
 
@@ -118,7 +118,7 @@ IntelliTest は、[パラメーター化した単体テスト](test-generation.m
 
 さらに、プログラムの再実行時に外部ソースからの値が変わる場合は、そのプログラムは非決定論的と見なされます。 このような場合、IntelliTest はプログラムの実行に対する制御を失い、検索が非効率的になります。
 
-これが発生しても、はっきりとわからない場合があります。 次に例を示します。
+これが発生しても、はっきりとわからない場合があります。 次の例を考えてみます。
 
 * **GetHashCode()** メソッドの結果は、アンマネージ コードによって提供され、予測できません。
 * **System.Random** クラスは、現在のシステム時刻を使用して正確にランダムな値を提供します。

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595463"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -37,9 +37,9 @@ devenv /Log NameOfLogFile
 
 - *NameOfLogFile*
 
-  必須です。 保存先のログ ファイルの完全なパスと名前。
+  必須。 保存先のログ ファイルの完全なパスと名前。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 このスイッチは、その他すべてのスイッチの後、コマンド ラインの末尾に指定する必要があります。
 
@@ -53,6 +53,6 @@ devenv /Log NameOfLogFile
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

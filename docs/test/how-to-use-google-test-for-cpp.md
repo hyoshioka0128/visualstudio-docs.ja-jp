@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279297"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Google Test を使用する方法
@@ -65,8 +65,8 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="write-and-run-tests"></a>テストを作成して実行する
 
-Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 **テスト エクスプローラー**を使ってテストを検出、実行、グループ化する方法については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
+Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 [テスト エクスプローラー](run-unit-tests-with-test-explorer.md)を使ってテストを検出、実行、グループ化する方法については、「**テスト エクスプローラーを使用して単体テストを実行する**」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [C/C++ 用の単体テストの記述](writing-unit-tests-for-c-cpp.md)

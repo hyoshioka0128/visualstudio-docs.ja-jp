@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633721"
 ---
 # <a name="incremental-builds"></a>インクリメンタル ビルド
@@ -52,7 +52,7 @@ MSBuild は、ターゲットの `Inputs` 属性と `Outputs` 属性を比較し
 
 - ターゲットに古い出力がなく、ターゲットがスキップされる場合。 MSBuild はターゲットを評価し、ターゲットが実行された場合と同じように項目とプロパティを変更します。
 
-インクリメンタル コンパイルをサポートするために、タスクでは `TaskParameter` 要素の `Output` 属性値がタスク入力パラメーターと等しいことを確認する必要があります。 次にいくつかの例を示します。
+インクリメンタル コンパイルをサポートするために、タスクでは `TaskParameter` 要素の `Output` 属性値がタスク入力パラメーターと等しいことを確認する必要があります。 次に例をいくつか示します。
 
 ```xml
 <CreateProperty Value="123">
@@ -78,6 +78,6 @@ MSBuild 3.5 以前では、[CreateItem](../msbuild/createitem-task.md) タスク
 
 このコードにより、ターゲットが実行された場合にのみ、CompileRan プロパティが作成され、値 `true` が指定されます。 ターゲットがスキップされた場合、CompileRan は作成されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ターゲット](../msbuild/msbuild-targets.md)

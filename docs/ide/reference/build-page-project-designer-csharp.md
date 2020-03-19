@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76923266"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
@@ -34,7 +34,7 @@ ms.locfileid: "76923266"
 次のオプションを使用すると、表示または変更する構成およびプラットフォームを選択できます。
 
 > [!NOTE]
-> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、これらのオプションは表示されません。 詳細については、[デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
+> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、これらのオプションは表示されません。 詳細については、「[方法: デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
 
 **構成**
 
@@ -42,7 +42,7 @@ ms.locfileid: "76923266"
 
 **プラットフォーム**
 
-表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、[構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。
+表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、「[How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。
 
 ## <a name="general"></a>全般
 
@@ -94,7 +94,7 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 コンパイラで実行する最適化を有効または無効にします。最適化を実行すると、出力ファイルのサイズが小さくなり、速度と効率が向上します。 詳しくは、「[/optimize (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)」をご覧ください。
 
-## <a name="errors-and-warnings"></a>エラーと警告
+## <a name="errors-and-warnings"></a>エラーおよび警告
 
 ビルド処理におけるエラーおよび警告のオプションの構成には、次の設定が使用されます。
 
@@ -123,7 +123,7 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 次の設定は、ビルド処理の出力オプションを構成するために使用します。
 
-**出力パス**
+**[出力パス]**
 
 このプロジェクト構成の出力ファイルの場所を指定します。 このボックスにビルド出力のパスを入力するか、 **[参照]** をクリックし、パスを指定します。 このパスは相対パスです。絶対パスを入力しても、相対パスとして保存されます。 既定のパスは bin\Debug または bin\Release\\ です。
 
@@ -135,17 +135,17 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 **COM の相互運用機能に登録**
 
-マネージド アプリケーションにより、COM オブジェクトがマネージド アプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) が公開されることを示します。 **[COM 相互運用機能の登録]** プロパティを使用できるようにするには、このアプリケーションの**プロジェクト デザイナー**の [[アプリケーション]](../../ide/reference/application-page-project-designer-visual-basic.md) ページで **[出力の種類]** プロパティを **[クラス ライブラリ]** に設定する必要があります。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] アプリケーションに追加して、COM オブジェクトとして公開するクラスの例については、「[Example COM Class](/dotnet/csharp/programming-guide/interop/example-com-class)」(COM クラスの例) を参照してください。
+マネージド アプリケーションにより、COM オブジェクトがマネージド アプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) が公開されることを示します。 **[COM 相互運用機能の登録]** プロパティを使用できるようにするには、このアプリケーションの[プロジェクト デザイナー](../../ide/reference/application-page-project-designer-visual-basic.md)の **[アプリケーション]** ページで **[出力の種類]** プロパティを **[クラス ライブラリ]** に設定する必要があります。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] アプリケーションに追加して、COM オブジェクトとして公開するクラスの例については、「[Example COM Class](/dotnet/csharp/programming-guide/interop/example-com-class)」(COM クラスの例) を参照してください。
 
 **シリアル化アセンブリの生成**
 
 コンパイラが XML シリアライザー ジェネレーター ツール (Sgen.exe) を使用して XML シリアル化アセンブリを作成するかどうかを指定します。 コード内で型をシリアル化するために <xref:System.Xml.Serialization.XmlSerializer> クラスを使用している場合は、シリアル化アセンブリによってそのクラスの起動効率を改善できます。 既定では、このオプションは **[自動]** に設定されています。これは、コード内の型を XML にエンコードするために <xref:System.Xml.Serialization.XmlSerializer> を使用している場合にのみシリアル化アセンブリを生成することを指定します。 **[オフ]** は、コードで <xref:System.Xml.Serialization.XmlSerializer> を使用するかどうかに関係なく、シリアル化アセンブリを生成しないことを指定します。 **[オン]** の場合、シリアル化アセンブリが必ず生成されます。 シリアル化アセンブリには、`TypeName`.XmlSerializers.dll のように名前が付けられます。 詳細については、「[XML シリアライザー ジェネレーター ツール (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)」を参照してください。
 
-**詳細設定**
+**詳細**
 
 クリックすると、[[ビルドの詳細設定] ダイアログ ボックス (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) ダイアログ ボックスが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)

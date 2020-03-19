@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594228"
 ---
 # <a name="use-the-task-list"></a>タスク一覧の使用
@@ -42,7 +42,7 @@ ms.locfileid: "75594228"
 
 列の順序を変更するには、列のヘッダーを目的の場所にドラッグします。
 
-## <a name="user-tasks"></a>ユーザー タスク
+## <a name="user-tasks"></a>ユーザーの作業
 
 Visual Studio 2015 では、ユーザー タスク機能が削除されています。 Visual Studio 2013 以前のバージョンからのユーザー タスク データを含むソリューションを開くと、 *.suo* ファイル内のユーザー タスク データは影響を受けませんが、ユーザー タスクはタスク一覧に表示されません。
 
@@ -73,7 +73,7 @@ Visual Studio 2015 では、ユーザー タスク機能が削除されていま
 
 カスタム トークンを作成するには:
 
-1. **[ツール]** メニューの **[オプション]** をクリックします。
+1. **[ツール]** メニューの **[オプション]** を選択します。
 
 2. **[環境]** フォルダーを開き、 **[タスク一覧]** をクリックします。
 
@@ -108,7 +108,7 @@ C++ の TODO コメントをオフにするには、 **[ツール]** メニュ�
 
 コード内のショートカットをナビゲートしていくには、一覧でショートカットを選択し、ショートカット メニューから **[次のタスク]** か **[前のタスク]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[タスク一覧] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/task-list-environment-options-dialog-box.md)
 - [タスク コメント (Visual Studio for Mac)](/visualstudio/mac/task-comments)

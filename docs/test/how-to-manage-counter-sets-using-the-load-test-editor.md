@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113428"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してカウンター セットを管理する
@@ -25,7 +25,7 @@ ms.locfileid: "76113428"
 **新しいロード テスト ウィザード**でロード テストを作成するときに、初期カウンター セットを追加します。 これらによって、定義済みのカウンター セットがロード テスト用に提供されます。
 
 > [!NOTE]
-> ロード テストを複数のリモート コンピューターに分散する場合、コントローラーとエージェント カウンターが、コントローラーとエージェント カウンター セットに割り当てられます。 ロード テストでリモート コンピューターを使用する方法の詳細については、「[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)」を参照してください。
+> ロード テストを複数のリモート コンピューターに分散する場合、コントローラーとエージェント カウンターが、コントローラーとエージェント カウンター セットに割り当てられます。 ロード テストでリモート コンピューターを使用する方法の詳細については、[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)に関するページを参照してください。
 
 カウンター セットの管理では、パフォーマンス データの収集元となるコンピューター セットの選択や、個々のコンピューターから収集するカウンター セットの割り当てなどを行います。 カウンターは、**ロード テスト エディター**で管理します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "76113428"
 
 6. **[OK]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

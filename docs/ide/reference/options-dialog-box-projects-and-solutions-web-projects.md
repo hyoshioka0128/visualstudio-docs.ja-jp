@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114482"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
@@ -33,7 +33,7 @@ ms.locfileid: "76114482"
 
 このオプションが設定されているときは、Web アプリケーションをエラーなしでコンパイルできなかった場合にそのアプリケーションを実行しようとすると警告が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]](projects-and-solutions-options-dialog-box.md)
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](options-dialog-box-projects-and-solutions-web-projects.md)

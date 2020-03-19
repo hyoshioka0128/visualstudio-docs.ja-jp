@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275443"
 ---
 # <a name="warnings-and-errors"></a>警告とエラー
@@ -65,7 +65,7 @@ IntelliTest は、[入力生成](input-generation.md)中に探索する実行パ
 for (int i=0; i<100; i++) { }
 ```
 
-[PexClass](attribute-glossary.md#pexclass) や [PexMethod](attribute-glossary.md#pexmethod) などの **PexSettingsAttributeBase** から派生した属性の **MaxBranches** オプションを編集することができます。 次の例では、この上限は実質的になくなります。
+**PexClass** や **PexMethod** などの [PexSettingsAttributeBase](attribute-glossary.md#pexclass) から派生した属性の [MaxBranches](attribute-glossary.md#pexmethod) オプションを編集することができます。 次の例では、この上限は実質的になくなります。
 
 ```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-[PexClass](attribute-glossary.md#pexclass) や [PexMethod](attribute-glossary.md#pexmethod) などの **PexSettingsAttributeBase** から派生した属性の **MaxConditions** オプションを編集することができます。 次に例を示します。
+**PexClass** や **PexMethod** などの [PexSettingsAttributeBase](attribute-glossary.md#pexclass) から派生した属性の [MaxConditions](attribute-glossary.md#pexmethod) オプションを編集することができます。 次に例を示します。
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -145,7 +145,7 @@ IntelliTest は、[入力生成](input-generation.md)中に探索する実行パ
 
 実行および監視されるコードの各呼び出し (直接、間接、仮想、またはジャンプ) がこの上限に達するまでカウントされます。
 
-[PexClass](attribute-glossary.md#pexclass) や [PexMethod](attribute-glossary.md#pexmethod) などの **PexSettingsAttributeBase** から派生した属性の **MaxCalls** オプションを編集することができます。 次の例では、この上限は実質的になくなります。
+**PexClass** や **PexMethod** などの [PexSettingsAttributeBase](attribute-glossary.md#pexclass) から派生した属性の [MaxCalls](attribute-glossary.md#pexmethod) オプションを編集することができます。 次の例では、この上限は実質的になくなります。
 
 ```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
@@ -161,7 +161,7 @@ public void MyTest(...) {
 
 IntelliTest は、[入力生成](input-generation.md)中に探索する実行パスの呼び出し履歴のサイズを制限します。 この機能により、スタック オーバーフローが発生したときに IntelliTest が終了することを防止します。
 
-[PexClass](attribute-glossary.md#pexclass) や [PexMethod](attribute-glossary.md#pexmethod) などの **PexSettingsAttributeBase** から派生した属性の **MaxStack** オプションを編集することができます。 次の例では、この上限は実質的になくなります (推奨されません)。
+**PexClass** や **PexMethod** などの [PexSettingsAttributeBase](attribute-glossary.md#pexclass) から派生した属性の [MaxStack](attribute-glossary.md#pexmethod) オプションを編集することができます。 次の例では、この上限は実質的になくなります (推奨されません)。
 
 ```csharp
 [PexMethod(MaxStack=int.MaxValue)]
@@ -179,7 +179,7 @@ IntelliTest は、[入力生成](input-generation.md)中に探索する実行パ
 
 IntelliTest が特定の入力を持つパラメーター化されたテストを実行するたびに新しいテストケースを発行するとは限りません。 詳細については、[TestEmissionFilter](exploration-bounds.md#testemissionfilter) を参照してください。
 
-[PexClass](attribute-glossary.md#pexclass) や [PexMethod](attribute-glossary.md#pexmethod) などの **PexSettingsAttributeBase** から派生した属性の **MaxRuns** オプションを編集することができます。 次の例では、この上限は実質的になくなります (推奨されません)。
+**PexClass** や **PexMethod** などの [PexSettingsAttributeBase](attribute-glossary.md#pexclass) から派生した属性の [MaxRuns](attribute-glossary.md#pexmethod) オプションを編集することができます。 次の例では、この上限は実質的になくなります (推奨されません)。
 
 ```csharp
 [PexMethod(MaxRuns=2000)]
@@ -197,7 +197,7 @@ IntelliTest が特定の入力を持つパラメーター化されたテスト�
 
 IntelliTest は多くの場合、多くの興味深いテスト入力を最初に検出しますが、しばらくすると、テストを発行しなくなる場合があります。 このオプションは、別の関連するテスト入力を見つけるための再試行を IntelliTest で続ける時間の長さを制御します。
 
-[PexClass](attribute-glossary.md#pexclass) や [PexMethod](attribute-glossary.md#pexmethod) などの **PexSettingsAttributeBase** から派生した属性の **MaxRunsWithoutNewTests** オプションを編集することができます。 次の例では、この上限は実質的になくなります (推奨されません)。
+**PexClass** や **PexMethod** などの [PexSettingsAttributeBase](attribute-glossary.md#pexclass) から派生した属性の [MaxRunsWithoutNewTests](attribute-glossary.md#pexmethod) オプションを編集することができます。 次の例では、この上限は実質的になくなります (推奨されません)。
 
 ```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
@@ -301,9 +301,9 @@ IntelliTest は、プログラムの実行を監視することによって[テ�
 この警告は、テスト ケースの実行中に、非確定的に動作するか環境と対話するメソッドが呼び出されたために表示されます。 例として、メソッド **System.Random** や **System.IO.File** があります。 IntelliTest で意味のあるテスト入力を作成する場合は、IntelliTest でテストの容易性の問題としてフラグを付けられたメソッドを模擬表示する必要があります。
 
 <a name="limitation"></a>
-## <a name="limitation"></a>制限
+## <a name="limitation"></a>制限事項
 
-IntelliTest は、[制約ソルバー](input-generation.md#constraint-solver)を使用して[テスト入力を生成します](input-generation.md)。
+IntelliTest は、[制約ソルバー](input-generation.md)を使用して[テスト入力を生成します](input-generation.md#constraint-solver)。
 ただし、[制約ソルバー](input-generation.md#constraint-solver)の範囲を超えているいくつかの操作があります。
 現在次の操作が含まれます。
 
@@ -342,6 +342,6 @@ IntelliTest は、単体テストが確定的である場合のみ (言い換え
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

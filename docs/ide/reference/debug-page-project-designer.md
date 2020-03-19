@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595723"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
@@ -82,10 +82,10 @@ Visual Basic または C# プロジェクトのデバッグ動作のプロパテ
 
 Visual Basic アプリケーションから SQL プロシージャのデバッグを有効または無効にする場合は、このチェック ボックスをオンまたはオフにします。 既定では、このチェック ボックスはオフです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [デバッガーでのはじめに](../../debugger/debugger-feature-tour.md)
 - [C# デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)
+- [方法 : アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [方法 : 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

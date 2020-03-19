@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591997"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio での双方向言語のサポート
@@ -74,7 +74,7 @@ Visual Studio は Unicode をサポートしているため、システムで適
 
 ### <a name="file-encoding"></a>ファイルのエンコード
 
-言語固有のエンコーディングまたは Unicode エンコーディングでファイルを保存したり開いたりすることができます。 詳細については、[エンコーディングを使用してファイルを保存および開く](../ide/how-to-save-and-open-files-with-encoding.md)」を参照してください。
+言語固有のエンコーディングまたは Unicode エンコーディングでファイルを保存したり開いたりすることができます。 詳しくは、「[方法 : エンコーディングを使用してファイルを保存および開く](../ide/how-to-save-and-open-files-with-encoding.md)」をご覧ください。
 
 ## <a name="right-to-left-reading-order"></a>右から左への読み取り順序
 
@@ -86,6 +86,6 @@ Visual Studio での右から左への読み上げ順序のサポートには制
 
 - コード エディター (およびテキスト エディター) では、右から左への読み取り順序がサポートされていません。 双方向言語でテキストを入力することはできますが、読み取り順序は常に左から右です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [グローバル化およびローカライズされたアプリの開発](globalizing-and-localizing-applications.md)

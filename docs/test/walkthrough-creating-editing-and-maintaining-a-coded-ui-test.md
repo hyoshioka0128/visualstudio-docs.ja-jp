@@ -8,13 +8,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592062"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>チュートリアル: コード化された UI テストの作成、編集、保守
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>チュートリアル: コード化された UI テストの作成、編集、管理
 
 このチュートリアルでは、Windows Presentation Framework (WPF) アプリをテストするためのコード化された UI テストの作成、編集、および保守方法について説明します。 また、さまざまなタイミングの問題やコントロールのリファクタリングによって機能が損なわれたテストを修正するための解決策を示します。
 
@@ -123,7 +123,7 @@ ms.locfileid: "75592062"
 
 1. **[UIMap - コード化された UI テスト ビルダー]** ダイアログで **[記録の開始]** を選択します。
 
-     ![記録の開始](../test/media/cuit_builder_record.png)
+     ![録画を開始して](../test/media/cuit_builder_record.png)
 
      受信メールを処理する場合など、必要に応じて記録を一時停止できます。
 
@@ -192,7 +192,7 @@ ms.locfileid: "75592062"
 
 8. Microsoft Visual Studio のダイアログ ボックスが表示されます。 警告で、メソッドが *UIMap.uitest* ファイルから *UIMap.cs* ファイルへ移動すること、およびコード化された UI テスト エディターを使用してメソッドを編集できなくなることが表示されます。 **[はい]** をクリックします。
 
-     テスト メソッドが *UIMap.uitest* ファイルから削除され、[UI 操作] ペインに表示されなくなります。 移動したテスト ファイルを編集するには、**ソリューション エクスプローラー**から *UIMap.cs* ファイルを開きます。
+     テスト メソッドが *UIMap.uitest* ファイルから削除され、[UI 操作] ペインに表示されなくなります。 移動したテスト ファイルを編集するには、*ソリューション エクスプローラー*から **UIMap.cs** ファイルを開きます。
 
 9. Visual Studio ツール バーで **[保存]** を選択します。
 
@@ -314,7 +314,7 @@ ms.locfileid: "75592062"
 
      これで、コード化された UI テストを変更して、新しくマップされたコントロールを使用できます。 前の手順で説明したように、コード化された UI テストのメソッドまたはプロパティをオーバーライドする場合は、*UIMap.cs* ファイルで実行する必要があります。
 
-12. *UIMap.cs* ファイルで、コンストラクターを追加し、値として `"buttonA":` を指定した `AutomationID` プロパティを使用するように、`SearchProperties` プロパティの `UIStartButton` プロパティを指定します。
+12. *UIMap.cs* ファイルで、コンストラクターを追加し、値として `SearchProperties` を指定した `UIStartButton` プロパティを使用するように、`AutomationID` プロパティの `"buttonA":` プロパティを指定します。
 
     ```csharp
     public UIMap()
@@ -333,11 +333,11 @@ ms.locfileid: "75592062"
 
 ![ビデオへのリンク](../data-tools/media/playvideo.gif) [コード化された UI テストの概要](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>よくあるご質問
+## <a name="faq"></a>よく寄せられる質問
 
 [コード化された UI テストの FAQ](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -12,15 +12,15 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027579"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>試用版を延長する、またはライセンスを更新する
 
-[Visual Studio Professional または Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) の無料試用版を 30 日間評価できます。 サインインすると、試用期間を 90 日まで延長できます (Visual Studio Community は無料です。試用期間はありません。 ただし、[ライセンスを常に最新の状態に保つ](#update-a-stale-license)ために、定期的に[サインイン](signing-in-to-visual-studio.md)する必要があります)。
+[Visual Studio Professional または Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) の無料試用版を 30 日間評価できます。 サインインすると、試用期間を 90 日まで延長できます (Visual Studio Community は無料です。試用期間はありません。 ただし、[ライセンスを常に最新の状態に保つ](signing-in-to-visual-studio.md)ために、定期的に[サインイン](#update-a-stale-license)する必要があります)。
 
 試用期間が終了した後も Visual Studio を引き続き使用するには、[オンライン サブスクリプション](#use-an-online-subscription)または[プロダクト キー](#enter-a-product-key)を使用してロックを解除します。
 
@@ -75,7 +75,7 @@ Visual Studio に "ライセンスが古くなったため、更新する必要�
 * [問題の報告](how-to-report-a-problem-with-visual-studio.md)ツールを使用して、製品の問題を報告します。
 * サブスクリプション、アカウント、および課金に関する質問への回答は、[サブスクリプションのサポートに関する FAQ](https://visualstudio.microsoft.com/subscriptions/support/) を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)
 * [Visual Studio の各エディションの比較](https://visualstudio.microsoft.com/vs/compare/)

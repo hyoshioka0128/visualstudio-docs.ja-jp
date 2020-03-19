@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b537d80b8db9150c6804aff2ee3de0e6c879bb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62546727"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio のテンプレートから AI プロジェクトを作成する
@@ -24,7 +24,7 @@ ms.locfileid: "62546727"
 
     ![VS2017 Python テンプレートの [新しいプロジェクト] ダイアログ](media/create-project/new-ai-project.png)
 
-3. このクイック スタートでは、"**TensorFlow アプリケーション**" テンプレートを選択し、("MNIST" などの) プロジェクト名を付け、場所を指定し、**[OK]** を選択します。
+3. このクイック スタートでは、"**TensorFlow アプリケーション**" テンプレートを選択し、("MNIST" などの) プロジェクト名を付け、場所を指定し、 **[OK]** を選択します。
 
 4. Visual Studio によってプロジェクト ファイル (ディスク上に 1 つの `.pyproj` ファイル) と、テンプレートに記述されているその他のファイルが作成されます。 "TensorFlow アプリケーション" テンプレートでは、プロジェクトと同じ名前の 1 つのファイルがプロジェクトに含まれます。 このファイルは、既定で Visual Studio エディタで開きます。
 

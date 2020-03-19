@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596438"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
@@ -40,7 +40,7 @@ ms.locfileid: "75596438"
 
 ![HTML Web ページ ボタン](../../ide/reference/media/vxbutton.gif)
 
-`type="button"` の `input` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Button1"` は最初のボタンに挿入され、`id="Button2"` は 2 番目のボタンという具合に挿入されます。
+`input` の `type="button"` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Button1"` は最初のボタンに挿入され、`id="Button2"` は 2 番目のボタンという具合に挿入されます。
 
 **入力 (ボタン)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "75596438"
 
 ![HTMLpageResetButton スクリーンショット](../../ide/reference/media/vxreset.gif)
 
-`type="reset"` の `input` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Reset1"` は最初のリセット ボタンに挿入され、`id="Reset2"` は 2 番目のリセット ボタンという具合に挿入されます。
+`input` の `type="reset"` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Reset1"` は最初のリセット ボタンに挿入され、`id="Reset2"` は 2 番目のリセット ボタンという具合に挿入されます。
 
 **入力 (リセット)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -64,7 +64,7 @@ ms.locfileid: "75596438"
 
 ![HTMLpageToolbarSubmitButton スクリーンショット](../../ide/reference/media/vxsubmit.gif)
 
-`type="submit"` の `input` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Submit1"` は最初の送信ボタンに挿入され、`id="Submit2"` は 2 番目の送信ボタンという具合に挿入されます。
+`input` の `type="submit"` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Submit1"` は最初の送信ボタンに挿入され、`id="Submit2"` は 2 番目の送信ボタンという具合に挿入されます。
 
 **入力 (送信)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -76,7 +76,7 @@ ms.locfileid: "75596438"
 
 ![HTMLpageToolbarTextField スクリーンショット](../../ide/reference/media/vxtextfield.gif)
 
-ドキュメントに `type="text"` の `input` 要素を挿入します。 表示される既定のテキストを変更するには、`value` 属性を編集します。 既定では、`id="Text1"` は最初のテキスト フィールドに挿入され、`id="Text2"` は 2 番目のテキスト フィールドという具合に挿入されます。
+ドキュメントに `input` の `type="text"` 要素を挿入します。 表示される既定のテキストを変更するには、`value` 属性を編集します。 既定では、`id="Text1"` は最初のテキスト フィールドに挿入され、`id="Text2"` は 2 番目のテキスト フィールドという具合に挿入されます。
 
 **入力 (テキスト)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -91,7 +91,7 @@ ms.locfileid: "75596438"
 
 ![HTML ページ ファイル フィールド](../../ide/reference/media/vxfilefield.gif)
 
-ドキュメントに `type="file"` の `input` 要素を挿入します。 既定では、`id="File1"` は最初のファイル フィールドに挿入され、`id="File2"` は 2 番目のファイル フィールドという具合に挿入されます。
+ドキュメントに `input` の `type="file"` 要素を挿入します。 既定では、`id="File1"` は最初のファイル フィールドに挿入され、`id="File2"` は 2 番目のファイル フィールドという具合に挿入されます。
 
 **入力 (ファイル)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -106,7 +106,7 @@ ms.locfileid: "75596438"
 
 ![Visual Studio パスワード ファイル](../../ide/reference/media/vxpassword.gif)
 
-`type="password"` の `input` 要素を挿入します。 既定では、`id="Password1"` は最初のパスワード フィールドに挿入され、`id="Password2"` は 2 番目のパスワード フィールドという具合に挿入されます。
+`input` の `type="password"` 要素を挿入します。 既定では、`id="Password1"` は最初のパスワード フィールドに挿入され、`id="Password2"` は 2 番目のパスワード フィールドという具合に挿入されます。
 
 **入力 (パスワード)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -121,7 +121,7 @@ ms.locfileid: "75596438"
 
 ![HTML Web ページ ツールボックス チェック ボックス オプション](../../ide/reference/media/vxcheckbox.gif)
 
-`type="checkbox"` の `input` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Checkbox1"` は最初のチェック ボックスに挿入され、`id="Checkbox2"` は 2 番目のチェック ボックスという具合に挿入されます。
+`input` の `type="checkbox"` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Checkbox1"` は最初のチェック ボックスに挿入され、`id="Checkbox2"` は 2 番目のチェック ボックスという具合に挿入されます。
 
 **入力 (チェック ボックス)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -133,7 +133,7 @@ ms.locfileid: "75596438"
 
 ![VisualStudioHTMLpageRadioButton スクリーンショット](../../ide/reference/media/vxradio.gif)
 
-`type="radio"` の `input` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Radio1"` は最初のラジオ ボタンに挿入され、`id="Radio2"` は 2 番目のラジオ ボタンという具合に挿入されます。
+`input` の `type="radio"` 要素を挿入します。 表示されるテキストを変更するには、`name` プロパティを編集します。 既定では、`id="Radio1"` は最初のラジオ ボタンに挿入され、`id="Radio2"` は 2 番目のラジオ ボタンという具合に挿入されます。
 
 **入力 (ラジオ)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -145,7 +145,7 @@ ms.locfileid: "75596438"
 
 ![HTML ページ非表示項目](../../ide/reference/media/vxhidden.gif)
 
-`type="hidden"` の `input` 要素を挿入します。 既定では、`id="Hidden1"` は最初の非表示フィールドに挿入され、`id="Hidden2"` は 2 番目の非表示フィールドという具合に挿入されます。
+`input` の `type="hidden"` 要素を挿入します。 既定では、`id="Hidden1"` は最初の非表示フィールドに挿入され、`id="Hidden2"` は 2 番目の非表示フィールドという具合に挿入されます。
 
 **入力 (非表示)** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -168,7 +168,7 @@ ms.locfileid: "75596438"
 > [!IMPORTANT]
 > すべてのユーザー入力を検証することをお勧めします。 詳細については、「[Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)」(ASP.NET Web ページ (Razor) サイトにおけるユーザー入力の検証) を参照してください。
 
-**テーブル**
+**Table**
 
 ![HTMLpageToolbarTable スクリーンショット](../../ide/reference/media/vxtable.gif)
 
@@ -180,7 +180,7 @@ ms.locfileid: "75596438"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**イメージ**
+**Image**
 
 ![HTML ページ イメージ項目](../../ide/reference/media/vximage.gif)
 
@@ -222,7 +222,7 @@ ms.locfileid: "75596438"
 
 ![HTML ページ ラベル](../../ide/reference/media/vxlabel.gif)
 
-`ms_positioning="FlowLayout"` 属性を含む `div` 要素を挿入します。 幅と高さを除き、この項目はフロー レイアウト パネルと同じです。 `div` 要素内に含まれるテキストを書式設定するには、`class="stylename"` 属性を開始タグに追加します。
+`div` 属性を含む `ms_positioning="FlowLayout"` 要素を挿入します。 幅と高さを除き、この項目はフロー レイアウト パネルと同じです。 `div` 要素内に含まれるテキストを書式設定するには、`class="stylename"` 属性を開始タグに追加します。
 
 **Div** をデザイン ビュー サーフェイスにドラッグすると、次のように HTML マークアップがドキュメントに挿入されます。
 
@@ -230,6 +230,6 @@ ms.locfileid: "75596438"
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ツールボックス](../../ide/reference/toolbox.md)

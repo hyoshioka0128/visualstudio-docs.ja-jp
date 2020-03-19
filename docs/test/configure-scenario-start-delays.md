@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111477"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>ロード テストのシナリオ開始時刻の遅延を構成する
@@ -81,9 +81,9 @@ ms.locfileid: "76111477"
 
      **[ウォームアップ時に無効化]** プロパティで、 **[True]** または **[False]** を選択します。
 
-4. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[ウォームアップ時に無効化]** の値を使用して、ロード テストを実行します。
+4. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[ウォームアップ時に無効化]** の値を使用して、ロード テストを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
 - [ロード テストのためのテスト エージェントおよびテスト コントローラーの構成](../test/configure-test-agents-and-controllers-for-load-tests.md)

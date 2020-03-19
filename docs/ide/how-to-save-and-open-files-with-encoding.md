@@ -1,5 +1,5 @@
 ---
-title: '方法: エンコーディングを使用してファイルを保存および開く'
+title: '方法 : エンコーディングを使用してファイルを保存および開く'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596178"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>方法: エンコーディングを使用してファイルを保存および開く
+# <a name="how-to-save-and-open-files-with-encoding"></a>方法 : エンコーディングを使用してファイルを保存および開く
 
 双方向言語をサポートするために、特定の文字エンコーディングを使用してファイルを保存できます。 また、Visual Studio でファイルが正しく開かれるように、ファイルを開くときにもエンコーディングを指定できます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "75596178"
 
 3. 前の手順の 2. と 3. を実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [エンコーディングと改行](encodings-and-line-breaks.md)
 - [エンコード方式および Windows フォームのグローバリゼーション](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

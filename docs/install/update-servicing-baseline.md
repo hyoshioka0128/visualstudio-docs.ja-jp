@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114961"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>サービス ベースライン使用時の Visual Studio の更新
@@ -44,7 +44,7 @@ Visual Studio は、製品のライフサイクルの間に頻繁に更新され
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>ネットワーク上のサービス ベースラインをインストールする
 
-ネットワーク レイアウト インストールを使う管理者は、レイアウトの *response.json* ファイルの `channelUri` の値を変更して、同じフォルダー内にある *channelmanifest.json* ファイルを使うようにする必要があります。 従う手順については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 `channelUri` の値を変更すると、クライアントがレイアウトの場所で更新プログラムを検索できるようになります。
+ネットワーク レイアウト インストールを使う管理者は、レイアウトの `channelUri`response.json*ファイルの* の値を変更して、同じフォルダー内にある *channelmanifest.json* ファイルを使うようにする必要があります。 従う手順については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 `channelUri` の値を変更すると、クライアントがレイアウトの場所で更新プログラムを検索できるようになります。
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>インターネット経由でサービス ベースラインをインストールする
 
@@ -80,7 +80,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のインストール](install-visual-studio.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

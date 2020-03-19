@@ -1,5 +1,5 @@
 ---
-title: プロジェクトを作成する
+title: プロジェクトの作成
 description: Azure Machine Learning ギャラリーのサンプルを使ってプロジェクトを作成します
 keywords: AI, Visual Studio, Azure Machine Learning
 author: lisawong19
@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915897"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio で Azure Machine Learning ギャラリーから AI プロジェクトを作成する
@@ -31,7 +31,7 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 
 2. サーバー エクスプローラーで **[Azure Machine Learning]** ノードを右クリックし、 **[ログイン]** を選択して指示に従い、Azure Machine Learning サブスクリプションにサインインします。
 
-    ![ログイン](media/create-project-gallery/azureml-login.png)
+    ![ログイン (login)](media/create-project-gallery/azureml-login.png)
 
 3. **[AI Tools]\(AI Tools\)、[Azure Machine Learning Sample Gallery]\(Azure Machine Learning サンプル ギャラリー\)** の順に選びます。
 
@@ -39,13 +39,13 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 
 4. このクイック スタートでは "**MNIST using TensorFlow**" サンプルを選び、 **[インストール]** をクリックします。 次の内容を指定します。
 
-   - **リソース グループ**:メタデータを格納する Azure リソース グループ
-   - **アカウント**:Azure Machine Learning の実験アカウント
-   - **ワークスペース**:Azure Machine Learning のワークスペース
-   - **プロジェクトの種類**:機械学習のフレームワーク。 この例では、 **[TensorFlow]** を選びます。
+   - **リソース グループ**: メタデータを格納する Azure リソース グループ
+   - **アカウント**: Azure Machine Learning の実験アカウント
+   - **ワークスペース**: Azure Machine Learning のワークスペース
+   - **プロジェクトの種類**: 機械学習のフレームワーク。 この例では、 **[TensorFlow]** を選びます。
    - **ソリューションに追加**: 現在の Visual Studio ソリューションに追加するか、新しいソリューションを作成して開くかを指定します。
-   - **プロジェクトのパス**:コードを保存する場所
-   - **プロジェクト名**:「**TensorFlowMNIST**」と入力します。
+   - **プロジェクトのパス**: コードを保存する場所
+   - **プロジェクト名**: 「**TensorFlowMNIST**」と入力します。
 
    ![Python アプリケーション テンプレートを使用した結果のプロジェクト](media/create-project-gallery/new-AzureSampleProject.png)
 

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62956813"
 ---
 # <a name="use-pylint-to-check-python-code"></a>PyLint を使用した Python コードのチェック
@@ -23,7 +23,7 @@ Visual Studio for Python プロジェクトには [PyLint](https://www.pylint.or
 
 ## <a name="run-pylint"></a>PyLint の実行
 
-**ソリューション エクスプローラー**で Python プロジェクトを右クリックし、**[Python]** > **[PyLint の実行]** の順に選択するだけです。
+**ソリューション エクスプローラー**で Python プロジェクトを右クリックし、 **[Python]**  >  **[PyLint の実行]** の順に選択するだけです。
 
 ![Python プロジェクトのコンテキスト メニューに表示された PyLint コマンド](media/code-pylint-command.png)
 
@@ -40,21 +40,21 @@ PyLint の警告とエラーが **[エラー一覧]** ウィンドウに表示�
 
 ## <a name="set-pylint-command-line-options"></a>PyLint コマンド ライン オプションの設定
 
-PyLint ドキュメントの[コマンド ライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)のセクションでは、*.pylintrc* 構成ファイルを使用して PyLint の動作を制御する方法が説明されています。 このようなファイルは Visual Studio 内の Python プロジェクトのルートに配置するか、設定を適用したい範囲に応じて他の場所に配置します (詳しくは、[コマンドライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)に関するページをご覧ください)。
+PyLint ドキュメントの[コマンド ライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)のセクションでは、 *.pylintrc* 構成ファイルを使用して PyLint の動作を制御する方法が説明されています。 このようなファイルは Visual Studio 内の Python プロジェクトのルートに配置するか、設定を適用したい範囲に応じて他の場所に配置します (詳しくは、[コマンドライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)に関するページをご覧ください)。
 
 たとえば、前の画像に表示されている "docstring が見つかりません" という警告がプロジェクト内の *.pylintrc* ファイルに対して表示されないようにするには、次の手順を実行します。
 
-1. コマンド ラインで、プロジェクトのルート (*.pyproj* ファイルが含まれる) に移動し、次のコマンドを実行してコメント付きの構成ファイルを生成します。
+1. コマンド ラインで、プロジェクトのルート ( *.pyproj* ファイルが含まれる) に移動し、次のコマンドを実行してコメント付きの構成ファイルを生成します。
 
    ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. Visual Studio のソリューション エクスプローラーでプロジェクトを右クリックし、**[追加]** > **[既存の項目]** を選択します。新しい *.pylintrc* ファイルを見つけて選択し、**[追加]** を選択します。
+1. Visual Studio のソリューション エクスプローラーでプロジェクトを右クリックし、 **[追加]**  >  **[既存の項目]** を選択します。新しい *.pylintrc* ファイルを見つけて選択し、 **[追加]** を選択します。
 
 1. ファイルを編集のために開くと、操作できる各種の設定が表示されます。 警告を無効にするには、`[MESSAGES CONTROL]` セクションを探し、そのセクションの `disable` 設定を見つけます。 特定のメッセージからなる長い文字列が表示されます。ここに目的の警告を追加できます。 この例では、`,missing-docstring` (区切りコンマを含む) を追加します。
 
 1. *.pylintrc* ファイルを保存し、PyLint をもう一度実行して、警告が表示されなくなったことを確認します。
 
 > [!Tip]
-> ネットワーク共有から *.pylintrc* ファイルを使用するには、「`PYLINTRC`」という名前の環境変数を作成します。ネットワーク共有のファイル名の値には、UNC パスまたはマッピングされたドライブ文字を使用します。 たとえば、`PYLINTRC=\\myshare\python\.pylintrc` のようにします。
+> ネットワーク共有から *.pylintrc* ファイルを使用するには、「`PYLINTRC`」という名前の環境変数を作成します。ネットワーク共有のファイル名の値には、UNC パスまたはマッピングされたドライブ文字を使用します。 たとえば、「 `PYLINTRC=\\myshare\python\.pylintrc` 」のように入力します。

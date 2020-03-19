@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595658"
 ---
-# <a name="evaluate-statement-command"></a>Evaluate Statement コマンド
+# <a name="evaluate-statement-command"></a>ステートメントの評価コマンド
 
 指定したステートメントを評価し、表示します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "75595658"
 
 `text`
 
-必須です。 評価するステートメント。
+必須。 評価するステートメント。
 
 ## <a name="example"></a>例
 
@@ -42,10 +42,10 @@ ms.locfileid: "75595658"
 >Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Print コマンド](../../ide/reference/print-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

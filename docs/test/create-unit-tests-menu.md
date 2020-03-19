@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75844316"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>[単体テストの作成] コマンドを使用した単体テスト メソッド スタブの作成
@@ -31,7 +31,7 @@ ms.locfileid: "75844316"
 
 **[単体テストの作成]** メニュー コマンドは拡張可能であり、MSTest、MSTest V2、NUnit、xUnit 用のテストを生成するために使用できます。
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 作業を始めるには、テストするプロジェクトのコード エディターでメソッド、型、または名前空間を選択し、右クリックして、 **[単体テストの作成]** を選択します。 **[単体テストの作成]** ダイアログが開き、テストの作成方法を構成することができます。
 
@@ -56,7 +56,7 @@ NUnit または xUnit 用の単体テストを自動的に生成するには、V
 
 ただし、この機能は、開発者がコードを記述し、それを使用して単体テストをブートストラップするときも、同様に適用されます。 コーディングのフロー内で、開発者はコードの特定部分の (テスト クラスとテスト プロジェクトが適切な) 単体テスト メソッド スタブをすばやく作成できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - ["単体テストの作成" をする単体テスト メソッド スタブの作成](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [単体テストのブログ投稿](https://devblogs.microsoft.com/devops/?s=unit+testing)

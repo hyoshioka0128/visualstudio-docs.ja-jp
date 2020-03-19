@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263107"
 ---
 # <a name="parameter-element"></a>Parameter 要素
@@ -44,19 +44,19 @@ ms.locfileid: "78263107"
 
 ### <a name="attributes"></a>属性
 
-|属性|説明|
+|属性|[説明]|
 |---------------|-----------------|
 |`ParameterType`|省略可能な属性です。<br /><br /> パラメーターの .NET 型です (`System.String` など)。|
-|`Output`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの出力パラメーターです。 既定では、値は `false` です。|
-|`Required`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの必須パラメーターです。 既定では、値は `false` です。|
+|`Output`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの出力パラメーターです。 既定値は `false` です。|
+|`Required`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの必須パラメーターです。 既定値は `false` です。|
 
 ### <a name="child-elements"></a>子要素
 
- なし。
+ ありません。
 
 ### <a name="parent-elements"></a>親要素
 
-|要素|説明|
+|要素|[説明]|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|`UsingTask` `TaskFactory` によって生成されるタスクで使用される省略可能なパラメーターのリストが格納されます。|
 
@@ -77,7 +77,7 @@ ms.locfileid: "78263107"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

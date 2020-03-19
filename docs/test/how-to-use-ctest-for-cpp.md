@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826524"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Visual Studio 2017 以降で C++ 用の CTest を使用する方法
@@ -34,6 +34,6 @@ CTest は**テスト エクスプローラー**に完全に統合され、Google
 
 CTest を使用するが、Google アダプターまたは Boost アダプターを使用していない場合、結果は、個別のテスト方法レベルではなく、CTest レベルで表示されます。 CTest 専用実行可能ファイルのデバッグとステップ実行を行うことができますが、個々のテストのスタック トレースはサポートされません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C/C++ 用の単体テストの記述](writing-unit-tests-for-c-cpp.md)

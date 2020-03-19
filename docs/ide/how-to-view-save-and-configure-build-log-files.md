@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114469"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
@@ -46,16 +46,16 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>ビルド ログに含める情報の量を変更するには
 
-1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
+1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
 2. **[プロジェクトおよびソリューション]** ページで、 **[ビルド/実行]** ページを選択します。
 
 3. **[MSBuild プロジェクト ビルドの出力の詳細]** の一覧で、次の値のいずれかを選択し、 **[OK]** ボタンを選択します。
 
-    |詳細レベル|説明|
+    |詳細レベル|[説明]|
     | - |-----------------|
     |**非表示**|ビルドの概要のみを表示します。|
-    |**最小限**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、メッセージを表示します。|
+    |**最小**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、メッセージを表示します。|
     |**標準**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、およびメッセージと、ビルドの主なステップとを表示します。 この詳細レベルを最も頻繁に使用します。|
     |**詳細**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、およびメッセージと、ビルドのすべてのステップと、標準的な重要度として分類されたメッセージとを表示します。|
     |**診断**|ビルドで使用できるすべてのデータを表示します。 このレベルの詳細は、カスタム ビルド スクリプトの問題およびその他のビルドの問題をデバッグする場合に役に立ちます。|
@@ -69,7 +69,7 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 バイナリ ログは .NET プロジェクトのオプション機能です。これにより、ログ参照のエクスペリエンスが向上し、大きなログで情報を見つけやすくなります。 バイナリ ログを使用するには、[Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools) をインストールします。 詳細については、[https://msbuildlog.com](https://msbuildlog.com) および[バイナリ ログ](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)に関する記事を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

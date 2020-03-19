@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e7f79e04cc9afb4238c9f6292a99da684066a7d5
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632863"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>.NET Framework の拡張機能の登録
@@ -30,8 +30,8 @@ ms.locfileid: "77632863"
 > [!NOTE]
 > .NET Framework のビルド番号は異なる場合があります。
 
- 32 ビット アセンブリを 64 ビット コンピューターに登録するには、Wow6432 ノードを使用します (例:**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\** )。
+ 32 ビット アセンブリを 64 ビット コンピューターに登録するには、Wow6432 ノードを使用します (例: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\** )。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 
 - [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md)

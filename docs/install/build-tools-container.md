@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114610"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools をコンテナーにインストールする
@@ -28,7 +28,7 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
 
 ご自分のソース コードのビルドに必要な機能が Visual Studio Build Tools にない場合は、他の Visual Studio 製品に対して同じ手順を使うことができます。 ただし、Windows コンテナーは対話型のユーザー インターフェイスをサポートしていないため、すべてのコマンドを自動化する必要があることに注意してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 以下では、[Docker](https://www.docker.com/what-docker) に関するある程度の知識をお持ちであることが想定されています。 Windows 上での Docker の実行にまだ慣れていない場合は、[Windows 上での Docker エンジンのインストールと構成](/virtualization/windowscontainers/manage-docker/configure-docker-daemon)方法をご確認ください。
 
@@ -192,7 +192,7 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [コンテナーの高度な例](advanced-build-tools-container.md)
 * [コンテナーの既知の問題](build-tools-container-issues.md)

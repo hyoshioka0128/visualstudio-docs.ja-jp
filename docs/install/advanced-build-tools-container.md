@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b0a88815c4a2853270b539a3e012297b681af62e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114942"
 ---
 # <a name="advanced-example-for-containers"></a>コンテナーの高度な例
@@ -169,7 +169,7 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 
 ::: moniker-end
 
-必要に応じて、`--build-arg` コマンド ライン スイッチを使用し、`FROM_IMAGE` 引数と `CHANNEL_URL` 引数のどちらか一方または両方を渡して、別の基本イメージ、または固定イメージを維持するための内部レイアウトの場所を指定します。
+必要に応じて、`FROM_IMAGE` コマンド ライン スイッチを使用し、`CHANNEL_URL` 引数と `--build-arg` 引数のどちらか一方または両方を渡して、別の基本イメージ、または固定イメージを維持するための内部レイアウトの場所を指定します。
 
 ## <a name="diagnosing-install-failures"></a>インストールの失敗の診断
 
@@ -211,7 +211,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [コンテナーにビルド ツールをインストールする](build-tools-container.md)
 * [コンテナーの既知の問題](build-tools-container-issues.md)

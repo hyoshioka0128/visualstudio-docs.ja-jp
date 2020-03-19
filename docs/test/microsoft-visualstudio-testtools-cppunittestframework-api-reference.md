@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278654"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
@@ -183,7 +183,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
-テスト メソッド *testMethodName* に、1 つ以上の `TEST_METHOD_ATTRIBUTE` マクロで定義された属性を追加します。
+テスト メソッド `TEST_METHOD_ATTRIBUTE`testMethodName*に、1 つ以上の* マクロで定義された属性を追加します。
 
 `TEST_METHOD_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
@@ -196,7 +196,7 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
-テスト クラス *testClassName* に、`TEST_CLASS_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
+テスト クラス `TEST_CLASS_ATTRIBUTE`testClassName *に、* の 1 つ以上のマクロで定義された属性を追加します。
 
 `TEST_CLASS_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
@@ -209,7 +209,7 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
-テスト モジュール *testModuleName* に、`TEST_MODULE_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
+テスト モジュール `TEST_MODULE_ATTRIBUTE`testModuleName *に、* の 1 つ以上のマクロで定義された属性を追加します。
 
 `TEST_MODULE_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
@@ -221,31 +221,31 @@ END_TEST_MODULE_ATTRIBUTE()
 TEST_OWNER(ownerAlias)
 ```
 
-名前 `Owner` と属性値 *ownerAlias* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `TEST_METHOD_ATTRIBUTE` と属性値 `Owner`ownerAlias*で* を定義します。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-名前 `Description` と属性値 *description* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `TEST_METHOD_ATTRIBUTE` と属性値 `Description`description*で* を定義します。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-名前 `Priority` と属性値 *priority* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `TEST_METHOD_ATTRIBUTE` と属性値 `Priority`priority*で* を定義します。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-名前 `WorkItem` と属性値 *workItem* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `TEST_METHOD_ATTRIBUTE` と属性値 `WorkItem`workItem*で* を定義します。
 
 ```cpp
 TEST_IGNORE()
 ```
 
-名前 `Ignore` と属性値 `true` で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `TEST_METHOD_ATTRIBUTE` と属性値 `Ignore` で `true` を定義します。
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a> 「例」
+## <a name="example"></a> 例
 以下のコードは VSCppUnit の使用例です。 属性メタデータ、フィクスチャ、アサーションのある単体テスト、およびカスタム ログの例が含まれます。
 
 ```cpp
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コードの単体テスト](../test/unit-test-your-code.md)
 - [C/C++ 用の単体テストの記述](writing-unit-tests-for-c-cpp.md)

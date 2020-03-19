@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591360"
 ---
 # <a name="how-to-update-existing-templates"></a>方法: 既存のテンプレートを更新する
@@ -43,7 +43,7 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 ## <a name="manually-update-an-existing-template"></a>既存のテンプレートを手動で更新する
 
-圧縮された *.zip* ファイル内のファイルを変更することで、**テンプレートのエクスポート ウィザード**を使わずに既存のテンプレートを更新できます。
+圧縮された **.zip** ファイル内のファイルを変更することで、*テンプレートのエクスポート ウィザード*を使わずに既存のテンプレートを更新できます。
 
 ### <a name="to-manually-update-an-existing-template"></a>既存のテンプレートを手動で更新するには
 
@@ -65,7 +65,7 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 1. 抽出したテンプレート ファイルと古いテンプレート *.zip* ファイルを削除します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

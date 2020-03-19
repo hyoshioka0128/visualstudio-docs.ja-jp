@@ -1,5 +1,5 @@
 ---
-title: '方法: 構成を作成および編集する'
+title: '方法 : 構成を作成および編集する'
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -20,13 +20,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114701"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>方法: 構成を作成および編集する
+# <a name="how-to-create-and-edit-configurations"></a>方法 : 構成を作成および編集する
 
 ソリューションに対して、複数のビルド構成を作成することができます。 たとえば、問題を検出して修正するためにテスト担当者が使用できるデバッグ ビルドを構成できます。他にも、多様な顧客に配布できる多様な種類のビルドを構成できます。
 
@@ -118,7 +118,7 @@ ms.locfileid: "76114701"
 
 3. **[プロジェクトのコンテキスト]** ウィンドウで、すべてのプロジェクトに対して、必要な**構成**と**プラットフォーム**を選択し、**ビルド**するかどうかと、**配置**するかどうかを指定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ビルド構成について](../ide/understanding-build-configurations.md)
 - [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

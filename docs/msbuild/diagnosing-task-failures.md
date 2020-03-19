@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593279"
 ---
 # <a name="diagnosing-task-failures"></a>タスク エラーの診断
@@ -49,9 +49,9 @@ Build FAILED.
   S:\MSB6006_demo\MSB6006_demo.csproj(19,5): error MSB6006: "custom tool" exited with code 1.
 ```
 
-この結果は、ファイル `S:\MSB6006_demo\MSB6006_demo.csproj` の 19 行目に定義されているタスクで、プロジェクト `S:\MSB6006_demo\MSB6006_demo.csproj` の `InvokeToolTask` というターゲットで、エラーが発生したことを示しています。
+この結果は、ファイル `S:\MSB6006_demo\MSB6006_demo.csproj` の 19 行目に定義されているタスクで、プロジェクト `InvokeToolTask` の `S:\MSB6006_demo\MSB6006_demo.csproj` というターゲットで、エラーが発生したことを示しています。
 
-### <a name="in-visual-studio"></a>Visual Studio 内
+### <a name="in-visual-studio"></a>Visual Studio で使用する
 
 Visual Studio のエラー一覧の列 `Project`、`File`、`Line` にも同じ情報が表示されます。
 
@@ -61,7 +61,7 @@ Visual Studio のエラー一覧の列 `Project`、`File`、`Line` にも同じ�
 
 通常、正常に動作するツールからは、標準出力またはエラー ストリームに何らかのコンテキスト情報またはエラー情報が出力され、タスクでは既定でこの情報がキャプチャされ、ログに記録されます。 詳細については、エラーが発生する前のログ エントリを確認してください。 この情報を保持するには、場合によっては、より高いログ レベルでビルドを再実行する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 うまく行けば、ログで特定された追加のコンテキストまたはエラーから、問題の根本原因が明らかになります。
 

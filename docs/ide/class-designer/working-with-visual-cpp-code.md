@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596750"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>クラス デザイナーでの C++ コードの使用
@@ -39,14 +39,14 @@ ms.locfileid: "75596750"
 
 - 構造体
 
-- Enum
+- 列挙型
 
 - マクロ (マクロの後処理ビューを表示します)
 
 - Typedef
 
 > [!NOTE]
-> これは、モデリング プロジェクトで作成できる UML クラス図と同じではありません。 詳細については、「[UML Class Diagrams:Reference](../../modeling/what-s-new-for-design-in-visual-studio.md)」(UML クラス図: リファレンス) を参照してください。
+> これは、モデリング プロジェクトで作成できる UML クラス図と同じではありません。 詳細については、「[UML Class Diagrams: Reference](../../modeling/what-s-new-for-design-in-visual-studio.md)」(UML クラス図: リファレンス) を参照してください。
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>型解決および表示の問題のトラブルシューティング
 
@@ -108,7 +108,7 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
 
 - **クラス デザイナー**では、void 型または void 型から派生した型を表示できません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クラスと型のデザインおよび表示](designing-and-viewing-classes-and-types.md)
 - [クラス デザイナーのエラーに関する追加情報](additional-information-about-errors.md)

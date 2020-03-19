@@ -15,10 +15,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558126"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>コマンド ラインからアプリケーションのパフォーマンスを測定する
@@ -27,7 +27,7 @@ ms.locfileid: "77558126"
 
 この記事に記載されている例では、Microsoft メモ帳のパフォーマンス情報を収集しますが、同じ方法を使用して任意のプロセスをプロファイルすることができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * Visual Studio 2019 Preview 3 以降のバージョン
 

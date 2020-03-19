@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633864"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
@@ -126,8 +126,8 @@ ms.locfileid: "77633864"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [項目](../msbuild/msbuild-items.md)
+- [アイテム](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)

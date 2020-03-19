@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535989"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service で Python 環境を設定する方法 (Windows)
@@ -33,7 +33,7 @@ Azure App Service でのカスタマイズ可能な Python のサポートは、
 ## <a name="choose-a-python-version-through-the-azure-portal"></a>Azure Portal から Python のバージョンを選択する
 
 1. Azure ポータルで Web アプリの App Service を作成します。
-1. App Service のページで、**[開発ツール]** セクションまでスクロールし、**[拡張機能]** を選択してから、**[+ 追加]** を選択します。
+1. App Service のページで、 **[開発ツール]** セクションまでスクロールし、 **[拡張機能]** を選択してから、 **[+ 追加]** を選択します。
 1. 必要な Python のバージョンを含む拡張機能まで、一覧を下にスクロールします。
 
     ![Python の拡張機能を示す Azure Portal](media/python-on-azure-extensions.png)
@@ -41,7 +41,7 @@ Azure App Service でのカスタマイズ可能な Python のサポートは、
     > [!Tip]
     > Python の古いバージョンが必要で、サイト拡張機能の一覧にそれが表示されない場合、次のセクションの説明に従って、Azure Resource Manager を介してインストールすることが可能です。
 
-1. 拡張機能を選択し、法的条項に同意して、**[OK]** を選択します。
+1. 拡張機能を選択し、法的条項に同意して、 **[OK]** を選択します。
 1. インストールが完了すると、ポータルに通知が表示されます。
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Azure Resource Manager から Python のバージョンを選択する
@@ -94,13 +94,13 @@ App Service でパスを具体的に確認するには、[App Service] ページ
 
 拡張機能のパスの表示で問題がある場合、コンソールを使用して手動で検索できます。
 
-1. [App Service] ページで、**[開発ツール]** > **[コンソール]** の順に選択します。
+1. [App Service] ページで、 **[開発ツール]**  >  **[コンソール]** の順に選択します。
 1. `ls ../home` または `dir ..\home` のコマンドを入力して、*Python361x64* などの最上位レベルの拡張機能フォルダーを表示します。
 1. `ls ../home/python361x64` または `dir ..\home\python361x64` のようなコマンドを入力して、*python.exe* やその他のインタープリター ファイルが含まれていることを確認します。
 
 ### <a name="configure-the-httpplatform-handler"></a>Httpplatform のハンドラーの構成
 
-HttpPlatform モジュールは、スタンドアロンの Python プロセスに直接ソケット接続を渡します。 このパススルーにより、任意の Web サーバーを実行することができますが、ローカル Web サーバーを実行するスタートアップ スクリプトが必要になります。 スクリプトは、*web.config* の `<httpPlatform>` 要素で指定します。ここで、`processPath` 属性はサイト拡張機能の Python インタープリターをポイントし、`arguments` 属性はスクリプトと指定する任意の引数をポイントします。
+HttpPlatform モジュールは、スタンドアロンの Python プロセスに直接ソケット接続を渡します。 このパススルーにより、任意の Web サーバーを実行することができますが、ローカル Web サーバーを実行するスタートアップ スクリプトが必要になります。 スクリプトは、`<httpPlatform>`web.config*の* 要素で指定します。ここで、`processPath` 属性はサイト拡張機能の Python インタープリターをポイントし、`arguments` 属性はスクリプトと指定する任意の引数をポイントします。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -154,15 +154,15 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
 - `WSGI_HANDLER` はアプリからインポート可能な WSGI アプリをポイントする必要があります。
 - `WSGI_LOG` は省略可能ですが、アプリのデバッグのために推奨します。
 
-Bottle、Flask、および Django Web アプリ用の *web.config* コンテンツのその他の詳細については、[Azure への発行](publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページをご覧ください。
+Bottle、Flask、および Django Web アプリ用の [web.config](publishing-python-web-applications-to-azure-from-visual-studio.md) コンテンツのその他の詳細については、*Azure への発行*に関するページをご覧ください。
 
-## <a name="install-packages"></a>パッケージのインストール
+## <a name="install-packages"></a>パッケージをインストールする
 
 サイトの拡張機能を使用してインストールされた Python インタープリターは、Python 環境の一部にすぎません。 その環境に別のパッケージもインストールする必要があります。
 
 サーバー環境にパッケージを直接インストールするには、次のいずれかの方法を使用します。
 
-| メソッド | 使用法 |
+| メソッド | 使用方法 |
 | --- | --- |
 | [Azure App Service Kudu コンソール](#azure-app-service-kudu-console) | パッケージを対話形式でインストールします。 パッケージは、純粋な Python であるか、ホイールを発行する必要があります。 |
 | [Kudu REST API](#kudu-rest-api) | パッケージのインストールを自動化するために使用できます。  パッケージは、純粋な Python であるか、ホイールを発行する必要があります。 |
@@ -173,25 +173,25 @@ Bottle、Flask、および Django Web アプリ用の *web.config* コンテン�
 
 [Kudu コンソール](https://github.com/projectkudu/kudu/wiki/Kudu-console)は、App Service サーバーとそのファイル システムに直接アクセスするための昇格されたコマンド ライン アクセスを提供します。 これは、重要なデバッグ ツールであると同時に、これでパッケージのインストールなどの CLI 操作を実行できます。
 
-1. Azure Portal の [App Service] ページから、**[開発ツール]** > **[高度なツール]** を選択し、**[移動]** を選択して Kudu を開きます。 このアクションにより、`.scm` が挿入されることを除いて、ベースの App Service URL と同じ URL に移動します。 たとえば、ベースの URL が `https://vspython-test.azurewebsites.net/` の場合、Kudu は (ブックマークを設定できる) `https://vspython-test.scm.azurewebsites.net/` にあります。
+1. Azure Portal の [App Service] ページから、 **[開発ツール]**  >  **[高度なツール]** を選択し、 **[移動]** を選択して Kudu を開きます。 このアクションにより、`.scm` が挿入されることを除いて、ベースの App Service URL と同じ URL に移動します。 たとえば、ベースの URL が `https://vspython-test.azurewebsites.net/` の場合、Kudu は (ブックマークを設定できる) `https://vspython-test.scm.azurewebsites.net/` にあります。
 
     ![Azure App Service の Kudu コンソール](media/python-on-azure-console01.png)
 
-1. **[デバッグ コンソール]** > **[CMD]** を選択してコンソールを開きます。このコンソールで Python のインストール環境に移動し、既存のライブラリを確認できます。
+1. **[デバッグ コンソール]**  >  **[CMD]** を選択してコンソールを開きます。このコンソールで Python のインストール環境に移動し、既存のライブラリを確認できます。
 
 1. 1 つのパッケージをインストールするには、次の手順を実行します。
 
-    a.  パッケージのインストール先の Python のインストール フォルダーに移動します (*d:\home\python361x64* など)。
+    a. パッケージのインストール先の Python のインストール フォルダーに移動します (*d:\home\python361x64* など)。
 
-    b.  `python.exe -m pip install <package_name>` を使用してパッケージをインストールします。
+    b. `python.exe -m pip install <package_name>` を使用してパッケージをインストールします。
 
     ![Azure App Service の Kudu コンソールを使用して bottle をインストールする例](media/python-on-azure-console02.png)
 
 1. サーバーに既にアプリ用の *requirements.txt* がデプロイ済みの場合、それらのすべての要件を次のようにインストールします。
 
-    a.  パッケージのインストール先の Python のインストール フォルダーに移動します (*d:\home\python361x64* など)。
+    a. パッケージのインストール先の Python のインストール フォルダーに移動します (*d:\home\python361x64* など)。
 
-    b.  `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` コマンドを実行します。
+    b. コマンド `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` を実行します。
 
     *requirements.txt* は、ローカルおよびサーバーで設定されたのと同じパッケージを簡単に再現できるため、これを使用することをお勧めします。 *requirements.txt* に何らかの変更を行った後に、コンソールにアクセスし、コマンドを再実行することを忘れないでください。
 

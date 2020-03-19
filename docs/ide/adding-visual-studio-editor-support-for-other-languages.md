@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590879"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターの他の言語のサポートの追加
@@ -38,8 +38,8 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|移動|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
+|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
+|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
@@ -56,7 +56,7 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 - Visual Basic
 
-- 移動
+- Go
 
 - Java
 
@@ -74,7 +74,7 @@ Visual Studio では、[TextMate 文法](https://manual.macromates.com/en/langua
 
 自分の状況に当てはまる場合は、この基本パスの下に以下のフォルダーを追加します。
 
-|フォルダー名|説明|
+|フォルダー名|[説明]|
 |-----------------|-----------------|
 |\\ *\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、 *\Matlab* などに置き換えます。|
 |*\Syntaxes*|文法のフォルダーです。 *Matlab.json* などの、言語に対応する文法の *.json* ファイルが含まれています。|
@@ -87,7 +87,7 @@ Windows では、 *%userprofile%* はパス (*c:\Users\\\<ユーザー名>* ) �
 
 TextMate 文法の作成方法の詳細については、「[TextMate - Introduction to Language Grammars (TextMate - 言語の文法の概要)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [言語サーバー プロトコルの拡張機能の追加](../extensibility/adding-an-lsp-extension.md)
 - [チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)

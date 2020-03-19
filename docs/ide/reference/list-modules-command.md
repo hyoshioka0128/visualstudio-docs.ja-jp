@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595502"
 ---
 # <a name="list-modules-command"></a>List Modules コマンド
@@ -35,39 +35,39 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 #### <a name="parameters"></a>パラメーター
 /Address:`yes|no`
 
-任意。 モジュールのメモリ アドレスを表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 モジュールのメモリ アドレスを表示するかどうかを指定します。 既定値は `yes` です。
 
 /Name:`yes|no`
 
-任意。 モジュールの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 モジュールの名前を表示するかどうかを指定します。 既定値は `yes` です。
 
 /Order:`yes|no`
 
-任意。 モジュールの順序を表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 モジュールの順序を表示するかどうかを指定します。 既定値は `no` です。
 
 /Path:`yes|no`
 
-任意。 モジュールのパスを表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 モジュールのパスを表示するかどうかを指定します。 既定値は `yes` です。
 
 /Process:`yes|no`
 
-任意。 モジュールのプロセスを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 モジュールのプロセスを表示するかどうかを指定します。 既定値は `no` です。
 
 /SymbolFile:`yes|no`
 
-任意。 モジュールのシンボル ファイルを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 モジュールのシンボル ファイルを表示するかどうかを指定します。 既定値は `no` です。
 
 /SymbolStatus:`yes|no`
 
-任意。 モジュールのシンボル ステータスを表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 モジュールのシンボル ステータスを表示するかどうかを指定します。 既定値は `yes` です。
 
 /Timestamp:`yes|no`
 
-任意。 モジュールのタイムスタンプを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 モジュールのタイムスタンプを表示するかどうかを指定します。 既定値は `no` です。
 
 /Version:`yes|no`
 
-任意。 モジュールのバージョンを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 モジュールのバージョンを表示するかどうかを指定します。 既定値は `no` です。
 
 ## <a name="example"></a>例
 次の例では、現在のプロセスのモジュール名、アドレス、およびタイムスタンプを一覧表示します。
@@ -76,8 +76,8 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
-- [方法: [モジュール] ウィンドウを使用する](../../debugger/how-to-use-the-modules-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [方法 : [モジュール] ウィンドウを使用する](../../debugger/how-to-use-the-modules-window.md)

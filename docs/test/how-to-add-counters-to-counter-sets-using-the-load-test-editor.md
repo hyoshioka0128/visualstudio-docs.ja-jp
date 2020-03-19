@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594334"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してカウンターをカウンター セットに追加する
@@ -24,7 +24,7 @@ ms.locfileid: "75594334"
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> ロード テストを複数のリモート コンピューターに分散する場合、コントローラーとエージェント カウンターが、コントローラーとエージェント カウンター セットに割り当てられます。 ロード テストでリモート コンピューターを使用する方法の詳細については、「[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)」を参照してください。
+> ロード テストを複数のリモート コンピューターに分散する場合、コントローラーとエージェント カウンターが、コントローラーとエージェント カウンター セットに割り当てられます。 ロード テストでリモート コンピューターを使用する方法の詳細については、[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)に関するページを参照してください。
 
 カウンターは、**ロード テスト エディター**で管理します。 テストに既に追加されているカウンター セットは、ロード テストの **[カウンター セット]** ノードに表示されます。 ロード テストを作成すると、既存のカウンター セットに新しいカウンターを追加できます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75594334"
 
 6. カスタム カウンター セットに追加するカウンターおよびインスタンスを選択します。
 
-     \- または
+     \- - または -
 
      使用できるカウンターをすべて選択する場合は、 **[すべてのカウンター]** オプション ボタンをクリックします。
 
@@ -62,7 +62,7 @@ ms.locfileid: "75594334"
     > [!NOTE]
     > カウンターをカウンター セットに追加することもできます。追加するには、既存のカウンターまたはカウンター カテゴリを選択し、[コピー] を選択して、他のカウンター セット ノードに貼り付けます。 コピーされたカウンターで不要になったものは削除できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)

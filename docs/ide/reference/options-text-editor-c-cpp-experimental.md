@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278704"
 ---
 # <a name="options-text-editor-cc-experimental"></a>[オプション]、[テキスト エディター]、[C/C++]、[実験用]
@@ -63,7 +63,7 @@ ms.locfileid: "77278704"
 
 - その他
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
 - [C++ でのリファクタリング (VC のブログ)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/

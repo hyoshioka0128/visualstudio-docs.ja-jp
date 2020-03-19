@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113441"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>方法: Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する
@@ -26,7 +26,7 @@ ms.locfileid: "76113441"
 > テーブル ビューのプレーン テキストや詳細ビューのスクリーンショットは Microsoft Word にコピーできますが、HTML 形式で適用されないので、さらに書式設定や編集が必要となります。
 
 > [!TIP]
-> また、編成された Microsoft Excel レポートを自動的に生成することもできます。 詳細については、[Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
+> また、編成された Microsoft Excel レポートを自動的に生成することもできます。 詳細については、「[方法: Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)」を参照してください。
 
 ## <a name="copy-summary-view-data"></a>概要ビューのデータのコピー
 
@@ -44,7 +44,7 @@ ms.locfileid: "76113441"
 
 1. **ロード テスト結果**で、グラフ ビューが現在表示されていない場合に、ツールバーの **[グラフ]** を選択します。
 
-2. (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、[グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
+2. (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、「[方法: グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 
      ![グラフ ビューのズーム コントロール](../test/media/ltest_zoomcontrol.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "76113441"
     > [!WARNING]
     > リモート デスクトップのグラフをコピーして別のコンピューターに貼り付けることはできません。これは、グラフに関連付けられたテーブル情報のみがコピーされ、グラフの画像はコピーされないためです。 グラフの画像は、コピー元のコンピューターの一時ディレクトリに保存されます。2 つ目のコンピューターはそのディレクトリを逆参照できません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テストの比較または傾向分析のためにロード テストの結果レポートを作成する](../test/compare-load-test-results.md)
 - [方法: Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

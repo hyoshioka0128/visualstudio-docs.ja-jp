@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595853"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
@@ -94,7 +94,7 @@ ms.locfileid: "75595853"
 
 DLL を読み込む位置に推奨されるベース アドレスを指定します。 DLL の既定のベース アドレスは、.NET Framework 共通言語ランタイムにより設定されます。 詳しくは、「[/baseaddress (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

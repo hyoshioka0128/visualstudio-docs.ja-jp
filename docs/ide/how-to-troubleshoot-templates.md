@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591386"
 ---
 # <a name="how-to-troubleshoot-templates"></a>方法: テンプレートの問題を解決する
@@ -55,11 +55,11 @@ ms.locfileid: "75591386"
 
 1. 抽出したテンプレート ファイルと古いテンプレート *.zip* ファイルを削除します。
 
-## <a name="enable-diagnostic-logging"></a>診断ログを有効にする
+## <a name="enable-diagnostic-logging"></a>診断ログの有効化
 
 [テンプレートの検出のトラブルシューティング (機能拡張)](../extensibility/troubleshooting-template-discovery.md)に関するページの手順に従って、テンプレートの検出の診断ログを有効にできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テンプレートの検出のトラブルシューティング (機能拡張)](../extensibility/troubleshooting-template-discovery.md)
 - [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)

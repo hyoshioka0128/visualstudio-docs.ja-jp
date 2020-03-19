@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272392"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems タスク
@@ -32,7 +32,7 @@ ms.locfileid: "77272392"
 
 以下の表では、**GetOutOfDateItems** タスクのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**CheckForInterdependencies**|省略可能な **bool** 型のパラメーターです。|
 |**CommandMetadataName**|省略可能な **string** 型のパラメーターです。|
@@ -44,6 +44,6 @@ ms.locfileid: "77272392"
 |**TLogDirectory**|必須の **String** 型のパラメーターです。|
 |**TLogNamePrefix**|必須の **String** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

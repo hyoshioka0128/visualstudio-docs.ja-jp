@@ -1,5 +1,5 @@
 ---
-title: セキュリティ
+title: Security
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595450"
 ---
 # <a name="secure-applications"></a>セキュリティで保護されたアプリケーション
@@ -38,7 +38,7 @@ ms.locfileid: "75595450"
 - [Dotfuscator](dotfuscator/index.md) は無料で、.NET アセンブリをリバース エンジニアリングや許可されていないデバッグなどの許可されていない使用から保護するのに役立ちます。
 - [厳密な名前の署名](managing-assembly-and-manifest-signing.md)を使用すると、ソフトウェア コンポーネントを一意に識別し、名前のなりすましを防ぐことができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [.NET でのセキュリティ](/dotnet/standard/security/index)
 - [Azure のセキュリティ](/azure/security/)

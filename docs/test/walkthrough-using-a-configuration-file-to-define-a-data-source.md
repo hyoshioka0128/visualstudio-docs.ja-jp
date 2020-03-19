@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776156"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 
-このチュートリアルでは、単体テスト用に *app.config* ファイルで定義されたデータ ソースを使用する方法について説明します。 ここでは、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> クラスで使用できるデータ ソースを定義する *app.config* ファイルの作成方法を学習します。 このチュートリアルでは、次のタスクについて説明します。
+このチュートリアルでは、単体テスト用に *app.config* ファイルで定義されたデータ ソースを使用する方法について説明します。 ここでは、*クラスで使用できるデータ ソースを定義する*app.config<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> ファイルの作成方法を学習します。 このチュートリアルでは、次のタスクについて説明します。
 
 - *app.config* ファイルを作成する。
 
@@ -32,7 +32,7 @@ ms.locfileid: "75776156"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> クラスを使用してデータ ソースにアクセスする。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルを完了するには、次の条件が必要です。
 
@@ -192,11 +192,11 @@ ms.locfileid: "75776156"
 
 1. *testdatasource.accdb* という名前の Microsoft Access データベースを作成します。
 
-2. *testdatasource.accdb* 内にテーブルを作成し、`MyDataTable` と名前を付けます。
+2. `MyDataTable`testdatasource.accdb *内にテーブルを作成し、* と名前を付けます。
 
-3. `Number` データ型を使用して、`MyDataTable` に `Arg1` と `Arg2` という名前の 2 つのフィールドを作成します。
+3. `MyDataTable` データ型を使用して、`Arg1` に `Arg2` と `Number` という名前の 2 つのフィールドを作成します。
 
-4. 5 つのエンティティを `MyDataTable` に追加します。`Arg1` と `Arg2` の値は、それぞれ(10,50)、(3,2)、(6,0)、(0,8)、(12312,1000) となるようにします。
+4. `MyDataTable` と `Arg1` の値がそれぞれ (10,50)、(3,2)、(6,0)、(0,8)、(12312,1000) となる 5 つのエンティティを `Arg2` に追加します。
 
 5. データベースを保存して閉じます。
 
@@ -208,9 +208,9 @@ ms.locfileid: "75776156"
 
 2. `Sheet1` という名前のシートが *data.xlsx* にまだ存在しない場合は作成します。
 
-3. `Sheet1` に 2 つの列ヘッダーを作成し、`Val1` と `Val2` という名前を付けます。
+3. `Val1` に 2 つの列ヘッダーを作成し、`Val2` と `Sheet1` という名前を付けます。
 
-4. 5 つのエンティティを `Sheet1` に追加します。`Val1` と `Val2` の値は、それぞれ(1,1)、(2,2)、(3,3)、(4,4)、(5,0) となるようにします。
+4. `Sheet1` と `Val1` の値がそれぞれ (1,1)、(2,2)、(3,3)、(4,4)、(5,0) となる 5 つのエンティティを `Val2` に追加します。
 
 5. スプレッドシートを保存して閉じます。
 
@@ -267,7 +267,7 @@ ms.locfileid: "75776156"
 > [!IMPORTANT]
 > データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コードの単体テスト](../test/unit-test-your-code.md)
 - [方法: データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)

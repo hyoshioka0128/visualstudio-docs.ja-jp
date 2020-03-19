@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62428439"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio による Python 検索パスの使用方法
@@ -29,7 +29,7 @@ ms.locfileid: "62428439"
 
 そのため Visual Studio では、環境とプロジェクトの両方で検索パスを直接指定するための手段が用意されています。 Visual Studio で実行またはデバッグするコードは、検索パスを `PYTHONPATH` (およびその他の同等の変数) の値で受け取ります。 検索パスを追加すると、Visual Studio はそれらの場所でライブラリを検査し、必要に応じて IntelliSense データベースを構築します (Visual Studio 2017 バージョン 15.5 以前、ライブラリの数によっては時間がかかります)。
 
-検索パスを追加するには、**ソリューション エクスプローラー**に移動し、プロジェクト ノードを展開し、**[検索パス]** を右クリックして **[フォルダーを検索パスに追加]** を選択します。
+検索パスを追加するには、**ソリューション エクスプローラー**に移動し、プロジェクト ノードを展開し、 **[検索パス]** を右クリックして **[フォルダーを検索パスに追加]** を選択します。
 
 ::: moniker range="vs-2017"
 ![ソリューション エクスプローラーの [検索パス] 上の [フォルダーを検索パスに追加] コマンド](media/search-paths-command.png)
@@ -44,9 +44,9 @@ ms.locfileid: "62428439"
 
 フォルダーが検索パスに追加されると、Visual Studio ではプロジェクトに関連付けられているすべての環境にそれらのパスが使用されます。 (環境が Python 3 ベースの場合に、検索パスを Python 2.7 モジュールに追加しようとすると、エラーが発生することがあります。)
 
-**[Zip アーカイブを検索パスに追加]** コマンドを選択することで、拡張子が *.zip* または *.egg* のファイルを検索パスとして追加することもできます。 フォルダーと同様に、これらのファイルの内容もスキャンされて、IntelliSense に利用されます。
+*[Zip アーカイブを検索パスに追加]* コマンドを選択することで、拡張子が *.zip* または **.egg** のファイルを検索パスとして追加することもできます。 フォルダーと同様に、これらのファイルの内容もスキャンされて、IntelliSense に利用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
