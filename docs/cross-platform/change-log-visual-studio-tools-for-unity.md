@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74706784"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
@@ -214,7 +214,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (`Packages` フォルダー内の manifest.json を使用して) とローカル パッケージ (`Packages` フォルダーに埋め込まれた) のみが表示されます。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - ソリューション ファイルを処理するときに、外部のプロパティを保持します。
 
@@ -270,7 +270,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 `CS0649` および `IDE0051` のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
 
@@ -406,7 +406,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
 
@@ -464,7 +464,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - (以前のバージョン 3.9.0.0 からの移植) Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
 
@@ -474,7 +474,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity のパフォーマンスのバグの一時的な回避策: プロジェクト生成時の MonoIslands のキャッシュ。
 
@@ -514,7 +514,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - 今後、新しい Unity ランタイムを使用するときにはポータブル pdb を mdb に変換しないでください。
 
@@ -554,7 +554,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - 例外設定の使用方法が修正されました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - パッケージ マネージャーのコンパイル単位が生成から除外されました。
 
@@ -564,7 +564,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity 2018.1 の新しいプロジェクト ジェネレーターのサポートが追加されました。
 
@@ -584,7 +584,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Mono バージョンの検出を修正しました。
 
@@ -598,13 +598,13 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - .NET Standard のサポートを追加しました。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity ターゲット フレームワークの検出を修正しました。
 
@@ -646,7 +646,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - 2018.1 MonoIsland 参照モデルのサポートを追加しました。
 
@@ -664,7 +664,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - プレーヤー プロジェクトに対するプロジェクト guid の計算を修正しました。
 
@@ -710,7 +710,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - Unity API のヘルプ メニューが表示されないという問題を修正しました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - IL2CPP/.NET 4.6 のバックエンドの UWP ゲームで動作している場合の player プロジェクトの生成を修正しました。
 
@@ -726,7 +726,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - assembly.json コンパイル単位のサポートが追加されました。
 
@@ -748,7 +748,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - コンパイラがローカルで生成した項目が修正されました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - 4\.6 API レベルの Microsoft.CSharp の参照が修正されました。
 
@@ -758,7 +758,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity 5.5 と以前のバージョンの Visual Studio ソリューションの生成を修正しました。
 
@@ -820,7 +820,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - 新しい Unity ランタイムのサポートが追加されました (.NET 4.6/C# 6 と互換性あり)。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - .NET 4.6 プロファイルのサポートが追加されました。
 
@@ -836,7 +836,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - オートコンプリートでメソッドを挿入した後のキャレット位置を修正しました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - アセンブリ バージョンの後処理を削除しました。
 
@@ -870,7 +870,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - バインドできないブレークポイントの場合 (対応するソースの場所が見つからない場合) の警告を追加しました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - 特別な/ローカライズされた文字を使用した csproj 生成を修正しました。
 
@@ -915,7 +915,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - 型が必要なときまたは見つからないときのエラー メッセージを追加しました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - プロジェクト名から CSharp のサフィックスを削除しました。
 
@@ -943,7 +943,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - 新しい C# コンパイラでの反復子フレームのデバッグのサポートを追加しました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity Web Player を対象としたコンパイルを妨げるバグを修正しました。
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778389"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn と ProcessOff
@@ -42,7 +42,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` 開始または停止するプロセスの整数の ID。 プロセス ID は、Windows タスク マネージャーの **[プロセス]** タブにリストされます。
 
 ## <a name="required-subcommands"></a>必須のサブコマンド
- なし
+ None
 
 ## <a name="valid-subcommands"></a>有効なサブコマンド
  **ProcessOn** と **ProcessOff** は、次のサブコマンドも含むコマンド ラインで指定できます。

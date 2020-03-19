@@ -1,28 +1,31 @@
 ---
 title: usings の生成
-ms.date: 02/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544544"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094315"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Visual Studio で不足している using を追加する
 
 このコード生成は以下に適用されます。
 
 - C#
+
+- Visual Basic
 
 **概要:** コピーして貼り付けたコードに対して、必要なインポートまたは [using ディレクティブ](/dotnet/csharp/language-reference/keywords/using-directive)をすぐに追加できます。
 

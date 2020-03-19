@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771544"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
@@ -277,7 +277,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - ソリューション ファイルを処理するときに、外部のプロパティを保持します。
   
@@ -309,7 +309,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 `CS0649` および `IDE0051` のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
 
@@ -430,7 +430,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - OnApplicationFocus メッセージのタイポを修正しました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity のパフォーマンスのバグの一時的な回避策: プロジェクト生成時の MonoIslands のキャッシュ。
 
@@ -474,7 +474,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity 2018.1 の新しいプロジェクト ジェネレーターのサポートが追加されました。
 
@@ -488,7 +488,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Mono バージョンの検出を修正しました。
 
@@ -514,7 +514,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - .NET Standard のサポートを追加しました。
 
@@ -562,7 +562,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - アセンブリのファイル名に余分な .dll 拡張子が誤って追加される問題を修正しました。
 
@@ -574,7 +574,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="new-features"></a>新機能
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - .NET 4.6 プロファイルのサポートが追加されました。
 
@@ -588,7 +588,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - アタッチする Unity がわからない場合、[プロセスにアタッチ] ダイアログを開始します。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity 5.6 の使用時にはアンセーフ コンパイル スイッチが常に有効になります。
 
@@ -612,7 +612,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - [プロセスにアタッチ] ウィンドウからプレーヤーやエディターにアタッチできるようになりました。
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - mcs.rsp ファイルを使用したアセンブリ名の参照が修正されました。
 

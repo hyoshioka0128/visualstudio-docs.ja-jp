@@ -1,19 +1,19 @@
 ---
 title: C/C++ 用の単体テストの記述
 description: CTest、Boost.Test、Google Test など、さまざまなテスト フレームワークを使用し、Visual Studio で C++ 単体テストを記述します。
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755588"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78937551"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -41,7 +41,7 @@ C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes
 
 - **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートが含まれていません。 手動で構成する必要があります。 詳細については、[Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
 
-- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、[Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
+- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 詳細については、[Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
 
 **Visual Studio 2015 以前**
 

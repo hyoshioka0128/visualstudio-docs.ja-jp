@@ -1,27 +1,30 @@
 ---
 title: インポートされていない型に対する IntelliSense 入力候補
 description: '`using` ディレクティブでまだインポートしていない型に対して IntelliSense 入力候補を使用する方法です。'
-ms.date: 06/20/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f313cfa8520e4c13b310be0f9223466c529ca18f
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 04ea7c94d3dd24c1a511544adca9bfac3370cd71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67312925"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094267"
 ---
 # <a name="intellisense-completion-for-unimported-types"></a>インポートされていない型に対する IntelliSense 入力候補
 
 このリファクタリングは以下に適用されます。
 
 - C#
+
+- Visual Basic
 
 **概要:** IntelliSense で、インポートされていない型に対して入力候補を提供します。
 

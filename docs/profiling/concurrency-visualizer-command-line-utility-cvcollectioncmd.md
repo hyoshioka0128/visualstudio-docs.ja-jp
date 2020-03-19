@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911203"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)
@@ -40,7 +40,7 @@ ms.locfileid: "72911203"
 
 |オプション|説明|パラメーター|戻り値|
 |------------|-----------------|----------------|-------------------|
-|クエリ|コレクションを開始できるかどうかを返します。|なし|コレクションを開始できる場合は 0。<br /><br /> コレクションが既に実行中の場合は 1。<br /><br /> コレクションは実行中でないが、必要な [ETW](/dotnet/framework/wcf/samples/etw-tracing) セッションの 1 つ以上が既に有効になっている場合は 2。|
+|クエリ|コレクションを開始できるかどうかを返します。|None|コレクションを開始できる場合は 0。<br /><br /> コレクションが既に実行中の場合は 1。<br /><br /> コレクションは実行中でないが、必要な [ETW](/dotnet/framework/wcf/samples/etw-tracing) セッションの 1 つ以上が既に有効になっている場合は 2。|
 |Launch|コンカレンシー ビジュアライザーで、指定されたプロセスを実行します。|実行可能ファイルのパス。|実行が成功した場合は 0。<br /><br /> ターゲット アプリケーションを開始できなかったために実行が失敗した場合は 1。<br /><br /> CVCollectionCmd に、指定された出力ディレクトリへの書き込みアクセス許可がないために実行が失敗した場合は 13。|
 |Attach|システム全体でのトレースのコレクションを開始します。プロセスが指定されている場合は、そのプロセスにアタッチします。|なし。|アタッチが成功した場合は 0。<br /><br /> 指定されたプロセスが無効であるか、指定があいまいなためにアタッチが失敗した場合は 1。<br /><br /> CVCollectionCmd に、指定された出力ディレクトリへの書き込みアクセス許可がないためにアタッチが失敗した場合は 13。|
 |Detach|コレクションを停止します。|なし。|デタッチが成功した場合は 0。<br /><br /> コレクションが現在実行されていないためにデタッチが失敗した場合は 1。<br /><br /> コレクションを停止できなかったためにデタッチが失敗した場合は 2。|
@@ -73,7 +73,7 @@ ms.locfileid: "72911203"
 | MarkerProvider | 単一のマーカー プロバイダーを指定します。 | 以下の要素が含まれている必要があります。<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 以下の要素を含めることができます。<br /><br /> -   Categories<br />-   IsEnabled |
 | レベル | MarkerProvider の重要度レベルを設定します。 | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | GUID | ETW マーカー プロバイダーのグローバル一意識別子。 | GUID。 |
-| name | マーカー プロバイダーの説明を指定します。 | 文字列。 |
+| 名前 | マーカー プロバイダーの説明を指定します。 | 文字列。 |
 | カテゴリ | マーカー プロバイダーについて収集するカテゴリを指定します。 | コンマ区切りの文字列または数値の範囲。 |
 | IsEnabled | マーカー プロバイダーをコレクションに有効にするかどうかを判別する値を設定します。 | -   True<br />-   False |
 | FilterConfig | コレクションからフィルター処理する ETW イベントの構成オプションのリストを指定します。 | 以下の要素を含めることができます。<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |

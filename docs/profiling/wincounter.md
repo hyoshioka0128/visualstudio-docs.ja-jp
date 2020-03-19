@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779845"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -37,7 +37,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>必須オプション
  **WinCounter** オプションと共に使用できるオプションは **Start** オプションのみです。
 
- **Start:** `Method` **Start** オプションは、指定したプロファイル方法にプロファイラーを初期化します。
+ **Start:** `Method`**Start** オプションは、指定したプロファイル方法にプロファイラーを初期化します。
 
 ## <a name="exclusive-options"></a>排他的なオプション
  **AutoMark** オプションと共に使用できるオプションは **WinCounter** オプションのみです。

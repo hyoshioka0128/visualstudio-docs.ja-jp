@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661939"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307161"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
@@ -160,7 +160,7 @@ conda 環境は `conda` ツールを使用して作成される環境です。Vi
     | フィールド | 説明 |
     | --- | --- |
     | Project | 環境を作成するプロジェクト (同じ Visual Studio ソリューションに複数のプロジェクトがある場合)。 |
-    | name | Conda 環境の名前。 |
+    | 名前 | Conda 環境の名前。 |
     | パッケージの追加元 | 依存関係が記述されている *environment.yml* ファイルがある場合は、 **[環境ファイル]** を選択します。または、 **[1 つ以上の Anaconda パッケージ名]** を選択して、下のフィールドに少なくとも 1 つの Pythonパッケージまたは Python のバージョンを一覧表示します。 パッケージ一覧では、Python 環境を作成するよう Conda に指示されます。 最新バージョンの Python をインストールするには、`python` を使用します。特定のバージョンをインストールするには、`python=3.7` のように `python=,major>.<minor>` を使用します。 また、パッケージ ボタンを使用して、一連のメニューから Python のバージョンと一般的なパッケージを選択することもできます。 |
     | 現在の環境として設定 | 環境を作成した後、選択したプロジェクトで新しい環境をアクティブ化します。 |
     | 新しいプロジェクトの既定の環境として設定 | Visual Studio で作成されるすべての新しいプロジェクトで、Conda 環境を自動的に設定してアクティブにします。 このオプションは、 **[Python 環境]** ウィンドウの **[これを新しいプロジェクトに対する既定の環境にする]** を使用する場合と同じです。 |
