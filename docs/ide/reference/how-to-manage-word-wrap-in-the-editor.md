@@ -1,5 +1,5 @@
 ---
-title: 右端で折り返す
+title: '[右端で折り返す]'
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569076"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508941"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>方法: エディターのワード ラップを管理する
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>方法 : エディターのワード ラップを管理する
 
 **[右端で折り返す]** オプションを設定および解除できます。 このオプションを設定すると、コード エディター ウィンドウの現在の幅からはみ出した長い行の部分は次の行に表示されます。 たとえば行番号の使用を容易にするためにこのオプションをオフにすると、右にスクロールして長い行の末尾を表示できます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "75569076"
 
 2. **[テキスト エディター]** フォルダーで、 **[すべての言語]** サブフォルダーの **[全般]** オプションを選択して、このオプションをグローバルに設定します。
 
-     または
+     \- または -
 
      プログラミングしている言語のサブフォルダーの **[全般]** オプションを選択します。
 
@@ -50,9 +50,8 @@ ms.locfileid: "75569076"
 Notepad++、Sublime Text、Visual Studio Code での行の折り返しに慣れている場合は、Visual Studio の動作が他のエディターと異なる場合の次の問題に注意してください。
 
 * [トリプル クリックで行全体が選択されない](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [切り取りコマンドで行全体が削除されない](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [End キーを 2 回押してもカーソルが行末に移動しない](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード エディターの機能](../../ide/writing-code-in-the-code-and-text-editor.md)

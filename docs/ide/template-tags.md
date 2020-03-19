@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189549"
 ---
 # <a name="add-tags-to-project-templates"></a>プロジェクト テンプレートにタグを追加する
@@ -56,7 +56,7 @@ ms.locfileid: "73189549"
 
 高度なユーザー シナリオでは、次の省略可能な属性を使用できます。
 
-|属性|説明|
+|属性|[説明]|
 |---------------|-----------------|
 |`Package`|Visual Studio のパッケージ ID を指定する GUID です。|
 |`ID`|Visual Studio のリソース ID を指定します。|
@@ -73,11 +73,11 @@ ms.locfileid: "73189549"
 
 ### <a name="child-elements"></a>子要素
 
-なし。
+ありません。
 
 ### <a name="parent-elements"></a>親要素
 
-|要素|説明|
+|要素|[説明]|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必須) テンプレートをカテゴリに分類し、その **[新しいプロジェクト]** ダイアログ ボックスまたは **[新しい項目の追加]** ダイアログ ボックスでの表示方法を定義します。|
 
@@ -145,7 +145,7 @@ Visual C# アプリケーションのプロジェクト テンプレートのメ
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](creating-project-and-item-templates.md)

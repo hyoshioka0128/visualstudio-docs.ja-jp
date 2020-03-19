@@ -1,5 +1,5 @@
 ---
-title: '[出力] ウィンドウ'
+title: '[出力ウィンドウ]'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567984"
 ---
 # <a name="output-window"></a>[出力] ウィンドウ
@@ -55,7 +55,7 @@ ms.locfileid: "75567984"
 
 **出力**ペインでのワード ラップ機能のオンとオフを切り替えます。 ワード ラップ機能が有効になっていると、表示エリアより長いテキストは次の行に折り返されて表示されます。
 
-## <a name="output-pane"></a>出力ウィンドウ
+## <a name="output-pane"></a>出力ペイン
 
 **[出力元の表示]** の一覧で選択された**出力**ペインは、このボックスで選択された項目の出力結果を表示します。
 
@@ -63,9 +63,9 @@ ms.locfileid: "75567984"
 
 プロジェクトをビルドしたときに必ず**出力**ウィンドウが表示されるようにするには、 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]**  >  **[全般]** ページで、 **[ビルド開始時に出力ウィンドウを表示]** をオンにします。 次に、編集のためにコード ファイルを開けた状態で、**出力**ウィンドウのエントリを選択するために**出力**ウィンドウのツール バーの **[次のメッセージに移動]** および **[前のメッセージに移動]** をクリックします。 この動作を続けると、コード エディターのカーソル位置が、選択した問題が発生したコード行へ移動します。
 
-[コマンド ウィンドウ](../../ide/reference/command-window.md)で実行できる一部の IDE 機能およびコマンドでは、**出力**ウィンドウへ出力結果が送られます。 *.bat* ファイルや *.com* ファイルなどの外部ツールからの出力は、通常コマンド ウィンドウで表示されますが、[[外部ツールの構成]](../../ide/managing-external-tools.md) の **[出力ウィンドウを使用]** オプションをオンにすると**出力**ウィンドウに送られます。 他の種類のメッセージの多くも **[出力]** ペインで表示できます。 たとえば、ストアド プロシージャの Transact-SQL 構文を対象のデータベースに対してチェックすると、その結果が **[出力]** ウィンドウに表示されます。
+[コマンド ウィンドウ](../../ide/reference/command-window.md)で実行できる一部の IDE 機能およびコマンドでは、**出力**ウィンドウへ出力結果が送られます。 *.bat* ファイルや *.com* ファイルなどの外部ツールからの出力は、通常コマンド ウィンドウで表示されますが、 **[外部ツールの構成]** の **[出力ウィンドウを使用]** オプションをオンにすると[出力](../../ide/managing-external-tools.md)ウィンドウに送られます。 他の種類のメッセージの多くも **[出力]** ペインで表示できます。 たとえば、ストアド プロシージャの Transact-SQL 構文を対象のデータベースに対してチェックすると、その結果が **[出力]** ウィンドウに表示されます。
 
-また、実行時に診断メッセージを **[出力]** ペインに書き出すことのできる、独自のアプリケーションをプログラムすることも可能です。 これを行うには、<xref:System.Diagnostics.Debug> クラスのメンバーまたは .NET API の <xref:System.Diagnostics> 名前空間にある <xref:System.Diagnostics.Trace> クラスを使用します。 <xref:System.Diagnostics.Debug> クラスのメンバーは、ソリューションまたはプロジェクトのデバッグ構成をビルドするときの出力結果を表示します。<xref:System.Diagnostics.Trace> クラスのメンバーは、デバッグ構成またはリリース構成のどちらかをビルドするときの出力結果を表示します。 詳細については、[出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)に関するページを参照してください。
+また、実行時に診断メッセージを **[出力]** ペインに書き出すことのできる、独自のアプリケーションをプログラムすることも可能です。 これを行うには、<xref:System.Diagnostics.Debug> クラスのメンバーまたは .NET API の <xref:System.Diagnostics.Trace> 名前空間にある <xref:System.Diagnostics> クラスを使用します。 <xref:System.Diagnostics.Debug> クラスのメンバーは、ソリューションまたはプロジェクトのデバッグ構成をビルドするときの出力結果を表示します。<xref:System.Diagnostics.Trace> クラスのメンバーは、デバッグ構成またはリリース構成のどちらかをビルドするときの出力結果を表示します。 詳細については、[出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)に関するページを参照してください。
 
 C++ では、警告とエラー メッセージ、およびその合計数を**出力**ウィンドウで表示できる、カスタム ビルド ステップおよびビルド イベントを作成できます。 出力結果の任意の行で **F1** キーを押すと、適切なヘルプ トピックが表示されます。 詳細については、[カスタム ビルド ステップの出力の書式設定](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event)に関する記事を参照してください。
 
@@ -73,7 +73,7 @@ C++ では、警告とエラー メッセージ、およびその合計数を**�
 
 **出力**ウィンドウで自動スクロールを使用していて、マウスや方向キーを使用して移動すると、自動スクロールが停止します。 自動スクロールを再開するには、**Ctrl**+**End** キーを押します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [方法: 出力ウィンドウを制御する](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)

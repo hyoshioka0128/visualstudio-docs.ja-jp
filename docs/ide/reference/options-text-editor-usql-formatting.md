@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568270"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>[オプション]、[テキスト エディター]、[U-SQL]、[書式設定]
@@ -49,6 +49,6 @@ ms.locfileid: "75568270"
 - **[貼り付け時にオートフォーマットする]** を選択した状態でファイルにコードを張り付けたとき
 - 書式設定されているブロックが手動で入力されたとき
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[全般] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/general-environment-options-dialog-box.md)

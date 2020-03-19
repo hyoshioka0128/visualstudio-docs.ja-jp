@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584479"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>方法: ロード テストの実行設定にコンテキスト パラメーターを追加する
@@ -23,7 +23,7 @@ ms.locfileid: "75584479"
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
+> 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパテ](../test/load-test-run-settings-properties.md)」を参照してください。
 
 ロード テスト エディターを使用して、ロード テストの実行設定で使用するコンテキスト パラメーターを作成できます。 コンテキスト パラメーターを使用すると、文字列をパラメーター化できます。
 
@@ -36,9 +36,9 @@ Webserver1 コンテキスト パラメーターの値を `http://CorporateStagi
 
 また、別々のロード テストの実行設定に同じ名前を使用して、コンテキスト パラメーターにさまざまな値を割り当てることにより、さまざまな環境を使用してロード テストを実行できます。
 
-- Corporate Staging Web Server の実行設定:`WebServer1=http://CorporateStagingWebServer` という名前のコンテキスト パラメーター
+- Corporate Staging Web Server の実行設定: `WebServer1=http://CorporateStagingWebServer` という名前のコンテキスト パラメーター
 
-- Corporate Production Web Server の実行設定:`WebServer1=http://CorporateProductionWebServer` という名前のコンテキスト パラメーター
+- Corporate Production Web Server の実行設定: `WebServer1=http://CorporateProductionWebServer` という名前のコンテキスト パラメーター
 
   **コマンド ラインからの実行設定の変更**
 
@@ -60,7 +60,7 @@ Webserver1 コンテキスト パラメーターの値を `http://CorporateStagi
 
      新しいコンテキスト パラメーターが、ロード テスト ツリーの **[実行設定]** フォルダーの **[コンテキスト パラメーター]** フォルダーに追加されます。
 
-     \- または -
+     または
 
      実行設定に **[コンテキスト パラメーター]** フォルダーが既に含まれている場合は、それを右クリックして **[コンテキスト パラメーターの追加]** を選択します。
 
@@ -70,6 +70,6 @@ Webserver1 コンテキスト パラメーターの値を `http://CorporateStagi
 
 6. どの実行設定をアクティブにするかを選択します。 実行設定のショートカット メニューを開いて **[アクティブとして設定]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)

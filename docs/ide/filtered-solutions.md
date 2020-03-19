@@ -11,17 +11,17 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72650838"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio のフィルター処理済みソリューション
 
 大規模な開発チームでは、多くのプロジェクトがある 1 つの大規模なソリューションを使用して、共同作業することがよくあります。 しかし、個々の開発者は通常、これらのプロジェクトの小さなサブセットで作業します。 大規模なソリューションを開くときのパフォーマンスを向上させるため、Visual Studio 2019 では、"*ソリューション フィルタリング*" が導入されました。 ソリューション フィルタリングにより、選択したプロジェクトのみが読み込まれたソリューションを開くことができます。 ソリューションにプロジェクトのサブセットを読み込むことで、ソリューションの読み込み時間とテストの実行時間を短縮し、より焦点を絞ったレビューが可能になります。
 
-次の機能が使用できます。
+次の機能を使用できます。
 
 - どのプロジェクトも読み込まずにソリューションを開くことで、よりすばやくコードに到達できます。 ソリューションを開いてから、ロードするプロジェクトを選択することができます。
 
@@ -102,7 +102,7 @@ devenv /donotloadprojects MySln.sln
 
 ![Visual Studio の最近開いた項目](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューション エクスプローラーでファイルの入れ子をカスタマイズする](file-nesting-solution-explorer.md)
 - [Visual Studio のパフォーマンスの最適化](optimize-visual-studio-performance.md)

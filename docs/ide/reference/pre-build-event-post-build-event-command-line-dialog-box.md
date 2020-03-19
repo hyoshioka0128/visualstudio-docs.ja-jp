@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567919"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス
@@ -55,9 +55,9 @@ ms.locfileid: "75567919"
 ビルド前またはビルド後に実行するイベントが含まれます。
 
 > [!NOTE]
-> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
+> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
 
-**[マクロ]**
+**マクロ**
 
 エディット ボックスを展開して、コマンド ライン エディット ボックスに挿入するマクロの一覧を表示します。
 
@@ -65,15 +65,15 @@ ms.locfileid: "75567919"
 
 使用可能なマクロとその値を一覧表示します。 それぞれの詳細については、以下の「マクロ」を参照してください。 コマンド ライン エディット ボックスに挿入するマクロは、一度に 1 つだけ選択できます。
 
-**[挿入]**
+**挿入**
 
 マクロ テーブルで選択したマクロをコマンド ライン エディット ボックスに挿入します。
 
-### <a name="macros"></a>[マクロ]
+### <a name="macros"></a>マクロ
 
 次のマクロのいずれかを使用して、ファイルの位置を指定したり、複数の選択肢がある場合に入力ファイルの実際の名前を取得したりできます。 これらのマクロの大文字と小文字は区別されません。
 
-|マクロ|説明|
+|マクロ|[説明]|
 |-----------|-----------------|
 |`$(ConfigurationName)`|現在のプロジェクト構成の名前 ("Debug" など)。|
 |`$(OutDir)`|プロジェクト ディレクトリに対して相対的な、出力ファイル ディレクトリへのパス。 これは、Output Directory プロパティの値に解決されます。 最後に円記号 (\\) が含まれます。|
@@ -95,9 +95,9 @@ ms.locfileid: "75567919"
 |`$(TargetFileName)`|ビルドのプライマリ出力ファイルのファイル名 (基本名とファイル拡張子で定義)。|
 |`$(TargetExt)`|ビルドのプライマリ出力ファイルのファイル拡張子。 ファイル拡張子の前にピリオド '.' が付きます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのカスタム ビルド イベントの指定](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [方法: ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [方法: ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [方法 : ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)

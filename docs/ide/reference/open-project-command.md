@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565813"
 ---
 # <a name="open-project-command"></a>OpenProject コマンド
@@ -36,12 +36,12 @@ File.OpenProject filename
 
 `filename`
 
-必須です。 開くプロジェクトまたはソリューションの完全パスとファイル名。
+必須。 開くプロジェクトまたはソリューションの完全パスとファイル名。
 
 > [!NOTE]
 > `filename` 引数の構文の場合、空白を含むパスで引用符を使用する必要があります。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。
 
@@ -55,7 +55,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

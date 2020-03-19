@@ -12,25 +12,25 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774257"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>命令ポインター (IP) ビュー - サンプリング データ
 サンプリング データの IP ビューには、プロファイルを実行してサンプルを収集したときに直接実行したアセンブリ命令のパフォーマンス データが一覧表示されます。
 
 > [!NOTE]
-> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|
 |**プロセス名**|プロセスの名前です。|
 |**モジュール名**|命令を含むモジュールの名前。|
 |**モジュール パス**|命令を含むモジュールのパスです。|
-|**ソース ファイル**|命令を含むソース ファイルです。|
+|**[転送元ファイル]**|命令を含むソース ファイル。|
 |**関数名**|命令を含む関数の名前です。|
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|
 |**関数アドレス**|読み込まれたバイナリ内の関数の開始メモリ アドレス。|
@@ -39,8 +39,8 @@ ms.locfileid: "74774257"
 |**ソース開始文字番号**|このサンプルが収集されたソース ファイル行内の開始文字のオフセットです。|
 |**ソース終了文字番号**|このサンプルが収集されたソース ファイル行内の終了文字のオフセットです。|
 |**命令ポインター アドレス**|読み込まれたバイナリ内の命令のアドレスです。|
-|**サンプル数 (関数のみ)**|命令を実行していたときに収集されたサンプルの合計数です。|
-|**サンプル % (関数のみ)**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|
+|**排他サンプル数**|命令を実行していたときに収集されたサンプルの合計数です。|
+|**排他サンプル %**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

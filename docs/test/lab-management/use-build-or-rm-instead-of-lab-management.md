@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566827"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>自動化されたテストに Lab Management ではなく Azure Test Plans を使用する
@@ -26,7 +26,7 @@ Microsoft Test Manager と Lab Management は、アプリケーションのビ�
 
 | 手順 | XAML ビルドを使用する場合 | ビルドまたはリリースを使用する場合 |
 |-------|----------------------|-----------------|
-| ビルドを展開してテストを実行するマシンを特定します。 | それらのマシンの Microsoft Test Manager に標準のラボ環境を作成します。 | N/A |
+| ビルドを展開してテストを実行するマシンを特定します。 | それらのマシンの Microsoft Test Manager に標準のラボ環境を作成します。 | 該当なし |
 | 実行するテストを特定します。 | Microsoft Test Manager にテスト スイートを作成し、テスト ケースを作成し、各テスト ケースと自動化を関連付けます。 テストを実行するラボ環境のマシンのロールを指定し、Microsoft Test Manager でテスト設定を作成します。 | テスト計画でテストを管理する計画である場合、Microsoft Test Manager に同じように自動化されたテスト スイートを作成します。 または、ビルドで生成されたテスト バイナリから直接テストを実行する場合は、これを省略することが可能です。 いずれの場合もテスト設定を作成する必要はありません。 |
 | 配置とテストを自動化します。 | LabDefaultTemplate.*.xaml を使用し、XAML ビルド定義を作成します。 ビルド定義に、ビルド、テスト スイートおよびラボ環境を指定します。 | 1 つの環境の[ビルドまたはリリース パイプライン](/azure/devops/pipelines/index?view=vsts)を作成します。 コマンド ライン タスクを使用して (XAML ビルド定義から) 同じ配置スクリプトを実行し、Test Agent の配置と機能テストの実行タスクを使用して自動化されたテストを実行します。 これらのタスクにマシンの一覧とその資格情報を入力し指定します。 |
 

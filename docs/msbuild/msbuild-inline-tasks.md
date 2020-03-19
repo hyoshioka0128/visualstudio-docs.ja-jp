@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633318"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
@@ -88,7 +88,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 また、`Source` 要素の `Code` 属性を使用して、タスクのコードを含むファイルの場所を指定することもできます。 ソース ファイルのコードの種類は、`Type` 属性で指定された種類である必要があります。 `Source` 属性が指定されている場合、`Type` の既定値は `Class` です。 `Source` が指定されていない場合の既定値は `Fragment` です。
 
 > [!NOTE]
-> ソース ファイル内のタスク クラスを定義する場合は、クラス名が、対応する [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素の `TaskName` 属性と一致する必要があります。
+> ソース ファイル内のタスク クラスを定義する場合は、クラス名が、対応する `TaskName`UsingTask[ 要素の ](../msbuild/usingtask-element-msbuild.md) 属性と一致する必要があります。
 
 ## <a name="helloworld"></a>HelloWorld
 
@@ -146,7 +146,7 @@ Log.LogError("Hello, world!");
 
 - `Output` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターの値を、Execute メソッドから戻る前に指定する必要があります。
 
-たとえば、オブジェクトに適用された
+次に例を示します。
 
 ```xml
 <ParameterGroup>
@@ -195,7 +195,7 @@ File.WriteAllText(Path, content);
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [チュートリアル: インライン タスクを作成する](../msbuild/walkthrough-creating-an-inline-task.md)

@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72983660"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 用 Azure クラウド サービス プロジェクト
@@ -26,7 +26,7 @@ Visual Studio は、Python を使用して Azure Cloud Services の作成に使�
 
 この記事では、Visual Studio 2017 以降のプロジェクト テンプレートとその他のサポートについて詳しく説明します (以前のバージョンとよく似ていますが、いくつかの違いがあります)。 Python からの Azure の操作について詳しくは、[Azure Python デベロッパー センター](/azure/python/)をご覧ください。
 
-## <a name="create-a-project"></a>プロジェクトを作成する
+## <a name="create-a-project"></a>プロジェクトの作成
 
 1. クラウド サービス テンプレートを使用するために必要な [Azure .NET SDK for Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/) をインストールします。
 1. Visual Studio で、 **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** を選択し、"Azure Python" を検索して **[Azure クラウド サービス]** を一覧から選びます。
@@ -58,16 +58,16 @@ Visual Studio は、Python を使用して Azure Cloud Services の作成に使�
 
 追加の構成は、次のように実行できます。
 
-1. プロジェクトのルート ディレクトリ内の *requirements.txt* ファイルを更新することで、`pip` を使用してパッケージをインストールします。 *ConfigureCloudService.ps1* スクリプトでは、デプロイ時にこのファイルがインストールされます。
-1. *web.config* ファイル (Web ロール) または *ServiceDefinition.csdef* ファイル (worker ロール) の `Runtime` セクションを変更することで、環境変数を設定します。
-1. *ServiceDefinitions.csdef* ファイルの `Runtime/EntryPoint` セクションでコマンド ラインを変更して、worker ロールに使用するスクリプトと引数を指定します。
+1. プロジェクトのルート ディレクトリ内の `pip`requirements.txt *ファイルを更新することで、* を使用してパッケージをインストールします。 *ConfigureCloudService.ps1* スクリプトでは、デプロイ時にこのファイルがインストールされます。
+1. *web.config* ファイル (Web ロール) または `Runtime`ServiceDefinition.csdef*ファイル (worker ロール) の* セクションを変更することで、環境変数を設定します。
+1. `Runtime/EntryPoint`ServiceDefinitions.csdef*ファイルの* セクションでコマンド ラインを変更して、worker ロールに使用するスクリプトと引数を指定します。
 1. *web.config* ファイルを通じて、Web ロールのメイン ハンドラー スクリプトを設定します。
 
 ## <a name="test-role-deployment"></a>ロールのデプロイのテスト
 
 ロールの書き込み中に、クラウド サービス エミュレーターを使用してクラウド プロジェクトをローカルでテストできます。 エミュレーターは Azure SDK Tools に含まれるもので、クラウド サービスが Azure に発行されるときに使用される環境の制限付きバージョンです。
 
-エミュレーターを起動するには、最初に右クリックして **[スタートアップ プロジェクトに設定]** を選択して、クラウド プロジェクトがソリューションのスタートアップ プロジェクトであることを確認します。 次に、 **[デバッグ]**  >  **[デバッグの開始]** (**F5**)、または **[デバッグ]**  >  **[デバッグなしで開始]** (**Ctrl** + **F5**) の順に選択します。
+エミュレーターを起動するには、最初に右クリックして **[スタートアップ プロジェクトに設定]** を選択して、クラウド プロジェクトがソリューションのスタートアップ プロジェクトであることを確認します。 次に、 **[デバッグ]**  >  **[デバッグの開始]** (**F5**)、または **[デバッグ]**  >  **[デバッグなしで開始]** (**Ctrl**+**F5**) の順に選択します。
 
 エミュレーターでの制限により、Python コードをデバッグすることはできません。 したがって、ロールを個別に実行し、発行する前に統合テストにエミュレーターを使用してロールをデバッグすることをお勧めします。
 
@@ -87,7 +87,7 @@ Cloud Services では、*ConfigureCloudService.ps1* スクリプトは `pip` を
 
 クラウド サービス インスタンスには C コンパイラが含まれていないため、C の拡張子を持つすべてのライブラリはコンパイル済みのバイナリを提供する必要があります。
 
-*requirements.txt* 内のパッケージに加えて、pip とその依存関係が自動的にダウンロードされ、課金対象となる帯域幅の使用としてカウントされる可能性があります。 *requirements.txt* ファイルの管理について詳しくは、「[必要なパッケージの管理](managing-required-packages-with-requirements-txt.md)」をご覧ください。
+*requirements.txt* 内のパッケージに加えて、pip とその依存関係が自動的にダウンロードされ、課金対象となる帯域幅の使用としてカウントされる可能性があります。 [requirements.txt](managing-required-packages-with-requirements-txt.md) ファイルの管理について詳しくは、「*必要なパッケージの管理*」をご覧ください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

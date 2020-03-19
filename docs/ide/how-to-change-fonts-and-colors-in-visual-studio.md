@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588877"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>方法: Visual Studio で使用するフォントと色を変更する
@@ -23,11 +23,11 @@ ms.locfileid: "75588877"
 Visual Studio の中にある IDE のフレームおよびツール ウィンドウの色を、複数の方法でカスタマイズできます。
 
 > [!TIP]
-> コード エディターの色を変更する方法の詳細については、「[How to: Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」(方法: エディターのフォントと色を変更する) を参照してください。
+> コード エディターの色を変更する方法については、「[方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」を参照してください。
 
 ## <a name="change-the-color-theme-of-the-ide"></a>IDE の配色テーマの変更
 
-1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
+1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
 1. オプションの一覧で、 **[環境]**  >  **[全般]** の順に選びます。
 
@@ -52,7 +52,7 @@ IDE 内にあるすべてのウィンドウとダイアログ ボックスに関
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>IDE 内のすべてのテキストのフォントとサイズを変更するには
 
-1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
+1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
 1. オプションの一覧で、 **[環境]**  >  **[フォントおよび色]** の順に選びます。
 
@@ -65,7 +65,7 @@ IDE 内にあるすべてのウィンドウとダイアログ ボックスに関
 
 1. **[サイズ]** の一覧でテキスト サイズを選び、 **[OK]** を選びます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)
-- [方法: Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」(方法: エディターのフォントと色を変更する) を参照してください。
+- [方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

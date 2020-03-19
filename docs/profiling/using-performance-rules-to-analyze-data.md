@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778064"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>パフォーマンス規則を使用したデータの分析
@@ -23,7 +23,7 @@ ms.locfileid: "74778064"
 > プロファイラーのパフォーマンス警告はプログラム実行のダイナミック分析によって生成され、コード分析警告との関連はありません。 コード分析で、マネージド コードに対するパフォーマンス警告をソース コードのスタティック分析に基づいて生成することもできます。 詳細については、[マネージド コードの品質の分析](../code-quality/code-analysis-for-managed-code-overview.md)に関するページと「[パフォーマンスの警告](../code-quality/performance-warnings.md)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [方法: パフォーマンスに関する警告の表示](../profiling/how-to-view-performance-warnings.md)
+- [方法: パフォーマンスの警告を表示する](../profiling/how-to-view-performance-warnings.md)
 
  **[エラー一覧]** ウィンドウを開いて、プロファイラーのパフォーマンス警告を表示する方法について説明します。
 

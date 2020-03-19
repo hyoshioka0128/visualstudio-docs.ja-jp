@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585298"
 ---
 # <a name="miscellaneous-files"></a>その他のファイル
@@ -48,7 +48,7 @@ ms.locfileid: "75585298"
 
 **[その他のファイル]** フォルダーの表示オプションを設定すれば、"その他のファイル" を開いていない場合でも、このフォルダーが表示されるようにすることができます。 ソリューション ファイルは、"その他のファイル" の一覧を永久に管理するわけではありません。 ソリューション ファイルでは、直前に使用した (MRU) ファイル リストをユーザー別に保存するためのオプション機能が使用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

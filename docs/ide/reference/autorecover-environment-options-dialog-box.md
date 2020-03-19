@@ -1,5 +1,5 @@
 ---
-title: '[自動バックアップ]\ ([オプション] ダイアログ ボックス - [環境])'
+title: '[自動バックアップ] ([オプション] ダイアログ ボックス - [環境])'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585666"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>[自動バックアップ]\ ([オプション] ダイアログ ボックス - [環境])
@@ -38,6 +38,6 @@ ms.locfileid: "75585666"
 
 このオプションを使用し、Visual Studio で自動バックアップのために作成したファイルを保存する期間を指定します。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 
 - [[オプション] ダイアログ ボックス](../../ide/reference/options-dialog-box-visual-studio.md)

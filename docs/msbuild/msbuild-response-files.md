@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633240"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307179"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 応答ファイル
 
@@ -37,7 +37,7 @@ ms.locfileid: "77633240"
 
 バージョン 15.6 以降では、MSBuild は、プロジェクトの親ディレクトリで *Directory.Build.rsp* という名前のファイルを検索します。  これは、ソース コード リポジトリでコマンド ライン ビルド中に既定の引数を指定する場合に役立つことがあります。  ホスト型ビルドのコマンド ライン引数を指定する場合にも使用できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)

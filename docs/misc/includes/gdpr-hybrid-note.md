@@ -5,13 +5,13 @@ ms.topic: include
 author: eross-msft
 ms.author: lizross
 ms.openlocfilehash: 38e23f85eac0fd25e688909c2c91239b5cfd5e53
-ms.sourcegitcommit: d59930af8c5e1710ecdf08d8cc16aaa7b92e9e6c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75564827"
 ---
 > [!NOTE]
 > 個人データの閲覧や削除を検討している場合、Microsoft のガイダンスの「[GDPR のための Windows データ サブジェクト要求 ](/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)」を参照してください。 GDPR に関する全般情報をお探しの場合は、[サービス信頼ポータル](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)の GDPR セクションを参照してください。
 
-[//]: # (2018 年 5 月 22 日:このファイルが孤立していることがありますが、削除しないでください。)
+[//]: # (2018 年 5 月 22 日: このファイルが孤立していることがありますが、削除しないでください。)

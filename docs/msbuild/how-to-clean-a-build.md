@@ -1,5 +1,5 @@
 ---
-title: '方法: ビルドをクリーンする | Microsoft Docs'
+title: '方法 : ビルドをクリーンする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633916"
 ---
 # <a name="how-to-clean-a-build"></a>方法: ビルドをクリーンする
@@ -103,7 +103,7 @@ ms.locfileid: "77633916"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [MakeDir タスク](../msbuild/makedir-task.md)
 - [RemoveDir タスク](../msbuild/removedir-task.md)

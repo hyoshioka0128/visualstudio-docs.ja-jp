@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588695"
 ---
 # <a name="troubleshoot-snippets"></a>スニペットのトラブルシューティング
@@ -25,9 +25,9 @@ IntelliSense コード スニペットに関する問題は、通常は 2 つの
 
 ## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>スニペットをファイル エクスプローラーから Visual Studio のソース ファイルにドラッグできない
 
-- スニペット ファイルの XML が破損している可能性があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。
+- スニペット ファイルの XML が破損している可能性があります。 **の**[XML エディター][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用すると、XML 構造の問題を特定できます。
 
-- スニペット ファイルがスニペット スキーマに準拠していない可能性があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。
+- スニペット ファイルがスニペット スキーマに準拠していない可能性があります。 **の**[XML エディター][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用すると、XML 構造の問題を特定できます。
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>コードに強調表示されていないコンパイラ エラーがある
 
@@ -35,6 +35,6 @@ IntelliSense コード スニペットに関する問題は、通常は 2 つの
 
 - 変数が未定義の可能性があります。 スニペット内の未定義の変数は強調表示されます。 そうなっていない場合は、スニペットの作成者にエラーとして報告できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード スニペット](../ide/code-snippets.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633019"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
@@ -111,7 +111,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
 5. 環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されているか、または `ToolsVersion` が設定されていない場合は、次の手順が使用されます。
 
-    1. プロジェクト ファイルにある [Project](../msbuild/project-element-msbuild.md) 要素の `ToolsVersion` 属性。 この属性が存在しない場合は、現在のバージョンであると見なされます。
+    1. プロジェクト ファイルにある `ToolsVersion`Project[ 要素の ](../msbuild/project-element-msbuild.md) 属性。 この属性が存在しない場合は、現在のバージョンであると見なされます。
 
     2. *MSBuild.exe.config* ファイルに定義された既定のツール バージョン。
 
@@ -127,7 +127,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. それ以外の場合は、現在の `ToolsVersion` を使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

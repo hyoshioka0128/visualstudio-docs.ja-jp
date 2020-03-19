@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568660"
 ---
 # <a name="log-command-window-output-command"></a>コマンド ウィンドウ出力のログを記録するコマンド
@@ -49,11 +49,11 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 /overwrite\
 任意。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 次の例では、新規のログ ファイル cmdlog を作成して、コマンドのログを開始します。
 
@@ -73,7 +73,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

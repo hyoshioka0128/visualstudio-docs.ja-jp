@@ -1,5 +1,5 @@
 ---
-title: '方法: 診断データ アダプターを作成する'
+title: '方法: カスタム診断データ アダプターを作成する'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f196c3850c9413a7c68fd1fe67af50273915f249
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589176"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>方法: 診断データ アダプターを作成する
@@ -32,7 +32,7 @@ ms.locfileid: "75589176"
 
 診断データ アダプターを作成するときに使用できる主なイベントを次に示します。 診断データ アダプターのイベントの完全な一覧については、<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 抽象クラスを参照してください。
 
-|event|説明|
+|Event|[説明]|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|テストの実行を開始します。|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|テストの実行を終了します。|
@@ -210,7 +210,7 @@ ms.locfileid: "75589176"
 
      これらのファイルは、テスト結果に添付されます。 これらのテスト結果からバグを作成する場合、または[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]を使用する場合、ファイルはバグにも添付されます。
 
-     独自のエディターを使用してデータを収集し、テストの設定に使用する場合は、「[方法:診断データ アダプター用のデータのカスタム エディターを作成する](../test/quickstart-create-a-load-test-project.md)」を参照してください。
+     独自のエディターを使用してテストの設定で使用するデータを収集する場合は、「[方法: 診断データ アダプター用のデータのカスタム エディターを作成する](../test/quickstart-create-a-load-test-project.md)」を参照してください。
 
 11. テストが終了したときに、ユーザーによるテストの設定の構成に基づいてログ ファイルを収集するには、*App.config* ファイルを作成し、ソリューションに追加する必要があります。 このファイルは次の形式で作成し、識別するために診断データ アダプターの URI が含まれる必要があります。 "Company/ProductName/Version" を実際の値に置き換えてください。
 
@@ -243,15 +243,15 @@ ms.locfileid: "75589176"
     > [!NOTE]
     > 既定の構成要素には必要なデータを含めることができます。 テストの設定で診断データ アダプターを構成しなかった場合は、実行時に既定のデータが診断データ アダプターに渡されます。 `<DefaultConfigurations>` セクションに追加する XML は、宣言されたスキーマの一部となる可能性が少ないため、生成される XML エラーを無視できます。
     >
-    > インストール ディレクトリに基づく構成ファイルの他の例は、次のパス内にあります。*Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*。
+    > その他の構成ファイルの例については、インストール ディレクトリ内の *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors* を参照してください。
 
      テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)に関するページを参照してください。
 
-     構成ファイルのインストールの詳細については、[カスタム診断データ アダプターをインストールする方法](../test/quickstart-create-a-load-test-project.md)に関するページを参照してください。
+     構成ファイルのインストールに関する詳細については、「[方法: カスタム診断データ アダプターをインストールする](../test/quickstart-create-a-load-test-project.md)」を参照してください。
 
 12. ソリューションをビルドして、診断データ アダプターのアセンブリを作成します。
 
-13. カスタム エディターのインストールの詳細については、[カスタム診断データ アダプターをインストールする方法](../test/quickstart-create-a-load-test-project.md)に関するページを参照してください。
+13. カスタム エディターをインストールする方法の詳細については、「[方法: カスタム診断データ アダプターをインストールする](../test/quickstart-create-a-load-test-project.md)」を参照してください。
 
 14. テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)に関するページを参照してください。
 
@@ -263,7 +263,7 @@ ms.locfileid: "75589176"
 
     指定したデータ ファイルがテスト結果に関連付けられます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>

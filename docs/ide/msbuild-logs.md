@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278812"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild に関する問題のトラブルシューティングとログ記録
@@ -44,7 +44,7 @@ ms.locfileid: "77278812"
 - PropertyGroups と Imports
 - ItemDefinitionGroups
 - ItemGroups
-- ターゲット
+- 対象サーバー
 
 そのため、次の順序を考えてみます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "77278812"
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>インクリメンタル ビルドで必要以上にビルドされる
 
-MSBuild によってプロジェクトまたはプロジェクト項目が不必要にリビルドされる場合は、詳細またはバイナリ ビルド ログを作成します。 そのログから、不必要にビルドまたはコンパイルされていたファイルを検索できます。 出力は次のようになります。
+MSBuild によってプロジェクトまたはプロジェクト項目が不必要にリビルドされる場合は、詳細またはバイナリ ビルド ログを作成します。 そのログから、不必要にビルドまたはコンパイルされていたファイルを検索できます。 次のような画面が出力されます。
 
 ```output
   Task "CL"

@@ -17,14 +17,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773336"
 ---
 # <a name="call-tree-view"></a>[コール ツリー] ビュー
-[コール ツリー] ビューには、プロファイリングされるアプリケーションで走査された関数の実行パスが表示されます。 ツリーのルートは、アプリケーションまたはコンポーネントへのエントリ ポイントです。 各関数ノードは、呼び出したすべての関数と、その関数呼び出しに関するパフォーマンス データを表示します。
+コール ツリー ビューには、プロファイル対象アプリケーションで走査された関数の実行パスが表示されます。 ツリーのルートは、アプリケーションまたはコンポーネントへのエントリ ポイントです。 各関数ノードは、呼び出したすべての関数と、その関数呼び出しに関するパフォーマンス データを表示します。
 
  [コール ツリー] ビューでは、最も時間を消費した関数や最も頻繁にサンプリングされた関数の実行パスを展開したり強調表示したりすることもできます。 最もパフォーマンス負荷の高いパスを表示するには、関数を右クリックし、 **[ホット パスの展開]** をクリックします。
 
@@ -34,7 +34,7 @@ ms.locfileid: "74773336"
 
  コール ツリー ビューをカスタマイズし、列を追加したり、削除したりできます。 **[Column Name Title Bar]\(列名タイトル バー\)** を右クリックし、 **[列の追加と削除]** を選択します。
 
- コール ツリー ビューは、表示されるデータの数を制限して、ノイズを除去するように構成できます。 ノイズ除去を行うことで、ビューでパフォーマンスの問題を発見しやすくなります。 パフォーマンスの問題が発見しやすくなれば、分析が簡単になります。 詳細については、[レポート ビューでノイズ除去を設定する](../profiling/how-to-configure-noise-reduction-in-report-views.md)」を参照してください。
+ コール ツリー ビューは、表示されるデータの数を制限して、ノイズを除去するように構成できます。 ノイズ除去を行うことで、ビューでパフォーマンスの問題を発見しやすくなります。 パフォーマンスの問題が発見しやすくなれば、分析が簡単になります。 詳細については、「[方法: レポート ビューでノイズ除去を設定する](../profiling/how-to-configure-noise-reduction-in-report-views.md)」を参照してください。
 
 > [!NOTE]
 > 有効にしたときに警告を表示するようにノイズ除去が構成されている場合、レポートに情報バーが表示されます。
@@ -49,7 +49,7 @@ ms.locfileid: "74773336"
 
 - [コール ツリー ビュー](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
 - [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)
 - [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)

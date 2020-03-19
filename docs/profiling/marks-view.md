@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773969"
 ---
 # <a name="marks-view"></a>マーク ビュー
@@ -26,7 +26,7 @@ ms.locfileid: "74773969"
 
  レポートにあらかじめ設定されている既定のマークは、プログラムの開始と終了を示します。
 
- 自動的に生成されるマークの Windows カウンター データもこのビューに表示されます。 詳細については、[Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)」を参照してください。
+ 自動的に生成されるマークの Windows カウンター データもこのビューに表示されます。 詳細については、「[方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)」を参照してください。
 
  2 つのマークに対してフィルターを作成するには、マークを選択し、右クリックして、 **[マークにフィルターを追加]** または **[タイムスタンプにフィルターを追加]** をクリックします。
 
@@ -40,7 +40,7 @@ ms.locfileid: "74773969"
 
  Windows パフォーマンス カウンター データ: Windows パフォーマンス カウンター データが収集される場合は、その値がカウンターの名前の付いた列に表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [パフォーマンス レポートの概要](../profiling/performance-report-overview.md)
 - [方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;NIB&#93; [データ収集コントロール] ウィンドウ](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169405"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>方法: 仮想ユーザー アクティビティ チャートを使用してロード テスト中に仮想ユーザーが行っている操作を分析する
@@ -29,7 +29,7 @@ ms.locfileid: "78169405"
 
 2. ロード テストの実行後、テスト結果の概要ページが表示されます。 ツール バーの **[ユーザーの詳細]** を選択します。
 
-     \- または -
+     または
 
      ツール バーの **[グラフ]** を選択してグラフ ビューを開きます。 グラフを右クリックし、 **[ユーザーの詳細に移動]** をクリックします。
 
@@ -51,15 +51,15 @@ ms.locfileid: "78169405"
 
    - **URL** (テストまたはトランザクションには表示されません)
 
-   - **Outcome**
+   - **結果**
 
    - **ブラウザー** (テストまたはトランザクションには表示されません)
 
    - **Network**
 
-   - **開始時刻**
+   - **Start Time**
 
-   - **期間**
+   - **Duration**
 
    - **エージェント**
 
@@ -103,7 +103,7 @@ ms.locfileid: "78169405"
 
      それに合わせて**仮想ユーザー アクティビティ チャート**が更新されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [詳細ビューでの仮想ユーザー アクティビティの分析](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

@@ -1,5 +1,5 @@
 ---
-title: DA0502:プロセスにより CPU の最大使用量がプロファイリングされています | Microsoft Docs
+title: 'DA0502: プロセスによる最大 CPU 使用量をプロファイリングしています | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,20 +14,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c3cb5169d078ba1242bf898ba93e31a7a488bb8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779338"
 ---
-# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502:プロセスにより CPU の最大使用量がプロファイリングされています
+# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: プロセスによる最大 CPU 使用量をプロファイリングしています
 
 |||
 |-|-|
 |規則 ID|DA0502|
 |カテゴリ|リソース監視|
-|プロファイル方法|すべて|
-|メッセージ|この規則は情報提供用です。 Process()\\% Processor Time カウンターはプロファイリングを行っているプロセスの CPU 使用量を測定します。 報告される値は、全測定期間を通じて観察された最大値です。|
+|プロファイル方法|All|
+|[メッセージ]|この規則は情報提供用です。 Process()\\% Processor Time カウンターはプロファイリングを行っているプロセスの CPU 使用量を測定します。 報告される値は、全測定期間を通じて観察された最大値です。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

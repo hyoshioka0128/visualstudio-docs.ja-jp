@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853517"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio の機能を提案する
@@ -35,7 +35,7 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 
 アイデアの最初のセットが User Voice フォーラムから開発者コミュニティに移行されました。 移行は、コミュニティへのフィードバックの影響と、製品ロードマップの優先順位に基づいて行われました。 移行されるはずの機能が見落とされていると思った場合は、遠慮なく開発者コミュニティに追加してください。
 
-## <a name="votes"></a>投票
+## <a name="votes"></a>Votes
 
 開発者コミュニティの投票システムは、User Voice とは異なります。 開発者コミュニティの投票数の整合性を保ち、投票の歪みを避けるために、User Voice での投票数は、各機能の提案の横にあるタグとして目立つように表示されます。 強化された開発者コミュニティで提案への投票を続けていくと、新しい投票数は User Voice での投票数とは別々に表示されます。
 
@@ -101,7 +101,7 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 
 - - -
 
-## <a name="faq"></a>よくあるご質問
+## <a name="faq"></a>よく寄せられる質問
 
 ### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>User Voice の自分のアイデアが開発者コミュニティに表示されないのはなぜですか?
 
@@ -127,6 +127,6 @@ Microsoft は、お客様からの機能の提案に耳を傾け、お客様に�
 
 応答時間は、お客様のフィードバックの状態によって異なります。 このドキュメント内の状態に関する説明を確認し、応答時間について把握してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [開発者コミュニティの [機能を提案する] 機能の概要 (Visual Studio ブログ)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779052"
 ---
 # <a name="how-to-choose-sampling-events"></a>方法: サンプリング イベントを選択する
@@ -59,9 +59,9 @@ ms.locfileid: "74779052"
 
 5. サンプル イベントを選択すると、 **[サンプリング間隔]** テキスト ボックスに既定のサンプリング間隔の値が表示されます。 必要に応じて、テキスト ボックスに希望の値を入力できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
-- [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)
+- [方法 : 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)
 - [CPU カウンターと Windows カウンター](../profiling/cpu-and-windows-counters.md)
 - [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -11,70 +11,64 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
-  ms.translationtype: HT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/22/2019
-  ms.locfileid: "74316423"
 landingContent:
-- title: 作業開始
-  linkLists:
-  - linkListType: download
-    links:
-    - text: Visual Studio をダウンロードする
-      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
-  - linkListType: get-started
-    links:
-    - text: Visual Studio のインストール
-      url: ../install/install-visual-studio.md
-  - linkListType: overview
-    links:
-    - text: Visual Studio の概要
-      url: ../get-started/visual-studio-ide.md
-- title: Visual Studio を使用する
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: コード エディターを使用する
-      url: ../get-started/tutorial-editor.md
-    - text: コンパイルとビルド
-      url: ../ide/compiling-and-building-in-visual-studio.md
-    - text: コードのデバッグ
-      url: ../debugger/debugger-feature-tour.md
-    - text: テストを記述する
-      url: ../test/getting-started-with-unit-testing.md
-    - text: コード品質を分析する
-      url: ../code-quality/roslyn-analyzers-overview.md
-    - text: Web アプリを発行する
-      url: ../deployment/quickstart-deploy-to-a-web-site.md
-    - text: データにアクセスする
-      url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
-    - text: IDE をカスタマイズする
-      url: ../ide/quickstart-personalize-the-ide.md
-    - text: 生産性機能
-      url: ../ide/productivity-features.md
-- title: 自分の言語で開発する
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: C#
-      url: ../get-started/csharp/tutorial-console.md
-    - text: C++
-      url: /cpp/get-started/tutorial-console-cpp
-    - text: Visual Basic
-      url: ../get-started/visual-basic/tutorial-console.md
-    - text: Python
-      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - text: JavaScript
-      url: /visualstudio/javascript/tutorial-nodejs
-    - text: F#
-      url: /dotnet/fsharp/get-started/get-started-visual-studio
-- title: 新機能を見つける
-  linkLists:
-  - linkListType: whats-new
-    links:
-    - text: Visual Studio 2019 の新機能
-      url: ../ide/whats-new-visual-studio-2019.md
-    - text: Visual Studio 2017 の新機能
-      url: ../ide/whats-new-visual-studio-2017.md
+  - title: はじめに
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Visual Studio をダウンロードする
+            url: 'https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019'
+      - linkListType: get-started
+        links:
+          - text: Visual Studio のインストール
+            url: ../install/install-visual-studio.md
+      - linkListType: overview
+        links:
+          - text: Visual Studio の概要
+            url: ../get-started/visual-studio-ide.md
+  - title: Visual Studio を使用する
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: コード エディターを使用する
+            url: ../get-started/tutorial-editor.md
+          - text: コンパイルとビルド
+            url: ../ide/compiling-and-building-in-visual-studio.md
+          - text: コードのデバッグ
+            url: ../debugger/debugger-feature-tour.md
+          - text: テストを記述する
+            url: ../test/getting-started-with-unit-testing.md
+          - text: コード品質を分析する
+            url: ../code-quality/roslyn-analyzers-overview.md
+          - text: Web アプリを発行する
+            url: ../deployment/quickstart-deploy-to-a-web-site.md
+          - text: データにアクセスする
+            url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
+          - text: IDE をカスタマイズする
+            url: ../ide/quickstart-personalize-the-ide.md
+          - text: 生産性機能
+            url: ../ide/productivity-features.md
+  - title: 自分の言語で開発する
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 'C#'
+            url: ../get-started/csharp/tutorial-console.md
+          - text: C++
+            url: /cpp/get-started/tutorial-console-cpp
+          - text: Visual Basic
+            url: ../get-started/visual-basic/tutorial-console.md
+          - text: Python
+            url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+          - text: JavaScript
+            url: /visualstudio/javascript/tutorial-nodejs
+          - text: 'F#'
+            url: /dotnet/fsharp/get-started/get-started-visual-studio
+  - title: 新機能を見つける
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Visual Studio 2019 の新機能
+            url: ../ide/whats-new-visual-studio-2019.md
+          - text: Visual Studio 2017 の新機能
+            url: ../ide/whats-new-visual-studio-2017.md

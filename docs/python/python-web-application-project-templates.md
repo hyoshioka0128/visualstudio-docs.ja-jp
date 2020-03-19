@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917381"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307107"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web アプリケーション プロジェクト テンプレート
 
@@ -39,17 +39,17 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 
 **空の \<フレームワーク> Web プロジェクト** テンプレートはいずれも、ほぼ最小限の定型コードと、*requirements.txt* ファイルに宣言されている必要な依存関係を使用してプロジェクトを作成します。
 
-| テンプレート | 説明 |
+| Template | [説明] |
 | --- | --- |
 | **Blank Bottle Web プロジェクト** | *app.py* に対するホーム ページと、非常に短いインライン ページ テンプレートを使用して `/` にエコーする `/hello/<name>` ページとを備えた最小限のアプリを `<name>` 内に生成します。 |
 | **空の Django Web プロジェクト** | コア Django サイト構造を持つが Django アプリが含まれない Django プロジェクトを生成します。 詳細については、[Django テンプレート](python-django-web-application-project-template.md)に関する記事と [Django 手順 1](learn-django-in-visual-studio-step-01-project-and-solution.md)に関する記事を参照してください。 |
-| **Blank Flask Web プロジェクト** | "Hello World!" を 1 つ使用した最小限のアプリを生成します。 ページの`/`します。 このアプリは、「[クイック スタートVisual Studio を使用して初めての Python Web アプリを作成する](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)」の詳細な手順に従った結果と似ています。 [Flask の詳細情報の手順 1](learn-flask-visual-studio-step-01-project-solution.md) に関するページも参照してください。
+| **Blank Flask Web プロジェクト** | "Hello World!" を 1 つ使用した最小限のアプリを生成します。 ページの`/`します。 このアプリは、[クイック スタート: Visual Studio を使用して初めての Python Web アプリを作成](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)に関する記事で詳細説明した手順を実行して得られた結果と類似しています。 [Flask の詳細情報の手順 1](learn-flask-visual-studio-step-01-project-solution.md) に関するページも参照してください。
 
 ### <a name="web-group"></a>Web グループ
 
 **\<フレームワーク> Web プロジェクト** テンプレートはいずれも、選択したフレームワークに関係なく同一の設計によるスタート Web アプリを作成します。 アプリにはホーム ページ、バージョン情報ページ、連絡先ページが含まれると共に、ナビゲーション バーとブートス トラップによる応答性に優れたデザインが使用されます。 各アプリはサーバーの静的ファイルに対して適切に構成され (CSS、JavaScript、フォント)、各アプリではフレームワークに適したページ テンプレート メカニズムが使用されます。
 
-| テンプレート | 説明 |
+| Template | [説明] |
 | --- | --- |
 | **Bottle Web プロジェクト** | 静的ファイルが *static* フォルダーに含まれていて、*app.py* 内のコードを通して処理されるアプリを生成します。 個々のページに対するルーティングは *routes.py* に含まれており、*views* フォルダーにはページのテンプレートが含まれています。|
 | **Django Web プロジェクト** | 3 つのページ、認証サポート、および SQLite データベース (データ モデルはなし) を使用して Django プロジェクトと Django アプリを生成します。 詳細については、[Django テンプレート](python-django-web-application-project-template.md)に関する記事と [Django 手順 4](learn-django-in-visual-studio-step-04-full-django-project-template.md) に関する記事を参照してください。 |
@@ -60,7 +60,7 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 
 **ポーリング \<フレームワーク> Web プロジェクト** テンプレートは、さまざまなポーリングの質問に対してユーザーが投票するために使用するスタート Web アプリを作成します。 各アプリは、**Web** プロジェクト テンプレートの構造に基づいてビルドされ、データベースを使用してポーリングとユーザー応答を管理します。 アプリには適切なデータ モデルと、*samples.json* ファイルからポーリングを読み込む特殊なアプリ ページ ("/seed") とが含まれています。
 
-| テンプレート | 説明 |
+| Template | [説明] |
 | --- | --- |
 | **Polls Bottle Web プロジェクト** | `REPOSITORY_NAME` 環境変数を使用して構成されるメモリ内データベース、MongoDB、または Azure テーブル ストレージに対して実行できるアプリを生成します。 データ モデルとデータ ストア コードは *models* フォルダーに含まれ、*settings.py* ファイルには、どのデータ ストアを使用するかを決定するコードが含まれます。 |
 | **ポーリング Django Web プロジェクト** | 3 つのページと SQLite データベースを使用して Django プロジェクトと Django アプリを生成します。 認証された管理者がポーリングを作成および管理できるように、Django 管理インターフェイスにカスタマイズを含めます。 詳細については、[Django テンプレート](python-django-web-application-project-template.md)に関する記事と [Django 手順 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) に関する記事を参照してください。 |
@@ -75,7 +75,7 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 
 ソース管理を使用している場合、仮想環境は *requirements.txt* でしか再作成できないので、仮想環境フォルダーは通常は省略されます。 そのフォルダーを除外する最善の方法としては、上に示したプロンプト内で **[I will install them myself]\(自分でインストールする\)**  を選択して、仮想環境を作成する前に自動コミットを無効にします。 詳細については、[Django のチュートリアル - 手順 1-2 および手順 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) に関するページと [Flask のチュートリアル - 手順 1-2 および手順 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) に関するページを参照してください。
 
-Microsoft Azure App Service にデプロイする場合は、Python のバージョンとして[サイト拡張機能](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)を選び、パッケージを手動でインストールします。 また、Azure App Service は、Visual Studio からデプロイされるときに *requirements.txt* ファイルからパッケージを自動的にインストール**しない**ため、[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) の構成の詳細に従ってください。
+Microsoft Azure App Service にデプロイする場合は、Python のバージョンとして[サイト拡張機能](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)を選び、パッケージを手動でインストールします。 また、Azure App Service は、Visual Studio からデプロイされるときに **requirements.txt** ファイルからパッケージを自動的にインストール*しない*ため、[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) の構成の詳細に従ってください。
 
 Microsoft Azure Cloud Services は *requirements.txt* ファイルをサポート*します*。 詳細については、[Azure クラウド サービス プロジェクト](python-azure-cloud-service-project-template.md)に関する記事をご覧ください。
 
@@ -122,7 +122,7 @@ MSBuild 構文を使用して任意のプロジェクト プロパティまた�
 Pyramid アプリは、現在、`pcreate` コマンドライン ツールを使用して作成するのが最適です。 アプリが作成されたら、[ **[既存の Python コードから]** ](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) テンプレートを使用してインポートできます。 その後、 **[汎用 Web プロジェクト]** カスタマイズを選択してオプションを構成します。 これらの設定は、Pyramid が `..\env` にある仮想環境にインストールされていることを想定しています。
 
 - **[デバッグ]** グループ:
-  - **[サーバー ポート]** :6543 (または *.ini* ファイルで構成されているポート)
+  - **[サーバー ポート]** : 6543 (または *.ini* ファイルで構成されているポート)
 
 - **[Run Server Command (サーバー コマンドの実行)]** グループ:
   - コマンド: `..\env\scripts\pserve-script.py` (スクリプト)
@@ -145,7 +145,7 @@ Pyramid アプリは、現在、`pcreate` コマンドライン ツールを使�
 
 ![[Microsoft Azure クラウド サービス プロジェクトに変換] コマンド](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Python 項目テンプレートのリファレンス](python-item-templates.md)
 - [Azure App Service に発行する](publishing-python-web-applications-to-azure-from-visual-studio.md)

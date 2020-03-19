@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747920"
 ---
 # <a name="list-disassembly-command"></a>ListDisassembly コマンド
@@ -44,15 +44,15 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
 /codebytes:`yes`&#124;`no`、/bytes:`yes`&#124;`no`、または /b:`yes`&#124;`no`
 
-任意。 コード バイトを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 コード バイトを表示するかどうかを指定します。 既定値は `no` です。
 
 /source:`yes`&#124;`no` または /s:`yes`&#124;`no`
 
-任意。 ソース コードを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 ソース コードを表示するかどうかを指定します。 既定値は `no` です。
 
 /symbolnames:`yes`&#124;`no`、/names:`yes`&#124;`no`、または /n:`yes`&#124;`no`
 
-任意。 シンボル名を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 シンボル名を表示するかどうかを指定します。 既定値は `yes` です。
 
  [/linenumbers:`yes`&#124;`no`]
 
@@ -64,11 +64,11 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

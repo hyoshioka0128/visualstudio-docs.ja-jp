@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589020"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>方法: テスト設定を使用してテスト中に画面と音声の記録を含める
@@ -22,7 +22,7 @@ Visual Studio の構成エディターから、テストを実行しているユ
 > [!WARNING]
 > 画面と音声の記録では、複数のモニター構成はサポートされていません。
 
-画面と音声のレコーダーは、手動テストまたは自動テストで使用できます。 たとえば、コード化された UI テストをリモートで実行する場合、コード化された UI テストを実行するときにそのテストを確認するためにデスクトップを記録できます。 画面と音声の記録をリモートでキャプチャする方法の詳細については、「[方法:テスト エージェントを設定して、デスクトップと対話するテストを実行する](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)」を参照してください。
+画面と音声のレコーダーは、手動テストまたは自動テストで使用できます。 たとえば、コード化された UI テストをリモートで実行する場合、コード化された UI テストを実行するときにそのテストを確認するためにデスクトップを記録できます。 画面と音声の記録をリモートでキャプチャする方法については、「[方法: Test Agent を設定して、デスクトップと対話するテストを実行する](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)」を参照してください。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -54,14 +54,14 @@ Visual Studio の構成エディターから、テストを実行しているユ
 
     2. **[ビット レート]:** 画面と音声の記録で使用する 1 秒あたりのキロバイト数を指定します。 既定値は 512 です。 指定できる値は 512 ～ 10,000 です。
 
-    3. **[品質 (1-100)]:** 画面と音声の記録の品質を 1 から 100 の範囲の値を選択して指定します。 既定値は 50 (中間) です。
+    3. **[品質 (1-100)]:** 画面と音声の記録の品質を 1 ～ 100 の範囲の値を選択して指定します。 既定値は 50 (中間) です。
 
 7. **[OK]** をクリックします。 これで、テストの設定を対象として診断トレース コレクターの設定が構成および保存されました。
 
     > [!TIP]
     > この診断データ アダプターの構成をリセットするには、Visual Studio の場合は **[既定の構成にリセット]** をクリックし、Microsoft Test Manager の場合は **[既定値にリセット]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

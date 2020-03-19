@@ -10,19 +10,19 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591603"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306993"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>動的なシンボリック実行を使用する入力生成
 
-IntelliTest は、プログラムの分岐条件を分析して、[パラメーター化された単体テスト](test-generation.md#parameterized-unit-testing)の入力を生成します。 テスト入力は、プログラムの新しい分岐動作をトリガーできるかどうかに応じて、選択されます。 分析はインクリメンタル処理です。 仮テスト入力パラメーター `I` に対して、述語 `q: I -> {true, false}` が絞り込まれます。 `q` は、IntelliTest で既に観察されている動作セットを表します。 最初は、まだ何も観測されていないため、`q := false` となります。
+IntelliTest は、プログラムの分岐条件を分析して、[パラメーター化された単体テスト](test-generation.md#parameterized-unit-testing)の入力を生成します。 テスト入力は、プログラムの新しい分岐動作をトリガーできるかどうかに応じて、選択されます。 分析はインクリメンタル処理です。 仮テスト入力パラメーター `q: I -> {true, false}` に対して、述語 `I` が絞り込まれます。 `q` は、IntelliTest で既に観察されている動作セットを表します。 最初は、まだ何も観測されていないため、`q := false` となります。
 
 ループの手順は次のとおりです。
 
-1. IntelliTest により、[制約ソルバー](#constraint-solver)を使用して、`q(i)=false` のように入力 `i` が決定されます。 構造により、入力 `i` では新しい実行パスが使用されます。 最初は、これが意味するのは、`i` が何らかの入力になることです。実行パスが見つけられていないためです。
+1. IntelliTest により、`i`制約ソルバー`q(i)=false`を使用して、[ のように入力 ](#constraint-solver) が決定されます。 構造により、入力 `i` では新しい実行パスが使用されます。 最初は、これが意味するのは、`i` が何らかの入力になることです。実行パスが見つけられていないためです。
 
 1. IntelliTest により、選択された入力 `i` でテストが実行され、テストの実行とテスト対象のプログラムが監視されます。
 
@@ -61,7 +61,7 @@ IntelliTest は [Z3](https://github.com/Z3Prover/z3/wiki) 制約ソルバーを�
 
 IntelliTest の[制約ソルバー](#constraint-solver)は、テストとテスト対象のプログラムに対して異なる実行パスをトリガーするために、**byte**、**int**、**float** などのプリミティブ型のテスト入力値を決定します。
 
-## <a name="objects"></a>オブジェクト
+## <a name="objects"></a>Objects
 
 IntelliTest で[既存の .NET クラスのインスタンスを作成](#existing-classes)できます。また、特定のインターフェイスを実装し、用途に応じて異なる方法で動作する[モック オブジェクトの作成](#parameterized-mocks)を IntelliTest を使用して自動で行うこともできます。
 
@@ -77,7 +77,7 @@ IntelliTest は、テストとテスト対象のプログラムを実行する�
 
 型が表示されない場合や、フィールドが[表示](#visibility)されない場合、IntelliTest のみでオブジェクトを作成して、適切な状態にし、最大のコード カバレッジを実現することはできません。 IntelliTest の場合はリフレクションを使用して、任意の方法でインスタンスを作成して初期化することが可能ですが、通常、これは望ましくありません。オブジェクトが、通常のプログラム実行時には発生することのない状態になる可能性があるためです。 代わりに、IntelliTest はユーザーからのヒントに依存します。
 
-## <a name="visibility"></a>可視性
+## <a name="visibility"></a>表示
 
 .NET には、詳細な可視性モデルがあります。型、メソッド、フィールド、その他のメンバーを**プライベート**、**パブリック**、**内部**などにすることができます。
 
@@ -129,10 +129,10 @@ IntelliTest は、適切なプログラムの動作をトリガーするのに�
 
 [PexChoose](static-helper-classes.md#pexchoose) 静的クラスを使用して、テストへの追加入力を取得することができ、[パラメーター化されたモック](#parameterized-mocks)を実装できます。
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。
 
 ## <a name="further-reading"></a>関連項目
 
-* [しくみ](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [それはどのように機能しますか?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

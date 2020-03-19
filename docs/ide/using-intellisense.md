@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565345"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio での IntelliSense
 
-IntelliSense は、メンバーの一覧、パラメーター ヒント、クイック ヒント、入力候補などの多くの機能を含むコード補完機能です。 これらの機能により、使用中のコードに関する情報の確認、入力中のパラメーターの追跡、プロパティおよびメソッドの呼び出しの追加などが、わずかなキーストロークで可能になります。
+IntelliSense とは、メンバーの一覧、パラメーター ヒント、クイック ヒント、入力候補など多数の機能を含むコード補完機能です。 これらの機能により、使用中のコードに関する情報の確認、入力中のパラメーターの追跡、プロパティおよびメソッドの呼び出しの追加などが、わずかなキーストロークで可能になります。
 
 IntelliSense には、言語によって異なる要素が多数あります。 各言語の IntelliSense の詳細については、「[関連項目](#see-also)」セクションに示されているトピックを参照してください。
 
@@ -83,10 +83,10 @@ IntelliSense オプションは、既定でオンになっています。 これ
 ## <a name="intellisense-icons"></a>IntelliSense アイコン
 IntelliSense のアイコンでは、アイコン修飾子を使用して追加の意味を伝えることができます。 これらはオブジェクトのアイコンの上に重ねられた星、ハート、およびロックであり、それぞれ、保護、内部、非公開を伝えるものです。
 
-|    アイコン    |    ユーザー補助    |    説明    |
+|    アイコン    |    ユーザー補助    |    [説明]    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![パブリック アイコン修飾子](../ide/media/intellisensePublicNoModifier.png)       |    パブリック クラス    |    アクセスは無制限です。   |
-| ![保護されたアイコン修飾子](../ide/media/intellisenseProtectedModifier.png)       |    保護されたクラス    |    コンテナーであるクラスまたはそこから派生した型にアクセスが限定されます。    |
+| ![保護されたアイコン修飾子](../ide/media/intellisenseProtectedModifier.png)       |    プロテクト クラス    |    コンテナーであるクラスまたはそこから派生した型にアクセスが限定されます。    |
 | ![保護された内部アイコン修飾子](../ide/media/intellisenseProtectedInternalModifier.png)       |    保護された内部クラス    |    現在のアセンブリ、または包含クラスから派生した型にアクセスが限定されます。    |
 | ![内部アイコン修飾子](../ide/media/intellisenseInternalModifier.png)       |    内部クラス    |    アクセスは現在のアセンブリに限定されます。    |
 |![非公開アイコン修飾子](../ide/media/intellisensePrivateModifier.png)        |    非公開クラス    |    包含クラス、または包含クラスから派生した型にアクセスが制限されます。 (C# 7.2 以降で使用可能)    |
@@ -107,7 +107,7 @@ MessageBox( hWnd, "String literal|")
 
 **自動オプションがオフになっている。** 既定では、IntelliSense は自動的に動作しますが、無効にすることもできます。 入力候補がオフになっている場合でも、IntelliSense 機能は起動できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Basic の IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

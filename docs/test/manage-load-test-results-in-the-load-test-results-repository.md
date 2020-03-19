@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd0562a6cceeb50d43222a7850de11d52b0587cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584427"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>ロード テストの結果リポジトリ内のロード テスト結果の管理
@@ -45,18 +45,18 @@ Visual Studio Enterprise をインストールすると、ロード テストの
 
 |タスク|関連するトピック|
 |-|-----------------------|
-|**ロード テストの結果リポジトリを設定する:** SQL データベース上にロード テストの結果リポジトリを設定できます。 **注:** ロード テスト リポジトリはテスト コントローラーをインストールするときに作成することもできます。 詳細については、[テスト エージェントのインストールと構成](../test/lab-management/install-configure-test-agents.md)に関するページを参照してください。||
-|**結果リポジトリの選択と表示:** 特定の結果リポジトリを選択できます。 結果ストアはローカルの結果ストアに限定されていません。 多くの場合、ロード テストは複数のリモート エージェント コンピューターで実行されます。 エージェントまたはローカル コンピューターからのテスト結果は、ロード テストの結果ストアを作成した SQL サーバーのいずれかに保存できます。 いずれの場合も、 **[テスト コントローラーの管理]** ウィンドウを使用して、ロード テストの結果を保存する場所を指定する必要があります。|-   [方法: ロード テストの結果リポジトリを選択する](../test/how-to-select-a-load-test-results-repository.md)<br />-   [方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)|
-|**ロード テストの結果をリポジトリから削除する:** ロード テストの結果を**ロード テスト エディター**から削除するには、 **[ロード テストの結果を開いて管理]** ダイアログ ボックスを使用します。|-   [方法: ロード テスト結果をリポジトリから削除する](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**エクスポート結果をリポジトリにインポートする:** ロード テストの結果は、**ロード テスト エディター**からインポートおよびエクスポートできます。|-   [方法: ロード テスト結果をリポジトリにインポートする](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [方法: ロード テスト結果をリポジトリからエクスポートする](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**ロード テストの結果リポジトリの設定:** SQL データベースに、ロード テストの結果リポジトリを設定できます。 **注:**  ロード テスト リポジトリは、テスト コントローラーをインストールするときに作成することもできます。 詳細については、[テスト エージェントのインストールと構成](../test/lab-management/install-configure-test-agents.md)に関するページを参照してください。||
+|**結果リポジトリの選択と表示:** 特定の結果リポジトリを選択できます。 結果ストアはローカルの結果ストアに限定されていません。 多くの場合、ロード テストは複数のリモート エージェント コンピューターで実行されます。 エージェントまたはローカル コンピューターからのテスト結果は、ロード テストの結果ストアを作成した SQL サーバーのいずれかに保存できます。 いずれの場合も、 **[テスト コントローラーの管理]** ウィンドウを使用して、ロード テストの結果を保存する場所を指定する必要があります。|-   [方法 : ロード テストの結果リポジトリを選択する](../test/how-to-select-a-load-test-results-repository.md)<br />-   [方法 : ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)|
+|**リポジトリからロード テストの結果を削除:** **[ロード テストの結果を開いて管理]** ダイアログ ボックスを使用して、**ロード テスト エディター**からロード テストの結果を削除できます。|-   [方法: ロード テスト結果をリポジトリから削除する](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**リポジトリへの結果のインポートおよびリポジトリからの結果のエクスポート:** **ロード テスト エディター**で、ロード テストの結果をインポートおよびエクスポートすることができます。|-   [方法: ロード テスト結果をリポジトリにインポートする](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [方法: ロード テスト結果をリポジトリからエクスポートする](../test/how-to-export-load-test-results-from-a-repository.md)|
 
-## <a name="related-tasks"></a>関連するタスク
+## <a name="related-tasks"></a>関連タスク
 
 [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 実行中のロード テストの結果と完了したロード テストの結果は両方とも**ロード テスト アナライザー**を使用して表示できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)
+- [方法 : ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)

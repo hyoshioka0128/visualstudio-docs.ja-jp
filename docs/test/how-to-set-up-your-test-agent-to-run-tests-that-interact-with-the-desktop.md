@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588968"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>方法: テスト エージェントを設定して、デスクトップと対話するテストを実行する
@@ -42,7 +42,7 @@ ms.locfileid: "75588968"
 
    ![Visual Studio 用のテスト エージェントを構成する](media/configure-test-agent.png)
 
-2. **[対話型プロセス]** を選択します。 テスト エージェントは、サービスではなくプロセスとして起動されます。 **[次へ]** をクリックします。
+2. **[対話型プロセス]** を選択します。 テスト エージェントは、サービスではなくプロセスとして起動されます。 **[次へ]** を選択します。
 
 3. テスト エージェントのプロセスを実行するユーザーのユーザー名とパスワードを入力します。
 
@@ -75,6 +75,6 @@ ms.locfileid: "75588968"
 
    このテスト エージェントのテスト コントローラーが Team Foundation Server に登録されている場合、対話型プロセスとして実行されているテスト エージェントの状態が Microsoft Test Manager の **[ラボ センター]** の **[コントローラー]** ビューに表示されます。 対話型プロセスとして実行されていることを示すために、前にアスタリスク (*) 記号が付いています。 このテスト エージェントを再開するには、 **[コントローラー]** ビューではなく、テスト エージェントのコンピューターで実行されるツールを使用する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)

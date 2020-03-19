@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307221"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
@@ -68,7 +68,7 @@ npm パッケージはソリューション エクスプローラーに表示さ
 * ![足りないパッケージ](../javascript/media/missing-npm.png) - インストールされていないが、package.json のリストに入っている
 
 パッケージ ノードまたは **npm** ノードを右クリックし、次のいずれかのアクションを行います。
-* *package.json* のリストに入っている**足りないパッケージをインストールする**
+* **package.json** のリストに入っている*足りないパッケージをインストールする*
 * 最新バージョンに**パッケージを更新する**
 * **パッケージをアンインストールし**、*package.json* から削除する
 

@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: データベース プロジェクトの階層の相互作用の測定を収集します | Microsoft Docs'
+title: 'DA0030: データベース プロジェクトの階層の相互作用の測定を収集します。 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,20 +14,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777477"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: データベース プロジェクトの階層の相互作用の測定を収集します
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: データベース プロジェクトの階層相互作用の測定値を収集します
 
 |||
 |-|-|
 |規則 ID|DA0030|
 |カテゴリ|プロファイリング ツールの使用|
 |プロファイル方法|サンプリング|
-|メッセージ|多層アプリケーションの相互作用の測定値を収集すると、データベースの使用パターンと重要なデータのアクセス遅延を知ることができます。 階層の相互作用のプロファイル オプションを有効にして、再度アプリケーションのプロファイリングを試みてください。|
+|[メッセージ]|多層アプリケーションの相互作用の測定値を収集すると、データベースの使用パターンと重要なデータのアクセス遅延を知ることができます。 階層の相互作用のプロファイル オプションを有効にして、再度アプリケーションのプロファイリングを試みてください。|
 |規則の種類|情報|
 
 ## <a name="cause"></a>原因

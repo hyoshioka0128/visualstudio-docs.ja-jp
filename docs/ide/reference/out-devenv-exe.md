@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568012"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -39,9 +39,9 @@ devenv /Out FileName
 
 - *FileName*
 
-  必須です。 実行可能ファイルのビルド時に出力を受け取るファイルのパスと名前です。
+  必須。 実行可能ファイルのビルド時に出力を受け取るファイルのパスと名前です。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 指定したファイル名が存在しない場合は、ファイルが自動的に作成されます。 ファイルが既に存在する場合、結果はファイルの既存の内容に追加されます。
 
@@ -55,7 +55,7 @@ devenv /Out FileName
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634410"
 ---
 # <a name="compare-properties-and-items"></a>プロパティと項目を比較する
@@ -43,7 +43,7 @@ MSBuild プロパティは 1 つの文字列値のみを持つ名前と値のペ
 </PropertyGroup>
 ```
 
-通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 たとえば、オブジェクトに適用された
+通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 次に例を示します。
 
 ```xml
 <PropertyGroup>
@@ -71,7 +71,7 @@ MSBuild は、項目の種類と文字列値の変換を必要に応じて実行
 </PropertyGroup>
 ```
 
-項目の種類 OutputDir には、"KeyFiles\\;Certificates\\" という値の `Include` 属性があります。 MSBuild は、この文字列を 2 つの項目KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。
+項目の種類 OutputDir には、"KeyFiles`Include`;Certificates\\" という値の \\ 属性があります。 MSBuild は、この文字列を 2 つの項目 KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。
 
 ## <a name="properties-and-items-in-tasks"></a>タスクのプロパティと項目
 
@@ -185,6 +185,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

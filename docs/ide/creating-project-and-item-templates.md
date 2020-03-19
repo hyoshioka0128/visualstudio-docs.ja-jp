@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589761"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306909"
 ---
 # <a name="project-and-item-templates"></a>プロジェクト テンプレートと項目テンプレート
 
@@ -27,7 +27,7 @@ Visual Studio では、複数の定義済みのプロジェクト テンプレ�
 
 これらのテンプレートは、ユーザーがプロジェクトの作成を開始したり、既存プロジェクトを拡張したりするための開始点を提供します。 プロジェクト テンプレートには、特定の種類のプロジェクトで必要になるファイルが用意されており、標準のアセンブリ参照が含まれています。また、ここで既定のプロパティとコンパイラ オプションが設定されます。 項目テンプレートの複雑さは、特定のファイル拡張子を持つ 1 つの空のファイルから、スタブ コードを含む複数のソース コード ファイル、デザイナー情報ファイル、埋め込みリソースまで、さまざまです。
 
-インストール済みテンプレートを使用したり、独自のカスタム テンプレートを作成したり、コミュニティで作成されたテンプレートをダウンロードして使用したりできます。 詳細については、[プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)」と「[方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。
+インストール済みテンプレートを使用したり、独自のカスタム テンプレートを作成したり、コミュニティで作成されたテンプレートをダウンロードして使用したりできます。 詳細については、「[方法: プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)」および「[方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。
 
 ## <a name="contents-of-a-template"></a>テンプレートの内容
 
@@ -65,9 +65,9 @@ Visual Studio では、複数の定義済みのプロジェクト テンプレ�
 
 - 項目テンプレートは、 **[新しい項目の追加]** ウィンドウに表示されます。
 
-テンプレート フォルダーの詳細については、「[方法:テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+テンプレート フォルダーについては、「[方法: テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)
 - [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)

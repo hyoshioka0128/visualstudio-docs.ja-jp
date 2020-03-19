@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633773"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>方法: 予約済みの XML 文字をプロジェクト ファイルで使用する
@@ -32,7 +32,7 @@ ms.locfileid: "77633773"
 |>|&amp;gt;|
 |&|&amp;amp;|
 |"|&amp;quot;|
-|'|&amp;apos;|
+|' を返します。|&amp;apos;|
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>プロジェクト ファイルで二重引用符を使用するには
 
@@ -73,7 +73,7 @@ ms.locfileid: "77633773"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

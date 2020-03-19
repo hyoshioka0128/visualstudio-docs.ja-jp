@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778753"
 ---
 # <a name="how-to-set-the-current-session"></a>方法: 現在のセッションを設定する
@@ -35,7 +35,7 @@ ms.locfileid: "74778753"
 
      セッション名が太字で表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [パフォーマンス エクスプローラー ウィンドウ](../profiling/performance-explorer-window.md)

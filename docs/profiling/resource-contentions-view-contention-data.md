@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778337"
 ---
 # <a name="resource-contentions-view---contention-data"></a>リソースの競合ビュー - 競合データ
@@ -40,7 +40,7 @@ ms.locfileid: "74778337"
 
 ## <a name="navigating-the-resource-allocation-view"></a>リソース割り当てビュー内の移動
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
 |**Name**|リソースや関数の名前。|
 |**排他ブロック時間**|-   リソースの場合、リソースへのアクセスがブロックされたことでスレッドに発生した待ち時間の合計。<br />-   関数の場合、関数でその関数本体のコードを実行したときに、関数のこれらのインスタンスによる親リソースへのアクセスがブロックされていた時間。 この関数によって呼び出された関数のブロック時間は含まれません。|
@@ -57,4 +57,4 @@ ms.locfileid: "74778337"
 |**モジュール パス**|関数を含むモジュールのパスです。|
 |**プロセス ID**|関数を実行したプロセスのプロセス ID (PID)。|
 |**プロセス名**|プロセスの名前です。|
-|**ソース ファイル**|この関数の定義を含むソース ファイルです。|
+|**[転送元ファイル]**|この関数の定義を含むソース ファイルです。|

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f72dbd687bc9177cd4cfd36416acb23445d30c8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589046"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>方法: ロード テスト結果をリポジトリからエクスポートする
@@ -42,7 +42,7 @@ ms.locfileid: "75589046"
 
 5. **[ロード テストの結果]** ボックスの一覧で、いずれかの結果を選択します。 **Shift** キーまたは **Ctrl** キー、あるいはその両方を使用して複数の結果を選択し、それらを 1 つのファイルにエクスポートできます。
 
-6. **[エクスポート]** を選択します。
+6. **[Export]\(エクスポート\)** を選択します。
 
      **[ロード テストの結果のエクスポート]** ダイアログ ボックスが表示されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589046"
     > [!NOTE]
     > 結果が表示された後も **[ロード テストの結果を開いて管理]** ダイアログ ボックスは開いたままです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果リポジトリ内のロード テスト結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [方法: ロード テスト結果をリポジトリから削除する](../test/how-to-delete-load-test-results-from-a-repository.md)

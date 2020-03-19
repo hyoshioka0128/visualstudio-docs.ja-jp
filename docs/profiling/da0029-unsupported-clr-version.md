@@ -1,5 +1,5 @@
 ---
-title: DA0029:サポートされていない CLR バージョンです | Microsoft Docs
+title: 'DA0029: サポートされていない CLR バージョンです | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,21 +17,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777516"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029:サポートされていない CLR バージョンです
+# <a name="da0029-unsupported-clr-version"></a>DA0029: サポートされていない CLR バージョンです
 
 |||
 |-|-|
 |規則 ID|DA0029|
 |カテゴリ|プロファイリング ツールの使用|
 |プロファイル方法|コマンド ラインからのプロファイリング|
-|メッセージ|収集時に、サポートされていない CLR バージョンが検出されました。 マネージド シンボルが正しく解決されない可能性があります。|
-|規則の種類|情報。|
+|[メッセージ]|収集時に、サポートされていない CLR バージョンが検出されました。 マネージド シンボルが正しく解決されない可能性があります。|
+|規則の種類|Information です。|
 
 ## <a name="cause"></a>原因
  プロファイリング ツールでサポートされていない [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] を使用するアプリケーションをプロファイリングしようとしています。
@@ -40,4 +40,4 @@ ms.locfileid: "74777516"
  アプリケーションで実行されているマネージド コードのシンボルをプロファイリング ツールが解決できないため、この警告が発生します。 プロファイリング ツールは、[!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] を実行しているアプリケーションのマネージド コード シンボルを解決できません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- なし。
+ ありません。

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96326910a04294e30c410cc96bf9c600bfb3f17c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589456"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>方法: ジオメトリベースのグラデーション シェーダーを作成する
@@ -25,7 +25,7 @@ ms.locfileid: "75589456"
 
 開始する前に、 **[プロパティ]** ウィンドウと**ツールボックス**が表示されていることを確認します。
 
-1. 操作する DGSL シェーダーを作成します。 プロジェクトに DGSL シェーダーを追加する方法に関する詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「作業の開始」セクションを参照してください。
+1. 操作する DGSL シェーダーを作成します。 プロジェクトに DGSL シェーダーを追加する方法については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「作業の開始」を参照してください。
 
 2. **[最終的な色]** ノードから **[ポイントの色]** ノードを接続解除します。 **[ポイントの色]** ノードの **[RGB]** ターミナルを選択し、 **[リンクの解除]** を選択します。 これにより、次の手順で追加するノードのための領域を確保できます。
 
@@ -50,15 +50,15 @@ ms.locfileid: "75589456"
 
 ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-gradient-effect-graph.png)
 
-シェーダーによっては、特定の図形を使用すると、より適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「**シェーダーのプレビュー**」を参照してください。
+シェーダーによっては、特定の図形でより適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法については、「**シェーダー デザイナー**」の「[シェーダーのプレビュー](../designers/shader-designer.md)」を参照してください。
 
-次の図は、このドキュメントで説明したシェーダーを「[方法:3D 地形をモデル化する](../designers/how-to-model-3-d-terrain.md)」に示した 3D シーンに適用したものです。 ここでは、色の輝度とワールド空間のポイントの高さが共に増加しています。
+次の図は、このドキュメントで説明したシェーダーを「[方法: 3D 地形をモデル化する](../designers/how-to-model-3-d-terrain.md)」に示した 3D シーンに適用したものです。 ここでは、色の輝度とワールド空間のポイントの高さが共に増加しています。
 
 ![3&#45;D 地形モデルに適用されたグラデーション効果](../designers/media/digit-gradient-effect-result.png)
 
-3D モデルにシェーダーを適用する方法の詳細については、「[方法:シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
+3D モデルにシェーダーを適用する方法の詳細については、「[方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)

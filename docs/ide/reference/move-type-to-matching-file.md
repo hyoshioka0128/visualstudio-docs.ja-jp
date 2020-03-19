@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585272"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>一致するファイルへの型の移動リファクタリング
@@ -26,13 +26,13 @@ ms.locfileid: "75585272"
 
 - Visual Basic
 
-**概要:** 選択した型を同じ名前の別のファイルに移動できます。
+**機能:** 選択した型を同じ名前の別のファイルに移動できます。
 
 **条件:** 同じファイルに複数のクラス、構造体、インターフェイスなどがあり、分離したいとき。
 
 **理由:** 同じファイルに複数の型を配置すると、これらの型を検索しづらくなります。 型を同じ名前のファイルに移動することで、コードが読みやすくナビゲートしやすくなります。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. 定義されている型の名前の中にカーソルを配置します。 次に例を示します。
 
@@ -61,6 +61,6 @@ ms.locfileid: "75585272"
 
       ![インラインの結果 - Visual Basic](media/movetype-result-vb.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [リファクタリング](../refactoring-in-visual-studio.md)

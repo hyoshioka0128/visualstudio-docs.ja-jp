@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594306"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306999"
 ---
 # <a name="attribute-glossary"></a>属性の解説
 
@@ -124,7 +124,7 @@ IntelliTest は従来のパラメーターなしのテストを生成し、こ�
 パラメーター化された単体テスト:
 
 * インスタンス メソッドである必要があります
-* 生成されたテストが[設定ウォーターフォール](settings-waterfall.md)に従って配置されるテスト クラスに対して[可視](input-generation.md#visibility)である必要があります
+* 生成されたテストが[設定ウォーターフォール](input-generation.md#visibility)に従って配置されるテスト クラスに対して[可視](settings-waterfall.md)である必要があります
 * 任意の数のパラメーターを受け取ることができます
 * ジェネリックでもかまいません
 
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [詳細情報](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633097"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild の既知の項目メタデータ
@@ -33,13 +33,13 @@ ms.locfileid: "77633097"
 </ItemGroup>
 ```
 
-|項目メタデータ|説明|
+|項目メタデータ|[説明]|
 |-------------------|-----------------|
 |%(FullPath)|アイテムの完全パスが含まれます。 次に例を示します。<br /><br /> *C:\MyProject\Source\Program.cs*|
 |%(RootDir)|アイテムのルート ディレクトリが含まれます。 次に例を示します。<br /><br /> *C:\\*|
 |%(Filename)|拡張子の付かない、アイテムのファイル名が含まれます。 次に例を示します。<br /><br /> *Program*|
 |%(Extension)|アイテムのファイル名の拡張子が含まれます。 次に例を示します。<br /><br /> *.cs*|
-|%(RelativeDir)|`Include` 属性に指定されたパスが最後の円記号 (\\) まで含まれます。 次に例を示します。<br /><br /> *Source\\*<br /><br /> `Include` 属性が完全パスの場合、`%(RelativeDir)` はルート ディレクトリ `%(RootDir)` で始まります。  次に例を示します。 <br /><br /> *C:\MyProject\Source\\*|
+|%(RelativeDir)|`Include` 属性に指定されたパスが最後の円記号 (\\) まで含まれます。 次に例を示します。<br /><br /> *ソース\\*<br /><br /> `Include` 属性が完全パスの場合、`%(RelativeDir)` はルート ディレクトリ `%(RootDir)` で始まります。  次に例を示します。 <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|ルート ディレクトリのないアイテムのディレクトリが含まれます。 次に例を示します。<br /><br /> *MyProject\\Source\\*|
 |%(RecursiveDir)|`Include` 属性にワイルドカード \*\* が含まれる場合、このメタデータはワイルドカードを置き換えるパスの一部を指定します。 ワイルドカードの詳細については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」を参照してください。<br /><br /> *C:\MySolution\MyProject\Source\\* フォルダーに *Program.cs* ファイルが格納されている場合、およびプロジェクト ファイルに次のアイテムが含まれている場合:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` の値は *MySolution\MyProject\Source\\* です。|
 |%(Identity)|`Include` 属性で指定されたアイテム。 次に例を示します。<br /><br /> *Source\Program.cs*|
@@ -47,8 +47,8 @@ ms.locfileid: "77633097"
 |%(CreatedTime)|アイテムが作成された時間からのタイムスタンプが含まれます。 次に例を示します。<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|アイテムが最後にアクセスされた時間からのタイムスタンプが含まれます。<br /><br /> `2004-08-14 16:52:36.3168743`|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [項目](../msbuild/msbuild-items.md)
+- [アイテム](../msbuild/msbuild-items.md)
 - [バッチ処理](../msbuild/msbuild-batching.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

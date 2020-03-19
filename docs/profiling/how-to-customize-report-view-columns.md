@@ -15,30 +15,30 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778974"
 ---
 # <a name="how-to-customize-report-view-columns"></a>方法: レポート ビューの列をカスタマイズする
 Visual Studio Team System Development Edition のパフォーマンス ツールは、統合開発環境 (IDE) に完全に統合されており、シームレスなユーザー エクスペリエンスを提供します。 次のリストは、列を追加、削除、再配置してカスタマイズできる代表的なビューです。
 
-- [モジュール ビュー](../profiling/modules-view.md)
+- [[モジュール] ビュー](../profiling/modules-view.md)
 
 - [関数 ビュー](../profiling/functions-view.md)
 
-- [行 ビュー](../profiling/lines-view.md)
+- [行ビュー](../profiling/lines-view.md)
 
 - [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view.md)
 
 - [呼び出し元/呼び出し先 ビュー](../profiling/caller-callee-view.md)
 
-- [コール ツリー ビュー](../profiling/call-tree-view.md)
+- [[コール ツリー] ビュー](../profiling/call-tree-view.md)
 
 - [割り当て ビュー](../profiling/dotnet-memory-allocations-view.md)
 
-- [オブジェクトの有効期間 ビュー](../profiling/object-lifetime-view.md)
+- [オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)
 
 - [マーク ビュー](../profiling/marks-view.md)
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588838"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>方法: プロジェクトにクラス ダイアグラムを追加する
@@ -51,7 +51,7 @@ ms.locfileid: "75588838"
    > [!NOTE]
    > **クラス ダイアグラム** テンプレートが表示されない場合は、[この手順に従って](#install-the-class-designer-component)、Visual Studio 用の**クラス デザイナー** コンポーネントをインストールします。
 
-   クラス デザイナーでクラス ダイアグラムが開き、**ソリューション エクスプローラー**に *.cd* 拡張子付きのファイルとして表示されます。 **[ツールボックス]** からダイアグラムに図形と線をドラッグできます。
+   クラス デザイナーでクラス ダイアグラムが開き、*ソリューション エクスプローラー*に **.cd** 拡張子付きのファイルとして表示されます。 **[ツールボックス]** からダイアグラムに図形と線をドラッグできます。
 
 複数のクラス ダイアグラムを追加するには、この手順を繰り返します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "75588838"
 
 **ソリューション エクスプローラー**で、クラス ファイルのコンテキスト メニューを開き (右クリック)、 **[クラス ダイアグラムの表示]** を選択します。
 
-\- または -
+または
 
 **[クラス ビュー]** で、名前空間または型のコンテキスト メニューを開き、 **[クラス ダイアグラムで表示]** を選択します。
 
@@ -75,7 +75,7 @@ ms.locfileid: "75588838"
 > [!NOTE]
 > クラス デザイナーは .NET Core プロジェクトで使用できません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: クラス デザイナーを使用して型を作成する](how-to-create-types.md)
 - [方法: 既存の型を表示する](how-to-view-existing-types.md)

@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588799"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>[オプション]、[テキスト エディター]、[すべての言語]、[スクロール バー]
@@ -86,6 +86,6 @@ ms.locfileid: "75588799"
 > [!TIP]
 > **[ソースの概要]** を **[オフ]** に設定すると、マップ モードの縮小版のコード ビューをオフにすることができます。 **[プレビュー ツール ヒントの表示]** を選択すると、スクロール バーにポインターを置いたときにその場所のコードのプレビューが表示され、クリックすると、ファイルのその位置にカーソルがジャンプするようになります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: スクロール バーのカスタマイズ](../how-to-track-your-code-by-customizing-the-scrollbar.md)

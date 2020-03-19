@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597140"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>既存のアプリケーションを MSBuild 15 用に更新する
@@ -95,4 +95,4 @@ MSBuildLocator.RegisterDefaults();
 
 上の呼び出しをアプリケーションのスタートアップ コードに追加します。
 
-MSBuild の読み込みを細かく制御したい場合は、`MSBuildLocator.RegisterInstance()` に渡す `MSBuildLocator.QueryVisualStudioInstances()` の結果を手動で選択できますが、これは通常であれば必要ありません。
+MSBuild の読み込みを細かく制御したい場合は、`MSBuildLocator.QueryVisualStudioInstances()` に渡す `MSBuildLocator.RegisterInstance()` の結果を手動で選択できますが、これは通常であれば必要ありません。

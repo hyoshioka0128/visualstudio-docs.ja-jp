@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585471"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Visual Studio で新しいプロジェクトを作成する
@@ -99,6 +99,6 @@ Visual Studio 開発環境が既に開いている場合は、メニュー バ�
 
 ソリューションにさらにプロジェクトを追加する場合は、**ソリューション エクスプローラー**内でソリューション ノードを右クリックして、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューションとプロジェクトの作成](creating-solutions-and-projects.md)

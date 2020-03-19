@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557933"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -39,9 +39,9 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  必須です。 指定する言語のロケール識別子 (LCID)。
+  必須。 指定する言語のロケール識別子 (LCID)。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 IDE を読み込み、環境用の既定の自然言語を設定します。 この変更はセッションが変わっても保持され、IDE の **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[国際対応の設定]**  >  **[言語]** ボックスにこの変更が表示されます。
 
@@ -53,18 +53,18 @@ Visual Studio でサポートされる言語の LCID の一覧を次の表に示
 |--------------|----------|
 |簡体中国語|2052|
 |繁体中国語|1028|
-|チェコ語|1029|
-|英語|1033|
-|フランス語|1036|
-|ドイツ語|1031|
-|イタリア語|1040|
+|Czech|1029|
+|English|1033|
+|French|1036|
+|German|1031|
+|Italian|1040|
 |日本語|1041|
-|韓国語|1042|
-|ポーランド語|1045|
+|Korean|1042|
+|Polish|1045|
 |ポルトガル語 (ブラジル)|1046|
-|ロシア語|1049|
-|スペイン語|3082|
-|トルコ語|1055
+|Russian|1049|
+|Spanish|3082|
+|Turkish|1055
 
 ## <a name="example"></a>例
 
@@ -74,7 +74,7 @@ Visual Studio でサポートされる言語の LCID の一覧を次の表に示
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
 - [[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/international-settings-environment-options-dialog-box.md)
