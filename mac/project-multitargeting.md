@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 12/12/2019
 ms.assetid: 2a561af4-f1fe-493e-9a53-aa6d77d15498
 ms.openlocfilehash: 3d1372ab5bd08ce164352293ec9d341ca567e3d5
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439044"
 ---
 # <a name="projects-with-multiple-target-frameworks"></a>複数のターゲット フレームワークを持つプロジェクト
@@ -23,7 +23,7 @@ Visual Studio for Mac では、いくつかの .NET Framework バージョンの
 
 ## <a name="targeting-multiple-frameworks"></a>複数のフレームワークをターゲットにする
 
-ターゲット フレームワークはプロジェクト ファイル内で指定されます。これを編集するには、プロジェクトを右クリックし、 **[ツール] > [ファイルの編集]** コマンドを選択します。 単一のターゲット フレームワークを指定するときは、TargetFramework 要素を使います。 次のコンソール アプリのプロジェクト ファイルでは、.NET Core 3.0 をターゲットにする方法が示されています。
+ターゲット フレームワークはプロジェクト ファイル内で指定されます。これを編集するには、プロジェクトを右クリックし、**[ツール] > [ファイルの編集]** コマンドを選択します。 単一のターゲット フレームワークを指定するときは、TargetFramework 要素を使います。 次のコンソール アプリのプロジェクト ファイルでは、.NET Core 3.0 をターゲットにする方法が示されています。
 
 ```XML
 <Project Sdk="Microsoft.NET.Sdk">
@@ -75,7 +75,7 @@ public class MyClass
 
 ![IntelliSense に表示される警告メッセージ。指定されたターゲット フレームワークに対して API が機能しません。 テキストの例: 名前空間 System.Buffers、SharedUtils (netstandard2.0) - 使用できません。 ナビゲーション バーを使用してコンテキストを切り替えることができます。](media/project-multitargeting-intellisense-warnings.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [フレームワーク対象設定機能の概要 (Windows)](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [SDK スタイルのプロジェクトでのターゲット フレームワーク](/dotnet/standard/frameworks#how-to-specify-target-frameworks)

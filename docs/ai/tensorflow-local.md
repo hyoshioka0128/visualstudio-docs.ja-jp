@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777432"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>TensorFlow モデルをローカルにトレーニングする
@@ -23,7 +23,7 @@ ms.locfileid: "72777432"
 
 MNIST データベースには、60,000 例のトレーニング セットと、手書きの数字の 10,000 例のテスト セットが含まれます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 始める前に、次のものがインストールされていることを確認します。
 
@@ -38,12 +38,12 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy と SciPy
 [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) と [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy) をインストールします。
 
-### <a name="download-sample-code"></a>サンプル コードをダウンロードする
+### <a name="download-sample-code"></a>サンプル コードのダウンロード
 TensorFlow、CNTK、Theano などでディープ ラーニングを始めるためのサンプルを含むこの [GitHub リポジトリ](https://github.com/Microsoft/samples-for-ai)をダウンロードします。
 
 ## <a name="open-solution-and-train-model"></a>ソリューションを開いてモデルをトレーニングする
 
-- Visual Studio を起動し、 **[ファイル] > [開く] > [プロジェクト/ソリューション]** の順に選びます。
+- Visual Studio を起動し、**[ファイル] > [開く] > [プロジェクト/ソリューション]** の順に選びます。
 
 - ダウンロードしたサンプル リポジトリで **Tensorflow Examples** フォルダーを選び、**TensorflowExamples.sln** ファイルを開きます。
 
@@ -51,7 +51,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 
    ![ソリューションを開く](media/tensorflow-local/open-solution.png)
 
-- **ソリューション エクスプローラー**で MNIST プロジェクトを探して右クリックし、 **[スタートアップ プロジェクトに設定]** を選びます。
+- **ソリューション エクスプローラー**で MNIST プロジェクトを探して右クリックし、**[スタートアップ プロジェクトに設定]** を選びます。
 
 - **[開始]** をクリックします。
 

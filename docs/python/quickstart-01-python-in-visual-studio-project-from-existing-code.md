@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62429089"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>クイック スタート: 既存のコードから Python プロジェクトを作成する
@@ -26,14 +26,14 @@ ms.locfileid: "62429089"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-必要に応じて、**Ctrl** + **F5** キーを押すか、**[デバッグ]** > **[デバッグなしで開始]** の順に選択して、プログラムを実行します。
+必要に応じて、**Ctrl**+**F5** キーを押すか、**[デバッグ]** > **[デバッグなしで開始]** の順に選択して、プログラムを実行します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [チュートリアル: Visual Studio での Python の使用](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [既存の Python インタープリターを手動で識別する](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Visual Studio 2015 以前の Python サポートをインストールする](installing-python-support-in-visual-studio.md)

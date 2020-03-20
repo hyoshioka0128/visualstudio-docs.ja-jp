@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430069"
 ---
 # <a name="step-2-write-and-run-code"></a>手順 2: コードを記述して実行する
@@ -30,7 +30,7 @@ ms.locfileid: "62430069"
 
     ![IntelliSense オートコンプリートのポップアップ](media/vs-getting-started-python-04-IntelliSense1b.png)
 
-1. IntelliSense では、使用しているステートメントや呼び出している関数などに応じて、異なる情報が表示されます。 `print` 関数で、`print` の後に `(` を入力することで、関数呼び出しでその関数のすべての使用情報を表示することを示します。 IntelliSense のポップアップにも、(この例の **value** ように) 現在の引数が太字で示されます。
+1. IntelliSense では、使用しているステートメントや呼び出している関数などに応じて、異なる情報が表示されます。 `print` 関数で、`(` の後に `print` を入力することで、関数呼び出しでその関数のすべての使用情報を表示することを示します。 IntelliSense のポップアップにも、(この例の **value** ように) 現在の引数が太字で示されます。
 
     ![IntelliSense オートコンプリートの関数のポップアップ](media/vs-getting-started-python-05-IntelliSense2b.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "62430069"
     > [!Tip]
     > 開発環境は非常に個人的な問題であるため、Visual Studio では Visual Studio の外観と動作の完全な制御が提供されています。 **[ツール]** > **[オプション]** メニュー コマンドを選択し、**[環境]** と **[テキスト エディター]** タブの下の設定を調べます。 既定では限られた数のオプションしか表示されません。すべてのプログラミング言語のすべてのオプションを表示するには、ダイアログ ボックスの下部で **[すべての設定を表示]** を選択します。
 
-1. **Ctrl** + **F5** キーを押すか、**[デバッグ]** > **[デバッグの開始]** メニュー項目を選択して、このポイントまでに書き込んだコードを実行します。 コードにエラーがまだある場合は、Visual Studio によって警告されます。
+1. **Ctrl**+**F5** キーを押すか、**[デバッグ]** > **[デバッグの開始]** メニュー項目を選択して、このポイントまでに書き込んだコードを実行します。 コードにエラーがまだある場合は、Visual Studio によって警告されます。
 
 1. プログラムを実行すると、コマンド ラインから *PythonApplication1.py* を使用して Python インタープリターを実行した場合と同じように、結果を示すコンソール ウィンドウが表示されます。 キーを押してウィンドウを閉じ、Visual Studio エディターに戻ります。
 
@@ -84,7 +84,7 @@ ms.locfileid: "62430069"
         print(cos(radians(i)))
     ```
 
-1. **Ctrl** + **F5** キーを押すか、**[デバッグ]** > **[デバッグなしで開始]** を選択して、もう一度プログラムを実行します。 完了したら、出力ウィンドウを閉じます。
+1. **Ctrl**+**F5** キーを押すか、**[デバッグ]** > **[デバッグなしで開始]** を選択して、もう一度プログラムを実行します。 完了したら、出力ウィンドウを閉じます。
 
 ## <a name="next-step"></a>次のステップ
 

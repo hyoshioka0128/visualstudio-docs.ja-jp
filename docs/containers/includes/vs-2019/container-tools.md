@@ -8,10 +8,10 @@ ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76922984"
 ---
 Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
@@ -34,7 +34,7 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
    ![[Enable Docker Support]\(Docker サポートを有効にする\) チェック ボックス](../../media/container-tools/vs-2019/create-new-web-application.PNG)
 
-   このスクリーンショットには .NET Core が表示されています。 .NET Framework を使用している場合は、少し異なります。
+   このスクリーンショットには .NET Core が表示されています。.NET Framework を使用している場合は、少し異なります。
 
 1. コンテナーの種類 (Windows または Linux) を選択し、 **[作成]** をクリックします。
 
