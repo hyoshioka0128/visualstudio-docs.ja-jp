@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62958247"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>手順 3: 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
@@ -160,7 +160,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <div><a href="about">About</a></div>
     ```
 
-1. **[ファイル]** > **[すべて保存]** メニュー コマンドを使用するか、または単純に **Ctrl** + **Shift** + **S** キーを押して、すべてのファイルを保存します  (技術的には、Visual Studio でプロジェクトを実行するとファイルが自動的に保存されるので、この手順は必要ありませんが、 知っておくとよいコマンドです)。
+1. **[ファイル]** > **[すべて保存]** メニュー コマンドを使用するか、または単純に **Ctrl**+**Shift**+**S** キーを押して、すべてのファイルを保存します  (技術的には、Visual Studio でプロジェクトを実行するとファイルが自動的に保存されるので、この手順は必要ありませんが、 知っておくとよいコマンドです)。
 
 1. プロジェクトを実行して結果を確認し、ページ間の移動をチェックします。 終わったら、サーバーを閉じます。
 
