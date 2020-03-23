@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633747"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094487"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 
@@ -67,7 +67,7 @@ ms.locfileid: "77633747"
 
  規則により、インポートされた共有プロジェクト ファイルは *.targets* ファイルとして保存されますが、これらは標準の MSBuild プロジェクト ファイルです。 MSBuild では、別のファイル名拡張子を持つプロジェクトをインポートすることもできますが、一貫性のために *.targets* 拡張子を使用することをお勧めします。
 
- インポートされるプロジェクト内の相対パスは、インポートする側のプロジェクトのディレクトリからの相対パスであると解釈されます。 したがって、あるプロジェクト ファイルを別々の場所に存在する複数のプロジェクト ファイルにインポートする場合、インポートされるプロジェクト ファイル内の相対パスは、インポートされるプロジェクトごとに異なって解釈されます。
+ インポートされるプロジェクト内の相対パスは、インポートする側のプロジェクトのディレクトリからの相対パスであると解釈されます (いくつかの例外についてはこの段落の後半で説明します)。 したがって、あるプロジェクト ファイルを別々の場所に存在する複数のプロジェクト ファイルにインポートする場合、インポートされるプロジェクト ファイル内の相対パスは、インポートされるプロジェクトごとに異なって解釈されます。 ただし、例外が 2 つあります。 1 つは、`Import` 要素では、パスは常に、`Import` 要素が含まれるプロジェクトの相対パスとして解釈されることです。 もう 1 つの例外は、`UsingTask` では常に、`AssemblyFile` 属性の相対パスは `UsingTask` 要素が含まれるファイルに相対であるとして解釈されることです。
 
  MSBuild で予約されている、プロジェクト ファイル関連の全プロパティ (例: `MSBuildProjectDirectory`、`MSBuildProjectFile`) は、インポートされたプロジェクトで参照される場合、インポートするプロジェクト ファイルに基づいて値が割り当てられます。
 

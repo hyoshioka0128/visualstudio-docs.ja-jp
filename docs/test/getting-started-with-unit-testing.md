@@ -1,6 +1,6 @@
 ---
 title: 単体テストの概要
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279321"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78289855"
 ---
 # <a name="get-started-with-unit-testing"></a>単体テストの概要
 
@@ -22,7 +22,7 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 ## <a name="create-unit-tests"></a>単体テストの作成
 
-このセクションでは、単体テスト プロジェクトの作成方法に関する概要を説明します。
+このセクションでは、単体テスト プロジェクトの作成方法を説明します。
 
 1. Visual Studio でテストするプロジェクトを開きます。
 
@@ -72,7 +72,7 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 1. 単体テスト メソッドにコードを追加します。
 
-   たとえば、MSTest または NUnit テスト プロジェクトには、次のコードを使用できます。
+   たとえば、MSTest プロジェクトには、次のコードを使用できます。
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,42 @@ Visual Studio を使用して、単体テストを定義および実行してコ
    }
    ```
 
+   あるいは、NUnit プロジェクトの場合、次のコードを使用することもできます。
+
+   ```csharp
+   using using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> 単体テストの作成を詳述するチュートリアルについては、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
+> 単体テストの作成について詳しくは、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
 
 ## <a name="run-unit-tests"></a>単体テストを実行する
 

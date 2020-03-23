@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093946"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
 
@@ -28,7 +28,6 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 - 共通のターゲット (*Microsoft.Common.targets* またはインポートされるファイル) で定義されている特定の定義済みターゲットをオーバーライドする。
 
 - 共通のターゲットで定義されている "DependsOn" プロパティをオーバーライドする。
-## <a name="override-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
 
 ## <a name="override-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
 
@@ -69,6 +68,45 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 |`BeforePublish`、`AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
 |`BeforeResolveReferences`、`AfterResolveReferences`|これらのターゲットのいずれかに挿入されているタスクは、アセンブリ参照解決の前または後に実行されます。|
 |`BeforeResGen`、`AfterResGen`|これらのターゲットのいずれかに挿入されているタスクは、リソース生成の前または後に実行されます。|
+
+## <a name="example-aftertargets-and-beforetargets"></a>例:AfterTargets と BeforeTargets
+
+次の例からは、出力ファイルで何らかの作業を行うカスタム ターゲットを追加する目的で `AfterTargets` 属性を使用する方法がわかります。 この場合、*CustomOutput* という新しいフォルダーにカスタム ファイルがコピーされます。  この例からはまた、カスタムのビルド操作によって作成されたファイルを消去する方法も確認できます (ターゲットは `CustomClean`)。具体的には、`BeforeTargets` 属性を使用する、`CoreClean` ターゲットの前にカスタムの消去作業を実行するように指定するという方法が採られています。
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+   <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+</PropertyGroup>
+
+<Target Name="CustomAfterBuild" AfterTargets="Build">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean" BeforeTargets="CoreClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+> [!WARNING]
+> 前のセクションにあったテーブルに一覧表示されている事前定義済みのターゲットとは異なる名前を必ず使用してください (たとえば、ここではカスタムのビルド ターゲットに `AfterBuild` ではなく `CustomAfterBuild` と名前を付けました)。これは、そのような事前定義済みターゲットは、それの定義もする SDK インポートによってオーバーライドされるためです。 そのようなターゲットをオーバーライドするターゲットのインポートは表示されませんが、SDK を参照する `Sdk` 属性メソッドを使用するとき、プロジェクト ファイルの終わりに暗黙的に追加されます。
 
 ## <a name="override-dependson-properties"></a>DependsOn プロパティをオーバーライドする
 
@@ -130,6 +168,60 @@ XML のこの部分は、`Build` ターゲットを実行するには、`BuildDe
 |`BuildDependsOn`|ビルド処理全体の前または後にカスタム ターゲットを挿入する場合にオーバーライドするプロパティ。|
 |`CleanDependsOn`|カスタム ビルド処理からの出力をクリーンアップする場合にオーバーライドするプロパティ。|
 |`CompileDependsOn`|コンパイル手順の前または後にカスタム プロセスを挿入する場合にオーバーライドするプロパティ。|
+
+## <a name="example-builddependson-and-cleandependson"></a>例:BuildDependsOn と CleanDependsOn
+
+次の例は、`BeforeTargets` と `AfterTargets` の例に似ていますが、同様の機能を達成する方法を示しています。 ビルド後に出力ファイルをコピーし、さらにそれに対応する `CustomClean` タスクを `CleanDependsOn` を利用して追加する独自のタスク `CustomAfterBuild` を `BuildDependsOn` で追加するという手法でビルドを拡張します。  
+
+この例では、これは SDK スタイルのプロジェクトです。 この記事の SDK スタイルのプロジェクトに関する注記で前述したように、Visual Studio でプロジェクト ファイルの生成時に使用される `Sdk` 属性の代わりに、手動のインポート手法を使用する必要があります。
+
+```xml
+<Project>
+<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
+
+<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <BuildDependsOn>
+      $(BuildDependsOn);CustomAfterBuild
+    </BuildDependsOn>
+
+    <CleanDependsOn>
+      $(CleanDependsOn);CustomClean
+    </CleanDependsOn>
+
+    <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+  </PropertyGroup>
+
+<Target Name="CustomAfterBuild">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+要素の順序は重要です。 `BuildDependsOn` 要素と `CleanDependsOn` 要素は、標準 SDK ターゲット ファイルをインポートした後に表示される必要があります。
 
 ## <a name="see-also"></a>関連項目
 

@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633162"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865324"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild タスク リファレンス
 
@@ -37,15 +37,15 @@ ms.locfileid: "77633162"
 
 - [Task 基本クラス](../msbuild/task-base-class.md)
 
- <xref:Microsoft.Build.Utilities.Task> クラスから派生したタスクにいくつかのパラメーターを追加します。
+ <xref:Microsoft.Build.Utilities.Task> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
 - [TaskExtension 基本クラス](../msbuild/taskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.TaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。
+ <xref:Microsoft.Build.Tasks.TaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
 - [ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。
+ <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
 - [AL (アセンブリ リンカー) タスク](../msbuild/al-assembly-linker-task.md)
 

@@ -2,7 +2,7 @@
 title: Visual Studio 管理者ガイド
 titleSuffix: ''
 description: エンタープライズ環境で Visual Studio を展開する方法について説明します。
-ms.date: 06/02/2019
+ms.date: 03/09/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: bda9a73a7a1aabb2d288653ff4d7b20b1c40db8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79190285"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
@@ -115,6 +115,14 @@ ms.locfileid: "76114213"
 
 クライアント コンピューターに[インストールされている Visual Studio インスタンスを検出して管理する](tools-for-managing-visual-studio-instances.md?view=vs-2019)ために役立つ複数のツールが用意されています。
 
+## <a name="advanced-configuration"></a>詳細な構成
+
+既定では、Visual Studio をインストールすると、エラー リスト F1 やコード リンクの Bing 検索でカスタムの型を含めることができます。 ポリシーによって次のレジストリ キーの値を変更することで、検索メカニズムでユーザーが定義したカスタムの型を含められないように Visual Studio を構成できます。
+
+**“PutCustomTypeInBingSearch” DWORD 0**
+
+レジストリは、プライベート レジストリ ハイブの *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* にあります。 レジストリ ハイブを開く方法については、「[Visual Studio インスタンスのレジストリの編集](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance)」を参照してください。
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -153,6 +161,14 @@ ms.locfileid: "76114213"
 ## <a name="step-5---optional-use-visual-studio-tools"></a>手順 5 - (任意) Visual Studio ツールの使用
 
 クライアント コンピューターに[インストールされている Visual Studio インスタンスを検出して管理する](tools-for-managing-visual-studio-instances.md?view=vs-2017)ために役立つ複数のツールが用意されています。
+
+## <a name="advanced-configuration"></a>詳細な構成
+
+既定では、Visual Studio をインストールすると、エラー リスト F1 やコード リンクの Bing 検索でカスタムの型を含めることができます。 ポリシーによって次のレジストリ キーの値を変更することで、検索メカニズムでユーザーが定義したカスタムの型を含められないように Visual Studio を構成できます。
+
+**“PutCustomTypeInBingSearch” DWORD 0**
+
+レジストリは、プライベート レジストリ ハイブの *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* にあります。 レジストリ ハイブを開く方法については、「[Visual Studio インスタンスのレジストリの編集](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance)」を参照してください。
 
 ::: moniker-end
 

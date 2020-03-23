@@ -30,16 +30,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633578"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865350"
 ---
 # <a name="link-task"></a>Link タスク
 
-Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
+Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
 

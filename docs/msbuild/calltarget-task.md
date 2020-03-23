@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634488"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094553"
 ---
 # <a name="calltarget-task"></a>CallTarget タスク
 
@@ -43,6 +43,8 @@ ms.locfileid: "77634488"
  `Targets` に指定されたターゲットのビルドが失敗し、`RunEachTargetSeparately` が `true` に設定されている場合、タスクは残りのターゲットのビルドを続行します。
 
  既定のターゲットをビルドする場合は、[MSBuild タスク](../msbuild/msbuild-task.md)を使用して、`Projects` パラメーターを `$(MSBuildProjectFile)` と等しくなるように設定します。
+
+`CallTarget` を使用すると、MSBuild によって、呼び出されたターゲットが呼び出し元の同じスコープではなく、新しいスコープで評価されます。 つまり、呼び出されたターゲットで項目やプロパティが変更された場合、それは呼び出し側のターゲットには表示されません。  呼び出し側のターゲットに情報を渡すには、`TargetOutputs` 出力パラメーターを使用します。
 
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 

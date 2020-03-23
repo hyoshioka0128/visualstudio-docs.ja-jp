@@ -11,13 +11,13 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 96d4a812fd98dbd0f58a8012a61cdaef96db3a8b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779104"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>方法:コマンド ラインを使用してスタンドアロンのネイティブ アプリケーションにプロファイラーをアタッチし、アプリケーション統計情報を収集する
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してスタンドアロンのネイティブ アプリケーションにプロファイラーをアタッチし、アプリケーション統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、実行中のスタンドアロンのネイティブ (クライアント) アプリケーションにプロファイラーをアタッチし、サンプリング メソッドを使用してパフォーマンスに関する統計情報を収集する方法について説明します。
 
 > [!NOTE]
@@ -89,7 +89,7 @@ ms.locfileid: "74779104"
 
     - **VSPerfCmd /detach** と入力します
 
-         または
+         \- または -
 
     - 対象アプリケーションを終了します。
 

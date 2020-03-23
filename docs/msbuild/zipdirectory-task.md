@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630640"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094578"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory タスク
 
@@ -52,7 +52,7 @@ ms.locfileid: "77630640"
 
 ## <a name="example"></a>例
 
- 次の例では、プロジェクトのビルド後、出力ディレクトリから *.zip* アーカイブを作成します。
+ 次の例 (インポートされた *.targets* ファイルとして使用される場合) では、プロジェクトのビルド後、出力ディレクトリから *.zip* アーカイブを作成します。 `$(OutputPath)` プロパティは通常、MSBuild プロジェクト ファイルで定義されます。そのため、次のファイルをインポートするプロジェクト ファイルでは zip アーカイブ `output.zip` が生成されます。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

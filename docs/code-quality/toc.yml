@@ -14,10 +14,12 @@
           href: install-roslyn-analyzers.md
         - name: ソース コード アナライザーの構成
           href: use-roslyn-analyzers.md
+        - name: ライブ コード分析のスコープ
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: 手動でのコード分析の実行
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: コードの分析を無効にする
           href: disable-code-analysis.md
-        - name: 完全ソリューション解析を有効にする
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: よくあるご質問
           href: analyzers-faq.md
         - name: FXCop アナライザー
@@ -50,7 +52,7 @@
         - name: FxCop アナライザーへの移行
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: レガシ分析を手動で実行する
-          href: how-to-run-code-analysis-manually-for-managed-code.md
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: 構成
           items:
             - name: レガシ分析の構成

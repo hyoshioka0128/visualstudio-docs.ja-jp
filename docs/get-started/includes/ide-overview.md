@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590711"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79082276"
 ---
 Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビルドを行ってから、アプリを発行するために使用できるクリエイティブなランチパッドです。 統合開発環境 (IDE) は、ソフトウェア開発の多くの側面で使用できる機能を豊富に備えたプログラムです。 大部分の IDE が備える標準的なエディターおよびデバッガーに加えて、Visual Studio ではコンパイラ、コード補完ツール、グラフィック デザイナーなど、ソフトウェア開発プロセスを容易にする多くの機能を用意しています。
 
@@ -47,7 +47,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビ
 
 Visual Studio は Windows と Mac で利用できます。 [Visual Studio for Mac](/visualstudio/mac/) は Visual Studio 2017 と同じ機能を多く備え、クロスプラットフォーム アプリとモバイル アプリの開発用に最適化されています。 この記事では、Windows バージョンの Visual Studio 2017 について説明します。
 
-Community、Professional、Enterprise という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
+Visual Studio には 3 つのエディションがあります:という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio エディションの比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Community、Professional、Enterprise という 3 つのエディションの Vi
 
 Visual Studio は Windows と Mac で利用できます。 [Visual Studio for Mac](/visualstudio/mac/) は Visual Studio 2019 と同じ機能を多く備え、クロスプラットフォーム アプリとモバイル アプリの開発用に最適化されています。 この記事では、Windows バージョンの Visual Studio 2019 について説明します。
 
-Visual Studio 2019 には 3 つのエディションがあります:という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio IDE の比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
+Visual Studio 2019 には 3 つのエディションがあります:という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio エディションの比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ::: moniker-end
 

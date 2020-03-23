@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263124"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431450"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 要素 (MSBuild)
 
@@ -78,6 +78,8 @@ ms.locfileid: "78263124"
 > MSBuild エンジンを使用してグローバルに登録された *.tasks* ファイルの 1 つから `UsingTask` 要素が使用されている場合、プロジェクトレベル プロパティおよび項目は意味を持ちません。 プロジェクト レベルの値は、MSBuild に対してグローバルなプロパティではありません。
 
  MSBuild 4.0 では、UsingTask を *.overridetask* ファイルから読み込むことができます。
+
+カスタム タスクに含まれるアセンブリは、`Task` が最初に使用されたときに読み込まれます。
 
 ## <a name="example"></a>例
 

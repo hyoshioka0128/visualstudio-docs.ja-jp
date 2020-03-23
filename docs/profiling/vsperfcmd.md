@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 53378c3d210ef9666df251d68a3eec570f8caa2f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777999"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -50,8 +50,8 @@ VSPerfCmd [/U] [/options]
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|すべてのデータ コレクションを停止するが、プロファイリング セッションは終了しません。|
 |[ProcessOn](../profiling/processon-and-processoff.md) **:** `pid`|**VSPerfCmdProcessOff** を呼び出し、プロファイリングを一時停止した後、指定したプロセスのデータ コレクションを再開します。|
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|指定したプロセスのデータ コレクションを停止します。|
-|[ThreadOn と ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|**VSPerfCmdThreadOff** を呼び出し、プロファイリングを一時停止した後、指定したプロセスのプロファイリングを再開します。 インストルメンテーション メソッドでプロファイリングするときにのみ、**ThreadOn** を使用します。|
-|[ThreadOn と ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|指定したスレッドのプロファイリングを一時停止します。 インストルメンテーション方法でプロファイリングするときにのみ、**ThreadOff** を使用します。|
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|**VSPerfCmdThreadOff** を呼び出し、プロファイリングを一時停止した後、指定したプロセスのプロファイリングを再開します。 インストルメンテーション メソッドでプロファイリングするときにのみ、**ThreadOn** を使用します。|
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|指定したスレッドのプロファイリングを一時停止します。 インストルメンテーション方法でプロファイリングするときにのみ、**ThreadOff** を使用します。|
 |[Mark](../profiling/mark.md) **:** _MarkNum_[ **,** _MarkText_ **]**|プロファイリング データ ファイルにマークと任意のテキストを挿入します。|
 
 ## <a name="sample-method-options"></a>サンプル メソッドのオプション

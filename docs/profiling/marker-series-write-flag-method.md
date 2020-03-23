@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830812"
 ---
-# <a name="markerserieswriteflag-method"></a>marker_series::write_flag メソッド
+# <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag メソッド
 コンカレンシー ビジュアライザーのトレース ファイルにフラグを書き込みます。
 
 ## <a name="syntax"></a>構文
@@ -54,7 +54,7 @@ void write_flag(
 
  `_Category` カテゴリ。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkersobj.h*
 
  **名前空間:** Concurrency::diagnostic

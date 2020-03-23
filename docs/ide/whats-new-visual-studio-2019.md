@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 12/10/2019
+ms.date: 03/16/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125365"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437743"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.4 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.5 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -206,7 +206,7 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
 ## <a name="whats-next"></a>次の内容
 
-Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。
+Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。 今後のリリース予定の一覧については、[Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap)に関するページを参照してください。
 
 Visual Studio 2019 のその他の機能について詳細を知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap/)に関するページを参照してください。
 
@@ -221,7 +221,7 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
-* [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Microsoft Build 2019 カンファレンス](https://www.microsoft.com/build)
-* [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)
+* [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Microsoft Build カンファレンス](https://www.microsoft.com/build)
+* [Microsoft Ignite カンファレンス](https://www.microsoft.com/ignite)

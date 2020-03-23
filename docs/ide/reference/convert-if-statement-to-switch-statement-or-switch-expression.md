@@ -1,6 +1,6 @@
 ---
 title: if ステートメントを switch ステートメントまたは switch 式に変換する
-ms.date: 02/12/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77283461"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094146"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>if ステートメントを switch ステートメントまたは switch 式に変換する
 
@@ -32,9 +32,15 @@ ms.locfileid: "77283461"
 
 1. `if` キーワードにカーソルを置きます。
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
-3. **['switch' ステートメントに変換]** を選択します。
+3. 次の 2 つのオプションから選択します。 
 
-   ![if ステートメントを switch ステートメントまたは switch 式に変換する](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    **['switch' ステートメントに変換]** を選択します。
+
+   ![if ステートメントを switch ステートメントに変換する](media/convert-if-to-switch-statement.png) 
+
+    **['switch' 式に変換する]** を選択します。 
+
+    ![if ステートメントを switch 式に変換する](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>関連項目
 

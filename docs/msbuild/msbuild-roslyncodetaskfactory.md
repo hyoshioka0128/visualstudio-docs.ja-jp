@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633227"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865376"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用する MSBuild インライン タスク
 
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) と同様に、RoslynCodeTaskFactory ではクロス プラットフォームの Roslyn コンパイラを使用して、インライン タスクとして使用するためのメモリ内タスク アセンブリを生成します。  RoslynCodeTaskFactory タスクは、.NET Standard をターゲットとし、.NET Framework や .NET Core のランタイムだけでなく、Linux や Mac OS などの他のプラットフォームでも機能します。
 
 >[!NOTE]
->RoslynCodeTaskFactory は MSBuild 15.8 以降でのみ使用できます。
+>RoslynCodeTaskFactory は MSBuild 15.8 以降でのみ使用できます。 MSBuild バージョンは Visual Studio バージョンに従います。そのため、RoslynCodeTaskFactory は Visual Studio 15.8 以降で利用できます。
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用したインライン タスクの構造
 
@@ -164,7 +164,7 @@ HelloWorld タスクを *HelloWorld.targets* という名前のファイルに�
 
 - `Tally` は、System.Int32 型の出力パラメーターです。
 
-`Code` 要素の `Type` 属性が `Fragment` または `Method` の場合、すべてのパラメーターに対して自動的にプロパティが作成されます。 それ以外の場合は、タスクのソース コードで明示的にプロパティを宣言する必要があります。プロパティはパラメーター定義と完全に一致している必要があります。
+`Code` 要素の `Type` 属性が `Fragment` または `Method` の場合、すべてのパラメーターに対して自動的にプロパティが作成されます。  RoslynCodeTaskFactory では、`Code` 要素に `Class` の `Type` 属性が与えられている場合、`ParameterGroup` を指定する必要がありません。これはソース コードから推論されるためです (これが `CodeTaskFactory` との違いです)。 それ以外の場合は、タスクのソース コードで明示的にプロパティを宣言する必要があります。プロパティはパラメーター定義と完全に一致している必要があります。
 
 ## <a name="example"></a>例
 

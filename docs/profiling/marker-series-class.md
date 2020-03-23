@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155d47f6764e754a1093cbcf884368c80d709a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62575918"
 ---
-# <a name="markerseries-class"></a>marker_series クラス
+# <a name="marker_series-class"></a>marker_series クラス
 1 つのプロバイダーによって生成されたイベントのシリアル チャネルを表します。
 
 ## <a name="syntax"></a>構文
@@ -32,14 +32,14 @@ class marker_series;
 
 ### <a name="public-constructors"></a>パブリック コンストラクター
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[marker_series::marker_series コンストラクター](../profiling/marker-series-marker-series-constructor.md)|`marker_series` クラスの新しいインスタンスを初期化します。|
 |[marker_series::~marker_series デストラクター](../profiling/marker-series-tilde-marker-series-destructor.md)|marker_series オブジェクトを破棄し、割り当てられているすべてのリソースを解放します。|
 
 ### <a name="public-methods"></a>パブリック メソッド
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[marker_series::is_enabled メソッド](../profiling/marker-series-is-enabled-method.md)|任意のセッションでプロバイダーが有効にされているかどうかを調べます。|
 |[marker_series::write_alert メソッド](../profiling/marker-series-write-alert-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにアラートを書き込みます。|
@@ -49,7 +49,7 @@ class marker_series;
 ## <a name="inheritance-hierarchy"></a>継承階層
  `marker_series`
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkersobj.h*
 
  **名前空間:** Concurrency::diagnostic

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633487"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865363"
 ---
 # <a name="message-task"></a>Message タスク
 
@@ -44,7 +44,7 @@ ms.locfileid: "77633487"
 
  `Condition` パラメーターが `true` と評価されると、`Text` パラメーターの値がログに記録され、ビルド処理が継続されます。 `Condition` パラメーターが存在しない場合は、メッセージ テキストがログに記録されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。
 
- 既定では、メッセージは MSBuild のコンソール ロガーに送信されます。 これは、<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> プロパティを設定することにより変更できます。 ロガーによって `Importance` パラメーターが解釈されます。 通常、`high` に設定されたメッセージは、ロガーの詳細度が <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` 以上に設定されている場合に送信されます。 ロガーの詳細度が <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` に設定されている場合、`low` に設定されたメッセージが送信されます。
+ 既定では、登録されているすべてのロガーにメッセージが送信されます。 ロガーによって `Importance` パラメーターが解釈されます。 通常、`high` に設定されたメッセージは、ロガーの詳細度が <xref:Microsoft.Build.Framework.LoggerVerbosity> に設定されている場合に送信されます。`Minimal` 必要です。 ロガーの詳細度が <xref:Microsoft.Build.Framework.LoggerVerbosity> に設定されている場合、`low` に設定されたメッセージが送信されます。`Detailed`
 
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 

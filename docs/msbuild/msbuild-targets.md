@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633188"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093611"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 
@@ -42,7 +42,7 @@ ms.locfileid: "77633188"
 </Target>
 ```
 
- AfterBuild を実行すると、"Second occurrence" (2 番目の出現) のみが表示されます。
+ `AfterBuild` を実行すると、"Second occurrence" (2 番目の出現) のみが表示されます。これは `AfterBuild` の 2 番目の定義によって最初の出現が隠されるためです。
 
  MSBuild はインポートの順序に依存するので、最後のターゲットの定義が使用されます。
 

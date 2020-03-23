@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Windows インストーラーを使用した Office ソリューションの配置
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Visual Studio セットアップ プロジェクトを使用した Office ソリューションの配置
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Office ソリューション配置のトラブルシューティング
               items:
                 - name: Office ソリューション配置のトラブルシューティング

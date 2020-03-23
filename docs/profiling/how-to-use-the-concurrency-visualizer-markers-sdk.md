@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68870328"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
@@ -70,7 +70,7 @@ ms.locfileid: "68870328"
 
 6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 2 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、2 つの新しいスパンを示しています。
 
-     ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![3 つのカスタム マーカー シリーズがあるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic または C\# を使用するには
 
@@ -164,7 +164,7 @@ ms.locfileid: "68870328"
 
 6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 3 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、3 つの新しいスパンを示しています。
 
-     ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![3 つのカスタム マーカー シリーズがあるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>関連項目
 - [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)
