@@ -10,40 +10,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
+ms.sourcegitcommit: b32fbbcbc43910b0ed7ce79aa9a22f2ed36ab57e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661838"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "79416550"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO アドインのパフォーマンスを向上させる
   Office アプリケーション用に作成した VSTO アドインを最適化して、そのアドインの開始、終了、また、項目を開くなどのタスクの実行を素早く行えるようにして、ユーザー エクスペリエンスを向上させることができます。 VSTO アドインが Outlook を対象にしている場合は、不十分なパフォーマンスが原因で VSTO アドインが無効にされる可能性を低くすることができます。 次の方針を導入すると、VSTO アドインのパフォーマンスを向上させることができます。
 
-- [必要に応じた VSTO アドインの読み込み](#Load)。
+- [VSTO アドインをオンデマンドで読み込む](#Load):
 
-- [Windows インストーラーを使用した Office ソリューションの発行](#Publish)。
+- [Windows インストーラを使用して Office ソリューションを発行](#Publish)する :
 
-- [リボンのリフレクションをバイパス](#Bypass)します。
+- [リボンのリフレクションをバイパス](#Bypass)する :
 
-- [負荷の高い操作を単独の実行スレッドで実行](#Perform)。
+- [別の実行スレッドで負荷の高い操作を実行](#Perform)する 。
 
-  Outlook VSTO アドインを最適化する方法の詳細については、「 [Vsto アドインを有効にするためのパフォーマンス条件](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)」を参照してください。
+  Outlook VSTO アドインを最適化する方法の詳細については、「 [VSTO アドインを有効に保つためのパフォーマンス条件](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)」を参照してください。
 
-## <a name="Load"></a> 必要に応じた VSTO アドインの読み込み
+## <a name="load-vsto-add-ins-on-demand"></a><a name="Load"></a>VSTO アドインをオンデマンドで読み込む
  次の状況でのみ読み込まれるように VSTO アドインを構成できます。
 
 - VSTO アドインのインストール後にユーザーがアプリケーションを初めて起動するとき。
 
 - それ以降にアプリケーションを起動した後、ユーザーが初めて VSTO アドインを操作するとき。
 
-  たとえば、ユーザーが **[自分のデータを取得**] というラベルの付いたカスタムボタンを選択したときに、VSTO アドインによってワークシートにデータが入力される場合があります。 アプリケーションでは、 **[自分のデータを取得**] ボタンがリボンに表示されるように、VSTO アドインを少なくとも1回読み込む必要があります。 ただし、ユーザーが次回アプリケーションを起動したときに、VSTO アドインが再度読み込まれることはありません。 VSTO アドインが読み込まれるのは、ユーザーが **[自分のデータを取得]** ボタンをクリックしたときのみです。
+  たとえば、VSTO アドインは、ユーザーが [**自分のデータの取得**] というラベルの付いたカスタム ボタンを選択したときに、ワークシートにデータを入力する場合があります。 [**マイ データの取得**] ボタンがリボンに表示されるように、アプリケーションは VSTO アドインを少なくとも 1 回読み込む必要があります。 ただし、次回アプリケーションを起動したときに、VSTO アドインが再度読み込まれるわけではありません。 VSTO アドインが読み込まれるのは、ユーザーが **[自分のデータを取得]** ボタンをクリックしたときのみです。
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>必要に応じて VSTO アドインを読み込むように ClickOnce ソリューションを構成するには
 
 1. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
-2. メニュー バーで **[表示]**  >  **[プロパティ ページ]** の順に選びます。
+2. メニュー バーの [**View** > **プロパティ ページ**の表示] をクリックします。
 
 3. **[発行]** タブの **[オプション]** をクリックします。
 
@@ -51,13 +51,13 @@ ms.locfileid: "73661838"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>必要に応じて VSTO アドインを読み込むように Windows インストーラー ソリューションを構成するには
 
-1. レジストリで、 **_ルート_\Software\Microsoft\Office\\_ApplicationName_\\_アドイン ID_** キーの `LoadBehavior` エントリを**0x10**に設定します。
+1. レジストリで、**_ルート_\ソフトウェア\マイクロソフト\\\Office_アプリケーション名_\アドイン\\ID**キーの`LoadBehavior`エントリを**0x10**に設定します。
 
-     詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
+     詳細については、「 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>ソリューションのデバッグ中に必要に応じて VSTO アドインを読み込むようにソリューションを構成するには
 
-1. **_ルート_\Software\Microsoft\Office\\_ApplicationName_\\_アドイン ID_** キーの `LoadBehavior` エントリを**0x10**に設定するスクリプトを作成します。
+1. **_ルート_\ソフトウェア\マイクロソフト\\\Office_アプリケーション名_\アドイン\\ID**キーの`LoadBehavior`エントリを**0x10**に設定するスクリプトを作成します。
 
      このスクリプトの例を次のコードに示します。
 
@@ -79,12 +79,12 @@ ms.locfileid: "73661838"
 
     ```
 
-     プロジェクトでビルド後のイベントを作成する方法の詳細については、「[方法: ビルド&#40;イベント&#35;を指定](../ide/how-to-specify-build-events-csharp.md)する」を参照してください。 C#
+     C# プロジェクトでビルド後のイベントを作成する方法については、「[方法: C&#35;&#41;&#40;ビルド イベントを指定する](../ide/how-to-specify-build-events-csharp.md)」を参照してください。
 
-     Visual Basic プロジェクトでビルド後のイベントを作成する方法の詳細については、「[方法: ビルドイベント&#40;を&#41;指定する Visual Basic](../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
+     Visual Basic プロジェクトでビルド後のイベントを作成する方法については、「方法[: Visual Basic&#41;&#40;ビルド イベントを指定する](../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
 
-## <a name="Publish"></a>Windows インストーラーを使用した Office ソリューションの発行
- Windows インストーラーを使用してソリューションを発行した場合、Visual Studio 2010 Tools for Office runtime は、VSTO アドインが読み込まれるときに次の手順を省略します。
+## <a name="publish-office-solutions-by-using-windows-installer"></a><a name="Publish"></a>Windows インストーラーを使用して Office ソリューションを発行する
+ Windows インストーラーを使用してソリューションを発行する場合、VsTO アドインが読み込まれるときに、Office ランタイム用の Visual Studio 2010 ツールは、次の手順をバイパスします。
 
 - マニフェスト スキーマの検証。
 
@@ -93,21 +93,21 @@ ms.locfileid: "73661838"
 - 配置マニフェストのデジタル署名の検証。
 
   > [!NOTE]
-  > VSTO アドインをユーザーのコンピューター上の安全な場所に配置する場合、この方法は必要ありません。
+  > VSTO アドインをユーザーのコンピューター上の安全な場所に展開する場合、この方法は必要ありません。
 
-  詳細については、「 [Windows インストーラーを使用した Office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-windows-installer.md)」を参照してください。
+  詳細については、「 [Windows インストーラを使用して Office ソリューションを配置する](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)」を参照してください。
 
-## <a name="Bypass"></a>リボンリフレクションのバイパス
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]を使用してソリューションをビルドする場合は、ソリューションを配置するときに、ユーザーが Visual Studio 2010 Tools for Office runtime の最新バージョンをインストールしていることを確認してください。 リボンのカスタマイズを見つけるために、以前のバージョンの VSTO ランタイムがソリューションアセンブリに反映されています。 このプロセスを実行すると、VSTO アドインの読み込み速度がさらに低下する可能性があります。
+## <a name="bypass-ribbon-reflection"></a><a name="Bypass"></a>リボンのリフレクションをバイパスする
+ を使用[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]してソリューションをビルドする場合は、ソリューションを配置するときに、ユーザーが Office ランタイム用 Visual Studio 2010 ツールの最新バージョンをインストールしていることを確認します。 VSTO ランタイムの古いバージョンは、ソリューション アセンブリに反映され、リボンのカスタマイズを見つけます。 このプロセスを実行すると、VSTO アドインの読み込み速度がさらに低下する可能性があります。
 
- 別の方法として、Visual Studio 2010 Tools for Office runtime のすべてのバージョンがリフレクションを使用してリボンのカスタマイズを識別できないようにすることもできます。 この戦略に従うには、`CreateRibbonExtensibility` メソッドをオーバーライドし、リボンオブジェクトを明示的に返します。 VSTO アドインにリボンのカスタマイズが含まれていない場合は、メソッド内の `null` を返します。
+ 別の方法として、Visual Studio 2010 Office ランタイム用ツールの任意のバージョンが、リボンのカスタマイズを識別するためにリフレクションを使用できないようにすることができます。 この方法に従うには、メソッド`CreateRibbonExtensibility`をオーバーライドし、明示的にリボン オブジェクトを返します。 VSTO アドインにリボンのカスタマイズが含まれていない場合は、メソッド内に`null`戻ります。
 
- 次の例では、フィールドの値に基づいてリボンオブジェクトを返します。
+ 次の使用例は、フィールドの値に基づいて Ribbon オブジェクトを返します。
 
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
 
-## <a name="Perform"></a>負荷の高い操作を別の実行スレッドで実行する
+## <a name="perform-expensive-operations-in-a-separate-execution-thread"></a><a name="Perform"></a>別の実行スレッドで負荷の高い操作を実行する
  時間を要するタスク (長時間実行されるタスク、データベース接続、または他の種類のネットワークの呼び出しなど) を単独のスレッドで実行することを検討してください。 詳細については、「 [Office でのスレッドのサポート](../vsto/threading-support-in-office.md)」を参照してください。
 
 > [!NOTE]
@@ -115,6 +115,6 @@ ms.locfileid: "73661838"
 
 ## <a name="see-also"></a>関連項目
 
-- [VSTO アドインのオンデマンド読み込み](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [Office アドインでの CLR の遅延読み込み](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
-- [Visual Studio を使用して Office 用の VSTO アドインを作成する](create-vsto-add-ins-for-office-by-using-visual-studio.md)
+- [VSTO アドインのデマンド ローディング](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
+- [Office アドイン内での CLR の遅延読み込み](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [Visual Studio を使用して Office 用 VSTO アドインを作成する](create-vsto-add-ins-for-office-by-using-visual-studio.md)

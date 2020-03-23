@@ -1,5 +1,5 @@
 ---
-title: ブレークポイントの使用 |Microsoft Docs
+title: ブレークポイントの使用 |マイクロソフトドキュメント
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,24 +42,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408754"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301369"
 ---
 # <a name="using-breakpoints"></a>ブレークポイントの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 コードの変数の状態や呼び出し履歴の確認などのために、デバッガーの実行を停止するときにブレークポイントを設定できます。 ブレークポイントは、開発者が利用できる重要なデバッグ手法の 1 つです。
   
-## <a name="BKMK_Overview"></a> ソース コードで関数のブレークポイントを設定する  
+## <a name="setting-a-function-breakpoint-in-source-code"></a><a name="BKMK_Overview"></a> ソース コードで関数のブレークポイントを設定する  
  ソース コードに関数のブレークポイントを設定するには、ソース コード ファイルの左側の余白をクリックするか、コード行をポイントし、F9 キーを押します。 ブレークポイントの印として左側の余白に赤い点が表示され、コードの行にも色が設定されます。  
   
- ![ブレークポイントの設定](../debugger/media/basicbreakpoint.png "BasicBreakpoint ポイント")  
+ ![ブレークポイントを設定する](../debugger/media/basicbreakpoint.png "基本ブレークポイント")  
   
  デバッガーでこのコードを実行してブレークポイントに達すると、ブレークポイントの行のコードが実行される前に、実行は停止されます。 ソース コードの行は黄色で表示されます。  
   
- ![ブレークポイントの実行を停止しました](../debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![実行が停止されているブレークポイント](../debugger/media/breakpointexecution.png "ブレークポイント実行")  
   
  この時点で、 `testInt` の値は 1 のままです。  
   
@@ -67,13 +67,13 @@ ms.locfileid: "78408754"
   
  ブレークポイントは、実行可能ファイルの任意のコード行に設定できます。 たとえば、上記の C# コードでは、変数の宣言、 `for` ループ、または `for` ループ内の任意のコードにブレークポイントを設定できますが、名前空間またはクラスの宣言、またはメソッドのシグネチャにはブレークポイントを設定できません。  
   
-## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> その他のブレークポイントを設定する  
+## <a name="setting-other-kinds-of-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> その他のブレークポイントを設定する  
  データの条件またはメモリ アドレスによっては、呼び出し履歴、[逆アセンブリ] ウィンドウ、およびネイティブ C++ コードにもブレークポイントを設定できます。  
   
-## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> [呼び出し履歴] ウィンドウでブレークポイントを設定する  
+## <a name="setting-a-breakpoint-in-the-call-stack-window"></a><a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a>[呼び出し履歴] ウィンドウでのブレークポイントの設定  
  **[呼び出し履歴]** ウィンドウでブレークポイントを設定することで、呼び出し元の関数が返す命令または行で実行を中断できます。 呼び出し履歴の詳細については、「 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。 デバッガーの実行は停止している必要があります。  
   
-1. アプリケーションのデバッグを開始し、(ブレークポイントの位置などで) 実行が停止するまで待ちます。 **[呼び出し履歴]** ウィンドウを開きます ( **[デバッグ] / [ウィンドウ] / [呼び出し履歴]** または **CTRL + ALT + C**キー)。  
+1. アプリケーションのデバッグを開始し、(ブレークポイントの位置などで) 実行が停止するまで待ちます。 **[呼び出し履歴]** ウィンドウを開きます (**[デバッグ] / [ウィンドウ] / [呼び出し履歴]** または **CTRL + ALT + C**キー)。  
   
 2. 呼び出し元の関数を右クリックし、 **[ブレークポイント] / [ブレークポイントの挿入]** を選択するか、 **F9**キーを押します。  
   
@@ -81,16 +81,16 @@ ms.locfileid: "78408754"
   
    **[ブレークポイント]** ウィンドウには、関数内の次に実行可能な命令に対応するメモリ位置に設定されたアドレスとして、呼び出し履歴のブレークポイントが表示されます。 デバッガーはその命令で実行を中断します。  
   
-   コードの実行中にブレークポイントを視覚的にトレースするには、「[デバッグ中の呼び出し履歴のメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)」を参照してください。  
+   コードの実行中にブレークポイントを視覚的にトレースするには、[デバッグ中に呼び出し履歴にメソッドをマップする](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)を参照してください。  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>[逆アセンブリ] ウィンドウでブレークポイントを設定する  
  アセンブリ命令にブレークポイントを設定するには、デバッガーが中断モードになっている必要があります。  
   
-1. アプリケーションのデバッグを開始し、(ブレークポイントの位置などで) 実行が停止するまで待ちます。 **[逆アセンブリ]** ウィンドウを開きます ( **[デバッグ] / [ウィンドウ] / [逆アセンブリ]** または **Ctrl + Alt + D**キー)。  
+1. アプリケーションのデバッグを開始し、(ブレークポイントの位置などで) 実行が停止するまで待ちます。 **[逆アセンブリ]** ウィンドウを開きます (**[デバッグ] / [ウィンドウ] / [逆アセンブリ]** または **Ctrl + Alt + D**キー)。  
   
 2. 中断する命令の左側の余白をクリックするか、命令をポイントして **F9**キーを押します。  
   
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>データブレークポイントの設定 ( C++ネイティブのみ)  
+## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>データ ブレークポイントの設定 (ネイティブ C++ のみ)  
  データ ブレークポイントを使用すると、指定したメモリ位置に格納された値が変更されたときに、実行が中断されます。 値が読み取られても変更されていなければ、実行は中断されません。 データ ブレークポイントを設定するには、デバッガーが中断モードになっている必要があります。  
   
 1. アプリケーションのデバッグを開始し、ブレークポイントに到達するまで待ちます。 **[デバッグ]** メニューの **[ブレークポイントの作成] / [データ ブレークポイント]** を選択します (または、 **[ブレークポイント]** ウィンドウを開き、 **[新規作成] / [データ ブレークポイント]** を選択します)。  
@@ -130,14 +130,14 @@ ms.locfileid: "78408754"
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> ブレークポイントを管理する  
- **[ブレークポイント]** ウィンドウ ( **[デバッグ] / [ウィンドウ] / [ブレークポイント]** または **CTRL + ALT + B**キー) では、ソリューションに設定したすべてのブレークポイントを確認できます。  
+## <a name="managing-breakpoints"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> ブレークポイントを管理する  
+ **[ブレークポイント]** ウィンドウ (**[デバッグ] / [ウィンドウ] / [ブレークポイント]** または **CTRL + ALT + B**キー) では、ソリューションに設定したすべてのブレークポイントを確認できます。  
   
- ![ブレークポイントウィンドウ](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
+ ![ブレークポイント ウィンドウ](../debugger/media/breakpointswindow.png "ブレークポイントウィンドウ")  
   
  **[ブレークポイント]** ウィンドウでは、すべてのブレークポイントを一元的に管理できるます。ブレークポイントが重要な大規模なソリューションや複雑なデバッグ シナリオで、このウィンドウは特に役立ちます。 一連のブレークポイントの状態と位置を保存または共有する必要がある場合、 **[ブレークポイント]** ウィンドウからのみ、ブレークポイントをエクスポートおよびインポートできます。  
   
-## <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> 高度なブレークポイント  
+## <a name="advanced-breakpoints"></a><a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> 高度なブレークポイント  
   
 ## <a name="breakpoint-conditions"></a>ブレークポイント条件  
  条件を設定して、ブレークポイントを実行するタイミングと場所を制御することができます。  
@@ -146,7 +146,7 @@ ms.locfileid: "78408754"
   
 2. コンテキスト メニューで **[条件]** を選択します。 **[ブレークポイント設定]** ウィンドウが開きます。  
   
-   ![ブレークポイントの設定](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![[ブレークポイント設定]](../debugger/media/breakpointsettings.png "ブレークポイント設定")  
   
    **[条件]** ボックスをオンにすると、ウィンドウが展開され、さまざまな種類の条件が表示されます。  
   
@@ -154,11 +154,11 @@ ms.locfileid: "78408754"
   
    次の例では、 `testInt` の値が **4**の場合にのみ、ブレークポイントがヒットするように設定します。  
   
-   ![ブレークポイント条件が true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![[ブレークポイントの条件] が true](../debugger/media/breakpointconditionistrue.png "ブレークポイント条件の状態")  
   
    次の例では、 `testInt` の値が変更された場合にのみ、ブレークポイントがヒットするように設定します。  
   
-   ![変更時のブレークポイント](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+   ![変更時のブレークポイント](../debugger/media/breakpointwhenchanged.png "ブレークポイント変更時")  
   
    [変更された場合] フィールドの動作は、プログラミング言語によって異なります。 ネイティブ コードに対して **[変更された場合]** をオンにしている場合、デバッガーは条件の最初の評価を変更と見なさないため、最初の評価でブレークポイントはヒットしません。 マネージド コードに対して **[変更された場合]** をオンにしている場合、 **[変更された場合]** が選択された後の最初の評価でブレークポイントがヒットします。  
   
@@ -173,7 +173,7 @@ ms.locfileid: "78408754"
   
 2. デバッグを開始し、ブレークポイントで実行が停止したら、 **[ローカル]** ウィンドウで対象のブレークポイントを見つけて右クリックし、 **[オブジェクト ID の作成]** を選択します。  
   
-    **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 これが、オブジェクト ID です。  
+    **[ローカル**]**$** ウィンドウにプラスの数字が表示されます。 これが、オブジェクト ID です。  
   
 3. オブジェクトがコレクションに追加されるときなど、調査が必要となるポイントに、新しい条件付きブレークポイントを追加します。  
   
@@ -190,7 +190,7 @@ ms.locfileid: "78408754"
   
  **[ブレークポイントの設定]** ウィンドウで、 **[ヒット カウント]** に条件を設定します。 次に、イテレーション回数を指定できます。 次の例では、イテレーションごとにヒットするようにブレークポイントを設定します。  
   
- ![ブレークポイントのヒットカウント](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
+ ![ブレークポイントのヒット カウント](../debugger/media/breakpointhitcount.png "ブレークポイントヒットカウント")  
   
 ## <a name="filter"></a>Assert  
  指定されたデバイスでのみ、または指定されたプロセスとスレッドでのみ、ブレークポイントが発生するように制限できます。  
@@ -209,7 +209,7 @@ ms.locfileid: "78408754"
   
   文字列の値を二重引用符で囲みます。 句は、 `&` (AND)、 `||` (OR)、 `!` (NOT)、およびかっこを使用して結合できます。  
   
-## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> ブレークポイント アクションとトレースポイント  
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> ブレークポイント アクションとトレースポイント  
  トレースポイントは、[出力] ウィンドウにメッセージを出力するブレークポイントです。 トレースポイントはプログラミング言語の一時的なトレース ステートメントのように機能できます。  
   
  **[ブレークポイントの設定]** ウィンドウで、 **[アクション]** ボックスをオンにします。 **[アクション]** グループの **[出力ウィンドウにメッセージを記録する]** を選択します。 **"これはテストです"** など、汎用文字列を出力することができます。 変数または式の値を含めるには、中かっこで囲みます。  
@@ -231,7 +231,7 @@ ms.locfileid: "78408754"
 |**$TICK**||  
 |**$TNAME**||  
   
-## <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> ブレークポイントのラベル  
+## <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a>ブレークポイントラベル  
  ブレークポイントのラベルは、 **[ブレークポイント]** ウィンドウでブレークポイントの一覧の並べ替えとフィルターにのみ使用します。 ブレークポイントにラベルを追加するには、ブレークポイントの行を選択し、コンテキスト メニューの **[ラベル]** をクリックします。  
   
 ## <a name="export-and-import-breakpoints"></a>ブレークポイントをエクスポートおよびインポートする  
@@ -250,7 +250,7 @@ ms.locfileid: "78408754"
 2. ブレークポイントをソース ファイルにバインドすることもできます。 ブレークポイントを選択し、コンテキスト メニューの **[条件]** をクリックします。 **[ブレークポイントの設定]** ウィンドウで **[元のバージョンと異なるソース コードを許可する]** チェック ボックスをオンにします。  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>ブレークポイントが DLL で機能しない  
- デバッガーがモジュールのコードの場所に関するデバッグ情報を読み込んでいない場合は、ソース ファイルにブレークポイントを設定できません。 このようなときは、 **ブレークポイントを設定できない**ことを示すメッセージが表示されます。 ブレークポイントの場所に、警告ブレークポイント グリフが表示されます。 ただし、これらの警告ブレークポイントは、コードが読み込まれたときに実際のブレークポイントになります。 シンボルの読み込みの詳細については、「[シンボル (.pdb) ファイルとソースファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)」を参照してください。  
+ デバッガーがモジュールのコードの場所に関するデバッグ情報を読み込んでいない場合は、ソース ファイルにブレークポイントを設定できません。 このようなときは、 **ブレークポイントを設定できない**ことを示すメッセージが表示されます。 ブレークポイントの場所に、警告ブレークポイント グリフが表示されます。 ただし、これらの警告ブレークポイントは、コードが読み込まれたときに実際のブレークポイントになります。 シンボルの読み込みの詳細については、「[シンボルの指定 (.pdb)」および「ソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)」を参照してください。  
   
 ## <a name="see-also"></a>参照  
- [デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)
+ [デバッガーを使用したコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)

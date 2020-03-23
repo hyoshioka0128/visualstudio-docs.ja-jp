@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8e1df93fa9e865bb9b9136b9d0a0e07f1a485ea
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.openlocfilehash: bc04cbc6d46d8dc47a08d06c8c5949bb5d9107f3
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "78937512"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431366"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop および FxCop アナライザーに関してよく寄せられる質問
 
@@ -31,33 +31,33 @@ FxCop アナライザーは .NET Compiler Platform ("Roslyn") に基づいてい
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>[コード分析の実行] コマンドで FxCop アナライザーを実行できますか?
 
-いいえ。 [ > **分析**] を選択して**コード分析を実行**すると、従来の分析が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
+Visual Studio 2019 16.5 リリースより前**Analyze** > のリリースでは、[**実行コード分析**] を選択すると、従来の分析が実行されます。 Visual Studio 2019 16.5 以降では、[**コード分析の実行**] メニュー オプションは、選択したプロジェクトまたはソリューションの Roslyn ベースのアナライザーを実行します。 Roslyn ベース FxCop アナライザーをインストールした場合は、実行されます。 詳細については、「[方法 : マネージ コードのコード分析を手動で実行する](how-to-run-code-analysis-manually-for-managed-code.md)」を参照してください。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild プロジェクト プロパティはアナライザーを実行しますか?
 
-いいえ。 (たとえば **.csproj** の) プロジェクト ファイル内の *RunCodeAnalysis* プロパティは、従来の FxCop を実行するためのみに使用します。 これは、**FxCopCmd.exe** を起動するビルド後の msbuild タスクを実行します。 これは、Visual Studio で **[分析]**  >  **[コード分析の実行]** を選択するのと同等です。
+いいえ。 (たとえば *.csproj* の) プロジェクト ファイル内の **RunCodeAnalysis** プロパティは、従来の FxCop を実行するためのみに使用します。 これは、**FxCopCmd.exe** を起動するビルド後の msbuild タスクを実行します。
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>では FxCop アナライザーはどのように実行するのですか?
 
-FxCop アナライザーを実行するには、まずそれ用に [NuGet パッケージをインストール](install-fxcop-analyzers.md)します。 次いでプロジェクトまたはソリューションを Visual Studio または msbuild を使用してビルドします。 FxCop アナライザーが生成する警告やエラーは、 **[エラー一覧]** またはコマンド ウィンドウに表示されます。
+FxCop アナライザーを実行するには、まずそれ用に [NuGet パッケージをインストール](install-fxcop-analyzers.md)します。 次いでプロジェクトまたはソリューションを Visual Studio または msbuild を使用してビルドします。 FxCop アナライザーが生成する警告やエラーは、**[エラー一覧]** またはコマンド ウィンドウに表示されます。
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop アナライザーの NuGet パッケージをインストールした後でも警告 CA0507 を取得する
 
-FxCop アナライザーがインストールされていても、警告が引き続き表示される場合は、**ビルド中に実行される fxcop アナライザーを優先して、"コード分析の実行" が非推奨**となりました[。プロジェクトファイル](../ide/solutions-and-projects-in-visual-studio.md#project-file)の**runcodeanalysis** msbuild プロパティを**false**に設定する必要がある場合があります。 それ以外の場合、レガシ分析は各ビルドの後に実行されます。
+FxCop アナライザーをインストールした後、ビルド中に実行される FxCop アナライザーを優先して警告 CA0507 **"コード分析の実行" が推奨され続ける場合は、**[プロジェクト ファイル](../ide/solutions-and-projects-in-visual-studio.md#project-file)の**RunCodeAnalysis** msbuild プロパティを**false**に設定する必要があります。 それ以外の場合は、各ビルドの後にレガシ分析が実行されます。
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>FxCop アナライザーに移植されたルール
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>FxCop アナライザーに移植されたルールはどれですか。
 
-[Fxcop アナライザー](install-fxcop-analyzers.md)に移植された従来の分析ルールの詳細については、「 [fxcop rule port status](fxcop-rule-port-status.md)」を参照してください。
+[FxCop アナライザ](install-fxcop-analyzers.md)ーに移植されたレガシ分析ルールの詳細については[、Fxcop ルール ポートのステータス](fxcop-rule-port-status.md)を参照してください。
 
-## <a name="code-analysis-warnings-are-treated-as-errors"></a>コード分析の警告はエラーとして扱われます
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>コード分析の警告はエラーとして扱われます。
 
-プロジェクトでビルドオプションを使用して警告をエラーとして扱う場合、FxCop アナライザーの警告がエラーとして表示されることがあります。 コード分析の警告がエラーとして扱われないようにするには、「[コード分析](../code-quality/analyzers-faq.md#treat-warnings-as-errors)に関する FAQ」の手順に従います。
+プロジェクトでビルド オプションを使用して警告をエラーとして扱う場合、FxCop アナライザーの警告がエラーとして表示されることがあります。 コード分析の警告がエラーとして扱われないようにするには、「[コード分析に関](../code-quality/analyzers-faq.md#treat-warnings-as-errors)する FAQ 」の手順に従います。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [.NET Compiler Platform アナライザーの概要](roslyn-analyzers-overview.md)
 - [FxCop アナライザーへの移行](migrate-from-legacy-analysis-to-fxcop-analyzers.md)

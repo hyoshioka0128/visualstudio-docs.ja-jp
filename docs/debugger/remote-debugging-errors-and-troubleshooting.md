@@ -1,5 +1,5 @@
 ---
-title: リモートデバッグエラーとトラブルシューティング |Microsoft Docs
+title: リモート デバッグエラーとトラブルシューティング |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,57 +21,57 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187517"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301069"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>リモート デバッグ エラーとトラブルシューティング
 
-リモートでデバッグを試行すると、次のエラーが発生する場合があります。
+リモートでデバッグしようとすると、次のエラーが発生する可能性があります。
 
-- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [エラー : サーバーに自動的にステップ インできません。](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 - [エラー : Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
-- [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [リモート デバッグ モニターに接続できません。](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
 - [エラー: リモート コンピューターが [リモート接続] ダイアログに表示されません](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
-## <a name="run-the-remote-debugger-as-an-administrator"></a>管理者としてリモートデバッガーを実行する
+## <a name="run-the-remote-debugger-as-an-administrator"></a>リモート デバッガーを管理者として実行する
 
-リモートデバッガーを管理者として実行しないと、問題が発生する可能性があります。 たとえば、次のエラーが表示されることがあります。 "Visual Studio リモートデバッガー (MSVSMONEXE) には、このプロセスをデバッグするための十分な特権がありません。 " (サービスではなく) アプリケーションとしてリモートデバッガーを実行している場合は、[異なるユーザーアカウント](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md)エラーが表示されることがあります。
+リモート デバッガーを管理者として実行しないと、問題が発生する可能性があります。 たとえば、次のエラーが表示される可能性があります: "Visual Studio リモート デバッガー (MSVSMON.EXE) には、このプロセスをデバッグするための十分な特権がありません。 リモート デバッガーをアプリケーションとして実行している場合 (サービスではなく)、[ユーザー アカウントのエラーが表示](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md)されることがあります。
 
-### <a name="when-running-the-remote-debugger-as-a-service"></a>リモートデバッガーをサービスとして実行する場合
+### <a name="when-running-the-remote-debugger-as-a-service"></a>リモート デバッガーをサービスとして実行する場合
 
-リモートデバッガーを s サービスとして実行する場合は、いくつかの理由から管理者として実行することをお勧めします。
+リモート デバッガーを s サービスとして実行する場合は、次のような理由から管理者として実行することをお勧めします。
 
-- リモートデバッガーサービスでは管理者からの接続のみが許可されるため、管理者として実行しても新しいセキュリティリスクは発生し**ません**。
+- リモート デバッガー サービスでは、管理者からの接続のみが許可されるため、管理者として実行することによって新たに発生するセキュリティ リスク**はありません**。
 
-- これにより、Visual Studio ユーザーにプロセスをデバッグする権限がリモートデバッガー自体よりも多くある場合に発生するエラーを防ぐことができます。
+- Visual Studio ユーザーがリモート デバッガー自体よりもプロセスをデバッグする権限を持っている場合に発生するエラーを防ぐことができます。
 
-- リモートデバッガーのセットアップと構成を簡略化します。
+- リモート デバッガーのセットアップと構成を簡略化します。
 
-リモートデバッガーを管理者として実行せずにデバッグすることもできますが、これを正しく動作させるための要件がいくつかあり、多くの場合、より高度なサービス構成手順が必要になります。
+リモート デバッガーを管理者として実行せずにデバッグすることは可能ですが、この作業を正しく行うにはいくつかの要件があり、多くの場合、より高度なサービス構成手順が必要になります。
 
-- リモートコンピューターで使用しているアカウントには、"**サービスとしてログオン**" 権限が必要です。 「サービスとしてのログオンを追加する[には」](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)の手順を参照してください。
+- リモート コンピュータで使用しているアカウントには、**サービスとしてのログオン**特権が必要です。 「[接続できない](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)エラー」の「サービスとしてログオンを追加するには」の手順を参照してください。
 
-- このアカウントは、ターゲットプロセスをデバッグする権限を持っている必要があります。 これらの権限を取得するには、デバッグするプロセスと同じアカウントでリモートデバッガーを実行する必要があります。 (簡単な方法は、管理者としてサービスを実行することです)。 
+- アカウントには、ターゲット プロセスをデバッグする権限が必要です。 これらの権限を取得するには、デバッグするプロセスと同じアカウントでリモート デバッガーを実行する必要があります。 (簡単な方法は、管理者としてサービスを実行することです)。 
 
-- アカウントは、ネットワーク経由で Visual Studio コンピューターに接続して (つまり、認証する) 必要があります。 ドメインでは、リモートデバッガーが組み込みのローカルシステムアカウントまたはネットワークサービスアカウントまたはドメインアカウントで実行されている場合、接続が簡単になります。 ビルトインアカウントには、セキュリティ上のリスクをもたらす可能性がある、管理者特権のセキュリティ特権があります。
+- アカウントは、ネットワーク経由で Visual Studio コンピューターに接続できる (つまり、認証を使用して) できる必要があります。 ドメインでは、リモート デバッガーが組み込みのローカル システム アカウントまたはネットワーク サービス アカウント、またはドメイン アカウントで実行されている場合は、簡単に接続できます。 ビルトイン アカウントには、セキュリティリスクを引き起こす可能性のあるセキュリティ特権が昇格されています。
 
-### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>リモートデバッガーをアプリケーションとして実行する場合 (通常モード)
+### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>リモート デバッガをアプリケーションとして実行する場合 (通常モード)
 
-(通常のアプリケーションなどの) 独自の昇格されていないプロセスにアタッチしようとする場合は、リモートデバッガーを管理者として実行しているかどうかは関係ありません。
+独自の非昇格プロセス (通常のアプリケーションなど) にアタッチしようとしている場合は、管理者としてリモート デバッガーを実行しているかどうかは問題ではありません。
 
-次のようないくつかのシナリオで、管理者としてリモートデバッガーを実行します。
+リモート デバッガーを管理者として実行する場合は、次のようなシナリオがあります。
 
-- 別のユーザー (IIS のデバッグ時など) として実行されているプロセスにアタッチする場合は、
+- 別のユーザーとして実行されているプロセス (IIS のデバッグ時など) にアタッチする場合、
 
-- 別のプロセスを起動しようとしています。起動するプロセスは管理者です。
+- 別のプロセスを起動しようとしていますが、起動するプロセスは管理者です。
 
-プロセスを起動する必要があり、起動するプロセスが管理者で**ない**場合は、を管理者として実行**しないよう**にします。
+プロセスを起動する場合は管理者として実行**したくない**ため、起動するプロセスを管理者**に**することはできません。
 
 ## <a name="see-also"></a>関連項目
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [リモート デバッグ](../debugger/remote-debugging.md)

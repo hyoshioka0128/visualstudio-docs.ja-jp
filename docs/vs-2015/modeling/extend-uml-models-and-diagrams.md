@@ -1,5 +1,5 @@
 ---
-title: UML モデルと図の拡張 |Microsoft Docs
+title: UML モデルと図を拡張する |マイクロソフトドキュメント
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849800"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301249"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "75849800"
 
  Fabrikam 社のツール チームは、一連の拡張機能を作成して開発チームを支援します。 以降のセクションでは、定義可能なさまざまな拡張機能について説明します。 これらの手法のいくつかを 1 つの Visual Studio 拡張機能に結合できます。
 
- 詳細については、こちらのビデオを参照してください。「![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")」 MSDN の「[操作方法シリーズ: UML ツールと機能拡張](https://msdn.microsoft.com/vstudio/ff859492)」を参照してください。
+ 詳細については、ビデオ「[MSDN How Do I シリーズ : UML ツールと拡張性](https://msdn.microsoft.com/vstudio/ff859492)」![へのリンク](../data-tools/media/playvideo.gif "PlayVideo")を参照してください。
 
-## <a name="Requirements"></a> 要件
+## <a name="requirements"></a><a name="Requirements"></a>要件
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+- [ビジュアル スタジオ SDK](../extensibility/visual-studio-sdk.md).
 
 - [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)。
 
@@ -43,14 +43,14 @@ ms.locfileid: "75849800"
 
  Fabrikam 社のツール開発者は、アクティビティ図のオブジェクト ノードにステレオタイプ (たとえば、«コンベヤ ベルト»、«チェックイン デスク») を定義します。 チーム メンバーがアクティビティ図を使用して荷物取り扱いスキームを作成すると、ツール開発者はステレオタイプを設定して各ノードが表す設備の種類を示すことができるようになります。 ツール開発者は、いくつかのステレオタイプに対して追加のプロパティを定義して、ユーザーがコンベヤ ベルトの容量やチェックイン デスクの左右の区別などの値を記録できるようにします。
 
- 詳細については、「プロファイルを定義して[UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)」を参照してください。
+ 詳細については、「 UML を[拡張するプロファイルの定義](../modeling/define-a-profile-to-extend-uml.md)」を参照してください。
 
 ## <a name="custom-toolbox-items"></a>カスタム ツールボックス項目
  カスタム ツールボックス項目は、図で定義するプロトタイプから要素や要素グループを作成します。 たとえば、特定の色またはステレオタイプのユース ケースを作成するツールや、設計パターンを表すクラスと関連のグループを作成することもできます。 これらのツールボックス項目を Visual Studio 拡張機能に追加し、他のユーザーに配布できます。
 
- 詳細については、「[カスタムモデリングツールボックスアイテムの定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
+ 詳細については、「[カスタム モデリング ツールボックス項目の定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
 
-## <a name="validation"></a>Validation
+## <a name="validation"></a>検証
  UML モデルが指定の制約に確実に準拠するようにするための規則を定義できます。
 
  Fabrikam 社のツール開発者は、荷物取り扱いモデルでチーム メンバーが単純なミスを犯すことがないように規則を定義します。 たとえば、チェックイン デスクを保管庫に直接接続することはできません。 これらの間には、少なくともベルト コンベヤが存在する必要があります。
@@ -62,30 +62,30 @@ ms.locfileid: "75849800"
 
  Fabrikam 社では、"チェックイン デスクを作成した後で選択したベルト コンベヤに接続する"、"会社のレイアウト規則に従って図を配置し直す" などのよく実行される操作を自動化するためのメニュー コマンドを定義します。
 
- 「[モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
+ [モデリング図のメニュー コマンドの定義を](../modeling/define-a-menu-command-on-a-modeling-diagram.md)参照してください。
 
 ## <a name="gestures"></a>ジェスチャ
  ユーザーが図の要素をダブルクリックするか、要素を図や図内の要素にドラッグすることで起動されるコマンドを定義できます。 他の UML 図、Visual Studio の他の部分、または他のアプリケーションや Windows エクスプローラー (またはエクスプローラー) からドラッグされた項目を処理できるコマンドを定義できます。
 
  Fabrikam 社のチーム メンバーは、仕様などのファイルを、Windows デスクトップからドラッグすることで、任意のモデル要素に関連付けることができます。 ツール開発者は、任意の要素にファイル パス プロパティを提供するステレオタイプと、ファイルが要素上にドロップされたときにステレオタイプとファイル パスを設定するジェスチャを定義しました。
 
- 詳細については、「[モデリング図でジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する」を参照してください。
+ 詳細については、「[モデリング図でジェスチャ ハンドラーを定義する」を](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)参照してください。
 
 ## <a name="responding-to-changes"></a>変更への対応
  モデル内の変更が、ユーザー アクションに起因するものか、他のプログラム コードに起因するものかにかかわらず、変更に対応するコードを作成できます。
 
  Fabrikam 社の開発者は、要素の色をそのステレオタイプに応じて自動的に設定するコードを作成します。 これにより、ユーザーはモデル内の要素のそれぞれ異なる役割を簡単に区別できるようになります。
 
- 詳細については、「[方法: UML モデルの変更に対応する](../misc/how-to-respond-to-changes-in-a-uml-model.md)」を参照してください。
+ 詳細については、「[方法 : UML モデルの変更に応答する](../misc/how-to-respond-to-changes-in-a-uml-model.md)」を参照してください。
 
 ## <a name="model-bus"></a>モデル バス
  モデル バスを使用すると、別の図や別の [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能から、図やモデルにアクセスできます。 特に、複数のモデルに情報を伝達することができるため、結合されたモデルで複数の人が同時に作業できます。
 
  Fabrikam 社では、アクティビティ図上の要素を使用して、荷物取り扱い設備を表します。 設備の各項目については、別の図で詳細な仕様を記述できます。この図は、別のモデルに配置することもできます。 荷物フロー図の検証制約では、他の図から設備の関連プロパティを取得できます。 他の図への参照は、ステレオタイプに定義された追加のプロパティに格納されます。
 
- 詳細については、「 [UML モデルを他のモデルおよびツールと統合](../modeling/integrate-uml-models-with-other-models-and-tools.md)する」を参照してください。
+ 詳細については、「 [UML モデルを他のモデルおよびツールと統合](../modeling/integrate-uml-models-with-other-models-and-tools.md)する 」を参照してください。
 
-## <a name="generation"></a>生成
+## <a name="generation"></a>Generation
  1 つのモデルから、プログラム コード、スクリプト、構成、ドキュメント、新しいモデル、またはその他の成果物を生成できます。
 
  Fabrikam 社が設計する荷物取り扱いシステムのプログラム コードの多くは、複数のプロジェクトで共通しています。 主な変動要素は、空港における荷物の流れです。 設計チームが初期のいくつかのプロジェクトを経験した後、ツール開発者は、荷物フロー モデルから可変のプログラム コードの大部分およびその他のファイル (ユーザー ドキュメントなど) を生成するテンプレートを作成します。 これにより、新しいプロジェクトの開発時間が大幅に短縮され、エラー発生率も引き下げられます。
@@ -97,26 +97,26 @@ ms.locfileid: "75849800"
 
  Fabrikam 社のツール開発者は、それぞれの空港プロジェクトの作業スケジュールを生成するツールを作成します。 スケジュールされた作業項目は、モデル要素にリンクされます。
 
- 詳細については、「[作業項目リンクハンドラーを定義する](../modeling/define-a-work-item-link-handler.md)」を参照してください。
+ 詳細については、「[作業項目リンク ハンドラーの定義](../modeling/define-a-work-item-link-handler.md)」を参照してください。
 
 ## <a name="tools-that-update-models"></a>モデルを更新するツール
  UML モデルの読み込みを行えるスタンドアロン アプリケーションと Visual Studio 拡張機能を作成できます。
 
  Fabrikam 社の開発者は、モデルを読み取り、モデルの各要素での作業の進捗状況についてレポートを生成するツールを作成します。
 
- 詳細については、「[プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
+ 詳細については、「[プログラム コードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
 
 ## <a name="domain-specific-languages"></a>ドメイン固有の言語
- 特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、「[モデリング SDK For Visual Studio-ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)」を参照してください。
+ 特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、「 [Visual Studio のモデリング SDK - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)」を参照してください。
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
-|**カテゴリ**|**Links**|
+|**カテゴリ**|**リンク**|
 |------------------|---------------|
-|**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと機能拡張](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Visual Studio を使用した UML](https://channel9.msdn.com/posts/clinted/)|
+|**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [MSDN ハウ・ドゥ・I シリーズ: UML ツールと拡張性](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ビデオ チャンネル 9![へのリンク](../data-tools/media/playvideo.gif "PlayVideo")[: UML とビジュアル スタジオ](https://channel9.msdn.com/posts/clinted/)|
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>参照
- [UML モデリング機能拡張のためのアプリ API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)[のモデルの作成](../modeling/create-models-for-your-app.md)
+ UML モデリング機能[拡張のためのアプリ](../modeling/create-models-for-your-app.md) [API リファレンスのモデルを作成する](../modeling/api-reference-for-uml-modeling-extensibility.md)
