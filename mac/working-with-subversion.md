@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
 ms.openlocfilehash: d687215bc91dc01a284c49c141a6e52a16ce9e7a
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692140"
 ---
 # <a name="working-with-subversion"></a>Subversion の使用
@@ -54,6 +54,6 @@ Visual Studio for Mac の**チェックアウト**機能の使用方法につい
 
 これにより、変更がリポジトリに送信され、すべての変更の新しいリビジョンが作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Subversion リポジトリの設定](set-up-subversion-repository.md)

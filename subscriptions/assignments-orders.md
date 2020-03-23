@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: ユーザーの割り当てを追跡して注文を処理する管理者の責任について説明します。
 ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235226"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>ユーザーの割り当てを追跡し、注文を処理する
@@ -28,7 +28,7 @@ Visual Studio サブスクリプションの管理者は、Visual Studio の使�
 - Visual Studio サブスクリプション管理者は、元の割り当て時から 90 日間が経過している場合は、あるサブスクライバーから別のサブスクライバーにサブスクリプションを再割り当てすることができます。 
     > [!NOTE]
     > 人為的な高い最大使用レベルを回避するため、これを行う場合は常に既存のサブスクリプションをまず削除してから新しいサブスクリプションを追加します。 
-- 組織の最大使用量の監視を支援するため、Visual Studio の[サブスクリプション管理ポータル](https://manage.visualstudio.com)には[最大使用量レポート](maximum-usage.md)があります。 
+- 組織の最大使用量の監視を支援するため、Visual Studio の[サブスクリプション管理ポータル](maximum-usage.md)には[最大使用量レポート](https://manage.visualstudio.com)があります。 
 
 ## <a name="monthly-subscriptions-open-license-or-open-value"></a>月間サブスクリプション、Open License、Open Value
 サブスクリプションは、Open License や Open Value のようなプログラムから、あるいは Visual Studio Marketplace から月単位で割り当てることがあります。 その場合は、ユーザー (従業員または外部請負業者) が Visual Studio のライセンス付与されたソフトウェアと対話を開始する月の間に、追加ユーザーの注文を処理する必要があります。
@@ -36,13 +36,13 @@ Visual Studio サブスクリプションの管理者は、Visual Studio の使�
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise、MPSA、Select 契約
 Microsoft Enterprise Agreements (EA)、MPSA および Select Plus 契約では、長期にわたる Visual Studio ソフトウェアの使用とライセンスの柔軟性が得られます。 Visual Studio 管理者は、ソフトウェア ライセンスが契約期間中に定められた最大使用率になるように年間の調整注文を行う必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [管理者の責任](admin-responsibilities.md)
 - [運用前環境のインベントリ](admin-inventory.md)

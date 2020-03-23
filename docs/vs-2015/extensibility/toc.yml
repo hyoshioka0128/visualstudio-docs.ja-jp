@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: テキストの強調表示
           href: walkthrough-highlighting-text.md
-        - name: アウトライン
+        - name: '[アウトライン]'
           href: walkthrough-outlining.md
         - name: 対応するかっこの表示
           href: walkthrough-displaying-matching-braces.md
@@ -846,7 +846,7 @@
               href: enumerators.md
             - name: コマンド コード
               href: command-code-enumerator.md
-            - name: メッセージ
+            - name: Message
               href: message-enumerator.md
             - name: ファイルの状態コード
               href: file-status-code-enumerator.md
@@ -880,9 +880,9 @@
           href: adding-command-line-switches.md
     - name: エラー処理と戻り値
       href: error-handling-and-return-values.md
-    - name: オブジェクト
+    - name: Objects
       items:
-        - name: オブジェクト
+        - name: Objects
           href: objects.md
         - name: VSCodeWindow オブジェクト
           href: vscodewindow-object.md

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: 'Visual Studio のチュートリアル | C#'
-summary: 'Visual Studio を使用して C# アプリを作成します。'
+title: Visual Studio のチュートリアル | C#
+summary: Visual Studio を使用して C# アプリを作成します。
 metadata:
-  title: 'Visual Studio を使用した C# 開発'
-  description: 'Visual Studio を使用して C# アプリを作成します。'
+  title: Visual Studio を使用した C# 開発
+  description: Visual Studio を使用して C# アプリを作成します。
   ms.custom: seodec18
   ms.topic: landing-page
   ms.date: 11/19/2019
@@ -13,61 +13,67 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
   dev_langs:
-    - CSharp
+  - CSharp
+  ms.openlocfilehash: 0e5519756bebafd91b72186e001ca6af7f53c254
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "76923124"
 landingContent:
-  - title: はじめに
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Visual Studio のインストール
-            url: ../../install/install-visual-studio.md
-      - linkListType: get-started
-        links:
-          - text: ガイド ツアーを開始する
-            url: visual-studio-ide.md
-      - linkListType: quickstart
-        links:
-          - text: '"Hello World" コンソール アプリを作成する'
-            url: ../../ide/quickstart-csharp-console.md
-          - text: '"Hello World" Web アプリを作成する'
-            url: ../../ide/quickstart-aspnet-core.md
-  - title: 'C# アプリを作成する'
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: コンソール アプリを作成する
-            url: tutorial-console.md
-          - text: Web アプリを作成する
-            url: tutorial-aspnet-core.md
-          - text: ユニバーサル Windows プラットフォームのアプリを作成する
-            url: tutorial-uwp.md
-          - text: Windows デスクトップ アプリを作成する
-            url: tutorial-wpf.md
-          - text: Windows フォーム アプリを作成する
-            url: ../../ide/create-csharp-winform-visual-studio.md
-          - text: 'C# 言語について学ぶ'
-            url: /dotnet/csharp/tutorials/intro-to-csharp/
-      - linkListType: video
-        links:
-          - text: ASP.NET Core アプリを作成する
-            url: tutorial-aspnet-core-ef-step-01.md
-  - title: Visual Studio を学ぶ
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: プログラムを実行する
-            url: run-program.md
-          - text: リポジトリからコードを開く
-            url: ../tutorial-open-project-from-repo.md
-          - text: コードを作成して編集する
-            url: tutorial-editor.md
-          - text: コンパイルとビルド
-            url: ../../ide/compiling-and-building-in-visual-studio.md
-          - text: コードをデバッグする
-            url: ../csharp/tutorial-debugger.md
-          - text: コードのテスト
-            url: ../../test/getting-started-with-unit-testing.md
-      - linkListType: how-to-guide
-        links:
-          - text: データにアクセスする
-            url: ../../data-tools/create-a-sql-database-by-using-a-designer.md
+- title: はじめに
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Visual Studio のインストール
+      url: ../../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: ガイド ツアーを開始する
+      url: visual-studio-ide.md
+  - linkListType: quickstart
+    links:
+    - text: "\"Hello World\" コンソール アプリを作成する"
+      url: ../../ide/quickstart-csharp-console.md
+    - text: "\"Hello World\" Web アプリを作成する"
+      url: ../../ide/quickstart-aspnet-core.md
+- title: C# アプリを作成する
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: コンソール アプリを作成する
+      url: tutorial-console.md
+    - text: Web アプリを作成する
+      url: tutorial-aspnet-core.md
+    - text: ユニバーサル Windows プラットフォームのアプリを作成する
+      url: tutorial-uwp.md
+    - text: Windows デスクトップ アプリを作成する
+      url: tutorial-wpf.md
+    - text: Windows フォーム アプリを作成する
+      url: ../../ide/create-csharp-winform-visual-studio.md
+    - text: C# 言語について学ぶ
+      url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: ASP.NET Core アプリを作成する
+      url: tutorial-aspnet-core-ef-step-01.md
+- title: Visual Studio を学ぶ
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: プログラムを実行する
+      url: run-program.md
+    - text: リポジトリからコードを開く
+      url: ../tutorial-open-project-from-repo.md
+    - text: コードを作成して編集する
+      url: tutorial-editor.md
+    - text: コンパイルとビルド
+      url: ../../ide/compiling-and-building-in-visual-studio.md
+    - text: コードをデバッグする
+      url: ../csharp/tutorial-debugger.md
+    - text: コードのテスト
+      url: ../../test/getting-started-with-unit-testing.md
+  - linkListType: how-to-guide
+    links:
+    - text: データにアクセスする
+      url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

@@ -116,15 +116,15 @@
           href: servers-visual-studio-sdk.md
         - name: ポート サプライヤー
           href: port-suppliers.md
-        - name: ポート
+        - name: Port
           href: ports.md
-        - name: プロセス
+        - name: 処理
           href: processes.md
         - name: プログラム ノード
           href: program-nodes.md
-        - name: Programs
+        - name: プログラム
           href: programs.md
-        - name: スレッド
+        - name: Threads
           href: threads.md
         - name: スタック フレーム
           href: stack-frames.md
@@ -148,7 +148,7 @@
       items:
         - name: タスクのデバッグ
           href: debugging-tasks.md
-        - name: セキュリティ上の問題
+        - name: セキュリティの問題
           href: security-issues.md
         - name: プログラムの起動
           items:

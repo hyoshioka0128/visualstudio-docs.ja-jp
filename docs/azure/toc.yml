@@ -1,7 +1,7 @@
 - name: Visual Studio を使用した Azure 開発
   href: index.yml
   expanded: true
-- name: Azure App Service に配置する
+- name: Azure App Service にデプロイする
   expanded: true
   items:
     - name: Azure に ASP.NET Core アプリをデプロイする
@@ -14,7 +14,7 @@
       href: /azure/devops/pipelines/get-started-yaml?view=vsts
     - name: Azure VM に ASP.NET Web アプリをデプロイする
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-- name: Azure サービスに接続する
+- name: Azure サービスへの接続
   expanded: false
   items:
     - name: Azure ストレージを追加する
@@ -27,7 +27,7 @@
       items:
         - name: Text Analytics
           href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Bing 検索
+        - name: Bing Search
           href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: 顔認識
           href: /azure/cognitive-services/face/vs-face-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
@@ -62,7 +62,7 @@
       items:
         - name: Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Azure クラウド サービスをデバッグするためのさまざまな方法を理解する
+        - name: Azure クラウド サービスをデバッグするさまざまな方法
           href: vs-azure-tools-debugging-cloud-services-overview.md
         - name: Azure クラウド サービスと仮想マシンに対する診断を設定する
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
@@ -106,7 +106,7 @@
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Microsoft Azure Storage Explorer のリリース ノート
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Storage Explorer のアクセシビリティ
+        - name: ストレージ エクスプローラーのアクセシビリティ
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:

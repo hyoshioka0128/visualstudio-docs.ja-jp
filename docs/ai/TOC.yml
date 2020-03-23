@@ -14,9 +14,9 @@
       items:
         - name: TensorFlow + Azure ディープ ラーニング VM
           href: tensorflow-vm.md
-    - name: 使い方ガイド
+    - name: 操作方法ガイド
       items:
-        - name: プロジェクトを作成する
+        - name: プロジェクトの作成
           items:
             - name: サンプル ギャラリーからプロジェクトを作成する
               href: create-project-gallery.md
@@ -34,7 +34,7 @@
           href: monitor-gpu.md
         - name: TensorBoard を監視する
           href: monitor-tensorboard.md
-        - name: ストレージを監視する
+        - name: ストレージの管理
           href: manage-storage.md
     - name: サンプル
       items:

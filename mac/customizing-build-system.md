@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128387"
 ---
 # <a name="customizing-the-build-system"></a>ビルド システムのカスタマイズ
@@ -48,13 +48,13 @@ Visual Studio for Mac で新しいタブに `.csproj` を表示するには、�
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
-ターゲット ファイルは別の MSBuild ファイルです。 このファイルに含まれる MSBuild コードは、複数のプロジェクトで再利用できます。 たとえば、`MSBuildBinPath` プロパティ (または変数) で表されるディレクトリにある `Microsoft.CSharp.targets` ファイルには、C# ソース ファイルから C# アセンブリをビルドするためのロジックが含まれています。
+ターゲット ファイルは別の MSBuild ファイルです。 このファイルに含まれる MSBuild コードは、複数のプロジェクトで再利用できます。 たとえば、`Microsoft.CSharp.targets` プロパティ (または変数) で表されるディレクトリにある `MSBuildBinPath` ファイルには、C# ソース ファイルから C# アセンブリをビルドするためのロジックが含まれています。
 
 ### <a name="items-and-properties"></a>項目とプロパティ
 
 MSBuild には、*項目*と*プロパティ*という 2 つの基本データ型があります。詳細については後述します。
 
-#### <a name="properties"></a>プロパティ
+#### <a name="properties"></a>Properties
 
 プロパティは、コンパイラ オプションなど、コンパイル設定を格納するための鍵と値のペアです。
 
@@ -76,7 +76,7 @@ MSBuild には、*項目*と*プロパティ*という 2 つの基本データ�
 
 プロパティは `$()` 構文を利用して式から参照できます。 たとえば、`$(Foo)` は `Foo` プロパティの値として評価されます。 プロパティが設定されていない場合、エラーなしで、空の文字列として評価されます。
 
-#### <a name="items"></a>項目
+#### <a name="items"></a>アイテム
 
 項目を利用することで、ビルド システムへの入力をリストやセットとして扱うことができます。項目は一般的にファイルを表します。 項目にはそれぞれ、項目の*種類*と*仕様*が与えられ、任意で*メタデータ*が指定されます。 MSBuild が個々の項目に対して機能することはありません。項目*セット*と呼ばれる、特定の種類のすべての項目に対して機能します。
 

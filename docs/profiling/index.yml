@@ -9,48 +9,54 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
+  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "79549915"
 landingContent:
-  - title: プロファイリングについて
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: プロファイリング ツールの概要
-            url: profiling-feature-tour.md
-      - linkListType: concept
-        links:
-          - text: プロファイリング ツールを実行する方法
-            url: running-profiling-tools-with-or-without-the-debugger.md
-  - title: はじめに
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: 'CPU 使用率の分析 (C#、Visual Basic)'
-            url: quickstart-cpu-usage-managed.md
-          - text: CPU 使用率の分析 (C++)
-            url: quickstart-cpu-usage-native.md
-          - text: CPU 使用率の分析 (ASP.NET)
-            url: quickstart-cpu-usage-aspnet.md
-      - linkListType: tutorial
-        links:
-          - text: CPU 使用率の分析を開始する
-            url: beginners-guide-to-performance-profiling.md
-          - text: メモリ使用量の測定を開始する
-            url: memory-usage.md
-  - title: 他のパフォーマンス ツール
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: コマンド ラインから CPU 使用率を測定する
-            url: profile-apps-from-command-line.md
-          - text: .NET オブジェクトのメモリ使用量の測定
-            url: dotnet-alloc-tool.md
-          - text: パフォーマンスのヒント
-            url: perftips.md
-          - text: リソース消費量を分析する (XAML)
-            url: application-timeline.md
-          - text: GPU 使用状況を分析する (Direct3D)
-            url: gpu-usage.md
-          - text: ネットワーク使用量を分析する (UWP)
-            url: network-usage.md
-          - text: エネルギー使用を分析する (UWP)
-            url: analyze-energy-use-in-store-apps.md
+- title: プロファイリングについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: プロファイリング ツールの概要
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: プロファイリング ツールを実行する方法
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: はじめに
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: CPU 使用率の分析 (C#、Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: CPU 使用率の分析 (C++)
+      url: quickstart-cpu-usage-native.md
+    - text: CPU 使用率の分析 (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: CPU 使用率の分析を開始する
+      url: beginners-guide-to-performance-profiling.md
+    - text: メモリ使用量の測定を開始する
+      url: memory-usage.md
+- title: 他のパフォーマンス ツール
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: パフォーマンスのヒント
+      url: perftips.md
+    - text: コマンド ラインから CPU 使用率を測定する
+      url: profile-apps-from-command-line.md
+    - text: .NET オブジェクトのメモリ使用量の測定
+      url: dotnet-alloc-tool.md
+    - text: リソース消費量を分析する (XAML)
+      url: application-timeline.md
+    - text: GPU 使用状況を分析する (Direct3D)
+      url: gpu-usage.md
+    - text: ネットワーク使用量を分析する (UWP)
+      url: network-usage.md
+    - text: エネルギー使用を分析する (UWP)
+      url: analyze-energy-use-in-store-apps.md

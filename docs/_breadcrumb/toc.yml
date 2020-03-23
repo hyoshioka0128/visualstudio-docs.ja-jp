@@ -2,7 +2,7 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Visual Studio
+    - name: "Visual\_Studio"
       tocHref: /visualstudio/
       topicHref: /visualstudio/
       items:
@@ -33,7 +33,7 @@
                     - name: グラフィックス
                       tocHref: /visualstudio/debugger/graphics/
                       topicHref: /visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics
-                - name: 配置
+                - name: デプロイ
                   tocHref: /visualstudio/deployment/
                   topicHref: /visualstudio/deployment/deploying-applications-services-and-components
                 - name: IDE クラス デザイナー
@@ -42,7 +42,7 @@
                 - name: アーキテクチャのモデリング
                   tocHref: /visualstudio/modeling/
                   topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
-                - name: プロファイル
+                - name: プロファイリング
                   tocHref: /visualstudio/profiling/
                   topicHref: /visualstudio/profiling/index
                 - name: テスト
@@ -74,7 +74,7 @@
                   tocHref: /visualstudio/extensibility/debugger/
                   topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
                   items:
-                    - name: 関連項目
+                    - name: リファレンス
                       tocHref: /visualstudio/extensibility/debugger/reference/
                       topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
                 - name: ユーザー エクスペリエンス ガイドライン

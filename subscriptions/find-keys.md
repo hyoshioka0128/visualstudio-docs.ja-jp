@@ -3,21 +3,21 @@ title: Visual Studio サブスクリプションでプロダクト キーを検�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションでプロダクト キーを検索、要求、エクスポートする方法を説明します。
-ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378008"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78937503"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでプロダクト キーを検索して要求する
 この記事では、 https://my.visualstudio.com/productkeys からプロダクト キーを検索、要求、エクスポートする方法について説明します。  キーを使用して製品をライセンス認証する方法、キーのリテール版とボリューム ライセンス版、および毎日のプロダクト キー要求の制限について詳しくは、[プロダクト キーの概要](product-keys.md)に関するページをご覧ください。
 
 ## <a name="locating-and-claiming-product-keys"></a>プロダクト キーの確認と要求
-プロダクト キーを表示するには、Visual Studio サブスクリプションにサインインする必要があります。 以下に示す [[ダウンロード]](https://my.visualstudio.com/downloads) ページで、特定の製品の青い **[キーを入手]** リンクを選択すると、その製品のプロダクト キーが表示されます。  すべてのキーをまとめて [[プロダクト キー](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)] ページで確認することもできます。 1 つの製品に対して複数のキーが存在する場合は、使用するキーを識別できるよう、該当するダウンロードの [メモ] 列にメモが表示されます。
+プロダクト キーを表示するには、Visual Studio サブスクリプションにサインインする必要があります。 以下に示す **[ダウンロード]** ページで、特定の製品の青い [[キーを入手]](https://my.visualstudio.com/downloads) リンクを選択すると、その製品のプロダクト キーが表示されます。  すべてのキーをまとめて [[プロダクト キー](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)] ページで確認することもできます。 1 つの製品に対して複数のキーが存在する場合は、使用するキーを識別できるよう、該当するダウンロードの [メモ] 列にメモが表示されます。
 > [!div class="mx-imgBorder"]
 > ![ダウンロード ページからキーを入手する](_img/product-keys/download-get-key.png)
 
@@ -28,10 +28,10 @@ ms.locfileid: "68378008"
 
 ### <a name="product-key-types"></a>プロダクト キーの種類
 
-|    キーの種類           |    説明                                                                                                                                                                                                           |
+|    キーの種類           |    Description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    適用できません                    |    この製品のインストールにキーは必要ありません。                                                       |
-|    販売                     |    販売キーは複数のライセンス認証が可能で、製品の販売ビルドに使用されます。 多くの場合は 1 つのキーで 10 回のライセンス認証が可能ですが、同じコンピューターではさらに多くのライセンス認証が許可されることがよくあります。                                                       |
+|    適用外                    |    この製品のインストールにキーは必要ありません。                                                       |
+|    小売                     |    販売キーは複数のライセンス認証が可能で、製品の販売ビルドに使用されます。 多くの場合は 1 つのキーで 10 回のライセンス認証が可能ですが、同じコンピューターではさらに多くのライセンス認証が許可されることがよくあります。                                                       |
 |    マルチ ライセンス認証        |    マルチ ライセンス認証キー (MAK) を使用すると、同じキーで 1 つの製品の複数のインストールのライセンス認証を行うことができます。 一般に、MAK は製品のボリューム ライセンス版で使用されます。 一般的に、サブスクリプションごとに 1 つの MAK キーが提供されます。    |
 |    静的ライセンス認証キー    |    静的ライセンス認証キーは、ライセンス認証が必要ない製品に対して提供されます。 インストールの数に関係なく使用できます。                                                                                                                  |
 |    カスタム キー                 |    カスタム キーにより、製品のライセンス認証またはインストールの際に特別な操作または情報が提供されます。                                                                                                                                                                |
@@ -65,5 +65,11 @@ ms.locfileid: "68378008"
 
 キーをエクスポートするには、[プロダクト キー] ページの右端にある **[すべてのキーをエクスポート]** リンクをクリックします。  KeysExport.xml をという名前の .xml ファイルが作成され、ファイルを開くか保存するオプションが表示されます。  .Xml ファイルを処理できるアプリケーションでファイルを開く必要があります。  たとえば、Excel で読み取り専用のブックとしてファイルを開くことができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="see-also"></a>参照
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次のステップ
 ソフトウェアをダウンロードしてキーを使用する準備ができたら、 https://my.visualstudio.com/downloads にアクセスします。  ソフトウェアのダウンロードについて詳しくは、[ダウンロードの概要](download-software.md)に関するページをご覧ください。

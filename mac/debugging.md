@@ -7,10 +7,10 @@ ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75397904"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Visual Studio for Mac を使用したデバッグ
@@ -43,7 +43,7 @@ IDE でブレークポイントを設定するには、エディターで、中�
 
 ![ブレークポイントの一覧](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>[デバッグ開始]
+## <a name="start-debugging"></a>デバッグを開始する
 
 デバッグを開始するには、ターゲットのブラウザー、デバイス、またはミュレーター/エミュレーターを選択します。
 
@@ -97,6 +97,6 @@ Xamarin 製品には、Mono のクラス ライブラリのソース コード�
 
 ![外部コードにステップイン オプション](media/debugging-image8.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのデバッグ (Windows)](/visualstudio/debugger/)

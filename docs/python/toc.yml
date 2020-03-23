@@ -16,7 +16,7 @@
       href: installing-python-interpreters.md
 - name: クイックスタート
   items:
-    - name: Flask での Web アプリの作成
+    - name: Flask で Web アプリを作成する
       href: ../ide/quickstart-python.md
       maintainContext: true
     - name: テンプレートからプロジェクトを作成する
@@ -87,7 +87,7 @@
           href: python-azure-cloud-service-project-template.md
     - name: Azure SDK for Python
       href: /python/azure/?view=azure-python
-- name: 使い方ガイド
+- name: 操作方法ガイド
   items:
     - name: Python 環境を管理する
       items:
@@ -137,13 +137,13 @@
           href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
         - name: 混合モード デバッグのシンボル
           href: debugging-symbols-for-mixed-mode-c-cpp-python.md
-    - name: プロファイル
+    - name: プロファイリング
       href: profiling-python-code-in-visual-studio.md
     - name: 単体テスト
       href: unit-testing-python-in-visual-studio.md
     - name: Cookiecutter 拡張機能の使用
       href: using-python-cookiecutter-templates.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: 項目テンプレート
       href: python-item-templates.md

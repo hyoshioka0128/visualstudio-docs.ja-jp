@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439050"
 ---
 # <a name="multi-caret-editing"></a>マルチキャレットの編集
@@ -17,7 +17,7 @@ ms.locfileid: "75439050"
 
 ## <a name="enabling-multi-caret-editing"></a>マルチキャレット編集の有効化
 
-### <a name="keyboard"></a>キーボード
+### <a name="keyboard"></a>[キーボード]
 
 キーボードを使用してマルチキャレット モードを有効にするには、いくつかの方法があります。 次の表に示すキーボード ショートカットを使用して、マルチキャレット編集の特定のモードにすることができます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "75439050"
 
 ![マルチキャレット (マウス)](media/multi-caret-mouse.gif)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイック アクション (Windows 上の Visual Studio)](/visualstudio/ide/quick-actions)
 - [コードのリファクタリング (Windows 上の Visual Studio)](/visualstudio/ide/refactoring-in-visual-studio)

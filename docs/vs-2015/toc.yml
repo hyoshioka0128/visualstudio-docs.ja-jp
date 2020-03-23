@@ -12,7 +12,7 @@
       href: ide/visual-studio-ide.md
     - name: 機能拡張
       href: extensibility/visual-studio-sdk.md
-    - name: データ アクセス
+    - name: '[データ アクセス]'
       href: data-tools/accessing-data-in-visual-studio.md
     - name: クロス プラットフォームのモバイル開発
       href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
@@ -20,7 +20,7 @@
       href: /dotnet/visual-basic
     - name: 'Visual C#'
       href: /dotnet/csharp
-    - name: Visual C++
+    - name: "Visual\_C++"
       href: /cpp/visual-cpp-in-visual-studio
     - name: JavaScript
       href: javascript/javascript-in-visual-studio.md

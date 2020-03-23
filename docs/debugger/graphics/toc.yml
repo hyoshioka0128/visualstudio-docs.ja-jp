@@ -50,7 +50,7 @@
   items:
     - name: グラフィックス診断例
       href: graphics-diagnostics-examples.md
-    - name: 'チュートリアル: グラフィックス情報をキャプチャする'
+    - name: 'チュートリアル: グラフィックス情報のキャプチャ'
       href: walkthrough-capturing-graphics-information.md
     - name: 'チュートリアル: プログラムによるグラフィックス情報のキャプチャ'
       href: walkthrough-capturing-graphics-information-programmatically.md
@@ -58,11 +58,11 @@
       href: walkthrough-missing-objects-due-to-device-state.md
     - name: 'チュートリアル: 頂点の網かけによるオブジェクトの不足'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: 'チュートリアル: パイプラインの構成が不適切なことによるオブジェクトの不足'
+    - name: 'チュートリアル: ピクセル シェーディングによるオブジェクトの不足'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
     - name: 'チュートリアル: 網かけによるレンダリング エラーのデバッグ'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用'
+    - name: 'Walkthrough: Using Graphics Diagnostics to Debug a Compute Shader (チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用)'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
     - name: '方法: グラフィックス診断再生マシンを変更する'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md

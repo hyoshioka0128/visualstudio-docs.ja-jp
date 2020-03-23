@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 1981141a01848dc7fac09913548f205a04ce618e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692362"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306723"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を設定する
 
@@ -38,7 +38,7 @@ Unity のインストールに含まれる Visual Studio for Mac のバージョ
 
 * [Visual Studio for Mac を更新する](update.md)
 
-### <a name="manual-installation"></a>手動インストール
+### <a name="manual-installation"></a>手動のインストール
 
 Unity 5.6.1 以降は既にあるが、Visual Studio for Mac はない場合は、Visual Studio for Mac を手動でインストールすることができます。 無料の Community Edition を含む Visual Studio for Mac のすべてのエディションが、Visual Studio for Mac Tools for Unity にバンドルされています。
 
@@ -79,6 +79,6 @@ Unity 2018.1 以降では、Visual Studio を Unity の既定の外部スクリ�
 
 4. **[Browse]\(参照\)** を選んだ場合は、[Applications]\(アプリケーション\) ディレクトリに移動し、Visual Studio を選んで、 **[Open]\(開く\)** をクリックします。
 
-   ![[Open]\(開く\) を選ぶ](media/setup-vsmac-tools-unity-image6.png)
+   ![[Open]\(開く\) を選択する](media/setup-vsmac-tools-unity-image6.png)
 
 5. **[External Script Editor]\(外部スクリプト エディター\)** ボックスの一覧で Visual Studio を選んだ後、[Preferences]\(ユーザー設定\) ダイアログを閉じて構成プロセスを完了します。

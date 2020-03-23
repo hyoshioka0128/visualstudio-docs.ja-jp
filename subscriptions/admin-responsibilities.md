@@ -7,10 +7,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
 ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235159"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
@@ -35,13 +35,13 @@ Visual Studio サブスクリプションでは、開発チーム メンバー�
 | ライセンスの再割り当て                     | ユーザーがチームを離れ、ライセンスの必要がなくなった場合は、90 日が経過した後にそのライセンスを再割り当てすることができます。 ライセンスを再割り当てするときに、既に使用されているプロダクト キーは引き続き利用できるとしても置き換えられることはありません。 エンタープライズ契約 (EA) を締結している組織の場合、Pluralsight トレーニングなど、元のユーザーによって使用されていたすべての特典がリセットされます。                                                                                                                                                                                                                                                 |
 | エンド ユーザーの例外                  | ソフトウェア開発プロジェクトの最後に、エンド ユーザーは通常、アプリケーションを確認し、リリースに必要な条件を満たしているかどうかを判断します。 このプロセスは、ユーザー受け入れテスト (UAT) と呼ばれます。 ビジネス スポンサーや製品マネージャーなどのチーム メンバーは、エンド ユーザーの代理としての役割を果たすことができます。 Visual Studio サブスクリプションがないエンド ユーザーは、ソフトウェアの使用が Visual Studio のすべてのライセンス条項に準拠していれば、UAT のためにソフトウェアにアクセスできます。 プライマリ ロールがソフトウェアの設計、開発、またはテストのユーザーが、"エンド ユーザー" にも該当する場合はほとんどありません。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [運用前環境のインベントリ](admin-inventory.md)
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)

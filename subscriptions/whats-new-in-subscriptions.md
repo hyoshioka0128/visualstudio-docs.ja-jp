@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "70060408"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
@@ -39,7 +39,7 @@ GitHub Enterprise は、Enterprise Agreement を通じて入手した Visual Stu
 
 ## <a name="2019-q1-january-march"></a>2019 年第 1 四半期 (1 月から 3 月)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[サブスクリプション管理ポータル](https://manage.visualstudio.com)に最大使用量を追加
+### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>[サブスクリプション管理ポータル](https://manage.visualstudio.com)に最大使用量を追加
 Visual Studio のサブスクリプション管理ポータルの新機能を使用すると、購入して割り当てたサブスクリプション数を追跡し、過去 1 年間と全契約期間の割り当てた各レベルのサブスクリプションのピーク数を特定できます。 これは、現在のサブスクリプションの使用状況を理解し、将来の購入を計画するのに役立ちます。 
 
   > [!div class="mx-imgBorder"]

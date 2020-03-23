@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: PropertyProvider クラス
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: Element クラス
+                - name: 要素クラス
                   href: sample-excel-extension-element-classes.md
                 - name: ActionFilter クラス
                   href: sample-excel-extension-actionfilter-class.md
@@ -152,9 +152,9 @@
       items:
         - name: Visual Studio でのストア アプリのテスト
           href: testing-store-apps-with-visual-studio.md
-        - name: 単体テストを作成して実行する
+        - name: 単体テストの作成および実行
           items:
-            - name: 単体テストを作成して実行する
+            - name: 単体テストの作成および実行
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: C++ DLL の単体テスト
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md

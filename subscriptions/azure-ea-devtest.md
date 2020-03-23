@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: Enterprise Agreement をご利用のお客様に提供される Azure DevTest の特別価格を利用する方法について説明します。
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580116"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78410419"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise Agreement DevTest オファー
 
@@ -25,7 +25,7 @@ Enterprise Agreement の一部であるこのオファーは、Microsoft Azure �
 
 ## <a name="enable-offers-in-the-ea-portal"></a>EA ポータルでオファーを有効にする
 オファーを有効にするには:
-1. https://ea.azure.com/manage にサインインします。
+1. [https://ea.azure.com/manage](https://ea.azure.com/manage) にサインインします。
 0. **[アカウント]** メニューをクリックします。
 0. オファーを有効にするアカウントを見つけます。  多数のアカウントがある場合は、 **[検索]** を使用して、アカウントをすばやく見つけることができます。 
 0. アカウント名にマウス ポインターを移動します。 
@@ -35,18 +35,18 @@ Enterprise Agreement の一部であるこのオファーは、Microsoft Azure �
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>アカウント内で個別のサブスクリプションを作成する
 アカウントの各サブスクライバーは、次の手順に従ってサブスクリプションを作成できます。
-1. https://account.windowsazure.com/signup?showCatalogs=True にサインインします。
+1. [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True) にサインインします。
 0. **Enterprise Dev/Test** オファーを選択します。
 0. チェック ボックスをクリックして、Enterprise Agreement によって管理されているサブスクリプションであることを確認します。 
 0. **[購入]** をクリックします。  (このオファーの場合、実際には何も購入されません)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
 - [個別のサブスクリプションの割り当て](assign-license.md)
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)

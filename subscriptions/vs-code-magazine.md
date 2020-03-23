@@ -7,10 +7,10 @@ ms.date: 10/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる CODE Magazine 特典について説明します。
 ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74491656"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに含まれる CODE Magazine 特典
@@ -56,7 +56,7 @@ CODE Magazine の購読を設定するプロセスは簡単です。  以下の�
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  いいえ          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine Premium が含まれます。除外:Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services、Imagine。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine Premium が含まれます。除外:Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services、Imagine。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

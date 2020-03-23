@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983575"
 ---
 # <a name="creating-and-editing-build-configurations"></a>ビルド構成の作成と編集
@@ -65,6 +65,6 @@ ms.locfileid: "74983575"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ビルド構成を作成して編集する (Windows の Visual Studio)](/visualstudio/ide/how-to-create-and-edit-configurations)

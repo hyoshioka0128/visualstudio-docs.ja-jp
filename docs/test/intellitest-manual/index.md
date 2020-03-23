@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591620"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest リファレンス マニュアル
 
-## <a name="contents"></a>目次
+## <a name="contents"></a>内容
 
 * **[IntelliTest の概要](introduction.md)**
   - [IntelliTest の Hello World](introduction.md#the-hello-world-of-intellitest)
@@ -55,7 +55,7 @@ ms.locfileid: "75591620"
   - [整数と浮動小数点数](input-generation.md#integers-and-floats)
   - [オブジェクト](input-generation.md#objects)
   - [既存クラスのインスタンス化](input-generation.md#existing-classes)
-  - [可視性](input-generation.md#visibility)
+  - [表示](input-generation.md#visibility)
   - [パラメーター化されたモック](input-generation.md#parameterized-mocks)
   - [構造体](input-generation.md#structs)
   - [配列と文字列](input-generation.md#arrays-and-strings)
@@ -119,10 +119,10 @@ ms.locfileid: "75591620"
   - [外部メソッドが呼び出されました](warnings-and-errors.md#external-method-called)
   - [インストルメント不能なメソッドが呼び出されました](warnings-and-errors.md#uninstrumentable-method-called)
   - [テストの容易性の問題](warnings-and-errors.md#testability-issue)
-  - [制限](warnings-and-errors.md#limitation)
+  - [制限事項](warnings-and-errors.md#limitation)
   - [観察された呼び出しが一致しません](warnings-and-errors.md#observed-call-mismatch)
   - [静的フィールドに格納された値](warnings-and-errors.md#value-static-field)
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

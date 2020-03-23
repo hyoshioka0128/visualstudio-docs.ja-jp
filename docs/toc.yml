@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: メソッドにパラメーターを追加する
                   href: ide/reference/add-parameter.md
+                - name: パラメーターを生成する
+                  href: ide/reference/generate-parameter.md
                 - name: コンストラクターからプライベートフィールドを生成する
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: オーバーライドの生成
@@ -350,6 +352,8 @@
                 - name: 概要
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: すべてのパラメーターに対して null チェックを追加する
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: メソッド シグネチャの変更
                   href: ide/reference/change-method-signature.md
                 - name: 匿名型をクラスに変換する
@@ -378,8 +382,6 @@
                   href: ide/reference/extract-method.md
                 - name: ローカル関数を抽出する
                   href: ide/reference/extract-local-function.md
-                - name: パラメーターを生成する
-                  href: ide/reference/generate-parameter.md
                 - name: インラインの一時変数
                   href: ide/reference/inline-temporary-variable.md
                 - name: インポートされていない型に対する IntelliSense 入力候補

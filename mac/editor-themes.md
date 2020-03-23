@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.openlocfilehash: 0c9c58f8da76b09055c1f2b70cd05a44890ce22c
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691632"
 ---
 # <a name="editor-themes"></a>エディターのテーマ
@@ -28,7 +28,7 @@ ms.locfileid: "67691632"
 
 新しいテーマを見つけるか作成し、ローカル コンピューターにダウンロードしたら、次の手順で追加します。
 
-1. [配色テーマのオプション] ダイアログの **[追加]** ボタンを選択します。![[配色テーマ] の [追加]](media/source-editor-image20.png)
+1. [配色テーマ] のオプション ダイアログで **[追加]** ボタンを選択します。![[配色テーマ] の [追加]](media/source-editor-image20.png)
 2. ローカル コンピューターのテーマを参照し、 **[開く]** を押します。
 3. テーマは、インストールされているテーマ一覧の一番下に追加されます。 テーマを選択すると、プレビューが表示されます。![配色テーマのプレビュー](media/source-editor-image21.png)
 4. テーマを適用するには、 **[OK]** ボタンを押します。

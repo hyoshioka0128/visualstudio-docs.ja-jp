@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 新しい Visual Studio + GitHub オファーの詳細情報
-ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: f8cfe09d6c9dc7608684ccf80238db4ac066fc20
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476747"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78894391"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の概要  
 
@@ -77,12 +77,14 @@ A: GitHub Enterprise サブスクリプションと共に、完全な Visual Stu
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
-## <a name="next-steps"></a>次の手順
-GitHub を初めて使用する場合は、[GitHub Learning Lab](https://lab.github.com/) をご覧ください。そこでは、興味深く実用的な一連のプロジェクトが示され、役に立つフィードバックが共有されています。
-
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次の手順
+GitHub を初めて使用する場合は、[GitHub Learning Lab](https://lab.github.com/) をご覧ください。そこでは、興味深く実用的な一連のプロジェクトが示され、役に立つフィードバックが共有されています。
+
+
 

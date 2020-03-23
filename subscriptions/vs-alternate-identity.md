@@ -7,10 +7,10 @@ ms.date: 07/19/2019
 ms.topic: conceptual
 description: Azure DevOps と Azure で使用するために Visual Studio サブスクリプションに代替 ID を追加する方法
 ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "72816560"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio サブスクライバー向けの ID
@@ -44,9 +44,9 @@ Visual Studio サブスクリプションに代替アカウントを追加する
 
 代替アカウントが Visual Studio サブスクリプションに追加されました。これで、両方の ID で代替アカウントでのサインインを要求するサブスクリプション特典 (IDE、Azure DevOps、Azure) を活用できます。
 
-## <a name="faq"></a>よくあるご質問
+## <a name="faq"></a>よく寄せられる質問
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Q:Azure DevOps で Visual Studio サブスクライバーとして認識されないのはなぜですか?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Q: Azure DevOps で Visual Studio サブスクライバーとして認識されないのはなぜですか?
 
 A: プライマリ ID または代替 ID を使用してサインインすると、Azure DevOps で自動的にサブスクリプションが認識されます。 認識されない場合は、次のいくつかのことを試すことができます。
 

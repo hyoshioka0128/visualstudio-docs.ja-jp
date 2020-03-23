@@ -7,10 +7,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: 管理者が期限切れの Visual Studio サブスクリプションを処理する方法を説明します。
 ms.openlocfilehash: 4871e6dde340c462d01a1dec58b5687233c56702
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78263202"
 ---
 # <a name="expired-subscriptions"></a>有効期限が切れたサブスクリプション
@@ -22,13 +22,13 @@ ms.locfileid: "78263202"
 
 販売店または Microsoft 販売者が、サブスクリプションの更新または追加購入プロセスを案内します。 発注をするか契約を更新すると、新しいサブスクリプションが使用可能になり、[サブスクライバーに割り当てる](assign-license.md)ことができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - 管理ポータルの使用については、[Visual Studio の管理者とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)にお問い合わせください
 - [Microsoft ソリューションプロバイダーの検索](https://www.microsoft.com/solution-providers/home)
 
