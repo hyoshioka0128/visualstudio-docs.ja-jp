@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128303"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 使用率を分析することでアプリケーションのパフォーマンスを測定する
@@ -58,7 +58,7 @@ Windows 7 以降ではデバッガーなしでプロファイル ツールを使
 
 4. ツールバーにある **[ツールの選択]** の設定で、**CPU 使用率**、[メモリ使用率](../profiling/Memory-Usage.md)、またはその両方を表示するかどうかを選択できます。 Visual Studio Enterprise を実行している場合は、 **[ツール]**  >  **[オプション]**  >  **[IntelliTrace]** で IntelliTrace を有効または無効にすることもできます。
 
-     ![診断ツールを表示する](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
+     ![診断ツールを表示](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      CPU 使用率を中心に観察します。**CPU 使用率**が有効になっていることを確認してください (既定では有効になっています)。
 
@@ -66,7 +66,7 @@ Windows 7 以降ではデバッガーなしでプロファイル ツールを使
 
      アプリケーションが読み込みを完了すると、診断ツールの概要ビューが表示されます。 ウィンドウを開く必要がある場合は、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[診断ツールの表示]** の順にクリックします。
 
-     ![診断ツールの概要タブ](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
+     ![[診断ツール] の [概要] タブ](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
      イベントに関する詳細については、「[診断ツール ウィンドウの [イベント検索とフィルター処理] タブ](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)」を参照してください。
 
@@ -134,10 +134,10 @@ Windows 7 以降ではデバッガーなしでプロファイル ツールを使
 
     |||
     |-|-|
-    |![手順 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用率コール ツリーのトップ レベルのノードは擬似ノードです。|
-    |![手順 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|ほとんどのアプリでは、 [[外部コードの表示]](#view-external-code) オプションをオフにすると、セカンド レベルのノードは **[外部コード]** ノードとなります。このノードに含まれるシステムおよびフレームワーク コードは、アプリの開始と停止、UI の描画、スレッド スケジュールの制御、およびアプリへの他の低レベル サービスの提供を行います。|
-    |![手順 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|セカンド レベル ノードの子はユーザー コード メソッドおよび非同期ルーチンで、セカンド レベル システムとフレームワーク コードによって呼び出される、または作成されます。|
-    |![手順 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|メソッドの子ノードには、親メソッドの呼び出しのみのデータが含まれます。 **[外部コードの表示]** がオフのとき、アプリ メソッドには **[外部コード]** ノードが含まれる場合もあります。|
+    |![ステップ 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用率コール ツリーのトップ レベルのノードは擬似ノードです。|
+    |![ステップ 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|ほとんどのアプリでは、 [[外部コードの表示]](#view-external-code) オプションをオフにすると、セカンド レベルのノードは **[外部コード]** ノードとなります。このノードに含まれるシステムおよびフレームワーク コードは、アプリの開始と停止、UI の描画、スレッド スケジュールの制御、およびアプリへの他の低レベル サービスの提供を行います。|
+    |![ステップ 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|セカンド レベル ノードの子はユーザー コード メソッドおよび非同期ルーチンで、セカンド レベル システムとフレームワーク コードによって呼び出される、または作成されます。|
+    |![ステップ 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|メソッドの子ノードには、親メソッドの呼び出しのみのデータが含まれます。 **[外部コードの表示]** がオフのとき、アプリ メソッドには **[外部コード]** ノードが含まれる場合もあります。|
 
     列値の詳細は次のようになります。
 
@@ -162,7 +162,7 @@ Windows 7 以降ではデバッガーなしでプロファイル ツールを使
 
 外部コードのコール パスを表示する場合、 **[フィルター ビュー]** リストから **[外部コードの表示]** をクリックし、 **[適用]** をクリックします。
 
-![[フィルター表示]、[外部コードの表示] の順に選択します](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
+![[フィルター表示]、[外部コードの表示] の順に選択](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
 多くの外部コードの呼び出しチェーンは複雑な入れ子になっているため、関数名列の幅は、一部の大型コンピューター モニターを除いてディスプレイの幅に収まりきらない可能性があります。 その場合、関数名は **[...]** と表示されます。
 

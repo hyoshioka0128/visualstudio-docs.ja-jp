@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128203"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio を使用してアプリをローカル フォルダーに配置する
@@ -36,7 +36,7 @@ Visual Studio からローカル フォルダーに ASP.NET、ASP.NET Core、.NE
 
 1. **[発行先を選択]** ダイアログ ボックスで **[フォルダー]** を選択します。
 
-    ![発行先としてローカル フォルダーを選択する](../deployment/media/quickstart-publish-folder.png "フォルダーを選択する")
+    ![発行先としてローカル フォルダーを選択する](../deployment/media/quickstart-publish-folder.png "フォルダーの選択")
 
 1. パスを入力するか、 **[参照]** を選択してローカル フォルダーを指定します。
 
@@ -46,7 +46,7 @@ Visual Studio からローカル フォルダーに ASP.NET、ASP.NET Core、.NE
 
 1. 配置設定を構成するには、プロファイルの概要の **[構成]** を選択し、 **[設定]** タブを選択します。
 
-    ![プロファイル設定](../deployment/media/quickstart-profile-settings.png "プロファイル設定")
+    ![プロファイルの設定](../deployment/media/quickstart-profile-settings.png "プロファイルの設定")
 
 1. デバッグまたはリリースの構成を配置するかどうかなどのオプションを構成し、 **[保存]** を選択します。
 

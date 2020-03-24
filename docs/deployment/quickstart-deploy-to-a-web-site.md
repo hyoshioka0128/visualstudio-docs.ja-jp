@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71127930"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Visual Studio を使用して Web サイトに Web アプリを発行する
@@ -36,11 +36,11 @@ Visual Studio から Web サイトに ASP.NET、ASP.NET Core、.NET Core、お�
 
 1. **[発行先を選択]** ダイアログ ボックスで **[IIS、FTP、その他]** を選択します。
 
-    ![[IIS、FTP、その他] を選択する](../deployment/media/quickstart-publish-iis-ftp.png "[IIS、FTP、その他] を選択する")
+    ![IIS や FTP などを選択します。](../deployment/media/quickstart-publish-iis-ftp.png "IIS や FTP などを選択します。")
 
 1. **[発行]** を選びます。 プロファイルの発行設定ダイアログ ボックスが開きます。
 
-    ![フォルダーを選択する](../deployment/media/quickstart-publish-settings-web.png "フォルダーを選択する")
+    ![フォルダーの選択](../deployment/media/quickstart-publish-settings-web.png "フォルダーの選択")
 
 1. **[発行方法]** フィールドで **[Web 配置]** や **[FTP]** などの方法を選択します。 次に表示される設定は発行方法に対応しています。 Web 配置を使用すると、Web アプリケーションと Web サイトを IIS サーバーの配置が簡単になります。Web 配置はアプリケーションとしてサーバーにインストールする必要があります。 インストールには [Web プラットフォーム インストーラー](https://www.microsoft.com/web/downloads/platform.aspx)を使用します。
 
