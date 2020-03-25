@@ -7,10 +7,10 @@ ms.date: 11/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Enterprise Mobility + Security の特典について説明します。
 ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74099538"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Enterprise Mobility + Security (EMS)
@@ -33,7 +33,7 @@ Office 365 Developer (E3) テナントを既にお持ちの場合は、EMS を�
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark が含まれます除外:Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Imagine、Microsoft Partner Network (Professional) は含まれません。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark が含まれます除外:Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Imagine、Microsoft Partner Network (Professional) は含まれません。*
 
 <sup>2</sup>  *Microsoft Partner Network (Professional) は含まれません*
 

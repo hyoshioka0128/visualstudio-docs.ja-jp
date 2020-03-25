@@ -3,15 +3,16 @@ title: 別名を使用した Visual Studio サブスクリプションへのサ�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235135"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509058"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
@@ -19,7 +20,7 @@ ms.locfileid: "78235135"
 ## <a name="what-is-aliasing"></a>別名定義とは
 "別名定義" という用語は、Windows (または Active Directory) へのサインインと電子メールへのアクセスに別々の ID を持っているユーザーを指します。
 
-別名定義は、"JohnD@contoso.com" のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは "John.Doe@contoso.com" などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ボリューム ライセンス サービス センター (VLSC) を介してサブスクリプションを管理している多くのユーザーにとって、これがサインインが失敗する原因となる場合があります。指定したメール アドレス ("John.Doe@contoso.com") が、"職場または学校アカウント" オプションを通じて正常に認証するために必要なディレクトリ アドレス ("JohnD@contoso.com") と一致していないからです。  ユーザーが管理ポータル (https://manage.visualstudio.com ) に表示されている "サインイン電子メール アドレス" を使用してサブスクリプションにアクセスしていることを確認します。 
+別名定義は、"JohnD@contoso.com" のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは "John.Doe@contoso.com" などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ユーザーが管理ポータル (https://manage.visualstudio.com ) に表示されている "サインイン電子メール アドレス" を使用してサブスクリプションにアクセスしていることを確認します。 
 
 ## <a name="what-are-the-potential-issues"></a>潜在的な問題は何か
 
@@ -39,7 +40,7 @@ ms.locfileid: "78235135"
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>UPN の不一致を修正する方法
 
-1. Visual Studio 管理ポータル (https://manage.visualstudio.com ) にアクセスします 
+1. Visual Studio 管理ポータル ([https://manage.visualstudio.com](https://manage.visualstudio.com)) にアクセスします。 
 
 2. UPN の不一致の問題が発生しているサブスクライバーを見つけます ([フィルター](search-license.md)機能を使用すると、サブスクライバーを簡単に見つけることができます)。
 
@@ -55,7 +56,7 @@ Visual Studio サブスクリプション ポータルへのサインインに�
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>個人のサブスクリプション アカウントが別名の問題による影響を受けているかどうかを検出する方法
 
-1. https://my.visualstudio.com/subscriptions にサインインします
+1. [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions) にサインインします。
 
 0. ページの右上に示されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  サインインした電子メール アドレスと、Web サイトへのアクセスに使用した電子メール アドレスが異なる場合は、アカウントと別名が競合しています。
 
@@ -81,7 +82,7 @@ Visual Studio プラットフォームでは、サブスクリプションの詳
 - 2 番目のオプション (より安全性が低い) では、サブスクライバーはディレクトリの電子メール アドレスとは異なる電子メール アドレスを使用してサインインできます。
 
 これらのどちらのオプションも、管理ポータル上で、次の手順を実行して構成します。  
-1. https://manage.visualstudio.com にサインインします。 
+1. [https://manage.visualstudio.com](https://manage.visualstudio.com) にサインインします。 
 
 0. 1 人のユーザーを変更する場合は、テーブルでそのユーザーを選択し、右クリックして編集します。 これにより、サインインの電子メール アドレスを変更できるパネルが開きます。 サインイン電子メール アドレスのフィールドで必要な更新を行います。 [保存] をクリックすると、変更が有効になります。  
 

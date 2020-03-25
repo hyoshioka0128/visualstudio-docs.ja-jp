@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
 ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74706991"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
@@ -120,7 +120,7 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 ||
 
-<sup>1</sup> *Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
+<sup>1</sup> *次のものが含まれます: Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
 
 <sup>2</sup> *Imagine Standard が含まれます。*
 

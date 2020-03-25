@@ -3,15 +3,16 @@ title: Visual Studio + GitHub Enterprise オファー | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/03/2020
+ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise オファーでのサブスクリプションの管理
-ms.openlocfilehash: e48b047862daa80452e1b2128dc74fee8bd1039e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: d7100c2b9cfdd12579419927fd0bf8885038048b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263332"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509006"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise を使用して Visual Studio サブスクリプションを管理する
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 

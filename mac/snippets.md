@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68787699"
 ---
 # <a name="code-snippets"></a>コード スニペット
@@ -56,10 +56,10 @@ ms.locfileid: "68787699"
 - **[グループ]** &ndash; スニペットは、この値を使って、スニペットのコンテンツ メニューでグループ化されます。
 - **[説明]** &ndash; スニペットの目的を説明します。
 - **[Mime]** &ndash; スニペットを使用できるファイルの種類を制御します。
-- **[Is expandable template]\(展開可能なテンプレート\)** &ndash; ショートカットを入力してカーソル位置にスニペットを挿入できるようにする場合は、必ずこれをオンにします。
-- **[Is surround with template]\(ブロックの挿入テンプレート\)** &ndash; エディターの **[ブロックの挿入...]** コンテンツ メニューでこのショートカットを一覧表示するには、このオプションをオンにします。
+- **[Is expandable template]\(展開可能なテンプレート\)** &ndash; ショートカットを入力してカーソル位置にスニペットを挿入できるようにする場合は、確実にこれをオンにします。
+- **[Is surround with template]\(ブロックの挿入テンプレート\)** &ndash; エディターの **[ブロックの挿入]** コンテンツ メニューでこのショートカットを一覧表示するには、このオプションをオンにします。
 - **[Template text]\(テンプレート テキスト\)** &ndash; エディターに挿入される実際のスニペットです。 キーワードのプレースホルダーは、トークンをドル記号で囲むことで定義できます。例: `$type$`。
-- **[Keyword property panel]\(キーワードのプロパティ パネル\)** &ndash; ウィンドウの右側で、上部のドロップダウン リストを使ってキーワード (例: `type`) を選び、規定値やヒントなどのプロパティを編集します。
+- **[Keyword property panel]\(キーワードのプロパティ パネル\)** &ndash; ウィンドウの右側で、上部のドロップダウン リストを使ってキーワード (例: `type`) を選び、既定値やヒントなどのプロパティを編集します。
 
 ## <a name="using-keywords-in-the-editor"></a>エディターでのキーワードの使用
 

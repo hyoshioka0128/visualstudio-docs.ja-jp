@@ -3,24 +3,26 @@ title: Visual Studio サブスクリプションのライセンスをユーザ�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
+ms.date: 03/02/2020
 ms.topic: conceptual
-description: 管理者が複数のサブスクライバーにライセンスを割り当てる方法を説明します
-ms.openlocfilehash: 7d54dcf3cf3e7fea7845a4e9a0053de4ba734ae9
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
+ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68610522"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988486"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
 
+大規模なユーザー グループを追加するには、一括追加機能を使用できます。または、所属する組織で Microsoft Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用することができます。 この記事では、両方のオプションの手順について説明します。 
+
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>一括追加を使用してサブスクリプションを割り当てる
-1. [https://manage.visualstudio.com](https://manage.visualstudio.com ) で Visual Studio サブスクリプション管理ポータルにサインインします。
-2. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。上部リボンの **[一括追加]** をクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![複数のサブスクライバーを追加する](media/add-multiple-subscribers.png)
+1. Visual Studio サブスクリプション管理ポータル (https://manage.visualstudio.com ) にサインインします。
+
+2. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。 **[追加]** タブを選択してから、ドロップダウンで **[一括追加]** を選択します。  
 
 2. 一括追加では、Microsoft Excel テンプレートを使用してサブスクライバー情報をアップロードします。 [Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\) ダイアログ ボックスで、 **[ダウンロード]** をクリックしてテンプレートをダウンロードします。
    > [!div class="mx-imgBorder"]
@@ -36,6 +38,8 @@ ms.locfileid: "68610522"
     - フォームのどのフィールドにもコンマが含まれていないことを確認します。
     - フォームのフィールドの前後のスペースを削除します。
     - ユーザーの名前の名または姓が 2 つの部分からなる場合、それらの間に余分なスペースがないようにします (たとえば、"Maggie May" のように 2 つの部分からなる名前は、"MaggieMay" と入力する必要があります。システムは余分なスペースを除去しません)。
+    - 必須フィールドがすべて入力済みになっていることを確認します。 
+    - **[エラー メッセージ]** 列を確認してください。  エラーが一覧に示された場合は、ファイルのアップロードを試行する前に解決します。 
 
 4. Visual Studio サブスクリプション管理ポータルに戻ります。 **[Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\)** ダイアログ ボックスで、 **[参照]** をクリックします。
    > [!div class="mx-imgBorder"]
@@ -49,13 +53,76 @@ ms.locfileid: "68610522"
 
     テンプレートにエラーが含まれていると、アップロードは失敗してエラーが表示されるので、テンプレートを修正して一括アップロードを再試行します。
    > [!div class="mx-imgBorder"]
-   > ![複数サブスクライバーのアップロードが失敗した場合のエラー メッセージ](media/bulk-add-template-failed.png)
+   > ![複数サブスクライバーのアップロードが失敗した場合のエラー メッセージ](_img/assign-license-bulk/bulk-add-upload-failure.png)
+
+   エラーが発生した場合は、次の手順を行います。
+   1. 作成した Excel ファイルを開き、問題を修正して、ファイルを保存します。
+   0. 管理ポータルに戻り、 **[追加]** を選択します。
+   0. **[一括追加]** を選択します。
+   0. Excel ファイルは既に保存されているため、テンプレートをダウンロードする必要はありません。  **[参照]** をクリックし、保存したばかりのファイルを検索し、 **[開く]** をクリックします。
+   0. **[OK]** をクリックします。
+
 
     アップロードが成功すると、サブスクライバーの一覧と確認メッセージが表示されます。
    > [!div class="mx-imgBorder"]
-   > ![複数サブスクライバーのアップロードが成功した場合の確認メッセージ](media/bulk-add-template-success.png)
+   > ![複数サブスクライバーのアップロードが成功した場合の確認メッセージ](_img/assign-license-bulk/bulk-add-upload-success.png)
+
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Azure Active Directory グループを使用してサブスクリプションを割り当てる 
+この機能を使用すると、サブスクリプションの割り当てが簡単に利用できます。 サブスクリプション管理ポータル上で、Azure Active Directory セキュリティ グループを追加できます。そうすることで、グループ内のすべてのユーザーに確実にサブスクリプションが割り当てられます。 また、操作を簡単にするために、ユーザーが組織を離れ、Azure Active Directory から削除されるときに、サブスクリプションへのアクセスも削除されます。 
+
+
+> [!IMPORTANT]
+>
+> Azure AD グループの使用は段階的に有効にされます。  ご利用の契約に対して有効になっている機能がすぐに表示されない場合があります。
+>
+> サブスクライバーを追加する場合の Azure AD グループの使用には、次の制限事項が適用されます。
+> - グループには、少なくとも 1 人のメンバーを含んでいる必要があります。  空のグループはサポートされていません。
+> - グループのユーザー数は 1000 人未満にする必要があります 
+> - すべてのユーザーが、グループの最上位レベルにいる必要があります。  入れ子になったグループはサポートされていません
+> - 信頼済みの契約のみがサポートされます
+> - グループのすべてのメンバーが、Azure AD アカウントに関連付けられた電子メール アドレスを保持している必要があります
+> - Azure AD グループを使用して追加されたサブスクリプションの場合、通知用の個別の電子メール アドレスはサポートされていません。  
+
+1. Visual Studio サブスクリプション管理ポータル ([https://manage.visualstudio.com](https://manage.visualstudio.com)) にサインインします。
+
+2. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。
+
+3. **[追加]** タブを選択し、ドロップダウンで **[Azure Active Directory グループ]** を選択します。  
+
+   > [!div class="mx-imgBorder"]
+   > ![Azure AD を使用した一括追加の選択](_img/assign-license-bulk/bulk-add-aad.png)
+
+4. フォーム フィールドに追加する Azure AD グループの名前の入力を開始します。 これにより、組織内で使用可能な Azure AD グループが検索されます。 
+
+5. グループを選択すると、グループ名がフィールドに自動的に入力されます。 追加する前に、そのグループ内のユーザーを表示することもできます。 次に、グループのサブスクリプション レベル、ダウンロード権限、および通信設定を選択できます。 必要に応じて、[参照] フィールドに詳細を追加できます。 
+
+   > [!div class="mx-imgBorder"]
+   > ![Azure AD を使用した一括追加の選択](_img/assign-license-bulk/bulk-add-aad-details.png)
+
+6. **[追加]** 、 **[確認]** の順にクリックします。 
+
+7. 追加したグループを表示するには、ユーザーの一覧の一番下までスクロールします。  
+
+8. グループのメンバーを表示するには、 **[利用者の表示]** を選択します。 グループ内のサブスクライバーに関する詳細を表示することは可能ですが、サブスクライバーまたは彼らが割り当てられているサブスクリプションを編集することはできません。    
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Q:Azure AD グループ内で複数のサブスクリプション レベルを割り当てることはできますか? 
+A: いいえ -- グループ内のすべてのユーザーが同じサブスクリプションを受け取ります。 
+
+### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Q:Azure AD グループに追加されたユーザーのサブスクライバーの詳細を編集できますか?  
+A: いいえ -- 個々のサブスクライバーの情報を変更するには、それらを Azure AD セキュリティ グループから削除して、サブスクリプションを個別に割り当てる必要があります。  
+
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q:Azure AD セキュリティ グループにユーザーを追加しましたが、そのユーザーが追加されたことがサブスクリプション管理ポータル上に表示されず、サブスクリプションもありません。 なぜでしょうか。  
+A: 組織で Azure AD がどのように構成されているかに応じて、ユーザーが追加されるまでに最大 24 時間の遅延が発生することがあります。 24 時間以上経過している場合は、[サポートにお問い合わせください](https://visualstudio.microsoft.com/support/support-overview-vs)。  
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 - 追加するサブスクライバーは 1 人または 2 人だけですか?  [1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
-- 既存のサブスクリプションの[編集](edit-license.md)方法をご確認ください。
 - お困りの際は、 [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)にお問い合わせください。
