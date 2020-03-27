@@ -1,5 +1,9 @@
 - name: Visual Studio のテスト ツール
-  href: improve-code-quality.md
+  href: index.yml
+- name: 概要
+  items:
+    - name: テスト ツールの概要
+      href: improve-code-quality.md
 - name: 単体テスト
   items:
     - name: 単体テスト ツールの概要
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: 概要
+          href: intellitest-manual/index.md
         - name: '方法: IntelliTest で単体テストを生成する'
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: 概要
-          href: intellitest-manual/introduction.md
-        - name: 作業の開始
-          href: intellitest-manual/getting-started.md
-        - name: セクションのインデックス
-          href: intellitest-manual/index.md
         - name: テスト生成
           href: intellitest-manual/test-generation.md
         - name: 動的なシンボリック実行
