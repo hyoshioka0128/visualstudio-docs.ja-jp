@@ -329,6 +329,8 @@
                   href: ide/reference/generate-constructor.md
                 - name: デコンストラクターの生成
                   href: ide/reference/generate-deconstructor.md
+                - name: 明示的なキャストの追加
+                  href: ide/reference/add-explicit-cast.md
                 - name: メソッドにパラメーターを追加する
                   href: ide/reference/add-parameter.md
                 - name: パラメーターを生成する
@@ -360,6 +362,8 @@
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: 匿名型をタプルに変換する
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: auto プロパティと full プロパティの間で変換する
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: For ループと Foreach ステートメントの間で変換する
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get メソッドとプロパティの間で変換する
