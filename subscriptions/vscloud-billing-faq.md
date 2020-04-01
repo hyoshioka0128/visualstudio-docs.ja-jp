@@ -1,17 +1,18 @@
 ---
 title: Visual Studio Enterprise および Visual Studio Professional クラウド サブスクリプションの請求に関してよくあるご質問
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75851417"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273830"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 必ず[クラウド サブスクリプションの特典と価格を比較](https://visualstudio.microsoft.com/vs/pricing/)して、各 Visual Studio サブスクリプションの特典、クラウドと標準の Visual Studio サブスクリプションの比較、サブスクライバー特典の詳細などを理解してください。
@@ -94,6 +95,12 @@ A: はい、リセラーがクラウド ソリューション プロバイダー
 - [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com/)
 - [Visual Studio サブスクリプションのサポート](https://visualstudio.microsoft.com/vs/support/)
 - [CSP 向けの Visual Studio クラウド サブスクリプションの購入](vscloud-csp.md)
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 クラウド サブスクリプションを今すぐ購入する

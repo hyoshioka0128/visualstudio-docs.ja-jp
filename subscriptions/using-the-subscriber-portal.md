@@ -1,17 +1,18 @@
 ---
 title: https://my.visualstudio.com のサブスクライバー ポータルの使用 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75546227"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232188"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 
@@ -21,8 +22,8 @@ Visual Studio サブスクリプション ポータル ([https://my.visualstudio
 
 ポータルは 6 ページで構成されています。  各ページから、サブスクリプションに含まれるさまざまな製品やサービスにアクセスできます。  6 ページの内訳は、[特典]、[ダウンロード]、[プロダクト キー]、[サブスクリプション]、[サポート]、[Marketplace] です。
 
-## <a name="benefits"></a>[メリット](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-[特典] ページには、サブスクリプションに含まれるツールとサービスが "タイル" として表示されます。  すべてのサブスクリプションに含まれない特典もあります。 タイルは、[ツール]、[プロフェッショナルな開発]、[サポート] という 3 つのカテゴリにグループ化されています。  
+## <a name="benefits"></a>[特典](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+[特典] ページには、サブスクリプションに含まれるツールとサービスが "タイル" として表示されます。  すべてのサブスクリプションに含まれない特典もあります。 タイルは次の 3 つのカテゴリに分類されます: ツール、プロフェッショナルな開発、サポート。  
 
 ### <a name="tools"></a>ツール
 [ツール] カテゴリには、Visual Studio IDE、Azure DevOps、パートナーが提供するツールなどの主要な開発ツールが含まれます。  また、Azure や Visual Studio App Center などのサービスも表示されます。
@@ -33,7 +34,7 @@ Visual Studio サブスクリプション ポータル ([https://my.visualstudio
 ### <a name="support"></a>サポート
 Azure についてわからないことがあったら、  Azure コミュニティのフォーラムで聞いたり、Azure Advisory Chat (プレビュー) を利用したりすることができます。  コンシェルジェ チャット サービスを利用すると、テクニカル ドキュメントや製品情報を見つけることができます。また、サブスクリプションに関連する質問を聞くことができます。  また、一部のサブスクリプションには、インシデントベースのテクニカル サポートも含まれており、開発環境/テスト環境で動作するさまざまな Microsoft 製品の問題を解決するために役立ちます。
 
-## <a name="downloads"></a>[Downloads (ダウンロード)](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloads"></a>[ダウンロード](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 お持ちのサブスクリプションやプログラムに応じて、更新プログラムやパッチから、最新製品の広範なライブラリ、古いバージョンのソフトウェアのダウンロードにまでアクセスできるため、さまざまなシナリオでアプリケーションをテストできます。
 
 1 つのアカウントに複数のサブスクリプションが関連付けられているサブスクライバーの作業を簡単にするために、[ダウンロード] ページにアクセスすると、所有している最も高位のサブスクリプションで利用できるダウンロードが表示されます。  そのため、現在どのサブスクリプションを使用しているかにかかわらず、すべてのダウンロードを表示できます。
@@ -52,5 +53,11 @@ Azure についてわからないことがあったら、  Azure コミュニテ
 
 Visual Studio クラウド サブスクリプションを更新する必要がある場合や、  Visual Studio 製品ファミリの最新の拡張機能をダウンロードしたい場合があります。  Marketplace では、Azure DevOps、Azure DevOps Server、および Visual Studio Code の機能を向上させる拡張機能、ツール、サービスを見つけることができます。 公開元になり、Marketplace に独自の拡張機能を公開することもできます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次の手順
 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でポータルにサインインし、特典を確認します。  ご自分の [Microsoft アカウント](sign-in-msa.md) (MSA)、[職場または学校アカウント](sign-in-work.md)、[GitHub](sign-in-github.md) アカウントを使用して、ポータルにサインインする方法についても学習できます。 

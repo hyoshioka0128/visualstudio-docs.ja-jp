@@ -1,19 +1,20 @@
 ---
 title: Azure PAYG 特典
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Azure の従量課金アカウントを設定する方法を説明します。
-ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816393"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80231987"
 ---
-# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure Dev/Test の従量課金制サブスクリプション
+# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest の従量課金制のサブスクリプション
 クラウドでチームとコラボレーションしましょう。  開発テスト用の従量課金制サブスクリプションを複数作成し、チームと環境の間を分離しながら、他のサブスクライバーとのコラボレーションを可能にします。  Azure におけるサブスクリプション ソフトウェアの開発/テストおよびクラウドの使用権を、サブスクライバーだけの割引価格 (時間当たり) で利用できます。
 
 ## <a name="set-up-a-subscription"></a>サブスクリプションを設定する
@@ -42,6 +43,12 @@ A: Azure サブスクリプションを変更するには、次のようにし�
 2. 左側のウィンドウのリストにある **[コストの管理と請求]** を選択します。
 3. **[個人用サブスクリプション]** にご利用のサブスクリプションの一覧が表示されます。 目的のサブスクリプションをクリックします。
 4. サブスクリプションの管理またはキャンセル、名前の変更、ディレクトリの変更、または課金所有権の譲渡を行うためのオプションがあります。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 多くのサブスクリプションには、Azure DevOps や Azure DevTest の個人クレジットなど、その他の Azure 関連の特典が含まれています。  これらの特典の詳細については、次を参照してください。

@@ -3,15 +3,16 @@ title: Microsoft Azure 特典 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
+ms.date: 03/18/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 01c31d96b7ee3e696f941725bbcb314c5f0e0e60
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542673"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232038"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -91,9 +92,7 @@ Visual Studio の Azure DevTest の個人クレジットと割引の使用を続
 
 チームまたは組織の誰かが代理でサブスクリプションを購入する場合、組織の Visual Studio 管理者に連絡し、Azure DevTest の個人クレジットに必要な金額を与える Visual Studio サブスクリプションを依頼します。   前のサブスクリプションが割り当てられたものと同じユーザー ID に新しいサブスクリプションを割り当てるように管理者に依頼してください。Azure サブスクリプションを転送する必要がなくなります。
 
-サブスクリプションを直接購入できる場合、次のいずれかを行ってください。
-1. Visual Studio Marketplace から Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) または Visual Studio [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) のクラウド年間サブスクリプションを購入します。
-2. [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) で現在のサブスクリプションを更新すれば、50% 以上の割引が受けられます。
+サブスクリプションを直接購入できる場合、[Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) を通して現在ご利用のサブスクリプションを更新すれば、割引が受けられます。
 
 すべての[サブスクリプションとその特典](https://visualstudio.microsoft.com/vs/pricing/)を比較してみてください。
 
@@ -113,6 +112,12 @@ Microsoft アカウントに**異なる**サブスクリプション レベル�
   - [Azure のヒントとコツ](https://microsoft.github.io/AzureTipsAndTricks/ "Azure のヒントとコツ") 
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Microsoft のツールとサービスの詳細については、次のドキュメントを参照してください。

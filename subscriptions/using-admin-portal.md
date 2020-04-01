@@ -1,17 +1,18 @@
 ---
 title: サブスクリプション管理者ポータルの使用を開始する | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/07/2019
+ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850539"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233162"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 
@@ -25,7 +26,7 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - **サブスクリプション会員間でサブスクリプションを共有しないでください。** サブスクリプションは、指定した個人に割り当てる必要があります。  チームに対するサブスクリプションの割り当ては許可されていません。  サブスクリプション特典 (開発およびテスト用ソフトウェア、Microsoft Azure、e ラーニングなど) のすべてまたは一部使用するユーザーにサブスクリプションを割り当てる必要があります。
 
 ## <a name="the-subscribers-page"></a>[サブスクライバー] ページ
-サブスクリプションを割り当てた後は、[サブスクライバー] タブに、次のようなサブスクライバーの詳細情報が表示されます。
+サブスクリプションを割り当てた後は、[サブスクライバーの管理] タブに、次のようなサブスクライバーの詳細情報が表示されます。
 - 各サブスクライバーの名と姓。
 - このユーザーの電子メール アドレス。
 - 割り当てられているサブスクリプション レベル。
@@ -37,12 +38,14 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - 管理ポータルからの割り当て通信電子メールで優先される言語。
 - サインイン以外の通信に使用される別の電子メール アドレスのオプションのフィールド。
 
-このページの左側には、購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報が表示されます。
+ページの左上には、選択すると、サブスクリプション割り当ての概要、契約の詳細、および最大使用量レポートが表示されるアイコンがいくつかあります。
+
+購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報を表示するには、上部にあるアイコンをクリックしてスライド式のパネルを有効にします。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクリプションの管理ポータルのサブスクライバー ページ](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>[詳細] ページ
-表示されている契約の詳細を参照するには、[詳細] タブを選択します。契約の状態、購入アカウント、組織の詳細、スーパー管理者、およびその他の関連情報が表示されます。
+表示している契約の詳細については、2 番目のアイコンを選択して [契約の詳細] タブを表示します。スライド式のパネルには、契約の状態、購入アカウント、組織の詳細、スーパー管理者、およびその他の関連情報が表示されます。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクリプションの管理ポータルの [詳細] ページ](_img/using-admin-portal/details-page.png)
 
@@ -52,6 +55,12 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
 管理者の責任について詳しくは、以下をご覧ください。
 - [管理者責任の概要](admin-responsibilities.md)
@@ -59,3 +68,4 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)
 - [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
+

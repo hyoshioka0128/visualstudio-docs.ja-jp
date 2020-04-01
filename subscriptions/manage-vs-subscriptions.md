@@ -3,15 +3,16 @@ title: Visual Studio サブスクリプションを管理する
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706971"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232359"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -112,3 +113,17 @@ A: これは購入されたチャネルによって異なります。Microsoft �
 > [!NOTE]
 > - Microsoft アカウントまたは Azure AD を閉じることを選択した場合、個人データは直ちに匿名化されます。
 > - アクティブなサブスクリプションがある場合、すべての個人データが完全に削除されることはありません。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次の手順
+組織のサブスクリプションを管理しますか。  Visual Studio サブスクリプションの管理に関する次の詳細情報をご覧ください。
+- [個別のサブスクリプションの割り当て](assign-license.md)
+- [複数のサブスクリプションを管理する](assign-license-bulk.md)
+- [サブスクリプションの編集](edit-license.md)
+- [サブスクリプションの削除](delete-license.md)
+- [最大使用量の確認](maximum-usage.md)

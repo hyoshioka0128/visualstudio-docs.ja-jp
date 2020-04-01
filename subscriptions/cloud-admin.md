@@ -3,15 +3,16 @@ title: 月次サブスクリプションの管理者を設定する | Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: 月次サブスクリプションの管理者を設定する
-ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: c9a1303d4111f0ec4a0c1249a25e49fc40cf26de
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235213"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232654"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する
 
@@ -33,13 +34,21 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 
 1. Azure Portal ([portal.azure.com](https://portal.azure.com)) にアクセスします。
 2. Visual Studio 月次サブスクリプションの購入に使用したアカウントを使ってサインインします。
-3. 左側のナビゲーション ウィンドウで、 **[コストの管理と請求]** まで下にスクロールします。
+3. **[Azure サービス]** で **[コストの管理と請求]** を選択します。
+   > [!div class="mx-imgBorder"]
+   > ![[Azure サービス] で [コストの管理と請求] を選択する](_img/cloud-admin/azure-cost-billing.png)
 4. **[個人用サブスクリプション]** リストで、購入に使用した Azure サブスクリプションを選択します。
-5. 左側のナビゲーション ウィンドウのリストの一番上の近くにある **[アクセス制御]** をクリックします。
+   > [!div class="mx-imgBorder"]
+   > ![サブスクリプションの選択](_img/cloud-admin/subscription-list.png)
+5. 左側のナビゲーション ウィンドウのリストの一番上の近くにある **[アクセス制御 (IAM)]** をクリックします。
 6. ページの上部にある **[追加]** タブをクリックします。
 7. **[ロールの割り当ての追加]** をクリックします。
+   > [!div class="mx-imgBorder"]
+   > ![[アクセス制御]、[追加]、[ロールの割り当ての追加] の順に選択する](_img/cloud-admin/access-control-add.png)
 8. 右側のポップアップ ウィンドウで、ウィンドウの一番上にある **[ロール]** ドロップダウンをクリックし、下にスクロールして **[ユーザー アクセス管理者]** を選択します。
 9. ユーザーの一覧で、管理者にするユーザーまで下にスクロールして、選択します。 
+   > [!div class="mx-imgBorder"]
+   > ![[ロール]、[ユーザー アクセス管理者] の順にアクセスする](_img/cloud-admin/add-role-user-access-admin.png)
 10. **[保存]** をクリックします。
 11. **[ロールの割り当て]** タブをクリックし、選択したユーザーがユーザー アクセス管理者として表示されることを確認します。
 
