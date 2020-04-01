@@ -3,15 +3,16 @@ title: Microsoft for Startups プログラムからスタートアップ企業�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Microsoft for Startups プログラムから提供されるサブスクリプションの詳細について説明します。
-ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947111"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233254"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>スタートアップ企業に提供される Visual Studio サブスクリプション
 Microsoft for Startups のプログラムに参加する対象のスタートアップ企業は、Visual Studio Enterprise の[月間クラウド サブスクリプション](https://visualstudio.microsoft.com/vs/pricing/)を 5 つ取得できます。 

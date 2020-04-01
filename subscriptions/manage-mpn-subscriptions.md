@@ -3,15 +3,16 @@ title: Microsoft Partner Network (MPN) で提供されている Visual Studio �
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: aecc9892b60951f869c6a6bc721b746d2c013db5
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947140"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232420"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションを管理する
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。

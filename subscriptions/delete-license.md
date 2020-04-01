@@ -3,15 +3,16 @@ title: Visual Studio サブスクリプション管理ポータルでのサブ�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 管理者がサブスクリプションの割り当てを削除する方法を説明します。
-ms.openlocfilehash: 6ed64f5c05f77bea7f157eee9e29bbb05aa8730d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a884cb56b9c04558023659317ecce2d06a8ec54d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263248"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232537"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで割り当てを削除する
 サブスクライバーが会社を退職したり、プロジェクトを完了したり、新しい仕事の役割に切り替わったりして、Visual Studio サブスクリプションが不要になった場合に、それらのサブスクリプションを削除して、他のユーザーに割り当てることができます。 サブスクリプションを再割り当てする場合は、サブスクライバーのすべての特典がリセットされるわけではないことに注意してください。  新しいユーザーは要求されていない任意のキーを要求し、以前に要求されたキーを表示できるようになりますが、要求の上限はリセット**されません**。  エンタープライズ契約 (EA) を締結している組織の場合、Pluralsight トレーニングなど、元のユーザーによって使用されていたすべての特典がリセットされます。 

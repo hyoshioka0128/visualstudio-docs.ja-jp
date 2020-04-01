@@ -3,15 +3,16 @@ title: 大規模なチームと外部請負業者の管理 | Visual Studio Marke
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 大規模なチームおよび外部請負業者に対するサブスクリプションを管理する管理者の責任について説明します。
-ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947059"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232315"
 ---
 # <a name="large-teams-and-external-contractors"></a>大規模なチームおよび外部請負業者
 Visual Studio サブスクリプションの管理者は責任を持って、Visual Studio でライセンス付与されたソフトウェアと対話する各ユーザーが、自身の Visual Studio サブスクリプションで適切にライセンス付与されていることを確認します。

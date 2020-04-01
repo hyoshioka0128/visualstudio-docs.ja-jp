@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235094"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550023"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -405,10 +405,6 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
 
    ::: moniker range=">=vs-2019"
    Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コード ベースが共有されているため、これによって最適な結果が得られます。
-   ::: moniker-end
-
-   ::: moniker range=">=vs-2019"
-   Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コードベースが使用されているため、これによって最適な結果が得られます。
    ::: moniker-end
 
 2. デバッグが有効な状態でブラウザーを起動します。

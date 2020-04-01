@@ -3,15 +3,16 @@ title: Visual Studio サブスクリプションでプロダクト キーを検�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションでプロダクト キーを検索、要求、エクスポートする方法を説明します。
-ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937503"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232486"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでプロダクト キーを検索して要求する
 この記事では、 https://my.visualstudio.com/productkeys からプロダクト キーを検索、要求、エクスポートする方法について説明します。  キーを使用して製品をライセンス認証する方法、キーのリテール版とボリューム ライセンス版、および毎日のプロダクト キー要求の制限について詳しくは、[プロダクト キーの概要](product-keys.md)に関するページをご覧ください。

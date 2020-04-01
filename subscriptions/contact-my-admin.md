@@ -3,15 +3,16 @@ title: サブスクライバー ポータル内からサブスクリプション
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
-ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937540"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232629"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。

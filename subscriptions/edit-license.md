@@ -3,15 +3,16 @@ title: 管理者ポータルでのサブスクリプションの編集 | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-ms.openlocfilehash: cd4bb40599ff242e20ba0e38fb561bde7d3f1823
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263281"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232550"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 サブスクリプション管理者は、組織内の個人に割り当てられているサブスクリプションに変更を加えることができます。  この記事では、行うことができる変更の種類と、必要な手順について説明します。

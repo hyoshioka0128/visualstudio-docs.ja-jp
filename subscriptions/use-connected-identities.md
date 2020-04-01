@@ -1,18 +1,19 @@
 ---
 title: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
 ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法について説明します
-ms.openlocfilehash: 3dcb41a26f27e5135962edf7ff933de40ccefe5e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508980"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233175"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで接続済み ID を使用する方法
 職場または学校を介して Visual Studio サブスクリプションを受け取り、Microsoft アカウント (MSA) を使用してサインインする場合は、サブスクリプション管理者が組織の Azure Active Directory (Azure AD) の ID に MSA を接続できます。  これにより、サブスクリプションに含まれる特典の一部にアクセスする方法が変わります。 

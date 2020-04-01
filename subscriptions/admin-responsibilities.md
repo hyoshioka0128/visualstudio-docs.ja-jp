@@ -3,15 +3,16 @@ title: 管理者の責任 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 61b75f1863ba490a610edf63c330661d1c4baf52
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235159"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232724"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
 管理者は組織のサブスクリプションを管理できます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。

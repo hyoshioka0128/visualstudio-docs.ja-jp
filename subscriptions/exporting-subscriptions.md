@@ -3,15 +3,16 @@ title: サブスクリプション情報のエクスポート | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: サブスクライバーの一覧とサブスクリプションの割り当ての詳細をエクスポートする方法について説明します。
-ms.openlocfilehash: a7e6f6040daca541a689f1e4ad6297e17014dbed
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263222"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232503"
 ---
 # <a name="export-subscription-information"></a>サブスクリプション情報のエクスポート
 Visual Studio サブスクリプションの[管理ポータル](https://manage.visualstudio.com)では、サブスクライバーの一覧とその割り当てに関する詳細情報をエクスポートできます。 この情報には、名前、メール アドレス、連絡用メール アドレス、サブスクリプション レベル、割り当て日、ライセンス認証の状態、有効期限、参照フィールド、ダウンロードが有効であるかどうか、国、言語、サブスクリプションの状態、サブスクリプション GUID が含まれます。  一覧は CSV ファイルとしてエクスポートされ、Microsoft Excel で簡単に開いて、グラフ、ピボット、およびその他の成果物を作成することができます。
