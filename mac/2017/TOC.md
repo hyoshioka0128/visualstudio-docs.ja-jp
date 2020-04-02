@@ -52,9 +52,9 @@
 ## [Subversion リポジトリのセットアップ](/visualstudio/mac/set-up-subversion-repository)
 ## [Subversion の使用](/visualstudio/mac/working-with-subversion)
 
-# [Web アプリのデプロイ](/visualstudio/mac/web-app-deployment.md)
-## [Azure App Service に発行する](/visualstudio/mac/publish-app-svc.md)
-## [フォルダーに発行する](/visualstudio/mac/publish-folder.md)
+# [Web アプリのデプロイ](/visualstudio/mac/web-app-deployment)
+## [Azure App Service に発行する](/visualstudio/mac/publish-app-svc)
+## [フォルダーに発行する](/visualstudio/mac/publish-folder)
 
 # [ワークロード](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)

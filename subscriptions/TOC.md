@@ -40,6 +40,7 @@
 #### [Visual Studio IDE](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Windows 開発者アカウント](vs-windows-dev.md)
+#### [Windows Virtual Desktop](vs-windows-virtual-desktop.md)
 ### プロフェッショナルな開発
 #### [CODE マガジン](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
