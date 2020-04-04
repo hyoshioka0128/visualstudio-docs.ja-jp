@@ -6,15 +6,16 @@ metadata:
   title: Visual Studio Tools for AI | Microsoft Docs
   ms.prod: visual-studio-windows
   ms.technology: vs-ai-tools
-  author: lisawong19
-  ms.author: liwong
-  manager: routlaw
+  author: jillre
+  ms.author: jillfra
+  manager: jillfra
+  monikerRange: vs-2017
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
   description: Visual Studio Tools for AI は、ディープ ラーニング ソリューションをビルド、テスト、展開するための統合開発環境です。 クイック スタート、チュートリアル、そしてサンプルを使って AI のツールの使い方を説明します。
 sections:
-  - title: 5 分間のクイック スタート
+  - title: 5 分間のクイックスタート
     items:
       - type: paragraph
         text: 次を使ったディープ ラーニング ソリューションの実行方法について説明します。
@@ -25,7 +26,7 @@ sections:
               src: media/Tensorflow_logo.png
             text: TensorFlow と Python
             href: tensorflow-local.md
-  - title: ステップバイステップ チュートリアル
+  - title: ステップ バイ ステップのチュートリアル
     items:
       - type: paragraph
         text: ディープ ラーニング ソリューションの構築方法について説明します。
