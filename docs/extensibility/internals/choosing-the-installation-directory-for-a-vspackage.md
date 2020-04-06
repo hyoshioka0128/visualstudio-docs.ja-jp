@@ -1,65 +1,65 @@
 ---
-title: VSPackage のインストール ディレクトリの選択 |Microsoft Docs
+title: VSPackage のインストール ディレクトリを選択する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709762"
 ---
-# <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage のインストール ディレクトリを選択します。
-VSPackage とそのサポート ファイルは、ユーザーのファイル システム上にある必要があります。 場所は、VSPackage の管理または非管理対象、サイド バイ サイド バージョン管理スキームとユーザーの選択かどうかによって異なります。
+# <a name="choose-the-installation-directory-for-a-vspackage"></a>VS パッケージのインストール ディレクトリを選択します。
+VSPackage とそのサポート ファイルは、ユーザーのファイル システム上になければなりません。 場所は、VSPackage がマネージかアンマネージか、サイド バイ サイドのバージョン管理スキーム、およびユーザーの選択によって異なります。
 
-## <a name="unmanaged-vspackages"></a>アンマネージ Vspackage
- アンマネージ VSPackage は、任意の場所にインストール可能な COM サーバーです。 その登録情報は、その場所を正確に反映する必要があります。 インストーラーのユーザー インターフェイス (UI) では、サブディレクトリとして既定の場所を指定する必要があります、 `ProgramFilesFolder` Windows インストーラー プロパティの値。 例:
+## <a name="unmanaged-vspackages"></a>アンマネージ VS パッケージ
+ アンマネージ VSPackage は、任意の場所にインストールできる COM サーバーです。 登録情報は、その場所を正確に反映する必要があります。 インストーラーのユーザー インターフェイス (UI) は、Windows インストーラーのプロパティ値`ProgramFilesFolder`のサブディレクトリとして既定の場所を提供する必要があります。 次に例を示します。
 
-*&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
+*&lt;\\&lt;&gt;マイカンパニー\\マイブス&lt;パッケージ製品 \V1.0&gt;&gt;\\*
 
- 小規模なブート パーティションを保持するユーザーに対応する既定のディレクトリを変更し、別のボリューム上のアプリケーションやツールをインストールするユーザーを許可する必要があります。
+ ユーザーは、小さなブート パーティションを保持し、別のボリュームにアプリケーションやツールをインストールすることを好むユーザーに対応するために、既定のディレクトリを変更できるようにする必要があります。
 
- を、サイド バイ サイドでパターンがバージョン管理 VSPackage を使用する場合は、さまざまなバージョンを格納するサブディレクトリを使用できます。 例:
+ サイド バイ サイド スキームでバージョン対応の VSPackage を使用する場合は、サブディレクトリを使用して異なるバージョンを格納できます。 次に例を示します。
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
+ *&lt;プログラムファイルフォルダ&gt;\\&lt;マイカンパニー&gt;\\&lt;マイVSパッケージ製品&gt;\\V1.0\\2002\\*
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2003\\*
+ *&lt;\\&lt;&gt;マイカンパニー&lt;\\マイブスパッケージ製品 V1.0\\2003&gt;\\&gt;\\*
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005\\*
+ *&lt;プログラムファイルフォルダ&gt;\\&lt;マイカンパニー&gt;\\&lt;マイVSパッケージ製品&gt;\\V1.0\\2005\\*
 
 ## <a name="managed-vspackages"></a>マネージド VSPackage
- マネージ Vspackage は、任意の場所にもインストールできます。 ただし、常にグローバル アセンブリ キャッシュ (GAC) にアセンブリの読み込み時間を短縮するインストールを検討してください。 マネージ Vspackage は、アセンブリの厳密な名前では常に、GAC にインストールするので、厳密な名前の署名の検証は、インストール時にのみ、です。 ファイル システムに別の場所にインストールされている厳密な名前付きアセンブリの署名に読み込まれるたびに検証が必要です。 マネージ Vspackage を GAC にインストールするときに使用 regpkg ツールの **/assembly**アセンブリの厳密な名前を指すレジストリ エントリを記述するスイッチ。
+ 管理 VSPackages は、任意の場所にインストールすることもできます。 ただし、アセンブリの読み込み時間を短縮するために、常にグローバル アセンブリ キャッシュ (GAC) にインストールすることを検討する必要があります。 マネージ VSPackages は常に厳密な名前を持つアセンブリであるため、GAC にアセンブリをインストールすると、厳密な名前の署名の検証はインストール時にのみ行われます。 ファイル システムの他の場所にインストールされている厳密な名前のアセンブリは、読み込まれるたびに署名を検証する必要があります。 GAC にマネージ VSPackages をインストールする場合は、regpkg ツールの **/assembly**スイッチを使用して、アセンブリの厳密な名前を指すレジストリ エントリを書き込みます。
 
- マネージ Vspackage を GAC 以外の場所にインストールする場合は、アンマネージ Vspackage 用に指定されたディレクトリ階層を選択する以前のアドバイスに従います。 Regpkg ツールの使用 **/codebase** VSPackage アセンブリのパスを指すレジストリ エントリを記述するスイッチ。
+ GAC 以外の場所に管理 VSPackages をインストールする場合は、ディレクトリ階層を選択するためのアンマネージ VSPackages に関する前述のアドバイスに従ってください。 regpkg ツールの **/codebase**スイッチを使用して、VSPackage アセンブリのパスを指すレジストリ エントリを書き込みます。
 
- 詳細については、次を参照してください。[を登録し、Vspackage の登録解除](../../extensibility/registering-and-unregistering-vspackages.md)します。
+ 詳細については、「 [VSPackages の登録と登録解除](../../extensibility/registering-and-unregistering-vspackages.md)」を参照してください。
 
-## <a name="satellite-dlls"></a>サテライト Dll
- 慣例によりは、VSPackage のサブディレクトリに置かれてサテライト Dll は、特定のロケールのリソースを含む、 *VSPackage*ディレクトリ。 サブディレクトリでは、ロケール ID (LCID) の値に対応します。
+## <a name="satellite-dlls"></a>サテライト DLL
+ 慣例により、特定のロケールのリソースを含む VSPackage サテライト DLL は *、VSPackage*ディレクトリのサブディレクトリに配置されます。 サブディレクトリはロケール ID (LCID) 値に対応します。
 
- [管理 Vspackage](../../extensibility/managing-vspackages.md)記事では、レジストリ エントリが場所を制御することを示します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]実際には、VSPackage の検索はサテライト DLL。 ただし、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] LCID 値を次の順序でのという名前のサブディレクトリでは、サテライト DLL を読み込もうとします。
+ [VSPackages](../../extensibility/managing-vspackages.md)の管理の記事は、レジストリ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]エントリが実際に VSPackage のサテライト DLL を検索する場所を制御することを示します。 ただし、LCID[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]値の名前が付けられたサブディレクトリに、次の順序でサテライト DLL を読み込もうとします。
 
-1. 既定の LCID (Visual Studio の LCID たとえば、 *\1033*英語)。
+1. 既定の LCID (Visual Studio LCID;英語の場合は*\1033*など)
 
-2. 既定のサブ言語の LCID 既定値です。
+2. 既定のサブ言語を使用する既定の LCID。
 
-3. システム既定の LCID。
+3. システムの既定の LCID。
 
-4. 既定のサブ言語とシステムの既定の LCID。
+4. システムの既定の LCID と既定のサブ言語。
 
-5. 米国英語 ( *. \1033*または *. \0x409*)。
+5. 米国英語 (*.\1033*または *.\0x409*) 。
 
-VSPackage DLL にリソースが含まれている場合、 **SatelliteDll\DllName**レジストリ エントリが指す、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]それらを上記の順序で読み込みを試みます。
+VSPackage DLL にリソースが含まれており **、SatelliteDll\DllName**レジストリ エントリ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]がリソースを指している場合は、上記の順序で読み込みを試みます。
 
 ## <a name="see-also"></a>関連項目
-- [共有およびバージョン管理 Vspackage を選択します。](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [Vspackage を管理します。](../../extensibility/managing-vspackages.md)
-- [パッケージの登録を管理します。](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [共有 VS パッケージとバージョン対応 VS パッケージの間で選択](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [VSPackage を管理する](../../extensibility/managing-vspackages.md)
+- [パッケージ登録の管理](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

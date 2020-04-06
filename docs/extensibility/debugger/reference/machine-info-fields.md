@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Microsoft Docs
+title: MACHINE_INFO_FIELDS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79bd733d987511a624235c06b5dbe83206e0c5bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339355"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714530"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-特定のマシンを取得する情報の種類を指定します。
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
+特定のマシンに対して取得する情報の種類を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,27 +46,27 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>フィールド
  `MCIF_NAME`\
- 初期化/使用、`bstrName`フィールド構造にします。
+ 構造体のフィールドを`bstrName`初期化/使用します。
 
  `MCIF_FLAGS`\
- 初期化/使用、`Flags`フィールド構造にします。
+ 構造体のフィールドを`Flags`初期化/使用します。
 
  `MIF_ALL`\
- すべての構造でフィールドを初期化するか、/使用します。
+ 構造体のすべてのフィールドを初期化/使用します。
 
 ## <a name="remarks"></a>Remarks
- これらの値が渡される、 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッドのメンバーを示す、 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体が初期化されるは。
+ これらの値は、[初期化するMACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体のメンバーを示すために[、GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッドに渡されます。
 
- 使用されることも、`Fields`のメンバー、`MACHINE_INFO`フィールドが使用し、有効なときは、構造体。
+ 構造体の`Fields`メンバーで使用され、`MACHINE_INFO`どのフィールドが使用され、有効かを示すこともできます。
 
- これらのフラグは、演算と組み合わせることがあります`OR`します。
+ これらのフラグはビット単位`OR`で組み合わせることができる。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

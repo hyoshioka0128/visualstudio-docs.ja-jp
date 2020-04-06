@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider |Microsoft Docs
+title: を指定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 725ac07c85dd31edaf97200a7a8668ff3efd9ab9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329522"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714907"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-このオブジェクトのソース データを初期化し、初期のデータを格納するオブジェクトを返します。
+このオブジェクトのソース データを初期化し、初期データを含むオブジェクトを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int InitSourceDataProvider(
 
 ## <a name="parameters"></a>パラメーター
 `dataOut`\
-[out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクト
+[アウト]オブジェクトを返します[。](../../../extensibility/debugger/reference/ieedatastorage.md)
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが返すことができますので、オブジェクトを初期化するために必要なことすべて、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクトのデータのインターフェイス。 これにより、オブジェクトのデータを表示および、許可されている場合は、型のビジュアライザーによって変更できます。
+ このメソッドは、オブジェクトのデータに対して[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)インターフェイスを返すことができるように、オブジェクトを初期化するために必要な処理を行います。 これにより、オブジェクトのデータを表示したり、許可されている場合は型ビジュアライザーによって変更したりできます。
 
 ## <a name="see-also"></a>関連項目
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2 |Microsoft Docs
+title: プログラムの数2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a9e44ee2a7782cb804c4e0b6f4279918e7d78e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325101"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722332"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-このインターフェイスにより、セッション デバッグ マネージャー (SDM) プログラムにアタッチし、プログラムに関連付けられたプログラムのノードを取得します。
+このインターフェイスを使用すると、セッション デバッグ マネージャー (SDM) は、プログラムにアタッチし、プログラムに関連付けられているプログラム ノードを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,29 +28,29 @@ ms.locfileid: "66325101"
 IDebugProgramEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- カスタム ポート サプライヤーと同じオブジェクトでこのインターフェイスを実装する、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス SDM を同時にすべてのセッションを追跡するためにポート サプライヤーの許可にアタッチされている間に、プログラムにアタッチできるようにするには、プログラム。 カスタム ポート サプライヤーは、選択した場合、このインターフェイスを実装できます。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ カスタム ポート サプライヤーは、このインターフェイスを[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスと同じオブジェクトに実装し、SDM をプログラムにアタッチすると同時に、ポート サプライヤーがプログラムにアタッチされているすべてのセッションを追跡できるようにします。 カスタム ポートサプライヤーは、このインターフェイスを実装できます (選択した場合)。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- SDM コール[QueryInterface](/cpp/atl/queryinterface)上、`IDebugProgram2`インターフェイス プログラムがアタッチされているセッションを追跡するには、このインターフェイスを取得します。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ SDM は、インターフェイスで`IDebugProgram2`[QueryInterface](/cpp/atl/queryinterface)を呼び出して、このインターフェイスを取得して、プログラムに接続されているセッションを追跡します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugProgramEx2`します。
+ 次の表に`IDebugProgramEx2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|プログラムをセッションにアタッチします。|
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|プログラムに関連付けられているプログラムのノードを取得します。|
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|プログラムに関連付けられているプログラム ノードを取得します。|
 
 ## <a name="remarks"></a>Remarks
- このインターフェイスは、SDM とプログラムの間にプライベートです。
+ このインターフェイスは、SDM とプログラムの間でプライベートです。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー:Portpriv.h
+ ヘッダー: ポートプリフ.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -1,27 +1,27 @@
 ---
-title: IDebugSourceServerModule::GetSourceServerData |Microsoft Docs
+title: サーバー モジュール::ソースサーバーデータ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e24fb48014d8a336e9d46ceb8471e2efe126de1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719932"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
-ソース サーバーの情報の配列を取得します。
+ソース サーバー情報の配列を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>パラメーター
 `pDataByteCount`\
-[out]データの配列内のバイト数。
+[アウト]データ配列のバイト数。
 
 `ppData`\
-[out]データの配列への参照。
+[アウト]データ配列への参照。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CModule**を公開するオブジェクト、 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)インターフェイス。
+インターフェイスを公開する**CModule**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugsourceservermodule.md)示します。
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)

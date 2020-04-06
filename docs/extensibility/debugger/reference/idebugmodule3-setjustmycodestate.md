@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::SetJustMyCodeState
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46a200b91e1680da3f7beac1b0ec4856a39b2564
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09617dda06cf2c3132ba4d8fb26a90f0b7cea08d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323800"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726768"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
-かどうかユーザー コードとモジュールをマークします。
+モジュールをユーザー コードとしてマークします。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>パラメーター
 `fIsUserCode`\
-[in]0 以外の場合 (`TRUE`) 場合は、モジュールには、ユーザー コードを考慮する必要があります、0 (`FALSE`) が不要な場合。
+[in]モジュールを`TRUE`ユーザー コードと見なす場合は 0 以外`FALSE`( ) 、 ゼロ ( ) 以外の場合は、そのモジュールを使用しない必要があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

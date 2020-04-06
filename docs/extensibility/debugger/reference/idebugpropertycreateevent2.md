@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyCreateEvent2 |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83a7e0aaae01e21c67a6d030caebb476779779f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348620"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720932"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
-このインターフェイスは、特定のドキュメントに関連付けられているプロパティを作成するときにデバッグ エンジン (DE) によって、セッション デバッグ マネージャー (SDM) に送信されます。
+このインターフェイスは、特定のドキュメントに関連付けられているプロパティを作成するときに、デバッグ エンジン (DE) によってセッション デバッグ マネージャー (SDM) に送信されます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,28 +28,28 @@ ms.locfileid: "66348620"
 IDebugPropertyCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デは、プロパティが作成されたことを報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス。 デがロードまたは作成されたスクリプトに関連付けられたプロパティを作成し、そのスクリプトは、IDE に表示する必要がある場合、このインターフェイスが実装されます。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ DE は、プロパティが作成されたことを報告するために、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は[、インターフェイス](/cpp/atl/queryinterface)にアクセスするのに`IDebugEvent2`クエリ インターフェイスを使用します。 このインターフェイスは、読み込みまたは作成されたスクリプトに関連付けられたプロパティが DE によって作成され、そのスクリプトを IDE に表示する必要がある場合に実装されます。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- デは作成し、プロパティが作成されたレポートにこのイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムにアタッチされているときに、SDM によって指定されたコールバック関数。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ DE は、このイベント オブジェクトを作成して送信し、プロパティが作成されたことを報告します。 イベントは、デバッグ中のプログラムにアタッチされるときに SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して送信されます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugPropertyCreateEvent2`インターフェイス。
+ 次の表に、インターフェイスのメソッド`IDebugPropertyCreateEvent2`を示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|新しいプロパティを取得します。|
 
 ## <a name="remarks"></a>Remarks
- デが、更新するにはこのイベントを SDM に送信できますプロパティに特定のドキュメントまたは関連付けられているスクリプトがある場合、**スクリプト ドキュメント**ウィンドウ、ドキュメントの名前に置き換えます。 SDM を呼び出します[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)引数で`guidDocument`を取得する、`VARIANT`を含む、 [IUnknown](/cpp/atl/iunknown)ポインター。 SDM を呼び出します[QueryInterface](/cpp/atl/queryinterface)を取得するには、このポインターを[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)を更新するために使用するインターフェイス、**スクリプト ドキュメント**ウィンドウ。
+ プロパティに特定のドキュメントまたはスクリプトが関連付けられている場合、DE は、このイベントを SDM に送信して、ドキュメントの名前を使用して **[スクリプト ドキュメント]** ウィンドウを更新できます。 SDM は、IUnknown ポインターを含`guidDocument`むを取得`VARIANT`する引数[IUnknown](/cpp/atl/iunknown)を使用して[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)を呼び出します。 SDM は、このポインターで[クエリ インターフェイス](/cpp/atl/queryinterface)を呼び出して、**スクリプト ドキュメント**ウィンドウの更新に使用される[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイスを取得します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

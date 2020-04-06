@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName |Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347407"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719192"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-このメソッドは、シンボル名を記号の型にマップします。
+このメソッドは、シンボル名をシンボル タイプにマップします。
 
 ## <a name="syntax"></a>構文
 
@@ -45,19 +45,19 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>パラメーター
 `pszClassName`\
-[in]シンボルの名前。
+[in]シンボル名。
 
 `nameMatch`\
-[in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
+[in]大文字と小文字を区別する、一致の種類を選択します。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体の値。
 
 `ppField`\
-[out]シンボル型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
+[アウト]オブジェクトとして[シンボルの種類](../../../extensibility/debugger/reference/idebugfield.md)を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドはジェネリック バージョンの[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)します。
+ このメソッドは、ジェネリック バージョン[です](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

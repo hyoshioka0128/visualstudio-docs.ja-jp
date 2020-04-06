@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE |Microsoft Docs
+title: METADATA_TYPE |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746696"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714281"
 ---
-# <a name="metadatatype"></a>METADATA_TYPE
-この構造体には、メタデータから取得したフィールドの種類に関する情報を指定します。
+# <a name="metadata_type"></a>METADATA_TYPE
+この構造体は、メタデータから取得したフィールド型に関する情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,27 +45,27 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>パラメーター
  `ulAppDomainID`\
- シンボルが元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。
+ シンボルの元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するために使用されます。
 
  `guidModule`\
- このフィールドが含まれるモジュールの GUID です。
+ このフィールドを含むモジュールの GUID。
 
  `tokClass`\
  この型のメタデータ トークン ID。
 
- [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
+ [C++]`_mdToken`は`typedef`32 ビット`int`用です。
 
 ## <a name="remarks"></a>Remarks
- 共用体の一部としてこの構造体が表示されます、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)ときに構造体、`dwKind`のフィールド、`TYPE_INFO`構造に設定されている`TYPE_KIND_METADATA`(からの値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列挙型)。
+ この構造体は、構造体`dwKind`のフィールドが[(dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列挙体の値)`TYPE_INFO`に`TYPE_KIND_METADATA`設定されている場合[、TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)構造体の共用体の一部として表示されます。
 
- `tokClass`値が型を一意に識別するメタデータ トークン。 メタデータ トークン ID の上位ビットを解釈する方法の詳細については、次を参照してください。、 `CorTokenType` 、.NET Framework sdk corhdr.h ファイルで列挙します。
+ 値`tokClass`は、型を一意に識別するメタデータ トークンです。 メタデータ トークン ID の上位ビットを解釈する方法の詳細については、.NET Framework SDK の corhdr.h ファイルの`CorTokenType`列挙を参照してください。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: sh.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

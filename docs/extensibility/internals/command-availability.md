@@ -1,59 +1,59 @@
 ---
-title: コマンドの可用性 |Microsoft Docs
+title: コマンドの可用性 |マイクロソフトドキュメント
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338603"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709698"
 ---
-# <a name="command-availability"></a>利用可能なコマンド
+# <a name="command-availability"></a>コマンドの可用性
 
-Visual Studio のコンテキストでは、コマンドが使用可能な判断します。 コンテキストによっては、現在のプロジェクト、現在のエディター、読み込まれる Vspackage および統合開発環境 (IDE) の他の側面を変更できます。
+Visual Studio コンテキストは、使用できるコマンドを決定します。 コンテキストは、現在のプロジェクト、現在のエディター、読み込まれる VSPackage、および統合開発環境 (IDE) のその他の側面によって異なります。
 
-## <a name="command-contexts"></a>コマンドのコンテキスト
+## <a name="command-contexts"></a>コマンド コンテキスト
 
-次のコマンドのコンテキストは、最も一般的です。
+最も一般的なコマンド コンテキストは次のとおりです。
 
-- IDE:IDE で提供されるコマンドは常に使用できます。
+- IDE: IDE によって提供されるコマンドは、常に使用可能です。
 
-- VSPackage:Vspackage では、表示または非表示にするコマンドが場合を定義できます。
+- VSPackage: VSPackage は、コマンドを表示または非表示にするタイミングを定義できます。
 
-- プロジェクト:プロジェクトのコマンドは、現在選択されているプロジェクトに対してのみ表示されます。
+- プロジェクト: プロジェクトコマンドは、現在選択されているプロジェクトに対してのみ表示されます。
 
-- エディター:一度にアクティブにできるエディターの 1 つだけです。 アクティブなエディターからのコマンドを利用できます。 エディターは、言語サービスと密接に連携します。 言語サービスでは、関連付けられているエディターのコンテキストでは、そのコマンドを処理する必要があります。
+- 編集者:一度にアクティブにできるエディタは1つだけです。 アクティブなエディターからのコマンドを使用できます。 エディターは、言語サービスと密接に連携します。 言語サービスは、関連付けられたエディターのコンテキストでコマンドを処理する必要があります。
 
-- ファイルの種類:エディターでは、1 つ以上の種類のファイルを読み込むことができます。 使用可能なコマンドは、ファイルの種類に応じて変更できます。
+- ファイルの種類: エディターは、複数の種類のファイルを読み込むことができます。 使用可能なコマンドは、ファイルの種類によって異なります。
 
-- アクティブなウィンドウ:最後のアクティブなドキュメント ウィンドウは、キー バインドのユーザー インターフェイス (UI) のコンテキストを設定します。 ただし、内部 web ブラウザーのようなキー バインドのテーブルのあるツール ウィンドウでは、UI コンテキストが設定もできます。 HTML エディターなどの複数タブ付きドキュメント ウィンドウ、各タブは別のコマンド コンテキストの GUID を持っています。 常にで使用できるツール ウィンドウは、登録後、**ビュー**メニュー。
+- アクティブ ウィンドウ: 最後のアクティブなドキュメント ウィンドウは、キー バインドのユーザー インターフェイス (UI) コンテキストを設定します。 ただし、内部 Web ブラウザーに似たキー バインド テーブルを持つツール ウィンドウも、UI コンテキストを設定できます。 HTML エディターなどの複数タブのドキュメント ウィンドウでは、各タブは異なるコマンド コンテキスト GUID を持ちます。 ツール ウィンドウを登録すると、常に **[表示]** メニューから使用できるようになります。
 
-- UI コンテキスト:UI コンテキストがの値によって識別される、<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>クラス、たとえば、<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>ソリューションが構築されるときにまたは<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>デバッガーがアクティブな場合。 同時にアクティブにできる複数の UI コンテキストです。
+- UI コンテキスト: UI コンテキストは、たとえば、ソリューション<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>がビルドされるとき、または<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid><xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>デバッガーがアクティブな場合など、クラスの値によって識別されます。 複数の UI コンテキストを同時にアクティブにできます。
 
-## <a name="define-custom-context-guids"></a>カスタム コンテキストの Guid を定義します。
+## <a name="define-custom-context-guids"></a>カスタム コンテキスト GUID の定義
 
-適切なコマンドは、GUID が定義されていないコンテキスト場合、VSPackage のいずれかを定義およびアクティブまたはコマンドの表示を制御する必要に応じて非アクティブにすることをプログラムできます。
+適切なコマンド コンテキスト GUID が定義されていない場合は、VSPackage で定義し、コマンドの可視性を制御するために必要に応じてアクティブまたは非アクティブにプログラムできます。
 
-1. 呼び出してコンテキストの Guid を登録、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド。
+1. メソッドを呼び出してコンテキスト<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>GUID を登録します。
 
-2. 呼び出してコンテキストの GUID の状態を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド。
+2. メソッドを呼び出してコンテキスト GUID<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>の状態を取得します。
 
-3. 呼び出してコンテキストの Guid のオンとオフ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド。
+3. メソッドを呼び出してコンテキスト GUID の<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>オン/オフを切り上げる。
 
 > [!CAUTION]
-> 確認して、VSPackage 影響を及ぼさないように既存のコンテキストの Guid の他の Vspackage がそれらに依存している可能性があります。
+> 他の VSPackage が依存する可能性があるため、VSPackage が既存のコンテキスト GUID に影響を与えないことを確認します。
 
 ## <a name="see-also"></a>関連項目
 
-- [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [選択コンテキストオブジェクト](../../extensibility/internals/selection-context-objects.md)
+- [VSPackages がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
