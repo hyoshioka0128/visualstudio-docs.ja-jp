@@ -1,72 +1,72 @@
 ---
-title: プロジェクトの種類を作成する |Microsoft Docs
+title: プロジェクトタイプの作成 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314558"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709078"
 ---
-# <a name="create-project-types"></a>プロジェクトの種類を作成します。
-拡張する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を新しいプロジェクトの種類を作成します。 新しいプロジェクトの種類を作成するには、いくつかの概念を理解し、いくつかの手順を完了する必要があります。 次のトピックでは、プロジェクトの種類を作成する方法の概要を説明します。
+# <a name="create-project-types"></a>プロジェクト タイプの作成
+新しいプロジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]タイプを作成することで拡張できます。 新しいプロジェクトタイプを作成するには、いくつかの概念を理解し、いくつかのステップを完了する必要があります。 次のトピックでは、プロジェクトの種類を作成する方法の概要を説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)
+- [プロジェクトタイプ設計の決定](../../extensibility/internals/project-type-design-decisions.md)
 
- 項目、プロジェクト ファイルの永続化、および新しいプロジェクトの種類を作成する前に作成する必要があるコミットメント メカニック設計上の決定について説明します。
+ 新しいプロジェクトの種類を作成する前に行う必要がある項目、プロジェクト ファイルの永続性、およびコミットメントの設計の決定について説明します。
 
-- [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [チェックリスト: 新しいプロジェクトの種類を作成する](../../extensibility/internals/checklist-creating-new-project-types.md)
 
- コードの編集しコンパイル、ビルド、デバッグ、およびプロジェクト内のアプリケーションの配置などのプログラミング タスクをサポートする新しいプロジェクトの種類を作成する場合の手順の概要を示します。
+ コードの編集や、プロジェクトでのアプリケーションのビルド、デバッグ、配置などのプログラミング タスクをサポートする新しいプロジェクトの種類を作成する場合に従う必要がある手順の概要を示します。
 
-- [プロジェクト ファクトリを使用してプロジェクトのインスタンスを作成します。](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [プロジェクト ファクトリを使用してプロジェクト インスタンスを作成する](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 
- 指定して新しいプロジェクトのインスタンスを作成するプロジェクト ファクトリを使用する方法について説明します。
+ プロジェクト ファクトリを提供および使用して新しいプロジェクトのインスタンスを作成する方法について説明します。
 
-- [プロジェクトの種類を登録します。](../../extensibility/internals/registering-a-project-type.md)
+- [プロジェクト タイプの登録](../../extensibility/internals/registering-a-project-type.md)
 
- ステートメントのレジストリから既定のパスとデータ、およびテーブルを提供するステートメントごとに、レジストリ スクリプトからのエントリが含まれているコード サンプルを提供します。
+ 既定のパスとデータを提供するレジストリからのステートメントのコード サンプル、および各ステートメントのレジストリ スクリプトからのエントリを含むテーブルを示します。
 
-- [プロジェクトの永続化](../../extensibility/internals/project-persistence.md)
+- [プロジェクトの永続性](../../extensibility/internals/project-persistence.md)
 
- 使用について説明します`IPersistFileFormat`ファイルとファイル ベースのプロジェクトのオブジェクトの両方を保持します。
+ ファイル ベースの`IPersistFileFormat`プロジェクト オブジェクトと非ファイル ベースのプロジェクト オブジェクトの両方を永続化する場合の使用について説明します。
 
 - [MSBuild の使用](../../extensibility/internals/using-msbuild.md)
 
- プロジェクトの種類を使用する方法について説明、[!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)]ビルドからビルドしてもらうためにエンジン[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]とコマンドライン。
+ プロジェクトの種類でビルド エンジンを使用[!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)]して、ユーザーがコマンド ライン[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]からビルドを実行できるようにする方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
-- [シンボル参照ツールをサポートします。](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- などのツールを表示するコードのアーキテクチャについて説明します、**オブジェクト ブラウザー**と**クラス ビュー**ウィンドウ。 インターフェイスと、VSPackage でオブジェクトの参照を実装するために使用されるメソッドについて説明します。
+ **オブジェクト ブラウザー**や**クラス ビュー**ウィンドウなどのコード表示ツールのアーキテクチャについて説明します。 VSPackage でオブジェクトの参照を実装するために使用されるインターフェイスとメソッドについて説明します。
 
-- [プロジェクトとプロジェクト項目テンプレートを追加します。](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- プロジェクトがプロジェクト項目を開いたときにエディターが使用を決定するで再生する重要性について説明しますので、プロジェクト リソースを操作する方法。
+ プロジェクト項目を開くときにどのエディターを使用するかを決定する際にプロジェクトが果たす重要性と、プロジェクトリソースの操作方法について説明します。
 
-- [Windows インストーラーによる Vspackage をインストールします。](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Windows インストーラーを使用して VS パッケージをインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Windows インストーラー パッケージに VSPackage Dll とその他の情報をラップする方法と、VSPackage に、独自の一意の id を付与する方法を示します (*します。MSI*ファイル) のお客様に展開します。
+ VSPackage 独自の一意の ID を与える方法と、VSPackage DLL とその他の情報を Windows インストーラー パッケージ (*.MSI*ファイル) を使用して、お客様に展開します。
 
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- 説明方法[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ビューとアドレスの階層。
+ ビューとアドレス[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層のしくみについて説明します。
 
-- [VSPackage](../../extensibility/internals/vspackages.md)
+- [VSPackages](../../extensibility/internals/vspackages.md)
 
- インストール可能な COM オブジェクトを拡張する、VSPackage の概要を説明します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境と、独自の VSPackage を実装する方法について説明します。
+ 環境を拡張するインストール可能な COM オブジェクトである VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の概要を示し、独自の VSPackage を実装する方法について説明します。
 
 - [プロジェクトの種類](../../extensibility/internals/project-types.md)
 
- プロジェクトを使用してコードを変更、コンパイルしコード、ビルドし実行、コードをデバッグする方法について説明し、プロジェクトの種類を作成する方法についての詳細なトピックへのリンクを提供します。
+ プロジェクトを使用してコードの変更、コードのコンパイルとビルド、コードの実行とデバッグを行う方法について説明し、プロジェクトの種類の作成方法に関する詳細なトピックへのリンクを示します。

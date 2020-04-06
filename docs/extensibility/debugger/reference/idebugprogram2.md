@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2 |Microsoft Docs
+title: Iデバッグプログラム2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c79ec83adcb766bd7c6de3d31a2ae790710a838
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 150746197be4945b012717bef08e18ea57168177
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348955"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722724"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 このインターフェイスは、プロセスで実行されているプログラムを表します。
@@ -28,48 +28,48 @@ ms.locfileid: "66348955"
 IDebugProgram2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジン (DE) とカスタム ポート サプライヤーは、プロセス内のプログラムを表すためには、このインターフェイスを実装します。 セッション デバッグ マネージャー (SDM) 情報を提供するには、このインターフェイスを実装も[アタッチ](../../../extensibility/debugger/reference/idebugprogram2-attach.md)します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジン (DE) とカスタム ポート サプライヤーは、プロセス内のプログラムを表すために、このインターフェイスを実装します。 セッション デバッグ マネージャー (SDM) も、このインターフェイスを実装して[、Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)に情報を提供します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)イベントが新しいプログラムのこのインターフェイスを返します。 このインターフェイスは、複数のインターフェイス上の多くのメソッドをパラメーターとしても使用されます。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ イベント[は](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)、新しいプログラムのこのインターフェイスを返します。 このインターフェイスは、複数のインターフェイスで多くのメソッドのパラメーターとしても使用されます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugProgram2`します。
+ 次の表に`IDebugProgram2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|このプログラムで実行されているスレッドを列挙します。|
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|プログラムの名前を取得します。|
-|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|このプログラムがで実行されているプロセスを取得します。|
+|[プロセスを取得します。](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|このプログラムが実行されているプロセスを取得します。|
 |[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|このプログラムを終了します。|
 |[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|このプログラムにアタッチします。|
-|[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|デバッグ エンジン (DE) が、プログラムからデタッチできるかどうかを決定します。|
-|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|このプログラムからデバッガーをデタッチします。|
-|[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|このプログラムには、グローバルに一意の識別子を取得します。|
+|[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|デバッグ エンジン (DE) がプログラムからデタッチできるかどうかを判断します。|
+|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|このプログラムからデバッガをデタッチします。|
+|[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|このプログラムのグローバル一意識別子を取得します。|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|プログラムのプロパティを取得します。|
-|[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|停止状態からこのプログラムの実行が続行されます。 以前の実行状態がクリアされます。|
-|[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|停止状態からこのプログラムの実行が続行されます。 以前の実行状態が維持されます。|
+|[実行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|停止状態からこのプログラムを実行し続けます。 以前の実行状態はすべてクリアされます。|
+|[続行](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|停止状態からこのプログラムを実行し続けます。 以前の実行状態は保持されます。|
 |[Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)|ステップを実行します。|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|このプログラムが次の実行を停止する要求は、そのスレッドはコード実行のいずれかの時間です。|
-|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|このプログラムを実行するデバッグ エンジン (DE) の識別子と名前を取得します。|
-|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|ソース ファイル内の指定位置のコード コンテキストを列挙します。|
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|このプログラムのメモリのバイト数を取得します。|
-|[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|このプログラムまたはこのプログラムの一部の逆アセンブリのストリームを取得します。|
-|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|このプログラムが読み込まれてが実行されているモジュールを列挙します。|
-|[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|このプログラムの編集と続行 (ENC) 更新プログラムを取得します。<br /><br /> カスタム デバッグ エンジンがこのメソッドを実装していません (常に返すことは`E_NOTIMPL`)。|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|このプログラムが、次にそのスレッドの 1 つがコードを実行する時に実行を停止することを要求します。|
+|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|このプログラムを実行しているデバッグ エンジン (DE) の名前と識別子を取得します。|
+|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|ソース ファイル内の指定した位置のコード コンテキストを列挙します。|
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|このプログラムのメモリ バイトを取得します。|
+|[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|このプログラムまたはこのプログラムの一部の逆アセンブリ ストリームを取得します。|
+|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|このプログラムが読み込んで実行しているモジュールを列挙します。|
+|[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|このプログラムのエディット コンティニュ (ENC) 更新プログラムを取得します。<br /><br /> カスタム デバッグ エンジンは、このメソッドを実装しません (`E_NOTIMPL`常に返す必要があります)。|
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|このプログラムのコード パスを列挙します。|
-|[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|ダンプ ファイルに書き込みます。|
+|[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|ダンプをファイルに書き込みます。|
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="remarks"></a>Remarks
- プログラムは、1 つまたは複数のプログラムのプロセスから成る中には、特定のランタイムのアーキテクチャで実行されているスレッド コンテナーです。
+ プログラムは、特定のランタイム アーキテクチャで実行されるスレッド コンテナーであり、プロセスは 1 つ以上のプログラムで構成されます。
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

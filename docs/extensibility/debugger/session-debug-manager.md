@@ -1,5 +1,5 @@
 ---
-title: セッション デバッグ マネージャー |Microsoft Docs
+title: セッション デバッグ マネージャ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7dd40796fbf0141cc60bf86204bce462594f8f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348575"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712878"
 ---
 # <a name="session-debug-manager"></a>セッション デバッグ マネージャー
-セッション デバッグ マネージャー (SDM) は、任意の数の任意の数のマシン間で任意の数の複数のプロセスでプログラムをデバッグするデバッグ エンジン (DE) を管理します。 マルチプレクサーのデバッグ エンジンだけでなく、SDM は IDE に、デバッグ セッションの統合ビューを提供します。
+セッション デバッグ マネージャー (SDM) は、任意の数のコンピューターで複数のプロセスでプログラムをデバッグしているデバッグ エンジン (DE) の任意の数を管理します。 デバッグ エンジンマルチプレクサであることに加えて、SDM はデバッグ セッションの統一されたビューを IDE に提供します。
 
-## <a name="session-debug-manager-operation"></a>セッション デバッグ マネージャーの操作
- セッション デバッグ マネージャー (SDM) は、DE を管理します。 1 つ以上のデバッグ エンジンを同時に、マシンで実行されていることができます。 DEs を多重化するには、は、SDM は、数、DEs からインターフェイスをラップし、1 つのインターフェイスとして IDE を許すことにします。
+## <a name="session-debug-manager-operation"></a>セッション デバッグ マネージャー操作
+ セッション デバッグ マネージャー (SDM) は、DE を管理します。 1 台のコンピューターで同時に実行されているデバッグ エンジンが複数存在する場合があります。 DEs を多重化するために、SDM は DEs から多数のインターフェイスをラップし、それらを IDE に単一のインターフェイスとして公開します。
 
- パフォーマンスを向上させるのにはいくつかのインターフェイスは多重化されます。 代わりに、DE から直接メッセージが表示され、これらのインターフェイスへの呼び出しは、SDM を経由しません。 たとえば、メモリ、コード、およびドキュメントのコンテキストで使用されるインターフェイスは多重化、特定の命令、メモリ、または特定のドイツでは、デバッグ、特定のプログラムでドキュメントを参照しているため、します。 その他の DE をそのレベルの通信に関与する必要はありません。
+ パフォーマンスを向上させるために、一部のインターフェイスは多重化されません。 代わりに、DE から直接使用され、これらのインターフェイスへの呼び出しは SDM を経由しません。 たとえば、メモリ、コード、およびドキュメントのコンテキストで使用されるインターフェイスは、特定の DE によってデバッグされた特定のプログラム内の特定の命令、メモリ、またはドキュメントを参照するため、多重化されません。 そのレベルの通信に他の DE を関与する必要はありません。
 
- すべてのコンテキストの場合は true ではありません。 式の評価コンテキストのインターフェイスを呼び出し、SDM を通過します。 式の評価中に、SDM のラップ、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)可能性があるのと同じプロセス内でプログラムのデバッグは複数の DEs 可能性がありますが含まれるその式が評価されるため、IDE が提供されるインターフェイス同じスレッドで実行されています。
+ これはすべてのコンテキストに当てはまるわけではありません。 式評価コンテキスト インターフェイスへの呼び出しは、SDM を経由します。 式の評価中に、SDM は、式が評価されると、同じスレッドで実行されている可能性のある同じプロセス内のプログラムをデバッグしている複数の DE を含む可能性があるため、IDE に与える[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスをラップします。
 
- 通常、SDM が委任メカニズムとして機能しますが、ブロードキャスト機構を果たすことがあります。 たとえば、式の評価中に指定されたスレッドでコードを実行できることをすべて DEs を通知するブロードキャスト メカニズムとして、SDM が機能します。 同様に、SDM 停止イベントを受け取るときに、プログラムの実行を停止する必要があります をブロードキャストします。 ステップが呼び出されたときに、SDM にブロードキャストする、プログラム実行を継続できます。 ブレークポイントは、すべて DE にもブロードキャストします。
+ SDM は通常、委任メカニズムとして機能しますが、ブロードキャスト メカニズムとして機能する場合があります。 たとえば、式の評価中に、SDM は、指定されたスレッドでコードを実行できることをすべての DE に通知するブロードキャスト メカニズムとして機能します。 同様に、SDM は停止イベントを受信すると、実行を停止する必要があるプログラムにブロードキャストします。 ステップが呼び出されると、SDM は、実行を継続できるプログラムにブロードキャストします。 ブレークポイントは、すべての DE にもブロードキャストされます。
 
- 現在のプログラム、スレッド、またはスタック フレーム、SDM を追跡しません。 プロセス、プログラム、およびスレッドの情報は、特定のデバッグ イベントと共に SDM に送信されます。
+ SDM は、現在のプログラム、スレッド、またはスタック フレームを追跡しません。 プロセス、プログラム、およびスレッドの情報は、特定のデバッグ イベントと共に SDM に送信されます。
 
 ## <a name="see-also"></a>関連項目
 - [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)
-- [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)
-- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)
+- [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)
+- [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)

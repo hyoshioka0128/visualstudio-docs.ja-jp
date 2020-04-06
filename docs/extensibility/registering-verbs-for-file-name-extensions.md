@@ -1,46 +1,46 @@
 ---
-title: ファイル名拡張子の動詞を登録する |Microsoft Docs
+title: ファイル名拡張子の動詞を登録する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86781f771ec5516e212ba3df8fdf945cd8d6d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334219"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701534"
 ---
-# <a name="register-verbs-for-file-name-extensions"></a>ファイル名拡張子の動詞を登録します。
-アプリケーションとファイル名拡張子の関連付けは、通常、ユーザーがファイルをダブルクリックしたときに発生する推奨アクションを持っています。 これは、アクションは、動詞、たとえばオープン操作に対応するにリンクさせます (推奨)。
+# <a name="register-verbs-for-file-name-extensions"></a>ファイル名拡張子の動詞を登録する
+ファイル名拡張子とアプリケーションの関連付けには、通常、ユーザーがファイルをダブルクリックしたときに実行される推奨アクションがあります。 この優先アクションは、アクションに対応する動詞 (たとえば、オープン) にリンクされます。
 
- シェルのキーを使用して拡張機能があるのプログラム識別子 (ProgID) に関連付けられている動詞を登録する**HKEY_CLASSES_ROOT\{progid} \shell**します。 詳細については、次を参照してください。[ファイルの種類](/windows/desktop/shell/fa-file-types)します。
+ **progid}\shell\{** にあるシェル キーを使用して、拡張機能のプログラム識別子 (ProgID) に関連付けられている動詞HKEY_CLASSES_ROOT登録できます。 詳細については、[ファイルの種類を](/windows/desktop/shell/fa-file-types)参照してください。
 
-## <a name="register-standard-verbs"></a>標準的な動詞を登録します。
- オペレーティング システムでは、次の標準的な動詞を認識します。
+## <a name="register-standard-verbs"></a>標準動詞の登録
+ オペレーティング システムは、次の標準動詞を認識します。
 
-- 開く
+- [ファイル]
 
-- 編集
+- [編集]
 
-- 再生
+- [再生]
 
-- の
+- Print
 
-- [プレビュー]
+- プレビュー
 
-  可能であれば、標準的な動詞を登録します。 最も一般的な選択肢では、Open 動詞です。 ファイルを開くと、ファイルの編集の間の明確な違いがある場合にのみ編集動詞を使用します。 開くなど、 *.htm*ファイルが表示されますが、ブラウザーでの編集は、 *.htm*ファイルは、HTML エディターを起動します。 標準的な動詞は、オペレーティング システムのロケールでローカライズされます。
+  可能な限り、標準動詞を登録します。 最も一般的な選択肢は、Open 動詞です。 編集動詞は、ファイルを開くこととファイルを編集する場合に明確な違いがある場合にのみ使用します。 たとえば *、.htm*ファイルを開くとブラウザに表示され *、.htm*ファイルを編集すると HTML エディタが起動します。 標準動詞は、オペレーティング システムのロケールにローカライズされます。
 
 > [!NOTE]
-> 標準的な動詞を登録するときに、開いているキーの既定値を設定しないでください。 既定値には、メニューの表示文字列が含まれています。 オペレーティング システムでは、標準的な動詞にこの文字列を提供します。
+> 標準動詞を登録する場合は、Open キーの既定値を設定しないでください。 既定値には、メニューの表示文字列が含まれています。 オペレーティング システムは、標準の動詞にこの文字列を提供します。
 
- 新しいインスタンスを起動するプロジェクト ファイルを登録する必要があります[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ときに、ユーザーがファイルを開きます。 次の例では、標準の動詞の登録、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]プロジェクト。
+ プロジェクト ファイルは、ユーザー[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]がファイルを開いたときに新しいインスタンスを開始するために登録する必要があります。 プロジェクトの標準動詞登録の例を次に[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]示します。
 
 ```
 [HKEY_CLASSES_ROOT\.csproj]
@@ -71,7 +71,7 @@ ms.locfileid: "66334219"
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- 既存のインスタンスでファイルを開く[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、DDEEXEC キーを登録します。 次の例では、標準の動詞の登録、 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs*ファイル。
+ の既存の[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]インスタンスでファイルを開くには、DDEEXEC キーを登録します。 次の例は[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]*、.cs*ファイルの標準の動詞登録を示しています。
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -105,11 +105,11 @@ ms.locfileid: "66334219"
 @="system"
 ```
 
-## <a name="set-the-default-verb"></a>既定の動詞を設定します。
- 既定の動詞は、ユーザーが Windows エクスプ ローラーでファイルをダブルクリックしたときに実行されるアクションです。 既定の動詞がの既定値として指定された動詞、 **HKEY_CLASSES_ROOT\\*progid*\Shell**キー。 既定の動詞は、最初の動詞で指定された値が指定されていない場合、 **HKEY_CLASSES_ROOT\\*progid*\Shell**キー リスト。
+## <a name="set-the-default-verb"></a>既定の動詞を設定する
+ 既定の動詞は、ユーザーが Windows エクスプローラーでファイルをダブルクリックしたときに実行されるアクションです。 既定の動詞は **、HKEY_CLASSES_ROOT\\*progid*\Shell**キーの既定値として指定された動詞です。 値を指定しない場合、既定の動詞は **、HKEY_CLASSES_ROOT\\*progid*\Shell**キー リストで指定された最初の動詞です。
 
 > [!NOTE]
-> サイド バイ サイドで配置の拡張機能の既定の動詞を変更する場合は、インストールと削除の影響を検討してください。 インストール中に、元の既定値は上書きされます。
+> side-by-side 展開で拡張機能の既定の動詞を変更する場合は、インストールと削除への影響を考慮してください。 インストール中に、元のデフォルト値が上書きされます。
 
 ## <a name="see-also"></a>関連項目
-- [サイド バイ サイドでのファイルの関連付けを管理します。](../extensibility/managing-side-by-side-file-associations.md)
+- [ファイルの関連付けを管理する](../extensibility/managing-side-by-side-file-associations.md)
