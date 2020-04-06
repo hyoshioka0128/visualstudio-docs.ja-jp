@@ -1,5 +1,5 @@
 ---
-title: テスト ツール
+title: テスト用ツール
 ms.date: 03/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594366"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256232"
 ---
-# <a name="testing-tools-in-visual-studio"></a>Visual Studio のテスト ツール
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>初めて Visual Studio のテスト ツールを検討する
 
 Visual Studio のテスト ツールを使用することで、チームと共に高水準の優れたコードを開発し、維持できます。
 

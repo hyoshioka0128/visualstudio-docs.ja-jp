@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633370"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472684"
 ---
 # <a name="msbuild-conditions"></a>MSBuild の条件
 
@@ -39,6 +39,22 @@ MSBuild では、`Condition` 属性が許可されている場所ならどこで
 |Or|少なくともオペランドの 1 つが `true` と評価される場合、`true` と評価します。|
 |()|内部に含まれる式が `true` と評価される場合に `true` と評価されるグループ化機構。|
 |$if$ ( %expression% )、$else$、$endif$|指定した `%expression%` が、渡されるカスタム テンプレート パラメーターの文字列の値と一致するかどうかをチェックします。 `$if$` 条件が `true` と評価される場合、そのステートメントが実行されます。それ以外の場合、`$else$` 条件がチェックされます。 `$else$` 条件が `true` の場合、そのステートメントが実行されます。それ以外の場合、`$endif$` 条件は式の評価を終了します。<br /><br /> 使用の例については、「[Visual Studio Project/Item Template Parameter Logic](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)」(Visual Studio プロジェクト/項目テンプレート パラメーター ロジック) を参照してください。|
+
+次の例に示すように、文字列メソッドを条件で使用できます。ここでは、文字列の関連部分のみを比較するために <xref:System.String.TrimEnd> 関数を使用し、.NET Framework と .NET Core のターゲット フレームワークを区別しています。
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd('0123456789.'))' == 'net'">
+        <!-- Properties for .NET Framework -->
+    </PropertyGroup>
+
+</Project>
+```
 
 ## <a name="see-also"></a>関連項目
 

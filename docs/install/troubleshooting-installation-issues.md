@@ -1,7 +1,7 @@
 ---
 title: インストールまたはアップグレードの問題をトラブルシューティングする
 description: ときには、問題が発生してしまうことがあります。 Visual Studio のインストールまたはアップグレードが失敗した場合、このページが役に立ちます。
-ms.date: 09/13/2019
+ms.date: 03/23/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115004"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233112"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
 > [!IMPORTANT]
-> インストールに関する問題がある場合、 Microsoft によるサポートを受けられます。 [**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションが用意されています。
+> インストールに関する問題がある場合、 Microsoft によるサポートを受けられます。 [**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションが用意されています。
 
 このトラブルシューティング ガイドには、インストールに関する問題のほとんどを解決できるステップ バイ ステップの手順が含まれています。
 
@@ -116,7 +116,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 [オフライン インストール](create-an-offline-installation-of-visual-studio.md)を作成して、ローカル レイアウトからインストールする際に役立つ可能性がある、既知の問題と回避策を次の表に示します。
 
-| 問題       | アイテム                   | 解決策: |
+| 懸案事項       | アイテム                   | ソリューション |
 | ----------- | ---------------------- | -------- |
 | ユーザーにファイルへのアクセス権がない。 | アクセス許可 (ACL) | オフライン インストールを共有する*前*に、他のユーザーに読み取りアクセス権を付与するように、必ずアクセス許可 (ACL) を調整してください。 |
 | 新しいワークロード、コンポーネント、または言語をインストールできない。  | `--layout`  | 部分レイアウトからインストールし、その部分レイアウトには以前ダウンロードしなかったワークロード、コンポーネント、または言語を選択した場合は、インターネットにアクセスできることを確認してください。 |
@@ -134,7 +134,7 @@ Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET 
 1. [ツールをダウンロード](https://www.microsoft.com/download/details.aspx?id=12493)します。
 2. 管理コマンド プロンプトを開きます。
 3. ツールを保存したディレクトリから `Collect.exe` を実行します。
-4. `vslogs.zip` ディレクトリで結果の `%TEMP%` ファイルを探します (例: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`)。
+4. `%TEMP%` ディレクトリで結果の `vslogs.zip` ファイルを探します (例: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`)。
 
 > [!NOTE]
 > このツールは、インストールの実行に失敗したときと同じユーザー アカウントで実行する必要があります。 別のユーザー アカウントでこのツールを実行する場合は、`–user:<name>` オプションを設定して、インストールの実行に失敗したユーザー アカウントを指定します。 追加オプションや使用に関する情報を収集するには、管理コマンド プロンプトで `Collect.exe -?` を実行します。
@@ -143,7 +143,7 @@ Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET 
 
 このトラブルシューティング ガイドに記載されているソリューションの一覧に従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Visual Studio の削除](remove-visual-studio.md)
 * [ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)

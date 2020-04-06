@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114469"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472782"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
-Visual Studio IDE でプロジェクトをビルドしたら、 **[出力]** ウィンドウでそのビルドに関する情報を表示できます。 この情報を使用して、たとえば、ビルド エラーをトラブルシューティングできます。 
+Visual Studio IDE でプロジェクトをビルドしたら、 **[出力]** ウィンドウでそのビルドに関する情報を表示できます。 この情報を使用して、たとえば、ビルド エラーをトラブルシューティングできます。
 
-- C++ のプロジェクトでは、自動的に作成および保存された *.txt* ファイルで同じ情報を確認することもできます。 
+- C++ のプロジェクトでは、プロジェクトのビルド時に作成および保存されたログ ファイルで同じ情報を確認することもできます。 
 
-- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、**Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存する *.txt* ファイルの場所を指定することを求められます。 
+- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、**Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存するログ ファイルの場所を指定することを求められます。
 
 また、IDE を使用すれば、各ビルドについて、表示する情報の種類を指定することもできます。
 
-MSBuild を使用して任意の種類のプロジェクトをビルドする場合は、ビルドに関する情報を保存する *.txt* ファイルを作成することができます。 詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。
+MSBuild を使用して任意の種類のプロジェクトをビルドする場合は、ビルドに関する情報を保存するログ ファイルを作成することができます。 詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ プロジェクトのビルド ログ ファイルを表示するには
 
-1. **Windows エクスプローラー**または**エクスプローラー**で、次のファイルを開きます。 *\\...\Visual Studio \<バージョン\>\Projects\\<プロジェクト名\>\\<プロジェクト名\>\Debug\\<プロジェクト名\>.txt*
+1. **エクスプローラー**または**エクスプローラー**で、次のファイルを開きます (プロジェクトのルート フォルダーの相対パスです)。*Release*\\<ProjectName>\>.Log* または *Debug\\<プロジェクト名\>.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>マネージ コード プロジェクトのビルド ログ ファイルを作成するには
 
@@ -46,16 +46,16 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>ビルド ログに含める情報の量を変更するには
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
 2. **[プロジェクトおよびソリューション]** ページで、 **[ビルド/実行]** ページを選択します。
 
 3. **[MSBuild プロジェクト ビルドの出力の詳細]** の一覧で、次の値のいずれかを選択し、 **[OK]** ボタンを選択します。
 
-    |詳細レベル|[説明]|
+    |詳細レベル|説明|
     | - |-----------------|
     |**非表示**|ビルドの概要のみを表示します。|
-    |**最小**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、メッセージを表示します。|
+    |**最小限**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、メッセージを表示します。|
     |**標準**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、およびメッセージと、ビルドの主なステップとを表示します。 この詳細レベルを最も頻繁に使用します。|
     |**詳細**|ビルドの概要と、重要度 - 高として分類されたエラー、警告、およびメッセージと、ビルドのすべてのステップと、標準的な重要度として分類されたメッセージとを表示します。|
     |**診断**|ビルドで使用できるすべてのデータを表示します。 このレベルの詳細は、カスタム ビルド スクリプトの問題およびその他のビルドの問題をデバッグする場合に役に立ちます。|
@@ -69,7 +69,7 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 バイナリ ログは .NET プロジェクトのオプション機能です。これにより、ログ参照のエクスペリエンスが向上し、大きなログで情報を見つけやすくなります。 バイナリ ログを使用するには、[Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools) をインストールします。 詳細については、[https://msbuildlog.com](https://msbuildlog.com) および[バイナリ ログ](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)に関する記事を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

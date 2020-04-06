@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557950"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233085"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -50,17 +50,18 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
 
 Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指定するには、次の 3 つの方法があります。
 
-- プロジェクト ファイルまたは Directory.Build.props ファイルを使用して、プロジェクトにビルド プロパティを追加します。 プロジェクトの実行設定ファイルは、**RunSettingsFilePath** プロパティによって指定されます。 
+- プロジェクト ファイルまたは Directory.Build.props ファイルを使用して、プロジェクトにビルド プロパティを追加します。 プロジェクトの実行設定ファイルは、**RunSettingsFilePath** プロパティによって指定されます。
 
     - 現在、プロジェクト レベルの実行設定は、C#、VB、C++、および F# プロジェクトに対してサポートされています。
     - プロジェクトに対して指定したファイルにより、ソリューションで指定された他のあらゆる実行設定ファイルがオーバーライドされます。
+    - [これらの MSBuild プロパティ](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019)を使用し、runsettings ファイルのパスを指定できます。 
 
     プロジェクトに対して *.runsettings* ファイルを指定する例:
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
@@ -80,7 +81,7 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
 - IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** を選択し、 *.runsettings* ファイルを選択します。
 
-   ![Visual Studio 2019 の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
+   ![Visual Studio 2019 の [テスト] の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
       
    - このソリューションのルートに ".runsettings" ファイルが存在する場合は、このファイルによりオーバーライドされます。このファイルは実行されるすべてのテストに適用されます。  
    - このファイルの選択は、ローカルにのみ保持されます。 
@@ -258,6 +259,7 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 |**TestAdaptersPaths**||TestAdapter が配置されているディレクトリの 1 つまたは複数のパス|
 |**MaxCpuCount**|1|この設定では、単体テストを実行するときに、マシンで使用可能なコアを使用してテストを並列実行する程度を制御します。 テストの実行エンジンは、使用可能な各コア上の別個のプロセスとして起動し、実行するテストが入ったコンテナーを各コアに与えます。 コンテナーとしては、アセンブリ、DLL、または関連する成果物を指定できます。 テスト コンテナーはスケジューリングの単位です。 各コンテナーでは、テストはテスト フレームワークに従って実行されます。 コンテナーが多くある場合、あるコンテナー内のテストの実行を終了したプロセスには、次の使用可能なコンテナーが与えられます。<br /><br />MaxCpuCount には次の値を指定することができます。<br /><br />n。ここで n は、1 以上、コアの数以下です。最大 n 個のプロセスが起動されます<br /><br />n。ここで n はその他の値です。起動するプロセスの数は、利用可能なコアの数まで指定できます。 たとえば、"n = 0" と設定すると、環境に基づいて起動するプロセスの最適な数がプラットフォームによって自動的に決定されます。|
 |**TestSessionTimeout**||指定されたタイムアウトを超えたときにユーザーがテスト セッションを終了できるようにします。 タイムアウトを設定すると、リソースが適切に消費され、テスト セッションが設定された時間に制限されます。 この設定は、**Visual Studio 2017 バージョン 15.5** 以降で使用できます。|
+|**DotnetHostPath**||testhost を実行するために使用される dotnet host へのカスタム パスを指定します。 これは、dotnet/runtime リポジトリをビルドする場合など、独自の dotnet をビルドするときに便利です。 このオプションを指定すると、testhost.exe の検索がスキップされ、常に testhost.dll が使用されます。 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>診断データ アダプター (データ コレクター)
 
@@ -343,3 +345,4 @@ public void HomePageTest()
 - [テスト実行を構成する](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio テスト タスク (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+

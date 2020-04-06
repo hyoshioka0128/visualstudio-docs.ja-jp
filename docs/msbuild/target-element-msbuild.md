@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631979"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375548"
 ---
 # <a name="target-element-msbuild"></a>Target 要素 (MSBuild)
 
@@ -59,7 +59,7 @@ MSBuild によって順次実行されるタスクのセットを格納します
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須の属性です。<br /><br /> ターゲットの名前。|
+|`Name`|必須の属性です。<br /><br /> ターゲットの名前。 ターゲットの名前に使用できるのは `$@()%*?.` 以外の文字です。|
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 条件が `false` と評価された場合、ターゲットの本体も、`DependsOnTargets` 属性で設定されたいずれのターゲットも実行されません。 条件の詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
 |`Inputs`|省略可能な属性です。<br /><br /> このターゲットの入力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Outputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」、「[方法:インクリメンタル ビルドを実行する](../msbuild/how-to-build-incrementally.md)」、および[変換](../msbuild/msbuild-transforms.md)に関するページを参照してください。|
 |`Outputs`|省略可能な属性です。<br /><br /> このターゲットの出力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Inputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」、「[方法:インクリメンタル ビルドを実行する](../msbuild/how-to-build-incrementally.md)」、および[変換](../msbuild/msbuild-transforms.md)に関するページを参照してください。|

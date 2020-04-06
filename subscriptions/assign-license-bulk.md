@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988486"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274064"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -104,6 +104,10 @@ ms.locfileid: "79988486"
 7. 追加したグループを表示するには、ユーザーの一覧の一番下までスクロールします。  
 
 8. グループのメンバーを表示するには、 **[利用者の表示]** を選択します。 グループ内のサブスクライバーに関する詳細を表示することは可能ですが、サブスクライバーまたは彼らが割り当てられているサブスクリプションを編集することはできません。    
+
+> [!NOTE]
+> 後に Azure AD グループの一部として追加されたユーザーにサブスクリプションを個別に既に割り当てている場合は、グループの一部として追加され、個別に一覧表示されなくなります。 ただし、個別のサブスクリプションが異なるサブスクリプション レベル用のものである場合は、サブスクリプションを 2 つ所有することになります。  例:ユーザーが個別の Visual Studio Professional サブスクリプションを所有していて、さらに Visual Studio Enterprise サブスクリプションを割り当てるグループのメンバーである場合は、両方を所有することになります。  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

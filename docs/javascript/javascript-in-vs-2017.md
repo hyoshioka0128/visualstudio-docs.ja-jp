@@ -10,23 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234957"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233076"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
 JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE で JavaScript コードを記述する場合に、ほとんどの標準的な編集補助機能 (コード スニペット、IntelliSense など) を使用できます。 多くの種類のアプリケーションやサービスの JavaScript コードを記述できます。
 
 > [!NOTE]
-> Microsoft の JavaScript API のすべてのリファレンス (500 超ページ) を docs.microsoft.com から対応する MDN にリダイレクトして、[MDN Web docs](https://developer.mozilla.org/en-US/) を Web のワンストップの主要な開発リソースにするためのコミュニティ全体の取り組みに参加しました。 詳細については、この[お知らせ](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)をご覧ください。
+> Microsoft の JavaScript API のすべてのリファレンス (500 以上のページ) を docs.microsoft.com から対応する MDN にリダイレクトすることで、[MDN Web docs](https://developer.mozilla.org/en-US/) を Web のワンストップの主要な開発リソースにするためのコミュニティ全体の取り組みに参加しました。 詳細については、この[お知らせ](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)をご覧ください。
 
-## <a name="ES6"></a> ECMAScript 2015 (ES6) 以降のサポート
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015 (ES6) 以降のサポート
 
 現在、Visual Studio では、ECMAScript 2015/2016 など、更新された ECMAScript 言語の構文がサポートされています。
 
@@ -51,14 +51,14 @@ JavaScript ファイルをコンパイルするには、`tsconfig.json` ファ�
 
 tsconfig ファイルに必要な設定について、以下に説明します。
 
-- `allowJs`: この値は、JavaScript ファイルが認識されるように `true` に設定する必要があります。 TypeScript は JavaScript にコンパイルされ、コンパイラはコンパイルしたファイルをインクルードする必要がないので、既定値は `false` になります。
-- `outDir`: この値は、出力された JavaScript ファイルが検出されず、プロジェクトに追加されるように、プロジェクトに含まれない場所に設定する必要があります (`exclude` を参照)。
-- `module`: モジュールを使用する場合、この設定で、出力コードで使用する必要があるモジュール形式 (たとえば、Node、または Browserify などのバンドラーの場合は `commonjs`) をコンパイラに指示します。
-- `exclude`: この設定は、プロジェクトに含めないフォルダーを示しています。
+- `allowJs`:この値は、JavaScript ファイルが認識されるように `true` に設定する必要があります。 TypeScript は JavaScript にコンパイルされ、コンパイラはコンパイルしたファイルをインクルードする必要がないので、既定値は `false` になります。
+- `outDir`:この値は、出力された JavaScript ファイルが検出されず、プロジェクトに追加されるように、プロジェクトに含まれない場所に設定する必要があります (`exclude` を参照)。
+- `module`:モジュールを使用する場合、この設定で、出力コードで使用する必要があるモジュール形式 (たとえば、Node、または Browserify などのバンドラーの場合は `commonjs`) をコンパイラに指示します。
+- `exclude`:この設定は、プロジェクトに含めないフォルダーを示します。
 出力場所と、`node_modules` や `temp` などのプロジェクト以外のフォルダーをこの設定に追加する必要があります。
-- `enableAutoDiscovery`: この設定は、前述のとおり、定義ファイルの自動検出とダウンロードを可能にします。
-- `compileOnSave`: この設定で、Visual Studio にソース ファイルが保存されるたびに再コンパイルする必要があるかどうかをコンパイラに指示します。
-- `typeAcquisition`: この一連の設定では、自動型取得の動作を制御します ([このセクション](/visualstudio/ide/javascript-intellisense#Auto)で詳しく説明します)。
+- `enableAutoDiscovery`:この設定は、前述のとおり、定義ファイルの自動検出とダウンロードを可能にします。
+- `compileOnSave`:この設定で、Visual Studio にソース ファイルが保存されるたびに再コンパイルする必要があるかどうかをコンパイラに指示します。
+- `typeAcquisition`:この一連の設定では、自動型取得の動作を制御します ([このセクション](/visualstudio/ide/javascript-intellisense#Auto)で詳しく説明します)。
 
 JavaScript ファイルを CommonJS モジュールに変換し、`./out` フォルダーに配置する場合は、次の `tsconfig.json` ファイルを使用できます。
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] の JavaScript IntelliSense では、パラメーターおよびメンバー リストにさらに多くの情報が表示されるようになります。 この新しい情報は TypeScript 言語サービスで提供されます。この言語サービスでは、コードをよりよく理解するためにバックグラウンドで静的分析が使用されます。 新しい IntelliSense エクスペリエンスとそのしくみの詳細については、[こちら](/visualstudio/ide/javascript-intellisense/)を参照してください。
 
-## <a name="JSX"></a> JSX 構文のサポート
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> JSX 構文のサポート
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] の JavaScript では、JSX 構文の豊富なサポートが提供されます。 JSX は、JavaScript ファイル内で HTML タグを許可する構文セットです。
 
@@ -128,7 +128,7 @@ exports.default = Subscription_1.Subscription;
 ![JSX 構文](../javascript/media/js-react.png)
 
 > [!NOTE]
-> JSX 構文を React 呼び出しに変換するには、設定 `"jsx": "react"` を、`compilerOptions` ファイルの `tsconfig.json` に追加する必要があります。
+> JSX 構文を React 呼び出しに変換するには、設定 `"jsx": "react"` を、`tsconfig.json` ファイルの `compilerOptions` に追加する必要があります。
 
 ビルド時に './out/app.js' で作成された JavaScript ファイルには次のようなコードが含まれます。
 
@@ -186,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ![フォルダー構造](../javascript/media/js-folderstructure.png)
 
-以下の `tsconfig.json` を使用して、言語サービスは `js` フォルダー内のソース ファイルのみを分析するが、引き続き `.d.ts` フォルダー内のライブラリの `lib` ファイルをフェッチして使用することを確認できます。
+以下の `tsconfig.json` を使用して、言語サービスは `js` フォルダー内のソース ファイルのみを分析するが、引き続き `lib` フォルダー内のライブラリの `.d.ts` ファイルをフェッチして使用することを確認できます。
 
 ```json
 {

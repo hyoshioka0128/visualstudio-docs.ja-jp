@@ -2,7 +2,7 @@
 title: npm パッケージを管理する
 description: Visual Studio では、Node.js パッケージ マネージャー (npm) を利用してパッケージを管理できます。
 ms.custom: seodec18
-ms.date: 06/06/2018
+ms.date: 03/12/2020
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -12,33 +12,40 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dba657d30eedef26337c708e7ede6c5ab85ed4cc
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307221"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550012"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
-npm を利用すると、Node.js アプリケーションで使用するパッケージをインストールしたり、管理したりできます。 npm に不慣れで詳細が必要な場合、[npm ドキュメント](https://docs.npmjs.com/) ページにお進みください。
+npm を利用すると、Node.js アプリケーションで使用するパッケージをインストールしたり、管理したりできます。 Visual Studio では、npm を操作したり、UI から、または直接 npm コマンドを実行したりすることが簡単にできます。 npm に不慣れで詳細が必要な場合、[npm ドキュメント](https://docs.npmjs.com/) ページにお進みください。
 
-Visual Studio では、npm を操作したり、UI から、または直接 npm コマンドを実行したりすることが簡単にできます。 次の方法を使用できます。
+Visual Studio と npm の統合は、プロジェクトの種類によって異なります。
+* [Node.js](#nodejs-projects)
+* [ASP.NET Core](#aspnet-core-projects)
+* [フォルダーを開く (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
+
+> [!Important]
+> npm では、プロジェクト ルートに *node_modules* フォルダーと *package.json* が必要です。 お使いのアプリのフォルダー構造が異なる場合、Visual Studio を使用して npm パッケージを管理するには、フォルダー構造を変更する必要があります。
+
+> [!NOTE]
+> 既存の Node.js プロジェクトの場合は、 **[既存の Node.js コードから]** というソリューション テンプレートを使用して、プロジェクトで npm を有効にします。
+
+## <a name="nodejs-projects"></a>Node.js プロジェクト
+
+Node.js プロジェクトの場合は、次のいずれかの方法を使用します。
 * [ソリューション エクスプローラーからパッケージをインストールする](#npmInstallWindow)
 * [ソリューション エクスプローラーからインストール済みのパッケージを管理する](#solutionExplorer)
 * [Node.js 対話型ウィンドウで `.npm` コマンドを使用する](#interactive)
 
 これらの機能は連動し、プロジェクト システムやプロジェクトの *package.json* ファイルによって同期します。
 
-> [!Important]
-> NPM では、プロジェクト ルートに *node_modules* フォルダーと *package.json* が必要です。 お使いのアプリのフォルダー構造が異なる場合、Visual Studio を使用して npm パッケージを管理するには、フォルダー構造を更新する必要があります。
+### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a> ソリューション エクスプローラーからパッケージをインストールする (Node.js)
 
-> [!NOTE]
-> 既存の NPM プロジェクトの場合は、**既存の Node.js コードから**というソリューション テンプレートを使用します。
-
-## <a name="npmInstallWindow"></a> ソリューション エクスプローラーからパッケージをインストールする
-
-npm パッケージをインストールする最も簡単な方法は、npm パッケージ インストール ウィンドウを使用することです。 このウィンドウにアクセスするには、プロジェクトの **npm** ノードを右クリックし、 **[新しい npm パッケージのインストール]** を選択します。
+Node.js プロジェクトの場合、npm パッケージをインストールする最も簡単な方法は、npm パッケージ インストール ウィンドウを使用することです。 このウィンドウにアクセスするには、プロジェクトの **npm** ノードを右クリックし、 **[新しい npm パッケージのインストール]** を選択します。
 
 ![ソリューション エクスプローラーから新しい npm パッケージをインストールする](../javascript/media/solution-explorer-install-package.png)
 
@@ -51,28 +58,31 @@ npm パッケージをインストールする最も簡単な方法は、npm パ
 * **[選択したバージョン]** - インストールするパッケージのバージョンを選択します。
 * **[他の npm 引数]** - 他の標準 npm 引数を指定します。 たとえば、`@~0.8` のようなバージョン値を入力し、バージョン リストでは利用できない特定のバージョンをインストールできます。
 
-インストールの進捗状況を [出力] ウィンドウの npm タブで確認できます。 これには時間がかかる場合があります。
+インストールの進捗状況を **[出力]** ウィンドウの **npm** 出力で確認できます。 これには時間がかかる場合があります。
+
+![npm 出力](../javascript/media/npm-output.png)
 
 > [!TIP]
 > 関心があるスコープを検索クエリの前に付加するとスコープ パッケージを検索できます。たとえば、mocha の TypeScript 定義ファイルを探すには「`@types/mocha`」と入力します。 また、TypeScript の型定義をインストールするとき、npm 引数フィールドに `@ts2.6` を追加すると、ターゲットの TypeScript バージョンを指定できます。
 
-## <a name="solutionExplorer"></a>ソリューション エクスプローラーでインストール済みのパッケージを管理する
+### <a name="manage-installed-packages-in-solution-explorer-nodejs"></a><a name="solutionExplorer"></a>ソリューション エクスプローラーでインストール済みのパッケージを管理する (Node.js)
 
 npm パッケージはソリューション エクスプローラーに表示されます。 **npm** ノードの下にあるエントリは、*package.json* ファイルの依存関係を模倣します。
 
 ![npm パッケージを検索する](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>パッケージ ステータス
+
 * ![インストール済みのパッケージ](../javascript/media/installed-npm.png) - インストールされ、package.json のリストに入っている
 * ![無関係なパッケージ](../javascript/media/extraneous-npm.png) - インストールされているが、package.json のリストで明示されていない
 * ![足りないパッケージ](../javascript/media/missing-npm.png) - インストールされていないが、package.json のリストに入っている
 
 パッケージ ノードまたは **npm** ノードを右クリックし、次のいずれかのアクションを行います。
-* **package.json** のリストに入っている*足りないパッケージをインストールする*
+* *package.json* のリストに入っている**足りないパッケージをインストールする**
 * 最新バージョンに**パッケージを更新する**
 * **パッケージをアンインストールし**、*package.json* から削除する
 
-## <a name="interactive"></a>Node.js 対話型ウィンドウで .npm コマンドを使用する
+### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>Node.js 対話型ウィンドウで .npm コマンドを使用する (Node.js)
 
 Node.js 対話型ウィンドウで `.npm` コマンドを使用して npm コマンドを実行することもできます。 Node.js 対話型ウィンドウを開くには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[Node.js 対話型ウィンドウを開く]** を選択します。
 
@@ -86,3 +96,51 @@ Node.js 対話型ウィンドウで `.npm` コマンドを使用して npm コ�
 
  > [!Tip]
  > プロジェクトに package.json ファイルが含まれない場合、`.npm init -y` を使用し、新しい package.json ファイルを既定のエントリで作成します。
+
+ ## <a name="aspnet-core-projects"></a>ASP.NET Core プロジェクト
+
+ASP.NET Core プロジェクトなどのプロジェクトの場合は、プロジェクトで npm サポートを統合し、npm を使用してパッケージをインストールすることができます。
+* [npm サポートをプロジェクトに追加する](#npmAdd)
+* [package.json を使用してパッケージをインストールする](#npmInstallPackage)
+
+>[!NOTE]
+> ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
+
+### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> npm サポートをプロジェクトに追加する (ASP.NET Core)
+
+プロジェクトに *package.json* ファイルがまだ含まれていない場合は、package.json ファイルをプロジェクトに追加することで、npm サポートを有効にすることができます。
+
+1. ファイルを追加するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[追加]**  >  **[新しい項目]** を選択します。 **[npm 構成ファイル]** を選択し、既定の名前を使用して、 **[追加]** をクリックします。
+
+   ![package.json をプロジェクトに追加する](../javascript/media/npm-add-package-json.png)
+
+1. *package.json* の `dependencies` または `devDependencies` セクションに 1 つまたは複数の npm パッケージを含めます。 たとえば、ファイルに次の内容を追加できます。
+
+   ```json
+   "devDependencies": {
+      "gulp": "4.0.2",
+      "@types/jquery": "3.3.33"
+   }
+   ```
+
+ファイルを保存すると、Visual Studio によってソリューション エクスプローラーの **[依存関係] / [npm]** ノードの下にパッケージが追加されます。 ノードが表示されない場合は、 **[package.json]** を右クリックし、 **[パッケージの復元]** を選択します。
+
+>[!NOTE]
+> 場合によっては、ソリューション エクスプローラーで、npm パッケージが *package.json* と同期されていないことが示される可能性があります。これは、[ここ](https://github.com/aspnet/Tooling/issues/479)で説明されている既知の問題のためです。 たとえば、パッケージのインストール時に、それがインストールされていないと表示される場合があります。 ほとんどの場合、この記事で先に説明したように、*package.json* を削除し、Visual Studio を再起動して、*package.json* ファイルを再度追加することで、ソリューション エクスプローラーを更新できます。
+
+### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>package.json を使用してパッケージをインストールする (ASP.NET Core)
+
+npm が含まれているプロジェクトでは、`package.json` を使用して npm パッケージを構成できます。 ソリューション エクスプローラーで npm ノードを右クリックし、 **[Open package.json]\(package.json を開く\)** を選択します。
+
+![npm パッケージを検索する](../javascript/media/npm-add-package.png)
+
+*package.json* の IntelliSense を使用すると、npm パッケージの特定のバージョンを選択できます。
+
+![npm パッケージを検索する](../javascript/media/npm-add-package-intellisense.png)
+
+ファイルを保存すると、Visual Studio によってソリューション エクスプローラーの **[依存関係] / [npm]** ノードの下にパッケージが追加されます。 ノードが表示されない場合は、 **[package.json]** を右クリックし、 **[パッケージの復元]** を選択します。
+
+パッケージをインストールするには数分かかる場合があります。 **[出力]** ウィンドウで **npm** 出力に切り替えて、パッケージのインストールの進捗状況を確認します。
+
+![npm 出力](../javascript/media/npm-output.png)
+

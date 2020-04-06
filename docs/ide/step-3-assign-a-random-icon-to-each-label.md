@@ -1,6 +1,6 @@
 ---
 title: '手順 3: 各ラベルへのランダムなアイコンの割り当て'
-ms.date: 11/04/2016
+ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579394"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472629"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>手順 3: 各ラベルへのランダムなアイコンの割り当て
 
@@ -44,7 +44,7 @@ ms.locfileid: "77579394"
     > [!NOTE]
     > "iconLabel" および "control" という名前が使用されているのは、わかりやすくするためです。 これらの名前を任意の名前に置き換えても、コードはまったく同じように動作します (ただしループ内の各ステートメントで名前を変更する必要はあります)。
 
-     `AssignIconsToSquares()` メソッドは、TableLayoutPanel の各ラベル コントロールを反復処理し、それぞれに対し同じステートメントを実行します。 これらのステートメントは、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」からランダムなアイコンを取得します。 (リストに各アイコンを 2 つずつ含め、ランダムなラベル コントロールにアイコンのペアが割り当てられるようにしたのはこのためです)。
+     `AssignIconsToSquares()` メソッドは、TableLayoutPanel の各ラベル コントロールを反復処理し、それぞれに対し同じステートメントを実行します。 これらのステートメントは、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」をご覧ください。 これらの各アイコンは Webdings フォントの文字であるため、このメソッドではテキストとして表現されます。 ランダムなラベル コントロールにアイコンのペアが割り当てられるように、リストに各アイコンを 2 つずつ含めています。
 
      `foreach` または `For Each` ループ内で実行されるコードを詳しく見てみましょう。 次に示しているのは前に示したコードの一部です。
 
@@ -55,7 +55,7 @@ ms.locfileid: "77579394"
 
      コード内にわからない部分があれば、コード要素の上にマウス ポインターを合わせると、関連するヒントが表示されます。 Visual Studio デバッガーを使用して、プログラムの実行中にコードの各行をステップ実行することもできます。 詳しくは、「[How Do I:Step with The Debugger in Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx)」 (操作方法: Visual Studio のデバッガーでステップ実行する) または「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」をご覧ください。
 
-3. ゲーム ボードをアイコンで埋めるには、プログラムが起動したらすぐに `AssignIconsToSquares()` メソッドを呼び出す必要があります。 C# を使用している場合は、**Form1**_constructor_ の `InitializeComponent()` メソッドの呼び出しのすぐ下にステートメントを追加し、フォームが新しいメソッドを呼び出してフォーム自体の設定後に表示されるようにします。 新しいオブジェクト (クラスや構造体など) を作成するときは、コンストラクターを呼び出します。 詳しくは、「[コンストラクター (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)」または「[コンストラクターとデストラクターの使用方法](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))」(Visual Basic の場合) をご覧ください。
+3. ゲーム ボードをアイコンで埋めるには、プログラムが起動したらすぐに `AssignIconsToSquares()` メソッドを呼び出す必要があります。 C# を使用している場合は、**Form1** "_コンストラクター_" の `InitializeComponent()` メソッドの呼び出しのすぐ下にステートメントを追加し、フォームが新しいメソッドを呼び出してフォーム自体の設定後に表示されるようにします。 新しいオブジェクト (クラスや構造体など) を作成するときは、コンストラクターを呼び出します。 詳しくは、「[コンストラクター (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)」または「[コンストラクターとデストラクターの使用方法](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))」(Visual Basic の場合) をご覧ください。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -67,17 +67,14 @@ ms.locfileid: "77579394"
     End Sub
     ```
 
-4. プログラムを保存し、実行します。 各ラベルに割り当てられたランダムなアイコンを備えたフォームが表示されます。
+4. プログラムを保存し、実行します。 各ラベルに割り当てられたランダムなアイコンを備えたフォームが表示されます。 
 
-5. いったんプログラムを終了して、再び実行します。 次の図に示すように、各ラベルに別のアイコンが割り当てられています。
+5. いったんプログラムを終了して、再び実行します。 次の図に示すように、各ラベルに別のアイコンが割り当てられています。 
 
      ![ランダムなアイコンが表示された絵合わせゲーム](../ide/media/express_tut4step3.png)<br/>
 *ランダムなアイコンが表示された絵合わせゲーム*
 
      アイコンは、まだ非表示に設定されていないため、表示されています。 アイコンをプレーヤーに非表示にするには、各ラベルの **ForeColor** プロパティをその **BackColor** プロパティと同じ色に設定できます。
-
-    > [!TIP]
-    > ラベルのようなコントロールを非表示にする別の方法は、**Visible** プロパティを **False** に設定することです。
 
 6. アイコンを非表示にするには、プログラムを停止し、`For Each` ループ内のコードのコメント行からコメント記号を削除します。
 

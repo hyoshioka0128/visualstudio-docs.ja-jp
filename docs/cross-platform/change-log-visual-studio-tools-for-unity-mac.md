@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771544"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232920"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="2520"></a>2.5.2.0
+
+リリース日: 2020 年 3 月 23 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **デバッガー:**
+
+  - アタッチ時のスレッドの登録を修正しました。
+
+## <a name="2510"></a>2.5.1.0
+
+リリース日: 2020 年 3 月 3 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 用のサプレッサーが追加されました。 Invoke、InvokeRepeating、StartCoroutine、または StopCoroutine で使用されるプライベート メソッドを未使用としてマークすることはできません。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - OnDrawGizmos と OnDrawGizmosSelected のドキュメントを修正しました。
+
+- **評価:**
+
+  - ラムダ引数の検査を修正しました。
+
+## <a name="2501"></a>2.5.0.1
+
+リリース日: 2020 年 2 月 19 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) の不適切なメッセージの署名に対する診断チェックを修正しました。 複数のレベルの継承を含む型を検査すると、この診断は次のメッセージで失敗します: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`。
+
+## <a name="2500"></a>2.5.0.0
+
+リリース日: 2020 年 1 月 22 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - HLSL ファイルのサポートが追加されました。
+  
+  - 新しいフォルダー ダイアログ UI に切り替えました。
+  
+  - 設定を新しいアクセス可能なプロパティ グリッドに切り替えました。
+
+  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) 用のサプレッサーが追加されました。 `SerializeField` 属性を持つプライベート フィールドを未使用としてマークすることはできません。
+
+  - [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) 用のサプレッサーが追加されました。 `SerializeField` 属性を持つフィールドを未割り当てとしてマークすることはできません。  
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - プロジェクトの生成を修正しました (`GenerateTargetFrameworkMonikerAttribute` ターゲットは常に正しく配置されていませんでした)
+
+- **評価:**
+
+  - 文字列の評価を修正しました (ToString() 呼び出しを使用しません)
 
 ## <a name="2420"></a>2.4.2.0
 

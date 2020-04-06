@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568413"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472823"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [全般]
 
@@ -93,6 +93,10 @@ ms.locfileid: "75568413"
 ### <a name="show-structure-guide-lines"></a>構造のガイド線を表示する
 
 選択した場合、構造化されたコード ブロックに合う垂直線がエディターに表示され、個々のコード ブロックを簡単に識別できます。
+
+### <a name="show-file-health-indicator"></a>ファイルの正常性インジケーターの表示
+
+選択すると、エディターの左下隅にファイルの正常性インジケーターの状態 (エラー、警告) バーとコード クリーンアップ オプションが表示されます。
 
 ## <a name="see-also"></a>関連項目
 

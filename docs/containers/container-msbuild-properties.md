@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950696"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472672"
 ---
 # <a name="container-tools-build-properties"></a>コンテナー ツールのビルド プロパティ
 
@@ -41,7 +41,7 @@ ms.locfileid: "71950696"
 | DockerImageLabels | Docker イメージに適用される、既定のラベル セット。 | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 以降|
 | DockerFastModeProjectMountDirectory|**高速モード**では、このプロパティは、実行中のコンテナーにプロジェクト出力ディレクトリがボリュームマウントされる場所を制御します。|C:\app (Windows) または /app (Linux)|1.9.2 以降|
 | DockerfileBuildArguments | Docker ビルド コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
-| DockerfileContext | Docker イメージをビルドするときに使用される、既定のコンテキスト。 | Visual Studio によって設定されます。 |1.0.1872750 以降|
+| DockerfileContext | Dockerfile の相対パスとして Docker イメージをビルドするときに使用される既定のコンテキスト。 | Visual Studio によって設定されます。 |1.0.1872750 以降|
 | DockerfileFastModeStage | デバッグ モードでイメージをビルドするときに使用される、Dockerfile ステージ (つまり、ターゲット)。 | Dockerfile (ベース) で発見された最初のステージ |
 | DockerfileFile | プロジェクトのコンテナーをビルドまたは実行するために使用される、既定の Dockerfile について説明します。 これは、パスに置き換えることもできます。 | Dockerfile |1.0.1872750 以降|
 | DockerfileRunArguments | Docker 実行コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
