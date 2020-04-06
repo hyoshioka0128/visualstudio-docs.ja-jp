@@ -1,25 +1,25 @@
 ---
-title: IDebugAlias2::GetAppDomainId |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetAppDomainId
 - IDebugAlias2::GetAppDomainId
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b40d52c5eedf0defb845f1944acd166d48dca1ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aca8f2311b58fc7e73f9eb4f4c14f993c88b9a62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338171"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736418"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 アプリケーション ドメインの識別子を取得します。
@@ -40,13 +40,13 @@ int GetAppDomainId (
 
 ## <a name="parameters"></a>パラメーター
 `pappDomainId`\
-[out]アプリケーション ドメインの識別子を返します。
+[アウト]アプリケーション ドメイン識別子を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- アプリケーション ドメインの識別子変更、アプリケーションが再起動されるたびに、新しいアプリケーション ドメインが作成されます。
+ アプリケーションを再起動し、新しいアプリケーション ドメインが作成されるたびに、アプリケーション ドメイン識別子が変更されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)
