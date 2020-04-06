@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO |Microsoft Docs
+title: FIELD_INFO |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337696"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736887"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-この構造体には、ローカル変数、パラメーター、またはその他のフィールドについて説明します。
+# <a name="field_info"></a>FIELD_INFO
+この構造体は、ローカル変数、パラメーター、またはその他のフィールドを記述します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>メンバー
 `dwFields`\
-フラグの組み合わせ、 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)のどのメンバーが入力を指定する列挙体。
+FIELD_INFO_FIELDS[列挙体](../../../extensibility/debugger/reference/field-info-fields.md)のフラグの組み合わせで、どのメンバーが入力されているかを指定します。
 
 `bstrFullName`\
 フィールドの完全名。
@@ -61,17 +61,17 @@ public struct FIELD_INFO {
 フィールドの型。
 
 `dwModifiers`\
-フラグの組み合わせ、 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)フィールドを表す列挙体。
+フィールドを記述する[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)列挙体のフラグの組み合わせ。
 
 ## <a name="remarks"></a>Remarks
-この構造体に渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドでいっぱいになった場所。
+この構造体は[、GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドに渡され、そこで格納されます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE |Microsoft Docs
+title: BP_ERROR_TYPE |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319295"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738072"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 ブレークポイントのエラーの種類を指定します。
 
 ## <a name="syntax"></a>構文
@@ -62,49 +62,49 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>フィールド
 `BPET_NONE`\
-ブレークポイントのエラーがないを指定します。
+ブレークポイント エラーを指定しません。
 
 `BPET_TYPE_WARNING`\
-警告スタイルのブレークポイントのエラーを指定します。
+警告スタイルのブレークポイント エラーを指定します。
 
 `BPET_TYPE_ERROR`\
-ブレークポイント エラー エラー スタイルを指定します。
+エラー スタイルのブレークポイント エラーを指定します。
 
 `BPET_SEV_HIGH`\
-重要度の高いブレークポイントのエラーを指定します。
+重大度の高いブレークポイント エラーを指定します。
 
 `BPET_SEV_GENERAL`\
-中規模、重大度レベルのブレークポイントのエラーを指定します。
+重大度中のブレークポイント エラーを指定します。
 
 `BPET_SEV_LOW`\
-ブレークポイントの重大度の低いエラーを指定します。
+重大度低のブレークポイント エラーを指定します。
 
 `BPET_TYPE_MASK`\
-マスク スタイルのブレークポイントのエラーを指定します。
+マスク スタイルのブレークポイント エラーを指定します。
 
 `BPET_SEV_MASK`\
-重大度マスクのスタイルのブレークポイントのエラーを指定します。
+重大度マスク形式のブレークポイント エラーを指定します。
 
 `BPET_GENERAL_WARNING`\
-一般的な型の警告ブレークポイントのエラーを指定します。
+一般的な警告スタイルのブレークポイント エラーを指定します。
 
 `BPET_GENERAL_ERROR`\
-[全般]-エラー スタイルのブレークポイントのエラーを指定します。
+一般的なエラースタイルのブレークポイント エラーを指定します。
 
 `BPET_ALL`\
-すべてのブレークポイントのエラーの種類を指定します。
+すべてのブレークポイント エラーの種類を指定します。
 
 ## <a name="remarks"></a>Remarks
-これらの値は、演算と組み合わせることがあります`OR`に使用されると、`dwType`のメンバー、 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体。 パラメーターとして渡される、 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)メソッド。
+これらの値はビット単位`OR`で組み合わせ[、BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体の`dwType`メンバーに使用できます。 パラメーターとして渡されます、[列挙エラーブレークポイントメソッド](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)です。
 
-ブレークポイント エラーの種類は、型の重大度レベルで構成されます。 つまり、ブレークポイントのエラーの種類は、型だけではありません (たとえば、 `BPET_TYPE_ERROR`、) または重大度レベル (など`BPET_SEV_GENERAL`) を単独で。 `BPET_GENERAL_WARNING` `BPET_GENERAL_ERROR`警告およびエラーの一般的なブレークポイントの定義済みの値を指定します。
+ブレークポイント エラーの種類は、型と重大度で構成されます。 つまり、ブレークポイント エラーの種類は、`BPET_TYPE_ERROR`単独では、型 (、たとえば、、 など) または重大`BPET_SEV_GENERAL`度 (たとえば) ではありません。 `BPET_GENERAL_WARNING`一`BPET_GENERAL_ERROR`般的な警告およびエラーブレークポイントの定義済みの値を提供します。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

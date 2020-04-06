@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEngineProgram2:: Stop |Microsoft Docs'
+title: プログラム2::ストップ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506453"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730482"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
-このプログラムで実行されているすべてのスレッドを停止します。
+このプログラムで実行中のすべてのスレッドを停止します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,13 +38,13 @@ int Stop();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は `S_OK`を返します。それ以外の場合は、エラーコードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
-## <a name="remarks"></a>コメント
- このメソッドは、このプログラムがマルチプログラム環境でデバッグされているときに呼び出されます。 他のプログラムからの停止イベントを受信すると、このメソッドがこのプログラムで呼び出されます。 このメソッドの実装は非同期である必要があります。つまり、このメソッドから制御が戻る前に、すべてのスレッドを停止する必要はありません。 このメソッドの実装は、このプログラムでの[Causebreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)メソッドの呼び出しと同じように簡単に行うことができます。
+## <a name="remarks"></a>Remarks
+ このメソッドは、このプログラムがマルチプログラム環境でデバッグ中のときに呼び出されます。 他のプログラムから停止イベントを受信すると、このプログラムでこのメソッドが呼び出されます。 このメソッドの実装は非同期である必要があります。つまり、このメソッドが返される前にすべてのスレッドを停止する必要はありません。 このメソッドの実装は、このプログラムで[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)メソッドを呼び出すのと同じくらい簡単です。
 
- 実装者は、プログラムが停止したときに[IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md)を送信する必要があります。
+ プログラムが停止したときに、実装者[は IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md)を送信する必要があります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

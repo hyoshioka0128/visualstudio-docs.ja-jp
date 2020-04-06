@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetHostingProcessLanguage |Microsoft Docs
+title: Iデバッグプロセス3::Getホスティングプロセス言語 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetHostingProcessLanguage
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36098cf1fa19228962743856a814f0d094439edd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3b27be0850755a1a2808c8c5c758a3ad59b41d7e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313900"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723624"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
-このメソッドが戻る、`GUID`セットとしてへの呼び出しでこのプロセスの言語を表す[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)します。
+このメソッドは、`GUID`[この](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)プロセスの言語を表すを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int GetHostingProcessLanguage(
 
 ## <a name="parameters"></a>パラメーター
 `pguidLang`\
-[out]`GUID`このプロセスの言語。 `GUID_NULL` (C++) または`Guid.Empty`(c#)、言語が設定されていないことを意味します。
+[アウト]この`GUID`プロセスの言語の。 `GUID_NULL`(C++)`Guid.Empty`または (C#) は、言語が設定されないことを意味します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

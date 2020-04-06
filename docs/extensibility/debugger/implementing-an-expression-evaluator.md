@@ -1,36 +1,36 @@
 ---
-title: 式エバリュエーターの実装 |Microsoft Docs
+title: 式エバリュエーターの実装 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a1a0cb78036982923d20e39a3a4c32b288e459
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326212"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738545"
 ---
-# <a name="implement-an-expression-evaluator"></a>式エバリュエーターを実装します。
+# <a name="implement-an-expression-evaluator"></a>式エバリュエーターの実装
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- デバッグ エンジン (DE)、シンボル プロバイダー (SP)、バインダー オブジェクト、および、式エバリュエーター (EE) の間で複雑な相互作用は、式を評価します。 これら 4 つのコンポーネントは、1 つのコンポーネントによって実装され、別で使用されるインターフェイスで接続されます。
+ 式の評価は、デバッグ エンジン (DE)、シンボル プロバイダー (SP)、バインダー オブジェクト、および式エバリュエーター (EE) 間の複雑な相互作用です。 これらの 4 つのコンポーネントは、1 つのコンポーネントによって実装され、別のコンポーネントによって使用されるインターフェイスによって接続されます。
 
- EE は、文字列の形式で DE から式を取得および解析または評価します。 EE には、次のインターフェイスは、DE によって使用されますが実行されます。
+ EE は、DE から文字列の形式で式を取得し、それを解析または評価します。 EE は、DE によって消費される次のインターフェイスを実行します。
 
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
-  EE は、シンボルとオブジェクトの値を取得する、DE、によって提供されるバインダー オブジェクトを呼び出します。 EE、DE によって実装される次のインターフェイスを使用します。
+  EE は、DE によって提供されるバインダー・オブジェクトを呼び出して、シンボルとオブジェクトの値を取得します。 EE は、DE によって実装される次のインターフェイスを使用します。
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
@@ -46,9 +46,9 @@ ms.locfileid: "66326212"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  EE 実行[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)します。 `IDebugProperty2` ローカル変数、プリミティブ型、型の適切な情報が表示されますが、Visual Studio のオブジェクトなど、式の評価の結果を記述するためのメカニズムを提供、**ローカル**、**ウォッチ**、または**イミディ エイト**ウィンドウ。
+  EE は[IDebugProperty2 を](../../extensibility/debugger/reference/idebugproperty2.md)実行します。 `IDebugProperty2`には、ローカル変数、プリミティブ、または Visual Studio のオブジェクトなどの式の評価の**結果を記述**するための機構が用意されています。 **Locals** **Immediate**
 
-  SP は、情報の入力を求められたらときに、DE、EE に付与されます。 SP は、アドレスと、次のインターフェイスおよびその派生物などのフィールドを記述するインターフェイスを実行します。
+  SPは、情報を求めるとDEによってEEに渡されます。 SPは、次のインタフェースとその派生物など、アドレスとフィールドを記述するインタフェースを実行します。
 
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
@@ -56,10 +56,10 @@ ms.locfileid: "66326212"
 
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)
 
-  EE は、これらのインターフェイスのすべてを使用します。
+  EE は、これらのインターフェイスをすべて使用します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [式エバリュエーターの実装方法](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)式エバリュエーター (EE) の実装方法の 3 つの手順を定義します。
+ [式エバリュエーター実装戦略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)式エバリュエーター (EE) 実装戦略の 3 段階のプロセスを定義します。
 
 ## <a name="see-also"></a>関連項目
-- [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [CLR 式エバリュエーターの記述](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

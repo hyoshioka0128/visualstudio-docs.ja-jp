@@ -1,5 +1,5 @@
 ---
-title: デバッガーのコンポーネント |Microsoft Docs
+title: デバッガコンポーネント |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,60 +7,60 @@ helpviewer_keywords:
 - components [Visual Studio SDK], debugging
 - debugging [Debugging SDK], components
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28afdd7f12e7d83b042f5c705c85fa567fdbb979
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739017"
 ---
-# <a name="debugger-components"></a>デバッガーのコンポーネント
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーは、VSPackage として実装され、全体のデバッグ セッションを管理します。 デバッグ セッションには、次の要素が構成されています。
+# <a name="debugger-components"></a>デバッガー コンポーネント
+デバッガー[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は VSPackage として実装され、デバッグ セッション全体を管理します。 デバッグ セッションは、次の要素で構成されます。
 
-- **パッケージをデバッグするには。** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーがデバッグ中に関係なく同じユーザー インターフェイスを提供します。
+- **デバッグ パッケージ:** デバッガー[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、デバッグ対象に関係なく、同じユーザー インターフェイスを提供します。
 
-- **セッション デバッグ マネージャー (SDM):** 一貫性のあるプログラム インターフェイスを提供します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]さまざまなデバッグ エンジンの管理用のデバッガーです。 によって実装されている[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+- **セッション デバッグ マネージャー (SDM):** さまざまなデバッグ エンジンを管理するための[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]一貫したプログラム インターフェイスをデバッガーに提供します。 によって[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]実装されます。
 
-- **プロセス デバッグ マネージャー (PDM):** 実行中のすべてのインスタンスの管理、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、またはデバッグ中のすべてのプログラムの一覧。 によって実装されている[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+- **プロセス デバッグ マネージャー (PDM):** の実行中のすべてのインスタンス[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]について、デバッグ可能なすべてのプログラムの一覧を管理します。 によって[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]実装されます。
 
-- **デバッグ エンジン (DE)。** デバッグ中のプログラムの監視を担当、SDM を PDM は、実行中のプログラムの状態を通信し、プログラムの実行用メモリの状態のリアルタイム分析を提供するには、式エバリュエーターとシンボル プロバイダーとの対話と変数。 によって実装されます[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](の対応言語) と、独自のランタイムをサポートするサード パーティ ベンダー。
+- **デバッグ エンジン (DE):** デバッグ中のプログラムの監視、実行中のプログラムの状態を SDM および PDM に通信する、および式エバリュエーターとシンボル プロバイダーと対話して、プログラムのメモリと変数の状態をリアルタイムで分析する責任があります。 (サポートする言語の[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]場合) と、独自のランタイムをサポートするサードパーティ ベンダによって実装されます。
 
-- **式エバリュエーター (EE):** 変数と、プログラムが特定の時点で停止したときに、ユーザーが指定した式を動的に評価するためのサポートを提供します。 によって実装されます[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](の対応言語) とは自分の言語をサポートするサード パーティ ベンダー。
+- **式エバリュエーター (EE):** 特定の時点でプログラムが停止したときにユーザーが提供する変数と式を動的に評価するサポートを提供します。 (サポートする言語の[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]場合) と、独自の言語をサポートするサードパーティ ベンダによって実装されます。
 
-- **シンボル プロバイダー (SP):** 呼ばれますシンボル ハンドラーでは、マップ、プログラムのデバッグ シンボル、プログラムの実行中のインスタンス (ソース コード レベルのデバッグや式の評価) 意味のある情報を提供できるようにします。 によって実装されている[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](共通言語ランタイム [CLR] のシンボルと [PDB] プログラム データベース シンボル ファイルの形式)、デバッグ情報を保存する独自の専用メソッドを持つサード パーティ ベンダー。
+- **シンボルプロバイダー (SP):** シンボル ハンドラーとも呼ばれ、プログラムのデバッグ シンボルをプログラムの実行中のインスタンスにマップして、意味のある情報 (ソース コード レベルのデバッグや式の評価など) を提供できるようにします。 (共通言語ランタイム [CLR] シンボルとプログラム DataBase [PDB] シンボル ファイル形式) と、独自のデバッグ情報を格納する独自の方法を持つサード パーティ ベンダーによって[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]実装されます。
 
-  次の図は、Visual Studio デバッガーのこれらの要素間の関係を示します。
+  次の図は、Visual Studio デバッガーのこれらの要素間の関係を示しています。
 
-  ![コンポーネント デバッグの概要](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
+  ![デバッグ コンポーネントの概要](../../extensibility/debugger/media/dbugcompovrview.gif "ドバグコンポヴルビュー")
 
 ## <a name="in-this-section"></a>このセクションの内容
- [デバッグ パッケージ](../../extensibility/debugger/debug-package.md)、debug パッケージの実行について説明します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルし、すべての UI を処理します。
+ [デバッグ パッケージ](../../extensibility/debugger/debug-package.md)シェルで実行され、すべての UI[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を処理するデバッグ パッケージについて説明します。
 
- [プロセス デバッグ マネージャー](../../extensibility/debugger/process-debug-manager.md) PDM は、デバッグ可能なプロセス マネージャーの機能の概要を説明します。
+ [プロセス デバッグ マネージャー](../../extensibility/debugger/process-debug-manager.md)デバッグ可能なプロセスのマネージャーである PDM の機能の概要を示します。
 
- [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md) IDE に、デバッグ セッションの統合ビューを提供すると、SDM を定義します。 SDM は、DE を管理します。
+ [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)デバッグ セッションの統一されたビューを IDE に提供する SDM を定義します。 SDM は DE を管理します。
 
- [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)DE を提供するデバッグ サービスについて説明します。
+ [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)DE が提供するデバッグ サービスについて説明します。
 
- [操作モード](../../extensibility/debugger/operational-modes.md)IDE の操作に使用できる 3 つのモードの概要を説明します。 デザイン モード、実行モードと中断モード。 移行方法についても説明します。
+ [運用モード](../../extensibility/debugger/operational-modes.md)IDE が動作できる 3 つのモードの概要を示します。 また、移行メカニズムについても説明します。
 
- [式エバリュエーター](../../extensibility/debugger/expression-evaluator.md)実行時に、EE の目的について説明します。
+ [式エバリュエーター](../../extensibility/debugger/expression-evaluator.md)実行時の EE の目的について説明します。
 
- [シンボル プロバイダー](../../extensibility/debugger/symbol-provider.md) 、実装、シンボル プロバイダーの評価方法、変数や式について説明します。
+ [シンボル プロバイダー](../../extensibility/debugger/symbol-provider.md)実装時に、シンボル プロバイダーが変数と式を評価する方法について説明します。
 
- [ビジュアライザーとカスタム ビューアー入力](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)型のビジュアライザーをについて説明し、カスタム ビューアーは、どのような役割の両方をサポートしている、式エバリュエーターを再生します。
+ [型ビジュアライザーとカスタム ビューアー](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)型ビジュアライザーとカスタム ビューアーとは何か、および式エバリュエーターが両方をサポートする役割について説明します。
 
 ## <a name="related-sections"></a>関連項目
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)デバッグ アーキテクチャの主要な概念について説明します。
+ [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)デバッグアーキテクチャの主要な概念について説明します。
 
- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)DE が同時にして動作し、コード、ドキュメント、および式の評価コンテキスト内で方法について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。
+ [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)コード、ドキュメント、および式の評価コンテキスト内で DE が同時に動作する方法について説明します。 3 つのコンテキストのそれぞれについて、そのコンテキストに関連する場所、位置、または評価について説明します。
 
- [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)さまざまなプログラムの起動や式の評価などのタスクのデバッグへのリンクが含まれています。
+ [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)プログラムの起動や式の評価など、さまざまなデバッグ タスクへのリンクが含まれています。
 
 ## <a name="see-also"></a>関連項目
-- [開始するには](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+- [はじめに](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS | Microsoft Docs
+title: FIELD_INFO_FIELDS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337679"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736911"
 ---
-# <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-取得するには、どのような情報を指定します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
+# <a name="field_info_fields"></a>FIELD_INFO_FIELDS
+[オブジェクトに](../../../extensibility/debugger/reference/idebugfield.md)関して取得する情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -52,30 +52,30 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>フィールド
 `FIF_FULLNAME`\
-初期化/使用、`bstrFullName`フィールドに、 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体。
+FIELD_INFO構造体のフィールド`bstrFullName`を初期化/[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)使用します。
 
 `FIF_NAME`\
-初期化/使用、`bstrName`フィールドに、`FIELD_INFO`構造体。
+構造体のフィールドを`bstrName`初期化/使用`FIELD_INFO`します。
 
 `FIF_TYPE`\
-初期化/使用、`bstrType`フィールドに、`FIELD_INFO`構造体。
+構造体のフィールドを`bstrType`初期化/使用`FIELD_INFO`します。
 
 `FIF_MODIFIERS`\
-初期化/使用、`bstrModifiers`フィールドに、`FIELD_INFO`構造体。
+構造体のフィールドを`bstrModifiers`初期化/使用`FIELD_INFO`します。
 
 ## <a name="remarks"></a>Remarks
-これらの値がへの引数として渡されることも、 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)のどのフィールドを指定するメソッド、 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体が初期化するには。
+これらの値は、[初期化するFIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体のフィールドを指定する引数として[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドにも渡されます。
 
-これらの値が使用されることも、`dwFields`のメンバー、`FIELD_INFO`フィールドが使用し、有効なときは、構造体。
+これらの値は、`dwFields``FIELD_INFO`構造体のメンバーで使用され、どのフィールドが使用され、有効かを示すためにも使用されます。
 
-これらのフラグは、演算と組み合わせることがあります`OR`します。
+これらのフラグはビット単位`OR`で組み合わせることができる。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

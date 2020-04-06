@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes |Microsoft Docs
+title: IデバッグプロセスEx2::アプリシプリシブルプログラムノードを追加する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b75ef50107b44de8de6f65c5c4c9c6827e13426e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309498"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723399"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-このメソッドは、指定された各デバッグ エンジン (DE) のプログラムのノードを追加します。
+このメソッドは、指定された各デバッグ エンジン (DE) のプログラム ノードを追加します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>パラメーター
 `guidLaunchingEngine`\
-[in]`GUID`プログラムを起動するために使用するのには (および独自のプログラムのノードを追加すると見なされます) を DE の。
+[in]プログラム`GUID`の起動に使用される DE の (および独自のプログラム ノードを追加すると想定される) の。
 
 `rgguidSpecificEngines`\
-[in]配列の`GUID`の DEs ノードを追加するプログラムを選択します。
+[in]プログラム`GUID`ノードが追加される D の配列。
 
 `celtSpecificEngines`\
-[in]数`GUID`内、`rgguidSpecificEngines`配列。
+[in]配列内の`GUID`s`rgguidSpecificEngines`の数。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-- [プログラム ノード](../../../extensibility/debugger/program-nodes.md)各 DE の記載に追加`rgguidSpecificEngines`-起動エンジンを除外 (で指定されている`guidLaunchingEngine`)、プログラムを起動するときに、独自のプログラム ノードを追加すると見なされます。
+- [プログラムノード](../../../extensibility/debugger/program-nodes.md)は、プログラムの起動時に独自の`rgguidSpecificEngines`プログラムノードを追加すると想定される起動エンジンを`guidLaunchingEngine`除いて、(に示されている)に示された各DEに追加されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

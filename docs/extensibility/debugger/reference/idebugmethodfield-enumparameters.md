@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters |Microsoft Docs
+title: フィールド::列挙型パラメーター |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d455d380f66689cd2245070a7ef0bf9290a2455
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324217"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727198"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 メソッドのパラメーターの列挙子を作成します。
@@ -41,17 +41,17 @@ int EnumParameters(
 
 ## <a name="parameters"></a>パラメーター
 `ppParams`\
-[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)メソッドにパラメーターの一覧を表すオブジェクト。 それ以外の場合、パラメーターがない場合に null 値を返します。
+[アウト]メソッドに[対](../../../extensibility/debugger/reference/ienumdebugfields.md)するパラメーターの一覧を表すオブジェクトを返します。それ以外の場合は、パラメーターがない場合は null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は S_OK を返します。 またはパラメーターがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、S_OKを返すか、パラメーターがない場合はS_FALSEを返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 各要素は、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)さまざまな種類のパラメーターを表すオブジェクト。 呼び出す、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)正確にパラメーターのオブジェクトが表す種類を決定するには、各オブジェクトのメソッド。
+ 各要素は、さまざまな型のパラメーターを表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトです。 各オブジェクトに対して[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドを呼び出して、オブジェクトが表すパラメーターの種類を正確に判断します。
 
- パラメーターには、その変数の名前とその型の両方が含まれています。 クラスのメソッドの最初のパラメーターは、通常"this"ポインターです。
+ パラメーターには、変数名と型の両方が含まれます。 クラス メソッドの最初のパラメーターは、通常、"this" ポインターです。
 
- パラメーターの型は、必要な場合のみを呼び出す、 [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)メソッド。
+ パラメーターの型のみが必要な場合は[、EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

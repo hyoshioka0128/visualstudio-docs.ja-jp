@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbols |Microsoft Docs
+title: を使用して、シンボルを使用する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5194b13a1e92b6d6f8ed4b688ea7956cb3ed876e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 805db1f0b0722b75e7a047d8509ed9e63e4565c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309000"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733652"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-メモリ内の指定されたデバッグ シンボルを読み込みます。
+指定したデバッグ シンボルをメモリに読み込みます。
 
 ## <a name="syntax"></a>構文
 
@@ -53,25 +53,25 @@ int LoadSymbols(
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]Mondule の一意の識別子。
+[in]モンドゥルを表す一意の識別子です。
 
 `baseAddress`\
-[in]基本のメモリ アドレス。
+[in]ベース メモリ アドレス。
 
 `pUnkMetadataImport`\
-[in]シンボルのメタデータを含むオブジェクト。
+[in]シンボル メタデータを含むオブジェクト。
 
 `bstrModuleName`\
 [in]モジュールの名前。
 
 `bstrSymSearchPath`\
-[in]シンボル ファイルを検索するパス。
+[in]シンボル ファイルを検索するためのパス。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbols(

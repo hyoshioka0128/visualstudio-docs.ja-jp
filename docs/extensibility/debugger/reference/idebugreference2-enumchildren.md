@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren |Microsoft Docs
+title: を参照します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 432a3c25722ae7adb966efa6998c42680bd60307
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335773"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720625"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-参照の選択された子の一覧を取得します。 将来使用するために予約されています。
+参照の選択された子の一覧を取得します。 将来利用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -51,22 +51,22 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]フラグの組み合わせ、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 、列挙型のフィールドを指定する列挙体[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体入力します。
+[in]列挙された[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のフィールドを指定する[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列挙体のフラグの組み合わせ。
 
 `dwRadix`\
-[in]任意の数値情報を書式設定で使用する基数。
+[in]数値情報の書式設定に使用する基数。
 
 `dwAttribFilter`\
-[in]フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)と組み合わせて、フィルターとして使用される列挙体、`pszNameFilter`パラメーターを列挙するな構造を選択します。
+[in]列挙する構造体を選択する[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)`pszNameFilter`パラメーターと組み合わせてフィルターとして使用されるDBG_ATTRIB_FLAGS列挙体のフラグの組み合わせ。
 
 `pszNameFilter`\
-[in]"MyX"と組み合わせて使用などのフィルターを指定する文字列、`dwAttribFilter`パラメーターを列挙する構造を選択します。
+[in]列挙する構造体を選択するためにパラメーターと組み合わせて使用されるフィルターを`dwAttribFilter`指定する文字列 ("MyX" など)。
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
 
 `ppEnum`\
-[out]返します、 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)要求された子プロパティの一覧を格納しているオブジェクト。
+[アウト]要求された[子](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)プロパティの一覧を含むオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

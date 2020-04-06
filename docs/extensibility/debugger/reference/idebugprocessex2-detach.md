@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugプロセスEx2::Dエタッハ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723357"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-このメソッドは、セッションがプロセスのデバッグで不要になったをプロセスに通知します。
+このメソッドは、セッションがプロセスをデバッグしなくなったことをプロセスに通知します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>パラメーター
 `pSession`\
-[in]このプロセスからデタッチするセッションを一意に識別する値。
+[in]このプロセスをデタッチするセッションを一意に識別する値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- インターフェイスが渡された`pSession`は cookie としてのみ扱うは、このプロセスにアタッチされた元セッション デバッグ マネージャーを一意に識別する値。 指定されたインターフェイスのメソッドのいずれも機能します。
+ 渡される`pSession`インターフェイスは、Cookie としてのみ扱われるため、このプロセスに最初にアタッチされたセッション デバッグ マネージャーを一意に識別する値です。指定されたインターフェイス上のメソッドはどれも機能しません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

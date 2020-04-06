@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON |Microsoft Docs
+title: BP_UNBOUND_REASON |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350552"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737777"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-ブレークポイントがバインドされた理由を説明します。
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
+ブレークポイントがバインドされなかった理由を示します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,26 +48,26 @@ public enum enum_BP_UNBOUND_REASON {
 
 ## <a name="fields"></a>フィールド
 `BPUR_UNKNOWN`\
-不明な理由です。
+その理由は不明です。
 
 `BPUR_CODE_UNLOADED`\
 ブレークポイントを含むコードがアンロードされました。
 
 `BPUR_BREAKPOINT_REBIND`\
-ブレークポイントが別の場所にバインドされています。 編集後に発生したり、ブレークポイントに移動したとき、またはファイル パスが無効になっているブレークポイントがバインドされている場合は、操作を続行します。
+ブレークポイントが別の場所に再バインドされました。 これは、ブレークポイントが移動したとき、または無効になったパスを持つファイルにブレークポイントがバインドされているときに、エディット コンティニュ操作の後に発生します。
 
 `BPUR_ BREAKPOINT_ERROR`\
-ブレークポイントを判定して、バインド後にエラーが発生されます。 これは管理対象のブレークポイント条件を持つは無効になります。
+ブレークポイントは、バインド後にエラーと判断されます。 これは、条件が無効になったマネージ ブレークポイントに発生します。
 
 ## <a name="remarks"></a>Remarks
-によって返される、 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)メソッド。
+[メソッドによって](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)返されます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

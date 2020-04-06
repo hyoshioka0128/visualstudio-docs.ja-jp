@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments |Microsoft Docs
+title: バインダー3::GetType引数 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d301dbb99e88ba4552ad59d9116f64dc032371
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330742"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735690"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 このメソッドは、このオブジェクトに関連付けられている引数の型の一覧を取得します。
@@ -50,19 +50,19 @@ int GetTypeArguments(
 [in]引数の型を取得する前にスキップするフィールドの数。
 
 `count`\
-[in]返される引数のフィールドの数 (ものサイズを指定します、`ppFields`配列)。
+[in]返す引数フィールドの数 (`ppFields`配列のサイズも指定)。
 
 `ppFields`\
-[入力、出力]このメソッドの戻り値の入力フィールドの配列。
+[イン、アウト]このメソッドの戻り値に入力されるフィールドの配列。
 
 `pFetched`\
-[out]\(省略可能)引数の数は、実際に返されるフィールドを入力します。
+[アウト]\(省略可能) 実際に返される引数型フィールドの数。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 引数の型の数を事前に取得できる[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)します。
+ 引数の型の数は、前もって[取得](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

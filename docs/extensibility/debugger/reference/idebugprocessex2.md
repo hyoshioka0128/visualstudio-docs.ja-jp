@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Microsoft Docs
+title: をクリックして作業を開始する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c27a03a09a6073ebab8d7a2dd5f60218066d474
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311600"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723331"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-このインターフェイスには、セッション デバッグ マネージャー (SDM) へのアタッチまたはプロセスからデタッチしていますが、プロセスを通知することができます。
+このインターフェイスを使用すると、セッション デバッグ マネージャー (SDM) は、アタッチまたはプロセスから切り離されているプロセスを通知します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,37 +28,37 @@ ms.locfileid: "66311600"
 IDebugProcessEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- カスタム ポート サプライヤーと同じオブジェクトでこのインターフェイスを実装する、 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)インターフェイスには。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ カスタム ポート サプライヤーは[、IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)インターフェイスと同じオブジェクトにこのインターフェイスを実装して、次の操作を行います。
 
-- プロセスに接続されているセッションの追跡をサポート
+- プロセスに接続されたセッションの追跡をサポート
 
-- サポートのオート アタッチに複数のデバッグ エンジン
+- 複数のデバッグ エンジンで自動アタッチをサポート
 
-  カスタム ポート サプライヤーは、選択した場合、このインターフェイスを実装できます。
+  カスタム ポートサプライヤーは、このインターフェイスを実装できます (選択した場合)。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
+## <a name="notes-for-callers"></a>発信者向けのメモ
 
-- SDM コール[QueryInterface](/cpp/atl/queryinterface)上、`IDebugProcess2`をこのインターフェイスを取得するインターフェイス。
+- SDM は[QueryInterface](/cpp/atl/queryinterface)、このインターフェイスを`IDebugProcess2`取得するインターフェイスでクエリ インターフェイスを呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugProcessEx2`します。
+ 次の表に`IDebugProcessEx2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|セッションがプロセスをデバッグして今すぐ、プロセスに通知します。|
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|プロセスにセッションがプロセスのデバッグで不要になったことを通知します。|
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|デバッグ エンジンの一覧については、プログラムのノードを追加します。|
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|セッションがプロセスをデバッグしていることをプロセスに通知します。|
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|セッションがプロセスをデバッグしなくなったことをプロセスに通知します。|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|デバッグ エンジンの一覧のプログラム ノードを追加します。|
 
 ## <a name="remarks"></a>Remarks
- このインターフェイスは、SDM とプロセスの間にプライベートです。
+ このインターフェイスは、SDM とプロセスの間でプライベートです。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー:Portpriv.h
+ ヘッダー: ポートプリフ.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
