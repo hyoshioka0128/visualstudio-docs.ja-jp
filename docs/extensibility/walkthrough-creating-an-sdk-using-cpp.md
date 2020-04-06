@@ -1,81 +1,81 @@
 ---
-title: 'チュートリアル: C++ を使用して SDK の作成 |Microsoft Docs'
+title: 'チュートリアル: C++ を使用して SDK を作成する |マイクロソフトドキュメント'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a60194c6512b67e1e3e90389b0221b6cdb8a5226
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 65643e65490eacb79eea4d76aa49ff10d6cccf66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697628"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>チュートリアル: C++ を使用して、SDK を作成します。
-このチュートリアルでは、ネイティブ C++ 数値演算ライブラリを SDK パッケージとして、Visual Studio Extension (VSIX)、SDK を作成し、それを使用して、アプリを作成する方法を示します。 このチュートリアルは、次の手順に分かれています。
+# <a name="walkthrough-create-an-sdk-using-c"></a>チュートリアル: C++ を使用して SDK を作成する
+このチュートリアルでは、ネイティブ C++ 数学ライブラリ SDK を作成し、その SDK を Visual Studio 拡張機能 (VSIX) としてパッケージ化し、それを使用してアプリを作成する方法を示します。 このチュートリアルは、次の手順に分かれています。
 
-- [ネイティブと Windows ランタイム ライブラリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [ネイティブ ライブラリと Windows ランタイム ライブラリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
-- [NativeMathVSIX 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
+- [拡張プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
 - [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+ このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 
-## <a name="createClassLibrary"></a> ネイティブと Windows ランタイム ライブラリを作成するには
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>ネイティブ ライブラリと Windows ランタイム ライブラリを作成するには
 
-1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、[**ファイル] を** > クリックして **[新しい** > **プロジェクト**] をクリックします。
 
-2. テンプレートの一覧で  **Visual C** > **Windows ユニバーサル**を選び、 **DLL (Windows ユニバーサル アプリ)** テンプレート。 **名前**ボックスで、指定`NativeMath`、選択し、 **OK**ボタン。
+2. テンプレートの一覧で **、[Visual C++** > **Windows ユニバーサル**] を展開し **、DLL (Windows ユニバーサル アプリ)** テンプレートを選択します。 [**名前]** ボックスで`NativeMath`を指定し **、[OK] をクリックします**。
 
-3. Update *NativeMath.h*次のコードに一致するようにします。
+3. 次のコードに一致するように*NativeMath.h*を更新します。
 
      [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
 
-4. Update *NativeMath.cpp*このコードのようにします。
+4. 次のコードに一致するように*NativeMath.cpp*を更新します。
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加** > **新しいプロジェクト**.
+5. **ソリューション エクスプローラー**で、ソリューション **'NativeMath'** のショートカット メニューを開き、[**新しいプロジェクト**の**追加** > ] をクリックします。
 
-6. テンプレートの一覧で展開**Visual C**、クリックして、 **Windows ランタイム コンポーネント**テンプレート。 **名前**ボックスで、指定`NativeMathWRT`、選択し、 **OK**ボタン。
+6. テンプレートの一覧で **、[Visual C++]** を展開し **、[Windows ランタイム コンポーネント]** テンプレートを選択します。 [**名前]** ボックスで`NativeMathWRT`を指定し **、[OK] をクリックします**。
 
-7. Update *Class1.h*このコードのようにします。
+7. *Class1.h*を次のコードと一致するように更新します。
 
      [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
 
-8. Update *Class1.cpp*このコードのようにします。
+8. *Class1.cpp*をこのコードと一致するように更新します。
 
      [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
 
 9. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
-## <a name="createVSIX"></a> NativeMathVSIX 拡張機能プロジェクトを作成するには
+## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a>拡張プロジェクトを作成するには
 
-1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加** > **新しいプロジェクト**.
+1. **ソリューション エクスプローラー**で、ソリューション **'NativeMath'** のショートカット メニューを開き、[**新しいプロジェクト**の**追加** > ] をクリックします。
 
-2. テンプレートの一覧で  **Visual c#**  > **拡張**、し、 **VSIX プロジェクト**します。 **名前**ボックスで、指定**NativeMathVSIX**、選択し、 **OK**ボタン。
+2. テンプレートの一覧で **、[Visual C#** > **の機能拡張**] を展開し **、[VSIX プロジェクト**] を選択します。 [**名前]** ボックス**で、NativeMathVSIX**を指定し **、[OK]** ボタンをクリックします。
 
-3. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**source.extension.vsixmanifest**を選び、**コードの表示**します。
+3. **ソリューション エクスプローラー**で **、source.extension.vsixmanifest**のショートカット メニューを開き、[**コードの表示**] をクリックします。
 
-4. 次の XML を使用すると、既存の XML を置換できます。
+4. 既存の XML を置き換えるには、次の XML を使用します。
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **NativeMathVSIX**プロジェクトを選び、**追加** > **新しい項目の**.
+5. **ソリューション エクスプローラー**で **、NativeMathVSIX**プロジェクトのショートカット メニューを開き、[**Add** > **新しい項目**の追加] をクリックします。
 
-6. 一覧で**Visual c# アイテム**、展開**データ**、し、 **XML ファイル**します。 **名前**ボックスで、指定`SDKManifest.xml`、選択し、 **OK**ボタン。
+6. **Visual C# の項目**の一覧で、[**データ**] を展開し **、[XML ファイル**] を選択します。 [**名前]** ボックスで`SDKManifest.xml`を指定し **、[OK] をクリックします**。
 
-7. ファイルの内容を置き換えるには、この XML を使用します。
+7. この XML を使用して、ファイルの内容を置き換えます。
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
-8. **ソリューション エクスプ ローラー**、 **NativeMathVSIX**プロジェクトで、このフォルダー構造を作成します。
+8. **ソリューション エクスプローラー**の**NativeMathVSIX**プロジェクトの下に、次のフォルダー構造を作成します。
 
     ```xml
     \DesignTime
@@ -92,87 +92,87 @@ ms.locfileid: "66312697"
                 \Neutral
     ```
 
-9. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**ファイル エクスプ ローラーでフォルダーを開く**します。
+9. **ソリューション エクスプローラー**で、**ソリューション 'NativeMath'** のショートカット メニューを開き、[**エクスプローラーでフォルダーを開く**] をクリックします。
 
-10. **ファイル エクスプ ローラー**、コピー *$SolutionRoot$\NativeMath\NativeMath.h*、し、**ソリューション エクスプ ローラー**下で、 **NativeMathVSIX**プロジェクトで貼り付けることで、 *$SolutionRoot$ \NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\\* フォルダー。
+10. **ファイル エクスプローラー**で *、$SolutionRoot \\NativeMath\NativeMath.h*をコピーし、**ソリューション エクスプローラー**の**NativeMathVSIX**プロジェクトの下に *、$SolutionRoot$\NativeMathVSIX\DesignTime\共通構成\ニュートラル\\\インクルード*フォルダーに貼り付けます。
 
-     コピー *$SolutionRoot$\Debug\NativeMath\NativeMath.lib*に貼り付けると、 *$SolutionRoot$ \NativeMathVSIX\DesignTime\Debug\x86\\* フォルダー。
+     *$SolutionRootを*コピーし *、$SolutionRoot$\NativeMathVSIX\デザインタイム\デバッグ\x86\\*フォルダーに貼り付けます。
 
-     コピー *$SolutionRoot$\Debug\NativeMath\NativeMath.dll*貼り付けます、 *$SolutionRoot$ \NativeMathVSIX\Redist\Debug\x86\\* フォルダー。
+     *$SolutionRoot\デバッグ\ネイティブ数学\ネイティブ数学.dll*をコピーし *、$SolutionRoot$\NativeMathVSIX\Redist\デバッグ\x86\\*フォルダーに貼り付けます。
 
-     コピー *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.dll*貼り付けます、 *$SolutionRoot$ \NativeMathVSIX\Redist\Debug\x86*フォルダー。
-     コピー *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.winmd*貼り付けます、 *$SolutionRoot$ \NativeMathVSIX\References\CommonConfiguration\Neutral*フォルダー。
+     *$SolutionRoot\デバッグ\ネイティブ数学WRT\ネイティブMathWRT.dll*をコピーし *、$SolutionRoot$\NativeMathVSIX\Redist\デバッグ\x86*フォルダーに貼り付けます。
+     *$SolutionRoot\デバッグ\ネイティブ数学WRT\ネイティブMathWRT.winmd*をコピーし *、$SolutionRoot$\NativeMathVSIX\参照\共通構成\ニュートラル*フォルダーに貼り付けます。
 
-     コピー *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.pri*貼り付けます、 *$SolutionRoot$ \NativeMathVSIX\References\CommonConfiguration\Neutral*フォルダー。
+     *$SolutionRootを*コピーし *、$SolutionRoot$\NativeMathVSIX\参照\共通構成\ニュートラル*フォルダーに貼り付けます。
 
-11. *$SolutionRoot$ \NativeMathVSIX\DesignTime\Debug\x86\\* フォルダー、という名前のテキスト ファイルを作成する*NativeMathSDK.props*、し、これで、次の内容を貼り付けます。
+11. *$SolutionRoot\NativeMathVSIX\DesignTime\Debug\x86\\*フォルダーに *、NativeMathSDK.props*という名前のテキスト ファイルを作成し、その中に次の内容を貼り付けます。
 
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
 
-12. メニュー バーで、**ビュー** > **その他の Windows** > **プロパティ ウィンドウ**(キーボード。選択、 **F4**キー)。
+12. メニュー バーで、[**他のウィンドウ** > **のプロパティ ウィンドウ**を**表示** > ] (キーボード: **F4**キーを選択) を選択します。
 
-13. **ソリューション エクスプ ローラー**を選択、 **NativeMathWRT.winmd**ファイル。 **プロパティ**ウィンドウで、変更、**ビルド アクション**プロパティを**コンテンツ**、し、変更、 **VSIX に含める**プロパティ**True**します。
+13. **ソリューション エクスプローラー**で、**ネイティブ MathWRT.winmd**ファイルを選択します。 [**プロパティ]** ウィンドウで、[**ビルド アクション**] プロパティを **[コンテンツ]** に変更し **、[VSIX に含める**] プロパティを**True**に変更します。
 
-     この手順を繰り返します、 **NativeMath.h**ファイル。
+     この手順を **、ネイティブ Math.h**ファイルに対して繰り返します。
 
-     この手順を繰り返します、 **NativeMathWRT.pri**ファイル。
+     このプロセスを **、ネイティブMathWRT.pri**ファイルに対して繰り返します。
 
-     この手順を繰り返します、 **NativeMath.Lib**ファイル。
+     このプロセスを **、ネイティブの Math.Lib**ファイルに対して繰り返します。
 
-     この手順を繰り返します、 **NativeMathSDK.props**ファイル。
+     このプロセスを **、ネイティブMathSDK.props**ファイルに対して繰り返します。
 
-14. **ソリューション エクスプ ローラー**を選択、 **NativeMath.h**ファイル。 **プロパティ**ウィンドウで、変更、 **VSIX に含める**プロパティを**True**します。
+14. **ソリューション エクスプローラー**で **、NativeMath.h**ファイルを選択します。 [**プロパティ]** ウィンドウ**で、[VSIX に含める**] プロパティを **[True]** に変更します。
 
-     この手順を繰り返します、 **NativeMath.dll**ファイル。
+     このプロセスを**ネイティブMath.dll**ファイルに対して繰り返します。
 
-     この手順を繰り返します、 **NativeMathWRT.dll**ファイル。
+     このプロセスを **、ネイティブMathWRT.dll**ファイルに対して繰り返します。
 
-     この手順を繰り返します、 **SDKManifest.xml**ファイル。
+     このプロセスを**SDKManifest.xml**ファイルに対して繰り返します。
 
 15. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
-16. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **NativeMathVSIX**プロジェクトを選び、**ファイル エクスプ ローラーでフォルダーを開く**します。
+16. **ソリューション エクスプローラー**で **、NativeMathVSIX**プロジェクトのショートカット メニューを開き、[**エクスプローラーでフォルダーを開く**] をクリックします。
 
-17. **ファイル エクスプ ローラー**に移動し、 *$SolutionRoot$ \NativeMathVSIX\bin\Debug*フォルダー、および実行します*NativeMathVSIX.vsix*インストールを開始します。
+17. **エクスプローラー**で *、$SolutionRoot$\NativeMathVSIX\bin\Debug*フォルダーに移動し、次に*NativeMathVSIX.vsix*を実行してインストールを開始します。
 
-18. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を開きます。
+18. [**インストール**] ボタンをクリックし、インストールが完了するのを待ってから、Visual Studio を開きます。
 
-## <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>クラス ライブラリを使用するサンプル アプリを作成するには
 
-1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、[**ファイル] を** > クリックして **[新しい** > **プロジェクト**] をクリックします。
 
-2. テンプレートの一覧で  **Visual C** > **Windows ユニバーサル**選び**空のアプリ**。 **名前**ボックスで、指定**NativeMathSDKSample**、選択し、 **OK**ボタン。
+2. テンプレートの一覧で **、[Visual C++** > **Windows ユニバーサル**] を展開し、[**空のアプリケーション**] を選択します。 [**名前]** ボックス**で、NativeMathSDKSample**を指定し **、[OK]** ボタンをクリックします。
 
-3. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **NativeMathSDKSample**プロジェクトを選び、**追加** > **の参照**.
+3. **ソリューション エクスプローラー**で **、NativeMathSDKSample**プロジェクトのショートカット メニューを開き、[**参照**の**追加** > ] をクリックします。
 
-4. **参照の追加**ダイアログ ボックスで、参照型の一覧で、展開**ユニバーサル Windows**、し、**拡張**します。 最後に、選択、**ネイティブ Math SDK**チェック ボックスをオンにして、 **OK**ボタンをクリックします。
+4. [**参照の追加**] ダイアログ ボックスの参照の種類の一覧で、[**ユニバーサル Windows]** を展開し、[**拡張機能**] を選択します。 最後に、[**ネイティブ数学 SDK]** チェック ボックスをオンにし **、[OK] ボタン**をクリックします。
 
-5. NativeMathSDKSample のプロジェクトのプロパティを表示します。
+5. プロジェクトプロパティを表示します。
 
-    プロパティで定義されている*NativeMathSDK.props*参照を追加したときに適用しました。 プロパティを調べることによって適用されたことを確認できる、 **vc++ ディレクトリ**、プロジェクトのプロパティ**構成プロパティ**します。
+    参照を追加したときに *、NativeMathSDK.props*で定義したプロパティが適用されました。 プロジェクトの **[構成**プロパティ] の **[VC++ ディレクトリ]** プロパティを調べることで、プロパティが適用されたことを確認できます。
 
-6. **ソリューション エクスプ ローラー**オープン**MainPage.xaml**、し、次の XAML を使用して、そのコンテンツを置き換えます。
+6. **ソリューション エクスプローラー**で**MainPage.xaml**を開き、次の XAML を使用してコンテンツを置き換えます。
 
     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
 
-7. Update *Mainpage.xaml.h*このコードのようにします。
+7. このコードに一致するように*Mainpage.xaml.h*を更新します。
 
     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]
 
-8. Update *MainPage.xaml.cpp*このコードのようにします。
+8. 次のコードに一致するように*MainPage.xaml.cpp*を更新します。
 
      [!code-cpp[CreatingAnSDKUsingCppDemoApp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_10.cpp)]
 
-9. 選択、 **F5**キーをアプリを実行します。
+9. **F5**キーを押してアプリを実行します。
 
-10. アプリでは、任意の 2 つの数値を入力し、操作を選択し、、 **=** ボタンをクリックします。
+10. アプリで、任意の 2 つの数値を入力し、操作を選択**=** して、ボタンを選択します。
 
      正しい結果が表示されます。
 
-    このチュートリアルで作成して呼び出すために、拡張機能 SDK を使用、する方法を示しました、[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)]ライブラリと以外[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)]ライブラリ。
+    このチュートリアルでは、ライブラリと非[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)][!INCLUDE[wrt](../extensibility/includes/wrt_md.md)]ライブラリを呼び出すために、拡張 SDK を作成して使用する方法を示しました。
 
 ## <a name="next-steps"></a>次の手順
 
 ## <a name="see-also"></a>関連項目
-- [チュートリアル: C# または Visual Basic を使用して、SDK を作成します。](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
-- [ソフトウェア開発キットを作成します。](../extensibility/creating-a-software-development-kit.md)
+- [チュートリアル: C# または Visual Basic を使用して SDK を作成する](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
+- [ソフトウェア開発キットの作成](../extensibility/creating-a-software-development-kit.md)

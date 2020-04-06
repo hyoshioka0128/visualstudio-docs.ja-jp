@@ -1,20 +1,20 @@
 ---
-title: SDKReference 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: SDK リファレンス要素 (ビジュアル スタジオ テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720088"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700164"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 要素 (Visual Studio テンプレート)
 項目テンプレートが SDK 参照を使用することを指定します。
@@ -33,16 +33,16 @@ ms.locfileid: "72720088"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[参照](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
+|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。

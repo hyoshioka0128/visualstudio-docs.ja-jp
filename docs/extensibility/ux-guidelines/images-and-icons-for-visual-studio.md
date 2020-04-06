@@ -3,17 +3,17 @@ title: イメージとアイコンのビジュアルスタジオ |マイクロ�
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e449fb30bd95319a46d1db50da63778f6800a70
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: dfef803d2bffb19cc54974465c7892b4d68ff3d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301597"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699051"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio のイメージとアイコン
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>イメージの使用
@@ -102,7 +102,7 @@ ms.locfileid: "79301597"
 
 ### <a name="style-details"></a>スタイルの詳細
 
-#### <a name="layout"></a>[レイアウト]
+#### <a name="layout"></a>レイアウト
  標準の 16x16 アイコンに示すように、スタック要素:
 
  ![16 x 16 のアイコンのレイアウト スタック](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404-15_LayoutStack")<br />16 x 16 のアイコンのレイアウト スタック
@@ -258,7 +258,7 @@ ms.locfileid: "79301597"
 
 - IntelliSense 内の項目を区別する
 
-### <a name="accessibility"></a>アクセシビリティ
+### <a name="accessibility"></a>ユーザー補助
  Visual Studio の準拠ガイドラインでは、製品にチェックインされているすべてのアイコンが色とコントラストのアクセシビリティ要件を満たす必要があります。 ビジュアル言語パレットの色がテストされ、これらの要件を満たしています。
 
 #### <a name="color-inversion-for-dark-themes"></a>暗いテーマの色反転
@@ -289,7 +289,7 @@ ms.locfileid: "79301597"
 |中立|VS アクションブルー|00539C / 0,83,156|![見本 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |作成/新規|VS アクションオレンジ|C27D1A / 194,156,26|![見本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
-##### <a name="examples"></a>例
+##### <a name="examples"></a>使用例
  緑色は、「追加」、「実行」、「再生」、「検証」などのポジティブなアクション修飾子に使用されます。
 
 |||||

@@ -1,5 +1,5 @@
 ---
-title: 実験用インスタンス |Microsoft Docs
+title: 実験用インスタンス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 773581e7cf9e0f12f507dcd3c768d88724da9f80
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699041"
 ---
 # <a name="the-experimental-instance"></a>実験用インスタンス
-それに変わる可能性があるテストされていないアプリケーションから、Visual Studio 開発環境を保護するためには、VSSDK は実験に使用できる実験用の領域を提供します。 通常どおり、Visual Studio を使用して新しいアプリケーションを開発するが、この実験用インスタンスを使用して実行します。
+テストされていないアプリケーションから Visual Studio 開発環境を保護するために、VSSDK には実験用の領域があります。 通常どおり Visual Studio を使用して新しいアプリケーションを開発しますが、この実験用インスタンスを使用して実行します。
 
- VSIX パッケージを持っているすべてのアプリケーションでは、デバッグ モードで Visual Studio の実験用インスタンスを起動します。
+ VSIX パッケージを持つすべてのアプリケーションは、デバッグ モードで Visual Studio の実験用インスタンスを起動します。
 
- 特定のソリューションの外部の Visual Studio の実験用インスタンスを開始する場合は、コマンド ウィンドウで次のコマンドを実行します。
+ 特定のソリューションの外部で Visual Studio の実験用インスタンスを起動する場合は、コマンド ウィンドウで次のコマンドを実行します。
 
- " *\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
+ "*\<ビジュアル スタジオ インストール パス>* \Common7\IDE\devenv.exe" /ルートサフィックス Exp
 
 > [!NOTE]
-> 実験用インスタンスが下のレジストリに書き込まれる、`<version number>Exp`と`<version number>Exp_Config`ノード。 たとえば、Visual Studio 2015 の実験用のレジストリ領域は
+> 実験用インスタンスは、 および`<version number>Exp``<version number>Exp_Config`ノードの下のレジストリに書き込まれます。 たとえば、Visual Studio 2015 の実験用レジストリ領域は、
 >
 > `HKCU\Software\Microsoft\VisualStudio\14.0Exp` および `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
 
- 開発しているときに、実験用インスタンスで、拡張機能を実行することをお勧めします。 拡張機能をデプロイするときに、開発用インスタンスで実行されます。 アプリケーションの登録の詳細については、次を参照してください。 [Vspackage の登録](../extensibility/internals/registering-vspackages.md)します。
+ 拡張機能を開発中に実験用インスタンスで実行することをお勧めします。 拡張機能を配置すると、開発インスタンスで実行されます。 アプリケーションの登録の詳細については、「 [VSPackages](../extensibility/internals/registering-vspackages.md)の登録 」を参照してください。

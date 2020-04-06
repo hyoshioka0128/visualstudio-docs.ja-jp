@@ -1,35 +1,35 @@
 ---
-title: Web プロジェクト |Microsoft Docs
+title: Web プロジェクト |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8215241f93b0b796f2b1ad954b09d96fe6f493ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 23194ba5ad59a113e5599b7fe1f5f39bed557351
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323275"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703528"
 ---
 # <a name="web-projects"></a>Web プロジェクト
-Web プロジェクト システムでは、Web プロジェクトを作成するプロジェクト システムです。 Web プロジェクトは、Web アプリケーションを作成します。 などの従来のプログラミング言語を使用して Web ページをプログラミングできる[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]または[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]を収集し、ユーザーから情報を処理して、データベースに格納具合です。 関連付けられているコードを含む web ページは、スマート Web ページと呼ばれます。
+Web プロジェクト システムは、Web プロジェクトを作成するプロジェクト システムです。 Web プロジェクトは、次に Web アプリケーションを作成します。 や[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)][!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]などの従来のプログラミング言語を使用して Web ページをプログラミングし、ユーザーから情報を収集して処理したり、データベースに格納したりできます。 関連付けられたコードを含む Web ページは、スマート Web ページと呼ばれます。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [基本情報](../../extensibility/internals/web-project-essentials.md)
+- [Essentials](../../extensibility/internals/web-project-essentials.md)
 
- 重要な要素を表示します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web プロジェクト。
+ Web プロジェクトの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]重要な要素を示します。
 
 - [Web サイト サポート](../../extensibility/internals/web-site-support.md)
 
- 概要を示します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Web サイト プロジェクト。 Web サイト プロジェクトでは、各スマート Web ページの 1 つの実行可能ファイルを生成します。 場合は/App_Code フォルダー内のソース コード ファイルから追加の実行可能ファイルが生成されます。
+ Web サイト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトの概要を示します。 Web サイト プロジェクトでは、スマート Web ページごとに 1 つの実行可能ファイルが生成されます。 追加の実行可能ファイルは、/App_Code フォルダー内のソース コード ファイルから生成されます。
 
 ## <a name="related-sections"></a>関連項目
 - [プロジェクト](../../extensibility/internals/projects.md)
 
- 拡張する方法について説明します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクト システム。
+ プロジェクト システムを拡張する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]方法について説明します。

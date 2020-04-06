@@ -1,5 +1,5 @@
 ---
-title: TemplateID 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: テンプレート ID 要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <TemplateID> element [Visual Studio Templates]
 - TemplateID element [Visual Studio Templates]
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0e404921d1ed74db2a1f23117242f49a07206c2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718740"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699064"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 要素 (Visual Studio テンプレート)
-[Templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)要素によって項目テンプレートのグループに分類される項目テンプレートの識別子を指定します。
+[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)要素によって項目テンプレートのグループに分類される項目テンプレートの識別子を指定します。
 
- \<VSTemplate > \<TemplateData > \<TemplateID >
+ \<テンプレート>\<テンプレート\<データ> テンプレート ID>
 
 ## <a name="syntax"></a>構文
 
@@ -36,10 +36,10 @@ ms.locfileid: "72718740"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -48,14 +48,14 @@ ms.locfileid: "72718740"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|
 
 ## <a name="text-value"></a>テキスト値
- @No__t_1 要素によって項目テンプレートのグループに分類される項目テンプレートの識別子を表す `string`。
+ 要素`string`によって項目テンプレートのグループに分類される項目テンプレートの識別子を表す`TemplateGroupID`A。
 
 ## <a name="remarks"></a>Remarks
- `TemplateID` は、省略可能な要素です。
+ `TemplateID` は省略可能な要素です。
 
- .Vstemplate ファイルで `TemplateID` 要素が省略されている場合、 [Name](../extensibility/name-element-visual-studio-templates.md)要素がテンプレートの識別子として使用されます。
+ .vstemplate ファイルで要素を省略`TemplateID`した場合[、Name](../extensibility/name-element-visual-studio-templates.md)要素がテンプレートの識別子として使用されます。
 
- @No__t_0 要素の値は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects \\) と共に使用して、 **[新しい項目の追加]** ダイアログボックスに表示されるテンプレートをフィルター処理します。
+ 要素の値は、プロジェクト システム登録 (HKEY_LOCAL_MACHINE\SOFTWARE\VisualStudio\11.0\Projects)\\と共に使用され、[**新しい項目の追加**] ダイアログ ボックスに表示されるテンプレートをフィルター処理します。 `TemplateID`
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

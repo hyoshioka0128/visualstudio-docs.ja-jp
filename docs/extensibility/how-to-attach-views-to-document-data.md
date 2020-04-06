@@ -1,47 +1,47 @@
 ---
-title: '方法: ドキュメント データをビューのアタッチ |Microsoft Docs'
+title: '方法: ドキュメント データにビューを添付する |マイクロソフトドキュメント'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c42ccdb817ab4a7594922e90e9df3e345c693c11
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d8bd586a9d67996389f3cb6a2b0f13f0afec3bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340989"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711083"
 ---
-# <a name="how-to-attach-views-to-document-data"></a>方法: ドキュメント データへのビューをアタッチします。
-新しいドキュメント ビューがある場合は、既存のドキュメント データ オブジェクトにアタッチすることができます。
+# <a name="how-to-attach-views-to-document-data"></a>方法: ドキュメント データにビューを添付する
+新しいドキュメント ビューを使用している場合は、既存のドキュメント データ オブジェクトに添付できる場合があります。
 
-## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>既存のドキュメント データ オブジェクトにビューを割り当てることができるかどうかを判断するには
+## <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>既存のドキュメント データ オブジェクトにビューをアタッチできるかどうかを確認するには
 
 1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>を実装します。
 
-2. 実装で`IVsEditorFactory::CreateEditorInstance`、呼び出す`QueryInterface`IDE を呼び出すときに既存のドキュメント データ オブジェクトに、`CreateEditorInstance`実装します。
+2. `IVsEditorFactory::CreateEditorInstance`の実装で、IDE`QueryInterface`が実装を呼び出すときに、既存の`CreateEditorInstance`ドキュメント データ オブジェクトを呼び出します。
 
-    呼び出す`QueryInterface`で指定されている、既存のドキュメント データ オブジェクトを調べることができます、`punkDocDataExisting`パラメーター。
+    呼`QueryInterface`び出しを使用すると、パラメーターで指定されている既存のドキュメント`punkDocDataExisting`データ オブジェクトを調べることができます。
 
-    クエリを実行する必要があります、正確なインターフェイスはただしに、ステップ 4 で説明した、ドキュメントを開いているエディターによって異なります。
+    ただし、クエリを実行する必要があるインターフェイスは、手順 4 で説明したように、ドキュメントを開いているエディターによって異なります。
 
-3. 既存のドキュメント データ オブジェクトに適切なインターフェイスが見つからない場合は、ドキュメント データ オブジェクトが、エディターで互換性がないことを示す、エディターにエラー コードを返します。
+3. 既存のドキュメント データ オブジェクトに適切なインターフェイスが見つからない場合は、ドキュメント データ オブジェクトがエディターと互換性ないことを示すエラー コードをエディターに返します。
 
-    IDE の実装で<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>ドキュメントが別のエディターで開かれているし、終了するように要求するメッセージ ボックスを通知します。
+    IDE の実装では、ドキュメント<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>が別のエディタで開かっていることを示すメッセージ ボックスが表示され、ドキュメントを閉じるかどうかを確認するメッセージが表示されます。
 
-4. このドキュメントを閉じると場合、Visual Studio を呼び出して、エディター ファクトリ 2 回目にします。 この呼び出しで、`DocDataExisting`パラメーターが NULL です。 エディター ファクトリの実装は、独自のエディターで、ドキュメント データ オブジェクトを開くことができます。
+4. このドキュメントを閉じると、Visual Studio によってエディター ファクトリが 2 回目に呼び出されます。 この呼び出し`DocDataExisting`では、パラメーターは NULL に等しくなります。 エディター ファクトリの実装は、ドキュメント データ オブジェクトを独自のエディターで開くことができます。
 
    > [!NOTE]
-   > 既存のドキュメント データ オブジェクトを使用できるかどうかを確認するのに使用することもプライベート インターフェイスの実装に関する知識、実際へのポインターをキャストすることによって[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]プライベートな実装のクラス。 たとえば、すべての標準エディターの実装`IVsPersistFileFormat`から継承される<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>します。 そのため、呼び出すことができます`QueryInterface`の<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>、既存のドキュメント データ オブジェクトのクラス ID の実装と一致するかどうか、クラス ID、ドキュメント データ オブジェクトを使用することができます。
+   > 既存のドキュメント データ オブジェクトを操作できるかどうかを判断するには、プライベート実装の実際[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]のクラスへのポインターをキャストすることで、インターフェイス実装のプライベートな知識を使用することもできます。 たとえば、すべての標準エディタは、`IVsPersistFileFormat`から<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>継承する を実装します。 したがって、 を呼`QueryInterface`び<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>出し、既存のドキュメント データ オブジェクトのクラス ID が実装のクラス ID と一致する場合は、ドキュメント データ オブジェクトを操作できます。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- Visual Studio での実装を呼び出すときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッドに渡しますポインターで既存のドキュメント データ オブジェクトに、`punkDocDataExisting`パラメーターを 1 つが存在する場合。 返されるドキュメント データ オブジェクトを調べます`punkDocDataExisting`ドキュメント データ オブジェクトがこのトピックの手順の手順 4. でメモで説明したように、エディターの適切なかどうかを判断します。 適切な場合、エディター ファクトリで説明したように、データの 2 つ目のビューを提供する必要があります[ドキュメントの複数のビューをサポートして](../extensibility/supporting-multiple-document-views.md)します。 それ以外の場合は、適切なエラー メッセージを表示する必要がありますから。
+ Visual Studio は、メソッドの<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>実装を呼び出すときに、パラメーター内の既存のドキュメント データ`punkDocDataExisting`オブジェクトへのポインターを渡します (存在する場合)。 返されたドキュメント データ オブジェクト`punkDocDataExisting`を調べて、このトピックの手順 4 のメモに示すように、ドキュメント データ オブジェクトがエディターに適しているかどうかを確認します。 適切な場合は、「複数のドキュメント ビューをサポートする 」で説明したように、エディター ファクトリにデータの 2 番目の[ビューを提供する](../extensibility/supporting-multiple-document-views.md)必要があります。 表示されない場合は、適切なエラー メッセージが表示されます。
 
 ## <a name="see-also"></a>関連項目
-- [複数のドキュメント ビューをサポートします。](../extensibility/supporting-multiple-document-views.md)
-- [ドキュメント データとカスタム エディターでドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)
+- [複数のドキュメント ビューをサポート](../extensibility/supporting-multiple-document-views.md)
+- [カスタム エディターでのドキュメント データとドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)

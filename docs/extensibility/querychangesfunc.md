@@ -1,5 +1,5 @@
 ---
-title: QUERYCHANGESFUNC |Microsoft Docs
+title: クエリチェンジFUNC |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac0003d26296a25659debbab3352e4e37cbf2ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334399"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701634"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-これで使用されるコールバック関数、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)操作をファイル名のコレクションを列挙し、各ファイルの状態を確認します。
+これは、ファイル名のコレクションを列挙し、各ファイルの状態を決定するために[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作によって使用されるコールバック関数です。
 
- `SccQueryChanges`関数ポインター、およびファイルの一覧を指定、`QUERYCHANGESFUNC`コールバック。 ソース管理プラグインは、指定されたリストを列挙し、一覧内の各ファイル (このコールバック) を使用して状態を提供します。
+ この`SccQueryChanges`関数には、ファイルのリストとコールバックへのポインタが`QUERYCHANGESFUNC`与えられます。 ソース管理プラグインは、指定されたリストを列挙し、一覧内の各ファイルの状態を (このコールバックを介して) 提供します。
 
 ## <a name="signature"></a>署名
 
@@ -35,25 +35,25 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ```
 
 ## <a name="parameters"></a>パラメーター
- pvCallerData
+ 呼び出し元データ
 
-[in]`pvCallerData`に呼び出し元 (IDE) によって渡されるパラメーター [SccQueryChanges](../extensibility/sccquerychanges-function.md)します。 ソース管理プラグインには、この値のコンテンツに関する仮定は行いません。
+[in]呼`pvCallerData`び出し元 (IDE) から[SccQueryChanges](../extensibility/sccquerychanges-function.md)に渡されるパラメータ。 ソース管理プラグインは、この値の内容について想定しないでください。
 
- pChangesData
+ データを変更します。
 
-[in]ポインターを[QUERYCHANGESDATA 構造](#LinkQUERYCHANGESDATA)ファイルに対する変更を記述する構造体。
+[in]ファイルへの変更を記述する[QUERYCHANGESDATA 構造体](#LinkQUERYCHANGESDATA)構造体へのポインター。
 
 ## <a name="return-value"></a>戻り値
- IDE には、適切なエラー コードが返されます。
+ IDE は、適切なエラー コードを返します。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
-|SCC_OK|処理を続行します。|
+|SCC_OK|処理し続けます。|
 |SCC_I_OPERATIONCANCELED|処理を停止します。|
-|SCC_E_xxx|適切な SCC エラーは、処理を停止する必要があります。|
+|SCC_E_xxx|適切な SCC エラーは処理を停止する必要があります。|
 
-## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 構造体
- 各ファイルに渡された構造体は、次のようになります。
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a>クエリの変更データ構造
+ 各ファイルに渡される構造体は、次のようになります。
 
 ```cpp
 struct QUERYCHANGESDATA_A
@@ -75,26 +75,26 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- この構造体をバイト単位でのサイズでない dwSize します。
+ dwSize この構造体のサイズ (バイト単位)。
 
- lpFileName この項目の元のファイル名。
+ この項目の元のファイル名。
 
- dwChangeType ファイルのコードを示す状態。
+ dwChangeType ファイルの状態を示すコード:
 
 |コード|説明|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|変更内容を見分けることはできません。|
-|`SCC_CHANGE_UNCHANGED`|このファイルの名前が変更されていません。|
-|`SCC_CHANGE_DIFFERENT`|別の id を持つファイルがデータベースに同じ名前が存在します。|
-|`SCC_CHANGE_NONEXISTENT`|データベース内、またはローカル ファイルは存在しません。|
-|`SCC_CHANGE_DATABASE_DELETED`|ファイルは、データベースで削除します。|
-|`SCC_CHANGE_LOCAL_DELETED`|ファイルがローカルで削除されましたが、ファイルは、まだデータベースに存在します。 これを特定できない場合に返す`SCC_CHANGE_DATABASE_ADDED`します。|
-|`SCC_CHANGE_DATABASE_ADDED`|ファイルは、データベースに追加しますが、ローカルに存在しません。|
-|`SCC_CHANGE_LOCAL_ADDED`|ファイルはデータベースに存在しません、新しいローカル ファイルです。|
-|`SCC_CHANGE_RENAMED_TO`|ファイルの名前を変更またはとデータベースに移動`lpLatestName`します。|
-|`SCC_CHANGE_RENAMED_FROM`|ファイルの名前を変更または内からデータベースを移動`lpLatestName`。 これは、追跡するためにコストが高すぎる場合など、さまざまなフラグを返す`SCC_CHANGE_DATABASE_ADDED`します。|
+|`SCC_CHANGE_UNKNOWN`|何が変わったのか分からず|
+|`SCC_CHANGE_UNCHANGED`|このファイルの名前は変更されません。|
+|`SCC_CHANGE_DIFFERENT`|異なる ID を持つファイルが、データベースに同じ名前が存在します。|
+|`SCC_CHANGE_NONEXISTENT`|ファイルはデータベースまたはローカルに存在しません。|
+|`SCC_CHANGE_DATABASE_DELETED`|データベース内のファイルが削除されました。|
+|`SCC_CHANGE_LOCAL_DELETED`|ファイルはローカルで削除されますが、ファイルはデータベースに残っています。 これが特定できない場合は、`SCC_CHANGE_DATABASE_ADDED`を返します。|
+|`SCC_CHANGE_DATABASE_ADDED`|データベースに追加されたファイルがローカルに存在しません。|
+|`SCC_CHANGE_LOCAL_ADDED`|ファイルはデータベースに存在せず、新しいローカル ファイルです。|
+|`SCC_CHANGE_RENAMED_TO`|データベース内で ファイル名が変更`lpLatestName`または移動されたファイルは、 です。|
+|`SCC_CHANGE_RENAMED_FROM`|データベース内で名前が変更されたか`lpLatestName`、データベース内で移動されたファイル 。この値が高すぎて追跡が行き過ぎた場合は、`SCC_CHANGE_DATABASE_ADDED`などの別のフラグを返します。|
 
- lpLatestName この項目の現在のファイル名。
+ この項目の現在のファイル名です。
 
 ## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)

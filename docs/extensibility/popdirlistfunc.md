@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC |Microsoft Docs
+title: ポプディリストファンク |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fef3ab783c736fd2573e8d9df1a513e25d37020
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326130"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702078"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-これに指定されたコールバック関数、 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)ディレクトリと (必要に応じて) ソース管理の対象であることを確認するファイル名のコレクションを更新する関数。
+これは、ディレクトリのコレクションを更新するために[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)関数に与えられたコールバック関数であり、(オプションで) ソース管理下にあるファイル名を調べるためにします。
 
- `POPDIRLISTFUNC`コールバックは、これらのディレクトリとファイル名に対してのみ呼び出す必要があります (に指定された一覧で、`SccPopulateDirList`関数)、ソース管理下に実際にします。
+ コールバック`POPDIRLISTFUNC`は、実際にソース管理下にあるディレクトリとファイル名 (`SccPopulateDirList`関数に与えられたリスト内) に対してのみ呼び出す必要があります。
 
 ## <a name="signature"></a>署名
 
@@ -35,29 +35,29 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ```
 
 ## <a name="parameters"></a>パラメーター
- pvCallerData
+ 呼び出し元データ
 
-[in]渡されたユーザー値[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)します。
+[in]に与えられたユーザー値[。](../extensibility/sccpopulatedirlist-function.md)
 
- bFolder
+ bフォルダ
 
-[in]`TRUE`場合に名前`lpDirectoryOrFileName`ディレクトリである名前のファイル名はそれ以外の場合。
+[in]`TRUE`の`lpDirectoryOrFileName`名前がディレクトリの場合。それ以外の場合、名前はファイル名です。
 
- lpDirectoryOrFileName
+ ファイル名
 
 [in]ソース コード管理下にあるディレクトリまたはファイル名への完全なローカル パス。
 
 ## <a name="return-value"></a>戻り値
- IDE には、適切なエラー コードが返されます。
+ IDE は、適切なエラー コードを返します。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
-|SCC_OK|処理を続行します。|
+|SCC_OK|処理し続けます。|
 |SCC_I_OPERATIONCANCELED|処理を停止します。|
-|SCC_E_xxx|適切なソース コントロール エラーは、処理を停止する必要があります。|
+|SCC_E_xxx|適切なソース管理エラーは処理を停止する必要があります。|
 
 ## <a name="remarks"></a>Remarks
- 場合、`fOptions`のパラメーター、`SccPopulateDirList`関数が含まれています、`SCC_PDL_INCLUDEFILES`フラグでファイル名だけでなく、ディレクトリの名前は、一覧を含んでいる可能性が。
+ 関数の`fOptions`パラメータにフラグ`SccPopulateDirList`が`SCC_PDL_INCLUDEFILES`含まれている場合、リストにはファイル名とディレクトリ名が含まれる可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)

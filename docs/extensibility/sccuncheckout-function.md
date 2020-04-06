@@ -1,5 +1,5 @@
 ---
-title: SccUncheckout 関数 |Microsoft Docs
+title: SccUncheckout機能 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35d7287d8fc12100da9ba3b8383d8e92cee73d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4317133b2f215e0f9af447e5c042785561231f63
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720530"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700247"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 関数
-この関数は、前のチェックアウト操作を元に戻します。これにより、選択したファイルの内容がチェックアウト前の状態に復元されます。 チェックアウト後にファイルに加えられたすべての変更は失われます。
+この関数は、以前のチェックアウト操作を元に戻し、選択したファイルの内容をチェックアウト前の状態に復元します。 チェックアウト後にファイルに加えられたすべての変更は失われます。
 
 ## <a name="syntax"></a>構文
 
@@ -36,46 +36,46 @@ SCCRTN SccUncheckout (
 ```
 
 #### <a name="parameters"></a>パラメーター
- pvContext
+ を行う
 
-からソース管理プラグインのコンテキスト構造。
+[in]ソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
+[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- nFiles
+ nファイル
 
-から@No__t_0 配列に指定されたファイルの数。
+[in]配列に指定されたファイルの`lpFileNames`数。
 
- lpFileNames 名
+ ファイル名
 
-からチェックアウトを元に戻すファイルの完全修飾ローカルパス名の配列。
+[in]チェックアウトを取り消すファイルの完全修飾ローカル パス名の配列。
 
- 限ら
+ f オプション
 
-からコマンドフラグ (使用されていません)。
+[in]コマンド フラグ (使用されていません)。
 
- pvOptions
+ オプション
 
-からソース管理プラグイン固有のオプション。
+[in]ソース管理プラグイン固有のオプション。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|チェックアウトが正常に取り消されました。|
-|SCC_E_FILENOTCONTROLLED|選択したファイルはソースコード管理されていません。|
-|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
-|SCC_E_NONSPECIFICERROR|不特定のエラーです。 チェックアウトを元に戻す操作に失敗しました。|
-|SCC_E_NOTCHECKEDOUT|ユーザーにはファイルがチェックアウトされていません。|
+|SCC_OK|チェックアウトの取り消しが正常に行われました。|
+|SCC_E_FILENOTCONTROLLED|選択したファイルはソース コード管理の対象ではありません。|
+|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。 再試行することをお勧めします。|
+|SCC_E_NONSPECIFICERROR|非特異的なエラー。 チェックアウトを元に戻せませんでした。|
+|SCC_E_NOTCHECKEDOUT|ユーザーはファイルをチェックアウトしていません。|
 |SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|
-|SCC_E_PROJNOTOPEN|プロジェクトがソース管理から開かれていません。|
+|SCC_E_PROJNOTOPEN|プロジェクトはソース管理から開かれていない。|
 |SCC_I_OPERATIONCANCELED|操作は完了前に取り消されました。|
 
 ## <a name="remarks"></a>Remarks
- この操作の後、元に戻すチェックアウトが実行されたファイルに対して、`SCC_STATUS_CHECKEDOUT` と `SCC_STATUS_MODIFIED` のフラグが両方ともクリアされます。
+ この操作の`SCC_STATUS_CHECKEDOUT`後、および`SCC_STATUS_MODIFIED`両方のフラグは、チェックアウトを元に戻すが実行されたファイルに対してクリアされます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

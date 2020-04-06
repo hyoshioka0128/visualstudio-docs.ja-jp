@@ -1,52 +1,52 @@
 ---
-title: VSPackage 構造 (ソース管理 VSPackage) |Microsoft Docs
+title: VS パッケージ構造 (ソース管理 VS パッケージ) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d609efe52955dba53b8c8890a6fcb44bb7f3f352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332752"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703807"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 構造 (ソース管理 VSPackage)
 
-ソース コントロールのパッケージの SDK では、VSPackage を作成するためのガイドラインにより、自分のソース管理機能を Visual Studio 環境と統合するソース コントロールの実行者を提供します。 VSPackage は、そのレジストリ エントリで、パッケージによって提供されているサービスの Visual Studio 統合開発環境 (IDE) によって、オンデマンドで読み込まれる通常 COM コンポーネントです。 すべての VSPackage を実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>します。 VSPackage は通常、Visual Studio IDE によって提供されるサービスを利用して、proffers、独自の一部のサービス。
+ソース管理パッケージ SDK では、ソース管理の実装者が Visual Studio 環境とソース管理機能を統合できるようにする VSPackage を作成するためのガイドラインを提供します。 VSPackage は、通常、Visual Studio 統合開発環境 (IDE) によって要求に応じて読み込まれる COM コンポーネントです。 すべての VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>は、 を実装する必要があります。 VSPackage は通常、Visual Studio IDE によって提供されるサービスを使用し、独自のサービスを提供します。
 
-VSPackage では、そのメニュー項目を宣言し、.vsct ファイルを使用して既定の項目の状態を確立します。 Visual Studio IDE では、VSPackage が読み込まれるまで、この状態で、メニュー項目が表示されます。 その後、VSPackage の実装の<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>を有効にするか、メニュー項目を無効にするメソッドが呼び出されます。
+VSPackage は、そのメニュー項目を宣言し、.vsct ファイルを使用して既定の項目の状態を確立します。 VSPackage が読み込まれるまで、この状態でメニュー項目が表示されます。 その後、VSPackage の<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドの実装が呼び出され、メニュー項目を有効または無効にします。
 
-## <a name="source-control-package-characteristics"></a>ソース コントロール パッケージの特性
+## <a name="source-control-package-characteristics"></a>ソース管理パッケージの特性
 
-ソース管理 VSPackage は Visual Studio に緊密に統合します。 VSPackage のセマンティクスは次のとおりです。
+ソース管理 VSPackage は、Visual Studio に深く統合されています。 VSPackage のセマンティクスには次のものがあります。
 
-- あること、VSPackage によって実装されるインターフェイス (、`IVsPackage`インターフェイス)
+- VSPackage (インターフェイス) であることによって実装される`IVsPackage`インターフェイス
 
-- UI コマンドの実装 (.vsct ファイルとの実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス)
+- UI コマンドの実装 (.vsct ファイル<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>とインターフェイスの実装)
 
-- Visual Studio を使用した VSPackage の登録。
+- VS パッケージの登録を Visual Studio で行います。
 
-ソース管理 VSPackage は、これら他の Visual Studio のエンティティと通信する必要があります。
+ソース管理 VSPackage は、これらの他の Visual Studio エンティティと通信する必要があります。
 
 - プロジェクト
 
 - エディター
 
-- 解決策
+- ソリューション
 
 - Windows
 
-- 実行中の document テーブル
+- 実行中のドキュメント テーブル
 
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>使用できる visual Studio 環境のサービス
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>使用される可能性のある Visual Studio 環境サービス
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
 
@@ -54,7 +54,7 @@ VSPackage では、そのメニュー項目を宣言し、.vsct ファイルを�
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
 
-SVsRegisterScciProvider サービス
+サービスを提供します。
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
 
@@ -62,15 +62,15 @@ SVsRegisterScciProvider サービス
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
 
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP インターフェイス実装され、呼び出されます
+### <a name="vsip-interfaces-implemented-and-called"></a>VSIP インターフェイスの実装と呼び出し
 
-ソース管理のパッケージは、VSPackage とその他の Visual Studio に登録されている Vspackage と直接やり取りできるためです。 ソース管理機能一式を提供するためにソース管理 VSPackage 扱うことができるプロジェクトまたはシェルによって提供されるインターフェイス。
+ソース管理パッケージは VSPackage であるため、Visual Studio に登録されている他の VSPackage と直接やり取りできます。 ソース管理の機能の完全な幅を提供するために、ソース管理 VSPackage プロジェクトまたはシェルによって提供されるインターフェイスを処理できます。
 
-Visual Studio ですべてのプロジェクトを実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>Visual Studio IDE 内のプロジェクトとして認識されるようにします。 ただし、このインターフェイスがない特殊化されたソース管理には十分です。 ソースの下に必要なプロジェクト管理の実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>します。 このインターフェイスは、その内容にプロジェクトを照会して、グリフとバインディング情報 (必要な情報、サーバーの場所とディスクの場所の下にあるプロジェクトの間の接続を確立するために提供することをソース管理 VSPackage によって使用されます。ソース管理の場合)。
+Visual Studio のすべてのプロジェクトは<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>、Visual Studio IDE 内のプロジェクトとして認識されるように実装する必要があります。 ただし、このインターフェイスはソース管理に十分な特殊化されていません。 ソース管理下にあると予想されるプロジェクトは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>を実装します。 このインターフェイスは、ソース管理 VSPackage によって、その内容のプロジェクトを照会し、グリフとバインディング情報 (サーバーの場所とソース管理下にあるプロジェクトのディスクの場所との間の接続を確立するために必要な情報) を提供するために使用されます。
 
-ソース管理 VSPackage 実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>、さらにプロジェクトをソース管理に登録し、その状態のグリフを取得できます。
+ソース管理の VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>は、ソース管理のために自分自身を登録し、その状態のグリフを取得するプロジェクトを実装します。
 
-ソース管理 VSPackage が考慮する必要があるインターフェイスの完全な一覧を参照してください。[関連サービスとインターフェイス](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)します。
+ソース管理 VSPackage で考慮する必要があるインターフェイスの完全な一覧については、「[関連サービスとインターフェイス](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: PromptForSaveOnCreation 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 要素を保存する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802bcd357fe82434f7cf5aaf835b2841e6dc8dc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335981"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701779"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>要素を保存します。
 
-プロジェクトの保存場所を使用して、ユーザーを確認するかどうかを指定します、**新しいプロジェクト**プロジェクトを作成するときに、ダイアログ ボックス。 この要素に設定されている場合`true`保存の入力を求められますが、ユーザーの場所。 場合`false`は求められませんし (つまり、一時的なプロジェクトが作成されます)。
+プロジェクトの作成時に[**新しいプロジェクト**]ダイアログ ボックスを使用して、プロジェクトの保存場所を求めるメッセージを表示するかどうかを指定します。 この要素が に`true`設定されている場合、保存場所を求めるメッセージが表示されます。 の`false`場合、プロンプトは表示されません (つまり、一時的なプロジェクトが作成されます)。
 
 ```xml
 \<VSTemplate>
@@ -41,10 +41,10 @@ ms.locfileid: "66335981"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -58,7 +58,7 @@ ms.locfileid: "66335981"
  テキストは `true` または `false` である必要があります。`true` は、新しいプロジェクトの作成時にユーザーに保存場所の入力を求めることを示します。
 
 ## <a name="remarks"></a>Remarks
- `PromptForSaveOnCreation` は、省略可能な要素です。 既定値は `false` です。
+ `PromptForSaveOnCreation` は省略可能な要素です。 既定値は `false` です。
 
  一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。
 
@@ -92,5 +92,5 @@ ms.locfileid: "66335981"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

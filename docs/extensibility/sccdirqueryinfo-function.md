@@ -1,5 +1,5 @@
 ---
-title: SccDirQueryInfo 関数 |Microsoft Docs
+title: 関数 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e19b65ea4b3c4cd87b1f9d6a3db9e6f8ae64d16d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332243"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700948"
 ---
-# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 関数
-この関数は、その現在の状態の完全修飾ディレクトリの一覧を検証します。
+# <a name="sccdirqueryinfo-function"></a>関数
+この関数は、現在の状態に関する完全修飾ディレクトリのリストを調べます。
 
 ## <a name="syntax"></a>構文
 
@@ -36,38 +36,38 @@ LPLONG  lpStatus
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグイン コンテキスト構造体。
+[in]ソース管理プラグインのコンテキスト構造。
 
- nDirs
+ nディルス
 
-[in]クエリを実行する選択されているディレクトリの数。
+[in]照会対象として選択されたディレクトリの数。
 
- lpDirNames
+ 名前
 
-[in]クエリを実行するディレクトリの完全修飾パスの配列。
+[in]照会するディレクトリの完全修飾パスの配列。
 
- lpStatus
+ lp2
 
-[入力、出力]ソース管理の状態フラグを返すプラグインの配列構造体 (を参照してください[ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)詳細については)。
+[イン、アウト]ステータス フラグを返すソース管理プラグインの配列構造 (詳細については[、ディレクトリステータスコード](../extensibility/directory-status-code-enumerator.md)を参照)。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|クエリが正常に完了しました。|
-|SCC_E_OPNOTSUPPORTED|ソース コード管理システムでは、この操作はサポートしません。|
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。 再試行をお勧めします。|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
+|SCC_OK|クエリは正常に実行されました。|
+|SCC_E_OPNOTSUPPORTED|ソース コード管理システムでは、この操作はサポートされていません。|
+|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。 再試行することをお勧めします。|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特異的なエラー。|
 
 ## <a name="remarks"></a>Remarks
- 関数からのビットのビットマスクを指定の戻り値の配列を格納する、`SCC_DIRSTATUS`ファミリ (を参照してください[ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md))、指定されたディレクトリごとに 1 つのエントリ。 状態配列は、呼び出し元によって割り当てられます。
+ この関数は、ファミリの`SCC_DIRSTATUS`ビットマスク ([ディレクトリステータスコード](../extensibility/directory-status-code-enumerator.md)を参照)で戻り配列を埋め、指定されたディレクトリごとに 1 つのエントリを指定します。 ステータス配列は、呼び出し元によって割り当てられます。
 
- IDE は、対応するプロジェクトがあるかどうかクエリを実行して、ディレクトリは、ソース管理下にあるかどうかをチェックするディレクトリの名前を変更する前に、この関数を使用します。 ソース管理下にあるディレクトリでない場合、IDE は、ユーザーに適切な警告を提供できます。
+ IDE は、ディレクトリの名前を変更する前にこの関数を使用して、対応するプロジェクトがあるかどうかを照会して、ディレクトリがソース管理下にあるかどうかを確認します。 ディレクトリがソース管理下にない場合、IDE はユーザーに適切な警告を表示できます。
 
 > [!NOTE]
-> ソース管理プラグインのステータス値の 1 つ以上を実装しない場合、実装されていないビットを 0 に設定する必要があります。
+> ソース管理プラグインが 1 つ以上の状態値を実装しない場合は、実装されていないビットを 0 に設定する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
-- [ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)
+- [ディレクトリステータスコード](../extensibility/directory-status-code-enumerator.md)

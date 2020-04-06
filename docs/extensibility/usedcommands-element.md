@@ -1,5 +1,5 @@
 ---
-title: Used Commands 要素 |Microsoft Docs
+title: 使用コマンド要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718625"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698751"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 要素
-Used Commands 要素は、実行されたコマンド要素とその他の実行されたコマンドグループをグループ化します。
+要素は、使用コマンド要素とその他の UsedCommands グループ化をグループ化します。
 
- Used Commands 要素は省略可能です。 パッケージの外部で定義されたコマンドを呼び出さない場合は、このセクションを vsct ファイルに含める必要はありません。
+ 要素は省略可能です。 パッケージの外部で定義されたコマンドを呼び出さない場合は、.vsct ファイルにこのセクションを含める必要はありません。
 
 ## <a name="syntax"></a>構文
 
@@ -40,7 +40,7 @@ Used Commands 要素は、実行されたコマンド要素とその他の実行
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能です。 「[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 [「条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
@@ -52,7 +52,7 @@ Used Commands 要素は、実行されたコマンド要素とその他の実行
 
 |要素|説明|
 |-------------|-----------------|
-|[CommandTable 要素](../extensibility/commandtable-element.md)|VSPackage が統合開発環境 (IDE) に提供するコマンド (メニュー項目、メニュー、ツールバー、コンボボックスなど) を表すすべての要素を定義します。|
+|[CommandTable 要素](../extensibility/commandtable-element.md)|VSPackage が統合開発環境 (IDE) に提供するコマンド (メニュー項目、メニュー、ツールバー、コンボ ボックスなど) を表す要素をすべて定義します。|
 
 ## <a name="example"></a>例
 

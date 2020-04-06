@@ -1,27 +1,27 @@
 ---
-title: KeyBinding 要素 |Microsoft Docs
+title: キーバインド要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309643"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703146"
 ---
-# <a name="keybinding-element"></a>KeyBinding 要素
-KeyBinding 要素には、コマンドのキーボード ショートカットを指定します。
+# <a name="keybinding-element"></a>キーバインド要素
+KeyBinding 要素は、コマンドのキーボード ショートカットを指定します。
 
- コマンドには、1 台または 2 の両方のキー バインドを使用して、それらに関連付けられていることができます。 1 つのキー バインドの例は、 **Ctrl**+**S**の**保存**コマンド。 2 つのキー バインドでは、コマンドをトリガーする 2 つの連続するキーの組み合わせが必要です。 二重キー バインドの例は、 <strong>Ctrl *+</strong>K<strong>、</strong>Ctrl<strong>+</strong>K** ブックマークを設定します。
+ コマンドには、単一キーとデュアルキーの両方のバインディングを関連付けることができます。 1 つのキー・バインディングの例として、「**保存**」コマンドの**Ctrl**+**S**があります。 デュアル・キー・バインディングでは、コマンドをトリガーするために 2 つの連続したキーの組み合わせが必要です。 二重キーバインドの例としては<strong>、Ctrl*+</strong>K<strong>+</strong><strong>、Ctrl</strong>K** を使用してブックマークを設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,27 +37,27 @@ KeyBinding 要素には、コマンドのキーボード ショートカット�
 |属性|説明|
 |---------------|-----------------|
 |guid|必須。|
-|ID|必須。|
-|エディター|必須。 エディターの GUID では、このショートカット キーがアクティブになる編集コンテキストを示します。 バインドのグローバル スコープの値は、"guidVSStd97 です"。|
-|key1|必須。 有効な値はすべて判読英数字、また 2 桁の 16 進値 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)します。|
-|mod1|省略可能です。 任意の組み合わせ**Ctrl**、 **Alt**、および**Shift**スペースで区切られました。|
-|key2|省略可能です。 有効な値はすべて判読英数字、また 2 桁の 16 進値 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)します。|
-|mod2|省略可能です。 任意の組み合わせ**Ctrl**、 **Alt**、および**Shift**スペースで区切られました。|
-|エミュレーター|省略可能です。|
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+|id|必須。|
+|エディター|必須。 エディター GUID は、このキーボード ショートカットがアクティブになる編集コンテキストを示します。 グローバル バインディング スコープの値は "guidVSStd97" です。|
+|key1|必須。 有効な値には、すべての入力可能な英数字、および 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)が付いた 2 桁の 16 進数値が含まれます。|
+|モッド1|省略可能。 **Ctrl** **、Alt、** および**Shift**の任意の組み合わせをスペースで区切ります。|
+|key2|省略可能。 有効な値には、すべての入力可能な英数字、および 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)が付いた 2 桁の 16 進数値が含まれます。|
+|モッズ2|省略可能。 **Ctrl** **、Alt、** および**Shift**の任意の組み合わせをスペースで区切ります。|
+|エミュレーター|省略可能。|
+|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|親||
-|注釈||
+|Parent||
+|Annotation||
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[KeyBindings 要素](../extensibility/keybindings-element.md)|KeyBinding 要素をグループ化し、他の KeyBindings グループ化します。|
+|[キーバインディング要素](../extensibility/keybindings-element.md)|グループキーバインド要素とその他のキーバインドグループ。|
 
 ## <a name="example"></a>例
 
@@ -71,5 +71,5 @@ KeyBinding 要素には、コマンドのキーボード ショートカット�
 ```
 
 ## <a name="see-also"></a>関連項目
-- [KeyBindings 要素](../extensibility/keybindings-element.md)
+- [キーバインディング要素](../extensibility/keybindings-element.md)
 - [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

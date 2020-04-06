@@ -1,45 +1,45 @@
 ---
-title: 従来の言語サービスでコードを再フォーマットする |Microsoft Docs
+title: レガシ言語サービスでコードを再フォーマットする |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae48e1b97b5c9194cf3081687ab31ea9f857e6c9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724752"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705908"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>従来の言語サービスの再フォーマット コード
 
-@No__t_0 ソースコードは、インデントと空白文字の使用を正規化することによって、再フォーマットできます。 これには、各行の先頭にスペースやタブを挿入したり、行の間に新しい行を追加したり、スペースを含むタブまたはタブをスペースに置き換えたりすることができます。
+ソース[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コードでは、インデントと空白の使用を正規化することで再フォーマットできます。 これには、各行の先頭にスペースやタブを挿入または削除する、行間に新しい行を追加する、スペースをタブまたはタブにスペースで置き換えることなどが含まれます。
 
 > [!NOTE]
-> 改行文字を挿入または削除すると、ブレークポイントやブックマークなどのマーカーに影響を与える可能性がありますが、マーカーには影響しません。
+> 改行文字の挿入または削除は、ブレークポイントやブックマークなどのマーカーに影響を与えますが、スペースやタブを追加または削除してもマーカーには影響しません。
 
-ユーザーは、 **[編集]** メニューの **[詳細設定]** メニューから **[選択内容の書式設定]** または **[ドキュメントの書式]** 設定 を選択して、再フォーマット操作を開始できます。 また、コードスニペットまたは特定の文字が挿入されたときに、再フォーマット操作をトリガーすることもできます。 たとえば、で右中C#かっこを入力すると、一致する左中かっこと終わりかっこの間のすべてが自動的に適切なレベルにインデントされます。
+ユーザーは、[**編集**] メニューの [**詳細設定**] メニューから **[選択範囲の書式設定**] または [**文書の書式設定**] を選択して、再フォーマット操作を開始できます。 再フォーマット操作は、コード スニペットまたは特定の文字が挿入されたときにトリガーすることもできます。 たとえば、C# で右中かっこを入力すると、対応する左中かっこと右中かっこの間のすべてが自動的に適切なレベルにインデントされます。
 
-@No__t_0 が [**ドキュメント**の**形式**] コマンドを言語サービスに送信すると、<xref:Microsoft.VisualStudio.Package.ViewFilter> クラスは <xref:Microsoft.VisualStudio.Package.Source> クラスの <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> メソッドを呼び出します。 書式設定をサポートするには、<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> メソッドをオーバーライドし、独自の書式設定コードを指定する必要があります。
+**[選択範囲の書式設定]** または [**ドキュメントの書式設定**] コマンド<xref:Microsoft.VisualStudio.Package.ViewFilter>を言語サービス<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>に送信すると<xref:Microsoft.VisualStudio.Package.Source>[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、クラスはクラス内のメソッドを呼び出します。 書式設定をサポートするには、メソッドを<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>オーバーライドし、独自の書式コードを指定する必要があります。
 
 ## <a name="enabling-support-for-reformatting"></a>再フォーマットのサポートの有効化
 
-書式設定をサポートするには、VSPackage を登録するときに <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> の `EnableFormatSelection` パラメーターを `true` に設定する必要があります。 これにより、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> プロパティが `true` に設定されます。 @No__t_0 メソッドは、このプロパティの値を返します。 True を返した場合、<xref:Microsoft.VisualStudio.Package.ViewFilter> クラスは <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> を呼び出します。
+書式設定をサポートするには、VSPackage `EnableFormatSelection` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>を登録するときに`true`のパラメーターを に設定する必要があります。 これにより、プロパティ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>が`true`に設定されます。 この<xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A>メソッドは、このプロパティの値を返します。 true を返す場合<xref:Microsoft.VisualStudio.Package.ViewFilter>、クラスは<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
 
 ## <a name="implementing-reformatting"></a>再フォーマットの実装
 
-再フォーマットを実装するには、<xref:Microsoft.VisualStudio.Package.Source> クラスからクラスを派生させ、<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> メソッドをオーバーライドする必要があります。 @No__t_0 オブジェクトは、書式設定するスパンを記述し、<xref:Microsoft.VisualStudio.Package.EditArray> オブジェクトはスパンに加えられた編集を保持します。 このスパンはドキュメント全体であることに注意してください。 ただし、スパンに対して複数の変更が行われる可能性があるため、すべての変更を1回の操作で元に戻す必要があります。 これを行うには、<xref:Microsoft.VisualStudio.Package.CompoundAction> オブジェクトにすべての変更をラップします (このトピックの「CompoundAction クラスの使用」セクションを参照してください)。
+再フォーマットを実装するには、<xref:Microsoft.VisualStudio.Package.Source>クラスからクラスを派生させ、メソッドをオーバーライド<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>する必要があります。 オブジェクト<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>はフォーマットする範囲を記述し、オブジェクト<xref:Microsoft.VisualStudio.Package.EditArray>はスパンで行われた編集を保持します。 このスパンはドキュメント全体にできます。 ただし、スパンに複数の変更が加えられる可能性があるため、すべての変更は 1 つのアクションで元に戻せる必要があります。 これを行うには、オブジェクト内のすべての変更を<xref:Microsoft.VisualStudio.Package.CompoundAction>ラップします (このトピックの「複合アクション クラスの使用」を参照してください)。
 
 ### <a name="example"></a>例
 
-次の例では、コンマの後にタブが続く場合、または行の末尾にある場合を除き、すべてのコンマの後にスペースが1つあることを保証します。 行の最後のコンマの後の末尾のスペースが削除されます。 @No__t_0 メソッドからのこのメソッドの呼び出し方法については、このトピックの「CompoundAction クラスの使用」セクションを参照してください。
+次の例では、コンマの後にタブが続くか行の末尾に入っていない限り、選択範囲内の各コンマの後にスペースが 1 つあるかどうかを確認します。 行の最後のコンマの後の末尾のスペースは削除されます。 このメソッドがメソッドからどのように呼び出されるのかについては、このトピックの「CompoundAction クラス<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>の使用」を参照してください。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -153,13 +153,13 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="using-the-compoundaction-class"></a>CompoundAction クラスの使用
+## <a name="using-the-compoundaction-class"></a>複合アクションクラスの使用
 
-コードのセクションで実行されるすべての再フォーマットは、1回の操作で元に戻す必要があります。 これは <xref:Microsoft.VisualStudio.Package.CompoundAction> クラスを使用して実現できます。 このクラスは、テキストバッファーに対する一連の編集操作を1つの編集操作にラップします。
+コードのセクションで行われるすべての再フォーマットは、1 回の操作で元に戻せる必要があります。 これは<xref:Microsoft.VisualStudio.Package.CompoundAction>クラスを使用して実行できます。 このクラスは、テキスト バッファーに対する一連の編集操作を 1 つの編集操作にラップします。
 
 ### <a name="example"></a>例
 
-@No__t_0 クラスを使用する方法の例を次に示します。 @No__t_0 方法の例については、このトピックの「書式設定のサポートの実装」セクションの例を参照してください。
+クラスの使用方法の例を次に示<xref:Microsoft.VisualStudio.Package.CompoundAction>します。 メソッドの例については、このトピックの「書式設定のサポートの実装」の例を`DoFormatting`参照してください。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

@@ -1,52 +1,52 @@
 ---
-title: コンポーネントの管理 |Microsoft Docs
+title: コンポーネント管理 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310012"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709335"
 ---
-# <a name="component-management"></a>コンポーネントの管理
-Windows インストーラーのタスクの単位は、Windows インストーラーのコンポーネント (WICs または単なるコンポーネントとも呼ばれます) と呼ばれます。 各 WIC では、インストールと Windows インストーラーの使用設定に対する参照カウントの基本的な単位を識別する GUID。
+# <a name="component-management"></a>コンポーネント管理
+Windows インストーラのタスクの単位は、Windows インストーラ コンポーネント (WIC またはコンポーネントと呼ばれることもあります) と呼ばれます。 GUID は、Windows インストーラを使用するセットアップのインストールと参照カウントの基本単位である各 WIC を識別します。
 
- VSPackage、インストーラーを作成するいくつかの製品を使用できますが、この説明が Windows インストーラーの使用を前提としています ( *.msi*) ファイル。 インストーラーを作成するときに、正しい参照カウントが常に発生するため、ファイルの配置正しく管理する必要があります。 その結果、製品の異なるバージョンに影響またはインストールの組み合わせで互いを中断してシナリオをアンインストールします。
+ VSPackage インストーラーを作成するのには、いくつかの製品を使用できますが、この説明では、Windows インストーラー (*.msi*) ファイルを使用することを前提としています。 インストーラーを作成する場合は、ファイルの配置を正しく管理して、常に正しい参照カウントが行われるようにする必要があります。 したがって、インストールとアンインストールのシナリオが混在する場合、製品の異なるバージョンが互いに干渉したり、中断したりしません。
 
- Windows インストーラー、参照カウントは、コンポーネント レベルで発生します。 リソースの整理を慎重にする必要があります: ファイルやレジストリ エントリ、— コンポーネントにします。 組織の他のレベルがある-モジュール、機能、および製品など、さまざまなシナリオで役立つことができます。 詳細については、次を参照してください。 [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)します。
+ Windows インストーラでは、参照カウントはコンポーネント レベルで発生します。 リソース (ファイル、レジストリ エントリなど) をコンポーネントに慎重に編成する必要があります。 モジュール、機能、製品など、さまざまなシナリオで役立つ組織の他のレベルがあります。 詳細については、「 [Windows インストーラの基本](../../extensibility/internals/windows-installer-basics.md)」を参照してください。
 
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>サイド バイ サイドでインストールのセットアップの作成のガイドライン
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>サイド バイ サイド インストールのオーサリング セットアップのガイドライン
 
-- 作成者のファイルとレジストリ キーを独自のコンポーネントのバージョン間で共有されます。
+- バージョン間で共有されるファイルとレジストリ キーを独自のコンポーネントに作成します。
 
-     これにより次のバージョンでこれらを簡単に使用することができます。 たとえば、グローバルに登録されているタイプ ライブラリ ファイルの拡張子に登録されているその他のアイテム**HKEY_CLASSES_ROOT**など。
+     そうすることで、次のバージョンで簡単にそれらを消費することができます。 たとえば、グローバルに登録されているタイプ ライブラリ、ファイル拡張子 **、HKEY_CLASSES_ROOT**に登録されているその他のアイテムなど。
 
-- 共有コンポーネントを別のマージ モジュールにグループ化します。
+- 共有コンポーネントを別々のマージ モジュールにグループ化します。
 
-     この戦略では、今後はサイド バイ サイドでインストールを正しく作成するのに役立ちます。
+     この方法は、サイド バイ サイド インストールを進める場合に、正しく作成するのに役立ちます。
 
-- バージョン間で同じ Windows インストーラー コンポーネントを使用して共有ファイルおよびレジストリ キーをインストールします。
+- 複数のバージョンで同じ Windows インストーラ コンポーネントを使用して、共有ファイルとレジストリ キーをインストールします。
 
-     別のコンポーネントを使用する場合は、ファイルおよびレジストリ エントリはアンインストール 1 つのバージョン管理 VSPackage がアンインストールされますが、別の VSPackage がまだインストールされている場合。
+     別のコンポーネントを使用する場合、バージョン管理された VSPackage がアンインストールされたが、別の VSPackage がインストールされている場合、ファイルとレジストリ エントリがアンインストールされます。
 
-- 同じコンポーネントのバージョン管理と共有の項目を混在させないでください。
+- バージョン管理されたアイテムと共有アイテムを同じコンポーネントに混在させないでください。
 
-     そうと、グローバルな場所と分離された場所にバージョン管理された項目を共有項目をインストールできなくなります。
+     これにより、共有アイテムをグローバルな場所にインストールし、バージョン管理されたアイテムを分離された場所にインストールすることができなくなります。
 
-- バージョン管理されたファイルをポイントする共有のレジストリ キーはありません。
+- バージョン管理されたファイルを指す共有レジストリ キーを持っていません。
 
-     この場合、別のバージョン管理 VSPackage のインストール時に共有キーが上書きされます。 2 番目のバージョンを削除した後、キーが指しているが、ファイルはなくなりました。
+     これを行うと、別のバージョン付き VSPackage がインストールされたときに共有キーが上書きされます。 2 番目のバージョンを削除すると、キーが指しているファイルが削除されます。
 
 ## <a name="see-also"></a>関連項目
-- [共有およびバージョン管理 Vspackage を選択します。](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [VSPackage のセットアップ シナリオ](../../extensibility/internals/vspackage-setup-scenarios.md)
+- [共有 VS パッケージとバージョン対応 VS パッケージの間で選択](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [VSPackage セットアップ シナリオ](../../extensibility/internals/vspackage-setup-scenarios.md)

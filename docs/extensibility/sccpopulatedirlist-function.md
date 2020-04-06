@@ -1,5 +1,5 @@
 ---
-title: SccPopulateDirList 関数 |Microsoft Docs
+title: 関数を指定する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720895"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700556"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 関数
-この関数は、確認するディレクトリのリストを指定して、ソース管理に格納するディレクトリと (必要に応じて) ファイルを決定します。
+この関数は、検査するディレクトリのリストを指定して、ソース管理に格納されるディレクトリと (オプションで) ファイルを決定します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,38 +38,38 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>パラメーター
  pContext
 
-からソース管理プラグインのコンテキストポインター。
+[in]ソース管理プラグイン のコンテキスト ポインター。
 
- nDirs
+ nディルス
 
-から@No__t_0 配列内のディレクトリパスの数。
+[in]配列内のディレクトリ パス`lpDirPaths`の数。
 
- lpDirPaths
+ パス
 
-から確認するディレクトリパスの配列。
+[in]検査するディレクトリ パスの配列。
 
- pfnPopulate
+ を設定する
 
-から各ディレクトリパスと (必要に応じて) `lpDirPaths` のファイル名に対して呼び出すコールバック関数 (詳細については、「 [Popdirlistfunc](../extensibility/popdirlistfunc.md) 」を参照してください)。
+[in]各ディレクトリ パスを呼び出すコールバック関数と (オプション`lpDirPaths`で) ファイル名 (詳細については[、POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)を参照してください)。
 
- pvCallerData
+ 呼び出し元データ
 
-から変更せずにコールバック関数に渡される値。
+[in]コールバック関数に変更されずに渡される値。
 
- 限ら
+ f オプション
 
-からディレクトリの処理方法を制御する値の組み合わせ (有効な値については、[特定のコマンドで使用される Bitflags](../extensibility/bitflags-used-by-specific-commands.md)の "PopulateDirList flags" セクションを参照してください)。
+[in]ディレクトリの処理方法を制御する値の組み合わせ (可能な値については、特定の[コマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)の「PopulateDirList フラグ」セクションを参照してください)。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|操作が正常に完了しました。|
+|SCC_OK|操作は正常に完了しました。|
 |SCC_E_UNKNOWNERROR|エラーが発生しました。|
 
 ## <a name="remarks"></a>Remarks
- コールバック関数に渡されるのは、ソース管理リポジトリ内のディレクトリと (必要に応じて) ファイル名だけです。
+ 実際にソース管理リポジトリにあるディレクトリと (オプションで) ファイル名だけが、コールバック関数に渡されます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

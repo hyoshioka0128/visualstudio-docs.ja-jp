@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Reset | Microsoft Docs
+title: IEnumデバッグオブジェクト::リセット |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Reset method
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5a9e8e08c19e7d4f2a8b47ad0124115743522a8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9302330ac67cba4a9a68cacb7bc8f91aff7ad3ba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339543"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716332"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
-このメソッドは、最初の要素を列挙型をリセットします。
+このメソッドは、列挙を最初の要素にリセットします。
 
 ## <a name="syntax"></a>構文
 
@@ -36,13 +36,13 @@ int Reset();
 ```
 
 ## <a name="parameters"></a>パラメーター
- なし
+ None
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが呼び出された後、次回の呼び出し[次](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)列挙体の最初の要素を返します。
+ このメソッドが呼び出された後[、Next](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)を次に呼び出すと、列挙の最初の要素が返されます。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

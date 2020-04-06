@@ -1,29 +1,29 @@
 ---
-title: 実行時に、プロジェクトのサブタイプの確認 |Microsoft Docs
+title: 実行時にプロジェクトのサブタイプを確認する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes
 - check subtypes
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033f2971d0b8acb0390765f240a86a5ff543c353
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310686"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698181"
 ---
-# <a name="verify-subtypes-of-a-project-at-run-time"></a>実行時に、プロジェクトのサブタイプを確認します。
-カスタムのプロジェクト サブタイプに依存する VSPackage は、サブタイプのサブタイプが存在しない場合に適切に失敗できるようにするロジックを探してを含める必要があります。 次の手順では、指定されたサブタイプの存在を確認する方法を示します。
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>実行時にプロジェクトのサブタイプを確認する
+カスタム プロジェクトのサブタイプに依存する VSPackage には、サブタイプが存在しない場合に正常に失敗できるように、そのサブタイプを検索するロジックを含める必要があります。 次の手順は、指定されたサブタイプの存在を確認する方法を示しています。
 
 ### <a name="to-verify-the-presence-of-a-subtype"></a>サブタイプの存在を確認するには
 
-1. プロジェクトとソリューションのオブジェクトとしてから、プロジェクト階層を取得、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> VSPackage に、次のコードを追加することによってオブジェクト。
+1. VSPackage に次のコードを追加して、プロジェクト<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>オブジェクトとソリューション オブジェクトからプロジェクト階層を取得します。
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ ms.locfileid: "66310686"
 
     ```
 
-2. 階層のキャスト、<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>インターフェイス。
+2. インターフェイスに階層をキャスト<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>します。
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,7 +48,7 @@ ms.locfileid: "66310686"
 
     ```
 
-3. 呼び出すことによってプロジェクト型 Guid の一覧を取得、<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>します。
+3. を呼び出してプロジェクトの種類 GUID の一<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>覧を取得します。
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
@@ -67,6 +67,6 @@ ms.locfileid: "66310686"
     ```
 
 ## <a name="see-also"></a>関連項目
-- [プロジェクト サブタイプ](../extensibility/internals/project-subtypes.md)
-- [プロジェクト サブタイプのデザイン](../extensibility/internals/project-subtypes-design.md)
-- [プロパティとプロジェクト サブタイプによって拡張メソッド](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+- [プロジェクトのサブタイプ](../extensibility/internals/project-subtypes.md)
+- [プロジェクト サブタイプの設計](../extensibility/internals/project-subtypes-design.md)
+- [プロジェクト のサブタイプによって拡張されたプロパティとメソッド](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

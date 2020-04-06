@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE |Microsoft Docs
+title: スレッドステート |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727497"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713334"
 ---
 # <a name="threadstate"></a>THREADSTATE
 スレッドの状態を指定します。
@@ -53,7 +53,7 @@ public enum enum_THREADSTATE { 
  スレッドが実行中であることを示します。
 
  `THREADSTATE_STOPPED`\
- ブレークポイントが原因でスレッドが停止したことを示します。
+ ブレークポイントが原因でスレッドが停止していることを示します。
 
  `THREADSTATE_FRESH`\
  スレッドが作成されたが、まだコードを実行していないことを示します。
@@ -62,18 +62,18 @@ public enum enum_THREADSTATE { 
  スレッドが停止していることを示します。
 
  `THREADSTATE_FROZEN`\
- スレッドが固定されていることを示します (実行は実行できません)。
+ スレッドが固定されていることを示します (実行はできません)。
 
 ## <a name="remarks"></a>Remarks
- [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md)構造体の `dwThreadState` フィールドに使用されます。
+ [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) `dwThreadState`構造体のフィールドに使用されます。
 
-## <a name="requirements"></a>［要件］
- ヘッダー: msdbg. h
+## <a name="requirements"></a>必要条件
+ ヘッダー: msdbg.h
 
- 名前空間: VisualStudio。
+ 名前空間: を使用します。
 
- アセンブリ: VisualStudio を実行します。
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
-- [列挙体](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
