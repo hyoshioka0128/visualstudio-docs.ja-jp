@@ -1,5 +1,5 @@
 ---
-title: SccAddFromScc 関数 |Microsoft Docs
+title: 関数の追加 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8f37ce82630b72d5a01c66c8848431e8f6c2891
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334033"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701246"
 ---
-# <a name="sccaddfromscc-function"></a>SccAddFromScc 関数
-この関数は、ソース管理システムに既に存在するファイルの参照をでき、その後に、現在のプロジェクトの一環としてそのファイル。 たとえば、この関数は、ファイルをコピーせず、現在のプロジェクトに共通のヘッダー ファイルを取得できます。 ファイルの戻り値の配列`lplpFileNames`ユーザーが、IDE プロジェクトを追加するファイルの一覧が含まれています。
+# <a name="sccaddfromscc-function"></a>関数の追加
+この関数を使用すると、ユーザーはソース管理システムに既に存在するファイルを参照し、その後、それらのファイルを現在のプロジェクトの一部にすることができます。 たとえば、この関数は、ファイルをコピーせずに、現在のプロジェクトに共通のヘッダー ファイルを取得できます。 ファイルの戻り値の`lplpFileNames`配列には、ユーザーが IDE プロジェクトに追加するファイルのリストが含まれます。
 
 ## <a name="syntax"></a>構文
 
@@ -34,42 +34,42 @@ SCCRTN SccAddFromScc (
 ```
 
 ### <a name="parameters"></a>パラメーター
- pvContext
+ を行う
 
-[in]ソース管理プラグイン コンテキスト構造体。
+[in]ソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- lpnFiles
+ ファイル
 
-[入力、出力]追加されたファイルの数をバッファーします。 (これは`NULL`によってメモリを指している場合`lplpFileNames`を解放します。 詳細については「解説」を参照します。)
+[イン、アウト]追加されるファイルの数のバッファー。 (これは、`NULL`指すメモリ`lplpFileNames`が解放される場合です。 詳細については、「解説」を参照してください。
 
- lplpFileNames
+ ファイル名
 
-[入力、出力]ディレクトリ パスがないすべてのファイル名へのポインターの配列。 この配列が割り当てられ、ソース管理プラグインによって解放されます。 場合`lpnFiles`= 1 と`lplpFileNames`ない`NULL`、によって示される配列の最初の名前`lplpFileNames`コピー先のフォルダーが含まれています。
+[イン、アウト]ディレクトリ パスを持たないすべてのファイル名へのポインタの配列。 この配列は、ソース管理プラグインによって割り当てられ、解放されます。 = `lpnFiles` 1`lplpFileNames`で、`NULL`でない場合、指す配列の最初の名前`lplpFileNames`には、コピー先のフォルダーが含まれます。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|ファイルが正常にあるし、プロジェクトに追加します。|
-|SCC_I_OPERATIONCANCELED|効果なしでは、操作が取り消されました。|
-|SCC_I_RELOADFILE|ファイルまたはプロジェクトを再読み込みする必要があります。|
+|SCC_OK|ファイルが正常に見つかり、プロジェクトに追加されました。|
+|SCC_I_OPERATIONCANCELED|操作は無効にしてキャンセルされました。|
+|SCC_I_RELOADFILE|ファイルまたはプロジェクトを再ロードする必要があります。|
 
 ## <a name="remarks"></a>Remarks
- IDE では、この関数を呼び出します。 ソース管理プラグインは、ローカルのコピー先フォルダーを指定することをサポートする場合に、IDE が合格`lpnFiles`= 1 とにローカル フォルダー名を渡します`lplpFileNames`します。
+ IDE はこの関数を呼び出します。 ソース管理プラグインがローカルの保存先フォルダの指定をサポートしている場合、IDE は`lpnFiles`= 1 を渡し、ローカル`lplpFileNames`フォルダ名を に渡します。
 
- ときに呼び出し、`SccAddFromScc`プラグインが値を割り当て、関数を返します`lpnFiles`と`lplpFileNames`、必要に応じて、ファイル名の配列のメモリの割り当て (でポインターがこの割り当てににより置き換えられることに注意してください。 `lplpFileNames`)。 ソース管理プラグインは、ユーザーのディレクトリにまたは指定された指定のフォルダーには、すべてのファイルを配置する責任を負います。 次に、IDE は、IDE プロジェクトにファイルを追加します。
+ 関数の呼び出しが戻ると、プラグインは、`lpnFiles`に値を`lplpFileNames`割り当て、必要に応じてファイル名配列のメモリを割り当てられています (`lplpFileNames`この割り当ては 、 のポインタに置き換わります )。 `SccAddFromScc` ソース管理プラグインは、すべてのファイルをユーザーのディレクトリまたは指定フォルダに配置します。 その後、IDE によってファイルが IDE プロジェクトに追加されます。
 
- 最後に、IDE を呼び出すこの関数に渡して、もう一度`NULL`の`lpnFiles`します。 これはソース管理プラグインでファイル名の配列に割り当てられたメモリを解放して特別なシグナルとして解釈されます。 `lplpFileNames``.`
+ 最後に、IDE はこの関数をもう一度呼び`NULL`出`lpnFiles`し、 に渡します。 これは、ファイル名配列に割り当てられたメモリを解放するために、ソース管理プラグインによって特別な信号として解釈されます。`lplpFileNames``.`
 
- `lplpFileNames` `char ***`ポインター。 ソース管理プラグインは、この API の標準的な方法で一覧を渡すためのファイル名へのポインターの配列へのポインターを配置します。
+ `lplpFileNames`はポインタ`char ***`です。 ソース管理プラグインは、ファイル名へのポインターの配列へのポインターを配置するため、この API の標準的な方法でリストを渡します。
 
 > [!NOTE]
-> VSSCI API の最初のバージョンでは、ターゲットのプロジェクトを追加したファイルを示す方法は提供しませんでした。 これのセマンティクスに合わせて、`lplpFIleNames`パラメーターが出力パラメーターではなく、入力/出力パラメーターに強化されています。 1 つのファイルを指定すると、専用の場合は、値によって示される`lpnFiles`= 1、最初の要素の`lplpFileNames`ターゲット フォルダーが含まれています。 このような新しいセマンティクスを IDE の呼び出しを使用する、`SccSetOption`関数と、`nOption`パラメーターに設定`SCC_OPT_SHARESUBPROJ`します。 返すかどうか、ソース管理プラグインは、セマンティクスをサポートしていません、`SCC_E_OPTNOTSUPPORTED`します。 無効にします。 そのための使用を行って、**ソース管理から追加**機能します。 プラグインをサポートしている場合、**ソース管理から追加**機能 (`SCC_CAP_ADDFROMSCC`)、次に新しいセマンティクスをサポートし、返す必要があります`SCC_I_SHARESUBPROJOK`します。
+> VSSCI API の初期バージョンでは、追加されたファイルのターゲット プロジェクトを示す方法が提供されませんでした。 これに対応するために、`lplpFIleNames`パラメータのセマンティクスが拡張され、出力パラメータではなく in/out パラメータにしました。 1 つのファイルだけを指定した場合、つまり= 1 が`lpnFiles`指す値は、 の最初の`lplpFileNames`要素にターゲット フォルダーが含まれます。 これらの新しいセマンティクスを使用するために、IDE`SccSetOption`はパラメーターを`nOption`に設定`SCC_OPT_SHARESUBPROJ`して関数を呼び出します。 ソース管理プラグインがセマンティクスをサポートしていない場合は、 を返します`SCC_E_OPTNOTSUPPORTED`。 これにより、**ソース管理から追加**機能の使用が無効になります。 プラグインが**ソース管理からの追加**機能 (`SCC_CAP_ADDFROMSCC`) をサポートしている場合は、新しいセマンティクスを`SCC_I_SHARESUBPROJOK`サポートし、 を返す必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

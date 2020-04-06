@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでのアウトライン |Microsoft Docs
+title: レガシー言語サービスでのアウトライン |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,46 +7,46 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6b2ba55a2e77a1f7261812a181ad780c2ef2b71
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706810"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>従来の言語サービスのアウトライン
-アウトラインを使用すると、複雑なプログラムを概要やアウトラインに折りたたむことができます。 たとえば、でC#は、すべてのメソッドを1つの行に折りたたんで、メソッドのシグネチャのみを表示できます。 また、構造体とクラスを折りたたんで、構造体とクラスの名前のみを表示することもできます。 1つのメソッドの内部では、`foreach`、`if`、`while` などのステートメントの最初の行のみを表示することにより、複雑なロジックを折りたたんでフロー全体を表示することができます。
+アウトラインを使用すると、複雑なプログラムを概要またはアウトラインに集約できます。 たとえば、C# では、すべてのメソッドを 1 行に折りたたんで、メソッド シグネチャのみを表示できます。 さらに、構造体とクラスを折りたたんで、構造体とクラスの名前だけを表示することもできます。 1 つのメソッド内では、 `foreach` `if`、 などのステートメントの最初の行だけを表示することで、複雑なロジックを折りたたんで全体的`while`なフローを表示できます。
 
- 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 詳細については、「[チュートリアル: アウトライン](../../extensibility/walkthrough-outlining.md)」を参照してください。
+ レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 詳細については、「[チュートリアル: アウトライン](../../extensibility/walkthrough-outlining.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
 
 ## <a name="enabling-support-for-outlining"></a>アウトラインのサポートを有効にする
- 自動アウトラインを有効にするには、`AutoOutlining` レジストリエントリを1に設定します。 自動アウトラインでは、隠し領域を識別してアウトライングリフを表示するために、ファイルの読み込み時または変更時にソース全体の解析が設定されます。 アウトラインは、ユーザーが手動で制御することもできます。
+ `AutoOutlining`レジストリ エントリは 1 に設定され、アウトラインの自動表示が有効になります。 自動アウトライン表示では、ファイルが読み込まれるか変更されたときに、隠れた領域を識別してアウトライングリフを表示するために、ソース全体の解析が設定されます。 アウトラインは、ユーザーが手動で制御することもできます。
 
- @No__t_0 レジストリエントリの値は、<xref:Microsoft.VisualStudio.Package.LanguagePreferences> クラスの <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> プロパティを使用して取得できます。 @No__t_0 レジストリエントリは、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 属性の名前付きパラメーターを使用して初期化できます (詳細について[は、「従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください)。
+ レジストリ エントリの`AutoOutlining`値は、<xref:Microsoft.VisualStudio.Package.LanguagePreferences>クラスのプロパティを<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>通じて取得できます。 レジストリ`AutoOutlining`エントリは、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性の名前付きパラメーターで初期化できます (詳細については、[レガシ言語サービスの登録を](../../extensibility/internals/registering-a-legacy-language-service1.md)参照してください)。
 
-## <a name="the-hidden-region"></a>非表示領域
- アウトラインを提供するには、言語サービスが非表示領域をサポートしている必要があります。 これらは、展開または折りたたむことができるテキストの範囲です。 非表示の領域は、標準の言語シンボル (中かっこなど) またはカスタムシンボルで区切ることができます。 たとえば、にC#は、非表示の領域を区切る `#region` / `#endregion` ペアがあります。
+## <a name="the-hidden-region"></a>隠れた領域
+ アウトラインを提供するには、言語サービスが非表示の領域をサポートしている必要があります。 これらは、展開または折りたたむことができるテキストの範囲です。 隠し領域は、中かっこなどの標準言語シンボルまたはカスタム シンボルで区切ることができます。 たとえば、C# には、`#region`/`#endregion`非表示の領域を区切るペアがあります。
 
- 非表示の領域は、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> インターフェイスとして公開されている非表示の領域マネージャーによって管理されます。
+ 非表示の領域は、インターフェイスとして公開されている非表示の領域マネージャーによって管理されます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>。
 
- アウトラインでは、非表示領域を <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> インターフェイスに使用し、非表示領域のスパン、現在の表示状態、およびスパンが折りたたまれているときに表示されるバナーを格納します。
+ アウトラインでは、インターフェイスを非表示の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion>領域を使用し、非表示領域の範囲、現在の表示状態、およびスパンが折りたたまれたときに表示されるバナーを含みます。
 
- 言語サービスパーサーは、<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> メソッドを使用して、非表示領域の既定の動作を持つ新しい非表示領域を追加します。一方、<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> メソッドでは、アウトラインの外観と動作をカスタマイズできます。 非表示の領域が非表示の領域セッションに与えられると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は言語サービスの非表示領域を管理します。
+ 言語サービス パーサーは<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>、このメソッドを使用して、非表示領域の既定の動作を持つ新しい非表示<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>領域を追加します。 非表示の領域が非表示の領域セッションに与えられると[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、言語サービスの非表示領域を管理します。
 
- 非表示の領域セッションが破棄されるタイミングを判断する必要がある場合、非表示の領域を変更する場合、または特定の非表示領域が表示されるようにする必要がある場合は、<xref:Microsoft.VisualStudio.Package.Source> クラスからクラスを派生させ、適切なメソッド、<xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>、<xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>、および <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> をそれぞれオーバーライドする必要があります。
+ 非表示領域セッションがいつ破棄されるか、非表示の領域が変更されたか、特定の非表示領域が表示されていることを確認する必要がある場合。クラスから派生したクラス<xref:Microsoft.VisualStudio.Package.Source>は、 <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>、<xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>および 、 、および<xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>のそれぞれをオーバーライドする必要があります。
 
 ### <a name="example"></a>例
- 中かっこのすべてのペアに対して非表示の領域を作成する簡単な例を次に示します。 この言語では、中かっこの照合が提供され、照合する中かっこには少なくとも中かっこ ({と}) が含まれていることを前提としています。 この方法は、説明を目的としたものです。 完全な実装では、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> のケースを完全に処理できます。 この例では、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> 設定を一時的に `true` に設定する方法も示しています。 別の方法として、言語パッケージの `ProvideLanguageServiceAttribute` 属性に `AutoOutlining` 名前付きパラメーターを指定することもできます。
+ ここでは、すべての中かっこのペアに対して非表示の領域を作成する簡単な例を示します。 言語は中かっこの一致を提供し、一致する中かっこには少なくとも中かっこ ({と }) が含まれると仮定されます。 この方法は、説明のみを目的とします。 完全な実装では、 のケースの完全な処理<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>が行われます。 この例では、一時的にプ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>リファレンスを`true`設定する方法も示します。 別の方法として、言語`AutoOutlining`パッケージの`ProvideLanguageServiceAttribute`属性に名前付きパラメーターを指定します。
 
- この例でC#は、コメント、文字列、およびリテラルの規則を前提としています。
+ この例では、コメント、文字列、およびリテラルに対する C# 規則を想定しています。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
