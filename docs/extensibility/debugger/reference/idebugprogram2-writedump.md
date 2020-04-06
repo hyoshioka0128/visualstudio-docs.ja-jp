@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Microsoft Docs
+title: プログラム2::書き込みダンプ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d9d680ca83967f9f651269e186670fb90a771d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343629"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722741"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-ダンプ ファイルに書き込みます。
+ダンプをファイルに書き込みます。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int WriteDump( 
 
 ## <a name="parameters"></a>パラメーター
 `DumpType`\
-[in]値、 [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)など、簡単に言えば、ダンプの種類を指定する列挙体または時間の長い。
+[in]ダンプの種類を指定する[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)列挙体の値。たとえば、短いまたは長い。
 
 `pszDumpUrl`\
-[in]ダンプを記述する URL です。 形式で通常、これは`file://c:\path\filename.ext`、任意の有効な URL があります。
+[in]ダンプを書き込む先の URL。 通常、これは の形式ですが、`file://c:\path\filename.ext`任意の有効な URL を使用できます。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- プログラムのダンプは、現在のスタック フレーム、スタック自体、プログラム、およびプログラムを所有するメモリ可能性がありますで実行されているスレッドの一覧に通常が含まれます。
+ プログラム ダンプには、通常、現在のスタック フレーム、スタック自体、プログラムで実行されているスレッドのリスト、およびプログラムが所有するメモリが含まれます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

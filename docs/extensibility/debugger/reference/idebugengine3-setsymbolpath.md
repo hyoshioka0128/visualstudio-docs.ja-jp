@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEngine3:: Setシンボル Path |Microsoft Docs'
+title: Iデバッグエンジン3::セットシンボルパス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fe3000804971c8bd8cbf896a592bd11b875bfa8
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506381"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730663"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-デバッグシンボル用に検索されるパスを設定します。
+デバッグ シンボルを検索するパスを設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,28 +46,28 @@ int SetSymbolPath(
 ## <a name="parameters"></a>パラメーター
 
 `szSymbolSearchPath`\
-からシンボルの検索パスを含む文字列。 詳細については、「解説」を参照してください。 NULL にすることはできません。
+[in]シンボル検索パスを含む文字列。 詳細は「解説」を参照してください。 null にすることはできません。
 
 `szSymbolCachePath`\
-からシンボルをキャッシュできるローカルパスを含む文字列。 NULL にすることはできません。
+[in]シンボルをキャッシュできるローカル パスを含む文字列。 null にすることはできません。
 
 `Flags`\
-から使用しません。常に0に設定されます。
+[in]使用されません。常に 0 に設定されます。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
-## <a name="remarks"></a>コメント
- 文字列 `szSymbolSearchPath` は、シンボルを検索するための、セミコロンで区切られた1つ以上のパスの一覧です。 これらのパスには、ローカルパス、UNC スタイルのパス、または URL を指定できます。 これらのパスは、異なる種類を混在させることもできます。 パスが UNC の場合 (たとえば、\\\ Sym\ シンボル)、デバッグエンジンはパスがシンボルサーバーであるかどうかを判断し、そのサーバーからシンボルを読み込み、`szSymbolCachePath`で指定されたパスにキャッシュする必要があります。
+## <a name="remarks"></a>Remarks
+ 文字列`szSymbolSearchPath`は、シンボルを検索するための 1 つ以上のパスのリストで、セミコロンで区切られています。 これらのパスには、ローカル パス、UNC 形式のパス、または URL を指定できます。 これらのパスは、異なるタイプの組み合わせにもなります。 パスが UNC (たとえば\Symserver\Symbols) の場合、デバッグ エンジンは、パスがシンボル サーバーへのパスであり、\\そのサーバーからシンボルを読み込むことができるかどうかを判断し、で指定された`szSymbolCachePath`パスにシンボルをキャッシュする必要があります。
 
- シンボルパスには、1つまたは複数のキャッシュの場所を含めることもできます。 キャッシュは優先順位順に一覧表示され、優先順位が最も高いキャッシュが先頭になり、* 記号で区切られます。 例 :
+ シンボル パスには、1 つ以上のキャッシュの場所を含めることもできます。 キャッシュは、優先順位の最も高いキャッシュを最初に、優先順位の高い順にリストされ、* 記号で区切られます。 次に例を示します。
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- [Loadsymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)メソッドは、シンボルの実際の読み込みを実行します。
+ [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)メソッドは、シンボルの実際の読み込みを実行します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

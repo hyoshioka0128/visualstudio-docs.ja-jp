@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext |Microsoft Docs
+title: オブジェクト::メモリコンテキストを取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38f913952c3e2f58b0d7bd2a27ac20e8f754da2f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323625"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726658"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 オブジェクトの値のアドレスを表すメモリ コンテキストを取得します。
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>パラメーター
 `pContext`\
-[out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクトの値のアドレスを表すオブジェクト。
+[アウト][オブジェクトの](../../../extensibility/debugger/reference/idebugmemorycontext2.md)値のアドレスを表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- これによって表される、返されたメモリ コンテキストは、値のアドレスを指定します[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクト。
+ 返されたメモリ コンテキストは、この[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトによって表される値のアドレスを指定します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

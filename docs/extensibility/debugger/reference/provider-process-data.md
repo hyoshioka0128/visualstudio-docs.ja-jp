@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA |Microsoft Docs
+title: PROVIDER_PROCESS_DATA |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18b60d68b8c36c1d0c4fcd2a90e25732108460ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347240"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713777"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
-この構造体は、コンピューターで実行されているプロセスに関する情報を提供します。
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
+この構造体は、マシン上で実行されているプロセスに関する情報を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,23 +45,23 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>メンバー
  `Fields`\
- フラグの組み合わせ、 [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)どのフィールドに入力を示す、列挙体。
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)列挙体のフラグの組み合わせで、どのフィールドが入力されているかを示します。
 
  `ProgramNodes`\
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)プログラム ノードの配列を含む構造体。
+ プログラム ノードの配列を含む[PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)構造体。
 
  `fIsDebuggerPresent`\
- 0 以外の場合 (`TRUE`) 場合、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッガーが実行されている、ゼロ (`FALSE`) でない場合。
+ デバッガーが`TRUE`[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]実行されている場合は 0 以外 (`FALSE`) 以外の場合はゼロ ( ) 。
 
 ## <a name="remarks"></a>Remarks
- この構造体に渡される、 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッドでいっぱいになった場所。
+ この構造体は、埋め込まれる[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッドに渡されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

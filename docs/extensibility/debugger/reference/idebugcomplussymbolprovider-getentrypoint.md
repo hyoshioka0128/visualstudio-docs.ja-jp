@@ -1,25 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider::GetEntryPoint |Microsoft Docs
+title: を提供します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetEntryPoint
 - GetEntryPoint
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43b99524a409d6938fd38b2623a5ec715accbbaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c686659d2a3d5e81e8e466bf1707337842cf8317
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336791"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733903"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 アプリケーションのエントリ ポイントを取得します。
@@ -47,16 +47,16 @@ int GetEntryPoint(
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールの一意の識別子です。
 
 `ppAddress`\
-[out]によって表されるエントリ ポイントを返します、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
+[アウト][インターフェイス](../../../extensibility/debugger/reference/idebugaddress.md)によって表されるエントリ ポイントを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetEntryPoint(

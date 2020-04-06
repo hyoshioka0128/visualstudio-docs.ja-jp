@@ -1,5 +1,5 @@
 ---
-title: 式エバリュエーター |Microsoft Docs
+title: 式エバリュエーター |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,38 +7,38 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f990225cbff539281122d21d4773f6611f694f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353772"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738688"
 ---
 # <a name="expression-evaluator"></a>式エバリュエーター
-(EE) の式エバリュエーターでは、IDE が中断モードの場合、ユーザーが表示できるように解析および実行時に、変数と式を評価する言語の構文を確認します。
+式エバリュエーター (EE) は、実行時に変数と式を解析および評価する言語の構文を調べ、IDE が中断モードのときにユーザーが表示できるようにします。
 
-## <a name="use-expression-evaluators"></a>式エバリュエーターを使用します。
- 使用して式を作成、 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドは、次のようにします。
+## <a name="use-expression-evaluators"></a>式エバリュエーターを使用する
+ 式は、次のように[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドを使用して作成されます。
 
-1. デバッグ エンジン (DE) を実装して、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。
+1. デバッグ エンジン (DE) は、[インターフェイス](../../extensibility/debugger/reference/idebugexpressioncontext2.md)を実装します。
 
-2. デバッグ パッケージを取得、`IDebugExpressionContext2`オブジェクトから、 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイスに呼び出し、`IDebugStackFrame2::ParseText`を取得するメソッド、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。
+2. デバッグ パッケージは`IDebugExpressionContext2`[、IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイスからオブジェクトを取得し、`IDebugStackFrame2::ParseText`そのメソッドを呼び出して[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトを取得します。
 
-3. デバッグ パッケージの呼び出し、 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッドまたは[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)式の値を取得します。 `IDebugExpression2::EvaluateAsync` コマンド/イミディ エイト ウィンドウから呼び出されます。 その他のすべての UI コンポーネントを呼び出す`IDebugExpression2::EvaluateSync`します。
+3. デバッグ パッケージは、式の値を取得する[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッドまたは[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)メソッドを呼び出します。 `IDebugExpression2::EvaluateAsync`はコマンド/イミディエイト ウィンドウから呼び出されます。 その他のすべての UI`IDebugExpression2::EvaluateSync`コンポーネントは、 を呼び出します。
 
-4. 式の評価の結果は、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトで、名前、種類、および式の評価の結果の値が含まれています。
+4. 式の評価の結果は、式の評価結果の名前、型、および値を含む[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトです。
 
-   式の評価中に、EE にシンボル プロバイダー コンポーネントからの情報が必要です。 シンボル プロバイダーでは、識別し、解析された式を理解するために使用するシンボリック情報を提供します。
+   式の評価中、EE はシンボル プロバイダー コンポーネントからの情報を必要とします。 シンボル・プロバイダーは、構文解析された式を識別および理解するために使用される記号情報を提供します。
 
-   非同期式の評価が完了したら、非同期のイベントは、式の評価が完了したことを IDE に通知する、DE、セッション デバッグ マネージャー (SDM) を使用して送信されます。 評価の結果への呼び出しから返されます、`IDebugExpression2::EvaluateSync`メソッド。
+   非同期式の評価が完了すると、非同期イベントは、DE によってセッションのデバッグ マネージャー (SDM) を介して、式の評価が完了したことを IDE に通知するために送信されます。 そして、評価の結果は`IDebugExpression2::EvaluateSync`、メソッドの呼び出しから返されます。
 
 ## <a name="implementation-notes"></a>実装に関するメモ
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジンが共通言語ランタイム (CLR) のインターフェイスを使用して、式エバリュエーターと対話する予定です。 その結果、式エバリュエーターと連動する、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジンは、CLR をサポートする必要があります (一部である、debugref.doc で見つかるすべての CLR デバッグのインターフェイスの完全な一覧の[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)])。
+ デバッグ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]エンジンは、共通言語ランタイム (CLR) インターフェイスを使用して式エバリュエーターと対話することを期待します。 その結果、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジンと連携する式エバリュエーターが CLR をサポートする必要があります (すべての CLR デバッグ インターフェイスの完全な一覧は、[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]の一部である debugref.doc にあります)。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)
+- [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)

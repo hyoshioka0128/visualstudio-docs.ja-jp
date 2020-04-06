@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3 |Microsoft Docs
+title: Iデバッグプロセス3 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8db169a06864fad24ef7e6ce4c2d188e2a88ef1d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313855"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723544"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-このインターフェイスは、実行中のプロセスとそのプログラムを表します。 このインターフェイスは、いくつかのメソッドの代替が存在する、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス。 プロセスのすべてのプログラムに制御を提供します。
+このインターフェイスは、実行中のプロセスとそのプログラムを表します。 このインターフェイスは[、IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスのいくつかのメソッドの代わりとして存在します。 プロセス内のすべてのプログラムを制御できます。
 
 > [!NOTE]
-> [引き続き](../../../extensibility/debugger/reference/idebugprogram2-continue.md)、 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)、および[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)メソッドは非推奨し、使用できなくする必要があります。 対応するメソッドを使用して、`IDebugProcess3`インターフェイスの代わりにします。
+> [続行](../../../extensibility/debugger/reference/idebugprogram2-continue.md)、[実行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)、および[ステップ](../../../extensibility/debugger/reference/idebugprogram2-step.md)の各メソッドは非推奨となり、使用しないでください。 代わりに、インターフェイスで対応`IDebugProcess3`するメソッドを使用します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,35 +31,35 @@ ms.locfileid: "66313855"
 IDebugProcess3 : IDebugProcess2
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- このインターフェイスは、グループとしてプログラムを管理するカスタム ポートのサプライヤーによって実装されます。 プログラムのグループとして管理対象は、その実行を制御し、式エバリュエーターの言語を確立できます。 ポート サプライヤーによってこのインターフェイスを実装する必要があります。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ このインターフェイスは、グループとしてプログラムを管理するカスタム ポート サプライヤーによって実装されます。 プログラムがグループとして管理されている場合、その実行を制御し、式エバリュエーターの言語を確立できます。 このインターフェイスは、ポート サプライヤーによって実装されている必要があります。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- このインターフェイスは、このプロセスで識別されたプログラムのグループと対話するために主にセッション デバッグ マネージャー (SDM) によって呼び出されます。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ このインターフェイスは、このプロセスで識別されたプログラムのグループと対話するために、主にセッション デバッグ マネージャー (SDM) によって呼び出されます。
 
- 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)をこのインターフェイスを取得するインターフェイス。
+ この[インターフェイス](/cpp/atl/queryinterface)を取得するには[、IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)インターフェイスでクエリ インターフェイスを呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 継承されたメソッドだけでなく[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)、`IDebugProcess3`次のメソッドを実装します。
+ [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)から継承されたメソッドに加えて`IDebugProcess3`、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|実行や、プロセスのステップが続行されます。|
-|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|プロセスの実行を開始します。|
-|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|手順は、1 つの命令またはプロセス内のステートメントを転送します。|
-|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|デバッグ プロセスを起動したことの理由を取得します。|
-|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|デバッグ エンジンは、適切な式エバリュエーターを読み込めるように、ホスト言語を設定します。|
-|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|このプロセスに設定されている言語を取得します。|
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|このプロセスの編集と続行 (ENC) を無効にします。<br /><br /> カスタム ポート サプライヤーはこのメソッドを実装していません (常に返すことは`E_NOTIMPL`)。|
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|このプロセスの ENC の状態を取得します。<br /><br /> カスタム ポート サプライヤーはこのメソッドを実装していません (常に返すことは`E_NOTIMPL`)。|
+|[続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|プロセスの実行を継続するか、プロセスをステップ実行します。|
+|[実行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|プロセスの実行を開始します。|
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|プロセス内の 1 つの命令またはステートメントを進めます。|
+|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|デバッグ用にプロセスが起動された理由を取得します。|
+|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|デバッグ エンジンが適切な式エバリュエーターを読み込むことができるように、ホスティング言語を設定します。|
+|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|このプロセスに現在設定されている言語を取得します。|
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|このプロセスのエディット コンティニュ (ENC) を無効にします。<br /><br /> カスタム ポート サプライヤーはこのメソッドを実装しません (常に`E_NOTIMPL`返す必要があります)。|
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|このプロセスの ENC 状態を取得します。<br /><br /> カスタム ポート サプライヤーはこのメソッドを実装しません (常に`E_NOTIMPL`返す必要があります)。|
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|使用可能なデバッグ エンジンの一意の識別子の配列を取得します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー:Msdbg.h
+ ヘッダー: Msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

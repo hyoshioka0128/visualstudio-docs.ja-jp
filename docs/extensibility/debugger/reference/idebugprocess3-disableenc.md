@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC |Microsoft Docs
+title: Iデバッグプロセス3::D可能なENC |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3ee29540a11248a299d65c32cf2c8396b1fa2ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314060"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723736"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-このメソッドに明示的に無効にします。 エディット コンティニュでこのプロセス (およびすべてのプログラムが含まれています)。 カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。
+このメソッドは、このプロセス (およびこのプロセスに含まれるすべてのプログラム) でエディット コンティニュを明示的に無効にします。 カスタム ポートサプライヤーは常に`E_NOTIMPL`を返す必要があります。
 
 ## <a name="syntax"></a>構文
 
@@ -40,16 +40,16 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>パラメーター
 `reason`\
-[in]値、 [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)列挙体。
+[in][列挙体](../../../extensibility/debugger/reference/encunavailablereason.md)の値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 > [!NOTE]
-> カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。
+> カスタム ポートサプライヤーは常に`E_NOTIMPL`を返す必要があります。
 
 ## <a name="remarks"></a>Remarks
- 1 回の編集しプロセスの続行は無効です、プロセスを再起動することによってのみ再度有効にできます。
+ エディット コンティニュが無効になっているプロセスは、プロセスを再起動することによってのみ再度有効にできます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

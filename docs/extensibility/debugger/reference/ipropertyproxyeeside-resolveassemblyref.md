@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef |Microsoft Docs
+title: アセンブリの再設定を行う |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d2fd21b39e171238319c857ad0384db1d7635d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353453"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714888"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-指定したマネージ アセンブリの参照の場所を決定します。
+指定したマネージ アセンブリ参照の場所を決定します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,25 +49,25 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>パラメーター
 `assemName`\
-[in]解決するのには、アセンブリの名前です。
+[in]解決するアセンブリの名前。
 
 `assemBytes`\
-[out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)参照に関連付けられているアセンブリのバイト数を格納しているオブジェクト。
+[アウト]参照に関連付けられているアセンブリバイトを含む[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクトを返します。
 
 `assemPdb`\
-[out]返します、`IEEDataStorage`シンボルを含むオブジェクトがこの参照に関連付けられているデータを格納します。
+[アウト]この参照`IEEDataStorage`に関連付けられているシンボル ストア データを格納しているオブジェクトを返します。
 
 `assemLocation`\
-[out]この参照のパスの場所を返します。
+[アウト]この参照のパスの場所を返します。
 
 `alr`\
-[out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)この参照のアセンブリの場所を示す列挙値。
+[アウト]この参照のアセンブリの場所を示す[値を、アセンブリの LOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列挙体から返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 通常、このメソッドはカスタム式エバリュエーターでは実装されません。
+ 通常、このメソッドは、カスタム式エバリュエーターによって実装されません。
 
 ## <a name="see-also"></a>関連項目
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
