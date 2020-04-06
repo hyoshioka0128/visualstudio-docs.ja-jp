@@ -1,5 +1,5 @@
 ---
-title: Assembly 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: アセンブリ要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13c52b7f913e35ace3e0fd41227e27b6c00e90e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352196"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740035"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Assembly 要素 (Visual Studio テンプレート)
-そのアセンブリの参照をプロジェクトに追加するテンプレートを使用して、アセンブリに関する情報を指定します。
+# <a name="assembly-element-visual-studio-templates"></a>アセンブリ要素
+テンプレートが、そのアセンブリの参照をプロジェクトに追加するために使用する、アセンブリに関する情報を指定します。
 
- \<VSTemplate> \<TemplateContent> \<References> \<Reference> \<Assembly>
+ \<VSTemplate \<> テンプレート\<コンテンツ>\<アセンブリ>>参照>参照\<
 
 ## <a name="syntax"></a>構文
 
@@ -36,23 +36,23 @@ ms.locfileid: "66352196"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[参照](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
+|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- このテキストは、項目テンプレートがインスタンス化されるときに、プロジェクトに追加するアセンブリを指定します。 このアセンブリの名前は、次の方法のいずれかで指定する必要があります。
+ このテキストは、項目テンプレートがインスタンス化されるときにプロジェクトに追加するアセンブリを指定します。 このアセンブリ名は、次のいずれかの方法で指定する必要があります。
 
-- アセンブリの完全名。 例えば:
+- 完全なアセンブリ名として使用します。 次に例を示します。
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "66352196"
     </Assembly>
     ```
 
-- 単純なテキストの参照。 例えば:
+- 単純なテキストリファレンスとして。 次に例を示します。
 
     ```
     <Assembly> System </Assembly>
@@ -69,10 +69,10 @@ ms.locfileid: "66352196"
 ## <a name="remarks"></a>Remarks
  `Assembly` は `Reference` に必須の子要素です。
 
- `Reference`、`References,`と`Assembly`要素でのみ使用できます *.vstemplate*を持つファイルを`Type`属性の値`Item`します。
+ および`Reference``References,``Type``Item`要素は、属性値が *.vstemplate*ファイルの場合にのみ使用できます。 `Assembly`
 
 ## <a name="example"></a>例
- 次の例を示しています、`TemplateContent`項目テンプレートの要素。 この XML への参照の追加、 *System.dll*と*System.Data.dll*アセンブリ。
+ 項目テンプレートの要素を`TemplateContent`次の例に示します。 この XML は *、System.dll*アセンブリおよび*System.Data.dll*アセンブリへの参照を追加します。
 
 ```
 <TemplateContent>
@@ -93,5 +93,5 @@ ms.locfileid: "66352196"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

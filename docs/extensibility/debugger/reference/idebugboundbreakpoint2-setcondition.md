@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition |Microsoft Docs
+title: バインドされたブレークポイント2::セット条件 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337444"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735466"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-設定またはバインドされたこのブレークポイントに関連付けられている条件を変更します。
+このバインドされたブレークポイントに関連付けられている条件を設定または変更します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>パラメーター
 `bpCondition`\
-[in]値、 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)状態を説明する列挙体。
+[in]条件を説明する[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)列挙体の値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`にバインドされたブレークポイント オブジェクトの状態が設定されてかどうか`BPS_DELETED`(の一部、 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙型)。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 バインド`E_BP_DELETED`されたブレークポイント オブジェクトの状態が[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙`BPS_DELETED`の一部) に設定されているかどうかを返します。
 
 ## <a name="remarks"></a>Remarks
- このブレークポイントに関連していた任意の条件は失われます。
+ このブレークポイントに以前に関連付けられていた条件は失われます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

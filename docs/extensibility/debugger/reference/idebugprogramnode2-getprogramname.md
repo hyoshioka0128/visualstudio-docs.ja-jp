@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName |Microsoft Docs
+title: プログラムノード2::プログラム名を取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetProgramName
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9882bd1686498bd9d1afc27f3a7edb695226a2f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721988"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 プログラムの名前を取得します。
@@ -41,16 +41,16 @@ int GetProgramName (
 
 ## <a name="parameters"></a>パラメーター
 `pbstrProgramName`\
-[out]プログラムの名前を返します。
+[アウト]プログラムの名前を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-このようなパスの部分もありますが、プログラムの名前、プログラムの名が、プログラムへのパスと同じものです。
+プログラムの名前はプログラムのパスと同じものではありませんが、プログラムの名前は、このようなパスの一部である場合があります。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CProgram`を実装するオブジェクト、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス。 `MakeBstr`関数は、BSTR として指定した文字列のコピーを割り当てます。
+次の例は[、IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス`CProgram`を実装する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。 この`MakeBstr`関数は、指定された文字列のコピーを BSTR として割り当てます。
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {

@@ -1,5 +1,5 @@
 ---
-title: BuildOnLoad 属性と要素 (Visual Studio テンプレート)
+title: 属性と要素のビルドオン読み込み
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - BuildOnLoad attribute [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32056aae3c860aee250248c606bbda4dbf9506c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321271"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739964"
 ---
-# <a name="buildonload-attribute-and-element"></a>BuildOnLoad 属性と要素
+# <a name="buildonload-attribute-and-element"></a>属性と要素の組み込み
 
-作成後すぐにプロジェクトをビルドするかどうかを指定します。 **BuildOnLoad**は属性と要素の両方です。
+プロジェクトを作成した直後にビルドするかどうかを指定します。 **ビルドオンロード**は、属性と要素の両方です。
 
 要素の階層:
 
@@ -33,7 +33,7 @@ ms.locfileid: "66321271"
     <BuildOnLoad>
 ```
 
-## <a name="element-syntax"></a>要素の構文
+## <a name="element-syntax"></a>要素構文
 
 ```xml
 <BuildOnLoad> true/false </BuildOnLoad>
@@ -47,15 +47,15 @@ ms.locfileid: "66321271"
 
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が必要です、 **BuildOnLoad**要素。 テキストがいずれかにする必要があります`true`または`false`、作成後すぐにプロジェクトをビルドするかどうかを示します。
+要素の**テキスト**値が必要です。 テキストは、プロジェクトの`true`作成`false`直後にビルドするかどうかを示す または のいずれかである必要があります。
 
 ## <a name="remarks"></a>Remarks
 
-**BuildOnLoad**はオプションの属性です。 既定値は `false` です。
+**ビルドオンロード**は省略可能な属性です。 既定値は `false` です。
 
 ## <a name="example"></a>例
 
-メタデータの次の例に示します、C#テンプレートと**BuildOnLoad**要素として使用されます。
+次の例は、要素として**BuildOnLoad**が使用されている場合の C# テンプレートのメタデータを示しています。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ ms.locfileid: "66321271"
 
 ## <a name="see-also"></a>関連項目
 
-- [BuildProjectOnload 要素](buildprojectonload-element-visual-studio-templates.md)
-- [TemplateContent 要素](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [要素をビルドします。](buildprojectonload-element-visual-studio-templates.md)
+- [テンプレートコンテンツ要素](../extensibility/templatecontent-element-visual-studio-templates.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)

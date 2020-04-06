@@ -1,31 +1,31 @@
 ---
-title: AsyncVoidMethodBuilder 構造体の内部メンバー |Microsoft Docs
+title: 構造体 - 内部メンバー |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, AsyncVoidMethodBuilder structure [.NET Framework]
 - AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109f7d0491420ce4f3df2179dad15a582213d439
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 866a53fae7bb2cc5325112b84d992da6f95af246
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350940"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739297"
 ---
-# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 構造体の内部メンバー
-このトピックでの内部メンバーの説明、<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>クラス。 このクラスの詳細については、次を参照してください。、<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>リファレンス トピック。
+# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>構造体 - 内部メンバー
+このトピックでは、クラスの内部メンバーについて<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>説明します。 このクラスの一般的な情報については、<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>参照トピックを参照してください。
 
- **名前空間:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **名前空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **アセンブリ:** mscorlib (mscorlib.dll 内)
 
- .NET Framework からこれらの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ これらの内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -39,9 +39,9 @@ ms.locfileid: "66350940"
 
 |名前|説明|
 |----------|-----------------|
-|[ObjectIdForDebugger プロパティ](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|デバッガーには、このビルダーを一意に識別するために使用するオブジェクトを取得します。|
-|[m_objectIdForDebugger フィールド](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|このビルダーを一意に識別するために、デバッガーによって使用される遅れて初期化されるオブジェクトを表します。|
+|[プロパティ](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|デバッガーに対してこのビルダーを一意に識別するために使用できるオブジェクトを取得します。|
+|[m_objectIdForDebuggerフィールド](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|このビルダーを一意に識別するためにデバッガーによって使用される、怠惰に初期化されたオブジェクトを表します。|
 
 ## <a name="see-also"></a>関連項目
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [.NET Framework の並列拡張機能の内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [NET フレームワークの並列拡張内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

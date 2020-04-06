@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::GetService |Microsoft Docs
+title: 検証評価器2::ゲットサービス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::GetService
 - GetService
 ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42a4027b4153f262eb8164a915f229f04c7cbed4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325563"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729355"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-その一意識別子を指定したサービス オブジェクトを取得します。
+一意の識別子を指定してサービス オブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,16 +42,16 @@ int GetService (
 
 ## <a name="parameters"></a>パラメーター
 `uid`\
-[in]取得するサービスの一意の識別子。
+[in]取得するサービスを表す一意の識別子です。
 
 `ppService`\
-[out]サービスを表すオブジェクトを返します。
+[アウト]サービスを表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- これは、別の式エバリュエーターからサービスを取得するサード パーティ製の式エバリュエーターで使用できます。 たとえば、このメソッドは、既定の式エバリュエーターからビジュアライザー サービスのインターフェイスを取得する使用でした。 サード パーティ製の式エバリュエーターされない可能性があるこのインターフェイスを実装する必要があります。
+ これは、他の式エバリュエーターからサービスを取得するために、サードパーティの式エバリュエーターによって使用できます。 たとえば、このメソッドを使用して、ビジュアライザー サービスのインターフェイスを既定の式エバリュエーターから取得できます。 サードパーティ式エバリュエーターは、このインターフェイスを実装する必要はほとんどありません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

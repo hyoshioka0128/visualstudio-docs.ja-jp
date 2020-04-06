@@ -1,25 +1,25 @@
 ---
-title: Bitmaps 要素 |Microsoft Docs
+title: ビットマップ要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00486f4edd68d2cc5e158d567a28f78ef12f8cd1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333397"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739991"
 ---
-# <a name="bitmaps-element"></a>Bitmaps 要素
-グループ[ビットマップ要素](../extensibility/bitmap-element.md)要素。
+# <a name="bitmaps-element"></a>ビットマップ要素
+[ビットマップ要素の要素を](../extensibility/bitmap-element.md)グループ化します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,20 +37,20 @@ ms.locfileid: "66333397"
 
 |属性|説明|
 |---------------|-----------------|
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[Bitmaps 要素](../extensibility/bitmaps-element.md)|ビットマップの要素をグループ化します。|
-|[Bitmap 要素](../extensibility/bitmap-element.md)|ビットマップを定義します。|
+|[ビットマップ要素](../extensibility/bitmaps-element.md)|ビットマップ要素をグループ化します。|
+|[ビットマップ要素](../extensibility/bitmap-element.md)|ビットマップを定義します。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[Commands 要素](../extensibility/commands-element.md)|VSPackage のツールバーのコマンドのコレクションを表します。|
+|[コマンド要素](../extensibility/commands-element.md)|VSPackage ツール バーのコマンドのコレクションを表します。|
 
 ## <a name="example"></a>例
 
@@ -63,5 +63,5 @@ ms.locfileid: "66333397"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VSPackages がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

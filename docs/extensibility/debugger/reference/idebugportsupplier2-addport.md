@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::AddPort |Microsoft Docs
+title: IDebugポートサプライヤー2::AddPort |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 245c14e2aaa6867f964a2beec7bcbc232b5800be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340276"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724739"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 ポートを追加します。
@@ -43,16 +43,16 @@ int AddPort( 
 
 ## <a name="parameters"></a>パラメーター
 `pRequest`\
-[in][IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)オブジェクトを追加するポートについて説明します。
+[in]追加するポートを記述する[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)オブジェクト。
 
 `ppPort`\
-[out]返します、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)ポートを表すオブジェクト。
+[アウト]ポートを表す[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 実際には、このメソッドは、アクティブなポートのポート サプライヤーの内部一覧に追加するほか、要求されたポートを作成します。 [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)メソッドは時間がかかるが遅延する可能性を回避するために最初に呼び出すことができます。
+ このメソッドは、実際には、要求されたポートを作成するだけでなく、アクティブなポートのポートサプライヤーの内部リストに追加します。 時間のかかる遅延を回避するために[、CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)メソッドを最初に呼び出すことができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement |Microsoft Docs
+title: を指定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322219"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736174"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 配列の要素を取得します。
@@ -46,13 +46,13 @@ int GetElement(
 [in]要素のインデックス。
 
 `ppElement`\
-[out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)要素を表すインターフェイス。
+[アウト]要素を表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、1 次元の配列として配列オブジェクトが多次元である場合でもすべて配列オブジェクトの要素のように表示されます。 など、配列を指定して`myarray[3][2][6]`と`dwIndex`20 のパラメーターは、このメソッドは、要素から`myarray[1][1][2]`、および`dwIndex`21 のパラメーターは元の要素を返します`myarray[1][1][3]`します。 使用して、 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)メソッドを配列の要素の合計数を決定します。
+ このメソッドは、配列オブジェクトが多次元であっても、配列オブジェクトのすべての要素を 1 次元配列として認識します。 たとえば、`myarray[3][2][6]`配列と`dwIndex`パラメータが 20 の場合、このメソッドは 要素を`myarray[1][1][2]`から返し`dwIndex`、パラメータ 21 は 要素`myarray[1][1][3]`を 返します。 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)メソッドを使用して、配列内の要素の総数を調べます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

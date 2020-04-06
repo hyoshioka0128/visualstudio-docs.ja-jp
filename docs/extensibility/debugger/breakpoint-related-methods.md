@@ -1,86 +1,86 @@
 ---
-title: ブレークポイントに関連するメソッド |Microsoft Docs
+title: ブレークポイント関連メソッド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eec6f966720b5240a92a926a003c38a40d4aabc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332500"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739209"
 ---
-# <a name="breakpoint-related-methods"></a>ブレークポイントに関連するメソッド
-デバッグ エンジン (DE) には、ブレークポイントの設定をサポートする必要があります。 Visual Studio のデバッグには、次の種類のブレークポイントのサポートされています。
+# <a name="breakpoint-related-methods"></a>ブレークポイント関連のメソッド
+デバッグ エンジン (DE) は、ブレークポイントの設定をサポートする必要があります。 Visual Studio のデバッグでは、次の種類のブレークポイントがサポートされます。
 
-- バインドされています。
+- Bound
 
-     UI 経由で要求し、指定したコードの場所に正常にバインドされています。
+     UI を介して要求され、指定したコードの場所に正常にバインドされました
 
-- 保留
+- 保留中
 
-     UI が実際にまだバインドされていません手順を通じて要求
+     UI を通じて要求されたが、実際の命令にまだバインドされていない
 
-## <a name="discussion"></a>説明
- たとえば、保留中のブレークポイントは、手順がまだ読み込まれていないときに発生します。 コードが読み込まれるときに、保留中のコードで中断命令を挿入する、つまり所定の場所にあるコードにバインドするブレークポイントお試しください。 イベントは、バインド エラーがあったことを通知するかをバインドに成功を示すために、セッション デバッグ マネージャー (SDM) に送信されます。
+## <a name="discussion"></a>ディスカッション
+ たとえば、保留中のブレークポイントは、命令がまだ読み込まれていないときに発生します。 コードが読み込まれると、保留中のブレークポイントは、指定された場所のコードにバインドしようとします。 イベントは、バインドが成功したことを示すため、またはバインディング エラーがあったことを通知するために、セッション デバッグ マネージャー (SDM) に送信されます。
 
- 保留中のブレークポイントは、対応するバインドされたブレークポイントの内部リストにも管理します。 コードのいずれかの保留中のブレークポイント、多くのブレークポイントの挿入を可能性があります。 Visual Studio の UI のデバッグは保留中のブレークポイントのツリー ビューを示し、それに対応するブレークポイントをバインドします。
+ 保留中のブレークポイントは、対応するバインドされたブレークポイントの内部リストも管理します。 保留中のブレークポイントが 1 つあると、コードに多数のブレークポイントが挿入される可能性があります。 Visual Studio のデバッグ UI には、保留中のブレークポイントと、対応するバインドされたブレークポイントのツリー ビューが表示されます。
 
- 作成と保留中のブレークポイントの使用の実装が必要、 [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)メソッドと、次のメソッドの[IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス。
+ 保留中のブレークポイントの作成と使用には[、IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)メソッドの実装と[、IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイスの次のメソッドが必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|指定したかどうかを判断します。 保留中のブレークポイントをコードの場所にバインドできます。|
-|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|指定した保留中のブレークポイントが 1 つまたは複数のコードの場所にバインドします。|
-|[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|保留中のブレークポイントの状態を取得します。|
-|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|保留中のブレークポイントの作成に使用されるブレークポイント要求を取得します。|
-|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|保留中のブレークポイントの有効な状態を切り替えます。|
+|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|指定された保留中のブレークポイントをコードの場所にバインドできるかどうかを判断します。|
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|指定された保留中のブレークポイントを 1 つ以上のコードの場所にバインドします。|
+|[Getstate](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|保留中のブレークポイントの状態を取得します。|
+|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|保留中のブレークポイントの作成に使用するブレークポイント要求を取得します。|
+|[有効化](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|保留中のブレークポイントの有効な状態を切り替えます。|
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|保留中のブレークポイントからバインドされているすべてのブレークポイントを列挙します。|
-|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|保留中のブレークポイントに起因するすべてのエラー ブレークポイントを列挙します。|
-|[削除](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|保留中のブレークポイントとそこからバインドされているすべてのブレークポイントを削除します。|
+|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|保留中のブレークポイントから発生するすべてのエラー ブレークポイントを列挙します。|
+|[削除](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|保留中のブレークポイントと、そのブレークポイントからバインドされているすべてのブレークポイントを削除します。|
 
- バインドされたブレークポイントとブレークポイントのエラーを列挙するには、すべてのメソッドを実装する必要があります[IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)の[IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)します。
+ バインドされたブレークポイントとエラー ブレークポイントを列挙するには、[すべての](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)メソッドを実装する必要[があります。](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
 
- 保留中のブレークポイントをコードにバインドする場所は、次の実装を必要と[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)メソッド。
+ コードの場所にバインドする保留中のブレークポイントには、次の[IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)メソッドの実装が必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|ブレークポイントがある保留中のブレークポイントを取得します。|
-|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|バインドされたブレークポイントの状態を取得します。|
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|ブレークポイントを表すブレークポイント解像度を取得します。|
-|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|有効または、ブレークポイントを無効にします。|
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|ブレークポイントを含む保留中のブレークポイントを取得します。|
+|[Getstate](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|バインドされたブレークポイントの状態を取得します。|
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|ブレークポイントを記述するブレークポイントの解像度を取得します。|
+|[有効化](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|ブレークポイントを有効または無効にします。|
 |[削除](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|バインドされたブレークポイントを削除します。|
 
- 解像度と要求については、次の実装が必要に[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)メソッド。
+ 解決と要求の情報は、次の[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)メソッドの実装を必要とします。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|解像度によって表されるブレークポイントの種類を取得します。|
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|ブレークポイントを表すブレークポイント解像度の情報を取得します。|
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|解決によって表されるブレークポイントの種類を取得します。|
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|ブレークポイントを記述するブレークポイントの解像度情報を取得します。|
 
- バインド中に発生する可能性のあるエラーの解決には、次の実装が必要です[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)メソッド。
+ バインディング中に発生する可能性のあるエラーの解決には、次の[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)メソッドの実装が必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|エラーのブレークポイントを含む保留中のブレークポイントを取得します。|
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|エラーのブレークポイントを表すブレークポイントのエラーの解決を取得します。|
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|エラー ブレークポイントを含む保留中のブレークポイントを取得します。|
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|エラー ブレークポイントを記述するブレークポイント エラー解決を取得します。|
 
- バインド中に発生する可能性のあるエラーの解決は、の次のメソッドも必要があります。 [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)します。
+ バインディング中に発生する可能性のあるエラーの解決には、[次](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)のメソッドも必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|ブレークポイントの種類を取得します。|
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|ブレークポイントの解決の情報を取得します。|
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|ブレークポイントの解決情報を取得します。|
 
- メソッドを実装する必要がありますのブレークポイントのソース コードを表示[IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)のメソッドや[IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)します。
+ ブレークポイントでソース コードを表示するには[、IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)および/または[メソッドを実装](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)する必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [実行の制御と状態の評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [実行制御と状態評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 |Microsoft Docs
+title: プログラムプログラム2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f94e7ea830a49db5b95bae3d0d6c50f73e6d3d64
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343133"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721525"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-このインターフェイスは、デバッグ エンジン (DE) またはカスタム ポート サプライヤーがデバッグ用のプログラムを登録できます。
+このインターフェイスを使用すると、デバッグ エンジン (DE) またはカスタム ポート サプライヤーは、デバッグ用のプログラムを登録できます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,35 +28,35 @@ ms.locfileid: "66343133"
 IDebugProgramPublisher2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
-Visual Studio では、複数のプロセス間でのデバッグに表示されるようにするにはデバッグ中のプログラムを登録するには、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+Visual Studio では、デバッグ中のプログラムを登録して、複数のプロセス間でデバッグを行うために、デバッグ中のプログラムを登録するためにこのインターフェイスを実装しています。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-COM の呼び出し`CoCreateInstance`関数と`CLSID_ProgramPublisher`(例を参照してください) このインターフェイスを取得します。 DE、またはカスタムのポート サプライヤーは、デバッグ中のプログラムを表すプログラム ノードを登録するのにこのインターフェイスを使用します。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+COM の`CoCreateInstance`関数`CLSID_ProgramPublisher`を呼び出してこのインターフェイスを取得します (例を参照)。 DE またはカスタム ポート サプライヤーは、このインターフェイスを使用して、デバッグ中のプログラムを表すプログラム ノードを登録します。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
 このインターフェイスは、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|プログラム ノード使用できるように DEs およびセッション デバッグ マネージャー (SDM)。|
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|使用できなくするようにプログラム ノードを削除します。|
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|プログラムを DEs および、SDM を使用できるようにします。|
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|使用できなくするために、プログラムを削除します。|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|DEs とセッション デバッグ マネージャー (SDM) でプログラム ノードを使用できるようにします。|
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|プログラム ノードを削除して、使用できなくなった状態にします。|
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|プログラムを DEs および SDM で使用できるようにします。|
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|プログラムを削除して、使用できなくなった。|
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|デバッガーが存在することを示すフラグを設定します。|
 
 ## <a name="remarks"></a>Remarks
-このインターフェイスを使用可能プログラムとプログラムのノード (つまり、「公開」) DEs およびセッション デバッグ マネージャー (SDM) で使用します。 公開されたプログラムとプログラムのノードにアクセスするには、使用、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイス。 これは、Visual Studio は、プログラムをデバッグすることを認識できる唯一の方法です。
+このインターフェイスは、DEs とセッション デバッグ マネージャー (SDM) で使用するために、プログラムとプログラム ノードを利用できるようにします (つまり、それらを"公開" します)。 公開されたプログラムおよびプログラム ノードにアクセスするには[、IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイスを使用します。 これは、Visual Studio がプログラムがデバッグ中であることを認識できる唯一の方法です。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="example"></a>例
-この例では、プログラムの発行元をインスタンス化し、[プログラム] ノードを登録する方法を示します。 これは、チュートリアルから取得[公開プログラム ノード](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)します。
+この例では、プログラムの発行元をインスタンス化し、プログラム ノードを登録する方法を示します。 これは、チュートリアル「[プログラム ノードの公開」から取得します](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

@@ -1,35 +1,35 @@
 ---
-title: コード コンテキスト |Microsoft Docs
+title: コード コンテキスト |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11554be1411e63c97c8afde7cc3a819486e862ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6424c1182f30b1bbfe6c166209b94afb7ec45549
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351325"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739154"
 ---
 # <a name="code-context"></a>コード コンテキスト
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、デバッグ、**コード コンテキスト**:
+デバッグ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]では、**コード コンテキスト**:
 
-- デバッグ エンジン (DE) に既知としては、コード内の位置の抽象化を提供します。 ほとんどのランタイム アーキテクチャの今日では、コードのコンテキストできます見なすことがプログラムの命令ストリーム内のアドレス。 従来とは異なる言語では、コードは、命令表現いない可能性があります、その他のいくつかの方法でコードのコンテキストを表すことができます。
+- デバッグ エンジン (DE) に既知のコード内の位置の抽象化を提供します。 今日のほとんどの実行時アーキテクチャでは、コード コンテキストはプログラムの命令ストリームのアドレスと考えることができます。 コードが命令で表されない非伝統的な言語の場合、コード コンテキストは他の方法で表される場合があります。
 
-- デバッグ中のプログラムの実行のストリームの現在の位置をについて説明します。
+- デバッグ中のプログラムの実行ストリーム内の現在の位置を記述します。
 
-- ブレークポイントにプログラムが停止時にのみ存在します。
+- プログラムがブレークポイントで停止した場合にのみ存在します。
 
-- 関連付けられているドキュメント コンテキストがあります。
+- 関連付けられたドキュメント コンテキストがあります。
 
-- によって実装される、 [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md)インターフェイス。
+- インターフェイスによって実装されます。 [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md)
 
 ## <a name="see-also"></a>関連項目
 - [ドキュメントのコンテキスト](../../extensibility/debugger/document-context.md)
-- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)
+- [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)

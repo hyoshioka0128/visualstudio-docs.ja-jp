@@ -1,28 +1,28 @@
 ---
-title: NotifyDebuggerOfWaitCompletion メソッド |Microsoft Docs
+title: メソッドを通知する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a3280a24ad7f9d4045c9a1bff6ca2b44c724325
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350635"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738335"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion メソッド
-プレース ホルダー メソッドは、デバッガーがブレークポイント ターゲットとして使用します。 この方法には、インライン、または最適化されたできないする必要があります。
+# <a name="notifydebuggerofwaitcompletion-method"></a>メソッドを通知します。
+デバッガーによってブレークポイント ターゲットとして使用されるプレースホルダー メソッド。 このメソッドは、インライン化または最適化しないでください。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
 ## <a name="syntax"></a>構文
 
@@ -31,7 +31,7 @@ private void NotifyDebuggerOfWaitCompletion()
 ```
 
 ## <a name="remarks"></a>Remarks
- タスクですべての結合操作は、デバッガー通知ビットが設定されている場合、このメソッドを呼び出す必要があります。
+ タスクを使用するすべての結合操作は、デバッガー通知ビットが設定されている場合、このメソッドを呼び出す必要があります。
 
 ## <a name="requirements"></a>必要条件
 

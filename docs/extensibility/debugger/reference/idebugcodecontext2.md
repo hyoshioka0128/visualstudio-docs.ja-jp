@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2 |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59573736ca3cd0768d3383e5621d96dffdea9746
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338902"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734217"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
-このインターフェイスは、コードの命令の開始位置を表します。 ほとんどのランタイム アーキテクチャの今日では、コードのコンテキストできます見なすことがプログラムの実行のストリーム内のアドレス。
+このインターフェイスは、コード命令の開始位置を表します。 今日のほとんどの実行時アーキテクチャでは、コード コンテキストはプログラムの実行ストリームのアドレスと考えることができます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,29 +28,29 @@ ms.locfileid: "66338902"
 IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジンでは、ドキュメントの位置にコード命令の位置を関連付けるには、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジンは、コード命令の位置をドキュメントの位置に関連付けるために、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 多くのインターフェイスのメソッドは通常、このインターフェイスを返す[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)します。 組み合わせて広範に使用したことも、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)ブレークポイント解像度の情報のようにも使用するインターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ 多くのインターフェイスのメソッドは、このインターフェイスを返[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)します。 また、ブレークポイントの解像度情報だけでなく[、IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)インターフェイスで広く使用されています。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- メソッドだけでなく、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスでは、このインターフェイスは、次のメソッドを実装します。
+ このインターフェイスは[、IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|アクティブなコードのコンテキストに対応するドキュメントのコンテキストを取得します。|
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|このコードのコンテキストの言語情報を取得します。|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|アクティブなコード コンテキストに対応するドキュメント コンテキストを取得します。|
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|このコード コンテキストの言語情報を取得します。|
 
 ## <a name="remarks"></a>Remarks
- 主な違い、`IDebugCodeContext2`インターフェイスと[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスは、`IDebugCodeContext2`命令配置は常にします。 つまり、`IDebugCodeContext2`一方、命令の場合の先頭を指すことが常に、`IDebugMemoryContext2`ランタイム アーキテクチャのメモリのすべてのバイトを指すこともできます。 `IDebugCodeContext2` 基本的なストレージ サイズ (通常はバイト) ではなく、命令がインクリメントされます。
+ インターフェイスと[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスの主な違いは、`IDebugCodeContext2`常に命令に整列されるということです。 `IDebugCodeContext2` つまり、a`IDebugCodeContext2`は常に命令の先頭を指し示しますが`IDebugMemoryContext2`、実行時アーキテクチャではメモリの任意のバイトを指している可能性があります。 `IDebugCodeContext2`は、基本ストレージ・サイズ (通常はバイト) ではなく、命令によって増分されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules |Microsoft Docs
+title: IDebug 式エバリュエーター2::Pリロードモジュール |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::PreloadModules
 - PreloadModules
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46df8c3d50a08098ca75e7b115a931ad7580a91b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325505"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729322"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-指定されたシンボル プロバイダーが指定したモジュールをプリロードします。
+指定したシンボル プロバイダーによって指定されたモジュールをプリロードします。
 
 ## <a name="syntax"></a>構文
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>パラメーター
 `pSym`\
-[in]対象のモジュールをプリロードするシンボル プロバイダー。
+[in]モジュールがプリロードされるシンボル プロバイダー。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-この省略可能なメソッドは、ホスト プロセスのアタッチを行うときに使用されます。 これにより、EE 'ウォーム アップする ' にアタッチの一部として。
+このオプションのメソッドは、ホスティング プロセスアタッチを行う場合に使用されます。 これは、EEにアタッチの一部として「ウォームアップ」する機会を与えます。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **ExpressionEvaluatorPackage**を公開するオブジェクト、 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)インターフェイス。
+次の例は[、IDebug](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) **式エバリュエーター** 2 インターフェイスを公開するオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

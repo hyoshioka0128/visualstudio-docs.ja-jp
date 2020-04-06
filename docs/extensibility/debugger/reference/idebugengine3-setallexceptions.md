@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions |Microsoft Docs
+title: Iデバッグエンジン3::セットオール例外 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77c34ec86eb9c06b844803765319730313cffd9e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352481"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730792"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
-このメソッドは、すべての未処理例外の状態を設定します。
+このメソッドは、未処理のすべての例外の状態を設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int SetAllExceptions(
 
 ## <a name="parameters"></a>パラメーター
 `dwState`\
-[in]1 つ、 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)値。
+[in][EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)値の 1 つ。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

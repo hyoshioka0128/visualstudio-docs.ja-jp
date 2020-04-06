@@ -1,58 +1,58 @@
 ---
-title: プログラムの起動 |Microsoft Docs
+title: プログラムの起動 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9488c002e78828471374b954550843e16ff0e6b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344083"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738483"
 ---
-# <a name="launch-a-program"></a>プログラムを起動します。
-プログラムをデバッグする必要のあるユーザーがキーを押して**F5** IDE からデバッガーを実行します。 これには、一連の最終的に接続されている、または接続されているプログラムに次のようにさらにデバッグ エンジン (DE) への接続を IDE のイベントが開始されます。
+# <a name="launch-a-program"></a>プログラムを起動する
+プログラムをデバッグするユーザーは **、F5**キーを押して IDE からデバッガーを実行できます。 これにより、最終的に IDE がデバッグ エンジン (DE) に接続される一連のイベントが開始され、次のようにプログラムに接続またはアタッチされます。
 
-1. IDE は、ソリューションのアクティブなプロジェクトのデバッグの設定を取得するプロジェクトのパッケージを最初に呼び出します。 設定には、開始ディレクトリ、環境変数、プログラムを実行するポートおよび指定されている場合に使用して、プログラムを作成する DE が含まれます。 これらの設定は、パッケージのデバッグに渡されます。
+1. IDE は、まずプロジェクト パッケージを呼び出して、ソリューションのアクティブなプロジェクトデバッグ設定を取得します。 設定には、開始ディレクトリ、環境変数、プログラムを実行するポート、プログラムの作成に使用する DE (指定されている場合) が含まれます。 これらの設定はデバッグ パッケージに渡されます。
 
-2. デが指定されている場合、DE、プログラムを起動するオペレーティング システムを呼び出します。 プログラムを起動するには、結果として、プログラムの実行時環境が読み込まれます。 たとえば、プログラムが MSIL で書き込まれた場合、プログラムを実行する共通言語ランタイムが呼び出されます。
+2. DE が指定されている場合、DE はオペレーティング・システムを呼び出してプログラムを起動します。 プログラムを起動した結果、プログラムのランタイム環境が読み込まれます。 たとえば、プログラムが MSIL で記述されている場合、共通言語ランタイムが呼び出され、プログラムが実行されます。
 
-    - または -
+    \- または -
 
-    デが指定されていない場合、ポートは、これにより、プログラムの実行時の環境を読み込むと、プログラムを起動するオペレーティング システムを呼び出します。
-
-   > [!NOTE]
-   > プログラムを起動する、DE を使用する場合は、同じ DE をプログラムにアタッチすることが高くなります。
-
-3. かどうか、DE またはポートは、プログラムを起動することによって、DE または実行時環境プログラムの説明、またはノードを作成し、プログラムを実行しているポートを通知します。
+    DE が指定されていない場合、ポートはオペレーティング システムを呼び出してプログラムを起動します。
 
    > [!NOTE]
-   > プログラム ノードがデバッグ可能なプログラムの簡易表現であるために、実行時環境が、[プログラム] ノードを作成することをお勧めします。 作成し、[プログラム] ノードを登録するだけの全体の DE を読み込む必要はありません。 デが設計されている場合は、IDE が IDE のプロセスで実行するが実際に実行されている、ポートに、[プログラム] ノードを追加できるコンポーネントを使用する必要がありません。
+   > DE を使用してプログラムを起動する場合、同じ DE がプログラムにアタッチされる可能性があります。
 
-   他のすべてのプログラムと共に、新しく作成されたプログラムは、関連、関係のないまたは起動、または、同じ IDE からデバッグ セッションを作成する接続を。
+3. DE またはポートがプログラムを起動したかどうかに応じて、DE またはランタイム環境は、プログラムの説明またはノードを作成し、プログラムが実行されていることをポートに通知します。
 
-   プログラムでは、最初に押されたとき**F5**、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のデバッグ パッケージがプロジェクト パッケージ (これに関連付けられた起動されるプログラムの種類) を呼び出しを通じて、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>メソッドで、順番に入力し、<xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2>ソリューションのアクティブなプロジェクトのデバッグ設定を含む構造体。 この構造体に戻されるデバッグ パッケージを呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A>メソッド。 パッケージのデバッグには、セッション デバッグ マネージャー (SDM) がデバッグし、関連するデバッグ エンジンをされているプログラムを起動し、インスタンス化します。
+   > [!NOTE]
+   > プログラム ノードはデバッグ可能なプログラムの軽量表現であるため、ランタイム環境でプログラム ノードを作成することをお勧めします。 プログラムノードを作成して登録するためだけに、DE全体をロードする必要はありません。 DE が IDE のプロセスで実行されるように設計されているが、実際に実行されている IDE がない場合は、ポートにプログラムノードを追加できるコンポーネントが必要です。
 
-   使用して、プログラムの起動を DE の GUID では、SDM に渡される引数のいずれか。
+   新しく作成されたプログラムは、関連または無関係の他のプログラムと共に、同じ IDE から起動またはアタッチされて、デバッグセッションを構成します。
 
-   DE GUID がない場合`GUID_NULL`、SDM は併置、DE を作成しを呼び出してその[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッドは、プログラムを起動します。 たとえば、プログラムが、ネイティブ コードで記述された`IDebugEngineLaunch2::LaunchSuspended`が呼び出す可能性があります`CreateProcess`と`ResumeThread`(Win32 関数) をプログラムを実行します。
+   プログラムを使用すると、ユーザーが**F5**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]キーを押すと、デバッグ パッケージは<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>メソッドを通じてプロジェクト パッケージ (起動中のプログラムの種類に関連付けられている) を<xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2>呼び出し、ソリューションのアクティブなプロジェクト デバッグ設定を構造体に入力します。 この構造体は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A>メソッドの呼び出しを通じてデバッグ パッケージに返されます。 デバッグ パッケージは、セッション デバッグ マネージャー (SDM) をインスタンス化し、デバッグ中のプログラムと関連付けられたデバッグ エンジンを起動します。
 
-   プログラムを起動するには、結果として、プログラムの実行時環境が読み込まれます。 デまたはランタイム環境を作成し、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)プログラムを記述するインターフェイスし、このインターフェイスを渡します[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)にポートがあるプログラムを通知するには実行中です。
+   SDM に渡される引数の 1 つは、プログラムの起動に使用される DE の GUID です。
 
-   場合`GUID_NULL`ポートがプログラムを起動し、渡されます。 実行時環境を作成、プログラムが実行されている、`IDebugProgramNode2`プログラムを記述するインターフェイスし、それを`IDebugPortNotify2::AddProgramNode`します。 これには、プログラムを実行しているポートに通知します。 SDM は、デバッグ エンジンを実行中のプログラムにアタッチします。
+   DE GUID が`GUID_NULL`でない場合、SDM は DE を共同作成し、[その LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッドを呼び出してプログラムを起動します。 たとえば、プログラムがネイティブ コードで記述されている場合、`IDebugEngineLaunch2::LaunchSuspended`プログラムを実行`CreateProcess`するために`ResumeThread`、プログラムを呼び出して (Win32 関数を) 呼び出す可能性があります。
+
+   プログラムを起動した結果、プログラムのランタイム環境がロードされます。 次に、DE またはランタイム環境は、プログラムを記述する[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイスを作成し、プログラムが実行されていることをポートに通知するためにこのインターフェイスを[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)に渡します。
+
+   渡`GUID_NULL`された場合、ポートはプログラムを起動します。 プログラムが実行されると、ランタイム環境は、プログラムを`IDebugProgramNode2`記述するインターフェイスを作成し、それを に渡します`IDebugPortNotify2::AddProgramNode`。 これにより、プログラムが実行されていることをポートに通知します。 次に、SDM は実行中のプログラムにデバッグ エンジンをアタッチします。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [ポートへの通知](../../extensibility/debugger/notifying-the-port.md)プログラムが起動され、ポートの通知後の動作について説明します。
+ [ポートへの通知](../../extensibility/debugger/notifying-the-port.md)プログラムが起動され、ポートに通知された後に発生する処理について説明します。
 
- [起動後のアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)デバッグ セッションが、DE をプログラムにアタッチする準備ができたときについて説明します。
+ [起動後のアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)デバッグ セッションがプログラムに DE をアタッチする準備ができたときに文書化されます。
 
 ## <a name="related-sections"></a>関連項目
- [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)さまざまなプログラムの起動や式の評価などのタスクのデバッグへのリンクが含まれています。
+ [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)プログラムの起動や式の評価など、さまざまなデバッグ タスクへのリンクが含まれています。

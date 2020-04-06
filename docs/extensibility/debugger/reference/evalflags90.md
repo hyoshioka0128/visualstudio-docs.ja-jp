@@ -1,27 +1,27 @@
 ---
-title: EVALFLAGS90 | Microsoft Docs
+title: エヴァルフェッス90 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24afc4456570ff0c3e5dc1eb56789984bf18ac58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337829"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737106"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-式の評価を制御するフラグの有効な値を列挙します。 この列挙体を拡張、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体。
+式の評価を制御するフラグの有効な値を列挙します。 この列挙体は[、EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体を拡張します。
 
 ## <a name="syntax"></a>構文
 
@@ -66,25 +66,25 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>フィールド
 `EVAL90_RETURNVALUE`\
-存在する場合は、戻り値に評価することを指定します。
+戻り値がある場合は評価されることを指定します。
 
 `EVAL90_NOSIDEEFFECTS`\
 副作用を許可しないことを指定します。
 
 `EVAL90_ALLOWBPS`\
-ブレークポイントの停止を指定します。
+ブレークポイントで停止を指定します。
 
 `EVAL90_ALLOWERRORREPORT`\
-そのエラーを許可するホストにレポートを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
+許可するホストへのエラー報告を指定します。 主に、Internet Explorer のスクリプトで式の評価に使用されます。
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。
+関数を呼び出すのではなく、関数をアドレスとして評価するように強制します。
 
 `EVAL90_NOFUNCEVAL`\
-関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
+関数が評価されないようにします。 たとえば、 式`int``myExpression(int) + 10`のトークンを考えてみましょう。 この関数は、アドレスとして正しく評価できますが、値としては評価できません。
 
 `EVAL90_NOEVENTS`\
-セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。
+式の評価中に発生したイベントをセッションデバッグ マネージャー (SDM) または IDE に送信しないことを示すフラグ。
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
 デザイン時の式の評価を有効にします。
@@ -93,14 +93,14 @@ public enum enum_EVALFLAGS90
 暗黙的な変数の作成を許可します。
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-直ちに強制的に評価します。 これは、機能は、ユーザーの要求など、要求を処理するときに便利です。
+強制的に評価を即時に行います。 これは、ユーザー要求などの要求を処理する場合に便利です。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー:Msdbg90.h
+ヘッダー: Msdbg90.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

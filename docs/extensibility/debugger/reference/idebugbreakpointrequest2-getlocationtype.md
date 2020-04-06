@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType |Microsoft Docs
+title: を指定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetLocationType
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c298bd220547c2faa6315ae7c06f9495368b62e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 06bb64190d6821b05ebd638c753bd2b6d3decf71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352965"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734993"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 このブレークポイント要求のブレークポイントの場所の種類を取得します。
@@ -41,13 +41,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>パラメーター
 `pBPLocationType`\
-[out]値を返します、 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)このブレークポイント要求の場所を表す列挙体。
+[アウト]このブレークポイント要求の場所を記述する[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列挙体から値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_FAIL`場合、`bpLocation`フィールドに関連付けられている[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造が無効です。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 関連`E_FAIL`付`bpLocation`けられている[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造体のフィールドが無効な場合に返します。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugBreakpointRequest`を公開するオブジェクト、[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)インターフェイス。
+次の例は[、IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)インターフェイス`CDebugBreakpointRequest`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)

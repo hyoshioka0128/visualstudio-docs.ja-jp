@@ -1,30 +1,30 @@
 ---
-title: m_stateObject フィールド |Microsoft Docs
+title: m_stateObjectフィールド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95947a1367ea1ddf4aa88689f731971d5c7d0a6c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330842"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738374"
 ---
-# <a name="mstateobject-field"></a>m_stateObject フィールド
-アクションを使用するデータを表すオブジェクト。
+# <a name="m_stateobject-field"></a>m_stateObjectフィールド
+アクションで使用されるデータを表すオブジェクト。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -33,7 +33,7 @@ ms.locfileid: "66330842"
 ```
 
 ## <a name="remarks"></a>Remarks
- これは、`state`パラメーター、<xref:System.Threading.Tasks.Task.%23ctor%2A>コンス トラクター。 バッキング フィールドも、<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>プロパティ。
+ これは<xref:System.Threading.Tasks.Task.%23ctor%2A>、コンストラクター`state`のパラメーターです。 また、<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>プロパティのバッキング フィールドでもあります。
 
 ## <a name="see-also"></a>関連項目
 - [Task クラス](../../extensibility/debugger/task-class-internal-members.md)

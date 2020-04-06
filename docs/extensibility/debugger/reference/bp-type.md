@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE |Microsoft Docs
+title: BP_TYPE |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350576"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737792"
 ---
-# <a name="bptype"></a>BP_TYPE
-ブレークポイントにコードの場所にし、データの場所ですか、別の種類のブレークポイントは、かどうかを指定します。
+# <a name="bp_type"></a>BP_TYPE
+ブレークポイントがコードの場所にあるか、データの場所であるか、または別の種類のブレークポイントであるかを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -51,23 +51,23 @@ public enum enum_BP_TYPE {
 ブレークポイントの種類を指定しません。
 
 `BPT_CODE`\
-コードのブレークポイントを指定します。
+コード ブレークポイントを指定します。
 
 `BPT_DATA`\
 データ ブレークポイントを指定します。
 
 `BPT_SPECIAL`\
-ブレークポイントは、コードでもデータ型を指定します。 この型は非推奨し、は使用できません。
+コードでもデータ型でもないブレークポイントを指定します。 この型は非推奨であるため、使用しないでください。
 
 ## <a name="remarks"></a>Remarks
-パラメーターとして渡される、 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)と[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッド。
+パラメーターとして渡されます、[ブレークポイントの種類](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)と[ブレークポイントの種類の取得します](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

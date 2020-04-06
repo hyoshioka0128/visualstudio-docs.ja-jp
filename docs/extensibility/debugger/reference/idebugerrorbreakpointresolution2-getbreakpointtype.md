@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetBreakpointType |Microsoft Docs
+title: エラーブレークポイントの解像度2:::ブレークポイントの種類を取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetBreakpointType
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4715dbd6fd3997be932cfd0d8944a30940e1d07
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f933baed55216054ecfec3b3b4c29f15da652ba4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327768"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730056"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 ブレークポイントの種類を取得します。
@@ -41,16 +41,16 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>パラメーター
 `pBPType`\
-[out]値を返します、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)ブレークポイントの種類を表す列挙体。
+[アウト]ブレークポイントの種類を記述する[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列挙体から値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-このメソッドは、エラー ブレークポイント イベント必要になるため、バインドに失敗したブレークポイントの種類を返します。
+このメソッドは、バインドに失敗したブレークポイントの種類を返すため、エラー ブレークポイント イベントが必要です。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugErrorBreakpointResolution`を公開するオブジェクト、 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)インターフェイス。
+インターフェイスを公開する単純な`CDebugErrorBreakpointResolution`オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)示します。
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
