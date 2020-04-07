@@ -37,7 +37,7 @@ ms.locfileid: "71128396"
 
 ## <a name="run-configuration"></a>構成の実行
 
-Visual Studio for Mac では、_実行構成_を設定できます。 実行構成は、下の画像のように、ツール バーのビルド構成選択の隣にあるドロップダウンで提示されます。
+Visual Studio for Mac では、 _実行構成_ を設定できます。 実行構成は、下の画像のように、ツール バーのビルド構成選択の隣にあるドロップダウンで提示されます。
 
 ![実行構成ドロップダウン](media/projects-and-solutions-image8.png)
 
