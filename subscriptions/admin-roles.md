@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 03/02/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: スーパー管理者と管理者ロール、および管理者を割り当てる方法について説明します。
-ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232753"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808379"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
 
@@ -21,6 +21,8 @@ ms.locfileid: "80232753"
 **スーパー管理者:** 最初に組織を設定したとき、主要または通知連絡先が既定でスーパー管理者になります。 主要または通知連絡先は、追加のスーパー管理者または管理者を割り当てることを選択できます。 スーパー管理者では、他の管理者だけでなくサブスクライバーを追加および削除することができます。 システムに 2 人以上のスーパー管理者がいる場合、スーパー管理者はセキュリティのために最後の 2 人を除くすべての管理者を削除できます。
 
 **管理者:** スーパー管理者のみが管理者を割り当てることができます。管理者は、スーパー管理者に割り当てられた契約のサブスクライバーのみを管理できます。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>管理者の割り当て
 新しい管理者 (管理者) を割り当てるには:

@@ -2,19 +2,20 @@
 title: AI Tools をインストールする
 description: AI Tools for Visual Studio をインストールする方法を説明します。
 keywords: AI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915808"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638572"
 ---
 # <a name="installation"></a>インストール
 
@@ -33,7 +34,7 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 2. **[拡張機能と更新プログラム]** ダイアログ ボックスで左側の **[オンライン]** を選択します。
 3. 右上隅の検索ボックスに「tools for ai」と入力します。
 4. 結果から、「**Visual Studio Tools for AI**」を選択します。
-5. **[Download]** をクリックします。
+5. **[ダウンロード]** をクリックします。
 
 ## <a name="prepare-your-local-machine"></a>ローカル コンピューターを準備する
 
@@ -82,7 +83,7 @@ Python は、ディープ ラーニング アプリケーションの主要な�
 
 ディープ ラーニング フレームワーク自体のインストールに pip が必要です。
 
-![Python を Windows にインストールする](media/installation/install_python_win.png)
+![Windows に Python をインストールする](media/installation/install_python_win.png)
 
 Python 3.5 が正しくインストールされていることを確認し、端末で次のコマンドを実行して pip を最新バージョンにアップグレードする必要があります。
 
@@ -156,7 +157,7 @@ CNTK Python パッケージのインストールについては、[CNTK のイ�
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) は、効率性と柔軟性の両方を想定して設計されたディープ ラーニング フレームワークです。 **シンボリック プログラミングと命令型プログラミング**を[併用](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)して、効率性と生産性を最大にできます。
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) は、効率性と柔軟性の両方を想定して設計されたディープ ラーニング フレームワークです。 [シンボリック プログラミングと命令型プログラミング](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)を**併用**して、効率性と生産性を最大にできます。
 
 MXNet をインストールするには、端末で次のコマンドを実行します。
 

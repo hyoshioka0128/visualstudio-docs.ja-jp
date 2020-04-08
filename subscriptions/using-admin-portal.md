@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233162"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808363"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 
 Visual Studio サブスクリプション管理ポータルには、組織のサブスクリプションを 1 か所で管理するためのツールが用意されています。 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>重要な考慮事項
 Visual Studio サブスクリプション管理ポータルを使用するときには、次の点に留意してください。

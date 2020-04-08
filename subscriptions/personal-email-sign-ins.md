@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: 'Visual Studio のサブスクリプション: サブスクライバーに Hotmail や Gmail のアドレスが表示される理由'
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550337"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808344"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio のサブスクリプション: サブスクライバーに個人用アカウントが表示される理由
 ボリューム ライセンス サービス センター (VLSC) から Visual Studio の新しい[サブスクリプション管理ポータル](https://manage.visualstudio.com)に移行した後、一部のサブスクライバーの "サインイン用のメール アドレス" として、Hotmail や Outlook などの個人用メール アドレスが表示され、管理者が驚くことがありました。  詳細については、[こちらの動画](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6)を確認してください。
@@ -28,6 +28,9 @@ ms.locfileid: "79550337"
 > [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) の最新のサブスクライバー エクスペリエンスでは、職場または学校と、Microsoft アカウント (MSA) の両種類の ID がサポートされています。
 
 ## <a name="solution"></a>ソリューション
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 この問題を解決するには、 **[Connect Emails]\(電子メールに接続\)** ボタンを選択するればよいだけです。後はシステムによって、MSA を含むアカウントを組織の Azure Active Directory (Azure AD) 内の既存のユーザーと一致させる試みが姓と名の照合に基づいて行われます。 エラーが発生した場合は、一致の右側にある **[X]** をクリックして一致を削除できます。  
 
 > [!div class="mx-imgBorder"]
