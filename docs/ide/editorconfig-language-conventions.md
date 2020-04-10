@@ -1,24 +1,24 @@
 ---
 title: EditorConfig での .NET の言語規則
-ms.date: 09/23/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306861"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544013"
 ---
 # <a name="language-conventions"></a>言語規則
 
@@ -94,7 +94,6 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [修飾子の基本設定](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
-  - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
   - dotnet\_style\_readonly\_field
 - [かっこの基本設定](#parentheses-preferences)
@@ -109,15 +108,15 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
   - dotnet\_style\_prefer\_inferred\_tuple_names
   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
   - dotnet\_style\_prefer\_auto\_properties
-  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
   - dotnet\_style\_prefer\_compound\_assignment
 - ["null" チェック設定](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-### <a name="this-and-me"></a>"This." 修飾子 と "Me." 修飾子
+### <a name="this-and-me-qualifiers"></a><a name="this-and-me"></a>"This." 修飾子 と "Me." 修飾子
 
 このスタイル ルールは、フィールド、プロパティ、メソッド、またはイベントに適用できます。 **true** の値は、C# では `this.`、Visual Basic では `Me.` をコード記号の前に付けることを意味します。 **false** の値は、`this.` や `Me.` をコード要素の前に_付けない_ ことを意味します。
 
@@ -244,7 +243,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-### <a name="language-keywords"></a>型参照のためのフレームワーク型名の代わりの言語キーワード
+### <a name="language-keywords-instead-of-framework-type-names-for-type-references"></a><a name="language-keywords"></a>型参照のためのフレームワーク型名の代わりの言語キーワード
 
 このスタイル ルールは、ローカル変数、メソッド パラメーター、およびクラス メンバーに適用できます。また、型メンバー アクセス式に別個のルールとして適用できます。 **true** の値は、型を表すキーワードを持つ型に対して、型名 (`Int32` など) の代わりに言語キーワード (`int` や `Integer` など) を使用することを意味します。 **false** の値は、言語キーワードの代わりに型名を使用することを意味します。
 
@@ -313,7 +312,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-### <a name="normalize-modifiers"></a>修飾子の基本設定
+### <a name="modifier-preferences"></a><a name="normalize-modifiers"></a>修飾子の基本設定
 
 このセクションのスタイル ルールは、アクセシビリティ修飾子を必要にする、必要な修飾子の並べ替え順序を指定する、読み取り専用修飾子を必要にするなど、修飾子の基本設定に関するものです。
 
@@ -407,6 +406,43 @@ class MyClass
 Public Class MyClass
     Private Shared ReadOnly daysInYear As Int = 365
 End Class
+```
+
+#### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **ルール名** | visual_basic_style_unused_value_expression_statement_preference |
+| **ルール ID** | IDE0058 |
+| **該当言語** | Visual Basic |
+| **値** | `unused_local_variable:silent` |
+| **Visual Studio の既定値** | `unused_local_variable:silent` |
+
+コード例:
+
+```vb
+' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
+
+Dim unused = Computation()
+```
+
+#### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **ルール名** | visual_basic_style_unused_value_assignment_preference |
+| **ルール ID** | IDE0059 |
+| **該当言語** | Visual Basic |
+| **値** | `unused_local_variable:silent` |
+| **Visual Studio の既定値** | `unused_local_variable:silent` |
+
+コード例:
+
+```vb
+' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
+
+Dim unused = Computation()
+Dim x = 1;
 ```
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
@@ -941,6 +977,7 @@ x = x + 1
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 ```
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
@@ -1002,6 +1039,16 @@ Dim v = o?.ToString()
 Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
+
+### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+
+|||
+|-|-|
+| **ルール名** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **ルール ID** | IDE0041 |
+| **該当言語** | C# 6.0+ および Visual Basic 14+ |
+| **値** | `true` - 参照の等価性メソッドよりも null 検査を優先します<br /><br />`false` - null 検査よりも参照の等値性メソッドを優先します |
+| **Visual Studio の既定値** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>.NET コードの品質の設定
 
@@ -1081,6 +1128,8 @@ End Function
 - ["null" チェック設定](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
+- [修飾子の基本設定](#normalize-modifiers)
+  - csharp\_preferred\_modifier_order
 - [コード ブロック基本設定](#code-block-preferences)
   - csharp\_prefer_braces
 - [未使用の値のユーザー設定](#unused-value-preferences)

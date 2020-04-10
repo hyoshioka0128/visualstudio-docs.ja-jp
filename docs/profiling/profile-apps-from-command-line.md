@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558126"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638692"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>コマンド ラインからアプリケーションのパフォーマンスを測定する
 
@@ -27,11 +27,13 @@ ms.locfileid: "77558126"
 
 この記事に記載されている例では、Microsoft メモ帳のパフォーマンス情報を収集しますが、同じ方法を使用して任意のプロセスをプロファイルすることができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2019 Preview 3 以降のバージョン
+* Visual Studio 2019 以降のバージョン
 
 * コマンドライン ツールに関する知識
+
+* Visual Studio がインストールされていない状態でリモート マシン上のパフォーマンス情報を収集するには、リモート マシンに [Visual Studio 用のパフォーマンス ツール](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)をインストールします。 ツールのバージョンは、使用している Visual Studio のバージョンと一致している必要があります。
 
 ## <a name="collect-performance-data"></a>パフォーマンス データを収集する
 
@@ -65,7 +67,7 @@ Visual Studio Diagnostics CLI ツールを使用したプロファイリング�
 
 1. 前のコマンドから出力されたファイルに移動し、Visual Studio でそれを開いて、収集された情報を調べます。
 
-## <a name="config_file"></a> エージェントの構成ファイル
+## <a name="agent-configuration-files"></a><a name="config_file"></a> エージェントの構成ファイル
 
 収集エージェントは、測定対象が何かに応じて、さまざまな種類のデータを収集する交換可能なコンポーネントです。
 

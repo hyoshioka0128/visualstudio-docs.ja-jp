@@ -1,7 +1,7 @@
 ---
 title: CPU 使用率の分析 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553621"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638834"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 使用率の分析
 
 アプリのパフォーマンスの問題の調査を開始するのに適した方法は、CPU 使用率を理解することです。 **CPU 使用率**パフォーマンス ツールは、C++、C#/Visual Basic、および JavaScript のアプリでコードを実行するのにかかった CPU 時間と割合を示します。
 
-**CPU 使用率**ツールは、開かれた状態の Visual Studio プロジェクトまたはインストール済みの Microsoft Store アプリで実行することができます。または、実行中のアプリまたはプロセスにアタッチすることもできます。 このツールは、ローカルまたはリモートのコンピューターで実行することも、シミュレーターやエミュレーターで実行することもできます。 詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。
+**CPU 使用率**ツールは、開かれた状態の Visual Studio プロジェクトまたはインストール済みの Microsoft Store アプリで実行することができます。または、実行中のアプリまたはプロセスにアタッチすることもできます。 詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。
 
 **CPU 使用率**ツールは、デバッグを使用して、または使用せずに実行することができます。 デバッガーで、CPU プロファイルをオン/オフにして、CPU 使用率の関数ごとの内訳を確認することができます。 たとえばブレークポイントなどで、実行が一時停止したときに、CPU 使用率の結果を表示できます。
 
@@ -33,7 +33,7 @@ ms.locfileid: "62553621"
 
 ## <a name="collect-cpu-usage-data"></a>CPU 使用率のデータの収集
 
-1. Visual Studio プロジェクトで、ソリューション構成を **[リリース]** に設定し、配置ターゲットとして **[ローカル コンピューター]** を選択します。
+1. Visual Studio プロジェクトで、ソリューション構成を **[リリース]** に設定し、配置ターゲットとして **[ローカル Windows デバッガー]** (または **[ローカル コンピューター]** ) を選択します。
 
     ![リリースとローカル コンピューターの選択](../profiling/media/cpuuse_selectreleaselocalmachine.png "リリースとローカル コンピューターの選択")
 

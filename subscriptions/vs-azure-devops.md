@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
+ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232051"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80607168"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -55,7 +55,7 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 
 ## <a name="next-steps"></a>次の手順
 Azure DevOps 機能に関する詳細情報:
-- [Azure Boards & Repos (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Boards & Repos (Basic プラン)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

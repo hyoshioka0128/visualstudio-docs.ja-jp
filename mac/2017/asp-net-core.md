@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984886"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543759"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
- Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 ASP.NET Core は、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と MacOS でも動作するようにイメージが再構成されています。
+ Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 これは、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と macOS でも動作するように再構成されています。
 
 ## <a name="installing-net-core"></a>.NET Core のインストール
 
@@ -29,7 +29,7 @@ Visual Studio for Mac を開きます。 ようこそページで、 **[新し�
 
 [新しいプロジェクト] ダイアログが表示されます。このダイアログで、アプリケーションを作成するためのテンプレートを選択できます。
 
-ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 次のとおりです。
+ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 これらのボタンの役割は、次のとおりです。
 
 - **.NET Core > ASP.NET Core 空の Web アプリケーション**
 - **.NET Core > ASP.NET Core Web アプリ**
@@ -42,7 +42,7 @@ ASP.NET Core アプリケーションの作成を開始するためのテンプ�
 
 ![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-image4.png)
 
-ASP.NET Core 空の Web アプリケーションでは、Web アプリケーションと共に **Program.cs** と **Startup.cs** という既定のファイルが 2 つ作成されます。ファイルの説明を以下に記します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
+ASP.NET Core 空の Web アプリケーションでは、2 つの既定のファイルを使って Web アプリケーションが作成されます:**Program.cs** と **Startup.cs** です。これらについて以下で説明します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
 
 ![Solution Pad と依存関係](media/asp-net-core-image12.png)
 
@@ -66,16 +66,16 @@ public static void Main(string[] args)
 
 ASP.NET Core アプリにより、その main メソッドで Web サーバーが作成されます。[`WebHostBuilder`](/aspnet/core/fundamentals/hosting) のインスタンスを介してホストが構成され、起動されます。 このビルダーは、ホストの構成を可能にするメソッドを提供します。 テンプレート アプリで、次の構成が使用されます。
 
-* `UseKestrel`: Kestrel サーバーがアプリにより使用されることを指定します
-* `UseContentRoot(Directory.GetCurrentDirectory())`: アプリがこのフォルダーから起動されるとき、Web プロジェクトのルート フォルダーをアプリのコンテンツ ルートとして使用します
-* `.UseIISIntegration()`: アプリが IIS と連動しなければならないことを指定します。 IIS と ASP.NET Core を一緒に使用するには、`UseKestrel` と `UseIISIntegration` を指定する必要があります。
-* `.UseStartup<Startup>()`: スタートアップ クラスを指定します。
+* `UseKestrel`:Kestrel サーバーがアプリにより使用されることを指定します
+* `UseContentRoot(Directory.GetCurrentDirectory())`:アプリがこのフォルダーから起動されるとき、Web プロジェクトのルート フォルダーをアプリのコンテンツ ルートとして使用します
+* `.UseIISIntegration()`:アプリが IIS と連動しなければならないことを指定します。 IIS と ASP.NET Core を一緒に使用するには、`UseKestrel` と `UseIISIntegration` を指定する必要があります。
+* `.UseStartup<Startup>()`:スタートアップ クラスを指定します。
 
   ビルド/実行メソッドにより、IWebHost がビルドされます。これはアプリをホストし、入ってくる HTTP 要求の待ち受けをアプリに開始させます。
 
 ### <a name="startupcs"></a>Startup.cs
 
-アプリのスタートアップ クラスは `UseStartup()` の `WebHostBuilder` メソッドに指定されます。 このクラスで要求処理パイプラインを指定し、サービスを構成します。
+アプリのスタートアップ クラスは `WebHostBuilder` の `UseStartup()` メソッドに指定されます。 このクラスで要求処理パイプラインを指定し、サービスを構成します。
 
 プロジェクトの **Startup.cs** ファイルを開き、中を調べます。
 
@@ -112,7 +112,7 @@ public class Startup
 
 `Configure` により、[ミドルウェア](/aspnet/core/fundamentals/middleware)を利用した要求パイプラインの作成が可能になります。 これは、要求と応答を処理するために ASP.NET アプリケーション パイプライン内で使用されるコンポーネントです。 HTTP パイプラインは、シーケンスで呼び出される、一連の要求デリゲートで構成されます。 各デリゲートは要求をそれ自体で処理するか、次のデリゲートに渡すことができます。
 
-`Run` で `Map`、`Use`、`IApplicationBuilder` メソッドを使用することでデリゲートを構成できますが、`Run` メソッドは次のデリゲートを呼び出すことがありません。常にパイプラインの終わりで使用する必要があります。
+`IApplicationBuilder` で `Run`、`Map`、`Use` メソッドを使用することでデリゲートを構成できますが、`Run` メソッドは次のデリゲートを呼び出すことがありません。常にパイプラインの終わりで使用する必要があります。
 
 事前作成済みテンプレートの `Configure` メソッドは、いくつかのことを行うように作成されています。 最初に、開発中に使用するために、例外処理ページを構成します。 次に、簡単な "Hello World" で要求元の Web ページに応答を送信します。
 
@@ -132,9 +132,9 @@ Visual Studio for Mac では、ランダムのポートを利用して Web プ�
 
 ASP.NET Core アプリはモデル ビュー コントローラー (MVC) デザイン パターンを利用し、アプリの各パーツの責任を論理的に分離します。 MVC の構造は次のとおりです。
 
-- **モデル**: アプリのデータを表すクラス。
-- **ビュー**: アプリのユーザー インターフェイス (多くの場合、モデル データ) を表示します。
-- **コント ローラー**: ブラウザー要求を処理し、ユーザー入力と繰り返しに応答するクラス。
+- **モデル**:アプリのデータを表すクラス。
+- **表示**:アプリのユーザー インターフェイス (多くの場合、モデル データ) を表示します。
+- **コントローラー**:ブラウザー要求を処理し、ユーザー入力と繰り返しに応答するクラス。
 
 MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview)」 (ASP.NET Core MVC の概要) ガイドを参照してください。
 
@@ -167,7 +167,7 @@ MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/c
     }
     ```
 
-3. `Microsoft.AspNetCore.Mvc`[依存関係] **フォルダーを右クリックし、** [パッケージの追加...]**を選択して** 依存関係をプロジェクトに追加します。
+3. **[依存関係]** フォルダーを右クリックし、 **[パッケージの追加...]** を選択して `Microsoft.AspNetCore.Mvc` 依存関係をプロジェクトに追加します。
 
 4. 検索ボックスを利用し、`Microsoft.AspNetCore.Mvc` の NuGet ライブラリを参照し、 **[パッケージの追加]** を選択します。 インストールには数分かかることがあります。必要な依存関係のためにさまざまなライセンスに同意するように求められることがあります。
 
@@ -234,7 +234,7 @@ Mac OS 10.11 (El Capitan) 以降に .NET Core を手動インストールする�
 
 このガイドでは、ASP.NET Core の概要を説明しました。 ASP.NET Core とは何か、それを利用する状況、Visual Studio for Mac で使用する場合について説明しました。
 ここから先の手順については、次のガイドを参照してください。
-- [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc) ドキュメント。
+- [ASP.NET Core](/aspnet/core/) ドキュメント。
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (ネイティブ モバイル アプリケーションのバックエンド サービスを作成する)。ここでは、Xamarin.Forms アプリのために ASP.NET Core を利用して REST サービスをビルドする方法について解説しています。
 - [ASP.NET Core 実践ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 
