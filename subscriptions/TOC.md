@@ -75,7 +75,6 @@
 ### [スーパー管理者と管理者](admin-roles.md)
 ### [契約の基本設定を設定する](admin-prefs.md)
 ### [概要](using-admin-portal.md)
-### [ビデオ チュートリアル:管理ポータルの使用](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### サブスクリプションを割り当てる
 #### [1 人のユーザーを追加する](assign-license.md)
 #### [複数のユーザーを追加する](assign-license-bulk.md)
