@@ -107,7 +107,7 @@ Visual Studio 拡張機能で `IInteractiveWindowCommand` を実装およびエ�
 このコマンドは、開発しながらコードをテストするなど、反復的なまたは革新的なコードの開発に役立ちます。 たとえば、**対話型**ウィンドウにコードの一部を送信し、その出力を表示した後、上方向キーを押してコードをもう一度表示し、変更してから、**Ctrl** + **Enter** キーを押して簡単にテストすることができます (入力の最後に **Enter** キーを押すと入力内容が実行されますが、入力の途中で **Enter** キーを押すと改行が挿入されます)。目的のコードができたら、簡単にプロジェクト ファイルにコピーして戻すことができます。
 
 > [!Tip]
-> 既定では、Visual Studio は **>>>** と **...** REPL プロンプトを、**対話型**ウィンドウからエディターにコードを貼り付ける際に削除します。 この動作は、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[詳細設定]** タブで **[貼り付け時に REPL プロンプトを削除する]** オプションを使用して変更できます。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション - その他のオプション) を参照してください。
+> 既定では、Visual Studio は **>>>** と **...** REPL プロンプトを、**対話型**ウィンドウからエディターにコードを貼り付ける際に削除します。この動作は、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[Python]** > **[詳細設定]** タブで **[貼り付け時に REPL プロンプトを削除する]** オプションを使用して変更できます。「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション - その他のオプション) を参照してください。
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
