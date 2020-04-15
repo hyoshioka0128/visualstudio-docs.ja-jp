@@ -1,7 +1,7 @@
 ---
 title: 実行中のプロセスにデバッガを使用してアタッチする |マイクロソフトドキュメント
 ms.custom: seodec18
-ms.date: 04/08/2019
+ms.date: 04/14/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5305be7615e426d7792d8dd3fefb2579e2ab6be
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233031"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385490"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチできます。 プロセスが実行されたら、[**プロセスにアタッチ****のデバッグ** > ] を選択するか、Visual Studio で**Ctrl**+**Alt**+**P**キーを押し、[**プロセスにアタッチ]** ダイアログ ボックスを使用してプロセスにデバッガーをアタッチします。
@@ -253,15 +253,15 @@ IIS に展開されたアプリケーションASP.NETデバッグの詳細につ
 
 C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
 
-クライアント側スクリプトのデバッグでは、ブラウザでスクリプトのデバッグを有効にする必要があります。 Chrome でクライアント側のスクリプトをデバッグする場合は、コードの種類として **[Web キット]** を選択し、アプリの種類に応じて、すべての Chrome インスタンスを閉`chrome.exe --remote-debugging-port=9222`じてデバッグ モードでブラウザを起動する必要があります (コマンドラインから入力)。
+クライアント側スクリプトのデバッグでは、ブラウザでスクリプトのデバッグを有効にする必要があります。 Chrome でクライアント側のスクリプトをデバッグする場合は、コードの種類として **[JavaScript (Chrome)]** または **[JavaScript(Microsoft Edge - クロム)] を**選択し、アプリの種類に応じて、すべての Chrome`chrome.exe --remote-debugging-port=9222`インスタンスを閉じてデバッグ モードでブラウザーを起動する必要があります (コマンドラインから入力)。 以前のバージョンの Visual Studio では、Chrome 用のスクリプト デバッガは**Web キット**でした。
 
 実行中のプロセスを簡単に選択してアタッチするには、Visual Studio で Ctrl**Alt**+**P****と入力**+し、プロセス名の最初の文字を入力します。
 
 |シナリオ|デバッグメソッド|[処理名]|メモとリンク|
 |-|-|-|-|
 |IIS サーバー上ASP.NET 4 または 4.5 のリモート デバッグ|リモート ツールを使用して**プロセスにアタッチ**|*w3wp.exe*|リモート[IIS コンピュータのリモート デバッグ ASP.NETを](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)参照してください。|
-|IIS サーバー上のリモート デバッグ ASP.NET コア|リモート ツールを使用して**プロセスにアタッチ**|*ドットネット.exe*または*アプリ名.exe*|アプリの展開については、「 [IIS に発行する](https://docs.asp.net/en/latest/publishing/iis.html)」を参照してください。 デバッグについては、「[リモート IIS コンピューターのリモート デバッグASP.NETコア」を](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)参照してください。|
-|サポートされているアプリの種類に対して、ローカル IIS サーバーでクライアント側スクリプトをデバッグする |**プロセスにアタッチを**使用|クロム *.exe*、*マイクロソフトエッジCP.exe*、または*iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome の場合は、Chrome をデバッグ モードで実行し、[**アタッチ先]** フィールドで **[Webkit コード**] を選択する必要があります。|
+|IIS サーバー上のリモート デバッグ ASP.NET コア|リモート ツールを使用して**プロセスにアタッチ**|*w3wp.exe*または*ドットネット.exe*|NET Core 3 以降では *、w3wp.exe*プロセスが既定[のアプリ内ホスティング モデルに使用されます](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)。 アプリの展開については、「 [IIS に発行する](/aspnet/core/host-and-deploy/iis/)」を参照してください。 詳細については、「[リモート IIS コンピューターのリモート デバッグ ASP.NETコア」を参照してください。](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|サポートされているアプリの種類に対して、ローカル IIS サーバーでクライアント側スクリプトをデバッグする |**プロセスにアタッチを**使用|クロム *.exe*、*マイクロソフトエッジCP.exe*、または*iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome の場合は、Chrome をデバッグ モードで`chrome.exe --remote-debugging-port=9222`実行し (コマンドラインから入力)、[**アタッチ先]** フィールドで **[JavaScript (Chrome)] を**選択する必要があります。|
 |ローカル コンピューターで C# 、Visual Basic、または C++ アプリをデバッグする|標準デバッグ (**F5**) または**プロセスにアタッチのいずれかを使用します。**|*\<アプリ名>.exe*|ほとんどのシナリオでは、標準のデバッグを使用し、**プロセスにアタッチ**しない。|
 |Windows デスクトップ アプリをリモート デバッグする|リモート ツール|該当なし| [「C# または Visual Basic アプリのリモート デバッグ」または](../debugger/remote-debugging-csharp.md)[「C++ アプリのリモート デバッグ」を](../debugger/remote-debugging-cpp.md)参照してください。|
 |Linux 上で .NET コアをデバッグします。|**プロセスにアタッチを**使用|*dotnet.exe*|SSH を使用するには、 [SSH を使用して Linux で実行されているリモート デバッグ .NET コアを](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)参照してください。 |
