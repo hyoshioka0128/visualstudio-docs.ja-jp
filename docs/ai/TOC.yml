@@ -1,7 +1,7 @@
 - name: Visual Studio Tools for AI
   items:
     - name: Visual Studio Tools for AI
-      href: index.yml
+      href: overview.md
     - name: 概要
       href: about-ai-tools.md
     - name: インストール
@@ -14,9 +14,9 @@
       items:
         - name: TensorFlow + Azure ディープ ラーニング VM
           href: tensorflow-vm.md
-    - name: 操作方法ガイド
+    - name: 使い方ガイド
       items:
-        - name: プロジェクトの作成
+        - name: プロジェクトを作成する
           items:
             - name: サンプル ギャラリーからプロジェクトを作成する
               href: create-project-gallery.md
@@ -34,7 +34,7 @@
           href: monitor-gpu.md
         - name: TensorBoard を監視する
           href: monitor-tensorboard.md
-        - name: ストレージの管理
+        - name: ストレージを監視する
           href: manage-storage.md
     - name: サンプル
       items:
