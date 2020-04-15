@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847290"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880339"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>DevOps でラボ環境を使用する
 
@@ -53,6 +53,7 @@ Team Foundation Server (TFS) と Azure Test Plans の[ビルドとリリース](
 
 詳細については、[ビルドとリリース管理の使用](use-build-or-rm-instead-of-lab-management.md)に関する記事を参照してください。
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Microsoft Test Manager の Visual Studio Lab Management 機能を使用する
 
 Visual Studio Enterprise Edition を使用するとき、Microsoft Test Manager の Visual Studio Lab Management 機能を使用してラボ環境を作成および管理できます。
@@ -136,6 +137,7 @@ Lab Management の詳細については、以下を参照してください。
 * [標準ラボ環境](https://msdn.microsoft.com/library/ee390842.aspx)
 * [SCVMM (仮想) 環境](https://msdn.microsoft.com/library/ee943322.aspx)
 * [ネットワーク分離環境の作成および使用](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>参照
 

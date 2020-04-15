@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Enterprise のワークロード ID とコンポーネント ID
 titleSuffix: ''
-description: ワークロードとコンポーネント ID は、コマンド ラインを使用して Visual Studio をインストールするか、または VSIX マニフェストで依存関係として指定するために使用します
+description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a122ce7ab95ff529d231d34e3cdd4852a0b49b81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 7b4ddc14a6409b0e8450a61ab70d7be9d4f88a3c
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437652"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276343"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise のコンポーネント ディレクトリ
 
@@ -44,7 +45,7 @@ ms.locfileid: "79437652"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

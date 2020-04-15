@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bfca799111c83f29924c997218c42f09bff5568a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75919018"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224460"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -46,7 +46,7 @@ ms.locfileid: "75919018"
 |**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />`Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1` のような値があります。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換モード" で実行されます。<br />例 : `/Framework:framework40`|
 |**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、 **/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
 |**/?**|使用情報を表示します。|
-|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、次を使用します。<br />**/Logger:trx**<br />**[;LogFileName=\<既定値は一意のファイル名>]**<br />例:Team Foundation Server にテスト結果を発行するには、次のように TfsPublisher を使用します。<br />**/logger:TfsPublisher;**<br />**Collection=<プロジェクト URL\>;**<br />**BuildName=<ビルド名\>;**<br />**TeamProject=<プロジェクト名\>;**<br />**[;Platform=\<規定値は "Any CPU">]**<br />**[;Flavor=\<規定値は "Debug">]**<br />**[;RunTitle=<タイトル\>]**<br />メモ:TfsPublisher ロガーは Visual Studio 2017 で非推奨となり、それ以降のバージョンの Visual Studio ではサポートされていません。 これらのシナリオでは、代わりにカスタム ロガーを使用します。 このロガーでは、ロガーがレガシ モードに切り替えられます。|
+|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、次を使用します。<br />**/Logger:trx**<br />**[;LogFileName=\<既定値は一意のファイル名>]**|
 |**/ListTests: [*ファイル名*]**|指定されたテスト コンテナーから探索されたテストを一覧表示します。|
 |**/ListDiscoverers**|インストール済みのテスト探索プログラムを一覧表示します。|
 |**/ListExecutors**|インストール済みのテスト実行プログラムを一覧表示します。|

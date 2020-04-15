@@ -8,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715910"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224499"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用してフォルダーに発行する
 
@@ -52,7 +52,7 @@ Visual Studio for Mac では、発行ツールを使用して、フォルダー�
 
 ## <a name="customize-publish-options"></a>発行オプションのカスタマイズ
 
-発行プロファイル ([発行] コンテキスト メニューに表示される) の名前を変更するには、発行プロファイル ファイルの名前を変更します。 ファイルの拡張子 (`.puxbml`) は決して変更しないでください。
+発行プロファイル ([発行] コンテキスト メニューに表示される) の名前を変更するには、発行プロファイル ファイルの名前を変更します。 ファイルの拡張子 (`.pubxml`) は決して変更しないでください。
 
 発行フォルダーのパスを変更するには、発行プロファイルを開き、`publishUrl` 値を編集します。
 

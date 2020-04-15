@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1879be46498d851eec0fbfce71b2328bdfc9afb
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585796"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224441"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio の回復不能なプロセス エラー
 
@@ -34,15 +34,15 @@ Visual Studio では、アウト プロセスのプロセスをいくつか利�
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
 - PerfWatson2.exe
+- ServiceHub.Host.CLR.x86.exe
 - ServiceHub.Host.Node.x86.exe
 - ServiceHub.IdentityHost.exe
-- ServiceHub.VSDetouredHost.exe
-- ServiceHub.SettingsHost.exe
-- ServiceHub.Host.CLR.x86.exe
-- ServiceHub.RoslynCodeAnalysisService32.exe
 - ServiceHub.RoslynCodeAnalysisService.exe
+- ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.SettingsHost.exe
+- ServiceHub.VSDetouredHost.exe
+- WaAppAgent.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
-- WaAppAgent.exe
 
 これらのプロセスのいずれかが突然終了した場合、Visual Studio 内の一部の機能が停止します。 機能の損失がそれほど重要でないプロセスもありますが、 それ以外のプロセスは、Visual Studio の安定性に影響を及ぼし、エラー メッセージが表示されます。
