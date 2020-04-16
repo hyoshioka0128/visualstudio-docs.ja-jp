@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702039"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444649"
 ---
 # <a name="private-galleries"></a>プライベートギャラリー
 次のように、イントラネットの*プライベート ギャラリー*にポストすることで、開発したコントロール、テンプレート、およびツールを共有できます。
@@ -42,9 +42,9 @@ ms.locfileid: "80702039"
 
 5. **[URL]** フィールドに、プライベート ギャラリーをホストしている Atom フィードまたは SharePoint サイトの URL を入力します。
 
-    1. ホストがプライベート ギャラリーに接続する Atom フィードの場合、URL は次のようになります。 http://www.mywebsite/mygallery/atom.xml  この URL は、ファイルまたはネットワーク パスを参照できます。
+    1. ホストがプライベート ギャラリーに接続する Atom フィードの場合、URL は次のようになります。 `http://www.mywebsite/mygallery/atom.xml`  この URL は、ファイルまたはネットワーク パスを参照できます。
 
-    2. ホストが SharePoint サイトの場合、URL は次のようになります。 http://mysharepoint/sites/mygallery/forms/AllItems.aspx
+    2. ホストが SharePoint サイトの場合、URL は次のようになります。 `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`
 
 ### <a name="manage-private-galleries"></a>プライベート ギャラリーの管理
  管理者は、各コンピュータのシステム レジストリを変更することで、複数のコンピュータでプライベート ギャラリーを同時に利用できるようにすることができます。 これを実現するには、新しいレジストリ キーとその値を記述する *.pkgdef*ファイルを作成します。  このファイルの形式は以下の通りです。

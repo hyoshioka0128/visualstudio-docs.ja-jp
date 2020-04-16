@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432199"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444907"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Windows インストーラーを使用した Office ソリューション用の Visual Studio ツールの展開
 
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>作成者について
 
 Wouter van Vugt は、Office オープン XML テクノロジを持つマイクロソフト MVP であり、独立したコンサルタントであり、SharePoint、マイクロソフト オフィス、および関連する .NET テクノロジを使用して Office ビジネス アプリケーション (OBA) を作成することに重点を置いています。
-Wouter は[、OpenXmlDeveloper.org](http://openxmldeveloper.org/)や[MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12))などの開発者コミュニティ サイトに頻繁に参加しています。 彼はいくつかのホワイトペーパーや記事を出版し、Open XML: 説明された電子書籍というタイトルの本を掲載しています。
-Wouterは、さまざまなチャネルを通じて最先端の技術コンテンツを提供することに焦点を当てたオランダのCode-Counselの創設者です。 Wouter のブログを読んで[コードカウンセルの Web サイト](http://www.code-counsel.net/)を参照すると、Wouter の詳細を確認できます。
+Wouter は MSDN などの開発者コミュニティ サイトに頻繁に貢献[しています](/previous-versions/office/developer/office-2007/bb879915(v=office.12))。 彼はいくつかのホワイトペーパーや記事を出版し、Open XML: 説明された電子書籍というタイトルの本を掲載しています。
+Wouterは、さまざまなチャネルを通じて最先端の技術コンテンツを提供することに焦点を当てたオランダのCode-Counselの創設者です。 あなたは彼のブログを読んでWouterについての詳細を知ることができます。
 
 テッド・パティソンはSharePoint MVP、著者、トレーナー、テッド・パティソン・グループの創設者です。 2005 年秋、テッドはマイクロソフトの開発者プラットフォーム伝道グループに採用され、Windows SharePoint サービス 3.0 および Microsoft Office SharePoint Server 2007 のアセンド開発者トレーニング カリキュラムを作成しました。 それ以来、Ted は SharePoint 2007 テクノロジに関するプロフェッショナルな開発者の教育に専念してきました。 テッドは、ビジネス ソリューションを構築するための開発プラットフォームとして SharePoint を使用する方法に焦点を当てた「Windows SharePoint サービス内 3.0」というタイトルのマイクロソフト プレスの本を書き終えました。 また、MSDN マガジンの開発者向けのコラム「オフィススペース」も執筆しています。

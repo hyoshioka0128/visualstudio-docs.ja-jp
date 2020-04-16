@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385393"
+ms.locfileid: "81397377"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 このメッセージは、リモート デバッグ モニタがリモート コンピュータで正しく設定されていないか、ネットワークの問題またはファイアウォールの存在のためにリモート コンピュータにアクセスできない場合に発生することがあります。
@@ -34,6 +34,7 @@ ms.locfileid: "81385393"
 
 - [デバッガはリモート コンピュータに接続できません。デバッガは指定されたコンピュータ名を解決できませんでした](#cannot_connect)
 - [リモート デバッガーによって接続要求が拒否されました](#rejected)
+- [リモート エンドポイントとの接続が終了しました](#connection_terminated)
 - [メモリロケーションへの不正アクセス](#invalid_access)
 - [リモート コンピュータ上で実行されている指定された名前のサーバーがありません](#no_server)
 - [要求された名前は有効ですが、要求された型のデータが見つかりませんでした](#valid_name)
@@ -67,17 +68,19 @@ ms.locfileid: "81385393"
 
 これらの値が正しく、メッセージに**Windows 認証**モードが示されている場合は、リモート デバッガが正しい認証モード **([ツール> オプション)]** であることを確認します。
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>リモート エンドポイントとの接続が終了しました
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>リモート エンドポイントとの接続が終了しました
 
 Azure App Service アプリをデバッグする場合は、クラウド エクスプローラーまたはサーバー エクスプローラーから [**プロセスにアタッチ]** ではなく[[デバッガーのアタッチ](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service)] コマンドを使用してみてください。
 
 **[プロセスにアタッチ] を使用して**デバッグする場合は、次の手順を実行します。
 
-1. [**プロセスにアタッチ**] ダイアログ ボックスまたはプロジェクトのプロパティで、リモート コンピュータ名とポート番号が、リモート デバッガ ウィンドウに表示される名前とポート番号と一致していることを確認します。 間違っている場合は、修正してやり直してください。
+- [**プロセスにアタッチ**] ダイアログ ボックスまたはプロジェクトのプロパティで、リモート コンピュータ名とポート番号が、リモート デバッガ ウィンドウに表示される名前とポート番号と一致していることを確認します。 間違っている場合は、修正してやり直してください。
 
-2. 問題の解決に役立つ詳細情報については、サーバー (Windows のイベント ビューア) のアプリケーション ログを確認してください。
+- ホスト名を使用して接続する場合は、代わりに IP アドレスを試してください。
 
-3. それ以外の場合は、管理者特権で Visual Studio を再起動してから、もう一度やり直してください。
+- 問題の解決に役立つ詳細情報については、サーバー (Windows のイベント ビューア) のアプリケーション ログを確認してください。
+
+- それ以外の場合は、管理者特権で Visual Studio を再起動してから、もう一度やり直してください。
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>メモリロケーションへの不正アクセス
 
