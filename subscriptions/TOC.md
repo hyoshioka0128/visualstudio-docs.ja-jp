@@ -2,7 +2,7 @@
 # [新機能](whats-new-in-subscriptions.md)
 # サブスクリプション
 ## サブスクリプションの購入
-### [販売](https://visualstudio.microsoft.com/vs/pricing)
+### [販売](buy-activate-retail.md)
 ### クラウド 
 #### [概要](vscloud-overview.md)
 #### [請求に関する FAQ](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [MPN のサブスクリプションを管理する](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## サインイン 
-### [リテール サブスクリプションのアクティブ化](activate-store-subscriptions.md)
 ### [Microsoft アカウントでサインイン](sign-in-msa.md)
 ### [職場/学校アカウントでサインイン](sign-in-work.md)
 ### [GitHub を使用したサインイン](sign-in-github.md)
