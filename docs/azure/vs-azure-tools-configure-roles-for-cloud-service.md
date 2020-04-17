@@ -4,17 +4,17 @@ description: Visual Studio を使用し、Azure クラウド サービスのロ�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a01a1fb182fc9d45e4e08dcd9acb8e0ec734f098
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300955"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489728"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio で Azure クラウド サービスのロールを構成する
 Azure クラウド サービスには、worker ロールまたは Web ロールを割り当てることができます。 それぞれのロールについて、そのセットアップ方法を定義すると共に、実行方法を構成する必要があります。 クラウド サービスのロールの詳細については、 [Azure Cloud Services の概要](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)を紹介した動画をご覧ください。
@@ -90,7 +90,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![ソリューション エクスプローラーの Azure ロールのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. [**設定]** タブを選択します。
+1. **[設定]** タブを選択します。
 
     ![Settings tab](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -152,7 +152,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![ソリューション エクスプローラーの Azure ロールのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. [**設定]** タブを選択します。
+1. **[設定]** タブを選択します。
 
     ![Settings tab](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -268,5 +268,5 @@ using (FileStream writeStream = File.Create(filePath))
 
 1. Windows エクスプローラー ウィンドウが表示されたら、**[検索]** ボックスに「`MyLocalStorageTest.txt``」と入力し、**Enter** キーを押して検索を開始します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 Visual Studio における Azure プロジェクトの詳細については、「 [Azure プロジェクトの構成](vs-azure-tools-configuring-an-azure-project.md)」を参照してください。 クラウド サービスのスキーマの詳細については、「 [スキーマ リファレンス](https://msdn.microsoft.com/library/azure/dd179398)」を参照してください。
