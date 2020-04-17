@@ -3,17 +3,17 @@ title: 機能を提案する
 description: 開発者コミュニティにはどのような提案があるのか、提案する方法、Visual Studio のロードマップで提案がどのように Microsoft に使用されるのかについて説明します
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853517"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276489"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio の機能を提案する
 
@@ -35,7 +35,7 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 
 アイデアの最初のセットが User Voice フォーラムから開発者コミュニティに移行されました。 移行は、コミュニティへのフィードバックの影響と、製品ロードマップの優先順位に基づいて行われました。 移行されるはずの機能が見落とされていると思った場合は、遠慮なく開発者コミュニティに追加してください。
 
-## <a name="votes"></a>Votes
+## <a name="votes"></a>投票
 
 開発者コミュニティの投票システムは、User Voice とは異なります。 開発者コミュニティの投票数の整合性を保ち、投票の歪みを避けるために、User Voice での投票数は、各機能の提案の横にあるタグとして目立つように表示されます。 強化された開発者コミュニティで提案への投票を続けていくと、新しい投票数は User Voice での投票数とは別々に表示されます。
 
@@ -101,9 +101,9 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 
 - - -
 
-## <a name="faq"></a>よく寄せられる質問
+## <a name="faq"></a>よくあるご質問
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>User Voice の自分のアイデアが開発者コミュニティに表示されないのはなぜですか?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>User Voice の自分のアイデアが Developer Community に表示されないのはなぜですか?
 
 古い User Voice フォーラムからの新しい機能の提案は、広範なコミュニティに与える影響と製品ロードマップの優先順位に基づいて開発者コミュニティに移行されています。 自分の提案の移行が見落とされていると思った場合は、新しい提案として開発者コミュニティに追加してください。
 
@@ -127,6 +127,6 @@ Microsoft は、お客様からの機能の提案に耳を傾け、お客様に�
 
 応答時間は、お客様のフィードバックの状態によって異なります。 このドキュメント内の状態に関する説明を確認し、応答時間について把握してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [開発者コミュニティの [機能を提案する] 機能の概要 (Visual Studio ブログ)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

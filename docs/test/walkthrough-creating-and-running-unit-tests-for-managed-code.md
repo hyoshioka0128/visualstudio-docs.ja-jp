@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094681"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223672"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>再テストする、書き換える、再分析する
 
-テスト対象のメソッドにバグがあっても `Debit` メソッドが <xref:System.ArgumentOutOfRangeException> をスローせず、例外と共に正しいメッセージを出力するとします。 現在、テスト メソッドはこのケースを処理しません。 `debitAmount` の値が有効な場合 (つまり、残高未満で 0 よりは大きい場合)、例外はキャッチされないので、アサートはキャッチされません。 それでも、テスト メソッドは成功します。 これは適切ではありません。例外がスローされない場合はテスト メソッドが失敗することを想定しているためです。
+現時点では、テスト メソッドで、必要なすべてのケースが処理されるわけではありません。 テスト対象のメソッドである `Debit` メソッドで、`debitAmount` が残高より大きい (または 0 未満) 場合に <xref:System.ArgumentOutOfRangeException> をスローできなかった場合、テスト メソッドは成功します。 これは適切ではありません。例外がスローされない場合はテスト メソッドが失敗することを想定しているためです。
 
 これはテスト メソッドのバグです。 この問題を解決するには、テスト メソッドの最後に <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> アサートを追加して、例外がスローされないケースを処理するようにします。
 

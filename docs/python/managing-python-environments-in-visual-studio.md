@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a47af0e87907608ec9f71de4e605772eb1caed8e
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307161"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224564"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
-Python *環境*は、その中で Python コードを実行するコンテキストであり、グローバル環境、仮想環境、および conda 環境が含まれます。 1 つの環境は、インタープリター、ライブラリ (通常は Python 標準ライブラリ)、およびインストールされているパッケージのセットで構成されます。 これらのコンポーネントがすべて合わさって、有効な言語の構造と構文、アクセスできるオペレーティング システム機能、使用できるパッケージが決まります。
+**Python 環境**は、その中で Python コードを実行するコンテキストであり、グローバル環境、仮想環境、および conda 環境が含まれます。 1 つの環境は、インタープリター、ライブラリ (通常は Python 標準ライブラリ)、およびインストールされているパッケージのセットで構成されます。 これらのコンポーネントがすべて合わさって、有効な言語の構造と構文、アクセスできるオペレーティング システム機能、使用できるパッケージが決まります。
 
 Windows 上の Visual Studio では、この記事で説明するように、 **[Python 環境]** ウィンドウで環境を管理し、新しいプロジェクトの既定値として 1 つの環境を選択します。 環境の他の側面については、以下の記事を参照してください。
 

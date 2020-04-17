@@ -4,17 +4,17 @@ description: Visual Studio に関する問題を報告する方法を確認し�
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64556726"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276502"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 

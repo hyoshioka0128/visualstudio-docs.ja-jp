@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274064"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385521"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -73,14 +73,12 @@ ms.locfileid: "80274064"
 
 > [!IMPORTANT]
 >
-> Azure AD グループの使用は段階的に有効にされます。  ご利用の契約に対して有効になっている機能がすぐに表示されない場合があります。
->
 > サブスクライバーを追加する場合の Azure AD グループの使用には、次の制限事項が適用されます。
 > - グループには、少なくとも 1 人のメンバーを含んでいる必要があります。  空のグループはサポートされていません。
-> - グループのユーザー数は 1000 人未満にする必要があります 
-> - すべてのユーザーが、グループの最上位レベルにいる必要があります。  入れ子になったグループはサポートされていません
-> - 信頼済みの契約のみがサポートされます
-> - グループのすべてのメンバーが、Azure AD アカウントに関連付けられた電子メール アドレスを保持している必要があります
+> - グループのユーザー数は 1,000 未満にする必要があります。 
+> - すべてのユーザーが、グループの最上位レベルにいる必要があります。  入れ子になったグループはサポートされていません。
+> - 信頼済みの契約のみがサポートされます。
+> - グループのすべてのメンバーが、Azure AD アカウントに関連付けられた電子メール アドレスを保持している必要があります。
 > - Azure AD グループを使用して追加されたサブスクリプションの場合、通知用の個別の電子メール アドレスはサポートされていません。  
 
 1. Visual Studio サブスクリプション管理ポータル ([https://manage.visualstudio.com](https://manage.visualstudio.com)) にサインインします。
@@ -108,6 +106,7 @@ ms.locfileid: "80274064"
 > [!NOTE]
 > 後に Azure AD グループの一部として追加されたユーザーにサブスクリプションを個別に既に割り当てている場合は、グループの一部として追加され、個別に一覧表示されなくなります。 ただし、個別のサブスクリプションが異なるサブスクリプション レベル用のものである場合は、サブスクリプションを 2 つ所有することになります。  例:ユーザーが個別の Visual Studio Professional サブスクリプションを所有していて、さらに Visual Studio Enterprise サブスクリプションを割り当てるグループのメンバーである場合は、両方を所有することになります。  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

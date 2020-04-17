@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 03/18/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232038"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224486"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -42,6 +42,38 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 
 0. 後で簡単にアクセスできるように、[Azure portal](https://portal.azure.com) をブックマークします。
 
+## <a name="using-azure-without-a-visual-studio-subscription"></a>Visual Studio サブスクリプションなしで Azure を使用する
+Visual Studio サブスクリプションが終了すると、Azure の Dev/Test に毎月与えられる個別のクレジットなど、サブスクリプションの特典をすべてご利用いただけなくなります。 毎月のクレジットで Azure の使用を続けるには、サブスクリプションを更新するか、新しいサブスクリプションを購入するか、Azure の Dev/Test の個別クレジットが含まれる有効なサブスクリプションに Azure 特典を移す必要があります。  現在の Azure サブスクリプションを従量課金制に変更し、毎月のクレジットなしで Azure を引き続きご利用いただくこともできます。
+
+### <a name="continue-using-azure-with-a-monthly-credit"></a>毎月のクレジットで Azure の使用を続ける
+> [!IMPORTANT]
+> 現在の Azure サブスクリプションが無効になるか、データにアクセスできなくなる前に、リソースを別の Azure サブスクリプションに移す必要があります。  
+
+Azure の毎月のクレジットは、いくつかの方法で引き続きご利用いただけます。  Azure リソースを保存するには、下で選択したアクションに関係なく、別の Azure サブスクリプションに[リソースを移す](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)必要があります。 
+
+- **Visual Studio サブスクリプションを直接購入する場合**、[Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=) で新しいサブスクリプションを購入するか、サブスクリプションを更新します。  
+- **組織の誰かが代表してサブスクリプションを購入する場合**、[Visual Studio サブスクリプションの管理者に問い合わせ](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)、必要な毎月のクレジットが与えられるサブスクリプションを要求してください。  
+- 別の Microsoft アカウントに関連付けられている同じサブスクリプション レベルで**別の Visual Studio サブスクリプションがアクティブになっている**場合、Visual Studio [サブスクリプション ポータル](https://my.visualstudio.com/subscriptions)で[代替アカウントを追加する](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)ことで、別の有効な Visual Studio サブスクリプションに Azure 特典を移すことができます。  
+
+置換する Azure クレジットのレベルで必要となるサブスクリプション レベルを決定できます。  
+
+| Visual Studio サブスクリプション レベル | 毎月の Azure クレジット |
+|----------------------------------|----------------------|
+| Visual Studio Enterprise         | $150                 |
+| Visual Studio Professional       | $50                  |
+| Visual Studio Test Professional  | $50                  |
+| MSDN Platforms*                  | $100                 |
+
+*MSDN Platforms のサブスクライバーは管理者に連絡し、新しいサブスクリプションを割り当ててもらう必要があります。 
+
+### <a name="continue-using-azure-without-a-monthly-credit"></a>毎月のクレジットなしで Azure の使用を続ける
+
+Visual Studio のサブスクリプションまたはクレジットは不要になったものの、Azure リソースを引き続きご利用になる場合は、別の Azure サブスクリプションに[リソースを移して](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)ください。あるいは[使用制限をなくし](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)、Azure サブスクリプションを従量課金制に変更してください。 
+
+いずれの措置も行わない場合、電子メールの通知を受信してから 30 日後にご利用の Azure サブスクリプションが無効になり、削除されます。  
+
+### <a name="have-a-question"></a>質問はございますか?
+リソースの移動、使用制限の削除、あるいは Azure に関するその他のトピックに関して質問がございましたら、Azure portal で [Azure サポート要求を提出](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)することができます。 
 
 ## <a name="eligibility"></a>特典を受ける条件
 |                 サブスクリプション レベル/プログラム                 |           特長           |                         更新可能かどうか                          |
@@ -82,29 +114,6 @@ A: Azure ポータルからサポート インシデントを送信するには�
 
 ### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q:自分の Azure DevTest の個人クレジットを使用して作成した知的財産は、だれのものになりますか。
 A: 従業員が生成した知的財産で、その会社が提供するリソースに対して作成されたものは、そのリソースを提供する会社の知的財産となります。 したがって、お客様がご自分の雇用主から Visual Studio サブスクリプションを受け取った場合は、その知的財産のポリシーが適用されます。 
-
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q:間もなく Azure にアクセスできなくなるというメッセージが届きました。  Azure の使用を続けるにはどうすればよいですか。
-A: Visual Studio サブスクリプションに関連付けられている Azure 特典を使用しているときに、サブスクリプションが失効するか、取り除かれるとこのメールが届きます。  Azure の使用を続ける場合、いくつかの選択肢があります。
-
-**推奨アクション:**
-
-Visual Studio の Azure DevTest の個人クレジットと割引の使用を続けるには、次のいずれかの手順を行います。
-
-チームまたは組織の誰かが代理でサブスクリプションを購入する場合、組織の Visual Studio 管理者に連絡し、Azure DevTest の個人クレジットに必要な金額を与える Visual Studio サブスクリプションを依頼します。   前のサブスクリプションが割り当てられたものと同じユーザー ID に新しいサブスクリプションを割り当てるように管理者に依頼してください。Azure サブスクリプションを転送する必要がなくなります。
-
-サブスクリプションを直接購入できる場合、[Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) を通して現在ご利用のサブスクリプションを更新すれば、割引が受けられます。
-
-すべての[サブスクリプションとその特典](https://visualstudio.microsoft.com/vs/pricing/)を比較してみてください。
-
-Microsoft アカウントに**同じ**サブスクリプション レベルで別の Visual Studio サブスクリプションがアクティブになっている場合、Visual Studio サブスクリプション ポータルで[代替アカウント](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions)を追加することで、そのアクティブ サブスクリプションをこの Azure 特典にリンクできます。 それがうまくいかない場合、Visual Studio のアクティブ サブスクリプションに [Azure 特典を転送](/azure/billing/billing-subscription-transfer/)してみることができます。
-
-Microsoft アカウントに**異なる**サブスクリプション レベルで別の Visual Studio サブスクリプションがアクティブになっている場合、[Azure サポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)にサポートを要請してください。
-
-ご利用のサブスクリプションに使用制限があり、失効前に何の措置もとらない場合、Azure サブスクリプションは無効になります。 従量課金制プランに変更して使用を続けるには、支払い方法を追加して[使用制限を解除](/azure/billing/billing-spending-limit/)してください。
-
-この Visual Studio Azure サブスクリプションを続けない場合、仮想マシンやデータベースなどのリソースを別の Azure サブスクリプションに転送し、続けないサブスクリプションをいつでも[キャンセル](https://azure.microsoft.com/support/cancel-account/)できます。
-
-このメールが間違いで配信された場合、[Azure カスタマー サポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)にお問い合わせください。
 
 ## <a name="support-resources"></a>サポート リソース
 - Azure に関するヘルプが必要ですか。  以下のリソースを確認してください。

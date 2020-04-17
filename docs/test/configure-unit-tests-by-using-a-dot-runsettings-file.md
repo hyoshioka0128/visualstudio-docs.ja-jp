@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233085"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880352"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -330,7 +330,7 @@ public void HomePageTest()
 |構成|Default|値|
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 で、MSTest アダプターは処理速度を向上させ、よりスケーラブルになるように最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を **true** に設定します。<br /><br />たとえば、単体テスト用に指定された *app.config* ファイルがある場合は、この設定を使用することがあります。<br /><br />より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
-|**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|
+|**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager (Visual Studio 2017 では非推奨) から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|
 |**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 また、[[設定] メニューから](#ide)テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスも中止されています。 テスト実行プログラムを中止しない場合は、この値を **true** に設定します。 たとえば、コード化された UI テストの間にブラウザーの実行を維持するために、この設定を使用できます。|
 |**DeploymentEnabled**|true|値を **false** に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|

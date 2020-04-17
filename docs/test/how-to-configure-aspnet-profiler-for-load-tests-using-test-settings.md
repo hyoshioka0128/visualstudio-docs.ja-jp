@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169392"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880235"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>方法: Visual Studio でテストの設定を使用してロード テスト用の ASP.NET プロファイラーを構成する
 
@@ -22,14 +22,14 @@ ASP.NET プロファイラー診断データ アダプターを使用して、AS
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> この診断データ アダプターは、Microsoft Test Manager を使用して実行されるテストには使用できません。 ASP.NET プロファイラー診断アダプターは、Visual Studio Enterprise を必要とする Web サイトのみを利用したロード テストで使用できます。
+> この診断データ アダプターは、Microsoft Test Manager (Visual Studio 2017 では非推奨) を使用して実行されるテストには使用できません。 ASP.NET プロファイラー診断アダプターは、Visual Studio Enterprise を必要とする Web サイトのみを利用したロード テストで使用できます。
 
 ASP.NET プロファイラー診断データ アダプターを使用すると、ロード テストの実行時に、アプリケーション層から ASP.NET プロファイラー データを収集できます。 プロファイラーは、実行時間が 1 時間以上になるような長時間のロード テストなどでは実行しないでください。 その理由は、プロファイラー ファイルが数百メガバイトの大きさになる可能性があるためです。 代わりに、ASP.NET プロファイラーを使用して、実行時間の短いロード テストを実行してください。その場合でも、パフォーマンスの問題を詳細に診断することができます。
 
 > [!NOTE]
 > ASP.NET プロファイラー診断データ アダプターは、インターネット インフォメーション サービス (IIS) プロセスをプロファイルします。 そのため、開発用 Web サーバーに対しては機能しません。 ロード テスト内で Web サイトをプロファイルするには、IIS が実行されているコンピューターにテスト エージェントをインストールする必要があります。 テスト エージェントはロードを生成しませんが、収集のみを目的としたエージェントとなります。 詳細については、[テスト エージェントのインストールと構成](../test/lab-management/install-configure-test-agents.md)に関するページを参照してください。
 
-詳細については、「[方法: 配布されたロード テストのテスト設定を作成する](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)」を参照してください。
+詳細については、[配布されたロード テストのテスト設定を作成する](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)」を参照してください。
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>テストの設定に対して ASP.NET プロファイラーを構成する
 
@@ -58,7 +58,7 @@ ASP.NET プロファイラー診断データ アダプターを使用すると�
 
 テスト設定で構成された ASP.NET プロファイラー診断データ アダプターを使用すると、ASP.NET Web アプリケーションで ASP.NET プロファイル データを収集できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)
 - [方法: 配布されたロード テストのテスト設定を作成する](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

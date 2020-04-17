@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594267"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880274"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>テスト エージェントとテスト コントローラーのインストール
 
@@ -40,6 +40,7 @@ Visual Studio 2017、Visual Studio 2015、および Visual Studio 2013 用のエ
 
 ISO ファイル形式のインストーラーを入手できるので、仮想マシンに簡単にインストールできます。
 
+::: moniker range="vs-2017"
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>TFS、Microsoft Test Manager、テスト コントローラー、テスト エージェントの互換性のあるバージョン
 
 次の表に従って、異なるバージョンの TFS、Microsoft Test Manager、テスト コントローラー、およびテスト エージェントを混在させることができます。
@@ -53,6 +54,23 @@ ISO ファイル形式のインストーラーを入手できるので、仮想�
 | 2015: 新規インストール | 2013 | 2013 | 2013 |
 | 2015: 2013 からのアップグレードまたは新規インストール | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>TFS、テスト コントローラー、テスト エージェントの互換性のあるバージョン
+
+次の表に従って、異なるバージョンの TFS、テスト コントローラー、およびテスト エージェントを混在させることができます。
+
+| TFS | コントローラー | エージェント |
+| --- | -------------------------------------- | ---------- | ----- |
+| 2017: 2015 からのアップグレードまたは新規インストール | 2017 | 2017 |
+| 2017: 2015 からのアップグレードまたは新規インストール | 2013 Update 5 | 2013 Update 5 |
+| 2017: 2015 からのアップグレードまたは新規インストール | 2013 Update 5 | 2013 Update 5 |
+| 2015: 2013 からのアップグレード | 2013 |2013 |
+| 2015: 新規インストール | 2013 | 2013 |
+| 2015: 2013 からのアップグレードまたは新規インストール | 2013 | 2013 |
+| 2013 | 2013 | 2013 |
+::: moniker-end
 
 > [!NOTE]
 > TFS 2018 および Azure DevOps Services でのラボ管理シナリオは非推奨となっています。 詳細については、「[TFS 2018 のリリース ノート](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager)」を参照してください。
@@ -67,5 +85,5 @@ ISO ファイル形式のインストーラーを入手できるので、仮想�
 | - | - |
 | Visual Studio でのビルド-配置-テスト ワークフロー | ユーザーは、TFS でのビルド、配置、およびテスト シナリオで[ビルド パイプライン](/azure/devops/pipelines/index?view=vsts) (XAML ビルドではない) を使用できます。 |
 | オンプレミス リモート コンピューターを使用するロード テスト (パフォーマンス テスト) | Test Controller と Test Agents 2013 Update 5 を使用して、オンプレミスでロード テストを実行します。 |
-| ラボ環境を使用する Microsoft Test Manager からの自動テストのリモート実行 | 現在、このシナリオに代わるものはありません。 ビルドおよびリリース定義 (XAML ビルドではない) で機能テストの実行タスクを使用して、テストをリモートで実行することをお勧めします。 |
+| ラボ環境を使用する Microsoft Test Manager (Visual Studio 2017 では非推奨) からの自動テストのリモート実行 | 現在、このシナリオに代わるものはありません。 ビルドおよびリリース定義 (XAML ビルドではない) で機能テストの実行タスクを使用して、テストをリモートで実行することをお勧めします。 |
 | 開発者による Visual Studio でのリモート テストの実行 | サポート対象から除外されました。 |

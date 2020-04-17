@@ -1,16 +1,16 @@
 ---
 title: パフォーマンスの問題が修正される可能性を高める方法
 description: Visual Studio でのパフォーマンスの問題を送信するための追加情報とベスト プラクティス
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a83a9c16e915bde2958193c640c0981f5edc005
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75918163"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276456"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>パフォーマンスの問題が修正される可能性を高める方法
 
@@ -118,7 +118,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 **不明な無応答**
 
 無応答が予期しない形で発生する場合は、次の発生時に Visual Studio の新しいインスタンスを起動し、そのインスタンスの問題を報告します。
-[[記録] 画面](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)で、応答しない Visual Studio セッションを選択してください。
+["記録" 画面](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)では、必ず応答しない Visual Studio セッションを選択してください。
 
 応答しない Visual Studio インスタンスが管理者モードで起動された場合は、2 番目のインスタンスも管理者モードで起動する必要があります。
 

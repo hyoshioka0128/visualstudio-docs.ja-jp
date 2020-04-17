@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307239"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223659"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -98,7 +98,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | AI プロジェクト <br>統合 | az861674.vo.msecnd.net | 443<br> | 登録されている Application Insights アカウントに使用状況データを送信する新しいプロジェクトを構成するために使用されます。 |
 | コード レンズ | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | ファイルの最終更新日時、変更のタイムライン、変更が関連付けられている作業項目、作成者など、エディター内に情報を提供するために使用されます。 |
 | 実験用 <br>機能の有効化 | visualstudio-devdiv-c2s.msedge.net | 80 | 実験用の新しい機能や機能の変更をアクティブ化するために使用されます。 |
-| 識別情報 “バッジ” <br>(ユーザー名とアバター)<br>and <br>ローミング設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | IDE でユーザーの名前とアバターを表示するために使用されます。 <br><br> あるコンピューターから別のコンピューターに設定の変更が確実にローミングするように使用されます。 |
+| 識別情報 "バッジ" <br>(ユーザー名とアバター)<br>and <br>ローミング設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | IDE でユーザーの名前とアバターを表示するために使用されます。 <br><br> あるコンピューターから別のコンピューターに設定の変更が確実にローミングするように使用されます。 |
 | リモート設定 | az700632.vo.msecnd.net | 443 | Visual Studio で問題を引き起こすことがわかっている拡張機能をオフにするために使用されます。 |
 | Windows ツール | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Windows アプリ ストアのシナリオで使用されます。 |
 | JSON スキーマ <br>探索 <br><br>JSON スキーマ <br>定義<br><br>JSON スキーマ <br>サポート <br>Azure リソース | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | JSON ドキュメントの編集時にユーザーによって使用される可能性のある JSON スキーマを検出およびダウンロードするために使用されます。 <br><br>Json 用のメタ検証スキーマを取得するために使用されます。<br><br>Azure Resource Manager 展開テンプレート用の現在のスキーマを取得するために使用されます。 |
@@ -147,7 +147,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 
 ## <a name="get-support"></a>サポートを受ける
 
-インストール関連の問題については、[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) でのサポート オプションが用意されています。
+インストール関連の問題については、[**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションを提供しています。
 
 他のいくつかのサポート オプションを次に示します。
 
