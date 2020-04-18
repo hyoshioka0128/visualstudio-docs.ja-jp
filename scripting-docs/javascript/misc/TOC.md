@@ -38,7 +38,7 @@
 # [定数が必要です。](expected-constant.md)
 # [未定義の識別子です。](undefined-identifier.md)
 # [アクセスが拒否されました。](access-is-denied.md)
-# ['\]' が必要です](expected-right-square-bracket.md)
+# ['\]' が必要です。](expected-right-square-bracket.md)
 # ['while' が必要です](expected-while.md)
 # ['@' が必要です。](expected-at.md)
 # [ラベルが再定義されました](label-redefined.md)
