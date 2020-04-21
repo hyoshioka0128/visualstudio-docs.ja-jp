@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697793"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649843"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタム エディターに機能を追加する
 カスタム エディターを作成した後、そのエディターに機能を追加できます。
@@ -34,7 +34,7 @@ ms.locfileid: "80697793"
 
 3. インターフェイスを設定して、エディター ファクトリ<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>を実装します。
 
-     詳細については、「[ファクトリのエディタ](../extensibility/editor-factories.md)」を参照してください。
+     詳細については、「[ファクトリのエディタ](/visualstudio/extensibility/editor-factories?view=vs-2015)」を参照してください。
 
 4. ドキュメント ビュー オブジェクト ウィンドウを管理するために、エディターで埋め込み先編集を行うか、埋め込みを簡略化するかを決定します。
 
