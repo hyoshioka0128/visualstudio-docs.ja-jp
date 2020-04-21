@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: ClickOnce アプリケーションのカスタム アクセス許可を設定する
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: アクセス許可が制限された ClickOnce アプリケーションをデバッグする
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: クライアント コンピューターに対する信頼された発行元の追加
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: アプリケーション マニフェストと配置マニフェストの再署名
