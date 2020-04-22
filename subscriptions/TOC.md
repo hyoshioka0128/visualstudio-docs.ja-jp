@@ -77,6 +77,7 @@
 ### サブスクリプションを割り当てる
 #### [1 人のユーザーを追加する](assign-license.md)
 #### [複数のユーザーを追加する](assign-license-bulk.md)
+#### [特定のサブスクリプションの割り当て](assign-guid.md)
 ### [サブスクリプションの編集](edit-license.md)
 ### [サブスクリプションの削除](delete-license.md)
 ### [サブスクリプションを検索する](search-license.md)
