@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbbf9b6aaf983bb36291611a7b9b50f7886915b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702683"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744941"
 ---
 # <a name="manage-universal-windows-projects"></a>ユニバーサル Windows プロジェクトの管理
 
 ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1 の両方を対象とするアプリであり、開発者は両方のプラットフォームでコードやその他の資産を使用できます。 共有コードと共有リソースは共有プロジェクトに保持され、プラットフォーム固有のコードとリソースは Windows 用と Windows Phone 用のプロジェクトに個別に保持されます。 ユニバーサル Windows アプリの詳細については、「[ユニバーサル Windows アプリ](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)」を参照してください。 プロジェクトを管理する Visual Studio 拡張機能は、ユニバーサル Windows アプリ プロジェクトには、単一プラットフォーム アプリとは異なる構造を持つことを認識する必要があります。 このチュートリアルでは、共有プロジェクトをナビゲートし、共有アイテムを管理する方法を示します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 Visual Studio 2015 以降では、ダウンロード センターから Visual Studio SDK をインストールしません。 これは、Visual Studio のセットアップのオプション機能として含まれています。 VS SDK は後でインストールすることもできます。 詳細については、「 [Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
@@ -72,8 +72,9 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
             MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID);
             commandService.AddCommand(menuItem);
         }
+
         // get a reference to the Output window
-                    output = (IVsOutputWindowPane)ServiceProvider.GetService(typeof(SVsGeneralOutputWindowPane));
+        output = (IVsOutputWindowPane)ServiceProvider.GetService(typeof(SVsGeneralOutputWindowPane));
     }
     ```
 
@@ -146,7 +147,7 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
                 MessageBox.Show("Solution has no shared project");
                 return;
             }
-                }
+        }
         else
         {
             MessageBox.Show("No solution is open");
@@ -198,20 +199,17 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
                 }
                 else
                 {
-                MessageBox.Show("Shared project has no active platform project");
+                    MessageBox.Show("Shared project has no active platform project");
                 }
             }
             else
             {
                 MessageBox.Show("Solution has no shared project");
-                return;
             }
         }
         else
-            {
-                MessageBox.Show("No solution is open");
-                return;
-            }
+        {
+            MessageBox.Show("No solution is open");
         }
     }
     ```
@@ -334,7 +332,7 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
             {
                 this.InspectHierarchyItems(hier, child, level + 1, itemIds, isSharedItem, printItems);
             }
-                    }
+        }
     }
     ```
 

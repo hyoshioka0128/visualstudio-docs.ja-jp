@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300925"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760139"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -88,7 +88,13 @@ ms.locfileid: "79300925"
      ...
      ```
 
+## <a name="code-analysis-solution-property-page"></a>コード分析ソリューションのプロパティ ページ
+
+**Q**: ソリューションのコード分析プロパティ ページはどこにありますか。
+
+**A**: ソリューション レベルのコード分析プロパティ ページが削除され、より信頼性の高い共有プロパティ グループが使用されました。 プロジェクト レベルでコード分析を管理する場合は、[コード分析] プロパティ ページは引き続き使用できます。 (マネージド プロジェクトの場合は、ルール構成用にルールセットから EditorConfig に移行することもお勧めします。 ソリューションまたはレポ内の複数のプロジェクト間でルールセットを共有する場合は、プロパティ グループを定義して、共有の props/targets ファイルまたは Directory.props/Directory.targets ファイルに CodeAnalysisRuleSet プロパティを定義することをお勧めします。 すべてのプロジェクトがインポートするような共通の小道具やターゲットがない場合は、[そのようなプロパティグループを Directory.props に追加するか、最上位のソリューション ディレクトリに Directory.targets](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)を追加することを検討してください。
+
 ## <a name="see-also"></a>関連項目
 
 - [アナライザーの概要](roslyn-analyzers-overview.md)
-- [.NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig の .NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)
