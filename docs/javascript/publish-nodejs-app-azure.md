@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74474019"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445013"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Node.js アプリケーションを Azure (Linux App Service) に発行する
 
@@ -173,7 +173,7 @@ Visual Studio 用に GitHub を設定するには:
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 * node.exe が強制終了 (つまり、ハンドルされない例外の発生) を処理する場合、コンテナーは再起動します。
-* コンテナーは開始時に、さまざまなヒューリスティックを実行して、Node.js プロセスを開始する方法を明らかにします。 実装の詳細は、[generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js) で見ることができます。
+* コンテナーは開始時に、さまざまなヒューリスティックを実行して、Node.js プロセスを開始する方法を明らかにします。 実装の詳細は、[generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js) で見ることができます。
 * SSH を使って実行中のコンテナーに接続して調査できます。 これは、Azure portal を使って簡単に行うことができます。 App Service を選択し、ツールの一覧で **[開発ツール]** セクションの **[SSH]** まで下にスクロールします。
 * トラブルシューティングに役立てるには、App Service の **[診断ログ]** 設定に移動し、**[Docker コンテナー ログ]** の設定を **[オフ]** から **[ファイル システム]** に変更します。 ログは、*/home/LogFiles/*_docker.log* の下のコンテナーに作成され、SSH または FTP(S) を使ってボックスでアクセスできます。
 * 既定で割り当てられる *.azurewebsites.net という URL の代わりに、カスタム ドメイン名をサイトに割り当てることができます。 詳細については、[カスタム ドメインのマップ](/azure/app-service/app-service-web-tutorial-custom-domain)に関するページをご覧ください。

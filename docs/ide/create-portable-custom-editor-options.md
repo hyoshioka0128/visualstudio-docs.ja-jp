@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648525"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig で移植可能なカスタム エディター設定を作成する
 
@@ -104,7 +104,7 @@ EditorConfig ファイルをプロジェクトに追加する方法は、他に�
 
 - Visual Studio 用 IntelliCode の[コード推論機能](/visualstudio/intellicode/code-style-inference)では、既存のコードからコードのスタイルが推論されます。 その後、既に定義されているコード スタイルの設定で、空ではない EditorConfig ファイルが作成されます。
 
-- Visual Studio 2019 以降では、 **[ツール]**  >  **[オプション]** の[コード スタイルの設定に基づいて EditorConfig ファイルを生成する](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files)ことができます。
+- Visual Studio 2019 以降では、 **[ツール]**  >  **[オプション]** の[コード スタイルの設定に基づいて EditorConfig ファイルを生成する](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)ことができます。
 
 ## <a name="file-hierarchy-and-precedence"></a>ファイルの階層と優先順位
 

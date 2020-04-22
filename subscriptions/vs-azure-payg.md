@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Azure の従量課金アカウントを設定する方法を説明します。
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231987"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444852"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest の従量課金制のサブスクリプション
 クラウドでチームとコラボレーションしましょう。  開発テスト用の従量課金制サブスクリプションを複数作成し、チームと環境の間を分離しながら、他のサブスクライバーとのコラボレーションを可能にします。  Azure におけるサブスクリプション ソフトウェアの開発/テストおよびクラウドの使用権を、サブスクライバーだけの割引価格 (時間当たり) で利用できます。

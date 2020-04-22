@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78937551"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649612"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -79,7 +79,7 @@ Google Test アダプターと Boost.Test アダプターは、Visual Studio Mar
 
 ### <a name="link-to-object-or-library-files"></a>オブジェクトまたはライブラリ ファイルのリンク
 
-テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 詳細については、「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files)」を参照してください。
+テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 詳細については、「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](how-to-use-microsoft-test-framework-for-cpp.md#object_files)」を参照してください。
 
 ### <a name="add-include-directives-for-header-files"></a>ヘッダー ファイルの #include ディレクティブを追加する
 
