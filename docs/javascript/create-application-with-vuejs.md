@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70180271"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744928"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -29,7 +29,7 @@ Visual Studio では、JavaScript、TypeScript のいずれかで [Vue.js](https
 * *.vue* ファイルでの `lang` 属性の認識
 * Vue.js プロジェクトとファイル テンプレート
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * Visual Studio 2017 バージョン 15.8 以降のバージョンと **Node.js 開発**ワークロードがインストールされている必要があります。
 
@@ -51,7 +51,7 @@ Visual Studio では、JavaScript、TypeScript のいずれかで [Vue.js](https
 
     インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストール済みのランタイムが検出されない場合は、プロパティ ページでインストール済みのランタイムを参照するようにプロジェクトを構成できます。 (プロジェクトを作成した後、プロジェクト ノードを右クリックして **[プロパティ]** を選択します)。
 
-## <a name="create-a-vuejs-project-using-a-template"></a>テンプレートを使用して Vue.js プロジェクトを作成する
+## <a name="create-a-vuejs-project-using-nodejs"></a>Node.js を使用して Vue.js プロジェクトを作成する
 
 新しい Vue.js テンプレートを使用して新しいプロジェクトを作成できます。 テンプレートを使うのが開始する最も簡単な方法です。 詳細については、「[Use Visual Studio to create your first Vue.js app](../javascript/quickstart-vuejs-with-nodejs.md)」(Visual Studio を使用して初めての Vue.js アプリを作成する) をご覧ください。
 

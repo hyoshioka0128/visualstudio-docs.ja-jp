@@ -1,5 +1,5 @@
 ---
-title: '[右端で折り返す]'
+title: 右端で折り返す
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f49925211247e346ac3203de20a97496c54295d
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508941"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444805"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>方法 : エディターのワード ラップを管理する
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>方法: エディターのワード ラップを管理する
 
 **[右端で折り返す]** オプションを設定および解除できます。 このオプションを設定すると、コード エディター ウィンドウの現在の幅からはみ出した長い行の部分は次の行に表示されます。 たとえば行番号の使用を容易にするためにこのオプションをオフにすると、右にスクロールして長い行の末尾を表示できます。
 
 > [!NOTE]
-> このトピックは、Windows 上の Visual Studio にのみ適用されます。 現在、Visual Studio for Mac はワード ラップをサポートしていません。
+> このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[ソース エディター: 右端で折り返す](/visualstudio/mac/source-editor#word-wrap)」を参照してください。
 
 ## <a name="to-set-word-wrap-preferences"></a>ワード ラップ オプションを設定するには
 
@@ -32,7 +32,7 @@ ms.locfileid: "79508941"
 
 2. **[テキスト エディター]** フォルダーで、 **[すべての言語]** サブフォルダーの **[全般]** オプションを選択して、このオプションをグローバルに設定します。
 
-     \- または -
+     または
 
      プログラミングしている言語のサブフォルダーの **[全般]** オプションを選択します。
 
@@ -52,6 +52,6 @@ Notepad++、Sublime Text、Visual Studio Code での行の折り返しに慣れ�
 * [トリプル クリックで行全体が選択されない](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
 * [End キーを 2 回押してもカーソルが行末に移動しない](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード エディターの機能](../../ide/writing-code-in-the-code-and-text-editor.md)

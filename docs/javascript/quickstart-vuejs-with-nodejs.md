@@ -1,5 +1,5 @@
 ---
-title: 'クイック スタート: 最初の Vue.js アプリを作成する'
+title: クイック スタート:最初の Vue.js アプリを作成する
 description: このクイック スタートでは、Node.js Tools for Visual Studio を利用し、Visual Studio で Vue.js アプリを作成します
 ms.custom: ''
 ms.date: 10/31/2019
@@ -12,21 +12,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235107"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744983"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート: Visual Studio を使用して初めての Vue.js アプリを作成する
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート:Visual Studio を使用して初めての Vue.js アプリを作成する
 
 ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、シンプルな Vue.js Web アプリケーションを作成して実行ます。
 
 > [!IMPORTANT]
 > この記事には、Visual Studio 2017 バージョン 15.8 以降で使用できる Vue.js テンプレートが必要です。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
@@ -47,7 +47,7 @@ ms.locfileid: "78235107"
     
     一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストール済みのランタイムが検出されない場合は、プロパティ ページ上のインストール済みのランタイムを参照するようにプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択し、 **[Node.exe のパス]** を設定します)。 Node.js のグローバル インストールを使用するか、または Node.js プロジェクトごとにローカル インタープリターへのパスを指定することが可能です。 
 
-## <a name="create-a-project"></a>プロジェクトを作成する
+## <a name="create-a-project"></a>プロジェクトの作成
 
 まず、Vue.js Web アプリケーション プロジェクトを作成します。
 
@@ -101,21 +101,26 @@ ms.locfileid: "78235107"
 
     Visual Studio によって新しいファイルがプロジェクトに追加されます。
 
-## <a name="build-the-project"></a>プロジェクトをビルドする
+## <a name="build-the-project"></a>プロジェクトのビルド
 
-1. (TypeScript プロジェクトのみ) Visual Studio から **[ビルド]** 、 **[ソリューションのクリーン]** の順に選択します。
+::: moniker range=">=vs-2019"
+1. 次に、 **[ビルド]** > **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。
 
-    ::: moniker range=">=vs-2019"
-    Visual Studio 2019 に付属の TypeScript テンプレートでは、この手順をスキップします。
-    ::: moniker-end
+1. **[出力]** ウィンドウでビルド結果を確認し、 **[出力元]** の一覧から **[ビルド]** を選択します。
+::: moniker-end
+::: moniker range="vs-2017"
+1. (TypeScript プロジェクトのみ) Visual Studio から **[ビルド]** > **[ソリューションのクリーン]** の順に選択します。
 
-1. 次に、 **[ビルド]** 、 **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。 **[出力]** ウィンドウでビルド結果を確認し、 **[出力元]** の一覧から **[ビルド]** を選択します。
+1. 次に、 **[ビルド]** > **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。
 
-    JavaScript Vue.js プロジェクト テンプレート (および TypeScript テンプレートの旧バージョン) では、ビルド後イベントを構成して、`build` npm を使用します。 この設定を変更する場合、エクスプローラーからプロジェクト ファイル ( *\<プロジェクト名\>.njsproj*) を開き、次のコード行を検索します。
+1. **[出力]** ウィンドウでビルド結果を確認し、 **[出力元]** の一覧から **[ビルド]** を選択します。
+::: moniker-end
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+JavaScript Vue.js プロジェクト テンプレート (および TypeScript テンプレートの旧バージョン) では、ビルド後イベントを構成して、`build` npm を使用します。 この設定を変更する場合、エクスプローラーからプロジェクト ファイル ( *\<プロジェクト名\>.njsproj*) を開き、次のコード行を検索します。
+
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
@@ -133,8 +138,8 @@ ms.locfileid: "78235107"
 
 このクイック スタートは完了しました。 Visual Studio IDE と Vue.js について少しはご理解いただけたかと思います。 機能についてさらに深く理解したい場合は、目次の**チュートリアル** セクションに示されているチュートリアルを続行してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
+- [Vue.js](create-application-with-vuejs.md) に関する記事をご覧ください。
 - [Node.js と Express のチュートリアル](tutorial-nodejs.md)を読む
-- [Node.js と React のチュートリアル](tutorial-nodejs-with-react-and-jsx.md)を読む
 - [アプリを Linux App Service にデプロイする](../javascript/publish-nodejs-app-azure.md)

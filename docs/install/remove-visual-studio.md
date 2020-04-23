@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113713"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649205"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio の削除
 
@@ -51,10 +51,10 @@ ms.locfileid: "76113713"
 1. 管理者のコマンド プロンプトを開きます。 管理者のコマンド プロンプトを開くには、以下の手順に従います。
    * [検索するテキストをここに入力] ボックスに、「**cmd**」と入力します。
    * **[コマンド プロンプト]** を右クリックしてから、 **[管理者として実行]** を選択します。
-1. `InstallCleanup.exe` ツールの完全パスを入力し、必要なコマンドライン スイッチを追加します。 既定では、ツールのパスは次のようになります。
+1. `InstallCleanup.exe` ツールの完全パスを入力し、必要なコマンドライン スイッチを追加します。 既定では、ツールのパスは次のようになります。 スペースを含むコマンドは二重引用符で囲みます。
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
@@ -62,7 +62,7 @@ ms.locfileid: "76113713"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Visual Studio のインストール](install-visual-studio.md)
 * [Visual Studio の更新](update-visual-studio.md)

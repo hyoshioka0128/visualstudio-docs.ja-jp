@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544049"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649657"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
@@ -39,6 +39,23 @@ Microsoft アカウント (MSA) を使用しているサブスクライバーと
 パートナーが提供する CAST Highlight の特典が拡張されたことをお知らせいたします。 
 - Visual Studio Enterprise サブスクリプションに含まれる特典の期間が 6 か月に延長されました。  
 - Visual Studio Professional のサブスクライバーは、1 つのアプリケーションを 3 か月間評価できるサブスクリプションを受け取れるようになりました。 
+
+## <a name="2020-q2-april-june"></a>2020 年第 2 四半期 (4 月から 6 月)
+
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio サブスクリプション ポータル
+
+Visual Studio サブスクリプションポータルでは、外観と使いやすさが大幅に変更されました。  
+
+- [特典] タイルのサイズが変更され、ウィンドウにすべて表示されるため、特定のカテゴリ内のすべてのタイルを表示するために左右にスクロールする必要がなくなりました。 
+- 利用可能なすべての特典を表示するか、カテゴリ ピッカーを使用して 1 つのカテゴリのみを表示するかを選択できます。
+   > [!div class="mx-imgBorder"]
+   > ![新しい特典カテゴリ ピッカー](_img/whats-new/whats-new-category-picker.png)
+- また、サブスクリプション ピッカーをウィンドウの右上隅から、よりアクセスしやすい場所に移動しました。
+   > [!div class="mx-imgBorder"]
+   > ![新しいサブスクリプション ピッカー](_img/whats-new/whats-new-sub-picker.png)
+- 新しい特典や人気のある特典を示すために、特典の一覧の上部に "おすすめの特典" を追加しました。  
+   > [!div class="mx-imgBorder"]
+   > ![新しいおすすめの特典](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>次の手順
 - 新しい[サブスクリプション管理ポータル](https://manage.visualstudio.com) UI とその新機能を確認する

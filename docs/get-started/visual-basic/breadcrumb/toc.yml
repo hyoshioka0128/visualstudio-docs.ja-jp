@@ -2,10 +2,10 @@
   tocHref: /
   topicHref: /
   items:
-    - name: "Visual\_Studio"
+    - name: Visual Studio
       tocHref: /visualstudio/
       topicHref: /visualstudio/ide/
       items:
         - name: Visual Basic
           tocHref: /visualstudio/visual-basic
-          topicHref: /visualstudio/visual-basic/index
+          topicHref: /visualstudio/get-started/visual-basic/index

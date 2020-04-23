@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180340"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444948"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>クイック スタート: Visual Studio を使用して初めての Python Web アプリを作成する
 
@@ -182,7 +182,7 @@ Python の Web アプリは、ほぼ常に、Web 要求のルーティングや�
 
 3. **[デバッグ]、[デバッグなしで開始]** (**Ctrl**+**F5**) の順に選択し、変更をファイルに保存し、アプリを実行します。
 
-4. コマンド ウィンドウに "* Running in <https://localhost:4449/>" というメッセージが表示された後、`localhost:4449` でブラウザー ウィンドウが開き、"Hello, Python!" というメッセージが表示されます。 コマンド ウィンドウにステータス 200 で GET 要求も表示されます。
+4. コマンド ウィンドウに **Running in https:\//localhost:4449** というメッセージが表示された後、`localhost:4449` でブラウザー ウィンドウが開き、"Hello, Python!" というメッセージが表示されます。 コマンド ウィンドウにステータス 200 で GET 要求も表示されます。
 
     ブラウザーが自動的に開かない場合は、任意のブラウザーを起動して `localhost:4449` に移動します。
 

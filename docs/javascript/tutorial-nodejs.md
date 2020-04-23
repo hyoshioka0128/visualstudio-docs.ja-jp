@@ -1,7 +1,7 @@
 ---
 title: Node.js と Express のアプリを作成する
 description: このチュートリアルでは、Node.js Tools for Visual Studio を使用してアプリを作成します。
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224525"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744891"
 ---
-# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と Express のアプリを作成する
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル:Visual Studio で Node.js と Express のアプリを作成する
 
 このチュートリアルでは、Node.js と Express を使用して Visual Studio を開発します。単純な Node.js Web アプリを作成し、いくつかのコードを追加し、IDE の一部の機能を試し、アプリを実行します。 
 
@@ -34,15 +34,15 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker-end
 
-このチュートリアルでは、次の作業を行う方法について説明します。
+このチュートリアルでは、以下の内容を学習します。
 > [!div class="checklist"]
-> * Node.js プロジェクトを作成する
+> * Node.js プロジェクトの作成
 > * 何らかのコードを追加する
 > * IntelliSense を使用してコードを編集する
 > * アプリを実行する
 > * デバッガーでブレークポイントに達する
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 以下の簡単な FAQ で、主要な概念をいくつか紹介します。
 
@@ -58,7 +58,7 @@ npm は Node.js の既定のパッケージ マネージャーです。 この�
 
 Express は Web アプリケーション フレームワークであり、Node.js が Web アプリケーションをビルドする際、サーバー フレームワークとして利用されます。 Express では、Pug (以前の Jade) など、UI を作成するためのさまざまなフロントエンド フレームワークを選択できます。 このチュートリアルで Pug を使用します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
@@ -101,7 +101,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
     Visual Studio は新しいソリューションを作成し、右のウィンドウでプロジェクトを開きます。 *app.js* プロジェクト ファイルがエディター (左のウィンドウ) で開きます。
 
-    ![プロジェクトの構造](../javascript/media/tutorial-project-structure.png)
+    ![プロジェクト構造](../javascript/media/tutorial-project-structure.png)
 
     (1) **[新しいプロジェクト]** ダイアログ ボックスに指定した名前が使用され、**太字**で強調表示されているのがあなたのプロジェクトです。 ファイル システムでは、このプロジェクトは、プロジェクト フォルダーの *.njsproj* ファイルに該当します。 プロジェクトを右クリックし、 **[プロパティ]** を選択することで、プロジェクトに関連付けられたプロパティと環境変数を設定することができます。 プロジェクト ファイルでは Node.js プロジェクト ソースへのカスタム変更が行われないため、他の開発ツールを使用してラウンド トリップを行うことができます。
 
@@ -109,13 +109,13 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
     (3) npm ノードには、インストールされているすべての npm パッケージが表示されます。 npm ノードを右クリックすれば、ダイアログ ボックスを利用して npm パッケージを検索し、インストールできます。または、*package.json* の設定と npm ノードの右クリック オプションを利用してパッケージをインストールし、更新できます。
 
-    (4) *package.json* は、ノーカルでインストールされているパッケージのパッケージ依存関係とパッケージ バージョンを管理する目的で npm によって使用されるファイルです。 このファイルの詳細については、「[package.json configuration](../javascript/configure-packages-with-package-json.md)」 (package.json の構成) を参照してください。
+    (4) *package.json* は、ノーカルでインストールされているパッケージのパッケージ依存関係とパッケージ バージョンを管理する目的で npm によって使用されるファイルです。 詳細については、[npm パッケージの管理](../javascript/npm-package-management.md)に関するページを参照してください。
 
     (5) プロジェクト ノードの下に、*app.js* などのプロジェクト ファイルが表示されます。 *app.js* はプロジェクト スタートアップ ファイルであり、そのため、**太字**で表示されます。 プロジェクトでファイルを右クリックし、 **[Node.js スタートアップ スクリプトとして設定]** を選択することで、スタートアップ ファイルを設定できます。
 
 1. **npm** ノードを開き、必要なすべての npm パッケージが存在するかどうかを確認します。
 
-    不足しているパッケージ (感嘆符のアイコン) がある場合は、**npm** ノードを右クリックして、 **[不足している npm パッケージをインストールする]** を選択します。
+    不足しているパッケージ (感嘆符のアイコン) がある場合は、**npm** ノードを右クリックして、 **[npm パッケージのインストール]** を選択します。
 
 ## <a name="add-some-code"></a>何らかのコードを追加する
 
@@ -182,7 +182,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
 1. *index.js* で、`res.render` を含むコードの行に移動します。
 
-1. `data` 文字列の後にカーソルを置き、「`: get`」と入力します。コードの前半で定義されている `getData` 関数が IntelliSense によって表示されます。 `getData` を選択します。
+1. `data` 文字列の後にカーソルを置き、「`: get`」と入力します。コードの前半で定義されている `getData` 関数が IntelliSense によって表示されます。 [`getData`] を選択します。
 
     ![IntelliSense を使用する](../javascript/media/tutorial-nodejs-intellisense.png)
 
@@ -194,7 +194,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
     このメッセージの最後の行から、JavaScript インタープリターはコンマ (`,`) を要求していることがわかります。
 
-1. 下のウィンドウで、 **[エラー一覧]** タブをクリックします。
+1. 下のペインで、 **[エラー一覧]** タブをクリックし、報告された問題の種類に対して **[ビルド + IntelliSense]** を選択します。
 
     ファイル名と行番号と共に警告と説明が表示されます。
 
@@ -218,7 +218,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-1. デバッグ ツール バーで、Microsoft Edge や Chrome などのデバッグ ターゲットを選択します。
+1. デバッグ ツールバーで、**Web サーバー (Google Chrome)** や **Web サーバー (Microsoft Edge)** などのデバッグ ターゲットを選択します。
 
     ::: moniker range=">=vs-2019"
     ![デバッグ ターゲットを選択する](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
@@ -269,7 +269,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
 これでこのチュートリアルは完了です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [アプリを Linux App Service にデプロイする](../javascript/publish-nodejs-app-azure.md)

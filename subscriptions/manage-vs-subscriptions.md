@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232359"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444877"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -52,7 +52,6 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 **プログラムで取得されたサブスクリプション:** プログラムでサブスクリプションを入手した場合、サブスクリプションはプログラムへの参加に結び付けられています。 詳しくは、プログラムの連絡先にお問い合わせください。
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [マイクロソフト認定トレーナー](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ A: これは購入されたチャネルによって異なります。Microsoft �
 |    ボリューム ライセンス サービス センター (VLSC)              |    180          |
 |    Microsoft Products and Services Agreement (MPSA)    |    180          |
 |    Visual Studio クラウド サブスクリプション                   |    180          |
-|    プログラム (例: MCT、BizSpark、MPN、Imagine)          |    180          |
+|    プログラム (例: MCT、MPN、Imagine)          |    180          |
 |    非売品 (例: MVP、MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
