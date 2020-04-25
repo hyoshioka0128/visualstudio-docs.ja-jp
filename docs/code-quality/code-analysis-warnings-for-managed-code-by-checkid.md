@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,12 +266,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109495"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153008"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -375,7 +376,9 @@ ms.locfileid: "82109495"
 | CA1502 | [CA1502: メソッドの実装を複雑にしすぎないでください](../code-quality/ca1502.md) | この規則は、線形独立のメソッド経路数を示す尺度で、条件分岐の数と複雑さによって決まります。 |
 | CA1504 | [CA1504: 紛らわしいフィールド名をレビューします](../code-quality/ca1504.md) | インスタンス フィールドの名前が "s_" で始まっているか、static (Visual Basic では Shared) フィールドの名前が "m_" で始まっています。 |
 | CA1505 | [CA1505: メンテナンスできないコードを使用しないでください](../code-quality/ca1505.md) | 型またはメソッドの保守容易性指数が低い値です。 保守容易性指数の低い型またはメソッドは、保守が困難な可能性があるため、デザインの変更を検討することをお勧めします。 |
-| CA1506 |[CA1506: クラス結合度を大きくしすぎないでください](../code-quality/ca1506.md) | この規則は、型またはメソッドに含まれる一意の型参照の数をカウントすることによって、クラス結合度を計測します。 |
+| CA1506 | [CA1506: クラス結合度を大きくしすぎないでください](../code-quality/ca1506.md) | この規則は、型またはメソッドに含まれる一意の型参照の数をカウントすることによって、クラス結合度を計測します。 |
+| CA1507 | [CA1507: 文字列の代わりに文字列を使用します。](../code-quality/ca1507.md) | 文字列リテラルは、式を`nameof`使用できる引数として使用されます。 |
+| CA1508 | [CA1508: デッド条件コードを回避する](../code-quality/ca1508.md) | メソッドには、常に`true`または`false`実行時に評価される条件付きコードがあります。 これにより、条件の`false`分岐でコードが停止します。 |
 | CA1600 | [CA1600: アイドル状態のプロセス優先度を使用しません](../code-quality/ca1600.md) | プロセス優先順位に Idle を設定しないでください。 System.Diagnostics.ProcessPriorityClass.Idle を設定したプロセスは、CPU を占有するか、そうでない場合はアイドル状態になるため、スタンバイ状態がブロックされます。 |
 | CA1601 | [CA1601: 電源の状態の変更を妨げるタイマーを使用しません](../code-quality/ca1601.md) | 定期的な動作の頻度が高くなると、CPU のビジー状態が続き、ディスプレイとハード ディスクをオフにする省電力アイドル タイマーに影響を与えます。 |
 | CA1700 | [CA1700: enum 値に 'Reserved' という名前を指定しません](../code-quality/ca1700.md) | この規則では、"reserved" を含む名前の列挙体のメンバーは、現在使用されていなくても、将来的なバージョンでは名前を変更するか削除されるプレースホルダーと想定しています。 メンバーの名前変更や削除は、互換性に影響する変更点です。 |
