@@ -537,6 +537,14 @@
                   href: ca1824.md
                 - name: 'CA1825:長さ 0 の配列割り当てを回避します'
                   href: ca1825.md
+                - name: 'CA1826:Linq の列挙可能なメソッドの代わりにプロパティを使用します'
+                  href: ca1826.md
+                - name: 'CA1827:Any が使用できる場合は Count/LongCount を使用しません'
+                  href: ca1827.md
+                - name: 'CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません'
+                  href: ca1828.md
+                - name: 'CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します'
+                  href: ca1829.md
             - name: 移植性に関する警告
               items:
                 - name: 概要
