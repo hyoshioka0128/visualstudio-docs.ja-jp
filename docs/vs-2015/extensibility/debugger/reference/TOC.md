@@ -1,6 +1,6 @@
 # [リファレンス](reference-visual-studio-debugging-apis.md)
 ## [API リファレンス](api-reference-visual-studio-debugging.md)
-### "[インターフェイス](interfaces-visual-studio-debugging.md)"
+### [インターフェイス](interfaces-visual-studio-debugging.md)
 #### [コア インターフェイス](core-interfaces.md)
 ##### [IDebugActivateDocumentEvent2](idebugactivatedocumentevent2.md)
 ###### [GetDocument](idebugactivatedocumentevent2-getdocument.md)
