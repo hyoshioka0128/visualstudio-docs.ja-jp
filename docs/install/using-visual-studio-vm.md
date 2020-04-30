@@ -2,7 +2,7 @@
 title: Azure 仮想マシンでの Visual Studio の使用
 titleSuffix: ''
 description: Azure 仮想マシンで Visual Studio を使用する方法を説明します
-ms.date: 12/06/2019
+ms.date: 04/23/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,14 +17,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8daf933292c521bb50d294dff2a380b130a4f2ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113806"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109482"
 ---
-# <a id="top"> </a> Azure 上の Visual Studio イメージ
+# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure 上の Visual Studio イメージ
 
 構成済みの Azure 仮想マシン (VM) での Visual Studio の使用は、短時間で何もない状態から開発環境を稼働状態にする簡単な方法です。 Visual Studio の構成が異なるさまざまなシステム イメージを、[Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure) で入手できます。
 
@@ -36,10 +36,10 @@ ms.locfileid: "76113806"
 
 | リリース バージョン                                                                                                                                          | エディション              |    製品バージョン    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019:最新版 (バージョン 16.4)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | バージョン 16.4.0    |
-| [Visual Studio 2019:RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | エンタープライズ            | バージョン 16.0.9    |
-| [Visual Studio 2017:最新 (バージョン 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | バージョン 15.9.17   |
-| [Visual Studio 2017:RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | バージョン 15.0.27   |
+| [Visual Studio 2019:最新版 (バージョン 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | バージョン 16.5.4    |
+| [Visual Studio 2019:RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | エンタープライズ            | バージョン 16.0.13    |
+| [Visual Studio 2017:最新 (バージョン 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | バージョン 15.9.22   |
+| [Visual Studio 2017:RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | バージョン 15.0.28   |
 | [Visual Studio 2015:最新 (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise、Community | バージョン 14.0.25431.01 |
 
 > [!NOTE]

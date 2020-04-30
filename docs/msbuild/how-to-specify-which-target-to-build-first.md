@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c679b2a43ec799035f9bafb6a03a546808498342
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543986"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072529"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>方法: 最初にビルドするターゲットを指定する
 

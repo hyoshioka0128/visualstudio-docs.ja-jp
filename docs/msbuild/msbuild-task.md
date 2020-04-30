@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633175"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072581"
 ---
 # <a name="msbuild-task"></a>MSBuild タスク
 
@@ -42,6 +42,7 @@ ms.locfileid: "77633175"
 | `RemoveProperties` | 省略可能な `String` 型のパラメーターです。<br /><br /> 削除するグローバル プロパティのセットを指定します。 |
 | `RunEachTargetSeparately` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、MSBuild タスクによって、MSBuild に渡されたリスト内の各ターゲットが、同時にではなく一度に 1 つずつ呼び出されます。 このパラメーターを `true` に設定すると、前に呼び出したターゲットが失敗しても、後に続くターゲットは呼び出されることが保証されます。 それ以外の場合は、ビルド エラーが発生すると、以降のすべてのターゲットの呼び出しは停止されます。 既定値は `false` です。 |
 | `SkipNonexistentProjects` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ディスク上に存在しないプロジェクト ファイルはスキップされます。 それ以外の場合は、そのようなプロジェクトによりエラーが発生します。 |
+|`SkipNonexistentTargets`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、存在するが、名前付きの `Targets` が含まれていないプロジェクト ファイルはスキップされます。 それ以外の場合は、そのようなプロジェクトによりエラーが発生します。 MSBuild 15.5 で導入。|
 | `StopOnFirstFailure` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、プロジェクトの 1 つがビルドに失敗すると、プロジェクトはそれ以上ビルドされません。 この機能は現在、同時にビルド (複数のプロセッサを使用) する際にはサポートされていません。 |
 | `TargetAndPropertyListSeparators` | 省略可能な `String[]` 型のパラメーターです。<br /><br /> `Project` 項目メタデータとしてターゲットとプロパティのリストを指定します。 区切り記号は、処理の前にエスケープ解除されます。 たとえば、%3B (エスケープされた ';') はエスケープされていない ';' のように扱われます。 |
 | `TargetOutputs` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> すべてのプロジェクト ファイルからビルドされたターゲットの出力を返します。 指定したターゲットの出力だけが返されます。それらのターゲットが依存しているターゲットに存在する可能性があるすべての出力が返されるわけではありません。<br /><br /> `TargetOutputs` パラメーターには、次のメタデータも含まれています。<br /><br /> -   `MSBuildSourceProjectFile`:出力を設定するターゲットを含む MSBuild プロジェクト ファイル。<br />-   `MSBuildSourceTargetName`:出力を設定するターゲット。 **注:** 各プロジェクト ファイルまたはターゲットの出力を個別に識別する場合は、プロジェクト ファイルまたはターゲットごとに `MSBuild` タスクを実行します。 `MSBuild` タスクを 1 回だけ実行してすべてのプロジェクト ファイルをビルドすると、すべてのターゲットの出力が 1 つの配列に収集されます。 |

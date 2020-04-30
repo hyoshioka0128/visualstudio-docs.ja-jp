@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472672"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189492"
 ---
 # <a name="container-tools-build-properties"></a>コンテナー ツールのビルド プロパティ
 
@@ -40,13 +40,41 @@ ms.locfileid: "80472672"
 | DockerDefaultTargetOS | Docker イメージをビルドするときに使用される、既定のターゲット オペレーティング システム。 | Visual Studio によって設定されます。 |1.0.1985401 以降|
 | DockerImageLabels | Docker イメージに適用される、既定のラベル セット。 | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 以降|
 | DockerFastModeProjectMountDirectory|**高速モード**では、このプロパティは、実行中のコンテナーにプロジェクト出力ディレクトリがボリュームマウントされる場所を制御します。|C:\app (Windows) または /app (Linux)|1.9.2 以降|
-| DockerfileBuildArguments | Docker ビルド コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
+| DockerfileBuildArguments | [Docker ビルド](https://docs.docker.com/engine/reference/commandline/build/) コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
 | DockerfileContext | Dockerfile の相対パスとして Docker イメージをビルドするときに使用される既定のコンテキスト。 | Visual Studio によって設定されます。 |1.0.1872750 以降|
 | DockerfileFastModeStage | デバッグ モードでイメージをビルドするときに使用される、Dockerfile ステージ (つまり、ターゲット)。 | Dockerfile (ベース) で発見された最初のステージ |
 | DockerfileFile | プロジェクトのコンテナーをビルドまたは実行するために使用される、既定の Dockerfile について説明します。 これは、パスに置き換えることもできます。 | Dockerfile |1.0.1872750 以降|
-| DockerfileRunArguments | Docker 実行コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
+| DockerfileRunArguments | [Docker 実行](https://docs.docker.com/engine/reference/commandline/run/)コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
 | DockerfileRunEnvironmentFiles | Docker の実行中に適用される、セミコロンで区切られた環境ファイルの一覧。 | 該当なし。 |1.0.1872750 以降|
 | DockerfileTag | Docker イメージをビルドするときに使用されるタグ。 デバッグでは、":dev" がタグに追加されます。 | 次の規則に従って英数字以外の文字を削除した後のアセンブリ名。 <br/> 結果のタグがすべて数値の場合、"image" がプレフィックスとして挿入されます (たとえば、image2314)。 <br/> 結果のタグが空の文字列の場合は、"image" がタグとして使用されます。 |1.0.1872750 以降|
+
+## <a name="example"></a>例
+
+次のプロジェクト ファイルからは、これらの設定の例をいくつか確認できます。
+
+```xml
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>feae72bf-2368-4487-b6c6-546c19338cb1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!-- In CI/CD scenarios, you might need to change the context. By default, Visual Studio uses the
+         folder above the Dockerfile. The path is relative to the Dockerfile, so here the context is
+         set to the same folder as the Dockerfile. -->
+    <DockerfileContext>.</DockerfileContext>
+    <!-- Set `docker run` arguments to mount a volume -->
+    <DockerfileRunArguments>-v $(pwd)/host-folder:/container-folder:ro</DockerfileRunArguments>
+    <!-- Set `docker build` arguments to add a custom tag -->
+    <DockerfileBuildArguments>-t contoso/front-end:v2.0</DockerfileBuildArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.6" />
+  </ItemGroup>
+
+</Project>
+```
 
 ## <a name="next-steps"></a>次の手順
 
