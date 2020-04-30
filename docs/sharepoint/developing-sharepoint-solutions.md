@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd8717d7e87453c047ce5d438a54c594f63cd5de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986370"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586898"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint ソリューションの開発
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトおよびサイト要素を作成するための SharePoint プロジェクトの種類のテンプレートがいくつか用意されています。 使用可能なプロジェクトの種類の一覧については、「 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。 次に、SharePoint プロジェクトの要素およびプロパティについて説明します。
 
- SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
+ SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint プロジェクトの要素
  SharePoint プロジェクトのノードは、 *SharePoint アイテム*と呼ばれます。 また、SharePoint アイテムには、 *SharePoint アイテム ファイル*と呼ばれる 1 つ以上のサブ ファイル ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 構成ファイル、.aspx フォームなど) が含まれる場合があります。
@@ -35,7 +35,7 @@ ms.locfileid: "72986370"
 ### <a name="special-nodes"></a>特殊なノード
  すべての SharePoint プロジェクトに、名前変更、削除、切り取り、コピー、プロジェクトからのドラッグなどの操作ができないノードが 2 つ含まれています。 これらのノードを次に示します。
 
-- フィーチャー
+- 特徴
 - Package
 
   プロジェクトにフィーチャーまたはパッケージが定義されているかどうかに関係なく、この 2 つのノードはすべての SharePoint プロジェクトに必ず表示されます。
@@ -52,14 +52,14 @@ ms.locfileid: "72986370"
 #### <a name="package-node"></a>パッケージノード
  **[Package]** ノードには、SharePoint プロジェクトの配布メカニズムとして機能するファイルが 1 つだけ含まれています。 このファイルは、*ソリューションパッケージ*と呼ばれています。を使用した CAB。WSP 拡張。 ソリューション パッケージは、SharePoint サイトに適用される一連のフィーチャー、サイト定義、およびアセンブリを含んでいる配置可能で再利用可能なファイルであり、これは個別に有効または無効にできます。 **[Package]** ノードには、パッケージの [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義ファイルである Package.wspdef というファイルも必ず含まれています。 SharePoint を実行しているサーバーにパッケージが配置されると、SharePoint 管理者はそのパッケージをインストールしてフィーチャーをアクティブにできます。
 
- パッケージデザイナーでパッケージの内容を表示または変更するには、パッケージノードをダブルクリックするか、そのショートカットメニューを開いて **[開く]** を選択します。 詳細については、「 [SharePoint ソリューションパッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)」を参照してください。
+ パッケージデザイナーでパッケージの内容を表示または変更するには、パッケージノードをダブルクリックするか、そのショートカットメニューを開いて [**開く**] を選択します。 詳細については、「 [SharePoint ソリューションパッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)」を参照してください。
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint プロジェクトとプロジェクト項目のプロパティ
  SharePoint プロジェクトでは、他の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトと同様、[プロパティ] ウィンドウおよび [プロパティ] ページにプロパティが表示されます。 表示されるプロパティは、選択したノードによって異なります。
 
  **ソリューション エクスプローラー**で SharePoint プロジェクト ノード、プロジェクト項目ノード、またはプロジェクト項目ファイル ノードを選択すると、次のプロパティが [プロパティ] ウィンドウまたは [プロパティ] ページに表示されます。
 
-### <a name="project-properties"></a>プロジェクト プロパティ
+### <a name="project-properties"></a>プロジェクトのプロパティ
 
 |プロパティ名|説明|
 |-------------------|-----------------|
@@ -74,7 +74,7 @@ ms.locfileid: "72986370"
 |プロジェクト ファイル|プロジェクトのビルド、構成、およびその他の情報を含むファイルの名前です。|
 |プロジェクト フォルダー|システム上のプロジェクト ファイルの場所。 システム テーブルは読み取り専用です。|
 |Sandboxed Solution|プロジェクトを *サンドボックス ソリューション*( *ユーザー作成のソリューション*とも呼ばれる) として配置するかどうかを指定します。 サンドボックス ソリューションは必ずしも信頼できません。 値が **true** の場合、プロジェクトはサンドボックス ソリューションとして配置され、 **false** の場合、プロジェクトはファーム ソリューションとして配置されます。 詳細については、次のトピックを参照してください。 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) および [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
-|サイト URL|このプロジェクトの対象サイトの [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] を指定します。|
+|サイトの URL|このプロジェクトの対象サイトの [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] を指定します。|
 |スタートアップ アイテム|プロジェクトで最初に実行される項目を指定します。|
 
  SharePoint の項目ファイル (ワークフローや [Features] ノードのフィーチャーなど) を選択すると、[プロパティ] ウィンドウに次のプロパティが表示されます。
@@ -84,7 +84,7 @@ ms.locfileid: "72986370"
 |プロパティ名|説明|
 |-------------------|-----------------|
 |配置競合の解決|配置するプロジェクト アイテムのプロパティが既にサーバー上にあるアイテムのプロパティと同じであった場合に実行される動作を指定します。 詳細については、「 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)」を参照してください。|
-|機能のプロパティ|フィーチャーが SharePoint に配置されるときに一緒に含まれる一連の値 (キー/値のペアとして格納されます) を指定します。 フィーチャーが配置されると、そのプロパティ値にコードでアクセスできるようになります。 詳細については、「 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。|
+|機能プロパティ|フィーチャーが SharePoint に配置されるときに一緒に含まれる一連の値 (キー/値のペアとして格納されます) を指定します。 フィーチャーが配置されると、そのプロパティ値にコードでアクセスできるようになります。 詳細については、「 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。|
 |フィーチャー レシーバー|プロジェクト項目の対象フィーチャーで特定のイベントが発生した場合に実行されるコードが用意されています。 詳細については、「 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。|
 |フォルダー名|SharePoint プロジェクト項目フォルダーの名前。|
 |プロジェクト出力参照|プロジェクト項目の実行に必要な依存関係 (アセンブリなど) を指定します。 詳細については、「 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。|
@@ -95,15 +95,15 @@ ms.locfileid: "72986370"
 |プロパティ名|説明|
 |-------------------|-----------------|
 |ビルド アクション|ファイルとビルド プロセスおよび配置プロセスの関係を指定します。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
-|出力ディレクトリにコピー|出力ディレクトリにソース ファイルをコピーするかどうかを指定します。 次のいずれかの値になります。<br /><br /> *コピーしない*-   <br />*常にコピー* -   <br />*新しい場合はコピー* -   <br /><br /> 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
+|出力ディレクトリにコピー|出力ディレクトリにソース ファイルをコピーするかどうかを指定します。 次の値のいずれかです。<br /><br /> -   *コピーしない*<br />-   *常にコピー*<br />-   *新しい場合はコピーする*<br /><br /> 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
 |カスタム ツール|デザイン時にファイルを変換し、変換の結果を別のファイルに出力するツールが存在する場合に、そのツールの名前を指定します。 たとえば、データセット (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) ファイルでは既定のカスタム ツールを使用できます。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
 |カスタム ツールの名前空間|カスタム ツールの出力がコピーされる名前空間です。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
-|配置場所|SharePoint サーバー上のファイルの完全修飾パス。 このパスは、[配置ルート] プロパティと [配置パス] プロパティで構成されます。|
-|配置パス|SharePoint サーバーファイル上のファイルの相対パス (Workflow1.xaml\\など)。 ファイルの完全修飾パスは、 *Deployment Path* 値の末尾に *Deployment Root* 値を連結することによって作成されます。<br /><br /> [*展開の種類*] プロパティで*rootfile*の値を選択すると、*展開ルート*プロパティが \<sharepointroot >\\に変更され、その結果、\<sharepointroot > \ workflow1 の完全修飾パスになり\\. 詳細については、「 [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)」を参照してください。|
-|Deployment Root|文字列。 ファイルの配置先となる SharePoint Server 上のルート フォルダーです たとえば、\<SharePointRoot > \ Template/Features\\\<FeatureName >\\にします。<br /><br /> *Deployment Root* プロパティの値は、 *Deployment Type* の設定に依存します。|
-|配置タイプ|ファイルの配置の種類です。 *Deployment Root* 値に依存します。 次のいずれかの値になります。<br /><br /> NoDeployment: *\<値がありません >*<br /><br /> ElementManifest: *\<SharePointRoot > \ template\\\<FeatureName >* \\<br /><br /> ElementFile: *\<SharePointRoot > \ template\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \ テンプレート\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \ リソース\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> 詳細については、「<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>」を参照してください。|
+|デプロイの場所|SharePoint サーバー上のファイルの完全修飾パス。 このパスは、[配置ルート] プロパティと [配置パス] プロパティで構成されます。|
+|配置パス|SharePoint サーバーファイル上のファイルの相対パス (Workflow1.xaml\\など)。 ファイルの完全修飾パスは、 *Deployment Path* 値の末尾に *Deployment Root* 値を連結することによって作成されます。<br /><br /> [*展開の種類*] プロパティで*rootfile*の値を選択すると、*展開ルート*プロパティが\\sharepointroot>に\<変更され、その\<結果、sharepointroot> \\\workflow1 の完全修飾パスになります。 詳細については、「 [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)」を参照してください。|
+|Deployment Root|文字列。 ファイルの配置先となる SharePoint Server 上のルート フォルダーです たとえば、 \<sharepointroot> \ template\ Features\\\<FeatureName>\\です。<br /><br /> *Deployment Root* プロパティの値は、 *Deployment Type* の設定に依存します。|
+|デプロイの種類|ファイルの配置の種類です。 *Deployment Root* 値に依存します。 次の値のいずれかです。<br /><br /> Nodeployment: * \<値>*<br /><br /> Elementmanifest: * \<sharepointroot> \\\\<templateFeatureName>*\\<br /><br /> Elementfile: * \<sharepointroot> \\\\<templateFeatureName>\\*<br /><br /> TemplateFile: * \<sharepointroot> \ Template\\*<br /><br /> Rootfile: * \<sharepointroot>\\*<br /><br /> Globalresource: * \<sharepointroot> \ リソース\\*<br /><br /> Classresource: * \<ClassResourcePath>\\*<br /><br /> 詳細については、「<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>」を参照してください。|
 |ファイル名|項目ファイルの名前またはフォルダーの名前です。|
-|完全パス|項目ファイルの場所です。 システム テーブルは読み取り専用です。|
+|完全なパス|項目ファイルの場所です。 システム テーブルは読み取り専用です。|
 
 ## <a name="related-topics"></a>関連トピック
 
@@ -119,17 +119,17 @@ ms.locfileid: "72986370"
 |[Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint で実行されるアプリケーション ページと Web パーツで使用できるユーザー コントロールの作成方法について説明します。|
 |[SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)|Web サービスとバック エンド サーバー アプリケーションのデータを SharePoint アプリケーションに統合する方法を説明します。|
 |[SharePoint のサイト定義の作成](../sharepoint/creating-site-definitions-for-sharepoint.md)|サイト定義 (SharePoint サイトを作成するために使用されるテンプレート) を作成する方法を説明します。|
-|[既存の SharePoint サイトからの項目のインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|既存の SharePoint サイトから [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクトにコンテンツ タイプやモジュールなどの項目をインポートする方法を説明します。|
-|[モジュールを使用してソリューションにファイルを含める](../sharepoint/using-modules-to-include-files-in-the-solution.md)|モジュールを使用して [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトのファイルを SharePoint サイトに配置する方法を説明します。|
+|[既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|既存の SharePoint サイトから [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクトにコンテンツ タイプやモジュールなどの項目をインポートする方法を説明します。|
+|[モジュールを使用してソリューションにファイルを追加する](../sharepoint/using-modules-to-include-files-in-the-solution.md)|モジュールを使用して [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトのファイルを SharePoint サイトに配置する方法を説明します。|
 |[サーバーエクスプローラーを使用した SharePoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|サーバー エクスプローラーを使用してローカルの SharePoint サイトを閲覧する方法について説明します。|
 |[プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|プロジェクト項目のプロパティを使用して、プロジェクトのパッケージ化と配置に関する情報を提供する方法について説明します。たとえば、コントロール エントリ、プロジェクト出力参照、フィーチャーのプロパティなどです。|
 |[方法: マップされたフォルダーを追加および削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)|SharePoint のリソースに容易にアクセスできるよう、マップされたフォルダーをプロジェクトに追加する方法を説明します。|
 |[サンドボックスソリューションに関する考慮事項](../sharepoint/sandboxed-solution-considerations.md)|サンドボックス ソリューションに関連した問題について説明します。|
 |[SharePoint ソリューションのセキュリティ](../sharepoint/security-for-sharepoint-solutions.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で SharePoint ソリューションを開発する際のセキュリティ上の考慮事項について説明します。|
-|[[URL の選択&#40;] ダイアログボックス Visual Studio での SharePoint 開発&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|プロジェクト内またはローカル SharePoint サーバー上のリソースへのパス参照を追加するために使用できるダイアログ ボックスについて説明します。|
+|[[URL の選択] ダイアログボックス Visual Studio での SharePoint 開発 &#40;&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|プロジェクト内またはローカル SharePoint サーバー上のリソースへのパス参照を追加するために使用できるダイアログ ボックスについて説明します。|
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio &#40;での SharePoint 開発の概要&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+- [Visual Studio での SharePoint 開発 &#40;開始する&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [サーバーエクスプローラーを使用した SharePoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

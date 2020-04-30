@@ -107,6 +107,7 @@ f1_keywords:
 - CA1506
 - CA1507
 - CA1508
+- CA1509
 - CA1600
 - CA1601
 - CA1700
@@ -172,6 +173,7 @@ f1_keywords:
 - CA2004
 - CA2006
 - CA2007
+- CA2009
 - CA2100
 - CA2101
 - CA2102
@@ -270,12 +272,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 4b4b0929830f825b2c1f7fd568620a3f743308f4
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167385"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586302"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -283,7 +285,6 @@ ms.locfileid: "82167385"
 
 | CheckId | 警告 | 説明 |
 |---------| - | - |
-| CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を<xref:System.Threading.Tasks.Task>直接待機します。 非同期メソッドがを<xref:System.Threading.Tasks.Task>直接待機する場合、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出し<xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>て、継続の意図を知らせることを検討してください。 |
 | CA1000 | [CA1000:ジェネリック型の静的メンバーを宣言しません](../code-quality/ca1000.md) | ジェネリック型の静的メンバーを呼び出すときには、その型の型引数も指定する必要があります。 推論をサポートしないジェネリック インスタンス メンバーを呼び出すときには、そのメンバーに型引数を指定する必要があります。 この 2 つの場合、型引数を指定するときに使用される構文は異なりますが、混同される可能性があります。 |
 | CA1001 | [CA1001:破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001.md) | クラスが System.IDisposable 型であるインスタンス フィールドを宣言および実装していますが、IDisposable を実装していません。 IDisposable フィールドを宣言するクラスは間接的にアンマネージ リソースを所有しているため、IDisposable インターフェイスを実装する必要があります。 |
 | CA1002 | [CA1002:ジェネリック リストを公開しません](../code-quality/ca1002.md) | < (Of \<(T>) >) は、継承ではなくパフォーマンスを目的として設計されたジェネリックコレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
@@ -383,6 +384,7 @@ ms.locfileid: "82167385"
 | CA1506 | [CA1506:クラス結合度を大きくしすぎないでください](../code-quality/ca1506.md) | この規則は、型またはメソッドに含まれる一意の型参照の数をカウントすることによって、クラス結合度を計測します。 |
 | CA1507 | [CA1507:文字列の代わりに nameof を使用します](../code-quality/ca1507.md) | 文字列リテラルは、式を`nameof`使用できる引数として使用されます。 |
 | CA1508 | [CA1508:使用されない条件付きコードを回避する](../code-quality/ca1508.md) | メソッドには、常に`true`または`false`実行時に評価される条件付きコードがあります。 これにより、条件の`false`分岐でコードが停止します。 |
+| CA1509 | [CA1509: コードメトリックス構成ファイルのエントリが無効です](../code-quality/ca1509.md) | [CA1501](ca1501.md)、 [CA1502](ca1502.md)、 [CA1505](ca1505.md) 、 [CA1506](ca1506.md)などのコードメトリックス規則には、無効なエントリを`CodeMetricsConfig.txt`持つという名前の構成ファイルが指定されています。 |
 | CA1600 | [CA1600:アイドル状態のプロセス優先度を使用しません](../code-quality/ca1600.md) | プロセス優先順位に Idle を設定しないでください。 System.Diagnostics.ProcessPriorityClass.Idle を設定したプロセスは、CPU を占有するか、そうでない場合はアイドル状態になるため、スタンバイ状態がブロックされます。 |
 | CA1601 | [CA1601:電源の状態の変更を妨げるタイマーを使用しません](../code-quality/ca1601.md) | 定期的な動作の頻度が高くなると、CPU のビジー状態が続き、ディスプレイとハード ディスクをオフにする省電力アイドル タイマーに影響を与えます。 |
 | CA1700 | [CA1700:列挙型値に 'Reserved' という名前を指定しません](../code-quality/ca1700.md) | この規則では、"reserved" を含む名前の列挙体のメンバーは、現在使用されていなくても、将来的なバージョンでは名前を変更するか削除されるプレースホルダーと想定しています。 メンバーの名前変更や削除は、互換性に影響する変更点です。 |
@@ -428,10 +430,10 @@ ms.locfileid: "82167385"
 | CA1823 | [CA1823:使用されていないプライベート フィールドを使用しません](../code-quality/ca1823.md) | アセンブリ内でアクセスされていないと思われるプライベート フィールドが検出されました。 |
 | CA1824 |[CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します](../code-quality/ca1824.md) | NeutralResourcesLanguage 属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語をリソースマネージャーに通知します。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。 |
 | CA1825 |[CA1825:長さ 0 の配列割り当てを回避します](../code-quality/ca1825.md) | 長さ0の配列を初期化すると、不要なメモリ割り当てにつながります。 代わりに、を呼び出す<xref:System.Array.Empty%2A?displayProperty=nameWithType>ことによって、静的に割り当てられた空の配列インスタンスを使用します。 メモリ割り当ては、このメソッドのすべての呼び出しで共有されます。 |
-| CA1826 |[CA1826: Linq の列挙可能なメソッドの代わりにプロパティを使用します](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>LINQ メソッドが、同等のより効率的なプロパティをサポートする型で使用されました。 |
-| CA1827 |[CA1827: 使用可能な場合、Count/LongCount を使用しないでください](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>また<xref:System.Linq.Enumerable.LongCount%2A>はメソッドが使用<xref:System.Linq.Enumerable.Any%2A>されました。メソッドの方が効率的です。 |
-| CA1828 |[CA1828: AnyAsync を使用できる場合は、CountAsync/LongCountAsync を使用しないでください。](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>また<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>はメソッドが使用<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A>されました。メソッドの方が効率的です。 |
-| CA1829 |[CA1829: Count メソッドではなく、Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ メソッドは、同等の、より効率的`Length`なまたは`Count`プロパティをサポートする型で使用されていました。 |
+| CA1826 |[CA1826:Linq の列挙可能なメソッドの代わりにプロパティを使用します](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>LINQ メソッドが、同等のより効率的なプロパティをサポートする型で使用されました。 |
+| CA1827 |[CA1827:Any が使用できる場合は Count/LongCount を使用しません](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>また<xref:System.Linq.Enumerable.LongCount%2A>はメソッドが使用<xref:System.Linq.Enumerable.Any%2A>されました。メソッドの方が効率的です。 |
+| CA1828 |[CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>また<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>はメソッドが使用<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A>されました。メソッドの方が効率的です。 |
+| CA1829 |[CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ メソッドは、同等の、より効率的`Length`なまたは`Count`プロパティをサポートする型で使用されていました。 |
 | CA1900 | [CA1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
 | CA1903 | [CA1903:対象のフレームワークから API のみを使用します](../code-quality/ca1903.md) | メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。 |
@@ -441,6 +443,8 @@ ms.locfileid: "82167385"
 | CA2003 |[CA2003:ファイバーをスレッドとして扱いません](../code-quality/ca2003.md) | マネージド スレッドが [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] スレッドとして扱われています。 |
 | CA2004 | [CA2004:GC.KeepAlive への呼び出しを削除します](../code-quality/ca2004.md) | SafeHandle の使用に変更する場合、すべての GC.KeepAlive (object) の呼び出しを削除します。 この場合、クラスに GC.KeepAlive の呼び出しを含めることはできません。 クラスはファイナライザーを持っていない代わりに、SafeHandle を使用して OS ハンドルを終了していることが前提となっています。 |
 | CA2006 | [CA2006:SafeHandle を使用して、ネイティブ リソースを要約します](../code-quality/ca2006.md) | マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。 |
+| CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を<xref:System.Threading.Tasks.Task>直接待機します。 非同期メソッドがを<xref:System.Threading.Tasks.Task>直接待機する場合、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出し<xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>て、継続の意図を知らせることを検討してください。 |
+| CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable`メソッドは、名前空間から<xref:System.Collections.Immutable>変更できないコレクションで不必要に呼び出されました。 |
 | CA2100 | [CA2100:SQL クエリのセキュリティ脆弱性を確認](../code-quality/ca2100.md) | メソッドに渡された文字列引数から構築された文字列を使用して System.Data.IDbCommand.CommandText プロパティが設定されています。 この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 |
 | CA2101 |[CA2101: P/Invoke 文字列引数のマーシャリングを指定します。](../code-quality/ca2101.md) | プラットフォーム呼び出しメンバーが、部分信頼の呼び出し元を許可し、文字列パラメーターを持ち、さらにその文字列を明示的にマーシャリングしていません。 これはセキュリティ上の脆弱性となる可能性があります。 |
 | CA2102 | [CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします](../code-quality/ca2102.md) | アセンブリ内の RuntimeCompatibilityAttribute でマークされていないメンバーまたは RuntimeCompatibility(WrapNonExceptionThrows = false) でマークされているメンバーには、System.Exception を処理する catch ブロックがあり、その直後に汎用 catch ブロックはありません。 |
