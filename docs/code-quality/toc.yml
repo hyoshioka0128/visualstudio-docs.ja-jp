@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508:使用されない条件付きコードを回避する'
                   href: ca1508.md
+                - name: 'CA1509: コード メトリック構成ファイルのエントリが無効です'
+                  href: ca1509.md
             - name: モビリティに関する警告
               items:
                 - name: 概要
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007:タスクを直接待機しないでください'
                   href: ca2007.md
+                - name: 'CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください'
+                  href: ca2009.md
             - name: セキュリティの警告
               items:
                 - name: 概要
