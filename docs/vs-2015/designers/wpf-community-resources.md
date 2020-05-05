@@ -24,7 +24,7 @@ Microsoft は、Windows Presentation Foundation (WPF) について学習した�
 ## <a name="community"></a>コミュニティ
  [WPF フォーラム](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [スタック オーバーフロー](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [WPF チーム ブログ](https://devblogs.microsoft.com/wpf/)
 
