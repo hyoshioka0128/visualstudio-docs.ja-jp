@@ -1,5 +1,5 @@
 ---
-title: ビジュアルC#と Visual Basic によるはじめに |Microsoft Docs
+title: Visual C# と Visual Basic によるはじめに |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
