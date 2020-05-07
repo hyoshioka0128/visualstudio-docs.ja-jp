@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307191"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586691"
 ---
 # <a name="property-functions"></a>プロパティ関数
 
@@ -339,6 +339,10 @@ Output:
   Value2 = b
 -->
 ```
+
+## <a name="msbuild-condition-functions"></a>MSBuild 条件関数
+
+関数 `Exists` と `HasTrailingSlash` は、プロパティ関数ではありません。 これらは、`Condition` 属性と一緒に使用することができます。 「[MSBuild の条件](msbuild-conditions.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

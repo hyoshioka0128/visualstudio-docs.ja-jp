@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 管理者がサブスクライバーにライセンスを割り当てる方法を説明します
-ms.openlocfilehash: 87334251532dbaa127d4def8c33a9814c28d42e1
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232705"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564161"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理者ポータルでライセンスを割り当てる
 Visual Studio サブスクリプションの管理者は、管理者ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
@@ -25,6 +25,11 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
 
 ## <a name="add-a-single-subscriber"></a>1 人のサブスクライバーを追加する
 次に、新しいユーザーがサブスクリプションの特典にアクセスできるように、そのユーザーに Visual Studio サブスクリプションを割り当てる方法を示します。
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vpPh]
+
 
 1. [管理ポータル](https://manage.visualstudio.com)にサインインします。
 2. 1 人の Visual Studio サブスクライバーにライセンスを割り当てるには、テーブルの上部にある **[追加]** を選択してから、 **[Individual subscriber]\(個々のサブスクライバー\)** を選択します。

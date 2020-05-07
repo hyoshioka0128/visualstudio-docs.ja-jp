@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a0f72bf6a6561060fd4eddcf2fc11f0f4cf97f15
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232550"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564226"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 サブスクリプション管理者は、組織内の個人に割り当てられているサブスクリプションに変更を加えることができます。  この記事では、行うことができる変更の種類と、必要な手順について説明します。
@@ -30,7 +30,13 @@ ms.locfileid: "80232550"
 サブスクライバーの [名]、[姓]、[サブスクリプション レベル]、[電子メール アドレス]、[国]、[言語]、[ダウンロード]、および [参照] フィールドを更新できます。 サブスクライバーの情報を編集して、 **[保存]** をクリックします。
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>一括編集を使用して複数のサブスクライバーを編集する
+
+
 一括編集プロセスを使用して、一度に複数のサブスクライバーを編集することができます。 この機能は、会社の電子メール アドレスを変更している組織、または組織がダウンロードへのアクセスを制限することにした場合に主に使用されます。
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
    > [!IMPORTANT]
    > 一括編集を使用して、サブスクリプション レベル (つまり Enterprise や Professional など) およびサブスクリプション GUID を変更することはできません。  特定のサブスクリプション GUID をユーザーに割り当てる必要がある場合は、サブスクリプション ID を選択してユーザーを追加するための手順を実行します。 変更されたこれらの項目を一括編集テンプレートでアップロードしようとすると、アップロードは失敗します。

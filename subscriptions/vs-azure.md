@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/10/2020
+ms.date: 04/28/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224486"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564174"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -42,10 +42,9 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 
 0. 後で簡単にアクセスできるように、[Azure portal](https://portal.azure.com) をブックマークします。
 
-## <a name="using-azure-without-a-visual-studio-subscription"></a>Visual Studio サブスクリプションなしで Azure を使用する
-Visual Studio サブスクリプションが終了すると、Azure の Dev/Test に毎月与えられる個別のクレジットなど、サブスクリプションの特典をすべてご利用いただけなくなります。 毎月のクレジットで Azure の使用を続けるには、サブスクリプションを更新するか、新しいサブスクリプションを購入するか、Azure の Dev/Test の個別クレジットが含まれる有効なサブスクリプションに Azure 特典を移す必要があります。  現在の Azure サブスクリプションを従量課金制に変更し、毎月のクレジットなしで Azure を引き続きご利用いただくこともできます。
+## <a name="maintain-a-subscription-to-use-monthly-credits"></a>月単位のクレジットを使用するサブスクリプションを保守する
+Visual Studio サブスクリプションの有効期限が切れた場合、または削除された場合、毎月の Azure  Dev/Test の個別クレジットを含め、すべてのサブスクリプション特典が利用できなくなります。 毎月のクレジットで Azure の使用を続けるには、サブスクリプションを更新するか、新しいサブスクリプションを購入するか、Azure の Dev/Test の個別クレジットが含まれる有効なサブスクリプションに Azure 特典を移す必要があります。  
 
-### <a name="continue-using-azure-with-a-monthly-credit"></a>毎月のクレジットで Azure の使用を続ける
 > [!IMPORTANT]
 > 現在の Azure サブスクリプションが無効になるか、データにアクセスできなくなる前に、リソースを別の Azure サブスクリプションに移す必要があります。  
 
@@ -55,24 +54,16 @@ Azure の毎月のクレジットは、いくつかの方法で引き続きご�
 - **組織の誰かが代表してサブスクリプションを購入する場合**、[Visual Studio サブスクリプションの管理者に問い合わせ](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)、必要な毎月のクレジットが与えられるサブスクリプションを要求してください。  
 - 別の Microsoft アカウントに関連付けられている同じサブスクリプション レベルで**別の Visual Studio サブスクリプションがアクティブになっている**場合、Visual Studio [サブスクリプション ポータル](https://my.visualstudio.com/subscriptions)で[代替アカウントを追加する](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)ことで、別の有効な Visual Studio サブスクリプションに Azure 特典を移すことができます。  
 
-置換する Azure クレジットのレベルで必要となるサブスクリプション レベルを決定できます。  
+以下の適格性テーブルを使用して、各サブスクリプションの種類に含まれるクレジットの数を確認してください。  
 
-| Visual Studio サブスクリプション レベル | 毎月の Azure クレジット |
-|----------------------------------|----------------------|
-| Visual Studio Enterprise         | $150                 |
-| Visual Studio Professional       | $50                  |
-| Visual Studio Test Professional  | $50                  |
-| MSDN Platforms*                  | $100                 |
 
-*MSDN Platforms のサブスクライバーは管理者に連絡し、新しいサブスクリプションを割り当ててもらう必要があります。 
-
-### <a name="continue-using-azure-without-a-monthly-credit"></a>毎月のクレジットなしで Azure の使用を続ける
+## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Azure サブスクリプションを従量課金制に変換する
 
 Visual Studio のサブスクリプションまたはクレジットは不要になったものの、Azure リソースを引き続きご利用になる場合は、別の Azure サブスクリプションに[リソースを移して](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)ください。あるいは[使用制限をなくし](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)、Azure サブスクリプションを従量課金制に変更してください。 
 
 いずれの措置も行わない場合、電子メールの通知を受信してから 30 日後にご利用の Azure サブスクリプションが無効になり、削除されます。  
 
-### <a name="have-a-question"></a>質問はございますか?
+## <a name="have-a-question"></a>質問はございますか?
 リソースの移動、使用制限の削除、あるいは Azure に関するその他のトピックに関して質問がございましたら、Azure portal で [Azure サポート要求を提出](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)することができます。 
 
 ## <a name="eligibility"></a>特典を受ける条件

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784661"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586564"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 
@@ -34,7 +34,7 @@ Visual Studio には、Windows 上の Azure App Service に Python Web アプリ
 
 このチュートリアルでは、Bottle、Flask、または Django のいずれかのフレームワークに基づく Web アプリ プロジェクトが必要になります。 プロジェクトがまだなく、発行プロセスを試してみたい場合は、次の手順に従って簡単なテスト プロジェクトを作成します。
 
-1. Visual Studio で、 **[ファイル] > [新規] > [プロジェクト]** の順に選び、"Bottle" を検索して、 **[Bottle Web プロジェクト]** を選び、プロジェクトの名前とパスを指定し、 **[OK]** をクリックします (Bottle テンプレートは、Python 開発ワークロードに含まれています。[インストール](installing-python-support-in-visual-studio.md)のページを参照してください)。
+1. Visual Studio で、 **[ファイル] > [新規] > [プロジェクト]** の順に選び、"Bottle" を検索して、 **[Bottle Web プロジェクト]** を選び、プロジェクトの名前とパスを指定し、 **[OK]** をクリックします  (Bottle テンプレートは、Python 開発ワークロードに含まれています。[インストール](installing-python-support-in-visual-studio.md)のページを参照してください)。
 
 1. 指示に従って外部パッケージをインストールします。 **[仮想環境にインストール]** と仮想環境の優先ベース インタープリターを選択します。 通常、これは App Service にインストールされている Python のバージョンと一致するものを選択します。
 
@@ -63,7 +63,7 @@ Azure への発行には、ターゲット App Service が必要です。 この
 
 次の手順に従い、Azure サブスクリプションなしで一時的な App Service を作成します。
 
-1. ブラウザーを開き、[try.azurewebsites.net](https://try.azurewebsites.net) にアクセスします。
+1. ブラウザーで [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/) を開きます。
 1. アプリの種類で **[Web App]** を選び、 **[次へ]** を選びます。
 1. **[Empty Site]\(空のサイト\)** 、 **[作成]** の順に選択します。
 1. 任意のソーシャル ログインを使ってサインインし、しばらくすると、表示される URL でサイトの準備ができます。
@@ -141,11 +141,11 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 
 1. 表示された **[発行]** タブで、発行先のターゲットを選択します。
 
-    a. Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、 **[既存のものを選択]** 、 **[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
+    a.  Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、 **[既存のものを選択]** 、 **[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
 
     ![Azure への発行手順 1、Visual Studio 2017 以降、既存のサブスクリプション](media/tutorials-common-publish-1a-2017.png)
 
-    b. try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、 **>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、 **[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
+    b.  try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、 **>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、 **[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
 
     ![Azure への発行手順 1、Visual Studio 2017 以降、一時的なアプリ サービス](media/tutorials-common-publish-1b-2017.png)
 
@@ -153,9 +153,9 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 
 1. ブラウザーが開いたときに、"内部サーバー エラーが発生したため、ページを表示できません。" というメッセージが表示される場合があります。 このメッセージは、サーバー上の Python 環境が完全に構成されていないことを示しています。その場合、次の手順を実行します。
 
-    a. もう一度「[Azure App Service での Python の管理](managing-python-on-azure-app-service.md)」を参照して、適切な Python サイト拡張機能がインストールされていることを確認します。
+    a.  もう一度「[Azure App Service での Python の管理](managing-python-on-azure-app-service.md)」を参照して、適切な Python サイト拡張機能がインストールされていることを確認します。
 
-    b. `web.config` ファイル内の Python インタープリターへのパスを再確認します。 パスは、選択したサイト拡張機能のインストール場所と完全に一致している必要があります。
+    b.  `web.config` ファイル内の Python インタープリターへのパスを再確認します。 パスは、選択したサイト拡張機能のインストール場所と完全に一致している必要があります。
 
     c. Kudu コンソールを使用してアプリの `requirements.txt` ファイルに一覧表示されている任意のパッケージをアップグレードする: `web.config` で使用されているのと同じ Python フォルダー (`/home/python361x64` など) に移動し、[Kudu コンソール](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)のセクションの説明に従って、次のコマンドを実行します。
 
