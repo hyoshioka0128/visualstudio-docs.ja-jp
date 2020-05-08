@@ -26,7 +26,7 @@ landingContent:
       url: debugger-feature-tour.md
     - text: デバッグ タスクの検索
       url: find-your-debugging-task.md
-- title: はじめに
+- title: 作業開始
   linkLists:
   - linkListType: tutorial
     links:
@@ -50,7 +50,7 @@ landingContent:
       url: using-breakpoints.md
     - text: コードを編集してデバッグを続行する
       url: edit-and-continue.md
-- title: データを検査する
+- title: データの検査
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -74,7 +74,7 @@ landingContent:
       url: using-the-debuggerdisplay-attribute.md
     - text: パフォーマンスの問題をデバッグする >>
       url: ../profiling/profiling-feature-tour.md
-- title: 協力
+- title: 共同作業
   linkLists:
   - linkListType: tutorial
     links:
