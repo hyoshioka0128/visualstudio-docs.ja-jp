@@ -1,5 +1,5 @@
 ---
-title: プロジェクトおよびソリューション
+title: プロジェクトとソリューション
 description: このドキュメントでは、Visual Studio for Mac のプロジェクトとソリューションの概要について説明します。
 ms.topic: overview
 author: heiligerdankgesang
@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70107822"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac のプロジェクトとソリューション
@@ -28,7 +28,7 @@ ms.locfileid: "70107822"
 
 Visual Studio for Mac によってプロジェクトが読み込まれると、Solution Pad には、プロジェクト ファイルを使用してご利用のプロジェクト内のファイルとフォルダーが表示されます。 コンパイル時に、MSBuild によってプロジェクト ファイルから設定が読み取られ、実行可能ファイルが作成されます。
 
-## <a name="solutions"></a>解決策
+## <a name="solutions"></a>ソリューション
 
 "*ソリューション*" とは、1 つまたは複数の関連するプロジェクトをグループ化する論理コンテナーです。 ソリューションは独自の形式を持つテキスト ファイル (拡張子: `.sln`) で記述され、手動での編集を意図していません。
 
@@ -42,6 +42,6 @@ Visual Studio for Mac によってプロジェクトが読み込まれると、S
 
 これらのオプションの詳細については、「[ソリューションとプロジェクト プロパティの管理](managing-solutions-and-project-properties.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のソリューションおよびプロジェクト (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

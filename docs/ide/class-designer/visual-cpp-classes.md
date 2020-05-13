@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590736"
 ---
 # <a name="c-classes-in-class-designer"></a>クラス デザイナーの C++ クラス
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、 **[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。A:
+また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、 **[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。
 
 ## <a name="multiple-inheritance"></a>多重継承
 
@@ -172,7 +172,7 @@ typedef struct
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> クラス<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> クラス<br /><br /> `C<T>`<br /><br /> テンプレート クラス<br /><br /> `D`<br /><br /> クラス<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
 - [クラスと構造体](/cpp/cpp/classes-and-structs-cpp)

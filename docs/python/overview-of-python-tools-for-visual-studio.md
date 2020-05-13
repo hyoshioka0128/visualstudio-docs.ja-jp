@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845671"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79300865"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -94,7 +94,7 @@ Visual Studio は、インライン プロット、.NET、Windows Presentation F
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 2019 では、Python コードが含まれるフォルダーを開き、Visual Studio のプロジェクトやソリューションのファイルを作成せずに、そのコードを実行することができます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。 ただし、このセクションで説明するように、プロジェクト ファイルを使用する利点があります。
+> Visual Studio 2019 では、Python コードが含まれるフォルダーを開き、Visual Studio のプロジェクトやソリューションのファイルを作成せずに、そのコードを実行することができます。 詳細については、[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。 ただし、このセクションで説明するように、プロジェクト ファイルを使用する利点があります。
 ::: moniker-end
 
 Visual Studio は、時間と共に複雑になるプロジェクトを管理するために役立ちます。 "*Visual Studio プロジェクト*" には、フォルダー構造をはるかに超えた機能があります。さまざまなファイルの使用方法やそれらが相互に関係する方法に関する解釈などです。 Visual Studio を使用すると、アプリケーション コード、テスト コード、Web ページ、JavaScript、ビルド スクリプトなどを区別できます。また、ファイルに適した機能が有効になります。 さらに、Visual Studio ソリューションは、Python プロジェクトや C ++ 拡張プロジェクトなどの複数の関連プロジェクトを管理する場合に役立ちます。

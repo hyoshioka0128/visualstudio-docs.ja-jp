@@ -20,7 +20,7 @@
           items:
             - name: シンボル型の構文階層
               href: lexical-hierarchy-of-symbol-types.md
-            - name: 注釈
+            - name: Annotation
               href: annotation.md
             - name: ブロック
               href: block.md
@@ -62,7 +62,7 @@
               href: basetype.md
             - name: CustomType
               href: customtype.md
-            - name: ディメンション
+            - name: Dimension
               href: dimension.md
             - name: Enum (Debug Interface Access SDK)
               href: enum-debug-interface-access-sdk.md

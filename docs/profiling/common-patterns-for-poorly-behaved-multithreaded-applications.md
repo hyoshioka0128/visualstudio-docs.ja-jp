@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62788906"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
@@ -46,7 +46,7 @@ ms.locfileid: "62788906"
 
 ## <a name="oversubscription"></a>オーバーサブスクリプション
 
-![オーバーサブスクリプション](../profiling/media/oversubscription.png "Oversubscription")
+![オーバーサブスクリプション](../profiling/media/oversubscription.png "オーバーサブスクリプション")
 
 オーバーサブスクリプションが発生している場合、プロセス内のアクティブなスレッド数がシステムの空き論理コア数よりも多くなっています。 前の図は、すべてのアクティブなスレッドで重要な優先度の縞模様が表示されているオーバーサブスクリプションの結果を示しています。 また、凡例には、大部分の時間が "優先" に使われていることが示されています (この例では 84%)。 これは、プロセスがシステムに対して、論理コア数よりも多くの同時実行スレッドを実行するように求めていることを示す可能性があります。 ただし、このプロセスに使用されるはずだったリソースを、システム上の他のプロセスが使用していることを示す可能性もあります。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62788906"
 
 ## <a name="inefficient-io"></a>非効率的な I/O
 
-![非効率な I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
+![非効率的な I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 I/O の過度な使用や誤使用は、アプリケーションの非効率の一般的な原因です。 前の図を例にして説明します。 [表示されているタイムライン プロファイル] には、表示されているスレッド時間の 44% が I/O に使用されています。 タイムラインには大量の I/O が表示され、プロファイリング対象のアプリケーションが I/O で頻繁にブロックされていることがわかります。 I/O の種類とプログラムがブロックされている場所の詳細を確認するには、問題が発生した領域を拡大して、[表示されているタイムライン プロファイル] を確認し、特定の I/O ブロックをクリックして現在のコール スタックを表示します。
 

@@ -1,5 +1,5 @@
 ---
-title: SccRename 関数 |Microsoft Docs
+title: SccRename 関数 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b2928653507b670160c72ca3ce09a0227a4170
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720768"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700426"
 ---
 # <a name="sccrename-function"></a>SccRename 関数
 この関数は、ソース管理システム内のファイルの名前を変更します。
@@ -34,38 +34,38 @@ SCCRTN SccRename(
 ```
 
 #### <a name="parameters"></a>パラメーター
- pvContext
+ を行う
 
-からソース管理プラグインのコンテキスト構造。
+[in]ソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
+[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- lpFileName
+ ファイル名
 
-から名前が変更されたファイルの完全修飾ファイル名。
+[in]名前を変更するファイルの完全修飾ファイル名。
 
- lpNewName
+ 新しい名前を指定します。
 
-から完全修飾された新しい名前。 ディレクトリパスが異なる場合、ファイルはあるサブディレクトリから別のサブディレクトリに移動されています。
+[in]完全修飾の新しい名前。 ディレクトリパスが異なる場合、ファイルはサブディレクトリ間で移動します。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|名前の変更操作が正常に完了しました。|
-|SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていません。|
-|SCC_E_FILENOTCONTROLLED|ファイルがソース管理下にありません。|
-|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。|
-|SCC_E_NOTAUTHORIZED|この操作を完了する権限がユーザーにありません。|
-|SCC_E_COULDNOTCREATEPROJECT|名前変更プロセスの一部としてプロジェクトを作成できませんでした。|
+|SCC_OK|名前変更操作は正常に完了しました。|
+|SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていない。|
+|SCC_E_FILENOTCONTROLLED|ファイルはソース管理下にありません。|
+|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。|
+|SCC_E_NOTAUTHORIZED|ユーザーには、この操作を完了する権限がありません。|
+|SCC_E_COULDNOTCREATEPROJECT|名前の変更プロセスの一環としてプロジェクトを作成できませんでした。|
 |SCC_E_OPNOTPERFORMED|操作は実行されませんでした。|
-|SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|
+|SCC_E_NONSPECIFICERROR|未指定または一般的なエラーが発生しました。|
 
 ## <a name="remarks"></a>Remarks
- この関数を使用すると、ファイルの名前を変更したり、ソース管理システム内のある場所から別の場所にファイルを移動したりすることができます。 ソース管理プラグインがディスク上のファイルにアクセスしようとすることはできません。 ローカルファイルの名前を変更するのは IDE の役割です。
+ この関数を使用して、ファイルの名前を変更したり、ソース管理システム内の別の場所に移動したりできます。 ソース管理プラグインは、ディスク上のファイルにアクセスしようとしません。 ローカルファイルの名前を変更するのは IDE の責任です。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

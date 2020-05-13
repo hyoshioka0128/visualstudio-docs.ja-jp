@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093611"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 
@@ -42,7 +42,7 @@ ms.locfileid: "75593851"
 </Target>
 ```
 
- AfterBuild を実行すると、"Second occurrence" (2 番目の出現) のみが表示されます。
+ `AfterBuild` を実行すると、"Second occurrence" (2 番目の出現) のみが表示されます。これは `AfterBuild` の 2 番目の定義によって最初の出現が隠されるためです。
 
  MSBuild はインポートの順序に依存するので、最後のターゲットの定義が使用されます。
 
@@ -105,6 +105,7 @@ Reference: 4.0
  すべての出力項目が最新の状態になっている場合、MSBuild はターゲットをスキップします。これがビルドのスピードを大幅に上げます。 これはターゲットのインクリメンタル ビルドと呼ばれています。 一部のファイルだけが最新の状態になっている場合、MSBuild は最新の項目なしでターゲットを実行します。 これはターゲットの部分的インクリメンタル ビルドと呼ばれています。 詳細については、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」を参照してください。
 
 ## <a name="default-build-targets"></a>既定のビルド ターゲット
+
 Microsoft.Common.CurrentVersion.Targets のパブリック ターゲットを次に示します。
 
 ```

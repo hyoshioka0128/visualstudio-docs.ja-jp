@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetMemoryBytes |Microsoft Docs
+title: をプログラム 2::メモリバイトを取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetMemoryBytes
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca06bd4593401544155e53c21315499d85edc07a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cc0be42ace78dbd46fd64ce42f446a9449998b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722812"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-プログラムによって占有されているメモリのバイト数を取得します。
+プログラムが占有しているメモリ バイトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetMemoryBytes( 
 
 ## <a name="parameters"></a>パラメーター
 `ppMemoryBytes`\
-[out]返します、 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)プログラムのメモリのバイト数を表すオブジェクト。
+[アウト]プログラムの[メモリ](../../../extensibility/debugger/reference/idebugmemorybytes2.md)バイトを表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- メモリのバイト数で表される、 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)メモリとないプログラムが実行されたときに割り当てられたメモリのプログラムのイメージ用オブジェクトです。
+ [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)オブジェクトで表されるメモリ バイトは、プログラムのイメージをメモリに使用します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -8,10 +8,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596022"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>方法: .NET Framework の旧バージョンを対象とした単体テストを構成する
@@ -87,7 +87,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
    エディターで *.vcxproj* ファイルが開きます。
 
-4. `"Globals"` というラベルが付いた `PropertyGroup` で `TargetFrameworkVersion` をバージョン 3.5 以降のバージョンに設定します。 クライアント バージョンは指定しません。
+4. `TargetFrameworkVersion` というラベルが付いた `PropertyGroup` で `"Globals"` をバージョン 3.5 以降のバージョンに設定します。 クライアント バージョンは指定しません。
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -104,7 +104,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 6. **ソリューション エクスプローラー**で、新しい C++ テスト プロジェクトの右クリック メニューから **[プロジェクトの再読み込み]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [SharePoint ソリューションの作成](../sharepoint/create-sharepoint-solutions.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)

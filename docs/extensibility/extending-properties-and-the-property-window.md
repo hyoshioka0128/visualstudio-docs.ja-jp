@@ -1,5 +1,5 @@
 ---
-title: プロパティと、[プロパティ] ウィンドウの拡張 |Microsoft Docs
+title: プロパティとプロパティ ウィンドウの拡張 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711740"
 ---
-# <a name="extend-properties-and-the-property-window"></a>プロパティと、[プロパティ] ウィンドウを拡張します。
-**プロパティ**ウィンドウは、デザイン時のプロパティとイベントを選択したオブジェクトの表示および編集に使用します。
+# <a name="extend-properties-and-the-property-window"></a>プロパティとプロパティ ウィンドウを拡張する
+**[プロパティ]** ウィンドウは、選択したオブジェクトのデザイン時プロパティおよびイベントを表示および編集するために使用します。
 
- 内のオブジェクトを選択すると[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、そのオブジェクトのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウの概要](../extensibility/internals/properties-window-overview.md)します。
+ で[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]オブジェクトを選択すると、そのオブジェクトのパブリック プロパティが **[プロパティ]** ウィンドウに表示されます。 詳細については、「プロパティ[ウィンドウの概要](../extensibility/internals/properties-window-overview.md)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [[プロパティ] ウィンドウにプロパティを公開](../extensibility/exposing-properties-to-the-properties-window.md)プロパティ ウィンドウに表示される、カスタム プロパティのある方法について説明します。
+- [プロパティを [プロパティ] ウィンドウに公開する](../extensibility/exposing-properties-to-the-properties-window.md)カスタム プロパティを [プロパティ] ウィンドウに表示する方法について説明します。
 
-- [プロジェクトのプロパティを取得](../extensibility/getting-project-properties.md)プロジェクトのプロパティを取得する方法について説明します。
+- [プロジェクト プロパティの取得](../extensibility/getting-project-properties.md)プロジェクトのプロパティを取得する方法について説明します。

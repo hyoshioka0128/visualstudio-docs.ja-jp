@@ -2,10 +2,10 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Visual Studio
+    - name: "Visual\_Studio"
       tocHref: /visualstudio/
       topicHref: /visualstudio/ide/
       items:
-        - name: 配置
+        - name: デプロイ
           tocHref: /visualstudio/deployment/
           topicHref: /visualstudio/deployment/deploying-applications-services-and-components

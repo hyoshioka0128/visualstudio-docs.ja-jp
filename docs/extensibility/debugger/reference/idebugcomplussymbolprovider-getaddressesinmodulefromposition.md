@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338711"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734038"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-デバッグ アドレスの配列を指定したモジュールのドキュメントの位置をマップします。
+指定したモジュール内のドキュメントの位置をデバッグ アドレスの配列に割り当てします。
 
 ## <a name="syntax"></a>構文
 
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>パラメーター
 `ulAppDomainID`\
-[in]アプリケーション ドメインの識別子です。
+[in]アプリケーション ドメイン識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールを表す一意の識別子です。
 
 `pDocPos`\
 [in]ドキュメントの位置。
 
 `fStatmentOnly`\
-[in]場合`TRUE`、1 つのステートメントにデバッグ アドレスを制限します。
+[in]の`TRUE`場合、デバッグ アドレスは 1 つのステートメントに制限されます。
 
 `ppEnumBegAddresses`\
-[out]このステートメントまたは行に関連付けられているデバッグの開始アドレスの列挙子を返します。
+[アウト]このステートメントまたは行に関連付けられている開始デバッグ アドレスの列挙子を返します。
 
 `ppEnumEndAddresses`\
-[out]このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子を返します。
+[アウト]このステートメントまたは行に関連付けられている終了デバッグ アドレスの列挙子を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
- 次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。
+ インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

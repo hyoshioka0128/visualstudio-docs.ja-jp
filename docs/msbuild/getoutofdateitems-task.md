@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), GetOutOfDateItems task
 - GetOutOfDateItems task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747320"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77272392"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems タスク
 
@@ -32,7 +32,7 @@ ms.locfileid: "72747320"
 
 以下の表では、**GetOutOfDateItems** タスクのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**CheckForInterdependencies**|省略可能な **bool** 型のパラメーターです。|
 |**CommandMetadataName**|省略可能な **string** 型のパラメーターです。|
@@ -44,6 +44,6 @@ ms.locfileid: "72747320"
 |**TLogDirectory**|必須の **String** 型のパラメーターです。|
 |**TLogNamePrefix**|必須の **String** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

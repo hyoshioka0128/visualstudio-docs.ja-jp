@@ -1,31 +1,31 @@
 ---
-title: Vspackage の登録 |Microsoft Docs
+title: VS パッケージの登録 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, registering
 - registration, managed VSPackages
 ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac51f23132d855c3da921cc2743c3064a353524
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b40793a5ab317b6a467e55df13302f19cec82640
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331317"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705745"
 ---
 # <a name="registering-vspackages"></a>VSPackage の登録
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .pkgdef ファイルを記述し、VSPackage の検索に依存します。 .Pkgdef ファイルには、それ以外の場合は、システム レジストリに追加するすべての登録情報が含まれています。 マネージ Vspackage が、ソース コードに属性を追加して実行し、登録されている、 [CreatePkgDef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md).pkgdef ファイルを生成する結果として得られるアセンブリ。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を記述し、VS パッケージを検索するのに .pkgdef ファイルに依存します。 pkgdef ファイルには、システム レジストリに追加される登録情報がすべて含まれています。 マネージ VSPackages は、ソース コードに属性を追加し、結果のアセンブリで[CreatePkgDef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)を実行して .pkgdef ファイルを生成することで登録されます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [VSPackage ファイルの場所を VS Shell に指定する](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
 
- Vspackage、読み込みパスをについて説明します。
+ VSPackages の読み込みパスについて説明します。
 
 - [VSPackage の登録と登録解除](../../extensibility/registering-and-unregistering-vspackages.md)
 
- VSPackage を登録する方法について説明します。
+ VS パッケージを登録する方法について説明します。

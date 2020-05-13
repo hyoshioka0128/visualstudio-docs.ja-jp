@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587447"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408716"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を表示しない
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **スコープ**-警告が抑制されている対象。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされる[スコープ](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)は次のとおりです。
 
-  - `module`-このスコープは、アセンブリに対する警告を抑制します。 これは、プロジェクト全体に適用されるグローバルな抑制です。
+  - [`module`](#module-suppression-scope) -このスコープは、アセンブリに対する警告を抑制します。 これは、プロジェクト全体に適用されるグローバルな抑制です。
 
   - `resource`-([レガシ FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md)のみ) このスコープでは、モジュール (アセンブリ) の一部であるリソースファイルに書き込まれた診断情報の警告が抑制されます。 このスコープは、ソースファイルの分析C#のみを行う Roslyn アナライザー診断のための VB コンパイラでは読み取り/適用されません。
 
@@ -92,15 +92,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **Target** -警告が抑制されるターゲットを指定するために使用される識別子。 完全修飾項目名が含まれている必要があります。
 
+Visual Studio で警告が表示された場合は、[グローバル抑制ファイルに抑制を追加](../code-quality/use-roslyn-analyzers.md#suppress-violations)することによって、`SuppressMessage` の例を確認できます。 抑制属性とその必須プロパティは、プレビューウィンドウに表示されます。
+
 ## <a name="suppressmessage-usage"></a>SuppressMessage の使用法
 
 コード分析の警告は、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性が適用されるレベルでは抑制されます。 たとえば、属性は、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用できます。 この目的は、違反が発生したコードに対して抑制情報を密に結合することです。
 
-抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 例:
+抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 次に例を示します。
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 例:
+ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 次に例を示します。
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>生成されたコード
-
-マネージコードコンパイラと一部のサードパーティツールでは、コードの迅速な開発を容易にするコードが生成されます。 ソースファイルに表示されるコンパイラによって生成されるコードは、通常、`GeneratedCodeAttribute` 属性でマークされます。
-
-生成されたコードのコード分析の警告とエラーを非表示にするかどうかを選択できます。 このような警告やエラーを抑制する方法の詳細については、「[方法: 生成されたコードの警告を非](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)表示にする」を参照してください。
-
-> [!NOTE]
-> コード分析では、アセンブリ全体または単一のパラメーターに適用されている場合、`GeneratedCodeAttribute` は無視されます。
-
 ## <a name="global-level-suppressions"></a>グローバルレベルの抑制
 
 マネージコード分析ツールは、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用される属性 `SuppressMessage` を調べます。 また、リソースと名前空間に対する違反も発生します。 これらの違反はグローバルレベルで適用される必要があり、スコープが設定され、対象となります。 たとえば、次のメッセージでは、名前空間違反が抑制されます。
@@ -174,11 +167,35 @@ public class Animal
 > [!NOTE]
 > `Target` には、常に完全修飾項目名が含まれます。
 
-## <a name="global-suppression-file"></a>グローバル抑制ファイル
+### <a name="global-suppression-file"></a>グローバル抑制ファイル
 
 グローバル抑制ファイルは、グローバルレベルの抑制またはターゲットを指定しない抑制のいずれかである抑制を保持します。 たとえば、アセンブリレベルの違反の抑制は、このファイルに格納されます。 また、一部の ASP.NET 抑制は、フォームの分離コードではプロジェクトレベルの設定が使用できないため、このファイルに格納されます。 グローバル抑制ファイルが作成され、プロジェクトに追加されます。その際、 **[エラー一覧]** ウィンドウで **[抑制]** コマンドの **[プロジェクトの抑制ファイルを]** 使用する オプションを初めて選択します。
 
-## <a name="see-also"></a>関連項目
+### <a name="module-suppression-scope"></a>モジュールの抑制スコープ
+
+**モジュール**スコープを使用すると、アセンブリ全体のコード品質違反を抑制できます。
+
+たとえば、 _globalsuppressions_プロジェクトファイルの次の属性は、ASP.NET Core プロジェクトの ConfigureAwait 違反を抑制します。
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>生成されたコード
+
+マネージコードコンパイラと一部のサードパーティツールでは、コードの迅速な開発を容易にするコードが生成されます。 ソースファイルに表示されるコンパイラによって生成されるコードは、通常、`GeneratedCodeAttribute` 属性でマークされます。
+
+ソースコード分析 (FxCop アナライザー) では、プロジェクトまたはソリューションのルートにある[editorconfig](../code-quality/configure-fxcop-analyzers.md)ファイルを使用して、生成されたコード内のメッセージを非表示にすることができます。 生成されたコードに一致するファイルパターンを使用します。 たとえば、* *. designer.cs*ファイル内の CS1591 警告を除外するには、構成ファイルでこれを使用します。
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+レガシコード分析では、生成されたコードのコード分析の警告とエラーを非表示にするかどうかを選択できます。 このような警告やエラーを抑制する方法の詳細については、「[方法: 生成されたコードの警告を非](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)表示にする」を参照してください。
+
+> [!NOTE]
+> コード分析では、アセンブリ全体または単一のパラメーターに適用されている場合、`GeneratedCodeAttribute` は無視されます。
+
+## <a name="see-also"></a>参照
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

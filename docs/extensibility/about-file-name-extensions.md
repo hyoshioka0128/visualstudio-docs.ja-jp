@@ -1,29 +1,29 @@
 ---
-title: ファイル名拡張子について |Microsoft Docs
+title: ファイル名拡張子について |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313715"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740345"
 ---
 # <a name="about-file-name-extensions"></a>ファイル名拡張子について
-バージョンを関連付ける場合、VSPackage のファイル拡張子を登録するときに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 これは、1 つのバージョンではより重要な場合は[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]をコンピューターにインストールされます。
+VSPackage のファイル拡張子を登録する場合は、その拡張子を のバージョン[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]に関連付けます。 これは、複数のバージョンが[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]コンピュータにインストールされている場合に重要です。
 
- Vspackage のファイル拡張子が登録されている**HKEY_CLASSES_ROOT**キーに関連付けられているなプログラム識別子 (ProgID) を指す既定値。
+ VSPackage のファイル拡張子は **、** 関連付けられたプログラム識別子 (ProgID) を指す既定値を持つHKEY_CLASSES_ROOTキーの下に登録されます。
 
- 次の例の登録情報を示しています、 *.vcproj*ファイル拡張子。
+ 次の例は *、.vcproj*ファイル拡張子の登録情報を示しています。
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- ファイルに関連付けられている[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]バージョン管理された ProgID などがあります`VisualStudio.vcproj.8.0`します。 バージョン管理された ProgID は、製品のバージョン間でファイル拡張子の関連付けを維持するために、製品のサイド バイ サイドでインストールできます。 バージョン固有の ProgID では、オープン、編集などと、上書きやその他のアプリケーションまたはのバージョンで上書きされるの気にせず、標準の動詞を使用することもできます[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
+ 関連付けられている[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ファイルには、バージョン管理された ProgID `VisualStudio.vcproj.8.0`(など) が必要です。 バージョン管理された ProgID を使用すると、製品のサイド バイ サイド インストールを使用して、製品バージョン間でファイル拡張子の関連付けを維持できます。 バージョン固有の ProgID を使用すると、他のアプリケーションやバージョンで上書きしたり上書きしたりすることなく、標準動詞[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)](開く、編集など) を使用することもできます。
 
- 場合によっては、ファイル拡張子に関連付けられている ProgID を変更しない必要があります。 などの ProgID を *.htm*ファイル拡張子 (progid htmlfile =) は、さまざまなオペレーティング システムの場所でハード コーディングし、広く知られで使用される関連付けられている *.htm*と *.html*ファイル。
+ 場合によっては、ファイル拡張子に関連付けられた ProgID を変更しないでください。 たとえば *、.htm*ファイル拡張子 (progid = htmlfile) の ProgID は、オペレーティング システムの多くの場所でハードコーディングされており、広く知られており *、.htm*および *.html*ファイルと関連付けて使用されています。
 
 ## <a name="see-also"></a>関連項目
-- [サイド バイ サイドで配置のファイル名拡張子を登録します。](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [ファイル名拡張子のファイル ハンドラーを指定します。](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+- [サイド バイ サイド展開のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [ファイル名拡張子のファイル ハンドラーを指定する](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

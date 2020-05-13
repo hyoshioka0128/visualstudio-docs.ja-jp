@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName |Microsoft Docs
+title: サーバー名を取得します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerName
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fe2a6425e55e3e0fdb56dc1e4cb4429dd9d4df3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf8233a4e2e37478a5818da2c27e498fcf954de9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327025"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732864"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 サーバーの名前を取得します。
@@ -41,16 +41,16 @@ int GetServerName(
 
 ## <a name="parameters"></a>パラメーター
 `pbstrName`\
-[out]サーバーの名前を返します。
+[アウト]サーバーの名前を返します。
 
 > [!NOTE]
-> 呼び出し元は、文字列を解放します。
+> 呼び出し元は、文字列を解放する責任があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- サーバーのフレンドリ名、呼び出し、 [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)メソッド。
+ フレンドリーなサーバー名を[取得するには、](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

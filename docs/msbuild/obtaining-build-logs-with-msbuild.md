@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594891"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild でのビルド ログの取得
@@ -23,7 +23,7 @@ ms.locfileid: "75594891"
 MSBuild でスイッチを使用することで、確認するビルド データの量とビルド データを 1 つ以上のファイルに保存するかどうかを指定できます。 カスタム ロガーを指定して、ビルド データを収集することもできます。 このトピックで説明されていない MSBuild コマンド ライン スイッチの詳細については、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」を参照してください。
 
 > [!NOTE]
-> Visual Studio IDE を使用してプロジェクトをビルドする場合は、ビルド ログを確認することで、それらのビルドをトラブルシューティングできます。 詳細については、[ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
+> Visual Studio IDE を使用してプロジェクトをビルドする場合は、ビルド ログを確認することで、それらのビルドをトラブルシューティングできます。 詳細については、「[方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」を参照してください。
 
 ## <a name="set-the-level-of-detail"></a>詳細レベルを設定する
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 次の表では、ログの詳細度 (列の値) が、ログに記録されるメッセージの種類 (行の値) に与える影響を示します。
 
-|                                       | 静的 | Minimal | 標準 | 詳細 | 診断 |
+|                                       | 静的 | 最小限 | Normal | 詳細 | 診断 |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | エラー                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | 警告                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -102,7 +102,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
  MSBuild コマンドラインでは、 **-logger** スイッチを使用してカスタム ロガーを指定します。 また、 **-noconsolelogger** スイッチを使用して、既定のコンソール ロガーを無効にすることもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [ビルド ロガー](../msbuild/build-loggers.md)

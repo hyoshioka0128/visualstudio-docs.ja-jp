@@ -12,14 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917809"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634501"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild で複数のプロジェクトを並行ビルドする
+
 MSBuild では、複数のプロジェクトを並列に実行することによって、これらのプロジェクトをより速くビルドすることができます。 ビルドを並列で実行するには、マルチコア コンピューターまたはマルチプロセッサ コンピューターで次の設定を使用します。
 
 - `-maxcpucount` スイッチをコマンド プロンプトで使用します。
@@ -30,6 +31,7 @@ MSBuild では、複数のプロジェクトを並列に実行することによ
 > コマンド ラインで **-verbosity** ( **-v**) スイッチを使うと、ビルドのパフォーマンスが影響を受ける場合があります。 ビルド ログ情報の詳細レベルが、トラブルシューティングで使用するために "詳細" または "診断" に設定されている場合、ビルドのパフォーマンスが低下する可能性があります。 詳しくは、「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」と「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount スイッチ
+
 `-maxcpucount` スイッチ (省略形は `-m`) を使用すると、MSBuild では、並列実行される可能性がある *MSBuild.exe* プロセスを指定された数だけ作成できます。 これらのプロセスは、"ワーカー プロセス" とも呼ばれます。 各ワーカー プロセスがそれぞれ別のコアまたはプロセッサを使用してプロジェクトをビルドするため、プロセッサごとに異なるプロジェクトを同時にビルドできます。 たとえば、このスイッチを "4" に設定すると、MSBuild では 4 つのワーカー プロセスを作成してプロジェクトをビルドします。
 
 値を指定せずに `-maxcpucount` スイッチを追加すると、MSBuild では、コンピューター上のプロセッサの数まで使用します。
@@ -43,7 +45,8 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel タスク パラメーター
-`BuildInParallel` は、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のタスクに対する省略可能なブール値パラメーターです。 `BuildInParallel` を `true` (既定値は `true`) に設定すると、複数のワーカー プロセスが生成され、それと同じ数のプロジェクトを同時にビルドすることができます。 このようなビルドを行うためには、`-maxcpucount` スイッチが 1 より大きい値に設定され、システムが最低でもデュアルコアであるか 2 つ以上のプロセッサを搭載している必要があります。
+
+`BuildInParallel` は、MSBuild タスクに対する省略可能なブール値パラメーターです。 `BuildInParallel` を `true` (既定値は `true`) に設定すると、複数のワーカー プロセスが生成され、それと同じ数のプロジェクトを同時にビルドすることができます。 このようなビルドを行うためには、`-maxcpucount` スイッチが 1 より大きい値に設定され、システムが最低でもデュアルコアであるか 2 つ以上のプロセッサを搭載している必要があります。
 
 次の例で、*microsoft.common.targets`BuildInParallel` の一部であり、* パラメーターの設定方法を示しています。
 
@@ -70,6 +73,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [複数のプロセッサを使用したプロジェクトのビルド](../msbuild/using-multiple-processors-to-build-projects.md)
 - [マルチプロセッサ対応のロガーの記述](../msbuild/writing-multi-processor-aware-loggers.md)
 - [C++ での並列ビルドの調整に関するブログ](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

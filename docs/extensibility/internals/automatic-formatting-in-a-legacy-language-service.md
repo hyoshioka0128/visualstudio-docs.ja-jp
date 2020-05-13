@@ -1,29 +1,29 @@
 ---
-title: 従来の言語サービスの自動書式設定 |Microsoft Docs
+title: レガシ言語サービスでの自動フォーマット |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, automatic formatting
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b69419e917a5ab5293af15b21822ca6473a9e292
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344934"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709979"
 ---
-# <a name="automatic-formatting-in-a-legacy-language-service"></a>自動の従来の言語サービスで書式設定
-オート フォーマット、言語サービスでは、ユーザーが既知のコード コンストラクトの入力を開始するとのコード スニペットが自動的に挿入します。
+# <a name="automatic-formatting-in-a-legacy-language-service"></a>従来の言語サービスでの自動書式設定
+自動書式設定を使用すると、ユーザーが既知のコード コンストラクトを入力し始めると、言語サービスによってコードのスニペットが自動的に挿入されます。
 
 ## <a name="automatic-formatting-behavior"></a>自動書式設定の動作
- たとえば、「*場合*、言語サービス自動的に一致する中かっこを挿入またはに応じて、適切なインデント レベルをに、言語サービスが新しい行カーソルを強制的場合は、ENTER キーを押すと、かどうか、前の行は、新しいスコープが表示されます。
+ たとえば、*に*言語サービスが自動的に一致する中かっこを挿入する場合、または Enter キーを押すと、前の行が新しいスコープを開くかどうかに応じて、言語サービスによって新しい行の挿入ポイントが適切なインデント レベルに設定されます。
 
- 言語サービスの残りの部分に使用されるコマンドのフィルターは、自動書式設定するためも使用できます。 呼び出すことによって、対応する中かっこを強調することも<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>します。
+ 言語サービスの残りの部分で使用されるコマンド フィルタは、自動書式設定にも使用できます。 また、 を呼び出<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>して、一致する中かっこを強調表示することもできます。
 
 ## <a name="see-also"></a>関連項目
-- [従来の言語サービスを開発します。](../../extensibility/internals/developing-a-legacy-language-service.md)
+- [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830079"
 ---
 # <a name="message-markers"></a>メッセージ マーカー
@@ -23,6 +23,6 @@ ms.locfileid: "62830079"
 ## <a name="message-aggregation-markers"></a>メッセージの集約マーカー
  コンカレンシー ビジュアライザーで、複数のメッセージが相互に近接しすぎて、個別に描画できないことがあります。 そのような場合には、基になるメッセージを表す*メッセージ集約マーカー*が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるメッセージの数がツールヒントに表示されます。 メッセージを表示するには、ズームインします。  限界までズームインしてもなお集約マーカーが表示される場合には、基になるメッセージを[マーカー レポート](../profiling/markers-report.md)で確認できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)
 - [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

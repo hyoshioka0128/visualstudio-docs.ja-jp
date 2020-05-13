@@ -10,19 +10,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592127"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633448"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild の詳細な概念
+
 このセクションのドキュメントでは、MSBuild を使用して実行するビルドを向上させる高度なテクニックの使用方法について説明します。
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[バッチ処理](../msbuild/msbuild-batching.md)|項目メタデータに基づいてビルドのターゲットとタスクをバッチ処理する方法について説明します。|
 |[変換](../msbuild/msbuild-transforms.md)|変換を使用して、依存関係の分析を有効にする方法について説明します。|
@@ -31,6 +32,7 @@ ms.locfileid: "75592127"
 |[マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)|.NET Framework のいくつかのバージョンのいずれかで実行するアプリケーションをコンパイルする方法について説明します。|
 |[ベスト プラクティス](../msbuild/msbuild-best-practices.md)|MSBuild スクリプトを記述するためのベスト プラクティスを紹介します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [MSBuild でのログ](../msbuild/logging-in-msbuild.md)

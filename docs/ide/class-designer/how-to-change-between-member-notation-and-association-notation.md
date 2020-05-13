@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592270"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>方法: クラス デザイナーでメンバー表記と関連付け表記の間で変更する
@@ -25,7 +25,7 @@ ms.locfileid: "75592270"
 **クラス デザイナー**では、クラス ダイアグラムで 2 つの型の間の関連付けの関係が表される方法を、メンバー表記から関連付け表記に、またはその逆に、変更できます。 関連行として表示されるメンバーは、多くの場合、型の関連をわかりやすく視覚化します。
 
 > [!NOTE]
-> 関連付けの関係は、メンバー プロパティまたはフィールドとして表すことができます。 メンバー表記を関連付け表記に変更するには、一方の型に別の型のメンバーが含まれている必要があります。 関連付け表記をメンバー表記に変更するには、2 つの型が関連行によって接続されている必要があります。 詳細については、[型の間の関連付けを作成する方法](how-to-create-associations-between-types.md)に関する記事をご覧ください。 プロジェクトに複数のクラス ダイアグラムが含まれている場合、ダイアグラムでの関連付けの関係の表示方法に対する変更は、そのダイアグラムだけに適用されます。 別のダイアグラムでの関連付けの関係の表示方法を変更するには、そのダイアグラムを開くか表示して、次の手順を実行します。
+> 関連付けの関係は、メンバー プロパティまたはフィールドとして表すことができます。 メンバー表記を関連付け表記に変更するには、一方の型に別の型のメンバーが含まれている必要があります。 関連付け表記をメンバー表記に変更するには、2 つの型が関連行によって接続されている必要があります。 詳しくは、[型の間の関連付けを作成する方法](how-to-create-associations-between-types.md)に関するページをご覧ください。 プロジェクトに複数のクラス ダイアグラムが含まれている場合、ダイアグラムでの関連付けの関係の表示方法に対する変更は、そのダイアグラムだけに適用されます。 別のダイアグラムでの関連付けの関係の表示方法を変更するには、そのダイアグラムを開くか表示して、次の手順を実行します。
 
 ## <a name="to-change-member-notation-to-association-notation"></a>メンバー表記を関連付け表記に変更するには
 
@@ -42,9 +42,9 @@ ms.locfileid: "75592270"
 
 クラス ダイアグラムで関連行を右クリックし、 **[プロパティとして表示]** または **[フィールドとして表示]** を選びます。 関連行が表示されなくなり、ダイアグラムの型の図形内の適切なコンパートメントにプロパティが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 型の間の継承を作成する](how-to-create-inheritance-between-types.md)
 - [方法: 型の間の継承を表示する](how-to-view-inheritance-between-types.md)
 - [型およびリレーションシップの表示](designing-and-viewing-classes-and-types.md)
-- [方法: コレクションの関連付けを視覚化する](how-to-visualize-a-collection-association.md)
+- [方法: コレクションの関連付けをビジュアル化する](how-to-visualize-a-collection-association.md)

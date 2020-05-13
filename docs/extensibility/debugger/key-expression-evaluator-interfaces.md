@@ -1,60 +1,60 @@
 ---
-title: 式エバリュエーター インターフェイスのキー |Microsoft Docs
+title: キー式エバリュエーター インターフェイス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f633d1b3bba5fbd5ecbfb44051740a0bc4bb09f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01527edac4000f0b2f7b89fdd507fc093f0d7734
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344223"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738492"
 ---
-# <a name="key-expression-evaluator-interfaces"></a>主要なエバリュエーター インターフェイス
+# <a name="key-expression-evaluator-interfaces"></a>キー式エバリュエーター インターフェイス
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については、「 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- 評価コンテキストと共に、式エバリュエーター (EE) を記述する場合は、次のインターフェイスに慣れておく必要があります。
+ 式エバリュエーター (EE) を評価コンテキストと共に記述する場合は、次のインターフェイスに精通している必要があります。
 
 ## <a name="interface-descriptions"></a>インターフェイスの説明
 
 - [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)
 
-     1 つのメソッドを持つ[GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md)実行の現在のポイントを表すデータ構造体を取得します。 このデータ構造は、デバッグ エンジン (DE) からに渡される 3 つの引数の 1 つ、 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)式を評価するメソッド。 このインターフェイスは通常、シンボル プロバイダーによって実装されます。
+     現在の実行ポイントを表すデータ構造体を取得する単一のメソッド[GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md)を持ちます。 このデータ構造体は、式を評価する評価を評価する[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)メソッドにデバッグ エンジン (DE) が渡す 3 つの引数の 1 つです。 このインターフェイスは、通常、シンボル プロバイダーによって実装されます。
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-     [バインド](../../extensibility/debugger/reference/idebugbinder-bind.md)メソッドで、シンボルの現在の値を格納しているメモリ領域を取得します。 両方のコンテナー、によって表されるメソッドの指定、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト、および記号自体によって表される、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクト、`IDebugBinder::Bind`シンボルの値を返します。 `IDebugBinder` 通常、DE によって実装されます。
+     シンボルの現在の値を格納するメモリ領域を取得する[Bind](../../extensibility/debugger/reference/idebugbinder-bind.md)メソッドを持ちます。 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクトで表される包含メソッドと[、IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトで表されるシンボル自体の両方が、シンボル`IDebugBinder::Bind`の値を返します。 `IDebugBinder`通常は DE によって実装されます。
 
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)
 
-     単純なデータ型を表します。 派生クラスを使用して配列やメソッドなどのより複雑な型の[IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md)と[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイスをそれぞれします。 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)メソッドやクラスなどの他のシンボルを含むシンボルを表すもう 1 つの重要な派生インターフェイスです。 `IDebugField`インターフェイス (とその派生物) は、通常シンボル プロバイダーによって実装されます。
+     単純なデータ型を表します。 配列やメソッドなど、より複雑な型の場合は、それぞれ派生した[IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md)インターフェイスと[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイスを使用します。 [メソッド](../../extensibility/debugger/reference/idebugcontainerfield.md)やクラスなど、他のシンボルを含むシンボルを表すもう 1 つの重要な派生インターフェイスです。 `IDebugField`インターフェイス (およびその派生) は、通常、シンボル プロバイダーによって実装されます。
 
-     `IDebugField`シンボルの型と名前を検索するために使用し、と共にオブジェクトを指定できます、 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクト、その値を検索するために使用できます。
+     オブジェクト`IDebugField`を使用してシンボルの名前と型を検索し[、IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトと共に、その値を見つけることができます。
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
-     シンボルの実行時の値の実際のビットを表します。 [バインド](../../extensibility/debugger/reference/idebugbinder-bind.md)は、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトをシンボルを表します。 を返します、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。 [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md)メソッドは、メモリ バッファーにシンボルの値を返します。 DE 通常メモリのプロパティの値を表すためには、このインターフェイスを実装します。
+     シンボルの実行時の値の実際のビットを表します。 [バインド](../../extensibility/debugger/reference/idebugbinder-bind.md)は、シンボルを表す[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトを受け取り[、IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクトを返します。 [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md)メソッドは、メモリ バッファー内のシンボルの値を返します。 デは通常、メモリ内のプロパティの値を表すために、このインターフェイスを実装します。
 
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 
-     このインターフェイスは、式エバリュエーター自体を表します。 重要なメソッドは[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)、返された、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)インターフェイス。
+     このインターフェイスは、式エバリュエーター自体を表します。 キー メソッドは[、IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)インターフェイスを返す[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)です。
 
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
-     このインターフェイスは、すぐに評価できる解析された式を表します。 重要なメソッドは[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)どの値と式の型を表す IDebugProperty2 を返します。
+     このインターフェイスは、解析済みの式を評価する準備が整った式を表します。 キー メソッドは、式の値と型を表す IDebugProperty2 を返す[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)です。
 
 - [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)
 
-     このインターフェイスとその型の値を表す、式の評価の結果です。
+     このインターフェイスは、値とその型を表し、式の評価の結果です。
 
 ## <a name="see-also"></a>関連項目
 - [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

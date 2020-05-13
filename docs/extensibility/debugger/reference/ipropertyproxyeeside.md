@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide |Microsoft Docs
+title: Iプロパティプロキシーサイド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide interface
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6528b146ad3128dd880e594b25ebb5df88bb8f2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353441"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714856"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-このインターフェイスは、関連付けられたオブジェクトのデータを表示するメソッドを提供します。 このインターフェイスは、型のビジュアライザーのサポートの一部です。
+このインターフェイスには、関連付けられたオブジェクトのデータを表示するメソッドが用意されています。 このインターフェイスは、型ビジュアライザーのサポートの一部です。
 
 ## <a name="syntax"></a>構文
 
@@ -28,33 +28,33 @@ ms.locfileid: "66353441"
 IPropertyProxyEESide : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- 式エバリュエーターでは、型のビジュアライザーをサポートするためにこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ 式エバリュエーターは、型のビジュアライザーをサポートするためにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)このインターフェイスを取得します。 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)を取得するインターフェイス、 [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)インターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ このインターフェイスを取得するには[、GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)を呼び出します。 インターフェイスを取得するには、[インターフェイス](../../../extensibility/debugger/reference/idebugproperty3.md)[を呼び](/cpp/atl/queryinterface)出[します](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
- 次のメソッドは、このインターフェイスによって実装されます。
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+ このインターフェイスでは、次のメソッドが実装されています。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|オブジェクトのデータにアクセスできるように、データ ソースのプロバイダーを初期化します。|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|オブジェクトのデータにアクセスできるように、データ ソース プロバイダーを初期化します。|
 |[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|オブジェクトのアセンブリに関する情報を取得します。|
-|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|オブジェクトの最初のデータを取得します。|
+|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|オブジェクトの初期データを取得します。|
 |[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|既存のデータ ストレージのコピーを作成します。|
-|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|既存のデータ記憶域への参照を作成します。|
-|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|このオブジェクトを含むアセンブリのコンテキストで特定のアセンブリに関する情報を取得します。|
+|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|既存のデータ ストレージへの参照を作成します。|
+|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|このオブジェクトを含むアセンブリのコンテキスト内の特定のアセンブリに関する情報を取得します。|
 
 ## <a name="remarks"></a>Remarks
- 型のビジュアライザーは、このインターフェイスの一部であるオブジェクトに関連付けられた値にアクセスするのにこのインターフェイスを使用します。 データをアクセス、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)インターフェイスで、データの読み取り専用ビューを提供します。
+ 型ビジュアライザーは、このインターフェイスを使用して、このインターフェイスが属するオブジェクトに関連付けられた値にアクセスします。 データは、データの読み取り専用ビューを提供する[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)インターフェイスを介してアクセスされます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

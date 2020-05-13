@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2 |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1b1934a73e096200eba1370320cc0b55eb46ac5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308901"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724924"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
-このインターフェイスは、登録またはで実行されているポートでデバッグできるプログラムの登録を解除します。
+このインターフェイスは、実行中のポートでデバッグできるプログラムを登録または登録解除します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,29 +28,29 @@ ms.locfileid: "66308901"
 IDebugPortNotify2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- カスタム ポート サプライヤーは、サポートを追加して、ポートからプログラムを削除するのには、このインターフェイスを実装します。 実装する同一のオブジェクトに通常実装、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ カスタム ポート サプライヤーは、ポートからのプログラムの追加と削除をサポートするために、このインターフェイスを実装します。 通常[、IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイスを実装する同じオブジェクトに実装されます。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出し[QueryInterface](/cpp/atl/queryinterface)上、`IDebugPort2`インターフェイスは、このインターフェイスを返します。 呼び出しも、 [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)このインターフェイスを返します。 デバッグ エンジンは、パラメーターとしてこのインターフェイスを確認できます[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)します。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ インターフェイスで[のクエリ インターフェイス](/cpp/atl/queryinterface)の`IDebugPort2`呼び出しは、このインターフェイスを返します。 また[、GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)の呼び出しは、このインターフェイスを返します。 デバッグ エンジンは、このインターフェイスを[パラメーターとして見ることができます。](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugPortNotify2`します。
+ 次の表に`IDebugPortNotify2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|実行されているポートをデバッグできるプログラムを登録します。|
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|実行されているポートからデバッグできるプログラムを登録解除します。|
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|実行しているポートでデバッグできるプログラムを登録します。|
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|実行しているポートからデバッグできるプログラムの登録を解除します。|
 
 ## <a name="remarks"></a>Remarks
- デバッグ ポートに、プログラムはロードまたはアンロードを知る方法がない限り、カスタム ポート サプライヤーはこのインターフェイスを実装する必要があります。 このインターフェイスを使用して、特定のポートを使用して、デバッグ用に読み込まれたすべてのプログラムが追跡されます。
+ デバッグ ポートがプログラムの読み込みまたはアンロードを知る方法を持っていない限り、カスタム ポートサプライヤーはこのインターフェイスを実装する必要があります。 特定のポートを通じてデバッグするために読み込まれるすべてのプログラムは、このインターフェイスを使用して追跡されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

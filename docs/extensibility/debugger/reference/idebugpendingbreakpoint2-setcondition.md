@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition |Microsoft Docs
+title: を待ってブレークポイント2::セット条件 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugPendingBreakpoint2::SetCondition method
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a71e22d118b64e15bb9da15b2f9152a90440f1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4683d944f2489b8b21ff545c86e3d867283d644a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347663"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725722"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-設定または保留中のブレークポイントに関連付けられている条件を変更します。
+保留中のブレークポイントに関連付けられている条件を設定または変更します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>パラメーター
 `bpCondition`\
-[in]A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)を設定する条件を指定する構造体。
+[in]設定する条件を指定する[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)構造体。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 以前、保留中のブレークポイントに関連付けられている任意の条件は失われます。 保留中のブレークポイントからこれにバインドされているすべてのブレークポイントがで指定された値にその条件を設定すると呼ばれる、`bpCondition`パラメーター。
+ 以前に保留中のブレークポイントに関連付けられていた条件は失われます。 この保留中のブレークポイントからバインドされたすべてのブレークポイントが呼び出され、パラメーターで指定された値に`bpCondition`条件が設定されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeTypeField |Microsoft Docs
+title: カスタム属性::取得属性フィールド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeTypeField
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70168bb233cb061d7c01b9285c701920d54d7238
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51341b3c9b351307d2662538cc3a6797c58b62f9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315153"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732785"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 カスタム属性クラスの型を取得します。
@@ -41,13 +41,13 @@ int GetAttributeTypeField(
 
 ## <a name="parameters"></a>パラメーター
 `ppCAType`\
-[out]返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)カスタム属性がインスタンス クラスを表すオブジェクト。
+[アウト]カスタム属性[がインスタンス](../../../extensibility/debugger/reference/idebugclassfield.md)であるクラスを表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- カスタム属性は、常にクラスです。 このメソッドへのアクセスを提供する、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)そのクラスを記述するオブジェクト。
+ カスタム属性は常にクラスです。 このメソッドは、そのクラスを記述する[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)オブジェクトへのアクセスを提供します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

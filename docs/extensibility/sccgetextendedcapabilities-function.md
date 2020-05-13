@@ -1,5 +1,5 @@
 ---
-title: SccGetExtendedCapabilities 関数 |Microsoft Docs
+title: 関数の機能を拡張するマイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa6a067a0b9e8358f503228dbc53e20586b84468
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353666"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700725"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 関数
-この関数は、ソース管理プラグインでサポートされているその他の機能を返します。
+# <a name="sccgetextendedcapabilities-function"></a>関数
+この関数は、ソース管理プラグインでサポートされている追加機能を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,26 +35,26 @@ SCCRTN SccGetExtendedCapabilities(
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグインのコンテキストのポインター。
+[in]ソース管理プラグイン のコンテキスト ポインター。
 
  lSccExCaps
 
-[in]テスト対象の機能が拡張を指定するフラグ (拡張機能コード表を参照して[機能フラグ](../extensibility/capability-flags.md)の考えられるフラグ)。
+[in]テスト対象の拡張機能を指定するフラグ (可能なフラグについては、[機能フラグ](../extensibility/capability-flags.md)の拡張能力コード表を参照)。
 
- pbSupported
+ pbサポート
 
-[out]0 以外を返します (`TRUE`) 場合は、指定された機能がサポートされています。 それ以外の場合、0 を返します (`FALSE`)。
+[アウト]指定された機能がサポート`TRUE`されている場合は、ゼロ以外 ( ) を返します。それ以外の場合は`FALSE`、ゼロ ( ) を返します。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|正常に完了した取得機能の操作です。|
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|不明または未指定のエラーが発生しました。|
+|SCC_OK|機能の取得操作が正常に完了しました。|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|不明または指定されていないエラーが発生しました。|
 
 ## <a name="remarks"></a>Remarks
- オンデマンド; でこのメソッドが呼び出されますつまり、機能の 1 つは、テストする必要がある、このメソッドが呼び出されますかを判断する機能がサポートされています。 一度に 1 つのみのフラグが指定されます。
+ このメソッドは、要求時に呼び出されます。つまり、機能をテストする必要がある場合、このメソッドが呼び出され、その機能がサポートされているかどうかを判断します。 一度に 1 つのフラグのみが指定されます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

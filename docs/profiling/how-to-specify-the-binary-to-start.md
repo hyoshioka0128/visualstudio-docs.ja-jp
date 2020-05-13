@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778688"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定する
@@ -39,6 +39,6 @@ DLL などのバイナリをプロファイルするには、 **[\<Target> プ�
 
 7. **[OK]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

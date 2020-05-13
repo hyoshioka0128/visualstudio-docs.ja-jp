@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569193"
 ---
 # <a name="go-to-line-dialog-box"></a>[指定行へのジャンプ] ダイアログ ボックス
@@ -30,7 +30,7 @@ ms.locfileid: "75569193"
 
 **[行番号 (1 - \<n>)]** ボックスに、アクティブ ドキュメント内の移動先の行番号を入力します。 入力できる値は、1 から現在のドキュメントの最後の行番号までです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [移動コマンドを使用したコードの検索](../../ide/go-to.md)
 - [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)

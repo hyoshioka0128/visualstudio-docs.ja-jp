@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals |Microsoft Docs
+title: フィールド::列挙静的ローカル |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324242"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727155"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 メソッドの静的ローカル変数の列挙子を作成します。
@@ -41,13 +41,13 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>パラメーター
 `ppLocals`\
-[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)静的ローカル変数の一覧を表すオブジェクト。 静的ローカル変数がない場合は、null 値を返します。
+[アウト]静的ローカル[の一](../../../extensibility/debugger/reference/ienumdebugfields.md)覧を表すオブジェクトを返します。 静的ローカル変数がない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は S_OK を返します。 または静的ローカル変数がない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、静的なローカルが存在しない場合は、S_OKを返すかS_FALSEを返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 各要素は、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)さまざまな種類の静的ローカル変数を表すオブジェクト。 呼び出す、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)正確に静的なローカルのオブジェクトが表す種類を決定するには、各オブジェクトのメソッド。
+ 各要素は、さまざまな種類の静的ローカル変数を表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトです。 各オブジェクトに対して[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドを呼び出して、そのオブジェクトが表す静的ローカルの種類を正確に判断します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

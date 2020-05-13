@@ -10,10 +10,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 4b5cf62dadc38802e477c7588416b4003304e852
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584583"
 ---
 # <a name="target-older-versions-of-net-f"></a>以前のバージョンの .NET をターゲットにする (F#)
@@ -56,7 +56,7 @@ Visual Studio のインストール時に、インストールされている .N
 
 [Visual Studio の修復手順](../install/repair-visual-studio.md)に従ってください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [F# ガイド (.NET Framework)](/dotnet/fsharp/)
 - [Visual Studio における F#](fsharp-visual-studio.md)

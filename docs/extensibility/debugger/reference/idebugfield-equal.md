@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal |Microsoft Docs
+title: Iデバッグフィールド::イコール |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::Equal method
 ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8af316c9669b00ae8316888c6a7072d4737dd23d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a45a31c02376f95c3cd6b0c4a4adf0434fabe92
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729015"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-このメソッドは、このフィールドに等しいかどうかを指定したフィールドを比較します。
+このメソッドは、このフィールドと指定されたフィールドを比較して等しいかどうかを確認します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int Equal(
 
 ## <a name="parameters"></a>パラメーター
 `pField`\
-[in]この 1 と比較するフィールドです。
+[in]このフィールドと比較するフィールド。
 
 ## <a name="return-value"></a>戻り値
- フィールドが同じ場合は、返す`S_OK`します。 フィールドが異なる場合は、返す`S_FALSE.`それ以外の場合、エラー コードを返します。
+ フィールドが同じ場合は、`S_OK`を返します。 フィールドが異なる場合は、`S_FALSE.`それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

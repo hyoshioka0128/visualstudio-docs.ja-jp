@@ -10,13 +10,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591412"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>方法: テンプレート内のパラメーターを置き換える
+# <a name="how-to-substitute-parameters-in-a-template"></a>方法 : テンプレート内のパラメーターを置き換える
 
 テンプレート パラメーターを使うと、テンプレートからファイルを作成するときに、クラス名や名前空間などの識別子を置き換えることができます。 既存のテンプレートにテンプレート パラメーターを追加することも、テンプレート パラメーターで独自のテンプレートを作成することもできます。
 
@@ -34,13 +34,13 @@ ms.locfileid: "75591412"
 
 1. テンプレートの *vstemplate* ファイルで、このファイルを含む `ProjectItem` 要素を検索します。
 
-1. `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。
+1. `ReplaceParameters` 要素の `true` 属性を `ProjectItem` に設定します。
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
 - [テンプレート パラメーター](../ide/template-parameters.md)

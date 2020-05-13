@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633201"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild ターゲット フレームワークおよびターゲット プラットフォーム
+
 プロジェクトは*ターゲット フレームワーク*とターゲット プラットフォームで動作するようにビルドできます。ターゲット フレームワークとは .NET Framework の特定のバージョンを表し、*ターゲット プラットフォーム*とは特定のソフトウェア アーキテクチャを表します。  たとえば、802x86 プロセッサ ファミリ ("x86") と互換性のある 32 ビット プラットフォーム上の .NET Framework 2.0 で動作するアプリケーションを対象とすることができます。 ターゲット フレームワークとターゲット プラットフォームの組み合わせは*ターゲット コンテキスト*と呼ばれます。
 
 > [!IMPORTANT]
 > この記事では、ターゲット フレームワークを指定するための従来の方法を示します。 SDK スタイルのプロジェクトでは、netstandard のようなさまざまな TargetFrameworks が有効になります。 詳細については、「[ターゲット フレームワーク](/dotnet/standard/frameworks)」をご覧ください。
 
 ## <a name="target-framework-and-profile"></a>ターゲット フレームワークとプロファイル
+
  ターゲット フレームワークとは、ビルドするプロジェクトの実行対象とする .NET Framework の特定のバージョンを意味します。 ターゲット フレームワークの仕様は必須です。これは、ターゲット フレームワークの仕様によって、そのフレームワークのバージョン専用のコンパイラ機能とアセンブリ参照が利用可能になるためです。
 
  現在、.NET Framework については次のバージョンを使用できます。
 
 - .NET Framework 2.0 (Visual Studio 2005 に付属)
 
-- .NET Framework 3.0 ([!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] に付属)
+- .NET Framework 3.0 (Windows Vista に付属)
 
-- .NET Framework 3.5 ([!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] に付属)
+- .NET Framework 3.5 (Visual Studio 2008 に付属)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 ([!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)] に付属)
+- .NET Framework 4.6 (Visual Studio 2015 に付属)
 
 - .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ ms.locfileid: "75596776"
 ```
 
 ## <a name="target-platform"></a>ターゲット プラットフォーム
+
  *プラットフォーム*は、特定のランタイム環境を定義するハードウェアとソフトウェアの組み合わせです。 たとえば、オブジェクトに適用された
 
 - `x86` は、Intel 80x86 プロセッサまたはそれに相当するプロセッサで実行されている 32 ビット Windows オペレーティング システムを示しています。
@@ -97,4 +100,5 @@ ms.locfileid: "75596776"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: プロジェクトサブタイプ要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - ProjectSubType element [Visual Studio Templates]
 - <ProjectSubType> element [Visual Studio Templates]
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16852378609b058bc1f5c1c02ea2ad54a37a2ac9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335922"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701828"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 要素 (Visual Studio テンプレート)
-テンプレートで指定された値のサブカテゴリには、分類、`ProjectType`要素。
+# <a name="projectsubtype-element-visual-studio-templates"></a>プロジェクトサブタイプ要素
+テンプレートを要素で指定された値のサブカテゴリに分類します`ProjectType`。
 
- \<VSTemplate> \<TemplateData> \<ProjectSubType>
+ \<VS テンプレート\<>\<テンプレートデータ>プロジェクトサブタイプ>
 
 ## <a name="syntax"></a>構文
 
@@ -36,10 +36,10 @@ ms.locfileid: "66335922"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -55,20 +55,20 @@ ms.locfileid: "66335922"
 ## <a name="remarks"></a>Remarks
  `ProjectSubType` は、`TemplateData` の子要素で、省略可能な要素です。
 
- `ProjectSubType`要素は、サブカテゴリを[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)要素。 この値を含めることができます。
+ 要素`ProjectSubType`は、[プロジェクトの種類](../extensibility/projecttype-element-visual-studio-templates.md)要素にサブカテゴリを提供します。 この値には、次の値を含めることができます。
 
-- `SmartDevice-NETCFv1`:指定するテンプレートの対象と、[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]バージョン 1.0。
+- `SmartDevice-NETCFv1`: テンプレートがバージョン 1.0 を対象と[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]することを指定します。
 
-- `SmartDevice-NETCFv2`:指定するテンプレートの対象と、[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]バージョン 2.0。
+- `SmartDevice-NETCFv2`: テンプレートがバージョン 2.0 を対象と[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]することを指定します。
 
-  テンプレートが含まれている場合、`ProjectType`要素の値を持つ`Web`、`ProjectSubType`要素がテンプレートのプログラミング言語を指定します。 この要素は、次の値を持つことができます。
+  テンプレートに値`ProjectType``Web`が含まれている場合、要素は`ProjectSubType`テンプレートのプログラミング言語を指定します。 この要素には、次の値を指定できます。
 
-- `CSharp`:テンプレートを作成するを指定します、 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Web プロジェクトまたは項目。
+- `CSharp`: テンプレートが Web[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]プロジェクトまたは Web 項目を作成することを指定します。
 
-- `VisualBasic`:テンプレートを作成するを指定します、 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Web プロジェクトまたは項目。
+- `VisualBasic`: テンプレートが Web[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]プロジェクトまたは Web 項目を作成することを指定します。
 
 ## <a name="example"></a>例
- 次の例のためのプロジェクト テンプレート メタデータを[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]デバイス アプリケーションを対象とする、[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]バージョン 2.0。
+ 次の例は、バージョン 2.0 を対象[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]とするデバイス アプリケーション[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]のプロジェクト テンプレートのメタデータを示しています。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,6 +96,6 @@ ms.locfileid: "66335922"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-- [ProjectType 要素 (Visual Studio テンプレート)](../extensibility/projecttype-element-visual-studio-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [プロジェクトの種類要素](../extensibility/projecttype-element-visual-studio-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 排除 ~ SAK ファイル |Microsoft Docs
+title: ~SAK ファイルの除去 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327532"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708499"
 ---
-# <a name="elimination-of-sak-files"></a>排除 ~ SAK ファイル
-ソース管理プラグイン API 1.2 では、 *~ SAK*ファイル機能フラグによって置き換えられ、ソースかどうかを検出する新しい関数は、プラグインのサポートを制御、 *MSSCCPRJ*ファイルと共有チェック アウトします。
+# <a name="elimination-of-sak-files"></a>~SAK ファイルの削除
+ソース管理プラグイン API 1.2 では、ソース管理プラグインが*MSSCCPRJ*ファイルと共有チェックアウトをサポートするかどうかを検出する機能フラグと新しい関数に *、~SAK*ファイルが置き換えられました。
 
-## <a name="sak-files"></a>~ SAK ファイル
-Visual Studio .NET 2003 の付いた一時ファイルを作成する *~ SAK*します。 これらのファイルは、ソース管理プラグインをサポートしているかどうかに使用されます。
+## <a name="sak-files"></a>~SAK ファイル
+Visual Studio .NET 2003 では、*プレフィックスとして "~SAK"* という一時ファイルが作成されました。 これらのファイルは、ソース管理プラグインがサポートするかどうかを判断するために使用されます。
 
-- *MSSCCPRJ.SCC*ファイル。
+- *ファイル*。
 
-- 複数の (共有) チェック アウトします。
+- 複数の(共有)チェックアウト。
 
-プラグインのソース管理プラグイン API 1.2 で提供される高度な機能をサポートする、IDE は、新機能、フラグ、および、次のセクションに記載された関数を使用して一時ファイルを作成することがなくこれらの機能を検出できます。
+ソース管理プラグイン API 1.2 で提供される高度な機能をサポートするプラグインの IDE では、新しい機能、フラグ、および関数を使用して一時ファイルを作成せずに、これらの機能を検出できます。
 
 ## <a name="new-capability-flags"></a>新しい機能フラグ
  `SCC_CAP_SCCFILE`
@@ -41,14 +41,14 @@ Visual Studio .NET 2003 の付いた一時ファイルを作成する *~ SAK*し
 
 - [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)
 
- ソース管理プラグインは、(共有) の複数のチェック アウトをサポートしているかどうかは、宣言、`SCC_CAP_MULTICHECKOUT`機能と実装、`SccIsMultiCheckOutEnabled`関数。 この関数は、ソース管理対象のプロジェクトのいずれかのチェック アウト操作が発生するたびに呼び出されます。
+ ソース管理プラグインが複数の (共有) チェックアウトをサポートしている場合は、機能を`SCC_CAP_MULTICHECKOUT`宣言し、関数を`SccIsMultiCheckOutEnabled`実装します。 この関数は、ソース管理されたプロジェクトのいずれかでチェックアウト操作が発生するたびに呼び出されます。
 
- 作成と使用のソース管理プラグインがサポートしている場合、 *MSSCCPRJ.SCC*を宣言し、ファイル、`SCC_CAP_SCCFILE`機能と実装、 [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)します。 この関数は、ファイルの一覧が呼び出されます。 関数を返します`TRUE' or 'FALSE`Visual Studio を使用する必要がありますかを指定する各ファイルに対して、 *MSSCCPRJ.SCC*ファイル。 ソース管理プラグインは、これらの新機能と機能をサポートしないように選択した場合、は、次のレジストリ キーを使用して、これらのファイルの作成を無効にすることができます。
+ ソース管理プラグインが*MSSCCPRJ.SCC*ファイルの作成と使用をサポートしている場合は、その機能を`SCC_CAP_SCCFILE`宣言し[、SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)を実装します。 この関数は、ファイルのリストとともに呼び出されます。 この関数は`TRUE' or 'FALSE`、各ファイルに対して、Visual Studio が*MSSCCPRJ.SCC*ファイルを使用するかどうかを示す値を返します。 ソース管理プラグインがこれらの新しい機能をサポートしないことを選択した場合は、次のレジストリ キーを使用してこれらのファイルの作成を無効にすることができます。
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
+ **[HKEY_CURRENT_USER\ソフトウェア\マイクロソフト\VisualStudio\8.0\ソースコントロール]一時ファイルを作成しません。** = *dword:00000001*
 
 > [!NOTE]
-> このレジストリ キーが設定されている場合*dword:00000000*、存在しない場合は、キーに相当および一時ファイルを作成する Visual Studio が再度試みられます。 ただし、レジストリ キー設定されている場合*dword:00000001*、Visual Studio が一時ファイルを作成しません。 ソース管理プラグインがサポートされていないことを前提に代わりに、 *MSSCCPRJ.SCC*ファイルし、は共有チェック アウトをサポートしていません。
+> このレジストリ キーが*dword:0000000*に設定されている場合は、存在しないキーと同じになり、Visual Studio は一時ファイルを作成しようとします。 ただし、レジストリ キーが*dword:00000001*に設定されている場合、Visual Studio は一時ファイルを作成しません。 代わりに、ソース管理プラグインが*MSSCCPRJ.SCC*ファイルをサポートしておらず、共有チェックアウトをサポートしていないと仮定します。
 
 ## <a name="see-also"></a>関連項目
-- [新機能については、ソース管理プラグイン API バージョン 1.2 です。](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

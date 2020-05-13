@@ -1,25 +1,25 @@
 ---
-title: Used Command 要素 |Microsoft Docs
+title: 使用コマンド要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ea8f27cafb166968f66c53dc68398526e0aa5d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718773"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698822"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 要素
-VSPackage が別の vsct ファイルで定義されているコマンドにアクセスできるようにします。 たとえば、VSPackage が [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] シェルによって定義されている標準の**コピー**コマンドを使用している場合は、コマンドを再実装せずにメニューまたはツールバーに追加できます。
+VSPackage が別の .vsct ファイルで定義されているコマンドにアクセスできるようにします。 たとえば、VSPackage がシェルで定義されている標準**のコピー**コマンドを[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用する場合は、コマンドを再実装せずにメニューまたはツール バーに追加できます。
 
 ## <a name="syntax"></a>構文
 
@@ -34,24 +34,24 @@ VSPackage が別の vsct ファイルで定義されているコマンドにア�
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須です。 コマンドを識別する GUID ID ペアの GUID。|
-|ID|必須です。 コマンドを識別する GUID ID ペアの ID。|
-|条件|省略可能です。 「[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|guid|必須。 コマンドを識別する GUID ID ペアの GUID。|
+|id|必須。 コマンドを識別する GUID ID ペアの ID。|
+|条件|省略可能。 [「条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|None||
+|なし||
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[UsedCommands 要素](../extensibility/usedcommands-element.md)|グループ化されたコマンド要素とその他の実行コマンドグループ。|
+|[UsedCommands 要素](../extensibility/usedcommands-element.md)|グループ UsedCommand 要素とその他の UsedCommands グループ化します。|
 
 ## <a name="remarks"></a>Remarks
- @No__t_0 要素にコマンドを追加することにより、VSPackage は、VSPackage がコマンドを必要とすることを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 環境に通知します。 パッケージが必要とするすべてのバージョンおよび構成に含まれていない可能性があるすべてのコマンドに対して、`<UsedCommand>` 要素を追加する必要があります。 たとえば、パッケージがビジュアルC++に固有のコマンドを呼び出すと、コマンドに `<UsedCommand>` 要素を含めない限り、Visual Web Developer のユーザーはこのコマンドを使用できません。
+ `<UsedCommands>`要素にコマンドを追加することで、VSPackage は、VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]がコマンドを必要とすることを環境に通知します。 パッケージで必要な`<UsedCommand>`コマンドの要素を追加する必要があります。 たとえば、Visual C++ 固有のコマンドをパッケージから呼び出す場合、そのコマンドの要素を含まない限り、Visual Web `<UsedCommand>` Developer のユーザーはこのコマンドを使用できません。
 
 ## <a name="example"></a>例
 

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985125"
 ---
 # <a name="set-ide-accessibility-options"></a>IDE アクセシビリティ オプションを設定する
@@ -27,7 +27,7 @@ MacOS に組み込まれている機能に加え、Visual Studio for Mac には�
 
 ## <a name="change-the-content-font-and-size"></a>コンテンツのフォントとサイズを変更する
 
-Visual Studio for Mac のほとんどのパッドで、コンテンツのフォントとサイズをカスタマイズすることができます。 次の手順に従います。
+Visual Studio for Mac のほとんどのパッドで、コンテンツのフォントとサイズをカスタマイズすることができます。 その方法は次のとおりです。
 
 1. **[Visual Studio (メニュー)]**  >  **[ユーザー設定 (&#8984;,)]** に移動します。
 

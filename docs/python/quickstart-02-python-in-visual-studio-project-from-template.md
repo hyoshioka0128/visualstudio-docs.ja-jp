@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62429763"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>クイック スタート: Visual Studio のテンプレートから Python プロジェクトを作成する
@@ -85,7 +85,7 @@ Visual Studio は、Python クラス、Python パッケージ、Python 単体テ
 
 **質問:Cookiecutter テンプレートも使用できますか。**
 
-**回答:** はい。 実際のところ、Visual Studio は Cookiecutter と直接統合できます。これについては、「[クイック スタート:Cookiecutter テンプレートからプロジェクトを作成する](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)」で学習できます。
+**回答**:はい。 実際のところ、Visual Studio は Cookiecutter と直接統合できます。これについては、「[クイック スタート:Cookiecutter テンプレートからプロジェクトを作成する](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)」で学習できます。
 
 ## <a name="next-steps"></a>次の手順
 

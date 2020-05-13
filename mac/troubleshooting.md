@@ -1,5 +1,5 @@
 ---
-title: トラブルシューティング
+title: '[トラブルシューティング]'
 description: Visual Studio for Mac ユーザーのための一般的な問題と解決策です。
 ms.topic: troubleshooting
 author: therealjohn
@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691882"
 ---
 # <a name="troubleshooting"></a>トラブルシューティング
@@ -21,7 +21,7 @@ ms.locfileid: "67691882"
 
 ![[ログ ディレクトリを開く] メニュー項目](media/troubleshooting-image1.png)
 
-## <a name="viewing-exceptions"></a>例外を表示する
+## <a name="viewing-exceptions"></a>例外の表示
 
 例外がキャッチされると、例外バブルが表示されます。 詳細を表示するには、 **[詳細の表示]** ボタンを選びます。
 
@@ -47,6 +47,6 @@ ms.locfileid: "67691882"
 
 これらのセクションの一部は、例外が内部例外である場合にのみ表示されることに注意してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [IDE に関するエラーのトラブルシューティング用のリソース (Windows の Visual Studio)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

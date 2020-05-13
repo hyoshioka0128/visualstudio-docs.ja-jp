@@ -1,46 +1,46 @@
 ---
-title: (Visual Studio のデバッグ) API リファレンス |Microsoft Docs
+title: API リファレンス (Visual Studio のデバッグ) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a2df6d82099a927664620e19096107f283afada
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351860"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738175"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 参照 (Visual Studio のデバッグ)
-リファレンス セクションには、API、構文と、API のすべての要素の使用法を示すガイドの概念の概要とコード例のアソートメントが含まれています。 すべての参照は、カテゴリでアルファベット順に一覧表示されます。
+リファレンスセクションには、API の概念的概要、すべての API 要素の構文と使用方法を示すガイド、およびコード例の各種が含まれています。 すべての参照は、カテゴリのアルファベット順に一覧表示されます。
 
- 次の表は、一般的な`HRESULT`メソッドによって返される値。
+ 次の表は、メソッド`HRESULT`によって返される一般的な値を示しています。
 
 |名前|説明|値|
 |----------|-----------------|-----------|
-|S_OK|成功。|0x00000000|
-|E_UNEXPECTED|予期しないエラー。|0x8000FFFF|
+|S_OK|正常終了しました。|0x00000000|
+|E_UNEXPECTED|予期しないエラーです。|0x8000FFFF|
 |E_NOTIMPL|実装されていません。|0x80004001|
-|E_OUTOFMEMORY|メモリ不足のため、操作を完了できません。|0x8007000E|
-|E_INVALIDARG|1 つまたは複数の引数が無効です。|0x80070057|
-|E_NOINTERFACE|インターフェイスがサポートされています。|0x80004002|
-|E_POINTER|ポインターが無効です。|0x80004003|
+|E_OUTOFMEMORY|メモリ不足で操作を完了できません。|0x8007000E|
+|E_INVALIDARG|1 つ以上の引数が無効です。|0x80070057|
+|E_NOINTERFACE|そのようなインターフェイスはサポートされていません。|0x80004002|
+|E_POINTER|無効なポインタです。|0x80004003|
 |E_HANDLE|ハンドルが無効です。|0x80070006|
-|E_ABORT|操作が中止されました。|0x80004004|
-|E_FAIL|予期しないエラー。|0x80004005|
-|E_ACCESSDENIED|一般的なアクセス拒否エラーが発生します。|0x80070005|
+|E_ABORT|操作は中止されました。|0x80004004|
+|E_FAIL|予期しないエラーです。|0x80004005|
+|E_ACCESSDENIED|一般的なアクセス拒否エラー。|0x80070005|
 
 > [!NOTE]
-> ときに、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]返しますメソッドをデバッグ`S_OK`、パラメーターのポインターが有効なすべては、検証が実施予定がないで out パラメーター ポインターと見なされますと`S_OK`が返されます。
+> [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッグ メソッドが戻`S_OK`るとき、すべての out パラメーター ポインターが有効であると見なされます。 `S_OK`
 >
 > [!NOTE]
-> 無効なまたは`NULL`[out] パラメーターは IDE のクラッシュを発生可能性があります。
+> 無効または`NULL`[out] パラメータにより IDE がクラッシュする可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

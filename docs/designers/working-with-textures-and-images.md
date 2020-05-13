@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589865"
 ---
 # <a name="work-with-textures-and-images"></a>テクスチャおよびイメージを使用する
@@ -50,7 +50,7 @@ Visual Studio のイメージ エディターを使用すると、テクスチ�
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|イメージ エディターを使用してテクスチャとイメージを操作する方法について説明します。|
+|[イメージ エディター](../designers/image-editor.md)|イメージ エディターを使用してテクスチャとイメージを操作する方法について説明します。|
 |[イメージ エディターの例](../designers/how-to-create-a-basic-texture.md)|イメージ エディターを使用した一般的なイメージ処理タスクの実行方法について説明するトピックへのリンクがあります。|

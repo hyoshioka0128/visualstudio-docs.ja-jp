@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568686"
 ---
 # <a name="list-registers-command"></a>List Registers コマンド
@@ -39,7 +39,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 `Debug.ListRegisters /Display eax`
 
-上記の式は、次の式と同じです。
+は次と同等
 
 `Debug.ListRegisters eax`
 
@@ -55,7 +55,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 1 つ以上の `register` または `registerGroup` の値が一覧から削除されます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 エイリアス `r` を `Debug.ListRegisters` の代わりに使用できます。
 
 ## <a name="example"></a>例
@@ -65,8 +65,8 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [デバッグの基礎:[レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)
+- [デバッグの基礎 : [レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)
 - [方法: [レジスタ] ウィンドウを使用する](../../debugger/how-to-use-the-registers-window.md)

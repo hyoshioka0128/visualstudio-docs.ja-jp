@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 162632f0043d23fb111a9e455c1100f9506924a8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589514"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>方法: 基本カラー シェーダーを作成する
@@ -25,7 +25,7 @@ RGB 色定数のカラー値を最終的な出力の色に書き込めば、単�
 
 開始する前に、 **[プロパティ]** ウィンドウと**ツールボックス**が表示されていることを確認します。
 
-1. 操作する DGSL シェーダーを作成します。 プロジェクトに DGSL シェーダーを追加する方法に関する詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「作業の開始」セクションを参照してください。
+1. 操作する DGSL シェーダーを作成します。 プロジェクトに DGSL シェーダーを追加する方法については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「作業の開始」を参照してください。
 
 2. **[ポイントの色]** ノードを削除します。 **[選択]** ツールを使用して、 **[ポイントの色]** ノードを選択し、メニュー バーで **[編集]**  >  **[削除]** の順に選択します。
 
@@ -42,9 +42,9 @@ RGB 色定数のカラー値を最終的な出力の色に書き込めば、単�
 
 ![3&#45;D モデルのシェーダー グラフとその結果](../designers/media/digit-flat-color-effect.png)
 
-シェーダーによっては、特定の図形を使用すると、より適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法に関する詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」を参照してください。
+シェーダーによっては、特定の図形でより適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法に関する詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)

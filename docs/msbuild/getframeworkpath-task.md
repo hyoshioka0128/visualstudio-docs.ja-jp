@@ -13,22 +13,25 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747553"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634007"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath タスク
+
+.NET Framework アセンブリのパスを取得します。
 .NET Framework アセンブリのパスを取得します。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
 `GetFrameworkPath` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -40,12 +43,14 @@ ms.locfileid: "66747553"
 |`FrameworkVersion40Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 存在する場合、フレームワーク バージョン 4.0 アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 |`Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 利用できる場合、最新のフレームワーク アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 
-## <a name="remarks"></a>解説
-.NET Framework のいくつかのバージョンがインストールされている場合、このタスクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が実行されるように設計されているバージョンを返します。
+## <a name="remarks"></a>Remarks
+
+.NET Framework のいくつかのバージョンがインストールされている場合、このタスクでは、MSBuild が実行されるように設計されているバージョンが返されます。
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 次の例では、`GetFrameworkPath` タスクを使用し、.NET Framework のパスを `FrameworkPath` プロパティに保存します。
 
 ```xml
@@ -61,5 +66,6 @@ ms.locfileid: "66747553"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

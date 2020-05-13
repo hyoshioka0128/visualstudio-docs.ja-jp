@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797144"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -37,7 +37,7 @@ Unity エディターは、ゲームの世界をまとめ上げるのに適し�
 
 ### <a name="intellisense-for-unity-messages"></a>Unity メッセージ用の IntelliSense
 
-IntelliSense コードの補完を使うと、`OnCollisionEnter` などの [Unity API メッセージとそのパラメーターの実装](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages)が速く簡単になります。
+IntelliSense コードの補完を使うと、[ などの ](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages)Unity API メッセージとそのパラメーターの実装`OnCollisionEnter`が速く簡単になります。
 
 ### <a name="superior-debugging"></a>優れたデバッグ機能
 
@@ -58,6 +58,6 @@ Visual Studio による Unity プロジェクトの深い理解を利用して�
 
 Visual Studio for Mac も、Unity プロジェクトもサポートします。 詳しくは、[Visual Studio for Mac Tools for Unity のドキュメント](/visualstudio/mac/unity-tools)をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [Visual Studio Tools for Unity の使用を開始する](getting-started-with-visual-studio-tools-for-unity.md)

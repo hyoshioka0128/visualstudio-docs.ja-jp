@@ -5,54 +5,54 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d023359412b423c9c12d7c7d8a37e79571cbc11a
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697656"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする
 
-Vspackage では、dte オブジェクトの型を使用して <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> メソッドを呼び出すことにより、DTE オブジェクトを取得できます。 Managed Extensibility Framework (MEF) 拡張機能では、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> をインポートし、<xref:EnvDTE.DTE>の種類を使用して <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> メソッドを呼び出すことができます。
+VSPackages では、DTE オブジェクトの型を使用して<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>メソッドを呼び出すことによって、DTE オブジェクトを取得できます。 マネージ機能拡張フレームワーク (MEF) 拡張機能では、インポート<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>し、型を<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>使用してメソッドを呼び出<xref:EnvDTE.DTE>すことができます。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
+このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 
 ## <a name="get-the-dte-object"></a>DTE オブジェクトを取得する
 
-1. C# VSIX プロジェクトを作成し、 **dtetest**という名前を指定します。 **エディター分類子**項目テンプレートを追加し、 **dtetest**という名前を指定します。
+1. C# VSIX プロジェクトを作成し **、DTETest**という名前を付けます。 **エディター分類子**項目テンプレートを追加し、名前**DTETest**.
 
-   詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+   詳細については、「[エディター項目テンプレートを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)」を参照してください。
 
 ::: moniker range=">=vs-2019"
 
-2. 次のアセンブリ参照をプロジェクトに追加します。
+2. プロジェクトに次のアセンブリ参照を追加します。
 
-    - Microsoft. VisualStudio
-    - Microsoft.VisualStudio.Shell.Immutable.10.0
+    - フレームワーク
+    - をクリックします。
 
-3. *DTETestProvider.cs*ファイルで、次の `using` ディレクティブを追加します。
+3. *DTETestProvider.cs*ファイルに、次`using`のディレクティブを追加します。
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. `DTETestProvider` クラスで、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>をインポートします。
+4. クラスで`DTETestProvider`、 をインポート<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. `GetClassifier()` メソッドで、`return` ステートメントの前に次のコードを追加します。
+5. メソッドで`GetClassifier()`、ステートメントの前に次のコード`return`を追加します。
 
     ```csharp
    ThreadHelper.ThrowIfNotOnUIThread();
@@ -63,26 +63,26 @@ Vspackage では、dte オブジェクトの型を使用して <xref:Microsoft.V
 
 ::: moniker range="vs-2017"
 
-2. 次のアセンブリ参照をプロジェクトに追加します。
+2. プロジェクトに次のアセンブリ参照を追加します。
 
    - EnvDTE
-   - Microsoft. VisualStudio
+   - フレームワーク
 
-3. *DTETestProvider.cs*ファイルで、次の `using` ディレクティブを追加します。
+3. *DTETestProvider.cs*ファイルに、次`using`のディレクティブを追加します。
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. `DTETestProvider` クラスで、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>をインポートします。
+4. クラスで`DTETestProvider`、 をインポート<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. `GetClassifier()` メソッドで、`return` ステートメントの前に次のコードを追加します。
+5. メソッドで`GetClassifier()`、ステートメントの前に次のコード`return`を追加します。
 
     ```csharp
    DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));
@@ -92,5 +92,5 @@ Vspackage では、dte オブジェクトの型を使用して <xref:Microsoft.V
 
 ## <a name="see-also"></a>関連項目
 
-- [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)
-- [DTE を使用して Visual Studio を起動する](launch-visual-studio-dte.md)
+- [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)
+- [DTE を使って Visual Studio を起動する](launch-visual-studio-dte.md)

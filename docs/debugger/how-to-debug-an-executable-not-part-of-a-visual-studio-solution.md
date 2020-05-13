@@ -1,8 +1,8 @@
 ---
-title: Visual Studio ソリューションに含まれていないアプリをデバッグします。
+title: Visual Studio ソリューションの一部ではないアプリをデバッグする
 titleSuffix: ''
-ms.custom: seodec18
-ms.date: 11/19/2018
+ms.custom: ''
+ms.date: 02/21/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,55 +20,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 740af718a2928991d46bedbd6709337b9b20a254
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848010"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557907"
 ---
-# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Visual Studio ソリューションに含まれていないアプリのデバッグ (C++、 C#、Visual Basic、 F#)
+# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Visual Studio ソリューションの一部ではないアプリをデバッグするC++( C#、、Visual Basic F#、)
 
-アプリをデバッグすることがあります (*.exe*ファイル)、Visual Studio ソリューションの一部ではないです。 誰かが、Visual Studio の外部でアプリを作成した可能性があります。 または別の場所からアプリを取得します。
+Visual Studio ソリューションに含まれていないアプリ ( *.exe*ファイル) をデバッグすることができます。 開いている[フォルダー](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)プロジェクトの可能性があります。または、Visual Studio の外部でアプリを作成したか、他の場所からアプリを取得した可能性があります。
 
-Visual Studio に存在しないアプリをデバッグする通常の方法が、Visual Studio の外部からアプリを起動しを使用して接続し、**プロセスにアタッチ**Visual Studio デバッガーでします。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。
+- Visual Studio の開いているフォルダープロジェクト (プロジェクトファイルまたはソリューションファイルがない場合) については、「コードのC++[実行とデバッグ](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code)」を参照するか、「launch.[と json を使用してデバッグパラメーターを構成](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson)する」を参照してください。
 
-アプリにアタッチするには、数秒かかる手動の手順が必要です。 この遅延のためのアタッチ、起動時の問題をデバッグすることはできませんまたはアプリ ユーザーを待ちませんを入力し、すぐに終了します。
+- Visual Studio に存在しないアプリの場合、通常、デバッグするには、visual studio の外部でアプリを起動し、Visual Studio デバッガーの **[プロセスにアタッチ]** を使用してアタッチします。 詳細については、「[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。
 
-このような場合は、アプリでは、Visual Studio の EXE プロジェクトを作成または既存のインポートC#、Visual Basic、またはC++ソリューション。 EXE プロジェクトをサポートしていないプログラミング言語もあります。
+   アプリにアタッチするには、数秒かかる手動操作が必要です。 この遅延のため、アタッチはスタートアップの問題のデバッグや、ユーザーの入力を待機せずに迅速に完了するアプリのデバッグには役立ちません。
+
+   このような状況では、アプリの Visual Studio EXE プロジェクトを作成するか、既存C#の、Visual Basic、またはC++ソリューションにインポートすることができます。 EXE プロジェクトをサポートしていないプログラミング言語もあります。
 
 >[!IMPORTANT]
->Visual Studio に組み込まれていないアプリのデバッグ機能は、アプリにアタッチするか、Visual Studio ソリューションに追加するかどうか、制限されます。
+>アプリにアタッチするか、Visual Studio ソリューションに追加するかにかかわらず、Visual Studio でビルドされていないアプリのデバッグ機能は制限されます。
 >
->ソース コードがある場合は、最良のアプローチは、Visual Studio プロジェクトにコードをインポートするのには。 次に、アプリのデバッグ ビルドを実行します。
+>ソースコードがある場合は、コードを Visual Studio プロジェクトにインポートすることをお勧めします。 次に、アプリのデバッグビルドを実行します。
 >
->かどうか、ソース コードがないし、アプリが見つからない[デバッグ情報](../debugger/how-to-set-debug-and-release-configurations.md)互換の形式で使用可能なデバッグ機能はごくわずかです。
+>ソースコードがなく、アプリに互換性のある形式の[デバッグ情報](../debugger/how-to-set-debug-and-release-configurations.md)がない場合、利用可能なデバッグ機能はほとんどありません。
 
 ### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>既存のアプリの新しい EXE プロジェクトを作成するには
 
-1. Visual Studio で、次のように選択します。**ファイル** > **オープン** > **プロジェクト**します。
+1. Visual Studio で、 **[ファイル]** を選択して > **プロジェクト** > **開き**ます。
 
-1. **プロジェクトを開く**ダイアログ ボックスで、**すべてのプロジェクト ファイル**選択されていない場合、ドロップダウンの横に、**ファイル名**します。
+1. **[プロジェクトを開く]** ダイアログボックスで、 **[ファイル名]** の横にあるドロップダウンで、 **[すべてのプロジェクトファイル]** を選択します (まだ選択されていない場合)。
 
-1. 移動し、 *.exe*ファイル、それを選択し、**オープン**します。
+1. *.Exe*ファイルに移動して選択し、 **[開く]** を選択します。
 
    新しい一時的な Visual Studio ソリューションにファイルが表示されます。
 
-1. このような実行コマンドを選択して、アプリのデバッグを開始**デバッグの開始**から、**デバッグ**メニュー。
+1. **[デバッグ]** メニューの **[デバッグの開始]** などの実行コマンドを選択して、アプリのデバッグを開始します。
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>既存の Visual Studio ソリューションにアプリをインポートするには
 
-1. C++、 C#、Visual Studio で開いている Visual Basic ソリューションを選択または**ファイル** > **追加** > **既存のプロジェクト**します。
+1. C#、、 C++または Visual Basic ソリューションを Visual Studio で開いている状態で、**ファイル** > **既存のプロジェクト**の**追加** >  を選択します。
 
-1. **プロジェクトを開く**ダイアログ ボックスで、**すべてのプロジェクト ファイル**選択されていない場合、ドロップダウンの横に、**ファイル名**します。
+1. **[プロジェクトを開く]** ダイアログボックスで、 **[ファイル名]** の横にあるドロップダウンで、 **[すべてのプロジェクトファイル]** を選択します (まだ選択されていない場合)。
 
-1. 移動し、 *.exe*ファイル、それを選択し、**オープン**します。
+1. *.Exe*ファイルに移動して選択し、 **[開く]** を選択します。
 
-   新しいプロジェクトを現在のソリューションとして、ファイルが表示されます。
+   ファイルは、現在のソリューションの下に新しいプロジェクトとして表示されます。
 
-1. 新しいファイルが選択状態などの実行コマンドを選択して、アプリのデバッグを開始**デバッグの開始**から、**デバッグ**メニュー。
+1. 新しいファイルを選択した状態で、 **[デバッグ] メニューの**[デバッグの**開始**] などの実行コマンドを選択して、アプリのデバッグを開始します。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [DBG ファイル](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

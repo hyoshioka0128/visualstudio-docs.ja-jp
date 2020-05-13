@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2 |Microsoft Docs
+title: イベント 2 を実行する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945b04fc2d5a370ef4b2d17abd90e6bdaa818553
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00fd8b4b42f11d18958f8a969bc4ccd58754ab93
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327669"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730002"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
-このインターフェイスには、ユーザーに報告するエラー メッセージを指定します。
+このインターフェイスは、ユーザーに報告されるエラー メッセージを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,28 +28,28 @@ ms.locfileid: "66327669"
 IDebugErrorEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジン (DE) は、人間が判読できるメッセージとしてエラーを報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジン (DE) は、人間が読み取り可能なメッセージとしてエラーを報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は[、インターフェイス](/cpp/atl/queryinterface)にアクセスするのに`IDebugEvent2`クエリ インターフェイスを使用します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- デは作成し、エラーを報告するには、このイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって指定されたコールバック関数。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ DE は、エラーを報告するために、このイベント オブジェクトを作成して送信します。 イベントは、デバッグ中のプログラムにアタッチされたときに SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して送信されます。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |`GetErrorMessage`|人間が判読できる文字列としてエラーを返します。|
 
 ## <a name="remarks"></a>Remarks
- デバッグ エンジンには、エラーが発生するは、このインターフェイスを使用して、Visual Studio でメッセージをユーザーに報告することができます。
+ デバッグ エンジンでエラーが発生した場合、このインターフェイスを使用して、Visual Studio を通じてメッセージをユーザーに報告できます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

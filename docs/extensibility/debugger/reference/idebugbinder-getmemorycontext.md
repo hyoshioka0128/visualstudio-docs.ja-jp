@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext |Microsoft Docs
+title: バインダーを使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9876d4e4315041f4a4212a7ef50077982f3d2df0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327261"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735998"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-このメソッドでは、メモリのコンテキストにオブジェクトの場所またはメモリ アドレスのいずれかに変換します。
+このメソッドは、オブジェクトの場所またはメモリ アドレスをメモリ コンテキストに変換します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,16 +45,16 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>パラメーター
 `pField`\
-[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)検索するオブジェクトを記述します。 場合`NULL`を使用して`dwConstant`代わりにします。
+[in]検索するオブジェクトを記述する[IDebug フィールド](../../../extensibility/debugger/reference/idebugfield.md)。 の`NULL`場合は、`dwConstant`代わりにを使用します。
 
 `dwConstant`\
-[in]0x5000 などの定数のメモリ アドレス。
+[in]0x5000 などの定数メモリ アドレス。
 
 `ppMemCxt`\
-[out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクトのアドレス、またはメモリ内のアドレスを表すインターフェイスです。
+[アウト]オブジェクトのアドレスまたはメモリ内のアドレスを表す[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691728"
 ---
-# <a name="data-visualizations"></a>データの視覚化
+# <a name="data-visualizations"></a>データ可視化
 
 Visual Studio for Mac では、デバッガー用の UI がサポートされているため、デバッグ中に変数、フィールド、プロパティの値を視覚化できます。 これらのデータ ビジュアライザーには拡張されたバージョンのデータが表示され、color 構造体の色など、既知の構造を開発時に検査できます。
 
@@ -28,12 +28,12 @@ Point/PointF (iOS と Mac では CGPoint) は、X 値と Y 値を示すタプル
 
 ![ポイントの視覚化](media/data-visualizations-image10.png)
 
-## <a name="size"></a>サイズ
+## <a name="size"></a>Size
 Size/SizeF (iOS と Mac では CGSize) は、四角形としてレンダリングされます。 250 px を超えるディメンションまで拡大縮小して描画され、そこに 250 px の最大ディメンションに拡大縮小して四角形が表示されます。
 
 [サイズの視覚化](media/data-visualizations-image11.png)
 
-## <a name="rectangle"></a>四角形
+## <a name="rectangle"></a>Rectangle
 Rectangle/RectangleF (iOS と Mac では CGRect) は、ディメンションと原点を表示します。 Size と同様に、250 px を超えるディメンションまで拡大縮小して描画されます。
 
 ![四角形の視覚化](media/data-visualizations-image12.png)
@@ -43,7 +43,7 @@ Rectangle/RectangleF (iOS と Mac では CGRect) は、ディメンションと�
 
 [座標の視覚化](media/data-visualizations-image13.png)
 
-## <a name="color"></a>色
+## <a name="color"></a>Color
 色のプレビュー、RGBA コンポーネント、色相値-彩度値-輝度値、および色の 16 進値を示す UIColor、CGColor、および Color のプロパティが表示されます。
 
 ![色の視覚化](media/data-visualizations-image14.png)
@@ -96,12 +96,12 @@ IEnumerable はすべての値を列挙します。各値は、 **[値の表示]
   * (,) の形式で表示されます
 * **Null**
   * "null" 値が表示されます。
-* **URL**
+* **[URL]**
   * クリック可能なハイパーリンクが表示されます。
 * **IntPtr**
   * IntPtr の 16 進表現が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[自動変数] ウィンドウと [ローカル] ウィンドウの変数の検査 (Windows 上の Visual Studio)](/visualstudio/debugger/autos-and-locals-windows)
 - [ビジュアライザーで文字列を表示する (Windows 上の Visual Studio)](/visualstudio/debugger/string-visualizer-dialog-box)

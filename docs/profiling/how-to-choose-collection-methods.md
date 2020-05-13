@@ -13,13 +13,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776346"
 ---
-# <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択する
+# <a name="how-to-choose-collection-methods"></a>方法 : 収集方法を選択する
 
 Visual Studio プロファイリング ツールでは、サンプリング、インストルメンテーション、コンカレンシーという 3 種類のパフォーマンス データ収集方法をサポートしています。 また、.NET メモリ割り当てと有効期間データの収集には、サンプリングまたはインストルメンテーションの方式を使用できます。
 
@@ -31,14 +31,14 @@ Visual Studio プロファイリング ツールでは、サンプリング、�
 
 - ウィザードの最初のページで、次のいずれかのオプションを選択します。
 
-| オプション | 説明 |
+| オプション | [説明] |
 |----------------------------| - |
 | **CPU サンプリング** | 初期の分析と CPU 使用率の問題の分析に役立つアプリケーション統計情報を収集します。 |
 | **インストルメンテーション** | 焦点を絞った分析、および入出力パフォーマンスの問題分析に役立つ詳しいタイミング データを収集します。 |
 | **.NET メモリ割り当て** | サンプリング プロファイリング方式を使用して .NET Framework メモリ割り当てデータを収集します。 |
 | **コンカレンシー** | 数値のリソース競合データを収集します。 |
 
-## <a name="performance-explorer"></a>パフォーマンス エクスプローラー
+## <a name="performance-explorer"></a>パフォーマンス エクスプ ローラー
 
 ### <a name="to-select-a-collection-method-using-performance-explorer"></a>パフォーマンス エクスプローラーを使用して収集方法を選択するには
 
@@ -90,7 +90,7 @@ Visual Studio プロファイリング ツールでは、サンプリング、�
 
 3. **[コンカレンシー]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)

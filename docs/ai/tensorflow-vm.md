@@ -2,28 +2,29 @@
 title: クラウドで TensorFlow モデルを実行する
 description: Azure ディープ ラーニング VM で TensorFlow モデルを実行します
 keywords: AI, Visual Studio, ディープ ラーニング仮想マシン
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915824"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638762"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>クラウドで TensorFlow モデルをトレーニングする
 
-このチュートリアルでは、Azure [ディープ ラーニング](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)仮想マシンの [MNIST データセット](http://yann.lecun.com/exdb/mnist/)を使って、TensorFlow モデルをトレーニングします。
+このチュートリアルでは、Azure [ディープ ラーニング](http://yann.lecun.com/exdb/mnist/)仮想マシンの [MNIST データセット](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)を使って、TensorFlow モデルをトレーニングします。
 
 MNIST データベースには、60,000 例のトレーニング セットと、手書きの数字の 10,000 例のテスト セットが含まれます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 始める前に、次のものがインストールおよび構成されていることを確認します。
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Azure ディープ ラーニング仮想マシンをセットアップする
@@ -39,13 +40,13 @@ MNIST データベースには、60,000 例のトレーニング セットと、
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>サンプル コードをダウンロードする
+### <a name="download-sample-code"></a>サンプル コードのダウンロード
 
 TensorFlow、CNTK、Theano などでディープ ラーニングを始めるためのサンプルを含むこの [GitHub リポジトリ](https://github.com/Microsoft/samples-for-ai)をダウンロードします。
 
 ## <a name="open-project"></a>プロジェクトを開く
 
-- Visual Studio を起動し、 **[ファイル] > [開く] > [プロジェクト/ソリューション]** の順に選びます。
+- Visual Studio を起動し、**[ファイル] > [開く] > [プロジェクト/ソリューション]** の順に選びます。
 
 - ダウンロードしたサンプル リポジトリで **Tensorflow Examples** フォルダーを選び、**TensorflowExamples.sln** ファイルを開きます。
 
@@ -60,7 +61,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 ![新しいリモート マシンを追加する](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>ジョブを Azure VM に送信する
-**ソリューション エクスプローラー**で MNIST プロジェクトを右クリックし、 **[ジョブの送信]** を選びます。
+**ソリューション エクスプローラー**で MNIST プロジェクトを右クリックし、**[ジョブの送信]** を選びます。
 
 ![リモート マシンへのジョブの送信](media/tensorflow-vm/job-submission.png)
 

@@ -9,18 +9,24 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e5f9b3cee9cdfc2ca85c39c701b87028ad949a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2eadce12890e483f1b1c7aafccb61d9a6ee28e3a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585207"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880300"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>診断データ アダプターを作成してカスタム データを収集する、またはテスト コンピューターに影響を与える
 
 独自の診断データ アダプターを作成してテストの実行時のデータを収集することや、テストの一環としてテスト コンピューターに影響を与えることが必要になる場合があります。 たとえば、テスト中のアプリケーションによって作成されるログ ファイルを収集し、これをテスト結果にアタッチする場合、またはコンピューターの残りのディスク容量が限られている状態でテストを実行する場合があります。 Visual Studio Enterprise に用意されている API を使用すると、テストの実行中の特定時点にタスクを実行するコードを記述できます。 たとえば、テストの実行の開始時、個別のテストの実行の前後、テストの実行の完了時にタスクを実行できます。
 
+::: moniker range="vs-2017"
 構成設定ファイルを使用して、カスタム診断データ アダプターに既定の入力を渡すことができます。 たとえば、収集してテスト結果にアタッチするファイルの場所、またはシステムの残りのディスク容量についての情報を指定できます。 このデータは、作成するテストの設定ごとに構成できます。 これは、Microsoft Test Manager に用意されている既定のエディターを使用して表示および編集できるほか、エディターとして使用する独自のユーザー コントロールを作成することもできます。 エディターでアダプター構成に加えたすべての変更はテストの設定と共に保存されます。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+構成設定ファイルを使用して、カスタム診断データ アダプターに既定の入力を渡すことができます。 たとえば、収集してテスト結果にアタッチするファイルの場所、またはシステムの残りのディスク容量についての情報を指定できます。 このデータは、作成するテストの設定ごとに構成できます。 エディターとして使用する独自のユーザー コントロールを作成できます。 エディターでアダプター構成に加えたすべての変更はテストの設定と共に保存されます。
+::: moniker-end
 
 Visual Studio からテストを実行する場合は、これらのテスト設定をアクティブとして設定する必要があります。 テスト設定の詳細については、「[テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)」を参照してください。
 

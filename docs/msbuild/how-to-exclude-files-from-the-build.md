@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576057"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633864"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
+
 プロジェクト ファイルでは、ワイルドカードを使用して、1 つのディレクトリ内のすべてのファイル、または入れ子にされたディレクトリのセットをビルドの入力として使用することができます。 しかし、ディレクトリ内の 1 つのファイル、または入れ子にされたディレクトリのセット内の 1 つのディレクトリをビルドの入力に含めたくない場合もあります。 そのファイルまたはディレクトリは、入力の一覧から明示的に除外できます。 また、特定の条件のもとでのみ含めることを望むファイルがプロジェクトに存在することもあります。 ファイルをビルドに含める条件を明示的に宣言できます。
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>ビルドの入力からファイルまたはディレクトリを除外する
+
  項目リストは、ビルドの入力ファイルです。 `Include` 属性を使用して、含める項目を個別にまたはグループとして宣言します。 次に例を示します。
 
 ```xml
@@ -76,6 +78,7 @@ ms.locfileid: "75576057"
     > 両方の属性にパスを指定する必要があります。 ファイルの場所を指定するのに `Include` 属性で絶対パスを使用する場合、`Exclude` 属性においても絶対パスを使用する必要があります。`Include` 属性で相対パスを使用する場合は、`Exclude` 属性においても相対パスを使用する必要があります。
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>条件を使ってビルドの入力からファイルまたはディレクトリを除外する
+
  たとえば、デバッグ ビルドには含めるものの、リリース ビルドには含めない項目がある場合には、`Condition` 属性を使用して項目を含める条件を指定できます。
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>リリース ビルドにのみファイル *Formula.vb* を含める場合
@@ -89,6 +92,7 @@ ms.locfileid: "75576057"
     ```
 
 ## <a name="example"></a>例
+
  次のコードの例では、*Form2.cs* を除くディレクトリ内のすべての *.cs* ファイルを使用してプロジェクトをビルドします。
 
 ```xml
@@ -122,7 +126,8 @@ ms.locfileid: "75576057"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
-- [項目](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>参照
+
+- [アイテム](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)

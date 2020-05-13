@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585523"
 ---
 # <a name="common-quick-actions"></a>共通のクイック アクション
 
-このトピックのセクションでは、C# と Visual Basic 両方のコードに共通に適用される**クイック アクション**の一部を示します。 このアクションは、コンパイラ診断、または Visual Studio の組み込みの [.NET Compiler Platform アナライザー](../code-quality/roslyn-analyzers-overview.md)のいずれかの*コード修正*です。
+このトピックのセクションでは、C# と Visual Basic 両方のコードに共通に適用される**クイック アクション**の一部を示します。 このアクションは、コンパイラ診断、または Visual Studio の組み込みの *.NET Compiler Platform アナライザー*のいずれかの[コード修正](../code-quality/roslyn-analyzers-overview.md)です。
 
 ## <a name="actions-that-fix-errors"></a>エラーを修正するアクション
 
@@ -511,7 +511,7 @@ Dim c = New Customer() With {.Age = 21}
 
 ### <a name="use-collection-initializers"></a>コレクション初期化子を使用する
 
-このクイック アクションでは、クラスの `Add` メソッドを複数回呼び出すのではなく、[コレクション初期化子](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)を使用することができます。
+このクイック アクションでは、クラスの [ メソッドを複数回呼び出すのではなく、](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)コレクション初期化子`Add`を使用することができます。
 
 ```csharp
 // Before
@@ -664,7 +664,7 @@ int fibonacci(int n)
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Visual Studio 2017 バージョン 15.5 以降 |
 
-このクイック アクションでは、可能な限り、```ReferenceEquals``` コーディング パターンではなく、[パターン マッチング](/dotnet/csharp/pattern-matching)の使用を提案します。
+このクイック アクションでは、可能な限り、[ コーディング パターンではなく、](/dotnet/csharp/pattern-matching)パターン マッチング```ReferenceEquals```の使用を提案します。
 
 ```csharp
 // Before
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032、BC37057 | C# および Visual Basic | Visual Studio 2017 以降 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイック アクション](../ide/quick-actions.md)

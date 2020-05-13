@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594137"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE の 64 ビット サポート
@@ -28,7 +28,7 @@ Visual Studio では、64 ビット プラットフォームを含む、さま�
 
 ## <a name="configure-projects-as-64-bit-applications"></a>プロジェクトを 64 ビット アプリケーションとして構成
 
-[方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)では、64 ビット アプリケーションとしてビルドされるようにプロジェクトを構成する方法について説明しています。
+「[方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)」では、64 ビット アプリケーションとしてビルドされるようにプロジェクトを構成する方法について説明しています。
 
 ## <a name="debug-a-64-bit-application"></a>64 ビット アプリケーションのデバッグ
 

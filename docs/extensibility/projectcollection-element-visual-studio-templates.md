@@ -1,5 +1,5 @@
 ---
-title: ProjectCollection 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: プロジェクトコレクション要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ProjectCollection> element [Visual Studio Templates]
 - ProjectCollection element [Visual Studio Templates]
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe67217acfa4c3612d1feea45b5267402955481
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336037"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701973"
 ---
-# <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 要素 (Visual Studio テンプレート)
+# <a name="projectcollection-element-visual-studio-templates"></a>プロジェクトコレクション要素
 複数プロジェクトのテンプレートの構成と内容を指定します。
 
- \<VSTemplate> \<TemplateContent> \<ProjectCollection>
+ \<VS テンプレート\<>\<テンプレートプロジェクトコレクション>>コンテンツ
 
 ## <a name="syntax"></a>構文
 
@@ -39,13 +39,13 @@ ms.locfileid: "66336037"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 複数プロジェクトのテンプレートでは、プロジェクトを指定します。|
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 複数プロジェクト テンプレート内のプロジェクトを指定します。|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 複数プロジェクトのテンプレートをグループ化します。|
 
 ### <a name="parent-elements"></a>親要素
@@ -55,10 +55,10 @@ ms.locfileid: "66336037"
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートの内容を指定します。|
 
 ## <a name="remarks"></a>Remarks
- 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `ProjectCollection`要素を使用して、テンプレートが含まれているプロジェクトを指定します。 複数プロジェクトのテンプレートの詳細については、次を参照してください。[方法。複数のプロジェクト テンプレートを作成する](../ide/how-to-create-multi-project-templates.md)します。
+ 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 要素`ProjectCollection`は、テンプレートに含めるプロジェクトを指定するために使用されます。 複数プロジェクトのテンプレートの詳細については、「[方法 : 複数プロジェクト テンプレートを作成する](../ide/how-to-create-multi-project-templates.md)」を参照してください。
 
 ## <a name="example"></a>例
- この例は単純なマルチ プロジェクトのルート *.vstemplate*ファイル。 この例では、テンプレートには `My Windows Application` と `My Class Library` の 2 つのプロジェクトが含まれています。 `ProjectName` 要素の `ProjectTemplateLink` 属性は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がこのプロジェクトに割り当てる名前を設定します。 場合、`ProjectName`属性が存在しないの名前、 *.vstemplate*ファイルは、プロジェクト名として使用します。
+ この例では、単純な複数プロジェクトのルート *.vstemplate*ファイルを示します。 この例では、テンプレートには `My Windows Application` と `My Class Library` の 2 つのプロジェクトが含まれています。 `ProjectName` 要素の `ProjectTemplateLink` 属性は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がこのプロジェクトに割り当てる名前を設定します。 属性が`ProjectName`存在しない場合は *、.vstemplate*ファイルの名前がプロジェクト名として使用されます。
 
 ```
 <VSTemplate Version="3.0.0" Type="ProjectGroup"
@@ -83,6 +83,6 @@ ms.locfileid: "66336037"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
-- [方法: 複数プロジェクトのテンプレートを作成します。](../ide/how-to-create-multi-project-templates.md)
+- [方法: 複数プロジェクトテンプレートを作成する](../ide/how-to-create-multi-project-templates.md)

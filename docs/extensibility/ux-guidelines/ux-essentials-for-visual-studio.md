@@ -1,168 +1,168 @@
 ---
-title: Visual Studio 用の UX Essentials |Microsoft Docs
+title: ビジュアルスタジオのUXの必需品 |マイクロソフトドキュメント
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310804"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698339"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1.Visual Studio 環境内で一貫しています。
+### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Visual Studio 環境内で一貫性を保つ。
 
-- 次の既存の[対話パターン](interaction-patterns-for-visual-studio.md)シェル内で。
+- シェル内の既存の[相互作用パターン](interaction-patterns-for-visual-studio.md)に従います。
 
-- シェルのビジュアル言語と一致するように機能を設計および[職人気質要件](evaluation-tools-for-visual-studio.md)します。
+- シェルのビジュアル言語と職人技の要件に合わせて設計[機能](evaluation-tools-for-visual-studio.md)。
 
-- 存在する場合は、共有のコマンドとコントロールを使用します。
+- 共有コマンドと共有コントロールが存在する場合は、そのコマンドとコントロールを使用します。
 
-- Visual Studio の階層とコンテキストを確立して、UI のドライブの方法を理解します。
+- Visual Studio の階層と、コンテキストを確立して UI を駆動する方法について理解する。
 
-### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.フォントと色の環境のサービスを使用します。
+### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. フォントと色に環境サービスを使用します。
 
-- UI は現在を尊重する必要があります[環境フォント](fonts-and-formatting-for-visual-studio.md)オプション ダイアログ ボックスで [フォントおよび色] ページでカスタマイズには、公開される場合を除きを設定します。
+- UI は、[オプション] ダイアログの [フォントと色] ページでカスタマイズ用に公開されていない限り、現在の[環境](fonts-and-formatting-for-visual-studio.md)フォント設定を尊重する必要があります。
 
-- UI 要素を使用する必要があります、 [VSColor Service](colors-and-styling-for-visual-studio.md)環境のトークンまたは機能固有のトークンを使用して共有します。
+- UI 要素は、共有環境トークンまたは機能固有のトークンを使用して[VSColor サービス](colors-and-styling-for-visual-studio.md)を使用する必要があります。
 
-### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3.新しい VS スタイルで一貫性のあるすべての画像を作成します。
+### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. すべての画像を新しい VS スタイルと一致させます。
 
-- アイコン、グリフ、およびその他のグラフィックスの Visual Studio のデザインの原則に従います。
+- アイコン、グリフ、その他のグラフィックスに関する Visual Studio のデザインの原則に従います。
 
-- グラフィック要素のテキストを配置しないでください。
+- グラフィック要素にテキストを配置しないでください。
 
-### <a name="4-design-from-a-user-centric-perspective"></a>4.ユーザー中心の観点から設計します。
+### <a name="4-design-from-a-user-centric-perspective"></a>4. ユーザー中心の視点から設計する。
 
-- 内の個々 の機能の前にタスク フローを作成します。
+- タスク フローは、その中の個々の機能の前に作成します。
 
-- ユーザーに精通することし、仕様にその知識を明示します。
+- ユーザーに精通し、その知識を仕様に明示してください。
 
-- UI を確認する際に、包括的なエクスペリエンスと、詳細情報を評価します。
+- UI を確認する際は、完全なエクスペリエンスと詳細を評価します。
 
-- UI の設計機能でのロケールまたは言語に関係なく魅力的な残るようにします。
+- ロケールや言語に関係なく、UI が機能し、魅力的な状態に保たるように UI を設計します。
 
-## <a name="screen-resolution"></a>画面の解像度
+## <a name="screen-resolution"></a>画面解像度
 
 ### <a name="minimum-resolution"></a>最小解像度
 
-- Visual Studio 2015 の最小解像度は**1280 x 720**します。 つまり、ある*可能*ユーザー エクスペリエンスが最適化ができない可能性がありますが、この解像度では、Visual Studio を使用します。 すべての側面は 1280 x 720 より低い解像度で使用できることの保証はありません。
+- Visual Studio 2015 の最小解像度は**1280x720**です。 つまり、この解像度では Visual Studio を使用*できますが*、最適なユーザー エクスペリエンスではない可能性があります。 1280x720 より低い解像度ですべての側面が使用できる保証はありません。
 
-- Visual Studio のターゲットの解決は**1366 x 768**します。 これはお約束が最も低い解像度、*良い*ユーザー エクスペリエンス。
+- Visual Studio のターゲット解像度は**1366x768**です。 これは、*優*れたユーザー エクスペリエンスを約束する最低の解像度です。
 
-- 最初のダイアログの高さをする必要があります**700 ピクセルより小さい**、96 dpi で IDE のフレームの最小解像度内に収まるようにします。
+- ダイアログの最初の高さは**700 ピクセルより小さく**する必要があります。
 
-### <a name="high-density-displays"></a>高密度が表示されます。
- Visual Studio の UI は、Windows の状態でサポートされるすべての DPI スケール ファクターに適しています機能する必要があります。150%、200%、250% の場合は。
+### <a name="high-density-displays"></a>高密度ディスプレイ
+ Visual Studio の UI は、Windows がサポートするすべての DPI スケール ファクターで適切に動作する必要があります: 150%、200%、および 250% です。
 
-## <a name="anti-patterns"></a>アンチ パターン
- Visual Studio には、以下のガイドラインとベスト プラクティスは、UI の多くの例が含まれています。 一貫性を保つために、開発者は、多くの場合、製品 UI の設計パターンが構築していることに似ていますから借用します。 これは、リリースするという私たちのドライブのユーザーとの対話およびビジュアル デザインの一貫性を利用するは場合によっては優先順位付けの参加を解除またはスケジュールの制約のためのガイドラインに準拠しないいくつかの詳細と機能の有効なアプローチです。 このような場合は、たくないチームがこれらの「アンチ パターン」のいずれかのコピーを Visual Studio 環境内で不適切なまたは非整合な UI が急増するためです。
+## <a name="anti-patterns"></a>反パターン
+ Visual Studio には、ガイドラインとベスト プラクティスに従う UI の例が多数用意されています。 開発者は、一貫性を保つために、構築しているものと同様の製品 UI 設計パターンを利用することがよくあります。 これはユーザー操作とビジュアル デザインの一貫性を促進するのに役立つ優れたアプローチですが、スケジュールの制約や欠陥の優先順位付けのためにガイドラインを満たしていないいくつかの詳細を含む、いくつかの詳細を含む場合があります。 このような場合、チームは Visual Studio 環境内で不適切な UI または一貫性のない UI が増殖するため、これらの "アンチパターン" の 1 つをコピーすることは望ましくありません。
 
-### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>必要なフィールド/設定の既定のエラー状態の表示
-
-#### <a name="feature-team-goals"></a>機能チームの目標
-
-- 構成する必要がある要素を追加することをユーザーに警告します。
-
-- 入力を必要とする領域に、ユーザーの注意を促します。
-
-#### <a name="anti-pattern-solution"></a>ソリューションのアンチ パターン
- ユーザーがアクションを開始するとすぐに、およびタスクが完了する前に、構成が必要な領域の横に重大な停止アイコンをすぐに配置します。
-
-#### <a name="example-manifest-designer-declarations"></a>例:マニフェスト デザイナーの宣言
- 一覧に宣言を追加すると、すぐには、ユーザーが必要なプロパティを設定するまで引き続き発生するエラー状態で配置します。
-
- この場合、アラートに使用されるアイコンが含まれているためにその他の問題がありますが、"&times;"アイコンの横にある共通の削除 アイコンを使用することはできませんので。 その結果、UI より不恰好コントロールを削除 ボタンを使用します。
-
- ![既定では、エラー状態で UI を配置することは、Visual Studio のアンチ パターンです。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti パターン")<br />既定では、エラー状態で UI を配置することは、Visual Studio のアンチ パターンです。
-
-#### <a name="alternatives"></a>代替手段
-
-この問題に対するより優れたソリューションには。
-
-- 警告なしの宣言を追加するユーザーを許可して、すぐに移動して、項目のプロパティを設定します。
-
-- 警告アイコン (ゴールド三角形) を追加するときにフォーカスが移動、項目からなど、リストに別の宣言を追加するか、デザイナー内のタブを変更しようとします。
-
-- ユーザーは、宣言のプロパティを設定する前にタブを変更しようとすると、アプリケーションがビルドされないことを説明するダイアログをポップアップ表示 (または、どのような影響)、警告が解決されるまでです。 場合は、ユーザーがダイアログを閉じるし、タブか、アイコン (重大または警告、必要に応じて) に追加されます宣言 タブ。
-
-### <a name="multiple-clicks-to-dismiss-ui"></a>UI を複数回のクリック
+### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>既定でエラー状態で表示される必須フィールド/設定
 
 #### <a name="feature-team-goals"></a>機能チームの目標
- 最初に説明テキストを表示することがなく、UI を消去するユーザーを禁止します。
 
-#### <a name="anti-pattern"></a>アンチ パターン
- VS UI 内でさまざまな場所にビデオへのリンクを挿入するチームの決定の一般的なパターンに対して、"&times;"リンク"次回から表示しない"と閉じるボタンとツールヒントの説明とは、UX で指定され、代わりに、ドロップダウンを実装します。
+- 構成する必要のある要素が追加されたことをユーザーに警告します。
 
-#### <a name="example-video-links-in-team-explorer"></a>例:チーム エクスプ ローラーでビデオへのリンク
-Visual Studio 内でのアンチ パターンは、UI を破棄する前に説明文を読み取るユーザーを強制します。 正しくデザインされた、ビデオのリンクをクリックして、ポインターを合わせると追加情報を含むヒントを表示する必要があります、"&times;"さらに操作を必要としないメッセージを無視する必要があります。
+- 入力が必要な領域にユーザーの注意を引きます。
 
- ![説明のテキストを反&#45;パターン&#45;が正しくない](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />ビデオの正しくないリンク パターン
+#### <a name="anti-pattern-solution"></a>アンチパターンソリューション
+ ユーザーがアクションを開始し、タスクを完了する前に、直ちに構成が必要な領域の横にクリティカル ストップ アイコンを配置します。
 
-閉じるボタン (1 回のクリック) 単純なのではなく、ユーザーは 2 回のクリックを使用して、ビデオへのリンクが表示されるすべての場所では、UI を単純に無視するように強制します。
+#### <a name="example-manifest-designer-declarations"></a>例: マニフェスト デザイナーの宣言
+ 宣言をリストに追加すると、すぐにエラー状態になります。
 
-このような状況の適切な設計が Internet Explorer、Office、および Visual Studio に共通のパターンに従うには: ポインターを合わせると、ユーザーに、ツールヒントの説明を表示し、1 回のクリックには、UI が非表示にします。
+ この場合、アラートに使用されるアイコンには " " アイコン&times;が含まれているため、その横に共通の削除アイコンを使用できないため、さらに懸念があります。 その結果、UI は削除ボタンを使用します。
 
- ![説明のテキストを反&#45;パターン&#45;正しい](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti パターン修正")<br />ビデオの適切なリンク パターン
+ ![既定で UI をエラー状態に設定するのは、Visual Studio のアンチパターンです。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "マニフェストデザイナー エラー宣言anti-pattern")<br />既定で UI をエラー状態に設定するのは、Visual Studio のアンチパターンです。
 
-### <a name="using-command-bars-for-settings"></a>コマンド バーを使用して、設定
+#### <a name="alternatives"></a>代替
 
-**図 A**このアンチ パターンを表します。 コマンドは、単に適用されるコマンド ボタンの下に設定します。 このスケッチの場合は、[デバッグ開始] 以外のコマンドがあります: などのブラウザー、デバッグなしで開始、およびステップ インでビュー-選択した設定を尊重します。
+この問題に対するより良い解決策は、次のとおりです。
 
-![図 a:コマンド バーのアンチ パターン](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-パターン-FigureA")<br />図 a:コマンド バーのアンチ パターン
+- ユーザーが警告なしに宣言を追加し、項目のプロパティを設定するためにすぐに移動できるようにします。
 
-ようにが少し向上の望ましくないが、ツールバーでこの種類の設定を配置する**図 B**します。分割ボタン領域が少なくなると改善をドロップダウン リストではそのため、中に両方の設計もを使用しているツールバーがありません。 実際にコマンドを昇格します。
+- リストに別の宣言を追加したり、デザイナー内のタブを変更したりするなど、項目からフォーカスが移動したときに警告アイコン (ゴールドの三角形) を追加します。
 
-![図 b:良い、ですが、コマンド バーのアンチ パターンまだ](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-パターン-FigureB")<br />図 b:良い、でも、コマンド バーのアンチ パターン
+- 宣言のプロパティを設定する前にユーザーがタブを変更しようとすると、警告が解決されるまでアプリケーションがビルドされないこと (または、その影響を含む) ことを説明するダイアログボックスをポップします。 ユーザーがダイアログを閉じてタブを変更した場合は、アイコン (重要または警告) が [宣言] タブに追加されます。
 
-示すように、適切なアプローチで**図 C**設定は、一連のコマンドに関連付けられます。 設定されているグローバル設定がないとだけ、4 つのコマンドを切り替えしています。 これは、ツールバーのコマンドの許容可能な場合だけです。
+### <a name="multiple-clicks-to-dismiss-ui"></a>複数のクリックで UI を閉じる
 
-![図 c:Visual Studio のコマンド バーのパターンの使用を修正](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-パターン-FigureC")<br />図 c:Visual Studio のコマンド バーのパターンの正しい使用
+#### <a name="feature-team-goals"></a>機能チームの目標
+ 説明テキストを最初に表示せずに、ユーザーが UI を閉じるようにしないでください。
 
-### <a name="control-anti-patterns"></a>コントロールのアンチ パターン
- いくつかのアンチ パターンは、単に不適切な使用方法またはコントロールまたはコントロールのグループのプレゼンテーションです。
+#### <a name="anti-pattern"></a>アンチパターン
+ VS UI 内のさまざまな場所にビデオ リンクを挿入するチームは、UX で指定された&times;"閉じるボタンとツールヒントの説明" の一般的なパターンに対して決定し、代わりにドロップダウンと "再表示しない" リンクを実装しました。
 
-#### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>下線がハイパーリンクではないグループのラベルとして使用
- ハイパーリンクのみのテキストに下線を使用する必要があります。
+#### <a name="example-video-links-in-team-explorer"></a>例: チーム エクスプローラーでのビデオ リンク
+UI を閉じる前に説明文を読み取るようにユーザーに強制することは、Visual Studio 内の反パターンです。 正しくデザインされたビデオ リンクには、ホバーに関する追加情報を含むツール&times;ヒントが表示され、"" をクリックすると、それ以上の操作が必要なくメッセージが閉じられます。
 
- **正しくありません。** \
- ![ハイパーリンクが下線付きのテキストは、Visual Studio のアンチ パターンです。](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />ハイパーリンクが下線付きのテキストは、Visual Studio のアンチ パターンです。
+ ![説明テキストアンチ&#45;パターン&#45;正しくありません](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "複数クリックの誤用")<br />ビデオ リンク パターンが正しくありません
 
- **よし：** \
- ![スタイルが正しく、ハイパーリンク以外のテキストの表示非環境フォント。](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />スタイルが正しく、ハイパーリンク以外のテキストの表示非環境フォント。
+単純な閉じるボタン (1 回のクリック) の代わりに、ユーザーは 2 回のクリックを使用して、ビデオ リンクが表示される場所ごとに UI を閉じるだけです。
 
-#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>クリックすると、ポップアップ ダイアログでチェック ボックスの結果
- Windows Azure アプリケーションの発行 ウィザードで"すべてのロールに対してリモート デスクトップを有効にする チェック ボックスをクリックすると、すぐに、ポップアップ ダイアログで、Visual Studio のアンチ パターンが表示されます。 さらに、チェック ボックスのフィールドがいっぱいにならないチェック ボックスが選択されている後にもう 1 つの相互作用のアンチ パターンです。
+この状況の正しい設計は、Internet Explorer、Office、および Visual Studio に共通するパターンに従う方法です。
 
- ![Visual Studio のアンチ パターンは、チェック ボックスをクリックすると後に、ダイアログ ボックスこと。](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102 i_CheckboxPopup")<br />Visual Studio のアンチ パターンは、チェック ボックスをクリックすると後に、ダイアログ ボックスこと。
+ ![説明テキストアンチ&#45;パターン&#45;正しい](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "説明テキストの反パターン正しい")<br />ビデオリンクパターンを修正する
+
+### <a name="using-command-bars-for-settings"></a>設定にコマンド バーを使用する
+
+**図 A は**、コマンド以外のコマンド ボタンの下に設定を置くというアンチパターンを表しています。 このスケッチでは、選択した設定を考慮するコマンド (ブラウザーでの表示、デバッグなしで開始、ステップ インなど) のデバッグの開始以外にもコマンドがあります。
+
+![図 A: コマンド バーのアンチパターン](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "コマンドバランティパターン図A")<br />図 A: コマンド バーのアンチパターン
+
+少し良いが、まだ望ましくない、**図 B**に示すように、ツールバーにこの種類の設定を配置しています。分割ボタンのスペースが少ないため、ドロップダウンを改善できますが、どちらのデザインもツールバーを使用して実際にはコマンドではないものを宣伝しています。
+
+![図B:より良いが、まだコマンドバーのアンチパターン](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "コマンドバランティパターン図B")<br />図B:より良いが、まだコマンドバーのアンチパターン
+
+**図 C**に示す正しい方法では、設定は一連のコマンドに関連付けられています。 グローバル設定が設定されていないので、4 つのコマンドを切り替えるだけです。 これは、ツールバーのコマンドが受け入れられる唯一の状況です。
+
+![図 C: Visual Studio コマンド バー パターンの正しい使用](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "コマンドバランティパターン図C")<br />図 C: Visual Studio コマンド バー パターンの正しい使用
+
+### <a name="control-anti-patterns"></a>アンチパターンの制御
+ 一部のアンチパターンは、単にコントロールまたはコントロールのグループの不適切な使用方法または表示です。
+
+#### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>ハイパーリンクではなく、グループ ラベルとして使用される下線
+ 下線付きテキストは、ハイパーリンクにのみ使用してください。
+
+ **悪い：**\
+ ![ハイパーリンクではない下線付きのテキストは、Visual Studio のアンチパターンです。](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />ハイパーリンクではない下線付きのテキストは、Visual Studio のアンチパターンです。
+
+ **よし：**\
+ ![正しくスタイルが設定されている場合、ハイパーリンクのないテキストは環境フォントで飾られていない形で表示されます。](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />正しくスタイルが設定されている場合、ハイパーリンクのないテキストは環境フォントで飾られていない形で表示されます。
+
+#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>チェック ボックスをクリックするとポップアップ ダイアログが表示されます。
+ 「Windows Azure アプリケーションの発行」ウィザードの [すべてのロールに対してリモート デスクトップを有効にする] チェック ボックスをオンにすると、すぐにポップアップ ダイアログが表示されます。 さらに、チェック ボックス フィールドは、選択された後にチェック ボックスが塗りつぶされません。別の相互作用アンチパターン。
+
+ ![チェック ボックスをクリックした後でダイアログを表示するのは、Visual Studio のアンチパターンです。](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />チェック ボックスをクリックした後でダイアログを表示するのは、Visual Studio のアンチパターンです。
 
 ### <a name="hyperlink-anti-patterns"></a>ハイパーリンクのアンチ パターン
- 次の例には、2 つのアンチ パターンが含まれています。
+ 次の例には、2 つのアンチパターンが含まれています。
 
-1. ポインターを合わせると赤色にすると、フォア グラウンドでは、フォントのサービスから適切な共有色が使用されていないことを意味します。
+1. フォアグラウンドがホバー時に赤に変わった場合、フォント サービスの正しい共有色が使用されていません。
 
-2. 「詳細」は、概念説明トピックへのリンクの適切なテキストではありません。 ユーザーの目標は、任意の影響を理解してがについてさらに、ありません。
+2. 「詳細」は、概念トピックへのリンクに適したテキストではありません。 ユーザーの目標は、より多くを学ぶことではなく、自分の選択の影響を理解することです。
 
-   ![色のサービスを無視し、「詳細」のハイパーリンクを使用して、Visual Studio のアンチ パターンが。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />色のサービスを無視し、「詳細」のハイパーリンクを使用して、Visual Studio のアンチ パターンが。
+   ![カラー サービスを無視し、ハイパーリンクに対して "詳細を参照する" を使用する場合は、Visual Studio のアンチパターンが使用されます。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />カラー サービスを無視し、ハイパーリンクに対して "詳細を参照する" を使用する場合は、Visual Studio のアンチパターンが使用されます。
 
-**優れた解決方法:** リンクをクリックして、ユーザーを求めるは質問をもたらします。 例:
+**より良いソリューション:** ユーザーがリンクをクリックして質問をする。 次に例を示します。
 
-- Windows Azure サービスのしくみ
+- Windows Azure サービスはどのように機能しますか?
 
-- Windows Azure モバイル サービス プロジェクトを必要な場合
+- Windows Azure モバイル サービス プロジェクトが必要な場合
 
-#### <a name="using-click-here-for-links"></a>「ここをクリックしてください」リンクを使用してください。
- ハイパーリンクを自己記述型にする必要があります。 「ここをクリックして」を使用するアンチ パターンまたは任意のようなバリエーションをお勧めします。
+#### <a name="using-click-here-for-links"></a>リンクに「ここをクリック」を使用する
+ ハイパーリンクは、自己記述的にする必要があります。 「ここをクリック」または同様のバリエーションを使用するのはアンチパターンです。
 
- **正しくありません。** ここをクリックして新しいプロジェクトを作成する方法についてはします。
+ **悪い:**「新しいプロジェクトの作成方法については、ここをクリックしてください。
 
- **よし：** 「は作成方法は、新しいプロジェクトをでしょうか。」
+ **良い:**「新しいプロジェクトを作成する方法は?

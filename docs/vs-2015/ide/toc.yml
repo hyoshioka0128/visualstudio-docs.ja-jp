@@ -90,7 +90,7 @@
           href: getting-started-with-cpp-in-visual-studio.md
         - name: Visual Studio 2015 のデバッグの概要
           href: getting-started-with-debugging-in-visual-studio-2015.md
-        - name: ソリューションおよびプロジェクト
+        - name: ソリューションとプロジェクト
           href: solutions-and-projects-in-visual-studio.md
         - name: Creating Solutions and Projects
           href: creating-solutions-and-projects.md
@@ -184,7 +184,7 @@
               href: replace-in-files.md
         - name: エンコーディングと改行
           href: encodings-and-line-breaks.md
-        - name: アウトライン
+        - name: '[アウトライン]'
           href: outlining.md
         - name: リファクタリング
           href: refactoring-in-visual-studio.md
@@ -192,7 +192,7 @@
           items:
             - name: 生産性に関するヒント
               href: productivity-tips-for-visual-studio.md
-            - name: ヒントとテクニック
+            - name: ヒントとコツ
               href: tips-and-tricks-for-visual-studio.md
             - name: キーボード ショートカットの識別とカスタマイズ
               items:
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<value>
+                    - name: \<値>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -384,9 +384,9 @@
           href: setting-bookmarks-in-code.md
         - name: タスク一覧の使用
           href: using-the-task-list.md
-        - name: コード変更およびその他の履歴を検索する
+        - name: コード変更およびその他の履歴の検索
           items:
-            - name: コード変更およびその他の履歴を検索する
+            - name: コード変更およびその他の履歴の検索
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex コマンド
               href: codeindex-command.md
@@ -416,7 +416,7 @@
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Visual Studio でのデバッグ
       href: ../debugger/debugging-in-visual-studio.md
-    - name: プロファイル
+    - name: プロファイリング
       href: ../profiling/profiling-tools.md
     - name: コードの品質向上
       href: ../test/unit-test-your-code.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Visual Studio IDE の 64 ビット サポート
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio のサンプル
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: ユーザー アカウントと更新プログラム
       items:
@@ -510,25 +510,25 @@
           href: how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: ウィンドウ レイアウトをカスタマイズする
           href: customizing-window-layouts-in-visual-studio.md
-        - name: スタート ページのカスタマイズ
+        - name: カスタム スタート ページ
           href: customizing-the-start-page-for-visual-studio.md
         - name: Visual Studio の外部ツール
           href: managing-external-tools.md
         - name: 同期された設定
           href: synchronized-settings-in-visual-studio.md
-    - name: セキュリティ
+    - name: Security
       items:
-        - name: セキュリティ
+        - name: Security
           href: security-in-visual-studio.md
         - name: アプリケーションの保護
           href: securing-applications.md
         - name: セキュリティの維持
           href: maintaining-security.md
-        - name: ユーザー権限
+        - name: ユーザーのアクセス許可
           href: user-permissions-and-visual-studio.md
         - name: セキュリティ参考文献
           href: security-bibliography.md
-    - name: Visual Studio のサンプル
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Microsoft ヘルプ ビューアー
       items:
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Visual Studio エディターでの他の言語のサポートの追加
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: 関連項目
+    - name: リファレンス
       items:
         - name: 一般的なユーザー インターフェイス要素 (Visual Studio)
           items:
@@ -628,7 +628,7 @@
               href: reference/choose-toolbox-items-wpf-components.md
             - name: コード スニペット ピッカー
               href: reference/code-snippet-picker.md
-            - name: コマンド ウィンドウ
+            - name: '[コマンド] ウィンドウ'
               href: reference/command-window.md
             - name: '[変換] ダイアログ ボックス'
               href: reference/convert-dialog-box.md
@@ -650,7 +650,7 @@
                   href: reference/environment-options-dialog-box.md
                 - name: '[全般] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/general-environment-options-dialog-box.md
-                - name: '[自動バックアップ]\ ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[自動バックアップ] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/autorecover-environment-options-dialog-box.md
                 - name: '[ドキュメント] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/documents-environment-options-dialog-box.md
@@ -660,7 +660,7 @@
                   href: reference/find-and-replace-environment-options-dialog-box.md
                 - name: '[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/fonts-and-colors-environment-options-dialog-box.md
-                - name: '[設定のインポートとエクスポート] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[設定のインポートとエクスポート] \([オプション] ダイアログ ボックス - [環境])'
                   href: reference/import-and-export-settings-environment-options-dialog-box.md
                 - name: '[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/international-settings-environment-options-dialog-box.md
@@ -674,17 +674,17 @@
                   href: reference/startup-environment-options-dialog-box.md
                 - name: '[同期された設定]\([オプション] ダイアログ ボックス - [環境])'
                   href: reference/synchronized-settings-environment-options-dialog-box.md
-                - name: '[タブとウィンドウ]\ ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[タブとウィンドウ] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
                 - name: '[タスク一覧] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/task-list-environment-options-dialog-box.md
-                - name: '[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[Web ブラウザー]\([オプション] ダイアログ ボックス - [環境])'
                   href: reference/web-browser-environment-options-dialog-box.md
                 - name: '[環境] ノード プロパティ ([オプション] ページ)'
                   href: reference/options-page-environment-node-properties.md
-            - name: '[テキスト エディター] ([オプション] ダイアログ ボックス)'
+            - name: '[テキスト エディター]\([オプション] ダイアログ ボックス)'
               items:
-                - name: '[テキスト エディター] ([オプション] ダイアログ ボックス)'
+                - name: '[テキスト エディター]\([オプション] ダイアログ ボックス)'
                   href: reference/text-editor-options-dialog-box.md
                 - name: エディターのフォントと色を変更する
                   href: reference/how-to-change-fonts-and-colors-in-the-editor.md
@@ -730,7 +730,7 @@
                   href: reference/options-page-text-editor-node-properties.md
             - name: '[デバッグ] ノード プロパティ ([オプション] ページ)'
               href: reference/options-page-debugging-node-properties.md
-            - name: '[出力] ウィンドウ'
+            - name: '[出力ウィンドウ]'
               href: reference/output-window.md
             - name: プロジェクトのプロパティのリファレンス
               items:
@@ -794,7 +794,7 @@
                   href: reference/signing-page-project-designer.md
                 - name: '[Visual Basic の既定値] ([オプション] ダイアログ ボックス - [プロジェクト])'
                   href: reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: '[VC++ プロジェクトの設定] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
+                - name: '[VC++ プロジェクトの設定][オプション] ダイアログ ボックス - [プロジェクトおよびソリューション]'
                   href: reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
             - name: プロジェクト ファイルとソリューション ファイルの種類
               href: reference/project-and-solution-file-types.md
@@ -810,9 +810,9 @@
               href: reference/property-pages-javascript.md
             - name: '[プロパティ] ウィンドウ'
               href: reference/properties-window.md
-            - name: ツールボックス
+            - name: '[ツールボックス]'
               items:
-                - name: ツールボックス
+                - name: '[ツールボックス]'
                   href: reference/toolbox.md
                 - name: 'ツールボックス、[コンポーネント] タブ'
                   href: reference/toolbox-components-tab.md
@@ -894,7 +894,7 @@
               href: reference/find-command.md
             - name: FindinFiles コマンド
               href: reference/find-in-files-command.md
-            - name: GoTo コマンド
+            - name: '[ジャンプ] コマンド'
               href: reference/go-to-command.md
             - name: '[設定のインポートとエクスポート] コマンド'
               href: reference/import-and-export-settings-command.md
@@ -958,9 +958,9 @@
           href: ../msbuild/msbuild.md
         - name: IDE に関するエラーのトラブルシューティング情報
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-        - name: 障碍があるユーザーのための機能
+        - name: 障害がある方のためのユーザー補助機能
           items:
-            - name: 障碍があるユーザーのための機能
+            - name: 障害がある方のためのユーザー補助機能
               href: reference/accessibility-for-people-with-disabilities.md
             - name: Visual Studio のユーザー補助機能
               items:

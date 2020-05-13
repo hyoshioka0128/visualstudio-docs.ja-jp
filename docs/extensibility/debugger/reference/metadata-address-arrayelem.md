@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
+title: METADATA_ADDRESS_ARRAYELEM |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_ARRAYELEM structure
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0b5e24447c1f55242af6a6b549c5317f37818b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67e39eb8b03dd6f75ac39155bd744e03084beb0b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339167"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714546"
 ---
-# <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+# <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
 この構造体は、配列内の配列要素を表します。
 
@@ -45,22 +45,22 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>メンバー
 
 `tokMethod`\
-ID の配列のこの要素はの一部です。
+この要素の一部である配列の ID。
 
-[C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
+[C++]`_mdToken`は`typedef`32 ビット`int`用です。
 
 `dwIndex`\
-この要素の配列内のインデックス。
+配列内のこの要素のインデックス。
 
 ## <a name="remarks"></a>Remarks
-この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_ARRAYELEM`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。
+構造体`dwKind`のフィールドが[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体の値) に`ADDRESS_KIND_ARRAYELEM`設定されている`DEBUG_ADDRESS_UNION`場合、この構造体は[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の共用体の一部です。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 

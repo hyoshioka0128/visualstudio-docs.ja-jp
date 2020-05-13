@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE |Microsoft Docs
+title: DOCCONTEXT_COMPARE |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318141"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737231"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-2 つのドキュメント コンテキストを比較するための条件を指定します。
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
+2 つのドキュメント コンテキストを比較するための基準を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,29 +48,29 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>フィールド
 `DOCCONTEXT_EQUAL`\
-ターゲット ドキュメントのコンテキストに相当するリスト内の最初のドキュメント コンテキストを検索します。
+リスト内の、ターゲットドキュメントコンテキストと等しい最初のドキュメントコンテキストを検索します。
 
 `DOCCONTEXT_LESS_THAN`\
-ターゲット ドキュメントのコンテキストよりも小さいリスト内の最初のドキュメント コンテキストを検索します。
+リスト内の、対象のドキュメント コンテキストよりも小さい最初のドキュメント コンテキストを検索します。
 
 `DOCCONTEXT_GREATER_THAN`\
-ターゲット ドキュメントのコンテキストよりも大きいリスト内の最初のドキュメント コンテキストを検索します。
+ターゲットドキュメントのコンテキストよりも大きいリスト内の最初のドキュメントコンテキストを検索します。
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-ターゲット ドキュメント コンテキストと同じドキュメント内にある一覧で最初のドキュメント コンテキストを検索します。
+ターゲットドキュメントコンテキストと同じドキュメント内にあるリスト内の最初のドキュメントコンテキストを検索します。
 
 ## <a name="remarks"></a>Remarks
-引数として渡される、[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)メソッド。
+[引数として引数](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)として渡されます、 Compare メソッド。
 
-これらの値は、リストの最初のドキュメント コンテキストを検索するための比較条件の指定に使用されます。 ドキュメントのコンテキストがを介してに対して自身を比較するドキュメント コンテキストの一覧を指定された、`IDebugDocumentContext2::Compare`メソッド。 比較演算子の一覧で最初のドキュメント コンテキスト`true`が返されます。
+これらの値は、リスト内の最初のドキュメント コンテキストを検索するための比較基準を指定するために使用されます。 ドキュメントコンテキストには、メソッドを通じてそれ自体を比較するドキュメントコンテキストのリスト`IDebugDocumentContext2::Compare`が与えられます。 次に、比較演算子が返されるリスト内の最初の`true`ドキュメント コンテキスト。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

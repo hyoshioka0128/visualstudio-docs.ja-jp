@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71693007"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio カスタマー エクスペリエンス向上プログラム
@@ -35,7 +35,7 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 
    ![[Visual Studio エクスペリエンス向上プログラム] ダイアログ](media/experience-improvement-program.png)
 
-### <a name="registry-settings"></a>レジストリの設定
+### <a name="registry-settings"></a>レジストリ設定
 
 [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017) をインストールする場合は、レジストリを更新して VSCEIP を構成する必要があります。 企業のお客様の場合、レジストリ ベースのポリシーを設定することにより、VSCEIP を有効または無効にするグループ ポリシーを構成できます。
 
@@ -65,14 +65,14 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 - **1**: オプトイン (VSCEIP をオンにする)
 
 > [!CAUTION]
-> レジストリを間違って編集すると、システムが壊れる可能性があります。 レジストリを変更する前に、コンピューターにある重要なデータをバックアップしてください。 手動での変更の適用後に問題が発生した場合は、 **[前回正常起動時の構成]** スタートアップ オプションを使うこともできます。
+> レジストリを間違って編集すると、システムが壊れる可能性があります。 レジストリを変更する前に、コンピューター上のすべての重要なデータをバックアップしておくことをお勧めします。 手動での変更の適用後に問題が発生した場合は、 **[前回正常起動時の構成]** スタートアップ オプションを使うこともできます。
 
 VSCEIP によって収集、処理、または送信される情報については、「[Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio によって収集される診断情報](diagnostic-data-collection.md)
 * [Visual Studio フィードバック オプション](../ide/feedback-options.md)
 * [Visual Studio 2017 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)
-* [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)
+* [Microsoft プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)

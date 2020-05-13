@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach |Microsoft Docs
+title: IDebugプロセス2::Dエタッハ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Detach
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3948ecce15b9b2b2e8b3bf974ecc2277d9fa0360
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353197"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724124"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-すべてのプロセスでアプリケーションをデタッチすることにより、このプロセスからデバッガーをデタッチします。
+プロセス内のすべてのプログラムをデタッチすることによって、このプロセスからデバッガーをデタッチします。
 
 ## <a name="syntax"></a>構文
 
@@ -38,10 +38,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- すべてのプログラムおよびプロセスは、実行を継続が、デバッグ セッションの一部ではなくなりました。 デタッチ後操作は、このプロセス (およびそのプログラム) イベントが送信される、これ以上の完全なデバッグです。
+ すべてのプログラムとプロセスは実行を継続しますが、デバッグ セッションの一部ではなくなります。 デタッチ操作が完了すると、このプロセス (およびそのプログラム) のデバッグ イベントは送信されません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

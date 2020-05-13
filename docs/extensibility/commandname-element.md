@@ -1,25 +1,25 @@
 ---
-title: CommandName 要素 |Microsoft Docs
+title: コマンド名要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b792e7bbe1efaa1158cc517cd96494049e2b9e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337256"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739752"
 ---
-# <a name="commandname-element"></a>CommandName 要素
-`CommandName`要素がキーボードのカテゴリに表示されるテキストを指定します、**オプション**ダイアログ ボックスで、および、**コマンド**の一覧で、**カスタマイズ**ダイアログボックス。
+# <a name="commandname-element"></a>コマンド名要素
+この`CommandName`要素は、[**オプション]** ダイアログ ボックスのキーボード カテゴリと、[**ユーザー設定**] ダイアログ ボックスの **[コマンド**] ボックスに表示されるテキストを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,16 +31,16 @@ ms.locfileid: "66337256"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[文字列の要素](../extensibility/strings-element.md)|など、テキスト要素をグループ化`ButtonText`と`CommandName`します。|
+|[文字列要素](../extensibility/strings-element.md)|や などの`ButtonText`テキスト要素を`CommandName`グループ化します。|
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

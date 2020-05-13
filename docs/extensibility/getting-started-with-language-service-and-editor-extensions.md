@@ -1,90 +1,90 @@
 ---
-title: 言語サービスとエディターの拡張機能の概要 |Microsoft Docs
+title: 言語サービスおよびエディター拡張機能の概要 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bd39ab8abde2fdbe337073e7cfaa7ea457b022f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7894efc477e0c406cf8e85f4d3d31df4f2ef97c5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342444"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711311"
 ---
-# <a name="get-started-with-language-service-and-editor-extensions"></a>言語サービスとエディターの拡張機能を概要します。
-エディター拡張機能を使用して、独自のプログラミング言語または任意のコンテンツ タイプをアウトライン表示、かっこの照合、IntelliSense、および電球などの言語サービスの機能を追加することができます。 テキストの色指定、余白、表示要素、および他のビジュアル要素など、Visual Studio エディターの動作と外観をカスタマイズすることもできます。 また、独自の種類のコンテンツを定義して、コンテンツが表示されるテキスト ビューの動作と外観を指定できます。
+# <a name="get-started-with-language-service-and-editor-extensions"></a>言語サービスとエディター拡張機能の概要
+エディター拡張機能を使用して、アウトライン、かっこの一致、IntelliSense、電球などの言語サービス機能を、独自のプログラミング言語または任意のコンテンツ タイプに追加できます。 また、テキストの色分け、余白、表示要素、その他のビジュアル要素など、Visual Studio エディターの外観と動作をカスタマイズすることもできます。 また、独自のタイプのコンテンツを定義したり、コンテンツが表示されるテキストビューの外観と動作を指定したりすることもできます。
 
- エディターの拡張機能の記述を開始するするには、Visual Studio SDK の一部としてインストールされているエディターのプロジェクト テンプレートを使用します。 Visual Studio SDK は、ダウンロード可能な一連の Vspackage を使用するか、Managed Extensibility Framework (MEF) を使用して、Visual Studio 拡張機能を開発するより簡単にするツールです。
-
-> [!NOTE]
-> Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
-
- 独自のエディター拡張機能を記述する前に、次の概念とテクノロジについて学習することをお勧めします。
-
-## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) とエディターの拡張機能
- Visual Studio エディターのユーザー インターフェイス (UI) は、Windows Presentation Foundation (WPF) を使用して実装されます。 WPF では、豊富なビジュアル エクスペリエンスとビジネス ロジックからコードの視覚的な側面を分離する一貫したプログラミング モデルを提供します。 エディター拡張機能を作成するときに、多くの WPF 要素と機能を使用できます。 詳細については、次を参照してください。 [Windows Presentation Foundation](/dotnet/framework/wpf/index)します。
-
-## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) とエディターの拡張機能
- Visual Studio エディターでは、そのコンポーネントおよび拡張機能を管理するのに Managed Extensibility Framework (MEF) を使用します。 MEF では、開発者の詳細について Visual Studio などのホスト アプリケーション用の拡張機能を簡単に作成することもできます。 このフレームワークは、MEF コントラクトに従って拡張機能を定義し、MEF コンポーネントの一部としてエクスポートします。 ホスト アプリケーションは、これらを検索するには、登録、それらが正しいコンテキストに適用されていることを確認して、コンポーネント部分を管理します。
+ エディター拡張機能の作成を開始するには、Visual Studio SDK の一部としてインストールされているエディター プロジェクト テンプレートを使用します。 Visual Studio SDK は、VSPackage を使用するか、マネージ機能拡張フレームワーク (MEF) を使用して、Visual Studio 拡張機能を簡単に開発できるようにするツールのダウンロード可能なセットです。
 
 > [!NOTE]
-> エディターで、MEF の詳細については、次を参照してください。[エディターでの Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)します。
+> Visual Studio SDK の詳細については[、「Visual Studio SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 
-## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio エディターの拡張ポイントと拡張機能
- エディターの拡張ポイントは、MEF コンポーネント パーツをカスタマイズして拡張することができます。 場合によっては、拡張機能ポイントを拡張するインターフェイスを実装し、適切なメタデータと共にエクスポートすること。 それ以外の場合だけ拡張機能を宣言し、特定の型としてエクスポートします。
+ 独自のエディター拡張機能を作成する前に、次の概念とテクノロジについて学習することをお勧めします。
 
- 基本的な種類のエディター拡張機能の一部を次に示します。
+## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows プレゼンテーション ファウンデーション (WPF) およびエディター拡張機能
+ Visual Studio エディターのユーザー インターフェイス (UI) は、Windows プレゼンテーション ファウンデーション (WPF) を使用して実装されます。 WPF は、豊富なビジュアル エクスペリエンスと、コードの視覚的側面とビジネス ロジックを分離する一貫したプログラミング モデルを提供します。 エディター拡張機能を作成するときに、多くの WPF 要素と機能を使用できます。 詳細については、「 [Windows プレゼンテーション ファウンデーション](/dotnet/framework/wpf/index)」を参照してください。
+
+## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>マネージ機能拡張フレームワーク (MEF) およびエディター拡張機能
+ Visual Studio エディターは、マネージ機能拡張フレームワーク (MEF) を使用して、そのコンポーネントと拡張機能を管理します。 MEF を使用すると、開発者は Visual Studio などのホスト アプリケーションの拡張機能をより簡単に作成できます。 このフレームワークでは、MEF コントラクトに従って拡張を定義し、MEF コンポーネントパーツとしてエクスポートします。 ホスト アプリケーションは、コンポーネント パーツを検索して登録し、正しいコンテキストに適用されるようにしてコンポーネントパーツを管理します。
+
+> [!NOTE]
+> エディターでの MEF の詳細については、エディターの[マネージ機能拡張フレームワークを](../extensibility/managed-extensibility-framework-in-the-editor.md)参照してください。
+
+## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio エディターの拡張機能ポイントと拡張機能
+ エディター拡張ポイントは、カスタマイズおよび拡張できる MEF コンポーネントパーツです。 場合によっては、インターフェイスを実装し、適切なメタデータと共にエクスポートすることによって、拡張ポイントを拡張します。 他のケースでは、単に拡張機能を宣言し、特定の型としてエクスポートします。
+
+ 以下は、エディタ拡張機能の基本的な種類の一部です。
 
 - 余白とスクロール バー
 
 - Tags
 
-- 修飾
+- 装飾
 
 - オプション
 
 - IntelliSense
 
-  エディターの拡張ポイントの詳細については、次を参照してください。[言語サービスとエディターの拡張機能ポイント](../extensibility/language-service-and-editor-extension-points.md)します。
+  エディター拡張ポイントの詳細については、[言語サービスとエディター拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)を参照してください。
 
-## <a name="deploying-editor-extensions"></a>エディターの拡張機能の配置
- Visual Studio で、という名前のメタデータ ファイルを追加することでエディター拡張機能を展開する*source.extension.vsixmanifest*をソリューションに、ソリューションのビルドと呼ばれるフォルダーにバイナリ ファイルとマニフェストのコピーを追加Visual studio。 マニフェスト ファイルは、拡張機能 (たとえば、名前、作成者、バージョン、およびコンテンツの種類など) に関する基本的な情報を定義します。 VSIX のマニフェスト ファイルと拡張機能をデプロイする方法の詳細については、次を参照してください。[出荷 Visual Studio 拡張機能](../extensibility/shipping-visual-studio-extensions.md)します。
+## <a name="deploying-editor-extensions"></a>エディター拡張機能の展開
+ Visual Studio では、ソリューションに*source.extension.vsixmanifest*という名前のメタデータ ファイルを追加し、ソリューションをビルドし、Visual Studio に認識されているフォルダーにバイナリ ファイルとマニフェストのコピーを追加することで、エディター拡張機能を配置します。 マニフェスト ファイルは、拡張機能に関する基本的な情報 (名前、作成者、バージョン、コンテンツの種類など) を定義します。 VSIX マニフェスト ファイルの詳細と拡張機能を配置する方法については、「 [Visual Studio 拡張機能の出荷](../extensibility/shipping-visual-studio-extensions.md)」を参照してください。
 
- コンピューターで拡張機能をインストールするときに、Visual Studio に認識されているフォルダーのサブフォルダーにバイナリと、マニフェストを含めます。
+ コンピューターに拡張機能をインストールする場合は、Visual Studio に認識されているフォルダーのサブフォルダーにバイナリとマニフェストを含めます。
 
 > [!WARNING]
-> Visual Studio に含まれているエディター拡張機能テンプレートのいずれかを使用する場合は、マニフェストと配置場所の詳細について心配する必要はありません。 テンプレートには、登録して、拡張機能をデプロイするために必要なすべてのものが含まれます。
+> Visual Studio に含まれているエディター拡張機能テンプレートのいずれかを使用する場合、マニフェストと配置場所の詳細について心配する必要はありません。 テンプレートには、拡張機能の登録と展開に必要なすべてが含まれています。
 
-## <a name="run-extensions-in-the-experimental-instance"></a>実験用インスタンスで拡張機能を実行します。
- (Windows Vista および Windows 7) の次の実験的なフォルダーに展開し、拡張機能を開発する際に、Visual Studio の作業バージョンを隔離できます。
+## <a name="run-extensions-in-the-experimental-instance"></a>実験用インスタンスでの拡張機能の実行
+ 拡張機能を開発中に、Visual Studio の作業バージョンを保護するには、次の実験用フォルダー (Windows Vista および Windows 7) に展開します。
 
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*
+ *{%ローカルアプリケーションデータ%}\VisualStudio\10.0Exp\拡張機能\\{会社\\} {拡張ID}*
 
- 場所 *%localappdata%* 、ログオン ユーザーの名前を指定*会社*、拡張機能を所有している会社の名前を指定し、 *ExtensionID*拡張機能の ID です。
+ *%LOCALAPPDATA%* はログオン ユーザーの名前、*会社*は拡張機能を所有する会社の名前、*拡張 ID*は拡張機能の ID です。
 
- 実験的な場所に拡張機能を展開するときに、デバッグ モードで実行されます。 Visual Studio の 2 番目のインスタンスが開始され、名前は**Microsoft Visual Studio の実験用インスタンス**します。
+ 実験的な場所に拡張機能を配置すると、デバッグ モードで実行されます。 Visual Studio の 2 番目のインスタンスが起動し **、"Microsoft Visual Studio - 実験用インスタンス" という名前が付けられています**。
 
-## <a name="manage-extensions"></a>拡張機能を管理します。
- Visual Studio の拡張機能が記載されて**拡張機能と更新**(上、**ツール**メニュー)。 実験用インスタンスで拡張機能をテストする場合に表示されます**拡張機能と更新**、実験用インスタンスでは開発インスタンスで記載されていません。
+## <a name="manage-extensions"></a>拡張機能の管理
+ Visual Studio の拡張機能は、[**ツール**] メニューの **[拡張機能と更新プログラム**] に表示されます。 実験用インスタンスで拡張をテストする場合、そのエクステンションは実験用インスタンスの **「拡張および更新」** にリストされますが、開発インスタンスにはリストされません。
 
- 詳細については、次を参照してください。[を検索し、Visual Studio 拡張機能を使用して、](../ide/finding-and-using-visual-studio-extensions.md)します。
+ 詳細については、「 [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。
 
-## <a name="use-templates-to-create-editor-extensions"></a>テンプレートを使用して、エディターの拡張機能を作成するには
- エディター テンプレートを使用すると、分類子、表示要素、および余白をカスタマイズする MEF 拡張機能を作成します。 C# および Visual Basic の両方のプロジェクト テンプレートがあります。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
+## <a name="use-templates-to-create-editor-extensions"></a>テンプレートを使用してエディター拡張機能を作成する
+ エディター テンプレートを使用して、分類子、表示要素、および余白をカスタマイズする MEF 拡張機能を作成できます。 C# プロジェクトと Visual Basic プロジェクトの両方のテンプレートがあります。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)」を参照してください。
 
- 拡張機能を作成するのに VSIX プロジェクト テンプレートを使用することもできます。 このテンプレートは、任意の種類の拡張機能を展開し、含めるに必要な要素のみを提供します、 *source.extension.vsixmanifest*ファイル、必要なアセンブリ参照、およびビルド タスクを含むプロジェクト ファイル。拡張機能をデプロイすることができます。 詳細については、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。
+ また、VSIX プロジェクト テンプレートを使用して拡張機能を作成することもできます。 このテンプレートは、あらゆる種類の拡張機能を配置するために必要な要素のみを提供し *、source.extension.vsixmanifest*ファイル、必要なアセンブリ参照、および拡張機能を展開するためのビルド タスクを含むプロジェクト ファイルを含めます。 詳細については[、「VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)」を参照してください。
 
- 作成することもエディター MEF コンポーネント Visual Studio パッケージの拡張機能から。 詳細については、次のチュートリアルを参照してください。
+ また、エディター MEF コンポーネントを Visual Studio パッケージ拡張機能から作成することもできます。 詳細については、次のチュートリアルを参照してください。
 
-- [チュートリアル: エディター拡張機能でシェル コマンドの使用](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [チュートリアル: エディター拡張機能でのシェル コマンドの使用](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
-- [チュートリアル: エディター拡張機能でショートカット キーの使用](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [チュートリアル: エディター拡張機能でショートカット キーを使用する](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>関連項目
 - [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)

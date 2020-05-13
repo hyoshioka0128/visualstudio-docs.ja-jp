@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569856"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
@@ -34,7 +34,7 @@ devenv /DoNotLoadProjects SolutionName
 
 *SolutionName*
 
-必須です。 開くソリューションの完全パスと名前。
+必須。 開くソリューションの完全パスと名前。
 
 ## <a name="example"></a>例
 
@@ -44,7 +44,7 @@ devenv /DoNotLoadProjects SolutionName
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のフィルター処理済みソリューション](../filtered-solutions.md)
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

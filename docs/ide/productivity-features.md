@@ -2,17 +2,17 @@
 title: 生産性に関するヒント
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 620ad93c03e1a1b260ee14cb27093403f27648d7
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596984"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544303"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 
@@ -34,9 +34,9 @@ ms.locfileid: "75596984"
 
 - **コード スニペットを使用する**。 組み込みのスニペットを使用するか、独自のスニペットを作成できます。
 
-     スニペットを挿入するには、メニュー バーで **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** の順に選択するか、またはファイルのショートカット メニューを開き、 **[スニペット]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** を選択します。 詳細については、「[Code Snippets](../ide/code-snippets.md)」を参照してください。
+     スニペットを挿入するには、メニュー バーで **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** の順に選択するか、またはファイルのショートカット メニューを開き、 **[スニペット]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** を選択します。 詳細については、「 [Code Snippets](../ide/code-snippets.md)」を参照してください。
 
-- **コード エラーをインラインで修正する**。 クイック アクションを使うと、コードのリファクタリング、生成、その他の変更を、1 つの操作で簡単に行うことができます。 これらのアクションは、ねじ回し ![ねじ回しアイコン](media/light-bulb-icon.png) アイコンまたは電球 ![電球アイコン](media/screwdriver-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Alt**+**Enter** キーまたは **Ctrl**+ **.** キーを押すことで 適用できます。 詳細については、「[クイック アクション](quick-actions.md)」を参照してください。
+- **コード エラーをインラインで修正する**。 クイック アクションを使うと、コードのリファクタリング、生成、その他の変更を、1 つの操作で簡単に行うことができます。 これらのアクションは、ねじ回し ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンまたは電球 ![電球アイコン](media/light-bulb-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Alt**+**Enter** キーまたは **Ctrl**+ **.** キーを押すことで 適用できます。 詳細については、「[クイック アクション](quick-actions.md)」を参照してください。
 
 - **コード要素の定義を表示および編集する**。 メンバー、変数、ローカルなどのコード要素が定義されているモジュールをすばやく表示および編集できます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "75596984"
 
 デバッグには時間がかかる場合がありますが、次のヒントはその処理時間を短縮するのに役立ちます。
 
-- **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、 **[ブラウザーの選択]** ダイアログ ボックスを開かなくても、[Page Inspector (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
+- **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、[[ブラウザーの選択]](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) ダイアログ ボックスを開かなくても、**Page Inspector (Visual Studio)** など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
 
     ![Web ブラウザーのデバッグ オプションの選択](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "75596984"
 
      データヒントを追加するには、デバッガーが中断モードである必要があります。 変数にカーソルを移動し、表示されたデータヒントのピン ボタンを選択します。 デバッグが停止すると、ソース ファイル内の変数を含むコード行の横に青いピン アイコンが表示されます。 青いピンをポイントすると、最新のデバッグ セッションでの変数の値が表示されます。
 
-- **[イミディエイト]** ウィンドウをクリアする。 デザイン時に `>cls` または `>Edit.ClearAll` を入力すると、[[イミディエイト ウィンドウ]](../ide/reference/immediate-window.md) の内容を消去できます。
+- **[イミディエイト]** ウィンドウをクリアする。 デザイン時に [ または ](../ide/reference/immediate-window.md) を入力すると、`>cls`[イミディエイト ウィンドウ]`>Edit.ClearAll` の内容を消去できます。
 
      その他のコマンドの詳細については、[Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)に関するページを参照してください。
 
@@ -138,12 +138,12 @@ ms.locfileid: "75596984"
 
    また、**ソリューション エクスプローラー**のインスタンスをもう 1 つ作成し、それを別のモニターに移動すると、ファイルをより簡単に管理できます。 **ソリューション エクスプローラー**のインスタンスをもう 1 つ作成するには、**ソリューション エクスプローラー**のショートカット メニューを開き、 **[新しいソリューション エクスプローラー ビュー]** を選択します。
 
-- **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、[フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」と「[How to: Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」(方法: エディターのフォントと色を変更する) を参照してください。
+- **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、「[方法: Visual Studio で使用するフォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」と「[方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のヒントとテクニックに関するブログ投稿](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [方法: メニューおよびツール バーをカスタマイズする](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [チュートリアル: シンプルなアプリケーションの作成](../get-started/csharp/tutorial-wpf.md)
+- [チュートリアル: 簡単なアプリケーションの作成](../get-started/csharp/tutorial-wpf.md)
 - [アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)

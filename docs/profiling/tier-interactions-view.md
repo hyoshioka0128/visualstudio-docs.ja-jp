@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778142"
 ---
 # <a name="tier-interactions-view"></a>階層相互作用のビュー
@@ -37,11 +37,11 @@ ms.locfileid: "74778142"
 
 ## <a name="master-pane"></a>マスター ウィンドウ
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
 |**Name**|- 最上位の行の場合は、プロファイリングされたプロセスまたは Web ページの名前。<br />- データベース接続の行の場合は、データベースをホストするサーバーの名前。|
 |**データベース**|データベースの名前 (データベース接続の行の場合のみ)。|
-|**カウント**|プロセス、Web ページ、またはデータベース接続によって生成された要求の合計数。|
+|**Count**|プロセス、Web ページ、またはデータベース接続によって生成された要求の合計数。|
 |**経過時間の合計**|プロセス、Web ページ、またはデータベース接続からのいずれか 1 つの要求の実行に費やされた時間の合計。|
 |**最大経過時間**|プロセス、Web ページ、またはデータベース接続からのいずれか 1 つの要求の実行に費やされた時間の最大値。|
 |**最小経過時間**|プロセス、Web ページ、またはデータベース接続からのいずれか 1 つの要求の実行に費やされた時間の最小値。|
@@ -49,7 +49,7 @@ ms.locfileid: "74778142"
 
 ## <a name="database-connection-details-pane"></a>データベース接続の詳細ウィンドウ
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
 |**コマンド テキスト**|要求の SQL クエリ。|
 |**クエリ数**|クエリが実行された回数。|

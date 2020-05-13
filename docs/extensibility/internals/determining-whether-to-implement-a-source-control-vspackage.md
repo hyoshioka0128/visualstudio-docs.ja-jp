@@ -1,40 +1,40 @@
 ---
-title: ソース管理 VSPackage を実装するかどうかを決定する |Microsoft Docs
+title: ソース管理 VSPackage を実装するかどうかを決定する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba0ac240c8b8a93b6afbf1ec7dd580090ee54fd9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8707f3c1ced1cc2df9d3ae77280fc8779874a837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351607"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708722"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>ソース管理 VSPackage を実装するかどうかを決定します。
-このセクションでは、適切な統合パスの選択について大まかなガイドラインをソリューションと、ソース管理を拡張するためソース管理プラグインとソース管理 Vspackage の選択を詳しく説明します。
+このセクションでは、ソース管理ソリューションを拡張するためのソース管理プラグインとソース管理 VSPackages の選択肢について詳しく説明し、適切な統合パスの選択に関する広範なガイドラインを示します。
 
-## <a name="small-source-control-solution-with-limited-resources"></a>限られたリソースで小さなソース制御ソリューション
- リソースが限られているし、ソース管理パッケージの作成のオーバーヘッドに伴う負担することはできません、ソース管理プラグイン API ベースのプラグインを作成できます。これにより、ソース管理のパッケージと並行して動作して、ソース管理プラグインとオンデマンドのパッケージ間で切り替えることができます。 詳細については、次を参照してください。[登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)します。
+## <a name="small-source-control-solution-with-limited-resources"></a>リソースが限られた小規模なソース管理ソリューション
+ リソースが限られており、ソース管理パッケージを作成するオーバーヘッドを負担できない場合は、ソース管理プラグイン API ベースのプラグインを作成できます。 詳細については、[登録と選択を](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)参照してください。
 
-## <a name="large-source-control-solution-with-a-rich-feature-set"></a>豊富な機能セットでの大規模なソース管理ソリューション
- ソース管理プラグイン API を使用して適切にキャプチャされていないソースの豊富なコントロール モデルを提供するソース管理ソリューションを実装する場合は、統合パスとして、ソース管理パッケージを検討できます。 これは適用されます置換ではなく、ソース コントロール アダプター パッケージ (これはソース管理プラグインと通信し、基本ソース コントロールの UI を提供します) 場合に特にを独自ソース コントロールのイベントをカスタムの方法で処理できるようにします。 満足のいくソース UI を制御およびでは、そのエクスペリエンスを維持する必要があれば[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、ソース管理パッケージのオプションを使用して、それを実行できます。 ソース管理パッケージがジェネリックでないし、のみで使用するために設計されていますが[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>豊富な機能セットを備えた大規模なソース管理ソリューション
+ ソース管理プラグイン API を使用して適切にキャプチャされていない、豊富なソース管理モデルを提供するソース管理ソリューションを実装する場合は、ソース管理パッケージを統合パスと見なすことができます。 これは、ソース管理アダプター パッケージ (ソース管理プラグインと通信し、基本的なソース管理 UI を提供する) を独自の方法で処理できるように、独自のソース管理アダプター パッケージを置き換える場合に特に当てはまります。 既に満足のいくソース管理 UI を使用していて、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]でのそのエクスペリエンスを保持する場合は、ソース管理パッケージ オプションを使用して、その操作を行うことができます。 ソース管理パッケージは汎用的なものではなく、IDE で[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用するためだけに設計されています。
 
- 柔軟性とソース制御ロジックと UI の高度な制御を提供するソース管理ソリューションを実装する場合は、ソース管理パッケージ統合ルートしたい場合があります。 次の操作を行うことができます。
+ ソース管理ロジックと UI を柔軟かつ詳細に制御できるソース管理ソリューションを実装する場合は、ソース管理パッケージの統合ルートを使用する方がよい場合があります。 次のようにすることができます。
 
-1. 独自のソース管理 VSPackage の登録 (を参照してください[登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。
+1. 独自のソース管理 VSPackage を登録します ([登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)を参照)。
 
-2. 既定のソース管理 UI に、カスタム UI を置き換えます (を参照してください[カスタム ユーザー インターフェイス](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。
+2. 既定のソース管理 UI をカスタム UI に置き換えます (「[カスタム ユーザー インターフェイス](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)」を参照)。
 
-3. 使用して、ソリューション エクスプ ローラーのグリフのイベントを処理するグリフの指定 (を参照してください[グリフ コントロール](../../extensibility/internals/glyph-control-source-control-vspackage.md))。
+3. 使用するグリフを指定し、ソリューション エクスプローラのグリフ イベントを処理します[(Glyph コントロール](../../extensibility/internals/glyph-control-source-control-vspackage.md)を参照)。
 
-4. クエリを編集し、クエリの保存のイベントを処理 (を参照してください[クエリ編集のクエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。
+4. クエリ編集イベントおよびクエリ保存イベントの処理 (「[クエリ編集クエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)」を参照)。
 
 ## <a name="see-also"></a>関連項目
-- [ソース管理プラグインを作成します。](../../extensibility/internals/creating-a-source-control-plug-in.md)
+- [ソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)

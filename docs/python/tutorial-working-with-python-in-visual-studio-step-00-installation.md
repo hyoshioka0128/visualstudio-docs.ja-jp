@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62431297"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio での Python サポートのインストール
@@ -35,16 +35,16 @@ ms.locfileid: "62431297"
 
     ![Visual Studio インストーラーの [Python 開発] ワークロード](media/installation-python-workload.png)
 
-1. Python のサポートをすばやくテストするには、Visual Studio を起動し、**Alt** + **I** キーを押して **Python Interactive** ウィンドウを開き、`2+2` を入力します。 **4** という出力が表示されない場合は、手順を再確認してください。
+1. Python のサポートをすばやくテストするには、Visual Studio を起動し、**Alt**+**I** キーを押して **Python Interactive** ウィンドウを開き、`2+2` を入力します。 **4** という出力が表示されない場合は、手順を再確認してください。
 
     ![対話型ウィンドウでの Python のテスト](media/installation-interactive-test.png)
 
 ## <a name="next-step"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [手順 1:Python プロジェクトの作成](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [手順 1: Python プロジェクトの作成](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [既存の Python インタープリターを手動で識別する](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Visual Studio 2015 以前の Python サポートをインストールする](installing-python-support-in-visual-studio.md)

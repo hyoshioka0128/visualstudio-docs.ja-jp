@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 有効に場所の参照ボタン要素マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be2f67d08fcac39d26f9a27f76ad8aff967440b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334464"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711986"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 要素 (Visual Studio テンプレート)
-指定するかどうか、**参照**ボタンが表示されます、**新しいプロジェクト**ダイアログ ボックスで新しいプロジェクトが保存されている既定のディレクトリを簡単に変更できるようにします。
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>有効に場所の参照ボタン要素
+[**新しいプロジェクト**] ダイアログ ボックスで **[参照**] ボタンを使用できるように設定します。
 
- \<VSTemplate > \<TemplateData > \<EnableLocationBrowseButton >
+ \<>>有効\<にするデータ\<を有効にするテンプレート> テンプレートデータ
 
 ## <a name="syntax"></a>構文
 
@@ -35,10 +35,10 @@ ms.locfileid: "66334464"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -49,12 +49,12 @@ ms.locfileid: "66334464"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`、表示するかどうかを示す、**参照**のボタンでは、**新しいプロジェクト** ダイアログ ボックス。
+ テキストは、 または`true``false`のいずれかで、**新しいプロジェクト**ダイアログ ボックスの **[参照**] ボタンを表示するかどうかを示す必要があります。
 
 ## <a name="remarks"></a>Remarks
- `EnableLocationBrowseButton` は、省略可能な要素です。 既定値は`true`が表示される、**参照**ボタン、**新しいプロジェクト** ダイアログ ボックス。
+ `EnableLocationBrowseButton` は省略可能な要素です。 既定値は`true`、 で、[**新しいプロジェクト**] ダイアログ ボックスの **[参照**] ボタンを表示します。
 
- **新しいプロジェクト** ダイアログ ボックスで、**場所**テキスト ボックスは、新しいプロジェクトが保存されているディレクトリを指定します。 **参照**ボタンには、表示することでこのディレクトリを変更することが、**プロジェクトの場所** ダイアログ ボックスで、簡単にコンピューターから使用できる別のディレクトリに移動できますと新しいプロジェクトを保存するディレクトリとして選択します。
+ [**新しいプロジェクト**] ダイアログ ボックスの [**場所**] テキスト ボックスに、新しいプロジェクトを保存するディレクトリを指定します。 [**参照]** ボタンをクリックすると、[**プロジェクトの場所**] ダイアログ ボックスが表示され、コンピュータから使用できる別のディレクトリに簡単に移動し、新しいプロジェクトが保存されているディレクトリとして選択できます。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows アプリケーションでのメタデータの例を次に示します。
@@ -85,5 +85,5 @@ ms.locfileid: "66334464"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

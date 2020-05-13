@@ -1,5 +1,5 @@
 ---
-title: デバッガー内の式 |Microsoft Docs
+title: デバッガー内の式 |マイクロソフトドキュメント
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158497"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301417"
 ---
 # <a name="expressions-in-the-debugger"></a>デバッガー内の式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> デバッガーの組み込み関数による状態の保持  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>デバッガーの組み込み関数を使用して状態を維持する  
  デバッガーの組み込み関数を使用すると、アプリケーションの状態を変更せずに、式の中で特定の C/C++ 関数を呼び出すことができます。  
   
  デバッガーの組み込み関数には次の特徴があります。  
@@ -107,14 +107,14 @@ int main()
   
   デバッガーの組み込み関数は、式の評価をより便利にすることもできます。 たとえば、ブレークポイント条件に記述する際、 `strncmp(str, “asd”)` は `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`よりもはるかに簡単です。 )  
   
-|区分|組み込み関数|  
+|領域|組み込み関数|  
 |----------|-------------------------|  
 |**文字列長**|strlen、wcslen、strnlen、wcsnlen|  
-|**文字列比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|  
+|**文字列の比較**|strcmp、wcscmp、stricmp、_stricmp、_strcmpi、wcsicmp、_wcscmpi、_wcsnicmp、strncmp、wcsncmp、strnicmp、wcsnicmp|  
 |**文字列検索**|strchr、wcschr、strstr、wcsstr|  
 |**Win32**|GetLastError()、TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen()、WindowsGetStringRawBuffer()<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|  
-|**その他の指定**|__log2<br /><br /> 指定した整数の底 2 の対数 (最も近い整数に切り捨てられます) を返します。|  
+|**ウィンドウズ 8**|WindowsGetStringLen()、WindowsGetStringRawBuffer()<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|  
+|**その他**|__log2<br /><br /> 指定した整数の底 2 の対数 (最も近い整数に切り捨てられます) を返します。|  
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - サポートされていない式  
   
@@ -214,8 +214,8 @@ int main()
   
 - 名前空間またはモジュール レベルのキーワード ( `End Sub` や `Module`など)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [C# の書式指定子](../debugger/format-specifiers-in-csharp.md)   
+ [コンテキスト演算子 (C++)](../debugger/context-operator-cpp.md)   
+ [C の書式指定子#](../debugger/format-specifiers-in-csharp.md)   
  [擬似変数](../debugger/pseudovariables.md)

@@ -18,30 +18,34 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596009"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632785"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates タスク
+
 指定されたアイテム コレクションから、重複するアイテムを削除します。
 
 ## <a name="parameters"></a>パラメーター
+
  `RemoveDuplicates` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |`Filtered`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> すべての重複する項目が削除された項目コレクションが含まれます。 入力項目の順序は保持され、重複する各項目は最初のインスタンスが保持されます。|
 |`Inputs`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 重複した項目を削除する対象となる項目コレクションです。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
+
  このタスクでは大文字と小文字が区別されず、重複の判断時、項目メタデータは比較されません。
 
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、`RemoveDuplicates` タスクを使用し、`MyItems` 項目コレクションから重複項目を削除します。 タスクが完了すると、`FilteredItems` 項目コレクションに含まれる項目が 1 つになります。
 
 ```xml
@@ -89,7 +93,8 @@ ms.locfileid: "75596009"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [タスク](../msbuild/msbuild-tasks.md)

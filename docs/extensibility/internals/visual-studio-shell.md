@@ -1,80 +1,80 @@
 ---
-title: Visual Studio Shell |Microsoft Docs
+title: ビジュアルスタジオシェル |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60aa48da701857508f9b6fd7fc3d9d0c0603046e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722055"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703996"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-@No__t_0 シェルは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] での統合の主要なエージェントです。 シェルには、Vspackage が共通のサービスを共有できるようにするために必要な機能が用意されています。 @No__t_0 のアーキテクチャ目標は Vspackage の主な機能を備えているため、シェルは基本機能を提供し、そのコンポーネント Vspackage 間の相互通信をサポートするフレームワークです。
+シェル[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、 の統合の主要な[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]エージェントです。 シェルは、VSPackage が共通のサービスを共有できるようにするために必要な機能を提供します。 アーキテクチャの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]目的は、VSPackages の主要な機能をベストにするため、シェルは、基本的な機能を提供し、そのコンポーネント VSPackages 間のクロスコミュニケーションをサポートするフレームワークです。
 
-## <a name="shell-responsibilities"></a>シェルの役割
- シェルには、次の主要な役割があります。
+## <a name="shell-responsibilities"></a>シェルの責任
+ シェルには、次の重要な役割があります。
 
-- (COM インターフェイスを通じて) ユーザーインターフェイス (UI) の基本要素をサポートします。 これには、既定のメニューとツールバー、ドキュメントウィンドウフレームまたはマルチドキュメントインターフェイス (MDI) 子ウィンドウ、ツールウィンドウフレーム、およびドッキングサポートが含まれます。
+- ユーザー インターフェイス (UI) の基本要素を (COM インターフェイスを介して) サポートします。 これには、既定のメニューとツールバー、ドキュメント ウィンドウ フレームまたはマルチドキュメント インターフェイス (MDI) 子ウィンドウ、ツール ウィンドウ フレーム、およびドッキング サポートが含まれます。
 
-- ドキュメントの永続性を調整し、1つのドキュメントを複数の方法で、または互換性のない方法で開くことを保証するために、現在開いているすべてのドキュメントの実行中のリストを実行中のドキュメントテーブル (RDT) で保持する。
+- ドキュメントの永続性を調整し、1 つのドキュメントを複数の方法で開くことができないか、または互換性のない方法で開くことができないことを保証するために、実行中のドキュメント テーブル (RDT) で現在開いているすべてのドキュメントの実行中のリストを維持します。
 
-- コマンドルーティングとコマンド処理インターフェイスのサポート、`IOleCommandTarget`。
+- コマンド ルーティングおよびコマンド処理インターフェイスをサポート`IOleCommandTarget`する 。
 
-- 適切なタイミングで Vspackage を読み込んでいます。 シェルのパフォーマンスを向上させるには、VSPackage の遅延読み込みが必要です。
+- 適切な時間に VS パッケージを読み込んでいます。 VSPackage の遅延読み込みは、シェルのパフォーマンスを向上させるために必要です。
 
-- 基本的なシェル機能を提供する、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> などの特定の共有サービスの管理、および基本的なウィンドウ機能を提供する <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>。
+- 基本的なシェル機能を提供する<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>などの特定の共有サービスの管理<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>、基本的なウィンドウ機能を提供する 、 など。
 
-- ソリューション (.sln) ファイルの管理。 ソリューションには、Visual C++ 6.0 のワークスペース (dsw) ファイルに似た、関連するプロジェクトのグループが含まれています。
+- ソリューション (.sln) ファイルを管理します。 ソリューションには、Visual C++ 6.0 のワークスペース (.dsw) ファイルと同様に、関連するプロジェクトのグループが含まれています。
 
-- シェル全体の選択、コンテキスト、および通貨を追跡します。 シェルは、次の種類の項目を追跡します。
+- シェル全体の選択、コンテキスト、通貨を追跡します。 シェルは、次の種類の項目を追跡します。
 
   - 現在のプロジェクト
 
-  - 現在のプロジェクト項目、または現在の <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> を ItemID する
+  - 現在のプロジェクト 項目または現在のアイテム ID<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  - **[プロパティ]** ウィンドウまたは `SelectionContainer` の現在の選択
+  - [プロパティ] ウィンドウまたは **[プロパティ]** ウィンドウの現在の選択`SelectionContainer`
 
-  - コマンド、メニュー、およびツールバーの表示を制御する UI コンテキスト Id または CmdUIGuids
+  - コマンド、メニュー、およびツール バーの表示を制御する UI コンテキスト ID または CmdUIGuid
 
-  - アクティブウィンドウ、ドキュメント、および元に戻すマネージャーなど、現在アクティブな要素
+  - アクティブなウィンドウ、ドキュメント、および元に戻すマネージャーなどの現在アクティブな要素
 
-  - ダイナミックヘルプを駆動するユーザーコンテキスト属性
+  - ダイナミック ヘルプを駆動するユーザー コンテキスト属性
 
-  シェルは、インストールされている Vspackage と現在のサービス間の通信も仲介します。 シェルのコア機能がサポートされ、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に統合されたすべての Vspackage で使用できるようになります。 これらのコア機能には、次の項目が含まれます。
+  シェルは、インストールされている VSPackages と現在のサービス間の通信も仲介します。 シェルのコア機能をサポートし、 に[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合されたすべての VSPackages で使用できるようにします。 これらの主要な機能には、次の項目が含まれます。
 
-- **[バージョン情報]** ダイアログボックスとスプラッシュスクリーン
+- **ダイアログ**ボックスとスプラッシュ画面について
 
-- **[新しい項目の追加] ダイアログボックスと [既存項目の追加**] ダイアログボックス
+- **[新規項目の追加] ダイアログ ボックスと [既存項目の追加]** ダイアログ ボックス
 
-- **クラスビュー**ウィンドウと**オブジェクトブラウザー**
+- **[クラス ビュー** ] ウィンドウと**オブジェクト ブラウザ**
 
-- **[参照]** ダイアログボックス
+- **[参照設定**] ダイアログ ボックス
 
-- **ドキュメントアウトライン**ウィンドウ
+- **[ドキュメント アウトライン**] ウィンドウ
 
-- **ダイナミックヘルプ**ウィンドウ
+- **[ダイナミック ヘルプ**] ウィンドウ
 
 - **検索**と**置換**
 
-- **[新規]** メニューの **[プロジェクトを開く]** および **[ファイルを開く]** ダイアログボックス
+- [**新規作成**] メニューの **[プロジェクト**] ダイアログ ボックスと [**ファイルを開く**] ダイアログ ボックス
 
-- **[ツール]** メニューの **[オプション]** ダイアログボックス
+- **[****ツール**] メニューの [オプション] ダイアログ ボックス
 
 - **[プロパティ]** ウィンドウ
 
 - **ソリューション エクスプローラー**
 
-- **タスク一覧**ウィンドウ
+- **[タスク一覧]** ウィンドウ
 
 - **ツールボックス**
 
@@ -83,4 +83,4 @@ ms.locfileid: "72722055"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>
-- [VSPackage](../../extensibility/internals/vspackages.md)
+- [VSPackages](../../extensibility/internals/vspackages.md)

@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), ParallelCustomBuild task
 - ParallelCustomBuild task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ea14e61eb2d62f3fc9ccdac3a17010ccc9194f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747217"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279267"
 ---
 # <a name="parallelcustombuild-task"></a>ParallelCustomBuild タスク
 
@@ -32,13 +32,13 @@ ms.locfileid: "72747217"
 
 以下の表では **ParallelCustomBuild** タスクのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|省略可能な **bool** 型のパラメーターです。|
 |**MaxItemsInBatch**|省略可能な **int** 型のパラメーターです。|
 |**MaxProcesses**|省略可能な **int** 型のパラメーターです。|
 |**Sources**|必須の **ITaskItem[]** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

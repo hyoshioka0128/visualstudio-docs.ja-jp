@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72634924"
 ---
 # <a name="shader-designer-nodes"></a>シェーダー デザイナー ノード
@@ -41,7 +41,7 @@ ms.locfileid: "72634924"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[定数ノード](../designers/constant-nodes.md)|シェーダーの計算でリテラル値および補間された頂点状態の情報を表すために使うことができるノードについて説明します。 頂点状態は補間され、ピクセルごとに異なるので、各ピクセル シェーダー インスタンスは異なるバージョンの定数を受け取ります。|
 |[パラメーター ノード](../designers/parameter-nodes.md)|シェーダーの計算でカメラの位置、素材のプロパティ、ライティング パラメーター、時刻、およびその他のアプリの状態情報を表すために使うことができるノードについて説明します。|

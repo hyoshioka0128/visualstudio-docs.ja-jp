@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596204"
 ---
 # <a name="options-text-editor-file-extension"></a>[オプション]、[テキスト エディター]、[ファイル拡張子]
@@ -30,7 +30,7 @@ ms.locfileid: "75596204"
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
-**拡張機能**
+**拡張子**
 
 IDE の [使用したエディター] を定義するファイル拡張子を入力します。
 
@@ -58,6 +58,6 @@ IDE の [使用したエディター] を定義するファイル拡張子を入
 
 **[エディター]** と同じ一覧を提供します。 ファイル拡張子のない文書を開く IDE のエディターまたはデザイナーを選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [方法: エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)
+- [方法 : エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)

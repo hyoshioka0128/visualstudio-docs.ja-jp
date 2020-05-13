@@ -1,30 +1,30 @@
 ---
-title: GetTaskSchedulersForDebugger メソッド |Microsoft Docs
+title: メソッドを取得します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8d038c8c67731fe1bff9ec705b5ddf416807a57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353722"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738648"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger メソッド
-すべての配列を取得します<xref:System.Threading.Tasks.TaskScheduler>現在アクティブなオブジェクト。
+現在アクティブなすべての<xref:System.Threading.Tasks.TaskScheduler>オブジェクトの配列を取得します。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ ms.locfileid: "66353722"
 ```
 
 ## <a name="return-value"></a>戻り値
- すべての配列<xref:System.Threading.Tasks.TaskScheduler>これで現在アクティブなオブジェクト<xref:System.AppDomain>します。
+ この<xref:System.AppDomain>で現在アクティブ<xref:System.Threading.Tasks.TaskScheduler>になっているすべてのオブジェクトの配列。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、スレッド セーフであると同時の他のインスタンスを使用しないでください<xref:System.Threading.Tasks.TaskScheduler>します。 デバッガーがその他のすべてのスレッドを中断された場合にのみ、デバッガーからこのメソッドを呼び出します。
+ このメソッドはスレッド セーフではないため、他の<xref:System.Threading.Tasks.TaskScheduler>インスタンスと同時に使用しないでください。 デバッガーが他のすべてのスレッドを中断した場合にのみ、デバッガーからこのメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
-- [TaskScheduler クラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+- [タスクスケジューラクラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)

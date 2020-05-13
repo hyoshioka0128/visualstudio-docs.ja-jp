@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918646"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880313"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -86,7 +86,7 @@ ms.locfileid: "75918646"
 ```xml
 <ModulePaths>
   <Exclude>
-   <ModulePath>Fabrikam.Math.UnitTest.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.UnitTest.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Exclude>
 </ModulePaths>
@@ -97,7 +97,7 @@ ms.locfileid: "75918646"
 ```xml
 <ModulePaths>
   <Include>
-   <ModulePath>Fabrikam.Math.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Include>
 </ModulePaths>
@@ -110,13 +110,13 @@ ms.locfileid: "75918646"
 | ModulePath | アセンブリ名またはファイル パスで指定されたアセンブリと一致します。 |
 | CompanyName | **Company** 属性でアセンブリと一致します。 |
 | PublicKeyToken | 公開キー トークンで署名付きアセンブリと一致します。 |
-| ソース | 要素が定義されているソース ファイルのパス名で要素と一致します。 |
+| [ソース] | 要素が定義されているソース ファイルのパス名で要素と一致します。 |
 | 属性 | 指定された属性を持つ要素と一致します。 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>` など、属性の完全な名前を指定します。<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 属性を除外すると、`async`、`await`、`yield return` などの言語機能を使用するコードと、自動実装プロパティがコード カバレッジ分析から除外されます。 真に生成されたコードを除外するには、<xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 属性のみを除外します。 |
-| 関数 | パラメーター リストなど、完全修飾名でプロシージャ、関数、またはメソッドと一致します。 [正規表現](#regular-expressions)を利用し、名前の一部を照合することもできます。<br/><br/>次に例を示します。<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
+| Function | パラメーター リストなど、完全修飾名でプロシージャ、関数、またはメソッドと一致します。 [正規表現](#regular-expressions)を利用し、名前の一部を照合することもできます。<br/><br/>例 :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>正規表現
 
-Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 次に、例を示します。
+Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 いくつかの例を次に示します。
 
 - **.\*** は任意の文字の文字列と一致します
 
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [コード カバレッジを使用した、テストされるコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

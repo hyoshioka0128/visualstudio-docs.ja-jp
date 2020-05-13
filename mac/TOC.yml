@@ -1,0 +1,238 @@
+- name: Visual Studio for Mac
+  href: index.yml
+- name: 作業の開始
+  items:
+    - name: IDE ツアー
+      href: ide-tour.md
+    - name: Windows ユーザー向けの Visual Studio for Mac
+      href: vsmac-for-windows-users.md
+- name: インストール
+  items:
+    - name: Visual Studio for Mac 2019 のインストール
+      href: installation.md
+    - name: ファイアウォールまたはプロキシの内側にインストールして使用する
+      href: install-behind-a-firewall-or-proxy-server.md
+    - name: プレビュー リリースをインストールする
+      href: install-preview.md
+    - name: 更新
+      href: update.md
+    - name: '[アンインストール]'
+      href: uninstall.md
+- name: ユーザー アカウント
+  items:
+    - name: 概要
+      href: user-accounts.md
+    - name: サインイン
+      href: signing-in.md
+    - name: サブスクリプションを有効にする
+      href: enable-subscription.md
+- name: IDE のカスタマイズ
+  items:
+    - name: IDE の外観のカスタマイズ
+      href: customizing-the-ide.md
+    - name: Visual Studio for Mac の拡張
+      href: extending-visual-studio-mac.md
+- name: プロジェクトおよびソリューション
+  items:
+    - name: 概要
+      href: projects-and-solutions.md
+    - name: プロジェクトの新規作成
+      href: create-new-projects.md
+    - name: プロジェクト項目の追加と削除
+      href: add-and-remove-project-items.md
+    - name: ソリューションとプロジェクト プロパティの管理
+      href: managing-solutions-and-project-properties.md
+    - name: マルチ ターゲット
+      href: project-multitargeting.md
+    - name: プロジェクト内の参照の管理
+      items:
+        - name: 概要
+          href: managing-references-in-a-project.md
+        - name: チュートリアル - プロジェクトに NuGet パッケージを含める
+          href: nuget-walkthrough.md
+    - name: アプリ リソースの管理
+      href: managing-app-resources.md
+    - name: '方法: 複数のソリューションまたはインスタンスを開く'
+      href: open-multiple-solutions.md
+- name: ソース エディター
+  items:
+    - name: エディターの機能
+      href: source-editor.md
+    - name: リファクタリング
+      href: refactoring.md
+    - name: IntelliSense
+      href: intellisense.md
+    - name: '[Show Import Items]\(インポート項目を表示\)'
+      href: show-imports.md
+    - name: マルチキャレットの編集
+      href: multi-caret-editing.md
+    - name: コメント
+      href: comments.md
+    - name: エディターの動作
+      href: editor-behavior.md
+    - name: タスク コメント
+      href: task-comments.md
+    - name: スニペット
+      href: snippets.md
+    - name: ブロック選択
+      href: block-selection.md
+    - name: エディターのテーマ
+      href: editor-themes.md
+    - name: EditorConfig
+      href: editorconfig.md
+    - name: 既定のキーボード ショートカット
+      href: keyboard-shortcuts.md
+- name: デバッグ
+  items:
+    - name: 概要
+      href: debugging.md
+    - name: データの視覚化
+      href: data-visualizations.md
+    - name: ソース リンクを使用した NuGet パッケージのデバッグ
+      href: source-link.md
+- name: コードのコンパイルとビルド
+  items:
+    - name: 概要
+      href: compiling-and-building.md
+    - name: プロジェクトとソリューションのビルドおよびクリーン
+      href: building-and-cleaning-projects-and-solutions.md
+    - name: ビルド アクション
+      href: build-actions.md
+    - name: '方法: 複数のスタートアップ プロジェクトを設定する'
+      href: set-startup-projects.md
+    - name: ビルド システムのカスタマイズ
+      href: customizing-build-system.md
+    - name: 構成
+      items:
+        - name: ビルド構成について
+          href: configurations.md
+        - name: 構成を作成および編集する
+          href: create-and-edit-configurations.md
+- name: バージョン コントロール
+  items:
+    - name: 概要
+      href: version-control.md
+    - name: Git リポジトリのセットアップ
+      href: set-up-git-repository.md
+    - name: Git の使用
+      href: working-with-git.md
+    - name: Subversion リポジトリのセットアップ
+      href: set-up-subversion-repository.md
+    - name: Subversion の使用
+      href: working-with-subversion.md
+- name: Web アプリのデプロイ
+  items:
+    - name: 概要
+      href: web-app-deployment.md
+    - name: Azure App Service に発行する
+      href: publish-app-svc.md
+    - name: フォルダーに発行する
+      href: publish-folder.md
+- name: 作業負荷
+  items:
+    - name: 使用可能なワークロード
+      href: workloads.md
+    - name: ASP.NET Core
+      items:
+        - name: .NET Core サポート
+          href: net-core-support.md
+        - name: ASP.NET Core の概要
+          href: asp-net-core.md
+        - name: Visual Studio for Mac での ASP.NET Core アプリケーションのビルド
+          href: building-asp-net-core.md
+        - name: Razor
+          href: razor.md
+        - name: Blazor
+          href: blazor.md
+        - name: JavaScript および TypeScript
+          href: javascript.md
+        - name: launchSettings.json
+          href: launch-settings.md
+    - name: Azure
+      items:
+        - name: 概要
+          href: azure-workload.md
+        - name: Azure Functions の概要
+          href: azure-functions.md
+        - name: 'チュートリアル: Azure Functions'
+          href: azure-functions-lab.md
+        - name: 接続済みサービス
+          href: connected-services.md
+    - name: Docker
+      items:
+        - name: Docker の概要
+          href: docker-quickstart.md
+        - name: Docker Compose を使用して複数コンテナーのアプリを作成する
+          href: docker-multi-container.md
+    - name: Unity によるゲーム開発
+      items:
+        - name: Unity によるゲーム開発
+          href: unity-tools.md
+        - name: セットアップ
+          href: setup-vsmac-tools-unity.md
+        - name: Unity の概要
+          href: unity-walkthrough.md
+        - name: Unity ツールの使用
+          href: using-vsmac-tools-unity.md
+        - name: Unity で.NET 4.x を使用する
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
+        - name: 変更ログ
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+    - name: Xamarin を使用したモバイル アプリ
+      href: /visualstudio/mac/xamarin
+- name: ユーザー補助
+  items:
+    - name: 概要
+      href: accessibility.md
+    - name: IDE アクセシビリティ オプションの設定
+      href: accessibility-ide-options.md
+    - name: macOS アクセシビリティのツールと機能
+      items:
+        - name: macOS アクセシビリティのツールの使用
+          href: accessibility-macos.md
+        - name: キーボード ナビゲーションの使用
+          href: accessibility-keyboard.md
+        - name: VoiceOver の使用
+          href: accessibility-voiceover.md
+- name: ビデオ チュートリアル
+  items:
+    - name: Visual Studio for Mac で ASP.NET Core の使用を開始する
+      href: tutorial-aspnet-core-vsmac-getting-started.md
+    - name: 既存の ASP.NET Core Web アプリケーションの拡張
+      href: tutorial-aspnet-core-vsmac-extending.md
+- name: Windows ユーザー向けの Visual Studio for Mac
+  href: vsmac-for-windows-users.md
+- name: トラブルシューティング
+  items:
+    - name: ログと例外
+      href: troubleshooting.md
+    - name: Visual Studio カスタマー エクスペリエンス向上プログラム
+      href: visual-studio-experience-improvement-program.md
+    - name: 問題を報告する
+      href: report-a-problem.md
+    - name: 'トラブルシューティング:Visual Studio for Mac は Team Foundation バージョン管理をサポートしていますか?'
+      href: tf-version-control.md
+    - name: 'トラブルシューティング:すべてのテンプレートが表示されない'
+      href: troubleshooting-no-templates.md
+    - name: 'トラブルシューティング:アップデーターが情報の取得中にエラーを表示する'
+      href: updater-troubleshooting.md
+- name: リリース ノート
+  href: /visualstudio/releasenotes/vs2019-mac-relnotes
+- name: リリース ノートのプレビュー
+  href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
+- name: サンプル
+  items:
+    - name: おすすめのサンプル
+      href: samples/index.yml
+    - name: すべての ASP.NET Core サンプル
+      href: /samples/browse/?products=aspnet-core
+    - name: すべての .NET Core サンプル
+      href: /samples/browse/?products=dotnet-core
+    - name: すべての Xamarin.Forms のサンプル
+      href: /xamarin/xamarin-forms/samples/
+    - name: すべての Xamarin.iOS サンプル
+      href: /xamarin/ios/samples/
+    - name: すべての Xamarin.Android サンプル
+      href: /xamarin/android/samples/
+    - name: すべての Xamarin.Mac サンプル
+      href: /xamarin/mac/samples/

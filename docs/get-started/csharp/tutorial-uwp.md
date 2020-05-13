@@ -7,19 +7,19 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186837"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543939"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
@@ -39,9 +39,12 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 ::: moniker range="vs-2017"
 1. Visual Studio を開きます。
 
-1. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
 1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、 **[Windows ユニバーサル]** を選択します。 中央のペインで **[空のアプリ (ユニバーサル Windows)]** を選択します。 次いで、プロジェクトに「*HelloWorld*」という名前を付け、 **[OK]** を選択します。
+
+   > [!NOTE]
+   > ソース プロジェクトの場所が **New Technology File System (NTFS)** でフォーマットされたドライブ (オペレーティング システム (OS) ドライブなど) にあることを確認します。 そうしないと、プロジェクトのビルドと実行で問題が発生する可能性があります。 
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されている Windows ユニバーサル プロジェクト テンプレート](media/new-project-csharp-uwp-helloworld.png)
 
@@ -166,7 +169,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[ローカル マシン] をクリックし、UWP アプリを起動してデバッグする](media/uwp-start-or-debug.png)
 
-   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押して、アプリを起動します。)
+   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押してアプリを開始します)。
 
 1. スプラッシュ スクリーンが消えるとすぐ表示されるアプリを確認します。 アプリは次のように表示されるはずです。
 
@@ -186,7 +189,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[ローカル マシン] をクリックし、UWP アプリを起動してデバッグする](media/uwp-start-or-debug.png)
 
-   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押して、アプリを起動します。)
+   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押してアプリを開始します)。
 
 1. スプラッシュ スクリーンが消えるとすぐ表示されるアプリを確認します。 アプリは次のように表示されるはずです。
 

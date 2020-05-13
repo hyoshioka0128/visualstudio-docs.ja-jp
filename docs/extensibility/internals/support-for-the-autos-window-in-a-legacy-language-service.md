@@ -1,37 +1,37 @@
 ---
-title: 従来の言語サービスで、[自動変数] ウィンドウのサポート |Microsoft Docs
+title: 旧式言語サービスの自動ウィンドウのサポート |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2842cb7a11765f0d460681dee0187c62ff31061c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309837"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704884"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>従来の言語サービスでの自動変数ウィンドウのサポート
-**[自動変数]** ウィンドウには、変数と (いずれかの理由、ブレークポイントまたは例外)、デバッグ中のプログラムが一時停止すると、スコープ内のパラメーターなどの式が表示されます。 式には、変数、ローカルまたはグローバル、およびローカル スコープで変更されているパラメーターを含めることができます。 **[自動変数]** ウィンドウは、クラス、構造体、またはその他の種類のインスタンスを含めることもできます。 評価できる式エバリュエーターは何も表示できる可能性がある、 **[自動変数]** ウィンドウ。
+**Autos**ウィンドウには、デバッグ中のプログラムが一時停止したとき (ブレークポイントまたは例外が原因で) スコープ内の変数やパラメーターなどの式が表示されます。 式には、ローカルまたはグローバル変数、およびローカル スコープで変更されたパラメーターを含めることができます。 **また、[自動**変数] ウィンドウには、クラス、構造体、またはその他の型のインスタンス化を含めることもできます。 式エバリュエーターが評価できるものは **、[自動**変数] ウィンドウに表示される可能性があります。
 
- Managed package framework (MPF) に直接はサポートされていません、 **[自動変数]** ウィンドウ。 ただし、オーバーライドする場合、<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>メソッドで示される式のリストを返すことができます、 **[自動変数]** ウィンドウ。
+ 管理パッケージ フレームワーク (MPF) は **、[自動**変数] ウィンドウを直接サポートしません。 ただし、メソッドをオーバーライドした<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>場合は、[自動変数] ウィンドウに表示される式の一覧**を**返すことができます。
 
-## <a name="implementing-support-for-the-autos-window"></a>[自動変数] ウィンドウのサポートを実装します。
- サポートするために必要な **[自動変数]** ウィンドウを実装するためには、<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 式のようにソース ファイル内の場所が指定された、実装を決定する必要があります、 **[自動変数]** ウィンドウ。 これでは、各文字列は 1 つの式を表します。 文字列のリストを返します。 戻り値<xref:Microsoft.VisualStudio.VSConstants.S_OK>一覧に、式が含まれていることを示します。 中に<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>を表示する式がないことを示します。
+## <a name="implementing-support-for-the-autos-window"></a>自動ウィンドウのサポートの実装
+ **Autos**ウィンドウをサポートするために必要なのは、<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A><xref:Microsoft.VisualStudio.Package.LanguageService>クラスにメソッドを実装することだけです。 ソース ファイル内の場所を指定して、どの式を **[自動**変数] ウィンドウに表示するかを実装で決定する必要があります。 このメソッドは、各文字列が 1 つの式を表す文字列のリストを返します。 の戻り値<xref:Microsoft.VisualStudio.VSConstants.S_OK>は、リストに式が含まれていること<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>を示し、表示する式がないことを示します。
 
- 実際に返される式は、変数やコード内の場所に表示されるパラメーターの名前です。 これらの名前は、値とに表示される、型を取得する式エバリュエーターに渡される、 **[自動変数]** ウィンドウ。
+ 返される実際の式は、コード内のその位置に表示される変数またはパラメーターの名前です。 これらの名前は式エバリュエーターに渡され、値と型を取得し、その後**Autos**ウィンドウに表示されます。
 
 ### <a name="example"></a>例
- 次の例の実装を示しています、<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>から式のリストを取得するメソッド、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドを使用する解析理由<xref:Microsoft.VisualStudio.Package.ParseReason>します。 としてラップの各式は、`TestVsEnumBSTR`を実装する、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>インターフェイス。
+ 次の例は、解析の理由<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A><xref:Microsoft.VisualStudio.Package.ParseReason>を使用してメソッドから式のリストを<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>取得するメソッドの実装を示しています。 各式は、インターフェイスを実装する`TestVsEnumBSTR`としてラップされます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>。
 
- なお、`GetAutoExpressionsCount`と`GetAutoExpression`メソッドにカスタム メソッドは、`TestAuthoringSink`オブジェクトし、この例をサポートするために追加されました。 追加する式で 1 つの方法を表す、`TestAuthoringSink`パーサーによってオブジェクト (呼び出すことによって、<xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>メソッド) パーサーの外部アクセスできます。
+ メソッドと`GetAutoExpressionsCount``GetAutoExpression`メソッドはオブジェクトの`TestAuthoringSink`カスタム メソッドであり、この例をサポートするために追加されました。 パーサーによってオブジェクトに追加された式に (`TestAuthoringSink`<xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>メソッドを呼び出すことによって) パーサーの外部からアクセスできる方法を表します。
 
 ```csharp
 using Microsoft.VisualStudio;

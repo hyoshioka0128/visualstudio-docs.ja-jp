@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::CanTerminateProcess |Microsoft Docs
+title: IDebugエンジンの起動2:::プロセスを終了する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::CanTerminateProcess
 ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d8f401ae49edb2f77d35104de68280be322a63d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337222"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730563"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
-プロセスが終了するかどうかを決定します。
+プロセスを終了できるかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int CanTerminateProcess ( 
 
 ## <a name="parameters"></a>パラメーター
 `pProcess`\
-[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)終了するプロセスを表すオブジェクト。
+[in]終了するプロセスを表す[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`S_FALSE`かどうか、エンジンことはできません、プロセスの終了など、アクセスが拒否されたためです。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 アクセス`S_FALSE`が拒否されたために、エンジンがプロセスを終了できない場合に返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが戻る場合`S_OK`、し、その、 [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)実際にプロセスを終了するメソッドを呼び出すことができます。
+ このメソッドが戻`S_OK`る場合は[、TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)メソッドを呼び出して、プロセスを実際に終了できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

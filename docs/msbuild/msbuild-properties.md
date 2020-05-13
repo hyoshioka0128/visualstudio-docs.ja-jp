@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ae72ee835fa5b5e0d2ebb484ce24a5ffb85b91
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589241"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633292"
 ---
 # <a name="msbuild-properties"></a>MSBuild プロパティ
+
 プロパティはビルドを設定するための名前と値のペアです。 プロパティを使用することで、タスクに値を渡したり、条件を評価したりできるだけでなく、プロジェクト ファイルで参照する値を格納しておくこともできます。
 
 ## <a name="define-and-reference-properties-in-a-project-file"></a>プロジェクト ファイルでプロパティを定義して参照する
+
  プロパティを宣言するには、そのプロパティの名前を持つ要素を [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 要素の子として作成します。 たとえば、次の XML では、`BuildDir` という名前のプロパティを作成し、`Build` を値として設定しています。
 
 ```xml
@@ -42,11 +44,13 @@ ms.locfileid: "75589241"
  プロパティは、プロジェクト ファイルに表示される順に評価されます。 `BuildDir` の新しい値は、古い値が割り当てられた後で宣言する必要があります。
 
 ## <a name="reserved-properties"></a>予約済みのプロパティ
+
  MSBuild では、プロジェクト ファイルに関する情報や MSBuild のバイナリに関する情報を保持するために、いくつかのプロパティ名が予約されています。 これらのプロパティは、他のプロパティと同じように $ 表記を使用して参照できます。 たとえば、$(MSBuildProjectFile) は、ファイル名の拡張子を含むプロジェクト ファイルの完全なファイル名を返します。
 
  詳細については、[プロジェクト ファイルの名前または場所を参照する](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)」および「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」を参照してください。
 
 ## <a name="environment-properties"></a>環境プロパティ
+
  プロジェクト ファイルで環境変数を参照する場合も、予約済みのプロパティを参照するときと同じ方法を使用します。 たとえば、プロジェクト ファイルで `PATH` 環境変数を使用するには、$(Path) と記述します。 プロジェクト ファイルに、環境プロパティと同じ名前のプロパティが定義されている場合、環境変数の値はプロジェクト内のプロパティによってオーバーライドされます。
 
  各 MSBuild プロジェクトには、分離された環境ブロックがあります。各プロジェクトは独自のブロックに対する読み取りと書き込みのみを参照します。  プロジェクト ファイルの評価やビルドを行う前、MSBuild では、プロパティ コレクションが初期化されるときに環境変数のみを読み取ります。 その後で、環境プロパティは静的なプロパティになります。つまり、起動されたツールは、同じ名前と値で実行が開始されます。
@@ -59,6 +63,7 @@ ms.locfileid: "75589241"
  詳細については、[ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」を参照してください。
 
 ## <a name="registry-properties"></a>レジストリのプロパティ
+
  システム レジストリ値を読み取るには、次の構文を使用します。ここで、`Hive` はレジストリ ハイブ (たとえば、**HKEY_LOCAL_MACHINE**)、`MyKey` はキー名、`MySubKey` はサブキー名、`Value` はサブキーの値をそれぞれ表します。
 
 ```xml
@@ -82,6 +87,7 @@ $(registry:Hive\MyKey\MySubKey)
 ```
 
 ## <a name="global-properties"></a>グローバル プロパティ
+
  MSBuild では、 **-property** (または **-p**) スイッチを使用してコマンド ラインからプロパティを設定できます。 これらのグローバル プロパティ値は、プロジェクト ファイルで設定されたプロパティ値をオーバーライドします。 これには環境プロパティは含まれますが、予約済みのプロパティは含まれません。予約済みのプロパティは変更できません。
 
  グローバルな `Configuration` プロパティを `DEBUG` に設定する例を次に示します。
@@ -95,6 +101,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  プロジェクト タグで `TreatAsLocalProperty` 属性を使用してプロパティを指定する場合、そのグローバル プロパティ値は、プロジェクト ファイルで設定されているプロパティ値をオーバーライドしません。 詳細については、「[Project 要素 (MSBuild)](../msbuild/project-element-msbuild.md)」と「[方法:同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。
 
 ## <a name="property-functions"></a>プロパティ関数
+
  .NET Framework Version 4 以降では、プロパティ関数を使用して MSBuild スクリプトを評価できるようになりました。 MSBuild タスクを使用しなくても、システム時刻の読み取り、文字列の比較、正規表現の照合、その他のさまざまな処理をビルド スクリプト内で実行できます。
 
  文字列 (インスタンス) メソッドを使用してプロパティ値を操作したり、各種システム クラスの静的メソッドを呼び出したりできます。 たとえば、ビルド プロパティを今日の日付に設定するには、次のようにします。
@@ -106,6 +113,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  プロパティ関数の詳細と、プロパティ関数の一覧については、「[プロパティ関数](../msbuild/property-functions.md)」を参照してください。
 
 ## <a name="create-properties-during-execution"></a>実行時にプロパティを作成する
+
  `Target` 要素の外側にあるプロパティには、ビルドの評価フェーズで値が割り当てられます。 その後の実行フェーズでプロパティを作成または変更するには、次のようにします。
 
 - プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。
@@ -115,7 +123,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 - .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。
 
 ## <a name="store-xml-in-properties"></a>プロパティに XML を格納する
- プロパティには、タスクに値を渡したり、ログ情報を表示したりするための任意の XML を格納できます。 次の例では、`ConfigTemplate` プロパティの値に、XML や他のプロパティ参照が使用されています。 このプロパティ参照は、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] により、対応するプロパティ値を使用して置き換えられます。 プロパティ値は表示される順に割り当てられます。 したがって、この例では、`$(MySupportedVersion)`、`$(MyRequiredVersion)`、および `$(MySafeMode)` は既に定義されています。
+
+ プロパティには、タスクに値を渡したり、ログ情報を表示したりするための任意の XML を格納できます。 次の例では、`ConfigTemplate` プロパティの値に、XML や他のプロパティ参照が使用されています。 このプロパティ参照は、MSBuild により、対応するプロパティ値を使用して置き換えられます。 プロパティ値は表示される順に割り当てられます。 したがって、この例では、`$(MySupportedVersion)`、`$(MyRequiredVersion)`、および `$(MySafeMode)` は既に定義されています。
 
 ```xml
 <PropertyGroup>
@@ -136,6 +145,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [方法: ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)

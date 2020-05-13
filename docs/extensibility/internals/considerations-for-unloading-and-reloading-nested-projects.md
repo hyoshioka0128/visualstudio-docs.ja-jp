@@ -1,40 +1,40 @@
 ---
-title: 入れ子にプロジェクトのアンロードと再ロードに関する考慮事項 |Microsoft Docs
+title: ネストされたプロジェクトのアンロードと再ロードに関する考慮事項 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, unloading and reloading
 - projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a45cf72f09ddf4e5ac1d68b59c2b13e64982744
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ab705953eea1fcac99883bb4f88c0e95eced108
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335541"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709297"
 ---
-# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>アンロード中で入れ子になったプロジェクトを再読み込みに関する考慮事項
+# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>入れ子になったプロジェクトのアンロードと再ロードに関する考慮事項
 
-入れ子になったプロジェクトの種類を実装するときに、アンロード、プロジェクトの再読み込みすると、追加の手順を行う必要があります。 ソリューションのイベント リスナーを正しく通知するを上げる必要があります正しく、`OnBeforeUnloadProject`と`OnAfterLoadProject`イベント。
+入れ子になったプロジェクトの種類を実装する場合は、プロジェクトをアンロードして再読み込みするときに、追加の手順を実行する必要があります。 ソリューション イベントにリスナーに正しく通知するには、 イベントと`OnBeforeUnloadProject``OnAfterLoadProject`イベントを正しく発生させる必要があります。
 
-これらのイベントを発生させる理由の 1 つが、ソース コード管理 (SCC) です。 サーバーから項目を削除し、それらを追加するには、ソース コード管理をしたくないとして*新しい*がある場合、 `Get` SCC から操作します。 その場合は、新しいファイルは、SCC から読み込まれます。 アンロードし、は異なり、場合、すべてのファイルを再読み込みする必要があります。
+これらのイベントを発生させる理由の 1 つは、ソース コード管理 (SCC) です。 SCC から`Get`操作がある場合、SCC がサーバーから項目を削除し、*新しい*アイテムとして追加し直す必要はありません。 その場合、新しいファイルは SCC からロードされます。 ファイルが異なる場合に備えて、すべてのファイルをアンロードして再読み込みする必要があります。
 
-ソース コード コントロール呼び出し`ReloadItem`します。 実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>インターフェイスを呼び出す`OnBeforeUnloadProject`と`OnAfterLoadProject`をプロジェクトを削除して再作成します。 この方法でインターフェイスを実装すると、SCC は、プロジェクトの削除し、追加をもう一度が一時的に通知されます。 そのため、SCC はプロジェクトの操作として動作がプロジェクトに*実際に*削除され、再度追加します。
+ソース コード管理`ReloadItem`呼び出し。 呼び<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>出`OnBeforeUnloadProject`し、プロジェクト`OnAfterLoadProject`を削除して再作成するインターフェイスを実装します。 この方法でインターフェイスを実装すると、SCC はプロジェクトが一時的に削除され、再度追加されたことを通知されます。 したがって、SCC はプロジェクトが*実際*に削除されて再追加されたかのようにプロジェクトを操作しません。
 
 ## <a name="reload-projects"></a>プロジェクトの再読み込み
 
-実装する入れ子になったプロジェクトの再読み込みをサポートする、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>メソッド。 実装で`ReloadItem`、再作成して、入れ子になったプロジェクトを閉じます。
+入れ子になったプロジェクトの再読み込みをサポート<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>するには、メソッドを実装します。 の`ReloadItem`実装で、入れ子になったプロジェクトを閉じてから、それらを再作成します。
 
-通常、プロジェクトの再読み込みが、IDE が発生、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>イベント。 ただし、親プロジェクトが削除され、再読み込みされる入れ子になったプロジェクトでは、IDE ではありません、プロセスを開始します。 親プロジェクトはソリューションのイベントを発生させる、IDE には、プロセスの初期化に関する情報がないため、イベントは発生します。
+通常、プロジェクトが再読み込みされると、IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A>は<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>イベントと イベントを発生させます。 ただし、削除および再読み込みされたネストされたプロジェクトの場合、親プロジェクトは IDE ではなくプロセスを開始します。 親プロジェクトはソリューションイベントを発生させず、IDE にはプロセスの初期化に関する情報がないため、イベントは発生しません。
 
-このプロセスでは、親プロジェクトの呼び出しを処理する`QueryInterface`上、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>インターフェイス。 `IVsFireSolutionEvents` 関数を生成するための IDE に指示するには、`OnBeforeUnloadProject`を入れ子になったプロジェクトをアンロードし、発生させるイベント、`OnAfterLoadProject`同じプロジェクトを再読み込みイベント。
+このプロセスを処理するために、親プロジェクトは`QueryInterface`インターフェイスを<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>呼び出します。 `IVsFireSolutionEvents`には、入れ子になったプロジェクトをアンロード`OnBeforeUnloadProject`するイベントを発生させ、イベントを発生させ、同`OnAfterLoadProject`じプロジェクトを再読み込みする関数があります。
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
-- [入れ子のプロジェクト](../../extensibility/internals/nesting-projects.md)
+- [プロジェクトのネスト](../../extensibility/internals/nesting-projects.md)

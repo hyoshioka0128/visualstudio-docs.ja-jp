@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593656"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638047"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
+
 MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
 
  .NET Framework Version 4 以降では、プロジェクト ファイルでタスクをインラインで作成できます。 個別のアセンブリを作成してタスクをホストする必要はありません。 これにより、ソース コードの追跡やタスクの配置が簡単になります。 ソース コードはスクリプトに統合されます。
 
  MSBuild 15.8 では、[RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) が追加され、.NET Standard クロスプラット フォーム インライン タスクを作成できるようになりました。  .NET Core 上でインライン タスクを使用する必要がある場合は、RoslynCodeTaskFactory を使用しなければなりません。
 ## <a name="the-structure-of-an-inline-task"></a>インライン タスクの構造
+
  インライン タスクは [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素に格納されます。 インライン タスクとそれを格納する `UsingTask` 要素は通常、 *.targets* ファイルに含められ、必要に応じて他のプロジェクト ファイルにインポートされます。 基本的なインライン タスクの例を次に示します。 このタスクでは何も実行されないことに注意してください。
 
 ```xml
@@ -50,7 +52,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
 - `TaskFactory` 属性は、インライン タスク ファクトリを実装するクラスの名前を指定します。
 
-- `AssemblyFile` 属性は、インライン タスク ファクトリの場所を指定します。 代わりに、`AssemblyName` 属性を使用してインライン タスク ファクトリ クラスの完全修飾名を指定することもできます。これは通常、グローバル アセンブリ キャッシュ (GAC: Global Assembly Cache) に配置されます。
+- `AssemblyFile` 属性は、インライン タスク ファクトリの場所を指定します。 代わりに、`AssemblyName` 属性を使用してインライン タスク ファクトリ クラスの完全修飾名を指定することもできます。これは通常、`$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` に配置されます。
 
 `DoNothing` タスクの残りの要素は空になっていますが、ここではインライン タスクの順序と構造を示すために含めてあります。 具体的な例については、この後の例を参照してください。
 
@@ -68,6 +70,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 > `Task` 要素に含まれる要素はタスク ファクトリによって異なります。この例では、コード タスク ファクトリが格納されています。
 
 ### <a name="code-element"></a>コード要素
+
  `Task` 要素内の最後の子要素は `Code` 要素です。 `Code` 要素では、タスクにコンパイルするコードを記述するか参照します。 `Code` 要素に含める内容は、タスクを記述する方法に応じて異なります。
 
  `Language` 属性は、コードを記述する言語を指定します。 指定できる値は、`cs` (C# の場合) または `vb` (Visual Basic の場合) です。
@@ -88,6 +91,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 > ソース ファイル内のタスク クラスを定義する場合は、クラス名が、対応する [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素の `TaskName` 属性と一致する必要があります。
 
 ## <a name="helloworld"></a>HelloWorld
+
  具体的なインライン タスクの例を次に示します。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の**出力**ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>入力パラメーターと出力パラメーター
+
  インライン タスクのパラメーターは、`ParameterGroup` 要素の子要素です。 どのパラメーターも、それを定義する要素の名前を受け取ります。 次のコードは、`Text` パラメーターを定義しています。
 
 ```xml
@@ -162,6 +167,7 @@ Log.LogError("Hello, world!");
 `Code` 要素の `Type` 属性が `Fragment` または `Method` の場合、すべてのパラメーターに対して自動的にプロパティが作成されます。 それ以外の場合は、タスクのソース コードで明示的にプロパティを宣言する必要があります。プロパティはパラメーター定義と完全に一致している必要があります。
 
 ## <a name="example"></a>例
+
  指定されたファイル内のすべてのトークンを指定された値に置き換えるインライン タスクの例を次に示します。
 
 ```xml
@@ -190,5 +196,6 @@ File.WriteAllText(Path, content);
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [チュートリアル: インライン タスクを作成する](../msbuild/walkthrough-creating-an-inline-task.md)

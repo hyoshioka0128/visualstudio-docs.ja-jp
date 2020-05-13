@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Step |Microsoft Docs
+title: Iデバッグプロセス3::ステップ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc3ffecf5a2760077c0a5da4f4508163a48ca1a4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c5c4927f3f997b7fdbdca2b32977f2aa31a51219
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313891"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723554"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-1 つの命令またはステートメントにステップ イン プロセスをさせます。
+プロセスに 1 つの命令またはステートメントをステップさせます。
 
 > [!NOTE]
-> このメソッドは、の代わりに使用する必要があります[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)します。
+> このメソッドは[、ステップ](../../../extensibility/debugger/reference/idebugprogram2-step.md)の代わりに使用する必要があります。
 
 ## <a name="syntax"></a>構文
 
@@ -48,21 +48,21 @@ int Step(
 
 ## <a name="parameters"></a>パラメーター
 `pThread`\
-[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ステップが実行されているスレッドを表すオブジェクト。
+[in]ステップされるスレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。
 
 `sk`\
-[in]1 つ、 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)値。
+[in][STEPKIND](../../../extensibility/debugger/reference/stepkind.md)値の 1 つ。
 
 `step`\
-[in]1 つ、 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)値。
+[in][STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)値の 1 つ。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。エラー コードを返しますそれ以外の場合。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 任意のスレッドの同期またはスレッド間の通信が発生したとき、プロセス内の他のスレッドは、特定のスレッドがステップ実行時に実行する必要があります。
+ スレッド間でスレッドの同期や通信が行われた場合、特定のスレッドがステップ実行しているときに、プロセス内の他のスレッドを実行する必要があります。
 
- **警告**stopping イベントまたは直接 (同期) イベントを送信しない[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md); この呼び出しを処理中にそれ以外の場合、デバッガーがハングします。
+ **警告**この呼び出しを処理する間は、停止イベントまたは即時 (同期) イベントを[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に送信しないでください。それ以外の場合は、デバッガーがハングする可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

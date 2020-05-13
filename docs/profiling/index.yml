@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
-  ms.openlocfilehash: 4c5a2cfb7d3ef7a8ad71dd7591bc147932ff0535
-  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/01/2020
-  ms.locfileid: "76923361"
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "79549915"
 landingContent:
 - title: プロファイリングについて
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
     links:
     - text: プロファイリング ツールを実行する方法
       url: running-profiling-tools-with-or-without-the-debugger.md
-- title: 作業開始
+- title: はじめに
   linkLists:
   - linkListType: quickstart
     links:
@@ -46,10 +46,12 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: コマンド ラインから CPU 使用率を測定する
-      url: profile-apps-from-command-line.md
     - text: パフォーマンスのヒント
       url: perftips.md
+    - text: コマンド ラインから CPU 使用率を測定する
+      url: profile-apps-from-command-line.md
+    - text: .NET オブジェクトのメモリ使用量の測定
+      url: dotnet-alloc-tool.md
     - text: リソース消費量を分析する (XAML)
       url: application-timeline.md
     - text: GPU 使用状況を分析する (Direct3D)

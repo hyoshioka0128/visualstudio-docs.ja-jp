@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849800"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586721"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "75849800"
 
  詳細については、こちらのビデオを参照してください。「![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")」 MSDN の「[操作方法シリーズ: UML ツールと機能拡張](https://msdn.microsoft.com/vstudio/ff859492)」を参照してください。
 
-## <a name="Requirements"></a> 要件
+## <a name="requirements"></a><a name="Requirements"></a> 必要条件
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+- [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)。
 
 - [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "75849800"
 
  詳細については、「[カスタムモデリングツールボックスアイテムの定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
 
-## <a name="validation"></a>Validation
+## <a name="validation"></a>検証
  UML モデルが指定の制約に確実に準拠するようにするための規則を定義できます。
 
  Fabrikam 社のツール開発者は、荷物取り扱いモデルでチーム メンバーが単純なミスを犯すことがないように規則を定義します。 たとえば、チェックイン デスクを保管庫に直接接続することはできません。 これらの間には、少なくともベルト コンベヤが存在する必要があります。
@@ -85,7 +85,7 @@ ms.locfileid: "75849800"
 
  詳細については、「 [UML モデルを他のモデルおよびツールと統合](../modeling/integrate-uml-models-with-other-models-and-tools.md)する」を参照してください。
 
-## <a name="generation"></a>生成
+## <a name="generation"></a>Generation
  1 つのモデルから、プログラム コード、スクリプト、構成、ドキュメント、新しいモデル、またはその他の成果物を生成できます。
 
  Fabrikam 社が設計する荷物取り扱いシステムのプログラム コードの多くは、複数のプロジェクトで共通しています。 主な変動要素は、空港における荷物の流れです。 設計チームが初期のいくつかのプロジェクトを経験した後、ツール開発者は、荷物フロー モデルから可変のプログラム コードの大部分およびその他のファイル (ユーザー ドキュメントなど) を生成するテンプレートを作成します。 これにより、新しいプロジェクトの開発時間が大幅に短縮され、エラー発生率も引き下げられます。
@@ -109,13 +109,13 @@ ms.locfileid: "75849800"
 ## <a name="domain-specific-languages"></a>ドメイン固有の言語
  特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、「[モデリング SDK For Visual Studio-ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)」を参照してください。
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
-|**カテゴリ**|**Links**|
+|**カテゴリ**|**リンク**|
 |------------------|---------------|
 |**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと機能拡張](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Visual Studio を使用した UML](https://channel9.msdn.com/posts/clinted/)|
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>参照

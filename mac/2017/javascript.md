@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984900"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript および TypeScript のサポート
@@ -43,6 +43,6 @@ Visual Studio for Mac の JavaScript IntelliSense は、型の推定、JSDoc、�
 
     ![TypeScript 定義ファイルの追加](media/javascript-image3.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [JavaScript IntelliSense (Windows の Visual Studio)](/visualstudio/ide/javascript-intellisense)

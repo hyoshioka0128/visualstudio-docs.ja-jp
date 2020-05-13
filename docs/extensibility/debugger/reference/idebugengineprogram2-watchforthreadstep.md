@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep |Microsoft Docs
+title: プログラム2:::ウォッチフォースレッドステップ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b3f8db95d6e74a2aa1d146bdd37a66803a8503f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345152"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730358"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-実行を監視します (または実行の監視を停止します)、特定のスレッドで発生します。
+指定されたスレッドで実行を監視 (または実行の監視を停止) します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,24 +47,24 @@ int WatchForThreadStep( 
 
 ## <a name="parameters"></a>パラメーター
 `pOriginatingProgram`\
-[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)ステップが実行されているプログラムを表すオブジェクト。
+[in]ステップ実行されるプログラムを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクト。
 
 `dwTid`\
-[in]ウォッチするスレッドの識別子を指定します。
+[in]監視するスレッドの識別子を指定します。
 
 `fWatch`\
-[in]0 以外の値 (`TRUE`) で識別されるスレッド上で実行の監視を始めることを意味`dwTid`。 そうしないと、0 (`FALSE`) 上で実行するための視聴を停止したことを意味`dwTid`します。
+[in]非ゼロ (`TRUE`) は、 で`dwTid`識別されるスレッドでの実行を監視開始する、それ以外の場合`FALSE`は、 0 ( `dwTid`) は、 での実行を監視しなくなることを意味します。
 
 `dwFrame`\
-[in]ステップの種類を制御するフレーム インデックスを指定します。 この値はゼロ (0)、ステップの種類が「ステップ イン」と、スレッドがで識別されるたびに、プログラムを停止する必要があります`dwTid`を実行します。 ときに`dwFrame`0 以外の場合は、ステップの種類が「ステップ オーバー」と、スレッドがで識別される場合にのみ、プログラムを停止する必要があります`dwTid`インデックスが同じか、またはよりスタックの上位フレームで実行されている`dwFrame`します。
+[in]ステップの種類を制御するフレーム インデックスを指定します。 この値がゼロ (0) の場合、ステップ・タイプは「ステップ・イン」になり、指定された`dwTid`スレッドが実行されるたびにプログラムを停止する必要があります。 ゼロ`dwFrame`以外の場合、ステップの種類は "ステップ オーバー" になり、指定された`dwTid`スレッドがスタック上でのインデックス以上のフレームで実行されている場合にのみ、プログラムを停止する必要`dwFrame`があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- セッション デバッグ マネージャー (SDM) で識別される、プログラムのステップと、`pOriginatingProgram`パラメーターがこのメソッドを呼び出すことによって接続されている他のすべてのプログラムに通知します。
+ セッション デバッグ マネージャー (SDM) は、パラメーターで識別`pOriginatingProgram`されるプログラムをステップするときに、このメソッドを呼び出すことによって、他のすべての接続されたプログラムを通知します。
 
- このメソッドは、同じスレッドがステップ実行にのみ適用されます。
+ このメソッドは、同じスレッドのステップ実行にのみ適用されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

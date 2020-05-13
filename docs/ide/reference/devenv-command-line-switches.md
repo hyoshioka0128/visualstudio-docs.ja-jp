@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595710"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255559"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンドライン スイッチ
 
@@ -72,6 +72,7 @@ VSPackage 開発に関連するスイッチの詳細については、「[VSPack
 |[/LCID または /L](lcid-devenv-exe.md)|IDE の既定の言語を設定します。 指定した言語が Visual Studio インストールに含まれていない場合、この設定は無視されます。<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Visual Studio を起動し、ログ ファイルにすべてのアクティビティを記録します。<br /><br /> `devenv /log mylogfile.xml`|
 |[/NoSplash](nosplash-devenv-exe.md)|スプラッシュ スクリーンを表示せずに IDE を開きます。<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|Visual Studio の既定の設定を復元します。 指定の `.vssettings` ファイルに準じた設定にリセットすることもできます。<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run または /R](run-devenv-exe.md)|指定したソリューションをコンパイルして実行します。<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|指定したソリューションをコンパイルして実行します。ソリューションの実行時には IDE を最小化し、ソリューションの実行終了後に IDE を終了します。<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Visual Studio をセーフ モードで起動します。 このスイッチを指定すると、既定の環境、既定のサービス、および出荷バージョンのサードパーティ パッケージのみが読み込まれます。<br /><br /> このスイッチは引数を取りません。|
@@ -89,7 +90,6 @@ VSPackage 開発に関連するスイッチの詳細については、「[VSPack
 |[/Project](project-devenv-exe.md)|ビルド、消去、または配置するプロジェクトを指定します。 このスイッチは、`/Build`、`/Rebuild`、`/Clean`、または `/Deploy` スイッチも指定した場合にのみ使用できます。<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|ビルドまたは配置するプロジェクト構成を指定します。 このスイッチは、`/Project` スイッチも指定した場合にのみ使用できます。<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|指定のソリューションの構成に従って、指定のソリューションまたはプロジェクトを消去してからビルドします。<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|Visual Studio の既定の設定を復元します。 指定の `.vssettings` ファイルに準じた設定にリセットすることもできます。<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|指定されたソリューション ファイルとそのすべてのプロジェクト ファイル、または指定されたプロジェクト ファイルを、そのファイルに対応する現在の Visual Studio の形式にアップグレードします。<br /><br /> `devenv mysln.sln /upgrade`|
 
 ## <a name="see-also"></a>関連項目

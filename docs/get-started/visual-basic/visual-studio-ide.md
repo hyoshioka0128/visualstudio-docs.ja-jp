@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306933"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
@@ -48,7 +48,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビ
 
 Visual Studio は Windows と Mac で利用できます。 [Visual Studio for Mac](/visualstudio/mac/) は Visual Studio 2017 と同じ機能を多く備え、クロスプラットフォーム アプリとモバイル アプリの開発用に最適化されています。 この記事では、Windows バージョンの Visual Studio 2017 について説明します。
 
-Community、Professional、Enterprise という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
+Visual Studio 2017 には 3 つのエディション: Community、Professional、および Enterprise があります。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
 
 ## <a name="popular-productivity-features"></a>よく使われる生産性機能
 
@@ -271,7 +271,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 IDE の他のカスタマイズ方法については、「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」をご覧ください。
 
-## <a name="create-a-program"></a>プログラムの作成
+## <a name="create-a-program"></a>プログラムを作成する
 
 簡単なプログラムを作成してみましょう。
 
@@ -447,7 +447,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> は <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> と少し異なり、出力の後に行終端記号を追加しません。 つまり、次に出力に送信されるテキストは、同じ書き出されます。 コードでこれらのメソッドをポイントすると、その説明が表示されます。
 
-7. 次に、もう一度リファクタリングを使ってコードを少し簡単にします。 `Dim now = Date.Now` の行で変数 `now` をクリックします。
+7. 次に、もう一度リファクタリングを使ってコードを少し簡単にします。 `now` の行で変数 `Dim now = Date.Now` をクリックします。
 
    その行の余白に小さいドライバー アイコンが表示されることに注意してください。
 
@@ -459,7 +459,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range="vs-2017"
 
-10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 次のような画面が出力されます。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range=">=vs-2019"
 
-10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 次のような画面が出力されます。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/vs-2019/overview-console-final.png)
 
@@ -499,7 +499,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 Visual Studio でのデバッグの詳細については、[デバッガーの機能ツアー](../../debugger/debugger-feature-tour.md)に関するページをご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 以下の入力記事のいずれかに従って、Visual Studio をさらに詳しく調べます。
 
@@ -509,7 +509,7 @@ Visual Studio でのデバッグの詳細については、[デバッガーの�
 > [!div class="nextstepaction"]
 > [プロジェクトとソリューションについて学習する](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のその他の機能](../../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします

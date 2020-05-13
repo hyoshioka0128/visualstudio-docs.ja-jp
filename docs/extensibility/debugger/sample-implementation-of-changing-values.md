@@ -1,44 +1,44 @@
 ---
-title: サンプル値の変更の実装 |Microsoft Docs
+title: 値の変更の実装例 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f500ecd327fd641af2bdf881a26e35024d2b856d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315037"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713112"
 ---
-# <a name="sample-implementation-of-changing-values"></a>値を変更するサンプルの実装
+# <a name="sample-implementation-of-changing-values"></a>変更値の実装例
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- 表示されるすべてのローカル、**ローカル**ウィンドウには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)関連付けられているオブジェクト。 これは、`IDebugProperty2`オブジェクトには、ローカルの名前、値、および種類が含まれています。 ユーザーは、ローカルの値を変更するときに Visual Studio を呼び出す[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)ローカル メモリ内の値を更新します。 この例では、ローカルで表される、`CFieldProperty`を実装するクラス、`IDebugProperty2`インターフェイス。
+ **[ローカル**] ウィンドウに表示されるすべてのローカルには[、IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトが関連付けられます。 この`IDebugProperty2`オブジェクトには、ローカルの名前、値、および型が含まれます。 ユーザーがローカルの値を変更すると、メモリ内のローカルの値を更新するために[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)を呼び出します。 この例では、ローカルは`CFieldProperty``IDebugProperty2`インターフェイスを実装するクラスによって表されます。
 
 > [!NOTE]
-> **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。
+> **ウォッチ式**および**クイックウォッチ**式の場合、変更される値は MyCEE サンプルの`CValueProperty`クラスによって表されます。 ただし、の実装`IDebugProperty2::SetValueAsString`はここで示すのと同じです。
 
- 実装`IDebugProperty2::SetValueAsString`は、次のタスクを実行します。
+ の`IDebugProperty2::SetValueAsString`実装は、次のタスクを実行します。
 
-1. 値を生成する式を評価します。
+1. 式を評価して値を生成します。
 
-2. 関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置に、生成するオブジェクト、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。
+2. 関連付けられた[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトをそのメモリの場所にバインドし[、IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクトを生成します。
 
-3. 一連のバイト値に変換します。
+3. 値を一連のバイトに変換します。
 
-4. 呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。
+4. メモリにバイトを格納する[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)を呼び出します。
 
 ## <a name="managed-code"></a>マネージド コード
- 次のコードは、実装の`IDebugProperty2::SetValueAsString`マネージ コードでします。
+ 次のコードは、マネージ`IDebugProperty2::SetValueAsString`コードの実装です。
 
 ```csharp
 namespace EEMC
@@ -223,7 +223,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>アンマネージ コード
- 次のコードは、実装の`IDebugProperty2::SetValueAsString`マネージ コードでします。 ヘルパー関数`FieldCoerceValueType`(表示されていません) の力を`VARIANT`値では、特定の種類と指定するとは、型の 1 つ`FieldSetValue`を処理できます。
+ 次のコードは、マネージ`IDebugProperty2::SetValueAsString`コードの実装です。 ヘルパー関数`FieldCoerceValueType`(図示せず)`VARIANT`は、a を特定の型に強制し、値が処理`FieldSetValue`できる型の 1 つであることを確認します。
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(
@@ -421,5 +421,5 @@ HRESULT FieldSetValue(
 ```
 
 ## <a name="see-also"></a>関連項目
-- [ローカルの値を変更します。](../../extensibility/debugger/changing-the-value-of-a-local.md)
+- [ローカルの値の変更](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

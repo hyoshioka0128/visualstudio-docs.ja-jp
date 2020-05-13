@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567217"
 ---
 # <a name="customize-startup"></a>スタートアップをカスタマイズする
@@ -32,7 +32,7 @@ Visual Studio のスタートアップ エクスペリエンスは何種類か�
 
 ## <a name="to-change-the-startup-item"></a>スタートアップ アイテムを変更する
 
-1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
+1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
 2. **[環境]** を展開し、 **[スタートアップ]** を選びます。
 
@@ -67,7 +67,7 @@ Visual Studio SDK を使用して[独自のカスタム スタート ページ�
 > [!TIP]
 > カスタム スタート ページのエラーによって Visual Studio がクラッシュする場合、セーフ モードで Visual Studio を開き、既定のスタート ページを使用するように設定します。 「[/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)
 

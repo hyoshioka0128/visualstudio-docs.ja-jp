@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION |Microsoft Docs
+title: BP_LOCATION_RESOLUTION |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_RESOLUTION structure
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: d728c0aae749caa661ae4cb8f29e13f9cd1827fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353061"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737959"
 ---
-# <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
-特定の位置にブレークポイントの解決方法をについて説明します。
+# <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
+特定の場所でのブレークポイントの解決方法を説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,17 +34,17 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>メンバー
 `pResolution`\
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)ブレークポイントとその解決策情報の種類を決定するオブジェクト。
+ブレークポイント[の種類](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)とその解決方法を決定するオブジェクト。
 
 ## <a name="remarks"></a>Remarks
-この構造体のメンバーである、 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造体、共用体の一部として。
+この構造体は、共用体の一部として[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造のメンバーです。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

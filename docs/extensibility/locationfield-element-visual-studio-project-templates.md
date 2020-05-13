@@ -1,5 +1,5 @@
 ---
-title: LocationField 要素 (Visual Studio プロジェクト テンプレート) |Microsoft Docs
+title: ロケーションフィールド要素 (Visual Studio プロジェクト テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b440595207cee6a146e6d85ee5e9f7c492ee3eee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309169"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702884"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 要素 (Visual Studio プロジェクト テンプレート)
-指定するかどうか、**場所**テキスト ボックスに、**新しいプロジェクト** ダイアログ ボックスが有効になっている、無効になっている、またはプロジェクトのテンプレートの非表示になります。
+# <a name="locationfield-element-visual-studio-project-templates"></a>場所フィールド要素
+プロジェクト テンプレートの [**新しいプロジェクト**] ダイアログ ボックスの **[場所**] テキスト ボックスを有効にするか、無効にするか、非表示にするかを指定します。
 
- \<VSTemplate > \<TemplateData > \<LocationField >
+ \<VS テンプレート\<>\<テンプレートデータ>ロケーション フィールド>
 
 ## <a name="syntax"></a>構文
 
@@ -35,34 +35,34 @@ ms.locfileid: "66309169"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、いずれかでどのように表示を定義、**新しいプロジェクト**します。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、**新しいプロジェクト**での表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
  有効なテキスト値は次のとおりです。
 
-- `Enabled`、いることを指定します、**場所**のボックス、**新しいプロジェクト** ダイアログ ボックスが有効にします。
+- `Enabled`をクリックすると、[**新しいプロジェクト**] ダイアログ ボックスの **[場所**] ボックスが有効になります。
 
-- `Disabled`、いることを指定します、**場所**のボックス、**新しいプロジェクト** ダイアログ ボックスが無効になります。
+- `Disabled`を指定すると、[**新しいプロジェクト**] ダイアログ ボックスの **[場所**] ボックスが無効になります。
 
-- `Hidden`、いることを指定します、**場所**のボックス、**新しいプロジェクト** ダイアログ ボックスは表示されません。
+- `Hidden`をクリックすると、[**新しいプロジェクト**] ダイアログ ボックスの **[場所**] ボックスが非表示になります。
 
 ## <a name="remarks"></a>Remarks
  既定値は `Enabled` です。
 
- **場所**テキスト ボックスに、**新しいプロジェクト**ダイアログ ボックスでユーザーを新しいプロジェクトを保存する既定のディレクトリを変更します。
+ [**新しいプロジェクト**] ダイアログ ボックスの **[場所**] テキスト ボックスでは、新しいプロジェクトを保存する既定のディレクトリを変更できます。
 
- 指定された値、`Location`基になるプロジェクト システムがサポートされている場合に、要素は、ダイアログ ボックスで受け入れられますのみです。
+ 要素で指定された`Location`値は、基になるプロジェクト システムがサポートする場合にのみダイアログ ボックスで受け入れられます。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] テンプレートのメタデータの例を次に示します。
@@ -93,5 +93,5 @@ ms.locfileid: "66309169"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

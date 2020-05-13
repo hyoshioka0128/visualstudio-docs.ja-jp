@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596685"
 ---
 # <a name="replace-command"></a>Replace コマンド
@@ -34,11 +34,11 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>引数
 `findwhat`
 
-必須です。 検索するテキスト。
+必須。 検索するテキスト。
 
 `replacewith`
 
-必須です。 一致したテキストと置き換えるテキスト。
+必須。 一致したテキストと置き換えるテキスト。
 
 ## <a name="switches"></a>スイッチ
 /all または /a
@@ -100,10 +100,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

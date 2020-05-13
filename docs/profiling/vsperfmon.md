@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 50519554f7ec71e277dc776b05bc2967c1071f52
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779897"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -36,12 +36,12 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |オプション|説明|
 |-------------|-----------------|
 |**U**|リダイレクトされたコンソール出力は Unicode として書き込まれます。  このオプションは、最初に指定する必要があります。|
-|**OUTPUT:** `<` *ファイル名* `>`|指定したファイル名に出力をリダイレクトします。|
+|**OUTPUT:** `<` *file name* `>`|指定したファイル名に出力をリダイレクトします。|
 |**TRACE**|インストルメンテーション プロファイル用のパフォーマンス モニターを開始します。|
 |**SAMPLE**|サンプリング プロファイル用のパフォーマンス モニターを開始します。|
 |**COVERAGE**|コード カバレッジ コレクション用のパフォーマンス モニターを開始します。|
 |**CONCURRENCY**|リソース競合プロファイル用のパフォーマンス モニターを開始します。|
-|**USER:** `[` *ドメイン* `\]` *ユーザー名*|指定したアカウントからパフォーマンス モニターへのクライアント アクセスを許可します。|
+|**USER:** `[` *domain* `\]` *username*|指定したアカウントからパフォーマンス モニターへのクライアント アクセスを許可します。|
 |**CROSSSESSION**|セッション間プロファイルを有効にします。|
 |**COUNTER** `:cfg`|インストルメンテーション (TRACE) プロファイル方法を使用するときに、各インストルメンテーション ポイントで収集する CPU カウンターを指定します。 複数の COUNTER オプションを指定すると、複数のカウンター データを収集できます。<br /><br /> カウンター (*cfg*) データを指定するには、次の構文を使用します。<br /><br /> **CounterName** [ **,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** は、VSPerfCmd /QueryCounters コマンドによって返されるカウンターの名前です。<br />-   **Reload** は、カウンター イベントのサンプリング間隔です。 インストルメンテーション メソッドで *Reload* を使用しないでください。<br />-   指定すると、プロファイル ツールのレポートの列名が **CounterName** から **FriendlyName** に置き換えられます。|
 |**WINCOUNTER** `:path`|マーク データと共に含める Windows パフォーマンス カウンターを指定します。 `path` は、PDH カウンター パス形式の Windows パフォーマンス カウンター文字列です。 次に例を示します。<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|

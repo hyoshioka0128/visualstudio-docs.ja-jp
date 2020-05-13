@@ -10,13 +10,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591087"
 ---
-# <a name="how-to-create-multi-project-templates"></a>方法: 複数プロジェクトのテンプレートを作成する
+# <a name="how-to-create-multi-project-templates"></a>方法 : 複数プロジェクトのテンプレートを作成する
 
 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 複数プロジェクトのテンプレートに基づくプロジェクトが作成されると、テンプレート内のすべてのプロジェクトがソリューションに追加されます。
 
@@ -24,9 +24,9 @@ ms.locfileid: "75591087"
 
 複数プロジェクトのテンプレートは、1 つのプロジェクトのテンプレートとは動作が異なります。 これらには、次の固有の特性があります。
 
-- 複数プロジェクトのテンプレートの個別のプロジェクトには、テンプレートを使用して新しいプロジェクトを作成するとき、名前を割り当てることができません。 代わりに、*vstemplate* ファイルの **ProjectTemplateLink** 要素の **ProjectName** 属性を使用して、各プロジェクトの名前を指定します。
+- 複数プロジェクトのテンプレートの個別のプロジェクトには、テンプレートを使用して新しいプロジェクトを作成するとき、名前を割り当てることができません。 代わりに、**vstemplate** ファイルの **ProjectTemplateLink** 要素の *ProjectName* 属性を使用して、各プロジェクトの名前を指定します。
 
-- 複数プロジェクトのテンプレートには別の言語のプロジェクトを含めることができますが、テンプレート全体そのものは 1 つのカテゴリにのみ配置できます。 *vstemplate* ファイルの **ProjectType** 要素でテンプレートのカテゴリを指定します。
+- 複数プロジェクトのテンプレートには別の言語のプロジェクトを含めることができますが、テンプレート全体そのものは 1 つのカテゴリにのみ配置できます。 **vstemplate** ファイルの *ProjectType* 要素でテンプレートのカテゴリを指定します。
 
 複数プロジェクトのテンプレートは、次の項目を含み、 *.zip* ファイルに圧縮する必要があります。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75591087"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 要素には、含まれるプロジェクトの *vstemplate* ファイルへのパスを定義する 1 つ以上の **ProjectTemplateLink** 要素を持つ **ProjectCollection** 要素が含まれます。 次に例を示します。
+- **TemplateContent** 要素には、含まれるプロジェクトの **vstemplate** ファイルへのパスを定義する 1 つ以上の **ProjectTemplateLink** 要素を持つ *ProjectCollection* 要素が含まれます。 次に例を示します。
 
     ```xml
     <TemplateContent>
@@ -88,7 +88,7 @@ ms.locfileid: "75591087"
 2. テンプレートにエクスポートする準備ができるまで、プロジェクトをカスタマイズします。
 
    > [!TIP]
-   > [テンプレート パラメーター](template-parameters.md)を使用していて、親テンプレートの変数を参照したい場合は、パラメーターの名前にプレフィックス `ext_` を付加します。 たとえば、`$ext_safeprojectname$` のようにします。 また、**ProjectTemplateLink** 要素の **CopyParameters** 属性を **true** に設定します。
+   > [テンプレート パラメーター](template-parameters.md)を使用していて、親テンプレートの変数を参照したい場合は、パラメーターの名前にプレフィックス `ext_` を付加します。 たとえば、「 `$ext_safeprojectname$` 」のように入力します。 また、**ProjectTemplateLink** 要素の **CopyParameters** 属性を **true** に設定します。
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
@@ -186,7 +186,7 @@ ms.locfileid: "75591087"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [方法: プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)

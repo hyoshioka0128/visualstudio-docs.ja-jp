@@ -1,5 +1,5 @@
 ---
-title: CustomDataSignature 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: カスタムデータシグネチャ要素 ( Visual Studio テンプレート ) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2b4d089495245d1a37469df1dc43a19be31866
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351972"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739445"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 要素 (Visual Studio テンプレート)
-カスタム データを検索するテキストの署名を指定します。
+# <a name="customdatasignature-element-visual-studio-templates"></a>要素をカスタマイズする
+カスタム データを検索するテキスト署名を指定します。
 
- \<VSTemplate> \<TemplateData> \<CustomDataSignature>
+ \<カスタムデータシグネチャ\<>> \<VS テンプレート>テンプレートデータ
 
 ## <a name="syntax"></a>構文
 
@@ -34,25 +34,25 @@ ms.locfileid: "66351972"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、いずれかでの表示方法を定義、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、[**新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目の追加**] ダイアログ ボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、カスタム データを検索するために必要なテキストのシグネチャを持つ文字列です。
+ テキストは、カスタム データを検索するために必要なテキスト署名を持つ文字列です。
 
 ## <a name="remarks"></a>Remarks
- `CustomDataSignature` は、省略可能な要素です。
+ `CustomDataSignature` は省略可能な要素です。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [ビジュアル スタジオ テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

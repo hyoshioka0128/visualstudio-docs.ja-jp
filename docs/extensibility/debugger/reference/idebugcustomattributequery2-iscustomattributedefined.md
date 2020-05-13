@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
+title: を定義します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e2ecd70eeeddb4b61d8ed8d307bd579c68ef519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7be649a5d65f88d8263bbe8950fda1a157855ed2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335826"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732537"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-名前でカスタム属性が存在するかどうかを判断します。
+カスタム属性が名前によって存在するかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,10 +44,10 @@ int IsCustomAttributeDefined(
 [in]検索するカスタム属性の名前を含む文字列。
 
 ## <a name="return-value"></a>戻り値
- S_OK をこのフィールドでカスタム属性が定義されている場合は、それ以外の場合は S_FALSE を返しますを返します。
+ このフィールドにカスタム属性が定義されている場合はS_OKを返し、それ以外の場合はS_FALSEを返します。
 
 ## <a name="remarks"></a>Remarks
- カスタム属性に関連付けられた属性のバイト数を取得する呼び出し、 [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)メソッド。
+ カスタム属性に関連付けられた属性バイトを取得するには[、メソッドを](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

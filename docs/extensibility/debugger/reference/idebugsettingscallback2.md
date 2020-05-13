@@ -1,24 +1,24 @@
 ---
-title: IDebugSettingsCallback2 |Microsoft Docs
+title: コールバック2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 859522ebdbe231146c73b25c5e4c92fba9809727
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2c85b54f92970dca5d712b827019300f850b03cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321941"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719946"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
-デバッグを有効にメトリックの設定を読み取るエンジン リモートです。
+デバッグ エンジンがメトリック設定をリモートで読み取ることを可能にします。
 
 ## <a name="syntax"></a>構文
 
@@ -26,33 +26,33 @@ ms.locfileid: "66321941"
 IDebugSettingsCallback2D : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
-このインターフェイスは、セッション デバッグ マネージャーのイベント コールバックによって実装され、デバッグ エンジンによって消費されるは。 これは、される可能性がありますもローカル Dbgmetric [d] .lib の代わりにします。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+このインターフェイスは、セッション デバッグ マネージャーのイベント コールバックによって実装され、デバッグ エンジンによって使用されます。 また、Dbgmetric[d].lib の代わりにローカルで使用することもできます。
 
 ## <a name="methods"></a>メソッド
-次の表は、メソッドの`IDebugSettingsCallback2`します。
+次の表に`IDebugSettingsCallback2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|言語とベンダーの識別子を指定された使用可能な式エバリュエーターを列挙します。|
-|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|メトリックが指定された、式エバリュエーターのローカル オブジェクトを取得します。|
-|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|式エバリュエーターの指定したメトリックに対応する値を取得します。|
-|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|式エバリュエーター メトリック ファイルが指定された名前またはメトリックを取得します。|
-|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|指定した名前、式エバリュエーター メトリックの一意の識別子を取得します。|
-|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|指定した名前、式エバリュエーターのメトリックの値の文字列を取得します。|
-|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|指定した名前のメトリックの値を取得します。|
-|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|指定した名前のメトリックの一意の識別子を取得します。|
-|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|指定した名前のメトリックの値の文字列を取得します。|
+|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|言語とベンダ識別子を指定して、使用可能な式エバリュエーターを列挙します。|
+|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|メトリックを指定して、式エバリュエーターのローカル オブジェクトを取得します。|
+|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|式エバリュエーターの指定されたメトリックに対応する値を取得します。|
+|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|名前またはメトリックを指定して、式エバリュエーター メトリック ファイルを取得します。|
+|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|指定された式エバリュエーター メトリックの一意の識別子を取得します。|
+|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|指定された式エバリュエーター メトリックの値文字列を取得します。|
+|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|指定された名前のメトリックの値を取得します。|
+|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|指定された名前のメトリックの一意の識別子を取得します。|
+|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|指定された名前のメトリックの値文字列を取得します。|
 
 ## <a name="requirements"></a>必要条件
-ヘッダー:Msdbg.h
+ヘッダー: Msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="example"></a>例
-次の例では、受け取る関数、 **IDebugSettingsCallback2**オブジェクトをパラメーターとして。
+次の例は、パラメーターとして**IDebugSettingsCallback2**オブジェクトを受け取る関数を示しています。
 
 ```cpp
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)

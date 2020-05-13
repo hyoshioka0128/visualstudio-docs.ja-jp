@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111307"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)
@@ -43,7 +43,7 @@ ms.locfileid: "76111307"
 
 **構成**
 
-表示または変更する構成設定を指定します。 設定は、 **[デバッグ]** (既定)、 **[リリース]** 、または **[すべての構成]** のいずれかになります。 詳細については、「[ビルド構成について](../../ide/understanding-build-configurations.md)」と「[方法:構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。
+表示または変更する構成設定を指定します。 設定は、 **[デバッグ]** (既定)、 **[リリース]** 、または **[すべての構成]** のいずれかになります。 詳細については、「[ビルド構成について](../../ide/understanding-build-configurations.md)」と「[方法 : 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
 **プラットフォーム**
 
@@ -85,7 +85,7 @@ ms.locfileid: "76111307"
 
 `Object` 型として宣言された変数のプロパティまたはメソッドにオブジェクトを代入する場合は、そのオブジェクトは遅延バインディングされます。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」および「[事前バインディングと遅延バインディング](/dotnet/visual-basic/programming-guide/language-features/early-late-binding)」を参照してください。
 
-適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`As` 句を使用せず、`Option Infer` をオフにして、`Dim` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」、「[Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)」、および「[Visual Basic Language Specification](/dotnet/visual-basic/reference/language-specification)」 (Visual Basic 言語仕様) を参照してください。
+適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`Dim` 句を使用せず、`As` をオフにして、`Option Infer` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」、「[Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)」、および「[Visual Basic Language Specification](/dotnet/visual-basic/reference/language-specification)」 (Visual Basic 言語仕様) を参照してください。
 
 **[Option Strict]** 設定は、[/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) コンパイラ オプションに相当します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "76111307"
 
 **[Option Strict]** を **[オン]** に設定すると、これら 3 つの警告の構成設定のすべてが **[エラー]** に設定されます。 **[Option Strict]** を **[オフ]** に設定すると、3 つの設定すべてが **[なし]** に設定されます。
 
-各警告の構成設定を個別に **[なし]** 、 **[警告]** 、または **[エラー]** に変更することができます。 3 つの警告の構成設定がすべて **[エラー]** に設定されている場合、`Option strict` ボックスに `On` が表示されます。 3 つすべてが **[なし]** に設定されている場合、このボックスには `Off` が表示されます。 これらの設定のその他の組み合わせに対しては、 **(カスタム)** が表示されます。
+各警告の構成設定を個別に **[なし]** 、 **[警告]** 、または **[エラー]** に変更することができます。 3 つの警告の構成設定がすべて **[エラー]** に設定されている場合、`On` ボックスに `Option strict` が表示されます。 3 つすべてが **[なし]** に設定されている場合、このボックスには `Off` が表示されます。 これらの設定のその他の組み合わせに対しては、 **(カスタム)** が表示されます。
 
 **Option Compare**
 
@@ -155,7 +155,7 @@ ms.locfileid: "76111307"
 
 **すべての警告を表示しない**
 
-このドキュメントで既に説明した、**条件と通知**テーブルで指定されているとおりにコンパイラに通知の発行を許可するかどうかを指定します。 既定では、このチェック ボックスはオフになっています。 警告またはエラーを発行しないようにコンパイラに指示するには、このチェック ボックスを選択します。
+このドキュメントで既に説明した、**条件と通知**テーブルで指定されているとおりにコンパイラに通知の発行を許可するかどうかを指定します。 既定では、このチェック ボックスはオフに設定されます。 警告またはエラーを発行しないようにコンパイラに指示するには、このチェック ボックスを選択します。
 
 この設定は、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) コンパイラ オプションに相当します。
 
@@ -187,8 +187,8 @@ ms.locfileid: "76111307"
 
 このボタンをクリックして、 **[コンパイラの詳細設定]** ダイアログ ボックスにアクセスします。 **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。 詳細については、「[[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [方法: ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)
+- [方法 : 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590983"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>ロード テスト シナリオにおけるテスト イテレーションの構成
@@ -62,7 +62,7 @@ ms.locfileid: "75590983"
     > [!NOTE]
     > **[テスト イテレーションの最大数]** プロパティを 0 に設定すると、イテレーションの最大数は指定されません。
 
-6. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[テスト イテレーションの最大数]** の値を使用して、ロード テストを実行します。
+6. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[テスト イテレーションの最大数]** の値を使用して、ロード テストを実行します。
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>シナリオでのテスト イテレーション間の待ち時間の指定
 
@@ -87,9 +87,9 @@ ms.locfileid: "75590983"
 
 4. **[テスト イテレーション間の待ち時間]** プロパティの値として、次のテスト イテレーションを開始する前に待機する秒数を示す数値を入力します。
 
-5. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[テスト イテレーション間の待ち時間]** の値を使用して、ロード テストを実行します。
+5. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[テスト イテレーション間の待ち時間]** の値を使用して、ロード テストを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
 - [ロード テストのためのテスト エージェントおよびテスト コントローラーの構成](../test/configure-test-agents-and-controllers-for-load-tests.md)

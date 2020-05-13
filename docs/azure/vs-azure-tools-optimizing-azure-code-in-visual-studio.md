@@ -5,25 +5,25 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e8bbf5cdf3843bbd1fafd3e8cdebec17932c3cc4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911786"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489637"
 ---
-# <a name="optimizing-your-azure-code"></a>Azure のコードの最適化
+# <a name="optimizing-your-azure-code"></a>Azure コードの最適化
 Microsoft Azure を使用するアプリケーションをプログラミングする場合、クラウド環境でのアプリケーションのスケーラビリティ、動作、パフォーマンスに関する問題の回避に役立つコーディングの手法がいくつかあります。 Microsoft では、このような一般的に発生する問題の一部を認識および特定し、その解決を支援する Azure コード分析ツールを提供しています。 このツールは、NuGet を使用して Visual Studio でダウンロードできます。
 
 ## <a name="azure-code-analysis-rules"></a>Azure コード分析規則
 Azure コード分析ツールでは、パフォーマンスに影響する既知の問題を検出したときに、以下の規則を使用して Azure コードに自動的にフラグを設定します。 検出された問題は警告またはコンパイラ エラーとして表示されます。 多くの場合、警告またはエラーを解決するためのコード修正や提案事項は電球アイコンで示されます。
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>既定 (インプロセス) のセッション状態モードを使用しない
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP0000
 
 ### <a name="description"></a>説明
@@ -34,13 +34,13 @@ AP0000
 ### <a name="reason"></a>理由
 既定では、web.config ファイルで指定されているセッション状態モードはインプロセスです。 また、構成ファイルに指定されたエントリがない場合、セッション状態モードは既定でインプロセスに設定されます。 インプロセス モードでは、Web サーバー上のメモリにセッション状態が格納されます。 インスタンスが再起動されたときや、負荷分散またはフェールオーバーのサポートに新しいインスタンスが使用されたときに、Web サーバー上のメモリに格納されているセッション状態は保存されません。 この場合、クラウドでアプリケーションのスケーラビリティを確保できなくなります。
 
-ASP.NET セッション状態では、セッション状態データに対していくつかの異なるストレージオプション (InProc、StateServer、SQLServer、Custom、および Off) がサポートされています。 [Redis の Azure セッション状態プロバイダー](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/)など、外部のセッション状態ストアでデータをホストするときは Custom モードを使用することをお勧めします。
+ASP.NET セッション状態では、セッション状態データのさまざまなストレージ オプション (InProc、StateServer、SQLServer、Custom、Off) がサポートされます。 [Redis の Azure セッション状態プロバイダー](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/)など、外部のセッション状態ストアでデータをホストするときは Custom モードを使用することをお勧めします。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 推奨されるソリューションの 1 つとして、Managed Cache Service でセッション状態を保存します。 [Redis の Azure セッション状態プロバイダー](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) を使用してセッション状態を保存する方法を確認します。 また、クラウドでアプリケーションのスケーラビリティを確保するために、他の場所にセッション状態を保存することもできます。 代替ソリューションの詳細については、「 [セッション状態モード](https://msdn.microsoft.com/library/ms178586)」をご覧ください。
 
 ## <a name="run-method-should-not-be-async"></a>Run メソッドを非同期にしない
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP1000
 
 ### <a name="description"></a>説明
@@ -51,7 +51,7 @@ AP1000
 ### <a name="reason"></a>理由
 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッド内で非同期メソッドを呼び出すと、クラウド サービスのランタイムが worker ロールを再利用します。 worker ロールが起動すると、プログラムのすべての実行が [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッド内で行われます。 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドを終了すると、worker ロールが再起動します。 worker ロールのランタイムは、非同期メソッドを検出すると、非同期メソッドの後のすべての操作をディスパッチしてから制御を戻します。 これにより、worker ロールは [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドから抜けて再起動します。 実行の次の反復では、worker ロールが非同期メソッドを再度検出して再起動することで、worker ロールももう一度再利用されます。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 すべての非同期操作を [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドの外に配置します。 次に、 [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッド内からリファクターされた非同期メソッド (RunAsync().wait など) を呼び出します。 Azure コード分析ツールにより、この問題を解決できます。
 
 次のコード スニペットは、この問題のコード修正を示しています。
@@ -85,7 +85,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Service Bus の Shared Access Signature 認証を使用する
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP2000
 
 ### <a name="description"></a>説明
@@ -96,7 +96,7 @@ AP2000
 ### <a name="reason"></a>理由
 セキュリティを強化するために、Azure Active Directory では、ACS 認証に代わって SAS 認証が使用されるようになります。 移行計画については、「 [Azure Active Directory is the future of ACS (Azure Active Directory が ACS の将来)](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) 」をご覧ください。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 アプリで SAS 認証を使用します。 次の例は、既存の SAS トークンを使用して Service Bus の名前空間またはエンティティにアクセスする方法を示しています。
 
 ```csharp
@@ -112,7 +112,7 @@ BrokeredMessage receivedMessage = sc.Receive();
 * サンプル プロジェクトについては、「 [Using Shared Access Signature (SAS) authentication with Service Bus Subscriptions (Service Bus サブスクリプションでの Shared Access Signature (SAS) 認証の使用)](https://code.msdn.microsoft.com/windowsapps/Shared-Access-Signature-0a88adf8)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>"受信ループ" を回避するために OnMessage メソッドの使用を検討する
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP2002
 
 ### <a name="description"></a>説明
@@ -127,7 +127,7 @@ AP2002
 
 既定値を使用せずに **Receive** を呼び出す場合は、必ず *ServerWaitTime* 値が 1 分を超えるようにしてください。 *ServerWaitTime* を 1 分を超える値に設定すると、メッセージが完全に受信されるまでサーバーはタイムアウトしなくなります。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 推奨される使用法については、以下のコード例をご覧ください。 詳細については、[QueueClient.OnMessage メソッド (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) および [QueueClient.Receive メソッド (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx) に関するページをご覧ください。
 
 Azure メッセージング インフラストラクチャのパフォーマンスを向上させるには、設計パターンの「 [Asynchronous Messaging Primer (非同期メッセージングの基本)](https://msdn.microsoft.com/library/dn589781.aspx)」をご覧ください。
@@ -216,7 +216,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Service Bus の非同期メソッドの使用を検討する
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP2003
 
 ### <a name="description"></a>説明
@@ -227,13 +227,13 @@ AP2003
 ### <a name="reason"></a>理由
 各呼び出しの実行時にメイン スレッドはブロックされないため、非同期メソッドを使用することで、アプリケーション プログラムのコンカレンシーが実現します。 Service Bus メッセージング メソッドを使用すると、操作 (送信、受信、削除など) の実行に時間がかかります。 この時間には、要求と応答の待機時間だけでなく、Service Bus サービスによる操作の処理時間も含まれます。 時間あたりの操作数を増やすには、操作を同時に実行する必要があります。 詳細については、「[サービス バスの仲介型メッセージングを使用するパフォーマンス改善のベスト プラクティス](https://msdn.microsoft.com/library/azure/hh528527.aspx)」をご覧ください。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 推奨される非同期メソッドの使用方法については、 [QueueClient クラス (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) に関するページをご覧ください。
 
 Azure メッセージング インフラストラクチャのパフォーマンスを向上させるには、設計パターンの「 [Asynchronous Messaging Primer (非同期メッセージングの基本)](https://msdn.microsoft.com/library/dn589781.aspx)」をご覧ください。
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Service Bus のキューとトピックのパーティション分割を検討する
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP2004
 
 ### <a name="description"></a>説明
@@ -244,7 +244,7 @@ Service Bus メッセージングでパフォーマンスを向上させるに�
 ### <a name="reason"></a>理由
 Service Bus のキューとトピックをパーティション分割すると、パフォーマンスのスループットとサービスの可用性が向上します。これは、パーティション分割されたキューまたはトピックの全体的なスループットが、1 つのメッセージ ブローカーまたはメッセージング ストアのパフォーマンスによって制限されなくなったためです。 また、メッセージング ストアが一時的に停止しても、パーティション分割されたキューまたはトピックが使用できなくなることはありません。 詳細については、「[メッセージング エンティティのパーティション分割](https://msdn.microsoft.com/library/azure/dn520246.aspx)」を参照してください。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 次のコード スニペットは、メッセージング エンティティをパーティション分割する方法を示しています。
 
 ```csharp
@@ -258,7 +258,7 @@ ns.CreateTopic(td);
 詳細については、「[Partitioned Service Bus Queues and Topics (Service Bus のパーティション分割されたキューとトピック)](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/)」(Microsoft Azure のブログ) をご覧ください。また、[Microsoft Azure Service Bus のパーティション分割されたキュー](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f)のサンプルもご覧ください。
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>SharedAccessStartTime を設定しない
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP3001
 
 ### <a name="description"></a>説明
@@ -271,7 +271,7 @@ AP3001
 
 Azure Storage での Shared Access Signature の使用方法に関する詳しいガイダンスについては、「 [Introducing Table SAS (Shared Access Signature), Queue SAS and update to Blob SAS (テーブル SAS (Shared Access Signature)、キュー SAS、および BLOB SAS の更新の概要)](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/)」(MSDN Blogs - Microsoft Azure Storage Team Blog) をご覧ください。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 共有アクセス ポリシーの開始時刻を設定するステートメントを削除します。 Azure コード分析ツールにより、この問題を解決できます。 セキュリティ管理の詳細については、設計パターンの「 [Valet Key Pattern (バレット キー パターン)](https://msdn.microsoft.com/library/dn568102.aspx)」をご覧ください。
 
 次のコード スニペットは、この問題のコード修正を示しています。
@@ -290,7 +290,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>共有アクセス ポリシーの有効期限は 5 分より長くする必要がある
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP3002
 
 ### <a name="description"></a>説明
@@ -303,7 +303,7 @@ AP3002
 
 Azure Storage での Shared Access Signature の使用方法の詳細については、「 [Introducing Table SAS (Shared Access Signature), Queue SAS and update to Blob SAS (テーブル SAS (Shared Access Signature)、キュー SAS、および BLOB SAS の更新の概要)](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/)」(MSDN Blogs - Microsoft Azure Storage Team Blog) をご覧ください。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 セキュリティ管理の詳細については、設計パターンの「 [Valet Key Pattern (バレット キー パターン)](https://msdn.microsoft.com/library/dn568102.aspx)」をご覧ください。
 
 共有アクセス ポリシーの開始時刻を指定しない場合の例を次に示します。
@@ -340,7 +340,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 詳細については、「 [共有アクセス署名の作成と使用](https://msdn.microsoft.com/library/azure/jj721951.aspx)」をご覧ください。
 
 ## <a name="use-cloudconfigurationmanager"></a>CloudConfigurationManager を使用する
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP4000
 
 ### <a name="description"></a>説明
@@ -353,14 +353,14 @@ CloudConfigurationManager は、アプリケーション環境に適した構成
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 [CloudConfigurationManager クラス](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)を使用するようにコードをリファクターします。 この問題のコード修正は、Azure コード分析ツールによって提供されます。
 
-次のコード スニペットは、この問題のコード修正を示しています。 置換
+次のコード スニペットは、この問題のコード修正を示しています。 Replace
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
-代入
+with
 
 `var settings = CloudConfigurationManager.GetSetting("mySettings");`
 
@@ -377,7 +377,7 @@ App.config ファイルまたは Web.config ファイルに構成設定を保存
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>ハードコーディングされた接続文字列を使用しない
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP4001
 
 ### <a name="description"></a>説明
@@ -388,21 +388,21 @@ AP4001
 ### <a name="reason"></a>理由
 接続文字列をすばやく変更する必要があるときに問題が生じるため、接続文字列のハードコーディングは望ましくありません。 また、プロジェクトをソース管理にチェックインする必要がある場合、ソース コードで文字列が表示される可能性があるため、ハードコーディングされた接続文字列ではセキュリティの脆弱性が生じます。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 構成ファイルまたは Azure 環境に接続文字列を保存します。
 
 * スタンドアロン アプリケーションでは、app.config を使用して接続文字列の設定を保存します。
 * IIS がホストする Web アプリケーションでは、web.config を使用して接続文字列を保存します。
 * ASP.NET vNext アプリケーションでは、configuration.json を使用して接続文字列を保存します。
 
-web.config や app.config などの構成ファイルの使用方法については、「[ASP.NET Web 構成のガイドライン](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations)」をご覧ください。 Azure 環境変数の動作の詳細については、「 [Azure websites: アプリケーション文字列と接続文字列](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)のしくみ」を参照してください。 ソース管理での接続文字列の保存については、 [ソース コード リポジトリに保存されているファイルに接続文字列などの機密情報を含めないようにする](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)ことに関する記事をご覧ください。
+web.config や app.config などの構成ファイルの使用方法については、「[ASP.NET Web 構成のガイドライン](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations)」をご覧ください。 Azure の環境変数の機能については、「 [Microsoft Azure Web Sites: How Application Strings and Connection Strings Work (Microsoft Azure Web サイト: アプリケーション文字列と接続文字列の機能)](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)」をご覧ください。 ソース管理での接続文字列の保存については、 [ソース コード リポジトリに保存されているファイルに接続文字列などの機密情報を含めないようにする](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)ことに関する記事をご覧ください。
 
 ## <a name="use-diagnostics-configuration-file"></a>診断構成ファイルを使用する
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP5000
 
 ### <a name="description"></a>説明
-Microsoft.WindowsAzure.Diagnostics プログラミング API を使用するなどして、コードで診断設定を構成するのではなく、diagnostics.wadcfg ファイル (Azure SDK 2.5 を使用する場合は diagnostics.wadcfgx) で診断設定を構成します。 これにより、コードを再コンパイルしなくても診断設定を変更できます。
+Microsoft.WindowsAzure.Diagnostics プログラミング API を使用するなどして、コードで診断設定を構成するのではなく、diagnostics.wadcfg ファイル  (Azure SDK 2.5 を使用する場合は diagnostics.wadcfgx) で診断設定を構成します。 これにより、コードを再コンパイルしなくても診断設定を変更できます。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
 
@@ -411,19 +411,19 @@ Azure SDK 2.5 (Azure Diagnostics 1.3 を使用) より前では、Azure Diagnost
 
 WAD 1.3 (Azure SDK 2.5 に付属) 以降では、コードを使用して診断を構成することはできなくなりました。 そのため、構成を提供できるのは診断拡張機能の適用時または更新時だけとなります。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 診断構成デザイナーを使用して、診断設定を診断構成ファイル (diagnostics.wadcfg、または SDK 2.5 以降では diagnostics.wadcfgx) に移動します。 また、 [Azure SDK 2.5](https://social.msdn.microsoft.com/Forums/en-US/home) をインストールし、最新の診断機能を使用することをお勧めします。
 
 1. 構成するロールのショートカット メニューで [プロパティ] をクリックし、[構成] タブをクリックします。
-2. **[診断]** セクションで、 **[診断の有効化]** チェック ボックスがオンになっていることを確認します。
-3. **[構成]** をクリックします。
+2. **[診断]** セクションで **[診断を有効にする]** チェック ボックスがオンになっていることを確認します。
+3. **[構成]** ボタンを選択します。
 
    ![[診断の有効化] オプションへのアクセス](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    詳細については、「 [Azure Cloud Services および Virtual Machines 用の診断の構成](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) 」をご覧ください。
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>DbContext オブジェクトを静的として宣言しない
-### <a name="id"></a>ID
+### <a name="id"></a>id
 AP6000
 
 ### <a name="description"></a>説明
@@ -434,7 +434,7 @@ AP6000
 ### <a name="reason"></a>理由
 DBContext オブジェクトでは、各呼び出しのクエリ結果が保持されます。 静的 DBContext オブジェクトは、アプリケーション ドメインがアンロードされるまで破棄されません。 そのため、静的 DBContext オブジェクトが大量のメモリを消費する可能性があります。
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 DBContext をローカル変数または非静的インスタンス フィールドとして宣言し、これをタスクで使用して、使用後に破棄されるようにします。
 
 次の MVC コントローラー クラスの例は、DBContext オブジェクトの使用方法を示しています。
@@ -461,5 +461,5 @@ public class BlogsController : Controller
     }
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 Azure アプリケーションの最適化とトラブルシューティングの詳細については、「[Visual Studio を使用した Azure App Service のトラブルシューティング](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)」をご覧ください。

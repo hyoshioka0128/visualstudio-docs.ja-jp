@@ -1,25 +1,25 @@
 ---
-title: ButtonText 要素 |Microsoft Docs
+title: ボタンテキスト要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321213"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739908"
 ---
-# <a name="buttontext-element"></a>ButtonText 要素
-このフィールドでは、さまざまなメニューに表示されるテキストを指定できます。 既定で、`ButtonText`要素は、メニュー コント ローラーに表示されます。 `ButtonText`他のテキスト フィールドが空白の場合に要素が既定値にもになります。 `ButtonText`場合でも、他のテキスト フィールドが指定された要素を空にすることはできません。
+# <a name="buttontext-element"></a>ボタンテキスト要素
+このフィールドでは、さまざまなメニューに表示されるテキストを指定できます。 既定では、要素`ButtonText`はメニュー コント ローラーに表示されます。 また`ButtonText`、他のテキスト フィールドが空白の場合は、要素が既定値になります。 他`ButtonText`のテキスト フィールドが指定されていても、要素を空白にすることはできません。
 
 ## <a name="syntax"></a>構文
 
@@ -31,19 +31,19 @@ ms.locfileid: "66321213"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[ 要素](../extensibility/strings-element.md)|など、テキスト要素をグループ化`ButtonText`と`CommandName`します。|
+|[文字列要素](../extensibility/strings-element.md)|や などの`ButtonText`テキスト要素を`CommandName`グループ化します。|
 
 ## <a name="text-value"></a>テキスト値
- テキスト値、`ButtonText`要素がメニュー項目、combos、およびテキストが表示されている他のユーザー インターフェイス (UI) 要素に表示されるテキストを提供します。
+ `ButtonText`要素のテキスト値は、メニュー項目、コンボ、および表示テキストを持つその他のユーザー インターフェイス (UI) 要素に表示されるテキストを提供します。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: デバッガーの拡張性の概要 |Microsoft Docs
+title: デバッガー拡張機能の概要 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,40 +7,40 @@ helpviewer_keywords:
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e2dabf18d3d00034d65a94c41f2e435ad64114
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350013"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738593"
 ---
-# <a name="get-started-with-debugger-extensibility"></a>デバッガーの拡張性を概要します。
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]の作成し、カスタマイズのデバッガーのコンポーネント内からプログラムをデバッグするために使用する必要のある情報を提供します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。
+# <a name="get-started-with-debugger-extensibility"></a>デバッガーの機能拡張の概要
+では[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、環境内からプログラムをデバッグするために使用するデバッガ コンポーネントを作成およびカスタマイズするために必要[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]な情報を提供します。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] デバッグと広範な使いやすさの前に行われるテストから派生した機能強化が追加[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガー。 使用することができます[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]をステップ実行するか、多言語アプリケーションでは、デバッグ、稼働中のアプリケーションと多言語ソリューションのデバッグ中に変数の編集を実装できます。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグは、以前[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のデバッガーで実行される広範なユーザビリティ テストから派生した改善を追加しました。 デバッグを使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]して、複数言語のアプリケーションをステップ実行したり、アプリケーションや多言語ソリューションのデバッグ中に変数のリアルタイムで編集を実装したりできます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] デバッグして、実行されたプロセス外の - デバッグ中のプログラムでは、さほど、アプリケーションのプロセス空間では、そのため。 その結果、デバッグ、プログラムの影響を与えずに、デバッガーで対話するコンポーネントを記述しやすくなります。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグは、デバッグ中のプログラムでプロセス外で実行されるため、アプリケーションのプロセス空間での侵入が少なくなります。 したがって、デバッグ プログラムに影響を与えることなく、デバッガーと対話するコンポーネントを簡単に作成できます。
 
- 最適に使用する、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、次のものでは、理解しておく必要があります。
+ を最大限に活用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]するには、次の項目について理解している必要があります。
 
-- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE)
+- 統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]開発環境 (IDE)
 
 - C++ プログラミング言語
 
 - ATL COM
 
 ## <a name="in-this-section"></a>このセクションの内容
- [デバッガーを拡張するためのロードマップ](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)で、コンパイラとその出力によって、製品でのデバッグの実装プロセスについて説明します。
+ [デバッガーを拡張するためのロードマップ](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)コンパイラとその出力に応じて、製品にデバッグを実装するプロセスについて説明します。
 
- [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)の概要、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジン (DE)、式エバリュエーター (EE) およびシンボル ハンドラー (SH) のコンポーネントをデバッグします。
+ [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジン (DE)、式エバリュエーター (EE)、およびシンボル ハンドラー (SH) を含むデバッグ コンポーネントの概要を提供します。
 
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)デバッグ アーキテクチャの主要な概念について説明します。
+ [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)デバッグアーキテクチャの主要な概念について説明します。
 
- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)デバッグ エンジン (DE) が同時にして動作し、コード、ドキュメント、および式の評価コンテキスト内で方法について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。
+ [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)デバッグ エンジン (DE) がコード、ドキュメント、および式の評価コンテキスト内で同時に動作する方法について説明します。 3 つのコンテキストのそれぞれについて、そのコンテキストに関連する場所、位置、または評価について説明します。
 
- [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)さまざまなプログラムの起動や式の評価などのタスクのデバッグへのリンクが含まれています。
+ [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)プログラムの起動や式の評価など、さまざまなデバッグ タスクへのリンクが含まれています。

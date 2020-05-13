@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950578"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>R Tools for Visual Studio のヘルプ
@@ -24,7 +24,7 @@ R のヘルプは、Visual Studio の対話型ウィンドウに直接統合さ�
 > [!Tip]
 > ヘルプ ウィンドウは、Visual Studio のその他すべてのウィンドウと同様に、好みに応じて配置およびドッキングすることができます。 「[Visual Studio のウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)」を参照してください。
 >
-> また、**[R Tools]** > **[オプション]** メニューを選択して、**[R ヘルプ ブラウザー]** プロパティに `External` を設定し、ブラウザーでヘルプの結果を開くことができます。 [オプション](options-for-r-tools-in-visual-studio.md)に関するページを参照してください。
+> また、 **[R Tools]**  >  **[オプション]** メニューを選択して、 **[R ヘルプ ブラウザー]** プロパティに `External` を設定し、ブラウザーでヘルプの結果を開くことができます。 [オプション](options-for-r-tools-in-visual-studio.md)に関するページを参照してください。
 
 ヘルプを検索するには、`??` に続けて検索用語を指定します。 検索用語にスペースが含まれる場合は、用語を引用符で囲みます。
 
@@ -48,15 +48,15 @@ R のヘルプは、Visual Studio の対話型ウィンドウに直接統合さ�
     ![コンテキスト メニューを右クリックしてヘルプを呼び出す](media/help-right-click.png)
 
 > [!Tip]
-> ブラウザーで統合ヘルプを開くには、**[R Tools]** > **[オプション]** を選択して、**[F1 Web ブラウザー]** に `External` を設定します。 [オプション](options-for-r-tools-in-visual-studio.md)に関するページを参照してください。
+> ブラウザーで統合ヘルプを開くには、 **[R Tools]**  >  **[オプション]** を選択して、 **[F1 Web ブラウザー]** に `External` を設定します。 [オプション](options-for-r-tools-in-visual-studio.md)に関するページを参照してください。
 
 ## <a name="integrated-stackoverflow-search"></a>StackOverflow 検索の統合
 
-R ドキュメントでの検索に加えて、開発者はコードを記述するときに StackOverflow を検索することが多いです。 RTVS では、このプロセスも効率化されます。 用語または選択範囲を右クリックし、**[Web で <用語> を検索します]** コマンド (**Ctrl** + **F1** キー) を選択すると、Visual Studio からウィンドウが開き、StackOverflow を対象に検索結果が表示されます。
+R ドキュメントでの検索に加えて、開発者はコードを記述するときに StackOverflow を検索することが多いです。 RTVS では、このプロセスも効率化されます。 用語または選択範囲を右クリックし、 **[Web で <用語> を検索します]** コマンド (**Ctrl** + **F1** キー) を選択すると、Visual Studio からウィンドウが開き、StackOverflow を対象に検索結果が表示されます。
 
 ![Visual Studio の Web 検索結果](media/help-web-search-results.png)
 
-**[R Tools]** > **[オプション]** > **[F1 Web 検索文字列]** オプションを使用して、追加されたスコープ文字列 `R site:stackoverflow` を変更できます。
+**[R Tools]**  >  **[オプション]**  >  **[F1 Web 検索文字列]** オプションを使用して、追加されたスコープ文字列 `R site:stackoverflow` を変更できます。
 
 ![[F1 Web 検索文字列] オプションを変更する](media/options-dialog.png)
 

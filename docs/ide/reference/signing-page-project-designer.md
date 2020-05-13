@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597335"
 ---
 # <a name="signing-page-project-designer"></a>[署名] ページ (プロジェクト デザイナー)
@@ -41,7 +41,7 @@ ms.locfileid: "75597335"
 
 **[ClickOnce マニフェストに署名する]** チェック ボックス
 
-公開キーと秘密キーのペアを使用して、アプリケーション マニフェストと配置マニフェストに署名するには、このチェック ボックスを選択します。 この方法の詳細については、「[方法 : アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
+公開キーと秘密キーのペアを使用して、アプリケーション マニフェストと配置マニフェストに署名するには、このチェック ボックスを選択します。 この方法の詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
 
 **[ストアから選択]** ボタン
 
@@ -75,7 +75,7 @@ ms.locfileid: "75597335"
 
 アセンブリに署名し、厳密な名前のキー ファイルを作成するには、このチェック ボックスをオンにします。 **プロジェクト デザイナー**を使用してアセンブリに署名する詳細については、「[方法: アセンブリに署名する (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)」を参照してください。
 
-このオプションは、Windows ソフトウェア開発キット (Windows SDK) で提供される Al.exe ツールを使用して、アセンブリに署名します。 Al.exe の詳細については、「[方法: 厳密な名前でアセンブリに署名する](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)」を参照してください。
+このオプションは、Windows ソフトウェア開発キット (Windows SDK) で提供される Al.exe ツールを使用して、アセンブリに署名します。 Al.exe の詳細については、「[方法 : 厳密な名前でアセンブリに署名する](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)」を参照してください。
 
 **[厳密な名前のキー ファイルを選択してください]** 一覧
 
@@ -98,11 +98,11 @@ ms.locfileid: "75597335"
 > [!NOTE]
 > アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [アセンブリおよびマニフェストへの署名の管理](../../ide/managing-assembly-and-manifest-signing.md)
-- [方法: アプリケーション マニフェストと配置マニフェストの署名](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [方法 : アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [方法: アセンブリに署名する (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [方法: 厳密な名前でアセンブリに署名する](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [厳密な名前付きアセンブリ](/dotnet/framework/app-domains/strong-named-assemblies)

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare |Microsoft Docs
+title: 2::比較 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::Compare
 ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81398c79289786d2c63fa6f37725c295b690d905
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327551"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720638"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-別の 1 つの参照を比較します。 将来使用するために予約されています。
+ある参照を別の参照と比較します。 将来利用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -43,10 +43,10 @@ int Compare ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwCompare`\
-[in]値、 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列挙操作を指定する、比較、たとえば、同じか、以下よりも、またはより大きい。
+[in]比較演算を指定する[REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列挙体の値。
 
 `pReference`\
-[in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)と比較する参照を表すオブジェクト。
+[in]比較対象の参照を表す[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

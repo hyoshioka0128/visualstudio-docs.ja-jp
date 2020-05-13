@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Emulator for Android のトラブルシューティング | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 author: conceptdev
 ms.author: crdun
 manager: crdun
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777814"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77272074"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
@@ -23,7 +25,7 @@ ms.locfileid: "72777814"
 > [!WARNING]
 > エミュレーターがインストールされている場合は、セットアップ プログラムがソフトウェア実行の前提条件をチェックします。 前提条件が存在しない場合、警告が表示されますが、インストールでは必要ありません。
 
- このトピックは、次のセクションで構成されています。
+ このトピックの内容は次のとおりです。
 
 - [開始する前に](#BeforeYouStart)
 
@@ -59,7 +61,7 @@ ms.locfileid: "72777814"
 
 - [サポート リソース](#Support)
 
-## <a name="BeforeYouStart"></a> 開始する前に
+## <a name="BeforeYouStart"></a> 開始前の準備
  トラブルシューティングを開始する前に、次のトピックを参照すると便利です。
 
 - [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -173,13 +175,13 @@ ms.locfileid: "72777814"
 
      - Trusted Execution を無効にする
 
-       詳細については、TechNet 記事「Hyper-V: How to Fix BIOS Errors Enabling Hyper-V」 (Hyper-V を有効にして BIOS エラーを修正する方法) を参照してください。
+       詳細については、TechNet の記事「Hyper-v を有効にして BIOS エラーを修正する方法」を参照してください。
 
   5. 少なくとも 4 GB のシステム メモリがあり、リソースを大量に消費する他のプログラムおよびプロセスによって消費されていないことを確認します。
 
   6. Windows 8 Professional 以上を実行していることを確認します (Windows Server 2008 はサポートされていません)。 Windows Server 2012 はサポートされていますが、デスクトップ エクスペリエンスを有効にする必要があります。
 
-     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー** + **R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
+     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー**+**R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
 
      プロセッサが最小要件を満たしているにもかかわらず、ハイパーバイザーでまだ障害が発生する場合は、コンピューターに使用可能な BIOS アップグレードがあるかどうかを確認してみてください。 アップグレードがあり、アップグレードすることを選択する場合は、BIOS のアップグレード時に製造元からの注意事項 (BIOS が完全に破損する可能性のある、停電により BIOS ファームウェアのアップグレードが中断されないようにするなど) をすべて確認してください。
 
@@ -191,9 +193,9 @@ ms.locfileid: "72777814"
 
    一般に、Windows 8 および Hyper-V と互換性のあるソフトウェアを更新するかどうかは、製品の開発者の責任となります。
 
-   次の製品は、Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性があります: VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、Cisco VPN クライアントの一部のバージョン、およびその他の仮想化システム。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
+   Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性がある製品には、VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、一部のバージョンの Cisco VPN クライアント、およびその他の仮想化システムがあります。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
 
-   *回避策*として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには以下のようなものがあります。
+   *回避策*として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには次が含まれます。
 
   - ウイルス対策アプリケーション (ネットワーク スタックにフックする)
 
@@ -237,7 +239,7 @@ ms.locfileid: "72777814"
 
      この手法を使用する場合の欠点は、新しいサード パーティ製品でサポートされていないドライバーがインストールされるたび、またはエミュレーターがインストールされるたびに、これらの手順を繰り返す必要があることです。
 
-     サード パーティ製品をアンインストールした後で、Windows Phone Emulator Internal Switch を復元する必要があります。 これを行うには、次のようにします。
+     サード パーティ製品をアンインストールした後で、Windows Phone Emulator Internal Switch を復元する必要があります。 その手順を次に示します。
 
   - Hyper V を開き、仮想スイッチ マネージャーに移動します。 「Windows Phone Emulator Internal Switch」という名前の仮想スイッチを作成し、その接続の種類を **内部ネットワーク**に設定します。
 
@@ -254,7 +256,7 @@ ms.locfileid: "72777814"
 
   この問題を解決するには、マザーボードの BIOS 設定で USB3 を無効にして、コンピューターを再起動します。 次に、Gigabyte からマザーボードの BIOS の更新プログラムがリリースされているかどうかを確認します。
 
-  詳細については、次の内容に関するサポート技術情報の記事を参照してください: [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/en-us/kb/2693144)。
+  詳細については、サポート技術情報の記事「 [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/en-us/kb/2693144)」を参照してください。
 
 ## <a name="ADB"></a> Visual Studio がエミュレーターにアプリを配置しようとして行き詰まっているか、エミュレーターが他の IDE でデバッグ ターゲットとして表示されません。
  エミュレーターが実行されていても、ADB (Android Debug Bridge) に接続されているように見えない、または ADB を利用する Android ツール (Android Studio や Eclipse など) 内で見えない場合は、エミュレーターが ADB を検索する場所を調整する必要があります。 エミュレーターはレジストリ キーを使用して、Android SDK の基本場所を識別し、そのディレクトリで \platform-tools\adb.exe ファイルを検索します。 エミュレーターで使用される Android SDK パスを変更するには、次のようにします。

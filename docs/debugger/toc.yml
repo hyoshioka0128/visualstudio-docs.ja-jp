@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: C++ アプリをデバッグする
       href: quickstart-debug-with-cplusplus.md
-    - name: ASP.NET アプリをデバッグする
+    - name: ASP.NET Core アプリをデバッグする
       href: quickstart-debug-aspnet.md
 - name: チュートリアル
   items:
@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: IIS コンピューター上の ASP.NET のリモート デバッグ
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Azure での ASP.NET のリモート デバッグ
+        - name: Azure での ASP.NET Core のリモート デバッグ
           href: remote-debugging-azure.md
         - name: 'C# プロジェクトまたは Visual Basic プロジェクトのリモート デバッグ'
           href: remote-debugging-csharp.md
         - name: C++ Project プロジェクトのリモート デバッグ
           href: remote-debugging-cpp.md
+        - name: Linix での .NET Core のリモート デバッグ
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: リモート デバッガーのポートの割り当て
           href: remote-debugger-port-assignments.md
         - name: Windows ファイアウォールをリモート デバッグ用に構成する
@@ -445,7 +447,7 @@
             - name: デバッグ中に XAML のプロパティを調べます。
               href: inspect-xaml-properties-while-debugging.md
             - name: 実行中の XAML コードを記述およびデバッグする
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: Blend での XAML のデバッグ
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML と CSS
@@ -505,7 +507,7 @@
                 - name: デバッグ中に XAML のプロパティを調べます。
                   href: inspect-xaml-properties-while-debugging.md
                 - name: 実行中の XAML コードを記述およびデバッグする
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: WPF ツリー ビジュアライザーを使用する
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF トレース情報を表示する
@@ -588,8 +590,6 @@
                   items:
                     - name: COM サーバーおよび COM コンテナーのデバッグ
                       href: com-server-and-container-debugging.md
-                    - name: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX コントロール
                   items:
                     - name: ActiveX コントロールをデバッグする

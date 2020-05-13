@@ -1,5 +1,5 @@
 ---
-title: ツールバーにメニュー コント ローラーの追加 |Microsoft Docs
+title: ツールバーへのメニューコントローラの追加 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,39 +7,39 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaa53a9bf8d33ad145d75bdb2d72e6820f806711
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4dcb9e51f6633476a8f0eadea30da513e5ef760
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349809"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740318"
 ---
-# <a name="add-a-menu-controller-to-a-toolbar"></a>ツールバーにメニュー コント ローラーを追加します。
-このチュートリアルの[ツール ウィンドウにツールバーを追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)チュートリアルとツール ウィンドウのツールバーにメニュー コント ローラーを追加する方法について説明します。 以下に示す手順も適用できますで作成したツールバーに、[ツールバーを追加](../extensibility/adding-a-toolbar.md)チュートリアル。
+# <a name="add-a-menu-controller-to-a-toolbar"></a>メニュー コントローラをツールバーに追加する
+このチュートリアルでは、[ツール ウィンドウへのツール バーの追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)に関するチュートリアルを参照し、ツール ウィンドウのツール バーにメニュー コントローラーを追加する方法を示します。 ここに示す手順は、ツールバーの追加のチュートリアルで作成した[ツールバーにも](../extensibility/adding-a-toolbar.md)適用できます。
 
-メニュー コント ローラーは、分割コントロールです。 メニュー コント ローラーの左側にある、最後に使用されたコマンドを表示してをクリックして行うことができます。 メニュー コント ローラーの右側にある矢印をクリックすると、その他のコマンドの一覧を開きます。 コマンドの実行の一覧でコマンドをクリックして、メニュー コント ローラーの左側にあるコマンドに置き換えられます。 これで、メニュー コント ローラーは、一覧から最後に使用されたコマンドは常に表示されるコマンド ボタンのように動作します。
+メニュー コントローラは分割コントロールです。 メニュー コントローラの左側には最後に使用したコマンドが表示され、クリックして実行できます。 メニュー コントローラの右側は矢印で、クリックすると追加コマンドの一覧が表示されます。 一覧のコマンドをクリックすると、コマンドが実行され、メニュー コントローラの左側のコマンドが置き換えられます。 このように、メニュー コントローラは、常に最後に使用したコマンドを一覧から表示するコマンド ボタンのように動作します。
 
-メニューにメニュー コント ローラーを表示できますが、ツールバーに最もよく使われます。
+メニュー コントローラはメニューに表示できますが、ツールバーで最もよく使用されます。
 
 ## <a name="prerequisites"></a>必須コンポーネント
-Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
+Visual Studio 2015 以降では、ダウンロード センターから Visual Studio SDK をインストールしません。 これは、Visual Studio のセットアップのオプション機能として含まれています。 VS SDK は後でインストールすることもできます。 詳細については、「 [Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-## <a name="create-a-menu-controller"></a>メニュー コント ローラーを作成します。
+## <a name="create-a-menu-controller"></a>メニュー コントローラを作成する
 
-1. 説明されている手順に従って[ツール ウィンドウにツールバーを追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)ツールバーのあるツール ウィンドウを作成します。
+1. ツールバーを持つツール ウィンドウを作成するには、「[ツール ウィンドウにツール バーを追加する](../extensibility/adding-a-toolbar-to-a-tool-window.md)」で説明されている手順に従います。
 
-2. *TWTestCommandPackage.vsct*Symbols セクションに移動します。 という名前の GuidSymbol 要素で**guidTWTestCommandPackageCmdSet**、メニュー コント ローラー、メニュー コント ローラーのグループ、および 3 つのメニュー項目を宣言します。
+2. の*TWTestCommandPackage.vsct*[シンボル] セクションに移動します。 guidSymbol 要素で**guidTWTestCommandPackageCmdSet**を宣言するメニュー コント ローラー、メニュー コント ローラー グループ、および 3 つのメニュー項目。
 
     ```xml
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />
     ```
 
-3. メニューのセクションで、最後のメニュー エントリの後に、メニューとしてメニュー コント ローラーを定義します。
+3. メニューセクションで、最後のメニューエントリの後に、メニューコントローラをメニューとして定義します。
 
     ```xml
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">
@@ -54,9 +54,9 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     </Menu>
     ```
 
-    `TextChanges`と`TextIsAnchorCommand`フラグは、選択した最後のコマンドを反映するためにメニュー コント ローラーを含める必要があります。
+    最後`TextChanges`に`TextIsAnchorCommand`選択したコマンドを反映するようにメニュー コントローラを有効にするには、 および フラグを含める必要があります。
 
-4. グループのセクションで、最後のグループのエントリの後にメニュー コント ローラーのグループを追加します。
+4. [グループ] セクションで、最後のグループ エントリの後にメニュー コントローラ グループを追加します。
 
     ```xml
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">
@@ -64,9 +64,9 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     </Group>
     ```
 
-    メニュー コント ローラーを設定するには、親として、このグループに配置されたすべてのコマンドは、メニュー コント ローラーに表示されます。 `priority`属性を省略すると、0 の場合の既定値に設定する、メニュー コント ローラーのみのグループであります。
+    メニュー コントローラを親として設定すると、このグループに配置されたコマンドはメニュー コントローラに表示されます。 属性`priority`は省略され、メニュー コントローラの唯一のグループであるため、既定値の 0 に設定されます。
 
-5. ボタンのセクションで、最後のボタンのエントリ後、メニュー項目の各ボタン要素を追加します。
+5. [ボタン] セクションで、最後のボタン エントリの後に、各メニュー項目の Button 要素を追加します。
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">
@@ -98,19 +98,19 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     </Button>
     ```
 
-6. この時点では、メニュー コント ローラーで確認できます。 プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
+6. この時点で、メニュー コントローラを見ることができます。 プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-   1. **ビュー/その他の Windows** ] メニューの [open**テスト ToolWindow**します。
+   1. [**表示/ その他のウィンドウ**] メニューで、[**テスト ツール ウィンドウ**] を開きます。
 
-   2. ツール ウィンドウのツールバーにメニュー コント ローラーが表示されます。
+   2. メニュー コントローラがツール ウィンドウのツール バーに表示されます。
 
-   3. 次の 3 つの可能なコマンドを表示するメニュー コント ローラーの右側にある矢印をクリックします。
+   3. メニュー コントローラの右側にある矢印をクリックすると、3 つのコマンドが表示されます。
 
-      コマンドをクリックしたときにそのコマンドを表示するメニュー コント ローラーのタイトルが変更に注意してください。 次のセクションでは、これらのコマンドをアクティブ化するコードを追加します。
+      コマンドをクリックすると、メニュー コントローラのタイトルが変更され、そのコマンドが表示されます。 次のセクションでは、これらのコマンドをアクティブにするコードを追加します。
 
-## <a name="implement-the-menu-controller-commands"></a>コント ローラーのメニュー コマンドを実装します。
+## <a name="implement-the-menu-controller-commands"></a>メニュー コントローラ コマンドを実装する
 
-1. *TWTestCommandPackageGuids.cs*、既存のコマンド Id の後に、次の 3 つのメニュー項目のコマンド Id を追加します。
+1. *TWTestCommandPackageGuids.cs*で、既存のコマンド ID の後に 3 つのメニュー項目のコマンド ID を追加します。
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -118,13 +118,13 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. *TWTestCommand.cs*、上部にある次のコードを追加、`TWTestCommand`クラス。
+2. *TWTestCommand.cs*で、クラスの先頭に次のコードを追加`TWTestCommand`します。
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command
     ```
 
-3. TWTestCommand コンス トラクターの最後の呼び出しの後で、`AddCommand`メソッドでは、コマンドごとに同じハンドラーを使用してイベントをルーティングするコードを追加します。
+3. TWTestCommand コンストラクターで、`AddCommand`メソッドの最後の呼び出しの後に、同じハンドラーを使用して各コマンドのイベントをルーティングするコードを追加します。
 
     ```csharp
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=
@@ -145,7 +145,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-4. イベント ハンドラーを追加、 **TWTestCommand**チェックとして選択したコマンドをマークするクラス。
+4. イベント ハンドラーを**TWTestCommand**クラスに追加して、選択したコマンドをチェックマークします。
 
     ```csharp
     private void OnMCItemQueryStatus(object sender, EventArgs e)
@@ -158,7 +158,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-5. メニュー コント ローラー上のコマンドを選択すると、メッセージ ボックスを表示するイベント ハンドラーを追加します。
+5. ユーザーがメニュー コントローラーのコマンドを選択したときに MessageBox を表示するイベント ハンドラーを追加します。
 
     ```csharp
     private void OnMCItemClicked(object sender, EventArgs e)
@@ -208,20 +208,20 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-## <a name="testing-the-menu-controller"></a>メニュー コント ローラーのテスト
+## <a name="testing-the-menu-controller"></a>メニュー コントローラのテスト
 
 1. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-2. 開く、**テスト ToolWindow**上、**ビュー/その他の Windows**メニュー。
+2. **[表示/ その他**のウィンドウ] メニューの **[テスト ツール]** ウィンドウを開きます。
 
-    メニュー コント ローラーがツール ウィンドウのツールバーに表示され**MC アイテム 1**します。
+    メニュー コントローラはツール ウィンドウのツールバーに表示され **、MC 項目 1**が表示されます。
 
-3. 矢印の左側にあるメニュー コント ローラー ボタンをクリックします。
+3. 矢印の左側にあるメニュー コントローラ ボタンをクリックします。
 
-    選択されており、そのアイコンの周囲に強調表示ボックスの 3 つの項目が表示されます。 クリックして**MC 項目 3**します。
+    3 つの項目が表示され、最初の項目が選択され、アイコンの周りにハイライト ボックスが表示されます。 [MC**アイテム 3]** をクリックします。
 
-    ダイアログ ボックスが、メッセージが表示されます**コント ローラーのメニュー項目 3 を選択した**します。 メッセージは、メニュー コント ローラーのボタンのテキストに対応することを確認します。 メニュー コント ローラー ボタンを表示するようになりました**MC 項目 3**します。
+    **メニュー コントローラの項目 3 を選択した**メッセージが表示されたダイアログ ボックスが表示されます。 メッセージがメニュー コントローラ ボタンのテキストに対応していることに注目してください。 メニュー コントローラ ボタンに**MC 項目 3**が表示されるようになりました。
 
 ## <a name="see-also"></a>関連項目
-- [ツール ウィンドウにツールバーを追加します。](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [ツール ウィンドウへのツールバーの追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [ツールバーの追加](../extensibility/adding-a-toolbar.md)

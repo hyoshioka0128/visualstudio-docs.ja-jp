@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO |Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c521ebe321813013b83a951d4d2aa5f60fd1646d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346615"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714253"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-検索したシンボルの検索パスに関するステータス情報が含まれています。
+検索されたシンボル検索パスに関するステータス情報を格納します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>メンバー
 
 `dwValidFields`\
-フラグの組み合わせ、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)この構造体で表される検索情報の種類を指定する列挙体。
+この構造体で説明されている検索情報の種類を指定する[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列挙体のフラグの組み合わせ。
 
 `bstrVerboseSearchInfo`\
-検索パスと 1 つの文字列に連結された結果。
+検索パスと結果を 1 つの文字列に連結します。
 
 ## <a name="remarks"></a>Remarks
 
-この構造体がへの呼び出しから返される、 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)メソッド。
+この構造体は[、GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)メソッドの呼び出しから返されます。
 
-場合、`bstrVerboseSearchInfo`フィールドが空ではありませんし、検索するパスと検索結果の一覧が含まれています。 一覧には、後ろに省略記号 (「...」)、結果の後に、パスが表示されます。 1 つ以上のパスの結果のペアがある場合は、各ペアは"\r\n"(復帰と改行) のペアによって区切られます。 パターンのようになります。
+フィールドが`bstrVerboseSearchInfo`空でない場合は、検索されたパスとその検索の結果のリストが含まれます。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパス結果ペアがある場合、各ペアは"\r\n"(復帰/改行)ペアで区切られます。 パターンは次のようになります。
 
-\<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>
+\<パス>.\<>\r\n\<パス>.\<結果>\r\n\<パス>.\<結果>
 
-最後のエントリに \r\n シーケンスがないことに注意してください。
+最後のエントリには \r\n シーケンスがありません。
 
-ここでは、する可能性のある`bstrVerboseSearchInfo`を標準出力に送信された文字列。
+標準出力に送信`bstrVerboseSearchInfo`された可能性のある文字列を次に示します。
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -73,9 +73,9 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 

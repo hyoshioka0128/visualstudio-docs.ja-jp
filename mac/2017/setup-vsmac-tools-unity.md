@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988835"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306693"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を設定する
 
@@ -38,7 +38,7 @@ Unity のインストールに含まれる Visual Studio for Mac のバージョ
 
 * [Visual Studio for Mac を更新する](update.md)
 
-### <a name="manual-installation"></a>手動インストール
+### <a name="manual-installation"></a>手動のインストール
 
 Unity 5.6.1 以降は既にあるが、Visual Studio for Mac はない場合は、Visual Studio for Mac を手動でインストールすることができます。 無料の Community Edition を含む Visual Studio for Mac のすべてのエディションが、Visual Studio for Mac Tools for Unity にバンドルされています。
 
@@ -71,14 +71,14 @@ Unity 2018.1 以降では、Visual Studio を Unity の既定の外部スクリ�
 
    ![[Preferences]\(ユーザー設定\) を選ぶ](media/setup-vsmac-tools-unity-image4.png)
 
-2. [Preferences]\(ユーザー設定\) ダイアログで、**[External Tools]\(外部ツール\)** タブを選びます。
+2. [Preferences]\(ユーザー設定\) ダイアログで、 **[External Tools]\(外部ツール\)** タブを選びます。
 
-3. [External Script Editor]\(外部スクリプト エディター\) ドロップダウン リストから、**[Visual Studio]** が一覧にある場合はそれを選び、ない場合は **[Browse]\(参照\)** を選びます。
+3. [External Script Editor]\(外部スクリプト エディター\) ドロップダウン リストから、 **[Visual Studio]** が一覧にある場合はそれを選び、ない場合は **[Browse]\(参照\)** を選びます。
 
    ![Visual Studio を選ぶ](media/setup-vsmac-tools-unity-image5.png)
 
-4. **[Browse]\(参照\)** を選んだ場合は、[Applications]\(アプリケーション\) ディレクトリに移動し、Visual Studio を選んで、**[Open]\(開く\)** をクリックします。
+4. **[Browse]\(参照\)** を選んだ場合は、[Applications]\(アプリケーション\) ディレクトリに移動し、Visual Studio を選んで、 **[Open]\(開く\)** をクリックします。
 
-   ![[Open]\(開く\) を選ぶ](media/setup-vsmac-tools-unity-image6.png)
+   ![[Open]\(開く\) を選択する](media/setup-vsmac-tools-unity-image6.png)
 
 5. **[External Script Editor]\(外部スクリプト エディター\)** ボックスの一覧で Visual Studio を選んだ後、[Preferences]\(ユーザー設定\) ダイアログを閉じて構成プロセスを完了します。

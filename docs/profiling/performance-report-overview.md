@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772233"
 ---
 # <a name="performance-report-overview"></a>パフォーマンス レポートの概要
@@ -50,7 +50,7 @@ Visual Studio Team System Development Edition の統合開発環境 (IDE) の **
   呼び出し元の一覧や呼び出し先の一覧にある関数をダブルクリックし、別の関数を選択できます。 詳細については、「[[呼び出し元/呼び出し先] ビュー](../profiling/caller-callee-view.md)」を参照してください。
 
 ### <a name="call-tree-view"></a>コール ツリー ビュー
- [コール ツリー] ビューには、プロファイリングされるアプリケーションで走査された関数の実行パスが表示されます。 ツリーのルートは、アプリケーションまたはコンポーネントへのエントリ ポイントです。 各関数ノードは、呼び出したすべての関数と、その関数呼び出しに関するパフォーマンス データを表示します。
+ コール ツリー ビューには、プロファイル対象アプリケーションで走査された関数の実行パスが表示されます。 ツリーのルートは、アプリケーションまたはコンポーネントへのエントリ ポイントです。 各関数ノードは、呼び出したすべての関数と、その関数呼び出しに関するパフォーマンス データを表示します。
 
  [コール ツリー] ビューでは、最も時間を消費した関数や最も頻繁にサンプリングされた関数の実行パスを展開したり強調表示したりすることもできます。 最もアクティブなパスを表示するには、関数を右クリックし、 **[ホット パスの展開]** をクリックします。 詳細については、「[コール ツリー ビュー](../profiling/call-tree-view.md)」を参照してください。
 
@@ -94,6 +94,6 @@ Visual Studio Team System Development Edition の統合開発環境 (IDE) の **
 
 - **[エクスポート]** - .CVS 形式または .XML 形式のファイルに現在のレポートを保存します。別のビューで保存するためのオプションを指定できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)
 - [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)

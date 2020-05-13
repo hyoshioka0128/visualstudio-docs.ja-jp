@@ -15,33 +15,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d8db803dd6e20a9a1d954847b63d3a02ddd257
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826537"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633266"
 ---
 # <a name="msbuild-reference"></a>MSBuild リファレンス
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド システムです。 次のリンクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] リファレンス情報を示すトピックへのリンクです。
+MSBuild は、Visual Studio 用のビルド システムです。 次のリンクは、MSBuild のリファレンス情報を含むトピックへのリンクです。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイル形式を構成する XML 要素について説明します。
+ MSBuild ファイル形式を構成する XML 要素について説明します。
 
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれる一般的なタスクの一部について説明します。
+ MSBuild に含まれるいくつかの一般的なタスクについて説明します。
 
 - [条件](../msbuild/msbuild-conditions.md)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイルで使用可能な条件について説明します。
+ MSBuild ファイルで使用可能な条件について説明します。
 
 - [条件構造](../msbuild/msbuild-conditional-constructs.md)\
  `Choose`、`When`、`Otherwise` の各要素の使用方法について説明します。
 
 - [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の予約済みプロパティについて説明します。
+ MSBuild の予約済みプロパティについて説明します。
 
 - [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)\
  すべてのプロジェクト タイプに共通するプロジェクト プロパティについて説明します。特定のプロジェクト タイプで頻繁に使用されるプロパティについても説明します。
@@ -50,10 +50,10 @@ ms.locfileid: "76826537"
  すべてのプロジェクト タイプに共通するプロジェクト項目について説明します。特定のプロジェクト タイプで頻繁に使用される項目についても説明します。
 
 - [コマンドライン リファレンス](../msbuild/msbuild-command-line-reference.md)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe で使用される引数とスイッチについて説明します。
+ MSBuild.exe で使用できる引数とスイッチについて説明します。
 
 - [.Targets ファイル](../msbuild/msbuild-dot-targets-files.md)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれる *.Targets* ファイルについて説明します。
+ MSBuild に含まれる *.Targets* ファイルについて説明します。
 
 - [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)\
  すべての項目と共に作成されるメタデータを一覧表示します。
@@ -62,10 +62,10 @@ ms.locfileid: "76826537"
  コマンド ライン スイッチを含む *.rsp* ファイルについて説明します。
 
 - [その他の技術情報](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web サイトとニュースグループへのリンクを示します。
+ MSBuild Web サイトとニュースグループへのリンクを示します。
 
 - [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)\
- Windows Presentation Foundation (WPF) の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ターゲットとタスク リファレンスを示します。
+ Windows Presentation Foundation (WPF) の MSBuild ターゲットとタスク リファレンスを示します。
 
 - [エスケープする特殊文字](../msbuild/special-characters-to-escape.md)\
  正しく解釈するために "エスケープ" する必要のある文字を一覧表示します。 エスケープ シーケンスは、それに続く部分を別の方法で解釈することを示す一連の文字です。

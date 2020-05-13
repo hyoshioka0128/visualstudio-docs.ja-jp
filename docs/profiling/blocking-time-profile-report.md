@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926308"
 ---
 # <a name="blocking-time-profile-report"></a>ブロック時間のプロファイル レポート
@@ -31,7 +31,7 @@ ms.locfileid: "68926308"
 ## <a name="blocking-time-report-columns"></a>ブロック時間レポートの列
  次の表は、各ブロック時間レポートの列をまとめたものです。
 
-|列名|説明|
+|列名|[説明]|
 |-----------------|-----------------|
 |**Name**|呼び出し履歴の各レベルの関数の名前。|
 |**インスタンス**|表示された期間のブロック呼び出しのインスタンスの数。|
@@ -40,7 +40,7 @@ ms.locfileid: "68926308"
 |**API/待機カテゴリ**|呼び出し履歴の最下位レベルの関数にのみ表示されます。 ブロック呼び出しのシグネチャが認識される箇所では、ブロック API が与えられます。 シグネチャが認識されない場合、カーネルにより報告された情報が与えられます。|
 |**詳細**|関数の完全修飾名。 これには、利用できる場合、行数が含まれます。|
 
-### <a name="synchronization"></a>同期
+### <a name="synchronization"></a>Synchronization
  同期化レポートには、同期でブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[同期時間](../profiling/synchronization-time.md)」を参照してください。
 
 ### <a name="sleep"></a>Sleep
@@ -58,5 +58,5 @@ ms.locfileid: "68926308"
 ### <a name="ui-processing"></a>UI 処理
  UI 処理レポートには、UI 処理ブロックでブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[UI 処理時間](../profiling/ui-processing-time.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

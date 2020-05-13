@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault よる要素 (Visual Studio テンプレート)
+title: 要素によって表示します。
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720104"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700106"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault よる要素 (Visual Studio テンプレート)
-@No__t_0 の場合は、指定された[Templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)の下にのみテンプレートが表示されることを指定します。
+# <a name="showbydefault-element-visual-studio-templates"></a>要素によって表示します。
+の`false`場合、テンプレートは指定された[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)の下にのみ表示されます。
 
- \<VSTemplate > \<TemplateData > \<ShowByDefault >
+ \<VS テンプレート\<>\<テンプレート データ>既定の>
 
 ## <a name="syntax"></a>構文
 
@@ -36,10 +36,10 @@ ms.locfileid: "72720104"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -53,7 +53,7 @@ ms.locfileid: "72720104"
  テキストは、`true` または `false` である必要があります。 true の場合、すべてのプロジェクトの種類のテンプレートが表示されることを指定します。 false の場合、指定された `TemplateGroupID` にのみテンプレートが表示されます。
 
 ## <a name="remarks"></a>Remarks
- `ShowByDefault` は、省略可能な要素です。 既定値は `true`です。
+ `ShowByDefault` は省略可能な要素です。 既定値は `true` です。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] テンプレートのメタデータの例を次に示します。

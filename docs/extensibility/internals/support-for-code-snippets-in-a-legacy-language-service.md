@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでのコードスニペットのサポート |Microsoft Docs
+title: 従来の言語サービスでのコード スニペットのサポート |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,58 +7,58 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d771db166baa66426c7a6d03b344c4bc7b74b27
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723105"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704906"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>従来の言語サービスでのコード スニペットのサポート
-コードスニペットは、ソースファイルに挿入されるコードの一部です。 スニペット自体は、一連のフィールドを持つ XML ベースのテンプレートです。 これらのフィールドは、スニペットが挿入された後に強調表示され、スニペットが挿入されたコンテキストによって異なる値を持つことができます。 スニペットが挿入されるとすぐに、言語サービスはスニペットの書式を設定できます。
+コード スニペットは、ソース ファイルに挿入されるコードの一部です。 スニペット自体は、フィールドのセットを持つ XML ベースのテンプレートです。 これらのフィールドは、スニペットが挿入された後に強調表示され、スニペットが挿入されるコンテキストに応じて異なる値を持つことができます。 スニペットが挿入された直後に、言語サービスはスニペットを書式設定できます。
 
- スニペットは、TAB キーを使用してスニペットのフィールドに移動できる特殊な編集モードで挿入されます。 フィールドでは、IntelliSense スタイルのドロップダウンメニューをサポートできます。 ユーザーは、ENTER キーまたは ESC キーを入力して、スニペットをソースファイルにコミットします。 スニペットの詳細については、「[コードスニペット](../../ide/code-snippets.md)」を参照してください。
+ このスニペットは、Tab キーを使用してスニペットのフィールドを移動できる特別な編集モードで挿入されます。 フィールドは、IntelliSense スタイルのドロップダウン メニューをサポートできます。 ユーザーは、Enter キーまたは Esc キーを入力して、ソース ファイルにスニペットをコミットします。 スニペットの詳細については、「[コード スニペット](../../ide/code-snippets.md)」を参照してください。
 
- 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 詳細については、「[チュートリアル: コードスニペットの実装](../../extensibility/walkthrough-implementing-code-snippets.md)」を参照してください。
+ レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 詳細については、「[チュートリアル: コード スニペットの実装](../../extensibility/walkthrough-implementing-code-snippets.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
 
-## <a name="managed-package-framework-support-for-code-snippets"></a>マネージパッケージフレームワークによるコードスニペットのサポート
- Managed package framework (MPF) では、テンプレートを読み取ってスニペットを挿入し、特殊な編集モードを有効にするなど、ほとんどのスニペット機能がサポートされています。 サポートは <xref:Microsoft.VisualStudio.Package.ExpansionProvider> クラスによって管理されます。
+## <a name="managed-package-framework-support-for-code-snippets"></a>コード スニペットのマネージ パッケージ フレームワークのサポート
+ マネージ パッケージ フレームワーク (MPF) は、テンプレートの読み取りからスニペットの挿入、特別な編集モードの有効化まで、ほとんどのスニペット機能をサポートしています。 サポートはクラスを通<xref:Microsoft.VisualStudio.Package.ExpansionProvider>じて管理されます。
 
- @No__t_0 クラスがインスタンス化されると、<xref:Microsoft.VisualStudio.Package.ExpansionProvider> オブジェクトを取得するために <xref:Microsoft.VisualStudio.Package.LanguageService> クラスの <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> メソッドが呼び出されます (基本 <xref:Microsoft.VisualStudio.Package.LanguageService> クラスは、常に各 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> オブジェクトの新しい <xref:Microsoft.VisualStudio.Package.Source> オブジェクトを返します)。
+ クラスが<xref:Microsoft.VisualStudio.Package.Source>インスタンス化されると、<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A><xref:Microsoft.VisualStudio.Package.LanguageService>クラス内のメソッドが呼び出され、オブジェクト<xref:Microsoft.VisualStudio.Package.ExpansionProvider>が取得されます (基本<xref:Microsoft.VisualStudio.Package.LanguageService>クラスは常にオブジェクト<xref:Microsoft.VisualStudio.Package.ExpansionProvider>ごとに<xref:Microsoft.VisualStudio.Package.Source>新しいオブジェクトを返します)。
 
- MPF は拡張機能をサポートしていません。 拡張関数は、スニペットテンプレートに埋め込まれている名前付き関数であり、フィールドに配置される1つ以上の値を返します。 値は、<xref:Microsoft.VisualStudio.Package.ExpansionFunction> オブジェクトを介して言語サービス自体によって返されます。 拡張機能をサポートするには、<xref:Microsoft.VisualStudio.Package.ExpansionFunction> オブジェクトが言語サービスによって実装されている必要があります。
+ MPF は拡張機能をサポートしていません。 拡張関数は、スニペット テンプレートに埋め込まれ、フィールドに配置される 1 つ以上の値を返す名前付き関数です。 値は、<xref:Microsoft.VisualStudio.Package.ExpansionFunction>オブジェクトを介して言語サービス自体によって返されます。 拡張<xref:Microsoft.VisualStudio.Package.ExpansionFunction>機能をサポートするには、言語サービスによってオブジェクトを実装する必要があります。
 
-## <a name="providing-support-for-code-snippets"></a>コードスニペットのサポートの提供
- コードスニペットのサポートを有効にするには、スニペットを指定またはインストールする必要があります。また、スニペットを挿入するための手段をユーザーに提供する必要があります。 コードスニペットのサポートを有効にするには、次の3つの手順を実行します。
+## <a name="providing-support-for-code-snippets"></a>コード スニペットのサポートの提供
+ コード スニペットのサポートを有効にするには、スニペットを指定またはインストールする必要があります。 コード スニペットのサポートを有効にするには、次の 3 つの手順があります。
 
-1. スニペットファイルをインストールしています。
+1. スニペット ファイルをインストールします。
 
-2. 言語サービスのコードスニペットを有効にします。
+2. 言語サービスのコード スニペットを有効にする。
 
-3. @No__t_0 オブジェクトを呼び出しています。
+3. オブジェクトの呼<xref:Microsoft.VisualStudio.Package.ExpansionProvider>び出し。
 
-### <a name="installing-the-snippet-files"></a>スニペットファイルのインストール
- 言語のすべてのスニペットは、テンプレートとして XML ファイルに格納されます。通常、ファイルごとに1つのスニペットテンプレートが使用されます。 コードスニペットテンプレートに使用される XML スキーマの詳細については、「[コードスニペットスキーマリファレンス](../../ide/code-snippets-schema-reference.md)」を参照してください。 各スニペットテンプレートには、言語 ID が指定されています。 この言語 ID はレジストリで指定され、テンプレート内の \<Code > タグの `Language` 属性に格納されます。
+### <a name="installing-the-snippet-files"></a>スニペット ファイルのインストール
+ 言語のすべてのスニペットは、XML ファイル (通常はファイルごとに 1 つのスニペット テンプレート) にテンプレートとして格納されます。 コード スニペット テンプレートに使用される XML スキーマの詳細については、「[コード スニペット スキーマ リファレンス](../../ide/code-snippets-schema-reference.md)」を参照してください。 各スニペット テンプレートは、言語 ID で識別されます。 この言語 ID はレジストリで指定され、テンプレートの`Language`code \<> タグの属性に格納されます。
 
- 通常、スニペットテンプレートファイルが格納されている場所は2つあります。 1) 言語がインストールされていて、2) ユーザーのフォルダーにあります。 これらの場所はレジストリに追加されるので、Visual Studio **Code スニペットマネージャー**はスニペットを見つけることができます。 ユーザーのフォルダーは、ユーザーが作成したスニペットが格納される場所です。
+ 通常、スニペット テンプレート ファイルが格納される場所は、1) 言語がインストールされた場所と、ユーザーのフォルダーに 2) の 2 つの場所があります。 これらの場所は、Visual Studio**コード スニペット マネージャー**がスニペットを検索できるように、レジストリに追加されます。 ユーザーのフォルダーは、ユーザーによって作成されたスニペットが格納される場所です。
 
- インストールされているスニペットテンプレートファイルの一般的なフォルダーレイアウトは次のようになります。 *[Installroot]* \\ *[testlanguage]* \ スニペット \\ *[LCID]* \snippets
+ インストールされたスニペット テンプレート ファイルの一般的なフォルダー レイアウト*は次のようになります*\\ *[TestLanguage]*。\\ *[LCID]*
 
- *[Installroot]* は、言語がインストールされているフォルダーです。
+ *[InstallRoot]は*、あなたの言語がインストールされているフォルダです。
 
- *[Testlanguage]* は、言語の名前をフォルダー名として指定します。
+ *[TestLanguage] は*、フォルダ名として使用する言語の名前です。
 
- *[LCID]* はロケール ID です。 これは、スニペットのローカライズバージョンが格納される方法です。 たとえば、英語のロケール ID は1033であるため、 *[LCID]* は1033に置き換えられます。
+ *[LCID] は*ロケール ID です。 これは、スニペットのローカライズ版が格納される方法です。 たとえば、英語のロケール ID は 1033 なので *、[LCID] は*1033 に置き換えられます。
 
- 追加のファイルを1つ指定する必要があります。これは通常、SnippetsIndex またはと呼ばれるインデックスファイルです (.xml で終わる任意の有効なファイル名を使用できます)。 通常、このファイルは *[Installroot]* \\ *[testlanguage]* フォルダーに格納され、スニペットフォルダーの正確な場所、およびスニペットを使用する言語サービスの言語 ID と GUID を指定します。 インデックスファイルの正確なパスは、後の「レジストリエントリのインストール」で説明されているように、レジストリに格納されます。 SnippetsIndex ファイルの例を次に示します。
+ 追加のファイルを 1 つ指定する必要があり、これは通常、SnippetsIndex.xml または拡張インデックス.xml と呼ばれるインデックス ファイルです (.xml で終わる任意の有効なファイル名を使用できます)。 このファイルは通常 *[InstallRoot]*\\ *[TestLanguage]* フォルダーに格納され、スニペット フォルダーの正確な場所だけでなく、スニペットを使用する言語サービスの言語 ID と GUID を指定します。 インデックス ファイルの正確なパスは、後述する「レジストリ エントリのインストール」で説明するとおり、レジストリに格納されます。 スニペットインデックス.xmlファイルの例を次に示します。
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -75,26 +75,26 @@ ms.locfileid: "72723105"
 </SnippetCollection>
 ```
 
- @No__t_0Language > タグは、言語 ID (`Lang` 属性) と言語サービス GUID を指定します。
+ 言語\<> タグは、言語 ID `Lang` (属性) と言語サービスの GUID を指定します。
 
- この例では、Visual Studio のインストールフォルダーに言語サービスがインストールされていることを前提としています。 % LCID% はユーザーの現在のロケール ID に置き換えられます。 複数の \<SnippetDir > タグを、それぞれ異なるディレクトリとロケールに1つずつ追加できます。 また、スニペットフォルダーにはサブフォルダーを含めることができます。各サブフォルダーには、\<SnippetDir > タグに埋め込まれている \<SnippetSubDir > タグがインデックスファイルで識別されます。
+ この例では、Visual Studio のインストール フォルダーに言語サービスがインストールされていることを前提としています。 %LCID% は、ユーザーの現在のロケール ID に置き換えられます。 複数\<の SnippetDir> タグを追加できます(ディレクトリとロケールごとに 1 つ)。 さらに、スニペット フォルダーには、各フォルダーは、\<スニペット ディレクトリ> タグに埋め込まれているスニペットサブディレクトリ> タグを持つ\<インデックス ファイルで識別されるサブフォルダーを含めることができます。
 
- ユーザーは、自分の言語に合わせて独自のスニペットを作成することもできます。 これらは通常、ユーザーの設定フォルダーに格納されます。たとえば、[ *Testdocs]* \ コードスニペット \\ *[testdocs]* \ テストコードスニペットです。ここで、 *[Testdocs]* は Visual Studio のユーザーの設定フォルダーの場所です。
+ ユーザーは、自分の言語用に独自のスニペットを作成することもできます。 これらは通常、ユーザーの設定フォルダーに格納されます *(たとえば、[TestDocs]* \コード スニペット\\ *[テスト言語]* \テスト コード スニペット、[ *TestDocs] は*Visual Studio のユーザーの設定フォルダーの場所です)。
 
- 次の置換要素は、インデックスファイルの \<DirPath > タグに格納されているパスに配置できます。
+ インデックス ファイルの DirPath> タグに格納\<されているパスには、次の置換要素を配置できます。
 
 |要素|説明|
 |-------------|-----------------|
-|LCID|ロケール ID。|
-|InstallRoot|Visual Studio のルートインストールフォルダー (C:\Program て Visual Studio 8 など)。|
-|% ProjDir%|現在のプロジェクトを格納しているフォルダー。|
-|% ProjItem%|現在のプロジェクト項目を格納しているフォルダー。|
-|% TestDocs%|ユーザーの settings フォルダー内のフォルダー (C:\documents and、Settings \\ *[username]* \My Documents\Visual Studio\8. など)。|
+|%LCID%|ロケール ID。|
+|%インストールルート%|たとえば、C:\プログラム ファイル\マイクロソフト Visual Studio 8 などの Visual Studio のルート インストール フォルダー。|
+|%プロジダー%|現在のプロジェクトを含むフォルダ。|
+|%プロジアイテム%|現在のプロジェクト項目を含むフォルダ。|
+|%テストドキュメント%|ユーザーの設定フォルダー内のフォルダー(たとえば、C:\ドキュメントと設定\\ *[ユーザー名] \*マイ ドキュメント\Visual Studio\8)。|
 
-### <a name="enabling-code-snippets-for-your-language-service"></a>言語サービスのコードスニペットの有効化
- @No__t_0 属性を VSPackage に追加することによって、言語サービスのコードスニペットを有効にすることができます (詳細について[は、「従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください)。 @No__t_0 パラメーターと <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> パラメーターは省略可能ですが、スニペットの場所を**コードスニペットマネージャー**に通知するために、`SearchPaths` 名前付きパラメーターを含める必要があります。
+### <a name="enabling-code-snippets-for-your-language-service"></a>言語サービスのコード スニペットを有効にする
+ VSPackage に属性を追加することで、言語サービスの<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>コード スニペットを有効にすることができます (詳細については、「[レガシ言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>と<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A>パラメーターは省略可能ですが、コード スニペット`SearchPaths`**マネージャー**にスニペットの場所を知らせるために、名前付きパラメーターを含める必要があります。
 
- この属性を使用する方法の例を次に示します。
+ この属性の使用例を次に示します。
 
 ```
 [ProvideLanguageCodeExpansion(
@@ -107,17 +107,17 @@ ms.locfileid: "72723105"
 ```
 
 ### <a name="calling-the-expansion-provider"></a>拡張プロバイダーの呼び出し
- 言語サービスは、挿入の呼び出しと同様に、任意のコードスニペットの挿入を制御します。
+ 言語サービスは、コード スニペットの挿入と、挿入の呼び出し方法を制御します。
 
-## <a name="calling-the-expansion-provider-for-code-snippets"></a>コードスニペットの展開プロバイダーの呼び出し
- 拡張プロバイダーを呼び出すには、メニューコマンドを使用する方法と、入力候補一覧からショートカットキーを使用する方法の2つがあります。
+## <a name="calling-the-expansion-provider-for-code-snippets"></a>コード スニペットの拡張プロバイダーの呼び出し
+ 拡張プロバイダーを呼び出すには、メニュー コマンドを使用する方法と、入力候補一覧のショートカットを使用する方法の 2 つがあります。
 
-### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>メニューコマンドを使用したコードスニペットの挿入
- メニューコマンドを使用してスニペットブラウザーを表示するには、メニューコマンドを追加し、そのメニューコマンドに応答して、<xref:Microsoft.VisualStudio.Package.ExpansionProvider> インターフェイスで <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> メソッドを呼び出します。
+### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>メニュー コマンドを使用したコード スニペットの挿入
+ メニュー コマンドを使用してスニペット ブラウザーを表示するには、メニュー コマンドを追加し、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>そのメニュー<xref:Microsoft.VisualStudio.Package.ExpansionProvider>コマンドに応答してインターフェイスでメソッドを呼び出します。
 
-1. Vsct ファイルにコマンドとボタンを追加します。 [メニューコマンドを使用して拡張機能を作成](../../extensibility/creating-an-extension-with-a-menu-command.md)する方法については、「」を参照してください。
+1. コマンドとボタンを .vsct ファイルに追加します。 この手順については、「[メニュー コマンドを使用した拡張機能の作成」を参照してください](../../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2. @No__t_0 クラスからクラスを派生させ、<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> メソッドをオーバーライドして、新しいメニューコマンドのサポートを示すようにします。 この例では、常にメニューコマンドを有効にします。
+2. クラスからクラスを<xref:Microsoft.VisualStudio.Package.ViewFilter>派生させ、メソッドを<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>オーバーライドして、新しいメニュー コマンドのサポートを示します。 この例では、常にメニュー コマンドを有効にします。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ ms.locfileid: "72723105"
     }
     ```
 
-3. @No__t_1 クラスの <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> メソッドをオーバーライドして <xref:Microsoft.VisualStudio.Package.ExpansionProvider> オブジェクトを取得し、そのオブジェクトに対して <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> メソッドを呼び出します。
+3. クラスの<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>メソッドを<xref:Microsoft.VisualStudio.Package.ViewFilter>オーバーライドしてオブジェクトを<xref:Microsoft.VisualStudio.Package.ExpansionProvider>取得し、そのオブジェクト<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>のメソッドを呼び出します。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -203,7 +203,7 @@ ms.locfileid: "72723105"
 
     ```
 
-     @No__t_0 クラスの次のメソッドは、スニペットを挿入する処理中に Visual Studio によって指定された順序で呼び出されます。
+     クラス内の次の<xref:Microsoft.VisualStudio.Package.ExpansionProvider>メソッドは、スニペットを挿入するプロセス中に、指定された順序で Visual Studio によって呼び出されます。
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
@@ -215,16 +215,16 @@ ms.locfileid: "72723105"
 
 8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-     @No__t_0 メソッドが呼び出されると、スニペットが挿入され、<xref:Microsoft.VisualStudio.Package.ExpansionProvider> オブジェクトは、挿入されたばかりのスニペットを変更するために使用される特殊な編集モードになります。
+     メソッドが<xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>呼び出されると、スニペットが挿入され、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>オブジェクトは挿入されたばかりのスニペットを変更するために使用される特別な編集モードになります。
 
-### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>ショートカットを使用したコードスニペットの挿入
- 入力候補一覧からのショートカットの実装は、メニューコマンドの実装よりもはるかに複雑です。 最初にスニペットのショートカットを IntelliSense の単語入力候補一覧に追加する必要があります。 次に、完了の結果としてスニペットのショートカット名が挿入されたことを検出する必要があります。 最後に、ショートカット名を使用してスニペットのタイトルとパスを取得し、その情報を <xref:Microsoft.VisualStudio.Package.ExpansionProvider> メソッドの <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> メソッドに渡す必要があります。
+### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>ショートカットを使用したコード スニペットの挿入
+ 完了リストからのショートカットの実装は、メニュー コマンドを実装する場合よりもはるかに複雑です。 最初に、スニペットのショートカットを IntelliSense 単語補完リストに追加する必要があります。 次に、完了の結果としてスニペットのショートカット名が挿入されたことを検出する必要があります。 最後に、ショートカット名を使用してスニペットのタイトルとパスを取得し、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A><xref:Microsoft.VisualStudio.Package.ExpansionProvider>その情報をメソッドに渡す必要があります。
 
- 単語の入力候補一覧にスニペットのショートカットを追加するには、<xref:Microsoft.VisualStudio.Package.AuthoringScope> クラスの <xref:Microsoft.VisualStudio.Package.Declarations> オブジェクトに追加します。 ショートカットをスニペット名として識別できることを確認する必要があります。 例については、「[チュートリアル: インストールされているコードスニペットの一覧を取得する (レガシ実装)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)」を参照してください。
+ スニペットのショートカットを単語補完リストに追加するには、クラスの<xref:Microsoft.VisualStudio.Package.Declarations>オブジェクトに追加します<xref:Microsoft.VisualStudio.Package.AuthoringScope>。 ショートカットをスニペット名として識別できることを確認する必要があります。 例については、「[チュートリアル: インストールされているコード スニペットの一覧の取得 (レガシ実装)」](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)を参照してください。
 
- @No__t_1 クラスの <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> メソッドにコードスニペットのショートカットを挿入することを検出できます。 スニペット名は既にソースファイルに挿入されているため、展開を挿入するときに削除する必要があります。 @No__t_0 メソッドは、スニペットの挿入ポイントを説明するスパンを受け取ります。スパンにソースファイル内のスニペット名全体が含まれている場合、その名前はスニペットに置き換えられます。
+ コード スニペットのショートカットの挿入は、クラスの<xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A>メソッドで検出できます。 <xref:Microsoft.VisualStudio.Package.Declarations> スニペット名はソース ファイルに既に挿入されているため、展開を挿入するときに削除する必要があります。 この<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>メソッドは、スニペットの挿入ポイントを記述する範囲をとります。スパンにソースファイル内のスニペット名全体が含まれている場合、その名前はスニペットに置き換えられます。
 
- ここでは、ショートカット名を指定してスニペットの挿入を処理する <xref:Microsoft.VisualStudio.Package.Declarations> クラスのバージョンを示します。 @No__t_0 クラスのその他のメソッドは、わかりやすくするために省略されています。 このクラスのコンストラクターは、<xref:Microsoft.VisualStudio.Package.LanguageService> オブジェクトを受け取ることに注意してください。 これは、<xref:Microsoft.VisualStudio.Package.AuthoringScope> オブジェクトのバージョンから渡すことができます (たとえば、<xref:Microsoft.VisualStudio.Package.AuthoringScope> クラスの実装では、コンストラクターの <xref:Microsoft.VisualStudio.Package.LanguageService> オブジェクトを受け取り、そのオブジェクトを `TestDeclarations` クラスコンストラクターに渡すことがあります)。
+ 次に、ショートカット名を<xref:Microsoft.VisualStudio.Package.Declarations>指定してスニペットの挿入を処理するクラスのバージョンを示します。 クラス内の他<xref:Microsoft.VisualStudio.Package.Declarations>のメソッドは、わかりやすくするために省略されています。 このクラスのコンストラクターはオブジェクトを<xref:Microsoft.VisualStudio.Package.LanguageService>受け取ります。 これは、<xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクトのバージョンから渡すことができます (たとえば、<xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスの実装は、そのコンストラクターで<xref:Microsoft.VisualStudio.Package.LanguageService>オブジェクトを取得し、そのオブジェクトをクラス コンストラクターに渡す`TestDeclarations`場合があります)。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -325,7 +325,7 @@ namespace TestLanguagePackage
 }
 ```
 
- 言語サービスがショートカット名を取得すると、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> メソッドを呼び出して、ファイル名とコードスニペットのタイトルを取得します。 次に、言語サービスは、<xref:Microsoft.VisualStudio.Package.ExpansionProvider> クラスの <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> メソッドを呼び出して、コードスニペットを挿入します。 次のメソッドは、スニペットの挿入処理中に、<xref:Microsoft.VisualStudio.Package.ExpansionProvider> クラスの指定された順序で Visual Studio によって呼び出されます。
+ 言語サービスは、ショートカット名を取得すると、メソッドを<xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A>呼び出して、ファイル名とコード スニペットのタイトルを取得します。 次に、言語サービスは<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>、コード<xref:Microsoft.VisualStudio.Package.ExpansionProvider>スニペットを挿入するクラス内のメソッドを呼び出します。 次のメソッドは、スニペットを挿入するプロセス中に、クラス<xref:Microsoft.VisualStudio.Package.ExpansionProvider>内の指定された順序で Visual Studio によって呼び出されます。
 
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-   言語サービスに対してインストールされているコードスニペットの一覧を取得する方法の詳細については、「[チュートリアル: インストールされているコードスニペットの一覧を取得する (レガシ実装)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)」を参照してください。
+   使用している言語サービス用にインストールされているコード スニペットの一覧を取得する方法の詳細については、「[チュートリアル: インストールされているコード スニペットの一覧の取得 (レガシ実装)」](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)を参照してください。
 
-## <a name="implementing-the-expansionfunction-class"></a>すべての関数クラスの実装
- 拡張関数は、スニペットテンプレートに埋め込まれている名前付き関数であり、フィールドに配置される1つ以上の値を返します。 言語サービスで拡張関数をサポートするには、<xref:Microsoft.VisualStudio.Package.ExpansionFunction> クラスからクラスを派生させ、<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> メソッドを実装する必要があります。 次に、<xref:Microsoft.VisualStudio.Package.LanguageService> クラスの <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> メソッドをオーバーライドして、サポートする各拡張関数について、使用しているバージョンの <xref:Microsoft.VisualStudio.Package.ExpansionFunction> クラスの新しいインスタンス化を返す必要があります。 拡張関数から有効な値の一覧をサポートする場合は、その値の一覧を返すために、<xref:Microsoft.VisualStudio.Package.ExpansionFunction> クラスの <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> メソッドもオーバーライドする必要があります。
+## <a name="implementing-the-expansionfunction-class"></a>拡張関数クラスの実装
+ 拡張関数は、スニペット テンプレートに埋め込まれ、フィールドに配置される 1 つ以上の値を返す名前付き関数です。 言語サービスで拡張関数をサポートするには、<xref:Microsoft.VisualStudio.Package.ExpansionFunction>クラスからクラスを派生させ、メソッドを実装する<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A>必要があります。 次に、クラス内<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>のメソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>オーバーライドして、サポートする各拡張関数のクラスのバージョンの<xref:Microsoft.VisualStudio.Package.ExpansionFunction>新しいインスタンス化を返す必要があります。 拡張関数から使用可能な値のリストをサポートしている場合は、<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A><xref:Microsoft.VisualStudio.Package.ExpansionFunction>クラス内のメソッドをオーバーライドして、それらの値のリストを返す必要があります。
 
- 拡張機能が呼び出されたときに拡張プロバイダーが完全に初期化されない可能性があるため、引数を受け取るか、他のフィールドにアクセスする必要がある拡張関数は、編集可能なフィールドに関連付けないでください。 その結果、展開関数は引数またはその他のフィールドの値を取得できません。
+ 拡張関数が呼び出されるまでに拡張プロバイダーが完全に初期化されない場合があるため、引数を受け取る拡張関数や他のフィールドにアクセスする必要がある拡張関数は、編集可能フィールドに関連付けるべきではありません。 その結果、拡張関数は、その引数またはその他のフィールドの値を取得できません。
 
 ### <a name="example"></a>例
- @No__t_0 と呼ばれる単純な展開関数の実装例を次に示します。 この展開関数は、拡張関数がインスタンス化されるたびに、基底クラス名に数値を追加します (関連付けられているコードスニペットが挿入されるたびに対応します)。
+ 呼び出された`GetName`単純な拡張関数を実装する方法の例を次に示します。 この拡張関数は、拡張関数がインスタンス化されるたびに基本クラス名に数値を追加します (これは、関連付けられたコード スニペットが挿入されるたびに対応します)。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek |Microsoft Docs
+title: ドキュメント コンテキスト2::シーク |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::Seek
 ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 413b1416adcd4b20231666e25f6a8044e632198b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 435bb2d5402be06a5fcb3ff9fc99a5c5cb8cb3ab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325425"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731752"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-ステートメントまたは行の番号を指定して、ドキュメントのコンテキストに移動します。
+指定された数のステートメントまたは行でドキュメント コンテキストを移動します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,13 +43,13 @@ int Seek( 
 
 ## <a name="parameters"></a>パラメーター
 `nCount`\
-[in]ステートメントまたは順方向に移動、ドキュメントのコンテキストに応じて行の数。
+[in]ドキュメントのコンテキストに応じて、先に進むステートメントまたは行の数。
 
 `ppDocContext`\
-[out]新しいを返します[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)新しい位置を持つオブジェクト。
+[アウト]新しい位置を持つ新しい[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

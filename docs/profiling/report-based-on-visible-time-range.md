@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002339"
 ---
 # <a name="report-based-on-visible-time-range"></a>表示された時間範囲に基づいたレポート
@@ -24,7 +24,7 @@ ms.locfileid: "63002339"
 
  データに関するその他の情報については、次の表を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [表示するスレッド アクティビティがありません](../profiling/no-thread-activity-to-show-threads-view.md)
 - [実行プロファイル レポート](../profiling/execution-profile-report.md)
 - [同期時間](../profiling/synchronization-time.md)

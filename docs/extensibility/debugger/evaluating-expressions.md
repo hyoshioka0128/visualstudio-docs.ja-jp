@@ -1,5 +1,5 @@
 ---
-title: 式の評価 |Microsoft Docs
+title: 式の評価 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b2af1cdf299b3e3f2c714fa569fa295a4e1d4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315426"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738835"
 ---
-# <a name="evaluate-expressions"></a>式を評価します。
-式は、から渡された文字列から作成された、 **[自動変数]** 、**ウォッチ**、 **[クイック ウォッチ]** 、または**イミディ エイト**windows。 式が評価され、変数または引数とその値の型と名前を含む印刷文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。
+# <a name="evaluate-expressions"></a>式の評価
+式は、[**自動**] ウィンドウ 、[ウォッチ] ウィンドウ、[**クイック****ウォッチ**] ウィンドウ、または **[イミディエイト**] ウィンドウから渡された文字列から作成されます。 式が評価されると、変数または引数の名前と型とその値を含む、印刷可能な文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。
 
 ## <a name="implementation"></a>実装
- プログラムがブレークポイントで停止した場合、式が評価されます。 式自体はによって表される、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスでは、解析された式をバインドし、指定された式の評価のコンテキスト内で評価できるように準備を表します。 スタック フレーム (DE) デバッグ エンジンを実装することで提供する式の評価コンテキストの決定、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。
+ プログラムがブレークポイントで停止したときに式が評価されます。 式自体は、指定された式の評価コンテキスト内でバインディングと評価の準備が整った解析済みの式を表す[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスによって表されます。 スタック フレームは、デバッグ エンジン (DE) が[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイスを実装することによって提供する式の評価コンテキストを決定します。
 
- ユーザー文字列の指定と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス、デバッグ エンジン (DE) を取得できます、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイス ユーザー文字列を渡すことによって、 [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッド。 返される IDebugExpression2 インターフェイスには、評価のための準備が解析された式が含まれています。
+ ユーザー文字列と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイスを指定すると、デバッグ エンジン (DE) は、ユーザー文字列を[IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドに渡すことによって[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを取得できます。 返される IDebugExpression2 インターフェイスには、解析済み式が含まれています。
 
- `IDebugExpression2` 、インターフェイス、DE は同期または非同期の式の評価を式の値を取得できますを使用して[IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)または[IDebugExpression2:。EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)します。 変数または引数の型と名前と共に、この値は、表示するため、IDE に送信されます。 値、名前、型がで表される、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス。
+ インターフェイスを`IDebugExpression2`使用すると、DE は[、同期式または](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)非同期式の評価を使用して式の値[を](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)取得できます。 この値は、変数または引数の名前と型とともに IDE に送信され、表示されます。 値、名前、および型は[、IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスによって表されます。
 
- 式の評価を有効にする、DE を実装する必要があります、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。 同期および非同期の評価の実装が必要に、 [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)メソッド。
+ 式の評価を有効にするには、DE が[IDebugExpression2 インターフェイスと IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイス[を](../../extensibility/debugger/reference/idebugexpressioncontext2.md)実装する必要があります。 同期評価と非同期評価の両方で、メソッドの実装[が](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)必要です。
 
 ## <a name="see-also"></a>関連項目
 - [スタック フレーム](../../extensibility/debugger/stack-frames.md)
-- [式の評価コンテキスト](../../extensibility/debugger/expression-evaluation-context.md)
-- [タスクをデバッグします。](../../extensibility/debugger/debugging-tasks.md)
+- [式評価コンテキスト](../../extensibility/debugger/expression-evaluation-context.md)
+- [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)

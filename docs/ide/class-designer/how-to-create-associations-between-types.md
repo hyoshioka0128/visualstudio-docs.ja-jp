@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590385"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の関連付けを作成する
@@ -54,6 +54,6 @@ ms.locfileid: "75590385"
 
    **[クラスの詳細]** ウィンドウ、関連行、 **[プロパティ]** ウィンドウ、およびコード上の名前が更新されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: メンバー表記と関連付け表記の間で変更する](how-to-change-between-member-notation-and-association-notation.md)

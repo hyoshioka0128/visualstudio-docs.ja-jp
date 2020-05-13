@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION |Microsoft Docs
+title: TEXT_POSITION |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336293"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713411"
 ---
-# <a name="textposition"></a>TEXT_POSITION
-指定されたテキストの行と列の場所について説明します。
+# <a name="text_position"></a>TEXT_POSITION
+指定されたテキストの行と列の位置を記述します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,13 +47,13 @@ public struct TEXT_POSITION { 
 ソース ファイル内の行のインデックス。
 
 `dwColumn`\
-行の文字のオフセット。
+行への文字オフセット。
 
 ## <a name="remarks"></a>Remarks
 
-この構造体がで使用される、 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)と[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体。
+この構造体は[、CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)および[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体で使用されます。
 
-この構造体は、次のメソッドの呼び出しによって入力されます。
+この構造体は、次のメソッドの呼び出しによって埋められます。
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,7 +63,7 @@ public struct TEXT_POSITION { 
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-この構造体は、次のメソッドをパラメーターとして渡されます。
+この構造体は、次のメソッドにパラメーターとして渡されます。
 
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
@@ -79,9 +79,9 @@ public struct TEXT_POSITION { 
 
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 
@@ -92,5 +92,5 @@ public struct TEXT_POSITION { 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
-- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
+- [Context_info](../../../extensibility/debugger/reference/context-info.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

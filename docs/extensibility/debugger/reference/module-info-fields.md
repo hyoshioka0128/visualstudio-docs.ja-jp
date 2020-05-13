@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS |Microsoft Docs
+title: MODULE_INFO_FIELDS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311373"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714329"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-モジュールのデバッグ情報のフラグを指定します。
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
+デバッグ モジュール情報のフラグを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -66,57 +66,57 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>フィールド
  `MIF_NONE`\
- 構造体のフィールドの [なし] を初期化するか、/使用します。
+ 構造体のフィールドを初期化/使用しない。
 
  `MIF_NAME`\
- 初期化/使用、`m_bstrName`フィールドに、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体。
+ `m_bstrName` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体のフィールドを初期化/使用します。
 
  `MIF_URL`\
- 初期化/使用、`m_bstrUrl`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_bstrUrl`初期化/使用`MODULE_INFO`します。
 
  `MIF_VERSION`\
- 初期化/使用、`m_bstrVersion`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_bstrVersion`初期化/使用`MODULE_INFO`します。
 
  `MIF_DEBUGMESSAGE`\
- 初期化/使用、`m_bstrDebugMessage`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_bstrDebugMessage`初期化/使用`MODULE_INFO`します。
 
  `MIF_LOADADDRESS`\
- 初期化/使用、`m_addrLoadAddress`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_addrLoadAddress`初期化/使用`MODULE_INFO`します。
 
  `MIF_PREFFEREDADDRESS`\
- 初期化/使用、`m_addrPreferredLoadAddress`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_addrPreferredLoadAddress`初期化/使用`MODULE_INFO`します。
 
  `MIF_SIZE`\
- 初期化/使用、`m_dwSize`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_dwSize`初期化/使用`MODULE_INFO`します。
 
  `MIF_LOADORDER`\
- 初期化/使用、`m_dwLoadOrder`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_dwLoadOrder`初期化/使用`MODULE_INFO`します。
 
  `MIF_TIMESTAMP`\
- 初期化/使用、`m_TimeStamp`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_TimeStamp`初期化/使用`MODULE_INFO`します。
 
  `MIF_URLSYMBOLLOCATION`\
- 初期化/使用、`m_bstrUrlSymbolLocation`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_bstrUrlSymbolLocation`初期化/使用`MODULE_INFO`します。
 
  `MIF_FLAGS`\
- 初期化/使用、`m_dwModuleFlags`フィールドに、`MODULE_INFO`構造体。
+ 構造体のフィールドを`m_dwModuleFlags`初期化/使用`MODULE_INFO`します。
 
  `MIF_ALLFIELDS`\
- すべてのフィールドの初期化/使用、`MODULE_INFO`構造体。
+ 構造体のすべてのフィールドを初期化/使用します`MODULE_INFO`。
 
 ## <a name="remarks"></a>Remarks
- これらの値が引数として渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)のどのフィールドを示すメソッド、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体が初期化されるは。
+ これらの値は、[初期化するMODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体のフィールドを示す引数として[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)メソッドに渡されます。
 
- これらの値が使用されることも、`MODULE_INFO`フィールドが使用し、有効なときは、構造体。
+ これらの値は、使用されるフィールド`MODULE_INFO`と有効なフィールドを示すために、構造体でも使用されます。
 
- これらのフラグは、演算と組み合わせることがあります`OR`します。
+ これらのフラグはビット単位`OR`で組み合わせることができる。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

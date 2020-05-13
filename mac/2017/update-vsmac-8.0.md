@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
 ms.openlocfilehash: 092cf0c8794d143a6e563183fdea96fd5e6cf8cc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985150"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>Visual Studio 2017 for Mac (バージョン 7) を Visual Studio 2019 for Mac (バージョン 8.0) に更新する
@@ -24,7 +24,7 @@ Visual Studio 2019 for Mac では、まったく新しい C# エディター、�
 > [!IMPORTANT]
 > Visual Studio 2017 for Mac **バージョン 7.7.3** には既知の問題があり、アップデーターで "更新プログラム情報の取得中にエラーが発生しました" と継続的に表示されます。 これが発生する場合は、[Visual Studio for Mac をダウンロード](https://visualstudio.microsoft.com/vs/mac/)し、Visual Studio 2019 for Mac を[インストールする](/visualstudio/mac/installation?view=vsmac-2019)手順に従ってください。 これにより、Visual Studio 2017 for Mac の既存のインスタンスが上書きされることに注意してください。
 
-最新バージョンを入手するには、 **[Visual Studio] > [更新の確認...]** を参照して[アップデーター](/visualstudio/mac/update?view=vsmac-2017)を使用します。
+最新バージョンを入手するには、[[Visual Studio] > [更新の確認...]](/visualstudio/mac/update?view=vsmac-2017) を参照して**アップデーター**を使用します。
 
 ![アップデーター ダイアログ](media/update-vsmac-updater.png)
 

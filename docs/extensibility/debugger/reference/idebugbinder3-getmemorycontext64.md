@@ -1,28 +1,28 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 |Microsoft Docs
+title: Iデバッグバインダー3::メモリコンテキスト64 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92c589951e9b65536be5474f56eb6b959232b738
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735733"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-メモリ コンテキスト オブジェクトの場所または 64 ビットのメモリ アドレスのいずれかに変換します。
+オブジェクトの場所または 64 ビットメモリ アドレスをメモリ コンテキストに変換します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>パラメーター
 `pField`\
-[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)検索するオブジェクトを記述します。 場合`NULL`を使用して`dwConstant`代わりにします。
+[in]検索するオブジェクトを記述する[IDebug フィールド](../../../extensibility/debugger/reference/idebugfield.md)。 の`NULL`場合は、`dwConstant`代わりにを使用します。
 
 `uConstant`\
-[in]0x50000000 などの 64 ビット メモリ アドレス。
+[in]0x5000000 などの 64 ビット メモリ アドレス。
 
 `ppMemCxt`\
-[out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクトのアドレス、またはメモリ内のアドレスを表すインターフェイスです。
+[アウト]オブジェクトのアドレスまたはメモリ内のアドレスを表す[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、実装するオブジェクトを作成する、 [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)インターフェイスし、このメソッドを使用して、メモリのコンテキストを取得します。
+次の例では[、IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)インターフェイスを実装し、このメソッドを使用してメモリ コンテキストを取得するオブジェクトを作成します。
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )

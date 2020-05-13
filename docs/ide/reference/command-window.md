@@ -1,5 +1,5 @@
 ---
-title: コマンド ウィンドウ
+title: '[コマンド] ウィンドウ'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570350"
 ---
-# <a name="command-window"></a>コマンド ウィンドウ
+# <a name="command-window"></a>[コマンド] ウィンドウ
 **[コマンド]** ウィンドウは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の統合開発環境 (IDE) でコマンドやエイリアスを実行するときに使用します。 メニュー コマンドと、メニューに表示されないコマンドの両方を実行できます。 **[コマンド]** ウィンドウを表示するには、 **[表示]** メニューの **[その他のウィンドウ]** を選択し、 **[コマンド ウィンドウ]** をクリックします。
 
 ## <a name="displaying-the-values-of-variables"></a>変数の値の表示
@@ -44,7 +44,7 @@ ms.locfileid: "75570350"
 ## <a name="entering-commands"></a>コマンドの入力
 不等号 (`>`) は改行を示す記号としてコマンド ウィンドウの左端に表示されます。 上方向キーおよび下方向キーを使用して、以前に入力したコマンドの間をスクロールします。
 
-|タスク|ソリューション|例|
+|タスク|解決策:|例|
 |----------|--------------|-------------|
 |式を評価する。|式の先頭に疑問符 (`?`) を付けます。|`? myvar`|
 |[イミディエイト] ウィンドウに切り替る。|不等号 (>) を付けずにウィンドウに「`immed`」と入力します。|`immed`|
@@ -98,7 +98,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 複数の短い形式のスイッチがグループ化され、値が指定された場合、その値はすべてのスイッチに適用されます。 たとえば、`/pgm:123` は `/p:123 /g:123 /m:123` と同等です。 グループ内のいずれかのスイッチが値を受け付けない場合は、エラーになります。
 
 ## <a name="escape-characters"></a>エスケープ文字
-コマンド ラインにカレット (^) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 たとえば、オブジェクトに適用された
+コマンド ラインにカレット (^) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 次に例を示します。
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -109,7 +109,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>スペースを含むパス名には引用符を使用する
 たとえば、スペースを含むパスを持つファイルを開く場合は、スペースを含むパスまたはパス セグメントを二重引用符で囲む必要があります (**C:\\"Program Files"** または **"C:\Program Files"** )。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

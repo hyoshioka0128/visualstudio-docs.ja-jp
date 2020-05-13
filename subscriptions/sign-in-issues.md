@@ -3,21 +3,22 @@ title: Visual Studio サブスクリプションへのサインインに関す�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインするときに発生する可能性のある問題について説明します
-ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706853"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233241"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio サブスクリプションへのサインインに関する問題
 Visual Studio サブスクリプションを使用するには、最初にサインインする必要があります。  サブスクリプションによっては、Microsoft アカウント (MSA) または Azure Active Directory (AAD) ID を使用してセットアップされている場合があります。  この記事では、サブスクリプションにサインインするときに発生する可能性がある問題について説明します。
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>職場/学校のメール アドレスを使用して Microsoft アカウント (MSA) を作成することはできない
-職場/学校のメール アドレスを使って新しい個人用 Microsoft アカウント (MSA) を作成する機能は、メール ドメインが Azure AD で構成されているときは使用できません。 この項目の意味 Office 365 または Azure AD に依存する他の Microsoft 提供ビジネス サービスが組織で使用されていて、Azure AD テナントにドメイン名を追加してある場合、ユーザーはドメインのメール アドレスを使って新しい個人用 Microsoft アカウントを作成できなくなります。
+職場/学校のメール アドレスを使って新しい個人用 Microsoft アカウント (MSA) を作成する機能は、メール ドメインが Azure AD で構成されているときは使用できません。 これはどういう意味でしょうか。 Office 365 または Azure AD に依存する他の Microsoft 提供ビジネス サービスが組織で使用されていて、Azure AD テナントにドメイン名を追加してある場合、ユーザーはドメインのメール アドレスを使って新しい個人用 Microsoft アカウントを作成できなくなります。
 
 ### <a name="why-was-this-change-made"></a>この変更が行われた理由
 職場のアドレスをユーザー名として使って個人用 Microsoft アカウントを作成することは、エンド ユーザーにとっても IT 部門にとっても問題があることです。 次に例を示します。
@@ -62,6 +63,12 @@ Visual Studio サブスクリプションを使用するには、最初にサイ
 ### <a name="what-options-do-i-have"></a>どのようなオプションがありますか
 サブスクライバーの観点からは、まず、管理者に問い合わせて、会社の ID の構成を理解することが重要です。 必要に応じて、管理者が管理ポータルから、サブスクライバーのアカウント設定を更新する必要がある場合や、サブスクライバーが自分の会社のメール アドレスを使用して Microsoft アカウント (MSA) を作成する必要がある場合があります。 MSA を作成する手順を実行する前に、この実行に関するポリシーまたは問題について管理者と話します。 
 
-## <a name="next-steps"></a>次の手順
+## <a name="see-also"></a>参照
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次のステップ
 - AAD 内で [MSA アカウントと AAD アカウントをリンクする](/azure/active-directory/b2b/add-users-administrator)方法を学習します。
 - [匿名化](anonymization.md)について詳しく学習します。

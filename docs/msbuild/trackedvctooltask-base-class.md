@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594930"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask 基底クラス
@@ -26,7 +26,7 @@ ms.locfileid: "75594930"
 
 以下の表では、**TrackedVCToolTask** 基底クラスのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|省略可能な **bool** 型のパラメーターです。|
 |**EnableExecuteTool**|省略可能な **bool** 型のパラメーターです。|
@@ -48,7 +48,7 @@ ms.locfileid: "75594930"
 |**TrackerFrameworkPath**|省略可能な **string** 型のパラメーターです。|
 |**TrackerSdkPath**|省略可能な **string** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)<br/>
 [タスク](../msbuild/msbuild-tasks.md)

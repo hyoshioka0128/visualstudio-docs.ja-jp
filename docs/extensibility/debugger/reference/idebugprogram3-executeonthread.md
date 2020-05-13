@@ -1,27 +1,27 @@
 ---
-title: IDebugProgram3::ExecuteOnThread |Microsoft Docs
+title: Iデバッグプログラム3::スレッドを実行する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343600"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722663"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-デバッガーでプログラムを実行します。 プログラムを実行するときに表示するユーザー スレッドをデバッガーの情報を提供するスレッドが返されます。
+デバッガ プログラムを実行します。 プログラムの実行時に、ユーザーが表示しているスレッドに関する情報をデバッガーに提供するために、スレッドが返されます。
 
 ## <a name="syntax"></a>構文
 
@@ -38,22 +38,22 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>パラメーター
 `pThread`\
-[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。
+[in]オブジェクト[。](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- デバッガーが停止後に実行を再開できる 3 つのさまざまな方法はあります。
+ デバッガーが停止した後に実行を再開する方法は 3 つあります。
 
-- 実行します。前の手順をキャンセルし、これに、次のブレークポイントまで実行します。
+- 実行: 前のステップをキャンセルし、次のブレークポイントまで実行します。
 
-- 手順:いずれかの以前の手順をキャンセルし、新しい手順が完了するまでを実行します。
+- ステップ: 古いステップをキャンセルし、新しいステップが完了するまで実行します。
 
-- 続行するには。再度実行して、古いのいずれかの手順のアクティブなままにします。
+- 続行: 再度実行し、古いステップをアクティブのままにします。
 
-  渡されるスレッド`ExecuteOnThread`をキャンセルする手順を決定する場合に便利です。 実行している実行スレッドがわからない場合は、すべての手順をキャンセルします。 スレッドの知識があれば、のみのアクティブ スレッドで手順をキャンセルする必要があります。
+  渡される`ExecuteOnThread`スレッドは、どのステップをキャンセルするかを決定する際に役立ちます。 スレッドがわからない場合は、実行するとすべてのステップがキャンセルされます。 スレッドの知識がある場合、アクティブなスレッドのステップをキャンセルするだけで済みます。
 
 ## <a name="see-also"></a>関連項目
-- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+- [実行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

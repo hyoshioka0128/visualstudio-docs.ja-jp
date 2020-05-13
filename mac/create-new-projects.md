@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75678895"
 ---
 # <a name="create-a-new-project"></a>新しいプロジェクトの作成
@@ -51,6 +51,6 @@ Visual Studio for Mac が既に開いていてソリューションが読み込�
 
 既存のプロジェクトを追加することを選択した場合は、ご利用のコンピューター上にある既存のプロジェクトを参照してそれをソリューションに追加できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューションとプロジェクトを作成する (Windows の Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

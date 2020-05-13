@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666187"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[その他]
@@ -31,6 +31,6 @@ ms.locfileid: "72666187"
 
    このチェック ボックスをオンにすると、"より小さい" 記号 ("<") を入力したときに、タグ補完ウィンドウが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

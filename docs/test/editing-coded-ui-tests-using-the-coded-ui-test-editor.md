@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589657"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445039"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用してコード化された UI テストを編集する
 
@@ -74,7 +74,7 @@ ms.locfileid: "75589657"
 
 UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場合は、プロパティを編集する対象の UI 操作を含むテスト メソッドを展開し、UI 操作を選択してから [プロパティ] ウィンドウを使用してプロパティを変更します。
 
-たとえば、サーバーが使用できないときに "**Web ページ '<http://Contoso1/default.aspx>' に移動**" というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `'http://Contoso2/default.aspx'` に変更できます。
+たとえば、サーバーが使用できないときに "**Web ページ http:\//Contoso1/default.aspx** に移動" というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `http://Contoso2/default.aspx` に変更できます。
 
 ![コントロールのプロパティ](../test/media/codeduitestcontrolprop.png)
 

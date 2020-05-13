@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor |Microsoft Docs
+title: オブジェクトを作成します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor method
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e42e19e0ac08fc7dff658df2188cd0a822097ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320935"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728573"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-なしのコンス トラクターを持つオブジェクトを作成します。
+コンストラクターを持たないオブジェクトを作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,18 +43,18 @@ int CreateObjectNoConstructor(
 
 ## <a name="parameters"></a>パラメーター
 `pClassObject`\
-[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)作成されるオブジェクトの型を表すオブジェクト。
+[in]作成するオブジェクトの型を表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
 
 `ppObject`\
-[out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)新しく作成されたオブジェクトを表します。
+[アウト]新しく作成されたオブジェクトを表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- ある複合型 (つまり、コンス トラクターは必要ありません)、関数のパラメーターによって表される、構造体のインスタンスを表すオブジェクトを作成するには、このメソッドを呼び出す、 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイス。
+ このメソッドを呼び出して、構造体または複合型のインスタンスを表すオブジェクトを作成します (コンストラクターを必要としない) [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイスによって表される関数へのパラメーターです。
 
- オブジェクトのパラメーターは、コンス トラクターを必要とする場合、 [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)メソッド。
+ オブジェクト パラメーターにコンストラクターが必要な場合は[、CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

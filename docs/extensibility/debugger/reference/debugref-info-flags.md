@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft Docs
+title: DEBUGREF_INFO_FLAGS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318367"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737391"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-デバッグの参照オブジェクトを取得するには、どのような情報を指定します。
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+デバッグ参照オブジェクトについて取得する情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -58,45 +58,45 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `DEBUGREF_INFO_NAME`\
-初期化/使用、`bstrName`フィールド構造にします。
+構造体のフィールドを`bstrName`初期化/使用します。
 
 `DEBUGREF_INFO_TYPE`\
-初期化/使用、`bstrType`フィールド構造にします。
+構造体のフィールドを`bstrType`初期化/使用します。
 
 `DEBUGREF_INFO_VALUE`\
-初期化/使用、`bstrValue`フィールド構造にします。
+構造体のフィールドを`bstrValue`初期化/使用します。
 
 `DEBUGREF_INFO_ATTRIB`\
-初期化/使用、`dwAttrib`フィールド構造にします。
+構造体のフィールドを`dwAttrib`初期化/使用します。
 
 `DEBUGREF_INFO_REFTYPE`\
-初期化/使用、`dwRefType`フィールド構造にします。
+構造体のフィールドを`dwRefType`初期化/使用します。
 
 `DEBUGREF_INFO_REF`\
-初期化/使用、`pReference`フィールド構造にします。
+構造体のフィールドを`pReference`初期化/使用します。
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-[値] フィールドは、この種類のオブジェクトの使用可能な場合、自動拡張値を含める必要があります。
+値フィールドには、このタイプのオブジェクトの自動拡張値 (使用可能な場合) が含まれている必要があります。
 
 `DEBUGREF_INFO_NONE`\
-フラグが設定されていないことを示します。
+フラグが設定されていない状態を示します。
 
 `DEBUGREF_INFO_ALL`\
 フラグのマスクを示します。
 
 ## <a name="remarks"></a>Remarks
-これらのフラグに渡される、 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)と[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)のどのフィールドを示すメソッド、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体が初期化するには。
+これらのフラグは[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)メソッドと[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)メソッドに渡され、[初期化するDEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のフィールドを示します。
 
-使用、`dwFields`のメンバー、`DEBUG_REFERENCE_INFO`構造体を構造体が返されるときにどのフィールドが使用し、有効なレポートを示します。
+構造体の`dwFields`メンバーに対して`DEBUG_REFERENCE_INFO`、構造体が返されるときに使用され、有効なフィールドを示すために使用されます。
 
-これらの値は、演算と組み合わせることがあります`OR`します。
+これらの値はビット単位`OR`で組み合わせることができる。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

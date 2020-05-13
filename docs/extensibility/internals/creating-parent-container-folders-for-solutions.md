@@ -1,27 +1,27 @@
 ---
-title: ソリューションの親コンテナーのフォルダーを作成する |Microsoft Docs
+title: ソリューションの親コンテナフォルダを作成する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50800e527c6e79100bf699172f7fc30881b3299
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332730"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709097"
 ---
-# <a name="create-parent-container-folders-for-solutions"></a>親コンテナーのフォルダーのソリューションを作成します。
-ソース管理プラグイン API バージョン 1.2、ユーザーは、ソリューション内のすべての web プロジェクトの 1 つのルートのソース コントロール変換先を指定できます。 この単一のルートには、スーパー Unified ルート (サー) が呼び出されます。
+# <a name="create-parent-container-folders-for-solutions"></a>ソリューションの親コンテナフォルダを作成する
+ソース管理プラグイン API バージョン 1.2 では、ユーザーはソリューション内のすべての Web プロジェクトに対して単一のルート ソース コントロールの宛先を指定できます。 この単一のルートは、スーパー統合ルート(SUR)と呼ばれます。
 
- ソース管理プラグイン API バージョン 1.1、ユーザー、ソース管理にマルチ プロジェクト ソリューションを追加する場合、ユーザーが web プロジェクトごとに 1 つのソース コントロールの宛先の指定を求めが。
+ ソース管理プラグイン API バージョン 1.1 では、ユーザーがソース管理にマルチプロジェクト ソリューションを追加した場合、ユーザーは、各 Web プロジェクトに対して 1 つのソース管理の宛先を指定するように求められます。
 
 ## <a name="new-capability-flags"></a>新しい機能フラグ
  `SCC_CAP_CREATESUBPROJECT`
@@ -33,36 +33,36 @@ ms.locfileid: "66332730"
 
 - [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE は、ソース管理にソリューションを追加するときに常にほぼサー フォルダーを作成します。 具体的には、これは、次の場合。
+ IDE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、ソース管理にソリューションを追加するときに、ほとんど常に SUR フォルダを作成します。 具体的には、次の場合に行われます。
 
-- プロジェクトでは、web プロジェクトのファイル共有です。
+- プロジェクトはファイル共有 Web プロジェクトです。
 
-- 別のドライブは、プロジェクトとソリューション ファイルがあります。
+- プロジェクトとソリューション ファイルには、異なるドライブがあります。
 
-- 別の共有は、プロジェクトとソリューション ファイルがあります。
+- プロジェクトとソリューション ファイルに対しては、異なる共有があります。
 
-- プロジェクトは、個別に (ソース管理の対象のソリューション) に追加されました。
+- プロジェクトは個別に (ソース管理されたソリューションで) 追加されました。
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、サー フォルダーの名前が、拡張子を除いたソリューション名と同じであることをお勧めします。 次の表では、2 つのバージョンで動作をまとめたものです。
+では[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、SUR フォルダの名前は、拡張子を除いたソリューション名と同じであることが推奨されます。 次の表は、2 つのバージョンの動作をまとめたものです。
 
 |機能|ソース管理プラグイン API バージョン 1.1|ソース管理プラグイン API バージョン 1.2|
 |-------------| - | - |
-|ソース コード管理にソリューションを追加します。|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|
-|ソース管理対象のソリューションにプロジェクトを追加します。|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **注:** Visual Studio では、ソリューションが、SUR. の直接の子であります。|
+|SCC にソリューションを追加する|を実行します。<br /><br /> パスパス()<br /><br /> パスパス()<br /><br /> プロジェクトを開く()|を実行します。<br /><br /> パスパス()<br /><br /> サブプロジェクト()<br /><br /> サブプロジェクト()<br /><br /> プロジェクトを開く()|
+|ソース管理ソリューションへのプロジェクトの追加|パスパス()<br /><br /> プロジェクトを開く()|プロジェクトパス()<br /><br /> プロジェクトを開く()<br /><br />  **注:** ソリューションは SUR の直接の子であると想定します。|
 
 ## <a name="examples"></a>使用例
- 次の表では、2 つの例を示します。 どちらの場合で、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]までソース管理下にあるソリューションの保存先のユーザーの入力を求め、 *user_choice*変換先として指定されます。 User_choice を指定すると、ソース コントロールの変換先のユーザーに確認しないで、ソリューションと 2 つのプロジェクトが追加されます。
+ 次の表は、2 つの例を示しています。 どちらの場合も[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]*、user_choice*が宛先として指定されるまで、ソース管理下にあるソリューションの宛先の場所を指定するようユーザーに求められます。 user_choiceを指定すると、ソリューションと 2 つのプロジェクトが追加され、ユーザーにソース コントロールの出力先を確認するメッセージが表示されません。
 
-|ソリューションが含まれています|ディスク上の場所に|データベースの既定の構造|
+|ソリューションには次の項目が含まれています|ディスク上の場所|データベースの既定の構造|
 |-----------------------|-----------------------|--------------------------------|
-|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/< user_choice > C/Web1<br /><br /> $/< user_choice >/Web2|
-|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/< user_choice >/D web1<br /><br /> $/<user_choice>/sln1/win1|
+|*sln1.sln*<br /><br /> Web1<br /><br /> ウェブ2|*C:\ソリューション\sln1*<br /><br /> *C:\イネットパブ\wwwroot\ウェブ1*<br /><br /> \\\サーバー\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/C/Web1<br /><br /> $/<user_choice>/Web2|
+|*sln1.sln*<br /><br /> Web1<br /><br /> ウィン1|*C:\ソリューション\sln1*<br /><br /> *D:\イネットパブ\wwwroot\ウェブ1*<br /><br /> *C:\ソリューション\sln1\Win1*|$/<user_choice>/sln1<br /><br /> user_choice>/D/ウェブ1user_choice $/<<br /><br /> $/<user_choice>/sln1/win1|
 
- 操作がキャンセルはまたはエラーのため失敗したかどうかに関係なく、サー フォルダーとサブフォルダーが作成されます。 キャンセルまたはエラー状態で自動的に削除されません。
+ エラーが発生したために操作がキャンセルされたか失敗するかに関係なく、SUR フォルダとサブフォルダが作成されます。 キャンセルまたはエラーの条件では、自動的に削除されません。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] バージョン 1.1 の動作に既定値は、ソース管理プラグインが返されなかった場合`SCC_CAP_CREATESUBPROJECT`と`SCC_CAP_GETPARENTPROJECT`機能フラグ。 さらに、ユーザーの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]バージョン 1.1 の動作に戻すには、次のキーの値を設定することができます*dword:00000001*:
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース管理プラグインが機能フラグと`SCC_CAP_CREATESUBPROJECT``SCC_CAP_GETPARENTPROJECT`機能フラグを返さない場合は、デフォルトでバージョン 1.1 の動作になります。 さらに、ユーザーは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]次のキーの値を*dword:0000001*に設定することで、バージョン 1.1 の動作に戻すことができます。
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
+ **[HKEY_CURRENT_USER\ソフトウェア\マイクロソフト\VisualStudio\8.0\ソースコントロール]ド・ソース・ソリューション・ルートフォルダーインソースコントロール** = *・ドワード:00000001*
 
 ## <a name="see-also"></a>関連項目
-- [新機能については、ソース管理プラグイン API バージョン 1.2 です。](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

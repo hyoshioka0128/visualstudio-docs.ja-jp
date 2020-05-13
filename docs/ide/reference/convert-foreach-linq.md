@@ -1,27 +1,30 @@
 ---
 title: foreach ループを LINQ に変換する
 descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
-ms.date: 02/20/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baa1f32bb981e6d244555baef2a00d03933cdd6c
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 12c03830ccd37e0970e3c74bc78cdd9c8a8732b7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483716"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094226"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>foreach ループを LINQ に変換する
 
 このリファクタリングは以下に適用されます。
 
 - C#
+
+- Visual Basic
 
 **概要:** IEnumerables を使用する *foreach* ループを LINQ クエリまたは LINQ 呼び出し形式 (別名 LINQ メソッド) に簡単に変換できます。
 

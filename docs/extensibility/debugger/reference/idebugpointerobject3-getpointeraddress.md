@@ -1,25 +1,25 @@
 ---
-title: IDebugPointerObject3::GetPointerAddress |Microsoft Docs
+title: オブジェクト 3::取得ポインターアドレス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetPointerAddress
 - IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 625230d6e04fe374c46e94a2e916df3eb025172a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a508a5861b3b128a964be4a5c3ca7714858318c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343784"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725476"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 ポインターのアドレスを取得します。
@@ -39,10 +39,10 @@ int GetPointerAddress (
 ```
 
 ## <a name="parameters"></a>パラメーター
-`puAddress` [out]ポインターのアドレスを返します。
+`puAddress`[アウト]ポインターのアドレスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

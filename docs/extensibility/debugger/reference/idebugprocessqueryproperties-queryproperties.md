@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
+title: クエリ プロパティマイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311589"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723321"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-このメソッドは、デバッグ プロセスの指定したプロパティ値のクエリを実行します。
+このメソッドは、デバッグ プロセスの指定されたプロパティ値を照会します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,25 +41,25 @@ int QueryProperties(
 
 ## <a name="parameters"></a>パラメーター
 `celt`\
-[in]プロパティの定義とプロパティの値を含む配列のサイズ。
+[in]プロパティ定義とプロパティ値を含む配列のサイズ。
 
 `dwPropType`\
-[in]クエリ対象のプロパティの定義を含む配列。 次の値を指定できます。
+[in]照会されたプロパティの定義を格納する配列。 指定できる値は、
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
 - PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
 
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES 3 を =
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[out]プロパティ値を格納する配列。
+[アウト]プロパティ値を格納する配列。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが使用されることはほとんどありません。
+ この方法はめったに使用されません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77c501f6c7915c7eff1ebd8a4f9308c89bd46e8d
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091705"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880235"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>方法: Visual Studio でテストの設定を使用してロード テスト用の ASP.NET プロファイラーを構成する
 
@@ -22,7 +22,7 @@ ASP.NET プロファイラー診断データ アダプターを使用して、AS
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> この診断データ アダプターは、Microsoft Test Manager を使用して実行されるテストには使用できません。 ASP.NET プロファイラー診断アダプターは、Visual Studio Enterprise を必要とする Web サイトのみを利用したロード テストで使用できます。
+> この診断データ アダプターは、Microsoft Test Manager (Visual Studio 2017 では非推奨) を使用して実行されるテストには使用できません。 ASP.NET プロファイラー診断アダプターは、Visual Studio Enterprise を必要とする Web サイトのみを利用したロード テストで使用できます。
 
 ASP.NET プロファイラー診断データ アダプターを使用すると、ロード テストの実行時に、アプリケーション層から ASP.NET プロファイラー データを収集できます。 プロファイラーは、実行時間が 1 時間以上になるような長時間のロード テストなどでは実行しないでください。 その理由は、プロファイラー ファイルが数百メガバイトの大きさになる可能性があるためです。 代わりに、ASP.NET プロファイラーを使用して、実行時間の短いロード テストを実行してください。その場合でも、パフォーマンスの問題を詳細に診断することができます。
 

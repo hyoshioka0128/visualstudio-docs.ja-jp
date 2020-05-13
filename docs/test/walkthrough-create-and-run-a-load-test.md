@@ -10,12 +10,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2ade11d4bffc3c9fdf812cb38d21cd742c9845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590853"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093626"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>チュートリアル: 単体テストを含むロード テストを作成して実行する
 
@@ -41,23 +41,25 @@ ms.locfileid: "75590853"
 
 ### <a name="to-start-the-new-load-test-wizard"></a>新しいロード テスト ウィザードを開始するには
 
+1. 「[ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)」で説明されている **Web パフォーマンスとロード テスト ツール** コンポーネントをインストールしていることを確認してください。
+
 1. 「[チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)」で作成した Bank ソリューションを開きます。
 
-2. **ソリューション エクスプローラー**で、Bank ソリューション ノードのショートカット メニューを開き、 **[追加]** をポイントして、 **[新しいプロジェクト]** をクリックします。
+1. **ソリューション エクスプローラー**で、Bank ソリューション ノードのショートカット メニューを開き、 **[追加]** をポイントして、 **[新しいプロジェクト]** をクリックします。
 
      **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
 
-3. **[新しいプロジェクトの追加]** ダイアログ ボックスで、 **[Visual C#]** を展開し、 **[テスト]** を選択します。 テンプレートの一覧で **[Web パフォーマンスとロード テストのプロジェクト]** をクリックし、 **[名前]** フィールドに「`BankLoadTest`」と入力します。 **[OK]** をクリックします。
+1. **[新しいプロジェクトの追加]** ダイアログ ボックスで、 **[Visual C#]** を展開し、 **[テスト]** を選択します。 テンプレートの一覧で **[Web パフォーマンスとロード テストのプロジェクト]** をクリックし、 **[名前]** フィールドに「`BankLoadTest`」と入力します。 **[OK]** をクリックします。
 
      BankLoadTest という Web パフォーマンスとロード テストのプロジェクトがソリューションに追加されます。
 
-4. 新しい BankLoadTest Web パフォーマンスとロード テストのショートカット メニューを開き、 **[追加]** をポイントして、 **[ロード テスト]** をクリックします。
+1. 新しい BankLoadTest Web パフォーマンスとロード テストのショートカット メニューを開き、 **[追加]** をポイントして、 **[ロード テスト]** をクリックします。
 
-5. **新しいロード テスト** ウィザードが開始します。
+1. **新しいロード テスト** ウィザードが開始します。
 
-6. **新しいロード テスト** ウィザードの最初のページは、 **[ようこそ]** ページです。
+1. **新しいロード テスト** ウィザードの最初のページは、 **[ようこそ]** ページです。
 
-7. **[次へ]** をクリックします。
+1. **[次へ]** をクリックします。
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>ロード テスト シナリオの設定を編集するには
 

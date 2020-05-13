@@ -1,30 +1,30 @@
 ---
-title: m_contingentProperties フィールド |Microsoft Docs
+title: m_contingentPropertiesフィールド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a583f6e42198f3ad01af99ab9bfa164793eada68
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330882"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738418"
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties フィールド
-その他のプロパティを格納、<xref:System.Threading.Tasks.Task>オブジェクト。
+# <a name="m_contingentproperties-field"></a>m_contingentPropertiesフィールド
+オブジェクトの追加プロパティを<xref:System.Threading.Tasks.Task>格納します。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 

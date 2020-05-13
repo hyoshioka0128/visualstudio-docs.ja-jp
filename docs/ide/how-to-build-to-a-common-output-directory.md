@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68416752"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>方法: 共通出力ディレクトリへのビルド
@@ -34,7 +34,7 @@ ms.locfileid: "68416752"
 
 4. ソリューションのすべてのプロジェクトに対して、手順 1 から 3 を繰り返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
 - [方法: ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)

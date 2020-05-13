@@ -12,10 +12,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180316"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>クイック スタート: F\# で Visual Studio を使用して初めての ASP.NET Core Web サービスを作成する
@@ -42,7 +42,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio を開きます。
 
-2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
 3. **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[Visual F#]** を展開し、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択してから **[OK]** を選択します。
 
@@ -91,7 +91,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-1. **Ctrl** + **F5** キーを押してアプリケーションを実行し、Web ブラウザーで開きます。
+1. **Ctrl**+**F5** キーを押してアプリケーションを実行し、Web ブラウザーで開きます。
 
 2. このページは、`/api/values` ルートに移動されるはずですが、しない場合はご自分のブラウザーに `https://localhost:44396/api/values` と入力します。
 

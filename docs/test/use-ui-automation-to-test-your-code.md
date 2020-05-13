@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585640"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880365"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>コード化された UI テストを使用してコードをテストする
 
@@ -435,7 +435,12 @@ myWinCheckBox.Checked = true;
 
 ## <a name="whats-next"></a>次の内容
 
+::: moniker range="vs-2017"
 **コード化された UI テストの実行の追加オプション:** このトピックで既に説明したように、コード化された UI テストを Visual Studio から直接実行できます。 さらに、Microsoft Test Manager から、または Azure Pipelines を使用して、自動化された UI テストを実行できます。 コード化された UI テストが自動化されている場合、他の自動テストとは異なり、実行時にデスクトップと対話する必要があります。
+::: moniker-end
+::: moniker range=">=vs-2019"
+**コード化された UI テストの実行の追加オプション:** このトピックで既に説明したように、コード化された UI テストを Visual Studio から直接実行できます。 また、Azure Pipelines を使用して、自動化された UI テストを実行できます。 コード化された UI テストが自動化されている場合、他の自動テストとは異なり、実行時にデスクトップと対話する必要があります。
+::: moniker-end
 
 - [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,7 +454,7 @@ myWinCheckBox.Checked = true;
 
 - [コード化された UI テストと操作の記録を拡張する](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-コード化された UI テストは、手動テストを自動化するためによく使用されます。 手動テストの詳細については、「[Microsoft Test Manager での手動テストの実行](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts)」を参照してください。 自動テストの詳細については、「[Visual Studio のテスト ツール](../test/improve-code-quality.md)」を参照してください。
+コード化された UI テストは、手動テストを自動化するためによく使用されます。 自動テストの詳細については、「[Visual Studio のテスト ツール](../test/improve-code-quality.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

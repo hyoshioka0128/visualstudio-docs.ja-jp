@@ -1,5 +1,5 @@
 ---
-title: 状態コードの列挙子のファイル |Microsoft Docs
+title: ファイルステータスコード列挙子 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94bd9ff93872139fc056c4c8bb7a59191616919e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711454"
 ---
-# <a name="file-status-code-enumerator"></a>ファイルの状態コードの列挙子
-`SccStatus`列挙子には、ソース管理システムでファイルの状態を指定する名前付き定数の値が含まれています。 この列挙体を使って、 [SccQueryInfo](../extensibility/sccqueryinfo-function.md)と`POPLISTFUNC`コールバック関数 (を参照してください[POPLISTFUNC](../extensibility/poplistfunc.md)詳細については)。
+# <a name="file-status-code-enumerator"></a>ファイル状態コード列挙子
+列挙`SccStatus`子には、ソース管理システム内のファイルの状態を指定する名前付き定数値が含まれています。 この列挙体は[、SccQueryInfo](../extensibility/sccqueryinfo-function.md)と`POPLISTFUNC`コールバック関数 (詳細については[、POPLISTFUNC](../extensibility/poplistfunc.md)を参照してください) によって使用されます。
 
 ## <a name="syntax"></a>構文
 
@@ -49,41 +49,41 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>メンバー
- SCC_STATUS_INVALID 状態を取得できませんでした。それに依存しないでください。
+ SCC_STATUS_INVALID ステータスを取得できませんでした。それに頼らないでください。
 
- SCC_STATUS_NOTCONTROLLED ファイルはソース管理下ではありません。
+ SCC_STATUS_NOTCONTROLLED ファイルがソース管理下にありません。
 
- SCC_STATUS_CONTROLLED ファイルはソース管理です。
+ SCC_STATUS_CONTROLLED ファイルはソース管理下にあります。
 
- ローカル ディスク上の現在のユーザーがサインアウト SCC_STATUS_CHECKEDOUT がチェックされます。
+ SCC_STATUS_CHECKEDOUTローカル ディスク上の現在のユーザーによってチェックアウトされています。
 
- SCC_STATUS_OUTOTHER ファイルは別のユーザーによってチェック アウトします。
+ SCC_STATUS_OUTOTHER ファイルが別のユーザーによってチェックアウトされています。
 
- SCC_STATUS_OUTEXCLUSIVE ファイルが排他的チェック アウトします。
+ SCC_STATUS_OUTEXCLUSIVE ファイルは排他的にチェックアウトされています。
 
- SCC_STATUS_OUTMULTIPLE ファイルは 1 つ以上のユーザーによってチェック アウトします。
+ SCC_STATUS_OUTMULTIPLE ファイルが複数のユーザーによってチェックアウトされています。
 
  SCC_STATUS_OUTOFDATE ファイルが最新ではありません。
 
- SCC_STATUS_DELETED ファイルがプロジェクトから削除されました。
+ SCC_STATUS_DELETEDファイルはプロジェクトから削除されました。
 
- SCC_STATUS_LOCKED ファイルがロックされています。その他のバージョンが許可されています。
+ SCC_STATUS_LOCKEDファイルはロックされています。これ以上のバージョンは許可されません。
 
- SCC_STATUS_MERGED ファイルがマージされましたが、まだ固定/検証済み。
+ SCC_STATUS_MERGEDファイルはマージされましたが、まだ修正/検証されていません。
 
- SCC_STATUS_SHARED ファイルは、プロジェクト間で共有されます。
+ SCC_STATUS_SHARED ファイルはプロジェクト間で共有されます。
 
- SCC_STATUS_PINNED ファイルは、特定のバージョンで共有されます。
+ SCC_STATUS_PINNEDファイルは明示的なバージョンで共有されます。
 
- SCC_STATUS_MODIFIED ファイルを変更/分割/違反とされました。
+ SCC_STATUS_MODIFIEDファイルが変更/破損/違反されました。
 
- SCC_STATUS_OUTBYUSER ファイルは現在のユーザーによってチェック アウトします。
+ SCC_STATUS_OUTBYUSER ファイルは現在のユーザーによってチェックアウトされています。
 
- SCC_STATUS_NOMERGE ファイルに決してマージできるし、取得する前に未保存必要があります。
+ SCC_STATUS_NOMERGEファイルはマージされず、GETの前に保存する必要はありません。
 
- SCC_STATUS_RESERVED_1 内部使用に予約します。
+ SCC_STATUS_RESERVED_1 内部使用のために予約されています。
 
- SCC_STATUS_RESERVED_2 内部使用に予約します。
+ SCC_STATUS_RESERVED_2 内部使用のために予約されています。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)

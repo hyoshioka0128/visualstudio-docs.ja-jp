@@ -25,10 +25,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596802"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community をアップグレードする
@@ -65,7 +65,7 @@ Dotfuscator Professional は業界標準の [.NET 難読化ツール][net-obfusc
 Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要に関するページ][product-about]と、[Community Edition との比較][product-compare]を参照してください。
 [preemptive.com では、完全にサポートされている評価版を入手できます][eval]。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [Dotfuscator Community の完全なユーザー ガイドのこのトピック][full]
 

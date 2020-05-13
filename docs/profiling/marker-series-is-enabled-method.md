@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002768"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled メソッド
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled メソッド
 任意のセッションでプロバイダーが有効にされているかどうかを調べます。
 
 ## <a name="syntax"></a>構文
@@ -39,7 +39,7 @@ bool is_enabled(
 
 ## <a name="return-value"></a>戻り値
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkersobj.h*
 
  **名前空間:** Concurrency::diagnostic

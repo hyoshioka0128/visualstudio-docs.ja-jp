@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList |Microsoft Docs
+title: IEE ビジュアライザーサービス::カスタム ビューアー リスト |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718019"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-このメソッドは、このサービスが知っている型のビジュアライザーのリストを返します。
+このメソッドは、このサービスが認識しているビジュアライザー型のリストを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,24 +47,24 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>パラメーター
 `celtSkip`\
-[in]ビジュアライザーをスキップの数。
+[in]スキップするビジュアライザーの数。
 
 `celRequested`\
-[in]取得するビジュアライザーの数 (ものサイズを指定します、`rgViewers`配列)。
+[in]取得するビジュアライザーの数 (`rgViewers`配列のサイズも指定)。
 
 `rgViewers`\
-[入力、出力]配列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)情報を格納する構造体。
+[イン、アウト]入力する[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)構造体の配列。
 
 `pceltFetched`\
-[out]ビジュアライザーの数を実際に取得します。
+[アウト]実際に取得されたビジュアライザーの数。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)型のビジュアライザーのサポートの一部として要求をこのメソッドに渡します。 入力を適切を追加できる場合は、式エバリュエーターでは、同じ型のカスタム ビューアーも用意されて、 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)リストにこれらのカスタム ビューアーの構造体。 必ず[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)その他のビューアーが反映されます。
+- [型](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)ビジュアライザーのサポートの一環として、このメソッドに要求を渡します。 式エバリュエーターが同じ型のカスタム ビューアーも提供する場合、それらのカスタム ビューアーの適切に入力された[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)構造をリストに追加できます。 これらの追加[ビューアーが](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)反映されていることを確認します。
 
- 参照してください[型のビジュアライザーとカスタム ビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)ビジュアライザーとビューアーとの違いの詳細について。
+ [ビジュアライザーとビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)の違いについては、「タイプ ビジュアライザー」と「カスタム ビューアー」をご参照ください。
 
 ## <a name="see-also"></a>関連項目
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

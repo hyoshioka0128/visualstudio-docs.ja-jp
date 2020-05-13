@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias |Microsoft Docs
+title: Iデバッグオブジェクト2::ゲットエイリアス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db9156e01843e859a2279e43f73c00bee21b3e9c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 53c72182b497e2b24d41a784c405d169c3db195f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308737"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726289"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
-存在する場合、このオブジェクトに関連付けられているエイリアスを取得します。
+このオブジェクトに関連付けられているエイリアス (存在する場合) を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetAlias(
 
 ## <a name="parameters"></a>パラメーター
 `ppAlias`\
-[out]返します、 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)をこのオブジェクトの別名を表すオブジェクト。 それ以外の場合、null 値を返します。
+[アウト]このオブジェクトのエイリアスを表す[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)オブジェクトを返します。それ以外の場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 呼び出して、オブジェクトのエイリアスが作成、 [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)メソッド。
+ オブジェクトのエイリアスは[、CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)メソッドの呼び出しで作成されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

@@ -1,5 +1,5 @@
 ---
-title: LPTEXTOUTPROC |Microsoft Docs
+title: をクリックして |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,26 +11,26 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a990fc28ffcba4cffc199c1435fddb41bd896521
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309022"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702787"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
-ユーザーは、統合開発環境 (IDE) 内からソース管理操作を実行するとき、ソース管理プラグインは、操作に関連するエラーまたは状態のメッセージを伝達するためにする可能性があります。 プラグインはできますこの目的の表示の独自のメッセージ ボックス。 ただし、詳細のシームレスな統合をプラグインできる文字列に渡す、IDE では、状態情報を表示することをネイティブで表示されます。 このメカニズムは、`LPTEXTOUTPROC`関数ポインター。 IDE では、エラーと状態を表示するため (詳細については、以下で説明) この関数を実装します。
+ユーザーが統合開発環境 (IDE) 内からソース管理操作を実行する場合、ソース管理プラグインは、操作に関連するエラーまたはステータス メッセージを伝える必要があります。 プラグインは、この目的のために独自のメッセージ ボックスを表示できます。 ただし、よりシームレスな統合のために、プラグインは IDE に文字列を渡すことができます。 このメカニズムは`LPTEXTOUTPROC`関数ポインタです。 IDE はエラーとステータスを表示するためにこの機能を実装しています (詳細は後述します)。
 
-IDE をソース管理プラグインをこの関数に関数ポインターとして渡す、`lpTextOutProc`を呼び出すときに、パラメーター、 [SccOpenProject](../extensibility/sccopenproject-function.md)します。 呼び出しの途中での例については、SCC 操作中に、 [SccGet](../extensibility/sccget-function.md)多数のファイルを含む、プラグイン、呼び出すことができます、`LPTEXTOUTPROC`関数を定期的に表示する文字列を渡します。 IDE は、または個別のメッセージ ボックスで、必要に応じて、出力ウィンドウにステータス バーの これらの文字列を表示する場合があります。 必要に応じて、IDE が持つ特定のメッセージを表示することができます、**キャンセル**ボタンをクリックします。 これにより、ユーザー、操作をキャンセルして、IDE をプラグインにこの情報を渡す機能を提供します。
+[SccOpenProject](../extensibility/sccopenproject-function.md)を呼び出すときに、IDE は、この関数への関数`lpTextOutProc`ポインターをソース管理プラグインに渡します。 SCC 操作中に、たとえば、多くのファイルを含む[SccGet](../extensibility/sccget-function.md)の呼び出しの途中で、プラグインは定期的`LPTEXTOUTPROC`に表示する文字列を渡す関数を呼び出すことができます。 IDE では、これらの文字列をステータス バー、出力ウィンドウ、または別のメッセージ ボックスに表示できます。 オプションで、IDE は **[キャンセル]** ボタンを使用して特定のメッセージを表示できます。 これにより、ユーザーは操作をキャンセルでき、この情報をプラグインに渡すことができます。
 
 ## <a name="signature"></a>署名
- IDE には、関数は、次のシグネチャの出力します。
+ IDE の出力関数には、次のシグネチャがあります。
 
 ```cpp
 typedef LONG (*LPTEXTOUTPROC) (
@@ -43,37 +43,37 @@ typedef LONG (*LPTEXTOUTPROC) (
 
 display_string
 
-表示するテキスト文字列。 この文字列は、キャリッジ リターン、ライン フィードでない終了する必要があります。
+表示するテキスト文字列。 この文字列は、復帰または改行で終了しないでください。
 
 mesg_type
 
-メッセージの種類。 次の表では、このパラメーターのサポートされている値を示します。
+メッセージの種類。 次の表は、このパラメーターでサポートされる値の一覧です。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
-|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|メッセージは情報、警告、またはエラーと見なされます。|
-|`SCC_MSG_STATUS`|メッセージは、状態が表示され、ステータス バーに表示されることができます。|
+|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|メッセージは、情報、警告、またはエラーと見なされます。|
+|`SCC_MSG_STATUS`|メッセージはステータスを示し、ステータスバーに表示できます。|
 |`SCC_MSG_DOCANCEL`|メッセージ文字列なしで送信されます。|
-|`SCC_MSG_STARTCANCEL`|表示の開始、**キャンセル**ボタンをクリックします。|
-|`SCC_MSG_STOPCANCEL`|表示を停止、**キャンセル**ボタンをクリックします。|
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|バック グラウンド操作がキャンセルかどうかは IDE に求められます。IDE を返します`SCC_MSG_RTN_CANCEL`操作がキャンセルされた場合を返しますそれ以外の場合、`SCC_MSG_RTN_OK`します。 `display_string`としてパラメーターをキャストする[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)構造体は、ソース管理プラグインによって提供されます。|
-|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|バージョン コントロールから取得される前に、ファイルについて、IDE を指示します。 `display_string`としてパラメーターをキャストする[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)構造体は、ソース管理プラグインによって提供されます。|
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|バージョン コントロールから取得された後、ファイルについて、IDE を指示します。 `display_string`としてパラメーターをキャストする[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)構造体は、ソース管理プラグインによって提供されます。|
-|`SCC_MSG_BACKGROUND_ON_MESSAGE`|バック グラウンド操作の現在の状態の IDE に指示します。 `display_string`としてパラメーターをキャストする[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)構造体は、ソース管理プラグインによって提供されます。|
+|`SCC_MSG_STARTCANCEL`|**[キャンセル]** ボタンの表示を開始します。|
+|`SCC_MSG_STOPCANCEL`|**[キャンセル]** ボタンの表示を停止します。|
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|バックグラウンド操作を取り消すかどうかを IDE に確認します`SCC_MSG_RTN_CANCEL`。それ以外の`SCC_MSG_RTN_OK`場合は、 を返します。 パラメーター`display_string`は、ソース管理プラグインによって提供される[SccMsgDataIsIsed](#LinkSccMsgDataIsCancelled)構造体としてキャストされます。|
+|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|バージョン管理から取得する前に、ファイルに関する IDE に通知します。 パラメーター`display_string`は、ソース管理プラグインによって提供される[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)構造体としてキャストされます。|
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|バージョン管理から取得したファイルについて IDE に通知します。 パラメーター`display_string`は、ソース管理プラグインによって提供される[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)構造体としてキャストされます。|
+|`SCC_MSG_BACKGROUND_ON_MESSAGE`|バックグラウンド操作の現在の状態を IDE に通知します。 パラメーター`display_string`は、ソース管理プラグインによって提供される[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)構造体としてキャストされます。|
 
 ## <a name="return-value"></a>戻り値
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
-|SCC_MSG_RTN_OK|文字列の表示または操作が正常に完了します。|
-|SCC_MSG_RTN_CANCEL|ユーザーが操作をキャンセルしようとするとします。|
+|SCC_MSG_RTN_OK|文字列が表示されたか、操作が正常に完了しました。|
+|SCC_MSG_RTN_CANCEL|ユーザーは操作をキャンセルします。|
 
 ## <a name="example"></a>例
- IDE の呼び出しがあると、 [SccGet](../extensibility/sccget-function.md) 20 個のファイル名とします。 ソース管理プラグイン ファイルの取得の途中で操作の取り消しをしないようにしたいです。 各ファイルを取得するには、後`lpTextOutProc`、各ファイルでは、状態情報を渡すと、送信、`SCC_MSG_DOCANCEL`報告する状態が存在しない場合のメッセージします。 かどうか、いつでもプラグイン、戻り値の値を受け取る`SCC_MSG_RTN_CANCEL`IDE から操作をキャンセル、get、すぐにこれ以上ファイルを取得できるようにします。
+ IDE が 20 のファイル名を持つ[SccGet](../extensibility/sccget-function.md)を呼び出したとします。 ソース管理プラグインは、ファイル取得の途中で操作をキャンセルしないようにします。 各ファイルを取得した後、`lpTextOutProc`各ファイルのステータス情報を渡して呼び出し、`SCC_MSG_DOCANCEL`報告するステータスがない場合はメッセージを送信します。 プラグインが IDE`SCC_MSG_RTN_CANCEL`から戻り値を受け取った場合は、すぐに取得操作をキャンセルし、ファイルが取得されないようにします。
 
 ## <a name="structures"></a>構造体
 
-### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a>キャンセルされたメッセージ
 
 ```cpp
 typedef struct {
@@ -81,9 +81,9 @@ typedef struct {
 } SccMsgDataIsCancelled;
 ```
 
- この構造体に送信される、`SCC_MSG_BACKGROUND_IS_CANCELLED`メッセージ。 取り消されたバック グラウンド操作の ID を通信するために使用されます。
+ この構造体は、メッセージと`SCC_MSG_BACKGROUND_IS_CANCELLED`共に送信されます。 取り消されたバックグラウンド操作の ID を伝えるために使用されます。
 
-### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="sccmsgdataonbeforegetfile"></a><a name="LinkSccMsgDataOnBeforeGetFile"></a>ファイルの前に
 
 ```cpp
 typedef struct {
@@ -92,9 +92,9 @@ typedef struct {
 } SccMsgDataOnBeforeGetFile;
 ```
 
- この構造体に送信される、`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`メッセージ。 取得するファイルの名前と ID の取得を行っているバック グラウンド操作のために使用されます。
+ この構造体は、メッセージと`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`共に送信されます。 取得しようとしているファイルの名前と、取得を行っているバックグラウンド操作の ID を伝えるために使用されます。
 
-### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="sccmsgdataonaftergetfile"></a><a name="LinkSccMsgDataOnAfterGetFile"></a>取得ファイルの後に
 
 ```cpp
 typedef struct {
@@ -104,9 +104,9 @@ typedef struct {
 } SccMsgDataOnAfterGetFile;
 ```
 
- この構造体に送信される、`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`メッセージ。 指定したファイルだけを取得するバック グラウンド操作の ID を取得した結果を通信するために使用されます。 戻り値を参照してください、 [SccGet](../extensibility/sccget-function.md)にどのような結果に与えることができます。
+ この構造体は、メッセージと`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`共に送信されます。 指定したファイルの取得結果と、取得を行ったバックグラウンド操作の ID を伝えるために使用されます。 結果として与えられるものについては[、SccGet](../extensibility/sccget-function.md)の戻り値を参照してください。
 
-### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="sccmsgdataonmessage"></a><a name="LinkSccMsgDataOnMessage"></a>メッセージ
 
 ```cpp
 typedef struct {
@@ -116,10 +116,10 @@ typedef struct {
 } SccMsgDataOnMessage;
 ```
 
- この構造体に送信される、`SCC_MSG_BACKGROUND_ON_MESSAGE`メッセージ。 バック グラウンド操作の現在の状態を通信するために使用されます。 状態は、IDE に表示する文字列として表されますと`bIsError`、メッセージの重大度を示します (`TRUE`エラー メッセージ。`FALSE`警告または情報メッセージ)。 ステータスを送信するバック グラウンド操作の ID も与えられます。
+ この構造体は、メッセージと`SCC_MSG_BACKGROUND_ON_MESSAGE`共に送信されます。 これは、バックグラウンド操作の現在の状態を通知するために使用されます。 ステータスは、IDE によって表示される文字列として表され`bIsError`、メッセージの重大度 (エラー メッセージ`TRUE`の場合) を示します。`FALSE`警告または情報メッセージの場合)。 ステータスを送信するバックグラウンド操作の ID も指定されます。
 
-## <a name="code-example"></a>コード例
- 呼び出し元の簡単な例を次に示します`LPTEXTOUTPROC`を送信する、`SCC_MSG_BACKGROUND_ON_MESSAGE`呼び出しの構造をキャストする方法を示すメッセージ。
+## <a name="code-example"></a>コードの例
+ 以下は、メッセージを送信する`LPTEXTOUTPROC`呼び出`SCC_MSG_BACKGROUND_ON_MESSAGE`しの簡単な例で、呼び出しの構造をキャストする方法を示しています。
 
 ```cpp
 LONG SendStatusMessage(

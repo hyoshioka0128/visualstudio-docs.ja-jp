@@ -1,41 +1,41 @@
 ---
-title: ローカル変数の評価 |Microsoft Docs
+title: ローカルの評価 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed43dae7aaf2fe7c130f6822a46ce429661634ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315414"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738821"
 ---
-# <a name="evaluate-locals"></a>ローカル変数を評価します。
+# <a name="evaluate-locals"></a>ローカルを評価する
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
-[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)を呼び出して、ローカルだけでなく、ローカルの名前と型の値を取得します。 ローカルの値は、プログラムの現在の状態に依存するので、メモリから、ローカルの値を取得する必要があります。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトを使用してバインドする、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)値を含むメモリ内の適切な場所へのローカルを表すオブジェクト。 メモリ内のこの場所は、によって表される、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。
+[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)ローカルの値、およびローカルの名前と型を取得するために呼び出されます。 ローカルの値はプログラムの現在の状態に依存するため、ローカルの値はメモリから取得する必要があります。 オブジェクト[は](../../extensibility/debugger/reference/idebugbinder.md)、ローカルを表す[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトを、値を含むメモリ内の適切な場所にバインドするために使用されます。 メモリ内のこの位置は[、IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクトによって表されます。
 
-ローカルの値を取得するには、この機能は、次のタスクを実行するヘルパー関数にカプセル化します。
+ローカルの値を取得するこの機能は、次のタスクを実行するヘルパー関数にカプセル化されます。
 
-1. バインド、`IDebugField`オブジェクトを取得するためのメモリを`IDebugObject`オブジェクト。
+1. オブジェクトを`IDebugField`メモリにバインドしてオブジェクトを`IDebugObject`取得します。
 
 2. メモリから値を取得します。 この値は、一連のバイトとして表されます。
 
-3. ローカルの型に基づいた値の書式を設定します。
+3. ローカルの型に基づいて値を書式設定します。
 
-4. ローカルの値を含む汎用オブジェクトを返します。 これは、c# では、 `object`、C++ では、これは、`VARIANT`します。
+4. ローカルの値を格納するジェネリック オブジェクトを返します。 C# では、これは`object`です。 `VARIANT`
 
 ## <a name="managed-code"></a>マネージド コード
- これは、マネージ コードでローカルの値を取得する関数の実装です。
+ これは、マネージ コード内のローカルの値を取得する関数の実装です。
 
 ```csharp
 namespace EEMC
@@ -77,7 +77,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>アンマネージ コード
- これは、アンマネージ コードでローカルの値を取得する関数の実装です。 `FieldGetType` 示した[ローカル値の取得](../../extensibility/debugger/getting-local-values.md)します。
+ これは、アンマネージ コード内のローカルの値を取得する関数の実装です。 `FieldGetType`は、[ローカル値の取得 に](../../extensibility/debugger/getting-local-values.md)示されています。
 
 ```cpp
 HRESULT FieldGetPrimitiveValue(
@@ -190,6 +190,6 @@ HRESULT FieldGetPrimitiveValue(
 ```
 
 ## <a name="see-also"></a>関連項目
-- [ローカル変数のサンプルの実装](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [ローカルの値を取得します。](../../extensibility/debugger/getting-local-values.md)
+- [ローカルのサンプル実装](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [ローカル値を取得する](../../extensibility/debugger/getting-local-values.md)
 - [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

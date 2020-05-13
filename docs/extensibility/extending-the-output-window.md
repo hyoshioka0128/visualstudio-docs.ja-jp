@@ -1,31 +1,31 @@
 ---
-title: 出力ウィンドウの拡張 |Microsoft Docs
+title: 出力ウィンドウを拡張する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd02ce74f2fee8255d92c47149a46f1003b02011
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311022"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711643"
 ---
-# <a name="extend-the-output-window"></a>出力ウィンドウを拡張します。
-**出力**ウィンドウはテキスト ペインの読み取り/書き込みのセットです。 Visual Studio では、これらの組み込みのペインがあります。**ビルド**、プロジェクトのビルドに関するメッセージを通信および**全般**を[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]は IDE に関するメッセージを伝えます。 プロジェクトへの参照を取得する、**ビルド**ペインを使用して自動的に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>インターフェイスのメソッド、および Visual Studio への直接アクセスを提供しています、**全般**ウィンドウを通じて、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。サービス。 だけでなく、組み込みのペインには、作成および独自のカスタム ペインを管理することができます。
+# <a name="extend-the-output-window"></a>出力ウィンドウを拡張する
+**出力**ウィンドウは、読み取り/書き込みテキスト ペインのセットです。 Visual Studio には、ビルドに関するメッセージをプロジェクトが伝達する**ビルド**、および IDE に関する[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]メッセージを伝達する**全般**という組み込みのペインがあります。 プロジェクトは、インターフェイス メソッド**を使用**してビルド<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>ペインへの参照を自動的に取得し、Visual Studio はサービス<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>を通じて **[全般**] ウィンドウに直接アクセスできます。 組み込みのペインに加えて、独自のカスタム ペインを作成および管理できます。
 
- 制御することができます、**出力**ウィンドウ経由で直接、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>インターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>によって提供される、インターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>サービスを作成、取得、および破棄のメソッドを定義**出力**ウィンドウ ペインがあります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>インターフェイス ウィンドウを表示、ウィンドウを非表示、およびそれぞれのテキストを操作するためのメソッドを定義します。 別の方法を制御する、**出力**ウィンドウは、<xref:EnvDTE.OutputWindow>と<xref:EnvDTE.OutputWindowPane>Visual Studio オートメーション オブジェクト モデル内のオブジェクト。 これらのオブジェクトをカプセル化の機能のほぼすべて、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>インターフェイス。 さらに、<xref:EnvDTE.OutputWindow>と<xref:EnvDTE.OutputWindowPane>オブジェクトを列挙しやすく上位レベルの機能の追加、**出力**ウィンドウ ペインからテキストを取得するとします。
+ **出力**ウィンドウは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>インターフェイスを<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>通じて直接制御できます。 サービスによって提供されるインターフェイスは<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>、**出力**ウィンドウ ペインを作成、取得、および破棄するためのメソッドを定義します。 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> インターフェイス<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>は、ペインの表示、ペインの非表示、およびテキストの操作を行うためのメソッドを定義します。 **出力**ウィンドウを制御する別の方法は、Visual <xref:EnvDTE.OutputWindow> Studio<xref:EnvDTE.OutputWindowPane>オートメーション オブジェクト モデルの オブジェクトと を使用することです。 これらのオブジェクトは、 インターフェイス<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow><xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>のほぼすべての機能をカプセル化します。 また、<xref:EnvDTE.OutputWindow>オブジェクトは<xref:EnvDTE.OutputWindowPane>、**出力**ウィンドウ ペインを列挙し、ペインからテキストを取得しやすくするために、いくつかの高レベルの機能を追加します。
 
-## <a name="create-an-extension-that-uses-the-output-pane"></a>[出力] ペインを使用する拡張機能を作成します。
- [出力] ウィンドウのさまざまな側面を実行する拡張機能を行うことができます。
+## <a name="create-an-extension-that-uses-the-output-pane"></a>[出力] ウィンドウを使用する拡張機能を作成する
+ 出力ペインのさまざまな側面を使用する拡張機能を作成できます。
 
-1. という名前の VSIX プロジェクトを作成する`TestOutput`メニュー コマンドを使用して名前付き**TestOutput**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+1. **TestOutput**という名前の`TestOutput`メニュー コマンドで名前を付けた VSIX プロジェクトを作成します。 詳細については、「[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。
 
 2. 次の参照を追加します。
 
@@ -33,14 +33,14 @@ ms.locfileid: "66311022"
 
     2. EnvDTE80
 
-3. *TestOutput.cs*次の追加ステートメントを使用します。
+3. *TestOutput.cs*で、次の using ステートメントを追加します。
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. *TestOutput.cs*、削除、`ShowMessageBox`メソッド。 次のメソッド スタブを追加します。
+4. *[TestOutput.cs]* で`ShowMessageBox`メソッドを削除します。 次のメソッドスタブを追加します。
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "66311022"
     }
     ```
 
-5. TestOutput コンス トラクターでは、OutputCommandHandler にコマンド ハンドラーを変更します。 コマンドを追加する部分を次に示します。
+5. テスト出力コンストラクターで、コマンド ハンドラーを "出力コマンド ハンドラー" に変更します。 コマンドを追加する部分は次のとおりです。
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "66311022"
     }
     ```
 
-6. 以下のセクションでは、出力ウィンドウの処理のさまざまな方法を示すとおりの方法があります。 本体にこれらのメソッドを呼び出すことができます、`OutputCommandHandler()`メソッド。 たとえば、次のコードを追加、`CreatePane()`メソッドに次のセクションでを指定します。
+6. 以下のセクションでは、出力ペインに対するさまざまな処理方法を示すさまざまな方法を示します。 これらのメソッドをメソッドの本体に`OutputCommandHandler()`呼び出すことができます。 たとえば、次のコードは、次`CreatePane()`のセクションで指定したメソッドを追加します。
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -70,8 +70,8 @@ ms.locfileid: "66311022"
     }
     ```
 
-## <a name="create-an-output-window-with-ivsoutputwindow"></a>IVsOutputWindow で出力ウィンドウを作成します。
- この例は、新たに作成する方法を示しています。**出力**ウィンドウ ペインを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>インターフェイス。
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>出力ウィンドウを使用して出力ウィンドウを作成する
+ この例では、インターフェイスを使用して新しい **[出力**]<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>ウィンドウ ペインを作成する方法を示します。
 
 ```csharp
 void CreatePane(Guid paneGuid, string title,
@@ -95,10 +95,10 @@ void CreatePane(Guid paneGuid, string title,
 }
 ```
 
- このメソッドをクリックすると、前のセクションで指定された拡張機能を追加する場合、**呼び出す TestOutput**コマンドが表示、**出力**というヘッダーを持つウィンドウ**の出力を表示差出人：CreatedPane**と単語**は、作成ウィンドウ**ウィンドウ自体にします。
+ 前のセクションで指定した拡張機能にこのメソッドを追加する場合 **、TestOutput の呼び出し**コマンドをクリックすると、[出力を表示] というヘッダーが表示される [**出力**]**This is the Created Pane**ウィンドウが表示されます **。**
 
-## <a name="create-an-output-window-with-outputwindow"></a>OutputWindow で出力ウィンドウを作成します。
- この例は、作成する方法を示します、**出力**ウィンドウ ペインを使用して、<xref:EnvDTE.OutputWindow>オブジェクト。
+## <a name="create-an-output-window-with-outputwindow"></a>出力ウィンドウを使用して出力ウィンドウを作成する
+ この例では、オブジェクトを使用して**出力**ウィンドウ ペインを<xref:EnvDTE.OutputWindow>作成する方法を示します。
 
 ```csharp
 void CreatePane(string title)
@@ -120,12 +120,12 @@ void CreatePane(string title)
 }
 ```
 
- ただし、<xref:EnvDTE.OutputWindowPanes>コレクションを取得できます。、**出力**をタイトルでウィンドウで、一意であるウィンドウのタイトルは保証されません。 タイトルの一意性を疑いを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A>その GUID で適切なウィンドウを取得するメソッド。
+ <xref:EnvDTE.OutputWindowPanes>このコレクションでは **、出力**ウィンドウのウィンドウ枠をタイトルで取得できますが、ペインタイトルが一意であるとは保証されません。 タイトルの一意性を疑う場合は、メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A>を使用して GUID によって正しいウィンドウを取得します。
 
- このメソッドをクリックすると、前のセクションで指定された拡張機能を追加する場合、**呼び出す TestOutput**コマンドと書かれたヘッダーを出力ウィンドウを参照する必要があります**から出力の表示。DTEPane**と単語**DTE ウィンドウの追加**ウィンドウ自体にします。
+ このメソッドを前のセクションで指定した拡張機能に追加すると **、TestOutput の呼び出し**コマンドをクリックすると、[**出力を表示**] というヘッダーが表示される [出力] ウィンドウが**Added DTE Pane**表示されます。
 
-## <a name="delete-an-output-window"></a>出力ウィンドウを削除します。
- この例では、削除、**出力**ウィンドウ ペイン。
+## <a name="delete-an-output-window"></a>出力ウィンドウの削除
+ この例では、**出力**ウィンドウ ペインを削除する方法を示します。
 
 ```csharp
 void DeletePane(Guid paneGuid)
@@ -147,10 +147,10 @@ void DeletePane(Guid paneGuid)
 }
 ```
 
- このメソッドをクリックすると、前のセクションで指定された拡張機能を追加する場合、**呼び出す TestOutput**コマンドと書かれたヘッダーを出力ウィンドウを参照する必要があります**から出力の表示。新しいウィンドウ**と単語**作成ウィンドウの追加**ウィンドウ自体にします。 クリックすると、**呼び出す TestOutput**コマンド、ウィンドウの削除をもう一度、します。
+ 前のセクションで指定した拡張機能にこのメソッドを追加する場合 **、TestOutput の呼び出し**コマンドをクリックすると、[出力を表示] というヘッダーが表示される [出力]**Added Created Pane**ウィンドウ**が表示されます。** [TestOutput の**呼び出し**] コマンドを再度クリックすると、ペインが削除されます。
 
-## <a name="get-the-general-pane-of-the-output-window"></a>出力ウィンドウの [全般] ペインを取得します。
- この例は、組み込みを取得する方法を示します**全般**のウィンドウ、**出力**ウィンドウ。
+## <a name="get-the-general-pane-of-the-output-window"></a>[出力] ウィンドウの [全般] ウィンドウを取得する
+ この例では、**出力**ウィンドウの組み込みの **[全般**] ウィンドウを取得する方法を示します。
 
 ```csharp
 IVsOutputWindowPane GetGeneralPane()
@@ -160,10 +160,10 @@ IVsOutputWindowPane GetGeneralPane()
 }
 ```
 
- クリックすると、前のセクションで指定された拡張機能をこのメソッドを追加する場合、**呼び出す TestOutput**コマンドが表示される、**出力**ウィンドウには、単語が表示されます**全般が見つかりました。ウィンドウ**ウィンドウ。
+ 前のセクションで指定した拡張機能にこのメソッドを追加する場合 **、TestOutput の呼び出し**コマンドをクリックすると、**出力**ウィンドウがペインに **[見つかった全般] ウィンドウが**表示されます。
 
-## <a name="get-the-build-pane-of-the-output-window"></a>出力ウィンドウの [ビルド] ウィンドウします。
- この例では、検索、**ビルド**ウィンドウと書き込みにします。 以降、**ビルド**ペインが既定でアクティブになってもアクティブにします。
+## <a name="get-the-build-pane-of-the-output-window"></a>[出力] ウィンドウの [ビルド] ウィンドウを取得する
+ この例では、[**ビルド**] ウィンドウを見つけて書き込む方法を示します。 **[ビルド**] ウィンドウは既定ではアクティブ化されないので、アクティブ化も行います。
 
 ```csharp
 void OutputTaskItemStringExExample(string buildMessage)

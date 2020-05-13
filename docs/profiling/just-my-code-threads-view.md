@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62995344"
 ---
 # <a name="just-my-code-threads-view"></a>[マイ コードのみ]\(スレッド ビュー)
@@ -26,6 +26,6 @@ ms.locfileid: "62995344"
 
  このオプションを選択すると、ブロック呼び出しがフィルターで除外されることがあります。 決定に詳細な呼び出し履歴が必要になる場合、このオプションの選択を解除し、呼び出し履歴をすべて公開してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
 - [不要項目の非表示の割合](../profiling/noise-reduction-percentage.md)

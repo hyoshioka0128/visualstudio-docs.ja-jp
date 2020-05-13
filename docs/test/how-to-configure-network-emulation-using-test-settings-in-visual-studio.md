@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589215"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880144"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>方法: Visual Studio でテストの設定を使用してネットワーク エミュレーションを構成する
 
@@ -24,12 +24,19 @@ Visual Studio から、さまざまなネットワーク環境でアプリケー
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 次の手順では、ネットワーク エミュレーションを構成エディターから構成する方法を説明します。 これらの手順は、Microsoft Test Manager および Visual Studio の両方の構成エディターに当てはまります。
+::: moniker-end
+::: moniker range=">=vs-2019"
+次の手順では、ネットワーク エミュレーションを構成エディターから構成する方法を説明します。 これらの手順は、Visual Studio の構成エディターに当てはまります。
+::: moniker-end
 
 > [!NOTE]
-> ネットワーク エミュレーション診断データ アダプターは、Visual Studio のテスト設定のみに適用できます。 Microsoft Test Manager のテスト設定には使用されません。
+> ネットワーク エミュレーション診断データ アダプターは、Visual Studio のテスト設定のみに適用できます。 Microsoft Test Manager (Visual Studio 2017 では非推奨) のテスト設定には使用されません。
 
+::: moniker range="vs-2017"
 ネットワーク エミュレーションを使用するには、管理者特権を持つアカウントを使用する必要があります。 手動テストを実行するローカル ロールに対してネットワーク エミュレーションを選択した場合は、管理者特権で Microsoft Test Manager を起動する必要があります。 それ以外のロールに対してネットワーク エミュレーションを選択した場合は、そのロールのコンピューター上にあるテスト エージェントによって使用されるユーザー アカウントが Administrators グループのメンバーであることを確認する必要があります。 テスト エージェントのアカウントの設定方法の詳細については、[テスト エージェントのインストールと構成](../test/lab-management/install-configure-test-agents.md)に関するページを参照してください。
+::: moniker-end
 
 > [!NOTE]
 > テスト エージェントの既定のアカウントであるネットワーク サービス アカウントは、Administrators グループのメンバーではありません。

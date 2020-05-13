@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Microsoft Docs
+title: MACHINE_INFO_FLAGS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FLAGS enumeration
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77d2c9af733f192526970d08d0ae3d24d2a5bf3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339235"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714507"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
-マシンの記述に使用します。
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
+マシンを記述するために使用されます。
 
 ## <a name="syntax"></a>構文
 
@@ -42,17 +42,17 @@ public enum enum_MACHINE_INFO_FLAGS { 
 
 ## <a name="fields"></a>フィールド
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- ターミナル サービスが使用できることを示します。
+ ターミナル サービスが利用可能であることを示します。
 
 ## <a name="remarks"></a>Remarks
- として使用される、`Flags`のメンバー、 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体。
+ MACHINE_INFO構造体の`Flags`メンバーとして使用[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

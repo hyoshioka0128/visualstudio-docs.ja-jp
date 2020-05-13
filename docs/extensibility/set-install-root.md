@@ -1,46 +1,46 @@
 ---
-title: VSIX v3 で拡張機能フォルダー外でのインストール |Microsoft Docs
+title: VSIX v3 を使用して拡張機能フォルダーの外部にインストールする |マイクロソフトドキュメント
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852194"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700180"
 ---
 # <a name="install-outside-the-extensions-folder"></a>拡張機能フォルダー外でのインストール
 
-拡張機能フォルダーの外部 (バージョン 3) 拡張機能資産を Visual Studio 2017 と VSIX v3 以降をインストールできます。 現時点では、次の場所は、([INSTALLDIR] は、Visual Studio インスタンスのインストール ディレクトリにマップ) の有効なインストール場所として有効になっているは。
+Visual Studio 2017 および VSIX v3 (バージョン 3) 以降では、拡張機能の資産を拡張機能フォルダーの外部にインストールできます。 現在、次の場所は有効なインストール場所として有効になっています (ここで [INSTALLDIR] は Visual Studio インスタンスのインストール ディレクトリに割り当てられます)。
 
-* [INSTALLDIR]\MSBuild
-* [INSTALLDIR]\Xml\Schemas
-* [INSTALLDIR]\Common7\IDE\PublicAssemblies
-* [INSTALLDIR]\Licenses
-* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
-* [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets (Visual Studio 2017 のサポートされている; Visual Studio 2019 の非推奨とのみ以降)
+* [インストールディレクトリ]\MSBuild
+* [インストールディレクトリ]\Xml\スキーマ
+* [インストールディレクトリ]\コモン7\IDE\パブリックアセンブリ
+* [インストールディレクトリ]\ライセンス
+* [インストールディレクトリ]\コモン7\IDE\リファレンスアセンブリ
+* [インストールディレクトリ]\コモン7\IDE\リモートデバッガ
+* [インストールディレクトリ]\Common7\IDE\VC\VCターゲット (Visual Studio 2017 でのみサポートされ、Visual Studio 2019 以降では使用されなくなりました)
 
 > [!NOTE]
-> VSIX 形式は、Visual Studio のインストール フォルダーの構造の外にインストールできます。 
+> VSIX 形式では、Visual Studio のインストール フォルダー構造の外部にインストールすることはできません。 
 
-これらのディレクトリへのインストールをサポートするために、VSIX を「インスタンスごとのコンピューターごとの」インストールする必要があります。 これは、extension.vsixmanifest デザイナーで「すべてのユーザー」のチェック ボックスをオンに有効にすることができます。
+これらのディレクトリへのインストールをサポートするには、VSIX を「インスタンスごとマシンごと」インストールする必要があります。 これは、extension.vsixmanifest デザイナーの 「すべてのユーザー」 チェックボックスをオンにすることで有効にできます。
 
-![すべてのユーザーを確認してください。](media/check-all-users.png)
+![すべてのユーザーを確認する](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>InstallRoot を設定する方法
+## <a name="how-to-set-the-installroot"></a>インストールルートを設定する方法
 
-インストール ディレクトリを設定するには、使用することができます、**プロパティ**Visual Studio のウィンドウ。 たとえば、設定、`InstallRoot`上の場所のいずれかへの参照をプロジェクトのプロパティ。
+インストール ディレクトリを設定するには、Visual Studio の **[プロパティ]** ウィンドウを使用します。 たとえば、プロジェクト参照の`InstallRoot`プロパティを上記の場所のいずれかに設定できます。
 
-![ルートのプロパティをインストールします。](media/install-root-properties.png)
+![ルート プロパティのインストール](media/install-root-properties.png)
 
-これは、いくつかのメタデータが、対応する追加されます`ProjectReference`VSIX プロジェクトの .csproj ファイル内のプロパティ。
+これにより、VSIX プロジェクトの .csproj ファイル内の対応する`ProjectReference`プロパティにいくつかのメタデータが追加されます。
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -51,15 +51,15 @@ ms.locfileid: "67852194"
 ```
 
 > [!NOTE]
-> たい場合は、.csproj ファイルを直接編集できます。
+> 必要に応じて、.csproj ファイルを直接編集できます。
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>InstallRoot、下のサブパスを設定する方法
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>インストールルートの下にサブパスを設定する方法
 
-下のサブパスをインストールするかかどうか、 `InstallRoot`、設定によって行うことができます、`VsixSubPath`プロパティと同様、`InstallRoot`プロパティ。 たとえばをインストールする、プロジェクト参照の出力する ' [INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'。 次のように簡単にプロパティ デザイナーを使用しました。
+下のサブパス`InstallRoot`にインストールする場合は、`VsixSubPath`プロパティをプロパティと同じように`InstallRoot`設定します。 たとえば、プロジェクト参照の出力を '[INSTALLDIR]\MSBuild\MyCOMPANY\MySDK\1.0' にインストールするとします。 この操作は、プロパティ デザイナーで簡単に行うことができます。
 
-![セットのサブパス](media/set-subpath.png)
+![サブパスを設定する](media/set-subpath.png)
 
-対応する .csproj 変更は、次のようになります。
+対応する .csproj の変更は次のようになります。
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -72,4 +72,4 @@ ms.locfileid: "67852194"
 
 ## <a name="extra-information"></a>追加情報
 
-プロパティのデザイナーの変更; プロジェクトの参照だけに適用されます。設定することができます、`InstallRoot`もプロジェクト内の項目のメタデータ (上記で説明したのと同じ方法を使用)。
+プロパティ デザイナーの変更は、プロジェクト参照以外にも適用されます。プロジェクト内の`InstallRoot`項目のメタデータも設定できます (上記と同じ方法を使用)。

@@ -7,10 +7,10 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714517"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio for Mac は Team Foundation バージョン管理をサポートしていますか?
@@ -32,11 +32,11 @@ Visual Studio for Mac は TFVC を正式にサポートしていませんが、�
 * 方法 1. [グラフィカル UI の場合、Visual Studio Code と Azure Repos 拡張機能を使用する](#use-visual-studio-code-and-the-azure-repos-extension)
 * 方法 2. [Team Explorer Everywhere Command Line Client (TEE-CLC) を使用してお使いのリポジトリに接続する](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### 方法 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Visual Studio Code と Azure Repos 拡張機能を使用する
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>方法 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Visual Studio Code と Azure Repos 拡張機能を使用する
 
 グラフィカル インターフェイスを操作してバージョン管理内のファイルを管理する場合、Visual Studio Code 対応の Azure Repos 拡張機能では、Microsoft からサポートされているソリューションを提供しています。 使用を開始するには、[Visual Studio Code](https://code.visualstudio.com) をダウンロードして、[Azure Repos 拡張機能を構成する](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)方法を確認します。
 
-### 方法 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Team Explorer Everywhere Command Line Client を使用して接続する
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>方法 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Team Explorer Everywhere Command Line Client を使用して接続する
 
 > [!IMPORTANT]
 > Team Explorer Everywhere の README にあるように、このプロジェクトは[管理されなくなりました](https://github.com/microsoft/team-explorer-everywhere)。
@@ -106,6 +106,6 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 `tf help`
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio を使用して TFVC でコードを開発および共有する (Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

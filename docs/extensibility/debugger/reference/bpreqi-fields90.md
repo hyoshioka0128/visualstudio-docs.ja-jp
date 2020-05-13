@@ -1,27 +1,27 @@
 ---
-title: BPREQI_FIELDS90 |Microsoft Docs
+title: BPREQI_FIELDS90 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350542"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737739"
 ---
-# <a name="bpreqifields90"></a>BPREQI_FIELDS90
-取得するブレークポイントの要求についての情報を指定する有効な値を列挙します。 この列挙体を拡張、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列挙体。
+# <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
+ブレークポイント要求に関して取得する情報を指定する有効な値を列挙します。 この列挙体は[、BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列挙体を拡張します。
 
 ## <a name="syntax"></a>構文
 
@@ -78,56 +78,56 @@ public enum enum_BPREQI_FIELDS90
 
 ## <a name="fields"></a>フィールド
 `BPREQI90_BPLOCATION`\
-初期化または使用して、 `bpLocation` (ブレークポイントの位置) フィールドの[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体`bpLocation`の (ブレークポイントの場所) フィールドを初期化または使用します。
 
 `BPREQI90_LANGUAGE`\
-初期化または使用して、`guidLanguage`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`guidLanguage`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_PROGRAM`\
-初期化または使用して、`pProgram`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`pProgram`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_PROGRAMNAME`\
-初期化または使用して、`bstrProgramName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`bstrProgramName`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_THREAD`\
-初期化または使用して、`pThread`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`pThread`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_THREADNAME`\
-初期化または使用して、`bstrThreadName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`bstrThreadName`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_PASSCOUNT`\
-初期化または使用して、`bpPassCount`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`bpPassCount`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_CONDITION`\
-初期化または使用して、 `bpCondition` (ブレークポイント条件) フィールドの`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`bpCondition``BP_REQUEST_INFO2`構造体の (ブレークポイント条件) フィールドを`BP_REQUEST_INFO`初期化または使用します。
 
 `BPREQI90_FLAGS`\
-初期化または使用して、`dwFlags`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+または`BP_REQUEST_INFO2`構造体の`dwFlags`フィールドを初期化`BP_REQUEST_INFO`または使用します。
 
 `BPREQI90_ALLOLDFIELDS`\
-初期化またはすべてのフィールドを使用して、、`BP_REQUEST_INFO`構造体。
+構造体の を初期化するか、すべてのフィールド`BP_REQUEST_INFO`を使用します。
 
 `BPREQI90_VENDOR`\
-初期化または使用して、`guidVendor`フィールド`BP_REQUEST_INFO2`構造体。
+構造体の`BP_REQUEST_INFO2`フィールドを`guidVendor`初期化または使用します。
 
 `BPREQI90_CONSTRAINT`\
-初期化または使用して、`bstrConstraint`フィールド`BP_REQUEST_INFO2`構造体。
+構造体の`BP_REQUEST_INFO2`フィールドを`bstrConstraint`初期化または使用します。
 
 `BPREQI90_TRACEPOINT`\
-初期化または使用して、`bstrTracepoint`フィールド`BP_REQUEST_INFO2`構造体。
+構造体の`BP_REQUEST_INFO2`フィールドを`bstrTracepoint`初期化または使用します。
 
 `BPREQI90_MACROTRACEPOINT`\
-初期化または使用して、`bstrMacroTracepoint`フィールド`BP_REQUEST_INFO2`構造体。 BPREQI_ALLFIELDS では、このフィールドは含まれません。
+構造体の`BP_REQUEST_INFO2`フィールドを`bstrMacroTracepoint`初期化または使用します。 BPREQI_ALLFIELDSには、このフィールドは含まれません。
 
 `BPREQI90_ALLFIELDS`\
-すべてのフィールドを指定します、`BP_REQUEST_INFO2`構造体。
+構造体のすべてのフィールドを指定`BP_REQUEST_INFO2`します。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー:Msdbg90.h
+ヘッダー: Msdbg90.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

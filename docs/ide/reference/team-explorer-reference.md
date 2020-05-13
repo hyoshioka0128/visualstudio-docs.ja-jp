@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74538568"
 ---
 # <a name="team-explorer-reference"></a>チーム エクスプローラーのリファレンス
@@ -20,13 +20,13 @@ ms.locfileid: "74538568"
 
 ## <a name="home-page"></a>ホーム ページ
 
-**チーム エクスプローラー**で[プロジェクトに接続する](../connect-team-project.md)と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
+[チーム エクスプローラー](../connect-team-project.md)で**プロジェクトに接続する**と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
 
 - [リポジトリの複製](/azure/devops/repos/git/clone)
 - [Web ポータル](/azure/devops/project/navigation/index)
 - [タスク ボード](/azure/devops/boards/sprints/task-board)
 
-[Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) のリポジトリに接続するか、[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview) のリポジトリに接続するかによって、 **[ホーム]** ページには異なる機能が表示されます。
+**Git** のリポジトリに接続するか、[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) のリポジトリに接続するかによって、[[ホーム]](/azure/devops/repos/tfvc/overview) ページには異なる機能が表示されます。
 
 > [!TIP]
 > 2 つのバージョン管理システムの比較は、[プロジェクト用の最適なバージョン管理の選択 (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc) に関するページを参照してください。
@@ -69,7 +69,7 @@ ms.locfileid: "74538568"
 
 ## <a name="work-items-page"></a>作業項目ページ
 
-**[作業項目]** ページでは、[作業項目](/azure/devops/boards/work-items/about-work-items)クエリを確認できます。 参照トピック
+**[作業項目]** ページでは、[作業項目](/azure/devops/boards/work-items/about-work-items)クエリを確認できます。 参照:
 
 - [作業項目の追加](/azure/devops/boards/backlogs/add-work-items)
 - [クエリ エディターを使用してクエリを一覧表示し、管理する](/azure/devops/boards/queries/using-queries)
@@ -90,7 +90,7 @@ ms.locfileid: "74538568"
 
 **[ビルド]** ページでは、プロジェクトのビルド定義を確認できます。
 
-参照トピック
+参照:
 
 - [ビルド パイプラインの作成](/azure/devops/pipelines/tasks/index)
 - [ビルドの表示と管理](/azure/devops/pipelines/overview)
@@ -98,7 +98,7 @@ ms.locfileid: "74538568"
 - [Visual Studio の継続的デリバリー (CD) をインストールする](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [アプリの継続的デリバリー (CD) を構成し、実行する](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>設定ページ
+## <a name="settings-page"></a>[設定] ページ
 
 **[設定]** ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
 
@@ -106,6 +106,6 @@ ms.locfileid: "74538568"
 | - | - | - |
 | [セキュリティ、グループ メンバーシップ](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[セキュリティ、ソース管理 (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[作業項目の区分](/azure/devops/organizations/settings/set-area-paths)<br/>[作業項目のイテレーション](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[ポータルの設定](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[プロジェクト警告](/azure/devops/notifications/howto-manage-team-notifications) | [セキュリティ、グループ メンバーシップ](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[ソース管理 (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[プロセス テンプレート マネージャー](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git グローバル設定](/azure/devops/repos/git/git-config)<br/>[Git リポジトリ設定](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [チーム エクスプローラーのプロジェクトに接続する](../../ide/connect-team-project.md)

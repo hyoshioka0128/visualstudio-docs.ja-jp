@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields |Microsoft Docs
+title: フィールドを列挙します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6d3edeb677af728b1a0fd0e9cf8685e7919d79e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317928"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733226"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 コンテナーのフィールドの列挙子を作成します。
@@ -49,25 +49,25 @@ int EnumFields(
 
 ## <a name="parameters"></a>パラメーター
 `dwKindFilter`\
-[in]組み合わせた[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)定数を列挙するフィールドを選択します。 フィールドの種類には、記憶域の種類、クラスまたはプリミティブ型、または特定の情報など、ローカル、パラメーター、または"this"ポインターなどを記述できます。
+[in]列挙するフィールドを選択する[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)定数の組み合わせ。 フィールドの種類は、クラスやプリミティブなどのストレージの種類、またはローカル、パラメーター、または "this" ポインターなどの特定の情報を記述できます。
 
 `dwModifiersFilter`\
-[in]組み合わせた[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)定数を列挙するフィールドを選択します。 フィールド修飾子は、パブリックまたはプライベート、または記憶域については、仮想、静的、または最終的ななどなどのアクセス許可を指定できます。
+[in]列挙するフィールドを選択する[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)定数の組み合わせ。 フィールド修飾子には、パブリック、プライベートなどのアクセス許可、または仮想、静的、最終などのストレージ情報を指定できます。
 
 `pszNameFilter`\
-[in]列挙されるフィールドの名前。 すべてのフィールドが返される場合は、null 値にできます。
+[in]列挙するフィールドの名前。 すべてのフィールドが返される場合は、NULL 値になります。
 
 `nameMatch`\
-[in]値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)検索かどうかを制御する列挙値が大文字であるか。
+[in]検索で大文字と小文字を区別するかどうかを制御する[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体の値。
 
 `ppEnum`\
-[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)フィールドの一覧を表すオブジェクト。 フィールドが存在しない場合は、null 値を返します。
+[アウト]フィールドの[一](../../../extensibility/debugger/reference/ienumdebugfields.md)覧を表すオブジェクトを返します。 フィールドがない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK または S_FALSE をフィールドが存在しない場合は、返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、フィールドがない場合はS_OKまたはS_FALSEを返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- `dwKindFilter`、 `dwModifiersFilter`、および`pszNameFilter`パラメーター組み合わせることができます、たとえば、すべてのパブリック仮想メソッドを"作成した MyMethod"という名前を選択します。
+ たとえば`dwKindFilter`、"MyMethod"`dwModifiersFilter`という名前のすべてのパブリック仮想メソッドを選択するために、パラメータ、、、および`pszNameFilter`パラメータを組み合わせることができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

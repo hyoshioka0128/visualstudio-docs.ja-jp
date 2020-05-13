@@ -1,50 +1,50 @@
 ---
-title: Visual Studio の他の部分を拡張 |Microsoft Docs
+title: Visual Studio の他の部分を拡張する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31cbad96f52b3c29c417c3d380c39dd4cc610dd6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c9076fbba822a1dfcff1ef13294ebd4dcafd9e9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711760"
 ---
-# <a name="extend-other-parts-of-visual-studio"></a>Visual Studio の他の部分を拡張します。
+# <a name="extend-other-parts-of-visual-studio"></a>ビジュアル スタジオの他の部分を拡張します。
 
-拡張する Visual Studio の UI の多くの複数の部分があります。 ここでいくつかを説明します。
+拡張できる Visual Studio UI のその他の部分は多数あります。 ここでは、ほんの一部を紹介します。
 
-## <a name="create-a-vspackage"></a>VSPackage を作成します。
+## <a name="create-a-vspackage"></a>VS パッケージの作成
 
-Visual Studio 機能拡張の基本的な構成要素は、Vspackage です。  VSPackage を追加する方法について説明します。[VSPackage を使用した拡張機能を作成します。](../extensibility/creating-an-extension-with-a-vspackage.md)
+Visual Studio 拡張機能の基本的な構成要素は、VS パッケージです。  VS パッケージを追加する方法の詳細: [VSPackage を使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-## <a name="extend-the-toolbox"></a>ツールボックスを拡張します。
+## <a name="extend-the-toolbox"></a>ツールボックスを拡張する
 
-ツールボックスの機能を使用する方法と、ツールボックスに新しいコントロールおよびその他の項目を追加する方法について説明します。
+ツールボックスに新しいコントロールやその他の項目を追加する方法と、ツールボックスの機能を使用する方法について説明します。
 
-- [WPF ツールボックス コントロールを作成します。](../extensibility/creating-a-wpf-toolbox-control.md)
+- [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)
 
-- [Windows フォーム ツールボックス コントロールを作成します。](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Windows フォーム ツールボックス コントロールを作成する](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
-## <a name="extend-the-status-bar"></a>ステータス バーを拡張します。
+## <a name="extend-the-status-bar"></a>ステータス バーを拡張する
 
-ステータス バーと、進行状況バーを読み書きする方法と、アニメーションやその他の UI を提供する方法について説明します。[ステータス バーの拡張](../extensibility/extending-the-status-bar.md)します。
+ステータス バーと進行状況バーの読み取りと書き込み方法、およびアニメーションやその他の UI を提供する方法については、[ステータス バーを拡張します](../extensibility/extending-the-status-bar.md)。
 
 ::: moniker range="vs-2017"
 
-## <a name="create-custom-start-pages"></a>カスタム スタート ページを作成します。
+## <a name="create-custom-start-pages"></a>カスタムスタートページの作成
 
-独自のスタート ページ、ゼロまたはダウンロード可能なスタート ページのサンプルを作成する方法について説明します。[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)します。
+独自のスタート ページを最初から作成する方法、またはダウンロード可能なスタート ページのサンプルから作成する方法については、「[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)」を参照してください。
 
 ::: moniker-end
 
-## <a name="write-to-the-activity-log"></a>アクティビティ ログに書き込む
+## <a name="write-to-the-activity-log"></a>アクティビティ ログへの書き込み
 
-アクティビティ ログに書き込む方法をについて説明します。[方法: アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。
+アクティビティ ログに書き込む方法[を学習](../extensibility/how-to-use-the-activity-log.md)します。

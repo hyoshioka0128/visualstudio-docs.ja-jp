@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114667"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
@@ -38,7 +38,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 ネットワーク レイアウトを作成するときに、必要な証明書が Certificates フォルダーにダウンロードされます。 各証明書ファイルをダブルクリックし、証明書マネージャー ウィザードをクリックすることで証明書を手動でインストールできます。 パスワードを求められたら、空のままにしてください。
 
-**更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
+**更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
+   **更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -135,36 +135,36 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 このフォルダー内にある 3 つの .P12 ファイルのそれぞれに、中間証明書とルート証明書が含まれます。 Windows Update で最新の状態になっているほとんどのシステムでは、これらの証明書は既にインストールされています。
 
 * **ManifestSignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Code Signing PCA 2011**
+  * 中間証明書: **Microsoft コード署名 PCA 2011**
     * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
-  * ルート証明書:**Microsoft Root Certificate Authority 2011**
+  * ルート証明書: **Microsoft ルート証明機関 2011**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **ManifestCounterSignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Time-Stamp PCA 2010**
+  * 中間証明書: **Microsoft タイムスタンプ PCA 2010**
     * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
-  * ルート証明書:**Microsoft Root Certificate Authority 2010**
+  * ルート証明書: **Microsoft ルート証明機関 2010**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **Vs_installer_opc.SignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Code Signing PCA**
+  * 中間証明書: **Microsoft コード署名 PCA**
     * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
-  * ルート証明書:**Microsoft Root Certificate Authority**
-    * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
+  * ルート証明書: **Microsoft ルート証明機関**
+    * 必須。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
-**更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
+**更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.cer** には次のものが含まれます。
-  * ルート証明書:**Microsoft Root Certificate Authority 2011**
+  * ルート証明書: **Microsoft ルート証明機関 2011**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **ManifestCounterSignCertificates.cer** には次のものが含まれます。
-  * ルート証明書:**Microsoft Root Certificate Authority 2010**
+  * ルート証明書: **Microsoft ルート証明機関 2010**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **Vs_installer_opc.SignCertificates.cer** には次のものが含まれます。
-  * ルート証明書:**Microsoft Root Certificate Authority**
-    * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
+  * ルート証明書: **Microsoft ルート証明機関**
+    * 必須。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
 Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
 
@@ -203,7 +203,7 @@ Visual Studio インストーラーによって求められるのは、システ
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のインストール](install-visual-studio.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

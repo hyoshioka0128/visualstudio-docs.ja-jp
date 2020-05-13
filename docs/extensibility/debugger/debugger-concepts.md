@@ -1,51 +1,51 @@
 ---
-title: デバッガーの概念 |Microsoft Docs
+title: デバッガの概念 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345931"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738985"
 ---
 # <a name="debugger-concepts"></a>デバッガーの概念
-Visual Studio のデバッグ パッケージをビルドするには、パッケージの設計で使用されるアーキテクチャの概念を理解する必要があります。
+Visual Studio デバッグ パッケージをビルドするには、パッケージのデザインに使用するアーキテクチャの概念を理解している必要があります。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [デバッグ セッションは](../../extensibility/debugger/debug-session.md)デバッグのアーキテクチャでは、セッションの役割について説明します。
+ [デバッグ セッション](../../extensibility/debugger/debug-session.md)デバッグ アーキテクチャにおけるセッションの役割について説明します。
 
- [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)抽象と物理の両方の用語で、アーキテクチャのデバッグの観点からどのようなサーバーを定義します。
+ [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)アーキテクチャのデバッグに関して、サーバーが抽象用語と物理用語の両方で何であるかを定義します。
 
- [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)デバッグのアーキテクチャの観点からどのようなポート サプライヤーを定義します。
+ [港湾サプライヤー](../../extensibility/debugger/port-suppliers.md)デバッグ アーキテクチャの観点から、ポート サプライヤーが何であるかを定義します。
 
- [ポート](../../extensibility/debugger/ports.md)どのようなポートとは、デバッグのアーキテクチャの観点から定義します。
+ [ポート](../../extensibility/debugger/ports.md)デバッグ アーキテクチャの観点から、ポートが何であるかを定義します。
 
- [プロセス](../../extensibility/debugger/processes.md)デバッグのアーキテクチャの観点からどのようなプロセスを定義します。
+ [プロセス](../../extensibility/debugger/processes.md)デバッグ アーキテクチャの観点から、プロセスが何であるかを定義します。
 
- [プログラム ノード](../../extensibility/debugger/program-nodes.md)デバッグ自体とで実行されているプロセスを特定できる方法を含めて、アーキテクチャの観点からプログラム ノードを定義します。
+ [プログラムノード](../../extensibility/debugger/program-nodes.md)プログラム ノードをデバッグ アーキテクチャの観点から定義します。
 
- [プログラム](../../extensibility/debugger/programs.md)デバッグのアーキテクチャの観点からのプログラムを定義します。
+ [プログラム](../../extensibility/debugger/programs.md)デバッグ アーキテクチャの観点からプログラムを定義します。
 
- [スレッド](../../extensibility/debugger/threads.md)デバッグのアーキテクチャの観点からのスレッドの特性を定義します。
+ [スレッド](../../extensibility/debugger/threads.md)デバッグ アーキテクチャの観点から、スレッドの特性を定義します。
 
- [スタック フレーム](../../extensibility/debugger/stack-frames.md)デバッグのアーキテクチャの観点からのスタック フレームを定義します。 スタック フレームは、スレッドの実行コンテキストを提供するスタックの抽象化です。
+ [スタック フレーム](../../extensibility/debugger/stack-frames.md)デバッグ アーキテクチャの観点からスタック フレームを定義します。 スタック フレームは、スレッドの実行コンテキストを提供するスタックの抽象化です。
 
- [モジュール](../../extensibility/debugger/modules.md)のアーキテクチャをデバッグ実行可能ファイルや DLL などのコードの物理コンテナーとしての観点から、モジュールを定義します。
+ [モジュール](../../extensibility/debugger/modules.md)デバッグ アーキテクチャの観点から、実行可能ファイルや DLL などのコードの物理的なコンテナーとしてモジュールを定義します。
 
- [ブレークポイント](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)3 種類のブレークポイントを定義します。-保留中、バインド、およびエラー-デバッグのアーキテクチャの観点から。
+ [ブレークポイント](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)デバッグ アーキテクチャの観点から、3 種類のブレークポイント (保留中、バインド、エラー) を定義します。
 
 ## <a name="related-sections"></a>関連項目
- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)デバッグ エンジン (DE) が同時にして動作し、コード、ドキュメント、および式の評価コンテキスト内で方法について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。
+ [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)デバッグ エンジン (DE) がコード、ドキュメント、および式の評価コンテキスト内で同時に動作する方法について説明します。 3 つのコンテキストのそれぞれについて、そのコンテキストに関連する場所、位置、または評価について説明します。
 
- [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)デバッグ エンジン (DE)、式エバリュエーター (EE) シンボル ハンドラー (SH) など、Visual Studio デバッグ コンポーネントの概要を説明します。
+ [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)デバッグ エンジン (DE)、式エバリュエーター (EE)、およびシンボル ハンドラー (SH) を含む Visual Studio のデバッグ コンポーネントの概要を説明します。
 
- [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)さまざまなプログラムの起動や式の評価などのタスクのデバッグへのリンクが含まれています。
+ [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)プログラムの起動や式の評価など、さまざまなデバッグ タスクへのリンクが含まれています。

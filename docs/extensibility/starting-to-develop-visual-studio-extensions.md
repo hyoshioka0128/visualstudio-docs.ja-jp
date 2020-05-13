@@ -1,57 +1,57 @@
 ---
-title: Visual Studio 拡張機能の開発を開始しています |Microsoft Docs
+title: Visual Studio 拡張機能の開発を開始する |マイクロソフトドキュメント
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63fa0db72a01ddf1f6e1003fc27cf6a28128e036
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: 744475e61458f7b91ce08fba4d17046df36f5558
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269124"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699741"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 拡張機能の開発を始める
 
-Visual Studio 拡張機能を初めて作成する場合に、いくつかの疑問をもたれるかもしれません。 ここでは、最も一般的なものの一部を一覧にしています。 探している情報が見つからない場合は、フィードバック ボタンを使用して (画面の下部にある **このページは役に立ちましたか?** ) お探しの情報を問い合わせてください。
+これまで Visual Studio 拡張機能を作成したことがない場合は、いくつかの質問があります。 ここでは、最も一般的なもののいくつかを挙げました。 探している情報が表示されない場合は、フィードバック ボタン (この**ページは役に立ちましたか?** 画面の下部) を使用して、必要な情報を尋ねてください。
 
 > [!NOTE]
-> この記事は、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac には、次の [Visual Studio for Mac の拡張](/visualstudio/mac/extending-visual-studio-mac) を参照してください。 Visual Studio Code については、「 [Visual Studio Code 拡張 API](https://code.visualstudio.com/api)」を参照してください。
+> この資料は、Windows の Visual Studio に適用されます。 Mac 用の Visual Studio の場合は[、「Mac 用の Visual Studio の拡張](/visualstudio/mac/extending-visual-studio-mac)」を参照してください。 Visual Studio コードについては[、「Visual Studio コード拡張機能 API](https://code.visualstudio.com/api)」を参照してください。
 
-## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Visual Studio 拡張機能を開発するために必要なソフトウェアは何ですか？
+## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Visual Studio 拡張機能を開発するには、どのようなソフトウェアが必要ですか?
 
-Visual Studio 拡張機能を開発するために Visual Studio だけでなく、Visual Studio SDK をインストールする必要があります。 通常のセットアップの一部として、Visual Studio SDK をインストールすることができますし、または後からインストールすることもできます。 Visual Studio SDK のインストールに関する詳細は、次の [Visual Studio SDK](../extensibility/visual-studio-sdk.md) を参照してください。
+Visual Studio 拡張機能を開発するには、Visual Studio に加えて、Visual Studio SDK をインストールする必要があります。 Visual Studio SDK は、通常のセットアップの一部としてインストールすることも、後でインストールすることもできます。 Visual Studio SDK のインストールの詳細については[、「Visual Studio SDK」](../extensibility/visual-studio-sdk.md)を参照してください。
 
-## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Visual Studio 拡張機能でどのような種類の項目を行えるのでしょうか？
+## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Visual Studio 拡張機能では、どのような操作ができますか?
 
-さまざまな Visual Studio 拡張機能を考えたときに制限はありません。 もちろん、ほとんどの拡張機能はコードの記述に関することですが、そうする必要はありません。 拡張機能作成のいくつかの例を次に示します。
+異なる Visual Studio 拡張機能を想像する場合の制限は空です。 もちろん、ほとんどの拡張機能はコードの記述と関係がありますが、そうである必要はありません。 ビルドできる拡張機能の種類の例を次に示します。
 
-- 構文の色分け、IntelliSense、コンパイラおよびデバッグサポートを含む、Visual Studio に含まれていない言語のサポート
+- Visual Studio に含まれていない言語のサポート (構文の色付け、IntelliSense、コンパイラとデバッグのサポートなど)
 
-- 追加のテンプレート、コードのリファクタリング、新しいダイアログ ボックスまたはツール ウィンドウを使用したIDE の利便性を拡張させる生産性向上ツール。
+- 追加のテンプレート、コードリファクタリング、新しいダイアログ、またはツールウィンドウでコア IDE の操作性を拡張する生産性向上ツール
 
-- データ設計やクラウドサポートなどのシナリオ向けのドメイン固有のデザイナー
+- データ設計やクラウドサポートなどのシナリオに対応したドメイン固有の設計者
 
-拡張機能の例については、[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)を参照してください。 多くの拡張機能はオープン ソース化されており、Marketplace には GitHub リポジトリへのリンクが含まれています。
+拡張機能の例については[、Visual Studio マーケットプレース](https://marketplace.visualstudio.com/vs)を参照してください。 多くの拡張機能はオープンソースであり、マーケットプレイスには GitHub リポジトリへのリンクが含まれています。
 
-## <a name="which-visual-studio-features-can-i-extend"></a>Visual Studio 機能を拡張できますか？
+## <a name="which-visual-studio-features-can-i-extend"></a>拡張できる Visual Studio の機能
 
-理論的には、メニュー、ツールバー、コマンド、ウィンドウ、ソリューション、プロジェクト、エディターなど、Visual Studio の任意の部分を拡張できます。
+理論的には、メニュー、ツール バー、コマンド、ウィンドウ、ソリューション、プロジェクト、エディターなど、Visual Studio の任意の部分を拡張できます。
 
-実際には、ほとんどの人が望んでいる機能は、コマンド、メニューとツールバー、windows、IntelliSense、およびプロジェクトの拡張機能で見つかります。 関連するセクションへのリンクを次に示します。
+実際には、ほとんどの人が拡張したい機能は、コマンド、メニューとツールバー、ウィンドウ、IntelliSense、およびプロジェクトであることがわかりました。 関連するセクションへのリンクを次に示します。
 
-- [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md): 独自の項目を Visual Studio のメニューおよびツールバーに追加します。 これらの機能を使用して、新しい Visual Studio 機能または独自の外部ヘルパーアプリケーションを起動できます。 メニュー項目のカスタムショートカットを指定することもできます。
+- [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md): Visual Studio のメニューとツール バーに独自の項目を追加します。 これらを使用して、新しい Visual Studio 機能や独自の外部ヘルパー アプリケーションを起動できます。 メニュー項目にカスタム ショートカットを提供することもできます。
 
-- [拡張とカスタマイズ ツール Windows](../extensibility/extending-and-customizing-tool-windows.md): 既存のツール ウィンドウを拡張または独自のツール ウィンドウを作成します。 たとえば複数の**プロパティ**を持つものに新しいプロパティを追加したり、追加機能を追加した新しいツール ウィンドウを作成したりできます。
+- [拡張およびカスタマイズ ツール ウィンドウ](../extensibility/extending-and-customizing-tool-windows.md): 既存のツール ウィンドウを拡張するか、独自のツール ウィンドウを作成します。 たとえば、新しいプロパティを**プロパティ**に追加したり、新しいツール ウィンドウを作成して機能を追加したりできます。
 
-- [エディターと言語サービス拡張機能](../extensibility/editor-and-language-service-extensions.md): Visual Studio 言語用に用意されている IntelliSense に独自のカスタマイズを追加したり、新しいプログラミング言語のサポートを作成したりできます。 新しいステートメント入力候補、提案、および新しいクイックヒントのツールチップ表示を作成することができます。 電球アイコンから、新しいプログラミング言語をサポートするためにリファクタリングの提案を追加したり、コード修正プログラムを追加したりすることができます。
+- [エディターと言語サービス拡張機能](../extensibility/editor-and-language-service-extensions.md): Visual Studio 言語用に提供される IntelliSense に独自のカスタマイズを追加するか、新しいプログラミング言語のサポートを作成します。 新しいステートメント入力候補、候補、および新しいクイック ヒントヒントを作成できます。 電球を使用すると、リファクタリングの提案やコード修正を追加して、新しいプログラミング言語をサポートできます。
 
 - [プロジェクトの拡張](../extensibility/extending-projects.md)
 
@@ -63,37 +63,37 @@ Visual Studio 拡張機能を開発するために Visual Studio だけでなく
 
 - [Visual Studio の分離シェル](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="BKMK_ProjectTemplate"></a> VSSDK によってどのようなプロジェクト テンプレートが提供されますか。
- 2 つの主な種類の拡張機能は、VSPackage および MEF 拡張機能です。 一般に、VSPackage 拡張機能はコマンド、ツール ウィンドウ、およびプロジェクトを拡張する場合に使用されます。 MEF 拡張機能は、Visual Studio エディターを拡張またはカスタマイズするために使用されます。
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>VSSDK によって提供されるプロジェクト テンプレートは何ですか?
+ 主な 2 種類の拡張機能は、VSPackage と MEF 拡張機能です。 一般に、VSPackage 拡張機能は、コマンド、ツール ウィンドウ、およびプロジェクトを使用または拡張する拡張機能に使用されます。 MEF 拡張機能は、Visual Studio エディターを拡張またはカスタマイズするために使用されます。
 
- Visual c# および Visual Basic の拡張機能の場合、VSSDK には、メニュー コマンド、ツール ウィンドウおよびエディターの拡張機能を作成する新しい項目テンプレートと共に使用できる空の VSIX プロジェクト テンプレートが用意されています。 パッケージ プロジェクト テンプレート、コード スニペット、およびその他の成果物を他のユーザーに配布するために、このテンプレートを使用することもできます。
+ Visual C# および Visual Basic 拡張機能の VSSDK には、メニュー コマンド、ツール ウィンドウ、およびエディター拡張機能を作成する新しい項目テンプレートと共に使用できる空の VSIX プロジェクト テンプレートが用意されています。 このテンプレートを使用して、プロジェクト テンプレート、コード スニペット、その他の成果物をパッケージ化して他のユーザーに配布することもできます。
 
- C++ の場合は、VSPackage のウィザードは、メニュー コマンド、ツール ウィンドウ、およびカスタム エディターを追加するコードが用意されています。
+ C++ では、VSPackage ウィザードは、メニュー コマンド、ツール ウィンドウ、およびカスタム エディターを追加するコードを提供します。
 
- 分離シェル テンプレートは、ブランド化して独自として配布する Visual Studio シェルのバージョンの拡張機能をパッケージ化するために使用されます。 次のトピックでは、各種類の拡張機能の使用を開始する方法について説明します。
+ 分離シェル テンプレートは、独自のブランドと配布が可能な Visual Studio シェルのバージョンで拡張機能をパッケージ化するために使用されます。 次のトピックでは、各種類の拡張機能を使用する方法を示します。
 
-- メニューコマンド:[メニューコマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)
+- メニュー コマンド:[メニュー コマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-- ツールウィンドウ:[ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)
+- ツール ウィンドウ:[ツール ウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)
 
 - エディター拡張機能:[エディター項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
-- 基本的な VSPackage: [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)
+- 基本的な VS パッケージ: [VS パッケージを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- VSIX プロジェクトテンプレート: [Vsix プロジェクトテンプレートを使用したはじめに](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSIX プロジェクト テンプレート: [VSIX プロジェクト テンプレートの使用の開始](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>私の拡張をVisual Studio のように見せる方法はありますか？
- [Visual Studio のユーザーエクスペリエンスガイドライン](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)で、拡張機能の UI を設計するためのヒントを入手します。
+## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>拡張機能を Visual Studio のように見せるようにするにはどうすればよいですか?
+ 拡張機能の UI を設計するためのヒントについては[、「Visual Studio ユーザー エクスペリエンスガイドライン](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)」を参照してください。
 
-## <a name="where-can-i-find-examples-of-vssdk-code"></a>VSSDK のコードの例についてはどこで確認できますか？
- 前のセクションに記載のリンクは、ある特定の機能を実装する方法を説明するチュートリアルです。 GitHub の [Visual Studio のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples) でオープン ソースの VSSDK のサンプルを見つけることができます。
+## <a name="where-can-i-find-examples-of-vssdk-code"></a>VSSDK コードの例はどこにありますか?
+ 前のセクションに記載されている各リンクには、特定の機能を実装する方法を示すステップ バイ ステップのチュートリアルがあります。 また、オープン ソース VSSDK サンプルは[、GitHub で見つけることができます](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-## <a name="how-can-i-distribute-my-extension"></a>私の拡張機能を配布する方法は?
- 別のコンピューターにあなたの拡張機能をインストールするか、ダブルクリックするとインストールできる.vsix ファイルを友人に送信することができます。 VSIX パッケージの詳細については [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md) を参照してください。
+## <a name="how-can-i-distribute-my-extension"></a>拡張機能を配布する方法
+ 拡張機能を別のコンピューターにインストールするか、.vsix ファイルとして友人に送信できます。 VSIX パッケージの詳細については[、「Visual Studio 拡張機能の出荷」を参照してください](../extensibility/shipping-visual-studio-extensions.md)。
 
- また、拡張機能を Visual Studio Marketplace に発行することもできます。これにより、Visual Studio の多くのユーザーが表示できるようになります。 Marketplace に拡張機能をパッケージ化する例については、「[チュートリアル: Visual Studio 拡張機能の発行](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)」を参照してください。 Marketplace で発行するために必要な作業の詳細については、「 [Visual Studio の製品と拡張機能](/azure/devops/extend/overview?view=vsts)」を参照してください。
+ 拡張機能を Visual Studio マーケットプレースで発行することもできます。 マーケットプレースに拡張機能をパッケージ化する例については、「[チュートリアル: Visual Studio 拡張機能の発行](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)」を参照してください。 マーケットプレースで発行するために必要な操作の詳細については、「 Visual [Studio の製品と拡張機能](/azure/devops/extend/overview?view=vsts)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio for Mac の拡張](/visualstudio/mac/extending-visual-studio-mac)
-- [Visual Studio Code の拡張](https://code.visualstudio.com/api)
+- [ビジュアル スタジオ コードの拡張](https://code.visualstudio.com/api)

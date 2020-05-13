@@ -1,5 +1,5 @@
 ---
-title: 構文の色分けを実装する |Microsoft Docs
+title: 構文の色分けの実装 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,60 +7,60 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cab338e253cca8c7f8457752980e7f3624317d9c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 83ce66dd6a31e3ef852feb91e2ba304e6688a723
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727037"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707642"
 ---
 # <a name="implementing-syntax-coloring"></a>構文の色分け表示の実装
-言語サービスが構文の色付けを提供すると、パーサーはテキスト行を装飾 items の配列に変換し、これらの装飾 items に対応するトークンの種類を返します。 パーサーは、装飾 items のリストに属するトークン型を返す必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、colorizer オブジェクトによって割り当てられた属性に従って、コードウィンドウ内の各項目を適切なトークンの種類に表示します。
+言語サービスが構文の色付けを提供する場合、パーサーはテキスト行を色分け可能な項目の配列に変換し、これらの色付け可能な項目に対応するトークン型を返します。 パーサーは、色付きの項目のリストに属するトークン型を返す必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Colorizer オブジェクトによって適切なトークンタイプに割り当てられた属性に従って、コードウィンドウに各カラーリング可能な項目が表示されます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] はパーサーインターフェイスを指定せず、パーサーの実装は完全に行われます。 ただし、Visual Studio 言語パッケージプロジェクトでは、既定のパーサー実装が用意されています。 マネージコードの場合、managed package framework (MPF) は、色分けテキストを完全にサポートします。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]パーサー インターフェイスを指定する必要はありませんし、パーサーの実装は完全にユーザーに対して行われます。 ただし、既定のパーサーの実装は Visual Studio 言語パッケージ プロジェクトで提供されます。 マネージ コードの場合、マネージ パッケージ フレームワーク (MPF) は、テキストの色分けを完全にサポートします。
 
- 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 新しい構文の色分けを実装する方法の詳細については、「[チュートリアル: テキストの強調](../../extensibility/walkthrough-highlighting-text.md)表示」を参照してください。
+ レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 構文の色分けを実装する新しい方法の詳細については、「[チュートリアル: テキストの強調表示](../../extensibility/walkthrough-highlighting-text.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
 
-## <a name="steps-followed-by-an-editor-to-colorize-text"></a>テキストを色分けするためのエディターの後続の手順
+## <a name="steps-followed-by-an-editor-to-colorize-text"></a>テキストを色分けするエディタの手順
 
-1. このエディターでは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> オブジェクトの <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> メソッドを呼び出すことによって、色の値を取得します。
+1. エディターは、オブジェクトのメソッドを呼び<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>出すことによって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>カラー化ツールを取得します。
 
-2. このエディターは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> メソッドを呼び出して、colorizer、色計の外にある各行の状態を確認する必要があるかどうかを判断します。
+2. エディターは、カラー<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A>化器の外側に維持される各行の状態を必要とするかどうかを判断するメソッドを呼び出します。
 
-3. Colorizer、色計の外に状態を維持する必要がある場合、エディターは <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> メソッドを呼び出して、最初の行の状態を取得します。
+3. カラー化器の外側で状態を維持する必要がある場合、エディターはメソッドを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A>呼び出して最初の行の状態を取得します。
 
-4. エディターは、バッファー内の各行に対して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> メソッドを呼び出します。このメソッドは、次の手順を実行します。
+4. バッファー内の各行について、エディターはメソッドを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>呼び出し、次の手順を実行します。
 
-    1. テキスト行は、テキストをトークンに変換するためにスキャナーに渡されます。 各トークンは、トークンテキストとトークンの種類を指定します。
+    1. テキスト行は、テキストをトークンに変換するためにスキャナーに渡されます。 各トークンは、トークンテキストとトークンタイプを指定します。
 
-    2. トークン型は、装飾 items リストにインデックスに変換されます。
+    2. トークンの種類は、インデックスに変換され、色付け可能な項目リストに変換されます。
 
-    3. トークン情報は、配列の各要素が行内の文字に対応するように配列に格納するために使用されます。 配列に格納されている値は、装飾 items リスト内のインデックスです。
+    3. トークン情報は、配列の各要素が行内の文字に対応するように配列を埋めるために使用されます。 配列に格納されている値は、色付け可能な項目リストのインデックスです。
 
-    4. 行の最後の状態が各行に対して返されます。
+    4. 行の終わりの状態は、各行に対して返されます。
 
-5. 色計で状態を維持する必要がある場合は、エディターによってその行の状態がキャッシュされます。
+5. カラー化装置が状態を維持する必要がある場合、エディターはその行の状態をキャッシュします。
 
-6. エディターでは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> メソッドから返された情報を使用して、テキスト行がレンダリングされます。 この場合、次の手順が必要です。
+6. エディターは、メソッドから返された情報を使用してテキスト行を<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>レンダリングします。 この場合、次の手順が必要です。
 
-    1. 行の各文字について、装飾 item インデックスを取得します。
+    1. 行の各文字について、色分け可能な項目のインデックスを取得します。
 
-    2. 既定の装飾項目を使用する場合は、エディターの装飾 items リストにアクセスします。
+    2. 既定の色付け可能なアイテムを使用している場合は、エディターの色指定可能な項目リストにアクセスします。
 
-    3. それ以外の場合は、言語サービスの <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> メソッドを呼び出して、装飾項目を取得します。
+    3. それ以外の場合は、言語サービス<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>のメソッドを呼び出して、色分け可能な項目を取得します。
 
-    4. 装飾項目の情報を使用して、テキストを画面に表示します。
+    4. カラー設定可能アイテムの情報を使用して、テキストを表示します。
 
-## <a name="managed-package-framework-colorizer"></a>マネージパッケージフレームワークの色計
- Managed package framework (MPF) には、colorizer 実装するために必要なすべてのクラスが用意されています。 言語サービスクラスは <xref:Microsoft.VisualStudio.Package.LanguageService> クラスを継承し、必要なメソッドを実装する必要があります。 @No__t_0 インターフェイスを実装し、そのインターフェイスのインスタンスを <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> メソッド (<xref:Microsoft.VisualStudio.Package.LanguageService> クラスで実装する必要があるメソッドの1つ) から返すことによって、スキャナーとパーサーを提供する必要があります。 詳細については、「[従来の言語サービスの構文色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。
+## <a name="managed-package-framework-colorizer"></a>管理パッケージ フレームワーク の色付け
+ マネージ パッケージ フレームワーク (MPF) は、カラー化プログラムの実装に必要なすべてのクラスを提供します。 言語サービス クラスは、クラス<xref:Microsoft.VisualStudio.Package.LanguageService>を継承し、必要なメソッドを実装する必要があります。 インターフェイスを実装してスキャナーとパーサーを<xref:Microsoft.VisualStudio.Package.IScanner>指定し、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>そのインターフェイスのインスタンスをメソッド (<xref:Microsoft.VisualStudio.Package.LanguageService>クラスに実装する必要があるメソッドの 1 つ) から返す必要があります。 詳細については、「[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

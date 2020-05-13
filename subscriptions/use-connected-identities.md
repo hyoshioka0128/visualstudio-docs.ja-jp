@@ -1,18 +1,19 @@
 ---
 title: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 09/27/2019
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
+ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法について説明します
-ms.openlocfilehash: 1a862caa1f984f5d22f041a6f0cbff6534d8cc1c
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816580"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233175"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで接続済み ID を使用する方法
 職場または学校を介して Visual Studio サブスクリプションを受け取り、Microsoft アカウント (MSA) を使用してサインインする場合は、サブスクリプション管理者が組織の Azure Active Directory (Azure AD) の ID に MSA を接続できます。  これにより、サブスクリプションに含まれる特典の一部にアクセスする方法が変わります。 
@@ -37,6 +38,12 @@ Visual Studio サブスクリプションに代替アカウントを追加する
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>Q:管理者にこのことを問い合わせるにはどうすればよいですか?
 A: 管理者に問い合わせる方法の詳細については、[サブスクリプション管理者への問い合わせ](contact-my-admin.md)に関するページを参照してください。  
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 管理者が Azure AD と MSA のアカウントを接続した後は、[サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)に正常にサインインできることと、Azure DevOps、Visual Studio、Azure DevTest の個人クレジットなどの特典にアクセスできることを確認することをお勧めします。 

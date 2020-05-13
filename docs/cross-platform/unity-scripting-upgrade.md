@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75944230"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity で.NET 4.x を使用する
@@ -21,7 +21,7 @@ Unity のスクリプトの基になっている C# と .NET は、Microsoft が
 
 Unity には、Unity 2017.1 のリリースで、.NET 4.6 にアップグレードされた、C# 6 と互換性のある試験段階のバージョンのスクリプティング ランタイムが実装されました。 Unity 2018.1 では .NET 4.x と同等のランタイムは試験段階とは見なされなくなり、一方、古い .NET 3.5 と同等のランタイムはレガシ バージョンと見なされるようになりました。 そして Unity 2018.3 のリリースでは、Unity はアップグレードされたスクリプティング ランタイムを既定の選択とすることとし、さらに C# 7 まで更新することを計画しています。 このロードマップの詳細および最新の更新については、Unity の [ブログ投稿](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)をお読みになるか、同社の「[Experimental Scripting Previews forum](https://forum.unity.com/forums/experimental-scripting-previews.107/)」 (試験段階のスクリプティングのプレビュー フォーラム) を参照してください。 それまでは、以下のセクションで、.NET 4.x スクリプティング ランタイムで現在使用できる新機能を確認し学習してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * [Unity 2017.1 以上](https://unity3d.com/) (2018.2 推奨)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -38,7 +38,7 @@ Unity には、Unity 2017.1 のリリースで、.NET 4.6 にアップグレー�
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x および .NET Standard 2.0 プロファイルのいずれかを選ぶ
 
-.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) ( **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** ) のドロップダウン メニューを使用して、 **[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 次の 2 つのオプションがあります。
+.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) ( **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** ) のドロップダウン メニューを使用して、 **[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 2 つのオプションがあります。
 
 * **.NET Standard 2.0**: このプロファイルは、.NET Foundation により発行されている [.NET Standard 2.0 プロファイル](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)と一致します。 Unity では、新しいプロジェクトに .NET Standard 2.0 を推奨しています。 これは .NET 4.x よりも小規模で、サイズに制限のあるプラットフォームで好都合です。 また、Unity では、Unity がサポートしているすべてのプラットフォームで、このプロファイルをサポートすることをコミットしています。
 
@@ -183,7 +183,7 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 [非同期プログラミング](/dotnet/csharp/async)では、アプリケーションが応答しなくならないようにしながら、時間のかかる操作を行うことができます。 この機能では、時間のかかる操作の結果に依存するコードが続行される前に、その操作が終わるのを待つこともできます。 たとえば、ファイルの読み込みやネットワーク操作の完了を待つことができます。
 
-Unity では、非同期プログラミングは通常[コルーチン](https://docs.unity3d.com/Manual/Coroutines.html)で実行されます。 ただし、C# 5 以降の .NET 開発で推奨されるのは、[System.Threading.Task](/dotnet/api/system.threading.tasks.task) で `async` と `await` のキーワードを使用する[タスクベースの非同期パターン (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) の方法となりました。 つまり、`async` 関数では、残りのアプリケーションのアップデートをブロックせずに、タスクの完了を `await` できます。
+Unity では、非同期プログラミングは通常[コルーチン](https://docs.unity3d.com/Manual/Coroutines.html)で実行されます。 ただし、C# 5 以降の .NET 開発で推奨されるのは、[System.Threading.Task](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) で `async` と `await` のキーワードを使用する[タスクベースの非同期パターン (TAP)](/dotnet/api/system.threading.tasks.task) の方法となりました。 つまり、`async` 関数では、残りのアプリケーションのアップデートをブロックせずに、タスクの完了を `await` できます。
 
 ```csharp
 // Unity coroutine
@@ -341,7 +341,7 @@ iOS などのプラットフォームにゲームをエクスポートする場�
 
 このサンプルには、いくつかの .NET 4.x の機能例が含まれています。 プロジェクトをダウンロードしたり、[GitHub](https://github.com/Microsoft/unity-scripting-upgrade) でソース コードを参照することができます。
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他のリソース
 
 * [Unity ブログ - Unity 2018.2 でのスクリプティング ランタイムの機能強化](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [C# の歴史](/dotnet/csharp/whats-new/csharp-version-history)

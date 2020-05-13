@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596516"
 ---
 # <a name="class-designer-errors"></a>クラス デザイナーのエラー
@@ -46,6 +46,6 @@ ms.locfileid: "75596516"
 - 「[Visual C++ コードの使用](working-with-visual-cpp-code.md)」には、クラス ダイアグラムでの C++ の表示に関するトラブルシューティング情報が含まれます。
 - [Visual Studio クラス デザイナー フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)は、**クラス デザイナー**に関する質問のためのフォーラムです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クラスと型の設計と表示](designing-and-viewing-classes-and-types.md)

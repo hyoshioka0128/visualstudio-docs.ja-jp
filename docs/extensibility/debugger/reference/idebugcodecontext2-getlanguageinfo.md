@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339011"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734242"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-このコードのコンテキストの言語情報を取得します。
+このコード コンテキストの言語情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int GetLanguageInfo( 
 
 ## <a name="parameters"></a>パラメーター
 `pbstrLanguage`\
-[入力、出力]など、言語の名前を含む文字列を返します"C++."
+[イン、アウト]言語の名前を含む文字列を返します。
 
 `pguidLanguage`\
-[入力、出力]たとえば、コードのコンテキストの言語の GUID を返します`guidCPPLang`します。
+[イン、アウト]コード コンテキストの言語の GUID`guidCPPLang`を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- Null 以外の値を返す、パラメーターの少なくとも 1 つ必要があります。
+ 少なくとも 1 つのパラメーターは、null 以外の値を返す必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

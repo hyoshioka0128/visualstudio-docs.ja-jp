@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778259"
 ---
 # <a name="startprofile"></a>StartProfile
@@ -34,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 
  パフォーマンス データ収集を適用できるプロファイル レベルを示します。 次の **PROFILE_CONTROL_LEVEL** 列挙子を使用して、パフォーマンス データ収集を適用できる 3 つのレベルのいずれかを示すことができます。
 
-|列挙子|説明|
+|列挙子|[説明]|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|グローバル レベル設定は、プロファイル実行のすべてのプロセスとスレッドに影響します。|
 |PROFILE_PROCESSLEVEL|プロセス レベル設定は、指定されたプロセスの一部であるスレッドすべてに影響します。|
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
 
-|列挙子|説明|
+|列挙子|[説明]|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|プロファイル要素 ID が存在しません。|
 |PROFILE_ERROR_LEVEL_NOEXIST|指定されたプロファイル レベルが存在しません。|
@@ -66,9 +66,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>関数の情報
- ヘッダー:*VSPerf.h* で宣言
+ ヘッダー : *VSPerf.h* で宣言
 
- インポート ライブラリ:*VSPerf.lib*
+ インポート ライブラリ : *VSPerf.lib*
 
 ## <a name="example"></a>例
  StartProfile 関数の呼び出し例を以下に示します。
@@ -107,5 +107,5 @@ void ExerciseStartProfile()
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

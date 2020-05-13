@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace 要素 (Visual Studio テンプレート)
+title: 要素を作成する
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341787"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739664"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 要素 (Visual Studio テンプレート)
-プロジェクトを作成し、指定した場所でパラメーター置換を実行または一時的な場所でパラメーター置換を実行し、指定した場所にプロジェクトを保存するかどうかを指定します。
+# <a name="createinplace-element-visual-studio-templates"></a>要素を作成する
+プロジェクトを作成して指定した場所でパラメータの置換を実行するか、一時的な場所でパラメータの置換を実行して、指定した場所にプロジェクトを保存するかを指定します。
 
- \<VSTemplate > \<TemplateData > \<CreateInPlace >
+ \<VS テンプレート\<>\<テンプレート データ>作成インプレース>
 
 ## <a name="syntax"></a>構文
 
@@ -36,10 +36,10 @@ ms.locfileid: "66341787"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -50,10 +50,10 @@ ms.locfileid: "66341787"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、`true` または `false` である必要があります。 場合`true`、プロジェクトが作成され、パラメーター置換がで指定された場所で実行される、**新しいプロジェクト** ダイアログ ボックス。 場合`false`、パラメーター置換は一時的な場所で実行され、プロジェクトは、指定した場所にコピーされます。
+ テキストは、`true` または `false` である必要があります。 場合`true`は、プロジェクトが作成され、パラメーターの置換が **[新しいプロジェクト**]ダイアログ ボックスで指定された場所で実行されます。 パラメーター`false`置換が一時的な場所で実行され、プロジェクトが指定した場所にコピーされます。
 
 ## <a name="remarks"></a>Remarks
- `CreateInPlace` は、省略可能な要素です。 既定値は `true` です。
+ `CreateInPlace` は省略可能な要素です。 既定値は `true` です。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] テンプレートのメタデータの例を次に示します。
@@ -85,4 +85,4 @@ ms.locfileid: "66341787"
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)

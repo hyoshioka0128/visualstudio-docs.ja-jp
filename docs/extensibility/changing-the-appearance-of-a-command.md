@@ -1,5 +1,5 @@
 ---
-title: コマンドの外観を変更する |Microsoft Docs
+title: コマンドの外観を変更する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,48 +7,48 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 653f516dda89f4895b8d19d77f7f49bf9c6aa45b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321095"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739853"
 ---
-# <a name="change-the-appearance-of-a-command"></a>コマンドの外観を変更します。
-コマンドの外観を変更することで、ユーザーにフィードバックを提供できます。 たとえば、ご利用いただけませんが異なって表示するコマンドをたい場合があります。 非ことができますコマンドを使用できないか使用できないこと、または、それらを表示するまたは確認メニューでそれらをオフにします。
+# <a name="change-the-appearance-of-a-command"></a>コマンドの外観を変更する
+コマンドの外観を変更することで、ユーザーにフィードバックを提供できます。 たとえば、コマンドが使用できない場合に、コマンドの外観を変える場合があります。 コマンドを使用したり、使用できなくなったり、表示または非表示にしたり、メニューでオンまたはオフにしたりできます。
 
-コマンドの外観を変更するには、これらの操作を実行します。
+コマンドの外観を変更するには、次のいずれかの操作を実行します。
 
-- コマンド テーブルのファイルでコマンドの定義では、適切なフラグを指定します。
+- コマンド・テーブル・ファイルのコマンド定義で適切なフラグを指定します。
 
-- 使用して、<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>サービス。
+- サービスを<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>使用します。
 
-- 実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスおよび生のコマンド オブジェクトを変更します。
+- インターフェイスを<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>実装し、生のコマンド オブジェクトを変更します。
 
-  次の手順では、検索およびマネージ パッケージ フレームワーク (MPF) を使用して、コマンドの外観を更新する方法を示します。
+  次の手順では、マネージ パッケージ フレームワーク (MPF) を使用してコマンドの外観を検索および更新する方法を示します。
 
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>メニュー コマンドの外観を変更するには
 
-1. 指示に従って[メニュー コマンドのテキストを変更する](../extensibility/changing-the-text-of-a-menu-command.md)という名前のメニュー項目を作成する`New Text`します。
+1. メニュー コマンドの[テキストを変更するの手順に](../extensibility/changing-the-text-of-a-menu-command.md)従って、 という名前`New Text`のメニュー項目を作成します。
 
-2. *ChangeMenuText.cs*ファイルに追加し、次のステートメントを使用します。
+2. *ChangeMenuText.cs*ファイルに次の using ステートメントを追加します。
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. *ChangeMenuTextPackageGuids.cs*ファイルに、次の行を追加します。
+3. *ChangeMenuTextPackageGuids.cs*ファイルに次の行を追加します。
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. *ChangeMenuText.cs*ファイルで、次の ShowMessageBox メソッドのコードに置き換えます。
+4. *ChangeMenuText.cs*ファイルで、ShowMessageBox メソッドのコードを次のように置き換えます。
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -59,7 +59,7 @@ ms.locfileid: "66321095"
     }
     ```
 
-5. 更新するコマンドを取得、<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>オブジェクトし、コマンド オブジェクトで、適切なプロパティを設定します。 たとえば、次のメソッドは、使用または使用できない設定 VSPackage のコマンドから、指定したコマンドです。 次のコードでという名前の項目] メニューの [`New Text`がクリックしてされた後に使用できません。
+5. オブジェクトから更新するコマンドを<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>取得し、コマンド オブジェクトに適切なプロパティを設定します。 たとえば、次のメソッドは、VSPackage コマンド セットから指定されたコマンドを使用または使用できるようにします。 次のコードは、メニュー項目を`New Text`クリックした後に使用できない状態にします。
 
     ```csharp
     public bool ChangeMyCommand(int cmdID, bool enableCmd)
@@ -80,12 +80,12 @@ ms.locfileid: "66321095"
 
 6. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。
 
-7. **ツール** メニューのをクリックして、**呼び出す ChangeMenuText**コマンド。 コマンド名は、この時点で**呼び出す ChangeMenuText**コマンド ハンドラーを呼び出さないため、 **ChangeMyCommand()** します。
+7. [**ツール**] メニューの [**メニューテキストの呼び出し**] をクリックします。 この時点で、コマンド名は **[ChangeMenuText の呼び出し**] なので、コマンド ハンドラは**ChangeMyCommand()** を呼び出しません。
 
-8. **ツール**メニューが表示**新しいテキスト**します。 クリックして**新しいテキスト**します。 コマンドを灰色に今すぐ必要があります。
+8. [**ツール**] メニューに **[新しいテキスト]** が表示されます。 [**新しいテキスト**] をクリックします。 コマンドはグレー表示されます。
 
 ## <a name="see-also"></a>関連項目
-- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [拡張メニューとコマンド](../extensibility/extending-menus-and-commands.md)
-- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VSPackages がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)
+- [コマンド テーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591347"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
@@ -26,7 +26,7 @@ ms.locfileid: "75591347"
 
 1. 探索する型またはメンバーの右クリック メニューから **[定義をここに表示]** を選択して、定義を表示できます。 オプションが有効な場合、マウスを使用して定義を表示することもできます。その場合、**Ctrl** キー (または別の修飾子) を押して、メンバー名をクリックします。 または、キーボードの **Alt** + **F12** キーを押します。
 
-     次の図に、`Print()` という名前のメソッドの **[定義をここに表示]** ウィンドウを示します。
+     次の図に、**という名前のメソッドの**[定義をここに表示]`Print()` ウィンドウを示します。
 
      ![[表示のみ] ウィンドウ](../ide/media/peekwindow.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "75591347"
 > [!NOTE]
 > Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード間の移動](../ide/navigating-code.md)
 - [[定義へ移動] と [定義をここに表示]](../ide/go-to-and-peek-definition.md)

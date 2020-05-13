@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62960108"
 ---
 # <a name="zoom-control-utilization-view"></a>ズーム コントロール (使用状況ビュー)
@@ -24,5 +24,5 @@ ms.locfileid: "62960108"
 
  CPU 使用状況グラフまたは GPU アクティビティ グラフでは、マウス ポインターをドラッグして、強調表示する領域を作成できます。 マウスのボタンを離すと、選択した範囲が拡大されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [使用状況ビュー](../profiling/utilization-view.md)

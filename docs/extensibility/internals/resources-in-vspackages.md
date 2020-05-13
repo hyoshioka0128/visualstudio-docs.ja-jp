@@ -1,5 +1,5 @@
 ---
-title: Vspackage | のリソースMicrosoft Docs
+title: VS パッケージ内のリソース |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,48 +7,48 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705602"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage のリソース
-ローカライズされたリソースは、ネイティブサテライト UI Dll、マネージサテライト Dll、またはマネージ VSPackage 自体に埋め込むことができます。
+ローカライズされたリソースは、ネイティブのサテライト UI DLL、マネージ サテライト DLL、またはマネージ VSPackage 自体に埋め込むことができます。
 
- 一部のリソースは Vspackage に埋め込むことができません。 次のマネージ型を埋め込むことができます。
+ VS パッケージに埋め込めないリソースがあります。 次のマネージ型を埋め込むことができます。
 
 - 文字列
 
-- パッケージ読み込みキー (文字列でもあります)
+- パッケージの読み込みキー (文字列でもある)
 
-- ツールウィンドウのアイコン
+- ツール ウィンドウのアイコン
 
-- コンパイルされたコマンドテーブル出力 (CTO) ファイル
+- コンパイル済みコマンド・テーブル出力 (CTO) ファイル
 
 - CTO ビットマップ
 
-- コマンドラインヘルプ
+- コマンド ライン ヘルプ
 
-- ダイアログボックスのデータについて
+- ダイアログ ボックスデータについて
 
-  マネージパッケージ内のリソースは、リソース ID によって選択されます。 例外は、CTO ファイルです。このファイルには、CTMENU という名前を付ける必要があります。 CTO ファイルは、リソーステーブルに `byte[]` として表示される必要があります。 他のすべてのリソース項目は、型によって識別されます。
+  管理パッケージ内のリソースは、リソース ID によって選択されます。 例外は CTO ファイルで、CTMENU という名前を付ける必要があります。 CTO ファイルは、 としてリソース テーブルに`byte[]`表示される必要があります。 その他すべてのリソース項目は、タイプによって識別されます。
 
-  @No__t_0 属性を使用して、マネージリソースが使用可能であることを [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を示すことができます。
+  属性を<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>使用して、管理対象リソース[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]が使用可能であることを示すことができます。
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  この方法で <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> を設定すると、<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> などを使用してリソースを検索するときに、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] がアンマネージサテライト Dll を無視するように指定します。 同じリソース ID を持つ2つ以上のリソースが検出された [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 場合は、検出された最初のリソースが使用されます。
+  この<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>方法で設定すると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>してリソースを検索する場合に、アンマネージ サテライト DLL を無視する必要があることを示します。 同[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]じリソース ID を持つ 2 つ以上のリソースが検出された場合、最初に検出されたリソースが使用されます。
 
 ## <a name="example"></a>例
- 次の例は、ツールウィンドウアイコンのマネージ表現です。
+ 次の例は、ツール ウィンドウ アイコンのマネージ表現です。
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- 次の例は、CTO のバイト配列を埋め込む方法を示しています。この配列には、CTMENU という名前を付ける必要があります。
+ 次の例は、CTO バイト配列を埋め込む方法を示しています。
 
 ```
 <data name="CTMENU"
@@ -80,10 +80,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
-## <a name="implementation-notes"></a>実装に関する注意事項
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、可能な限り Vspackage の読み込みを遅延します。 VSPackage に CTO ファイルを埋め込むと、セットアップ中に、マージされたコマンドテーブルを作成するときに、このようなすべての Vspackage をメモリに読み込む必要 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] があります。 リソースを VSPackage から抽出するには、VSPackage でコードを実行せずにメタデータを調べます。 VSPackage は現時点で初期化されていないため、パフォーマンスが低下することは少なくありません。
+## <a name="implementation-notes"></a>実装に関するメモ
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可能な限り VS パッケージの読み込みを遅延します。 VSPackage に CTO ファイルを埋め込んだ結果は[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、マージされたコマンド テーブルを構築するセットアップ中に、このような VSPackage をメモリに読み込む必要があります。 VSPackage でコードを実行せずにメタデータを調べることによって、VSPackage からリソースを抽出できます。 VSPackage は現在初期化されていないため、パフォーマンスの低下は最小限です。
 
- セットアップ後に VSPackage からリソースを要求する [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] と、そのパッケージは既に読み込まれて初期化される可能性があるため、パフォーマンスが低下することは少なくありません。
+ セットアップ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]後に VSPackage からリソースを要求すると、そのパッケージは既に読み込まれて初期化されている可能性が高いので、パフォーマンスの低下は最小限に抑えられます。
 
 ## <a name="see-also"></a>関連項目
 - [VSPackage の管理](../../extensibility/managing-vspackages.md)

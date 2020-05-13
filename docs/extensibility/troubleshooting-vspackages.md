@@ -1,127 +1,127 @@
 ---
-title: Vspackage のトラブルシューティング |Microsoft Docs
+title: VS パッケージのトラブルシューティング |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a4827a36bd8e76462a137ae7e903c1ab624121c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718708"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698917"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
-次に、VSPackage と問題を解決するためのヒントについて、一般的な問題を示します。
+VSPackage に関する一般的な問題と、問題を解決するためのヒントを次に示します。
 
-### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Visual Studio を起動し続ける VSPackage のトラブルシューティングを行うには
+### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Visual Studio の起動を妨げないようにする VSPackage のトラブルシューティングを行うには
 
-- セーフモードで [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を開始します。
+- セーフ[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]モードで起動します。
 
-   セーフモードで [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を開始するには、コマンドプロンプトで「 **devenv.exe/セーフ**モード」と入力します。
+   セーフ[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]モードで起動するには、コマンド プロンプトで**devenv.exe /safemode**と入力します。
 
-   このプロセスでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] に含まれている Vspackage を除き、Vspackage は読み込まれません。
+   このプロセスの間、VSPackages は に含まれている VSPackages[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以外は読み込まれません。
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>読み込まれない VSPackage のトラブルシューティングを行うには
 
-1. VSPackage が実行されるように登録されているレジストリルートを使用していることを確認します。通常は実験的なレジストリルートです。
+1. VSPackage が実行されるように登録されているレジストリ ルート (通常は実験用のレジストリ ルート) を使用していることを確認します。
 
-    詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
+    詳細については、「[実験インスタンス](../extensibility/the-experimental-instance.md)」を参照してください。
 
-2. VSPackage が実験的なレジストリルートで実行されるように設定されている場合は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の実験用バージョンを実行していることを確認してください。
+2. VSPackage が実験用レジストリ ルートで実行される場合は、実験用バージョンの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]を実行していることを確認します。
 
-    実験的なバージョンを実行するには、コマンドウィンドウに「 **devenv/rootsuffix exp**」と入力します。
+    実験用バージョンを実行するには、コマンド ウィンドウ**に次のように**入力します。
 
-3. VSPackage レジストリエントリを確認します。
+3. VSPackage レジストリ エントリを確認してください。
 
-    詳細については、「 [vspackage の登録](registering-and-unregistering-vspackages.md)と[vspackage の管理](../extensibility/managing-vspackages.md)」を参照してください。
+    詳細については、「 [VS パッケージの登録](registering-and-unregistering-vspackages.md)および VS パッケージ[の管理](../extensibility/managing-vspackages.md)」を参照してください。
 
-4. VSPackage の読み込みに失敗した [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のインスタンスの**出力**ウィンドウを開きます。 VSPackage が読み込みに失敗した理由に関する情報が、そのウィンドウに表示されることがあります。
+4. VSPackage の読み込みに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]失敗しているインスタンスの **[出力**] ウィンドウを開きます。 VSPackage が読み込みに失敗した理由に関する情報は、そのウィンドウに表示される場合があります。
 
    > [!NOTE]
-   > @No__t_1 統合開発環境 (IDE) から [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の実験用バージョンを起動している場合は、両方のバージョンの**出力**ウィンドウを調べます。
+   > 統合開発環境 (IDE)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]からの実験[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版を起動する場合は、両方のバージョンの **「出力**」ウィンドウを調べます。
 
-5. アクティビティログを確認します。
+5. アクティビティ ログを調べます。
 
-    詳細については、「[方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
+    詳細については、「方法[: アクティビティ ログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
-6. IDE によってスローされた例外の詳細については、 **[デバッグ]** メニューの **[例外]** をクリックして、例外を有効にします。 **[例外]** ダイアログボックスで、詳細情報を表示する例外の種類を選択します。
+6. IDE によってスローされる例外の詳細については、[**デバッグ**] メニューの [**例外**] をクリックして、例外を有効にします。 [**例外]** ダイアログ ボックスで、詳細情報を取得する例外の種類を選択します。
 
-### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>登録されていない VSPackage のトラブルシューティングを行うには
+### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>登録されない VSPackage のトラブルシューティングを行うには
 
-1. VSPackage アセンブリが信頼できる場所に配置されていることを確認します。 RegPkg は、既定の .net セキュリティ構成のネットワーク共有など、信頼されていない場所または部分的に信頼できる場所にアセンブリを登録することはできません。 信頼できない場所にユーザーがプロジェクトを作成するたびに警告が表示されますが、[次回からこのメッセージを表示しない] チェックボックスをオンにすると、この警告が再発しないことがあります。
+1. VSPackage アセンブリが信頼できる場所に存在することを確認します。 RegPkg は、既定の .net セキュリティ構成のネットワーク共有など、信頼されていない場所または部分的に信頼できる場所にアセンブリを登録できません。 ユーザーが信頼できない場所にプロジェクトを作成すると警告が表示されますが、[このメッセージを再度表示しない] チェック ボックスを使用すると、この警告が再発しないようにできます。
 
-### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>コマンドをクリックしたときに表示されない、またはエラーが発生するコマンドのトラブルシューティングを行うには
+### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>表示されないコマンド、またはコマンドをクリックしたときにエラーが発生するコマンドのトラブルシューティングを行うには
 
-1. @No__t_0 コマンドプロンプトで次のように入力して、新規または変更されたメニューコマンドと IDE 内の既存のコマンドをマージ**します。**
+1. 新しいメニュー コマンドまたは変更されたメニュー コマンドと、既に IDE に[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]存在するコマンドをマージするには、コマンド プロンプト**で次のように**入力します。
 
-2. @No__t_0 が VSPackage の UI を見つけられることを確認します。
+2. VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]の UI.dll が見つからないことを確認します。
 
-   1. レジストリの Packages セクションで、VSPackage の CLSID を探します。
+   1. VSPackage の CLSID をレジストリのパッケージ セクションで見つけます。
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* パッケージ
+        HKLM\ソフトウェア\マイクロソフト\ビジュアルスタジオ\\*\<のバージョン>* \パッケージ
 
    2. SatelliteDll サブキーによって指定されたパスが正しいことを確認します。
 
-### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>予期せず動作する VSPackage のトラブルシューティングを行うには
+### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>予期しない動作をする VSPackage のトラブルシューティングを行うには
 
 1. コード内にブレークポイントを設定します。
 
-     デバッグの開始点としては、コンストラクターと初期化メソッドを使用することをお勧めします。 また、メニューコマンドなど、評価する領域にブレークポイントを設定することもできます。 ブレークポイントを有効にするには、デバッガーでを実行する必要があります。
+     デバッグの開始点として、コンストラクターと初期化メソッドが役立ちます。 また、メニュー コマンドなど、評価する領域にブレークポイントを設定することもできます。 ブレークポイントを有効にするには、デバッガーで実行する必要があります。
 
     1. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-    2. **[プロパティページ]** ダイアログボックスで、 **[デバッグ]** タブを選択します。
+    2. [**プロパティ ページ**] ダイアログ ボックスで、[**デバッグ**] タブを選択します。
 
-    3. **[コマンドライン引数]** ボックスに、VSPackage が対象とする開発環境のルートサフィックスを入力します。 たとえば、実験用ビルドを選択するには、「 **/rootsuffix Exp**」と入力します。
+    3. [**コマンド ライン引数**] ボックスに、VSPackage が対象とする開発環境のルート サフィックスを入力します。 たとえば、実験用ビルドを選択するには、**次**のように入力します。
 
-    4. **[デバッグ]** メニューの **[デバッグの開始]** をクリックするか、F5 キーを押します。
+    4. [**デバッグ**] メニューの [**デバッグの開始**] をクリックするか、F5 キーを押します。
 
         > [!NOTE]
-        > プロジェクトをデバッグする場合は、今すぐプロジェクトの既存のインスタンスを作成するか、読み込んでください。
+        > プロジェクトをデバッグする場合は、プロジェクトの既存のインスタンスを今すぐ作成またはロードします。
 
-2. アクティビティログを使用します。
+2. アクティビティ ログを使用します。
 
-     キーポイントでアクティビティログに情報を書き込むことによって、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行する場合に特に便利です。 詳細については、「[方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
+     キー ポイントでアクティビティ ログに情報を書き込み、VSPackage の動作をトレースします。 この手法は、リテール環境で VSPackage を実行する場合に特に便利です。 詳細については、「方法[: アクティビティ ログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
-3. パブリックシンボルを使用します。
+3. パブリック シンボルを使用します。
 
      デバッグ中の読みやすさを向上させるために、デバッガーにシンボルをアタッチできます。
 
-    1. [ツール] メニューの [オプション] を**選択**し、[デバッグ] **/[シンボル**] ダイアログボックスに移動します。
+    1. [**ツール] メニューの [オプション]** から[**デバッグ]/[シンボル**] ダイアログ ボックスに移動します。
 
-    2. 次**のシンボルファイル (.pdb) の場所**を追加します。
+    2. この**シンボル ファイル (.pdb) の場所を**追加します。
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
-    3. パフォーマンスを向上させるには、シンボルキャッシュフォルダーを指定します。次に例を示します。
+    3. パフォーマンスを向上させるには、次のようにシンボル キャッシュ フォルダを指定します。
 
         ```
         C:\symbols
         ```
 
-### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>不足している VSPackage またはその依存関係の1つをトラブルシューティングするには
+### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>VSPackage またはその依存関係の 1 つが見つからない問題をトラブルシューティングするには
 
-1. マネージコードの場合は、参照パスが正しいことを確認します。
+1. マネージ コードの場合は、参照パスが正しいことを確認します。
 
    1. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-   2. **[プロパティページ]** ダイアログボックスの **[参照]** タブを選択し、すべてのパスが正しいことを確認します。 または、**オブジェクトブラウザー**を使用して、参照先のオブジェクトを参照することもできます。
+   2. [**プロパティ ページ**] ダイアログ ボックスの [**参照**設定] タブを選択し、すべてのパスが正しいことを確認します。 または、**オブジェクト ブラウザ**を使用して参照先のオブジェクトを参照することもできます。
 
-        マネージコードの場合は、 [fuslogvw.exe (アセンブリバインディングログビューアー)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)を使用して、失敗したアセンブリの読み込みの詳細を表示できます。
+        マネージ コードの場合は[、Fuslogvw.exe (アセンブリ バインディング ログ ビューアー) を](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)使用して、失敗したアセンブリ読み込みの詳細を表示できます。
 
-2. アンマネージコードの場合は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID レジストリノードで VSPackage の CLSID を見つけます。
+2. アンマネージ コードの場合は、CLSID レジストリ ノードで[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage の CLSID を探します。
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* /CLSID
+    HKLM\ソフトウェア\マイクロソフト\ビジュアルスタジオ\\*\<バージョン>* \CLSID
 
-   InprocServer32 エントリが VSPackage dll の正しいパスを持っていることを確認します。
+   インプロセスサーバー32 エントリに VSPackage dll の正しいパスがあることを確認します。
 
 ## <a name="see-also"></a>関連項目
-- [VSPackage](../extensibility/internals/vspackages.md)
+- [VSPackages](../extensibility/internals/vspackages.md)

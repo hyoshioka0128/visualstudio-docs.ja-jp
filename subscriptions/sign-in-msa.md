@@ -3,15 +3,16 @@ title: Microsoft アカウント (MSA) で Visual Studio サブスクリプシ�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Microsoft アカウント (MSA) を使用して Visual Studio サブスクリプションにサインインする方法
-ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493082"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233222"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Microsoft アカウント (MSA) を使用して Visual Studio サブスクリプションにサインインする
 
@@ -36,10 +37,16 @@ A: サインインの問題の最も一般的な原因は、サブスクリプ�
 
 ### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q:サブスクリプションを表示できません。 場所はどこなのか。
 A: 多くのユーザーが、複数のサブスクリプションを持っています。  [https://my.visualstudio.com](https://my.visualstudio.com ) でサブスクリプション ポータルにサインインできても、サブスクリプションが表示されない場合は、次の 2 つの一般的な原因があります。
-1. 異なる Microsoft アカウントでログインしています。  複数のサブスクリプションをお持ちで (Professional または Enterprise サブスクリプションと、Visual Studio Dev Essentials メンバーシップなど)、それらが異なるメール アドレスに関連付けられている可能性があります。 他のサブスクリプションを表示するには、いったんサインアウトし、他の MSA を使ってもう一度サインインしてください。
-2. MSA に複数のサブスクリプションが関連付けられています。  MSA に関連付けられているすべてのサブスクリプションを表示するには、 https://my.visualstudio.com/subscriptions にアクセスして、使用するサブスクリプションを選択します。 
+- 異なる Microsoft アカウントでログインしています。  複数のサブスクリプションをお持ちで (Professional または Enterprise サブスクリプションと、Visual Studio Dev Essentials メンバーシップなど)、それらが異なるメール アドレスに関連付けられている可能性があります。 他のサブスクリプションを表示するには、いったんサインアウトし、他の MSA を使ってもう一度サインインしてください。
+- MSA に複数のサブスクリプションが関連付けられています。  MSA に関連付けられているすべてのサブスクリプションを表示するには、 https://my.visualstudio.com/subscriptions にアクセスして、使用するサブスクリプションを選択します。 
 
 それでも問題が解消しない場合は、[サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/) チームまでお問い合わせください。  
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
-サブスクリプション ポータルに正常にサインインしたら、特典のページ https://my.visualstudio.com/benefits にアクセスし、お客様が利用できる優れたツール、サービス、およびオファーを確認することをお勧めします。  
+サブスクリプション ポータルに正常にサインインしたら、特典ページ (https://my.visualstudio.com/benefits ) にアクセスし、お客様が利用できる優れたツール、サービス、オファーを調査することをお勧めします。  

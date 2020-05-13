@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 549e43f403b19d8832e00277f826cdc7b276b747
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779078"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、アプリケーションの統計情報を収集する
@@ -49,7 +49,7 @@ ms.locfileid: "74779078"
 
 3. コンピューターを再起動します。
 
-4. プロファイラーを起動します。 Type:**VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
+4. プロファイラーを起動します。 **VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`] と入力します
 
    - **/start:sample** オプションによってプロファイラーが初期化されます。
 
@@ -70,7 +70,7 @@ ms.locfileid: "74779078"
 
 5. 一般的な方法で ASP.NET Web アプリケーションを起動します。
 
-6. プロファイラーを ASP.NET ワーカー プロセスにアタッチします。 Type:**VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`]
+6. プロファイラーを ASP.NET ワーカー プロセスにアタッチします。 **VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`] と入力します
 
    - `PID` は ASP.NET ワーカー プロセスのプロセス ID を指定します。`ProcName` はワーカー プロセスの名前を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。
 
@@ -112,7 +112,7 @@ ms.locfileid: "74779078"
 
    - **VSPerfCmd /detach** と入力します
 
-      または
+      \- または -
 
    - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを終了します。
 

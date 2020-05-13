@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback |Microsoft Docs
+title: コールバックからコールバックを開始します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 ms.assetid: 905315ba-8e9b-4889-b9da-98e1441950ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88964d7631681d779132738352acae356aae60a5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 738c9e24a8acfe33d7d3993da0eb5eb96ace1795
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334672"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733370"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-読み込みでは、指定されたコールバック メソッドを使用してシンボルをデバッグします。
+指定したコールバック メソッドを使用してデバッグ シンボルを読み込みます。
 
 ## <a name="syntax"></a>構文
 
@@ -55,28 +55,28 @@ int LoadSymbolsFromCallback(
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールを表す一意の識別子です。
 
 `pUnkMetadataImport`\
-[in]シンボルのメタデータを含むオブジェクト。
+[in]シンボル メタデータを含むオブジェクト。
 
 `pUnkCorDebugModule`\
-[in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
+[in]インターフェイスを実装する[オブジェクト](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
 `bstrModuleName`\
 [in]モジュールの名前。
 
 `bstrSymSearchPath`\
-[in]シンボル ファイルを検索するパス。
+[in]シンボル ファイルを検索するためのパス。
 
 `pCallback`\
-[in]コールバック メソッドを表すオブジェクトです。
+[in]コールバック メソッドを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(

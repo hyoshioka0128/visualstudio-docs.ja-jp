@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776333"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>方法: レポート ビューでノイズ除去を設定する
@@ -39,7 +39,7 @@ ms.locfileid: "74776333"
 
 2. トリミングを有効にするには、次の手順を実行します。
 
-    1. **[トリミングを有効にする]** を選択します。 これは、既定の設定です。
+    1. **[トリミングを有効にする]** を選択します。 これが既定の設定です。
 
         > [!NOTE]
         > ノイズ除去が有効になっていると、レポートに情報バーが表示されます。 詳細については、「[コール ツリー ビュー](../profiling/call-tree-view.md)」および「[割り当てビュー](../profiling/dotnet-memory-allocations-view.md)」を参照してください。
@@ -48,7 +48,7 @@ ms.locfileid: "74776333"
 
     3. **[しきい値]** テキスト ボックスに割合の値を入力して、必要なしきい値の設定を構成します。
 
-    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。
+    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これが既定の設定です。
 
 3. トリミングを無効にするには、 **[トリミングを有効にする]** をオフにします。
 
@@ -62,7 +62,7 @@ ms.locfileid: "74776333"
 
 2. 折りたたみを有効にするには、次の手順を実行します。
 
-    1. **[折りたたみを有効にする]** を選択します。 これは、既定の設定です。
+    1. **[折りたたみを有効にする]** を選択します。 これが既定の設定です。
 
         > [!NOTE]
         > ノイズ除去が有効になっていると、レポートに情報バーが表示されます。 詳細については、「[コール ツリー ビュー](../profiling/call-tree-view.md)」および「[割り当てビュー](../profiling/dotnet-memory-allocations-view.md)」を参照してください。
@@ -71,14 +71,14 @@ ms.locfileid: "74776333"
 
     3. **[しきい値]** テキスト ボックスに割合の値を入力して、必要なしきい値の設定を構成します。
 
-    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。
+    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これが既定の設定です。
 
 3. 折りたたみを無効にするには、 **[折りたたみを有効にする]** をオフにします。
 
 4. **[OK]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)
-- [方法: インストルメンテーションで短い関数を除外または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [コール ツリー ビュー](../profiling/call-tree-view.md)
+- [方法 : インストルメンテーションから短い関数を除外する、または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [[コール ツリー] ビュー](../profiling/call-tree-view.md)
 - [割り当て ビュー](../profiling/dotnet-memory-allocations-view.md)

@@ -11,16 +11,16 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62819530"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU によって作成されたプロジェクト ファイルのカスタマイズ
 Visual Studio Tools for Unity は、プロジェクト ファイルの生成時に Unity スタイルのコールバックを提供します。 `VisualStudioIntegration.ProjectFileGeneration` イベントに登録し、プロジェクト ファイルが再生成されるたびに、それを変更します。
 
-## <a name="demonstrates"></a>使用例
+## <a name="demonstrates"></a>対象
  Visual Studio Tools for Unity によって生成された Visual Studio プロジェクト ファイルをカスタマイズする方法について示します。
 
 ## <a name="example"></a>例
@@ -69,5 +69,5 @@ public class ProjectFileHook
 #endif
 ```
 
-## <a name="see-also"></a>関連項目
- [例:ログ コールバック](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+## <a name="see-also"></a>参照
+ [例: ログのコールバック](../cross-platform/share-the-unity-log-callback-with-vstu.md)

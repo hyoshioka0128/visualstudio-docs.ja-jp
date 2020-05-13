@@ -34,7 +34,7 @@
   items:
     - name: アプリのモデルを生成する
       href: create-models-for-your-app.md
-    - name: '依存関係図: 関連項目'
+    - name: '依存関係図: リファレンス'
       href: layer-diagrams-reference.md
     - name: '依存関係図: ガイドライン'
       href: layer-diagrams-guidelines.md
@@ -46,7 +46,7 @@
           href: read-models-and-diagrams-in-other-visual-studio-editions.md
         - name: イメージとしてダイアグラムをエクスポートする
           href: export-diagrams-as-images.md
-- name: モデルを使う
+- name: モデルを使用する
   items:
     - name: 開発プロセス内でのモデルの使用
       href: use-models-in-your-development-process.md

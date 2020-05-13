@@ -1,5 +1,5 @@
 ---
-title: RDT_ReadLock の使用法 |Microsoft Docs
+title: RDT_ReadLockの使用法 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - RDT_EditLock
 - invisible
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c11cee4c1f8c150fc8bcf42b3dbc1a193d3441a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705927"
 ---
-# <a name="rdtreadlock-usage"></a>RDT_ReadLock の使用法
+# <a name="rdt_readlock-usage"></a>RDT_ReadLock の使用法
 
-[_VSRDTFLAGS します。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)これは、Visual Studio IDE で現在開いているすべてのドキュメントの一覧で、実行されているドキュメント テーブル (RDT)、ドキュメントをロックするためのロジックを提供するフラグです。 このフラグは、ドキュメントが開かれた文書は、ユーザー インターフェイスに表示されるか、メモリの目に見えない形で保持されているかどうかを判断します。
+[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)は、実行中のドキュメント テーブル (RDT) でドキュメントをロックするためのロジックを提供するフラグです。 このフラグは、ドキュメントを開くタイミング、およびドキュメントがユーザー インターフェイスで表示されるか、メモリ内に表示されない状態かどうかを決定します。
 
-一般を使用する[_VSRDTFLAGS します。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)次のいずれかが true の場合。
+一般的に[、_VSRDTFLAGSを使用します。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)次のいずれかが当てはまる場合です。
 
-- ドキュメントを視覚的にオープンする読み取り専用とはまだが確立されていることが、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有する必要があります。
+- ドキュメントを目に見えない状態で読み取り専用で開きたいのですが、ドキュメントを<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有する必要があるドキュメントはまだ確立されていません。
 
-- 場合、ユーザーが、ユーザーが、UI に表示されることと、終了しようとし、前にない開かれた視覚的ドキュメントを保存するように求められます。
+- ユーザーが UI に表示される前に目に見えない形で開かれたドキュメントを保存するように求めるメッセージを表示し、それを閉じようとします。
 
-## <a name="how-to-manage-visible-and-invisible-documents"></a>表示と非表示のドキュメントを管理する方法
+## <a name="how-to-manage-visible-and-invisible-documents"></a>表示/非表示ドキュメントの管理方法
 
-ユーザーが UI では、ドキュメントを開いたときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>ドキュメントの所有者を確立する必要があります、 [_VSRDTFLAGS します。RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>)フラグを設定する必要があります。 ない場合は<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>所有者が確立されると、その後、ユーザーがクリックしたときに、ドキュメントは保存されません**すべて保存**または IDE を終了します。 かどうか、ドキュメントが開いていない視覚的、メモリ内で変更されていて、ユーザーがシャット ダウン時にドキュメントを保存するように求めまたは保存つまり**すべて保存**を選択した場合、`RDT_ReadLock`は使用できません。 代わりに、使用する必要があります、`RDT_EditLock`を登録し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>ときに、 [__VSREGDOCLOCKHOLDER します。RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>)フラグ。
+ユーザーが UI でドキュメントを開くときに<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>、ドキュメントの所有者を確立し、_VSRDTFLAGSする必要があります[。RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>)フラグを設定する必要があります。 所有者を<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>設定できない場合、ユーザーが **[すべて保存**] をクリックするか、IDE を閉じると、ドキュメントは保存されません。 つまり、メモリ内で変更された場所でドキュメントが目に見えない状態で開かれ、ユーザーがシャットダウン時にドキュメントを保存するか、[**すべて保存**] を選択した場合に`RDT_ReadLock`保存するように求めるメッセージが表示された場合は、 を使用できません。 代わりに、 を`RDT_EditLock`使用し<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>[、__VSREGDOCLOCKHOLDERを登録する必要があります。RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>)フラグ。
 
-## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock とドキュメントの変更
+## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLockとドキュメントの変更
 
-前に説明されているフラグは、ドキュメントの非表示の開始を生成することを示します、`RDT_EditLock`ドキュメントが開かれた場合、ユーザーに表示されている**ドキュメント ウィンドウ**します。 この問題が発生すると、ユーザーがで表示されます。 を**保存**求めるときに、表示可能な**ドキュメント ウィンドウ**が閉じられました。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 使用する実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager>のみに最初に、サービスが動作を`RDT_ReadLock`は (つまり、ドキュメントを開いたときにない視覚的情報を解析する) を取得します。 後で、ドキュメントを変更する必要があります、ロックにアップグレード、弱**RDT_EditLock**します。 ユーザーが表示されているでし、ドキュメントを開く場合**ドキュメント ウィンドウ**、`CodeModel`の弱い`RDT_EditLock`解放されます。
+前述のフラグは、ドキュメントがユーザーによって開かれ、表示されている`RDT_EditLock`**DocumentWindow**にドキュメントが開かれたときに、ドキュメントを非表示にして開く場合に表示されることを示します。 この場合、表示されている**DocumentWindow**が閉じられると、ユーザーに**保存**のプロンプトが表示されます。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel`サービスを<xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager>使用する実装は、最初にが`RDT_ReadLock`取られた場合(つまり、ドキュメントが情報を解析するために目に見えないほど開かれた場合)に機能します。 後でドキュメントを変更する必要がある場合は、ロックが弱い**RDT_EditLock**にアップグレードされます。 ユーザーが表示されている**DocumentWindow**でドキュメントを開くと、'`CodeModel``RDT_EditLock`弱い' が解放されます。
 
-ユーザーが終了した場合、**ドキュメント ウィンドウ**選択**いいえ**、開いているドキュメントを保存するように求められたら、`CodeModel`実装は、ドキュメント内のすべての情報を破棄し、再度開かれます、ディスクの詳細については、ドキュメントに必要な次の時間目に見えない形からドキュメントです。 この動作の細部は、ユーザーが開いたインスタンス、**ドキュメント ウィンドウ**、非表示の開いているドキュメントの変更が閉じるし、選択**いいえ**文書を保存するように求められたらします。 この場合は、ドキュメントがある場合、`RDT_ReadLock`ドキュメントは実際に閉じられましていないおよび文書を保存していないユーザーが選択した場合でもに、変更したドキュメントがメモリを目に見えない形で開いたままです。
+開いているドキュメントを保存するように求められたときにユーザーが**DocumentWindow**を閉じて **[いいえ**] を`CodeModel`選択すると、実装はドキュメント内のすべての情報を破棄し、次回ドキュメントに関してより多くの情報が必要になったときに、ドキュメントを目に見えない形で開きます。 この動作の微妙な点は、ユーザーが非表示の開いているドキュメントの**DocumentWindow を**開いて変更し、閉じ、ドキュメントを保存するように求められたときに **[いいえ**] を選択するインスタンスです。 この場合、ドキュメントに`RDT_ReadLock`が含まれる場合、ドキュメントは実際には閉じず、ユーザーがドキュメントを保存しないことを選択したにもかかわらず、変更されたドキュメントはメモリ内で目に見えない形で開いたままになります。
 
-ドキュメントの非表示の開始、弱を使用している場合`RDT_EditLock`、ユーザーが文書がはっきりと他のロックが保持されていないときにそのロックを得られます。 ユーザーが閉じたとき、**ドキュメント ウィンドウ**選択**いいえ**ドキュメントの保存を求められたら、ドキュメント閉じる必要がありますメモリから。 つまり、非表示のクライアントは、この状況の発生を追跡するために RDT イベントをリッスンする必要があります。 ドキュメントが必要になる、次に、ドキュメントを再開する必要があります。
+ドキュメントの非表示の開口部が弱`RDT_EditLock`を使用している場合、ユーザーがドキュメントを目に見えて開いたときにロックが発生し、他のロックは保持されません。 ユーザーが**DocumentWindow**を閉じ、ドキュメントを保存するかどうかを確認するメッセージが表示されたときに **[いいえ**] を選択すると、ドキュメントをメモリから閉じる必要があります。 つまり、非表示のクライアントは、この発生を追跡するために RDT イベントをリッスンする必要があります。 次回ドキュメントが必要な場合は、ドキュメントを再度開く必要があります。

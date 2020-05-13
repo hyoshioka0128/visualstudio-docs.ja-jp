@@ -1,5 +1,5 @@
 ---
-title: コマンド配置のガイドライン |Microsoft Docs
+title: コマンド配置のガイドライン |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,54 +7,54 @@ helpviewer_keywords:
 - small command sets
 - command sets
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4cc3dfa8aaeba01709ae74ca9a1d9d54f3c1743
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342124"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709563"
 ---
 # <a name="command-placement-guidelines"></a>コマンド配置のガイドライン
-Visual Studio 統合開発環境 (IDE) でのコマンドを配置するためのベスト プラクティスは、コマンド セットのサイズによって異なります。 コマンドが定義されているし、情報に従って配置 *.vsct*ファイル。
+Visual Studio 統合開発環境 (IDE) でコマンドを配置する際のベスト プラクティスは、コマンド セットのサイズによって異なります。 コマンドは *、.vsct*ファイルの情報に従って定義および配置されます。
 
 ## <a name="best-practices-for-all-command-sets"></a>すべてのコマンド セットのベスト プラクティス
- コマンドのセットはすべて、次のガイドラインに従います。
+ コマンドの各セットについて、次のガイドラインに従ってください。
 
-- コマンドの構造体のグラフを事前に準備します。 コマンド、コンボ ボックス、コマンド グループ、および複数の場所で使用されるショートカット メニューを特定します。
+- コマンド構造のチャートを事前に準備します。 複数の場所で使用するコマンド、コンボ ボックス、コマンド グループ、およびショートカット メニューを識別します。
 
-- 同じグループ内に表示されるコマンドに関連付ける必要があります。
+- 同じグループに表示されるコマンドは関連付ける必要があります。
 
-- 1 つのコマンドを含むグループを利用できます。
+- 1 つのコマンドのみを含むグループは、受け入れられます。
 
-- パッケージは、多くのコマンドを既存の Visual Studio のメニューに追加しないでください。 代わりに、メニューまたはサブメニューを新しいコマンドをホストするを作成する必要があります。
+- パッケージは、既存の Visual Studio メニューに多くのコマンドを追加しないでください。 代わりに、新しいコマンドをホストするメニューまたはサブメニューを作成する必要があります。
 
-- 配置すると、コマンド、名前のコマンドは、既存のメニューで目的がはっきりとはしない既存のコマンドで混乱するようにします。
+- 既存のメニューにコマンドを配置する場合は、コマンドの目的が明確になり、既存のコマンドと混同しないように、コマンドに名前を付けます。
 
-## <a name="best-practices-for-small-command-sets"></a>小規模なコマンド セットのベスト プラクティス
- いくつかのコマンドを含む VSPackage を開発している場合は、これらのガイドラインに従っても。
+## <a name="best-practices-for-small-command-sets"></a>小さいコマンド セットのベスト プラクティス
+ コマンドが少ない VSPackage を開発する場合は、次のガイドラインにも従ってください。
 
-- 可能であればを使用して、[親](../../extensibility/parent-element.md)適切なグループに配置するコマンド、コンボ ボックス、グループ、または子メニューの要素。
+- 可能な場合は、コマンド、コンボ ボックス、グループ、または子メニューの[Parent](../../extensibility/parent-element.md)要素を使用して、適切なグループに配置します。
 
-- VSPackage によって表示されるメニューには、これらのグループを割り当てます。
+- VSPackage によって表示されるメニューにこれらのグループを割り当てます。
 
-- 子メニューまたはコマンドの親である必要があります、[グループ](../../extensibility/group-element.md)要素。 コマンドおよび子メニュー グループに割り当てるし、親メニューに、グループを割り当てます。
+- 子メニューまたはコマンドの親は[、グループ](../../extensibility/group-element.md)要素である必要があります。 コマンドと子メニューをグループに割り当て、親メニューに割り当てます。
 
-- 他のグループにコマンドを配置するには追加することで、 [CommandPlacements](../../extensibility/commandplacements-element.md)コマンド、し、追加の定義の後に要素のセクション、`CommandPlacements`要素、 [CommandPlacement](../../extensibility/commandplacement-element.md)要素各追加グループ。
+- コマンドの定義の後に[CommandPlacements](../../extensibility/commandplacements-element.md)要素セクションを追加し、追加する各グループの[CommandPlacement](../../extensibility/commandplacement-element.md)要素を`CommandPlacements`要素に追加することで、コマンドを追加のグループに配置できます。
 
-## <a name="best-practices-for-large-command-sets"></a>大量のコマンド セットのベスト プラクティス
- VSPackage が複数のコンテキストで表示される多くのコマンドである場合は、次のガイドラインを次も実行します。
+## <a name="best-practices-for-large-command-sets"></a>大きいコマンド セットのベスト プラクティス
+ VSPackage に複数のコンテキストで表示されるコマンドが多数ある場合は、次のガイドラインにも従ってください。
 
-- メニューのグループ、および自己の親のコマンドを作成します。 つまり、割り当てないでください、`Parent`項目の定義内の要素。
+- メニュー、グループ、コマンドを自己親子にする。 つまり、項目の`Parent`定義に要素を割り当てないでください。
 
-- 使用`CommandPlacement`要素のエントリ、`CommandPlacements`要素セクションには、グループの親メニューやメニューのグループ、およびコマンドを配置します。
+- 要素`CommandPlacement`セクションの要素エントリ`CommandPlacements`を使用して、親メニューおよび親グループにメニュー、グループ、およびコマンドを配置します。
 
-- `CommandPlacements`要素セクションでは、特定のメニューまたはグループを設定するエントリは互いに隣接する必要があります。 読みやすくなり、この、`Priority`ランキングを容易に判断します。
+- `CommandPlacements`要素セクションでは、特定のメニューまたはグループに入力するエントリが互いに隣接している必要があります。 これは読みやすさを助け`Priority`、ランキングを判断しやすくします。
 
 ## <a name="see-also"></a>関連項目
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackages がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

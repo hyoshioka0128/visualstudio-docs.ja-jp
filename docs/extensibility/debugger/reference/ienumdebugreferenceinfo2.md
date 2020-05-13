@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugReferenceInfo2 |Microsoft Docs
+title: を参照してください。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b664b068ac7cd30a7475ab14bfe1b064c98142c2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324402"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715279"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
-このインターフェイスの列挙[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。
+このインターフェイスは[、DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体を列挙します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,32 +28,32 @@ ms.locfileid: "66324402"
 IEnumDebugReferenceInfo2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジン (DE) は、メモリ内オブジェクトへの参照のサポートの一部として、このインターフェイスを実装します。 参照はサポートされている場合にのみ、このインターフェイスを実装する必要があります。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジン (DE) は、メモリ内のオブジェクトへの参照のサポートの一部として、このインターフェイスを実装します。 このインターフェイスは、参照がサポートされている場合にのみ実装する必要があります。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- Visual Studio 呼び出し[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)このインターフェイスを取得します。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ このインターフェイスを取得するために[列挙子](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)を呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IEnumDebugReferenceInfo2`します。
+ 次の表に`IEnumDebugReferenceInfo2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[次へ](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|指定した数を取得[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列挙体シーケンス内の構造体。|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|指定した数のスキップ[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列挙体シーケンス内の構造体。|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|数を取得[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列挙子内の構造体。|
+|[次へ](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|列挙体シーケンス内の指定した数の[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体を取得します。|
+|[スキップ](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|列挙体シーケンス内の指定した数の[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体をスキップします。|
+|[リセット](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|列挙子の[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体の数を取得します。|
 
 ## <a name="remarks"></a>Remarks
- 参照は、プロパティは、名前、種類、およびアドレスは、実質的に型と、アドレス。 参照は、メモリ内に存在するオブジェクトが参照される限り、永続化します。 参照してください[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)の詳細。
+ 参照は基本的に型とアドレスですが、プロパティは名前、型、およびアドレスです。 参照は、参照されるオブジェクトがメモリ内に存在する限り保持されます。 詳細については[、IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)を参照してください。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de6d6325b1e518146768798c773754c091861aa8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775915"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>方法: インストルメンテーションで短い関数を除外または含める
@@ -31,7 +31,7 @@ ms.locfileid: "74775915"
 
 2. **[プロパティ ページ]** で、 **[インストルメンテーション]** プロパティをクリックします。
 
-3. インストルメンテーションから短い関数を除外するには、 **[短い関数をインストルメンテーションから除外]** をオンにします。 これは、既定の設定です。
+3. インストルメンテーションから短い関数を除外するには、 **[短い関数をインストルメンテーションから除外]** をオンにします。 これが既定の設定です。
 
      または
 
@@ -39,6 +39,6 @@ ms.locfileid: "74775915"
 
 4. **[OK]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [データ収集の制御](../profiling/controlling-data-collection.md)
 - [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)

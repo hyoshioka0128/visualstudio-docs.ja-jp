@@ -4,21 +4,21 @@ description: Visual Studio で Azure クラウド サービス プロジェク�
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23e2db0b42fb12872feb5942d9f4eeaab96d3c2d
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253472"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489754"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio での Azure クラウド サービス プロジェクトの作成
 
-Azure Tools for Visual Studio には、シンプルな汎用 Azure サービスである [Azure クラウド サービス](/azure/cloud-services/cloud-services-choose-me)を作成できるプロジェクト テンプレートが用意されています。 プロジェクトを作成したら、Visual Studio でクラウド サービスを構成し、デバッグして、Azure にデプロイできます。
+Visual Studio には、単純な汎用の[Azure サービス](/azure/cloud-services/cloud-services-choose-me)である Azure クラウド サービス を作成できるプロジェクト テンプレートが用意されています。 プロジェクトを作成したら、Visual Studio でクラウド サービスを構成し、デバッグして、Azure にデプロイできます。
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Visual Studio で Azure クラウド サービス プロジェクトを作成する手順
 このセクションでは、Visual Studio で 1 つ以上の Web ロールを追加して Azure クラウド サービス プロジェクトを作成する手順について説明します。
@@ -26,7 +26,7 @@ Azure Tools for Visual Studio には、シンプルな汎用 Azure サービス�
 ::: moniker range="vs-2017"
 1. Visual Studio を管理者として開きます。
 
-1. メイン メニューで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. メイン メニューで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
 
 1. Visual C# または Visual Basic プロジェクト テンプレート ノードで **[クラウド]** を選択し、テンプレートの一覧から **[Azure クラウド サービス]** を選択します。
 
@@ -39,13 +39,13 @@ Azure Tools for Visual Studio には、シンプルな汎用 Azure サービス�
 1. **[OK]** を選択します。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
 
-1. 検索ボックスに、「*クラウド*」と入力して、 **[Azure クラウド サービス]** を選択します。
+1. 検索ボックスに、「*クラウド*」と入力して、**[Azure クラウド サービス]** を選択します。
 
    ![新しい Azure クラウド サービス](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
 
-1. プロジェクト名を設定し、 **[作成]** を選択します。
+1. プロジェクト名を設定し、**[作成]** を選択します。
 
    ![プロジェクト名を設定します。](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
 ::: moniker-end
@@ -54,13 +54,13 @@ Azure Tools for Visual Studio には、シンプルな汎用 Azure サービス�
 
     ![新しい Azure クラウド サービス ロールの選択](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. 追加したロールの名前を変更するには、 **[新しい Microsoft Azure クラウド サービス]** ダイアログでそのロールの上にマウス ポインターを置き、コンテキスト メニューの **[名前の変更]** を選択します。 ロールを追加した後に、(**ソリューション エクスプローラー**で) ソリューション内でロールの名前を変更することもできます。
+1. 追加したロールの名前を変更するには、**[新しい Microsoft Azure クラウド サービス]** ダイアログでそのロールの上にマウス ポインターを置き、コンテキスト メニューの **[名前の変更]** を選択します。 ロールを追加した後に、(**ソリューション エクスプローラー**で) ソリューション内でロールの名前を変更することもできます。
 
     ![Azure クラウド サービス ロールの名前の変更](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 
 Visual Studio の Azure プロジェクトは、ソリューション内のロール プロジェクトに関連付けられています。 また、プロジェクトには、*サービス定義ファイル*と*サービス構成ファイル*が含まれます。
 
-- **サービス定義ファイル**-必要なロール、エンドポイント、仮想マシンのサイズなど、アプリケーションのランタイム設定を定義します。
+- **サービス定義ファイル**- 必要なロール、エンドポイント、仮想マシンのサイズなど、アプリケーションのランタイム設定を定義します。
 - **サービス構成ファイル** - 実行されるロールのインスタンス数とロールに定義されている設定の値を構成します。
 
 これらのファイルの詳細については、[Visual Studio を使用した Azure クラウド サービスのロールの構成](vs-azure-tools-configure-roles-for-cloud-service.md)に関する記事をご覧ください。

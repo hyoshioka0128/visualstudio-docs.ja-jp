@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114693"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>[オプション] ダイアログ ボックス:[Windows フォーム デザイナー] > [データ UI カスタマイズ]

@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892138"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77706396"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>方法: ドキュメント生成のための XML コメントを挿入する
 
@@ -50,12 +50,12 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 
 要素の上にカーソルを置くとクイック ヒントに表示される、XML コメントのスタイルを使用できます。 これらのスタイルには、斜体、太字、箇条書き、クリック可能なリンクなどがあります。
 
-   ![完了したコメント](media/doc-styles-cs.png) 
+   ![完了したコメント](media/doc-style-cs.png) 
 
 > [!NOTE]
-> `///` (C#) または `'''` (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための[オプション](../../ide/reference/options-text-editor-csharp-advanced.md)があります。 メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 次に、 **[テキスト エディター]**  >  **[C#]** または **[Basic]**  >  **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、 **[XML ドキュメントを生成する]** オプションを探します。
+> [ (C#) または ](../../ide/reference/options-text-editor-csharp-advanced.md) (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための`///`オプション`'''`があります。 メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 次に、 **[テキスト エディター]**  >  **[C#]** または **[Basic]**  >  **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、 **[XML ドキュメントを生成する]** オプションを探します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [XML ドキュメント コメント (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [XML コメントによるコードの文書化 (C# ガイド)](/dotnet/csharp/codedoc)

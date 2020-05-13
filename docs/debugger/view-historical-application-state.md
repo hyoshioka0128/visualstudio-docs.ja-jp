@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67825522"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio の IntelliTrace のステップ バックを使用して以前のアプリケーション状態を調べる (Visual Studio Enterprise)
@@ -38,7 +38,7 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
     Visual Studio 2017 Enterprise バージョン 15.9 プレビュー 2 以降では、このオプションは **[IntelliTrace snapshots (managed and native)]** \(IntelliTrace スナップショット (マネージドおよびネイティブ)\) になっています。
 
-    ![IntelliTrace イベントとスナップショット モードを有効にする](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace イベントとスナップショット モードを有効にする")
+    ![IntelliTrace イベントとスナップショット モードの有効化](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace イベントとスナップショット モードの有効化")
 
 1. 例外のスナップショットを表示するオプションを構成する場合、 **[オプション]** ダイアログ ボックスの **[IntelliTrace]**  >  **[詳細]** の順に選択します。
 
@@ -57,7 +57,7 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
     スナップショットがあるイベントの横にはカメラ アイコンが表示されます。
 
-    ![[イベント] タブとスナップショット](../debugger/media/intellitrace-events-tab-with-snapshots.png "[イベント] タブとブレークポイントとステップのスナップショット")
+    ![[イベント] タブとスナップショット](../debugger/media/intellitrace-events-tab-with-snapshots.png "ブレークポイントとステップのスナップショットを含む [イベント] タブ")
 
     パフォーマンス上の理由から、非常に迅速にステップ実行された場合、スナップショットは作成されません。 ステップの横にカメラ アイコンが表示されない場合は、ステップ実行をもっとゆっくり実行してみてください。
 
@@ -81,7 +81,7 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
 3. スナップショットは、 **[イベント]** タブで確認することも可能です。これを実行するには、スナップショットがあるイベントを選択し、 **[デバッグ履歴の有効化]** をクリックします。
 
-    ![イベントの [デバッグ履歴の有効化]](../debugger/media/intellitrace-activate-historical-debugging.png "イベントの [過去デバッグの有効化]")
+    ![イベントの [デバッグ履歴の有効化]](../debugger/media/intellitrace-activate-historical-debugging.png "イベントの [デバッグ履歴の有効化]")
 
     **[次のステートメントの設定]** コマンドとは異なり、スナップショットを表示してもコードは再実行されません。過去にそれが起こった時点のアプリケーション状態の静的なビューが表示されます。
 
@@ -119,7 +119,7 @@ IntelliTrace のイベント限定モードでは、デバッガーのステッ�
 
 * アプリケーションのプロセスのスナップショットが永続化メモリにマップされたファイルを使用するアプリケーションで作成された場合、(親プロセスでロックがリリースされた場合も) そのスナップショットのプロセスがメモリでマップされたファイルの排他的ロックを保持します。 その他のプロセスは、依然メモリにマップ済みのファイルを読み取ることはできますが、書き込むことはできません。
 
-  回避策:
+  対応策 :
   * デバッグ セッションを終了して、すべてのスナップショットをクリアします。
 
 * 多数の DLL を読み込むアプリケーションなど、そのプロセスに一意のメモリ領域が多数あるアプリケーションをデバッグする場合、スナップショットが有効なステップ実行のパフォーマンスに影響がある場合があります。 この問題は、Windows の今後のバージョンで対処される予定です。 この問題が発生している場合は、stepback@microsoft.com までご連絡ください。

@@ -8,13 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+author: mikejo5000
+ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091835"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307005"
 ---
 # <a name="exploration-bounds"></a>探索の範囲
 
@@ -166,7 +166,7 @@ IntelliTest が探索中に考慮する一意のパスの最大数。
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-IntelliTest が生成する必要があるテストの種類を示します。 次の値を指定できます。
+IntelliTest が生成する必要があるテストの種類を示します。 指定できる値は、
 
 * **すべて** - 想定の違反を含む、すべての場合にテストを生成します。
 * **FailuresAndIncreasedBranchHits** (既定) - すべての固有エラーの場合、また、[TestEmissionBranchHits](#testemissionbranchhits) で制御される、テスト ケースのカバレッジが増えるたびにテストを生成します。
@@ -184,6 +184,6 @@ IntelliTest が生成する必要があるテストの種類を示します。 �
 
 このオプションの既定値は **TestEmissionBranchHits=2** で、今後の回帰エラーの検出にもより適している、表現力の高いテスト スイートが生成されます。
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスの開発 |Microsoft Docs
+title: レガシー言語サービスの開発 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,68 +11,68 @@ f1_keywords:
 helpviewer_keywords:
 - language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa21b2f2e8b0321e829fd27fde1d833a63e7ecb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351575"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708668"
 ---
-# <a name="develop-a-legacy-language-service"></a>従来の言語サービスを開発します。
-このセクションにリンクする際に役立つトピックへは、従来の言語サービスを作成します。
+# <a name="develop-a-legacy-language-service"></a>従来の言語サービスの開発
+このセクションでは、従来の言語サービスの作成に役立つトピックへのリンクを示します。
 
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 言語サービスを実装する新しい方法の詳細についてを参照してください。[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)します。
+ レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 言語サービスを実装する新しい方法の詳細については、「[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)」を参照してください。
 
 > [!NOTE]
-> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [従来の言語サービスのモデル](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
- モデルの最小言語サービスの提供、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のコア エディター。 このモデルは、独自の言語サービスを作成するためのガイドとして使用できます。
+ コア エディターの最小限の言語サービスのモデル[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を提供します。 このモデルは、独自の言語サービスを作成するためのガイドとして使用できます。
 
-- [従来の言語サービスのインターフェイス](../../extensibility/internals/legacy-language-service-interfaces.md)
+- [レガシー言語サービスインタフェース](../../extensibility/internals/legacy-language-service-interfaces.md)
 
- 言語サービスを実装するために必要なオブジェクトについて説明し、構文の強調表示、メソッドのデータ、およびその他の機能を提供するのに使用できるその他のオブジェクトの一覧を提供します。
+ 言語サービスの実装に必要なオブジェクトについて説明し、構文の強調表示、メソッド データ、およびその他の機能を提供するために使用できる追加のオブジェクトの一覧を示します。
 
-- [従来の言語サービスのコマンドをインターセプトします。](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+- [従来の言語サービス コマンドをインターセプトする](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
 
- コマンドのフィルターをインターセプト コマンド テキスト ビューの処理とそれ以外の場合に、言語サービスに挿入する方法について説明します。
+ 言語サービスにコマンド フィルタを挿入して、テキスト ビューが処理するコマンドをインターセプトする方法について説明します。
 
-- [従来の言語サービスを登録します。](../../extensibility/internals/registering-a-legacy-language-service2.md)
+- [従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service2.md)
 
- 使用して、言語サービスを登録する方法についての情報を提供します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+ を使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]して言語サービスを登録する方法について説明します。
 
-- [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)
+- [デバッグのための言語サービスサポート](../../extensibility/internals/language-service-support-for-debugging.md)
 
- 言語サービスが、デバッガーをサポートする機能を提供する方法について説明します。
+ 言語サービスがデバッガーをサポートする機能を提供する方法について説明します。
 
-- [チェックリスト: 従来の言語サービスを作成します。](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [チェックリスト: 従来の言語サービスを作成する](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
- 作成すると、コア エディターの言語サービスを統合する手順について説明します。
+ コア エディターの言語サービスを作成および統合する手順について説明します。
 
 ## <a name="related-sections"></a>関連項目
-- [構文の色分け、従来の言語サービス](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
  言語サービスで構文の強調表示を実装する方法について説明します。
 
-- [従来の言語サービスで入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
+- [従来の言語サービスでのステートメント入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- ステートメント入力候補、言語サービスにより、ユーザーの言語キーワードまたは入力が開始要素を完了するプロセスについて説明します。
+ 言語サービスが、入力を開始した言語キーワードまたは要素をユーザーが終了するプロセスについて説明します。
 
-- [従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
+- [従来の言語サービスのパラメーター情報](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- オーバー ロードされた関数とメソッドのメソッドのヒントを提供する方法について説明します。
+ オーバーロードされた関数およびメソッドのメソッドヒントを提供する方法について説明します。
 
-- [方法: 従来の言語サービスで非表示のテキストのサポートを提供します。](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [方法: 従来の言語サービスで隠しテキストのサポートを提供する](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
- 非表示のテキスト領域の目的について説明し、非表示のテキスト領域を実装する方法について説明します。
+ 隠しテキスト領域の目的について説明し、非表示のテキスト領域を実装する方法について説明します。
 
-- [方法: 従来の言語サービスでのアウトラインの拡張のサポートを提供します。](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [方法: 従来の言語サービスで拡張アウトライン サポートを提供する](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- お使いの言語をサポートしている以外のアウトラインのサポートを拡張する 2 つのオプションについて説明します、*定義に折りたたむ*コマンド。
+ [*定義に折りたたむ*] コマンドをサポートする以外に、言語のサポートを拡張する 2 つのオプションについて説明します。

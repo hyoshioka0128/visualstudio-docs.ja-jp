@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols |Microsoft Docs
+title: Iデバッグモジュール3::ロードシンボル |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::LoadSymbols
 ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b23e7b1ae837087db198795ffeda6a5827f045
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c61339305200acc9a6c572a1a96595dc4cb6f50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323837"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726780"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 現在のモジュールのシンボルを読み込みます。
@@ -38,12 +38,12 @@ int LoadSymbols();
 ```
 
 ## <a name="return-value"></a>戻り値
- 返します、メソッドが成功したかどうかは`S_OK`します。 失敗した場合、エラー コードを返します。
+ メソッドが成功した場合は `S_OK` を返します。 失敗した場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、現在の検索パスからシンボルを読み込みます (呼び出すことによって変更できますが、 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)メソッド)。
+ このメソッドは、現在の検索パスからシンボルを読み込みます ([これは SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)メソッドを呼び出すことによって変更できます)。
 
- このメソッドより優先、 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)メソッド。
+ この方法は[、ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)メソッドよりも優先されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

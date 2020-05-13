@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983595"
 ---
 # <a name="understanding-build-configurations"></a>ビルド構成について
@@ -28,7 +28,7 @@ ms.locfileid: "74983595"
 
 構成の詳細については、James Montemagno の [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) の動画をご覧ください。
 
-## <a name="run-configuration"></a>構成の実行
+## <a name="run-configuration"></a>実行構成
 
 以前のバージョンの Xamarin Studio では、**スタートアップ プロジェクト**としてプロジェクトを設定するオプションを選択できました。これは、グローバルの実行/デバッグ コマンドの利用時に実行/デバッグされるプロジェクトです。 これは、プロジェクト パッドでプロジェクト名に対して太字で示されていました。
 
@@ -67,6 +67,6 @@ Android プロジェクトの実行構成では、プロジェクトの実行時
   * モード (グランス、通知)
   * 通知ペイロード
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ビルド構成について (Windows の Visual Studio)](/visualstudio/ide/understanding-build-configurations)

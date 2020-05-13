@@ -7,10 +7,10 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691295"
 ---
 # <a name="refactoring"></a>リファクタリング
@@ -23,7 +23,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ## <a name="renaming"></a>名前の変更
 
-コード識別子 (クラス名やプロパティ名など) で *[名前の変更]* リファクタリング コマンドを使用して、その識別子のすべての出現箇所を検索し、変更することができます。 シンボルの名前を変更するには、次のように、そのシンボルを右クリックし、 **[名前の変更...]** を選択するか、**Cmd (⌘) + R** キー バインドを使用します。
+コード識別子 (クラス名やプロパティ名など) で *[名前の変更]* リファクタリング コマンドを使用して、その識別子のすべての出現箇所を検索し、変更することができます。 シンボルの名前を変更するには、次のように、そのシンボルを右クリックし、 **[名前の変更]** を選択するか、**Cmd (⌘) + R** キー バインドを使用します。
 
 ![[名前の変更] メニュー項目](media/refactoring-renaming1.png)
 
@@ -47,7 +47,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 いずれの言語でも、サードパーティは、たとえば SDK の一部として、カスタマイズした診断や提案を表示できます。Visual Studio はそれらの規則に基づいて電球マークを表示します。
 
 ### <a name="quick-action-icons"></a>クイック アクション アイコン
-クイック アクションが使用可能なときに表示されるアイコンは、使用可能な解決策またはリファクタリングの種類を示します。 *ねじ回し*![ねじ回しアイコン](media/quick-actions-screwdriver-icon.png) アイコンは、コードを変更するのに使用可能なアクションがあることを示すだけで、必ずしもそれらを使用する必要はありません。 *黄色の電球* ![電球アイコン](media/quick-actions-light-bulb-icon.png) アイコンは、コードを改善するために実行する*必要がある*使用可能なアクションがあることを示します。 *エラー電球* ![エラー電球アイコン](media/quick-actions-error-light-bulb-icon.png) アイコンは、コード内のエラーを修正するために使用可能なアクションがあることを示します。
+クイック アクションが使用可能なときに表示されるアイコンは、使用可能な解決策またはリファクタリングの種類を示します。 *ねじ回し* ![ねじ回しアイコン](media/quick-actions-screwdriver-icon.png) アイコンは、コードを変更するのに使用可能なアクションがあることを示すだけで、必ずしもそれらを使用する必要はありません。 *黄色の電球* ![電球アイコン](media/quick-actions-light-bulb-icon.png) アイコンは、コードを改善するために実行する*必要がある*使用可能なアクションがあることを示します。 *エラー電球* ![エラー電球アイコン](media/quick-actions-error-light-bulb-icon.png) アイコンは、コード内のエラーを修正するために使用可能なアクションがあることを示します。
 
 ### <a name="to-see-a-light-bulb-or-screwdriver"></a>電球やねじ回しを表示するには
 
@@ -65,7 +65,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ![Option + Enter キーを使用した場合のコンテキスト項目](media/refactoring-image2a.png)
 
-これらのオプションを有効にするには、オプションの **[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]** の順に移動して、 *[開いているファイルのソース解析を有効にする]* を選択する必要があります
+これらのオプションを有効にするには、オプションの *[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]* の順に移動して、 **[開いているファイルのソース解析を有効にする]** を選択する必要があります
 
 ![ソース解析の有効化](media/refactoring-options.png)
 
@@ -93,7 +93,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイック アクション (Windows 上の Visual Studio)](/visualstudio/ide/quick-actions)
 - [コードのリファクタリング (Windows 上の Visual Studio)](/visualstudio/ide/refactoring-in-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::SetBytes |Microsoft Docs
+title: オブジェクトを設定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e7b3fd72285f6a6c9c4abeca4e6b262d981be8f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dede3ee5291afbfbeab4d6e60dcbd56e205e4526
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331549"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725503"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-一連の連続するバイトを指す値を設定します。
+連続する一連のバイトから指す値を設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,22 +47,22 @@ int SetBytes(
 
 ## <a name="parameters"></a>パラメーター
 `dwStart`\
-[in]指すオブジェクトの先頭からのバイト単位のオフセット。
+[in]指すオブジェクトの先頭からのオフセット (バイト単位)。
 
 `dwCount`\
 [in]設定するバイト数。
 
 `pBytes`\
-[in]新しい値を表すバイトの配列。 この値は、指定されたオフセットから始まる、オブジェクトに格納されます。
+[in]新しい値を表すバイト配列。 この値は、指定されたオフセットからオブジェクトに格納されます。
 
 `pdwBytes`\
-[out]実際のバイト数の設定を返します。
+[アウト]実際に設定されたバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 場合、このメソッドが使用されるこれによって表されるポインター [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)プリミティブ型またはプリミティブ型 (つまり、単純なバイト シーケンスで表すことができる配列) の単純な配列を指します。 これは、`IDebugPointerObject`オブジェクトが null 参照 (メモリ内のアドレスを指している必要があります) にすることはできません。
+ このメソッドは、この[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)で表されるポインターが、プリミティブ型またはプリミティブ型の単純な配列 (つまり、バイトシーケンスで表すことができる配列) を指している場合に使用されます。 この`IDebugPointerObject`オブジェクトは null 参照にできません (メモリ内のアドレスを指している必要があります)。
 
 ## <a name="see-also"></a>関連項目
 - [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)

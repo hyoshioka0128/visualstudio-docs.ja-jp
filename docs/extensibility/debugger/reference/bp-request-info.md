@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO |Microsoft Docs
+title: BP_REQUEST_INFO |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25967fa5ddc6f827435c03c2883eacb522c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353004"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737890"
 ---
-# <a name="bprequestinfo"></a>BP_REQUEST_INFO
-ブレークポイントを実装するために必要な情報が含まれています。
+# <a name="bp_request_info"></a>BP_REQUEST_INFO
+ブレークポイントの実装に必要な情報を格納します。
 
 ## <a name="syntax"></a>構文
 
@@ -59,46 +59,46 @@ public struct BP_REQUEST_INFO {
 
 ## <a name="members"></a>メンバー
 `dwFields`\
-フラグの組み合わせ、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)フィールドが記入を指定する列挙体。
+入力するフィールドを指定する[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列挙体のフラグの組み合わせ。
 
 `guidLanguage`\
-言語の GUID。
+言語の GUID です。
 
 `bpLocation`\
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)ブレークポイントの場所の種類を指定する構造体。
+ブレークポイントの場所の種類を指定する[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造体。
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)ブレークポイントが発生したアプリケーションを表すオブジェクト。
+ブレークポイントが発生するアプリケーションを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクト。
 
 `bstrProgramName`\
-ブレークポイントが発生したアプリケーションの名前。
+ブレークポイントが発生するアプリケーションの名前。
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ブレークポイントが発生したスレッドを表すオブジェクト。
+ブレークポイントが発生するスレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。
 
 `bstrThreadName`\
-ブレークポイントが発生したスレッドの名前。
+ブレークポイントが発生するスレッドの名前。
 
 `bpCondition`\
-[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)ブレークポイントが発生する条件を記述する構造体。
+ブレークポイントが発生する条件を記述する[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)構造体。
 
 `bpPassCount`\
-[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)ブレークポイントのパスの行数の情報を含む構造体。
+ブレークポイントのパス カウント情報を含む[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)構造体。
 
 `dwFlags`\
-フラグの組み合わせ、 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)要求されたブレークポイントのフラグを指定する列挙体。
+要求されたブレークポイントのフラグを指定する[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列挙体のフラグの組み合わせ。
 
 ## <a name="remarks"></a>Remarks
-この構造体がによって返される、 [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)メソッド。
+この構造体は[、GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)メソッドによって返されます。
 
-デバッグ エンジン ベンダーの GUID を取得する必要がある場合、ブレークポイント制約またはトレース ポイントを参照してください、 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
+デバッグ エンジンのベンダー GUID、ブレークポイント制約またはトレース ポイントを取得する必要がある場合は[、BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)の構造を参照してください。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

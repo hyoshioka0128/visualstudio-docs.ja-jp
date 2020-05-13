@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72652474"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio で収集したシステムによって生成されたログ
@@ -70,7 +70,7 @@ Visual Studio では、クラッシュ、ハング、UI の無応答、CPU ま�
 
 収集するデータの目的とそのアクセスとリテンション期間の制約を考えた場合、Visual Studio および Windows の既定のプライバシー設定を使用することお勧めします。 ただし、Visual Studio エクスペリエンス向上プログラムへの参加は[オプトアウト](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out)することができます。 すべてのプログラムのシステムによって生成されたログの収集をオプトアウトするには、「[Windows 10 の診断、フィードバック、プライバシー](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)」を参照してください。 オプションは、ご使用の Windows のバージョンによって異なる場合があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio カスタマー エクスペリエンス向上プログラム](visual-studio-experience-improvement-program.md)
 - [Windows 10 の診断、フィードバック、プライバシー](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

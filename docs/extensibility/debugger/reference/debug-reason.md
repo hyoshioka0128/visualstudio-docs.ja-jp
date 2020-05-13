@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Microsoft Docs
+title: DEBUG_REASON |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346164"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737424"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
-デバッグ プロセスを起動した理由を指定します。
+# <a name="debug_reason"></a>DEBUG_REASON
+デバッグのためにプロセスが起動された理由を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -50,29 +50,29 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>フィールド
 `DEBUG_REASON_ERROR`\
-特定できないエラーが発生しました (このとして提供される既定の条件を合わせる上の理由から、もう一方のいずれの場合)。
+非特定エラーが発生しました (これは、他の理由のいずれも適合しない場合にデフォルトの条件として使用されます)。
 
 `DEBUG_REASON_USER_LAUNCHED`\
-ユーザーの要求プロセスが開始されました。
+プロセスはユーザーの要求で起動されました。
 
 `DEBUG_REASON_USER_ATTACHED`\
-既に実行中のプロセスは、ユーザーに関連付けられました。
+既に実行されているプロセスは、ユーザーによってアタッチされました。
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-プロセスが起動したときに自動的にアタッチします。
+プロセスは、起動時に自動的にアタッチされました。
 
 `DEBUG_REASON_CAUSALITY`\
-プロセスを起動したために、*ジャスト イン タイム*(JIT) デバッグ イベント。
+このプロセスは、*ジャスト イン タイム*(JIT) デバッグ イベントにより起動されました。
 
 ## <a name="remarks"></a>Remarks
-返される、 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッド。
+[メソッドから](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)返されます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

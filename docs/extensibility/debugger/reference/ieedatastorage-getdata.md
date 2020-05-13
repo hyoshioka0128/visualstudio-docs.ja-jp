@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData |Microsoft Docs
+title: データストレージ::取得データ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319646"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718214"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 オブジェクトから指定したバイト数を取得します。
@@ -45,19 +45,19 @@ int GetData(
 
 ## <a name="parameters"></a>パラメーター
 `dataSize`\
-[in]取得するバイト数 (、`data`配列が、少なくともこのバイト数で保持する必要があります)。
+[in]取得するバイト数 (配列は`data`少なくともこのバイト数を保持する必要があります)。
 
 `sizeGotten`\
-[out]実際に取得するバイト数を返します。
+[アウト]実際に取得されたバイト数を返します。
 
 `data`\
-[入力、出力]要求されたデータと共に格納する配列。
+[イン、アウト]要求されたデータを入力する配列。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドの推奨される使用では、取得するプロセス内のバイトをスキップする方法がないために、ローカル配列にすべてのデータ バイトを取得します。 この場合は、パラメーター`dataSize`値によって返される、 [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)メソッド。
+ このメソッドの推奨用途は、取得プロセスでバイトをスキップする方法がないため、すべてのデータバイトをローカル配列に取得することです。 この場合、パラメーター`dataSize`は[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)メソッドによって返される値である必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
