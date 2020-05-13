@@ -1,4 +1,4 @@
----
+﻿---
 title: 項目用の関数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -102,5 +102,5 @@ MSBuild 4.0 以降、タスクとターゲットのコードは項目用の関�
   -->  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [項目](../msbuild/msbuild-items.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: サポートされてC#いるコード変更 (および Visual Basic) |Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
@@ -32,11 +32,11 @@ ms.locfileid: "72729089"
 
 |言語要素/機能|サポートされている編集操作|制限事項|
 |-|-|-|
-|種類|メソッド、フィールド、コンス トラクター、他を追加します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|種類|メソッド、フィールド、コンス トラクター、他を追加します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Iterators|追加または変更します。|Ｘ|
-|非同期/待機式|追加または変更します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|非同期/待機式|追加または変更します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |動的オブジェクト|追加または変更します。|Ｘ|
-|ラムダ式|追加または変更します。|[はい](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|ラムダ式|追加または変更します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |LINQ 式|追加または変更します。|[ラムダ式と同じ](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]

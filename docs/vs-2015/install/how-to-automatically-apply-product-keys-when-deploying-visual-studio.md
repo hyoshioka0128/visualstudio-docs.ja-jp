@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: Visual Studio 2015 の展開時にプロダクト キーを自動的に適用する | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016

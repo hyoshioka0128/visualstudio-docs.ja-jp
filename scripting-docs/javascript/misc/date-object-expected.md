@@ -1,4 +1,4 @@
----
+﻿---
 title: Date オブジェクトが必要です。 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -23,6 +23,7 @@ ms.locfileid: "72572902"
 ---
 # <a name="date-object-expected"></a>Date オブジェクトが必要です。
 `Date` 型のオブジェクトは **Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドの呼び出しを行うのみです。 この場合の呼び出し元のオブジェクトは、`Date`型である必要があります。 例 :  
+
   
 ```JavaScript  
 var o = new Object;  
@@ -32,7 +33,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- `Date`型のオブジェクトに対して**のみ、メソッドを呼び**出すことができ**ます。**  
+- `Date` 型のオブジェクトは **Date.prototype.toString** メソッドまたは **Date.prototype.valueOf** メソッドの呼び出しを行うのみです。
   
 ## <a name="see-also"></a>参照  
  [Date オブジェクト](../../javascript/reference/date-object-javascript.md)   

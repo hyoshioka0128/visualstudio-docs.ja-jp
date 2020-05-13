@@ -1,4 +1,4 @@
----
+﻿---
 title: マルチプロセッサ環境でのログ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -73,6 +73,6 @@ Culture=neutral
   
  `/dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切っています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ビルド ロガー](../msbuild/build-loggers.md)   
  [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)

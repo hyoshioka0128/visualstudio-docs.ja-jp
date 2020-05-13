@@ -1,4 +1,4 @@
----
+﻿---
 title: Import 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -114,6 +114,6 @@ ms.locfileid: "63433549"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
  [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

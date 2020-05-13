@@ -1,4 +1,4 @@
----
+﻿---
 title: MSBuild での複数のプロジェクトの並行ビルド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -72,7 +72,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 </MSBuild>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [複数のプロセッサを使用したプロジェクトのビルド](../msbuild/using-multiple-processors-to-build-projects.md)   
  [マルチプロセッサ対応の logger の記述](../msbuild/writing-multi-processor-aware-loggers.md)   
  [C++ での並列ビルドの調整に関するブログ](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)

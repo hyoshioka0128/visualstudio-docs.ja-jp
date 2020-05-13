@@ -1,4 +1,4 @@
----
+﻿---
 title: 無効な置換関数 argument |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/23/2019
 ms.locfileid: "63443582"
 ---
 # <a name="how-to-add-a-creator-method"></a>方法: Creator メソッドを追加します。
-  Creator メソッドでは、新しいデータがエンティティのデータ ソースを追加します。 クリックすると、ビジネス データ接続 (BDC) サービスはこのメソッドを呼び出して、**新しい項目の**のボタンでは、**リボン**モデルに基づいているリストの。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+  Creator メソッドでは、エンティティのデータ ソースに新しいデータを追加します。ユーザーが モデルに基づくリストの **リボン** で **新しい項目** のボタンをクリックすると、 ビジネス データ接続 (BDC) サービスはこのメソッドを呼び出します。 詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
 
 ### <a name="to-add-a-creator-method"></a>Creator メソッドを追加するには
 

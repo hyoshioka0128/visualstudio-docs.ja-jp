@@ -1,4 +1,4 @@
----
+﻿---
 title: Office アプリケーションおよびプロジェクトの種類で使用できる機能
 ms.date: 02/02/2017
 ms.topic: conceptual

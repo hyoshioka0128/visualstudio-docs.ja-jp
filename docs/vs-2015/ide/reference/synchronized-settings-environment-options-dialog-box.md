@@ -1,5 +1,13 @@
+<<<<<<< HEAD
+﻿---
+title: '[同期された設定] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
+||||||| merged common ancestors
+---
+title: '[同期された設定] ([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
+=======
 ---
 title: '[同期された設定]([オプション] ダイアログ ボックス - [環境]) | Microsoft Docs'
+>>>>>>> 95cd435df36c8b27a694613f660efe2dba78c779
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -21,7 +29,17 @@ ms.locfileid: "72651025"
 # <a name="synchronized-settings-environment-options-dialog-box"></a>[同期された設定]\([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
+<<<<<<< HEAD
+このページを使用して、複数のコンピューター間で設定を同期 (ローミング) するかどうかを指定します。 詳細については、「[同期された設定](../../ide/synchronized-settings-in-visual-studio.md)」を参照してください。  
+  
+## <a name="see-also"></a>関連項目
+||||||| merged common ancestors
+このページを使用して、複数のコンピューター間で設定を同期 (ローミング) するかどうかを指定します。 詳細については、「[同期された設定](../../ide/synchronized-settings-in-visual-studio.md)」を参照してください。  
+  
+## <a name="see-also"></a>関連項目  
+=======
 このページを使用して、複数のコンピューター間で設定を同期 (ローミング) するかどうかを指定します。 詳細については、「[同期された設定](../../ide/synchronized-settings-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+>>>>>>> 95cd435df36c8b27a694613f660efe2dba78c779
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)

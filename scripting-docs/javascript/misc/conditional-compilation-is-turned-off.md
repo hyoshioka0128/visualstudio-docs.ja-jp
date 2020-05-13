@@ -1,4 +1,4 @@
----
+﻿---
 title: 条件付きコンパイルは無効になっています |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

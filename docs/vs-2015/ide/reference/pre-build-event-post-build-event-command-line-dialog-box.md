@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

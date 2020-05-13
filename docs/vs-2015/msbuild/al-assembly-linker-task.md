@@ -1,4 +1,4 @@
----
+﻿---
 title: AL (アセンブリ リンカー) タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -94,6 +94,6 @@ AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に
 </AL>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

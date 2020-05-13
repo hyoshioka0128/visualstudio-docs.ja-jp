@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 項目リストをコンマ区切りで表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -69,6 +69,6 @@ ms.locfileid: "68156630"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [項目](../msbuild/msbuild-items.md)

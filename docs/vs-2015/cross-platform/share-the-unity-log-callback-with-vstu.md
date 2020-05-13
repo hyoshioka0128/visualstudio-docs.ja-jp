@@ -1,4 +1,4 @@
----
+﻿---
 title: Unity のログ コールバックを VSTU と共有する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -47,5 +47,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [例:プロジェクト ファイルの生成](../cross-platform/customize-project-files-created-by-vstu.md)

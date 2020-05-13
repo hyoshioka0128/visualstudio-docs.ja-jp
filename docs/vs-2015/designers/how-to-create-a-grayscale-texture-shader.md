@@ -1,5 +1,13 @@
+<<<<<<< HEAD
+﻿---
+title: '方法: グレースケール テクスチャ シェーダーを作成する |Microsoft Docs'
+||||||| merged common ancestors
+---
+title: '方法: グレースケール テクスチャ シェーダーを作成する |Microsoft Docs'
+=======
 ---
 title: '方法: グレースケールテクスチャシェーダーを作成する |Microsoft Docs'
+>>>>>>> 95cd435df36c8b27a694613f660efe2dba78c779
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -44,6 +52,33 @@ ms.locfileid: "72664512"
    次の図は、完成したシェーダー グラフと、立体に適用されるシェーダーのプレビューを示します。
 
 > [!NOTE]
+<<<<<<< HEAD
+> この図では、平面がプレビューの図形として使用され、テクスチャはシェーダーの効果がわかりやすくなるように指定されています。  
+  
+ ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
+  
+ シェーダーによっては、特定の図形を使用すると、より適切にプレビューできる可能性があります。 シェーダー デザイナーでのシェーダーのプレビューの詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」を参照してください。  
+  
+## <a name="see-also"></a>関連項目
+ [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [方法: シェーダーをエクスポートします。](../designers/how-to-export-a-shader.md)   
+ [イメージ エディター](../designers/image-editor.md)   
+ [シェーダー デザイナー](../designers/shader-designer.md)   
+ [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)
+||||||| merged common ancestors
+> この図では、平面がプレビューの図形として使用され、テクスチャはシェーダーの効果がわかりやすくなるように指定されています。  
+  
+ ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
+  
+ シェーダーによっては、特定の図形を使用すると、より適切にプレビューできる可能性があります。 シェーダー デザイナーでのシェーダーのプレビューの詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」を参照してください。  
+  
+## <a name="see-also"></a>関連項目  
+ [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [方法: シェーダーをエクスポートします。](../designers/how-to-export-a-shader.md)   
+ [イメージ エディター](../designers/image-editor.md)   
+ [シェーダー デザイナー](../designers/shader-designer.md)   
+ [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)
+=======
 > この図では、平面がプレビューの図形として使用され、テクスチャはシェーダーの効果がわかりやすくなるように指定されています。
 
  ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-grayscale-effect.png "数字-グレースケール-効果")
@@ -52,3 +87,4 @@ ms.locfileid: "72664512"
 
 ## <a name="see-also"></a>関連項目
  [方法: シェーダーを3-d モデルに適用すると ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How になります。シェーダーのエクスポート ](../designers/how-to-export-a-shader.md)[イメージエディター](../designers/image-editor.md) [シェーダーデザイナー](../designers/shader-designer.md) [シェーダーデザイナーノード](../designers/shader-designer-nodes.md)
+>>>>>>> 95cd435df36c8b27a694613f660efe2dba78c779

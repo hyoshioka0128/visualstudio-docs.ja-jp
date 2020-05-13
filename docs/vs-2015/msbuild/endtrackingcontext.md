@@ -1,4 +1,4 @@
----
+﻿---
 title: EndTrackingContext | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -41,5 +41,5 @@ HRESULT WINAPI EndTrackingContext();
 ## <a name="requirements"></a>必要条件  
  **ヘッダー:** FileTracker.h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

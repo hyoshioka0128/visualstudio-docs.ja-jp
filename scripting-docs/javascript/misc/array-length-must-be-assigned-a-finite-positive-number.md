@@ -1,4 +1,4 @@
----
+﻿---
 title: 配列の長さには、有限の正の数を指定する必要があります |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

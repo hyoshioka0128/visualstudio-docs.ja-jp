@@ -1,4 +1,4 @@
----
+﻿---
 title: FindUnderPath タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -75,7 +75,7 @@ ms.locfileid: "68149743"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)

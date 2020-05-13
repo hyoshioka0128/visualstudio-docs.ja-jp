@@ -1,4 +1,4 @@
----
+﻿---
 title: 有効桁数が範囲を超えています |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

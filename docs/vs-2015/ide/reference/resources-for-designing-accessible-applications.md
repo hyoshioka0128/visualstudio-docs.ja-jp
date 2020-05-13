@@ -1,4 +1,4 @@
----
+﻿---
 title: ユーザー補助アプリケーションのデザイン リソース | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

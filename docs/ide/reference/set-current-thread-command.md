@@ -1,4 +1,4 @@
----
+﻿---
 title: SetCurrentThread コマンド
 ms.date: 11/04/2016
 ms.topic: reference
@@ -45,4 +45,5 @@ Debug.SetCurrentThread index
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
 - [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+

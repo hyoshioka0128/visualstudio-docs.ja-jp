@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ビルドからファイルを除外する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -125,6 +125,6 @@ ms.locfileid: "67821611"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [方法。ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)

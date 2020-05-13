@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッグ構成とリリース構成を設定する |Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: reference

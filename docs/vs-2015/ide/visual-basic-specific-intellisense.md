@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Basic 固有の IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

@@ -1,4 +1,4 @@
----
+﻿---
 title: Excel:ドキュメント レベルのカスタマイズのプログラミングを開始します。
 ms.date: 02/02/2017
 ms.topic: conceptual

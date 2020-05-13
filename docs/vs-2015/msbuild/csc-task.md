@@ -1,4 +1,4 @@
----
+﻿---
 title: Csc タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -94,6 +94,6 @@ CSC.exe をラップし、実行可能ファイル (.exe ファイル)、ダイ�
     EmitDebugInformation="true" />  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

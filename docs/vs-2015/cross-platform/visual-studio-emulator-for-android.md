@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio Emulator for Android | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -110,6 +110,6 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
   
 - Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

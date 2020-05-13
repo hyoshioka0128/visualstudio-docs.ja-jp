@@ -1,4 +1,4 @@
----
+﻿---
 title: 予期しない量指定子です (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

@@ -1,4 +1,4 @@
----
+﻿---
 title: グラフィックス診断の概要 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
@@ -87,5 +87,5 @@ ms.locfileid: "77557920"
 
  Graphics Analyzer ツールを一緒に使用する方法の詳細については、[例](graphics-diagnostics-examples.md)を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Direct3D 12 グラフィックス](/windows/desktop/direct3d12/direct3d-12-graphics)

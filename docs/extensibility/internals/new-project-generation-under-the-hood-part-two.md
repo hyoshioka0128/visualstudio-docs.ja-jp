@@ -1,5 +1,5 @@
----
-title: '新しいプロジェクト生成: フードの下で、パート2 |マイクロソフトドキュメント'
+﻿﻿---
+title: '新しいプロジェクトの生成: 内部的には、パート 2 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,7 +20,7 @@ ms.locfileid: "80707023"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部、パート 2
 
-[[新しいプロジェクトの生成: フードの下で、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では **、[新しいプロジェクト**] ダイアログ ボックスの設定方法を確認しました。 **Visual C# Windows アプリケーション**を選択し、[**名前**] および [**場所**] テキスト ボックスに入力し、[OK] をクリックしたとします。
+[新規プロジェクトの生成：パート1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) で**新規プロジェク**トのダイアログボックスの表示方法について説明しました。 **Visual C# Windows アプリケーション** を選択し、**名前** と **場所** のテキストボックスに入力し、[OK]をクリックしたと仮定します。
 
 ## <a name="generating-the-solution-files"></a>ソリューション ファイルの生成
  アプリケーション テンプレートを選択すると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]対応する .vstemplate ファイルを解凍して開き、このファイル内の XML コマンドを解釈するテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>関連項目
 
-- [新しいプロジェクトの生成: 内部、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [新しいプロジェクトの生成: 内部的な処理、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

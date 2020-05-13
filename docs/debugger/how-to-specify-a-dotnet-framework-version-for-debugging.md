@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッグ用の .NET Framework バージョンを指定する |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016

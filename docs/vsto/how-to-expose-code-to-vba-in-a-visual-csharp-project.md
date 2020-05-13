@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: コードを VBA に公開するC#プロジェクト'
 ms.custom: seodec18
 ms.date: 02/02/2017

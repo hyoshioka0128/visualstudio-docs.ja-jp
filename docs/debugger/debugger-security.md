@@ -1,5 +1,5 @@
----
-title: デバッガのセキュリティ |マイクロソフトドキュメント
+﻿---
+title: デバッガーのセキュリティ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -81,4 +81,4 @@ ms.locfileid: "80527923"
 - [デバッガの設定と準備](../debugger/debugger-settings-and-preparation.md)
 - [まずデバッガを見てください](../debugger/debugger-feature-tour.md)
 - [セキュリティ警告信頼されていないユーザーによって所有されているプロセスにアタッチすると、危険なことができます。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください。](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [セキュリティ警告: デバッガは信頼できないコマンドを実行する必要があります](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

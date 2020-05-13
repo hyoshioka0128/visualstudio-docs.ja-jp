@@ -1,4 +1,4 @@
----
+﻿---
 title: 追加の MSBuild リソース | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -622,5 +622,6 @@ ms.locfileid: "81445052"
 ## <a name="product-support"></a>製品のサポート  
  他のリソースを参照しても問題が解決しない場合は、[Microsoft ヘルプとサポート](https://support.microsoft.com/)の Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../ide/talk-to-us.md)」をご覧ください。  
   
-## <a name="see-also"></a>参照  
+
+## <a name="see-also"></a>関連項目
  [.NET Framework を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 予約済みの XML 文字をプロジェクト ファイルで使用する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -73,5 +73,5 @@ ms.locfileid: "68178315"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [MSBuild リファレンス](../msbuild/msbuild-reference.md) [MSBuild](msbuild.md)

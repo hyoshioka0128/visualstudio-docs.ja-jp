@@ -1,4 +1,4 @@
----
+﻿---
 title: MSBuild タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -67,7 +67,7 @@ ms.locfileid: "68154810"
 ## <a name="overridden-tasks"></a>オーバーライドされたタスク  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は、複数の場所でタスクを検索します。 最初の検索場所は、.NET Framework ディレクトリに格納されている拡張子が .OverrideTasks であるファイル内です。 これらのファイル内のタスクは、プロジェクト ファイル内のタスクも含め、同じ名前を持つ他のタスクをオーバーライドします。 2 番目の検索場所は、.NET Framework ディレクトリ内の拡張子が .Tasks であるファイル内です。 タスクがこれらの場所のいずれにも見つからない場合は、プロジェクト ファイル内のタスクが使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [タスクの作成](../msbuild/task-writing.md)   
