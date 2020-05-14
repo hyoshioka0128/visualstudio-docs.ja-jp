@@ -7,10 +7,10 @@ ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027263"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app
 ```
 
-`build` のステージは、base からの続きではなく、レジストリ (`aspnet` ではなく `sdk`) からの別の、元のイメージから開始されることがわかります。  `sdk` のイメージにはすべてのビルド ツールがあるため、実行時コンポーネントのみを含む aspnet イメージよりもかなり大きくなります。 別のイメージを使用する理由は、Dockerfile の残りの部分を確認すると明確になります。
+`build` のステージは、base からの続きではなく、レジストリ (`sdk` ではなく `aspnet`) からの別の、元のイメージから開始されることがわかります。  `sdk` のイメージにはすべてのビルド ツールがあるため、実行時コンポーネントのみを含む aspnet イメージよりもかなり大きくなります。 別のイメージを使用する理由は、Dockerfile の残りの部分を確認すると明確になります。
 
 ```
 FROM build AS publish
@@ -82,7 +82,7 @@ Visual Studio によって .NET Framework プロジェクト用 (および Visua
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Visual Studio IDE からソリューションをビルドすると、**出力**ウィンドウに表示されるような出力が表示されます。 Visual Studio でマルチステージ ビルドの最適化が使用されている場合は、**デバッグ**構成をビルドするときに得られる結果が想定どおりでない場合があるため、常に `/p:Configuration=Release` を使用します。 「[デバッグ](#debugging)」を参照してください。
+Visual Studio IDE からソリューションをビルドすると、**出力**ウィンドウに表示されるような出力が表示されます。 Visual Studio でマルチステージ ビルドの最適化が使用されている場合は、`/p:Configuration=Release`デバッグ**構成をビルドするときに得られる結果が想定どおりでない場合があるため、常に**  を使用します。 「[デバッグ](#debugging)」を参照してください。
 
 Docker Compose プロジェクトを使用している場合は、次のコマンドを使用してイメージをビルドします。
 
@@ -148,7 +148,7 @@ ASP.NET Core により、*Https* フォルダー以下のアセンブリ名に�
 
 **[デバッグ]** 構成でビルドする場合、コンテナー化されたプロジェクトのビルド プロセスのパフォーマンス向上に役立つ Visual Studio の最適化がいくつかあります。 コンテナー化されたアプリのビルド プロセスは、Dockerfile に記載されている手順に単に従うほど簡単ではありません。 コンテナーでのビルドは、ローカル コンピューターでのビルドよりもはるかに低速です。  そのため、**デバッグ**構成でビルドすると、Visual Studio によって実際にプロジェクトがローカル コンピューター上にビルドされてから、ボリューム マウントを使用して出力フォルダーがコンテナーに共有されます。 この最適化が有効になっているビルドは、*高速*モードのビルドと呼ばれます。
 
-**高速**モードでは、Visual Studio により、`base` ステージのみをビルドするように Docker に指示する引数を指定して `docker build` が呼び出されます。  Visual Studio では、Dockerfile の内容に関係なく、プロセスの残りの部分が処理されます。 そのため、コンテナー環境をカスタマイズしたり、追加の依存関係をインストールしたりするために Dockerfile を変更する場合は、最初のステージで変更を加える必要があります。  Dockerfile の `build`、`publish`、`final` のいずれかのステージに配置されているカスタム ステップは実行されません。
+**高速**モードでは、Visual Studio により、`docker build` ステージのみをビルドするように Docker に指示する引数を指定して `base` が呼び出されます。  Visual Studio では、Dockerfile の内容に関係なく、プロセスの残りの部分が処理されます。 そのため、コンテナー環境をカスタマイズしたり、追加の依存関係をインストールしたりするために Dockerfile を変更する場合は、最初のステージで変更を加える必要があります。  Dockerfile の `build`、`publish`、`final` のいずれかのステージに配置されているカスタム ステップは実行されません。
 
 このパフォーマンスの最適化は、**デバッグ**構成でビルドする場合にのみ発生します。 **リリース**構成では、Dockerfile で指定されているように、コンテナーでビルドが実行されます。
 
@@ -185,11 +185,11 @@ Visual Studio では、プロジェクトの種類とコンテナーのオペレ
 
 コンテナー エントリ ポイントは、単一コンテナー プロジェクトではなく、docker-compose プロジェクトでのみ変更できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロジェクト ファイルで追加の MSBuild プロパティを設定して、ビルドをさらにカスタマイズする方法について学習します。 [コンテナーのプロジェクトの MSBuild プロパティ](container-msbuild-properties.md)に関するページを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [MSBuild](../msbuild/msbuild.md)
 [Windows の Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

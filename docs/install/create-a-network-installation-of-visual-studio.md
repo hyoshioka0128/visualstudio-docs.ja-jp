@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115377"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759730"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -237,8 +237,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 レイアウトからインストールする場合、インストールされる内容はレイアウトから取得されます。 ただし、レイアウトに含まれないコンポーネントを選択した場合は、インターネットから取得されます。  Visual Studio のセットアップでレイアウトにない内容がダウンロードされないようにするには、`--noWeb` オプションを使用します。 `--noWeb` が使用されていて、インストール対象として選択されている内容がレイアウトにない場合、セットアップは失敗します。
 
+> [!TIP]
+> インターネットに接続されていないコンピューターのオフライン ソースからインストールする場合は、`--noWeb` と `--noUpdateInstaller` の両方のオプションを指定します。 前者では、更新されたワークロードやコンポーネントなどがダウンロードできなくなります。 後者では、インストーラーが Web から自己更新できなくなります。
+
 > [!IMPORTANT]
-> `--noWeb` オプションを使っても、Visual Studio のセットアップで更新プログラムのチェックが行われなくなることはありません。 詳細については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページをご覧ください。
+> `--noWeb` オプションを使っても、インターネットに接続されたコンピューターにセットアップされた Visual Studio で更新プログラムのチェックが行われなくなることはありません。 詳細については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページをご覧ください。
 
 ### <a name="error-codes"></a>エラー コード
 
@@ -280,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 オフライン インストールに問題が発生した場合は、マイクロソフトにお知らせください。 問題報告の最善の方法として、[[問題を報告する]](../ide/how-to-report-a-problem-with-visual-studio.md) ツールを使用できます。 このツールでは、テレメトリとログを送信できます。これを、マイクロソフトは問題の診断と解決に役立てます。
 
-インストール関連の問題については、[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションも用意されています。
+インストール関連の問題については、[**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションも用意されています。
 
 他にも利用可能なサポート オプションがあります。 一覧については、[フィードバック](../ide/feedback-options.md)に関するページをご覧ください。
 
@@ -294,3 +297,4 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)
 - [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
+- [Visual Studio オフライン インストールに必要な証明書をインストールする](install-certificates-for-visual-studio-offline.md)

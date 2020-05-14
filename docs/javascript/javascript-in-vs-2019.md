@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2019 の JavaScript および TypeScript
-ms.date: 03/27/2019
+ms.date: 03/16/2020
 ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888618"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544290"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 の JavaScript および TypeScript
 
@@ -35,10 +35,39 @@ Visual Studio 2019 の JavaScript エクスペリエンスは、TypeScript サ�
 Visual Studio 2019 では、TypeScript のコンパイルをプロジェクトに統合するためのオプションが複数用意されています。
 
 * [TypeScript NuGet パッケージ](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild)。 TypeScript 3.2 以降の NuGet パッケージがプロジェクトにインストールされているときは、対応するバージョンの TypeScript 言語サービスがエディターに読み込まれます。
-* Visual Studio のインストーラーで既定で使用可能な TypeScript SDK、および [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017) からダウンロードされたスタンドアロンの SDK。
 * [TypeScript npm パッケージ](https://www.npmjs.com/package/typescript)。 TypeScript 2.1 以降の npm パッケージがプロジェクトにインストールされているときは、対応するバージョンの TypeScript 言語サービスがエディターに読み込まれます。
+* Visual Studio のインストーラーで既定で使用可能な TypeScript SDK、および [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017) からダウンロードされたスタンドアロンの SDK。
 
-プロジェクトが Visual Studio 2019 で開発されている場合は、TypeScript NuGet および npm パッケージを使用することをお勧めします。これにより、さまざまなプラットフォームや環境の間で移植性が向上します。
+> [!TIP]
+> プロジェクトが Visual Studio 2019 で開発されている場合は、TypeScript NuGet または TypeScript npm パッケージを使用することをお勧めします。これにより、さまざまなプラットフォームや環境の間で移植性が向上します。
+
+NuGet パッケージの一般的な使用方法の 1 つは、.NET Core CLI を使用して TypeScript をコンパイルすることです。 TypeScript SDK インストールからビルド ターゲットをインポートするように、プロジェクト ファイルを手動で編集しない限り、NuGet パッケージが `dotnet build` や `dotnet publish` などの .NET Core CLI コマンドを使用して TypeScript コンパイルを有効にする唯一の方法です。
+
+## <a name="remove-default-imports-aspnet-core-projects"></a>既定のインポートの削除 (ASP.NET Core プロジェクト)
+
+[非 SDK スタイルの形式](https://docs.microsoft.com/nuget/resources/check-project-format)を使用する以前のプロジェクトでは、一部のプロジェクト ファイルの要素を削除する必要がある場合があります。
+
+プロジェクトの MSBuild サポートに NuGet パッケージを使用している場合、プロジェクト ファイルで `Microsoft.TypeScript.Default.props` または `Microsoft.TypeScript.targets` をインポートしないでください。 ファイルは NuGet パッケージによってインポートされるため、個別に含めると、意図しない動作が発生する可能性があります。
+
+1. プロジェクトを右クリックして **[プロジェクトのアンロード]** を選択します。
+
+1. プロジェクトを右クリックし、 **[\<*プロジェクト ファイル名*\> の編集]** を選択します。
+
+   プロジェクト ファイルが開きます。
+
+1. `Microsoft.TypeScript.Default.props` および `Microsoft.TypeScript.targets` への参照を削除します。
+
+   削除するインポートは、次のようになります。
+
+   ```xml
+   <Import
+      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props"
+      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+
+   <Import
+      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets"
+      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+   ```
 
 ## <a name="projects"></a>プロジェクト
 

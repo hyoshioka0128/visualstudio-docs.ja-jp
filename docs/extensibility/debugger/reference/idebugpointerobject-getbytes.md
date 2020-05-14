@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes |Microsoft Docs
+title: オブジェクトを取得します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308866"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725518"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-一連の連続するバイトとして指す値を取得します。
+連続する一連のバイトとして指す値を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>パラメーター
 `dwStart`\
-[in]指すオブジェクトの先頭からのバイト単位のオフセット。
+[in]指すオブジェクトの先頭からのオフセット (バイト単位)。
 
 `dwCount`\
 [in]取得するバイト数。
 
 `pBytes`\
-[入力、出力]一連の連続するバイトの値が入力する配列が指すオブジェクトから指定されたオフセットから開始します。
+[イン、アウト]値を連続したバイトとして格納する配列。
 
 `pdwBytes`\
-[out]実際に取得するバイト数を返します。
+[アウト]実際に取得されたバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 場合、このメソッドが使用されるこれによって表されるポインター [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)プリミティブ型またはプリミティブ型 (つまり、単純なバイト シーケンスで表すことができる配列) の単純な配列を指します。
+ このメソッドは、この[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)で表されるポインターが、プリミティブ型またはプリミティブ型の単純な配列 (つまり、バイトシーケンスで表すことができる配列) を指している場合に使用されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+- [バイト数を設定](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

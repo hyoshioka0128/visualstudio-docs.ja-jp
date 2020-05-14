@@ -19,13 +19,13 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918885"
 ---
-# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>[VC++ プロジェクトの設定] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
+# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>[VC++ プロジェクトの設定][オプション] ダイアログ ボックス - [プロジェクトおよびソリューション]
 
 このダイアログ ボックスを使用すると、ログ、パフォーマンス、サポートするファイルの種類に関連する C++ のビルド設定とプロジェクト設定を定義できます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "68918885"
 
   ビルド ログ ファイルの生成をオンにします。 このオプションを指定すると、プロジェクトの中間ファイル ディレクトリに BuildLog.htm ファイルが生成されます。 新しくビルドを実行するたびに、以前の BuildLog.htm ファイルは上書きされます。
 
- **No**
+ **いいえ**
 
   ビルド ログ ファイルの生成をオフにします。
 
@@ -51,7 +51,7 @@ ms.locfileid: "68918885"
 
 ビルド ログ ファイルに環境変数をリストします。 このオプションを使用すると、C++ プロジェクトのビルド中に、すべての環境変数がビルド ログ ファイルにエコーされます。
 
- **No**
+ **いいえ**
 
 ビルド ログ ファイルから環境変数を除外します。
 
@@ -59,9 +59,9 @@ ms.locfileid: "68918885"
 
  **はい**
 
-  ビルドの時間測定をオンにします。 このオプションをオンにすると、ビルドが完了するまでに要した時間がアウトプット ウィンドウに表示されます。 詳細については、「[[出力] ウィンドウ](../../ide/reference/output-window.md)」を参照してください。
+  ビルドの時間測定をオンにします。 このオプションをオンにすると、ビルドが完了するまでに要した時間がアウトプット ウィンドウに表示されます。 詳細については、「 [[出力ウィンドウ]](../../ide/reference/output-window.md)」を参照してください。
 
- **No**
+ **いいえ**
 
 ビルドの時間測定をオフにします。
 
@@ -97,11 +97,11 @@ C++ の並列コンパイルに使用する CPU コアの最大数を指定し�
 
 Visual Studio がプロジェクト データをキャッシュすることで、次にプロジェクトを開いたときにプロジェクト ファイルから再計算せずにキャッシュされたデータを読み込めるようになります。 キャッシュされたデータを使用すると、プロジェクトの読み込み時間を大幅に短縮できます。
 
-**No**
+**いいえ**
 
 キャッシュされたプロジェクト データを使用しません。 プロジェクトが読み込まれるたびにプロジェクト ファイルを解析します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C/C++ プログラムのビルド](/cpp/build/projects-and-build-systems-cpp)
 - [C/C++ ビルドのリファレンス](/cpp/build/reference/c-cpp-building-reference)

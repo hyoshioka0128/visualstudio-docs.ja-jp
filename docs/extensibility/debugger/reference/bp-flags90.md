@@ -1,27 +1,27 @@
 ---
-title: BP_FLAGS90 |Microsoft Docs
+title: BP_FLAGS90 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c423b8ecf0e4591913be5ef875057a947f42614
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738050"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
-オプションのフラグの有効な値を列挙します。 ブレークポイントを設定するときに、追加情報を指定する省略可能なフラグを使用できます。 この列挙体を拡張、 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列挙体。
+# <a name="bp_flags90"></a>BP_FLAGS90
+オプション フラグの有効な値を列挙します。 オプションのフラグを使用して、ブレークポイントを設定するときに追加情報を指定できます。 この列挙体は[、BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列挙体を拡張します。
 
 ## <a name="syntax"></a>構文
 
@@ -54,23 +54,23 @@ public enum enum_BP_FLAGS90
 
 ## <a name="fields"></a>フィールド
 `BP90_FLAG_NONE`\
-ブレークポイントのフラグを指定しません。
+ブレークポイント フラグを指定しません。
 
 `BP90_FLAG_MAP_DOCPOSITION`\
-デバッグ エンジン (DE) がドキュメントの位置を使用して、ブレークポイントをマップする必要がありますを指定します。 これは、機能は、Active Server Pages (ASP) などのスクリプトを使用したソース ファイルに設定されたブレークポイントにのみ適用されます。
+デバッグ エンジン (DE) ドキュメントの位置を使用してブレークポイントをマップする必要があることを指定します。 これは、スクリプト指向のソース ファイル (アクティブ サーバー ページ (ASP) など) に設定されたブレークポイントにのみ適用されます。
 
 `BP90_FLAG_DONT_STOP`\
-ブレークポイントが、デバッグ エンジンによって処理されることことデバッグ エンジン最終的にはとどまりません。 を指定しますつまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しない必要があります。 このフラグは、トレース ポイントで主に使用する設計されています。
+ブレークポイントをデバッグ エンジンで処理する必要がありますが、デバッグ エンジンは最終的にそこで停止しないように指定します。つまり、[イベント](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)オブジェクトを送信できません。 このフラグは、主にトレース・ポイントで使用するように設計されています。
 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
-ネイティブ デバッグ エンジンによってステップ実行の状態をクリアするかどうかを判断するために使用します。 トレース ポイントは、マクロを実行する場合、BP90_FLAG_DONT_STOP が設定されていないため BP90_FLAG_DONT_STOP とは異なります。
+ステップ実行状態をクリアするかどうかを判断するために、ネイティブデバッグ エンジンによって使用されます。 トレース ポイントがマクロを実行する場合、BP90_FLAG_DONT_STOP設定されないため、BP90_FLAG_DONT_STOPとは異なります。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー:Msdbg90.h
+ヘッダー: Msdbg90.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

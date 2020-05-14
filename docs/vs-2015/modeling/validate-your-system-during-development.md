@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845392"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586270"
 ---
 # <a name="validate-your-system-during-development"></a>開発時のシステムの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Visual Studio を使用すると、ソフトウェアがユーザーの要件と
 
 |**タスク**|**関連するトピック**|
 |---------------|---------------------------|
-|**モデルに一貫性があることを確認します。**<br /><br /> プロジェクトでのモデルの使用方法および解釈方法によっては、いくつかの要素の組み合わせを許可しないようにすると効果的です。 たとえば、必ず [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]に準拠した名前を使用するように UML クラスを制限することができます。 そのような制約は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能で定義できます。|[UML モデルを検証 -   に](../modeling/validate-your-uml-model.md)は<br />[UML モデルの検証制約を定義 -   には](../modeling/define-validation-constraints-for-uml-models.md)|
-|**ソフトウェアがユーザーの要件を満たしているか確認する**:<br /><br /> システムとそのコンポーネントのテストを編成する際に、要件モデルとアーキテクチャ モデルを使用できます。 こうすることで、ユーザーやその他の利害関係者にとって重要な要求をテストしやすくなり、要求が変更された場合にすばやくテストを更新することができます。|[モデルからテストを開発 -   には](../modeling/develop-tests-from-a-model.md)|
-|**ソフトウェアが、意図されたシステム設計に合致した状態を保っているか確認する:**<br /><br /> レイヤー図は、アプリケーションのコンポーネント間の、意図された依存関係を表します。 開発中に、コード内の実際の依存関係が、意図された設計に準拠しているか検証できます。|[コードからレイヤー図を作成 -   に](../modeling/create-layer-diagrams-from-your-code.md)は<br />[レイヤー図を使用してコードを検証 -   に](../modeling/validate-code-with-layer-diagrams.md)は|
+|**モデルが一貫しているか確認する:**<br /><br /> プロジェクトでのモデルの使用方法および解釈方法によっては、いくつかの要素の組み合わせを許可しないようにすると効果的です。 たとえば、必ず [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]に準拠した名前を使用するように UML クラスを制限することができます。 そのような制約は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能で定義できます。|-   [UML モデルの検証](../modeling/validate-your-uml-model.md)<br />-   [UML モデルの検証制約を定義する](../modeling/define-validation-constraints-for-uml-models.md)|
+|**ソフトウェアがユーザーの要件を満たしているか確認する**:<br /><br /> システムとそのコンポーネントのテストを編成する際に、要件モデルとアーキテクチャ モデルを使用できます。 こうすることで、ユーザーやその他の利害関係者にとって重要な要求をテストしやすくなり、要求が変更された場合にすばやくテストを更新することができます。|-   [モデルからのテストの開発](../modeling/develop-tests-from-a-model.md)|
+|**ソフトウェアが、意図されたシステム設計に合致した状態を保っているか確認する:**<br /><br /> レイヤー図は、アプリケーションのコンポーネント間の、意図された依存関係を表します。 開発中に、コード内の実際の依存関係が、意図された設計に準拠しているか検証できます。|-   [コードからレイヤー図を作成する](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [レイヤー図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
-|**カテゴリ**|**Links**|
+|**カテゴリ**|**リンク**|
 |------------------|---------------|
 |**ビデオ**|![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Doug 7: Visual Studio 2010 を使用したコードの理解とシステム設計](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: レイヤー図を使用したアプリケーションの設計](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: レイヤー図を使用してコードを検証する方法](https://msdn.microsoft.com/vstudio/gg501755)|
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**ブログ**|-   [Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**ブログ**|-   [Visual Studio ALM + Team Foundation Server のブログ](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>参照

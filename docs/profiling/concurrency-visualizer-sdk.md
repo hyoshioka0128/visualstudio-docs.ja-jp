@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911193"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK

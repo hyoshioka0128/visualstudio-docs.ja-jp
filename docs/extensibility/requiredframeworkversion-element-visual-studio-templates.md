@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 必要なフレームワークバージョン要素マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744750"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701511"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 要素 (Visual Studio テンプレート)
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>要素を要求します。
 
-テンプレートで必要とされる .NET Framework の最小バージョンを指定します。 **ターゲット フレームワークのバージョン**に表示するドロップダウン、**新しいプロジェクト**ダイアログ。 `RequiredFrameworkVersion`要素では、ドロップダウン リストで使用できる最小値も決定します。
+テンプレートに必要な .NET Framework の最小バージョンを指定します。 これにより、[**新しいプロジェクト**] ダイアログに **[ターゲット フレームワークのバージョン**] ドロップダウンが表示されます。 要素`RequiredFrameworkVersion`は、ドロップダウンで使用可能な最小値も決定します。
 
 > [!IMPORTANT]
-> Visual Studio 2017 バージョン 15.6 では、以降、**ターゲット フレームワーク バージョン**ドロップダウンが表示されているテンプレートのフィルターでは不要になった、**テンプレート**のセクション、 **の新しいプロジェクト**ダイアログ。 代わりに、ドロップダウン リストでは、選択したテンプレートの framework ピッカーとして機能します。
+> Visual Studio 2017 バージョン 15.6 以降、**ターゲット フレームワークバージョン**ドロップダウンは、[**新しいプロジェクト**] ダイアログの **[テンプレート]** セクションに表示されるテンプレートのフィルターではなくなりました。 代わりに、ドロップダウンは選択したテンプレートのフレームワーク ピッカーとして機能します。
 
- \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
+ \<VS テンプレート\<>\<テンプレート データ>必要なフレームワークの>
 
 ## <a name="syntax"></a>構文
 
@@ -38,16 +38,16 @@ ms.locfileid: "66744750"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、いずれかでの表示方法を定義、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、[**新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目の追加**] ダイアログ ボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
@@ -56,11 +56,11 @@ ms.locfileid: "66744750"
 
 ## <a name="remarks"></a>Remarks
 
-`RequiredFrameworkVersion` は、省略可能な要素です。 テンプレートには、特定の最小バージョン (およびそれ以降のバージョンが存在する場合) がサポートしている場合にのみ、この要素を使用して .NET Framework の。 指定した場合、`RequiredFrameworkVersion`要素と、テンプレートは、.NET Framework の特定の最小バージョンをサポートしない、**ターゲット フレームワーク バージョン**が適用されない場合、ドロップダウン リストが表示されます。
+`RequiredFrameworkVersion` は省略可能な要素です。 この要素は、テンプレートが .NET Framework の特定の最小バージョン (およびそれ以降のバージョン) をサポートしている場合にのみ使用します。 要素を`RequiredFrameworkVersion`指定し、テンプレートが .NET Framework の特定の最小バージョンをサポートしていない場合は、適用できないときに **[ターゲット フレームワークのバージョン**] ドロップダウンが表示されます。
 
 ## <a name="example"></a>例
 
-次の例では、標準のメタデータ[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス テンプレートです。
+次の例は、標準[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス テンプレートのメタデータを示しています。
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,10 +80,10 @@ ms.locfileid: "66744750"
 </VSTemplate>
 ```
 
-この例では、テンプレートで必要とされる .NET Framework の最小バージョンで表される`RequiredFrameworkVersion`、3.0 です。 このテンプレートで作成したプロジェクトを対象に .NET Framework のバージョン 3.0 から開始できます。
+この例では、 で表される`RequiredFrameworkVersion`テンプレートで必要な .NET Framework の最小バージョンは 3.0 です。 このテンプレートで作成されたプロジェクトは、3.0 から始まる .NET Framework のバージョンを対象とすることができます。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
-- [フレームワークの概要を対象とします。](../ide/visual-studio-multi-targeting-overview.md)
+- [フレームワーク対象設定機能の概要](../ide/visual-studio-multi-targeting-overview.md)

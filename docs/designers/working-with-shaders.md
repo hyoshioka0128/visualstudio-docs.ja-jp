@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7ccb4f838c702cb1843d5c0f44dd7f54219f27a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589774"
 ---
 # <a name="work-with-shaders"></a>シェーダーを操作する
@@ -35,7 +35,7 @@ DGSL と DGML には互換性があるため、DGML ドキュメントを解析�
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[シェーダー デザイナー](../designers/shader-designer.md)|Visual Studio シェーダー デザイナーを使用してシェーダーを操作する方法について説明します。|
 |[シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)|グラフィックス効果を得るためのシェーダー デザイナー ノードについて説明します。|

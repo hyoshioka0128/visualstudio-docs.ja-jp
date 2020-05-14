@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73715878"
 ---
 # <a name="create-razor-web-apps"></a>Razor Web アプリの作成
@@ -29,7 +29,7 @@ Visual Studio for Mac には、 *.cshtml* ファイルでの IntelliSense や構
 1. **[新しいプロジェクト]** ダイアログ ボックスで、 **[.NET Core]** 、 **[アプリ]** 、 **[Web アプリケーション]** の順に移動し、 **[次へ]** ボタンをクリックします。
 
    ![Razor プロジェクト テンプレート](media/razor-new-project1.png)
-1. お使いの .NET Core ターゲット フレームワークを選択し (バージョン 2.2 以降推奨)、 **[次へ]** を選択します。 自分のプロジェクトの名前を選択し、必要に応じて Git サポートを追加します。 **[作成]** を選択してプロジェクトを作成します。
+1. お使いの .NET Core ターゲット フレームワークを選択し (バージョン 2.2 以降推奨)、 **[次へ]** を選択します。 自分のプロジェクトの名前を選択し、必要に応じて Git サポートを追加します。 **[作成]** を選択して、プロジェクトを作成します。
 
    ![Razor プロジェクト名](media/razor-new-project2.png)
 
@@ -56,7 +56,7 @@ Razor Web アプリには次の構成要素が含まれています。
 
 *launchSettings.json* ファイルには、IIS 設定、アプリケーションの URL、その他の関連する設定が含まれています。
 
-### <a name="app-settings"></a>アプリケーション設定
+### <a name="app-settings"></a>アプリの設定
 
 *appSettings.json* ファイルには、接続文字列などの構成データが含まれています。
 

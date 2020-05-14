@@ -1,5 +1,5 @@
 ---
-title: CustomParameters 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: カスタムパラメーター要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8089e84f5414798fdf6a4707e8bde65e4df5e0a2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350207"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739408"
 ---
-# <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 要素 (Visual Studio テンプレート)
-このウィザードは、パラメーター置換時に、テンプレートのウィザードに渡されるカスタム パラメーターをグループ化します。
+# <a name="customparameters-element-visual-studio-templates"></a>要素
+ウィザードでパラメーターを置換するときにテンプレート ウィザードに渡されるカスタム パラメータをグループ化します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,13 +36,13 @@ ms.locfileid: "66350207"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> カスタム パラメーターの名前と、テンプレートからプロジェクトまたは項目を作成するときに使用する値が含まれています。 `CustomParameter` 要素に 0 個以上の `CustomParameters` 要素があります。|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートからプロジェクトまたは項目を作成するときに使用するカスタム パラメーター名と値を格納します。 `CustomParameter` 要素に 0 個以上の `CustomParameters` 要素があります。|
 
 ### <a name="parent-elements"></a>親要素
 
@@ -53,7 +53,7 @@ ms.locfileid: "66350207"
 ## <a name="remarks"></a>Remarks
 
 ## <a name="example"></a>例
- 次の例では、テンプレートでいくつかのカスタム パラメーターを使用する方法を示します。 次のカスタム パラメーターのすべてのインスタンスを使用してテンプレートからプロジェクトまたは項目を作成するときに`$color1$`と`$color2$`でテンプレート ファイルが置き換えられる`Red`と`Blue`、それぞれします。
+ テンプレートで複数のカスタム パラメータを使用する方法を次の例に示します。 次のカスタム パラメータを使用してテンプレートからプロジェクトまたは項目を作成すると、テンプレート ファイル`$color1$`のすべての`$color2$`インスタンスが、`Red`および`Blue`で置き換えられます。
 
 ```
 <CustomParameters>
@@ -63,6 +63,6 @@ ms.locfileid: "66350207"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [CustomParameter 要素 (Visual Studio テンプレート)](../extensibility/customparameter-element-visual-studio-templates.md)
+- [要素](../extensibility/customparameter-element-visual-studio-templates.md)
 - [テンプレート パラメーター](../ide/template-parameters.md)
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)

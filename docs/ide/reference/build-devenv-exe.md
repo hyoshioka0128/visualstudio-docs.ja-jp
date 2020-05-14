@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595762"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -35,11 +35,11 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  必須です。 ソリューション ファイルの完全パスと名前。
+  必須。 ソリューション ファイルの完全パスと名前。
 
 - *SolnConfigName*
 
-  任意。 *SolutionName* で指定されたソリューションのビルドに使用されるソリューション構成の名前 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
+  任意。 `Debug`SolutionName`Release` で指定されたソリューションのビルドに使用されるソリューション構成の名前 ( *、* など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
 
 - `/Project` *ProjName*
 
@@ -53,7 +53,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 - `/Build` スイッチを指定すると、統合開発環境 (IDE) 内の **[ソリューションのビルド]** メニュー コマンドと同じ機能が実行されます。
 
@@ -67,13 +67,13 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="example"></a>例
 
-次のコマンドでは、`MySolution` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `CSharpWinApp` をビルドします。
+次のコマンドでは、`CSharpWinApp` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `MySolution` をビルドします。
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトとソリューションをビルドおよびクリーンする](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE |Microsoft Docs
+title: REFERENCE_TYPE |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c45457566682e373b879892cfdd26707102ebd5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329279"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713656"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
-参照型を指定します。
+# <a name="reference_type"></a>REFERENCE_TYPE
+参照の種類を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,22 +44,22 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>フィールド
  `REF_TYPE_WEAK`\
- 弱い参照を指定します。 組み合わせて使用できない`REF_TYPE_STRONG`します。
+ 弱参照を指定します。 と`REF_TYPE_STRONG`組み合わせることはできません。
 
  `REF_TYPE_STRONG`\
- 強い参照を指定します。 組み合わせて使用できない`REF_TYPE_WEAK`します。
+ 厳密な参照を指定します。 と`REF_TYPE_WEAK`組み合わせることはできません。
 
 ## <a name="remarks"></a>Remarks
- として使用される、`dwRefType`のメンバー、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。
+ DEBUG_REFERENCE_INFO構造体の`dwRefType`メンバーとして使用[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)されます。
 
- パラメーターとして渡される、 [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)メソッド。
+ メソッドにパラメーターとして渡[されます](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114533"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>テスト ミックスを編集して、ロード テスト シナリオに含める Web ブラウザーの種類を指定する
@@ -81,6 +81,6 @@ ms.locfileid: "76114533"
 
 割合の値を手動で入力する場合は、すべての項目の合計が 100% になるようにしてください。 ミックスを保存するとき、合計が 100% ではない場合、割合の値をそのままで受け入れるか、または戻って調整するかのどちらかを選択するよう要求されます。 そのままで受け入れることを選択した場合は、100% になるよう比例配分されます。  たとえば、項目が 2 つあって、手動でそれぞれ 80% と 40% に設定されている場合、最初の項目は 66.67% (80/120) に、2 番目の項目は 33.33% (40/120) に、それぞれ設定されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)

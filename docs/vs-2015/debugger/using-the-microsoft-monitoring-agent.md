@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1c63b866b35ef9b029364002360d29fa72f2b9b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 490c10f072ba57f27410ecb1cdca681469692de5
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918969"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586716"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
 3. [手順 3.: 記録されたイベントを保存する](#SaveEvents)  
   
-## <a name="SetUpMonitoring"></a> 手順 1.: Microsoft Monitoring Agent を設定する  
+## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a>手順 1: Microsoft Monitoring Agent を設定する  
  Web サーバーでスタンドアロン エージェントを設定して、アプリケーションを変更せずにローカルでの監視を実行します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent のインストール](https://technet.microsoft.com/library/dn465156.aspx)」をご覧ください。  
   
-### <a name="SetUpStandaloneMMA"></a> スタンドアロンのエージェントを設定する  
+### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a>スタンドアロンエージェントを設定する  
   
-1. 以下を確認します。  
+1. 次のことを確認してください。  
   
     - [サポートされているバージョンのインターネット インフォメーション サービス (IIS: Internet Information Services)](https://technet.microsoft.com/library/dn465154.aspx)が Web サーバーによって実行されている。  
   
@@ -68,7 +68,7 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
 ### <a name="q--a"></a>Q & A  
   
-#### <a name="PowerShell2"></a> Q: Windows PowerShell 2.0 を持っている場合はどうすればよいですか。  
+#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a>Q: Windows PowerShell 2.0 を持っている場合はどうすればよいですか。  
  **A:** PowerShell 3.0 を使用することを強くお勧めします。 それ以外の場合は、PowerShell を実行するたびに Microsoft Monitoring Agent の PowerShell コマンドレットをインポートする必要があります。 また、ヘルプのダウンロード可能なコンテンツにはアクセスできません。  
   
 1. 管理者として **Windows PowerShell** または **Windows PowerShell ISE** のコマンド プロンプト ウィンドウを開きます。  
@@ -79,12 +79,12 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
 3. 最新のヘルプ コンテンツを入手するには、[TechNet にアクセスしてください](https://technet.microsoft.com/systemcenter/default) 。  
   
-#### <a name="FullPermissionsITLog"></a> Q: アプリケーション プールへのアクセス許可の設定はどうすればよいですか。  
- **A:** Windows の **icacls** コマンドまたはエクスプローラーを使用します。 例:  
+#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a>Q: アプリケーションプールのアクセス許可を設定操作方法ますか。  
+ **A:** Windows の **icacls** コマンドまたはエクスプローラーを使用します。 次に例を示します。  
   
 - Windows の **icacls** コマンドを使用してアクセス許可を設定するには:  
   
-  - **DefaultAppPool** アプリケーション プールの Web アプリの場合:  
+  - **DefaultAppPool**アプリケーションプールの web アプリの場合:  
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
@@ -92,25 +92,25 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    -または-  
+    または  
   
 - エクスプローラー (またはファイル エクスプローラー) を使用してアクセス許可を設定するには:  
   
   1. IntelliTrace ログ ディレクトリの **[プロパティ]** を開きます。  
   
-  2. **[セキュリティ]** タブで、 **[編集]** 、 **[追加]** を順に選択します。  
+  2. **[セキュリティ]** タブで、 **[編集]**、 **[追加]** を順に選択します。  
   
-  3. **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 表示されない場合は、 **[オブジェクトの種類]** を選択してこれを追加します。  
+  3. **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 存在しない場合は、**オブジェクトの種類**を選択して追加します。  
   
-  4. ローカル コンピューターが **[場所の指定]** ボックスに表示されることを確認します。 表示されない場合は、 **[場所]** を選択してこれを追加します。  
+  4. ローカル コンピューターが **[場所の指定]** ボックスに表示されることを確認します。 存在しない場合は、[**場所**] を選択して変更します。  
   
-  5. **[選択するオブジェクト名を入力してください]** ボックスに、Web アプリまたは SharePoint アプリケーションのアプリケーション プールを追加します。  
+  5. **[選択するオブジェクト名を入力してください**] ボックスに、web アプリまたは SharePoint アプリケーションのアプリケーションプールを追加します。  
   
-  6. **[名前の確認]** を選択して名前を解決します。 **[OK]** をクリックします。  
+  6. **[名前の確認]** を選択して名前を解決します。 **[OK]** を選びます。  
   
   7. アプリケーション プールに**読み取りおよび実行**のアクセス許可があることを確認します。  
   
-## <a name="MonitorEvents"></a> 手順 2.: アプリの監視を開始する  
+## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a>手順 2: アプリの監視を開始する  
  Windows PowerShell の [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) コマンドを使用してアプリの監視を開始します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](https://technet.microsoft.com/library/dn465157.aspx)」をご覧ください。  
   
 1. Web サーバーで、管理者として **Windows PowerShell** または **Windows PowerShell ISE** のコマンド プロンプト ウィンドウを開きます。  
@@ -121,7 +121,7 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
      短い構文を次に示します。  
   
-     **Start-WebApplicationMonitoring** *"\<appName >"* *\<Monitoringmode >* *"\<outputPath >"* *\<UInt32 >* *"\<collectionplan pathandfilename >"*  
+     **Start-webapplicationmonitoring** *"\<appName>"* * \<monitoringmode>* *"\<outputPath>"* * \<UInt32>* *"\<collectionplan pathandfilename>"*  
   
      Web アプリの名前と軽量な **Monitor** モードのみを使用する例を次に示します。  
   
@@ -133,23 +133,23 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
      監視を開始した後、アプリの再起動中に Microsoft Monitoring Agent が一時停止する場合があります。  
   
-     ![MMA の確認を使用して監視を開始する](../debugger/media/ffr-powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")  
+     ![MMA 確認で監視を開始する](../debugger/media/ffr-powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")  
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -または-<br /><br /> **"IIS: \ sites** *\\< IISWebsiteName\>\\< iiswebappname\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 例:<br /><br /> ![IIS web サイトと web アプリへのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
+    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<iiswebappname\>"*<br /><br /> または<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName\> \\<iiswebappname\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 次に例を示します。<br /><br /> ![IIS Web サイトおよび Web アプリケーションのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
     |*\<monitoringMode>*|監視モードを指定します。<br /><br /> <ul><li>**Monitor**: 例外イベントとパフォーマンス イベントについての最小限の情報を記録します。 このモードは既定の収集計画を使用します。</li><li>**Trace**: 指定された収集計画を使用して、関数レベルの情報を記録したり、SharePoint 2010 および SharePoint 2013 アプリケーションを監視したりします。 このモードでは、アプリの実行が遅くなる可能性があります。<br /><br /> <ul><li>[Q: アプリケーション プールへのアクセス許可の設定はどうすればよいですか。](#FullPermissionsITLog)</li><li>[Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。](#Minimizing)</li></ul><br />     この例では、SharePoint サイトでホストされる SharePoint アプリのイベントを記録します。<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Monitoring Agent\Agent\IntelliTraceCollector\ collection_plan" "C:\intellitracelogs)" を開始します。**</li><li>**Custom**: 指定したカスタム収集計画を使用してカスタムの情報を記録します。 監視を開始してから収集計画を編集するときは、監視を再起動する必要があります。</li></ul>|  
     |*"\<outputPath>"*|IntelliTrace ログを格納するディレクトリへの完全パスを指定します。 監視を開始する前にこのディレクトリの作成を確認します。|  
-    |*\<UInt32 >*|IntelliTrace ログの最大サイズを指定します。 IntelliTrace ログの既定の最大サイズは 250 MB です。<br /><br /> ログがこの制限に達すると、エージェントは最も早いエントリを上書きして、さらに多くのエントリのための場所を確保します。 この制限を変更するには、 **-MaximumFileSizeInMegabytes** オプションを使用するか、収集計画の `MaximumLogFileSize` 属性を編集します。|  
-    |*"\<collectionPlanPathAndFileName>"*|完全パスまたは相対パスと収集計画のファイル名を指定します。 この計画は、エージェントの設定を構成する .xml ファイルになっています。<br /><br /> これらの計画はエージェントに含まれており、Web アプリおよび SharePoint アプリケーションを使用します。<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     例外、パフォーマンス イベント、データベース呼び出し、Web サーバー要求などのイベントのみを収集します。<br />-   **collection_plan.ASP.NET.trace.xml**<br />     関数レベル呼び出しと既定の収集計画のすべてのデータを収集します。 この計画は詳細な分析に適していますが、アプリの速度が低下する可能性があります。<br /><br /> これらの計画のローカライズ バージョンは、エージェントのサブフォルダーに格納されています。 また、 [これらの計画をカスタマイズするか、または独自の計画を作成して](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) 、アプリの速度低下を回避できます。 エージェントと同じ安全な場所にカスタム計画を配置します。<br /><br /> [Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。](#Minimizing)|  
+    |*\<UInt32>*|IntelliTrace ログの最大サイズを指定します。 IntelliTrace ログの既定の最大サイズは 250 MB です。<br /><br /> ログがこの制限に達すると、エージェントは最も早いエントリを上書きして、さらに多くのエントリのための場所を確保します。 この制限を変更するには、 **-MaximumFileSizeInMegabytes** オプションを使用するか、収集計画の `MaximumLogFileSize` 属性を編集します。|  
+    |*"\<collectionplan pathandfilename>"*|完全パスまたは相対パスと収集計画のファイル名を指定します。 この計画は、エージェントの設定を構成する .xml ファイルになっています。<br /><br /> これらの計画はエージェントに含まれており、Web アプリおよび SharePoint アプリケーションを使用します。<br /><br /> -   **collection_plan. NET.TCP. .xml**<br />     例外、パフォーマンス イベント、データベース呼び出し、Web サーバー要求などのイベントのみを収集します。<br />-   **collection_plan. NET.TCP. .xml**<br />     関数レベル呼び出しと既定の収集計画のすべてのデータを収集します。 この計画は詳細な分析に適していますが、アプリの速度が低下する可能性があります。<br /><br /> これらの計画のローカライズ バージョンは、エージェントのサブフォルダーに格納されています。 また、 [これらの計画をカスタマイズするか、または独自の計画を作成して](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) 、アプリの速度低下を回避できます。 エージェントと同じ安全な場所にカスタム計画を配置します。<br /><br /> [Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。](#Minimizing)|  
   
-     完全な構文とその他の例の詳細については、 **get-help Start-WebApplicationMonitoring –detailed** コマンドまたは **get-help Start-WebApplicationMonitoring –examples** コマンドを実行します。  
+     完全な構文とその他の例の詳細については、 **Get-help start-WebApplicationMonitoring – detailed**コマンドまたは**Get-help Start-webapplicationmonitoring –例**コマンドを実行してください。  
   
 3. すべての監視対象の Web アプリのステータスを確認するには、 [Get-WebApplicationMonitoringStatus](https://technet.microsoft.com/library/dn472751(v=sc.20).aspx) コマンドを実行します。  
   
 ### <a name="q--a"></a>Q & A  
   
-#### <a name="Minimizing"></a> Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得するにはどうすればよいですか。  
+#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>Q: アプリのパフォーマンスを低下させずにほとんどのデータを取得操作方法  
  **A:** Microsoft Monitoring Agent は、多くのデータを収集することができ、収集を選択したデータと収集方法によってアプリケーションのパフォーマンスに影響を与えます。 アプリのパフォーマンスが低下することなく、ほとんどのデータを取得する方法を次に示します。  
   
 - Web アプリおよび SharePoint アプリケーションの場合、エージェントは、指定されたアプリケーション プールを共有するすべてのアプリのデータを記録します。 そのため、収集を 1 つのアプリのモジュールに制限できるにもかかわらず、同じアプリケーション プールを共有するすべてのアプリの速度が低下する可能性があります。 他のアプリの速度低下を回避するには、それぞれのアプリを専用のアプリケーション プールでホストします。  
@@ -162,7 +162,7 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
    `enabled` 属性がない場合、イベントが有効になります。  
   
-   例:  
+   次に例を示します。  
   
   - Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。  
   
@@ -172,7 +172,7 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
    これにより、メソッド呼び出し情報、およびアプリの開始時と実行時にエージェントが収集するその他のインストルメンテーション データの量が減少します。 このデータによって、デバッグを行い、関数に渡されて、関数呼び出しから返された値を確認しているときにコードのステップ実行ができます。  
   
-  1. 収集計画を開きます。 `<ModuleList>` 要素を検索します。  
+  1. 収集計画を開きます。 `<ModuleList>` 要素を見つけます。  
   
   2. `<ModuleList>`で、 `isExclusionList` 属性を `false`に設定します。  
   
@@ -226,11 +226,11 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
   `Employee` の型には、 `Id`、 `Name`、および `HomeAddress`の各属性が含まれます。 `Employee` の型と `Address` の型との間に、アソシエーション リレーションシップの関係が存在します。  
   
-  ![従業員と住所のリレーションシップ](../debugger/media/employeeaddressrelationship.png "従業員 Addressrelationship")  
+  ![Employee と Address の間の関係](../debugger/media/employeeaddressrelationship.png "従業員 Addressrelationship")  
   
   エージェントは、 `id`メソッドから返された、 `Employee.Id`、 `Employee.Name` 、 `Employee` 、および `AlterEmployee` の各オブジェクトの値を記録します。 ただし、null であるかどうかの情報を除き、 `Address` オブジェクトについての情報は記録しません。 エージェントは、メソッド パラメーターとして記録される時点のパラメーターとしてそれらのローカル変数を他のメソッドが使用する場合を除き、 `AlterEmployee` メソッドのローカル変数に関するデータは記録しません。  
   
-## <a name="SaveEvents"></a> 手順 3.: 記録されたイベントを保存する  
+## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a>手順 3: 記録されたイベントを保存する  
  エラーやパフォーマンス上の問題を見つけた場合は、記録されたイベントを IntelliTrace ログに保存します。 エージェントでは、イベントが記録された場合にのみログが作成されます。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](https://technet.microsoft.com/library/dn465157.aspx)」をご覧ください。  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>記録されたイベントは保存するが、監視は続ける  
@@ -240,28 +240,28 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
 2. [Checkpoint-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472750(v=sc.20).aspx) コマンドを実行して IntelliTrace ログのスナップショットを保存します。  
   
-    **チェックポイント-WebApplicationMonitoring** *"\<IISWebsiteName >\\< iiswebappname\>"*  
+    **チェックポイント-webapplicationmonitoring** *"\<IISWebsiteName \\><iiswebappname\>"*  
   
     \- または  
   
-    **チェックポイント-WebApplicationMonitoring "IIS: \ sites** *\\< IISWebsiteName\>\\< iiswebappname\>"*  
+    **チェックポイント-webapplicationmonitoring "IIS: \ sites** * \\<\> \\ IISWebsiteName<iiswebappname\>"*  
   
-    例:  
+    次に例を示します。  
   
-    **PS C:\\> チェックポイント-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\>チェックポイント-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    -または-  
+    または  
   
     **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-    詳細については、 **get-help Checkpoint-WebApplicationMonitoring –detailed** コマンドまたは **get-help Checkpoint-WebApplicationMonitoring –examples** コマンドを実行します。  
+    詳細については、 **Get-help checkpoint-webapplicationmonitoring – detailed**コマンドまたは**Get-help Checkpoint-webapplicationmonitoring –例**コマンドを実行してください。  
   
 3. セキュリティで保護された共有フォルダーにログをコピーし、Visual Studio Enterprise (Professional Edition や Community Edition ではない) がインストールされているコンピューターからそのログを開きます。  
   
    > [!IMPORTANT]
    > IntelliTrace ログには個人情報や機密情報が含まれる場合があります。したがって、このログを共有するときは注意してください。 これらのログにアクセスできるすべてのユーザーに、そのデータを閲覧するアクセス許可があることを確認してください。 企業のプライバシー ポリシーを確認してください。  
   
-   **次へ:** [Visual Studio Enterprise で記録されたイベントを診断](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)する  
+   **次へ:** [Visual Studio Enterprise で記録されたイベントを診断する](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>記録されたイベントを保存し、監視を停止する  
  特定の問題を再現しながら診断情報を取得する必要がある場合は、次の手順に従います。 これによって、Web サーバー上のすべての Web アプリケーションが再起動されます。  
@@ -270,17 +270,17 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
 2. [Stop-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472753(v=sc.20).aspx) コマンドを実行して、IntelliTrace ログを作成し、特定の Web アプリの監視を停止します。  
   
-    **停止-WebApplicationMonitoring** *"\<IISWebsiteName >\\< iiswebappname\>"*  
+    **停止-webapplicationmonitoring** *"\<IISWebsiteName>\\<iiswebappname\>"*  
   
     \- または  
   
-    **停止-WebApplicationMonitoring "IIS: \ sites** *\\< IISWebsiteName\>\\< iiswebappname\>"*  
+    **停止-webapplicationmonitoring "IIS: \ sites** * \\<IISWebsiteName\> \\<iiswebappname\>"*  
   
     すべての Web アプリの監視を停止するには、次のコマンドを実行します。  
   
     **停止-WebApplicationMonitoring-すべて**  
   
-    例:  
+    次に例を示します。  
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
@@ -288,11 +288,11 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
   
     **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-    詳細については、 **get-help Stop-WebApplicationMonitoring –detailed** コマンドまたは **get-help Stop-WebApplicationMonitoring –examples** コマンドを実行します。  
+    詳細については、 **Get-help stop-webapplicationmonitoring – detailed**コマンドまたは**Get-help Stop-webapplicationmonitoring –例**コマンドを実行してください。  
   
 3. セキュリティで保護された共有フォルダーにログをコピーし、Visual Studio Enterprise がインストールされているコンピューターからそのログを開きます。  
   
-   **次へ:** [Visual Studio Enterprise で記録されたイベントを診断](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)する  
+   **次へ:** [Visual Studio Enterprise で記録されたイベントを診断する](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Q & A  
   
@@ -301,7 +301,7 @@ Visual Studio の最新のドキュメントについては、「 [Microsoft Mon
 #### <a name="blogs"></a>ブログ  
  [Microsoft Monitoring Agent の概要](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent-2/)  
   
- [運用サーバーでの IntelliTrace 収集の最適化](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)  
+ [運用サーバーでの IntelliTrace 収集の最適化](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)  
   
-#### <a name="forums"></a>Forums  
+#### <a name="forums"></a>フォーラム  
  [Visual Studio の診断](https://social.msdn.microsoft.com/Forums/vsdebug)

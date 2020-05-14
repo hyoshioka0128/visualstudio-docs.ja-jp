@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2 |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbf6e2f5c644f340ca2c1ebba1d53fc026b0534b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bfa0f8feff6a53b84a6337e5bea8bdc622e19a20
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322695"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715351"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
-このインターフェイスの列挙[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体。
+このインターフェイスは[、DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体を列挙します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,32 +28,32 @@ ms.locfileid: "66322695"
 IEnumDebugPropertyInfo2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジン (DE) は、特定のプロパティの情報を表すには、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジン (DE) は、特定のプロパティの情報を表すこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)特定のプロパティの子を表す、このインターフェイスを取得します。 呼び出す[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)特定のスタック フレームのプロパティを表す、このインターフェイスを取得します。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出して、特定のプロパティの子を表すこのインターフェイスを取得します。 [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)を呼び出して、特定のスタック フレームのプロパティを表すこのインターフェイスを取得します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IEnumDebugPropertyInfo2`します。
+ 次の表に`IEnumDebugPropertyInfo2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[次へ](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|指定した数を取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列挙体シーケンス内の構造体。|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|指定した数のスキップ[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列挙体シーケンス内の構造体。|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|数を取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列挙子内の構造体。|
+|[次へ](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|列挙体シーケンス内の指定した数の[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体を取得します。|
+|[スキップ](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|列挙体シーケンス内の指定した数の[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体をスキップします。|
+|[リセット](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[複製](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|列挙子の[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体の数を取得します。|
 
 ## <a name="remarks"></a>Remarks
- 一般に、プロパティは、名前、値、アドレス、および種類を含めることができます情報と関連付けられているプロパティのオブジェクトまたはスタック フレームに適切なその他の情報の階層です。 参照してください[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)の詳細。
+ 一般に、プロパティは、名前、値、アドレス、および型、および関連付けられたプロパティ オブジェクトまたはスタック フレームに適切なその他の情報を含むことができる情報の階層です。 詳細については[、IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)を参照してください。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

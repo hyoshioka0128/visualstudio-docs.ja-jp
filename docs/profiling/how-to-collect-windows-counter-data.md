@@ -1,5 +1,5 @@
 ---
-title: '方法: Windows カウンター データを収集する | Microsoft Docs'
+title: '方法 : Windows カウンター データを収集する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776320"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>方法: Windows カウンター データを収集する
@@ -27,7 +27,7 @@ ms.locfileid: "74776320"
 Windows カウンターは、プロファイル中に一定間隔で収集できるシステム パフォーマンス カウンターです。 プロファイリング ツール レポートのマーク ビューでは、データ収集の間隔ごとに **[AutoMark]** のラベルが行に付けられます。 この行には、その間隔でのパフォーマンス カウンター値を示す列が含まれます。 2 個の具体的なマーク間の時間を分析するには、マークを選択して右クリックし、ショートカット メニューの **[フィルター方法]**  >  **[マーク]** を選択します。
 
 > [!NOTE]
-> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 
 ## <a name="to-collect-windows-counter-data"></a>Windows カウンター データを収集するには
 
@@ -47,7 +47,7 @@ Windows カウンターは、プロファイル中に一定間隔で収集でき
 
 8. **[適用]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)

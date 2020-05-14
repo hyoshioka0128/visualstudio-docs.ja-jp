@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569284"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio で Equals および GetHashCode メソッドのオーバーライドを生成する
@@ -22,7 +22,7 @@ ms.locfileid: "75569284"
 
 **概要:** **Equals** メソッドと **GetHashCode** メソッドを生成します。
 
-**条件:** これらのオーバーライドは、メモリ内のオブジェクトの場所ではなく、1 つ以上のフィールドによって比較される型がある場合に生成されます。
+**タイミング:** これらのオーバーライドは、メモリ内のオブジェクトの場所ではなく、1 つ以上のフィールドによって比較される型がある場合に生成されます。
 
 **理由:**
 
@@ -32,7 +32,7 @@ ms.locfileid: "75569284"
 
 - ハッシュ テーブルで型を正しく機能させるには、**GetHashCode** メソッドをオーバーライドします。 詳細については[等値演算子](/dotnet/standard/design-guidelines/equality-operators)のガイドラインをご覧ください。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. 型宣言の行のどこかにカーソルを置きます。
 
@@ -47,7 +47,7 @@ ms.locfileid: "75569284"
 
    - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
 
-   - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](../media/screwdriver-icon.png) アイコンをクリックします。
+   - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](../media/screwdriver-icon.png) アイコンをクリックします。
 
    ![オーバーライド生成のプレビュー](media/overrides-preview-cs.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "75569284"
 
    ![メソッド生成の結果](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード生成](../code-generation-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

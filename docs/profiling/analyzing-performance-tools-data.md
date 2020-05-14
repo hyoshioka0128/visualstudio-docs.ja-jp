@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779832"
 ---
 # <a name="analyze-performance-tools-data"></a>パフォーマンス ツール データの分析
@@ -29,18 +29,18 @@ ms.locfileid: "74779832"
 
 ## <a name="common-tasks"></a>一般的なタスク
 
-|タスク|関連するコンテンツ|
+|タスク|関連コンテンツ|
 |----------|---------------------|
-|**パフォーマンス ルールを使用して、問題をすばやく識別する:** プロファイル ツールのパフォーマンス ルールでは、一般的な問題を識別し、問題が含まれるソース コードに簡単に移動することができます。 詳細なヘルプ トピックで解決策が見つかることがよくあります。|-   [パフォーマンス規則を使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)|
-|**レポート ビューの詳細を理解する:** プロファイル ツールのレポート ビューでは、プロファイル実行のプロセス、スレッド、モジュール、および関数で集計されたパフォーマンス データを提供します。 表示されるデータは、データの収集に使用されたプロファイル方法によって異なります。|-   [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)|
-|**レポート ビューの構成、並べ替え、およびフィルター:** レポートに表示するデータ列の指定と順序付け、レポート行の並べ替え、および指定した時間セグメントのみを含めるようにデータをフィルター処理できます。|-   [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)|
+|**パフォーマンス ルールを使用して、問題をすばやく識別する:** プロファイリング ツールのパフォーマンス ルールは、一般的な問題を識別し、問題が含まれるソース コードに簡単に移動することができます。 詳細なヘルプ トピックで解決策が見つかることがよくあります。|-   [パフォーマンス規則を使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)|
+|**レポート ビューの詳細を理解する:** プロファイリング ツールのレポート ビューは、プロファイリング実行のプロセス、スレッド、モジュール、および関数に関する集計されたパフォーマンス データを提供します。 表示されるデータは、データの収集に使用されたプロファイル方法によって異なります。|-   [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)|
+|**レポート ビューの構成、並べ替え、およびフィルター:** レポートに表示するデータ列の指定と順序付け、レポート行の並べ替え、および指定した時間セグメントのみを含めるようにデータをフィルター処理することができます。|-   [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)|
 
 ## <a name="related-sections"></a>関連項目
 - [パフォーマンス データ ファイルを比較する](../profiling/comparing-performance-data-files.md)
 
 - [パフォーマンス ツール データの保存とエクスポート](../profiling/saving-and-exporting-performance-tools-data.md)
 
-## <a name="see-also"></a>関連項目
-- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>参照
+- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
 - [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

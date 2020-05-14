@@ -11,25 +11,27 @@ helpviewer_keywords:
 - RequiresFramework35SP1Assembly task [MSBuild]
 - MSBuild, RequiresFramework35SP1Assembly task
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c1e640c3b6f7a285c10b2487f9758520facf11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caefe0887ca23cd4cee60c3a4ba2a6133e9893df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974619"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632772"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly タスク
+
 アプリケーションで .NET Framework 3.5 SP1 が必要であるかどうかを確認します。
 
 ## <a name="parameters"></a>パラメーター
+
  `RequiresFramework35SP1Assembly` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |`Assemblies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> アプリケーションで参照されるアセンブリを指定します。|
 |`CreateDesktopShortcut`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、インストール中にデスクトップにショートカット アイコンを作成します。|
@@ -40,12 +42,14 @@ ms.locfileid: "62974619"
 |`ReferencedAssemblies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> プロジェクトで参照されるアセンブリを指定します。|
 |`RequiresMinimumFramework35SP1`|省略可能な `Boolean` 型の出力パラメーターです。<br /><br /> `true` の場合、アプリケーションで .NET Framework 3.5 SP1 が必要になります。|
 |`SigningManifests`|省略可能な `Boolean` 型の出力パラメーターです。<br /><br /> `true` の場合、ClickOnce マニフェストが署名されます。|
-|`SuiteName`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションがインストールされ、**[スタート]** メニューに表示されるフォルダーの名前を指定します。|
+|`SuiteName`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションがインストールされ、 **[スタート]** メニューに表示されるフォルダーの名前を指定します。|
 |`TargetFrameworkVersion`|省略可能な `String` 型のパラメーターです。<br /><br /> このアプリケーションが対象とする .NET Framework のバージョンを指定します。|
 
 ## <a name="remarks"></a>解説
+
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

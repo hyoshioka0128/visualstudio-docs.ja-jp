@@ -5,45 +5,45 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9405177e193349eeb6e7767b70af0ef82208cc4c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322591"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705305"
 ---
 # <a name="solutions-overview"></a>ソリューションの概要
 
-ソリューションは、連携してアプリケーションを作成する 1 つまたは複数のプロジェクトのグループです。 ソリューションに関連するプロジェクトとステータス情報は、2 つの別のソリューション ファイルに格納されます。 [ソリューション (.sln) ファイル](solution-dot-sln-file.md)がテキスト ベースおよびソース コード管理下に置くし、ユーザーの間で共有できます。 [ソリューション ユーザー オプション (.suo) ファイル](solution-user-options-dot-suo-file.md)はバイナリです。 その結果、.suo ファイルは、ソース コード管理下に置くことはできませんし、ユーザー固有の情報が含まれています。
+ソリューションとは、アプリケーションを作成するために連携して動作する 1 つ以上のプロジェクトのグループです。 ソリューションに関連するプロジェクトと状態の情報は、2 つの異なるソリューション ファイルに格納されます。 [ソリューション (.sln) ファイル](solution-dot-sln-file.md)はテキスト ベースで、ソース コード管理の下に配置し、ユーザー間で共有できます。 [ソリューション ユーザー オプション (.suo) ファイル](solution-user-options-dot-suo-file.md)はバイナリです。 その結果、.suo ファイルはソース コード管理下に置かれなくなり、ユーザー固有の情報が含まれています。
 
-すべての VSPackage は、ソリューション ファイルのいずれかの型を記述できます。 ファイルの性質上、書き込みを禁止するために実装する 2 つの異なるインターフェイスがあります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>インターフェイスが .sln ファイルにテキスト情報を書き込みます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>インターフェイスは、.suo ファイルをバイナリ ストリームを書き込みます。
-
-> [!NOTE]
-> プロジェクトは自身のソリューション ファイルにエントリを明示的に記述する必要はありません。環境では、プロジェクトを処理します。 そのため、ソリューション ファイルを具体的には追加のコンテンツを追加する場合を除き、この方法で、VSPackage を登録する必要はありません。
-
-ソリューションの永続化をサポートしている各 VSPackage が 3 つのインターフェイスを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>インターフェイスは、環境によって実装され、VSPackage によって呼び出されると`IVsPersistSolutionProps`と`IVsPersistSolutionOpts`VSPackage ではいずれも実装します。 `IVsPersistSolutionOpts`のみインターフェイスを秘密情報を VSPackage によって .suo ファイルに書き込まれる場合に実装する必要があります。
-
-ソリューションが開かれたときに、次のプロセスが行われます。
-
-1. 環境では、ソリューションを読み取ります。
-
-2. 環境が検出されると、 `CLSID`、対応する VSPackage が読み込まれます。
-
-3. かどうか、VSPackage が読み込まれる、環境は`QueryInterface`の<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>VSPackage を要求するインターフェイスのインターフェイス。
-
-   - .Sln ファイルから読み取る場合、環境を呼び出す`QueryInterface`の`IVsPersistSolutionProps`します。
-
-   - 環境が呼び出す、.suo ファイルから読み取る場合、`QueryInterface`の`IVsPersistSolutionOpts`します。
-
-   これらのファイルの使用に関連する特定の情報が記載されて[ソリューション (します。Sln) ファイル](../../extensibility/internals/solution-dot-sln-file.md)と[ソリューション ユーザー オプション (します。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。
+どの VSPackage も、どちらの種類のソリューション ファイルにも書き込むことができます。 ファイルの性質上、書き込み用に実装された 2 つの異なるインターフェイスがあります。 インターフェイス<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>はテキスト情報を .sln ファイルに書<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>き込み、インターフェイスはバイナリ ストリームを .suo ファイルに書き込みます。
 
 > [!NOTE]
-> 新しいソリューション構成の 2 つのプロジェクト構成で構成されると、ビルドからの 3 つ目の除外を作成する場合は、プロパティ ページの UI またはオートメーションを使用する必要があります。 ソリューションのビルド マネージャーの構成とそのプロパティを直接変更することはできませんを使用して、ソリューションのビルド マネージャーを操作することができます、 `SolutionBuild` DTE からオートメーション モデルのクラス。 ソリューションを構成する方法の詳細については、次を参照してください。[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。
+> プロジェクトは、ソリューション ファイルに自分自身のエントリを明示的に書き込む必要はありません。環境は、プロジェクトの処理します。 したがって、ソリューション ファイルに特にコンテンツを追加する場合を除き、VSPackage をこの方法で登録する必要はありません。
+
+各 VSPackage サポート ソリューションの永続化は<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>、3 つのインターフェイスを使用します、 インターフェイスは、環境によって実装され`IVsPersistSolutionProps`、VSPackage によって呼び出され、および`IVsPersistSolutionOpts`、両方の VSPackage によって実装されます。 インターフェイス`IVsPersistSolutionOpts`は、VSPackage によってプライベート情報が .suo ファイルに書き込まれる場合にのみ実装する必要があります。
+
+ソリューションを開くと、次のプロセスが実行されます。
+
+1. 環境はソリューションを読み取ります。
+
+2. 環境が見つかった場合`CLSID`、対応する VSPackage が読み込まれます。
+
+3. VSPackage が読み込まれている場合、`QueryInterface`環境<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>は、VSPackage が必要とするインターフェイスのインターフェイスを呼び出します。
+
+   - sln ファイルから読み取るときに、環境`QueryInterface`は. `IVsPersistSolutionProps`
+
+   - suo ファイルから読み取るとき、環境`QueryInterface`は. `IVsPersistSolutionOpts`
+
+   これらのファイルの使用に関する具体的な情報は[、ソリューション (.Sln) ファイル](../../extensibility/internals/solution-dot-sln-file.md)および[ソリューションのユーザー オプション (.Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md).
+
+> [!NOTE]
+> 2 つのプロジェクトの構成で構成され、ビルドから 3 つ目を除外する新しいソリューション構成を作成する場合は、プロパティ ページ UI またはオートメーションを使用する必要があります。 ソリューション ビルド マネージャーの構成とそのプロパティを直接変更することはできませんが、オートメーション モデルの DTE のクラス`SolutionBuild`を使用してソリューション ビルド マネージャーを操作できます。 ソリューションの構成の詳細については、「ソリューションの[構成](../../extensibility/internals/solution-configuration.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

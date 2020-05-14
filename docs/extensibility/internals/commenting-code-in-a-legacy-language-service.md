@@ -1,46 +1,46 @@
 ---
-title: 従来の言語サービスでのコメント コード |Microsoft Docs
+title: レガシ言語サービスでのコードのコメント |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec42d81a2d472cec5f96cbeec416801c22465834
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342047"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709436"
 ---
-# <a name="comment-code-in-a-legacy-language-service"></a>従来の言語サービスでのコメント コード
-プログラミング言語は、通常の注釈を設定するか、コードをコメントするための手段を提供します。 コメントは、コードに関する追加情報を提供しますが、コンパイルまたは解釈中に無視されるテキストのセクションです。
+# <a name="comment-code-in-a-legacy-language-service"></a>レガシ言語サービスのコメント コード
+プログラミング言語は、通常、コードに注釈を付けたりコメントしたりするための手段を提供します。 コメントは、コードに関する追加情報を提供するテキストのセクションですが、コンパイルまたは解釈中に無視されます。
 
- マネージ パッケージ フレームワーク (MPF) クラスは、選択したテキストをコメント化とコメント解除のサポートを提供します。
+ 管理パッケージ フレームワーク (MPF) クラスは、選択したテキストのコメントとコメント解除をサポートします。
 
-## <a name="comment-styles"></a>コメントのスタイル
-コメントの 2 つの一般的なスタイルがあります。
+## <a name="comment-styles"></a>コメントスタイル
+コメントには、一般的なスタイルが 2 つあります。
 
-1. 行のコメントを 1 行にコメントがあります。
+1. コメントが 1 行に含まれます。
 
-2. ブロックのコメント、コメントが複数の行を含めることができます。
+2. コメントをブロックします(コメントには複数行が含まれる場合があります)。
 
-行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、c# の場合は、行のコメントから始まります`//`、ブロックのコメントの始まりと`/*`で終わります`*/`します。
+通常、行のコメントには開始文字 (または文字) が含まれ、ブロック コメントには開始文字と終了文字の両方が含まれます。 たとえば、C# では、行コメントが`//`で始まり、ブロック コメントが`/*`で始`*/`まり、ブロック コメントが で終わります。
 
-ユーザーがコマンドを選択すると**選択範囲のコメント**から、**編集** > **詳細** メニューにコマンドがルーティングされます、<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Source>クラス。 ユーザーがコマンドを選択すると**選択範囲のコメントを解除します**にルーティングは、コマンド、<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>メソッド。
+ユーザーが **[詳細**編集 **]** > メニューから[**コメント選択**]コマンドを選択すると、そのコマンドは<xref:Microsoft.VisualStudio.Package.Source>クラス<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>のメソッドにルーティングされます。 ユーザーが [Select の**コメントを解除]** コマンドを選択すると、<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>コマンドはメソッドにルーティングされます。
 
-## <a name="support-code-comments"></a>コードのコメントをサポートします。
- 言語サービスのサポート コード コメントがあることができます、`EnableCommenting`名前付きのパラメーター、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>します。 これにより設定、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>のプロパティ、<xref:Microsoft.VisualStudio.Package.LanguagePreferences>クラス。 言語サービスの機能を設定する方法についての詳細については、次を参照してください。[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)します。
+## <a name="support-code-comments"></a>サポート コード コメント
+ 言語サービス サポート コードコメントは、 の名前付`EnableCommenting`きパラメーターを使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>して行うことができます。 クラスのプロパティ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>を<xref:Microsoft.VisualStudio.Package.LanguagePreferences>設定します。 言語サービス機能の設定の詳細については、「[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください。
 
- オーバーライドすることも必要があります、<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>を返すメソッドを<xref:Microsoft.VisualStudio.Package.CommentInfo>言語のコメント文字を含む構造体。 C#-行のコメント文字のスタイルは、既定値。
+ また、このメソッドを<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>オーバーライドして、使用<xref:Microsoft.VisualStudio.Package.CommentInfo>している言語のコメント文字を含む構造体を返す必要があります。 C# スタイルの行コメント文字が既定です。
 
 ### <a name="example"></a>例
- 実装例を次に示します、<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>メソッド。
+ メソッドの実装例を次に<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>示します。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -62,5 +62,5 @@ namespace MyLanguagePackage
 ```
 
 ## <a name="see-also"></a>関連項目
-- [従来の言語サービスの機能](../../extensibility/internals/legacy-language-service-features1.md)
-- [従来の言語サービスを登録します。](../../extensibility/internals/registering-a-legacy-language-service1.md)
+- [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)
+- [従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md)

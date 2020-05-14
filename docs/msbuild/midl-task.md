@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592153"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633474"
 ---
 # <a name="midl-task"></a>MIDL タスク
+
 Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Definition Language) コンパイラ ツール (*midl.exe*) をラップします。 詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  **MIDL** タスクのパラメーターの説明を次の表に示します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 - **AdditionalIncludeDirectories**
@@ -45,7 +47,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      インポートされた IDL ファイル、組み込みヘッダー ファイル、アプリケーション構成ファイル (ACF) の検索対象ディレクトリのリストにディレクトリを追加します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/I** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/I](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **AdditionalOptions**
 
@@ -61,7 +63,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、IDL ファイルでいくつかの ACF キーワードを使用できるようになります。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/app_config** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/app_config](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **ClientStubFile**
 
@@ -69,7 +71,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      RPC インターフェイスのクライアント スタブ ファイルの名前を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/cstub** オプションを参照してください。 この表にある **ServerStubFile** パラメーターも参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/cstub](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 この表にある **ServerStubFile** パラメーターも参照してください。
 
 - **CPreprocessOptions**
 
@@ -77,7 +79,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      C/C++ プリプロセッサに渡すオプションを指定します。 スペースで区切られたプリプロセッサ オプションのリストを指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/cpp_opt** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/cpp_opt](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **DefaultCharType**
 
@@ -87,13 +89,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
     |**Ascii**|**/char ascii7**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/char** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/char](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **DllDataFileName**
 
@@ -101,7 +103,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      プロキシ DLL 用に生成される *dlldata* ファイルのファイル名を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/dlldata** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/dlldata](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **EnableErrorChecks**
 
@@ -111,13 +113,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
-    |**None**|**/error none**|
+    |**なし**|**/error none**|
     |**EnableCustom**|**/error**|
-    |**All**|**/error all**|
+    |**すべて**|**/error all**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/error** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/error](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **ErrorCheckAllocations**
 
@@ -125,7 +127,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、メモリ不足のエラーをチェックします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/error allocation** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/error allocation](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **ErrorCheckBounds**
 
@@ -133,7 +135,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、伝送長の指定に対する適合可変配列および可変配列のサイズをチェックします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/error bounds_check** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/error bounds_check](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **ErrorCheckEnumRange**
 
@@ -141,7 +143,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、enum の値が有効範囲内にあるかどうかをチェックします。
 
-     詳細については、*midl.exe* のコマンド ライン ヘルプ ( **/?** ) の **/error enum** オプションを参照してください。
+     詳細については、**midl.exe** のコマンド ライン ヘルプ ( **/?** ) の */error enum* オプションを参照してください。
 
 - **ErrorCheckRefPointers**
 
@@ -149,7 +151,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、null 参照ポインターがクライアント スタブに渡されないかどうかをチェックします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/error ref** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/error ref](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **ErrorCheckStubData**
 
@@ -157,7 +159,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、サーバー側でマーシャリング解除例外をキャッチしてクライアントに伝達するスタブを生成します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/error stub_data** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/error stub_data](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **GenerateClientFiles**
 
@@ -167,12 +169,12 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
-    |**None**|**/client none**|
+    |**なし**|**/client none**|
     |**Stub**|**/client stub**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/client** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/client](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **GenerateServerFiles**
 
@@ -182,12 +184,12 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
-    |**None**|**/server none**|
+    |**なし**|**/server none**|
     |**Stub**|**/server stub**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/server** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/server](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **GenerateStublessProxies**
 
@@ -195,7 +197,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、完全に解釈されたスタブ、およびオブジェクト インターフェイスのスタブレス プロキシを生成します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/Oicf** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/Oicf](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **GenerateTypeLibrary**
 
@@ -203,7 +205,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、タイプ ライブラリ ( *.tlb*) ファイルは生成されません。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/notlb** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/notlb](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **HeaderFileName**
 
@@ -211,7 +213,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      生成されるヘッダー ファイルの名前を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/h** または **/header** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の **/h** または [/header](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **IgnoreStandardIncludePath**
 
@@ -219,7 +221,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、MIDL タスクは **AdditionalIncludeDirectories** スイッチを使用して指定されるディレクトリのみを検索し、現在のディレクトリおよび INCLUDE 環境変数によって指定されたディレクトリを無視します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/no_def_idir** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/no_def_idir](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **InterfaceIdentifierFileName**
 
@@ -227,7 +229,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      COM インターフェイスの *IID ファイル*の名前を指定します。 これは、"_i.c" を IDL ファイル名に追加して取得した既定の名前をオーバーライドします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/iid** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/iid](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **LocaleID**
 
@@ -235,7 +237,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      入力ファイル、ファイル名、ディレクトリ パスで国際文字を使用できるようにする*ロケール識別子*を指定します。 10 進ロケール識別子を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/lcid** オプションを参照してください。 「[Locale identifiers](/windows/desktop/intl/locale-identifiers)」 (ロケール識別子) も参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/lcid](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 「[Locale identifiers](/windows/desktop/intl/locale-identifiers)」 (ロケール識別子) も参照してください。
 
 - **MkTypLibCompatible**
 
@@ -243,7 +245,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、入力ファイルを *mktyplib.exe* バージョン 2.03 と互換性のある形式にしなければならなくなります。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/mktyplib203** オプションを参照してください。 また、MSDN Web サイトの「[ODL File Syntax](/previous-versions/windows/desktop/automat/odl-file-syntax)」 (ODL ファイルの構文) も参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/mktyplib203](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 また、MSDN Web サイトの「[ODL File Syntax](/previous-versions/windows/desktop/automat/odl-file-syntax)」 (ODL ファイルの構文) も参照してください。
 
 - **OutputDirectory**
 
@@ -251,7 +253,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      MIDL タスクによる出力ファイルの作成先となる既定のディレクトリを指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/out** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/out](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **PreprocessorDefinitions**
 
@@ -259,7 +261,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      1 つ以上の*定義*を指定します。これは、`#define` ディレクティブによるかのように C プリプロセッサに渡される名前と省略可能な値です。 各定義の形式は *name[=value]* です。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/D** オプションを参照してください。 この表の **UndefinePreprocessorDefinitions** パラメーターも参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/D](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 この表の **UndefinePreprocessorDefinitions** パラメーターも参照してください。
 
 - **ProxyFileName**
 
@@ -267,7 +269,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      COM インターフェイスのインターフェイス プロキシ ファイルの名前を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/proxy** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/proxy](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **RedirectOutputAndErrors**
 
@@ -275,7 +277,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      エラー メッセージや警告などの出力を、標準出力から指定されたファイルにリダイレクトします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/o** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/o](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **ServerStubFile**
 
@@ -283,9 +285,9 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      RPC インターフェイスのサーバー スタブ ファイルの名前を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/sstub** オプションを参照してください。 この表にある **ClientStubFile** パラメーターも参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/sstub](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 この表にある **ClientStubFile** パラメーターも参照してください。
 
-- **Source**
+- **ソース**
 
      必須の `ITaskItem[]` 型のパラメーターです。
 
@@ -299,7 +301,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
@@ -307,7 +309,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
     |**4**|**/Zp4**|
     |**8**|**/Zp8**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/Zp** オプションを参照してください。 **/Zp** オプションは、 **/pack** オプションおよび以前の **/align** オプションに相当します。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/Zp](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 **/Zp** オプションは、 **/pack** オプションおよび以前の **/align** オプションに相当します。
 
 - **SuppressCompilerWarnings**
 
@@ -315,7 +317,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、MIDL タスクからの警告メッセージを非表示にします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/no_warn** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/no_warn](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **SuppressStartupBanner**
 
@@ -323,7 +325,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/nologo** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/nologo](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **TargetEnvironment**
 
@@ -333,14 +335,14 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
     |**Itanium**|**/env ia64**|
     |**X64**|**/env x64**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/env** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/env](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **TrackerLogDirectory**
 
@@ -356,12 +358,12 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/newtlb** オプションおよび **/oldtlb** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の **/newtlb** オプションおよび [/oldtlb](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **TypeLibraryName**
 
@@ -369,7 +371,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      タイプ ライブラリ ファイルの名前を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/tlb** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/tlb](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **UndefinePreprocessorDefinitions**
 
@@ -377,7 +379,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `#undefine` ディレクティブによるかのように名前を C プリプロセッサに渡すことにより、名前の以前の定義をすべて削除します。 以前に定義された 1 つ以上の名前を指定します。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/U** オプションを参照してください。 この表の **PreprocessorDefinitions** パラメーターも参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/U](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 この表の **PreprocessorDefinitions** パラメーターも参照してください。
 
 - **ValidateAllParameters**
 
@@ -385,7 +387,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、実行時に整合性チェックを実行するために使用されるエラー チェックの追加情報を生成します。 `false` の場合、エラー チェック情報は生成されません。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/robust** オプションおよび **/no_robust** オプションを参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の **/robust** オプションおよび [/no_robust](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。
 
 - **WarnAsError**
 
@@ -395,7 +397,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      **WarningLevel** MIDL タスク パラメーターが指定されていない場合、既定レベルであるレベル 1 の警告はエラーとして扱われます。
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/WX** オプションを参照してください。 この表にある **WarningLevel** パラメーターも参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/WX](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 この表にある **WarningLevel** パラメーターも参照してください。
 
 - **WarningLevel**
 
@@ -405,7 +407,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |[値]|コマンド ライン オプション|
+    |値|コマンド ライン オプション|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|
@@ -413,7 +415,8 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
     |**3**|**/W3**|
     |**4**|**/W4**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/W** オプションを参照してください。 この表にある **WarnAsError** パラメーターも参照してください。
+     詳細については、「**MIDL Command-Line Reference**」 (MIDL コマンド ライン リファレンス) の [/W](/windows/desktop/Midl/midl-command-line-reference) オプションを参照してください。 この表にある **WarnAsError** パラメーターも参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

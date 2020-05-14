@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565878"
 ---
 # <a name="shell-command"></a>Shell コマンド
@@ -37,7 +37,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>引数
 `path`
 
-必須です。 実行するファイルまたは開くドキュメントのパスとファイル名。 指定したファイルが、PATH 環境変数のディレクトリのいずれにもない場合は、完全パスが必要です。
+必須。 実行するファイルまたは開くドキュメントのパスとファイル名。 指定したファイルが、PATH 環境変数のディレクトリのいずれにもない場合は、完全パスが必要です。
 
 `args`
 
@@ -56,7 +56,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
 任意。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 /dir、/o、/c の各スイッチは、`Tools.Shell` の直後に指定する必要があります。 実行可能ファイルの名前の後に指定した内容は、その実行可能ファイルにコマンド ライン引数として渡されます。
 
 定義済みの `Shell` エイリアスは、`Tools.Shell` の代わりに使用できます。
@@ -84,10 +84,10 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
-- [[出力] ウィンドウ](../../ide/reference/output-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [出力ウィンドウ](../../ide/reference/output-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

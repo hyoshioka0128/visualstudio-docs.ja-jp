@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b905b0de69110f5f7cd684deb6fe6c5955bb4b0c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777404"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: プロセスに割り当てられた平均プライベート バイト数がプロファイリングされています
@@ -26,8 +26,8 @@ ms.locfileid: "74777404"
 |-|-|
 |規則 ID|DA0505|
 |カテゴリ|リソース管理|
-|プロファイル方法|すべて|
-|メッセージ|この情報は、情報提供のためにのみ収集されました。 Process Private Bytes カウンターは、プロファイリングを行っているプロセスによって割り当てられた仮想メモリを測定します。 報告される値は、全測定期間を通じて計算された平均値です。|
+|プロファイル方法|All|
+|[メッセージ]|この情報は、情報提供のためにのみ収集されました。 Process Private Bytes カウンターは、プロファイリングを行っているプロセスによって割り当てられた仮想メモリを測定します。 報告される値は、全測定期間を通じて計算された平均値です。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

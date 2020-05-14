@@ -2,17 +2,17 @@
 title: IntelliSense の C++ プロジェクトを構成する
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748592"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279316"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -76,7 +76,7 @@ Visual Studio では、この問題を明示する 2 つの一般的な方法が
 
 IntelliSense コンパイラが、インクルード パスとプリプロセッサ マクロを含む正しいコンパイラ オプションを使用しているかどうかを確認するには、IntelliSense コマンド ラインの診断ログ ( **[ツール] > [オプション] > [テキスト エディター] > [C/C++] > [詳細設定]> [診断ログ]** ) をオンにします。 **[ログの有効化]** を True、 **[ログ レベル]** を 5 (最も詳細)、 **[ログ フィルター]** を 8 (IntelliSense ログ) に設定します。
 
-出力ウィンドウに、IntelliSense コンパイラに渡されるコマンドラインが表示されます。 次に出力例を示します。
+出力ウィンドウに、IntelliSense コンパイラに渡されるコマンドラインが表示されます。 出力例を次に示します。
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32
@@ -120,6 +120,6 @@ Visual Studio to investigate.
 
 環境変数 TRACEDESIGNTIME の詳細については、[Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors)と[共通プロジェクト システム](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)に関するページを参照してください。 これらの記事の情報は、C++ プロジェクトに関連します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

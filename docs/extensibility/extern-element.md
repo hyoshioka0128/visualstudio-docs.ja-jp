@@ -1,5 +1,5 @@
 ---
-title: Extern 要素 |Microsoft Docs
+title: エクスタン要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342800"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711484"
 ---
-# <a name="extern-element"></a>Extern 要素
-Extern 要素を参照して、外部のヘッダー ( *.h*) とマージするファイル、 *.vsct*コンパイル時にファイル。 VSCT コンパイラに指定されたかによって参照されるインクルード パスにファイルをマージする必要があります、 [Include 要素](../extensibility/include-element.md)します。 その他のファイルがある *.vsct*ファイルまたは C++ ヘッダー ファイル。
+# <a name="extern-element"></a>エクスタン要素
+Extern 要素は、コンパイル時に *.vsct*ファイルとマージする外部ヘッダー (*.h*) ファイルを参照します。 マージするファイルは、VSCT コンパイラに指定されたインクルード パス、または[Include 要素](../extensibility/include-element.md)によって参照されるパスに含める必要があります。 ファイルは、他の *.vsct*ファイルまたは C++ ヘッダー ファイルである場合があります。
 
- フォームのヘッダー ファイル内の定義がある必要があります"# [Value] の [記号] define"値は、以前に定義されている場合、別のシンボル可能性があります。 コマンドの項目の条件付きステートメントでは、定義を使用することがあります。 実際に使用される任意のシンボルは破棄されます。
+ ヘッダーファイル内の定義は、"#define[シンボル][値]"の形式でなければなりません。 定義は、コマンド項目の条件ステートメントで使用できます。 実際に使用されていないシンボルは破棄されます。
 
- CommandTable 要素 Extern 要素
+ コマンドテーブル要素エクスターン要素
 
 ## <a name="syntax"></a>構文
 
@@ -41,20 +41,20 @@ Extern 要素を参照して、外部のヘッダー ( *.h*) とマージする�
 |属性|説明|
 |---------------|-----------------|
 |href|必須。 ヘッダー ファイルへのパス:<br /><br /> href="stdidcmd.h"|
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
-|language|省略可能です。 すべての既定の言語[\<文字列 >](../extensibility/strings-element.md)コマンド テーブル内の要素。<br /><br /> language="en-us"|
+|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|language|省略可能。 コマンド テーブル内のすべての[\<文字列>](../extensibility/strings-element.md)要素の既定の言語:<br /><br /> 言語="en-us"|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|なし。|なし。|
+|[なし] :|[なし] :|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[CommandTable 要素](../extensibility/commandtable-element.md)|すべてのコマンドを表す要素の定義: メニュー項目、メニューのツールバー、およびコンボ ボックスは、-、IDE に VSPackage を提供します。|
+|[コマンド テーブル要素](../extensibility/commandtable-element.md)|コマンドを表す要素 、つまり、メニュー項目、メニュー、ツールバー、およびコンボ ボックスを表す、VSPackage が IDE に提供するすべての要素を定義します。|
 
 ## <a name="example"></a>例
 
@@ -70,5 +70,5 @@ Extern 要素を参照して、外部のヘッダー ( *.h*) とマージする�
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VSPackages がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

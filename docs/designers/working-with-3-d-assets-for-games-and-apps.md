@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589800"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>ゲームとアプリ用の 3D アセットを操作する
@@ -54,7 +54,7 @@ Visual Studio では、DirectX を使用して 2D アセットおよび 3D ア�
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[テクスチャおよびイメージの使用](../designers/working-with-textures-and-images.md)|Visual Studio を使用してイメージとテクスチャを操作する方法について説明します。|
 |[3D モデルの操作](../designers/working-with-3-d-models.md)|Visual Studio を使用して 3D モデルを操作する方法について説明します。|

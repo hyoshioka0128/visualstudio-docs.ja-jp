@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN |Microsoft Docs
+title: オプトネームチェンジプフン |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6107f48f4680cef9cbb825f4d760f3f0bac1ec1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336237"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702247"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-呼び出しで指定されたコールバック関数は、この、 [SccSetOption](../extensibility/sccsetoption-function.md) (オプションを使用して`SCC_OPT_NAMECHANGEPFN`) によるソース管理プラグイン、IDE に名前変更を通知するために使用します。
+これは[、SccSetOption](../extensibility/sccsetoption-function.md) (オプション`SCC_OPT_NAMECHANGEPFN`を使用) の呼び出しで指定されたコールバック関数で、ソース管理プラグインによって行われた名前の変更を IDE に伝えるために使用されます。
 
 ## <a name="signature"></a>署名
 
@@ -33,25 +33,25 @@ typedef void (*OPTNAMECHANGEPFN)(
 ```
 
 ## <a name="parameters"></a>パラメーター
- pvCallerData
+ 呼び出し元データ
 
-[in]以前の呼び出しで指定されたユーザーの値、 [SccSetOption](../extensibility/sccsetoption-function.md) (オプションを使用して`SCC_OPT_USERDATA`)。
+[in][SccSetOption](../extensibility/sccsetoption-function.md) (オプション`SCC_OPT_USERDATA`を使用して) の前の呼び出しで指定されたユーザー値。
 
- pszOldName
+ 名前
 
 [in]ファイルの元の名前。
 
- pszNewName
+ 名前を変更します。
 
 [in]ファイルの名前が変更されました。
 
 ## <a name="return-value"></a>戻り値
- なし。
+ [なし] :
 
 ## <a name="remarks"></a>Remarks
- ソース管理操作中に、ファイルの名前を変更する場合、ソース管理プラグインはこのコールバックから名前の変更について、IDE に通知できます。
+ ソース管理操作中にファイルの名前が変更された場合、ソース管理プラグインはこのコールバックを通じて名前の変更を IDE に通知できます。
 
- 呼び出しがない IDE がこのコールバックをサポートしていない場合、 [SccSetOption](../extensibility/sccsetoption-function.md)を指定します。 かどうか、プラグインをサポートしていないこのコールバックが返されます`SCC_E_OPNOTSUPPORTED`から、 `SccSetOption` IDE がコールバックを設定しようとしたときに機能します。
+ IDE がこのコールバックをサポートしていない場合、それを指定するために[SccSetOption を](../extensibility/sccsetoption-function.md)呼び出しません。 プラグインがこのコールバックをサポートしていない場合、IDE がコールバックを`SCC_E_OPNOTSUPPORTED``SccSetOption`設定しようとすると、関数から返されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)

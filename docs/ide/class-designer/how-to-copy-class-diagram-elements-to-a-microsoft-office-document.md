@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592244"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする
@@ -40,7 +40,7 @@ ms.locfileid: "75592244"
 
 **[イメージのコピー]** の代わりに **[コピー]** を選択することもできます。 **[コピー]** は、イメージを通常のビットマップとしてコピーします。 **[イメージのコピー]** は、イメージをベクター ベースのイメージとしてコピーするので、ほとんどの Office アプリケーションにとってはこちらが向いています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: クラス ダイアグラムを印刷する](how-to-print-class-diagrams.md)
 - [方法: クラス ダイアグラムをイメージとしてエクスポートする](how-to-export-class-diagrams-as-images.md)

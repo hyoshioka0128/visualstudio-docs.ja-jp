@@ -1,25 +1,25 @@
 ---
-title: 要素の定義 |Microsoft Docs
+title: 要素を定義する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d82bd5050955f69e23c71569a13ac1a5d428aef2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348145"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712269"
 ---
-# <a name="define-element"></a>要素を定義します。
-シンボルの名前と値のペアを定義します。 このシンボルは、条件付き属性によって評価されることができます。 詳細については、次を参照してください。[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。 参照してください、 [Symbols 要素](../extensibility/symbols-element.md)します。
+# <a name="define-element"></a>要素の定義
+シンボル名と値のペアを定義します。 このシンボルは、条件属性によって評価できます。 詳細については、「[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。 [「シンボル」要素](../extensibility/symbols-element.md)も参照してください。
 
 ## <a name="syntax"></a>構文
 
@@ -34,18 +34,18 @@ ms.locfileid: "66348145"
 
 |属性|説明|
 |---------------|-----------------|
-|name|必須。 シンボルの名前。<br /><br /> 名前 =「モード」|
-|値|必須。 シンボルの値です。<br /><br /> 値 ="Standard"|
-|条件|任意。 詳細については、次を参照してください。[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+|name|必須。 シンボルの名前:<br /><br /> 名前="モード"|
+|value|必須。 シンボルの値:<br /><br /> 値="標準"|
+|条件|省略可能。 詳細については、「[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[CommandTable 要素](../extensibility/commandtable-element.md)|統合開発環境 (IDE) には、VSPackage を提供するコマンドを表すすべての要素を定義します。 たとえば、メニュー項目、メニューのツールバー、およびコンボ ボックス。|
+|[コマンド テーブル要素](../extensibility/commandtable-element.md)|統合開発環境 (IDE) に VSPackage が提供するコマンドを表すすべての要素を定義します。 たとえば、メニュー項目、メニュー、ツールバー、コンボ ボックスなどです。|
 
 ## <a name="example"></a>例
 

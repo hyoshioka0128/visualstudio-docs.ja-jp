@@ -2,7 +2,7 @@
 # [新機能](whats-new-in-subscriptions.md)
 # サブスクリプション
 ## サブスクリプションの購入
-### [販売](https://visualstudio.microsoft.com/vs/pricing)
+### [販売](buy-activate-retail.md)
 ### クラウド 
 #### [概要](vscloud-overview.md)
 #### [請求に関する FAQ](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [MPN のサブスクリプションを管理する](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## サインイン 
-### [リテール サブスクリプションのアクティブ化](activate-store-subscriptions.md)
 ### [Microsoft アカウントでサインイン](sign-in-msa.md)
 ### [職場/学校アカウントでサインイン](sign-in-work.md)
 ### [GitHub を使用したサインイン](sign-in-github.md)
@@ -28,17 +27,19 @@
 #### [Azure DevTest の個人クレジット](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest の従量課金制](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST の強調表示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
-#### [Microsoft 365](vs-m365.md)
-#### [Office 365 サブスクリプション](vs-office365.md)
+#### [Microsoft 365 開発者](vs-m365.md)
+#### [Office 365 Pro Plus](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Visual Studio IDE](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Windows 開発者アカウント](vs-windows-dev.md)
+#### [Windows Virtual Desktop](vs-windows-virtual-desktop.md)
 ### プロフェッショナルな開発
 #### [CODE マガジン](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -73,10 +74,10 @@
 ### [スーパー管理者と管理者](admin-roles.md)
 ### [契約の基本設定を設定する](admin-prefs.md)
 ### [概要](using-admin-portal.md)
-### [ビデオ チュートリアル:管理ポータルの使用](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### サブスクリプションを割り当てる
 #### [1 人のユーザーを追加する](assign-license.md)
 #### [複数のユーザーを追加する](assign-license-bulk.md)
+#### [特定のサブスクリプションの割り当て](assign-guid.md)
 ### [サブスクリプションの編集](edit-license.md)
 ### [サブスクリプションの削除](delete-license.md)
 ### [サブスクリプションを検索する](search-license.md)

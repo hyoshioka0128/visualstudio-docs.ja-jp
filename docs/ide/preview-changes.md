@@ -10,10 +10,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585770"
 ---
 # <a name="preview-changes-window"></a>[変更のプレビュー] ウィンドウ
@@ -28,7 +28,7 @@ Visual Studio でさまざまな*クイック アクション* ツールまた�
 
 変更内容を確認したら、 **[適用]** ボタンをクリックして該当する変更をコミットするか、 **[キャンセル]** をクリックして元のままにしておきます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのリファクタリング](../ide/refactoring-in-visual-studio.md)
 - [クイック アクション](../ide/quick-actions.md)

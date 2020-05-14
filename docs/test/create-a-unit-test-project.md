@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565254"
 ---
 # <a name="create-a-unit-test-project"></a>単体テスト プロジェクトを作成する
@@ -55,7 +55,7 @@ ms.locfileid: "75565254"
 
    テストするコードが別の場所にある場合は、「[プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のいずれかのセクションを参照してください。
 

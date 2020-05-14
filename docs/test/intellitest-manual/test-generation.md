@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591555"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306981"
 ---
 # <a name="test-generation"></a>テスト生成
 
@@ -55,7 +55,7 @@ IntelliTest がオブジェクトを構築する必要がある場合、必要�
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>パラメーター化された単体テスト
 
-*パラメーター化された単体テスト* (PUT) は、パラメーターを受け取るテストです。 通常は排他的な手法である従来の単体テストとは異なり、PUT はあらゆるパラメーター セットを受け取ります。 そんなに簡単なのでしょうか。 はい。次に IntelliTest は、テストから到達できるコードを[完全にカバー](input-generation.md#dynamic-code-coverage)する [(最小の) 入力セットを生成](input-generation.md)します。
+*パラメーター化された単体テスト* (PUT) は、パラメーターを受け取るテストです。 通常は排他的な手法である従来の単体テストとは異なり、PUT はあらゆるパラメーター セットを受け取ります。 そんなに簡単なのでしょうか。 はい。次に IntelliTest は、テストから到達できるコードを[完全にカバー](input-generation.md)する [(最小の) 入力セットを生成](input-generation.md#dynamic-code-coverage)します。
 
 PUT は、MSTest (または NUnit、xUnit) と同様に、[PexMethod](attribute-glossary.md#pexmethod) カスタム属性を利用して定義されます。 PUT は、[PexClass](attribute-glossary.md#pexclass) でタグ付けされるクラスで論理的にグループ化されるインスタンス メソッドです。 次は **MyPexTest** クラスに保存されている単純な PUT の例です。
 
@@ -240,6 +240,6 @@ namespace MyTests
 * [テストとコードのバインディング](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [1 回のテストですべてのルールを指定する](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

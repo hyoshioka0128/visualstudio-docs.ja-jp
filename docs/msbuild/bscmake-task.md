@@ -20,30 +20,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0c95c37e24f8c51453a849159073baff8dca0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634514"
 ---
 # <a name="bscmake-task"></a>BscMake タスク
+
 > [!IMPORTANT]
 > Visual Studio IDE では、BscMake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、*ソリューション* フォルダーの *sdf* ファイルに自動的に格納されます。
 
- Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。  *bscmake.exe* ツールは、コンパイル時に作成されるソース ブラウザー ファイル ( *.sbr*) からブラウザー情報ファイル ( *.bsc*) をビルドします。 *.bsc* ファイルを表示するには、**オブジェクト ブラウザー**を使用します。 詳細については、「[BSCMAKE リファレンス](/cpp/build/reference/bscmake-reference)」を参照してください。
+ Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。  *bscmake.exe* ツールは、コンパイル時に作成されるソース ブラウザー ファイル ( *.sbr*) からブラウザー情報ファイル ( *.bsc*) をビルドします。 **.bsc** ファイルを表示するには、*オブジェクト ブラウザー*を使用します。 詳細については、「[BSCMAKE リファレンス](/cpp/build/reference/bscmake-reference)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  **BscMake** タスクのパラメーターの説明を次の表に示します。 タスク パラメーターの大部分は、コマンド ライン オプションに対応します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**AdditionalOptions**|省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ラインで指定するオプションのリストです。 例: /\<option1> /\<option2> /\<option#> 他の **BscMake** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、「[BSCMAKE オプション](/cpp/build/reference/bscmake-options)」でオプションの説明を参照してください。|
-|**OutputFile**|省略可能な **String** 型のパラメーターです。<br /><br /> 既定の出力ファイル名をオーバーライドするファイル名を指定します。<br /><br /> 詳細については、「[BSCMAKE オプション](/cpp/build/reference/bscmake-options)」で **/o** オプションの説明を参照してください。|
-|**PreserveSBR**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、ノンインクリメンタル ビルドを強制的に実行します。 フル ノンインクリメンタル ビルドは *.bsc* ファイルが存在するかどうかに関係なく実行され、 *.sbr* ファイルの切り詰めは行われません。<br /><br /> 詳細については、「[BSCMAKE オプション](/cpp/build/reference/bscmake-options)」で **/n** オプションの説明を参照してください。|
+|**OutputFile**|省略可能な **String** 型のパラメーターです。<br /><br /> 既定の出力ファイル名をオーバーライドするファイル名を指定します。<br /><br /> 詳細については、「**BSCMAKE オプション**」で [/o](/cpp/build/reference/bscmake-options) オプションの説明を参照してください。|
+|**PreserveSBR**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、ノンインクリメンタル ビルドを強制的に実行します。 フル ノンインクリメンタル ビルドは *.bsc* ファイルが存在するかどうかに関係なく実行され、 *.sbr* ファイルの切り詰めは行われません。<br /><br /> 詳細については、「**BSCMAKE オプション**」で [/n](/cpp/build/reference/bscmake-options) オプションの説明を参照してください。|
 |**Sources**|省略可能な **ITaskItem[]** パラメーターです。<br /><br /> タスクで使用および生成できる MSBuild ソース ファイル アイテムの配列を定義します。|
-|**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「[BSCMAKE オプション](/cpp/build/reference/bscmake-options)」で **/NOLOGO** オプションの説明を参照してください。|
+|**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「**BSCMAKE オプション**」で [/NOLOGO](/cpp/build/reference/bscmake-options) オプションの説明を参照してください。|
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

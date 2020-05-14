@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773982"
 ---
 # <a name="lines-view"></a>行ビュー
@@ -31,7 +31,7 @@ ms.locfileid: "74773982"
 
  ステートメントは、次の項目によって識別されます。
 
-- function ステートメントを含むソース ファイル。
+- 関数のステートメントを含むソース ファイル。
 
 - ステートメントを含む関数。
 
@@ -43,7 +43,7 @@ ms.locfileid: "74773982"
 
 - ステートメントが終了するソース行の文字。
 
-## <a name="see-also"></a>関連項目
-- [行 ビュー](../profiling/lines-view-sampling-data.md)
+## <a name="see-also"></a>参照
+- [行ビュー](../profiling/lines-view-sampling-data.md)
 - [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [行 ビュー](../profiling/lines-view-contention-data.md)
+- [行ビュー](../profiling/lines-view-contention-data.md)

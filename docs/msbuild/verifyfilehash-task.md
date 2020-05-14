@@ -10,21 +10,21 @@ dev_langs:
 helpviewer_keywords:
 - VerifyFileHash task [MSBuild]
 - MSBuild, VerifyFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481974"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77579529"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash タスク
 
-ファイルが予想されるファイル ハッシュと一致することを確認します。
+ファイルが予想されるファイル ハッシュと一致することを確認します。 ハッシュが一致しない場合、タスクは失敗します。
 
 このタスクは 15.8 で追加されましたが、16.0 より前の MSBuild バージョンで使用するには[回避策](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272)が必要です。
 
@@ -32,7 +32,7 @@ ms.locfileid: "71481974"
 
  `VerifyFileHash` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |`File`|必須の `String` 型のパラメーターです。<br /><br />ハッシュ値を計算し、検証するファイル。|
 |`Hash`|必須の `String` 型のパラメーターです。<br /><br />予想されるファイル ハッシュ。|
@@ -61,7 +61,31 @@ ms.locfileid: "71481974"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+MSBuild 16.5 以降では、ハッシュが一致しないときにビルドが失敗しないようにする場合 (たとえば、制御フローの条件としてハッシュ比較を使用している場合)、次のコードを使用して警告をメッセージにダウングレードできます。
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
+```
+
+## <a name="see-also"></a>参照
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

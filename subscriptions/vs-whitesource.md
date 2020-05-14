@@ -1,17 +1,18 @@
 ---
 title: WhiteSource Bolt 特典 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 01/06/2020
+ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: d00d210e6bbe859aac5595fcb0d586bccbeea5b3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649745"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -60,14 +61,14 @@ ms.locfileid: "76114324"
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest の個人クレジット](vs-azure.md)
-
-## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](/visualstudio/)
-- [Azure DevOps ドキュメント](/azure/devops/)
-- [Azure ドキュメント](/azure/)
-- [Microsoft 365 ドキュメント](/microsoft-365/)

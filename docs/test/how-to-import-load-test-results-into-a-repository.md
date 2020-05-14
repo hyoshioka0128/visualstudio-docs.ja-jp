@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbc8c352c7bf3cda0524f07aa82b6ccbe70602b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589033"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>方法: ロード テスト結果をリポジトリにインポートする
@@ -44,7 +44,7 @@ ms.locfileid: "75589033"
 
 5. **[ファイル名]** ボックスにアーカイブ テスト結果ファイルの名前を入力し、 **[開く]** を選択します。
 
-     \- または
+     \- - または -
 
      ファイルを参照し、 **[開く]** を選択します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589033"
 
      結果がインポートされ、 **[ロード テストの結果]** 一覧に表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果リポジトリ内のロード テスト結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

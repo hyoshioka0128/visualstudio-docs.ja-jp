@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957866"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>手順 5: Django でユーザーを認証する
 
 **前の手順:[Django Web プロジェクト テンプレートを使用する](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-認証は Web アプリ共通のニーズであるため、"Django Web プロジェクト" テンプレートには基本認証フローが含まれています  (このチュートリアルの手順 6. で説明する "ポーリング Django Web プロジェクト" テンプレートにも、同じフローが含まれています)。いずれかの Django プロジェクト テンプレートを使用する場合、Visual Studio には Django プロジェクトの *settings.py* での認証に必要なすべてのモジュールが含まれています。
+認証は Web アプリ共通のニーズであるため、"Django Web プロジェクト" テンプレートには基本認証フローが含まれています (このチュートリアルの手順 6. で説明する "ポーリング Django Web プロジェクト" テンプレートにも、同じフローが含まれています)。いずれかの Django プロジェクト テンプレートを使用する場合、Visual Studio には Django プロジェクトの *settings.py* での認証に必要なすべてのモジュールが含まれています。
 
 この手順では、次のことを学習します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "62957866"
 
 1. プロジェクトのルートにある *readme.html* ファイルの指示に従ってスーパー ユーザー (管理者) アカウントをまだ作成していない場合は、すぐに作成します。
 
-1. **[デバッグ]** > **[デバッグの開始]** (**F5** キー) を使用して、Visual Studio からアプリを実行します。 ブラウザーにアプリが表示されたら、ナビゲーション バーの右上に **[ログイン]** が表示されていることを確認します。
+1. **[デバッグ]**  >  **[デバッグの開始]** (**F5** キー) を使用して、Visual Studio からアプリを実行します。 ブラウザーにアプリが表示されたら、ナビゲーション バーの右上に **[ログイン]** が表示されていることを確認します。
 
     ![Django Web プロジェクトのアプリ ページ上にある login コントロール](media/django/step05-login-control.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "62957866"
 
 1. 特に、ス―パー ユーザーまたは管理者は、相対 URL "/admin/" および "/admin/doc/" を使用して、組み込みの Django 管理者インターフェイスにアクセスします。 これらのインターフェイスを有効にするには、次の手順を実行します。
 
-    1. 環境に docutils Python パッケージをインストールします。 そのためには、*requirements.txt* ファイルに "docutils" を追加し、**ソリューション エクスプローラー**でプロジェクトを展開し、**[Python 環境]** ノードを選択してから、使用している環境を右クリックして **[requirements.txt からインストール]** を選択することをお勧めします。
+    1. 環境に docutils Python パッケージをインストールします。 そのためには、*requirements.txt* ファイルに "docutils" を追加し、**ソリューション エクスプローラー**でプロジェクトを展開し、 **[Python 環境]** ノードを選択してから、使用している環境を右クリックして **[requirements.txt からインストール]** を選択することをお勧めします。
 
     1. Django プロジェクトの *urls.py* を開き、次のエントリから既定のコメントを削除します。
 
@@ -177,7 +177,7 @@ ms.locfileid: "62957866"
 
         ![Django 管理者インターフェイス](media/django/step05-administrator-interface.png)
 
-1. 認証フローの最後の部分は、ログオフです。 *loginpartial.html* でわかるように、**[Log off]** リンクは単純に相対 URL "/login" に対する POST を実行します。これは、組み込みのビュー `django.contrib.auth.views.logout` によって処理されます。 このビューには UI が表示されず、ホーム ページへの移動のみを行います (*urls.py* の "^logout$" パターンで確認できます)。 ログオフ ページを表示する場合は、最初に、次のように URL パターンを変更して、"template_name" プロパティを追加し "next_page" プロパティを削除します。
+1. 認証フローの最後の部分は、ログオフです。 *loginpartial.html* でわかるように、 **[Log off]** リンクは単純に相対 URL "/login" に対する POST を実行します。これは、組み込みのビュー `django.contrib.auth.views.logout` によって処理されます。 このビューには UI が表示されず、ホーム ページへの移動のみを行います (*urls.py* の "^logout$" パターンで確認できます)。 ログオフ ページを表示する場合は、最初に、次のように URL パターンを変更して、"template_name" プロパティを追加し "next_page" プロパティを削除します。
 
     ```python
     url(r'^logout$',
@@ -204,7 +204,7 @@ ms.locfileid: "62957866"
 
 1. すべて完了したら、サーバーを停止し、もう一度ソース管理に変更をコミットします。
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>質問:\<form\> 要素に表示される {% csrf_token %} タグの目的は何ですか。
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>質問:\<form\> 要素に表示される {% csrf_token %} タグの目的は何ですか。
 
 回答:`{% csrf_token %}` タグには Django の組み込みの[クロスサイト リクエスト フォージェリ (csrf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs) が含まれています。 このタグは通常、フォームなどの POST、PUT、または DELETE 要求のメソッドに関連する任意の要素に追加します。 その後、テンプレートのレンダリング関数 (`render`) により、必要な保護が挿入されます。
 

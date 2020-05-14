@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985096"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Visual Studio for Mac でのキーボード ナビゲーション
@@ -43,7 +43,7 @@ Visual Studio for Mac には、さまざまなタスク用のキーボード シ
 
 ## <a name="useful-keyboard-shortcuts"></a>便利なキーボード ショートカット
 
-|機能         |説明                                   |ショートカット         |
+|機能         |Description                                   |ショートカット         |
 |----------------|----------------------------------------------|-----------------|
 |UI の移動   |UI 内のすべての要素間を移動します。               |**⇥**、**⇧⇥**    |
 |操作        |現在フォーカスがあるコントロールを選択します。         |**␣**            |

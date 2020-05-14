@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189549"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153026"
 ---
 # <a name="add-tags-to-project-templates"></a>プロジェクト テンプレートにタグを追加する
 
@@ -93,7 +93,7 @@ Visual Studio には、組み込みのタグのリストが用意されていま
 
 Visual Studio で利用できる組み込みのタグの一覧を次に示します。 対応する値をかっこ内に表示します。
 
-| 言語 | プラットフォーム | プロジェクトの種類 |
+| 言語タグ | プラットフォーム タグ | プロジェクト タイプ タグ |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | クラウド (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | コンソール (`console`) |

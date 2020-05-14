@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason |Microsoft Docs
+title: Iデバッグブレークポイントバインドイベント2::GetReason |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b3c15b25ec6f4f2d7ddc56efc163ec2eb6b81c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352832"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734723"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-ブレークポイントがバインドされた理由を取得します。
+ブレークポイントがバインドされなかった理由を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>パラメーター
 `pdwUnboundReason`\
-[out]値を返します、 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)ブレークポイントがバインドされた理由を指定する列挙体。
+[アウト]ブレークポイントがバインドされていない理由を指定する[BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)列挙体から値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-上の理由からには、エディット コンティニュの操作の場合、またはエラーでブレークポイントがバインドされている決定した後、別の場所に再バインドされているブレークポイントが含まれます。
+理由としては、エディット コンティニュ操作後にブレークポイントが別の場所に再バインドされたり、ブレークポイントが誤ってバインドされたことが判断されたりします。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CBreakpointUnboundDebugEventBase**を公開するオブジェクト、 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)インターフェイス。
+インターフェイスを公開する**CBreakpointUnboundDebugEventBase**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)示します。
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

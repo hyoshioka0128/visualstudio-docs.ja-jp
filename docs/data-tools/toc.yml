@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework のツール
       href: entity-data-model-tools-in-visual-studio.md
-    - name: データセット
+    - name: DataSets
       items:
         - name: データセットのツール
           href: dataset-tools-in-visual-studio.md
@@ -34,7 +34,7 @@
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
     - name: n 層データ アプリケーションの概要
       href: n-tier-data-applications-overview.md
-- name: 使い方ガイド
+- name: 操作方法ガイド
   items:
     - name: データベースを作成する
       href: create-a-sql-database-by-using-a-designer.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: データ アクセス エラーをトラブルシューティングする
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: O/R デザイナー (LINQ to SQL)
       items:
@@ -234,7 +234,7 @@
               href: the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md
             - name: 関連付け <association name> を作成できません - プロパティの型が一致しません
               href: cannot-create-an-association-association-name-property-types-do-not-match.md
-            - name: '警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません'
+            - name: '警告。 [動作の構成] ダイアログ ボックスで行った変更が適用されていません'
               href: warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md
             - name: サポートされていないデータベース プロバイダーのデータベース オブジェクトが選択されています
               href: you-have-selected-a-database-object-from-an-unsupported-database-provider.md

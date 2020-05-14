@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule |Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7aaff6ee7b770ce55a2ad08ff3d8f4f392375576
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 408aa2f373ab296394a0181014c16b1697fdf9ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336933"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733934"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-指定されたモジュールで指定された属性を持つクラスを取得します。
+指定したモジュール内の指定された属性を持つクラスを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,19 +49,19 @@ int GetAttributedClassesinModule (
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールを表す一意の識別子です。
 
 `pstrAttribute`\
-[in]属性の文字列。
+[in]属性文字列。
 
 `ppEnum`\
-[out]属性付きクラスの列挙を返します。
+[アウト]属性付きクラスの列挙体を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 相互運用機能アセンブリの使用 |Microsoft Docs
+title: ビジュアル スタジオ相互運用機能アセンブリの使用 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0db6e0e0d5014f09a84316143af40f410bc1b10
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722102"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704133"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio 相互運用機能アセンブリの使用
-Visual Studio 相互運用機能アセンブリを使用すると、マネージアプリケーションは Visual Studio の拡張機能を提供する COM インターフェイスにアクセスできます。 ストレート COM インターフェイスとその相互運用バージョンにはいくつかの違いがあります。 たとえば、Hresult は通常 int 値として表され、例外と同様に処理する必要があり、パラメーター (特に出力パラメーター) は異なる方法で処理する必要があります。
+Visual Studio 相互運用機能アセンブリを使用すると、マネージ アプリケーションから、Visual Studio の機能拡張を提供する COM インターフェイスにアクセスできます。 ストレート COM インターフェイスとそれらの相互運用バージョンには、いくつかの違いがあります。 例えば、HRESULT は一般に int 値として表され、例外と同じ方法で処理する必要があり、パラメーター (特にアウト・パラメーター) は異なる方法で扱われます。
 
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>COM からマネージド コードに返される HRESULT の処理
  マネージド コードから COM インターフェイスを呼び出す場合は、HRESULT 値を確認し、必要な場合に例外をスローします。 渡された HRESULT の値に応じて、<xref:Microsoft.VisualStudio.ErrorHandler> クラスには COM 例外をスローする <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> メソッドが含まれます。
@@ -28,7 +28,7 @@ Visual Studio 相互運用機能アセンブリを使用すると、マネージ
  既定では、<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> は、0 より小さい値を持つ HRESULT を渡されるたびに例外をスローします。 このような HRESULT が許容される値であり、例外をスローする必要がない場合は、値のテスト後に追加 HRESULT の値を <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> に渡す必要があります。 テスト対象の HRESULT が、<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> に明示的に渡される HRESULT 値と一致する場合、例外はスローされません。
 
 > [!NOTE]
-> @No__t_0 クラスには、一般的な HRESULT の定数が含まれています。たとえば、<xref:Microsoft.VisualStudio.VSConstants.S_OK> や <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>、および <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> や <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> などの HRESULT [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] です。 また、<xref:Microsoft.VisualStudio.VSConstants> には、COM の SUCCEEDED および FAILED マクロに対応する <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> および <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> メソッドが用意されています。
+> この<xref:Microsoft.VisualStudio.VSConstants>クラスには、共通の HRESULTS<xref:Microsoft.VisualStudio.VSConstants.S_OK>の定数が含<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>まれています[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA><xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 また、<xref:Microsoft.VisualStudio.VSConstants> には、COM の SUCCEEDED および FAILED マクロに対応する <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> および <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> メソッドが用意されています。
 
  たとえば、<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> が許容可能な戻り値であり、ゼロ未満の他の HRESULT がエラーを表す次の関数呼び出しがあるとします。
 
@@ -48,17 +48,17 @@ Visual Studio 相互運用機能アセンブリを使用すると、マネージ
 > [!NOTE]
 > 例外によって、パフォーマンスが低下します。例外は、異常なプログラムの条件を示すことを目的としています。 頻繁に発生する条件は、スローされた例外ではなく、インラインで処理をする必要があります。
 
-## <a name="iunknown-parameters-passed-as-type-void"></a>型 void * * として渡された IUnknown パラメーター
- COM インターフェイスで `void **` 型として定義されているが、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 相互運用機能アセンブリメソッドプロトタイプで `[``iid_is``]` として定義されている [out] パラメーターを検索します。
+## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown パラメーターは型 void** として渡されます**
+ COM インターフェイスで型`void **`として定義されているが、相互運用アセンブリ メソッドのプロトタイプで定義`[``iid_is``]`されている [out][!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]パラメーターを探します。
 
- 場合によっては、COM インターフェイスによって `IUnknown` オブジェクトが生成され、COM インターフェイスによって型 `void **` として渡されます。 これらのインターフェイスは、変数が IDL で [out] として定義されている場合、`IUnknown` オブジェクトは、`AddRef` メソッドを使用して参照カウントされるため、特に重要です。 オブジェクトが正しく処理されない場合、メモリリークが発生します。
+ 場合によっては、COM インターフェイスがオブジェクト`IUnknown`を生成し、そのオブジェクトを型として渡す場合`void **`があります。 これらのインターフェイスは、変数が IDL で [out] として定義されている場合、`IUnknown`オブジェクトがメソッドで参照カウントされるため、特`AddRef`に重要です。 オブジェクトが正しく処理されない場合、メモリ リークが発生します。
 
 > [!NOTE]
-> COM インターフェイスによって作成され、[out] 変数で返された `IUnknown` オブジェクトは、明示的に解放されていない場合にメモリリークを発生させます。
+> COM`IUnknown`インターフェイスによって作成され、変数 [out] に返されたオブジェクトは、明示的に解放されない場合、メモリ リークを発生させます。
 
- このようなオブジェクトを処理するマネージメソッドでは、<xref:System.IntPtr> を `IUnknown` オブジェクトへのポインターとして扱い、<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> メソッドを呼び出してオブジェクトを取得する必要があります。 その後、呼び出し元は、戻り値を適切な型にキャストする必要があります。 オブジェクトが不要になった場合は、<xref:System.Runtime.InteropServices.Marshal.Release%2A> を呼び出して解放します。
+ このようなオブジェクトを処理するマネージ メソッド<xref:System.IntPtr>は、`IUnknown`オブジェクトへのポインターとして扱い、オブジェクト<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>を取得するメソッドを呼び出す必要があります。 呼び出し元は、適切な型に戻り値をキャストする必要があります。 オブジェクトが不要になったら、オブジェクトを解放するために<xref:System.Runtime.InteropServices.Marshal.Release%2A>呼び出します。
 
- @No__t_0 メソッドを呼び出し、`IUnknown` オブジェクトを正しく処理する例を次に示します。
+ メソッドを呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>オブジェクトを正しく処理`IUnknown`する例を次に示します。
 
 ```
 MyClass myclass;
@@ -85,7 +85,7 @@ else
 ```
 
 > [!NOTE]
-> 次のメソッドは、`IUnknown` オブジェクトポインターを型 <xref:System.IntPtr> として渡すことがわかっています。 このセクションで説明されているように処理します。
+> 次のメソッドは、オブジェクト`IUnknown`ポインタを type<xref:System.IntPtr>として渡すことを知っています。 このセクションで説明されているように、それらを処理します。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
@@ -99,36 +99,36 @@ else
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
-## <a name="optional-out-parameters"></a>省略可能な [out] パラメーター
- COM インターフェイスで [out] データ型 (`int`、`object` など) として定義されているが、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 相互運用機能アセンブリメソッドプロトタイプで同じデータ型の配列として定義されているパラメーターを探します。
+## <a name="optional-out-parameters"></a>オプションの [out] パラメータ
+ COM インターフェイスで [out] データ型 (`int`、`object`など) として定義されているが、相互運用機能アセンブリ メソッド プロトタイプで同じデータ型の配列として定義[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]されているパラメーターを探します。
 
- @No__t_0 などの一部の COM インターフェイスでは、[out] パラメーターは省略可能として扱われます。 オブジェクトが不要な場合、これらの COM インターフェイスは、[out] オブジェクトを作成するのではなく、そのパラメーターの値として `null` ポインターを返します。 これは仕様に基づく制限事項です。 これらのインターフェイスの場合、`null` ポインターは VSPackage の正しい動作の一部と見なされ、エラーは返されません。
+ などの<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>一部の COM インターフェイスでは、[out] パラメータをオプションとして扱います。 オブジェクトが必要ない場合、これらの COM インターフェイスは`null`[out] オブジェクトを作成する代わりに、そのパラメータの値としてポインタを返します。 これは仕様です。 これらのインターフェイスでは、`null`ポインターは VSPackage の正しい動作の一部として想定され、エラーは返されません。
 
- CLR では [out] パラメーターの値を `null` できないため、これらのインターフェイスのデザインされた動作の一部は、マネージコード内で直接使用することはできません。 影響を受けるインターフェイスの相互運用機能アセンブリメソッド [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、CLR が `null` 配列を渡すことができるため、関連するパラメーターを配列として定義することで問題を回避できます。
+ CLR では [out] パラメーターの値を使用できないため`null`、これらのインターフェイスの設計された動作の一部は、マネージ コード内で直接使用できません。 CLR[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]では`null`配列の受け渡しが許可されているため、影響を受けるインターフェイスの相互運用機能アセンブリ メソッドは、関連するパラメーターを配列として定義することで問題を回避します。
 
- これらのメソッドのマネージ実装は、返されるものがない場合に、パラメーターに `null` 配列を配置する必要があります。 それ以外の場合は、正しい型の1つの要素から成る配列を作成し、戻り値を配列に格納します。
+ これらのメソッドのマネージ実装では、返される`null`要素がない場合に、配列をパラメーターに配置する必要があります。 それ以外の場合は、正しい型の 1 つの要素配列を作成し、配列に戻り値を格納します。
 
- 省略可能な [out] パラメーターを使用してインターフェイスから情報を受け取るマネージメソッドは、パラメーターを配列として受け取ります。 配列の最初の要素の値を確認するだけです。 @No__t_0 ない場合は、最初の要素を元のパラメーターとして扱います。
+ オプションの [out] パラメーターを持つインターフェイスから情報を受け取るマネージ メソッドは、パラメーターを配列として受け取ります。 配列の最初の要素の値を調べるだけです。 がなされていない`null`場合は、最初の要素を元のパラメータとして扱います。
 
-## <a name="passing-constants-in-pointer-parameters"></a>ポインターパラメーターでの定数の引き渡し
- COM インターフェイスで [in] ポインターとして定義されているパラメーターを検索しますが、これは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 相互運用機能アセンブリメソッドプロトタイプの <xref:System.IntPtr> 型として定義されています。
+## <a name="passing-constants-in-pointer-parameters"></a>ポインター パラメーターでの定数の引き渡し
+ COM インターフェイスで [in] ポインターとして定義されているが、相互運用機能アセンブリ メソッドプロトタイプで<xref:System.IntPtr>型として定義されている[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]パラメーターを探します。
 
- 同様の問題は、COM インターフェイスがオブジェクトポインターではなく、0、-1、または-2 などの特別な値を渡した場合にも発生します。 @No__t_0 とは異なり、CLR では、定数をオブジェクトとしてキャストすることはできません。 代わりに、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 相互運用機能アセンブリが <xref:System.IntPtr> 型としてパラメーターを定義します。
+ 同様の問題は、COM インターフェイスがオブジェクト ポインタではなく、0、-1、-2 などの特別な値を渡すときに発生します。 と[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]は異なり、CLR では、定数をオブジェクトとしてキャストすることはできません。 代わりに、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]相互運用アセンブリはパラメーターを<xref:System.IntPtr>型として定義します。
 
- これらのメソッドのマネージ実装では、必要に応じて、オブジェクトまたは整数定数から <xref:System.IntPtr> を作成するために、<xref:System.IntPtr> クラスに `int` と `void *` の両方のコンストラクターがあるという事実を活用する必要があります。
+ これらのメソッドのマネージ<xref:System.IntPtr>実装では、クラスに両方のコンストラクタと`int``void *`コンストラクタが含まれ、オブジェクトまたは整数定数<xref:System.IntPtr>から作成される必要があります。
 
- この型の <xref:System.IntPtr> パラメーターを受け取るマネージメソッドでは、<xref:System.IntPtr> 型変換演算子を使用して結果を処理する必要があります。 まず、<xref:System.IntPtr> を `int` に変換し、関連する整数定数に対してテストします。 一致する値がない場合は、必要な型のオブジェクトに変換して続行します。
+ この型のパラメーター<xref:System.IntPtr>を受け取るマネージ<xref:System.IntPtr>メソッドは、結果を処理するために型変換演算子を使用する必要があります。 まずに<xref:System.IntPtr>を`int`変換し、関連する整数定数に対してテストします。 一致する値がない場合は、必要な型のオブジェクトに変換して続行します。
 
- この例については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>」および「<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>」を参照してください。
+ この例については、 および<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>を参照してください。
 
-## <a name="ole-return-values-passed-as-out-parameters"></a>[Out] パラメーターとして渡される OLE 戻り値
- COM インターフェイスに `retval` 戻り値を持ち、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 相互運用機能アセンブリメソッドプロトタイプに戻り値が `int`、追加の [out] 配列パラメーターを持つメソッドを検索します。 @No__t_0 相互運用機能アセンブリメソッドプロトタイプには COM インターフェイスメソッドよりも1つ多くのパラメーターがあるため、これらのメソッドでは特別な処理が必要であることを明確にする必要があります。
+## <a name="ole-return-values-passed-as-out-parameters"></a>[out] パラメータとして渡された OLE 戻り値
+ COM インターフェイスで戻り`retval`値を持つメソッドを検索しますが、相互運用`int`機能アセンブリ メソッドのプロトタイプに戻り値と追加[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の [out] 配列パラメーターがあるメソッド。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]相互運用機能アセンブリ メソッドのプロトタイプには COM インターフェイス メソッドより 1 つ多くのパラメーターがあるため、これらのメソッドには特別な処理が必要であることは明らかです。
 
- OLE アクティビティを処理する多くの COM インターフェイスは、OLE ステータスに関する情報を、インターフェイスの `retval` 戻り値に格納されている呼び出し元のプログラムに送信します。 対応する [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 相互運用機能アセンブリメソッドは、戻り値を使用する代わりに、[out] 配列パラメーターに格納されている呼び出し元のプログラムに情報を送り返します。
+ OLE アクティビティを扱う多くの COM インターフェイスは、インターフェイスの戻り値に格納`retval`されている呼び出し元のプログラムに、OLE ステータスに関する情報を返します。 戻り値を使用する代わりに、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]対応する相互運用アセンブリ メソッドは、情報を [out] 配列パラメーターに格納された呼び出し元のプログラムに返送します。
 
- これらのメソッドのマネージ実装では、[out] パラメーターと同じ型の単一要素配列を作成し、パラメーターに配置する必要があります。 配列要素の値は、適切な COM `retval` と同じである必要があります。
+ これらのメソッドのマネージ実装では、[out] パラメーターと同じ型の単一要素配列を作成し、パラメーターに配置する必要があります。 配列要素の値は、適切な COM`retval`と同じである必要があります。
 
- この型のインターフェイスを呼び出すマネージメソッドは、[out] 配列から最初の要素を取得する必要があります。 この要素は、対応する COM インターフェイスから `retval` の戻り値であるかのように処理できます。
+ この型のインターフェイスを呼び出すマネージ メソッドは、最初の要素を [out] 配列から引き出す必要があります。 この要素は、対応する COM インターフェイス`retval`からの戻り値として扱うことができます。
 
 ## <a name="see-also"></a>関連項目
 - [アンマネージ コードとの相互運用](/dotnet/framework/interop/index)

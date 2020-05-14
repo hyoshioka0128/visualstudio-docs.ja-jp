@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - GetFileHash task [MSBuild]
 - MSBuild, GetFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977504"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77578652"
 ---
 # <a name="getfilehash-task"></a>GetFileHash タスク
 
@@ -32,7 +32,7 @@ ms.locfileid: "62977504"
 
  `GetFileHash` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br />ハッシュするファイル。|
 |`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 出力パラメーター。<br /><br />`Files` 入力と、ファイル ハッシュに設定された追加メタデータ。|
@@ -63,7 +63,7 @@ ms.locfileid: "62977504"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [タスク](../msbuild/msbuild-tasks.md)
 

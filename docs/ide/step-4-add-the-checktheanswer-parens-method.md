@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c251bab9e1306933804137f8f02d6006a2d4d29
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114444"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472618"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>手順 4: CheckTheAnswer() メソッドの追加
 
@@ -32,7 +32,7 @@ ms.locfileid: "76114444"
 > [!NOTE]
 > Visual Basic を使用している場合、このメソッドは値を返すため、通常の `Function` キーワードではなく、`Sub` キーワードを使用することに注意してください。 これは単に、Sub は値を返さないため、値を返す Function を使用しているだけです。
 
-1. `CheckTheAnswer()` メソッドを追加します。
+1. `CheckTheAnswer()` メソッドを追加します。 このメソッドは、`StartTheQuiz()` など、作成した他のメソッドと同じ行に配置する必要があります。
 
      このメソッドが呼び出されると、addend1 と addend2 の値を加算し、その結果を sum <xref:System.Windows.Forms.NumericUpDown> コントロールの値と比較します。 値が等しい場合、メソッドは `true` を返します。 それ以外の場合、メソッドは `false` の値を返します。 コードは次のようになります。
 
@@ -43,7 +43,7 @@ ms.locfileid: "76114444"
 
      次に、新しい `CheckTheAnswer()` メソッドを呼び出すタイマーの <xref:System.Windows.Forms.Timer.Tick> イベント ハンドラーのメソッドのコードを更新して解答を確認します。
 
-2. 次のコードを `if else` ステートメントに追加します。
+2. 次のコードを `Timer1_Tick()` メソッドの `if else` ステートメントに追加します。これにより、ユーザーが正解したときにタイマーが停止します。
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]

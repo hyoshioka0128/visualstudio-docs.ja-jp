@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593721"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -135,13 +135,13 @@ TypeScript の世界では、最も一般的な JavaScript ライブラリに *.
 既定では、Salsa 言語サービスは使用されている JavaScript ライブラリを検出し、高度な IntelliSense を提供するためにライブラリを記述する、対応する *.d.ts* ファイルを自動的にダウンロードして参照しようとします。 ファイルは、 *%LOCALAPPDATA%\Microsoft\TypeScript* のユーザー フォルダーの下にあるキャッシュにダウンロードされます。
 
 > [!NOTE]
-> *tsconfig.json* 構成ファイルを使用する場合、この機能は既定で**無効**になりますが、有効に設定することができます (下記参照)。
+> **tsconfig.json** 構成ファイルを使用する場合、この機能は既定で*無効*になりますが、有効に設定することができます (下記参照)。
 
 現在、自動検出は npm (*package.json* ファイルを読み取る場合)、Bower (*bower.json* ファイルを読み取る場合) からダウンロードされる依存関係に対して機能します。また、おおよそ上位 400 の最も一般的な JavaScript ライブラリのリストに一致する、プロジェクトのルーズ ファイルにも有効です。 たとえば、プロジェクトに *jquery-1.10.min.js* がある場合、ファイル *jquery.d.ts* は、優れた編集エクスペリエンスを提供するためにフェッチされ、読み込まれます。 この *.d.ts* ファイルはプロジェクトには影響しません。
 
 自動取得を使用しない場合は、以下に示すとおり、構成ファイルを追加して無効にします。 プロジェクト内で直接使用する場合も定義ファイルを手動で配置できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [IntelliSense の使用](../ide/using-intellisense.md)
 - [JavaScript のサポート (Visual Studio for Mac)](/visualstudio/mac/javascript)

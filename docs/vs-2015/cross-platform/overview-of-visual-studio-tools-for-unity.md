@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74298753"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の概要
@@ -66,5 +66,5 @@ ms.locfileid: "74298753"
   
 - Visual Studio Tools for Unity がプロジェクト ファイルを生成する方法を変更するには、Unity のスタイル コールバック ProjectFileGeneration を使用します。 詳細については、プロジェクト ファイル生成の例を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [Unity ホームページ](https://unity.com/)
+## <a name="see-also"></a>参照  
+ [Unity のホーム ページ](https://unity.com/)

@@ -3,37 +3,37 @@ title: DTE を使って Visual Studio を起動する
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79af14e80ef39b0cad732dcd0c9f37af1481bd4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590632"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703034"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE を使って Visual Studio を起動する
 
-Visual Studio 2017 以降では、DTE を使用して Visual Studio を起動するメカニズムは、以前のバージョンの Visual Studio を起動することとは異なります。 この変更が必要になるのは、Visual Studio 2017 以降ではメジャーリリースのサイドバイサイドインストールがサポートされるためです (たとえば、プレビューとリリースバージョンをサイドバイサイドでインストールできます)。
+Visual Studio 2017 以降では、DTE を使用して Visual Studio を起動するメカニズムは、以前のバージョンの Visual Studio を起動する方法とは異なります。 この変更が必要なのは、Visual Studio 2017 以降ではメジャー リリースのサイド バイ サイド インストールがサポートされているためです (たとえば、プレビューバージョンとリリース バージョンを並べてインストールすることができます)。
 
 この記事の残りの部分では、DTE を使用して Visual Studio 2019 を起動するために使用できるコードを示します。
 
 ## <a name="set-up-the-project"></a>プロジェクトのセットアップ
 
-動作中のコードを確認するには、次の手順に従ってプロジェクトを作成します。
+起動コードの動作を確認するには、次の手順に従ってプロジェクトを作成します。
 
-1. .NET Framework 用の新しい**コンソールアプリ**プロジェクトを作成します。
+1. .NET Framework 用の新しい**コンソール アプリ**プロジェクトを作成します。
 
-2. [VisualStudio](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet パッケージをインストールし、アセンブリへの参照を追加します。
+2. [パッケージ](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/)をインストールし、アセンブリへの参照を追加します。
 
-3. EnvDTE への参照を追加します。
+3. 参照を EnvDTE に追加します。
 
 4. 次の[コード例](#example-code)を*Program.cs*ファイルに貼り付けます。
 
-5. **F5** キーを押して、プログラムを実行します。 プログラムが終了する前に Visual Studio 2019 が開いていることを確認してください。
+5. **F5**キーを押してプログラムを実行します。 プログラムが終了する前に、Visual Studio 2019 が開いていることがわかります。
 
 ## <a name="example-code"></a>コード例
 
@@ -187,5 +187,5 @@ namespace ConsoleLauncherApp
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio の検索](locating-visual-studio.md)
+- [Visual Studio を探す](locating-visual-studio.md)
 - [チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

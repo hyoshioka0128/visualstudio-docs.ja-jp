@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778493"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -50,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
   パフォーマンス データ収集を適用できるプロファイル レベルを示します。 次の **PROFILE_CONTROL_LEVEL** 値を使用して、パフォーマンス データ収集を適用できる 3 つのレベルのいずれかを指定できます。
 
-|列挙子|説明|
+|列挙子|[説明]|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|グローバル レベル設定は、プロファイル実行のすべてのプロセスとスレッドに影響します。|
 |PROFILE_PROCESSLEVEL|プロセス レベル設定は、指定されたプロセスの一部であるスレッドすべてに影響します。|
@@ -63,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
 
-|列挙子|説明|
+|列挙子|[説明]|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|指定されたプロファイル要素が存在しません。|
 |NAME_ERROR_INVALID_NAME|名前が無効です。|
@@ -91,7 +91,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 |||
 |-|-|
-|**Header**|*VSPerf.h* をインクルードします。|
+|**ヘッダー**|*VSPerf.h* をインクルードします。|
 |**Library**|*VSPerf.lib* を使用します。|
 |**Unicode**|`NameProfileW` (Unicode) および `NameProfileA` (ANSI) として実装します。|
 
@@ -133,5 +133,5 @@ void ExerciseNameProfile()
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

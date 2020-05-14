@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591282"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>ロード テスト アナライザーを使用したロード テストのしきい値規則違反の分析
@@ -34,14 +34,14 @@ ms.locfileid: "75591282"
 
 しきい値違反テーブルには、最初の 1,000 個の違反が表示されます。 次の表は、表示される列を示しています。
 
-|Column|説明|既定で表示|
+|Column|[説明]|既定で表示|
 |-|-|-|
-|時刻|ロード テスト中に違反が発生した時刻。|はい|
-|コンピューター|違反が発生した、テスト中のコンピューター名。 **注:** この情報は、リモート テスト マシン群でロード テストを実行する場合に重要です。|はい|
+|Time|ロード テスト中に違反が発生した時刻。|はい|
+|Computer|違反が発生した、テスト中のコンピューター名。 **注:** この情報は、リモート テスト マシン群でロード テストを実行する場合に重要です。|はい|
 |カテゴリ|違反が発生したパフォーマンス カウンターのカテゴリ。|はい|
 |カウンター|違反が発生したパフォーマンス カウンターの名前。|はい|
 |インスタンス|違反が発生したパフォーマンス カウンター インスタンス。|はい|
-|メッセージ|しきい値違反について説明するメッセージ。 たとえば、**値 5 は重大なしきい値 0 を超えています**。|はい|
+|[メッセージ]|しきい値違反について説明するメッセージ。 たとえば、**値 5 は重大なしきい値 0 を超えています**。|はい|
 
 > [!NOTE]
 > テーブルは、列ヘッダーを選択することによって並べ替えることができます。
@@ -74,7 +74,7 @@ ms.locfileid: "75591282"
 
 詳細については、「[グラフ ビューでのロード テスト結果の分析](../test/analyze-load-test-results-in-the-graphs-view.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

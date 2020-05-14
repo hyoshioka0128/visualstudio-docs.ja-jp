@@ -1,5 +1,5 @@
 ---
-title: TemplateGroupID 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: テンプレート グループ ID 要素 ( ビジュアル スタジオ テンプレート ) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718656"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699079"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 要素 (Visual Studio テンプレート)
-項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、 [showbydefault Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)が `false` に設定されている場合に重要です。 [ [Showbydefault Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md) ] が `true` に設定されている場合、すべてのプロジェクトの種類で項目テンプレートを使用できます。
+項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、[表示によって既定 (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md) `false`が に設定されている場合に重要です。 [ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md) `true`が に設定されている場合、項目テンプレートはすべてのプロジェクトの種類で使用できます。
 
- \<VSTemplate > \<TemplateData > \<TemplateGroupID >
+ \<テンプレート>\<テンプレート\<データ> テンプレート グループ ID>
 
 ## <a name="syntax"></a>構文
 
@@ -36,10 +36,10 @@ ms.locfileid: "72718656"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -55,9 +55,9 @@ ms.locfileid: "72718656"
 ## <a name="remarks"></a>Remarks
  `TemplateGroupID` は要素です。
 
- @No__t_0 要素の値は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version number >* \ Projects \\) と共に使用して、[**新しい項目の追加] に表示されるテンプレートをフィルター処理します。** ダイアログボックス。
+ `TemplateGroupID`要素の値は、プロジェクト システム登録 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<バージョン番号>* \Projects)\\と共に使用され、[**新しい項目の追加**] ダイアログ ボックスに表示されるテンプレートをフィルター処理します。
 
-|Visual C++ の値|説明|
+|Visual C++ の値|意味|
 |------------------------|-------------|
 |VC-Native|ネイティブ プロジェクトに使用されます。 プロジェクトの種類を特定できない場合は、これが既定値になります。|
 |VC-Managed|マネージド (/clr) プロジェクトに使用されます|

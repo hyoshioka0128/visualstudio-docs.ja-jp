@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramCreateEvent2 |Microsoft Docs
+title: イベントの作成2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramCreateEvent2 interface
 ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8081e05d18719af060ddf58045c06ec64036ae35
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 78088d6e5da61c32302c13b08143c9ed902452e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331447"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722628"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-このインターフェイスは、プログラムに関連付けられている場合にデバッグ エンジン (DE) によって、セッション デバッグ マネージャー (SDM) に送信されます。
+このインターフェイスは、デバッグ エンジン (DE) プログラムがアタッチされているときにセッション デバッグ マネージャー (SDM) に送信されます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,21 +28,21 @@ ms.locfileid: "66331447"
 IDebugProgramCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デやカスタム ポート サプライヤーは、プログラムが作成されたこと、通常、プログラムにアタッチ時に報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して、`QueryInterface`メソッドにアクセスする、`IDebugEvent2`インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ DE またはカスタム ポート サプライヤーは、プログラムが作成されたことを報告するこのインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は、`QueryInterface`このメソッドを使用`IDebugEvent2`してインターフェイスにアクセスします。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- DE、またはカスタムのポート サプライヤーは、作成し、プログラムの作成を報告するには、このイベント オブジェクトを送信します。 デを使用してこのイベントを送信する、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって指定されたコールバック関数。 このイベントを使用してカスタム ポート サプライヤーに送信、 [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)インターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ DE またはカスタム ポート サプライヤーは、プログラムの作成を報告するために、このイベント オブジェクトを作成して送信します。 DE は、デバッグ中のプログラムにアタッチするときに、SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して、このイベントを送信します。 カスタム ポート サプライヤーは[、IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)インターフェイスを使用してこのイベントを送信します。
 
 ## <a name="remarks"></a>Remarks
- DE またはカスタムのポート サプライヤーは、新しい発行[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)呼び出してインターフェイス[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)します。
+ DE またはカスタム ポート サプライヤーは、新しい[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイスを[発行](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

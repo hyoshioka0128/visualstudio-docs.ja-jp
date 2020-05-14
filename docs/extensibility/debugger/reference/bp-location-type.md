@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE |Microsoft Docs
+title: BP_LOCATION_TYPE |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353047"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737940"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 ブレークポイント要求のブレークポイントの場所の種類を指定します。
 
 ## <a name="syntax"></a>構文
@@ -73,60 +73,60 @@ public enum enum_BP_LOCATION_TYPE {
 ブレークポイントの位置を指定しません。
 
 `BPLT_FILE_LINE`\
-ファイルの行として、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をファイル行として指定します。
 
 `BPLT_FUNC_OFFSET`\
-関数のオフセットとして、ブレークポイントの場所の種類を指定します。
+ブレークポイントの位置の種類を関数のオフセットとして指定します。
 
 `BPLT_CONTEXT`\
-コンテキストとしては、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をコンテキストとして指定します。
 
 `BPLT_STRING`\
 ブレークポイントの場所の種類を文字列として指定します。
 
 `BPLT_ADDRESS`\
-アドレス ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をアドレスとして指定します。
 
 `BPLT_RESOLUTION`\
-解決方法としては、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類を解決方法として指定します。
 
 `BPLT_CODE_FILE_LINE`\
-ソース コードの行として、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をソース コードの行として指定します。
 
 `BPLT_CODE_FUNC_OFFSET`\
-コードの関数のオフセットとして、ブレークポイントの場所の種類を指定します。
+コード関数オフセットとしてブレークポイントの場所の種類を指定します。
 
 `BPLT_CODE_CONTEXT`\
-コードのコンテキストとしては、ブレークポイントの場所の種類を指定します。
+コード コンテキストとしてブレークポイントの場所の種類を指定します。
 
 `BPLT_CODE_STRING`\
-コード文字列としては、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をコード文字列として指定します。
 
 `BPLT_CODE_ADDRESS`\
-コードのアドレスとして、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をコード アドレスとして指定します。
 
 `BPLT_DATA_STRING`\
-データの文字列としては、ブレークポイントの場所の種類を指定します。
+ブレークポイントの場所の種類をデータ文字列として指定します。
 
 `BPLT_TYPE_MASK`\
-ブレークポイントの種類は、値から抽出できるように、ビット マスクを指定します。
+ビット マスクを指定して、ブレークポイントの種類を値から抽出できるようにします。
 
 `BPLT_LOCATION_TYPE_MASK`\
-ブレークポイントの場所の種類は、値から抽出できるように、ビット マスクを指定します。
+ビット マスクを指定して、ブレークポイントの場所の種類を値から抽出できるようにします。
 
 ## <a name="remarks"></a>Remarks
-パラメーターとして渡される、 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)メソッド。
+メソッドにパラメーターとして渡[されます](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)。
 
-ブレークポイントの場所の種類は、ブレークポイントの種類と場所の種類で構成されます。 つまり、ブレークポイントの場所の種類は、ブレークポイントの種類だけではありません (たとえば、 `BPT_CODE`) または場所の種類 (たとえば、 `BPLT_FILE_LINE`)。 現在サポートされているすべてのブレークポイントの場所の種類の定義済み定数は、この列挙体に含まれる (`BPLT_CODE_FILE_LINE`を通じて`BPLT_DATA_STRING`)。
+ブレークポイントの場所の種類は、ブレークポイントの種類と場所の種類で構成されます。 つまり、ブレークポイントの場所の種類は、ブレークポイントの種類 (たとえば)`BPT_CODE`または場所の種類 (など`BPLT_FILE_LINE`) ではありません。 現在サポートされているすべてのブレークポイントの場所の種類の定義済みの定数は、この列挙体`BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING`( から ) に含まれています。
 
-`BPT_CODE` `BPT_DATA`のメンバーである、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列挙体。
+`BPT_CODE`BP_TYPE`BPT_DATA`列挙体のメンバー[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)です。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

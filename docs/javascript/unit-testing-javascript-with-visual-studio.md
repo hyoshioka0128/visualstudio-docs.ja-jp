@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071948"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
@@ -75,7 +75,7 @@ describe('Test Suite 1', function() {
 ![テスト エクスプローラー](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> テスト エクスプローラーは TypeScript ファイル内の単体テストを検出できないため、*tsconfig.json* では `outdir` または `outfile` オプションを使わないでください。
+> テスト エクスプローラーは TypeScript ファイル内の単体テストを検出できないため、`outdir`tsconfig.json`outfile` では *または* オプションを使わないでください。
 
 ## <a name="run-tests"></a>テストの実行
 
@@ -99,7 +99,7 @@ describe('Test Suite 1', function() {
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-このコマンドでは、次のような出力が表示されます。
+このコマンドの出力は次のようになります。
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0

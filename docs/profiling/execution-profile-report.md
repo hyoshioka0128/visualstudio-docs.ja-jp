@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969993"
 ---
 # <a name="execution-profile-report"></a>実行プロファイル レポート
@@ -28,16 +28,16 @@ ms.locfileid: "62969993"
 
   次の表は、テーブル内の列を示しています。
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
-|name|呼び出し履歴の各レベルの関数の名前。|
+|Name|呼び出し履歴の各レベルの関数の名前。|
 |包括サンプル|このレベルの呼び出し履歴のツリーにまとめられたすべてのスタックについて集められたサンプルの合計数。 包括数は、この関数の排他サンプルと、すべての子ノードの包括カウンターの合計です。|
 |排他サンプル|この関数が呼び出し履歴の最も低いレベルにある、収集されたサンプルの合計数。|
 |% 包括|包括サンプル列に表示されているサンプルの合計の割合。 割合は小数点以下 2 桁に丸めて表示されます。|
 |% 排他|排他サンプル列に表示されているサンプルの合計の割合。 割合は小数点以下 2 桁に丸めて表示されます。|
-|説明|関数の完全修飾名。 これには、利用できる場合、行数が含まれます。|
+|詳細|関数の完全修飾名。 これには、利用できる場合、行数が含まれます。|
 
  このレポートの表については、[実行時間 (スレッド ビュー)](../profiling/execution-time-threads-view.md) ビューで確認できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

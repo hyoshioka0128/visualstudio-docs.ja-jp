@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 |Microsoft Docs
+title: プログラムノード2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33c4a4914e15a8ecbea0d4f28c2325a952a042de
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353803"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720683"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-このインターフェイスでは、プロセス境界をまたいでプログラム関連のインターフェイスをマーシャ リングします。
+このインターフェイスは、プロセスの境界を越えてプログラム関連のインターフェイスをマーシャリングします。
 
 ## <a name="syntax"></a>構文
 
@@ -28,28 +28,28 @@ ms.locfileid: "66353803"
 IDebugProviderProgramNode2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジン (DE) を実装する同一のオブジェクトにこのインターフェイスを実装する[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プロセスの境界を越えてマーシャ リングのインターフェイスをサポートするためにします。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジン (DE) は、プロセスの境界を越えてマーシャリングインターフェイスをサポートする[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を実装する同じオブジェクトにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、`IDebugProgramNode2`をこのインターフェイスを取得するインターフェイス。 このインターフェイスを取得できない場合、DE にはインターフェイスのマーシャ リングはサポートされません。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ この[QueryInterface](/cpp/atl/queryinterface)インターフェイスを取得するには`IDebugProgramNode2`、インターフェイスでクエリ インターフェイスを呼び出します。 このインターフェイスを取得できない場合、DE はインターフェイスのマーシャリングをサポートしません。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|プロセスの境界を越えて、指定したインターフェイスを取得します。|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|プロセスの境界を越えて指定されたインターフェイスを取得します。|
 
 ## <a name="remarks"></a>Remarks
- デバッグ中のプログラムから別のプロセス領域で、DE を実行すると、このインターフェイスは実装: デバッグ中のプログラムのプロセス空間ではなく、Visual Studio のプロセス領域で、DE が実行されている場合などです。
+ このインターフェイスは、デバッグ中のプログラムとは別のプロセス空間で DE が実行されるときに実装されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

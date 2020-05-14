@@ -1,35 +1,35 @@
 ---
-title: コマンドの実装 |Microsoft Docs
+title: コマンドの実装 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709576"
 ---
 # <a name="command-implementation"></a>コマンドの実装
-VSPackage のコマンドを実装するには、次のタスクを実行する必要があります。
+VSPackage でコマンドを実装するには、次のタスクを実行する必要があります。
 
-1. *.Vsct*ファイルおよびコマンド グループをセットアップし、コマンドを追加します。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+1. *vsct*ファイルで、コマンド グループを設定し、コマンドを追加します。 詳細については、「 [Visual Studio コマンド テーブル (.vsct) ファイル 」](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)を参照してください。
 
-2. Visual Studio でのコマンドを登録します。
+2. コマンドを Visual Studio に登録します。
 
 3. コマンドを実装します。
 
-次のセクションでは、登録およびコマンドを実装する方法を説明します。
+次のセクションでは、コマンドの登録方法と実装方法について説明します。
 
-## <a name="register-commands-with-visual-studio"></a>Visual Studio で登録するコマンド
- コマンドがメニューを表示するかどうか、追加する必要あります、 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> VSPackage、およびメニューの名前またはそのリソース ID のいずれかの値として使用する
+## <a name="register-commands-with-visual-studio"></a>コマンドを Visual Studio で登録する
+ コマンドをメニューに表示する場合は、VSPackage<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>にを追加し、メニューの名前またはそのリソース ID の値として使用する必要があります。
 
 ```
 [ProvideMenuResource("Menus.ctmenu", 1)]
@@ -39,7 +39,7 @@ VSPackage のコマンドを実装するには、次のタスクを実行する�
 
 ```
 
- さらでコマンドを登録する必要があります、<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>します。 このサービスを使用して取得できます、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 、VSPackage がから派生している場合、メソッド<xref:Microsoft.VisualStudio.Shell.Package>します。
+ また、コマンドを<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>. このサービスは、VSPackage が<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>から<xref:Microsoft.VisualStudio.Shell.Package>派生している場合にメソッドを使用して取得できます。
 
 ```
 OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -54,42 +54,42 @@ if ( null != mcs )
 ```
 
 ## <a name="implement-commands"></a>コマンドの実装
- さまざまなコマンドを実装する方法があります。 方法と同じメニュー上に同じを常に表示されるコマンドは、静的メニューのコマンドの場合、コマンドを使用して作成<xref:System.ComponentModel.Design.MenuCommand>前のセクションの例で示すようにします。 静的なコマンドを作成するには、コマンドの実行を担当するイベント ハンドラーを提供する必要があります。 コマンドは常に有効になっていると表示なので、Visual Studio にその状態を指定する必要はありません。 インスタンスとして、コマンドを作成するには特定の条件に応じて、コマンドの状態を変更する場合、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>クラスし、そのコンス トラクターでコマンドを実行するイベント ハンドラーを提供、 `QueryStatus` Visual に通知するハンドラーStudio のコマンドのステータスが変更されたとき。 実装することも<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンド クラスまたはの一部を実装できる<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>プロジェクトの一部として、コマンドを指定する場合。 2 つのインターフェイスと<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>クラスのすべては、Visual Studio で、コマンドの状態の変更を通知するメソッドとコマンドの実行を提供するその他の方法があります。
+ コマンドを実装するには、いくつかの方法があります。 静的メニュー コマンド (常に同じメニューに表示されるコマンド) が必要な場合は、前のセクションの例に<xref:System.ComponentModel.Design.MenuCommand>示すように、コマンドを作成します。 静的コマンドを作成するには、コマンドの実行を担当するイベント ハンドラーを指定する必要があります。 コマンドは常に有効で表示されるため、Visual Studio にその状態を提供する必要はありません。 特定の条件に応じてコマンドの状態を変更する場合は、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>そのコマンドをクラスのインスタンスとして作成し、そのコンストラクターで、コマンドを実行するイベント ハンドラーと、コマンドの状態が`QueryStatus`変更されたときに Visual Studio に通知するハンドラーを提供します。 コマンド クラスの<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>一部として実装することも、プロジェクトの一部として<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>コマンドを提供する場合は実装することもできます。 2 つのインターフェイスと<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>クラスには、コマンドの状態の変更を Visual Studio に通知するメソッドと、コマンドの実行を提供するその他のメソッドがあります。
 
- コマンドは、コマンド サービスに追加されて、コマンドのチェーンのいずれかになります。 特定のコマンドのみを提供して、チェーン内の他のコマンドに他のすべてのケースを渡すコマンドのステータス通知と実行メソッドを実装する場合を処理します。 コマンドを渡すには失敗した場合 (を返すことによって、通常は<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>)、Visual Studio が正常に動作を停止する可能性があります。
+ コマンドがコマンド サービスに追加されると、コマンド のチェーンの 1 つになります。 コマンドの状態通知および実行メソッドを実装する場合は、その特定のコマンドのみを提供し、他のすべてのケースをチェーン内の他のコマンドに渡す必要があります。 コマンドを渡すことができない場合 (通常は戻る<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>)、Visual Studio が正常に動作しなくなることがあります。
 
-## <a name="querystatus-methods"></a>QueryStatus メソッド
- いずれかを実装している場合、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドまたは<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>メソッドで、コマンド、コマンドが所属するセットの GUID を確認し、コマンドの ID。 次のガイドラインに従ってください。
+## <a name="querystatus-methods"></a>メソッド
+ メソッドまたは<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>メソッドを実装する場合は、コマンドが属するコマンド セットの GUID とコマンドの ID を確認します。 次のガイドラインに従ってください。
 
-- いずれかのメソッドの実装を返す必要があります、GUID が認識されないかどうか<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>します。
+- GUID が認識されない場合は、どちらのメソッドの実装もを<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>返す必要があります。
 
-- いずれかのメソッドの実装、GUID を認識して、コマンドが実装していない場合、メソッドが返す必要があります<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>します。
+- どちらかのメソッドの実装が GUID を認識するが、コマンドを実装していない場合、メソッドは返<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>す必要があります。
 
-- かどうかには、いずれかのメソッドの実装は、GUID と、コマンドの両方を認識し、メソッドは、すべてのコマンドのコマンド フラグ フィールドを設定する必要があります (で、`prgCmds`パラメーター)、次を使用して<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>フラグ。
+- どちらかのメソッドの実装が GUID とコマンドの両方を認識する場合、メソッドは次`prgCmds`<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>のフラグを使用して、(パラメーター内の) すべてのコマンドの command-flags フィールドを設定する必要があります。
 
-  - `OLECMDF_SUPPORTED`:コマンドがサポートされています。
+  - `OLECMDF_SUPPORTED`: コマンドはサポートされています。
 
-  - `OLECMDF_INVISIBLE`:コマンドは表示されません。
+  - `OLECMDF_INVISIBLE`: コマンドは表示できません。
 
-  - `OLECMDF_LATCHED`:このコマンドがオンにしをオンになっているが表示されます。
+  - `OLECMDF_LATCHED`: コマンドがオンに切り替わって、チェックが入ったように見えます。
 
-  - `OLECMDF_ENABLED`:コマンドが有効になっているとします。
+  - `OLECMDF_ENABLED`: コマンドが有効です。
 
-  - `OLECMDF_DEFHIDEONCTXTMENU`:コマンドは、ショートカット メニューに表示される場合、非表示にする必要があります。
+  - `OLECMDF_DEFHIDEONCTXTMENU`: ショートカット メニューに表示されている場合は、コマンドを非表示にする必要があります。
 
-  - `OLECMDF_NINCHED`:コマンドがメニュー コント ローラーが有効でないが、そのドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)
+  - `OLECMDF_NINCHED`: コマンドはメニュー コントローラであり、有効ではありませんが、ドロップダウン メニュー リストは空で、まだ使用できます。 (このフラグはめったに使用されません。
 
-- コマンドが定義されている場合、 *.vsct*ファイルと、`TextChanges`フラグは、次のパラメーターを設定します。
+- コマンドが *.vsct*ファイルで定義されている場合は`TextChanges`、次のパラメーターを設定します。
 
-  - 設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。
+  - パラメータの`rgwz`要素を`pCmdText`コマンドの新しいテキストに設定します。
 
-  - 設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。
+  - パラメーターの`cwActual`要素を`pCmdText`コマンド文字列のサイズに設定します。
 
-また、必ず、現在のコンテキストは、automation 関数ではないことオートメーション機能を処理するために、コマンドの目的は具体的にはしない限り。
+また、コマンドが特にオートメーション関数を処理することを意図していない限り、現在のコンテキストがオートメーション関数ではないことを確認してください。
 
-特定のコマンドをサポートすることを示す、返す<xref:Microsoft.VisualStudio.VSConstants.S_OK>します。 その他のすべてのコマンドでは、返す<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>します。
+特定のコマンドをサポートしていることを示すには、<xref:Microsoft.VisualStudio.VSConstants.S_OK>を返します。 その他のすべてのコマンドについては、<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>を返します。
 
-次の例では、`QueryStatus`メソッドはまず、コンテキストは、automation 関数ではありませんし、適切なコマンド セットの GUID とコマンド ID を検索してください。 コマンド自体は、有効にされ、サポートに設定されます。 その他のコマンドがサポートされていません。
+次の例では、`QueryStatus`メソッドはまずコンテキストがオートメーション関数ではないことを確認し、次に正しいコマンド セット GUID とコマンド ID を検索します。 コマンド自体は、有効に設定され、サポートされます。 他のコマンドはサポートされていません。
 
 ```csharp
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -110,10 +110,10 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 }
 ```
 
-## <a name="execution-methods"></a>Execution メソッド
- 実装、`Exec`メソッドの実装に似ています、`QueryStatus`メソッド。 最初に、コンテキストは、automation 関数ではないことを確認します。 次に、GUID とコマンド ID の両方のテストします。 場合、GUID またはコマンドの ID が認識されていません、返す<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>します。
+## <a name="execution-methods"></a>実行メソッド
+ メソッドの実装`Exec`は、メソッドの実装に`QueryStatus`似ています。 まず、コンテキストがオートメーション関数でないことを確認します。 次に、GUID とコマンド ID の両方をテストします。 GUID またはコマンド ID が認識されない場合<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>は、 を返します。
 
- コマンドを処理することを実行し、返す<xref:Microsoft.VisualStudio.VSConstants.S_OK>実行が成功した場合。 コマンドはエラーの検出と通知; 担当したがって、実行に失敗した場合は、エラー コードを返します。 次の例では、実行メソッドを実装する方法を示します。
+ コマンドを処理するには、コマンドを実行し<xref:Microsoft.VisualStudio.VSConstants.S_OK>、実行が成功した場合に返します。 コマンドはエラーの検出と通知を行います。したがって、実行が失敗した場合はエラー コードを返します。 実行メソッドを実装する方法を次の例に示します。
 
 ```csharp
 public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,4 +135,4 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
 
 ## <a name="see-also"></a>関連項目
 
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackages がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

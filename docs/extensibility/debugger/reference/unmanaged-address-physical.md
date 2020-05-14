@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_PHYSICAL |Microsoft Docs
+title: UNMANAGED_ADDRESS_PHYSICAL |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93f6d1094a490041cd04a47fa073d2e75b8d2e23
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9070fcfbf79fb96ecff87a793c221f3e7a65c2ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316119"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713284"
 ---
-# <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
+# <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 この構造体は、物理アドレスを表します。
 
 ## <a name="syntax"></a>構文
@@ -41,17 +41,17 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 
 ## <a name="members"></a>メンバー
  `offset`\
- 物理アドレス空間に 64 ビット オフセット。
+ 物理アドレス空間への 64 ビット オフセット。
 
 ## <a name="remarks"></a>Remarks
- この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_UNMANAGED_PHYSICAL`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。
+ 構造体`dwKind`のフィールドが[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体の値) に`ADDRESS_KIND_UNMANAGED_PHYSICAL`設定されている`DEBUG_ADDRESS_UNION`場合、この構造体は[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の共用体の一部です。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: sh.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

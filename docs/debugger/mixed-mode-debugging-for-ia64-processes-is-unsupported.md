@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731100"
@@ -29,7 +29,7 @@ Visual Studio では、IA64 プロセスでマネージド コードとネイテ
 
 - マネージド コードとネイティブ コードを個別のデバッガー セッション内でデバッグする。
 
-     -または-
+     \- または -
 
      次の手順に示すように、混合コードを 32 ビット プロセスとしてデバッグする。
 

@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce アプリケーションと共に必須コンポーネントを含める |Microsoft Docs'
+title: '方法: ClickOnce アプリケーションを使用して必須コンポーネントを含める |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,20 +9,20 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697663"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557681"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントを含める
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>方法 : ClickOnce アプリケーションと共に必須コンポーネントを含める
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションと共に必須コンポーネントを配布する前に、まず開発用コンピューターにそれらの必須コンポーネントのインストーラー パッケージをダウンロードする必要があります。 アプリケーションを発行し、選択**アプリケーションと同じ場所から必須コンポーネントをダウンロード**、インストーラー パッケージがない場合、エラーが発生、**パッケージ**フォルダー。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションと共に必須コンポーネントを配布する前に、まず開発用コンピューターにそれらの必須コンポーネントのインストーラー パッケージをダウンロードする必要があります。 アプリケーションを発行し、[**アプリケーションと同じ場所から必須コンポーネントをダウンロード**する] を選択すると、インストーラーパッケージが**packages**フォルダーにない場合にエラーが発生します。  
   
 > [!NOTE]
-> .NET Framework のインストーラー パッケージを追加するを参照してください。[開発者向けの .NET Framework 配置ガイド](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)します。  
+> .NET Framework のインストーラーパッケージを追加するには、「[開発者向けの .NET Framework 配置ガイド](/dotnet/framework/deployment/deployment-guide-for-developers)」を参照してください。  
   
 ## <a name="Package"></a> Package.xml を使用してインストーラー パッケージを追加するには  
   
@@ -34,15 +34,15 @@ ms.locfileid: "65697663"
   
 3. メモ帳で、**Package.xml** ファイルを開きます。  
   
-4. 検索、**名前**要素を含む **http://go.microsoft.com/fwlink** URL をコピーします。 **LinkID** 部分を含めます。  
+4. `http://go.microsoft.com/fwlink`が含まれている**Name**要素を見つけ、URL をコピーします。 **LinkID** 部分を含めます。  
   
     > [!NOTE]
-    > ない場合は**名前**要素が含まれます **http://go.microsoft.com/fwlink** 、オープン、 **Product.xml**ファイル、前提条件のルート フォルダーを探し、 **fwlink**文字列。  
+    > **Name**要素に `http://go.microsoft.com/fwlink`が含まれていない場合は、前提条件のルートフォルダーにある**fwlink** **ファイルを**開き、その文字列を見つけます。  
   
     > [!IMPORTANT]
     > 一部の必須コンポーネントには、複数のインストーラー パッケージ (たとえば、32 ビット システム用または 64 ビット システム用) があります。 複数の **Name** 要素に **fwlink** が含まれている場合、各要素で残りの手順を繰り返す必要があります。  
   
-5. ブラウザーのアドレス バーに URL を貼り付け、実行または保存を確認するメッセージが表示されたら、 **[上書き保存]** をクリックします。  
+5. ブラウザーのアドレス バーに URL を貼り付け、実行または保存を確認するメッセージが表示されたら、**[上書き保存]** をクリックします。  
   
      この手順では、コンピューターにインストーラー ファイルをダウンロードします。  
   
@@ -52,5 +52,5 @@ ms.locfileid: "65697663"
   
      これで、アプリケーションと共にインストーラー パッケージを配布できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

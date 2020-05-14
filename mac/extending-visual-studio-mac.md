@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852039"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544027"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -100,7 +100,7 @@ CommandItem は、`id` 属性に指定されているコマンドをメニュー
 
 ### <a name="command-handlers"></a>コマンド ハンドラー
 
-`InsertDateHandler` は `CommandHandler` クラスの拡張機能です。 `Update` と `Run` という 2 つのメソッドはオーバーライドされます。 コマンドがメニューに表示される場合、またはキー バインドで実行される場合は常に、`Update` メソッドが照会されます。 info オブジェクトを変更することで、コマンドを無効にしたり、非表示にしたり、配列コマンドを設定したりすることができます。 テキスト情報を挿入する *TextEditor* でアクティブな*ドキュメント*が見つからない場合、`Update` メソッドを使用すると、コマンドが無効になります。
+`InsertDateHandler` は `CommandHandler` クラスの拡張機能です。 `Update` と `Run` という 2 つのメソッドはオーバーライドされます。 コマンドがメニューに表示される場合、またはキー バインドで実行される場合は常に、`Update` メソッドが照会されます。 info オブジェクトを変更することで、コマンドを無効にしたり、非表示にしたり、配列コマンドを設定したりすることができます。 テキスト情報を挿入する `Update`TextEditor *でアクティブな*ドキュメント*が見つからない場合、* メソッドを使用すると、コマンドが無効になります。
 
 ```csharp
 protected override void Update (CommandInfo info)
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>新しいエディターの拡張
 
-Visual Studio for Mac には、Visual Studio on Windows と同じエディター レイヤーの上に構築された[新しいネイティブ Cocoa テキスト エディター UI が導入されています](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW)。
+Visual Studio for Mac には、Visual Studio on Windows と同じエディター レイヤーの上に構築された[新しいネイティブ Cocoa テキスト エディター UI が導入されています](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)。
 
 Visual Studio と Visual Studio for Mac 間でのエディターの共有による多くのメリットの 1 つに、Visual Studio エディターをターゲットとするコードを Visual Studio for Mac で実行するように適応させることができるという点があります。
 
@@ -182,7 +182,7 @@ Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、�
 
 これらのリソースを利用して理解しておく必要がある主要な概念は、[`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) と [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) です。
 
-* `ITextBuffer` は、時間の経過と共に変更される可能性があるテキストのメモリ内表現です。 `ITextBuffer` の `CurrentSnapshot` プロパティは、バッファ内の現在のコンテンツの "*不変の*" 表現である `ITextSnapshot` インスタンスを返します。 バッファーで編集が行われると、CurrentSnapshot プロパティが最新のバージョンに更新されます。 アナライザーで任意のスレッドのテキスト スナップショットを検査して、その内容が変更されないことを保証できます。
+* `ITextBuffer` は、時間の経過と共に変更される可能性があるテキストのメモリ内表現です。 `CurrentSnapshot` の `ITextBuffer` プロパティは、バッファ内の現在のコンテンツの "*不変の*" 表現である `ITextSnapshot` インスタンスを返します。 バッファーで編集が行われると、CurrentSnapshot プロパティが最新のバージョンに更新されます。 アナライザーで任意のスレッドのテキスト スナップショットを検査して、その内容が変更されないことを保証できます。
 
 * `ITextView` は、エディター コントロールの画面に `ITextBuffer` がどのようにレンダリングされるかの UI 表現です。 それは、`Caret`、`Selection`、およびその他の UI 関連の概念だけではなく、テキスト バッファーへの参照も持っています。
 
@@ -193,6 +193,6 @@ Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、�
 > [!NOTE]
 > 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)」フォームに記入してお知らせください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio 拡張機能の開発 (Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

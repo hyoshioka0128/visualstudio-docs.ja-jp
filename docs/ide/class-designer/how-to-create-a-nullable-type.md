@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592231"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>方法: クラス デザイナーで Null 許容型を作成する
@@ -85,7 +85,7 @@ C# での null 許容型について詳しくは、「[null 許容型](/dotnet/c
 
 5. クラスの図形を右クリックし、 **[クラスの詳細]** をクリックします。 **[クラスの詳細]** ウィンドウで、新しい型のプロパティを表示または変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:System.Nullable%601>
 - [Null 許容型](/dotnet/csharp/programming-guide/nullable-types/index)

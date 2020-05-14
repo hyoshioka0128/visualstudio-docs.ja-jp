@@ -9,17 +9,17 @@ helpviewer_keywords:
 - interoperability warnings
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: e18b8ccbdc688586004a363f16360ace1bb488c9
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091757"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167599"
 ---
 # <a name="interoperability-warnings"></a>相互運用性に関する警告
 
@@ -27,7 +27,7 @@ ms.locfileid: "77091757"
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-| Rule | 説明 |
+| ルール | 説明 |
 | - | - |
 | [CA1400: P/Invoke エントリ ポイントは存在しなければなりません](../code-quality/ca1400.md) | パブリック メソッドまたはプロテクト メソッドが System.Runtime.InteropServices.DllImportAttribute 属性を使用してマークされています。 アンマネージ ライブラリの位置を特定できないか、メソッドがライブラリ内の関数と一致しません。 |
 | [CA1401: P/Invoke は参照可能になりません](../code-quality/ca1401.md) | パブリック型のパブリックメソッドまたはプロテクトメソッドには、InteropServices 属性があります (Visual Basic で Declare キーワードによっても実装されています)。 このようなメソッドは公開しないでください。 |

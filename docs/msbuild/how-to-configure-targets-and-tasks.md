@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596347"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633890"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>方法: ターゲットとタスクを構成する
+
+一部の MSBuild タスクは、開発コンピューターの環境に関係なく、それがターゲットとする環境で実行されるように設定できます。 たとえば、64 ビット コンピューターを使用し、32 ビット アーキテクチャをターゲットとするアプリケーションを構築するとき、一部のタスクが 32 ビット プロセスで実行されます。
 一部の MSBuild タスクは、開発コンピューターの環境に関係なく、それがターゲットとする環境で実行されるように設定できます。 たとえば、64 ビット コンピューターを使用し、32 ビット アーキテクチャをターゲットとするアプリケーションを構築するとき、一部のタスクが 32 ビット プロセスで実行されます。
 
 > [!NOTE]
 > ビルド タスクが Visual C# や Visual Basic のような .NET 言語で記述されており、ネイティブのリソースまたはツールを使用しない場合、調整なしで、あらゆるターゲット コンテンツで実行されます。
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask 属性とタスク パラメーター
+
 次の `UsingTask` 属性は、特定のビルド プロセスで、あるタスクのすべての操作に影響を与えます。
 
 - `Runtime` 属性は、それが存在する場合、共通言語ランタイム (CLR) バージョンを設定し、値として `CLR2`、`CLR4`、`CurrentRuntime`、`*` (任意のランタイム) のいずれかを取得します。
@@ -74,6 +77,7 @@ MSBuild はタスクを実行する前に、一致する (ターゲット コン
 ```
 
 ## <a name="task-factories"></a>タスク ファクトリ
+
 MSBuild はタスクを実行する前に、現在のソフトウェア コンテキストで実行するように指定されているかどうかを確認します。 タスクがそのように指定されている場合、MSBuild は AssemblyTaskFactory にタスクを渡します。AssemblyTaskFactory はタスクを現在のプロセスで実行します。現在のプロセスで実行するように指定されていない場合、MSBuild は TaskHostFactory にタスクを渡します。TaskHostFactory は、ターゲット コンテキストに一致するプロセスでタスクを実行します。 現在のコンテキストとターゲット コンテキストが一致する場合でも、`TaskFactory` を `TaskHostFactory` に設定することで、プロセスの外でタスクを実行するように強制できます (隔離、セキュリティ、またはその他の理由から)。
 
 ```xml
@@ -84,6 +88,7 @@ MSBuild はタスクを実行する前に、現在のソフトウェア コン�
 ```
 
 ## <a name="phantom-task-parameters"></a>ファントム タスク パラメーター
+
 他のタスク パラメーターと同様に、`MSBuildRuntime` と `MSBuildArchitecture` はビルド プロパティから設定できます。
 
 ```xml
@@ -107,5 +112,6 @@ MSBuild はタスクを実行する前に、現在のソフトウェア コン�
 > [!NOTE]
 > タスク パラメーターは、タスク ホストのコンテキストではなく、親ノードのコンテキストで評価されます。 ランタイムまたはアーキテクチャに依存する環境変数は (*Program Files* の場所など)、親ノードに一致する値に評価されます。 一方、同じ環境変数がタスクによって直接読み取られた場合は、タスク ホストのコンテキストで正しく評価されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [ターゲットとタスクを構成する](../msbuild/configuring-targets-and-tasks.md)

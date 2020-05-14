@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589943"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>方法: 3D モデルのピボット ポイントを変更する
@@ -25,7 +25,7 @@ ms.locfileid: "75589943"
 
 **[プロパティ]** ウィンドウと **[ツールボックス]** が表示されていることを確認します。
 
-1. 「[方法:基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)」に記載されているものなどの既存の 3D モデルから始めます。
+1. 「[方法: 基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)」に記載されているものなどの既存の 3D モデルから始めます。
 
 2. ピボット モードを開始します。 **[モデル エディターのモード]** ツール バーで、 **[ピボット モード]** をクリックしてピボット モードをアクティブにします。 **[ピボット モード]** を囲むボックスが表示されて、モデル エディターがピボット モードになっていることが示されます。 ピボット モードでは、平行移動などの操作は、ワールド空間内のオブジェクトの構造ではなくオブジェクトのピボット ポイントに影響を与えます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "75589943"
 
 ![変更されたピボット ポイントを持つ家のモデル](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)
 - [モデル エディター](../designers/model-editor.md)

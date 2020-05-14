@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593760"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>方法: surround-with コード スニペットを使用する
@@ -55,7 +55,7 @@ ms.locfileid: "75593760"
 
      または、コード スニペットの名前を入力し、**Tab** キーまたは **Enter** キーを押します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C# コード スニペット](../ide/visual-csharp-code-snippets.md)
 - [コード スニペット ピッカー](../ide/reference/code-snippet-picker.md)

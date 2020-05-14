@@ -1,17 +1,18 @@
 ---
 title: Office 365 Pro Plus 特典 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Office 365 Pro Plus 特典について説明します。
-ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 3db596912739562b65a0568864dfdf224cc28b3a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036728"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649494"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365 Pro Plus
 
@@ -76,14 +77,15 @@ ms.locfileid: "77036728"
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest の個人クレジット](vs-azure.md) Office 用アプリケーションを開発する予定がある場合は、[Office Developer サブスクリプション](vs-office-dev.md)をアクティブ化します。
 
-## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](/visualstudio/)
-- [Azure DevOps ドキュメント](/azure/devops/)
-- [Azure ドキュメント](/azure/)
-- [Microsoft 365 ドキュメント](/microsoft-365/)

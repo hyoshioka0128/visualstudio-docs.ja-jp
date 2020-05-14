@@ -1,30 +1,30 @@
 ---
-title: GetScheduledTasksForDebugger メソッド |Microsoft Docs
+title: メソッドのスケジュールタスクを取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49a63462eece9bef09579c7284f72790a3914bc2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fca6c8e92cd0b4755bd79b8e142a7e1d283f868d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353728"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738662"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger メソッド
 すべてのスケジュールされたタスクの配列を取得します。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ ms.locfileid: "66353728"
 ```
 
 ## <a name="return-value"></a>戻り値
- スケジュールされたすべてのタスクの配列。 各タスクが実行か、または実行が完了します。
+ スケジュールされたすべてのタスクの配列。 各タスクは実行中か、実行が終了しています。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、スレッド セーフであると同時の他のインスタンスを使用しないでください<xref:System.Threading.Tasks.TaskScheduler>します。 デバッガーがその他のすべてのスレッドを中断された場合にのみ、デバッガーからこのメソッドを呼び出します。
+ このメソッドはスレッド セーフではないため、他の<xref:System.Threading.Tasks.TaskScheduler>インスタンスと同時に使用しないでください。 デバッガーが他のすべてのスレッドを中断した場合にのみ、デバッガーからこのメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
-- [TaskScheduler クラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+- [タスクスケジューラクラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: CreatePkgDef ユーティリティ |Microsoft Docs
+title: PkgDef ユーティリティを作成する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332282"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709165"
 ---
-# <a name="createpkgdef-utility"></a>CreatePkgDef ユーティリティ
-パラメーターとして Visual Studio 拡張機能の .dll ファイルを受け取り、作成、 *.pkgdef*付随するファイル、 *.dll*ファイル。 *.Pkgdef*ファイルには、拡張機能がインストールされている場合、システム レジストリに書き込まそれ以外の場合は、すべての情報が含まれています。
+# <a name="createpkgdef-utility"></a>ユーティリティを作成します。
+Visual Studio 拡張機能の .dll ファイルをパラメーターとして受け取り *、.dll*ファイルに付属する *.pkgdef*ファイルを作成します。 *pkgdef*ファイルには、拡張機能のインストール時にシステム レジストリに書き込まれるすべての情報が含まれています。
 
 > [!NOTE]
-> 自動的に Visual Studio SDK に含まれるプロジェクト テンプレートのほとんど作成 *.pkgdef*ビルド プロセスの一環としてファイル。 このドキュメントはパッケージを手動で作成または使用する既存のパッケージを変換する必要がある場合、 *.pkgdef*展開します。
+> Visual Studio SDK に含まれているほとんどのプロジェクト テンプレートは、ビルド プロセスの一部として *.pkgdef*ファイルを自動的に作成します。 このドキュメントは、パッケージを手動で作成する場合や、既存のパッケージを *.pkgdef*展開を使用するように変換する場合を想定しています。
 
 ## <a name="syntax"></a>構文
 
@@ -33,54 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>引数
-**/out=&lt;FileName&gt;** \
-必須。 名前を設定、 *.pkgdef*の出力ファイルを&lt;FileName&gt;します。
+**/out=&lt;ファイル名&gt;**\
+必須。 *pkgdef*出力ファイルの名前をファイル名&lt;&gt;に設定します。
 
-**/codebase**\
-省略可能です。 登録を強制的に、**コードベース**ユーティリティ。
+**/コードベース**\
+省略可能。 **CodeBase**ユーティリティを使用して強制的に登録します。
 
-**/assembly**\
-登録を強制的に、**アセンブリ**ユーティリティ。
+**/アセンブリ**\
+アセンブリ ユーティリティを使用して強制的に登録**します**。
 
-**&lt;AssemblyPath&gt;** \
-パス、 *.dll*ファイルを生成する、 *.pkgdef*します。
+**&lt;アセンブリパス&gt;**\
+*pkgdef*を生成する *.dll*ファイルのパス。
 
 ## <a name="remarks"></a>Remarks
-使用して拡張機能の配置 *.pkgdef*ファイルには、Visual Studio の以前のバージョンのレジストリの要件が置き換えられます。
+*pkgdef*ファイルを使用した拡張機能の配置は、以前のバージョンの Visual Studio のレジストリ要件に置き換えられます。
 
 ::: moniker range=">=vs-2019"
 
-*.Pkgdef*ファイルは、次の場所のいずれかでインストールする必要があります。
+*pkgdef*ファイルは、次のいずれかの場所にインストールする必要があります。
 
-- *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*
+- *%ローカルアプリケーションデータ%\マイクロソフト\ビジュアルスタジオ\16.0\拡張機能\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\共通7\IDE\拡張機能\\*
 
-インストール フォルダーがある場合 *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* 、拡張機能は Visual Studio によって認識されますが、既定で無効にします。 ユーザーを使用して、拡張機能を有効にできます**拡張機能の管理**します。
+インストール フォルダーが *%localappdata%\Microsoft\Visual Studio\16.0\\\拡張機能*である場合、拡張機能は Visual Studio によって認識されますが、既定では無効になっています。 ユーザーは、拡張機能の管理 を使用して**拡張機能を**有効にすることができます。
 
-インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\* 、拡張機能が既定で有効にします。
+インストール フォルダが *%vsinstalldir%\Common7\IDE\Extensions\\*の場合、拡張機能は既定で有効になっています。
 
 > [!NOTE]
-> **拡張機能の管理**ツールは VSIX パッケージの一部としてインストールされていない場合、拡張機能へのアクセスに使用できません。
+> **拡張機能の管理**ツールは、VSIX パッケージの一部としてインストールされていない拡張にアクセスするために使用できません。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-*.Pkgdef*ファイルは、次の場所のいずれかでインストールする必要があります。
+*pkgdef*ファイルは、次のいずれかの場所にインストールする必要があります。
 
-- *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*
+- *%ローカルアプリケーションデータ%\マイクロソフト\ビジュアルスタジオ\15.0\拡張機能\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\共通7\IDE\拡張機能\\*
 
-インストール フォルダーがある場合 *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* 、拡張機能は Visual Studio によって認識されますが、既定で無効にします。 ユーザーを使用して、拡張機能を有効にできます**拡張機能と更新**します。
+インストール フォルダーが *%localappdata%\Microsoft\Visual Studio\15.0\\\拡張機能*である場合、拡張機能は Visual Studio によって認識されますが、既定では無効になっています。 ユーザーは、拡張機能と更新プログラムを使用して**拡張機能を**有効にすることができます。
 
-インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\* 、拡張機能が既定で有効にします。
+インストール フォルダが *%vsinstalldir%\Common7\IDE\Extensions\\*の場合、拡張機能は既定で有効になっています。
 
 > [!NOTE]
-> **拡張機能と更新**ツールは VSIX パッケージの一部としてインストールされていない場合、拡張機能へのアクセスに使用できません。
+> **拡張機能と更新**ツールは、VSIX パッケージの一部としてインストールされていない限り、拡張機能にアクセスするために使用できません。
 
 ::: moniker-end
 
 ## <a name="see-also"></a>関連項目
-- [CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)
+- [ユーティリティを作成します。](../../extensibility/internals/createexpinstance-utility.md)

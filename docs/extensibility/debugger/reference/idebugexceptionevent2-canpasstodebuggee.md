@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee |Microsoft Docs
+title: イベント 2::スキャンパスデバッグジー |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c27ac3239fd6621a824f626a141a357241b03b1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310572"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729872"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-デバッグ エンジン (DE) に実行が再開されるときにデバッグするプログラムにこの例外を渡すことがサポートしているかどうかを判断します。
+デバッグ エンジン (DE) が、実行が再開されたときにデバッグ中のプログラムにこの例外を渡すオプションをサポートするかどうかを決定します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>戻り値
- どちらかを返します`S_OK`(例外は、プログラムに渡されることができます) または`S_FALSE`(は、例外を渡すことができません)。
+ `S_OK` (例外はプログラムに渡すことができます)、または`S_FALSE`(例外を渡すことはできません) を返します。
 
 ## <a name="remarks"></a>Remarks
- DE、デバッグ対象に渡すのための既定のアクションが必要です。 IDE が表示される、 [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)イベントと呼び出し、[続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)メソッドを呼び出さずに、`CanPassToDebuggee`メソッド。 そのため、DE には、かどうか例外を渡すための既定のケースが必要です。
+ デは、デバッグ対象に渡すための既定のアクションを持っている必要があります。 IDE は[、IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)イベントを受け[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)取り、メソッドを`CanPassToDebuggee`呼び出さずに Continue メソッドを呼び出す可能性があります。 したがって、DE には例外を渡すかどうかのデフォルトのケースが必要です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
-- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

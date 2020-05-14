@@ -1,5 +1,5 @@
 ---
-title: DefaultName 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 既定の名前の要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dbb720bf04c36b2d9f018be5418a25088e259f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348150"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712306"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>DefaultName 要素 (Visual Studio テンプレート)
-作成時にそのプロジェクトまたは項目の Visual Studio プロジェクト システムにより生成される名前を指定します。
+# <a name="defaultname-element-visual-studio-templates"></a>既定の名前要素
+プロジェクトまたは項目の作成時に Visual Studio プロジェクト システムが生成する名前を指定します。
 
- \<VSTemplate> \<TemplateData> \<DefaultName>
+ \<VS テンプレート\<>\<テンプレートデータ>既定の名前>
 
 ## <a name="syntax"></a>構文
 
@@ -37,10 +37,10 @@ ms.locfileid: "66348150"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -54,16 +54,16 @@ ms.locfileid: "66348150"
  このテキストは、プロジェクトまたは項目の既定の名前を指定します。
 
 ## <a name="remarks"></a>Remarks
- `DefaultName` は、省略可能な要素です。
+ `DefaultName` は省略可能な要素です。
 
- プロジェクトの場合は、この要素は、ディスク上、プロジェクトを格納するディレクトリの名前を指定します。 項目については、ソース ファイルのファイル名を指定します。
+ プロジェクトの場合、この要素は、ディスク上にプロジェクトを格納するディレクトリの名前を指定します。 項目の場合は、ソース ファイルのファイル名を指定します。
 
- 使用して、既定の名前を変更するにはプロジェクトまたは項目を作成するときに、**名前**はいずれかから使用可能なオプション、**新しいプロジェクト** ダイアログ ボックスまたは**新しい項目の追加**ダイアログ ボックス。
+ プロジェクトまたは項目を作成する場合は、[**Add New Item****名前**] オプションを使用して**Name**既定の名前を変更できます。
 
- プロジェクトまたは項目の既定の名前を生成するプロジェクト システムしたくない場合は、設定、 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)要素`False`します。
+ プロジェクト システムでプロジェクトまたは項目の既定の名前を生成しない場合は、[要素の提供を](../extensibility/providedefaultname-element-visual-studio-templates.md)に`False`設定します。
 
 ## <a name="example"></a>例
- 次の例では、用の標準的な項目テンプレートのメタデータを[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス。
+ クラスの標準項目テンプレートのメタデータを次の例に[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]示します。
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,5 +82,5 @@ ms.locfileid: "66348150"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

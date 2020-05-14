@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957270"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>手順 4: 完全な Flask Web プロジェクト テンプレートを使用する
 
-**前の手順:[静的ファイルを提供し、ページを追加し、テンプレート継承を使用する](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**前の手順: [静的ファイルを提供し、ページを追加し、テンプレート継承を使用する](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Visual Studio の "空の Flask App プロジェクト" テンプレート上にアプリを構築して、Flask の基本を確認したので、"Flask Web プロジェクト" テンプレートで作成されるより完全なアプリを簡単に理解できるようになりました。
 
@@ -33,7 +33,7 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
 
 この記事は、"Flask/Jade Web プロジェクト" テンプレートにも該当します。このテンプレートからは、Jinja の代わりに Jade テンプレート エンジンを利用し、"Flask Web プロジェクト" のアプリと同じアプリが作られます。 この記事の終わりには追加詳細を記載しています。
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>手順 4-1:テンプレートからプロジェクトを作成する
+## <a name="step-4-1-create-a-project-from-the-template"></a>手順 4-1: テンプレートからプロジェクトを作成する
 
 1. Visual Studio で、**ソリューション エクスプローラー**に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]** > **[新規]** > **[プロジェクト]** の順に選択します)。
 
@@ -57,7 +57,7 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
 
     ![Flask Web プロジェクト アプリのモバイル (縮小幅) 表示](media/flask/step04-full-app-mobile-view.png)
 
-1. 以降のセクションについては、アプリにそのまま実行させることができます。
+1. 以降のセクションのために、アプリを実行したままにすることができます。
 
     アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
 
@@ -74,9 +74,9 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
   - *static* フォルダーには、*content* (CSS ファイル)、*fonts* (フォント ファイル)、*scripts* (JavaScript ファイル) という名前のサブフォルダーが含まれています。
   - *templates* フォルダーには、*layout.html* 基本テンプレートと共に、*layout.html* を拡張するページのための *about.html*、*contact.html*、*index.html* が含まれています。
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>質問:Visual Studio プロジェクト間で仮想環境を共有することは可能ですか。
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>質問: Visual Studio プロジェクト間で仮想環境を共有することは可能ですか。
 
-回答:はい。ただし、異なるプロジェクトは時間の経過と共に異なるパッケージを使用する傾向があるため、共有した仮想環境には、使用するすべてのプロジェクトに対応するすべてのパッケージを含む必要があることを認識したうえで、共有してください。
+回答: はい。ただし、異なるプロジェクトは時間の経過と共に異なるパッケージを使用する傾向があるため、共有した仮想環境には、使用するすべてのプロジェクトに対応するすべてのパッケージを含む必要があることを認識したうえで、共有してください。
 
 それでもやはり、既存の仮想環境を使用するには、次の手順を実行します。
 
@@ -84,7 +84,7 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
 1. **ソリューション エクスプローラー**で、**[Python 環境]** ノードを右クリックして、**[既存の仮想環境を追加する]** を選択します。
 1. 仮想環境を含むフォルダーに移動して選択し、 **[OK]** をクリックします。
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>手順 4-2:プロジェクト テンプレートによって作成されたビューとページ テンプレートを理解する
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>手順 4 2: プロジェクト テンプレートによって作成されたビューとページ テンプレートを理解する
 
 プロジェクトを実行したときに確認すると、アプリには、[ホーム]、[About]\(詳細\)、[連絡先] という 3 つのビューが含まれています。 これらのビューに対応するコードは、*FlaskWeb/views.py* フォルダーにあります。 テンプレートに値を与えるために、各ビューの関数はテンプレートのパスと引数の変数一覧を利用して `flask.render_template` を呼び出します。 たとえば、[バージョン情報] ページは `about` 関数によって処理されます (そのデコレーターによって URL ルーティングが与えられます)。
 
@@ -227,7 +227,7 @@ block content
 
 Jinja と Jade の構文をいろいろ試し、自分にとって何が最適か見つけてください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Polls Flask Web プロジェクト テンプレート](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
@@ -236,4 +236,4 @@ Jinja と Jade の構文をいろいろ試し、自分にとって何が最適�
 
 - [最初の Flask アプリの作成、パート 4 - フォームと汎用ビュー](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [GitHub の Jade (ドキュメント)](https://github.com/liuliqiang/pyjade) (github.com)
-- GitHub のチュートリアルのソース コード:[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- GitHub 上のチュートリアルのソース コード: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

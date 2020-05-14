@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779884"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>チュートリアル: プロファイラー API の使用
@@ -37,10 +37,10 @@ ms.locfileid: "74779884"
 
  マネージド コード用のプロファイラー API は、*Microsoft.VisualStudio.Profiler.dll* にあります。 この DLL は、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにあります。 64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64* です。 詳しくは、[Profiler](/previous-versions/ms242704(v=vs.140)) に関する記事をご覧ください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  このチュートリアルでは、ユーザーが選択した開発環境で、デバッグとサンプリングがサポートされていることを前提としています。 以下のトピックでは、これらの前提条件の概要について説明しています。
 
-- [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)
+- [方法 : 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)
 
 - [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)
 
@@ -152,23 +152,23 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**
 
-3. 次のコマンドを入力します。**VSInstr \<ファイル名>.exe**
+3. コマンド **VSInstr \<filename>.exe** を入力します。
 
-4. 次のコマンドを入力します。**VSPerfCmd /start:trace /output:\<ファイル名>.vsp**
+4. コマンド **VSPerfCmd /start:trace /output:\<filename>.vsp** を入力します。
 
-5. 次のコマンドを入力します。**VSPerfCmd /globaloff**
+5. コマンド **VSPerfCmd /globaloff** を入力します。
 
 6. プログラムを実行します。
 
-7. 次のコマンドを入力します。**VSPerfCmd /shutdown**
+7. コマンド **VSPerfCmd /shutdown** を入力します。
 
-8. 次のコマンドを入力します。**VSPerfReport /calltrace:\<ファイル名>.vsp**
+8. コマンド **VSPerfReport /calltrace:\<filename>.vsp** を入力します。
 
      現在のディレクトリに、結果のパフォーマンス データが含まれた .*csv* ファイルが作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [プロファイラー](/previous-versions/ms242704(v=vs.140))
+- [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
-- [はじめに](../profiling/getting-started-with-performance-tools.md)
+- [作業の開始](../profiling/getting-started-with-performance-tools.md)
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

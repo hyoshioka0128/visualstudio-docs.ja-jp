@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595151"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632564"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>デザイン時のアセンブリの解決
+
 **[参照の追加]** ダイアログの **[.NET]** タブを使用してアセンブリへの参照を追加する場合、その参照は中間参照アセンブリを指します。つまり、すべての型情報と署名情報を含んでいるが、コードを必ずしも含まないアセンブリを指します。 **[.NET]** タブには、.NET Framework のランタイム アセンブリに対応する参照アセンブリの一覧が表示されます。 さらに、サードパーティによって使用される、登録済みの AssemblyFoldersEx フォルダーのランタイム アセンブリに対応する参照アセンブリの一覧も表示されます。
 
 ## <a name="multi-targeting"></a>マルチターゲット
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] では、共通言語ランタイム (CLR: Common Language Runtime) Version 2.0 または Version 4 で実行される複数のバージョンの .NET Framework を対象にすることができます。 これらのバージョンには、.NET Framework Version 2.0、3.0、3.5、4、4.5、4.5.1 および Silverlight Version 1.0、2.0、3.0 が含まれます。 CLR Version 2.0 または Version 4 に基づいた新しいバージョンの .NET Framework がリリースされた場合、この Framework はターゲット パックを使用してインストールでき、Visual Studio でターゲットとして自動的に表示されます。
+
+ Visual Studio では、複数のバージョンの .NET Framework 上で実行されている .NET Framework バージョンをターゲットにすることができます。 新しい .NET Framework バージョンがリリースされた場合、ターゲット パックを使用してこの Framework をインストールすることができ、それは Visual Studio にターゲットとして自動的に表示されます。
 
 ## <a name="how-type-resolution-works"></a>型解決のしくみ
+
  CLR は、実行時に GAC、*bin* ディレクトリ、およびすべてのプローブ パスを調べることで、アセンブリ内の型を解決します。 これは、フュージョン ローダーによって処理されます。 では、フュージョン ローダーはどうやって調査対象を認識するのでしょうか。 これは、デザイン時、アプリケーションのビルド中に行われた解決によって異なります。
 
  ビルド中、コンパイラは参照アセンブリを使用してアプリケーションの型を解決します。 .NET Framework Version 2.0、3.0、3.5、4、4.5、4.5.1 では、参照アセンブリは .NET Framework のインストール時にインストールされます。

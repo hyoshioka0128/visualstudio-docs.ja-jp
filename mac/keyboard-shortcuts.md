@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984561"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77567973"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac の既定のキーボード ショートカット
 
@@ -20,6 +20,13 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 
 > [!TIP]
 > このドキュメントで示すキーボード ショートカットおよび Visual Studio for Mac でのキー バインドのユーザー設定は、macOS で一般に使用される記号を使用して示されています。 記号がよくわからない場合は、「[macOS キー シンボル参照](#macos-key-symbols-lookup)」の表をご覧ください。
+
+## <a name="downloadable-quick-ref-pdfs"></a>ダウンロード可能なクイック リファレンス pdf
+
+最もよく使用され、最も役に立つキーボード ショートカットを、ダウンロード可能な pdf ファイルにまとめました。 2 つのバージョンがあります。1 つは Visual Studio for Mac のショートカットを示したものです。もう 1 つは、Visual Studio の使用経験があるユーザーが Windows を使用しているときに Visual Studio のショートカットを横に並べて表示するバージョンです。
+
+ - [Visual Studio for Mac のキーボード ショートカットのクイック リファレンス](https://aka.ms/vsm-keys)
+ - [Visual Studio および Visual Studio for Mac のキーボード ショートカットのクイック リファレンス](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>コードのナビゲーション
 
@@ -253,7 +260,7 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 
 ## <a name="macos-key-symbols-lookup"></a>macOS キー シンボル参照
 
-|シンボル|キー|
+|シンボル|Key|
 |-|-|
 |⌘|**Command** (**cmd**)|
 |⌥|**Option** (**alt**)|

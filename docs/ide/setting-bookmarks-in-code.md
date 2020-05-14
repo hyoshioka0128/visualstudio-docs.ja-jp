@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595437"
 ---
 # <a name="set-bookmarks-in-code"></a>コードへのブックマークの設定
@@ -40,6 +40,6 @@ ms.locfileid: "75595437"
 
 ブックマーク ウィンドウの **[すべてのブックマークを無効にする]** ボタンを選択して、ブックマークを (削除せずに) オフにできます。 同じボタン ( **[すべてのブックマークを有効にする]** に変わっています) を選択して、ブックマークを再び有効にすることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)

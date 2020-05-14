@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumBoundBreakpoints |Microsoft Docs
+title: を次のブレークポイントに追加します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - EnumBoundBreakpoints method
 - IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 017981e2762ec8246a1898f224700c3b689552b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6655b65ec2505794f29f5c6ad9142c8690ea474b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333781"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725869"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 この保留中のブレークポイントからバインドされているすべてのブレークポイントを列挙します。
@@ -42,13 +42,13 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[out]返します、 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)バインドされたブレークポイントを列挙するオブジェクト。
+[アウト]バインド[されたブレークポイントを](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)列挙するオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`ブレークポイントが削除されている場合。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 ブレークポイント`E_BP_DELETED`が削除されたかどうかを返します。
 
 ## <a name="example"></a>例
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CPendingBreakpoint`を公開するオブジェクト、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス。
+ 次の例は[、IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス`CPendingBreakpoint`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)

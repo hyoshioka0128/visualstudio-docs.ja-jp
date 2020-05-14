@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585458"
 ---
 # <a name="target-build-order"></a>ターゲットのビルド順序
 
 あるターゲットへの入力が別のターゲットの出力に依存する場合、ターゲットの順序を指定する必要があります。 以下の属性を使用して、ターゲットを実行する順序を指定できます。
 
-- `InitialTargets`。 この `Project` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。
+- `InitialTargets` で初期化します。 この `Project` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。
 
-- `DefaultTargets`。 この `Project` 属性を使うと、ターゲットがコマンドラインで明示的に指定されていない場合に実行されるターゲットを指定できます。
+- `DefaultTargets` で初期化します。 この `Project` 属性を使うと、ターゲットがコマンドラインで明示的に指定されていない場合に実行されるターゲットを指定できます。
 
-- `DependsOnTargets`。 この `Target` 属性は、このターゲットを実行する前に実行する必要があるターゲットを指定します。
+- `DependsOnTargets` で初期化します。 この `Target` 属性は、このターゲットを実行する前に実行する必要があるターゲットを指定します。
 
 - `BeforeTargets` および `AfterTargets`。 これらの `Target` 属性は、このターゲットを、指定されたターゲットの前または後に実行するように指定します (MSBuild 4.0)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "75585458"
 
 ## <a name="initial-targets"></a>初期ターゲット
 
-[Project](../msbuild/project-element-msbuild.md) 要素の `InitialTargets` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。 通常、初期ターゲットはエラー チェックに使用されます。
+`InitialTargets`Project[ 要素の ](../msbuild/project-element-msbuild.md) 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。 通常、初期ターゲットはエラー チェックに使用されます。
 
 `InitialTargets` 属性の値は、ターゲットをセミコロンで区切った、順序指定された一覧です。 次の例では、`Warm` ターゲットを実行してから `Eject` ターゲットを実行するように指定しています。
 
@@ -45,11 +45,11 @@ ms.locfileid: "75585458"
 
 インポートされたプロジェクトには、独自の `InitialTargets` 属性が含まれている場合があります。 それらのすべての初期ターゲットが集約されて順番に実行されます。
 
-詳細については、[最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
+詳細については、「[方法: 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
 
 ## <a name="default-targets"></a>既定のターゲット
 
-[Project](../msbuild/project-element-msbuild.md) 要素の `DefaultTargets` 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。
+`DefaultTargets`Project[ 要素の ](../msbuild/project-element-msbuild.md) 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。
 
 `DefaultTargets` 属性の値は、既定のターゲットをセミコロンで区切った、順序指定された一覧です。 次の例では、`Clean` ターゲットを実行してから `Build` ターゲットを実行するように指定しています。
 
@@ -65,7 +65,7 @@ ms.locfileid: "75585458"
 
 インポートされたプロジェクトには、独自の `DefaultTargets` 属性が含まれている場合があります。 検出された最初の `DefaultTargets` 属性によって、実行する既定のターゲットが決定されます。
 
-詳細については、[最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
+詳細については、「[方法: 最初にビルドするターゲットを指定する](../msbuild/how-to-specify-which-target-to-build-first.md)」を参照してください。
 
 ## <a name="first-target"></a>最初のターゲット
 
@@ -73,7 +73,7 @@ ms.locfileid: "75585458"
 
 ## <a name="target-dependencies"></a>ターゲットの依存関係
 
-ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 たとえば、オブジェクトに適用された
+ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 次に例を示します。
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -98,7 +98,7 @@ MSBuild 4.0 では、`BeforeTargets` 属性と `AfterTargets` 属性を使用し
 </Project>
 ```
 
-`Compile` ターゲットの後、`Link` ターゲットの前に実行される中間ターゲット `Optimize` を作成するには、`Project` 要素内の任意の場所に次のターゲットを追加します。
+`Optimize` ターゲットの後、`Compile` ターゲットの前に実行される中間ターゲット `Link` を作成するには、`Project` 要素内の任意の場所に次のターゲットを追加します。
 
 ```xml
 <Target Name="Optimize"
@@ -119,7 +119,7 @@ MSBuild では、ターゲットのビルド順序を次のように決定しま
 
    `BeforeTargets` または `AfterTargets` の条件付きターゲットをリストしている他のターゲットは、やはり決められた順序で実行します。
 
-4. `Condition` 属性がターゲットに適用されており、評価の結果、`false` にならない限り、ターゲットが実行されるか、スキップされる前に、その `DependsOnTargets` ターゲットが実行されます。
+4. `DependsOnTargets` 属性がターゲットに適用されており、評価の結果、`Condition` にならない限り、ターゲットが実行されるか、スキップされる前に、その `false` ターゲットが実行されます。
 
    > [!NOTE]
    > 実行されていない場合、ターゲットはスキップされたものと見なされます。その出力項目が最新の状態になっているためです (「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」を参照してください)。 このチェックはターゲット内のタスクが実行される直前に行われ、ターゲットの実行順序には影響を与えません。
@@ -130,6 +130,6 @@ MSBuild では、ターゲットのビルド順序を次のように決定しま
 
 7. ターゲットが実行されるか、スキップされると、`AfterTargets` 属性でそれをリストする他のターゲットが実行されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ターゲット](../msbuild/msbuild-targets.md)

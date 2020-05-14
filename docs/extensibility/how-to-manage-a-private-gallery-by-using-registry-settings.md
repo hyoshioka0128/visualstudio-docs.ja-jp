@@ -1,28 +1,28 @@
 ---
-title: '方法: レジストリ設定を使用してプライベート ギャラリーの管理 |Microsoft Docs'
+title: '方法 : レジストリ設定を使用してプライベート ギャラリーを管理する |マイクロソフトドキュメント'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b4f33f7ecf974fe527f814b9febdc861101f1ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318490"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710934"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>方法: レジストリ設定を使用してプライベート ギャラリーを管理します。
-管理者または開発者の分離シェルの拡張機能の場合は、コントロール、テンプレート、およびツールでは、Visual Studio ギャラリーでは、サンプル ギャラリー、またはプライベート ギャラリーへのアクセスを制御できます。 ギャラリーを使用できないか使用できなくするために、作成、 *.pkgdef*ファイルを変更したレジストリ キーとその値について説明します。
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>方法: レジストリ設定を使用してプライベート ギャラリーを管理する
+分離シェル拡張機能の管理者または開発者は、Visual Studio ギャラリー、サンプル ギャラリー、またはプライベート ギャラリーのコントロール、テンプレート、およびツールへのアクセスを制御できます。 ギャラリーを使用または使用不可にするには、変更されたレジストリ キーとその値を記述する *.pkgdef*ファイルを作成します。
 
-## <a name="manage-private-galleries"></a>プライベート ギャラリーを管理します。
- 作成することができます、 *.pkgdef*ファイルを複数のコンピューターでギャラリーへのアクセスを制御します。 このファイルは、次の形式をいる必要があります。
+## <a name="manage-private-galleries"></a>プライベート ギャラリーの管理
+ 複数のコンピュータ上のギャラリーへのアクセスを制御する *.pkgdef*ファイルを作成できます。 このファイルは、次の形式である必要があります。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -36,22 +36,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- `Repositories`キーは有効または無効にするギャラリーを参照します。 Visual Studio ギャラリーとサンプル ギャラリーは、次のリポジトリの Guid を使用します。
+ キー`Repositories`は、有効または無効にするギャラリーを指します。 Visual Studio ギャラリーとサンプル ギャラリーでは、次のリポジトリ GUID を使用します。
 
-- Visual Studio ギャラリー:0F45E408-7995-4375-9485-86B8DB553DC9
+- ビジュアルスタジオギャラリー: 0F45E408-7995-4375-9485-86B8DB553DC9
 
-- サンプル ギャラリー:AEB9CB40-D8E6-4615-B52C-27E307F8506C
+- サンプルギャラリー : AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  `Disabled`値は省略可能です。 既定では、ギャラリーが有効にします。
+  値`Disabled`は省略可能です。 既定では、ギャラリーは有効になっています。
 
-  `Priority`値内で、ギャラリーが表示される順序を決定、**オプション** ダイアログ ボックス。 Visual Studio ギャラリーが 10 の優先順位とサンプル ギャラリーが 20 の優先順位。 プライベート ギャラリーは、優先度 100 から始まります。 表示される順序が、ローカライズ済みの値によって決まりますがいくつかのギャラリーには、同じ優先順位の値がある、`DisplayName`属性。
+  この`Priority`値によって、[**オプション]** ダイアログ ボックスにギャラリーが表示される順序が決まります。 Visual Studio ギャラリーには優先度 10 があり、サンプル ギャラリーには優先度 20 があります。 プライベート ギャラリーは優先度 100 から始まります。 複数のギャラリーの優先度の値が同じである場合、表示される順序はローカライズされた`DisplayName`属性の値によって決まります。
 
-  `Protocol`値が Atom ベースまたは SharePoint ベースのギャラリーが必要です。
+  この`Protocol`値は、Atom ベースまたは SharePoint ベースのギャラリーに必要です。
 
-  いずれか`DisplayName`、またはその両方`DisplayNameResourceID`と`DisplayNamePackageGuid`を指定する必要があります。 All が指定した場合、`DisplayNameResourceID`と`DisplayNamePackageGuid`ペアを使用します。
+  のいずれか`DisplayName`、または`DisplayNameResourceID` `DisplayNamePackageGuid`、のいずれか、または の を指定する必要があります。 すべて指定されている場合は、`DisplayNameResourceID`と`DisplayNamePackageGuid`のペアが使用されます。
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>.Pkgdef ファイルを使用して、Visual Studio ギャラリーを無効にします。
- ギャラリーを無効にすることができます、 *.pkgdef*ファイル。 次のエントリには、Visual Studio ギャラリーが無効にします。
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>pkgdef ファイルを使用して Visual Studio ギャラリーを無効にする
+ *.pkgdef*ファイルのギャラリーを無効にすることができます。 次のエントリは、Visual Studio ギャラリーを無効にします。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -59,7 +59,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- 次のエントリには、サンプル ギャラリーが無効にします。
+ 次のエントリは、サンプル ギャラリーを無効にします。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
@@ -68,4 +68,4 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ```
 
 ## <a name="see-also"></a>関連項目
-- [プライベート ギャラリー](../extensibility/private-galleries.md)
+- [プライベートギャラリー](../extensibility/private-galleries.md)

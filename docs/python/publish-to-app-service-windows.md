@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784661"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586564"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 
@@ -34,11 +34,11 @@ Visual Studio には、Windows 上の Azure App Service に Python Web アプリ
 
 このチュートリアルでは、Bottle、Flask、または Django のいずれかのフレームワークに基づく Web アプリ プロジェクトが必要になります。 プロジェクトがまだなく、発行プロセスを試してみたい場合は、次の手順に従って簡単なテスト プロジェクトを作成します。
 
-1. Visual Studio で、**[ファイル] > [新規] > [プロジェクト]** の順に選び、"Bottle" を検索して、**[Bottle Web プロジェクト]** を選び、プロジェクトの名前とパスを指定し、**[OK]** をクリックします  (Bottle テンプレートは、Python 開発ワークロードに含まれています。[インストール](installing-python-support-in-visual-studio.md)のページを参照してください)。
+1. Visual Studio で、 **[ファイル] > [新規] > [プロジェクト]** の順に選び、"Bottle" を検索して、 **[Bottle Web プロジェクト]** を選び、プロジェクトの名前とパスを指定し、 **[OK]** をクリックします  (Bottle テンプレートは、Python 開発ワークロードに含まれています。[インストール](installing-python-support-in-visual-studio.md)のページを参照してください)。
 
-1. 指示に従って外部パッケージをインストールします。**[仮想環境にインストール]** と仮想環境の優先ベース インタープリターを選択します。 通常、これは App Service にインストールされている Python のバージョンと一致するものを選択します。
+1. 指示に従って外部パッケージをインストールします。 **[仮想環境にインストール]** と仮想環境の優先ベース インタープリターを選択します。 通常、これは App Service にインストールされている Python のバージョンと一致するものを選択します。
 
-1. F5 キーを押すか、**[デバッグ] > [デバッグの開始]** を選択して、プロジェクトをローカルでテストします。
+1. F5 キーを押すか、 **[デバッグ] > [デバッグの開始]** を選択して、プロジェクトをローカルでテストします。
 
 ## <a name="create-an-azure-app-service"></a>Azure App Service の作成
 
@@ -54,18 +54,18 @@ Azure への発行には、ターゲット App Service が必要です。 この
 アクティブな Azure サブスクリプションを使用して、次のように空の Web アプリがある App Service を作成します。
 
 1. [portal.azure.com](https://portal.azure.com) でサインインします。
-1. **[+新規]** を選択してから、**[Web + モバイル]**、**[Web アプリ]** の順に選択します。
-1. Web アプリの名前を指定し、**[リソース グループ]** は "新規作成" のままにして、オペレーティング システムに **[Windows]** を選択します。
-1. **[App Service プラン/場所]** を選択し、**[新規作成]** を選択して名前と場所を指定します。 次に、**[価格レベル]** を選択し、下にスクロールして **[F1 Free]** プランを選択し、**[選択]**、**[OK]**、**[作成]** の順に押します。
-1. (省略可能) App Service が作成されたら、それに移動し、**[発行プロファイルの取得]** を選択し、ファイルをローカルに保存します。
+1. **[+新規]** を選択してから、 **[Web + モバイル]** 、 **[Web アプリ]** の順に選択します。
+1. Web アプリの名前を指定し、 **[リソース グループ]** は "新規作成" のままにして、オペレーティング システムに **[Windows]** を選択します。
+1. **[App Service プラン/場所]** を選択し、 **[新規作成]** を選択して名前と場所を指定します。 次に、 **[価格レベル]** を選択し、下にスクロールして **[F1 Free]** プランを選択し、 **[選択]** 、 **[OK]** 、 **[作成]** の順に押します。
+1. (省略可能) App Service が作成されたら、それに移動し、 **[発行プロファイルの取得]** を選択し、ファイルをローカルに保存します。
 
 ### <a name="using-a-temporary-app-service"></a>一時的な App Service の使用
 
 次の手順に従い、Azure サブスクリプションなしで一時的な App Service を作成します。
 
-1. ブラウザーを開き、[try.azurewebsites.net](https://try.azurewebsites.net) にアクセスします。
-1. アプリの種類で **[Web App]** を選び、**[次へ]** を選びます。
-1. **[Empty Site]\(空のサイト\)**、**[作成]** の順に選択します。
+1. ブラウザーで [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/) を開きます。
+1. アプリの種類で **[Web App]** を選び、 **[次へ]** を選びます。
+1. **[Empty Site]\(空のサイト\)** 、 **[作成]** の順に選択します。
 1. 任意のソーシャル ログインを使ってサインインし、しばらくすると、表示される URL でサイトの準備ができます。
 1. **[発行プロファイルのダウンロード]** を選び、`.publishsettings` ファイルを保存します。後でこのファイルを使います。
 
@@ -79,7 +79,7 @@ Azure への発行には、ターゲット App Service が必要です。 この
 
 Visual Studio 2017 以降から Azure App Service に発行すると、プロジェクト内のファイルのみがサーバーにコピーされます。 したがって、必要なファイルを作成して、サーバー環境を構成する必要があります。
 
-1. Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、**[追加]、[新しい項目]** の順に選択します。表示されるダイアログ ボックスで、[Azure web.config (Fast CGI)] テンプレートを選択し、[OK] を選択します。 これによりプロジェクト ルートに `web.config` ファイルが作成されます。
+1. Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、 **[追加]、[新しい項目]** の順に選択します。表示されるダイアログ ボックスで、[Azure web.config (Fast CGI)] テンプレートを選択し、[OK] を選択します。 これによりプロジェクト ルートに `web.config` ファイルが作成されます。
 
 1. `web.config` の `PythonHandler` エントリを変更して、パスがサーバー上の Python インストールと一致するようにします (詳細については、[IIS 構成リファレンス](https://www.iis.net/configreference) (iis.net) に関するページを参照してください)。 たとえば、Python 3.6.1 x64 の場合、エントリは次のように表示されます。
 
@@ -133,19 +133,19 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 
     配列が空の場合、Django は自動的に 'localhost' を許可しますが、実稼働環境の URL を追加するとその機能は削除されます。 このため、`settings.py` の開発用のコピーと実稼働環境用のコピーを別々に管理するか、環境変数を使用して実行時の値を制御することをお勧めします。
 
-1. **ソリューション エクスプローラー**で、プロジェクトと同じ名前が付いたフォルダーを展開し、`static` フォルダーを右クリックし、**[追加] > [新しい項目]** を選択し、"Azure 静的ファイルの web.config" テンプレートを選択し、**[OK]** を選択します。 この操作により `static` フォルダー内に別の `web.config` が作成され、そのフォルダーの Python 処理を無効にします。 この構成は、Python アプリケーションを使用せずに、静的ファイルの要求を既定の Web サーバーに送信します。
+1. **ソリューション エクスプローラー**で、プロジェクトと同じ名前が付いたフォルダーを展開し、`static` フォルダーを右クリックし、 **[追加] > [新しい項目]** を選択し、"Azure 静的ファイルの web.config" テンプレートを選択し、 **[OK]** を選択します。 この操作により `static` フォルダー内に別の `web.config` が作成され、そのフォルダーの Python 処理を無効にします。 この構成は、Python アプリケーションを使用せずに、静的ファイルの要求を既定の Web サーバーに送信します。
 
-1. プロジェクトを保存し、Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、**[発行]** を選択します。
+1. プロジェクトを保存し、Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、 **[発行]** を選択します。
 
     ![プロジェクトのコンテキスト メニューの [発行] コマンド](media/template-web-publish-command.png)
 
 1. 表示された **[発行]** タブで、発行先のターゲットを選択します。
 
-    a.  Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、**[既存のものを選択]**、**[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
+    a.  Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、 **[既存のものを選択]** 、 **[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
 
     ![Azure への発行手順 1、Visual Studio 2017 以降、既存のサブスクリプション](media/tutorials-common-publish-1a-2017.png)
 
-    b.  try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、**>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、**[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
+    b.  try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、 **>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、 **[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
 
     ![Azure への発行手順 1、Visual Studio 2017 以降、一時的なアプリ サービス](media/tutorials-common-publish-1b-2017.png)
 
@@ -185,22 +185,22 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 > [!Note]
 > このプロセスの短いビデオについては、「[Visual Studio Python tutorial: Building a website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)」 (Visual Studio Python チュートリアル: Web サイトの構築) (youtube.com、3 分 10 秒) をご覧ください。
 
-1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして、**[発行]** を選びます。
+1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして、 **[発行]** を選びます。
 
-1. **[発行]** ダイアログで、**[Microsoft Azure App Service]** を選びます。
+1. **[発行]** ダイアログで、 **[Microsoft Azure App Service]** を選びます。
 
   ![Azure 発行手順 1](media/tutorials-common-publish-1.png)
 
 1. ターゲットを選びます。
 
-    - Azure サブスクリプションがある場合は、発行先として **[Microsoft Azure App Service]** を選び、次のダイアログで、既存の App Service を選ぶか、**[新規]** を選んで新しく作成します。
-    - try.azurewebsites.net から一時的なサイトを使っている場合は、発行先として **[インポート]** を選び、サイトからダウンロードした `.publishsettings` ファイルを参照して、**[OK]** を選びます。
+    - Azure サブスクリプションがある場合は、発行先として **[Microsoft Azure App Service]** を選び、次のダイアログで、既存の App Service を選ぶか、 **[新規]** を選んで新しく作成します。
+    - try.azurewebsites.net から一時的なサイトを使っている場合は、発行先として **[インポート]** を選び、サイトからダウンロードした `.publishsettings` ファイルを参照して、 **[OK]** を選びます。
 
-1. App Service の詳細が、**[発行]** ダイアログの **[接続]** タブに表示されます (下図参照)。
+1. App Service の詳細が、 **[発行]** ダイアログの **[接続]** タブに表示されます (下図参照)。
 
   ![Azure 発行手順 2](media/tutorials-common-publish-2.png)
 
-1. 必要に応じて、**[次へ >]** を選んで追加設定を確認します。
+1. 必要に応じて、 **[次へ >]** を選んで追加設定を確認します。
 
 1. **[発行]** を選びます。 アプリケーションが Azure に配置されると、そのサイトで既定のブラウザーが開きます。
 

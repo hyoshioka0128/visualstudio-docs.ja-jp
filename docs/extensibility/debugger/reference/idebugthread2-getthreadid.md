@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId |Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66ad2151f6455d758d57c51a387184a9fcce8ec7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320171"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718708"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-システムのスレッド識別子を取得します。
+システム スレッド識別子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ int GetThreadId (
 
 ## <a name="parameters"></a>パラメーター
 `pdwThreadId`\
-[out]システムのスレッド識別子を返します。
+[アウト]システム スレッド識別子を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-スレッド ID は、プロセスの他のすべてのスレッド間でスレッドを識別するために使用されます。
+スレッド ID は、プロセス内の他のすべてのスレッドの中でスレッドを識別するために使用されます。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CProgram`を実装するオブジェクト、 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)インターフェイス。
+`CProgram` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を次の例に示します。
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {

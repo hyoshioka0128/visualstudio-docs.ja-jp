@@ -1,49 +1,49 @@
 ---
-title: どのような&#39;、Visual Studio 2017 SDK の新 |Microsoft Docs
+title: Visual Studio 2017 SDK の新機能&#39;|マイクロソフトドキュメント
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 434a04aaa8389b4b09f32778d5de63bd2a7d687f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88330aa68f2a3752431fd2fbe6c5c1c649acbb8b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350791"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697206"
 ---
-# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>どのような&#39;s、Visual Studio 2017 SDK の新機能
+# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK の新機能&#39;
 
-Visual Studio SDK では、Visual Studio 2017 の新規および更新の機能が次があります。
+Visual Studio SDK には、Visual Studio 2017 の次の新機能と更新された機能があります。
 
 ## <a name="vsix-v3-format"></a>VSIX v3 形式
 
-Visual Studio 2017 の新しい軽量インストールをサポートするためには、VSIX 拡張機能マニフェスト形式がバージョン 3 (VSIX v3) に更新されました。
+Visual Studio 2017 の新しい軽量インストールをサポートするために、VSIX 拡張機能マニフェストの形式がバージョン 3 (VSIX v3) に更新されました。
 
-新しい形式はサポートしています。
+新しい形式では、次の機能がサポートされています。
 
-* 検出され、VSIXInstaller によってインストールの前提条件を明示的に宣言します。
-* 拡張機能のインストール上のアセンブリを Ngen します。
-* 通常の拡張機能のルート以外の資産をインストールします。
+* VSIX インストーラによって検出およびインストールされる必須コンポーネントを明示的に宣言します。
+* 拡張インストール時の Ngen アセンブリ。
+* 通常の拡張ルートの外部にアセットをインストールする。
 
 これらの変更の詳細については、次のトピックを参照してください。
 
-* [Visual Studio 2017 の拡張機能への変更](breaking-changes-2017.md)
+* [Visual Studio 2017 の機能拡張の変更点](breaking-changes-2017.md)
 * [VSIX v3 での Ngen のサポート](ngen-support.md)
-* [拡張機能フォルダー外にインストールします。](set-install-root.md)
-* [よく寄せられる質問の Visual Studio 2017 の機能拡張](faq-2017.md)
+* [拡張機能フォルダー外でのインストール](set-install-root.md)
+* [Visual Studio 2017 の拡張機能に関するよく寄せられる質問](faq-2017.md)
 
-## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>拡張機能プロジェクトを Visual Studio 2017 に移行します。
+## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>拡張機能プロジェクトを Visual Studio 2017 に移行する
 
-Visual Studio 2017 の機能拡張プロジェクトと独自の VSIX マニフェストを更新する方法については、次を参照してください。[方法。機能拡張プロジェクトを Visual Studio 2017 に移行](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)します。
+拡張機能プロジェクトとその VSIX マニフェストを Visual Studio 2017 に更新する方法については、「[方法: 拡張機能プロジェクトを Visual Studio 2017 に移行する](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」を参照してください。
 
-## <a name="custom-project-and-item-templates"></a>カスタム プロジェクトと項目テンプレート
+## <a name="custom-project-and-item-templates"></a>カスタム プロジェクトテンプレートと項目テンプレート
 
-Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは不要になった実行されます。 代わりに、拡張機能では、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新することができます。 MSI を使用して、拡張機能をデプロイする場合は、手動でテンプレート マニフェスト ファイルを生成する必要があります。 詳細については、次を参照してください。[カスタム プロジェクトと項目テンプレートを Visual Studio 2017 のアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)します。 テンプレート マニフェスト スキーマについては[Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
+Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは実行されなくなります。 代わりに、拡張機能は、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新できます。 MSI を使用して拡張機能を展開する場合は、テンプレート マニフェスト ファイルを手入力で生成する必要があります。 詳細については、「 [Visual Studio 2017 のカスタム プロジェクトテンプレートと項目テンプレートをアップグレードする](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)」を参照してください。 テンプレート マニフェスト スキーマについては、「 [Visual Studio テンプレート マニフェスト スキーマ リファレンス](../extensibility/visual-studio-template-manifest-schema-reference.md)」に記載されています。
 
-## <a name="updated-extension-performance-guidelines"></a>更新された拡張機能のパフォーマンスに関するガイドライン
+## <a name="updated-extension-performance-guidelines"></a>拡張機能のパフォーマンス ガイドラインを更新しました
 
-新しい[方法。拡張機能のパフォーマンス診断](how-to-diagnose-extension-performance.md)下記事[管理 Vspackage](managing-vspackages.md)を検出し、Visual Studio 拡張機能への影響を分析する方法について説明起動とソリューション読み込み時間。
+Visual Studio の起動時間とソリューションの読み込み時間に対する拡張機能の影響を検出して分析する方法を示す方法を示す[VSPackage](managing-vspackages.md)の管理の下に新しい[方法: 拡張機能のパフォーマンス](how-to-diagnose-extension-performance.md)の記事があります。

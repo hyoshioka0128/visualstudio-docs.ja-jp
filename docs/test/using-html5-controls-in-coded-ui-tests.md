@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585588"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>コード化された UI テストでの HTML5 コントロールの使用
@@ -36,7 +36,7 @@ ms.locfileid: "75585588"
 
 ![HTML5 オーディオ コントロール](../test/media/codedui_html5_audio.png)
 
-|アクション|記録中|生成されたコード|
+|アクション|記録|生成されたコード|
 |-|---------------|-|
 |**オーディオの再生**<br /><br /> コントロールから直接、またはコントロールの右クリック メニューから。|\<name> オーディオを 00:00:00 の時点から再生|HtmlAudio.Play(TimeSpan)|
 |**オーディオの特定の時点にシーク**|\<name> オーディオの 00:01:48 の時点にシーク|HtmlAudio.Seek(TimeSpan)|
@@ -59,7 +59,7 @@ ms.locfileid: "75585588"
 
 ![HTML5 ビデオ コントロール](../test/media/codedui_html5_video.png)
 
-|アクション|記録中|生成されたコード|
+|アクション|記録|生成されたコード|
 |-|---------------|-|
 |**ビデオの再生**<br /><br /> コントロールから直接、またはコントロールの右クリック メニューから。|\<name> ビデオを 00:00:00 の時点から再生|HtmlVideo.Play(TimeSpan)|
 |**ビデオの特定の時点にシーク**|\<name> ビデオの 00:01:48 の時点にシーク|HtmlVideo.Seek(TimeSpan)|
@@ -82,7 +82,7 @@ ms.locfileid: "75585588"
 
 ![HTML5 ProgressBar コントロール](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [HTML 要素](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

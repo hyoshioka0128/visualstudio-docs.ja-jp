@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567841"
 ---
 # <a name="print-command"></a>Print コマンド
@@ -35,9 +35,9 @@ ms.locfileid: "75567841"
 
 `text`
 
-必須です。 評価対象の式または表示対象のテキストです。
+必須。 評価対象の式または表示対象のテキストです。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 このコマンドのエイリアスとして疑問符 (?) を使用できます。 したがって、たとえば次のコマンド
 
@@ -59,10 +59,10 @@ ms.locfileid: "75567841"
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Evaluate Statement コマンド](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595775"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>var を明示的な型に置き換えるリファクタリング
@@ -44,7 +44,7 @@ ms.locfileid: "75595775"
 
 1. **[明示的な型の使用]** を選びます。 または、 **[変更のプレビュー]** を選択して [[変更のプレビュー]](../../ide/preview-changes.md) ダイアログを開いて **[適用]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [暗黙的に型指定された変数 (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)
 - [リファクタリング](../refactoring-in-visual-studio.md)

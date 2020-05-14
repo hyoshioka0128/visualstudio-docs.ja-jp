@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bb2b296d8728587c9aa3c22b7a670d89612eff1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596425"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -43,7 +43,7 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 バックアップは自動的に作成され、現在のディレクトリに作成される Backup という名前のディレクトリにコピーされます。
 
@@ -59,6 +59,6 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

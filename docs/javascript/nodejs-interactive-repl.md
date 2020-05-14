@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840669"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Node.js の対話型ウィンドウを使用する
@@ -24,11 +24,11 @@ Node.js Tools for Visual Studio には、インストールされている Node.
 
 ## <a name="open-the-interactive-window"></a>対話型ウィンドウを開く
 
-ソリューション エクスプローラーで Node.js プロジェクト ノードを右クリックして、**[Node.js 対話型ウィンドウを開く]** を選択することで、対話型ウィンドウを開くことができます。
+ソリューション エクスプローラーで Node.js プロジェクト ノードを右クリックして、 **[Node.js 対話型ウィンドウを開く]** を選択することで、対話型ウィンドウを開くことができます。
 
 ![プロジェクトのコンテキスト メニューの Node.js 対話型ウィンドウ](../javascript/media/interactivewindow-open-from-project.png)
 
-Node.js 対話型ウィンドウを開く既定のショートカット キーは、**Ctrl + K、N** です。または、ツール バーから **[表示]** > **[ウィンドウ]** > **[Node.js 対話型ウィンドウ]** を選択して、ウィンドウを開くこともできます。
+Node.js 対話型ウィンドウを開く既定のショートカット キーは、**Ctrl + K、N** です。または、ツール バーから **[表示]**  >  **[ウィンドウ]**  >  **[Node.js 対話型ウィンドウ]** を選択して、ウィンドウを開くこともできます。
 
 ## <a name="use-the-repl"></a>REPL を使用する
 

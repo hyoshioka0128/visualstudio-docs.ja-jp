@@ -1,25 +1,25 @@
 ---
-title: 要素をグループ化 |Microsoft Docs
+title: グループ要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3c1c4bedc5ff44f797e6b46e351dc3753362501
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342353"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711229"
 ---
 # <a name="group-element"></a>Group 要素
-VSPackage のコマンド グループを定義します。
+VSPackage コマンド グループを定義します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,17 +36,17 @@ VSPackage のコマンド グループを定義します。
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須。 コマンド id を GUID と ID の GUID です。|
-|ID|必須。 コマンド id を GUID と ID の ID。|
-|priority|省略可能です。 優先度を示す数値。|
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
+|guid|必須。 GUID/ID コマンド識別子の GUID です。|
+|id|必須。 GUID/ID コマンド ID の ID。|
+|priority|省略可能。 優先順位を指定する数値。|
+|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|親|省略可能です。 ボタンの親要素。|
-|注釈|省略可能なコメント。|
+|Parent|省略可能。 ボタンの親要素。|
+|Annotation|オプションのコメント。|
 
 ### <a name="parent-elements"></a>親要素
 

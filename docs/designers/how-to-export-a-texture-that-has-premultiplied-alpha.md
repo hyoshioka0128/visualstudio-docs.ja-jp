@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72635481"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>方法: 前乗算されたアルファを持つテクスチャをエクスポートする
@@ -38,12 +38,12 @@ ms.locfileid: "72635481"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>前乗算されたアルファを使用したテクスチャを作成するには
 
-1. 基本的なテクスチャを作成します。 既存のイメージ ファイルを読み込むか、「[方法:基本的なテクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の手順に従ってイメージ ファイルを作成します。
+1. 基本的なテクスチャを作成します。 既存のイメージ ファイルを読み込むか、「[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の手順に従ってイメージ ファイルを作成します。
 
 2. イメージ コンテンツ パイプラインによって処理されるようにテクスチャ ファイルを構成します。 **ソリューション エクスプローラー**でテクスチャ ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[構成プロパティ]**  >  **[全般]** ページの順に進み、 **[項目の種類]** を **[Image Content Pipeline]\(イメージ コンテンツ パイプライン\)** に設定します。 **[コンテンツ]** が **[はい]** に、 **[ビルドから除外]** が **[いいえ]** に設定されていることを確認し、 **[適用]** ボタンをクリックします。 **[イメージ コンテンツ パイプライン]** の構成プロパティ ページが表示されます。
 
-3. 前乗算されたアルファを生成するようにイメージ コンテンツ パイプラインを構成します。 **[構成プロパティ]** 、 **[イメージ コンテンツ パイプライン]** 、 **[全般]** の順にクリックし、 **[Convert to pre-multiplied alpha format]\(前乗算されたアルファ形式に変換\)** プロパティを **[はい (/generatepremultipliedalpha)]** に設定します。
+3. 前乗算されたアルファを生成するようにイメージ コンテンツ パイプラインを構成します。 **[構成プロパティ]**  >  **[イメージ コンテンツ パイプライン]**  >  **[全般]** の順にクリックし、 **[Convert to pre-multiplied alpha format]** (前乗算されたアルファ形式に変換) プロパティを **[はい (/generatepremultipliedalpha)]** に設定します。
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
    プロジェクトをビルドすると、イメージ コンテンツ パイプラインによってソース イメージが作業形式から、指定した出力形式に変換されます。同時に、前乗算されたアルファが生成されます。結果はプロジェクトの出力ディレクトリにコピーされます。

@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76269097"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio でのコンパイルとビルド
 
-IDE の中でのビルド方法の入門資料については、「[チュートリアル:アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
+IDE の中でのビルド方法の入門資料については、「[チュートリアル: アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
 
 Visual Studio IDE、MSBuild コマンド ライン ツール、Azure Pipelines のいずれかの方法を使用して、アプリケーションをビルドすることができます。
 
-| ビルド方法 | 利点 |
+| ビルド方法 | メリット |
 | --- |--- | --- |
 | IDE |- ビルドを即座に作成してデバッガーでテストできます。<br />- マルチプロセッサ ビルドを実行します (C++ や C# のプロジェクトの場合)。<br />- ビルド システムのさまざまな面をカスタマイズできます。 |
 | CMake | - CMake ツールを使用してプロジェクトをビルドします<br />- Linux および Windows プラットフォーム全体で同じビルド システムを使用します。 |
@@ -41,7 +41,7 @@ Visual Studio IDE、MSBuild コマンド ライン ツール、Azure Pipelines �
 
 Visual Studio でプロジェクトを作成すると、そのプロジェクトとプロジェクトが属するソリューションのための、既定のビルド構成が作成されます。  この構成は、ソリューションとプロジェクトをどのようにビルドして配置するかを定義するものです。 このうち、プロジェクト構成はターゲット プラットフォーム (たとえば Windows または Linux) とビルドの種類 (たとえばデバッグまたはリリース) ごとに固有です。 これらの構成は自由に編集でき、必要に応じて独自の構成を作成することもできます。
 
-IDE の中でのビルド方法の入門資料については、「[チュートリアル:アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
+IDE の中でのビルド方法の入門資料については、「[チュートリアル: アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
 
 次に、「[Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](building-and-cleaning-projects-and-solutions-in-visual-studio.md)」を参照して、このプロセスに関してどのようなカスタマイズが可能かを把握してください。 カスタマイズの例としては、[出力ディレクトリの変更](how-to-change-the-build-output-directory.md)、[カスタム ビルド イベントの指定](specifying-custom-build-events-in-visual-studio.md)、[プロジェクト依存関係の管理](how-to-create-and-remove-project-dependencies.md)、[ビルド ログ ファイルの管理](how-to-view-save-and-configure-build-log-files.md)、[コンパイラ警告の抑制](how-to-suppress-compiler-warnings.md)などがあります。
 
@@ -53,7 +53,7 @@ IDE の中でのビルド方法の入門資料については、「[チュート
 - [ビルド オプションの設定](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [複数プロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Web サイト プロジェクトのビルド (コンパイル)](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [コンパイルとビルド (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)

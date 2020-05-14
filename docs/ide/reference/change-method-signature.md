@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711258"
 ---
 # <a name="change-a-method-signature-refactoring"></a>メソッド シグネチャの変更リファクタリング
@@ -35,7 +35,7 @@ ms.locfileid: "68711258"
 
 **理由:** パラメーターは手動で削除および順序を変更して、そのメソッドのすべての呼び出しを検索し、1 つずつ変更できますが、エラーにつながる可能性があります。  このリファクタリング ツールは、タスクを自動的に実行します。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. 変更するメソッドの名前またはその使用の 1 つを強調表示するか、内側にテキスト カーソルを置きます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "68711258"
 
 2. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - **Ctrl + R** キーを押し、次に **Ctrl + V** キーを押します。  選ばれているプロファイルによってキーボード ショートカットが異なる場合があることに注意してください。
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[シグネチャの変更]** を選択します。
    - **マウス**
@@ -61,14 +61,14 @@ ms.locfileid: "68711258"
 
    ![[シグネチャの変更] ダイアログ](media/changesignature-dialog-cs.png)
 
-   | ボタン | 説明
+   | ボタン | [説明]
    | ------ | ---
    | **上/下** | 選択したパラメーターを一覧内で上下に移動します
    | **削除** | 選択したパラメーターを一覧から削除します
    | **復元** | 選択した、取り消したパラメーターを一覧に復元します
 
    > [!TIP]
-   > コミットする前に[結果を確認する](../../ide/preview-changes.md)には、 **[参照の変更のプレビュー]** チェック ボックスを使います。
+   > コミットする前に**結果を確認する**には、[[参照の変更のプレビュー]](../../ide/preview-changes.md) チェック ボックスを使います。
 
 4. 完了したら、 **[OK]** ボタンをクリックして変更を実行します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "68711258"
 
       ![シグネチャ変更の結果 - Visual Basic](media/changesignature-result-vb.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

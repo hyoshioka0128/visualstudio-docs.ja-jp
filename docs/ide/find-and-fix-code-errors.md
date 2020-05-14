@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588617"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77476869"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio でコードを機能させる
 
@@ -78,7 +78,7 @@ Visual Studio には、入力したときに C# と Visual Basic のコードを
 
 ### <a name="c-code-analysis"></a>C++ コードの分析
 
-C++ コードを分析するには、[静的コード分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)を実行します。 正常なビルドの妨げとなる明らかなエラーをクリーンアップしたら、静的コード分析を実行することを習慣づけてください。それによって生成される可能性がある警告に対処するための時間を取ってください。 将来の頭痛の種を取り除き、コード スタイルの手法をいくらか学ぶことができます。
+C++ コードを分析するには、[静的コード分析](/cpp/code-quality/quick-start-code-analysis-for-c-cpp)を実行します。 正常なビルドの妨げとなる明らかなエラーをクリーンアップしたら、静的コード分析を実行することを習慣づけてください。それによって生成される可能性がある警告に対処するための時間を取ってください。 将来の頭痛の種を取り除き、コード スタイルの手法をいくらか学ぶことができます。
 
 **Alt**+**F11** キーを押して (または、上部のメニューから **[分析]**  >  **[ソリューションでコード分析を実行]** を選択して)、静的コード分析を開始します。
 

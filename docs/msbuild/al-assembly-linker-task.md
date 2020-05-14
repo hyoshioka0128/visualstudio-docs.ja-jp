@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d90e6c94d07b73e79d793982944bca395a562df2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5c7964c6654d1f6996d1acc44542e3a7bf093a52
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593474"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167463"
 ---
 # <a name="al-assembly-linker-task"></a>AL (アセンブリ リンカー) タスク
-AL タスクは、[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] と共に配布されるツールである *AL.exe* をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 *AL.exe* について詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」をご覧ください。
+
+AL タスクは、Windows ソフトウェア開発キット (SDK) と共に配布されるツールである *AL.exe* をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 *AL.exe* について詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」をご覧ください。
 
 ## <a name="parameters"></a>パラメーター
+
  `AL` タスクのパラメーターの説明を次の表に示します。
 
 | パラメーター | 説明 |
@@ -62,16 +64,16 @@ AL タスクは、[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)
 | `TemplateFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> カルチャ フィールドを除く、すべてのアセンブリ メタデータの継承元であるアセンブリを指定します。 指定するアセンブリには厳密な名前が必要です。<br /><br /> `TemplateFile` パラメーターを指定して作成したアセンブリは、サテライト アセンブリになります。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/template` オプションに対応します。 |
 | `Timeout` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> タスク実行を終了するまでの時間をミリ秒単位で指定します。 既定値は `Int.MaxValue` であり、タイムアウト期限がないことを示します。 |
 | `Title` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリの `Title` フィールドに文字列を指定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/title` オプションのドキュメントをご覧ください。 |
-| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (Al.exe) を読み込む場所を指定します。 このパラメーターを指定しないと、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を実行しているフレームワークのバージョンに対応する SDK インストール パスがタスクに使用されます。 |
+| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (Al.exe) を読み込む場所を指定します。 このパラメーターを指定しない場合、タスクでは、MSBuild を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
 | `Trademark` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリの `Trademark` フィールドに文字列を指定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/trade[mark]` オプションのドキュメントをご覧ください。 |
 | `Version` | 省略可能な `String` 型のパラメーターです。<br /><br /> このアセンブリのバージョン情報を指定します。 文字列の形式は、*major.minor.build.revision* です。 既定値は 0 です。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/v[ersion]` オプションのドキュメントをご覧ください。 |
 | `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> *.ico* ファイルをアセンブリに挿入します。 この *.ico* ファイルは、エクスプローラーにおける出力ファイルの視覚的な表現を提供します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/win32icon` オプションに対応します。 |
 | `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/win32res` オプションのドキュメントをご覧ください。 |
 
-## <a name="remarks"></a>Remarks
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>例
+
  次の例では、指定したオプションでアセンブリを作成します。
 
 ```xml
@@ -92,5 +94,6 @@ AL タスクは、[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)
 ```
 
 ## <a name="see-also"></a>関連項目
+
 * [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 * [タスク](../msbuild/msbuild-tasks.md)

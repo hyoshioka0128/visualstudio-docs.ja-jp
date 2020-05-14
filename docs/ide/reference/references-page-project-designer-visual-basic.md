@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565605"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)
@@ -32,7 +32,7 @@ ms.locfileid: "75565605"
 
 次のオプションを使用すると、プロジェクトの参照やインポートした名前空間を選択または削除できます。
 
-**[参照パス]**
+**参照パス**
 
 このボタンをクリックすると、 **[参照パス]** ダイアログ ボックスにアクセスします。
 
@@ -88,8 +88,8 @@ ms.locfileid: "75565605"
 
 - `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` など、XML 名前空間。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクト内の参照の管理](../../ide/managing-references-in-a-project.md)
-- [方法: インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [方法 : インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports ステートメント (XML 名前空間)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

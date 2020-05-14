@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585575"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでさまざまな Web ブラウザーを使用する
@@ -130,7 +130,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
 [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo |Microsoft Docs
+title: プロパティ 2::プロパティ情報を取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetPropertyInfo
 ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96d291ed86d285316445e40e85c30806f3a42c83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6ec1c3e29e0dbb6ca069dec696e6645a159ec7e6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342913"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721365"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-取得、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)プロパティを記述する構造体。
+プロパティを記述する[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -51,25 +51,25 @@ int GetPropertyInfo ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]値の組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)で入力するフィールドを指定する列挙体、`pPropertyInfo`構造体。
+[in]構造体に入力するフィールドを指定する[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列挙体の値の`pPropertyInfo`組み合わせ。
 
 `nRadix`\
-[in]任意の数値情報を書式設定で使用する基数。
+[in]数値情報の書式設定に使用する基数。
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間をミリ秒単位で指定します。 無期限`INFINITE`に待機するために使用します。
 
 `rgpArgs`\
-[入力、出力]今後使用するために予約されていますnull 値に設定します。
+[イン、アウト]将来の使用のために予約されています。null 値に設定されます。
 
 `dwArgCount`\
-[in]今後使用するために予約されています0 に設定します。
+[in]将来の使用のために予約されています。をゼロに設定します。
 
 `pPropertyInfo`\
-[out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造、プロパティの説明が入力されます。
+[アウト]プロパティの説明が格納されている[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`; エラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

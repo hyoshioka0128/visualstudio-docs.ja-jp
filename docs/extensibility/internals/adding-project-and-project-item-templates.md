@@ -1,76 +1,76 @@
 ---
-title: プロジェクトを追加して、プロジェクト項目テンプレート |Microsoft Docs
+title: プロジェクトおよびプロジェクト項目テンプレートの追加 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ab7a0a14c5a4e832aec330852546b64a41fd0c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315860"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710206"
 ---
-# <a name="add-project-and-project-item-templates"></a>プロジェクトとプロジェクト項目テンプレートを追加します。
-独自のプロジェクトの種類を作成するときに標準を使用して新しいプロジェクトとプロジェクト アイテムを追加するためのサポートを提供する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) ダイアログ ボックス。 次のトピックでは、プロジェクトとプロジェクト アイテムを追加するためのさまざまな手法について説明します。
+# <a name="add-project-and-project-item-templates"></a>プロジェクトおよびプロジェクト項目テンプレートの追加
+独自のプロジェクトタイプを作成する場合は、標準[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の統合開発環境 (IDE) ダイアログボックスを使用して、新しいプロジェクトおよびプロジェクト項目の追加をサポートする必要があります。 次のトピックでは、プロジェクトおよびプロジェクト項目を追加するためのさまざまな手法について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [プロジェクトのコンテキスト](../../extensibility/internals/project-context.md)
+- [プロジェクトコンテキスト](../../extensibility/internals/project-context.md)
 
- プロジェクトが、ほとんどの環境では何のコンテキスト情報を提供するについて説明します。
+ プロジェクトが環境内で起きるものに関するコンテキスト情報のほとんどを提供することを説明します。
 
-- [プロジェクトの優先度](../../extensibility/internals/project-priority.md)
+- [プロジェクトの優先順位](../../extensibility/internals/project-priority.md)
 
- プロジェクト項目に項目を開き、プロジェクトの使用に関するあいまいさを回避するには、1 つのプロジェクトのメンバーでは、通常、について説明します。
+ プロジェクト項目は、通常、どのプロジェクトを使用してアイテムを開くのかのあいまいさを避けるために、1 つのプロジェクトのメンバーであることを説明します。
 
 - [その他のファイル プロジェクト](../../extensibility/internals/miscellaneous-files-project.md)
 
- プロジェクトのプロジェクト アイテムを開くときに使用するエディターの決定に再生をプロジェクトと、ロールでファイルを開いて使用できるエディターの 2 つの種類について説明します。
+ プロジェクト内のファイルを開くために使用できる 2 種類のエディターと、プロジェクト項目を開いたときにどのエディターを使用するかを決定する際にプロジェクトが果たす役割について説明します。
 
-- [プロジェクトと項目テンプレートを登録します。](../../extensibility/internals/registering-project-and-item-templates.md)
+- [プロジェクトおよび項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
 
- しくみについて説明しますと、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトが作成されます。
+ プロジェクトの作成時に発生する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]処理について説明します。
 
-- [新しい項目の追加 ダイアログ ボックスに項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [[新しい項目の追加] ダイアログ ボックスに項目を追加する](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- 項目を追加するプロセスについて説明します、**新しい項目の追加** ダイアログ ボックス。
+ **[新しい項目**の追加] ダイアログ ボックスに項目を追加するプロセスについて説明します。
 
-- [新しいプロジェクト ダイアログ ボックスにディレクトリを追加します。](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [[新しいプロジェクト] ダイアログ ボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
- VSPackage で利用できるカスタム テンプレートを含む新しいディレクトリを登録する例を提供します。
+ VSPackage で使用できるカスタム テンプレートを含む新しいディレクトリを登録する例を示します。
 
-- [新しい項目の追加 ダイアログ ボックスにディレクトリを追加します。](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [[新しい項目の追加] ダイアログ ボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- ディレクトリの新しいセットを登録する例を示します、**新しい項目の追加** ダイアログ ボックス。
+ [新しい項目の追加] ダイアログ ボックスのディレクトリの新しいセットを登録する例**を示**します。
 
-- [プロジェクト システムを拡張するための IDE 定義コマンド](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [プロジェクトシステムを拡張するための IDE 定義コマンド](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- さまざまな種類のプロジェクト システムを拡張するために使用されるコマンド項目を一覧表示します。
+ プロジェクト システムの拡張に使用されるさまざまな種類のコマンド項目を示します。
 
-- [プロジェクトの拡張に通常使用されるオブジェクトの Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [プロジェクトの拡張に通常使用されるオブジェクトの CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
- 拡張に使用されるオブジェクトの Catid をリスト[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]、および[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]プロジェクト システム。
+ プロジェクト システムの拡張[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]に使用されるオブジェクトの CATID[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]を[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]一覧表示します。
 
 ## <a name="related-sections"></a>関連項目
-- [方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)
+- [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)
 
- プロジェクトの特定のエディターに本質的にバインドされている項目を開くための手順について説明します。
+ プロジェクトの特定のエディターに固有の項目を開く手順について説明します。
 
-- [方法: 標準のエディターを開く](../../extensibility/how-to-open-standard-editors.md)
+- [方法: 標準エディターを開く](../../extensibility/how-to-open-standard-editors.md)
 
- 標準のエディターを開くための手順について説明します。
+ 標準エディターを開く手順について説明します。
 
-- [プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)
+- [プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)
 
- プロジェクト サブタイプの概念に関するトピックへのリンクを提供します。 既存のプロジェクト サブタイプの拡張[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]と[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]プロジェクト。
+ プロジェクト サブタイプの概念トピックへのリンクを示します。 プロジェクトのサブタイプは[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]既存のプロジェクトとプロジェクトを拡張します。
 
 - [プロジェクトの種類](../../extensibility/internals/project-types.md)
 
- 新しいプロジェクトの種類を設計する方法についての情報を提供するその他のトピックへのリンクを提供します。
+ 新しいプロジェクトの種類のデザイン方法に関する情報を提供するその他のトピックへのリンクを示します。

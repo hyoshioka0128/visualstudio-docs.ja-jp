@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e01259fdd23e60a1408addc10a6af3a12479c9f2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772819"
 ---
 # <a name="collect-tier-interaction-data"></a>階層相互作用データを収集する
@@ -32,7 +32,7 @@ ms.locfileid: "74772819"
 
 **Windows 8 と Windows Server 2012**
 
-Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで階層相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。 UWP アプリの階層相互作用データを収集することはできません。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。 階層相互作用データは、サポートされている他のバージョンの Windows で、すべてのプロファイル方法に含めることができます。
+Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで階層相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。 UWP アプリの階層相互作用データを収集することはできません。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。 階層相互作用データは、サポートされている他のバージョンの Windows で、すべてのプロファイル方法に含めることができます。
 
 **パフォーマンス ウィザード**
 
@@ -46,6 +46,6 @@ Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで
 
 3. パフォーマンス エクスプローラーで、 **[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [階層の相互作用ビュー](../profiling/tier-interactions-view.md)

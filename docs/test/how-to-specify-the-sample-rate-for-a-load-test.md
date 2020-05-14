@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594826"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>方法: ロード テストの実行設定のサンプル速度を指定する
@@ -23,7 +23,7 @@ ms.locfileid: "75594826"
 
 **[プロパティ]** ウィンドウの実行設定の **[サンプル速度]** プロパティ値を編集するには、**ロード テスト エディター**を使用します。 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
 
-ロード テストの長さに基づいて、ロード テストの実行設定の **[サンプル速度]** プロパティに適切な値を選択します。 既定値 (5 秒) のようにサンプル速度が小さいと、ロード テスト結果のデータベースに必要な容量が増えます。 長いロード テストでは、サンプル速度を増加すると、収集するデータ量を減らすことができます。 詳細については、[ロード テストの実行設定のサンプル速度を指定する](../test/how-to-specify-the-sample-rate-for-a-load-test.md)」を参照してください。
+ロード テストの長さに基づいて、ロード テストの実行設定の **[サンプル速度]** プロパティに適切な値を選択します。 既定値 (5 秒) のようにサンプル速度が小さいと、ロード テスト結果のデータベースに必要な容量が増えます。 長いロード テストでは、サンプル速度を増加すると、収集するデータ量を減らすことができます。 詳細については、「[方法: ロード テストの実行設定のサンプル速度を指定する](../test/how-to-specify-the-sample-rate-for-a-load-test.md)」を参照してください。
 
 以下は、サンプル速度のガイドラインです。
 
@@ -48,9 +48,9 @@ ms.locfileid: "75594826"
 
 4. **[サンプル速度]** プロパティに、ロード テストによってパフォーマンス カウンターのデータが収集される頻度を示す時間の値を入力します。
 
-5. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[サンプル速度]** の値を使用して、ロード テストを実行します。
+5. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[サンプル速度]** の値を使用して、ロード テストを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)
 - [ロード テスト シナリオのプロパティ](../test/load-test-scenario-properties.md)

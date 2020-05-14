@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75735819"
 ---
 # <a name="install-python-interpreters"></a>Python インタープリターのインストール
@@ -40,9 +40,9 @@ Visual Studio でインストール済みの環境が検出されない場合は
 
 Visual Studio の [ **[Python 環境]** ](managing-python-environments-in-visual-studio.md#the-python-environments-window) ウィンドウには既知の環境がすべて表示され、既存のインタープリターの更新プログラムが自動的に検出されます。
 
-| インタープリター | 説明 |
+| インタープリター | [説明] |
 | --- | --- |
-| [CPython](https://www.python.org/) | "ネイティブ" で最もよく使われるインタープリターであり、32 ビット バージョンと 64 ビット バージョンがあります (32 ビットを推奨)。 最新の言語機能、Python パッケージの最大限の互換性、完全なデバッグ サポート、および [IPython](https://ipython.org/) との相互運用性が含まれています。 参照:「[Should I use Python 2 or Python 3?](https://wiki.python.org/moin/Python2orPython3)」 (Python 2 と Python 3 のどちらを使うか)。 Visual Studio 2015 以前では、Python 3.6 以降がサポートされていないため、**Python バージョン 3.6 はサポートされていません**というようなエラーが発生する場合があることに注意してください。 代わりに 3.5 以前の Python を使用します。 |
+| [CPython](https://www.python.org/) | "ネイティブ" で最もよく使われるインタープリターであり、32 ビット バージョンと 64 ビット バージョンがあります (32 ビットを推奨)。 最新の言語機能、Python パッケージの最大限の互換性、完全なデバッグ サポート、および [IPython](https://ipython.org/) との相互運用性が含まれています。 「[Should I use Python 2 or Python 3?](https://wiki.python.org/moin/Python2orPython3)」(Python 2 と Python 3 のどちらを使うか) もご覧ください。 Visual Studio 2015 以前では、Python 3.6 以降がサポートされていないため、**Python バージョン 3.6 はサポートされていません**というようなエラーが発生する場合があることに注意してください。 代わりに 3.5 以前の Python を使用します。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python の .NET の実装であり (32 ビット バージョンと 64 ビット バージョン)、C#/F#/Visual Basic の相互運用機能、.NET API へのアクセス、標準 Python デバッグ (ただし、C++ 混合モードのデバッグはありません)、IronPython/C# の混合デバッグが提供されます。 ただし、IronPython は仮想環境をサポートしていません。 |
 | [Anaconda](https://www.continuum.io) | Python を利用するオープン データ サイエンス プラットフォームであり、最新バージョンの CPython と、インストールが困難なパッケージのほとんどを含みます。 他のインタープリターに決定できない場合にお勧めします。 |
 | [PyPy](https://www.pypy.org/) | Python の高パフォーマンスなトレースの JIT 実装であり、実行時間の長いプログラム、およびパフォーマンスに問題があるが他の解決策が見つからない場合に、適しています。 Visual Studio で動作しますが、高度なデバッグ機能のサポートには制限があります。 |
@@ -65,7 +65,7 @@ Python 環境用に新しい検出形式を提供したい開発者は、「[PTV
 
 このプロセスを実行すると、Visual Studio が使用するインタープリターの場所を特定するレジストリ エントリが正しく更新されます。 インストーラーを使用すると、他にも存在する可能性のある副作用も処理されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Python 環境を管理する](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86525b2c4ddcf36ca85feee31f89f0003f1f9775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590827"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167398"
 ---
 # <a name="lc-task"></a>LC タスク
+
 *LC.exe* をラップします。LC.exe は *.licx* ファイルから *.license* ファイルを生成します。 *LC.exe* の詳細については、「[Lc.exe (ライセンス コンパイラ)](/dotnet/framework/tools/lc-exe-license-compiler)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
 `LC` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -41,9 +43,10 @@ ms.locfileid: "75590827"
 |`SdkToolsPath`|省略可能な `String` 型のパラメーターです。<br /><br /> *resgen.exe* などの SDK ツールのパスを指定します。|
 |`Sources`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> *.licenses* ファイルに組み込むライセンス付きコンポーネントを格納するアイテムを指定します。 詳細については、「[Lc.exe (ライセンス コンパイラ)](/dotnet/framework/tools/lc-exe-license-compiler)」にある `/complist` スイッチの説明を参照してください。|
 
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>例
+
 `LC` タスクを使用してライセンスをコンパイルする例を次に示します。
 
 ```xml
@@ -67,5 +70,6 @@ ms.locfileid: "75590827"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

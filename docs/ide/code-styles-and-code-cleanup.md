@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585406"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306831"
 ---
 # <a name="code-style-preferences"></a>コードのスタイル設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "75585406"
 
 ::: moniker range=">=vs-2019"
 
-EditorConfig ファイルは手動で入力できます。または、Visual Studio の **[オプション]** ダイアログ ボックスで設定したコード スタイルの設定に基づいて、ファイルを自動的に生成できます。 このオプション ページは、 **[ツール]** 、 **[オプション]** 、 **[テキスト エディター]** 、 **[C#]** または **[Basic]** 、 **[コード スタイル]** 、 **[全般]** の順に選択すると表示されます。 **[Generate .editorconfig file from settings]\(設定から .editorconfig ファイルを生成する\)** をクリックすると、この **[オプション]** ページの設定に基づいてコーディング スタイルの *.editorconfig* ファイルが自動的に生成されます。
+EditorConfig ファイルは手動で入力できます。または、Visual Studio の **[オプション]** ダイアログ ボックスで設定したコード スタイルの設定に基づいて、ファイルを自動的に生成できます。 このオプション ページは、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]** 、 **[C#]** または **[Basic]** 、 **[コード スタイル]**  >  **[全般]** の順に選択すると表示されます。 **[Generate .editorconfig file from settings]\(設定から .editorconfig ファイルを生成する\)** をクリックすると、この **[オプション]** ページの設定に基づいてコーディング スタイルの *.editorconfig* ファイルが自動的に生成されます。
 
 ![Visual Studio 2019 で設定から editorconfig ファイルを生成する](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -64,7 +64,7 @@ EditorConfig ファイルは手動で入力できます。または、Visual Stu
 
 ::: moniker range="vs-2017"
 
-正規の書式設定 (字下げなど) に沿って (EditorConfig ファイルまたは **[コード スタイル]** オプションから) コード スタイル設定を適用するように**ドキュメントのフォーマット** コマンドを構成できます ( **[編集]** 、 **[詳細]** 、 **[ドキュメントのフォーマット]** )。 プロジェクトに *.editorconfig* ファイルが存在する場合、その設定が優先されます。
+正規の書式設定 (字下げなど) に沿って (EditorConfig ファイルまたは **[コード スタイル]** オプションから) コード スタイル設定を適用するように**ドキュメントのフォーマット** コマンドを構成できます ( **[編集]**  >  **[詳細]**  >  **[ドキュメントのフォーマット]** )。 プロジェクトに *.editorconfig* ファイルが存在する場合、その設定が優先されます。
 
 > [!NOTE]
 > **ドキュメントのフォーマット** コマンドでコード スタイルを適用することは、C# コード ファイルの場合にのみ可能です。 これは試験段階の機能です。

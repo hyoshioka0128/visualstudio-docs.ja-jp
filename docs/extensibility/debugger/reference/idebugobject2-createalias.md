@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias |Microsoft Docs
+title: IDebug オブジェクト2::エイリアスの作成 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317396"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726297"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-一意の ID またはこのオブジェクトの別名を作成します。 または、既存のエイリアスを取得します。
+このオブジェクトの一意の ID またはエイリアスを作成するか、既存のエイリアスを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int CreateAlias(
 
 ## <a name="parameters"></a>パラメーター
 `ppAlias`\
-[out]新しい (または既存) のエイリアスです。
+[アウト]新しい (または既存の) エイリアス。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- エイリアスは、オブジェクトがメモリ内にある間は、特定のオブジェクトを表すラベルです。
+ 別名は、オブジェクトがメモリー内にあるときに特定のオブジェクトを表すラベルです。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

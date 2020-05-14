@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588721"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>方法: エディター内のテキストの大文字と小文字を変更する
+# <a name="how-to-change-text-case-in-the-editor"></a>方法 : エディター内のテキストの大文字と小文字を変更する
 
 メニュー コマンドやキーボード ショートカットを使って、選択したテキストを、すべて大文字またはすべて小文字に変換できます。
 
@@ -36,6 +36,6 @@ ms.locfileid: "75588721"
 > [!TIP]
 > 大文字/小文字の書式設定を元に戻すには、 **[編集]** メニューの **[元に戻す]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)

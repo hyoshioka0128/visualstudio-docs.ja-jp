@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114192"
 ---
 # <a name="c-enumerations-in-class-designer"></a>クラス デザイナーの C++ 列挙体
 
-**クラス デザイナー**では、C++ の `enum`、およびスコープを持つ `enum class` 型はサポートされていません。 例を次に示します。
+**クラス デザイナー**では、C++ の `enum`、およびスコープを持つ `enum class` 型はサポートされていません。 たとえば次のようになります。
 
 ```cpp
 enum CardSuit {
@@ -42,7 +42,7 @@ enum class CardSuit {
 
 `enum` 型の使用法の詳細については、「[列挙型](/cpp/cpp/enumerations-cpp)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
-- [列挙型](/cpp/cpp/enumerations-cpp)
+- [列挙体](/cpp/cpp/enumerations-cpp)

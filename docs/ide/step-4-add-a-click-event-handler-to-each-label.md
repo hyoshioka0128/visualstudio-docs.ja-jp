@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621424"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579350"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>手順 4: 各ラベルに Click イベント ハンドラーを追加する
 
@@ -56,7 +56,7 @@ ms.locfileid: "72621424"
     > `label_Click()` コード ブロックを手動で入力せずにコピーして貼り付ける場合は、既存の `label_Click()` コードと置き換えてください。 置き換えないと、コード ブロックが重複することになります。
 
     > [!NOTE]
-    > 「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」チュートリアルで使用されているのと同じ `object sender` がイベント ハンドラーの上部にあります。 単一のイベント ハンドラー メソッドに異なるラベル コントロールの Click イベントをフックしたため、ユーザーがどのラベルをクリックしたかにかかわらず、同じメソッドが呼び出されます。 イベント ハンドラー メソッドは、どのラベルがクリックされたのかを知る必要があるため、そのラベル コントロールに対して `sender` という名前を使用します。 メソッドの 1 行目は、sender が単なる汎用オブジェクトではなく、具体的にはラベル コントロールであること、さらに `clickedLabel` という名前を使用してラベルのプロパティとメソッドにアクセスすることをプログラムに通知します。
+    > 「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」チュートリアルで使用されているのと同じ  がイベント ハンドラーの上部にあります。 単一のイベント ハンドラー メソッドに異なるラベル コントロールの Click イベントをフックしたため、ユーザーがどのラベルをクリックしたかにかかわらず、同じメソッドが呼び出されます。 イベント ハンドラー メソッドは、どのラベルがクリックされたのかを知る必要があるため、そのラベル コントロールに対して `sender` という名前を使用します。 メソッドの 1 行目は、sender が単なる汎用オブジェクトではなく、具体的にはラベル コントロールであること、さらに `clickedLabel` という名前を使用してラベルのプロパティとメソッドにアクセスすることをプログラムに通知します。
 
      このメソッドは、最初に `clickedLabel` がオブジェクトからラベル コントロールに正常に変換 (キャスト) されたかどうかをチェックします。 正常に変換されなかった場合は、値が `null` (C#) または `Nothing` (Visual Basic) となり、メソッドの残りのコードは実行されません。 次に、メソッドはラベルの **ForeColor** プロパティを使用して、クリックされたラベルのテキストの色をチェックします。 ラベルのテキストの色が黒になっている場合は、アイコンが既にクリックされていて、メソッドは実行されています (これが `return` ステートメントが実行することです。メソッドの実行を停止するようにプログラムに指示します)。アイコンがクリックされていない場合、プログラムはそのテキストの色を黒に変更します。
 

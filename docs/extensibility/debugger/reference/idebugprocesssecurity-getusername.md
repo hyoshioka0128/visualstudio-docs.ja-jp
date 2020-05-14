@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessSecurity::GetUserName |Microsoft Docs
+title: セキュリティを設定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity::GetUserName
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a42b67eb3fd308011bf725f8dd7e24a4d9ddca6f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef00a0b7489c3e5cb709520546f3d3f26c8a4eba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311522"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723251"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-ポート サプライヤーからユーザー名を取得します。
+ポートサプライヤーからユーザー名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,13 +39,13 @@ int GetUserName (
 
 ## <a name="parameters"></a>パラメーター
 `pbstrUserName`\
-[out]ユーザー名を表す文字列。
+[アウト]ユーザー名を含む文字列。
 
 ## <a name="return-value"></a>戻り値
- 返します、メソッドが成功したかどうかは`S_OK`します。 それ以外の場合、エラー コードを返します。
+ メソッドが成功した場合は `S_OK` を返します。 それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- `GetUserName` 表示されるユーザー名を返します、**ユーザー名**の列、**プロセスにアタッチ** ダイアログ ボックス。 表示する、**プロセスにアタッチ**ダイアログ ボックスで、をクリックして**プロセスにアタッチ**で、**ツール**でメニュー、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE)。
+ `GetUserName`は、[**プロセスにアタッチ**] ダイアログ ボックスの **[ユーザー名**] 列に表示されるユーザー名を返します。 [**プロセスにアタッチ**] ダイアログ ボックスを表示するには、統合開発環境 (IDE)[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]の **[ツール**] メニューの [**プロセスにアタッチ]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

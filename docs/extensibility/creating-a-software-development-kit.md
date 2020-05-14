@@ -1,43 +1,43 @@
 ---
-title: ソフトウェア開発キットを作成する |Microsoft Docs
+title: ソフトウェア開発キットの作成 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 042002b6fddb674c0f1c156be2d992cc96cb9f81
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: f7cf6cf092edf96280c566018231cc00d34c0994
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787661"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739591"
 ---
-# <a name="create-a-software-development-kit"></a>ソフトウェア開発キットを作成する
+# <a name="create-a-software-development-kit"></a>ソフトウェア開発キットの作成
 
-ソフトウェア開発キット (SDK) は、Visual Studio で1つの項目として参照できる Api のコレクションです。 **[参照マネージャー]** ダイアログボックスには、プロジェクトに関連するすべての sdk が一覧表示されます。 SDK をプロジェクトに追加すると、Visual Studio で Api を使用できるようになります。
+ソフトウェア開発キット (SDK) は、Visual Studio で 1 つの項目として参照できる API のコレクションです。 [**参照マネージャ**]ダイアログ ボックスには、プロジェクトに関連するすべての SDK が一覧表示されます。 プロジェクトに SDK を追加すると、その API を Visual Studio で使用できます。
 
-Sdk には、次の2種類があります。
+SDK には、次の 2 つのタイプがあります。
 
-- プラットフォーム Sdk は、プラットフォーム用のアプリを開発するための必須コンポーネントです。 たとえば、 [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK は、アプリを開発[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]するために必要です。
+- プラットフォーム SDK は、プラットフォーム用のアプリを開発するための必須コンポーネントです。 たとえば、SDK[!INCLUDE[win81](../debugger/includes/win81_md.md)]はアプリを開発[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]するために必要です。
 
-- 拡張 Sdk は、プラットフォームを拡張するオプションのコンポーネントですが、そのプラットフォーム用のアプリを開発する場合には必須ではありません。
+- 拡張機能 SDK は、プラットフォームを拡張するオプション コンポーネントですが、そのプラットフォーム用のアプリを開発する際には必須ではありません。
 
-以下のセクションでは、Sdk の一般的なインフラストラクチャと、プラットフォーム SDK と拡張 SDK を作成する方法について説明します。
+次のセクションでは、SDK の一般的なインフラストラクチャと、プラットフォーム SDK と拡張 SDK を作成する方法について説明します。
 
-## <a name="platform-sdks"></a>プラットフォーム Sdk
+## <a name="platform-sdks"></a>プラットフォーム SDK
 
-プラットフォーム用のアプリを開発するには、プラットフォーム Sdk が必要です。 たとえば、 [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK は、用の[!INCLUDE[win81](../debugger/includes/win81_md.md)]アプリを開発するために必要です。
+プラットフォーム SDK は、プラットフォーム用のアプリを開発するために必要です。 たとえば、SDK[!INCLUDE[win81](../debugger/includes/win81_md.md)]は のアプリを開発するために[!INCLUDE[win81](../debugger/includes/win81_md.md)]必要です。
 
 ### <a name="installation"></a>インストール
 
-すべてのプラットフォーム sdk は、 *HKLM\Software\Microsoft\Microsoft sdk\\[tpi] \ v [tpi]\\ @InstallationFolder = [SDK root]* にインストールされます。 これにより[!INCLUDE[win81](../debugger/includes/win81_md.md)] 、SDK は*HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*にインストールされます。
+すべてのプラットフォーム SDK は *、HKLM\ソフトウェア\マイクロソフト\マイクロソフト SDK\\[TPI]\v[TPV]\\ @InstallationFolder = [SDK ルート]* にインストールされます。 したがって[!INCLUDE[win81](../debugger/includes/win81_md.md)]、SDK は*HKLM\ソフトウェア\マイクロソフト\マイクロソフト SDK\Windows\v8.1*にインストールされます。
 
 ### <a name="layout"></a>レイアウト
 
-プラットフォーム Sdk には次のレイアウトがあります。
+プラットフォーム SDK のレイアウトは次のとおりです。
 
 ```
 \[InstallationFolder root]
@@ -52,39 +52,39 @@ Sdk には、次の2種類があります。
 
 | ノード | 説明 |
 |------------------------| - |
-| *参照*フォルダー | コーディング可能な Api を含むバイナリが含まれています。 これには、Windows メタデータ (WinMD) ファイルまたはアセンブリを含めることができます。 |
-| *デザイン時*フォルダー | 実行前またはデバッグ時にのみ必要なファイルが含まれています。 これには、XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時バイナリ、MSBuild 成果物などが含まれます。<br /><br /> XML ドキュメントは *\designtime どちら*フォルダーに配置するのが理想的ですが、参照用の xml ドキュメントは引き続き Visual Studio の参照ファイルと共に配置されます。 たとえば、参照<em>\\\\</em>用の XML ドキュメントである [config] [arch]、および dll は *[config\\]\\[arch]/sample.xml に参照*され、そのドキュメントのローカライズ版は次のようになります。 *\ [\\Config]\\[arch]\\[locale]、[xml]* の順に参照します。 |
-| *構成*フォルダー | 次の3つのフォルダーのみを使用できます。*Debug*、 *Retail* 、および*commonconfiguration*。 Sdk の作成者は、sdk のコンシューマーが対象とする構成に関係なく、同じ一連の SDK ファイルを使用する必要がある場合に、それらのファイルを*Commonconfiguration*の下に配置できます。 |
-| *アーキテクチャ*フォルダー | サポートされている*アーキテクチャ*フォルダーが存在していてもかまいません。 Visual Studio では、x86、x64、ARM、およびニュートラルアーキテクチャがサポートされています。 メモ:Win32 は x86 にマップされ、AnyCPU はニュートラルにマップされます。<br /><br /> MSBuild は、プラットフォーム Sdk の *\CommonConfiguration\neutral*の下でのみ参照できます。 |
-| *SDKManifest.xml* | このファイルでは、Visual Studio が SDK をどのように使用するかを説明します。 の[!INCLUDE[win81](../debugger/includes/win81_md.md)]SDK マニフェストを確認します。<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** オブジェクトブラウザーが参照一覧に表示する値。<br /><br /> **PlatformIdentity:** この属性が存在することは、SDK が platform SDK であること、およびその SDK から追加された参照をローカルにコピーできないことを Visual Studio と MSBuild に通知します。<br /><br /> **TargetFramework**この属性は、この属性の値に指定されているものと同じフレームワークを対象とするプロジェクトだけが SDK を使用できるようにするために、Visual Studio によって使用されます。<br /><br /> **MinVSVersion**この属性は、それに適用される Sdk のみを使用するために Visual Studio によって使用されます。<br /><br /> **「** この属性は、コントロールを含む参照に対してのみ指定する必要があります。 参照にコントロールが含まれているかどうかを指定する方法については、以下を参照してください。 |
+| *参照*フォルダ | コード化できる API を含むバイナリが含まれています。 これらには、Windows メタデータ (WinMD) ファイルまたはアセンブリが含まれます。 |
+| *デザインタイム*フォルダ | 実行前/デバッグ時にのみ必要なファイルが含まれています。 これには、XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時バイナリ、MSBuild アーティファクトなどが含まれます。<br /><br /> XML ドキュメントは *、理想的には \DesignTime*フォルダーに配置されますが、参照用の XML ドキュメントは引き続き Visual Studio の参照ファイルと一緒に配置されます。 たとえば、参照<em>\\\参照 [config] [arch]\sample.dll\\</em>の XML ドキュメントは*\References\\\\[config] [arch]\sample.xml*になり、そのドキュメントのローカライズ版は*\References\\[config]\\[locale] [locale]\sample.xml\\*になります。 |
+| *構成*フォルダー | *フォルダーは、デバッグ*、*リテール*、*および共通構成*の 3 つのフォルダーのみ存在できます。 SDK 作成者は、SDK コンシューマーが対象とする構成に関係なく、同じ SDK ファイルセットを使用する必要がある場合に、ファイルを*CommonConfiguration*の下に配置できます。 |
+| *アーキテクチャ*フォルダ | サポートされている*アーキテクチャ*フォルダは、いずれも存在できます。 Visual Studio では、x86、x64、ARM、およびニュートラルのアーキテクチャがサポートされています。 注: Win32 は x86 にマップされ、AnyCPU はニュートラルにマップされます。<br /><br /> MSBuild は、プラットフォーム SDK の*\Common 構成\ニュートラル*の下でのみ表示されます。 |
+| *XML* | このファイルでは、Visual Studio が SDK を使用する方法について説明します。 SDK マニフェストのを見[!INCLUDE[win81](../debugger/includes/win81_md.md)]てください。<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **表示名:**[参照] ボックスの一覧に表示されるオブジェクト ブラウザーの値。<br /><br /> **プラットフォーム ID:** この属性の存在は、SDK がプラットフォーム SDK であり、そこから追加された参照をローカルにコピーしてはならないことを Visual Studio と MSBuild に指示します。<br /><br /> **ターゲットフレームワーク:** この属性は、この属性の値で指定された同じフレームワークを対象とするプロジェクトのみが SDK を使用できるようにするために、Visual Studio によって使用されます。<br /><br /> **最小バージョン:** この属性は、Visual Studio で適用される SDK のみを使用するために使用されます。<br /><br /> **参考:** この属性は、コントロールを含む参照に対してのみ指定する必要があります。 参照にコントロールが含まれるかどうかを指定する方法については、以下を参照してください。 |
 
 ## <a name="extension-sdks"></a>拡張 SDK
 
-以下のセクションでは、拡張機能 SDK をデプロイするために必要な作業について説明します。
+次のセクションでは、拡張 SDK をデプロイするために必要な操作について説明します。
 
 ### <a name="installation"></a>インストール
 
-拡張 Sdk は、レジストリキーを指定せずに、特定のユーザーまたはすべてのユーザーに対してインストールできます。 すべてのユーザーに対して SDK をインストールするには、次のパスを使用します。
+拡張 SDK は、レジストリ キーを指定せずに、特定のユーザーまたはすべてのユーザーに対してインストールできます。 すべてのユーザーに対して SDK をインストールするには、次のパスを使用します。
 
-*% Program Files%\Microsoft sdk\<ターゲットプラットフォーム\>\ v < プラットフォームのバージョン\>番号/extensionsdk*
+*%プログラム ファイル%\マイクロソフト SDK\<ターゲット\>プラットフォーム \v\>プラットフォームバージョン番号 \拡張機能 \拡張子Sdk<*
 
 ユーザー固有のインストールの場合は、次のパスを使用します。
 
-*%USERPROFILE%\AppData\Local\Microsoft sdk\<ターゲットプラットフォーム\>\ v < プラットフォームのバージョン\>番号、extensionsdk*
+*\<ターゲット プラットフォーム\>\v<プラットフォーム のバージョン番号\>\拡張機能*
 
-別の場所を使用する場合は、次の2つのいずれかを実行する必要があります。
+別の場所を使用する場合は、次のいずれかの操作を行う必要があります。
 
-1. レジストリキーで指定します。
+1. レジストリ キーで指定します。
 
-     **HKLM\Software\Microsoft\Microsoft sdk\<ターゲットプラットフォーム >-v < プラットフォームバージョン番号\>、extensionsdk\<SDKName >\<SDKVersion >** \
+     **HKLM\ソフトウェア\マイクロソフト\マイクロソフト\<SDK ターゲット プラットフォーム>\<v\>プラットフォームのバージョン番号\<\拡張\<SdkKs SDKName>SDKVersion>**\
 
-     との値を持つ (既定の`<path to SDK><SDKName><SDKVersion>`) サブキーを追加します。
+     をクリックし、値が の (既定)`<path to SDK><SDKName><SDKVersion>`サブキーを追加します。
 
-2. MSBuild プロパティ`SDKReferenceDirectoryRoot`をプロジェクトファイルに追加します。 このプロパティの値は、参照する拡張 Sdk が存在するディレクトリのセミコロン区切りの一覧です。
+2. プロジェクト ファイルに`SDKReferenceDirectoryRoot`MSBuild プロパティを追加します。 このプロパティの値は、参照する拡張 SDK が存在するディレクトリのセミコロン区切りのリストです。
 
 ### <a name="installation-layout"></a>インストールレイアウト
 
-拡張 Sdk には次のインストールレイアウトがあります。
+拡張 SDK には、次のインストール レイアウトがあります。
 
 ```
 \<ExtensionSDKs root>
@@ -103,13 +103,13 @@ Sdk には、次の2種類があります。
 
 ```
 
-1. \\< SDKName\>\\<SDKVersion\>: 拡張 sdk の名前とバージョンは、sdk ルートへのパス内の対応するフォルダー名から派生します。 MSBuild はこの id を使用してディスク上の SDK を検索し、Visual Studio は **[プロパティ]** ウィンドウと **[参照マネージャー]** ダイアログボックスにこの id を表示します。
+1. \\<SDKName\> \\<\>SDKVersion : SDK の名前とバージョンは、SDK ルートへのパスにある対応するフォルダー名から派生します。 MSBuild では、この ID を使用してディスク上の SDK を検索し、Visual Studio では、この ID が **[プロパティ**] ウィンドウと **[参照マネージャー** ] ダイアログに表示されます。
 
-2. *References*フォルダー: api を含むバイナリ。 これは、Windows メタデータ (WinMD) ファイルまたはアセンブリである可能性があります。
+2. *参照*フォルダー: API を含むバイナリ。 これらは、Windows メタデータ (WinMD) ファイルまたはアセンブリである可能性があります。
 
-3. *Redist*フォルダー: ランタイム/デバッグに必要なファイルは、ユーザーのアプリケーションの一部としてパッケージ化される必要があります。 すべてのバイナリは、 *\\< config\>\\<\>arch*の下に配置する必要があります。また、このバイナリ名は、一意性を確保するために次の形式にする必要があります: *]* \<company>。\<製品 >。\<目的 >。拡張機能<em>>。 \<たとえば、* Microsoft .Cpp. Build .dll</em>です。 他の sdk のファイル名と競合する可能性のある名前を持つすべてのファイル (javascript、css、pri、xaml、png、jpg ファイルなど) は、 <em>再頒布\\可能 <\>config\\< arch\>に配置する必要があります。XAML コントロール\>に関連付けられているファイルを除き、sdkname\*を < します。 \\これらの\\ファイルは、* \ redist < config\>\\\\< arch\>< componentname\>\\</em>の下に配置する必要があります。
+3. *Redist*フォルダー: ランタイム/デバッグに必要なファイルで、ユーザーのアプリケーションの一部としてパッケージ化する必要があります。 すべてのバイナリは*\redist\\<\> \\ \><arch*の下に配置する必要があり、バイナリ名は一意性を確保するために次の形式を持つ必要があります: *]*\<会社>。\<製品>。\<目的>。\<拡張><em>。たとえば、*Cpp.Build.dll</em>. 他の SDK のファイル名と衝突する可能性のあるファイル (javascript、css、pri、xaml、png、jpg など) を持つファイルはすべて<em>、XAML コントロールに\\関連付\>\\けられているファイル\>\\を除いて\>\*、\redist<arch<sdkname<\redist<config の下に配置する必要があります。これらの\>\\ファイルは、arch\><コンポーネント名の下<*\redist\\<構成\>\\の下に配置する必要があります</em>。
 
-4. *デザイン時*folder: 実行前またはデバッグ時にのみ必要なファイルで、ユーザーのアプリケーションの一部としてパッケージ化することはできません。 これには、XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時バイナリ、MSBuild 成果物などがあります。 ネイティブプロジェクトでの使用を目的とした SDK には、 *SDKName*ファイルが含まれている必要があります。 この種類のファイルの例を次に示します。
+4. *DesignTime*フォルダー: 実行前/デバッグ時にのみ必要なファイルで、ユーザーのアプリケーションの一部としてパッケージ化しないでください。 XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時バイナリ、MSBuild アーティファクトなどが考えられます。 ネイティブ プロジェクトで使用する対象の SDK には *、SDKName.props*ファイルが必要です。 この種類のファイルのサンプルを次に示します。
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -127,15 +127,15 @@ Sdk には、次の2種類があります。
 
    ```
 
-    XML 参照ドキュメントは、参照ファイルと共に配置されます。 たとえば、 *\\参照\>\\\>* 用の XML リファレンスドキュメントである < config < configuration の XML リファレンスドキュメントは、 *\\\> < config\\です。<、そのドキュメントのローカライズ版は、<config<arch<localeにあります。\>* *\>\>\\\\\\\>\ sample.xml*。
+    XML 参照ドキュメントは、参照ファイルと一緒に配置されます。 たとえば*\\、\References<config\> \\<arch\>\sample.dll*アセンブリの XML 参照ドキュメントは*\references\\<config\> \\<arch\>\sample.xml*であり、そのドキュメントのローカライズされたバージョンは*\references<、arch\\ \> \\ \> \\<ロケール\>\sample.xml*<構成です。
 
-5. *構成*フォルダー: 次の3つのサブフォルダー:*Debug*、 *Retail*、および*commonconfiguration*。 Sdk の作成者は、sdk のコンシューマーが対象とする構成に関係なく、同じ一連の SDK ファイルを使用する必要がある場合に、 *Commonconfiguration*の下にファイルを配置できます。
+5. *構成*フォルダ: 3 つのサブフォルダ:*デバッグ*、*リテール*、*および共通構成*。 SDK 作成者は、SDK コンシューマーの対象となる構成に関係なく、同じ SDK ファイルのセットを使用する必要がある場合に、ファイルを*CommonConfiguration*の下に配置できます。
 
-6. *アーキテクチャ*フォルダー: x86、X64、ARM、ニュートラルの各アーキテクチャがサポートされています。 Win32 は x86 にマップされ、AnyCPU はニュートラルにマップされます。
+6. *アーキテクチャ*フォルダ: x86、x64、ARM、ニュートラルのアーキテクチャがサポートされています。 Win32 は x86 にマップされ、AnyCPU はニュートラルにマップされます。
 
-### <a name="sdkmanifestxml"></a>SDKManifest.xml
+### <a name="sdkmanifestxml"></a>XML
 
-*Sdkmanifest.xml*ファイルには、Visual STUDIO で SDK を使用する方法が記述されています。 次に例を示します。
+*SDKManifest.xml*ファイルでは、Visual Studio が SDK を使用する方法について説明します。 以下に例を示します。
 
 ```
 <FileList>
@@ -159,45 +159,45 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 </FileList>
 ```
 
-次の一覧は、ファイルの要素を示しています。
+次のリストは、ファイルの要素を示しています。
 
-1. DisplayName: Visual Studio のユーザーインターフェイスの参照マネージャー、ソリューションエクスプローラー、オブジェクトブラウザー、およびその他の場所に表示される値。
+1. 表示名: Visual Studio のユーザー インターフェイスで参照マネージャー、ソリューション エクスプローラー、オブジェクト ブラウザー、およびその他の場所に表示される値。
 
-2. ProductFamilyName:SDK 製品の全体的な名前。 たとえば、 [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] sdk には、"WinJS" と "WinJS" という名前が付けられています。これは、sdk 製品ファミリ "WinJS" の同じファミリに属しています。 この属性は、Visual Studio と MSBuild がその接続を行うことを許可します。 この属性が存在しない場合は、SDK 名が製品ファミリ名として使用されます。
+2. 製品ファミリ名: 全体的な SDK 製品名。 たとえば[!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)]、SDK の名前は "Microsoft.WinJS.1.0" と "Microsoft.WinJS.2.0" で、同じ SDK 製品ファミリ "Microsoft.WinJS" に属します。 この属性を使用すると、Visual Studio と MSBuild がその接続を確立できます。 この属性が存在しない場合、SDK 名が製品ファミリ名として使用されます。
 
-3. FrameworkIdentity1つ以上の Windows コンポーネントライブラリに対する依存関係を指定します。 この属性の値は、コンシューマー側アプリのマニフェストに格納されます。 この属性は、Windows コンポーネントライブラリにのみ適用できます。
+3. フレームワークの Id: 1 つまたは複数の Windows コンポーネント ライブラリへの依存関係を指定します。 この属性の値は、使用するアプリのマニフェストに配置されます。 この属性は、Windows コンポーネント ライブラリにのみ適用されます。
 
-4. TargetFramework参照マネージャーとツールボックスで使用できる Sdk を指定します。 これは、ターゲットフレームワークモニカーのセミコロン区切りの一覧です。たとえば、".NET Framework, version = v2.0; .NET Framework, version = v1.0" のようになります。 同じターゲットフレームワークの複数のバージョンが指定されている場合、参照マネージャーは、フィルター処理のために指定された最も低いバージョンを使用します。 たとえば、".NET Framework, version = v2.0; .NET Framework, version = v1.0" が指定されている場合、参照マネージャーは ".NET Framework, version = v2.0" を使用します。 特定のターゲットフレームワークプロファイルが指定されている場合、そのプロファイルだけが、フィルター処理のために参照マネージャーによって使用されます。 たとえば、"Silverlight, version = v4.0, profile = Appname.windowsphone" を指定した場合、参照マネージャーは、Windows Phone プロファイルのみをフィルター処理します。完全な Silverlight 4.0 フレームワークを対象とするプロジェクトでは、参照マネージャーで SDK が表示されません。
+4. ターゲット フレームワーク: 参照マネージャーとツールボックスで使用できる SDK を指定します。 これは、セミコロンで区切られたターゲット フレームワーク モニカーのリストです。 同じターゲット フレームワークの複数のバージョンが指定されている場合、参照マネージャーは、フィルター処理のために最も低い指定バージョンを使用します。 たとえば、".NET Framework、バージョン=v2.0;.NET Framework、バージョン=v4.5.1"が指定されている場合、参照マネージャーは ".NET Framework、バージョン =v2.0" を使用します。 特定のターゲット フレームワーク プロファイルが指定されている場合、そのプロファイルのみが参照マネージャーによってフィルター処理のために使用されます。 たとえば、"シルバーライト、バージョン =v4.0、プロファイル=WindowsPhone" が指定されている場合、参照マネージャーは Windows Phone プロファイルのみをフィルター処理します。完全な Silverlight 4.0 Framework を対象とするプロジェクトでは、参照マネージャーに SDK が表示されません。
 
-5. MinVSVersionVisual Studio の最小バージョン。
+5. 最小バージョン: 最小バージョンのビジュアル スタジオ。
 
-6. MaxPlatformVerson:拡張 SDK が動作しないプラットフォームのバージョンを指定するには、ターゲットプラットフォームの最大バージョンを使用する必要があります。 たとえば、Microsoft Visual C++ Runtime Package v1.0 は、Windows 8 プロジェクトでのみ参照する必要があります。 このため、Windows 8 プロジェクトの MaxPlatformVersion は8.0 です。 これは、参照マネージャーによって、Windows 8.1 C++プロジェクトの Microsoft Visual Runtime パッケージが除外されることを意味し[!INCLUDE[win81](../debugger/includes/win81_md.md)]ます。 MSBuild は、プロジェクトが参照しているときにエラーをスローします。 注: この要素は以降で[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]サポートされています。
+6. MaxPlatformVerson: 拡張機能 SDK が機能しないプラットフォーム バージョンを指定するには、ターゲット プラットフォームの最大バージョンを使用する必要があります。 たとえば、Visual C++ ランタイム パッケージ v11.0 は、Windows 8 プロジェクトでのみ参照する必要があります。 したがって、Windows 8 プロジェクトの最大プラットフォームバージョンは 8.0 です。 つまり、参照マネージャーは、Windows 8.1 プロジェクトの Microsoft Visual C++ ランタイム パッケージをフィルター処理し、MSBuild はプロジェクトが参照するときにエラーを[!INCLUDE[win81](../debugger/includes/win81_md.md)]スローします。 注: この要素は、[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]で始まるサポートされています。
 
-7. AppliesTo適用可能な Visual Studio プロジェクトの種類を指定することによって、リファレンスマネージャーで使用できる Sdk を指定します。 次の9つの値が認識されます。WindowsAppContainer、VisualC、VB、CSharp、Windowsappcontainer、JavaScript、Managed、および Native。 SDK の作成者は and ("+")、または (&#124;"") を使用できます。SDK に適用されるプロジェクトの種類のスコープを厳密に指定する演算子。
+7. 適用先: Visual Studio のプロジェクトの種類を指定することによって参照マネージャーで使用できる SDK を指定します。 9 つの値が認識されます: WindowsApp コンテナー、ビジュアル C、VB、CSharp、ウィンドウズ XAML、JavaScript、マネージ、およびネイティブ。 SDKの作成者は、("!")ではなく、および(「+」)、または(「&#124;」)を使用できます。演算子を使用して、SDK に適用されるプロジェクトの種類のスコープを正確に指定できます。
 
-    Windowsappcontainer は、アプリ[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]のプロジェクトを識別します。
+    アプリのプロジェクトを識別します[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]。
 
-8. SupportPrefer32Bit:サポートされる値は "True" と "False" です。 既定値は "True" です。 値が "False" に設定されている場合、SDK を[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]参照しているプロジェクトで Prefer32Bit が有効になっている場合、MSBuild はプロジェクト (またはデスクトッププロジェクトの警告) のエラーを返します。 Prefer32Bit の詳細については、「[[ビルド] ページC#、プロジェクトデザイナー ()](../ide/reference/build-page-project-designer-csharp.md) 」または「 [[コンパイル] ページ (プロジェクトデザイナー) (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)」を参照してください。
+8. サポートPrefer32Bit: サポートされる値は"True"と"偽"です。 デフォルトは"True"です。 値が "False" に設定されている場合、SDK を参照[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]するプロジェクトで Prefer32Bit が有効になっている場合、MSBuild はプロジェクトのエラー (またはデスクトップ プロジェクトの警告) を返します。 Prefer32Bit の詳細については、「[ビルド ページ、プロジェクト デザイナー (C#)、](../ide/reference/build-page-project-designer-csharp.md)[またはコンパイル ページ、プロジェクト デザイナー (Visual Basic)」](../ide/reference/compile-page-project-designer-visual-basic.md)を参照してください。
 
-9. SupportedArchitectures:SDK がサポートするアーキテクチャのセミコロン区切りの一覧。 使用中のプロジェクトで対象の SDK アーキテクチャがサポートされていない場合、MSBuild は警告を表示します。 この属性が指定されていない場合、MSBuild ではこの種類の警告は表示されません。
+9. サポートされているアーキテクチャ: SDK がサポートするアーキテクチャのセミコロン区切りのリスト。 MSBuild は、使用しているプロジェクト内の対象となる SDK アーキテクチャがサポートされていない場合に警告を表示します。 この属性が指定されていない場合、MSBuild ではこの種類の警告は表示されません。
 
-10. Supports複数バージョン:この属性が "**エラー** " または "**警告**" に設定されている場合、MSBuild は同じプロジェクトが同じ SDK ファミリの複数のバージョンを参照できないことを示します。 この属性が存在しない場合、または **[許可]** に設定されている場合、MSBuild はこの種類のエラーまたは警告を表示しません。
+10. サポート複数バージョン: この属性が**エラー**または**警告**に設定されている場合、MSBuild は同じプロジェクトが同じ SDK ファミリの複数のバージョンを参照できないということを示します。 この属性が存在しないか、または **[許可]** に設定されている場合、MSBuild ではこの種類のエラーまたは警告は表示されません。
 
-11. .Appxディスク上の Windows コンポーネントライブラリのアプリケーションパッケージへのパスを指定します。 この値は、ローカルデバッグ中に Windows コンポーネントライブラリの登録コンポーネントに渡されます。 ファイル名の名前付け規則は *\<Company > です。\<製品 >。\<アーキテクチャ >。\<構成 >。バージョン\<> .appx*。 属性名の構成とアーキテクチャは省略可能で、Windows コンポーネントライブラリに適用されない場合は属性値です。 この値は、Windows コンポーネントライブラリにのみ適用されます。
+11. AppX: ディスク上の Windows コンポーネント ライブラリのアプリ パッケージへのパスを指定します。 この値は、ローカル デバッグ中に Windows コンポーネント ライブラリの登録コンポーネントに渡されます。 ファイル名の命名規則は*\<会社>です。\<製品>。\<建築>。\<構成>。バージョン\<>.appx*. 構成とアーキテクチャは、属性名と属性値 (Windows コンポーネント ライブラリに適用されない場合) のオプションです。 この値は、Windows コンポーネント ライブラリにのみ適用されます。
 
-12. CopyRedistToSubDirectory:アプリケーションパッケージルート (つまり、**アプリパッケージの作成**ウィザードで選択された**パッケージの場所**) およびランタイムレイアウトルートを基準として、[- *redist* ] フォルダーの下にあるファイルをコピーする場所を指定します。 既定の場所は、アプリケーションパッケージのルートと**F5**レイアウトです。
+12. CopyRedistToSubDirectory: *\redist*フォルダーの下のファイルを、アプリ パッケージのルート (つまり、[**アプリ パッケージの作成**] ウィザードで選択したパッケージの**場所**) とランタイム レイアウト ルートに対して相対的にコピーする場所を指定します。 既定の場所は、アプリ パッケージと**F5**レイアウトのルートです。
 
-13. DependsOnこの SDK が依存する sdk を定義する SDK id の一覧。 この属性は、参照マネージャーの詳細ペインに表示されます。
+13. DependsOn: SDK が依存する SDK を定義する SDK ID のリスト。 この属性は、参照マネージャーの詳細ペインに表示されます。
 
-14. 詳細情報:ヘルプや詳細情報を提供する web ページの URL。 この値は、参照マネージャーの右ペインにある [詳細情報] リンクに使用されます。
+14. 詳細情報: ヘルプと詳細情報を提供する Web ページの URL。 この値は、参照マネージャーの右側のペインにある [詳細情報] リンクで使用されます。
 
-15. 登録の種類:アプリマニフェストに WinMD 登録を指定します。これは、対応する実装 DLL を持つネイティブ WinMD に必要です。
+15. 登録の種類: アプリ マニフェストで WinMD の登録を指定し、対応する実装 DLL を持つネイティブの WinMD に必要です。
 
-16. ファイル参照:コントロールを含む参照またはネイティブ WinMDs の参照のみに指定されます。 参照にコントロールが含まれているかどうかを指定する方法については、以下の「[ツールボックスアイテムの場所の指定](#ToolboxItems)」を参照してください。
+16. ファイル参照: コントロールを含む参照、またはネイティブの Winmds である参照に対してのみ指定します。 参照にコントロールが含まれるかどうかを指定する方法については、以下[の「ツールボックス項目の場所を指定する](#ToolboxItems)」を参照してください。
 
-## <a name="ToolboxItems"></a>ツールボックスアイテムの場所の指定
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>ツールボックス項目の場所を指定する
 
-*Sdkmanifest.xml*スキーマの**ToolBoxItems**要素は、プラットフォーム sdk と拡張 sdk の両方のツールボックス項目のカテゴリと場所を指定します。 次の例では、異なる場所を指定する方法を示します。 これは、WinMD 参照または DLL 参照に適用されます。
+*SDKManifest.xml*スキーマの**ToolBoxItems**要素は、プラットフォームと拡張 SDK の両方でツールボックス項目のカテゴリと場所を指定します。 次の例は、異なる場所を指定する方法を示しています。 これは、WinMD または DLL 参照に適用されます。
 
 1. ツールボックスの既定のカテゴリにコントロールを配置します。
 
@@ -207,7 +207,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2. コントロールを特定のカテゴリ名の下に配置します。
+2. 特定のカテゴリ名でコントロールを配置します。
 
     ```xml
     <File Reference = "sample.winmd">
@@ -226,7 +226,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4. Blend と Visual Studio で、異なるカテゴリ名の下にコントロールを配置します。
+4. ブレンドと Visual Studio で、さまざまなカテゴリ名でコントロールを配置します。
 
     ```xml
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -236,7 +236,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5. Blend と Visual Studio で特定のコントロールを列挙する。
+5. ブレンドと Visual Studio で特定のコントロールを別々に列挙します。
 
     ```xml
     <File Reference = "sample.winmd">
@@ -247,7 +247,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6. 特定のコントロールを列挙し、Visual Studio の共通パスの下に配置するか、[すべてのコントロール] グループだけに配置します。
+6. 特定のコントロールを列挙し、Visual Studio コモン パスの下に配置するか、またはすべてのコントロール グループにのみ配置します。
 
     ```xml
     <File Reference = "sample.winmd">
@@ -258,7 +258,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7. 特定のコントロールを列挙し、[ツールボックス] に項目を表示せずに特定のセットのみを表示します。
+7. 特定のコントロールを列挙し、ツールボックスに含まれずに[ChooseItems] に特定のセットのみを表示します。
 
     ```xml
     <File Reference = "sample.winmd">
@@ -269,6 +269,6 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: を使用して SDK を作成するC++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
-- [チュートリアル: または Visual Basic をC#使用して SDK を作成する](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
+- [チュートリアル: C++ を使用して SDK を作成する](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
+- [チュートリアル: C# または Visual Basic を使用して SDK を作成する](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
 - [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes |Microsoft Docs
+title: クエリ 2::列挙カスタム属性 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc9cc9158939ac0cbd7cac482961e2078b8249ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322230"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732588"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 このフィールドにアタッチされているすべてのカスタム属性の列挙子を取得します。
@@ -41,13 +41,13 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[out]返します、 [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)をカスタム属性の一覧を表すオブジェクト。 それ以外の場合、カスタム属性がない場合に null 値を返します。
+[アウト]カスタム属性[の](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)リストを表すオブジェクトを返します。それ以外の場合は、カスタム属性がない場合は null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK または S_FALSE をこのフィールドにカスタム属性がない場合は、返します。 それ以外の場合、エラー コードでは; を返します
+ 成功した場合は、このフィールドにカスタム属性がない場合は、S_OKまたはS_FALSEを返します。 それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- フィールドには、複数のカスタム属性を持つことができます。
+ フィールドには複数のカスタム属性を設定できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

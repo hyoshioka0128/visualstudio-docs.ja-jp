@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft Docs
+title: を指定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 435f6924948ab1273abbded633bcce757b57d9b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329514"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714960"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-そのビューアーをインスタンス化するために、このプロパティの種類ビューアーに関する情報を取得します。
+このビューワーをインスタンス化するために、このプロパティの種類のビューアーに関する情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -51,28 +51,28 @@ int GetManagedViewerCreationData(
 
 ## <a name="parameters"></a>パラメーター
 `assemName`\
-[out]このオブジェクトを保持しているアセンブリの名前を返します。
+[アウト]このオブジェクトを保持しているアセンブリの名前を返します。
 
 `assemBytes`\
-[out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (これは、null 値をバイトが使用できない場合)、このオブジェクトのアセンブリのバイト数を格納しているオブジェクト。
+[アウト]このオブジェクトのアセンブリ バイトを含む[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクトを返します (使用できるバイトがない場合は null 値です)。
 
 `assemPdb`\
-[out]返します、`IEEDataStorage`シンボルを含むオブジェクトは、(これは、null 値をシンボル ストアが使用できない場合)、このオブジェクトの情報を格納します。
+[アウト]このオブジェクト`IEEDataStorage`のシンボル ストア情報を含むオブジェクトを返します (シンボル ストアが使用できない場合は null 値)。
 
 `className`\
-[out]このオブジェクトを含むクラスの名前を返します。
+[アウト]このオブジェクトを含むクラス名を返します。
 
 `alr`\
-[out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)アセンブリの場所を示す列挙値。
+[アウト]アセンブリの場所を示す[値をアセンブリの LOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列挙体から返します。
 
 `replacementOk`\
-[out]0 以外の値を返します (`TRUE`) このオブジェクトの値を変更できる場合は 0 (`FALSE`) オブジェクトが読み取り専用である場合。
+[アウト]このオブジェクトの値`TRUE`を変更できる場合は、ゼロ以外の値 ( ) を返します。オブジェクトが`FALSE`読み取り専用の場合は、0 ( ) を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、管理対象のビューアーをインスタンス化する型のビジュアライザーによって使用されます。
+ このメソッドは、マネージ ビューアーをインスタンス化するために型ビジュアライザーによって使用されます。
 
 ## <a name="see-also"></a>関連項目
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

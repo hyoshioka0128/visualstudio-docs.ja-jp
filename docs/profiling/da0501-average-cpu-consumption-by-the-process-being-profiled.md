@@ -1,5 +1,5 @@
 ---
-title: DA0501:プロセスによる平均 CPU 使用量をプロファイリングしています。 | Microsoft Docs
+title: 'DA0501: プロセスによる平均 CPU 使用量をプロファイリングしています。 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,20 +14,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777464"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501:プロセスによる平均 CPU 使用量をプロファイリングしています。
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: プロセスによる平均 CPU 使用量をプロファイリングしています。
 
 |||
 |-|-|
 |規則 ID|DA501|
 |カテゴリ|リソース監視|
-|プロファイル方法|すべて|
-|メッセージ|プロセスによる平均 CPU 使用量をプロファイリングしています。|
+|プロファイル方法|All|
+|[メッセージ]|プロセスによる平均 CPU 使用量をプロファイリングしています。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

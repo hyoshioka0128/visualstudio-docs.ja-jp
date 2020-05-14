@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585705"
 ---
 # <a name="add-existing-item-command"></a>AddExistingSolutionItem コマンド
@@ -31,7 +31,7 @@ File.AddExistingItem filename [/e:editorname]
 
 ## <a name="arguments"></a>引数
 `filename`\
-必須です。 現在のソリューションに追加する項目の完全なパスとファイル名 (拡張子付き)。 ファイル パスまたはファイル名にスペースが含まれている場合は、パス全体を引用符で囲みます。
+必須。 現在のソリューションに追加する項目の完全なパスとファイル名 (拡張子付き)。 ファイル パスまたはファイル名にスペースが含まれている場合は、パス全体を引用符で囲みます。
 
 ## <a name="switches"></a>スイッチ
 /e: `editorname`\
@@ -43,7 +43,7 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。
 
 ## <a name="example"></a>例
@@ -53,9 +53,9 @@ File.AddExistingItem filename [/e:editorname]
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

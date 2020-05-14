@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774590"
 ---
 # <a name="how-to-set-permissions"></a>方法: アクセス許可を設定する
@@ -120,7 +120,7 @@ Users グループのメンバーの場合は、チームの他のメンバー�
 
    指定されたユーザーは、ログオン後に、管理者アクセス許可なしにプロファイリング ツールを使用できるようになります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)

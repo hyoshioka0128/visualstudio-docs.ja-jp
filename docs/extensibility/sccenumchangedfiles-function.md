@@ -1,5 +1,5 @@
 ---
-title: SccEnumChangedFiles 関数 |Microsoft Docs
+title: 関数を変更しました|マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18eab5e5785ea003976c7e291028d5ff964177d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351869"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700904"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 関数
-ローカル ファイルの一覧を指定するには、この関数は、どのファイルとは異なるソース コードの管理データベースに対応するバージョンを決定します。
+# <a name="sccenumchangedfiles-function"></a>関数を変更しました。
+ローカル ファイルの一覧を指定すると、この関数は、ソース コード管理データベース内の対応するバージョンと異なるファイルを決定します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,31 +37,31 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグインのコンテキストのポインター。
+[in]ソース管理プラグイン のコンテキスト ポインター。
 
  hWnd
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- cFiles
+ ファイル
 
-[in]指定されたファイル名の数、`lpFileNames`配列。 サイズを指定も`plIsFileDifferent`配列。
+[in]配列に指定されたファイル名の`lpFileNames`数。 また、配列の`plIsFileDifferent`サイズも指定します。
 
- lpFileNames
+ ファイル名
 
-[in]チェックするローカル ファイル名の配列。
+[in]確認するローカル ファイル名の配列。
 
- plIsFileDifferent
+ ファイル異なる
 
-[入力、出力]各ファイルの違いの状態を示す値の配列 (配列が少なくとも必要`cFiles`エントリ)。 0 以外では、ファイルが異なることを意味します。
+[イン、アウト]各ファイルの差異ステータスを示す値の配列 (配列には少`cFiles`なくともエントリが必要です)。 0 以外の場合は、ファイルが異なっていることを意味します。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|操作が正常に完了しました。|
-|SCC_UNSPECIFIEDERROR|一般エラーです。|
+|SCC_OK|操作は正常に完了しました。|
+|SCC_UNSPECIFIEDERROR|一般的なエラー。|
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

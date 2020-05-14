@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115033"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio インスタンスの検出および管理用のツール
@@ -32,8 +32,8 @@ ms.locfileid: "76115033"
 クライアント コンピューターにインストールされている Visual Studio インスタンスを検出して管理するために役立つ複数のツールが用意されています。
 
 * [vswhere](https://github.com/microsoft/vswhere): Visual Studio に組み込まれているか、個別のディストリビューションで使用可能な実行可能ファイルです。特定のコンピューター上のすべての Visual Studio インスタンスの場所を見つけるのに役立ちます。
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell):セットアップ構成 API を使用して Visual Studio のインストール済みインスタンスを識別する PowerShell スクリプトです。
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples):セットアップ構成 API を使用して既存のインストールを照会する方法を示す C# と C++ のサンプルです。
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): セットアップ構成 API を使用して Visual Studio のインストール済みインスタンスを識別する PowerShell スクリプトです。
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): セットアップ構成 API を使用して既存のインストールを照会する方法を示す C# と C++ のサンプルです。
 
 さらに、[セットアップ構成 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) は、Visual Studio インスタンスを問い合わせるために独自のユーティリティを構築する開発者向けのインターフェイスを提供します。
 
@@ -60,7 +60,7 @@ Visual Studio ではレジストリ設定はプライベートな場所に保存
 
 1. Visual Studio で開いているインスタンスがある場合は、閉じてください。
 
-1. `regedit.exe` を起動します。
+1. `regedit.exe`を起動します。
 
 1. `HKEY_LOCAL_MACHINE` ノードを選択します。
 
@@ -80,6 +80,6 @@ Visual Studio ではレジストリ設定はプライベートな場所に保存
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

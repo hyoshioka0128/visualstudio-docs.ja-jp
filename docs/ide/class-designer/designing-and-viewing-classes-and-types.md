@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590398"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>クラス デザイナーを使用したクラスと型の設計と表示
@@ -33,7 +33,7 @@ Visual Studio の**クラス デザイナー**では、コード内のクラス�
 
 - **視覚化**: プロジェクト内のクラスをダイアグラムに表示して、プロジェクトの構造を理解します。 プロジェクトの中で最も重要な部分に集中できるように、ダイアグラムをカスタマイズします。 ダイアグラムを保存すると、後からデモやドキュメントに使用できます。
 
-- **リファクター**: メソッドのオーバーライド、識別子の名前変更、パラメーターのリファクター、インターフェイスと抽象クラスの実装を行います。
+- **リファクター**: メソッドのオーバーライド、識別子の名前変更、パラメーターのリファクター、およびインターフェイスと抽象クラスの実装を行います。
 
 ## <a name="view-types-and-relationships"></a>型およびリレーションシップの表示
 
@@ -50,12 +50,12 @@ Visual Studio の**クラス デザイナー**では、コード内のクラス�
 
 各クラス ダイアグラムに表示する内容を定義するだけでなく、情報の提供方法を変更することもできます。詳細については、「[方法: クラス ダイアグラムをカスタマイズする](how-to-customize-class-diagrams.md)」を参照してください。
 
-1 つまたは複数のクラス ダイアグラムを微調整した後、それらを Microsoft Office ドキュメント内にコピーして印刷したり、画像ファイルとしてエクスポートしたりできます。 詳細については、[ Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)」、「[方法 : クラス ダイアグラムを印刷する](how-to-print-class-diagrams.md)」、「[方法 : イメージとしてクラス ダイアグラムをエクスポートする](how-to-export-class-diagrams-as-images.md)」を参照してください。
+1 つまたは複数のクラス ダイアグラムを微調整した後、それらを Microsoft Office ドキュメント内にコピーして印刷したり、画像ファイルとしてエクスポートしたりできます。 詳細については、「[方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)」、「[方法: クラス ダイアグラムを印刷する](how-to-print-class-diagrams.md)」、「[方法: クラス ダイアグラムをイメージとしてエクスポートする](how-to-export-class-diagrams-as-images.md)」を参照してください。
 
 > [!NOTE]
 > クラス デザイナーはソース ファイルの場所を追跡しないので、プロジェクト構造を変更したり、プロジェクト内のソース ファイルを移動したりすると、クラス デザイナーが、特に typedef のソース型、基本クラス、またはアソシエーション型を追跡できなくなる場合があります。 **クラス デザイナーはこの型を表示できません**などのエラーが表示されることがあります。 エラーが発生した場合は、変更または再配置したソース コードをもう一度クラス ダイアグラムにドラッグして再表示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード エディターの機能](../writing-code-in-the-code-and-text-editor.md)
 - [ソリューション間の依存関係をマップする](../../modeling/map-dependencies-across-your-solutions.md)

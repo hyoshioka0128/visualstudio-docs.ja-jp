@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString |Microsoft Docs
+title: 2::セットバリューアスストリング |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339818"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720285"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-文字列からの参照の値を設定します。 将来使用するために予約されています。
+文字列から参照の値を設定します。 将来利用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -48,10 +48,10 @@ int SetValueAsString ( 
 [in]文字列としての値。
 
 `dwRadix`\
-[in]任意の数値情報を書式設定で使用する基数。
+[in]数値情報の書式設定に使用する基数。
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

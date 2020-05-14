@@ -1,17 +1,18 @@
 ﻿---
 title: テクニカル サポート特典
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706991"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301943"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -120,11 +121,17 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 ||
 
-<sup>1</sup> *Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
+<sup>1</sup> *次のものが含まれます: Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
 
 <sup>2</sup> *Imagine Standard が含まれます。*
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。

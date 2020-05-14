@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778376"
 ---
 # <a name="profiling-and-windows-vista-security"></a>プロファイルと Windows Vista のセキュリティ
@@ -45,7 +45,7 @@ ms.locfileid: "74778376"
 
   このオプションを選択していない場合、一覧には、現在のセッションのプロセスが表示されます。 選択している場合、すべてのセッションのプロセスが一覧表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [概要](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

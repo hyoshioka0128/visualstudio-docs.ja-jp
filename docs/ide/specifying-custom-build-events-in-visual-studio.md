@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115333"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
@@ -24,9 +24,9 @@ ms.locfileid: "76115333"
 
 使用するプログラミング言語に関する具体的な情報については、次のトピックを参照してください。
 
-- Visual Basic -- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic -- [方法 : ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
-- C# および F# -- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- C# と F# -- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
 - Visual C++ -- [ビルド イベントを指定する](/cpp/build/specifying-build-events)。
 
@@ -36,11 +36,11 @@ ms.locfileid: "76115333"
 
 最適な結果を得るには、次のような書式のヒントに従います。
 
-- *.bat* ファイルを実行するすべてのビルド イベントの前に `call` ステートメントを追加します。
+- `call`.bat*ファイルを実行するすべてのビルド イベントの前に* ステートメントを追加します。
 
-   例 : `call C:\MyFile.bat`
+   例: `call C:\MyFile.bat`
 
-   例 : `call C:\MyFile.bat call C:\MyFile2.bat`
+   例: `call C:\MyFile.bat call C:\MyFile2.bat`
 
 - ファイルのパスを引用符で囲みます。
 
@@ -55,9 +55,9 @@ ms.locfileid: "76115333"
   > [!NOTE]
   > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
 - [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)
-- [チュートリアル: アプリケーションを構築する](../ide/walkthrough-building-an-application.md)
+- [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)

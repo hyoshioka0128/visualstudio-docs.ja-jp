@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::LaunchSuspended |Microsoft Docs
+title: IDebugエンジンの打ち上げ2::起動中断 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cef6382009d8139b8c166ce6b75a692e8e309557
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337179"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730542"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
-このメソッドは、デバッグ エンジン (DE) を使用して、プロセスを起動します。
+このメソッドは、デバッグ エンジン (DE) を使用してプロセスを起動します。
 
 ## <a name="syntax"></a>構文
 
@@ -65,51 +65,51 @@ int LaunchSuspended(
 
 ## <a name="parameters"></a>パラメーター
 `pszMachine`\
-[in]プロセスを起動するマシンの名前。 ローカル コンピューターを指定するのにには、null 値を使用します。
+[in]プロセスを起動するマシンの名前。 ローカル マシンを指定するには、NULL 値を使用します。
 
 `pPort`\
-[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)プログラムで実行されるポートを表すインターフェイス。
+[in]プログラムが実行されるポートを表す[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイス。
 
 `pszExe`\
 [in]起動する実行可能ファイルの名前。
 
 `pszArgs`\
-[in]実行可能ファイルに渡す引数。 引数がない場合、null 値を指定できます。
+[in]実行可能ファイルに渡す引数。 引数がない場合は、null 値になることがあります。
 
 `pszDir`\
-[in]実行可能ファイルで使用される作業ディレクトリの名前。 作業ディレクトリが必要ない場合、null 値があります。
+[in]実行可能ファイルで使用される作業ディレクトリの名前。 作業ディレクトリが不要な場合は、NULL 値になることがあります。
 
 `bstrEnv`\
-[in]追加の NULL 終端記号の後に、NULL で終わる文字列の環境ブロックします。
+[in]NULL で終わる文字列の環境ブロック、続いて追加の NULL 終端文字。
 
 `pszOptions`\
-[in]実行可能ファイルのオプションです。
+[in]実行可能ファイルのオプション。
 
 `dwLaunchFlags`\
-[in]指定します、 [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)セッション。
+[in]セッションの[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)を指定します。
 
 `hStdInput`\
-[in]代替の入力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
+[in]代替入力ストリームへのハンドル。 リダイレクトが不要な場合は 0 になることがあります。
 
 `hStdOutput`\
-[in]代替の出力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
+[in]代替出力ストリームへのハンドル。 リダイレクトが不要な場合は 0 になることがあります。
 
 `hStdError`\
-[in]代替エラー出力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
+[in]代替エラー出力ストリームへのハンドル。 リダイレクトが不要な場合は 0 になることがあります。
 
 `pCallback`\
-[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッガー イベントを受け取るオブジェクト。
+[in]デバッガー イベントを受け取る[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)オブジェクト。
 
 `ppDebugProcess`\
-[out]結果を返します[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)実行中のプロセスを表すオブジェクト。
+[アウト]起動されたプロセスを表す結果の[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 通常、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]を使用してプログラムを起動、 [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)メソッドと中断されたプログラムにデバッガーをアタッチします。 ただし、この場合 (たとえば、デバッグ エンジンは、インタープリターの一部と、デバッグ中のプログラムはインタープリター言語である場合)、プログラムを起動する必要があります、デバッグ エンジンの状況がある[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]を使用して、`IDebugEngineLaunch2::LaunchSuspended`メソッド.
+ 通常[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)][、LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)メソッドを使用してプログラムを起動し、中断されたプログラムにデバッガーをアタッチします。 ただし、デバッグ エンジンがプログラムを起動する必要がある場合 (たとえば、デバッグ エンジンがインタープリターの一部であり、デバッグ中のプログラムがインタープリタ言語である場合)、その場合[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]はメソッドを`IDebugEngineLaunch2::LaunchSuspended`使用します。
 
- [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)プロセスが中断状態に正常に起動した後、プロセスを開始するメソッドが呼び出されます。
+ [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)メソッドは、プロセスが中断状態で正常に起動した後にプロセスを開始するために呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

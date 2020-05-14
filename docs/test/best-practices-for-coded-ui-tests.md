@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565163"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
@@ -46,7 +46,7 @@ ms.locfileid: "75565163"
 
 - テスト対象のアプリケーションの UI コントロールを作成するときは、わかりやすい名前を使用します。 意味のある名前を使うと、自動生成されたコントロール名がいっそうわかりやすくて使いやすくなります。
 
-- API を使用したコーディングによりアサーションを作成する場合は、*UIMap.cs* ファイル内の [UIMap](/previous-versions/dd580454(v=vs.140)) クラスの部分でアサーションごとにメソッドを作成します。 アサーションを実行するには、このメソッドをテスト メソッドから呼び出します。
+- API を使用したコーディングによりアサーションを作成する場合は、[UIMap.cs](/previous-versions/dd580454(v=vs.140)) ファイル内の *UIMap* クラスの部分でアサーションごとにメソッドを作成します。 アサーションを実行するには、このメソッドをテスト メソッドから呼び出します。
 
 - API を使用してコーディングを直接行う場合は、可能な限り、*UIMap.Designer.cs* ファイルに生成されたクラスのプロパティとメソッドをコードで使用します。 これらのクラスを使用すると、作業が楽になり、信頼性と生産性が高まります。
 
@@ -85,7 +85,7 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>

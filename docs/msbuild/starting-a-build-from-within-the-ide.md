@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595086"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632122"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>IDE 内からのビルドの開始
+
 カスタムのプロジェクト システムでは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> を使用してビルドを開始する必要があります。 この記事では、この要件の理由とプロシージャの概要について説明します。
 
 ## <a name="parallel-builds-and-threads"></a>並行ビルドとスレッド
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、共通リソースにアクセスするために仲介を必要とする並行ビルドを使用できます。 プロジェクト システムではビルドを非同期的に実行できますが、このようなシステムでは、コールバック内からビルド関数を呼び出すことはできません。
+
+ Visual Studio では並行ビルドを使用できます。これは共通リソースにアクセスするための仲介を必要とします。 プロジェクト システムではビルドを非同期的に実行できますが、このようなシステムでは、コールバック内からビルド関数を呼び出すことはできません。
 
  プロジェクト システムで環境変数を変更する場合は、ビルドの NodeAffinity を OutOfProc に設定する必要があります。 この要件は、インプロセス ノードを必要とするためホスト オブジェクトを使用できないことを意味します。
 
 ## <a name="use-ivsbuildmanageraccessor"></a>IVSBuildManagerAccessor を使用する
+
  次のコードは、ビルドを開始するためにプロジェクト システムで使用できるメソッドの概要を示しています。
 
 ```csharp

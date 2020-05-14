@@ -28,7 +28,7 @@
           href: javascript-memory.md
         - name: メモリ リークを検出する (JavaScript)
           href: walkthrough-find-a-memory-leak-javascript.md
-    - name: ネットワーク使用率
+    - name: ネットワーク使用量
       href: network-usage.md
     - name: HTML UI の応答性
       items:
@@ -36,9 +36,9 @@
           href: html-ui-responsiveness.md
         - name: UI の応答性の向上 (HTML)
           href: walkthrough-improving-ui-responsiveness-html.md
-    - name: パフォーマンス エクスプローラー
+    - name: パフォーマンス エクスプ ローラー
       items:
-        - name: パフォーマンス エクスプローラー
+        - name: パフォーマンス エクスプ ローラー
           href: performance-explorer.md
         - name: Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
@@ -176,77 +176,77 @@
                       items:
                         - name: .NET Framework の使用に関するパフォーマンス規則
                           href: dotnet-framework-usage-performance-rules.md
-                        - name: 'DA0001:連結には StringBuilder を使用してください'
+                        - name: 'DA0001: StringBuilder を使用して連結してください'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005:GC2 のコレクションが頻繁です'
+                        - name: 'DA0005: 頻繁な GC2 のコレクションです'
                           href: da0005-frequent-gc2-collections.md
-                        - name: 'DA0006:値の型で Equals() をオーバーライドしてください'
+                        - name: 'DA0006: 値の型で Equals() をオーバーライドしてください'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007:制御フローでの例外の使用を避けてください'
+                        - name: 'DA0007: 制御フローでの例外の使用を避けてください'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: 'DA0010:GetHashCode の負荷が高くなっています'
+                        - name: 'DA0010: GetHashCode の負荷が高くなっています'
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011:CompareTo の負荷が高くなっています'
+                        - name: 'DA0011: CompareTo の負荷が高くなっています'
                           href: da0011-expensive-compareto.md
-                        - name: 'DA0012:リフレクションが頻繁に実行されています'
+                        - name: 'DA0012: リフレクションが頻繁に実行されています'
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013:String.Split/String.Substring が頻繁に使用されています'
+                        - name: 'DA0013: String.Split/String.Substring が頻繁に使用されています'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています'
+                        - name: 'DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: 'DA0021:ジェネレーション 1 のガベージ コレクションが高率です'
+                        - name: 'DA0021: ジェネレーション 1 のガベージ コレクションが高率です'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: 'DA0022:ジェネレーション 2 のガベージ コレクションが高率です'
+                        - name: 'DA0022: ジェネレーション 2 のガベージ コレクションが高率です'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0023:高い GC CPU 時間'
+                        - name: 'DA0023: 高い GC CPU 時間'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024:過剰な GC CPU 時間'
+                        - name: 'DA0024: 過剰な GC CPU 時間'
                           href: da0024-excessive-gc-cpu-time.md
                         - name: 'DA0038: 高率のロック競合'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039:非常に高率のロック競合'
+                        - name: 'DA0039: 非常に高率のロック競合'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: メモリとページングのパフォーマンス規則
                       items:
                         - name: メモリとページングのパフォーマンス規則
                           href: memory-and-paging-performance-rules.md
-                        - name: 'DA0014:ディスクへのアクティブなメモリのページングが非常に高率で発生しています'
+                        - name: 'DA0014: ディスクへのアクティブなメモリのページングが非常に高率で発生しています'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017:ディスクへのアクティブなメモリのページングが高率で発生しています'
+                        - name: 'DA0017: ディスクへのアクティブなメモリのページングが高率で発生しています。'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: プロファイリング ツールの使用に関する規則
                       items:
                         - name: プロファイリング ツールの使用に関する規則
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002:VSPerfCorProf.dll がありません'
+                        - name: 'DA0002: VSPerfCorProf.dll がありません'
                           href: da0002-vsperfcorprof-dll-is-missing.md
-                        - name: 'DA0003:カーネル サンプルが多数存在します'
+                        - name: 'DA0003: カーネル サンプルが多数存在します'
                           href: da0003-many-kernel-samples.md
-                        - name: 'DA0004:プロセッサ使用率が高くなっています'
+                        - name: 'DA0004: プロセッサ使用率が高くなっています'
                           href: da0004-high-processor-usage.md
-                        - name: 'DA0008:少数のサンプルしか収集されていません'
+                        - name: 'DA0008: 少数のサンプルしか収集されていません'
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: 過剰なカーネル CPU 処理時間'
+                        - name: 'DA0026: 過剰なカーネル CPU 処理時間。'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029:サポートされていない CLR バージョンです'
+                        - name: 'DA0029: サポートされていない CLR バージョンです。'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: データベース プロジェクトの階層の相互作用の測定を収集します'
+                        - name: 'DA0030: データベース プロジェクトの階層の相互作用の測定を収集します。'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: リソース監視のパフォーマンス規則
                       items:
                         - name: リソース監視のパフォーマンス規則
                           href: resource-monitoring-performance-rules.md
-                        - name: 'DA0501:プロセスによる平均 CPU 使用量をプロファイリングしています。'
+                        - name: 'DA0501: プロセスによる平均 CPU 使用量をプロファイリングしています。'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502:プロセスにより CPU の最大使用量がプロファイリングされています'
+                        - name: 'DA0502: プロセスによる最大 CPU 使用量をプロファイリングしています'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503:プロセスのワーキング セット平均バイト数がプロファイリングされています'
+                        - name: 'DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504:プロセスのワーキング セット最大バイト数がプロファイリングされています'
+                        - name: 'DA0504: プロセスのワーキング セット最大バイト数がプロファイリングされています'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0505: プロセスに割り当てられた平均プライベート バイト数がプロファイリングされています'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506:プロセスに割り当てられた最大プライベート バイト数がプロファイリングされています'
+                        - name: 'DA0506: プロセスに割り当てられた最大プライベート バイト数がプロファイリングされています'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: パフォーマンス レポート ビュー
               items:
@@ -318,7 +318,7 @@
                       href: dotnet-memory-data-views.md
                     - name: 概要 ビュー
                       href: summary-view-dotnet-memory-data.md
-                    - name: 割り当て ビュー
+                    - name: 割り当てビュー
                       href: dotnet-memory-allocations-view.md
                     - name: オブジェクトの有効期間ビュー
                       href: object-lifetime-view.md
@@ -372,7 +372,7 @@
                   items:
                     - name: 階層相互作用のビュー
                       href: tier-interaction-views.md
-                    - name: 階層の相互作用ビュー
+                    - name: 階層相互作用のビュー
                       href: tier-interactions-view.md
             - name: パフォーマンス ツール のレポート ビューのカスタマイズ
               items:
@@ -580,13 +580,13 @@
                       href: waitstart.md
                     - name: AutoMark
                       href: automark.md
-                    - name: ユーザー
+                    - name: User
                       href: user-vsperfcmd.md
                     - name: QueryCounters
                       href: querycounters.md
-                    - name: イベント
+                    - name: events
                       href: events-vsperfcmd.md
-                    - name: シャットダウン
+                    - name: Shutdown
                       href: shutdown.md
                     - name: GlobalOn と GlobalOff
                       href: globalon-and-globaloff.md
@@ -594,7 +594,7 @@
                       href: processon-and-processoff.md
                     - name: ThreadOn と ThreadOff
                       href: threadon-and-threadoff.md
-                    - name: '[GC]'
+                    - name: GC (GC)
                       href: gc-vsperfcmd.md
                     - name: Launch
                       href: launch.md
@@ -610,7 +610,7 @@
                       href: pf.md
                     - name: Sys
                       href: sys-vsperfcmd.md
-                    - name: タイマー
+                    - name: Timer
                       href: timer.md
                     - name: LineOff
                       href: lineoff.md
@@ -738,7 +738,7 @@
               href: report-based-on-visible-time-range.md
             - name: スリープ時間
               href: sleep-time.md
-            - name: 同期時間
+            - name: 同期時刻
               href: synchronization-time.md
             - name: スレッド準備完了コネクタ
               href: thread-ready-connector.md
@@ -852,5 +852,5 @@
                   href: cvwritemessage-function.md
         - name: コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: エネルギー使用を分析する
+    - name: エネルギー使用の分析
       href: analyze-energy-use-in-store-apps.md

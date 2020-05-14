@@ -3,18 +3,19 @@ title: 管理ポータルで契約の基本設定を設定する
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: 管理ポータルで言語、連絡先、サブスクリプション レベルなどの基本設定を設定する方法について説明します。
-ms.openlocfilehash: 24e9ddfa92ee63e4d15eea086224e1069d4bcbc8
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000982"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508759"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>管理ポータルで契約の基本設定を設定する
-スーパー管理者は、各契約に対してグローバルに適用される管理ポータルで特定の基本設定を設定できるようになりました。  この基本設定により、契約の管理者がサブスクライバーを追加するときに設定できるものが決定されます。この基本設定はスーパー管理者だけがグローバルで変更できます。  
+スーパー管理者は、各契約に対してグローバルに適用される特定の基本設定を、管理ポータルで設定できます。  これらの基本設定を行うと、管理者がサブスクライバーを追加するときには、その管理者用のサブスクリプションの詳細が自動的に設定されます。また、これらの基本設定は、スーパー管理者だけがグローバルに変更できます。  
 
 ## <a name="access-preferences"></a>アクセスの基本設定
 基本設定を表示したり、変更したりするには、契約に対してスーパー管理者権限が与えられているサインイン ID を使用し、[管理者ポータル](https://manage.visualstudio.com)にサインインする必要があります。  
@@ -43,7 +44,7 @@ ms.locfileid: "70000982"
 この基本設定では、サブスクライバー ポータルの[サブスクリプション ページ](https://my.visualstudio.com/subscriptions)にある **[Contact my Admin]\(管理者に問い合わせる\)** ボタンを使用することでサブスクライバーが管理者に連絡する方法が提供されます。  この基本設定を空のままにした場合、サブスクライバー メッセージは契約のすべての管理者とスーパー管理者に転送されます。  グループ電子メール エイリアスまたはセキュリティ グループを使用し、この連絡先電子メールの受信者を調整することをお勧めします。 必要に応じて、個人の電子メール アドレスを入力することもできます。
 
 > [!NOTE]
-> ここに記載する電子メール アドレスはサブスクライバーに表示されません。  サブスクライバーがサブスクライバー ポータルで **[Contact my Admin]\(管理者に問い合わせる\)** 要求を送信すると、メッセージはサブスクライバーに公開されることなく、エイリアスに転送されます。 
+> ここに記載する電子メール アドレスはサブスクライバーに表示されません。  サブスクライバーがサブスクライバー ポータルで **[Contact my Admin]\(管理者に問い合わせる\)** 要求を送信すると、メッセージはサブスクライバーに公開されることなく、別名に転送されます。 
 
 ### <a name="default-external-subscribers-setting"></a>[Default external subscribers setting]\(既定の外部サブスクライバー設定\)
 この基本設定では、管理者が組織のテナント/ディレクトリの外からサブスクライバーを追加できるかどうかを決定できます。  オフにした場合、外部のサブスクライバーは許可されません。  有効にしたとき、管理者が外部のサブスクライバーを追加しようとすると、選択を確定するように求められ、サブスクリプションの割り当てが許可されます。 管理者はこの設定をオーバーライドできません。 
@@ -73,7 +74,18 @@ A: **[Contact my Admin]\(管理者に問い合わせる\)** に特定の電子�
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
-- [サブスクリプションを割り当てる](assign-license.md)方法を学ぶ
-- さまざまな[サブスクリプションのメリット](https://visualstudio.microsoft.com/vs/benefits/)について学ぶ
+Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
+- [個別のサブスクリプションの割り当て](assign-license.md)
+- [複数のサブスクリプションを管理する](assign-license-bulk.md)
+- [サブスクリプションの編集](edit-license.md)
+- [最大使用量の確認](maximum-usage.md)
+
+
 

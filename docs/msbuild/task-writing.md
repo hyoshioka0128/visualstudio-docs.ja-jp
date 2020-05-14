@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594995"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631838"
 ---
 # <a name="task-writing"></a>タスクの作成
-タスクでは、ビルド プロセスの間に実行するコードを指定します。 タスクはターゲットに含まれます。 一般的なタスクのライブラリは [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に付属します。独自のタスクを作成することもできます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に付属するタスク ライブラリの詳細については、[タスク リファレンス](../msbuild/msbuild-task-reference.md)を参照してください。
+
+タスクでは、ビルド プロセスの間に実行するコードを指定します。 タスクはターゲットに含まれます。 一般的なタスクのライブラリは MSBuild に付属します。また、独自のタスクを作成することもできます。 MSBuild に付属するタスクのライブラリの詳細については、[タスク リファレンス](../msbuild/msbuild-task-reference.md)を参照してください。
 
 ## <a name="tasks"></a>タスク
- タスクには、1 つまたは複数のファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などがあります。 各タスクは、*Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装する .NET クラスとして実装されます。
+
+ タスクの例としては、1 つまたは複数のファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、C# ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などがあります。 各タスクは、*Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装する .NET クラスとして実装されます。
 
  タスクを実装するには 2 つの方法があります。
 
@@ -60,7 +62,7 @@ namespace MyTasks
 </Project>
 ```
 
- タスクが実行されるとき、タスク クラスで .NET プロパティを作成する場合、プロジェクト ファイルからも入力を受け取ります。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、タスクの `Execute` メソッドを呼び出す直前にこれらのプロパティを設定します。 文字列プロパティを作成するには、次のようなタスク コードを使用します。
+ タスクが実行されるとき、タスク クラスで .NET プロパティを作成する場合、プロジェクト ファイルからも入力を受け取ります。 MSBuild により、タスクの `Execute` メソッドを呼び出す直前にこれらのプロパティが設定されます。 文字列プロパティを作成するには、次のようなタスク コードを使用します。
 
 ```csharp
 using System;
@@ -92,14 +94,16 @@ namespace MyTasks
 ```
 
 ## <a name="register-tasks"></a>登録タスク
- プロジェクトがタスクを実行する場合、タスク クラスが含まれるアセンブリを見つける方法を [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に与えている必要があります。 タスクは [UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) で登録されます。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイルの *Microsoft.Common.Tasks* は、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に付属するすべてのタスクを登録する `UsingTask` 要素の一覧が含まれるプロジェクト ファイルです。 このファイルは、あらゆるプロジェクトのビルド時に自動的に追加されます。 *Microsoft.Common.Tasks* に登録されているタスクが現在のプロジェクト ファイルにも登録されている場合、現在のプロジェクト ファイルに優先権が与えられます。つまり、既定のタスクが、同じ名前を持つ独自のタスクでオーバーライドされます。
+ プロジェクトでタスクを実行する場合、そのタスク クラスが含まれているアセンブリを見つける方法が MSBuild によって認識されている必要があります。 タスクは [UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) で登録されます。
+
+ MSBuild ファイルの *Microsoft.Common.Tasks* は、MSBuild に付属するすべてのタスクを登録する `UsingTask` 要素の一覧が含まれるプロジェクト ファイルです。 このファイルは、あらゆるプロジェクトのビルド時に自動的に追加されます。 *Microsoft.Common.Tasks* に登録されているタスクが現在のプロジェクト ファイルにも登録されている場合、現在のプロジェクト ファイルに優先権が与えられます。つまり、既定のタスクが、同じ名前を持つ独自のタスクでオーバーライドされます。
 
 > [!TIP]
-> *Microsoft.Common.Tasks* のコンテンツを表示することで、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に付属するタスクの一覧を確認できます。
+> *Microsoft.Common.Tasks* のコンテンツを表示することで、MSBuild に付属するタスクの一覧を確認できます。
 
 ## <a name="raise-events-from-a-task"></a>タスクからイベントを生成する
+
  タスクが <xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生する場合、<xref:Microsoft.Build.Utilities.Task> クラスで次のいずれかのヘルパー メソッドを利用して生成したイベントは、登録されているあらゆるロガーで記録され、表示されます。
 
 ```csharp
@@ -132,6 +136,7 @@ public class SimpleTask : ITask
 ```
 
 ## <a name="require-task-parameters-to-be-set"></a>タスク パラメーターの設定を要求する
+
  特定のタスク プロパティを "必須" に設定できます。必須にすると、タスクを実行するプロジェクト ファイルで、必須のプロパティに値を設定する必要があります。設定しないと、ビルドに失敗します。 次のように、タスクの .NET プロパティに `[Required]` 属性を適用します。
 
 ```csharp
@@ -141,9 +146,9 @@ public string RequiredProperty { get; set; }
 
  `[Required]` 属性は <xref:Microsoft.Build.Framework> 名前空間の <xref:Microsoft.Build.Framework.RequiredAttribute> によって定義されます。
 
-## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によるタスクの呼び出し方法
+## <a name="how-msbuild-invokes-a-task"></a>MSBuild によるタスクの呼び出し方法
 
-タスクを呼び出すと、まず [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によってタスク クラスがインスタンス化され、次にプロジェクト ファイルのタスク要素内で設定されたタスク パラメーター用のオブジェクトのプロパティ セッターが呼び出されます。 タスク要素によってパラメーターが指定されていない場合、または要素内で指定された式によって空の文字列であると評価された場合、プロパティ セッターは呼び出されません。
+タスクを呼び出すと、まず MSBuild によってタスク クラスがインスタンス化され、次にプロジェクト ファイルのタスク要素内に設定されているタスク パラメーター用のオブジェクトのプロパティ セッターが呼び出されます。 タスク要素によってパラメーターが指定されていない場合、または要素内で指定された式によって空の文字列であると評価された場合、プロパティ セッターは呼び出されません。
 
 たとえば、プロジェクトでは次のようになります
 
@@ -163,13 +168,13 @@ public string RequiredProperty { get; set; }
 
 ### <a name="task-parameter-types"></a>タスク パラメーターの型
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、`string`、`bool`、`ITaskItem`、`ITaskItem[]` の型のプロパティが処理されます。 タスクが別の型のパラメーターを受け入れる場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によって <xref:System.Convert.ChangeType%2A> が呼び出され、`string` (すべてのプロパティと項目の参照が展開された状態で) から変換先の型に変換されます。 入力パラメーターの変換に失敗した場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によってエラーが出力されます。タスクの `Execute()` メソッドは呼び出されません。
+MSBuild では、`string`、`bool`、`ITaskItem`、`ITaskItem[]` 型のプロパティがネイティブに処理されます。 タスクが別の型のパラメーターを受け入れる場合、MSBuild によって <xref:System.Convert.ChangeType%2A> が呼び出され、`string` から (すべてのプロパティと項目の参照が展開された状態で) 変換先の型に変換されます。 入力パラメーターの変換に失敗した場合、MSBuild によってエラーが出力されます。タスクの `Execute()` メソッドは呼び出されません。
 
 ## <a name="example"></a>例
 
 ### <a name="description"></a>説明
 
-次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生されるタスクを示します。 このタスクは成功を示す `true` を返します。
+次の C# クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生したタスクを示しています。 このタスクは成功を示す `true` を返します。
 
 ### <a name="code"></a>コード
 
@@ -194,7 +199,7 @@ namespace SimpleTask1
 
 ### <a name="description"></a>説明
 
-次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するタスクを示します。 このタスクは成功を示す `true` を返します。
+次の C# クラスは、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するタスクを示しています。 このタスクは成功を示す `true` を返します。
 
 ### <a name="code"></a>コード
 
@@ -230,7 +235,7 @@ namespace SimpleTask2
 
 ### <a name="description"></a>説明
 
-この [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生されるタスクを示します。 必須の文字列プロパティがあり、登録されているすべてのロガーで表示されるイベントを生成します。
+この C# クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生したタスクを示しています。 必須の文字列プロパティがあり、登録されているすべてのロガーで表示されるイベントを生成します。
 
 ### <a name="code"></a>コード
 

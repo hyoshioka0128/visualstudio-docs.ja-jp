@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67692368"
 ---
 # <a name="packagejson-configuration"></a>package.json の構成
@@ -49,7 +49,7 @@ npm パッケージのバージョン管理システムには、厳密な規則�
 
 上記の表記を使用すると、npm では常に指定した正確なバージョン 16.4.2 が取得されます。
 
-特殊な表記を使用して、更新を修正プログラムの更新 (バグの修正) に制限することができます。 この例では、次のように記述されています。
+特殊な表記を使用して、更新を修正プログラムの更新 (バグの修正) に制限することができます。 次の点に注意してください。
 
   ```json
   "dependencies": {

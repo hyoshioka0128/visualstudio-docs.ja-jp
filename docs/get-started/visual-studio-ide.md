@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589358"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE へようこそ
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 以下の入力記事のいずれかに従って、Visual Studio をさらに詳しく調べます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "75589358"
 
 - [Visual Studio を使用して初めての C++ コンソール アプリを作成する](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のその他の機能](../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします

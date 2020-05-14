@@ -1,27 +1,27 @@
 ---
-title: 原因となっている、新しい項目 ダイアログ ボックスの追加 |Microsoft Docs
+title: '[新しい項目の追加] ダイアログ ボックスに貢献する |マイクロソフトドキュメント'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 443f52edda5f3bedb2e3f8c8dbbe748254fd7be7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 83444d9be6ba23392b792a0187bf46dc9920c465
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335572"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709276"
 ---
-# <a name="contribute-to-the-add-new-item-dialog-box"></a>新しい項目の追加 ダイアログ ボックスに投稿します。
-プロジェクト サブタイプの項目の完全な新しいディレクトリを指定できます、**新しい項目の追加**登録することによって、ダイアログ ボックス**項目の追加**下のテンプレート、**プロジェクト**レジストリ サブキー。
+# <a name="contribute-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログ ボックスに投稿する
+プロジェクトのサブタイプは、**プロジェクト**のレジストリ サブキーの下に**項目の追加**テンプレートを登録することで **、新しい項目の追加**] ダイアログ ボックスの項目の完全な新しいディレクトリを提供できます。
 
-## <a name="register-add-new-item-templates"></a>新しい項目の追加テンプレートを登録します。
- このセクションでは、下にある**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects**レジストリにします。 以下のレジストリ エントリの想定を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトは、架空のプロジェクト サブタイプによって集計されます。 エントリ、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトは、以下に示します。
+## <a name="register-add-new-item-templates"></a>登録 新しい項目の追加テンプレート
+ このセクションは、レジストリ内**のHKEY_LOCAL_MACHINE\ソフトウェア\マイクロソフト\VisualStudio\8.0\Projects**にあります。 以下のレジストリ エントリは[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、架空のプロジェクト サブタイプによって集計されたプロジェクトを想定しています。 プロジェクトのエントリは[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以下のとおりです。
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]
@@ -35,12 +35,12 @@ ms.locfileid: "66335572"
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"
 ```
 
- **AddItemTemplates\TemplateDirs**サブキーには項目箇所で使用可能なディレクトリのパスを使用するレジストリ エントリが含まれています、**新しい項目の追加** ダイアログ ボックスが配置されます。
+ **AddItemTemplates\TemplateDirs**サブキーには、**新しい項目の追加**ダイアログ ボックスで利用可能になった項目が配置されているディレクトリへのパスを持つレジストリ エントリが含まれています。
 
- 環境が自動的にすべてのロード、 **AddItemTemplates**データの下に、**プロジェクト**レジストリ サブキー。 このデータは、プロジェクトの基本実装のデータと特定のプロジェクト サブタイプの型のデータを含めることができます。 各プロジェクトのサブタイプは、プロジェクトの種類で識別される**GUID**します。 プロジェクトのサブタイプでは、代替が設定されるように指定できます**項目の追加**フレーバー プロジェクトの特定のインスタンスをサポートすることで使用するテンプレート、`VSHPROPID_ AddItemTemplatesGuid`から列挙<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>で<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>プロジェクト サブタイプの GUID 値を返す実装です。 場合、`VSHPROPID_AddItemTemplatesGuid`プロパティが指定されていない、基本プロジェクトの GUID を使用します。
+ 環境は、**プロジェクト**のレジストリ サブキーの下に**AddItemTemplates**データのすべてを自動的に読み込みます。 このデータには、基本プロジェクト実装のデータと、特定のプロジェクトのサブタイプタイプのデータを含めることができます。 各プロジェクト のサブタイプは、 プロジェクトの種類**GUID**で識別されます。 プロジェクト サブタイプは、プロジェクトのサブタイプの GUID 値を返すために実装`VSHPROPID_ AddItemTemplatesGuid`<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>の<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>列挙をサポートすることで、特定のフレーバープロジェクト インスタンスに対して**項目の追加**テンプレートの代替セットを使用するように指定できます。 プロパティが`VSHPROPID_AddItemTemplatesGuid`指定されていない場合は、基本プロジェクト GUID が使用されます。
 
- 内の項目をフィルター処理することができます、**新しい項目の追加**を実装してダイアログ ボックス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>プロジェクト サブタイプ アグリゲーター オブジェクトのインターフェイス。 集約することによって、データベース プロジェクトを実装するプロジェクト サブタイプなど、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトで、フィルター処理できます、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]から特定の項目、**新しい項目の追加**とフィルター処理を実装することで、ダイアログ ボックスで有効にする、追加することができますプロジェクトに固有の項目をサポートすることによってデータベース`VSHPROPID_ AddItemTemplatesGuid`で<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>します。 フィルター処理およびに項目を追加の詳細については、**新しい項目の追加**ダイアログ ボックスを参照してください[、新しい項目の追加 ダイアログ ボックスに項目を追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)します。
+ プロジェクトのサブタイプ アグリゲーター オブジェクトにインターフェイスを<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>実装することで、[**新しい項目の追加**] ダイアログ ボックスで項目をフィルター処理できます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]たとえば、プロジェクトを集計してデータベース プロジェクトを実装するプロジェクト サブタイプは、フィルター処理を実装して[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**[新しい項目の追加**] ダイアログ ボックスから特定の項目をフィルター処理し、次に、 で`VSHPROPID_ AddItemTemplatesGuid`<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>サポートすることによってデータベース プロジェクト固有の項目を追加できます。 [新しい項目の追加] ダイアログ ボックスにアイテムを追加するフィルター処理とアイテムの追加の詳細については **、「[新しい項目**[の追加] ダイアログ ボックスに項目を追加する](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [プロジェクトの拡張に通常使用されるオブジェクトの Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [プロジェクトの拡張に通常使用されるオブジェクトの CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

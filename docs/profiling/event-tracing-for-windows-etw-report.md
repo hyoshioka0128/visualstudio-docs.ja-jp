@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779299"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>ETW (Event Tracing for Windows) レポート
@@ -25,15 +25,15 @@ Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsp
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] インターフェイスでは ETW レポートを表示できません。
 
-- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法:ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)」を参照してください。
+- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)」を参照してください。
 
 - [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールを利用して ETW データを収集する方法については、「[Events](../profiling/events-vsperfcmd.md)」を参照してください。
 
 - ETW レポートは **VSReport/Summary:ETW** コマンドを利用して生成します。 詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
-|**タイムスタンプ**|イベントが発生した日時を識別します。|
+|**Timestamp**|イベントが発生した日時を識別します。|
 |**プロセス ID**|イベントを生成したプロセスを識別します。|
 |**スレッド ID**|イベントを生成したスレッドを識別します。|
 |**説明**|イベント プロバイダーを識別します。|

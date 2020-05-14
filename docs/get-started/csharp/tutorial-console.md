@@ -2,25 +2,25 @@
 title: 'チュートリアル: シンプルな C# コンソール アプリを作成する'
 description: Visual Studio で C# コンソール アプリを作成する方法について、ステップ バイ ステップで説明します。
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830007"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "78215428"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -46,7 +46,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
    (または、**Ctrl**+**Shift**+**N** キーを押します)。
 
 3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに ***Calculator*** という名前を付けます。
@@ -133,6 +133,9 @@ C# で何らかの基本的な整数計算を始めましょう。
     ```
 
     それを行う場合は、Visual Studio の IntelliSense 機能によって、入力のオートコンプリート オプションが提供されることに注意してください。
+
+    > [!NOTE]
+    > 次のアニメーションは、前のコードを再現したものではありません。 オートコンプリート機能のしくみを示すためのものです。
 
     ![Visual Studio IDE の IntelliSense オートコンプリート機能を示す整数計算コードのアニメーション](./media/integer-math-intellisense.gif)
 
@@ -268,18 +271,21 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 基本的な電卓アプリを改善しましたが、ユーザー入力エラーなどの例外を処理するための安全装置がまだありません。
 
-たとえば、0 で数値を割ったり、数値が必要なときにアルファベット文字を入力したりすると (またはその逆)、アプリは動作を停止し、エラーが返されます。
+たとえば、数字を 0 で除算したり、アプリで数字が想定されているときにアルファベットを入力 (またはその逆) したりすると、アプリが動作しなくなる、エラーが返される、または予期しない数値以外の結果が返される可能性があります。
 
-いくつかの一般的なユーザー入力エラーを行い、デバッガーでそれを検索して、コードを修正を行ってみましょう。
+一般的なユーザー入力エラーをいくつか見てみましょう。発生した場合はデバッガーで探し、コードで修正します。
 
->[!TIP]
->デバッガーとそのしくみの詳細については、「[最初に Visual Studio デバッガーを見る](../../debugger/debugger-feature-tour.md)」を参照してください。
+> [!TIP]
+> デバッガーとそのしくみの詳細については、「[最初に Visual Studio デバッガーを見る](../../debugger/debugger-feature-tour.md)」を参照してください。
 
 ### <a name="fix-the-divide-by-zero-error"></a>"0 除算" エラーを修正する
 
-数値を 0 で割ろうとすると、コンソール アプリはフリーズします。 コード エディターに問題が表示されます。
+数値を 0 で除算しようとすると、コンソール アプリがフリーズし、コード エディターに問題が表示されることがあります。
 
    ![0 除算エラーが表示されている Visual Studio のコード エディター](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> 場合によっては、アプリがフリーズせず、デバッガーに 0 除算エラーが表示されないことがあります。 代わりに、無限大記号など、予期しない数値以外の結果がアプリから返されることがあります。 この場合でも、次のコード修正を利用できます。
 
 このエラーを処理するようにコードを変更してみましょう。
 
@@ -323,15 +329,15 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 では、始めましょう。
 
-1. 次のコード ブロックの "*後*" にあるものをすべて削除します。
+1. 中かっこで囲まれている `Calculator` 名前空間内のすべてを削除します。
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. そして、次のように、新しい `Calculator` クラスを追加します。
@@ -466,7 +472,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
    ![Visual Studio の [出力] ウィンドウを閉じる](./media/csharp-calculator-close-output-pane.png)
 
-1. Visual Studio で **Ctrl** + **S** キーを押してアプリを保存します。
+1. Visual Studio で **Ctrl**+**S** キーを押してアプリを保存します。
 
 1. Visual Studio を閉じます。
 

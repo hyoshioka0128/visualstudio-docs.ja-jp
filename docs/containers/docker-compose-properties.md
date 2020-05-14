@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826459"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988514"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose のビルド プロパティ
 
@@ -41,6 +41,7 @@ ms.locfileid: "76826459"
 |DockerComposeDownArguments|dcproj|`docker-compose down` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--timeout 500`|-|  
 |DockerComposeProjectPath|csproj または vbproj|docker-compose プロジェクト (dcproj) ファイルの相対パス。 docker-compose.yml ファイルに格納されている関連イメージ ビルド設定を見つける目的で、サービス プロジェクトの公開時にこのプロパティを設定します。|-|
 |DockerComposeUpArguments|dcproj|`docker-compose up` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--timeout 500`|-|
+|DockerDevelopmentMode|dcproj| "ホスト上でビルド" の最適化 ("高速モード" のデバッグ) を有効にするかどうかを制御します。  指定できる値は、**Fast** と **Regular** です。 | Fast |
 |DockerLaunchAction| dcproj | F5 または Ctrl + F5 キーで実行する起動アクションを指定します。  指定できる値には、None、LaunchBrowser、LaunchWCFTestClient があります。|None|
 |DockerLaunchBrowser| dcproj | ブラウザーを起動するかどうかを示します。 DockerLaunchAction が指定されている場合は無視されます。 | False |
 |DockerServiceName| dcproj|DockerLaunchAction または DockerLaunchBrowser が指定されている場合、DockerServiceName は、起動する必要があるサービスの名前です。  docker-compose 構成ファイルで参照できるプロジェクトはたくさん存在する可能性があります。そのうちのどれを起動するかをこのプロパティを使用して決定します。|-|

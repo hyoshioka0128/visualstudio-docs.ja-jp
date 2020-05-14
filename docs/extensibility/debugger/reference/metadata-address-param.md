@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM | Microsoft Docs
+title: METADATA_ADDRESS_PARAM |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_PARAM structure
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 066b6da356a3f9a2047d010f1308ab1f90be65a2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0319cfc6f2be817a25126e67cdc470bc727a4ca
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347269"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714438"
 ---
-# <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
+# <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 この構造体は、メソッドまたは関数のパラメーターを表します。
 
 ## <a name="syntax"></a>構文
@@ -45,23 +45,23 @@ public struct METADATA_ADDRESS_PARAM {
 
 ## <a name="members"></a>メンバー
  `tokMethod`\
- メソッドの ID パラメーターは一部です。
+ パラメーターが含まれるメソッドの ID。
 
  `tokParam`\
  パラメーターの ID。
 
  `dwIndex`\
- パラメーターの一覧で、パラメーターのインデックス。
+ パラメーターのリスト内のパラメーターのインデックス。
 
 ## <a name="remarks"></a>Remarks
- この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_PARAM`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。
+ 構造体`dwKind`のフィールドが[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体の値) に`ADDRESS_KIND_PARAM`設定されている`DEBUG_ADDRESS_UNION`場合、この構造体は[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の共用体の一部です。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: sh.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

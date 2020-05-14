@@ -6,17 +6,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.View
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.View
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b867d81e4f0719ebf239bc89a6200fe833bc27b1
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919028"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77278694"
 ---
 # <a name="options-text-editor-cc-view"></a>[オプション]、[テキスト エディター]、[C/C++]、[表示]
 
@@ -46,7 +46,7 @@ ms.locfileid: "72919028"
 
 - **一致するトークンの強調表示** - カーソルが置かれている場所と一致する、囲んでいる中かっこまたは構文を強調表示します。
 
-## <a name="outlining"></a>アウトライン
+## <a name="outlining"></a>[アウトライン]
 
 - **アウトラインの有効化** - ファイルが開いたときにアウトライン モードに入ります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72919028"
 
 - **Outline Statement Blocks (ステートメント ブロックのアウトライン化)** - ステートメント ブロックを自動的にアウトライン化します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
 - [C++ でのリファクタリング (VC のブログ)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

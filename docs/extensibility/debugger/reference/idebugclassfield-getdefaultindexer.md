@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer |Microsoft Docs
+title: フィールド::既定のインデックスを取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95387f65382c970ec2e9847e95ff49e139cf69b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350752"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734425"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 既定のインデクサーの名前を取得します。
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>パラメーター
-`pbstrIndexer` [out]既定のインデクサーの名前を含む文字列を返します。
+`pbstrIndexer`[アウト]既定のインデクサーの名前を含む文字列を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。 または、既定のインデクサーが存在しない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、既定のインデクサーがない場合は、S_OKを返すかS_FALSEを返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- クラスの既定のインデクサーはプロパティとしてマークされている、`Default`プロパティを配列にアクセスします。 これに固有[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]します。 宣言されている既定のインデクサーの例を次に示します[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]とその使用方法。
+ クラスの既定のインデクサーは、配列アクセスの`Default`プロパティとしてマークされているプロパティです。 これは に固有[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のものです。 次に、既定のインデクサーで[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]宣言されている例とその使用方法を示します。
 
 ```vb
 Imports System.Collections;

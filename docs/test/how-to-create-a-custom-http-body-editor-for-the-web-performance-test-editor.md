@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589202"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
@@ -33,11 +33,11 @@ ms.locfileid: "75589202"
 
 1. Visual Studio で、新しい **Windows フォーム コントロール ライブラリ** プロジェクトを作成します。 プロジェクトに **MessageEditors** という名前を付けます。
 
-   プロジェクトが新しいソリューションに追加され、*UserControl1.cs* という名前の <xref:System.Windows.Forms.UserControl> がデザイナーに表示されます。
+   プロジェクトが新しいソリューションに追加され、<xref:System.Windows.Forms.UserControl>UserControl1.cs*という名前の* がデザイナーに表示されます。
 
 1. **ツールボックス**の **[コモン コントロール]** カテゴリで、<xref:System.Windows.Forms.RichTextBox> を UserControl1 のサーフェイスにドラッグします。
 
-1. <xref:System.Windows.Forms.RichTextBox> コントロールの右上隅にあるアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) を選び、親コンテナーを選択して**ドッキング**します。
+1. ![ コントロールの右上隅にあるアクション タグ グリフ (](../test/media/vs_winformsmttagglyph.gif)スマート タグ グリフ<xref:System.Windows.Forms.RichTextBox>) を選び、親コンテナーを選択して**ドッキング**します。
 
 1. **ソリューション エクスプローラー**で、Windows フォーム ライブラリ プロジェクトを右クリックし、 **[プロパティ]** を選択します。
 
@@ -297,7 +297,7 @@ Windows コントロール ライブラリ プロジェクトの対象のフレ�
 
 詳しくは、「[[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

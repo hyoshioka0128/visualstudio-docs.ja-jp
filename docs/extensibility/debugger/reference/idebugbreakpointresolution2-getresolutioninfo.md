@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo |Microsoft Docs
+title: Iデバッグブレークポイントの解像度2::取得解像度情報 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e5b847590a066f10580eeaaa3d600089b70a2e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352858"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734772"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-このブレークポイントを表すブレークポイント解像度の情報を取得します。
+このブレークポイントを記述するブレークポイントの解像度情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]フラグの組み合わせ、 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)のフィールドを決定する列挙体、`pBPResolutionInfo`パラメーター入力します。
+[in]パラメーターのどのフィールドに入力するかを決定する[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列挙体の`pBPResolutionInfo`フラグの組み合わせ。
 
 `pBPResolutionInfo`\
-[out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)このブレークポイントについての情報を格納する構造体。
+[アウト]このブレークポイントに関する情報を格納する[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
- 次の例では、単純なは、このメソッドを実装する`CDebugBreakpointResolution`を公開するオブジェクト、 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)インターフェイス。
+ `CDebugBreakpointResolution`[インターフェイス](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)を公開する単純なオブジェクトに対してこのメソッドを実装する例を次に示します。
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(

@@ -1,28 +1,28 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices |Microsoft Docs
+title: を返す2::取得値を取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetBaseIndices
 - IDebugArrayObject2::GetBaseIndices
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04252ed40cd0ac2c0e5f41bc1104104aeee302c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317569"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736156"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-配列の次元数を指定されたインデックスごとに、基本のインデックス (下限) を取得します。
+配列内の次元数に基づいて、各インデックスの基本インデックス (下限) を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,16 +42,16 @@ int GetBaseIndices (
 
 ## <a name="parameters"></a>パラメーター
 `dwRank`\
-[in]配列の次元 (rank) の数。
+[in]配列の次元数 (ランク)。
 
 `dwIndices`\
-[out]配列のベース インデックス (下限) です。
+[アウト]配列の基本インデックス (下限)。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 例として、この関数は、次の c# コードで作成された配列の「5」を返します。
+ 例として、この関数は、次の C# コードで作成された配列に対して '5' を返します。
 
 ```
 int[] lengths = { 12 };

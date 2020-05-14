@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595723"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649433"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
 
@@ -87,5 +87,5 @@ Visual Basic アプリケーションから SQL プロシージャのデバッ�
 - [デバッガーでのはじめに](../../debugger/debugger-feature-tour.md)
 - [C# デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [ClickOnce アプリをセキュリティで保護する](../../deployment/securing-clickonce-applications.md)
 - [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10433c63e0bad00d187f79634f74fa3727edc3dc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113300"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>方法: ロード テスト結果でカスタム グラフを作成する
@@ -28,7 +28,7 @@ ms.locfileid: "76113300"
 
 1. **ロード テスト** ツール バーで、 **[新しいグラフの追加]** を選択します。
 
-     \- または
+     \- - または -
 
      **ロード テスト アナライザー**で、 **[カウンター]** パネルまたはグラフを右クリックし、 **[グラフの追加]** を選択します。
 
@@ -38,9 +38,9 @@ ms.locfileid: "76113300"
 
      **ロード テスト アナライザー**に新しいグラフが表示されます。 グラフは、現在選択されているグラフ パネルに表示されます。そのパネルに表示されていたグラフが置き換えられます。
 
-3. カウンターを追加して、新しいグラフをカスタマイズします。 詳細については、[ロード テスト結果のグラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」を参照してください。
+3. カウンターを追加して、新しいグラフをカスタマイズします。 詳細については、「[方法: グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [グラフ ビューでのロード テスト結果の分析](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [方法: グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

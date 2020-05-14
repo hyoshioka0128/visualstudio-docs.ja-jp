@@ -1,4 +1,4 @@
----
+﻿---
 title: ListCallStack コマンド
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748716"
 ---
 # <a name="list-call-stack-command"></a>ListCallStack コマンド
@@ -47,35 +47,35 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
 /ShowTypes:`yes`&#124;`no` または /T:`yes`&#124;`no`
 
-任意。 パラメーターの型を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 パラメーターの型を表示するかどうかを指定します。 既定値は `yes` です。
 
 /ShowNames:`yes`&#124;`no` または /N:`yes`&#124;`no`
 
-任意。 パラメーターの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 パラメーターの名前を表示するかどうかを指定します。 既定値は `yes` です。
 
 /ShowValues:`yes`&#124;`no` または /V:`yes`&#124;`no`
 
-任意。 パラメーターの値を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 パラメーターの値を表示するかどうかを指定します。 既定値は `yes` です。
 
 /ShowModule:`yes`&#124;`no` または /M:`yes`&#124;`no`
 
-任意。 モジュールの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+任意。 モジュールの名前を表示するかどうかを指定します。 既定値は `yes` です。
 
 /ShowLineOffset:`yes`&#124;`no` または /#:`yes`&#124;`no`
 
-任意。 行オフセットを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 行オフセットを表示するかどうかを指定します。 既定値は `no` です。
 
 /ShowByteOffset:`yes`&#124;`no` または /B:`yes`&#124;`no`
 
-任意。 バイト オフセットを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 バイト オフセットを表示するかどうかを指定します。 既定値は `no` です。
 
 /ShowLanguage:`yes`&#124;`no` または /L:`yes`&#124;`no`
 
-任意。 言語を表示するかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 言語を表示するかどうかを指定します。 既定値は `no` です。
 
 /IncludeCallsAcrossThreads:`yes`&#124;`no` または /I:`yes`&#124;`no`
 
-任意。 他のスレッドとの間の呼び出しを含めるかどうかを指定します。 既定値は `no`にする必要があります。
+任意。 他のスレッドとの間の呼び出しを含めるかどうかを指定します。 既定値は `no` です。
 
 /ShowExternalCode:`yes`&#124;`no`
 
@@ -108,11 +108,11 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)
+- [逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

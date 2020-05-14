@@ -1,5 +1,5 @@
 ---
-title: '方法: ビジュアライザーをインストールする |Microsoft Docs'
+title: '方法 : ビジュアライザーをインストールする |マイクロソフトドキュメント'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,52 +17,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b7dfd28d70b80fd2d0f854b7db3550862b32814
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404369"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880261"
 ---
 # <a name="how-to-install-a-visualizer"></a>方法 : ビジュアライザーをインストールする
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
 
 > [!NOTE]
-> UWP アプリでは、標準のテキスト、HTML、XML、および JSON ビジュアライザーのみがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
+> UWP アプリでは、標準のテキスト、HTML、XML、JSON ビジュアライザーのみがサポートされます。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
 
 ::: moniker range=">=vs-2019"
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>ビジュアライザー for Visual Studio 2019 をインストールするには
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Visual Studio 2019 のビジュアライザーをインストールするには
   
-1. 作成したビジュアライザーが含まれている DLL を見つけます。
+1. 構築したビジュアライザーを含む DLL を見つけます。
 
-2. [デバッガー側](create-custom-visualizers-of-data.md#to-create-the-debugger-side)dll (およびそれが依存するすべての dll) を、次のいずれかの場所にコピーします。
+   通常、デバッガー側の DLL とデバッグ対象側の DLL の両方が、ターゲット プラットフォームとして **[Any CPU] を**指定する場合に最適です。 デバッガ側の DLL は **、任意**の CPU または**32 ビット**である必要があります。 デバッグ対象側 DLL のターゲット プラットフォームは、デバッグ対象プロセスに対応する必要があります。
+
+2. [デバッガ側](create-custom-visualizers-of-data.md#to-create-the-debugger-side)DLL (および依存するすべての DLL) を次のいずれかの場所にコピーします。
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. [デバッグ対象のサイド](create-custom-visualizers-of-data.md#to-create-the-debuggee-side)DLL を次のいずれかの場所にコピーします。
+3. [デバッグ対象](create-custom-visualizers-of-data.md#to-create-the-debuggee-side)側 DLL を次のいずれかの場所にコピーします。
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+    - `\Common7\Packages\Debugger\Visualizers\`*フレームワーク**VisualStudioInstallPath*
 
-    - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
+    - `My Documents\``\Visualizers\`*フレームワーク**VisualStudioVersion*
 
-    ここで、 *Framework*は次のいずれかになります。
-    - `.NET Framework` ランタイムを実行している debuggees の `net2.0`。
-    - `netstandard 2.0` (`.NET Framework v4.6.1+` または `.NET Core 2.0+`) をサポートするランタイムを使用して debuggees を `netstandard2.0` します。
-    - `.NET Core` ランタイムを実行している debuggees の `netcoreapp`。 (`.NET Core 2.0+`をサポートします)
+    *フレームワーク*は次のいずれかです。
+    - `net2.0`ランタイムを実行しているデバッグ対象`.NET Framework`の場合。
+    - `netstandard2.0`(または`netstandard 2.0``.NET Framework v4.6.1+``.NET Core 2.0+`) をサポートするランタイムを使用するデバッグ対象の場合。
+    - `netcoreapp`ランタイムを実行しているデバッグ対象`.NET Core`の場合。 (サポート`.NET Core 2.0+`)
 
 4. デバッグ セッションを再開します。
 
 > [!NOTE]
-> この手順は、Visual Studio 2017 およびそれ以前のバージョンでは異なります。 この記事の[前のバージョン](how-to-install-a-visualizer.md?view=vs-2017)を参照してください。
+> 手順は、Visual Studio 2017 および古いで異なります。 この資料の[前のバージョン](how-to-install-a-visualizer.md?view=vs-2017)を参照してください。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>ビジュアライザー for Visual Studio 2017 およびそれ以前のバージョンをインストールするには
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>2017 年以前の Visual Studio ビジュアライザーをインストールするには
 
 > [!IMPORTANT]
-> Visual Studio 2017 以前では、.NET Framework ビジュアライザーのみがサポートされています。
+> Visual Studio 2017 以前のバージョンでは、.NET フレームワーク ビジュアライザーのみがサポートされます。
 
 1. 作成したビジュアライザーを含むダイナミック リンク ライブラリ (DLL: Dynamic Link Library) を探します。
 

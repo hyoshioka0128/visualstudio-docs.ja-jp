@@ -1,24 +1,24 @@
 ---
-title: IDebugBreakpointChecksumRequest2 |Microsoft Docs
+title: Iデバッグブレークポイントチェックサムリクエスト2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfcb7d1603160c2f857508c3dd32ce0696b6d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352986"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735129"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-ブレークポイント要求のチェックサムをドキュメントを表します。
+ブレークポイント要求のドキュメントチェックサムを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -26,20 +26,20 @@ ms.locfileid: "66352986"
 IDebugBreakpointChecksumRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- によって実装される、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッグ パッケージ化とデバッグ エンジンで使用します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッグ パッケージによって実装され、デバッグ エンジンによって使用されます。
 
 ## <a name="methods"></a>メソッド
- 次の表は、メソッドの`IDebugBreakpointChecksumRequest2`します。
+ 次の表に`IDebugBreakpointChecksumRequest2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|使用するチェックサム アルゴリズムの一意の識別子を指定されたブレークポイント要求のドキュメントのチェックサムを取得します。|
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|このドキュメントのチェックサムが有効になっているかどうかを決定します。|
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|使用するチェックサム アルゴリズムの一意の識別子を指定して、ブレークポイント要求のドキュメント チェックサムを取得します。|
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|このドキュメントに対してチェックサムが有効かどうかを判断します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー:Msdbg.h
+ ヘッダー: Msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:

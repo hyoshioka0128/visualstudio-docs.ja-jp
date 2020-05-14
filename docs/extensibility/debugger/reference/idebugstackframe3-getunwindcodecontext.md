@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a63883b8c2f1f7e09070173281f5e9eeda528352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352090"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719501"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-コードのコンテキストの位置を表す場合は、スタックのアンワインド操作が発生したを返します。
+スタックアンワインド操作が発生した場合に、場所を表すコード コンテキストを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>パラメーター
 `ppCodeContext`\
-[out]返します、 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)スタック アンワインドが発生した場合は、コード コンテキストの位置を表すオブジェクト。
+[アウト]スタック アンワインドが発生した場合にコード コンテキストの場所を表す[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 場合でも、このメソッドは、スタック アンワインドの後の場所のコードのコンテキストを返す可能性のあるは必ずしもスタック アンワインドが現在のスタック フレームで実際に発生することができます。
+ このメソッドは、スタック アンワインド後の場所のコード コンテキストを返す場合がありますが、現在のスタック フレームでスタック アンワインドが実際に発生する可能性があるとは限りません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

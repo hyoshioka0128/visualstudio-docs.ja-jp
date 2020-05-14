@@ -12,18 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574629"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072529"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>方法: 最初にビルドするターゲットを指定する
-プロジェクト ファイルには、プロジェクトのビルド方法を定義する 1 つ以上の `Target` 要素を含めることができます。 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) エンジンは、見つけた最初のプロジェクトと依存関係をビルドします。ただし、プロジェクト ファイルに `DefaultTargets` 属性または `InitialTargets` 属性が含まれている場合や、コマンド ラインで **-target** スイッチを使ってターゲットが指定されている場合は例外です。
 
+プロジェクト ファイルには、プロジェクトのビルド方法を定義する 1 つ以上の `Target` 要素を含めることができます。 Microsoft Build Engine (MSBuild) エンジンでは、プロジェクト ファイルに `DefaultTargets` 属性や `InitialTargets` 属性が含まれている場合や、コマンド ラインで **-target** スイッチを使ってターゲットが指定されている場合を除き、見つけた最初のプロジェクトとすべての依存関係がビルドされます。
 ## <a name="use-the-initialtargets-attribute"></a>InitialTargets 属性を使用する
- `Project` 要素の `InitialTargets` 属性は、最初に実行するターゲットを指定します。これは、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも変わりありません。
+
+`Project` 要素の `InitialTargets` 属性は、最初に実行するターゲットを指定します。これは、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも変わりありません。
 
 #### <a name="to-specify-one-initial-target"></a>1 つの初期ターゲットを指定するには
 
@@ -40,7 +41,8 @@ ms.locfileid: "75574629"
      `<Project InitialTargets="Clean;Compile">`
 
 ## <a name="use-the-defaulttargets-attribute"></a>DefaultTargets 属性を使用する
- `Project` 要素の `DefaultTargets` 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。 ターゲットが `InitialTargets` 属性と `DefaultTargets` 属性の両方で指定され、コマンド ラインではターゲットが指定されていない場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、`InitialTargets` 属性で指定されたターゲットを実行し、次に `DefaultTargets` 属性で指定されたターゲットを実行します。
+
+ `Project` 要素の `DefaultTargets` 属性は、ターゲットがコマンド ラインで明示的に指定されていない場合にビルドするターゲット (複数可) を指定します。 ターゲットが `InitialTargets` 属性と `DefaultTargets` 属性の両方で指定され、コマンド ラインではターゲットが指定されていない場合、MSBuild では、`InitialTargets` 属性で指定されたターゲットが実行され、次に `DefaultTargets` 属性で指定されたターゲットが実行されます。
 
 #### <a name="to-specify-one-default-target"></a>1 つの既定のターゲットを指定するには
 
@@ -57,6 +59,7 @@ ms.locfileid: "75574629"
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>-target スイッチを使用する
+
  既定のターゲットがプロジェクト ファイルで定義されていない場合、またはその既定のターゲットを使用しない場合は、コマンド ライン スイッチ **-target** を使用して別のターゲットを指定できます。 `DefaultTargets` 属性で指定されたターゲットではなく、 **-target** スイッチで指定されたターゲットが実行されます。 `InitialTargets` 属性で指定されたターゲットが常に最初に実行されます。
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>最初に既定のターゲット以外のターゲットを使用する
@@ -72,6 +75,7 @@ ms.locfileid: "75574629"
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild](../msbuild/msbuild.md)
 - [ターゲット](../msbuild/msbuild-targets.md)
 - [方法: ビルドをクリーンする](../msbuild/how-to-clean-a-build.md)

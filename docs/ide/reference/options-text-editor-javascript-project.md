@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605921"
 ---
 # <a name="options-text-editor-javascript-project"></a>[オプション]、[テキスト エディター]、[JavaScript]、[プロジェクト]
@@ -60,11 +60,11 @@ ms.locfileid: "68605921"
 
 ### <a name="uielement-list"></a>UIElement の一覧
 
-|オプション|説明|
+|オプション|[説明]|
 |------------|-----------------|
 |**React フレームワーク**|このオプションをオンにすると、コード エディターによって *.js* ファイル拡張子が出力されます。|
 |**Preserve**|このオプションを選択すると、コード エディターでは出力の一部として JSX が保持され、 *.jsx* ファイル拡張子が出力されます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

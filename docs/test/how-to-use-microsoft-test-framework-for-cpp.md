@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75755570"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する

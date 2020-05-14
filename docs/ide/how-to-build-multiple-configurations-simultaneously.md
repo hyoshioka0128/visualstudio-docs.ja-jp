@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416758"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77904088"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>方法: 複数の構成を同時にビルドする
 
@@ -24,11 +24,13 @@ ms.locfileid: "68416758"
 
 2. すべての Visual Basic プロジェクト。
 
+この 2 つのプロジェクト タイプに該当するプロジェクトがソリューションに含まれている場合、そのソリューションでは **[バッチ ビルド]** を利用できません。 この場合、そのコマンドは **[ビルド]** メニューに表示されません。
+
    ビルド構成の詳細については、「[ビルド構成について](../ide/understanding-build-configurations.md)」を参照してください。
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>複数のビルド構成でプロジェクトをビルドするには
 
-1. メニュー バーで、 **[ビルド]**  >  **[バッチ ビルド]** の順に選択します。
+1. メニュー バーで、 **[ビルド]**  >  **[バッチ ビルド]** の順に選択します。 または、**Ctrl** + **Q** キーを押して検索ボックスを開き、「`Batch Build`」を検索します。
 
 2. **[ビルド]** 列で、プロジェクトをビルドする構成のチェック ボックスをオンにします。
 

@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852181"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586361"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,16 +125,16 @@ Visual Studio では、システム、アプリケーション、またはコン
 |ビジネス プロセス<br /><br /> システムで使用するコンテキストを理解すると、ユーザーがコンテキストから必要としているものを理解することができます。|-アクティビティ図は、ビジネス目標を達成するための、スタッフとシステムの間の作業の流れを表します。<br />-概念クラス図は、ビジネスプロセス内で使用されるビジネスの概念を表します。|
 |ユーザー要件<br /><br /> ユーザーがシステムから必要とするものの定義です。|-ユースケース図は、ユーザーや他の外部システムと開発しているシステムとの相互作用をまとめたものです。 各ユース ケースに他のドキュメントを添付して、詳細に説明することができます。<br />-UML クラス図では、ユーザーとシステムが通信する情報の種類が記述されています。<br />-ビジネスルールとサービス品質要求は、個別のドキュメントに記述できます。|
 |概要設計<br /><br /> システムの全体的な構造、つまり主なコンポーネントとその組み合わせの仕方です。|-レイヤー図は、システムが相互に依存している部分にどのように構造化されているかを示します。 プログラム コードをレイヤー図と照合すると、アーキテクチャを厳守していることを確認することができます。<br />-コンポーネント図は、各コンポーネントによって提供および要求されるメッセージとサービスを指定して、パートのインターフェイスを示します。<br />-シーケンス図は、各ユースケースを実装するためにコンポーネントがどのように通信するかを示しています。<br />-UML クラス図には、コンポーネントのインターフェイスと、コンポーネント間で渡されるデータの種類が記述されています。|
-|デザイン パターン<br /><br /> 設計のすべての部分で使用される、設計の問題を解決する規約と方法です。|-UML クラス図は、パターンの構造を記述します。<br />-シーケンス図またはアクティビティ図は、相互作用とアルゴリズムを示します。|
+|設計パターン<br /><br /> 設計のすべての部分で使用される、設計の問題を解決する規約と方法です。|-UML クラス図は、パターンの構造を記述します。<br />-シーケンス図またはアクティビティ図は、相互作用とアルゴリズムを示します。|
 |コード分析<br /><br /> コードから数種類の図を生成できます。|-シーケンス図は、コード内のオブジェクト間の相互作用を示しています。<br />-レイヤー図は、クラス間の依存関係を示しています。 更新されたコードは、レイヤー図と照合することができます。<br />-クラス図は、コード内のクラスを示しています。|
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
-|**カテゴリ**|**Links**|
+|**カテゴリ**|**リンク**|
 |------------------|---------------|
 |**ビデオ**|![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo") [9: Visual Studio 2010 を使用した UML](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![ビデオへのリンク MSDN の](../data-tools/media/playvideo.gif "PlayVideo")[操作方法シリーズ: UML ツールと拡張機能 (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://blogs.msdn.com/b/visualstudioalm)|
+|**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>参照

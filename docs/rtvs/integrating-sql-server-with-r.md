@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888456"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server と R の使用
@@ -26,7 +26,7 @@ Visual Studio の優れた SQL Server のサポートにより、データ サ�
 
 |   |   |
 |---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを視聴する") | SQL Server と R の概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) (3 分 03 秒)。 |
+| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | SQL Server と R の概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) (3 分 03 秒)。 |
 
 ## <a name="create-and-run-sql-queries"></a>SQL クエリの作成と実行
 
@@ -59,7 +59,7 @@ Transact-SQL エディターは他のさまざまな機能をサポートして�
 
 |   |   |
 |---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを視聴する") | R と SQL ストアド プロシージャの概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) (6 分 09 秒)。 |
+| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | R と SQL ストアド プロシージャの概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) (6 分 09 秒)。 |
 
 ### <a name="add-a-database-connection"></a>データベース接続の追加
 

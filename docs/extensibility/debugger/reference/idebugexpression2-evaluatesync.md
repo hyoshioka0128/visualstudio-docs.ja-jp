@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync |Microsoft Docs
+title: 表現2::評価シンク |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77fb52dd140ee58eeb202e88026fb57764d549c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325954"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729674"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-このメソッドは、同期的に、式を評価します。
+このメソッドは、式を同期的に評価します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>パラメーター
 `dwFlags`\
-[in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
+[in]式の評価を制御する[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体のフラグの組み合わせ。
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
 
 `pExprCallback`\
-[in]このパラメーターは、常に null 値です。
+[in]このパラメーターは常に NULL 値です。
 
 `ppResult`\
-[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)式の評価の結果を格納するオブジェクト。
+[アウト]式の評価結果を含む[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 一部の一般的なエラー コードは次のとおりです。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 一般的なエラー コードは次のとおりです。
 
-|Error|説明|
+|エラー|説明|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|別の式が現在評価されていると、同時の式の評価はサポートされていません。|
-|E_EVALUATE_TIMEOUT|評価がタイムアウトになりました。|
+|E_EVALUATE_BUSY_WITH_EVALUATION|別の式が現在評価中であり、同時式の評価はサポートされていません。|
+|E_EVALUATE_TIMEOUT|評価がタイムアウトしました。|
 
 ## <a name="remarks"></a>Remarks
-同期の評価のために、評価の完了時に Visual Studio に戻り、イベントを送信する必要はありません。
+同期評価では、評価の完了時にイベントを Visual Studio に返送する必要はありません。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CExpression`を実装するオブジェクト、 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)インターフェイス。
+`CExpression` [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を次の例に示します。
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

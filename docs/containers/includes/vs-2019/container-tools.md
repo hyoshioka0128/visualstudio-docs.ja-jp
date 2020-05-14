@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922984"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389949"
 ---
 Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
 
@@ -21,7 +21,7 @@ Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core を使って開発するための [.NET Core 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/)
-* Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/free/dotnet/)。
 
 ## <a name="installation-and-setup"></a>インストールとセットアップ
 
@@ -74,6 +74,9 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ツールバーのデバッグ ドロップダウンから **[Docker]** を選択し、アプリのデバッグを開始します。 証明書の信頼を求めるメッセージが表示される場合があります。続行するには、証明書を信頼することを選びます。
 
 **[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。 初めての場合、基本イメージのダウンロードにしばらく時間がかかる場合がありますが、以降の実行でははるかに高速になります。
+
+>[!NOTE]
+> デバッグ用にポートを変更する必要がある場合は、*launchSettings.json* ファイルで行うことができます。 [コンテナーの起動設定](../../container-launch-settings.md)に関する記事を参照してください。
 
 ## <a name="containers-window"></a>コンテナー ウィンドウ
 

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588578"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306849"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio の環境設定
 

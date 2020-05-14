@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300590"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580067"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>手順 3: Entity Framework を使用してデータを処理する
 

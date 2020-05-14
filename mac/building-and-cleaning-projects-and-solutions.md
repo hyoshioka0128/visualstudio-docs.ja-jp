@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.openlocfilehash: 924bdb08154ecb3caad04cabf7e860bed9204e98
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128459"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>プロジェクトとソリューションのビルドおよびクリーン
@@ -55,6 +55,6 @@ ms.locfileid: "71128459"
 
 * **Cmd + Shift + Return** を押します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトとソリューションのビルドおよびクリーン (Windows の Visual Studio)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

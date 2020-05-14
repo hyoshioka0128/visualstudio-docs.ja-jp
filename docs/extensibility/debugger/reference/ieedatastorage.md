@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage |Microsoft Docs
+title: ストレージ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab42216df5c7d5f3d2d349ccf07e595ab3fc616c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335635"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718180"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
-このインターフェイスは、バイト配列を表します。
+このインターフェイスはバイト配列を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,31 +28,31 @@ ms.locfileid: "66335635"
 IEEDataStorage : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- 式エバリュエーター (EE) バイトの配列を表すためには、このインターフェイスを実装する (型のビジュアライザーを取得しを使用してデータを変更するために使用、 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)インターフェイス)。 EE は、通常、外部型のビジュアライザーをサポートするためには、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ 式エバリュエーター (EE) は、このインターフェイスを実装してバイト配列を表します (型ビジュアライザーが[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)インターフェイスを通じてデータを取得および変更するために使用します)。 EE は通常、外部型ビジュアライザーをサポートするためにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- メソッド、`IPropertyProxyEESide`すべてのインターフェイスは、このインターフェイスを返します。 呼び出す[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)を取得する、 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)インターフェイス。 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)を取得するインターフェイス、 [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)インターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ インターフェイスのメソッドはすべて`IPropertyProxyEESide`、このインターフェイスを返します。 インターフェイス[を取得](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)するには、プロパティ[プロキシを](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)呼び出します。 インターフェイスを取得するには、[インターフェイス](../../../extensibility/debugger/reference/idebugproperty3.md)[を呼び](/cpp/atl/queryinterface)出[します](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
- `IEEDataStorage`インターフェイスは、次のメソッドを実装します。
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+ この`IEEDataStorage`インターフェイスは、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|指定されたバッファーにデータの合計バイト数の指定を取得します。|
-|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|使用できるデータのバイト数を取得します。|
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|指定されたバッファーに指定されたデータ バイト数を取得します。|
+|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|使用可能なデータバイト数を取得します。|
 
 ## <a name="remarks"></a>Remarks
- このインターフェイスは、特定のオブジェクトによって保持されているデータにアクセスする型のビジュアライザーによって使用されます。 データは、型のビジュアライザーをユーザーに提示するときに必要な方法で操作できるように、バイト配列として扱われます。
+ このインターフェイスは、型ビジュアライザーが特定のオブジェクトが保持するデータにアクセスするために使用されます。 データはバイト配列として扱われ、型ビジュアライザーは、ユーザーに提示するために必要な方法でデータを操作できます。
 
- カスタム ビューアーもこのインターフェイスを使用、必要な場合、カスタム ビューアーは、カスタムのインターフェイスを使用して一般的には、 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)または[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (用文字列指向のデータの場合)。
+ カスタム ビューアーは、必要に応じてこのインターフェイスを使用することもできますが、通常はカスタム ビューアーは、カスタム インターフェイス[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)または[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (文字列指向のデータ) を使用します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

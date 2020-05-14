@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591529"
 ---
 # <a name="findcommand-box"></a>[検索/コマンド] ボックス
@@ -52,7 +52,7 @@ ms.locfileid: "75591529"
 
 カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コマンド ウィンドウ](../ide/reference/command-window.md)
 - [テキストの検索と置換](../ide/finding-and-replacing-text.md)

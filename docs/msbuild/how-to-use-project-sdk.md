@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826472"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
@@ -48,7 +48,7 @@ MSBuild 15.0 では、"プロジェクト SDK" という概念が導入されま
 
 プロジェクト SDK を参照するには、次の 3 つの方法があります。
 
-- `<Project/>` 要素の `Sdk` 属性を使用する:
+- `Sdk` 要素の `<Project/>` 属性を使用する:
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -124,9 +124,9 @@ NuGet ベースの SDK リゾルバーでは、[global.json](/dotnet/core/tools/
 }
 ```
 
-ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。 同じプロジェクト SDK の 2 つの異なるバージョンを参照すると、MSBuild から警告が生成されます。 *global.json* ファイルでバージョンが指定されている場合は、プロジェクトでバージョンを指定**しない**ことをお勧めします。
+ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。 同じプロジェクト SDK の 2 つの異なるバージョンを参照すると、MSBuild から警告が生成されます。 **global.json** ファイルでバージョンが指定されている場合は、プロジェクトでバージョンを指定*しない*ことをお勧めします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [ビルドのカスタマイズ](../msbuild/customize-your-build.md)

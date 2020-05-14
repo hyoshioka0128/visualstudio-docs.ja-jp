@@ -1,17 +1,18 @@
 ---
 title: Visual Studio サブスクリプションの Windows 開発者アカウント特典 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491286"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649703"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -51,7 +52,7 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 ||
 
-<sup>1</sup>  *Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer が含まれます除外:Microsoft Partner Network (MPN)、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer が含まれます除外:Microsoft Partner Network (MPN)、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -63,6 +64,12 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 - [Windows 開発](/windows/)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。

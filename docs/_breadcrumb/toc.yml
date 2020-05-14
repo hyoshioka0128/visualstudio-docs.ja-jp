@@ -19,7 +19,7 @@
                   topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
                 - name: クロス プラットフォーム
                   tocHref: /visualstudio/cross-platform/
-                  topicHref: /visualstudio/cross-platform/index
+                  topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
                 - name: データ ツール
                   tocHref: /visualstudio/data-tools/
                   topicHref: /visualstudio/data-tools/index
@@ -47,7 +47,7 @@
                   topicHref: /visualstudio/profiling/index
                 - name: テスト
                   tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/improve-code-quality
+                  topicHref: /visualstudio/test/index
                 - name: ワークフロー デザイナー
                   tocHref: /visualstudio/workflow-designer/
                   topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
@@ -74,7 +74,7 @@
                   tocHref: /visualstudio/extensibility/debugger/
                   topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
                   items:
-                    - name: 辞書／辞典／その他
+                    - name: 関連項目
                       tocHref: /visualstudio/extensibility/debugger/reference/
                       topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
                 - name: ユーザー エクスペリエンス ガイドライン
@@ -102,3 +102,6 @@
                 - name: VSTO
                   tocHref: /visualstudio/vsto/
                   topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+            - name: Azure 開発
+              tocHref: /visualstudio/azure
+              topicHref: /visualstudio/azure/index

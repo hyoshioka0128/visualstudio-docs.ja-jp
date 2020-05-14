@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595788"
 ---
 # <a name="assembly-information-dialog-box"></a>[アセンブリ情報] ダイアログ ボックス
@@ -30,7 +30,7 @@ ms.locfileid: "75595788"
 **タイトル**\
 アセンブリ マニフェストのタイトルを指定します。 <xref:System.Reflection.AssemblyTitleAttribute> に相当します。
 
-**説明**\
+**Description**\
 アセンブリ マニフェストの説明を指定します (省略可能)。 <xref:System.Reflection.AssemblyDescriptionAttribute> に相当します。
 
 **会社名**\
@@ -65,7 +65,7 @@ Win32 ファイル バージョン リソースの特定のバージョン番号
 > [!NOTE]
 > .NET Framework クラス ライブラリで NuGet パッケージを生成するときにこれらのプロパティを設定する方法の詳細については、「[パッケージのプロジェクト プロパティを構成する](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [[アプリケーション] ページ (プロジェクト デザイナー)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [属性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

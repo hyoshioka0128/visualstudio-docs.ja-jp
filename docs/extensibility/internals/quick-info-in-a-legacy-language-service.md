@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスで、クイック ヒント |Microsoft Docs
+title: 従来の言語サービスのクイック情報 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,38 +7,38 @@ helpviewer_keywords:
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6180e34135197c60276bf119ce0ac34c859b2f3d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341369"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705945"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>従来の言語サービスのクイック ヒント
-IntelliSense によるクイック ヒントでは、ユーザーが、識別子にキャレットを配置および選択ソースの識別子に関する情報を表示**クイック ヒント**から、 **IntelliSense**メニューまたはマウスを保持識別子の上にカーソル。 これにより、識別子に関する情報を表示するツールヒント。 この情報は通常、識別子の型で構成されます。 デバッグ エンジンがアクティブの場合、この情報には、現在の値が含まれます。 デバッグ エンジンは、言語サービスは、識別子のみを処理中に、式の値を提供します。
+IntelliSense クイック ヒントは、ユーザーが識別子にキャレットを配置し **、IntelliSense**メニューから**クイック ヒント**を選択するか、またはマウス カーソルを識別子の上に置くと、ソース内の識別子に関する情報を表示します。 これにより、識別子に関する情報がツール ヒントに表示されます。 この情報は、通常、識別子の種類で構成されます。 デバッグ エンジンがアクティブな場合、この情報には現在の値が含まれる場合があります。 デバッグ エンジンは式の値を提供し、言語サービスは識別子のみを処理します。
 
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[チュートリアル。クイック ヒントの表示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)します。
+ レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 詳細については、「[チュートリアル: クイック ヒントツールヒントの表示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)」を参照してください。
 
 > [!NOTE]
-> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
 
- マネージ パッケージ フレームワーク (MPF) 言語のサービス クラスでは、IntelliSense によるクイック ヒントのツールヒントを表示するため完全なサポートを提供します。 行う必要があるすべてが、表示、クイック ヒント機能を有効にするテキストを指定します。
+ 管理パッケージ フレームワーク (MPF) 言語サービス クラスは、IntelliSense クイック ヒント ツール ヒントを表示するための完全なサポートを提供します。 必要な操作は、表示するテキストを指定して、クイックヒント機能を有効にすることだけです。
 
- 表示されるテキストは呼び出すことによって取得、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド パーサーの解析の理由の値を持つ<xref:Microsoft.VisualStudio.Package.ParseReason>します。 このため、種類の情報 (またはクイック ツールヒントに表示する適切なもの) を取得するパーサーに伝える識別子で指定された位置の<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクト。 <xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクトに渡されたもの、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド。
+ 表示されるテキストは、解析理由の値を<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A><xref:Microsoft.VisualStudio.Package.ParseReason>使用してメソッド パーサーを呼び出すことによって取得されます。 この理由は、オブジェクトで指定された場所で識別子の型情報 (または [クイック ヒント] ツール ヒントに表示される適切な情報)<xref:Microsoft.VisualStudio.Package.ParseRequest>を取得するようにパーサーに指示します。 オブジェクト<xref:Microsoft.VisualStudio.Package.ParseRequest>は<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドに渡されたものです。
 
- 内の位置まで、パーサーが解析する必要があります、<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクトのすべての識別子の種類を決定するためにします。 パーサーは解析要求の場所の識別子を取得する必要があります。 最後に、パーサーには、その id に関連付けられたツール ヒントのデータを渡す必要があります、<xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクトのため、そのオブジェクトからテキストを返すことができます、<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>メソッド。
+ パーサーは、すべての識別子の型を決定するために、<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクト内の位置まですべてを解析する必要があります。 次に、パーサーは、解析要求の場所で識別子を取得する必要があります。 最後に、パーサーは、オブジェクトがメソッドからテキストを返すことができるように、<xref:Microsoft.VisualStudio.Package.AuthoringScope>その識別子に関連付けられているツール ヒント<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>データをオブジェクトに渡す必要があります。
 
-## <a name="enabling-the-quick-info-feature"></a>クイック ヒント機能を有効にします。
- クイック ヒント機能を有効に設定する必要があります、`CodeSense`と`QuickInfo`名前付きのパラメーター、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>します。これらの属性の設定、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>と<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A>プロパティ。
+## <a name="enabling-the-quick-info-feature"></a>クイックヒント機能の有効化
+ クイック ヒント機能を有効にするには、 の`CodeSense`および`QuickInfo`名前付き<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>パラメーターを設定する必要があります。これらの属性は、 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A>プロパティと プロパティを設定します。
 
-## <a name="implementing-the-quick-info-feature"></a>クイック ヒント機能を実装します。
- <xref:Microsoft.VisualStudio.Package.ViewFilter>クラスは、IntelliSense によるクイック ヒントの操作を処理します。 ときに、<xref:Microsoft.VisualStudio.Package.ViewFilter>クラスを受け取る、<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>のコマンドは、クラスの呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドの解析の理由で<xref:Microsoft.VisualStudio.Package.ParseReason>と時にキャレットの位置、<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>コマンドが送信されました。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド パーサーする必要がありますし、指定した位置までソースを解析してクイック ツールヒントに表示を決定するように指定した位置に識別子を解析しています。
+## <a name="implementing-the-quick-info-feature"></a>クイック ヒント機能の実装
+ クラス<xref:Microsoft.VisualStudio.Package.ViewFilter>は、IntelliSense クイック ヒント操作を処理します。 クラスが<xref:Microsoft.VisualStudio.Package.ViewFilter>コマンドを<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>受け取ると、クラスは、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>コマンドが送信された時点で<xref:Microsoft.VisualStudio.Package.ParseReason>のキャレットの解析理由と場所を指定して<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>メソッドを呼び出します。 メソッド<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>パーサーは、指定した場所までソースを解析し、指定した場所で識別子を解析して、クイック ヒント ツール ヒントに表示する内容を決定する必要があります。
 
- ほとんどのパーサーでは、全体のソース ファイルの初期の解析を行うし、解析ツリーで、結果を格納します。 場合に、完全な解析が実行される<xref:Microsoft.VisualStudio.Package.ParseReason>に渡される<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド。 その他の種類の解析は、必要な情報を取得するのに解析ツリーを使用できます。
+ ほとんどのパーサーは、ソース ファイル全体の初期解析を行い、結果を解析ツリーに格納します。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドに渡されると<xref:Microsoft.VisualStudio.Package.ParseReason>、完全解析が実行されます。 その後、解析ツリーを使用して必要な情報を取得できます。
 
- たとえば、解析理由の値の<xref:Microsoft.VisualStudio.Package.ParseReason>ソースの場所にある id を見つけるし、型情報を取得して解析ツリーで調べることができます。 この種類の情報に渡されます、<xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスし、によって返される、<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>メソッド。
+ たとえば、解析理由の<xref:Microsoft.VisualStudio.Package.ParseReason>値は、ソースの場所で識別子を検索し、型情報を取得する解析ツリーで検索できます。 この型情報は<xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスに渡され、<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>メソッドによって返されます。

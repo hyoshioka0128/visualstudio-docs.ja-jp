@@ -1,28 +1,28 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType |Microsoft Docs
+title: フィールドビルダー2::タイプの作成 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2::CreateArrayOfType
 - CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa151c93589ee691abd005df9e4ff6b68698b661
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d7a229ea92b57252a9f01976e7b5c80348bd314
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319776"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718314"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
-指定された種類とサイズの配列を作成します。
+指定した型とサイズの配列を作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,16 +44,16 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>パラメーター
 `pTypeField`\
-[in]配列を保持する要素の型。
+[in]配列が保持する要素の型。
 
 `rank`\
 [in]配列内の要素の数。
 
 `pArrayOfTypeField`\
-[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)新しい配列を表すオブジェクト。
+[アウト]新しい配列を表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

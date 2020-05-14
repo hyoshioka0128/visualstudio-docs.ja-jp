@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107847"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
@@ -30,7 +30,7 @@ ms.locfileid: "70107847"
 >[!NOTE]
 >すべてのユーザーを支援する製品の開発方法の詳細については、[Microsoft Accessibility](https://www.microsoft.com/accessibility/) を参照してください。
 
-## <a name="technologies"></a>技術情報
+## <a name="technologies"></a>テクノロジ
 
 * **Microsoft Active Accessibility** Microsoft Windows 上で実行するアプリケーションを開発する際に、ユーザー補助機能のサポートを向上できる COM ベースの技術です。 オペレーティング システムおよび COM インターフェイスに組み込まれているダイナミック リンク ライブラリが提供されます。 また、ユーザー インターフェイス要素に関する情報を公開するためのメソッドを提供するアプリケーション プログラミング要素もあります。 詳細については、「[Microsoft Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility)」をご覧ください。
 
@@ -54,9 +54,9 @@ ms.locfileid: "70107847"
 
 ### <a name="third-party-resources"></a>サードパーティのリソース
 
-- **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)」を参照してください。
+- **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、[https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/) を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Visual Studio for Mac のユーザー補助](/visualstudio/mac/accessibility/)

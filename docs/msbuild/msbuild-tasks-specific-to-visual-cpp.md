@@ -15,21 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6393e771f9e9ed862d21397dabacdb3f3808c386
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593825"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633149"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>C++ に固有の MSBuild タスク
-タスクでは、ビルド プロセスの間に実行するコードを指定します。 C++ をインストールすると、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でインストールされるタスクに加えて、以下のタスクを使用できます。 詳細については、「[MSBuild (C++) の概要](/cpp/build/msbuild-visual-cpp-overview)」を参照してください。
+
+タスクでは、ビルド プロセスの間に実行するコードを指定します。 C++ がインストールされている場合、MSBuild と共にインストールされるタスクに加えて、以下のタスクを使用できます。 詳細については、「[MSBuild (C++) の概要](/cpp/build/msbuild-visual-cpp-overview)」を参照してください。
 
  タスクごとのパラメーターのほか、すべてのタスクに以下のパラメーターがあります。
 
 | パラメーター | 説明 |
 |-------------------| - |
-| `Condition` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンが決定するために使用する `Boolean` 式です。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でサポートされる条件の詳細については、「[MSBuild Conditions](../msbuild/msbuild-conditions.md)」(MSBuild の条件) を参照してください。 |
+| `Condition` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを MSBuild エンジンが決定するために使用する `Boolean` 式です。 MSBuild でサポートされている条件について詳しくは、[条件](../msbuild/msbuild-conditions.md)に関する記事をご覧ください。 |
 | `ContinueOnError` | 省略可能なパラメーターです。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、[タスクで発生したエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)」を参照してください。 |
 
 ### <a name="related-topics"></a>関連トピック

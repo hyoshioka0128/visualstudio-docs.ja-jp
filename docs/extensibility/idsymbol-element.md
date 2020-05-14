@@ -1,25 +1,25 @@
 ---
-title: IDSymbol 要素 |Microsoft Docs
+title: ID シンボル要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319530"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710372"
 ---
-# <a name="idsymbol-element"></a>IDSymbol 要素
-`IDSymbol`要素には、メニューのグループ、またはコマンドを表す GUID:ID のペアの ID が含まれています。 GUID は、親から`GuidSymbol`要素。 `IDSymbol`要素には、`name`属性に含まれていると、ID のフレンドリ名を提供する、`value`属性。
+# <a name="idsymbol-element"></a>ID シンボル要素
+要素`IDSymbol`には、メニュー、グループ、またはコマンドを表す GUID:ID ペアの ID が含まれています。 GUID は親`GuidSymbol`要素から取得されます。 要素`IDSymbol`には、属性`name`に含まれる ID のフレンドリ名を提供する属性があります`value`。
 
 ## <a name="syntax"></a>構文
 
@@ -34,20 +34,20 @@ ms.locfileid: "66319530"
 
 |属性|説明|
 |---------------|-----------------|
-|name|必須。 ID のシンボルの名前です。|
-|値|必須。 ID のシンボルの数値の ID の値。|
+|name|必須。 ID シンボルの名前。|
+|value|必須。 ID シンボルの数値 ID 値。|
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[GuidSymbol 要素](../extensibility/guidsymbol-element.md)|メニューのグループ、またはコマンドを表す GUID:ID のペアの GUID が含まれています。 複数の `IDSymbol` 要素をグループ化します。|
+|[要素](../extensibility/guidsymbol-element.md)|メニュー、グループ、またはコマンドを表す GUID:ID ペアの GUID が含まれています。 複数の `IDSymbol` 要素をグループ化します。|
 
 ## <a name="remarks"></a>Remarks
- すべて`IDSymbol`内の要素を指定した`GuidSymbol`要素は一意でなければなりません`value`します。 ただし、`IDSymbol`別の親がある限り、パッケージに同じ値を持つ要素が存在できます。
+ 特定`IDSymbol``GuidSymbol`の要素のすべての要素は、一意`value`の . ただし、`IDSymbol`同じ値を持つ要素は、親が異なっている限り、パッケージ内に存在することができます。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

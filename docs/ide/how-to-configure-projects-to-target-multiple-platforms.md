@@ -1,5 +1,5 @@
 ---
-title: '方法: プロジェクトを構成して複数の対象プラットフォームを設定する'
+title: '方法 : プロジェクトを構成して複数の対象プラットフォームを設定する'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114453"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>方法: プロジェクトを構成して複数の対象プラットフォームを設定する
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>方法 : プロジェクトを構成して複数の対象プラットフォームを設定する
 
 Visual Studio では、ソリューションは同時に複数の異なる CPU アーキテクチャまたはプラットフォームを対象にすることができます。 これを設定するプロパティには、 **[構成マネージャー]** ダイアログ ボックスからアクセスします。
 
@@ -61,7 +61,7 @@ Visual Studio では、ソリューションは同時に複数の異なる CPU �
 
    ソリューション レベルのプラットフォームをたとえば [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] に設定し、そのソリューション内のプロジェクトでは同じプラットフォームを対象としない、といったことができます。 また、ソリューション内の複数のプロジェクトで、それぞれ異なるプラットフォームを対象とすることもできます。 いずれかの状況の場合は、混乱を避けるためにわかりやすい名前で新しい構成を作成することをお勧めします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)
 - [ビルド構成について](../ide/understanding-build-configurations.md)

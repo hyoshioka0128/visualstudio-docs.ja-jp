@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2 |Microsoft Docs
+title: をクリックして実行する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2 interface
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5ad1f7a3f954116350e8accbdc9db02d0ac920d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89c8cac9a7c2baa020002fe852330639d7081982
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319592"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717717"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 このインターフェイスは、コード パスの一覧を表します。
@@ -28,32 +28,32 @@ ms.locfileid: "66319592"
 IEnumCodePaths2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジン (DE) は、コード パスの一覧を表すためには、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジン (DE) は、コード パスの一覧を表すこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)このインターフェイスを取得します。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ このインターフェイスを取得するには[、列挙型コードパス](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)を呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IEnumCodePaths2`します。
+ 次の表に`IEnumCodePaths2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[次へ](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|指定された数の列挙体シーケンス内のコード パスを取得します。|
-|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|指定された数の列挙体シーケンス内のコード パスをスキップします。|
-|[Reset](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[Clone](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
+|[次へ](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|列挙体シーケンス内の指定した数のコード パスを取得します。|
+|[スキップ](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|列挙体シーケンス内の指定した数のコード パスをスキップします。|
+|[リセット](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[複製](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|列挙子のコード パスの数を取得します。|
 
 ## <a name="remarks"></a>Remarks
- コード パスでは、プログラムでは分岐ポイントまたは関数呼び出しを表します。 コード パスの一覧は、使用される、コードの実行が使用されるパスを表します。
+ コード パスは、プログラム内の分岐点または関数呼び出しを表します。 コード パスのリストは、コードの実行に使用されたパスを表します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

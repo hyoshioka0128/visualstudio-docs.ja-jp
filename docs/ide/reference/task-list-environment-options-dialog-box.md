@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592010"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233125"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>[オプション] ダイアログ ボックス:[環境] \> [タスク一覧]
 

@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: CPU 使用率の分析 (ネイティブ)
       href: quickstart-cpu-usage-native.md
-    - name: CPU 使用率の分析 (ASP.NET)
+    - name: CPU 使用率の分析 (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: チュートリアル
   items:
@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: 使い方ガイド
   items:
+    - name: PerfTips の使用
+      href: perftips.md
     - name: CPU 使用率
       href: cpu-usage.md
     - name: メモリ使用量
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: .NET オブジェクトのメモリ使用量の分析
           href: dotnet-alloc-tool.md
-        - name: カスタム ネイティブ ETW ヒープ イベント
-          href: custom-native-etw-heap-events.md
         - name: デバッガーなしのメモリ使用量
           href: memory-usage-without-debugging2.md
+        - name: カスタム ネイティブ ETW ヒープ イベント
+          href: custom-native-etw-heap-events.md
     - name: コマンドラインからのパフォーマンスの測定
       href: profile-apps-from-command-line.md
     - name: GPU の使用率の分析
       href: gpu-usage.md
     - name: リソース消費量の分析
       href: application-timeline.md
-    - name: PerfTips の使用
-      href: perftips.md
     - name: ネットワーク使用量の分析
       href: network-usage.md
     - name: JavaScript メモリの分析
@@ -466,8 +466,6 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: プロファイラーのコマンド ラインを使用してスタンドアロンの .NET Framework コンポーネントをインストルメントし、メモリ データを収集する
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'チュートリアル: サンプリングを使ったコマンド ライン プロファイリング'
-                  href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET Web アプリケーション
               items:
                 - name: ASP.NET Web アプリケーションのコマンド ライン プロファイリング

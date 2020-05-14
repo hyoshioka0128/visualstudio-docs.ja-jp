@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField |Microsoft Docs
+title: オブジェクト2::ゲットフィールド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317327"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726214"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 このオブジェクトの型を取得します。
@@ -41,13 +41,13 @@ int GetField(
 
 ## <a name="parameters"></a>パラメーター
 `ppField`\
-[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) null 値でない場合にオブジェクト。
+[アウト]Null 値でない場合[は、IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- フィールドには、オブジェクトの型について説明します。
+ フィールドは、オブジェクトのタイプを表します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

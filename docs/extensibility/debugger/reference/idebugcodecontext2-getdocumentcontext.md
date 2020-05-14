@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetDocumentContext |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342410"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734349"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-このコードのコンテキストに対応するドキュメントのコンテキストを取得します。 ドキュメントのコンテキストでは、この命令を生成したソース コードに対応するソース ファイル内の位置を表します。
+このコード コンテキストに対応するドキュメント コンテキストを取得します。 ドキュメント コンテキストは、この命令を生成したソース コードに対応するソース ファイル内の位置を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>パラメーター
 `ppSrcCxt`\
-[out]返します、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)コードのコンテキストに対応するオブジェクト。 場合`S_OK`返されるか、この必要があります以外`null`します。
+[アウト]コード コンテキストに対応する[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)オブジェクトを返します。 返`S_OK`された場合は、ths は非`null`- である必要があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 デバッグ エンジンなどでエラー コードを返す必要があります`E_FAIL`ときに、`out`パラメーターが`null`コード コンテキスト関連付けられている送信元の位置がない場合などです。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 デバッグ エンジンは、`E_FAIL``out`コード コンテキストにソースの位置が関連`null`付けられていない場合など、パラメーターが存在する場合など、エラー コードを返す必要があります。
 
 ## <a name="remarks"></a>Remarks
- 一般に、ドキュメント コンテキスト見なすことができますのソース ファイル内の位置として、コードのコンテキストはコード命令の実行、ストリーム内の位置。
+ 一般に、ドキュメント コンテキストはソース ファイル内の位置と見なすことができますが、コード コンテキストは実行ストリーム内のコード命令の位置です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778571"
 ---
 # <a name="markprofile"></a>MarkProfile
@@ -35,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
 
-|列挙子|説明|
+|列挙子|[説明]|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|パラメーターは 0 以下です。 これらの値は予約済みです。 マークとコメントは記録されません。|
 |MARK_ERROR_MODE_NEVER|関数が呼び出されたときに、プロファイル モードが NEVER に設定されました。 マークとコメントは記録されません。|
@@ -59,9 +59,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>関数の情報
- ヘッダー:*VSPerf.h* で宣言
+ ヘッダー : *VSPerf.h* で宣言
 
- インポート ライブラリ:*VSPerf.lib*
+ インポート ライブラリ : *VSPerf.lib*
 
 ## <a name="example"></a>例
  次のコードは、MarkProfile 関数の使用例を示しています。
@@ -98,5 +98,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

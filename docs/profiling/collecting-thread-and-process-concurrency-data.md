@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e8fda0300aad4a331366fac0a9ebd1b559cecc9d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779520"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>スレッドとプロセスのコンカレンシー データの収集
@@ -36,7 +36,7 @@ Visual Studio のプロファイリング ツールのコンカレンシー プ�
 
 次の表の各タスクでは、コンカレンシー メソッドを使用してプロファイリングを実行する際に、 _[パフォーマンス セッション]_ **[プロパティ ページ]** ダイアログ ボックスで指定できるオプションについて説明しています。
 
-|タスク|関連するコンテンツ|
+|タスク|関連コンテンツ|
 |----------|---------------------|
 |**[全般]** ページで、生成されるプロファイリング データ (.vsp) ファイルの名前付けの詳細を指定します。|- [方法: パフォーマンス データ ファイル名のオプションを設定する](../profiling/how-to-set-performance-data-file-name-options.md)|
 |コード ソリューション内に複数の .exe プロジェクトがある場合は、 **[起動]** ページで、開始するアプリケーションを指定します。|- [方法: 開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)|

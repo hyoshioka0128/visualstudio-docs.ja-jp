@@ -3,15 +3,16 @@ title: 大規模なチームと外部請負業者の管理 | Visual Studio Marke
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 大規模なチームおよび外部請負業者に対するサブスクリプションを管理する管理者の責任について説明します。
-ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850046"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232315"
 ---
 # <a name="large-teams-and-external-contractors"></a>大規模なチームおよび外部請負業者
 Visual Studio サブスクリプションの管理者は責任を持って、Visual Studio でライセンス付与されたソフトウェアと対話する各ユーザーが、自身の Visual Studio サブスクリプションで適切にライセンス付与されていることを確認します。
@@ -33,7 +34,13 @@ Visual Studio サブスクリプションの管理者は責任を持って、Vis
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>次の手順
+## <a name="see-also"></a>参照
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [管理者の責任](admin-responsibilities.md)
 - [運用前環境のインベントリ](admin-inventory.md)

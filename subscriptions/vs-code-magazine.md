@@ -1,17 +1,18 @@
 ---
 title: Visual Studio サブスクリプションの CODE Magazine 特典 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 10/13/2019
+ms.assetid: e5768153-2758-46d3-a323-3272def213ee
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる CODE Magazine 特典について説明します。
-ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: f3b8c7c10cc8995e05b0e0da7da5e85226e131a3
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491656"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274012"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに含まれる CODE Magazine 特典
 
@@ -56,7 +57,7 @@ CODE Magazine の購読を設定するプロセスは簡単です。  以下の�
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  いいえ          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine Premium が含まれます。除外:Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services、Imagine。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine Premium が含まれます。除外:Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services、Imagine。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -74,6 +75,12 @@ A: CODE Magazine では、フルフィルメント、オファー選択、およ
 - CODE Magazine の購読について質問がある場合は、  メールまたは電話で [CODE Magazine](https://www.codemag.com/contact) に問い合わせるか、オンライン サポート リクエストを送信してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 ご利用のサブスクリプションに含まれるその他のすばらしい特典を確認してください。 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスします。

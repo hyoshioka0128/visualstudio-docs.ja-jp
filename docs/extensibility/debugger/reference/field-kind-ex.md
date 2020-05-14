@@ -1,27 +1,27 @@
 ---
-title: FIELD_KIND_EX |Microsoft Docs
+title: FIELD_KIND_EX |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309014"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736880"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
-フィールドの追加の種類を列挙する、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに含めることができます。 この列挙体を拡張、 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)列挙体。
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
+[オブジェクト](../../../extensibility/debugger/reference/idebugfield.md)に含めることができる追加の種類のフィールドを列挙します。 この列挙体は[、FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)列挙体を拡張します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,20 +46,20 @@ public enum enum_FIELD_KIND_EX
 
 ## <a name="fields"></a>フィールド
 `FIELD_KIND_EX_NONE`\
-フィールドに、拡張の型が含まれていません。
+フィールドに拡張型が含まれていません。
 
 `FIELD_TYPE_EX_METHODVAR`\
-フィールドには、メソッドの変数が含まれています。
+フィールドにはメソッド変数が含まれています。
 
 `FIELD_TYPE_EX_CLASSVAR`\
-フィールドには、クラス変数が含まれています。
+フィールドにはクラス変数が含まれています。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー:Sh.h
+ヘッダー: Sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779260"
 ---
 # <a name="function-details-view"></a>関数の詳細ビュー
@@ -71,9 +71,9 @@ ms.locfileid: "74779260"
 ## <a name="function-performance-details"></a>関数のパフォーマンスの詳細
  [関数のパフォーマンスの詳細] 表には、選択した関数のパフォーマンス メトリックの概要データが示されます。 値と割合の両方が表示されます。 グラフと詳細表に表示するプロファイル データは、 **[パフォーマンス メトリック]** ボックスで指定します。
 
-|Column|説明|
+|Column|[説明]|
 |------------|-----------------|
-|**[排他]**|-   関数本体の実行で発生したパフォーマンス メトリックの合計。|
+|**[Exclusive]**|-   関数本体の実行で発生したパフォーマンス メトリックの合計。|
 |**[呼び出し内]**|-   選択した関数から呼び出された関数内で発生したパフォーマンス メトリックの合計。|
 |**[包括の合計]**|-   **[排他]** 値と **[呼び出し内]** 値の合計。|
 

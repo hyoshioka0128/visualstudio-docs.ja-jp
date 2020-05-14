@@ -1,5 +1,5 @@
 ---
-title: プロジェクト モデルの要素 |Microsoft Docs
+title: プロジェクト モデルの要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b37997c4245d8234d72ae14a9dda23f44fe2b26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351582"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708522"
 ---
 # <a name="elements-of-a-project-model"></a>プロジェクト モデルの要素
-インターフェイスと実装のすべてのプロジェクトの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]基本的な構造を共有: プロジェクトの種類のプロジェクト モデル。 VSPackage を開発するには、プロジェクト モデルを取得するでは、設計上の決定に従っているし、IDE によって提供されるグローバルの機能と連携するオブジェクトを作成します。 プロジェクト項目を保存する方法を制御する、たとえば、制御できない通知ファイルを維持する必要があります。 ユーザーが開いているプロジェクト項目にフォーカスが移るし、選択**保存**上、**ファイル**メニューで、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]メニュー バーで、プロジェクトの種類コードする必要があります、IDE からコマンドをインターセプト、ファイルを保持してとファイルが不要になった変更されたことを IDE に戻るには、通知を送信します。
+すべてのプロジェクトのインターフェイスと実装は、プロジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の種類のプロジェクト モデルという基本的な構造を共有します。 開発中の VSPackage であるプロジェクト モデルでは、設計上の決定に従い、IDE によって提供されるグローバルな機能と連携するオブジェクトを作成します。 たとえば、プロジェクト項目の永続化方法を制御しますが、ファイルを永続化する必要があるという通知は制御しません。 ユーザーが開いているプロジェクト項目にフォーカスを置き、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]メニュー バーの **[ファイル]** メニューの **[保存]** を選択すると、プロジェクトの種類コードは、IDE からコマンドを途中で受信し、ファイルを永続化し、ファイルが変更されなくなったことを示す通知を IDE に送信する必要があります。
 
- VSPackage は、IDE インターフェイスへのアクセスを提供するサービスを介して、IDE と対話します。 たとえば、特定のサービスにするモニターとルート コマンドやプロジェクトで行った選択のコンテキスト情報を提供します。 VSPackage のために必要なすべてのグローバル IDE 機能は、サービスによって提供されます。 サービスの詳細については、次を参照してください。[方法。サービスを取得](../../extensibility/how-to-get-a-service.md)します。
+ VSPackage は、IDE インターフェイスへのアクセスを提供するサービスを通じて IDE と対話します。 たとえば、特定のサービスを通じて、コマンドを監視およびルーティングし、プロジェクトで行われた選択に関するコンテキスト情報を提供します。 VSPackage に必要なすべてのグローバル IDE 機能は、サービスによって提供されます。 サービスの詳細については、「方法[: サービスを取得する 」を参照](../../extensibility/how-to-get-a-service.md)してください。
 
- その他の実装の考慮事項:
+ その他の実装に関する考慮事項:
 
-- 1 つのプロジェクト モデルは、1 つ以上のプロジェクトの種類を含めることができます。
+- 1 つのプロジェクト モデルに複数のプロジェクト タイプを含めることができます。
 
-- プロジェクトの種類とアテンダント プロジェクト ファクトリに登録されていない個別に Guid。
+- プロジェクトの種類とアテンダント プロジェクト ファクトリは、GUID に個別に登録されます。
 
-- 各プロジェクト テンプレート ファイルまたはユーザーが経由で、新しいプロジェクトを作成するときに、新しいプロジェクト ファイルを初期化するためにウィザードが適用される場合があります、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI。 たとえば、[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]テンプレートは、最終的になるものの .vcproj ファイルを初期化します。
+- ユーザーが UI を使用して新しいプロジェクトを作成するときに、新しいプロジェクト ファイルを初期化するには、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]各プロジェクトにテンプレート ファイルまたはウィザードが必要です。 たとえば、テンプレートは[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]最終的に .vcproj ファイルになるものを初期化します。
 
-  次の図は、プライマリ インターフェイス、サービス、および一般的なプロジェクトの実装を構成するオブジェクトを示します。 アプリケーションのヘルパーを使用する`HierUtil7`、基になるオブジェクトとその他のプログラミングの定型コードを作成します。 詳細については、`HierUtil7`アプリケーションのヘルパーを参照してください[プロジェクトの種類 (C++) を実装するために使用 HierUtil7 プロジェクト クラス](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)します。
+  次の図は、一般的なプロジェクト実装を構成する主要なインターフェイス、サービス、およびオブジェクトを示しています。 アプリケーション ヘルパー を使用して`HierUtil7`、基になるオブジェクトやその他のプログラミング の定型句を作成できます。 アプリケーション ヘルパーの`HierUtil7`詳細については、「 [HierUtil7 プロジェクト クラスを使用してプロジェクトの種類を実装する (C++)」](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)を参照してください。
 
-  ![Visual Studio プロジェクト モデル グラフィック](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")プロジェクト モデル
+  ![プロジェクト モデル グラフィック](../../extensibility/internals/media/vsprojectmodel.gif "プロジェクトモデル")プロジェクト モデル
 
-  インターフェイスと、前の図に表示されるサービスと、ダイアグラムに含まれていないその他の省略可能なインターフェイスの詳細については、次を参照してください。[プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)します。
+  前の図に示したインターフェイスとサービス、および図に含まれていないその他のオプション のインターフェイスの詳細については、「[プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)」を参照してください。
 
-  プロジェクトのコマンドをサポートし、したがってを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンド コンテキスト Guid によるコマンドのルーティングに参加するインターフェイス。
+  プロジェクトはコマンドをサポートできるため、コマンド<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コンテキスト GUID を介したコマンド ルーティングに参加するインターフェイスを実装する必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [HierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装するには](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [チェックリスト: 新しいプロジェクトの種類を作成する](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [HierUtil7 プロジェクト クラスを使用してプロジェクトの種類を実装する (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)
-- [プロジェクト ファクトリを使用してプロジェクトのインスタンスを作成します。](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-- [方法: サービスを取得します。](../../extensibility/how-to-get-a-service.md)
-- [プロジェクトの種類を作成します。](../../extensibility/internals/creating-project-types.md)
+- [プロジェクト ファクトリを使用してプロジェクト インスタンスを作成する](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [方法: サービスを取得する](../../extensibility/how-to-get-a-service.md)
+- [プロジェクト タイプの作成](../../extensibility/internals/creating-project-types.md)

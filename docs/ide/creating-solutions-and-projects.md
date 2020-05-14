@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306795"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
@@ -116,7 +116,7 @@ ms.locfileid: "75589748"
 
 ::: moniker range="vs-2017"
 
-## <a name="create-a-temporary-project"></a>一時的なプロジェクトを作成する
+## <a name="create-a-temporary-project"></a>一時プロジェクトの作成
 
 (C# および Visual Basic のみ)
 
@@ -141,7 +141,7 @@ ms.locfileid: "75589748"
 
 1. ソリューションが含まれるフォルダーを選択して、**Del** キーを押します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub の Microsoft のオープン ソース リポジトリ](https://github.com/Microsoft)

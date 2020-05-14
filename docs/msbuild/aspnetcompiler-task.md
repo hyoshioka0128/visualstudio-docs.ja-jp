@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 072d1b94c552b3aca34a1573e5d6545628f6568e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593461"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167333"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler タスク
-`AspNetCompiler` タスクは、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションをプリコンパイルするためのユーティリティである *aspnet_compiler.exe* をラップします。
+
+`AspNetCompiler` タスクは、ASP.NET アプリケーションをプリコンパイルするためのユーティリティである *aspnet_compiler.exe* をラップします。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
 `AspNetCompiler` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -48,11 +50,11 @@ ms.locfileid: "75593461"
 |`Updateable`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> このパラメーターが `true` の場合、プリコンパイルされたアプリケーションは更新可能です。  既定値は `false` です。 このパラメーターは、*aspnet_compiler.exe* の **-u** スイッチに対応します。|
 |`VirtualPath`|省略可能な `String` 型のパラメーターです。<br /><br /> コンパイル対象のアプリケーションの仮想パス。 `PhysicalPath` を指定すると、アプリケーションの場所の指定に物理パスが使われます。 それ以外の場合は IIS メタベースが使われ、アプリケーションは既定のサイトにあるものと想定されます。 このパラメーターは、*aspnet_compiler.exe* の **-v** スイッチに対応します。|
 
-## <a name="remarks"></a>Remarks
-上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>例
-次のコード例では、`AspNetCompiler` タスクを使って [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションをプリコンパイルします。
+
+次のコード例では、`AspNetCompiler` タスクを使って ASP.NET アプリケーションをプリコンパイルします。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -69,5 +71,6 @@ ms.locfileid: "75593461"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 * [タスク](../msbuild/msbuild-tasks.md)
 * [タスク リファレンス](../msbuild/msbuild-task-reference.md)

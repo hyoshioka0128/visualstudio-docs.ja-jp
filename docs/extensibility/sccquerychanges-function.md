@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges 関数 |Microsoft Docs
+title: 関数の変更 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 617f07a11f92ab65f079c7d1b41773494e3d0c8b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720854"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700498"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 関数
-この関数は、指定されたファイルのリストを列挙し、コールバック関数を介して各ファイルの名前変更に関する情報を提供します。
+この関数は、特定のファイルのリストを列挙し、コールバック関数を通じて各ファイルの名前変更に関する情報を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,36 +37,36 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>パラメーター
  pContext
 
-からソース管理プラグインのコンテキストポインター。
+[in]ソース管理プラグイン のコンテキスト ポインター。
 
- nFiles
+ nファイル
 
-から@No__t_0 配列内のファイルの数。
+[in]配列内のファイル`lpFileNames`数。
 
- lpFileNames 名
+ ファイル名
 
-から情報を取得するファイル名の配列。
+[in]情報を取得するファイル名の配列。
 
- pfnCallback
+ コールバック
 
-からリスト内の各ファイル名に対して呼び出すコールバック関数 (詳細については、「 [queryの](../extensibility/querychangesfunc.md)内容」を参照してください)。
+[in]リスト内の各ファイル名を呼び出すコールバック関数 (詳細については[、QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)を参照してください)。
 
- pvCallerData
+ 呼び出し元データ
 
-からコールバック関数に変更されずに渡される値。
+[in]コールバック関数に変更されずに渡される値。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|クエリ処理が正常に完了しました。|
-|SCC_E_PROJNOTOPEN|プロジェクトがソース管理で開かれていません。|
-|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。|
-|SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|
+|SCC_OK|クエリ プロセスが正常に完了しました。|
+|SCC_E_PROJNOTOPEN|プロジェクトはソース管理で開かれていない。|
+|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。|
+|SCC_E_NONSPECIFICERROR|未指定または一般的なエラーが発生しました。|
 
 ## <a name="remarks"></a>Remarks
- に対して照会される変更は、名前空間に対して行われます。具体的には、ファイルの名前変更、追加、および削除です。
+ 照会される変更は、名前空間に対するものです。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

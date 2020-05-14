@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115077"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77453396"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -166,7 +166,7 @@ Visual Studio は、Visual Studio 自体またはいずれかのコンポーネ�
 
 常に最新の機能、修正、改善を利用できるように、Visual Studio 2019 の[最新リリース](/visualstudio/releases/2019/release-notes/)に更新することをお勧めします。
 
-また、Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
+Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。 現在、別のバージョンの Visual Studio を使用している場合は、[複数バージョンの Visual Studio をインストールする](../install/install-visual-studio-versions-side-by-side.md)か、[以前のバージョンの Visual Studio をアンインストール](../install/uninstall-visual-studio.md)してください。
 
 > [!IMPORTANT]
 > Visual Studio をインストール、更新、または変更するには、管理アクセス許可を持つアカウントでログオンする必要があります。 詳細については、「[ユーザー アクセス許可と Visual Studio](../ide/user-permissions-and-visual-studio.md)」を参照してください。
@@ -204,7 +204,7 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
 更新プログラムを確認し、Visual Studio 2019 にあるメニュー バーまたは検索ボックスを使用してインストールできます。
 
-### <a name="open-visual-studio"></a>Visual Studio を開く
+### <a name="open-visual-studio"></a>Visual Studio を開きます
 
 1. Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** を選択します。
 
@@ -228,7 +228,7 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
    Visual Studio が更新され、閉じられた後に、再起動されます。
 
-### <a name="in-visual-studio"></a>Visual Studio 内
+### <a name="in-visual-studio"></a>Visual Studio で使用する
 
 1. メニュー バーから、 **[ヘルプ]** を選択して、 **[更新プログラムの確認]** を選択します。
 
@@ -273,7 +273,7 @@ Visual Studio の更新設定は、いくつかの異なる方法でカスタマ
 
 また、 **[Automatically download updates]\(更新プログラムを自動的にダウンロードする\)** 設定を選択することもできます。これを使うと、コンピューターがアイドル状態のときに更新プログラムがダウンロードされます。
 
-次の手順に従います。
+その方法は次のとおりです。
 
 1. メニュー バーで **[ツール]** > **[オプション]** の順に選択します。
 
@@ -287,7 +287,7 @@ Visual Studio の更新設定は、いくつかの異なる方法でカスタマ
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [複数バージョンの Visual Studio をインストールする](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)

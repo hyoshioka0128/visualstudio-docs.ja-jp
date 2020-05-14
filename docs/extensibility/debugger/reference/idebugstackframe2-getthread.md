@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetThread |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetThread
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36ab3d18a54eceb01e0f4770c4bf6e8bae62606d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 31c8b3477ffe7561e065b680e9047946e7058471
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352174"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719654"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 スタック フレームに関連付けられているスレッドを取得します。
@@ -41,10 +41,10 @@ int GetThread ( 
 
 ## <a name="parameters"></a>パラメーター
 `ppThread`\
-[out]返します、 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)スレッドを表すオブジェクト。
+[アウト]スレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

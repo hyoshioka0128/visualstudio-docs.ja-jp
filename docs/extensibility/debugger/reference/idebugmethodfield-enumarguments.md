@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumArguments |Microsoft Docs
+title: フィールド::列挙引数 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumArguments method
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f0c5f95267948b6fb2c1cab1a7d79a2e62b9e3c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: adbb1ea4c9172a5f1cee877d04b81aed938bf7a5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346785"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727262"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 メソッドの呼び出しに必要な各引数の型の列挙子を作成します。
@@ -41,15 +41,15 @@ int EnumArguments(
 
 ## <a name="parameters"></a>パラメーター
 `ppParams`\
-[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)引数の型のリストを表すオブジェクト。 引数がない場合は、null 値を返します。
+[アウト]引数の[型](../../../extensibility/debugger/reference/ienumdebugfields.md)の一覧を表すオブジェクトを返します。 引数がない場合は null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は S_OK を返します。 または引数がない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、S_OKを返すか、引数がない場合はS_FALSEを返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 各要素は、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)各パラメーターの型を表すオブジェクト。 呼び出す、 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドは各パラメーターの型に関する情報を取得します。
+ 各要素は、各パラメーターの型を表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトです。 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドを呼び出して、各パラメーターの型に関する情報を取得します。
 
- 型とパラメーターの名前が必要な場合を呼び出して、 [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)メソッド。
+ パラメーターの名前と型が必要な場合は[、EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

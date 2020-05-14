@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596464"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>方法: ロード テストの結果にアクセスして分析する
+# <a name="how-to-access-load-test-results-for-analysis"></a>方法 : ロード テストの結果にアクセスして分析する
 
 ロード テスト エディターからロード テストを実行すると、ロード テストの結果が自動的に開き、実行中のロード テストが**ロード テスト アナライザー**に表示されます。 コマンド ラインからロード テストを実行するとき、ロード テストの結果に手動でアクセスする必要があります。
 
@@ -52,6 +52,6 @@ ms.locfileid: "75596464"
 
      **[結果を開いて管理]** ダイアログ ボックスでは、ロード テストの結果の表示、インポート、エクスポート、削除など、ロード テストの結果のその他の要素を管理できます。 詳細については、「[ロード テストの結果リポジトリ内のロード テストの結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

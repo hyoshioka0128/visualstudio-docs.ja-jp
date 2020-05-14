@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929232"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256193"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio でのメモリ使用量の測定
 
@@ -117,7 +117,7 @@ ms.locfileid: "75929232"
 
  上のウィンドウには、型で参照されているすべてのオブジェクトのサイズ (**包括サイズ**) を含む、スナップショット内の型の総数およびサイズが表示されます。
 
- 下のウィンドウの **[ルートのパス]** ツリーには、上ウィンドウで選択されている型を参照するオブジェクトが表示されます。 .NET Framework のガベージ コレクターがオブジェクトのメモリをクリーンアップするのは、そのオブジェクトを参照する最後の型が解放されたときに限られます。
+ 下のウィンドウの **[ルートのパス]** ツリーには、上ウィンドウで選択されている型を参照するオブジェクトが表示されます。 オブジェクトを参照する最後の型が解放されたときにのみ、.NET のガベージ コレクターによってそのメモリがクリーンアップされます。
 
  **[参照されるオブジェクト]** ツリーには、上のウィンドウで選択されている型に保持されている参照が表示されます。
 

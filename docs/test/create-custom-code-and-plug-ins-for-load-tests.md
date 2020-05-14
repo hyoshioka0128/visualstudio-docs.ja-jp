@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3519a593182c199cc9f7a92cfb77e9c79bd1a9ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590099"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>ロード テスト用のカスタム コードおよびカスタム プラグインの作成
@@ -28,12 +28,12 @@ ms.locfileid: "75590099"
 
 |タスク|関連するトピック|
 |-|-----------------------|
-|**ロード テスト用のカスタム プラグインを作成する**:ロード テスト API を使用してカスタム プラグインを作成し、ロード テストのテスト機能を拡張できます。|-   [方法: ロード テスト API を使用する](../test/how-to-use-the-load-test-api.md)<br />-   [方法: ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)|
+|**ロード テスト用のカスタム プラグインを作成する**: ロード テスト API を使用してカスタム プラグインを作成し、ロード テストのテスト機能を拡張できます。|-   [方法: ロード テスト API を使用する](../test/how-to-use-the-load-test-api.md)<br />-   [方法: ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)|
 |**Web パフォーマンス テスト用のカスタム プラグインを作成する:** Web パフォーマンス テスト API を使用してカスタム プラグインを作成し、Web パフォーマンス テスト (要求レベルのテストを含む) のテスト機能を拡張できます。 Web サービス テストを作成することもできます。<br /><br /> さらに、Web パフォーマンス テストの記録後、Web パフォーマンス テスト結果ビューアーに表示する前にこのパフォーマンス テストを変更できる Web レコーダー プラグインを作成できます。|-   [方法: Web パフォーマンス テスト API を使用する](../test/how-to-use-the-web-performance-test-api.md)<br />-   [方法: Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [方法: 要求レベルのプラグインを作成する](../test/how-to-create-a-request-level-plug-in.md)<br />-   [方法: Web サービス テストを作成する](../test/how-to-create-a-web-service-test.md)<br />-   [方法: レコーダー プラグインを作成する](../test/how-to-create-a-recorder-plug-in.md)|
 |**UI 機能を Web パフォーマンス テスト結果ビューアーに追加する:** Visual Studio アドインを使用すると、Web パフォーマンス テスト結果ビューアーにさらに UI 機能を追加できます。|-   [方法: Web パフォーマンス テスト結果ビューアー用に Visual Studio アドインを作成する](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
 |**カスタム HTTP ボディ エディターを作成する:** Web サービスからのバイナリまたは文字列 http XML 形式の応答を編集するためのカスタム エディターを作成できます。|-   [方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>リファレンス
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>
 
@@ -45,7 +45,7 @@ ms.locfileid: "75590099"
 
 <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [コード化された Web パフォーマンス テストの生成と実行](../test/generate-and-run-a-coded-web-performance-test.md)

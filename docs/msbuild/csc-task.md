@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595385"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167424"
 ---
 # <a name="csc-task"></a>Csc タスク
+
 *csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「[C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
 `Csc` タスクのパラメーターの説明を次の表に示します。
 
 | パラメーター | 説明 |
@@ -65,13 +67,13 @@ ms.locfileid: "75595385"
 | `OutputRefAssembly` | 省略可能な `String` 型のパラメーターです。<br /><br /> 出力参照アセンブリ ファイルの名前を指定します。 詳細については、「[-refout (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option)」を参照してください。 |
 | `PdbFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> デバッグ情報ファイルの名前を指定します。 既定の名前は、出力ファイルの名前に *.pdb* 拡張子が付いたものになります。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> 出力ファイルのターゲットとするプロセッサ プラットフォームを指定します。 このパラメーターの値には、`x86`、`x64`、または `anycpu` を指定できます。 既定値は `anycpu` です。 詳しくは、「[-platform (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)」をご覧ください。 |
-| `References` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 指定したアイテムから現在のプロジェクトにパブリック型の情報をインポートするようにタスクに指示します。 詳しくは、「[-reference (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)」をご覧ください。<br /><br /> メタデータ `Aliases` を元の "参照" アイテムに追加することで、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイルに [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 参照エイリアスを指定できます。 たとえば、次の Csc コマンド ラインでエイリアス "LS1" を設定する場合:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 次を使用します。<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
+| `References` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 指定したアイテムから現在のプロジェクトにパブリック型の情報をインポートするようにタスクに指示します。 詳しくは、「[-reference (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)」をご覧ください。<br /><br /> メタデータ `Aliases` を元の "参照" 項目に追加することで、MSBuild ファイルに C# 参照エイリアスを指定できます。 たとえば、次の Csc コマンド ラインでエイリアス "LS1" を設定する場合:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 次を使用します。<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
 | `Resources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> .NET Framework のリソースを出力ファイルに埋め込みます。<br /><br /> このパラメーターに渡される項目には、「`LogicalName`」や「`Access`」という名前のメタデータ エントリを任意で指定できます。 `LogicalName` は `/resource` スイッチの `identifier` パラメーターに対応し、`Access` は `accessibility-modifier` パラメーターに対応します。 詳しくは、「[-resource (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option)」をご覧ください。 |
 | `ResponseFiles` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクのコマンドを含む応答ファイルを指定します。 詳しくは、「[@ (応答ファイルの指定)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option)」をご覧ください。 |
-| `Sources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 1 つまたは複数の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ソース ファイルを指定します。 |
+| `Sources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 1 つまたは複数の C# ソース ファイルを指定します。 |
 | `TargetType` | 省略可能な `String` 型のパラメーターです。<br /><br /> 出力ファイルのファイル形式を指定します。 このパラメーターには値として、コード ライブラリを作成する `library`、コンソール アプリケーションを作成する `exe`、モジュールを作成する `module`、Windows プログラムを作成する `winexe` を指定できます。 既定値は `library` です。 詳しくは、「[-target (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option)」をご覧ください。 |
 | `TreatWarningsAsErrors` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、すべての警告をエラーとして扱います。 詳しくは、「[-warnaserror (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)」をご覧ください。 |
-| `UseHostCompilerIfAvailable` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> 利用できる場合、インプロセス コンパイラ オブジェクトを使用するようにタスクに指示します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によってのみ使用されます。 |
+| `UseHostCompilerIfAvailable` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> 利用できる場合、インプロセス コンパイラ オブジェクトを使用するようにタスクに指示します。 Visual Studio によってのみ使用されます。 |
 | `Utf8Output` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> UTF-8 エンコードを使用してコンパイラ出力をログに記録します。 詳しくは、「[-utf8output (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/utf8output-compiler-option)」をご覧ください。 |
 | `WarningLevel` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> コンパイラが表示する警告レベルを指定します。 詳しくは、「[-warn (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option)」をご覧ください。 |
 | `WarningsAsErrors` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーとして扱う警告の一覧を指定します。 詳しくは、「[-warnaserror (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)」をご覧ください。<br /><br /> このパラメーターは `TreatWarningsAsErrors` パラメーターをオーバーライドします。 |
@@ -80,10 +82,10 @@ ms.locfileid: "75595385"
 | `Win32Manifest` | 省略可能な `String` 型のパラメーターです。<br /><br /> 追加する Win32 マニフェストを指定します。 |
 | `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[-win32res (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)」をご覧ください。 |
 
-## <a name="remarks"></a>Remarks
-上記のパラメーター以外に、このタスクは `Microsoft.Build.Tasks.ManagedCompiler` クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから継承されますが、それにはさらに <xref:Microsoft.Build.Utilities.ToolTask> クラスという継承元が存在します。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>例
+
 次の例では、`Csc` タスクを使用し、`Compile` アイテム コレクションのソース ファイルから実行可能ファイルをコンパイルしています。
 
 ```xml
@@ -94,5 +96,6 @@ ms.locfileid: "75595385"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)

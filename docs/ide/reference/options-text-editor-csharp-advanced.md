@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76124505"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431489"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 
@@ -26,9 +26,9 @@ ms.locfileid: "76124505"
 
 ## <a name="analysis"></a>分析
 
-- 完全ソリューション解析を有効にする
+- ライブ コード分析またはバックグラウンド分析スコープ
 
-   開いているコード ファイルだけでなく、ソリューションのすべてのファイルでコード分析を有効にします。 詳細については、[完全ソリューション解析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)に関するページを参照してください。
+   マネージド コードのバックグラウンド分析スコープを構成します。 詳細については、[方法: マネージド コードのライブ コード分析スコープを構成する](../../code-quality/configure-live-code-analysis-scope-managed-code.md)」を参照してください。
 
 ## <a name="using-directives"></a>Using ディレクティブ
 

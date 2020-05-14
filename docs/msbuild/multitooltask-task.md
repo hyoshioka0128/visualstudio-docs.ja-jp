@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9e8b23492f23d39977b4eb26f8ee633b8463f27
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565215"
 ---
 # <a name="multitooltask-task"></a>MultiToolTask タスク
@@ -32,7 +32,7 @@ ms.locfileid: "75565215"
 
 以下の表では、**MultiToolTask** タスクのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**EnvironmentVariablesToSet**|省略可能な **string[]** 型のパラメーターです。|
 |**SemaphoreProcCount**|省略可能な **string** 型のパラメーターです。|
@@ -43,6 +43,6 @@ ms.locfileid: "75565215"
 |**TaskName**|必須の **String** 型のパラメーターです。|
 |**TrackerLogDirectory**|必須の **String** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

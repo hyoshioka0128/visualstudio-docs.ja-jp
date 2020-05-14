@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetDocument |Microsoft Docs
+title: ドキュメントコンテキスト2::ドキュメントを取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetDocument
 ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ce07bd2274bc2a4881acd98fb73266fc90c7bd8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6bb93fe3efb4bc114cf583e8e2c066c337109d12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341276"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731841"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
-このドキュメントのコンテキストを含むドキュメントを取得します。
+このドキュメント コンテキストを含むドキュメントを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetDocument( 
 
 ## <a name="parameters"></a>パラメーター
 `ppDocument`\
-[out]返します、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)をこのドキュメントのコンテキストを含むドキュメントを表すオブジェクト。
+[アウト]このドキュメント コンテキストを含むドキュメントを表す[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- この方法は、IDE に直接ドキュメントを提供するデバッグ エンジンです。 このメソッドが返す必要がありますそれ以外の場合、`E_NOTIMPL`します。
+ このメソッドは、IDE にドキュメントを直接提供するデバッグ エンジン用です。 それ以外の場合、この`E_NOTIMPL`メソッドは を返す必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

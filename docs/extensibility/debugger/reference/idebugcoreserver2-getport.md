@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort |Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetPort
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f4507f631887f8ffda37abec8b597087a0e57f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e8dfafffb485150687b1877295a00a8ec6b71cfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317801"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733111"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 特定のポートを取得します。
@@ -43,13 +43,13 @@ int GetPort( 
 
 ## <a name="parameters"></a>パラメーター
 `guidPort`\
-[in]ポートの GUID を取得します。
+[in]取得するポートの GUID。
 
 `ppPort`\
-[out]返します、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)目的のポートを表すオブジェクト。
+[アウト]目的のポートを表す[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_PORTSUPPLIER_NO_PORT`指定の識別子を持つポートがない場合。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 指定`E_PORTSUPPLIER_NO_PORT`された識別子を持つポートがない場合に返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

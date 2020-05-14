@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593357"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865337"
 ---
 # <a name="cl-task"></a>CL タスク
-Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コンパイラは、実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*) ファイル、またはコード モジュール ( *.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」を参照してください。
+
+Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コンパイラは、実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*) ファイル、またはコード モジュール ( *.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  次の一覧では、**CL** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 - **AdditionalIncludeDirectories**
@@ -801,4 +803,5 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
    詳細については、この表にある **TLogReadFiles** および **TLogWriteFiles** パラメーターを参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

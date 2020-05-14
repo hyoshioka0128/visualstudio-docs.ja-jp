@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b84753974eeecb8dca85035d50635d0bee47645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595047"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632109"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
+
 追跡コンテキストを開始します。
 
 ## <a name="syntax"></a>構文
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```
 
 #### <a name="parameters"></a>パラメーター
+
 [入力] `intermediateDirectory`
 
  追跡ログを格納するディレクトリ。
@@ -41,7 +43,9 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  追跡コンテキストを識別します。 この名前はログ ファイル名の作成に使用されます。
 
 ## <a name="return-value"></a>戻り値
+
  追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
+
  **ヘッダー:** *FileTracker.h*

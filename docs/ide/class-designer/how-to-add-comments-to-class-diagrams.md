@@ -1,5 +1,5 @@
 ---
-title: '方法: クラス ダイアグラムにコメントを追加する (クラス デザイナー)'
+title: '方法: クラス ダイアグラムにコメント追加する (クラス デザイナー)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592257"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>方法: クラス ダイアグラムにコメントを追加する
@@ -35,7 +35,7 @@ ms.locfileid: "75592257"
 
 2. ダイアグラムの新しいコメントのシェイプをクリックし、テキストを入力します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クラス ダイアグラムの使用](designing-and-viewing-classes-and-types.md)
 - [方法: クラス ダイアグラムをカスタマイズする](how-to-customize-class-diagrams.md)

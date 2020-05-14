@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73661931"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
@@ -30,7 +30,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、テ
   - **ソリューション エクスプローラー**と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
 
   ::: moniker range=">=vs-2019"
-  - Visual Studio のプロジェクト ファイルとソリューション ファイルを作成することなく、フォルダー内の Python コードを開いて実行することもできます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
+  - Visual Studio のプロジェクト ファイルとソリューション ファイルを作成することなく、フォルダー内の Python コードを開いて実行することもできます。 詳細については、[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
   ::: moniker-end
 
 - 大部分の時間を費やすことになる[エディター ウィンドウ](../ide/writing-code-in-the-code-and-text-editor.md) (中央) にはファイルの内容が表示されます。 これは、[Python コードを編集](editing-python-code-in-visual-studio.md)し、コードの構造内を移動し、デバッグ セッション中にブレークポイントを設定する場所です。 Python では、コードを選択し、Ctrl + Enter キーを押して[対話型 REPL ウィンドウ](python-interactive-repl-in-visual-studio.md)でそのコードを実行することもできます。

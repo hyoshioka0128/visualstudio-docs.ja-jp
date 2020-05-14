@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531590"
 ---
 # <a name="invert-if-statement"></a>if ステートメントを反転させる
@@ -36,7 +36,7 @@ ms.locfileid: "65531590"
 
     ![if else を反転する](media/invert-if.png)
 
-2. 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 
     ![if else 反転のコード修正](media/invert-if-codefix.png)
 

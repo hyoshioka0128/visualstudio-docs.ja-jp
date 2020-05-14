@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION |Microsoft Docs
+title: BP_RESOLUTION_LOCATION |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ed287f2d90e1ee92c7e0fd4ae685fbb9f38854f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350585"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737813"
 ---
-# <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-ブレークポイント解像度の位置の構造を指定します。
+# <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
+ブレークポイントの解像度の場所の構造を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -50,41 +50,41 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>メンバー
 `bpType`\
-値、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)を解釈する方法を指定する列挙体、 `bpResLocation` union または`unionmemberX`メンバー。
+共用体または`unionmemberX`メンバーの解釈方法を指定する[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列挙`bpResLocation`体の値。
 
 `bpResLocation.bpresCode`\
-[C++のみ]含まれています、 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)場合構造体`bpType`  = `BPT_CODE`します。
+[C++のみ]BP_RESOLUTION_CODE構造体[を](../../../extensibility/debugger/reference/bp-resolution-code.md)格納します`bpType` = `BPT_CODE`。
 
 `bpResLocation.bpresData`\
-[C++のみ]含まれています、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)場合構造体`bpType`  = `BPT_DATA`します。
+[C++のみ]BP_RESOLUTION_DATA構造[を](../../../extensibility/debugger/reference/bp-resolution-data.md)格納します`bpType` = `BPT_DATA`。
 
 `bpResLocation.unused`\
-[C++のみ]プレース ホルダー。
+[C++のみ]プレースホルダ。
 
 `unionmember1`\
-[C#のみ]解釈する方法については、「解説」を参照してください。
+[C#のみ]解釈方法については、「解説」を参照してください。
 
 `unionmember2`\
-[C#のみ]解釈する方法については、「解説」を参照してください。
+[C#のみ]解釈方法については、「解説」を参照してください。
 
 `unionmember3`\
-[C#のみ]解釈する方法については、「解説」を参照してください。
+[C#のみ]解釈方法については、「解説」を参照してください。
 
 `unionmember4`\
-[C#のみ]解釈する方法については、「解説」を参照してください。
+[C#のみ]解釈方法については、「解説」を参照してください。
 
 ## <a name="remarks"></a>Remarks
-この構造体のメンバーである、 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)と[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体。
+この構造体は[、BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)と[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造のメンバーです。
 
- [C#のみ]`unionmemberX`メンバーは、次の表に従って解釈されます。 左の列を確認、`bpType`間で各を決定する値、`unionmemberX`マーシャ リングおよびメンバーを表します、`unionmemberX`それに応じて。 C# では、この構造を解釈する方法の例を参照してください。
+ [C#のみ]メンバー`unionmemberX`は、次の表に従って解釈されます。 左の列を見下ろし`bpType`、その後、各`unionmemberX`メンバーが何を表しているかを判断`unionmemberX`し、それに応じてマーシャリングします。 C# でこの構造体を解釈する方法については、例を参照してください。
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPT_DATA`|`string` (データ式)|`string` (関数名)|`string` (イメージ名)|`enum_BP_RES_DATA_FLAGS`|
+|`BPT_DATA`|`string`(データ式)|`string`(関数名)|`string`(画像名)|`enum_BP_RES_DATA_FLAGS`|
 
 ## <a name="example"></a>例
-この例では、解釈、`BP_RESOLUTION_LOCATION`構造 (C#)。
+この例では、C#`BP_RESOLUTION_LOCATION`で構造体を解釈する方法を示します。
 
 ```csharp
 using System;
@@ -116,9 +116,9 @@ namespace MyPackage
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

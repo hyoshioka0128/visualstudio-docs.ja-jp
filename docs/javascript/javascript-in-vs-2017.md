@@ -10,24 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649629"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
 JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE で JavaScript コードを記述する場合に、ほとんどの標準的な編集補助機能 (コード スニペット、IntelliSense など) を使用できます。 多くの種類のアプリケーションやサービスの JavaScript コードを記述できます。
 
 > [!NOTE]
-> Microsoft の JavaScript API のすべてのリファレンス (500 超ページ) を docs.microsoft.com から対応する MDN にリダイレクトして、[MDN Web docs](https://developer.mozilla.org/en-US/) を Web のワンストップの主要な開発リソースにするためのコミュニティ全体の取り組みに参加しました。 詳細については、この[お知らせ](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)をご覧ください。
+> Microsoft の JavaScript API のすべてのリファレンス (500 以上のページ) を docs.microsoft.com から対応する MDN にリダイレクトすることで、[MDN Web docs](https://developer.mozilla.org/en-US/) を Web のワンストップの主要な開発リソースにするためのコミュニティ全体の取り組みに参加しました。 詳細については、この[お知らせ](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)をご覧ください。
 
-## <a name="ES6"></a> ECMAScript 2015 (ES6) 以降のサポート
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015 (ES6) 以降のサポート
 
 現在、Visual Studio では、ECMAScript 2015/2016 など、更新された ECMAScript 言語の構文がサポートされています。
 
@@ -59,7 +58,7 @@ tsconfig ファイルに必要な設定について、以下に説明します�
 出力場所と、`node_modules` や `temp` などのプロジェクト以外のフォルダーをこの設定に追加する必要があります。
 - `enableAutoDiscovery`:この設定は、前述のとおり、定義ファイルの自動検出とダウンロードを可能にします。
 - `compileOnSave`:この設定で、Visual Studio にソース ファイルが保存されるたびに再コンパイルする必要があるかどうかをコンパイラに指示します。
-- `typeAcquisition`:この一連の設定では、自動型取得の動作を制御します ([このセクション](/visualstudio/ide/javascript-intellisense#Auto)で詳しく説明します)。
+- `typeAcquisition`:この一連の設定では、自動型取得の動作を制御します ([このセクション](../ide/javascript-intellisense.md#Auto)で詳しく説明します)。
 
 JavaScript ファイルを CommonJS モジュールに変換し、`./out` フォルダーに配置する場合は、次の `tsconfig.json` ファイルを使用できます。
 
@@ -119,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] の JavaScript IntelliSense では、パラメーターおよびメンバー リストにさらに多くの情報が表示されるようになります。 この新しい情報は TypeScript 言語サービスで提供されます。この言語サービスでは、コードをよりよく理解するためにバックグラウンドで静的分析が使用されます。 新しい IntelliSense エクスペリエンスとそのしくみの詳細については、[こちら](/visualstudio/ide/javascript-intellisense/)を参照してください。
 
-## <a name="JSX"></a> JSX 構文のサポート
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> JSX 構文のサポート
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] の JavaScript では、JSX 構文の豊富なサポートが提供されます。 JSX は、JavaScript ファイル内で HTML タグを許可する構文セットです。
 

@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS |Microsoft Docs
+title: エバルフラッグス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337877"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737116"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 式の評価を制御するフラグを指定します。
@@ -54,37 +54,37 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>フィールド
 `EVAL_RETURNVALUE`\
-存在する場合は、戻り値に評価することを指定します。
+戻り値がある場合は評価されることを指定します。
 
 `EVAL_NOSIDEEFFECTS`\
 副作用を許可しないことを指定します。
 
 `EVAL_ALLOWBPS`\
-ブレークポイントの停止を指定します。
+ブレークポイントで停止を指定します。
 
 `EVAL_ALLOWERRORREPORT`\
-エラー報告を許可するホストを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
+許可するホストへのエラー報告を指定します。 主に、Internet Explorer のスクリプトで式の評価に使用されます。
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。
+関数を呼び出すのではなく、関数をアドレスとして評価するように強制します。
 
 `EVAL_NOFUNCEVAL`\
-関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
+関数が評価されないようにします。 たとえば、 式`int``myExpression(int) + 10`のトークンを考えてみましょう。 この関数は、アドレスとして正しく評価できますが、値としては評価できません。
 
 `EVAL_NOEVENTS`\
-セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。
+式の評価中に発生したイベントをセッションデバッグ マネージャー (SDM) または IDE に送信しないことを示すフラグ。
 
 ## <a name="remarks"></a>Remarks
-これらのフラグは、引数として渡される、 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)と[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッド。
+これらのフラグは、引数として渡されます、[評価 Async](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)メソッドと[評価同期](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッドです。
 
-これらのフラグは、ビットごとの OR と組み合わせることがあります。
+これらのフラグはビットごとの OR と組み合わせられます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

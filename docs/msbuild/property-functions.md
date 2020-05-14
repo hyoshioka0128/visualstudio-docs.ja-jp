@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597387"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586691"
 ---
 # <a name="property-functions"></a>プロパティ関数
 
-.NET Framework のバージョン 4 と 4.5 では、プロパティ関数を使用して MSBuild スクリプトを評価できます。 プロパティ関数は、プロパティが表示される場所ならどこでも使用できます。 タスクとは異なり、プロパティ関数はターゲットの外側でも使用でき、ターゲットが実行される前に評価されます。
+プロパティ関数は、MSBuild のプロパティ定義に含まれている .NET Framework メソッドの呼び出しです。 タスクとは異なり、プロパティ関数はターゲットの外側でも使用でき、ターゲットが実行される前に評価されます。
 
- MSBuild タスクを使用しなくても、システム時刻の読み取り、文字列の比較、正規表現の照合、その他の処理をビルド スクリプト内で実行できます。 MSBuild は、文字列を数値に、数値を文字列に変換しようと試みます。また、必要に応じて他の変換も実行します。
- 
+MSBuild タスクを使用しなくても、システム時刻の読み取り、文字列の比較、正規表現の照合、その他の処理をビルド スクリプト内で実行できます。 MSBuild は、文字列を数値に、数値を文字列に変換しようと試みます。また、必要に応じて他の変換も実行します。
+
 プロパティ関数から返される文字列値は、[特殊文字](msbuild-special-characters.md)がエスケープされます。 プロジェクト ファイルに直接配置した場合と同様に値を扱う場合は、`$([MSBuild]::Unescape())` を使用して特殊文字のエスケープを解除します。
+
+プロパティ関数は .NET Framework 4 以降で使用できます。
 
 ## <a name="property-function-syntax"></a>プロパティ関数の構文
 
@@ -37,7 +39,7 @@ ms.locfileid: "75597387"
 
 ビルド プロパティの値はすべて文字列値です。 文字列 (インスタンス) メソッドを使用してプロパティ値を操作できます。 たとえば、次のコードを使用して、完全パスを表すビルド プロパティからドライブ名 (最初の 3 文字) を抽出できます。
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ビルド スクリプトで、各種システム クラスの静的プロパティおよびメソッドにアクセスできます。 静的プロパティの値を取得するには、次の構文を使用します。ここで、\<Class> はシステム クラスの名前、\<Property> はプロパティの名前です。
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ $([Class]::Property)
 
 静的メソッドを呼び出すには、次の構文を使用します。ここで、\<Class> はシステム クラスの名前、\<Method> はメソッドの名前、(\<Parameters>) はメソッドのパラメーター リストです。
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ $([Class]::Method(Parameters))
 
 オブジェクト インスタンスを返す静的プロパティにアクセスすると、そのオブジェクトのインスタンス メソッドを呼び出すことができます。 インスタンス メソッドを呼び出すには、次の構文を使用します。ここで、\<Class> はシステム クラスの名前、\<Property> はプロパティの名前、\<Method> はメソッドの名前、(\<Parameters>) はメソッドのパラメーター リストです。
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ $([Class]::Property.Method(Parameters))
 
 ビルド内のいくつかの静的メソッドにアクセスすると、算術、ビットごとの論理、およびエスケープ文字のサポートが提供されます。 次の構文を使用して、これらのメソッドにアクセスします。ここで、\<Method> はメソッドの名前、(\<Parameters>) はメソッドのパラメーター リストです。
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 たとえば、数値を持つ 2 つのプロパティを合計するには、次のコードを使用します。
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string NormalizePath(params string[] path)|指定されたパスの正規化された完全なパスを取得し、現在のオペレーティング システムの適切なディレクトリ区切り文字が含まれていることを確認します。|
 |string NormalizeDirectory(params string[] path)|指定されたディレクトリの正規化された完全なパスを取得し、現在のオペレーティング システムの適切なディレクトリ区切り文字が含まれていて、末尾にスラッシュがあることを確認します。|
 |string EnsureTrailingSlash(string path)|指定されたパスの末尾にスラッシュがない場合は、追加します。 パスが空の文字列の場合は変更されません。|
-|string GetPathOfFileAbove(string file, string startingDirectory)|現在のビルド ファイルの場所に基づいて、または `startingDirectory` に基づいて (指定されている場合)、ファイルを検索します。|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|指定されたディレクトリまたはそのディレクトリの上のディレクトリ構造内の場所でファイルを見つけます。|
+|string GetPathOfFileAbove(string file, string startingDirectory)|現在のビルド ファイルの場所の上にあるディレクトリ構造内のファイルへの完全なパスを検索して返します。指定した場合は `startingDirectory` が起点となります。|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|指定したディレクトリか、そのディレクトリの上のディレクトリ構造内の場所から、ファイルのディレクトリを探して返します。|
 |string MakeRelative(string basePath, string path)|`path` を `basePath` に対して相対的にします。 `basePath` は絶対ディレクトリである必要があります。 `path` を相対にできない場合、verbatim が返されます。 `Uri.MakeRelativeUri` と似ています。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|パラメーター 'conditionValue' が空の場合にのみ、パラメーター 'defaultValue' に文字列を返します。それ以外の場合は、値 conditionValue を返します。|
 
@@ -181,7 +183,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 次の例が示すように、プロパティ関数を組み合わせてより複雑な関数を形成します。
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ MSBuild の `DoesTaskHostExist` プロパティ関数は、指定したランタ
 
 このプロパティ関数には次の構文があります。
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ MSBuild の `EnsureTrailingSlash` プロパティ関数は、末尾のスラッ�
 
 このプロパティ関数には次の構文があります。
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ MSBuild の `GetDirectoryNameOfFileAbove` プロパティ関数は、パスの�
 
  このプロパティ関数には次の構文があります。
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-MSBuild の `GetPathOfFileAbove` プロパティ関数は、直前のファイルのパスを返します。 呼び出しと同じ機能です
+MSBuild の `GetPathOfFileAbove` プロパティ関数では、指定したファイルのパスが返されます (現在のディレクトリの上のディレクトリ構造内にある場合)。 呼び出しと同じ機能です
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ MSBuild の `GetPathOfFileAbove` プロパティ関数は、直前のファイ�
 
 このプロパティ関数には次の構文があります。
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ MSBuild の `GetRegistryValue` プロパティ関数は、レジストリ キー
 
 この関数を使用する方法を次の例に示します。
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,7 +259,7 @@ MSBuild の `GetRegistryValueFromView` プロパティ関数は、レジスト�
 
 このプロパティ関数の構文を次に示します。
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
@@ -275,7 +277,7 @@ Windows 64 ビット オペレーティング システムは、**HKEY_LOCAL_MAC
 
 次に例を示します。
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ MSBuild の `MakeRelative` プロパティ関数は、最初のパスに対す�
 
 このプロパティ関数には次の構文があります。
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 
@@ -337,6 +339,10 @@ Output:
   Value2 = b
 -->
 ```
+
+## <a name="msbuild-condition-functions"></a>MSBuild 条件関数
+
+関数 `Exists` と `HasTrailingSlash` は、プロパティ関数ではありません。 これらは、`Condition` 属性と一緒に使用することができます。 「[MSBuild の条件](msbuild-conditions.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

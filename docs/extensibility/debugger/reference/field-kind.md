@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND |Microsoft Docs
+title: FIELD_KIND |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344471"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736860"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
-内のフィールドの種類を指定します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
+# <a name="field_kind"></a>FIELD_KIND
+[オブジェクトに](../../../extensibility/debugger/reference/idebugfield.md)含まれるフィールドの種類を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -126,16 +126,16 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>フィールド
 `FIELD_KIND_TYPE`\
-フィールドが、種類のみであることを示します。
+フィールドが型だけであることを示します。
 
 `FIELD_KIND_SYMBOL`\
-フィールドが、型、名、およびその他の情報を持つシンボルであることを示します。
+フィールドが、型、名前、およびその他の情報を含むシンボルであることを示します。
 
 `FIELD_TYPE_PRIMITIVE`\
 フィールドがプリミティブ データ型であることを示します。
 
 `FIELD_TYPE_STRUCT`\
-フィールドは構造体であることを示します。
+フィールドが構造体であることを示します。
 
 `FIELD_TYPE_CLASS`\
 フィールドがクラスであることを示します。
@@ -153,7 +153,7 @@ public enum enum_FIELD_KIND {
 フィールドがメソッドであることを示します。
 
 `FIELD_TYPE_BLOCK`\
-フィールドが、ブロックであることを示します。
+フィールドがブロックであることを示します。
 
 `FIELD_TYPE_POINTER`\
 フィールドがポインターであることを示します。
@@ -165,16 +165,16 @@ public enum enum_FIELD_KIND {
 フィールドがラベルであることを示します。
 
 `FIELD_TYPE_TYPEDEF`\
-フィールドが、typedef であることを示します。
+フィールドが型定義であることを示します。
 
 `FIELD_TYPE_BITFIELD`\
 フィールドがビット フィールドであることを示します。
 
 `FIELD_TYPE_NAMESPACE`\
-フィールドが、名前空間であることを示します。
+フィールドが名前空間であることを示します。
 
 `FIELD_TYPE_MODULE`\
-フィールドが、モジュールであることを示します。
+フィールドがモジュールであることを示します。
 
 `FIELD_TYPE_DYNAMIC`\
 フィールドが動的であることを示します。
@@ -189,7 +189,7 @@ public enum enum_FIELD_KIND {
 フィールドが参照であることを示します。
 
 `FIELD_TYPE_EXTENDED`\
-将来使用するために予約されています。
+将来利用するために予約されています。
 
 `FIELD_SYM_MEMBER`\
 フィールドがメンバーであることを示します。
@@ -198,43 +198,43 @@ public enum enum_FIELD_KIND {
 フィールドがローカルであることを示します。
 
 `FIELD_SYM_PARAMETER`\
-フィールドが、パラメーターであることを示します。
+フィールドがパラメーターであることを示します。
 
 `FIELD_SYM_THIS`\
-フィールドが"this"ポインターであることを示します。
+フィールドが "this" ポインターであることを示します。
 
 `FIELD_SYM_GLOBAL`\
 フィールドがグローバルであることを示します。
 
 `FIELD_SYM_PROP_GETTER`\
-フィールドをプロパティを取得することを示します。
+フィールドがプロパティを取得することを示します。
 
 `FIELD_SYM_PROP_SETTER`\
 フィールドがプロパティを設定することを示します。
 
 `FIELD_SYM_EXTENDED`\
-将来使用するために予約されています。
+将来利用するために予約されています。
 
 `FIELD_KIND_MASK`\
 フィールドの種類のマスクを示します。
 
 `FIELD_TYPE_MASK`\
-フィールドの種類のマスクを示します。
+フィールド型のマスクを示します。
 
 `FIELD_SYM_MASK`\
-シンボル情報をマスクを示します。
+シンボル情報のマスクを示します。
 
 ## <a name="remarks"></a>Remarks
-呼び出しから返される、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッド。
+[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドの呼び出しから返されます。
 
-フィールドの種類に応じて[QueryInterface](/cpp/atl/queryinterface)で呼び出すことができます、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスの具体的なフォームのインターフェイス。 たとえば場合、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)を返します`FIELD_TYPE_METHOD`を呼び出して`QueryInterface`では`DebugField`を取得する、 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイス。
+フィールドの種類に応じて、[より](/cpp/atl/queryinterface)具体的な形式のインターフェイスの[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスでクエリ インターフェイスを呼び出すことができます。 たとえば[、GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)が戻`FIELD_TYPE_METHOD`った場合は、I`QueryInterface``DebugField`を呼び出して[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイスを取得できます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

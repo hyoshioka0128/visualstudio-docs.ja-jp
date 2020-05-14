@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Reset |Microsoft Docs
+title: I列挙デバッグモジュール2::リセット |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Reset
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b969b03c955368415d2e5911eb46731d133abad3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81fc33620449837f3d2af883f0721d24df92e804
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350321"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716515"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
-最初の要素を列挙値をリセットします。
+列挙を最初の要素にリセットします。
 
 ## <a name="syntax"></a>構文
 
@@ -38,10 +38,10 @@ int Reset();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが呼び出された後、次回の呼び出し、[次](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)メソッドが列挙体の最初の要素を返します。
+ このメソッドが呼び出されると[、Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)メソッドの次の呼び出しは、列挙体の最初の要素を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

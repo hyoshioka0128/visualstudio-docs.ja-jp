@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e09526930bf98141ae4f9d4d204b20383763c208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552877"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用状況グラフ
@@ -32,6 +32,6 @@ CPU 使用状況グラフは、時間経過に対するアプリの使用状況�
 
 - 白は、システム上の未使用の論理コアを使用できるかどうかを示します。 これらのコアは、並列処理の機会があれば、プロセスで使用できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [使用状況ビュー](../profiling/utilization-view.md)
 - [平均 CPU 使用状況](../profiling/average-cpu-utilization.md)

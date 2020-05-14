@@ -2,55 +2,62 @@
 title: Visual Studio サブスクリプションの新機能
 description: Visual Studio サブスクリプションの管理に使用できる、新機能と更新された機能について説明します。
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060408"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649657"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
 サブスクリプション特典パッケージは、ユーザーにとってより役立つものにするために、頻繁に更新されています。 また、ユーザーに最良のエクスペリエンスを提供するため、サブスクライバーとサブスクリプション管理ポータルも機能強化されます。  以下で、最新の機能と更新プログラムについて説明します (四半期順)。
 
-## <a name="2019-q3-june-august"></a>2019 Q3 (6 月 - 8 月)
+## <a name="2020-q1-january-march"></a>2020 年第 1 四半期 (1 月から 3 月)
 
-### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>サブスクライバーが "Contact my Admin" (管理者に問い合わせる) を利用できるようになりました - 2019 年 8 月
-Visual Studio サブスクライバーの多くは、職場または学校を通じてサブスクリプションを取得します。それらのサブスクリプションは管理者によって割り当てられ、管理されます。  大規模または複雑な組織では、サブスクライバーが管理者の支援を必要としても、誰に問い合わせたらよいかわからないことがあります。  サブスクライバーを支援する目的で、サブスクライバー ポータル (https://my.visualstudio.com/subscriptions ) に "Contact my Admin" (管理者に問い合わせる) 機能が新しく追加されました。 詳しくは、[管理者に問い合わせる](contact-my-admin.md)方法に関する記事をお読みください。 
+### <a name="subscriptions-administration-portal"></a>サブスクリプション管理ポータル
+2020 年第 1 四半期には、 https://manage.visualstudio.com で Visual Studio サブスクリプション管理ポータルの新しい外観といくつかの新機能が公開されました。 ポータルの変更には、新しい配色と、一部のツールの再配置が含まれていました。  サブスクリプションの割り当て、契約の詳細、最大使用量の概要は、左上のボタンによって制御されるようになりました。  これにより、サブスクリプションの割り当てや編集など、特に頻繁に実行する管理タスクに利用可能な画面領域を最大化できます。  
 
-### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>スーパー管理者が契約の基本設定を利用できるようになりました - 2019 年 8 月
-サブスクリプション管理者ポータルの新しい機能により、スーパー管理者が契約にグローバル基本設定を設定できるようになりました。  基本設定を設定できることで、サブスクリプションを割り当てるときに管理者に要求される仕事量が減ります。また、組織外のユーザーに管理者がサブスクリプションを作成できるかなど、機能に対する制御が向上します。  詳しくは、「[契約の基本設定を設定する](admin-prefs.md)」という記事を参照してください。 
+また、ドロップ ダウンの **[+ 追加]** メニューで個々のサブスクライバーを追加したり、一括追加を実行したりするオプションを統合しました。 
 
-## <a name="2019-q2-april-june"></a>2019 年第 2 四半期 (4 月から 6 月)
+   > [!div class="mx-imgBorder"]
+   > ![サブスクリプション管理ポータルの新しい UI](_img/whats-new/new-admin-ui.png)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションを含む Visual Studio
-5 月に開催された //build カンファレンスで、Enterprise Agreement のお客様が GitHub Enterprise を含む Visual Studio サブスクリプションを購入いただけるようになったことが Microsoft により発表されました。  この方法により、Visual Studio サブスクリプションと GitHub Enterprise の両方を、1 つのお得な価格で簡単に入手いただけます。  
+#### <a name="connect-emails"></a>電子メールへの接続
+Microsoft アカウント (MSA) を使用しているサブスクライバーと Azure Active Directory (Azure AD) の照合が簡単になり、2 つの ID をすばやくリンクできるようになりました。  Azure AD の ID を使用すると、セキュリティが強化され、サブスクリプションの管理が容易になります。  詳細については、[個人用サインインに関する記事](personal-email-sign-ins.md)を参照してください。 
 
-GitHub Enterprise は、Enterprise Agreement を通じて入手した Visual Studio Enterprise および Visual Studio Professional サブスクリプションと共にご利用いただけます。 また、お客様のエンタープライズ契約が更新予定でない場合でも GitHub Enterprise を追加することができる、"ステップアップ" オファーもご用意しています。
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Azure Active Directory のグループを使用したサブスクライバーの追加
+組織で Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用してサブスクリプションを管理できるようになりました。  サブスクリプションをグループに割り当てることで、同じ種類のサブスクリプションを複数のユーザーに迅速に提供することができます。  新しいユーザーが Azure AD グループに追加されると、自動的にサブスクリプションが割り当てられます。  ユーザーが Azure AD グループから削除されると、そのユーザーのサブスクリプションも削除されます。  これにより、組織はサブスクリプション管理を自動化し、管理者の時間と労力を節約できます。  詳細については、Microsoft のドキュメントで[複数のユーザーの追加](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)に関する記事を参照してください。 
 
-メリット、オプション、および価格の詳細については、 https://visualstudio.microsoft.com/subscriptions/visual-studio-github にアクセスしてください。 
+### <a name="cast-highlight"></a>CAST の強調表示
+パートナーが提供する CAST Highlight の特典が拡張されたことをお知らせいたします。 
+- Visual Studio Enterprise サブスクリプションに含まれる特典の期間が 6 か月に延長されました。  
+- Visual Studio Professional のサブスクライバーは、1 つのアプリケーションを 3 か月間評価できるサブスクリプションを受け取れるようになりました。 
 
-お客様の組織が既に GitHub Enterprise を含む Visual Studio サブスクリプションを持っている場合は、Microsoft のドキュメントから [GitHub Enterprise を含む Visual Studio の管理](assign-github.md) (サブスクリプション) について詳しく学習いただけます。  
+## <a name="2020-q2-april-june"></a>2020 年第 2 四半期 (4 月から 6 月)
 
-## <a name="2019-q1-january-march"></a>2019 年第 1 四半期 (1 月から 3 月)
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio サブスクリプション ポータル
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[サブスクリプション管理ポータル](https://manage.visualstudio.com)に最大使用量を追加
-Visual Studio のサブスクリプション管理ポータルの新機能を使用すると、購入して割り当てたサブスクリプション数を追跡し、過去 1 年間と全契約期間の割り当てた各レベルのサブスクリプションのピーク数を特定できます。 これは、現在のサブスクリプションの使用状況を理解し、将来の購入を計画するのに役立ちます。 
+Visual Studio サブスクリプションポータルでは、外観と使いやすさが大幅に変更されました。  
 
-  > [!div class="mx-imgBorder"]
-  > ![[Maximum Usage]\(最大使用量\) メニュー](_img/maximum-usage/maximum-usage-menu.png)
+- [特典] タイルのサイズが変更され、ウィンドウにすべて表示されるため、特定のカテゴリ内のすべてのタイルを表示するために左右にスクロールする必要がなくなりました。 
+- 利用可能なすべての特典を表示するか、カテゴリ ピッカーを使用して 1 つのカテゴリのみを表示するかを選択できます。
+   > [!div class="mx-imgBorder"]
+   > ![新しい特典カテゴリ ピッカー](_img/whats-new/whats-new-category-picker.png)
+- また、サブスクリプション ピッカーをウィンドウの右上隅から、よりアクセスしやすい場所に移動しました。
+   > [!div class="mx-imgBorder"]
+   > ![新しいサブスクリプション ピッカー](_img/whats-new/whats-new-sub-picker.png)
+- 新しい特典や人気のある特典を示すために、特典の一覧の上部に "おすすめの特典" を追加しました。  
+   > [!div class="mx-imgBorder"]
+   > ![新しいおすすめの特典](_img/whats-new/whats-new-featured.png)
 
-購入や割り当てなど、ご自分の割り当ての実行履歴を確認することもできます。   
-
-詳細については、[最大使用量](maximum-usage.md)に関する記事をご覧ください。 
-
-
-
-
-
-今日のところは、これで終わりです。
+## <a name="next-steps"></a>次の手順
+- 新しい[サブスクリプション管理ポータル](https://manage.visualstudio.com) UI とその新機能を確認する
+- [CAST Highlight](vs-cast.md) の詳細情報を確認する
+- Visual Studio サブスクリプションの新機能に関する最新情報については、こちらのページを随時ご確認ください。

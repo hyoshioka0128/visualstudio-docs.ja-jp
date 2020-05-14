@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589423"
 ---
-# <a name="how-to-model-3d-terrain"></a>方法: 3D 地形のモデル化
+# <a name="how-to-model-3d-terrain"></a>方法: 3D 地形をモデル化する
 
 この記事では、モデル エディターを使用した 3D 地形モデルの作成方法を示します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "75589423"
 
 3. 面選択モードに入ります。 モデル エディターのツール バーで、 **[面の選択]** を選択します。
 
-4. 平面を再分割します。 面選択モードで、平面を 1 度クリックして、選択できるようにアクティブにしてから、もう 1 度クリックして、面のみ選択します。 モデル エディターのツール バーで、 **[面を再分割する]** を選択します。 4 種類の均等なサイズのパーティションに分割される平面に、新しい頂点が追加されます。
+4. 平面を再分割します。 面選択モードで、平面を 1 度クリックして、選択できるようにアクティブにしてから、もう 1 度クリックして、面のみ選択します。 [モデル エディター] ツール バーで、 **[面を再分割する]** を選択します。 4 種類の均等なサイズのパーティションに分割される平面に、新しい頂点が追加されます。
 
 5. さらに再分割を作成します。 新しい面が選択された状態で、さらに 2 度 **[面を再分割する]** を選択します。 これにより、合計 64 の面が作成されます。 多くの再分割を作成するほど、詳細な地形が得られます。
 
@@ -53,8 +53,8 @@ ms.locfileid: "75589423"
 
 ![地形モデルを表示する 3&#45;D シーン](../designers/media/digit-terrain-model.png)
 
-この地形モデルを使用して、「[方法:ジオメトリベースのグラデーション シェーダーを作成する](../designers/how-to-create-a-geometry-based-gradient-shader.md)」で説明するグラデーション シェーダーの効果を確認できます。
+この地形モデルを使用して、「[方法: ジオメトリベースのグラデーション シェーダーを作成する](../designers/how-to-create-a-geometry-based-gradient-shader.md)」で説明するグラデーション シェーダーの効果を確認できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [モデル エディター](../designers/model-editor.md)

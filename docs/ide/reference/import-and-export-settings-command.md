@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568829"
 ---
 # <a name="import-and-export-settings-command"></a>[設定のインポートとエクスポート] コマンド
@@ -44,7 +44,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 任意。 現在の設定をリセットします。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 スイッチを指定しないでこのコマンドを実行すると、 **[設定のインポートとエクスポート]** ウィザードが開きます。 詳細については、[設定の同期](../synchronized-settings-in-visual-studio.md)と[環境設定](../environment-settings.md)に関するページを参照してください。
 
@@ -56,7 +56,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [環境設定](../../ide/environment-settings.md)
 - [設定を同期する](../../ide/synchronized-settings-in-visual-studio.md)

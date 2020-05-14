@@ -11,18 +11,18 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785085"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307119"
 ---
 # <a name="python-environments-window-tabs-reference"></a>[Python 環境] ウィンドウ タブ リファレンス
 
 **[Python 環境]** ウィンドウを開くには:
 
-- **[表示]** > **[その他のウィンドウ]** > **[Python 環境]** メニュー コマンドを選びます。
-- **ソリューション エクスプローラー**でプロジェクトの **[Python 環境]** ノードを右クリックし、**[すべての Python 環境の表示]** を選択します。
+- **[表示]**  >  **[その他のウィンドウ]**  >  **[Python 環境]** メニュー コマンドを選びます。
+- **ソリューション エクスプローラー**でプロジェクトの **[Python 環境]** ノードを右クリックし、 **[すべての Python 環境の表示]** を選択します。
 
 **[Python 環境]** ウィンドウを大きく広げると、これらのオプションがタブとして表示され、より操作しやすくなります。 わかりやすくするために、この記事ではタブが拡大表示されています。
 
@@ -62,11 +62,11 @@ ms.locfileid: "62785085"
 
 1. 環境をインストールすると、Visual Studio によってフォルダー *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* が作成されます。ここで、&lt;version&gt; は Visual Studio バージョン (2017 または 2019 など) です。&lt;environment&gt; は環境の名前と一致します。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
 
-1. **[ツール]** > **[オプション]** > **[Python]** > **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
+1. **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
 
 ## <a name="configure-tab"></a>[Configure (構成)] タブ
 
-使用可能な場合、**[構成]** タブには次の表で説明するような詳細が表示されます。 このタブが存在しない場合は、Visual Studio がすべての詳細情報を自動的に管理していることを意味します。
+使用可能な場合、 **[構成]** タブには次の表で説明するような詳細が表示されます。 このタブが存在しない場合は、Visual Studio がすべての詳細情報を自動的に管理していることを意味します。
 
 ::: moniker range="vs-2017"
 ![[Python Environments (Python 環境)] の [Configure (構成)] タブ](media/environments/environments-configure-tab.png)
@@ -90,7 +90,7 @@ ms.locfileid: "62785085"
 
 *旧バージョンでは "pip" も表示されます。*
 
-pip (**[パッケージ (PyPI)]** タブ) または Conda (**[パッケージ (Conda)]** タブ、Visual Studio 2017 バージョン 15.7 以降の Conda 環境の場合) を使用して、環境にインストールされたパッケージを管理します。 このタブでは、新しいパッケージを検索し、その依存関係と共にインストールすることもできます。
+pip ( **[パッケージ (PyPI)]** タブ) または Conda ( **[パッケージ (Conda)]** タブ、Visual Studio 2017 バージョン 15.7 以降の Conda 環境の場合) を使用して、環境にインストールされたパッケージを管理します。 このタブでは、新しいパッケージを検索し、その依存関係と共にインストールすることもできます。
 
 既にインストールされているパッケージには、パッケージを更新するためのコントロール (上向き矢印) とアンインストールするためのコントロール (円内の X) が表示されます。
 
@@ -133,13 +133,13 @@ pip (**[パッケージ (PyPI)]** タブ) または Conda (**[パッケージ (C
 
 **[今すぐ昇格]** を選ぶと、1 回の操作について pip に管理者特権が付与され、アクセス許可を求めるオペレーティング システムのプロンプトも対象になります。 **[管理者特権なしで続行]** を選ぶと、パッケージのインストールは試みられますが、pip がフォルダーを作成しようとすると、"**エラー: 'C:\Program Files\Anaconda3\Lib\site-packages\png.py' を作成できませんでした: アクセス許可が拒否されました**" のような出力で失敗します。
 
-**[パッケージのインストール時か削除時に必ず昇格]** を選ぶと、対象の環境ではダイアログが表示されなくなります。 再びダイアログが表示されるようにするには、**[ツール]** > **[オプション]** > **[Python]** > **[全般]** に移動し、**[永続的に表示されないすべてのダイアログをリセットする]** ボタンを選択します。
+**[パッケージのインストール時か削除時に必ず昇格]** を選ぶと、対象の環境ではダイアログが表示されなくなります。 再びダイアログが表示されるようにするには、 **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[全般]** に移動し、 **[永続的に表示されないすべてのダイアログをリセットする]** ボタンを選択します。
 
-同じ **[オプション]** タブでは、**[常に管理者として pip を実行する]** を選んで、すべての環境でダイアログを非表示にすることもできます。 「[Options - General tab](python-support-options-and-settings-in-visual-studio.md#general-options)」([全般] タブのオプション) をご覧ください。
+同じ **[オプション]** タブでは、 **[常に管理者として pip を実行する]** を選んで、すべての環境でダイアログを非表示にすることもできます。 「[Options - General tab](python-support-options-and-settings-in-visual-studio.md#general-options)」([全般] タブのオプション) をご覧ください。
 
 ### <a name="security-restrictions-with-older-versions-of-python"></a>Python の旧バージョンのセキュリティ制限
 
-Python 2.6、3.1、3.2 を使用する場合、Visual Studio には、"**Due to security restrictions, installing from the internet may not work on this version of Python (セキュリティ上の制限により、このバージョンの Python ではインターネットからのインストールが機能しない場合があります)**" という警告が示されます。
+Python 2.6、3.1、3.2 を使用する場合、Visual Studio には、"**Due to security restrictions, installing from the internet may not work on this version of Python (セキュリティ上の制限により、このバージョンの Python ではインターネットからのインストールが機能しない場合があります)** " という警告が示されます。
 
 ![Python の以前のバージョンでの pip インストール制限についてのメッセージ](media/environments/environments-old-version-restriction.png)
 
@@ -157,11 +157,11 @@ IntelliSense 入力候補データベースの現在の状態を示します。
 ![[Python Environments (Python 環境)] の [IntelliSense] タブ](media/environments/environments-intellisense-tab.png)
 
 - Visual Studio 2017 バージョン 15.5 以前は、IntelliSense による補完は、そのライブラリ用にコンパイルされているデータベースに依存しています。 データベースの構築はライブラリのインストール時にバックグラウンドで実行されますが、時間がかかる可能性があり、コードの記述の開始時には完了していないことがあります。
-- Visual Studio 2017 バージョン 15.6 以降は、既定ではデータベースに依存せずに完了する迅速な方法が使用されます。 このため、タブのラベルは **IntelliSense [データベース無効]** になります。 データベースを有効にするには、オプション **[ツール]** > **[オプション]** > **[Python]** >  **[試験段階]** > **[Use new style IntelliSense for environments]\(環境に対して新しいスタイル IntelliSense を使用する\)** をクリアします。
+- Visual Studio 2017 バージョン 15.6 以降は、既定ではデータベースに依存せずに完了する迅速な方法が使用されます。 このため、タブのラベルは **IntelliSense [データベース無効]** になります。 データベースを有効にするには、オプション **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[試験段階]**  >  **[Use new style IntelliSense for environments]\(環境に対して新しいスタイル IntelliSense を使用する\)** をクリアします。
 
-Visual Studio は新しい環境を検出すると (またはユーザーが追加すると)、ライブラリのソース ファイルを分析することで、データベースのコンパイルを自動的に開始します。 インストールされている内容により、この処理には 1 分から 1 時間以上かかることがあります (たとえば、Anaconda には多くのライブラリが付属しており、データベースのコンパイルに少し時間がかかります)。完了すると、詳細な IntelliSense が提供され、新しいライブラリをインストールするまでデータベースを再度更新する (**[Refresh DB]\(DB の更新\)** ボタンで) 必要はありません。
+Visual Studio は新しい環境を検出すると (またはユーザーが追加すると)、ライブラリのソース ファイルを分析することで、データベースのコンパイルを自動的に開始します。 インストールされている内容により、この処理には 1 分から 1 時間以上かかることがあります (たとえば、Anaconda には多くのライブラリが付属しており、データベースのコンパイルに少し時間がかかります)。完了すると、詳細な IntelliSense が提供され、新しいライブラリをインストールするまでデータベースを再度更新する ( **[Refresh DB]\(DB の更新\)** ボタンで) 必要はありません。
 
-データがコンパイルされていないライブラリには、**!** が表示されます。環境のデータベースが完成していない場合は、**!** も メイン環境リストのライブラリの横に表示されます。
+データがコンパイルされていないライブラリには、 **!** が表示されます。環境のデータベースが完成していない場合は、 **!** も メイン環境リストのライブラリの横に表示されます。
 
 ::: moniker-end
 

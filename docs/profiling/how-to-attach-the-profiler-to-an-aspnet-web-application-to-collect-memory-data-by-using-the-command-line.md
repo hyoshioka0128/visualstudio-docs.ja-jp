@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: f2b9ea7799656b0dd7dacd35bde62dc84aea08dd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779065"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、メモリ データを収集する
@@ -106,9 +106,9 @@ ms.locfileid: "74779065"
 
 1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの手順を実行します。
 
-   - 「**VSPerfCmd** [/detach](../profiling/detach.md)」と入力します
+   - **VSPerfCmd** [/detach](../profiling/detach.md) と入力します
 
-      または
+      \- または -
 
    - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを終了します。 型:
 

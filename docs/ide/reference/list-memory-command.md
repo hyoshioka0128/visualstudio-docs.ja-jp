@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568712"
 ---
 # <a name="list-memory-command"></a>ListMemory コマンド
@@ -53,7 +53,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 任意。 数字の表示形式を、符号付き、符号なし、または 16 進数のいずれかに指定します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 すべてのスイッチを指定して完全な **Debug.ListMemory** コマンドを記述する代わりに、特定のスイッチが指定された値に事前に設定された定義済みのエイリアスを使用してコマンドを起動することもできます。 以下に例を示します。
 
 ```cmd
@@ -85,11 +85,11 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

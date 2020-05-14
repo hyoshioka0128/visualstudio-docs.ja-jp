@@ -3,15 +3,16 @@ title: 管理者の責任 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: 05b1a66eb6589f1d0d9502a754f67d0f9c31424f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 61b75f1863ba490a610edf63c330661d1c4baf52
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851875"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232724"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
 管理者は組織のサブスクリプションを管理できます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。
@@ -35,7 +36,13 @@ Visual Studio サブスクリプションでは、開発チーム メンバー�
 | ライセンスの再割り当て                     | ユーザーがチームを離れ、ライセンスの必要がなくなった場合は、90 日が経過した後にそのライセンスを再割り当てすることができます。 ライセンスを再割り当てするときに、既に使用されているプロダクト キーは引き続き利用できるとしても置き換えられることはありません。 エンタープライズ契約 (EA) を締結している組織の場合、Pluralsight トレーニングなど、元のユーザーによって使用されていたすべての特典がリセットされます。                                                                                                                                                                                                                                                 |
 | エンド ユーザーの例外                  | ソフトウェア開発プロジェクトの最後に、エンド ユーザーは通常、アプリケーションを確認し、リリースに必要な条件を満たしているかどうかを判断します。 このプロセスは、ユーザー受け入れテスト (UAT) と呼ばれます。 ビジネス スポンサーや製品マネージャーなどのチーム メンバーは、エンド ユーザーの代理としての役割を果たすことができます。 Visual Studio サブスクリプションがないエンド ユーザーは、ソフトウェアの使用が Visual Studio のすべてのライセンス条項に準拠していれば、UAT のためにソフトウェアにアクセスできます。 プライマリ ロールがソフトウェアの設計、開発、またはテストのユーザーが、"エンド ユーザー" にも該当する場合はほとんどありません。 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="see-also"></a>参照
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [運用前環境のインベントリ](admin-inventory.md)
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak |Microsoft Docs
+title: Iデバッグプログラム2::原因ブレイク |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e96db32d7ba5a01f89530623c949500a265cdb60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311355"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723100"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-プログラムが次の実行を停止する要求は時間を実行するには、そのスレッド試行のいずれかです。
+プログラムのスレッドの 1 つが次回実行を試みた時点で、プログラムの実行を停止するように要求します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,12 +38,12 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)次に、プログラムはこのメソッドが呼び出された後にコードを実行しようとしたときにイベントが送信されます。
+ [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)イベントは、プログラムがこのメソッドが呼び出された後に次にコードを実行しようとすると送信されます。
 
- メソッドは必ずしもプログラムが停止するまで待たずにすぐに返します点で、このメソッドは非同期です。
+ このメソッドは非同期で、プログラムの停止を待たずにメソッドがすぐに戻ります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

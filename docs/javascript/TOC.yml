@@ -10,7 +10,7 @@
   items:
     - name: Visual Studio IDE の表示の紹介
       href: quickstart-ide-orientation-js.md
-    - name: Node.js プロジェクトを作成する
+    - name: Node.js プロジェクトの作成
       href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
     - name: Vue.js プロジェクトを作成する
       href: quickstart-vuejs-with-nodejs.md
@@ -24,7 +24,7 @@
       href: tutorial-aspnet-with-typescript.md
     - name: Node.js アプリを Linux App Service に発行する
       href: publish-nodejs-app-azure.md
-- name: 使い方ガイド
+- name: ハウツー ガイド
   items:
     - name: コードを作成して編集する
       href: write-and-edit-code.md

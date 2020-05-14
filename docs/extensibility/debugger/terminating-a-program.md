@@ -1,33 +1,33 @@
 ---
-title: プログラムの終了 |Microsoft Docs
+title: プログラムを終了する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f82a8238b542ce9aa9f5489df38553410e1326d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331358"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712521"
 ---
 # <a name="terminating-a-program"></a>プログラムの終了
-次のセクションでは、1 つのスレッドで 1 つのプログラムの終了について説明します。
+次のセクションでは、1 つのスレッドを使用した単一のプログラムの終了について説明します。
 
 ## <a name="termination-process"></a>終了プロセス
 
-1. DE 送信、 [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)有効な[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)します。
+1. デは、有効な[IDebugThread2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)を使用して[IDebug スレッドデストロイイベント2](../../extensibility/debugger/reference/idebugthread2.md)を送信します。
 
-2. DE 送信、 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)有効な[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)します。
+2. デは、有効な[IDebugProgram2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)を使用して[IDebug プログラムデストロイイベント2 を](../../extensibility/debugger/reference/idebugprogram2.md)送信します。
 
-   IDE は、デザイン モードに入ります。 デバッグ エンジンまたはランタイム環境は[IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)ポートからプログラムを削除します。
+   IDE はデザイン モードに入ります。 デバッグ エンジンまたはランタイム環境は、ポートからプログラムを削除する[IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)を呼び出します。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガー イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
+- [デバッガ イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

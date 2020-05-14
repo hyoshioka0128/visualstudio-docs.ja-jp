@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON |Microsoft Docs
+title: ATTACH_REASON |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351847"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738127"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
-プログラム ノードにアタッチするデバッグ エンジン (DE) の理由を指定します。
+# <a name="attach_reason"></a>ATTACH_REASON
+デバッグ エンジン (DE) がプログラム ノードにアタッチする理由を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,23 +46,23 @@ public enum enum_ATTACH_REASON {
 
 ## <a name="fields"></a>フィールド
 `ATTACH_REASON_AUTO`\
-プロセスがデバッグ モードでは現在ためにをアタッチします。
+プロセスが現在デバッグ モードであるため、アタッチします。
 
 `ATTACH_REASON_LAUNCH`\
-プロセスが起動されているため、接続します。
+プロセスが起動されたのでアタッチします。
 
 `ATTACH_REASON_USER`\
-ユーザーの要求によりアタッチします。
+ユーザー要求が原因でアタッチします。
 
 ## <a name="remarks"></a>Remarks
-これらの値がパラメーターとして使用される、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)と[アタッチ](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)メソッド。
+これらの値は[、Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドと[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)メソッドのパラメーターとして使用されます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

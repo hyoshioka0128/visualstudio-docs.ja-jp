@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926168"
 ---
 # <a name="publish-page-project-designer"></a>[発行] ページ (プロジェクト デザイナー)
@@ -49,7 +49,7 @@ WPF Web ブラウザー アプリなどのようなアプリケーションは�
 
 [アプリケーション ファイル] ダイアログ ボックスを開きます。これは、個々のファイルをどのようにまたどこにインストールするかを指定します。
 
- **必須コンポーネント**
+ **前提条件**
 
 [必須コンポーネント] ダイアログ ボックスを開きます。これは、アプリケーションと共にインストールする .NET Framework などの必須のコンポーネントを指定するために使用します。
 
@@ -57,7 +57,7 @@ WPF Web ブラウザー アプリなどのようなアプリケーションは�
 
 [アプリケーションの更新] ダイアログ ボックスを開きます。これは、アプリケーションの更新の動作の指定に使用します。 **[アプリケーションはオンラインでのみ利用できる]** が選択されている場合は、使用できません。
 
- **オプション**
+ **[オプション]**
 
 [発行オプション] ダイアログ ボックスを開きます。これは、その他の高度な発行のオプションを指定するために使用します。
 
@@ -79,7 +79,7 @@ ClickOnce を使用してアプリケーションの複数のバージョンを�
 
 現在の設定を使用して、アプリケーションを発行します。 **[発行ウィザード]** の **[完了]** ボタンと同じです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ClickOnce アプリケーションの発行](../../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
@@ -87,13 +87,13 @@ ClickOnce を使用してアプリケーションの複数のバージョンを�
 - [方法: エンド ユーザーがインストールを開始する場所を指定する](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
 - [方法: テクニカル サポートのリンクを指定する](../../deployment/how-to-specify-a-link-for-technical-support.md)
 - [方法: ClickOnce のオフラインまたはオンラインのインストール モードを指定する](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [方法: CD インストールの自動開始を有効にする](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [方法 : CD インストールの自動開始を有効にする](../../deployment/how-to-enable-autostart-for-cd-installations.md)
 - [方法: ClickOnce の発行バージョンを設定する](../../deployment/how-to-set-the-clickonce-publish-version.md)
 - [方法: ClickOnce の発行バージョンを自動的にインクリメントする](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [方法: ClickOnce で発行されるファイルを指定する](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
 - [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [方法: ClickOnce アプリケーションの更新プログラムを管理する](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [方法 : ClickOnce アプリケーションの更新プログラムを管理する](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
 - [方法: ClickOnce アプリケーションの発行言語を変更する](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [方法: ClickOnce アプリケーションのスタート メニューの名前を指定する](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [方法 : ClickOnce アプリケーションのスタート メニューの名前を指定する](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
 - [方法: ClickOnce アプリケーションの発行ページを指定する](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
 - [ClickOnce のセキュリティと配置](../../deployment/clickonce-security-and-deployment.md)

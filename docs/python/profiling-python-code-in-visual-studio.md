@@ -11,19 +11,19 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784284"
 ---
 # <a name="profile-python-code"></a>Python コードのプロファイリング
 
-CPython ベースのインタープリターを使っている場合、Python アプリケーションをプロファイリングできます  (この機能を使うことができる Visual Studio のバージョンについては、[機能一覧のプロファイリング](overview-of-python-tools-for-visual-studio.md#matrix-profiling)を参照してください)。
+CPython ベースのインタープリターを使っている場合、Python アプリケーションをプロファイリングできます (この機能を使うことができる Visual Studio のバージョンについては、[機能一覧のプロファイリング](overview-of-python-tools-for-visual-studio.md#matrix-profiling)を参照してください)。
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython ベースのインタープリターのプロファイリング
 
-**[分析]** > **[Launch Python Profiling]\(Python プロファイリングの開始\)** メニュー コマンドでプロファイリングを開始すると、構成ダイアログが開きます。
+**[分析]**  >  **[Launch Python Profiling]\(Python プロファイリングの開始\)** メニュー コマンドでプロファイリングを開始すると、構成ダイアログが開きます。
 
 ![プロファイリング構成ダイアログ](media/profiling-start.png)
 

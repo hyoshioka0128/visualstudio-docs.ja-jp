@@ -1,41 +1,41 @@
 ---
-title: Getmethodproperty の実装 |Microsoft Docs
+title: プロパティを実装する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f802733f74677a0426a99fb662302d816ad34721
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 252d09eee9c69ca75cb46d28dde807f2c500737f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344293"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738513"
 ---
-# <a name="implement-getmethodproperty"></a>GetMethodProperty を実装します。
+# <a name="implement-getmethodproperty"></a>プロパティを実装します。
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
-Visual Studio はデバッグ エンジン (DE) を呼び出して[GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)、この[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)スタック フレーム上の現在のメソッドに関する情報を取得します。
+デバッグ エンジン (DE)[を](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)呼び出します。 [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)
 
-この実装の`IDebugExpressionEvaluator::GetMethodProperty`は、次のタスクを実行します。
+この実装は`IDebugExpressionEvaluator::GetMethodProperty`、次のタスクを実行します。
 
-1. 呼び出し[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)で渡し、 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。 シンボル プロバイダー (SP) を返します、 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)を指定したアドレスを含むメソッドを表します。
+1. を[呼び](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)出し、[オブジェクト](../../extensibility/debugger/reference/idebugaddress.md)を渡します。 シンボル プロバイダー (SP) は、指定されたアドレスを含むメソッドを表す[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)を返します。
 
-2. 取得、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)から、`IDebugContainerField`します。
+2. から[フィールドを](../../extensibility/debugger/reference/idebugmethodfield.md)取得します`IDebugContainerField`。
 
-3. クラスをインスタンス化します (と呼ばれる`CFieldProperty`この例では) を実装する、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスし、が含まれています、 `IDebugMethodField` SP から返されたオブジェクト
+3. [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス`CFieldProperty`を実装し、SP から返される`IDebugMethodField`オブジェクトを含むクラス (この例で呼び出されます) をインスタンス化します。
 
-4. 返します、`IDebugProperty2`からインターフェイス、`CFieldProperty`オブジェクト。
+4. オブジェクトから`IDebugProperty2`インターフェイスを`CFieldProperty`返します。
 
 ## <a name="managed-code"></a>マネージド コード
-この例の実装を示しています。`IDebugExpressionEvaluator::GetMethodProperty`マネージ コードでします。
+この例では、マネージ`IDebugExpressionEvaluator::GetMethodProperty`コードの実装を示します。
 
 ```csharp
 namespace EEMC
@@ -67,7 +67,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>アンマネージ コード
-この例の実装を示しています。`IDebugExpressionEvaluator::GetMethodProperty`アンマネージ コードにします。
+この例では、アンマネージ`IDebugExpressionEvaluator::GetMethodProperty`コードの実装を示します。
 
 ```
 [CPP]
@@ -125,4 +125,4 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 ```
 
 ## <a name="see-also"></a>関連項目
-- [ローカル変数のサンプルの実装](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [ローカルのサンプル実装](../../extensibility/debugger/sample-implementation-of-locals.md)

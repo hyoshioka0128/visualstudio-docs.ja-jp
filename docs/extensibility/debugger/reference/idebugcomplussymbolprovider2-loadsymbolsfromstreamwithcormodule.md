@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa1d03b2f91cea03403f4893e61ec15bf5b82952
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334653"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733391"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-指定されたデータ ストリームからデバッグ シンボルの読み込み、 **ICorDebugModule**オブジェクト。
+指定されたデータ ストリームからデバッグ シンボルを読み込む、 **ICorDebugModule**オブジェクトです。
 
 ## <a name="syntax"></a>構文
 
@@ -53,25 +53,25 @@ int LoadSymbolsFromStreamWithCorModule(
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールを表す一意の識別子です。
 
 `baseAddress`\
-[in]基本のメモリ アドレス。
+[in]ベース メモリ アドレス。
 
 `pUnkMetadataImport`\
-[in]シンボルのメタデータを含むオブジェクト。
+[in]シンボル メタデータを含むオブジェクト。
 
 `pUnkCorDebugModule`\
-[in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
+[in]インターフェイスを実装する[オブジェクト](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
 `pStream`\
-[in]読み込みにデバッグ シンボルが含まれるデータ ストリーム。
+[in]読み込むデバッグ シンボルを含むデータ ストリーム。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(

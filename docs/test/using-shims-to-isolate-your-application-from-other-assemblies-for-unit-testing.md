@@ -9,10 +9,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585536"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim を使用して単体テストのためにアプリを分離する
@@ -31,7 +31,7 @@ ms.locfileid: "75585536"
 > [!NOTE]
 > .NET Standard プロジェクトはサポートされていません。
 
-## <a name="example-the-y2k-bug"></a>例:Y2K バグ
+## <a name="example-the-y2k-bug"></a>例: Y2K バグ
 
 2000 年 1 月 1 日に例外をスローするメソッドについて考えてみましょう。
 
@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 }
 ```
 
-各 shim コンテキストを適切に破棄することが重要です。 原則としては、登録した shim を適切に消去するために、`using` ステートメント内で `ShimsContext.Create` を呼び出します。 たとえば、`DateTime.Now` メソッドを常に 2000 年 1 月 1 日を返すデリゲートに置き換えるテスト メソッドのために shim を登録する場合があります。 テスト メソッド内で登録済み shim を消去し忘れた場合、テスト実行の残りの部分では、`DateTime.Now` 値として常に 2000 年 1 月 1 日が返されます。 これは、予想外で、混乱を招く可能性があります。
+各 shim コンテキストを適切に破棄することが重要です。 原則としては、登録した shim を適切に消去するために、`ShimsContext.Create` ステートメント内で `using` を呼び出します。 たとえば、`DateTime.Now` メソッドを常に 2000 年 1 月 1 日を返すデリゲートに置き換えるテスト メソッドのために shim を登録する場合があります。 テスト メソッド内で登録済み shim を消去し忘れた場合、テスト実行の残りの部分では、`DateTime.Now` 値として常に 2000 年 1 月 1 日が返されます。 これは、予想外で、混乱を招く可能性があります。
 
 ### <a name="write-a-test-with-shims"></a>shim を使用してテストを作成する
 
@@ -390,7 +390,7 @@ Fakes コード ジェネレーターは、シグネチャに参照可能な型�
 
 shim が適用された型がインターフェイスを実装する場合、コード ジェネレーターは、そのインターフェイスのすべてのメンバーを一度にバインドできるメソッドを生成します。
 
-たとえば、`IEnumerable<int>` を実装する `MyClass` クラスがあるとします。
+たとえば、`MyClass` を実装する `IEnumerable<int>` クラスがあるとします。
 
 ```csharp
 public class MyClass : IEnumerable<int> {
@@ -422,7 +422,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 ## <a name="change-the-default-behavior"></a>既定の動作の変更
 
-生成された各 shim 型は、`ShimBase<T>.InstanceBehavior` プロパティを通じて、`IShimBehavior` インターフェイスのインスタンスを保持します。 明示的に shim が適用されていないインスタンス メンバーをクライアントが呼び出すたびに、この動作が使用されます。
+生成された各 shim 型は、`IShimBehavior` プロパティを通じて、`ShimBase<T>.InstanceBehavior` インターフェイスのインスタンスを保持します。 明示的に shim が適用されていないインスタンス メンバーをクライアントが呼び出すたびに、この動作が使用されます。
 
 この動作が明示的に設定されていない場合は、静的な `ShimsBehaviors.Current` プロパティによって返されるインスタンスが使用されます。 既定では、このプロパティは `NotImplementedException` 例外をスローする動作を返します。
 
@@ -435,7 +435,7 @@ var shim = new ShimMyClass();
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
 ```
 
-静的 `ShimsBehaviors.Current` プロパティを設定することによって `InstanceBehavior` プロパティが明示的に設定されていない、shim が適用されているすべてのインスタンスの動作を、グローバルに変更することもできます。
+静的 `InstanceBehavior` プロパティを設定することによって `ShimsBehaviors.Current` プロパティが明示的に設定されていない、shim が適用されているすべてのインスタンスの動作を、グローバルに変更することもできます。
 
 ```csharp
 // unit test code
@@ -521,8 +521,8 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 shim は、.NET 基本クラス ライブラリ **mscorlib** および **System** のすべての型で使用できるわけではありません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost のブログ:Visual Studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [1 時間 16 分の動画:Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)
+- [Peter Provost のブログ: Visual Studio 2012 の shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [1 時間 16 分の動画: Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

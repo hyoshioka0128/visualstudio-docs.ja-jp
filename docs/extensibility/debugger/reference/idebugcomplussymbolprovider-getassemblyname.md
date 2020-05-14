@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAssemblyName |Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbb3ca2fa998cfdb362c985edb7406ca623e2f89
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad546e3cde5106a966ce4533ee059f0ba1e2565d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336977"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733980"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-そのモジュールとアプリケーション ドメインが指定されたアセンブリの名前を取得します。
+モジュールとアプリケーション ドメインを指定したアセンブリの名前を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,16 +47,16 @@ int GetAssemblyName(
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールの一意の識別子です。
 
 `pbstrName`\
-[out]アセンブリの名前を返します。
+[アウト]アセンブリの名前を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAssemblyName(

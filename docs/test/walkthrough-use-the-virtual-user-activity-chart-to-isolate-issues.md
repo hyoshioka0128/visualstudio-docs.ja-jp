@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169379"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定
 
@@ -24,7 +24,7 @@ ms.locfileid: "77091848"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 - Visual Studio Enterprise
 
@@ -38,7 +38,7 @@ ms.locfileid: "77091848"
 
 1. Visual Studio を開きます。
 
-2. *LoadTest1.loadtest* を含む **ColorWebApp** ソリューションを開きます。 これは、このトピックの最初の必要条件セクションにリストされている 3 つのチュートリアルの手順を実行して作成したロード テストです。
+2. **LoadTest1.loadtest** を含む *ColorWebApp* ソリューションを開きます。 これは、このトピックの最初の必要条件セクションにリストされている 3 つのチュートリアルの手順を実行して作成したロード テストです。
 
      このチュートリアルの残りの手順は、ColorWebApp という名前の Web アプリケーション、*ColorWebAppTest.webtest* という名前の Web パフォーマンス テスト、および *LoadTest1.loadtest* という名前のロード テストを前提としています。
 
@@ -85,13 +85,13 @@ ms.locfileid: "77091848"
 
     - **テスト**
 
-    - **Outcome**
+    - **結果**
 
     - **Network**
 
-    - **開始時刻**
+    - **Start Time**
 
-    - **期間**
+    - **Duration**
 
     - **エージェント**
 
@@ -103,7 +103,7 @@ ms.locfileid: "77091848"
 
      さまざまな設定を **[詳細の凡例]** パネルと **[フィルター結果]** パネルの両方で使用して、ロード テストにおけるパフォーマンスの問題やエラーを特定できます。 これらの設定および **[期間にズーム]** ツールを使用して、**仮想ユーザー アクティビティ チャート**で仮想ユーザー データがどのように表示されるかを確認してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [詳細ビューでの仮想ユーザー アクティビティの分析](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)

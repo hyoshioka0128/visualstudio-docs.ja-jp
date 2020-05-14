@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552789"
 ---
 # <a name="current-tab"></a>現在のタブ
@@ -24,5 +24,5 @@ ms.locfileid: "62552789"
 
  **現在**タブには、DirectX アクティビティ セグメント、マーカー、I/O アクセスに関する情報も表示されます。  DirectX アクティビティの場合、DMA パケットがハードウェア キューにより処理される方法に関する情報が表示されます。  マーカーの場合、説明とマーカーの種類に関する情報が表示されます。  I/O アクセスの場合、ファイルと読み込まれた (または書き込まれた) バイトの数に関する情報が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

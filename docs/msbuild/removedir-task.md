@@ -18,28 +18,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0827e05b2c295df2922c5f58d6a47d52e9a50e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595996"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632798"
 ---
 # <a name="removedir-task"></a>RemoveDir タスク
+
 指定されたディレクトリと、そのディレクトリに含まれるファイルとサブディレクトリをすべて削除します。
 
 ## <a name="parameters"></a>パラメーター
+
  `RemoveDir` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |`Directories`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 削除するディレクトリを指定します。|
 |`RemovedDirectories`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 正常に削除されたディレクトリが含まれます。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
  次の例では、`OutputDirectory` プロパティと `DebugDirectory` プロパティによって指定されるディレクトリが削除されます。 これらはプロジェクト ディレクトリの相対パスとして扱われます。
 
 ```xml
@@ -58,6 +62,7 @@ ms.locfileid: "75595996"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

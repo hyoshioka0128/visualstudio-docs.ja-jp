@@ -2,19 +2,19 @@
 title: Visual C++ のコード スニペット
 ms.date: 11/04/2016
 ms.topic: reference
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461620"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77277836"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ のコード スニペット
 
@@ -30,7 +30,7 @@ Visual Studio でコード スニペットを使用して、よく使用され�
 
 - **[編集 / IntelliSense]** メニューの **[スニペットの挿入]** を選択する
 
-- 次のホット キーを使用します。**Ctrl**+**K**+**X**
+- ホット キー **Ctrl**+**K**+**X** を使用する
 
 **#if** で始まる選択肢の一覧が表示されます。 **#if** を選択すると、ファイルに追加された次のコードが表示されます。
 
@@ -50,9 +50,9 @@ Visual Studio でコード スニペットを使用して、よく使用され�
 
 - **[編集]**  >  **[IntelliSense]** メニューの **[ブロックの挿入]** を選択する
 
-- キーボードで次のキーを押します。**Ctrl**+**K**+**S**
+- キーボードの **Ctrl**+**K**+**S** キーを押す
 
-**#if** を選択します。 次のように表示されます。
+**#if** を選択します。 次のような結果が表示されます。
 
 ```cpp
 #if 0
@@ -113,7 +113,7 @@ private:
 
 ## <a name="for-vs-forr-vs-rfor"></a>for と forr と rfor
 
-さまざまな種類の `for` ループを提供する 3 つの **for** スニペットがあります。
+さまざまな種類の **ループを提供する 3 つの**for`for` スニペットがあります。
 
 **rfor** スニペットは、[範囲に基づく](/cpp/cpp/range-based-for-statement-cpp) for ループ (リンク) を提供します。 インデックスに基づく `for` ループよりも、このコンストラクトが適しています。
 
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-**for** スニペットは、条件がオブジェクトの長さ (`size_t`) に基づく `for` ループを提供します。
+**for** スニペットは、条件がオブジェクトの長さ (`for`) に基づく `size_t` ループを提供します。
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -170,6 +170,6 @@ class SomeClass {
 {
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード スニペット](../ide/code-snippets.md)

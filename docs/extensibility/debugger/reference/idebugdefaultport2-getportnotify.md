@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetPortNotify |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetPortNotify
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd85f76ab0c882656ca79fe02296f30bdb83f523
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 670dd128e6962c1e1d12f81eea03f9759fa56621
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351769"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732407"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
-このメソッドは、取得、 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)このポートのインターフェイス。
+このメソッドは、このポートの[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)インターフェイスを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetPortNotify(
 
 ## <a name="parameters"></a>パラメーター
 `ppPortNotify`\
-[out][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)オブジェクト。
+[アウト]オブジェクト[。](../../../extensibility/debugger/reference/idebugportnotify2.md)
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 通常、`QueryInterface`メソッドが実装するオブジェクト、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)を取得するインターフェイス、 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)インターフェイス。 ただし、別のオブジェクトに必要なインターフェイスが実装される場合があります。 このメソッドは、このような状況を非表示にし、返します、`IDebugPortNotify2`最も適切なオブジェクトからのインターフェイス。
+ 通常、`QueryInterface`メソッドは[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイスを取得するインターフェイスを実装するオブジェクトで呼び出[されます](../../../extensibility/debugger/reference/idebugportnotify2.md)。 ただし、目的のインターフェイスが別のオブジェクトに実装される場合もあります。 このメソッドは、このような状況を隠し`IDebugPortNotify2`、最も適切なオブジェクトからインターフェイスを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

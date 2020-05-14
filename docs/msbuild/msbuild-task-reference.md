@@ -15,37 +15,37 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593877"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865324"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild タスク リファレンス
 
-タスクでは、ビルド プロセスの間に実行するコードを指定します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれるタスクの一覧を次に示します。 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] をインストールすると、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトを構築するために次の追加タスクを使用できるようになります。 詳細については、[C++ のタスク](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)に関する記事を参照してください。
+タスクでは、ビルド プロセスの間に実行するコードを指定します。 MSBuild に含まれているタスクの一覧を次に示します。 C++ ワークロードをインストールすると、C++ プロジェクトのビルドに使用される追加タスクを使用できるようになります。 詳細については、[C++ のタスク](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)に関する記事を参照してください。
 
 このセクションの各トピックで説明するパラメーターのほかに、各タスクには以下のパラメーターもあります。
 
 | パラメーター | 説明 |
 |-------------------| - |
-| `Condition` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンが決定するために使用する `Boolean` 式です。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] でサポートされる条件の詳細については、「[MSBuild Conditions](../msbuild/msbuild-conditions.md)」(MSBuild の条件) を参照してください。 |
+| `Condition` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを MSBuild エンジンが決定するために使用する `Boolean` 式です。 MSBuild でサポートされている条件について詳しくは、[条件](../msbuild/msbuild-conditions.md)に関する記事をご覧ください。 |
 | `ContinueOnError` | 省略可能なパラメーターです。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、[タスクで発生したエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)」を参照してください。 |
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 - [Task 基本クラス](../msbuild/task-base-class.md)
 
- <xref:Microsoft.Build.Utilities.Task> クラスから派生したタスクにいくつかのパラメーターを追加します。
+ <xref:Microsoft.Build.Utilities.Task> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
 - [TaskExtension 基本クラス](../msbuild/taskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.TaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。
+ <xref:Microsoft.Build.Tasks.TaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
 - [ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。
+ <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
 - [AL (アセンブリ リンカー) タスク](../msbuild/al-assembly-linker-task.md)
 
@@ -85,7 +85,7 @@ ms.locfileid: "75593877"
 
 - [CreateCSharpManifestResourceName タスク](../msbuild/createcsharpmanifestresourcename-task.md)
 
- 指定した *.resx* ファイル名または他のリソースから [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] スタイルのマニフェスト名を作成します。
+ 指定した *.resx* ファイル名または他のリソースから、C# スタイルのマニフェスト名を作成します。
 
 - [CreateItem タスク](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ ms.locfileid: "75593877"
 
 - [CreateVisualBasicManifestResourceName タスク](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- 指定した *.resx* ファイル名または他のリソースから [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] スタイルのマニフェスト名を作成します。
+ 指定した *.resx* ファイル名または他のリソースから、Visual Basic スタイルのマニフェスト名を作成します。
 
 - [Csc タスク](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ ms.locfileid: "75593877"
 
 - [GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェストまたはネイティブ マニフェストを生成します。
+ ClickOnce アプリケーション マニフェストまたはネイティブ マニフェストを生成します。
 
 - [GenerateBootstrapper タスク](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ ms.locfileid: "75593877"
 
 - [GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置マニフェストを生成します。
+ ClickOnce 配置マニフェストを生成します。
 
 - [GenerateResource タスク](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ ms.locfileid: "75593877"
 
 - [GetFrameworkSdkPath タスク](../msbuild/getframeworksdkpath-task.md)
 
- [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] へのパスを取得します。
+ Windows ソフトウェア開発キット (SDK) へのパスを取得します。
 
 - [GetReferenceAssemblyPaths タスク](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ ms.locfileid: "75593877"
 
 - [MSBuild タスク](../msbuild/msbuild-task.md)
 
- 別の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトから [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトをビルドします。
+ 別の MSBuild プロジェクトから MSBuild プロジェクトをビルドします。
 
 - [ReadLinesFromFile タスク](../msbuild/readlinesfromfile-task.md)
 

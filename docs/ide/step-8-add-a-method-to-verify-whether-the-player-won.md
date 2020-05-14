@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c451b2da08fdb0b38487438a47c6285b0380627
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647452"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579766"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加
 楽しいゲームが作成されましたが、完成させるには追加の項目が必要です。 ゲームは、プレーヤーが勝利した時点で終了する必要があるため、プレーヤーが勝利したかどうかを確認する `CheckForWinner()` メソッドを追加する必要があります。
@@ -43,7 +43,7 @@ ms.locfileid: "72647452"
 3. プログラムを保存し、実行します。 ゲームを実行し、すべてのアイコンを一致させます。 勝利すると、プログラムでは、次の図に示すように **MessageBox** が表示され、その後にボックスが閉じられます。
 
      ![MessageBox が表示された絵合わせゲーム](../ide/media/express_tut4step8.png)<br/>
-***MessageBox*** *が表示された****絵合わせゲーム***
+***MessageBox*** *が表示された* ***絵合わせゲーム***
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

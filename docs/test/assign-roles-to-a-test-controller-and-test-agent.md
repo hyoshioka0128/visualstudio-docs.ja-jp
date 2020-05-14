@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591191"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>ロールをテスト コントローラーとテスト エージェントに割り当てる
@@ -25,7 +25,7 @@ ms.locfileid: "75591191"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 - テスト設定で実行する単体テストまたはコード化された UI テストを作成する必要があります。
 
@@ -43,7 +43,7 @@ ms.locfileid: "75591191"
 
 4. **[追加]** をクリックします。
 
-     **ソリューション エクスプローラー**の **[ソリューション項目]** フォルダーに、*TestSettingDistributedTestWalkthrough.testsettings* という新しいテスト ファイルが表示されます。
+     *ソリューション エクスプローラー*の **[ソリューション項目]** フォルダーに、**TestSettingDistributedTestWalkthrough.testsettings** という新しいテスト ファイルが表示されます。
 
      **[テストの設定]** ダイアログ ボックスが表示されます。 **[全般]** ページが選択されています。
 
@@ -111,6 +111,6 @@ ms.locfileid: "75591191"
 
      テスト コントローラーは、単体テストおよびコード化された UI テストを処理するとき、テストを 100 個単位のグループに分割し、テスト エージェント コンピューターに送信します。 たとえば、250 個の単体テストと 3 つのテスト エージェントがある場合、最初の 100 個の単体テストは agent1 に送信され、次の 100 個の単体テストは agent2 に送信され、残りの 50 個の単体テストは agent3 に送信されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)

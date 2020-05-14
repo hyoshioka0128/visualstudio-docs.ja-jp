@@ -1,22 +1,23 @@
 ---
 title: usings の生成
-ms.date: 02/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610886"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094315"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Visual Studio で不足している using を追加する
 
@@ -24,9 +25,11 @@ ms.locfileid: "72610886"
 
 - C#
 
+- Visual Basic
+
 **概要:** コピーして貼り付けたコードに対して、必要なインポートまたは [using ディレクティブ](/dotnet/csharp/language-reference/keywords/using-directive)をすぐに追加できます。
 
-**条件:** プロジェクトや他のソース内のさまざまな場所からコードをコピーして、それを新しいコードに貼り付けることは、一般的な方法です。 このクイック アクションによって、コピーして貼り付けたコードで不足しているインポート ディレクティブが検索され、それらを追加するように求められます。
+**条件:** プロジェクトや他のソース内のさまざまな場所からコードをコピーして、それを新しいコードに貼り付けることは、一般的な方法です。 このクイック アクションによって、コピーして貼り付けたコードで不足しているインポート ディレクティブが検索され、それらを追加するように求められます。 このコード修正では、プロジェクトからプロジェクトへの参照を追加することもできます。
 
 **理由:** クイック アクションにより必要なインポートが自動的に追加されるため、コードに必要な `using` ディレクティブを手動でコピーする必要はありません。
 

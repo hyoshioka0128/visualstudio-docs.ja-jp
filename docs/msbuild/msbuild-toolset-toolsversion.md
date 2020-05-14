@@ -13,18 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af4816440c2eb285a0f30db50e18108ce79265f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593808"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633123"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
 
 MSBuild は、タスク、ターゲット、およびツールのツールセットを使用して、アプリケーションをビルドします。 通常、MSBuild ツールセットには、*microsoft.common.tasks* ファイル、*microsoft.common.targets* ファイル、および *csc.exe* や *vbc.exe* などのコンパイラが含まれています。 ほとんどのツールセットは、複数のバージョンの .NET Framework や複数のシステム プラットフォームを対象としてアプリケーションをコンパイルするために使用できます。 ただし、MSBuild 2.0 ツールセットは .NET Framework 2.0 のみを対象として使用できます。
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 属性
+
 ::: moniker range=">=vs-2019"
  プロジェクト ファイルにある [Project](../msbuild/project-element-msbuild.md) 要素の `ToolsVersion` 属性でツールセットを指定します。 次の例では、MSBuild "Current" ツールセットを使用してプロジェクトをビルドすることを指定します。
 

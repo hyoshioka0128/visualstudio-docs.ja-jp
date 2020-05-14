@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: d35bfd45e862912ff78ae600eed01ce8dc002493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62998858"
 ---
 # <a name="package-manager"></a>パッケージ マネージャー
 
-R Tools for Visual Studio (RTVS) パッケージ マネージャーは R パッケージを管理するための UI です。 **[R Tools]** > **[Windows]** > **[パッケージ]** の順に選択するか、**Ctrl** + **7** キーを押すと開きます。
+R Tools for Visual Studio (RTVS) パッケージ マネージャーは R パッケージを管理するための UI です。 **[R Tools]**  >  **[Windows]**  >  **[パッケージ]** の順に選択するか、**Ctrl** + **7** キーを押すと開きます。
 
 パッケージ マネージャーには、3 つのタブがあります。 それぞれのタブの左側に関連パッケージの一覧が、右側に選択したパッケージの詳細が表示されます。詳細として、パッケージのバージョン、説明、ライセンス、インストール場所、他の関連情報のリンクなどがあります。 右上の検索ボックスで一覧を絞り込めます。
 

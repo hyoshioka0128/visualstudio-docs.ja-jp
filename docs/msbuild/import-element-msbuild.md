@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573994"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094487"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
+
 1 つのプロジェクト ファイルの内容を別のプロジェクト ファイルにインポートします。
 
 \<Project> \<Import>
@@ -38,6 +39,7 @@ ms.locfileid: "75573994"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -49,29 +51,32 @@ ms.locfileid: "75573994"
 |`Sdk`| 省略可能な属性です。<br /><br /> プロジェクト SDK を参照します。|
 
 ### <a name="child-elements"></a>子要素
+
  None
 
 ### <a name="parent-elements"></a>親要素
 
 | 要素 | 説明 |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 | [ImportGroup](../msbuild/importgroup-element.md) | オプションの条件下でグループ化された `Import` 要素のコレクションが格納されます。 |
 
 ## <a name="remarks"></a>Remarks
+
  `Import` 要素を使用すると、複数のプロジェクト ファイルに共通するコードを再利用できます。 これにより、共有されたコードに対する更新が、そのコードをインポートしたすべてのプロジェクトに反映されるため、コードの保守が容易になります。
 
- 規則により、インポートされた共有プロジェクト ファイルは *.targets* ファイルとして保存されますが、これらは標準の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルです。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、別のファイル名拡張子を持つプロジェクトをインポートすることもできますが、一貫性を持たせるために *.targets* 拡張子を使用することをお勧めします。
+ 規則により、インポートされた共有プロジェクト ファイルは *.targets* ファイルとして保存されますが、これらは標準の MSBuild プロジェクト ファイルです。 MSBuild では、別のファイル名拡張子を持つプロジェクトをインポートすることもできますが、一貫性のために *.targets* 拡張子を使用することをお勧めします。
 
- インポートされるプロジェクト内の相対パスは、インポートする側のプロジェクトのディレクトリからの相対パスであると解釈されます。 したがって、あるプロジェクト ファイルを別々の場所に存在する複数のプロジェクト ファイルにインポートする場合、インポートされるプロジェクト ファイル内の相対パスは、インポートされるプロジェクトごとに異なって解釈されます。
+ インポートされるプロジェクト内の相対パスは、インポートする側のプロジェクトのディレクトリからの相対パスであると解釈されます (いくつかの例外についてはこの段落の後半で説明します)。 したがって、あるプロジェクト ファイルを別々の場所に存在する複数のプロジェクト ファイルにインポートする場合、インポートされるプロジェクト ファイル内の相対パスは、インポートされるプロジェクトごとに異なって解釈されます。 ただし、例外が 2 つあります。 1 つは、`Import` 要素では、パスは常に、`Import` 要素が含まれるプロジェクトの相対パスとして解釈されることです。 もう 1 つの例外は、`UsingTask` では常に、`AssemblyFile` 属性の相対パスは `UsingTask` 要素が含まれるファイルに相対であるとして解釈されることです。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 、 `MSBuildProjectDirectory` など、 `MSBuildProjectFile`で予約されている全プロパティは、プロジェクト ファイルに関連し、インポートされるプロジェクトで参照されますが、これらにはインポートするプロジェクト ファイルに基づいた値が代入されます。
+ MSBuild で予約されている、プロジェクト ファイル関連の全プロパティ (例: `MSBuildProjectDirectory`、`MSBuildProjectFile`) は、インポートされたプロジェクトで参照される場合、インポートするプロジェクト ファイルに基づいて値が割り当てられます。
 
- インポートされるプロジェクトに `DefaultTargets` 属性がない場合は、インポートされる各プロジェクトがインポート順にチェックされ、最初に検出された `DefaultTargets` 属性の値が使用されます。 たとえば、ProjectA で ProjectB および ProjectC を順番にインポートし、ProjectB で ProjectD をインポートする場合、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、ProjectA、ProjectB、ProjectD、ProjectC の順に `DefaultTargets` を検索します。
+ インポートされるプロジェクトに `DefaultTargets` 属性がない場合は、インポートされる各プロジェクトがインポート順にチェックされ、最初に検出された `DefaultTargets` 属性の値が使用されます。 たとえば、ProjectA で ProjectB と ProjectC を (この順序で) インポートし、ProjectB で ProjectD をインポートする場合、MSBuild では、ProjectA、ProjectB、ProjectD、ProjectC の順序で指定された `DefaultTargets` が検索されます。
 
- インポートされるプロジェクトのスキーマは、標準プロジェクトのスキーマと同じです。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] で、インポートされるプロジェクトをビルドできる場合もありますが、インポートされるプロジェクトには、設定するプロパティやターゲットを実行する順序に関する情報が通常は含まれていないため、ビルドできる可能性は低くなります。 インポートされるプロジェクトのこれらの情報は、インポートするプロジェクトに依存します。
+ インポートされるプロジェクトのスキーマは、標準プロジェクトのスキーマと同じです。 MSBuild では、インポートされたプロジェクトをビルドできる場合もありますが、インポートされたプロジェクトには、設定するプロパティやターゲットを実行する順序に関する情報が通常は含まれていないため、ビルドできる可能性は低くなります。 インポートされるプロジェクトのこれらの情報は、インポートするプロジェクトに依存します。
 
 ## <a name="wildcards"></a>ワイルドカード
+
  .NET Framework 4 では、MSBuild で、Project 属性でのワイルドカードが許可されます。 ワイルドカードがある場合、見つかったすべての一致が並べ替えられ (再現可能性の確保のため)、順序が明示的に設定されていたかのように、その順序でインポートされます。
 
  これは、機能拡張ポイントを提供して、自身がファイル名をインポート対象のファイルに明示的に追加しなくても、他のユーザーがファイルをインポートできるようにする場合に便利です。 このために、*Microsoft.Common.Targets* ではファイルの先頭に次の行が含まれています。
@@ -81,6 +86,7 @@ ms.locfileid: "75573994"
 ```
 
 ## <a name="example"></a>例
+
  次の例は、いくつかの項目やプロパティがあり、一般的なプロジェクト ファイルをインポートするプロジェクトを示しています。
 
 ```xml
@@ -107,5 +113,6 @@ ms.locfileid: "75573994"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

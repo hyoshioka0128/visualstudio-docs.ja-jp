@@ -7,10 +7,10 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984975"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac ツアー
@@ -52,7 +52,7 @@ Visual Studio for Mac を起動すると、*ようこそ画面*が表示され�
 - **最近のソリューション** - 最近開いたソリューションにすばやくアクセスできます。また、プロジェクトを開いたり作成したりできる便利なボタンも表示されます。
 - **開発者向け情報** - Microsoft 開発者向けの最新情報を提供するニュース フィードです。
 
-## <a name="solutions-and-projects"></a>ソリューションおよびプロジェクト
+## <a name="solutions-and-projects"></a>ソリューションとプロジェクト
 
 次の図は、アプリケーションが読み込まれた Visual Studio for Mac を示しています。
 
@@ -96,7 +96,7 @@ NuGet は、.NET 開発用の最も人気のあるパッケージ マネージ�
 
 ## <a name="refactoring"></a>リファクタリング
 
-Visual Studio for Mac には、コードをリファクターする 2 つの便利な方法があります。コンテキスト アクションとソース分析です。 詳細については、「[リファクタリング](/visualstudio/mac/refactoring)」を参照してください。
+Visual Studio for Mac には、コンテキスト アクションとソース分析という、コードをリファクターする 2 つの便利な方法があります。 詳細については、「[リファクタリング](/visualstudio/mac/refactoring)」を参照してください。
 
 ## <a name="debugging"></a>デバッグ
 
@@ -122,6 +122,6 @@ Visual Studio でバージョン管理を使用する方法については、「
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio IDE (Windows)](/visualstudio/ide/visual-studio-ide)

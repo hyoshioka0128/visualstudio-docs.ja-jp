@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS |Microsoft Docs
+title: PROVIDER_FIELDS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329368"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713788"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
-プログラムのプロバイダーに関連付けられたプロパティを指定します。
+# <a name="provider_fields"></a>PROVIDER_FIELDS
+プログラム プロバイダーに関連付けられているプロパティを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,22 +44,22 @@ public enum enum_PROVIDER_FIELDS {
 
 ## <a name="fields"></a>フィールド
  `PFIELD_PROGRAM_NODES`\
- `ProgramNodes`フィールドは有効です。
+ フィールド`ProgramNodes`は有効です。
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
- `fIsDebuggerPresent`フィールドは有効です。
+ フィールド`fIsDebuggerPresent`は有効です。
 
 ## <a name="remarks"></a>Remarks
- これらの値が返されます、`Fields`のメンバー、 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)を構造体のどのフィールドが入力された明示的に示すために構造体。
+ これらの値は、構造体の`Fields`中で明示的に入力されたフィールドを示すために[、PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造体のメンバーに返されます。
 
- これらの値は、演算と組み合わせることができます`OR`します。
+ これらの値はビット単位`OR`で組み合わせることができます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

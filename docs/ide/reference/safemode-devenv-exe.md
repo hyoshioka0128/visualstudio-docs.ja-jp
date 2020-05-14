@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593591"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
@@ -29,7 +29,7 @@ Visual Studio をセーフ モードで起動し、既定の環境とサービ�
 devenv /SafeMode
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 このスイッチでは、Visual Studio が起動したときに、すべてのサード パーティ VSPackage を読み込まないようにするため、実行が安定したものになります。
 
@@ -41,6 +41,6 @@ devenv /SafeMode
 devenv /safemode
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

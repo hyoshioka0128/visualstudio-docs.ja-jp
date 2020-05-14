@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62974143"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 関数
@@ -36,7 +36,7 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="return-value"></a>戻り値
  マーカー系列がリリースされると S_OK を、エラーが発生した場合はエラー コードを返します。 SUCCEEDED/FAILED マクロを使用し、エラーの状態を確認します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkers.h*
 
 ## <a name="see-also"></a>関連項目

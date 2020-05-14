@@ -1,5 +1,5 @@
 ---
-title: DA0011:CompareTo の負荷が高くなっています | Microsoft Docs
+title: 'DA0011: CompareTo の負荷が高くなっています | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,20 +15,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779429"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011:CompareTo の負荷が高くなっています
+# <a name="da0011-expensive-compareto"></a>DA0011: CompareTo の負荷が高くなっています
 
 |||
 |-|-|
 |規則 ID|DA0011|
 |カテゴリ|.NET Framework の使用|
 |プロファイル方法|サンプリング<br /><br /> .NET メモリ|
-|メッセージ|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|
+|[メッセージ]|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|
 |規則の種類|警告|
 
 ## <a name="cause"></a>原因

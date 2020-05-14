@@ -10,15 +10,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b47010a68520379afd8e0d969fa99169cb1ff0b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588955"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してテスト ログにテストの失敗を記録するかどうかを指定する
 
-**新しいロード テスト ウィザード**でロード テストを作成した後で、**ロード テスト エディター**を使用して、ロード テストのプロパティをテストのニーズおよび目標に合わせて変更できます。 「[チュートリアル:ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)」を参照してください。 **[テストの失敗時にログを保存]** プロパティを変更することにより、ロード テストでテストが失敗した場合にログを保存するかどうかを指定できます。
+**新しいロード テスト ウィザード**でロード テストを作成した後で、**ロード テスト エディター**を使用して、ロード テストのプロパティをテストのニーズおよび目標に合わせて変更できます。 「[Walkthrough: Create and Run a Load Test that contains Unit Tests](../test/walkthrough-create-and-run-a-load-test.md)」(チュートリアル: ロード テストの作成と実行) を参照してください。 **[テストの失敗時にログを保存]** プロパティを変更することにより、ロード テストでテストが失敗した場合にログを保存するかどうかを指定できます。
 
 > [!NOTE]
 > 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
@@ -39,11 +39,11 @@ ms.locfileid: "75588955"
 
 4. **[テストの失敗時にログを保存]** プロパティで、 **[True]** または **[False]** を選択して、シナリオでテストが失敗した場合にテスト ログを保存するかどうかを指定します。
 
-     プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。
+     プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。
 
      ロード テスト アナライザーのテーブル ビューを使用すると、ログに保存したデータを表示できます。 詳細については、[テーブル ビューでのロード テスト結果とエラーの分析](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)に関するページを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
-- [チュートリアル: ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)
+- [チュートリアル: ロード テストの作成と実行](../test/walkthrough-create-and-run-a-load-test.md)

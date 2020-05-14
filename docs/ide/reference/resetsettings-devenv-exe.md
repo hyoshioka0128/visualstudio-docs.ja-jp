@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593864"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -55,7 +55,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Web 開発** | `Web` |
   | **Web 開発 (コードのみ)** | `WebCode` |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 *SettingsFile* が指定されていない場合、既存の設定を使用して IDE が開きます。
 
@@ -71,7 +71,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [環境設定](../environment-settings.md)
 - [Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)

@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597348"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>ロード テストを実行するためのテスト エージェントおよびテスト コントローラーの概要
@@ -41,17 +41,17 @@ Visual Studio では、物理または仮想マシンを使用して、アプリ
 
    **ローカル構成:**
 
-  - Machine1:Visual Studio、コントローラー エージェント
+  - Machine1: Visual Studio、コントローラー エージェント
 
     ![コントローラーおよびエージェントを使用したローカル コンピューター](./media/load-test-configa.png)
 
     **一般的なリモート構成:**
 
-  - Machine1 および 2:Visual Studio (複数のテスト担当者が同じコントローラーを使用可能)。
+  - Machine1 および Machine2: Visual Studio (複数のテスト担当者が同じコントローラーを使用可能)
 
-  - Machine3:コントローラー (エージェントもインストールされている場合あり)。
+  - Machine3: コントローラー (エージェントもインストールされている場合あり)
 
-  - Machine4-n:Machine3 のコントローラーに関連付けられているエージェント。
+  - Machine4-n: Machine3 のコントローラーに関連付けられているエージェント
 
     ![コントローラーおよびエージェントを使用したリモート コンピューター](./media/load-test-configb.png)
 
@@ -89,6 +89,6 @@ Visual Studio では、物理または仮想マシンを使用して、アプリ
 
 テスト コントローラーと 1 つ以上のエージェントをインストールした後、ロード テストのテスト設定で、テスト コントローラーによるリモート実行を利用するかどうかを指定できます。 また、テストの設定では、エージェントに関連付けられたロールで使用するデータ診断アダプターを指定できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 3378a45ebace942bb8696f2f67962365b5f57796
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778883"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して動的にコンパイルされた ASP.NET Web アプリケーションをインストルメント化し、メモリ データを収集する
@@ -40,7 +40,7 @@ ms.locfileid: "74778883"
 
      **VSPerfClrEnv /globaltracegc**
 
-     または
+     \- または -
 
      **VSPerfClrEnv /globaltracegclife**
 

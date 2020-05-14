@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "73189239"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio での R の使用
@@ -47,7 +47,7 @@ Visual Studio で R を使用するには、次の手順を実行します。
 
 |   |   |
 |---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを視聴する") | R Tools for Visual Studio (12 分 36 秒) の概要について[ビデオ (Youtube.com) を見てください](https://www.youtube.com/watch?v=dll3IS1bfWQ)。 [その他の R Tools ビデオ](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)も参照してください。 |
+| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | R Tools for Visual Studio (12 分 36 秒) の概要について[ビデオ (Youtube.com) を見てください](https://www.youtube.com/watch?v=dll3IS1bfWQ)。 [その他の R Tools ビデオ](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)も参照してください。 |
 
 ## <a name="send-us-your-feedback"></a>フィードバックをお寄せください。
 

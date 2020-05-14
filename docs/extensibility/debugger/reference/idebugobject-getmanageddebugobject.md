@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetManagedDebugObject |Microsoft Docs
+title: オブジェクトの取得マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98bf0054f02ff85f67f21cd817309bb569dfe678
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323771"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726687"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-デバッグ エンジンのアドレス空間には、管理対象のオブジェクトのコピーを作成します。
+デバッグ エンジンのアドレス空間にマネージ オブジェクトのコピーを作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>パラメーター
 `ppObject`\
-[out]返します、 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)新しく作成されたマネージ オブジェクトを表すオブジェクト。
+[アウト]新しく作成された[マネージ オブジェクト](../../../extensibility/debugger/reference/idebugmanagedobject.md)を表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。 E_FAIL が返された場合は、この[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)マネージ値クラスのインスタンスは表しません。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。 この[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)がマネージ値クラスのインスタンスを表していない場合は、E_FAILを返します。
 
 ## <a name="remarks"></a>Remarks
- これは、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトなどで、管理対象の値クラスのインスタンスを表す必要があります、`System.Decimal`インスタンス。 呼び出し元のオーバーヘッドがローカル コピーをすることで[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)がなくなります。
+ この[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトは、インスタンスなどのマネージ値クラスのインスタンス`System.Decimal`を表す必要があります。 ローカル コピーを作成することで[、Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)を呼び出すオーバーヘッドがなくなります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

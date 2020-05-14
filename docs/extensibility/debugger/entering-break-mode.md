@@ -1,31 +1,31 @@
 ---
-title: 中断モード |Microsoft Docs
+title: 中断モードに入る |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - break mode
 - debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a57ec499941e8e07d93d1917b9d12f5dfd7aca79
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341558"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738882"
 ---
-# <a name="enter-break-mode"></a>中断モードします。
-次の情報には、関数にステップ インするか、カーソルが含まれる、ソース コードの行に実行するか、またはブレークポイントを実行している後にブレークポイントが発生したときに発生するプロセスについて説明します。
+# <a name="enter-break-mode"></a>ブレーク モードに入る
+次の情報は、関数にステップ インした後、カーソルが含まれているソース コードの行に対して実行された後、またはブレークポイントに実行された後にブレークポイントが発生したときに発生するプロセスについて説明します。
 
-## <a name="break-mode-process"></a>中断モードの処理
+## <a name="break-mode-process"></a>中断モードプロセス
 
-1. デバッグ エンジン (DE) 送信[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)、 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)、または中断モードに入る IDE が発生するその他の停止イベントです。
+1. デバッグ エンジン (DE) は、IDE が中断モードに入る原因となる[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) [、IDebugExceptionEvent2、](../../extensibility/debugger/reference/idebugexceptionevent2.md)またはその他の停止イベントを送信します。
 
-2. SDM は、次のように、スレッドから呼び出し履歴情報を取得します。
+2. SDM は、次のようにスレッドからコール スタック情報を取得します。
 
     - [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
@@ -33,13 +33,13 @@ ms.locfileid: "66341558"
 
     - [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)
 
-    - [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)ソース コード情報を取得するには
+    - ソース コード情報を取得する[IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)
 
-    - [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)ファイル名を取得するには
+    - [ファイル名を取得する IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)
 
-    - [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)ステートメントの範囲を取得するには
+    - [ステートメント範囲を](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)取得します。
 
-    - [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)メモリ情報を取得するには
+    - メモリ情報を取得する[IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)
 
 ## <a name="see-also"></a>関連項目
-- [デバッガー イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
+- [デバッガ イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
