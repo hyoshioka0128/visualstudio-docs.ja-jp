@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604978"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917830"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: 対象のフレームワークから API のみを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「 [CA1903: ターゲットフレームワークから API のみを使用する](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [CA1903: ターゲットフレームワークから API のみを使用する](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)」を参照してください。
 
 |||
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|カテゴリ|Microsoft. 移植性|
+|[カテゴリ]|Microsoft. 移植性|
 |互換性に影響する変更点|中断-外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> 非中断-メソッドの本体で発生した場合。|
 
 ## <a name="cause"></a>原因
@@ -58,12 +58,12 @@ Visual Studio の最新のドキュメントについては、「 [CA1903: タ�
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  指定された Service Pack に意図的に依存していない場合は、この規則による警告を抑制しないでください。 このような状況では、この Service Pack インストールされていないシステムでは、アプリケーションの実行が失敗する可能性があります。 意図的な依存関係である場合は、警告を抑制するか、この規則を無効にします。
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
  次の例は、.NET 2.0 Service Pack 1 でのみ使用できる DateTimeOffset 型を使用するクラスを示しています。 この例では、プロジェクトプロパティの [ターゲットフレームワーク] ボックスの一覧で .NET Framework 2.0 が選択されている必要があります。
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework.cs#1)]
 
-## <a name="example"></a>例
+## <a name="example"></a>使用例
  次の例では、DateTimeOffset 型の使用法を DateTime 型に置き換えることによって、前述の違反を修正します。
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]

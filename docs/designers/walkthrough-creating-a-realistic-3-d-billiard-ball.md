@@ -3,23 +3,23 @@ title: 'チュートリアル: リアルな 3D のビリヤード ボールの�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634545"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589917"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>チュートリアル: リアルな 3D のビリヤード ボールを作成する
 
 このチュートリアルでは、Visual Studio でシェーダー デザイナーおよびイメージ エディターを使用して、リアルな 3D のビリヤード ボールを作成する方法について説明します。 ビリヤード ボールの 3D の外観は、適切なテクスチャのリソースと複数のシェーダー方法を組み合わせることによって実現します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルを実行するには、次のコンポーネントとスキルが必要です。
 
@@ -65,7 +65,7 @@ ms.locfileid: "72634545"
 
 ### <a name="to-create-a-basic-texture-shader"></a>基本的なテクスチャ シェーダーを作成するには
 
-1. 操作する DGSL シェーダーを作成します。 プロジェクトに DGSL シェーダーを追加する方法に関する詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「作業の開始」セクションを参照してください。
+1. 操作する DGSL シェーダーを作成します。 プロジェクトに DGSL シェーダーを追加する方法については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「作業の開始」を参照してください。
 
     既定では、シェーダー グラフは次のようになります。
 
@@ -77,7 +77,7 @@ ms.locfileid: "72634545"
 
 3. テクスチャのプロパティを構成して、前の手順で作成したテクスチャを適用します。 **[テクスチャ サンプル]** ノードの **[テクスチャ]** プロパティの値を **[Texture1]** に設定し、同じプロパティ ウィンドウで **[Texture1]** プロパティ グループの **[ファイル名]** プロパティを使用して、テクスチャ ファイルを指定します。
 
-   シェーダーでテクスチャを適用する方法の詳細については、「[方法:基本テクスチャ シェーダーを作成する](../designers/how-to-create-a-basic-texture-shader.md)」を参照してください。
+   シェーダーでテクスチャを適用する方法の詳細については、「[方法: 基本テクスチャ シェーダーを作成する](../designers/how-to-create-a-basic-texture-shader.md)」を参照してください。
 
    ビリヤード ボールは、次のようになります。
 
@@ -99,7 +99,7 @@ ms.locfileid: "72634545"
 
 - 必要に応じて、シェーダー グラフの **MaterialDiffuse** プロパティを構成することによって、照明を動かす方法を調整することもできます。 シェーダー グラフのプロパティにアクセスするには、デザイン サーフェイス上の何もない領域を選択してから、 **[プロパティ]** ウィンドウでアクセスするプロパティをクリックします。
 
-シェーダーでランバート照明を適用する方法の詳細については、「[方法:基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。
+シェーダーでランバート照明を適用する方法の詳細については、「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。
 
 ランバート照明が適用されると、ビリヤード ボールは次のようになります。
 
@@ -121,7 +121,7 @@ ms.locfileid: "72634545"
 
 2. 必要に応じて、シェーダー グラフの反射プロパティ (**MaterialSpecular** と **MaterialSpecularPower**) を構成することによって反射の光源の動きを調整できます。 シェーダー グラフのプロパティにアクセスするには、デザイン サーフェイス上の何もない領域を選択してから、 **[プロパティ]** ウィンドウでアクセスするプロパティをクリックします。
 
-   シェーダーで反射の光源を適用する方法の詳細については、「[方法:基本フォン シェーダーを作成する](../designers/how-to-create-a-basic-phong-shader.md)」を参照してください。
+   シェーダーで反射の光源を適用する方法の詳細については、「[方法: 基本フォン シェーダーを作成する](../designers/how-to-create-a-basic-phong-shader.md)」を参照してください。
 
    反射の光源が適用されると、ビリヤード ボールは次のようになります。
 
@@ -207,10 +207,10 @@ ms.locfileid: "72634545"
 
    この最終的なイメージでは、真に迫ったビリヤード ボールを作成するために追加した効果がどのように連携しているかに注目してください。 図形、テクスチャ、および照明は、3D オブジェクトの基本的な外観を作成し、反射の光源および景色の反射は、ビリヤード ボールをより目を引くものにして、環境の一部であるかのように見せます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)
 - [方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [シェーダー デザイナー](../designers/shader-designer.md)
-- [Image Editor](../designers/image-editor.md)
+- [イメージ エディター](../designers/image-editor.md)
 - [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)

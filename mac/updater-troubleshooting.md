@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984410"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75405473"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>トラブルシューティング:アップデーターが情報の取得中にエラーを表示する
 
@@ -24,4 +24,5 @@ ms.locfileid: "74984410"
 - このエラー メッセージが表示され続ける場合は、マシン上にまだ **.dmg** があるなら、インストーラーを使って更新してみることもできます。または、[visualstudio.com](https://visualstudio.microsoft.com/vs/mac/) からこれをダウンロードできます。
   - インストーラーにより、マシン上にあるインストール済みのコンポーネントがすべて更新されます。
   - インストーラーを再実行することで、以前にインストールしていなかった足りないコンポーネントをインストールすることもできます。
-- `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml` にあるファイルを削除することによって、キャッシュされたダウンロードをクリアすることもできます。
+- `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml` にあるファイルを削除することによって、キャッシュされたダウンロードをクリアすることもできます。
+- 古いバージョンの Visual Studio for Mac で作業している場合は、`VisualStudio` ディレクトリに他のバージョン番号が含まれている可能性があります。 これらのパスの `index.xml` ファイルも削除します。

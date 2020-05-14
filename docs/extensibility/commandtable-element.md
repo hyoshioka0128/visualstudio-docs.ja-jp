@@ -1,5 +1,5 @@
 ---
-title: CommandTable 要素 |Microsoft Docs
+title: コマンドテーブル要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bb10232c725eb2f538df73f6a7ca98e534a4c14
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341808"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739646"
 ---
-# <a name="commandtable-element"></a>CommandTable 要素
-CommandTable のルート要素は、 *.vsct*ファイル。 これは、実際のレイアウトと、IDE に VSPackage を提供するコマンドの種類を定義するファイルです。 コマンドは、メニュー項目、メニューのツールバー、およびコンボ ボックスに含めることができます。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+# <a name="commandtable-element"></a>コマンド テーブル要素
+コマンド テーブルは *、.vsct*ファイルのルート要素です。 これは、VSPackage が IDE に提供するコマンドの実際のレイアウトと種類を定義するファイルです。 コマンドには、メニュー項目、メニュー、ツールバー、コンボ ボックスなどがあります。 詳細については、「 [Visual Studio コマンド テーブル (.vsct) ファイル 」](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)を参照してください。
 
 ## <a name="syntax"></a>構文
 
@@ -46,22 +46,22 @@ CommandTable のルート要素は、 *.vsct*ファイル。 これは、実際�
 
 | 属性 | 説明 |
 |-----------| - |
-| xmlns | 必須。 XML 名前空間:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
-| language | 任意。 言語属性がすべての既定の言語を指定するため\<文字列 > コマンド テーブル内の要素。  言語が指定されていない場合は、現在のプロセスの言語が使用されます。<br /><br /> language="en-us" |
+| xmlns | 必須。 XML 名前空間:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema> |
+| language | 省略可能。 言語属性を使用して、コマンド テーブル内のすべての\<文字列>要素の既定の言語を指定できます。  言語が指定されていない場合、現在のプロセスの言語が使用されます。<br /><br /> 言語="en-us" |
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[Extern 要素](../extensibility/extern-element.md)|任意。 コンパイラのプリプロセッサ ディレクティブが含まれています。|
-|[要素を含める](../extensibility/include-element.md)|任意。 コンパイルに含める任意のファイルへのパスが含まれています。|
-|[要素を定義します。](../extensibility/define-element.md)|任意。 その名前と値のシンボルを定義します。|
-|[Commands 要素](../extensibility/commands-element.md)|任意。 すべての他の要素を含む VSPackage のすべてのコマンドを定義する親要素です。|
-|[CommandPlacements 要素](../extensibility/commandplacements-element.md)|任意。 コマンド バーで、コマンドが配置されるかを定義します。|
-|[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|任意。 コマンドとツールバーの静的な可視性を判断します。|
-|[KeyBindings 要素](../extensibility/keybindings-element.md)|任意。 コマンドのショートカット キーの組み合わせを指定します。|
-|[UsedCommands 要素](../extensibility/usedcommands-element.md)|任意。 必要に応じてその他の Vspackage で最初にサポートされる機能の独自のバージョンを実装するために VSPackage を使用できます。|
-|[Symbols 要素](https://www.microsoft.com/download/details.aspx?id=55984)|任意。 コンパイラのシンボル データ--Guid、Id、およびなど--が含まれています。|
+|[エクスタン要素](../extensibility/extern-element.md)|省略可能。 コンパイラのプリプロセッサ ディレクティブを含みます。|
+|[要素を含める](../extensibility/include-element.md)|省略可能。 コンパイルに含める任意のファイルへのパスを含みます。|
+|[要素の定義](../extensibility/define-element.md)|省略可能。 名前と値を指定してシンボルを定義します。|
+|[コマンド要素](../extensibility/commands-element.md)|省略可能。 他のすべての要素を含む VSPackage のすべてのコマンドを定義する親要素。|
+|[コマンド配置要素](../extensibility/commandplacements-element.md)|省略可能。 コマンド バーのどこにコマンドを配置する位置を定義します。|
+|[可視性制約要素](../extensibility/visibilityconstraints-element.md)|省略可能。 コマンドとツール バーの静的な表示を決定します。|
+|[キーバインディング要素](../extensibility/keybindings-element.md)|省略可能。 コマンドのショートカット キーの組み合わせを指定します(存在する場合)。|
+|[使用済みコマンド要素](../extensibility/usedcommands-element.md)|省略可能。 VSPackage は、他の VSPackage でもともとサポートされている独自のバージョンの機能をオプションで実装できるようにします。|
+|[シンボル要素](https://www.microsoft.com/download/details.aspx?id=55984)|省略可能。 コンパイラのシンボル データ (GUID、ID など) を格納します。|
 
 ### <a name="parent-elements"></a>親要素
 

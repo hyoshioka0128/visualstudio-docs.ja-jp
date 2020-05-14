@@ -11,23 +11,25 @@ helpviewer_keywords:
 - reserved properties
 - project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386807"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633838"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>方法: プロジェクト ファイルの名前または場所を参照する
-独自のプロパティを作成することなく、プロジェクト ファイル自体のプロジェクトの名前または場所を使用できます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、プロジェクトのファイル名とプロジェクトに関連するその他のプロパティを参照する、予約済みのプロパティを提供します。 予約済みのプロパティの詳細については、「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」を参照してください。
+
+独自のプロパティを作成することなく、プロジェクト ファイル自体のプロジェクトの名前または場所を使用できます。 MSBuild には、プロジェクト ファイル名とプロジェクトに関連するその他のプロパティを参照する、予約済みのプロパティが用意されています。 予約済みのプロパティの詳細については、「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」を参照してください。
 
 ## <a name="use-the-project-properties"></a>プロジェクトのプロパティを使用する
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、毎回定義することなくプロジェクト ファイルで使用できる、いくつかの予約済みプロパティを提供します。 たとえば、予約済みプロパティ `MSBuildProjectName` はプロジェクト ファイル名への参照を提供します。 予約済みプロパティ `MSBuildProjectDirectory` はプロジェクト ファイルの場所への参照を提供します。
+
+ MSBuild には、毎回定義することなくプロジェクト ファイル内で使用できる、いくつかの予約済みプロパティが用意されています。 たとえば、予約済みプロパティ `MSBuildProjectName` はプロジェクト ファイル名への参照を提供します。 予約済みプロパティ `MSBuildProjectDirectory` はプロジェクト ファイルの場所への参照を提供します。
 
 #### <a name="to-use-the-project-properties"></a>プロジェクトのプロパティを使用するには
 
@@ -41,10 +43,13 @@ ms.locfileid: "63386807"
 
   予約済みのプロパティを使用する利点は、プロジェクト ファイル名への変更がすべて自動的に組み込まれることです。 次回プロジェクトをビルドするとき、出力ファイルに新しい名前が付けられ、追加の操作は必要ありません。
 
+  ファイル参照またはプロジェクト参照での特殊文字の使用の詳細については、「[MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)」を参照してください。
+
 > [!NOTE]
 > 予約済みのプロパティは、プロジェクト ファイルで再定義できません。
 
 ## <a name="example"></a>例
+
  次の例では、プロジェクト ファイルは出力の名前を指定する予約済みのプロパティとして、プロジェクト名を参照します。
 
 ```xml
@@ -73,6 +78,7 @@ ms.locfileid: "63386807"
 ```
 
 ## <a name="example"></a>例
+
  次のプロジェクト ファイルの例では、`MSBuildProjectDirectory` 予約済みプロパティを使用して、プロジェクト ファイルの場所にあるファイルへの完全パスを作成します。
 
 ```xml
@@ -85,6 +91,9 @@ ms.locfileid: "63386807"
 </Project>
 ```
 
+この例では、[プロパティ関数](property-functions.md)の構文を使用して、静的な .NET Framework メソッド <xref:System.IO.Path.Combine*?displayProperty=fullName> を呼び出しています。
+
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)

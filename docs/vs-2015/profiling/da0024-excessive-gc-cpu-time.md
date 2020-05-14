@@ -13,21 +13,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0414e8bc4b5789f08751749b52f870c7c5e5167
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fbe6da087d10d3373a1f5d7836d4fa5207801bc7
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300092"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586755"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: 過剰な GC CPU 時間
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024:過剰な GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ルール Id |DA0024 |  
-|Category |。NET Framework Usage |  
-|プロファイル方法 |All |  
-|Message | GC の時間の割合が非常に高くなっています。 ガベージ コレクションのオーバーヘッドが過剰です。|  
-|ルールの種類 |警告 |  
+|||  
+|-|-|  
+|規則 ID|DA0024|  
+|カテゴリ|.NET Framework の使用|  
+|プロファイル方法|All|  
+|[メッセージ]|GC の時間の割合が非常に高くなっています。 ガベージ コレクションのオーバーヘッドが過剰です。|  
+|規則の種類|警告|  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。  
   
@@ -47,4 +49,4 @@ ms.locfileid: "74300092"
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、プロファイル データの [[マーク] ビュー](../profiling/marks-view.md)に移動します。 **.NET CLR Memory\\% Time in GC** 列を探します。 マネージド メモリのガベージ コレクションが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 % Time in GC の値と、 **# of Gen 0 Collections**、 **# of Gen 1 Collections**、 **# of Gen 2 Collections** 値で報告されているガベージ コレクションの割合を比較してください。  
   
- % Time in GC 値は、アプリケーションの処理時間全体に占めるガベージ コレクションの実行時間を報告します。 % Time in GC 値が非常に高くても、それが過度なガベージ コレクションのためではない場合もあることに注意してください。 % Time in GC 値の計算方法の詳細については、MSDN の「[Maoni's Weblog](https://go.microsoft.com/fwlink/?LinkId=177863)」 (Maoni のブログ) の「**Difference Between Perf Data Reported by Different Tools – 4**」 (ツールによってレポートされるパフォーマンス データの違い 4) を参照してください。 ページ フォールトが発生している場合や、コンピューター上の優先順位の高い処理のためにアプリケーションに割り込みが発生している場合、% Time in GC カウンターにはそれらの遅延が反映されます。
+ % Time in GC 値は、アプリケーションの処理時間全体に占めるガベージ コレクションの実行時間を報告します。 % Time in GC 値が非常に高くても、それが過度なガベージ コレクションのためではない場合もあることに注意してください。 % Time in GC 値の計算方法の詳細については、MSDN の「**Maoni's Weblog**」 (Maoni のブログ) の「[Difference Between Perf Data Reported by Different Tools – 4](https://devblogs.microsoft.com/dotnet/difference-between-perf-data-reported-by-different-tools-4/)」 (ツールによってレポートされるパフォーマンス データの違い 4) を参照してください。 ページ フォールトが発生している場合や、コンピューター上の優先順位の高い処理のためにアプリケーションに割り込みが発生している場合、% Time in GC カウンターにはそれらの遅延が反映されます。

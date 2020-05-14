@@ -10,19 +10,19 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713954"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114990"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング
 
@@ -69,7 +69,7 @@ ms.locfileid: "73713954"
       `proxyaddress="<http://<yourproxy:port#>`には、使用しているネットワークの正しいプロキシ アドレスを挿入する必要があります。
 
      > [!NOTE]
-     > 詳細については、「[ &lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
+     > 詳細については、「[&lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ ms.locfileid: "73713954"
       `proxyaddress="<http://<yourproxy:port#>`には、使用しているネットワークの正しいプロキシ アドレスを挿入する必要があります。
 
      > [!NOTE]
-     > 詳細については、「[ &lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
+     > 詳細については、「[&lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
 
 ::: moniker-end
 

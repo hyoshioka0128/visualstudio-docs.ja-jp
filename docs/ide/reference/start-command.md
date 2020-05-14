@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start command
 - Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3179c223aef8226577fe726b6d91301d42572a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748626"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590281"
 ---
 # <a name="start-command"></a>Start コマンド
 スタートアップ プロジェクトのデバッグを開始します。
@@ -44,9 +44,9 @@ Debug.Start [address]
 >Debug.Start
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

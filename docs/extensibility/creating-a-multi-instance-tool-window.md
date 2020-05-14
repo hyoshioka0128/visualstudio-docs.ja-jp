@@ -1,38 +1,38 @@
 ---
-title: マルチ インスタンスのツール ウィンドウの作成 |Microsoft Docs
+title: マルチインスタンス ツール ウィンドウを作成する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c31f1c439db69b3795d789758b0604a539ef81
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33585f623f846e16200d430ad2c886fe0874b537
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341627"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739627"
 ---
-# <a name="create-a-multi-instance-tool-window"></a>マルチ インスタンスのツール ウィンドウを作成します。
-複数のインスタンスは同時に開くできるように、ツール ウィンドウをプログラミングできます。 既定では、ツール ウィンドウには 1 つだけのインスタンスを開くことができます。
+# <a name="create-a-multi-instance-tool-window"></a>マルチインスタンス ツール ウィンドウを作成する
+ツール ウィンドウをプログラムして、複数のインスタンスを同時に開くことができます。 既定では、ツール ウィンドウで開くことができるインスタンスは 1 つだけです。
 
-複数インスタンスのツール ウィンドウを使用すると同時に情報のいくつかの関連するソースを表示できます。 たとえば、複数の行に配置する<xref:System.Windows.Forms.TextBox>プログラミング セッション中にいくつかのコード スニペットは同時に使用できるように、複数インスタンスのツール ウィンドウを制御します。 また、たとえばを置いたり、<xref:System.Windows.Forms.DataGrid>コントロール ドロップダウン リスト ボックスと複数インスタンスのツール ウィンドウで同時にいくつかのリアルタイムのデータ ソースを追跡できるようにします。
+複数インスタンスツール ウィンドウを使用すると、関連する複数の情報ソースを同時に表示できます。 たとえば、複数行<xref:System.Windows.Forms.TextBox>のコントロールを複数インスタンス のツール ウィンドウに配置して、プログラミング セッション中に複数のコード スニペットを同時に使用できるようにすることができます。 また、複数のリアルタイム データ ソース<xref:System.Windows.Forms.DataGrid>を同時に追跡できるように、複数のインスタンスのツール ウィンドウにコントロールとドロップダウン リスト ボックスを配置することもできます。
 
-## <a name="create-a-basic-single-instance-tool-window"></a>(単一インスタンス) の基本的なツール ウィンドウを作成します。
+## <a name="create-a-basic-single-instance-tool-window"></a>基本的な (単一インスタンス) ツール ウィンドウを作成する
 
-1. という名前のプロジェクトを作成する**MultiInstanceToolWindow** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**MIToolWindow**します。
+1. VSIX テンプレートを使用して**MultiInstanceToolWindow**という名前のプロジェクトを作成し **、MIToolWindow**という名前のカスタム ツール ウィンドウ項目テンプレートを追加します。
 
     > [!NOTE]
-    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
+    > ツール ウィンドウを使用した拡張機能の作成の詳細については、「ツール[ウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
-## <a name="make-a-tool-window-multi-instance"></a>ツール ウィンドウの複数インスタンスを作成します。
+## <a name="make-a-tool-window-multi-instance"></a>ツール ウィンドウをマルチインスタンスにする
 
-1. 開く、 *MIToolWindowPackage.cs*ファイルを見つけて、`ProvideToolWindow`属性。 および`MultiInstances=true`パラメーターは、次の例に示すようにします。
+1. *MIToolWindowPackage.cs*ファイルを開き、属性`ProvideToolWindow`を見つけます。 次の`MultiInstances=true`例に示すように、パラメーターを使用します。
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,15 +44,15 @@ ms.locfileid: "66341627"
     {. . .}
     ```
 
-2. *MIToolWindowCommand.cs*ファイルで、検索、`ShowToolWindos()`メソッド。 このメソッドを呼び出して、<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>メソッドとその`create`フラグを`false`まで、使用可能なツール ウィンドウの既存のインスタンスを反復ことができるように`id`が見つかった。
+2. *MIToolWindowCommand.cs*ファイルで、メソッドを`ShowToolWindos()`見つけます。 このメソッドでは、メソッドを<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>呼び出し`create`、その`false`フラグを設定して、使用可能なインスタンスが見つかるまで既存の`id`ツール ウィンドウ インスタンスを反復処理します。
 
-3. ツール ウィンドウのインスタンスを作成するには、<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>メソッドとその`id`使用可能な値とその`create`フラグを`true`。
+3. ツール ウィンドウ インスタンスを作成するには、<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>メソッドを呼び`id`出し、使用可能な値`create`に設定`true`し、フラグを に設定します。
 
-    既定の値で、`id`のパラメーター、<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>メソッドは`0`します。 この値は、単一インスタンスのツール ウィンドウです。 ホストする 1 つ以上のインスタンスの場合は、すべてのインスタンスを独自の一意なにいる必要があります`id`します。
+    既定では、メソッドの`id`パラメーターの<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>値は`0`です。 この値は、単一インスタンスのツール ウィンドウになります。 複数のインスタンスをホストするには、すべてのインスタンスに固有の`id`.
 
-4. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>メソッドを<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>オブジェクトによって返される、<xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A>ツール ウィンドウのインスタンスのプロパティ。
+4. ツール<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>ウィンドウ インスタンス<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>の<xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A>プロパティによって返されるオブジェクトのメソッドを呼び出します。
 
-5. 既定で、`ShowToolWindow`ツール ウィンドウの項目テンプレートによって作成されるメソッドは、単一インスタンスのツール ウィンドウを作成します。 次の例を変更する方法を示しています、`ShowToolWindow`メソッドを複数のインスタンスを作成します。
+5. 既定では、ツール`ShowToolWindow`ウィンドウ項目テンプレートによって作成されるメソッドは、単一インスタンスのツール ウィンドウを作成します。 次の例は、メソッドを変更`ShowToolWindow`して複数のインスタンスを作成する方法を示しています。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

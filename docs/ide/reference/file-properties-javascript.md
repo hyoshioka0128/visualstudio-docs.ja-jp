@@ -27,17 +27,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926232"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
 
 ファイルのプロパティを使用して、プロジェクト システムがファイルに対して実行するアクションを指定できます。 たとえば、ファイルがリソース ファイルとしてパッケージに追加するかどうかを示すには、ファイル プロパティを設定できます。
 
-ソリューション エクスプローラーでファイルを選択し、[プロパティ] ウィンドウでそのプロパティを調べることができます。 JavaScript ファイルには、 **[出力ディレクトリにコピー]** 、 **[パッケージ アクション]** 、 **[ファイル名]** 、 **[ファイル パス]** という 4 種類のプロパティがあります。
+ソリューション エクスプローラーでファイルを選択し、[プロパティ] ウィンドウでそのプロパティを調べることができます。 JavaScript ファイルは、 **[出力ディレクトリにコピー]** 、 **[パッケージ アクション]** 、 **[ファイル名]** 、 **[ファイル パス]** という 4 種類のプロパティがあります。
 
 ## <a name="file-properties"></a>ファイルのプロパティ
 このセクションでは、JavaScript ファイルに共通のプロパティについて説明します。
@@ -70,16 +70,16 @@ ms.locfileid: "68926232"
 ### <a name="culture"></a>カルチャ
 参照に関連付けられている言語が表示されます。
 
-### <a name="file-type"></a>ファイルの種類
+### <a name="file-type"></a>[ファイルの種類]
 参照のファイルの種類が表示されます。
 
-### <a name="file-version"></a>ファイルのバージョン
+### <a name="file-version"></a>ファイル バージョン
 参照のファイル バージョンが表示されます。
 
-### <a name="identity"></a>Identity
+### <a name="identity"></a>ID
 プロジェクトに使用されている参照の ID が表示されます。これはプロジェクト ファイルに保存されています。
 
-### <a name="package"></a>Package
+### <a name="package"></a>パッケージ
 参照に関連付けられているパッケージ マニフェストの名前が表示されます。
 
 ### <a name="resolved-path"></a>解決されたパス
@@ -94,6 +94,6 @@ ms.locfileid: "68926232"
 ### <a name="version"></a>Version
 参照のバージョンが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトおよびソリューションのプロパティの管理](../../ide/managing-project-and-solution-properties.md)

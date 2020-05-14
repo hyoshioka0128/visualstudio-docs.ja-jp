@@ -2,17 +2,17 @@
 title: メソッドにパラメーターを追加するクイック アクション
 ms.date: 09/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658796"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595866"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>クイック アクションを使用してメソッドにパラメーターを追加する
 
@@ -22,9 +22,9 @@ ms.locfileid: "72658796"
 
 - Visual Basic
 
-**概要:** 使用量に基づいて、メソッドにパラメーターを自動的に追加することができます。
+**内容:** 使用量に基づいて、メソッドにパラメーターを自動的に追加することができます。
 
-**条件:** メソッドにパラメーターを追加し、それを自動的に正しく宣言する必要がある場合。
+**タイミング:** メソッドにパラメーターを追加し、それを自動的に正しく宣言する必要がある場合。
 
 **理由:** 呼び出す前にメソッドの宣言にパラメーターを追加することもできますが、この機能ではそれがメソッドの呼び出しに基づいて自動的に追加されます。
 
@@ -46,6 +46,6 @@ ms.locfileid: "72658796"
 > [!NOTE]
 > メソッドに対するその他の呼び出しがある場合、このクイック アクションを使用した後はそれらでエラーが発生する場合があります。新しく追加されたパラメーターの引数を指定していないためです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コンストラクターにパラメーターを追加する](generate-constructor.md#addparameter)

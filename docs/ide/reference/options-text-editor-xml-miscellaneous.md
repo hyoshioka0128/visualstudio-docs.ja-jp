@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666583"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568127"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XML]、[その他]
 
 XML エディターのオート コンプリートとスキーマの設定を変更するには、 **[その他]** オプション ページを使用します。 その他の XML オプションにアクセスするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[XML]** の順に選択して、 **[その他]** を選択します。
 
-## <a name="auto-insert"></a>自動挿入
+## <a name="auto-insert"></a>[自動挿入]
 
 **終了タグ**
 
@@ -31,23 +31,23 @@ XML 属性の作成時にエディターは文字 `="` および `"` を挿入�
 
 **名前空間の宣言**
 
-エディターは、必要に応じて名前空間の宣言を自動的に挿入します。 既定では、このチェック ボックスはオンです。
+名前空間の宣言が必要な場所には、自動的に宣言が挿入されます。 既定では、このチェック ボックスはオンです。
 
 **その他のマークアップ (コメント、CDATA)**
 
-コメント、CDATA、DOCTYPE、処理命令、およびその他のマークアップがオートコンプリートされます。 既定では、このチェック ボックスはオンです。
+コメント、CDATA、DOCTYPE、処理命令、その他のマークアップがオートコンプリートされます。 既定では、このチェック ボックスはオンです。
 
 ## <a name="network"></a>ネットワーク
 
 **DTD とスキーマを自動的にダウンロードする**
 
-HTTP の場所から、スキーマやドキュメント型定義 (DTD) を自動的にダウンロードします。 この機能は、プロキシ サーバーの自動検出を有効にした System.Net を使用します。 既定では、このチェック ボックスはオンです。
+スキーマと DTD (Document Type Definition) は HTTP ロケーションから自動的にダウンロードされます。 この機能では、自動プロキシ サーバー検出が有効な System.Net を使用します。 既定では、このチェック ボックスはオンです。
 
-## <a name="outlining"></a>アウトライン
+## <a name="outlining"></a>[アウトライン]
 
 **[ファイルが開かれたときにアウトライン モードを実行する]**
 
-ファイルが開かれたときにアウトライン機能をオンにします。 既定では、このチェック ボックスはオンです。
+ファイルが開いているときにアウトライン機能をオンにします。 既定では、このチェック ボックスはオンです。
 
 ## <a name="caching"></a>キャッシュ
 
@@ -55,7 +55,7 @@ HTTP の場所から、スキーマやドキュメント型定義 (DTD) を自�
 
 スキーマ キャッシュの場所を指定します。 **[参照ボタン]** ボタンをクリックすると、新しいウィンドウで現在のスキーマ キャッシュの場所が開きます。 既定の場所は *%VsInstallDir%\xml\Schemas* です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [XML オプション - 書式設定](options-text-editor-xml-formatting.md)
 - [Visual Studio の XML ツール](../../xml-tools/xml-tools-in-visual-studio.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fb6228592115091dc538dbe59c227a180e75aa10
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775419"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーでスタンドアロン アプリケーションを起動し、アプリケーション統計情報を収集する
@@ -96,7 +96,7 @@ ms.locfileid: "74775419"
 
     - 対象アプリケーションを終了します。
 
-         または
+         \- または -
 
     - **VSPerfCmd /detach** と入力します
 

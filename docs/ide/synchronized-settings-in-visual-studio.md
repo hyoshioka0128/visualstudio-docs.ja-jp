@@ -3,17 +3,17 @@ title: 設定を同期する
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647427"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75566788"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 
@@ -89,7 +89,7 @@ Visual Studio の異なるサイド バイ サイド インストールの間で
 
 すべての設定を既定にリセットするには、Visual Studio にサインインし、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、**設定のインポートとエクスポート ウィザード**を開きます。 **[すべての設定をリセット]** を選択し、ウィザードの残りの手順に従います。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [IDE をカスタマイズする](../ide/personalizing-the-visual-studio-ide.md)
 - [環境設定](../ide/environment-settings.md)

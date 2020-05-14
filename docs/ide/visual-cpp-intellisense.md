@@ -2,17 +2,17 @@
 title: C++ IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461702"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594215"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense の機能
 

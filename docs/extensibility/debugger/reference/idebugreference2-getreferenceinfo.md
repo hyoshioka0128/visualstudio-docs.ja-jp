@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetReferenceInfo |Microsoft Docs
+title: を参照します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetReferenceInfo
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1ad9a3f23037a4413811e0d98304ceedf0620ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345642"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720421"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-取得、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)の参照を記述する構造体。 将来使用するために予約されています。
+参照を記述する[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体を取得します。 将来利用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -51,22 +51,22 @@ int GetReferenceInfo ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]フラグの組み合わせ、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)入力するフィールドを決定する列挙体、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。
+[in][DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体に入力するフィールドを決定する[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列挙体のフラグの組み合わせ。
 
 `nRadix`\
-[in]任意の数値情報を書式設定で使用する基数。
+[in]数値情報の書式設定に使用する基数。
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
 
 `rgpArgs`\
-[in]配列の[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。 今後使用するために予約されていますnull 値に設定します。
+[in][オブジェクト](../../../extensibility/debugger/reference/idebugreference2.md)の配列。 将来の使用のために予約されています。null 値に設定されます。
 
 `dwArgCount`\
-[in]参照引数の数、`rgpArgs`配列。 今後使用するために予約されています0 に設定します。
+[in]配列内の参照引数の`rgpArgs`数。 将来の使用のために予約されています。0 に設定します。
 
 `pReferenceInfo`\
-[out]A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造、プロパティの説明が入力されます。
+[アウト]プロパティの説明が入力されている[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

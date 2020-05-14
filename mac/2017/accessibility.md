@@ -1,18 +1,18 @@
 ---
-title: ユーザー補助
+title: アクセシビリティ
 description: この記事では、Visual Studio for Mac でのユーザー補助機能と、それを有効にする方法について説明します。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984881"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306657"
 ---
-# <a name="accessibility"></a>ユーザー補助
+# <a name="accessibility"></a>アクセシビリティ
 
 Visual Studio for Mac は、macOS の機能およびユーティリティに加えて、以下の機能を備えているため、障碍のある方でも、これまで以上に使いやすくなっています。
 
@@ -44,7 +44,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 ユーザー補助機能を有効にした後、Visual Studio を再起動する必要があります。
 
-## <a name="how-to-use-keyboard-navigation"></a>方法: キーボード ナビゲーションを使用する
+## <a name="how-to-use-keyboard-navigation"></a>キーボード ナビゲーションを使用するには
 
 キーボード ナビゲーションを有効にするには、 **[システム環境設定] > [キーボード] > [ショートカット]** のフル キーボード アクセス オプションを、 **[すべてコントロール]** に設定します。
 
@@ -58,17 +58,17 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 スペース バーを押すと、フォーカスされたコントロールがアクティブになります。
 
-## <a name="how-to-enable-and-use-voice-over"></a>方法: 読み上げ機能を有効にして使用する
+## <a name="how-to-enable-and-use-voice-over"></a>読み上げ機能を有効にして使用するには
 
 VoiceOver をオンまたはオフにするには、**Cmd + F5 キー**を押します。
 
 UI VoiceOver コマンドの間を移動するには、次のコマンドを使用します。
 
-- コントロール間で VoiceOver カーソルを移動する:**Ctrl + Alt + 左方向キーまたは右方向キー**
+- コントロール間で VoiceOver カーソルを移動: **Ctrl + Alt + 左方向キーまたは右方向キー**
 
    VoiceOver は、コントロールの名前、コントールに関するいくつかの詳細、およびそのコントロールで何ができるかを読み上げます。
 
-- グループやコントロール (例: Solution Pad、ツールボックスなどのパッド) を入力する:**Ctrl + Alt + Shift + 下方向キー**
+- グループやコントロール (例: Solution Pad、ツールボックスなどのパッド) を入力: **Ctrl + Alt + Shift + 下方向キー**
 
    一度コントロール内に入れば、**Ctrl + Alt + 方向キー**を使用して内部を移動できます。
 
@@ -77,6 +77,6 @@ macOS の VoiceOver の使用方法に関する概要については、次のガ
 - [VoiceOver の概要](https://help.apple.com/voiceover/info/guide/10.12/)
 - [macOS の VoiceOver コマンド](https://lab.dotjay.com/notes/voiceover-commands/)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のユーザー補助機能 (Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

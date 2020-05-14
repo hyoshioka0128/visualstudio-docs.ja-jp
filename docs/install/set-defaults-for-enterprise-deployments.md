@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
-author: heaths
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114281"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio のエンタープライズ展開に既定値を設定する
 
@@ -50,7 +50,7 @@ Visual Studio の展開に影響するレジストリ ポリシーを設定す�
 
 以下のレジストリ値を設定できます。
 
-| **Name** | **Type** | **default** | **説明** |
+| **Name** | **Type** | **Shared** | **説明** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` または `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | パッケージ マニフェストと、ペイロード (省略可能) が格納されるディレクトリ。 詳しくは、「[パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)」ページをご覧ください。 |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | パッケージのペイロードはインストール後も保持されます。 この値はいつでも変更できます。 ポリシーを無効にすると、修復または変更するインスタンスでキャッシュされたパッケージのペイロードがすべて削除されます。 詳しくは、「[パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)」ページをご覧ください。 |
@@ -63,7 +63,7 @@ Visual Studio の展開に影響するレジストリ ポリシーを設定す�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のインストール](install-visual-studio.md)
 - [パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)

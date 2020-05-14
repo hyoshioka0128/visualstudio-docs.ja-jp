@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653401"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588929"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>方法:ロード テスト シナリオで使用するテスト エージェントを指定する
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>方法: ロード テスト シナリオで使用するテスト エージェントを指定する
 
 **新しいロード テスト ウィザード**でロード テストを作成した後、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。
 
@@ -64,9 +64,9 @@ ms.locfileid: "72653401"
 
 5. プロパティを変更した後で、 **[ファイル]** メニューの **[保存]** を指定します。 その後で、新しい **[使用するエージェント]** の値を使用して、ロード テストを実行できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
-- [チュートリアル: ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)
+- [チュートリアル: ロード テストの作成と実行](../test/walkthrough-create-and-run-a-load-test.md)
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)
 - [ロード テスト シナリオのプロパティ](../test/load-test-scenario-properties.md)

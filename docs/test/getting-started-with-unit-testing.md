@@ -1,20 +1,20 @@
 ---
 title: 単体テストの概要
-ms.date: 04/01/2019
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecddad721547fdb5689a26a192cf0580ddb44cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664915"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153033"
 ---
 # <a name="get-started-with-unit-testing"></a>単体テストの概要
 
@@ -22,20 +22,22 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 ## <a name="create-unit-tests"></a>単体テストの作成
 
-このセクションでは、単体テスト プロジェクトの作成方法に関する概要を説明します。
+このセクションでは、単体テスト プロジェクトの作成方法を説明します。
 
 1. Visual Studio でテストするプロジェクトを開きます。
 
-   単体テストの例をデモすることを目的として、この記事ではシンプルな "Hello World" プロジェクトをテストします。 そのようなプロジェクトのサンプル コードは、次のとおりです。
+   単体テストの例をデモすることを目的として、この記事では **HelloWorldCore** という名前のシンプルな "Hello World" プロジェクトをテストします。 そのようなプロジェクトのサンプル コードは、次のとおりです。
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. **ソリューション エクスプローラー**で、ソリューション ノードを選びます。 次に、上部のメニュー バーで **[ファイル]**  >  **[追加]**  >  **[新しいプロジェクト]** を選択します。
@@ -70,14 +72,81 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 1. 単体テスト メソッドにコードを追加します。
 
-   ![Visual Studio で単体テスト メソッドにコードを追加する](media/vs-2019/unit-test-method.png)
+   たとえば、MSTest プロジェクトには、次のコードを使用できます。
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
+   あるいは、NUnit プロジェクトの場合、次のコードを使用することもできます。
+
+   ```csharp
+   using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
-> 単体テストの作成を詳述するチュートリアルについては、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
+> 単体テストの作成について詳しくは、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
 
 ## <a name="run-unit-tests"></a>単体テストを実行する
 
-1. 上部のメニュー バーで **[テスト]**  >  **[Windows]**  >  **[テスト エクスプローラー]** を選択して、[テスト エクスプローラー](../test/run-unit-tests-with-test-explorer.md)を開きます。
+1. [テスト エクスプローラー](../test/run-unit-tests-with-test-explorer.md)を開きます。
+
+   ::: moniker range=">=vs-2019"
+   テスト エクスプローラーを開くには、上部のメニュー バーで **[テスト]** > **[テスト エクスプローラー]** を選択します。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   テスト エクスプローラーを開くには、上部のメニュー バーで **[テスト]** > **[Windows]** > **[テスト エクスプローラー]** を選択します。
+   ::: moniker-end
 
 1. **[すべて実行]** をクリックして、単体テストを実行します。
 

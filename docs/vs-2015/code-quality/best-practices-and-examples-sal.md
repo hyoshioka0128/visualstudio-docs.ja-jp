@@ -1,28 +1,28 @@
 ---
-title: ベスト プラクティスと例 (SAL) |Microsoft Docs
+title: ベストプラクティスと例 (SAL) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a03d2f64e3facba434de03bb18dbb2ac5bd809b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428574"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275239"
 ---
 # <a name="best-practices-and-examples-sal"></a>ベスト プラクティスと例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-最もからソース コード注釈言語 (SAL) を取得し、一般的な問題を回避する方法を示します。  
+ここでは、ソースコード注釈言語 (SAL) を最大限に活用し、いくつかの一般的な問題を回避する方法をいくつか紹介します。  
   
-## <a name="in"></a>\_In\_
- 関数は、要素を記述することになって場合を使用して、`_Inout_`の代わりに`_In_`します。 これは、古いマクロから SAL への自動変換の場合に特に関連します。 SAL、前に多くのプログラマがコメントとしてマクロを使用: 名前を付けられたマクロ`IN`、 `OUT`、 `IN_OUT`、またはこれらの名前のバリアント。 これらのマクロは、SAL を変換することをお勧めも強くお勧めすると、元のプロトタイプが作成されており、古いマクロが、コードが何を反映していないために、コードが変更されている可能性がありますので変換する際は注意してください。 詳細については、特に注意してください、`OPTIONAL`マクロを頻繁に正しく配置されていないため、コメント: コンマの反対側になど。  
+## <a name="_in_"></a>\_含まれる\_
+ 関数が要素に書き込むことが想定されている場合は、`_In_`ではなく `_Inout_` を使用します。 これは、古いマクロから SAL への自動変換の場合に特に関連します。 SAL より前は、多くのプログラマはマクロをコメントとして使用していました。これは、これらの名前の `IN`、`OUT`、`IN_OUT`、またはバリエーションという名前のマクロです。 これらのマクロを SAL に変換することをお勧めしますが、元のプロトタイプが記述された後にコードが変更されている可能性があり、古いマクロがコードの動作を反映しなくなる可能性があるため、変換する際には注意が必要です。 `OPTIONAL` コメントマクロについては特に注意してください。これは、コンマの間違った側など、誤って配置されることが多いためです。  
   
 ```cpp  
   
@@ -45,8 +45,8 @@ void Func2(_Inout_ PCHAR p1)
 }  
 ```  
   
-## <a name="opt"></a>\_opt\_  
- 呼び出し元が null ポインターを渡すことを許可されていない場合は、使用`_In_`または`_Out_`の代わりに`_In_opt_`または`_Out_opt_`します。 これをそのパラメーターをチェックし、エラーが返されますが NULL であることがない場合に関数にも当てはまります。 適切な防御的なコーディング方法では、関数は、予期しない NULL のパラメーターをチェックおよび適切に返すことが必ずしも省略可能な型のパラメーターの注釈ができること (\_*Xxx*_opt\_).  
+## <a name="_opt_"></a>\_opt\_  
+ 呼び出し元が null ポインターを渡すことが許可されていない場合は、`_In_opt_` または `_Out_opt_`ではなく、`_In_` または `_Out_` を使用します。 これは、パラメーターをチェックする関数に対しても適用され、でない場合は NULL である場合はエラーを返します。 関数によってパラメーターが予期しない NULL としてチェックされ、正常に返されるのは、適切な防御コーディング手法ですが、パラメーターの注釈を省略可能な型 (\_*Xxx*_opt\_) にすることはできません。  
   
 ```cpp  
   
@@ -64,11 +64,11 @@ void Func2(_Out_ int *p1)
   
 ```  
   
-## <a name="predefensive-and-postdefensive"></a>\_Pre_defensive\_と\_Post_defensive\_  
- 使用することをお勧め関数は、信頼境界に表示されている場合、`_Pre_defensive_`注釈。  「防御的な」修飾子が呼び出しの時点で、いることを示す特定のコメントを変更します、インターフェイスを厳密には、チェックする必要がありますが実装ボディ内にする必要があります前提として不正確なパラメーターを渡すことができます。 その場合は、`_In_ _Pre_defensive_`を呼び出し元には、NULL を渡すしようとすると、エラーが発生、が関数本体分析パラメーターが NULL の場合、最初にポインターを逆参照しようする可能性がありますかのように提供することを示すために信頼境界をお勧めNULL の確認にはフラグが付けられます。  A`_Post_defensive_`注釈は、コールバックの場所、信頼されたパーティは、呼び出し元と見なされ、信頼できないコードが呼び出されたコードで使用できることもできます。  
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_Pre_defensive\_ と \_Post_defensive\_  
+ 関数が信頼境界にある場合は、`_Pre_defensive_` 注釈を使用することをお勧めします。  "防御" 修飾子は、呼び出しの時点で、インターフェイスを厳密に確認する必要があることを示すために、特定の注釈を変更します。ただし、実装本文では、正しくないパラメーターが渡される可能性があると想定する必要があります。 この場合、`_In_ _Pre_defensive_` は信頼境界で推奨されています。これは、呼び出し元が NULL を渡すとエラーが発生した場合でも、パラメーターが null であるかのように関数本体が分析され、最初に NULL をチェックしないでポインターを逆参照しようとすると、フラグが設定されます。  `_Post_defensive_` 注釈は、信頼できるパーティが呼び出し元であると見なされ、信頼されていないコードが呼び出されたコードであるコールバックで使用することもできます。  
   
-## <a name="outwrites"></a>\_Out_writes\_  
- 次の例での一般的な誤用`_Out_writes_`します。  
+## <a name="_out_writes_"></a>\_Out_writes\_  
+ 次の例は、`_Out_writes_`の一般的な誤用を示しています。  
   
 ```cpp  
   
@@ -79,9 +79,9 @@ void Func1(_Out_writes_(size) CHAR *pb,
   
 ```  
   
- 注釈`_Out_writes_`バッファーがあることを示します。 `cb`初期化終了時に最初のバイトで、割り当てられたバイト数。 この注釈が厳密に正しくないと、割り当てサイズを表現することをお勧めします。 ただし、示されていない要素の数が、関数によって初期化されます。  
+ 注釈 `_Out_writes_` は、バッファーがあることを示します。 最初のバイトが終了時に初期化された `cb` バイトが割り当てられています。 この注釈は厳密には間違っていないため、割り当てられたサイズを表すと便利です。 ただし、関数によって初期化される要素の数はわかりません。  
   
- 次の例では、完全にバッファーの初期化の部分の正確なサイズを指定する 3 つの正しい方法を示します。  
+ 次の例では、バッファーの初期化された部分の正確なサイズを完全に指定するための3つの正しい方法を示します。  
   
 ```cpp  
   
@@ -101,8 +101,8 @@ void Func3(_Out_writes_(size) PSTR pb,
   
 ```  
   
-## <a name="out-pstr"></a>\_Out\_ PSTR  
- 使用`_Out_ PSTR`がほぼ常に間違っています。 これは、文字バッファーを指す出力パラメーターを持つものとして解釈され、NULL で終わることをお勧めします。  
+## <a name="_out_-pstr"></a>\_\_ PSTR  
+ `_Out_ PSTR` の使用は、ほぼ常に間違っています。 これは、文字バッファーを指す出力パラメーターがあり、それが NULL で終わると解釈されます。  
   
 ```cpp  
   
@@ -114,10 +114,10 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
   
 ```  
   
- 注釈のような`_In_ PCSTR`は一般的で便利です。 NULL で終わるを持つため、入力文字列の指すの precondition`_In_`により、NULL で終わる文字列を認識します。  
+ `_In_ PCSTR` のような注釈は一般的で便利です。 `_In_` の事前条件では NULL で終わる文字列を認識できるため、NULL 終了を含む入力文字列を指します。  
   
-## <a name="in-wchar-p"></a>\_\_ WCHAR * p  
- `_In_ WCHAR* p` 入力のポインターがあることを示す`p`1 つの文字を指します。 ただし、ほとんどの場合、これはない可能性がありますが想定されている仕様です。 代わりは NULL で終わる配列の指定は、おそらく対象としていますそのために使用`_In_ PWSTR`します。  
+## <a name="_in_-wchar-p"></a>\_ WCHAR * p の \_  
+ `_In_ WCHAR* p` は、1つの文字を指す入力ポインター `p` があることを示しています。 ただし、ほとんどの場合、これは意図した仕様ではない可能性があります。 代わりに、NULL で終わる配列の指定が想定されています。これを行うには、`_In_ PWSTR`を使用します。  
   
 ```cpp  
   
@@ -129,7 +129,7 @@ void Func2(_In_ PWSTR wszFileName);
   
 ```  
   
- NULL 終了の適切な仕様が不足しているが一般的です。 使用して、適切な`STR`バージョンを次の例に示すように、型を置き換えます。  
+ NULL 終了の適切な指定が一般的ではありません。 次の例に示すように、適切な `STR` バージョンを使用して、型を置き換えます。  
   
 ```cpp  
   
@@ -147,8 +147,8 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
   
 ```  
   
-## <a name="outrange"></a>\_Out_range\_  
- パラメーターがポインターであり使用して、ポインターが指している要素の値の範囲を表現したい場合`_Deref_out_range_`の代わりに`_Out_range_`します。 次の例の範囲で * pcbFilled を表現すると、pcbFilled ではありません。  
+## <a name="_out_range_"></a>\_Out_range\_  
+ パラメーターがポインターであり、ポインターによってポイントされている要素の値の範囲を表す場合は、`_Out_range_`ではなく `_Deref_out_range_` を使用します。 次の例では、* pcbFilled つぶしの範囲を指定しています。 pcbFilled つぶされていません。  
   
 ```cpp  
   
@@ -168,10 +168,10 @@ void Func2(
   
 ```  
   
- `_Deref_out_range_(0, cbSize)` 推測するためにはいくつかのツールには必須ではありません`_Out_writes_to_(cbSize,*pcbFilled)`が完全を期すのためここで表示されます。  
+ `_Deref_out_range_(0, cbSize)` は `_Out_writes_to_(cbSize,*pcbFilled)`から推論できるため、一部のツールでは厳密には必須ではありませんが、完全を期すためにここに示します。  
   
-## <a name="wrong-context-in-when"></a>コンテキストが正しくない\_とき\_  
- もう 1 つのよくある間違いでは、前提条件の後の状態の評価を使用します。 次の例では、`_Requires_lock_held_`の前提条件です。  
+## <a name="wrong-context-in-_when_"></a>\_ 時に \_のコンテキストが正しくありません  
+ もう1つの一般的な誤りは、事前条件の事後評価を使用することです。 次の例では、`_Requires_lock_held_` が事前条件です。  
   
 ```cpp  
   
@@ -185,10 +185,10 @@ int Func2(_In_ MyData *p, int flag);
   
 ```  
   
- 式`result`前の状態では利用できません後の状態の値を参照します。  
+ 式 `result` が、事前状態では使用できない状態の後の値を参照しています。  
   
-## <a name="true-in-success"></a>場合は TRUE\_成功。\_  
- 戻り値が 0 以外の場合、関数が成功した場合は、使用`return != 0`の代わりに、成功条件として`return == TRUE`します。 0 以外は必ずしものコンパイラを提供する実際の値の等価性`TRUE`します。 パラメーターを`_Success_`式であるし、対応すると、次の式が評価されます: `return != 0`、 `return != false`、 `return != FALSE`、および`return`パラメーターや比較は不要です。  
+## <a name="true-in-_success_"></a>\_成功した場合は TRUE\_  
+ 戻り値が0以外の場合に関数が成功した場合は、`return == TRUE`ではなく、成功の条件として `return != 0` を使用します。 0以外の場合、必ずしもコンパイラが `TRUE`に提供する実際の値と等価であるとは限りません。 `_Success_` するパラメーターは式であり、次の式は等価として評価されます。 `return != 0`、`return != false`、`return != FALSE`、および `return` をパラメーターまたは比較なしで評価します。  
   
 ```cpp  
   
@@ -207,7 +207,7 @@ BOOL WINAPI TryEnterCriticalSection(
 ```  
   
 ## <a name="reference-variable"></a>参照変数  
- 参照変数、以前のバージョンの SAL 注釈の対象として、暗黙的なポインターを使用およびの追加に必要な`__deref`to 参照変数に接続されている注釈。 このバージョンは、オブジェクト自体を使用し、追加は必要ありません`_Deref_`します。  
+ 参照変数の場合、以前のバージョンの SAL では、暗黙的なポインターを注釈のターゲットとして使用し、参照変数に関連付けられている注釈に `__deref` を追加する必要があります。 このバージョンはオブジェクト自体を使用します。追加の `_Deref_`は必要ありません。  
   
 ```cpp  
   
@@ -226,7 +226,7 @@ void Func2(
 ```  
   
 ## <a name="annotations-on-return-values"></a>戻り値に関する注釈  
- 次の例では、戻り値の注釈内で一般的な問題を示します。  
+ 次の例は、戻り値の注釈における一般的な問題を示しています。  
   
 ```cpp  
   
@@ -238,14 +238,14 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
   
 ```  
   
- この例で`_Out_opt_`という、ポインターが前提条件の一部として NULL をする可能性があります。 ただし、前提条件は、戻り値に適用できません。 適切な注釈は、この場合、`_Ret_maybenull_`します。  
+ この例では、`_Out_opt_` は、前提条件の一部としてポインターが NULL である可能性があることを示しています。 ただし、事前条件を戻り値に適用することはできません。 この場合、正しい注釈は `_Ret_maybenull_`ます。  
   
-## <a name="see-also"></a>関連項目  
- [SAL 注釈を使用して C/C++ のコード障害を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL について](../code-quality/understanding-sal.md)   
- [関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)   
+## <a name="see-also"></a>参照  
+ [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL](../code-quality/understanding-sal.md)  について  
+ [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
  [構造体とクラスに注釈を付ける](../code-quality/annotating-structs-and-classes.md)   
  [ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)   
- [注釈を適用するタイミングと場所を指定します。](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
  [組み込み関数](../code-quality/intrinsic-functions.md)

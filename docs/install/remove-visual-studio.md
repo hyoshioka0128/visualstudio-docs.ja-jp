@@ -2,7 +2,7 @@
 title: Visual Studio の削除
 titleSuffix: ''
 description: コンピューターから Visual Studio を完全に削除する詳細な手順を説明します。
-ms.date: 03/30/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -15,42 +15,50 @@ f1_keywords:
 - clean up
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
-author: heaths
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e363065d96169660817a548fb97d39f09cf679c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810391"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649205"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio の削除
 
-致命的なエラーが発生して Visual Studio の修復またはアンインストールができない場合は、`InstallCleanup.exe` ツールを実行して Visual Studio 2017 または Visual Studio 2019 のすべてのインストール済みインスタンスのインストール ファイルと製品情報を削除することができます。 このツールの実行は、修復またはアンインストールに失敗した場合の最終手段としてのみ行ってください。その他の Visual Studio のインストールやその他の製品の機能がアンインストールされ、後で修復が必要になる場合もあります。
+致命的なエラーが発生して Visual Studio の修復またはアンインストールができない場合は、`InstallCleanup.exe` ツールを実行して Visual Studio 2017 または Visual Studio 2019 のすべてのインストール済みインスタンスのインストール ファイルと製品情報を削除することができます。
 
-次の手順では、以下の動作のコマンドライン スイッチでツールを実行することができます。
+> [!WARNING]
+> InstallCleanup ツールは、修復またはアンインストールが失敗した場合の**最終手段としてのみ**使用してください。 このツールを使うと、他の Visual Studio インストールまたは他の製品の機能がアンインストールされ、場合によっては修復や再インストールが必要になる可能性があります。
 
-| 切り替え | 動作 |
+## <a name="run-installcleanupexe"></a>InstallCleanup.exe を実行する
+
+`InstallCleanup.exe` ツールでは、次のいずれかのコマンドライン スイッチを使用できます。
+
+| Switch | 動作 |
 | ------ | -------- |
-| `-i`   | その他のスイッチが渡されていない場合、このスイッチが既定で、メインのインストール ディレクトリと製品情報のみが削除されます。 `InstallCleanup.exe` ツールを実行した後に同じバージョンを再インストールする予定がある場合は、この動作が適しています。 |
-| `-f`   | このスイッチを指定すると、メインのインストール ディレクトリ、製品情報、そして他の Visual Studio のインストールまたは他の製品と共有できるインストール ディレクトリ外にインストールされているその他の多くの機能が削除されます。 この動作は、後で再インストールせずに Visual Studio を削除する場合に適しています。 |
+| `-i`   | このスイッチは、他のスイッチが渡されない場合の既定値です。 メインのインストール ディレクトリと製品情報のみが削除されます。 `InstallCleanup.exe` ツールを実行した後に同じバージョンの Visual Studio を再インストールする場合は、このスイッチを使用します。 |
+| `-f`   | このスイッチを指定すると、メインのインストール ディレクトリ、製品情報、インストール ディレクトリ以外にインストールされているその他の多くの機能 (他の Visual Studio のインストールまたは他の製品とも共有されている可能性があります) が削除されます。 このスイッチは、Visual Studio を削除し、後で再インストールしない場合に使用します。 |
+
+`InstallCleanup.exe` ツールの実行方法は次のとおりです。
 
 1. Visual Studio インストーラーを閉じます。
-2. 管理者のコマンド プロンプトを開きます。 管理者のコマンド プロンプトを開くには、以下の手順に従います。
+1. 管理者のコマンド プロンプトを開きます。 管理者のコマンド プロンプトを開くには、以下の手順に従います。
    * [検索するテキストをここに入力] ボックスに、「**cmd**」と入力します。
-   * **[Command Prompt]** を右クリックし、**[管理者として実行]** をクリックします。
-3. `InstallCleanup.exe` ユーティリティの完全なパスを入力して、必要なコマンドライン スイッチを渡します。 既定では、ユーティリティのパスは次のようになります。
+   * **[コマンド プロンプト]** を右クリックしてから、 **[管理者として実行]** を選択します。
+1. `InstallCleanup.exe` ツールの完全パスを入力し、必要なコマンドライン スイッチを追加します。 既定では、ツールのパスは次のようになります。 スペースを含むコマンドは二重引用符で囲みます。
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
-通常は `%ProgramFiles(x86)%\Microsoft Visual Studio` にある `InstallCleanup.exe` が Visual Studio インストーラー ディレクトリの下に見つからない場合は、[Visual Studio のインストール](install-visual-studio.md)の手順に従い、ワークロード選択画面が表示されたら、ウィンドウを閉じて前の手順をもう一度実行します。
+   > [!NOTE]
+   > Visual Studio インストーラー ディレクトリ以下に `InstallCleanup.exe` が見つからない場合は (常に `%ProgramFiles(x86)%\Microsoft Visual Studio` にあります)、次の手順を行います。 指示に従って [Visual Studio をインストール](install-visual-studio.md)します。 次にワークロードの選択画面が表示されたら、ウィンドウを閉じて、このページの手順に従います。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295672"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918876"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>プロファイルを定義して UML を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74295672"
 
  いくつかのプロファイルは、これをサポートするエディションの Visual Studio をインストールするときに、同時にインストールされます。 この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。 これらのプロファイルの詳細およびステレオタイプを適用する方法については、「[プロファイルとステレオタイプを使用](../modeling/customize-your-model-with-profiles-and-stereotypes.md)してモデルをカスタマイズする」を参照してください。
 
- 独自のプロファイルを定義して、UML を特定のビジネス領域またはアーキテクチャに適応させ、拡張することができます。 例 :
+ 独自のプロファイルを定義して、UML を特定のビジネス領域またはアーキテクチャに適応させ、拡張することができます。 例:
 
 - Web サイトを頻繁に定義する場合は、クラス図のクラスに適用できる «WebPage» ステレオタイプを提供する独自のプロファイルを定義できます。 これにより、クラス図を使用して Web サイトを計画できます。 各 «WebPage» クラスは、ページのコンテンツやスタイルなどの追加のプロパティを持つことになります。
 
@@ -76,7 +76,7 @@ ms.locfileid: "74295672"
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の他のユーザーに拡張ファイルを送信して、コンピューターにインストールしてもらいます。
 
 ## <a name="AddProfile"></a>Visual Studio 拡張機能にプロファイルを追加する方法
- プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、「 [Visual Studio 拡張機能の配置](https://go.microsoft.com/fwlink/?LinkId=160780)」を参照してください。
+ プロファイルをインストールし、他のユーザーに送信できるようにするには、プロファイルを Visual Studio 拡張機能に追加する必要があります。 詳細については、「 [Visual Studio 拡張機能の配置](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)」を参照してください。
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>新しい Visual Studio 拡張機能でプロファイルを定義するには
 
@@ -105,7 +105,7 @@ ms.locfileid: "74295672"
 
 5. **[資産]** ページで、プロファイルを説明する行を追加します。
 
-   - **[新規]** をクリックします。 **[新しい資産の追加]** ダイアログボックスで、次のようにフィールドを設定します。
+   - [新規] をクリックします。 **[新しい資産の追加]** ダイアログボックスで、次のようにフィールドを設定します。
 
    - **型**を `Microsoft.VisualStudio.UmlProfile` に設定します
 
@@ -196,7 +196,7 @@ ms.locfileid: "74295672"
     > [!NOTE]
     > Visual Studio 拡張機能プロジェクトを使用して拡張機能を構築する場合は、ソリューション エクスプローラーを使用して新しいフォルダーをプロジェクトに追加します。
 
-3. 新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://go.microsoft.com/fwlink/?LinkId=160782)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
+3. 新しいディレクトリの名前を、ローカライズ カルチャを示す短い ISO コードに変更します (たとえば、ブルガリア語の場合は `bg`、フランス語の場合は `fr`)。 `fr-CA` のような特定カルチャではなく、通常 2 つの文字で構成されるニュートラル カルチャ コードを使用する必要があります。 カルチャコードの詳細については、「 [CultureInfo メソッド](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)」を参照してください。これにより、カルチャコードの完全な一覧が提供されます。
 
 4. 既定のプロファイルを新しいディレクトリにコピーします。 ファイル名は変更しないでください。
 
@@ -220,7 +220,8 @@ ms.locfileid: "74295672"
 7. 前のセクションで説明したように、拡張機能プロジェクトをビルドするか、またはすべてのファイルを圧縮して、Visual Studio 拡張機能を生成します。
 
 ## <a name="Schema"></a>プロファイルの構造
- UML プロファイルの XSD ファイルについては、「[ステレオタイプとプロファイルの xsd の設定](https://go.microsoft.com/fwlink/?LinkID=213811)」のサンプルを参照してください。 プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
+
+ プロファイル ファイルを編集しやすいように、次の場所に `.xsd` ファイルをインストールします。
 
  **%ProgramFiles%\Microsoft Visual Studio [version] \ xmlschema**
 
@@ -364,5 +365,6 @@ ms.locfileid: "74295672"
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。
 
-## <a name="see-also"></a>関連項目
- [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)サンプル: ステレオタイプに[よる uml 要素の色](https://go.microsoft.com/fwlink/?LinkID=213841)の[設定サンプル: ステレオタイプの設定、プロファイル XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+## <a name="see-also"></a>参照
+ [Uml モデル要素にステレオタイプを追加する](../modeling/add-stereotypes-to-uml-model-elements.md)[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [uml モデルの標準ステレオタイプ](../modeling/standard-stereotypes-for-uml-models.md)
+ 

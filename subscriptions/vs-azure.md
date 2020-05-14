@@ -3,15 +3,16 @@ title: Microsoft Azure 特典 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
+ms.date: 04/28/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810041"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564174"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -23,20 +24,47 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
    > [!div class="mx-imgBorder"]
    > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
 
-3. 既存の Azure サブスクリプションがない場合は、Azure サブスクリプションの作成に必要な情報を入力して、使用条件に同意するチェック ボックスをオンにしてから、 **[サインアップ]** をクリックします。
+3. 既存の Azure サブスクリプションがない場合は、必要な情報を入力して Azure サブスクリプションを作成するように求められます。  最初の手順は、ご自分の個人情報を入力してから、 **[次へ]** をクリックすることです。
    > [!div class="mx-imgBorder"]
-   > ![Azure のサインアップ](_img/vs-azure/vs-azure-sign-up-cropped.png) 既存のサブスクリプションがある場合は、このチェック ボックスをオンにして契約に同意し、 **[サインアップ]** をクリックします。
+   > ![Azure のサインアップ](_img/vs-azure/vs-azure-about-you.png)
 
-4. アカウントの準備ができると、Azure サポート プラン (別売り) を選ぶか、Azure サブスクリプションで始めることができます。
+4. 次に、簡単な確認コードを使用して本人確認を行う必要があります。 電話番号を入力し、コードをテキストで受け取るか、または電話で受け取るかを選択します。  受け取ったコードを入力して、 **[コードの確認]** をクリックします。   
    > [!div class="mx-imgBorder"]
-   > ![Azure 準備作業](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Azure 準備作業](_img/vs-azure/vs-azure-identity.png)
 
-5. Azure ダッシュボードのクイック スタート センターが読み込まれます。  
+5. 最後の手順として、チェックボックスをオンにして使用条件に同意した後、 **[サインアップ]** をクリックします。  必要な作業は以上です。
    > [!div class="mx-imgBorder"]
-   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Azure 準備作業](_img/vs-azure/vs-azure-agreement.png)
 
-6. 後で簡単にアクセスできるようにするには、[Azure Portal](https://portal.azure.com) にブックマークを付けます。
+0. Azure ダッシュボードのクイック スタート センターが読み込まれます。  
+   > [!div class="mx-imgBorder"]
+   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-quick-start.png) 
 
+0. 後で簡単にアクセスできるように、[Azure portal](https://portal.azure.com) をブックマークします。
+
+## <a name="maintain-a-subscription-to-use-monthly-credits"></a>月単位のクレジットを使用するサブスクリプションを保守する
+Visual Studio サブスクリプションの有効期限が切れた場合、または削除された場合、毎月の Azure  Dev/Test の個別クレジットを含め、すべてのサブスクリプション特典が利用できなくなります。 毎月のクレジットで Azure の使用を続けるには、サブスクリプションを更新するか、新しいサブスクリプションを購入するか、Azure の Dev/Test の個別クレジットが含まれる有効なサブスクリプションに Azure 特典を移す必要があります。  
+
+> [!IMPORTANT]
+> 現在の Azure サブスクリプションが無効になるか、データにアクセスできなくなる前に、リソースを別の Azure サブスクリプションに移す必要があります。  
+
+Azure の毎月のクレジットは、いくつかの方法で引き続きご利用いただけます。  Azure リソースを保存するには、下で選択したアクションに関係なく、別の Azure サブスクリプションに[リソースを移す](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)必要があります。 
+
+- **Visual Studio サブスクリプションを直接購入する場合**、[Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=) で新しいサブスクリプションを購入するか、サブスクリプションを更新します。  
+- **組織の誰かが代表してサブスクリプションを購入する場合**、[Visual Studio サブスクリプションの管理者に問い合わせ](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)、必要な毎月のクレジットが与えられるサブスクリプションを要求してください。  
+- 別の Microsoft アカウントに関連付けられている同じサブスクリプション レベルで**別の Visual Studio サブスクリプションがアクティブになっている**場合、Visual Studio [サブスクリプション ポータル](https://my.visualstudio.com/subscriptions)で[代替アカウントを追加する](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)ことで、別の有効な Visual Studio サブスクリプションに Azure 特典を移すことができます。  
+
+以下の適格性テーブルを使用して、各サブスクリプションの種類に含まれるクレジットの数を確認してください。  
+
+
+## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Azure サブスクリプションを従量課金制に変換する
+
+Visual Studio のサブスクリプションまたはクレジットは不要になったものの、Azure リソースを引き続きご利用になる場合は、別の Azure サブスクリプションに[リソースを移して](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)ください。あるいは[使用制限をなくし](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)、Azure サブスクリプションを従量課金制に変更してください。 
+
+いずれの措置も行わない場合、電子メールの通知を受信してから 30 日後にご利用の Azure サブスクリプションが無効になり、削除されます。  
+
+## <a name="have-a-question"></a>質問はございますか?
+リソースの移動、使用制限の削除、あるいは Azure に関するその他のトピックに関して質問がございましたら、Azure portal で [Azure サポート要求を提出](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)することができます。 
 
 ## <a name="eligibility"></a>特典を受ける条件
 |                 サブスクリプション レベル/プログラム                 |           特長           |                         更新可能かどうか                          |
@@ -78,37 +106,18 @@ A: Azure ポータルからサポート インシデントを送信するには�
 ### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q:自分の Azure DevTest の個人クレジットを使用して作成した知的財産は、だれのものになりますか。
 A: 従業員が生成した知的財産で、その会社が提供するリソースに対して作成されたものは、そのリソースを提供する会社の知的財産となります。 したがって、お客様がご自分の雇用主から Visual Studio サブスクリプションを受け取った場合は、その知的財産のポリシーが適用されます。 
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q:間もなく Azure にアクセスできなくなるというメッセージが届きました。  Azure の使用を続けるにはどうすればよいですか。
-A: Visual Studio サブスクリプションに関連付けられている Azure 特典を使用しているときに、サブスクリプションが失効するか、取り除かれるとこのメールが届きます。  Azure の使用を続ける場合、いくつかの選択肢があります。
-
-**推奨アクション:**
-
-Visual Studio の Azure DevTest の個人クレジットと割引の使用を続けるには、次のいずれかの手順を行います。
-
-チームまたは組織の誰かが代理でサブスクリプションを購入する場合、組織の Visual Studio 管理者に連絡し、Azure DevTest の個人クレジットに必要な金額を与える Visual Studio サブスクリプションを依頼します。   前のサブスクリプションが割り当てられたものと同じユーザー ID に新しいサブスクリプションを割り当てるように管理者に依頼してください。Azure サブスクリプションを転送する必要がなくなります。
-
-サブスクリプションを直接購入できる場合、次のいずれかを行ってください。
-1. Visual Studio Marketplace から Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) または Visual Studio [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) のクラウド年間サブスクリプションを購入します。
-2. [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) で現在のサブスクリプションを更新すれば、50% 以上の割引が受けられます。
-
-すべての[サブスクリプションとその特典](https://visualstudio.microsoft.com/vs/pricing/)を比較してみてください。
-
-Microsoft アカウントに**同じ**サブスクリプション レベルで別の Visual Studio サブスクリプションがアクティブになっている場合、Visual Studio サブスクリプション ポータルで[代替アカウント](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions)を追加することで、そのアクティブ サブスクリプションをこの Azure 特典にリンクできます。 それがうまくいかない場合、Visual Studio のアクティブ サブスクリプションに [Azure 特典を転送](/azure/billing/billing-subscription-transfer/)してみることができます。
-
-Microsoft アカウントに**異なる**サブスクリプション レベルで別の Visual Studio サブスクリプションがアクティブになっている場合、[Azure サポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)にサポートを要請してください。
-
-ご利用のサブスクリプションに使用制限があり、失効前に何の措置もとらない場合、Azure サブスクリプションは無効になります。 従量課金制プランに変更して使用を続けるには、支払い方法を追加して[使用制限を解除](/azure/billing/billing-spending-limit/)してください。
-
-この Visual Studio Azure サブスクリプションを続けない場合、仮想マシンやデータベースなどのリソースを別の Azure サブスクリプションに転送し、続けないサブスクリプションをいつでも[キャンセル](https://azure.microsoft.com/support/cancel-account/)できます。
-
-このメールが間違いで配信された場合、[Azure カスタマー サポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)にお問い合わせください。
-
 ## <a name="support-resources"></a>サポート リソース
 - Azure に関するヘルプが必要ですか。  以下のリソースを確認してください。
   - テクニカル サポート: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-  - [Azure ドキュメント](/azure/)
+  - [Azure のヒントとコツ](https://microsoft.github.io/AzureTipsAndTricks/ "Azure のヒントとコツ") 
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Microsoft のツールとサービスの詳細については、次のドキュメントを参照してください。

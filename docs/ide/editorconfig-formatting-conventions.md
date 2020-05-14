@@ -1,24 +1,24 @@
 ---
 title: EditorConfig での .NET の書式規則
-ms.date: 07/17/2019
+ms.date: 04/02/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 42f1ab99a82f402ef6eced09ad5e47cf54122b86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652800"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892763"
 ---
 # <a name="formatting-conventions"></a>書式規則
 
@@ -61,11 +61,10 @@ dotnet_separate_import_directive_groups = true
 
 |||
 |-|-|
-| **規則の名前** | dotnet_sort_system_directives_first |
+| **ルール名** | dotnet_sort_system_directives_first |
 | **該当言語** | C# および Visual Basic |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - System.* `using` ディレクティブをアルファベット順に並べ替え、他の using ディレクティブの前に配置します。<br /><br />`false` - System.* `using` ディレクティブを他の `using` ディレクティブの前に配置しません。 |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -85,11 +84,10 @@ using System.Threading.Tasks;
 
 |||
 |-|-|
-| **規則の名前** | dotnet_separate_import_directive_groups |
+| **ルール名** | dotnet_separate_import_directive_groups |
 | **該当言語** | C# および Visual Basic |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.5 |
 | **値** | `true` - `using` ディレクティブ グループの間に空白行を配置します。<br /><br />`false` - `using` ディレクティブ グループの間に空白行を配置しません。 |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -151,6 +149,8 @@ using Octokit;
 - [折り返しオプション](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [using ディレクティブ オプション](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>改行オプション
 
@@ -176,11 +176,10 @@ csharp_new_line_between_query_expression_clauses = true
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_before_open_brace |
+| **ルール名** | csharp_new_line_before_open_brace |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `all` - 中かっこはすべての式の新しい行に配置する必要があります ("Allman" スタイル)。<br /><br />`none` - 中かっこはすべての式の同じ行に配置する必要があります ("K&R")。<br /><br />`accessors`、`anonymous_methods`、`anonymous_types`、`control_blocks`、`events`、`indexers`、`lambdas`、`local_functions`、`methods`、`object_collection_array_initializers`、`properties`、`types` - 中かっこは指定されたコード要素の新しい行に配置する必要があります ("Allman" スタイル)。 |
-| **Visual Studio の既定値** | `all` |
 
 コード例:
 
@@ -206,11 +205,10 @@ void MyMethod() {
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_before_else |
+| **ルール名** | csharp_new_line_before_else |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - 新しい行に `else` ステートメントを配置します。<br /><br />`false` - 同じ行に `else` ステートメントを配置します。 |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -235,11 +233,10 @@ if (...) {
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_before_catch |
+| **ルール名** | csharp_new_line_before_catch |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - 新しい行に `catch` ステートメントを配置します。<br /><br />`false` - 同じ行に `catch` ステートメントを配置します。 |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -264,11 +261,10 @@ try {
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_before_finally |
+| **ルール名** | csharp_new_line_before_finally |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - `finally` ステートメントを右中かっこの後の新しい行に配置する必要があります。<br /><br />`false` - `finally` ステートメントを右中かっこと同じ行に配置する必要があります。 |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -298,11 +294,10 @@ try {
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_before_members_in_object_initializers |
+| **ルール名** | csharp_new_line_before_members_in_object_initializers |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - オブジェクト初期化子のメンバーを別の行に配置する必要があります<br /><br />`false` - オブジェクト初期化子のメンバーを同じ行に配置する必要があります |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -325,11 +320,10 @@ var z = new B()
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_before_members_in_anonymous_types |
+| **ルール名** | csharp_new_line_before_members_in_anonymous_types |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - 匿名型のメンバーを別の行に配置する必要があります<br /><br />`false` - 匿名型のメンバーを同じ行に配置する必要があります |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -352,11 +346,10 @@ var z = new
 
 |||
 |-|-|
-| **規則の名前** | csharp_new_line_between_query_expression_clauses |
+| **ルール名** | csharp_new_line_between_query_expression_clauses |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - クエリ式の句の要素を別の行に配置する必要があります<br /><br />`false` - クエリ式の句の要素を同じ行に配置する必要があります |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -392,11 +385,10 @@ csharp_indent_case_contents_when_block = true
 
 |||
 |-|-|
-| **規則の名前** | csharp_indent_case_contents |
+| **ルール名** | csharp_indent_case_contents |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - `switch` ケース コンテンツにインデントを付けます<br /><br />`false` - `switch` ケース コンテンツにインデントを付けません |
-| **Visual Studio の既定値** | `true` |
 
 - このルールが **true** に設定されている場合は、i。
 - このルールが **false** に設定されている場合は、d。
@@ -435,11 +427,10 @@ switch(c) {
 
 |||
 |-|-|
-| **規則の名前** | csharp_indent_switch_labels |
+| **ルール名** | csharp_indent_switch_labels |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - `switch` ラベルをインデントします<br /><br />`false` - `switch` ラベルをインデントしません |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -475,11 +466,10 @@ default:
 
 |||
 |-|-|
-| **規則の名前** | csharp_indent_labels |
+| **ルール名** | csharp_indent_labels |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `flush_left` - ラベルは左端の列に配置されます<br /><br />`one_less_than_current` - ラベルは、現在のコンテキストのインデントを 1 つ減らした位置に配置されます<br /><br />`no_change` - ラベルは、現在のコンテキストと同じインデントで配置されます |
-| **Visual Studio の既定値** | `no_change` |
 
 コード例:
 
@@ -528,10 +518,9 @@ class C
 
 |||
 |-|-|
-| **規則の名前** | csharp_indent_block_contents |
+| **ルール名** | csharp_indent_block_contents |
 | **該当言語** | C# |
 | **値** | `true` - <br /><br />`false` -  |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -553,10 +542,9 @@ Console.WriteLine("Hello");
 
 |||
 |-|-|
-| **規則の名前** | csharp_indent_braces |
+| **ルール名** | csharp_indent_braces |
 | **該当言語** | C# |
 | **値** | `true` - <br /><br />`false` -  |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -578,10 +566,9 @@ static void Hello()
 
 |||
 |-|-|
-| **規則の名前** | csharp_indent_case_contents_when_block |
+| **ルール名** | csharp_indent_case_contents_when_block |
 | **該当言語** | C# |
 | **値** | `true` - <br /><br />`false` -  |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -638,11 +625,10 @@ csharp_space_between_square_brackets = false
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_after_cast |
+| **ルール名** | csharp_space_after_cast |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - キャストと値の間に空白文字を配置します<br /><br />`false` - キャストと値の間の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -658,11 +644,10 @@ int y = (int)x;
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_after_keywords_in_control_flow_statements |
+| **ルール名** | csharp_space_after_keywords_in_control_flow_statements |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - `for` ループなど、制御フロー ステートメントのキーワードの後に空白文字を配置します<br /><br />`false` - `for` ループなど、制御フロー ステートメントのキーワードの後の空白文字を削除します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -678,11 +663,10 @@ for(int i;i<x;i++) { ... }
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_parentheses |
+| **ルール名** | csharp_space_between_parentheses |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `control_flow_statements` - 制御フロー ステートメントのかっこの間にスペースを配置します<br /><br />`expressions` - 式のかっこの間にスペースを配置します<br /><br />`type_casts` - 型キャストのかっこの間にスペースを配置します |
-| **Visual Studio の既定値** | `false` |
 
 このルールを省略するか、`control_flow_statements`、`expressions`、または `type_casts` 以外の値を使用する場合、設定は適用されません。
 
@@ -703,11 +687,10 @@ int y = ( int )x;
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_before_colon_in_inheritance_clause |
+| **ルール名** | csharp_space_before_colon_in_inheritance_clause |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
 | **値** | `true` - 型宣言ではベースまたはインターフェイスのコロンの前に空白文字を配置します<br /><br />`false` - 型宣言ではベースまたはインターフェイスのコロンの前の空白文字を除去します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -739,11 +722,10 @@ class C: I
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_after_colon_in_inheritance_clause |
+| **ルール名** | csharp_space_after_colon_in_inheritance_clause |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
 | **値** | `true` - 型宣言ではベースまたはインターフェイスのコロンの後に空白文字を配置します<br /><br />`false` - 型宣言ではベースまたはインターフェイスのコロンの後の空白文字を削除します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -775,11 +757,10 @@ class C :I
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_around_binary_operators |
+| **ルール名** | csharp_space_around_binary_operators |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
 | **値** | `before_and_after` - バイナリ演算子の前後にスペースを挿入します<br /><br />`none` - バイナリ演算子の前後のスペースを削除します<br /><br />`ignore` - バイナリ演算子の前後のスペースを無視します |
-| **Visual Studio の既定値** | `before_and_after` |
 
 このルールを省略するか、`before_and_after`、`none`、または `ignore` 以外の値を使用する場合、設定は適用されません。
 
@@ -800,11 +781,10 @@ return x  *  (x-y);
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **ルール名** | csharp_space_between_method_declaration_parameter_list_parentheses |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - メソッド宣言パラメーター リストの始めかっこの後と終わりかっこの前に空白文字を配置します<br /><br />`false` - メソッド宣言パラメーター リストの始めかっこの後と終わりかっこの前の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -820,11 +800,10 @@ void Bark(int x) { ... }
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_method_declaration_empty_parameter_list_parentheses |
+| **ルール名** | csharp_space_between_method_declaration_empty_parameter_list_parentheses |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
 | **値** | `true` - メソッド宣言の空のパラメーター リストのかっこ内にスペースを挿入します<br /><br />`false` - メソッド宣言の空のパラメーター リストのかっこ内にスペースを削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -856,10 +835,9 @@ void Goo(int x)
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **ルール名** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **該当言語** | C# |
 | **値** | `true` - メソッド宣言のメソッド名と始めかっこの間に空白文字を配置します<br /><br />`false` - メソッド宣言のメソッド名と始めかっこの間の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -875,11 +853,10 @@ void M() { }
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_method_call_parameter_list_parentheses |
+| **ルール名** | csharp_space_between_method_call_parameter_list_parentheses |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - メソッド呼び出しの始めかっこの後と終わりかっこの前に空白文字を配置します<br /><br />`false` - メソッド呼び出しの始めかっこの後と終わりかっこの前の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -895,11 +872,10 @@ MyMethod(argument);
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_method_call_empty_parameter_list_parentheses |
+| **ルール名** | csharp_space_between_method_call_empty_parameter_list_parentheses |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
 | **値** | `true` - 空の引数リストのかっこ内にスペースを挿入します<br /><br />`false` - 空の引数リストのかっこ内にスペースを削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -931,11 +907,10 @@ void Goo(int x)
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_method_call_name_and_opening_parenthesis |
+| **ルール名** | csharp_space_between_method_call_name_and_opening_parenthesis |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
 | **値** | `true` - メソッド呼び出し名と左かっこの間にスペースを挿入します<br /><br />`false` - メソッド呼び出し名と左かっこの間にスペースを削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -967,10 +942,9 @@ void Goo(int x)
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_after_comma |
+| **ルール名** | csharp_space_after_comma |
 | **該当言語** | C# |
 | **値** | `true` - コンマの後にスペースを挿入します<br /><br />`false` - コンマの後のスペースを削除します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -986,10 +960,9 @@ int[] x = new int[] { 1,2,3,4,5 }
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_before_comma |
+| **ルール名** | csharp_space_before_comma |
 | **該当言語** | C# |
 | **値** | `true` - コンマの前に空白文字を挿入します<br /><br />`false` - コンマの前の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1005,10 +978,9 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_after_dot |
+| **ルール名** | csharp_space_after_dot |
 | **該当言語** | C# |
 | **値** | `true` - ドットの後にスペースを挿入します<br /><br />`false` - ドットの後のスペースを削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1024,10 +996,9 @@ this.Goo();
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_before_dot |
+| **ルール名** | csharp_space_before_dot |
 | **該当言語** | C# |
 | **値** | `true` - ドットの前に空白文字を挿入します <br /><br />`false` - ドットの前の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1043,10 +1014,9 @@ this.Goo();
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_after_semicolon_in_for_statement |
+| **ルール名** | csharp_space_after_semicolon_in_for_statement |
 | **該当言語** | C# |
 | **値** | `true` - `for` ステートメントの各セミコロンの後に空白文字を挿入します<br /><br />`false` - `for` ステートメントの各セミコロンの後の空白文字を削除します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -1062,10 +1032,9 @@ for (int i = 0;i < x.Length;i++)
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_before_semicolon_in_for_statement |
+| **ルール名** | csharp_space_before_semicolon_in_for_statement |
 | **該当言語** | C# |
 | **値** | `true` - `for` ステートメントの各セミコロンの前に空白文字を挿入します <br /><br />`false` - `for` ステートメントの各セミコロンの前の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1081,10 +1050,9 @@ for (int i = 0; i < x.Length; i++)
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_around_declaration_statements |
+| **ルール名** | csharp_space_around_declaration_statements |
 | **該当言語** | C# |
 | **値** | `ignore` - 宣言ステートメント内の余分な空白文字を削除しません<br /><br />`false` - 宣言ステートメント内の余分な空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1100,10 +1068,9 @@ int x = 0;
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_before_open_square_brackets |
+| **ルール名** | csharp_space_before_open_square_brackets |
 | **該当言語** | C# |
 | **値** | `true` - 始め角かっこ `[` の前に空白文字を挿入します <br /><br />`false` - 始め角かっこ `[` の前の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1119,10 +1086,9 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_empty_square_brackets |
+| **ルール名** | csharp_space_between_empty_square_brackets |
 | **該当言語** | C# |
 | **値** | `true` - 空の角かっこ `[ ]` の間に空白文字を挿入します <br /><br />`false` - 空の角かっこ `[]` の間の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1138,10 +1104,9 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
 |||
 |-|-|
-| **規則の名前** | csharp_space_between_square_brackets |
+| **ルール名** | csharp_space_between_square_brackets |
 | **該当言語** | C# |
 | **値** | `true` - 空ではない角かっこ `[ 0 ]` に空白文字を挿入します <br /><br />`false` - 空ではない角かっこ `[0]` の空白文字を削除します |
-| **Visual Studio の既定値** | `false` |
 
 コード例:
 
@@ -1170,11 +1135,10 @@ csharp_preserve_single_line_blocks = true
 
 |||
 |-|-|
-| **規則の名前** | csharp_preserve_single_line_statements |
+| **ルール名** | csharp_preserve_single_line_statements |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - 1 行に複数のステートメントとメンバー宣言を表示します<br /><br />`false` - 別の行にステートメントとメンバー宣言を表示します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -1191,11 +1155,10 @@ string name = "John";
 
 |||
 |-|-|
-| **規則の名前** | csharp_preserve_single_line_blocks |
+| **ルール名** | csharp_preserve_single_line_blocks |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
 | **値** | `true` - コード ブロックを単一行に配置します<br /><br />`false` - コード ブロックを別の行に配置します |
-| **Visual Studio の既定値** | `true` |
 
 コード例:
 
@@ -1207,6 +1170,46 @@ public int Foo { get; set; }
 public int MyProperty
 {
     get; set;
+}
+```
+
+### <a name="using-directive-options"></a>using ディレクティブ オプション
+
+この書式ルールは、名前空間の内部と外部に配置される using ディレクティブの使用に関するものです。
+
+*.editorconfig* ファイルの例:
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **ルール名** | csharp_using_directive_placement |
+| **該当言語** | C# |
+| **導入されたバージョン** | Visual Studio 2019 バージョン 16.1 |
+| **値** | `outside_namespace` - 名前空間の外部のディレクティブが使用されます<br /><br />`inside_namespace` - 名前空間の内部のディレクティブが使用されます |
+
+コード例:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
 }
 ```
 

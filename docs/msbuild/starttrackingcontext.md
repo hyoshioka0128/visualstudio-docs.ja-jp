@@ -10,19 +10,20 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContext
 ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939210"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632109"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
+
 追跡コンテキストを開始します。
 
 ## <a name="syntax"></a>構文
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```
 
 #### <a name="parameters"></a>パラメーター
+
 [入力] `intermediateDirectory`
 
  追跡ログを格納するディレクトリ。
@@ -41,7 +43,9 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  追跡コンテキストを識別します。 この名前はログ ファイル名の作成に使用されます。
 
 ## <a name="return-value"></a>戻り値
+
  追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
+
  **ヘッダー:** *FileTracker.h*

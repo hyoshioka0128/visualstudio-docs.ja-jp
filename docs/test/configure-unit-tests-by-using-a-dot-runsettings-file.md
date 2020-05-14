@@ -2,17 +2,17 @@
 title: .runsettings ファイルを使用して単体テストを構成する
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771500"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880352"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -28,7 +28,7 @@ Visual Studio の単体テストは、 *.runsettings* ファイルを使用し�
 
 ::: moniker range="vs-2017"
 
-IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** で、 *.runsettings* ファイルを選択します。
+IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** を選択し、 *.runsettings* ファイルを選択します。
 
 ![Visual Studio 2017 の [テスト設定ファイルの選択] メニュー](media/select-test-settings-file.png)
 
@@ -50,17 +50,18 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
 
 Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指定するには、次の 3 つの方法があります。
 
-- プロジェクト ファイルまたは Directory.Build.props ファイルを使用して、プロジェクトにビルド プロパティを追加します。 プロジェクトの実行設定ファイルは、**RunSettingsFilePath** プロパティによって指定されます。 
+- プロジェクト ファイルまたは Directory.Build.props ファイルを使用して、プロジェクトにビルド プロパティを追加します。 プロジェクトの実行設定ファイルは、**RunSettingsFilePath** プロパティによって指定されます。
 
     - 現在、プロジェクト レベルの実行設定は、C#、VB、C++、および F# プロジェクトに対してサポートされています。
     - プロジェクトに対して指定したファイルにより、ソリューションで指定された他のあらゆる実行設定ファイルがオーバーライドされます。
+    - [これらの MSBuild プロパティ](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019)を使用し、runsettings ファイルのパスを指定できます。 
 
     プロジェクトに対して *.runsettings* ファイルを指定する例:
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
@@ -78,9 +79,9 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
     
       ![Visual Studio 2019 での [runsettings ファイルの自動検出] メニュー](media/vs-2019/auto-detect-runsettings-menu.png)
 
-- IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** の順に選択してから、 *.runsettings* ファイルを選択します。
+- IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** を選択し、 *.runsettings* ファイルを選択します。
 
-   ![Visual Studio 2019 の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
+   ![Visual Studio 2019 の [テスト] の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
       
    - このソリューションのルートに ".runsettings" ファイルが存在する場合は、このファイルによりオーバーライドされます。このファイルは実行されるすべてのテストに適用されます。  
    - このファイルの選択は、ローカルにのみ保持されます。 
@@ -95,13 +96,13 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
    ::: moniker range="vs-2017"
 
-   Windows の **[スタート]** メニューから、 **[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** の順に選択します。
+   Windows の **[スタート]** メニューから、 **[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** を選択します。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** の順に選択します。
+   Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** を選択します。
 
    ::: moniker-end
 
@@ -249,15 +250,16 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
 **RunConfiguration** 要素には、次の要素を含めることができます。
 
-|ノード|既定値|値|
+|ノード|Default|値|
 |-|-|-|
 |**ResultsDirectory**||テスト結果が配置されるディレクトリ。|
 |**TargetFrameworkVersion**|Framework40|.NET Core ソースの場合は `FrameworkCore10`、UWP ベースのソースの場合は `FrameworkUap10`、.NET Framework 4.5 以降の場合は `Framework45`、.NET Framework 4.0 の場合は `Framework40`、.NET Framework 3.5 の場合は `Framework35`。<br /><br />この設定では、テストを検出して実行するために使用される単体テスト フレームワークのバージョンを指定します。 これは、単体テスト プロジェクトのビルド プロパティで指定した .NET プラットフォームのバージョンと異なっていてもかまいません。<br /><br />`TargetFrameworkVersion` 要素を *.runsettings* ファイルから省略した場合、フレームワークのバージョンはビルド済みバイナリに基づいてプラットフォームにより自動的に決定されます。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapter が配置されているディレクトリの 1 つまたは複数のパス|
-|**MaxCpuCount**|1|この設定では、単体テストを実行するときに、マシンで使用可能なコアを使用してテストを並列実行する程度を制御します。 テストの実行エンジンは、使用可能な各コア上の別個のプロセスとして起動し、実行するテストが入ったコンテナーを各コアに与えます。 コンテナーとしては、アセンブリ、DLL、または関連する成果物を指定できます。 テスト コンテナーはスケジューリングの単位です。 各コンテナーでは、テストはテスト フレームワークに従って実行されます。 コンテナーが多くある場合、あるコンテナー内のテストの実行を終了したプロセスには、次の使用可能なコンテナーが与えられます。<br /><br />MaxCpuCount には次の値を指定することができます。<br /><br />n。ここで n は、1 以上、コアの数以下です。最大 n 個のプロセスが起動されます<br /><br />n。ここで n はその他の値です。起動するプロセスの数は、利用可能なコアの数まで指定できます。|
+|**MaxCpuCount**|1|この設定では、単体テストを実行するときに、マシンで使用可能なコアを使用してテストを並列実行する程度を制御します。 テストの実行エンジンは、使用可能な各コア上の別個のプロセスとして起動し、実行するテストが入ったコンテナーを各コアに与えます。 コンテナーとしては、アセンブリ、DLL、または関連する成果物を指定できます。 テスト コンテナーはスケジューリングの単位です。 各コンテナーでは、テストはテスト フレームワークに従って実行されます。 コンテナーが多くある場合、あるコンテナー内のテストの実行を終了したプロセスには、次の使用可能なコンテナーが与えられます。<br /><br />MaxCpuCount には次の値を指定することができます。<br /><br />n。ここで n は、1 以上、コアの数以下です。最大 n 個のプロセスが起動されます<br /><br />n。ここで n はその他の値です。起動するプロセスの数は、利用可能なコアの数まで指定できます。 たとえば、"n = 0" と設定すると、環境に基づいて起動するプロセスの最適な数がプラットフォームによって自動的に決定されます。|
 |**TestSessionTimeout**||指定されたタイムアウトを超えたときにユーザーがテスト セッションを終了できるようにします。 タイムアウトを設定すると、リソースが適切に消費され、テスト セッションが設定された時間に制限されます。 この設定は、**Visual Studio 2017 バージョン 15.5** 以降で使用できます。|
+|**DotnetHostPath**||testhost を実行するために使用される dotnet host へのカスタム パスを指定します。 これは、dotnet/runtime リポジトリをビルドする場合など、独自の dotnet をビルドするときに便利です。 このオプションを指定すると、testhost.exe の検索がスキップされ、常に testhost.dll が使用されます。 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>診断データ アダプター (データ コレクター)
 
@@ -325,10 +327,10 @@ public void HomePageTest()
 
 これらは、 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 属性を持つテスト メソッドを実行するテスト アダプターに固有の設定です。
 
-|構成|既定値|値|
+|構成|Default|値|
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 で、MSTest アダプターは処理速度を向上させ、よりスケーラブルになるように最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を **true** に設定します。<br /><br />たとえば、単体テスト用に指定された *app.config* ファイルがある場合は、この設定を使用することがあります。<br /><br />より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
-|**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|
+|**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager (Visual Studio 2017 では非推奨) から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|
 |**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 また、[[設定] メニューから](#ide)テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスも中止されています。 テスト実行プログラムを中止しない場合は、この値を **true** に設定します。 たとえば、コード化された UI テストの間にブラウザーの実行を維持するために、この設定を使用できます。|
 |**DeploymentEnabled**|true|値を **false** に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|
@@ -343,3 +345,4 @@ public void HomePageTest()
 - [テスト実行を構成する](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio テスト タスク (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+

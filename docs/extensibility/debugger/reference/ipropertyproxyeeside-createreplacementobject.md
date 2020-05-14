@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject |Microsoft Docs
+title: 置換オブジェクトの作成 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5621a3f32d68374339df9a6987033e5fef5e44dd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329587"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715036"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 式エバリュエーター (EE) に固有のデータ オブジェクトのコピーを作成します。
@@ -43,18 +43,18 @@ int CreateReplacementObject(
 
 ## <a name="parameters"></a>パラメーター
 `dataIn`\
-[in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)データのコピーを保持しているオブジェクト。
+[in]コピーするデータを保持する[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクト。
 
 `dataOut`\
-[out]新しいを返します`IEEDataStorage`オブジェクト。
+[アウト]新しい`IEEDataStorage`オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが指定された、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)バイトの配列を表すオブジェクト。 この入力方向のデータ オブジェクトは通常、EE によって実装されていません。 ただし、このメソッドによって返されるオブジェクトは、EE 実装できるように、EE によって実装は常に、`IEEDataStorage`でどのようなクラスが必要なインターフェイスです。
+ このメソッドには、バイト配列を表す[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクトが与えられます。 この受信データ オブジェクトは、通常 EE によって実装されません。 ただし、このメソッドによって返されるオブジェクトは常に EE によって実装され、EE が任意`IEEDataStorage`のクラスにインターフェイスを実装できるようにします。
 
- データが受信によって提供されることに注意してください。`IEEDataStorage`オブジェクトは、送信で同じデータである必要があります`IEEDataStorage`オブジェクト。
+ 受信`IEEDataStorage`オブジェクトから提供されるデータは、出力`IEEDataStorage`オブジェクト内の同じデータである必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

@@ -1,8 +1,8 @@
 ---
 title: Node.js と React のアプリを作成する
 description: このチュートリアルでは、Node.js Tools for Visual Studio を使用してアプリを作成します。
-ms.custom: mvc
-ms.date: 11/01/2019
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777947"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760091"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -72,9 +72,11 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 * Node.js ランタイムをインストールしている必要があります。
 
-    このチュートリアルは、バージョン 10.16.0 でテストされました。
+    このチュートリアルは、バージョン 12.6.2 でテストされました。
 
-    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択します)。
+    インストールされていない場合は、[Node.js](https://nodejs.org/en/download/) Web サイトから LTS バージョンをインストールして、外部のフレームワークおよびライブラリとの最善の互換性を確保することをお勧めします。 Node.js は、32 ビットおよび 64 ビット アーキテクチャ用にビルドされています。 Visual Studio の Node.js ツールは Node.js ワークロードに含まれており、両方のバージョンをサポートしています。 必要なのは 1 つだけであり、Node.js インストーラーでは、一度に 1 つのインストールのみをサポートしています。
+    
+    一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストール済みのランタイムが検出されない場合は、プロパティ ページ上のインストール済みのランタイムを参照するようにプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択し、 **[Node.exe のパス]** を設定します)。 Node.js のグローバル インストールを使用するか、または Node.js プロジェクトごとにローカル インタープリターへのパスを指定することが可能です。 
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
@@ -85,10 +87,12 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 1. 新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、 **[空の Node.js Web アプリケーション]** (JavaScript) を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、 **[空の Node.js Web アプリケーション]** (JavaScript) を選択します (このチュートリアルでは TypeScript コンパイラが使用されますが、手順では **JavaScript** テンプレートから始める必要があります)。
+    
+    表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[JavaScript]** を展開して、 **[Node.js]** を選択します。 中央のウィンドウで、 **[空白の Node.js Web アプリケーション]** を選択し、名前に「**NodejsWebAppBlank**」と入力してから、 **[OK]** を選択します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[JavaScript]** を展開して、 **[Node.js]** を選択します。 中央のウィンドウで、 **[空白の Node.js Web アプリケーション]** を選択し、名前に「**NodejsWebAppBlank**」と入力してから、 **[OK]** を選択します。
     ::: moniker-end
     **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
@@ -102,7 +106,7 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
     (3) npm ノードには、インストールされているすべての npm パッケージが表示されます。 npm ノードを右クリックすれば、ダイアログ ボックスを利用して npm パッケージを検索し、インストールできます。または、*package.json* の設定と npm ノードの右クリック オプションを利用してパッケージをインストールし、更新できます。
 
-    (4) *package.json* は、ノーカルでインストールされているパッケージのパッケージ依存関係とパッケージ バージョンを管理する目的で npm によって使用されるファイルです。 このファイルの詳細については、「[package.json configuration](../javascript/configure-packages-with-package-json.md)」 (package.json の構成) を参照してください。
+    (4) *package.json* は、ノーカルでインストールされているパッケージのパッケージ依存関係とパッケージ バージョンを管理する目的で npm によって使用されるファイルです。 詳細については、[npm パッケージの管理](../javascript/npm-package-management.md)に関するページを参照してください。
 
     (5) プロジェクト ノードの下に、*server.js* などのプロジェクト ファイルが表示されます。 *server.js* はプロジェクト スタートアップ ファイルであり、そのため、**太字**で表示されます。 プロジェクトでファイルを右クリックし、 **[Node.js スタートアップ スクリプトとして設定]** を選択することで、スタートアップ ファイルを設定できます。
 
@@ -121,11 +125,11 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 1. ソリューション エクスプローラー (右側のウィンドウ) で、プロジェクトの **npm** ノードを右クリックして、 **[新しい npm パッケージのインストール]** を選びます。
 
-    **[新しい npm パッケージのインストール]** ダイアログ ボックスでは、最新バージョンのパッケージをインストールするか、バージョンを指定してインストールできます。 最新バージョンのパッケージをインストールして予期しないエラーが発生する場合は、後の手順で説明する厳密なバージョンのパッケージをインストールする必要があります。
+    **[新しい npm パッケージのインストール]** ダイアログ ボックスでは、最新バージョンのパッケージをインストールするか、バージョンを指定してインストールできます。 最新バージョンのパッケージをインストールして予期しないエラーが発生する場合は、後の手順で説明する正確なバージョンのパッケージをインストールしてください。
 
 1. **[新しい npm パッケージのインストール]** ダイアログ ボックスで、react パッケージを探し、 **[パッケージのインストール]** を選択してインストールします。
 
-    ![npm パッケージをインストールする](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![npm パッケージをインストールする](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     **[出力]** ウィンドウを選択すると、パッケージ インストールの進捗状況が表示されます ( **[出力元の表示]** フィールドで **[npm]** を選択してください)。 インストールが済むと、**npm** ノードの下にパッケージが表示されます。
 
@@ -135,14 +139,14 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
     ```json
     "dependencies": {
-      "express": "~4.16.4",
+      "express": "~4.17.1",
       "path": "~0.12.7",
-      "react": "~16.6.0",
-      "react-dom": "~16.6.0",
-      "ts-loader": "~5.3.0",
-      "typescript": "~3.1.5",
-      "webpack": "~4.23.1",
-      "webpack-cli": "~3.1.2"
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "ts-loader": "~7.0.1",
+      "typescript": "~3.8.3",
+      "webpack": "~4.42.1",
+      "webpack-cli": "~3.3.11"
     }
     ```
 
@@ -150,13 +154,15 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 1. 変更を保存します。
 
-1. プロジェクトで **npm** ノードを右クリックし、 **[npm パッケージを更新する]** を選択します。
+1. プロジェクトで **npm** ノードを右クリックして、 **[npm パッケージのインストール]** を選択します。
+
+    このコマンドでは、npm インストール コマンドが直接実行されます。
 
     下のウィンドウで **[出力]** ウィンドウを選択すると、パッケージ インストールの進行状況が表示されます。 インストールには数分かかることがあります。結果がすぐに表示されないことがあります。 出力を確認するには、 **[出力]** ウィンドウの **[出力元の表示]** フィールドで **[Npm]** を選択していることを確認します。
 
     npm モジュールがインストールされると、ソリューション エクスプローラーの表示は次のようになります。
 
-    ![npm パッケージ](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![npm パッケージ](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > コマンド ラインを使って npm パッケージをインストールした方がよい場合は、プロジェクト ノードを右クリックし、 **[ここでコマンド プロンプトを開く]** を選びます。 Node.js の標準コマンドを使ってパッケージをインストールします。
@@ -306,7 +312,7 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
     コマンド プロンプト ウィンドウに結果が表示されます。
 
-    ![webpack を実行する](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![webpack を実行する](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     上記の出力ではなく何らかのエラーが表示される場合は、それを解決しないとアプリは動きません。 npm パッケージのバージョンがこのチュートリアルで示されているバージョンと異なる場合は、エラーの原因になる可能性があります。 エラーを修正する方法の 1 つは、前の手順で示されている正確なバージョンを使うことです。 また、これらのパッケージ バージョンの中に非推奨となったものがあるためにエラーが発生する場合は、エラーを修正するにはより新しいバージョンをインストールする必要があります。 *package.json* を使用した npm パッケージのバージョン管理に関する詳細は、「[package.json configuration](../javascript/configure-packages-with-package-json.md)」 (package.json の構成) を参照してください。
 
@@ -336,7 +342,7 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
 
 ## <a name="run-the-app"></a>アプリを実行する
 
-1. 現在のデバッグ ターゲットとして Microsoft Edge または Chrome を選択します。
+1. **Web サーバー (Google Chrome)** または **Web サーバー (Microsoft Edge)** のいずれかを現在のデバッグ ターゲットとして選択します。
 
     ::: moniker range=">=vs-2019"
     ![デバッグ ターゲットとして Chrome を選ぶ](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -345,12 +351,7 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
     ![デバッグ ターゲットとして Chrome を選ぶ](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    お使いのコンピューターで Chrome を使用できるのに、オプションとして表示されない場合は、デバッグ ターゲットのドロップダウン リストから **[Web ブラウザー (ブラウザー名)]** > **[Select Web Browser]\(Web ブラウザーの選択\)** を選択し、**Chrome** を既定のブラウザー ターゲットとして選択します。
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    お使いのコンピューターで Chrome を使用できるのに、オプションとして表示されない場合は、デバッグ ターゲットのドロップダウン リストから **[Web ブラウザー (ブラウザー名)]** > **[Google Chrome]** を選択し、**Chrome** を既定のブラウザー ターゲットとして選択します。
-    ::: moniker-end
+    Chrome をコンピューターで使用できるのにオプションには表示されない場合は、デバッグ ターゲットのドロップダウン リストから **[Browse With]\(ブラウザー\)** を選択し、Chrome を既定のブラウザーに選択します ( **[Set as Default]\(既定値として設定\)** を選択)。
 
 1. アプリを実行するには、**F5** キーを押すか ( **[デバッグ]**  >  **[デバッグの開始]** )、または緑の矢印ボタンをクリックします。
 
@@ -403,14 +404,10 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
    Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コード ベースが共有されているため、これによって最適な結果が得られます。
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
-   Microsoft Edge (Chromium) の場合は、Chrome のすべてのインスタンスもシャットダウンします。 どちらのブラウザーでも Chromium コードベースが使用されているため、これによって最適な結果が得られます。
-   ::: moniker-end
-
 2. デバッグが有効な状態でブラウザーを起動します。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 以降では、ブラウザーの起動時に `--remote-debugging-port=9222` フラグを設定することもできます。 **[デバッグ]** ツール バーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーに **Edge でのデバッグ**や **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-v16.2)を参照してください。
+    Visual Studio 2019 以降では、ブラウザーの起動時に `--remote-debugging-port=9222` フラグを設定することもできます。 **[デバッグ]** ツール バーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーに **Microsoft Edge でのデバッグ**や **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-v16.2)を参照してください。
 
     ![ブラウザーをデバッグが有効な状態で開くように設定する](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -441,13 +438,13 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
 
     ![ブレークポイントの設定](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    トランスパイルされた *app-bundle.js* ファイル内で `render()` 関数を見つけるには、**Ctrl** + **F** キーを使用します ( **[編集]**  >  **[検索と置換]**  >  **[クイック検索]** )。
+    トランスパイルされた *app-bundle.js* ファイル内で `render()` 関数を見つけるには、**Ctrl**+**F** キーを使用します ( **[編集]**  >  **[検索と置換]**  >  **[クイック検索]** )。
 
     *app.tsx* では、`render()` 関数の内部で、`return` ステートメントにブレークポイントを設定します。
 
     ![ブレークポイントの設定](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. *.tsx* ファイル (*app-bundle.js* ではなく) にブレークポイントを設定する場合は、*webpack-config.js* を更新する必要があります。 次のコードを探してください。
+2. *.tsx* ファイル (*app-bundle.js* ではなく) にブレークポイントを設定する場合は、*webpack-config.js* を更新する必要があります。 次のコードを
 
     ```javascript
     output: {
@@ -466,7 +463,7 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
 
     これは、Visual Studio でのデバッグを有効にするための開発専用の設定です。 この設定を使用すると、アプリをビルドするときに、ソース マップ ファイル *app-bundle.js* 内で生成された参照をオーバーライドできます。 既定では、ソース マップ ファイル内の webpack 参照には *webpack:///* プレフィックスが含まれています。これにより、Visual Studio でソース ファイル *app.tsx* を検索できなくなります。 具体的には、この変更を行うと、ソース ファイル *app.tsx* への参照が、*webpack:///./app.tsx* から *./app.tsx* に変更され、デバッグが有効になります。
 
-3. Visual Studio でデバッグ ターゲットとして目的のブラウザーを選択し、次に **Ctrl** + **F5** キーを押して ( **[デバッグ]**  >  **[デバッグなしで開始]** )、ブラウザーでアプリを実行します。
+3. Visual Studio でデバッグ ターゲットとして目的のブラウザーを選択し、次に **Ctrl**+**F5** キーを押して ( **[デバッグ]**  >  **[デバッグなしで開始]** )、ブラウザーでアプリを実行します。
 
     ::: moniker range=">=vs-2019"
     フレンドリ名を使用してブラウザー構成を作成した場合は、それをデバッグ ターゲットとして選択します。

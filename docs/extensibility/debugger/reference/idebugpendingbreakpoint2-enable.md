@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable |Microsoft Docs
+title: Iデバッグ保留中のブレークポイント2::有効にする |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311676"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725892"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 保留中のブレークポイントの有効な状態を切り替えます。
@@ -42,18 +42,18 @@ int Enable(
 
 ## <a name="parameters"></a>パラメーター
 `fEnable`\
-[in]0 以外に設定 (`TRUE`) またはゼロに保留中のブレークポイントを有効にする (`FALSE`) を無効にします。
+[in]ゼロ以外の (`TRUE`) に設定すると、保留中のブレークポイントが`FALSE`有効になり、ゼロ ( ) に設定され、無効になります。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`ブレークポイントが削除されている場合。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 ブレークポイント`E_BP_DELETED`が削除されたかどうかを返します。
 
 ## <a name="remarks"></a>Remarks
-保留中のブレークポイントを有効または無効になっている、ときに、そこからバインドされているすべてのブレークポイントは、同じ状態に設定されます。
+保留中のブレークポイントが有効または無効になっている場合、ブレークポイントからバインドされているすべてのブレークポイントが同じ状態に設定されます。
 
-このメソッドは、ブレークポイントが既に有効または無効になっている場合でも、必要な回数だけ呼び出すことがあります。
+ブレークポイントが既に有効または無効になっている場合でも、このメソッドは必要に応じて何度でも呼び出される可能性があります。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CPendingBreakpoint`を公開するオブジェクト、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス。
+次の例は[、IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス`CPendingBreakpoint`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)

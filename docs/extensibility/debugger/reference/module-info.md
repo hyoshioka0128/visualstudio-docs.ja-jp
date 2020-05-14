@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO |Microsoft Docs
+title: MODULE_INFO |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339122"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714311"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
-特定のモジュール (DLL、exe ファイルまたはアセンブリ) について説明します。
+# <a name="module_info"></a>MODULE_INFO
+特定のモジュール (DLL、EXE、またはアセンブリ) について説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>メンバー
  `dwValidFields`\
- フラグの組み合わせ、 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)フィールドが記入を指定する列挙体。
+ 入力するフィールドを指定する[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列挙体のフラグの組み合わせ。
 
  `m_bstrName`\
  モジュール名。
@@ -75,13 +75,13 @@ public struct MODULE_INFO { 
  モジュールのバージョン。
 
  `m_bstrDebugMessage`\
- オプションのメッセージ、モジュールに関するなど「シンボルを読み込めません」
+ モジュールに関するオプションのメッセージ(例: 「シンボルを読み込めません。.」)。
 
  `m_addrLoadAddress`\
- モジュールの読み込みアドレス。
+ モジュールのロード アドレス。
 
  `m_addrPreferredLoadAddress`\
- モジュールの標準読み込みアドレス。
+ モジュールの優先ロード アドレス。
 
  `m_dwSize`\
  モジュールのサイズ。
@@ -90,25 +90,25 @@ public struct MODULE_INFO { 
  モジュールの読み込み順序。
 
  `m_TimeStamp`\
- シンボル ファイルの最終変更時刻。
+ シンボル ファイルが最後に変更された時刻。
 
  `m_bstrUrlSymbolLocation`\
- シンボル ファイルの場所 (たとえば、".\\")、モジュールで指定します。 開始位置として、モジュールのシンボルを検索するために使用します。
+ モジュールで指定されたシンボル ファイルの場所\\("" など)。 モジュールのシンボルを検索する開始位置として使用されます。
 
  `m_dwModuleFlags`\
- フラグの組み合わせ、 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)モジュールを表す列挙体。
+ モジュールを説明する[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)列挙体のフラグの組み合わせ。
 
 ## <a name="remarks"></a>Remarks
- この構造体に渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)メソッドでいっぱいになった場所。
+ この構造体は[、GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)メソッドに渡され、そこで格納されます。
 
- この構造で表示されている各モジュールに対応する、**モジュール**ウィンドウ。
+ この構造体は、[モジュール] ウィンドウに表示される各**モジュール**に対応します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

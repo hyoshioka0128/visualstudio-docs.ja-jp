@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75585627"
 ---
 # <a name="replace-in-files"></a>[フォルダーを指定して置換]
 

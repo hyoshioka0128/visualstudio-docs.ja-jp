@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom shortcut keys [Visual Studio]
 - customizing keyboard shortcuts [Visual Studio]
 - exporting shortcut keys [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585c50818148235cebcdda3f18a9ed91f1a2aa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656481"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591334"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio でのキーボード ショートカットの識別とカスタマイズ
 
@@ -32,7 +32,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 - ショートカット キーの動作をカスタマイズしたかどうか。
 
-- ショートカット キーを選択するときのコンテキスト。 たとえば、**F2** ショートカットでは、**設定デザイナー**を使っている場合は `Edit.EditCell` コマンドが呼び出され、**チーム エクスプローラー**を使っている場合は `File.Rename` コマンドが呼び出されます。
+- ショートカット キーを選択するときのコンテキスト。 たとえば、**F2** ショートカットでは、`Edit.EditCell`設定デザイナー**を使っている場合は**  コマンドが呼び出され、`File.Rename`チーム エクスプローラー**を使っている場合は**  コマンドが呼び出されます。
 
 設定、カスタマイズ、コンテキストにかかわらず、 **[オプション]** ダイアログ ボックスでいつでもショートカット キーを変更できます。 [よく使われるキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)に関する記事では、数十のコマンドの既定のキーボード ショートカットを調べることもできます。 すべての既定のショートカットの完全な一覧については (**全般的な開発**設定に基づくもの)、[すべてのキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)に関する記事をご覧ください。
 
@@ -67,7 +67,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 2. **[環境]** を展開し、 **[キーボード]** を選択します。
 
-3. 省略可能:コマンドのリストをフィルター処理するには、 **[以下の文字列を含むコマンドを表示]** ボックスに、コマンド名の全体または一部を、空白を含めずに入力し始めます。
+3. 省略可能: コマンドのリストをフィルター処理するには、 **[以下の文字列を含むコマンドを表示]** ボックスに、コマンド名の全体または一部を、空白を含めずに入力し始めます。
 
 4. ショートカット キーを割り当てるコマンドを一覧から選択します。
 
@@ -139,7 +139,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 4. **[ユーザーの設定]** で、インポートするショートカット キーを含む設定ファイルを選択するか、 **[参照]** ボタンをクリックして適切な設定ファイルを見つけます。
 
-5. **[次へ]** をクリックします。
+5. **[次へ]** を選択します。
 
 6. **[インポートする設定を指定してください]** で、 **[すべての設定]** チェック ボックスをオフにし、 **[オプション]** 、 **[環境]** の順に展開します。
 
@@ -147,6 +147,6 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
    ![カスタマイズされたキーボード ショートカットのみをインポート](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)

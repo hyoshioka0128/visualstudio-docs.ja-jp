@@ -8,17 +8,17 @@ helpviewer_keywords:
 - load tests, analyzing
 - thresholds in load tests
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ecec4826966205d849c07169da954198d687696
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1389df0c307ad6ec65575fc7934e622928a0ca1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644435"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591633"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>方法:ロード テスト エディターを使用してしきい値規則を追加する
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してしきい値規則を追加する
 
 ロード テストのしきい値規則は、パフォーマンス カウンターの値を定数値または別のパフォーマンス カウンターの値と比較します。
 
@@ -36,12 +36,12 @@ ms.locfileid: "72644435"
 
      **[しきい値規則の追加]** ダイアログ ボックスが表示されます。
 
-5. 2 種類の規則、**定数の比較**と**カウンターの比較**のいずれかを選択できます。 適切な種類を選択し、値を設定します。
+5. **[定数の比較]** および **[カウンターの比較]** の 2 種類の規則から選択します。 適切な種類を選択し、値を設定します。
 
     > [!NOTE]
     > **[しきい値を超えたときに警告]** プロパティは、しきい値を上回ると問題であることを示す場合は **True** に、しきい値を下回ると問題であることを示す場合は **False** に設定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [しきい値規則違反](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

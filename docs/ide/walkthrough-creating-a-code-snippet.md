@@ -1,6 +1,6 @@
 ---
 title: 'チュートリアル: コード スニペットを作成する'
-ms.date: 06/10/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb76fd61cb06b2877ebe0cd1714610b25845ebc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647121"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472816"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>チュートリアル: コード スニペットを作成する
 
@@ -54,7 +54,7 @@ ms.locfileid: "72647121"
 
 2. **Title** 要素に、スニペットのタイトルを指定します。 タイトル **Square Root** を使用します。
 
-3. **Code** 要素の **Language** 属性に、スニペットの言語を指定します。 C# の場合は、**CSharp** を使用し、Visual Basic の場合は **VB** を使用します。
+3. **Code** 要素の **Language** 属性に、スニペットの言語を指定します。 C# の場合は **CSharp** を、Visual Basic の場合は **VB** を、C++ の場合は **CPP** を使用します。
 
    > [!TIP]
    > 使用できる言語値をすべて確認するには、「[コード スニペット スキーマ リファレンス](code-snippets-schema-reference.md)」ページの[コード要素の属性](code-snippets-schema-reference.md#attributes)に関するセクションを参照してください。

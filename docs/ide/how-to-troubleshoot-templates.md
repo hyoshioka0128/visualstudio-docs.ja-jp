@@ -4,17 +4,17 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0dbdb2854833f7c28866aa3d6ec0a685803adb3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656553"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591386"
 ---
-# <a name="how-to-troubleshoot-templates"></a>方法:テンプレートの問題を解決する
+# <a name="how-to-troubleshoot-templates"></a>方法: テンプレートの問題を解決する
 
 テンプレートを開発環境に読み込むことができない場合に、問題を突き止める方法はいくつかあります。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72656553"
 1. *vstemplate* ファイルの XML がテンプレート スキーマに準拠していることを確認します。 *vstemplate* スキーマの詳細については、[テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)に関するページを参照してください。
 
     > [!NOTE]
-    > *vstemplate* ファイルを作成する際に IntelliSense サポートを取得するには、`xmlns` 属性を `VSTemplate` 要素に追加し、 http://schemas.microsoft.com/developer/vstemplate/2005 の値を割り当てます。
+    > *vstemplate* ファイルを作成する際に IntelliSense サポートを取得するには、`xmlns` 属性を `VSTemplate` 要素に追加し、 `http://schemas.microsoft.com/developer/vstemplate/2005` の値を割り当てます。
 
 1. *vstemplate* ファイルを保存して、閉じます。
 
@@ -55,11 +55,11 @@ ms.locfileid: "72656553"
 
 1. 抽出したテンプレート ファイルと古いテンプレート *.zip* ファイルを削除します。
 
-## <a name="enable-diagnostic-logging"></a>診断ログを有効にする
+## <a name="enable-diagnostic-logging"></a>診断ログの有効化
 
 [テンプレートの検出のトラブルシューティング (機能拡張)](../extensibility/troubleshooting-template-discovery.md)に関するページの手順に従って、テンプレートの検出の診断ログを有効にできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テンプレートの検出のトラブルシューティング (機能拡張)](../extensibility/troubleshooting-template-discovery.md)
 - [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)

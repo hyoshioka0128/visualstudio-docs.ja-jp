@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302551"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851782"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UI テストを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **ガイダンス**
 
- 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)」をご覧ください。
+ 追加のガイダンスについては、「[Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://msdn.microsoft.com/library/jj159335.aspx) (Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Ui オートメーションを使用してコード](../test/use-ui-automation-to-test-your-code.md)化された[ui テストを作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)するコードをテストするチュートリアル: コード化された ui テストの[作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)コード化された ui テストの[構造](../test/anatomy-of-a-coded-ui-test.md)、コード化され[た ui](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)テスト[と操作の記録のプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

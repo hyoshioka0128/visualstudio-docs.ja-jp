@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d4b22b0a1127af423e97e2dc88ebbea5bf1748e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664873"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75584505"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>方法: ロード テストに追加の実行設定を追加する
 
@@ -43,11 +43,11 @@ ms.locfileid: "72664873"
 6. **[プロパティ ]** ウィンドウを使用して、実行設定を変更します。 たとえば、テストを 5 分間実行するには、実行の継続時間を **00:05:00** に変更します。
 
     > [!NOTE]
-    > 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
+    > 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパテ](../test/load-test-run-settings-properties.md)」を参照してください。
 
-     追加した実行設定をアクティブに設定すると、これを使用することができます。 詳細については、[ロード テストのアクティブな実行設定を選択する](../test/how-to-select-the-active-run-setting-for-a-load-test.md)」を参照してください。
+     追加した実行設定をアクティブに設定すると、これを使用することができます。 詳細については、「[方法: ロード テストのアクティブな実行設定を選択する](../test/how-to-select-the-active-run-setting-for-a-load-test.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

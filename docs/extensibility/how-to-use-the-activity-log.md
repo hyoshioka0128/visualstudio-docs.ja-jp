@@ -1,32 +1,32 @@
 ---
-title: '方法: アクティビティ ログの使用 |Microsoft Docs'
+title: '方法 : アクティビティ ログを使用する |マイクロソフトドキュメント'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309351"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710578"
 ---
-# <a name="how-to-use-the-activity-log"></a>方法: アクティビティ ログを使用します。
-Vspackage は、メッセージをアクティビティ ログに書き込むことができます。 この機能は、小売環境で Vspackage をデバッグするために特に便利です。
+# <a name="how-to-use-the-activity-log"></a>方法: アクティビティ ログを使用する
+VSPackage は、アクティビティ ログにメッセージを書き込むことができます。 この機能は、リテール環境で VSPackage をデバッグする場合に特に便利です。
 
 > [!TIP]
-> アクティビティ ログは常にオンにします。 Visual Studio では、一般的な構成情報がある、最初の 10 個のエントリと同様に、最新の 100 個のエントリのローリング バッファーを保持します。
+> アクティビティ ログは常に有効です。 Visual Studio では、最後の 100 エントリのローリング バッファーと、一般的な構成情報を持つ最初の 10 個のエントリが保持されます。
 
-## <a name="to-write-an-entry-to-the-activity-log"></a>アクティビティ ログにエントリを書き込む
+## <a name="to-write-an-entry-to-the-activity-log"></a>アクティビティ ログにエントリを書き込むには
 
-1. このコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドまたはコンス トラクターは、VSPackage を除くその他の方法で。
+1. このコードを<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドまたは VSPackage コンストラクター以外の他のメソッドに挿入します。
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ Vspackage は、メッセージをアクティビティ ログに書き込むこ
         "Called for: {0}", this.ToString()));
     ```
 
-     このコードを取得、<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>サービスおよびにキャスト、<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>インターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 現在のカルチャのコンテキストを使用してアクティビティ ログに情報のエントリを書き込みます。
+     このコードは、<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>サービスを取得し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>インターフェイスにキャストします。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>現在のカルチャ コンテキストを使用して、アクティビティ ログに情報エントリを書き込みます。
 
-2. (通常は、コマンドが呼び出されたまたはウィンドウを開いた) ときに VSPackage が読み込まれるときに、テキストは、アクティビティ ログに書き込まれます。
+2. VSPackage が読み込まれると (通常、コマンドが呼び出されるか、ウィンドウが開かれた場合)、テキストがアクティビティ ログに書き込まれます。
 
-## <a name="to-examine-the-activity-log"></a>アクティビティ ログを確認するには
+## <a name="to-examine-the-activity-log"></a>アクティビティ ログを調べるには
 
-1. Visual Studio での実行、 [/log](../ide/reference/log-devenv-exe.md) ActivityLog.xml をディスクに書き込むセッション中にコマンド ライン スイッチ。
+1. セッション中にディスクに ActivityLog.xml を書き込むには[、/Log](../ide/reference/log-devenv-exe.md)コマンド ライン スイッチを指定して Visual Studio を実行します。
 
-2. Visual Studio を閉じた後に、Visual Studio のデータのサブフォルダーでアクティビティ ログを検索します。
+2. Visual Studio を閉じた後、アクティビティ ログを Visual Studio データのサブフォルダーで探します。
 
-   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%アプリデータ%</em>\マイクロソフト\VisualStudio\\\<バージョン>\アクティビティログ.xml*.
 
-3. 任意のテキスト エディターでは、アクティビティ ログを開きます。 一般的なエントリを次に示します。
+3. 任意のテキスト エディタでアクティビティ ログを開きます。 典型的なエントリは次のとおりです。
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,14 +58,14 @@ Vspackage は、メッセージをアクティビティ ログに書き込むこ
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
 
-アクティビティ ログは、サービスであるためには、アクティビティ ログは、VSPackage のコンス トラクターで使用できません。
+アクティビティ ログはサービスであるため、アクティビティ ログは VSPackage コンストラクターで使用できません。
 
-記述する前に、アクティビティ ログを取得する必要があります。 キャッシュしたり、将来使用するためのアクティビティ ログを保存しないでください。
+アクティビティ ログは、書き込みの直前に取得する必要があります。 今後使用するためにアクティビティ ログをキャッシュまたは保存しないでください。
 
 ## <a name="see-also"></a>関連項目
 
-- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/ログ (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [VSPackage のトラブルシューティング](../extensibility/troubleshooting-vspackages.md)
-- [VSPackage](../extensibility/internals/vspackages.md)
+- [VSPackages](../extensibility/internals/vspackages.md)

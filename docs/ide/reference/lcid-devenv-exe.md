@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LCID devenv switch
 - /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991886289ac2c2ee06e37476169dff6d2354a52e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659977"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77557933"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  必須です。 指定する言語のロケール識別子 (LCID)。
+  必須。 指定する言語のロケール識別子 (LCID)。
 
 ## <a name="remarks"></a>解説
 
@@ -53,13 +53,18 @@ Visual Studio でサポートされる言語の LCID の一覧を次の表に示
 |--------------|----------|
 |簡体中国語|2052|
 |繁体中国語|1028|
-|英語|1033|
-|フランス語|1036|
-|ドイツ語|1031|
-|イタリア語|1040|
+|Czech|1029|
+|English|1033|
+|French|1036|
+|German|1031|
+|Italian|1040|
 |日本語|1041|
-|韓国語|1042|
-|スペイン語|3082|
+|Korean|1042|
+|Polish|1045|
+|ポルトガル語 (ブラジル)|1046|
+|Russian|1049|
+|Spanish|3082|
+|Turkish|1055
 
 ## <a name="example"></a>例
 
@@ -69,7 +74,7 @@ Visual Studio でサポートされる言語の LCID の一覧を次の表に示
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
 - [[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/international-settings-environment-options-dialog-box.md)

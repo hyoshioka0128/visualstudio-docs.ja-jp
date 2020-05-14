@@ -8,26 +8,24 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314109"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579871"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーを追加する
 
 このチュートリアルの第 3 部では、クイズの受け手が完了するまでの残り秒数を追跡するためのカウントダウン タイマーを追加します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。
-> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
-> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ## <a name="to-add-a-countdown-timer"></a>カウントダウン タイマーを追加するには
 

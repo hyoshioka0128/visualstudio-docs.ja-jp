@@ -1,41 +1,41 @@
 ---
-title: Visual Studio 2017 用のカスタム プロジェクトと項目テンプレートをアップグレードします。
+title: Visual Studio 2017 のカスタム プロジェクトテンプレートと項目テンプレートをアップグレードする
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559755"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698859"
 ---
-# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>カスタム プロジェクトと項目テンプレートの Visual Studio 2017 をアップグレードします。
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Visual Studio 2017 のカスタム プロジェクトテンプレートと項目テンプレートをアップグレードする
 
-Visual Studio 2017 以降、Visual Studio は Visual Studio の以前のバージョンを別の方法で、.vsix、.msi インストールされているプロジェクトと項目テンプレートを検出します。 カスタムのプロジェクトまたは項目テンプレートを使用する拡張機能を所有している場合は、拡張機能を更新する必要があります。 この記事では、必要な作業について説明します。
+Visual Studio 2017 以降では、以前のバージョンの Visual Studio とは異なる方法で .vsix または .msi によってインストールされたプロジェクトと項目のテンプレートが検出されます。 カスタム プロジェクトまたは項目テンプレートを使用する拡張機能を所有している場合は、拡張機能を更新する必要があります。 この記事では、実行する必要がある操作について説明します。
 
-この変更では、Visual Studio 2017 のみに影響します。 Visual Studio の以前のバージョンには影響しません。
+この変更は、Visual Studio 2017 にのみ影響します。 これは、以前のバージョンの Visual Studio には影響しません。
 
-VSIX 拡張機能の一部としてプロジェクトや項目テンプレートを作成する場合は、「[を作成するカスタム プロジェクトと項目テンプレート](../extensibility/creating-custom-project-and-item-templates.md)します。
+VSIX 拡張機能の一部としてプロジェクトまたは項目テンプレートを作成する場合は、「[カスタム プロジェクトテンプレートおよび項目テンプレートの作成](../extensibility/creating-custom-project-and-item-templates.md)」を参照してください。
 
-## <a name="template-scanning"></a>テンプレートのスキャン
+## <a name="template-scanning"></a>テンプレートスキャン
 
-Visual Studio の以前のバージョンで**devenv/setup**または**devenv/installvstemplates**プロジェクトと項目テンプレートを検索するローカル ディスクをスキャンします。 Visual Studio 2017 以降はスキャン ユーザー レベルの場所に対してのみ実行されます。 ユーザー レベルの既定の場所は **%USERPROFILE%\Documents\\< Visual Studio バージョン\>\Templates\\** します。 この場所はによって生成されたテンプレートの使用、**プロジェクト** > **テンプレートをエクスポートしています.** コマンドの場合、**自動的に Visual Studio にテンプレートをインポート**ウィザードでオプションを選択します。
+以前のバージョンの Visual Studio では **、devenv /setup**または**devenv /installvstemplates**がローカル ディスクをスキャンしてプロジェクトテンプレートと項目テンプレートを検索しました。 Visual Studio 2017 以降では、スキャンはユーザー レベルの場所に対してのみ実行されます。 既定のユーザー レベルの場所は **、Visual Studio\\バージョン\>\テンプレート\\<ドキュメント**です。 この場所は、ウィザードで [**テンプレートを自動的に Visual Studio にインポート**する] オプションが選択されている場合に、[**プロジェクト** > エクスポート**テンプレート.**
 
-その他 (非ユーザー) の場所、場所と、テンプレートの他の特性を指定する manifest(.vstman) ファイルを含める必要があります。 テンプレートを使用している .vstemplate ファイルと共に .vstman ファイルが生成されます。 .Vsix を使用して、拡張機能をインストールする場合は、Visual Studio 2017 で拡張機能を再コンパイルしてこれを実行できます。 .Msi を使用する場合、変更を手動で行う必要があります。 これらの変更を行う必要があるものの一覧は、次を参照してください。**と共に拡張機能のインストールのアップグレードをします。MSI**後でこのページ。
+その他の (ユーザー以外の) 場所の場合は、マニフェスト (.vstman) ファイルを含める必要があります。 .vstman ファイルは、テンプレートに使用される .vstemplate ファイルと共に生成されます。 .vsix を使用して拡張機能をインストールする場合は、Visual Studio 2017 で拡張機能を再コンパイルすることでこれを実現できます。 ただし、.msi を使用する場合は、手動で変更する必要があります。 これらの変更を行うために必要な操作の一覧については、「**と共にインストールされる拡張機能のアップグレード」を参照してください。この**ページの後半で MSI を説明します。
 
-## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>プロジェクトまたは項目テンプレートで VSIX 拡張機能を更新する方法
+## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>プロジェクトまたは項目テンプレートを使用して VSIX 拡張機能を更新する方法
 
-1. Visual Studio 2017 では、ソリューションを開きます。 コードのアップグレードになります。 **[OK]** をクリックします。
+1. ソリューションを Visual Studio 2017 で開きます。 コードのアップグレードを求められます。 **[OK]** をクリックします。
 
-2. アップグレードの完了したら、インストール先のバージョンを変更する必要があります。 VSIX プロジェクトの source.extension.vsixmanifest ファイルを開き、選択、**インストールの対象**タブ。場合、**バージョン範囲**フィールドは **[14.0]** 、 をクリックして**編集**し、Visual Studio 2017 を含むように変更します。 たとえば設定することができます **[14.0,15.0]** または Visual Studio 2015 または Visual Studio 2017 では、いずれかに、拡張機能をインストールする **[15.0]** だけの Visual Studio 2017 をインストールします。
+2. アップグレードが完了した後、インストールターゲットのバージョンを変更する必要がある場合があります。 VSIX プロジェクトで、source.extension.vsixmanifest ファイルを開き、[**ターゲットのインストール**] タブを選択します。**[バージョン範囲**] フィールドが **[14.0] の**場合は、[**編集**] をクリックし、Visual Studio 2017 を含むように変更します。 たとえば **、[14.0,15.0]** に設定して拡張機能を Visual Studio 2015 または Visual Studio 2017 にインストールするか **、[15.0]** に設定して Visual Studio 2017 にインストールできます。
 
 3. コードを再コンパイルします。
 
@@ -43,31 +43,31 @@ Visual Studio の以前のバージョンで**devenv/setup**または**devenv/in
 
 5. VSIX をインストールします。
 
-6. 次の手順に従って、更新プログラムをテストできます。
+6. 次の手順を実行して、更新プログラムをテストできます。
 
-    1. 次のレジストリ キーがファイル変更のスキャンをアクティブにします。
+    1. ファイル スキャンの変更は、次のレジストリ キーによってアクティブ化されます。
 
-         **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
+         **reg 追加 hklm\ソフトウェア\マイクロソフト\ビジュアルスタジオ\15.0\VSテンプレート /v テンプレートスキャンを無効にする /t REG_DWORD /d 1 /reg:32**
 
-    2. キーを追加した後、実行**devenv/installvstemplates**します。
+    2. キーを追加したら **、devenv /installvstemplates**を実行します。
 
-    3. Visual Studio を再度開きます。 予期された場所にテンプレートを探す必要があります。
+    3. Visual Studio を再度開きます。 テンプレートは、期待される場所に見つかります。
 
     > [!NOTE]
-    > レジストリ キーが存在する場合は、Visual Studio 機能拡張プロジェクト テンプレートは使用できません。 レジストリ キーを削除する必要があります (再実行して**devenv/installvstemplates**) それらを使用します。
+    > Visual Studio の機能拡張プロジェクト テンプレートは、レジストリ キーが存在する場合は使用できません。 レジストリ キーを削除し、それらを使用するには **、devenv /installvstemplates**を再実行する必要があります。
 
-## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>プロジェクトと項目テンプレートをデプロイするための推奨事項
+## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>プロジェクト テンプレートおよび項目テンプレートを配置するためのその他の推奨事項
 
-- Zip 形式のテンプレート ファイルを使用しないでください。 ファイルは、リソースやコンテンツを取得するために圧縮する必要があるテンプレートを zip 圧縮され、そのためされますなるほどを使用します。 代わりに、高速化するテンプレートの初期化に独自のディレクトリの下の個別のファイルとしてプロジェクトと項目テンプレートをデプロイする必要があります。 VSIX 拡張機能 SDK のビルド タスクは、zip 形式のテンプレートを VSIX ファイルを作成するときに自動的に解凍されます。
+- 圧縮されたテンプレート ファイルは使用しないでください。 圧縮されたテンプレート ファイルは、リソースとコンテンツを取得するために圧縮を解除する必要があるため、使用コストが高くなります。 代わりに、プロジェクトテンプレートと項目テンプレートを個別のファイルとして独自のディレクトリに配置して、テンプレートの初期化を高速化する必要があります。 VSIX 拡張機能の場合、SDK ビルド タスクは、VSIX ファイルの作成中に、zip 形式のテンプレートを自動的に解凍します。
 
-- テンプレート名、説明、アイコン、パッケージ/リソース ID のエントリを使用しないようにするか、テンプレートの検出中に不要なリソース アセンブリの読み込みを回避するためにプレビューします。 代わりに、ローカライズされたマニフェストを使用して、ロケールごとに、ローカライズされた名前またはプロパティを使用するテンプレート エントリを作成することができます。
+- テンプレートの検出中に不要なリソース アセンブリの読み込みを回避するために、テンプレート名、説明、アイコン、またはプレビューにパッケージ/リソース ID エントリを使用しないようにします。 代わりに、ローカライズされたマニフェストを使用して、ローカライズされた名前またはプロパティを使用する各ロケールのテンプレート エントリを作成できます。
 
-- ファイルのアイテムとしてテンプレートをインクルードする場合は、マニフェスト生成得ることができない、期待される結果。 その場合は、VSIX プロジェクトに手動で生成されたマニフェストを追加する必要があります。
+- テンプレートをファイル項目として含める場合、マニフェストの生成によって期待どおりの結果が得られるとは限りません。 その場合は、VSIX プロジェクトに手動で生成されたマニフェストを追加する必要があります。
 
-## <a name="file-changes-in-project-and-item-templates"></a>プロジェクトと項目テンプレート ファイルの変更
-Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレート ファイルの相違点のポイントを表示する、新しいファイルを正しく作成できるようにします。
+## <a name="file-changes-in-project-and-item-templates"></a>プロジェクトテンプレートおよび項目テンプレートのファイルの変更
+Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレート ファイルの違いのポイントを示して、新しいファイルを正しく作成できるようにします。
 
- Visual Studio 2015 によって作成された既定プロジェクトの .vstemplate ファイルを次に示します。
+ Visual Studio 2015 で作成された既定のプロジェクト .vstemplate ファイルを次に示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,7 +94,7 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 
 ```
 
- 次に、VSIX プロジェクトの再構築の原因となった .vstman ファイル (方で、VSIX プロジェクトのマニフェストのディレクトリ) を示します。
+ VSIX プロジェクトの再構築に起因する .vstman ファイル (VSIX プロジェクトのマニフェスト ディレクトリにあります) は次のとおりです。
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -120,7 +120,7 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 
 ```
 
- によって提供される情報、 [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)要素は変わりません。 **\<VSTemplateContainer >** 要素は、関連付けられたテンプレートの .vstemplate ファイルを指します。
+ [要素](../extensibility/templatedata-element-visual-studio-templates.md)によって提供される情報は変わりません。 ** \<VSTemplateContainer 要素>** 関連付けられたテンプレートの .vstemplate ファイルを指します。
 
  Visual Studio 2015 によって作成された既定の項目 .vstemplate ファイルを次に示します。
 
@@ -149,7 +149,7 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 
 ```
 
- 次に、VSIX プロジェクトの再構築の原因となった .vstman ファイル (方で、VSIX プロジェクトのマニフェストのディレクトリ) を示します。
+ VSIX プロジェクトの再構築に起因する .vstman ファイル (VSIX プロジェクトのマニフェスト ディレクトリにあります) は次のとおりです。
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -172,23 +172,23 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 </VSTemplateManifest>
 ```
 
- によって提供される情報、  **\<TemplateData >** 要素は変わりません。 **\<VSTemplateContainer >** 要素は、関連付けられたテンプレートの .vstemplate ファイルを指します
+ ** \<TemplateData>** 要素によって提供される情報は変わりません。 **\<要素が**関連付けられたテンプレートの .vstemplate ファイルを指す VSTemplateContainer>
 
- .Vstman ファイルのさまざまな要素の詳細については、次を参照してください。 [Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
+ .vstman ファイルのさまざまな要素の詳細については、「 Visual Studio テンプレート マニフェスト スキーマ リファレンス 」を[参照してください](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>拡張機能のアップグレードがと共にインストールします。MSI
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>拡張のアップグレードがインストールされている.Msi
 
-一部 MSI ベースの拡張機能は、次のディレクトリなど一般的なテンプレートの場所にテンプレートを展開します。
+一部の MSI ベースの拡張機能では、テンプレートを次のディレクトリなどの一般的なテンプレートの場所に配置します。
 
-- **\<Visual Studio のインストール ディレクトリ > \Common7\IDE\\< ProjectTemplates/項目テンプレート\>**
+- **\<Visual Studio のインストール ディレクトリ>\Common7\IDE\\<プロジェクト テンプレート/項目テンプレート\>**
 
-- **\<Visual Studio のインストール ディレクトリ > \Common7\IDE\Extensions\\< ExtensionName\>\\< プロジェクト/項目テンプレート\>**
+- **\<Visual Studio のインストール ディレクトリ>\Common7\IDE\拡張機能\\<プロジェクト/アイテム テンプレート<名前\>\\\>**
 
-拡張機能は、MSI ベースの展開を実行する場合は、テンプレート マニフェストを手動で生成し、拡張機能のセットアップに含まれていることを確認する必要があります。 上に挙げた .vstman 例を比較し、 [Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
+拡張機能が MSI ベースの配置を実行する場合は、テンプレート マニフェストを手動で生成し、拡張セットアップに含まれていることを確認する必要があります。 上記の .vstman の例と[Visual Studio テンプレート マニフェスト スキーマ リファレンス](../extensibility/visual-studio-template-manifest-schema-reference.md)を比較します。
 
-プロジェクトと項目テンプレートでは、個別のマニフェストを作成し、ルート テンプレートのディレクトリとして指定された上記を指す必要があります。 拡張機能とロケールごとの 1 つのマニフェストを作成します。
+プロジェクトテンプレートと項目テンプレート用に個別のマニフェストを作成し、上で指定したルートテンプレートディレクトリを指定する必要があります。 拡張およびロケールごとに 1 つのマニフェストを作成します。
 
 ## <a name="see-also"></a>関連項目
 
-- [テンプレートの検出のトラブルシューティング](troubleshooting-template-discovery.md)
-- [カスタム プロジェクトと項目テンプレートの作成](creating-custom-project-and-item-templates.md)
+- [テンプレート検出のトラブルシューティング](troubleshooting-template-discovery.md)
+- [カスタム プロジェクトテンプレートと項目テンプレートの作成](creating-custom-project-and-item-templates.md)

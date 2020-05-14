@@ -5,19 +5,19 @@ ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: e7f331536de264186bc2977cc4acaaab02147e13
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831842"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115219"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio の展開時にプロダクト キーを自動的に適用する
 
@@ -89,7 +89,7 @@ Visual Studio の配置を自動化するために使用されるスクリプト
 
 `StorePID.exe` が正常にプロダクト キーを適用した場合は `%ERRORLEVEL%` として 0 を返します。 エラーが発生した場合、エラーの状態に基づいて次のいずれかのコードが返されます。
 
-| Error                     | コード |
+| エラー                     | コード |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -104,7 +104,7 @@ Visual Studio の配置を自動化するために使用されるスクリプト
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のインストール](../install/install-visual-studio.md)
 * [Visual Studio のオフライン インストールを作成する](../install/create-an-offline-installation-of-visual-studio.md)

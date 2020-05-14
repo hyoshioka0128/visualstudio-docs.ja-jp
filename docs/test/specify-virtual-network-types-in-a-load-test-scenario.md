@@ -9,15 +9,15 @@ helpviewer_keywords:
 - load tests, virtual networks
 - network mix
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbf5dbbd9f2726eee368a3066bda686f803d46fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659943"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115299"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>ロード テスト シナリオでの仮想ネットワークの種類の指定
 

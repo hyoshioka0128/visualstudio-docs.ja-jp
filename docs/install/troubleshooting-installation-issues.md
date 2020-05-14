@@ -1,31 +1,31 @@
 ---
 title: インストールまたはアップグレードの問題をトラブルシューティングする
 description: ときには、問題が発生してしまうことがあります。 Visual Studio のインストールまたはアップグレードが失敗した場合、このページが役に立ちます。
-ms.date: 09/13/2019
+ms.date: 03/23/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062809"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233112"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
 > [!IMPORTANT]
-> インストールに関する問題がある場合、 Microsoft によるサポートを受けられます。 [**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションが用意されています。
+> インストールに関する問題がある場合、 Microsoft によるサポートを受けられます。 [**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションが用意されています。
 
 このトラブルシューティング ガイドには、インストールに関する問題のほとんどを解決できるステップ バイ ステップの手順が含まれています。
 
@@ -127,11 +127,11 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 セットアップ ログは、インストールに関する問題の多くをトラブルシューティングするために必要です。 Visual Studio インストーラーの [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) を使用して問題を送信するとき、レポートには自動でこれらのログが含まれます。
 
-Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET Framework ログ収集ツール](https://aka.ms/vscollect)を使用して、これらのセットアップ ログを提供する必要がある場合があります。 このログ収集ツールは、Visual Studio にインストールされている .NET Framework、Windows SDK、SQL Server などのすべてのコンポーネントからセットアップ ログを収集します。 また、コンピューター情報、Windows インストーラーのインベントリ、Visual Studio インストーラーの Windows イベント ログ情報、Windows インストーラー、システムの復元に関する情報を収集します。
+Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET Framework ログ収集ツール](https://www.microsoft.com/download/details.aspx?id=12493)を使用して、これらのセットアップ ログを提供する必要がある場合があります。 このログ収集ツールは、Visual Studio にインストールされている .NET Framework、Windows SDK、SQL Server などのすべてのコンポーネントからセットアップ ログを収集します。 また、コンピューター情報、Windows インストーラーのインベントリ、Visual Studio インストーラーの Windows イベント ログ情報、Windows インストーラー、システムの復元に関する情報を収集します。
 
 ログを収集するには:
 
-1. [ツールをダウンロード](https://aka.ms/vscollect)します。
+1. [ツールをダウンロード](https://www.microsoft.com/download/details.aspx?id=12493)します。
 2. 管理コマンド プロンプトを開きます。
 3. ツールを保存したディレクトリから `Collect.exe` を実行します。
 4. `%TEMP%` ディレクトリで結果の `vslogs.zip` ファイルを探します (例: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`)。

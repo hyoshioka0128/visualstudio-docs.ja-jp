@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97abfe3740ea9209768e82eca1b269cd0a381233
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644168"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169405"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>方法:仮想ユーザー アクティビティ チャートを使用してロード テスト中に仮想ユーザーが行っている操作を分析する
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>方法: 仮想ユーザー アクティビティ チャートを使用してロード テスト中に仮想ユーザーが行っている操作を分析する
 
 **仮想ユーザー アクティビティ チャート**を使用して、ロード テストに関連付けられた仮想ユーザー アクティビティを表示します。 チャートの各行は、個別の仮想ユーザーを表します。 **仮想ユーザー アクティビティ チャート**には、各仮想ユーザーがテスト中に実行した処理が詳しく表示されます。 ユーザー アクティビティのパターンおよびロード パターンを把握し、失敗したテストまたは時間のかかったテストを関連付け、他の仮想ユーザー アクティビティで要求を確認できます。 **仮想ユーザー アクティビティ チャート**は、ロード テストの実行が完了した後にのみ使用できます。
 
@@ -51,15 +51,15 @@ ms.locfileid: "72644168"
 
    - **URL** (テストまたはトランザクションには表示されません)
 
-   - **Outcome**
+   - **結果**
 
    - **ブラウザー** (テストまたはトランザクションには表示されません)
 
    - **Network**
 
-   - **開始時刻**
+   - **Start Time**
 
-   - **期間**
+   - **Duration**
 
    - **エージェント**
 
@@ -103,7 +103,7 @@ ms.locfileid: "72644168"
 
      それに合わせて**仮想ユーザー アクティビティ チャート**が更新されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [詳細ビューでの仮想ユーザー アクティビティの分析](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

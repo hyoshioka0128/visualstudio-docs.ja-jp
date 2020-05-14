@@ -4,17 +4,17 @@ description: Visual Studio を使用してプライベート クラウドのリ�
 author: ghogen
 manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 5f9ea7ac26742b0fc1c116dfe53e941f93358221
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 57f92aa797e589bd48cc52296b710617cbe8d732
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551180"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544368"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Visual Studio での Azure プライベート クラウドへのアクセス
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89a08808387067b934bfd826feb2dcfbcf949aab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778285"
 ---
 # <a name="shutdown"></a>シャットダウン
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 `Timeout`
 - (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)

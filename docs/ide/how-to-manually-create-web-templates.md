@@ -7,22 +7,22 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591009"
 ---
-# <a name="how-to-manually-create-web-templates"></a>方法:Web テンプレートを手動で作成する
+# <a name="how-to-manually-create-web-templates"></a>方法: Web テンプレートを手動で作成する
 
 Web テンプレートの作成方法は、他の種類のテンプレートを作成する場合と異なります。 Web プロジェクト テンプレートは **[新しい Web サイトの追加]** ダイアログ ボックスに表示され、Web プロジェクトの項目はプログラミング言語によって分類されるので、*vstemplate* ファイルではテンプレートを Web テンプレートとして指定し、プログラミング言語を示す必要があります。
 
 > [!NOTE]
-> Web テンプレートには空の *.webproj* ファイルが含まれている必要があり、そのファイルが `Project` 要素の `File` 属性の *vstemplate* ファイルで参照されている必要があります。 Web プロジェクトには *.proj* プロジェクト ファイルは必要ありませんが、Web テンプレートが正常に機能するには、このスタブ ファイルを作成する必要があります。
+> Web テンプレートには空の *.webproj* ファイルが含まれている必要があり、そのファイルが *要素の* 属性の `File`vstemplate`Project` ファイルで参照されている必要があります。 Web プロジェクトには *.proj* プロジェクト ファイルは必要ありませんが、Web テンプレートが正常に機能するには、このスタブ ファイルを作成する必要があります。
 
 ## <a name="to-manually-create-a-web-template"></a>Web テンプレートを手動で作成するには
 
@@ -34,7 +34,7 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
 
 4. *vstemplate* XML ファイルを編集して、プロジェクト テンプレート メタデータを提供します。 詳細については、[後の例](#example)を参照してください。
 
-5. *vstemplate* ファイルで `ProjectType` 要素を探し、テキスト値を `Web` に設定します。
+5. `ProjectType`vstemplate*ファイルで* 要素を探し、テキスト値を `Web` に設定します。
 
 6. `ProjectType` 要素の後に `ProjectSubType` 要素を追加し、テキスト値をテンプレートのプログラミング言語に設定します。 プログラミング言語は次のいずれかの値です。
 
@@ -81,7 +81,7 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
 - [Visual Studio テンプレート スキーマ参照 (機能拡張)](../extensibility/visual-studio-template-schema-reference.md)

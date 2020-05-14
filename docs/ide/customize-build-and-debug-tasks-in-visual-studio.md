@@ -8,17 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652576"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76542686"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -224,6 +224,8 @@ bin:
 |`${fileExtname}`| 選択したファイルの拡張子 (例: *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>launch.vs.json によるデバッグの構成
+
+デバッグ用に CMake プロジェクトを構成するには、「[CMake デバッグ セッションを構成する](/cpp/build/configure-cmake-debugging-sessions)」を参照してください。
 
 1. デバッグ用にコードベースを構成するには、**ソリューション エクスプローラー**で、実行可能ファイルの右クリック メニューまたはコンテキスト メニューから **[デバッグ設定と起動設定]** メニュー項目を選択します。
 

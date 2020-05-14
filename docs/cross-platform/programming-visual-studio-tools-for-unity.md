@@ -11,16 +11,16 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62818216"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity をプログラミングする
 このセクションでは、Visual Studio Tools for Unity API を使用するための例が示されています。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
  ここでは、Visual Studio Tools for Unity API の使用方法を示す例をいくつか示します。
 
 ### <a name="customize-project-files-created-by-vstu"></a>VSTU によって作成されたプロジェクト ファイルのカスタマイズ

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::EnumProperties
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba4cf74c41d321cc03684ec6717a9eea74e9a622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321852"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719902"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 ローカル変数など、スタック フレームに関連付けられているプロパティの列挙子を作成します。
@@ -51,28 +51,28 @@ int EnumProperties ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFieldSpec`\
-[in]フラグの組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 、列挙型のフィールドを指定する列挙体[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体入力します。
+[in]列挙された[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体内のどのフィールドに入力するかを指定する[、DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列挙体のフラグの組み合わせ。
 
 `nRadix`\
-[in]任意の数値情報を書式設定で使用する基数。
+[in]数値情報の書式設定に使用する基数。
 
 `refiid`\
-[in]選択に使用するフィルターの GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造がなど、列挙`guidFilterLocals`します。
+[in]列挙する[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造を選択するために使用されるフィルターの GUID ( など`guidFilterLocals`)
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
 
 `pcelt`\
-[out]列挙プロパティの数を返します。 これは、呼び出すことと同じ、 [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)メソッド。
+[アウト]列挙されたプロパティの数を返します。 これは[、GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)メソッドを呼び出すのと同じです。
 
 `ppEnum`\
-[out]返します、 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)必要なプロパティの一覧を含むオブジェクト。
+[アウト]目的の[プロパティ](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)の一覧を含むオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- この方法により、選択したすべてのプロパティを単一の呼び出しで取得するため、順番に呼び出すよりも高速です、 [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)と[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)メソッド。
+ このメソッドでは、1 回の呼び出しですべての選択したプロパティを取得できるため[、GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)メソッドと[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)メソッドを順次呼び出すよりも高速です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

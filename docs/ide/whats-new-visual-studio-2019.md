@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810115"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437743"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.4 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.5 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -120,7 +120,7 @@ Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor awar
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>クラウド ファーストのワークフロー
+### <a name="git-first-workflow"></a>Git ファーストのワークフロー
 
 Visual Studio 2019 を開いてまず気付くことは、新しいスタート ウィンドウです。
 
@@ -202,9 +202,11 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
    ![ピン留め可能なプロパティ ツールを使用して Visual Studio デバッガーでプロパティをピン留めする方法を示すアニメーション](media/vs-2019/debugger-pinnable-properties.gif)
 
+詳細については、「[ピン留め可能なプロパティ:マネージド オブジェクトを任意の方法でデバッグおよび表示する](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/)」ブログ記事をご覧ください。
+
 ## <a name="whats-next"></a>次の内容
 
-Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。
+Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。 今後のリリース予定の一覧については、[Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap)に関するページを参照してください。
 
 Visual Studio 2019 のその他の機能について詳細を知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap/)に関するページを参照してください。
 
@@ -219,7 +221,7 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
-* [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Microsoft Build 2019 カンファレンス](https://www.microsoft.com/build)
-* [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)
+* [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Microsoft Build カンファレンス](https://www.microsoft.com/build)
+* [Microsoft Ignite カンファレンス](https://www.microsoft.com/ignite)

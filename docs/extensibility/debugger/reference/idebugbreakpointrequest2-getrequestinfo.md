@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo |Microsoft Docs
+title: をクリックしてブレークポイントを要求します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352898"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734938"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-このブレークポイントの要求を記述するブレークポイント要求情報を取得します。
+このブレークポイント要求を記述するブレークポイント要求情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]フラグの組み合わせ、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)内のフィールドを決定する列挙型、`pBPRequestInfo`パラメーター入力します。
+[in]パラメーター内のどのフィールドに入力するかを決定する[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列挙体のフラグ`pBPRequestInfo`の組み合わせ。
 
 `pBPRequestInfo`\
-[out]指定します、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)ブレークポイント要求の説明を設定する構造体。
+[アウト]ブレークポイント要求の説明を入力する[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造を指定します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugBreakpointRequest`を公開するオブジェクト、 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)インターフェイス。
+ 次の例は[、IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)インターフェイス`CDebugBreakpointRequest`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

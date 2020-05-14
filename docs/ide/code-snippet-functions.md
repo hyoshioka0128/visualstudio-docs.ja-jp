@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647543"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594241"
 ---
 # <a name="code-snippet-functions"></a>コード スニペットの関数
 
@@ -27,7 +27,7 @@ C# コード スニペットで使用できる関数は 3 つあります。 関
 
 次の表で、コード スニペットの `Function` 要素で使用できる関数について説明します。
 
-|関数|説明|言語|
+|Function|[説明]|言語|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|`EnumerationLiteral` パラメーターで指定された列挙体のメンバー用に、switch ステートメントおよび一連の case ステートメントを生成します。 `EnumerationLiteral` パラメーターは、列挙体リテラルまたは列挙型のいずれかへの参照にする必要があります。|C#|
 |`ClassName()`|挿入されたスニペットを含むクラスの名前を返します。|C#|
@@ -155,7 +155,7 @@ C# コード スニペットで使用できる関数は 3 つあります。 関
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Function 要素](../ide/code-snippets-schema-reference.md#function-element)
 - [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)

@@ -2,23 +2,23 @@
 title: コード生成機能
 ms.date: 01/11/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 12c54e15eaab39ecfa10657c9c5ea3f3605db022
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631141"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594254"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio でのコード生成機能
 
 Visual Studio には、コードの生成、修正、リファクタリングに利用できるさまざまな方法があります。
 
-## <a name="features"></a>フィーチャー
+## <a name="features"></a>[機能]
 
 - [コード スニペット](../ide/code-snippets.md)を使うと、[switch](/dotnet/csharp/language-reference/keywords/switch) ブロックや [enum](/dotnet/csharp/language-reference/keywords/enum) 宣言などのテンプレートを挿入できます。
 
@@ -29,7 +29,7 @@ Visual Studio には、コードの生成、修正、リファクタリングに
 > [!NOTE]
 > Visual Studio の各言語サービスは独自のコード生成機能を提供するので、C# でしか使えない機能や、C# と Visual Basic の両方で使える機能があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード スニペット](../ide/code-snippets.md)
 - [クイック アクション](../ide/quick-actions.md)

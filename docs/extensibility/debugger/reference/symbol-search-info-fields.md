@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS |Microsoft Docs
+title: SYMBOL_SEARCH_INFO_FIELDS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322359"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713477"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 取得するシンボル情報の種類を指定します。
 
 ## <a name="syntax"></a>構文
@@ -47,23 +47,23 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>フィールド
  `SSIF_NONE`\
- フラグがないことを示します。
+ フラグがないことを示します
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- すべての検索シンボルを検索するために使用されるパスを返します。
+ シンボルの検索に使用されるすべての検索パスを返します。
 
 ## <a name="remarks"></a>Remarks
- これらのフラグは、パラメーターとして渡される、 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)情報の量を判断するメソッドが返されます。
+ これらのフラグは、返される情報の量を決定する[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)メソッドにパラメーターとして渡されます。
 
 > [!NOTE]
-> 現時点では、のみ`SSIF_VERBOSE_SEARCH_INFO`はサポートされていることを指定する必要があります、`dwFlags`パラメーターを`IDebugModule3::GetSymbolInfo`します。 その他のすべての値は、エラーを返します。
+> 現在、`SSIF_VERBOSE_SEARCH_INFO`のみサポートされており、パラメーターとして`dwFlags`指定する`IDebugModule3::GetSymbolInfo`必要があります。 その他の値はすべてエラーを返します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

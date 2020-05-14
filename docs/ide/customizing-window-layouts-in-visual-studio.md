@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652529"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596711"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio のウィンドウ レイアウトをカスタマイズする
 
@@ -143,13 +143,13 @@ Visual Studio を使用すると、最大 10 個のカスタム ウィンドウ 
 
 2. 複数のモニターがある場合は、 **ソリューション エクスプローラー** ウィンドウと **プロパティ** ウィンドウを 2 台目のモニターに移動させます。 シングル モニター システムでは、デザイナー以外のウィンドウはすべて閉じてください。
 
-3. **Ctrl** + **Alt** + **X** キーを押して **[ツールボックス]** ウィンドウを表示します。 ウィンドウがドッキングされている場合は、配置したい場所でウィンドウがフローティングするように、ウィンドウをドラッグします。
+3. **Ctrl**+**Alt**+**X** キーを押して **[ツールボックス]** ウィンドウを表示します。 ウィンドウがドッキングされている場合は、配置したい場所でウィンドウがフローティングするように、ウィンドウをドラッグします。
 
 4. **F5** キーを押して Visual Studio をデバッグ モードにします。 **自動変数**、**呼び出しスタック**、**出力**の各デバッグ ウィンドウを任意の場所に移動します。 作成しようとしているレイアウトは、編集モードとデバッグ モードの両方に適用されます。
 
 5. デバッグ モードと編集モードの両方でレイアウトが希望どおりになったら、 **[ウィンドウ]**  >  **[ウィンドウのレイアウトを保存]** の順にクリックします。 このレイアウトを "デザイナー" と呼びます。
 
-     新しいレイアウトには、**Ctrl** ++ **Alt** + **1 ～ 0** キーの予約リストから次のキーボードのショートカットが割り当てられることに注意してください。
+     新しいレイアウトには、**Ctrl** ++**Alt**+**1 ～ 0** キーの予約リストから次のキーボードのショートカットが割り当てられることに注意してください。
 
 #### <a name="create-a-database-project-and-layout"></a>データベース プロジェクトとレイアウトの作成
 

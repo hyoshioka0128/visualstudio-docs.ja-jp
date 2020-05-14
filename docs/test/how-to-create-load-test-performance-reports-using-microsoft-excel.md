@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653562"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589072"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>方法:Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>方法: Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する
 
 複数のテスト結果に基づいて、Microsoft Excel のロード テスト レポートを生成することができます。
 
@@ -29,7 +29,7 @@ ms.locfileid: "72653562"
 - **傾向** 複数のロード テストの結果に基づく傾向分析を生成できます。 結果は折れ線グラフで表示されますが、データをピボットテーブルで表示することもできます。
 
 > [!TIP]
-> また、概要ビュー、グラフ ビュー、およびテーブル ビューのデータをコピー アンド ペーストすることにより、Microsoft Word レポートを手動で作成できます。 「[方法:Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)」を参照してください。
+> また、概要ビュー、グラフ ビュー、およびテーブル ビューのデータをコピー アンド ペーストすることにより、Microsoft Word レポートを手動で作成できます。 「[方法: Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)」を参照してください。
 
 どちらのレポートも、関係者とパフォーマンス データを共有し、システム全体のパフォーマンスおよび正常性が改善しているか悪化しているかを伝えるために使用できます。
 
@@ -62,7 +62,7 @@ Excel レポートを生成するには、**ロード テスト アナライザ�
 
       Microsoft Excel が開き、**ロード テスト レポートの生成ウィザード**が表示されます。
 
-   **または**
+   **OR**
 
    1. Microsoft Excel を開き、**Office** リボンの **[ロード テスト]** タブを選択し、 **[ロード テスト レポート]** を選びます。
 
@@ -117,7 +117,7 @@ Excel レポートを生成するには、**ロード テスト アナライザ�
 
       Microsoft Excel が開き、**ロード テスト レポートの生成ウィザード**が表示されます。
 
-   **または**
+   **OR**
 
    1. Microsoft Excel を開き、**Office** リボンの **[ロード テスト]** タブを選択し、 **[ロード テスト レポート]** を選びます。
 
@@ -148,6 +148,6 @@ Excel レポートを生成するには、**ロード テスト アナライザ�
 
 ロード テストの結果とレポートには、機密情報になり得る情報が含まれており、コンピューターまたはネットワークに対する攻撃を行うために使用されるおそれがあります。 ロード テストの結果とレポートには、コンピューター名と接続文字列が含まれています。 ロード テストのレポートを他のユーザーと共有する場合は、この点に注意する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テストの比較または傾向分析のためにロード テストの結果レポートを作成する](../test/compare-load-test-results.md)

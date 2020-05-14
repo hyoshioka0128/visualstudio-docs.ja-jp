@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Command Devenv switch
 - Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca9a6550fd5fd141a5f8051d1948ccd626e970b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654604"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75570402"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -35,7 +35,7 @@ devenv /Command CommandName
 
 必須です。 Visual Studio コマンドの完全な名前またはその別名を二重引用符で囲みます。 コマンドとエイリアスの構文について詳しくは、「[Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)」をご覧ください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 起動が完了すると、指定したコマンドが IDE で実行されます。
 

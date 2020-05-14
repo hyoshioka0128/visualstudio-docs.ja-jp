@@ -17,27 +17,30 @@ helpviewer_keywords:
 - Otherwise Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 045a7366546e85ad2e9588ce2a14077f8b18a331
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842561"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633383"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild の条件構造
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、[Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md)、[Otherwise](../msbuild/otherwise-element-msbuild.md) 要素で either/or 処理を行うためのメカニズムを提供します。
+
+MSBuild には、[Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md)、[Otherwise](../msbuild/otherwise-element-msbuild.md) 要素で either/or 処理を行うためのメカニズムが用意されています。
 
 ## <a name="use-the-choose-element"></a>Choose 要素を使用する
+
  `Choose` 要素には、`Condition` 属性を持つ一連の `When` 要素が含まれます。この要素は、いずれかの評価結果が `true` になるまで、上から下への順序でテストされます。 複数の `When` 要素が評価の結果、`true` になる場合、最初の要素だけが使用されます。 `Otherwise` 要素が存在する場合、`When` 要素の条件がいずれも評価の結果、`true` にならない場合にのみ評価されます。
 
  `Choose` 要素は、`Project`、`When`、`Otherwise` 要素の子要素として使用できます。 `When` 要素と `Otherwise` 要素には、子要素として `ItemGroup`、`PropertyGroup`、`Choose` を入れることができます。
 
 ## <a name="example"></a>例
+
  次の例では、either/or 処理に `Choose` 要素と `When` 要素が使用されています。 プロジェクトのプロパティと項目は、`Configuration` プロパティの値に基づいて設定されます。
 
 ```xml
@@ -77,6 +80,7 @@ ms.locfileid: "62842561"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [Choose 要素 (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [When 要素 (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Otherwise 要素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)

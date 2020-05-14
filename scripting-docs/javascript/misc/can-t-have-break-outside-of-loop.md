@@ -1,5 +1,5 @@
 ---
-title: "' Break ' をループの外側に設定することはできません |Microsoft Docs"
+title: "'break' をループの外に設定できません |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576015"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' をループの外に設定できません。
-ループの外側で**break**キーワードを使用しようとしました。 **Break**キーワードは、ループまたは `switch` ステートメントを終了するために使用されます。 ループまたは `switch` ステートメントの本体に埋め込まれている必要があります。 ただし、**ラベル**は break キーワードに従うことができます。  
+ループの外側で**break**キーワードを使用しようとしました。 **break**キーワードは、ループまたは `switch` ステートメントを終了するために使用されます。 ループまたは `switch` ステートメントの本体に埋め込まれている必要があります。 ただし、**label**は break キーワードに従うことができます。  
   
 ```js
 break labelname;  
@@ -32,7 +32,7 @@ break labelname;
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Break**キーワードが外側のループまたは switch ステートメントの内側にあることを確認します。  
+- **break**キーワードが外側のループまたは switch ステートメントの内側にあることを確認します。  
   
 ## <a name="see-also"></a>参照  
  [break ステートメント](../../javascript/reference/break-statement-javascript.md)   

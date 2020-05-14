@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2 |Microsoft Docs
+title: IDebug 式の評価完了イベント2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5af187e04096fdd16dc5a371f49953fae2e61621
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 35e57e361b59e76e187617b5e528b219e8e47897
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325729"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729559"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
-このインターフェイスは、非同期式の評価が完了すると、セッション デバッグ マネージャー (SDM) にデバッグ エンジン (DE) によって送信されます。
+このインターフェイスは、非同期式の評価が完了すると、デバッグ エンジン (DE) によってセッション デバッグ マネージャー (SDM) に送信されます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,31 +28,31 @@ ms.locfileid: "66325729"
 IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デへの呼び出しによって開始された式の評価の完了をレポートするには、このインターフェイスを実装する[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ DE は[、EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)の呼び出しによって開始された式の評価の完了を報告するために、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は[、インターフェイス](/cpp/atl/queryinterface)にアクセスするのに`IDebugEvent2`クエリ インターフェイスを使用します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- デは作成し、式の評価の完了を報告するには、このイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって指定されたコールバック関数。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ DE は、式の評価の完了を報告するために、このイベント オブジェクトを作成して送信します。 イベントは、デバッグ中のプログラムにアタッチされたときに SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して送信されます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugExpressionEvaluationCompleteEvent2`します。
+ 次の表に`IDebugExpressionEvaluationCompleteEvent2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)|元の式を取得します。|
-|[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|式の評価の結果を取得します。|
+|[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|式の評価結果を取得します。|
 
 ## <a name="remarks"></a>Remarks
- 評価の成功または失敗かどうか、デはこのイベントを送信する必要があります。
+ 評価が成功したかどうかに関係なく、DE はこのイベントを送信する必要があります。
 
- 評価が、失敗した場合、`DEBUG_PROPINFO_VALUE`と`DEBUG_PROPINFO_ATTRIB`フラグを設定できませんが、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)によって返される構造[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトは、DE によって作成されで返される、`IDebugExpressionEvaluationCompleteEvent2`イベント評価に失敗した場合)。
+ 評価が`DEBUG_PROPINFO_VALUE`成功しなかった場合、および`DEBUG_PROPINFO_ATTRIB`フラグは[、GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)によって返される[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体に設定されません[(IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトは DE によって作成され、評価が`IDebugExpressionEvaluationCompleteEvent2`失敗した場合はイベントで返されます)。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

@@ -9,19 +9,19 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d26211f566bb8f683f3b38deade4f13defe9cb01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189506"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115235"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>応答ファイルの設定を定義する方法
 
@@ -156,7 +156,7 @@ Visual Studio セットアップをレイアウト フォルダーから実行�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
 * [Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md)

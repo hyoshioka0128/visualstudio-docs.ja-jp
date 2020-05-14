@@ -11,16 +11,16 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: aa8a4a229102a6a9439ffb36582cd03e322a086b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62815666"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Unity のログ コールバックを VSTU と共有する
 Visual Studio Tools for Unity では、Unity コンソールを Visual Studio にストリーミングできるよう、Unity にログ コールバックを登録します。 エディターのスクリプトもログ コールバックを Unity に登録すると、そのコールバックが VSTU コールバックから影響を受けることがあります。 この可能性を回避するには、`VisualStudioIntegration.LogCallback` イベントを使用して VSTU と連携します。
 
-## <a name="demonstrates"></a>使用例
+## <a name="demonstrates"></a>対象
  Visual Studio Tools for Unity によって作成されるログ コールバックを共有する方法を示します。
 
 ## <a name="example"></a>例
@@ -48,5 +48,5 @@ public class LogCallbackHook
 #endif
 ```
 
-## <a name="see-also"></a>関連項目
- [例:プロジェクト ファイルの生成](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>参照
+ [例: プロジェクト ファイルの生成](../cross-platform/customize-project-files-created-by-vstu.md)

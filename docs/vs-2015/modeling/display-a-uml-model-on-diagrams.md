@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 12c6cecf79b0c20ea2c110efa432d5ccb9f38863
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296009"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916133"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>図に UML モデルを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio に対する拡張機能のプログラム コードでは、モデル要素が図上でどのように表示されるかを制御できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-このトピックの内容:
+このトピックの内容
 - [図に要素を表示するには](#Display)
 
 - [要素を表す図形へのアクセス](#GetShapes)
@@ -43,9 +43,9 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |---------------------|-----------------|-------------------------------------|
 |分類子|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|指定した図に関連付けられた図形を作成します。 分類子ごとに任意の数の図形を作成することができます。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 図の最上位の図形については、`parentShape` を `null` に設定します。<br /><br /> 1 つの図形を別の図形の中に表示するには、次のようにします。<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**メモ:** **Ilinて undo**トランザクション内で表示を実行すると、メソッドが `IShape`を返さないことがあります。 ただし、図形は正しく作成され、`IElement.Shapes().` を使用してアクセスすることはできます。|
 |分類子の子|属性、操作、<br /><br /> パート、ポート|自動 - コード不要です。<br /><br /> 親の一部として表示されます。|
-|動作|相互作用 (シーケンス)、<br /><br /> [利用状況]|適切な図に動作をバインドします。<br /><br /> 各動作は、一度に最大で 1 つの図にバインドできます。<br /><br /> 例 :<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|動作|相互作用 (シーケンス)、<br /><br /> [利用状況]|適切な図に動作をバインドします。<br /><br /> 各動作は、一度に最大で 1 つの図にバインドできます。<br /><br /> 例:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |動作の子|生存線、メッセージ、操作、オブジェクト ノード|自動 - コード不要です。<br /><br /> 親が図にバインドされている場合に表示されます。|
-|リレーションシップ|関連、汎化、フロー、依存関係|自動 - コード不要です。<br /><br /> 両端が表示されるすべての図に表示されます。|
+|Relationship|関連、汎化、フロー、依存関係|自動 - コード不要です。<br /><br /> 両端が表示されるすべての図に表示されます。|
 
 ## <a name="GetShapes"></a>要素を表す図形へのアクセス
  要素を表す図形は、次の型に属します。
@@ -378,5 +378,6 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>関連項目
- [Uml モデルとダイアグラムの拡張](../modeling/extend-uml-models-and-diagrams.md) [uml モデルの移動](../modeling/navigate-the-uml-model.md)[サンプル: 図での図形の整列メニューコマンド](https://go.microsoft.com/fwlink/?LinkId=213809)の[サンプル: 要素、図形、およびステレオタイプの作成](https://go.microsoft.com/fwlink/?LinkId=213811)
+## <a name="see-also"></a>参照
+ [Uml モデルとダイアグラムの拡張](../modeling/extend-uml-models-and-diagrams.md) [uml モデルへの移動](../modeling/navigate-the-uml-model.md)
+ 

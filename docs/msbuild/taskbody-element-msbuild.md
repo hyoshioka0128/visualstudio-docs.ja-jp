@@ -1,5 +1,5 @@
 ---
-title: TaskBody 要素 (MSBuild) | Microsoft Docs
+title: UsingTask の Task 要素 (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -8,33 +8,35 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- TaskBody element [MSBuild]
-- <TaskBody> element [MSBuild]
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f788df1dd3cad2baddd6d2966b04195af01fe7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938962"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263189"
 ---
-# <a name="taskbody-element-msbuild"></a>TaskBody 要素 (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>UsingTask の Task 要素 (MSBuild)
+
 `UsingTask` `TaskFactory` に渡されるデータを含みます。 詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
- \<Project> \<UsingTask> \<TaskBody>
+ \<Project> \<UsingTask> \<Task>
 
 ## <a name="syntax"></a>構文
 
 ```xml
-<TaskBody Evaluate="true/false" />
+<Task Evaluate="true/false" />
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -47,16 +49,17 @@ ms.locfileid: "62938962"
 
 |要素|説明|
 |-------------|-----------------|
-|データ|`TaskBody` タグ間のテキストは `TaskFactory` にそのまま送信されます。|
+|データ|`Task` タグ間のテキストは `TaskFactory` にそのまま送信されます。|
 
 ### <a name="parent-elements"></a>親要素
 
 | 要素 | 説明 |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にタスクを登録する方法を提供します。 1 つのプロジェクトに 0 個以上の `UsingTask` 要素を含めることができます。 |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | MSBuild でタスクを登録する方法を指定します。 1 つのプロジェクトに 0 個以上の `UsingTask` 要素を含めることができます。 |
 
 ## <a name="example"></a>例
- 次の例では、`Evaluate` 属性で `TaskBody` 要素を使用する方法を示します。
+
+ 次の例では、`Evaluate` 属性で `Task` 要素を使用する方法を示します。
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -65,13 +68,14 @@ ms.locfileid: "62938962"
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

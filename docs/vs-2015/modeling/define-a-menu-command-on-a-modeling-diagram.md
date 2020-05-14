@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299264"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918836"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>モデリング図にメニュー コマンドを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、UML 図のショートカット メニューに追加のメニュー項目を定義できます。 図上の任意の要素のショートカット メニューに対して、メニュー コマンドを表示して有効にするかどうかを制御できます。また、ユーザーがメニュー項目を選択したときに実行されるコードを記述できます。 これらの拡張機能を[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
+Visual Studio では、UML 図のショートカット メニューに追加のメニュー項目を定義できます。 図上の任意の要素のショートカット メニューに対して、メニュー コマンドを表示して有効にするかどうかを制御できます。また、ユーザーがメニュー項目を選択したときに実行されるコードを記述できます。 これらの拡張機能を[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
 ## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
@@ -55,7 +55,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 1. 新しい Visual Studio ソリューションまたは既存のソリューションにクラス ライブラリ プロジェクトを作成します。
 
-   1. **[ファイル]** メニューで、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
+   1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
 
    2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** をクリックします。 中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -65,7 +65,7 @@ Visual Studio では、UML 図のショートカット メニューに追加の�
 
 2. 以下の参照をプロジェクトに追加します。
 
-   |                                                                                                    参照                                                                                                    |                                                                                                  実行できる操作                                                                                                  |
+   |                                                                                                    参照先                                                                                                    |                                                                                                  実行できる操作                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)を使用してコンポーネントを定義する。                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        モデル要素のプロパティを読み取り、変更する。                                                                                         |
@@ -271,9 +271,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *% Localappdata%* **\Local\Microsoft\VisualStudio\\[バージョン] \ 拡張機能**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="MenuExample"></a> 例
+## <a name="MenuExample"></a> 「例」
  クラス図の 2 つの要素の名前を入れ替えるメニュー コマンドのコードを次の例に示します。 このコードは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能プロジェクト内でビルドし、前のセクションで説明した手順に従ってインストールする必要があります。
 
 ```
@@ -362,5 +362,6 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>関連項目
- [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[モデリング図にジェスチャハンドラーを](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[するカスタムモデリングツールボックスアイテムを定義する](../modeling/define-a-custom-modeling-toolbox-item.md)UML[モデルの検証制約の定義](../modeling/define-validation-constraints-for-uml-models.md)uml API を使用した Uml モデルの[編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)Uml [api](../modeling/programming-with-the-uml-api.md)の[サンプル: uml 図で図形を整列するコマンド](https://go.microsoft.com/fwlink/?LinkID=213809)
+## <a name="see-also"></a>参照
+ [モデリング拡張機能を定義してインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[モデリング図にジェスチャハンドラーを](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[するカスタムモデリングツールボックス項目を定義する](../modeling/define-a-custom-modeling-toolbox-item.md) [uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する uml api を使用して uml シーケンス図を編集する uml [api](../modeling/programming-with-the-uml-api.md)を使用し[て uml シーケンス図を編集](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)する
+ 

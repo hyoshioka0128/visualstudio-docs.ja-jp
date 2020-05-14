@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b8ef3edb592b003a8c42ef954129c3bafd3ffc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbd3b2a7d7e56870a994af288f5887f1d86256af
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653339"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591646"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>方法: ロード テストの実行設定の [タイミングの詳細ストレージ] プロパティを指定する
 
@@ -31,7 +31,7 @@ ms.locfileid: "72653339"
 
 - **[なし]:** 個々のタイミング詳細情報は収集しません。 ただし、平均値は表示されます。
 
-- **[統計のみ]:** 個々のタイミング データを、百分位データとしてのみ保存します。 これにより、領域リソースを節約できます。
+- **[統計のみ]:** 個々のタイミング データを、パーセンタイル データの形式だけで保存します。 これにより、領域リソースを節約できます。
 
   **[タイミングの詳細ストレージ] プロパティに関する考慮事項**
 
@@ -57,9 +57,9 @@ ms.locfileid: "72653339"
 
 5. **[結果]** カテゴリの **[タイミングの詳細ストレージ]** プロパティを選択し、 **[すべての個別詳細]** を選択します。
 
-     **[タイミングの詳細ストレージ]** プロパティを **[すべての個別詳細]** に設定すると、ロード テストを実行して**仮想ユーザー アクティビティ チャート**を表示できるようになります。 詳細については、[ロード テスト中に仮想ユーザーが行っている操作を分析する](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)」を参照してください。
+     **[タイミングの詳細ストレージ]** プロパティを **[すべての個別詳細]** に設定すると、ロード テストを実行して**仮想ユーザー アクティビティ チャート**を表示できるようになります。 詳細については、[ロード テスト中に仮想ユーザーが行っている操作を分析する方法](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)に関するページを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [詳細ビューでの仮想ユーザー アクティビティの分析](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

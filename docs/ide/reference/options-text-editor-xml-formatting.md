@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ccd5fdee974e7222d1009b508b7ef90758fafcb6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666599"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568140"
 ---
 # <a name="options-text-editor-xml-formatting"></a>[オプション]、[テキスト エディター]、[XML]、[書式設定]
 
@@ -23,10 +23,10 @@ ms.locfileid: "72666599"
 
 **手動による属性の書式設定を保持する**
 
-属性を再フォーマットしません。 これが既定の設定です。
+属性の書式設定を変更しません。 これが既定の設定です。
 
 > [!NOTE]
-> 属性が複数行にわたっている場合、エディターは親要素のインデントに対応するように属性の各行にインデントを設定します。
+> 属性が複数行にある場合、エディターは属性の各行にインデントを設定して、親要素のインデントに一致させます。
 
 **各行の属性の記述位置を揃える**
 
@@ -43,11 +43,11 @@ ms.locfileid: "72666599"
 
 **クリップボードからの貼り付け時**
 
-クリップボードから貼り付ける XML テキストを再フォーマットします。
+クリップボードから貼り付けられる XML テキストの書式設定を変更します。
 
 **終了タグの完成時**
 
-終了タグが完了したときに要素を再フォーマットします。
+終了タグが完了するときに、要素の書式設定を変更します。
 
 ## <a name="mixed-content"></a>混合コンテンツ
 
@@ -55,7 +55,7 @@ ms.locfileid: "72666599"
 
 コンテンツが `xml:space="preserve"` スコープで見つかった場合を除き、混合コンテンツの再フォーマットを試みます。 これが既定の設定です。
 
-要素にテキストとマークアップが混在して含まれている場合、そのコンテンツは混合コンテンツと見なされます。 混合コンテンツを持つ要素の例を次に示します。
+要素にテキストとマークアップが混在している場合、コンテンツは混合コンテンツと見なされます。 次に、混合コンテンツを含む要素の例を示します。
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -64,7 +64,7 @@ ms.locfileid: "72666599"
 </dir>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [XML オプション - その他](options-text-editor-xml-miscellaneous.md)
 - [Visual Studio の XML ツール](../../xml-tools/xml-tools-in-visual-studio.md)

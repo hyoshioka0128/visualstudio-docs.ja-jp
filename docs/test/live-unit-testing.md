@@ -1,19 +1,19 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652999"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223705"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing を構成して使用する方法
 
@@ -79,7 +79,7 @@ Live Unit Testing を構成するには、Visual Studio の最上位メニュー
 
 ## <a name="start-pause-and-stop"></a>開始、一時停止、停止
 
-Live Unit Testing を有効にするには、Visual Studio の最上位メニューから **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選択します。 Live Unit Testing を有効にすると、 **[Live Unit Testing]** メニューのオプションが、 **[開始]** の 1 項目から、 **[一時停止]** 、 **[停止]** 、 **[Reset Clean]/(クリーンのリセット/)** に変わります。
+Live Unit Testing を有効にするには、Visual Studio の最上位メニューから **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選択します。 Live Unit Testing を有効にすると、 **[Live Unit Testing]** メニューで使用可能なオプションが、 **[開始]** の 1 項目から、 **[一時停止]** と **[停止]** に変わります。
 
 - **[一時停止]** では、Live Unit Testing が一時的に中断されます。
 
@@ -87,10 +87,8 @@ Live Unit Testing を有効にするには、Visual Studio の最上位メニュ
 
 - **[停止]** では、Live Unit Testing が完全に停止されます。 Live Unit Testing は収集したすべてのデータを破棄します。
 
-- **[Reset Clean]/(クリーンのリセット/)** では、Live Unit Testing が停止され、保持されたデータが削除されて、Live Unit Testing が再起動されます。
-
 > [!NOTE]
-> 単体テスト プロジェクトが含まれていないソリューションで Live Unit Testing を開始する場合、**Live Unit Testing** メニューには **[一時停止]** 、 **[停止]** 、 **[Reset Clean]\(クリーンのリセット\)** の各オプションが表示されますが、Live Unit Testing は開始されません。 **[出力]** ウィンドウには、"このソリューションではサポートされているテスト アダプターが参照されていません..." という内容で始まるメッセージが表示されます。
+> 単体テスト プロジェクトが含まれていないソリューションで Live Unit Testing を開始する場合、**Live Unit Testing** メニューには **[一時停止]** と **[停止]** の各オプションが表示されますが、Live Unit Testing は開始されません。 **[出力]** ウィンドウには、"このソリューションではサポートされているテスト アダプターが参照されていません..." という内容で始まるメッセージが表示されます。
 
 いつでも、Live Unit Testing を一時停止または完全に停止できます。 たとえば、リファクタリングの途中で、しばらくテストが中断されることがわかっている場合に、これを行うことがあります。
 
@@ -132,12 +130,13 @@ Live Unit Testing のカバレッジの視覚化は、コード エディター�
 
 たとえば、前の図に示した不合格になったテストの原因は、<xref:System.Char.IsLower%2A?displayProperty=fullName> メソッドに非アルファベット文字を渡すと `true` が返るという、テスト メソッドでの誤った想定です。 テスト メソッドを修正した後は、すべてのテストが合格になるはずです。 Live Unit Testing を一時停止または停止する必要はありません。
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>テスト エクスプローラー
 
 **テスト エクスプローラー**で提供されるインターフェイスを使用すると、テストを実行してデバッグし、テストの結果を分析することができます。 Live Unit Testing は**テスト エクスプローラー**と統合します。 Live Unit Testing が有効になっていないか、停止されていると、**テスト エクスプローラー**には最後のテスト実行時の単体テストの状態が表示されます。 ソース コードを変更すると、テストを再実行する必要があります。 これに対し、Live Unit Testing が有効になっていると、**テスト エクスプローラー**の単体テストの状態はすぐに更新されます。 単体テストを明示的に実行する必要はありません。
 
 > [!TIP]
-> **テスト エクスプローラー**を開くには、Visual Studio の上部にあるメニューで、 **[テスト]**  >  **[Windows]**  >  **[テスト エクスプローラー]** の順に選択します。
+> **Live Unit Testing** を開くには、Visual Studio の上部にあるメニューで、 **[テスト]**  >  **[Windows]**  >  **[テスト エクスプローラー]** の順に選択します。
 
 **テスト エクスプローラー** ウィンドウで、一部のテストがフェード アウトしているのに気付くことがあります。たとえば、以前保存したプロジェクトを開いた後に Live Unit Testing を有効にすると、次の図のように、 **[テスト エクスプローラー]** ウィンドウで、不合格となったテストを除くすべてがフェード アウトします。 この場合、Live Unit Testing では、不合格のたテストは再実行されていますが、合格したテストは再実行されていません。 これは、Live Unit Testing の保持されているデータでは、テストが最後に正常に実行されてから変更がなかったことが示されているためです。
 
@@ -150,13 +149,35 @@ Live Unit Testing で自動的にテストを実行してテスト結果を更�
 - [テスト エクスプローラー] ウィンドウからテストを実行またはデバッグすると標準バイナリが実行されますが、Live Unit Testing ではインストルメント化されたバイナリが実行されます。
 - Live Unit Testing ではテストを実行するために新しいアプリケーション ドメインは作成されず、既定のドメインからテストが実行されます。 **[テスト エクスプローラー]** ウィンドウからテストを実行すると、新しいアプリケーション ドメインが作成されます。
 - Live Unit Testing では、各テスト アセンブリで順番にテストが実行されます。 **[テスト エクスプローラー]** ウィンドウでは、複数のテストを並列に実行できます。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Live Unit Testing ウィンドウ
+
+**Live Unit Testing** で提供されるインターフェイスを使用すると、**テスト エクスプローラー**と同様に、テストを実行してデバッグし、テストの結果を分析することができます。 Live Unit Testing が有効になっていると、**テスト エクスプローラー**の単体テストの状態はすぐに更新されます。 単体テストを明示的に実行する必要はありません。 Live Unit Testing が有効になっていないか、停止されていると、**Live Unit Testing** には最後のテスト実行時の単体テストの状態が表示されます。 Live Unit Testing を再開した後、テストを再実行するにはソース コードを変更する必要があります。
+
+> [!TIP]
+> Live Unit Testing を開始するには、Visual Studio の上部にあるメニューから **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選びます。 **Live Unit Testing** ウィンドウを開くには、 **[表示]**  >  **[その他のウィンドウ]**  >  **[Live Unit Testing ウィンドウ]** を使用することもできます。
+
+**[Live Unit Testing]** ウィンドウで、一部のテストがフェード アウトしていることがあります。たとえば、Live Unit Testing を停止して再開すると、次の図に示すように、 **[Live Unit Testing]** ウィンドウのすべてのテストがフェード アウトしています。 フェード アウトされたテスト結果は、テストが最新のライブ単体テストの実行に含まれていなかったことを示します。 テストは、テストまたはテストの依存関係に対する変更が検出された場合にのみ実行されます。 変更がない場合は、不必要なテストの実行が回避されます。 この場合、グレー表示されたテスト結果は最新の実行に含まれていなかったものの、"最新の状態" です。
+
+![テスト エクスプローラーでのフェード アウトされたテスト](media/vs-2019/lut-test-explorer.png)
+
+フェードされているテストはどれも、コードを変更すると再実行できます。
+
+Live Unit Testing で自動的にテストを実行してテスト結果を更新するのと、**テスト エクスプローラー**からテストを明示的に実行するのには、いくつかの違いがあります。 こうした違いには、次のようなものがあります。
+
+- [テスト エクスプローラー] ウィンドウからテストを実行またはデバッグすると標準バイナリが実行されますが、Live Unit Testing ではインストルメント化されたバイナリが実行されます。
+- Live Unit Testing ではテストを実行するために新しいアプリケーション ドメインは作成されず、既定のドメインからテストが実行されます。 **[テスト エクスプローラー]** ウィンドウからテストを実行すると、新しいアプリケーション ドメインが作成されます。
+- Live Unit Testing では、各テスト アセンブリで順番にテストが実行されます。 **[テスト エクスプローラー]** ウィンドウでは、複数のテストを並列に実行できます。
+::: moniker-end
 
 ## <a name="large-solutions"></a>大規模なソリューション
 
 ソリューションに 10 個以上のプロジェクトがある場合、Visual Studio で以下の操作を行うと、次のダイアログが表示されます。
 
 - 保持されたデータがない状態で、Live Unit Testing を開始します
-- **[テスト]**  >  **[Live Unit Testing]**  >  **[Reset Clean]/(クリーンのリセット/)** を選択します
+- **[ツール]**  >  **[オプション]**  >  **[Live Unit Testing]**  >  **[Delete Persisted Data]\(持続データの削除\)** を選択します
 
 ![多数のプロジェクト用の Live Unit Testing ダイアログ](media/lut-large-project.png)
 
@@ -200,6 +221,6 @@ Live Unit Testing からテストのアセンブリ全体を除外するには�
 ## <a name="see-also"></a>関連項目
 
 - [コード テスト ツール](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Live Unit Testing のブログ](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Live Unit Testing のブログ](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
 - [ライブ単体テストに関する FAQ](live-unit-testing-faq.md)
 - [Channel 9 ビデオ: Visual Studio の Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

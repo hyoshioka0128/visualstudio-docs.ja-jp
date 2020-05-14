@@ -2,20 +2,20 @@
 title: Microsoft Fakes を使用したテストでのコードの分離
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
+author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653110"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75566905"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
@@ -232,7 +232,7 @@ shim を使用するためにアプリケーション コードを変更した�
     End Class
     ```
 
-    Shim クラスの名前は、元の型名の先頭に `Fakes.Shim` を付けることで構成されます。 パラメーター名がメソッド名に追加されます (System.Fakes へのアセンブリ参照を追加する必要はありません)。
+    Shim クラスの名前は、元の型名の先頭に `Fakes.Shim` を付けることで構成されます。 パラメーター名がメソッド名に追加されます。 (System.Fakes へのアセンブリ参照を追加する必要はありません)。
 
 前の例では、静的メソッドに shim を使用しています。 インスタンス メソッドに shim を使用する場合は、型名とメソッド名の間に `AllInstances` を記述します。
 

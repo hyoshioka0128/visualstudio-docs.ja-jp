@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), GetOutputFileName task
 - GetOutputFileName task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9733aae5e53948cdf07d62f62cd7ca5f930d08a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593292"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName タスク
 
@@ -32,13 +32,13 @@ cl や他のツールの出力ファイル名を取得するヘルパー タス�
 
 以下の表では、**GetOutputFileName** タスクのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**OutputExtension**|必須の **String** 型のパラメーターです。|
 |**OutputFile**|省略可能な **string** 型の出力パラメーターです。|
-|**OutputPath**|省略可能な **string** 型のパラメーターです。|
+|**[OutputPath]**|省略可能な **string** 型のパラメーターです。|
 |**SourceFile**|必須の **String** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

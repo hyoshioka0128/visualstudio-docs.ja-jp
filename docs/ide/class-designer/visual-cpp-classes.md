@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748924"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590736"
 ---
 # <a name="c-classes-in-class-designer"></a>クラス デザイナーの C++ クラス
 
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、 **[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。A:
+また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、 **[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。
 
 ## <a name="multiple-inheritance"></a>多重継承
 
@@ -172,7 +172,7 @@ typedef struct
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> クラス<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> クラス<br /><br /> `C<T>`<br /><br /> テンプレート クラス<br /><br /> `D`<br /><br /> クラス<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
 - [クラスと構造体](/cpp/cpp/classes-and-structs-cpp)

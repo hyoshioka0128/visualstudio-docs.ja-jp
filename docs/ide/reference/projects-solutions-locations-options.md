@@ -4,17 +4,17 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655703"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75565722"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>[オプション] ダイアログ ボックス:[プロジェクトおよびソリューション] \> [場所]
 

@@ -8,21 +8,21 @@ helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d70df94b8b15037b9c4ce6f7830faa50f2d6c7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748732"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569193"
 ---
 # <a name="go-to-line-dialog-box"></a>[指定行へのジャンプ] ダイアログ ボックス
 
-**[指定行へのジャンプ]** ダイアログ ボックスを使うと、アクティブ ドキュメント内の特定の行に移動できます。 このダイアログ ボックスにアクセスするには、編集するドキュメントを開き、 **[編集]**  >  **[ジャンプ]**  >  **[指定行へのジャンプ]** を選ぶか、**Ctrl** + **G** キーを押します。
+**[指定行へのジャンプ]** ダイアログ ボックスを使うと、アクティブ ドキュメント内の特定の行に移動できます。 このダイアログ ボックスにアクセスするには、編集するドキュメントを開き、 **[編集]**  >  **[ジャンプ]**  >  **[指定行へのジャンプ]** を選ぶか、**Ctrl**+**G** キーを押します。
 
 ![Visual Studio の [指定行へのジャンプ] ダイアログ ボックス](media/go-to-line-dialog-box.png)
 
@@ -30,7 +30,7 @@ ms.locfileid: "72748732"
 
 **[行番号 (1 - \<n>)]** ボックスに、アクティブ ドキュメント内の移動先の行番号を入力します。 入力できる値は、1 から現在のドキュメントの最後の行番号までです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [移動コマンドを使用したコードの検索](../../ide/go-to.md)
 - [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.SymbolPath command
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a2e4c789f4bd2637cd4da79d66071cc94d697f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748596"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589384"
 ---
 # <a name="symbol-path-command"></a>Symbol Path コマンド
 デバッガーによってシンボルが検索されるディレクトリの一覧を設定します。
@@ -52,7 +52,7 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

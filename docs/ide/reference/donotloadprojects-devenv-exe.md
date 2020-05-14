@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Devenv, /DoNotLoadProjects switch
 - /DoNotLoadProjects Devenv switch
 - DoNotLoadProjects Devenv switch
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fe7dfed2774eace7d32b1c9041355b566d4e76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654492"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569856"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -34,7 +34,7 @@ devenv /DoNotLoadProjects SolutionName
 
 *SolutionName*
 
-必須です。 開くソリューションの完全パスと名前。
+必須。 開くソリューションの完全パスと名前。
 
 ## <a name="example"></a>例
 
@@ -44,7 +44,7 @@ devenv /DoNotLoadProjects SolutionName
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のフィルター処理済みソリューション](../filtered-solutions.md)
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

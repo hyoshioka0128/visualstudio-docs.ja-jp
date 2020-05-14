@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919185"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76113791"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio のユーザー補助機能
 

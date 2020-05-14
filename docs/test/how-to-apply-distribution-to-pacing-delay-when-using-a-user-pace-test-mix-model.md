@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114490"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>方法: ユーザー ペースのテスト ミックス モデルに対する遅延のペースに分布を適用する
 
@@ -52,9 +52,9 @@ ms.locfileid: "72664828"
 
 5. **[ファイル]**  >  **[保存]** を選びます。 次に、 **[遅延のペースに分布を適用]** の新しい値を使用して、ロード テストを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
-- [チュートリアル: ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)
+- [チュートリアル: ロード テストの作成と実行](../test/walkthrough-create-and-run-a-load-test.md)
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)
 - [ロード テスト シナリオのプロパティ](../test/load-test-scenario-properties.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652505"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596295"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する
 

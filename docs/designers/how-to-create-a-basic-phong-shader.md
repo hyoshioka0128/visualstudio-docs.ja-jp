@@ -3,17 +3,17 @@ title: '方法: 基本フォン シェーダーを作成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5141df9f7504229733a269c2f7b0f94903064d8f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3059048f44524b9a838a8dfefc948ec4018dd05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635943"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589488"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>方法: 基本フォン シェーダーを作成する
 
@@ -23,11 +23,11 @@ ms.locfileid: "72635943"
 
 フォン照明モデルは、ランバート照明モデルを拡張して、サーフェイスの反射プロパティをシミュレートする反射ハイライトを含めたものです。 反射コンポーネントは、ランバート照明モデルで使用されるのと同じ指向性光源からの追加の照明となりますが、最終的な色に対する効果の処理は異なります。 反射ハイライトがシーン内のサーフェイスに与える影響は、ビューの方向、光源の方向、サーフェイスの向きの間の関係によって、サーフェイスごとに異なります。 これは、サーフェイスの反射の色、反射の度合い、向きと、光源の色、輝度、方向で決まります。 ビューアーで光源を直接反射するサーフェイスは最大の反射効果を受け、ビューアーと反対側で光源を反射するサーフェイスは効果を受けません。 フォン照明モデルでは、1 つ以上の反射コンポーネントの組み合わせで、オブジェクトのポイントごとに反射ハイライトの色と輝度が決まります。これらのコンポーネントは、ランバート照明モデルの結果に追加されて、ピクセルの最終的な色が生成されます。
 
-ランバート ライティング モデルの詳細については、「[方法:基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。
+ランバート ライティング モデルの詳細については、「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。
 
 開始する前に、 **[プロパティ]** ウィンドウと**ツールボックス**が表示されていることを確認します。
 
-1. ランバート シェーダーの作成を、「[方法:基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」の説明に従って実行します。
+1. 「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」の説明に従って、ランバート シェーダーを作成します。
 
 2. **[最終的な色]** ノードから **[ランバート]** ノードを接続解除します。 **[ランバート]** ノードの **[RGB]** ターミナルを選択し、 **[リンクの解除]** を選択します。 これにより、次の手順で追加するノードのための領域を確保できます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "72635943"
 
 ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-lighting-graph.png)
 
-シェーダーによっては、特定の図形を使用すると、より適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法の詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。
+シェーダーによっては、特定の図形でより適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法の詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。
 
 次の図は、このドキュメントで説明した、3D モデルに適用されるシェーダーを示しています。 **MaterialSpecular** プロパティは (1.00、0.50、0.20、0.00) に設定され、その **MaterialSpecularPower** プロパティは 16 に設定されています。
 
@@ -57,9 +57,9 @@ ms.locfileid: "72635943"
 
 ![モデルに適用されたフォン光源](../designers/media/digit-lighting-model.png)
 
-3D モデルにシェーダーを適用する方法の詳細については、「[方法:シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
+3D モデルにシェーダーを適用する方法の詳細については、「[方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)

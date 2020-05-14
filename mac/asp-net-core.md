@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913324"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543899"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
- Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 これは、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と macOS でも動作するようにイメージが再構成されています。
+ Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 これは、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と macOS でも動作するように再構成されています。
 
 ## <a name="installing-net-core"></a>.NET Core のインストール
 
@@ -29,7 +29,7 @@ Visual Studio for Mac を開きます。 スタート画面で、 **[新しい�
 
 [新しいプロジェクト] ダイアログが表示されます。このダイアログで、アプリケーションを作成するためのテンプレートを選択できます。
 
-ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 これらの数値は、次のとおりです。
+ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 これらのボタンの役割は、次のとおりです。
 
 - **[.NET Core] > [空]**
 - **[.NET Core] > [API]**
@@ -118,9 +118,9 @@ ASP.NET Core アプリにより、その main メソッドで Web サーバー�
 
 事前作成済みテンプレートの `Configure` メソッドは、いくつかのことを行うように作成されています。 最初に、開発中に使用するために、例外処理ページを構成します。 次に、簡単な "Hello World" で要求元の Web ページに応答を送信します。
 
-この簡単な "Hello World" プロジェクトは、コードを追加しなくても実行できるようになりました。 アプリを実行し、それをブラウザーで表示するには、ツールバーの [再生] ボタン (三角形) を押します。
+この簡単な "Hello World" プロジェクトは、コードを追加しなくても実行できるようになりました。 アプリを実行する場合、再生ボタンの右側にあるドロップダウンを使用してどのブラウザーでアプリを実行するか選択するか、または単に再生 (三角形) ボタンを押して既定のブラウザーを使用するか、いずれかを選べます。
 
-![アプリを実行する](media/asp-net-core-2019-run-debug.png)
+![ブラウザーでの実行](media/asp-net-web-picker.png)
 
 Visual Studio for Mac では、ランダムのポートを利用して Web プロジェクトを起動します。 利用されているポートを調べるには、アプリケーション出力を開きます。これは **[表示]、[パッド]** にあります。 出力は下の画像のようになります。
 
@@ -236,7 +236,7 @@ Mac OS 10.12 (Sierra) 以降に .NET Core を手動インストールする場�
 
 このガイドでは、ASP.NET Core の概要を説明しました。 ASP.NET Core とは何か、それを利用する状況、Visual Studio for Mac で使用する場合について説明しました。
 ここから先の手順については、次のガイドを参照してください。
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc) ドキュメント。
+- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1) ドキュメント。
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (ネイティブ モバイル アプリケーションのバックエンド サービスを作成する)。ここでは、Xamarin.Forms アプリのために ASP.NET Core を利用して REST サービスをビルドする方法について解説しています。
 - [ASP.NET Core 実践ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 

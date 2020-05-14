@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindowManager オブジェクト |Microsoft Docs
+title: オブジェクト |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VsCodeWindowManager object
 - views [Visual Studio SDK], VSCodeWindowManager object
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189038"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740419"
 ---
-# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager オブジェクト
+# <a name="vscodewindowmanager-object"></a>オブジェクト
 
-言語サービスはコードウィンドウマネージャーを実装し、修飾 (ドロップダウンバーなど) の管理を担当します。 詳細については、「[従来の API を使用してコードウィンドウをカスタマイズする](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015)」を参照してください。
+言語サービスは、コード ウィンドウ マネージャーを実装し、表示要素 (ドロップダウン バーなど) の管理を担当します。 詳細については、「[レガシ API を使用したコード ウィンドウのカスタマイズ](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015)」を参照してください。
 
-次の表は、`VSCodeWindowManager` オブジェクト内のインターフェイスを示しています。
+次の表に、オブジェクト内の`VSCodeWindowManager`インターフェイスを示します。
 
-|Interface|説明|
+|インターフェイス|説明|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|コードウィンドウに対する修飾 (ドロップダウンバーなど) の追加または削除を許可します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|コード ウィンドウに対して表示要素 (ドロップダウン バーなど) を追加したり、コード ウィンドウから削除したりできます。|

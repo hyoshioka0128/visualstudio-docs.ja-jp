@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e55c0e81877c2735571705a2b2d2529b0fa3a74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667000"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595515"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>[オプション] ダイアログ ボックス: [環境] \> [国際対応の設定]
+# <a name="options-dialog-box-environment--international-settings"></a>[オプション] ダイアログ ボックス:[環境] \> [国際対応の設定]
 
 コンピューターにインストールされている統合開発環境 (IDE) に複数の言語バージョンがある場合は、[国際対応の設定] ページで既定の言語を変更できます。 このダイアログ ボックスにアクセスするには、 **[ツール]** メニューの **[オプション]** を選択し、 **[環境]** フォルダーから **[国際対応の設定]** を選択します。
 

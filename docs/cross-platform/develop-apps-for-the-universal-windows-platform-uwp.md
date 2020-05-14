@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777765"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75587148"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 
@@ -68,6 +68,6 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 ユニバーサル Windows アプリを作成したら、アプリをパッケージ化して、それを Windows 10 デバイスにインストールするか Windows ストアに送信する必要があります。 「[アプリのパッケージ化](/windows/uwp/packaging/index)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio におけるクロス プラットフォーム モバイル開発](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

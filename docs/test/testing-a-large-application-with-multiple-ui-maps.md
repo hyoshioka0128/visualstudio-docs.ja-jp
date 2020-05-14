@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659907"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590294"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>複数の UI マップで大規模アプリケーションをテストする
 
@@ -139,7 +139,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

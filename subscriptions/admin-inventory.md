@@ -3,15 +3,16 @@ title: 運用前環境のインベントリ | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
+ms.date: 03/06/2020
 ms.topic: conceptual
 description: 運用前環境のインベントリを実施する管理者の責任について説明します
-ms.openlocfilehash: 97a7a95354cd4d5d85581830830705bc328f2311
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491714"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232755"
 ---
 # <a name="inventory-of-pre-production-environment"></a>運用前環境のインベントリ
 Visual Studio サブスクリプションは、デバイスではなくユーザーをカウントすることで、資産管理を簡略化します。
@@ -25,13 +26,22 @@ Visual Studio の管理者は、Visual Studio サブスクリプションを**�
 - 手動による調整に関するヘルプを入手します。 開発およびテスト環境で、開発ユーザーおよびテスト ユーザーの調整を支援するため、スタッフを登録します。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
+- [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>次の手順
+## <a name="see-also"></a>参照
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [管理者の責任](admin-responsibilities.md)
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)
 - [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
+
+
+

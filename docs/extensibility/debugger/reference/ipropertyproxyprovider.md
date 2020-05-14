@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider |Microsoft Docs
+title: を提供する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbda02c26018adc4e5f1f3677b75bc2dce25a2e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339283"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714796"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-このインターフェイスには、オブジェクトのデータの変更を表示したり、プロキシ インターフェイスが用意されています。
+このインターフェイスは、オブジェクトのデータを表示および変更するためのプロキシ インターフェイスを提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,28 +28,28 @@ ms.locfileid: "66339283"
 IPropertyProxyProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- 式エバリュエーター (EE) を実装する同一のオブジェクトにこのインターフェイスを実装する、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)型のビジュアライザーの EE のサポートの一環としてインターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ 式エバリュエーター (EE) は、型ビジュアライザーの EE のサポートの一部として[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを実装する同じオブジェクトにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、`IDebugProperty3`をこのインターフェイスを取得するインターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ この[QueryInterface](/cpp/atl/queryinterface)インターフェイスを取得するには`IDebugProperty3`、インターフェイスでクエリ インターフェイスを呼び出します。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
- `IPropertyProxyProvider`インターフェイスは、次のメソッドを実装します。
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+ インターフェイス`IPropertyProxyProvider`は、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|オブジェクトのデータを表示するプロパティのプロキシ インターフェイスを取得します。|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|オブジェクトのデータを表示するプロパティ プロキシ インターフェイスを取得します。|
 
 ## <a name="remarks"></a>Remarks
- EE の実装は、このインターフェイスの実装が[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)によって処理が通常[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)します。 参照してください[視覚化してデータの表示](../../../extensibility/debugger/visualizing-and-viewing-data.md)IEEVisualizerService インターフェイスを取得する方法の詳細。
+ EE はこのインターフェイスを実装しますが、通常は[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)[によって実装](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)されます。 IEEVisualizer サービス インターフェイスの取得の詳細については、「[データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md)」を参照してください。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

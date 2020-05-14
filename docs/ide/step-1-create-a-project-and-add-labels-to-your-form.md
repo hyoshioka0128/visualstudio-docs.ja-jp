@@ -5,26 +5,24 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516686"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579449"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのラベルの追加
 
 このクイズを開発する最初のステップとして、プロジェクトを作成し、ラベル、ボタン、およびその他のコントロールをフォームに追加します。 また、追加する各コントロールのプロパティを設定します。 プロジェクトには、フォーム、コントロール、およびコード (チュートリアルで後ほど説明) が含まれます。 ボタンはクイズを開始し、ラベルはクイズ問題を表示し、その他のコントロールはクイズの解答とクイズを完了するために残っている時間を示します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 
-> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。 
-> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ## <a name="to-create-a-project-for-a-form"></a>フォーム用のプロジェクトを作成するには
 
@@ -130,9 +128,9 @@ ms.locfileid: "72516686"
 
 7. **(Name)** プロパティを **plusLeftLabel** に設定します。
 
-8. **[plusLeftLabel]** ラベルをクリックし、**Ctrl** + **C** キーを押すか、 **[編集]** メニューの **[コピー]** をクリックします。
+8. **[plusLeftLabel]** ラベルをクリックし、**Ctrl**+**C** キーを押すか、 **[編集]** メニューの **[コピー]** をクリックします。
 
-9. **Ctrl** + **V** キーを押すか、 **[編集]** メニューの **[貼り付け]** をクリックして、ラベルを 3 回貼り付けます。
+9. **Ctrl**+**V** キーを押すか、 **[編集]** メニューの **[貼り付け]** をクリックして、ラベルを 3 回貼り付けます。
 
 10. **[plusLeftLabel]** ラベルの右側に並ぶように、3 つの新しいラベルを配置します。
 

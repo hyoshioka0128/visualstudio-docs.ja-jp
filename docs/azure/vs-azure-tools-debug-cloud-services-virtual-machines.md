@@ -5,17 +5,17 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 2536a56f76a048cab6a3bf9a5ec026d22fe112a7
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024585"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489741"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
 
@@ -25,11 +25,11 @@ Visual Studio には、Azure クラウド サービスと仮想マシンのデ�
 
 Azure コンピューティング エミュレーターを使用してローカル コンピューターでクラウド サービスをデバッグすれば、時間とコストの節約になります。 サービスをデプロイする前にローカルでデバッグすると、コンピューティング時間の料金を支払うことなく、信頼性とパフォーマンスを改善できます。 ただし、一部には Azure でクラウド サービスを実行した場合にのみ発生するエラーもあります。 サービスを発行し、デバッガーをロール インスタンスにアタッチするときに、リモート デバッグを有効にすると、このようなエラーをデバッグできます。
 
-エミュレーターは、Azure コンピューティング サービスをシミュレートし、ローカル環境で動作するので、クラウド サービスのテストとデバッグを行ってからデプロイすることができます。 エミュレーターでは、ロール インスタンスのライフサイクルが処理され、ローカル ストレージなどのシミュレートされるリソースにアクセスできます。 Visual Studio でサービスをデバッグまたは実行すると、エミュレーターがバックグラウンド アプリケーションとして自動的に起動され、サービスがエミュレーターにデプロイされます。 エミュレーターを使用すると、ローカル環境で実行されているサービスを表示できます。 完全バージョンまたは Express バージョンのエミュレーターを実行できます (Azure 2.3 以降では、emulator の express バージョンが既定値です)。「 [Emulator Express を使用したローカルでのクラウドサービスの実行とデバッグ」を](vs-azure-tools-emulator-express-debug-run.md)参照してください。
+エミュレーターは、Azure コンピューティング サービスをシミュレートし、ローカル環境で動作するので、クラウド サービスのテストとデバッグを行ってからデプロイすることができます。 エミュレーターでは、ロール インスタンスのライフサイクルが処理され、ローカル ストレージなどのシミュレートされるリソースにアクセスできます。 Visual Studio でサービスをデバッグまたは実行すると、エミュレーターがバックグラウンド アプリケーションとして自動的に起動され、サービスがエミュレーターにデプロイされます。 エミュレーターを使用すると、ローカル環境で実行されているサービスを表示できます。 完全バージョンまたは Express バージョンのエミュレーターを実行できます (Azure 2.3 以降では、エミュレーターの高速バージョンが既定です)。[「エミュレーター Express を使用してクラウド サービスをローカルで実行およびデバッグする](vs-azure-tools-emulator-express-debug-run.md)」を参照してください。
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>ローカル コンピューターでクラウド サービスをデバッグするには
 
-1. メニュー バーで、 **[デバッグ]** 、 **[デバッグの開始]** の順に選択し、Azure クラウド サービス プロジェクトを実行します。 または、F5 キーを押します。 コンピューティング エミュレーターが起動することを示すメッセージが表示されます。 エミュレーターが起動すると、システム トレイ アイコンでそのことを確認できます。
+1. メニュー バーで [**デバッグ**]、[**デバッグの開始**] の順に選択して Azure クラウド サービス プロジェクトを実行します。 または、F5 キーを押します。 コンピューティング エミュレーターが起動することを示すメッセージが表示されます。 エミュレーターが起動すると、システム トレイ アイコンでそのことを確認できます。
 
     ![Azure emulator in the system tray](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -61,7 +61,7 @@ Azure コンピューティング エミュレーターを使用してローカ�
 
     ![Choose the Debug configuration](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746717.gif)
 
-3. 通常の手順に従います。ただし、 **[詳細設定]** タブの **[すべてのロールのリモート デバッガーを有効にする]** チェック ボックスをオンにします。
+3. 通常の手順に従います。ただし、**[詳細設定]** タブの **[すべてのロールのリモート デバッガーを有効にする]** チェック ボックスをオンにします。
 
     ![Debug Configuration](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746718.gif)
 
@@ -73,15 +73,15 @@ Azure コンピューティング エミュレーターを使用してローカ�
 
     ロールをデバッグすると、Visual Studio デバッガーによって、そのロールの各インスタンスにアタッチされます。 デバッガーは、コード行を実行し、ブレーク ポイントのいずれかの条件を満たす最初のロール インスタンスのブレーク ポイントで停止します。 インスタンスをデバッグすると、その特定のインスタンスがコード行を実行してブレーク ポイントの条件を満たす場合にのみ、デバッガーがそのインスタンスにのみアタッチし、ブレーク ポイントで停止します。
 
-    ![デバッガーのアタッチ](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
+    ![[デバッガーのアタッチ]](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
 3. デバッガーがインスタンスにアタッチされた後、通常どおりにデバッグします。 デバッガーは、ロールの適切なホスト プロセスに自動的にアタッチされます。 ロール応じて、w3wp.exe、WaWorkerHost.exe、または WaIISHost.exe にアタッチします。 デバッガーがアタッチされるプロセスを検証するには、サーバー エクスプローラーでインスタンス ノードを展開します。 Azure プロセスの詳細については、[Azure ロールのアーキテクチャ](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)に関するページを参照してください。
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. デバッガーがアタッチされているプロセスを確認するには、メニュー バーの [デバッグ]、[Windows]、[プロセス] を選択して、[プロセス] ダイアログ ボックスを開きます(キーボード: Ctrl + Alt + Z)。 (キーボード: Ctrl + Alt + Z)特定のプロセスをデタッチするには、そのショートカットメニューを開き、 **[プロセスのデタッチ]** を選択します。 または、サーバー エクスプローラーでインスタンス ノードを特定し、プロセスを検索し、ショートカット メニューを開き、 **[プロセスのデタッチ]** を選択します。
+4. デバッガーがアタッチされているプロセスを確認するには、メニュー バーの [デバッグ]、[Windows]、[プロセス] を選択して、[プロセス] ダイアログ ボックスを開きます(キーボード: Ctrl + Alt + Z)。 (キーボード: Ctrl+Alt+Z) 特定のプロセスをデタッチするには、ショートカット メニューを開き、**[プロセスのデタッチ]** を選択します。 または、サーバー エクスプローラーでインスタンス ノードを特定し、プロセスを検索し、ショートカット メニューを開き、 **[プロセスのデタッチ]** を選択します。
 
-    ![プロセスのデバッグ](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
+    ![Debug Processes](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
 > [!WARNING]
 > リモート デバッグ時、ブレークポイントで長時間停止させることは避けてください。 Azure では、プロセスの停止時間が数分を超えるとプロセスを応答不能と見なし、そのインスタンスへのトラフィック送信を停止します。 停止時間が長くなると、msvsmon.exe はプロセスからデタッチされます。
@@ -124,7 +124,7 @@ Azure 仮想マシンで実行されているプログラムをデバッグす�
 
     ![Attach debugger command](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-4. **[プロセスにアタッチ]** ダイアログ ボックスで、 **[選択]** を選択し、デバッグするコードの種類のみが表示されるように結果リストを制限します。 32 ビットまたは 64 ビット マネージド コードとネイティブ コードのいずれかまたは両方をデバッグできます。
+4. **[プロセスにアタッチ]** ダイアログ ボックスで、**[選択]** を選択し、デバッグするコードの種類のみが表示されるように結果リストを制限します。 32 ビットまたは 64 ビット マネージド コードとネイティブ コードのいずれかまたは両方をデバッグできます。
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -140,9 +140,9 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
 1. Visual Studio で、新しい ASP.NET Web アプリケーションを作成します。
 
-2. [新しい ASP.NET プロジェクト] ダイアログの [Azure] セクションのドロップダウン リスト ボックスで、 **[仮想マシン]** を選択します。 **[リモート リソースを作成する]** チェック ボックスはオンのままにします。 **OK** を選択して続行します。
+2. [新しい ASP.NET プロジェクト] ダイアログの [Azure] セクションのドロップダウン リスト ボックスで、 **[仮想マシン]** を選択します。 [**リモート リソースを作成する**] チェック ボックスはオンのままにします。 **OK** を選択して続行します。
 
-    **[Azure での仮想マシンの作成]** ダイアログ ボックスが表示されます。
+    [**Azure での仮想マシンの作成**] ダイアログ ボックスが表示されます。
 
     ![Create ASP.NET web project dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
@@ -167,11 +167,11 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
     ![Azure activity log](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. 「[方法: Visual Studio でワンクリック発行を使用して Web プロジェクトを配置](https://msdn.microsoft.com/library/dd465337.aspx)する」の説明に従って、プロジェクトを発行します。 ここでは、仮想マシンでデバッグするため、**Web の発行**ウィザードの **[設定]** ページで、構成として **[デバッグ]** を選択します。 このように設定することで、デバッグ中もコードのシンボルを使用できます。
+6. [Visual Studio でワンクリック発行を使用して Web プロジェクトをデプロイする方法](https://msdn.microsoft.com/library/dd465337.aspx)に関するページの説明に従って、プロジェクトを発行します。 ここでは、仮想マシンでデバッグするため、**Web の発行**ウィザードの [**設定**] ページで、構成として [**デバッグ**] を選択します。 このように設定することで、デバッグ中もコードのシンボルを使用できます。
 
     ![Publish settings](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. プロジェクトが既にデプロイされている場合は、 **[ファイルの発行オプション]** で **[転送先で追加のファイルを削除します。]** をオンにします。
+7. プロジェクトがまだデプロイされていない場合は、[**ファイルの発行オプション**] で [**発行先で追加ファイルを削除する**] を選択します。
 
 8. プロジェクトを発行したら、サーバー エクスプローラーで仮想マシンのコンテキスト メニューを開き、 **[デバッガーのアタッチ...]**
 
@@ -179,14 +179,14 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
     ![Attach debugger command](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-9. **[プロセスにアタッチ]** ダイアログ ボックスで、 **[選択]** を選択し、デバッグするコードの種類のみが表示されるように結果リストを制限します。 32 ビットまたは 64 ビット マネージド コードとネイティブ コードのいずれかまたは両方をデバッグできます。
+9. **[プロセスにアタッチ]** ダイアログ ボックスで、**[選択]** を選択し、デバッグするコードの種類のみが表示されるように結果リストを制限します。 32 ビットまたは 64 ビット マネージド コードとネイティブ コードのいずれかまたは両方をデバッグできます。
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
 10. 仮想マシンでデバッグするプロセスを選択し、 **[アタッチ]** を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「 [Visual Studio での 1 つ以上のプロセスのデバッグ](https://msdn.microsoft.com/library/jj919165.aspx) 」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-* **IntelliTrace** を使用して、リリース サーバーから呼び出しおよびイベントのログを収集します。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)に関するページを参照してください。
+* **IntelliTrace**を使用して、リリース サーバーから呼び出しとイベントのログを収集します。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)に関するページを参照してください。
 
 * **Azure Diagnostics** を使用して、ロールが開発環境と Azure のどちらで実行されているかにかかわらず、ロール内で実行されているコードの詳細な情報をログに記録します。 「 [Azure Diagnostics を使用したログ データの収集](/azure/cloud-services/cloud-services-dotnet-diagnostics)」を参照してください。

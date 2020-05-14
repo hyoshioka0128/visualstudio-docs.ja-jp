@@ -1,21 +1,22 @@
 ---
 title: LINQ クエリを foreach ステートメントに変換するためのコードのリファクタリング
 description: クエリ構文で記述された LINQ クエリを foreach ステートメントに変換します。
-ms.date: 05/15/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e1b24cb8406ff29659eb79d1d9fa856db628b89
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654530"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094087"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>LINQ を foreach ステートメントに変換するためのリファクタリング
 
@@ -24,6 +25,8 @@ ms.locfileid: "72654530"
 このリファクタリングは以下に適用されます。
 
 - C#
+
+- Visual Basic
 
 ## <a name="how-to-use-it"></a>使用方法
 
@@ -39,9 +42,9 @@ ms.locfileid: "72654530"
 1. **['foreach' に変換]** を選択します。 または、 **[変更のプレビュー]** を選択して [[変更のプレビュー]](../../ide/preview-changes.md) ダイアログを開いて **[適用]** を選択します。
 
 > [!NOTE]
-> C# の場合、これらのリファクタリングによって生成されるコードでは、`foreach` ループのイテレーション変数には明示的な型または [var](/dotnet/csharp/language-reference/keywords/var) が使われます。 生成されるコードが明示的または暗黙的のどちらになるかは、スコープ内にのコード スタイルの設定によって決まります。 これらの特定のコード スタイルの設定は、コンピューター レベルの **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[全般]**  >  **[\'var' を優先]** で、またはソリューション レベルの [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) ファイルで構成します。 コード スタイルの設定を **[オプション]** で変更した場合、変更を有効にするにはコード ファイルを開きなおします。
+> C# の場合、これらのリファクタリングによって生成されるコードでは、[ ループのイテレーション変数には明示的な型または ](/dotnet/csharp/language-reference/keywords/var)var`foreach` が使われます。 生成されるコードが明示的または暗黙的のどちらになるかは、スコープ内にのコード スタイルの設定によって決まります。 これらの特定のコード スタイルの設定は、コンピューター レベルの **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[全般]**  >  **[\'var' を優先]** で、またはソリューション レベルの [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) ファイルで構成します。 コード スタイルの設定を **[オプション]** で変更した場合、変更を有効にするにはコード ファイルを開きなおします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [LINQ](/dotnet/standard/using-linq)
 - [リファクタリング](../refactoring-in-visual-studio.md)

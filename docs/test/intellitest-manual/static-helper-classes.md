@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: dd57ecafa0b4da56366faa83d52c39ca556e421a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653144"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306987"
 ---
 # <a name="static-helper-classes"></a>静的ヘルパー クラス
 
@@ -32,7 +32,7 @@ IntelliTest は、[パラメーター化された単体テスト](test-generatio
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-[パラメーター化された単体テスト](test-generation.md#parameterized-unit-testing)の前提 ([前提条件](test-generation.md#precondition)など) を表す静的クラス。 このクラスのメソッドを使用して、望ましくないテスト入力をフィルターで除外することができます。
+[パラメーター化された単体テスト](test-generation.md#precondition)の前提 ([前提条件](test-generation.md#parameterized-unit-testing)など) を表す静的クラス。 このクラスのメソッドを使用して、望ましくないテスト入力をフィルターで除外することができます。
 
 一部のテスト入力に対して想定される条件が当てはまらない場合、**PexAssumeFailedException** がスローされます。 メッセージなしでテストが無視されます。
 
@@ -64,7 +64,7 @@ public void TestSomething(int i, int j) {
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert
 
-[パラメーター化された単体テスト](test-generation.md#parameterized-unit-testing)のアサーション ([事後条件](test-generation.md#postcondition)など) を表す静的クラス。
+[パラメーター化された単体テスト](test-generation.md#postcondition)のアサーション ([事後条件](test-generation.md#parameterized-unit-testing)など) を表す静的クラス。
 
 あるテスト入力でこのアサートされた条件が有効でない場合は、**PexAssertFailedException** がスローされ、テストが不合格となります。
 
@@ -170,6 +170,6 @@ public static void AreElementsNotNull<T>(T[] value)
 }
 ```
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

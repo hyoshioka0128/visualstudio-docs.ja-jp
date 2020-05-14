@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984918"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Visual Studio 2017 for Mac をインストールする
@@ -61,9 +61,9 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
    * **Xamarin を使用するアプリ**:
       - Xamarin.Forms – **Android** と **iOS** プラットフォームを選択します。
-      - iOS のみ – **iOS** プラットフォームを選択します ([ **Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
+      - iOS のみ – **iOS** プラットフォームを選択します ([**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
       - Android のみ – **Android** プラットフォームを選択します (関連する依存関係も選択する必要があります)。
-      - Mac のみ – **macOS** プラットフォームを選択します ([ **Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
+      - Mac のみ – **macOS** プラットフォームを選択します ([**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
       - 完全なクロスプラットフォームの Xamarin アプリ – **Android**、**iOS**、および**macOS** プラットフォームを選択します。
    * **.NET Core アプリケーション** – **.NET Core** プラットフォームを選択します。
    * **ASP.NET Core Web アプリケーション** – **.NET Core** プラットフォームを選択します。
@@ -89,7 +89,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
 10. インストールが成功したら、 **[スタート]** を押して Visual Studio でアプリ開発を始めることができます。
 
-    ![Visual Studio を開く](media/installer-image11.png)
+    ![Visual Studio を開きます](media/installer-image11.png)
 
 > [!NOTE]
 > 元のインストールでプラットフォームやツールをインストールしなかった場合 (手順 6 でオフにした場合)、そのコンポーネントを後で追加するには、[インストーラー](https://visualstudio.microsoft.com/vs/)をもう一度実行する必要があります。
@@ -102,7 +102,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
 - [Visual Studio エンドポイント](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Visual Studio for Mac をインストールすると、アプリのコードの記述を開始できます。 以下のガイドで、次の手順であるプロジェクトの記述と配置について説明します。
 
@@ -125,6 +125,6 @@ Visual Studio for Mac をインストールすると、アプリのコードの�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio 2017 のインストール (Windows)](/visualstudio/install/install-visual-studio)

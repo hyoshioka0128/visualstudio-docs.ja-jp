@@ -1,4 +1,4 @@
----
+﻿---
 title: "'Var' が必要です |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -26,4 +26,4 @@ ms.locfileid: "62433826"
   
  必要な時に、var キーワードを追加できませんでした。  
   
- Var キーワードの詳細については、次を参照してください。 [var ステートメント](../../javascript/reference/var-statement-javascript.md)します。
+ Var キーワードの詳細については、「[var ステートメント](../../javascript/reference/var-statement-javascript.md)」を参照してください。

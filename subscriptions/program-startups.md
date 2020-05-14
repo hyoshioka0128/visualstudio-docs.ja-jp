@@ -3,15 +3,16 @@ title: Microsoft for Startups プログラムからスタートアップ企業�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Microsoft for Startups プログラムから提供されるサブスクリプションの詳細について説明します。
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605738"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233254"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>スタートアップ企業に提供される Visual Studio サブスクリプション
 Microsoft for Startups のプログラムに参加する対象のスタートアップ企業は、Visual Studio Enterprise の[月間クラウド サブスクリプション](https://visualstudio.microsoft.com/vs/pricing/)を 5 つ取得できます。 
@@ -38,6 +39,12 @@ A: Visual Studio クラウド サブスクリプションをキャンセルす�
 クラウド サブスクリプション月間プランでは、キャンセルは次の月の最初の日に有効になります。 クラウド サブスクリプション月間プランの一部だけをキャンセルする場合は、次の月の最初の日にユーザーを削除し、適切なユーザーが引き続きアクティブなサブスクリプションを割り当てられるようにしてください。
 
 クラウド サブスクリプション年間プランの場合は、元の購入または最後の年間更新請求から 12 か月が経過した後の月の最初の日に有効になります。 たとえば、2018 年 1 月 3 日に Visual Studio Professional クラウド サブスクリプション年間プランを購入した場合、2019 年 2 月 1 日に次の年に自動的に更新されるまで、サブスクリプションはアクティブです。 2019 年 2 月 1 日から 2020 年 2 月 1 日までの間にキャンセルした場合、サブスクリプションは 2020 年 2 月 1 日に期限切れになります。 クラウド サブスクリプション年間プランのサブスクリプション年の途中でキャンセルした場合の払い戻しはありません。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 [Microsoft for Startups に関する詳細情報](https://startups.microsoft.com)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Docker と ASP.NET Core
+title: Visual Studio Tools for Docker と ASP.NET
 author: ghogen
 description: Visual Studio 2019 ツールと Docker for Windows を使用する方法について説明します
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74485468"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389949"
 ---
 Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
 
@@ -20,8 +20,8 @@ Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-* .NET Core 2.2 を使って開発するための [.NET Core 2.2 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/2.2)
-* Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* .NET Core を使って開発するための [.NET Core 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/)
+* Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/free/dotnet/)。
 
 ## <a name="installation-and-setup"></a>インストールとセットアップ
 
@@ -29,10 +29,12 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 ## <a name="add-a-project-to-a-docker-container"></a>Docker コンテナーにプロジェクトを追加する
 
-1. **[ASP.NET Core Web アプリケーション]** テンプレートを使って新しいプロジェクトを作成します。
+1. **[ASP.NET Core Web アプリケーション]** テンプレートを使用して新しいプロジェクトを作成します。または、.NET Core ではなく .NET Framework を使用する場合は、 **[ASP.NET Web アプリケーション (.NET Framework)]** を選択します。
 1. **[Web アプリケーション]** を選択し、 **[Enable Docker Support]\(Docker サポートを有効にする\)** チェックボックスがオンになっていることを確認します。
 
    ![[Enable Docker Support]\(Docker サポートを有効にする\) チェック ボックス](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   このスクリーンショットには .NET Core が表示されています。 .NET Framework を使用している場合は、少し異なります。
 
 1. コンテナーの種類 (Windows または Linux) を選択し、 **[作成]** をクリックします。
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。
+前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。 .NET Framework を使用している場合、基本イメージは異なります。
 
 新しいプロジェクト ダイアログの **[Configure for HTTPS]\(HTTPS 用に構成する\)** チェック ボックスがオンになっている場合、*Dockerfile* は 2 つのポートを公開します。 1 つのポートは HTTP トラフィック用、もう 1 つのポートは HTTPS 用に使用されます。 チェック ボックスがオンになっていない場合は、HTTP トラフィック用に単一のポート (80) が公開されます。
 
@@ -71,7 +73,10 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 ツールバーのデバッグ ドロップダウンから **[Docker]** を選択し、アプリのデバッグを開始します。 証明書の信頼を求めるメッセージが表示される場合があります。続行するには、証明書を信頼することを選びます。
 
-**[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。
+**[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。 初めての場合、基本イメージのダウンロードにしばらく時間がかかる場合がありますが、以降の実行でははるかに高速になります。
+
+>[!NOTE]
+> デバッグ用にポートを変更する必要がある場合は、*launchSettings.json* ファイルで行うことができます。 [コンテナーの起動設定](../../container-launch-settings.md)に関する記事を参照してください。
 
 ## <a name="containers-window"></a>コンテナー ウィンドウ
 
@@ -102,7 +107,7 @@ IDE の [検索] ボックスを使用して (**Ctrl**+**Q** を押して使用)
     | **DNS プレフィックス** | グローバルに一意の名前 | コンテナー レジストリを一意に識別する名前。 |
     | **サブスクリプション** | サブスクリプションの選択 | 使用する Azure サブスクリプション。 |
     | **[リソース グループ](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  コンテナー レジストリを作成するリソース グループの名前。 新しいリソース グループを作成する場合は、 **[新規]** を選択します。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
     | **レジストリの場所** | 近くの場所 | [[地域]](https://azure.microsoft.com/regions/) で、自分に近いか、またはコンテナー レジストリを使用する他のサービスに近い場所を選択します。 |
 
     ![Visual Studio の Azure コンテナー レジストリを作成するダイアログ][0]

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - virtual user activity chart
 - load test, virtual user activity chart
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bba807eae2a7767b9b4271d0df48e962a2113285
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665368"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591236"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーの詳細ビューでのロード テストの仮想ユーザー アクティビティの分析
 
@@ -56,10 +56,10 @@ ms.locfileid: "72665368"
 |タスク|関連するトピック|
 |-|-|
 |**ロード テストの実行:** ロード テストを作成し、仮想ユーザー アクティビティ データを収集するように構成したら、テストを実行して完了し、**仮想ユーザー アクティビティ チャート**を表示できるようにします。||
-|**仮想ユーザー アクティビティ データを含むロード テスト結果の表示:** ロード テストの作成、構成、実行が完了したら、**仮想ユーザー アクティビティ チャート**を使用して仮想ユーザー アクティビティ データを表示できます。|-   [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [方法:ロード テスト中に仮想ユーザーが行っている操作を分析する](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**ロード テスト時のパフォーマンスの問題の特定:** **仮想ユーザー アクティビティ チャート** を使用して、ロード テストにおけるパフォーマンスの問題を特定できます。|-   [チュートリアル:仮想ユーザー アクティビティ チャートを使用した問題の特定](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**仮想ユーザー アクティビティ データを含むロード テスト結果の表示:** ロード テストの作成、構成、実行が完了したら、**仮想ユーザー アクティビティ チャート**を使用して仮想ユーザー アクティビティ データを表示できます。|-   [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [方法: ロード テスト中に仮想ユーザーが行っている操作を分析する](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**ロード テスト時のパフォーマンスの問題の特定:** **仮想ユーザー アクティビティ チャート**を使用して、ロード テストにおけるパフォーマンスの問題を特定できます。|-   [チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [テーブル ビューでのロード テスト結果とエラーの分析](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

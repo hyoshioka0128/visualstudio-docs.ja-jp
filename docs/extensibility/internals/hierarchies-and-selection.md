@@ -1,5 +1,5 @@
 ---
-title: 階層と選択 |Microsoft Docs
+title: 階層と選択 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,39 +7,39 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d59a5160b5c20a3243426eaf1fda4b72e58e93
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328876"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708141"
 ---
 # <a name="hierarchies-and-selection"></a>階層と選択
-カスタマイズすると[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、理解する必要がどの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトとユーザーに表示される内容を判断する選択コンテキストを使用する方法などの階層を処理します。 このセクションでは、の概念を説明します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層と選択します。
+をカスタマイズ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]する場合は、プロジェクトなどの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層の処理方法と、選択コンテキストを使用してユーザーに表示される内容を決定する方法を理解する必要があります。 このセクションでは、階層と[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]選択の概念について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- プロジェクト階層および階層の一般的な概念について説明します。
+ プロジェクト階層と階層の概念について説明します。
 
-- [選択と、IDE で通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [IDE での選択と通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 
- について説明しますが、どのように[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、ユーザーの現在アクティブなオブジェクトに関する情報を保持でき、Vspackage の通貨を追跡します。
+ 統合開発環境 (IDE) がユーザーの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]現在アクティブなオブジェクトに関する情報を保持し、VSPackages が通貨を追跡できるようにする方法について説明します。
 
-- [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)
+- [選択コンテキストオブジェクト](../../extensibility/internals/selection-context-objects.md)
 
- ウィンドウで、ユーザーの選択コンテキストのフォーカスを特定する方法のモデルについて説明します。
+ ウィンドウでユーザーの選択コンテキストフォーカスを決定する方法のモデルについて説明します。
 
 - [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)
 
- について説明する方法で使用可能な機能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ユーザーの現在の選択コンテキストと IDE の全体的なコンテキストに基づきます。
+ で使用可能な機能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]が、ユーザーの現在の選択コンテキストと IDE コンテキスト全体に基づいている方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
-- [プロジェクト タイプのアーキテクチャ](../../extensibility/internals/project-types-architecture.md)
+- [プロジェクトの種類のアーキテクチャ](../../extensibility/internals/project-types-architecture.md)
 
  プロジェクトの種類に関する詳細な技術情報を提供します。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - File.OpenFile command
 - of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 811667e89f01728c5a7516f5e7f7a12d448c6311
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666431"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591516"
 ---
 # <a name="open-file-command"></a>Openfile コマンド
 
@@ -35,7 +35,7 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-必須です。 開くファイルの完全パスまたは部分パス、およびファイル名。 パスに空白が含まれる場合は、引用符で囲む必要があります。
+必須。 開くファイルの完全パスまたは部分パス、およびファイル名。 パスに空白が含まれる場合は、引用符で囲む必要があります。
 
 ## <a name="switches"></a>スイッチ
 
@@ -63,7 +63,7 @@ File.OpenFile filename [/e:editorname]
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

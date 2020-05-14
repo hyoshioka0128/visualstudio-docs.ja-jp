@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, results
 ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0fe200f73d8053d3970236c831d3f82ab21dac8e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665209"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589345"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>テストの比較または傾向分析のためにロード テストの結果レポートを作成する
 
@@ -41,9 +41,9 @@ ms.locfileid: "72665209"
 
 |タスク|関連するトピック|
 |-|-|
-|**パフォーマンス レポートおよびストレス レポートの作成:** Microsoft Excel を使用して、ロード テストおよび Web パフォーマンス テストのレポートを作成できます。|- [方法:Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Microsoft Word を使用したパフォーマンス レポートおよびストレス レポートの手動での作成:** Microsoft Word 文書に概要、表、グラフ データをコピーして貼り付けることによって、ロード テストおよび Web パフォーマンス テストについてのレポートを手動で作成できます。|- [方法:Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**パフォーマンス レポートおよびストレス レポートの作成:** Microsoft Excel を使用して、ロード テストおよび Web パフォーマンス テストのレポートを作成できます。|- [方法: Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Microsoft Word を使用したパフォーマンス レポートおよびストレス レポートの手動での作成:** Microsoft Word 文書に概要、表、グラフ データをコピーして貼り付けることによって、ロード テストおよび Web パフォーマンス テストについてのレポートを手動で作成できます。|- [方法: Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

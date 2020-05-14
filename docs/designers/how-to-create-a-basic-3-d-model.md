@@ -3,17 +3,17 @@ title: '方法: 基本 3D モデルを作成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72636729"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589527"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>方法: 基本 3D モデルを作成する
 
@@ -23,7 +23,7 @@ ms.locfileid: "72636729"
 
 - 面とエッジの選択
 
-- 選択範囲の変換
+- 選択内容の移動
 
 - **[面を再分割する]** および **[面を浮き出し表示にする]** ツールの使用
 
@@ -40,11 +40,11 @@ ms.locfileid: "72636729"
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>家の簡易 3D モデルを作成するには
 
-1. 動作する 3D モデルを作成します。 プロジェクトにモデルを追加する方法に関する詳細については、「[モデル エディター](../designers/model-editor.md)」の「作業の開始」セクションを参照してください。
+1. 動作する 3D モデルを作成します。 プロジェクトにモデルを追加する方法については、「[モデル エディター](../designers/model-editor.md)」の「作業の開始」を参照してください。
 
 2. 直方体をシーンに追加します。 **[ツールボックス]** ウィンドウの **[図形]** で **[直方体]** を選択し、デザイン サーフェイスに移動します。
 
-3. 面選択に切り替えます。 [モデル エディター] ツール バーで、 **[面の選択]** を選択します。
+3. 面選択に切り替えます。 モデル エディターのツール バーで、 **[面の選択]** を選択します。
 
 4. 直方体の上部を再分割します。 面選択モードで、直方体を 1 回クリックして、選択できるようにアクティブにしてから、直方体の上部をクリックして、上部の面を選択します。 [モデル エディター] ツール バーで、 **[面を再分割する]** を選択します。 直方体の上部を均等なサイズの 4 つのパーティションに分割する新しい頂点が追加されます。
 
@@ -70,9 +70,9 @@ ms.locfileid: "72636729"
 
    ![簡単な家の完成したモデル](../designers/media/gfx_model_demo_house_final.png)
 
-   次の手順として、この 3D モデルにシェーダーを適用できます。 詳細については、「[方法:シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
+   次の手順として、この 3D モデルにシェーダーを適用できます。 詳細については、「[方法: シェーダーを 3D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 3D 地形をモデル化する](../designers/how-to-model-3-d-terrain.md)
 - [モデル エディター](../designers/model-editor.md)

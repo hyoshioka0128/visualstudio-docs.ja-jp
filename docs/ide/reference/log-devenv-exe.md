@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Log switch [devenv.exe]
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc37f4cd7441fc7945ca1762d16300c18d9ecbfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595463"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
@@ -37,7 +37,7 @@ devenv /Log NameOfLogFile
 
 - *NameOfLogFile*
 
-  必須です。 保存先のログ ファイルの完全なパスと名前。
+  必須。 保存先のログ ファイルの完全なパスと名前。
 
 ## <a name="remarks"></a>解説
 
@@ -53,6 +53,6 @@ devenv /Log NameOfLogFile
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

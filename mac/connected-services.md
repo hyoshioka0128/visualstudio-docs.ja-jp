@@ -6,10 +6,10 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.openlocfilehash: 34a4344be0e48d41829a7bf7df660a91d4f897b6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67693090"
 ---
 # <a name="connected-services-walkthrough"></a>接続済みサービスのチュートリアル
@@ -31,7 +31,7 @@ ms.locfileid: "67693090"
 3. 依存関係が機能するには、PCL とプラットフォーム固有のプロジェクトの両方にそれが追加される必要があります。
   それを (直接または間接的に) 参照するすべてのプロジェクトにサービスが追加されるように、チェックボックスを選択します。
 
-    [![サービスを参照するすべてのプロジェクトをチェックする](media/connected-services-image003-sml.png "サービスを参照するすべてのプロジェクトをチェックする")](media/connected-services-image003.png#lightbox)
+    [![サービスを参照する必要があるすべてのプロジェクトを確認する](media/connected-services-image003-sml.png "サービスを参照する必要があるすべてのプロジェクトを確認する")](media/connected-services-image003.png#lightbox)
 
 4. NuGet パッケージの **[ライセンスの同意]** ダイアログで **[同意]** を選択します。
   MobileClient と依存関係、およびオフライン データ同期に必要な SQLiteStore 用の 2 つのダイアログ ボックスで同意する必要がある場合があります。
@@ -50,13 +50,13 @@ ms.locfileid: "67693090"
     一覧にサービスがない場合、 **[新規]** ボタンをクリックします (手順 9 を参照)。
 
 7. PCL に `MobileServiceClient` のテンプレート コードをコピーします。 ファイルの場所は、それが 1 インスタンスしかない場合は重要ではありません。
-  Azure のすべての対話を処理し、`MobileServiceClient`を使用する `AzureService` クラスを作成するのが推奨されるアプローチです。
+  Azure のすべての対話を処理し、`AzureService`を使用する `MobileServiceClient` クラスを作成するのが推奨されるアプローチです。
 
-    ![アプリに config コードをコピーする](media/connected-services-image007.png "アプリに config コードをコピーする")
+    ![構成コードをアプリにコピーする](media/connected-services-image007.png "構成コードをアプリにコピーする")
 
 8. ドキュメントの「**次の手順**」に従って、アプリにデータ、オフライン同期、認証、およびプッシュ通知を追加します。
 
-    [![次の手順に関する説明](media/connected-services-image008-sml.png "次の手順に関する説明")](media/connected-services-image008.png#lightbox)
+    [![次のステップの手順を確認する](media/connected-services-image008-sml.png "次のステップの手順を確認する")](media/connected-services-image008.png#lightbox)
 
 9. 既存のアプリケーション サービスがない場合、Visual Studio for Mac から新しいサービスを作成できます。
   サービス一覧の左下の **[新規]** ボタンをクリックして **[新しい App Service]** ダイアログを開きます。
@@ -72,6 +72,6 @@ ms.locfileid: "67693090"
 
 詳細については、「[Mobile Apps ドキュメント](/azure/app-service-mobile/)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [接続済みサービス (Windows の Visual Studio)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

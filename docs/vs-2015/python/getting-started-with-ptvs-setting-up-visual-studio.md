@@ -10,12 +10,12 @@ caps.latest.revision: 6
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 073230f2b2a35a27540b9a67cfec3c4ace502eb8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: cf841c181b3a7e0b378e53e3901a079b7136b32c
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300497"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586984"
 ---
 # <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>PTVS の概要: Visual Studio のセットアップ
 
@@ -23,7 +23,7 @@ ms.locfileid: "74300497"
 
 PTVS と関連するライブラリのインストールは、Visual Studio がある場合は簡単です。 Visual Studio がない場合は、プロの品質のバージョンの無償コピーを取得できます。
 
-これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1)で視聴できます。
+これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1)で視聴できます。
 
 ハイレベルな手順は、Visual Studio のインストール、PTVS のインストール、Python とデータ ライブラリ (Anaconda、Canopy) のインストール、そして最後にインストールをチェックすることです。
 
@@ -31,7 +31,7 @@ PTVS と関連するライブラリのインストールは、Visual Studio が�
 
 Visual Studio をインストールした後に、[PTVS をインストールする](https://archive.codeplex.com/?p=pytools)必要があります。 これは、Microsoft によってフルサポートされ、コミュニティの支援を得てオープンに開発された、無料のスタンドアロン拡張です。
 
-次に、[Python をインストールする](https://www.python.org/download/)必要があります。 Python は、コミュニティによって保守されています。そのホーム ページは python.org です。Continuum Analytics は、Python と多くの (特に科学技術やデータ処理用の) 便利なライブラリを備えた、Anaconda と呼ばれる無料のバンドルを生成しています。また、Enthought では Canopy という名前の類似のバンドルも生成されます。 これらのいずれか 1 つの製品をインストールすれば十分です。 どちらにするか迷う場合には、最新の Python とインストール困難なパッケージのほとんどを提供する [Anaconda](https://www.continuum.io/downloads) から始めてください。
+次に、[Python をインストールする](https://www.python.org/download/)必要があります。 Python はコミュニティによって管理されており、そのホームページは python.org です。連続分析では、Python と多くの便利なライブラリ (特にサイエンスとデータ処理) を持つ Anaconda という名前の無料バンドルが作成され、Canopy という名前の類似したバンドルが生成されます。 これらのいずれか 1 つの製品をインストールすれば十分です。 どちらにするか迷う場合には、最新の Python とインストール困難なパッケージのほとんどを提供する [Anaconda](https://www.anaconda.com/products/individual) から始めてください。
 
 Visual Studio を起動して、すべてが動作していることを確認します。 [表示] メニューで、[その他のウィンドウ] を選択します。 Python Environments という項目があります。 このウィンドウには、PTVS が検出したすべての Python インストール環境と、インストールしたすべてのパッケージが表示されます。 ウィンドウは、コードを編集する際に入力候補を表示するための、データベースの更新も制御します。 この更新プロセスには多少時間がかかりますが、完了すれば、PTVS を使用してパッケージに関するより役立つ情報を表示できるようになります。
 
@@ -39,6 +39,6 @@ IPython を PTVS と共に使用する場合、これらの[手順](https://arch
 
 これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1)で視聴できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

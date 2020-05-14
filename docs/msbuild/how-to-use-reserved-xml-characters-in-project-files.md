@@ -6,22 +6,24 @@ helpviewer_keywords:
 - MSBuild, using reserved XML characters
 - MSBuild, reserved XML characters
 ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840383"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633773"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>方法: 予約済みの XML 文字をプロジェクト ファイルで使用する
+
 プロジェクト ファイルを作成するときに、たとえばプロパティ値やタスク パラメーター値の中で、予約済み XML 文字を使用する必要が生じることがあります。 しかし、いくつかの予約文字は、プロジェクト ファイルを解析できるようにするために、名前付きエンティティに置き換える必要があります。
 
 ## <a name="use-reserved-characters"></a>予約文字を使用する
+
  次の表は、プロジェクト ファイルを解析できるようにするために、対応する名前付きエンティティに置き換える必要がある予約済み XML 文字を示しています。
 
 |予約文字|名前付きエンティティ|
@@ -30,7 +32,7 @@ ms.locfileid: "62840383"
 |>|&amp;gt;|
 |&|&amp;amp;|
 |"|&amp;quot;|
-|'|&amp;apos;|
+|' を返します。|&amp;apos;|
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>プロジェクト ファイルで二重引用符を使用するには
 
@@ -41,6 +43,7 @@ ms.locfileid: "62840383"
     ```
 
 ## <a name="example"></a>例
+
  次のコード例では、プロジェクト ファイルによって出力されるメッセージの中でファイル名を強調するために二重引用符が使用されています。
 
 ```xml
@@ -70,6 +73,7 @@ ms.locfileid: "62840383"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

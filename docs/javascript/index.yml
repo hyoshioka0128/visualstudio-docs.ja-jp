@@ -9,14 +9,14 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72517119"
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75678949"
 landingContent:
-- title: 作業開始
+- title: はじめに
   linkLists:
   - linkListType: overview
     links:
@@ -40,6 +40,8 @@ landingContent:
       url: tutorial-nodejs-with-react-and-jsx.md
     - text: Node.js と Vue.js で Web アプリを作成する
       url: quickstart-vuejs-with-nodejs.md
+    - text: TypeScript を使用した ASP.NET Core アプリの作成
+      url: tutorial-aspnet-with-typescript.md
 - title: Visual Studio を学ぶ
   linkLists:
   - linkListType: how-to-guide

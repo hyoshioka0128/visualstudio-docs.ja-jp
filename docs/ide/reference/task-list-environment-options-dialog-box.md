@@ -17,19 +17,19 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d0ba45ffea940ddb57a6da1e6df55e3da8867b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644860"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233125"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>[オプション] ダイアログ ボックス: [環境] \> [タスク一覧]
+# <a name="options-dialog-box-environment--task-list"></a>[オプション] ダイアログ ボックス:[環境] \> [タスク一覧]
 
 この [オプション] ページでは、**タスク一覧**のアラームを生成するコメント トークンを追加、削除、変更できます。 これらの設定を表示するには、 **[ツール]** メニューの **[オプション]** を選択し、 **[環境]** フォルダーを展開して **[タスク一覧]** を選択します。
 

@@ -11,20 +11,21 @@ helpviewer_keywords:
 - Item Element [MSBuild]
 - <Item> Element [MSBuild]
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006804"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169353"
 ---
 # <a name="item-element-msbuild"></a>Item 要素 (MSBuild)
-ユーザー定義のアイテムおよびそのメタデータが含まれます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべてのアイテムが、`ItemGroup` 要素の子として指定されている必要があります。
+
+ユーザー定義のアイテムおよびそのメタデータが含まれます。 MSBuild プロジェクトで使用されるすべてのアイテムが、`ItemGroup` 要素の子として指定されている必要があります。
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -33,14 +34,14 @@ ms.locfileid: "63006804"
 ```xml
 <Item Include="*.cs"
         Exclude="MyFile.cs"
-        Remove="RemoveFile.cs"
-        Condition="'String A'=='String B'" >
+        Condition="'String A'=='String B'">
     <ItemMetadata1>...</ItemMetadata1>
     <ItemMetadata2>...</ItemMetadata2>
 </Item>
 ```
 
 ## <a name="specify-metadata-as-attributes"></a>メタデータを属性として指定する
+
 MSBuild 15.1 以降では、現行の属性リストと競合しない名前のメタデータを任意で属性として表現できます。
 
 たとえば、NuGet パッケージの一覧を指定するには、通常、次のような構文を使用します。
@@ -62,6 +63,7 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -89,14 +91,16 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|アイテムの grouping 要素です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
+
 `Item` 要素はビルド システムへの入力を定義し、ユーザー定義のコレクション名に基づいてアイテム コレクションにグループ化されます。 これらのアイテム コレクションは、[タスク](../msbuild/msbuild-tasks.md)のパラメーターとして使用できます。タスクは、コレクション内の個々のアイテムを使用してビルド処理の各ステップを実行します。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 @(\<myType>) という表記を使用すると、\<myType> 型のアイテムのコレクションをセミコロン区切りの文字列リストに展開して、パラメーターに渡すことができます。 パラメーターが `string` 型の場合は、パラメーターの値がセミコロンで区切られた要素のリストになります。 パラメーターが文字列の配列の場合 (`string[]`)、各要素はセミコロンの位置に基づいて配列に挿入されます。 タスク パラメーターが <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の場合、値は、アイテム コレクションの内容と、アタッチされているすべてのメタデータになります。 セミコロン以外の文字を使用して各アイテムを区切るには、@(\<myType>, '\<separator>') という構文を使用します。
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンでは、`*` や `?` などのワイルドカードや、*/\*\*/\*.cs* などの再帰的なワイルドカードを評価できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
+MSBuild エンジンでは、`*` や `?` などのワイルドカードや、 */\*\*/\*.cs* などの再帰的なワイルドカードを評価できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 ## <a name="examples"></a>使用例
+
 次のコード例は、`CSFile` 型の 2 つのアイテムを宣言する方法を示しています。 2 番目に宣言されているアイテムには、`MyMetadata` が `HelloWorld` に設定されたメタデータが含まれています。
 
 ```xml
@@ -119,6 +123,7 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [項目](../msbuild/msbuild-items.md)
 - [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
 - [MSBuild プロパティ](../msbuild/msbuild-properties.md)

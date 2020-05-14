@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78a47cb2a5aefd7d20e0b8087f5f3ad735716175
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649138"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79431281"
 ---
 # <a name="overview-of-source-code-analyzers"></a>ソース コード アナライザーの概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "72649138"
 - NuGet パッケージまたは Visual Studio 拡張機能として、追加のアナライザーをインストールできます。 次に例を示します。
 
   - [FxCop アナライザー](../code-quality/install-fxcop-analyzers.md) (Microsoft が推奨しているコード品質アナライザー)
-  - サードパーティのアナライザー ([StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator/)、[XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)、[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/) など)
+  - サードパーティのアナライザー ([StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、[XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)、[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/) など)
 
 アナライザーでルール違反が見つかった場合は、コード エディター (問題のあるコードの下の "*波線*" として) および [エラー一覧] ウィンドウで報告されます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72649138"
 
 ![Visual Studio でのコード エディターの波線](media/diagnostics-severity-colors.png)
 
-有効になっている場合は従来の分析と同様、コード アナライザーでビルド時にコードが検査されますが、入力中もライブ状態になります。 [完全ソリューション解析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis)を有効にした場合、コード アナライザーではエディターで開かれていないコード ファイルを設計時に解析することもできます。
+有効になっている場合は従来の分析と同様、コード アナライザーでビルド時にコードが検査されますが、入力中もライブ状態になります。 現在のドキュメントのみで実行するか、開いているすべてのドキュメントで実行するか、またはソリューション全体で実行するようにライブ コード分析のスコープを構成できます。 「[方法:ライブ コード分析スコープを構成する](./configure-live-code-analysis-scope-managed-code.md)」をご覧ください。
 
 > [!TIP]
 > コード アナライザーからのビルド時のエラーと警告が表示されるのは、アナライザーが NuGet パッケージとしてインストールされている場合のみです。 組み込みアナライザー (たとえば、IDE0067 や IDE0068) はビルド時には実行されません。
@@ -52,7 +52,7 @@ ms.locfileid: "72649138"
 Roslyn コード アナライザーでは、従来の分析で報告されるものと同じ種類の問題が報告されるだけでなく、ファイルやプロジェクトで発生した違反の 1 つ、またはすべてを簡単に修正することができます。 これらのアクションを*コード修正*と呼びます。 コード修正は IDE に固有のものです。Visual Studio では、[クイック アクション](../ide/quick-actions.md)として実装されます。 すべてのアナライザー診断にコード修正が関連付けられているわけではありません。
 
 > [!NOTE]
-> **[分析]**  >  **[コード分析の実行]** メニュー オプションは、従来の分析にのみ適用されます。
+> Visual Studio 2019 16.5 リリースより前のバージョンでは、 **[分析]**  >  **[コード分析の実行]** メニュー オプションを使用するとレガシ分析が実行されます。 Visual Studio 2019 16.5 以降では、 **[コード分析の実行]** メニュー オプションを使用すると、選択したプロジェクトまたはソリューションに対して Roslyn ベースのアナライザーが実行されます。
 
 [エラー一覧] でコード アナライザーの違反と従来の分析の違反を区別するには、 **[ツール]** 列を確認します。 **ソリューション エクスプローラー**のアナライザー アセンブリのいずれかが [ツール] の値 (**Microsoft.CodeQuality.Analyzers** など) と一致する場合、違反はコード アナライザーからのものです。 それ以外の場合、違反は従来の分析からのものです。
 

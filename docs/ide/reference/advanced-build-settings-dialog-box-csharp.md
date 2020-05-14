@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748812"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595853"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
 
@@ -94,7 +94,7 @@ ms.locfileid: "72748812"
 
 DLL を読み込む位置に推奨されるベース アドレスを指定します。 DLL の既定のベース アドレスは、.NET Framework 共通言語ランタイムにより設定されます。 詳しくは、「[/baseaddress (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -22,11 +22,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573755"
 ---
 # <a name="number-expected"></a>数字が必要です。
-**Number.prototype.toString** メソッドまたは **Number.prototype.valueOf**メソッドが、**Number**型以外のオブジェクトから呼び出されました。 この場合の呼び出し元のオブジェクトは、**Number** 型である必要があります。   
+**Number.prototype.toString** メソッドまたは **Number.prototype.valueOf**メソッドが、**Number**型以外のオブジェクトから呼び出されました。 この場合の呼び出し元のオブジェクトは、**Number** 型である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Number.prototype.toString** メソッドまたは **Number.prototype.valueOf** メソッドの呼び出しは、**Number** 型のオブジェクトでのみ行います。 
+- **Number.prototype.toString** メソッドまたは **Number.prototype.valueOf** メソッドの呼び出しは、**Number** 型のオブジェクトでのみ行います。  
   
 ## <a name="see-also"></a>参照  
  [Number オブジェクト](../../javascript/reference/number-object-javascript.md)   

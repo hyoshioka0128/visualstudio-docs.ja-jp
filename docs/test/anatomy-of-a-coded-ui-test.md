@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1757c687ea48ee1f2770fa320a18da5662f43e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665309"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591204"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>コード化された UI テストの構造
 
@@ -26,7 +26,7 @@ ms.locfileid: "72665309"
 
 コード化された UI テストを作成すると、 **[コード化された UI テスト ビルダー]** によってテスト対象のユーザー インターフェイスのマップが作成されるほか、すべてのテストのテスト メソッド、パラメーター、およびアサーションも作成されます。 また、各テストのクラス ファイルも作成されます。
 
-|ファイル|目次|編集可能かどうか|
+|ファイル|内容|編集可能かどうか|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[宣言セクション](#UIMapDesignerFile)<br /><br /> [UIMap クラス](#UIMapClass) (部分クラス、自動生成)<br /><br /> [メソッド](#UIMapMethods)<br /><br /> [プロパティ](#UIMapProperties)|いいえ|
 |[UIMap.cs](#UIMapCS)|[UIMap クラス](#UIMapCS) (部分クラス)|はい|
@@ -124,7 +124,7 @@ public void AddItems()
 
 メソッド コードの先頭にあるのは `Variable Declarations` 領域です。ここでは、メソッドで使用される UI オブジェクトのローカル変数が定義されます。
 
-このメソッドでは、`UIItemWindow` と `UIItemEdit` の両方が、*UIMap.cs* ファイルの後半で定義されている `UICalculatorWindow` クラスを使用してアクセスされるプロパティです。
+このメソッドでは、`UIItemWindow` と `UIItemEdit` の両方が、`UICalculatorWindow`UIMap.cs*ファイルの後半で定義されている* クラスを使用してアクセスされるプロパティです。
 
 その次の行では、`AddItemsParams` オブジェクトのプロパティを使用して、キーボードから電卓アプリケーションにテキストを送信しています。
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-*UIMap.cs* ファイル内のすべてのクラスと同様に、このクラスも <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> で始まります。 この小さなクラスの内部は、前述した `UIMap.AddItems()` メソッドで使用される <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> メソッドのパラメーターとして使用する文字列を定義する `Fields` 領域です。 これらのパラメーターを使用するメソッドの呼び出し前に、この文字列フィールド内の値を置き換えるためのコードを記述できます。
+*UIMap.cs* ファイル内のすべてのクラスと同様に、このクラスも <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> で始まります。 この小さなクラスの内部は、前述した `Fields` メソッドで使用される <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> メソッドのパラメーターとして使用する文字列を定義する `UIMap.AddItems()` 領域です。 これらのパラメーターを使用するメソッドの呼び出し前に、この文字列フィールド内の値を置き換えるためのコードを記述できます。
 
 ### <a name="UIMapCS"></a>UIMap.cs
 既定では、このファイルにはメソッドやプロパティを持たない `UIMap` 部分クラスが含まれています。
@@ -257,7 +257,7 @@ public void MyTestCleanup()
 }
 ```
 
-`MyTestInitialize()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> が適用されています。これにより、テスト フレームワークは、他のテスト メソッドより前にこのメソッドを呼び出します。 同様に、`MyTestCleanup()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> が適用されいます。これにより、テスト フレームワークは、他のすべてのテスト メソッドが呼び出された後にこのメソッドを呼び出します。 これらのメソッドの使用は任意です。 このテストでは、`CodedUITest1Method1()` からではなく、`UIMap.LaunchCalculator()` メソッドは `MyTestInitialize()` から、`UIMap.CloseCalculator()` メソッドは `MyTestCleanup()` から、それぞれ呼び出すことができます。
+`MyTestInitialize()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> が適用されています。これにより、テスト フレームワークは、他のテスト メソッドより前にこのメソッドを呼び出します。 同様に、`MyTestCleanup()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> が適用されいます。これにより、テスト フレームワークは、他のすべてのテスト メソッドが呼び出された後にこのメソッドを呼び出します。 これらのメソッドの使用は任意です。 このテストでは、`UIMap.LaunchCalculator()` からではなく、`MyTestInitialize()` メソッドは `UIMap.CloseCalculator()` から、`MyTestCleanup()` メソッドは `CodedUITest1Method1()` から、それぞれ呼び出すことができます。
 
 [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) を使用して、このクラスにさらにメソッドを追加した場合、テスト フレームワークでは各メソッドがテストの一部として呼び出されます。
 
@@ -266,7 +266,7 @@ public void MyTestCleanup()
 
 *UIMap.uitest* ファイルは直接編集できません。 ただし、コード化された UI ビルダーを使用してテストを変更することはできます。これにより、*UIMap.uitest* ファイルと [*UIMap.Designer.cs*](#UIMapDesignerFile) ファイルが自動的に変更されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>

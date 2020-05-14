@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::EnumCodeContexts |Microsoft Docs
+title: コンテキストを列挙します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: caa6be915fad9e64fb065babbf218f33f2848200
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349970"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731848"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
-このドキュメントのコンテキストに関連付けられているすべてのコード コンテキストの一覧を取得します。
+このドキュメント コンテキストに関連付けられているすべてのコード コンテキストの一覧を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,13 +43,13 @@ int EnumCodeContexts(
 `ppEnumCodeCxts`\
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-1 つのドキュメントのコンテキストでは、ドキュメントがテンプレートを使用する場合は、複数のコード コンテキストを生成したり、ファイルを含めることができます。
+ドキュメントがテンプレートまたはインクルード ファイルを使用している場合、1 つのドキュメント コンテキストで複数のコード コンテキストを生成できます。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugContext`を公開するオブジェクト、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)インターフェイス。
+次の例は[、IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)インターフェイス`CDebugContext`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)

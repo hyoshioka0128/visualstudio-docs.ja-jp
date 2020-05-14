@@ -8,17 +8,17 @@ helpviewer_keywords:
 - troubleshooting references
 - referencing files from projects
 - referencing components, troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5efe0d5ba8d00f7bfc362dd702f45dfa627c20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647380"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75565917"
 ---
 # <a name="troubleshoot-broken-references"></a>壊れた参照のトラブルシューティング
 
@@ -88,6 +88,6 @@ ms.locfileid: "72647380"
 
 ユーザーが COM コンポーネントに参照を追加し、2 番目のユーザーが、このコンポーネントがインストールされていないコンピューターでコードを実行しようとすると、2 番目のユーザーは、参照が壊れているというエラーを受信します。 2 番目のコンピューターにコンポーネントをインストールすると、エラーが修正されます。 プロジェクトで COM コンポーネントへの参照を使用する方法の詳細については、「[.NET Framework アプリケーションにおける COM 相互運用性](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

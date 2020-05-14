@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108137"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75398173"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>チュートリアル: Azure Functions の概要
 
@@ -27,7 +27,7 @@ ms.locfileid: "70108137"
 ## <a name="requirements"></a>必要条件
 
 - Visual Studio for Mac 7.5 以上。
-- Azure サブスクリプション ([https://azure.com/free](https://azure.com/free) から無料で入手可能)。
+- Azure サブスクリプション ([https://azure.com/free](https://azure.com/free?ref=visualstudio) から無料で入手可能)。
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>演習 1:Azure Functions プロジェクトの作成
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779455"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -28,12 +28,12 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>パラメーター
- なし
+ None
 
 ## <a name="valid-options"></a>有効なオプション
  別のセッションでプロファイリングを有効にするには、**CrossSession** オプションは **Start** オプションと共に指定する必要があります。 **CrossSession** は、後続の **VSPerfCmd Attach** コマンドと **Detach** コマンドでも指定する必要があります。
 
- **Start:** `Method` **Start** オプションは、指定したプロファイル方法にプロファイラーを初期化します。
+ **Start:** `Method`**Start** オプションは、指定したプロファイル方法にプロファイラーを初期化します。
 
  **Attach:** _PID_[ **,** _PID_] 指定されたプロセスのプロファイリングを開始します。
 

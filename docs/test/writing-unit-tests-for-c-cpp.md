@@ -1,23 +1,23 @@
 ---
 title: C/C++ 用の単体テストの記述
 description: CTest、Boost.Test、Google Test など、さまざまなテスト フレームワークを使用し、Visual Studio で C++ 単体テストを記述します。
-ms.date: 09/27/2019
+ms.date: 02/08/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
-ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
+author: corob-msft
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74688860"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649612"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
-他の言語と同じように、C++ についても、 **[テスト エクスプローラー]** ウィンドウを使って単体テストを作成して実行できます。 **テスト エクスプローラー**の使い方については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
+C++ についても、 **[テスト エクスプローラー]** ウィンドウを使って単体テストを作成して実行できます。 他の言語の場合と同じように動作します。 **テスト エクスプローラー**の使い方については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
 
 > [!NOTE]
 > Live Unit Testing、コード化された UI テスト、IntelliTest などの一部の機能は、C++ についてはサポートされていません。
@@ -29,7 +29,7 @@ Visual Studio には次の C++ テスト フレームワークが含まれてお
 - Boost.Test
 - CTest
 
-インストールされているフレームワークに加えて、Visual Studio 内で使いたいどのようなフレームワークについても、独自のテスト アダプターを作成できます。 テスト アダプターは、単体テストを **[テスト エクスプローラー]** ウィンドウと統合できます。 [Visual Studio Marketplace](https://marketplace.visualstudio.com) では複数のサードパーティ製アダプターを利用できます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](install-third-party-unit-test-frameworks.md)」をご覧ください。
+インストールされているフレームワークの使用に加えて、Visual Studio 内で使いたいどのようなフレームワークについても、独自のテスト アダプターを作成できます。 テスト アダプターは、単体テストを **[テスト エクスプローラー]** ウィンドウと統合できます。 [Visual Studio Marketplace](https://marketplace.visualstudio.com) では複数のサードパーティ製アダプターを利用できます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](install-third-party-unit-test-frameworks.md)」をご覧ください。
 
 **Visual Studio 2017 以降 (Professional および Enterprise)**
 
@@ -37,25 +37,25 @@ C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes
 
 **Visual Studio 2017 以降 (すべてのエディション)** :
 
-- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、[Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
+- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 ソリューションに追加できるプロジェクト テンプレートが含まれています。 **ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューを使用して追加します。 また、 **[ツール]**  >  **[オプション]** を使用して構成できるオプションもあります。 詳細については、[Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
 
-- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、[Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
+- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートが含まれていません。 手動で構成する必要があります。 詳細については、[Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
 
-- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、[Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
+- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 詳細については、[Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
 
 **Visual Studio 2015 以前**
 
-Google Test アダプターと Boost.Test アダプターは、それぞれ、Visual Studio Marketplace の「[Test Adapter for Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest)」(Boost.Test 用テスト アダプター) および「[Test Adapter for Google Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest)」(Google Test 用テスト アダプター) でダウンロードできます。
+Google Test アダプターと Boost.Test アダプターは、Visual Studio Marketplace でダウンロードできます。 「[Test adapter for Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest)」 (Boost.Test 用テスト アダプター) および「[Test adapter for Google Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest)」 (Google Test 用テスト アダプター) にあります。
 
 ## <a name="basic-test-workflow"></a>テストの基本的なワークフロー
 
-以下のセクションでは、C++ の単体テストを始めるための基本的な手順を示します。 基本的な構成は、Microsoft と Google どちらのテスト フレームワークでもよく似ています。 Boost.Test では、テスト プロジェクトを手動で作成することが必要です。
+以下のセクションでは、C++ の単体テストを始めるための基本的な手順を示します。 基本的な構成は、Microsoft と Google どちらのテスト フレームワークでも似ています。 Boost.Test では、テスト プロジェクトを手動で作成することが必要です。
 
 ::: moniker range="vs-2019"
 
 ### <a name="create-a-test-project-in-visual-studio-2019"></a>Visual Studio 2019 でテスト プロジェクトを作成する
 
-テスト対象のコードと同じソリューション内にある 1 つまたは複数のテスト プロジェクトでテストを実行します。 既存のソリューションに新しいテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューション ノードを右クリックして、 **[追加]**  >  **[新しいプロジェクト]** の順に選びます。 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次の図は、**C++ によるデスクトップ開発**ワークロードと **UWP 開発**ワークロードがインストールされている場合に選ぶことができるテスト プロジェクトです。
+1 つまたは複数のテスト プロジェクト内でテストを定義して実行します。 テストするコードと同じソリューション内にプロジェクトを作成します。 既存のソリューションに新しいテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューション ノードを右クリックします。 ポップアップ メニューで、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次の図は、**C++ によるデスクトップ開発**ワークロードと **UWP 開発**ワークロードがインストールされている場合に選ぶことができるテスト プロジェクトです。
 
 ![Visual Studio 2019 の C++ テスト プロジェクト](media/vs-2019/cpp-new-test-project-vs2019.png)
 
@@ -65,7 +65,7 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 
 ### <a name="create-a-test-project-in-visual-studio-2017"></a>Visual Studio 2017 でテスト プロジェクトを作成する
 
-テスト対象のコードと同じソリューション内にある 1 つまたは複数のテスト プロジェクトでテストを実行します。 既存のソリューションに新しいテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューション ノードを右クリックして、 **[追加]**  >  **[新しいプロジェクト]** の順に選びます。 次に、左側のウィンドウで **[Visual C++] > [テスト]** を選び、中央のウィンドウでプロジェクトの種類のいずれかを選びます。 次の図は、**C++ によるデスクトップ開発**ワークロードがインストールされている場合に選ぶことができるテスト プロジェクトです。
+1 つまたは複数のテスト プロジェクト内でテストを定義して実行します。 テストするコードと同じソリューション内にプロジェクトを作成します。 新しいテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューション ノードを右クリックして、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。 左側のウィンドウで、 **[Visual C++ テスト]** を選択します。 次に、中央のウィンドウでプロジェクトの種類のいずれかを選択します。 次の図は、**C++ によるデスクトップ開発**ワークロードがインストールされている場合に選ぶことができるテスト プロジェクトです。
 
 ![C++ テスト プロジェクト](media/cpp-new-test-project.png)
 
@@ -73,13 +73,13 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>ソリューション内の他のプロジェクトへの参照を作成する
 
-テスト コードがテスト対象プロジェクト内の関数にアクセスできるようにするには、テスト プロジェクト内のプロジェクトへの参照を追加します。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして、 **[追加]**  >  **[参照]** を選びます。 ダイアログで、テストするプロジェクトを選びます。
+テスト対象プロジェクト内の関数にアクセスできるようにするには、テスト プロジェクト内のプロジェクトへの参照を追加します。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして、ポップアップ メニューを表示します。 **[追加]**  >  **[参照]** の順に選択します。 [参照の追加] ダイアログで、テストするプロジェクトを選択します。
 
 ![参照の追加](media/cpp-add-ref-test-project.png)
 
 ### <a name="link-to-object-or-library-files"></a>オブジェクトまたはライブラリ ファイルのリンク
 
-テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project)」を参照してください。
+テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 詳細については、「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](how-to-use-microsoft-test-framework-for-cpp.md#object_files)」を参照してください。
 
 ### <a name="add-include-directives-for-header-files"></a>ヘッダー ファイルの #include ディレクティブを追加する
 
@@ -94,7 +94,7 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 > [!NOTE]
 > ここでは、C/C++ の Microsoft 単体テスト フレームワークの構文を示します。 詳細については、「[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)」を参照してください。 Google Test については、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するドキュメントをご覧ください。 Boost.Test については、「[Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)」 (Boost Test ライブラリ: 単体テスト フレームワーク) を参照してください。
 
-テスト プロジェクトの *.cpp* ファイルには、テスト コード記述方法の例として、スタブ クラスとメソッドの定義が含まれます。 シグネチャで TEST_CLASS および TEST_METHOD マクロが使われていることに注意してください。これにより、 **[テスト エクスプローラー]** ウィンドウでメソッドを見つけることができます。
+テスト プロジェクトの *.cpp* ファイルには、スタブ クラスとメソッドの定義が含まれています。 テスト コード記述方法の例として提供されています。 シグネチャでは TEST_CLASS および TEST_METHOD マクロが使われています。これにより、 **[テスト エクスプローラー]** ウィンドウでメソッドを見つけることができます。
 
 ![インクルード ディレクティブを追加する](media/cpp-write-test-methods.png)
 
@@ -130,23 +130,25 @@ TEST_METHOD(TestClassInit)
 
 ![テスト実行後のテスト エクスプローラー](media/cpp-test-explorer-passed.png)
 
-失敗したテストについては、原因の診断に役立つ詳細がメッセージで提供されます。 失敗したテストを右クリックして **[選択したテストのデバッグ]** を選び、障害が発生した関数をステップ実行できます。
+失敗したテストについては、原因の診断に役立つ詳細がメッセージで提供されます。 失敗したテストを右クリックして、ポップアップ メニューを表示します。 **[選択したテストのデバッグ]** を選択し、障害が発生した関数をステップ実行できます。
 
 **テスト エクスプローラー**の使い方については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
 
-単体テストに関するベスト プラクティスについては、「[単体テストの基本](unit-test-basics.md)」をご覧ください
+単体テストに関する詳細については、「[単体テストの基本](unit-test-basics.md)」をご覧ください
 
 ## <a name="use-codelens"></a>CodeLens を使用する
 
 **Visual Studio 2017 以降 (Professional および Enterprise エディション)**
 
-[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) を使用すると、コード エディターを開いたままで単体テストの状態をすばやく確認できます。 次の中の任意の方法で、C++ 単体テスト プロジェクト用に CodeLens を初期化できます。
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) を使用すると、コード エディターを開いたままで単体テストの状態をすばやく確認できます。
+
+次の中の任意の方法で、C++ 単体テスト プロジェクト用に CodeLens を初期化できます。
 
 - テスト プロジェクトまたはソリューションを編集してビルドします。
 - プロジェクトまたはソリューションをリビルドします。
-- **テスト エクスプローラー** ウィンドウからテストを実行します。
+- **[テスト エクスプローラー]** ウィンドウからテストを実行します。
 
-**CodeLens** が初期化されたら、各単体テストの上にテストの状態アイコンが表示されます。
+初期化されたら、各単体テストの上にテストの状態アイコンが表示されます。
 
 ![C++ の CodeLens アイコン](media/cpp-test-codelens-icons.png)
 

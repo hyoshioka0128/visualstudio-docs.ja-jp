@@ -1,24 +1,24 @@
 ---
-title: IDebugCodeContext3::GetProcess |Microsoft Docs
+title: Iデバッグコードコンテキスト3::Getプロセス |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetProcess
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d12756c15c36e6d6126b77fc6e4291521417f82
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349739"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734178"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 デバッグ プロセスのインターフェイスへの参照を取得します。
@@ -39,13 +39,13 @@ public int GetProcess(
 
 ## <a name="parameters"></a>パラメーター
 `ppProcess`\
-[out]デバッグ プロセスのインターフェイスへの参照。
+[アウト]デバッグ プロセス インターフェイスへの参照。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugCodeContext**を公開するオブジェクト、 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)インターフェイス。
+インターフェイスを公開する**CDebugCodeContext**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)示します。
 
 ```cpp
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)

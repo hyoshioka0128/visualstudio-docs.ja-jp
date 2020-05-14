@@ -2,19 +2,19 @@
 title: '[定義をここに表示] を使用'
 ms.date: 01/10/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d4d9dd4fb7364ddadd5e7568a2f34255c393ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656524"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591347"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法:[定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
 
 **[定義をここに表示]** を使うと、記述中のコードから切り替えずにコードを表示および編集できます。 **[定義をここに表示]** と **[定義へ移動]** では同じ情報が表示されますが、 **[定義をここに表示]** ではコードがポップアップ ウィンドウに表示され、 **[定義へ移動]** では別のコード ウィンドウに表示されます。 **[定義へ移動]** を実行すると、コンテキスト (アクティブなコード ウィンドウ、現在の行、およびカーソルの位置) が定義コード ウィンドウに切り替わります。 **[定義をここに表示]** を使用すると、元のコード ファイル内での位置を保ちながら、定義を表示および編集したり、定義ファイル内を移動したりできます。
 
@@ -26,7 +26,7 @@ ms.locfileid: "72656524"
 
 1. 探索する型またはメンバーの右クリック メニューから **[定義をここに表示]** を選択して、定義を表示できます。 オプションが有効な場合、マウスを使用して定義を表示することもできます。その場合、**Ctrl** キー (または別の修飾子) を押して、メンバー名をクリックします。 または、キーボードの **Alt** + **F12** キーを押します。
 
-     次の図に、`Print()` という名前のメソッドの **[定義をここに表示]** ウィンドウを示します。
+     次の図に、**という名前のメソッドの**[定義をここに表示]`Print()` ウィンドウを示します。
 
      ![[表示のみ] ウィンドウ](../ide/media/peekwindow.png)
 
@@ -72,17 +72,17 @@ ms.locfileid: "72656524"
 
 |機能|キーボード ショートカット|
 |-------------------|:-----------------------:|
-|定義ウィンドウを開く|**Alt** + **F12**|
+|定義ウィンドウを開く|**Alt**+**F12**|
 |定義ウィンドウを閉じる|**Esc**|
-|定義ウィンドウを通常のドキュメント タブに昇格する|**Shift** + **Alt** + **Home**|
-|定義ウィンドウ間を移動する|**Ctrl** + **Alt** + **-** と **Ctrl** + **Alt** + **=**|
-|複数の結果の間を移動する|**F8** と **Shift** + **F8**|
-|コード エディター ウィンドウと定義ウィンドウの間で切り替える|**Shift** + **Esc**|
+|定義ウィンドウを通常のドキュメント タブに昇格する|**Shift**+**Alt**+**Home**|
+|定義ウィンドウ間を移動する|**Ctrl**+**Alt**+ **-** と **Ctrl**+**Alt**+ **=**|
+|複数の結果の間を移動する|**F8** と **Shift**+**F8**|
+|コード エディター ウィンドウと定義ウィンドウの間で切り替える|**Shift**+**Esc**|
 
 > [!NOTE]
 > Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード間の移動](../ide/navigating-code.md)
 - [[定義へ移動] と [定義をここに表示]](../ide/go-to-and-peek-definition.md)

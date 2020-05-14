@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: 実行中のプロセスにアタッチする
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: シンボル (.pdb) とソース ファイルを指定する
+    - name: シンボルとソース コードの管理
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: 64 ビット アプリケーションをデバッグする
       href: debug-64-bit-applications.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: 非表示のデバッガー コマンドを復元する
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: リモート デバッグ
   items:
-    - name: Remote Debugging
+    - name: リモート デバッグ
       href: remote-debugging.md
     - name: Windows ファイアウォールをリモート デバッグ用に構成する
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -322,11 +322,11 @@
       href: how-to-use-the-parallel-watch-window.md
     - name: '[GPU スレッド] ウィンドウを使用する'
       href: how-to-use-the-gpu-threads-window.md
-- name: '[IntelliTrace]'
+- name: IntelliTrace
   items:
-    - name: '[IntelliTrace]'
+    - name: IntelliTrace
       href: intellitrace.md
-    - name: IntelliTrace の使用
+    - name: IntelliTrace を使用する
       href: walkthrough-using-intellitrace.md
     - name: IntelliTrace の機能
       href: intellitrace-features.md
@@ -350,9 +350,9 @@
       items:
         - name: Windows ストアと Windows ユニバーサル アプリのデバッグ
           href: debugging-windows-store-and-windows-universal-apps.md
-        - name: Visual Studio からアプリを実行する
+        - name: Visual Studio からのアプリの実行
           items:
-            - name: Visual Studio からアプリを実行する
+            - name: Visual Studio からのアプリの実行
               href: run-store-apps-from-visual-studio.md
             - name: ローカル コンピューターでの Windows ストア アプリの実行
               href: run-windows-store-apps-on-the-local-machine.md
@@ -400,7 +400,7 @@
                   href: quickstart-debug-javascript-using-the-console.md
                 - name: JavaScript Console commands
                   href: javascript-console-commands.md
-            - name: 'デバッグ セッションを開始する (VB、C#、C++、および XAML)'
+            - name: 'デバッグ セッションの開始 (VB、C#、C++、および XAML)'
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Blend for Visual Studio 内で XAML をデバッグする
               href: debug-xaml-in-blend.md
@@ -410,7 +410,7 @@
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'デバッガーのナビゲーションのサンプル コード (Xaml および C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: Windows ストアの中断、再開、およびバックグラウンド イベントをトリガーする
+            - name: Windows ストアの中断イベント、再開イベント、およびバックグラウンド イベントのトリガー
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Windows ストア アプリ用コンテンツのプリフェッチ
           href: prefetch-content-for-windows-store-apps.md
@@ -418,9 +418,9 @@
       items:
         - name: マネージド コードのデバッグ
           href: debugging-managed-code.md
-        - name: 'C#、F#、Visual Basic プロジェクト タイプ'
+        - name: 'C#、F#、および Visual Basic のプロジェクト'
           items:
-            - name: 'C#、F#、Visual Basic プロジェクト タイプ'
+            - name: 'C#、F#、および Visual Basic のプロジェクト'
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: プロパティの推奨設定
               href: managed-debugging-recommended-property-settings.md
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: イベント一覧
           href: graphics-event-list.md
-        - name: 状態
+        - name: State
           href: graphics-state.md
         - name: パイプライン ステージ
           href: graphics-pipeline-stages.md
@@ -606,9 +606,9 @@
           href: hlsl-shader-debugger.md
         - name: コマンド ライン キャプチャ ツール
           href: command-line-capture-tool.md
-        - name: 使用例
+        - name: 例
           items:
-            - name: 使用例
+            - name: 例
               href: graphics-diagnostics-examples.md
             - name: グラフィックス情報をキャプチャする
               href: walkthrough-capturing-graphics-information.md
@@ -628,9 +628,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: ARM デバイスでグラフィックス診断を使用する
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: 参照
+        - name: リファレンス
           items:
-            - name: 関連項目
+            - name: リファレンス
               href: reference-programmatic-capture.md
             - name: VsgDbg クラス
               items:

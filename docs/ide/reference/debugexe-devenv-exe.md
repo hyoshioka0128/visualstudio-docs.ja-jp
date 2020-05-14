@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 - debugging executables
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4eb1eb49cd6b29740fb6d365a98a51cc28387e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aeae28288936b6723b53e826142a4888ad0bc8b4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661675"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75570142"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -34,7 +34,7 @@ devenv /DebugExe ExecutableFile
 
 - *ExecutableFile*
 
-  必須です。 `.exe` ファイルのパスとファイル名。 `.exe` ファイルが見つからない場合、または存在しない場合、警告やエラーは表示されず、Visual Studio は通常どおり起動します。
+  必須。 `.exe` ファイルのパスとファイル名。 `.exe` ファイルが見つからない場合、または存在しない場合、警告やエラーは表示されず、Visual Studio は通常どおり起動します。
 
 ## <a name="remarks"></a>解説
 
@@ -48,6 +48,6 @@ devenv /DebugExe ExecutableFile
 devenv /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

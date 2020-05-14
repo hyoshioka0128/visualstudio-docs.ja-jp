@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297136"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845659"
 ---
 # <a name="using-saved-intellitrace-data"></a>保存された IntelliTrace データの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 - 次のいずれかのソースの .iTrace ファイル  
   
-    |**ソース**|**参照トピック**|  
+    |**Source**|**参照トピック**|  
     |----------------|-------------|  
     |Visual Studio Enterprise Edition (ただし、Professional または Community Edition を除く) での IntelliTrace セッション|[IntelliTrace の機能](../debugger/intellitrace-features.md)|  
     |Microsoft Test Manager のテスト セッション。 これにより、.iTrace ファイルが Team Foundation Server の作業項目にアタッチされます。|[手動テストでの複数の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -143,7 +143,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
     |**列**|**内容**|  
     |----------------|-------------------|  
-    |**Type**|.NET 型の例外|  
+    |**型**|.NET 型の例外|  
     |グループ化された例外の **[最新メッセージ]** またはグループ化されていない例外の **[メッセージ]**|例外によって提供されるメッセージ|  
     |グループ化された例外の **[カウント]**|例外がスローされた回数|  
     |グループ化されていない例外の **[スレッド ID]**|例外をスローしたスレッドの ID|  
@@ -161,7 +161,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
 1. SharePoint 相関 ID をソースからコピーします。  
   
-    例 :  
+    例:  
   
     ![IntelliTrace &#45; SharePoint エラー &#45;相関 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -267,10 +267,10 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
   
  [手動テストでの複数の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
- [IntelliTrace](../debugger/intellitrace.md)  
+ [[IntelliTrace]](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Forums  
- [Visual Studio デバッガー](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
 #### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 6 章: テスト ツールボックス](https://go.microsoft.com/fwlink/?LinkID=255203)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 6 章: テスト ツールボックス](https://msdn.microsoft.com/library/jj159337.aspx)

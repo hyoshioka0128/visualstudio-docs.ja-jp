@@ -2,28 +2,29 @@
 title: クラウドで TensorFlow モデルを実行する
 description: Azure ディープ ラーニング VM で TensorFlow モデルを実行します
 keywords: AI, Visual Studio, ディープ ラーニング仮想マシン
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427573"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638762"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>クラウドで TensorFlow モデルをトレーニングする
 
-このチュートリアルでは、Azure [ディープ ラーニング](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)仮想マシンの [MNIST データセット](http://yann.lecun.com/exdb/mnist/)を使って、TensorFlow モデルをトレーニングします。
+このチュートリアルでは、Azure [ディープ ラーニング](http://yann.lecun.com/exdb/mnist/)仮想マシンの [MNIST データセット](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)を使って、TensorFlow モデルをトレーニングします。
 
 MNIST データベースには、60,000 例のトレーニング セットと、手書きの数字の 10,000 例のテスト セットが含まれます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 始める前に、次のものがインストールおよび構成されていることを確認します。
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Azure ディープ ラーニング仮想マシンをセットアップする
@@ -31,7 +32,7 @@ MNIST データベースには、60,000 例のトレーニング セットと、
 > [!NOTE]
 > **[OS の種類]** を Linux に設定します。
 
-ディープ ラーニング仮想マシンのセットアップ方法については、[こちら](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)をご覧ください。
+ディープ ラーニング仮想マシンのセットアップ方法については、[こちら](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)をご覧ください。
 
 ### <a name="remove-comment-in-parens"></a>かっこ内のコメントを削除する
 
@@ -39,7 +40,7 @@ MNIST データベースには、60,000 例のトレーニング セットと、
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>サンプル コードをダウンロードする
+### <a name="download-sample-code"></a>サンプル コードのダウンロード
 
 TensorFlow、CNTK、Theano などでディープ ラーニングを始めるためのサンプルを含むこの [GitHub リポジトリ](https://github.com/Microsoft/samples-for-ai)をダウンロードします。
 

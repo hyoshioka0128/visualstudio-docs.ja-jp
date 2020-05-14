@@ -8,29 +8,29 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188760"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444688"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes ツールの概要
 
 Visual Studio Kubernetes ツールを使用すると、Kubernetes を対象とするコンテナー化されたアプリケーションの開発を効率化できます。 Visual Studio では、Dockerfiles や Helm グラフなどの Kubernetes 展開をサポートするために必要な configuration-as-code ファイルを自動的に作成できます。 Azure Dev Spaces を使用してライブ Azure Kubernetes Service (AKS) クラスターでコードをデバッグしたり、Visual Studio 内から AKS クラスターに直接発行したりすることができます。
 
-このチュートリアルでは、Visual Studio を使用して Kubernetes サポートをプロジェクトに追加し、AKS に発行する方法について説明します。 [Azure Dev Spaces](https://aka.ms/get-azds) を使用して AKS で実行されているプロジェクトのデバッグとテストを行うことに関心がある場合は、代わりに [Azure Dev Spaces のチュートリアル](/azure/dev-spaces/get-started-netcore-visualstudio)に進んでください。
+このチュートリアルでは、Visual Studio を使用して Kubernetes サポートをプロジェクトに追加し、AKS に発行する方法について説明します。 [Azure Dev Spaces](/azure/dev-spaces/) を使用して AKS で実行されているプロジェクトのデバッグとテストを行うことに関心がある場合は、代わりに [Azure Dev Spaces のチュートリアル](/azure/dev-spaces/get-started-netcore-visualstudio)に進んでください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 この新機能を利用するには、以下が必要です。
 
 ::: moniker range="vs-2017"
-- *ASP.NET および Web 開発*ワークロードと共に、最新バージョンの [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。
+- [ASP.NET および Web 開発](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)ワークロードと共に、最新バージョンの *Visual Studio 2017*。
 - 個別のダウンロードとして入手できる [Visual Studio 用 Kubernetes ツール](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)。
 ::: moniker-end
 ::: moniker range="vs-2019"
-- *[ASP.NET および Web の開発]* ワークロードを含む [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。
+- [[ASP.NET および Web の開発]](https://visualstudio.microsoft.com/downloads) ワークロードを含む *Visual Studio 2019*。
 ::: moniker-end
 - Docker イメージのビルド、ローカルで実行されている Docker コンテナーのデバッグ、または AKS への発行を行う場合は、開発ワークステーション (つまり、Visual Studio を実行する場所) にインストールされている [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows) (Azure Dev Spaces を使用して AKS で Docker コンテナーをビルドおよびデバッグするためには Docker は必要*ありません*)。
 ::: moniker range="vs-2017"
@@ -40,7 +40,7 @@ Visual Studio Kubernetes ツールを使用すると、Kubernetes を対象と�
 
     1. Azure Kubernetes Service クラスター。 詳細については、[AKS クラスターの作成](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster)に関する記事を参照してください。 必ず開発ワークステーションから[クラスターに接続](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)してください。
 
-    1. 開発ワークステーションにインストールされた Helm CLI。 詳細については、「[Installing Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md)」(Helm のインストール) を参照してください。
+    1. 開発ワークステーションにインストールされた Helm CLI。 詳細については、「[Installing Helm](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md)」(Helm のインストール) を参照してください。
 
     1. `helm init` コマンドを使用して、AKS クラスターに対して構成された Helm。 これを行う方法の詳細については、[Helm の構成方法](/azure/aks/kubernetes-helm#configure-helm)に関する記事を参照してください。
 ::: moniker-end
@@ -121,13 +121,13 @@ Visual Studio の開始ウィンドウで、*Kubernetes* を検索し、 **[Kube
 
 - Helm グラフと *charts* フォルダー。 これらの yaml ファイルで、アプリケーションの Helm グラフが構成されます。これを使用して、Kubernetes に展開できます。 Helm の詳細については、[https://www.helm.sh](https://www.helm.sh) を参照してください。
 
-- *azds.yaml*。 これには Azure Dev Spaces の設定が含まれており、Azure Kubernetes Service での反復的なデバッグ エクスペリエンスが高速になります。 詳細については、[Azure Dev Spaces のドキュメント](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)を参照してください。
+- *azds.yaml*。 これには Azure Dev Spaces の設定が含まれており、Azure Kubernetes Service での反復的なデバッグ エクスペリエンスが高速になります。 詳細については、[Azure Dev Spaces のドキュメント](/azure/dev-spaces/azure-dev-spaces)を参照してください。
 
 ::: moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Azure Kubernetes Service (AKS) に発行する
 
-これらのファイルがすべて配置されたら、Visual Studio IDE を使用して、通常どおりにアプリケーション コードを記述およびデバッグできます。 また、[Azure Dev Spaces](https://aka.ms/get-azds) を使用して、AKS クラスターでコードをすばやく実行し、ライブ実行されているコードをデバッグすることもできます。 詳細については、[Azure Dev Spaces のチュートリアル](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)を参照してください。
+これらのファイルがすべて配置されたら、Visual Studio IDE を使用して、通常どおりにアプリケーション コードを記述およびデバッグできます。 また、[Azure Dev Spaces](/azure/dev-spaces/) を使用して、AKS クラスターでコードをすばやく実行し、ライブ実行されているコードをデバッグすることもできます。 詳細については、[Azure Dev Spaces のチュートリアル](/azure/dev-spaces/get-started-netcore-visualstudio)を参照してください。
 
 目的の方法でコードを実行したら、Visual Studio から AKS クラスターに直接発行できます。
 
@@ -165,10 +165,10 @@ Visual Studio の開始ウィンドウで、*Kubernetes* を検索し、 **[Kube
 
 ::: moniker-end
 
-おめでとうございます! すべての Kubernetes アプリの開発に Visual Studio のすべての機能を使用できるようになりました。
+お疲れさまでした。 すべての Kubernetes アプリの開発に Visual Studio のすべての機能を使用できるようになりました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure での Kubernetes 開発の詳細については、[AKS のドキュメント](/azure/aks)を参照してください。
 
-Azure Dev Spaces の詳細については、[Azure Dev Spaces のドキュメント](https://aka.ms/get-azds)を参照してください。
+Azure Dev Spaces の詳細については、[Azure Dev Spaces のドキュメント](/azure/dev-spaces/)を参照してください。

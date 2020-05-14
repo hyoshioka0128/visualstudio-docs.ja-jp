@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748796"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596906"
 ---
 # <a name="alias-command"></a>Alias コマンド
 完全なコマンド、完全なコマンドと引数、または他のエイリアスに対して新しいエイリアスを作成します。
@@ -56,7 +56,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
 `/reset` スイッチを指定すると、エイリアスを復元する前に確認メッセージが表示されます。 `/reset` には省略形はありません。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 次の例では、Edit.MakeUpperCase という完全なコマンドに対し、`upper` という新しいエイリアスを作成します。
 
 ```cmd
@@ -75,9 +75,9 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

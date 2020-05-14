@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae87afb11be71af8f0582a0b2899d67ba970186e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75567841"
 ---
 # <a name="print-command"></a>Print コマンド
 
@@ -35,7 +35,7 @@ ms.locfileid: "72747821"
 
 `text`
 
-必須です。 評価対象の式または表示対象のテキストです。
+必須。 評価対象の式または表示対象のテキストです。
 
 ## <a name="remarks"></a>解説
 
@@ -59,10 +59,10 @@ ms.locfileid: "72747821"
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Evaluate Statement コマンド](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

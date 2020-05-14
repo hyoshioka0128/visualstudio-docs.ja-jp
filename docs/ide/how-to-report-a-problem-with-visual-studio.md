@@ -4,17 +4,17 @@ description: Visual Studio に関する問題を報告する方法を確認し�
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947692"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276502"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -23,7 +23,7 @@ ms.locfileid: "62947692"
 
 Visual Studio またはそのインストーラーで発生した問題は、それらに含まれているフィードバック ツールを使用して報告できます。 フィードバック ツールを使用すると、お客様のフィードバック内に診断情報を簡単に含めることができ、Visual Studio チームが問題の診断と修正を非常に効率的に行うのに役立ちます。 問題を報告する手順を次に示します。
 
-1. **Visual Studio で**、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。 フィードバック ツールには、**[ヘルプ]** メニュー > **[フィードバックの送信]** > **[問題の報告]** からアクセスすることもできます。
+1. **Visual Studio で**、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。 フィードバック ツールには、 **[ヘルプ]** メニュー >  **[フィードバックの送信]**  >  **[問題の報告]** からアクセスすることもできます。
 ![Visual Studio Developer Community の [問題の報告] ポップアップ](media/vsfeedbackentry.png) Visual Studio をインストールできない場合、または Visual Studio 内のフィードバック ツールにアクセスできない場合は、**Visual Studio Installer** で問題を報告してください。  Installer で、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。
 ![Visual Studio Developer Community での問題の報告に関するポップアップ](media/installer.png)
 
@@ -33,7 +33,7 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
    サインインすると、問題を報告するだけではなく、既存のフィードバックに投票したり、コメントしたりできます。
 
-1. サインイン後に、**[フォロー項目]** 画面で、**問題**と**活動**を確認できます。
+1. サインイン後に、 **[フォロー項目]** 画面で、**問題**と**活動**を確認できます。
 
    ![フォロー項目](../ide/media/items-i-follow.png)
 
@@ -54,13 +54,13 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
    ![新しい問題を報告する](../ide/media/report-new-problem.png)
 
-1. **[次へ]** を選択して、**[添付ファイル]** タブに移動します。ここで、Microsoft に送信する現在の画面を取り込むことができます。 追加のスクリーンショットやその他のファイルを添付するには、**[追加ファイルを添付]** を選択します。
+1. **[次へ]** を選択して、 **[添付ファイル]** タブに移動します。ここで、Microsoft に送信する現在の画面を取り込むことができます。 追加のスクリーンショットやその他のファイルを添付するには、 **[追加ファイルを添付]** を選択します。
 
    ![Visual Studio の問題レポートにスクリーンショットを添付する](media/report-a-problem-screenshot.png)
 
-1. スクリーンショットを添付しない場合や、[再現手順を記録](#record-a-repro)しない場合は、**[次へ]** を選択して **[概要]** タブに移動します。
+1. スクリーンショットを添付しない場合や、[再現手順を記録](#record-a-repro)しない場合は、 **[次へ]** を選択して **[概要]** タブに移動します。
 
-1. **[送信]** を選択して、イメージおよびトレースまたはダンプ ファイルと共に、レポートを送信します。 (**[送信]** ボタンが灰色表示の場合、レポートのタイトルと説明が記載されていることを確認します)。
+1. **[送信]** を選択して、イメージおよびトレースまたはダンプ ファイルと共に、レポートを送信します。 ( **[送信]** ボタンが灰色表示の場合、レポートのタイトルと説明が記載されていることを確認します)。
 
    収集されるデータについては、「[Data we collect](developer-community-privacy.md#data-we-collect)」(収集するデータ) を参照してください。
 
@@ -68,11 +68,11 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
 トレースとヒープ ダンプのファイルは、問題を診断するうえで役立ちます。 **[問題の報告]** ツールで再現する手順を記録し Microsoft にデータを送信してくだされば、大変助かります。 これを行う方法を次に示します。
 
-1. 問題のタイトルと説明を入力したら、**[次へ]** を選択して **[添付ファイル]** タブに移動します。
+1. 問題のタイトルと説明を入力したら、 **[次へ]** を選択して **[添付ファイル]** タブに移動します。
 
 1. **[記録]** タブを選択します。
 
-1. 問題をそこで再現できる場合は、**[操作の記録]** で Visual Studio の現在のインスタンスを選択します。 再現できない (たとえば、Visual Studio がハングしている) 場合は、**[\<Create a new instance>]\(<新しいインスタンスの作成>\)** を選択して、Visual Studio の新しいインスタンスの操作を記録します。
+1. 問題をそこで再現できる場合は、 **[操作の記録]** で Visual Studio の現在のインスタンスを選択します。 再現できない (たとえば、Visual Studio がハングしている) 場合は、 **[\<Create a new instance>]\(<新しいインスタンスの作成>\)** を選択して、Visual Studio の新しいインスタンスの操作を記録します。
 
 1. **[記録の開始]** を選択します。 ツールの実行を許可します。
 
@@ -80,7 +80,7 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
 1. **[ステップ記録ツール]** ツールが表示されたら、問題を再現する手順を実行します。
 
-1. 終了したら、**[記録の停止]** ボタンを選択します。
+1. 終了したら、 **[記録の停止]** ボタンを選択します。
 
 1. 記録された情報が Visual Studio により収集され、パッケージ化されるまでしばらく待ちます。
 
@@ -122,7 +122,7 @@ Visual Studio を使用して問題を報告したくない場合、またはで
 
 ## <a name="see-also"></a>関連項目
 
-* [ご意見](../ide/talk-to-us.md)
+* [Visual Studio フィードバック オプション](../ide/feedback-options.md)
 * [Visual Studio for Mac に関する問題を報告する](/visualstudio/mac/report-a-problem)
 * [C++ に関する問題を報告する](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)

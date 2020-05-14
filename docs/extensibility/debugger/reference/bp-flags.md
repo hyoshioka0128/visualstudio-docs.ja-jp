@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS |Microsoft Docs
+title: BP_FLAGS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319217"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738061"
 ---
-# <a name="bpflags"></a>BP_FLAGS
-ブレークポイントを設定するときに、追加情報を指定するために使用するオプションのフラグを提供します。
+# <a name="bp_flags"></a>BP_FLAGS
+ブレークポイントを設定するときに追加情報を指定するために使用できるオプションのフラグを提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,25 +46,25 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `BP_FLAG_NONE`\
-ブレークポイントのフラグを指定しません。
+ブレークポイント フラグを指定しません。
 
 `BP_FLAG_MAP_DOCPOSITION`\
-デバッグ エンジン (DE) がドキュメントの位置を使用してブレークポイントをマップする必要がありますを指定します。 これは、機能は、Active Server Pages (ASP) などのスクリプトを使用したソース ファイルに設定されたブレークポイントにのみ適用されます。
+デバッグ エンジン (DE) がドキュメントの位置を使用してブレークポイントをマップする必要があることを指定します。 これは、スクリプト指向のソース ファイル (アクティブ サーバー ページ (ASP) など) に設定されたブレークポイントにのみ適用されます。
 
 `BP_FLAG_DONT_STOP`\
-デバッグ エンジン最終的に停止するようにされませんが、ブレークポイントが、デバッグ エンジンによって処理されることを指定 (つまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しない必要があります)。 このフラグは、トレース ポイントで主に使用する設計されています。
+ブレークポイントはデバッグ エンジンによって処理される必要がありますが、デバッグ エンジンは最終的にそこで停止しないように指定します (つまり[、IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しないでください)。 このフラグは、主にトレースポイントで使用するように設計されています。
 
 ## <a name="remarks"></a>Remarks
-使用、`dwFlags`のメンバー、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造体および`dwFlags`[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバーに使用されます。
 
-これらの値は、演算と組み合わせることがあります`OR`します。
+これらの値はビット単位`OR`で組み合わせることができる。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

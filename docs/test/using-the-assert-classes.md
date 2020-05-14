@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Assert classes
 - Assert methods
 - unit tests, Assert classes
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 41be3aaa4967e4c5f975b43f7d8fec982f04c9b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659718"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75592049"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>単体テストに Assert クラスを使用する
 
@@ -47,6 +47,6 @@ ms.locfileid: "72659718"
 
 アプリケーション コード内のあるメソッドによりスローされることが予想される例外が実際にスローされることを確認するには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> メソッドを使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コードの単体テスト](../test/unit-test-your-code.md)

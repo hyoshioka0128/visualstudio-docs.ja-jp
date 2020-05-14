@@ -3,10 +3,10 @@ title: Visual Studio Professional のワークロード ID とコンポーネン
 titleSuffix: ''
 description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 48410a40518fdd1d94b8415987b04f76de4cc0b3
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+open_to_public_contributors: false
+ms.openlocfilehash: 2fa6401a03068ceaea325491d749d05a52866f72
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797270"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276336"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional のコンポーネント ディレクトリ
 

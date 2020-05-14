@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739327"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169340"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 言語パックスキーマ2.0 リファレンス
 
@@ -24,21 +24,21 @@ VSIX 言語パックのスキーマには、VSIX パッケージのローカラ�
 
 ## <a name="language-pack-schema"></a>言語パックスキーマ
 
-言語パックファイルのルート要素は`<PackageLanguagePackManifest>`であり、の`Version`属性は言語パック形式のバージョンです。 この記事では、言語パック形式のバージョン2.0 について説明します。これは`Version` 、属性を値`Version="2.0.0"`に設定することによってマニフェストで指定します。 ルート要素には、1つ`<Metadata>`の子要素のみが含まれます。
+言語パックファイルのルート要素は、言語パック形式の `Version`の属性を持つ `<PackageLanguagePackManifest>`になります。 この記事では、`Version` 属性を `Version="2.0.0"`の値に設定することによって、マニフェストに指定されている言語パック形式のバージョン2.0 について説明します。 ルート要素には、子 `<Metadata>` 要素が1つだけ含まれます。
 
 ### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest 要素
 
-`<PackageLanguagePackManifest>`要素内には、次の要素が存在している必要があります。
+`<PackageLanguagePackManifest>` 要素内には、次の要素が存在している必要があります。
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
 |`<Metadata>`| ローカライズされたすべてのパッケージメタデータのコンテナー要素
 
 ### <a name="metadata-element"></a>Metadata 要素
 
-`<Metadata>`要素内には、次の要素を含めることができます。
+`<Metadata>` 要素内には、次の要素を含めることができます。
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
 |`<DisplayName>`|インストールする拡張機能のローカライズされた名前|
 |`<Description>`|インストールする拡張機能のローカライズされた説明|
@@ -53,7 +53,7 @@ VSIX 言語パックのスキーマには、VSIX パッケージのローカラ�
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>
@@ -63,9 +63,9 @@ VSIX 言語パックのスキーマには、VSIX パッケージのローカラ�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-|Title|説明|
+|タイトル|説明|
 |-----------|-----------------|
 |[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|VSIX パッケージのローカライズされたインストールをサポートする方法を示します。|
 |[VSIX 拡張機能スキーマ2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX マニフェストは、 *.vsix*配置ファイルの内容を記述します。 配置ファイルを使用すると、 **[拡張機能と更新プログラム]** ダイアログボックスを使用して、Visual Studio 拡張機能をインストールできます。|

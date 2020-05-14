@@ -1,44 +1,44 @@
 ---
-title: オートメーション Vspackage の提供 |Microsoft Docs
+title: VS パッケージのオートメーションの提供 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9685d14651a40fd26842e0d922fefbc0075c00c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341481"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705949"
 ---
 # <a name="providing-automation-for-vspackages"></a>VSPackage でのオートメーションの提供
-自動化、Vspackage 用に提供する 2 つの主な方法があります: VSPackage に固有のオブジェクトを実装することで、標準的なオートメーション オブジェクトを実装することで。 一般に、これらを併用する環境のオートメーション モデルを拡張します。
+VSPackage にオートメーションを提供する主な方法は、VSPackage 固有のオブジェクトを実装することと、標準のオートメーション オブジェクトを実装する方法です。 一般に、これらは環境のオートメーション モデルを拡張するために一緒に使用されます。
 
-## <a name="vspackage-specific-objects"></a>VSPackage に固有のオブジェクト
- オートメーション モデル内の特定の場所では、VSPackage に固有のオートメーション オブジェクトを提供する必要があります。 たとえば、新しいプロジェクトには、VSPackage のみを提供する個別のオブジェクトが必要です。 これらのオブジェクトの名前がレジストリに登録し、環境への呼び出し経由で取得した`DTE`オブジェクト。
+## <a name="vspackage-specific-objects"></a>VS パッケージ固有のオブジェクト
+ オートメーション モデル内の特定の場所では、VSPackage に固有のオートメーション オブジェクトを提供する必要があります。 たとえば、新しいプロジェクトでは、VSPackage のみが提供する個別のオブジェクトが必要です。 これらのオブジェクトの名前はレジストリに入力され、環境`DTE`オブジェクトの呼び出しによって取得されます。
 
- Automation、コンシューマーが標準オブジェクトのオブジェクトのプロパティで指定されたオブジェクトを使用する場合、VSPackage に固有のオブジェクトを取得することもできます。 たとえば、標準的な`Window`オブジェクトには、`Object`とよく呼ばれるプロパティ、`Windows.Object`プロパティ。 コンシューマーを呼び出すときに、`Window.Object`バックアップに渡す VSPackage に実装されているウィンドウで、独自の設計の特定のオートメーション オブジェクト。
+ VSPackage 固有のオブジェクトは、オートメーション コンシューマーが標準オブジェクトの Object プロパティを通じて提供されるオブジェクトを使用する場合にも取得できます。 たとえば、標準`Window`オブジェクトには、一般的`Object`にプロパティと呼ばれるプロパティ`Windows.Object`があります。 コンシューマーが VSPackage`Window.Object`に実装されているウィンドウで を呼び出すときは、独自のデザインの特定のオートメーション オブジェクトを渡します。
 
 #### <a name="projects"></a>プロジェクト
- Vspackage では、独自の VSPackage に固有のオブジェクトから新しいプロジェクトの種類のオートメーション モデルを拡張できます。 VSPackage が、一意のプロジェクトを区別するためには、新しいオートメーション オブジェクトを提供することの主な目的のオブジェクトから、<xref:Microsoft.VisualStudio.VCProjectEngine.VCProject>または<xref:VSLangProj80.VSProject2>オブジェクト。 この違いは、サイド バイ サイドでを表示する必要があります 1 つまたはその他のプロジェクトの種類とは別のプロジェクトの種類を反復処理する方法を提供する場合に便利なソリューションです。 詳細については、次を参照してください。[プロジェクト オブジェクトを公開する](../../extensibility/internals/exposing-project-objects.md)します。
+ VSPackage は、VSPackage 固有のオブジェクトを使用して、新しいプロジェクトの種類のオートメーション モデルを拡張できます。 VSPackage に新しいオートメーション オブジェクトを提供する主な目的は、一意のプロジェクト<xref:Microsoft.VisualStudio.VCProjectEngine.VCProject>オブジェクト<xref:VSLangProj80.VSProject2>を オブジェクトまたはオブジェクトと区別することです。 この差別化は、ソリューション内で並べて表示される場合に、他の種類のプロジェクトを別に、プロジェクトの種類を 1 つにまとめたり反復処理したりする場合に便利です。 詳細については、「[プロジェクト オブジェクトの公開](../../extensibility/internals/exposing-project-objects.md)」を参照してください。
 
 #### <a name="events"></a>イベント
- 環境のイベントのアーキテクチャでは、独自の VSPackage に固有のオブジェクトを追加するための別の場所を提供します。 たとえば、独自の一意のイベント オブジェクトを作成すると、プロジェクトの環境のイベント モデルを拡張できます。 新しい項目が独自のプロジェクトの種類に追加されたときに、独自のイベントを提供する可能性があります。 詳細については、次を参照してください。[イベントを公開する](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)します。
+ 環境のイベント アーキテクチャは、独自の VSPackage 固有のオブジェクトを追加する別の場所を提供します。 たとえば、独自のイベント オブジェクトを作成することで、プロジェクトの環境のイベント モデルを拡張できます。 新しい項目を独自のプロジェクトの種類に追加するときに、独自のイベントを提供する場合があります。 詳細については、「[イベントの公開](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)」を参照してください。
 
 #### <a name="window-objects"></a>ウィンドウ オブジェクト
- Windows 返すことができる VSPackage に固有のオートメーション オブジェクトが呼び出されたときに、環境にします。 派生したオブジェクトを実装する<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>、<xref:EnvDTE.IExtensibleObject>または`IDispatch`が配置されてウィンドウ オブジェクトの拡張プロパティに戻るを渡します。 たとえば、ウィンドウ フレームに配置されたコントロールの自動化に提供するのにこの方法を使用できます。 このオブジェクトとそれが長引く可能性があるその他のオブジェクトのセマンティクスは、皆さんの仕事が設計です。 詳細については、「[方法 :Windows のオートメーションの提供](../../extensibility/internals/how-to-provide-automation-for-windows.md)します。
+ 呼び出されたときに、VSPackage 固有のオートメーション オブジェクトを環境に戻すことができます。 から<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>派生したオブジェクト<xref:EnvDTE.IExtensibleObject>、または`IDispatch`プロパティを戻すオブジェクトを実装し、そのオブジェクトがサイト化されているウィンドウ オブジェクトを拡張します。 たとえば、この方法を使用して、ウィンドウ フレーム内に設置されたコントロールのオートメーションを提供できます。 このオブジェクトのセマンティクスと、それが拡張する可能性のある他のオブジェクトは、設計する必要があります。 詳細については、「[方法 : Windows のオートメーションを提供する](../../extensibility/internals/how-to-provide-automation-for-windows.md)」を参照してください。
 
-#### <a name="options-pages-on-the-tools-menu"></a>ツール メニュー オプション ページ
- ツール、ページを実装すると、独自のオプションを作成するレジストリ情報を追加するオプションのオートメーション モデルを拡張するページを作成することができます。 ページは、他のオプション ページのように、環境のオブジェクト モデルを通じて呼び出すことができます。 Vspackage を環境に追加する機能の設計には、[オプション] ページが必要とする場合は、オートメーションのサポートを追加する必要があります。 詳細については、次を参照してください。[オートメーションのサポート オプション ページ](../../extensibility/internals/automation-support-for-options-pages.md)します。
+#### <a name="options-pages-on-the-tools-menu"></a>[ツール] メニューの [オプション] ページ
+ ページを実装し、独自のオプションを作成するレジストリに情報を追加することで、ツール、オプションのオートメーション モデルを拡張するページを作成できます。 その後、他のオプション ページと同様に、環境オブジェクト モデルを通じてページを呼び出すことができます。 VSPackages を使用して環境に追加する機能のデザインにオプション ページが必要な場合は、オートメーション サポートも追加する必要があります。 詳細については、「[オプション ページのオートメーション サポート](../../extensibility/internals/automation-support-for-options-pages.md)」を参照してください。
 
-## <a name="standard-automation-objects"></a>標準的なオートメーション オブジェクト
- 標準的なオートメーション オブジェクトの実装もプロジェクトの自動化を拡張する (から派生した`IDispatch`) をプロジェクトの他のオブジェクトの横にあるスタンドアロンし、標準的なメソッドとプロパティを実装します。 標準オブジェクトのものがプロジェクト オブジェクトなど、ソリューションの階層に挿入された`Projects`、 `Project`、 `ProjectItem`、および`ProjectItems`します。 新しい各プロジェクトの種類には、これらのオブジェクト (と可能性があります、プロジェクトのセマンティクスに応じて他の) を実装する必要があります。
+## <a name="standard-automation-objects"></a>標準オートメーションオブジェクト
+ プロジェクトのオートメーションを拡張するには、他のプロジェクト オブジェクトの横に表示`IDispatch`される標準オートメーション オブジェクト (から派生したもの) を実装し、標準のメソッドとプロパティを実装します。 標準オブジェクトの例としては`Projects`、 、 `Project`、`ProjectItem`および`ProjectItems`などのソリューション階層に挿入されるプロジェクト オブジェクトがあります。 すべての新しいプロジェクトの種類は、これらのオブジェクトを実装する必要があります (場合によっては、プロジェクトのセマンティクスに応じて他のオブジェクト)。
 
- ある意味では、これらのオブジェクトは、VSPackage に固有のプロジェクトのオブジェクトの逆の利点を提供します。 標準的なオートメーション オブジェクトは、同じオブジェクトをサポートしている他のプロジェクトなどの一般的な方法で使用するプロジェクトを使用します。 そのため、アドインを [全般] に対して記述された`Project`と`ProjectItem`オブジェクトが任意の種類のプロジェクトに対して機能します。 詳細については、次を参照してください。[プロジェクトのモデリング](../../extensibility/internals/project-modeling.md)します。
+ ある意味では、これらのオブジェクトは、VSPackage 固有のプロジェクト オブジェクトの反対の利点を提供します。 標準のオートメーション オブジェクトを使用すると、同じオブジェクトをサポートする他のプロジェクトと同様に、プロジェクトを一般化して使用できます。 したがって、汎用`Project`および`ProjectItem`オブジェクトに対して記述されたアドインは、任意の種類のプロジェクトに対して機能できます。 詳細については、「[プロジェクトモデリング](../../extensibility/internals/project-modeling.md)」を参照してください。

@@ -2,20 +2,20 @@
 title: 一時変数をその値と置き換える
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661013"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568868"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>一時変数のインライン化リファクタリング
 
@@ -25,13 +25,13 @@ ms.locfileid: "72661013"
 
 - Visual Basic
 
-**概要:** 一時変数を削除し、代わりにその値に置換できます。
+**機能:** 一時変数を削除し、代わりにその値に置換できます。
 
 **条件:** 一時変数の使用により、コードの理解が困難になったとき。
 
 **理由:** 一時変数を削除すると、コードが読みやすくなることがあるため。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. インライン化する一時変数を強調表示するか、一時変数の内側にテキスト カーソルを置きます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72661013"
 
 2. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - コードを右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
@@ -62,6 +62,6 @@ ms.locfileid: "72661013"
 
       ![インラインの結果 - Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [リファクタリング](../refactoring-in-visual-studio.md)

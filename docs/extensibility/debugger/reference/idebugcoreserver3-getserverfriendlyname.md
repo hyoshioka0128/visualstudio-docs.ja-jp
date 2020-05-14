@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName |Microsoft Docs
+title: サーバーフレンドリー名を取得します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326950"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732891"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
-サーバーのフレンドリ名を取得します。
+サーバーの表示名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,19 +41,19 @@ int GetServerFriendlyName(
 
 ## <a name="parameters"></a>パラメーター
 `pbstrName`\
-[out]サーバーのフレンドリ名を返します。
+[アウト]サーバーのフレンドリ名を返します。
 
 > [!NOTE]
-> 呼び出し元は、文字列を解放します。
+> 呼び出し元は、文字列を解放する責任があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- サーバーのユーザーにリリースされた、このメソッドによって返される名前は、サーバーの完全名です。 サーバーの自動起動の名前は、マシンのサーバーが実行されていることします。
+ ユーザーが起動したサーバーの場合、このメソッドによって返される名前はサーバーの完全名です。 自動起動サーバーの場合、名前はサーバーが実行されているマシンの名前です。
 
- コンピューター対象の名前では、呼び出し、 [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)メソッド。
+ マシン指向の名前の場合は、[メソッド](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)を呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
-- [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
+- [サーバー名を取得します。](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

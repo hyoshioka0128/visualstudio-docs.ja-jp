@@ -1,5 +1,5 @@
 ---
-title: IDebugLoadCompleteEvent2 |Microsoft Docs
+title: イベント 2 を読み込みます。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd66d3fc31c799bed1c14891c04000374b9a153
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4cb39d3d814270414f28aec7f1876b6b44406e53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333135"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727751"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
-このインターフェイスは、プログラムが読み込まれるときに、すべてのコードが実行される前に、セッション デバッグ マネージャー (SDM) にデバッグ エンジン (DE) によって送信されます。
+このインターフェイスは、デバッグ エンジン (DE) によって、プログラムが読み込まれるときに、コードが実行される前にセッション デバッグ マネージャー (SDM) に送信されます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,18 +28,18 @@ ms.locfileid: "66333135"
 IDebugLoadCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デでは、プログラムが正常に読み込まれたことを報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ DE は、プログラムが正常に読み込まれたことを報告するために、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は[、インターフェイス](/cpp/atl/queryinterface)にアクセスするのに`IDebugEvent2`クエリ インターフェイスを使用します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- デは作成し、プログラムが正常に読み込まれたことを報告するには、このイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって指定されたコールバック関数。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ DE は、プログラムが正常に読み込まれたことを報告するために、このイベント オブジェクトを作成して送信します。 イベントは、デバッグ中のプログラムにアタッチされたときに SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して送信されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDebugProperty |Microsoft Docs
+title: Iデバッグプログラム2::プロパティを取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDebugProperty
 ms.assetid: d194224e-f0e6-46ab-85d4-9e2639e28946
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 109e3ac1267afb4097429aafc9264416f3c2dbf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319367"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722894"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 プログラムのプロパティを取得します。
@@ -41,15 +41,15 @@ int GetDebugProperty( 
 
 ## <a name="parameters"></a>パラメーター
 `ppProperty`\
-[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)プログラムのプロパティを表すオブジェクト。
+[アウト]プログラムのプロパティを表す[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドによって返されるプロパティは、プログラムに固有です。 プログラムは、1 つ以上のプロパティを返す必要がある場合、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)このメソッドによって返されるオブジェクトは、追加のプロパティと呼び出し元のコンテナー、 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)メソッドを返します、。すべてのプロパティの一覧です。
+ このメソッドによって返されるプロパティは、プログラムに固有です。 プログラムが複数のプロパティを返す必要がある場合、このメソッドによって返される[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトは追加のプロパティのコンテナーであり[、EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)メソッドを呼び出すと、すべてのプロパティのリストが返されます。
 
- 任意の数と種類の追加のプロパティを使用して記述できるプログラムが公開される可能性が、`IDebugProperty2`インターフェイス。 IDE が汎用プロパティ ブラウザーのユーザー インターフェイスを通じて追加のプログラムのプロパティを表示します。
+ プログラムは、インターフェイスを通じて記述できる追加のプロパティの数と型を`IDebugProperty2`公開できます。 IDE は、汎用プロパティ ブラウザーのユーザー インターフェイスを通じて、追加のプログラム プロパティを表示する場合があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

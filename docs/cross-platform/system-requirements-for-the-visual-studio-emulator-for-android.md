@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Emulator for Android のシステム要件 | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815475"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77272043"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のシステム要件
 
@@ -40,9 +42,9 @@ Visual Studio Emulator for Android を実行するための要件を簡単に確
 
 - SSSE3 以降をサポートするプロセッサ。
 
-ネットワーク要件
+ネットワークの要件
 
-- DHCP
+- [DHCP]
 
 - 自動的に構成された DNS とゲートウェイの設定
 
@@ -71,13 +73,13 @@ Hyper-V の要件
 
 RAM と Windows の要件を確認するには、コントロール パネルで [システムとセキュリティ] を選択し、[システム] を選択します。
 
-![システム要件を確認する](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
+![システム必要条件の確認](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
-## <a name="network-requirements"></a>ネットワーク要件
+## <a name="network-requirements"></a>ネットワークの要件
 
 ネットワークは次の条件を満たしている必要があります。
 
-- DHCP
+- [DHCP]
 
    エミュレーターは、独自の IP アドレスでネットワーク上に個別のデバイスとして自動的に構成されるため、DHCP が必要です。
 
@@ -105,9 +107,9 @@ Windows での Hyper-V の要件
 
 コンピューターと BIOS 設定が既に Hyper-V をサポートするよう構成されている場合、セットアップ プログラムで Hyper-V が有効になり、開始されます。 サポートする構成ではない場合は、必要に応じてこれらの要件を手動で有効にします。
 
-|必要条件|この要件を確認して有効にする方法|
+|要件|この要件を確認して有効にする方法|
 |-----------------|----------------------------------------------|
-|Hyper-V がインストールされている必要があります。|[Windows Phone エミュレーターの Hyper-V を有効にする](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))ために使用する同じ手順に従ってください。<br /><br /> サービス スナップインで **Hyper-V 仮想マシン管理** サービスの状態を確認します。|
+|Hyper-V がインストールされている必要があります。|[Windows Phone エミュレーターの Hyper-V を有効にする](/previous-versions/windows/apps/jj863509(v=vs.105))ために使用する同じ手順に従ってください。<br /><br /> サービス スナップインで **Hyper-V 仮想マシン管理** サービスの状態を確認します。|
 |Hyper-V が実行されている必要があります。|サービスの管理の詳細については、以下のトピックを参照してください。<br /><br /> -   [サービスの開始、停止、一時停止、再開、または再起動](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [サービスを開始する方法を構成します。](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  ローカルの Hyper-V Administrators グループのメンバーである必要があります。
@@ -119,7 +121,7 @@ Windows での Hyper-V の要件
 > [!IMPORTANT]
 > グループに参加した場合は、変更を有効にするためにログオフするか、再起動します。
 
- ![ Hyper&#45;V Administrators セキュリティ グループに参加する](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Hyper&#45;V Administrators セキュリティ グループへの参加](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  手動で自分をグループに追加するには、[ローカル ユーザーとグループ] スナップインを開きます。
 
@@ -145,6 +147,6 @@ ReFS ファイル システムでは、仮想ハード ディスク ファイル
 
 OpenGL ES で使用される GPU など、エミュレーターで GPU の呼び出しをエミュレートするには、適切な DirectX ドライバーがインストールされた DirectX 互換の GPU が必要です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

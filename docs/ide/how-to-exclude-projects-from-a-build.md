@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713946"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114803"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>方法: ビルドからプロジェクトを除外する
 
@@ -67,7 +67,7 @@ Visual Studio の **[出力]** ウィンドウの **[ビルド]** ペインで�
 
 プロジェクトがスキップされた理由を確認するには、アクティブな構成 (前の例では `Debug x86`) を見つけ、 **[ビルド]**  >  **[構成マネージャー]** を選択します。 この記事で説明されているように、構成ごとにスキップされるプロジェクトを表示または変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ビルド構成について](../ide/understanding-build-configurations.md)
 - [方法: 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)

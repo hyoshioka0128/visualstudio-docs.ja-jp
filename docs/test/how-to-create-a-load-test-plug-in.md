@@ -9,19 +9,19 @@ helpviewer_keywords:
 - plug-ins, load test
 - load tests, plug-ins
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eea116eb18e192720410b71136de9d823ed0fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97952f65d78f7204410d07b90e0e538fb8499116
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653666"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589124"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>方法:ロード テスト プラグインを作成する
+# <a name="how-to-create-a-load-test-plug-in"></a>方法: ロード テスト プラグインを作成する
 
-ロード テスト プラグインを作成すると、ロード テストを実行するときに、さまざまな時間にコードを実行できます。 プラグインを作成して、ロード テストの組み込みの機能を拡張または変更します。 たとえば、ロード テスト プラグインのコードを作成して、ロード テストの実行中にロード テストのパターンを設定または変更できます。 これを行うには、<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> インターフェイスを継承するクラスを作成する必要があります。 このクラスは、このインターフェイスの <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> メソッドを実装する必要があります。 詳細については、<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> を参照してください。
+ロード テスト プラグインを作成すると、ロード テストを実行するときに、さまざまな時間にコードを実行できます。 プラグインを作成して、ロード テストの組み込みの機能を拡張または変更します。 たとえば、ロード テスト プラグインのコードを作成して、ロード テストの実行中にロード テストのパターンを設定または変更できます。 これを行うには、<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> インターフェイスを継承するクラスを作成する必要があります。 このクラスは、このインターフェイスの <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> メソッドを実装する必要があります。 詳細については、「<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>」を参照してください。
 
 > [!TIP]
 > Web パフォーマンス テスト用のプラグインを作成することもできます。 詳細については、[Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)」を参照してください。

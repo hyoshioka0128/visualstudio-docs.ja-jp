@@ -120,7 +120,7 @@
               items:
                 - name: デザイナーを使用し、ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする
+                - name: 'チュートリアル : ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md

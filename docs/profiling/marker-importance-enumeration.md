@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999968"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance 列挙型
+# <a name="marker_importance-enumeration"></a>marker_importance 列挙型
 コンカレンシー ビジュアライザー マーカーの重要度レベルを表します。
 
 ## <a name="syntax"></a>構文
@@ -32,14 +32,14 @@ enum marker_importance;
 
 ### <a name="values"></a>値
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |`critical_importance`|マーカーの重要度がきわめて高いことを指定します。|
 |`high_importance`|マーカーの重要度が高いことを指定します。|
 |`low_importance`|マーカーの重要度が低いことを指定します。|
 |`normal_importance`|マーカーの重要度が標準であることを指定します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkersobj.h*
 
  **名前空間:** Concurrency::diagnostic

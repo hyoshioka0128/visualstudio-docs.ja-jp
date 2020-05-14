@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65cfdde84e0a0e2bb1aa28e9d4b96e2505a93a57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593227"
 ---
 # <a name="edit-load-tests"></a>ロード テストを編集する
 
@@ -48,7 +48,7 @@ Web パフォーマンスとロード テスト プロジェクトは、Visual S
 
 詳細については、「[ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)」と「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [しきい値規則違反の分析](../test/analyze-threshold-rule-violations-in-load-tests.md)

@@ -8,26 +8,26 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298008"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586973"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード化された UI テストを SharePoint アプリケーションに含めると、UI コントロールを含むアプリケーション全体が正しく機能していることを検証できます。 コード化された UI テストでは、ユーザー インターフェイスの値とロジックも検証できます。
 
- **Requirements**
+ **必要条件**
 
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>コード化された UI テストについて把握しておくべきこと
- コード化された UI テストを使用する利点の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」と「[Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)」を参照してください。
+ コード化された UI テストを使用する利点の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」と「[Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://msdn.microsoft.com/library/jj159335.aspx)」を参照してください。
 
- **ノート**
+ **メモ**
 
 - ![Prerequsite](../test/media/prereq.png "前提条件")SharePoint アプリケーションのコード化された UI テストは、SharePoint 2010 でのみサポートされています。
 
@@ -53,7 +53,7 @@ ms.locfileid: "74298008"
 > [!WARNING]
 > Excel のセルにテキストを入力してから方向キーを操作すると、正しく記録されません。 セルの選択にはマウスを使用してください。
 
- 空のセルに対する操作を記録している場合は、セルをダブルクリックしてからテキスト設定操作を実行して、コードを変更する必要があります。 そうする必要があるのは、セルをクリックした後、キーボードを操作すると、セル内の `textarea` がアクティブになるためです。 単に空のセルで `setvalue` を記録すると、セルがクリックされるまでは存在しない `editbox` が検索されます。 例 :
+ 空のセルに対する操作を記録している場合は、セルをダブルクリックしてからテキスト設定操作を実行して、コードを変更する必要があります。 そうする必要があるのは、セルをクリックした後、キーボードを操作すると、セル内の `textarea` がアクティブになるためです。 単に空のセルで `setvalue` を記録すると、セルがクリックされるまでは存在しない `editbox` が検索されます。 次に例を示します。
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
@@ -116,7 +116,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 1. Fiddler を起動します。
 
-2. ブラウザーのキャッシュを消去します。 この操作が必要なのは、Silverlight UI オートメーション ヘルパー DLL が含まれている XAP ファイルが、通常はキャッシュされるためです。 変更した XAP ファイルが確実に格納されるようにするために、ブラウザーのキャッシュを消去します。
+2. ブラウザーのキャッシュをクリアします。 この操作が必要なのは、Silverlight UI オートメーション ヘルパー DLL が含まれている XAP ファイルが、通常はキャッシュされるためです。 変更した XAP ファイルが確実に格納されるようにするために、ブラウザーのキャッシュを消去します。
 
 3. Web ページを開きます。
 
@@ -138,10 +138,10 @@ uiGridKeyboardInputEdit.Text=value;
  [コード化された UI テストのコンテンツ インデックス](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>フォーラム
- [Visual Studio ALM + Team Foundation Server のブログ](https://go.microsoft.com/fwlink/?LinkID=254496)
+ [Visual Studio ALM + Team Foundation Server のブログ](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md) [Web パフォーマンスとロードテスト sharepoint 2010 および2013アプリケーション](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint ソリューションの作成](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)sharepoint のコードの[検証および](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)デバッグ sharepoint ソリューションの[ビルドと](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)デバッグ sharepoint[アプリケーションのパフォーマンスのプロファイリング](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

@@ -3,17 +3,17 @@ title: '方法: シェーダーを 3D モデルに適用する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 445829c3171eeae3b483055688dcf5f77be67330
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637167"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76112758"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>方法: シェーダーを 3D モデルに適用する
 
@@ -25,7 +25,7 @@ ms.locfileid: "72637167"
 
 開始する前に、 **[プロパティ]** ウィンドウが表示されていることを確認します。
 
-1. まず 1 つ以上のモデルを含む 3D シーンを使用します。 適切な 3D シーンがない場合、「[方法:基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)」に従って作成します。 また、モデルに適用できる DGSL シェーダーを使用する必要があります。 適切なシェーダーがない場合、「[方法:基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)」に従って作成し、ファイルに保存してから続行してください。
+1. まず 1 つ以上のモデルを含む 3D シーンを使用します。 適切な 3D シーンがない場合、「[方法: 基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)」に従って作成します。 また、モデルに適用できる DGSL シェーダーを使用する必要があります。 適切なシェーダーがない場合、「[方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)」に従って作成し、ファイルに保存してから続行してください。
 
 2. **選択**モードで、シェーダーを適用するモデルを選択します。その後、 **[プロパティ]** ウィンドウを開き、**効果**プロパティ グループの **Filename** プロパティで、モデルに適用する DGSL シェーダーを指定します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "72637167"
 
 シェーダーをモデルに適用した後、それをシェーダー デザイナーで開くには、モデルを選択します。その後、 **[プロパティ]** ウィンドウを開き、**効果** プロパティ グループの **(詳細設定)** プロパティで省略記号 ( **...** ) ボタンを選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)
 - [方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)

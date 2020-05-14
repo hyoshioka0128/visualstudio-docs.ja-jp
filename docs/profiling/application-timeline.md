@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128287"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>リソース消費量と UI スレッド アクティビティを分析する (XAML)
@@ -68,11 +68,11 @@ ms.locfileid: "71128287"
 
 2. **[UI スレッド使用状況]** または **[ビジュアル スループット (FPS)]** のグラフの情報を使用して、 **[タイムラインの詳細]** ビューで詳細を確認し、応答性に問題があるように見受けられる場合は、考えられる原因を探します。
 
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> シナリオ、カテゴリ、およびイベントのレポート
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> シナリオ、カテゴリ、およびイベントのレポート
 
 **[アプリケーション タイムライン]** ツールは、XAML のパフォーマンスに関連するシナリオ、カテゴリ、およびイベントのタイミング データを表示します。
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> 診断セッションのタイムライン
+### <a name="diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a> 診断セッションのタイムライン
 
 ![パフォーマンスと診断のタイムライン](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
@@ -80,19 +80,19 @@ ms.locfileid: "71128287"
 
 タイムラインには、挿入したすべてのユーザー マークとアプリのアクティブ化ライフサイクル イベントも表示されます。
 
-### <a name="BKMK_UI_thread_utilization_graph"></a> UI スレッド使用状況グラフ
+### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> UI スレッド使用状況グラフ
 
 ![CPU 使用状況グラフ](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
 **[UI スレッド使用状況 (%)]** グラフは、コレクション期間中にあるカテゴリで費やされた相対的な時間を横棒グラフで示したものです。
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> ビジュアル スループット (FPS) グラフ
+### <a name="visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a> ビジュアル スループット (FPS) グラフ
 
 ![ビジュアル スループット グラフ](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
 **[ビジュアル スループット (FPS)]** の折れ線グラフは、アプリの UI スレッドとコンポジション スレッドの 1 秒あたりのフレーム数 (FPS) を示します。
 
-### <a name="BKMK_Timeline_details_"></a> タイムラインの詳細
+### <a name="timeline-details"></a><a name="BKMK_Timeline_details_"></a> タイムラインの詳細
 
 レポートの分析はほとんどこの [詳細] ビューで行われます。 CPU を使用する UI フレームワーク サブシステムまたはシステム コンポーネントによって分類されたアプリケーション別に CPU 使用率が表示されます。
 
@@ -110,7 +110,7 @@ ms.locfileid: "71128287"
 > [!TIP]
 > UI スレッドで実行されるアプリ メソッドを表示するためにプロファイリングを開始する場合は、 **[CPU 使用率]** ツールと共に **[アプリケーション タイムライン]** ツールを選択します。 実行時間の長いアプリ コードをバック グラウンド スレッドに移動すると、UI の応答性が向上します。
 
-#### <a name="BKMK_Customizing_Timeline_details_"></a> タイムラインの詳細のカスタマイズ
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> タイムラインの詳細のカスタマイズ
 
 **[タイムラインの詳細]** ツールバーを使用して、 **[タイムラインの詳細]** ビュー エントリの並べ替え、フィルター操作、注釈の指定を行います。
 

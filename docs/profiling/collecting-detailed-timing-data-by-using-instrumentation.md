@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bfd22edc9bd672a8d82c94a705b523ce7d836169
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779624"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>インストルメンテーションを使用した詳細なタイミング データの収集
@@ -37,7 +37,7 @@ ms.locfileid: "74779624"
 
   次の表の各タスクでは、インストルメンテーション メソッドを使用してプロファイリングを実行する際に、[ _パフォーマンス セッション]_ **[プロパティ ページ]** ダイアログ ボックスで指定できるオプションについて説明しています。
 
-|タスク|関連するコンテンツ|
+|タスク|関連コンテンツ|
 |----------|---------------------|
 |**[全般]** ページで、.NET のメモリ割り当ておよび有効期間データを追加し、生成されるプロファイリング データ (.vsp) ファイルの名前付けの詳細を指定します。|-   [.NET メモリの割り当てと有効期間データの収集](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [方法: パフォーマンス データ ファイル名のオプションを設定する](../profiling/how-to-set-performance-data-file-name-options.md)|
 |ソリューション内に複数の .exe プロジェクトがある場合は、 **[起動]** ページで、開始するアプリケーションおよび開始順序を指定します。|-   [方法: 開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)|

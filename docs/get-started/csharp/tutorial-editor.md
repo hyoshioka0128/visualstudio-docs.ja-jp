@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189076"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75590437"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -116,7 +116,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
                                 select word;
     ```
 
-1. `morewords` 変数は現在使用していませんが、後で使用するかもしれないので、完全に削除したくありません。 そこで、これらの行をコメント アウトしましょう。 終了セミコロンまでの `morewords` の定義全体を選択し、ツールバーの **[選択された行をコメント アウトします。]** ボタンを選択します。 キーボードを使用する場合は、**Ctrl** + **K** キー、**Ctrl** + **C** キーを押します。
+1. `morewords` 変数は現在使用していませんが、後で使用するかもしれないので、完全に削除したくありません。 そこで、これらの行をコメント アウトしましょう。 終了セミコロンまでの `morewords` の定義全体を選択し、ツールバーの **[選択された行をコメント アウトします。]** ボタンを選択します。 キーボードを使用する場合は、**Ctrl**+**K** キー、**Ctrl**+**C** キーを押します。
 
    ![コメント アウト ボタン](../media/tutorial-comment-out.png)
 
@@ -124,7 +124,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
 ## <a name="collapse-code-blocks"></a>コード ブロックを折りたたむ
 
-生成された [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) for `Class1` の空のコンストラクターは表示したくありません。コードのビューを整理するために、ビューを折りたたみましょう。 コンストラクターの最初の行の余白にある、内部にマイナス記号が表示された小さな灰色のボックスを選択します。 または、キーボードを使用している場合は、コンストラクター コード内の任意の場所にカーソルを置き、**Ctrl** + **M** キー、**Ctrl** + **M** キーを押します。
+生成された [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) for `Class1` の空のコンストラクターは表示したくありません。コードのビューを整理するために、ビューを折りたたみましょう。 コンストラクターの最初の行の余白にある、内部にマイナス記号が表示された小さな灰色のボックスを選択します。 または、キーボードを使用している場合は、コンストラクター コード内の任意の場所にカーソルを置き、**Ctrl**+**M** キー、**Ctrl**+**M** キーを押します。
 
 ![アウトライン折りたたみボタン](../media/tutorial-collapse.png)
 
@@ -134,7 +134,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
 Visual Studio エディターでは、型やメソッドなどの定義の検査を容易に行うことができます。1 つの方法として、たとえば、シンボルが参照されている任意の場所で **[定義へ移動]** を選択するか **F12** キーを押して、定義を含むファイルに移動します。 作業中のファイルからフォーカスを移動しないより迅速な方法としては、[[定義をここに表示]](../../ide/go-to-and-peek-definition.md#peek-definition) を使用します。 `string` 型の定義を参照してみましょう。
 
-1. `string` が出現している箇所を右クリックし、コンテンツ メニューから **[定義をここに表示]** を選択します。 または、**Alt** + **F12** キーを押します。
+1. `string` が出現している箇所を右クリックし、コンテンツ メニューから **[定義をここに表示]** を選択します。 または、**Alt**+**F12** キーを押します。
 
    `String` クラスの定義を含むポップアップ ウィンドウが表示されます。 ポップアップ ウィンドウ内をスクロールすることも、参照しているコードから別の種類の定義を参照することもできます。
 

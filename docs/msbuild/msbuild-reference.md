@@ -10,74 +10,64 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f3889cf1d9088f39b4efc4e4d01197ffaaaa77
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912064"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633266"
 ---
 # <a name="msbuild-reference"></a>MSBuild リファレンス
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド システムです。 次のリンクは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] リファレンス情報を示すトピックへのリンクです。
+
+MSBuild は、Visual Studio 用のビルド システムです。 次のリンクは、MSBuild のリファレンス情報を含むトピックへのリンクです。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイル形式を構成する XML 要素について説明します。
+- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)\
+ MSBuild ファイル形式を構成する XML 要素について説明します。
 
-- [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [タスク リファレンス](../msbuild/msbuild-task-reference.md)\
+ MSBuild に含まれるいくつかの一般的なタスクについて説明します。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれる一般的なタスクの一部について説明します。
+- [条件](../msbuild/msbuild-conditions.md)\
+ MSBuild ファイルで使用可能な条件について説明します。
 
-- [条件](../msbuild/msbuild-conditions.md)
-
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ファイルで使用可能な条件について説明します。
-
-- [条件構造](../msbuild/msbuild-conditional-constructs.md)
-
+- [条件構造](../msbuild/msbuild-conditional-constructs.md)\
  `Choose`、`When`、`Otherwise` の各要素の使用方法について説明します。
 
-- [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)\
+ MSBuild の予約済みプロパティについて説明します。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の予約済みプロパティについて説明します。
-
-- [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)
-
+- [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)\
  すべてのプロジェクト タイプに共通するプロジェクト プロパティについて説明します。特定のプロジェクト タイプで頻繁に使用されるプロパティについても説明します。
 
-- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
-
+- [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)\
  すべてのプロジェクト タイプに共通するプロジェクト項目について説明します。特定のプロジェクト タイプで頻繁に使用される項目についても説明します。
 
-- [コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)
+- [コマンドライン リファレンス](../msbuild/msbuild-command-line-reference.md)\
+ MSBuild.exe で使用できる引数とスイッチについて説明します。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe で使用される引数とスイッチについて説明します。
+- [.Targets ファイル](../msbuild/msbuild-dot-targets-files.md)\
+ MSBuild に含まれる *.Targets* ファイルについて説明します。
 
-- [.Targets ファイル](../msbuild/msbuild-dot-targets-files.md)
-
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に含まれる *.Targets* ファイルについて説明します。
-
-- [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)
-
+- [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)\
  すべての項目と共に作成されるメタデータを一覧表示します。
 
-- [応答ファイル](../msbuild/msbuild-response-files.md)
-
+- [応答ファイル](../msbuild/msbuild-response-files.md)\
  コマンド ライン スイッチを含む *.rsp* ファイルについて説明します。
 
-- [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web サイトとニュースグループへのリンクを示します。
+- [その他の技術情報](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
+ MSBuild Web サイトとニュースグループへのリンクを示します。
 
-- [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)\
+ Windows Presentation Foundation (WPF) の MSBuild ターゲットとタスク リファレンスを示します。
 
- Windows Presentation Foundation (WPF) の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ターゲットとタスク リファレンスを示します。
-
-- [エスケープする特殊文字](../msbuild/special-characters-to-escape.md)
-
+- [エスケープする特殊文字](../msbuild/special-characters-to-escape.md)\
  正しく解釈するために "エスケープ" する必要のある文字を一覧表示します。 エスケープ シーケンスは、それに続く部分を別の方法で解釈することを示す一連の文字です。
 
 ## <a name="see-also"></a>関連項目

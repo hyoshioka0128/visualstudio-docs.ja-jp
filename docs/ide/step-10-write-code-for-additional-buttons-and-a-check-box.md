@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2183c0d6ae7d3025bf80711aea6ab246ff166a3
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314185"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579436"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>手順 10: その他のボタンおよびチェック ボックスに対するコードの記述
 

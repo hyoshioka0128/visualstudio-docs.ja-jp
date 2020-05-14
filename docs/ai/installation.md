@@ -2,19 +2,20 @@
 title: AI Tools をインストールする
 description: AI Tools for Visual Studio をインストールする方法を説明します。
 keywords: AI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777467"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638572"
 ---
 # <a name="installation"></a>インストール
 
@@ -24,7 +25,7 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 
 この拡張機能は、Visual Studio 2015 および Visual Studio 2017 の Community Edition 以上で動作します。
 
-このツールは、[Visual Studio Marketplace](https://aka.ms/vstoolsforai) または Visual Studio 内からダウンロードしてインストールします。
+このツールは、[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) または Visual Studio 内からダウンロードしてインストールします。
 
 1. **[ツール]**  >  **[拡張機能と更新プログラム]** を選択します。
 
@@ -137,7 +138,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > 現在、CNTK は macOS をサポートしていません。
 
-CNTK Python パッケージのインストールについては、[CNTK のインストール方法](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)に関するページをご覧ください。
+CNTK Python パッケージのインストールについては、[CNTK のインストール方法](/cognitive-toolkit/Setup-CNTK-on-your-machine)に関するページをご覧ください。
 
 ### <a name="tensorflow"></a>TensorFlow
 

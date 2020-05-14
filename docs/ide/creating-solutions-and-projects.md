@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747964"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306795"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
@@ -88,11 +88,11 @@ ms.locfileid: "72747964"
 
 ### <a name="to-create-an-empty-solution"></a>空のソリューションを作成するには
 
-1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
 
 ::: moniker range="vs-2017"
 
-2. 左側のウィンドウ ( **[テンプレート]** ) で、 **[その他のプロジェクトの種類]** > 展開された一覧の **[Visual Studio ソリューション]** の順に選択します。
+2. 左側の ( **[テンプレート]** ) ウィンドウで、 **[その他のプロジェクトの種類]** > 展開された一覧で **[Visual Studio ソリューション]** を選択します。
 
 3. 中央のペインで、 **[空のソリューション]** を選択します。
 
@@ -116,7 +116,7 @@ ms.locfileid: "72747964"
 
 ::: moniker range="vs-2017"
 
-## <a name="create-a-temporary-project"></a>一時的なプロジェクトを作成する
+## <a name="create-a-temporary-project"></a>一時プロジェクトの作成
 
 (C# および Visual Basic のみ)
 
@@ -141,7 +141,7 @@ ms.locfileid: "72747964"
 
 1. ソリューションが含まれるフォルダーを選択して、**Del** キーを押します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub の Microsoft のオープン ソース リポジトリ](https://github.com/Microsoft)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::InterceptCurrentException |Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffc50f9884d40083d9696869c0e1b34284e4a794
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719481"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-現在の例外をインターセプトする必要がある場合に、現在のスタック フレーム上のデバッガーによって呼び出されます。
+現在の例外をインターセプトする場合に、現在のスタック フレーム上のデバッガーによって呼び出されます。
 
 ## <a name="syntax"></a>構文
 
@@ -43,31 +43,31 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>パラメーター
 `dwFlags`\
-[in]さまざまなアクションを指定します。 現時点では、のみ、 [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)値`IEA_INTERCEPT`はサポートされており、指定する必要があります。
+[in]異なるアクションを指定します。 現在[、INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)値`IEA_INTERCEPT`のみがサポートされており、指定する必要があります。
 
 `pqwCookie`\
-[out]特定の例外を識別する一意の値。
+[アウト]特定の例外を識別する一意の値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
- 最も一般的なエラーを返します。 次に示します。
+ 最も一般的なエラーが返される例を次に示します。
 
-|Error|説明|
+|エラー|説明|
 |-----------|-----------------|
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|現在の例外を受け取ることができません。|
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|実行の現在のフレームはまだまだハンドラーの検索されました。|
-|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|このメソッドはこのフレームのサポートされていません。|
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|現在の例外をインターセプトできません。|
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|現在の実行フレームでハンドラーが検索されていません。|
+|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|このメソッドは、このフレームではサポートされていません。|
 
 ## <a name="remarks"></a>Remarks
- 例外がスローされたときに、デバッガーは例外プロセスを処理中に重要なポイントで実行時からコントロールを取得します。 これらのキーの時間中に、デバッガーは、特定、フレームが例外をインターセプトするか、現在のスタック フレームを依頼できます。 この方法では、傍受した例外は、スタック フレームは、例外ハンドラー (たとえば、プログラム コードでの try/catch ブロックなど) を持っていない場合でもその場で例外ハンドラーのスタック フレームの本質的です。
+ 例外がスローされると、デバッガーは例外処理プロセス中にキー ポイントでの実行時から制御を取得します。 これらの重要な瞬間に、デバッガーは、フレームが例外をインターセプトする場合は、現在のスタック フレームを確認できます。 このように、インターセプトされた例外は、スタック フレームに例外ハンドラー (たとえば、プログラム コードの try/catch ブロック) がない場合でも、基本的にはスタック フレームのオンザフライ例外ハンドラーです。
 
- デバッガーが例外を受け取るかどうかを把握したい場合は、現在のスタック フレーム オブジェクトにこのメソッドを呼び出します。 このメソッドは、例外のすべての詳細を処理するためです。 場合、 [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)インターフェイスが実装されていません、または`InterceptStackException`メソッドには、すべてのエラーが返されますし、デバッガーは、通常、例外の処理を続行します。
+ デバッガーは、例外をインターセプトする必要があるかどうかを知りたい場合、現在のスタック フレーム オブジェクトでこのメソッドを呼び出します。 このメソッドは、例外のすべての詳細を処理します。 [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)インターフェイスが実装されていないか、メソッドが`InterceptStackException`エラーを返す場合、デバッガーは例外を通常どおり処理し続けます。
 
 > [!NOTE]
-> 例外をインターセプトできます、マネージ コードでのみ、デバッグ中のプログラムが .NET ランタイムで実行されている場合。 もちろん、サード パーティの言語実装者を実装できる`InterceptStackException`希望する場合は、独自のデバッグ エンジンでします。
+> 例外はマネージ コード内でのみ受け取ることができます。 もちろん、サードパーティの言語実装者は、選択した`InterceptStackException`場合、独自のデバッグ エンジンで実装できます。
 
- インターセプションが完了した後、 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)がシグナルを受け取る。
+ インターセプトが完了すると[、IDebugインターセプト例外コンプリートイベント2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)が通知されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

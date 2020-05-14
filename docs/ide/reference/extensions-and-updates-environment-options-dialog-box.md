@@ -5,19 +5,19 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2c40e0f3d7cd1f4f86c10aace502796d6d00bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654405"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114234"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>[オプション] ダイアログ ボックス: [環境] \> [拡張機能]
+# <a name="options-dialog-box-environment--extensions"></a>[オプション] ダイアログ ボックス:[環境] \> [拡張機能]
 
 このページを使用して、Visual Studio での更新プログラムの実行方法に関するオプションと、拡張機能の更新および検出方法に関するオプションを設定します。
 

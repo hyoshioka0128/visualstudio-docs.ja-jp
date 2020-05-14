@@ -1,79 +1,79 @@
 ---
-title: Visual Studio SDK でのイベントの公開 |Microsoft Docs
+title: イベントを公開するマイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29fd9df90f58807ab3d48e077dcfa02d75eff837
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352596"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708484"
 ---
-# <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK でイベントを公開します。
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] により、オートメーションを使用してイベントをソースします。 プロジェクトおよびプロジェクト項目のイベントをソースにすることをお勧めします。
+# <a name="expose-events-in-the-visual-studio-sdk"></a>イベントを公開する
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]では、オートメーションを使用してイベントをソースすることができます。 プロジェクトとプロジェクト項目のイベントをソースにすることをお勧めします。
 
- イベントからの automation のコンシューマーによって取得、<xref:EnvDTE.DTEClass.Events%2A>オブジェクトまたは<xref:EnvDTE.DTEClass.GetObject%2A>(たとえば、 `GetObject("EventObjectName")`)。 環境は`IDispatch::Invoke`を使用して、`DISPATCH_METHOD`または`DISPATCH_PROPERTYGET`フラグをイベントを返します。
+ イベントは、<xref:EnvDTE.DTEClass.Events%2A>オートメーション コンシューマによってオブジェクトから取得されます<xref:EnvDTE.DTEClass.GetObject%2A>( など)。 `GetObject("EventObjectName")` 環境は、`IDispatch::Invoke`または`DISPATCH_PROPERTYGET``DISPATCH_METHOD`フラグを使用してイベントを返すことによって呼び出します。
 
- 次のプロセスでは、VSPackage に固有のイベントを返す方法について説明します。
+ 次のプロセスでは、VSPackage 固有のイベントが返される方法について説明します。
 
-1. 環境を起動します。
+1. 環境が開始されます。
 
-2. 下にあるすべての値名のレジストリから読み取り、 **Automation**、 **AutomationEvents**、および**AutomationProperties** Vspackage、すべてのストアの名前のキーをテーブルです。
+2. レジストリからすべての値名を読み取る、**オートメーション**、**オートメーション イベント**、およびオートメーション**プロパティ**のすべての VSPackages キー、およびテーブルに格納します。
 
-3. この例で、automation、コンシューマーを呼び出す`DTE.Events.AutomationProjectsEvents`または`DTE.Events.AutomationProjectItemsEvents`します。
+3. この例では、オートメーション コンシューマ呼び`DTE.Events.AutomationProjectsEvents`出`DTE.Events.AutomationProjectItemsEvents`し、 または .
 
-4. 環境では、テーブルから文字列パラメーターを検索し、対応する VSPackage を読み込みます。
+4. 環境は、テーブル内の文字列パラメーターを検索し、対応する VSPackage を読み込みます。
 
-5. 環境は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>メソッドの呼び出しでは、この例では、渡された名前を使用して`AutomationProjectsEvents`または`AutomationProjectItemsEvents`します。
+5. 環境は、呼<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>び出しで渡された名前を使用してメソッドを呼び出します。この例では、 `AutomationProjectsEvents` `AutomationProjectItemsEvents`または を使用します。
 
-6. VSPackage は、メソッドをなどが含まれるルート オブジェクトを作成します。`get_AutomationProjectsEvents`と`get_AutomationProjectItemEvents`をオブジェクトには IDispatch ポインターを返します。
+6. などのメソッド`get_AutomationProjectsEvents``get_AutomationProjectItemEvents`を持つ、および、オブジェクトへの IDispatch ポインターを返すルート オブジェクトを作成します。
 
-7. 環境では、automation の呼び出しに渡された名前に基づいて、適切なメソッドを呼び出します。
+7. 環境は、オートメーション呼び出しに渡された名前に基づいて適切なメソッドを呼び出します。
 
-8. `get_`メソッドは、両方を実装する別の IDispatch ベースのイベント オブジェクトを作成、`IConnectionPointContainer`インターフェイスと`IConnectionPoint`インターフェイスを返します、`IDispatchpointer`オブジェクトにします。
+8. この`get_`メソッドは、インターフェイスとインターフェイスの両方を実装し、オブジェクトに`IConnectionPointContainer`a`IConnectionPoint`を`IDispatchpointer`返す、別の IDispatch ベースのイベント オブジェクトを作成します。
 
-   応答する必要がありますにオートメーションを使用してイベントを公開する<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>し、レジストリに追加する文字列。 文字列は、基本的なプロジェクト サンプルでは、 *BscProjectsEvents*と*BscProjectItemsEvents*します。
+   オートメーションを使用してイベントを公開するには、レジストリに追加<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>する文字列に応答して監視する必要があります。 基本プロジェクトのサンプルでは、文字列は*Bsc プロジェクト イベント*と*Bsc プロジェクトイベントです*。
 
-## <a name="registry-entries-from-the-basic-project-sample"></a>基本的なプロジェクト サンプルからのレジストリ エントリ
- このセクションでは、オートメーション イベントの値をレジストリに追加する場所を示します。
+## <a name="registry-entries-from-the-basic-project-sample"></a>基本プロジェクトサンプルからのレジストリ エントリ
+ このセクションでは、オートメーション イベント値をレジストリに追加する場所を示します。
 
- **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\ソフトウェア\マイクロソフト\VisualStudio\8.0\パッケージ\\<PkgGUID\>\オートメーションイベント]**
 
- **AutomationProjectEvents** = 返します、`AutomationProjectEvents`オブジェクト。
+ **オブジェクトを**返します`AutomationProjectEvents`。
 
- **AutomationProjectItemEvents** = 返します、`AutomationProjectItemsEvents`オブジェクト。
+ **オブジェクトを**返します`AutomationProjectItemsEvents`。
 
-|名前|型|範囲|説明|
+|名前|種類|範囲|説明|
 |----------|----------|-----------|-----------------|
-|既定 (@)|REG_SZ|未使用|使用されません。 ドキュメントのデータ フィールドを使用することができます。|
-|*AutomationProjectsEvents*|REG_SZ|イベント オブジェクトの名前。|キー名のみが関連します。 ドキュメントのデータ フィールドを使用することができます。<br /><br /> この例は、基本的なプロジェクト サンプルから取得されます。|
-|*AutomationProjectItemEvents*|REG_SZ|イベント オブジェクトの名前|キー名のみが関連します。 ドキュメントのデータ フィールドを使用することができます。<br /><br /> この例は、基本的なプロジェクト サンプルから取得されます。|
+|デフォルト (@)|REG_SZ|未使用|未使用。 データ フィールドを使用してドキュメントを作成できます。|
+|*オートメーションプロジェクトイベント*|REG_SZ|イベント オブジェクトの名前。|キー名のみが関連します。 データ フィールドを使用してドキュメントを作成できます。<br /><br /> この例は、基本プロジェクトサンプルから取得されます。|
+|*イベント*|REG_SZ|イベントオブジェクトの名前|キー名のみが関連します。 データ フィールドを使用してドキュメントを作成できます。<br /><br /> この例は、基本プロジェクトサンプルから取得されます。|
 
- Automation、コンシューマーが要求されると、イベント オブジェクトのいずれか、VSPackage をサポートする任意のイベントのメソッドを持つルート オブジェクトを作成します。 環境を適切な呼び出します`get_`このオブジェクトのメソッド。 たとえば場合、`DTE.Events.AutomationProjectsEvents`が呼び出される、`get_AutomationProjectsEvents`ルート オブジェクトのメソッドが呼び出されます。
+ オートメーション コンシューマーによってイベント オブジェクトが要求された場合は、VSPackage がサポートするイベントのメソッドを持つルート オブジェクトを作成します。 環境は、このオブジェクト`get_`に対して適切なメソッドを呼び出します。 たとえば、呼び`DTE.Events.AutomationProjectsEvents`出された場合、`get_AutomationProjectsEvents`ルート オブジェクトのメソッドが呼び出されます。
 
- ![Visual Studio プロジェクト イベント](../../extensibility/internals/media/projectevents.gif "ProjectEvents")イベントのオートメーション モデル
+ ![プロジェクト イベント](../../extensibility/internals/media/projectevents.gif "ProjectEvents")イベントのオートメーションモデル
 
- クラスは、`CProjectEventsContainer`のソース オブジェクトを表す*BscProjectsEvents*と`CProjectItemsEventsContainer`のソース オブジェクトを表す*BscProjectItemsEvents*します。
+ クラス`CProjectEventsContainer`は *、Bsc プロジェクトイベント*のソース オブジェクトを`CProjectItemsEventsContainer`表し *、Bsc プロジェクトイベント イベント*のソース オブジェクトを表します。
 
- ほとんどの場合は、イベントのほとんどのオブジェクトがフィルター オブジェクトがかかるため、イベント要求ごとに新しいオブジェクトを返す必要があります。 イベントを起動するときは、イベント ハンドラーが呼び出されていることを確認するには、このフィルターを確認します。
+ ほとんどのイベント オブジェクトはフィルタ オブジェクトを受け取るので、ほとんどの場合、イベントリクエストごとに新しいオブジェクトを返す必要があります。 イベントを発生させる場合は、このフィルターをチェックして、イベント ハンドラーが呼び出されていることを確認します。
 
- *AutomationEvents.h*と*AutomationEvents.cpp*宣言と次の表に、クラスの実装を含めることができます。
+ *次*の表に示すクラスの宣言と実装*が含まれています*。
 
 |クラス|説明|
 |-----------|-----------------|
-|`CAutomationEvents`|取得したイベントのルート オブジェクトを実装して、`DTE.Events`オブジェクト。|
-|`CProjectsEventsContainer` および `CProjectItemsEventsContainer`|対応するイベントを発生させるイベント ソースのオブジェクトを実装します。|
+|`CAutomationEvents`|オブジェクトから取得したイベント ルート オブジェクトを`DTE.Events`実装します。|
+|`CProjectsEventsContainer` および `CProjectItemsEventsContainer`|対応するイベントを発生させるイベント ソース オブジェクトを実装します。|
 
- 次のコード例では、イベント オブジェクトの要求に応答する方法を示します。
+ イベント オブジェクトの要求に応答する方法を次のコード例に示します。
 
 ```cpp
 STDMETHODIMP CVsPackage::GetAutomationObject(
@@ -104,9 +104,9 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 }
 ```
 
- 上記のコードで`g_wszAutomationProjects`、プロジェクト コレクションの名前を指定します (*FigProjects*)、 `g_wszAutomationProjectsEvents` (*FigProjectsEvents*) と`g_wszAutomationProjectItemsEvents`(*FigProjectItemEvents*) プロジェクト イベントの名前は、プロジェクト項目のソースは、VSPackage 実装するイベントです。
+ 上記のコードでは、`g_wszAutomationProjects`プロジェクト コレクションの名前 (*FigProjects* `g_wszAutomationProjectsEvents` ) (*FigProjectsEvents*) および`g_wszAutomationProjectItemsEvents`(*FigProjectItemEvents*) は、VSPackage 実装からソースされるプロジェクト イベントとプロジェクト項目イベントの名前です。
 
- イベント オブジェクトが同じの一元化された場所から取得した、`DTE.Events`オブジェクト。 これにより、すべてのイベント オブジェクトはようにグループ化、エンドユーザーは、特定のイベントを検索する全体オブジェクト モデルを参照する必要はありません。 これによりシステム全体のイベントのコードを実装する必要はなく、特定の VSPackage オブジェクトを指定できますも。 ただし、エンドユーザーのユーザー見つける必要がありますのイベント、`ProjectItem`インターフェイス、明確ではありません直後から、そのイベント オブジェクトが取得されます。
+ イベント オブジェクトは、同じ中央の場所であるオブジェクト`DTE.Events`から取得されます。 これにより、すべてのイベント オブジェクトがグループ化されるため、エンド ユーザーはオブジェクト モデル全体を参照して特定のイベントを検索する必要が生じないようにします。 また、システム全体のイベントに対して独自のコードを実装する代わりに、特定の VSPackage オブジェクトを提供することもできます。 ただし、`ProjectItem`インターフェイスのイベントを検索する必要があるエンド ユーザーの場合、そのイベント オブジェクトが取得される場所がすぐには明らかではありません。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

@@ -13,19 +13,20 @@ helpviewer_keywords:
 - ItemDefinitionGroup Element [MSBuild]
 - <ItemDefinitionGroup> Element [MSBuild]
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001195"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633630"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 要素 (MSBuild)
+
 `ItemDefinitionGroup` 要素を使うと、一連の項目定義を定義できます。これは、プロジェクト内のすべての項目に既定で適用されるメタデータ値です。 ItemDefinitionGroup は、[CreateItem タスク](../msbuild/createitem-task.md)および [CreateProperty タスク](../msbuild/createproperty-task.md)を使う必要性より優先されます。 詳細については、「[項目定義](../msbuild/item-definitions.md)」を参照してください。
 
 \<Project> \<ItemDefinitionGroup>
@@ -40,6 +41,7 @@ ms.locfileid: "63001195"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
 以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -58,9 +60,10 @@ ms.locfileid: "63001195"
 
 | 要素 | 説明 |
 | - | - |
-| [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 
 ## <a name="example"></a>例
+
 次のコード例では、ItemDefinitionGroup に 2 つのメタデータ項目 m と n を定義します。 この例では、項目 "i" ではメタデータ "m" が明示的に定義されていないため、既定のメタデータ "m" が項目 "i" に適用されます。 ただし、項目 "i" でメタデータ "n" が既に定義されているため、既定のメタデータ "n" は項目 "i" には適用されません。
 
 ```xml
@@ -82,5 +85,6 @@ ms.locfileid: "63001195"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

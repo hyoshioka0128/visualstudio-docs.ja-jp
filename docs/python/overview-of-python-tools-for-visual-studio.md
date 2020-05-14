@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061162"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79300865"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -81,7 +81,7 @@ Visual Studio で認識されるすべての Python 環境で、別のコマン�
 
 ![Visual Studio の Python 対話型ウィンドウ](media/interactive-window.png)
 
-また、Visual Studio では、Python コード エディターと**対話型**ウィンドウ間の緊密な統合も提供されています。 キーボード ショートカットの **Ctrl** + **Enter** キーを使用すると、簡単にエディターの現在のコード行 (またはコード ブロック) を**対話型**ウィンドウに送信し、次の行 (またはブロック) に移動することができます。 **Ctrl** + **Enter** キーを使用すると、デバッガーを実行することなく簡単にコードをステップ実行できます。 また、選択されているコードを同じキー入力で**対話型**ウィンドウに送信し、**対話型**ウィンドウのコードをエディターに簡単に貼り付けることもできます。 これらの機能を組み合わせることで、**対話型**ウィンドウ内のコードのセグメントについて詳しく調べ、エディターで簡単に結果をファイルに保存することができます。
+また、Visual Studio では、Python コード エディターと**対話型**ウィンドウ間の緊密な統合も提供されています。 キーボード ショートカットの **Ctrl**+**Enter** キーを使用すると、簡単にエディターの現在のコード行 (またはコード ブロック) を**対話型**ウィンドウに送信し、次の行 (またはブロック) に移動することができます。 **Ctrl**+**Enter** キーを使用すると、デバッガーを実行することなく簡単にコードをステップ実行できます。 また、選択されているコードを同じキー入力で**対話型**ウィンドウに送信し、**対話型**ウィンドウのコードをエディターに簡単に貼り付けることもできます。 これらの機能を組み合わせることで、**対話型**ウィンドウ内のコードのセグメントについて詳しく調べ、エディターで簡単に結果をファイルに保存することができます。
 
 Visual Studio は、インライン プロット、.NET、Windows Presentation Foundation (WPF) など、REPL の IPython/Jupyter もサポートしています。
 
@@ -94,7 +94,7 @@ Visual Studio は、インライン プロット、.NET、Windows Presentation F
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 2019 では、Python コードが含まれるフォルダーを開き、Visual Studio のプロジェクトやソリューションのファイルを作成せずに、そのコードを実行することができます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。 ただし、このセクションで説明するように、プロジェクト ファイルを使用する利点があります。
+> Visual Studio 2019 では、Python コードが含まれるフォルダーを開き、Visual Studio のプロジェクトやソリューションのファイルを作成せずに、そのコードを実行することができます。 詳細については、[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。 ただし、このセクションで説明するように、プロジェクト ファイルを使用する利点があります。
 ::: moniker-end
 
 Visual Studio は、時間と共に複雑になるプロジェクトを管理するために役立ちます。 "*Visual Studio プロジェクト*" には、フォルダー構造をはるかに超えた機能があります。さまざまなファイルの使用方法やそれらが相互に関係する方法に関する解釈などです。 Visual Studio を使用すると、アプリケーション コード、テスト コード、Web ページ、JavaScript、ビルド スクリプトなどを区別できます。また、ファイルに適した機能が有効になります。 さらに、Visual Studio ソリューションは、Python プロジェクトや C ++ 拡張プロジェクトなどの複数の関連プロジェクトを管理する場合に役立ちます。
@@ -305,17 +305,17 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 1. Visual Studio 2012 の Git サポートは、[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit) で入手できる Visual Studio Tools for Git 拡張機能で利用可能です。
 
-1. Azure Web サイトに配置するには、[Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855) が必要です。 以降のバージョンは Visual Studio 2010 をサポートしません。
+1. Azure Web サイトに配置するには、[Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids) が必要です。 以降のバージョンは Visual Studio 2010 をサポートしません。
 
-1. Azure Web ロールおよびワーカー ロールのサポートには、[Azure SDK for .NET 2.3 - VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) 以降が必要です。
+1. Azure Web ロールおよびワーカー ロールのサポートには、[Azure SDK for .NET 2.3 - VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) 以降が必要です。
 
-1. Azure Web ロールおよびワーカー ロールのサポートには、[Azure SDK for .NET 2.3 - VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 以降が必要です。
+1. Azure Web ロールおよびワーカー ロールのサポートには、[Azure SDK for .NET 2.3 - VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 以降が必要です。
 
 1. Visual Studio 2013 の Django テンプレート エディターには、Update 2 をインストールすることで解決される既知の問題がいくつかあります。
 
-1. Windows 8 以降が必要です。 Visual Studio 2013 Express for Web には **[プロセスにアタッチ]** ダイアログがありませんが、Azure Web サイトのリモート デバッグは、**サーバー エクスプローラー**の **[デバッガーのアタッチ(Python)]** コマンドを使って実行可能です。 リモート デバッグには、[Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 以降が必要です。
+1. Windows 8 以降が必要です。 Visual Studio 2013 Express for Web には **[プロセスにアタッチ]** ダイアログがありませんが、Azure Web サイトのリモート デバッグは、**サーバー エクスプローラー**の **[デバッガーのアタッチ(Python)]** コマンドを使って実行可能です。 リモート デバッグには、[Azure SDK for .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 以降が必要です。
 
-1. Windows 8 以降が必要です。 **サーバー エクスプローラー**の **[デバッガーのアタッチ(Python)]** コマンドには、[Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 以降が必要です。
+1. Windows 8 以降が必要です。 **サーバー エクスプローラー**の **[デバッガーのアタッチ(Python)]** コマンドには、[Azure SDK for .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 以降が必要です。
 
 1. Windows 8 以降が必要です。
 ::: moniker-end

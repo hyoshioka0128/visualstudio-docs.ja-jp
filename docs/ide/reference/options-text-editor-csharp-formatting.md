@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666306"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307299"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>[オプション] ダイアログ ボックス:[テキスト エディター]、[C#]、[コード スタイル]、[書式設定]
 

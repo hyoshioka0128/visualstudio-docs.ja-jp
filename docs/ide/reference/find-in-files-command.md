@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.FindInFiles command
 - find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25342f86c545752a263d295550222e14c2aa7866
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569583"
 ---
 # <a name="find-in-files-command"></a>FindinFiles コマンド
 **[検索と置換]** ウィンドウの **[フォルダーを指定して検索]** タブにあるオプションのサブセットを使って、ファイルを検索します。
@@ -34,7 +34,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="arguments"></a>引数
 
 `findwhat`\
-必須です。 検索するテキスト。
+必須。 検索するテキスト。
 
 ## <a name="switches"></a>スイッチ
 /case または /c\
@@ -84,10 +84,10 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [フォルダーを指定して検索](../../ide/find-in-files.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

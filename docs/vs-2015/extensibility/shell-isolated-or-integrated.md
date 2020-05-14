@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300484"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850231"
 ---
 # <a name="shell-isolated-or-integrated"></a>シェル (分離または統合)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-独自の Visual Studio ベースのアプリケーションは、統合モードまたは分離モードで作成できます。 統合モードでは、アプリケーションに加えて Visual Studio の多くの機能を使用できます。 分離モードでは、独自の拡張機能と共に配布する Visual Studio の機能のサブセットを選択します。  
+独自の Visual Studio ベースのアプリケーションは、統合モードまたは分離モードで作成できます。 統合モードでは、アプリケーションに加えて Visual Studio の機能の多くを使用できます。 分離モードでは、独自の拡張機能と組み合わせて配布する Visual Studio 機能のサブセットを選びます。  
   
 ## <a name="integrated-mode"></a>統合モード  
  統合モードでは、ユーザーは、カスタムツールと共に、標準の Visual Studio 機能を使用できます。 統合シェルは、主にプログラミング言語とソフトウェア開発ツールをホストするためのものです。  
@@ -54,8 +54,8 @@ ms.locfileid: "74300484"
 > - アプリケーションライセンスの一部として使用許諾契約書  
 > - お客様が、Visual Studio の統合シェルまたは分離シェルを、少なくともシェルソフトウェアの Microsoft エンドユーザーライセンス条項に従って保護するという条件に同意することを必要とする独自の EULA。  
   
-## <a name="additional-resources"></a>その他のリソース  
- 再頒布可能パッケージの詳細については、「 [Visual Studio 拡張機能のダウンロード](https://go.microsoft.com/fwlink/?LinkID=119298)」 Web サイトを参照してください。  
+## <a name="additional-resources"></a>その他の資料  
+ 再頒布可能パッケージの詳細については、「 [Visual Studio 拡張機能のダウンロード](https://msdn.microsoft.com/vstudio/bb984878.aspx)」 Web サイトを参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)

@@ -1,18 +1,18 @@
 ---
 title: トラブルシューティング コード カバレッジ
-ms.date: 11/04/2016
+ms.date: 03/31/2020
 ms.topic: troubleshooting
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659876"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528006"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
@@ -22,7 +22,12 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 
 **[テスト]** メニューの **[コード カバレッジの分析]** コマンドを選択し、ビルドとテストが正常に実行された場合、 **[コード カバレッジ]** ウィンドウに結果の一覧が表示されます。 詳細を表示するために、項目を展開する必要がある場合があります。
 
+::: moniker range=">=vs-2019"
+![色分けされたコード カバレッジの結果](../test/media/vs-2019/codecoverage1.png)
+::: moniker-end
+::: moniker range="vs-2017"
 ![色分けされたコード カバレッジの結果](../test/media/codecoverage1.png)
+::: moniker-end
 
 詳細については、「[コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)」を参照してください。
 

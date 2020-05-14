@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryContext |Microsoft Docs
+title: を参照します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryContext
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4178b14ca128fb7b0e5511f18fd2c9a5fdb3661
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f7f49262c0efe9f856ba01a73382541067335f0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329831"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720595"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
-メモリ参照のコンテキストを取得します。 将来使用するために予約されています。
+参照のメモリ コンテキストを取得します。 将来利用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +41,7 @@ int GetMemoryContext ( 
 
 ## <a name="parameters"></a>パラメーター
 `ppMemory`\
-[out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)参照の値に関連付けられているメモリを表すオブジェクト。
+[アウト]参照の[値](../../../extensibility/debugger/reference/idebugmemorycontext2.md)に関連付けられているメモリを表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

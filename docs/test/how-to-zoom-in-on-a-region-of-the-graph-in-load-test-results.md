@@ -8,17 +8,17 @@ helpviewer_keywords:
 - graphs, analyzing load tests
 - load tests, zooming with graphs
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8e37d7ce5f4f52074904aa353ad6d02d65f5ca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653256"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594365"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>方法:ロード テスト結果でグラフの領域にズーム インする
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>方法: ロード テスト結果でグラフの領域にズーム インする
 
 ロード テストを完了したら、ズーム バーを使用して、グラフの領域にズーム インしてスクロールできます。 ズーム インすると、ロード テストの実行中に生成されたデータをより詳細に確認できます。
 
@@ -55,9 +55,9 @@ ms.locfileid: "72653256"
 
 2. ロード テストの実行の最後で、ロード テストの結果ストアの結果を表示するかどうかを確認するダイアログ ボックスが表示されたら、 **[はい]** をクリックします。
 
-     \- または
+     \- - または -
 
-     前に実行したロード テストの詳細を表示します。 詳細については、[ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)」を参照してください。
+     前に実行したロード テストの詳細を表示します。 詳細については、「[方法 : ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)」を参照してください。
 
 3. グラフが表示されない場合は、 **[グラフ]** を選択します。
 
@@ -113,7 +113,7 @@ ms.locfileid: "72653256"
 
      これにより、グラフがズーム アウトされ、ロード テストの実行の全体が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [グラフ ビューでのロード テスト結果の分析](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

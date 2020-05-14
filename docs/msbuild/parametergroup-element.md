@@ -11,19 +11,20 @@ helpviewer_keywords:
 - <ParameterGroup> element [MSBuild]
 - ParameterGroup element [MSBuild]
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10b2e08b6e3f3c94c0a1f0cc1c24d239675c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263079"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 要素
+
 `UsingTask` `TaskFactory` によって生成されるタスクで使用される省略可能なパラメーターのリストが格納されます。 詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
  \<Project> \<UsingTask> \<ParameterGroup>
@@ -35,9 +36,11 @@ ms.locfileid: "62999777"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
+
  なし。
 
 ### <a name="child-elements"></a>子要素
@@ -50,9 +53,10 @@ ms.locfileid: "62999777"
 
 | 要素 | 説明 |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にタスクを登録する方法を提供します。 1 つのプロジェクトに 0 個以上の `UsingTask` 要素を含めることができます。 |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | MSBuild でタスクを登録する方法を指定します。 1 つのプロジェクトに 0 個以上の `UsingTask` 要素を含めることができます。 |
 
 ## <a name="example"></a>例
+
  `ParameterGroup` 要素を使用する方法を次の例に示します。
 
 ```xml
@@ -62,13 +66,14 @@ ms.locfileid: "62999777"
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
              ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

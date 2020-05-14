@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830825"
 ---
 # <a name="measure-mode-onoff"></a>測定モード オン/オフ
@@ -24,7 +24,7 @@ ms.locfileid: "62830825"
 
  測定プロセスは繰り返せますが、表示されるのは最新のものだけです。 測定ボタンをもう一度クリックし、測定モードをオフにします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [チャネルの管理](../profiling/manage-channels.md)
 - [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

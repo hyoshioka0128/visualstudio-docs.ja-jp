@@ -3,15 +3,16 @@ title: Microsoft Partner Network (MPN) でパートナーに提供される Visu
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491676"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232331"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -47,7 +48,7 @@ MPN でコンピテンシーを取得するか、Action Pack を購入したパ�
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Action Pack を購入するパートナー向けのサブスクリプション
 
-コンピテンシーを持つパートナーは、Action Pack を購入する対象ではありません。 パートナーごとに Action Pack を 1 つだけ購入できます。
+コンピテンシーを持つパートナーは、Action Pack を購入する資格があります。 パートナーごとに Action Pack を 1 つだけ購入できます。
 
 Action Pack では、パートナーは **Visual Studio Professional (MPN) サブスクリプションを 3 つ**取得します。 Visual Studio Professional (MPN) は、市場で販売されているのと同等のものではない、カスタム プランです。 含まれる内容は次のとおりです。
 
@@ -75,6 +76,13 @@ MPN 経由で提供される Visual Studio サブスクリプションでは、�
 - [Visual Studio サブスクリプションを MPN 従業員に割り当てる](manage-mpn-subscriptions.md)
 - [使用条件](https://www.microsoft.com/useterms/) - MPN 経由で提供される Visual Studio サブスクリプションは、Visual Studio サブスクリプションの再販禁止 (NFR) EULA の対象です。
 
-## <a name="next-steps"></a>次の手順
+
+## <a name="see-also"></a>参照
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次のステップ
 
 Microsoft Partner Network で提供されている [Visual Studio サブスクリプションを管理](manage-mpn-subscriptions.md)する方法について確認します。

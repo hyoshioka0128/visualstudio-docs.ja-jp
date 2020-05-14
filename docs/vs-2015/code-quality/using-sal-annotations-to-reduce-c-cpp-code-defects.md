@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 caps.latest.revision: 29
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66da17a31f6287bea810fc29fdb9c12d95cc94b2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291897"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275411"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>SAL 注釈を使って C/C++ のコード障害を減らす方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,8 +59,8 @@ SAL は、Microsoft ソースコード注釈言語です。 ソースコード�
   
      SAL 注釈の使用方法を示す例を示します。 また、一般的な落とし穴についても説明します。  
   
-## <a name="related-resources"></a>関連資料  
- [コード分析チームのブログ](https://go.microsoft.com/fwlink/?LinkId=251197)  
+## <a name="related-resources"></a>関連リソース  
+ [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>関連項目  
- [Windows ドライバーの SAL 2.0 注釈](https://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>参照  
+ [Windows ドライバーの SAL 2.0 注釈](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

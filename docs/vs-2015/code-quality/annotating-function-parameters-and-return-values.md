@@ -123,15 +123,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bd9107bed68b9b5b6f88a239b3b155440b0e654c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295854"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271621"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -492,10 +492,10 @@ ms.locfileid: "74295854"
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
-## <a name="related-resources"></a>関連資料  
- [コード分析チームのブログ](https://go.microsoft.com/fwlink/?LinkId=251197)  
+## <a name="related-resources"></a>関連リソース  
+ [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [SAL](../code-quality/understanding-sal.md)  について  
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   

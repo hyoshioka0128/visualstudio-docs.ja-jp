@@ -1,5 +1,5 @@
 ---
-title: SolutionFolder 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: ソリューション フォルダー要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <SolutionFolder> element [Visual Studio Templates]
 - SolutionFolder element [Visual Studio Templates]
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ef2e0ff20f8c9f7146e3fa71cbce07b169077f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719996"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699995"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 要素 (Visual Studio テンプレート)
 複数プロジェクトのテンプレートをグループ化します。
 
- \<VSTemplate > \<TemplateContent > \<ProjectCollection > \<SolutionFolder >
+ \<VSTemplate \<> テンプレート\<コンテンツプロジェクトコレクション\<>>ソリューション>>
 
 ## <a name="syntax"></a>構文
 
@@ -58,7 +58,7 @@ ms.locfileid: "72719996"
 |`SolutionFolder`|複数プロジェクトのテンプレートをグループ化します。|
 
 ## <a name="remarks"></a>Remarks
- 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `SolutionFolder` 要素は、テンプレート内のプロジェクトをグループに編成するために使用されます。 `SolutionFolder` 要素で指定されたフォルダーは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内のプロジェクトのソリューション フォルダーとして作成されます。 複数プロジェクトのテンプレートの詳細については、「[方法: 複数プロジェクトのテンプレートを作成する](../ide/how-to-create-multi-project-templates.md)」を参照してください。
+ 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `SolutionFolder` 要素は、テンプレート内のプロジェクトをグループに編成するために使用されます。 `SolutionFolder` 要素で指定されたフォルダーは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内のプロジェクトのソリューション フォルダーとして作成されます。 複数プロジェクトのテンプレートの詳細については、「[方法 : 複数プロジェクト テンプレートを作成する](../ide/how-to-create-multi-project-templates.md)」を参照してください。
 
 ## <a name="example"></a>例
  この例では、`SolutionFolder` 要素を使用して、複数のプロジェクトのテンプレートを 2 つのグループ、`Math Classes` と `Graphics Classes` に分割します。 テンプレートには 4 つのプロジェクトが含まれ、その 2 つは各ソリューション フォルダーに配置されます。

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888547"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75850066"
 ---
 # <a name="set-up-remote-workspaces"></a>リモート ワークスペースの設定
 
@@ -143,7 +143,7 @@ R コードを実行するには、次のようにリモート コンピュー�
 
      いずれも機能は同じですが、Microsoft R Open の場合、さらにハードウェア アクセラレータによる [Intel Math Kernel Library](https://software.intel.com/intel-mkl) の線形代数ライブラリの提供を利用できます。
 
-2. [R Services インストーラー](https://aka.ms/rtvs-services)を実行し、プロンプトが表示された場合は再起動します。 インストーラーは次の処理を行います。
+2. [R Services インストーラー](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md)を実行し、プロンプトが表示された場合は再起動します。 インストーラーは次の処理を行います。
 
     - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* でフォルダーを作成し、すべての必要なバイナリをコピーします。
     - `RHostBrokerService` と `RUserProfileService` をインストールし、自動起動するように構成します。

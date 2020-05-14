@@ -1,31 +1,31 @@
 ---
-title: TaskScheduler クラスの内部メンバー |Microsoft Docs
+title: タスク スケジューラ クラス - 内部メンバー |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865e12819a5e7325886c0f7f5d8425a6b3d2e393
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331326"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712563"
 ---
-# <a name="taskscheduler-class---internal-members"></a>TaskScheduler クラスの内部メンバー
-この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、次を参照してください。、<xref:System.Threading.Tasks.TaskScheduler>参照資料です。
+# <a name="taskscheduler-class---internal-members"></a>タスク スケジューラ クラス - 内部メンバー
+この資料では、カスタム デバッガーの実装<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>に役立つクラスの内部メンバーについて説明します。 このクラスの一般的な情報については、<xref:System.Threading.Tasks.TaskScheduler>リファレンス記事を参照してください。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
- .NET Framework からこれらの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ これらの内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -40,11 +40,11 @@ ms.locfileid: "66331326"
 
 |名前|説明|
 |----------|-----------------|
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|すべてのスケジュールされたタスクの配列を取得します。|
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|すべての配列を取得します<xref:System.Threading.Tasks.TaskScheduler>現在アクティブなオブジェクト。|
+|[デバッガのスケジュールされたタスクを取得します。](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|すべてのスケジュールされたタスクの配列を取得します。|
+|[タスク スケジューラを取得します。](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|現在アクティブなすべての<xref:System.Threading.Tasks.TaskScheduler>オブジェクトの配列を取得します。|
 
 ## <a name="remarks"></a>Remarks
 
 ## <a name="see-also"></a>関連項目
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [.NET Framework の並列拡張機能の内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [NET フレームワークの並列拡張内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

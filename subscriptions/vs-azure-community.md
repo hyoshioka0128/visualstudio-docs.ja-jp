@@ -1,17 +1,18 @@
 ---
 title: Visual Studio サブスクリプションの Azure コミュニティ サポート特典 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Azure コミュニティ サポート特典について学習します。
-ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: ab5c6c7a1243843bd522ed33dab6a37c57a8f2fe
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983751"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232096"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Azure コミュニティ サポート特典
 Azure コミュニティを通じて、選ばれたサポート フォーラム内で Azure チームから直接ヘルプを受けます。  Azure コミュニティ特典は、Azure 関連のトピックに重点を置いたフォーラムのコレクションへのアクセスを提供します。
@@ -57,7 +58,7 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   1 年    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)、NFR<sup>1</sup> |        すべて        | 使用できません |     いいえ     |
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -69,6 +70,12 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 - [Azure ドキュメント](/azure/)。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 多くの Visual Studio サブスクリプションに Azure DevTest の個人クレジットが付属していることをご存知ですか?  [アクティブにする](vs-azure.md)方法を学習します。

@@ -1,23 +1,23 @@
 ---
 title: 管理者として実行
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647347"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75718637"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 
@@ -28,11 +28,11 @@ ms.locfileid: "72647347"
 
 Visual Studio IDE のほぼすべての機能は、通常のユーザーとして実行できます。 次のタスクを完了するには、管理者アクセス許可が必要です。
 
-|区分|タスク|詳細情報|
+|領域|タスク|詳細情報|
 |----------|----------| - |
-|インストール|Visual Studio をインストールする。|[Visual Studio のインストール](../install/install-visual-studio.md)|
+|インストール|Visual Studio をインストールまたは変更する。|[Visual Studio のインストール](../install/install-visual-studio.md)、[Visual Studio の変更](../install/modify-visual-studio.md)|
 ||ローカル ヘルプ コンテンツをインストール、更新、または削除する。|[ローカル ヘルプ コンテンツのインストールと管理](../help-viewer/install-manage-local-content.md)|
-|ツールボックス|**ツールボックス**にクラシック COM コントロールを追加する。|[ツールボックス](../ide/reference/toolbox.md)|
+|[ツールボックス]|**ツールボックス**にクラシック COM コントロールを追加する。|[ツールボックス](../ide/reference/toolbox.md)|
 |ビルド|コンポーネントを登録するビルド後のイベントを使用する。|[カスタム ビルド ステップとビルド イベントについて](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||C++ プロジェクトのビルド時に登録手順を含める。||
 |デバッグ|昇格されたアクセス許可で実行されたアプリケーションをデバッグする。|[デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)|
@@ -73,7 +73,7 @@ Visual Studio を管理者として実行する必要がある場合は、次の
 
 アプリケーションのショートカットを変更して、常に管理者アクセス許可で実行することもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Visual Studio のインストール](../install/install-visual-studio.md)

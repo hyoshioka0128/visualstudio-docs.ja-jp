@@ -1,5 +1,5 @@
 ---
-title: '方法: ビルド出力ディレクトリを変更する'
+title: '方法 : ビルド出力ディレクトリを変更する'
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,14 +11,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114255"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>方法: ビルド出力ディレクトリを変更する
+# <a name="how-to-change-the-build-output-directory"></a>方法 : ビルド出力ディレクトリを変更する
 
 (デバッグ、リリース、またはその両方の) 構成ごとにプロジェクトによって生成された出力の場所を指定できます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "71238181"
 >
 > ![Visual Studio 2019 のビルド構成ピッカー](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [[全般] プロパティ ページ (プロジェクト)](/cpp/build/reference/general-property-page-project)

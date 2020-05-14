@@ -1,5 +1,5 @@
 ---
-title: NATIVE_ADDRESS |Microsoft Docs
+title: NATIVE_ADDRESS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 02a44369a68c669273207ba2f32902a0d406c61d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c62bbea846f3d486ead8add4dfab2182df1e1bb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338999"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714339"
 ---
-# <a name="nativeaddress"></a>NATIVE_ADDRESS
+# <a name="native_address"></a>NATIVE_ADDRESS
 
-この構造体は、ネイティブのアドレスを表します。
+この構造体は、ネイティブ アドレスを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,19 +43,19 @@ public struct NATIVE_ADDRESS {
 ## <a name="members"></a>メンバー
 
 `unknown`\
-ネイティブのアドレスでは、(この意味は、ランタイムとオペレーティング システムによって異なります)。
+ネイティブ アドレス (この意味は、ランタイムとオペレーティング システムによって異なります)。
 
 ## <a name="remarks"></a>Remarks
 
-この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_NATIVE`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。
+構造体`dwKind`のフィールドが[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体の値) に`ADDRESS_KIND_NATIVE`設定されている`DEBUG_ADDRESS_UNION`場合、この構造体は[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の共用体の一部です。
 
 ## <a name="requirements"></a>必要条件
 
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 

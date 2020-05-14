@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632447"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79082276"
 ---
 Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビルドを行ってから、アプリを発行するために使用できるクリエイティブなランチパッドです。 統合開発環境 (IDE) は、ソフトウェア開発の多くの側面で使用できる機能を豊富に備えたプログラムです。 大部分の IDE が備える標準的なエディターおよびデバッガーに加えて、Visual Studio ではコンパイラ、コード補完ツール、グラフィック デザイナーなど、ソフトウェア開発プロセスを容易にする多くの機能を用意しています。
 
@@ -47,7 +47,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビ
 
 Visual Studio は Windows と Mac で利用できます。 [Visual Studio for Mac](/visualstudio/mac/) は Visual Studio 2017 と同じ機能を多く備え、クロスプラットフォーム アプリとモバイル アプリの開発用に最適化されています。 この記事では、Windows バージョンの Visual Studio 2017 について説明します。
 
-Community、Professional、Enterprise という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
+Visual Studio には 3 つのエディションがあります:という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio エディションの比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Community、Professional、Enterprise という 3 つのエディションの Vi
 
 Visual Studio は Windows と Mac で利用できます。 [Visual Studio for Mac](/visualstudio/mac/) は Visual Studio 2019 と同じ機能を多く備え、クロスプラットフォーム アプリとモバイル アプリの開発用に最適化されています。 この記事では、Windows バージョンの Visual Studio 2019 について説明します。
 
-Visual Studio 2019 には 3 つのエディションがあります:という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio IDE の比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
+Visual Studio 2019 には 3 つのエディションがあります:という 3 つのエディションの Visual Studio 2017 があります。 各エディションでサポートされている機能については、[Visual Studio エディションの比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Visual Studio 2019 には 3 つのエディションがあります:という 3 
    Visual Studio には非常に多くのメニュー、オプション、およびプロパティがあるため、手に負えないもののように思える場合があるかもしれません。 検索ボックスは、Visual Studio 内で必要な情報を迅速に見つけるのに役立ちます。 探しているものを表す名前の入力を開始すると、Visual Studio に結果がリストされ、目的の場所に正確に移動できます。 Visual Studio に機能を追加する必要がある場合 (追加のプログラミング言語に対してサポートを追加するなど)、検索ボックスの結果として、ワークロードまたは個々のコンポーネントをインストールするための Visual Studio インストーラーが開かれます。
 
    > [!TIP]
-   > 検索ボックスのショートカットとしては、**Ctrl** + **Q** キーを押します。
+   > 検索ボックスのショートカットとしては、**Ctrl**+**Q** キーを押します。
 
    ::: moniker range="vs-2017"
 
@@ -168,7 +168,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 1. Visual Studio を開きます。
 
-1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
 
    ![メニュー バーで [ファイル]、[新しいプロジェクト] の順に選択します。](../media/file-new-project-menu.png)
 
@@ -193,7 +193,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl** + **F5 キー**を押します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー**を押します。
 
    ![[デバッグ]、[デバッグなしで開始] メニューを選択](../media/overview-start-without-debugging.png)
 
@@ -262,7 +262,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl** + **F5 キー**を押します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー**を押します。
 
    ![[デバッグ]、[デバッグなしで開始] メニューを選択](../media/overview-start-without-debugging.png)
 
@@ -365,7 +365,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 ::: moniker range="vs-2017"
 
-10. **Ctrl** + **F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/overview-console-final.png)
 
@@ -373,7 +373,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 ::: moniker range=">=vs-2019"
 
-10. **Ctrl** + **F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/vs-2019/overview-console-final.png)
 

@@ -4,17 +4,17 @@ ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cd808e23fbb94259df0805125e7d6f3e27dbaeac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664895"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589592"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>方法: IntelliTest で単体テストを生成する
 

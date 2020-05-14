@@ -1,5 +1,5 @@
 ---
-title: ソース管理プラグインの作成 |Microsoft Docs
+title: ソース管理プラグインの作成 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,38 +7,38 @@ helpviewer_keywords:
 - source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8489e991a54df5b905289a64fccb0df65c3cec8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341924"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709181"
 ---
-# <a name="create-a-source-control-plug-in"></a>ソース管理プラグインを作成します。
-Visual Studio SDK をソース コントロールの機能を追加するためのリソースを提供する、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です。 このドキュメントに記載されているソース管理プラグイン API を使用した準拠している任意のプラグイン DLL を使用できます。
+# <a name="create-a-source-control-plug-in"></a>ソース管理プラグインを作成する
+Visual Studio SDK には、統合開発環境 (IDE) に[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース管理機能を追加するためのリソースが用意されています。 このドキュメントで説明するソース管理プラグイン API に準拠するプラグイン DLL を使用できます。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [開始するには](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+- [はじめに](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
- ソース管理プラグインをインストールする方法について説明し、現在使用可能なソース管理プラグイン API バージョンが強調表示されます。
+ ソース管理プラグインをインストールする方法について説明し、現在利用可能なソース管理プラグイン API バージョンを強調表示します。
 
-- [アーキテクチャ](../../extensibility/internals/source-control-plug-in-architecture.md)
+- [Architecture](../../extensibility/internals/source-control-plug-in-architecture.md)
 
- プラグインをソース管理の統合を説明するアーキテクチャの図を使用して、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。
+ アーキテクチャ図を使用して、ソース管理プラグインと IDE との統合について[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]説明します。
 
-- [テスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+- [テストガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
 
- インストールと、ソース管理プラグインの操作をテストする方法について説明します。
+ ソース管理プラグインのインストールと操作をテストする方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
-- [ソース管理 VSPackage を作成します。](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [ソース管理の作成 VS パッケージ](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- ソース管理だけでなく、ソース管理機能を提供が、置換する VSPackage を作成する方法について説明します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース UI コントロールです。
+ ソース管理の機能を提供するだけでなく、ソース管理 UI を置き換えるソース[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理の VSPackage を作成する方法について説明します。
 
 - [ソース管理プラグイン](../../extensibility/source-control-plug-ins.md)
 
@@ -46,4 +46,4 @@ Visual Studio SDK をソース コントロールの機能を追加するため�
 
 - [ソース管理](../../extensibility/internals/source-control.md)
 
- 統合機能としてソース管理を実装するためのオプションについて説明します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+ の統合機能としてソース管理を実装するためのオプションについて説明[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。

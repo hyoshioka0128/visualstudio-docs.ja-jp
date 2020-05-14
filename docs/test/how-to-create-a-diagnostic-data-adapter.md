@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653694"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880157"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>方法: 診断データ アダプターを作成する
 
@@ -23,7 +23,7 @@ ms.locfileid: "72653694"
 
 テストを実行するマシン、またはテスト対象のアプリケーションを実行するために使用している環境の一部を構成するマシンに影響を与える診断データ アダプターを作成できます。 たとえば、テストを実行するテスト マシンでのファイルの収集や、アプリケーションに対して Web サーバー ロールで実行されているマシンでのファイルの収集などが挙げられます。
 
-診断データ アダプターには表示名を設定できます。表示名は、Microsoft Test Manager または Visual Studio を使用してテスト設定を作成するときに表示されます。 テストの設定を使用すると、テストの実行時に、使用している環境下で、どのマシン ロールが特定の診断データ アダプターを実行するかを定義できます。 診断データ アダプターは、テストの設定を作成するときに構成することもできます。 たとえば、Web サーバーからカスタム ログを収集する診断データ アダプターを作成できます。 テストの設定を作成するとき、この Web サーバーの役割を実行しているマシン上でこの診断データ アダプターを実行するように選択できます。また、作成された最新の 3 つのログだけを収集するようにテストの設定の構成を変更できます。 テスト設定の詳細については、「[テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)」を参照してください。
+診断データ アダプターにはフレンドリ名を設定できます。フレンドリ名は、Visual Studio を使用して、または Microsoft Test Manager (Visual Studio 2017 では非推奨) を使用してテスト設定を作成するときに表示されます。 テストの設定を使用すると、テストの実行時に、使用している環境下で、どのマシン ロールが特定の診断データ アダプターを実行するかを定義できます。 診断データ アダプターは、テストの設定を作成するときに構成することもできます。 たとえば、Web サーバーからカスタム ログを収集する診断データ アダプターを作成できます。 テストの設定を作成するとき、この Web サーバーの役割を実行しているマシン上でこの診断データ アダプターを実行するように選択できます。また、作成された最新の 3 つのログだけを収集するようにテストの設定の構成を変更できます。 テスト設定の詳細については、「[テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)」を参照してください。
 
 イベントは、テストでイベントが発生した時点で診断データ アダプターがタスクを実行できるように、テストの実行時に発生します。
 
@@ -255,7 +255,7 @@ ms.locfileid: "72653694"
 
 14. テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)に関するページを参照してください。
 
-15. 診断データ アダプターを選択するには、まず既存のテスト設定を選択するか、Microsoft Test Manager または Visual Studio から新しく作成する必要があります。 アダプターは、テストの設定の **[データと診断]** タブに、クラスに割り当てた表示名と共に表示されます。
+15. 診断データ アダプターを選択するには、まず既存のテスト設定を選択するか、Visual Studio から、または Microsoft Test Manager (Visual Studio 2017 では非推奨) から新しく作成する必要があります。 アダプターは、テストの設定の **[データと診断]** タブに、クラスに割り当てた表示名と共に表示されます。
 
 16. これらの設定を有効に設定します。 テスト設定の詳細については、「[テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)」を参照してください。
 

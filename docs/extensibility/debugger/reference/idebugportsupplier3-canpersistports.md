@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts |Microsoft Docs
+title: ポートサプライヤー3をデバッグする |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724461"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-このメソッドは、ポート サプライヤーが、(ディスクに書き込む) ことによってポートをデバッガーの呼び出しの間で永続化できるかどうかを判断します。
+このメソッドは、ポートの供給元が(ディスクに書き込んで) ポートをデバッガーの呼び出しの間に永続化できるかどうかを決定します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,13 +36,13 @@ int CanPersistPorts();
 ```
 
 ## <a name="parameters"></a>パラメーター
- なし。
+ [なし] :
 
 ## <a name="return-value"></a>戻り値
- `S_OK` ポートは、永続化する場合または`S_FALSE`をポートを保存できないことを示します。
+ `S_OK`ポートが永続化できる場合、または`S_FALSE`ポートを永続化できないことを示す場合。
 
 ## <a name="remarks"></a>Remarks
- ポート サプライヤーがポートを永続化できる場合が破棄されるようにする必要があり、もう一度インスタンス化されるときに再読み込みします。
+ ポートサプライヤーがポートを保持できる場合は、ポートが破棄されたときにポートを保持し、再びインスタンス化されたときに再ロードする必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

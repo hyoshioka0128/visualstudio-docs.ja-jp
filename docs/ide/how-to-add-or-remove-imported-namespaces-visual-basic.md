@@ -9,21 +9,21 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6ad1a07440b27b679fa3f749c24a6d3157dbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654654"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593331"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>方法: インポートした名前空間を追加または削除する (Visual Basic)
 
-名前空間をインポートすると、その名前空間の要素を、完全に修飾することなくコードで使うことができます。 たとえば、`System.Messaging.MessageQueue` クラスの `Create` メソッドにアクセスする場合、`System.Messaging` 名前空間をインポートすると、`MessageQueue.Create` とするだけで必要な要素をコードで参照できます。
+名前空間をインポートすると、その名前空間の要素を、完全に修飾することなくコードで使うことができます。 たとえば、`Create` クラスの `System.Messaging.MessageQueue` メソッドにアクセスする場合、`System.Messaging` 名前空間をインポートすると、`MessageQueue.Create` とするだけで必要な要素をコードで参照できます。
 
 インポートした名前空間は、**プロジェクト デザイナー**の **[参照]** ページで管理します。 このダイアログ ボックスで指定したインポートは、コンパイラに直接渡されて ( */imports*)、プロジェクト内のすべてのファイルに適用されます。 1 つのソース コード ファイルで名前空間を使うには、`Imports` ステートメントを使います。
 
@@ -76,6 +76,6 @@ ms.locfileid: "72654654"
 
 5. **[ユーザー インポートの更新]** ボタンをクリックすると、 **[インポートされた名前空間]** の一覧の名前空間が更新されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)

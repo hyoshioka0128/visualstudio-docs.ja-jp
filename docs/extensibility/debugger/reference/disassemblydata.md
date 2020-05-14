@@ -1,5 +1,5 @@
 ---
-title: DisassemblyData |Microsoft Docs
+title: 逆アセンブリデータ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318238"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737284"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
-表示する統合開発環境 (IDE) の 1 つの逆アセンブリ命令をについて説明します。
+統合開発環境 (IDE) で表示する 1 つの逆アセンブリ命令について説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -65,56 +65,56 @@ public struct DisassemblyData { 
 
 ## <a name="members"></a>メンバー
 `dwFields`\
-[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)フィールドが記入を指定する定数。
+入力するフィールドを指定する[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)定数。
 
 `bstrAddress`\
-いくつかの開始ポイント (通常は、関連付けられている関数の先頭) からのオフセットとしてのアドレス。
+開始点 (通常は関連付けられた関数の先頭) からのオフセットとしてのアドレス。
 
 `bstrCodeBytes`\
-この命令コードのバイト数。
+この命令のコードバイト。
 
 `bstrOpcode`\
-この命令のオペコードです。
+この命令のオペコード。
 
 `bstrOperands`\
 この命令のオペランド。
 
 `bstrSymbol`\
-シンボル名では、存在する場合に関連付けられているアドレス (パブリック シンボル、ラベル、およびなど)。
+アドレス (パブリック シンボル、ラベルなど) に関連付けられているシンボル名 (存在する場合)。
 
 `uCodeLocationId`\
-この逆アセンブルした行のコードの場所の識別子。 1 行のコード コンテキストのアドレスが別のコード コンテキストのアドレスよりも大きい場合は、最初の逆アセンブルしたコードの場所の識別子が、2 つ目のコードの場所 id より大きくするもは。
+この逆アセンブルされた行のコードの場所の識別子。 ある行のコード コンテキスト アドレスが別のコード コンテキスト アドレスよりも大きい場合、最初のコードの逆アセンブルされた場所識別子も、2 番目のコードの場所識別子よりも大きくなります。
 
 `posBeg`\
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)ドキュメントの逆アセンブリ データの開始位置に対応します。
+逆アセンブリ データが開始されるドキュメント内の位置に対応する[TEXT_POSITION。](../../../extensibility/debugger/reference/text-position.md)
 
 `posEnd`\
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)逆アセンブリ データの終了位置となるドキュメント内の位置に対応します。
+分解データが終了するドキュメント内の位置に対応する[TEXT_POSITION。](../../../extensibility/debugger/reference/text-position.md)
 
 `bstrDocumentUrl`\
-ファイル名として表すことができるテキスト ドキュメントの`bstrDocumentUrl`フィールドは、ソースの場所、ファイル名を使用して、形式を使用して`file://file name`します。
+ファイル名として表すことができるテキスト ドキュメントの`bstrDocumentUrl`場合、フィールドには、 形式`file://file name`を使用してソースが見つかるファイル名がフィールドに入力されます。
 
-ファイル名を表すことができないテキスト ドキュメントの`bstrDocumentUrl`、ドキュメントの一意の識別子であり、デバッグ エンジンを実装する必要があります、 [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)メソッド。
+ファイル名として表現できないテキスト ドキュメントの場合は`bstrDocumentUrl`、ドキュメントの一意の識別子であり、デバッグ エンジンは[、GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)メソッドを実装する必要があります。
 
-このフィールドは、チェックサムに関する追加情報を含めることもできます。 詳細については、「解説」を参照してください。
+このフィールドには、チェックサムに関する追加情報を含めることもできます。 詳細については、「解説」を参照してください。
 
 `dwByteOffset`\
-コードの行の先頭からバイトの命令の数。
+命令がコード行の先頭からのバイト数です。
 
 `dwFlags`\
-[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)有効などのフラグを指定する定数。
+アクティブなフラグを指定する[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)定数。
 
 ## <a name="remarks"></a>Remarks
-各`DisassemblyData`構造体には、逆アセンブリの 1 つの命令がについて説明します。 これらの構造体の配列が返される、[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)メソッド。
+各`DisassemblyData`構造体は、分解の 1 つの命令を記述します。 これらの構造体の配列は[、Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)メソッドから返されます。
 
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)テキスト ベースのドキュメントの構造を使用します。 たとえば、ステートメントまたは行から生成された最初の命令に対してのみ、この命令のソース コードの範囲が記入、`dwByteOffset == 0`します。
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造は、テキストベースの文書にのみ使用されます。 この命令のソース コード範囲は、ステートメントまたは行から生成された最初の命令に対してのみ入力`dwByteOffset == 0`されます 。
 
-ドキュメントは、テキスト以外には、ドキュメントのコンテキストを取得して、コードから、`bstrDocumentUrl`フィールドが null の値を指定する必要があります。 場合、`bstrDocumentUrl`フィールドが同じ、`bstrDocumentUrl`フィールドの前に`DisassemblyData`配列の要素、し、設定、 `bstrDocumentUrl` null 値にします。
+非テキストドキュメントの場合、ドキュメント コンテキストはコードから取得でき、`bstrDocumentUrl`フィールドは null 値にする必要があります。 フィールドが`bstrDocumentUrl`前`bstrDocumentUrl``DisassemblyData`の配列要素のフィールドと同じである場合は、 を`bstrDocumentUrl`null 値に設定します。
 
-場合、`dwFlags`フィールドが、`DF_DOCUMENT_CHECKSUM`フラグが設定、追加のチェックサム情報が指す文字列に依存し、`bstrDocumentUrl`フィールド。 具体的には、null 文字列終端文字の後に依存、チェックサムのバイト数を示す 4 バイトの値を後にさらに、順番が後に、チェックサムのバイトによってチェックサム アルゴリズムを識別する GUID があります。 エンコードおよびでは、このフィールドをデコードする方法の例では、このトピックを参照してください[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]します。
+フィールドに`dwFlags`フラグが設定`DF_DOCUMENT_CHECKSUM`されている場合は、フィールドが指す文字列の後に追加のチェックサム`bstrDocumentUrl`情報が続きます。 具体的には、null 文字列ターミネータの後に、チェックサム アルゴリズムを識別する GUID の後に、チェックサムのバイト数を示す 4 バイト値が続き、その後にチェックサム バイトが続きます。 このフィールドをエンコードおよびデコードする方法については、このトピックの例[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]を参照してください。
 
 ## <a name="example"></a>例
-`bstrDocumentUrl`場合は、フィールドに、文字列以外の追加情報が含まれることができます、`DF_DOCUMENT_CHECKSUM`フラグを設定します。 作成して、このエンコードされた文字列の読み取りのプロセスは簡単です[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]します。 ただし、 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]、別の問題です。 次の例では、ユーザーにとっては、調べたいからエンコードされた文字列を作成する方法の 1 つを示しています[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]でエンコードされた文字列をデコードする方法の 1 つと[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]します。
+フラグ`bstrDocumentUrl`が設定されている場合、フィールドには文字列以外の追加情報`DF_DOCUMENT_CHECKSUM`を含めることができます。 このエンコードされた文字列を作成して読み取るプロセスは[!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]、 で簡単です。 しかし、[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]では、それは別の問題です。 興味のある人のために、次の例は、 から[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]エンコードされた文字列を作成する方法と、 で[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]エンコードされた文字列をデコードする 1 つの方法を示しています。
 
 ```csharp
 using System;

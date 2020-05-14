@@ -2,20 +2,20 @@
 title: コード スタイルのオプションとコードのクリーンアップ
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d653898e6c6a8ab856a5b7763d12fd793708b9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631107"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306831"
 ---
 # <a name="code-style-preferences"></a>コードのスタイル設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "72631107"
 
 ::: moniker range=">=vs-2019"
 
-EditorConfig ファイルは手動で入力できます。または、Visual Studio の **[オプション]** ダイアログ ボックスで設定したコード スタイルの設定に基づいて、ファイルを自動的に生成できます。 このオプション ページは、 **[ツール]** 、 **[オプション]** 、 **[テキスト エディター]** 、 **[C#]** または **[Basic]** 、 **[コード スタイル]** 、 **[全般]** の順に選択すると表示されます。 **[Generate .editorconfig file from settings]\(設定から .editorconfig ファイルを生成する\)** をクリックすると、この **[オプション]** ページの設定に基づいてコーディング スタイルの *.editorconfig* ファイルが自動的に生成されます。
+EditorConfig ファイルは手動で入力できます。または、Visual Studio の **[オプション]** ダイアログ ボックスで設定したコード スタイルの設定に基づいて、ファイルを自動的に生成できます。 このオプション ページは、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]** 、 **[C#]** または **[Basic]** 、 **[コード スタイル]**  >  **[全般]** の順に選択すると表示されます。 **[Generate .editorconfig file from settings]\(設定から .editorconfig ファイルを生成する\)** をクリックすると、この **[オプション]** ページの設定に基づいてコーディング スタイルの *.editorconfig* ファイルが自動的に生成されます。
 
 ![Visual Studio 2019 で設定から editorconfig ファイルを生成する](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -64,7 +64,7 @@ EditorConfig ファイルは手動で入力できます。または、Visual Stu
 
 ::: moniker range="vs-2017"
 
-正規の書式設定 (字下げなど) に沿って (EditorConfig ファイルまたは **[コード スタイル]** オプションから) コード スタイル設定を適用するように**ドキュメントのフォーマット** コマンドを構成できます ( **[編集]** 、 **[詳細]** 、 **[ドキュメントのフォーマット]** )。 プロジェクトに *.editorconfig* ファイルが存在する場合、その設定が優先されます。
+正規の書式設定 (字下げなど) に沿って (EditorConfig ファイルまたは **[コード スタイル]** オプションから) コード スタイル設定を適用するように**ドキュメントのフォーマット** コマンドを構成できます ( **[編集]**  >  **[詳細]**  >  **[ドキュメントのフォーマット]** )。 プロジェクトに *.editorconfig* ファイルが存在する場合、その設定が優先されます。
 
 > [!NOTE]
 > **ドキュメントのフォーマット** コマンドでコード スタイルを適用することは、C# コード ファイルの場合にのみ可能です。 これは試験段階の機能です。
@@ -93,7 +93,7 @@ C# コード ファイルの場合、Visual Studio 2019 では、エディター
 
 ![Visual Studio 2019 のコード クリーンアップの構成](media/configure-code-cleanup.png)
 
-コードのクリーンアップを構成した後、ほうきアイコンをクリックするか、または **Ctrl** + **K** キー、**Ctrl** + **E** キーを順に押して、コードのクリーンアップを実行します。 プロジェクト全体またはソリューション全体に対して、コードのクリーンアップを実行することもできます。 **ソリューション エクスプローラー**でプロジェクトまたはソリューションの名前を右クリックし、 **[分析とコードのクリーンアップ]** を選択して、 **[コードのクリーンアップの実行]** を選択します。
+コードのクリーンアップを構成した後、ほうきアイコンをクリックするか、または **Ctrl**+**K** キー、**Ctrl**+**E** キーを順に押して、コードのクリーンアップを実行します。 プロジェクト全体またはソリューション全体に対して、コードのクリーンアップを実行することもできます。 **ソリューション エクスプローラー**でプロジェクトまたはソリューションの名前を右クリックし、 **[分析とコードのクリーンアップ]** を選択して、 **[コードのクリーンアップの実行]** を選択します。
 
 ![プロジェクト全体またはソリューション全体に対してコードのクリーンアップを実行する](media/run-code-cleanup-project-solution.png)
 

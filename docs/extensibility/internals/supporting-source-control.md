@@ -1,58 +1,58 @@
 ---
-title: ソース管理のサポート |Microsoft Docs
+title: ソース管理のサポート |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b4f12790de00cc835f7268830bf6d9a4734b839
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331236"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704731"
 ---
 # <a name="supporting-source-control"></a>ソース管理のサポート
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ファイルのチェック アウト、チェックイン、およびプロジェクトまたはエディターの他のソース管理操作をサポートしています。 ソース管理クライアントでは、として[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]はソース管理パッケージでは、対話するように設計[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]、アーカイブ、バージョン管理、および、動的に定義された一連のファイルの制御機能を提供します。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]では、プロジェクトまたはエディターのファイルチェックアウト、チェックイン、およびその他のソース管理操作がサポートされています。 ソース管理クライアントは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]動的に定義されたファイルのセットのアーカイブ、バージョン管理、[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]および制御機能を提供する などのソース管理パッケージと対話するように設計されています。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [ソース管理パッケージのモデル](../../extensibility/internals/model-for-source-control-packages.md)
 
- プロジェクトの種類を実装する必要がありますインターフェイスをについて説明します。 ソース管理をサポートするためにします。
+ ソース管理をサポートするためにプロジェクトの種類が実装する必要があるインターフェイスについて説明します。
 
-- [設計上の決定事項](../../extensibility/internals/source-control-design-decisions.md)
+- [設計の決定](../../extensibility/internals/source-control-design-decisions.md)
 
- 質問の回答を変更するプロジェクトの種類を実装する方法を提供します。
+ プロジェクトの種類の実装方法を変更する回答を示す質問を示します。
 
 - [構成の詳細](../../extensibility/internals/source-control-configuration-details.md)
 
- プロジェクトの種類の実装がどのように変化ソース管理のサポートについて説明します。
+ ソース管理のサポートによってプロジェクトの種類の実装がどのように変わるかについて説明します。
 
 - [プロジェクトとエディターに関する追加のガイドライン](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)
 
- プロジェクトの種類とエディターのベスト プラクティスをについて説明します。
+ プロジェクトの種類とエディターのベスト プラクティスについて説明します。
 
 - [ランタイムの詳細](../../extensibility/internals/source-control-runtime-details.md)
 
- ユーザーがソース管理システムに追加するときに、プロジェクトを登録する方法について説明します。
+ ユーザーがプロジェクトをソース管理システムに追加するときに、プロジェクトを登録する方法について説明します。
 
-## <a name="reference"></a>参照
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 環境またはソース管理パッケージ ファイルがメモリ内で変更または保存にすることを示します。
+## <a name="reference"></a>リファレンス
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>ファイルがメモリ内で変更または保存されることを環境またはソース管理パッケージに示します。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> プロジェクトとソース管理に登録して、ソース管理の状態に関する情報を取得する階層を使用できます。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>プロジェクトと階層がソース管理に登録し、ソース管理の状態に関する情報を取得できるようにします。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> プロジェクト ファイルとプロジェクト項目のソース管理を提供するプロジェクト システムで実装されます。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>プロジェクト ファイルおよびプロジェクト項目のソース管理を提供するプロジェクト システムに実装されます。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 環境を追加、削除、またはファイルまたはソリューション内のディレクトリの名前を変更するアクセス許可を照会するプロジェクトで使用します。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>ソリューション内のファイルまたはディレクトリを追加、削除、または名前変更するためのアクセス許可を環境に問い合わせるためにプロジェクトによって使用されます。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> プロジェクト ファイルまたはディレクトリに加えられた変更のクライアントに通知します。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>プロジェクト ファイルまたはディレクトリに加えられた変更をクライアントに通知します。
 
 ## <a name="related-sections"></a>関連項目
-- [プロジェクト タイプ](../../extensibility/internals/project-types.md)
+- [プロジェクトの種類](../../extensibility/internals/project-types.md)
 
- 基本ビルディング ブロックとしてプロジェクトの概要、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です。 プロジェクトがビルドとコードのコンパイルを制御する方法を説明する追加のトピックへのリンクが提供されます。
+ 統合開発環境 (IDE) の基本的な構成要素としての[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトの概要を説明します。 プロジェクトがコードのビルドとコンパイルを制御する方法を説明する追加のトピックへのリンクが提供されています。

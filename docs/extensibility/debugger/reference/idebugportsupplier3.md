@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3 |Microsoft Docs
+title: IDebugポートサプライヤー3 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b471e0799409e68b5a843e39975f54f2ce3b5bc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724444"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-このインターフェイスは、ポート サプライヤーが (ディスクに書き込む) ことによって、デバッガーの呼び出しの間でポートを保持して、それらの保存されたポートの一覧を取得するかどうかを確認する呼び出し元を使用します。
+このインターフェイスを使用すると、呼び出し元は、ポートサプライヤーがデバッガの呼び出しの間にポートを(ディスクに書き込んで)保持できるかどうかを判断し、それらの保存ポートのリストを取得できます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,31 +28,31 @@ ms.locfileid: "66314162"
 IDebugPortSupplier3 : IDebugPortSupplier2
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- カスタム ポート サプライヤーは、永続化やディスクへのポート情報の保存をサポートするには、このインターフェイスを実装します。 同じオブジェクトでこのインターフェイスを実装する必要があります、 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ カスタム ポート サプライヤーは、このインターフェイスを実装して、ポート情報のディスクへの保存または保存をサポートします。 このインターフェイスは[、IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)インターフェイスと同じオブジェクトに実装する必要があります。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、`IDebugPortSupplier2`をこのインターフェイスを取得するインターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ この[QueryInterface](/cpp/atl/queryinterface)インターフェイスを取得するには`IDebugPortSupplier2`、インターフェイスでクエリ インターフェイスを呼び出します。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
- 継承されたメソッドだけでなく、 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)インターフェイスでは、このインターフェイスは、次をサポートします。
+## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+ このインターフェイスは[、IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)インターフェイスから継承されたメソッドに加えて、次の機能をサポートします。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|ポート サプライヤーが、(ディスクに書き込む) ことによってポートをデバッガーの呼び出しの間で永続化できるかどうかを返します。|
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|このポートのサプライヤーによってディスクに書き込まれたすべてのポートを列挙するために使用できるオブジェクトを返します。|
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|ポートサプライヤーが、デバッガーの呼び出しの間にポートを (ディスクに書き込んで) 永続化できるかどうかを返します。|
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|このポート サプライヤーによってディスクに書き込まれたすべてのポートを列挙するために使用できるオブジェクトを返します。|
 
 ## <a name="remarks"></a>Remarks
- ポート サプライヤーは、呼び出し間でポートを保持することができます、このインターフェイスを実装にする必要があります。 ポート サプライヤーのインスタンス化し、ポート サプライヤーが破棄されるときにディスクに書き込まれるときに、ポートを読み込む必要があります。
+ ポートサプライヤーが呼び出し間でポートを保持できる場合は、このインターフェイスを実装する必要があります。 ポート サプライヤーがインスタンス化されるときにポートを読み込み、ポート サプライヤーが破棄されたときにディスクに書き込む必要があります。
 
- 通常、デバッグ エンジンは、ポート サプライヤーと対話しないし、このインターフェイスの使用はありません。
+ 通常、デバッグ エンジンはポート サプライヤーと対話せず、このインターフェイスには使用しません。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

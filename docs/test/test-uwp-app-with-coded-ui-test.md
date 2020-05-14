@@ -2,20 +2,20 @@
 title: コード化された UI テストを使用して UWP アプリをテストする
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659964"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590359"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>UWP アプリをテストするためのコード化された UI テストの作成
 
@@ -57,7 +57,7 @@ ms.locfileid: "72659964"
    Me.textBox.Text = Me.button.Name
    ```
 
-1. **Ctrl** + **F5** キーを押してアプリを実行します。 次のように表示されます。
+1. **Ctrl**+**F5** キーを押してアプリを実行します。 次のように表示されます。
 
    ![ボタンとテキスト ボックスがある UWP アプリ](media/uwp-app.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "72659964"
 
    ![[コード化された UI テストのコードの生成] ダイアログ](../test/media/manually-edit-the-test.png)
 
-1. UWP アプリがまだ実行されていない場合は、**Ctrl** + **F5** キーを押して起動します。
+1. UWP アプリがまだ実行されていない場合は、**Ctrl**+**F5** キーを押して起動します。
 
 1. `CodedUITestMethod1` メソッドにカーソルを置き、 **[テスト]**  >  **[コード化された UI テストのコードの生成]**  >  **[コード化された UI テスト ビルダー]** の順に選択して、 **[コード化された UI テスト ビルダー]** ダイアログを開きます。
 
@@ -90,7 +90,7 @@ ms.locfileid: "72659964"
 
 1. 前の手順を繰り返して、テキスト ボックス コントロールを UI コントロール マップに追加します。
 
-1. **[コード化された UI テスト ビルダー]** ダイアログで、 **[コードの生成]** を選択するか、**Ctrl** + **G** キーを押します。 次に、 **[生成]** を選択し、UI コントロール マップの変更に対応するコードを作成します。
+1. **[コード化された UI テスト ビルダー]** ダイアログで、 **[コードの生成]** を選択するか、**Ctrl**+**G** キーを押します。 次に、 **[生成]** を選択し、UI コントロール マップの変更に対応するコードを作成します。
 
      ![UI マップのコードを生成](../test/media/generate-code-dialog.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "72659964"
 
      ![ボタン コントロールをクリックして TextBox 値を設定する](../test/media/uwp-app-button-textbox.png)
 
-1. テキスト ボックス コントロールのテキストを検証するアサーションを追加します。 十字線ツールを使用してテキスト ボックス コントロールを選択し、 **[アサーションの追加]** ダイアログで **[Text]** プロパティを選択します。 次に、 **[アサーションの追加]** を選択するか、**Alt** + **A** キーを押します。 **[アサーション エラーのメッセージ]** ボックスに、「**テキスト ボックス値は予期されていません。** 」などと入力し、 **[OK]** を選択します。
+1. テキスト ボックス コントロールのテキストを検証するアサーションを追加します。 十字線ツールを使用してテキスト ボックス コントロールを選択し、 **[アサーションの追加]** ダイアログで **[Text]** プロパティを選択します。 次に、 **[アサーションの追加]** を選択するか、**Alt**+**A** キーを押します。 **[アサーション エラーのメッセージ]** ボックスに、「**テキスト ボックス値は予期されていません。** 」などと入力し、 **[OK]** を選択します。
 
      ![十字線ツールでテキスト ボックスを選択し、アサーションを追加する](../test/media/add-assertion-for-text.png)
 

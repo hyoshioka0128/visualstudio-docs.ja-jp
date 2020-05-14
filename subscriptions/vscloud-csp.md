@@ -1,17 +1,18 @@
 ---
 title: CSP 向けの Visual Studio クラウド サブスクリプションの購入
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: クラウド ソリューション プロバイダーが顧客のために Visual Studio クラウド サブスクリプションを購入および管理する方法について説明します。
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787746"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273869"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>顧客用に Visual Studio クラウド サブスクリプションを購入して管理する
 [クラウド ソリューション プロバイダー (CSP)](https://partner.microsoft.com/cloud-solution-provider) プログラムのパートナーは、顧客のために Visual Studio Enterprise クラウド サブスクリプションと Visual Studio Professional クラウド サブスクリプションを購入できます。
@@ -68,7 +69,7 @@ CSP パートナー向けの Visual Studio の価格を見るには、[パート
 
 このスプレッドシートの見方を次に示します。
 
-| メーター カテゴリ    |   name                 |  [単位]                                |           内容                          |
+| メーター カテゴリ    |   名前                 |  [単位]                                |           内容                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | エンタープライズ             |  サブスクリプション                         | Visual Studio Enterprise - 月間プラン サブスクリプション   |
 | Visual Studio     | 2 次元形式           |  サブスクリプション                         | Visual Studio Professional - 月間プラン サブスクリプション |
@@ -103,5 +104,13 @@ A: サブスクリプションの*各タイプ内*で 6 番目以降のすべて
 A: いいえ、Visual Studio サブスクリプションの価格は一定です。 新規サブスクリプションも継続サブスクリプションも同じ価格です。
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Q:CSP には Azure 開発/テスト価格オプションがありますか。
-A: 現時点ではありません。 顧客には [Azure 開発/テスト価格](https://aka.ms/azuredevtestpricing)の特典がありますが、CSP に対しては特に何もありません。
+A: 現時点ではありません。 顧客には [Azure 開発/テスト価格](https://azure.microsoft.com/pricing/dev-test/)の特典がありますが、CSP に対しては特に何もありません。
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次の手順
+請求に関する一般的な質問の回答については、[クラウドの請求に関してよくあるご質問](vscloud-billing-faq.md)に関するページを参照してください。  

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188990"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588838"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>方法: プロジェクトにクラス ダイアグラムを追加する
 
@@ -51,7 +51,7 @@ ms.locfileid: "73188990"
    > [!NOTE]
    > **クラス ダイアグラム** テンプレートが表示されない場合は、[この手順に従って](#install-the-class-designer-component)、Visual Studio 用の**クラス デザイナー** コンポーネントをインストールします。
 
-   クラス デザイナーでクラス ダイアグラムが開き、**ソリューション エクスプローラー**に *.cd* 拡張子付きのファイルとして表示されます。 **[ツールボックス]** からダイアグラムに図形と線をドラッグできます。
+   クラス デザイナーでクラス ダイアグラムが開き、*ソリューション エクスプローラー*に **.cd** 拡張子付きのファイルとして表示されます。 **[ツールボックス]** からダイアグラムに図形と線をドラッグできます。
 
 複数のクラス ダイアグラムを追加するには、この手順を繰り返します。
 
@@ -75,7 +75,7 @@ ms.locfileid: "73188990"
 > [!NOTE]
 > クラス デザイナーは .NET Core プロジェクトで使用できません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: クラス デザイナーを使用して型を作成する](how-to-create-types.md)
 - [方法: 既存の型を表示する](how-to-view-existing-types.md)

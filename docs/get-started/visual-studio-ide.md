@@ -5,26 +5,26 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
-author: jillre
+author: TerryGLee
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21449c338024aa19d07c8bf7435c5e88c92c3988
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632441"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589358"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE へようこそ
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 以下の入力記事のいずれかに従って、Visual Studio をさらに詳しく調べます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72632441"
 
 - [Visual Studio を使用して初めての C++ コンソール アプリを作成する](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のその他の機能](../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします

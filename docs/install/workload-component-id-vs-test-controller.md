@@ -3,10 +3,10 @@ title: Visual Studio Test Controller のワークロードとコンポーネン�
 titleSuffix: ''
 description: Visual Studio のワークロードとコンポーネントを使用して、複数のマシンに自動テストを配布します
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e401cffd1dd9e94684742f51103873d3c570ba9c
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+open_to_public_contributors: false
+ms.openlocfilehash: a0b0961aae1942a503f6470d7ca727a6d52019b1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276358"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller のコンポーネント ディレクトリ
 
@@ -44,7 +45,7 @@ ms.locfileid: "74797347"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

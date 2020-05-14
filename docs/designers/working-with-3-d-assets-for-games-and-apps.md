@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589800"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>ゲームとアプリ用の 3D アセットを操作する
 
@@ -54,7 +54,7 @@ Visual Studio では、DirectX を使用して 2D アセットおよび 3D ア�
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[テクスチャおよびイメージの使用](../designers/working-with-textures-and-images.md)|Visual Studio を使用してイメージとテクスチャを操作する方法について説明します。|
 |[3D モデルの操作](../designers/working-with-3-d-models.md)|Visual Studio を使用して 3D モデルを操作する方法について説明します。|

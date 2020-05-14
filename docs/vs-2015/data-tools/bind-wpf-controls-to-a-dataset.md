@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299418"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852152"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ ms.locfileid: "74299418"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>[前提条件]
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://go.microsoft.com/fwlink/?linkid=87843)からダウンロードできます。
+- AdventureWorksLT サンプル データベースが添付された、SQL Server または SQL Server Express の実行中のインスタンスへのアクセス権。 AdventureWorksLT データベースは、 [CodePlex Web サイト](https://codeplex.com/SqlServerSamples)からダウンロードできます。
 
   次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
@@ -55,7 +55,7 @@ ms.locfileid: "74299418"
 
 - WPF デザイナーの操作。 詳細については、「 [WPF と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)」を参照してください。
 
-- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
+- WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」をご覧ください。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
  新しい WPF プロジェクトを作成します。 このプロジェクトでは、製品レコードを表示します。
@@ -70,7 +70,7 @@ ms.locfileid: "74299418"
 
 4. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。
 
-5. **[名前]** ボックスに「`AdventureWorksProductsEditor`」と入力し、[ **OK]** をクリックします。
+5. **[名前]** ボックスに「`AdventureWorksProductsEditor`」と入力し、 **[OK]** をクリックします。
 
      Visual Studio によって `AdventureWorksProductsEditor` プロジェクトが作成されます。
 
@@ -105,7 +105,7 @@ ms.locfileid: "74299418"
 
      Visual Studio によって新しい Adventureworksltdataset.xsd ファイルがプロジェクトに追加され、対応する**adventureworksltdataset.xsd**項目が **[データソース]** ウィンドウに追加されます。 AdventureWorksLTDataSet.xsd ファイルには、`AdventureWorksLTDataSet` という名前の型指定されたデータセットと、`ProductTableAdapter` という名前の TableAdapter が定義されます。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
 
-9. プロジェクトをビルドします。
+9. プロジェクトをビルドする。
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>TableAdapter の既定の fill メソッドを編集する
  データセットにデータを読み込むには、`Fill` の `ProductTableAdapter` メソッドを使用します。 既定では、`Fill` メソッドによって、`ProductDataTable` の `AdventureWorksLTDataSet` に Product テーブルのすべてのデータ行が読み込まれます。 このメソッドは、行のサブセットのみを返すように変更できます。 このチュートリアルでは、写真付きの製品の行のみを返すように `Fill` メソッドを変更します。
@@ -149,7 +149,7 @@ ms.locfileid: "74299418"
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. プロジェクトをビルドします。
+3. プロジェクトをビルドする。
 
 ## <a name="createdata-bound-controls"></a>Createdata バインドコントロール
  **[データソース]** ウィンドウから WPF デザイナーに `Product` テーブルをドラッグして、顧客レコードを表示するコントロールを作成します。
@@ -192,7 +192,7 @@ ms.locfileid: "74299418"
 
 1. デザイナーで、ウィンドウ サーフェイスの **[<]** をダブルクリックします。
 
-     Visual Studio によって分離コード ファイルが開かれ、<xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベントのために新しい `backButton_Click` イベント ハンドラーが作成されます。
+     Visual Studio によって分離コード ファイルが開かれ、`backButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。
 
 2. `Window_Loaded` イベント ハンドラーを変更して、`ProductViewSource`、`AdventureWorksLTDataSet`、`AdventureWorksLTDataSetProductTableAdapter` がメソッドの外部になり、フォーム全体からアクセスできるようにします。 これらのをフォームに対してグローバルに宣言し、次のような `Window_Loaded` イベントハンドラー内でそれらを割り当てます。
 
@@ -228,7 +228,7 @@ ms.locfileid: "74299418"
     > [!NOTE]
     > この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 詳細については、「 [TableAdapterManager の概要](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)」を参照してください。
 
-## <a name="test-the-application"></a>アプリケーションをテストする
+## <a name="test-the-application"></a>アプリのテスト
  アプリケーションをビルドして実行します。 製品レコードを表示および更新できることを確認します。
 
 #### <a name="to-test-the-application"></a>アプリケーションをテストするには
@@ -249,12 +249,12 @@ ms.locfileid: "74299418"
 
 5. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了した後、関連する次のタスクを実行できます。
 
 - Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、「 [WCF データサービスへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」を参照してください。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル:WPF アプリケーションでの関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  Visual studio[でのデータへの wpf コントロール](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)のバインド visual studio でのデータ[への wpf コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [Wpf と Silverlight デザイナーの概要](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)[データバインディング](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)の概要

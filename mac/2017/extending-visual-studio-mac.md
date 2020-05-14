@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dc4538d04a9c683bf1d8e5443b8eb18c206e4721
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984971"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75851959"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -100,7 +100,7 @@ CommandItem は、id 属性に指定されているコマンドをメニュー�
 
 ### <a name="command-handlers"></a>コマンド ハンドラー
 
-`InsertDateHandler` は `CommandHandler` クラスの拡張機能です。 `Update` と `Run` という 2 つのメソッドはオーバーライドされます。 コマンドがメニューに表示される場合、またはキー バインドで実行される場合は常に、`Update` メソッドが照会されます。 info オブジェクトを変更することで、コマンドを無効にしたり、非表示にしたり、配列コマンドを設定したりすることができます。 テキスト情報を挿入する *TextEditor* でアクティブな*ドキュメント*が見つからない場合、`Update` メソッドを使用すると、コマンドが無効になります。
+`InsertDateHandler` は `CommandHandler` クラスの拡張機能です。 `Update` と `Run` という 2 つのメソッドはオーバーライドされます。 コマンドがメニューに表示される場合、またはキー バインドで実行される場合は常に、`Update` メソッドが照会されます。 info オブジェクトを変更することで、コマンドを無効にしたり、非表示にしたり、配列コマンドを設定したりすることができます。 テキスト情報を挿入する `Update`TextEditor *でアクティブな*ドキュメント*が見つからない場合、* メソッドを使用すると、コマンドが無効になります。
 
 ```csharp
 protected override void Update (CommandInfo info)
@@ -162,8 +162,8 @@ public enum DateInserterCommands
 ## <a name="additional-information"></a>追加情報
 
 > [!NOTE]
-> 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://aka.ms/vsmac-extensions-survey)」フォームに記入してお知らせください。
+> 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)」フォームに記入してお知らせください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio 拡張機能の開発 (Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

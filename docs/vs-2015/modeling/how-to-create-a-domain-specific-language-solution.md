@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301410"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918820"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ドメイン固有言語 (DSL) は、特殊な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを使用して作成されます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  この手順を開始する前に、次のコンポーネントをインストールする必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[SDK のダウンロードのモデリング](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "74301410"
 
    4. **[ドメイン固有言語デザイナー]** をクリックします。
 
-   5. **[名前]** ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックすると、
+   5. **[名前]** ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックします。
 
        **ドメイン固有言語デザイナーウィザード**が表示されます。
 
@@ -127,7 +127,7 @@ ms.locfileid: "74301410"
 
  **既存の厳密な名前のキーを使用する**DSL を別のアセンブリと統合する場合は、このオプションを使用します。
 
- 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](https://go.microsoft.com/fwlink/?LinkId=186073)」を参照してください。
+ 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](/dotnet/standard/assembly/create-use-strong-named)」を参照してください。
 
-## <a name="see-also"></a>関連項目
- [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)[ドメイン固有言語ツール用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>参照
+ [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)[ドメイン固有言語ツール用語集](/previous-versions/bb126564(v=vs.100))

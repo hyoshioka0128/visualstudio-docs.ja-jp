@@ -1,5 +1,5 @@
 ---
-title: SccGetCommandOptions 関数 |Microsoft Docs
+title: 関数を選択する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e8bbae6ee16eb81fdb29f526a1f41e905fa504
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351884"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700834"
 ---
-# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 関数
-この関数は、指定されたコマンドの詳細設定オプションのユーザーに求めます。
+# <a name="sccgetcommandoptions-function"></a>関数
+この関数は、特定のコマンドの詳細オプションをユーザーに求めます。
 
 ## <a name="syntax"></a>構文
 
@@ -34,50 +34,50 @@ SCCRTN SccGetCommandOptions(
 ```
 
 ### <a name="parameters"></a>パラメーター
- pvContext
+ を行う
 
-[in]ソース管理プラグイン コンテキスト構造体。
+[in]ソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- iCommand
+ Icommand
 
-[in]高度なオプションを要求する対象のコマンド (を参照してください[コマンド コード](../extensibility/command-code-enumerator.md)使用可能な値)。
+[in]拡張オプションが要求されるコマンド (可能な値については[、コマンド・コード](../extensibility/command-code-enumerator.md)を参照してください)。
 
- ppvOptions
+ オプション
 
-[in]オプションの構造 (することもできます`NULL`)。
+[in]オプション構造 (も可能`NULL`)
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|成功。|
-|SCC_I_ADV_SUPPORT|ソース管理プラグインでは、コマンドの高度なオプションをサポートしています。|
-|SCC_I_OPERATIONCANCELED|ユーザーは、ソース管理プラグインのキャンセル**オプション** ダイアログ ボックス。|
-|SCC_E_OPTNOTSUPPORTED|ソース管理プラグインは、この操作をサポートしません。|
-|SCC_E_ISCHECKEDOUT|現在チェック アウトされているファイルでこの操作を実行することはできません。|
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。 再試行をお勧めします。|
-|SCC_E_NONSPECIFICERROR|不特定のエラーです。|
+|SCC_OK|正常終了しました。|
+|SCC_I_ADV_SUPPORT|ソース管理プラグインは、コマンドの詳細オプションをサポートします。|
+|SCC_I_OPERATIONCANCELED|ユーザーは、ソース管理プラグインの **[オプション]** ダイアログ ボックスをキャンセルしました。|
+|SCC_E_OPTNOTSUPPORTED|ソース管理プラグインは、この操作をサポートしていません。|
+|SCC_E_ISCHECKEDOUT|現在チェックアウトされているファイルに対してこの操作を実行できません。|
+|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。 再試行することをお勧めします。|
+|SCC_E_NONSPECIFICERROR|非特異的なエラー。|
 
 ## <a name="remarks"></a>Remarks
- IDE では、この関数を呼び出すと初めて`ppvOptions` = `NULL`をソース管理プラグインが、指定したコマンドのオプションの高度な機能をサポートしているかを判断します。 場合は、プラグインはそのコマンドのサポートの機能、IDE この関数を呼び出すもう一度、ユーザーは、高度なオプションを要求したときに (通常として実装、 **詳細設定**  ダイアログ ボックスのボタン) とのNULL以外のポインターを提供`ppvOptions`を指す、`NULL`ポインター。 プラグインはプライベート構造内のユーザーによって指定された高度なオプションを格納してには、その構造体へのポインターを返します`ppvOptions`します。 この構造体は後続の呼び出しを含む、について知っておく必要があるその他のすべてのソース管理プラグイン API 関数に渡されます、`SccGetCommandOptions`関数。
+ IDE は、ソース管理プラグインが指定された`ppvOptions`=`NULL`コマンドの詳細オプション機能をサポートしているかどうかを判断するために、この関数を初めて呼び出します。 プラグインがそのコマンドの機能をサポートしている場合、IDE は、ユーザーが詳細オプション (通常はダイアログ ボックスの **[詳細]** ボタンとして実装) を要求したときに、この関数を再度呼び`ppvOptions`出し、ポインター`NULL`を指す NULL 以外のポインターを提供します。 プラグインは、ユーザーが指定した詳細オプションをプライベート構造体に格納し、 内の`ppvOptions`その構造体へのポインターを返します。 この構造体は、その関数の後続の呼び出しを含め、その関数について知る必要がある他のすべてのソース`SccGetCommandOptions`管理プラグイン API 関数に渡されます。
 
- 例は、このような状況をわかりやすく可能性があります。
+ 例を挙すると、この状況を明確にする場合があります。
 
- ユーザーが選択、**取得**コマンドと、IDE が表示されます、**取得** ダイアログ ボックス。 IDE の呼び出し、`SccGetCommandOptions`関数と`iCommand`に設定`SCC_COMMAND_GET`と`ppvOptions`設定`NULL`します。 これは、質問としてプラグインのソース コントロールによって解釈されますが、"このコマンドの任意の高度なオプションでしょうか。" プラグインを返す場合`SCC_I_ADV_SUPPORT`、IDE が表示されます、 **詳細設定**ボタンその**取得** ダイアログ ボックス。
+ ユーザーが **[取得**] コマンドを選択すると、IDE に [**取得**] ダイアログ ボックスが表示されます。 IDE は、`SccGetCommandOptions`関数を`iCommand`に`SCC_COMMAND_GET`設定`ppvOptions`し、`NULL`に設定して関数を呼び出します。 これは、ソース管理プラグインによって、「このコマンドの詳細オプションはありますか」という質問として解釈されます。 プラグインが戻る`SCC_I_ADV_SUPPORT`場合、IDE は **[取得**]ダイアログ ボックスに **[詳細設定**] ボタンを表示します。
 
- 初めてクリックすると、ユーザー、**詳細**ボタン、IDE をもう一度呼び出します、`SccGetCommandOptions`関数は、この時点ではない`NULL``ppvOptions`を指す、`NULL`ポインター。 プラグインの表示、独自**オプションを取得** ダイアログ ボックスについては、ユーザー要求情報、独自の構造に保存されます。 とでその構造体へのポインターを返します`ppvOptions`します。
+ ユーザーが [**詳細設定**] ボタンをクリックすると、今度はポインターを`SccGetCommandOptions`指す非-を`NULL``ppvOptions`使用して、関数が`NULL`再度呼び出されます。 プラグインは、独自の **[Get Options]** ダイアログ ボックスを表示し、ユーザーに情報を求め、その情報を独自の`ppvOptions`構造に入れ、その構造体へのポインタを 返します。
 
- ユーザーがクリックした場合 **[詳細設定]** もう一度、同じダイアログ ボックスで、IDE 呼び出し、`SccGetCommandOptions`関数を変更せずにもう一度`ppvOptions`構造がプラグインに渡されるように、します。 これにより、ユーザーが以前に設定する値に、ダイアログ ボックスを再初期化するには、プラグインできます。 プラグインを返す前に、構造を変更します。
+ ユーザーが同じダイアログ ボックスで **[詳細設定**] を再度クリックすると`SccGetCommandOptions`、IDE は`ppvOptions`、変更せずに関数を再度呼び出し、構造体がプラグインに戻されます。 これにより、プラグインは、ユーザーが以前に設定した値に対してダイアログ ボックスを再初期化できます。 プラグインは、返す前にインプレースの構造を変更します。
 
- 最後に、ユーザーがクリックすると**OK** ide の**取得**ダイアログ ボックスで、IDE の呼び出し、 [SccGet](../extensibility/sccget-function.md)で返される構造体を渡すこと`ppvOptions`を格納している、高度なオプションです。
+ 最後に、IDE の **[取得**] ダイアログ ボックスでユーザーが **[OK] を**クリックすると、IDE は`ppvOptions`[SccGet](../extensibility/sccget-function.md)を呼び出し、詳細オプションを含むで返される構造体を渡します。
 
 > [!NOTE]
-> コマンドは、 `SCC_COMMAND_OPTIONS` IDE が表示されるときに使用する**オプション** ダイアログ ボックスをユーザー設定を行う場合、統合のしくみを制御します。 表示できる場合は、ソース管理プラグインは、独自の環境設定 ダイアログ ボックスを指定する必要がある、 **詳細設定** IDE の基本設定 ダイアログ ボックスでボタンをクリックします。 プラグインが責任を負うものを取得して、この情報を永続化IDE は、それを使用してまたは変更はありません。
+> このコマンド`SCC_COMMAND_OPTIONS`は、IDE が **[オプション]** ダイアログ ボックスを表示するときに使用され、統合の動作を制御する環境設定をユーザーが設定できるようにします。 ソース管理プラグインが独自の環境設定ダイアログボックスを提供する場合は、IDE の環境設定ダイアログボックスの **[詳細設定**]ボタンから表示できます。 プラグインは、この情報を取得し、永続化する責任を負います。IDE は、IDE で使用したり、変更したりしません。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

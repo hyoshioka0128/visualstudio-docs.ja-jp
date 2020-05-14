@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], enumerations
 ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a514d5eb4b7f79e2fd193c79de670b6dd9c14cb5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747987"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114192"
 ---
 # <a name="c-enumerations-in-class-designer"></a>クラス デザイナーの C++ 列挙体
 
-**クラス デザイナー**では、C++ の `enum`、およびスコープを持つ `enum class` 型はサポートされていません。 例を次に示します。
+**クラス デザイナー**では、C++ の `enum`、およびスコープを持つ `enum class` 型はサポートされていません。 たとえば次のようになります。
 
 ```cpp
 enum CardSuit {
@@ -42,7 +42,7 @@ enum class CardSuit {
 
 `enum` 型の使用法の詳細については、「[列挙型](/cpp/cpp/enumerations-cpp)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
-- [列挙型](/cpp/cpp/enumerations-cpp)
+- [列挙体](/cpp/cpp/enumerations-cpp)

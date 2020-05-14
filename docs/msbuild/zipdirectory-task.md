@@ -17,25 +17,27 @@ helpviewer_keywords:
 - MSBuild, ZipDirectory task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2188ef3026e36d5c97cf35cd29362411c473973e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777477"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094578"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory タスク
+
 ディレクトリのコンテンツから *.zip* アーカイブを作成します。
 
 >[!NOTE]
 >`ZipDirectory` タスクは MSBuild 15.8 以降でのみ使用できます。
 
 ## <a name="parameters"></a>パラメーター
+
  `ZipDirectory` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -44,11 +46,13 @@ ms.locfileid: "62777477"
 |`Overwrite`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、対象ファイルが存在する場合はスキップすると上書きされます。 既定値は `false` です。|
 |`SourceDirectory`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> *.zip* アーカイブの作成元のディレクトリを指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
- 次の例では、プロジェクトのビルド後、出力ディレクトリから *.zip* アーカイブを作成します。
+
+ 次の例 (インポートされた *.targets* ファイルとして使用される場合) では、プロジェクトのビルド後、出力ディレクトリから *.zip* アーカイブを作成します。 `$(OutputPath)` プロパティは通常、MSBuild プロジェクト ファイルで定義されます。そのため、次のファイルをインポートするプロジェクト ファイルでは zip アーカイブ `output.zip` が生成されます。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -63,5 +67,6 @@ ms.locfileid: "62777477"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

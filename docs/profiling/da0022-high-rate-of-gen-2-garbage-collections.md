@@ -1,5 +1,5 @@
 ---
-title: DA0022:ジェネレーション 2 のガベージ コレクションが高率です | Microsoft Docs
+title: 'DA0022: ジェネレーション 2 のガベージ コレクションが高率です。 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,20 +14,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e1fa46162f2aea74c5b3cb8396ad5e8d4c9a4cf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779377"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022:ジェネレーション 2 のガベージ コレクションが高率です
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: ジェネレーション 2 のガベージ コレクションが高率です
 
 |||
 |-|-|
 |規則 ID|DA0022|
 |カテゴリ|.NET Framework の使用|
-|プロファイル方法|すべて|
-|メッセージ|比較的高い率のジェネレーション 2 ガベージ コレクションが発生しています。 設計によりプログラムのほとんどのデータ構造が長時間割り当てられて保持される場合は、通常これは問題ではありません。 一方、意図した動作でない場合は、アプリケーションがオブジェクトを固定している可能性があります。 不明な場合は、.NET のメモリ割り当てデータとオブジェクト ライフタイム情報を収集することで、アプリケーションが使用しているメモリ割り当てのパターンを知ることができます。|
+|プロファイル方法|All|
+|[メッセージ]|比較的高い率のジェネレーション 2 ガベージ コレクションが発生しています。 設計によりプログラムのほとんどのデータ構造が長時間割り当てられて保持される場合は、通常これは問題ではありません。 一方、意図した動作でない場合は、アプリケーションがオブジェクトを固定している可能性があります。 不明な場合は、.NET のメモリ割り当てデータとオブジェクト ライフタイム情報を収集することで、アプリケーションが使用しているメモリ割り当てのパターンを知ることができます。|
 |規則の種類|警告|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。
@@ -51,4 +51,4 @@ ms.locfileid: "74779377"
 
  アプリケーションのマネージド メモリの使用パターンを調べるには、.NET メモリの割り当てのプロファイルを使用して再度アプリケーションのプロファイリングを行い、オブジェクトの有効期間プロファイリング オプションを選択します。
 
- ガベージ コレクションのパフォーマンスの向上の方法の詳細については、Microsoft Web サイトの「[ガベージ コレクターの基本とパフォーマンスのヒント](/previous-versions/dotnet/articles/ms973837(v=msdn.10))」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](https://msdn.microsoft.com/magazine/cc534993.aspx)」 (大きなオブジェクト ヒープの秘密) を参照してください。
+ ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの「[ガベージ コレクタの基本とパフォーマンスのヒント](/previous-versions/dotnet/articles/ms973837(v=msdn.10))」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](https://msdn.microsoft.com/magazine/cc534993.aspx)」 (大きなオブジェクト ヒープの秘密) を参照してください。

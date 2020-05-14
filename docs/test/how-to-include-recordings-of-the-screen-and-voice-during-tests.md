@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, recording desktop video
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 572b3132056ebed1d26c983fdc4024d2ddc51a82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d53f03ed711b613a44aaf7cd243bd9aadeb2c93b
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653524"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880326"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>方法: テスト設定を使用してテスト中に画面と音声の記録を含める
 
@@ -58,8 +58,14 @@ Visual Studio の構成エディターから、テストを実行しているユ
 
 7. **[OK]** をクリックします。 これで、テストの設定を対象として診断トレース コレクターの設定が構成および保存されました。
 
+    ::: moniker range="vs-2017"
     > [!TIP]
     > この診断データ アダプターの構成をリセットするには、Visual Studio の場合は **[既定の構成にリセット]** をクリックし、Microsoft Test Manager の場合は **[既定値にリセット]** をクリックします。
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!TIP]
+    > この診断データ アダプターの構成をリセットするには、Visual Studio で **[既定の構成にリセット]** をクリックします。
+    ::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

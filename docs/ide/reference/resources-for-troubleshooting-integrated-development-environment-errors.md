@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919075"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593617"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
 
@@ -121,7 +121,7 @@ ms.locfileid: "72919075"
 
 他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](https://support.microsoft.com/en-us) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[Visual Studio フィードバック オプション](../../ide/feedback-options.md)」ページをご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [ネットワーク関連のエラーまたはプロキシ エラーをトラブルシューティングする](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [トラブルシューティング (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

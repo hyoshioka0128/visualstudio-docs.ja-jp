@@ -6,17 +6,17 @@ helpviewer_keywords:
 - printing [Visual Studio], class diagrams
 - class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 211cb0aab89dd148b408efaef9c40f5bc25c41aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631551"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596698"
 ---
 # <a name="how-to-print-class-diagrams"></a>方法: クラス ダイアグラムを印刷する
 
@@ -30,7 +30,7 @@ Visual Studio の印刷機能を利用し、クラス ダイアグラムを印�
 
 クラス ダイアグラム全体が印刷されます。 場合によっては、適切なサイズで印刷するために、 **[ページ設定]** ダイアログ ボックスで設定を調整する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [方法: クラス ダイアグラムをイメージとしてエクスポートする](how-to-export-class-diagrams-as-images.md)

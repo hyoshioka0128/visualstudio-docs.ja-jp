@@ -13,22 +13,24 @@ helpviewer_keywords:
 - SGen task [MSBuild]
 - MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: cbf18c4477a164ec2e25a5ed4b2105f6fdad9130
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887634"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167437"
 ---
 # <a name="sgen-task"></a>SGen タスク
+
 指定されたアセンブリの種類に対応する XML シリアル化アセンブリを作成します。 このタスクは、XML シリアライザー ジェネレーター ツール (*Sgen.exe*) をラップするタスクです。 詳細については、「[XML シリアライザー ジェネレーター ツール (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  `SGen` タスクのパラメーターの説明を次の表に示します。
 
 | パラメーター | 説明 |
@@ -45,14 +47,14 @@ ms.locfileid: "70887634"
 | `SerializationAssemblyName` | 省略可能な `String` 型のパラメーターです。<br /><br /> 生成されるシリアル化アセンブリの名前を指定します。 |
 | `ShouldGenerateSerializer` | 必須の `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、SGen タスクでシリアル化アセンブリを生成する必要があります。 |
 | `Timeout` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> タスク実行を終了するまでの時間をミリ秒単位で指定します。 既定値は `Int.MaxValue` であり、タイムアウト期限がないことを示します。 |
-| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (*sgen.exe*) を読み込む場所を指定します。 このパラメーターを指定しないと、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] を実行しているフレームワークのバージョンに対応する SDK インストール パスがタスクに使用されます。 |
+| `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (*sgen.exe*) を読み込む場所を指定します。 このパラメーターを指定しない場合、タスクでは、MSBuild を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
 | `Types` | 省略可能な `String[]` 型のパラメーターです。<br /><br /> シリアル化コードを生成する特定の型の一覧を取得または設定します。 SGen は、これらの型に対してのみ、シリアル化コードを生成します。 |
 | `UseProxyTypes` | 必須の `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、SGen タスクでは XML Web サービス プロキシ型に対してのみシリアル化コードを生成します。 |
 
-## <a name="remarks"></a>解説
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

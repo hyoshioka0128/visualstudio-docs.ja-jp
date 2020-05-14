@@ -4,17 +4,17 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c1182c40987638cc871a877443db0357f962f53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666254"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568478"
 ---
 # <a name="options-text-editor-f-codelens"></a>[オプション]、[テキスト エディター]、[F#]、[CodeLens]
 
@@ -38,7 +38,7 @@ ms.locfileid: "72666254"
 
    注釈で使用される既定のプレフィックスを変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
 - [CodeLens によるコード変更とその他の履歴の検索](../../ide/find-code-changes-and-other-history-with-codelens.md)

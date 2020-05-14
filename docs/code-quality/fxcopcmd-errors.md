@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649557"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167612"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd ツールのエラー
 
@@ -23,7 +23,7 @@ FxCopCmd では、すべてのエラーが致命的であるとは見なされ�
 
 次の表では、FxCopCmd によって返されるエラーコードについて説明します。
 
-|Error|数値|
+|エラー|数値|
 |-----------|-------------------|
 |エラーなし|0x0|
 |分析エラー|0x1|
@@ -52,6 +52,6 @@ FxCopCmd では、すべてのエラーが致命的であるとは見なされ�
 > [!NOTE]
 > FxCopCmd のリターンコード**アセンブリ**は、エラー0x200 自体を参照しますが、エラーではなく警告です。 このリターンコードは、間接参照が不足していて、FxCopCmd がそれらを処理できたことを示します。 警告は、一部の分析結果が侵害された可能性があることを意味します。 他のリターンコードと組み合わせると、**アセンブリ参照エラー**をエラーとして扱うことができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード分析のアプリケーション エラー](../code-quality/code-analysis-application-errors.md)

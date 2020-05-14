@@ -1,4 +1,4 @@
-﻿---
+﻿﻿---
 title: 最近使用した一覧のサブメニューへの追加 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -7,50 +7,50 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eb32f81947f7359f5912e8a558e8df5002a0b80
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf389c0da7ec0aafb6e47dae8f09ffdc3b1d1e4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352406"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740301"
 ---
-# <a name="add-a-most-recently-used-list-to-a-submenu"></a>最近使用した一覧のサブメニューへの追加します。
-このチュートリアルのデモに基づいて[メニューにサブメニューを追加](../extensibility/adding-a-submenu-to-a-menu.md)し、サブメニューに動的な一覧を追加する方法を示しています。 動的な一覧は、最近使用 (MRU) の一覧を作成するための基礎を形成します。
+# <a name="add-a-most-recently-used-list-to-a-submenu"></a>最近使用したリストをサブメニューに追加する
+このチュートリアルでは、「[サブメニューをメニューに追加する](../extensibility/adding-a-submenu-to-a-menu.md)」のデモンストレーションを基に、サブメニューに動的リストを追加する方法を示します。 動的リストは、最近使用された (MRU) リストを作成するための基礎となります。
 
-動的メニュー リストは、メニュー上のプレース ホルダーで始まります。 たびに、メニューを表示すると、Visual Studio 統合開発環境 (IDE) が、プレース ホルダーに表示されるすべてのコマンド、VSPackage を要求します。 動的な一覧は、メニューの任意の場所に発生します。 ただし、動的なリストは通常格納されているし、またはメニューの下部にあるサブメニューには、単独で表示されます。 これらの設計パターンを使用すると、展開し、その他のコマンド メニューの位置に影響を与えずに縮小するためのコマンドの動的リストを有効にします。 このチュートリアルでは、サブメニューの残りの部分から 1 行で区切られた、既存のサブメニューの下部にある動的 MRU 一覧が表示されます。
+動的メニューリストは、メニューのプレースホルダから始まります。 メニューが表示されるたびに、Visual Studio 統合開発環境 (IDE) は、プレースホルダーに表示されるすべてのコマンドを VSPackage に要求します。 動的リストは、メニューの任意の場所に表示されます。 ただし、動的リストは通常、サブメニューまたはメニューの下部に自身で保存され、表示されます。 これらの設計パターンを使用すると、メニュー上の他のコマンドの位置に影響を与えることなく、コマンドの動的リストを展開および縮小できます。 このチュートリアルでは、動的 MRU リストは、サブメニューの残りの部分と線で区切られた既存のサブメニューの下部に表示されます。
 
-技術的には、動的な一覧は、ツールバーにも適用できます。 ただし、ユーザーが特定の手順を変更しない限りツールバーを変更する必要がありますされませんので、その使用状況お勧めします。
+技術的には、動的リストをツールバーに適用することもできます。 ただし、ユーザーが変更する特定の手順を実行しない限り、ツールバーは変更されないままにする必要があるため、この使用は推奨しません。
 
-このチュートリアルは、MRU 一覧の順序を変更するたびにそれらの 1 つが選択されている 4 つの項目を作成します (選択したアイテムは、一覧の先頭に移動します)。
+このチュートリアルでは、1 つの項目が選択されるたびに順序を変更する 4 つの項目の MRU リストを作成します (選択した項目はリストの先頭に移動します)。
 
-メニューの詳細については、 *.vsct*ファイルを参照してください[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
+メニューと *.vsct*ファイルの詳細については、「[コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
-このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 
-## <a name="create-an-extension"></a>拡張機能を作成します。
+## <a name="create-an-extension"></a>拡張機能を作成する
 
-- 次の手順では、[サブメニューのメニューに追加](../extensibility/adding-a-submenu-to-a-menu.md)で、次の手順が変更されるサブメニューを作成します。
+- [メニューへのサブメニューの追加](../extensibility/adding-a-submenu-to-a-menu.md)の手順に従って、次の手順で変更するサブメニューを作成します。
 
-  このチュートリアルの手順では、VSPackage の名前があると仮定`TopLevelMenu`で使用される名前である[Visual Studio のメニュー バーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)します。
+  このチュートリアルの手順では、VSPackage`TopLevelMenu`の名前が[、Visual Studio メニュー バーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)で使用される名前であることを前提としています。
 
-## <a name="create-a-dynamic-item-list-command"></a>動的アイテム一覧のコマンドを作成します。
+## <a name="create-a-dynamic-item-list-command"></a>動的な項目一覧コマンドを作成する
 
-1. 開いている*TestCommandPackage.vsct*します。
+1. *を*開きます。
 
-2. `Symbols`セクションで、 `GuidSymbol` guidTestCommandPackageCmdSet、という名前のノード追加のシンボル、`MRUListGroup`グループと`cmdidMRUList`コマンドを次のようにします。
+2. `Symbols`セクションの guidTestCommandPackageCmdSet という名前の`GuidSymbol`ノードに、次のようにグループと`MRUListGroup`コマンドのシンボル`cmdidMRUList`を追加します。
 
     ```csharp
     <IDSymbol name="MRUListGroup" value="0x1200"/>
     <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
-3. `Groups`セクションで、既存のグループのエントリの後に宣言されたグループを追加します。
+3. セクションで`Groups`、既存のグループエントリの後に宣言されたグループを追加します。
 
     ```cpp
     <Group guid="guidTestCommandPackageCmdSet" id="MRUListGroup"
@@ -60,7 +60,7 @@ ms.locfileid: "66352406"
 
     ```
 
-4. `Buttons`セクションで、ボタンの既存のエントリの後に新しく宣言のコマンドを表すノードを追加します。
+4. セクションで`Buttons`、既存のボタン エントリの後に、新しく宣言されたコマンドを表すノードを追加します。
 
     ```csharp
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidMRUList"
@@ -74,34 +74,34 @@ ms.locfileid: "66352406"
     </Button>
     ```
 
-    `DynamicItemStart`フラグを動的に生成するコマンドを使用できます。
+    この`DynamicItemStart`フラグを使用すると、コマンドを動的に生成できます。
 
-5. プロジェクトをビルドし、新しいコマンドの表示をテストするデバッグを開始します。
+5. プロジェクトをビルドし、デバッグを開始して、新しいコマンドの表示をテストします。
 
-    **TestMenu**  メニューの 新規作成 のサブメニューをクリックします。**サブメニュー**新しいのコマンドを表示するには、 **MRU のプレース ホルダー**します。 コマンドの動的 MRU 一覧が次の手順で実装されるは、そのリストで毎回、サブメニューが開かれているときに、このコマンドのラベルが置き換えられます。
+    **[TestMenu] メニュー**で、新しいサブメニューの **[サブメニュー]** をクリックして、新しいコマンドである**MRU プレースホルダ**を表示します。 次の手順でコマンドの動的 MRU リストが実装された後、サブメニューが開かれるたびに、このコマンド・ラベルがそのリストに置き換えられます。
 
-## <a name="filling-the-mru-list"></a>MRU 一覧を入力
+## <a name="filling-the-mru-list"></a>MRU リストの入力
 
-1. *TestCommandPackageGuids.cs*、既存のコマンド Id の後に次の行を追加、`TestCommandPackageGuids`クラスの定義。
+1. *TestCommandPackageGuids.cs*で、クラス定義の既存のコマンド ID の後に次`TestCommandPackageGuids`の行を追加します。
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. *TestCommand.cs*次を追加するステートメントを使用します。
+2. *TestCommand.cs*に次の using ステートメントを追加します。
 
     ```csharp
     using System.Collections;
     ```
 
-3. AddCommand の最後の呼び出し後、TestCommand コンス トラクターで、次のコードを追加します。 `InitMRUMenu`後で定義されています。
+3. 最後の AddCommand 呼び出しの後に、TestCommand コンストラクターに次のコードを追加します。 は`InitMRUMenu`後で定義されます。
 
     ```csharp
     this.InitMRUMenu(commandService);
     ```
 
-4. TestCommand クラスでは、次のコードを追加します。 このコードでは、MRU 一覧に表示される項目を表す文字列のリストを初期化します。
+4. クラスに次のコードを追加します。 このコードは、MRU リストに表示される項目を表す文字列のリストを初期化します。
 
     ```csharp
     private int numMRUItems = 4;
@@ -125,7 +125,7 @@ ms.locfileid: "66352406"
     }
     ```
 
-5. 後に、`InitializeMRUList`メソッドを追加、`InitMRUMenu`メソッド。 これには、MRU 一覧のメニュー コマンドを初期化します。
+5. メソッドの`InitializeMRUList`後にメソッドを`InitMRUMenu`追加します。 これにより、MRU リスト メニュー コマンドが初期化されます。
 
     ```csharp
     private void InitMRUMenu(OleMenuCommandService mcs)
@@ -143,9 +143,9 @@ ms.locfileid: "66352406"
     }
     ```
 
-    MRU 一覧にすべての可能な項目のメニュー コマンド オブジェクトを作成する必要があります。 IDE の呼び出し、`OnMRUQueryStatus`がこれ以上項目までの MRU 一覧の各項目のメソッド。 マネージ コードでは、ide がこれ以上項目があることを知る唯一の方法は、最初使用可能なすべての項目を作成します。 使用して追加の項目を非表示としてが最初にマークでくする場合は、`mc.Visible = false;`メニュー コマンドを作成した後。 これらの項目から表示できる以降を使用して`mc.Visible = true;`で、`OnMRUQueryStatus`メソッド。
+    MRU リスト内の可能な項目ごとに、メニュー コマンド オブジェクトを作成する必要があります。 IDE は、`OnMRUQueryStatus`項目がなくなるまで、MRU リスト内の各項目のメソッドを呼び出します。 マネージ コードでは、IDE が項目がなくなったことを認識する唯一の方法は、すべての可能な項目を最初に作成することです。 必要に応じて、メニュー コマンドの作成後に使用`mc.Visible = false;`して、追加項目を最初に表示しないように設定できます。 これらの項目は、`mc.Visible = true;``OnMRUQueryStatus`メソッドで後で表示できます。
 
-6. 後に、`InitMRUMenu`メソッドでは、次の追加`OnMRUQueryStatus`メソッド。 これは、MRU の各項目のテキストを設定するハンドラーです。
+6. メソッドの`InitMRUMenu`後に、次`OnMRUQueryStatus`のメソッドを追加します。 これは、各 MRU 項目のテキストを設定するハンドラーです。
 
     ```csharp
     private void OnMRUQueryStatus(object sender, EventArgs e)
@@ -162,7 +162,7 @@ ms.locfileid: "66352406"
     }
     ```
 
-7. 後に、`OnMRUQueryStatus`メソッドでは、次の追加`OnMRUExec`メソッド。 これは、最近使用した項目を選択するためのハンドラーです。 このメソッドは、選択した項目を一覧の先頭に移動し、メッセージ ボックスに、選択した項目が表示されます。
+7. メソッドの`OnMRUQueryStatus`後に、次`OnMRUExec`のメソッドを追加します。 MRU 項目を選択するためのハンドラです。 このメソッドは、選択した項目をリストの先頭に移動し、選択した項目をメッセージ ボックスに表示します。
 
     ```csharp
     private void OnMRUExec(object sender, EventArgs e)
@@ -188,18 +188,18 @@ ms.locfileid: "66352406"
 
     ```
 
-## <a name="testing-the-mru-list"></a>MRU 一覧のテスト
+## <a name="testing-the-mru-list"></a>MRU リストのテスト
 
 1. プロジェクトをビルドし、デバッグを開始します。
 
-2. **TestMenu**  メニューのをクリックして**呼び出す TestCommand**します。 これを行うには、コマンドが選択されていることを示すメッセージ ボックスが表示されます。
+2. [**テスト メニュー] メニューの**[**テスト コマンドの呼び出し**] をクリックします。 これにより、コマンドが選択されたことを示すメッセージ ボックスが表示されます。
 
     > [!NOTE]
-    > この手順は、読み込みし、正しく MRU 一覧を表示するには、VSPackage を強制的に必要です。 この手順をスキップする場合は、MRU 一覧は表示されません。
+    > この手順は、VSPackage を強制的に読み込み、MRU リストを正しく表示するために必要です。 このステップをスキップすると、MRU リストは表示されません。
 
-3. **テスト メニュー**  メニューのをクリックして**サブメニュー**します。 4 つの項目の一覧は、区切り記号の下のサブメニューの最後に表示されます。 クリックすると**項目 3**、メッセージ ボックスが表示され、テキストを表示する必要があります**選択項目 3**します。 (4 つの項目の一覧が表示されない場合確保のため、前の手順の指示に従っていること。)
+3. [**テスト メニュー] メニュー**の [サブ**メニュー]** をクリックします。 4 つの項目のリストは、区切り記号の下のサブメニューの最後に表示されます。 **[項目 3]** をクリックすると、メッセージ ボックスが表示され **、"選択された項目 3"** というテキストが表示されます。 (4 つの項目の一覧が表示されない場合は、前の手順の手順に従っていることを確認してください)。
 
-4. サブメニューをもう一度開きます。 注意して**項目 3**一覧の上部にあるようになり、1 つ下の他の項目がプッシュされました。 をクリックして**項目 3**もう一度と、メッセージ ボックスが表示されることがわかります**選択項目 3**テキストがコマンドのラベルと共に新しい位置に移動が正しくことを示します。
+4. サブメニューを再度開きます。 項目**3**がリストの先頭に表示され、他の項目が 1 つ下の位置に押し下げられていたことに注目してください。 **[項目 3]** をもう一度クリックすると、メッセージ ボックスに **[選択された項目 3]** と表示され、テキストがコマンド ラベルと共に新しい位置に正しく移動したことを示します。
 
 ## <a name="see-also"></a>関連項目
-- [メニュー項目を動的に追加します。](../extensibility/dynamically-adding-menu-items.md)
+- [メニュー項目の動的な追加](../extensibility/dynamically-adding-menu-items.md)

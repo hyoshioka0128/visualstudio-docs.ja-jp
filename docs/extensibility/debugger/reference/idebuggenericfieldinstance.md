@@ -1,24 +1,24 @@
 ---
-title: IDebugGenericFieldInstance |Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189d670892b50958edff3b256874441aebd72be5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9723c146ecb5096ea6f3635a3d5cae5c48e573e4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330502"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728114"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
-マネージ コードのジェネリック型のフィールドのインスタンスを表します。
+マネージ コードジェネリック型のフィールドのインスタンスを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,14 +29,14 @@ IDebugGenericFieldInstance : IUnknown
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|このインスタンスの型パラメーターの引数を取得します。|
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|このインスタンスのパラメーターの引数の型の数を返します。|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|このインスタンスの型パラメーター引数を取得します。|
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|このインスタンスの型パラメーター引数の数を返します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー:Sh.h
+ ヘッダー: Sh.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:

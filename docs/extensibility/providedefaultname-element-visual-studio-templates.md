@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 要素の既定の設定を指定する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - ProvideDefaultName element [Visual Studio project templates]
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a19d6a93b709128e8750b6cea82d067b77db98
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335820"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701717"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 要素 (Visual Studio テンプレート)
-指定するかどうか、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]プロジェクト システムの既定のテンプレートの名前が生成されます、**新しい項目の追加**または**新しいプロジェクト** ダイアログ ボックス。
+# <a name="providedefaultname-element-visual-studio-templates"></a>要素を提供します。
+[新しい[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]項目の追加]**ダイアログ**ボックスまたは [**新しいプロジェクト**] ダイアログ ボックスで、プロジェクト システムがテンプレートの既定の名前を生成するかどうかを指定します。
 
- \<VSTemplate> \<TemplateData> \<ProvideDefaultName>
+ \<VS テンプレート\<>\<テンプレート データ>既定の名前>を提供します
 
 ## <a name="syntax"></a>構文
 
@@ -35,10 +35,10 @@ ms.locfileid: "66335820"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -49,17 +49,17 @@ ms.locfileid: "66335820"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`の既定のテンプレートの名前を生成するかどうかを示す、**新しい項目の追加**または**新しいプロジェクト** ダイアログ ボックス。
+ テキストは、`true`または`false`のいずれかで、**新しい項目の追加または新しい****プロジェクト**ダイアログ ボックスでテンプレートの既定の名前を生成するかどうかを示す必要があります。
 
 ## <a name="remarks"></a>Remarks
- `ProvideDefaultName` は、省略可能な要素です。 既定値は `true` です。
+ `ProvideDefaultName` は省略可能な要素です。 既定値は `true` です。
 
- 場合、`ProvideDefaultName`要素は`false`、**名前**のボックス、**新しい項目の追加**と**新しいプロジェクト** ダイアログ ボックスに値が含まれて`<Enter_name>`します。
+ 要素が`ProvideDefaultName`の`false`場合は、[**新しい項目の追加**] ダイアログ ボックスと [**新しいプロジェクト**] ダイアログ ボックスの`<Enter_name>`**[名前**] ボックスに値が表示されます。
 
- 使用して、 [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)要素内の項目をプロジェクトの既定の名前を指定または、**新しい項目の追加**と**新しいプロジェクト** ダイアログ ボックス。 ときの値、`ProvideDefaultName`要素は`true`の省略、`DefaultName`要素のプロジェクト テンプレートの名前、値は、ダイアログ ボックスに追加、[名前](../extensibility/name-element-visual-studio-templates.md)要素。
+ [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)要素を使用して、[**新しい項目の追加]** ダイアログ ボックスおよび **[新しいプロジェクト**] ダイアログ ボックスでプロジェクトまたは項目の既定の名前を指定します。 `ProvideDefaultName`要素の値が`true`の場合、プロジェクトの要素を`DefaultName`省略すると、テンプレートの名前、つまり[Name](../extensibility/name-element-visual-studio-templates.md)要素の値がダイアログ ボックスに表示されます。
 
 ## <a name="example"></a>例
- 次のコード例のセット、`ProvideDefaultName`要素`false`します。
+ 要素を に設定する`ProvideDefaultName`コード例`false`を次に示します。
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -78,5 +78,5 @@ ms.locfileid: "66335820"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

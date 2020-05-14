@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 391b4582d03e32e738f0eade823326e72a662a43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63004446"
 ---
 # <a name="ui-processing-time"></a>UI 処理時間
@@ -26,5 +26,5 @@ ms.locfileid: "63004446"
 
  UI 処理カテゴリは、GUI アプリケーションの応答性を理解するのに役立ち、UI の応答性に依存するアプリケーションにはこのカテゴリが適しています。 たとえば、アプリケーション内の UI スレッドが UI 処理で 100% の時間を達成した場合、応答性が高いと思われます。 ただし、UI スレッドが他のカテゴリで長時間を費やしている場合は、根本的な原因を見つけて、そのスレッドでの UI 以外のカテゴリを減らすためのオプションを検討してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

@@ -5,19 +5,19 @@ ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - performance [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6951179d9326a2785bee865e9bc8adbefd3f2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667060"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596997"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio のパフォーマンスの最適化
 

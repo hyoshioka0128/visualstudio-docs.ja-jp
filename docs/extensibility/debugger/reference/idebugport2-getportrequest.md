@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest |Microsoft Docs
+title: を指定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortRequest
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: feaebf01b30876572ec0cbcf2bd33c141978fb26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d48d39ea10e8425d5449444514489ac4b73c0a3f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343730"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725338"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-(該当する場合) のポートの作成に使用されていたポートの説明を取得します。
+ポートの作成に以前使用されていたポートの説明を取得します (使用可能な場合)。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int GetPortRequest( 
 
 ## <a name="parameters"></a>パラメーター
 `ppRequest`\
-[out]返します、 [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)ポートの作成に使用された要求を表すオブジェクト。
+[アウト]ポートの作成に使用された要求を表す[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  返します`E_PORT_NO_REQUEST`ポートが使用して作成されなかった場合、 [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)ポート要求。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。  ポート`E_PORT_NO_REQUEST`が[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)ポート要求を使用して作成されなかったかどうかを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

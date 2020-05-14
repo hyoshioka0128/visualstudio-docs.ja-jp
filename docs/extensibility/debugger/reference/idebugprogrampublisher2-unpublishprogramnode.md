@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode |Microsoft Docs
+title: プログラムのノードを公開しません。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c59f4df20be0836d42a5d88431401660d9d5bc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343152"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721581"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-エンジン (DEs) とセッション デバッグ マネージャー (SDM) をデバッグする可用性から指定したプログラムのノードを削除します。
+デバッグ エンジン (DEs) とセッション デバッグ マネージャー (SDM) の可用性から指定したプログラム ノードを削除します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +41,15 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>パラメーター
 `pProgramNode`\
-[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を削除するプログラムのノードを表すオブジェクト。
+[in]削除されるプログラム ノードを表す[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 削除すると、プログラムのノードはプログラムの情報のクエリで使用できるではなくなりました。
+ いったん削除されると、プログラムノードはプログラム情報の照会に使用できなくなります。
 
- プログラム ノードを使用できるようにするには、呼び出し、 [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)メソッド。
+ プログラム ノードを使用可能にするには、[メソッド](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)を呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

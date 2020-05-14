@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f28d7271fdf33822475a663debed269bb515959
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777778"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>コマンド ラインからのプロファイラー レポートの作成
@@ -23,7 +23,7 @@ ms.locfileid: "74777778"
 
 ## <a name="common-tasks"></a>一般的なタスク
 
-|タスク|関連するコンテンツ|
+|タスク|関連コンテンツ|
 |----------|---------------------|
 |**基本的なレポートを作成する。** VSPerfReport レポートのすべての種類またはサブセットを作成します。|-   [基本的なレポートを作成する](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|
 |**2 つのプロファイル データ ファイルを比較する。** 2 つのプロファイル データ ファイルのパフォーマンス データを比較する "比較" レポートを作成します。|-   [方法: コマンド プロンプトからプロファイラー比較レポートを作成する](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|

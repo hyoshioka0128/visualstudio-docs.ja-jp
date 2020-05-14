@@ -11,43 +11,43 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647623"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588396"
 ---
 # <a name="class-view-and-object-browser-icons"></a>[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン
 
 **[クラス ビュー]** および**オブジェクト ブラウザー**には、名前空間、クラス、関数、変数などのコード エンティティを表すアイコンが表示されます。 各アイコンおよびその説明を次の表に示します。
 
-|アイコン|説明|アイコン|説明|
+|アイコン|[説明]|アイコン|[説明]|
 |----------|-----------------|----------|-----------------|
 |![名前空間シンボル](../ide/media/vxnamespace_icon.gif)|名前空間|![宣言シンボル](../ide/media/vxmethod_icon.gif)|メソッドまたは関数|
 |![クラス アイコン](../ide/media/vxclass_icon.gif)|クラス|![演算子シンボル](../ide/media/vxoperator_icon.gif)|演算子|
-|![ロリポップ インターフェイス シンボル](../ide/media/vxinterface_icon.gif)|Interface|![プロパティ シンボル](../ide/media/vxproperty_icon.gif)|プロパティ|
+|![ロリポップ インターフェイス シンボル](../ide/media/vxinterface_icon.gif)|インターフェイス|![プロパティ シンボル](../ide/media/vxproperty_icon.gif)|プロパティ|
 |![構造体シンボル](../ide/media/vxstruct_icon.gif)|構造体|![フィールド アイコン](../ide/media/vxfield_icon.gif)|フィールドまたは変数|
-|![共用体シンボル](../ide/media/vxunion_icon.gif)|和集合|![イベント シンボル](../ide/media/vxevent_icon.gif)|event|
-|![一覧表示シンボル](../ide/media/vxenum_icon.gif)|Enum|![定数アイコン](../ide/media/vxconstant_icon.gif)|定数|
+|![共用体シンボル](../ide/media/vxunion_icon.gif)|Union|![イベント シンボル](../ide/media/vxevent_icon.gif)|Event|
+|![一覧表示シンボル](../ide/media/vxenum_icon.gif)|列挙型|![定数アイコン](../ide/media/vxconstant_icon.gif)|常時|
 |![型定義シンボル](../ide/media/vxtypedef_icon.gif)|TypeDef|![項目の一覧表示シンボル](../ide/media/vxenumitem_icon.gif)|列挙型項目|
-|![Visual Studio モジュール シンボル](../ide/media/vxmodule_icon.gif)|Module|![マップ項目シンボル](../ide/media/vxmapitem_icon.gif)|マップ項目|
+|![Visual Studio モジュール シンボル](../ide/media/vxmodule_icon.gif)|[Module]|![マップ項目シンボル](../ide/media/vxmapitem_icon.gif)|マップ項目|
 |![拡張メソッド シンボル](../ide/media/extensionmethod.gif)|拡張メソッド|![宣言シンボル](../ide/media/vxmethod_icon.gif)|外部宣言|
-|![デリゲート シンボル](../ide/media/vxdelegate_icon.gif)|Delegate|![クラス ビューおよびオブジェクト ブラウザーのエラー アイコン](../ide/media/erroricon.gif)|Error|
-|![例外シンボル](../ide/media/vxexception_icon.gif)|例外|![テンプレート シンボル](../ide/media/vxtemplate_icon.gif)|テンプレート|
-|![マップ シンボル](../ide/media/vxmap_icon.gif)|マップ|![エラー感嘆符シンボル](../ide/media/vxerror_icon.gif)|不明|
+|![デリゲート シンボル](../ide/media/vxdelegate_icon.gif)|Delegate|![クラス ビューおよびオブジェクト ブラウザーのエラー アイコン](../ide/media/erroricon.gif)|エラー|
+|![例外シンボル](../ide/media/vxexception_icon.gif)|例外|![テンプレート シンボル](../ide/media/vxtemplate_icon.gif)|Template|
+|![マップ シンボル](../ide/media/vxmap_icon.gif)|マップ|![エラー感嘆符シンボル](../ide/media/vxerror_icon.gif)|Unknown|
 |![型転送シンボル](../ide/media/ob_type_forward.gif)|型の転送|||
 
 ## <a name="signal-icons"></a>シグナル アイコン
 
 次のシグナル アイコンは、上記のアイコンすべてに適用され、そのアクセシビリティを示します。
 
-|アイコン|説明|
+|アイコン|[説明]|
 |----------|-----------------|
 |\<シグナル アイコンなし>|パブリック。 このコンポーネント内のどこからでも、また、それを参照するどのコンポーネントからでもアクセスできます。|
 |![シグナル プロテクト シンボル](../ide/media/vxsignal_icon_key.gif)|プロテクト。 包含クラスまたは型、あるいは包含クラスまたは型から派生したクラスまたは型からアクセスできます。|
@@ -59,6 +59,6 @@ ms.locfileid: "72647623"
 > [!NOTE]
 > プロジェクトがソース管理データベースに含まれている場合は、ソース管理のステータス (チェックインまたはチェックアウトなど) を示すシグナル アイコンが追加で表示されることがあります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コードの構造の表示](../ide/viewing-the-structure-of-code.md)

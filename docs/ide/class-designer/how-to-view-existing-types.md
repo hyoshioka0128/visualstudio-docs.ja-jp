@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 386b62e278b1fbe8230af16b54f8b7bb95857c48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631530"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588708"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>方法: クラス デザイナーで既存の型を表示する
 
@@ -31,7 +31,7 @@ ms.locfileid: "72631530"
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>プロジェクトの型をクラス ダイアグラムで表示するには
 
-1. **ソリューション エクスプローラー**のプロジェクトから、既存のクラス ダイアグラム (.cd) ファイルを開きます。 クラス ダイアグラムが存在しない場合は、プロジェクトに新しいクラス ダイアグラムを追加します。 「[方法:プロジェクトにクラス ダイアグラムを追加する](how-to-add-class-diagrams-to-projects.md)」を参照してください。
+1. **ソリューション エクスプローラー**のプロジェクトから、既存のクラス ダイアグラム (.cd) ファイルを開きます。 クラス ダイアグラムが存在しない場合は、プロジェクトに新しいクラス ダイアグラムを追加します。 「[方法: プロジェクトにクラス ダイアグラムを追加する](how-to-add-class-diagrams-to-projects.md)」をご覧ください。
 
 2. **ソリューション エクスプローラー**のプロジェクトから、ソース コード ファイルをクラス ダイアグラムにドラッグします。
 
@@ -61,7 +61,7 @@ ms.locfileid: "72631530"
 
 **ソリューション エクスプローラー**または**クラス ビュー**で、プロジェクトを右クリックし、 **[表示]** を選択してから **[クラス ダイアグラムの表示]** を選択します。 自動設定されたクラス ダイアグラムが作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 型の間の継承を表示する](how-to-view-inheritance-between-types.md)
 - [方法: クラス ダイアグラムをカスタマイズする](how-to-customize-class-diagrams.md)

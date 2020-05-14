@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Data UI customization options
 - Options dialog box, Windows Forms Designer, Data UI Customization
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9c4eab249b9d847b4004c02f11e3e58cbcead6ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655827"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114693"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>[オプション] ダイアログ ボックス:[Windows フォーム デザイナー] > [データ UI カスタマイズ]
 

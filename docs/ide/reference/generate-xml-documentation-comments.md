@@ -1,20 +1,20 @@
 ---
 title: XML ドキュメントのコメントを挿入する
-ms.date: 01/26/2018
+ms.date: 01/22/2020
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668605"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77706396"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>方法:ドキュメント生成のための XML コメントを挿入する
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>方法: ドキュメント生成のための XML コメントを挿入する
 
 Visual Studio では、クラスやメソッドなどのコード要素を文書化しやすいように、標準的な XML ドキュメント コメント構造を自動的に生成できます。 コンパイル時に、ドキュメントのコメントを含む XML ファイルを生成できます。
 
@@ -30,7 +30,7 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 
 1. メソッドなど、ドキュメント化する要素の上にテキスト カーソルを置きます。
 
-1. 次のいずれかの操作を行います。
+2. 次のいずれかの操作を行います。
 
    - C# では「`///`」と入力し、Visual Basic では「`'''`」と入力します
 
@@ -44,14 +44,18 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 
    ![XML コメント テンプレート - Visual Basic](media/doc-preview-vb.png)
 
-1. 各 XML 要素の説明を入力し、コード要素を完全に文書化します。
+3. 各 XML 要素の説明を入力し、コード要素を完全に文書化します。
 
    ![完了したコメント](media/doc-result-cs.png)
 
-> [!NOTE]
-> `///` (C#) または `'''` (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための[オプション](../../ide/reference/options-text-editor-csharp-advanced.md)があります。 メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 次に、 **[テキスト エディター]**  >  **[C#]** または **[Basic]**  >  **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、 **[XML ドキュメントを生成する]** オプションを探します。
+要素の上にカーソルを置くとクイック ヒントに表示される、XML コメントのスタイルを使用できます。 これらのスタイルには、斜体、太字、箇条書き、クリック可能なリンクなどがあります。
 
-## <a name="see-also"></a>関連項目
+   ![完了したコメント](media/doc-style-cs.png) 
+
+> [!NOTE]
+> [ (C#) または ](../../ide/reference/options-text-editor-csharp-advanced.md) (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための`///`オプション`'''`があります。 メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 次に、 **[テキスト エディター]**  >  **[C#]** または **[Basic]**  >  **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、 **[XML ドキュメントを生成する]** オプションを探します。
+
+## <a name="see-also"></a>参照
 
 - [XML ドキュメント コメント (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [XML コメントによるコードの文書化 (C# ガイド)](/dotnet/csharp/codedoc)

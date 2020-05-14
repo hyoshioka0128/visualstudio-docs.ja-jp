@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab914d62053b5cbefe92ee0ce8356c10dad82e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748757"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595645"
 ---
 # <a name="find-command"></a>Find コマンド
 **[検索と置換]** ウィンドウの **[フォルダーを指定して検索]** タブにあるオプションのサブセットを使って、ファイルを検索します。
@@ -77,9 +77,9 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

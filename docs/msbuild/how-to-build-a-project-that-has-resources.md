@@ -8,23 +8,25 @@ helpviewer_keywords:
 - projects [.NET Framework], building
 - MSBuild, building a project with resources
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423023"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633955"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>方法: リソースがあるプロジェクトをビルドする
-プロジェクトのローカライズ版を作成する場合、すべてのユーザー インターフェイス要素を言語別のリソース ファイルに分ける必要があります。 プロジェクトが文字列だけを使用している場合、リソース ファイルとしてテキスト ファイルを使用できます。 あるいは、*.resx* ファイルをリソース ファイルとして使用することもできます。
+
+プロジェクトのローカライズ版を作成する場合、すべてのユーザー インターフェイス要素を言語別のリソース ファイルに分ける必要があります。 プロジェクトが文字列だけを使用している場合、リソース ファイルとしてテキスト ファイルを使用できます。 あるいは、 *.resx* ファイルをリソース ファイルとして使用することもできます。
 
 ## <a name="compile-resources-with-msbuild"></a>MSBuild を使用してリソースをコンパイルする
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] とともに提供されている一般的なタスクのライブラリには、*.resx* ファイルまたはテキスト ファイルのリソースのコンパイルに利用できる `GenerateResource` タスクが含まれています。 このタスクには、どのリソース ファイルをコンパイルするかを指定する `Sources` パラメーターと、出力リソース ファイルの名前を指定する `OutputResources` パラメーターが含まれています。 `GenerateResource` タスクの詳細については、「[GenerateResource タスク](../msbuild/generateresource-task.md)」を参照してください。
+
+MSBuild とともに提供されている一般的なタスクのライブラリには、 *.resx* ファイルまたはテキスト ファイルのリソースのコンパイルに利用できる `GenerateResource` タスクが含まれています。 このタスクには、どのリソース ファイルをコンパイルするかを指定する `Sources` パラメーターと、出力リソース ファイルの名前を指定する `OutputResources` パラメーターが含まれています。 `GenerateResource` タスクの詳細については、「[GenerateResource タスク](../msbuild/generateresource-task.md)」を参照してください。
 
 #### <a name="to-compile-resources-with-msbuild"></a>MSBuild を使用してリソースをコンパイルするには
 
@@ -37,6 +39,7 @@ ms.locfileid: "62423023"
 4. `Output` 要素から作成された項目を別のタスクへの入力として使用します。
 
 ## <a name="example"></a>例
+
 次のコード例では、コンパイルされたリソース ファイルである *alpha.resources* と *beta.resources* を `GenerateResource` タスクの `OutputResources` 属性に含めることと、これらの 2 ファイルを `Resources` 項目一覧に含めることを、`Output` 要素によってどのように指定するかを示します。 それらの *.resources* ファイルを同名の項目の集合として識別すれば、[Csc](../msbuild/csc-task.md) タスクのような別のタスクの入力として簡単に使用することができます。
 
 このタスクは、[Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の **/compile** スイッチを使用するのと同じことです。
@@ -53,6 +56,7 @@ ms.locfileid: "62423023"
 ```
 
 ## <a name="example"></a>例
+
 次のプロジェクト例には、リソースをコンパイルする `GenerateResource` タスクと、ソース コード ファイルとコンパイルされたリソース ファイルの両方をコンパイルする `Csc` タスクの 2 つのタスクが含まれています。 `GenerateResource` タスクでコンパイルされたリソース ファイルは `Resources` 項目に保存され、`Csc` タスクに渡されます。
 
 ```xml
@@ -77,6 +81,7 @@ ms.locfileid: "62423023"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild](../msbuild/msbuild.md)
 - [GenerateResource タスク](../msbuild/generateresource-task.md)
 - [Csc タスク](../msbuild/csc-task.md)

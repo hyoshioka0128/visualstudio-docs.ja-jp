@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2 |Microsoft Docs
+title: イベントのデバッグのブレークポイントを指定するイベント 2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointBoundEvent2
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be8b87aabe10861f53c3c40b4fce78dac9a9adc4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7943addb4334710da3252a4d822330e45b6e0f80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314292"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735300"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
-このインターフェイスは、保留中のブレークポイントが読み込まれたプログラムに正常にバインドされているセッション デバッグ マネージャー (SDM) を指示します。
+このインターフェイスは、保留中のブレークポイントが読み込まれたプログラムに正常にバインドされたことをセッション デバッグ マネージャー (SDM) に通知します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,29 +28,29 @@ ms.locfileid: "66314292"
 IDebugBreakpointBoundEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デでは、ブレークポイントのサポートの一部として、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります (、SDM を使用して[QueryInterface](/cpp/atl/queryinterface)にアクセスする、`IDebugEvent2`インターフェイス)。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ DE は、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります (SDM は、インターフェイス`IDebugEvent2`にアクセスするのに[QueryInterface](/cpp/atl/queryinterface)を使用します)。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- デは作成し、保留中のブレークポイントがデバッグ中のプログラムを正常にバインドされている場合は、このイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって提供されるコールバック関数。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ デは、保留中のブレークポイントがデバッグ中のプログラムに正常にバインドされたときに、このイベント オブジェクトを作成して送信します。 イベントは、デバッグ中のプログラムにアタッチされたときに、SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して送信されます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugBreakpointBoundEvent2`します。
+ 次の表に`IDebugBreakpointBoundEvent2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|バインドされている保留中のブレークポイントを取得します。|
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|このイベントにバインドされているブレークポイントの列挙子を作成します。|
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|このイベントにバインドされたブレークポイントの列挙子を作成します。|
 
 ## <a name="remarks"></a>Remarks
- ブレークポイントがバインドされているときに、イベントは、SDM に送信されます。 ブレークポイントをバインドできない場合、 [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)が送信済み。 それ以外、`IDebugBreakpointBoundEvent2`送信されます。
+ ブレークポイントがバインドされると、イベントが SDM に送信されます。 ブレークポイントをバインドできない場合は[、IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)が送信されます。それ以外の`IDebugBreakpointBoundEvent2`場合は、 が送信されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

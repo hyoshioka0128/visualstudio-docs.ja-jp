@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748006"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590697"
 ---
 # <a name="c-typedefs-in-class-designer"></a>クラス デザイナーにおける C++ の typedef
 
@@ -82,7 +82,7 @@ typedef class coord
 > [!NOTE]
 > **クラス デザイナー**では、ソースの型が関数ポインターの typedef は表示されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

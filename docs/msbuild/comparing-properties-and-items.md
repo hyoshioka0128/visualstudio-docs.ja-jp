@@ -5,19 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634410"
 ---
 # <a name="compare-properties-and-items"></a>プロパティと項目を比較する
+
 MSBuild のプロパティと項目は、いずれもタスクに情報を渡し、条件を評価し、プロジェクト ファイルで参照する値を格納しておくために使用されます。
 
 - プロパティは名前と値のペアです。 詳細については、「[MSBuild プロパティ](../msbuild/msbuild-properties.md)」を参照してください。
@@ -25,9 +26,11 @@ MSBuild のプロパティと項目は、いずれもタスクに情報を渡し
 - 項目は、一般的にファイルを示すオブジェクトです。 項目オブジェクトには、メタデータ コレクションを関連付けることができます。 メタデータは名前と値のペアです。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 ## <a name="scalars-and-vectors"></a>スカラーとベクター
+
 MSBuild プロパティは 1 つの文字列値のみを持つ名前と値のペアなので、多くの場合は*スカラー*と説明されます。 MSBuild 項目の種類は項目のリストなので、多くの場合は*ベクター*と説明されます。 ただし実際には、プロパティで複数の値を表すことがあり、項目の種類の項目数が 0 個または 1 個の場合があります。
 
 ### <a name="target-dependency-injection"></a>ターゲットの依存関係の挿入
+
 プロパティが複数の値を表す方法については、ターゲットをターゲットの一覧に追加して一覧を作成する場合の一般的な使用パターンを考えます。 この一覧は、一般的に、プロパティ値とターゲット名をセミコロン (;) で区切って表します。
 
 ```xml
@@ -40,7 +43,7 @@ MSBuild プロパティは 1 つの文字列値のみを持つ名前と値のペ
 </PropertyGroup>
 ```
 
-通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 たとえば、オブジェクトに適用された
+通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 次に例を示します。
 
 ```xml
 <PropertyGroup>
@@ -56,6 +59,7 @@ CustomBuild ターゲットをターゲット一覧に追加し、`BuildDependsO
 MSBuild 4.0 以降、ターゲットの依存関係の挿入は非推奨とされます。 代わりに `AfterTargets` 属性と `BeforeTargets` 属性を使用してください。 詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。
 
 ### <a name="conversions-between-strings-and-item-lists"></a>文字列と項目一覧との変換
+
 MSBuild は、項目の種類と文字列値の変換を必要に応じて実行します。 項目一覧を文字列値にする方法については、MSBuild プロパティの値として項目の種類を使用すると何が起こるかを考えます。
 
 ```xml
@@ -67,9 +71,10 @@ MSBuild は、項目の種類と文字列値の変換を必要に応じて実行
 </PropertyGroup>
 ```
 
-項目の種類 OutputDir には、"KeyFiles\\;Certificates\\" という値の `Include` 属性があります。 MSBuild は、この文字列を 2 つの項目KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。
+項目の種類 OutputDir には、"KeyFiles`Include`;Certificates\\" という値の \\ 属性があります。 MSBuild は、この文字列を 2 つの項目 KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。
 
 ## <a name="properties-and-items-in-tasks"></a>タスクのプロパティと項目
+
 プロパティと項目は、MSBuild タスクの入力と出力として使用されます。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
 
 プロパティは属性としてタスクに渡されます。 タスク内の MSBuild プロパティは、値を文字列との間で変換できるプロパティの種類で表されます。 サポートされるプロパティの種類には、`bool`、`char`、`DateTime`、`Decimal`、`Double`、`int`、`string` に加え、<xref:System.Convert.ChangeType%2A> が処理できるあらゆる種類が含まれます。
@@ -79,6 +84,7 @@ MSBuild は、項目の種類と文字列値の変換を必要に応じて実行
 項目の種類の項目一覧は、`ITaskItem` オブジェクトの配列として渡すことができます。 .NET Framework 3.5 以降、`Remove` 属性を使用してターゲットの項目一覧から項目を削除できるようになりました。 項目は項目一覧から削除できるため、アイテムの種類の項目数が 0 個になる可能性があります。 項目一覧をタスクに渡す場合、タスクのコードでこの可能性をチェックする必要があります。
 
 ## <a name="property-and-item-evaluation-order"></a>プロパティと項目の評価順序
+
 ビルドの評価フェーズでは、インポート対象のファイルは出現順にビルドに組み込まれます。 プロパティと項目は、次の順に 3 つのパスで定義されます。
 
 - プロパティが出現順に定義および修正されます。
@@ -104,6 +110,7 @@ MSBuild は、項目の種類と文字列値の変換を必要に応じて実行
   - ターゲット内に定義されているプロパティと項目は、出現順にまとめて評価されます。 プロパティ関数が実行され、式内のプロパティ値が展開されます。 項目値と項目の変換も展開されます。 プロパティ値、項目の種類値、およびメタデータ値が、展開された式に設定されます。
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>評価順のわかりにくい効果
+
 ビルドの評価フェーズでは、プロパティの評価が項目の評価よりも先に実行されます。 それでも、プロパティ値が項目値に依存しているように見えることがあります。 次のスクリプトがあるとします。
 
 ```xml
@@ -178,5 +185,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

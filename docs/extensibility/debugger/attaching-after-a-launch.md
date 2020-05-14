@@ -1,52 +1,52 @@
 ---
-title: 起動後のアタッチ |Microsoft Docs
+title: 起動後のアタッチ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1ff749d340110707296c9d4958d13a3faa952
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350916"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739282"
 ---
-# <a name="attach-after-a-launch"></a>起動の後のアタッチします。
-プログラムを起動した後、デバッグ セッションとプログラムをデバッグ エンジン (DE) をアタッチする準備ができます。
+# <a name="attach-after-a-launch"></a>起動後にアタッチする
+プログラムが起動すると、デバッグ セッションは、デバッグ エンジン (DE) をそのプログラムにアタッチする準備が整います。
 
 ## <a name="design-decisions"></a>設計上の決定
- 2 つのデザイン方法を選択する必要があります通信が、共有のアドレス空間内で簡単にあるため、: デバッグ セッションと、DE 間の通信を設定します。 または、DE、およびプログラムの間の通信を設定します。 次の設定の選択します。
+ 共有アドレス空間内での通信は簡単であるため、デバッグ セッションと DE 間の通信を設定する 2 つの設計方法を選択する必要があります。 または、DE とプログラム間の通信を設定します。 次のいずれかを選択します。
 
-- デバッグ セッションと、DE 間の通信を設定する方を提示した場合に、デバッグ セッション、DE を共同作成し、のプログラムにアタッチする DE を尋ねます。 この設計のままに、デバッグ セッションと DE まとめて 1 つのアドレス空間、およびランタイム環境とプログラム別にまとめる。
+- デバッグ セッションと DE 間の通信を設定する方が意味がある場合、デバッグ セッションは DE を共同作成し、DE にプログラムへのアタッチを要求します。 この設計では、デバッグ セッションと DE は 1 つのアドレス空間に一緒に残され、ランタイム環境とプログラムは別のアドレス空間に一緒に残されます。
 
-- 方、DE とプログラムの間の通信を設定する、実行時環境は共同、DE を作成します。 この設計は、別にまとめて 1 つのアドレス空間と、DE、実行時環境、およびプログラムに SDM を残します。 この設計は、スクリプト言語を実行する、インタープリターに実装されている DE の一般的な例です。
+- DE とプログラム間の通信をセットアップする方が意味がある場合は、実行時環境が DE を同時に作成します。 この設計では、SDM が 1 つのアドレス空間に残され、DE、ランタイム環境、およびプログラムが別のアドレス空間に残されます。 この設計は、スクリプト言語を実行するインタープリターで実装される DE の典型的な設計です。
 
     > [!NOTE]
-    > デがプログラムにアタッチする方法とは実装によって異なります。 デと、プログラム間の通信も実装に依存します。
+    > DE がプログラムにアタッチする方法は、実装に依存します。 DE とプログラム間の通信も実装に依存します。
 
 ## <a name="implementation"></a>実装
- プログラムでは、受信すると、セッション デバッグ マネージャー (SDM) まず、 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)を起動するプログラムを表すオブジェクトを呼び出す、[アタッチ](../../extensibility/debugger/reference/idebugprogram2-attach.md)を引数としてメソッドを[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)以降であるオブジェクト、SDM にデバッグ イベントを渡すために使用します。 `IDebugProgram2::Attach`メソッドを呼び出して、 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッド。 SDM を受信する方法の詳細については、`IDebugProgram2`インターフェイスは、「[ポートへの通知](../../extensibility/debugger/notifying-the-port.md)します。
+ プログラムを使用して、セッション デバッグ マネージャー (SDM) が最初に起動するプログラムを表す[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)オブジェクトを受け取ると[、Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md)メソッドを呼び出し、後でデバッグ イベントを SDM に渡すために使用される[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)オブジェクトを渡します。 メソッド`IDebugProgram2::Attach`は[、次に OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッドを呼び出します。 SDM が`IDebugProgram2`インターフェイスを受信する方法の詳細については、[ポートへの通知を](../../extensibility/debugger/notifying-the-port.md)参照してください。
 
- デバッグしている場合は、プログラムと同じアドレス空間で実行する必要があります、DE: DE は通常、スクリプトを実行しているインタープリターの一部であるため、`IDebugProgramNodeAttach2::OnAttach`メソッドを返します。`S_FALSE`します。 `S_FALSE`戻り値は、アタッチ プロセスが完了したことを示します。
+ デは、デバッグしているプログラムと同じアドレス空間で実行する必要がある場合: DEは、通常、スクリプトを実行しているインタープリターの一部であるため、`IDebugProgramNodeAttach2::OnAttach`メソッドは`S_FALSE`返します。 戻`S_FALSE`り値は、アタッチプロセスが完了したことを示します。
 
- かどうか、ただし、DE で実行、SDM のアドレス空間:`IDebugProgramNodeAttach2::OnAttach`メソッドを返します`S_OK`、または[IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)ですべてのインターフェイスが実装されていません、 [IDebugProgramNode2。](../../extensibility/debugger/reference/idebugprogramnode2.md)をデバッグするプログラムに関連付けられているオブジェクト。 ここで、[アタッチ](../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドが最終的に、アタッチ操作を完了すると呼ばれます。
+ ただし、DE が SDM のアドレス空間で実行される場合:`IDebugProgramNodeAttach2::OnAttach`メソッド`S_OK`が返すか[、IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)インターフェイスがデバッグ中のプログラムに関連付けられた[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトにまったく実装されていません。 この場合、アタッチ操作を完了するために[、Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドが呼び出されます。
 
- 後者の場合、呼び出す必要がある、 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)メソッドを`IDebugProgram2`に渡されたオブジェクト、`IDebugEngine2::Attach`メソッドは、ストア、`GUID`ローカル プログラムのオブジェクト、およびこれを返す`GUID`ときに、`IDebugProgram2::GetProgramId`メソッドがこのオブジェクトの後と呼ばれます。 `GUID`さまざまなデバッグ コンポーネント間で、プログラムを一意に識別するために使用します。
+ 後者の場合は、`IDebugEngine2::Attach`メソッドに渡`GUID`された`GUID``IDebugProgram2::GetProgramId``IDebugProgram2`オブジェクトに対して[GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)メソッドを呼び出し、 ローカル プログラム オブジェクトに格納し、このオブジェクトでメソッドが呼び出されたときにこれを返す必要があります。 `GUID`は、さまざまなデバッグ コンポーネント間でプログラムを一意に識別するために使用されます。
 
- 場合、`IDebugProgramNodeAttach2::OnAttach`を返すメソッド`S_FALSE`、`GUID`メソッドに渡される、プログラムに使用しては、`IDebugProgramNodeAttach2::OnAttach`を設定するメソッド、`GUID`ローカル プログラムのオブジェクト。
+ メソッドが`IDebugProgramNodeAttach2::OnAttach`返される`S_FALSE`場合は、プログラムに`GUID`使用する メソッドが、ローカル プログラム オブジェクト`IDebugProgramNodeAttach2::OnAttach``GUID`に対してを設定するメソッドに渡されます。
 
- プログラムにし、スタートアップ イベントを送信する準備ができて、DE はアタッチされています。
+ これで、DE がプログラムにアタッチされ、スタートアップ イベントを送信する準備が整いました。
 
 ## <a name="see-also"></a>関連項目
-- [直接プログラムへのアタッチ](../../extensibility/debugger/attaching-directly-to-a-program.md)
+- [プログラムに直接アタッチする](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [ポートへの通知](../../extensibility/debugger/notifying-the-port.md)
-- [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)
+- [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)
 - [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 - [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md)

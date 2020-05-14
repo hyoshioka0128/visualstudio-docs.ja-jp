@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2b716bb4e6119c76f593ff067784f360cb48187
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299442"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917034"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 
 ||||
 |-|-|-|
-|SQL Database に移動|DocumentDB|ストレージ (blob、テーブル、キュー、ファイル)|
+|SQL データベース|DocumentDB|ストレージ (blob、テーブル、キュー、ファイル)|
 |SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
 
- それだけではありません。
+ その他
 
  **SQL**
 
@@ -55,7 +55,7 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
- それだけではありません。
+ その他
 
  **NoSQL**
 
@@ -65,17 +65,17 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
- それだけではありません。
+ その他
 
  多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の NuGet パッケージマネージャー (**ツール** > **nuget パッケージマネージャー** > **ソリューションの nuget パッケージの管理**) を使用して、オファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。   これらの製品を Visual Studio ギャラリーで閲覧するには、[**ツール** > の**拡張機能と更新プログラム**] に移動し、ダイアログボックスの左側のウィンドウで **[オンライン]** を選択します。  詳細については、「[データベースシステム、ツール、サンプルのインストール](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
 
 > [!NOTE]
-> SQL Server 2005 の延長サポートは、2016年4月12日に終了しました。   この日付以降、Visual Studio 2015 以降のデータツールが SQL Server 2005 と引き続き動作することは保証されていません。 詳細については、 [SQL Server 2005 のサポート終了](https://www.microsoft.com/sql-server/sql-server-2005)に関するお知らせを参照してください。
+> SQL Server 2005 の延長サポートは 2016 年 4 月 12 日で終了しました。   この日付以降、Visual Studio 2015 以降のデータツールが SQL Server 2005 と引き続き動作することは保証されていません。 詳細については、 [SQL Server 2005 のサポート終了](https://www.microsoft.com/sql-server/sql-server-2005)に関するお知らせを参照してください。
 
 ### <a name="net-languages"></a>.NET 言語
  .NET Core を含むすべての .NET データアクセスは、ADO.NET に基づいています。これは、リレーショナルと非リレーショナルの両方の種類のデータソースにアクセスするためのインターフェイスを定義するクラスのセットです。 Visual Studio には、ADO.NET と連携して、データベースに接続し、データを操作し、データをユーザーに提示するのに役立つ、いくつかのツールとデザイナーがあります。 このセクションのドキュメントでは、これらのツールの使用方法について説明します。 ADO.NET command オブジェクトに対して直接プログラムを実行することもできます。 ADO.NET Api を直接呼び出す方法の詳細については、MSDN ライブラリの「 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 」を参照してください。
 
- ASP.NET に特化したデータアクセスドキュメントについては、ASP.NET サイトでの[データの操作](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/)に関するページを参照してください。 ASP.NET MVC での Entity Framework の使用に関するチュートリアルについては、「 [mvc 5 を使用した Entity Framework 6 Code First のはじめに](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)」を参照してください。
+ ASP.NET に特化したデータアクセスドキュメントについては、ASP.NET サイトでの[データの操作](/aspnet/web-forms/overview/presenting-and-managing-data/)に関するページを参照してください。 ASP.NET MVC での Entity Framework の使用に関するチュートリアルについては、「 [mvc 5 を使用した Entity Framework 6 Code First のはじめに](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)」を参照してください。
 
  または Visual Basic のC#ユニバーサル WINDOWS プラットフォーム (UWP) アプリは、Microsoft Azure SDK for .NET を使用して Azure Storage およびその他の Azure サービスにアクセスできます。 Windows の Web. HttpClient クラスは、任意の RESTful サービスとの通信を可能にします。 詳細については、「 [Windows を使用して http サーバーに接続する方法](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)」を参照してください。
 
@@ -133,7 +133,7 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)開発者がリレーショナルデータベースに対して直接ではなく、概念モデルに対してプログラミングを行うことができるデータアプリケーションを作成する方法について説明します。
 
- [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を使用して、web 上または[Open Data Protocol (OData)](https://go.microsoft.com/fwlink/?LinkID=182204)を実装するイントラネットにデータサービスを配置する方法について説明します。
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] を使用して、web 上または[Open Data Protocol (OData)](https://www.odata.org/)を実装するイントラネットにデータサービスを配置する方法について説明します。
 
  [Office ソリューションのデータ](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)Office ソリューションでのデータの動作について説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 

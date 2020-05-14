@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6144312741b2ef75d0b06979495571d97baf0b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665180"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76111477"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>ロード テストのシナリオ開始時刻の遅延を構成する
 
@@ -81,9 +81,9 @@ ms.locfileid: "72665180"
 
      **[ウォームアップ時に無効化]** プロパティで、 **[True]** または **[False]** を選択します。
 
-4. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[ウォームアップ時に無効化]** の値を使用して、ロード テストを実行します。
+4. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[ウォームアップ時に無効化]** の値を使用して、ロード テストを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
 - [ロード テストのためのテスト エージェントおよびテスト コントローラーの構成](../test/configure-test-agents-and-controllers-for-load-tests.md)

@@ -1,8 +1,8 @@
 ---
-title: CPU 使用率データの分析 (ASP.NET)
-description: CPU 使用率診断ツールを使用して ASP.NET アプリでのアプリのパフォーマンスを測定する
+title: CPU 使用率データの分析 (ASP.NET Core)
+description: CPU 使用率診断ツールを使用して ASP.NET Core アプリでのアプリのパフォーマンスを測定する
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,34 +12,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: f79a9f5178959b9a1ec79dc3c22d8da9c0f6735e
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128172"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80411987"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>クイック スタート: Visual Studio での CPU 使用率データの分析 (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>クイック スタート: Visual Studio での CPU 使用率データの分析 (ASP.NET Core)
 
 Visual Studio は、アプリケーションのパフォーマンス問題の分析に役立つ高性能な機能をたくさん備えています。 このトピックでは、基本的な機能のいくつかを簡単に紹介します。 今回、高い CPU 使用率に起因するパフォーマンス上のボトルネックを特定するツールを紹介します。 診断ツールは Visual Studio の .NET 開発 (ASP.NET を含む) とネイティブ/C++ 開発で利用できます。
 
-診断ハブでは、診断セッションの実行と管理のために他の多くのオプションを提供しています。 ここで説明する **CPU 使用率**ツールでは必要なデータを得ることができない場合、[他のプロファイリング ツール](../profiling/profiling-feature-tour.md)で得られる別の種類の情報が役に立つことがあります。 多くの場合、アプリケーションのパフォーマンス上の問題は CPU 以外の何かが原因になります。メモリ、UI のレンダリング、ネットワークの要求時間などです。
+診断ハブでは、診断セッションの実行と管理のために他の多くのオプションを提供しています。 ここで説明する **CPU 使用率**ツールでは必要なデータを得ることができない場合、[他のプロファイリング ツール](../profiling/profiling-feature-tour.md)で得られる別の種類の情報が役に立つことがあります。 多くの場合、アプリケーションのパフォーマンス上の問題は CPU 以外の何かが原因になります。メモリ、UI のレンダリング、ネットワークの要求時間などです。 別のデバッガー統合プロファイリング ツールである [PerfTips](../profiling/perftips.md) を使用すると、コードをステップ実行し、特定の関数またはコード ブロックが完了するまでの時間を特定することもできます。
 
 Windows 8 以降では、デバッガーを使用してプロファイル ツールを実行する必要があります ( **[診断ツール]** ウィンドウ)。 Windows 7 以降では、事後検証ツールである[パフォーマンス プロファイラー](../profiling/profiling-feature-tour.md)を使用することができます。
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
 
-1. Visual Studio で、 **[ファイル]**  >  **[新しいプロジェクト]** の順に選択します。
+1. Visual Studio を開き、プロジェクトを作成します。
 
-1. **[Visual C#]** の下で **[Web]** を選択し、真ん中のウィンドウで **[ASP.NET Web アプリケーション (.NET Framework)]** を選択します。
+   ::: moniker range="vs-2017"
+   上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-    **[ASP.NET Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
+   **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[Visual C#]** を展開し、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Web アプリケーション (.NET Core)]** を選択します。 次に、プロジェクトに「*MyProfilingApp_MVC*」という名前を設定します。
 
-1. **MyProfilingApp_MVC** のような名前を入力し、 **[OK]** をクリックします。
+   > [!NOTE]
+   > **[ASP.NET Web アプリケーション (.NET Core)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。 Visual Studio インストーラーが起動します。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
 
-1. ダイアログ ボックスが表示されたら、真ん中のウィンドウで **[MVC]** を選択し、 **[OK]** をクリックします。
+   ダイアログ ボックスが表示されたら、真ん中のウィンドウで **[MVC]** を選択し、 **[OK]** をクリックします。
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   スタート ウィンドウが開いていない場合は、 **[ファイル]** 、 **[スタート ウィンドウ]** の順に選択します。
 
-    Visual Studio によってプロジェクトが作成されます。 ソリューション エクスプローラー (右ウィンドウ) にプロジェクト ファイルが表示されます。
+   スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+
+   **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*asp.net*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
+
+   言語およびプラットフォームのフィルターを適用してから、 **[ASP.NET Web アプリケーション (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+
+   > [!NOTE]
+   > **[ASP.NET Web アプリケーション (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[ASP.NET と Web 開発]** ワークロードを選択します。
+
+   **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyProfilingApp_MVC*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+
+   表示されたウィンドウで、 **[Web アプリケーション (モデル ビュー コントローラー)]** を選択し、 **[作成]** を選択します。
+
+   ::: moniker-end
+
+   Visual Studio によってその新しいプロジェクトが開かれます。
 
 1. ソリューション エクスプローラーで、[Models] フォルダーを右クリックし、 **[追加]** 、 >  **[クラス]** の順に選択します。
 
@@ -131,6 +151,8 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
 1. ソリューション エクスプローラーで、*Controller/HomeControllers.cs* を開き、次のコード
 
+   ::: moniker range="vs-2017"
+
     ```csharp
     public ActionResult About()
     {
@@ -153,6 +175,30 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
     }
     ```
 
+    ::: moniker-end
+    ::: moniker range="vs-2019"
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+    ```
+
+    を、次のコードで置換します。
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        Models.Simple s = new Models.Simple();
+
+        return View(s.GetData());
+    }
+    ```
+
+    ::: moniker-end
+
+
 ## <a name="step-1-collect-profiling-data"></a>手順 1: プロファイリング データの収集
 
 1. 最初に、`Simple` コンストラクターのこのコード行でアプリのブレークポイントを設定します。
@@ -165,14 +211,20 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
      ![プロファイリング用のブレークポイントを設定する](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
-    > [!TIP]
-    > 2 つのブレークポイントを設定することで、分析するコードの部分にデータ収集を限定できます。
+    2 つのブレークポイントを設定することで、分析するコードの部分にデータ収集を限定できます。
 
 1. **[診断ツール]** ウィンドウは、オフにしていない限り表示されます。 もう一度ウィンドウを表示するには、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[診断ツールの表示]** の順にクリックします。
 
 1. **[デバッグ]**  >  **[デバッグの開始]** の順にクリックします (または、ツール バーの **[開始]** をクリックするか、**F5** キーを押します)。
 
-1. アプリが読み込みを終了したら、Web ページの一番上にある **[情報]** リンクをクリックし、新しいコードを実行します。
+1. アプリで読み込みが終了したら、Web ページの一番上にある適切なリンクをクリックし、新しいコードを実行します。
+
+   ::: moniker range="vs-2017"
+   Visual Studio 2017 では、 **[About]\(詳細情報\)** リンクをクリックしてコードを実行します。
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Visual Studio 2019 では、 **[プライバシー]** リンクをクリックしてコードを実行します。
+   ::: moniker-end
 
 1. 診断ツールの**概要**ビューを確認します。
 

@@ -20,17 +20,17 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538175"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593721"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -121,7 +121,7 @@ function Foo(param1) {
 <a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>TypeScript 宣言ファイルに基づく IntelliSense
 
-現在、JavaScript と TypeScript は同じ言語サービスに基づいているため、より多くの方法で対話することができます。 たとえば、JavaScript IntelliSense は、*.d.ts* ファイルで宣言された値に提供することができ ([TypeScript ドキュメント](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)を参照してください)、TypeScript で宣言されているインターフェイスやクラスなどの型は、JsDoc コメントの型として使用できます。
+現在、JavaScript と TypeScript は同じ言語サービスに基づいているため、より多くの方法で対話することができます。 たとえば、JavaScript IntelliSense は、 *.d.ts* ファイルで宣言された値に提供することができ ([TypeScript ドキュメント](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)を参照してください)、TypeScript で宣言されているインターフェイスやクラスなどの型は、JsDoc コメントの型として使用できます。
 
 (インターフェイス経由で) このような型情報を、(`JsDoc` タグを使用して) 同じプロジェクトの JavaScript ファイルに提供する TypeScript 定義ファイルの簡単な例を以下に示します。
 
@@ -132,16 +132,16 @@ function Foo(param1) {
 
 TypeScript の世界では、最も一般的な JavaScript ライブラリに *.d.ts* ファイルで記述された API が含まれ、その定義で最も一般的なレポジトリは [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) にあります。
 
-既定では、Salsa 言語サービスは使用されている JavaScript ライブラリを検出し、高度な IntelliSense を提供するためにライブラリを記述する、対応する *.d.ts* ファイルを自動的にダウンロードして参照しようとします。 ファイルは、*%LOCALAPPDATA%\Microsoft\TypeScript* のユーザー フォルダーの下にあるキャッシュにダウンロードされます。
+既定では、Salsa 言語サービスは使用されている JavaScript ライブラリを検出し、高度な IntelliSense を提供するためにライブラリを記述する、対応する *.d.ts* ファイルを自動的にダウンロードして参照しようとします。 ファイルは、 *%LOCALAPPDATA%\Microsoft\TypeScript* のユーザー フォルダーの下にあるキャッシュにダウンロードされます。
 
 > [!NOTE]
-> *tsconfig.json* 構成ファイルを使用する場合、この機能は既定で**無効**になりますが、有効に設定することができます (下記参照)。
+> **tsconfig.json** 構成ファイルを使用する場合、この機能は既定で*無効*になりますが、有効に設定することができます (下記参照)。
 
 現在、自動検出は npm (*package.json* ファイルを読み取る場合)、Bower (*bower.json* ファイルを読み取る場合) からダウンロードされる依存関係に対して機能します。また、おおよそ上位 400 の最も一般的な JavaScript ライブラリのリストに一致する、プロジェクトのルーズ ファイルにも有効です。 たとえば、プロジェクトに *jquery-1.10.min.js* がある場合、ファイル *jquery.d.ts* は、優れた編集エクスペリエンスを提供するためにフェッチされ、読み込まれます。 この *.d.ts* ファイルはプロジェクトには影響しません。
 
 自動取得を使用しない場合は、以下に示すとおり、構成ファイルを追加して無効にします。 プロジェクト内で直接使用する場合も定義ファイルを手動で配置できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [IntelliSense の使用](../ide/using-intellisense.md)
 - [JavaScript のサポート (Visual Studio for Mac)](/visualstudio/mac/javascript)

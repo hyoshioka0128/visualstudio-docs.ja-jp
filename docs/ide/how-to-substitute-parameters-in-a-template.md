@@ -6,17 +6,17 @@ helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 09d86c52fcd9ddce3c986e0bfa6c9c96f746c663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656564"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591412"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>方法:テンプレート内のパラメーターを置き換える
+# <a name="how-to-substitute-parameters-in-a-template"></a>方法 : テンプレート内のパラメーターを置き換える
 
 テンプレート パラメーターを使うと、テンプレートからファイルを作成するときに、クラス名や名前空間などの識別子を置き換えることができます。 既存のテンプレートにテンプレート パラメーターを追加することも、テンプレート パラメーターで独自のテンプレートを作成することもできます。
 
@@ -34,13 +34,13 @@ ms.locfileid: "72656564"
 
 1. テンプレートの *vstemplate* ファイルで、このファイルを含む `ProjectItem` 要素を検索します。
 
-1. `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。
+1. `ReplaceParameters` 要素の `true` 属性を `ProjectItem` に設定します。
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
 - [テンプレート パラメーター](../ide/template-parameters.md)

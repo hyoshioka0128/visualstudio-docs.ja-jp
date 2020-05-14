@@ -2,17 +2,17 @@
 title: 特定のイベントを待機するようにコード化された UI テストを設定する
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e664b8574b5c362b57733dba63f45cc04cd1d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e594a6aec3f9e3a9664c5eac829b27f96f12ea0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652951"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75584453"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UI テストを設定する
 
@@ -25,7 +25,7 @@ ms.locfileid: "72652951"
 Visual Studio Enterprise
 
 > [!TIP]
-> またコード化された UI テスト エディターで操作の前に遅延を追加することもできます。 詳細については、[コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入する](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)」を参照してください。
+> またコード化された UI テスト エディターで操作の前に遅延を追加することもできます。 詳細については、「[方法: コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入する](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)」をご覧ください。
 
 **UITestControl.WaitForControlXXX() メソッド**
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-サーバーを呼び出すことでウィザードが入力の非同期の検証を実行するときに、コントロールが有効化されるまで待機します。 たとえば、このメソッドを使用してウィザードの **[次へ]** ボタンが有効化されるまで待機します。 このメソッドの例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
+サーバーを呼び出すことでウィザードが入力の非同期の検証を実行するときに、コントロールが有効化されるまで待機します。 たとえば、このメソッドを使用してウィザードの **[次へ]** ボタンが有効化されるまで待機します。 このメソッドの使用例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」をご覧ください。
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -105,11 +105,11 @@ Playback.Wait() は、ユーザー取り消し/ブレーク操作の確認中に
 > [!TIP]
 > コード化された UI テスト エディターを使用すると、コード化された UI テストを簡単に変更できます。 Coded UI Test Editor (コード化された UI テスト エディター) を使用すると、テスト メソッドを検索、表示、および編集できます。 また、UI コントロール マップ内の UI 操作および関連コントロールを編集することもできます。 詳細については、「[コード化された UI テスト エディターを使用してコード化された UI テストを編集する](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md)
-- [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
+- [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)
 - [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [方法: コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入する](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

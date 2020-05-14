@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b5c5f79b4ecfcac3e70b6be125c57bcc738199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655802"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75567724"
 ---
 # <a name="project-properties-reference"></a>プロジェクトのプロパティのリファレンス
 
@@ -24,9 +24,9 @@ ms.locfileid: "72655802"
 
 ## <a name="project-properties-pages"></a>プロジェクト プロパティ ページ
 
-| Title | 説明 |
+| タイトル | [説明] |
 | - | - |
-| [[アプリケーション] ページ (プロジェクト デザイナー)](../../ide/reference/application-page-project-designer-visual-basic.md) | このページを使用して、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] プロジェクトのアプリケーションの設定およびプロパティを指定できます。 |
+| [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | このページを使用して、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] プロジェクトのアプリケーションの設定およびプロパティを指定できます。 |
 | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/application-page-project-designer-csharp.md) | このページを使用して、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトのアプリケーションの設定およびプロパティを指定できます。 |
 | [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) | このペインを使用して、ビルド構成の手順を指定できます。 |
 | [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md) | このペインを使用して、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトのビルド構成プロパティを指定できます。 |
@@ -38,6 +38,6 @@ ms.locfileid: "72655802"
 | [[セキュリティ] ページ (プロジェクト デザイナー)](../../ide/reference/security-page-project-designer.md) | このページを使用して、[!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 配置によって配置されたアプリケーションのコード アクセス セキュリティの設定を構成できます。 |
 | [[署名] ページ (プロジェクト デザイナー)](../../ide/reference/signing-page-project-designer.md) | このページを使用して、アプリケーション マニフェストと配置マニフェストに署名し、アセンブリに署名できます。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)

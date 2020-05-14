@@ -1,40 +1,40 @@
 ---
-title: .NET Framework の拡張機能の内部を並列 |Microsoft Docs
+title: NET フレームワークの並列拡張内部 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ecc13be90259c68fa4d37daa5139b27b4ea8c7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6a3583e94a0bfff4474db03aa9d083add921f3da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351476"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738273"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework の並列拡張機能の内部
-内部の型、メソッド、について説明し、できるようにするクラスのフィールドは、.NET Framework の parallel extensions のカスタムのデバッガーを実装します。
+# <a name="parallel-extension-internals-for-the-net-framework"></a>NET フレームワークの並列拡張内部
+このセクションでは、.NET Framework への並列拡張機能のカスタム デバッガーを実装するのに役立つクラスの内部型、メソッド、およびフィールドについて説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [Task クラス](../../extensibility/debugger/task-class-internal-members.md)の内部データ メンバーについて説明します、<xref:System.Threading.Tasks.Task?displayProperty=fullName>クラス。
+ [タスククラス](../../extensibility/debugger/task-class-internal-members.md)クラスの内部データ メンバーについて説明<xref:System.Threading.Tasks.Task?displayProperty=fullName>します。
 
- [TaskScheduler クラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)の内部データ メンバーについて説明します、<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>クラス。
+ [タスクスケジューラクラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)クラスの内部データ メンバーについて説明<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>します。
 
- [ContingentProperties クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)の内部データ メンバーについて説明します、`System.Threading.Tasks.ContingentProperties`クラス。
+ [偶発プロパティ クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)クラスの内部データ メンバーについて説明`System.Threading.Tasks.ContingentProperties`します。
 
- [AsyncTaskMethodBuilder 構造](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)の内部メンバーについて説明します、<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>構造体。
+ [構造体](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)構造体の内部メンバーについて説明します<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>。
 
- [AsyncTaskMethodBuilder\<TResult > 構造体](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)の内部メンバーについて説明します、<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>構造体。
+ [構造体の内部メンバー\<](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)を表す構造体>を作成します。 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
 
- [AsyncVoidMethodBuilder 構造体](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)の内部メンバーについて説明します、<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>構造体。
+ [構造体](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)構造体の内部メンバーについて説明します<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>。
 
 ## <a name="see-also"></a>関連項目
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [デバッガーの機能拡張](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
 - [並列プログラミング](/dotnet/standard/parallel-programming/index)

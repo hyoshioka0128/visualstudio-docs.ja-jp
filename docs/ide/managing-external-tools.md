@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652387"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591295"
 ---
 # <a name="manage-external-tools"></a>外部ツールの管理
 
@@ -61,7 +61,7 @@ Visual Studio から **[ツール]** メニューを使用して外部ツール�
 
 外部ツールの定義時に使用できる引数の一覧を次に示します。
 
-|name|引数|説明|
+|名前|引数|説明|
 |----------|--------------|-----------------|
 |項目のパス|$(ItemPath)|現在のファイルの完全なファイル名 (ドライブ + パス + ファイル名)。|
 |項目のディレクトリ|$(ItemDir)|現在のファイルのディレクトリ (ドライブ + パス)。|

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd37547d8107cf35991aab684313dbff37adda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650893"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588591"
 ---
 # <a name="encodings-and-line-endings"></a>エンコーディングと行の終わり
 

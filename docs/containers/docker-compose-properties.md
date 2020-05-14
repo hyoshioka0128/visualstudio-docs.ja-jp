@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072724"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988514"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose のビルド プロパティ
 
@@ -35,13 +35,14 @@ ms.locfileid: "74072724"
 
 | プロパティ名 | 場所 | 説明 | 既定値  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|すべてのコマンドで docker-compose.exe に追加の Compose ファイルがセミコロンで区切られたリストで送信されるように指定します。 docker-compose プロジェクト ファイル (dcproj) からの相対パスが許可されます。|-|
+|AdditionalComposeFilePaths|dcproj|すべてのコマンドで docker-compose.exe に追加の Compose ファイルがセミコロンで区切られたリストで送信されるように指定します。 docker-compose プロジェクト ファイル (dcproj) からの相対パスが許可されます。|-|
 |DockerComposeBaseFilePath|dcproj|docker-compose ファイルのファイル名の最初の部分を *.yml* 拡張子なしで指定します。 次に例を示します。 <br>1.DockerComposeBaseFilePath = null/undefined: 基本ファイル パス *docker-compose* を使用します。ファイル名は *docker-compose.yml* および *docker-compose.override.yml* になります<br>2. DockerComposeBaseFilePath = *mydockercompose*: ファイル名は *mydockercompose.yml* および *mydockercompose.override.yml* になります<br> 3.DockerComposeBaseFilePath = *..\mydockercompose*: ファイルが 1 レベル上に移動します。 |docker-compose|
 |DockerComposeBuildArguments|dcproj|`docker-compose build` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--parallel --pull` |
 |DockerComposeDownArguments|dcproj|`docker-compose down` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--timeout 500`|-|  
 |DockerComposeProjectPath|csproj または vbproj|docker-compose プロジェクト (dcproj) ファイルの相対パス。 docker-compose.yml ファイルに格納されている関連イメージ ビルド設定を見つける目的で、サービス プロジェクトの公開時にこのプロパティを設定します。|-|
 |DockerComposeUpArguments|dcproj|`docker-compose up` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--timeout 500`|-|
-|DockerLaunchAction| dcproj | F5 または Ctrl + F5 キーで実行する起動アクションを指定します。  指定できる値には、None、LaunchBrowser、LaunchWCFTestClient があります。|なし|
+|DockerDevelopmentMode|dcproj| "ホスト上でビルド" の最適化 ("高速モード" のデバッグ) を有効にするかどうかを制御します。  指定できる値は、**Fast** と **Regular** です。 | Fast |
+|DockerLaunchAction| dcproj | F5 または Ctrl + F5 キーで実行する起動アクションを指定します。  指定できる値には、None、LaunchBrowser、LaunchWCFTestClient があります。|None|
 |DockerLaunchBrowser| dcproj | ブラウザーを起動するかどうかを示します。 DockerLaunchAction が指定されている場合は無視されます。 | False |
 |DockerServiceName| dcproj|DockerLaunchAction または DockerLaunchBrowser が指定されている場合、DockerServiceName は、起動する必要があるサービスの名前です。  docker-compose 構成ファイルで参照できるプロジェクトはたくさん存在する可能性があります。そのうちのどれを起動するかをこのプロパティを使用して決定します。|-|
 |DockerServiceUrl| dcproj | ブラウザーを起動するときに使用される URL。  有効な置換トークンには、"{ServiceIPAddress}"、"{ServicePort}"、"{Scheme}" があります。  例: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
@@ -109,6 +110,20 @@ services:
 |com.microsoft.visualstudio.debuggee.killprogram|このコマンドは、(必要なときに) コンテナー内で実行されているデバッグ対象プログラムを停止する目的で使用されます。|
 |com.microsoft.visualstudio.debuggee.program|デバッグの開始時に起動するプログラム。 .NET Core アプリの場合、この設定は通常、**dotnet** です。|
 |com.microsoft.visualstudio.debuggee.workingdirectory|デバッグの開始時に開始ディレクトリとして使用されるディレクトリ。 この設定は通常、Linux コンテナーの場合は */app*、Windows コンテナーの場合は *C:\app* になります。|
+
+## <a name="customize-the-app-startup-process"></a>アプリのスタートアップ プロセスをカスタマイズする
+
+`entrypoint` 設定を使用してアプリを起動する前に、コマンドまたはカスタム スクリプトを実行して、アプリを構成に依存させることができます。 たとえば、`update-ca-certificates` を実行して、証明書を**リリース** モードではなく**デバッグ** モードでのみ設定する必要がある場合、次のコードを *docker-compose.vs.debug.yml* にのみ追加できます。
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+*docker-compose.vs.release.yml* または *docker-compose.vs.debug.yml* を省略した場合は、Visual Studio によって既定の設定に基づいてどちらかが生成されます。
 
 ## <a name="next-steps"></a>次の手順
 

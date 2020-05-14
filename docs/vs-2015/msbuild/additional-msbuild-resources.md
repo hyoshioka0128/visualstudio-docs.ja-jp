@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298217"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445052"
 ---
 # <a name="additional-msbuild-resources"></a>追加の MSBuild リソース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,15 +612,16 @@ ms.locfileid: "74298217"
 問題を解決しようとした場合にドキュメントで必要な情報が見つからないときは、サポート技術情報の文書、開発者コミュニティ、製品サポートなど、他のリソースを参照してください。  
   
 ## <a name="knowledge-base-articles"></a>サポート技術情報の文書  
- サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 サポート技術情報には、[サポート技術情報 (MSBuild による検索結果)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) の Web サイトでアクセスできます。  
+ サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 [サポート](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)情報 Web サイトのサポート技術情報の記事にアクセスできます。  
   
 ## <a name="community-forums"></a>コミュニティ フォーラム  
- フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。 Visual Studio MSBuild フォーラムには、[MSDN フォーラム](https://go.microsoft.com/fwlink/?LinkId=48931)の Web サイトでアクセスできます。  
+ フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。 Visual Studio MSBuild フォーラムには、[MSDN フォーラム](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)の Web サイトでアクセスできます。  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] コミュニティ リソースには、[Channel 9 MSBuild](https://channel9.msdn.com/) の Web サイトでアクセスできます。  
   
 ## <a name="product-support"></a>製品のサポート  
- 他のリソースを参照しても問題が解決しない場合は、[Microsoft ヘルプとサポート](https://go.microsoft.com/fwlink/?linkid=1782)の Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../ide/talk-to-us.md)」をご覧ください。  
+ 他のリソースを参照しても問題が解決しない場合は、[Microsoft ヘルプとサポート](https://support.microsoft.com/)の Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../ide/talk-to-us.md)」をご覧ください。  
   
+
 ## <a name="see-also"></a>関連項目
  [.NET Framework を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

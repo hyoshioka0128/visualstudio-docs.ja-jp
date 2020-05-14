@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301009"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852026"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML モデリング プロジェクトおよびダイアグラムを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML モデルは、ソフトウェア システムを理解したり設計した
  UML モデリング図とレイヤー図が存在することが可能なのは、モデリング プロジェクト内のみです。 各モデリング プロジェクトには、1 つの共有 UML モデルといくつかの UML 図が含まれています。 各図はモデルの部分ビューです。 UML モデルは、UML 図にあるすべての要素が含まれていて、UML モデル エクスプローラーを使用して表示することができます。 モデルと図との関係の詳細については、「 [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)」を参照してください。 バージョン管理されたプロジェクトのモデリングについては、「[バージョン管理下のモデルと図の管理](../modeling/manage-models-and-diagrams-under-version-control.md)」および「[モデリングソリューションの構造](../modeling/structure-your-modeling-solution.md)」を参照してください。
 
 > [!NOTE]
-> また、プログラム コードを視覚化するために使用される、.NET クラス図と呼ばれる別の種類の図もあります。 詳細については、「[クラスと型の設計と表示](https://go.microsoft.com/fwlink/?LinkId=142231)」を参照してください。
+> また、プログラム コードを視覚化するために使用される、.NET クラス図と呼ばれる別の種類の図もあります。 詳細については、「[クラスと型の設計と表示](https://msdn.microsoft.com/library/ab7aty24.aspx)」を参照してください。
 
 ## <a name="CreatingModelingDiagrams"></a>モデリングプロジェクトでの図の作成
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -155,5 +155,5 @@ UML モデルは、ソフトウェア システムを理解したり設計した
 |モデリング プロジェクトを開くことも、ソリューションに読み込むこともできません。<br /><br /> 次のメッセージが表示されます。<br /><br /> "ソリューション内の 1 つ以上のプロジェクトが正しく読み込まれていません。 詳細については、出力ウィンドウを確認してください。"<br /><br /> [出力] ウィンドウに次のメッセージが表示されます。<br /><br /> "*ModelingProjectFilenameAndPath*: Error: 認識できない Guid 形式です。"|モデリング プロジェクトに、同じソリューション内にある同じ名前のプロジェクトへの参照が含まれています。<br /><br /> たとえば、同じソリューション内にある同じ名前のプロジェクトにレイヤーがリンクされています。|テキスト エディターを使用してモデリング プロジェクト ファイルを開き、参照を削除して、モデリング プロジェクトを再度開きます。<br /><br /> この問題を回避するには、同じ名前のプロジェクトへの参照を追加しないようにします。 プロジェクト名が一意であることを確認します。|
 |他のモデリング プロジェクト、またはソリューション内の他の場所に図を追加、コピー、ドラッグすると、その図の要素がなくなります。<br /><br /> または<br /><br /> 図を開こうとすると、次のメッセージが表示されます。<br /><br /> -"このプロジェクトには、定義が存在しないため、図の一部の図形またはコネクタがありません。 図を閉じている間に定義がモデルから削除されたか、これらの定義を含まない別のプロジェクトに図がコピーされました。"<br /><br /> または<br /><br /> -"このドキュメントは別のプロジェクトによって開かれています。"|モデリング プロジェクトから別のモデリング プロジェクトまたはソリューション内の別の場所に、図のファイルが追加、ドラッグ、またはコピーされました。|図のファイルをコピーするには、新しい図を作成し、コピー元の図から新しい図に要素をコピーします。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)[モデリングソリューションの構成](../modeling/structure-your-modeling-solution.md)

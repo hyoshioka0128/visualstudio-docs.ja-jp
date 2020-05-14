@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Microsoft Docs
+title: MACHINE_INFO |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e50fe4901ebcbf008bf191226502ccac8ec4cf5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339221"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714548"
 ---
-# <a name="machineinfo"></a>MACHINE_INFO
-特定のコンピューターについて説明します。
+# <a name="machine_info"></a>MACHINE_INFO
+特定のコンピュータについて説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,23 +45,23 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>メンバー
  `Fields`\
- フラグの組み合わせ、 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)構造体のフィールドが初期化されるかを指定する列挙体。
+ 構造体のどのフィールドを初期化するかを指定する[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)列挙体のフラグの組み合わせ。
 
  `bstrName`\
- コンピューター名。 呼び出しに相当[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)します。
+ コンピューター名。 呼び出しと同じ名前[を取得します](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)。
 
  `Flags`\
- フラグの組み合わせ、 [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)マシン属性を説明する列挙体。
+ マシン属性を記述する[MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)列挙体のフラグの組み合わせ。
 
 ## <a name="remarks"></a>Remarks
- この構造体が呼び出しによって返される、 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッド。
+ この構造体は[、GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッドの呼び出しによって返されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298173"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917313"
 ---
 # <a name="structure-your-modeling-solution"></a>モデリング ソリューションの構築
 
@@ -34,7 +34,7 @@ ms.locfileid: "74298173"
 
 #### <a name="to-divide-an-application-into-layers"></a>1 つのアプリケーションを複数のレイヤーに分割するには
 
-1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](https://go.microsoft.com/fwlink/?LinkId=196681)」の「application アーキタイプ」で説明しています。
+1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](/previous-versions/msp-n-p/ee658107(v=pandp.10))」の「application アーキタイプ」で説明しています。
 
 2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。このソリューションを「アーキテクチャ ソリューション」と呼びます。 このソリューションは、システムの全体設計の作成に使われます。 このソリューションにはモデルは含まれますが、コードは含まれません。
 
@@ -100,7 +100,7 @@ ms.locfileid: "74298173"
 
 #### <a name="to-create-a-solution-template"></a>ソリューション テンプレートを作成するには
 
-1. [テンプレートのエクスポートウィザード](https://go.microsoft.com/fwlink/?LinkId=196686)をまだ実行していない場合は、ダウンロードしてインストールします。
+1. [テンプレートのエクスポートウィザード](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)をまだ実行していない場合は、ダウンロードしてインストールします。
 
 2. 将来のプロジェクトの開始点として使用するソリューション構造を作成します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "74298173"
 4. ウィザードの指示に従って、テンプレートに含めるプロジェクトを追加し、テンプレートの名前と説明を入力して、出力する場所を指定します。
 
 > [!NOTE]
-> このトピックの内容は、Visual Studio ALM Rangers が作成した『Visual Studio アーキテクチャ ツーリング ガイダンス』から抽出して、わかりやすくしたものです。このガイダンスは、Most Valued Professional (MVP)、Microsoft Services、および Visual Studio 製品チームとライターのコラボレーションにより作成されました。 [完全なガイダンスパッケージをダウンロードするには、ここをクリックしてください。](https://go.microsoft.com/fwlink/?LinkID=191984)
+> このトピックの内容は、Visual Studio ALM Rangers が作成した『Visual Studio アーキテクチャ ツーリング ガイダンス』から抽出して、わかりやすくしたものです。このガイダンスは、Most Valued Professional (MVP)、Microsoft Services、および Visual Studio 製品チームとライターのコラボレーションにより作成されました。 [完全なガイダンスパッケージをダウンロードするには、ここをクリックしてください。](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>関連資料
 
@@ -117,7 +117,7 @@ ms.locfileid: "74298173"
 
 [Visual Studio アーキテクチャツールのガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)–チーム内のモデルの管理に関するその他のガイダンス
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 モデル[と図のバージョン](../modeling/manage-models-and-diagrams-under-version-control.md)管理の管理
 [開発プロセスでモデルを使用する](../modeling/use-models-in-your-development-process.md)

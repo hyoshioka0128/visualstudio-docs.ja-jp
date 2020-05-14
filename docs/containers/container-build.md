@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706792"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77027263"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Dockerfile 内の行は、Microsoft Container Registry (mcr.microsoft.com) の Nano Server イメージから始まり、ポート 80 および 443 を公開する中間イメージ `base` を作成し、作業ディレクトリを `/app` に設定します。
+Dockerfile 内の行は、Microsoft Container Registry (mcr.microsoft.com) の Debian イメージから始まり、ポート 80 および 443 を公開する中間イメージ `base` を作成し、作業ディレクトリを `/app` に設定します。
 
 次のステージは `build` で、次のように表示されます。
 
@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app
 ```
 
-`build` のステージは、base からの続きではなく、レジストリ (`aspnet` ではなく `sdk`) からの別の、元のイメージから開始されることがわかります。  `sdk` のイメージにはすべてのビルド ツールがあるため、実行時コンポーネントのみを含む aspnet イメージよりもかなり大きくなります。 別のイメージを使用する理由は、Dockerfile の残りの部分を確認すると明確になります。
+`build` のステージは、base からの続きではなく、レジストリ (`sdk` ではなく `aspnet`) からの別の、元のイメージから開始されることがわかります。  `sdk` のイメージにはすべてのビルド ツールがあるため、実行時コンポーネントのみを含む aspnet イメージよりもかなり大きくなります。 別のイメージを使用する理由は、Dockerfile の残りの部分を確認すると明確になります。
 
 ```
 FROM build AS publish
@@ -82,7 +82,7 @@ Visual Studio によって .NET Framework プロジェクト用 (および Visua
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Visual Studio IDE からソリューションをビルドすると、**出力**ウィンドウに表示されるような出力が表示されます。 Visual Studio でマルチステージ ビルドの最適化が使用されている場合は、**デバッグ**構成をビルドするときに得られる結果が想定どおりでない場合があるため、常に `/p:Configuration=Release` を使用します。 「[デバッグ](#debugging)」を参照してください。
+Visual Studio IDE からソリューションをビルドすると、**出力**ウィンドウに表示されるような出力が表示されます。 Visual Studio でマルチステージ ビルドの最適化が使用されている場合は、`/p:Configuration=Release`デバッグ**構成をビルドするときに得られる結果が想定どおりでない場合があるため、常に**  を使用します。 「[デバッグ](#debugging)」を参照してください。
 
 Docker Compose プロジェクトを使用している場合は、次のコマンドを使用してイメージをビルドします。
 
@@ -103,7 +103,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="volume-mapping"></a>ボリューム マッピング
 
-デバッグをコンテナーで機能させるために、Visual Studio では、ボリューム マッピングを使用してホスト マシンからデバッガーと NuGet フォルダーをマップします。 コンテナーにマウントされるボリュームは次のとおりです。
+デバッグをコンテナーで機能させるために、Visual Studio では、ボリューム マッピングを使用してホスト マシンからデバッガーと NuGet フォルダーをマップします。 ボリューム マッピングの詳細については、Docker のドキュメント ([こちら](https://docs.docker.com/storage/volumes/)) を参照してください。 コンテナーにマウントされるボリュームは次のとおりです。
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ ASP.NET CoreWeb アプリの場合、SSL 証明書とユーザー シークレ�
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>SSL 対応 ASP.NET Core アプリ
 
-Visual Studio のコンテナー ツールは、コンテナーがない場合に想定される方法で、開発証明書を使用した SSL 対応 ASP.NET Core アプリのデバッグをサポートしています。 それを実現するために、Visual Studio では、証明書をエクスポートしてコンテナーで使用できるようにするために、さらにいくつかの手順を追加しています。 フローは次のとおりです。
+Visual Studio のコンテナー ツールは、コンテナーがない場合に想定される方法で、開発証明書を使用した SSL 対応 ASP.NET Core アプリのデバッグをサポートしています。 それを実現するために、Visual Studio では、証明書をエクスポートしてコンテナーで使用できるようにするために、さらにいくつかの手順を追加しています。 コンテナーでデバッグするときの Visual Studio の処理フローを次に示します。
 
 1. ローカル開発証明書が存在し、`dev-certs` ツールを介してホスト マシン上で信頼されていることを確認します。
 2. この特定のアプリのユーザー シークレット ストアに保存されているセキュリティで保護されたパスワードを使用して、証明書を %APPDATA%\ASP.NET\Https にエクスポートします。
-3. 次のディレクトリのボリューム マウントを行います。
+3. 次のディレクトリのボリュームマウントを行います。
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,13 +140,15 @@ ASP.NET Core により、*Https* フォルダー以下のアセンブリ名に�
 }
 ```
 
-コンテナー内の ASP.NET Core アプリで SSL を使用する方法の詳細については、「[HTTPS 経由で Docker を使用して ASP.NET Core イメージをホストする](https://docs.microsoft.com/aspnet/core/security/docker-https)」を参照してください。
+構成でコンテナー化されたビルドとコンテナー化されていないビルドの両方がサポートされている場合は、環境変数を使用する必要があります。これは、パスがコンテナー環境に固有であるためです。
+
+コンテナー内の ASP.NET Core アプリで SSL を使用する方法の詳細については、「[HTTPS 経由で Docker を使用して ASP.NET Core イメージをホストする](/aspnet/core/security/docker-https)」を参照してください。
 
 ## <a name="debugging"></a>デバッグ
 
 **[デバッグ]** 構成でビルドする場合、コンテナー化されたプロジェクトのビルド プロセスのパフォーマンス向上に役立つ Visual Studio の最適化がいくつかあります。 コンテナー化されたアプリのビルド プロセスは、Dockerfile に記載されている手順に単に従うほど簡単ではありません。 コンテナーでのビルドは、ローカル コンピューターでのビルドよりもはるかに低速です。  そのため、**デバッグ**構成でビルドすると、Visual Studio によって実際にプロジェクトがローカル コンピューター上にビルドされてから、ボリューム マウントを使用して出力フォルダーがコンテナーに共有されます。 この最適化が有効になっているビルドは、*高速*モードのビルドと呼ばれます。
 
-**高速**モードでは、Visual Studio により、`base` ステージのみをビルドするように Docker に指示する引数を指定して `docker build` が呼び出されます。  Visual Studio では、Dockerfile の内容に関係なく、プロセスの残りの部分が処理されます。 そのため、コンテナー環境をカスタマイズしたり、追加の依存関係をインストールしたりするために Dockerfile を変更する場合は、最初のステージで変更を加える必要があります。  Dockerfile の `build`、`publish`、`final` のいずれかのステージに配置されているカスタム ステップは実行されません。
+**高速**モードでは、Visual Studio により、`docker build` ステージのみをビルドするように Docker に指示する引数を指定して `base` が呼び出されます。  Visual Studio では、Dockerfile の内容に関係なく、プロセスの残りの部分が処理されます。 そのため、コンテナー環境をカスタマイズしたり、追加の依存関係をインストールしたりするために Dockerfile を変更する場合は、最初のステージで変更を加える必要があります。  Dockerfile の `build`、`publish`、`final` のいずれかのステージに配置されているカスタム ステップは実行されません。
 
 このパフォーマンスの最適化は、**デバッグ**構成でビルドする場合にのみ発生します。 **リリース**構成では、Dockerfile で指定されているように、コンテナーでビルドが実行されます。
 
@@ -183,11 +185,11 @@ Visual Studio では、プロジェクトの種類とコンテナーのオペレ
 
 コンテナー エントリ ポイントは、単一コンテナー プロジェクトではなく、docker-compose プロジェクトでのみ変更できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 プロジェクト ファイルで追加の MSBuild プロパティを設定して、ビルドをさらにカスタマイズする方法について学習します。 [コンテナーのプロジェクトの MSBuild プロパティ](container-msbuild-properties.md)に関するページを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [MSBuild](../msbuild/msbuild.md)
 [Windows の Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

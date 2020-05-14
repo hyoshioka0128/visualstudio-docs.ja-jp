@@ -10,17 +10,17 @@ helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca3d54a7e2643baebe44e0f2756d6ae65eb228d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747793"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75565605"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)
 
@@ -32,7 +32,7 @@ ms.locfileid: "72747793"
 
 次のオプションを使用すると、プロジェクトの参照やインポートした名前空間を選択または削除できます。
 
-**[参照パス]**
+**参照パス**
 
 このボタンをクリックすると、 **[参照パス]** ダイアログ ボックスにアクセスします。
 
@@ -88,8 +88,8 @@ ms.locfileid: "72747793"
 
 - `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">` など、XML 名前空間。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクト内の参照の管理](../../ide/managing-references-in-a-project.md)
-- [方法: インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [方法 : インポートした名前空間を追加または削除する (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports ステートメント (XML 名前空間)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

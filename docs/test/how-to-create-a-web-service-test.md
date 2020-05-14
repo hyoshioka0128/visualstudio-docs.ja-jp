@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90dae3add4782af18763168643cfa5755d37cc2e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981268"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589098"
 ---
 # <a name="how-to-create-a-web-service-test"></a>方法: Web サービス テストを作成する
 

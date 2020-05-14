@@ -19,15 +19,15 @@ helpviewer_keywords:
 - set up Dotfuscator
 description: Visual Studio に含まれている Dotfuscator Community の無料コピーをインストールする方法について説明します。
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f4ff951ee202f706ab3b8553cff83519e36c86ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb659976126713a11594ad1b4aeb536510744c38
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652416"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596815"
 ---
 # <a name="install-dotfuscator-community"></a>Dotfuscator Community をインストールする
 
@@ -95,7 +95,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 その後、Visual Studio の個々のコンポーネントとして Dotfuscator Community をインストールできます。
 
-1. **[個々のコンポーネント]** タブを選択します。
+1. **[個別のコンポーネント]** タブを選択します。
 2. *[コード ツール]* で、 *[PreEmptive Protection - Dotfuscator]* 項目のチェック ボックスをオンにします。<br/> <br/> ![個々のコンポーネント](media/install_individually_12.png) <br/> <br/>
 3. *[概要]* パネルの *[個々のコンポーネント]* セクションに *[PreEmptive Protection - Dotfuscator]* が表示されます。 <br/> <br/> ![概要ペイン](media/install_individually_3.png) <br/> <br/>
 4. 使用環境に合わせて、インストール設定をさらに構成します。
@@ -103,7 +103,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 インストールが完了したら、Dotfuscator Community の使用を開始できます。 詳細については、[Dotfuscator Community の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [Dotfuscator Community の完全なユーザー ガイドのこのトピック](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 

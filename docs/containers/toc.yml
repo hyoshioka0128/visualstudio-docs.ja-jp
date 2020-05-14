@@ -7,7 +7,7 @@
     - name: クイック スタート
       expanded: true
       items:
-        - name: コンテナー内の ASP.NET Core アプリ
+        - name: コンテナー内の ASP.NET アプリ
           href: container-tools.md
         - name: コンテナー内の React.js シングル ページ アプリ
           href: container-tools-react.md
@@ -26,7 +26,7 @@
           href: edit-and-refresh.md
         - name: コンテナー レジストリに配置する
           href: hosting-web-apps-in-docker.md
-        - name: Azure App Service に配置する
+        - name: Azure App Service にデプロイする
           href: deploy-app-service.md
         - name: Docker Hub に配置する
           href: deploy-docker-hub.md
@@ -40,7 +40,7 @@
           href: container-build.md
     - name: トラブルシューティング
       href: troubleshooting-docker-errors.md
-    - name: 辞書／辞典／その他
+    - name: リファレンス
       items:
         - name: コンテナーのプロジェクトの MSBuild プロパティ
           href: container-msbuild-properties.md

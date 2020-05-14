@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772440"
 ---
 # <a name="performance-explorer-window"></a>[パフォーマンス エクスプローラー] ウィンドウ
@@ -50,7 +50,7 @@ Visual Studio IDE の **[パフォーマンス エクスプローラー]** ウ�
 
 - **レポート** - セッションに対して生成されるプロファイラー データ ファイルの名前を表示します。 **[レポート]** を右クリックし、既存のレポートの追加、または 2 つのプロファイラー データ ファイルの比較を行います。 レポート名を右クリックし、プロファイラー データ ファイルを開くか、削除するか、エクスポートします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [概要](../profiling/overviews-performance-tools.md)
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

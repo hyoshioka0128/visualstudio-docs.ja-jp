@@ -1,26 +1,26 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189494"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759730"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -61,7 +61,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 | Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-その他にサポートされているブートストラップして、[vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe) があります。
+その他にサポートされているブートストラップして、[vs_teamexplorer.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe)、[vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)、[vs_testcontroller.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe) があります。
 
 ::: moniker-end
 
@@ -237,8 +237,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 レイアウトからインストールする場合、インストールされる内容はレイアウトから取得されます。 ただし、レイアウトに含まれないコンポーネントを選択した場合は、インターネットから取得されます。  Visual Studio のセットアップでレイアウトにない内容がダウンロードされないようにするには、`--noWeb` オプションを使用します。 `--noWeb` が使用されていて、インストール対象として選択されている内容がレイアウトにない場合、セットアップは失敗します。
 
+> [!TIP]
+> インターネットに接続されていないコンピューターのオフライン ソースからインストールする場合は、`--noWeb` と `--noUpdateInstaller` の両方のオプションを指定します。 前者では、更新されたワークロードやコンポーネントなどがダウンロードできなくなります。 後者では、インストーラーが Web から自己更新できなくなります。
+
 > [!IMPORTANT]
-> `--noWeb` オプションを使っても、Visual Studio のセットアップで更新プログラムのチェックが行われなくなることはありません。 詳細については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページをご覧ください。
+> `--noWeb` オプションを使っても、インターネットに接続されたコンピューターにセットアップされた Visual Studio で更新プログラムのチェックが行われなくなることはありません。 詳細については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページをご覧ください。
 
 ### <a name="error-codes"></a>エラー コード
 
@@ -280,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 オフライン インストールに問題が発生した場合は、マイクロソフトにお知らせください。 問題報告の最善の方法として、[[問題を報告する]](../ide/how-to-report-a-problem-with-visual-studio.md) ツールを使用できます。 このツールでは、テレメトリとログを送信できます。これを、マイクロソフトは問題の診断と解決に役立てます。
 
-インストール関連の問題については、[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションも用意されています。
+インストール関連の問題については、[**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションも用意されています。
 
 他にも利用可能なサポート オプションがあります。 一覧については、[フィードバック](../ide/feedback-options.md)に関するページをご覧ください。
 
@@ -294,3 +297,4 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)
 - [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
+- [Visual Studio オフライン インストールに必要な証明書をインストールする](install-certificates-for-visual-studio-offline.md)

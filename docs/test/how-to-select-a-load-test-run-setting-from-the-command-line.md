@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 09aa92b36058ff714784aff12851e1b82c78a99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653455"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588994"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>方法: コマンド ラインから使用するロード テストの実行設定を選択する
 
@@ -34,7 +34,7 @@ ms.locfileid: "72653455"
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

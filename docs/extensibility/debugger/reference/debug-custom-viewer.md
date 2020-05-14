@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
+title: DEBUG_CUSTOM_VIEWER |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba4af7ef465a4d98f78eccc9f7dce7dd4fa43aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346195"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737548"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-カスタム ビューアーを識別する構造またはビジュアライザーを入力します。
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
+カスタム ビューアーまたは型ビジュアライザーを識別する構造体。
 
 ## <a name="syntax"></a>構文
 
@@ -51,32 +51,32 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>メンバー
 `dwID`\
-複数の閲覧者またはビジュアライザーで 1 つ実装を区別するために ID`GUID`します。
+1 つ`GUID`によって実装された複数のビューアーまたはビジュアライザーを区別するための ID 。
 
 `bstrMenuName`\
 ドロップダウン メニューに表示されるテキスト。
 
 `bstrDescription`\
-カスタム ビューアーまたは型のビジュアライザーが (あります null 値を使用しない場合) の説明。
+カスタム ビューアーまたは型ビジュアライザーの説明 (使用しない場合は null 値である必要があります)。
 
 `guidLang`\
-提供する式エバリュエーターの言語です。
+提供式エバリュエーターの言語。
 
 `guidVendor`\
-提供する式エバリュエーターのベンダー。
+提供式エバリュエーターのベンダー。
 
 `bstrMetric`\
-メトリックをカスタム ビューアーまたは型のビジュアライザー`CLSID`格納されます。
+カスタム ビューアーまたは型ビジュアライザー`CLSID`が格納されるメトリック。
 
 ## <a name="remarks"></a>Remarks
-この構造体のリストがへの呼び出しによって返される、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)メソッド (と拡張機能によって、 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)メソッド)。
+この構造体のリストは、メソッド (および拡張によって[、GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)メソッド) の呼び[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)出しによって返されます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

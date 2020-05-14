@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888652"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549933"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio で JavaScript と TypeScript のコードをソリューションまたはプロジェクトなしで開発します
 
@@ -27,7 +27,7 @@ Visual Studio 2017 以降では、[プロジェクトまたはソリューショ
 開始するには、ツール バーで **[ファイル]**  >  **[開く]**  >  **[フォルダー]** の順に選択します。 ソリューション エクスプローラーには、フォルダーのすべてのファイルが表示されます。いずれかのファイルを開いて編集を開始できます。 バックグラウンドでは、Visual Studio によってファイルにインデックスが作成され、npm、ビルド、デバッグ機能が有効になります。
 
 > [!IMPORTANT]
-> npm 統合を含め、この記事で説明する機能の多くでは、Visual Studio 2017 バージョン 15.8 以降が必要です。
+> npm 統合を含め、この記事で説明する機能の多くでは、Visual Studio 2017 バージョン 15.8 以降が必要です。 Visual Studio の **[Node.js 開発]** ワークロードがインストールされている必要があります。
 
 ## <a name="npm-integration"></a>npm 統合
 

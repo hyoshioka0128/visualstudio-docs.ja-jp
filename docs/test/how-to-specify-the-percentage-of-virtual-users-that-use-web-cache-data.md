@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc8baf2586e0c0ce682436387bfd612af14e18bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653376"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76113362"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>方法: Web キャッシュ データを使用する仮想ユーザーの割合を指定する
 

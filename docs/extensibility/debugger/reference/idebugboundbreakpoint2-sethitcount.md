@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount |Microsoft Docs
+title: をクリックしてブレークポイントを指定します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SetHitCount method
 - IDebugBoundBreakpoint2::SetHitCount method
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8e59fadb019124cca111f23e99220b77df2a88d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314470"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735406"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 バインドされたブレークポイントのヒット カウントを設定します。
@@ -42,15 +42,15 @@ int SetHitCount( 
 
 ## <a name="parameters"></a>パラメーター
 `dwHitCount`\
-[in]ヒット カウントを設定します。
+[in]設定するヒット カウント。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`にバインドされたブレークポイント オブジェクトの状態が設定されてかどうか`BPS_DELETED`(の一部、 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙型)。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 バインド`E_BP_DELETED`されたブレークポイント オブジェクトの状態が[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙`BPS_DELETED`の一部) に設定されているかどうかを返します。
 
 ## <a name="remarks"></a>Remarks
- ヒット カウントは、このブレークポイントは、セッションの現在の実行中に発生した回数です。
+ ヒット カウントは、セッションの現在の実行中にこのブレークポイントが発生した回数です。
 
- このメソッドは通常、このブレークポイントで現在のヒット カウントを更新するデバッグ エンジンによって呼び出されます。
+ このメソッドは、通常、このブレークポイントの現在のヒット カウントを更新するデバッグ エンジンによって呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

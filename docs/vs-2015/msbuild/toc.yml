@@ -8,9 +8,9 @@
       items:
         - name: MSBuild の概念
           href: msbuild-concepts.md
-        - name: プロパティ
+        - name: Properties
           items:
-            - name: プロパティ
+            - name: Properties
               href: msbuild-properties1.md
             - name: ビルドで環境変数を使用する
               href: how-to-use-environment-variables-in-a-build.md
@@ -20,9 +20,9 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: プロパティ関数
               href: property-functions.md
-        - name: 項目
+        - name: アイテム
           items:
-            - name: 項目
+            - name: アイテム
               href: msbuild-items.md
             - name: ビルドするファイルを選択する
               href: how-to-select-the-files-to-build.md
@@ -56,9 +56,9 @@
                   href: writealltlogs.md
                 - name: WriteContextTLogs
                   href: writecontexttlogs.md
-        - name: ターゲット
+        - name: 対象サーバー
           items:
-            - name: ターゲット
+            - name: 対象サーバー
               href: msbuild-targets.md
             - name: ターゲットのビルド順序
               href: target-build-order.md
@@ -74,9 +74,9 @@
               href: how-to-build-incrementally.md
             - name: ビルドをクリーンする
               href: how-to-clean-a-build.md
-        - name: '[タスク]'
+        - name: 処理手順
           items:
-            - name: '[タスク]'
+            - name: 処理手順
               href: msbuild-tasks.md
             - name: タスクの作成
               href: task-writing.md
@@ -114,9 +114,9 @@
               href: item-metadata-in-target-batching.md
         - name: 変換
           href: msbuild-transforms.md
-        - name: Visual Studio の統合
+        - name: Visual Studio との統合
           items:
-            - name: Visual Studio の統合
+            - name: Visual Studio との統合
               href: visual-studio-integration-msbuild.md
             - name: Visual Studio ビルド処理を拡張する
               href: how-to-extend-the-visual-studio-build-process.md

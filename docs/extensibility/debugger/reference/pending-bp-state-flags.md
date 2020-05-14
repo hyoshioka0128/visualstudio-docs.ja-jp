@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS | Microsoft Docs
+title: PENDING_BP_STATE_FLAGS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3b51d7c30650087c6611b79ec0b91e2a6bb83b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349890"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714087"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 保留中のブレークポイントの状態フラグを指定します。
 
 ## <a name="syntax"></a>構文
@@ -43,19 +43,19 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 ```
 
 ## <a name="fields"></a>フィールド
- `PBPSF_NONE` プレース ホルダーです。
+ `PBPSF_NONE`プレース ホルダー。
 
- `PBPSF_VIRTUALIZED` 保留中のいずれかの新しいコードが読み込まれるたびにバインドするには、ブレークポイントを仮想化を指定します。
+ `PBPSF_VIRTUALIZED`新しいコードが読み込まれるたびにバインドされる、仮想化された保留中のブレークポイントを指定します。
 
 ## <a name="remarks"></a>Remarks
- 使用、`flags`のメンバー、 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体。
+ PENDING_BP_STATE_INFO構造体の`flags`メンバーに使用[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)されます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

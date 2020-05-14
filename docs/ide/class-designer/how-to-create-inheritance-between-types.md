@@ -8,17 +8,17 @@ helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8a7d7f3facf1408f87ef23dfa8ed8462195c172
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590372"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の継承を作成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "72647725"
 
 1. **ソリューション エクスプローラー**のプロジェクトから、クラス ダイアグラム (.cd) ファイルを開きます。
 
-     クラス ダイアグラムがない場合は、クラス ダイアグラムを作成します。 「[方法:プロジェクトにクラス ダイアグラムを追加する](how-to-add-class-diagrams-to-projects.md)」を参照してください。
+     クラス ダイアグラムがない場合は、クラス ダイアグラムを作成します。 「[方法: プロジェクトにクラス ダイアグラムを追加する](how-to-add-class-diagrams-to-projects.md)」をご覧ください。
 
 2. **[クラス デザイナー]** の **[ツールボックス]** で、 **[継承]** をクリックします。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72647725"
     >
     >  既存のジェネリック型を視覚化できますが、新しいジェネリック型は作成できません。 また、既存のジェネリック型の型パラメーターは変更できません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [継承](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [継承の基本](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

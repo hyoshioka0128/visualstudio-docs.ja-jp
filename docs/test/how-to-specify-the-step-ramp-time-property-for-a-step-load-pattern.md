@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653349"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588916"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>方法: ステップ ロード パターンのステップごとの傾斜増加時間プロパティを指定する
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>方法: ステップ ロード パターンの "ステップごとの傾斜増加時間" プロパティを指定する
 
-**新しいロード テスト** ウィザードでロード テストを作成した後で、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。 詳細については、[ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)」を参照してください。
+**新しいロード テスト ウィザード**でロード テストを作成した後で、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。 詳細については、「[チュートリアル: ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)」を参照してください。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -26,19 +26,19 @@ ms.locfileid: "72653349"
 
 **[ステップごとの傾斜増加時間]** プロパティを **[プロパティ]** ウィンドウで設定します。 **ロード テスト エディター**でロード テスト シナリオのプロパティを編集します。
 
-**[ステップごとの傾斜増加時間]** プロパティは、ステップ ロード パターンのみで使用します。 詳細については、「[ロード パターンを編集して仮想ユーザー アクティビティをモデル化する](../test/edit-load-patterns-to-model-virtual-user-activities.md)」を参照してください。
+**[ステップごとの傾斜増加時間]** プロパティは、ステップ ロード パターンのみで使用します。 詳細については、「[ロード パターンを編集して仮想ユーザー アクティビティをモデル化](../test/edit-load-patterns-to-model-virtual-user-activities.md)」を参照してください。
 
 ステップ ロード パターンは、ロード テストを実行するときにサーバーの負荷を増加するために使用します。これにより、ユーザー ロードが増加するにつれてパフォーマンスがどのように変化するかが確認できます。 たとえば、ユーザー ロードが 2,000 人に増加したときにサーバーがどのように動作するかを確認するには、次のプロパティでステップ ロード パターンを使用して 10 時間のロード テストを実行します。
 
-- 初期のユーザー カウント:100
+- 初期のユーザー カウント: 100
 
-- 最大ユーザー カウント:2000
+- 最大ユーザー カウント: 2000
 
-- ステップ実行間隔 (秒):1800
+- ステップ実行間隔 (秒): 1800
 
-- ステップごとの傾斜増加時間 (秒):20
+- ステップごとの傾斜増加時間 (秒): 20
 
-- ステップごとのユーザー カウント:100
+- ステップごとのユーザー カウント: 100
 
 これらの設定では、100 人、200 人、300 人をはじめ、2,000 人までのユーザー ロードで、30 分 (1,800 秒) のロード テストを実行します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72653349"
 3. **[ステップ ロード パターン]** ノードを選択します。
 
     > [!NOTE]
-    > シナリオのロード パターンは、ステップ ロード パターンである必要があります。 そうでない場合は、ロード パターンにより現在シナリオに関連付けられているロード パターンのタイプが表示されます。 詳細については、「[ロード パターンを編集して仮想ユーザー アクティビティをモデル化する](../test/edit-load-patterns-to-model-virtual-user-activities.md)」を参照してください。
+    > シナリオのロード パターンは、ステップ ロード パターンである必要があります。 そうでない場合は、ロード パターンにより現在シナリオに関連付けられているロード パターンのタイプが表示されます。 詳細については、「[ロード パターンを編集して仮想ユーザー アクティビティをモデル化](../test/edit-load-patterns-to-model-virtual-user-activities.md)」を参照してください。
 
 4. **[表示]** メニューの **[プロパティ ウィンドウ]** をクリックします。
 
@@ -68,7 +68,7 @@ ms.locfileid: "72653349"
 
 6. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 その後、新しい **[ステップごとの傾斜増加時間]** の値を使用して、ロード テストを実行できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)

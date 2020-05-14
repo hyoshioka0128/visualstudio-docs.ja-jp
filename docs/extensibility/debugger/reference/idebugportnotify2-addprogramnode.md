@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode |Microsoft Docs
+title: プログラムノードの追加マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::AddProgramNode
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0afd0b2ae50555e29a75159edb8f52635730a56
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319465"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724984"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-実行されているポートをデバッグできるプログラムを登録します。
+実行しているポートでデバッグできるプログラムを登録します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int AddProgramNode( 
 
 ## <a name="parameters"></a>パラメーター
 `pProgramNode`\
-[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を登録するプログラムを表すオブジェクト。
+[in]登録する[プログラム](../../../extensibility/debugger/reference/idebugprogramnode2.md)を表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- プログラム ノードを登録解除できますポートから呼び出すことによって、 [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)メソッド。
+ プログラム ノードは[、RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)メソッドを呼び出すことによって、ポートから登録を解除できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

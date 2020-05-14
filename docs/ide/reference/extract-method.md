@@ -3,8 +3,8 @@ title: メソッドの抽出
 description: コードを選択してから Ctrl + R キー、Ctrl + M キーを入力して、コードの一部を独自のメソッドに変換します。
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569700"
 ---
 # <a name="extract-a-method-refactoring"></a>メソッドの抽出リファクタリング
 
@@ -28,13 +28,13 @@ ms.locfileid: "72654396"
 
 - Visual Basic
 
-**概要:** コードのフラグメントを独自のメソッドに変換できます。
+**機能:** コードのフラグメントを独自のメソッドに変換できます。
 
 **条件:** メソッドに、別のメソッドから呼び出される必要がある既存のコードのフラグメントがあるとき。
 
 **理由:** コードのコピー/貼り付けはできるが、重複につながるおそれがあるため。 他のメソッドから自由に呼び出すことができる独自のメソッドに、そのフラグメントをリファクターすることをお勧めします。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. 抽出するコードを強調表示します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "72654396"
 
 2. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - **Ctrl + R** キーを押し、次に **Ctrl + M** キーを押します。 選ばれているプロファイルによってキーボード ショートカットが異なる場合があることに注意してください。
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[メソッドの抽出]** を選択します。
    - **マウス**
@@ -59,7 +59,7 @@ ms.locfileid: "72654396"
    メソッドがすぐに作成されます。 ここから、新しい名前を入力するだけで、メソッドの名前を今すぐ変更できます。
 
    > [!TIP]
-   > この新しい名前を使用するコメントやその他の文字列も更新できます。また、IDE の右上に表示される **[名前の変更]** ボックス内のチェックボックスを使用して、保存前に[変更をプレビュー](../../ide/preview-changes.md)することもできます。
+   > この新しい名前を使用するコメントやその他の文字列も更新できます。また、IDE の右上に表示される [[名前の変更]](../../ide/preview-changes.md) ボックス内のチェックボックスを使用して、保存前に**変更をプレビュー**することもできます。
 
    - C#:
 
@@ -71,7 +71,7 @@ ms.locfileid: "72654396"
 
 3. 変更を確認した後は、 **[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

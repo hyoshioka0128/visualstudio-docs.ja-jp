@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302800"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918270"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   詳細については、次のトピックを参照してください。
 
-|トピック|[読み取り]|
+|トピック|読み取り|
 |--------------------|----------|
 |ユース ケースを作成する方法に関する詳細情報|[UML ユース ケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)|
 |ユース ケース図の要素|[UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)|
@@ -132,18 +132,18 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   詳細については、次のトピックを参照してください。
 
-|トピック|[読み取り]|
+|トピック|読み取り|
 |--------------------|----------|
 |要求クラスの検索に関する詳細|[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|
 |概念クラスからコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
 
- 概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。 次の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能では、方向性を示さない矢印が既定の設定になります: [サンプル: UML ドメイン モデリング機能](https://go.microsoft.com/fwlink/?LinkId=213849)
+ 概念クラス図では通常、移動方向を表すために、関連付けに矢印を配置しても役に立ちません。 これは、図が実装を表していないためです。 関連付けは、現実世界のオブジェクト間の関係を表します。
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。
 
- 多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらの*静的ビジネスルール*は、概念クラス図の関連クラスに関連付けられたコメントとして記述できます。 例 :
+ 多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらの*静的ビジネスルール*は、概念クラス図の関連クラスに関連付けられたコメントとして記述できます。 例:
 
  ![Order クラスに添付されたコメント内のルール。](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
@@ -155,7 +155,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
  詳細については、次のトピックを参照してください。
 
-|トピック|[読み取り]|
+|トピック|読み取り|
 |--------------------|----------|
 |静的なビジネス ルールの検索と記録の詳細|[UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)|
 |概念クラス図の要素|[UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)|
@@ -164,15 +164,15 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
  サービス品質要求には、いくつかのカテゴリがあります。 フォルダーには次のようなものがあります。
 
-- パフォーマンス テスト
+- パフォーマンス
 
 - セキュリティ
 
-- 使いやすさ
+- 使用性
 
 - 信頼性
 
-- 信頼性
+- 保全性
 
   これらの要求のいくつかを、特定のユース ケースの説明に含めることができます。 その他の要求は、ユース ケースに固有のものではなく、個別のドキュメントに記載することが最も効果的です。 可能であれば、要求モデルで定義されているボキャブラリに準拠すると便利です。 次の例では、要求で使用されている主な単語が、前のイラストのアクターのタイトル、ユース ケース、およびクラスである点に注意してください。
 
@@ -180,7 +180,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   詳細については、次のトピックを参照してください。
 
-|トピック|[読み取り]|
+|トピック|読み取り|
 |--------------------|----------|
 |ユース ケースへの追加ドキュメントのアタッチ|[ユース ケースをドキュメントおよび図にリンクする](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |サービス品質要求に準拠しているコードを開発する方法|[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|
@@ -188,11 +188,11 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 ## <a name="Workflow"></a>ユーザーとシステム間のワークフローを表示する
  アクティビティ図を使って、さまざまなユース ケース間のワークフローを表示することができます。 多くの場合、ユーザーがシステムおよびシステム外の両方で実行する主なタスクを示すアクティビティ図を描画して、要件のモデルを開始すると便利です。
 
- 例 :
+ 例:
 
  ![3つのアクションと1つのループを持つアクティビティ。](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- ユース ケース図やアクティビティ図を描画して、同じ情報を異なるビューで表示することができます。  ユース ケース図は、より大規模なアクティビティ内の小さいアクションの入れ子構造を表示するのにより効果的ですが、ワークフローは表示されません。 例 :
+ ユース ケース図やアクティビティ図を描画して、同じ情報を異なるビューで表示することができます。  ユース ケース図は、より大規模なアクティビティ内の小さいアクションの入れ子構造を表示するのにより効果的ですが、ワークフローは表示されません。 例:
 
  ![前のアクションのユースケース](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
@@ -200,7 +200,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
  詳細については、次のトピックを参照してください。
 
-|トピック|[読み取り]|
+|トピック|読み取り|
 |--------------------|----------|
 |ビジネス ワークフローを定義する方法の詳細|[UML アクティビティ図: ガイドライン](../modeling/uml-activity-diagrams-guidelines.md)|
 |アクティビティ図の要素|[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)|
@@ -209,7 +209,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 ## <a name="Sequences"></a>ユーザーとシステム間の相互作用の表示
  シーケンス図を使って、システムと外部アクター間、またはシステムのパーツ相互間のメッセージのやり取りを表示できます。 これにより、相互作用のシーケンスを非常に明確に示すユース ケース内の手順が表示されます。 ユース ケース内で複数の関係者が相互作業している場合や、システムに API がある場合に、シーケンス図は特に便利です。
 
- 例 :
+ 例:
 
  ![システムとアクターを含むシーケンス図。](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
@@ -217,7 +217,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
  詳細については、次のトピックを参照してください。
 
-|トピック|[読み取り]|
+|トピック|読み取り|
 |--------------------|----------|
 |相互作用の定義方法の詳細|[UML シーケンス図: ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)|
 |シーケンス図の要素|[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)|
@@ -238,5 +238,5 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
   さまざまな図が提供するビュー間の関係を調べることで、ユーザーの作業に関する主要な概念をすばやく理解し、システムに何が必要かをユーザーが理解できるようにします。 また、利害関係者がほとんど意識していない要求についても、より深く理解することができます。 プロジェクトの初期段階で、これらの機能を少なくとも簡略化された形式で開発し、ユーザーがその機能を試してみることを計画できます。
 
-## <a name="see-also"></a>関連項目
- [Uml モデルおよび図の編集](../modeling/edit-uml-models-and-diagrams.md)[モデルからのテストの作成](../modeling/develop-tests-from-a-model.md)[開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)の使用モデル[サンプル vs 拡張機能: uml ドメインモデリング機能](https://go.microsoft.com/fwlink/?LinkId=213849)サンプル Vs 拡張機能: uml 要素を[ステレオタイプ別に色](https://go.microsoft.com/fwlink/?LinkID=213841)を設定するサンプル vs 拡張機能: uml[図に](https://go.microsoft.com/fwlink/?LinkID=213809)uml[要素をリンクする](https://go.microsoft.com/fwlink/?LinkID=213813)[ビデオ: ビジネスドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+## <a name="see-also"></a>参照
+ [UML モデルとダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)[モデルからのテストの作成](../modeling/develop-tests-from-a-model.md)[開発プロセスで](../modeling/use-models-in-your-development-process.md)のモデルの使用[アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)[ビデオ: ビジネスドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

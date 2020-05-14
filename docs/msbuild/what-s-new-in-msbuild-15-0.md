@@ -3,18 +3,18 @@ title: MSBuild 15 の新機能 | Microsoft Docs
 ms.date: 03/01/2017
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: cd3e86e3cbaaf9c368f848cbd0136c0473932490
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631030"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 の新機能
 
@@ -38,10 +38,11 @@ MSBuild は現在 [.NET Core SDK](https://www.microsoft.com/net/download/core) �
 
 - `SDK35ToolsPath` と `SDK40ToolsPath`: これらのプロパティは、このバージョンの Visual Studio に含まれている .NET Framework SDK を指しています (たとえば、4.X ツールの場合は 10.0A など)。
 
-## <a name="updates"></a>更新
-- [Project 要素](../msbuild/project-element-msbuild.md)には新しい `SDK` 属性があります。 `Xmlns` 属性も省略できます。 `SDK` 属性の詳細については、「[方法:MSBuild プロジェクト SDK の参照](../msbuild/how-to-use-project-sdk.md)」、「[パッケージ、メタパッケージ、フレームワーク](/dotnet/core/packages)」、および「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
+## <a name="updates"></a>更新プログラム
+
+- [Project 要素](../msbuild/project-element-msbuild.md)には新しい `SDK` 属性があります。 `Xmlns` 属性も省略できます。 `SDK` 属性の詳細については、「[方法: MSBuild プロジェクト SDK の参照](../msbuild/how-to-use-project-sdk.md)」、「[パッケージ、メタパッケージ、フレームワーク](/dotnet/core/packages)」および「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
 - ターゲットの外部の [Item 要素](../msbuild/item-element-msbuild.md)には新しい `Update` 属性があります。 また、`Remove` 属性に対する制限も排除されました。
-- *Directory.Build.props* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。 `ImportDirectoryBuildTargets` プロパティを **false** に設定しない限り、このファイルは *Microsoft.Common.props* から自動的にインポートされます。 *Directory.Build.targets* は *Microsoft.Common.targets* によってインポートされます。
+- *Directory.Build.props* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。 *プロパティを*false`ImportDirectoryBuildTargets` に設定しない限り、このファイルは **Microsoft.Common.props** から自動的にインポートされます。 *Directory.Build.targets* は *Microsoft.Common.targets* によってインポートされます。
 - 現行の属性リストと競合しない名前のメタデータを任意で属性として表現できます。 詳しくは、「[Item 要素](../msbuild/item-element-msbuild.md)」をご覧ください。
 
 ## <a name="new-property-functions"></a>新しいプロパティ関数
@@ -51,5 +52,6 @@ MSBuild は現在 [.NET Core SDK](https://www.microsoft.com/net/download/core) �
 - `NormalizeDirectory` はパス要素を結合し、末尾のスラッシュを確認し、出力文字列に現在のオペレーティング システムの適切なディレクトリ区切り文字が含まれることを確認します。
 - `GetPathOfFileAbove` は、直前のファイルのパスを返します。 その機能は `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />` の呼び出しと同じです
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [MSBuild](../msbuild/msbuild.md)

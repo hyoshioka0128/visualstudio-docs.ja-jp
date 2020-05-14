@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535724"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt での必須パッケージの管理
@@ -27,9 +27,9 @@ ms.locfileid: "62535724"
 
     ![requirements.txt からインストールする](media/environments/environments-requirements-txt-install.png)
 
-- 仮想環境に依存関係をインストールする場合は、最初にその環境を作成してアクティブ化した後、**[requirements.txt からインストール]** コマンドを使用します。 仮想環境の作成について詳しくは、「[仮想環境を使用する](selecting-a-python-environment-for-a-project.md#use-virtual-environments)」をご覧ください。
+- 仮想環境に依存関係をインストールする場合は、最初にその環境を作成してアクティブ化した後、 **[requirements.txt からインストール]** コマンドを使用します。 仮想環境の作成について詳しくは、「[仮想環境を使用する](selecting-a-python-environment-for-a-project.md#use-virtual-environments)」をご覧ください。
 
-- 既に必要なすべてのパッケージを環境にインストールしている場合は、**ソリューション エクスプローラー**で環境を右クリックし、**[requirements.txt を生成]** を選択することで、必要なファイルを作成できます。 ファイルが既に存在する場合、更新方法の指定を求められます。
+- 既に必要なすべてのパッケージを環境にインストールしている場合は、**ソリューション エクスプローラー**で環境を右クリックし、 **[requirements.txt を生成]** を選択することで、必要なファイルを作成できます。 ファイルが既に存在する場合、更新方法の指定を求められます。
 
     ![requirements.txt の更新オプション](media/environments/environments-requirements-txt-replace.png)
 
@@ -66,7 +66,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)

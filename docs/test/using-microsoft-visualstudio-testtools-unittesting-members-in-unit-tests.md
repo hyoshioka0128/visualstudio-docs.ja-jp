@@ -2,17 +2,17 @@
 title: 単体テストで Microsoft.VisualStudio.TestTools.UnitTesting を使用する
 ms.date: 03/02/2018
 ms.topic: reference
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: c69950e478fc8a35d46257876a84a28129bf1baa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659759"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75585562"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>単体テストでの MSTest フレームワークの使用
 
@@ -133,6 +133,6 @@ ClassInitialize がクラスの読み込みの直後に、ClassCleanup がクラ
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>リファレンス ドキュメント

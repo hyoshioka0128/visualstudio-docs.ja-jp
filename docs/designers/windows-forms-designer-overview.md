@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b26ad18da19d5a2e53199b49e7acc024c728be9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589891"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows フォーム デザイナーの概要
 
@@ -35,7 +35,7 @@ Visual Studio の Windows フォーム デザイナーでは、Windows フォー
 > [!NOTE]
 > フォームのリソース ( *.resx*) ファイルを変更するには、リソース エディターではなく Windows フォーム デザイナーを使用します。 フォーム ベースの .resx ファイルを編集すると、リソース エディターで行った変更が失われる可能性があることを示す警告が表示されます。 これは、Windows フォーム デザイナーによって .resx ファイルが生成されるためです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Windows フォームの概要](/dotnet/framework/winforms/windows-forms-overview)
 - [Windows フォームのコントロール](/dotnet/framework/winforms/controls/)

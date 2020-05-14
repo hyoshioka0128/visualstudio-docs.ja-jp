@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs
+title: コールバック2::オブジェクトをローカルオブジェクトに追加する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 561f6727ca0273d5d59434a7bfdd0cdc00533754
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fc205392f325a014bfe07b02b64cd8b0050ce079
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322188"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720072"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
-メトリックの名前を指定、式エバリュエーターのローカル オブジェクトを取得します。
+メトリック名を指定して、式エバリュエーターのローカル オブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,19 +45,19 @@ private int GetEELocalObject(
 
 ## <a name="parameters"></a>パラメーター
 `guidLang`\
-[in]プログラミング言語の一意の識別子。
+[in]プログラミング言語を表す一意の識別子です。
 
 `guidVendor`\
-[in]ベンダーの一意の識別子。
+[in]仕入先を表す一意の識別子です。
 
 `pszMetric`\
 [in]メトリックの名前。
 
 `ppUnk`\
-[out]条件式を返すローカル オブジェクトのエバリュエーター。
+[アウト]式エバリュエーターローカル オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

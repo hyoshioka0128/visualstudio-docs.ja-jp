@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75565176"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのテーブル ビューでのロード テスト結果とエラーの分析
 
@@ -146,7 +146,7 @@ ms.locfileid: "72665396"
 
 |Column|説明|既定で表示|
 |-|-|-|
-|型|エラーの種類。 たとえば、HttpError などです。|はい|
+|種類|エラーの種類。 たとえば、HttpError などです。|はい|
 |SubType|エラーのサブタイプ。 たとえば、LoadTestException などです。|はい|
 |カウント|ロード テスト中に発生したそのタイプのエラーの数。 この列のエントリはハイパーリンクとして表示されます。 ハイパーリンクを選択すると、個々のエラーの一覧が表示されます。|はい|
 |最後のメッセージ|エラーについて説明するメッセージ。 たとえば、"404 - NotFound" などが表示されます。|はい|

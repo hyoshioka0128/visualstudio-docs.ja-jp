@@ -1,57 +1,58 @@
 ---
-title: エディター拡張機能から DTE オブジェクトにアクセスします。
+title: エディター拡張機能から DTE オブジェクトにアクセスする
 ms.date: 04/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fb22793c3bfa805fae11c8bbea7f07c06fd5a85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322786"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697656"
 ---
-# <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスします。
+# <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする
 
-Vspackage では、呼び出すことによって、DTE オブジェクトを取得できます、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> DTE オブジェクトの型を持つメソッド。 Managed Extensibility Framework (MEF) 拡張機能でインポートできる<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>を呼び出して、<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>メソッドの型を持つ<xref:EnvDTE.DTE>します。
+VSPackages では、DTE オブジェクトの型を使用して<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>メソッドを呼び出すことによって、DTE オブジェクトを取得できます。 マネージ機能拡張フレームワーク (MEF) 拡張機能では、インポート<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>し、型を<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>使用してメソッドを呼び出<xref:EnvDTE.DTE>すことができます。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 
-## <a name="get-the-dte-object"></a>DTE オブジェクトを取得します。
+## <a name="get-the-dte-object"></a>DTE オブジェクトを取得する
 
-1. 作成、 C# VSIX プロジェクトし、名前を付けます**DTETest**します。 追加、**エディター分類子**項目テンプレートと名前を付けます**DTETest**します。
+1. C# VSIX プロジェクトを作成し **、DTETest**という名前を付けます。 **エディター分類子**項目テンプレートを追加し、名前**DTETest**.
 
-   詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
+   詳細については、「[エディター項目テンプレートを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)」を参照してください。
 
 ::: moniker range=">=vs-2019"
 
-2. プロジェクトには、次のアセンブリ参照を追加します。
+2. プロジェクトに次のアセンブリ参照を追加します。
 
-    - Microsoft.VisualStudio.Shell.Immutable.10.0
+    - フレームワーク
+    - をクリックします。
 
-3. *DTETestProvider.cs*ファイルで、次の追加`using`ディレクティブ。
+3. *DTETestProvider.cs*ファイルに、次`using`のディレクティブを追加します。
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. `DTETestProvider`クラスは、インポート、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。
+4. クラスで`DTETestProvider`、 をインポート<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. `GetClassifier()`メソッドの前に、次のコードを追加、`return`ステートメント。
+5. メソッドで`GetClassifier()`、ステートメントの前に次のコード`return`を追加します。
 
     ```csharp
    ThreadHelper.ThrowIfNotOnUIThread();
@@ -62,26 +63,26 @@ Vspackage では、呼び出すことによって、DTE オブジェクトを取
 
 ::: moniker range="vs-2017"
 
-2. プロジェクトには、次のアセンブリ参照を追加します。
+2. プロジェクトに次のアセンブリ参照を追加します。
 
    - EnvDTE
-   - Microsoft.VisualStudio.Shell.Framework
+   - フレームワーク
 
-3. *DTETestProvider.cs*ファイルで、次の追加`using`ディレクティブ。
+3. *DTETestProvider.cs*ファイルに、次`using`のディレクティブを追加します。
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. `DTETestProvider`クラスは、インポート、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。
+4. クラスで`DTETestProvider`、 をインポート<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. `GetClassifier()`メソッドの前に、次のコードを追加、`return`ステートメント。
+5. メソッドで`GetClassifier()`、ステートメントの前に次のコード`return`を追加します。
 
     ```csharp
    DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));
@@ -92,4 +93,4 @@ Vspackage では、呼び出すことによって、DTE オブジェクトを取
 ## <a name="see-also"></a>関連項目
 
 - [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)
-- [DTE を使用して Visual Studio を起動します。](launch-visual-studio-dte.md)
+- [DTE を使って Visual Studio を起動する](launch-visual-studio-dte.md)

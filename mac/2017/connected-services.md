@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2018
 ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985291"
 ---
 # <a name="connected-services-walkthrough"></a>接続済みサービスのチュートリアル
@@ -50,7 +50,7 @@ ms.locfileid: "74985291"
     一覧にサービスがない場合、 **[新規]** ボタンをクリックします (手順 9 を参照)。
 
 7. PCL に `MobileServiceClient` のテンプレート コードをコピーします。 ファイルの場所は、それが 1 インスタンスしかない場合は重要ではありません。
-  Azure のすべての対話を処理し、`MobileServiceClient`を使用する `AzureService` クラスを作成するのが推奨されるアプローチです。
+  Azure のすべての対話を処理し、`AzureService`を使用する `MobileServiceClient` クラスを作成するのが推奨されるアプローチです。
 
     ![構成コードをアプリにコピーする](media/connected-services-image007.png "構成コードをアプリにコピーする")
 
@@ -72,6 +72,6 @@ ms.locfileid: "74985291"
 
 詳細については、「[Mobile Apps ドキュメント](/azure/app-service-mobile/)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [接続済みサービス (Windows の Visual Studio)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

@@ -3,17 +3,17 @@ title: '方法: シェーダーをエクスポートする'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635549"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589436"
 ---
 # <a name="how-to-export-a-shader"></a>方法: シェーダーをエクスポートする
 

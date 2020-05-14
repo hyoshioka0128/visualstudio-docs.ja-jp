@@ -3,19 +3,19 @@ title: リリース後のパッケージ ペイロードが変更されるタイ
 description: レイアウトの作成時に、リリースが既に出荷された後にパッケージ ペイロードが変更されたかどうかを判断する方法を説明します。
 ms.date: 05/22/2019
 ms.topic: conceptual
-author: et13
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a4eb286344b6dce7a4814089db013965eb34c98
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: dec1478314e752ddace8fae822747e7c8e328b70
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402262"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114581"
 ---
 # <a name="package-payload-changes"></a>パッケージ ペイロードの変更
 
@@ -37,7 +37,7 @@ ms.locfileid: "66402262"
 
     `END: Downloading [url] to [path]`
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のネットワーク インストールを作成する](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)

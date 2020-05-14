@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665001"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445039"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用してコード化された UI テストを編集する
 
@@ -74,7 +74,7 @@ ms.locfileid: "72665001"
 
 UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場合は、プロパティを編集する対象の UI 操作を含むテスト メソッドを展開し、UI 操作を選択してから [プロパティ] ウィンドウを使用してプロパティを変更します。
 
-たとえば、サーバーが使用できないときに "**Web ページ '<http://Contoso1/default.aspx>' に移動**" というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `'http://Contoso2/default.aspx'` に変更できます。
+たとえば、サーバーが使用できないときに "**Web ページ http:\//Contoso1/default.aspx** に移動" というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `http://Contoso2/default.aspx` に変更できます。
 
 ![コントロールのプロパティ](../test/media/codeduitestcontrolprop.png)
 
@@ -88,7 +88,7 @@ UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場
 
 - **[プロパティ]** ウィンドウが表示されていない場合は、**Alt** + **Enter** キーを押すか、**F4** キーを押します。
 
-- 実行したプロパティの変更を元に戻すには、 **[編集]** メニューの **[元に戻す]** を選択するか、**Ctrl** + **Z** キーを押します。
+- 実行したプロパティの変更を元に戻すには、 **[編集]** メニューの **[元に戻す]** を選択するか、**Ctrl**+**Z** キーを押します。
 
 - コード化された UI テスト エディターのツール バーにある **[検索]** ボタンを使用すると、Visual Studio の**検索と置換**ツールを開くことができます。 そうすれば、**検索**コントロールを使用して、コード化された UI テスト エディターで UI 操作を検索できます。 たとえば、"'Login' ボタンをクリック" を検索できます。 これは、大規模なテストの場合に便利です。 コード化された UI テスト エディターでは**検索と置換**ツールの置換機能を使用できません。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」の「検索コントロール」を参照してください。
 
@@ -121,11 +121,11 @@ UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場
 
 ### <a name="tips"></a>ヒント
 
-- 分割を元に戻すには、 **[編集]** メニューの **[元に戻す]** をクリックするか、**Ctrl** + **Z** キーを押します。
+- 分割を元に戻すには、 **[編集]** メニューの **[元に戻す]** をクリックするか、**Ctrl**+**Z** キーを押します。
 
 - 新しいメソッドの名前を変更できます。 **[UI 操作]** ウィンドウでメソッドを選択し、コード化された UI テスト エディターのツール バーにある **[名前の変更]** をクリックします。
 
-   または
+   \- または -
 
    新しいテスト メソッドのショートカット メニューを開き、 **[名前の変更]** をクリックします。
 
@@ -144,7 +144,7 @@ UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場
 
 ### <a name="tips"></a>ヒント
 
-移動を元に戻すには、 **[編集]** メニューの **[元に戻す]** をクリックするか、**Ctrl** + **Z** キーを押します。 ただし、その場合は *UIMap.cs* ファイルまたは *UIMap.vb* ファイルからコードを手動で削除する必要があります。
+移動を元に戻すには、 **[編集]** メニューの **[元に戻す]** をクリックするか、**Ctrl**+**Z** キーを押します。 ただし、その場合は *UIMap.cs* ファイルまたは *UIMap.vb* ファイルからコードを手動で削除する必要があります。
 
 ## <a name="locate-a-ui-control-in-the-application-under-test"></a>テスト対象のアプリケーションで UI コントロールを探す
 

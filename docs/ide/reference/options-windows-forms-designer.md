@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Windows Forms Designer options
 - Options dialog box, Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 16dfd7aed9e3a3586d32f3a4456451b96d8b9f09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655812"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568062"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>[オプション] ダイアログ ボックス:Windows フォーム デザイナー
 

@@ -6,10 +6,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
 ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985028"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Visual Studio for Mac チュートリアルの拡張
@@ -112,7 +112,7 @@ ms.locfileid: "74985028"
 
     現在の実装にはプレースホルダー メソッドしかないため、メニューから [Insert Date]\(日付の挿入\) を選択しても何も実行されません。
 
-13. 拡張機能パッケージのフレームワークはあるので、日付の挿入を動かすコードを記述しましょう。 まず、`InsertDateHandler.cs` の `Update` メソッドを次のコードで置き換えて、ユーザーがテキスト ファイルを開いたときに **[Insert Date]\(日付の挿入\) コマンド**のみが有効になることを確認します。
+13. 拡張機能パッケージのフレームワークはあるので、日付の挿入を動かすコードを記述しましょう。 まず、**の** メソッドを次のコードで置き換えて、ユーザーがテキスト ファイルを開いたときに `Update`[Insert Date]\(日付の挿入\) コマンド`InsertDateHandler.cs`のみが有効になることを確認します。
 
     ```cs
     protected override void Update(CommandInfo info)
@@ -136,6 +136,6 @@ ms.locfileid: "74985028"
 
     ![[Insert Date]\(日付の挿入\) のスクリーンショット](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [初めての拡張機能の作成 (Windows の Visual Studio)](/visualstudio/extensibility/extensibility-hello-world)

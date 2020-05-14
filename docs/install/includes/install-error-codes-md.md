@@ -1,18 +1,19 @@
 ---
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
+manager: jillfra
 ms.date: 04/25/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4715ece217ab007e46a6a063fea992bca6deca14
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 4bd769ebd2605d98b4c8a3c473dfca00f86b0f06
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68159939"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76158925"
 ---
-| **[値]** | **結果** |
+| **値** | **結果** |
 | --------- | ---------- |
 | 0 | 操作は正常に終了しました |
 | 1602 | 操作が取り消されました |

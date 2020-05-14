@@ -5,19 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748034"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263137"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
+
 .NET Framework を対象とするプログラミング言語は、MSBuild プロジェクト ファイルを使用してアプリケーションのビルド プロセスを記述および制御します。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成すると、適切な XML が自動的に追加されますが、 その XML がどのように構成されているかや、それに変更を加えてビルドを制御するにはどうすればよいかを知っておくことも有用です。
 
  C++ プロジェクトのプロジェクト ファイルを作成する方法の詳細については、「[MSBuild (C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
@@ -44,12 +45,11 @@ ms.locfileid: "72748034"
 
 このチュートリアルでは、コマンド プロンプトでプロジェクトをビルドして結果を確認する方法を説明します。 MSBuild の詳細および MSBuild をコマンド プロンプトで実行する方法の詳細については、「[チュートリアル:MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。
 
-このチュートリアルを実行するには、.NET Framework (Version 2.0、3.5、4.0、または 4.5) がインストールされている必要があります。これらには、このチュートリアルに必要な MSBuild と Visual C# コンパイラが含まれています。
+このチュートリアルを実行するには、.NET Framework (バージョン 2.0、3.5、4.0、4.5、またはそれ以降) がインストールされている必要があります。これらには、このチュートリアルに必要な MSBuild と Visual C# コンパイラが含まれています。
 
 ## <a name="create-a-minimal-application"></a>最低限の内容のみを含むアプリケーションを作成する
- ここでは、最低限の内容のみを含む Visual C# アプリケーション ソース ファイルをテキスト エディターで作成する方法を説明します。
 
-#### <a name="to-create-the-minimal-application"></a>最低限の内容のみを含むアプリケーションを作成するには
+ ここでは、最低限の内容のみを含む C# アプリケーション ソース ファイルをテキスト エディターで作成する方法を説明します。
 
 1. コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します ( *\My Documents\\* 、 *\Desktop\\* など)。
 
@@ -86,6 +86,7 @@ ms.locfileid: "72748034"
 8. コマンド プロンプトで「**del helloworld.exe**」と入力して、アプリケーションを削除します。
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>最低限の内容のみを含む MSBuild プロジェクト ファイルを作成する
+
  最低限の内容のみを含むアプリケーション ソース ファイルを作成できたので、次に、そのアプリケーションをビルドするための最低限の内容のみを含むプロジェクト ファイルを作成します。 このプロジェクト ファイルに含まれる要素は次のとおりです。
 
 - 必須のルート `Project` ノード
@@ -98,7 +99,7 @@ ms.locfileid: "72748034"
 
 - アプリケーションをビルドするために Visual C# コンパイラを起動する `Task` 要素
 
-#### <a name="to-create-a-minimal-msbuild-project-file"></a>最低限の内容のみを含む MSBuild プロジェクト ファイルを作成するには
+### <a name="to-create-a-minimal-msbuild-project-file"></a>最低限の内容のみを含む MSBuild プロジェクト ファイルを作成するには
 
 1. テキスト エディターで、既存のテキストを次の 2 つの行に置き換えます。
 
@@ -153,24 +154,20 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 > ```xml
 > <Compile Include="*.cs" />
 > ```
->
-> ただし、ワイルドカード文字を使用すると、ソース ファイルを追加または削除した場合にデバッグやターゲットの選択が困難になるため、できるだけ使用しないようにしてください。
 
 ## <a name="extend-the-path-to-include-msbuild"></a>MSBuild が含まれるようにパスを拡張する
- MSBuild を使用するには、.NET Framework フォルダーが含まれるように PATH 環境変数を拡張する必要があります。
 
-#### <a name="to-add-msbuild-to-your-path"></a>MSBuild をパスに追加するには
+MSBuild を使用するには、.NET Framework フォルダーが含まれるように PATH 環境変数を拡張する必要があります。
 
-- Visual Studio 2013 では、MSBuild フォルダー (32 ビット オペレーティング システムの場合は *%ProgramFiles%\MSBuild*、64 ビット オペレーティング システムの場合は *%ProgramFiles(x86)%\MSBuild*) 内に *MSBuild.exe* があります。
+Visual Studio 2013 では、MSBuild フォルダー (32 ビット オペレーティング システムの場合は *%ProgramFiles%\MSBuild*、64 ビット オペレーティング システムの場合は *%ProgramFiles(x86)%\MSBuild*) 内に *MSBuild.exe* があります。
 
-     コマンド プロンプトで、「**set PATH=%PATH%;%ProgramFiles%\MSBuild**」または「**set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**」と入力します。
+コマンド プロンプトで、「**set PATH=%PATH%;%ProgramFiles%\MSBuild**」または「**set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**」と入力します。
 
-     Visual Studio がインストールされている場合は、**Visual Studio コマンド プロンプト**を使用することもできます。Visual Studio コマンド プロンプトでは、*MSBuild* フォルダーへのパスが設定されています。
+Visual Studio がインストールされている場合は、**Visual Studio 用開発者コマンド プロンプト**を使用することもできます。これには、*MSBuild* フォルダーへのパスが設定されています。
 
-## <a name="use-the-project-file-to-build-the-application"></a>プロジェクト ファイルを使用してアプリケーションをビルドする
+## <a name="build-the-application"></a>アプリケーションのビルド
+
  次に、先ほど作成したプロジェクト ファイルを使用してアプリケーションをビルドします。
-
-#### <a name="to-build-the-application"></a>アプリケーションをビルドするには
 
 1. コマンド プロンプトで、「**msbuild helloworld.csproj -t:Build**」と入力します。
 
@@ -186,13 +183,14 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 > **msbuild helloworld.csproj -t:Build -verbosity:detailed**
 
 ## <a name="add-build-properties"></a>ビルド プロパティを追加する
+
  プロジェクト ファイルにビルド プロパティを追加すると、ビルドをさらに細かく制御できます。 ここでは、次のプロパティを追加します。
 
 - アプリケーションの名前を指定する `AssemblyName` プロパティ
 
 - アプリケーションを格納するフォルダーを指定する `OutputPath` プロパティ
 
-#### <a name="to-add-build-properties"></a>ビルド プロパティを追加するには
+### <a name="to-add-build-properties"></a>ビルド プロパティを追加するには
 
 1. コマンド プロンプトで「**del helloworld.exe**」と入力して、既存のアプリケーションを削除します。
 
@@ -255,9 +253,8 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 > `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>ビルド プロパティをテストする
- 次に、ビルド プロパティで出力フォルダーとアプリケーション名を指定したプロジェクト ファイルを使用してアプリケーションをビルドします。
 
-#### <a name="to-test-the-build-properties"></a>ビルド プロパティをテストするには
+ 次に、ビルド プロパティで出力フォルダーとアプリケーション名を指定したプロジェクト ファイルを使用してアプリケーションをビルドします。
 
 1. コマンド プロンプトで、「**msbuild helloworld.csproj -t:Build**」と入力します。
 
@@ -270,6 +267,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
      "**Hello, world!** " というメッセージが表示されます。
 
 ## <a name="add-build-targets"></a>ビルド ターゲットを追加する
+
  次に、次の 2 つのターゲットをプロジェクト ファイルに追加します。
 
 - 古いファイルを削除する Clean ターゲット
@@ -278,7 +276,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 ターゲットが複数になるので、Build ターゲットを既定のターゲットに設定します。
 
-#### <a name="to-add-build-targets"></a>ビルド ターゲットを追加するには
+### <a name="to-add-build-targets"></a>ビルド ターゲットを追加するには
 
 1. プロジェクト ファイルで、Build ターゲットの直後に次の 2 つのターゲットを追加します。
 
@@ -322,6 +320,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 ```
 
 ## <a name="test-the-build-targets"></a>ビルド ターゲットをテストする
+
  新しいビルド ターゲットを使用して、プロジェクト ファイルの以下の機能をテストします。
 
 - 既定のビルドをビルドする。
@@ -332,7 +331,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 - 別のアプリケーションをビルドせずにアプリケーションを削除する。
 
-#### <a name="to-test-the-build-targets"></a>ビルド ターゲットをテストするには
+### <a name="to-test-the-build-targets"></a>ビルド ターゲットをテストするには
 
 1. コマンド プロンプトで、「**msbuild helloworld.csproj -p:AssemblyName=Greetings**」と入力します。
 
@@ -361,9 +360,10 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
      *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが含まれていることを確認するには、「**dir Bin**」と入力します。
 
 ## <a name="build-incrementally"></a>インクリメンタル ビルド
+
  MSBuild では、ターゲットが依存しているソース ファイルやターゲット ファイルが変更された場合にのみターゲットをビルドすることができます。 ファイルが変更されているかどうかはファイルのタイム スタンプを使用して特定されます。
 
-#### <a name="to-build-incrementally"></a>インクリメンタル ビルドを実行するには
+### <a name="to-build-incrementally"></a>インクリメンタル ビルドを実行するには
 
 1. プロジェクト ファイルで、開始 Build ターゲットに次の属性を追加します。
 
@@ -398,10 +398,9 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
      アプリケーションがビルドされてから変更されたソース ファイルがないため、Build ターゲットはスキップされます。
 
-## <a name="example"></a>例
+## <a name="c-example"></a>C# の例
 
-### <a name="description"></a>説明
- 次の例は、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] アプリケーションをコンパイルし、出力ファイル名を含むメッセージを記録するプロジェクト ファイルを示しています。
+次の例は、C# アプリケーションをコンパイルし、出力ファイル名を含むメッセージを記録するプロジェクト ファイルを示しています。
 
 ### <a name="code"></a>コード
 
@@ -436,10 +435,9 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 </Project>
 ```
 
-## <a name="example"></a>例
+## <a name="visual-basic-example"></a>Visual Basic の例
 
-### <a name="description"></a>説明
- 次の例は、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] アプリケーションをコンパイルし、出力ファイル名を含むメッセージを記録するプロジェクト ファイルを示しています。
+次の例は、Visual Basic アプリケーションをコンパイルし、出力ファイル名を含むメッセージを記録するプロジェクト ファイルを示しています。
 
 ### <a name="code"></a>コード
 
@@ -475,8 +473,10 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 ```
 
 ## <a name="whats-next"></a>次の内容
+
  このチュートリアルで説明した作業の大半は、Visual Studio で自動的に実行できます。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成、編集、ビルド、およびテストする方法については、「[チュートリアル:MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
+
 - [MSBuild の概要](../msbuild/msbuild.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

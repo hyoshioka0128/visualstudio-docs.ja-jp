@@ -3,38 +3,40 @@ title: MSBuild ターゲット フレームワークおよびターゲット プ
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 837e07518ff9d4be875a52b4f1eb2929d10ff9df
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189443"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633201"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild ターゲット フレームワークおよびターゲット プラットフォーム
+
 プロジェクトは*ターゲット フレームワーク*とターゲット プラットフォームで動作するようにビルドできます。ターゲット フレームワークとは .NET Framework の特定のバージョンを表し、*ターゲット プラットフォーム*とは特定のソフトウェア アーキテクチャを表します。  たとえば、802x86 プロセッサ ファミリ ("x86") と互換性のある 32 ビット プラットフォーム上の .NET Framework 2.0 で動作するアプリケーションを対象とすることができます。 ターゲット フレームワークとターゲット プラットフォームの組み合わせは*ターゲット コンテキスト*と呼ばれます。
 
 > [!IMPORTANT]
 > この記事では、ターゲット フレームワークを指定するための従来の方法を示します。 SDK スタイルのプロジェクトでは、netstandard のようなさまざまな TargetFrameworks が有効になります。 詳細については、「[ターゲット フレームワーク](/dotnet/standard/frameworks)」をご覧ください。
 
 ## <a name="target-framework-and-profile"></a>ターゲット フレームワークとプロファイル
+
  ターゲット フレームワークとは、ビルドするプロジェクトの実行対象とする .NET Framework の特定のバージョンを意味します。 ターゲット フレームワークの仕様は必須です。これは、ターゲット フレームワークの仕様によって、そのフレームワークのバージョン専用のコンパイラ機能とアセンブリ参照が利用可能になるためです。
 
  現在、.NET Framework については次のバージョンを使用できます。
 
 - .NET Framework 2.0 (Visual Studio 2005 に付属)
 
-- .NET Framework 3.0 ([!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] に付属)
+- .NET Framework 3.0 (Windows Vista に付属)
 
-- .NET Framework 3.5 ([!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] に付属)
+- .NET Framework 3.5 (Visual Studio 2008 に付属)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 ([!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)] に付属)
+- .NET Framework 4.6 (Visual Studio 2015 に付属)
 
 - .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ ms.locfileid: "73189443"
 ```
 
 ## <a name="target-platform"></a>ターゲット プラットフォーム
+
  *プラットフォーム*は、特定のランタイム環境を定義するハードウェアとソフトウェアの組み合わせです。 たとえば、オブジェクトに適用された
 
 - `x86` は、Intel 80x86 プロセッサまたはそれに相当するプロセッサで実行されている 32 ビット Windows オペレーティング システムを示しています。
@@ -97,4 +100,5 @@ ms.locfileid: "73189443"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)

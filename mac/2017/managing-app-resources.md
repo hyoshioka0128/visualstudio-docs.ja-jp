@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985279"
 ---
 # <a name="managing-app-resources"></a>アプリ リソースの管理
@@ -37,6 +37,6 @@ Xamarin.Forms コードは複数のプラットフォームで実行されます
 
 * [イメージの処理](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [アプリケーション リソースの管理 (Windows 上の Visual Studio)](/visualstudio/ide/managing-application-resources-dotnet)

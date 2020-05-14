@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA |Microsoft Docs
+title: BP_RESOLUTION_DATA |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346543"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737842"
 ---
-# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-データ ブレークポイントのバインドの結果について説明します。
+# <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
+データ ブレークポイントをバインドした結果について説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,26 +47,26 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>メンバー
 `bstrDataExpr`\
-バインドされたデータ式。
+バインドされているデータ式。
 
 `bstrFunc`\
-関数の名前 (ある場合) でバインド データ ブレークポイントは。
+データ ブレークポイントがバインドされている関数の名前 (存在する場合)。
 
 `bstrImage`\
-データ ブレークポイントがバインドされているモジュール (たとえば MyModule.dll) の名前。
+データ ブレークポイントがバインドされているモジュール (MyModule.dll など) の名前。
 
 `dwFlags`\
-値、 [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)データ ブレークポイントを実装する方法を説明する列挙。
+データ ブレークポイントの実装方法を示す[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列挙体の値。
 
 ## <a name="remarks"></a>Remarks
-この構造体のメンバーである、 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)がで有効にするのメンバーの構造、 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)によって返される構造体、 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッド。
+この構造体は[、BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)構造体のメンバーであり[、GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッドによって返される[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のメンバーになります。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

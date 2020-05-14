@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::Attach |Microsoft Docs
+title: IDebugEngine2::アタッチ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731207"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-デバッグ エンジン (DE) をプログラムまたはプログラムにアタッチします。 DE、SDM をインプロセスで実行されているときに、セッション デバッグ マネージャー (SDM) によって呼び出されます。
+デバッグ エンジン (DE) をプログラムにアタッチします。 DE が SDM に対してインプロセスで実行されている場合に、セッション デバッグ マネージャー (SDM) によって呼び出されます。
 
 ## <a name="syntax"></a>構文
 
@@ -49,45 +49,45 @@ int Attach( 
 
 ## <a name="parameters"></a>パラメーター
 `pProgram`\
-[in]配列の[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)に接続するプログラムを表すオブジェクト。 これらは、ポート プログラムです。
+[in]アタッチするプログラムを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクトの配列。 これらはポート プログラムです。
 
 `rgpProgramNodes`\
-[in]配列の[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プログラム ノードは、各プログラムのいずれかを表すオブジェクト。 この配列内のプログラムのノードで同じプログラムを表す`pProgram`します。 デにアタッチするプログラムを識別できるように、プログラムのノードが提供されます。
+[in]プログラム ノードを表す[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトの配列です。 この配列のプログラム ノードは、 と同じ`pProgram`プログラムを表します。 プログラム・ノードは、DE が接続先のプログラムを識別できるように与えられます。
 
 `celtPrograms`\
-[in]プログラムやプログラムのノードの数、`pProgram`と`rgpProgramNodes`配列。
+[in]配列内のプログラムおよびプログラム ノード`pProgram``rgpProgramNodes`の数。
 
 `pCallback`\
-[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM にデバッグ イベントを送信に使用するオブジェクト。
+[in]SDM にデバッグ イベントを送信するために使用[されるオブジェクト。](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 
 `dwReason`\
-[in]値、 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)これらのプログラムをアタッチするための理由を指定する列挙体。 詳細については、「解説」を参照してください。
+[in]これらのプログラムをアタッチする理由を指定する[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列挙体の値。 詳細については、「解説」を参照してください。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 次のように、プログラムにアタッチするための 3 つの理由があります。
+ プログラムにアタッチする理由は、次の 3 つがあります。
 
-- `ATTACH_REASON_LAUNCH` ユーザーにそれを含んでいるプロセスが起動されるので、DE がプログラムに添付することを示します。
+- `ATTACH_REASON_LAUNCH`は、ユーザーがプログラムを含むプロセスを起動したために、DE がプログラムにアタッチされていることを示します。
 
-- `ATTACH_REASON_USER` ユーザーがプログラム (または、プロセス、プログラムを含む) にアタッチする DE を明示的に要求することを示します。
+- `ATTACH_REASON_USER`ユーザーが、プログラム (またはプログラムを含むプロセス) にアタッチする DE を明示的に要求したことを示します。
 
-- `ATTACH_REASON_AUTO` 既に特定のプロセスでは、他のプログラムのデバッグのために、特定のプログラムに、DE をアタッチすることを示します。 これもと呼ばれる自動アタッチします。
+- `ATTACH_REASON_AUTO`DE は、特定のプロセスで他のプログラムをデバッグしているため、特定のプログラムにアタッチされていることを示します。 これは自動アタッチとも呼ばれます。
 
-  このメソッドが呼び出されたときに、DE はシーケンス内のこれらのイベントを送信する必要があります。
+  このメソッドが呼び出されると、DE は次のイベントを順番に送信する必要があります。
 
-1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (かどうかそれが既に送信されていません、デバッグ エンジンの特定のインスタンスの)
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (デバッグ エンジンの特定のインスタンスに対してまだ送信されていない場合)
 
 2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)
 
 3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)
 
-   さらに、アタッチするための理由である場合`ATTACH_REASON_LAUNCH`、送信する必要があります、DE、 [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)イベント。
+   さらに、アタッチの理由が`ATTACH_REASON_LAUNCH`の場合、DE は[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)イベントを送信する必要があります。
 
-   DE 取得 1 回、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトのデバッグ中のプログラムに対応する、任意のプライベート インターフェイスのクエリを実行できます。
+   デは、デバッグ中のプログラムに対応する[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトを取得すると、プライベート インターフェイスのクエリを実行できます。
 
-   指定された配列で、[プログラム] ノードのメソッドを呼び出す前に`pProgram`または`rgpProgramNodes`、権限借用では、必要な場合、する必要がありますで有効にする、`IDebugProgram2`プログラム ノードを表すインターフェイスです。 通常、ただし、この手順は必要ではありません。 詳細については、次を参照してください。[セキュリティの問題](../../../extensibility/debugger/security-issues.md)します。
+   または`pProgram``rgpProgramNodes`によって与えられた配列内のプログラム ノードのメソッドを呼び出す前に、必要に応じて`IDebugProgram2`偽装をプログラム ノードを表すインターフェイスで有効にする必要があります。 ただし、通常、この手順は必要ありません。 詳細については、「[セキュリティの問題](../../../extensibility/debugger/security-issues.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

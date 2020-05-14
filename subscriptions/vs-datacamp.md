@@ -1,17 +1,18 @@
 ---
 title: 今日データ サイエンスのスキルを強化するには、選択した Visual Studio サブスクリプションの DataCamp 特典を使用します。 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 85545df5a38f5f8c3e3c29e6ffe1581298999562
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706880"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649564"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
@@ -67,7 +68,7 @@ ms.locfileid: "74706880"
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -82,10 +83,15 @@ ms.locfileid: "74706880"
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>次の手順
 ご利用のサブスクリプションでより専門的な開発機会を確認してください。
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-
 
 サブスクリプションに付属している Azure DevTest の個人クレジット特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。

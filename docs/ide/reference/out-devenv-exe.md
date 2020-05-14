@@ -13,17 +13,17 @@ helpviewer_keywords:
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a073b4815a01696c546dc2a9dd1132e3605281e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655781"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568012"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /Out FileName
 
 - *FileName*
 
-  必須です。 実行可能ファイルのビルド時に出力を受け取るファイルのパスと名前です。
+  必須。 実行可能ファイルのビルド時に出力を受け取るファイルのパスと名前です。
 
 ## <a name="remarks"></a>解説
 
@@ -55,7 +55,7 @@ devenv /Out FileName
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747871"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595957"
 ---
 # <a name="new-file-command"></a>NewFile コマンド
 新規ファイルを作成して開きます。 ファイルは [その他のファイル] フォルダーの下に表示されます。
@@ -66,10 +66,10 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [イミディエイト ウィンドウ](../../ide/reference/immediate-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

@@ -3,10 +3,10 @@ title: Visual Studio Team Explorer のワークロード ID とコンポーネ�
 titleSuffix: ''
 description: Visual Studio のワークロードとコンポーネント ID を使用して、あらゆる側面からテストを行う担当者向けの統合テスト ツールを提供します
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a7667c5ad4a1b6de7427d00ef6a9591dc84c04f3
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+open_to_public_contributors: false
+ms.openlocfilehash: 2cc621e934b172b1eb253a5990d5f3e950f0a5ee
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797324"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276371"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer のコンポーネント ディレクトリ
 
@@ -44,7 +45,7 @@ ms.locfileid: "74797324"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

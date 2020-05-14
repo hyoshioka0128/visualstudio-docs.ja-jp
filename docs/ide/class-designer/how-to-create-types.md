@@ -12,21 +12,21 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631749"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590177"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>方法: クラス デザイナーを使用して型を作成する
 
-C# および Visual Basic プロジェクトの新しい型を設計するには、これらをクラス ダイアグラム上で作成します。 既存の型を表示する場合は、「[方法:既存の型を表示する](how-to-view-existing-types.md)」を参照してください。
+C# および Visual Basic プロジェクトの新しい型を設計するには、これらをクラス ダイアグラム上で作成します。 既存の型を見る場合は、「[方法: 既存の型を表示する](how-to-view-existing-types.md)」をご覧ください。
 
 ## <a name="CreateType"></a> 新しい型を作成する
 
@@ -36,7 +36,7 @@ C# および Visual Basic プロジェクトの新しい型を設計するには
 
     - **Enum**
 
-    - **Interface**
+    - **インターフェイス**
 
     - **[構造体]** (VB) または **[構造体]** (C#)
 
@@ -60,10 +60,10 @@ C# および Visual Basic プロジェクトの新しい型を設計するには
     |-|-|
     |**対象**|**[追加]**|
     |クラス、抽象クラス、構造体|型を定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、デストラクター (メソッド)、および定数|
-    |列挙体|列挙型を構成するフィールド値|
+    |列挙型|列挙型を構成するフィールド値|
     |インターフェイス|インターフェイスを構成するメソッド、プロパティ、イベント|
     |Delegate|デリゲートを定義するパラメーター|
-    |Module|モジュールを定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、および定数|
+    |[Module]|モジュールを定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、および定数|
 
      「[メンバーの作成](creating-and-configuring-type-members.md#create-members)」をご覧ください。
 
@@ -87,7 +87,7 @@ C# および Visual Basic プロジェクトの新しい型を設計するには
 
    カスタム属性が型に適用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 型の間の継承を作成する](how-to-create-inheritance-between-types.md)
 - [方法: 型の間の関連付けを作成する](how-to-create-associations-between-types.md)

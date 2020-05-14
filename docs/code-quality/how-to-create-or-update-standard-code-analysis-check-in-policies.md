@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649476"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506509"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 
@@ -25,11 +25,11 @@ ms.locfileid: "72649476"
 > [!NOTE]
 > この機能は、Team Foundation Server を使用している場合にのみ使用できます。
 
-コード分析チェックインポリシーは、プロジェクトの設定で設定され、各コードプロジェクトに適用されます。 コード分析の実行は、コードプロジェクトのプロジェクト (. proj) ファイルのコードプロジェクトに対して構成されます。 コード分析の実行は、ローカルコンピューター上で実行されます。 コード分析のチェックインポリシーを有効にする場合、チェックインするコードプロジェクト内のファイルは、最後の編集の後にコンパイルする必要があります。また、少なくとも、プロジェクト設定の規則は、変更を含むコンピューターで実行する必要があります。が作成されました。
+コード分析チェックインポリシーは、プロジェクトの設定で設定され、各コードプロジェクトに適用されます。 コード分析の実行は、コードプロジェクトのプロジェクト (.proj) ファイルのコードプロジェクトに対して構成されます。 コード分析の実行は、ローカルコンピューター上で実行されます。 コード分析のチェックインポリシーを有効にする場合、チェックインするコードプロジェクト内のファイルは、最後の編集の後にコンパイルする必要があります。また、少なくとも、プロジェクト設定の規則は、変更を含むコンピューターで実行する必要があります。が作成されました。
 
 - マネージコードの場合は、コード分析規則のサブセットを含む*規則セット*を指定して、チェックインポリシーを設定します。
 
-- C/C++コードの場合、Visual Studio 2017 バージョン15.6 以前では、チェックインポリシーですべてのコード分析規則が実行されている必要があります。 プリプロセッサディレクティブを追加して、Azure DevOps プロジェクト内の個々のコードプロジェクトの特定の規則を無効にすることができます。 15.7 以降では、 **/analyze: ルールセット**を使用して、実行するルールを指定できます。 詳細については、「[規則セットを使用C++して実行する規則を指定する](using-rule-sets-to-specify-the-cpp-rules-to-run.md)」を参照してください。
+- C/C++コードの場合、Visual Studio 2017 バージョン15.6 以前では、チェックインポリシーですべてのコード分析規則が実行されている必要があります。 プリプロセッサディレクティブを追加して、Azure DevOps プロジェクト内の個々のコードプロジェクトの特定の規則を無効にすることができます。 15.7 以降では、 **/analyze: ルールセット**を使用して、実行するルールを指定できます。 詳細については、「[規則セットを使用C++して実行する規則を指定する](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)」を参照してください。
 
 マネージコードのチェックインポリシーを指定すると、チームメンバーは、コードプロジェクトのコード分析設定を Azure DevOps プロジェクトポリシー設定と同期させることができます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72649476"
 
 1. **[ソース管理]** ダイアログボックスで、 **[チェックインポリシー]** タブを選択します。
 
-1. 次のいずれかの操作を行います。
+1. 以下のいずれかを実行します。
 
     - **[追加]** をクリックして、新しいチェックインポリシーを作成します。
 
@@ -61,12 +61,12 @@ ms.locfileid: "72649476"
 
 - Microsoft 標準規則セットを選択してください。
 
-- [**ソース管理から規則セットを \<Select] をクリックして、カスタム規則セットを選択してください...>** 。 次に、ソース管理ブラウザーで、規則セットのバージョンコントロールパスを入力します。 バージョンコントロールパスの構文は次のとおりです。
+- [**ソース管理から規則セットを選択して\<] をクリックして、カスタム規則セットを選択してください...>** 。 次に、ソース管理ブラウザーで、規則セットのバージョンコントロールパスを入力します。 バージョンコントロールパスの構文は次のとおりです。
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
 カスタムチェックインポリシー規則セットを作成して実装する方法の詳細については、「[マネージコードのカスタムチェックインポリシーを実装](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)する」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [コード分析チェックインポリシーを作成して使用する](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [マネージド コード用のカスタム コード分析チェックイン ポリシーを実装する](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

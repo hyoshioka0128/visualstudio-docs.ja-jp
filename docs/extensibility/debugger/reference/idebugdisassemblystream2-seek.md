@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Seek |Microsoft Docs
+title: IDebugdisアセンブリストリーム2::シーク |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e97da5b4b65b18c9d4c745dea2cb5f0915862731
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310368"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732085"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
-[逆アセンブル] ストリームの指定した位置の基準とした命令数が特定の読み取りポインターを移動します。
+指定した位置に対する指定した数の命令を逆アセンブリ ストリーム内の読み取りポインターに移動します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,22 +47,22 @@ int Seek( 
 
 ## <a name="parameters"></a>パラメーター
 `dwSeekStart`\
-[in]値、 [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)シーク プロセスを開始する相対位置を指定する列挙体。
+[in]シーク処理を開始する相対位置を指定する[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列挙体の値。
 
 `pCodeContext`\
-[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)シーク操作が関連してコードのコンテキストを表すオブジェクト。 場合にのみ、このパラメーターが使用される`dwSeekStart`  =  `SEEK_START_CODECONTEXT`。 そうしないと、このパラメーターは無視され、null 値を指定できます。
+[in]シーク操作の相対位置にあるコード コンテキストを表す[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)オブジェクト。 このパラメータは、 `dwSeekStart`  =  `SEEK_START_CODECONTEXT`;それ以外の場合、このパラメーターは無視され、null 値にすることができます。
 
 `uCodeLocationId`\
-[in]シーク操作が関連してコードの場所の識別子です。 このパラメーターを使用`dwSeekStart`  =  `SEEK_START_CODELOCID`。 そうしないと、このパラメーターは無視され、0 に設定することができます。 「解説」を参照してください、 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドについては、コードの場所の識別子。
+[in]シーク操作の相対位置であるコードの場所の識別子。 このパラメータは、 `dwSeekStart`  =  `SEEK_START_CODELOCID`;それ以外の場合、このパラメーターは無視され、0 に設定できます。 コードの場所識別子の説明については[、GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドの解説セクションを参照してください。
 
 `iInstructions`\
-[in]指定された位置を基準に移動する命令数`dwSeekStart`します。 この値は、後方に移動する負の値であることができます。
+[in]で指定した位置を基準に移動する命令の数`dwSeekStart`。 この値は、逆方向に移動する場合に負の値にすることができます。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`シーク位置が使用可能な命令の一覧より後ろにあった場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`シーク位置が使用可能な命令のリストを超えるポイントに戻ります。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- リストの先頭の前に、シークであった場合は、読み取り位置が、一覧の最初の命令に設定されます。 参照してくださいがあった場合の位置に、リストの末尾の後に、読み取り位置が設定最後の命令の一覧で。
+ シークがリストの先頭の前の位置に置かれた場合、読み取り位置はリストの最初の命令に設定されます。 参照がリストの末尾の後の位置に設定されている場合、読み取り位置はリストの最後の命令に設定されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

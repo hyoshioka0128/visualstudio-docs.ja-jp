@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e57feede5963b9efc04f98f4c7ba3adfb1eb49b1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+author: mikejo5000
+ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984645"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256232"
 ---
-# <a name="testing-tools-in-visual-studio"></a>Visual Studio のテスト ツール
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>初めて Visual Studio のテスト ツールを検討する
 
 Visual Studio のテスト ツールを使用することで、チームと共に高水準の優れたコードを開発し、維持できます。
 

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576276"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579423"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>手順 2: Random オブジェクトおよびアイコンのリストの追加
 

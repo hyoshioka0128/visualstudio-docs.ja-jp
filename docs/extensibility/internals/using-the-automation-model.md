@@ -1,27 +1,27 @@
 ---
-title: オートメーションモデルを使用する |Microsoft Docs
+title: オートメーションモデルの使用 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f1e1479232a684758359de7527f0c2fc9990cc7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722088"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704219"
 ---
 # <a name="using-the-automation-model"></a>オートメーション モデルの使用
-VSPackage を automation に接続した後、<xref:EnvDTE._DTE> オブジェクトで <xref:EnvDTE.DTEClass.GetObject%2A> メソッドを呼び出して、取得するオブジェクトを表す文字列を渡すことによって、プロパティとメソッドを取得できます。
+VSPackage をオートメーションに接続した後、<xref:EnvDTE.DTEClass.GetObject%2A><xref:EnvDTE._DTE>取得するオブジェクトを表す文字列を渡して、オブジェクトのメソッドを呼び出すことによって、プロパティとメソッドを取得できます。
 
-## <a name="obtaining-project-objects"></a>取得 (プロジェクトオブジェクトを)
- 次に、オートメーションコンシューマーがプロジェクトオートメーションオブジェクトを取得する方法を示す2つのコード例を示します。 DTE オブジェクトを取得する方法については、「[方法: dte オブジェクトと DTE2 オブジェクトへの参照を取得](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)する」を参照してください。
+## <a name="obtaining-project-objects"></a>プロジェクト オブジェクトの取得
+ オートメーション コンシューマーがプロジェクトオートメーション オブジェクトを取得する方法を示す 2 つのコード例を次に示します。 DTE オブジェクトを取得する方法については、「方法[: DTE オブジェクトおよび DTE2 オブジェクトへの参照を取得する](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)」を参照してください。
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- この時点で、特定の VSPackage の一部である標準のプロジェクトオブジェクトを使用して、階層モデルを下に移動できます。
+ この時点で、特定の VSPackage の一部である標準プロジェクト オブジェクトを使用して、階層モデルを下に移動できます。
 
- 次のコード例は、カスタムプロジェクトの種類のプロパティであるカスタムオブジェクトを取得する方法を示しています。
+ カスタム プロジェクトの種類のプロパティであるカスタム オブジェクトを取得する方法を次のコード例に示します。
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- 次のコードは、 **[ツール]** メニューの [[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境の**全般**] オプションにあるすべてのプロパティの名前を示しています。
+ 次のコードは、[[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**ツール]** メニューの [**全般**] オプションの環境のすべてのプロパティの名前を示しています。
 
 ```vb
 dim objDTE

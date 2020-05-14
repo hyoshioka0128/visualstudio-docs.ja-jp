@@ -2,19 +2,19 @@
 title: コード変更のプレビュー
 ms.date: 12/16/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 485a127faa8228ce5ef17a6208e9cc4e7e50e1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666797"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75585770"
 ---
 # <a name="preview-changes-window"></a>[変更のプレビュー] ウィンドウ
 
@@ -28,7 +28,7 @@ Visual Studio でさまざまな*クイック アクション* ツールまた�
 
 変更内容を確認したら、 **[適用]** ボタンをクリックして該当する変更をコミットするか、 **[キャンセル]** をクリックして元のままにしておきます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのリファクタリング](../ide/refactoring-in-visual-studio.md)
 - [クイック アクション](../ide/quick-actions.md)

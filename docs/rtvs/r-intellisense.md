@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999129"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-Visual Studio の IntelliSense では、コードを入力するときに、呼び出すことのできる関数、オブジェクトのメンバー、関数の引数、[コード スニペット](code-snippets-for-r.md)に関する情報が、見える位置に表示されます。 また、入力に合わせて入力候補が表示され、**Tab** キーまたは **Enter** キーを押すと自動的に入力されます (**[詳細設定]** タブの[エディター オプション](editing-r-code-in-visual-studio.md#editor-options)を参照)。 IntelliSense は、エディターと[対話型ウィンドウ](interactive-repl-for-r-in-visual-studio.md)の両方で利用可能です。
+Visual Studio の IntelliSense では、コードを入力するときに、呼び出すことのできる関数、オブジェクトのメンバー、関数の引数、[コード スニペット](code-snippets-for-r.md)に関する情報が、見える位置に表示されます。 また、入力に合わせて入力候補が表示され、**Tab** キーまたは **Enter** キーを押すと自動的に入力されます ([[詳細設定]](editing-r-code-in-visual-studio.md#editor-options) タブの**エディター オプション**を参照)。 IntelliSense は、エディターと[対話型ウィンドウ](interactive-repl-for-r-in-visual-studio.md)の両方で利用可能です。
 
 ![関数のシグネチャを示す IntelliSense](media/intellisense-function-signature.png)
 

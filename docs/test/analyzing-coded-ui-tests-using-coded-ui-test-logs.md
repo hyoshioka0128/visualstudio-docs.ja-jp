@@ -2,17 +2,17 @@
 title: コード化された UI テスト ログを使用したコード化された UI テストの分析
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665321"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591217"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>コード化された UI テスト ログを使用したコード化された UI テストの分析
 
@@ -20,7 +20,7 @@ ms.locfileid: "72665321"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>手順 1: ログの有効化
+## <a name="step-1-enable-logging"></a>手順 1: ログ記録を有効にする
 
 シナリオに応じて、以下のいずれかのメソッドを使用してログを有効にします。
 
@@ -28,7 +28,7 @@ ms.locfileid: "72665321"
 
    1. テストを実行すると起動される *QTAgent\*.exe* プロセスを判断します。 これを行う方法の 1 つは、Windows **タスク マネージャー**の **[詳細]** タブを観察することです。
 
-   2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* フォルダーから、対応する *.config* ファイルを開きます。 たとえば、実行しているプロセスが *QTAgent_40.exe* である場合、*QTAgent_40.exe.config* を開きます。
+   2. *%ProgramFiles(x86)%\Microsoft Visual Studio* *version>\\\<edition>\Common7\IDE\\ フォルダーから、対応する \<.config* ファイルを開きます。 たとえば、実行しているプロセスが *QTAgent_40.exe* である場合、*QTAgent_40.exe.config* を開きます。
 
    2. **EqtTraceLevel** の値を、目的のログ レベルに変更します。
 
@@ -87,7 +87,7 @@ ms.locfileid: "72665321"
 
      ![コード化された UI テストのログ ファイル](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [方法: Microsoft Visual Studio からテストを実行する](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /? switch
 - Devenv, command-line help
 ms.assetid: fd8fd6b2-1304-4d06-8118-6629666801fb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcad6aa0cfe516eb342b397fb5a3effcda874647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f23765ac4ee58b20af26bd100a0d167b2873582
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655684"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75565735"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 
@@ -29,6 +29,6 @@ ms.locfileid: "72655684"
 devenv /?
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

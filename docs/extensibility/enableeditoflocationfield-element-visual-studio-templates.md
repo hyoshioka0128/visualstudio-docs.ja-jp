@@ -1,27 +1,27 @@
 ---
-title: EnableEditOfLocationField 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 有効にエディットオフロケーションフィールド要素 (ビジュアル スタジオ テンプレート) |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82a65115ce5df0f57ad9e6ea18a5637e035fed66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334528"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712001"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 要素 (Visual Studio テンプレート)
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>要素を有効にします。
 ユーザーが [場所] フィールドを編集できるかどうかを指定します。
 
- \<VSTemplate > \<TemplateData > \<EnableEditOfLocationField >
+ \<\<>テンプレートデータ>\<有効にして、フィールド>編集
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ ms.locfileid: "66334528"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし
+ None
 
 ### <a name="child-elements"></a>子要素
- なし
+ None
 
 ### <a name="parent-elements"></a>親要素
 
@@ -47,12 +47,12 @@ ms.locfileid: "66334528"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`かを示す、ユーザーが編集できるかどうか、**場所**上のテキスト ボックス、**新しいプロジェクト** ダイアログ ボックス。
+ テキストは、 または`true``false`のいずれかで、ユーザーが **[新しいプロジェクト**] ダイアログ ボックスの **[場所**] テキスト ボックスを編集できるかどうかを示す必要があります。
 
 ## <a name="remarks"></a>Remarks
- `EnableEditOfLocationField` は、省略可能な要素です。 既定値は`true`、ユーザーがの値を編集することができます、**場所**テキスト ボックスに、**新しいプロジェクト** ダイアログ ボックス。
+ `EnableEditOfLocationField` は省略可能な要素です。 既定値は`true`、 ユーザーが [**新しいプロジェクト**] ダイアログ ボックスの [**場所**] テキスト ボックスの値を編集できるようにするです。
 
- **新しいプロジェクト** ダイアログ ボックスで、**場所**テキスト ボックスは、新しいプロジェクトが保存されているディレクトリを指定します。
+ [**新しいプロジェクト**] ダイアログ ボックスの [**場所**] テキスト ボックスに、新しいプロジェクトを保存するディレクトリを指定します。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows アプリケーションでのメタデータの例を次に示します。
@@ -84,5 +84,5 @@ ms.locfileid: "66334528"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

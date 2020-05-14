@@ -1,27 +1,33 @@
 ---
 title: 単体テスト メソッド スタブを作成する
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3edd4694688011722b9975d299bd09cfb3832a9e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665082"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153005"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>[単体テストの作成] コマンドを使用した単体テスト メソッド スタブの作成
 
 **[単体テストの作成]** コマンドでは、単体テスト メソッド スタブが作成されます。 この機能を使用することで、テスト プロジェクト、テスト クラス、および内部にあるテスト メソッド スタブの構成が容易になります。
 
+::: moniker range="vs-2017"
 > [!NOTE]
-> **[単体テストの作成]** メニュー コマンドは、.NET Framework を対象とするマネージド コードに対してのみ使用できます (.NET Core では使用できません)。
+> **[単体テストの作成]** メニュー コマンドは、.NET Framework を対象とする C# コードに対してのみ使用できます (.NET Core では使用できません)。
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> **[単体テストの作成]** メニュー コマンドは、C# コードに対してのみ使用できます。
+::: moniker-end
 
 **[単体テストの作成]** メニュー コマンドは拡張可能であり、MSTest、MSTest V2、NUnit、xUnit 用のテストを生成するために使用できます。
 

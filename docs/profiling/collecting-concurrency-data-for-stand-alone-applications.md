@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6180d2f2e3ed655f378900d3d41691daa98a0354
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773258"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用したスタンドアロン アプリケーションのコンカレンシー データの収集
@@ -31,7 +31,7 @@ ms.locfileid: "74773258"
 |**実行中の .NET Framework アプリケーションにプロファイラーをアタッチする**|-   [方法: プロファイラーを .NET Framework アプリケーションにアタッチし、コンカレンシー データを収集する](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
 |**実行中の C/C++ アプリケーションにプロファイラーをアタッチする**|-   [方法: プロファイラーをネイティブ アプリケーションにアタッチし、コンカレンシー データを収集する](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
 
-## <a name="related-tasks"></a>関連するタスク
+## <a name="related-tasks"></a>関連タスク
 
 ### <a name="profile-stand-alone-applications"></a>スタンドアロン アプリケーションのプロファイリング
 
@@ -54,5 +54,5 @@ ms.locfileid: "74773258"
 
 - [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>辞書／辞典／その他
+## <a name="reference"></a>リファレンス
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)

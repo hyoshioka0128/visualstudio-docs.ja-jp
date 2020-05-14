@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188940"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76112546"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法: プロジェクトを構成してターゲット プラットフォームを設定する
 

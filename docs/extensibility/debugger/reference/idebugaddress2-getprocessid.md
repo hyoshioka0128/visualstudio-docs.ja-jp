@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress2::GetProcessID | Microsoft Docs
+title: をクリックします。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress2::GetProcessID method
 ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f363ba75d21b147eee6ad39276b949c703e932ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 94873e9a9c05a0c5e9253ce53240ab6b4ca39064
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324473"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736575"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
-これによって表されるオブジェクトを所有するプロセスの ID を取得[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)インターフェイス。
+この[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)インターフェイスによって表されるオブジェクトを所有するプロセスの ID を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int GetProcessID (
 
 ## <a name="parameters"></a>パラメーター
 `pProcID`\
-[out]プロセス id です。
+[アウト]プロセス ID。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

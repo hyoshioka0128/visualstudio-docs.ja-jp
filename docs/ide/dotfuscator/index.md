@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7db6a1d5e9b83e63c178b6881ed38fb655248f25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f1b2c0bfd4adbd4a952a64f20fc3d2639a8abb5f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596828"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "75918444"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -96,7 +96,7 @@ Visual Studio から Dotfuscator Community の使用を開始するには、**�
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
+[assemblies]:  /dotnet/standard/assembly-format
 [software-protection]:  https://www.preemptive.com/software-protection
 [obfuscation]:  https://www.preemptive.com/obfuscation
 [app-protection]:  https://www.preemptive.com/application-protection

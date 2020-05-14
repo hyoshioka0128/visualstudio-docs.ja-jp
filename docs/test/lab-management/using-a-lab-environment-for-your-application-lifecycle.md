@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653098"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880339"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>DevOps でラボ環境を使用する
 
@@ -28,7 +28,7 @@ ms.locfileid: "72653098"
 
 次に、一般的なラボ環境のトポロジの例を示します。
 
-| トポロジ | 説明 |
+| トポロジ | [説明] |
 |---|---|
 |![サーバーのみのトポロジ](../media/topology_backend.png)| このラボ環境は*サーバー トポロジ*を備えています。これは、サーバー アプリケーションで手動テストを実行するためによく使用されます。また、これにより、テスト担当者は自身のクライアント コンピューターを使用して環境内のバグを検証することができます。 バックエンド トポロジでは、ラボ環境にはサーバーのみが含まれています。 このタイプのトポロジを使用するば場合、一般的には、環境に含まれていないクライアント コンピューターを使用してラボ環境内のサーバーに接続します。|
 |![クラウドのラボ環境](../media/topology_cloud.png)| このラボ環境は、_サーバー トポロジ_と同様に機能します。ローカルで物理または仮想マシンを実行する必要がないため、設定に費やす時間を減らせ、メンテナンスが簡単になり、コストを抑えことができます。 Microsoft Azure などのクラウド環境には、複数の Web サイトや仮想マシンをカスタム ネットワークで早く簡単に構成できます。|
@@ -53,6 +53,7 @@ Team Foundation Server (TFS) と Azure Test Plans の[ビルドとリリース](
 
 詳細については、[ビルドとリリース管理の使用](use-build-or-rm-instead-of-lab-management.md)に関する記事を参照してください。
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Microsoft Test Manager の Visual Studio Lab Management 機能を使用する
 
 Visual Studio Enterprise Edition を使用するとき、Microsoft Test Manager の Visual Studio Lab Management 機能を使用してラボ環境を作成および管理できます。
@@ -83,7 +84,7 @@ Visual Studio Lab Management で作成できるラボ環境には、**標準環�
 
 - **仮想マシンのテンプレート:** 仮想マシンのテンプレートは、名前とその他の識別子を削除した仮想マシン テンプレートです。 VM テンプレートが SCVMM 環境に配置されると、Microsoft Test Manager は新しい識別子を生成します。 これにより、同じ環境、または複数の環境内に仮想マシンの複数のコピーを配置し、それらの仮想マシンを同時に実行することができます。
 
-- **保管された仮想マシン:** プロジェクト ライブラリに格納され、一意の識別子を持っている仮想マシン。
+- **格納された仮想マシン:** プロジェクト ライブラリに格納され、一意の識別子を持っている仮想マシン。
 
 > [!NOTE]
 > Lab Management では、SCVMM 2016 はサポートしていません。
@@ -95,26 +96,26 @@ SCVMM の詳細については、「[Virtual Machine Manager](/azure/devops/pipe
 |機能|SCVMM 環境|標準環境|
 |-|------------------------|-|
 |**テスト**|||
-|手動テストの実行|サポート状況|サポート状況|
-|コード化された UI およびその他の自動テストの実行|サポート状況|サポート状況|
-|診断アダプターを使用してリッチ バグをファイルする|サポート状況|サポート状況|
+|手動テストの実行|サポートされています|サポートされています|
+|コード化された UI およびその他の自動テストの実行|サポートされています|サポートされています|
+|診断アダプターを使用してリッチ バグをファイルする|サポートされています|サポートされています|
 |**ビルドの配置**|||
-|自動化されているビルド、配置、テストのワークフロー|サポート状況|サポート状況|
+|自動化されているビルド、配置、テストのワークフロー|サポートされています|サポートされています|
 |**環境の作成と管理**|||
-|仮想マシンの他に物理マシンを使用する|サポートなし|サポート状況|
-|サードパーティの仮想マシンを使用する|サポートなし|サポート状況|
-|ラボ環境内のコンピューターにテスト エージェントを自動的にインストールする|サポート状況|サポート状況|
-|環境スナップショットを使用してラボ環境の状態を保存および配置する|サポート状況|サポートなし|
-|VM テンプレートからラボ環境を作成する|サポート状況|サポートなし|
-|環境の開始/停止/スナップショット作成を実行する|サポート状況|サポートなし|
-|環境ビューアーを使用して環境に接続する|サポート状況|サポート状況|
-|ネットワークの分離を使用して環境の複数のコピーを同時に実行する|サポート状況|サポートなし|
+|仮想マシンの他に物理マシンを使用する|サポートされていません|サポートされています|
+|サードパーティの仮想マシンを使用する|サポートされていません|サポートされています|
+|ラボ環境内のコンピューターにテスト エージェントを自動的にインストールする|サポートされています|サポートされています|
+|環境スナップショットを使用してラボ環境の状態を保存および配置する|サポートされています|サポートされていません|
+|VM テンプレートからラボ環境を作成する|サポートされています|サポートされていません|
+|環境の開始/停止/スナップショット作成を実行する|サポートされています|サポートされていません|
+|環境ビューアーを使用して環境に接続する|サポートされています|サポートされています|
+|ネットワークの分離を使用して環境の複数のコピーを同時に実行する|サポートされています|サポートされていません|
 
 ### <a name="lab-management-concepts"></a>ラボ管理の概念
 
 ここから先へ進む前に、次の概念についても理解しておく必要があります。
 
-|用語|説明|
+|期間|[説明]|
 |-|-----------------|
 |ラボ センター|ラボ環境を作成および管理する Microsoft Test Manager の領域。|
 |Azure DevOps プロジェクト ラボ|セットアップされたラボ環境のコレクションで、これらの環境に対して仮想マシンを接続して実行することができます。|
@@ -136,9 +137,10 @@ Lab Management の詳細については、以下を参照してください。
 * [標準ラボ環境](https://msdn.microsoft.com/library/ee390842.aspx)
 * [SCVMM (仮想) 環境](https://msdn.microsoft.com/library/ee943322.aspx)
 * [ネットワーク分離環境の作成および使用](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [テスト エージェントをインストールして構成する](../../test/lab-management/install-configure-test-agents.md)
-* [Visual Studio Lab Management Guide (Visual Studio ラボ管理ガイド)](https://aka.ms/vsarsolutions)
+* [Visual Studio Lab Management Guide (Visual Studio ラボ管理ガイド)](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
 * [Microsoft DevOps ブログ](https://devblogs.microsoft.com/devops/)

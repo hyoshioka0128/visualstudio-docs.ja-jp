@@ -11,19 +11,20 @@ helpviewer_keywords:
 - MSBuild, item metadata
 - MSBuild, well-known item metadata
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963937"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633097"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild の既知の項目メタデータ
+
 次の表は、作成時にすべてのアイテムに割り当てられたメタデータの説明です。 それぞれの例で、*C:\MyProject\Source\Program.cs* ファイルをプロジェクトに含めるために次のアイテム宣言が使用されました。
 
 ```xml
@@ -32,13 +33,13 @@ ms.locfileid: "62963937"
 </ItemGroup>
 ```
 
-|項目メタデータ|説明|
+|項目メタデータ|[説明]|
 |-------------------|-----------------|
 |%(FullPath)|アイテムの完全パスが含まれます。 次に例を示します。<br /><br /> *C:\MyProject\Source\Program.cs*|
 |%(RootDir)|アイテムのルート ディレクトリが含まれます。 次に例を示します。<br /><br /> *C:\\*|
 |%(Filename)|拡張子の付かない、アイテムのファイル名が含まれます。 次に例を示します。<br /><br /> *Program*|
 |%(Extension)|アイテムのファイル名の拡張子が含まれます。 次に例を示します。<br /><br /> *.cs*|
-|%(RelativeDir)|`Include` 属性に指定されたパスが最後の円記号 (\\) まで含まれます。 次に例を示します。<br /><br /> *Source\\*|
+|%(RelativeDir)|`Include` 属性に指定されたパスが最後の円記号 (\\) まで含まれます。 次に例を示します。<br /><br /> *ソース\\*<br /><br /> `Include` 属性が完全パスの場合、`%(RelativeDir)` はルート ディレクトリ `%(RootDir)` で始まります。  次に例を示します。 <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|ルート ディレクトリのないアイテムのディレクトリが含まれます。 次に例を示します。<br /><br /> *MyProject\\Source\\*|
 |%(RecursiveDir)|`Include` 属性にワイルドカード \*\* が含まれる場合、このメタデータはワイルドカードを置き換えるパスの一部を指定します。 ワイルドカードの詳細については、「[方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」を参照してください。<br /><br /> *C:\MySolution\MyProject\Source\\* フォルダーに *Program.cs* ファイルが格納されている場合、およびプロジェクト ファイルに次のアイテムが含まれている場合:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` の値は *MySolution\MyProject\Source\\* です。|
 |%(Identity)|`Include` 属性で指定されたアイテム。 次に例を示します。<br /><br /> *Source\Program.cs*|
@@ -46,7 +47,8 @@ ms.locfileid: "62963937"
 |%(CreatedTime)|アイテムが作成された時間からのタイムスタンプが含まれます。 次に例を示します。<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|アイテムが最後にアクセスされた時間からのタイムスタンプが含まれます。<br /><br /> `2004-08-14 16:52:36.3168743`|
 
-## <a name="see-also"></a>関連項目
-- [項目](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>参照
+
+- [アイテム](../msbuild/msbuild-items.md)
 - [バッチ処理](../msbuild/msbuild-batching.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

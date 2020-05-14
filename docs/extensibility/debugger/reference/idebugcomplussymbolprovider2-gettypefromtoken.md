@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken |Microsoft Docs
+title: を返します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
 - GetTypeFromToken
 ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5212fe733e3590a7b15b5ade55d2bfd2aa4048dc
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: d2d7d809281ce1ad6e71a3c4afe666c486c53077
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "66326153"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733446"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-そのトークンを指定する型を取得します。
+トークンを指定した型を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,19 +49,19 @@ int GetTypeFromToken(
 [in]アプリケーション ドメインの識別子。
 
 `guidModule`\
-[in]モジュールの一意の識別子。
+[in]モジュールを表す一意の識別子です。
 
 `tdToken`\
-[in]取得する型のトークンです。
+[in]取得する型のトークン。
 
 `ppField`\
-[out]表される型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)します。
+[アウト][によって](../../../extensibility/debugger/reference/idebugfield.md)表される型を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b53a71a0a8215ae6bc9af47f9fe2a0ff911b5
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b1d2512c14c0630d2268adfa465e092555150943
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806880"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557868"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server でインターネットインフォメーションサービス (IIS) を使用していて、Windows で認識されないファイルの種類 (Microsoft Word ファイルなど) が配置に含まれている場合、IIS はそのファイルの送信を拒否し、配置は成功しません。
@@ -49,7 +49,7 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce とプロキシ認証
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は .NET Framework 3.5 以降の Windows 統合プロキシ認証のサポートを提供します。 特定の machine.config ディレクティブは必要ありません。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は、基本やダイジェストなどの他の認証プロトコルをサポートしていません。
 
- また、.NET Framework 2.0 に修正プログラムを適用して、この機能を有効にすることもできます。 詳細については、「 http://go.microsoft.com/fwlink/?LinkId=158730 」を参照してください。
+ また、.NET Framework 2.0 に修正プログラムを適用して、この機能を有効にすることもできます。 詳細については、「 [FIX: .NET Framework 2.0 で作成した ClickOnce アプリケーションをプロキシサーバーを使用するように構成されたクライアントコンピューターにインストールしようとした場合のエラーメッセージ: プロキシ認証が必要です」](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that)を参照してください。
 
  詳細については、「 [\<defaultProxy > 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)」を参照してください。
 
@@ -60,7 +60,7 @@ Windows Server でインターネットインフォメーションサービス (
 > 展開プロバイダーが空白でない場合、または Microsoft .NET Framework Assistant 拡張機能がインストールされている場合は、Mozilla Firefox がサポートされます。 この拡張機能は .NET Framework 3.5 SP1 でパッケージ化されています。 XBAP のサポートの場合、NPWPF プラグインは必要に応じてアクティブ化されます。
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>ブラウザースクリプトを使用した ClickOnce アプリケーションのアクティブ化
- アクティブスクリプティングを使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを起動するカスタム Web ページを開発した場合は、一部のコンピューターでアプリケーションが起動しないことがあります。 Internet Explorer には、この動作に影響する [**ファイルのダウンロードを自動的に**確認する] という設定が含まれています。 この設定は、 **[オプション]** メニューの **[セキュリティ]** タブにあり、この動作に影響します。 **ファイルのダウンロードを自動的に確認する**ように求められ、 **[ダウンロード]** カテゴリの下に一覧表示されます。 既定では、プロパティはイントラネット Web ページに対して **[有効]** に設定されており、インターネット web ページでは既定で**無効**になっています。 この設定が **[無効]** に設定されている場合、プログラムによって [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションをアクティブ化しようとすると (たとえば、URL を `document.location` プロパティに割り当てることにより)、ブロックされます。 この場合、ユーザーは、アプリケーションの URL に設定されているハイパーリンクをクリックするなどして、ユーザーが開始したダウンロードを使用してのみアプリケーションを起動できます。
+ アクティブスクリプティングを使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを起動するカスタム Web ページを開発した場合は、一部のコンピューターでアプリケーションが起動しないことがあります。 Internet Explorer には、この動作に影響する [**ファイルのダウンロードを自動的に**確認する] という設定が含まれています。 この設定は、[**オプション**] メニューの [**セキュリティ**] タブにあり、この動作に影響します。 **ファイルのダウンロードを自動的に確認する**ように求められ、[**ダウンロード**] カテゴリの下に一覧表示されます。 既定では、プロパティはイントラネット Web ページに対して [**有効**] に設定されており、インターネット web ページでは既定で**無効**になっています。 この設定が [**無効**] に設定されている場合、プログラムによって [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションをアクティブ化しようとすると (たとえば、URL を `document.location` プロパティに割り当てることにより)、ブロックされます。 この場合、ユーザーは、アプリケーションの URL に設定されているハイパーリンクをクリックするなどして、ユーザーが開始したダウンロードを使用してのみアプリケーションを起動できます。
 
 ## <a name="additional-server-configuration-issues"></a>サーバー構成に関するその他の問題
 
@@ -75,12 +75,12 @@ Windows Server でインターネットインフォメーションサービス (
 ```
 
 > [!NOTE]
-> サイトで既定の資格情報以外の資格情報を要求された場合、NTLM (NT チャレンジ応答) 認証を行うことができます。また、セキュリティ ダイアログボックスで、指定した資格情報を保存するかどうかを確認するメッセージが表示されたら、 **OK** をクリックします。今後のセッション。 ただし、この回避策は基本認証では機能しません。
+> 既定の資格情報以外の資格情報を要求するメッセージが表示された場合は、NTLM (NT チャレンジ応答) 認証を行うことができます。また、[セキュリティ] ダイアログボックスで、今後のセッション用に指定された資格情報を保存するかどうかを確認するメッセージが表示されたら、[ **OK** ] をクリックします。 ただし、この回避策は基本認証では機能しません。
 
 ## <a name="use-third-party-web-servers"></a>サードパーティの Web サーバーを使用する
  IIS 以外の Web サーバーから [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを配置する場合、配置マニフェストやアプリケーションマニフェストなど、キー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ファイルの不適切なコンテンツの種類がサーバーから返されると、問題が発生する可能性があります。 この問題を解決するには、新しいコンテンツタイプをサーバーに追加する方法に関する Web サーバーのヘルプドキュメントを参照し、次の表に記載されているすべてのファイル名拡張子のマッピングを確認してください。
 
-|ファイル名の拡張子|コンテンツ タイプ|
+|ファイル名拡張子|Content type|
 |-------------------------|------------------|
 |`.application`|`application/x-ms-application`|
 |`.manifest`|`application/x-ms-manifest`|
@@ -94,7 +94,7 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>アプリケーションのインストールで FTP プロトコルがサポートされていない
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は、HTTP 1.1 Web サーバーまたはファイルサーバーからのアプリケーションのインストールをサポートしています。 ファイル転送プロトコルの FTP は、アプリケーションのインストールではサポートされていません。 FTP を使用してアプリケーションのみを発行できます。 次の表は、これらの違いをまとめたものです。
 
-| URL の種類 | 説明 |
+| URL の種類 | Description |
 |----------| - |
 | ftp:// | このプロトコルを使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを発行できます。 |
 | http:// | このプロトコルを使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションをインストールすることができます。 |
@@ -110,7 +110,7 @@ Windows Server でインターネットインフォメーションサービス (
  既定では、Windows Server には FrontPage Server Extensions がインストールされていません。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用して、FrontPage Server Extensions で HTTP を使用する Windows Server Web サーバーに発行する場合は、まず FrontPage Server Extensions をインストールする必要があります。 インストールを実行するには、Windows Server のサーバー管理ツールの管理ツールを使用します。
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: ロックダウンされたコンテンツの種類
- [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] の IIS は、特定の既知のコンテンツの種類 ( *.htm*、 *.html*、 *.txt*など) を除くすべてのファイルの種類をロックダウンします。 このサーバーを使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの展開を有効にするには、アプリケーションで使用されるアプリケーション *、* *マニフェスト*、およびその他のカスタムファイルの種類のファイルをダウンロードできるように IIS の設定を変更する必要があります。
+ [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] の IIS は、特定の既知のコンテンツの種類 ( *.htm*、 *.html*、 *.txt*など) を除くすべてのファイルの種類をロックダウンします。 このサーバーを使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの展開を有効にするには、アプリケーションで使用されるアプリケーション *、**マニフェスト*、およびその他のカスタムファイルの種類のファイルをダウンロードできるように IIS の設定を変更する必要があります。
 
  IIS サーバーを使用してを展開する場合は、 *inetmgr.exe*を実行し、既定の Web ページに新しいファイルの種類を追加します。
 
@@ -118,7 +118,7 @@ Windows Server でインターネットインフォメーションサービス (
 
 - 拡張子が "" で mime タイプが "application/オクテット-stream" の MIME タイプを作成する場合、<em>ブロックされていないファイルの種類のファイルをダウンロードできるようになります。(ただし、* .aspx</em>や *.asmx*などのブロックされたファイルの種類はダウンロードできません)。
 
-  Windows Server で MIME の種類を構成する具体的な手順については、マイクロソフトサポート技術情報の記事 KB326965 「IIS 6.0 は不明な MIME の種類を提供しません」を参照してください。 [http://support.microsoft.com/default.aspx?scid=kb ; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。
+  Windows Server で MIME の種類を構成する具体的な手順については、「 [Web サイトまたはアプリケーションに mime の種類を追加する方法](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application)」を参照してください。
 
 ## <a name="content-type-mappings"></a>コンテンツの種類のマッピング
  HTTP 経由で公開する場合、*アプリケーション*ファイルのコンテンツの種類 (MIME の種類とも呼ばれます) は、"application/x-ms-application" にする必要があります。 サーバーに .NET Framework 2.0 がインストールされている場合は、自動的に設定されます。 これがインストールされていない場合は、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション vroot (またはサーバー全体) に対して MIME の種類の関連付けを作成する必要があります。
@@ -128,11 +128,11 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="http-compression-issues"></a>HTTP 圧縮に関する問題
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]では、クライアントにストリームを送信する前に、GZIP アルゴリズムを使用してデータストリームを圧縮する Web サーバーテクノロジである HTTP 圧縮を使用するダウンロードを実行できます。 クライアント (この場合は [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]) では、ファイルを読み取る前にストリームが圧縮解除されます。
 
- IIS を使用している場合は、HTTP 圧縮を簡単に有効にすることができます。 ただし、HTTP 圧縮を有効にすると、特定のファイルの種類 (つまり、HTML ファイルとテキストファイル) に対してのみ有効になります。 アセンブリ ( *.dll*)、xml ( *.xml*)、配置マニフェスト ( *. application*)、およびアプリケーションマニフェスト ( *.manifest*) の圧縮を有効にするには、これらのファイルの種類を、IIS で圧縮する型のリストに追加する必要があります。 ファイルの種類を配置に追加するまでは、テキストファイルと HTML ファイルのみが圧縮されます。
+ IIS を使用している場合は、HTTP 圧縮を簡単に有効にすることができます。 ただし、HTTP 圧縮を有効にすると、特定のファイルの種類 (つまり、HTML ファイルとテキストファイル) に対してのみ有効になります。 アセンブリ (*.dll*)、xml (*.xml*)、配置マニフェスト (*. application*)、およびアプリケーションマニフェスト (*.manifest*) の圧縮を有効にするには、これらのファイルの種類を、IIS で圧縮する型のリストに追加する必要があります。 ファイルの種類を配置に追加するまでは、テキストファイルと HTML ファイルのみが圧縮されます。
 
  IIS の詳細な手順については、「 [HTTP 圧縮用に追加のドキュメントの種類を指定する方法](https://support.microsoft.com/help/234497)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)

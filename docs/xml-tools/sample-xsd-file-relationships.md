@@ -1,21 +1,21 @@
 ---
-title: サンプル XSD ファイル:リレーションシップ
+title: 'サンプル XSD ファイル: リレーションシップ'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5342bece15fff25ba970270456aed96c5dc7f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601752"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75592556"
 ---
-# <a name="sample-xsd-file-relationships"></a>サンプル XSD ファイル:リレーションシップ
+# <a name="sample-xsd-file-relationships"></a>サンプル XSD ファイル: リレーションシップ
 
 次の XSD ファイルは、XSD スキーマ デザイナーのドキュメントのさまざまな例で使用されます。 このファイルは、注釈とドキュメントを含む購買発注書のスキーマです。
 

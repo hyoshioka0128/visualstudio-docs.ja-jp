@@ -1,25 +1,25 @@
 ---
 title: EditorConfig ファイルでの .NET の名前付け規則
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650912"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544005"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
-名前付け規則は、クラス、プロパティ、およびメソッドなどのコード要素の名前付けに関するものです。 たとえば、パブリック メンバーは大文字表記とする必要があること、または非同期メソッドは "Async" で終わる必要があることを指定できます。 これらの規則を適用するには、[.editorconfig ファイル](../ide/create-portable-custom-editor-options.md)にそれらを含めます。 名前付け規則違反は、規則に対して選択した重大度に応じて、**エラー一覧**内に表示されるか、または名前の下に修正候補として表示されます。 違反を確認するためにプロジェクトをビルドする必要はありません。
+名前付け規則は、クラス、プロパティ、およびメソッドなどのコード要素の名前付けに関するものです。 たとえば、パブリック メンバーは大文字表記とする必要があること、またはプライベート フィールドは `_` で始まる必要があることを指定できます。 これらの規則を適用するには、[.editorconfig ファイル](../ide/create-portable-custom-editor-options.md)にそれらを含めます。 名前付け規則違反は、規則に対して選択した重大度に応じて、**エラー一覧**内に表示されるか、または名前の下に修正候補として表示されます。 違反を確認するためにプロジェクトをビルドする必要はありません。
 
 それぞれの名前付け規則については、名前付け規則を適用するシンボル、名前付けのスタイル、および規則を適用する上での重大度を、以下に示すプロパティを使用して指定する必要があります。 プロパティの順序は重要ではありません。
 
@@ -56,6 +56,9 @@ ms.locfileid: "72650912"
 - type_parameter
 - local
 - local_function
+
+> [!NOTE] 
+> タプル メンバーは現時点ではサポートされていません。
 
 ### <a name="accessibility-levels-of-symbols"></a>シンボルのアクセシビリティ レベル
 

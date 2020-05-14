@@ -1,5 +1,5 @@
 ---
-title: '方法: ビルドをクリーンする | Microsoft Docs'
+title: '方法 : ビルドをクリーンする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,25 +8,27 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977293"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633916"
 ---
 # <a name="how-to-clean-a-build"></a>方法: ビルドをクリーンする
-ビルドをクリーンするとき、すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルが残ります。 プロジェクト ファイルとコンポーネント ファイルから、中間ファイルと出力ファイルの新しいインスタンスをビルドできます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] とともに提供されている一般的なタスクのライブラリには、システム コマンドの実行に利用できる [Exec](../msbuild/exec-task.md) タスクが含まれています。 タスクのライブラリに関する情報については、「[タスク リファレンス](../msbuild/msbuild-task-reference.md)」を参照してください。
+
+ビルドをクリーンするとき、すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルが残ります。 プロジェクト ファイルとコンポーネント ファイルから、中間ファイルと出力ファイルの新しいインスタンスをビルドできます。 
 
 ## <a name="create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
+
  既定では、プロジェクトのコンパイル時に作成される *.exe* ファイルは、プロジェクトおよびソース ファイルと同じディレクトリに置かされます。 ただし、一般的には、出力項目は別個のディレクトリに作成されます。
 
-#### <a name="to-create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
+### <a name="to-create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
 
 1. `Property` 要素を利用し、ディレクトリの場所と名前を定義します。 たとえば、プロジェクトおよびソースファイルを含むディレクトリに *BuiltApp* という名前のディレクトリを作成します。
 
@@ -40,6 +42,7 @@ ms.locfileid: "62977293"
      ```
 
 ## <a name="remove-the-output-items"></a>出力項目を削除する
+
  中間ファイルと出力ファイルの新しいインスタンスを作成する前に、以前のインスタンスをすべて消去しておくことをお勧めします。 [RemoveDir](../msbuild/removedir-task.md) タスクを利用し、ディレクトリとそれに含まれるすべてのファイルとディレクトリをディスクから削除します。
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>ディレクトリとそのディレクトリに含まれるすべてのファイルを削除するには
@@ -49,6 +52,7 @@ ms.locfileid: "62977293"
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>例
+
  次のコード例プロジェクトには、新しいターゲット、`Clean` が含まれています。このターゲットは `RemoveDir` タスクを使用し、ディレクトリとそのディレクトリに含まれるすべてのファイルを削除します。 この例ではまた、`Compile` ターゲットは、ビルドのクリーン時に削除される出力項目に対して別個のディレクトリを作成します。
 
  `Compile` は既定のターゲットとして定義されます。そのため、別のターゲットを指定しない限り、自動的に使用されます。 コマンド ライン スイッチ **-target** を使用し、別のターゲットを指定します。 次に例を示します。
@@ -99,8 +103,8 @@ ms.locfileid: "62977293"
 </Project>
 ```
 
-## <a name="see-also"></a>関連項目
-- [Exec タスク](../msbuild/exec-task.md)
+## <a name="see-also"></a>参照
+
 - [MakeDir タスク](../msbuild/makedir-task.md)
 - [RemoveDir タスク](../msbuild/removedir-task.md)
 - [Csc タスク](../msbuild/csc-task.md)

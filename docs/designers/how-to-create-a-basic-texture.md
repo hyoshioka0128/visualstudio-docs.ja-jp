@@ -1,21 +1,21 @@
 ---
-title: '方法: 基本的なテクスチャを作成する'
+title: '方法: 基本テクスチャを作成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635865"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589457"
 ---
-# <a name="how-to-create-a-basic-texture"></a>方法: 基本的なテクスチャを作成する
+# <a name="how-to-create-a-basic-texture"></a>方法: 基本テクスチャを作成する
 
 この記事では、イメージ エディターを使用して基本的なテクスチャを作成する方法を示します。これには次のアクティビティが含まれます。
 
@@ -85,8 +85,8 @@ ms.locfileid: "72635865"
 
 !["bullseye" ターゲットのテクスチャ全体](../designers/media/gfx_image_demo_bullseye.png)
 
-次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法:MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。
+次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [Image Editor](../designers/image-editor.md)
+- [イメージ エディター](../designers/image-editor.md)

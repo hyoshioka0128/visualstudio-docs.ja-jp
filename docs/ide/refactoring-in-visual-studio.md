@@ -5,17 +5,17 @@ ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79a85314313cffce26667be8dbaf99eaa67cebd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645358"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75585718"
 ---
 # <a name="refactor-code"></a>コードのリファクタリング
 
@@ -29,7 +29,7 @@ Visual Studio では、多様なプログラミング言語でさまざまなリ
 - C++ コードのリファクタリングについては、「[コードの作成とリファクタリング (C++)](/cpp/ide/writing-and-refactoring-code-cpp)」を参照してください。
 - F# のリファクタリングのサポートは、サード パーティ製の Visual Studio 拡張機能の [Visual F# Power Tool](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) で提供されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイック アクション](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

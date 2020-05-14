@@ -1,5 +1,5 @@
 ---
-title: SccAddFilesFromSCC 関数 |Microsoft Docs
+title: 関数の中 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe58c3eef4b09fccb5cd21b714e5987ae1e08aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333975"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701284"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 関数
-この関数は、現在開いているプロジェクトをソース管理からファイルの一覧を追加します。
+# <a name="sccaddfilesfromscc-function"></a>関数の一覧
+この関数は、ソース管理から現在開いているプロジェクトにファイルのリストを追加します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,50 +41,50 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグインのコンテキストのポインター。
+[in]ソース管理プラグイン のコンテキスト ポインター。
 
  hWnd
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- lpUser
+ ユーザー数を指定します。
 
-[入力、出力] (最大 SCC_USER_SIZE、null 終端文字を含む) ユーザー名。
+[イン、アウト]ユーザー名 (null 終端文字を含むSCC_USER_SIZEまで)。
 
- lpAuxProjPath
+ プロウプロイパス
 
-[入力、出力]プロジェクトを識別する、補助型の文字列 (最大`SCC_PRJPATH_`サイズは、null 終端文字を含めて)。
+[イン、アウト]プロジェクトを識別する補助文字列`SCC_PRJPATH_`(NULL 終端文字を含む SIZE まで)。
 
- cFiles
+ ファイル
 
-[in]指定されたファイルの数`lpFilePaths`します。
+[in]によって`lpFilePaths`与えられたファイルの数。
 
- lpFilePaths
+ パス
 
-[入力、出力]現在のプロジェクトに追加するファイル名の配列。
+[イン、アウト]現在のプロジェクトに追加するファイル名の配列。
 
- lpDestination
+ lpデスティネーション
 
-[in]ファイルが書き込まれる先のパス。
+[in]ファイルが書き込まれる宛先パス。
 
- lpComment
+ ル・コメント
 
-[in]追加されるファイルのそれぞれに適用されるコメントです。
+[in]追加する各ファイルに適用するコメント。
 
- pbResults
+ 結果
 
-[入力、出力]エラーまたは (0 以外の場合、または TRUE) に成功した場合に設定できるフラグの配列 (0 または FALSE) ファイルごとに (配列のサイズは以上である必要があります`cFiles`長い)。
+[イン、アウト]各ファイルの成功 (ゼロまたは TRUE 以外) または失敗 (ゼロまたは FALSE) を示すように設定されているフラグの配列 (`cFiles`配列のサイズは少なくとも長くなければなりません)。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_E_PROJNOTOPEN|プロジェクトが開いていません。|
-|SCC_E_OPNOTPERFORMED|接続では、同じプロジェクトで指定したとおりにありません。 `lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|ユーザーは、データベースを更新する権限がありません。|
+|SCC_E_PROJNOTOPEN|プロジェクトが開かれていない。|
+|SCC_E_OPNOTPERFORMED|次の指定と同じプロジェクトへの接続ではありません。`lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|ユーザーはデータベースの更新を許可されていません。|
 |SCC_E_NONSPECIFICERROR|不明なエラー。|
-|SCC_I_RELOADFILE|ファイルまたはプロジェクトを再読み込みする必要があります。|
+|SCC_I_RELOADFILE|ファイルまたはプロジェクトを再ロードする必要があります。|
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

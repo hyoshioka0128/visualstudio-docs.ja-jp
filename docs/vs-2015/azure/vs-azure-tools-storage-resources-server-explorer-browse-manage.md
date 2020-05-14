@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291223"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849872"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>概要
+## <a name="overview"></a>の概要
 
 Azure Tools for Microsoft Visual Studio をインストール済みである場合、Azure のストレージ アカウントから、BLOB、キュー、テーブルのデータを表示できます。 サーバー エクスプローラーの [Azure] の **[ストレージ]** ノードに、ローカル ストレージ エミュレーター アカウントをはじめとする Azure ストレージ アカウント内のデータが表示されます。
 
@@ -110,7 +110,7 @@ Cloud Explorer で次のいずれかの方法を使用します。
 * BLOB 名を選択し、 **[開く]** をクリックします。
 * BLOB 名をダブルクリックします。
 
-BLOB のダウンロードの進行状況が **[Azure のアクティビティ ログ]** ウィンドウに表示されます。
+**[Azure のアクティビティ ログ]** ウィンドウに BLOB のダウンロードの進行状況が表示されます。
 
 その種類のファイルの既定のエディターで BLOB が開きます。 オペレーティング システムによってファイルの種類が認識された場合は、ローカルにインストールされているアプリケーションでファイルが開きます。 それ以外の場合は、BLOB のファイルの種類に適したアプリケーションを選択するよう求められます。 BLOB をダウンロードしたときに作成されるローカル ファイルは、読み取り専用としてマークされます。
 
@@ -122,7 +122,7 @@ BLOB データはローカルにキャッシュされ、Azure Blob Storage で�
 
 BLOB をアップロードするには、コンテナーを開き、BLOB コンテナー ビューに表示されたら、 **[BLOB のアップロード]** をクリックします
 
-アップロード対象ファイル (複数可) を選択し、任意の種類のファイルをアップロードできます。 **[Azure のアクティビティ ログ]** ウィンドウにアップロードの進行状況が表示されます。 BLOB データを操作する方法の詳細については、[.NET で Azure Blob Storage を使用する方法](https://go.microsoft.com/fwlink/p/?LinkId=267911)に関する記事をご覧ください。
+アップロード対象ファイル (複数可) を選択し、任意の種類のファイルをアップロードできます。 **[Azure のアクティビティ ログ]** ウィンドウにアップロードの進行状況が表示されます。 BLOB データを操作する方法の詳細については、[.NET で Azure Blob Storage を使用する方法](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/)に関する記事をご覧ください。
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>BLOB に転送されたログを表示するには
 
@@ -157,7 +157,7 @@ BLOB を選択し、 **[BLOB を開く]** をクリックします。
 
 ![キューの表示](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-ストレージ サービスのキューの詳細については、「[.NET を使用して Azure Queue Storage を使用する](https://go.microsoft.com/fwlink/?LinkID=264702)」をご覧ください。 ストレージ サービス キューの Web サービスについては、「 [キュー サービスの概念](https://go.microsoft.com/fwlink/?LinkId=264788)」を参照してください。 Visual Studio を使用して、ストレージ サービス キューにメッセージを送信する方法については、「 [ストレージ サービスのキューにメッセージを送信する](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)」を参照してください。
+ストレージ サービスのキューの詳細については、「[.NET を使用して Azure Queue Storage を使用する](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/)」をご覧ください。 ストレージ サービス キューの Web サービスについては、「 [キュー サービスの概念](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx)」を参照してください。 Visual Studio を使用して、ストレージ サービス キューにメッセージを送信する方法については、「 [ストレージ サービスのキューにメッセージを送信する](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)」を参照してください。
 
 > [!NOTE]
 > ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、「[Service Bus のキュー、トピック、サブスクリプション](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)」をご覧ください。
@@ -185,7 +185,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 テーブル デザイナーで、エンティティ (単一の行) またはプロパティ (単一のセル) のショートカット メニューを開き、 **[編集]** を選択します。
 
-![テーブルエンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![テーブル エンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 単一テーブルのエンティティが、同じ一連のプロパティ (列) を持っている必要はありません。 テーブル データの表示と編集には、次の制限があることに留意してください。
 
@@ -200,7 +200,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
     ![[エンティティの追加] ボタン](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. **[エンティティの追加]** ダイアログ ボックスで、**PartitionKey** プロパティおよび **RowKey** プロパティの値を入力します。
+1. **[エンティティの追加]** ダイアログ ボックスで、**PartitionKey** プロパティと **RowKey** プロパティの値を入力します。
 
     ![[エンティティの追加] ダイアログ ボックス](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 

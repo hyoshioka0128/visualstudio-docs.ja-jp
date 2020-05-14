@@ -13,21 +13,21 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bb2b874f7bbe94e383e9e7fba755dcc373a93150
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685297"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477051"
 ---
 # <a name="commandtable-element"></a>CommandTable 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CommandTable は、.vsct ファイルのルート要素です。 これは、実際のレイアウトと、IDE に VSPackage を提供するコマンドの種類を定義するファイルです。 コマンドは、メニュー項目、メニューのツールバー、およびコンボ ボックスに含めることができます。 詳細については、「 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。  
+CommandTable は、. vsct ファイルのルート要素です。 これは、VSPackage が IDE に提供するコマンドの実際のレイアウトと種類を定義するファイルです。 コマンドには、メニュー項目、メニュー、ツールバー、およびコンボボックスを含めることができます。 詳細については、「 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。  
   
 ## <a name="syntax"></a>構文  
   
-```  
+```xml  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" >  
   <Extern>... </Extern>  
   <Include>... </Include>  
@@ -41,29 +41,29 @@ CommandTable は、.vsct ファイルのルート要素です。 これは、実
 </CommandTable>  
 ```  
   
-## <a name="attributes-and-elements"></a>属性および要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
+## <a name="attributes-and-elements"></a>属性と要素  
+ 次のセクションでは、属性、子要素、親要素について説明します。  
   
 ### <a name="attributes"></a>属性  
   
 | 属性 |                                                                                                                   説明                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   xmlns   |                                   必須。 XML 名前空間:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>"                                   |
-| language  | 任意。 言語属性がすべての既定の言語を指定するため\<文字列 > コマンド テーブル内の要素。  言語が指定されていない場合は、現在のプロセスの言語が使用されます。<br /><br /> language="en-us" |
+|   xmlns   |                                   必須。 XML 名前空間:<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
+| language  | 省略可。 Language 属性は、コマンドテーブル内のすべての \<文字列 > 要素の既定の言語を指定するために使用できます。  言語が指定されていない場合は、現在のプロセスの言語が使用されます。<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Extern 要素](../extensibility/extern-element.md)|省略可能です。 コンパイラのプリプロセッサ ディレクティブが含まれています。|  
-|[Include 要素](../extensibility/include-element.md)|省略可能です。 コンパイルに含める任意のファイルへのパスが含まれています。|  
-|[Define 要素](../extensibility/define-element.md)|省略可能です。 その名前と値のシンボルを定義します。|  
-|[Commands 要素](../extensibility/commands-element.md)|省略可能です。 すべての他の要素を含む VSPackage のすべてのコマンドを定義する親要素です。|  
-|[CommandPlacements 要素](../extensibility/commandplacements-element.md)|省略可能です。 コマンド バーで、コマンドが配置されるかを定義します。|  
-|[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|省略可能です。 コマンドとツールバーの静的な可視性を判断します。|  
-|[KeyBindings 要素](../extensibility/keybindings-element.md)|省略可能です。 コマンドのショートカット キーの組み合わせを指定します。|  
-|[UsedCommands 要素](../extensibility/usedcommands-element.md)|省略可能です。 必要に応じてその他の Vspackage で最初にサポートされる機能の独自のバージョンを実装するために VSPackage を使用できます。|  
-|[Symbols 要素](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|省略可能です。 コンパイラのシンボル データ--Guid、Id、およびなど--が含まれています。|  
+|[Extern 要素](../extensibility/extern-element.md)|省略可。 コンパイラのプリプロセッサディレクティブを格納します。|  
+|[Include 要素](../extensibility/include-element.md)|省略可。 コンパイルに含めるすべてのファイルへのパスを格納します。|  
+|[Define 要素](../extensibility/define-element.md)|省略可。 名前と値を指定してシンボルを定義します。|  
+|[Commands 要素](../extensibility/commands-element.md)|省略可。 他のすべての要素を含む VSPackage のすべてのコマンドを定義する親要素。|  
+|[CommandPlacements 要素](../extensibility/commandplacements-element.md)|省略可。 コマンドバーのどこにコマンドを配置するかを定義します。|  
+|[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|省略可。 コマンドおよびツールバーを静的に表示するかどうかを決定します。|  
+|[KeyBindings 要素](../extensibility/keybindings-element.md)|省略可。 コマンドのショートカットキーの組み合わせ (存在する場合) を指定します。|  
+|[UsedCommands 要素](../extensibility/usedcommands-element.md)|省略可。 VSPackage は、必要に応じて、他の Vspackage でサポートされていた独自のバージョンの機能を実装できます。|  
+|[Symbols 要素](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|省略可。 コンパイラのシンボルデータ (Guid、Id など) が含まれています。|  
   
 ### <a name="parent-elements"></a>親要素  
   
@@ -71,5 +71,5 @@ CommandTable は、.vsct ファイルのルート要素です。 これは、実
 |-------------|-----------------|  
 |なし||  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

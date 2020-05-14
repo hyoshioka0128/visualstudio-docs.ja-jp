@@ -10,22 +10,22 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f781580f28c3b829483180d559851bc9730fa18e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653493"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76113428"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してカウンター セットを管理する
 
 **新しいロード テスト ウィザード**でロード テストを作成するときに、初期カウンター セットを追加します。 これらによって、定義済みのカウンター セットがロード テスト用に提供されます。
 
 > [!NOTE]
-> ロード テストを複数のリモート コンピューターに分散する場合、コントローラーとエージェント カウンターが、コントローラーとエージェント カウンター セットに割り当てられます。 ロード テストでリモート コンピューターを使用する方法の詳細については、「[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)」を参照してください。
+> ロード テストを複数のリモート コンピューターに分散する場合、コントローラーとエージェント カウンターが、コントローラーとエージェント カウンター セットに割り当てられます。 ロード テストでリモート コンピューターを使用する方法の詳細については、[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)に関するページを参照してください。
 
 カウンター セットの管理では、パフォーマンス データの収集元となるコンピューター セットの選択や、個々のコンピューターから収集するカウンター セットの割り当てなどを行います。 カウンターは、**ロード テスト エディター**で管理します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "72653493"
 
 6. **[OK]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

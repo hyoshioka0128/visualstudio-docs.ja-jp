@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316486"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269062"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>方法: 拡張機能を Visual Studio 2017 および Visual Studio 2015 と互換性を持たせる
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>方法: 拡張機能を Visual Studio 2019/2017 および Visual Studio 2015 と互換性を持たせる
 
-このドキュメントでは、拡張機能プロジェクトを Visual Studio 2015 と Visual Studio 2017 間でラウンドトリップさせる方法について説明します。 このアップグレードを完了すると、Visual Studio 2015 と Visual Studio 2017 の両方でプロジェクトを開いてビルド、インストール、および実行できるようになります。 参照として、Visual Studio 2015 と Visual Studio 2017 間でラウンドトリップできる一部の拡張機能については、 [VS SDK の機能拡張のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)を参照してください。
+このドキュメントでは、Visual Studio 2015 と visual studio 2019 または visual studio 2017 間で機能拡張プロジェクトをラウンドトリップさせる方法について説明します。 このアップグレードを完了すると、プロジェクトは Visual Studio 2015 と Visual Studio 2019 または2017の両方で開く、ビルド、インストール、および実行できるようになります。 参照として、Visual Studio 2015 と Visual Studio 2019 または2017の間でラウンドトリップできる一部の拡張機能については、 [VS SDK の機能拡張のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)を参照してください。
 
-Visual Studio 2017 でビルドするだけで、出力 VSIX を Visual Studio 2015 と Visual Studio 2017 の両方で実行する場合は、[拡張機能の移行](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)に関するドキュメントを参照してください。
+Visual Studio 2019/2017 でビルドするだけで、出力 VSIX を Visual Studio 2015 と Visual Studio 2019/2017 の両方で実行する場合は、[拡張機能の移行](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)に関するドキュメントを参照してください。
 
 > [!NOTE]
 > Visual Studio のバージョン間の変更により、1つのバージョンで動作していたものが、別のバージョンでは機能しません。 アクセスしようとしている機能が両方のバージョンで利用可能であること、または拡張機能に予期しない結果が含まれていることを確認してください。
@@ -29,7 +29,7 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 1. 適切な NuGet パッケージをインポートします。
 2. 拡張機能マニフェストを更新します。
     * インストールの対象
-    * 前提条件
+    * Prerequisites
 3. CSProj を更新します。
     * `<MinimumVisualStudioVersion>` を更新します。
     * `<VsixType>` プロパティを追加します。
@@ -43,11 +43,11 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 このドキュメントは、コンピューターに以下をインストール済みであることを前提としています。
 
 * VS SDK がインストールされた Visual Studio 2015
-* 拡張機能ワークロードがインストールされた Visual Studio 2017
+* 拡張機能ワークロードがインストールされた Visual Studio 2019 または2017
 
 ## <a name="recommended-approach"></a>推奨される方法
 
-このアップグレードは、Visual Studio 2017 ではなく、Visual Studio 2015 で開始することを強くお勧めします。 Visual Studio 2015 で開発を行う主な利点は、Visual Studio 2015 で利用できないアセンブリの参照を確実に排除できるという点です。 Visual Studio 2017 で開発を行うと、Visual Studio 2017 にのみ存在するアセンブリへの依存関係を導入してしまうリスクがあります。
+Visual studio 2019 または2017ではなく、Visual Studio 2015 を使用してこのアップグレードを開始することを強くお勧めします。 Visual Studio 2015 で開発を行う主な利点は、Visual Studio 2015 で利用できないアセンブリの参照を確実に排除できるという点です。 Visual Studio 2019 または2017で開発する場合、Visual Studio 2019 または2017にのみ存在するアセンブリに依存関係を導入するリスクがあります。
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>project.json への参照を確実に排除する
 
@@ -67,12 +67,12 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 
 ビルドとデバッグを正しく実行できるビルド ツールを確実に追加する必要があります。 そのために、Microsoft は Microsoft.VisualStudio.Sdk.BuildTasks というアセンブリを作成しました。
 
-Visual Studio 2015 と 2017 の両方で VSIXv3 をビルドして展開するには、次の NuGet パッケージが必要となります。
+Visual Studio 2015 と2019/2017 の両方で VSIXv3 をビルドしてデプロイするには、次の NuGet パッケージが必要です。
 
-バージョン | ビルド ツール
+Version | ビルド ツール
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2019 または2017 | Microsoft.VSSDK.BuildTool
 
 次の手順に従います。
 
@@ -112,7 +112,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 * ファイルを保存して閉じます。
 
 > [!NOTE]
-> Visual Studio 2017 のすべてのバージョンと互換性があることを確認するために、前提条件のバージョンを手動で編集することが必要になる場合があります。 なぜならば、デザイナーは最小バージョンをVisual Studio の現在のバージョンとして挿入するからです (例: 15.0.26208.0)。 しかし、他のユーザーがそれより前のバージョンを使用している可能性があるため、これを 15.0 に編集する必要があります。
+> Visual Studio 2019 または2017のすべてのバージョンと互換性があることを確認するために、前提条件のバージョンを手動で編集することが必要になる場合があります。 なぜならば、デザイナーは最小バージョンをVisual Studio の現在のバージョンとして挿入するからです (例: 15.0.26208.0)。 しかし、他のユーザーがそれより前のバージョンを使用している可能性があるため、これを 15.0 に編集する必要があります。
 
 この時点で、マニフェスト ファイルは次のようになります。
 
@@ -165,7 +165,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 Condition ステートメントの前に `'$(VisualStudioVersion)' != '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例 :
+例:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 Condition ステートメントの前に `'$(VisualStudioVersion)' == '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例 :
+例:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 これを行うには、条件付きステートメントの前に `'$(VisualStudioVersion)' != '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例 :
+例:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,23 +189,24 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 Condition ステートメントの前に `'$(VisualStudioVersion)' == '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例 :
+例:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* csproj ファイルを保存して閉じます。
+* csproj ファイルを保存して閉じます。 
+  * ソリューションで複数のプロジェクトを使用している場合は、プロジェクトのコンテキストメニューの [スタートアッププロジェクトに設定] を使用して、このプロジェクトをスタートアッププロジェクトとして設定します。 これにより、アンロード後に Visual Studio がこのプロジェクトを再び開くことができます。
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015 と Visual Studio 2017 で拡張機能のインストールをテストする
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Visual Studio 2015 および Visual Studio 2019 または2017で拡張機能のインストールをテストする
 
 この時点で、プロジェクトは Visual Studio 2015 と Visual Studio 2017 の両方にインストール可能な VSIXv3 をビルドできる状態になっているはずです。
 
 * Visual Studio 2015 でプロジェクトを開きます。
 * プロジェクトをビルドし、VSIX が正しくビルドされたことを出力で確認します。
 * プロジェクトディレクトリに移動します。
-* *\Bin\debug*フォルダーを開きます。
-* VSIX ファイルをダブルクリックし、Visual Studio 2015 および Visual Studio 2017 に拡張機能をインストールします。
+* 開く、 *\bin\Debug* フォルダー。
+* VSIX ファイルをダブルクリックし、Visual Studio 2015 および Visual Studio 2019/2017 に拡張機能をインストールします。
 * **[インストール済み]** セクションの [**ツール** > の**拡張機能と更新プログラム**] に拡張機能が表示されていることを確認してください。
 * 拡張機能を実行または使用して、機能することを確認します。
 

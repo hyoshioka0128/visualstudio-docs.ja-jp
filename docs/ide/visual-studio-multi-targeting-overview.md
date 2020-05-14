@@ -1,30 +1,28 @@
 ---
 title: 対象の .NET Framework
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647184"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472733"
 ---
 # <a name="framework-targeting-overview"></a>フレームワーク対象設定機能の概要
 
 Visual Studio では、プロジェクトの対象となる .NET のバージョンを指定できます。 フレームワークを対象にする機能は、指定したフレームワーク バージョンで利用できる機能のみをアプリケーションで使用することを保証するのに役立ちます。 別のコンピューター上で実行する .NET Framework アプリについては、アプリケーションが対象とする .NET Framework バージョンが、コンピューターにインストールされている .NET Framework バージョンとの互換性を持っている必要があります。
 
-Visual Studio のソリューションには、異なるバージョンの .NET を対象とするプロジェクトを含めることができます。
-
-ターゲット フレームワークの詳細については、「[ターゲット フレームワーク](/dotnet/standard/frameworks)」を参照してください。
+Visual Studio のソリューションには、異なるバージョンの .NET を対象とするプロジェクトを含めることができます。  ただし、1 つのビルドのための参照条件を使用して 1 つのバージョンの .NET に対してのみビルドを行うか、各バージョンに対して異なるバイナリを再帰的にビルドすることができます。  ターゲット フレームワークの詳細については、「[ターゲット フレームワーク](/dotnet/standard/frameworks)」を参照してください。
 
 > [!TIP]
 > 異なるプラットフォームに対応する複数のアプリケーションを対象にすることもできます。 詳細については、[MSBuild のマルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)に関する記事をご覧ください。

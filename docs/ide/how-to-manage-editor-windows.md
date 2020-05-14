@@ -1,5 +1,5 @@
 ---
-title: '方法: エディター ウィンドウを管理する'
+title: '方法 : エディター ウィンドウを管理する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3493a70bd1257194f8c95a58eb6c2890d83ed418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4af752c99c87bf470922db03bf5d4746151fa8f2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645810"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591022"
 ---
-# <a name="how-to-manage-editor-windows"></a>方法: エディター ウィンドウを管理する
+# <a name="how-to-manage-editor-windows"></a>方法 : エディター ウィンドウを管理する
 
 コードの複数箇所に対して同時に作業を行うことができます。 このためには、エディター ウィンドウを分割するか、エディター ウィンドウのインスタンスをいくつか開きます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72645810"
 
    エディターの新しいタブ付きインスタンスが追加されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [ウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)

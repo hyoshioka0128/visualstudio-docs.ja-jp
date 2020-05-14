@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634131"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589839"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
@@ -135,9 +135,9 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 8. **[ツールボックス]** で `Button` アイコンをさらに 4 回クリックして、`TableLayoutPanel` コントロールの 2 行目を設定します。
 
-9. **Shift** キーを押しながら選択して、5 つの `Button` コントロールをすべて選択します。 **Ctrl** + **C** キーを押して、`Button` コントロールをクリップボードにコピーします。
+9. **Shift** キーを押しながら選択して、5 つの `Button` コントロールをすべて選択します。 **Ctrl**+**C** キーを押して、`Button` コントロールをクリップボードにコピーします。
 
-10. **Ctrl** + **V** キーを 3 回押して、`Button` コントロールのコピーを `TableLayoutPanel` コントロールの残りの行に貼り付けます。
+10. **Ctrl**+**V** キーを 3 回押して、`Button` コントロールのコピーを `TableLayoutPanel` コントロールの残りの行に貼り付けます。
 
 11. **Shift** キーを押しながら選択して、20 個の `Button` コントロールをすべて選択します。
 

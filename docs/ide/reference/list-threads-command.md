@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747888"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595489"
 ---
 # <a name="list-threads-command"></a>ListThreads コマンド
 現在のプログラムのスレッド一覧を表示します。
@@ -44,11 +44,11 @@ Debug.ListThreads [index]
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)
-- [ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)
+- [逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

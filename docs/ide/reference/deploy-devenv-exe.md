@@ -8,17 +8,17 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], after build
 - /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff5f79b2482c2e025957872892a585e08bbfa8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8eeb1a03e584b0b39030ec56ca6945a2d5ced78
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661660"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75570129"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 
@@ -34,11 +34,11 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 - *SolutionName*
 
-  必須です。 ソリューション ファイルの完全パスと名前。
+  必須。 ソリューション ファイルの完全パスと名前。
 
 - *SolnConfigName*
 
-  任意。 *SolutionName* で指定されたソリューションのビルドに使用されるソリューション構成の名前 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
+  任意。 `Debug`SolutionName`Release` で指定されたソリューションのビルドに使用されるソリューション構成の名前 ( *、* など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
 
 - `/Project` *ProjName*
 
@@ -46,7 +46,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 - `/ProjectConfig` *ProjConfigName*
 
-  任意。 指定した `/Project` のビルド時に使用されるプロジェクトのビルド構成の名前 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 このスイッチを指定すると、*SolnConfigName* 引数はオーバーライドされます。
+  任意。 指定した `Debug` のビルド時に使用されるプロジェクトのビルド構成の名前 (`Release`、`/Project` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 このスイッチを指定すると、*SolnConfigName* 引数はオーバーライドされます。
 
 - `/Out` *OutputFilename*
 
@@ -62,13 +62,13 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 ## <a name="example"></a>例
 
-この例では、`MySolution` 内の `Release` プロジェクト ビルド構成を使用して、プロジェクト `CSharpWinApp` を配置します。
+この例では、`CSharpWinApp` 内の `Release` プロジェクト ビルド構成を使用して、プロジェクト `MySolution` を配置します。
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)

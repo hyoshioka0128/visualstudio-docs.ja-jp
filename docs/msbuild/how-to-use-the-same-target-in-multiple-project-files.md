@@ -6,23 +6,25 @@ helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977174"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255575"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>方法: 複数のプロジェクト ファイルで同じターゲットを使用する
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルを作成した経験があれば、同じタスクとターゲットを別のプロジェクト ファイルで使用する必要があることにお気付きでしょう。 すべてのプロジェクト ファイルにそれらのタスクやターゲットの完全な説明を追加する代わりに、個別のプロジェクト ファイルにターゲットを保存し、そのプロジェクトをそのターゲットを必要とする他のプロジェクトにインポートできます。
+
+MSBuild プロジェクト ファイルをいくつか作成した経験があれば、同じタスクとターゲットを別のプロジェクト ファイルで使用する必要があることにお気付きでしょう。 すべてのプロジェクト ファイルにそれらのタスクやターゲットの完全な説明を追加する代わりに、個別のプロジェクト ファイルにターゲットを保存し、そのプロジェクトをそのターゲットを必要とする他のプロジェクトにインポートできます。
 
 ## <a name="use-the-import-element"></a>Import 要素を使用する
- `Import` 要素は、あるプロジェクト ファイルを別のプロジェクト ファイルに挿入するために使用されます。 インポートされるプロジェクト ファイルは有効な [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルでなければならず、整形式の XML が含まれている必要があります。 `Project` 属性は、インポートされたプロジェクト ファイルのパスを指定します。 `Import` 要素の詳細については、「[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)」を参照してください。
+
+`Import` 要素は、あるプロジェクト ファイルを別のプロジェクト ファイルに挿入するために使用されます。 インポートされるプロジェクト ファイルは、有効な MSBuild プロジェクト ファイルであり、整形式の XML が含まれている必要があります。 `Project` 属性は、インポートされたプロジェクト ファイルのパスを指定します。 `Import` 要素の詳細については、「[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)」を参照してください。
 
 #### <a name="to-import-a-project"></a>プロジェクトをインポートするには
 
@@ -35,7 +37,8 @@ ms.locfileid: "62977174"
 3. `Import` 要素に続き、インポートされるプロジェクトのプロパティとアイテムの既定の定義をオーバーライドするすべてのプロパティとアイテムを定義します。
 
 ## <a name="order-of-evaluation"></a>評価の順序
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が `Import` 要素に到達すると、インポートされるプロパティとアイテムは、`Import` 要素の場所で、インポートを行うプロジェクトに効果的に挿入されます。 そのため、`Import` 要素の場所は、プロパティとアイテムの値に影響を与えます。 インポートされるプロジェクトにより設定されるプロパティとアイテムとインポートされるプロジェクトで使用されるプロパティとアイテムを理解することが重要です。
+
+ MSBuild が `Import` 要素に到達すると、インポートされるプロジェクトは、`Import` 要素の場所で、インポートを行うプロジェクトに効果的に挿入されます。 そのため、`Import` 要素の場所は、プロパティとアイテムの値に影響を与えます。 インポートされるプロジェクトにより設定されるプロパティとアイテムとインポートされるプロジェクトで使用されるプロパティとアイテムを理解することが重要です。
 
  プロジェクトをビルドするとき、すべてのプロパティが最初に評価され、続いてアイテムが評価されます。 たとえば、次の XML では、インポートされるプロジェクトファイル *MyCommon.targets* が定義されます。
 
@@ -81,6 +84,7 @@ ms.locfileid: "62977174"
 3. プロジェクト ファイルで、インポートされるプロジェクトのプロパティとアイテムの既定の定義をオーバーライドするすべてのプロパティとアイテムを定義します。
 
 ## <a name="example"></a>例
+
  次のコード例は、2 つ目のコード例でインポートされる *MyCommon.targets* ファイルを示しています。 *.targets* ファイルでは、インポートを行うプロジェクトからのプロパティを評価してビルドを構成します。
 
 ```xml
@@ -99,6 +103,7 @@ ms.locfileid: "62977174"
 ```
 
 ## <a name="example"></a>例
+
  次のコード例では、*MyCommon.targets* ファイルをインポートします。
 
 ```xml
@@ -112,5 +117,6 @@ ms.locfileid: "62977174"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)
 - [ターゲット](../msbuild/msbuild-targets.md)

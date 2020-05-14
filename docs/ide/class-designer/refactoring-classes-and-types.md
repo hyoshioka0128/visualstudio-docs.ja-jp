@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b82bebb8e7eedcf6bdff7b12048f8c98cabdeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631184"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590749"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>クラス デザイナーでのクラスと型のリファクタリング
 
@@ -38,8 +38,8 @@ ms.locfileid: "72631184"
 |タスク|関連する参照先|
 |----------| - |
 |**クラスのリファクタリング:** リファクタリング操作を使用すると、クラスを部分クラスに分割したり、抽象基本クラスを実装したりできます。|-   [方法: 1 つのクラスを複数の部分クラスに分割する](how-to-split-a-class-into-partial-classes.md)|
-|**インターフェイスの操作:** クラス デザイナーのクラス ダイアグラム上で、インターフェイス メソッド用のコードを提供するクラスに接続して、インターフェイスを実装できます。|-   [方法: インターフェイスの実装](how-to-implement-an-interface.md)|
-|**型、型のメンバー、およびパラメーターのリファクタリング:** クラス デザイナーを使用して、型の名前を変更したり、型のメンバーをオーバーライドしたり、メンバーを 1 つの型から別の型に移動したりすることができます。 Null 許容型を作成することもできます。|-   [型および型のメンバーの名前変更](#rename-types-and-type-members)<br />-   [1 つの型から別の型への型のメンバーの移動](#move-type-members-from-one-type-to-another)<br />-   [方法: Null 許容型を作成する](how-to-create-a-nullable-type.md)|
+|**インターフェイスの操作:** クラス デザイナーのクラス ダイアグラム上で、インターフェイス メソッド用のコードを提供するクラスに接続して、インターフェイスを実装できます。|-   [方法: インターフェイスを実装する](how-to-implement-an-interface.md)|
+|**型、型のメンバー、およびパラメーターのリファクタリング:** クラス デザイナーを使用して、型の名前変更、型のメンバーのオーバーライド、またはメンバーを 1 つの型から別の型に移動することができます。 Null 許容型を作成することもできます。|-   [型および型のメンバーの名前変更](#rename-types-and-type-members)<br />-   [1 つの型から別の型への型のメンバーの移動](#move-type-members-from-one-type-to-another)<br />-   [方法: Null 許容型を作成する](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>型および型のメンバーの名前変更
 
@@ -86,6 +86,6 @@ ms.locfileid: "72631184"
 
      プロパティが移動元の型から削除され、移動先の型に表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クラスおよび型のデザイン](designing-and-viewing-classes-and-types.md)

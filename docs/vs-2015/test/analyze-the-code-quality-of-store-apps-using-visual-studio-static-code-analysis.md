@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4633b32c1d59a59c91848f72403571955263472f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297545"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586695"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリのコード品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ Visual Studio のコード分析ツールは、コードを調べてプログラ
 
 |||
 |-|-|
-|[MSDN ライブラリのコード分析](https://go.microsoft.com/fwlink/?LinkID=227580)|Visual Studio Ultimate、Visual Studio Premium、および Visual Studio Professional のコード分析の使用についての詳細を参照できます。|
-|[MSDN コード分析チームのブログ](https://go.microsoft.com/fwlink/?LinkId=227200)|技術論文やサンプルを含む詳細については、コード分析チームのブログを参照してください。|
+|[MSDN ライブラリのコード分析](https://msdn.microsoft.com/library/dd264897.aspx)|Visual Studio Ultimate、Visual Studio Premium、および Visual Studio Professional のコード分析の使用についての詳細を参照できます。|
+|[MSDN コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)|技術論文やサンプルを含む詳細については、コード分析チームのブログを参照してください。|

@@ -2,17 +2,17 @@
 title: サードパーティ製の単体テスト フレームワークをインストールする
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594280"
 ---
 # <a name="install-unit-test-frameworks"></a>単体テスト フレームワークのインストール
 
@@ -48,6 +48,6 @@ Visual Studio ソリューションには異なるフレームワークを使用
 
    ![テスト アダプターをアップグレードする](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コードの単体テスト](../test/unit-test-your-code.md)

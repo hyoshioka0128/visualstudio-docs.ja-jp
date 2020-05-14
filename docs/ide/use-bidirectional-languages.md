@@ -7,17 +7,17 @@ helpviewer_keywords:
 - bidirectional language support
 - Arabic, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa91a1f3342039821dc1e0a2ea89c8b0e25f224
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647368"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591997"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio での双方向言語のサポート
 
@@ -58,7 +58,7 @@ Visual Studio は Unicode をサポートしているため、システムで適
 
 - プロパティ値。
 
-   アラビア語およびヘブライ語のテキストは、 **[プロパティ]** ウィンドウで使用できます。 このウィンドウでは、Windows の標準のキーストロークを使用して、右から左への読み取り順序と左から右への読み取り順序を切り替えることができます (**Ctrl** キー + **右 Shift**キーを押すと右から左への読み取り順序、**Ctrl**  キー + **左 Shift** キーを押すと左から右への読み取り順序になります)。
+   アラビア語およびヘブライ語のテキストは、 **[プロパティ]** ウィンドウで使用できます。 このウィンドウでは、Windows の標準のキーストロークを使用して、右から左への読み取り順序と左から右への読み取り順序を切り替えることができます (**Ctrl** キー +**右 Shift**キーを押すと右から左への読み取り順序、**Ctrl**  キー +**左 Shift** キーを押すと左から右への読み取り順序になります)。
 
 - コードおよびリテラル テキスト。
 
@@ -74,7 +74,7 @@ Visual Studio は Unicode をサポートしているため、システムで適
 
 ### <a name="file-encoding"></a>ファイルのエンコード
 
-言語固有のエンコーディングまたは Unicode エンコーディングでファイルを保存したり開いたりすることができます。 詳細については、[エンコーディングを使用してファイルを保存および開く](../ide/how-to-save-and-open-files-with-encoding.md)」を参照してください。
+言語固有のエンコーディングまたは Unicode エンコーディングでファイルを保存したり開いたりすることができます。 詳しくは、「[方法 : エンコーディングを使用してファイルを保存および開く](../ide/how-to-save-and-open-files-with-encoding.md)」をご覧ください。
 
 ## <a name="right-to-left-reading-order"></a>右から左への読み取り順序
 
@@ -86,6 +86,6 @@ Visual Studio での右から左への読み上げ順序のサポートには制
 
 - コード エディター (およびテキスト エディター) では、右から左への読み取り順序がサポートされていません。 双方向言語でテキストを入力することはできますが、読み取り順序は常に左から右です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [グローバル化およびローカライズされたアプリの開発](globalizing-and-localizing-applications.md)

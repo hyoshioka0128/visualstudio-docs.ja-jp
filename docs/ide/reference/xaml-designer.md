@@ -5,24 +5,24 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 - VS.ToolsOptionsPages.XAML_Designer.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6a08358e8e82abf00a133edab876dc45626bf500
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621892"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75585614"
 ---
 # <a name="xaml-designer-options-page"></a>XAML デザイナーのオプション ページ
 
 **XAML デザイナー** のオプション ページを使用して、XAML ドキュメントでの要素と属性の書式設定方法を指定します。 このページを開くには、 **[ツール]** メニューを選択し、 **[オプション]** を選択します。 **[XAML デザイナー]** プロパティ ページにアクセスするには、 **[XAML デザイナー]** ノードを選択します。 ドキュメントを開くと、XAML デザイナーの設定が適用されます。 そのため、設定を変更する場合、変更を確認するには、Visual Studio を閉じて、再度開く必要があります。
 
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../environment-settings.md#reset-settings)」を参照してください。
+> 使用中の設定やエディションに応じて、表示されるダイアログ ボックスとメニュー コマンドがヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** を選択してください。 詳細については、「[リセット設定](../environment-settings.md#reset-settings)」を参照してください。
 
 ## <a name="enable-xaml-designer"></a>XAML デザイナーの有効化
 
@@ -37,7 +37,7 @@ ms.locfileid: "72621892"
 |||
 |-|-|
 |**ソース ビュー**|XAML ビューに XAML ソースのみを表示するかどうかを指定します。 これは、大きなドキュメントを読み込むときに便利です。|
-|**デザイン ビュー**|XAML ビューにビジュアル XAML デザイナーのみを表示するかどうかを指定します。|
+|**[デザイン] ビュー**|XAML ビューにビジュアル XAML デザイナーのみを表示するかどうかを指定します。|
 |**分割ビュー**|XAML ビューにビジュアル XAML デザイナーと XAML ソースの両方を隣り合わせで表示するかどうかを指定します ( **[分割の向き]** 設定に基づく位置)。|
 
 ## <a name="split-orientation"></a>分割の向き
@@ -48,7 +48,7 @@ ms.locfileid: "72621892"
 |-|-|
 |**垂直方向**|XAML ソースが XAML ビューの左側に表示され、XAML デザイナーはもう一方に表示されます。|
 |**水平方向**|XAML デザイナーが XAML ビューの上部に表示され、XAML ソースはその下に表示されます。|
-|**default**|XAML ドキュメントは、ドキュメントのプロジェクトの対象となるプラットフォームで推奨される分割の向きを使用します。 ほとんどのプラットフォームで、これは **[水平方向**] と同じです。|
+|**Shared**|XAML ドキュメントは、ドキュメントのプロジェクトの対象となるプラットフォームで推奨される分割の向きを使用します。 ほとんどのプラットフォームで、これは **[水平方向**] と同じです。|
 
 ## <a name="zoom-by-using"></a>ズームの方法
 
@@ -106,7 +106,7 @@ ms.locfileid: "72621892"
 |**効果を適用**|Blend を使用して XAML デザイナーで XAML ファイルを編集するときに、効果を適用するかどうかを指定します。|
 |**しきい値のズーム**|**[効果の適用]** チェック ボックスがオンにされているときに、効果を適用するズームのパーセンテージを指定します。 ズームがこの設定を超えた場合、効果は XAML デザイナーで適用されなくなります。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [WPF の XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [チュートリアル: 初めての WPF デスクトップ アプリケーション](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

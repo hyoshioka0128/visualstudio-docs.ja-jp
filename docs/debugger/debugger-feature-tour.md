@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599301"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77578959"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>最初に Visual Studio デバッガーを見る
 
@@ -37,7 +37,7 @@ ms.locfileid: "73599301"
 
 ブレークポイントは、詳細に調べたいコード行またはコード セクションがわかっている場合に便利な機能です。
 
-## <a name="navigate"></a> ステップ コマンドを使用してデバッガーでコード内を移動する
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> ステップ コマンドを使用してデバッガーでコード内を移動する
 
 ほとんどのコマンドにはキーボード ショートカットが用意されています。キーボード ショートカットはアプリ コード内の移動を簡単にします。 (メニュー コマンドなど、同等のコマンドを括弧内に示します。)
 
@@ -185,7 +185,7 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 **[呼び出し履歴]** ウィンドウから右クリック メニューを使用して他の操作を行うこともできます。 たとえば、特定の関数にブレークポイントを挿入したり、 **[カーソル行の前まで実行]** を使用してアプリを再起動したり、ソース コードの調査を開始したりできます。 「[方法:呼び出し履歴を調べる](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。
 
-## <a name="exception"></a> 例外を調べる
+## <a name="examine-an-exception"></a><a name="exception"></a> 例外を調べる
 
 アプリが例外をスローした場合、デバッガーによってその例外をスローしたコード行が示されます。
 
@@ -229,6 +229,10 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 ![[前に戻る] ボタンと [次へ進む] ボタン](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
 
 詳細について、[IntelliTrace を使用して以前のアプリの状態を検査する](../debugger/view-historical-application-state.md)方法に関するページを参照してください。
+
+## <a name="debug-performance-issues"></a>パフォーマンスの問題をデバッグする
+
+アプリの実行速度が遅すぎる場合や、使用しているメモリが多すぎる場合は、早い段階でプロファイリング ツールを使用してアプリをテストすることが必要になる場合があります。 CPU 使用率ツールやメモリ アナライザーなどのプロファイリング ツールの詳細については、[プロファイリング ツールの概要](../profiling/profiling-feature-tour.md)に関する記事を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

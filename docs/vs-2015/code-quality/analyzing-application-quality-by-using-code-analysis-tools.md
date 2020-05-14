@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291205"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919071"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>コード分析ツールを使用したアプリケーション品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74291205"
 
  [コード分析ツールを使用したドライバー品質の分析](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)ドライバーのコード分析は、C およびC++プログラムの基本的なコーディングエラーを検出するコンパイル時の静的検証ツールであり、(主にカーネルモードのドライバーコード) のエラーを検出するように設計された特殊なモジュールが含まれています。 静的ドライバー検証ツール (SDV) は、Windows カーネル モードのドライバーのソース コードを系統的に分析する静的検証ツールです。 SDV は、ドライバーが Windows オペレーティング システムのカーネルと適切にやり取りしているかどうかを判定します。
 
- [ドライバーの警告のコード分析](https://go.microsoft.com/fwlink/?LinkId=225920)ドライバーのコード分析によってドライバーコードでエラーが検出された場合に報告される警告について説明します。
+ [ドライバーの警告のコード分析](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)ドライバーのコード分析によってドライバーコードでエラーが検出された場合に報告される警告について説明します。
 
 ## <a name="related-tasks"></a>関連タスク
  [マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)ここに説明を挿入します。

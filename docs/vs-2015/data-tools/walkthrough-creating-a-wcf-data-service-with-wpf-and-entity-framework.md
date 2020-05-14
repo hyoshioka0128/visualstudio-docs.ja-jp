@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299614"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844270"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ ms.locfileid: "74299614"
 
 - 必要に応じて、アプリケーションにフィルター処理機能を追加します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - Northwind サンプル データベース。
 
-     開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?LinkID=98088)からダウンロードできます。 手順については、「[サンプルデータベースのダウンロード](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)」を参照してください。
+     開発用コンピューターにこのデータベースがない場合は、 [Microsoft ダウンロード センター](https://www.microsoft.com/downloads)からダウンロードできます。 手順については、「[サンプルデータベースのダウンロード](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)」を参照してください。
 
 ## <a name="creating-the-service"></a>サービスの作成
  [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] を作成するには、Web プロジェクトを追加し、[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]を作成した後、そのモデルからサービスを作成します。
@@ -82,7 +82,7 @@ ms.locfileid: "74299614"
 
    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-        または
+        -または-
 
    - **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
@@ -238,7 +238,7 @@ ms.locfileid: "74299614"
 
 1. **ソリューション エクスプローラー**で、 **[Form1.vb]** または **[Form1.cs]** ノードのショートカット メニューを開き、 **[開く]** をクリックします。
 
-2. <xref:System.Windows.Forms.TextBox>[ツールボックス]<xref:System.Windows.Forms.Button> から、**コントロールと** コントロールをフォームに追加します。
+2. **[ツールボックス]** から、<xref:System.Windows.Forms.TextBox> コントロールと <xref:System.Windows.Forms.Button> コントロールをフォームに追加します。
 
 3. <xref:System.Windows.Forms.Button> コントロールのショートカットメニューを開き、 **[コードの表示]** をクリックして、`Button1_Click` イベントハンドラーに次のコードを追加します。
 
@@ -275,5 +275,5 @@ ms.locfileid: "74299614"
 
 6. テキスト ボックスに「**London**」と入力し、ボタンをクリックします。 ロンドンの顧客だけが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio でのサービスと WCF Data Services の Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) [方法: WCF データサービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659893"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75846927"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -91,13 +91,16 @@ public void Withdraw(double amount)
 
    ::: moniker range="vs-2017"
    ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > **[単体テストの作成]** メニュー コマンドは、.NET Framework を対象とするマネージド コードに対してのみ使用できます (.NET Core では使用できません)。
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > **[単体テストの作成]** メニュー コマンドは、マネージド コードに対してのみ使用できます。
+   ::: moniker-end
 
 2. **[OK]** をクリックして、既定値をそのまま使用して単体テストを作成するか、単体テスト プロジェクトと単体テストの作成と名前付けに使用される値を変更します。 単体テスト メソッドに既定で追加されるコードを選択することができます。
 
@@ -120,7 +123,7 @@ public void Withdraw(double amount)
 
 **単体テスト プロジェクトをソリューションに追加するには**
 
-1. **ソリューション エクスプローラー**で、ソリューションを右クリックして、 **[追加]**  >  **[新しい** **プロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**でソリューションを右クリックし、 **[追加]**  >  **[新しい** **プロジェクト]** を選択します。
 
 ::: moniker range="vs-2017"
 

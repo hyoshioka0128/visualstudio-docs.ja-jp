@@ -1,162 +1,162 @@
 ---
-title: 利用可能なサービスの一覧 |Microsoft Docs
+title: 利用可能なサービスの一覧 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bd7aea3adbb3a732b83736e5824d775824cccdb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344850"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707340"
 ---
 # <a name="list-of-available-services"></a>使用可能なサービスの一覧
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Visual Studio SDK は、次のサービスをサポートします。 一部のパッケージは、ここに記載されていない独自のサービスを提供するなど、言語サービスには 1 つのサービス GUID はありません。 言語の名前を使用して、レジストリ内で、言語サービスの GUID を検索する必要があります。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]と、Visual Studio SDK は、次のサービスをサポートしています。 一部のパッケージは、ここに記載されていない独自のサービスを提供します。 言語サービスの GUID をレジストリで検索するには、言語の名前を使用する必要があります。
 
-次のとおり、またはその他のソース (たとえば、言語サービス) から取得したサービスの Guid を使用すると、プライマリ インターフェイスまたはサービスごとに示されるインターフェイスを取得します。
+ここに記載されているサービス GUID を使用するか、または他のソース (言語サービスなど) から取得した GUID を使用して、各サービスに表示されるプライマリ インターフェイスを取得します。
 
 ## <a name="the-services"></a>サービス
 
-| サービス | Interface | Visual Studio | Visual Studio 2005 | 説明 |
+| サービス | インターフェイス | Visual Studio | Visual Studio 2005 | 説明 |
 | - | - |---------------|--------------------| - |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | はい | はい | Vspackage を取得するために使用する<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>非同期データ転送を容易に ActiveX コントロールからのインターフェイス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | いいえ | はい | 自動化に使用されるデザイン時の機能拡張 (DTE) オブジェクトを取得します。<br /><br /> C と C++ の ID。SID_SDTE |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | はい | はい | コントロールの既定のイベント ハンドラーを表示するフォーム デザイナーによって実装されます。 |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | はい | はい | 別の VSPackage またはコントロールのオートメーション インターフェイスにアクセスするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | はい | はい | 追加または拡張型ライブラリを作成するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDirList> | <xref:Microsoft.VisualStudio.Shell.Interop.IDirList> | いいえ | はい | という名前のリストの一覧のコンテナーへのアクセスを提供します。たとえばのようにを検索するディレクトリのリスト、**検索し、置換** ダイアログ ボックスで、**検索対象の**ドロップダウン リスト。 <xref:Microsoft.VisualStudio.Shell.Interop.IDirList>オブジェクトできるから読み取るように書き込まれます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SIVsPackageDynamicToolOwner> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwner> | はい | はい | VSPackage が、独自のツール ウィンドウに動的に表示または非表示を有効にします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SLicensedClassManager> | <xref:Microsoft.VisualStudio.Shell.Interop.ILicensedClassManager> | はい | はい | によりに示すために VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ライセンス キーの一覧を指定することで、必要なクラスです。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> | はい | はい | により、ローカルの基準とした、レジストリにアクセスするために VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]レジストリ ハイブ。 |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SOleComponentManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager> | はい | はい | メッセージ ループ、キーボードのループ、およびイベント通知などのコンポーネントの連携サービスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> | はい | はい | さまざまなユーザー インターフェイス (UI) 要素にアクセスするために VSPackage をにより[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ヘルプ、ステータス バー、および UI イベントなど。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponent> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> | はい | はい | UI とその UI を統合するために VSPackage をにより[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponentSite> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentSite> | はい | はい | ツールに固有の UI の変更を制御するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SOleUndoManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> | はい | はい | コンテナーの元に戻すマネージャーか、そのコンテナーの元に戻すスタックに参加する、またはそのコンテナーの元に戻すスタックへのアクセスにアクセスするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> | はい | はい | 独自のサービスを提供するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SProfferTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferTypeLib> | はい | はい | タイプ ライブラリを参照できるようにするフォーム デザイナーを有効にします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> | はい | はい | 選択コンテナーの選択項目へのアクセスを提供します。 フォーム デザイナーによって使用されます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostCommandDispatcher> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> | はい | はい | コマンド ハンドラーのチェーンに参加しており、統合開発環境 (IDE)、または自身の代わりのコマンドを処理するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostLocale> | <xref:Microsoft.VisualStudio.Shell.Interop.IUIHostLocale> | はい | はい | ホストの UI のロケール情報へのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> | いいえ | はい | ログ記録をオンにすると、高度なメッセージを記録するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg> | はい | はい | アクセスを提供します、**プロジェクト項目の追加** ダイアログ ボックスを実装する Vspackage 独自**項目の追加**メニュー オプション。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg> | はい | はい | 表示、**参照の追加** ダイアログ ボックス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> | はい | はい | Devenv.exe にコマンド ライン スイッチが指定されたかどうかを判断するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCallBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCallBrowser> | いいえ | はい | により、新しいを作成するために VSPackage**呼び出しブラウザー**のデバッグに使用します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | はい | はい | 同期するために VSPackage をできるように、**クラス ビュー**特定のオブジェクトにします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | はい | はい | Guid とコマンド名をマッピングし、すべての使用可能なコマンドと名の名前を決定するためのサポートを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | いいえ | はい | 操作するために VSPackage をできるように、**コード定義ビュー**します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | はい | はい | 内部サービスです。 使用しないでください。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | はい | はい | 1 つまたは複数のドキュメントを含むことのできるコード ウィンドウへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | はい | はい | ドロップダウン バーなどのコード ウィンドウに変更を追加するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | はい | はい | コマンドを実行するために VSPackage をできるように、**コマンド ウィンドウ**し、それ以外の場合との対話、**コマンド ウィンドウ**します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindowsCollection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindowsCollection> | いいえ | はい | リストを操作するために VSPackage をにより**コマンド**によって管理される windows[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsComplusLibrary> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibraryReferenceManager> | はい | はい | 参照情報を提供する VSPackage をできるように、**オブジェクト ブラウザー**します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg> | いいえ | はい | サポートするために VSPackage をできるように、**参照の追加**オプションは、ユーザーがプロジェクトに追加する外部コンポーネントを選択できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg2> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg2> | いいえ | はい | サポートするために VSPackage をできるように、**参照の追加**オプションは、ユーザーがプロジェクトに追加する外部コンポーネントを選択できます。 ダイアログ ボックスのこのバージョンに表示される前に、コンポーネント一覧の事前設定できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsConfigurationManagerDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsConfigurationManagerDlg> | いいえ | はい | 表示、 **Configuration Manager**  ダイアログ ボックス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject> | いいえ | はい | その他のプロジェクトのコレクションを含むプロジェクトを作成するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebuggableProtocol> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProtocol> | はい | はい | 特定のデバッグ エンジンを開始する、IDE で使用するデバッグ可能なプロトコルの一覧を更新するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebugLaunch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugLaunch> | はい | はい | デバッガーの起動をサポートするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsDiscoveryService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDiscoveryService> | はい | はい | Web サービスの検出に使用される探索セッションを作成するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsEnumHierarchyItemsFactory> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> | はい | はい | 作成するファクトリを提供します。<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory>階層 (プロジェクト) を指定するオブジェクトを列挙するために使用します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsErrorList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsErrorList> | いいえ | はい | 操作するための追加のメソッドを提供します、**ビルド エラー一覧**タスク ウィンドウ。 具体的には、表示、**ビルド エラー一覧**タスク ウィンドウに強制的に表示されるすべてのエラーとします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager> | はい | はい | アクセスできるように、**その他のファイル**プロジェクト ノードの現在のソリューションです。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange> | | はい | はい | 互換性のために残されています。 使用`SVsFileChangeEx`代わりにサービスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> | はい | はい | IDE によってトリガーされるさまざまなファイルの変更イベントにアクセスするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFilterAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> | はい | はい | 表示される項目をフィルター処理するために VSPackage をできるように、**項目の追加** ダイアログ ボックス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFilterKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterKeys> | はい | はい | キーボードの高度なフィルター処理を実行するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFontAndColorCacheManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> | いいえ | はい | フォントの一連のキャッシュにアクセスを提供し、色[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を更新またはオフに特定のキャッシュまたはすべてのキャッシュ。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFontAndColorStorage> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities> | はい | はい | によって管理されるフォントと色の設定を操作するために VSPackage をにより[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 さらに、このサービスは、フォントと色のデータを操作するためのユーティリティ メソッドのコレクションへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> | はい | はい | [全般] にアクセスを提供します**出力ウィンドウ**ウィンドウで、必要に応じて作成します。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | はい | はい | 非同期データ転送を容易にするために、ActiveX コントロールから<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>インターフェイスを取得するために VSPackages によって使用されます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | いいえ | はい | オートメーションに使用されるデザイン時機能拡張 (DTE) オブジェクトを取得します。<br /><br /> C/C++ ID: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | はい | はい | コントロールの既定のイベント ハンドラーを表示するためにフォーム デザイナーによって実装されます。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | はい | はい | 別の VSPackage またはコントロールのオートメーション インターフェイスにアクセスする VSPackage を有効にします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | はい | はい | VSPackage が拡張タイプ ライブラリを追加または作成できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDirList> | <xref:Microsoft.VisualStudio.Shell.Interop.IDirList> | いいえ | はい | コンテナーの名前付きリストへのアクセスを提供します。たとえば、[検索対象] ドロップダウン リストの [**検索と置換**] ダイアログ ボックスに表示される検索ディレクトリの一覧**など**です。 オブジェクト<xref:Microsoft.VisualStudio.Shell.Interop.IDirList>は、読み取りと書き込みが可能です。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SIVsPackageDynamicToolOwner> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwner> | はい | はい | VSPackage が動的に表示または非表示に独自のツール ウィンドウを持つことができます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SLicensedClassManager> | <xref:Microsoft.VisualStudio.Shell.Interop.ILicensedClassManager> | はい | はい | VSPackage ライセンス キーの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]一覧を指定することによって、必要なクラスを示します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> | はい | はい | VSPackage がローカル[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]レジストリ ハイブに対する相対レジストリにアクセスできるようにします。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SOleComponentManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager> | はい | はい | メッセージ ループ、キーボード ループ、イベント通知などのコンポーネント調整サービスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> | はい | はい | VSPackage が、ヘルプ、ステータス バー、UI イベントなど[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、さまざまなユーザー インターフェイス (UI) 要素にアクセスできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponent> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> | はい | はい | VSPackage が UI を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の UI と統合できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponentSite> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentSite> | はい | はい | VSPackage がツールに固有の UI の変更を制御できるようにします。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SOleUndoManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> | はい | はい | VSPackage がコンテナーの元に戻すマネージャーにアクセスして、コンテナーの元に戻すスタックに参加するか、コンテナーの元に戻すスタックにアクセスできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> | はい | はい | VSPackage が独自のサービスを提供できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SProfferTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferTypeLib> | はい | はい | フォーム デザイナーが、タイプ ライブラリを参照可能にできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> | はい | はい | 選択コンテナー内の選択項目にアクセスできます。 フォーム デザイナーによって使用されます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostCommandDispatcher> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> | はい | はい | VSPackage がコマンド ハンドラー チェーンに参加し、統合開発環境 (IDE) またはそれ自体の代わりにコマンドを処理できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostLocale> | <xref:Microsoft.VisualStudio.Shell.Interop.IUIHostLocale> | はい | はい | ホストの UI ロケール情報へのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> | いいえ | はい | ログが有効になっているときに、VSPackage が高レベルのメッセージをログに記録できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg> | はい | はい | VSPackages が独自の **[項目の追加**] メニュー オプションを実装できるように、[プロジェクト項目の**追加**] ダイアログ ボックスへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg> | はい | はい | [**参照の追加]** ダイアログ ボックスを表示します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> | はい | はい | コマンド ライン スイッチが devenv.exe に与えられたかどうかを VSPackage が確認できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCallBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCallBrowser> | いいえ | はい | デバッグで使用される新しい**呼び出しブラウザー**を作成する VSPackage を有効にします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | はい | はい | VSPackage が**クラス ビュー**を特定のオブジェクトに同期できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | はい | はい | コマンド名を GUID と戻り値にマップし、使用可能なすべてのコマンドと名前の名前を決定するサポートを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | いいえ | はい | VSPackage が**コード定義ビュー**を操作できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | はい | はい | 内部サービス。 使用しないでください。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | はい | はい | 1 つ以上のドキュメントを含めることができるコード ウィンドウへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | はい | はい | VSPackage が、ドロップダウン バーなどのコード ウィンドウに変更を追加できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | はい | はい | VSPackage が**コマンド ウィンドウ**を介してコマンドを実行し、それ以外の場合はコマンド**ウィンドウ**と対話できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindowsCollection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindowsCollection> | いいえ | はい | VSPackage がによって管理されている**コマンド**ウィンドウの一覧を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]操作できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsComplusLibrary> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibraryReferenceManager> | はい | はい | VSPackage が**オブジェクト ブラウザー**に参照情報を提供できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg> | いいえ | はい | VSPackage が **[参照の追加]** オプションをサポートするように設定します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsComponentSelectorDlg2> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsComponentSelectorDlg2> | いいえ | はい | VSPackage が **[参照の追加]** オプションをサポートするように設定します。 このバージョンのダイアログ ボックスでは、コンポーネントリストを表示する前に事前に設定できます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsConfigurationManagerDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsConfigurationManagerDlg> | いいえ | はい | **[構成マネージャー]** ダイアログ ボックスを表示します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject> | いいえ | はい | VSPackage が、他のプロジェクトのコレクションを含むプロジェクトを作成できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebuggableProtocol> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProtocol> | はい | はい | 特定のデバッグ エンジンを起動するために IDE によって使用されるデバッグ可能なプロトコルの一覧を更新する VSPackage を有効にします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebugLaunch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugLaunch> | はい | はい | VSPackage がデバッガーの起動をサポートできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsDiscoveryService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDiscoveryService> | はい | はい | VsPackage が Web サービスの探索に使用される探索セッションを作成できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsEnumHierarchyItemsFactory> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> | はい | はい | 指定した階層 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory>プロジェクト) を列挙するために使用するオブジェクトを作成するファクトリを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsErrorList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsErrorList> | いいえ | はい | **[ビルド エラー一覧**] タスク ウィンドウを操作するための追加メソッドを提供します。 具体的には、**ビルド エラー一覧**タスク ウィンドウを前面に表示し、すべてのエラーを強制的に表示します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager> | はい | はい | 現在のソリューションの **[その他のファイル]** プロジェクト ノードへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange> | | はい | はい | 互換性のために残されています。 代`SVsFileChangeEx`わりにサービスを使用してください。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> | はい | はい | VSPackage IDE によってトリガーされたさまざまなファイル変更イベントにアクセスできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFilterAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> | はい | はい | VSPackage を有効にして、**項目の追加**] ダイアログ ボックスに表示される項目をフィルター処理します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFilterKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterKeys> | はい | はい | VSPackage が高度なキーボード フィルター処理を実行できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFontAndColorCacheManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> | いいえ | はい | 特定のキャッシュまたはすべてのキャッシュを更新またはクリアするために、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]でのフォントと色のキャッシュ セットへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsFontAndColorStorage> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities> | はい | はい | VSPackage がによって保持されているフォントと色の設定を操作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]できるようにします。 さらに、このサービスは、フォントと色データを操作するためのユーティリティ メソッドのコレクションへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> | はい | はい | 必要に応じて、一般的な **[出力ウィンドウ]** ウィンドウにアクセスして作成します。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsHelpService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsHelpSystem> | はい | はい | ヘルプ システムへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsHTMLConverter> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsHTMLConverter> | はい | はい | 使用される、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガー ハンドル HTML の出力を書式設定します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIME> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIME> | はい | はい | 入力方式エディター (IME) から API VSPackage 内へのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntegratedHelp> | <xref:Microsoft.VisualStudio.VSHelp.SVsHelp> | はい | はい | アクセスを提供します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ヘルプ キーワードまたは URL のシステムへのアクセスおよびナビゲーションの管理、ヘルプ ファイルを使用します。 このサービスは、ヘルプを統合する場合にのみ使用可能な[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE と外部のプログラムとして実行されていません。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntelliMouseHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntelliMouseHandler> | はい | はい | マウス ホイールを使用して、マウス ホイールがクリックされたときに、スクロール、パンのビットマップを処理などの IntelliMouse 機能にアクセスするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseEngine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseEngine> | いいえ | はい | 読み込みまたは IntelliSense 操作のサポートの一部としてファイルをアンロードするプロジェクト階層ノードを有効にします。 読み込みとアンロード プロジェクトの IntelliSense のツールヒントに表示される内容に影響を与えるイベントをトリガーするプロセス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectHost> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectHost> | いいえ | はい | により、入れ子になった IntelliSense プロジェクトに関する情報を提供するプロジェクト階層ノード (実装する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>インターフェイス)、IntelliSense のツールヒントを表示できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectManager> | いいえ | はい | 参照または IntelliSense のツールヒントに表示される内容に影響する可能性の構成の変更などのイベントのリスナーに通知する、プロジェクト階層ノードを有効にします。 含まれている言語で使用するように設計します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsInvisibleEditorManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> | はい | はい | VSPackage は、「非表示」のエディターを登録する完全な編集機能を提供しますが、ユーザーには表示されませんが、エディターを使用できます。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLanguageFilter> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> | はい | はい | データのヒントなどのテキスト ビューと単語の範囲に追加の情報を提供するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsLaunchPad> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLaunchPad> | はい | はい | 出力は、出力ウィンドウに送信するコマンド ライン プログラムを実行する標準的な警告と、エラー ウィンドウに送信されるエラー メッセージを解析して、一時的なバッチ スクリプトを実行するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsLaunchPadFactory> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLaunchPadFactory> | はい | はい | 作成するためのファクトリを提供します。<xref:Microsoft.VisualStudio.Shell.Interop.IVsLaunchPad>オブジェクト。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLinkedUndoTransactionManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> | はい | はい | リンクされた undo マネージャーにアクセスをできます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsMenuEditor> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditorFactory> | はい | はい | 共有メニュー エディターにアクセスするフォーム デザイナーを有効にします。 IVsMenuEditorFactory を照会できます<xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditor>します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> | はい | はい | 「コンテキスト バッグ」、特定のコンテキストのヘルプ キーワードを関連付けるために使用を作成するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjBrowser> | はい | はい | 特定のオブジェクトに移動するために VSPackage をできるように、**オブジェクト ブラウザー**します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager> | はい | はい | 有効では、そのライブラリ マネージャーを登録するために VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]など、名前空間、クラスと列挙型のオブジェクトを管理するためです。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectSearch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectSearch> | はい | はい | 特定のオブジェクトを検索するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsOpenProjectOrSolutionDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOpenProjectOrSolutionDlg> | いいえ | はい | により、標準を使用するために VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトまたはソリューションを開く ダイアログ ボックス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> | はい | はい | [全般] の [出力] ウィンドウで追加の出力ウィンドウを作成するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsParseCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsParseCommandLine> | はい | はい | 実装できるように、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドラインを解析するインターフェイス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsPathVariableResolver> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPathVariableResolver> | いいえ | はい | 固有の変数を解決する方法を提供します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]最後のパスを生成するパスに埋め込まれているとします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsPreviewChangesService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPreviewChangesService> | いいえ | はい | 表示、**変更のプレビュー**  ダイアログ ボックスのコードのリファクタリングのために使用します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsProfileDataManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsProfileDataManager> | いいえ | はい | プロファイル マネージャーへのアクセスを提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]をインポートして設定データをエクスポートすると、現在のユーザーのプロファイル設定の UI を表示することができます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsProfilesManagerUI> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsProfilesManagerUI> | いいえ | はい | 現在のユーザーのプロファイル設定を表示するダイアログ ボックスが表示されます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsPropertyPageFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPageFrame> | はい | はい | 有効にするプロパティ ページが最初に示したをオーバーライドするために VSPackage、**プロパティ**ウィンドウ。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | いいえ | はい | Vspackage によってファイルがメモリ内で変更または保存にソース管理プロバイダーに通知するために使用します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterDebugTargetProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectDebugTargetProvider> | いいえ | はい | プログラムで、デバッガーで起動するターゲットをオーバーライドする VSPackage プロジェクトを有効にします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors> | はい | はい | IDE で、エディター ファクトリを登録するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsRegisterFindScope> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsRegisterFindScope> | いいえ | はい | 検索スコープを登録するために VSPackage をできるように、**ファイル内の検索** ダイアログ ボックス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterPriorityCommandTarget> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget> | はい | はい | すべてのコマンドを表示する VSPackage は、優先度の高いコマンドのハンドラーとして登録するために VSPackage を使用できます。 すべての場合を使用します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes> | はい | はい | IDE でプロジェクトの種類を登録するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsResourceManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsResourceManager> | いいえ | はい | サテライト Dll からマネージ コードとアンマネージ リソースをロードするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsResourceView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsResourceView> | はい | はい | 使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView>代わりにサービスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> | はい | はい | アクセスを IDE を実行しているドキュメント テーブル (RDT) 現在のすべてを追跡するがドキュメントを開いたを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | いいえ | はい | ソース管理に参加できるように、そのコンピューター自体をソース管理プロバイダーを登録する Vspackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | はい | はい | 取得し、ソース管理プロバイダーのオプションを設定するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSettingsReader> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> | いいえ | はい | ユーザーのプロファイル設定を読み取りアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell> | はい | はい | 直接対話し、その他の Vspackage を操作するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger> | はい | はい | アクセスできるように、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガー。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> | はい | はい | 現在の選択範囲にアクセスし、コマンドの UI コンテキストを管理するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider> | IVSMDCodeDomProvider | いいえ | はい | ネイティブ コードで使用できるコード ドキュメント オブジェクト モデル (DOM) プロバイダーにアクセスできます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService | いいえ | はい | マネージ フォーム デザイナーには、IDE のサポートへのアクセスを提供します。 `IVSMDCodeDomCreator` DOM プロバイダー コードを作成するために使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | IVSMDPropertyBrowser | いいえ | はい | デザイナーのプロパティの windows サービスへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService> | いいえ | はい | 返すことができるインターフェイスにアクセスできるように、<xref:System.ComponentModel.Design.ITypeResolutionService>ネイティブ コードで使用可能なオブジェクト。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope> | いいえ | はい | 必要に応じて、ロックを考慮して、アセンブリのスコープを表示する方法を提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | はい | はい | 現在のソリューションに最上位レベルのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager> | はい | はい | ソリューションのビルド プロセスと対話するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | はい | はい | 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>代わりにサービスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | はい | はい | 格納し、現在のソリューションの .sln ファイルから情報を取得するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | いいえ | はい | では、追加し、マネージ コード アセンブリの参照を更新します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | いいえ | はい | 開始およびバック グラウンド スレッドで、ダウンロード サービスを停止するための Visual Studio 2017 のスタート ページのダウンロード サービスへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | はい | はい | IDE のステータス バーへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | いいえ | はい | マネージ コード アセンブリの署名で使用されるパスワードで強力なキー名とキー ファイルを作成するためのメソッドへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | はい | はい | 複数の形式でデータを保存するためのサポートを提供するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | はい | はい | IDE のタスク一覧 ウィンドウへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextImageUtilities> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextImageUtilities> | いいえ | はい | テキスト ファイルの読み込みと保存のユーティリティを提供します。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> | はい | はい | すべてのテキスト バッファーには、IDE で使用できる (非表示の領域) の非表示のテキストのセッションへのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTextOut> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTextOut> | はい | はい | Win32 のバージョンを提供します`TextOut`デバイス コンテキスト (DC のハンドルが必要) にテキストを書き込むための関数。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | はい | はい | テキスト イメージまたはバッファー内のテキスト範囲の一覧へのアクセスを提供します。 このサービスは、ドキュメントのコンテナーでは、通常実装し、現在のドキュメントを参照します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | いいえ | はい | (バック グラウンド タスクの待機に使用)、別のスレッドが待機するダイアログ ボックスを表示するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | いいえ | はい | 保持して、バック グラウンド タスクを開始するために VSPackage をできるように[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | はい | はい | IDE へのアクセスを提供**ツールボックス**します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | はい | はい | 情報を取得するために VSPackage をにより**ツールボックス**項目。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | いいえ | はい | により、全体を事前読み込みのパフォーマンス コストをかけずにツールボックス データ プロバイダーを登録するために VSPackage**ツールボックス**します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | いいえ | はい | かを判断するために VSPackage を使用、**オプション** ダイアログ ボックスが開いているすべてのオプション ページの表示を更新するとします。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | いいえ | はい | プロジェクトのファイルの変更を監視して、バッチのソース管理プロバイダーに制御を提供する VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | はい | はい | 選択項目には、現在選択されているプロジェクト項目に影響を与える変更の IDE に通知するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelper> | はい | はい | その他の階層を使用して、クリップボードの使用を調整するには、VSPackage プロジェクト) などの階層を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> | はい | はい | ツール ウィンドウおよびドキュメント ウィンドウなどの IDE の UI 要素へのアクセスを提供します。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellDocumentWindowMgr> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellDocumentWindowMgr> | はい | はい | データのストリームの内容に基づくすべての windows の位置を復元するか、すべてのウィンドウの位置をストリームに保存する VSPackage を使用できます。 ほとんど使用しません。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> | はい | はい | さまざまな方法でドキュメントを開くと、どのようなドキュメントの所有者を決定する VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> | いいえ | はい | 実装によって使用される、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>レポート エラーおよび情報メッセージへのインターフェイス。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebBrowsingService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebBrowsingService> | はい | はい | 作成および Web のブラウズ セッションを制御するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebFavorites> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebFavorites> | はい | はい | により、ユーザーの追加する VSPackage**お気に入り**一覧。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebPreview> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebPreview> | はい | はい | 子ウィンドウに通常の Web ページをプレビューするために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | はい | はい | Url の最近使用 (MRU) の一覧に URL を追加し、MRU 一覧のすべての Url の一覧を取得する VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | はい | はい | パッケージまたはパッケージのパーツを配置する場合がある、ウィンドウ フレームを取得するために VSPackage を使用できます。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | はい | はい | 特定のメタデータ ファイルに関連付けられたドキュメントを XML 形式のファイルへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsHTMLConverter> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsHTMLConverter> | はい | はい | 出力を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]書式設定するために HTML を処理するためにデバッガーで使用されます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIME> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIME> | はい | はい | VSPackage 内から入力メソッド エディター (IME) API へのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntegratedHelp> | <xref:Microsoft.VisualStudio.VSHelp.SVsHelp> | はい | はい | ヘルプ ファイルを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]介したナビゲーション コントロールだけでなく、キーワードまたは URL アクセス用のヘルプ システムへのアクセスを提供します。 このサービスは、ヘルプが[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE に統合され、外部プログラムとして実行されていない場合にのみ使用できます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntelliMouseHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntelliMouseHandler> | はい | はい | VSPackage は、マウス ホイールを使用して、マウス ホイールがクリックされたときにスクロールビットマップとパン ビットマップを処理するなど、IntelliMouse 機能へのアクセスを取得できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseEngine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseEngine> | いいえ | はい | プロジェクト階層ノードが IntelliSense 操作のサポートの一部としてファイルをロードまたはアンロードできるようにします。 読み込みとアンロードのプロセスは、プロジェクトの IntelliSense ツールチップに表示される内容に影響を与える可能性のあるイベントをトリガーします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectHost> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectHost> | いいえ | はい | プロジェクト階層ノードが、IntelliSense ツールヒントに表示できる入れ子になった<xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>IntelliSense プロジェクト (インターフェイスを実装する) に関する情報を提供できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectManager> | いいえ | はい | プロジェクト階層ノードが、参照や構成の変更など、イベントのリスナーに通知を行い、IntelliSense ツールチップに表示される内容に影響を与える可能性があります。 包含言語で使用するように設計されています。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsInvisibleEditorManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> | はい | はい | VSPackage が「非表示」エディター、つまり、完全な編集機能を提供するが、ユーザーには表示されないエディターを登録できるようにします。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLanguageFilter> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> | はい | はい | VSPackage データ ヒントや単語の範囲などの追加情報をテキスト ビューに提供できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsLaunchPad> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLaunchPad> | はい | はい | VSPackage が一時的なバッチ スクリプトを実行し、出力が出力ペインに送信されるコマンド ライン プログラムを実行し、エラー ウィンドウに送信される標準の警告メッセージとエラー メッセージを解析できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsLaunchPadFactory> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsLaunchPadFactory> | はい | はい | オブジェクトを作成<xref:Microsoft.VisualStudio.Shell.Interop.IVsLaunchPad>するためのファクトリを提供します。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLinkedUndoTransactionManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> | はい | はい | リンクされた元に戻すマネージャーへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsMenuEditor> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditorFactory> | はい | はい | フォーム デザイナーが共有メニュー エディターにアクセスできるようにします。 IVsMenu エディタファクトリーを照会<xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditor>できます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> | はい | はい | VSPackage が特定のコンテキストのヘルプ キーワードを関連付けるために使用される "コンテキスト バッグ" を作成できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjBrowser> | はい | はい | VSPackage が**オブジェクト ブラウザー**で特定のオブジェクトに移動できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager> | はい | はい | VSPackage 名前空間、クラス、列挙体などの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクトを管理するためのライブラリ マネージャーを登録できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectSearch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectSearch> | はい | はい | VSPackage が特定のオブジェクトを検索できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsOpenProjectOrSolutionDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOpenProjectOrSolutionDlg> | いいえ | はい | VSPackage が標準[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のダイアログ ボックスを使用してプロジェクトまたはソリューションを開くことを有効にします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> | はい | はい | VSPackage が一般的な出力ウィンドウに追加の出力ペインを作成できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsParseCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsParseCommandLine> | はい | はい | インターフェイスの実装者がコマンド<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>ラインを解析できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsPathVariableResolver> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPathVariableResolver> | いいえ | はい | パスに固有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の変数を解決し、最終的なパスを作成するためのパスを解決する方法を提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsPreviewChangesService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPreviewChangesService> | いいえ | はい | リファクタリング コードで使用される **[変更のプレビュー** ] ダイアログ ボックスを表示します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsProfileDataManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsProfileDataManager> | いいえ | はい | プロファイル マネージャーへのアクセスを提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]し、設定データのインポートとエクスポート、および現在のユーザーのプロファイル設定の UI の表示を行うことができます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsProfilesManagerUI> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsProfilesManagerUI> | いいえ | はい | 現在のユーザーのプロファイル設定を示すダイアログ ボックスを表示します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsPropertyPageFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPageFrame> | はい | はい | VSPackage を有効にして、プロパティ**ウィンドウに**最初に表示されるプロパティ ページをオーバーライドします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | いいえ | はい | VSPackages が、ファイルがメモリ内で変更または保存されることをソース管理プロバイダに通知するために使用されます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterDebugTargetProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectDebugTargetProvider> | いいえ | はい | VSPackage プロジェクトがデバッガーで起動するターゲットをプログラムによってオーバーライドできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors> | はい | はい | エディター ファクトリを IDE に登録する VSPackage を有効にします。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsRegisterFindScope> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsRegisterFindScope> | いいえ | はい | VSPackage を有効にして、**ファイル内の検索**ダイアログ ボックスの検索範囲を登録します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterPriorityCommandTarget> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget> | はい | はい | VSPackage がすべてのコマンドを表示できるように、高優先度のコマンド ハンドラーとして自身を登録する VSPackage を有効にします。 少しも使って下さいます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes> | はい | はい | VSPackage が IDE にプロジェクトの種類を登録できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsResourceManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsResourceManager> | いいえ | はい | VSPackage がマネージ リソースとアンマネージ リソースをサテライト DLL から読み込むようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsResourceView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsResourceView> | はい | はい | 代<xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView>わりにサービスを使用してください。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> | はい | はい | 現在開いているすべてのドキュメントを追跡する IDE の実行中のドキュメント テーブル (RDT) へのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | いいえ | はい | VSPackages がソース管理に参加できるように、VSPackages が自身をソース管理プロバイダーに登録できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | はい | はい | VSPackage がソース管理プロバイダーのオプションを取得および設定できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSettingsReader> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> | いいえ | はい | ユーザーのプロファイル設定への読み取りアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell> | はい | はい | VSPackage が直接対話し、他の VS パッケージを操作できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger> | はい | はい | デバッガーへのアクセスを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> | はい | はい | VSPackage が現在の選択にアクセスし、コマンド UI コンテキストを管理できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider> | アイヴスドムコードドムプロバイダー | いいえ | はい | ネイティブ コードで使用できるコード ドキュメント オブジェクト モデル (DOM) プロバイダーへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | アイヴスMDコードドムクリエーター<br /><br /> アイヴスMDデザイナーサービス | いいえ | はい | マネージ フォーム デザイナーに対する IDE のサポートへのアクセスを提供します。 を`IVSMDCodeDomCreator`使用して、コード DOM プロバイダーを作成できます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | プロパティブラウザー | いいえ | はい | デザイナー プロパティ ウィンドウ サービスへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService> | いいえ | はい | ネイティブ コードで使用できるオブジェクトを返<xref:System.ComponentModel.Design.ITypeResolutionService>すことができるインターフェイスへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope> | いいえ | はい | 必要に応じてロックを考慮して、アセンブリのスコープを開く方法を提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | はい | はい | 現在のソリューションへのトップレベル アクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager> | はい | はい | VSPackage がソリューションのビルド プロセスと対話できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | はい | はい | 代わりに<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>サービスを使用してください。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | はい | はい | VSPackage が現在のソリューションの .sln ファイルから情報を格納および取得できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | いいえ | はい | マネージ コード アセンブリで参照を追加および更新する機能を提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | いいえ | はい | バックグラウンド スレッドでダウンロード サービスを開始および停止するための Visual Studio 2017 スタート ページのダウンロード サービスへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | はい | はい | IDE のステータスバーにアクセスできます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | いいえ | はい | マネージ コード アセンブリの署名に使用されるパスワードを使用して、強力なキー名とキー ファイルを作成するためのメソッドへのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | はい | はい | VSPackage が複数の形式でデータを保存するためのサポートを提供できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | はい | はい | IDE の [タスク一覧] ウィンドウにアクセスします。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextImageUtilities> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextImageUtilities> | いいえ | はい | テキスト ファイルを読み込み、保存するためのユーティリティを提供します。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> | はい | はい | IDE で使用できるすべてのテキスト バッファーと、非表示のテキスト セッション (非表示の領域) へのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTextOut> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTextOut> | はい | はい | デバイス コンテキストにテキストを書き`TextOut`込む Win32 関数のバージョンを提供します (DC ハンドルが必要です)。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | はい | はい | テキスト イメージまたはバッファー内のテキスト範囲のリストへのアクセスを提供します。 このサービスは、通常、ドキュメントのコンテナーに実装され、現在のドキュメントを参照します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | いいえ | はい | VSPackage が別のスレッドで待機するダイアログ ボックスを表示できるようにします (バックグラウンド タスクを待機するために使用されます)。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | いいえ | はい | VSPackage がバックグラウンド タスクを開始し、その後で[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | はい | はい | IDE の**ツールボックス**へのアクセスを提供します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | はい | はい | **VSPackage**がツールボックス項目から情報を取得できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | いいえ | はい | ツールボックス全体を事前に読み込む際のパフォーマンスコストを発生させることなく、VSPackage がツールボックス データ プロバイダを登録**できるようにします**。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | いいえ | はい | VSPackage を有効にして、**オプション**ダイアログ ボックスが開いているかどうかを確認し、すべてのオプション ページの表示を更新します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | いいえ | はい | VSPackage プロジェクトのファイルの変更を監視し、ソース管理プロバイダーのバッチ制御を提供できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | はい | はい | VSPackage が、現在選択されているプロジェクト項目に影響を与える可能性のある選択項目の変更を IDE に通知できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelper> | はい | はい | 階層 (プロジェクト VSPackage など) がクリップボードの使用を他の階層と連携できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> | はい | はい | ツール ウィンドウやドキュメント ウィンドウなどの IDE の UI 要素にアクセスできます。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellDocumentWindowMgr> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellDocumentWindowMgr> | はい | はい | VSPackage を有効にして、データストリームの内容に基づいてすべてのウィンドウの位置を復元したり、すべてのウィンドウの位置をストリームに保存します。 めったに使用されません。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> | はい | はい | VSPackage がさまざまな方法でドキュメントを開き、どのドキュメントを所有するかを決定できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> | いいえ | はい | インターフェイスの実装者が<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>エラーメッセージおよび情報メッセージを報告するために使用します。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebBrowsingService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebBrowsingService> | はい | はい | VSPackage が Web 閲覧セッションを作成および制御できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebFavorites> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebFavorites> | はい | はい | VSPackage がユーザー**のお気に入りの**一覧に追加できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebPreview> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebPreview> | はい | はい | VSPackage が Web ページをプレビューできるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | はい | はい | VSPackage が、URL の最も最近使用された (MRU) リストに URL を追加し、MRU リスト内のすべての URL のリストを取得できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | はい | はい | VSPackage パッケージまたはパッケージの一部が配置されているウィンドウ フレームを取得できるようにします。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | はい | はい | 特定のメタデータ ファイルに関連付けられた XML 形式のドキュメント ファイルへのアクセスを提供します。 |
 
 ## <a name="see-also"></a>関連項目
 

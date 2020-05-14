@@ -37,17 +37,17 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75566879"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [すべての言語]
 

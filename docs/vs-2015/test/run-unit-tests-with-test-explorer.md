@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4cf121bd7f312518e334c7153acf2d6486e37012
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302114"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851789"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "74302114"
  ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
 
 ### <a name="BKMK_Run_tests"></a> テストの実行
- ソリューション内のすべてのテスト、グループ内のすべてのテスト、または選択した一連のテストを実行できます。 次のいずれかの操作を行います。
+ ソリューションのすべてのテスト、グループのすべてのテスト、または選択した一連のテストを実行できます。 以下のいずれかを実行します。
 
 - ソリューション内のすべてのテストを実行するには、 **[すべて実行]** をクリックします。
 
@@ -70,7 +70,7 @@ ms.locfileid: "74302114"
 
 - 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
-  テストの実行中、テスト エクスプローラー ウィンドウの一番上にある成功/失敗ステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテストが成功した場合は、成功/失敗ステータス バーが緑色に変わり、いずれかのテストが失敗した場合は、赤色に変わります。
+  テストの実行中、テスト エクスプローラーのウィンドウの一番上にある成功/失敗ステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテストが成功した場合は、成功/失敗ステータス バーが緑色に変わり、いずれかのテストが失敗した場合は、赤色に変わります。
 
   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
 
@@ -99,20 +99,20 @@ ms.locfileid: "74302114"
 
 - テスト メソッドのソース ファイル名と行番号。
 
-- テストの状態。
+- テストのステータス。
 
 - テスト メソッドの実行に要した経過時間。
 
   テストが失敗した場合、詳細ペインには次の情報も表示されます。
 
-- テストの単体テスト フレームワークによって返されたメッセージ。
+- テストの単体テスト フレームワークによって返されるメッセージ。
 
 - テストが失敗した時刻のスタック トレース。
 
   ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
 
 ### <a name="BKMK_View_the_source_code_of_a_test_method"></a> テスト メソッドのソース コードを表示する
- Visual Studio エディターでテスト メソッドのソース コードを表示するには、テストを選び、コンテキスト メニューの **[テストを開く]** を選択します (キーボード:F12 キー)。
+ Visual Studio エディターのテスト メソッドのソース コードを表示するには、テストを選択し、コンテキスト メニューの **[テストを開く]** を選択します (キーボードの F12 キー)。
 
  ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
 
@@ -128,12 +128,12 @@ ms.locfileid: "74302114"
 
 ### <a name="test-explorer-groups"></a>テスト エクスプローラーのグループ
 
-|グループ化|説明|
+|グループ|説明|
 |-----------|-----------------|
-|**期間**|実行時間によるテストのグループ化:**高速**、**中**、**低速**|
-|**Outcome**|実行結果によるテストのグループ化:**失敗したテスト**、**スキップされたテスト**、**成功したテスト数**|
+|**期間**|実行時間によるテストのグループ化: **[高速]** 、 **[通常]** 、および **[低速]** 。|
+|**Outcome**|実行結果によるテストのグループ化: **[失敗したテスト]** 、 **[スキップされたテスト]** 、 **[成功したテスト]** 。|
 |**Traits**|ユーザーが定義するカテゴリ/値のペアによるテストのグループ化。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。|
-|**プロジェクト**|プロジェクトの名前によるテストのグループ化。|
+|**Project**|プロジェクトの名前によるテストのグループ化。|
 
  ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
 
@@ -206,12 +206,12 @@ TEST_METHOD(Method1)
 |修飾子|説明|
 |---------------|-----------------|
 |**特徴**|特徴のカテゴリと値の両方から一致を検索します。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。|
-|**プロジェクト**|テスト プロジェクト名から一致を検索します。|
+|**Project**|テスト プロジェクト名から一致を検索します。|
 |**エラー メッセージ**|失敗したアサートが返すユーザー定義エラー メッセージから一致を検索します。|
 |**ファイル パス**|テストのソース ファイルの完全修飾ファイル名から一致を検索します。|
 |**Fully Qualified Name**|テストの名前空間、クラス、およびメソッドの完全修飾ファイル名から一致を検索します。|
 |**出力**|標準出力 (stdout) または標準エラー (stderr) に書き込まれるユーザー定義のエラー メッセージを検索します。 出力メッセージを指定する構文は、単体テスト フレームワークによって定義されます。|
-|**Outcome**|テスト エクスプローラーのカテゴリ名で一致を検索する:**失敗したテスト**、**スキップされたテスト**、**成功したテスト数**|
+|**Outcome**|テスト エクスプローラーのカテゴリ名から一致を検索します: **[失敗したテスト]** 、 **[スキップされたテスト]** 、 **[成功したテスト]** 。|
 
  フィルター処理結果のサブセットを除外するには、次の構文を使用します。
 
@@ -257,7 +257,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
 2. テスト エクスプローラーでテスト メソッドを選択し、コンテキスト メニューの **[選択したテストのデバッグ]** を選択します。
 
-   デバッガーについて詳しくは、「 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)」をご覧ください。
+   デバッガーの詳細については、「[Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)」を参照してください。
 
    ![トップ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [コンテンツに戻る](#BKMK_Contents)
 
@@ -290,7 +290,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ## <a name="BKMK_External_resources"></a> 外部リソース
 
 ### <a name="BKMK_Guidance"></a> ガイダンス
- Visual Studio 2012 を使用した継続的デリバリーのための [テスト–第2章:単体テスト:内部](https://go.microsoft.com/fwlink/?LinkID=255188) のテスト
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コードの単体テスト](../test/unit-test-your-code.md) [64 ビットプロセスとして単体テストを実行](../test/run-a-unit-test-as-a-64-bit-process.md)する

@@ -8,21 +8,23 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659656"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223672"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
 この記事では、マネージド コード用の Microsoft 単体テスト フレームワークと Visual Studio **テスト エクスプローラー**を使用して一連の単体テストを作成、実行、およびカスタマイズする手順について説明します。 開発中の C# プロジェクトで作業を開始し、そのコードを実行するテストを作成し、テストを実行し、結果を調べます。 次に、プロジェクト コードを変更し、テストを再実行します。
+
+
 
 ## <a name="create-a-project-to-test"></a>テストするプロジェクトを作成する
 
@@ -30,11 +32,11 @@ ms.locfileid: "72659656"
 
 1. Visual Studio を開きます。
 
-2. **[ファイル]** メニューで、 **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. **[ファイル]** メニューの **[新規]** > **[プロジェクト]** を選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-3. **[Visual C#]** の **[.NET Core]** カテゴリで、 **[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** プロジェクト テンプレートを選択します。
+3. **[Visual C#]** > **[.NET Core]** カテゴリで、 **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートを選択します。
 
 4. プロジェクトに「**Bank**」という名前を設定してから、 **[OK]** をクリックします。
 
@@ -429,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>再テストする、書き換える、再分析する
 
-テスト対象のメソッドにバグがあっても `Debit` メソッドが <xref:System.ArgumentOutOfRangeException> をスローせず、例外と共に正しいメッセージを出力するとします。 現在、テスト メソッドはこのケースを処理しません。 `debitAmount` の値が有効な場合 (つまり、残高未満で 0 よりは大きい場合)、例外はキャッチされないので、アサートはキャッチされません。 それでも、テスト メソッドは成功します。 これは適切ではありません。例外がスローされない場合はテスト メソッドが失敗することを想定しているためです。
+現時点では、テスト メソッドで、必要なすべてのケースが処理されるわけではありません。 テスト対象のメソッドである `Debit` メソッドで、`debitAmount` が残高より大きい (または 0 未満) 場合に <xref:System.ArgumentOutOfRangeException> をスローできなかった場合、テスト メソッドは成功します。 これは適切ではありません。例外がスローされない場合はテスト メソッドが失敗することを想定しているためです。
 
 これはテスト メソッドのバグです。 この問題を解決するには、テスト メソッドの最後に <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> アサートを追加して、例外がスローされないケースを処理するようにします。
 

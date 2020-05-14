@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents |Microsoft Docs
+title: イベントの準備プログラム2:::イベント |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343429"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721764"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-ポートのイベントの通知プロセスを許可します。
+ポート イベントの通知を受け取るプロセスを許可します。
 
 ## <a name="syntax"></a>構文
 
@@ -51,38 +51,38 @@ int WatchForProviderEvents(
 
 ## <a name="parameters"></a>パラメーター
 `Flags`\
-[in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
+[in][PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体のフラグの組み合わせ。 この呼び出しでは、次のフラグが一般的です。
 
 |フラグ|説明|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|呼び出し元は、リモート マシンで実行されています。|
-|`PFLAG_DEBUGGEE`|現在デバッグ中の呼び出し元 (ノードごとにマーシャ リングに関する追加情報が返されます)。|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元に接続されているが、デバッガーによって起動されません。|
-|`PFLAG_REASON_WATCH`|呼び出し元がイベントをウォッチします。 このフラグが設定されていません。 場合、 コールバック イベントを削除し、呼び出し元が通知を受け取ることはなくなります。|
+|`PFLAG_REMOTE_PORT`|呼び出し元はリモート コンピューターで実行されています。|
+|`PFLAG_DEBUGGEE`|呼び出し元は現在デバッグ中です (マーシャリングに関する追加情報は各ノードに返されます)。|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元は、デバッガーにアタッチされましたが、起動されませんでした。|
+|`PFLAG_REASON_WATCH`|呼び出し元はイベントを監視します。 このフラグが設定されていない場合。 その後、コールバック イベントが削除され、呼び出し元が通知を受け取らなくなります。|
 
 `pPort`\
-[in]呼び出し元のプロセス、ポートがで実行されています。
+[in]呼び出し側プロセスが実行されているポート。
 
 `processId`\
-[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
+[in]問題のプログラムを含むプロセスの ID を保持する[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体。
 
 `EngineFilter`\
-[in]関連付けられたプロセスのデバッグ エンジンの Guid の配列。
+[in]プロセスに関連付けられているデバッグ エンジンの GUID の配列。
 
 `guidLaunchingEngine`\
-[in]このプロセスを起動したデバッグエンジンのGUID（存在する場合）。
+[in]このプロセスを起動したデバッグ エンジンの GUID (存在する場合)。
 
 `pEventCallback`\
-[in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)イベント通知を受け取るオブジェクト。
+[in]イベント通知を受け取る[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 呼び出し元がオフが、初めてのように、同じパラメーターを渡し、呼び出し元は、このメソッドの前回の呼び出しによって確立されたイベント ハンドラーを削除する場合、`PFLAG_REASON_WATCH`フラグ。
+ 呼び出し元がこのメソッドに対する以前の呼び出しで確立されたイベント ハンドラーを削除する場合、呼び出し元は最初と同じ`PFLAG_REASON_WATCH`パラメーターを渡しますが、フラグは表示されません。
 
 ## <a name="example"></a>例
- 次の例では、このメソッドを実装する方法を示しています、 **CDebugEngine**を公開するオブジェクト、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイス。
+ 次の例は、[インターフェイス](../../../extensibility/debugger/reference/idebugprogramprovider2.md)を公開する**CDebugEngine**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

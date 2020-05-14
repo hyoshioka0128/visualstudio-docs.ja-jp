@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666119"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568283"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[検証]
 
@@ -42,6 +42,6 @@ ms.locfileid: "72666119"
      > [!NOTE]
      > スキーマによっては、個々のエラーの種類をマークできません。 たとえば、ターゲット スキーマとして **[XHTML 1.1]** を選択すると、オプションのチェック ボックスはすべて無効になります。 この場合は、すべての種類のエラーがマークされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

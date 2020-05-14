@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654611"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75570493"
 ---
 # <a name="code-snippet-picker"></a>コード スニペット ピッカー
 
@@ -42,11 +42,11 @@ Visual Studio コード エディターでは、**コード スニペット ピ�
 
 - SQL: コード エディターで目的の場所を右クリックしてショートカット メニューを表示し、 **[スニペットの挿入]** をクリックします。
 
-ほとんどの Visual Studio 開発言語では、**コード スニペット マネージャー**を使って、**コード スニペット ピッカー**が XML スニペット ファイルをスキャンするフォルダー一覧にフォルダーを追加することができます。 独自のスニペットを作成して一覧に追加することもできます。 詳細については、「[チュートリアル:コード スニペットを作成する](../../ide/walkthrough-creating-a-code-snippet.md)」をご覧ください。
+ほとんどの Visual Studio 開発言語では、**コード スニペット マネージャー**を使って、**コード スニペット ピッカー**が XML スニペット ファイルをスキャンするフォルダー一覧にフォルダーを追加することができます。 独自のスニペットを作成して一覧に追加することもできます。 詳細については、「[チュートリアル: コード スニペットを作成する](../../ide/walkthrough-creating-a-code-snippet.md)」を参照してください。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
-項目名
+Item Name
 
 **[項目一覧]** で選択した項目の名前を表示する編集可能なテキスト フィールドです。 目的の項目のインクリメンタル検索を実行するには、このフィールドで名前の入力を開始します。 **[項目一覧]** で目的の項目が選択されるまで、文字の追加を続けます。
 
@@ -54,9 +54,9 @@ Visual Studio コード エディターでは、**コード スニペット ピ�
 
 挿入に使用できるコード スニペットの一覧、またはコード スニペットを含むフォルダーの一覧です。 スニペットを挿入またはフォルダーを展開するには、目的の項目を選択して Enter キーを押します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード スニペットを使用するためのベスト プラクティス](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic の IntelliSense コード スニペット](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)
-- [方法: surround-with コード スニペットを使用する](../../ide/how-to-use-surround-with-code-snippets.md)
+- [方法 : surround-with コード スニペットを使用する](../../ide/how-to-use-surround-with-code-snippets.md)

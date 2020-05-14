@@ -13,22 +13,24 @@ helpviewer_keywords:
 - GetFrameworkSdkPath task [MSBuild]
 - MSBuild, GetFrameworkSdkPath task
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15346bdd7c049a152a5a2d1668891f9d97da31fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977517"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633994"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath タスク
-[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] へのパスを取得します。
 
+Windows ソフトウェア開発キット (SDK) へのパスを取得します。
 ## <a name="task-parameters"></a>タスク パラメーター
+
+`GetFrameworkSdkPath` タスクのパラメーターの説明を次の表に示します。
 `GetFrameworkSdkPath` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -38,11 +40,13 @@ ms.locfileid: "62977517"
 |`FrameworkSdkVersion40Path`|省略可能な `String` 型の読み取り専用の出力パラメーターです。<br /><br /> 存在する場合、.NET SDK バージョン 4.0 のパスを返します。 それ以外の場合は、`String.Empty` を返します。|
 |`Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 何らかのバージョンが存在する場合、最新の .NET SDK のパスが含まれます。 それ以外の場合は、`String.Empty` を返します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
+
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
-次の例では、`GetFrameworkSdkPath` タスクを使用し、[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] のパスを `SdkPath` プロパティに保存します。
+
+次の例では、`GetFrameworkSdkPath` タスクを使用して、Windows SDK へのパスを `SdkPath` プロパティに保存します。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -58,5 +62,6 @@ ms.locfileid: "62977517"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

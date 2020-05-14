@@ -1,9 +1,8 @@
 ---
-title: Visual Studio の変更
+title: Visual Studio 2017 の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
-ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/03/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -11,19 +10,19 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810058"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77125352"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -35,33 +34,21 @@ ms.locfileid: "74810058"
 
 ::: moniker range="vs-2017"
 
-実行する作業に合わせて Visual Studio をより簡単にパーソナライズできるようになっただけでなく、Visual Studio をより簡単にカスタマイズできるようにもなりました。 これを行うには、新しい Visual Studio インストーラーを起動して、必要な変更を加えます。
+実行する作業に合わせて Visual Studio をより簡単にパーソナライズできるようになっただけでなく、Visual Studio をより簡単にカスタマイズできるようにもなりました。 これを行うには、新しい Visual Studio インストーラーを開いて、必要な変更を加えます。
 
 ::: moniker-end
 
-ここではその方法を説明します。
+次にその方法を示します。
 
 >[!IMPORTANT]
 >Visual Studio をインストール、更新、または変更するには、管理アクセス許可を持つアカウントでログオンする必要があります。 詳細については、「[ユーザー アクセス許可と Visual Studio](../ide/user-permissions-and-visual-studio.md)」を参照してください。
-
-## <a name="modify-workloads"></a>ワークロードの変更
-
-::: moniker range="vs-2017"
-
- [ワークロード](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/)には、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
- ワークロードには、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
-
-::: moniker-end
 
 >[!NOTE]
 > 次の手順では、インターネットに接続しているものとします。
 >
 > 前に作成した Visual Studio の[オフライン インストール](create-an-offline-installation-of-visual-studio.md)を変更する方法について詳しくは、「[Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)」ページと「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページの両方をご覧ください。
+
+## <a name="open-the-visual-studio-installer"></a>Visual Studio インストーラーを開く
 
 ::: moniker range="vs-2017"
 
@@ -74,21 +61,14 @@ ms.locfileid: "74810058"
      >[!TIP]
      >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
-1. インストーラーをクリックまたはタップして起動し、 **[変更]** を選択します。
+1. インストーラーを開いて、 **[変更]** を選択します。
 
      ![Visual Studio の起動または変更](media/modify-visual-studio.png "Visual Studio 2017 の変更")
 
-     保留中の更新プログラムがある場合、[変更] ボタンは別の場所にあります。 この方法で、更新せずに Visual Studio を変更するならそれができます。 **[詳細]** をクリックして、 **[変更]** を選択します。
-
-     ![Visual Studio の更新または変更](media/modify-or-update-visual-studio.png "Visual Studio 2017 の更新または変更")
-
-1. **[ワークロード]** 画面で、インストールまたはアンインストールするワークロードを選択または選択解除します。
-
-    ![Visual Studio 2017 のセットアップ ダイアログ](media/modify-workloads.png "Visual Studio 2017 でのワークロードの選択")
-
-1. もう一度 **[変更]** を選択します。
-
-1. 新しいワークロードとコンポーネントがインストールされたら、 **[起動]** を選択します。
+     > [!IMPORTANT]
+     > 保留中の更新プログラムがある場合、[変更] ボタンは別の場所にあります。 この方法で、更新せずに Visual Studio を変更するならそれができます。 **[詳細]** をクリックして、 **[変更]** を選択します。
+     >
+     > ![Visual Studio の更新または変更](media/modify-or-update-visual-studio.png "Visual Studio 2017 の更新または変更")
 
 ::: moniker-end
 
@@ -111,7 +91,43 @@ ms.locfileid: "74810058"
 
      ![Visual Studio の更新または変更](media/vs-2019/vs-installer-modify.png "Visual Studio 2019 の更新または変更")
 
-1. **[ワークロード]** タブで、インストールまたはアンインストールするワークロードを選択または選択解除します。
+     > [!IMPORTANT]
+     > 保留中の更新プログラムがある場合、[変更] ボタンは別の場所にあります。 この方法で、必要に応じて、更新せずに Visual Studio を変更することができます。 **[詳細]** を選択して、 **[変更]** を選択します。
+     >
+     > ![Visual Studio の更新または変更](media/vs-2019/modify-update-visual-studio.png "Visual Studio 2019 の更新または変更")
+
+::: moniker-end
+
+## <a name="modify-workloads"></a>ワークロードの変更
+
+::: moniker range="vs-2017"
+
+ [ワークロード](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/)には、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+
+1. Visual Studio インストーラーで、 **[ワークロード]** タブを選択し、目的のワークロードを選択または選択解除します。
+
+    ![Visual Studio 2017 のセットアップ ダイアログ](media/modify-workloads.png "Visual Studio 2019 でのワークロードの選択")
+
+1. 既定の **[ダウンロードしながらインストールする]** オプションをそのまま使用するか、または **[全部ダウンロードしてからインストールする]** オプションを使用するかを選択します。
+
+    ![Visual Studio 2017 のセットアップ オプション](media/vs-2019/vs-installer-choose-install-or-download.png "ダウンロードしながらインストールするか、または最初にダウンロードしてからインストールするかを選択する")
+
+    最初にダウンロードしてからインストールする場合は、[全部ダウンロードしてからインストールする] オプションが便利です。
+
+1. **[変更]** を選択します。
+
+1. 新しいワークロードがインストールされたら、Visual Studio インストーラーで **[起動]** を選択し、Visual Studio を開きます。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ ワークロードには、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+
+ > [!TIP]
+>開発に必要なツールとコンポーネントのバンドルについて詳しくは、「[Visual Studio ワークロード](https://visualstudio.microsoft.com/vs/#workloads)」をご覧ください。
+
+1. Visual Studio インストーラーで、 **[ワークロード]** タブを選択し、目的のワークロードを選択または選択解除します。
 
     ![Visual Studio 2019 のセットアップ ダイアログ](media/vs-2019/vs-installer-modify-workloads.png "Visual Studio 2019 でのワークロードの選択")
 
@@ -123,17 +139,24 @@ ms.locfileid: "74810058"
 
 1. **[変更]** を選択します。
 
-1. 新しいワークロードとコンポーネントがインストールされたら、Visual Studio インストーラーで **[起動]** を選択します。
+1. 新しいワークロードがインストールされたら、Visual Studio インストーラーで **[起動]** を選択し、Visual Studio を開きます。
 
 ::: moniker-end
 
 ## <a name="modify-individual-components"></a>個々のコンポーネントの変更
 
-ワークロードをインストールせずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個々のコンポーネント]** タブを選択し、必要なものを選択して、画面の指示に従います。
+ワークロードを使用せずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個別のコンポーネント]** タブを選択し、必要なコンポーネントを選択して、画面の指示に従います。
+
+>[!TIP]
+> SQL Server Data Tools (SSDT) については、「[Visual Studio の SQL Server Data Tools (SSDT) をダウンロードし、インストールする](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)」を参照してください。
+
+## <a name="modify-language-packs"></a>言語パックの変更
+
+既定では、インストーラーが最初に実行されるときに、オペレーティング システムの言語に一致させます。 しかし、必要に応じていつでも言語を変更できます。 これを行うには、Visual Studio インストーラーの **[言語パック]** タブを選択し、希望する言語を選択して、画面の指示に従います。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のワークロードとコンポーネント ID の一覧](workload-and-component-ids.md)
 * [Visual Studio の更新](update-visual-studio.md)

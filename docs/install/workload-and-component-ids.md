@@ -3,10 +3,10 @@ title: Visual Studio のワークロードとコンポーネント ID
 titleSuffix: ''
 description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,13 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+open_to_public_contributors: false
+ms.openlocfilehash: c80c9677a52c32f9539858b64e3be0e5cfb5f27f
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211379"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276443"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio のワークロードとコンポーネント ID
 
@@ -50,7 +51,7 @@ ms.locfileid: "71211379"
 
 ::: moniker range="vs-2019"
 
-**[16.3 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.5 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 | **エディション** | **ID** | **説明** |
 | ----------- | ------ | --------------- |

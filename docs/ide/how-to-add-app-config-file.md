@@ -6,19 +6,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - app.config files, adding to C# projects
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e6516b48b524c3da4d80bc5171608ac1aea03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654260"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593643"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法:C# プロジェクトにアプリケーション構成ファイルを追加する
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法: C# プロジェクトにアプリケーション構成ファイルを追加する
 
 アプリケーション構成ファイル (*app.config* ファイル) を C# プロジェクトに追加すると、共通言語ランタイムがアセンブリ ファイルを検索し読み込む方法をカスタマイズできます。 アプリケーション構成ファイルの詳細については、「[ランタイムがアセンブリを検索する方法 (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)」を参照してください。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72654260"
 
      *app.config* という名前のファイルがプロジェクトに追加されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [アプリケーション設定の管理 (.NET)](../ide/managing-application-settings-dotnet.md)
 - [構成ファイル スキーマ (.NET Framework )](/dotnet/framework/configure-apps/file-schema/index)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - protection
 description: Visual Studio に含まれている Dotfuscator Community の無料コピーの機能について説明します。
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747940"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75918414"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator の機能
 
@@ -64,7 +64,7 @@ Dotfuscator Community では、[改ざん防止][tamper]、[デバッグ防止][
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
+[assemblies]:  /dotnet/standard/assembly-format
 [uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
 [xamarin]:  https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
 

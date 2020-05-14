@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919197"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114482"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 
@@ -33,7 +33,7 @@ ms.locfileid: "72919197"
 
 このオプションが設定されているときは、Web アプリケーションをエラーなしでコンパイルできなかった場合にそのアプリケーションを実行しようとすると警告が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]](projects-and-solutions-options-dialog-box.md)
 - [[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](options-dialog-box-projects-and-solutions-web-projects.md)

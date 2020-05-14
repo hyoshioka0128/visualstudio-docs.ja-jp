@@ -1,17 +1,18 @@
 ---
 title: Visual Studio クラウド サブスクリプションを購入する方法
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962947"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273947"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -59,7 +60,7 @@ Azure サブスクリプションに対して、[所有者](https://docs.microso
 > [!div class="mx-imgBorder"]
 > ![サブスクリプションを表示する](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
-## <a name="manage-subscriptions"></a>購入したクラウド サブスクリプションの更新のキャンセル
+## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>購入したクラウド サブスクリプションの更新のキャンセル
 
 * 購入したサブスクリプションの数を変更するには:
 
@@ -118,6 +119,12 @@ A: 別のクラウド サブスクリプション年間プランを購入する�
 - [Visual Studio サブスクリプションのサポート](https://visualstudio.microsoft.com/vs/support/)
 - [Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問](vscloud-billing-faq.md)
 - [CSP 向けの Visual Studio クラウド サブスクリプションの購入](vscloud-csp.md)
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 クラウド サブスクリプションを購入する

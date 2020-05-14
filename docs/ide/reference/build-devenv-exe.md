@@ -9,17 +9,17 @@ helpviewer_keywords:
 - build Devenv switch
 - command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aef4dcdc9069c1bbfe71a90bbaba214ebcd18ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667882"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595762"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -35,11 +35,11 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  必須です。 ソリューション ファイルの完全パスと名前。
+  必須。 ソリューション ファイルの完全パスと名前。
 
 - *SolnConfigName*
 
-  任意。 *SolutionName* で指定されたソリューションのビルドに使用されるソリューション構成の名前 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
+  任意。 `Debug`SolutionName`Release` で指定されたソリューションのビルドに使用されるソリューション構成の名前 ( *、* など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
 
 - `/Project` *ProjName*
 
@@ -67,13 +67,13 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="example"></a>例
 
-次のコマンドでは、`MySolution` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `CSharpWinApp` をビルドします。
+次のコマンドでは、`CSharpWinApp` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `MySolution` をビルドします。
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロジェクトとソリューションをビルドおよびクリーンする](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

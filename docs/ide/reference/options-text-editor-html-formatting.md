@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666194"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568322"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[書式設定]
 

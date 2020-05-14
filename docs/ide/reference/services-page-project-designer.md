@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655487"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593565"
 ---
 # <a name="services-page-project-designer"></a>[サービス] ページ (プロジェクト デザイナー)
 
@@ -29,7 +29,7 @@ ms.locfileid: "72655487"
 
 ## <a name="task-list"></a>タスク一覧
 
-[方法: クライアント アプリケーション サービスを構成する](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[方法 : クライアント アプリケーション サービスを構成する](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
@@ -45,21 +45,21 @@ ms.locfileid: "72655487"
 
 選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、 **[サービス]** ページでサービスの場所を指定する必要があります。
 
- **Windows 認証の使用**
+ **[Windows 認証を使用する]**
 
 認証プロバイダーが Windows ベースの認証、つまり Windows オペレーティング システムによって付与された ID を使用することを示します。
 
  **フォーム認証を使用する**
 
-認証プロバイダーがフォーム認証を使用することを示します。 つまり、アプリケーションがログインのユーザー インターフェイスを提供する必要があります。 詳細については、[クライアント アプリケーション サービスでユーザーのログインを実装する](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)」を参照してください。
+認証プロバイダーがフォーム認証を使用することを示します。 つまり、アプリケーションがログインのユーザー インターフェイスを提供する必要があります。 詳細については、「[方法: クライアント アプリケーション サービスでユーザーのログインを実装する](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)」を参照してください。
 
  **認証サービスの場所**
 
 フォーム認証でのみ使用します。 認証サービスの場所を指定します。
 
- **省略可能:資格情報プロバイダー**
+ **省略可能: 資格情報プロバイダー**
 
-フォーム認証でのみ使用します。 アプリケーションが `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> メソッドを呼び出し、パラメーターに空の文字列または `null` を渡したときに、認証サービスでログイン ダイアログ ボックスを表示するために使用する <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> 実装を示します。 このボックスを空白のままにした場合は、<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> メソッドに有効なユーザー名とパスワードを渡す必要があります。 アセンブリ修飾型名として資格情報プロバイダーを指定する必要があります。 詳細については、「<xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>」および「[アセンブリ名](/dotnet/framework/app-domains/assembly-names)」を参照してください。 最も単純な形式では、アセンブリ修飾型名は、次のようになります。`MyNamespace.MyLoginClass, MyAssembly`
+フォーム認証でのみ使用します。 アプリケーションが <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>`static` メソッドを呼び出し、パラメーターに空の文字列または <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> を渡したときに、認証サービスでログイン ダイアログ ボックスを表示するために使用する `null` 実装を示します。 このボックスを空白のままにした場合は、<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> メソッドに有効なユーザー名とパスワードを渡す必要があります。 アセンブリ修飾型名として資格情報プロバイダーを指定する必要があります。 詳細については、「<xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>」および「[アセンブリ名](/dotnet/framework/app-domains/assembly-names)」を参照してください。 最も単純な形式では、アセンブリ修飾型名は、次のようになります。`MyNamespace.MyLoginClass, MyAssembly`
 
  **ロール サービスの場所**
 
@@ -69,14 +69,14 @@ ms.locfileid: "72655487"
 
 プロファイル (Web 設定) サービスの場所を指定します。
 
- **詳細設定**
+ **詳細**
 
 既定の動作をオーバーライドすることができる [[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)を開きます。 たとえば、このダイアログ ボックスを使用すると、ローカル ファイル システムを使用する代わりに、オフラインのストレージにデータベースを指定できます。 詳細については、「[[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クライアント アプリケーション サービス](/dotnet/framework/common-client-technologies/client-application-services)
 - [[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [方法: クライアント アプリケーション サービスを構成する](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [方法 : クライアント アプリケーション サービスを構成する](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

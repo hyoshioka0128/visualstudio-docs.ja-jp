@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync |Microsoft Docs
+title: 式を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311823"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726014"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-このメソッドは、解析された式を評価し、必要に応じて別のデータ型に結果をキャストします。
+このメソッドは、解析された式を評価し、必要に応じて結果を別のデータ型にキャストします。
 
 ## <a name="syntax"></a>構文
 
@@ -53,31 +53,31 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>パラメーター
 `dwEvalFlags`\
-[in]組み合わせた[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式を評価する方法を制御する定数。
+[in]式の評価方法を制御する[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)定数の組み合わせ。
 
 `dwTimeout`\
-[in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
+[in]このメソッドから戻るまでの最大待機時間をミリ秒単位で指定します。 無期限`INFINITE`に待機するために使用します。
 
 `pSymbolProvider`\
-[in]として表現される、シンボル プロバイダー、 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)インターフェイス。
+[in]インターフェイスとして表現されるシンボル[プロバイダー](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 。
 
 `pAddress`\
-[in]表されるメソッド内の現在の実行場所、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
+[in][メソッド](../../../extensibility/debugger/reference/idebugaddress.md)内の現在の実行位置。
 
 `pBinder`\
-[in]表される、バインダー、 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)インターフェイス。
+[in]バインダーは[、IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)インターフェイスとして表されます。
 
 `bstrResultType`\
-[in]結果の型にキャストする必要があります。 この引数は、null 値を指定できます。
+[in]結果をキャストする必要がある型。 この引数には、NULL 値を指定できます。
 
 `ppResult`\
-[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)評価の結果を表すインターフェイスです。
+[アウト]評価結果を表す[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- 式の評価コンテキストがで指定された`pAddress`格納方法を決定できるように、式内のシンボルの値を決定するルールの言語のスコープを使用します。
+ 式の評価コンテキストは によって`pAddress`与えられ、それを含むメソッドを決定し、言語スコープの規則を使用して式内のシンボルの値を決定できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

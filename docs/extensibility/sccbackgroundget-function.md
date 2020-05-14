@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet 関数 |Microsoft Docs
+title: 関数を取得する Sccbackground |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0805e91f5386f101917ee988e9e0d23d066f48d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334024"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701231"
 ---
-# <a name="sccbackgroundget-function"></a>SccBackgroundGet 関数
-この関数は、ソース管理から各指定されたファイルのユーザーの操作なしで取得します。
+# <a name="sccbackgroundget-function"></a>関数を取得します。
+この関数は、指定された各ファイルをソース管理から取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,40 +37,40 @@ SCCRTN SccBackgroundGet(
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグインのコンテキストのポインター。
+[in]ソース管理プラグイン のコンテキスト ポインター。
 
- nFiles
+ nファイル
 
-[in]指定されたファイルの数、`lpFileNames`配列。
+[in]配列に指定されたファイルの`lpFileNames`数。
 
- lpFileNames
+ ファイル名
 
-[入力、出力]取得するファイルの名前の配列。
+[イン、アウト]取得するファイルの名前の配列。
 
 > [!NOTE]
-> 名前は、完全修飾のローカル ファイル名である必要があります。
+> 名前は、ローカルファイル名を完全修飾する必要があります。
 
  dwFlags
 
-[in]コマンドのフラグ (`SCC_GET_ALL`、 `SCC_GET_RECURSIVE`)。
+[in]コマンド フラグ`SCC_GET_ALL` `SCC_GET_RECURSIVE`( , )
 
- dwBackgroundOperationID
+ を実行します。
 
-[in]この操作に関連付けられた一意の値。
+[in]この操作に関連付けられている一意の値。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|操作が正常に完了しました。|
-|SCC_E_BACKGROUNDGETINPROGRESS|バック グラウンド取得が既に進行中 (ソース管理プラグインを返すこの同時バッチ操作がサポートしない場合にのみ)。|
-|SCC_I_OPERATIONCANCELED|操作が完了する前に取り消されました。|
+|SCC_OK|操作は正常に完了しました。|
+|SCC_E_BACKGROUNDGETINPROGRESS|バックグラウンド検索は既に進行中です (ソース管理プラグインは、同時バッチ操作をサポートしていない場合にのみ、これを返す必要があります)。|
+|SCC_I_OPERATIONCANCELED|操作は完了する前にキャンセルされました。|
 
 ## <a name="remarks"></a>Remarks
- この関数は常にソース管理プラグインが読み込まれているものと異なるスレッドで呼び出されます。 この関数は戻りますが完了するまでは必要ありません。ただし、その複数回と共に呼び出せる複数同時にすべてのファイルのリスト。
+ この関数は、ソース管理プラグインを読み込んだスレッドとは異なるスレッドで常に呼び出されます。 この関数は、実行されるまで戻りません。ただし、複数のファイルリストを同時に複数回呼び出すことができます。
 
- 使用、`dwFlags`引数が同じ、 [SccGet](../extensibility/sccget-function.md)します。
+ 引数の`dwFlags`使用は[、 SccGet](../extensibility/sccget-function.md)と同じです。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

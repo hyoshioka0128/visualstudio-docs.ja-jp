@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND |Microsoft Docs
+title: ADDRESS_KIND |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - ADDRESS_KIND enumeration
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f80eb44c4f24340d26ab0b7aa1b5290760da6c77
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327338"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738150"
 ---
-# <a name="addresskind"></a>ADDRESS_KIND
+# <a name="address_kind"></a>ADDRESS_KIND
 アドレスの種類を指定します。
 
 ## <a name="syntax"></a>構文
@@ -58,41 +58,41 @@ public enum enum_ADDRESS_KIND {
 
 ## <a name="fields"></a>フィールド
 `ADDRESS_KIND_NATIVE`\
-によって表される、ネイティブのアドレス、 [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)構造体。
+[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)構造体で表されるネイティブ アドレス。
 
 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
-基準とする非管理対象のアドレスを`this`(`Me` Visual Basic で) ポインターによって表されると、 [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)構造体。
+`this` (Visual`Me` Basic では) ポインターを基準にして[、UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)構造体で表されるアンマネージ アドレス。
 
 `ADDRESS_KIND_UNMANAGED_PHYSICAL`\
-によって表される、管理されていない物理アドレス、 [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)構造体。
+[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)構造体で表されるアンマネージ物理アドレス。
 
 `ADDRESS_KIND_METHOD`\
-によって表されるクラスのメソッド、 [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)構造体。
+[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)構造体で表されるクラスのメソッド。
 
 `ADDRESS_KIND_FIELD`\
-によって表されるクラスのフィールド、 [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)構造体。
+[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)構造体で表されるクラスのフィールド。
 
 `ADDRESS_KIND_LOCAL`\
-アドレスのローカル変数し、で表される、 [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)構造体。
+アドレスはローカル変数用で[、METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)構造で表されます。
 
 `ADDRESS_KIND_PARAM`\
-によって表される、メソッドまたは関数パラメーター、 [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)構造体。
+[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)構造体で表されるメソッドまたは関数パラメーター。
 
 `ADDRESS_KIND_ARRAYELEM`\
-配列の要素によって表される、 [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)構造体。
+[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)構造体で表される配列要素。
 
 `ADDRESS_KIND_RETVAL`\
-によって表される、戻り値、 [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)構造体。
+[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)構造体で表される戻り値。
 
 ## <a name="remarks"></a>Remarks
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)メソッドが返す、 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 、可能な構造体の和集合を含む構造体、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体。 `dwKind`のフィールド、`DEBUG_ADDRESS_UNION`の保留を構造体、`ADDRESS_KIND`値し、共用体のフィールドを解釈する方法について説明します。
+[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)メソッドは、可能な構造体の和集合[、DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体を含む[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)構造体を返します。 構造体`dwKind`の`DEBUG_ADDRESS_UNION`フィールドは値を`ADDRESS_KIND`保持し、共用体フィールドの解釈方法を記述します。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

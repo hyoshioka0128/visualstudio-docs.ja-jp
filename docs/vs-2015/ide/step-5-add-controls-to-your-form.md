@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295722"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851528"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>手順 5: フォームへのコントロールの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この手順では、`PictureBox` コントロールや `CheckBox` コントロールなどのコントロールをフォームに追加します。 また、ボタンも追加します。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](https://go.microsoft.com/fwlink/?LinkId=205211)ビデオ2」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 2](https://go.microsoft.com/fwlink/?LinkId=205200)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成-](https://msdn.microsoft.com/vbasic/gg315945.aspx)ビデオ2」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-add-controls-to-your-form"></a>フォームにコントロールを追加するには
 

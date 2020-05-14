@@ -1,7 +1,7 @@
 ---
 title: プロジェクトの移植、移行、およびアップグレード
 description: 現在および以前のバージョンの Visual Studio で作成されたプロジェクトのサポートに関するリファレンス。
-ms.date: 10/17/2019
+ms.date: 11/26/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9bc0436eac0460071d2393f8ff43178d49e8f7de
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912015"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75406347"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
@@ -112,14 +112,15 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 ::: moniker range="vs-2019"
 
-通常、新しいバージョンの Visual Studio はいずれも、以前の種類のプロジェクト、ファイル、その他のアセットに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。)
+新しいバージョンの Visual Studio はいずれも、ほとんどの種類のプロジェクト、ファイル、その他の資産に対応しています。 新しい機能に依存しない場合は、[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)これらを操作できます。
 
-一部の種類のプロジェクトに対するサポートは、今後変更される場合があります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。
+Microsoft では、以前のバージョン (Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など) との下位互換性を維持しようとしています。 しかし、一部の種類のプロジェクトに対するサポートは、時間の経過と共に変化します。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。 
 
-この記事では、Visual Studio 2019 の移行が可能なプロジェクト タイプに対する詳細を提供しています。 また、Visual Studio 2019 で非推奨となった、または近いうちに非推奨となるプロジェクト タイプに関する情報も含まれます。 この記事では、Visual Studio 2019 でサポートされなくなったことで移行できないプロジェクト タイプは除外されています。 また、移行に関する問題がないサポート対象のプロジェクト タイプ ([対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページでその一覧を確認できます) もこの記事では除外されています。
+> [!NOTE]
+> 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。 また、Visual Studio のそれぞれのバージョンに固有の機能について詳しくは、[リリース ノート](/visualstudio/releases/2019/release-notes/)をご覧ください。
 
 > [!IMPORTANT]
-> 特定のプロジェクト タイプでは、Visual Studio インストーラーを通じて特定のワークロードをインストールする必要があります。 ワークロードがインストールされていない場合、Visual Studio は不明な、または互換性のないプロジェクトの種類を報告します。 その場合、インストール オプションを確認して、やり直してください。 Visual Studio 2019 でサポートされているプロジェクトの詳細について、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事をご覧ください。
+> 一部のプロジェクトの種類には、特定のワークロードが必要です。 ワークロードがインストールされていない場合、Visual Studio は不明な、または互換性のないプロジェクトの種類を報告します。 その場合、[Visual Studio インストーラーでインストール オプション](../install/modify-visual-studio.md)を確認して、やり直してください。 Visual Studio 2019 のプロジェクト サポートについて詳しくは、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事をご覧ください。
 
 ## <a name="project-types"></a>プロジェクトの種類
 
@@ -167,11 +168,11 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 | Windows ストア アプリ | JavaScript ユニバーサル Windows プロジェクトは、Visual Studio 2019 ではサポートされていません。 これらのプロジェクトを維持するには、Visual Studio 2017 を使用してください。 <br/><br/>Windows 10 Fall Creators Update (ビルド 16299) より前の Windows 10 SDK は、Visual Studio 2019 インストーラーから削除されました。 古い SDK を手動でダウンロードすることも、新しい SDK を使用するようにプロジェクトを再ターゲットすることもできます。<br/><br/>project.json を使用しているユニバーサル Windows プロジェクトはサポートされていません。 パッケージ参照を使用するようにこれらのプロジェクトをアップグレードすることをお勧めします。 または、project.json ファイルで Microsoft.NET.Test.Sdk バージョン 16.0.0.0 への参照を追加します。<br/><br/>Windows Phone 8.1 および 8.0 のプロジェクトは、Visual Studio 2019 ではサポートされていません。 これらのアプリを維持するには、引き続き Visual Studio 2015 を使用してください。 |
 | Xamarin | Visual Studio および Visual Studio for Mac の Xamarin Live Player 拡張機能は削除されました。 これにより、ペアリングの画面とすべての統合が削除されます。 代わりに、Xamarin.Forms Previewer でビルドを使用してください。<br/><br/>Visual Studio Emulator for Android は、Visual Studio インストーラーから削除されました。 代わりに、Google Android エミュレーターで新しい HYPER-V サポートを使用してください。 |
 
-## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio がプロジェクトを移行するタイミングを決定する方法
+## <a name="migrate-a-project"></a>プロジェクトの移行
 
-Visual Studio の各新規バージョンでは、一般に、バージョンが異なっても同じプロジェクトを開き、変更し、ビルドできるように、以前のバージョンとの互換性が維持されます。 ただし、時間の経過と共に、一部のプロジェクトの種類のサポート終了など、避けられない変更が発生します (Visual Studio 2019 でサポートされているプロジェクトの種類については、[ターゲット プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページを参照してください)。このような場合、新しいバージョンの Visual Studio はプロジェクトを読み込まず、移行パスを提供しません。そのようなプロジェクトは、それをサポートしている以前のバージョンの Visual Studio で管理する必要があります。
+Microsoft では、以前のバージョンとの互換性を維持しようと試みていますが、以前のバージョンと互換性のない変更が生じる可能性があります。 (Visual Studio 2019 でサポートされているプロジェクトの種類については、[ターゲット プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページを参照してください)。これが発生した場合、新しいバージョンの Visual Studio ではプロジェクトが読み込まれず、移行パスも提供されません。 そのプロジェクトを、以前のバージョンの Visual Studio で維持することが必要になる場合があります。
 
-つまり、新しいバージョンの Visual Studio ではプロジェクトを開くことはできますが、以前のバージョンとの互換性がなくなる可能性がある方法でプロジェクトを更新または移行する必要があります。 Visual Studio は、複数の条件を使って、このような移行が必要かどうかを判断します。
+新しいバージョンの Visual Studio でプロジェクトを開ける場合があります。ただし、そこでは、以前のバージョンとの互換性がなくなる可能性がある方法で、プロジェクトを更新または移行する必要があります。 Visual Studio は、複数の条件を使って、このような移行が必要かどうかを判断します。
 
 - Visual Studio 2013 RTM まで遡る、プラットフォームのターゲット バージョンとの互換性。
 
@@ -179,15 +180,15 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 - 新しいデザイン時資産により、Visual Studio 2013 RTM & Update 5 までの以前のバージョンとの互換性がなくなるかどうか。
 
-対象のプロジェクトの種類のエンジニアリング所有者は、これらの条件を調べて、サポート、互換性、移行に関して問題があるときは問い合わせます。 ここでも、Visual Studio は、可能であれば Visual Studio のバージョン間の透過的な互換性を維持します。つまり、Visual Studio のあるバージョンで作成および変更したプロジェクトは、他のバージョンでもそのままで動作します。
+そのプロジェクトの種類を所有しているエンジニアリング チームは、これらの条件を確認し、サポート、互換性、移行に関して問題があるときは問い合わせます。 ここでも、Visual Studio のバージョン間の互換性を維持して、Visual Studio のあるバージョンで作成および変更したプロジェクトが、他のバージョンでもそのままで動作するようにすることが試みられます。
 
-ただし、この記事で説明されている一部のプロジェクトの種類のように、このような互換性が不可能な場合は、Visual Studio はアップグレード ウィザードを開いて必要な一方向の変更を行います。
+場合によっては、互換性を実現できないことがあります。 その場合、Visual Studio によって、必要な一方向の変更を加えるためのアップグレード ウィザードが開かれます。 これらの一方向の変更には、プロジェクト ファイルの `ToolsVersion` プロパティの変更が含まれる場合があります。このプロパティにより、プロジェクトのソース コードを目的の実行可能で配置可能な成果物に変換できる、MSBuild の正確なバージョンが示されます。 
 
-このような一方向の変更には、プロジェクト ファイルでの `ToolsVersion` プロパティの変更が含まれます。これは、最終的に必要な実行可能で配置可能なアーティファクトにプロジェクトのソース コードを変換できる MSBuild の正確なバージョンを示します。 つまり、プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトでの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている限り、Visual Studio をそのツールチェーンを呼び出してプロジェクトをビルドできます。
+プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている場合、Visual Studio ではそのツールチェーンを呼び出してプロジェクトをビルドすることができます。
 
-以前のバージョンで作成されたプロジェクトとの最大限の互換性を維持するため、Visual Studio 2019 には、`ToolsVersion` 15、14、12、4 をサポートするために必要な MSBuild ツールチェーンが含まれています。 これらの `ToolsVersion` 値のいずれかを使うプロジェクトでは、ビルドが成功するはずです (やはり、「[Visual Studio 2019 の対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)」で説明されているように、Visual Studio 2017 がプロジェクトの種類をサポートするかどうかに依存します)。
+以前のバージョンで作成したプロジェクトとの互換性を維持するため、Visual Studio 2019 には、`ToolsVersion` 15、14、12、4 をサポートするために必要な MSBuild ツールチェーンが含まれています。 これらの `ToolsVersion` 値のいずれかを使うプロジェクトでは、ビルドが成功するはずです (やはり、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事で説明されているように、Visual Studio 2019 がそのプロジェクトの種類をサポートするかどうかに依存します)。
 
-このコンテキストでの必然的な疑問は、新しい `ToolsVersion` 値にプロジェクトを手動で更新または移行する必要があるかどうかということです。 そのような変更は不要であり、行うと、修正するにはプロジェクトの再ビルドが必要な多くのエラーと警告が発生する可能性があります。 さらに、将来 Visual Studio が特定の `ToolsVersion` をサポートしなくなった場合、プロジェクトを開くと、`ToolsVersion` の値を変更する必要があるため、プロジェクト移行プロセスが開始されます。 そのような場合、その特定のプロジェクトの種類のサブシステムは、変更が必要なものを正確に知っており、この記事で前述したように自動的にこれらの変更を行うことができます。
+新しい `ToolsVersion` 値にプロジェクトを手動で更新または移行しようとお考えになるかもしれません。 そのような変更は不要です。実行した場合、プロジェクトを再ビルドするために修正しなければならない多くのエラーと警告が発生する可能性があります。 また、将来特定の `ToolsVersion` が Visual Studio でサポートされなくなった場合、そのプロジェクトを開くとプロジェクトの移行プロセスがトリガーされます。その `ToolsVersion` の値を変更する必要があるためです。
 
 ## <a name="next-steps"></a>次の手順
 

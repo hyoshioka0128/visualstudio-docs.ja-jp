@@ -16,43 +16,44 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632759"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference タスク
+
 指定したアセンブリに依存するすべてのアセンブリを判断します。これには、2 番目と `n` 番目の依存関係も含まれます。
 
 ## <a name="parameters"></a>パラメーター
+
  `ResolveAssemblyReference` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
 |---------------|-----------------|
-|`AllowedAssemblyExtensions`|省略可能な `String[]` 型のパラメーターです。<br /><br /> 参照を解決するときに使用するアセンブリ ファイル名拡張子。 既定のファイル名拡張子は、*.exe* と *.dll* です。|
-|`AllowedRelatedFileExtensions`|省略可能な `String[]` 型のパラメーターです。<br /><br /> 相互に関連するファイルの検索に使用するファイル名拡張子。 既定の拡張子は、*.pdb* と *.xml* です。|
+|`AllowedAssemblyExtensions`|省略可能な `String[]` 型のパラメーターです。<br /><br /> 参照を解決するときに使用するアセンブリ ファイル名拡張子。 既定のファイル名拡張子は、 *.exe* と *.dll* です。|
+|`AllowedRelatedFileExtensions`|省略可能な `String[]` 型のパラメーターです。<br /><br /> 相互に関連するファイルの検索に使用するファイル名拡張子。 既定の拡張子は、 *.pdb* と *.xml* です。|
 |`AppConfigFile`|省略可能な `String` 型のパラメーターです。<br /><br /> bindingRedirect マッピングを解析および抽出する元になる *app.config* ファイルを指定します。 このパラメーターを指定する場合は、 `AutoUnify` パラメーターを `false`にする必要があります。|
-|`AutoUnify`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> このパラメーターは、通常の *App.Config* ファイルを持つことができない DLL などのアセンブリのビルドに使用されます。<br /><br /> `true` の場合、生成される依存関係グラフは、AppConfigFile パラメーターに渡される *App.Config* ファイルが存在するものと仮定して自動的に処理されます。 この仮想 *App.Config* ファイルには、競合するアセンブリ セットごとに bindingRedirect エントリがあるので、最高バージョンのアセンブリが選択されます。 この結果、すべての競合が解決されるため、競合アセンブリに関する警告は発生しません。<br /><br /> `true`の場合、再割り当てのたびに高優先度コメントが作成されます。このコメントでは、古いバージョンと新しいバージョンが示され、また `AutoUnify` が `true`であったことが示されます。<br /><br /> `true` の場合、AppConfigFile パラメーターを空にする必要があります。<br /><br /> `false`の場合、アセンブリ バージョンの再割り当ては自動的には発生しません。 アセンブリの 2 つのバージョンが存在する場合は、警告が発行されます。<br /><br /> `false`の場合、同じアセンブリの異なるバージョン間に競合が発生するたびに、高優先度コメントが発行されます。 これらのコメントの後に、1 つの警告が発行されます。 この警告には、一意のエラー コードと、「参照アセンブリと依存アセンブリの異なるバージョン間での競合が見つかりました」というテキストが含まれます。|
 |`Assemblies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 完全パスと依存関係を特定する必要のあるアイテムを指定します。 これらのアイテムの名前には、「System」のような簡易名、または「System, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089」のような厳密な名前を指定できます。<br /><br /> このパラメーターに渡されるアイテムには、必要に応じて、次のアイテム メタデータを指定できます。<br /><br /> -   `Private`: `Boolean` 値。 `true`の場合、アイテムはローカルにコピーされます。 既定値は `true` です。<br />-   `HintPath`: `String` 値。 参照として使用するパスとファイル名を指定します。 このメタデータは、`SearchPaths` パラメーターに {HintPathFromItem} を指定した場合に使用されます。 既定値は空の文字列です。<br />-   `SpecificVersion`: `Boolean` 値。 `true`の場合、 `Include` 属性に指定されたとおりの名前に一致する必要があります。 `false`の場合、同じ簡易名を持つ任意のアセンブリを使用できます。 `SpecificVersion` が指定されていない場合は、アイテムの `Include` 属性の値が調べられます。 その属性が簡易名の場合は、 `SpecificVersion` が `false`にする必要があります。 その属性が厳密な名前の場合は、 `SpecificVersion` が `true`にする必要があります。<br />     参照項目型と共に使用する場合、 `Include` 属性は、解決されるアセンブリの完全なフュージョン名である必要があります。 アセンブリが解決されるのは、フュージョンが `Include` 属性と完全に一致する場合のみです。<br />     プロジェクトが .NET Framework の 1 つのバージョンを対象とし、それより新しいバージョンの .NET Framework 用にコンパイルされたアセンブリを参照している場合、その参照が解決されるのは、 `SpecificVersion` が `true`にする必要があります。<br />     プロジェクトがプロファイルを対象とし、プロファイルにないアセンブリを参照している場合、その参照が解決されるのは、 `SpecificVersion` が `true`にする必要があります。<br />-   `ExecutableExtension`: `String` 値。 存在する場合、解決されるアセンブリの拡張子はこの値である必要があります。 存在しない場合、チェックするディレクトリごとに *.dll* が最初に検索され、次に *.exe* が検索されます。<br />-   `SubType`: `String` 値。 SubType メタデータが空であるアイテムのみがアセンブリの完全パスに解決されます。 SubType メタデータが空でないアイテムは無視されます。<br />-   `AssemblyFolderKey`: `String` 値。 古いバージョンとの互換性の目的でサポートされるメタデータです。 これは、アセンブリ参照を解決するために `Assemblies` が使用する必要のあるユーザー定義のレジストリ キー (**hklm\\\<VendorFolder>** など) を指定します。|
 |`AssemblyFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 依存関係を見つける対象の完全修飾アセンブリの一覧を指定します。<br /><br /> このパラメーターに渡されるアイテムには、必要に応じて、次のアイテム メタデータを指定できます。<br /><br /> -   `Private`: 省略可能な `Boolean` 値。 true の場合、アイテムはローカルにコピーされます。<br />-   `FusionName`: 省略可能な `String` メタデータ。 このアイテムの簡易名または厳密な名前を指定します。 この属性が存在する場合、名前を取得するためにアセンブリ ファイルを開く必要がないため、時間を節約できます。|
-|`AutoUnify`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、生成される依存関係グラフは、AppConfigFile パラメーターに渡される *App.Config* ファイルが存在するものと仮定して自動的に処理されます。 この仮想 *App.Config* ファイルには、競合するアセンブリ セットごとに bindingRedirect エントリがあるので、最高バージョンのアセンブリが選択されます。 この結果、すべての競合が解決されるため、競合アセンブリに関する警告は発生しません。 再割り当てのたびに高優先度コメントが作成されます。このコメントでは、古いバージョンと新しいバージョンが示され、また `AutoUnify` が `true`にする必要があります。<br /><br /> `false`の場合、アセンブリ バージョンの再割り当ては自動的には発生しません。 アセンブリの 2 つのバージョンが存在する場合は、警告が発生します。 同じアセンブリの異なるバージョン間に競合が発生するたびに、高優先度コメントが発行されます。 これらすべてのコメントが表示された後、一意のエラー コードと「参照アセンブリと依存アセンブリの異なるバージョン間での競合が見つかりました」というテキストが含まれる 1 つの警告が発行されます。<br /><br /> 既定値は `false`にする必要があります。|
+|`AutoUnify`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> このパラメーターは、通常の *App.Config* ファイルを持つことができない DLL などのアセンブリのビルドに使用されます。<br /><br /> `true` の場合、生成される依存関係グラフは、AppConfigFile パラメーターに渡される *App.Config* ファイルが存在するものと仮定して自動的に処理されます。 この仮想 *App.Config* ファイルには、競合するアセンブリ セットごとに bindingRedirect エントリがあるので、最高バージョンのアセンブリが選択されます。 この結果、すべての競合が解決されるため、競合アセンブリに関する警告は発生しません。<br /><br /> `true`の場合、再割り当てのたびに高優先度コメントが作成されます。このコメントでは、古いバージョンと新しいバージョンが示され、また `AutoUnify` が `true`であったことが示されます。<br /><br /> `true` の場合、AppConfigFile パラメーターを空にする必要があります。<br /><br /> `false`の場合、アセンブリ バージョンの再割り当ては自動的には発生しません。 アセンブリの 2 つのバージョンが存在する場合は、警告が発行されます。<br /><br /> `false`の場合、同じアセンブリの異なるバージョン間に競合が発生するたびに、高優先度コメントが発行されます。 これらのコメントの後に、1 つの警告が発行されます。 この警告には、一意のエラー コードと、「参照アセンブリと依存アセンブリの異なるバージョン間での競合が見つかりました」というテキストが含まれます。<br /><br /> 既定値は `false` です。|
 |`CandidateAssemblyFiles`|省略可能な `String[]` 型のパラメーターです。<br /><br /> 検索と解決のプロセスで使うアセンブリの一覧を指定します。 このパラメーターに渡す値は、絶対ファイル名またはプロジェクトに対する相対ファイル名である必要があります。<br /><br /> `SearchPaths` パラメーターに、考慮するパスの 1 つとして {CandidateAssemblyFiles} が含まれている場合に、この一覧のアセンブリが考慮されます。|
 |`CopyLocalDependenciesWhenParentReferenceInGac`|省略可能な <xref:System.Boolean> 型のパラメーターです。<br /><br /> true の場合、依存関係をローカルにコピーする必要があるかどうかを確認するために、実行されるチェックのいずれかで、プロジェクト ファイルの親参照に Private メタデータが設定されているかどうかが確認されます。 メタデータが設定されている場合は、Private 値が依存関係として使用されます。<br /><br /> メタデータが設定されていない場合は、依存関係について親の参照と同じチェックが実行されます。 これらのチェックの 1 つでは、その参照が GAC 内にあるかどうかが確認されます。 参照が GAC 内にある場合は、コピー先のコンピューターの GAC 内にあると見なされるため、ローカルにコピーされません。 これは特定の参照だけに当てはまり、依存関係には当てはまりません。<br /><br /> たとえば、GAC 内にあるプロジェクト ファイルの参照はローカルにコピーされませんが、その依存関係は GAC 内にないため、ローカルにコピーされます。<br /><br /> false の場合、プロジェクト ファイルの参照が GAC 内にあるかどうかがチェックされ、必要に応じてローカルにコピーされます。<br /><br /> 依存関係については、GAC 内にあるかどうかがチェックされ、プロジェクト ファイルからの親参照が GAC 内にあるかどうかもチェックされます。<br /><br /> プロジェクト ファイルから親参照が GAC 内にある場合は、依存関係はローカルにコピーされません。<br /><br /> このパラメーターが true または false のどちらであっても、複数の親参照があり、そのいずれかが GAC 内にない場合は、すべての親参照がローカルにコピーされます。|
 |`CopyLocalFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> `ResolvedFiles`、`ResolvedDependencyFiles`、`RelatedFiles`、`SatelliteFiles`、`ScatterFiles` の各パラメーターに指定されたファイルのうち、`CopyLocal` アイテム メタデータの値が `true` であるファイルを返します。|
 |`FilesWritten`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> ディスクに書き込まれたアイテムが含まれます。|
 |`FindDependencies`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true`の場合、依存関係が検索されます。 それ以外の場合、プライマリ参照のみが検索されます。 既定値は `true` です。|
-|`FindRelatedFiles`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、*.pdb* ファイルや *.xml* ファイルなどの関連ファイルが検索されます。 既定値は `true` です。|
+|`FindRelatedFiles`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、 *.pdb* ファイルや *.xml* ファイルなどの関連ファイルが検索されます。 既定値は `true` です。|
 |`FindSatellites`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true`の場合、サテライト アセンブリが検索されます。 既定値は `true.`|
 |`FindSerializationAssemblies`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true`の場合、シリアル化アセンブリが検索されます。 既定値は `true` です。|
 |`FullFrameworkAssemblyTables`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> "FrameworkDirectory" メタデータを持つアイテムを指定して、再頒布リストを特定のフレームワーク ディレクトリに関連付けます。 関連付けが行われていない場合は、ログにエラーが記録されます。 アセンブリ参照の解決 (RAR) ロジックでは、FrameworkDirectory が設定されていない場合、ターゲット フレームワーク ディレクトリが使用されます。|
-|`FullFrameworkFolders`|省略可能な <xref:System.String?displayProperty=fullName>`[]` 型のパラメーターです。<br /><br /> RedistList ディレクトリが含まれるフォルダーを指定します。 このディレクトリは、特定のクライアント プロファイルのフレームワーク全体を表します (たとえば、*%programfiles%\reference assemblies\microsoft\framework\v4.0*)。|
+|`FullFrameworkFolders`|省略可能な <xref:System.String?displayProperty=fullName>`[]` 型のパラメーターです。<br /><br /> RedistList ディレクトリが含まれるフォルダーを指定します。 このディレクトリは、特定のクライアント プロファイルのフレームワーク全体を表します (たとえば、 *%programfiles%\reference assemblies\microsoft\framework\v4.0*)。|
 |`FullTargetFrameworkSubsetNames`|省略可能な `String[]` 型のパラメーターです。<br /><br /> ターゲット フレームワークのサブセット名の一覧が含まれます。 この一覧にあるサブセット名が、 `TargetFrameworkSubset` 名前プロパティにある名前の 1 つと一致する場合、ビルド時にその特定のターゲット フレームワーク サブセットが除外されます。|
 |`IgnoreDefaultInstalledAssemblyTables`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、`TargetFrameworkDirectories` の下の *\RedistList* ディレクトリにある、インストールされた追加のアセンブリ テーブル (または "再頒布リスト") がタスクによって検索され、使用されます。 既定値は `false.`|
 |`IgnoreDefaultInstalledAssemblySubsetTables`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、`TargetFrameworkDirectories` の下の *\SubsetList* ディレクトリにある、インストールされた追加のアセンブリ サブセット テーブル (または "サブセット リスト") がタスクによって検索され、使用されます。 既定値は `false.`|
@@ -79,6 +80,7 @@ ms.locfileid: "62970823"
 |`TargetProcessorArchitecture`|省略可能な `String` 型のパラメーターです。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャです。 グローバル アセンブリ キャッシュ (GAC) の参照を解決するために使用されます。<br /><br /> このパラメーターの値には、`x86`、`IA64`、または `AMD64` を指定できます。<br /><br /> このパラメーターがない場合は、最初に、現在実行中のプロセスのアーキテクチャに一致するアセンブリが検討されます。 そのようなアセンブリが見つからない場合は、 `ProcessorArchitecture` 値が `MSIL` である GAC 内のアセンブリ、または `ProcessorArchitecture` 値のない GAC 内のアセンブリが検討されます。|
 
 ## <a name="warnings"></a>警告
+
  次の警告がログに記録されます。
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,9 +103,11 @@ ms.locfileid: "62970823"
 
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
+
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

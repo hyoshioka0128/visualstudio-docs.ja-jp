@@ -1,5 +1,5 @@
 ---
-title: ClickOnce 配置 API を使用してアプリの自動更新
+title: ClickOnce 配置 API を使用したアプリの自動更新
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,28 +15,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f47c82311f26c5ca469f03783b785545bda2182
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9300fbf8b348b1016d36d414d17a66c45f6494b9
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260819"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444618"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>方法: ClickOnce 配置 API を使用してアプリケーションの更新プログラムをプログラムで確認する
-ClickOnce では、デプロイ後にアプリケーションを更新する 2 つの方法を提供します。 最初のメソッドでは、一定の間隔で更新を自動的にチェックする ClickOnce 配置を構成できます。 2 番目のメソッドを使用するコードを記述することができます、<xref:System.Deployment.Application.ApplicationDeployment>更新をチェックするクラス、ユーザーの要求など、イベントに基づいています。
+ClickOnce には、配置後にアプリケーションを更新する方法が 2 つあります。 最初のメソッドでは、ClickOnce 配置を構成して、特定の間隔で更新プログラムを自動的にチェックするように設定できます。 2 番目のメソッドでは、クラスを<xref:System.Deployment.Application.ApplicationDeployment>使用して、ユーザー要求などのイベントに基づいて更新をチェックするコードを記述できます。
 
- 次の手順は、プログラムによる更新プログラムを実行するためのいくつかのコードを示し、プログラムによる更新プログラムのチェックを有効にする、clickonce による配置を構成する方法についても説明します。 します。
+ 次の手順では、プログラムによる更新を実行するためのコードと、プログラムによる更新チェックを有効にするように ClickOnce 配置を構成する方法について説明します。
 
- ClickOnce アプリケーションをプログラムで更新するには、更新プログラムの場所を指定する必要があります。 これは、配置プロバイダーと呼ばれます。 このプロパティの設定の詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。
+ ClickOnce アプリケーションをプログラムで更新するには、更新の場所を指定する必要があります。 これは、デプロイメント プロバイダーと呼ばれることもあります。 このプロパティの設定の詳細については、「 [ClickOnce 更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。
 
 > [!NOTE]
-> 以下から別の更新に 1 つの場所からアプリケーションをデプロイしで説明する手法を使用することもできます。 詳細については、「[方法 :配置の更新用に別の場所を指定する](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)」を参照してください。
+> また、次に説明する手法を使用して、アプリケーションをある場所からデプロイし、別の場所からアプリケーションを更新することもできます。 詳細については、「[方法 : 展開の更新の代替場所を指定する](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)」を参照してください。
 
-### <a name="to-check-for-updates-programmatically"></a>プログラムで更新プログラムを確認するには
+### <a name="to-check-for-updates-programmatically"></a>プログラムによって更新プログラムをチェックするには
 
-1. 任意のコマンドラインまたは visual ツールを使用して、新しい Windows フォーム アプリケーションを作成します。
+1. 任意のコマンド ライン ツールまたはビジュアル ツールを使用して、新しい Windows フォーム アプリケーションを作成します。
 
-2. ボタン、メニュー項目を作成またはその他のユーザー インターフェイス項目を選択して更新プログラムを確認するユーザーをします。 その項目のイベント ハンドラーからの確認し、更新プログラムをインストールするには、次のメソッドを呼び出します。
+2. ユーザーが更新をチェックするために選択するボタン、メニュー項目、またはその他のユーザー インターフェイス項目を作成します。 その項目のイベント ハンドラーから、更新プログラムを確認およびインストールする次のメソッドを呼び出します。
 
      [!code-csharp[ClickOnceAPI#6](../deployment/codesnippet/CSharp/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cs)]
      [!code-cpp[ClickOnceAPI#6](../deployment/codesnippet/CPP/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cpp)]
@@ -44,22 +44,22 @@ ClickOnce では、デプロイ後にアプリケーションを更新する 2 �
 
 3. アプリケーションをコンパイルします。
 
-### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Mage.exe を使用してプログラムで更新プログラムを確認するアプリケーションをデプロイするには
+### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Mage.exe を使用して、プログラムで更新プログラムをチェックするアプリケーションを展開する
 
-- 説明したように、Mage.exe を使用してアプリケーションをデプロイするための指示に従って[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。 配置マニフェストを生成する Mage.exe を呼び出すときに、コマンド ライン スイッチを使用することを確認してように`providerUrl`ClickOnce が更新プログラムを確認する URL を指定するとします。 アプリケーションから更新する場合[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)、たとえば、配置マニフェストを生成する呼び出しが、これのようになります。
+- Mage.exe を使用してアプリケーションを配置する手順に従います[。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md) Mage.exe を呼び出して配置マニフェストを生成する場合は、必ずコマンド`providerUrl`ライン スイッチ を使用し、ClickOnce が更新を確認する URL を指定してください。 アプリケーションから更新する場合`http://www.adatum.com/MyApp`、たとえば、配置マニフェストを生成する呼び出しが、これのようになります。
 
     ```cmd
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application
     ```
 
-### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>MageUI.exe を使用してプログラムで更新プログラムを確認するアプリケーションを展開するには
+### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>プログラムで更新をチェックするアプリケーションを MageUI.exe を使用して展開する
 
-- 説明したように、Mage.exe を使用してアプリケーションをデプロイするための指示に従って[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。 **展開オプション**タブで、設定、**開始場所**フィールドをアプリケーション マニフェストが ClickOnce が更新プログラムを確認する必要があります。 **更新オプション**タブで、、**アプリケーションの更新プログラムを確認する必要があります**チェック ボックスをオンします。
+- Mage.exe を使用してアプリケーションを配置する手順に従います[。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md) [**配置オプション]** タブで、[**開始場所**] フィールドをアプリケーション マニフェストに設定します。 [**更新オプション]** タブで、[**このアプリケーションは更新を確認する]** チェック ボックスをオフにします。
 
-## <a name="net-framework-security"></a>.NET Framework セキュリティ
- アプリケーションは、プログラムによる更新を使用する完全な信頼アクセス許可が必要です。
+## <a name="net-framework-security"></a>.NET Framework のセキュリティ
+ アプリケーションは、プログラムによる更新を使用するために完全に信頼できるアクセス許可を持っている必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [方法: 配置の更新用の別の場所を指定します。](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
-- [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)
+- [方法: 配置の更新用に別の場所を指定する](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+- [クリックワンス更新戦略の選択](../deployment/choosing-a-clickonce-update-strategy.md)
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

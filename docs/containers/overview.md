@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127190"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75916562"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio のコンテナー ツール
 
@@ -31,7 +31,7 @@ Docker サポートは、ASP.NET プロジェクト、ASP.NET Core プロジェ�
 
 Visual Studio での Docker のサポートは、お客様のニーズに応じて、多数のリリースを経て変更されてきました。 プロジェクトに追加できる Docker サポートには 2 つのレベルがあり、サポートされるオプションはプロジェクトの種類と Visual Studio のバージョンによって異なります。 サポートされている一部のプロジェクトの種類では、オーケストレーションなしで 1 つのプロジェクト用に 1 つのコンテナーを使いたいだけの場合は、Docker サポートを追加することでこれを実行できます。  次のレベルは、コンテナー オーケストレーションのサポートです。これは、選択した特定のオーケストレーター用の適切なサポート ファイルを追加します。  
 
-Visual Studio 2017 では、コンテナー オーケストレーション サービスとして Docker Compose と Service Fabric を使用できます。  [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools) をインストールする場合は、Kubernetes も使用できます。
+Visual Studio 2017 では、コンテナー オーケストレーション サービスとして Docker Compose と Service Fabric を使用できます。  [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes) をインストールする場合は、Kubernetes も使用できます。
 
 > [!NOTE]
 > 15.8 より前のバージョンの Visual Studio 2017 を使うか、.NET Framework プロジェクト テンプレート (.NET Core ではなく) を使う場合は、Docker サポートを追加するときに、Docker Compose を使うオーケストレーションのサポートが自動的に追加されます。 Visual Studio 2017 バージョン 15.0 から 15.7 と、.NET Framework プロジェクトに対しては、Docker Compose を使ったコンテナー オーケストレーションのサポートが自動的に追加されます。
@@ -44,7 +44,7 @@ Visual Studio 2017 では、コンテナー オーケストレーション サ�
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-* .NET Core 2.2 を使って開発するための [.NET Core 2.2 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* .NET Core を使って開発するための [.NET Core 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/)。
 * Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio での Docker サポート
@@ -56,7 +56,7 @@ Visual Studio での Docker のサポートは、お客様のニーズに応じ�
 Visual Studio 2019 では、コンテナー オーケストレーション サービスとして Docker Compose、Kubernetes、Service Fabric を使用できます。
 
 > [!NOTE]
-> 完全な .NET Framework コンソール プロジェクト テンプレートを使う場合は、Docker サポートを追加するときに、Docker Compose を使うオーケストレーションのサポートが自動的に追加されます。
+> 完全な .NET Framework コンソール プロジェクト テンプレートを使用する場合は、プロジェクトの作成後の **[コンテナー オーケストレーター サポートの追加]** オプションが、Service Fabric または Docker Compose を使用するオプションとともにサポートされています。 プロジェクトの作成時のサポートの追加と、オーケストレーションなしで 1 つのプロジェクトに **Docker サポートを追加する**オプションは使用できません。
 
 Visual Studio 2019 バージョン 16.4 以降では、 **[コンテナー]** ウィンドウを使用できます。このウィンドウでは、実行中のコンテナーの表示、使用可能なイメージの参照、環境変数、ログ、およびポート マッピングの表示、ファイル システムの検査、デバッガーのアタッチを行ったり、コンテナー環境内でターミナル ウィンドウを開いたりすることができます。 [Visual Studio でのコンテナーおよびイメージの表示および診断](view-and-diagnose-containers.md)に関するページを参照してください。
 
@@ -116,7 +116,7 @@ Docker Compose を使って制御したい他のプロジェクトで、この�
 ## <a name="kubernetes-support"></a>Kubernetes のサポート
 
 ::: moniker range="vs-2017"
-Kubernetes のサポートを追加するには、[Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools) をインストールします。
+Kubernetes のサポートを追加するには、[Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes) をインストールします。
 ::: moniker-end
 
 Kubernetes のサポートでは、ローカル プロジェクトと、[Azure Kubernetes Service (AKS)](/azure/aks) で実行されている Kubernetes クラスターの間の接続を有効にし、それにより Visual Studio を使って AKS で実行されているサービスを変更およびデバッグできます。  このサービスは [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio) によって提供されます。 Azure Dev Spaces では、"*開発スペース*" と呼ばれる Kubernetes サービスの別のブランチを開発のために設定することもできます。そのため、開発中に運用サービスを作業中のバージョンから効率的に分離して、個別の変更が互いに明確に分離される状態を維持することができます。

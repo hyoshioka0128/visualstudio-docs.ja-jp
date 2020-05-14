@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984193"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306681"
 ---
 # <a name="customizing-the-ide"></a>IDE のカスタマイズ
 
@@ -31,18 +31,18 @@ Visual Studio for Mac は次の 14 か国語にローカライズされており
 
 * 中国語 - 中国
 * 中国語 - 台湾
-* チェコ語
-* フランス語
-* ドイツ語
-* 英語
-* イタリア語
-* 日本語
-* 韓国語
-* ポーランド語
+* Czech
+* French
+* German
+* English
+* Italian
+* Japanese
+* Korean
+* Polish
 * ポルトガル語 - ブラジル
-* ロシア語
-* スペイン語
-* トルコ語
+* Russian
+* Spanish
+* Turkish
 
 Visual Studio for Mac の表示言語を変更するには、次の図のように、 **[Visual Studio]、[ユーザー設定]、[環境]、[視覚スタイル]** の順に選択し、 **[ユーザー インターフェイス言語]** ドロップダウンから希望の言語を選択します。
 
@@ -136,6 +136,6 @@ Visual Studio for Mac では、テキスト エディターを並べて開いた
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio IDE のカスタマイズ (Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

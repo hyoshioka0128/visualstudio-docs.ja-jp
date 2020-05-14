@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646640"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77278522"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -311,7 +311,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="diagnose-test-method-performance-issues"></a>テスト メソッドのパフォーマンスの問題を診断する
 
-テスト メソッドに時間がかかる原因を診断するには、テスト エクスプローラーでメソッドを選択し、右クリック メニューの **[選択したテストのプロファイル]** を選択します。 「[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)」を参照してください。
+テスト メソッドに時間がかかる原因を診断するには、テスト エクスプローラーでメソッドを選択し、右クリック メニューの **[選択したテストのプロファイル]** を選択します。 [インストルメンテーション プロファイリング レポート](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)を参照してください。
 
 ### <a name="analyze-unit-test-code-coverage"></a>単体テストのコード カバレッジを分析する
 

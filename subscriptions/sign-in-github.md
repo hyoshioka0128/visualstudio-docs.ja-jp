@@ -3,15 +3,16 @@ title: GitHub アカウントで Visual Studio サブスクリプションにサ
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: GitHub アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 6279c9399a42bc07579f48c887987b4b662da9da
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315373"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233226"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub アカウントで Visual Studio サブスクリプションにサインインする 
 
@@ -49,7 +50,7 @@ A: Xbox コンソールなど、一部の Microsoft 製品では、そのサイ�
 A: まったくありません。 GitHub パスワードが変更されることはありません。Microsoft アカウントにサインインする別の方法が与えられるだけです。 メール アドレスを使用してサインインするときは常に、Microsoft アカウントのパスワードでサインインするか、GitHub に移動してサインインするという選択肢が与えられます。 パスワードを追加する必要がある場合、GitHub アカウントのパスワードとは異なるパスワードにすることを強くお勧めします。
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>Q:GitHub を使用して作成したアカウントに認証アプリを追加することを検討しています。  それは可能ですか?
-A: 問題はありません。アプリをダウンロードし、自分のメール アドレスでサインインしてください。 メール アドレスでサインインすると、[認証アプリ](https://go.microsoft.com/fwlink/?linkid=2090219)か GitHub を資格情報として選択するように求められます。
+A: 問題はありません。アプリをダウンロードし、自分のメール アドレスでサインインしてください。 メール アドレスでサインインすると、[認証アプリ](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6)か GitHub を資格情報として選択するように求められます。
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Q:GitHub と Microsoft アカウント (MSA) の両方で 2 要素認証を有効にしたが、MSA にサインインすると、依然として 2 回の認証が求められます。  なぜでしょうか。
 A: セキュリティ上の制約により、Microsoft は GitHub によるサインインを 1 要素認証として数えます。このことは、2 要素認証を有効にしている場合でも同じです。 そのため、Microsoft アカウントのためにもう一度認証する必要があります。 
@@ -62,6 +63,12 @@ A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.co
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:GitHub アカウントでサインインを試していますが、Microsoft ID が既に登録されているので代わりにそれを使用するように促されます。  どうしてでしょうか。
 A: GitHub アカウントに Azure Active Directory のメール アドレスを登録している場合、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID が既に与えられています。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、 **[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 サブスクリプション ポータルに正常にサインインしたら、特典のページ https://my.visualstudio.com/benefits にアクセスし、お客様が利用できる優れたツール、サービス、およびオファーを確認することをお勧めします。  

@@ -2,17 +2,17 @@
 title: Windows Information Protection からの除外
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab08ea1f3a4c66c026de781f2d39a0bc9d08af96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650861"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588565"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Visual Studio を WIP 除外アプリとして構成する
 
@@ -34,6 +34,6 @@ Visual Studio には複数のバイナリが含まれているので、[WIP 除�
 
 Visual Studio がネットワーク上の企業データにアクセスできる場所を指定するには、[保護されたアプリが企業データを検索および送信できる場所を定義する手順](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data)に従ってください。 Windows が IP アドレスを使用してクラウド リソースへの接続をブロックしないようにするには、/\*AppCompat\*/ 文字列を設定に追加してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [WIP を使っているときのアプリの動作](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

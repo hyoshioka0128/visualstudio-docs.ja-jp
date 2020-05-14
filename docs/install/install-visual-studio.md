@@ -2,7 +2,7 @@
 title: Visual Studio のインストール
 titleSuffix: ''
 description: Visual Studio をインストールする方法について、ステップ バイ ステップで説明します。
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307227"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 
@@ -131,7 +131,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 2. Microsoft の[ライセンス条項](https://visualstudio.microsoft.com/license-terms/)と[プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)の確認を求められます。 **[続行]** を選択します。
 
-   ![ライセンス条項とプライバシーに関する声明](media/privacy-and-license-terms.png "Microsoft のライセンス条項とプライバシーに関する声明")
+   ![ライセンス条項とプライバシーに関する声明](media/privacy-and-license-terms.png "Microsoft ライセンス条項とプライバシーに関する声明")
 
 ## <a name="step-4---choose-workloads"></a>手順 4 - ワークロードを選択する
 
@@ -139,7 +139,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
  ::: moniker range="vs-2017"
 
-1. **[Visual Studio のインストール]** 画面で、必要なワークロードを見つけます。
+1. **Visual Studio インストーラー**で必要なワークロードを見つけます。
 
    ![Visual Studio 2017:ワークロードをインストールする](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 ::: moniker range="vs-2019"
 
-1. 新しいワークロードとコンポーネントがインストールされたら、 **[起動]** を選択します。
+1. **Visual Studio インストーラー**で必要なワークロードを見つけます。
 
    ![Visual Studio 2019:ワークロードをインストールする](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -174,13 +174,13 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - 個々のコンポーネントのインストール](media/vs-installer-installing-components.png "Visual Studio の個々のコンポーネントのインストール")
+  ![Visual Studio 2017 - 個々のコンポーネントのインストール](media/vs-installer-installing-components.png "Visual Studio の個々のコンポーネントをインストールする")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - 個々のコンポーネントのインストール](media/vs-2019/vs-installer-individual-components.png "Visual Studio の個々のコンポーネントのインストール")
+  ![Visual Studio 2019 - 個々のコンポーネントのインストール](media/vs-2019/vs-installer-individual-components.png "Visual Studio の個々のコンポーネントをインストールする")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - 言語パックのインストール](media/vs-installer-installing-language-packs.png "Visual Studio の言語パックのインストール")
+  ![Visual Studio 2017 - 言語パックのインストール](media/vs-installer-installing-language-packs.png "Visual Studio の言語パックをインストールする")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - 言語パックのインストール](media/vs-2019/vs-installer-language-packs.png "Visual Studio の言語パックのインストール")
+  ![Visual Studio 2019 - 言語パックのインストール](media/vs-2019/vs-installer-language-packs.png "Visual Studio の言語パックをインストールする")
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 **15.7 の新機能**:システム ドライブ上の Visual Studio のインストール占有領域を小さくできるようになりました。 ダウンロード キャッシュ、共有コンポーネント、SDK、およびツールを別のドライブに移動して、Visual Studio を最速で実行できるドライブで維持できます。
 
-  ![Visual Studio 2017 - インストール場所を変更する](media/installation-options-by-location.png "インストール場所を変更する")
+  ![Visual Studio 2017 - インストール場所を変更する](media/installation-options-by-location.png "インストールの場所を変更する")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 システム ドライブ上の Visual Studio のインストール占有領域を小さくすることができます。 ダウンロード キャッシュ、共有コンポーネント、SDK、およびツールを別のドライブに移動して、Visual Studio を最速で実行できるドライブで維持できます。
 
-  ![Visual Studio 2019 - インストールの場所を選択する](media/vs-2019/vs-installer-installation-locations.png "インストールの場所を選択する")
+  ![Visual Studio 2019 - インストール場所を選択する](media/vs-2019/vs-installer-installation-locations.png "インストールの場所を選択する")
 
 ::: moniker-end
 

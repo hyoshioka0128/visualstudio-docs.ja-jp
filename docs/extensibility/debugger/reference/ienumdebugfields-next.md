@@ -1,5 +1,5 @@
 ---
-title: 'IEnumDebugFields:: Next |Microsoft Docs'
+title: IEnumデバッグフィールズ::次へ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d82a3b4ceafca7de2277a85b65b9d9ef98c31243
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727659"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716849"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 このメソッドは、列挙体から次の要素のセットを返します。
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>パラメーター
 `celt`\
-から取得する要素の数。 @No__t_0 配列の最大サイズも指定します。
+[in]取得する要素の数。 また、配列の最大サイズも`rgelt`指定します。
 
 `rgelt`\
-[入力、出力]入力する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)要素の配列。
+[イン、アウト]入力する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)要素の配列。
 
 `pceltFetched`\
-入出力@No__t_0 に実際に返された要素の数を返します。
+[アウト]で実際に返される要素の数`rgelt`を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 要求された要素数よりも小さい場合に `S_FALSE` を返します。それ以外の場合は、エラーコードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 返`S_FALSE`される要素の要求数より少ない場合は返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

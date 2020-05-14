@@ -1,5 +1,5 @@
 ---
-title: プロジェクトのアップグレード |Microsoft Docs
+title: プロジェクトのアップグレード |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,68 +7,68 @@ helpviewer_keywords:
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6a9e5b73315d8332c71e0fb7ddc3c6c1df041c3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344686"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704267"
 ---
 # <a name="upgrading-projects"></a>プロジェクトのアップグレード
 
-次の 1 つのバージョンの Visual Studio からプロジェクト モデルの変更は、新しいバージョンで実行できるようにプロジェクトおよびソリューションをアップグレードする必要があります。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]独自のプロジェクトのアップグレードのサポートを実装するために使用できるインターフェイスを提供します。
+Visual Studio のバージョンから次のバージョンへのプロジェクト モデルの変更では、新しいバージョンで実行できるように、プロジェクトとソリューションをアップグレードする必要があります。 には[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、独自のプロジェクトでアップグレード サポートを実装するために使用できるインターフェイスが用意されています。
 
-## <a name="upgrade-strategies"></a>アップグレードの戦略
+## <a name="upgrade-strategies"></a>アップグレード戦略
 
-アップグレードをサポートするには、プロジェクト システムの実装が定義し、アップグレードの戦略を実装する必要があります。 戦略を決定するのには、サイド バイ サイド (SxS) のバックアップ、バックアップのコピー、またはその両方をサポートするために選択できます。
+アップグレードをサポートするには、プロジェクト システムの実装でアップグレード戦略を定義し、実装する必要があります。 戦略を決定する際には、サイド バイ サイド (SxS) バックアップ、コピー バックアップ、またはその両方をサポートすることを選択できます。
 
-- SxS バックアップでは、プロジェクトがアップグレード インプレースでは、たとえば、適切なファイル名サフィックスを追加".old"必要があるファイルのみをコピーを意味します。
+- SxS バックアップとは、プロジェクトが適切なファイル名サフィックス (例: ".old" など) を追加して、その場でアップグレードする必要があるファイルのみをコピーすることを意味します。
 
-- コピー バックアップでは、プロジェクトが、ユーザーが指定したバックアップの場所へのすべてのプロジェクト項目をコピーすることを意味します。 元のプロジェクトの場所に関連するファイルは、アップグレードします。
+- コピー バックアップとは、プロジェクトがすべてのプロジェクト項目をユーザー指定のバックアップ場所にコピーすることを意味します。 その後、元のプロジェクトの場所にある関連ファイルがアップグレードされます。
 
-## <a name="how-upgrade-works"></a>アップグレードする方法の動作
+## <a name="how-upgrade-works"></a>アップグレードのしくみ
 
-新しいバージョンの Visual Studio の以前のバージョンで作成されたソリューションを開くと、IDE は、ソリューション ファイルをアップグレードする必要があるかどうかは決まりますをチェックします。 アップグレードが必要な場合、**アップグレード ウィザード**がアップグレードのプロセスを順を追ってに自動的に起動します。
+以前のバージョンの Visual Studio で作成されたソリューションを新しいバージョンで開くと、IDE はソリューション ファイルをチェックして、アップグレードが必要かどうかを判断します。 アップグレードが必要な場合は、**アップグレード ウィザード**が自動的に起動され、アップグレード プロセスが実行されます。
 
-ソリューションでは、アップグレードする必要があります、そのアップグレードの戦略の場合は、各プロジェクト ファクトリを照会します。 戦略は、プロジェクト ファクトリが、コピーまたは SxS のバックアップをサポートしているかどうかを判断します。 情報に送信、**アップグレード ウィザード**バックアップに必要な情報を収集およびユーザーに適切なオプションを表示します。
+ソリューションは、アップグレードが必要な場合、各プロジェクト ファクトリにアップグレード戦略を照会します。 この方針は、プロジェクトファクトリがコピーバックアップまたはSxSバックアップをサポートしているかどうかを決定します。 情報は **、バックアップ**に必要な情報を収集し、該当するオプションをユーザーに提示するアップグレード ウィザード に送信されます。
 
-### <a name="multi-project-solutions"></a>マルチ プロジェクト ソリューション
+### <a name="multi-project-solutions"></a>マルチプロジェクトソリューション
 
-ソリューションには、複数のプロジェクトが含まれています。 プロジェクト ファクトリがアップグレード戦略をネゴシエートする必要がありますのみ SxS のバックアップをサポートする C++ プロジェクトと Web プロジェクトのみバックアップ コピーをサポートするなど、アップグレードの戦略が異なる場合。
+ソリューションに複数のプロジェクトが含まれ、アップグレード方法が異なる場合 (SxS バックアップのみをサポートする C++ プロジェクトとコピー バックアップのみをサポートする Web プロジェクトの場合など)、プロジェクト ファクトリはアップグレード戦略をネゴシエートする必要があります。
 
-ソリューションのクエリの各プロジェクト ファクトリ<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>します。 呼び出して<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A>グローバル プロジェクト ファイルのアップグレードに必要なかどうかを参照して、サポートされているアップグレードの戦略を決定します。 **アップグレード ウィザード**呼び出されます。
+ソリューションは、各プロジェクト ファクトリに<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>対して を照会します。 次に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A>グローバル プロジェクト ファイルのアップグレードが必要かどうかを確認し、サポートされているアップグレード方法を決定する呼び出しを行います。 **アップグレード ウィザード**が起動されます。
 
-ユーザーが、ウィザードを完了した後<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>は実際のアップグレードを実行するには、各プロジェクト ファクトリに対して呼び出されます。 IVsProjectUpgradeViaFactory メソッドを提供するバックアップを容易に、<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>アップグレード プロセスの詳細を記録するサービス。 このサービスをキャッシュすることはできません。
+ユーザーがウィザードを完了すると、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>各プロジェクト ファクトリで実際のアップグレードを実行するように呼び出されます。 バックアップを容易にするために、IVsProjectUpgradeViaFactory メソッド<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>は、アップグレード プロセスの詳細をログに記録するサービスを提供します。 このサービスはキャッシュできません。
 
-関連するすべてのグローバル ファイルを更新した後は、各プロジェクト ファクトリは、プロジェクトをインスタンス化を選択できます。 プロジェクトの実装をサポートする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>すべての関連するプロジェクト項目のアップグレードにはメソッドが呼び出されます。
+関連するすべてのグローバル ファイルを更新した後、各プロジェクト ファクトリはプロジェクトのインスタンス化を選択できます。 プロジェクトの実装では、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>をサポートする必要があります。 この<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>メソッドは、関連するすべてのプロジェクト項目をアップグレードするために呼び出されます。
 
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドが SVsUpgradeLogger サービスを提供できません。 このサービスを呼び出すことによって取得できる<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>します。
+> この<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドは、SVsUpgradeLogger サービスを提供しません。 このサービスは、 を呼<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>び出すことによって取得できます。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>編集する前にファイルを編集することができ、保存する前に保存できるかどうかにチェックするサービス。 これにより、バックアップと、アップグレードの実装がソース管理下にあるプロジェクト ファイル、権限の不足などのファイルを処理します。
+このサービス<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>を使用して、編集前にファイルを編集できるかどうか、および保存前に保存できるかどうかを確認します。 これにより、バックアップおよびアップグレードの実装で、ソース管理下のプロジェクト ファイルや、アクセス許可が不十分なファイルなどを処理できます。
 
-使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>バックアップのすべてのフェーズ中にサービスし、アップグレード、アップグレード処理の成否に関する情報を提供します。
+アップグレード<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>プロセスの成功または失敗に関する情報を提供するには、バックアップとアップグレードのすべてのフェーズでサービスを使用します。
 
-バックアップして、プロジェクトのアップグレードの詳細については、コメントを参照して IVsProjectUpgrade の vsshell2.idl でします。
+プロジェクトのバックアップとアップグレードの詳細については、vsshell2.idl の IVsProjectUpgrade のコメントを参照してください。
 
-## <a name="upgrading-custom-projects"></a> カスタム プロジェクトのアップグレード
+## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a>カスタム プロジェクトのアップグレード
 
-プロジェクト ファイルに永続化されている情報を、ご使用の製品の異なる Visual Studio バージョン間で変更する場合、プロジェクト ファイルの旧バージョンから新しいバージョンへのアップグレードをサポートする必要があります。 参加するためのアップグレードをサポートするために、 **Visual Studio 変換ウィザード**、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>インターフェイス。 このインターフェイスにはコピーのアップグレードに使用できる機能しか含まれていません。 プロジェクトのアップグレードは、ソリューションを開くことの一部として行われます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスはプロジェクト ファクトリによって実装されます。あるいは、少なくともプロジェクト ファクトリから取得できる必要があります。
+プロジェクト ファイルに永続化されている情報を、ご使用の製品の異なる Visual Studio バージョン間で変更する場合、プロジェクト ファイルの旧バージョンから新しいバージョンへのアップグレードをサポートする必要があります。 **Visual Studio 変換ウィザード**に参加できるアップグレードをサポートするには、インターフェイスを実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>します。 このインターフェイスにはコピーのアップグレードに使用できる機能しか含まれていません。 プロジェクトのアップグレードは、ソリューションを開くことの一部として行われます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスはプロジェクト ファクトリによって実装されます。あるいは、少なくともプロジェクト ファクトリから取得できる必要があります。
 
-<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスを使用する従来の機能は引き続きサポートされますが、概念上はプロジェクトを開くことの一部としてプロジェクト システムをアップグレードします。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>インターフェイスが Visual Studio 環境のいてによって呼び出されるため、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>インターフェイスが呼び出されるかを実装します。 この方法なら、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> を使用してプロジェクトのコピーとアップグレードの部分だけを実装できます。そして、残りの作業を <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスが一括 (通常は新しい場所) で実行するよう委任できます。
+<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスを使用する従来の機能は引き続きサポートされますが、概念上はプロジェクトを開くことの一部としてプロジェクト システムをアップグレードします。 したがって<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>、インターフェイスは、呼び出された場合や実装されている<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>場合でも、Visual Studio 環境によって呼び出されます。 この方法なら、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> を使用してプロジェクトのコピーとアップグレードの部分だけを実装できます。そして、残りの作業を <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスが一括 (通常は新しい場所) で実行するよう委任できます。
 
-実装のサンプルについて<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>を参照してください[VSSDK のサンプル](https://aka.ms/vs2015sdksamples)します。
+の実装例<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>については、「 [VSSDK サンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)」を参照してください。
 
 プロジェクトのアップグレードに伴って次の状況が発生します。
 
-- プロジェクトがサポートできるものよりもファイルの形式が新しい場合、そのことを示すエラーを返す必要があります。 これは、古いバージョン製品にはのバージョンを確認するためのコードが含まれていると仮定します。
+- プロジェクトがサポートできるものよりもファイルの形式が新しい場合、そのことを示すエラーを返す必要があります。 この場合、古いバージョンの製品には、バージョンを確認するコードが含まれていることを前提としています。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> フラグが <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> メソッドで指定された場合、アップグレードはプロジェクトを開く前に一括アップグレードとして実装されます。
 
@@ -98,11 +98,11 @@ ms.locfileid: "66344686"
 
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade の実装
 
-プロジェクト システムを実装する場合<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>に参加しないできますのみ、 **Visual Studio 変換ウィザード**します。 ただし、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスを実装しても、ファイルのアップグレードを <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> の実装に委任することはできます。
+プロジェクト システムが<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>実装されている場合は **、Visual Studio 変換ウィザード**に参加できません。 ただし、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスを実装しても、ファイルのアップグレードを <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> の実装に委任することはできます。
 
 #### <a name="to-implement-ivsprojectupgrade"></a>IVsProjectUpgrade を実装するには
 
-1. ユーザーがプロジェクトを開こうとするときには、プロジェクトが開かれてから、プロジェクト上で他の何らかのユーザー アクションが実行できるようになるまでの間に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> メソッドが環境によって呼び出されます。 既にユーザーに対してソリューションをアップグレードするよう促すダイアログが表示された場合、<xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> フラグが `grfUpgradeFlags` のパラメーターで渡されます。 ユーザー、プロジェクトを開く、直接このような場合を使用して同様、**既存プロジェクトの追加**コマンド、<xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>フラグが渡されないと、プロジェクトをアップグレードするユーザーに確認する必要があります。
+1. ユーザーがプロジェクトを開こうとするときには、プロジェクトが開かれてから、プロジェクト上で他の何らかのユーザー アクションが実行できるようになるまでの間に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> メソッドが環境によって呼び出されます。 既にユーザーに対してソリューションをアップグレードするよう促すダイアログが表示された場合、<xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> フラグが `grfUpgradeFlags` のパラメーターで渡されます。 **[既存プロジェクトの追加]** コマンドを使用するなどしてユーザーがプロジェクトを直接開いた場合<xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>、フラグは渡されず、プロジェクトはユーザーにアップグレードを求めるメッセージを表示する必要があります。
 
 2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> の呼び出しに応じて、プロジェクトはプロジェクト ファイルがアップグレードされているかどうかを評価する必要があります。 プロジェクトがプロジェクトの種類を新しいバージョンにアップグレードする必要がない場合は、単に <xref:Microsoft.VisualStudio.VSConstants.S_OK> フラグを返すことができます。
 
@@ -112,7 +112,7 @@ ms.locfileid: "66344686"
 
     - `pfEditCanceled` パラメーターで返される `VSQueryEditResult` 値が <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> であり、`VSQueryEditResult` 値に <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc> のビットが設定されている場合、ユーザーがアクセス許可の問題を自分で解決する必要があるため、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> はエラーを返す必要があります。 次いでプロジェクトは次の操作を行う必要があります。
 
-         呼び出すことによって、ユーザーに、エラーを報告<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>戻って、<xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED>エラー コードを<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>します。
+         ユーザーに対して呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>を行って<xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED>エラーを報告<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>し、エラー コードを に返します。
 
     - `VSQueryEditResult` 値が <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> で、`VSQueryEditResultFlags` 値に <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> ビットが設定されている場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>、<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>、...) を呼び出してプロジェクト ファイルをチェックアウトする必要があります。
 
@@ -140,7 +140,7 @@ ms.locfileid: "66344686"
 
 - 独自のプロジェクトの再度読み込みを処理する場合、環境は <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT) の実装を呼び出します。 この呼び出しを受け取ったら、プロジェクトの最初のインスタンス (Project1) を再度読み込んで、プロジェクト ファイルのアップグレードを続けてください。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) で `true` を返せば、環境は独自のプロジェクト再度読み込みが処理されることがわかります。
 
-- 独自のプロジェクト再度読み込みを処理しない場合は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) で `false` を返してください。 この場合は、前に<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting、QEF_DisallowInMemoryEdits) を返します、環境が次のように Project2 など、プロジェクトのもう 1 つの新しいインスタンスを作成します。
+- 独自のプロジェクト再度読み込みを処理しない場合は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) で `false` を返してください。 この場合、(QEF_ForceEdit_NoPrompting、QEF_DisallowInMemoryEdits)が返される前<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>に、環境はプロジェクトの新しいインスタンスを作成します(たとえば Project2)。
 
     1. 環境は、最初のプロジェクト オブジェクト (Project1) で <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> を呼び出し、このオブジェクトを非アクティブ状態にします。
 
@@ -161,23 +161,23 @@ ms.locfileid: "66344686"
 
 ## <a name="upgrading-project-items"></a>プロジェクト項目のアップグレード
 
-追加またはを実装していないプロジェクト システム内の項目を管理する場合は、プロジェクトのアップグレード プロセスに参加する必要があります。 Crystal Reports は、プロジェクト システムに追加できる項目の例を示します。
+実装していないプロジェクト システム内で項目を追加または管理する場合は、プロジェクトのアップグレード プロセスに参加する必要があります。 クリスタル レポートは、プロジェクト システムに追加できる項目の例です。
 
-通常、プロジェクト項目の実装者は、参照は、どのようなプロジェクトとその他のプロジェクトのプロパティは何がアップグレードの決定を行う必要があるため、既に完全インスタンス化とアップグレードされたプロジェクトを活用します。
+通常、プロジェクト項目の実装者は、プロジェクト参照が何であるか、およびアップグレードの決定を行うために他にどのようなプロジェクト プロパティがあるかを知る必要があるため、既に完全にインスタンス化され、アップグレードされたプロジェクトを活用する必要があります。
 
 ### <a name="to-get-the-project-upgrade-notification"></a>プロジェクトのアップグレード通知を取得するには
 
-1. 設定、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading>プロジェクト項目の実装では、(vsshell80.idl で定義されている) フラグ。 これにより、プロジェクト システムは、アップグレードの過程において、Visual Studio シェルと判断した場合、自動読み込みを VSPackage プロジェクト項目。
+1. プロジェクト項目<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading>の実装でフラグ (vsshell80.idl で定義) を設定します。 これにより、プロジェクト の項目 VSPackage は、Visual Studio シェルがプロジェクト システムがアップグレードの処理中であると判断したときに自動的に読み込まれます。
 
-2. お勧め、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>インターフェイスを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A>メソッド。
+2. メソッドを<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>介してインターフェイス<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A>をアドバイスします。
 
-3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>プロジェクト システムの実装のアップグレード操作が完了したら、新しいアップグレードされたプロジェクトが作成した後、インターフェイスが発生します。 シナリオによっては、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>インターフェイスが発生した後、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>、または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>メソッド。
+3. この<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>インターフェイスは、プロジェクト システムの実装がアップグレード操作を完了し、新しいアップグレードされたプロジェクトが作成された後に起動されます。 シナリオに<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>応じて、インターフェイスは<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>、 、または メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>の後に<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>起動されます。
 
-### <a name="to-upgrade-the-project-item-files"></a>プロジェクト項目のファイルをアップグレードするには
+### <a name="to-upgrade-the-project-item-files"></a>プロジェクト項目ファイルをアップグレードするには
 
-1. プロジェクト項目の実装で、ファイルのバックアップ プロセスを慎重に管理する必要があります。 サイド バイ サイドでバックアップの場合は、具体的には適用される場所、`fUpgradeFlag`のパラメーター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドに設定されている<xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>".old"として指定される側のファイルにバックアップされたファイルを配置する場所。 プロジェクトがアップグレードされたシステム時刻よりも古いバックアップ ファイルは、古いものとして指定できます。 さらに、これを防ぐために特定の手順を実行していない限り、このを上書き可能性があります。
+1. プロジェクト項目の実装でファイルバックアッププロセスを慎重に管理する必要があります。 これは特に、`fUpgradeFlag`<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドのパラメータが<xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>に設定されているサイド バイ サイド バックアップに当てはまります。 プロジェクトがアップグレードされたシステム時刻より古いバックアップ ファイルを古いものとして指定できます。 さらに、これを防ぐために特定の手順を実行しない限り、上書きされる可能性があります。
 
-2. プロジェクト項目がプロジェクトのアップグレードの通知を取得時に、 **Visual Studio 変換ウィザード**が引き続き表示されます。 そのためのメソッドを使用する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>ウィザードの UI にアップグレード メッセージを提供するインターフェイス。
+2. プロジェクト項目がプロジェクトのアップグレードの通知を受け取った時点で **、Visual Studio 変換ウィザード**が表示されます。 したがって、ウィザード UI にアップグレード<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>メッセージを提供するインターフェイスのメソッドを使用する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

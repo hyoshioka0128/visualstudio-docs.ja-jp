@@ -9,23 +9,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295786"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851608"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>手順 1: Windows フォーム アプリケーション プロジェクトの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ピクチャ ビューアーを作成する場合、最初の手順は、Windows フォーム アプリケーション プロジェクトを作成することです。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](https://go.microsoft.com/fwlink/?LinkId=205209)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](https://go.microsoft.com/fwlink/?LinkId=205199)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+ ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版については、「[チュートリアル 1: Visual Basic でのピクチャビューアーの作成](https://msdn.microsoft.com/vbasic/gg315352.aspx)-ビデオ1」または「[チュートリアル 1 C# : ピクチャビューアーの作成-ビデオ 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx)」を参照してください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Windows フォーム アプリケーション プロジェクトを作成するには
 
-1. メニュー バーで、 **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。 ダイアログ ボックスは次のようになります。
+1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。 ダイアログ ボックスは次のようになります。
 
      [![新しいプロジェクト] ダイアログ](../ide/media/newprojectdialogcallouts.png "Newprojectのコールアウト")[新しいプロジェクト] ダイアログボックス
 

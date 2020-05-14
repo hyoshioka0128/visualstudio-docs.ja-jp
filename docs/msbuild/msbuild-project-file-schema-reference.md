@@ -10,25 +10,29 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, file schema
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49c2198a4ecc40a40e3f5f6414bfd4af47279b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842293"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263101"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild プロジェクト ファイル スキーマ リファレンス
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML スキーマのすべての要素と、使用可能な属性および子要素をまとめた表を提供します。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はプロジェクト ファイルを使用して、ビルド エンジンに何をどのようにビルドするかを指示します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML スキーマに準拠した XML ファイルです。 このセクションでは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の XML スキーマ定義 (*.xsd*) ファイルについて説明します。
+MSBuild XML スキーマのすべての要素と、使用可能な属性および子要素をまとめた表を提供します。
+
+ MSBuild ではプロジェクト ファイルを使用して、ビルド エンジンに何をどのようにビルドするかを指示します。 MSBuild プロジェクト ファイルは、MSBuild XML スキーマに準拠した XML ファイルです。 このセクションでは、MSBuild の XML スキーマ定義 ( *.xsd*) ファイルについて説明します。
+
+MSBuild プロジェクト ファイルのスキーマ リンクは、Visual Studio 2017 以降では必要ありません。 存在する場合は、Visual Studio のバージョンに関係なく ` http://schemas.microsoft.com/developer/msbuild/2003` である必要があります。
 
 ## <a name="msbuild-xml-schema-elements"></a>MSBuild XML スキーマの要素
- 次の表に、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML スキーマのすべての要素、および子要素と属性を示します。
+
+ 次の表に、MSBuild XML スキーマのすべての要素と、その子要素および属性を示します。
 
 |要素|子要素|属性|
 |-------------|--------------------|----------------|
@@ -48,14 +52,15 @@ ms.locfileid: "62842293"
 |[ProjectExtensions 要素 (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property 要素 (MSBuild)](../msbuild/property-element-msbuild.md)|--|条件|
 |[PropertyGroup 要素 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|条件|
-|[Sdk 要素 (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|name<br /><br /> Version|
-|[Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *タスク*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 条件<br /><br /> DependsOnTargets<br /><br /> 受け取る値<br /><br /> KeepDuplicateOutputs<br /><br /> name<br /><br /> 出力<br /><br /> 戻り値|
-|[Task 要素 (MSBuild)](../msbuild/task-element-msbuild.md)|Output|条件<br /><br /> ContinueOnError<br /><br /> *パラメーター*|
-|[TaskBody 要素 (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*データ*|評価|
-|[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 条件<br /><br /> TaskFactory<br /><br /> TaskName|
+|[Sdk 要素 (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|名前<br /><br /> バージョン|
+|[Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *タスク*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 条件<br /><br /> DependsOnTargets<br /><br /> 受け取る値<br /><br /> KeepDuplicateOutputs<br /><br /> 名前<br /><br /> 出力<br /><br /> 戻り値|
+|[Target の Task 要素 (MSBuild)](../msbuild/task-element-msbuild.md)|Output|条件<br /><br /> ContinueOnError<br /><br /> *パラメーター*|
+|[UsingTask の Task 要素 (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*データ*|評価|
+|[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> タスク|AssemblyFile<br /><br /> AssemblyName<br /><br /> 条件<br /><br /> TaskFactory<br /><br /> TaskName|
 |[When 要素 (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|条件|
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [条件](../msbuild/msbuild-conditions.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

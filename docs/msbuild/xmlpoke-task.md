@@ -11,17 +11,17 @@ helpviewer_keywords:
 - XmlPoke task [MSBuild]
 - MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777617"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072505"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke タスク
 
@@ -31,9 +31,9 @@ XML ファイルに XPath クエリで指定された値を設定します。
 
  `XmlPoke` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
-|`Namespaces`|省略可能な `String` 型のパラメーターです。<br /><br /> XPath クエリ プレフィックスの名前空間を指定します。 `Namespaces` は、属性 `Prefix` と `Uri` を持つ `Namespace` 要素で構成される XML スニペットです。 属性 `Prefix` では、`Uri` 属性で指定された名前空間に関連付けるプレフィックスを指定します。 空の `Prefix` は使用しないでください。|
+|`Namespaces`|省略可能な `String` 型のパラメーターです。<br /><br /> XPath クエリ プレフィックスの名前空間を指定します。 `Namespaces` は、属性 `Namespace` と `Prefix` を持つ `Uri` 要素で構成される XML スニペットです。 属性 `Prefix` では、`Uri` 属性で指定された名前空間に関連付けるプレフィックスを指定します。 空の `Prefix` は使用しないでください。|
 |`Query`|省略可能な `String` 型のパラメーターです。<br /><br /> XPath クエリを指定します。|
 |`Value`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 指定されたパスに挿入する値を指定します。|
 |`XmlInputPath`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> XML 入力をファイル パスとして指定します。|
@@ -55,7 +55,7 @@ XML ファイルに XPath クエリで指定された値を設定します。
 </Package>
 ```
 
-この例では、`/Package/mp:PhoneIdentity/PhonePublisherId` を変更する場合、以下を使用します。
+この例では、`/Package/mp:PhoneIdentity/PhoneProductId` を変更する場合、以下を使用します。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -79,7 +79,7 @@ XML ファイルに XPath クエリで指定された値を設定します。
 
 ここでは、既定の名前空間の人為的な名前空間プレフィックスとして `dn` が使用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

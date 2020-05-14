@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b023ad4b14d6c890c14726f645a2ebf3c99f6f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666261"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596204"
 ---
 # <a name="options-text-editor-file-extension"></a>[オプション]、[テキスト エディター]、[ファイル拡張子]
 
@@ -30,7 +30,7 @@ ms.locfileid: "72666261"
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
-**拡張機能**
+**拡張子**
 
 IDE の [使用したエディター] を定義するファイル拡張子を入力します。
 
@@ -58,6 +58,6 @@ IDE の [使用したエディター] を定義するファイル拡張子を入
 
 **[エディター]** と同じ一覧を提供します。 ファイル拡張子のない文書を開く IDE のエディターまたはデザイナーを選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [方法: エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)
+- [方法 : エディター モードを管理する](../../ide/how-to-manage-editor-modes.md)

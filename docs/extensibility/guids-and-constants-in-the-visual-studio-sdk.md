@@ -1,32 +1,32 @@
 ---
-title: Visual Studio SDK の Guid と定数 |Microsoft Docs
+title: の GUID と定数の SDK|マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77674faa43ce687fcd3df4412437ecb5cda10dd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ecb443f3b5d6dd7b45d8dd77a8739b12b8891832
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342237"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711144"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Visual Studio SDK の Guid と定数
-<xref:Microsoft.VisualStudio.VSConstants>クラスは、選択した環境の Guid や定数へのアクセスを提供します。
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>の GUID と定数の SDK
+この<xref:Microsoft.VisualStudio.VSConstants>クラスは、環境 GUID と定数の選択にアクセスできるようにします。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [IDE Guid](../extensibility/ide-guids.md)によって提供される Guid の一覧<xref:Microsoft.VisualStudio.VSConstants>します。
+- [IDE GUID](../extensibility/ide-guids.md)によって提供される GUID<xref:Microsoft.VisualStudio.VSConstants>の一覧が表示されます。
 
-- [IDE 定数](../extensibility/ide-constants.md)で提供される SDK のリストの定数<xref:Microsoft.VisualStudio.VSConstants>します。
+- [IDE 定数](../extensibility/ide-constants.md)によって<xref:Microsoft.VisualStudio.VSConstants>提供される SDK 定数の一覧です。
 
 ## <a name="related-sections"></a>関連項目
-- [マネージ コードの COM 定数](../extensibility/com-constants-in-managed-code.md)マネージ コードの管理パッケージ フレームワーク (MPF) からのリスト、標準の COM 定数を使用できます。
+- [マネージ コード内の COM 定数](../extensibility/com-constants-in-managed-code.md)マネージ パッケージ フレームワーク (MPF) からマネージ コードで使用できる標準 COM 定数を示します。
 
-- [プロジェクト システムを拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)さまざまな種類のプロジェクト システムを拡張するために使用されるコマンド項目を一覧表示されます。
+- [プロジェクトシステムを拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)プロジェクト システムの拡張に使用されるさまざまな種類のコマンド項目を示します。

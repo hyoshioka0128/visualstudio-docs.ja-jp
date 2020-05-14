@@ -3,17 +3,17 @@ title: '方法: 基本的なテクスチャ シェーダーを作成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b4aa042e3ba51621e43ee2f531364135179c02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac74155b8de4669d959d9b14e9be20ada2ec51d9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635873"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589475"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>方法: 基本的なテクスチャ シェーダーを作成する
 

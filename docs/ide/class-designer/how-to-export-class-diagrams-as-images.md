@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bceb724784f70e3b1c527507eb7d837558c7d0f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac469b913b03dec9389b3f44121c2e80d87d30b3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590138"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>方法: イメージとしてクラス ダイアグラムをエクスポートする
+# <a name="how-to-export-class-diagrams-as-images"></a>方法: クラス ダイアグラムをイメージとしてエクスポートする
 
 プロジェクトのコードから作成されたクラス ダイアグラムをエクスポートするには、ダイアグラムをイメージとして保存します。 代わりに UML クラス ダイアグラムをエクスポートする場合は、「[イメージとしてダイアグラムをエクスポートする](../../modeling/export-diagrams-as-images.md)」を参照してください。
 
@@ -37,7 +37,7 @@ ms.locfileid: "72631742"
 
 他のドキュメントからリンクされているエクスポート済みイメージを自動的に更新するには、Visual Studio でもう一度ダイアグラムをエクスポートします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: クラス ダイアグラムを印刷する](how-to-print-class-diagrams.md)
 - [クラス ダイアグラムの使用](designing-and-viewing-classes-and-types.md)

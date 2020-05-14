@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647795"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892776"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターの他の言語のサポートの追加
 
@@ -92,3 +92,5 @@ TextMate 文法の作成方法の詳細については、「[TextMate - Introduc
 - [言語サーバー プロトコルの拡張機能の追加](../extensibility/adding-an-lsp-extension.md)
 - [チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)
 - [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)
+- [コード例: TextMate 文法](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [コード例: カスタム言語サポート](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

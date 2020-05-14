@@ -8,26 +8,24 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647466"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579778"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>手順 7: 乗算問題と除算問題の追加
 
 このチュートリアルの第 7 部では、乗算問題と除算問題を追加しますが、まず変更方法について考えてみます。 最初の手順は、値を格納することです。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。
-> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
-> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ## <a name="to-add-multiplication-and-division-problems"></a>乗算問題と除算問題を追加するには
 
@@ -60,7 +58,7 @@ ms.locfileid: "72647466"
      次の図に示すように、クイズの受け手はクイズを完了するためには 4 つの問題に答える必要があります。
 
      ![4 つの問題がある計算クイズ](../ide/media/express_finishedquiz.png)<br/>
-***4 つの問題がある****計算クイズ*
+***4 つの問題がある*** *計算クイズ*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

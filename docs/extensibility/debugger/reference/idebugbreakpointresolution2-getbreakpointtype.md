@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType |Microsoft Docs
+title: Iデバッグブレークポイントの解像度2:::ブレークポイントの種類を取得する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e8d7c77b9020df577e611f8a27116fa7a7b6db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352879"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734811"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-この解像度によって表されるブレークポイントの種類を取得します。
+この解像度で表されるブレークポイントの種類を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>パラメーター
 `pBPType`\
-[out]値を返します、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)このブレークポイントの種類を指定する列挙体。
+[アウト]このブレークポイントの種類を指定する[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列挙体の値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 E_FAIL が返された場合、`bpResLocation`フィールドに関連付けられている[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造が無効です。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 関連付けられている`bpResLocation`[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のフィールドが有効でない場合に、E_FAILを返します。
 
 ## <a name="remarks"></a>Remarks
-ブレークポイントは、たとえば、コードまたはデータ ブレークポイントを指定できます。
+ブレークポイントは、コードまたはデータ ブレークポイントなどです。
 
 ## <a name="example"></a>例
-次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugBreakpointResolution`を公開するオブジェクト、 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)インターフェイス。
+インターフェイスを公開する単純な`CDebugBreakpointResolution`オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)示します。
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

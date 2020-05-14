@@ -1,25 +1,25 @@
 ---
-title: コードの列挙子をコマンド |Microsoft Docs
+title: コマンド コード列挙子 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4ec14c15bbd0aa6340e30e3156e714ba5f9e074
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334967"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739785"
 ---
-# <a name="command-code-enumerator"></a>コマンド コードの列挙子
-この列挙子は、オプションの使用、 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)と[SccPopulateList](../extensibility/sccpopulatelist-function.md)にオプションが指定されていることを示します。
+# <a name="command-code-enumerator"></a>コマンド コード列挙子
+この列挙子は、オプションを指定するコマンドを示すために[、SccGet コマンド オプション](../extensibility/sccgetcommandoptions-function.md)と[SccPopulateList](../extensibility/sccpopulatelist-function.md)のオプションで使用されます。
 
 ## <a name="syntax"></a>構文
 
@@ -40,27 +40,27 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>メンバー
-SCC_COMMAND_GET に対応する、 [SccGet](../extensibility/sccget-function.md)します。
+SCC_COMMAND_GET [SccGet](../extensibility/sccget-function.md)に対応しています。
 
-SCC_COMMAND_CHECKOUT に対応する、 [SccCheckout](../extensibility/scccheckout-function.md)します。
+SCC_COMMAND_CHECKOUT [SccCheckout](../extensibility/scccheckout-function.md)に対応しています。
 
-SCC_COMMAND_CHECKIN に対応する、 [SccCheckin](../extensibility/scccheckin-function.md)します。
+SCC_COMMAND_CHECKIN [SccCheckin](../extensibility/scccheckin-function.md)に対応しています。
 
-SCC_COMMAND_UNCHECKOUT に対応する、 [SccUncheckout](../extensibility/sccuncheckout-function.md)します。
+SCC_COMMAND_UNCHECKOUT [SccUncheckout](../extensibility/sccuncheckout-function.md)に対応しています。
 
-SCC_COMMAND_ADD に対応する、 [SccAdd](../extensibility/sccadd-function.md)します。
+SCC_COMMAND_ADD [SccAdd](../extensibility/sccadd-function.md)に対応しています。
 
-SCC_COMMAND_REMOVE に対応する、 [SccRemove](../extensibility/sccremove-function.md)します。
+SCC_COMMAND_REMOVE [SccRemove](../extensibility/sccremove-function.md)に対応しています。
 
-SCC_COMMAND_DIFF に対応する、 [SccDiff](../extensibility/sccdiff-function.md)します。
+SCC_COMMAND_DIFF [SccDiff](../extensibility/sccdiff-function.md)に対応しています。
 
-SCC_COMMAND_HISTORY に対応する、 [SccHistory](../extensibility/scchistory-function.md)します。
+SCC_COMMAND_HISTORY [SccHistory](../extensibility/scchistory-function.md)に対応しています。
 
-SCC_COMMAND_RENAME に対応する、 [SccRename](../extensibility/sccrename-function.md)します。
+SCC_COMMAND_RENAME 名前の[変更](../extensibility/sccrename-function.md)に対応します。
 
-SCC_COMMAND_PROPERTIES に対応する、 [SccProperties](../extensibility/sccproperties-function.md)します。
+SCC_COMMAND_PROPERTIES [SccProperties](../extensibility/sccproperties-function.md)に対応しています。
 
-SCC_COMMAND_OPTIONS に対応する、 [SccSetOption](../extensibility/sccsetoption-function.md)します。
+[SCC_COMMAND_OPTIONSSccSet オプション](../extensibility/sccsetoption-function.md)に対応しています。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)

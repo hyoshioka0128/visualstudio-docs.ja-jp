@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254545"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75846819"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio テスト エクスプローラーに関する FAQ
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 では特徴によるグループ化はどこにありますか?
-この特徴によるグループ化は移動され、列となりました。 Visual Studio 2019 バージョン 16.2 のカスタマイズ可能な多層階層では、グループ化として特徴を含めることは不要なビジュアルの複雑さを生み出すと我々は考えました。 この設計に関するフィードバックをお待ちしております。 https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+この特徴によるグループ化は移動され、列となりました。 Visual Studio 2019 バージョン 16.2 のカスタマイズ可能な多層階層では、グループ化として特徴を含めることは不要なビジュアルの複雑さを生み出すと我々は考えました。 この設計に関するフィードバックをお待ちしております。 [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
 
 現時点では、テスト エクスプローラーで列を右クリックし、[列] を選択します。 [特徴] 列をチェックすると、テスト エクスプローラーに表示されます。 これで、この列を関心がある特徴別にフィルター処理できます。
 
@@ -41,9 +41,9 @@ ms.locfileid: "71254545"
 プロジェクトをビルドし、アセンブリベースの検出を実行します。
 ::: moniker-end
 ::: moniker range="vs-2017"
-プロジェクトをビルドし、 **[ツール]** > **[オプション]** > **[テスト]** で、アセンブリベースの検出がオンになっていることを確認します。
+プロジェクトをビルドし、 **[ツール]** > **[オプション]** > **[テスト]** でアセンブリベースの検出がオンになっていることを確認します。
 ::: moniker-end
-[リアルタイムのテスト検出](https://go.microsoft.com/fwlink/?linkid=862824)は、ソース ベースのテストの検出です。 理論、カスタム アダプター、カスタム特性、`#ifdef` ステートメントなどは実行時に定義されるため、これらを使うテストは検出できません。 これらのテストを正確に検出するには、ビルドが必要です。 Visual Studio 2017 バージョン 15.6 以降では、アセンブリベースの検出 (従来の検出プログラム) はビルドの後にのみ実行されます。 この設定は、リアルタイムのテスト検出は、ユーザーが編集中にできるだけ多くのテストを検出し、アセンブリベースの検出では、ビルド後に動的に定義されたテストを表示できるようにすることを意味します。 リアルタイムのテスト検出は、応答性を高めながら、ビルド後に完全かつ正確な結果を得ることができます。
+[リアルタイムのテスト検出](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)は、ソース ベースのテストの検出です。 理論、カスタム アダプター、カスタム特性、`#ifdef` ステートメントなどは実行時に定義されるため、これらを使うテストは検出できません。 これらのテストを正確に検出するには、ビルドが必要です。 Visual Studio 2017 バージョン 15.6 以降では、アセンブリベースの検出 (従来の検出プログラム) はビルドの後にのみ実行されます。 この設定は、リアルタイムのテスト検出は、ユーザーが編集中にできるだけ多くのテストを検出し、アセンブリベースの検出では、ビルド後に動的に定義されたテストを表示できるようにすることを意味します。 リアルタイムのテスト検出は、応答性を高めながら、ビルド後に完全かつ正確な結果を得ることができます。
 
 ## <a name="test-explorer--plus-symbol"></a>テスト エクスプローラーの '+' (プラス) 記号
 
@@ -58,7 +58,7 @@ ms.locfileid: "71254545"
 
 **プロジェクトでアセンブリベースの検出が機能しなくなりました。元に戻すにはどうしたらよいですか?**
 
-**[ツール]** > **[オプション]** > **[テスト]** に進み、 **[ビルド後にビルド済みアセンブリからテストをさらに探索する]** ボックスを選択します。
+**[ツール]** > **[オプション]** > **[テスト]** の順に移動して、 **[ビルド後にビルド済みアセンブリからテストをさらに探索する]** チェック ボックスをオンにします。
 
 ![アセンブリベースのオプション](media/testex-toolsoptions.png)
 ::: moniker-end
@@ -67,13 +67,13 @@ ms.locfileid: "71254545"
 
 **プロジェクトをビルドしなくても、入力中にテストがテスト エクスプローラーに表示されるようになりました。何か変更されたのでしょうか?**
 
-この機能は、[リアルタイムのテスト検出](https://go.microsoft.com/fwlink/?linkid=862824)と呼ばれます。 これは Roslyn アナライザーを使用してテストを検出し、リアルタイムでテスト エクスプローラーに表示します。プロジェクトをビルドする必要はありません。 理論やカスタム特性など、動的に定義されるテストのテスト検出動作の詳細は、「[動的なテストの検出](#dynamic-test-discovery)」を参照してください。
+この機能は、[リアルタイムのテスト検出](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)と呼ばれます。 これは Roslyn アナライザーを使用してテストを検出し、リアルタイムでテスト エクスプローラーに表示します。プロジェクトをビルドする必要はありません。 理論やカスタム特性など、動的に定義されるテストのテスト検出動作の詳細は、「[動的なテストの検出](#dynamic-test-discovery)」を参照してください。
 
 ## <a name="real-time-test-discovery-compatibility"></a>リアルタイムのテスト検出の互換性
 
 **リアルタイムのテスト検出では、どの言語およびテスト フレームワークを使用できますか?**
 
-[リアルタイムのテスト検出](https://go.microsoft.com/fwlink/?linkid=862824)は、Roslyn コンパイラを使用してビルドされているため、マネージド言語 (C# および Visual Basic) に対してのみ機能します。 今のところ、リアルタイムのテスト検出は xUnit、NUnit、MSTest のフレームワークに対してのみ機能します。
+[リアルタイムのテスト検出](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)は、Roslyn コンパイラを使用してビルドされているため、マネージド言語 (C# および Visual Basic) に対してのみ機能します。 今のところ、リアルタイムのテスト検出は xUnit、NUnit、MSTest のフレームワークに対してのみ機能します。
 
 ## <a name="test-explorer-logs"></a>テスト エクスプローラーのログ
 

@@ -15,11 +15,11 @@
   items:
     - name: コンソール アプリを作成する
       href: tutorial-console.md
-    - name: UWP アプリの作成
+    - name: UWP アプリを作成する
       href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: WPF アプリを作成する
       href: tutorial-wpf.md
-    - name: Web アプリの作成
+    - name: Web アプリを作成する
       href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
     - name: Windows フォーム アプリを作成する
       href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
@@ -36,7 +36,7 @@
       href: ../visual-basic/tutorial-debugger.md
     - name: 単体テスト
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: プロジェクトを配置する
+    - name: プロジェクトのデプロイ
       href: ../../deployment/index.yml
     - name: データにアクセスする
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json

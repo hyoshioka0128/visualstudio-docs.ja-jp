@@ -5,24 +5,31 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653428"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880183"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>方法: テスト エージェントを設定して、デスクトップと対話するテストを実行する
 
+::: moniker range="vs-2017"
 デスクトップと対話する自動テストを実行する場合、エージェントをサービスではなくプロセスとして実行されるように設定する必要があります。 たとえば、テスト コントローラーとテスト エージェントを使用してコード化された UI テストをリモートで実行する場合、またはテストを実行してテストの実行時にビデオ記録をキャプチャする場合は、エージェントをプロセスとして実行されるように設定する必要があります。 Visual Studio を使用してテストの設定でエージェントをロールに割り当てる場合や、Microsoft Test Manager を使用して環境内でエージェントをロールに割り当てる場合は、デスクトップと対話する必要があるロールに割り当てられたすべてのエージェントの設定を変更する必要があります。
+::: moniker-end
+::: moniker range=">=vs-2019"
+デスクトップと対話する自動テストを実行する場合、エージェントをサービスではなくプロセスとして実行されるように設定する必要があります。 たとえば、テスト コントローラーとテスト エージェントを使用してコード化された UI テストをリモートで実行する場合、またはテストを実行してテストの実行時にビデオ記録をキャプチャする場合は、エージェントをプロセスとして実行されるように設定する必要があります。 Visual Studio を使用してテストの設定でエージェントをロールに割り当てる場合は、デスクトップとやりとりする必要があるロールに割り当てられたすべてのエージェントの設定を変更する必要があります。
+::: moniker-end
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 > [!WARNING]
 > Microsoft Test Manager を使用してラボ環境を設定する場合、テスト エージェントがインストールされます。 コード化された UI テストを実行できるようにロールの 1 つを構成する場合は、**環境の作成ウィザード**で指定できます。
+:::moniker-end
 
 > [!IMPORTANT]
 > コード化された UI テストを実行するエージェントを実行するコンピューターは、ロックしたり、スクリーン セーバーを有効にしたりできません。
@@ -73,7 +80,9 @@ ms.locfileid: "72653428"
    > [!NOTE]
    > コンピューターには、プロセスとして実行されているテスト エージェントに関する通知領域アイコンが表示されます。 このアイコンは、テスト エージェントの状態を示します。 このツールを使用してエージェントがプロセスとして実行されている場合は、エージェントを起動、停止、または再起動できます。 テスト エージェントが実行されていない場合にプロセスとして開始するには、 **[スタート]**  >  **[Visual Studio]**  >  **[Microsoft Visual Studio Test Agent]** の順に選択します。
 
+   ::: moniker range="vs-2017"
    このテスト エージェントのテスト コントローラーが Team Foundation Server に登録されている場合、対話型プロセスとして実行されているテスト エージェントの状態が Microsoft Test Manager の **[ラボ センター]** の **[コントローラー]** ビューに表示されます。 対話型プロセスとして実行されていることを示すために、前にアスタリスク (*) 記号が付いています。 このテスト エージェントを再開するには、 **[コントローラー]** ビューではなく、テスト エージェントのコンピューターで実行されるツールを使用する必要があります。
+   ::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 

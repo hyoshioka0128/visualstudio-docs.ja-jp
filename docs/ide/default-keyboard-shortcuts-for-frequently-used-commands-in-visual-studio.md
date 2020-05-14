@@ -2,17 +2,17 @@
 title: 頻繁に使用するコマンドに対応する既定のキーボード ショートカット
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652518"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596724"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio のよく使われるキーボード ショートカット
 
@@ -21,9 +21,9 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 "*全体*" コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
 
 > [!NOTE]
-> **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの[ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
+> [[オプション]](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの**ショートカットを調べる**ことができます。
 
-## <a name="build"></a>ビルド
+## <a name="build"></a>Build
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |
@@ -128,13 +128,13 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 
 ## <a name="refactor"></a>リファクタリング
 
-|コマンド|ショートカット キー [コンテキスト]|
+|command|ショートカット キー [コンテキスト]|
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl + R、Ctrl + M** [全体]|
 
 ## <a name="tools"></a>ツール
 
-|コマンド|ショートカット キー [コンテキスト]|
+|command|ショートカット キー [コンテキスト]|
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl + Alt + P** [全体]|
 
@@ -169,7 +169,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Window.NextDocumentWindowNav|**Ctrl + Tab** [全体]|
 |Window.NextSplitPane|**F6** [全体]|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのキーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Visual Studio のすべてのキーボード ショートカット](default-keyboard-shortcuts-in-visual-studio.md)

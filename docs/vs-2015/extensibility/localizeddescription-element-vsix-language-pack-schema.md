@@ -1,5 +1,5 @@
 ---
-title: LocalizedDescription 要素 (VSIX 言語パックのスキーマ) |Microsoft Docs
+title: LocalizedDescription 要素 (VSIX 言語パックスキーマ) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,12 +8,12 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 281f3823d22ee0e290e4b6bb32a8280f4773a592
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 49bf12f3056eb7ddb0e0afb8333a1f1893c7b954
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679905"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477018"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription 要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,8 +26,8 @@ ms.locfileid: "65679905"
 <LocalizedDescription>Localized description of the extension</LocalizedDescription>  
 ```  
   
-## <a name="attributes-and-elements"></a>属性および要素  
- 以降のセクションでは、属性、子要素、および親要素について説明します。  
+## <a name="attributes-and-elements"></a>属性と要素  
+ 次のセクションでは、属性、子要素、親要素について説明します。  
   
 ### <a name="attributes"></a>属性  
   
@@ -48,18 +48,18 @@ ms.locfileid: "65679905"
 |[VSIX LanguagePack 要素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|必須。 VSIX 言語パックのルート要素を提供します。|  
   
 ## <a name="text-value"></a>テキスト値  
- 必須。 ターゲット言語で拡張機能の説明テキスト。  
+ 必須。 ターゲット言語における拡張機能の説明テキスト。  
   
 ## <a name="element-information"></a>要素情報  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    名前空間    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|    名前空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
 |   スキーマ名   |                 VSIX 言語パックのスキーマ                 |
-| 検証ファイル |                VSIXLanguagePackSchema.xsd                 |
-|  空にすることができます。   |                      利用不可                       |
+| 検証ファイル |                VSIXLanguagePackSchema                 |
+|  空にすることができます   |                      適用なし                       |
   
-## <a name="see-also"></a>関連項目  
- [VSX 言語パックのスキーマ リファレンス](../extensibility/vsx-language-pack-schema-reference.md)   
+## <a name="see-also"></a>参照  
+ [VSX Language Pack スキーマリファレンス](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)   
- [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))

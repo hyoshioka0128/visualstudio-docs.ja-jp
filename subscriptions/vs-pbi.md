@@ -1,17 +1,18 @@
 ---
 title: Visual Studio サブスクリプションの Power BI Pro 特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 11/18/2019
+ms.author: v-evwin
+manager: lank
+ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 1d6288c1a3360aaf48c220e73a11f2b4251b8806
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161949"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301935"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -71,7 +72,7 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 | Visual Studio Enterprise (月間クラウド) | Azure                                       | 使用できません                                  |N/A|
 ||
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。除外:Microsoft Partner Network (MPN)、FTE、Imagine は含まれません。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。除外:Microsoft Partner Network (MPN)、FTE、Imagine は含まれません。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -111,6 +112,12 @@ A: いいえ。  Power BI Pro 特典は、政府機関向けのテナントに�
   - よくある問題を調べ、コミュニティからサポートを受けるか、[サポート ページ](https://powerbi.microsoft.com/support/)でサポート チケットを送信してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 - Power BI Pro 特典をアクティブ化にする場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスしてください。

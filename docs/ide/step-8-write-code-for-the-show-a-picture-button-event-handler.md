@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314055"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579805"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778792"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: パフォーマンス データ収集の一時停止と再開
@@ -38,6 +38,6 @@ ms.locfileid: "74778792"
 
   - プロファイリング セッションを終了してレポートを生成するには、 **[プロファイリングの停止]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [データ収集の制御](../profiling/controlling-data-collection.md)
 - [方法: パフォーマンス データの収集の開始と終了](../profiling/how-to-start-and-end-performance-data-collection.md)

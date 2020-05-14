@@ -5,17 +5,17 @@ ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118962"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579856"
 ---
 # <a name="step-3-set-your-form-properties"></a>手順 3: フォームのプロパティの設定
 

@@ -1,6 +1,6 @@
 ---
 title: コード スニペット スキーマ リファレンス
-ms.date: 02/25/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631119"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472795"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -235,7 +235,7 @@ IntelliSense コード スニペットの内容に関する説明文を指定し
 Visual Studio でリテラルまたはオブジェクトがフォーカスを取得するときに実行される関数を指定します。
 
 > [!NOTE]
-> `Function` 要素は、C# のコード スニペットでのみサポートされます。
+> 一部の言語は `function` 要素をサポートしていません。 どの機能を使用できるかについては、言語固有のドキュメントを参照してください。
 
 ```xml
 <Function>
@@ -503,10 +503,10 @@ IntelliSense コード スニペットによって使用されるインポート
 
 ## <a name="shortcut-element"></a>Shortcut 要素
 
-スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素のテキスト値には、英数字、ハイフン (-)、およびアンダースコア (_) のみを含めることができます。
+スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素のテキスト値には、英数字、アンダースコア ( _ ) のみを含めることができます。
 
 > [!CAUTION]
-> _ と - の文字は C++ スニペットのショートカットではサポートされていません。
+> アンダースコア ( _ ) の文字は C++ スニペットのショートカットではサポートされていません。
 
 ```xml
 <Shortcut>

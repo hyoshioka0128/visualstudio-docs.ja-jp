@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300635"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586807"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを*マーカー*と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](https://go.microsoft.com/fwlink/?LinkId=235405)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
+コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを*マーカー*と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](https://docs.microsoft.com/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
 
 ## <a name="properties"></a>プロパティ
  フラグ、スパン、およびメッセージにはそれぞれ、カテゴリおよび重要度という 2 つのプロパティがあります。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、これらのプロパティを使用して、表示されるマーカーのセットをフィルター処理することができます。 また、これらのプロパティはマーカーの視覚表示に影響します。 たとえば、フラグのサイズを使用して重要度を表します。 また、色を使用してカテゴリを示します。
@@ -31,9 +31,9 @@ ms.locfileid: "74300635"
 
 ### <a name="c-and-visual-basic"></a>C# および Visual Basic
 
-C#、Visual Basic、および他のマネージド コードでは、[Markers](/previous-versions/hh694099(v=vs.140)) クラスのメソッド を呼び出して既定のプロバイダーを使います。 マーカーの生成には、 [WriteFlag](/previous-versions/hh694185(v=vs.140))、 [enterspan](/previous-versions/hh694205(v=vs.140))、 [WriteMessage](/previous-versions/hh694161(v=vs.140))、 [writealert](/previous-versions/hh694180(v=vs.140))の4つのメソッドが公開されています。 プロパティで既定を使用するかどうかに応じて、これらの関数には複数のオーバーロードがあります。  最も単純なオーバーロードは、イベントの説明を指定する文字列パラメーターのみを受け取ります。 説明はコンカレンシー ビジュアライザーのレポートに表示されます。
+C#、Visual Basic、および他のマネージド コードでは、[Markers](/previous-versions/hh694099(v=vs.140)) クラスのメソッド を呼び出して既定のプロバイダーを使います。 マーカー生成用に次の 4 つの関数が公開されます: [WriteFlag](/previous-versions/hh694185(v=vs.140))、[EnterSpan](/previous-versions/hh694205(v=vs.140))、[WriteMessage](/previous-versions/hh694161(v=vs.140))、[WriteAlert](/previous-versions/hh694180(v=vs.140))。 プロパティで既定を使用するかどうかに応じて、これらの関数には複数のオーバーロードがあります。  最も単純なオーバーロードは、イベントの説明を指定する文字列パラメーターのみを受け取ります。 説明はコンカレンシー ビジュアライザーのレポートに表示されます。
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>C#または Visual Basic プロジェクトに SDK サポートを追加する
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>C# または Visual Basic プロジェクトに SDK サポートを追加する
 
 1. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[プロジェクトへの SDK の追加]** の順に選択します。
 
@@ -84,7 +84,7 @@ C#、Visual Basic、および他のマネージド コードでは、[Markers](/
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C# または C プロジェクトで新しいマーカー プロバイダーを使用するには
 
-1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。 コンストラクターは GUID * と PCV_PROVIDER\*を受け取ります。
+1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。 コンストラクターは、GUID * と PCV_PROVIDER\*を受け取ります。
 
 2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。 **[マーカー]** タブを選択してから、 **[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
 
@@ -123,9 +123,9 @@ C#、Visual Basic、および他のマネージド コードでは、[Markers](/
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)|C++ のコンカレンシー ビジュアライザー API について説明します。|
+|[C++ ライブラリリファレンス](../profiling/cpp-library-reference.md)|C++ のコンカレンシー ビジュアライザー API について説明します。|
 |[C ライブラリ リファレンス](../profiling/c-library-reference.md)|C のコンカレンシー ビジュアライザー API について説明します。|
 |[インストルメンテーション](/previous-versions/hh694104(v=vs.140))|マネージド コードのコンカレンシー ビジュアライザー API について説明します。|
 |[コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)|コンカレンシー メソッドを使用して生成され、スレッド実行データを含む、プロファイリング データ ファイルのビューとレポートに関するリファレンス情報。|

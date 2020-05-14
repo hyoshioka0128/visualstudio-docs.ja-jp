@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal | Microsoft Docs
+title: を使用します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92ef0e0016027bb8e5d60ee8df070095da72d7ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e06cae53251be02ee63650ce7723e5915565be4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343972"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732822"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
-かどうか、サーバーはローカル、呼び出し元を決定します。
+サーバーが呼び出し元に対してローカルかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,7 +38,7 @@ int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>戻り値
- 返します`S_OK`サーバーがローカルであることを示す。 返します`S_FALSE`msvsmon.exe、リモート デバッグに使用される通常のインスタンスから、サーバーが実行されている場合。
+ サーバー`S_OK`がローカルであることを示す値を返します。 サーバー`S_FALSE`が msvsmon.exe のインスタンスから実行されている場合に返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

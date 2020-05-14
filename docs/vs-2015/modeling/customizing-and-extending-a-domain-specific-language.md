@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 55ec2cf2f2a6ebf4186f81f6f3dd61766acd7958
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299341"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918892"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズおよび拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()`をオーバーライドします。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>の例を参照してください。|
 |任意の図形に背景画像を設定する|InitializeInstanceResources () をオーバーライドして、固定された ImageField を追加します。 図の「[プレゼンテーションのカスタマイズ」を](../modeling/customizing-presentation-on-the-diagram.md)参照してください。|
 |図形を任意の深さに入れ子にする|再帰的な埋め込みツリーを設定します。 図形を含めるように BoundsRules を定義します。 図の「[プレゼンテーションのカスタマイズ」を](../modeling/customizing-presentation-on-the-diagram.md)参照してください。|
-|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](https://go.microsoft.com/fwlink/?LinkID=186128)」を参照してください。|
-|テキストフィールド他の値から派生した値が表示されます。|テキストデコレータを計算済みまたはカスタムのストレージドメインプロパティにマップします。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。|
+|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。|
+|テキストフィールド他の値から派生した値が表示されます。|テキストデコレータを計算済みまたはカスタムのストレージドメインプロパティにマップします。 詳細については、次を参照してください。[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)します。|
 |モデル要素間または図形間での変更の反映|「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。|
 |ストアの外部にある他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能などのリソースに変更を反映します。|「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。|
 |プロパティウィンドウ関連要素のプロパティが表示されます。|プロパティ転送を設定します。 「[プロパティウィンドウのカスタマイズ」を](../modeling/customizing-the-properties-window.md)参照してください。|
@@ -74,5 +74,5 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |DSL がサードパーティによって拡張されることを許可し、拡張機能を制御します。|[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [DSL ライブラリによる DSL 間でのクラスの共有](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [ロック ポリシーの定義と読み取り専用セグメントの作成](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 |||
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  ドメイン固有言語を[定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [Visual Studio 用の](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)ドメイン固有言語モデリング SDK を[カスタマイズする](../modeling/writing-code-to-customise-a-domain-specific-language.md)ためのコードの作成-ドメイン固有言語

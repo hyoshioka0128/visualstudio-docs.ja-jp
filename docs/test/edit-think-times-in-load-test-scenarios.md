@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, adding delays
 - load tests, changing think times
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 661a31411a561f15809a10fb15fd71a29e6a64fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672950"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590034"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>待ち時間を編集してロード テスト シナリオにおける Web サイトでの対話操作の遅延をシミュレートする
 
@@ -54,8 +54,8 @@ ms.locfileid: "72672950"
 
 3. **[プロパティ]** ウィンドウで **[待ち動作のプロファイル]** プロパティを変更します。
 
-4. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 新しい待ち動作のプロファイルでロード テストを実行できるようになります。
+4. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 新しい待ち動作のプロファイルでロード テストを実行できるようになります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)

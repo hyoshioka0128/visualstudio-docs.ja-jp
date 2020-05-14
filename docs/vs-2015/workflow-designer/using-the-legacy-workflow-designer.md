@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c92b4431c21c27bc1fe2ff86b24c850cc34694
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302786"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846082"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>従来のワークフロー デザイナーの使用
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] が備えている従来の[!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用すると、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とすることができます。
@@ -27,11 +27,11 @@ ms.locfileid: "74302786"
 
  次の表に、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] for Windows Workflow Foundation の主な機能を示します。
 
-|機能|説明|
+|特性|説明|
 |-------------|-----------------|
 |アクティビティのドラッグ アンド ドロップ|アクティビティを **[ツールボックス]** からデザイン画面にドラッグして、ワークフローを作成します。|
 |プロパティ ブラウザー|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の標準**プロパティ**ウィンドウは、アクティビティのプロパティを構成するために使用されます。|
-|ズーム|[双眼鏡**ズームレベル**] アイコンは、デザインサーフェイスの右側の垂直スクロールバーの下に配置されます。 双眼鏡をクリックし、ズーム率を選択すると、ワークフローグラフィックが拡大または縮小されます。**パン**アイコン虫眼鏡のカーソルオプションを使用して、拡大と縮小を行うこともできます。|
+|[ズーム]|[双眼鏡**ズームレベル**] アイコンは、デザインサーフェイスの右側の垂直スクロールバーの下に配置されます。 双眼鏡をクリックし、ズーム率を選択すると、ワークフローグラフィックが拡大または縮小されます。**パン**アイコン虫眼鏡のカーソルオプションを使用して、拡大と縮小を行うこともできます。|
 |パン|**パン**アイコン (4 方向を指す4つの交差矢印を含む円) は、デザインサーフェイス右側の垂直スクロールバーの下 (双眼鏡ズームアイコンのすぐ下) にあります。 パン アイコンをクリックすると、次のようなカーソル オプションがポップアップ メニューに表示されます。<br /><br /> **[ズームイン]** 虫眼鏡カーソルを使用すると、デザイン画面をクリックしてズームインできます。<br />**[ズームアウト]** 虫眼鏡カーソルを使用すると、デザイン画面をクリックしてズームアウトできます。<br />-**ナビゲーションツール**ハンドカーソルを使用すると、デザインサーフェイスでワークフローのビューを "グラブ" して、そのビューをシフトすることができます。<br />-**既定**の矢印カーソルを使用すると、他のカーソルから既定の矢印カーソルに戻ることができます。|
 |自動スクロール|ワークフローが大きいために、デザイン サーフェイスの表示領域外にアクティビティを配置する必要が生じる場合があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデザイン サーフェスでは、アクティビティを配置したい方向に最も近い側の端にアクティビティをドラッグすることができます。 デザイン サーフェイスの表示が、その方向に自動的にスクロールされます。|
 |スマート タグ|構成が完了していないアクティビティ、または構成が有効でないアクティビティは、感嘆符アイコン付きで表示されます。 このアイコンをクリックして表示されるドロップダウン リストで、アクティビティに存在する、必要な構成を確認できます。 その後、 **[プロパティ]** ウィンドウを使用して、アクティビティを適切に構成できます。 アクティビティのすべてのプロパティが正しく構成されれば、感嘆符アイコンは表示されなくなります。|
@@ -53,5 +53,5 @@ ms.locfileid: "74302786"
 
  [従来の Designer for Windows Workflow Foundation UI ヘルプ](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
-## <a name="see-also"></a>関連項目
- [ワークフローの開発](https://go.microsoft.com/fwlink?LinkID=65010)
+## <a name="see-also"></a>参照
+ [ワークフローの開発](https://msdn2.microsoft.com/library/bb628448.aspx)

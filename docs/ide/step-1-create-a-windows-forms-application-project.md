@@ -5,17 +5,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516700"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579915"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>手順 1: Windows フォーム アプリ プロジェクトを作成する
 
@@ -25,9 +25,9 @@ ms.locfileid: "72516700"
 
 ## <a name="open-visual-studio-2017"></a>Visual Studio 2017 を開きます
 
-1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 ダイアログ ボックスは次のスクリーンショットのように表示されます。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 ダイアログ ボックスは次のスクリーンショットのように表示されます。
 
-     ![[新しいプロジェクト] ダイアログ ボックス](../ide/media/newprojectdialogcallouts.png)<br/>***[新しいプロジェクト]*** *ダイアログ ボックス*
+     ![[新しいプロジェクト] ダイアログ ボックス](../ide/media/newprojectdialogcallouts.png)<br/>"***[新しいプロジェクト]*** *ダイアログ ボックス*"
 
 2. **[新しいプロジェクト]** ダイアログ ボックスの左側で、 **[Visual C#]** または **[Visual Basic]** を選択し、 **[Windows Desktop]** を選択します。
 
@@ -105,7 +105,7 @@ Visual Studio により、アプリのソリューションが作成されます
      または、次の画像に示すツール バーの **[すべてを保存]** ボタンを選択します。
 
      ![[すべてを保存] ツール バー ボタン](../ide/media/express_iconsaveall.png)<br/>
-     ***[すべてを保存]*** *ツール バー ボタン*
+     "***[すべてを保存]*** *ツール バー ボタン*"
 
      Visual Studio によって自動的にフォルダー名およびプロジェクト名が指定され、projects フォルダーにプロジェクトが保存されます。
 

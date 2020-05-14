@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: ad5f03d7722fa2fb8452b6a1217c18996d6c978f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653156"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591581"
 ---
 # <a name="settings-waterfall"></a>設定ウォーターフォール
 
@@ -46,6 +46,6 @@ namespace MyTests
 }
 ```
 
-## <a name="got-feedback"></a>フィードバックをお寄せください
+## <a name="got-feedback"></a>フィードバックが欲しい場合
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。

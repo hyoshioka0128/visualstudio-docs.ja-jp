@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516448"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255554"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>クイック スタート: Visual Studio で React シングルページ アプリを含む Docker を使用する
 
@@ -49,7 +49,7 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 1. プロジェクト ノードを右クリックし、 **[追加]** > **[Docker サポート]** を選択して、プロジェクトに Dockerfile を追加します。
 
-   ![Docker サポートの追加](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Docker サポートを追加する](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. コンテナーの種類を選択し、 **[OK]** をクリックします。
 ::: moniker-end
@@ -61,7 +61,7 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 1. プロジェクト ノードを右クリックし、 **[追加]** > **[Docker サポート]** を選択して、プロジェクトに Dockerfile を追加します。
 
-   ![Docker サポートの追加](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Docker サポートを追加する](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. コンテナーの種類を選択します。
 ::: moniker-end
@@ -146,8 +146,8 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
-      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
-      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
       FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
       WORKDIR /app
@@ -227,7 +227,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
     | **DNS プレフィックス** | グローバルに一意の名前 | コンテナー レジストリを一意に識別する名前。 |
     | **サブスクリプション** | サブスクリプションの選択 | 使用する Azure サブスクリプション。 |
     | **[リソース グループ](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  コンテナー レジストリを作成するリソース グループの名前。 新しいリソース グループを作成する場合は、 **[新規]** を選択します。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
     | **レジストリの場所** | 近くの場所 | [[地域]](https://azure.microsoft.com/regions/) で、自分に近いか、またはコンテナー レジストリを使用する他のサービスに近い場所を選択します。 |
 
     ![Visual Studio の Azure コンテナー レジストリを作成するダイアログ][0]

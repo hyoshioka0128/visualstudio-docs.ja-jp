@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748690"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568686"
 ---
 # <a name="list-registers-command"></a>List Registers コマンド
 選択したレジスタの値を表示するほか、表示されるレジスタの一覧を変更できます。
@@ -39,7 +39,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 `Debug.ListRegisters /Display eax`
 
-上記の式は、次の式と同じです。
+は次と同等
 
 `Debug.ListRegisters eax`
 
@@ -65,8 +65,8 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [デバッグの基礎:[レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)
+- [デバッグの基礎 : [レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)
 - [方法: [レジスタ] ウィンドウを使用する](../../debugger/how-to-use-the-registers-window.md)

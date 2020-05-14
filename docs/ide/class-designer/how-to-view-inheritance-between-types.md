@@ -9,21 +9,21 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd6d2ce365399550b5455ff8bf909e9cc56187b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647687"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591776"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の継承を表示する
 
-基本型とその派生型の間に継承関係がある場合は、**クラス デザイナー**のクラス ダイアグラムでそのことがわかります。 2 つの型の間に継承関係が存在しない場合に継承関係を作成するときは、[方法:型間の継承の作成](how-to-create-inheritance-between-types.md)に関するページを参照してください。
+基本型とその派生型の間に継承関係がある場合は、**クラス デザイナー**のクラス ダイアグラムでそのことがわかります。 2 つの型の間に継承関係が存在しない場合に作成する方法については、[型の間の継承を作成する方法](how-to-create-inheritance-between-types.md)に関するページをご覧ください。
 
 ## <a name="to-find-the-base-type"></a>基本型を特定するには
 
@@ -45,7 +45,7 @@ ms.locfileid: "72647687"
 
 また、派生型を表示する型を右クリックして、 **[派生クラスの表示]** または **[派生インターフェイスの表示]** を選択することもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: 型の間の関連付けを作成する](how-to-create-associations-between-types.md)
 - [型およびリレーションシップの表示](designing-and-viewing-classes-and-types.md)

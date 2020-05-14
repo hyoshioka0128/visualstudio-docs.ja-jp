@@ -1,42 +1,42 @@
 ---
-title: VSCT XML スキーマの条件付き属性 |Microsoft Docs
+title: VSCT XML スキーマの条件属性 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11807129c34fa613ef06b3534adc7c7ebb9865e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322950"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697944"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件付き属性
-条件付き属性は、すべてのリストとアイテムに適用できます。 論理演算子およびシンボルの拡張の式は、true または false に評価されます。 True の場合、結果の出力で、関連付けられているリストまたは項目が含まれます。
+# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件属性
+すべてのリストとアイテムに条件属性を適用できます。 論理演算子とシンボル展開式は、true または false に評価されます。 true の場合、関連付けられたリストまたはアイテムが結果の出力に含まれます。
 
- その他のトークンの拡張や定数に対してトークンの拡張をテストすることができます。 関数は、`Defined()`値が存在しない場合でも、特定の名前が定義されているかどうかをテストします。
+ トークンの拡張は、他のトークン拡張または定数に対してテストできます。 関数`Defined()`は、特定の名前が値を持たない場合でも、定義されているかどうかをテストします。
 
- Condition 属性がリストに適用されると、条件は、リスト内のすべての子要素に適用されます。 子要素自体に条件属性が含まれている場合、その条件が結合親式 AND 演算によって。
+ 条件属性がリストに適用されると、その条件はリスト内のすべての子要素に適用されます。 子要素自体に Condition 属性が含まれている場合、その条件は AND 演算によって親式と結合されます。
 
- True の場合、値 1、'1' および 'true' に評価して 0、'0' および 'false' が false として評価されます。
+ 値 1、'1'、'true' は真として評価され、0、'0'、および'false' は偽として評価されます。
 
-## <a name="operators"></a>演算子
- 条件付きの式を評価するのにには、次の演算子を使用します。
+## <a name="operators"></a>オペレーター
+ 条件式を評価するには、次の演算子を使用します。
 
 |演算子|定義|
 |--------------|----------------|
 |(,)|グループ化|
 |!|論理 NOT|
-|\<, >, \<=, >=, ==, !=|関係と比較|
-|と、呼び出し|ブール型|
-|または|ブール型|
+|\<、>、=、>\<==、!=|関係と比較|
+|and|Boolean|
+|or|Boolean|
 
 ## <a name="examples"></a>使用例
 
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [コマンド テーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664973"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589644"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web パフォーマンス テストでの検出できない動的パラメーターの修正
 

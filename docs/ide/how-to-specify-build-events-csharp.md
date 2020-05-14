@@ -1,5 +1,5 @@
 ---
-title: '方法: ビルド イベントを指定する (C#)'
+title: '方法 : ビルド イベントを指定する (C#)'
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656588"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115127"
 ---
-# <a name="how-to-specify-build-events-c"></a>方法: ビルド イベントを指定する (C#)
+# <a name="how-to-specify-build-events-c"></a>方法 : ビルド イベントを指定する (C#)
 
 ビルド開始前またはビルド終了後に実行するコマンドを指定するには、ビルド イベントを使います。 ビルド イベントは、ビルド プロセスにおいてビルドがこれらのポイントに正常に達した場合にのみ実行されます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72656588"
 5. **[ビルド後に実行するコマンド ライン]** ボックスで、ビルド イベントの構文を指定します。
 
    > [!NOTE]
-   > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
+   > `call`.bat*ファイルを実行するすべてのビルド後コマンドの前に* ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
 
 6. **[ビルド後イベントの実行]** ボックスで、ビルド後イベントを実行する条件を指定します。
 
@@ -174,9 +174,9 @@ ms.locfileid: "72656588"
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [方法 : ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

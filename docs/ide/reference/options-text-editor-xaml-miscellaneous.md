@@ -23,23 +23,23 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189555"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568205"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XAML]、[その他]
 
 **[その他]** プロパティ ページでは、XAML ドキュメントで要素と属性を書式設定する方法を指定します。 **[オプション]** ダイアログ ボックスを開くには、 **[ツール]** メニューをクリックし、 **[オプション]** をクリックします。 **[その他]** プロパティ ページにアクセスするには、 **[テキスト エディター]**  >  **[XAML]**  >  **[その他]** ノードを展開します。
 
-## <a name="auto-insert"></a>自動挿入
+## <a name="auto-insert"></a>[自動挿入]
 
 タグと引用符が自動的に生成されるタイミングを制御するには、この設定を使用します。
 
@@ -50,10 +50,10 @@ ms.locfileid: "73189555"
 |**MarkupExtension の終わり中かっこ**|左中かっこ ( **{** ) を入力したときに、マークアップ拡張の右中かっこ ( **}** ) が自動的に生成されるかどうかを指定します。|
 |**MarkupExtension のパラメーターを区切るコンマ**|マークアップ拡張に複数のパラメーターを入力したときに、コンマが生成されるかどうかを指定します。|
 
-## <a name="errors-and-warnings"></a>エラーと警告
+## <a name="errors-and-warnings"></a>エラーおよび警告
 
 エラーと警告が自動的に生成されるタイミングを制御するには、この設定を使用します。 詳細については、「[XAML のエラーと警告](../../xaml-tools/xaml-errors-warnings.md)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [WPF の XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

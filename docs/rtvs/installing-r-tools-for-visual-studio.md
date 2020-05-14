@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 38082d854a6c817503d2765c48c5b08c0bd2a5b3
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888535"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75843731"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R Tools for Visual Studio のインストール方法
 
@@ -64,7 +64,7 @@ Microsoft R Open と CRAN R はどちらも複数の side-by-side バージョ�
 
 ### <a name="install-the-r-tools"></a>R Tools のインストール
 
-[https://aka.ms/rtvs-current](https://aka.ms/rtvs-current) から最新の R Tools for Visual Studio 2015 をダウンロードします。 RTVS は Visual Studio の適切なバージョンを確認し、R インタープリターがまだインストールされていない場合は、インストールの支援も行います。
+[https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) から最新の R Tools for Visual Studio 2015 をダウンロードします。 RTVS は Visual Studio の適切なバージョンを確認し、R インタープリターがまだインストールされていない場合は、インストールの支援も行います。
 
 > [!Note]
 > スタンドアロンの RTVS インストーラーは Visual Studio 2015 でのみ機能します。Visual Studio 2017 の場合は、既に説明した、「[データ サイエンスと分析のアプリケーション ワークロード](#install-rtvs-in-visual-studio-2017)」の手順で R のサポートをインストールします。
@@ -81,7 +81,7 @@ RTVS for Visual Studio 2015 は、`%ProgramFiles(x86)%\Microsoft Visual Studio 1
 
 1. Web ページにあるオフライン インストールを作成する方法に従います。
 
-1. Visual Studio 2015 の場合は、R Tools for Visual Studio のオフライン インストーラーを [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) および [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) からダウンロードします。
+1. Visual Studio 2015 の場合は、R Tools for Visual Studio のオフライン インストーラーを [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) および [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip) からダウンロードします。
 
 1. オフライン インストーラーから Visual Studio と RTVS をインストールします。
 

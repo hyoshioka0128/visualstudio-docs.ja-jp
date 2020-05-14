@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935413"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115033"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio インスタンスの検出および管理用のツール
 
@@ -32,8 +32,8 @@ ms.locfileid: "62935413"
 クライアント コンピューターにインストールされている Visual Studio インスタンスを検出して管理するために役立つ複数のツールが用意されています。
 
 * [vswhere](https://github.com/microsoft/vswhere): Visual Studio に組み込まれているか、個別のディストリビューションで使用可能な実行可能ファイルです。特定のコンピューター上のすべての Visual Studio インスタンスの場所を見つけるのに役立ちます。
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell):セットアップ構成 API を使用して Visual Studio のインストール済みインスタンスを識別する PowerShell スクリプトです。
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples):セットアップ構成 API を使用して既存のインストールを照会する方法を示す C# と C++ のサンプルです。
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): セットアップ構成 API を使用して Visual Studio のインストール済みインスタンスを識別する PowerShell スクリプトです。
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): セットアップ構成 API を使用して既存のインストールを照会する方法を示す C# と C++ のサンプルです。
 
 さらに、[セットアップ構成 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) は、Visual Studio インスタンスを問い合わせるために独自のユーティリティを構築する開発者向けのインターフェイスを提供します。
 
@@ -60,11 +60,11 @@ Visual Studio ではレジストリ設定はプライベートな場所に保存
 
 1. Visual Studio で開いているインスタンスがある場合は、閉じてください。
 
-1. `regedit.exe` を起動します。
+1. `regedit.exe`を起動します。
 
 1. `HKEY_LOCAL_MACHINE` ノードを選択します。
 
-1. レジストリ エディターのメイン メニューから **[ファイル]** > **[ハイブの読み込み...]** を選択して、**AppData\Local** フォルダーに保存されているプライベート レジストリ ファイルを選択します。 次に例を示します。
+1. レジストリ エディターのメイン メニューから **[ファイル]**  >  **[ハイブの読み込み...]** を選択して、**AppData\Local** フォルダーに保存されているプライベート レジストリ ファイルを選択します。 次に例を示します。
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -76,10 +76,10 @@ Visual Studio ではレジストリ設定はプライベートな場所に保存
 分離されたハイブの名前になるハイブ名を指定するように求められます。 これを行うと、作成した分離されたハイブの下にあるレジストリを参照できるようになります。
 
 > [!IMPORTANT]
-> Visual Studio を再度開始する前に、作成した分離されたハイブをアップロードする必要があります。 これを行うには、レジストリ エディターのメイン メニューから **[ファイル]** > **[ハイブのアンロード]** の順に選択します。 (これを行わない場合、ファイルがロックされたままになり、Visual Studio で開始することができません。)
+> Visual Studio を再度開始する前に、作成した分離されたハイブをアップロードする必要があります。 これを行うには、レジストリ エディターのメイン メニューから **[ファイル]**  >  **[ハイブのアンロード]** の順に選択します。 (これを行わない場合、ファイルがロックされたままになり、Visual Studio で開始することができません。)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

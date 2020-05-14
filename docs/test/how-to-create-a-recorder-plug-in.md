@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653633"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589152"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>方法:レコーダー プラグインを作成する
+# <a name="how-to-create-a-recorder-plug-in"></a>方法: レコーダー プラグインを作成する
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> を使用すると、記録された Web パフォーマンス テストを変更できます。 変更は、 **[Web パフォーマンス テスト レコーダー]** ツール バーの **[停止]** をクリックした後、テストが保存されて Web パフォーマンス テスト エディターで表示される前に行われます。
 

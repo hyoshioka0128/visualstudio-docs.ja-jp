@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301189"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918920"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.ProcessOnMenuCopyCom
 DslPackage プロジェクトの*Mydsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
 
  **コピーと貼り付けを使用して図形のレイアウトを保持します。**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 
 
  この効果を得るには、コピーした ElementGroupPrototype に図形とコネクタを追加します。 オーバーライドする最も便利なメソッドは ElementOperations.CreateElementGroupPrototype() です。 そのためには、次のコードを Dsl プロジェクトに追加します。
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **現在のカーソル位置など、選択した場所に図形を貼り付けます。**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。
 
  この効果を得るには、`ClipboardCommandSet.ProcessOnMenuPasteCommand()` をオーバーライドし、`ElementOperations.Merge()` の場所固有のバージョンを使用します。 そのためには、次のコードを DslPackage プロジェクトに追加します。
 
@@ -563,5 +563,6 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>関連項目
- [要素の作成と移動のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)[削除動作のカスタマイズ](../modeling/customizing-deletion-behavior.md)[サンプル: vmsdk 回路図のサンプル](https://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>参照
+ [要素の作成と移動のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)[方法: ドラッグアンドドロップハンドラーを追加して](../modeling/how-to-add-a-drag-and-drop-handler.md)[削除動作をカスタマイズ](../modeling/customizing-deletion-behavior.md)する
+ 

@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo |Microsoft Docs
+title: を提供します。マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a6c64c77e6d8fedaf6e61f397e5dcd2a3ae577f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a574766b884bf1aeed253754534fee66967e9ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352712"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733461"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
-指定されたメソッドが行情報を持つかどうかを決定します。
+指定したメソッドに行情報があるかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,13 +40,13 @@ int FunctionHasLineInfo(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]デバッグ アドレスで表される、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。 このアドレスは、METHOD_ADDRESS を指定する必要があります。
+[in]インターフェイスによって表されるデバッグ[アドレス](../../../extensibility/debugger/reference/idebugaddress.md)。 このアドレスはMETHOD_ADDRESSでなければなりません。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`します。
+成功した場合は`S_OK`、 を返します。それ以外の`S_FALSE`場合は、 を返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイス。
+インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)示します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(

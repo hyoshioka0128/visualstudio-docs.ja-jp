@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925831"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115064"
 ---
 # <a name="understand-build-platforms"></a>ビルド プラットフォームについて
 

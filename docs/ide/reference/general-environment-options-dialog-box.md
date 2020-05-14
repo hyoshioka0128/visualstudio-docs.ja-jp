@@ -15,19 +15,19 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660046"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569440"
 ---
-# <a name="options-dialog-box-environment--general"></a>[オプション] ダイアログ ボックス: [環境] \> [全般]
+# <a name="options-dialog-box-environment--general"></a>[オプション] ダイアログ ボックス:[環境] \> [全般]
 
 このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、 **[ツール]** メニューを開いて、 **[オプション]** をクリックし、 **[環境]** フォルダーを開き、 **[全般]** ページをクリックします。 このページが一覧に表示されない場合は、 **[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにします。
 

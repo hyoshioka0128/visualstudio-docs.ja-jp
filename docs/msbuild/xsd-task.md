@@ -15,25 +15,27 @@ helpviewer_keywords:
 - XSD task (MSBuild (C++))
 - MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748015"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630783"
 ---
 # <a name="xsd-task"></a>XSD タスク
+
 ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。
 
 > [!NOTE]
-> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 *CppCodeProvider.dll* を手動で GAC に追加して、**Microsoft.VisualC.CppCodeProvider** API を引き続き使用することができます。
+> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 **CppCodeProvider.dll** を手動で GAC に追加して、*Microsoft.VisualC.CppCodeProvider* API を引き続き使用することができます。
 
 ## <a name="parameters"></a>パラメーター
+
  **XSD** タスクのパラメーターの説明を次の表に示します。
 
 - **AdditionalOptions**
@@ -86,5 +88,6 @@ ms.locfileid: "72748015"
 
      トラッカー ログのディレクトリを指定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

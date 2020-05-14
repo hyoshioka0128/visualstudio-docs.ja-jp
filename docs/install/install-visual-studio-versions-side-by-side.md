@@ -8,15 +8,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888687"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114653"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 

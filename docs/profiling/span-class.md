@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979758"
 ---
 # <a name="span-class"></a>span クラス
@@ -32,7 +32,7 @@ class span;
 
 ### <a name="public-constructors"></a>パブリック コンストラクター
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[span::span コンストラクター](../profiling/span-span-constructor.md)|`span` クラスの新しいインスタンスを初期化します。|
 |[span::~span デストラクター](../profiling/span-tilde-span-destructor.md)|`span` オブジェクトを破棄し、そのリソースを解放します。|
@@ -40,7 +40,7 @@ class span;
 ## <a name="inheritance-hierarchy"></a>継承階層
  `span`
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkersobj.h*
 
  **名前空間:** Concurrency::diagnostic

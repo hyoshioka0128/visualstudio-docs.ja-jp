@@ -25,22 +25,24 @@ helpviewer_keywords:
 - MSBuild (C++), Link task
 - Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911258"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865350"
 ---
 # <a name="link-task"></a>Link タスク
-Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
+
+Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
+
  次には、**Link** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 - **AdditionalDependencies**
@@ -924,4 +926,5 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
   詳細については、「[/VERSION (バージョン情報)](/cpp/build/reference/version-version-information)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

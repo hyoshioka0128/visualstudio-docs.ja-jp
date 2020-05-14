@@ -3,17 +3,17 @@ title: 機能を提案する
 description: 開発者コミュニティにはどのような提案があるのか、提案する方法、Visual Studio のロードマップで提案がどのように Microsoft に使用されるのかについて説明します
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853517"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276489"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio の機能を提案する
 
@@ -103,7 +103,7 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 
 ## <a name="faq"></a>よくあるご質問
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>User Voice の自分のアイデアが開発者コミュニティに表示されないのはなぜですか?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>User Voice の自分のアイデアが Developer Community に表示されないのはなぜですか?
 
 古い User Voice フォーラムからの新しい機能の提案は、広範なコミュニティに与える影響と製品ロードマップの優先順位に基づいて開発者コミュニティに移行されています。 自分の提案の移行が見落とされていると思った場合は、新しい提案として開発者コミュニティに追加してください。
 

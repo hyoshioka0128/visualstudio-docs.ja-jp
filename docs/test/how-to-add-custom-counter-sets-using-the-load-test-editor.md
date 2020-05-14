@@ -7,15 +7,15 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e35794dd238ad816badeff34094a340e8e21d16d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7438f657af2ba40fbda5afefbd8a12cc56a2a4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664849"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114872"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してカスタム カウンター セットを追加する
 
@@ -41,12 +41,12 @@ ms.locfileid: "72664849"
     > [!NOTE]
     > カウンター セットには、**Custom1** のような既定の名前が付けられます。 名前は **[プロパティ]** ウィンドウを使用して変更できます。 **F4** キーを押して **[プロパティ]** ウィンドウを表示します。
 
-4. カウンターをカスタム カウンター セットに追加するには、新しいカウンター セットを右クリックし、 **[カウンターの追加]** を選択します。 カウンターを追加する方法の詳細については、「[方法:カウンターをカウンター セットに追加する](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)」を参照してください。
+4. カウンターをカスタム カウンター セットに追加するには、新しいカウンター セットを右クリックし、 **[カウンターの追加]** を選択します。 カウンターを追加する方法の詳細については、「[方法: カウンターをカウンター セットに追加する](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)」を参照してください。
 
     > [!NOTE]
     > カスタム カウンター セットも追加できます。追加するには、既存のカウンター セットを右クリックし、[コピー] を選択して、カウンター セット ノードに貼り付けます。 コピーされた追加のカウンターで不要になったものは削除できます。 新しいカウンター セットの名前は、 **[プロパティ]** ウィンドウを使用して変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)

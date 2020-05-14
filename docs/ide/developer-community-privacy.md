@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652481"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75775892"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -81,11 +81,11 @@ ms.locfileid: "72652481"
   - ダンプ ファイル
 
 > [!NOTE]
-> ログ ファイル、スクリーンショット、および記録データは、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログとファイルは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。
+> 送信されたログ ファイル、スクリーンショット、および記録データにより、Microsoft はより深く状況を理解して問題に対応できるようになります。  そのため、これらを含めることをお勧めします。 お客様のプライバシーを保護するため、添付されるログ ファイル、スクリーンショット、および記録データはすべて、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかをレポートを送信する前に確認できます。 レポートからシステム ログ ファイルを除外するには、[サマリー] 手順で [システム ログのアタッチ] をオフにします。 次のスクリーンショットを参照してください。 
   > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio 2017 で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)
 - [C++ の問題レポート データのプライバシー](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

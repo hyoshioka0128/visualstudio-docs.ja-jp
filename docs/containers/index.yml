@@ -1,4 +1,4 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Visual Studio のコンテナー ツール
 metadata:
   title: Docker コンテナー開発ツールのドキュメント
@@ -10,62 +10,68 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
+  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75400729"
 landingContent:
-  - title: コンテナー ツール
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Visual Studio のコンテナー ツール
-            url: overview.md
-  - title: 作業開始
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Visual Studio での Docker
-            url: container-tools.md
-          - text: コンテナーでのビルド ツールの実行
-            url: /visualstudio/install/build-tools-container
-          - text: Visual Studio Tools for Kubernetes
-            url: tutorial-kubernetes-tools.md
-  - title: コンテナー化されたアプリの開発
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Docker Compose を使用した複数コンテナーのアプリ
-            url: tutorial-multicontainer.md
-          - text: コンテナーでの js アプリの応答
-            url: container-tools-react.md
-          - text: Docker アプリをデバッグする
-            url: edit-and-refresh.md
-  - title: Docker コンテナーをデプロイする
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Azure Container Registry に展開する
-            url: hosting-web-apps-in-docker.md
-          - text: Azure App Service に配置する
-            url: deploy-app-service.md
-          - text: Docker Hub に配置する
-            url: deploy-docker-hub.md
-  - title: コンテナーの開発タスク
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: '方法: ビルドおよびデバッグ環境を構成する'
-            url: container-build.md
-          - text: '方法: コンテナーを表示および診断する'
-            url: view-and-diagnose-containers.md
-          - text: '方法: コンテナー開発ツールのトラブルシューティング'
-            url: troubleshooting-docker-errors.md
-  - title: コンテナー ツールの設定
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: コンテナーの起動設定
-            url: container-launch-settings.md
-          - text: コンテナーの MSBuild プロパティ
-            url: container-msbuild-properties.md
-          - text: Docker Compose MSBuild のプロパティ
-            url: docker-compose-properties.md
-          - text: コンテナー ツールを構成する
-            url: container-tools-configure.md
+- title: コンテナー ツール
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio のコンテナー ツール
+      url: overview.md
+- title: 作業開始
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Visual Studio での Docker
+      url: container-tools.md
+    - text: コンテナーでのビルド ツールの実行
+      url: /visualstudio/install/build-tools-container
+    - text: Visual Studio Tools for Kubernetes
+      url: tutorial-kubernetes-tools.md
+- title: コンテナー化されたアプリの開発
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Docker Compose を使用した複数コンテナーのアプリ
+      url: tutorial-multicontainer.md
+    - text: コンテナーでの js アプリの応答
+      url: container-tools-react.md
+    - text: Docker アプリをデバッグする
+      url: edit-and-refresh.md
+- title: Docker コンテナーをデプロイする
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Azure Container Registry に展開する
+      url: hosting-web-apps-in-docker.md
+    - text: Azure App Service に配置する
+      url: deploy-app-service.md
+    - text: Docker Hub に配置する
+      url: deploy-docker-hub.md
+- title: コンテナーの開発タスク
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: '方法: ビルドおよびデバッグ環境を構成する'
+      url: container-build.md
+    - text: '方法: コンテナーを表示および診断する'
+      url: view-and-diagnose-containers.md
+    - text: '方法: コンテナー開発ツールのトラブルシューティング'
+      url: troubleshooting-docker-errors.md
+- title: コンテナー ツールの設定
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: コンテナーの起動設定
+      url: container-launch-settings.md
+    - text: コンテナーの MSBuild プロパティ
+      url: container-msbuild-properties.md
+    - text: Docker Compose MSBuild のプロパティ
+      url: docker-compose-properties.md
+    - text: コンテナー ツールを構成する
+      url: container-tools-configure.md

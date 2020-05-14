@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS |Microsoft Docs
+title: FIELD_MODIFIERS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324492"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736858"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-フィールドの型の修飾子を指定します。
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
+フィールド型の修飾子を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -109,13 +109,13 @@ public enum enum_FIELD_MODIFIERS {
 フィールドにアクセスできないことを示します。
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-フィールドがパブリック アクセスを持つことを示します。
+フィールドにパブリック アクセスがあることを示します。
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-フィールドにアクセスが保護されていることを示します。
+フィールドに保護されたアクセス権があることを示します。
 
 `FIELD_MOD_ACCESS_PRIVATE`\
-フィールドがプライベート アクセスを持つことを示します。
+フィールドにプライベート アクセスがあることを示します。
 
 `FIELD_MOD_NOMODIFIERS`\
 フィールドに修飾子がないことを示します。
@@ -133,7 +133,7 @@ public enum enum_FIELD_MODIFIERS {
 フィールドが揮発性であることを示します。
 
 `FIELD_MOD_ABSTRACT`\
-フィールドが抽象であることを示します。
+フィールドが抽象フィールドであることを示します。
 
 `FIELD_MOD_NATIVE`\
 フィールドがネイティブであることを示します。
@@ -148,10 +148,10 @@ public enum enum_FIELD_MODIFIERS {
 フィールドがインターフェイスであることを示します。
 
 `FIELD_MOD_FINAL`\
-フィールドが最終的なであることを示します。
+フィールドが最終フィールドであることを示します。
 
 `FIELD_MOD_SENTINEL`\
-フィールドが sentinel であることを示します。
+フィールドがセンチネルであることを示します。
 
 `FIELD_MOD_INNERCLASS`\
 フィールドが内部クラスであることを示します。
@@ -160,40 +160,40 @@ public enum enum_FIELD_MODIFIERS {
 フィールドが省略可能であることを示します。
 
 `FIELD_MOD_BYREF`\
-フィールドが参照の引数であることを示します。 これは、専用のメソッドの引数。
+フィールドが参照引数であることを示します。 これは、メソッド引数に特化しています。
 
 `FIELD_MOD_HIDDEN`\
-フィールドを非表示または別のコンテキストで表示する必要があることを示しますたとえば、[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]静的ローカル変数。
+フィールドを非表示にするか、別のコンテキストで表示する必要があることを示します。たとえば、[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]静的なローカル。
 
 `FIELD_MOD_MARSHALASOBJECT`\
-フィールドを持つオブジェクトで表すことを示す、`IUnknown`インターフェイス。
+フィールドが`IUnknown`インターフェイスを持つオブジェクトを表すことを示します。
 
 `FIELD_MOD_SPECIAL_NAME`\
-フィールドなど、特別な名前を持つことを示します`.ctor`コンス トラクター ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
+フィールドに特殊な名前があることを示します (コンストラクター`.ctor`の[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]場合のみ)。
 
 `FIELD_MOD_HIDEBYSIG`\
-フィールドがあることを示します、`Overloads`キーワードを適用 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
+フィールドにキーワードが`Overloads`適用されていることを示します ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
 
 `FIELD_MOD_WRITEONLY`\
-フィールドが書き込み専用であることを示します。 この値が記載されていない`FIELD_MOD_ALL`関数の評価は、このような書き込み専用のフィールドのみを使用します。 ユーザーを明示的に問い合わせる必要があります`FIELD_MOD_WRITEONLY`フィールド。
+フィールドが書き込み専用であることを示します。 この値は、このような書`FIELD_MOD_ALL`き込み専用フィールドの唯一の使用が関数評価のためであるため、に含まれていません。 ユーザーは、フィールドを明示的に`FIELD_MOD_WRITEONLY`要求する必要があります。
 
 `FIELD_MOD_ACCESS_MASK`\
-フィールドへのアクセスのマスクを示します。
+フィールド アクセス用のマスクを示します。
 
 `FIELD_MOD_MASK`\
 フィールド修飾子のマスクを示します。
 
 ## <a name="remarks"></a>Remarks
-使用、`dwModifiers`のメンバー、 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体。
+FIELD_INFO構造体の`dwModifiers`メンバーに使用[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)されます。
 
-これらの値は渡されることも、 [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)メソッドの特定のフィールドをフィルター処理します。
+これらの値は[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)メソッドにも渡され、特定のフィールドをフィルター処理します。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: sh.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

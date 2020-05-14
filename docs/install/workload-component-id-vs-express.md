@@ -1,10 +1,10 @@
 ---
 title: Visual Studio Desktop Express のワークロード ID とコンポーネント ID
 titleSuffix: ''
-description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
+description: ワークロードとコンポーネント ID は、コマンド ラインを使用して Visual Studio をインストールするか、または VSIX マニフェストで依存関係として指定するために使用します
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,16 +16,17 @@ ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+open_to_public_contributors: false
+ms.openlocfilehash: 1e24f90f24921bee9a6132ccc047c0b9da37fc90
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818961"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276293"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Visual Studio Desktop Express のコンポーネント ディレクトリ
 
-このページの表では、コマンド ラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定するために使用できる ID の一覧を示します。 Visual Studio の更新プログラムがリリースされる際には、さらにコンポーネントが追加される予定です。
+このページの表には、コマンドラインを使用して Visual Studio をインストールまたは VSIX マニフェストで依存関係として指定できる、ID の一覧が表示されています。 Visual Studio の更新プログラムがリリースされる際には、さらにコンポーネントが追加される予定です。
 
 また、このページに関して以下の点に注意してください。
 
@@ -34,7 +35,7 @@ ms.locfileid: "62818961"
 * 選択した場合は、**推奨**コンポーネントと**オプション** コンポーネントもインストールできます。
 * どのワークロードにも関連付けられていない追加のコンポーネントの一覧を示したセクションも追加しました。
 
-VSIX マニフェストで依存関係を設定するときは、コンポーネント ID のみを指定する必要があります。 このページの表を使用して、コンポーネントの最小の依存関係を確認してください。 シナリオによって、1 つのワークロードの 1 つのコンポーネントだけを指定する場合もあれば、 1 つのワークロードの複数のコンポーネントを指定したり、複数のワークロードの複数のコンポーネントを指定したりする場合もあります。 詳細については、「[方法: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」 (方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する) を参照してください。
+VSIX マニフェストで依存関係を設定するときは、コンポーネント ID のみを指定する必要があります。 このページの表を使用して、コンポーネントの最小の依存関係を確認してください。 シナリオによって、1 つのワークロードの 1 つのコンポーネントだけを指定する場合もあれば、 1 つのワークロードの複数のコンポーネントを指定したり、複数のワークロードの複数のコンポーネントを指定したりする場合もあります。 詳しくは、「[How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」 (機能拡張プロジェクトを Visual Studio 2017 に移行する方法) をご覧ください。
 
 これらの ID の使用方法の詳細については、「[Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)」(コマンドライン パラメーターを使用して Visual Studio 2017 をインストールする) をご覧ください。 その他の製品のワークロードとコンポーネント ID の一覧については、「[Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md)」(Visual Studio 2017 のワークロード ID とコンポーネント ID) をご覧ください。
 
@@ -46,7 +47,7 @@ VSIX マニフェストで依存関係を設定するときは、コンポーネ
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | name | Version | 依存関係の種類
+コンポーネント ID | Name | Version | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce Publishing | 15.8.27825.0 | 必須
 Microsoft.Component.HelpViewer | ヘルプ ビューアー | 15.6.27323.2 | 必須
@@ -87,13 +88,13 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | name | Version
+コンポーネント ID | Name | Version
 --- | --- | ---
-N/A | N/A | N/A
+該当なし | 該当なし | 該当なし
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

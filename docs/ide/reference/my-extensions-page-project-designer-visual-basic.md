@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748684"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114218"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>[マイ拡張] ページ (プロジェクト デザイナー) (Visual Basic)
 **プロジェクト デザイナー**の **[マイ拡張]** ページを使用して、プロジェクトの `My` 名前空間拡張を管理します。 `My` 名前空間拡張を使用すれば、`My` 名前空間をカスタマイズして独自のカスタム メンバーに追加することができます。 カスタムの `My` 名前空間拡張の作成については、「[Visual Basic における My 名前空間の拡張](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)」を参照してください。
@@ -40,7 +40,7 @@ ms.locfileid: "72748684"
 
 **[マイ名前空間拡張]** リストで 1 つ以上の参照を選択し、このボタンをクリックして `My` 名前空間拡張をプロジェクトから削除します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Basic における My 名前空間の拡張](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [カスタム My 拡張のパッケージ化と配置](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

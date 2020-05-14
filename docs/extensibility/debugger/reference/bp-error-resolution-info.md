@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
+title: BP_ERROR_RESOLUTION_INFO |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_RESOLUTION_INFO structure
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dca7dcac5dc7ccf4d30d9b61165771ba464bbcf9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351829"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738088"
 ---
-# <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
-場所、プログラム、およびスレッドなど、エラー ブレークポイントの解決方法について説明します。
+# <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
+場所、プログラム、スレッドなど、エラー ブレークポイントの解決方法について説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -51,32 +51,32 @@ public struct BP_ERROR_RESOLUTION_INFO {
 
 ## <a name="members"></a>メンバー
 `dwFields`\
-値の組み合わせ、 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)この構造体のフィールドが記入を指定する列挙体。
+この構造体のどのフィールドに入力するかを指定する[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列挙体の値の組み合わせ。
 
 `bpResLocation`\
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)共用体は、ブレークポイント解像度の位置を指定します。
+ブレークポイント解決の位置を指定する[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)共用体。
 
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)ブレークポイントのエラーが発生したアプリケーションを表すオブジェクト。
+ブレークポイント エラーが発生したアプリケーションを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクト。
 
 `pThread`\
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ブレークポイントのエラーを生成したアプリケーションが実行されているスレッドを表すオブジェクト。
+ブレークポイント エラーを生成したアプリケーションが実行されているスレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。
 
 `bstrMessage`\
-このエラーの解決から生じる警告またはエラーのメッセージを含む文字列。
+このエラー解決の結果として発生する警告メッセージまたはエラー メッセージを含む文字列。
 
 `dwType`\
-値、 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)ブレークポイントのエラーの種類を指定する列挙体。
+ブレークポイントエラーの種類を指定する[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)列挙体の値。
 
 ## <a name="remarks"></a>Remarks
-この構造体から返される、 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)メソッド。
+この構造体は[、メソッドから](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)返されます。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

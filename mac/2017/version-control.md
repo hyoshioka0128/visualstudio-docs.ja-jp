@@ -6,13 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.openlocfilehash: 47b51306f8d0916eccd7db3a4740843bb7efba85
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984731"
 ---
-# <a name="version-control"></a>バージョン管理
+# <a name="version-control"></a>バージョン コントロール
 
 バージョン管理は、ファイルの多くの異なるバージョンを管理するためのシステムであり、ソフトウェア開発では、一般に多くの開発者が関与します。 バージョン管理システム (_VCS_) の主な目的は、すべてのユーザーがコードベースで同時に作業できるソリューションを見つけることです。
 
@@ -33,6 +33,6 @@ Visual Studio for Mac は、Git と Subversion の両方のバージョン管理
 * [Subversion リポジトリのセットアップ](set-up-subversion-repository.md)
 * [Subversion の使用](working-with-subversion.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio でのバージョン コントロール (Windows)](/visualstudio/version-control/)

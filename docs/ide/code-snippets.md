@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f6e2e9b4b89c7e6fd1fe9a342d4fd05b12e7a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747982"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75585419"
 ---
 # <a name="code-snippets"></a>コード スニペット
 
@@ -31,7 +31,7 @@ ms.locfileid: "72747982"
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[コード スニペット (Visual Studio for Mac)](/visualstudio/mac/snippets)」を参照してください。
 
-コード スニペットは、C#、C++、Visual Basic、XML、T-SQL など、多数の言語で利用できます。 ある言語で使用可能なすべてのインストール済みスニペットを表示するには、 **[ツール]** メニューの **[コード スニペット マネージャー]** を開き (または、**Ctrl** + **K** キー、**Ctrl** + **B** キーを押して)、上部のドロップダウン メニューから言語を選択します。
+コード スニペットは、C#、C++、Visual Basic、XML、T-SQL など、多数の言語で利用できます。 ある言語で使用可能なすべてのインストール済みスニペットを表示するには、 **[ツール]** メニューの **[コード スニペット マネージャー]** を開き (または、**Ctrl**+**K** キー、**Ctrl**+**B** キーを押して)、上部のドロップダウン メニューから言語を選択します。
 
 ![[コード スニペット マネージャー] ダイアログ ボックス](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "72747982"
 
 - コード エディターの右クリック メニューまたはコンテキスト メニューから、 **[スニペット]**  >  **[スニペットの挿入]** を選択します
 
-- キーボードで **Ctrl** + **K** キー、**Ctrl** + **X** キーを押します
+- キーボードで **Ctrl**+**K** キー、**Ctrl**+**X** キーを押します
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>拡張スニペットとブロックの挿入用スニペット
 

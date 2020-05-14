@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644361"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115178"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>方法: ロード テスト結果のグラフにカウンターを追加および削除する
 
@@ -28,7 +28,7 @@ ms.locfileid: "72644361"
 
 **パフォーマンス カウンターのサンプリング間隔に関する考慮事項**
 
-ロード テストの長さに基づいて、ロード テストの実行設定の **[サンプル速度]** プロパティの値を選択します。 既定値 (5 秒) のようにサンプル速度が小さいと、ロード テスト結果のデータベースに必要な容量が増えます。 長いロード テストでは、サンプル速度を増加すると、収集するデータ量を減らすことができます。 詳細については、[サンプル速度を指定する](../test/how-to-specify-the-sample-rate-for-a-load-test.md)」を参照してください。
+ロード テストの長さに基づいて、ロード テストの実行設定の **[サンプル速度]** プロパティの値を選択します。 既定値 (5 秒) のようにサンプル速度が小さいと、ロード テスト結果のデータベースに必要な容量が増えます。 長いロード テストでは、サンプル速度を増加すると、収集するデータ量を減らすことができます。 詳細については、「[方法: サンプル速度を指定する](../test/how-to-specify-the-sample-rate-for-a-load-test.md)」をご覧ください。
 
 以下は、サンプル速度のガイドラインです。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72644361"
 
 ロード テストの結果リポジトリでタイミングの詳細データを格納するために必要なディスク容量が、長時間実行されるロード テストで特に大きくなります。 また、ロード テストの終わりにこのデータをロード テストの結果リポジトリに格納するのに時間がかかります。これは、ロード テストの実行が完了するまでデータがロード テスト エージェントに格納されるためです。 ロード テストが完了すると、データはリポジトリに格納されます。 既定では、 **[タイミングの詳細ストレージ]** プロパティは有効になっています。 これがテスト環境で問題になる場合は、 **[タイミングの詳細ストレージ]** を **[なし]** に設定します。
 
-詳細については、[[タイミングの詳細ストレージ] プロパティを指定する](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)」を参照してください。
+詳細については、「[方法: [タイミングの詳細ストレージ] プロパティを指定する](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)」をご覧ください。
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>特定のパフォーマンス カウンターをロード テストのグラフに表示するには
 
@@ -71,18 +71,18 @@ ms.locfileid: "72644361"
 
 5. グラフからパフォーマンス カウンター データを削除するには、凡例の **[カウンター]** 列のパフォーマンス カウンターを右クリックし、 **[削除]** を選択します。
 
-     \- または
+     \- - または -
 
      グラフでデータ線を右クリックし、 **[削除]** を選択します。
 
-     \- または
+     \- - または -
 
      凡例の **[カウンター]** 列のパフォーマンス カウンター、またはグラフのデータ行を選択し、**Delete** キーを押します。
 
     > [!NOTE]
     > また、グラフではなく凡例にパフォーマンス カウンターを配置することもできます。その場合は、 **[凡例にカウンターを表示]** コマンドを使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [グラフ ビューでのロード テスト結果の分析](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [方法: カスタム グラフを作成する](../test/how-to-create-custom-graphs-in-load-test-results.md)

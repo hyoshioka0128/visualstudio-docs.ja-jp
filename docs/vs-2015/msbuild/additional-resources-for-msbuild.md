@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d82531bcde6e0a03485ac6bf77965b5c5744f23
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: 3557e830ba90b1e9f32b01c344867c5370e7425c
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300450"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586198"
 ---
 # <a name="additional-resources-for-msbuild"></a>MSBuild の追加のリソース
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "74300450"
 ## <a name="microsoft-resources"></a>Microsoft のリソース  
   
 ### <a name="on-the-web"></a>Web 上  
- [MSBuild Channel 9 の Web サイト](https://go.microsoft.com/fwlink/?LinkId=243092)  
+ [MSBuild Channel 9 の Web サイト](https://channel9.msdn.com/tags/MSBuild/)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に関する情報と Web 上の他の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] サイトへのリンクが含まれます。  
   
- [MSBuild チームのブログ](https://go.microsoft.com/fwlink/?LinkId=65846)  
+ [MSBuild チームのブログ](https://blogs.msdn.com/b/msbuild/)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 製品チームによって書かれた情報、リンク、および更新が含まれます。  
   
- [Visual Studio MSBuild フォーラム](https://go.microsoft.com/fwlink/?LinkId=48931)  
+ [Visual Studio MSBuild フォーラム](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 専用のコミュニティ フォーラム。  
   
 ## <a name="see-also"></a>関連項目

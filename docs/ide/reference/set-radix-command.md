@@ -1,4 +1,4 @@
----
+﻿---
 title: SetRadix コマンド
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f920311301b722c11bea4a9f4eb90e9aa7663d80
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747730"
 ---
 # <a name="set-radix-command"></a>SetRadix コマンド
@@ -41,9 +41,10 @@ Debug.SetRadix [10 | 16 | hex | dec]
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+

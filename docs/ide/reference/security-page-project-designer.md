@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29723f5e253a2ff6d4f6c35e8ad8d3e09e2393f1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748651"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649836"
 ---
 # <a name="security-page-project-designer"></a>[セキュリティ] ページ (プロジェクト デザイナー)
 
@@ -80,7 +80,7 @@ WPF Web ブラウザー アプリケーション プロジェクトでは、こ�
 - [方法: [ClickOnce セキュリティ設定を有効にする]](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定する](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [方法: ClickOnce アプリケーションのカスタム アクセス許可を設定する](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [ClickOnce アプリをセキュリティで保護する](../../deployment/securing-clickonce-applications.md)
 - [ClickOnce のセキュリティと配置](../../deployment/clickonce-security-and-deployment.md)
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [[セキュリティの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-security-settings-dialog-box.md)

@@ -10,15 +10,15 @@ ms.assetid: 6bcc5712-6cc6-4f59-8933-6e8078318c45
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9aeb80d348e31de0934d515754c59346fac3c2ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665258"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591178"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Web パフォーマンス テストのカスタム抽出規則のコーディング
 
@@ -204,9 +204,9 @@ Namespace ClassLibrary2
 End Namespace
 ```
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドに、抽出規則の中心的な機能が含まれています。 前の例の <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドは、この抽出規則の対象となる要求が生成する応答を示す <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> を受け取ります。 応答には、応答内のすべてのタグを含む <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> が含まれています。 入力タグは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> からフィルターで除外されます。 各入力タグについて、`Name` プロパティに対してユーザーが指定した値を持つ `name` という属性があるかどうか、確認されます。 一致する属性を持つタグが見つかった場合、value 属性が存在すれば、その `value` 属性に含まれている値の抽出が試みられます。 存在する場合、タグの名前と値が抽出され、Web パフォーマンス テスト コンテキストに追加されます。 抽出規則が成功します。
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドに、抽出規則の中心的な機能が含まれています。 前の例の <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドは、この抽出規則の対象となる要求が生成する応答を示す <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> を受け取ります。 応答には、応答内のすべてのタグを含む <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> が含まれています。 入力タグは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> からフィルターで除外されます。 各入力タグについて、`name` プロパティに対してユーザーが指定した値を持つ `Name` という属性があるかどうか、確認されます。 一致する属性を持つタグが見つかった場合、value 属性が存在すれば、その `value` 属性に含まれている値の抽出が試みられます。 存在する場合、タグの名前と値が抽出され、Web パフォーマンス テスト コンテキストに追加されます。 抽出規則が成功します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

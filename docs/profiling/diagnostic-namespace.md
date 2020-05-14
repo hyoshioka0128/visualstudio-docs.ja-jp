@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970084"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 名前空間
@@ -32,18 +32,18 @@ namespace diagnostic;
 
 ### <a name="classes"></a>クラス
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[marker_series クラス](../profiling/marker-series-class.md)|1 つのプロバイダーによって生成されたイベントのシリアル チャネルを表します。|
 |[span クラス](../profiling/span-class.md)|アプリケーションのフェーズを定義します。|
 
 ### <a name="enumerations"></a>列挙
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[marker_importance 列挙型](../profiling/marker-importance-enumeration.md)|コンカレンシー ビジュアライザー マーカーの重要度レベルを表します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  **ヘッダー:** *cvmarkersobj.h*
 
  **名前空間:** コンカレンシー

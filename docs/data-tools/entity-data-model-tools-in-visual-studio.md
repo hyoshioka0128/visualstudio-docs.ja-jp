@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586667"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916734"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio での Entity Framework Tools
 
@@ -43,7 +43,7 @@ Entity Framework ツールは、Visual Studio インストーラーの**デー�
 
 これらのツールは *.edmx*ファイルを生成または変更します。 この *.edmx*ファイルには、概念モデル、ストレージモデル、およびそれらの間のマッピングについて説明する情報が含まれています。 詳細については、「 [EDMX](/ef/ef6/)」を参照してください。
 
-[Entity Framework パワーツール](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)は、Entity Data Model を使用するアプリケーションを構築するのに役立ちます。 パワーツールは、概念モデルの生成、既存のモデルの検証、概念モデルに基づくオブジェクトクラスを含むソースコードファイルの生成、およびモデルによって生成されるビューを含むソースコードファイルの生成を行うことができます。 詳細については、「[事前に生成されたマッピングビュー](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views)」を参照してください。
+[Entity Framework パワーツール](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)は、Entity Data Model を使用するアプリケーションを構築するのに役立ちます。 パワーツールは、概念モデルの生成、既存のモデルの検証、概念モデルに基づくオブジェクトクラスを含むソースコードファイルの生成、およびモデルによって生成されるビューを含むソースコードファイルの生成を行うことができます。 詳細については、「[事前に生成されたマッピングビュー](/ef/ef6/fundamentals/performance/pre-generated-views)」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

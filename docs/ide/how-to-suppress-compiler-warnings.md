@@ -8,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747945"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114512"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>方法:コンパイラ警告の非表示
+# <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラの警告を非表示にする
 
-1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
+1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは「[方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# または F\# の特定の警告を非表示にする
 
@@ -69,7 +69,7 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
 1. ビルドに使用するビルド構成の `<NoWarn>` 要素を見つけ、`<NoWarn>` 要素の値として 1 つまたは複数の警告番号を追加します。 複数の警告番号を指定する場合は、コンマで区切ります。
 
-     次の例では、2 つのコンパイラの警告が非表示にされた、x86 プラットフォームでの*デバッグ* ビルド構成の `<NoWarn>` 要素を太字で示してあります。
+     次の例では、2 つのコンパイラの警告が非表示にされた、x86 プラットフォームでの`<NoWarn>`デバッグ*ビルド構成の* 要素を太字で示してあります。
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -130,8 +130,8 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
    **ソリューション エクスプローラー**と**エラー一覧**から警告が消えます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [チュートリアル: アプリケーションを構築する](../ide/walkthrough-building-an-application.md)
+- [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)
 - [方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

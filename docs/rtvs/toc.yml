@@ -8,15 +8,15 @@
   items:
     - name: インストール
       href: installing-r-tools-for-visual-studio.md
-    - name: ヘルプ情報の入手
+    - name: ヘルプの表示
       href: getting-started-help.md
 - name: チュートリアル
   items:
-    - name: R の使用を開始する
+    - name: R の概要
       href: getting-started-with-r.md
 - name: サンプル
   href: getting-started-samples.md
-- name: 使い方ガイド
+- name: 操作方法ガイド
   items:
     - name: R プロジェクト
       items:
@@ -56,7 +56,7 @@
       href: variable-explorer.md
     - name: デバッグ
       href: debugging-r-in-visual-studio.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: オプション
       href: options-for-r-tools-in-visual-studio.md

@@ -5,23 +5,23 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693066"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75678895"
 ---
-# <a name="creating-a-new-project"></a>新規プロジェクトの作成
+# <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
 ## <a name="opening-the-project-creation-dialog"></a>[プロジェクト作成] ダイアログを開く
 
-Visual Studio for Mac では、いくつかの方法で新しいプロジェクトを作成できます。 Visual Studio for Mac を初めて開くと、ようこそ画面が表示されます。 ここから、 **[新規]** を選択して、プロジェクト作成画面に移動することができます。
+Visual Studio for Mac では、いくつかの方法で新しいプロジェクトを作成できます。 Visual Studio for Mac を初めて開くと、スタート ウィンドウが表示されます。 ここから、 **[新規]** を選択して、プロジェクト作成画面に移動することができます。
 
 > [!TIP]
-> さらに、ようこそ画面から、最近使ったプロジェクトおよびソリューションを開いて検索することができます。 メニュー バーに移動し、 **[ファイル]、[最近のソリューション]** の順に選択することで、最近使ったプロジェクトを開くこともできます。
+> さらに、スタート ウィンドウから、最近使ったプロジェクトおよびソリューションを開いて検索することができます。 メニュー バーに移動し、 **[ファイル]、[最近のソリューション]** の順に選択することで、最近使ったプロジェクトを開くこともできます。
 
-![ようこそ画面と新しいプロジェクトの作成](media/first-run-project.png)
+![スタート ウィンドウでの新しいプロジェクトの作成](media/first-run-project.png)
 
 Visual Studio for Mac が既に開いていてソリューションが読み込まれている場合は、メニューバーに進み、 **[ファイル]、[新しいソリューション]** の順に選択して、新しいソリューションを作成することができます。 この方法で新しいソリューションを作成する場合、既に読み込まれているソリューションは閉じられます。
 
@@ -51,6 +51,6 @@ Visual Studio for Mac が既に開いていてソリューションが読み込�
 
 既存のプロジェクトを追加することを選択した場合は、ご利用のコンピューター上にある既存のプロジェクトを参照してそれをソリューションに追加できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ソリューションとプロジェクトを作成する (Windows の Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

@@ -7,16 +7,16 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938870"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594930"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask 基底クラス
 
@@ -26,7 +26,7 @@ ms.locfileid: "62938870"
 
 以下の表では、**TrackedVCToolTask** 基底クラスのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|省略可能な **bool** 型のパラメーターです。|
 |**EnableExecuteTool**|省略可能な **bool** 型のパラメーターです。|
@@ -48,7 +48,7 @@ ms.locfileid: "62938870"
 |**TrackerFrameworkPath**|省略可能な **string** 型のパラメーターです。|
 |**TrackerSdkPath**|省略可能な **string** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)<br/>
 [タスク](../msbuild/msbuild-tasks.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814614ae752a670a8b707e6fd701a5fa151f481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668587"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569089"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>方法: エディターで URL をリンクとして表示する
 

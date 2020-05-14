@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297954"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586336"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでのさまざまな Web ブラウザーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード化された UI テストでは、Internet Explorer を使用してテストを記録することによって、Web アプリケーションのテストを自動化できます。 その後、テストをカスタマイズし、Internet Explorer や Web アプリケーションに対応している他の種類のブラウザーを使用して再生できます。
 
- **Requirements**
+ **必要条件**
 
 - Visual Studio Enterprise
 
@@ -42,7 +42,7 @@ ms.locfileid: "74297954"
 
 - [コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)をインストールします。
 
-  **すべての Web ブラウザーでサポートされている機能**
+  **すべての web ブラウザーでサポートされているもの**
 
 - プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)します。
 
@@ -73,7 +73,7 @@ ms.locfileid: "74297954"
 
 2. [拡張機能と更新プログラム] ダイアログ ボックスで、`Selenium components for Cross Browser Testing` を検索します。
 
-3. 拡張機能を強調表示し、 **[ダウンロード]** を選択します。
+3. 拡張機能を強調表示し、**[ダウンロード]** を選択します。
 
    > [!TIP]
    > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)からもダウンロードできます。
@@ -85,7 +85,7 @@ ms.locfileid: "74297954"
 
 1. マイ コードのみを有効にする:
 
-    1. **[ツール]** メニューの **[オプション]** を選択し、 **[デバッグ]** を選択します。
+    1. **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。
 
     2. **[マイ コードのみを有効にする]** を選択します。
 
@@ -93,13 +93,13 @@ ms.locfileid: "74297954"
 
     1. **[デバッグ]** メニューの **[例外]** を選択します。
 
-    2. **[共通言語ランタイム例外]** で、 **[ユーザーにハンドルされていないとき]** をオフにします。
+    2. **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。
 
-## <a name="generate"></a> *コード化された UI テストで、BrowserWindow.CurrentBrowser を変更するオプションが表示されません。*
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a> *コード化された UI テストで、BrowserWindow.CurrentBrowser を変更するオプションが表示されません。*
  さまざまな Web ブラウザーを使用するコード化された UI テストをサポートしないバージョンの [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise を使用する必要があります。
 
  *その他に知っておく必要があること*
- **ノート**
+ **メモ**
 
 - ![Prerequsite](../test/media/prereq.png "前提条件")Apple Safari web ブラウザーはサポートされていません。
 
@@ -125,9 +125,9 @@ ms.locfileid: "74297954"
 
     詳細については、「[コード化された UI テスト ログを使用したコード化された UI テストの分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)」をご覧ください。
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>ビデオ
  [IE で記録し、任意の場所で再生する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [コード化された UI テスト ビルダーでクロス ブラウザー テストを作成する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -139,17 +139,17 @@ ms.locfileid: "74297954"
  [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>ガイダンス
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012 を使用した継続的デリバリーのためのテスト–第5章: システムテストの自動化](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>よく寄せられる質問
- [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
- [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Coded UI Tests FAQ - 2 (コード化された UI テストの FAQ - 2)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>フォーラム
- [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Ui オートメーションを使用して、コード](../test/use-ui-automation-to-test-your-code.md)化された ui テスト[と操作の記録に対してサポートされている構成とプラットフォームの](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)テストコード化された ui テストの[ログ](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

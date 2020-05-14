@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /SafeMode switch
 - SafeMode switch
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abaeded184db78085a9629da0e763b2f76dbd328
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655510"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593591"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 
@@ -41,6 +41,6 @@ devenv /SafeMode
 devenv /safemode
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

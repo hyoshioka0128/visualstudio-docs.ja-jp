@@ -2,17 +2,17 @@
 title: メソッド オーバーライドの生成
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 075c7dc49ffba1d67bbb5b62d313f50b5d09e956
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668446"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569245"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio でオーバーライドを生成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "72668446"
 
 **理由:** メソッド シグネチャは自分でも記述できるが、この機能ではシグネチャが自動的に生成されるため。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. オーバーライド メソッドを挿入する位置に、「`override`」 (C# の場合) または「`Overrides`」 (Visual Basic の場合) と入力し、その後にスペースを入力します。
 
@@ -56,6 +56,6 @@ ms.locfileid: "72668446"
 
        ![オーバーライドの結果 (VB)](media/override-result-vb.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード生成](../code-generation-in-visual-studio.md)

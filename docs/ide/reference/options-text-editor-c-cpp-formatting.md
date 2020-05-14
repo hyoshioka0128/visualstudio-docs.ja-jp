@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Text Editor Options dialog box, formatting
 - ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461804"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596256"
 ---
 # <a name="options-text-editor-cc-formatting"></a>[オプション]、[テキスト エディター]、[C/C++]、[書式設定]
 
@@ -54,7 +54,7 @@ ms.locfileid: "68461804"
 
 ::: moniker-end
 
-ClangFormat のサポートは、既定で有効になっています。 一般的な書式設定規則であるLLVM、Google、Chromium、Mozilla、WebKit のうち、すべてのプロジェクトに適用するものを選択できます。 また、カスタム書式定義の .clang-format または _clang-format ファイルを作成できます。 そのようなファイルがプロジェクト フォルダーに置かれている場合、Visual Studio は、そのフォルダーとそのサブフォルダーのすべてのソース コード ファイルの書式設定にそのファイルを使用します。
+ClangFormat のサポートは、既定で有効になっています。 一般的な書式設定規則である LLVM、Google、Chromium、Mozilla、WebKit のうち、すべてのプロジェクトに適用するものを選択できます。 また、カスタム書式定義の .clang-format または _clang-format ファイルを作成できます。 そのようなファイルがプロジェクト フォルダーに置かれている場合、Visual Studio は、そのフォルダーとそのサブフォルダーのすべてのソース コード ファイルの書式設定にそのファイルを使用します。
 
 既定では、Visual Studio は clangformat.exe をバックグラウンドで実行し、ユーザーが入力すると書式設定を適用します。 書式設定コマンド **Format Document (Ctrl + K、Ctrl + D)** または **Format Selection (Ctrl + K、Ctrl + F)** を手動で呼び出す場合にのみ、clangformat.exe を実行するように指定することもできます。
 
@@ -62,7 +62,7 @@ ClangFormat のサポートは、既定で有効になっています。 一般�
 
 これらのページでは、さまざまな書式設定をカスタマイズできますが、ClangFormat が有効になっている場合は無視されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
 - [IntelliSense の使用](../../ide/using-intellisense.md)

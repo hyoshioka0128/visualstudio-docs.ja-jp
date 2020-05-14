@@ -13,22 +13,24 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746598"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634085"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper タスク
+
 アプリケーションとその前提条件を検出、ダウンロード、インストールする自動化方法を提供します。 これは、アプリケーションを構成するすべてのコンポーネントの別々のインストーラーを統合する単一のインストーラーとして機能します。
 
 ## <a name="task-parameters"></a>タスク パラメーター
+
 次の表では、`GenerateBootstrapper` タスクのパラメーターを説明します。
 
 - `ApplicationFile`
@@ -76,7 +78,7 @@ ms.locfileid: "66746598"
   </BootstrapperItem>
   ```
 
-   `Include` 属性は、インストールする必要がある前提条件の名前を表します。 `ProductName` 項目メタデータは省略可能であり、パッケージが見つからない場合に、ユーザー フレンドリーな名前としてビルド エンジンによって使用されます。 これらの項目は、`ApplicationFile` が指定されている場合を除き、必須の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 入力パラメーターではありません。 アプリケーション用にインストールする必要がある前提条件ごとに、1 つの項目を含める必要があります。
+   `Include` 属性は、インストールする必要がある前提条件の名前を表します。 `ProductName` 項目メタデータは省略可能であり、パッケージが見つからない場合に、ユーザー フレンドリーな名前としてビルド エンジンによって使用されます。 これらの項目は、`ApplicationFile` が指定されている場合を除き、必須の MSBuild 入力パラメーターではありません。 アプリケーション用にインストールする必要がある前提条件ごとに、1 つの項目を含める必要があります。
 
    `BootstrapperItems` パラメーターも `ApplicationFile` パラメーターも指定されていない場合、ビルド エラーが発生します。
 
@@ -148,10 +150,12 @@ ms.locfileid: "66746598"
 
    `true` の場合、ブートストラップは指定された入力ブートストラップ項目に対して XSD 検証を実行します。 このパラメーターの既定値は、`false` です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
+
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
+
 次の例では、前提条件として .NET Framework 2.0 がインストールされていなければならないアプリケーションをインストールするために `GenerateBootstrapper` タスクが使用されています。
 
 ```xml
@@ -176,5 +180,6 @@ ms.locfileid: "66746598"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

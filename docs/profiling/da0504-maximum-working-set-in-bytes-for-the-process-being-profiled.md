@@ -1,5 +1,5 @@
 ---
-title: DA0504:プロセスのワーキング セット最大バイト数がプロファイリングされています | Microsoft Docs
+title: 'DA0504: プロセスのワーキング セット最大バイト数がプロファイリングされています | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,20 +14,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779325"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504:プロセスのワーキング セット最大バイト数がプロファイリングされています
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: プロセスのワーキング セット最大バイト数がプロファイリングされています
 
 |||
 |-|-|
 |規則 ID|DA0504|
 |カテゴリ|リソース管理|
-|プロファイル方法|すべて|
-|メッセージ|この情報は、情報提供のためにのみ収集されました。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて観察された最大値です。|
+|プロファイル方法|All|
+|[メッセージ]|この情報は、情報提供のためにのみ収集されました。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて観察された最大値です。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

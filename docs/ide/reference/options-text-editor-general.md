@@ -28,17 +28,17 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666208"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472823"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [全般]
 
@@ -93,6 +93,10 @@ ms.locfileid: "72666208"
 ### <a name="show-structure-guide-lines"></a>構造のガイド線を表示する
 
 選択した場合、構造化されたコード ブロックに合う垂直線がエディターに表示され、個々のコード ブロックを簡単に識別できます。
+
+### <a name="show-file-health-indicator"></a>ファイルの正常性インジケーターの表示
+
+選択すると、エディターの左下隅にファイルの正常性インジケーターの状態 (エラー、警告) バーとコード クリーンアップ オプションが表示されます。
 
 ## <a name="see-also"></a>関連項目
 

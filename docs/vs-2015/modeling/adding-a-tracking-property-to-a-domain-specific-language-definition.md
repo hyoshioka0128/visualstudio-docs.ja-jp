@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60823c1fe17613f36e800a2cdf69dd19049ddb27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292650"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919115"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>ドメイン固有言語の定義への追跡プロパティの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,14 +45,14 @@ ms.locfileid: "74292650"
 
 - **プロパティ** ウィンドウで、tracking プロパティが ユーザーによる更新 状態になっている場合、その値が太字のフォントで表示されます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  このチュートリアルを開始するには、まず次のコンポーネントをインストールする必要があります。
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[SDK のダウンロードのモデリング](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-the-dsl-project"></a>DSL プロジェクトの作成
  ドメイン固有言語のプロジェクトを作成します。
@@ -756,9 +756,9 @@ ms.locfileid: "74292650"
 
 10. ソリューションを保存し、実験用ビルドを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  複数の追跡プロパティを使用する場合、または複数の DSL で追跡プロパティを実装する場合は、各追跡プロパティをサポートするための共通コードを生成するテキストテンプレートを作成できます。 テキストテンプレートの詳細については、「[コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md) [: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する方法[チュートリアル: ドメイン固有言語定義のカスタマイズ](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

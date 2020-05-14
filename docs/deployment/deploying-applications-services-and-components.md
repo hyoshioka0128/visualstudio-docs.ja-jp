@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806916"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543966"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -146,7 +146,7 @@ Azure Pipelines を使用し、アプリの継続的配置を有効にできま�
 
 | アプリの種類 | 配置シナリオ | Link |
 | --- | --- | --- |
-| **Office アプリ** | Visual Studio から Office 用のアドインを発行できます。 | [Office アドインを配置し、発行する](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Office アプリ** | Visual Studio から Office 用のアドインを発行できます。 | [Office アドインを配置し、発行する](/office/dev/add-ins/publish/publish) |
 | **WCF または OData サービス** | Web サーバーに配置した WCF RIA サービスを他のアプリケーションで使用できます。 | [WCF Data Services の開発と配置](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch は、Visual Studio 2017 以降ではサポートされていませんが、Visual Studio 2015 以前からは引き続き配置できます。 | [LightSwitch アプリケーションの配置](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

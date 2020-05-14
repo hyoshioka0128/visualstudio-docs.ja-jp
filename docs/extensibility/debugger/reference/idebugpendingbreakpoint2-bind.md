@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind |Microsoft Docs
+title: Iデバッグ保留中のブレークポイント2::バインド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - Bind method
 - IDebugPendingBreakpoint2::Bind method
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba30628c426bd7031d750838491f9bcc70c14a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 83d48e8df847620716b0f581be65ded48e2e5a13
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350735"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725988"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-この保留中のブレークポイントをコードの 1 つまたは複数の場所にバインドします。
+この保留中のブレークポイントを 1 つ以上のコードの場所にバインドします。
 
 ## <a name="syntax"></a>構文
 
@@ -39,12 +39,12 @@ int Bind();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`ブレークポイントが削除されている場合。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 ブレークポイント`E_BP_DELETED`が削除されたかどうかを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが呼び出されると、デバッグ エンジン (DE) する必要がありますに一致するすべてのコードの場所にこの保留中のブレークポイントをバインドしようとします。
+ このメソッドが呼び出されると、デバッグ エンジン (DE) は、この保留中のブレークポイントを一致するすべてのコードの場所にバインドしようとする必要があります。
 
- このメソッドから制御が戻る後、呼び出し元が保留中のブレークポイントがバインドされていることを示すエラーとして扱う前に、イベントへの呼び出しを待機する必要があります、 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)または[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)メソッドとは、バインドまたはエラーですべてのブレークポイントをそれぞれ列挙されます。
+ このメソッドが戻った後、呼び出し元は、保留中のブレークポイントがバインドされているか、またはエラーであることを示すイベントを待機する必要があります、 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)または[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods メソッドを呼び出すと、それぞれすべてのバインドまたはエラーのブレークポイントが列挙されると仮定します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

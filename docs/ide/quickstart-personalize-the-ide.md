@@ -1,18 +1,18 @@
 ---
 title: 配色テーマとフォントを設定する
-ms.date: 11/20/2017
+ms.date: 03/23/2020
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667794"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233150"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Visual Studio IDE とエディターのカスタマイズ
 
@@ -52,8 +52,19 @@ Visual Studio のユーザー インターフェイスの既定の配色テー�
 
    ::: moniker-end
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > **Visual Studio 配色テーマ エディター**を [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) からインストールして、定義済みテーマを追加でインストールすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ドロップダウン リストに表示されます。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> **Visual Studio 配色テーマ デザイナー**を [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) からインストールして、独自のテーマを作成できます。
+
+::: moniker-end
 
 ## <a name="change-text-color"></a>テキストの色の変更
 

@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748917"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590685"
 ---
 # <a name="c-structures-in-class-designer"></a>クラス デザイナーの C++ 構造体
 
-**クラス デザイナー**は、C++ の構造体をサポートしています。これは、`struct` キーワードを使用して宣言されます。 例を次に示します。
+**クラス デザイナー**は、C++ の構造体をサポートしています。これは、`struct` キーワードを使用して宣言されます。 たとえば次のようになります。
 
 ```cpp
 struct MyStructure
@@ -38,7 +38,7 @@ struct MyStructure
 |------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> 構造体|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
 - [クラスと構造体](/cpp/cpp/classes-and-structs-cpp)

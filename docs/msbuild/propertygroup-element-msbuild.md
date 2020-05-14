@@ -13,20 +13,21 @@ helpviewer_keywords:
 - <PropertyGroup> element [MSBuild]
 - PropertyGroup element [MSBuild]
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974684"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632928"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 要素 (MSBuild)
-ユーザー定義の [Property](../msbuild/property-element-msbuild.md) 要素のセットを格納します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用される各 `Property` 要素は、`PropertyGroup` 要素の子である必要があります。
+
+ユーザー定義の [Property](../msbuild/property-element-msbuild.md) 要素のセットを格納します。 MSBuild プロジェクトで使用されるすべての `Property` 要素は、`PropertyGroup` 要素の子である必要があります。
 
  \<Project> \<PropertyGroup>
 
@@ -40,6 +41,7 @@ ms.locfileid: "62974684"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -58,9 +60,10 @@ ms.locfileid: "62974684"
 
 | 要素 | 説明 |
 | - | - |
-| [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 
 ## <a name="example"></a>例
+
  条件に基づいてプロパティを設定する方法を次のコード例に示します。 この例では、`CompileConfig` プロパティの値が `DEBUG` の場合に、`PropertyGroup` 要素内の `Optimization` プロパティ、`Obfuscate` プロパティ、`OutputPath` プロパティが設定されます。
 
 ```xml
@@ -72,5 +75,6 @@ ms.locfileid: "62974684"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild プロパティ](../msbuild/msbuild-properties.md)

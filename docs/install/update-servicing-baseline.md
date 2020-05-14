@@ -5,25 +5,25 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: doughall
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114961"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>サービス ベースライン使用時の Visual Studio の更新
 
 Visual Studio は、製品のライフサイクルの間に頻繁に更新されます。 2 種類の更新があります。 
 
-* **マイナー リリース更新** &mdash; たとえば、16.0 から 16.1 &mdash; 新しい機能とコンポーネントが含まれます。  
+* **マイナー リリース更新**&mdash; たとえば、16.0 から 16.1 &mdash; 新しい機能とコンポーネントが含まれます。  
 * **サービス更新** — たとえば、16.0.4 から 16.0.5 — 重要な問題だけに対象を絞った修正が含まれます。
 
 エンタープライズ管理者は、各クライアントをサービス ベースラインに留めることを選択できます。 サービス ベースラインは、次のサービス ベースラインのリリースから 1 年間、サービス更新プログラムによりサポートされます。
@@ -44,7 +44,7 @@ Visual Studio は、製品のライフサイクルの間に頻繁に更新され
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>ネットワーク上のサービス ベースラインをインストールする
 
-ネットワーク レイアウト インストールを使う管理者は、レイアウトの *response.json* ファイルの `channelUri` の値を変更して、同じフォルダー内にある *channelmanifest.json* ファイルを使うようにする必要があります。 従う手順については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 `channelUri` の値を変更すると、クライアントがレイアウトの場所で更新プログラムを検索できるようになります。
+ネットワーク レイアウト インストールを使う管理者は、レイアウトの `channelUri`response.json*ファイルの* の値を変更して、同じフォルダー内にある *channelmanifest.json* ファイルを使うようにする必要があります。 従う手順については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 `channelUri` の値を変更すると、クライアントがレイアウトの場所で更新プログラムを検索できるようになります。
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>インターネット経由でサービス ベースラインをインストールする
 
@@ -62,7 +62,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 サービス ベースライン用の更新プログラムを入手できる場合、[My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0) でサービス更新プログラム用に修正済みバージョンのブートストラップ ファイルを入手できます。
 
-ネットワーク レイアウト インストールを使って配置を行う管理者の場合、管理者は[レイアウトの場所](update-a-network-installation-of-visual-studio.md)を更新する必要があります。 その場所からインストールしたクライアントは、更新通知を受け取ります。 更新をクライアントに配置する必要がある場合は、[こちらの手順](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines)に従ってください。 更新用の "response.json" を変更する場合は、新しいワークロード、コンポーネント、または言語を追加しないでください。 製品を更新した後は、このような設定の管理は配置の '変更' として実行する必要があります。
+ネットワーク レイアウト インストールを使って配置を行う管理者の場合、管理者は[レイアウトの場所](update-a-network-installation-of-visual-studio.md)を更新する必要があります。 その場所からインストールしたクライアントは、更新通知を受け取ります。 更新をクライアントに配置する必要がある場合は、[こちらの手順](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines)に従ってください。 更新用の "response.json" を変更する場合は、新しいワークロード、コンポーネント、または言語を追加しないでください。 製品を更新した後は、このような設定の管理は配置の '変更' として実行する必要があります。
 
 インターネット ベースのインストールの場合は、新しい修正済みバージョンのブートストラップを、クライアント上の存在しないチャネル マニフェストを指す `--channelUri` パラメーターと共に実行します。 Quiet または受動モードで更新プログラムを配置する場合は、2 つの別々のコマンドを使います。
 
@@ -80,7 +80,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Visual Studio のインストール](install-visual-studio.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

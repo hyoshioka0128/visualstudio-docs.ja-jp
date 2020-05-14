@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180271"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744928"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -29,7 +29,7 @@ Visual Studio では、JavaScript、TypeScript のいずれかで [Vue.js](https
 * *.vue* ファイルでの `lang` 属性の認識
 * Vue.js プロジェクトとファイル テンプレート
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * Visual Studio 2017 バージョン 15.8 以降のバージョンと **Node.js 開発**ワークロードがインストールされている必要があります。
 
@@ -51,7 +51,7 @@ Visual Studio では、JavaScript、TypeScript のいずれかで [Vue.js](https
 
     インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストール済みのランタイムが検出されない場合は、プロパティ ページでインストール済みのランタイムを参照するようにプロジェクトを構成できます。 (プロジェクトを作成した後、プロジェクト ノードを右クリックして **[プロパティ]** を選択します)。
 
-## <a name="create-a-vuejs-project-using-a-template"></a>テンプレートを使用して Vue.js プロジェクトを作成する
+## <a name="create-a-vuejs-project-using-nodejs"></a>Node.js を使用して Vue.js プロジェクトを作成する
 
 新しい Vue.js テンプレートを使用して新しいプロジェクトを作成できます。 テンプレートを使うのが開始する最も簡単な方法です。 詳細については、「[Use Visual Studio to create your first Vue.js app](../javascript/quickstart-vuejs-with-nodejs.md)」(Visual Studio を使用して初めての Vue.js アプリを作成する) をご覧ください。
 
@@ -74,7 +74,7 @@ Vue.js では、迅速にスキャフォールディングするプロジェク�
     **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力してから、 **[新しい ASP.NET Core Web アプリケーションを作成する]** を選択します。 ダイアログ ボックスが表示されたら、**client-app** という名前を入力し、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択し、**client-app** という名前を入力してから **[OK]** を選択します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択し、**client-app** という名前を入力してから **[OK]** を選択します。
     ::: moniker-end
 
     **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発**ワークロードと **.NET Core 開発**ワークロードを最初にインストールする必要があります。 ワークロードをインストールするには、 **[新しいプロジェクト]** ダイアログ ボックス ( **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択) の左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 必要なワークロードを選択します。

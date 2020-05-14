@@ -112,7 +112,7 @@
               href: important-commands-for-language-service-filters.md
         - name: 従来の言語サービスの登録 2
           href: registering-a-legacy-language-service2.md
-        - name: 'チェックリスト: 従来の言語サービスの作成'
+        - name: 'チェック リスト: 従来の言語サービスの作成'
           href: checklist-creating-a-legacy-language-service.md
         - name: 従来の言語サービスの特徴 2
           items:
@@ -208,9 +208,9 @@
   items:
     - name: プロジェクト
       href: projects.md
-    - name: '新しいプロジェクトの生成: 内部的な処理、パート 1'
+    - name: '新しいプロジェクトの生成: 内部、パート 1'
       href: new-project-generation-under-the-hood-part-one.md
-    - name: '新しいプロジェクトの生成: 内部的な処理、パート 2'
+    - name: '新しいプロジェクトの生成: 内部、パート 2'
       href: new-project-generation-under-the-hood-part-two.md
     - name: プロジェクトの種類
       items:
@@ -224,7 +224,7 @@
               href: creating-project-types.md
             - name: プロジェクト タイプのデザインの方針
               href: project-type-design-decisions.md
-            - name: 'チェックリスト: 新しいプロジェクト タイプの作成'
+            - name: 'チェック リスト: 新しいプロジェクト タイプの作成'
               href: checklist-creating-new-project-types.md
             - name: プロジェクト ファクトリを使用したプロジェクト インスタンスの作成
               href: creating-project-instances-by-using-project-factories.md
@@ -400,9 +400,9 @@
           href: using-the-automation-model.md
         - name: 構成および SelectedItem オブジェクトのためのオートメーション
           href: automation-for-configuration-and-selecteditem-objects.md
-- name: 解決策
+- name: ソリューション
   items:
-    - name: 解決策
+    - name: ソリューション
       href: solutions-overview.md
     - name: ソリューション (.Sln) ファイル
       href: solution-dot-sln-file.md
@@ -488,7 +488,7 @@
               href: test-guide-for-source-control-plug-ins.md
             - name: 'テスト領域 1: ソース管理への追加とオープン'
               href: test-area-1-add-to-open-from-source-control.md
-            - name: 'テスト領域 2: ソース管理から取得'
+            - name: 'テスト領域 2: ソース管理からの取得'
               href: test-area-2-get-from-source-control.md
             - name: 'テスト領域 3: チェックアウトとチェックアウトの取り消し'
               href: test-area-3-check-out-undo-checkout.md

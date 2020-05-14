@@ -13,20 +13,21 @@ helpviewer_keywords:
 - <ProjectExtensions> element [MSBuild]
 - ProjectExtensions element [MSBuild]
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002414"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632967"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 要素 (MSBuild)
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルに、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 以外の情報を含めることを可能にします。 `ProjectExtensions` 要素内のすべてのものは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によって無視されます。
+
+MSBuild プロジェクト ファイルに、MSBuild 以外の情報を含めることを可能にします。 `ProjectExtensions` 要素内の内容は、すべて MSBuild から無視されます。
 
  \<Project> \<ProjectExtensions>
 
@@ -39,24 +40,29 @@ ms.locfileid: "63002414"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし
+
+ None
 
 ### <a name="child-elements"></a>子要素
- なし
+
+ None
 
 ### <a name="parent-elements"></a>親要素
 
 | 要素 | 説明 |
 | - | - |
-| [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 
-## <a name="remarks"></a>解説
- `ProjectExtensions` 要素は [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで1 つだけ使用できます。
+## <a name="remarks"></a>Remarks
+
+ `ProjectExtensions` 要素は、MSBuild プロジェクトで 1 つだけ使用できます。
 
 ## <a name="example"></a>例
+
  次のコード例は、`ProjectExtensions` 要素に格納されている統合開発環境の情報を示します。
 
 ```xml
@@ -72,5 +78,6 @@ ms.locfileid: "63002414"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

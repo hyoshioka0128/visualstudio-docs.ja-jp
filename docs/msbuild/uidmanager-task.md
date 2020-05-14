@@ -14,31 +14,33 @@ helpviewer_keywords:
 - localizing XAML elements [WPF MSBuild], managing UIDs
 - checking UIDs when localizing XAML elements [WPF MSBuild]
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4e8c5ccae37aba0f287e2c2f9e29ab36371846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938661"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631524"
 ---
 # <a name="uidmanager-task"></a>UidManager タスク
-<xref:Microsoft.Build.Tasks.Windows.UidManager> タスクでは、ソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに含まれるすべての [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 要素をローカライズするために、一意識別子 (UID) をチェック、更新、または削除します。
+
+ソース XAML ファイルに含まれるすべての XAML 要素をローカライズするために、<xref:Microsoft.Build.Tasks.Windows.UidManager> タスクによって一意識別子 (UID) のチェック、更新、または削除が行われます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
 
 | パラメーター | 説明 |
 |-------------------------| - |
-| `IntermediateDirectory` | 省略可能な **String** 型のパラメーターです。<br /><br /> **MarkupFiles** パラメーターで指定されるソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルをバックアップするために使用されるディレクトリを指定します。 |
-| `MarkupFiles` | 必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> UID のチェック、更新、または削除の対象となるソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルを指定します。 |
+| `IntermediateDirectory` | 省略可能な **String** 型のパラメーターです。<br /><br /> **MarkupFiles** パラメーターで指定されるソース XAML ファイルをバックアップするために使用されるディレクトリを指定します。 |
+| `MarkupFiles` | 必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> UID のチェック、更新、または削除のために含めるソース XAML ファイルを指定します。 |
 | `Task` | 必須の **String** 型のパラメーターです。<br /><br /> 実行する UID 管理タスクを指定します。 有効なオプションは **Check**、**Update**、または **Remove** です。 |
 
 ## <a name="example"></a>例
- 次の例では <xref:Microsoft.Build.Tasks.Windows.UidManager> タスクを使用して、指定されたソース [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ファイルに、適切な UID を持つ [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 要素が含まれていることをチェックします。
+
+ 次の例では <xref:Microsoft.Build.Tasks.Windows.UidManager> タスクを使用して、指定されたソース XAML ファイルに、適切な UID を持つ XAML 要素が含まれていることをチェックします。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,6 +57,7 @@ ms.locfileid: "62938661"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
 - [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild リファレンス](../msbuild/msbuild-reference.md)

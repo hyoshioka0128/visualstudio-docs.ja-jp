@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779551"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU カウンターと Windows カウンター
@@ -96,7 +96,7 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
       **注** 前のサンプリング構成に戻るには、 **[キャンセル]** をクリックします。
 
-     または
+     \- または -
 
    - **[CPU カウンター]** を選び、 **[CPU カウンターの収集]** を選びます。 **[使用可能なカウンター]** に CPU カウンターが一覧表示されます。
 
@@ -122,7 +122,7 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
 1. コマンド プロンプト ウィンドウを開きます。
 
-2. 型
+2. 種類
 
      「 **\<Visual Studio パフォーマンス ツール ディレクトリ>\VSPerfCmd /querycounters**」と入力します。
 

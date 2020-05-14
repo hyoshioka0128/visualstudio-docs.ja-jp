@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cf4d63d7d00e91daa2564992f801896075f73aab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299518"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918942"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>実行中のプロセスへのアタッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "74299518"
 
     2. **[コードの種類の選択]** ダイアログ ボックスで、 **[次のコードの種類をデバッグする]** をクリックし、デバッグする種類を選択します。
 
-    3. **[OK]** をクリックすると、
+    3. **[OK]** をクリックします。
 
 4. **[アタッチ]** をクリックします。
 
@@ -105,13 +105,13 @@ ms.locfileid: "74299518"
 
 6. **[アタッチ]** をクリックします。
 
-## <a name="additional-info"></a>追加情報
+## <a name="additional-info"></a>[追加情報]
 
 デバッグ中には複数のプログラムにアタッチできますが、デバッガーでアクティブになっているプログラムは常に 1 つだけです。 アクティブなプログラムは、 **[デバッグの場所]** ツール バーまたは **[プロセス]** ウィンドウで設定できます。 詳細については、「 [方法 : 現在のプロセスを設定する](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)」を参照してください。
 
 信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーによって所有されているプロセスにアタッチすると、危険なことができます。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)。
 
-リモート デスクトップ (ターミナル サービス) セッションでのデバッグ時には、 **[選択可能なプロセス]** ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 Visual Studio を、制限付きユーザー アカウントを持つユーザーとして実行している場合、 **[選択可能なプロセス]** ボックスの一覧には、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行するか、ターミナル サービス セッションからではなくサーバー コンソールから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。 どちらの方法も実行できない場合、3 つ目の方法として、Windows コマンド ラインから `vsjitdebugger.exe -p` *ProcessId* を実行することによって、プロセスにアタッチできます。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、「  [WDK と WinDbg のダウンロード](https://go.microsoft.com/fwlink/?LinkId=168279)」で Windows 対応のデバッグ ツールをダウンロードし、インストールします。
+リモート デスクトップ (ターミナル サービス) セッションでのデバッグ時には、 **[選択可能なプロセス]** ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 Visual Studio を、制限付きユーザー アカウントを持つユーザーとして実行している場合、 **[選択可能なプロセス]** ボックスの一覧には、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行するか、ターミナル サービス セッションからではなくサーバー コンソールから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。 これらの回避策のいずれも使用できない場合は、Windows コマンドラインから `vsjitdebugger.exe -p` *ProcessId*を実行してプロセスにアタッチすることをお勧めします。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、「  [WDK と WinDbg のダウンロード](/windows-hardware/drivers/dashboard/)」で Windows 対応のデバッグ ツールをダウンロードし、インストールします。
 
 ## <a name="BKMK_Scenarios"></a>一般的なデバッグシナリオ
 
@@ -170,11 +170,11 @@ ms.locfileid: "74299518"
 
    3. **[コードの種類の選択]** ダイアログ ボックスの **[次のコードの種類をデバッグする]** をクリックし、アタッチに失敗したコードの種類を選択します。 他のコードをすべてオフにします。
 
-   4. **[OK]** をクリックすると、 **[コードの種類の選択]** ダイアログ ボックスが閉じます。
+   4. **[OK]** をクリックします。 **[コードの種類の選択]** ダイアログ ボックスが閉じます。
 
    5. **[プロセスにアタッチ]** ダイアログ ボックスで、 **[アタッチ]** をクリックします。
 
       このとき、アタッチは完全に失敗し、詳細なエラー メッセージが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [複数のプロセスのデバッグ](../debugger/debug-multiple-processes.md) [Just-in-time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)[リモートデバッグ](../debugger/remote-debugging.md)

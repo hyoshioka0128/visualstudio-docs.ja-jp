@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /ResetSettings Devenv switch
 - settings [Visual Studio], resetting
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3549801001ba8df60634884dc58137a8fa77d905
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655561"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593864"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -71,7 +71,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [環境設定](../environment-settings.md)
 - [Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)

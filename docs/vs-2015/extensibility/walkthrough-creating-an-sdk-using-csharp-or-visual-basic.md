@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: C# または Visual Basic を使用して SDK の作成 |Microsoft Docs'
+title: 'チュートリアル: または Visual Basic をC#使用した SDK の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,64 +8,64 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 44b1083a9de4a5fe3e86ae37814f6df85f8c1e56
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a604e3500c0ea438c987c4cf07ded98a5e03dd61
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435503"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558210"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用して SDK を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、Visual c# を使用して単純な数値演算ライブラリの SDK を作成し、SDK と Visual Studio Extension (VSIX) パッケージ化する方法を学習します。 次の手順を完了します。  
+このチュートリアルでは、ビジュアルC#を使用して単純な数値演算ライブラリ sdk を作成し、その Sdk を Visual Studio 拡張機能 (VSIX) としてパッケージ化する方法について説明します。 次の手順を実行します。  
   
-- [SimpleMath Windows ランタイム コンポーネントを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
+- [SimpleMath Windows ランタイムコンポーネントを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   
-- [SimpleMathVSIX 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
+- [Simplem、Vsix 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
   
-- [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
+- [クラスライブラリを使用するサンプルアプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+## <a name="prerequisites"></a>前提条件  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。  
   
-## <a name="createClassLibrary"></a> SimpleMath Windows ランタイム コンポーネントを作成するには  
+## <a name="createClassLibrary"></a>SimpleMath Windows ランタイムコンポーネントを作成するには  
   
-1. メニュー バーで、**ファイル**、**新規**、**新しいプロジェクト**します。  
+1. メニューバーで、 **[ファイル]** 、 **[新規作成]** 、 **[新しいプロジェクト]** の順に選択します。  
   
-2. テンプレートの一覧で  **Visual c#** または**Visual Basic**、選択、 **Windows ストア**ノードを選択し、 **Windows ランタイム コンポーネント**テンプレート。  
+2. テンプレートの一覧で、 **[ C#ビジュアル]** または **[Visual Basic]** を展開し、 **[Windows ストア]** ノードを選択して、 **[Windows ランタイムコンポーネント]** テンプレートを選択します。  
   
-3. **名前**ボックスで、指定**SimpleMath**、選択し、 **OK**ボタン。  
+3. **[名前]** ボックスに**SimpleMath**を指定し、 **[OK]** をクリックします。  
   
-4. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMath**プロジェクト ノードを選び、**プロパティ**します。  
+4. **ソリューションエクスプローラー**で、 **SimpleMath**プロジェクトノードのショートカットメニューを開き、 **[プロパティ]** を選択します。  
   
-5. 名前を変更**Class1.cs**に**Arithmetic.cs**し、次のコードと一致するように更新します。  
+5. **Class1.cs**の名前を**Arithmetic.cs**に変更し、次のコードに一致するように更新します。  
   
      [!code-csharp[CreatingAnSDKUsingWinRT#3](../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrt/cs/winrtmath/arithmetic.cs#3)]
      [!code-vb[CreatingAnSDKUsingWinRT#3](../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrt/vb/winrtmath/arithmetic.vb#3)]  
   
-6. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、**ソリューション 'SimpleMath'** ノードを選び、 **Configuration Manager**します。  
+6. **ソリューションエクスプローラー**で、**ソリューション ' SimpleMath '** ノードのショートカットメニューを開き、 **[Configuration Manager]** を選択します。  
   
-     **Configuration Manager**  ダイアログ ボックスが表示されます。  
+     **[Configuration Manager]** ダイアログボックスが表示されます。  
   
-7. **アクティブ ソリューション構成**一覧で、選択**リリース**します。  
+7. **[アクティブソリューション構成]** の一覧で **[リリース]** を選択します。  
   
-8. **構成**列、ことを確認します**SimpleMath**に設定されている行**リリース**を選択し、**閉じる**ボタンをクリック、変更します。  
+8. **[構成]** 列で、 **[SimpleMath]** 行が **[リリース]** に設定されていることを確認し、 **[閉じる]** をクリックして変更を受け入れます。  
   
     > [!IMPORTANT]
-    > SimpleMath コンポーネントの SDK には、1 つのみの構成が含まれています。 この構成は、リリース ビルドである必要がありますまたはコンポーネントを使用するアプリの証明を渡さない、[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]します。  
+    > SimpleMath コンポーネントの SDK に含まれる構成は1つだけです。 この構成はリリースビルドである必要があります。または、コンポーネントを使用するアプリが[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]の証明を受け渡すことはできません。  
   
-9. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMath**プロジェクト ノードを選び、**ビルド**します。  
+9. **ソリューションエクスプローラー**で、 **SimpleMath**プロジェクトノードのショートカットメニューを開き、 **[ビルド]** を選択します。  
   
-## <a name="createVSIX"></a> SimpleMathVSIX 拡張機能プロジェクトを作成するには  
+## <a name="createVSIX"></a>Simplem、Vsix 拡張機能プロジェクトを作成するには  
   
-1. ショートカット メニューで、**ソリューション 'SimpleMath'** ノード選択**追加**、**新しいプロジェクト**します。  
+1. **ソリューション ' SimpleMath '** ノードのショートカットメニューで、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。  
   
-2. テンプレートの一覧で展開**Visual c#** または**Visual Basic**、選択、**機能拡張**ノードを選択し、 **VSIX プロジェクト**テンプレート。  
+2. テンプレートの一覧で、 **[ C#ビジュアル]** または **[Visual Basic]** を展開し、 **[機能拡張]** ノードを選択し、 **[VSIX プロジェクト]** テンプレートを選択します。  
   
-3. **名前**ボックスで、指定**SimpleMathVSIX**、選択し、 **OK**ボタン。  
+3. **[名前]** ボックスに「 **Simplemthe vsix**」と入力し、 **[OK]** をクリックします。  
   
-4. **ソリューション エクスプ ローラー**、選択、 **source.extension.vsixmanifest**項目。  
+4. **ソリューションエクスプローラー**で、 **source.extension.vsixmanifest**項目を選択します。  
   
 5. メニュー バーで **[表示]** 、 **[コード]** の順に選択します。  
   
@@ -73,107 +73,107 @@ ms.locfileid: "63435503"
   
      [!code-xml[CreatingAnSDKUsingWinRT#1](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
   
-7. **ソリューション エクスプ ローラー**、選択、 **SimpleMathVSIX**プロジェクト。  
+7. **ソリューションエクスプローラー**で、[ **Simplem] vsix**プロジェクトを選択します。  
   
-8. メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
+8. メニューバーで、 **[プロジェクト]** 、 **[新しい項目の追加]** の順に選択します。  
   
-9. 一覧で**一般的な項目**、展開**データ**を選び、 **XML ファイル**します。  
+9. **共通項目**の一覧で、 **[データ]** を展開し、 **[XML ファイル]** を選択します。  
   
-10. **名前**ボックスで、指定`SDKManifest.xml`、選択し、**追加**ボタンをクリックします。  
+10. **[名前]** ボックスに `SDKManifest.xml`を指定し、 **[追加]** をクリックします。  
   
-11. **ソリューション エクスプ ローラー**、ショートカット メニューを開き`SDKManifest.xml`、選択**プロパティ**、しの値を変更し、 **VSIX に含める**プロパティを**True**します。  
+11. **ソリューションエクスプローラー**で、`SDKManifest.xml`のショートカットメニューを開き、 **[プロパティ]** を選択します。次に、 **[VSIX に含ま]** れる プロパティの値を**True**に変更します。  
   
 12. ファイルの内容を次の XML に置き換えます。  
   
      [!code-xml[CreatingAnSDKUsingWinRT#1](../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrt/cs/winrtmathvsix/sdkmanifest.xml#1)]
      [!code-xml[CreatingAnSDKUsingWinRT#1](../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrt/vb/winrtmathvsix/sdkmanifest.xml#1)]  
   
-13. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMathVSIX**プロジェクトで、選択**追加**を選び、**新しいフォルダー**します。  
+13. **ソリューションエクスプローラー**で、 **Simplemの vsix**プロジェクトのショートカットメニューを開き、 **[追加]** 、 **[新しいフォルダー]** の順に選択します。  
   
-14. フォルダーの名前を変更`references`します。  
+14. フォルダーの名前を `references`に変更します。  
   
-15. ショートカット メニューを開き、**参照**フォルダー選択**追加**を選び、**新しいフォルダー**。  
+15. **[参照]** フォルダーのショートカットメニューを開き、 **[追加]** 、 **[新しいフォルダー]** の順に選択します。  
   
-16. サブフォルダーの名前を変更`commonconfiguration`、サブフォルダーを作成し、名前をサブフォルダー、`neutral`します。  
+16. サブフォルダーの名前を `commonconfiguration`に変更し、その中にサブフォルダーを作成して、サブフォルダーに `neutral`という名前を指定します。  
   
-17. この時間には、最初のフォルダーの名前を変更する前の 4 つの手順を繰り返して`redist`します。  
+17. 前の4つの手順を繰り返します。今度は、最初のフォルダーの名前を `redist`に変更します。  
   
-     プロジェクトには、次のフォルダー構造が含まれています。  
+     プロジェクトに次のフォルダー構造が含まれるようになりました。  
   
     ```  
     references\commonconfiguration\neutral  
     redist\commonconfiguration\neutral  
     ```  
   
-18. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMath**プロジェクトを選び、**ファイル エクスプ ローラーでフォルダーを開く**します。  
+18. **ソリューションエクスプローラー**で、 **SimpleMath**プロジェクトのショートカットメニューを開き、 **[エクスプローラーでフォルダーを開く]** を選択します。  
   
-19. **ファイル エクスプ ローラー**、bin \release フォルダーに移動し、SimpleMath.winmd ファイルのショートカット メニューを開くおよび選択し、**コピー**します。  
+19. **エクスプローラー**で、bin\Release フォルダーに移動し、SimpleMath ファイルのショートカットメニューを開き、 **[コピー]** を選択します。  
   
-20. **ソリューション エクスプ ローラー**、references\commonconfiguration\neutral フォルダーにコピーして貼り付け、 **SimpleMathVSIX**プロジェクト。  
+20. **ソリューションエクスプローラー**で、 **Simplemreferences\commonconfiguration\neutral vsix**プロジェクトのフォルダーにファイルを貼り付けます。  
   
-21. SimpleMath.pri ファイルで redist\commonconfiguration\neutral フォルダーに貼り付け、前の手順を繰り返して、 **SimpleMathVSIX**プロジェクト。  
+21. 前の手順を繰り返して、SimpleMath ファイルを**Simplem vsix**プロジェクトの redist\commonconfiguration\neutral フォルダーに貼り付けます。  
   
-22. **ソリューション エクスプ ローラー**、選択**SimpleMath.winmd**します。  
+22. **ソリューションエクスプローラー**で、 **[SimpleMath]** を選択します。  
   
-23. メニュー バーで、**ビュー**、**プロパティ**(キーボード。F4 キーを押します)。  
+23. メニューバーで、 **[表示]** 、 **[プロパティ]** の順に選択します (キーボード: F4 キーを押します)。  
   
-24. **プロパティ**ウィンドウで、変更、**ビルド アクション**プロパティを**コンテンツ**、し、変更、 **VSIX に含める**プロパティ**True**します。  
+24. **[プロパティ]** ウィンドウで、"**ビルドアクション**" プロパティを "**コンテンツ**" に変更し、 **[VSIX に含める]** プロパティを **[True]** に変更します。  
   
-25. **ソリューション エクスプ ローラー**、この手順を繰り返します**SimpleMath.pri**します。  
+25. **ソリューションエクスプローラー**で、 **SimpleMath**に対してこのプロセスを繰り返します。  
   
-26. **ソリューション エクスプ ローラー**、選択、 **SimpleMathVSIX**プロジェクト。  
+26. **ソリューションエクスプローラー**で、[ **Simplem] vsix**プロジェクトを選択します。  
   
-27. メニュー バーで、**ビルド**、**ビルド SimpleMathVSIX**します。  
+27. メニューバーで、 **[ビルド]** 、 **[simplemのビルド]** の順に選択します。  
   
-28. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMathVSIX**プロジェクトを選び、**ファイル エクスプ ローラーでフォルダーを開く**します。  
+28. **ソリューションエクスプローラー**で、 **Simplemの vsix**プロジェクトのショートカットメニューを開き、 **[エクスプローラーでフォルダーを開く]** を選択します。  
   
-29. **ファイル エクスプ ローラー**\bin\Release フォルダーに移動して、SimpleMathVSIX.vsix インストールを実行します。  
+29. **エクスプローラー**で、\bin\Release フォルダーに移動してから、simplem を実行してインストールします。  
   
-30. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を再起動します。  
+30. **[インストール]** ボタンをクリックし、インストールが完了するのを待ってから、Visual Studio を再起動します。  
   
-## <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには  
+## <a name="createSample"></a>クラスライブラリを使用するサンプルアプリを作成するには  
   
-1. メニュー バーで、**ファイル**、**新規**、**新しいプロジェクト**します。  
+1. メニューバーで、 **[ファイル]** 、 **[新規作成]** 、 **[新しいプロジェクト]** の順に選択します。  
   
-2. テンプレートの一覧で  **Visual c#** または**Visual Basic**を選択し、 **Windows ストア**ノード。  
+2. テンプレートの一覧で、 **[ビジュアルC# ]** または **[Visual Basic]** を展開し、 **[Windows ストア]** ノードを選択します。  
   
-3. 選択、**空のアプリ**名では、プロジェクト テンプレートは、 **ArithmeticUI**、選択し、 **OK**ボタン。  
+3. **[空のアプリケーション]** テンプレートを選択し、プロジェクトに**ArithmeticUI**という名前を指定して、 **[OK]** をクリックします。  
   
-4. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ArithmeticUI**プロジェクトを選び、**追加**、**参照**します。  
+4. **ソリューションエクスプローラー**で、 **ArithmeticUI**プロジェクトのショートカットメニューを開き、 **[追加]** 、 **[参照]** の順に選択します。  
   
-5. 参照型の一覧で、展開**Windows**を選び、**拡張機能**します。  
+5. 参照の種類の一覧で、 **[Windows]** を展開し、 **[拡張機能]** を選択します。  
   
-6. 詳細ペインで選択、**単純な数学 SDK**拡張機能。  
+6. 詳細ウィンドウで、 **Simple MATH SDK**拡張機能を選択します。  
   
-    SDK に関する追加情報が表示されます。 選択することができます、**詳細**を開くリンク http://www.msdn.microsoft.com 、このチュートリアルで先ほど SDKManifest.xml ファイルで指定しました。  
+    SDK に関する追加情報が表示されます。 このチュートリアルの前半で Sdkmanifest.xml ファイルで指定したように、 **[詳細情報]** リンクを選択して https://docs.microsoft.comを開くことができます。  
   
-7. **参照マネージャー**ダイアログ ボックスで、**単純な数学 SDK**チェック ボックスをオンにして、 **OK**ボタン。  
+7. **[参照マネージャー]** ダイアログボックスで、 **[Simple Math SDK]** チェックボックスをオンにし、 **[OK]** をクリックします。  
   
-8. メニュー バーで、**ビュー**、**オブジェクト ブラウザー**します。  
+8. メニューバーで、 **[表示]** 、 **[オブジェクトブラウザー]** の順に選択します。  
   
-9. **参照**一覧で、選択**単純な算術**します。  
+9. **[参照]** ボックスの一覧で、 **[単純な数値演算]** を選択します。  
   
-     SDK の新機能を参照できます。  
+     SDK の内容を調べることができるようになりました。  
   
-10. **ソリューション エクスプ ローラー**MainPage.xaml を開き、その内容を次の XAML に置き換えます。  
+10. **ソリューションエクスプローラー**で mainpage.xaml を開き、その内容を次の xaml に置き換えます。  
   
      [!code-xml[CreatingAnSDKUsingWinRTDemoApp#1](../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrtdemoapp/cs/winrtmathtest/mainpage.xaml#1)]
      [!code-xml[CreatingAnSDKUsingWinRTDemoApp#1](../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrtdemoapp/vb/winrtmathtest/mainpage.xaml#1)]  
   
-11. 次のコードを MainPage.xaml.cs を更新します。  
+11. 次のコードに一致するように MainPage.xaml.cs を更新します。  
   
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrtdemoapp/cs/winrtmathtest/mainpage.xaml.cs#2)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrtdemoapp/vb/winrtmathtest/mainpage.xaml.vb#2)]  
   
-12. アプリを実行する、F5 キーを選択します。  
+12. F5 キーを押してアプリを実行します。  
   
-13. アプリでは、任意の 2 つの数値を入力します。、、の操作を選択し、、 **=** ボタンをクリックします。  
+13. アプリで、任意の2つの数値を入力し、操作を選択して、[ **=** ] ボタンをクリックします。  
   
      正しい結果が表示されます。  
   
-    作成し、拡張機能 SDK を使用できました。  
+    拡張機能 SDK が正常に作成され、使用されました。  
   
-## <a name="see-also"></a>関連項目  
- [チュートリアル: C++ を使用して SDK を作成します。](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [チュートリアル: JavaScript を使用して SDK を作成します。](walkthrough-creating-an-sdk-using-javascript.md)   
+## <a name="see-also"></a>参照  
+ [チュートリアル:  を使用しC++た SDK の作成](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)  
+ [チュートリアル: JavaScript を使用した SDK の作成](walkthrough-creating-an-sdk-using-javascript.md)   
  [ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)

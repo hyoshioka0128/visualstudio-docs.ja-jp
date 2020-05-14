@@ -1,24 +1,24 @@
 ---
 title: EditorConfig での .NET の言語規則
-ms.date: 09/23/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652806"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544013"
 ---
 # <a name="language-conventions"></a>言語規則
 
@@ -94,7 +94,6 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [修飾子の基本設定](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
-  - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
   - dotnet\_style\_readonly\_field
 - [かっこの基本設定](#parentheses-preferences)
@@ -109,15 +108,15 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
   - dotnet\_style\_prefer\_inferred\_tuple_names
   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
   - dotnet\_style\_prefer\_auto\_properties
-  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
   - dotnet\_style\_prefer\_compound\_assignment
 - ["null" チェック設定](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-### <a name="this-and-me"></a>"This." 修飾子 と "Me." 修飾子
+### <a name="this-and-me-qualifiers"></a><a name="this-and-me"></a>"This." 修飾子 と "Me." 修飾子
 
 このスタイル ルールは、フィールド、プロパティ、メソッド、またはイベントに適用できます。 **true** の値は、C# では `this.`、Visual Basic では `Me.` をコード記号の前に付けることを意味します。 **false** の値は、`this.` や `Me.` をコード要素の前に_付けない_ ことを意味します。
 
@@ -136,7 +135,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_qualification_for_field |
+| **ルール名** | dotnet_style_qualification_for_field |
 | **ルール ID** | IDE0003、IDE0009 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - C# では `this.`、Visual Basic では `Me.` をフィールドの前に付けます<br /><br />`false` - フィールドの前に `this.` または `Me.` を付け "_ません_" |
@@ -164,7 +163,7 @@ capacity = 0
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_qualification_for_property |
+| **ルール名** | dotnet_style_qualification_for_property |
 | **ルール ID** | IDE0003、IDE0009 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - C# では `this.`、Visual Basic では `Me.` をプロパティの前に付けます<br /><br />`false` - プロパティの前に `this.` または `Me.` を付け "_ません_" |
@@ -192,7 +191,7 @@ ID = 0
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_qualification_for_method |
+| **ルール名** | dotnet_style_qualification_for_method |
 | **ルール ID** | IDE0003、IDE0009 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - C# では `this.`、Visual Basic では `Me.` をメソッドの前に付けます<br /><br />`false` - メソッドの前に `this.` または `Me.` を付け "_ません_" |
@@ -220,7 +219,7 @@ Display()
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_qualification_for_event |
+| **ルール名** | dotnet_style_qualification_for_event |
 | **ルール ID** | IDE0003、IDE0009 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - C# では `this.`、Visual Basic では `Me.` をイベントの前に付けます<br /><br />`false` - イベントの前に `this.` または `Me.` を付け "_ません_" |
@@ -244,7 +243,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-### <a name="language-keywords"></a>型参照のためのフレームワーク型名の代わりの言語キーワード
+### <a name="language-keywords-instead-of-framework-type-names-for-type-references"></a><a name="language-keywords"></a>型参照のためのフレームワーク型名の代わりの言語キーワード
 
 このスタイル ルールは、ローカル変数、メソッド パラメーター、およびクラス メンバーに適用できます。また、型メンバー アクセス式に別個のルールとして適用できます。 **true** の値は、型を表すキーワードを持つ型に対して、型名 (`Int32` など) の代わりに言語キーワード (`int` や `Integer` など) を使用することを意味します。 **false** の値は、言語キーワードの代わりに型名を使用することを意味します。
 
@@ -261,7 +260,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_predefined_type_for_locals_parameters_members |
+| **ルール名** | dotnet_style_predefined_type_for_locals_parameters_members |
 | **ルール ID** | IDE0012 と IDE0014 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - 型を表すキーワードを持つ型に対して、型名の代わりに、ローカル変数、メソッド パラメーター、およびクラス メンバーの言語キーワードを使用します<br /><br />`false` - 言語キーワードの代わりに、ローカル変数、メソッド パラメーター、およびクラス メンバーの型名を使用します |
@@ -289,7 +288,7 @@ Private _member As Int32
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_predefined_type_for_member_access |
+| **ルール名** | dotnet_style_predefined_type_for_member_access |
 | **ルール ID** | IDE0013 と IDE0015 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - 型を表すキーワードを持つ型に対して、型名の代わりに、メンバー アクセス式の言語キーワードを使用します<br /><br />`false` - 言語キーワードの代わりに、メンバー アクセス式の型名を使用します |
@@ -313,7 +312,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-### <a name="normalize-modifiers"></a>修飾子の基本設定
+### <a name="modifier-preferences"></a><a name="normalize-modifiers"></a>修飾子の基本設定
 
 このセクションのスタイル ルールは、アクセシビリティ修飾子を必要にする、必要な修飾子の並べ替え順序を指定する、読み取り専用修飾子を必要にするなど、修飾子の基本設定に関するものです。
 
@@ -338,7 +337,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_require_accessibility_modifiers |
+| **ルール名** | dotnet_style_require_accessibility_modifiers |
 | **ルール ID** | IDE0040 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `always` - アクセシビリティ修飾子を指定します。<br /><br />`for_non_interface_members` - パブリック インターフェイス メンバーの場合を除き、アクセシビリティ修飾子を宣言します。 (これは、**always** と同じであり、C# が既定のインターフェイス メソッドを追加する場合の将来の対策のために追加されています)。<br /><br />`never` - アクセシビリティ修飾子を指定しません。<br /><br />`omit_if_default` - 既定の修飾子である場合を除き、アクセシビリティ修飾子を指定することを優先します。 |
@@ -366,7 +365,7 @@ class MyClass
 
 |||
 |-|-|
-| **規則の名前** | csharp_preferred_modifier_order |
+| **ルール名** | csharp_preferred_modifier_order |
 | **ルール ID** | IDE0036 |
 | **該当言語** | C# |
 | **値** | `public`、`private`、`protected` などの 1 つ以上の C# 修飾子 |
@@ -390,7 +389,7 @@ class MyClass
 
 |||
 |-|-|
-| **規則の名前** | visual_basic_preferred_modifier_order |
+| **ルール名** | visual_basic_preferred_modifier_order |
 | **ルール ID** | IDE0036 |
 | **該当言語** | Visual Basic |
 | **値** | `Partial`、`Private`、`Public` などの 1 つ以上の Visual Basic 修飾子 |
@@ -409,11 +408,48 @@ Public Class MyClass
 End Class
 ```
 
+#### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **ルール名** | visual_basic_style_unused_value_expression_statement_preference |
+| **ルール ID** | IDE0058 |
+| **該当言語** | Visual Basic |
+| **値** | `unused_local_variable:silent` |
+| **Visual Studio の既定値** | `unused_local_variable:silent` |
+
+コード例:
+
+```vb
+' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
+
+Dim unused = Computation()
+```
+
+#### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **ルール名** | visual_basic_style_unused_value_assignment_preference |
+| **ルール ID** | IDE0059 |
+| **該当言語** | Visual Basic |
+| **値** | `unused_local_variable:silent` |
+| **Visual Studio の既定値** | `unused_local_variable:silent` |
+
+コード例:
+
+```vb
+' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
+
+Dim unused = Computation()
+Dim x = 1;
+```
+
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_readonly_field |
+| **ルール名** | dotnet_style_readonly_field |
 | **ルール ID** | IDE0044 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - フィールドがインラインまたはコンストラクターの内部でのみ割り当てられている場合は、フィールドを `readonly` (C#) または `ReadOnly` (Visual Basic) でマークする必要があります<br /><br />`false` - フィールドを `readonly` (C#) または `ReadOnly` (Visual Basic) でマークする必要があるかどうかに関して特に規定がないことを指定します |
@@ -456,7 +492,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_parentheses_in_arithmetic_binary_operators |
+| **ルール名** | dotnet_style_parentheses_in_arithmetic_binary_operators |
 | **ルール ID** | IDE0047 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `always_for_clarity` - 算術演算子 (`*`、`/`、`%`、`+`、`-`、`<<`、`>>`、`&`、`^`、`|`) の基本設定を明確にするためにかっこを使用します<br /><br />`never_if_unnecessary` - 算術演算子 (`*`、`/`、`%`、`+`、`-`、`<<`、`>>`、`&`、`^`、`|`) の基本設定が明確な場合はかっこを使用しません |
@@ -485,7 +521,7 @@ Dim v = a + b * c
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_parentheses_in_relational_binary_operators |
+| **ルール名** | dotnet_style_parentheses_in_relational_binary_operators |
 | **ルール ID** | IDE0047 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `always_for_clarity` - 関係演算子 (`>`、`<`、`<=`、`>=`、`is`、`as`、`==`、`!=`) の基本設定を明確にするためにかっこを使用します<br /><br />`never_if_unnecessary` - 関係演算子 (`>`、`<`、`<=`、`>=`、`is`、`as`、`==`、`!=`) の基本設定が明確な場合はかっこを使用しません |
@@ -514,7 +550,7 @@ Dim v = a < b = c > d
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_parentheses_in_other_binary_operators |
+| **ルール名** | dotnet_style_parentheses_in_other_binary_operators |
 | **ルール ID** | IDE0047 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `always_for_clarity` - 2 項演算子 (`&&`、`||`、`??`) の基本設定を明確にするためにかっこを使用します<br /><br />`never_if_unnecessary` - 2 項演算子 (`&&`、`||`、`??`) の基本設定が明確な場合はかっこを使用しません |
@@ -543,7 +579,7 @@ Dim v = a OrElse b AndAlso c
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_parentheses_in_other_operators |
+| **ルール名** | dotnet_style_parentheses_in_other_operators |
 | **ルール ID** | IDE0047 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `always_for_clarity` - 演算子の優先順位を明確にするためにかっこを使用します<br /><br />`never_if_unnecessary` - 演算子の優先順位が明確な場合はかっこを使用しません |
@@ -592,7 +628,7 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_object_initializer |
+| **ルール名** | dotnet_style_object_initializer |
 | **ルール ID** | IDE0017 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - 可能であれば、オブジェクト初期化子を使用し、オブジェクトを初期化します<br /><br />`false` - オブジェクト初期化子でオブジェクトを初期化 "*しません*" |
@@ -622,7 +658,7 @@ c.Age = 21
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_collection_initializer |
+| **ルール名** | dotnet_style_collection_initializer |
 | **ルール ID** | IDE0028 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - 可能であれば、コレクション初期化子を使用してコレクションを初期化します<br /><br />`false` - コレクション初期化子でコレクションを初期化 "*しません*" |
@@ -656,7 +692,7 @@ list.Add(3)
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_explicit_tuple_names |
+| **ルール名** | dotnet_style_explicit_tuple_names |
 | **ルール ID** | IDE0033 |
 | **該当言語** | C# 7.0+ および Visual Basic 15+ |
 | **値** | `true` - ItemX プロパティではなくタプル名を使用します<br /><br />`false` - タプル名ではなく ItemX プロパティを使用します |
@@ -688,7 +724,7 @@ Dim name = customer.Item1
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_inferred_tuple_names |
+| **ルール名** | dotnet_style_prefer_inferred_tuple_names |
 | **ルール ID** | IDE0037 |
 | **該当言語** | C# 7.1+ および Visual Basic 15+ |
 | **値** | `true` - 推論されたタプル要素名が優先されます<br /><br />`false` - 明示的なタプル要素名が優先されます |
@@ -717,7 +753,7 @@ Dim tuple = (name:=name, age:=age)
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_inferred_anonymous_type_member_names |
+| **ルール名** | dotnet_style_prefer_inferred_anonymous_type_member_names |
 | **ルール ID** | IDE0037 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - 推論された匿名型のメンバー名が優先されます<br /><br />`false` - 明示的な匿名型のメンバー名が優先されます |
@@ -746,7 +782,7 @@ Dim anon = New With {.name = name, .age = age}
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_auto_properties |
+| **ルール名** | dotnet_style_prefer_auto_properties |
 | **ルール ID** | IDE0032 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - プライベート バッキング フィールドを持つプロパティよりも、自動プロパティが優先されます<br /><br />`false` - 自動プロパティよりも、プライベート バッキング フィールドを持つプロパティが優先されます |
@@ -789,7 +825,7 @@ End Property
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **ルール名** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **ルール ID** | IDE0041 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - `object.ReferenceEquals` より、パターン一致の NULL 検査の使用が優先されます<br /><br />`false` - パターン一致の NULL 検査より `object.ReferenceEquals` が優先されます |
@@ -824,7 +860,7 @@ End If
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_conditional_expression_over_assignment |
+| **ルール名** | dotnet_style_prefer_conditional_expression_over_assignment |
 | **ルール ID** | IDE0045 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - if-else ステートメントよりも三項条件を使用する割り当てを優先します<br /><br />`false` - 三項条件よりも if-else ステートメントを使用する割り当てを優先します |
@@ -866,7 +902,7 @@ End If
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_conditional_expression_over_return |
+| **ルール名** | dotnet_style_prefer_conditional_expression_over_return |
 | **ルール ID** | IDE0046 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - if-else ステートメントよりも三項条件を使用する return ステートメントを優先します<br /><br />`false` - 三項条件よりも if-else ステートメントを使用する return ステートメントを優先します |
@@ -906,7 +942,7 @@ End If
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_prefer_compound_assignment |
+| **ルール名** | dotnet_style_prefer_compound_assignment |
 | **ルール ID** | IDE0054 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - [複合代入](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)式を優先します<br /><br />`false` - 複合代入式を優先しません |
@@ -941,13 +977,14 @@ x = x + 1
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 ```
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_coalesce_expression |
+| **ルール名** | dotnet_style_coalesce_expression |
 | **ルール ID** | IDE0029 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `true` - 三項演算子検査ではなく null 結合式を使用します<br /><br />`false` - null 結合式ではなく三項演算子検査を使用します |
@@ -977,7 +1014,7 @@ Dim v = If(x IsNot Nothing, x, y)
 
 |||
 |-|-|
-| **規則の名前** | dotnet_style_null_propagation |
+| **ルール名** | dotnet_style_null_propagation |
 | **ルール ID** | IDE0031 |
 | **該当言語** | C# 6.0+ および Visual Basic 14+ |
 | **値** | `true` - 可能であれば、null 条件演算子を使用します<br /><br />`false` - 可能であれば、三項 null 検査を使用します |
@@ -1003,6 +1040,16 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
+### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+
+|||
+|-|-|
+| **ルール名** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **ルール ID** | IDE0041 |
+| **該当言語** | C# 6.0+ および Visual Basic 14+ |
+| **値** | `true` - 参照の等価性メソッドよりも null 検査を優先します<br /><br />`false` - null 検査よりも参照の等値性メソッドを優先します |
+| **Visual Studio の既定値** | `true:silent` |
+
 ## <a name="net-code-quality-settings"></a>.NET コードの品質の設定
 
 このセクションの品質ルールは、C# と Visual Basic 両方のコードに適用されます。 これらは、Visual Studio 統合開発環境 (IDE) に組み込まれているコード アナライザーの構成に使用されます。 EditorConfig ファイルを使用した FxCop アナライザーの構成について詳しくは、「[Configure FxCop analyzers (FxCop アナライザーを構成する)](../code-quality/configure-fxcop-analyzers.md)」をご覧ください。
@@ -1026,7 +1073,7 @@ dotnet_code_quality_unused_parameters = all:suggestion
 
 |||
 |-|-|
-| **規則の名前** | dotnet_code_quality_unused_parameters |
+| **ルール名** | dotnet_code_quality_unused_parameters |
 | **ルール ID** | IDE0060 |
 | **該当言語** | C# および Visual Basic |
 | **値** | `all` - 使用されていないパラメーターが含まれる、すべてのアクセシビリティのメソッドにフラグを設定します<br /><br />`non_public` - 使用されていないパラメーターが含まれるメソッドのうち、パブリックではないものだけにフラグを設定します |
@@ -1081,6 +1128,8 @@ End Function
 - ["null" チェック設定](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
+- [修飾子の基本設定](#normalize-modifiers)
+  - csharp\_preferred\_modifier_order
 - [コード ブロック基本設定](#code-block-preferences)
   - csharp\_prefer_braces
 - [未使用の値のユーザー設定](#unused-value-preferences)
@@ -1115,7 +1164,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_var_for_built_in_types |
+| **ルール名** | csharp_style_var_for_built_in_types |
 | **ルール ID** | IDE0007、IDE0008 |
 | **該当言語** | C#  |
 | **値** | `true` - `int` などのビルトイン システム型で変数を宣言する場合に `var` を使用します<br /><br />`false` - `int` などのビルトイン システム型で変数を宣言する場合に `var` ではなく明示的な型を使用します。 |
@@ -1135,7 +1184,7 @@ int x = 5;
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_var_when_type_is_apparent |
+| **ルール名** | csharp_style_var_when_type_is_apparent |
 | **ルール ID** | IDE0007、IDE0008 |
 | **該当言語** | C#  |
 | **値** | `true` - 宣言式の右側で型が既に述べられているときに `var` を使用します<br /><br />`false` - 宣言式の右側で型が既に示されているときに `var` ではなく明示的な型を使用します |
@@ -1155,7 +1204,7 @@ Customer obj = new Customer();
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_var_elsewhere |
+| **ルール名** | csharp_style_var_elsewhere |
 | **ルール ID** | IDE0007、IDE0008 |
 | **該当言語** | C#  |
 | **値** | `true` - 別のコード スタイル ルールでオーバーライドされない限り、すべての場合に明示的な型ではなく `var` を使用します<br /><br />`false` - 別のコード スタイル ルールでオーバーライドされない限り、すべての場合に `var` ではなく明示的な型を使用します |
@@ -1194,7 +1243,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_methods |
+| **ルール名** | csharp_style_expression_bodied_methods |
 | **ルール ID** | IDE0022 |
 | **該当言語** | C# 6.0+  |
 | **値** | `true` - メソッドに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、メソッドに式本体を使用します<br /><br />`false` - メソッドにブロック本体を使用します |
@@ -1214,7 +1263,7 @@ public int GetAge() { return this.Age; }
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_constructors |
+| **ルール名** | csharp_style_expression_bodied_constructors |
 | **ルール ID** | IDE0021 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - コンストラクターに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、コンストラクターに式本体を使用します<br /><br />`false` - コンストラクターにブロック本体を使用します |
@@ -1234,7 +1283,7 @@ public Customer(int age) { Age = age; }
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_operators |
+| **ルール名** | csharp_style_expression_bodied_operators |
 | **ルール ID** | IDE0023 と IDE0024 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - 演算子に式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、演算子に式本体を使用します<br /><br />`false` - 演算子にブロック本体を使用します |
@@ -1256,7 +1305,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_properties |
+| **ルール名** | csharp_style_expression_bodied_properties |
 | **ルール ID** | IDE0025 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - プロパティに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、プロパティに式本体を使用します<br /><br />`false` - プロパティにブロック本体を使用します |
@@ -1276,7 +1325,7 @@ public int Age { get { return _age; }}
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_indexers |
+| **ルール名** | csharp_style_expression_bodied_indexers |
 | **ルール ID** | IDE0026 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - インデクサーに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、インデクサーに式本体を使用します<br /><br />`false` - インデクサーにブロック本体を使用します |
@@ -1296,7 +1345,7 @@ public T this[int i] { get { return _values[i]; } }
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_accessors |
+| **ルール名** | csharp_style_expression_bodied_accessors |
 | **ルール ID** | IDE0027 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - アクセサーに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、アクセサーに式本体を使用します<br /><br />`false` - アクセサーにブロック本体を使用します |
@@ -1316,7 +1365,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_lambdas |
+| **ルール名** | csharp_style_expression_bodied_lambdas |
 | **ルール ID** | IDE0053 |
 | **値** | `true` - ラムダに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、ラムダに式本体を使用します<br /><br />`false` - ラムダにブロック本体を使用します |
 | **Visual Studio の既定値** | `true:silent` |
@@ -1337,7 +1386,7 @@ C# 7.0 以降、C# では[ローカル関数](/dotnet/csharp/programming-guide/c
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_expression_bodied_local_functions |
+| **ルール名** | csharp_style_expression_bodied_local_functions |
 | **ルール ID** | IDE0061 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - ローカル関数に式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、ローカル関数に式本体を使用します<br /><br />`false` - ローカル関数にブロック本体を使用します |
@@ -1381,7 +1430,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_pattern_matching_over_is_with_cast_check |
+| **ルール名** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **ルール ID** | IDE0020 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - `is` 式と型キャストの代わりにパターン マッチングを使用します<br /><br />`false` - パターン マッチングの代わりに `is` 式と型キャストを使用します |
@@ -1401,7 +1450,7 @@ if (o is int) {var i = (int)o; ... }
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_pattern_matching_over_as_with_null_check |
+| **ルール名** | csharp_style_pattern_matching_over_as_with_null_check |
 | **ルール ID** | IDE0019 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - `as` 式と null 検査の代わりにパターン マッチングを使用し、何かが特定の型であるか判断します<br /><br />`false` - パターン マッチングの代わりに `as` 式と null 検査を使用し、何かが特定の型であるか判断します |
@@ -1426,7 +1475,7 @@ if (s != null) {...}
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_inlined_variable_declaration |
+| **ルール名** | csharp_style_inlined_variable_declaration |
 | **ルール ID** | IDE0018 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - 可能であれば、メソッド呼び出しの引数リスト内で `out` 変数をインラインで宣言します<br /><br />`false` - メソッド呼び出しの前に `out` 変数を宣言します |
@@ -1469,7 +1518,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_prefer_simple_default_expression |
+| **ルール名** | csharp_prefer_simple_default_expression |
 | **ルール ID** | IDE0034 |
 | **該当言語** | C# 7.1+  |
 | **値** | `true` - `default` を `default(T)` より優先します<br /><br />`false` - `default(T)` を `default` より優先します |
@@ -1502,7 +1551,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_throw_expression |
+| **ルール名** | csharp_style_throw_expression |
 | **ルール ID** | IDE0016 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - `throw` ステートメントの代わりに `throw` 式を使用します<br /><br />`false` - `throw` 式の代わりに `throw` ステートメントを使用します |
@@ -1523,7 +1572,7 @@ this.s = s;
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_conditional_delegate_call |
+| **ルール名** | csharp_style_conditional_delegate_call |
 | **ルール ID** | IDE0041 |
 | **該当言語** | C# 6.0+  |
 | **値** | `true` - null チェックを実行する代わりに、ラムダ式の呼び出し時に条件付き合体演算子 (`?.`) を使用します<br /><br />`false` - 条件付き合体演算子 (`?.`) を使用する代わりに、ラムダ式を呼び出す前に null チェックを実行します |
@@ -1555,10 +1604,10 @@ csharp_prefer_braces = true:silent
 
 |||
 |-|-|
-| **規則の名前** | csharp_prefer_braces |
+| **ルール名** | csharp_prefer_braces |
 | **ルール ID** | IDE0011 |
 | **該当言語** | C# |
-| **値** | `true` - コードが 1 行であっても中かっこを使用します<br /><br />`false` - 中かっこは使用しません (許可されている場合) |
+| **値** | `true` - コードが 1 行であっても中かっこを使用します<br /><br />`false` - 中かっこは使用しません (許可されている場合)<br /><br />`when_multiline` - 複数の行で中かっこを使用します |
 | **Visual Studio の既定値** | `true:silent` |
 
 コード例:
@@ -1588,7 +1637,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_unused_value_expression_statement_preference |
+| **ルール名** | csharp_style_unused_value_expression_statement_preference |
 | **ルール ID** | IDE0058 |
 | **該当言語** | C# |
 | **値** | `discard_variable` - 未使用の式を[破棄](/dotnet/csharp/discards)に割り当てます <br /><br />`unused_local_variable` - 未使用の式をローカル変数に割り当てます |
@@ -1613,7 +1662,7 @@ var unused = Convert.ToInt32("35");
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_unused_value_assignment_preference |
+| **ルール名** | csharp_style_unused_value_assignment_preference |
 | **ルール ID** | IDE0059 |
 | **該当言語** | C# |
 | **値** | `discard_variable` -使用されていない値を割り当てるときに、[破棄](/dotnet/csharp/discards)を使用します<br /><br />`unused_local_variable` -使用されていない値を割り当てるときに、ローカル変数を使用します |
@@ -1654,7 +1703,7 @@ csharp_style_prefer_range_operator = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_prefer_index_operator |
+| **ルール名** | csharp_style_prefer_index_operator |
 | **ルール ID** | IDE0056 |
 | **該当言語** | C# 8.0 以降 |
 | **値** | `true` -コレクションの末尾からのインデックスを計算するときに、`^` 演算子を使用します<br /><br />`false` - コレクションの末尾からのインデックスを計算するときに、`^` 演算子を使用しません |
@@ -1676,7 +1725,7 @@ var index = names[names.Length - 1];
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_prefer_range_operator |
+| **ルール名** | csharp_style_prefer_range_operator |
 | **ルール ID** | IDE0057 |
 | **該当言語** | C# 8.0 以降 |
 | **値** | `true` - コレクションの "スライス" を抽出するときに、範囲演算子 `..` を使用します<br /><br />`false` - コレクションの "スライス" を抽出するときに、範囲演算子 `..` を使用しません |
@@ -1715,7 +1764,7 @@ csharp_style_prefer_switch_expression = true:suggestion
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_deconstructed_variable_declaration |
+| **ルール名** | csharp_style_deconstructed_variable_declaration |
 | **ルール ID** | IDE0042 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - 分解された変数宣言を優先します<br /><br />`false` - 変数宣言では分解を優先しません |
@@ -1745,7 +1794,7 @@ C# 7.0 以降、C# では[ローカル関数](/dotnet/csharp/programming-guide/c
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_pattern_local_over_anonymous_function |
+| **ルール名** | csharp_style_pattern_local_over_anonymous_function |
 | **ルール ID** | IDE0039 |
 | **該当言語** | C# 7.0+ |
 | **値** | `true` - 匿名関数よりローカル関数を優先します<br /><br />`false` - ローカル関数より匿名関数を優先します |
@@ -1772,7 +1821,7 @@ fibonacci = (int n) =>
 
 |||
 |-|-|
-| **規則の名前** | csharp_using_directive_placement |
+| **ルール名** | csharp_using_directive_placement |
 | **ルール ID** | IDE0065 |
 | **該当言語** | C# |
 | **値** | `outside_namespace` - `using` ディレクティブを名前空間の外側に配置します<br /><br />`inside_namespace` - `using` ディレクティブを名前空間の内側に配置します |
@@ -1801,7 +1850,7 @@ namespace Conventions
 
 |||
 |-|-|
-| **規則の名前** | csharp_prefer_static_local_function |
+| **ルール名** | csharp_prefer_static_local_function |
 | **ルール ID** | IDE0062 |
 | **該当言語** | C# 8.0 以降 |
 | **値** | `true` - ローカル関数を `static` でマークします<br /><br />`false` - ローカル関数を `static` でマークしません |
@@ -1835,10 +1884,10 @@ void M()
 
 |||
 |-|-|
-| **規則の名前** | csharp_prefer_simple_using_statement |
+| **ルール名** | csharp_prefer_simple_using_statement |
 | **ルール ID** | IDE0063 |
 | **該当言語** | C# 8.0 以降 |
-| **値** | `true` - "*単純な*" `using` ステートメントを使用します<br /><br />`false` - "*単純な*" `using` ステートメントを使用しません |
+| **値** | `true` - "*単純な*" `using` ステートメントの使用を優先します<br /><br />`false` - "*単純な*" `using` ステートメントの使用を優先しません |
 | **Visual Studio の既定値** | `true:suggestion` |
 
 コード例:
@@ -1855,7 +1904,7 @@ using (var a = b) { }
 
 |||
 |-|-|
-| **規則の名前** | csharp_style_prefer_switch_expression |
+| **ルール名** | csharp_style_prefer_switch_expression |
 | **ルール ID** | IDE0066 |
 | **該当言語** | C# 8.0 以降 |
 | **値** | `true` - `switch` 式 (C# 8.0 で導入) を使用します<br /><br />`false` - [switch ステートメント](/dotnet/csharp/language-reference/keywords/switch)を使用します |

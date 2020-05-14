@@ -18,7 +18,7 @@
   href: how-to-use-the-imports-designer.md
 - name: 階層リンク ナビゲーションを使用する
   href: how-to-use-breadcrumb-navigation.md
-- name: 検索の使用
+- name: 検索を使用する
   href: how-to-use-search-in-the-workflow-designer.md
 - name: アクティビティ デリゲートの定義と使用
   href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
@@ -194,7 +194,7 @@
       href: system-activities-tab-choose-toolbox-items-dialog-box.md
     - name: ワークフロー デザイナーのシェルの機能
       href: workflow-designer-shell-features.md
-    - name: ショートカット キー
+    - name: キーボード ショートカット
       href: keyboard-shortcuts-in-the-workflow-designer.md
     - name: エラー メッセージ
       href: error-messages-in-workflow-designer.md

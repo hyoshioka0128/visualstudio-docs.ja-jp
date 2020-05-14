@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a8ea7977f73be2a38a8ac7a417c6794b567e600
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189117"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306843"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE へようこそ | C\#
 
@@ -38,7 +38,7 @@ ms.locfileid: "73189117"
 
 IDE の他のカスタマイズ方法については、「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 以下の入力記事のいずれかに従って、Visual Studio をさらに詳しく調べます。
 
@@ -48,7 +48,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 > [!div class="nextstepaction"]
 > [プロジェクトとソリューションについて学習する](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のその他の機能](../../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします

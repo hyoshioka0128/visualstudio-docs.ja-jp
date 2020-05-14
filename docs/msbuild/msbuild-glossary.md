@@ -3,17 +3,17 @@ title: MSBuild 用語集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926356"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633344"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 用語集
 
@@ -161,7 +161,7 @@ false と評価される条件を持つターゲットは動作しません。�
 ターゲット ファイルは、ビルドを制御するターゲットとタスクを主に含むプロジェクト ファイルです。 規則により、 *.targets* というファイル拡張子が付きます。 ターゲット ファイルは、通常、関連付けられたプロジェクト ファイルの末尾にインポートされます。
 
 タスク\
-タスクとは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトでビルド処理を実行するために使用される一連の実行可能コードです。 たとえば、タスクでは入力ファイルをコンパイルしたり、外部ツールを実行したりします。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
+タスクとは、MSBuild プロジェクトでビルド処理を実行するために使用される実行可能コードの単位です。 たとえば、タスクでは入力ファイルをコンパイルしたり、外部ツールを実行したりします。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
 
 変換\
 変換とは、1 つの項目コレクションを別の項目コレクションに一対一で変換することです。 プロジェクトで項目コレクションを変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」をご覧ください。

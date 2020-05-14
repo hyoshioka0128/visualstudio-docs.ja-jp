@@ -6,17 +6,17 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653727"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591529"
 ---
 # <a name="findcommand-box"></a>[検索/コマンド] ボックス
 
@@ -52,7 +52,7 @@ ms.locfileid: "72653727"
 
 カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コマンド ウィンドウ](../ide/reference/command-window.md)
 - [テキストの検索と置換](../ide/finding-and-replacing-text.md)

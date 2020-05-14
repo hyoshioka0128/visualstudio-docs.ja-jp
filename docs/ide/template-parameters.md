@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647401"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169366"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 
@@ -61,7 +61,7 @@ ms.locfileid: "72647401"
 |safeitemrootname|`safeitemname` と同じ。|
 |safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
 |時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
-|specifiedSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`specifiedSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`specifiedSolutionName` は空白です。|
+|specifiedsolutionname|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`specifiedsolutionname` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`specifiedsolutionname` は空白です。|
 |userdomain|現在のユーザー ドメイン。|
 |username|現在のユーザー名。|
 |webnamespace|現在の Web サイトの名前。 このパラメーターは、Web フォーム テンプレートで一意のクラス名を保証するために使用されます。 この Web サイトが Web サーバーのルート ディレクトリにある場合、このテンプレート パラメーターは Web サーバーのルート ディレクトリとして解決されます。|

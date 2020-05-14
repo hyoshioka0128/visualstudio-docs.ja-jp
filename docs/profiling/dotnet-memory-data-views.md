@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779273"
 ---
 # <a name="net-memory-data-views"></a>.NET メモリのデータ ビュー
 ここでは、.NET メモリ プロファイル データが格納されるプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [概要 ビュー](../profiling/summary-view-dotnet-memory-data.md)
+- [概要ビュー](../profiling/summary-view-dotnet-memory-data.md)
 
  最も多くのメモリを割り当てた関数と型が一覧で示されます。
 
@@ -75,8 +75,8 @@ ms.locfileid: "74779273"
 
  プロファイリング実行でのインストルメント化された関数に対するメモリ割り当てデータが一覧で表示されます。
 
-## <a name="reference"></a>辞書／辞典／その他
-- [関数の詳細ビュー](../profiling/function-details-view.md)
+## <a name="reference"></a>リファレンス
+- [[関数の詳細] ビュー](../profiling/function-details-view.md)
 
  選択した関数と、選択した関数を呼び出した関数および選択した関数によって呼び出された関数の関係がグラフィカルな図で表示されます。
 
@@ -89,7 +89,7 @@ ms.locfileid: "74779273"
  プロファイル データ ファイルに挿入された ETW およびサンプリング イベントが一覧表示されます。
 
 ## <a name="related-sections"></a>関連項目
-- [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)
+- [プロファイラー サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)
 
  サンプリング メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報。
 

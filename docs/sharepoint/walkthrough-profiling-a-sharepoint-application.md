@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189125"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277651"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>チュートリアル: SharePoint アプリケーションのプロファイリング
   このチュートリアルでは、Visual Studio のプロファイル ツールを使用し、SharePoint アプリケーションのパフォーマンスを最適化する方法について説明します。 アプリケーション例は SharePoint フィーチャー イベント レシーバーで、これにはフィーチャー イベント レシーバーのパフォーマンスを低下させるアイドル ループが含まれています。 Visual Studio プロファイラーを使用すると、プロジェクトの最も負荷の高い (実行速度が遅い) 部分を特定し、除去することができます。これは、*ホットパス*とも呼ばれます。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- [Addg 機能と機能イベントレシーバー](#add-a-feature-and-feature-event-receiver)。
+- [フィーチャーとフィーチャーイベントレシーバーを追加](#add-a-feature-and-feature-event-receiver)します。
 
 - [SharePoint アプリケーションを構成して展開](#configure-and-deploy-the-sharepoint-application)します。
 
@@ -37,12 +37,12 @@ ms.locfileid: "73189125"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - サポート対象エディションの Microsoft Windows および SharePoint。
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [https://login.microsoftonline.com/consumers/]([!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)])
 
 ## <a name="create-a-sharepoint-project"></a>SharePoint プロジェクトを作成する
  まずは、SharePoint プロジェクトを作成します。
@@ -65,7 +65,7 @@ ms.locfileid: "73189125"
 
     現時点では、ファーム ソリューションのプロファイルのみを実行できます。 サンドボックスソリューションとファームソリューションの詳細については、「[サンドボックスソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)」を参照してください。
 
-7. **[完了]** をクリックします。 プロジェクトが**ソリューションエクスプローラー**に表示されます。
+7. **[完了]** ボタンを選択します。 プロジェクトが**ソリューションエクスプローラー**に表示されます。
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>フィーチャーとフィーチャーイベントレシーバーを追加する
  次に、フィーチャーを、そのイベント レシーバーと共にプロジェクトに追加します。 このイベント レシーバーには、プロファイル対象のコードが含まれます。
@@ -258,7 +258,7 @@ ms.locfileid: "73189125"
 
 ### <a name="to-fix-the-code-and-reprofile-the-application"></a>コードを修正し、アプリケーションを再プロファイルするには
 
-1. フィーチャー イベント レシーバーのコード内で、`FeatureActivated` の `TimeCounter` メソッドの呼び出しをコメント アウトし、これが呼び出されないようにします。
+1. フィーチャー イベント レシーバーのコード内で、`TimeCounter` の `FeatureActivated` メソッドの呼び出しをコメント アウトし、これが呼び出されないようにします。
 
 2. プロジェクトを保存します。
 
@@ -272,8 +272,7 @@ ms.locfileid: "73189125"
 
      これで、アイドル ループへの呼び出しが削除されたため、機能のアクティブ化がより高速になりました。 このことは、サンプル プロファイル レポートに反映されます。
 
-## <a name="see-also"></a>関連項目
-- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>参照
 - [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)
 - [パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)
 - [Visual Studio Profiler でアプリケーションのボトルネックを見つける](https://msdn.microsoft.com/magazine/cc337887.aspx)

@@ -6,17 +6,17 @@ f1_keywords:
 - AppPackage.Properties.Application
 helpviewer_keywords:
 - Application page [UWP project]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 01edb1871388cdc31f6c92ff25d10c876dfebc64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651955"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77173086"
 ---
 # <a name="application-property-page-uwp-projects"></a>アプリケーション プロパティ ページ (UWP プロジェクト)
 
@@ -38,7 +38,7 @@ ms.locfileid: "72651955"
 
 **アセンブリ情報**&mdash;このボタンをクリックすると、[[アセンブリ情報] ダイアログ ボックス](../../ide/reference/assembly-information-dialog-box.md)が表示されます。
 
-**パッケージ マニフェスト**&mdash;このボタンを選択すると、マニフェスト デザイナーが表示されます。 マニフェスト デザイナーには、**ソリューション エクスプローラー**で _Package.appxmanifest_ ファイルを選択して、アクセスすることもできます。 詳細については、「[マニフェスト デザイナーを使ってパッケージを構成する](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)」を参照してください。
+**パッケージ マニフェスト**&mdash;このボタンを選択すると、マニフェスト デザイナーが表示されます。 マニフェスト デザイナーには、_ソリューション エクスプローラー_で **Package.appxmanifest** ファイルを選択して、アクセスすることもできます。 詳細については、「[マニフェスト デザイナーを使ってパッケージを構成する](/windows/msix/package/packaging-uwp-apps#configure-your-project)」を参照してください。
 
 ## <a name="targeting-section"></a>[ターゲット] セクション
 
@@ -46,7 +46,7 @@ ms.locfileid: "72651955"
 
 Visual Studio のプラットフォーム ターゲットの詳細については、「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [初めてのアプリの作成](/windows/uwp/get-started/your-first-app)
 - [UWP バージョンの選択](/windows/uwp/updates-and-versions/choose-a-uwp-version)

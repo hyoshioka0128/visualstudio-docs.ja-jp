@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject |Microsoft Docs
+title: オブジェクトを管理する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6744ae98a0210a6832bce1bdb0cd68f08145f3eb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349412"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727684"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については、「 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- このインターフェイスは、式エバリュエーターを値クラスのインスタンスでプロパティまたはメソッドを呼び出すには、(EE) を使用できます (たとえば、 `System.Decimal`) を呼び出さずに、その値を設定して[評価](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)デバッグ中のプログラムで。
+ このインターフェイスを使用すると、式エバリュエーター (EE) は、値クラスのインスタンス`System.Decimal`(たとえば) のプロパティまたはメソッドを呼び出し、デバッグ中のプログラムで[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)を呼び出さずに値を設定できます。
 
 ## <a name="syntax"></a>構文
 
@@ -31,30 +31,30 @@ ms.locfileid: "66349412"
 IDebugManagedObject : IDebugObject
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- 式エバリュエーターでは、変数などのマネージ コード オブジェクトを表すには、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ 式エバリュエーターは、変数などのマネージ コード オブジェクトを表すために、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- このインターフェイスを取得する呼び出し[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)上、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)を表す値クラスのインスタンス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ このインターフェイスを取得するには、値クラスのインスタンスを表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)で[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)を呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 継承されたメソッドだけでなく[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)、`IDebugManagedObject`インターフェイスは、次のメソッドを公開します。
+ [から](../../../extensibility/debugger/reference/idebugobject.md)継承されたメソッドに加えて、インターフェイスは`IDebugManagedObject`、次のメソッドを公開します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|マネージ コード オブジェクトを表すし、適切なマネージ コードのインターフェイスを取得できるインターフェイスを返します。|
-|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|このオブジェクトの値を指定したマネージ コード オブジェクトの値に設定します。|
+|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|マネージ コード オブジェクトを表し、適切なマネージ コード インターフェイスを取得できるインターフェイスを返します。|
+|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|このオブジェクトの値を、指定したマネージ コード オブジェクトの値に設定します。|
 
 ## <a name="remarks"></a>Remarks
- 式エバリュエーターでは、解析ツリーで、マネージ コード オブジェクトを格納するのにこのインターフェイスを使用します。
+ 式エバリュエーターは、このインターフェイスを使用して、解析ツリーにマネージ コード オブジェクトを格納します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: ee.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
-- [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
+- [評価](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

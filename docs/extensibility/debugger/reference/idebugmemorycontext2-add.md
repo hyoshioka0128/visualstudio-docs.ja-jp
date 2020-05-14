@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Add |Microsoft Docs
+title: Iデバッグメモリコンテキスト2::追加 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Add method
 - Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1cafbf22e51f867948491e2925c085bd387ea84
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727486"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
-現在のコンテキストに指定した値を追加し、新しいコンテキストを返します。
+指定した値を現在のコンテキストに追加し、新しいコンテキストを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,15 +47,15 @@ int Add(
 [in]現在のコンテキストに追加する値。
 
 `ppMemCxt`\
-[out]新しいを返します[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクト。
+[アウト]新しい[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- メモリのコンテキストは、コンテキストの新しいインターフェイスを必要とする新しいアドレスを生成するアドレスに値を追加するために、アドレスです。
+ メモリ コンテキストはアドレスであるため、アドレスに値を追加すると、新しいコンテキスト インターフェイスを必要とする新しいアドレスが生成されます。
 
- 結果として得られるアドレスがこのコンテキストに関連付けられたメモリ空間の外にある場合でも、新しいコンテキストをこのメソッドを生成することが常にする必要があります。 唯一の例外は、新しいコンテキストのメモリを割り当てることはできませんか場合`ppMemCxt`は (つまり、エラー)、null 値です。
+ このメソッドは、結果として得られるアドレスがこのコンテキストに関連付けられたメモリ空間の外にある場合でも、常に新しいコンテキストを生成する必要があります。 唯一の例外は、新しいコンテキストにメモリを割り当てることができない場合、`ppMemCxt`または null 値 (エラー) の場合です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

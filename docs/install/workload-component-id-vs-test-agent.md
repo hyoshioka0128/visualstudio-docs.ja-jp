@@ -3,10 +3,10 @@ title: Visual Studio Test Agent のワークロードとコンポーネント ID
 titleSuffix: ''
 description: Visual Studio のワークロード ID とコンポーネント ID を使って、自動テストとロード テストをリモートで実行します
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2f82487ee45b171f9150057416678fb64b4207f9
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+open_to_public_contributors: false
+ms.openlocfilehash: 5a24e7c95d3e55b5b91d737877b9292e0af0db58
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797278"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276404"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent のコンポーネント ディレクトリ
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Continue |Microsoft Docs
+title: プログラム 2::続行 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c7ea051c9753f6149802c9e92534dd9ee1d8735
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6d04445a7a1c444f30a0ef5c156dcd7ad744c6f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319391"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723078"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-停止状態からこのプログラムの実行が続行されます。 (ステップ) など、以前の実行状態の保持、され、プログラムでは、もう一度実行が開始されます。
+停止状態からこのプログラムを実行し続けます。 以前の実行状態 (ステップなど) は保持され、プログラムの実行は再び開始されます。
 
 > [!NOTE]
-> このメソッドは非推奨です。 使用して、[続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)メソッド代わりにします。
+> このメソッドは非推奨とされます。 代わりに[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int Continue( 
 ```
 
 ## <a name="parameters"></a>パラメーター
-`pThread` [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)スレッドを表すオブジェクト。
+`pThread`[in]スレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、デバッグ中のプログラムの数、またはプログラムは stopping イベントの生成に関係なく、このプログラムで呼び出されます。 実装する必要があります (ステップ) などの以前の実行状態を保持し、ことはありませんが、前の実行を完了する前に停止したように実行を続行します。 つまり、このプログラムでは、スレッドがステップ オーバー操作を行っていたため、他のプログラムが停止し、このメソッドが呼び出された後に停止された場合に、プログラムは元のステップ オーバー操作を完了する必要があります。
+ このメソッドは、デバッグ中のプログラムの数や停止イベントを生成したプログラムに関係なく、このプログラムで呼び出されます。 実装は、前の実行状態 (ステップなど) を保持し、前の実行を完了する前に停止したことがないかのように実行を続行する必要があります。 つまり、このプログラムのスレッドがステップ オーバー操作を行っていて、他のプログラムが停止したために停止し、このメソッドが呼び出された場合、プログラムは元のステップオーバー操作を完了する必要があります。
 
 > [!WARNING]
-> 停止イベントまたは直接 (同期) イベントを送信しない[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md); この呼び出しを処理中にそれ以外の場合、デバッガーがハングします。
+> この呼び出しを処理する間は、停止イベントまたは即時 (同期) イベントを[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に送信しないでください。それ以外の場合は、デバッガーがハングする可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

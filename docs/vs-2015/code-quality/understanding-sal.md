@@ -6,20 +6,20 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291876"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278444"
 ---
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft ソースコード注釈言語 (SAL) は、関数がパラメーターをどのように使用するか、そのパラメーターについての前提条件、および終了時に実行する保証を記述するために使用できる一連の注釈を提供します。 注釈は、ヘッダーファイル `<sal.h>`で定義されています。 の Visual Studio code 分析C++では、SAL 注釈を使用して関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、「 [Windows ドライバーの sal 2.0 注釈](https://go.microsoft.com/fwlink/?LinkId=250979)」を参照してください。  
+Microsoft ソースコード注釈言語 (SAL) は、関数がパラメーターをどのように使用するか、そのパラメーターについての前提条件、および終了時に実行する保証を記述するために使用できる一連の注釈を提供します。 注釈は、ヘッダーファイル `<sal.h>`で定義されています。 の Visual Studio code 分析C++では、SAL 注釈を使用して関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、「 [Windows ドライバーの sal 2.0 注釈](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)」を参照してください。  
   
  ネイティブでは、 C++ C とは、開発者がインテントと非分散を一貫して表現するための限られた方法のみを提供します。 SAL 注釈を使用すると、関数を使用する開発者がその使用方法について理解を深めることができるように、関数をより詳細に記述できます。  
   
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL の基礎  
  SAL は、使用パターンによって分類される4つの基本的な種類のパラメーターを定義します。  
   
-|カテゴリ|パラメーター注釈|説明|  
+|カテゴリ|パラメーター注釈|Description|  
 |--------------|--------------------------|-----------------|  
 |**呼び出された関数への入力**|`_In_`|呼び出された関数にデータが渡され、読み取り専用として扱われます。|  
 |**呼び出された関数への入力と、呼び出し元への出力**|`_Inout_`|使用可能なデータは関数に渡され、変更される可能性があります。|  
@@ -408,10 +408,10 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
   または、すべてのパラメーターに注釈を付けて、目的を明確にし、注釈が完了したことを簡単に確認できるようにすることもできます。  
   
-## <a name="related-resources"></a>関連資料  
- [コード分析チームのブログ](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+## <a name="related-resources"></a>関連リソース  
+ [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   

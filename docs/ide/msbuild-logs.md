@@ -5,8 +5,8 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461477"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77278812"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild に関する問題のトラブルシューティングとログ記録
 
@@ -44,7 +44,7 @@ ms.locfileid: "68461477"
 - PropertyGroups と Imports
 - ItemDefinitionGroups
 - ItemGroups
-- ターゲット
+- 対象サーバー
 
 そのため、次の順序を考えてみます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "68461477"
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>インクリメンタル ビルドで必要以上にビルドされる
 
-MSBuild によってプロジェクトまたはプロジェクト項目が不必要にリビルドされる場合は、詳細またはバイナリ ビルド ログを作成します。 そのログから、不必要にビルドまたはコンパイルされていたファイルを検索できます。 出力は次のようになります。
+MSBuild によってプロジェクトまたはプロジェクト項目が不必要にリビルドされる場合は、詳細またはバイナリ ビルド ログを作成します。 そのログから、不必要にビルドまたはコンパイルされていたファイルを検索できます。 次のような画面が出力されます。
 
 ```output
   Task "CL"

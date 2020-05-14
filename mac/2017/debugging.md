@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985018"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin を使ったデバッグ
@@ -41,7 +41,7 @@ IDE でブレークポイントを設定するには、エディターで、中�
 
 ![ブレークポイントの一覧](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>[デバッグ開始]
+## <a name="start-debugging"></a>デバッグを開始する
 
 デバッグを開始するには、IDE でターゲット デバイスまたは同様のデバイス/エミュレーターを選択します。
 
@@ -94,6 +94,6 @@ Xamarin 製品には、Mono のクラス ライブラリのソース コード�
 
 ![[フレームワーク コードにはステップ インしない] オプション](media/debugging-image8.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのデバッグ (Windows)](/visualstudio/debugger/)

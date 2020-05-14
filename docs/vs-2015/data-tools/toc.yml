@@ -154,7 +154,7 @@
                   href: you-have-selected-a-database-object-from-an-unsupported-database-provider.md
                 - name: 関連付け <関連づけの名前\> を作成できません - プロパティの型が一致しません
                   href: cannot-create-an-association-association-name-property-types-do-not-match.md
-                - name: '警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません'
+                - name: '警告。 [動作の構成] ダイアログ ボックスで行った変更が適用されていません'
                   href: warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md
                 - name: この関連メソッドは、次の既定の挿入、更新、または削除メソッドのバッキング メソッドです
                   href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md

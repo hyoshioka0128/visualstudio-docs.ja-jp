@@ -27,17 +27,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666377"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588799"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>[オプション]、[テキスト エディター]、[すべての言語]、[スクロール バー]
 このダイアログ ボックスでは、コード エディターのスクロール バーの既定の動作を変更できます。 オプションを表示するには、 **[ツール]** メニューから **[オプション]** を選択します。 **[テキスト エディター]** フォルダー内で **[すべての言語]** サブフォルダーを展開し、 **[スクロール バー]** を選択します。
@@ -86,6 +86,6 @@ ms.locfileid: "72666377"
 > [!TIP]
 > **[ソースの概要]** を **[オフ]** に設定すると、マップ モードの縮小版のコード ビューをオフにすることができます。 **[プレビュー ツール ヒントの表示]** を選択すると、スクロール バーにポインターを置いたときにその場所のコードのプレビューが表示され、クリックすると、ファイルのその位置にカーソルがジャンプするようになります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: スクロール バーのカスタマイズ](../how-to-track-your-code-by-customizing-the-scrollbar.md)

@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "71125957"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77027283"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker を使用した Visual Studio 開発のトラブルシューティング
 
@@ -80,6 +80,18 @@ net localgroup docker-users DOMAIN\username /add
 ```
 
 PowerShell では、[Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) 関数を使用します。
+
+## <a name="low-disk-space"></a>ディスク領域不足
+
+Docker では既定で、 *%ProgramData%/Docker/* フォルダーにイメージが格納されます。このフォルダーは通常、システム ドライブ上にあり、*C:\ProgramData\Docker\* となります。 システム ドライブの大切な領域をイメージで占有してしまわないよう、イメージ フォルダーの場所を変更できます。  タスク バーの Docker アイコンから Docker 設定を開き、 **[デーモン]** を選択し、 **[基本]** を **[詳細]** に切り替えます。 編集ウィンドウで `graph` プロパティ設定を追加し、Docker イメージに任意の場所を指定します。
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Docker イメージの場所設定のスクリーンショット](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+**[適用]** をクリックし、Docker を再起動します。 以上の手順で *%ProgramData%\docker\config\daemon.json* にある設定ファイルが変更されます。 以前に作成したイメージが移動されることはありません。
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub リポジトリ
 

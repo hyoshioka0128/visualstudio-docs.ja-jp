@@ -2,17 +2,17 @@
 title: テスト用に UWP コントロールの一意のオートメーション プロパティを設定する
 ms.date: 05/31/2018
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-author: jillre
-ms.openlocfilehash: 845ed1502f86f9b0de678182bd0dc77b9b7617c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 51e16dcaa48a08ae97bc80be1d33163c6f3af875
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660012"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590450"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>テスト用に UWP コントロールの一意のオートメーション プロパティを設定する
 
@@ -163,6 +163,6 @@ private void CreateCheckBox(string txt, StackPanel panel)
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード化された UI テストを使用して UWP アプリをテストする](../test/test-uwp-app-with-coded-ui-test.md)

@@ -1,18 +1,19 @@
 ---
 title: TensorBoard で監視する
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05c9b802a490596fe69256c4ccc8dc5cb047c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: b3f1244b7cabf0cf89ad544b5138165a4a336a31
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777426"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638733"
 ---
 # <a name="monitor-with-tensorboard"></a>TensorBoard で監視する
 

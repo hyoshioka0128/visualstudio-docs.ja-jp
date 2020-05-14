@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 辞書／辞典／その他
+        - name: 関連項目
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -329,8 +329,14 @@
                   href: ide/reference/generate-constructor.md
                 - name: デコンストラクターの生成
                   href: ide/reference/generate-deconstructor.md
+                - name: 明示的なキャストの追加
+                  href: ide/reference/add-explicit-cast.md
                 - name: メソッドにパラメーターを追加する
                   href: ide/reference/add-parameter.md
+                - name: パラメーターを生成する
+                  href: ide/reference/generate-parameter.md
+                - name: コンストラクターからプライベートフィールドを生成する
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: オーバーライドの生成
                   href: ide/reference/generate-override.md
                 - name: Equals および GetHashCode メソッドのオーバーライドの生成
@@ -348,12 +354,16 @@
                 - name: 概要
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: すべてのパラメーターに対して null チェックを追加する
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: メソッド シグネチャの変更
                   href: ide/reference/change-method-signature.md
                 - name: 匿名型をクラスに変換する
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: 匿名型をタプルに変換する
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: auto プロパティと full プロパティの間で変換する
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: For ループと Foreach ステートメントの間で変換する
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get メソッドとプロパティの間で変換する
@@ -362,6 +372,8 @@
                   href: ide/reference/convert-local-function-method.md
                 - name: Foreach ループを LINQ に変換する
                   href: ide/reference/convert-foreach-linq.md
+                - name: if ステートメントを switch ステートメントまたは switch 式に変換する
+                  href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: LINQ クエリを foreach ステートメントに変換する
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: switch ステートメントを switch 式に変換する
@@ -372,8 +384,8 @@
                   href: ide/reference/extract-interface.md
                 - name: メソッドの抽出
                   href: ide/reference/extract-method.md
-                - name: パラメーターを生成する
-                  href: ide/reference/generate-parameter.md
+                - name: ローカル関数を抽出する
+                  href: ide/reference/extract-local-function.md
                 - name: インラインの一時変数
                   href: ide/reference/inline-temporary-variable.md
                 - name: インポートされていない型に対する IntelliSense 入力候補
@@ -382,6 +394,10 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: if ステートメントを反転させる
                   href: ide/reference/invert-if-statement.md
+                - name: 静的ローカル関数のリファクタリング オプション
+                  href: ide/reference/static-local-function-refactor-options.md
+                - name: メンバーを静的にする
+                  href: ide/reference/make-member-static.md
                 - name: 参照の近くへの宣言の移動
                   href: ide/reference/move-declaration-near-reference.md
                 - name: 一致するファイルへの型の移動
@@ -396,6 +412,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: 名前の変更
                   href: ide/reference/rename.md
+                - name: 文字列補間の簡略化
+                  href: ide/reference/simplify-string-interpolation.md
                 - name: using の並べ替え
                   href: ide/reference/sort-usings.md
                 - name: if ステートメントの分割または結合
@@ -410,10 +428,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 未使用値の割り当て、変数、およびパラメーター
                   href: ide/reference/unused-values-parameters.md
-                - name: 呼び出しチェーンのラップおよび配置
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: ラップ、インデント、およびパラメーターの整列
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: ラップ、インデント、およびリファクタリングの整理
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'チュートリアル: 使用法からのコードの生成'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
@@ -591,7 +607,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Windows フォーム デザイナーの DPI 認識を無効にする
               href: designers/disable-dpi-awareness.md
-            - name: 辞書／辞典／その他
+            - name: 関連項目
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -856,7 +872,7 @@
   href: deployment/index.yml
 - name: Visual Studio の拡張 >>
   displayName: Visual Studio SDK
-  href: extensibility/visual-studio-sdk.md
+  href: extensibility/index.yml
 - name: アーキテクチャの分析とモデル化 >>
   href: modeling/analyze-and-model-your-architecture.md
 - name: Visual Studio のカスタマイズ
@@ -916,7 +932,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 辞書／辞典／その他
+- name: 関連項目
   items:
     - name: キーボード ショートカット
       items:
@@ -928,7 +944,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio のコマンド
       items:
-        - name: 辞書／辞典／その他
+        - name: 関連項目
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: コマンドの別名
@@ -1182,7 +1198,7 @@
           href: ide/reference/output-window.md
         - name: プロジェクトのプロパティ
           items:
-            - name: 辞書／辞典／その他
+            - name: 関連項目
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: '[アプリケーション] ページ (プロジェクト デザイナー) (UWP)'
@@ -1253,7 +1269,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: ツールボックス
           items:
-            - name: 辞書／辞典／その他
+            - name: 関連項目
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'ツールボックス、[コンポーネント] タブ'
@@ -1264,7 +1280,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv コマンドライン スイッチ
       items:
-        - name: 辞書／辞典／その他
+        - name: 関連項目
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
@@ -1319,6 +1335,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows 情報保護 (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+        - name: Federal Information Processing Standard (FIPS)
+          href: ide/fips-support-visual-studio.md
     - name: 双方向言語の入力
       href: ide/use-bidirectional-languages.md
     - name: Microsoft ヘルプ ビューアー

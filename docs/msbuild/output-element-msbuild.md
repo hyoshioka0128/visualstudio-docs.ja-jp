@@ -13,19 +13,20 @@ helpviewer_keywords:
 - <Output> Element [MSBuild]
 - Output Element [MSBuild]
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb8f7a02183fe34dcd882e23ee7bf8b90f9a2cc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963924"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633032"
 ---
 # <a name="output-element-msbuild"></a>Output 要素 (MSBuild)
+
 タスクの出力値をアイテムとプロパティに格納します。
 
  \<Project> \<Target> \<Task> \<Output>
@@ -39,6 +40,7 @@ ms.locfileid: "62963924"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -51,15 +53,17 @@ ms.locfileid: "62963924"
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
+
  なし。
 
 ### <a name="parent-elements"></a>親要素
 
 | 要素 | 説明 |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクのインスタンスを作成し、実行します。 |
+| [Task](../msbuild/task-element-msbuild.md) | MSBuild タスクのインスタンスを作成して、実行します。 |
 
 ## <a name="example"></a>例
+
  次のコード例では、`Target` タスクが `Csc` 要素の内部で実行されています。 タスクのパラメーターに渡されるアイテムとプロパティは、この例のスコープ外で宣言されています。 出力パラメーター `OutputAssembly` からの値は `FinalAssemblyName` アイテムに格納され、出力パラメーター `BuildSucceeded` からの値は `BuildWorked` プロパティに格納されます。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
 
 ```xml
@@ -80,5 +84,6 @@ ms.locfileid: "62963924"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)

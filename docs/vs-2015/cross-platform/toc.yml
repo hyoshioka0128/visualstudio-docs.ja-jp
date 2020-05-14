@@ -42,7 +42,7 @@
               href: share-the-unity-log-callback-with-vstu.md
         - name: トラブルシューティングと既知の問題
           href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
-        - name: 変更ログ
+        - name: 変更履歴
           href: change-log-visual-studio-tools-for-unity.md
         - name: Unity アプリを使用したアプリケーション ライフサイクル管理 (ALM)
           href: application-lifecycle-management-alm-with-unity-apps.md
@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: XCode と Visual Studio 間の変更の同期
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: クロス プラットフォーム モバイル開発の例
+        - name: Cross-Platform Mobile Development Examples
           href: cross-platform-mobile-development-examples.md
     - name: ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
       href: develop-apps-for-the-universal-windows-platform-uwp.md

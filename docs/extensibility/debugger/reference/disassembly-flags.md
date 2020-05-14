@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS |Microsoft Docs
+title: DISASSEMBLY_FLAGS |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318387"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737375"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 逆アセンブリのフラグを指定します。
 
 ## <a name="syntax"></a>構文
@@ -52,34 +52,34 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `DF_DOCUMENTCHANGE`\
-この命令が別のドキュメントは、前のことを示します。
+この命令が前のドキュメントとは異なるドキュメント内にあることを示します。
 
 `DF_DISABLED`\
-この命令は実行されないことを示します。
+この命令が実行されないことを示します。
 
 `DF_INSTRUCTION_ACTIVE`\
-この命令が実行される次の手順のいずれかであることを示します (あります 1 つ以上)。
+この命令が、次に実行される命令の 1 つであることを示します (複数の命令が存在する可能性があります)。
 
 `DF_DATA`\
-この命令は、データ (コードではなく) で、実際にあることを示します。
+この命令が実際にはデータであることを示します (コードではありません)。
 
 `DF_HASSOURCE`\
-この命令にソースがあることを示します。 プロファイルまたはガベージ コレクションのコードなどのいくつかの手順では、対応するソースがあるありません。
+この命令にソースがあることを示します。 プロファイリングやガベージ コレクション コードなどの一部の命令には、対応するソースがありません。
 
 `DF_DOCUMENT_CHECKSUM`\
-示します`bstrDocumentUrl`フィールドには、ドキュメントの URL の後のチェックサム データが含まれています。 「解説」を参照してください、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)チェックサム データを格納する方法の構造体。
+ドキュメント`bstrDocumentUrl`URL の後にチェックサム データが含まれるフィールドを示します。 チェックサム データの格納方法については[、DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体の「解説」セクションを参照してください。
 
 ## <a name="remarks"></a>Remarks
-として使用される、`dwFlags`のメンバー、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体。
+構造体の`dwFlags`メンバーとして使用[されます](../../../extensibility/debugger/reference/disassemblydata.md)。
 
-これらのフラグは、演算と組み合わせることがあります`OR`します。
+これらのフラグはビット単位`OR`で組み合わせることができる。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー: msdbg.h
 
-名前空間: Microsoft.VisualStudio.Debugger.Interop
+名前空間: を使用します。
 
-アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,16 +1,16 @@
 ---
 title: チーム エクスプローラーのプロジェクトに接続する
-ms.date: 12/04/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538678"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472741"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>チーム エクスプローラーのプロジェクトに接続する
 
@@ -44,3 +44,4 @@ ms.locfileid: "74538678"
 
 - [チーム エクスプローラーのリファレンス](reference/team-explorer-reference.md)
 - [プロジェクトに接続する (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
+- [プロジェクトへの接続のトラブルシューティング](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

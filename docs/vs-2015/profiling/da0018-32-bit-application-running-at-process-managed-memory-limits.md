@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301106"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844732"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "74301106"
   
 - マネージド メモリ リソースのアプリケーションによる使用を最適化する  
   
-   または  
+   -または-  
   
 - 32 ビット プロセスの仮想メモリの最大サイズに関するアーキテクチャ上の制約を解除する手順を実行する  
   
@@ -64,7 +64,7 @@ ms.locfileid: "74301106"
   
   [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)を使用して、これらの割り当てが行われた実行パスを判断します。  
   
-  ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの .NET Framework の技術記事、「[ガベージ コレクタの基本とパフォーマンスのヒント](https://go.microsoft.com/fwlink/?LinkId=177946)」を参照してください。  
+  ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの .NET Framework の技術記事、「[ガベージ コレクタの基本とパフォーマンスのヒント](https://msdn.microsoft.com/library/ms973837.aspx)」を参照してください。  
   
   プロセス アドレス空間のプライベート部分のサイズに関する仮想メモリのアーキテクチャ上の制約を解除するには、64 ビット コンピューター上でこの 32 ビット プロセスを実行してみてください。  64 ビット コンピューター上で実行されている 32 ビット プロセスの場合、最大 4 GB のプライベート仮想メモリを取得できます。  
   

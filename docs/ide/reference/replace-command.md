@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596685"
 ---
 # <a name="replace-command"></a>Replace コマンド
 **[検索と置換]** ウィンドウの **[フォルダーを指定して置換]** タブにあるオプションのサブセットを使用してファイル内のテキストを置換します。
@@ -34,11 +34,11 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>引数
 `findwhat`
 
-必須です。 検索するテキスト。
+必須。 検索するテキスト。
 
 `replacewith`
 
-必須です。 一致したテキストと置き換えるテキスト。
+必須。 一致したテキストと置き換えるテキスト。
 
 ## <a name="switches"></a>スイッチ
 /all または /a
@@ -100,10 +100,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

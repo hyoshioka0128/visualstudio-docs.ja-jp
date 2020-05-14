@@ -1,5 +1,5 @@
 ---
-title: サンプルのデモ |Microsoft Docs
+title: デモのサンプル |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201432"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277885"
 ---
 # <a name="demo-sample"></a>デモのサンプル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-「[チュートリアル:C/C++ コードの分析による障害の](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)します。 この手順で次が作成されます。  
+次の手順では、 [「チュートリアル: C/C++コードの欠陥の分析](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)」のサンプルを作成する方法について説明します。 この手順で次が作成されます。  
   
-- A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CppDemo という名前のソリューションです。  
+- CppDemo という名前の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション。  
   
 - CodeDefects という名前のスタティック ライブラリ プロジェクト。  
   
 - Annotations という名前のスタティック ライブラリ プロジェクト。  
   
-  手順では、静的ライブラリのヘッダーおよび .cpp ファイルのコードも提供します。  
+  この手順では、スタティックライブラリのヘッダーファイルと .cpp ファイルのコードも提供します。  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo ソリューションと CodeDefects プロジェクトを作成する  
   
@@ -66,7 +66,7 @@ ms.locfileid: "68201432"
   
 3. **[名前]** ボックスに「**Bug.cpp**」と入力し、 **[追加]** をクリックします。  
   
-4. 次のコードをコピーして貼り付けます、 **Bug.cpp**ファイル、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター。  
+4. 次のコードをコピーし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エディターの**バグ .cpp**ファイルに貼り付けます。  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ ms.locfileid: "68201432"
   
 7. **[名前]** ボックスに「**Bug.cpp**」と入力し、 **[追加]** をクリックします。  
   
-8. 次のコードをコピーしてで Bug.h ファイルに貼り付け、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター。  
+8. 次のコードをコピーし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エディターのバグ .h ファイルに貼り付けます。  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ ms.locfileid: "68201432"
   
 3. **[名前]** テキスト ボックスに「**annotations.h**」と入力し、 **[追加]** をクリックします。  
   
-4. 次のコードをコピーして貼り付けます、 **annotations.h**ファイル、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター。  
+4. 次のコードをコピーし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エディターの**annotations**ファイルに貼り付けます。  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ ms.locfileid: "68201432"
   
 7. **[名前]** テキスト ボックスに「**annotations.cpp**」と入力し、 **[追加]** をクリックします。  
   
-8. 次のコードをコピーして貼り付けます、 **annotations.cpp**ファイル、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター。  
+8. 次のコードをコピーし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エディターの**annotations**ファイルに貼り付けます。  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

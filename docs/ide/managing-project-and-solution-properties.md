@@ -2,17 +2,17 @@
 title: プロジェクトおよびソリューションのプロパティの管理
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99786cc2b646c011a0398e973e0fd3d4dd97583f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603435"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591308"
 ---
 # <a name="manage-project-and-solution-properties"></a>プロジェクトおよびソリューションのプロパティの管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "72603435"
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[プロジェクトおよびソリューションのプロパティの管理 (Visual Studio for Mac)](/visualstudio/mac/managing-solutions-and-project-properties)」を参照してください。
 
-## <a name="project-properties"></a>プロジェクト プロパティ
+## <a name="project-properties"></a>プロジェクトのプロパティ
 
 プロジェクトのプロパティはグループに分類されており、グループごとに専用のプロパティ ページがあります。 ページは、言語およびプロジェクト タイプによって異なる場合があります。
 
@@ -40,7 +40,7 @@ C# プロジェクト、Visual Basic プロジェクト、F# プロジェクト�
 **プロジェクト デザイナー**のそれぞれのプロパティ ページについては、「[プロジェクト プロパティのリファレンス](../ide/reference/project-properties-reference.md)」を参照してください。
 
 > [!TIP]
-> ソリューションには少数のプロパティがあり、プロジェクト項目にも少数のプロパティがあります。これらのプロパティは、**プロジェクト デザイナー**ではなく、[プロパティ ウィンドウ](../ide/reference/properties-window.md)からアクセスします。
+> ソリューションには少数のプロパティがあり、プロジェクト項目にも少数のプロパティがあります。これらのプロパティは、[プロジェクト デザイナー](../ide/reference/properties-window.md)ではなく、**プロパティ ウィンドウ**からアクセスします。
 
 ### <a name="c-and-javascript-projects"></a>C++ プロジェクトおよび JavaScript プロジェクト
 
@@ -54,7 +54,7 @@ C++ プロジェクトのプロパティについては、[C++ プロジェク�
 
 ソリューションのプロパティにアクセスするには、**ソリューション エクスプローラー**でソリューション ノードを右クリックし、 **[プロパティ]** を選択します。 このダイアログでは、**デバッグ** ビルドまたは**リリース** ビルド用にプロジェクト構成を設定し、**F5** キーを押した時点でのスタートアップ プロジェクトとなるプロジェクトを選択し、コード分析のオプションを設定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
 - [プロジェクトおよびソリューションのプロパティの管理 (Visual Studio for Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

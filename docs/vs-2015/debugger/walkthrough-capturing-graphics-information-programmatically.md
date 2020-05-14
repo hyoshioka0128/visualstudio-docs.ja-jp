@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296919"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847809"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>チュートリアル: プログラムによるグラフィックス情報のキャプチャ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ ms.locfileid: "74296919"
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>プログラムによるキャプチャを使用するためにコンピューターを準備する  
  プログラム キャプチャ API は、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用してキャプチャ機能を提供します。 ローカル コンピューターでプログラムによるキャプチャを使用している場合でも、アプリケーションが実行されるコンピューターにリモート ツールをインストールしておく必要があります。 ローカル コンピューターでプログラムによるキャプチャを行う場合は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行させる必要はありません。  
   
- コンピューターで実行しているアプリケーションでリモート キャプチャ API を使用するには、まず Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を対象のコンピューターにインストールする必要があります。 リモート ツールのバージョンによって、サポートしているハードウェア プラットフォームも異なります。 リモート ツールのインストール方法については、Microsoft のダウンロード Web サイトの「 [リモート ツールのダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=246691) 」ページをご覧ください。  
+ コンピューターで実行しているアプリケーションでリモート キャプチャ API を使用するには、まず Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を対象のコンピューターにインストールする必要があります。 リモート ツールのバージョンによって、サポートしているハードウェア プラットフォームも異なります。 リモート ツールのインストール方法については、Microsoft のダウンロード Web サイトの「 [リモート ツールのダウンロード](https://visualstudio.microsoft.com/downloads#remote-tools) 」ページをご覧ください。  
   
  または [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で、32 ビット アプリケーション向けのリモート キャプチャを実行するのに必要なコンポーネントをインストールします。  
   
@@ -193,12 +193,12 @@ ms.locfileid: "74296919"
 > [!TIP]
 > プログラムによるキャプチャを使用している間でも、アプリケーションにフォーカスを置いた状態で **[Print Screen]** を押すだけでグラフィックス情報を手動でキャプチャできます。 この方法を使用すると、プログラム キャプチャ API でキャプチャされていない追加のグラフィックス情報をキャプチャできます。  
   
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
  このチュートリアルでは、プログラムでグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。  
   
 - グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 「[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: グラフィックス情報のキャプチャ](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [コマンド ライン キャプチャ ツール](../debugger/command-line-capture-tool.md)

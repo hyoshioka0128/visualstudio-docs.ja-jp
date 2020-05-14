@@ -1,5 +1,5 @@
 ---
-title: DA0002:VSPerfCorProf.dll がありません | Microsoft Docs
+title: 'DA0002: VSPerfCorProf.dll がありません | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,20 +15,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777752"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002:VSPerfCorProf.dll がありません
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll がありません
 
 |||
 |-|-|
 |規則 ID|DA0002|
 |カテゴリ|プロファイリング ツールの使用|
 |プロファイル方法|コマンド ライン ツールの VSPerfCmd と VSPerfASPNETCmd を使用してプロファイリングする|
-|メッセージ|*VSPerfCLREnv.cmd* で環境変数を正しく設定しないままファイルが収集されたようです。 マネージド バイナリのシンボルを解決できません。|
+|[メッセージ]|*VSPerfCLREnv.cmd* で環境変数を正しく設定しないままファイルが収集されたようです。 マネージド バイナリのシンボルを解決できません。|
 |規則の種類|情報|
 
 ## <a name="cause"></a>原因

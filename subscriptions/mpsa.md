@@ -3,15 +3,16 @@ title: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio �
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
-ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605848"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232204"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 MPSA プログラムを使用して Visual Studio サブスクリプションを購入した場合、Visual Studio サブスクリプション管理者になってサブスクリプションをユーザーに割り当てる前に、いくつか注意が必要な点があります。 管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)に直接進むことができます。
@@ -43,7 +44,12 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 4. **テナント** (つまり contoso.onmicrosoft.com) を選択します。
 5. **[Associate Domain]\(ドメインの関連付け\)** をクリックします。
 
-関連付けが行われると、条件を満たすすべてのユーザーは、通常は数分で Visual Studio のサブスクリプション管理者としてプロビジョニングされます。 ただし、最大 24 時間かかることもあります。 テナントがプロビジョニングされると、Visual Studio サブスクリプション管理ポータルにアクセスできるようになります。 24 時間よりも長くかかる場合は、MPSA サポートにお問い合わせください。
+関連付けが行われると、条件を満たすすべてのユーザーは、通常は数分で Visual Studio のサブスクリプション管理者としてプロビジョニングされます。 ただし、最大 24 時間かかることもあります。 テナントがプロビジョニングされると、Visual Studio サブスクリプション管理ポータルにアクセスできるようになります。 24 時間よりも長くかかる場合は、次の手順に従って MPSA サポートにお問い合わせください。
+1. https://www.microsoft.com/licensing/mpsa/default に接続します。
+2. ページの上部にある **[詳細]** メニューをクリックします。 
+3. **[サポート]** を選択します。
+4. **[Licensing support]\(ライセンス サポート\)** を選択します。
+5. 自分のニーズに最適なサポート オプションを選択します。 
 
 > [!NOTE]
 > 手順 2 と 5 (関連付け後) の条件を満たした新規ユーザーがいる場合は、MPSA サポートに連絡する必要があります。 MPSA サポートは、新しい Visual Studio サブスクリプション管理者のプロビジョニングを支援します。
@@ -51,7 +57,21 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 ## <a name="tenant-association-unmanaged"></a>テナントの関連付け (管理対象外)
 前述したように、職場アカウントではない (Azure Active Directory "Azure AD" に登録されていない) メール アドレスでビジネス センターに登録した場合、テナントの関連付け方法の一部が異なります。 "ドメインの引き継ぎ" と呼ばれるプロセスを実行する必要があります。 このプロセスでは、自分をグローバル管理者にして、テナントを管理対象外から管理対象に変更します。
 
-このプロセスの詳細については、「[クイック スタート ガイド](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx)」を参照してください。 ドメインの引き継ぎ手順が説明されている「*オンライン サービスを設定し使用する*」というガイドをダウンロードしてください。 このプロセスを完了すると、購入アカウントもテナントに関連付けられます。
+このプロセスの詳細については、「[クイック スタート ガイド](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)」を参照してください。 ドメインの引き継ぎ手順が説明されている「*オンライン サービスを設定し使用する*」というガイドをダウンロードしてください。 このプロセスを完了すると、購入アカウントもテナントに関連付けられます。
 
 > [!NOTE]
 > ドメインの引き継ぎプロセスを完了したら、「テナントの関連付け前 (管理対象のテナント)」セクションの 5 つの手順の条件を満たす必要があります。 条件を満たした後に必要な手順は、MPSA サポートに連絡して追加の Visual Studio サブスクリプション管理者をプロビジョニングすることのみです。
+
+## <a name="see-also"></a>関連項目
+- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
+- [Azure ドキュメント](https://docs.microsoft.com/azure/)
+- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>次の手順
+Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
+- [個別のサブスクリプションの割り当て](assign-license.md)
+- [複数のサブスクリプションを管理する](assign-license-bulk.md)
+- [サブスクリプションの編集](edit-license.md)
+- [サブスクリプションの削除](delete-license.md)
+- [最大使用量の確認](maximum-usage.md)

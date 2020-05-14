@@ -5,17 +5,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
 - error, process
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fae832cf62b2cfc6302289352bc5a2f2afb9f13
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667044"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544342"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio の回復不能なプロセス エラー
 
@@ -33,16 +33,21 @@ Visual Studio では、アウト プロセスのプロセスをいくつか利�
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
+- MSBuild.exe
 - PerfWatson2.exe
+- ScriptedSandbox64.exe
+- ServiceHub.Host.CLR.x86.exe
 - ServiceHub.Host.Node.x86.exe
 - ServiceHub.IdentityHost.exe
-- ServiceHub.VSDetouredHost.exe
-- ServiceHub.SettingsHost.exe
-- ServiceHub.Host.CLR.x86.exe
-- ServiceHub.RoslynCodeAnalysisService32.exe
 - ServiceHub.RoslynCodeAnalysisService.exe
+- ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.SettingsHost.exe
+- ServiceHub.VSDetouredHost.exe
+- VBCSCompiler.exe
+- VsHub.exe
+- vstest.discoveryengine.x86.exe
+- WaAppAgent.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
-- WaAppAgent.exe
 
 これらのプロセスのいずれかが突然終了した場合、Visual Studio 内の一部の機能が停止します。 機能の損失がそれほど重要でないプロセスもありますが、 それ以外のプロセスは、Visual Studio の安定性に影響を及ぼし、エラー メッセージが表示されます。

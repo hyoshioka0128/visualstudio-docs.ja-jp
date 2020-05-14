@@ -1,5 +1,5 @@
 ---
-title: データアクセスとツール
+title: Visual Studio でのデータの操作
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,39 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587096"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272087"
 ---
-# <a name="access-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
+# <a name="work-with-data-in-visual-studio"></a>Visual Studio でのデータの操作
 
 Visual Studio では、ローカルコンピューター、ローカルエリアネットワーク、パブリッククラウド、プライベートクラウド、またはハイブリッドクラウドで、事実上すべてのデータベース製品またはサービスのデータに接続するアプリケーションを作成できます。
 
 JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では、ライブラリを入手してコードを記述することで、他の操作と同様にデータに接続できます。 .NET アプリケーションの場合、Visual Studio には、データソースの探索、メモリ内のデータを格納および操作するためのオブジェクトモデルの作成、およびユーザーインターフェイスへのデータのバインドに使用できるツールが用意されています。 Microsoft Azure には、.NET、Java、node.js、PHP、Python、Ruby、およびモバイルアプリ用の Sdk と、Azure Storage に接続するための Visual Studio のツールが用意されています。
 
+::: moniker range="vs-2017"
 次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。 [Visual studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)の**azure 開発**ワークロードを使用すると、Visual studio から直接 azure データストアを操作できます。
+::: moniker-end
+::: moniker range=">=vs-2019"
+次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。 [Visual studio 2019](https://visualstudio.microsoft.com/downloads)の**azure 開発**ワークロードを使用すると、Visual studio から直接 azure データストアを操作できます。
+::: moniker-end
 
-![Azure 開発ワークロード](media/azure-development-workload.png)
+![[Azure の開発] ワークロード](media/azure-development-workload.png)
 
 ここに記載されている他の SQL および NoSQL データベース製品のほとんどは、ローカルコンピューター、ローカルネットワーク、または仮想マシン上の Microsoft Azure でホストできます。 データベースを Microsoft Azure の仮想マシンでホストする場合は、データベース自体を管理する必要があります。
 
 **Microsoft Azure**
 
-- SQL データベース
+- SQL Database
 - Azure Cosmos DB
 - ストレージ (blob、テーブル、キュー、ファイル)
 - SQL Data Warehouse
 - SQL Server Stretch Database
 - StorSimple
-- その他
+- その他...
 
 **SQL**
 
@@ -50,7 +55,7 @@ JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では
 - Oracle
 - PostgreSQL
 - SQLite
-- その他
+- その他...
 
 **NoSQL**
 
@@ -61,7 +66,7 @@ JavaScript、Python、PHP、Ruby、またはのアプリケーションC++では
 - OrientDB |
 - RavenDB
 - VelocityDB
-- その他
+- その他...
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +113,7 @@ ADO.NET で使用するデータベースには、カスタム*ADO.NET データ
 
 ## <a name="native-c"></a>ネイティブ C++
 
-C++SQL Server に接続するアプリケーションでは、ほとんどの場合、 [SQL Server に Microsoft® ODBC ドライバー 13.1](https://www.microsoft.com/download/details.aspx?id=53339)を使用する必要があります。 サーバーがリンクされている場合は、OLE DB が必要です。そのためには、 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。 OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。 詳細については、「[ビジュアルC++でのデータアクセス](/cpp/data/data-access-in-cpp)」を参照してください。
+C++SQL Server に接続するアプリケーションでは、ほとんどの場合、 [SQL Server に Microsoft® ODBC ドライバー 13.1](https://www.microsoft.com/download/details.aspx?id=53339)を使用する必要があります。 サーバーがリンクされている場合は、OLE DB が必要です。そのためには、 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。 OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。 詳細については、「[ビジュアルC++でのデータアクセス](/cpp/data/data-access-in-cpp)」を参照してください。
 
 C++rest サービスを使用するプログラムは、 [ C++ rest SDK](https://github.com/Microsoft/cpprestsdk)を使用できます。
 

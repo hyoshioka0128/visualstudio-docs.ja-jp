@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188793"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77027284"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用した Azure App Service への ASP.NET Core コンテナーのデプロイ
 
@@ -29,7 +29,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 - "ASP.NET および Web 開発" ワークロードと共に、最新バージョンの [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) をインストールする
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- *[ASP.NET および Web の開発]* ワークロードを含む [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) と *ASP.NET と Web 開発*ワークロード。
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) のインストール
 
@@ -53,13 +53,13 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 1. **[Web アプリケーション]** を選択します。
 1. **[HTTPS 用の構成]** チェックボックスを使用し、SSL サポートを使用するかどうかを選択します。
 1. **[Docker サポートを有効にする]** チェック ボックスをオンにします。
-1. コンテナーの種類に **[Linux]** を選択し、 **[作成]** をクリックします。 Windows コンテナーはコンテナーとして Azure App Service にデプロイできません。
+1. コンテナーの種類を選択し、 **[作成]** をクリックします。 Windows コンテナーはコンテナーとして Azure App Service にデプロイできません。
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>コンテナーを Azure にデプロイする
 
 1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
-1. 発行先ダイアログで、 **[App Service Linux]** を選択します。
+1. 発行先ダイアログで、 **[App Service Linux]** または **[App Service]** を選択します。 これは、Web サーバーをホストするオペレーティング システムです。
 1. App Service にのみ発行するか、App Service と Azure Container Registry (ACR) の両方に発行できます。 Azure Container Registry (ACR) でコンテナーを発行するには、 **[Create new App Service for containers]\(コンテナー用に新しい App Service を作成する\)** を選択し、 **[発行]** をクリックします。
 
    ![発行ダイアログのスクリーンショット](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
    ![Web アプリケーションのスクリーンショット](media/deploy-app-service/web-application-running.png)
 
 1. リソース グループやコンテナー レジストリなど、選択したすべての詳細が含まれる発行プロファイルが保存されます。
+
 1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー**でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
+
+## <a name="view-container-settings"></a>コンテナー設定を表示する
+
+[Azure portal](https://portal.azure.com) では、デプロイした App Service を開くことができます。
+
+デプロイした App Service の設定を表示するには、* *[コンテナーの設定]* メニューを開きます (Visual Studio 2019 バージョン 16.4 以降を使用している場合)。
+
+![Azure portal の [コンテナーの設定] メニューのスクリーンショット](media/deploy-app-service/container-settings-menu.png)
+
+そこから、コンテナーの情報を表示したり、ログを表示またはダウンロードしたり、継続的デプロイを設定したりできます。 [Azure App Service 継続的デプロイ CI/CD](/azure/app-service/containers/app-service-linux-ci-cd) に関するページを参照してください。
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
@@ -89,7 +100,7 @@ Azure portal で **[リソース グループ]** をクリックし、リソー�
 
 ## <a name="next-steps"></a>次の手順
 
-[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops) を使用して、継続的インテグレーションおよび継続的配信 (CI/CD) を設定します。
+[Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro) について詳しく説明します。
 
 ## <a name="see-also"></a>関連項目
 

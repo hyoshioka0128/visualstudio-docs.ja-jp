@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773900"
 ---
 # <a name="save-and-export-performance-tools-data"></a>パフォーマンス ツール データの保存とエクスポート
@@ -88,8 +88,8 @@ ms.locfileid: "74773900"
 
      各レポート ビューは、\<プレフィックス>_\<レポート ビュー名>.\<csv&#124;xml> という名前の別のファイルに保存されます
 
-## <a name="see-also"></a>関連項目
-- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>参照
+- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
 - [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)
 - [パフォーマンス データ ファイルを比較する](../profiling/comparing-performance-data-files.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

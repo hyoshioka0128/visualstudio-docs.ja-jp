@@ -5,27 +5,30 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939329"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632122"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>IDE 内からのビルドの開始
+
 カスタムのプロジェクト システムでは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> を使用してビルドを開始する必要があります。 この記事では、この要件の理由とプロシージャの概要について説明します。
 
 ## <a name="parallel-builds-and-threads"></a>並行ビルドとスレッド
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、共通リソースにアクセスするために仲介を必要とする並行ビルドを使用できます。 プロジェクト システムではビルドを非同期的に実行できますが、このようなシステムでは、コールバック内からビルド関数を呼び出すことはできません。
+
+ Visual Studio では並行ビルドを使用できます。これは共通リソースにアクセスするための仲介を必要とします。 プロジェクト システムではビルドを非同期的に実行できますが、このようなシステムでは、コールバック内からビルド関数を呼び出すことはできません。
 
  プロジェクト システムで環境変数を変更する場合は、ビルドの NodeAffinity を OutOfProc に設定する必要があります。 この要件は、インプロセス ノードを必要とするためホスト オブジェクトを使用できないことを意味します。
 
 ## <a name="use-ivsbuildmanageraccessor"></a>IVSBuildManagerAccessor を使用する
+
  次のコードは、ビルドを開始するためにプロジェクト システムで使用できるメソッドの概要を示しています。
 
 ```csharp

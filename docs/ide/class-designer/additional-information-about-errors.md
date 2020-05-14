@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919055"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75596516"
 ---
 # <a name="class-designer-errors"></a>クラス デザイナーのエラー
 
@@ -46,6 +46,6 @@ ms.locfileid: "72919055"
 - 「[Visual C++ コードの使用](working-with-visual-cpp-code.md)」には、クラス ダイアグラムでの C++ の表示に関するトラブルシューティング情報が含まれます。
 - [Visual Studio クラス デザイナー フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)は、**クラス デザイナー**に関する質問のためのフォーラムです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クラスと型の設計と表示](designing-and-viewing-classes-and-types.md)

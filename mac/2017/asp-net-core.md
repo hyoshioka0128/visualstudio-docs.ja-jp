@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984886"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543759"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
- Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 ASP.NET Core は、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と MacOS でも動作するようにイメージが再構成されています。
+ Visual Studio for Mac は最新の ASP.NET Core Web 開発プラットフォームをサポートしているため、アプリのサービスを簡単に開発できます。 ASP.NET Core は .NET Core (.NET Framework とランタイムの最新の進化) で実行されます。 これは、パフォーマンスが高速になるように調整されています。また、インストール サイズが小さくなるように要素が細かく分かれているほか、Windows に加えて Linux と macOS でも動作するように再構成されています。
 
 ## <a name="installing-net-core"></a>.NET Core のインストール
 
@@ -29,7 +29,7 @@ Visual Studio for Mac を開きます。 ようこそページで、 **[新し�
 
 [新しいプロジェクト] ダイアログが表示されます。このダイアログで、アプリケーションを作成するためのテンプレートを選択できます。
 
-ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 これらの数値は、次のとおりです。
+ASP.NET Core アプリケーションの作成を開始するためのテンプレートがさまざまなプロジェクトで既に用意されています。 これらのボタンの役割は、次のとおりです。
 
 - **.NET Core > ASP.NET Core 空の Web アプリケーション**
 - **.NET Core > ASP.NET Core Web アプリ**
@@ -234,7 +234,7 @@ Mac OS 10.11 (El Capitan) 以降に .NET Core を手動インストールする�
 
 このガイドでは、ASP.NET Core の概要を説明しました。 ASP.NET Core とは何か、それを利用する状況、Visual Studio for Mac で使用する場合について説明しました。
 ここから先の手順については、次のガイドを参照してください。
-- [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc) ドキュメント。
+- [ASP.NET Core](/aspnet/core/) ドキュメント。
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (ネイティブ モバイル アプリケーションのバックエンド サービスを作成する)。ここでは、Xamarin.Forms アプリのために ASP.NET Core を利用して REST サービスをビルドする方法について解説しています。
 - [ASP.NET Core 実践ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 

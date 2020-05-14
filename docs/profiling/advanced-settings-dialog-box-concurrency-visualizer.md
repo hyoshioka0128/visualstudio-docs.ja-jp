@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911221"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>[詳細設定] ダイアログ ボックス (コンカレンシー ビジュアライザー)
 コンカレンシー ビジュアライザーの **[詳細設定]** ダイアログ ボックスを使うと、トレースを収集する方法を制御できます。  このダイアログ ボックスには、シンボル、マイ コードのみ、バッファリング、フィルター処理、CLR イベント、マーカー、プロバイダー、およびファイルに関するタブがあります。
 
-## <a name="symbols"></a>シンボル
+## <a name="symbols"></a>Symbols
  コンカレンシー ビジュアライザーは、Visual Studio デバッガーと同じシンボルの設定を使います。 コンカレンシー ビジュアライザーは、パフォーマンス データに関連付けられている呼び出し履歴を解決するために、この設定を使います。  トレースを処理するとき、コンカレンシー ビジュアライザーは設定ページで指定されているシンボル サーバーにアクセスします。  このデータにネットワーク経由でアクセスすると、トレースの処理が遅くなります。  シンボルの解決に必要な時間を減らすには、ローカルにシンボルをキャッシュできます。 シンボルがダウンロードされている場合、Visual Studio はローカル キャッシュからシンボルを読み込みます。
 
 ## <a name="just-my-code"></a>マイ コードのみ
@@ -31,7 +31,7 @@ ms.locfileid: "72911221"
 ## <a name="buffering"></a>バッファリング
  コンカレンシー ビジュアライザーは、トレースを収集するときに Windows イベント トレーシング (ETW) を使います。  ETW は、イベントを格納するときにさまざまなバッファーを使います。  ETW バッファーの既定の設定は、すべての場合に最適であるとは限らず、状況によっては、イベントが失われるといった問題が発生する可能性があります。  [バッファリング] タブを使って、ETW バッファーの設定を構成できます。 詳しくは、「[Event Tracing](/windows/win32/etw/event-tracing-portal)」(イベント トレース) および「[EVENT_TRACE_PROPERTIES structure](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)」(EVENT_TRACE_PROPERTIES 構造体) をご覧ください。
 
-## <a name="filter"></a>フィルター
+## <a name="filter"></a>Assert
  [フィルター] タブでは、コンカレンシー ビジュアライザーが収集するイベントのセットを選ぶことができます。 イベントのサブセットを選ぶと、レポートに表示されるデータの種類が制限され、各トレースのサイズが小さくなり、トレースの処理に必要な時間が短くなります。
 
 ### <a name="clr-events"></a>CLR イベント
@@ -52,7 +52,7 @@ ms.locfileid: "72911221"
 ### <a name="file-io-events"></a>ファイル I/O イベント
  ファイル I/O イベントは、現在のプロセスの代わりのディスクへのアクセスを表します。  ファイル I/O イベントを無効にすると、トレースのサイズは小さくなりますが、スレッド ビューでディスク チャネルまたはディスク操作についての情報が報告されなくなります。
 
-## <a name="markers"></a>Markers
+## <a name="markers"></a>マーカー
  **[マーカー]** タブでは、コンカレンシー ビジュアライザーでマーカーとして示される ETW プロバイダーのセットを構成できます。  また、重要度レベルと ETW のカテゴリに基づいてマーカーのコレクションをフィルター処理することもできます。  [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md) を使っている場合、独自のマーカー プロバイダーをここで登録してスレッド ビューに表示できます。
 
 ### <a name="add-a-new-provider"></a>新しいプロバイダーの追加
@@ -83,6 +83,6 @@ ms.locfileid: "72911221"
 
   2 つの ETL ファイルには生のトレース データが保存され、2 つのコンカレンシー ビジュアライザー ファイルには処理されたデータが保存されます。  生の ETL ファイルは通常、トレースが処理された後は使われません。  **[分析後にイベント トレース ログ (ETL) ファイルを削除]** チェック ボックスをオンにすると、ディスクに保存されるトレース データの量が減ります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [マイ コードのみ](../profiling/just-my-code-threads-view.md)
 - [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

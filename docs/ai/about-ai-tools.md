@@ -3,25 +3,26 @@ title: AI Tools for Visual Studio
 titleSuffix: ''
 description: AI Tools for Visual Studio の概要
 keywords: AI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: f696f5c2696ef15c133c9011b4235bf6714742e7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777462"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638565"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
 Visual Studio Tools for AI は、ディープ ラーニング/AI ソリューションをビルド、テスト、展開するための拡張機能です。 堅牢な実験機能 (たとえば、データ準備およびモデル トレーニング ジョブの別の計算ターゲットへの透過的な送信など) のために、Azure Machine Learning とシームレスに統合します。 さらに、カスタム メトリックと実行履歴追跡のサポートを提供し、データ サイエンスの再現性と監査を可能にします。 エンタープライズ対応のコラボレーションにより、複数のユーザーがプロジェクトで安全に共同作業できます。
 
-[Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/)、[Google TensorFlow](https://www.tensorflow.org)、または他のディープ ラーニング フレームワークを使って、すぐにディープ ラーニングを始めてください。
+[Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/)、[Google TensorFlow](https://www.tensorflow.org)、または他のディープ ラーニング フレームワークを使って、すぐにディープ ラーニングを始めてください。
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>ディープ ラーニング モデルと AI ソリューションを開発、デバッグ、展開する
 Visual Studio の生産性機能を使って今日の AI 革新を高速化します。 組み込みコード エディターの構文強調表示、IntelliSense、テキスト自動書式設定などの機能を使用します。 ローカル変数とモデルに対してステップ実行デバッグを使い、ローカル環境でディープ ラーニング アプリケーションを対話的にテストできます。

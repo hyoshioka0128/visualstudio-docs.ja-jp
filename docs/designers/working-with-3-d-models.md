@@ -3,17 +3,17 @@ title: 3D モデルの操作
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b364682d8173d34d2b9977836929ca93ddf45a78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60789dece03487f3f3a6dfd71407ec03bab6700e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633993"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589878"
 ---
 # <a name="work-with-3d-models"></a>3D モデルを操作する
 
@@ -29,7 +29,7 @@ Visual Studio でモデル エディターを使って 3D モデルを作成で�
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[モデル エディター](../designers/model-editor.md)|モデル エディターを使って 3D モデルを操作する方法について説明します。|
 |[モデル エディターの例](../designers/how-to-create-a-basic-3-d-model.md)|モデル エディターを使って一般的な 3D モデリング タスクを実行する方法がわかるトピックへのリンクが提供されています。|

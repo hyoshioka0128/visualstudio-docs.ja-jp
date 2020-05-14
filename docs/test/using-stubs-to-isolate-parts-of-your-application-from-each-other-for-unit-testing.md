@@ -2,20 +2,20 @@
 title: テストを目的として、スタブを使用してアプリケーションの各部分を分離する
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 6c980ab2d920a80e49450f6ffe4a9433f490b412
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 328551a78464c7b682eea6a988c20e742f2797c9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982843"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75568549"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
 
@@ -404,7 +404,7 @@ public void TestGetValue()
     }
 ```
 
-このクラスから生成されたスタブでは、`DoConcrete()`ではなく、`DoAbstract()` と `DoVirtual()` のデリゲート メソッドを設定できます。
+このクラスから生成されたスタブでは、`DoAbstract()`ではなく、`DoVirtual()` と `DoConcrete()` のデリゲート メソッドを設定できます。
 
 ```csharp
 // unit test
@@ -458,6 +458,6 @@ stub.InstanceBehavior = StubsBehaviors.DefaultValue;
 StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296220"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851314"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ コードの使用 (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "74296220"
 - Typedef
 
 > [!NOTE]
-> これは、モデリング プロジェクトで作成できる UML クラス図と同じではありません。 詳細については、「[UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。
+> これは、モデリング プロジェクトで作成できる UML クラス図と同じではありません。 詳細については、「[UML Class Diagrams:Reference](../modeling/uml-class-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。
 
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>型解決および表示の問題のトラブルシューティング
 
@@ -63,7 +63,7 @@ ms.locfileid: "74296220"
 ### <a name="type-resolution-issues"></a>型解決の問題
  クラス デザイナーは、次のような理由により、型解決ができない場合があります。
 
-- 型が、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳しくは、「[方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」を参照してください。
+- 型が、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳細については、次を参照してください: 「[NIB 方法:[参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」。
 
 - 型が正しいスコープ内にないため、クラス デザイナーが型を見つけられません。 コードに `using` ステートメント、`imports` ステートメント、または `#include` ステートメントが欠落していないことを確認します。 また、型 (または関連する型) を最初に配置した名前空間の外に移動していないことも確認します。
 
@@ -77,12 +77,12 @@ ms.locfileid: "74296220"
 
 - クラス デザイナーが、入力した型をサポートしていることを確認します。 「[C++ コード要素の制限事項](#limitations)」を参照してください。
 
-- 型の解決を試みます。 型は、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にある場合もあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳しくは、「[方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」を参照してください。
+- 型の解決を試みます。 型は、クラス ダイアグラムを含むプロジェクトから参照されていないプロジェクトまたはアセンブリ内にある場合もあります。 このエラーを修正するには、型を含むプロジェクトまたはアセンブリへの参照を追加します。 詳細については、次を参照してください: 「[NIB 方法:[参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」。
 
 - クラス デザイナーが型を検出できるように、型が正しいスコープ内にあることを確認します。 コードに `using` ステートメント、`imports` ステートメント、または `#include` ステートメントが欠落していないことを確認します。 また、型 (または関連する型) を最初に配置した名前空間の外に移動していないことも確認します。
 
 ### <a name="troubleshooting-other-error-messages"></a>その他のエラー メッセージのトラブルシューティング
- MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 [Visual Studio クラス デザイナー フォーラム](https://go.microsoft.com/fwlink/?linkid=160754)を参照してください。
+ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 [Visual Studio クラス デザイナー フォーラム](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1)を参照してください。
 
 ## <a name="limitations"></a> C++ コード要素の制限事項
 

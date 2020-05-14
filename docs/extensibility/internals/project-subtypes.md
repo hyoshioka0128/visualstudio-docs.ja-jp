@@ -1,28 +1,28 @@
 ---
-title: プロジェクトのサブタイプ |Microsoft Docs
+title: プロジェクトサブタイプ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aede76a39506f74c39d9ec63ed4bb4a410d1013c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71dab4767c806b44cbd1f9638738b4a13d6b2bcb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328102"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706405"
 ---
 # <a name="project-subtypes"></a>プロジェクト サブタイプ
-プロジェクト サブタイプを使用すると、flavor のプロジェクト システムの動作をカスタマイズまたは[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 カスタマイズが可能で、プロジェクト ファイル内の項目をフィルター処理を追加または追加のデータを保存、**新しい項目の追加** ダイアログ ボックスで、アセンブリのデバッグ方法と、展開方法を制御して、プロジェクトの拡張**プロパティページ** ダイアログ ボックス。 Vspackage では、COM の集計を使用してプロジェクトのサブタイプを実装します。
+プロジェクト サブタイプを使用すると、 のプロジェクト システムの動作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]をカスタマイズまたは調整できます。 カスタマイズには、プロジェクト ファイルに追加データを保存する、**新しい項目**の追加] ダイアログ ボックスで項目を追加またはフィルター処理する、アセンブリのデバッグと配置の方法の制御、プロジェクト**の [プロパティ ページ]** ダイアログ ボックスの拡張などがあります。 VSPackage は、COM 集約を使用してプロジェクトのサブタイプを実装します。
 
 > [!NOTE]
-> Visual C プロジェクト システムは、プロジェクトのサブタイプをサポートしていません。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 自体は、プロジェクトのサブタイプを使用して、SQL Server とスマート デバイス プロジェクトを実装します。
+> Visual C++ プロジェクト システムは、プロジェクトのサブタイプをサポートしていません。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]それ自体は、プロジェクト のサブタイプを使用して SQL Server およびスマート デバイス プロジェクトを実装します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [プロジェクト サブタイプのデザイン](../../extensibility/internals/project-subtypes-design.md)
@@ -31,41 +31,41 @@ ms.locfileid: "66328102"
 
 - [プロジェクト サブタイプの初期化シーケンス](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
 
- によってプログラムのプロジェクト サブタイプの初期化シーケンスをについて説明します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。
+ プログラムによるプロジェクトのサブタイプ初期化シーケンスを環境別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]に記述します。
 
 - [プロジェクト サブタイプによって拡張されるプロパティとメソッド](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
 
- プロジェクト サブタイプを使用して、最も頻繁に拡張メソッド、機能の詳細な説明を提供します。
+ プロジェクト のサブタイプを使用して、最も頻繁に拡張される機能とメソッドの詳細な説明を示します。
 
 - [MSBuild プロジェクト ファイルでのデータの保持](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
 
- プロジェクト ファイル内のデータを永続化する方法と使用方法について説明します<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>プロジェクト サブタイプの集計レベルの間でプロジェクト ファイル内のデータを維持します。
+ プロジェクト ファイルにデータを保存する方法と、プロジェクト の<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>サブタイプ集計レベル全体でプロジェクト ファイル内のデータを保持する方法について説明します。
 
 - [プロジェクト プロパティのユーザー インターフェイス](../../extensibility/internals/project-property-user-interface.md)
 
- プロジェクト サブタイプが、プロジェクトを変更する方法について説明します。**プロパティ ページ** ダイアログ ボックス。
+ プロジェクト のサブタイプでプロジェクトの **[プロパティ ページ]** ダイアログ ボックスを変更する方法について説明します。
 
 - [ベース プロジェクトのオブジェクト モデルの拡張](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
 
- プロジェクト サブタイプがオートメーション エクステンダーを使用して、オートメーション オブジェクト モデルを拡張する方法について説明します。
+ プロジェクト のサブタイプでオートメーション エクステンダーを使用してオートメーション オブジェクト モデルを拡張する方法について説明します。
 
 - [[新しい項目の追加] ダイアログ ボックスへの投稿](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
 
- 項目を追加する方法について説明します、**新しい項目の追加** ダイアログ ボックス。
+ **[新しい**項目の追加] ダイアログ ボックスに項目を追加する方法について説明します。
 
 - [プロジェクト ファイルでのデータの保存](../../extensibility/saving-data-in-project-files.md)
 
- プロジェクト サブタイプが保存して、マネージ パッケージ フレームワーク (MPF) を使用して、プロジェクト ファイルのサブタイプに固有のデータを取得する方法について説明します。
+ プロジェクト のサブタイプが、パッケージ管理フレームワーク (MPF) を使用して、プロジェクト ファイル内のサブタイプ固有のデータを保存および取得する方法について説明します。
 
 - [特別な展開の処理](../../extensibility/internals/handling-specialized-deployment.md)
 
- 実装することで、プロジェクトのサブタイプが特殊化された展開の動作を指定する方法について説明します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>インターフェイス。
+ プロジェクト のサブタイプが、インターフェイスを実装することによって、特殊な<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>配置動作を提供する方法について説明します。
 
 - [プロパティ ページの追加と削除](../../extensibility/adding-and-removing-property-pages.md)
 
- 追加して、プロジェクト デザイナーのプロパティ ページの削除について説明します。
+ プロジェクト デザイナーでのプロパティ ページの追加と削除について説明します。
 
 ## <a name="related-sections"></a>関連項目
-- [プロジェクト タイプ](../../extensibility/internals/project-types.md)
+- [プロジェクトの種類](../../extensibility/internals/project-types.md)
 
- 詳細を示すトピックへのリンクを提供します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクト。
+ プロジェクトの詳細なトピックへの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]リンクを提供します。

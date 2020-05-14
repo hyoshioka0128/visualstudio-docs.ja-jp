@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram |Microsoft Docs
+title: IDebugEngine2::Dエストロイプログラム |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::DestroyProgram
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c20459329eeb9e61447c707ef6c95adf01945e5d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330088"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731110"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-指定されたプログラムが正しく終了になっていると、DE、プログラムに対するすべての参照をクリーンアップするデバッグ エンジン (DE) を通知し、送信プログラムは、イベントを破棄します。
+指定されたプログラムが異常終了し、DE がプログラムへのすべての参照をクリーンアップし、プログラム破棄イベントを送信する必要があることをデバッグ エンジン (DE) に通知します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +41,15 @@ int DestroyProgram( 
 
 ## <a name="parameters"></a>パラメーター
 `pProgram`\
-[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)になって終了されたプログラムを表すオブジェクト。
+[in]非定型終了されたプログラムを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが呼び出された後、DE 後に、送信、 [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)イベントをセッション デバッグ マネージャー (SDM)。
+ このメソッドが呼び出された後、DE は、その後、セッション デバッグ マネージャー (SDM) に[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)イベントを送信します。
 
- このメソッドが実装されていません (返します`E_NOTIMPL`)、DE がデバッグ中のプログラムと同じプロセスで実行する場合。 このメソッドは、DE が、SDM と同じプロセスで実行する場合にのみ実装されます。
+ DE がデバッグ中のプログラムと`E_NOTIMPL`同じプロセスで実行されている場合、このメソッドは実装されません (戻り値)。 このメソッドは、DE が SDM と同じプロセスで実行される場合にのみ実装されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

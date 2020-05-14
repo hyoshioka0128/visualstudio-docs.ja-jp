@@ -2,8 +2,8 @@
 title: フィールドをプロパティにリファクタリングする
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e47a62fcea8306c22564e50adde436b4f35e549
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654476"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75569713"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>フィールドのカプセル化リファクタリング
 
@@ -33,7 +33,7 @@ ms.locfileid: "72654476"
 
 **理由:** 他のクラスにフィールドへのアクセスを許可しますが、これらのクラスに直接アクセス権を持たせたくはありません。  プロパティ内にフィールドをラップすることによって、たとえば、割り当てられる値を検証するコードを記述できます。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. カプセル化するフィールドの名前を強調表示するか、名前の内側にテキスト カーソルを置きます。
 
@@ -47,14 +47,14 @@ ms.locfileid: "72654476"
 
 2. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - **Ctrl + R** キーを押し、次に **Ctrl + E** キーを押します。  選ばれているプロファイルによってキーボード ショートカットが異なる場合があることに注意してください。
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップからどちらかの **[フィールドのカプセル化]** エントリを選択します。
    - **マウス**
       - **[編集] > [リファクター] > [フィールドのカプセル化]** の順に選択します。
       - コードを右クリックして **[クイック アクションとリファクタリング]** メニューを選択し、[プレビュー] ウィンドウ ポップアップからどちらかの **[フィールドのカプセル化]** エントリを選択します。
 
-   選択ツール | 説明
+   [選択] | [説明]
    --------- | -----------
    **フィールドのカプセル化 (およびプロパティを使用します)** | プロパティでフィールドをカプセル化し、生成されたプロパティを使用するようにフィールドのすべての使用を更新します。
    **フィールドのカプセル化 (ただし、フィールドを継続して使用します)** | プロパティでフィールドをカプセル化しますが、フィールドのすべての使用については手を加えずに残します。
@@ -72,7 +72,7 @@ ms.locfileid: "72654476"
 
       ![プロパティのカプセル化の結果 - Visual Basic](media/encapsulate-result-vb.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

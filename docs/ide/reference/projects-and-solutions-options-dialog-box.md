@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655720"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75567646"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>[オプション] ダイアログ ボックス:[プロジェクトおよびソリューション]\> [全般]
 

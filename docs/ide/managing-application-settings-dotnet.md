@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654630"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75593708"
 ---
 # <a name="manage-application-settings-net"></a>アプリケーション設定の管理 (.NET)
 

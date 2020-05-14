@@ -11,22 +11,27 @@ helpviewer_keywords:
 - <ImportGroup> element [MSBuild]
 - ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997524"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633734"
 ---
 # <a name="importgroup-element"></a>ImportGroup 要素
+
+  
 オプションの条件下でグループ化された `Import` 要素のコレクションが格納されます。 詳しくは、「[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)」をご覧ください。
 
- \<Project> \<ImportGroup>
+```xml
+<Project>
+  <ImportGroup>
+```
 
 ## <a name="syntax"></a>構文
 
@@ -38,6 +43,7 @@ ms.locfileid: "62997524"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -56,9 +62,10 @@ ms.locfileid: "62997524"
 
 | 要素 | 説明 |
 | - | - |
-| [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 
 ## <a name="example"></a>例
+
  次に示すのは、`ImportGroup` 要素のコード例です。
 
 ```xml
@@ -72,5 +79,6 @@ ms.locfileid: "62997524"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [項目](../msbuild/msbuild-items.md)

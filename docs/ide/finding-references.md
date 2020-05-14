@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523ec566e19614951169c184b4796834c4ab0838
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603571"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75592036"
 ---
 # <a name="find-references-in-your-code"></a>コード内の参照の検索
 

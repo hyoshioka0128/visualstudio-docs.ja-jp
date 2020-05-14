@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60951091914474f07f19672799fb59c8b2d0aa56
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299473"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919137"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>アプリを Universal Windows Platform (UWP) へ移行する
 Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows Phone 8.1 アプリ、またはユニバーサル Windows アプリ用の既存のプロジェクト ファイルに必要な変更を手動で加え、Visual Studio 2015 RTM で使用できるようにします。 (Windows アプリのプロジェクトと Windows Phone プロジェクトの両方を備えた Windows 8.1 ユニバーサル アプリがある場合、各プロジェクトを移行するための手順に従う必要があります。)
@@ -292,7 +292,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
         </PropertyGroup>
         ```
 
-4. \<PlatformToolset セット > 要素のすべてのインスタンスを、値 v140 に変更します。 例 :
+4. \<PlatformToolset セット > 要素のすべてのインスタンスを、値 v140 に変更します。 例:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -379,7 +379,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
 5. \<の前提条件 > 要素を見つけ、この要素とその子要素を削除します。
 
-6. **Uap**名前空間を、Scale、DXFeatureLevel の各 \<リソース > 要素に追加します。 例 :
+6. **Uap**名前空間を、Scale、DXFeatureLevel の各 \<リソース > 要素に追加します。 例:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-7. **Uap**名前空間を次の \<機能に追加します。 > 要素: ドキュメント Library、PicturesLibrary、VideosLibrary、MusicLibrary、Enterpriseauthentication、sharedUserCertificates、removableStorage、予定、連絡先 例 :
+7. **Uap**名前空間を次の \<機能に追加します。 > 要素: ドキュメント Library、PicturesLibrary、VideosLibrary、MusicLibrary、Enterpriseauthentication、sharedUserCertificates、removableStorage、予定、連絡先 例:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-8. **Uap**名前空間を \<visualelements > 要素とその子要素のいずれかに追加します。 例 :
+8. **Uap**名前空間を \<visualelements > 要素とその子要素のいずれかに追加します。 例:
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-9. **Uap**名前空間を \<ApplicationContentUriRules とそのすべての子要素に追加します。 例 :
+9. **Uap**名前空間を \<ApplicationContentUriRules とそのすべての子要素に追加します。 例:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-10. **Uap**名前空間を、次の \<拡張機能 > 要素とそのすべての子要素に追加します。 appointmentsProvider、windows. Alarm、cachedFileUpdate、Windows. Autoplaycontent、、cameraSettings、Windows. fileOpenPicker、Windows. Fileopenpicker、FileSavePicke、lockScreenCall、printTaskSettings、shareTarget、、、、、、、、のように指定します。 例 :
+10. **Uap**名前空間を、次の \<拡張機能 > 要素とそのすべての子要素に追加します。 appointmentsProvider、windows. Alarm、cachedFileUpdate、Windows. Autoplaycontent、、cameraSettings、Windows. fileOpenPicker、Windows. Fileopenpicker、FileSavePicke、lockScreenCall、printTaskSettings、shareTarget、、、、、、、、のように指定します。 例:
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     ```
 
-11. **uap** 名前空間をタイプ chatMessageNotification のバックグラウンド タスクに追加します。 例 :
+11. **uap** 名前空間をタイプ chatMessageNotification のバックグラウンド タスクに追加します。 例:
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -505,7 +505,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
      使用している実際のフレームワークのための適切な Publisher 値と MinVersion 値を使用します。 Windows 10 では、これらの名前が変更される可能性があることに注意してください。
 
-13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例 :
+13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例:
 
      **まで**
 
@@ -528,7 +528,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </Extension>
     ```
 
-14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 例 :
+14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 例:
 
      **まで**
 
@@ -566,7 +566,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
        - \<ApplicationView > 要素
 
-         例 :
+         例:
 
        ```xml
        <m2:VisualElements
@@ -691,7 +691,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
    ```
 
-8. > 子要素を NuGet パッケージに \<参照する \<ItemGroup > を検索します。 この情報は今後のステップに必要なので、参照している NuGet パッケージに注意してください。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](https://docs.microsoft.com/nuget/) バージョン 3 を使用することです。
+8. > 子要素を NuGet パッケージに \<参照する \<ItemGroup > を検索します。 この情報は今後のステップに必要なので、参照している NuGet パッケージに注意してください。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](/nuget/) バージョン 3 を使用することです。
 
     \<ItemGroup > とそのすべての子を削除します。 たとえば、Visual Studio RC で作成された、ある UWP プロジェクトでは次の NuGet パッケージを削除する必要があるかもしれません。
 
@@ -739,7 +739,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
 
     2. 変更を [保存] します。
 
-14. 前の手順で削除したパッケージを追加するには、NuGet マネージャーを使用します。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](https://docs.microsoft.com/nuget/) バージョン 3 を使用することです。
+14. 前の手順で削除したパッケージを追加するには、NuGet マネージャーを使用します。 Visual Studio 2015 RC と Visual Studio 2015 RTM の間での Windows 10 プロジェクトの形式における 1 つの大きな違いは、RTM の形式では [NuGet](/nuget/) バージョン 3 を使用することです。
 
     これで、アプリをコーディング、ビルド、およびデバッグすることができます。
 

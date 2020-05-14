@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd9643e92d4774ca1356534faca9e031395ff4d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632648"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75584609"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -80,7 +80,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
    Sub プロシージャ `MySub()` のアウトラインがファイルに追加されます。
 
-利用できるコード スニペットは、プログラミング言語によって異なります。 **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** を選択 (または **Ctrl** + **K**、**Ctrl** + **X** キーを押す) ことで、Visual Basic で使用可能なコード スニペットを確認できます。 Visual Basic の場合、コード スニペットは次のカテゴリで使用できます。
+利用できるコード スニペットは、プログラミング言語によって異なります。 **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** を選択 (または **Ctrl**+**K**、**Ctrl**+**X** キーを押す) ことで、Visual Basic で使用可能なコード スニペットを確認できます。 Visual Basic の場合、コード スニペットは次のカテゴリで使用できます。
 
 ![Visual Basic のコード スニペットのリスト](media/tutorial-code-snippet-list.png)
 
@@ -116,7 +116,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
                Select word
    ```
 
-1. ここでは `morewords` 配列は使用していませんが、後で使用するかもしれないので、完全に削除したくありません。 そこで、これらの行をコメント アウトしましょう。 右中かっこまでの `morewords` の定義全体を選択し、ツールバーの **[選択された行をコメント アウトします。]** ボタンを選びます。 キーボードを使用する場合は、**Ctrl** + **K** キー、**Ctrl** + **C** キーを押します。
+1. ここでは `morewords` 配列は使用していませんが、後で使用するかもしれないので、完全に削除したくありません。 そこで、これらの行をコメント アウトしましょう。 右中かっこまでの `morewords` の定義全体を選択し、ツールバーの **[選択された行をコメント アウトします。]** ボタンを選びます。 キーボードを使用する場合は、**Ctrl**+**K** キー、**Ctrl**+**C** キーを押します。
 
    ![コメント アウト ボタン](media/tutorial-comment-out.png)
 
@@ -124,7 +124,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
 ## <a name="collapse-code-blocks"></a>コード ブロックを折りたたむ
 
-コードのセクションを折りたたみ、関心のある部分だけに集中することができます。 実践するために、`_words` 配列を 1 行のコードに折りたたんでみましょう。 `Dim _words = New String() {` と示されている行の余白にある、内部にマイナス記号が表示された小さな灰色のボックスを選択します。 または、キーボードを使用している場合は、配列定義の任意の場所にカーソルを置き、**Ctrl** + **M** キー、**Ctrl** + **M** キーを押します。
+コードのセクションを折りたたみ、関心のある部分だけに集中することができます。 実践するために、`_words` 配列を 1 行のコードに折りたたんでみましょう。 `Dim _words = New String() {` と示されている行の余白にある、内部にマイナス記号が表示された小さな灰色のボックスを選択します。 または、キーボードを使用している場合は、配列定義の任意の場所にカーソルを置き、**Ctrl**+**M** キー、**Ctrl**+**M** キーを押します。
 
 ![アウトライン折りたたみボタン](media/tutorial-collapse.png)
 
@@ -134,7 +134,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
 Visual Studio エディターでは、型やメソッドなどの定義の検査を容易に行うことができます。1 つの方法として、たとえば、シンボルが参照されている任意の場所で **[定義へ移動]** を選択して、定義を含むファイルに移動します。 作業中のファイルからフォーカスを移動しないより迅速な方法としては、[[定義をここに表示]](../../ide/go-to-and-peek-definition.md#peek-definition) を使用します。 `String` 型の定義を参照してみましょう。
 
-1. `String` という単語を右クリックし、コンテンツ メニューから **[定義をここに表示]** を選択します。 または、**Alt** + **F12** キーを押します。
+1. `String` という単語を右クリックし、コンテンツ メニューから **[定義をここに表示]** を選択します。 または、**Alt**+**F12** キーを押します。
 
    `String` クラスの定義を含むポップアップ ウィンドウが表示されます。 ポップアップ ウィンドウ内をスクロールすることも、参照しているコードから別の種類の定義を参照することもできます。
 

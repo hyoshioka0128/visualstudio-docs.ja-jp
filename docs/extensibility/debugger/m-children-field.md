@@ -1,30 +1,30 @@
 ---
-title: m_children フィールド |Microsoft Docs
+title: m_childrenフィールド |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab6446b18350fe1f11e0b164d9eb4bff39035ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738429"
 ---
-# <a name="mchildren-field"></a>m_children フィールド
-このタスクで登録されている子タスクの一覧。
+# <a name="m_children-field"></a>m_childrenフィールド
+このタスクに登録されている子タスクの一覧。
 
- **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (で*mscorlib.dll*)
+ **アセンブリ:** mscorlib *(mscorlib.dll*内)
 
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。
+ この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -33,9 +33,9 @@ ms.locfileid: "66330892"
 ```
 
 ## <a name="remarks"></a>Remarks
- タスクの実行中にタスクを実行するスレッドのみがこの配列をアクセスする必要があります。
+ タスクの実行中は、タスクを実行するスレッドだけがこの配列にアクセスする必要があります。
 
- タスクが完了した場合、他のスレッドには何も追加またはそこから何も削除されない限り、このフィールドにアクセスすることができます。
+ タスクが完了すると、他のスレッドは、そのフィールドに何も追加しないか、または削除しない限り、このフィールドにアクセスできます。
 
 ## <a name="see-also"></a>関連項目
-- [ContingentProperties クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+- [偶発プロパティ クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)

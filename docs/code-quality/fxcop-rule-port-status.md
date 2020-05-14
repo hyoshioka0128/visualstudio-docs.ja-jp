@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587590"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189477"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -27,77 +27,78 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 
 このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md)に移植された fxcop 規則の一覧には次のものが含まれます。
 
-ルール ID | [タイトル]
+ルール ID | タイトル
 --------|---------
-[CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | ジェネリック型の静的メンバーを宣言しません
-[CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
-[CA1003](ca1003-use-generic-event-handler-instances.md) | 汎用イベント ハンドラーのインスタンスを使用します
-[CA1008](ca1008-enums-should-have-zero-value.md) | Enums は 0 値を含んでいなければなりません
-[CA1010](ca1010-collections-should-implement-generic-interface.md) | コレクションは、ジェネリック インターフェイスを実装しなければなりません
-[CA1012](ca1012-abstract-types-should-not-have-constructors.md) | 抽象型にはコンストラクターを含めません
-[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | アセンブリを CLSCompliant にマークします
-[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | アセンブリのバージョンをアセンブリにマークする
-[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | アセンブリに ComVisible を設定します
-[CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | 属性を AttributeUsageAttribute に設定します
-[CA1019](ca1019-define-accessors-for-attribute-arguments.md) | 属性引数にアクセサーを定義します
-[CA1024](ca1024-use-properties-where-appropriate.md) | 適切な場所にプロパティを使用します
-[CA1027](ca1027-mark-enums-with-flagsattribute.md) | 列挙型を FlagsAttribute に設定します
-[CA1028](ca1028-enum-storage-should-be-int32.md) | 列挙ストレージは Int32 でなければなりません
-[CA1030](ca1030-use-events-where-appropriate.md) | 適切な場所にイベントを使用します
-[CA1031](ca1031-do-not-catch-general-exception-types.md) | 一般的な例外の種類はキャッチしません
-[CA1032](ca1032-implement-standard-exception-constructors.md) | 標準例外コンストラクターを実装します
-[CA1033](ca1033-interface-methods-should-be-callable-by-child-types.md) | インターフェイス メソッドは、子型によって呼び出し可能でなければなりません
-[CA1034](ca1034-nested-types-should-not-be-visible.md) | 入れ子にされた型を参照可能にすることはできません
-[CA1036](ca1036-override-methods-on-comparable-types.md) | 比較可能な型でメソッドをオーバーライドします
-[CA1040](ca1040-avoid-empty-interfaces.md) | 空のインターフェイスは使用しません
-[CA1041](ca1041-provide-obsoleteattribute-message.md) | ObsoleteAttribute メッセージを指定します
-[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | インデクサーに整数または文字列引数を使用する
-[CA1044](ca1044-properties-should-not-be-write-only.md) | プロパティを書き込み専用にすることはできません
-[CA1050](ca1050-declare-types-in-namespaces.md) | 名前空間で型を宣言します
-[CA1051](ca1051-do-not-declare-visible-instance-fields.md) | 参照可能なインスタンス フィールドを宣言しません
-[CA1052](ca1052-static-holder-types-should-be-sealed.md) | 静的ホルダー型は static または NotInheritable である必要があります
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの[CA1052](ca1052-static-holder-types-should-be-sealed.md)に含まれています)
-[CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Uri パラメーターを文字列にすることはできません
-[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Uri 戻り値を文字列にすることはできません
-[CA1056](ca1056-uri-properties-should-not-be-strings.md) | Uri プロパティを文字列にすることはできません
-[CA1058](ca1058-types-should-not-extend-certain-base-types.md) | 型は、一定の基本型を拡張することはできません
-[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Pinvokes をネイティブメソッドクラスに移動する
-[CA1061](ca1061-do-not-hide-base-class-methods.md) | 基底クラス メソッドを非表示にしません
-[CA1062](ca1062-validate-arguments-of-public-methods.md) | パブリック メソッドの引数の検証
-[CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable を正しく実装する
-[CA1064](ca1064-exceptions-should-be-public.md) | 例外は public として設定する必要があります
-[CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 予期しない場所に例外を発生させません
-CA1066 | 型 {0} は Equals をオーバーライドするため、IEquatable\<T > を実装する必要があります
-CA1067 | IEquatable\<T > を実装する場合は、Object.equals (object) をオーバーライドしてください
+[CA1000](ca1000.md) | ジェネリック型の静的メンバーを宣言しません
+[CA1001](ca1001.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
+[CA1003](ca1003.md) | 汎用イベント ハンドラーのインスタンスを使用します
+[CA1008](ca1008.md) | Enums は 0 値を含んでいなければなりません
+[CA1010](ca1010.md) | コレクションは、ジェネリック インターフェイスを実装しなければなりません
+[CA1012](ca1012.md) | 抽象型にはコンストラクターを含めません
+[CA1014](ca1014.md) | アセンブリを CLSCompliant にマークします
+[CA1016](ca1016.md) | アセンブリのバージョンをアセンブリにマークする
+[CA1017](ca1017.md) | アセンブリに ComVisible を設定します
+[CA1018](ca1018.md) | 属性を AttributeUsageAttribute に設定します
+[CA1019](ca1019.md) | 属性引数にアクセサーを定義します
+[CA1021](ca1021.md) | out パラメーターを使用しません
+[CA1024](ca1024.md) | 適切な場所にプロパティを使用します
+[CA1027](ca1027.md) | 列挙型を FlagsAttribute に設定します
+[CA1028](ca1028.md) | 列挙ストレージは Int32 でなければなりません
+[CA1030](ca1030.md) | 適切な場所にイベントを使用します
+[CA1031](ca1031.md) | 一般的な例外の種類はキャッチしません
+[CA1032](ca1032.md) | 標準例外コンストラクターを実装します
+[CA1033](ca1033.md) | インターフェイス メソッドは、子型によって呼び出し可能でなければなりません
+[CA1034](ca1034.md) | 入れ子にされた型を参照可能にすることはできません
+[CA1036](ca1036.md) | 比較可能な型でメソッドをオーバーライドします
+[CA1040](ca1040.md) | 空のインターフェイスは使用しません
+[CA1041](ca1041.md) | ObsoleteAttribute メッセージを指定します
+[CA1043](ca1043.md) | インデクサーに整数または文字列引数を使用する
+[CA1044](ca1044.md) | プロパティを書き込み専用にすることはできません
+[CA1050](ca1050.md) | 名前空間で型を宣言します
+[CA1051](ca1051.md) | 参照可能なインスタンス フィールドを宣言しません
+[CA1052](ca1052.md) | 静的ホルダー型は static または NotInheritable である必要があります
+[CA1053](ca1053.md) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの[CA1052](ca1052.md)に含まれています)
+[CA1054](ca1054.md) | Uri パラメーターを文字列にすることはできません
+[CA1055](ca1055.md) | Uri 戻り値を文字列にすることはできません
+[CA1056](ca1056.md) | Uri プロパティを文字列にすることはできません
+[CA1058](ca1058.md) | 型は、一定の基本型を拡張することはできません
+[CA1060](ca1060.md) | Pinvokes をネイティブメソッドクラスに移動する
+[CA1061](ca1061.md) | 基底クラス メソッドを非表示にしません
+[CA1062](ca1062.md) | パブリック メソッドの引数の検証
+[CA1063](ca1063.md) | IDisposable を正しく実装する
+[CA1064](ca1064.md) | 例外は public として設定する必要があります
+[CA1065](ca1065.md) | 予期しない場所に例外を発生させません
+[CA1066](ca1066.md) | 型{0}は Equals を\<オーバーライドするため、IEquatable T> を実装する必要があります
+[CA1067](ca1067.md) | IEquatable\<T> を実装するときに、object.equals (object) をオーバーライドします
 [CA1068](ca1068.md) | CancellationToken パラメーターは最後に指定する必要があります
 CA1200 | プレフィックスで cref タグを使用しません
-[CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | ローカライズされるパラメーターとしてリテラルを渡さない
-[CA1304](ca1304-specify-cultureinfo.md) | CultureInfo を指定します
-[CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider を指定します
-[CA1307](ca1307-specify-stringcomparison.md) | StringComparison の指定
-[CA1308](ca1308-normalize-strings-to-uppercase.md) | 文字列を大文字に標準化します
-[CA1309](ca1309-use-ordinal-stringcomparison.md) | 序数の文字列比較を使用する
-[CA1401](ca1401-p-invokes-should-not-be-visible.md) | P/Invoke は参照可能であることはできません
-[CA1501](ca1501-avoid-excessive-inheritance.md) | 継承を使用しすぎないでください
-[CA1502](ca1502-avoid-excessive-complexity.md) | メソッドの実装を複雑にしすぎないでください
-[CA1505](ca1505-avoid-unmaintainable-code.md) | メンテナンスできないコードを使用しないでください
-[CA1506](ca1506-avoid-excessive-class-coupling.md) | クラス結合度を大きくしすぎないでください
+[CA1303](ca1303.md) | ローカライズされるパラメーターとしてリテラルを渡さない
+[CA1304](ca1304.md) | CultureInfo を指定します
+[CA1305](ca1305.md) | IFormatProvider を指定します
+[CA1307](ca1307.md) | StringComparison の指定
+[CA1308](ca1308.md) | 文字列を大文字に標準化します
+[CA1309](ca1309.md) | 序数の文字列比較を使用する
+[CA1401](ca1401.md) | P/Invoke は参照可能であることはできません
+[CA1501](ca1501.md) | 継承を使用しすぎないでください
+[CA1502](ca1502.md) | メソッドの実装を複雑にしすぎないでください
+[CA1505](ca1505.md) | メンテナンスできないコードを使用しないでください
+[CA1506](ca1506.md) | クラス結合度を大きくしすぎないでください
 [CA1507](ca1507.md) | シンボル名を表すために名前を使用する
-CA1508 | デッド条件コードを回避する
+[CA1508](ca1508.md) | デッド条件コードを回避する
 CA1509 | コードメトリックスルール指定ファイルのエントリが無効です
-[CA1707](ca1707-identifiers-should-not-contain-underscores.md) | 識別子はアンダースコアを含むことはできません
-[CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | 識別子は、大文字と小文字の区別以外にも相違していなければなりません
-[CA1710](ca1710-identifiers-should-have-correct-suffix.md) | 識別子は、正しいサフィックスを含んでいなければなりません
-[CA1711](ca1711-identifiers-should-not-have-incorrect-suffix.md) | 識別子は、不適切なサフィックスを含むことはできません
-[CA1712](ca1712-do-not-prefix-enum-values-with-type-name.md) | 列挙型値を型名のプレフィックスにしません
-[CA1714](ca1714-flags-enums-should-have-plural-names.md) | フラグ列挙型は、複数形の名前を含んでいなければなりません
-[CA1715](ca1715-identifiers-should-have-correct-prefix.md) | 識別子は正しいプレフィックスを含んでいなければなりません
-[CA1716](ca1716-identifiers-should-not-match-keywords.md) | 識別子はキーワードと同一にすることはできません
-[CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md) | FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません
-[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | 識別子に型名が含まれています
-[CA1721](ca1721-property-names-should-not-match-get-methods.md) | プロパティ名は get メソッドと同一にすることはできません
-[CA1724](ca1724-type-names-should-not-match-namespaces.md) | 型名を名前空間と一致させることはできません
-[CA1725](ca1725-parameter-names-should-match-base-declaration.md) | パラメーター名は基本宣言と同一でなければなりません
+[CA1707](ca1707.md) | 識別子はアンダースコアを含むことはできません
+[CA1708](ca1708.md) | 識別子は、大文字と小文字の区別以外にも相違していなければなりません
+[CA1710](ca1710.md) | 識別子は、正しいサフィックスを含んでいなければなりません
+[CA1711](ca1711.md) | 識別子は、不適切なサフィックスを含むことはできません
+[CA1712](ca1712.md) | 列挙型値を型名のプレフィックスにしません
+[CA1714](ca1714.md) | フラグ列挙型は、複数形の名前を含んでいなければなりません
+[CA1715](ca1715.md) | 識別子は正しいプレフィックスを含んでいなければなりません
+[CA1716](ca1716.md) | 識別子はキーワードと同一にすることはできません
+[CA1717](ca1717.md) | FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません
+[CA1720](ca1720.md) | 識別子に型名が含まれています
+[CA1721](ca1721.md) | プロパティ名は get メソッドと同一にすることはできません
+[CA1724](ca1724.md) | 型名を名前空間と一致させることはできません
+[CA1725](ca1725.md) | パラメーター名は基本宣言と同一でなければなりません
 [CA1801](ca1801.md) | 使用されていないパラメーターの確認
 [CA1802](ca1802.md) | 適切な場所にリテラルを使用する
 [CA1806](ca1806.md) | メソッドの結果を無視しない
@@ -113,7 +114,7 @@ CA1509 | コードメトリックスルール指定ファイルのエントリ�
 [CA1822](ca1822.md) | メンバーを static に設定します
 [CA1823](ca1823.md) | 使用されていないプライベート フィールドを使用しません
 [CA1824](ca1824.md) | アセンブリを NeutralResourcesLanguageAttribute に設定します
-CA1825 | 長さ0の配列を割り当てないようにします。
+[CA1825](ca1825.md) | 長さ0の配列を割り当てないようにします。
 CA1826 | インデックス可能なコレクションでは、列挙可能なメソッドを使用しないでください。 代わりに、コレクションを直接使用します。
 [CA2000](ca2000.md) | スコープを失う前にオブジェクトを破棄
 [CA2002](ca2002.md) | 弱い ID を伴うオブジェクト上でロックしません
@@ -171,34 +172,34 @@ CA2244 | インデックス付き要素の初期化を複製しない
 [CA3010](ca3010.md) | XAML インジェクションの脆弱性のコード レビュー
 [CA3011](ca3011.md) | DLL インジェクションの脆弱性のコード レビュー
 [CA3012](ca3012.md) | RegEx インジェクションの脆弱性のコード レビュー
-CA3061 | URL でスキーマを追加しない
+[CA3061](ca3061.md) | URL でスキーマを追加しない
 [CA3075](ca3075.md) | XML での DTD 処理が安全ではありません
 [CA3076](ca3076.md) | 安全ではない XSLT スクリプトの処理。
 [CA3077](ca3077.md) | API 設計、XmlDocument、XmlTextReader で安全ではない処理
 [CA3147](ca3147.md) | アンチ偽造トークンを検証する動詞ハンドラーをマークします
 [CA5350](ca5350.md) | 脆弱な暗号アルゴリズムを使用しないでください
 [CA5351](ca5351.md) | 破損した暗号アルゴリズムを使用しない
-CA5358 | Unsafe 暗号モードを使用しない
+[CA5358](ca5358.md) | 安全ではない暗号モードを使用しないでください
 CA5359 | 証明書の検証を無効にしない
 CA5360 | 逆シリアル化で危険なメソッドを呼び出さないでください
-CA5361 | 強力な暗号の SChannel 使用を無効にしない
+[CA5361](ca5361.md) | 強力な暗号の SChannel 使用を無効にしない
 CA5362 | Serializable クラスの Self を参照しない
-CA5363 | 要求の検証を無効にしない
-CA5364 | 非推奨のセキュリティプロトコルを使用しない
+[CA5363](ca5363.md) | 要求の検証を無効にしない
+[CA5364](ca5364.md) | 非推奨のセキュリティプロトコルを使用しない
 CA5365 | HTTP ヘッダーチェックを無効にしない
 CA5366 | DataSet に XmlReader を使用する Xml の読み取り
 CA5367 | ポインターフィールドを持つ型をシリアル化しない
 CA5368 | ページから派生したクラスの ViewStateUserKey を設定する
-CA5369 | 逆シリアル化に XmlReader を使用する
-CA5370 | 読み取りの検証に XmlReader を使用する
-CA5371 | スキーマ読み取りに XmlReader を使用する
-CA5372 | Xpath ドキュメントに XmlReader を使用する
-CA5373 | 廃止されたキー派生関数を使用しません
+[CA5369](ca5369.md) | 逆シリアル化に XmlReader を使用する
+[CA5370](ca5370.md) | 読み取りの検証に XmlReader を使用する
+[CA5371](ca5371.md) | スキーマ読み取りに XmlReader を使用する
+[CA5372](ca5372.md) | Xpath ドキュメントに XmlReader を使用する
+[CA5373](ca5373.md) | 廃止されたキー派生関数を使用しません
 CA5374 | XslTransform を使用しない
 CA5375 | アカウントを使用しない Shared Access Signature
 CA5376 | SharedAccessProtocol HttpsOnly を使用する
 CA5377 | コンテナーレベルのアクセスポリシーを使用する
-CA5378 | ServicePointManagerSecurityProtocols を無効にしません
+[CA5378](ca5378.md) | ServicePointManagerSecurityProtocols を無効にしません
 CA5379 | 弱いキー派生関数アルゴリズムを使用しない
 CA9999 | アナライザーのバージョンが一致しません
 
@@ -208,50 +209,50 @@ CA9999 | アナライザーのバージョンが一致しません
 
 ### <a name="rules-that-may-be-ported"></a>移植される可能性がある規則
 
-次の FxCop レガシ分析規則は、まだアナライザーとして実装されていませんが、の場合もあります。 これは、技術的な理由がブロックされているか、ルールの優先度が低いことが原因である可能性があります。 各ルールの移植状態の詳細については、 **[問題の追跡]** 列のリンクをクリックしてください。
+次の FxCop レガシ分析規則は、まだアナライザーとして実装されていませんが、の場合もあります。 これは、技術的な理由がブロックされているか、ルールの優先度が低いことが原因である可能性があります。 各ルールの移植状態の詳細については、[**問題の追跡**] 列のリンクをクリックしてください。
 
 ルール ID | 問題の追跡
 --- | ---
-[CA1002](ca1002-do-not-expose-generic-lists.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
-[CA1004](ca1004-generic-methods-should-provide-type-parameter.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
-[CA1005](ca1005-avoid-excessive-parameters-on-generic-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/371](https://github.com/dotnet/roslyn-analyzers/issues/371)
-[CA1006](ca1006-do-not-nest-generic-types-in-member-signatures.md) | [https://github.com/dotnet/roslyn-analyzers/issues/372](https://github.com/dotnet/roslyn-analyzers/issues/372)
-[CA1007](ca1007-use-generics-where-appropriate.md) | [https://github.com/dotnet/roslyn-analyzers/issues/373](https://github.com/dotnet/roslyn-analyzers/issues/373)
-[CA1011](ca1011-consider-passing-base-types-as-parameters.md) | [https://github.com/dotnet/roslyn-analyzers/issues/375](https://github.com/dotnet/roslyn-analyzers/issues/375)
-[CA1021](ca1021-avoid-out-parameters.md) | [https://github.com/dotnet/roslyn-analyzers/issues/377](https://github.com/dotnet/roslyn-analyzers/issues/377)
-[CA1023](ca1023-indexers-should-not-be-multidimensional.md) | [https://github.com/dotnet/roslyn-analyzers/issues/378](https://github.com/dotnet/roslyn-analyzers/issues/378)
-[CA1045](ca1045-do-not-pass-types-by-reference.md) | [https://github.com/dotnet/roslyn-analyzers/issues/391](https://github.com/dotnet/roslyn-analyzers/issues/391)
-[CA1046](ca1046-do-not-overload-operator-equals-on-reference-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/392](https://github.com/dotnet/roslyn-analyzers/issues/392)
-[CA1047: SEALED](ca1047-do-not-declare-protected-members-in-sealed-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/393](https://github.com/dotnet/roslyn-analyzers/issues/393)
-[CA1048: SEALED](ca1048-do-not-declare-virtual-members-in-sealed-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/394](https://github.com/dotnet/roslyn-analyzers/issues/394)
-[CA1049](ca1049-types-that-own-native-resources-should-be-disposable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/395](https://github.com/dotnet/roslyn-analyzers/issues/395)
-[CA1057](ca1057-string-uri-overloads-call-system-uri-overloads.md) | [https://github.com/dotnet/roslyn-analyzers/issues/401](https://github.com/dotnet/roslyn-analyzers/issues/401)
-[CA1300](ca1300-specify-messageboxoptions.md) | [https://github.com/dotnet/roslyn-analyzers/issues/408](https://github.com/dotnet/roslyn-analyzers/issues/408)
-[CA1301](ca1301-avoid-duplicate-accelerators.md) | [https://github.com/dotnet/roslyn-analyzers/issues/409](https://github.com/dotnet/roslyn-analyzers/issues/409)
-[CA1306](ca1306-set-locale-for-data-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/414](https://github.com/dotnet/roslyn-analyzers/issues/414)
-[CA1402](ca1402-avoid-overloads-in-com-visible-interfaces.md) | [https://github.com/dotnet/roslyn-analyzers/issues/418](https://github.com/dotnet/roslyn-analyzers/issues/418)
-[CA1403](ca1403-auto-layout-types-should-not-be-com-visible.md) | [https://github.com/dotnet/roslyn-analyzers/issues/419](https://github.com/dotnet/roslyn-analyzers/issues/419)
-[CA1404](ca1404-call-getlasterror-immediately-after-p-invoke.md) | [https://github.com/dotnet/roslyn-analyzers/issues/420](https://github.com/dotnet/roslyn-analyzers/issues/420)
-[CA1405](ca1405-com-visible-type-base-types-should-be-com-visible.md) | [https://github.com/dotnet/roslyn-analyzers/issues/421](https://github.com/dotnet/roslyn-analyzers/issues/421)
-[CA1407](ca1407-avoid-static-members-in-com-visible-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/423](https://github.com/dotnet/roslyn-analyzers/issues/423)
-[CA1408](ca1408-do-not-use-autodual-classinterfacetype.md) | [https://github.com/dotnet/roslyn-analyzers/issues/424](https://github.com/dotnet/roslyn-analyzers/issues/424)
-[CA1409](ca1409-com-visible-types-should-be-creatable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/425](https://github.com/dotnet/roslyn-analyzers/issues/425)
-[CA1410](ca1410-com-registration-methods-should-be-matched.md) | [https://github.com/dotnet/roslyn-analyzers/issues/426](https://github.com/dotnet/roslyn-analyzers/issues/426)
-[CA1411](ca1411-com-registration-methods-should-not-be-visible.md) | [https://github.com/dotnet/roslyn-analyzers/issues/427](https://github.com/dotnet/roslyn-analyzers/issues/427)
-[CA1412](ca1412-mark-comsource-interfaces-as-idispatch.md) | [https://github.com/dotnet/roslyn-analyzers/issues/428](https://github.com/dotnet/roslyn-analyzers/issues/428)
-[CA1413](ca1413-avoid-non-public-fields-in-com-visible-value-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/429](https://github.com/dotnet/roslyn-analyzers/issues/429)
-[CA1414](ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md) | [https://github.com/dotnet/roslyn-analyzers/issues/430](https://github.com/dotnet/roslyn-analyzers/issues/430)
-[CA1415](ca1415-declare-p-invokes-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/431](https://github.com/dotnet/roslyn-analyzers/issues/431)
-[CA1500](ca1500-variable-names-should-not-match-field-names.md) | [https://github.com/dotnet/roslyn-analyzers/issues/432](https://github.com/dotnet/roslyn-analyzers/issues/432)
-[CA1600](ca1600-do-not-use-idle-process-priority.md) | [https://github.com/dotnet/roslyn-analyzers/issues/438](https://github.com/dotnet/roslyn-analyzers/issues/438)
-[CA1601](ca1601-do-not-use-timers-that-prevent-power-state-changes.md) | [https://github.com/dotnet/roslyn-analyzers/issues/439](https://github.com/dotnet/roslyn-analyzers/issues/439)
-[CA1700](ca1700-do-not-name-enum-values-reserved.md) | [https://github.com/dotnet/roslyn-analyzers/issues/440](https://github.com/dotnet/roslyn-analyzers/issues/440)
-[CA1704](ca1704-identifiers-should-be-spelled-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/443](https://github.com/dotnet/roslyn-analyzers/issues/443)
-[CA1709](ca1709-identifiers-should-be-cased-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/445](https://github.com/dotnet/roslyn-analyzers/issues/445)
-[CA1713](ca1713-events-should-not-have-before-or-after-prefix.md) | [https://github.com/dotnet/roslyn-analyzers/issues/449](https://github.com/dotnet/roslyn-analyzers/issues/449)
-[CA1719](ca1719-parameter-names-should-not-match-member-names.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
-[CA1722](ca1722-identifiers-should-not-have-incorrect-prefix.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
-[CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
+[CA1002](ca1002.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
+[CA1004](ca1004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
+[CA1005](ca1005.md) | [https://github.com/dotnet/roslyn-analyzers/issues/371](https://github.com/dotnet/roslyn-analyzers/issues/371)
+[CA1006](ca1006.md) | [https://github.com/dotnet/roslyn-analyzers/issues/372](https://github.com/dotnet/roslyn-analyzers/issues/372)
+[CA1007](ca1007.md) | [https://github.com/dotnet/roslyn-analyzers/issues/373](https://github.com/dotnet/roslyn-analyzers/issues/373)
+[CA1011](ca1011.md) | [https://github.com/dotnet/roslyn-analyzers/issues/375](https://github.com/dotnet/roslyn-analyzers/issues/375)
+[CA1021](ca1021.md) | [https://github.com/dotnet/roslyn-analyzers/issues/377](https://github.com/dotnet/roslyn-analyzers/issues/377)
+[CA1023](ca1023.md) | [https://github.com/dotnet/roslyn-analyzers/issues/378](https://github.com/dotnet/roslyn-analyzers/issues/378)
+[CA1045](ca1045.md) | [https://github.com/dotnet/roslyn-analyzers/issues/391](https://github.com/dotnet/roslyn-analyzers/issues/391)
+[CA1046](ca1046.md) | [https://github.com/dotnet/roslyn-analyzers/issues/392](https://github.com/dotnet/roslyn-analyzers/issues/392)
+[CA1047: SEALED](ca1047.md) | [https://github.com/dotnet/roslyn-analyzers/issues/393](https://github.com/dotnet/roslyn-analyzers/issues/393)
+[CA1048: SEALED](ca1048.md) | [https://github.com/dotnet/roslyn-analyzers/issues/394](https://github.com/dotnet/roslyn-analyzers/issues/394)
+[CA1049](ca1049.md) | [https://github.com/dotnet/roslyn-analyzers/issues/395](https://github.com/dotnet/roslyn-analyzers/issues/395)
+[CA1057](ca1057.md) | [https://github.com/dotnet/roslyn-analyzers/issues/401](https://github.com/dotnet/roslyn-analyzers/issues/401)
+[CA1300](ca1300.md) | [https://github.com/dotnet/roslyn-analyzers/issues/408](https://github.com/dotnet/roslyn-analyzers/issues/408)
+[CA1301](ca1301.md) | [https://github.com/dotnet/roslyn-analyzers/issues/409](https://github.com/dotnet/roslyn-analyzers/issues/409)
+[CA1306](ca1306.md) | [https://github.com/dotnet/roslyn-analyzers/issues/414](https://github.com/dotnet/roslyn-analyzers/issues/414)
+[CA1402](ca1402.md) | [https://github.com/dotnet/roslyn-analyzers/issues/418](https://github.com/dotnet/roslyn-analyzers/issues/418)
+[CA1403](ca1403.md) | [https://github.com/dotnet/roslyn-analyzers/issues/419](https://github.com/dotnet/roslyn-analyzers/issues/419)
+[CA1404](ca1404.md) | [https://github.com/dotnet/roslyn-analyzers/issues/420](https://github.com/dotnet/roslyn-analyzers/issues/420)
+[CA1405](ca1405.md) | [https://github.com/dotnet/roslyn-analyzers/issues/421](https://github.com/dotnet/roslyn-analyzers/issues/421)
+[CA1407](ca1407.md) | [https://github.com/dotnet/roslyn-analyzers/issues/423](https://github.com/dotnet/roslyn-analyzers/issues/423)
+[CA1408](ca1408.md) | [https://github.com/dotnet/roslyn-analyzers/issues/424](https://github.com/dotnet/roslyn-analyzers/issues/424)
+[CA1409](ca1409.md) | [https://github.com/dotnet/roslyn-analyzers/issues/425](https://github.com/dotnet/roslyn-analyzers/issues/425)
+[CA1410](ca1410.md) | [https://github.com/dotnet/roslyn-analyzers/issues/426](https://github.com/dotnet/roslyn-analyzers/issues/426)
+[CA1411](ca1411.md) | [https://github.com/dotnet/roslyn-analyzers/issues/427](https://github.com/dotnet/roslyn-analyzers/issues/427)
+[CA1412](ca1412.md) | [https://github.com/dotnet/roslyn-analyzers/issues/428](https://github.com/dotnet/roslyn-analyzers/issues/428)
+[CA1413](ca1413.md) | [https://github.com/dotnet/roslyn-analyzers/issues/429](https://github.com/dotnet/roslyn-analyzers/issues/429)
+[CA1414](ca1414.md) | [https://github.com/dotnet/roslyn-analyzers/issues/430](https://github.com/dotnet/roslyn-analyzers/issues/430)
+[CA1415](ca1415.md) | [https://github.com/dotnet/roslyn-analyzers/issues/431](https://github.com/dotnet/roslyn-analyzers/issues/431)
+[CA1500](ca1500.md) | [https://github.com/dotnet/roslyn-analyzers/issues/432](https://github.com/dotnet/roslyn-analyzers/issues/432)
+[CA1600](ca1600.md) | [https://github.com/dotnet/roslyn-analyzers/issues/438](https://github.com/dotnet/roslyn-analyzers/issues/438)
+[CA1601](ca1601.md) | [https://github.com/dotnet/roslyn-analyzers/issues/439](https://github.com/dotnet/roslyn-analyzers/issues/439)
+[CA1700](ca1700.md) | [https://github.com/dotnet/roslyn-analyzers/issues/440](https://github.com/dotnet/roslyn-analyzers/issues/440)
+[CA1704](ca1704.md) | [https://github.com/dotnet/roslyn-analyzers/issues/443](https://github.com/dotnet/roslyn-analyzers/issues/443)
+[CA1709](ca1709.md) | [https://github.com/dotnet/roslyn-analyzers/issues/445](https://github.com/dotnet/roslyn-analyzers/issues/445)
+[CA1713](ca1713.md) | [https://github.com/dotnet/roslyn-analyzers/issues/449](https://github.com/dotnet/roslyn-analyzers/issues/449)
+[CA1719](ca1719.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
+[CA1722](ca1722.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
+[CA1726](ca1726.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
 [CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
 [CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
 [CA1900](ca1900.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
@@ -273,19 +274,19 @@ CA9999 | アナライザーのバージョンが一致しません
 
 次の FxCop レガシ分析ルールは非推奨とされており、アナライザーとして実装されません。 詳細については、 [roslyn-Analyzer GitHub の問題](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)に関するページで、ルール ID (たとえば、 **CA1009**) で検索することができます。
 
-- [CA1009](ca1009-declare-event-handlers-correctly.md)
-- [CA1020](ca1020-avoid-namespaces-with-few-types.md)
-- [CA1025](ca1025-replace-repetitive-arguments-with-params-array.md)
-- [CA1026](ca1026-default-parameters-should-not-be-used.md)
-- [CA1035](ca1035-icollection-implementations-have-strongly-typed-members.md)
-- [CA1038](ca1038-enumerators-should-be-strongly-typed.md)
-- [CA1039](ca1039-lists-are-strongly-typed.md)
-- [CA1059](ca1059-members-should-not-expose-certain-concrete-types.md)
-- [CA1302](ca1302-do-not-hardcode-locale-specific-strings.md)
-- [CA1400](ca1400-p-invoke-entry-points-should-exist.md)
-- [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
-- [CA1504](ca1504-review-misleading-field-names.md)
-- [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1009](ca1009.md)
+- [CA1020](ca1020.md)
+- [CA1025](ca1025.md)
+- [CA1026](ca1026.md)
+- [CA1035](ca1035.md)
+- [CA1038](ca1038.md)
+- [CA1039](ca1039.md)
+- [CA1059](ca1059.md)
+- [CA1302](ca1302.md)
+- [CA1400](ca1400.md)
+- [CA1406](ca1406.md)
+- [CA1504](ca1504.md)
+- [CA1701](ca1701.md)
 - [CA1702](ca1702.md)
 - [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
@@ -339,7 +340,7 @@ CA9999 | アナライザーのバージョンが一致しません
 - [CA2221](ca2221.md)
 - [CA2222](ca2222.md) ([ジャスティフィケーション](https://github.com/dotnet/roslyn-analyzers/issues/1378))
 - [CA2223](ca2223.md)
-- [CA2228: 未公開](ca2228.md)
+- [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)

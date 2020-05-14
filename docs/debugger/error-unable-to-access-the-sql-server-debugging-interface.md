@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f567339785cc3627c845997f87cbd8047d6d16e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5659325abd5b1f7a926d7e16d775b94aec62cfa9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736852"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916201"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>エラー: SQL Server デバッグ インターフェイスにアクセスできません
 このメッセージは SQL デバッグが有効化されていないマシンで SQL デバッグを行おうとすると発生します。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- 「 [SQL デバッグ](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))のセットアップ」を参照してください。
+- 「 [SQL デバッグ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))のセットアップ」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SQL のデバッグ](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))
+- [SQL のデバッグ](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

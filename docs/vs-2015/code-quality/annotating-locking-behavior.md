@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295829"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271593"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "74295829"
 |`_Interlocked_operand_`|注釈付き関数のパラメーターは、さまざまなインタロックされた関数のいずれかのターゲットオペランドです。  これらのオペランドには、特定の追加プロパティが必要です。|  
 |`_Write_guarded_by_(expr)`|変数に注釈を付け、変数が変更されるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [SAL](../code-quality/understanding-sal.md)  について  
  [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
@@ -117,4 +117,4 @@ ms.locfileid: "74295829"
  [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
  [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベストプラクティスと例](../code-quality/best-practices-and-examples-sal.md)   
- [コード分析チームのブログ](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)

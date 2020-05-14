@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778103"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>パフォーマンス ツールに関する問題のトラブルシューティング
@@ -26,13 +26,13 @@ ms.locfileid: "74778103"
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>プロファイリング ツールでデータが収集されない
  アプリケーションをプロファイルした後に、プロファイリング データ (.*vsp*) ファイルが作成されず、 **[出力]** ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。
 
- PRF0025:データは収集されませんでした。
+ PRF0025: データは収集されませんでした。
 
  この問題は、次の複数の問題が原因で発生することがあります。
 
 - サンプリングまたは .NET メモリ メソッドを使用してプロファイリングしたプロセスによって、子プロセスが起動されます。この子プロセスは、アプリケーションの作業を実行するプロセスになります。 たとえば、一部のアプリケーションでは、コマンド ラインを読み取り、Windows アプリケーションまたはコマンド ライン アプリケーションのどちらとして起動したかを決定します。 Windows アプリケーションが要求された場合、元のプロセスは Windows アプリケーションとして構成された新しいプロセスを起動し、元のプロセスは終了します。 プロファイリング ツールは子プロセスのデータを自動的に収集しないため、データは収集されません。
 
-     この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、[実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)」および [Attach (VSPerfCmd)](../profiling/attach.md) に関するページを参照してください。
+     この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、「[方法 : 実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)」および [Attach](../profiling/attach.md) に関するページを参照してください。
 
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>パフォーマンス ビューとレポートに関数名ではなく番号が表示される
  アプリケーションのプロファイリング後、レポートとビューに関数名ではなく番号が表示されます。

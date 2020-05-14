@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926193"
 ---
 # <a name="property-pages-javascript"></a>プロパティ ページ、JavaScript
@@ -40,11 +40,11 @@ ms.locfileid: "68926193"
 
  **構成**
 
-表示または変更する構成設定を指定します。 この設定は **[デバッグ]** (既定)、 **[リリース]** 、 **[すべての構成]** 、またはユーザー定義の構成に指定できます。 詳細については、「[方法 :Visual Studio でのデバッグおよびリリース構成の設定](../../debugger/how-to-set-debug-and-release-configurations.md)に関するページを参照してください。
+表示または変更する構成設定を指定します。 この設定は **[デバッグ]** (既定)、 **[リリース]** 、 **[すべての構成]** 、またはユーザー定義の構成に指定できます。 詳細については、「[How to: Set debug and release configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md)」 (方法: Visual Studio でデバッグ構成とリリース構成を設定する) を参照してください。
 
  **プラットフォーム**
 
-表示または変更するプラットフォーム設定を指定します。 この設定は **[任意の CPU]** ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリの既定)、 **[x64]** 、 **[ARM]** 、 **[x86]** 、またはユーザー定義のプラットフォームに指定できます。 詳細については、「[方法 :Visual Studio でのデバッグおよびリリース構成の設定](../../debugger/how-to-set-debug-and-release-configurations.md)に関するページを参照してください。
+表示または変更するプラットフォーム設定を指定します。 この設定は **[任意の CPU]** ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリの既定)、 **[x64]** 、 **[ARM]** 、 **[x86]** 、またはユーザー定義のプラットフォームに指定できます。 詳細については、「[How to: Set debug and release configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md)」 (方法: Visual Studio でデバッグ構成とリリース構成を設定する) を参照してください。
 
 ## <a name="general-page"></a>[全般] ページ
 
@@ -92,7 +92,7 @@ ms.locfileid: "68926193"
 
 IP ループバック アドレスへのアクセスをアプリのテストに許可するかどうかを指定します。 クライアント アプリケーションとサーバー アプリケーションが同じコンピューターで実行されている場合に、ループバック アドレスの使用を許可するには、 **[はい]** を選択します。それ以外の場合は、 **[いいえ]** を選択します。 このプロパティを使用できるのは、 **[起動するデバッガー]** プロパティが **[リモート コンピューター]** に設定されている場合のみです。
 
-**[コンピューター名]**
+**マシン名**
 
 デバッガーをホストするリモート コンピューターの名前を指定します。 このプロパティを使用できるのは、 **[起動するデバッガー]** が **[リモート コンピューター]** に設定されている場合のみです。
 

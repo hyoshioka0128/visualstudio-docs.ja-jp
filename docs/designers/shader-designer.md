@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635055"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75589930"
 ---
 # <a name="shader-designer"></a>シェーダー デザイナー
 
@@ -176,26 +176,26 @@ DGSL シェーダーを作成するたびに、**ポイントの色**ノード�
 
 |コマンド|キーボード ショートカット|
 |-------------| - |
-|**[選択]** モードに切り替え|**Ctrl** + **G**、**Ctrl** + **Q**<br /><br /> **S**|
-|**[ズーム]** モードに切り替え|**Ctrl** + **G**、**Ctrl** + **Z**<br /><br /> **Z**|
-|**[パン]** モードに切り替え|**Ctrl** + **G**、**Ctrl** + **P**<br /><br /> **K**|
-|すべて選択|**Ctrl** + **A**|
+|**[選択]** モードに切り替え|**Ctrl**+**G**、**Ctrl**+**Q**<br /><br /> **S**|
+|**[ズーム]** モードに切り替え|**Ctrl**+**G**、**Ctrl**+**Z**<br /><br /> **Z**|
+|**[パン]** モードに切り替え|**Ctrl**+**G**、**Ctrl**+**P**<br /><br /> **K**|
+|すべて選択|**Ctrl**+**A**|
 |現在の選択範囲を削除します。|**削除**|
 |現在の選択を取り消します。|**エスケープ** (**Esc**)|
-|拡大表示|**Ctrl** + **マウス ホイール前方移動**<br /><br /> プラス記号 ( **+** )|
-|ズーム アウト|**Ctrl** + **マウス ホイール後方移動**<br /><br /> マイナス記号 ( **-** )|
+|拡大表示|**Ctrl**+**マウス ホイール前方移動**<br /><br /> プラス記号 ( **+** )|
+|ズーム アウト|**Ctrl**+**マウス ホイール後方移動**<br /><br /> マイナス記号 ( **-** )|
 |デザイン サーフェイスを上にパン|**マウス ホイール後方移動**<br /><br /> **PageDown**|
 |デザイン サーフェイスを下にパン|**マウス ホイール前方移動**<br /><br /> **PageUp**|
-|デザイン サーフェイスを左にパン|**Shift** + **マウス ホイール後方移動**<br /><br /> **マウス ホイール左**<br /><br /> **Shift** + **PageDown**|
-|デザイン サーフェイスを右にパン|**Shift** + **マウス ホイール前方移動**<br /><br /> **マウス ホイール右**<br /><br /> **Shift** + **PageUp**|
+|デザイン サーフェイスを左にパン|**Shift**+**マウス ホイール後方移動**<br /><br /> **マウス ホイール左**<br /><br /> **Shift**+**PageDown**|
+|デザイン サーフェイスを右にパン|**Shift**+**マウス ホイール前方移動**<br /><br /> **マウス ホイール右**<br /><br /> **Shift**+**PageUp**|
 |キーボード フォーカスを別のノードに移動|**方向**キー|
-|キーボード フォーカスのあるノードを選択 (選択グループにノードを追加)|**Shift** + **Space キー**|
-|キーボード フォーカスのあるノードの選択を切り替える|**Ctrl** + **Space キー**|
+|キーボード フォーカスのあるノードを選択 (選択グループにノードを追加)|**Shift**+**Space キー**|
+|キーボード フォーカスのあるノードの選択を切り替える|**Ctrl**+**Space キー**|
 |現在の選択を切り替える (ノードが選択されていない場合、キーボード フォーカスのあるノードを選択)|**Space キー**|
-|現在の選択を上に移動|**Shift** + **↑ キー**|
-|現在の選択を下に移動|**Shift** + **↓ キー**|
-|現在の選択を左に移動|**Shift** + **← キー**|
-|現在の選択を右に移動|**Shift** + **→ キー**。|
+|現在の選択を上に移動|**Shift**+**↑ キー**|
+|現在の選択を下に移動|**Shift**+**↓ キー**|
+|現在の選択を左に移動|**Shift**+**← キー**|
+|現在の選択を右に移動|**Shift**+**→ キー**。|
 
 ## <a name="related-topics"></a>関連トピック
 

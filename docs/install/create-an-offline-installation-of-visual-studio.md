@@ -9,19 +9,19 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: d52dd064e895b1e35230b93c85a7a8499032943e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789987"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76114826"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 

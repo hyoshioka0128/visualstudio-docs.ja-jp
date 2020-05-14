@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40f8bc4847201d1bd0298bc91432996ecce58d65
+ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659712"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81615553"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -25,6 +25,8 @@ ms.locfileid: "72659712"
 > Visual Studio の MSTest アダプターは、互換性のためにレガシ モード (*mstest.exe* によるテストの実行と同等) でも動作します。 レガシ モードでは、TestCaseFilter 機能を利用することはできません。 アダプターをレガシ モードに切り替えることができるのは、 *.testsettings* ファイルが指定されている場合、*runsettings* ファイルで **forcelegacymode** が **true** に設定されている場合、または **HostType** などの属性を使用した場合です。
 >
 > ARM アーキテクチャ ベースのコンピューターで自動テストを実行するには、*VSTest.Console.exe* を使用する必要があります。
+
+[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)を開いてコマンドライン ツールを使用します。ツールは *%Program Files(x86)%\Microsoft Visual Studio\\<バージョン\>\\<エディション\>\common7\ide\CommonExtensions\\<プラットフォーム | Microsoft>* にもあります。
 
 ## <a name="general-command-line-options"></a>一般的なコマンドライン オプション
 
@@ -41,10 +43,10 @@ ms.locfileid: "72659712"
 |**/UseVsixExtensions**|このオプションでは、テストの実行の際に、*vstest.console.exe* プロセスでインストール済みの VSIX 拡張機能 (ある場合) を使用するかスキップするかを指定します。<br />このオプションは非推奨です。 Visual Studio の次のメジャー リリース以降、このオプションは削除される可能性があります。 NuGet パッケージとして利用可能な拡張機能の使用に移行してください。<br />例 : `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*パス*]**|*vstest.console.exe* プロセスで、テストの実行の際に指定されたパス (ある場合) からカスタム テスト アダプターを使用するように強制します。<br />例 : `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*プラットフォームの種類*]**|テストの実行対象とするプラットフォーム アーキテクチャです。<br />有効な値は x86、x64、ARM です。|
-|**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />`Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1` のような値があります。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換モード" で実行されます。<br />例 : `/Framework:framework40`|
+|**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />`Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1` のような値があります。<br />TargetFrameworkAttribute は、ご利用のアセンブリからこのオプションを自動的に検出するために使用されます。その属性が存在しない場合、既定値は `Framework40` になります。 ご利用の .NET Core アセンブリから [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) を削除する場合は、このオプションを明示的に指定する必要があります。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換性モード" で実行されます。<br />例 : `/Framework:framework40`|
 |**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、 **/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
 |**/?**|使用情報を表示します。|
-|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、 **/Logger:trx** を使用します。<br />例:Team Foundation Server にテスト結果を発行するには、次のように TfsPublisher を使用します。<br />**/logger:TfsPublisher;**<br />**Collection=<プロジェクト URL\>;**<br />**BuildName=<ビルド名\>;**<br />**TeamProject=<プロジェクト名\>;**<br />**[;Platform=\<規定値は "Any CPU">]**<br />**[;Flavor=\<規定値は "Debug">]**<br />**[;RunTitle=<タイトル\>]**|
+|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、次を使用します。<br />**/Logger:trx**<br />**[;LogFileName=\<既定値は一意のファイル名>]**|
 |**/ListTests: [*ファイル名*]**|指定されたテスト コンテナーから探索されたテストを一覧表示します。|
 |**/ListDiscoverers**|インストール済みのテスト探索プログラムを一覧表示します。|
 |**/ListExecutors**|インストール済みのテスト実行プログラムを一覧表示します。|
@@ -55,7 +57,7 @@ ms.locfileid: "72659712"
 |**/ResultsDirectory:[*path*]**|テスト結果ディレクトリが存在しない場合、指定されたパスに作成されます。<br />例 : `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|現在のプロセスを起動する親プロセスのプロセス ID です。|
 |**/Port:[*port*]**|ソケット接続およびイベント メッセージの受信用のポートです。|
-|**/Collect:[*dataCollector friendlyName*]**|テストの実行のためのデータ コレクターを有効にします。 詳細については、[こちら](https://aka.ms/vstest-collect)を参照してください。|
+|**/Collect:[*dataCollector friendlyName*]**|テストの実行のためのデータ コレクターを有効にします。 詳細については、[こちら](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md)を参照してください。|
 
 > [!TIP]
 > オプションと値の大文字と小文字は区別されません。

@@ -6,15 +6,15 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714481"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
-[Xamarin](/xamarin) のファーストクラス サポートにより、Android、macOS、iOS、tvOS、watchOS のために機能が豊富なネイティブ エクスペリエンスを開発できます。 Xamarin.Forms のクロスプラットフォーム アプリケーションにより、ネイティブ機能へのアクセスを制限することなく、Android、iOS、macOS 間で XAML ベースの UI コードを共有できます。
+[Xamarin](/xamarin) のファーストクラス サポートにより、Android、macOS、iOS、tvOS、watchOS のための機能が豊富なネイティブ エクスペリエンスを開発できます。 Xamarin.Forms のクロスプラットフォーム アプリケーションにより、ネイティブ機能へのアクセスを制限することなく、Android、iOS、macOS 間で XAML ベースの UI コードを共有できます。
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
@@ -36,7 +36,7 @@ Android Designer の詳細については、[Xamarin.Android Designer の概要]
 
 ## <a name="ios"></a>iOS
 
-iOS Designer は Visual Studio for Mac と完全に統合されているので、.xib およびストーリーボード ファイルを視覚的に編集し、iOS、tvOS、および watchOS の UI と遷移を作成できます。 ツールボックスとデザイン サーフェイス間でドラッグ アンド ドロップ機能を使用してユーザー インターフェイス全体を構築できるだけでなく、直感的な方法でイベントを処理できます。 iOS Designer は、デザイン時のレンダリングにさらに役立つ[カスタム コントロール](/xamarin/ios/user-interface/designer/ios-designable-controls-overview)もサポートしています。
+iOS Designer は Visual Studio for Mac と完全に統合されているので、.xib ファイルおよび Storyboard ファイルを視覚的に編集し、iOS、tvOS、および watchOS の UI と遷移を作成できます。 ツールボックスとデザイン サーフェイス間でドラッグ アンド ドロップ機能を使用してユーザー インターフェイス全体を構築できるだけでなく、直感的な方法でイベントを処理できます。 iOS Designer は、デザイン時のレンダリングにさらに役立つ[カスタム コントロール](/xamarin/ios/user-interface/designer/ios-designable-controls-overview)もサポートしています。
 
 ![iOS Storyboard デザイナー](media/intro-image30.png)
 
@@ -57,7 +57,7 @@ Visual Studio for Mac で Mac アプリケーションを作成する方法の�
 
 Xamarin Profiler には、プロファイルに使用できる 3 つのツールがあります。 「[Introduction to the Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos)」(Xamarin プロファイラー) ガイドでは、これらのインストルメントで測定する内容、アプリケーションの分析方法、各画面に表示されるデータの意味について説明します。
 
-### <a name="inspector"></a>Inspector
+### <a name="inspector"></a>インスペクター
 
 Xamarin Inspector は、対話型 C# コンソールをユーザー ツールで提供しています。 ライブ アプリケーションを調査するときのデバッグまたは診断支援として、教育ツール、ドキュメント作成ツール、または実験ツールとして使用できます。
 

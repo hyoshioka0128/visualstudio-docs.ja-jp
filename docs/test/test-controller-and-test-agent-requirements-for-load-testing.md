@@ -6,15 +6,15 @@ helpviewer_keywords:
 - agents, requirements
 - controllers, requirements
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d33fb01bf931a2f7f3585197151f167c79575da6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659929"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588643"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>ロード テストのためのテスト コントローラーおよびテスト エージェントの要件
 
@@ -22,7 +22,7 @@ ms.locfileid: "72659929"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="hardware-and-software-requirements"></a>ハードウェア要件とソフトウェア要件
+## <a name="hardware-and-software-requirements"></a>ハードウェアとソフトウェアの要件
 
 テスト コントローラー コンピューターとテスト エージェント コンピューターにはどちらにも固有のハードウェア要件およびソフトウェア要件があります。 さらに、複数の言語を対象としてテスト コントローラー コンピューターとテスト エージェント コンピューターを配置する場合は、それらの言語のサポート方法も計画する必要があります。
 
@@ -30,11 +30,11 @@ ms.locfileid: "72659929"
 
 テスト コントローラーおよびテスト エージェントを配置する場合の推奨されるハードウェア要件を次の表に示します。
 
-|**構成**|**コンポーネント**|**CPU**|**HD**|**メモリ**|
+|**構成**|**コンポーネント**|**CPU**|**HD**|**[メモリ]**|
 |-|-------------------|-|------------|-|
 |仮想ユーザー 500 人 未満|テスト エージェント|2.6 GHz|10 GB|2 GB|
 |仮想ユーザー 1000 人 未満|テスト エージェント|デュアル プロセッサ 2.6 GHz|10 GB|2 GB|
-|仮想ユーザー 1000 × N 人|テスト エージェント|N 個のエージェントをそれぞれデュアル プロセッサ 2.6 Ghz でスケール アウト|10GB|2GB|
+|仮想ユーザー 1000 × N 人|テスト エージェント|N 個のエージェントをそれぞれデュアル プロセッサ 2.6 Ghz でスケール アウト|10 GB|2GB|
 |テスト環境内に \< 30 台のコンピューター。 この中には、エージェントとテスト対象のサーバーを含みます。|Test Controller|2.6 GHz|||
 |テスト環境内に 30 × N 台のコンピューター。 この中には、エージェントとテスト対象のサーバーを含みます。|Test Controller|N 個の 2.6 GHz プロセッサ|||
 
@@ -59,6 +59,6 @@ Visual Studio を実行するサーバーは、最小帯域幅が 1 Mbps、最�
 
 エージェント コンピューターを監視すると、テスト中に実行およびスケールする *QTAgent\*.exe* プロセスを監視することによって、リソースの必要性を判断できます。 *QTAgent\*.exe* プロセスで一番ボトルネックになるのは、CPU 使用率です。 CPU 使用率が一貫して 90% 台後半の場合、エージェントの負荷が高くなっていることを示しています。 次にボトルネックになるのは、メモリの使用量です。 条件の厳しいテストでは、これらのリソースを監視すると、マシンのリソースを増やす必要があるのか、テストのメモリを別にした方がよいかを判断するうえで有用です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)

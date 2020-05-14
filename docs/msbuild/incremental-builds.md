@@ -5,21 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820d8b4837e2b7ae3f93a742ca8abe5962cd1893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007030"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633721"
 ---
 # <a name="incremental-builds"></a>インクリメンタル ビルド
 
 インクリメンタル ビルドは、対応する入力ファイルに対して最新の状態の出力ファイルを含むターゲットが実行されないように最適化されたビルドです。 ターゲット要素には、ターゲットが入力として受け取る項目を示す `Inputs` 属性と、ターゲットが出力として生成する項目を示す `Outputs` 属性の両方を指定できます。 MSBuild は、これらの属性の値間に一対一の対応関係があるかどうかを確認します。 一対一の対応関係が存在する場合、MSBuild は、すべての入力項目のタイム スタンプをそれぞれ対応する出力項目のタイム スタンプと比較します。 一対一の対応関係が存在しない出力ファイルは、すべての入力ファイルと比較されます。 項目が最新の状態であると見なされるのは、その出力ファイルが入力ファイルと同じタイム スタンプであるかそれよりも新しい場合です。
+
+> [!NOTE]
+> MSBuild によって入力ファイルが評価されるときは、現在の実行のリストの内容だけが考慮されます。 前回のビルドからリストが変更されても、ターゲットが自動的に古くなることはありません。
 
 すべての出力項目が最新の状態である場合、MSBuild はターゲットをスキップします。 このターゲットの*インクリメンタル ビルド*により、ビルド速度が大幅に向上します。 一部のファイルだけが最新の状態である場合、MSBuild は最新の項目をスキップしてターゲットを実行するので、すべての項目が最新の状態になります。 このプロセスは、*部分インクリメンタル ビルド*と呼ばれます。
 
@@ -49,7 +52,7 @@ MSBuild は、ターゲットの `Inputs` 属性と `Outputs` 属性を比較し
 
 - ターゲットに古い出力がなく、ターゲットがスキップされる場合。 MSBuild はターゲットを評価し、ターゲットが実行された場合と同じように項目とプロパティを変更します。
 
-インクリメンタル コンパイルをサポートするために、タスクでは `TaskParameter` 要素の `Output` 属性値がタスク入力パラメーターと等しいことを確認する必要があります。 次にいくつかの例を示します。
+インクリメンタル コンパイルをサポートするために、タスクでは `TaskParameter` 要素の `Output` 属性値がタスク入力パラメーターと等しいことを確認する必要があります。 次に例をいくつか示します。
 
 ```xml
 <CreateProperty Value="123">
@@ -75,5 +78,6 @@ MSBuild 3.5 以前では、[CreateItem](../msbuild/createitem-task.md) タスク
 
 このコードにより、ターゲットが実行された場合にのみ、CompileRan プロパティが作成され、値 `true` が指定されます。 ターゲットがスキップされた場合、CompileRan は作成されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
+
 - [ターゲット](../msbuild/msbuild-targets.md)

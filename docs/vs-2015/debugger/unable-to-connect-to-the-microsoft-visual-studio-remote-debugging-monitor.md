@@ -1,5 +1,5 @@
 ---
-title: Microsoft Visual Studio リモート デバッグ モニターに接続できません |。Microsoft Docs
+title: Microsoft Visual Studio リモートデバッグモニター | に接続できませんMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684830"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477066"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65684830"
 このエラー メッセージは、無効な Visual Studio リモート デバッグ モニターの名前を **[プロセスにアタッチ]** ダイアログ ボックスに入力すると表示されます。 リモート デバッグ モニターの名前は、通常、リモート デバッグを実行するために接続するコンピューターの名前と同じです。 このメッセージは、リモート コンピューターがネットワーク上に存在しない、リモート コンピューター上でリモート デバッグ モニターが適切に設定されていない、またはネットワークの問題またはファイアウォールが存在するためにリモート コンピューターにアクセスできない場合に発生することがあります。  
   
 > [!IMPORTANT]
-> 製品のバグによりこのメッセージが表示されていると思われる場合は、Visual Studio の [[気に入った機能の報告]](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)でこの問題を報告してください。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。  
+> その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>ローカルでのデバッグ中にこのメッセージが表示される  
  ローカルでのデバッグ中にこのメッセージが表示される場合、ウイルス対策ソフトウェアまたはサード パーティ製のファイアウォールに原因がある可能性があります。 Visual Studio は 32 ビット アプリケーションであるため、リモート デバッガーの 64 ビット バージョンを使用して 64 ビット アプリケーションをデバッグします。 2 つのプロセスは、ローカル コンピューター内のローカル ネットワークを使用して通信します。 コンピューターからネットワーク トラフィックが送信されることはありませんが、サード パーティのセキュリティ ソフトウェアが通信を妨げる可能性があります。  
@@ -38,7 +38,7 @@ ms.locfileid: "65684830"
   
 ## <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- Visual Studio リモート デバッグ モニターがリモート コンピューターにインストールされ、実行されていることを確認します。 リモート デバッガーおよびそのインストール方法については、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。  
+- Visual Studio リモート デバッグ モニターがリモート コンピューターにインストールされ、実行されていることを確認します。 リモートデバッガーとそのインストール方法の詳細については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。  
   
 - Visual Studio で、プロジェクトのプロパティ (**プロジェクト/プロパティ/デバッグ**) を確認します。 **[リモート サーバー名]** が正しいことを確認します。  
   
@@ -48,9 +48,10 @@ ms.locfileid: "65684830"
  リモート コンピューターに [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) してみてください。 ping に応答しない場合は、リモート ツールも接続できません。 リモート コンピューターを再起動するか、またはネットワークでリモート コンピューターが正しく構成されていることを確認してください。  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>リモート デバッガーのバージョンが Visual Studio のバージョンと一致していない  
- ローカルで実行している Visual Studio のバージョンは、リモート コンピューターで実行されているリモート デバッグ モニターのバージョンと一致している必要があります。 これを解決するには、リモート デバッグ モニターの一致するバージョンをダウンロードして、インストールします。 [ダウンロード センター](http://www.microsoft.com/download) に移動して、適切なバージョンのリモート デバッガーを検索します。  
-  
+ ローカルで実行している Visual Studio のバージョンは、リモート コンピューターで実行されているリモート デバッグ モニターのバージョンと一致している必要があります。 これを解決するには、リモート デバッグ モニターの一致するバージョンをダウンロードして、インストールします。 Visual [studio サブスクリプション](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)にアクセスして、使用している visual studio のバージョンに対応する適切なバージョンのリモートデバッガーを検索します。
+
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>ローカル コンピューターとリモート コンピューターの認証モードが異なる  
+
  ローカル コンピューターとリモート コンピューターで、同じ認証モードを使用する必要があります。 これを解決するには、両方のマシンで同じ認証モードを使用するようにします。 リモート デバッガーの **[ツール] / [オプション]** ダイアログで、認証モードを変更することができます。  
   
  認証モードの詳細については、「 [Windows 認証の概要](https://technet.microsoft.com/library/hh831472.aspx)」を参照してください。  
@@ -83,5 +84,5 @@ ms.locfileid: "65684830"
   
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
-## <a name="see-also"></a>関連項目  
- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>参照  
+ [リモート デバッグ](../debugger/remote-debugging.md)

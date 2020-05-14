@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft Docs
+title: を次の 2::列挙エラーブレークポイント |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints method
 - EnumErrorBreakpoints method
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba93cf1e254f428261c2eaf2e144ad5dff4780ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333732"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725851"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
-この保留中のブレークポイントの結果として生じたすべてのブレークポイントのエラーの一覧を取得します。
+この保留中のブレークポイントから発生したすべてのエラー ブレークポイントの一覧を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,16 +44,16 @@ int EnumErrorBreakpoints( 
 
 ## <a name="parameters"></a>パラメーター
 `bpErrorType`\
-[in]値の組み合わせ、 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)列挙体を列挙するエラーの種類を選択します。
+[in]列挙するエラーの種類を選択する[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)列挙体の値の組み合わせ。
 
 `ppEnum`\
-[out]返します、 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)オブジェクトの一覧を含む[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)オブジェクト。
+[アウト]オブジェクトの一覧[を](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)含むオブジェクト[を](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`ブレークポイントが削除されている場合。
+ 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 ブレークポイント`E_BP_DELETED`が削除されたかどうかを返します。
 
 ## <a name="example"></a>例
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CPendingBreakpoint`を公開するオブジェクト、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス。
+ 次の例は[、IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス`CPendingBreakpoint`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299316"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850989"
 ---
 # <a name="creating-your-own-start-page"></a>ユーザー独自のスタート ページの作成
 スタート ページのプロジェクト テンプレートを使用するか、または空白のスタート ページを作成することで、カスタム スタート ページを作成できます。  
@@ -28,7 +28,7 @@ ms.locfileid: "74299316"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>スタート ページのプロジェクト テンプレートを使用してカスタム スタート ページを作成するには  
   
-1. Visual Studio ギャラリーから [スタート ページのプロジェクト テンプレート](https://go.microsoft.com/fwlink/?LinkId=186204) をダウンロードしてインストールします。  
+1. Visual Studio ギャラリーから [スタート ページのプロジェクト テンプレート](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) をダウンロードしてインストールします。  
   
     > [!WARNING]
     > この時点では、Visual Studio 2010 のスタート ページのプロジェクト テンプレートはアップグレードされていません。 このテンプレートをアップグレードする方法の詳細については、「[方法: Visual Studio のカスタムスタートページをアップグレード](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)する」を参照してください。  
@@ -99,6 +99,6 @@ ms.locfileid: "74299316"
   
    カスタムスタートページを共有するには、bin\debug ディレクトリから[Visual Studio Marketplace](https://marketplace.visualstudio.com/) web サイト、または別の web サイトまたはイントラネット共有に .vsix ファイルをアップロードします。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [スタートページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)   
  [チュートリアル: カスタム XAML をスタート ページに追加する](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

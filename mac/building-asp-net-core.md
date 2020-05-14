@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717276"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "75398278"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Visual Studio for Mac での ASP.NET Core アプリケーションのビルド
 
@@ -39,11 +39,11 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
 2. **[ファイル]、[新しいソリューション]** の順に選択します。
 
-3. **[.NET Core] > [アプリ]** カテゴリを選択し、**[ASP.NET Core Web アプリ (C#)]** テンプレートを選択します。 **[次へ]** をクリックします。
+3. **[.NET Core] > [アプリ]** カテゴリを選択し、 **[ASP.NET Core Web アプリ (C#)]** テンプレートを選択します。 **[次へ]** をクリックします。
 
     ![](media/netcore-image1.png)
 
-4. **"CoreLab"** の名前を入力し、**[作成]** を選択してプロジェクトを作成します。 完了までに少し時間がかかります。
+4. **"CoreLab"** の名前を入力し、 **[作成]** を選択してプロジェクトを作成します。 完了までに少し時間がかかります。
 
     ![](media/netcore-image2.png)
 
@@ -57,11 +57,11 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** クラスでは (規則により)、**/Home** で始まるすべての着信要求が処理されます。 **Index** メソッドでは、ディレクトリのルート (`http://site.com/Home` など) への要求が処理されます。その他のメソッドでは、規則に基づいて名前付きのパスへの要求が処理されます (`http://site.com/Home/About` への要求を処理する **About()** など)。 もちろん、これらはすべて構成可能です。 1 つの重要点として、**HomeController** は新しいプロジェクトの既定のコントローラーであるため、サイトのルート (`http://site.com`) への要求は、`http://site.com/Home` または `http://site.com/Home/Index` への要求と同様に、**HomeController** の **Index()** への要求を経由します。
+3. **HomeController** クラスでは (規則により)、 **/Home** で始まるすべての着信要求が処理されます。 **Index** メソッドでは、ディレクトリのルート (`http://site.com/Home` など) への要求が処理されます。その他のメソッドでは、規則に基づいて名前付きのパスへの要求が処理されます (`http://site.com/Home/About` への要求を処理する **About()** など)。 もちろん、これらはすべて構成可能です。 1 つの重要点として、**HomeController** は新しいプロジェクトの既定のコントローラーであるため、サイトのルート (`http://site.com`) への要求は、`http://site.com/Home` または `http://site.com/Home/Index` への要求と同様に、**HomeController** の **Index()** への要求を経由します。
 
     ![](media/netcore-image5.png)
 
-4. プロジェクトには **Views** フォルダーもあり、ここには各コントローラーにマップされるその他のフォルダー (および **Shared** ビューのフォルダー) が含まれます。 たとえば、**/Home/About** パスのビュー CSHTML ファイル (HTML を拡張したもの) は、**Views/Home/About.cshtml** にあります。 そのファイルを開きます。
+4. プロジェクトには **Views** フォルダーもあり、ここには各コントローラーにマップされるその他のフォルダー (および **Shared** ビューのフォルダー) が含まれます。 たとえば、 **/Home/About** パスのビュー CSHTML ファイル (HTML を拡張したもの) は、**Views/Home/About.cshtml** にあります。 そのファイルを開きます。
 
     ![](media/netcore-image6.png)
 
@@ -73,9 +73,9 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![](media/netcore-image8.png)
 
-7. また、プロジェクトとそのパッケージ、およびアプリケーションを実行時に管理するために機能するさまざまな構成ファイルがあります。 たとえば、既定のアプリケーション[構成](/aspnet/core/fundamentals/configuration)は **appsettings.json** に格納されます。 ただし、**開発**環境用の **appsettings.Development.json** ファイルを提供するなどして、環境ごとにこれらの設定の一部/すべてをオーバーライドすることができます。
+7. また、プロジェクトとそのパッケージ、およびアプリケーションを実行時に管理するために機能するさまざまな構成ファイルがあります。 たとえば、既定のアプリケーション[構成](/aspnet/core/fundamentals/configuration)は **appsettings.json** に格納されます。 appsettings.json ファイルの下に入れ子になっているのは、**appsettings.Development.json** ファイルです。 ここでは、環境ごとにこれらの設定の一部/すべてをオーバーライドすることができます。 Visual Studio for Mac では、Windows 用 Visual Studio と同じロジックを使用したこの方法でファイルが入れ子になります。そのため、より頻繁にアクセスする必要があるファイルは一番前になります。 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>タスク 3:アプリケーションをホストする方法の理解
 
@@ -113,19 +113,19 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
 ## <a name="task-4-running-and-debugging-the-application"></a>タスク 4: アプリケーションの実行とデバッグ
 
-1. **ソリューション エクスプローラー**で、**CoreLab** プロジェクトのノードを右クリックし、**[オプション]** を選択します。
+1. **ソリューション エクスプローラー**で、**CoreLab** プロジェクトのノードを右クリックし、 **[オプション]** を選択します。
 
     ![](media/netcore-image18.png)
 
-2. **[プロジェクト オプション]** ダイアログには、アプリケーションをビルドして実行する方法を調整するのに必要なすべての項目が含まれます。 左側のパネルで、**[実行] > [構成] > [既定値]** を選択します。
+2. **[プロジェクト オプション]** ダイアログには、アプリケーションをビルドして実行する方法を調整するのに必要なすべての項目が含まれます。 左側のパネルで、 **[実行] > [構成] > [既定値]** を選択します。
 
-3. **[外部コンソールで実行する]** をオンにし、**[コンソール出力を一時停止する]** をオフにします。 通常、自己ホスト型アプリケーションではそのコンソールは表示されませんが、代わりにその結果が **[出力]** パッドにログ記録されます。 このラボの目的のため、別のウィンドウにも表示します。これは、通常の開発時に実行する必要はありません。
+3. **[外部コンソールで実行する]** をオンにし、 **[コンソール出力を一時停止する]** をオフにします。 通常、自己ホスト型アプリケーションではそのコンソールは表示されませんが、代わりにその結果が **[出力]** パッドにログ記録されます。 このラボの目的のため、別のウィンドウにも表示します。これは、通常の開発時に実行する必要はありません。
 
 4. **[OK]** をクリックします。
 
     ![](media/netcore-image19.png)
 
-5. **F5** キーを押してアプリケーションをビルドし、実行します。 または、**[実行] > [デバッグの開始]** を選択します。
+5. **F5** キーを押してアプリケーションをビルドし、実行します。 または、 **[実行] > [デバッグの開始]** を選択します。
 
 6. Visual Studio for Mac で、2 つのウィンドウが起動します。 1 つ目は、自己ホスト型サーバー アプリケーションのビューを提供するコンソール ウィンドウです。
 
@@ -165,7 +165,7 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![](media/netcore-image27.png)
 
-17. ブラウザー ウィンドウに戻り、更新されたテキストを表示します  この変更は、いつでも行うことができ、デバッガー ブレークポイントを必要とするとは限りません。 変更すぐに反映されない場合は、ブラウザーを更新してください。
+17. ブラウザー ウィンドウに戻り、更新されたテキストを表示します この変更は、いつでも行うことができ、デバッガー ブレークポイントを必要とするとは限りません。 変更すぐに反映されない場合は、ブラウザーを更新してください。
 
     ![](media/netcore-image28.png)
 
@@ -217,9 +217,9 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
 4. ブラウザーを使用して、ヘッダーが追加されたことを確認できます。 次の手順は Safari の場合ですが、[Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) または [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console) でも同様の処理を行えます。
 
-5. ブラウザーにサイトが読み込まれたら、**[Safari] > [環境設定]** を選択します。
+5. ブラウザーにサイトが読み込まれたら、 **[Safari] > [環境設定]** を選択します。
 
-6. **[詳細]** タブで、**[メニューバーに "開発" メニューを表示]** をオンにし、ダイアログを閉じます。
+6. **[詳細]** タブで、 **[メニューバーに "開発" メニューを表示]** をオンにし、ダイアログを閉じます。
 
     ![](media/netcore-image37.png)
 

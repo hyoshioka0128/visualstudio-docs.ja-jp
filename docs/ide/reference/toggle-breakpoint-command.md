@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ToggleBreakPoint command
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8294c25bcf3b62f9d6480e170d4693a9be85079
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5d393890e6166b4a4ef53c9520a556e9a9edd64d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748577"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75597322"
 ---
 # <a name="toggle-breakpoint-command"></a>ToggleBreakpoint コマンド
 ファイル内の現在位置で、現在の状態に基づいてブレークポイントのオン/オフを切り替えます。
@@ -42,9 +42,9 @@ Debug.ToggleBreakpoint [text]
 >Debug.ToggleBreakpoint
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

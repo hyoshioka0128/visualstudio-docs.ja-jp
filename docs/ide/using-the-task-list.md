@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647311"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75594228"
 ---
 # <a name="use-the-task-list"></a>タスク一覧の使用
 
@@ -32,7 +32,7 @@ ms.locfileid: "72647311"
 
 **[タスク一覧]** が開き、アプリケーション ウィンドウの下部に表示されます。
 
-**[タスク一覧]** を開くには、 **[表示]**  >  **[タスク一覧]** を選ぶか、**Ctrl** + **\\** 、**T** キーを順に押します。
+**[タスク一覧]** を開くには、 **[表示]**  >  **[タスク一覧]** を選ぶか、**Ctrl**+ **\\** 、**T** キーを順に押します。
 
 ![タスク一覧ウィンドウ](../ide/media/vs2015_task_list.png)
 
@@ -42,7 +42,7 @@ ms.locfileid: "72647311"
 
 列の順序を変更するには、列のヘッダーを目的の場所にドラッグします。
 
-## <a name="user-tasks"></a>ユーザー タスク
+## <a name="user-tasks"></a>ユーザーの作業
 
 Visual Studio 2015 では、ユーザー タスク機能が削除されています。 Visual Studio 2013 以前のバージョンからのユーザー タスク データを含むソリューションを開くと、 *.suo* ファイル内のユーザー タスク データは影響を受けませんが、ユーザー タスクはタスク一覧に表示されません。
 
@@ -73,7 +73,7 @@ Visual Studio 2015 では、ユーザー タスク機能が削除されていま
 
 カスタム トークンを作成するには:
 
-1. **[ツール]** メニューの **[オプション]** をクリックします。
+1. **[ツール]** メニューの **[オプション]** を選択します。
 
 2. **[環境]** フォルダーを開き、 **[タスク一覧]** をクリックします。
 
@@ -108,7 +108,7 @@ C++ の TODO コメントをオフにするには、 **[ツール]** メニュ�
 
 コード内のショートカットをナビゲートしていくには、一覧でショートカットを選択し、ショートカット メニューから **[次のタスク]** か **[前のタスク]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [[タスク一覧] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/task-list-environment-options-dialog-box.md)
 - [タスク コメント (Visual Studio for Mac)](/visualstudio/mac/task-comments)

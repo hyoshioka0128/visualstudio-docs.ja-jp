@@ -1,6 +1,6 @@
 ---
 title: サポートされてC++いるコード変更 () |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -20,20 +20,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729558"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629587"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C++)
 プロジェクトのC++エディットコンティニュは、ほとんどの種類のコード変更を処理します。 ただし、一部の変更はプログラムの実行中に適用できません。 これらの変更を適用するには、プログラムの実行を中断し、新しいバージョンのコードをビルドする必要があります。
 
  Visual Studio でのC++エディットコンティニュの操作の詳細については、「エディットコンティニュ」 [(C++)](../debugger/edit-and-continue-visual-cpp.md)を参照してください。
 
+## <a name="BKMK_Requirements"></a> 必要条件
+### <a name="build-settings-project--properties"></a>ビルドの設定 (プロジェクト > のプロパティ):
+  1. **C/C++ > 全般 > デバッグ情報の形式**: エディットコンティニュ用のプログラムデータベース (`/ZI`)
+  2. **C/C++ > コード生成 > 最小リビルドを有効にする**: はい (`/Gm`)
+  3. **リンカー > 全般 > インクリメンタルリンクを有効にする**: はい (`/INCREMENTAL`)
+
+     互換性のないリンカー設定 (`/SAFESEH`、`/OPT:`... など) があると、ビルド中に警告_LNK4075_が発生します。  
+     例: `LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
+
+### <a name="debugger-settings-debug--options--general"></a>デバッガーの設定 (デバッグ > オプション > 全般):
+  - ネイティブのエディット コンティニュを有効にする
+
+     互換性のないコンパイラまたはリンカー設定があると、エディットコンティニュ中にエラーが発生します。  
+     例: `Edit and Continue : error  : ‘file.cpp’ in ‘MyApp.exe’ was not compiled with Edit and Continue enabled. Ensure that the file is compiled with the Program Database for Edit and Continue (/ZI) option.`
+
 ## <a name="BKMK_Unsupported_changes"></a> サポートされていない変更
- デバッグ セッション中に適用できない C/C++ の変更は、次のとおりです。
+ デバッグセッション中にC++ 、次の C/変更を適用することはできません。 これらの変更のいずれかを行ってからコード変更を適用しようとすると、 **[出力]** ウィンドウにエラーメッセージまたは警告メッセージが表示されます。
 
 - グローバル データまたは静的データに対するほとんどの変更
 
@@ -57,7 +72,9 @@ ms.locfileid: "72729558"
 
 - オブジェクト ファイルのないコードに対する変更
 
-  上のいずれかの変更を行った後にコード変更の適用を試みると、 **[出力]** ウィンドウにエラー メッセージまたは警告メッセージが表示されます。
+* ラムダの変更:
+  - 静的メンバーまたはグローバルメンバーがあること。
+  - は std:: 関数に渡されます。 これにより、正規の ODR 違反が発生し、C1092 が生成されます。
 
 - エディット コンティニュでは、スタティック ライブラリは更新されません。 スタティック ライブラリに変更を加えた場合、変更前のスタティック ライブラリで実行が継続され、警告は表示されません。
 
@@ -67,6 +84,8 @@ ms.locfileid: "72729558"
 - [(強化に最適化されたデータのデバッグ)/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)でコンパイルしたネイティブ アプリのデバッグ
 
 - Visual Studio 2015 Update 1 より前の Visual Studio のバージョンでは、UWP アプリまたはコンポーネントをデバッグしています。 Visual Studio 2015 Update 1 以降では、UWP C++アプリと DirectX アプリでエディットコンティニュを使用できるようになりました。これは、`/bigobj` スイッチで `/ZI` コンパイラスイッチがサポートされるようになったためです。 `/FASTLINK` スイッチがサポートされているので、エディット コンティニュを使用できます。
+
+- 8/8.1 ストアアプリのデバッグ。 これらのプロジェクトでは、VC 120 ツールセットとC++ C/`/bigobj` スイッチを使用します。 `/bigobj` のエディットコンティニュは、VC 140 ツールセットでのみサポートされています。
 
 - Windows 98 でのデバッグ
 
@@ -86,22 +105,22 @@ ms.locfileid: "72729558"
 
 - ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ
 
+- カスタムコンパイラ (*cl.exe*) パスを使用する。 セキュリティ上の理由から、エディットコンティニュ中のファイルの再コンパイルでは、Visual Studio は常に、インストールされているコンパイラを使用します。 カスタムコンパイラパス (たとえば、`*.props` ファイル内のカスタム `$(ExecutablePath)` 変数) を使用している場合は、警告が表示され、Visual Studio は同じバージョン/アーキテクチャのインストール済みコンパイラを使用するようにフォールバックします。
+
+- FASTBuild ビルドシステム。 FASTBuild は、現在、"最小リビルド (`/Gm`)" コンパイラスイッチと互換性がないため、エディットコンティニュはサポートされません。
+
+- レガシアーキテクチャ/VC ツールセット。 VC 140 ツールセットでは、既定のデバッガーは、X86 と X64 の両方のアプリケーションでエディットコンティニュをサポートします。 レガシツールセットは、X86 アプリケーションのみをサポートしています。 VC 120 より古いツールセットでは、エディットコンティニュを使用するには、[_デバッグ > オプション >_ ネイティブ互換モードを使用 >] チェックボックスをオンにして、レガシデバッガーを使用する必要があります。
+
 ## <a name="BKMK_Linking_limitations"></a> リンクに関する制限事項
 
 ### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> エディット コンティニュを無効にするリンカー オプション
  次のリンカー オプションを使用すると、エディット コンティニュが無効になります。
 
-- **/OPT:REF**、 **/OPT:ICF**、または **/INCREMENTAL:NO** を設定すると、次の警告が表示されてエディット コンティニュが無効になります。
+- **/OPT:REF**、 **/OPT:ICF**、または **/INCREMENTAL:NO** を設定すると、次の警告が表示されてエディット コンティニュが無効になります。  
+     `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-     リンク : 警告 LNK4075:/OPT が指定されているため /EDITANDCONTINUE が無視されます
-
-     specification
-
-- **/ORDER**、 **/RELEASE**、または **/FORCE** を設定すると、次の警告が表示されてエディット コンティニュが無効になります。
-
-     リンク : 警告 LNK4075:/ オプションが指定されているため /INCREMENTAL が無視されます
-
-     specification
+- **/Order**、 **/RELEASE**、または **/force**を設定すると、次の警告でエディットコンティニュが無効になります。  
+     `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - プログラム データベース (.pdb) ファイルの作成を禁止するオプションを設定すると、特定の警告は表示されずにエディット コンティニュが無効になります。
 
@@ -122,7 +141,7 @@ ms.locfileid: "72729558"
 
 3. **[デバッグ後にコードの変更点を再リンクする]** チェック ボックスをオフにします。
 
-## <a name="BKMK_Precompiled_Header_Limitations"></a> プリコンパイル済みヘッダーに関する制限事項
+## <a name="BKMK_Precompiled_header_limitations"></a>プリコンパイル済みヘッダーの制限事項
  既定では、エディット コンティニュがプリコンパイル済みヘッダーをバックグラウンドで読み込みおよび処理して、コード変更の処理を高速化します。 プリコンパイル済みヘッダーを読み込むには、物理メモリを割り当てる必要があります。このため、RAM が不足しているコンピューターでコンパイルする場合、問題が発生する可能性があります。 デバッグ時に Windows タスク マネージャーを使って使用できる物理メモリの量を確認することにより、メモリの量が問題になるかどうかを調べることができます。 使用できる物理メモリの量がプリコンパイル済みヘッダーのサイズを超える場合、エディット コンティニュに問題は生じません。 この量がプリコンパイル済みヘッダーのサイズより小さい場合は、エディット コンティニュがプリコンパイル済みヘッダーをバックグラウンドで読み込まないようにできます。
 
  **エディット コンティニュがプリコンパイル済みヘッダーをバックグラウンドで読み込まないようにするには**
@@ -133,8 +152,16 @@ ms.locfileid: "72729558"
 
 3. **[プリコンパイルを許可する]** チェック ボックスをオフにします。
 
-## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 属性に関する制限事項
+## <a name="BKMK_IDL_attribute_limitations"></a>IDL 属性の制限事項
  エディット コンティニュでは、インターフェイス定義 (IDL) ファイルは再生成されません。 このため、デバッグ時に IDL 属性への変更は反映されません。 IDL 属性の変更結果を表示するには、デバッグを停止し、アプリをリビルドする必要があります。 エディット コンティニュでは、IDL 属性が変更されているとエラーや警告は生成されません。 詳細については、「 [IDL 属性](/cpp/windows/idl-attributes)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="BKMK_Diagnosing_issues"></a>問題の診断
+ 上記の条件のいずれにも該当しない場合は、次の DWORD レジストリ値を設定して詳細を収集できます。
+ 1. 開発者コマンドプロンプトを開きます。
+ 2. 次のコマンドを実行します。  
+     `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+
+ デバッグセッションの開始時にこの値を設定すると、エディットコンティニュのさまざまなコンポーネントが**出力ウィンドウ** > **デバッグ** ウィンドウに詳細ログを spew ます。
+
+## <a name="see-also"></a>参照
 - [エディットコンティニュ (C++)](../debugger/edit-and-continue-visual-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2 |Microsoft Docs
+title: プログラム2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 221ab8fd00bc7d98745fdd5cc03dd72b9919b4b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345137"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730299"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
-このインターフェイスは、マルチ スレッド デバッグのサポートを提供します。
+このインターフェイスは、マルチスレッド デバッグのサポートを提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,30 +28,30 @@ ms.locfileid: "66345137"
 IDebugEngineProgram2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジンでは、複数のスレッドの同時デバッグをサポートするには、このインターフェイスを実装します。 このインターフェイスの実装を実装するオブジェクトと同じで、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジンは、複数のスレッドの同時デバッグをサポートするために、このインターフェイスを実装します。 このインターフェイスは[、IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスを実装する同じオブジェクトに実装されます。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 使用[QueryInterface](/cpp/atl/queryinterface)からこのインターフェイスを取得する、`IDebugProgram2`インターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ インターフェイスからこのインターフェイスを取得するのには[、クエリ インターフェイス](/cpp/atl/queryinterface)を`IDebugProgram2`使用します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugEngineProgram2`します。
+ 次の表に`IDebugEngineProgram2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|このプログラムで実行されているすべてのスレッドを停止します。|
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|実行 (または実行の監視の停止) を監視する特定のスレッドで発生します。|
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|プログラムが停止された場合でも、特定のスレッドで発生する式の評価を許可 (または許可されていません)。|
+|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|このプログラムで実行中のすべてのスレッドを停止します。|
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|指定されたスレッドで実行を監視 (または実行の監視を停止) します。|
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|プログラムが停止している場合でも、指定されたスレッドで式の評価を行うことを許可します (または、許可しません)。|
 
 ## <a name="remarks"></a>Remarks
- Visual Studio はこのインターフェイスへの応答を呼び出し、 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)イベントと、プログラムの「ウォッチのスレッドのステップ」と「ウォッチの式の評価でスレッド」の状態を設定します。 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)たびに呼び出されますが、プログラムが停止する。 このメソッドは、プログラムのすべてのスレッドを終了する機会を与えます。
+ Visual Studio は[、IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)イベントに応答して、プログラムの "スレッド ステップの監視" および "スレッドの式評価を監視" 状態を設定するために、このインターフェイスを呼び出します。 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)は、プログラムを停止する場合には常に呼び出されます。このメソッドは、プログラムにすべてのスレッドを終了する機会を与えます。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

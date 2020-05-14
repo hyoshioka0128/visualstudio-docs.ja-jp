@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91ac811c1f55fdb9a662db679ebd2d038ecdd5dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653449"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75588981"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>方法: ロード テストのアクティブな実行設定を選択する
 
-**新しいロード テスト** ウィザードでロード テストを作成した後で、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。
+**新しいロード テスト ウィザード**でロード テストを作成した後で、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "72653449"
 
 **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)
 - [ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

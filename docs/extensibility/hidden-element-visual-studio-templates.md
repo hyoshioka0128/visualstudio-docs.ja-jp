@@ -1,5 +1,5 @@
 ---
-title: 要素 (Visual Studio テンプレート) を非表示 |Microsoft Docs
+title: 非表示要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341038"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711112"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden 要素 (Visual Studio テンプレート)
+# <a name="hidden-element-visual-studio-templates"></a>非表示の要素 (Visual Studio テンプレート)
 
-いずれかで表示されるテンプレートが、新しいプロジェクトを使用するかどうかを指定または**新しい項目の追加** ダイアログ ボックス。
+テンプレートを新しいプロジェクトまたは [**新しい項目の追加**] ダイアログ ボックスに表示するかどうかを指定します。
 
 ```xml
 <VSTemplate>
@@ -43,11 +43,11 @@ ms.locfileid: "66341038"
 
 ### <a name="attributes"></a>属性
 
-なし。
+[なし] :
 
 ### <a name="child-elements"></a>子要素
 
-なし。
+[なし] :
 
 ### <a name="parent-elements"></a>親要素
 
@@ -59,17 +59,17 @@ ms.locfileid: "66341038"
 
 テキスト値が必要です。
 
-テキストがいずれかにする必要があります`true`または`false`かを示すにテンプレートが表示されるかどうか、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。
+テキストは、 または`true``false`のいずれかで、テンプレートが **[新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目の追加**] ダイアログ ボックスに表示されるかどうかを示す必要があります。
 
 ## <a name="remarks"></a>Remarks
 
-`Hidden` は、省略可能な要素です。
+`Hidden` は省略可能な要素です。
 
-他の子要素を指定しなかった場合、`TemplateData`要素が必要です。
+指定した場合、要素の`TemplateData`他の子要素は必要ありません。
 
 ## <a name="example"></a>例
 
-次の例では、メタデータをC#テンプレート。
+C# テンプレートのメタデータの例を次に示します。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ ms.locfileid: "66341038"
 
 ## <a name="see-also"></a>関連項目
 
-- [テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [テンプレート スキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

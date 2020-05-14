@@ -1,6 +1,6 @@
 ---
 title: ASP.NET Docker コンテナーを ACR レジストリにデプロイする
-description: Visual Studio コンテナー ツールを使用し、ASP.NET Core Web アプリをコンテナー レジストリにデプロイする方法を説明します
+description: Visual Studio コンテナー ツールを使用し、ASP.NET または ASP.NET Core Web アプリをコンテナー レジストリにデプロイする方法を説明します
 author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: b3b012bfe3b9fc359a8c9688c52aa5bfc27fd2c7
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: cfed918633f62700f464ee5f9911fbbfc6463c36
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126143"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75916911"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Visual Studio を使用して ASP.NET Docker コンテナーをコンテナー レジストリにデプロイする
 
@@ -38,7 +38,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 * [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) をインストールする
 
 ## <a name="create-an-aspnet-core-web-app"></a>ASP.NET Core Web アプリを作成する
-次の手順では、このチュートリアルで使用する基本的な ASP.NET Core アプリの作成について説明します。
+次の手順では、このチュートリアルで使用する基本的な ASP.NET Core アプリの作成について説明します。 既にプロジェクトがある場合は、このセクションを省略できます。
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -58,7 +58,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
     | **DNS プレフィックス** | グローバルに一意の名前 | コンテナー レジストリを一意に識別する名前。 |
     | **サブスクリプション** | サブスクリプションの選択 | 使用する Azure サブスクリプション。 |
     | **[リソース グループ](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  コンテナー レジストリを作成するリソース グループの名前。 新しいリソース グループを作成する場合は、 **[新規]** を選択します。|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 標準 | コンテナー レジストリのサービス層  |
     | **レジストリの場所** | 近くの場所 | [[地域]](https://azure.microsoft.com/regions/) で、自分に近いか、またはコンテナー レジストリを使用する他のサービスに近い場所を選択します。 |
 
     ![Visual Studio の Azure コンテナー レジストリを作成するダイアログ](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -66,3 +66,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 5. **[作成]**
 
 これでレジストリからコンテナーを、[Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app) などの Docker イメージを実行できるホストにプルできるようになりました。
+
+## <a name="see-also"></a>関連項目
+
+[クイック スタート:Azure CLI を使用して Azure にコンテナー インスタンスをデプロイする](/azure/container-instances/container-instances-quickstart)

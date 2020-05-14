@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8c17a1ce7b2bf775933be6e9bea3dd299d9fe717
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665433"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75565410"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web パフォーマンス テストへのデータ ソースの追加
 
@@ -128,7 +128,7 @@ ms.locfileid: "72665433"
 
      ![ColorName フィールドを RadioButtonList1 値にバインドする](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. **ソリューション エクスプローラー**で *Local.testsettings* ファイルを開き、 **[データ ソース行ごとに 1 つ実行]** をクリックします。
+2. *ソリューション エクスプローラー*で **Local.testsettings** ファイルを開き、 **[データ ソース行ごとに 1 つ実行]** をクリックします。
 
      ![テスト設定ファイルを編集します。](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -156,7 +156,7 @@ ms.locfileid: "72665433"
 
 ## <a name="q--a"></a>Q & A
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q:データ ソースとして使用できるのはどのようなデータベースですか。
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: データ ソースとして使用できるのはどのようなデータベースですか。
 
 **A:** 次のデータベースを使用できます。
 
@@ -172,9 +172,9 @@ ms.locfileid: "72665433"
 
 - Oracle 7.3、8i、9i、10g
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Q:コンマ区切り値 (CSV) テキスト ファイルをデータ ソースとして使用するにはどうすればよいですか。
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Q: コンマ区切り値 (CSV) テキスト ファイルをデータ ソースとして使用するにはどうすればよいですか。
 
-**A:** 次の手順に従います。
+**A:** 次の手順を実行します。
 
 1. プロジェクトのデータベース成果物を整理するフォルダーを作成し、項目を追加します。
 
@@ -196,7 +196,7 @@ ms.locfileid: "72665433"
 
      ![名前を入力して CSV ファイルを選択する](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q:既存の CSV ファイルに列見出しが含まれていない場合は、どうすればよいですか。
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q: 既存の CSV ファイルに列見出しが含まれていない場合は、どうすればよいですか。
 
 **A:** 列見出しを追加できない場合は、スキーマ記述ファイルを使用して CSV ファイルをデータベースとして扱うことができます。
 
@@ -247,7 +247,7 @@ ms.locfileid: "72665433"
 
      ![テストに追加されたデータ ソース](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q:XML ファイルをデータ ソースとして使うにはどうすればよいですか。
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML ファイルをデータ ソースとして使うにはどうすればよいですか。
 
 **A:** はい。
 
@@ -279,7 +279,7 @@ ms.locfileid: "72665433"
 
      ![名前を入力して XML ファイルを選択する](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q:SOAP を使用する Web サービス要求にデータ バインディングを追加できますか。
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP を使用する Web サービス要求にデータ バインディングを追加できますか。
 
 **A:** はい。ただし SOAP XML を手動で変更する必要があります。
 

@@ -13,26 +13,26 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07645597846bd85f3152da866a253b079bc3963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666339"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431476"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>[オプション]、[テキスト エディター]、[基本] (Visual Basic)、[詳細]
 **[オプション]** ( **[ツール]** メニュー) ダイアログ ボックスの **[テキスト エディター]** フォルダーにある **[Basic]** フォルダーの **[VB 固有]** プロパティ ページでは、次のプロパティを指定します。
 
 ## <a name="analysis"></a>分析
 
-- 完全ソリューション解析を有効にする
+- ライブ コード分析またはバックグラウンド分析スコープ
 
-   開いているコード ファイルだけでなく、ソリューションのすべてのファイルでコード分析を有効にします。 詳細については、[完全ソリューション解析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)に関するページを参照してください。
+   マネージド コードのバックグラウンド分析スコープを構成します。 詳細については、[方法: マネージド コードのライブ コード分析スコープを構成する](../../code-quality/configure-live-code-analysis-scope-managed-code.md)」を参照してください。
 
 ## <a name="using-directives"></a>Using ディレクティブ
 

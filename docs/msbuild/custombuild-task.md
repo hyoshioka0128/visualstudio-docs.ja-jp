@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), CustomBuild task
 - CustomBuild task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 678068d1b6acc055fa65e6d0305b07152ed28695
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748113"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75595346"
 ---
 # <a name="custombuild-task"></a>CustomBuild タスク
 
@@ -32,12 +32,12 @@ Microsoft C++ コンパイラ ツール cmd.exe をラップします。 この�
 
 以下の表では、**CustomBuild** タスクのパラメーターについて説明します。
 
-|パラメーター|説明|
+|パラメーター|[説明]|
 |---------------|-----------------|
 |**BuildSuffix**|省略可能な **string** 型のパラメーターです。|
 |**Sources**|必須の **ITaskItem[]** 型のパラメーターです。|
 |**TrackerLogDirectory**|省略可能な **string** 型のパラメーターです。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

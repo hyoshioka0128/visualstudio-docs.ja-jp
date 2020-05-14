@@ -1,5 +1,5 @@
 ---
-title: DA0001:StringBuilder を使用して連結してください | Microsoft Docs
+title: 'DA0001: StringBuilder を使用して連結してください | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,21 +15,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779507"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001:連結には StringBuilder を使用してください
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder を使用して連結してください
 
 |||
 |-|-|
 |規則 ID|DA0001|
 |カテゴリ|.NET Framework の使用|
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション|
-|メッセージ|文字列の連結に StringBuilder を使用することを検討してください。|
-|メッセージの種類|警告|
+|[メッセージ]|文字列の連結に StringBuilder を使用することを検討してください。|
+|メッセージ型|警告|
 
 ## <a name="cause"></a>原因
  System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。
@@ -42,4 +42,4 @@ ms.locfileid: "74779507"
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  **[エラー一覧]** ウィンドウに表示されたメッセージをダブルクリックして、サンプリング プロファイル データの[関数の詳細ビュー](../profiling/function-details-view.md)に移動します。 文字列連結を最も頻繁に使用するプログラムをセクションを特定します。 頻繁な文字列連結など、複雑な文字列操作には StringBuilder クラスを使用します。
 
- 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](/previous-versions/msp-n-p/ff647790(v=pandp.10))」の「[文字列処理](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)」を参照してください。
+ 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)」の「[文字列処理](/previous-versions/msp-n-p/ff647790(v=pandp.10))」を参照してください。

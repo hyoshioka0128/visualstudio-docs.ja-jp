@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653038"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75591542"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
@@ -85,15 +85,26 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>\<OutputPath> または \<OutDir> に関するエラー メッセージ
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>\<OutputPath>、\<OutDir>、または \<IntermediateOutputPath> を含むエラー メッセージ
 
 **Live Unit Testing がソリューションのビルドを試みると、次のようなエラー メッセージが表示されるのはなぜですか? "...appears to unconditionally set `<OutputPath>` or `<OutDir>`.Live Unit Testing will not execute tests from the output assembly" (... が <OutputPath> または <OutDir> を無条件に設定したようです。Live Unit Testing は出力アセンブリからテストを実行しません)**
 
-このエラーは、ソリューションのビルド プロセスが `<OutputPath>` または `<OutDir>` を無条件にオーバーライドして `<BaseOutputPath>` のサブディレクトリではないようにした場合に、発生する可能性があります。 このような場合、Live Unit Testing もこれらの値をオーバーライドしてビルド成果物が `<BaseOutputPath>` の下のフォルダーにドロップされるため、Live Unit Testing は動作しなくなります。 標準ビルドでビルド成果物が格納される場所をオーバーライドする必要がある場合は、`<BaseOutputPath>` を基にして条件付きで `<OutputPath>` をオーバーライドしてください。
+ソリューションのビルド プロセスに、バイナリの生成先を指定するカスタム ロジックがある場合、このエラーが発生することがあります。 既定のバイナリの場所は、`<OutputPath>`、`<OutDir>`、または `<IntermediateOutputPath>` だけでなく、`<BaseOutputPath>` または `<BaseIntermediateOutputPath>` によって変わります。
 
-たとえば、次のように `<OutputPath>` をオーバーライドするものとします。
+Live Unit Testing を使うと、これらの変数をオーバーライドし、ビルドの成果物が Live Unit Testing の成果物フォルダーに確実にドロップすることができます。また、ビルド プロセスでもこれらの変数がオーバーライドされた場合は失敗します。
 
-```xml 
+Live Unit Testing のビルドを成功させるには、主に 2 つの方法があります。 簡易なビルド構成の場合は、`<BaseIntermediateOutputPath>` に基づいた出力パスにすることができます。 より複雑な構成の場合は、`<LiveUnitTestingBuildRootPath>` に基づいた出力パスにすることができます。
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>`<OutputPath>`/`<IntermediateOutputPath>` のオーバーライドは、条件によっては `<BaseOutputPath>`/ `<BaseIntermediateOutputPath>` に基づいています。
+
+> [!NOTE]
+> この方法を使用するには、各プロジェクトを互いに独立してビルドできる必要があります。 ビルド中に、あるプロジェクトから別のプロジェクトの成果物を参照しないでください。 実行時に、あるプロジェクトで別のプロジェクトのアセンブリを動的に読み込まないでください (たとえば、`Assembly.Loadfile("..\..\Project2\Release\Project2.dll")` を呼び出すなど)。
+
+ビルド中に、Live Unit Testing によって `<BaseOutputPath>`/`<BaseIntermediateOutputPath>` 変数が自動的にオーバーライドされ、Live Unit Testing の成果物フォルダーをターゲットにされます。
+
+たとえば、次のように <OutputPath> をオーバーライドするものとします。
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 これは、次の XML で置き換えることができます。
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 これにより、`<OutputPath>` は `<BaseOutputPath>` フォルダー内に存在するようになります。
 
 ビルド プロセスで `<OutDir>` を直接オーバーライドしないでください。ビルド成果物を特定の場所に格納するには、代わりに `<OutputPath>` をオーバーライドします。
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>`<LiveUnitTestingBuildRootPath>` プロパティに基づいたプロパティのオーバーライド。
+
+> [!NOTE]
+> この方法では、ビルド中に生成されない成果物フォルダー以下に追加されたファイルに注意する必要があります。 以下の例は、成果物以下にパッケージ フォルダーを配置するときの処理を示しています。 このフォルダーの内容はビルド中に生成されないため、MSBuild プロパティを**変更しないでください**。
+
+Live Unit Testing のビルド中に、`<LiveUnitTestingBuildRootPath>` プロパティは Live Unit Testing の成果物フォルダーの場所に設定されます。
+
+たとえば、次のようなプロジェクトの構造だとします。
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Live Unit Testing のビルド中に、`<LiveUnitTestingBuildRootPath>` プロパティは `.vs\...\lut\0\b` の完全パスに設定されます。 ソリューション ディレクトリにマップされる `<ArtifactsRoot>` プロパティがプロジェクトで定義されている場合は、次のように MSBuild プロジェクトを更新できます。
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>ビルド成果物の場所
 
@@ -133,8 +184,6 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 - Live Unit Testing ではテストを実行するための新しいアプリケーション ドメインは作成されませんが、 **[テスト エクスプローラー]** ウィンドウから実行されたテストでは新しいアプリケーション ドメインが作成されます。
 
 - Live Unit Testing では、各テスト アセンブリで順番にテストが実行されます。 **テスト エクスプローラー**で、複数のテストの並列実行を選択できます。
-
-- Live Unit Testing でのテストの探索と実行にはバージョン 2 の `TestPlatform` が使われますが、 **[テスト エクスプローラー]** ウィンドウではバージョン 1 が使われます。 ただし、ほとんどの場合違いはわかりません。
 
 - 既定では、**テスト エクスプローラー**によるテストはシングルスレッド アパートメント (STA) で実行されるのに対し、Live Unit Testing によるテストはマルチスレッド アパートメント (MTA) で実行されます。 Live Unit Testing において MSTest テストを STA で実行するには、テスト メソッドまたはそれを含むクラスを、`MSTest.STAExtensions 1.0.3-beta` NuGet パッケージに含まれる `<STATestMethod>` または `<STATestClass>` 属性で修飾します。 NUnit の場合はテスト メソッドを `<RequiresThread(ApartmentState.STA)>` 属性で修飾し、xUnit の場合は `<STAFact>` 属性で修飾します。
 

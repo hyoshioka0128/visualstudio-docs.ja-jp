@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2 |Microsoft Docs
+title: プログラムホスト2 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2 interface
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7a3222b2fab85657eea1eb0203f8c8da7dd5dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64db456e0c438f8665f122c3cd1b079c2ad1cea1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351218"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722210"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
-このインターフェイスは、プログラムのホスト (プロセス) の情報を提供します。
+このインターフェースは、プログラムに関するホスト (プロセス) 情報を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,27 +28,27 @@ ms.locfileid: "66351218"
 IDebugProgramHost2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- デバッグ エンジンと同じオブジェクトでこのインターフェイスを実装する、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)ホスティング プロセスに関する情報を提供するインターフェイス。 これは、省略可能なインターフェイスです。
+## <a name="notes-for-implementers"></a>実装者向けの注意事項
+ デバッグ エンジンは、ホスト プロセスに関する情報を提供する[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスと同じオブジェクトにこのインターフェイスを実装します。 これはオプションのインターフェイスです。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- 呼び出す[QueryInterface](/cpp/atl/queryinterface)上、`IDebugProgram2`をこのインターフェイスを取得するインターフェイス。
+## <a name="notes-for-callers"></a>発信者向けのメモ
+ この[QueryInterface](/cpp/atl/queryinterface)インターフェイスを取得するには`IDebugProgram2`、インターフェイスでクエリ インターフェイスを呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDebugProgramHost2`します。
+ 次の表に`IDebugProgramHost2`、 のメソッドを示します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|タイトル、フレンドリ名、またはこのプログラムのホスト プロセスのファイル名を取得します。|
-|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|このプログラムのホスト プロセスのプロセス id を取得します。|
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|このプログラムのホスト プロセスが実行されているマシンの名前を取得します。|
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|このプログラムのホスト プロセスのタイトル、フレンドリ名、またはファイル名を取得します。|
+|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|このプログラムのホスト プロセスのプロセス識別子を取得します。|
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|このプログラムのホスト プロセスが実行されているコンピューターの名前を取得します。|
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: を使用します。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ:
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

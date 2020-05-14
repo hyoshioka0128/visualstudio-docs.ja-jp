@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: Visual Studio のテスト ツール
+summary: Visual Studio のテスト ツールを使用することで、チームと共に高水準の優れたコードを開発し、維持できます。
+metadata:
+  title: Visual Studio のテスト ツール
+  description: Visual Studio を使用してコードをテストする方法について説明します。
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 03/23/2020
+  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
+  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/25/2020
+  ms.locfileid: "80256402"
+landingContent:
+- title: テスト ツールについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: テスト ツールの概要
+      url: improve-code-quality.md
+    - text: 単体テスト ツールの概要
+      url: unit-test-your-code.md
+    - text: Live Unit Testing の概要
+      url: live-unit-testing-intro.md
+- title: 単体テスト
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 単体テストの概要
+      url: getting-started-with-unit-testing.md
+    - text: マネージド コードの単体テストを作成し、実行する
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - text: テスト エクスプローラーを使用して単体テストを実行する
+      url: run-unit-tests-with-test-explorer.md
+    - text: Live Unit Testing の概要
+      url: live-unit-testing-start.md
+    - text: 単体テストを生成する (IntelliTest)
+      url: generate-unit-tests-for-your-code-with-intellitest.md
+- title: その他のテスト ツール
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: コード カバレッジ - テストされるコード割合を確認する
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - text: Microsoft Fakes - テスト対象のコードを分離する
+      url: isolating-code-under-test-with-microsoft-fakes.md
+    - text: コード化された UI (非推奨)
+      url: use-ui-automation-to-test-your-code.md
+    - text: ロード テスト (非推奨)
+      url: quickstart-create-a-load-test-project.md
+- title: 関連ツール (Azure DevOps)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 探索的テストと手動テスト (Azure Test Plans)
+      url: /azure/devops/test/overview?view=azure-devops
+    - text: ロード テスト (Azure Test Plans)
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+    - text: 継続的なテスト (Azure Pipelines)
+      url: /azure/devops/pipelines/?view=azure-devops

@@ -3,17 +3,17 @@ title: C++ 用の Google Test を使用する方法
 description: Google Test を使用し、Visual Studio で C++ 単体テストを作成します。
 ms.date: 05/06/2017
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926750"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279297"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Google Test を使用する方法
 
@@ -25,7 +25,7 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Visual Studio 2019 に Google Test プロジェクトを追加する
 
-1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックして、 **[追加]** > **[新しいプロジェクト]** の順に選択します。
 2. **[言語]** を **C++** に設定し、検索ボックスに「**test**」と入力します。 結果の一覧から、 **[Google テスト プロジェクト]** を選択します。
 3. テスト プロジェクトの名前を設定し、 **[OK]** をクリックします。
 
@@ -37,8 +37,8 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Visual Studio 2017 に Google Test プロジェクトを追加する
 
-1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
-2. 左側のウィンドウで **[Visual C++]** 、 **[テスト]** の順に選択し、中央のウィンドウで **[Google Test プロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックして、 **[追加]** > **[新しいプロジェクト]** の順に選択します。
+2. 左側のペインで **[Visual C++]** > **[テスト]** の順に選択し、中央のペインで **[Google Test プロジェクト]** を選択します。
 3. テスト プロジェクトの名前を設定し、 **[OK]** をクリックします。
 
 ![新しい Google テスト プロジェクト](media/cpp-gtest-new-project.png)
@@ -65,8 +65,8 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="write-and-run-tests"></a>テストを作成して実行する
 
-Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 **テスト エクスプローラー**を使ってテストを検出、実行、グループ化する方法については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
+Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 [テスト エクスプローラー](run-unit-tests-with-test-explorer.md)を使ってテストを検出、実行、グループ化する方法については、「**テスト エクスプローラーを使用して単体テストを実行する**」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [C/C++ 用の単体テストの記述](writing-unit-tests-for-c-cpp.md)

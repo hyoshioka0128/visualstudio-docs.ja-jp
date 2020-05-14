@@ -1,5 +1,5 @@
 ---
-title: '方法: 複数のスタートアップ プロジェクトを設定する'
+title: '方法 : 複数のスタートアップ プロジェクトを設定する'
 ms.date: 06/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be2f782d8dcdbf81ca2446a73ac7f13dea4f2ef9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76115144"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>方法: 複数のスタートアップ プロジェクトを設定する
+# <a name="how-to-set-multiple-startup-projects"></a>方法 : 複数のスタートアップ プロジェクトを設定する
 
 Visual Studio では、デバッガーの起動時に複数のプロジェクトをどのように実行するかを指定できます。
 
@@ -32,7 +32,7 @@ Visual Studio では、デバッガーの起動時に複数のプロジェクト
 
 4. **[マルチ スタートアップ プロジェクト]** オプションを選択し、適切なアクションを設定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
 - [ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)

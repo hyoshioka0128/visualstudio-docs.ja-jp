@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666290"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431489"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 
@@ -26,9 +26,9 @@ ms.locfileid: "72666290"
 
 ## <a name="analysis"></a>分析
 
-- 完全ソリューション解析を有効にする
+- ライブ コード分析またはバックグラウンド分析スコープ
 
-   開いているコード ファイルだけでなく、ソリューションのすべてのファイルでコード分析を有効にします。 詳細については、[完全ソリューション解析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)に関するページを参照してください。
+   マネージド コードのバックグラウンド分析スコープを構成します。 詳細については、[方法: マネージド コードのライブ コード分析スコープを構成する](../../code-quality/configure-live-code-analysis-scope-managed-code.md)」を参照してください。
 
 ## <a name="using-directives"></a>Using ディレクティブ
 
@@ -87,7 +87,7 @@ ms.locfileid: "72666290"
    using System.Linq;
    ```
 
-- 参照アセンブリの型に using を提案する
+- .NET Framework アセンブリの型に using を提案する
 - NuGet パッケージの型に using を提案する
 
    これらのオプションを選択した場合、[クイック アクション](../quick-actions.md)を使用して NuGet パッケージをインストールし、参照されていない型の `using` ディレクティブを追加できます。

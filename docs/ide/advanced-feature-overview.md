@@ -2,17 +2,17 @@
 title: 高度な機能
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919111"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78235200"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -40,7 +40,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 Visual Studio には、Microsoft Azure を使用するクラウド ファーストのアプリケーションを簡単に作成できるツールのスイートが用意されています。 これにより、IDE から直接 Microsoft Azure でアプリケーションとサービスを簡単に構成、ビルド、デバッグ、パッケージ化、およびデプロイできます。 Azure Tools およびプロジェクト テンプレートを入手するには、Visual Studio をインストールするときに **Azure 開発**ワークロードを選択します。
 
-![Azure 開発ワークロード](../data-tools/media/azure-development-workload.png)
+![[Azure の開発] ワークロード](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ Visual Studio の [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 
 次のような**接続済みサービス**を使用して、アプリに Azure のサービスを活用することができます。
 
-- ユーザーが [Azure Active Directory](/azure/active-directory/active-directory-whatis) からのアカウントを使用して Web アプリに接続するための [Active Directory 接続済みサービス](/azure/active-directory/develop/vs-active-directory-add-connected-service)
+- ユーザーが [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) からのアカウントを使用して Web アプリに接続するための [Active Directory 接続済みサービス](/azure/active-directory/active-directory-whatis)
 - BLOB ストレージ、キュー、およびテーブル用の [Azure Storage 接続済みサービス](/azure/vs-azure-tools-connected-services-storage)
 - Web アプリのシークレットを管理する [Key Vault 接続済みサービス](/azure/key-vault/vs-key-vault-add-connected-service)
 
@@ -84,7 +84,7 @@ Visual Studio を使用して、macOS、Linux、Windows 用のアプリおよび
 
 - [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) を使用して、C# で 2D および 3D ゲームをビルドします。
 
-- iOS、Android、および Windows デバイス用のネイティブ C++ アプリをビルドします。 [C++ for Cross-Platform Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) を使用することによって、iOS、Android、および Windows 用にビルドされたライブラリ内で共通コードを共有します。
+- iOS、Android、および Windows デバイス用のネイティブ C++ アプリをビルドします。 [C++ for Cross-Platform Development](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development) を使用することによって、iOS、Android、および Windows 用にビルドされたライブラリ内で共通コードを共有します。
 
 - [Android エミュレーター](../cross-platform/visual-studio-emulator-for-android.md)で、Android アプリを展開、テスト、およびデバッグします。
 
@@ -96,7 +96,7 @@ Visual Studio を使用して、macOS、Linux、Windows 用のアプリおよび
 
 Visual Studio の **SQL Server オブジェクト エクスプローラー**では、SQL Server Management Studio と同様のデータベース オブジェクトのビューを提供します。 SQL Server オブジェクト エクスプローラーを使用すると、データベースの簡易的な管理作業および設計作業を行うことができます。 作業の例としては、SQL Server オブジェクト エクスプローラーから直接表示するコンテキスト メニューを使用したクエリの実行、テーブル データの編集、スキーマの比較などが挙げられます。
 
-![SQL Server オブジェクト エクスプローラー](../ide/media/vs2015_sqlobjectexplorer.png)
+![[SQL Server オブジェクト エクスプローラー]](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>デバッグとテストによるコードの改善
 
@@ -136,7 +136,7 @@ Microsoft 開発者や開発コミュニティが作成した Visual Studio の[
 
 Visual Studio の拡張について詳しくは、「[Visual Studio IDE を機能拡張する](https://visualstudio.microsoft.com/vs/extend/)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio IDE の概要](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 の新機能](../ide/whats-new-visual-studio-2017.md)

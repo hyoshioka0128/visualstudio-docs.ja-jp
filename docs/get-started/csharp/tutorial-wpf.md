@@ -9,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864807"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77579985"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
@@ -46,7 +46,7 @@ Visual Studio を初めて開くときには、サインインが求められま
 
 Visual Studio を起動すると、ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **スタート ページ**が表示されます。 ソリューションかプロジェクトが読み込まれると、 **[スタート ページ]** がある領域にエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 
-![全般設定が適用された Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png "全般設定が適用された Visual Studio 2017 IDE のスクリーンショット")
+![全般設定が適用された Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png "[全般設定] が適用された Visual Studio 2017 IDE のスクリーンショット")
 
 ::: moniker-end
 
@@ -62,13 +62,13 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
 ::: moniker range="vs-2017"
 
-1. 新しいプロジェクトを作成します。 メニュー バーで **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. 新しいプロジェクトを作成します。 メニュー バーから、 **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します。
 
-     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../media/exploreide-filenewproject.png "[ファイル]、[新規作成]、[プロジェクト] が選択されたメニュー バーのスクリーンショット")
+     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../media/exploreide-filenewproject.png "[ファイル]、[新規作成]、[プロジェクト] を選択するメニュー バーのスクリーンショット")
 
 1. **[新しいプロジェクト]** ダイアログで、 **[インストール済み]**  >  **[Visual C#]**  >  **[Windows デスクトップ]** カテゴリを選択し、 **[WPF アプリ (.NET Framework)]** テンプレートを選択します。 プロジェクトに **HelloWPFApp** という名前を付けて、 **[OK]** を選択します。
 
-     ![Visual Studio の [新しいプロジェクト] ダイアログの WPF アプリ テンプレート](media/exploreide-newprojectcsharp.png "Visual Studio の [新しいプロジェクト] ダイアログの WPF アプリ テンプレートのスクリーンショット")
+     ![Visual Studio の [新しいプロジェクト] ダイアログの WPF アプリ テンプレート](media/exploreide-newprojectcsharp.png "[新しいプロジェクト] ダイアログの WPF アプリ テンプレートのスクリーンショット")
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
 1. 次の画面で、プロジェクトに **HelloWPFApp** という名前を付けて、 **[作成]** を選択します。
 
-   ![プロジェクトに "HelloWPFApp" という名前を付ける](./media/vs-2019/exploreide-nameproject.png "プロジェクトに名前を付けるウィンドウのスクリーンショット")
+   ![プロジェクトに 'HelloWPFApp' と名前を付ける](./media/vs-2019/exploreide-nameproject.png "プロジェクトに名前を付けるウィンドウのスクリーンショット")
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 プロジェクトは、作成後にカスタマイズできます。 これを行うには、 **[表示]** メニューの **[プロパティ ウィンドウ]** を選択するか、または **F4** キーを押します。 これで、アプリケーションのプロジェクト項目やコントロールなどの項目のオプションを表示および変更できます。
 
-   ![プロパティ ウィンドウ](../media/exploreide-hellowpfappfiles.png "プロパティ ウィンドウと WPF ファイル アプリ名のスクリーンショット")   
+   ![プロパティ ウィンドウ](../media/exploreide-hellowpfappfiles.png "WPF ファイル アプリ名が表示されたプロパティ ウィンドウのスクリーンショット")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml の名前を変更する
 
@@ -110,23 +110,23 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ## <a name="design-the-user-interface-ui"></a>ユーザー インターフェイス (UI) のデザイン
 
-デザイナーを開いていない場合は、*Greetings.xaml* を選択し、**Shift** + **F7** キーを押してデザイナーを開きます。
+デザイナーを開いていない場合は、*Greetings.xaml* を選択し、**Shift**+**F7** キーを押してデザイナーを開きます。
 
 このアプリケーションに、次の 3 種類のコントロールを追加します: <xref:System.Windows.Controls.TextBlock> コントロール、2 つの <xref:System.Windows.Controls.RadioButton> コントロール、<xref:System.Windows.Controls.Button> コントロール。
 
 ### <a name="add-a-textblock-control"></a>TextBlock コントロールを追加する
 
-1. **Ctrl** + **Q** キーを押して検索ボックスを有効にし、「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
+1. **Ctrl**+**Q** キーを押して検索ボックスを有効にし、「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
 
 1. **[ツールボックス]** で、 **[コモン WPF コントロール]** ノードを展開し、TextBlock コントロールを表示します。
 
-     ![TextBlock コントロールが強調表されているツールボックス](../media/exploreide-textblocktoolbox.png "TextBlock コントロールが強調表されている [ツールボックス] ウィンドウのスクリーンショット")
+     ![TextBlock コントロールが強調表示されたツールボックス](../media/exploreide-textblocktoolbox.png "TextBlock コントロールが強調表示されている [ツールボックス] ウィンドウのスクリーンショット")
 
 1. **TextBlock** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。 ウィンドウの上部付近の中央にコントロールを配置します。 Visual Studio 2019 以降では、赤いガイドラインを使用してコントロールを中央揃えにすることができます。
 
     ウィンドウは次の図のようになります。
 
-    ![Greetings フォームの TextBlock コントロール](../media/exploreide-greetingswithtextblockonly.png "Greetings フォームの TextBlock コントロールのスクリーンショット")
+    ![グリーティング フォームの TextBlock コントロール](../media/exploreide-greetingswithtextblockonly.png "案内メッセージ フォームの TextBlock コントロールのスクリーンショット")
 
    XAML マークアップは、次の例のようになります。
 
@@ -156,17 +156,17 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 1. **[ツールボックス]** で、**RadioButton** コントロールを探します。
 
-     ![RadioButton コントロールが選択された [ツールボックス] ウィンドウ](../media/exploreide-radiobuttontoolbox.png "RadioButton コントロールが選択された [ツールボックス] ウィンドウのスクリーンショット")
+     ![RadioButton コントロールをオンにした [ツールボックス] ウィンドウ](../media/exploreide-radiobuttontoolbox.png "RadioButton コントロールが選択された [ツールボックス] ウィンドウのスクリーンショット")
 
 1. **RadioButton** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、RadioButto コントロールを 2 つデザイン サーフェイスに追加します。 TextBlock コントロールの下にボタンが並んで表示されるように、ボタンを移動します (ボタンを選択し、方向キーを使います)。 赤いガイドラインを使用してコントロールを配置します。
 
    ウィンドウは、次のようになります。
 
-   ![TextBlock と 2 つのラジオ ボタンが含まれる Greetings フォーム](../media/exploreide-greetingswithradiobuttons.png "TextBlock と 2 つのラジオ ボタンが含まれる Greetings フォームのスクリーンショット")
+   ![TextBlock と 2 つのオプション ボタンのあるグリーティング フォーム](../media/exploreide-greetingswithradiobuttons.png "TextBlock と 2 つのラジオ ボタンを含む案内メッセージング フォームのスクリーンショット")
 
 1. 左側の RadioButton コントロールの **[プロパティ]** ウィンドウで、 **[Name]** プロパティ ( **[プロパティ]** ウィンドウの一番上のプロパティ) を `HelloButton`に変更します。
 
-    ![RadioButton のプロパティ ウィンドウ](../media/exploreide-buttonproperties.png "RadioButton のプロパティ ウィンドウのスクリーンショット")
+    ![RadioButton プロパティ ウィンドウ](../media/exploreide-buttonproperties.png "RadioButton の [プロパティ] ウィンドウのスクリーンショット")
 
 1. 右側の RadioButton コントロールの **[プロパティ]** ウィンドウで、 **[Name]** プロパティを `GoodbyeButton` に変更し、変更を保存します。
 
@@ -212,7 +212,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
      ウィンドウは次の図のようになります。
 
-     ![コントロール ラベルが含まれる Greetings フォーム](media/exploreide-greetingswithcontrollabels-cs.png "コントロール ラベルが含まれる Greetings フォーム")
+     ![コントロール ラベルのあるグリーティング フォーム](media/exploreide-greetingswithcontrollabels-cs.png "コントロール ラベルが表示された案内メッセージング フォームのスクリーンショット")
 
    XAML マークアップは次の例のようになります。
 
@@ -312,7 +312,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
     `MessageBox.Show("Hello.")` という行が黄色で強調表示されます。 IDE の下部では、[自動変数]、[ローカル]、[ウォッチ] の各ウィンドウが左側にまとめてドッキングされ、[呼び出し履歴]、[ブレークポイント]、[例外設定]、[コマンド]、[イミディエイト]、[出力] の各ウィンドウが右側にまとめてドッキングされます。
 
-    ![デバッガーでのブレークポイント](media/exploreide-debugbreakpoint.png "デバッガーでのブレークポイントのスクリーンショット")
+    ![デバッガーのブレークポイント](media/exploreide-debugbreakpoint.png "デバッガーでのブレークポイントのスクリーンショット")
 
 1. メニュー バーで **[デバッグ]**  >  **[ステップ アウト]** の順に選択します。
 

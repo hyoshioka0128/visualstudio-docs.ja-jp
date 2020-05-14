@@ -52,9 +52,9 @@
 ## [Subversion リポジトリのセットアップ](/visualstudio/mac/set-up-subversion-repository)
 ## [Subversion の使用](/visualstudio/mac/working-with-subversion)
 
-# [Web アプリのデプロイ](/visualstudio/mac/web-app-deployment.md)
-## [Azure App Service に発行する](/visualstudio/mac/publish-app-svc.md)
-## [フォルダーに発行する](/visualstudio/mac/publish-folder.md)
+# [Web アプリのデプロイ](/visualstudio/mac/web-app-deployment)
+## [Azure App Service に発行する](/visualstudio/mac/publish-app-svc)
+## [フォルダーに発行する](/visualstudio/mac/publish-folder)
 
 # [ワークロード](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
@@ -67,8 +67,8 @@
 ## [Unity によるゲーム開発](/visualstudio/mac/unity-tools)
 ### [セットアップ](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [Unity ツールの使用](/visualstudio/mac/using-vsmac-tools-unity)
-### [Unity で .NET 4.x を使用する](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [変更ログ](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [Unity で .NET 4.x を使用する](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [変更ログ](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Xamarin を使用したモバイル アプリ](/visualstudio/mac/xamarin)
 
 # [ユーザー補助](/visualstudio/mac/accessibility)

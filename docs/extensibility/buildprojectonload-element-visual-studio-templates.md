@@ -1,23 +1,23 @@
 ---
-title: BuildProjectOnload 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: ビルドプロジェクトオンロード要素 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9a9d4536c9ae7205a98ef0c79906ccbb002b5f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321242"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739958"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 要素 (Visual Studio テンプレート)
-作成して、ソリューションに追加するときは、新しいプロジェクトのみをビルドします。 ソリューション全体はビルドされません。
+# <a name="buildprojectonload-element-visual-studio-templates"></a>要素をビルドします。
+新しいプロジェクトのみを作成し、ソリューションに追加します。 ソリューション全体が構築されていません。
 
 要素の階層:
 
@@ -37,27 +37,27 @@ ms.locfileid: "66321242"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- なし。
+ [なし] :
 
 ### <a name="child-elements"></a>子要素
- なし。
+ [なし] :
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|`TemplateData`|テンプレートを分類し、両方での表示方法を定義、**新しいプロジェクト**と**新しい項目の追加** ダイアログ ボックス。|
+|`TemplateData`|テンプレートを分類し、[**新しいプロジェクト**] ダイアログ ボックスと [**新しい項目の追加**] ダイアログ ボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`をテンプレートから作成時に新しいプロジェクトのみをビルドするかどうかを示します。
+ テキストは、テンプレートから`true`作成`false`するときに新しいプロジェクトのみをビルドするかどうかを示す場合と、いずれかにする必要があります。
 
 ## <a name="remarks"></a>Remarks
- `BuildProjectOnLoad` は、省略可能な要素です。 既定値は `false` です。
+ `BuildProjectOnLoad` は省略可能な要素です。 既定値は `false` です。
 
 ## <a name="example"></a>例
- 次の例では、Visual c# テンプレートのメタデータを示しています。
+ Visual C# テンプレートのメタデータの例を次に示します。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ ms.locfileid: "66321242"
 
 ## <a name="see-also"></a>関連項目
 
-- [BuildOnLoad 属性と要素](buildonload-visual-studio-templates.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [属性と要素の組み込み](buildonload-visual-studio-templates.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)

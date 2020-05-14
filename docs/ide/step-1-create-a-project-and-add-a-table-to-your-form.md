@@ -5,17 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516785"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579920"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのテーブルの追加
 
@@ -25,7 +25,7 @@ ms.locfileid: "72516785"
 
 ::: moniker range="vs-2017"
 
-1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
 
 1. **[新しいプロジェクト]** ダイアログ ボックスの左側で、 **[Visual C#]** または **[Visual Basic]** のいずれかを選択し、 **[Windows Desktop]** を選択します。
 
@@ -117,10 +117,10 @@ ms.locfileid: "72516785"
        > [!NOTE]
        > Webdings フォントはアイコンのフォントであり、Windows オペレーティング システムに付属しています。 この絵合わせゲームでは、プレーヤーはアイコンのペアを一致させる必要があるため、このフォントを使用して、一致するアイコンを表示します。 **Text** プロパティに **c** を設定する代わりに、さまざまな文字を入力してどのようなアイコンが表示されるのか確認してみてください。 感嘆符はクモ、大文字の N は目、コンマはトウガラシです。
 
-5. ラベル コントロールを選択し、TableLayoutPanel 内の次のセルにコピーします (**Ctrl** + **C** キーを押すか、メニュー バーで **[編集]**  >  **[コピー]** の順にクリックします)。次に、これを貼り付けます (**Ctrl** + **V** キーを押すか、メニュー バーで **[編集]**  >  **[貼り付け]** の順にクリックします)。最初の Label のコピーが TableLayoutPanel の 2 つ目のセルに表示されます。 再度貼り付けると、3 つ目のセルにまた別の Label が表示されます。 すべてのセルが埋まるまで、ラベル コントロールの貼り付け操作を続けます。
+5. ラベル コントロールを選択し、TableLayoutPanel 内の次のセルにコピーします (**Ctrl**+**C** キーを押すか、メニュー バーで **[編集]**  >  **[コピー]** の順にクリックします)。次に、これを貼り付けます (**Ctrl**+**V** キーを押すか、メニュー バーで **[編集]**  >  **[貼り付け]** の順にクリックします)。最初の Label のコピーが TableLayoutPanel の 2 つ目のセルに表示されます。 再度貼り付けると、3 つ目のセルにまた別の Label が表示されます。 すべてのセルが埋まるまで、ラベル コントロールの貼り付け操作を続けます。
 
    > [!NOTE]
-   > 多く貼り付けすぎた場合は、IDE によって TableLayoutPanel に新しい行が追加され、新しいラベル コントロールを追加する場所が作成されます。 これは、元に戻すことができます。 新しいセルを削除するには、**Ctrl** + **Z** キーを押すか、メニュー バーで **[編集]**  >  **[元に戻す]** の順にクリックします。
+   > 多く貼り付けすぎた場合は、IDE によって TableLayoutPanel に新しい行が追加され、新しいラベル コントロールを追加する場所が作成されます。 これは、元に戻すことができます。 新しいセルを削除するには、**Ctrl**+**Z** キーを押すか、メニュー バーで **[編集]**  >  **[元に戻す]** の順にクリックします。
 
     これで、フォームがレイアウトされました。次の画像のようになります。
 

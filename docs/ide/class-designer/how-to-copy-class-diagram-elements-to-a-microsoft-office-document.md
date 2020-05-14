@@ -6,17 +6,17 @@ helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82228d924b2f475d9a9f7e607ccf902f2b4eaa0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631856"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75592244"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする
 
@@ -40,7 +40,7 @@ ms.locfileid: "72631856"
 
 **[イメージのコピー]** の代わりに **[コピー]** を選択することもできます。 **[コピー]** は、イメージを通常のビットマップとしてコピーします。 **[イメージのコピー]** は、イメージをベクター ベースのイメージとしてコピーするので、ほとんどの Office アプリケーションにとってはこちらが向いています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: クラス ダイアグラムを印刷する](how-to-print-class-diagrams.md)
 - [方法: クラス ダイアグラムをイメージとしてエクスポートする](how-to-export-class-diagrams-as-images.md)

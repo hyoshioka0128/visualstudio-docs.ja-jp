@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback |Microsoft Docs
+title: 検証評価関数2::セットコールバック |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325498"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729334"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-メトリックの設定を読み取るデバッガー エンジン (DE) を使用するコールバック インターフェイスを指定するには、式エバリュエーター (EE) を有効にします。
+式エバリュエーター (EE) が、デバッガー エンジン (DE) がメトリック設定の読み取りに使用するコールバック インターフェイスを指定できるようにします。
 
 ## <a name="syntax"></a>構文
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>パラメーター
 `pCallback`\
-[in]設定のコールバックを使用するインターフェイスです。
+[in]設定コールバックに使用するインターフェイス。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
-このメソッドは、式エバリュエーターは、メトリックの設定の読み取りに使用できるセッション デバッグ マネージャーのインターフェイスを提供します。 メトリックを読み取ります。 へのリモート デバッグで役に立ちますが、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]コンピューター。
+このメソッドは、式エバリュエーターがメトリック設定を読み取るために使用できるセッション デバッグ マネージャーへのインターフェイスを提供します。 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]リモート デバッグでは、コンピューターのメトリックを読み取るのに役立ちます。
 
 ## <a name="example"></a>例
-次の例のこのメソッドを実装する方法を示しています、 **CEE**を公開するオブジェクト、 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)インターフェイス。
+次の例は、[インターフェイス](../../../extensibility/debugger/reference/idebugsettingscallback2.md)を公開する**CEE**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

@@ -9,19 +9,19 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d6110587226a8ed9fbae5b286abd92c6fd8919e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 198497c0f609401639218a54321427e51eb682ff
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295660"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918899"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>WPF に基づくドメイン固有言語の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 グラフィカルなデザイナーではなく、WPF デザイナーを持つドメイン固有言語を作成できます。
 
- この機能に関する情報とサンプルについては、「」の Visual Studio の視覚化およびモデリングツールの web サイトを参照してください[http://go.microsoft.com/fwlink/?LinkId=186128](https://go.microsoft.com/fwlink/?LinkId=186128)
+ この機能に関する情報とサンプルについては、「 [Visual Studio の視覚化およびモデリング SDK](https://www.microsoft.com/download/details.aspx?id=48148)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)

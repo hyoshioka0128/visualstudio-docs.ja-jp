@@ -64,13 +64,13 @@ sections:
         items:
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Storage.svg'
-            text: Azure ストレージ
+            text: Azure Storage
             href: vs-azure-tools-connected-services-storage.md
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
             text: Azure Active Directory
             href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-  - title: Azure Cloud Services
+  - title: Azure クラウド サービス
     items:
       - type: paragraph
         text: Azure Cloud Services は Azure ストレージや他の Azure リソースにアクセスして一般的な Azure サービスを作成するための汎用的なテクノロジです。
@@ -98,7 +98,7 @@ sections:
             html: <p>Azure にクラウド サービスを発行する</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_deploy.svg'
-            title: 公開
+            title: 発行
           - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
             html: <p>Azure で実行されているクラウド サービスと仮想マシンの監視と診断を行う</p>
             image:
@@ -117,12 +117,12 @@ sections:
             html: <p>Visual Studio での Azure ストレージ アカウントへのアクセス</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: 記憶域
+            title: ストレージ
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
             html: <p>Visual Studio から仮想マシンへのアクセス</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: 仮想マシン
+            title: Virtual Machines
   - title: Azure のその他の開発リソース
     items:
       - type: paragraph

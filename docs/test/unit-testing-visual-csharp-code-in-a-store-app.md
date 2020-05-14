@@ -2,17 +2,17 @@
 title: Visual C# コードの単体テスト
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659842"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590866"
 ---
 # <a name="unit-test-c-code"></a>C# コードの単体テスト
 
@@ -24,7 +24,7 @@ ms.locfileid: "72659842"
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>ソリューションと単体テスト プロジェクトを作成する
 
-1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。
+1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。
 
 2. **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートを検索して選択します。
 

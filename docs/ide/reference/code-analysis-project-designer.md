@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Analysis page in Project Designer
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de941e6b1a07873c2c160351cce561721e845cdb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609855"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "76113774"
 ---
 # <a name="code-analysis-project-designer"></a>コード分析 (プロジェクト デザイナー)
 
@@ -62,7 +62,7 @@ ms.locfileid: "72609855"
 使い方の規則\
 使い方の規則を有効または無効にします。 このエントリを展開して、個別の規則を有効または無効にすることもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [マネージド コードの警告に対応するコードの解析](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [マネージド コードに対するコード分析の概要](../../code-quality/code-analysis-for-managed-code-overview.md)

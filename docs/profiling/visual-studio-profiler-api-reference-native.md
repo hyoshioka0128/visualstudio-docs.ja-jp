@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778025"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio プロファイラー API リファレンス (ネイティブ)
@@ -46,7 +46,7 @@ Visual Studio プロファイラー API を使用すると、収集データの�
 
 [PROFILE_CURRENTID](../profiling/profile-currentid.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [プロファイル ツールの API](../profiling/profiling-tools-apis.md)
-- [チュートリアル: プロファイラー API の使用](../profiling/walkthrough-using-profiler-apis.md)
+- [チュートリアル : プロファイラー API の使用](../profiling/walkthrough-using-profiler-apis.md)

@@ -3,12 +3,12 @@ author: John-Hart
 ms.topic: include
 ms.date: 08/14/2019
 ms.author: johnhart
-ms.openlocfilehash: 38f6de56d26cbcaf8739ea8458d846c5a2daf721
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8bf2f79a12c606e58e60c94854d533eedbc9f395
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69547987"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80573175"
 ---
 > [!NOTE]
-> [複数のプラットフォーム](https://dev.office.com/add-in-availability)で Office エクスペリエンスを拡張するソリューションの開発に関心がありますか。 新しい[Office アドインモデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)を確認してください。 Office アドインのフットプリントは、VSTO アドインやソリューションと比較して小さくなります。また、HTML5、JavaScript、CSS3、XML など、ほぼすべての web プログラミングテクノロジを使用してビルドすることができます。
+> 複数のプラットフォームで Office のエクスペリエンスを拡張するソリューションの開発に興味がありますか? 新しい[Office アドイン モデル を](/office/dev/add-ins/)確認してください。 Office アドインは、VSTO アドインやソリューションに比べてフットプリントが小さく、HTML5、JavaScript、CSS3、XML などのほぼすべての Web プログラミング テクノロジを使用してビルドできます。

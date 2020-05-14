@@ -12,20 +12,21 @@ dev_langs:
 helpviewer_keywords:
 - Sdk element [MSBuild]
 - <Sdk> element [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b155af29d2d81a43eb0270e776e40df335a4bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632473"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 要素 (MSBuild)
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト SDK を参照します。
+
+MSBuild プロジェクト SDK が参照されます。
 
  \<Project> \<Sdk>
 
@@ -37,6 +38,7 @@ ms.locfileid: "62838777"
 ```
 
 ## <a name="attributes-and-elements"></a>属性と要素
+
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
@@ -47,15 +49,17 @@ ms.locfileid: "62838777"
 |`Version`|省略可能な属性です。<br /><br /> プロジェクト SDK のバージョンです。|
 
 ### <a name="child-elements"></a>子要素
+
  なし。
 
 ### <a name="parent-elements"></a>親要素
 
 | 要素 | 説明 |
 | - | - |
-| [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
+| [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 
 ## <a name="see-also"></a>関連項目
+
 - [方法: MSBuild プロジェクト SDK の参照](../msbuild/how-to-use-project-sdk.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

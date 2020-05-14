@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::Dispose |Microsoft Docs
+title: Iデバッグエイリアス::Dポーズ |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::Dispose method
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c84fc6887eb2594f9665924bd3eafa5452a3135c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df3a2ecc50063df8f90645b9ccaa72754c3728c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330275"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736555"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
-このエイリアスの削除をマークします。
+このエイリアスを削除対象としてマークします。
 
 ## <a name="syntax"></a>構文
 
@@ -36,13 +36,13 @@ int Dispose();
 ```
 
 ## <a name="parameters"></a>パラメーター
- なし。
+ [なし] :
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
+ 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが呼び出されると、エイリアスは使用できなくします。
+ このメソッドが呼び出されると、エイリアスは使用できなくなります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -1,18 +1,19 @@
 ---
 title: C++ 用の Microsoft 単体テスト フレームワークの使用
-ms.date: 06/13/2019
+description: C++ 用の Microsoft 単体テスト フレームワークを使用して、C++ コード用の単体テストを作成します。
+ms.date: 01/08/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: fd5780479da10da43c270bbf4ffc5a215cb86ad6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926687"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75755570"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する
 
@@ -28,24 +29,44 @@ DLL でエクスポートされない関数をテストするときなど、場�
 
 1. 単体テストに必要なヘッダーおよびライブラリ ファイルが含まれるように、プロジェクトのプロパティを変更します。
 
-   1. **ソリューション エクスプローラー**で、テストするプログラムのプロジェクト ノードを右クリックして、 **[プロパティ]**  >  **[構成プロパティ]**  >  **[VC++ ディレクトリ]** の順に選択します。
+   1. ソリューション エクスプローラーで、テスト対象プロジェクトのショートカット メニューの **[プロパティ]** をクリックします。 プロジェクトのプロパティ ウィンドウが開きます。
 
-   2. 次の行の下向きの矢印をクリックし、 **[\<編集>]** を選択します。 次のパスを追加します。
+   1. [プロパティ ページ] ダイアログ ボックスで、 **[構成プロパティ]**  >  **[VC++ ディレクトリ]** の順に選択します。
+
+   1. 次の行の下向きの矢印をクリックし、 **[\<編集>]** を選択します。 次のパスを追加します。
 
       | ディレクトリ | プロパティ |
       |-| - |
       | **インクルード ディレクトリ** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
       | **ライブラリ ディレクトリ** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
-2. C++ 単体テスト ファイルを追加します。
+1. C++ 単体テスト ファイルを追加します。
 
    - **ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、 **[追加]** 、 **[新しい項目]** 、 **[C++ ファイル (.cpp)]** の順に選択します。
 
+## <a name="object_files"></a> オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには
+
+テストする関数がテスト対象のコードでエクスポートされない場合は、出力された **.obj** ファイルまたは **.lib** ファイルをテスト プロジェクトの依存関係に追加できます。 単体テストに必要なヘッダーおよびライブラリまたはオブジェクト ファイルが含まれるように、テストプロジェクトのプロパティを変更します。
+
+1. ソリューション エクスプローラーで、テスト プロジェクトのショートカット メニューの **[プロパティ]** をクリックします。 プロジェクトのプロパティ ウィンドウが開きます。
+
+1. **[構成プロパティ]**  >  **[リンカー]**  >  **[入力]** ページを選択し、 **[追加の依存ファイル]** を選択します。
+
+   **[編集]** をクリックし、 **.obj** ファイルまたは **.lib** ファイルの名前を追加します。 完全パス名は使用しないでください。
+
+1. **[構成プロパティ]**  >  **[リンカー]**  >  **[全般]** ページを選択し、 **[追加のライブラリ ディレクトリ]** を選択します。
+
+   **[編集]** をクリックし、 **.obj** ファイルまたは **.lib** ファイルのディレクトリ パスを追加します。 一般的にパスは、テスト対象プロジェクトのビルド フォルダー内になります。
+
+1. **[構成プロパティ]**  >  **[VC++ ディレクトリ]** ページを選択し、 **[インクルード ディレクトリ]** を選択します。
+
+   **[編集]** をクリックし、テスト対象プロジェクトのヘッダー ディレクトリを追加します。
+
 ## <a name="write-the-tests"></a>テストを作成
 
-テスト クラスを含む *.cpp* ファイルには、"CppUnitTest.h" に加えて、`using namespace Microsoft::VisualStudio::CppUnitTestFramework` 用の using ステートメントが必要です。 テスト プロジェクトは既に構成されています。 これには、名前空間の定義と、開始するための TEST_METHOD を含んだ TEST_CLASS も記述されています。 名前空間の名前だけでなく、クラスとメソッドのマクロ内のかっこで囲んだ名前も変更することができます。
+テスト クラスを含む *.cpp* ファイルには、"CppUnitTest.h" に加えて、`using namespace Microsoft::VisualStudio::CppUnitTestFramework` 用の using ステートメントが必要です。 テスト プロジェクトは既に構成されています。 これには、名前空間の定義と、開始するための TEST_METHOD を含んだ TEST_CLASS も記述されています。 名前空間の名前と、クラスとメソッドのマクロ内のかっこで囲んだ名前を変更することができます。
 
-テスト モジュール、クラス、およびメソッドを初期化するため、およびテストが完了したときにリソースをクリーンアップするために、特殊なマクロが定義されます。 これらのマクロは、クラスまたはメソッドに最初にアクセスする前に実行されるコードと、最後のテストを実行した後に実行されるコードを生成します。 詳細については、[初期化とクリーンアップ](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)に関するページを参照してください。
+テスト モジュール、クラス、およびメソッドを初期化するため、およびテストの完了後にリソースをクリーンアップするための特殊なマクロが、テスト フレームワークにより定義されます。 これらのマクロは、クラスまたはメソッドに最初にアクセスする前に実行されるコードと、最後のテストを実行した後に実行されるコードを生成します。 詳細については、[初期化とクリーンアップ](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)に関するページを参照してください。
 
 [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) クラスに静的メソッドを使用して、テスト条件を定義します。 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) クラスを使用して、 **[出力ウィンドウ]** にメッセージを書き込みます。 テスト メソッドに属性を追加する
 

@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68493230"
 ---
 # <a name="source-editor"></a>ソース エディター
 
-信頼できるソース エディターは、簡潔かつ効率的にコードを記述するために不可欠です。 Visual Studio for Mac には、IDE との対話の中心になる高機能のソース エディターがあります。 ソース エディターには、開発者が作業を容易にするために期待する機能や必要とする機能が用意されています。具体的には、構文の強調表示、コード スニペット、コードの折りたたみといった基本的な機能をはじめ、完全に機能する IntelliSense コード補完などの Roslyn コンパイラとの統合による機能もあります。
+信頼できるソース エディターは、簡潔かつ効率的にコードを記述するために不可欠です。 Visual Studio for Mac には、IDE との対話の中心になる高機能のソース エディターがあります。 ソース エディターは、構文の強調表示、コード スニペット、コードの折りたたみといった基本的なものから、完全に機能する IntelliSense コード補完などの Roslyn コンパイラとの統合によるものまで、開発者が作業を容易にするために期待するものや必要とする機能が用意されています。
 
 Visual Studio for Mac のソース エディターでは、デバッグ、リファクタリング、バージョン管理の統合など、IDE に含まれる他のすべての機能とのシームレスなエクスペリエンスが提供されます。
 
@@ -46,7 +46,7 @@ Visual Studio for Mac には、クロスプラット フォーム開発を可能
 
 このメニュー項目を使って、コードの折りたたみを有効または無効にすることもできます。
 
-## <a name="word-wrap"></a>右端で折り返す
+## <a name="word-wrap"></a>[右端で折り返す]
 
 右端での折り返しは、長いコード行または限られたビュー空間で作業する場合に、スペースを管理するのに役立ちます。 右端での折り返しを使用すると、ビューを覆い隠したり、ソース ビューの幅を狭めたりする可能性があるウィンドウを開いたときでも、コード ビューにソース ファイルの完全な内容を確実に含めることができます。 
 
@@ -78,7 +78,7 @@ Visual Studio for Mac には、クロスプラット フォーム開発を可能
 
 ![強調表示の色を示す例](media/source-editor-image7.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コード エディター機能 (Windows の Visual Studio)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [アウトライン (Windows の Visual Studio)](/visualstudio/ide/outlining)

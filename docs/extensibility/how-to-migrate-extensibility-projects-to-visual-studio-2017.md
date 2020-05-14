@@ -1,69 +1,69 @@
 ---
-title: '方法: Visual Studio 2017 の機能拡張プロジェクトの移行 |Microsoft Docs'
+title: '方法 : 機能拡張プロジェクトを Visual Studio 2017 に移行する |マイクロソフトドキュメント'
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0cae0261b185ee08400e5f3d25735634663f54a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823898"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710979"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行します。
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 拡張機能プロジェクトを Visual Studio 2017 に移行する
 
-このドキュメントでは、機能拡張プロジェクトを Visual Studio 2017 にアップグレードする方法について説明します。 プロジェクト ファイルを更新する方法を記述するだけでなく、新しいバージョン 3 VSIX マニフェスト形式 (VSIX v3) に拡張機能マニフェストのバージョン 2 (v2) VSIX からアップグレードする方法も説明します。
+このドキュメントでは、拡張機能プロジェクトを Visual Studio 2017 にアップグレードする方法について説明します。 プロジェクト ファイルを更新する方法を説明するだけでなく、拡張機能マニフェスト バージョン 2 (VSIX v2) から新しいバージョン 3 VSIX マニフェスト形式 (VSIX v3) にアップグレードする方法についても説明します。
 
-## <a name="install-visual-studio-2017-with-required-workloads"></a>必要なワークロードでの Visual Studio 2017 をインストールします。
+## <a name="install-visual-studio-2017-with-required-workloads"></a>必要なワークロードを含む Visual Studio 2017 のインストール
 
-環境に、次のワークロードを確認します。
+インストールに次のワークロードが含まれていることを確認します。
 
 * .NET デスクトップ開発
 * Visual Studio 拡張機能の開発
 
-## <a name="open-vsix-solution-in-visual-studio-2017"></a>Visual Studio 2017 で開いている VSIX ソリューション
+## <a name="open-vsix-solution-in-visual-studio-2017"></a>VSIX ソリューションを開く 2017
 
-すべての VSIX プロジェクトには、Visual Studio 2017 へのメジャー バージョンの一方向アップグレードが必要です。
+すべての VSIX プロジェクトでは、Visual Studio 2017 へのメジャー バージョンの一方向アップグレードが必要です。
 
-プロジェクト ファイル (たとえば * *.csproj*) が更新されます。
+プロジェクト ファイル (たとえば **.csproj)* が更新されます。
 
-* MinimumVisualStudioVersion - を 15.0 に設定するようになりました
-* OldToolsVersion (場合以前存在)-14.0 に設定されました
+* 最小ビジュアルスタジオバージョン - 15.0 に設定されました
+* 古いツールバージョン (以前に存在する場合) - 14.0 に設定されるようになりました
 
-## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Microsoft.VSSDK.BuildTools NuGet パッケージを更新します。
-
-> [!Note]
-> ソリューションは、Microsoft.VSSDK.BuildTools NuGet パッケージを参照していない場合は、この手順をスキップすることができます。
-
-新しい VSIX v3 で拡張機能をビルドするには (バージョン 3) の形式で、ソリューションは新しい VSSDK のビルド ツールで構築する必要があります。 これは、Visual Studio 2017 でインストールされますが、NuGet を使用して以前のバージョンへの参照を VSIX v2 の拡張機能を保持する可能性があります。 そうである場合は、ソリューションに Microsoft.VSSDK.BuildTools NuGet パッケージの更新プログラムを手動でインストールする必要があります。
-
-Microsoft.VSSDK.BuildTools NuGet 参照を更新するには。
-
-* ソリューションを右クリックし、選択**ソリューションの NuGet パッケージの管理**します。
-* 移動し、**更新**タブ。
-* 選択**Microsoft.VSSDK.BuildTools (最新バージョン)** します。
-* キーを押して**Update**します。
-
-![VSSDK のビルド ツール](media/vssdk-build-tools.png)
-
-## <a name="make-changes-to-the-vsix-extension-manifest"></a>VSIX 拡張機能マニフェストを変更をします。
-
-Visual Studio のユーザーのインストールは、拡張機能を実行するために必要なすべてのアセンブリを持つようにするため、拡張機能マニフェスト ファイルで、すべての前提条件コンポーネントまたはパッケージを指定します。 ユーザーが拡張機能をインストールしようとすると、すべての前提条件がインストールされているかどうかの VSIXInstaller が確認されます。 いくつかが存在しない場合は、拡張機能のインストール プロセスの一環として、見つからないコンポーネントをインストールするユーザーにメッセージが表示します。
+## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>パッケージを更新します。
 
 > [!Note]
-> 少なくともすべての拡張機能は、前提条件として、Visual Studio コア エディター コンポーネントを指定する必要があります。
+> ソリューションが Microsoft.VSSDK.BuildTools NuGet パッケージを参照していない場合は、この手順をスキップできます。
 
-* 拡張機能マニフェスト ファイルを編集 (通称、 *source.extension.vsixmanifest*)。
-* 確認`InstallationTarget`15.0 が含まれています。
-* (次の例で示す) のように、必要なインストール前提条件を追加します。
-  * インストールの前提条件のコンポーネント Id のみを指定することをお勧めします。
-  * このドキュメントの最後のセクションを参照してください。[コンポーネント Id を識別する方法について](#find-component-ids)します。
+新しい VSIX v3 (バージョン 3) 形式で拡張機能をビルドするには、ソリューションを新しい VSSDK ビルド ツールを使用してビルドする必要があります。 これは Visual Studio 2017 と共にインストールされますが、VSIX v2 拡張機能は NuGet を使用して古いバージョンへの参照を保持している可能性があります。 その場合は、ソリューションの Microsoft.VSSDK.BuildTools NuGet パッケージの更新プログラムを手動でインストールする必要があります。
+
+への参照を更新するには、次の手順を実行します。
+
+* ソリューションを右クリックし、[**ソリューションの NuGet パッケージの管理**] を選択します。
+* [**更新]** タブに移動します。
+* を選択**します**。
+* **[更新]** をクリックします。
+
+![VSSDK ビルド ツール](media/vssdk-build-tools.png)
+
+## <a name="make-changes-to-the-vsix-extension-manifest"></a>VSIX 拡張機能マニフェストに変更を加える
+
+拡張機能を実行するために必要なすべてのアセンブリがユーザーの Visual Studio のインストールに確実に含まれるようにするには、拡張機能マニフェスト ファイルですべての必須コンポーネントまたはパッケージを指定します。 ユーザーが拡張機能をインストールしようとすると、VSIXInstaller はすべての必須コンポーネントがインストールされているかどうかを確認します。 一部が見つからない場合は、拡張機能のインストール プロセスの一部として、不足しているコンポーネントをインストールするように求められます。
+
+> [!Note]
+> 少なくとも、すべての拡張機能は、前提条件として Visual Studio コア エディター コンポーネントを指定する必要があります。
+
+* 拡張マニフェスト ファイル (通常は*ソース.拡張子.vsixmanifest*と呼ばれます) を編集します。
+* 15.0 が含まれていることを確認します`InstallationTarget`。
+* 必要なインストール前提条件を追加します (以下の例に示すように)。
+  * インストールの前提条件としては、コンポーネント ID のみを指定することをお勧めします。
+  * コンポーネント ID の識別方法については、このドキュメントの最後[のセクションを](#find-component-ids)参照してください。
 
 例:
 
@@ -79,126 +79,126 @@ Visual Studio のユーザーのインストールは、拡張機能を実行す
 </PackageManifest>
 ```
 
-### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>オプション:デザイナーを使用して、VSIX 拡張機能マニフェストを変更します。
+### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>オプション: デザイナーを使用して VSIX 拡張機能マニフェストを変更する
 
-マニフェストの XML を直接編集する代わりに、マニフェスト デザイナーにある**新しい前提条件**を使用して、前提条件を選択し、XML を更新することができます。
+マニフェスト XML を直接編集する代わりに、マニフェスト デザイナーの新しい **[必須コンポーネント**] タブを使用して、必須コンポーネントを選択すると、XML が更新されます。
 
 > [!Note]
-> マニフェスト デザイナーを使用して、現在の Visual Studio インスタンスにインストールされているコンポーネント (ワークロードやパッケージ) を選択することはのみ。 ワークロード、パッケージ、または現在インストールされていないコンポーネントの前提条件を追加する必要がある場合は、マニフェスト XML を直接編集します。
+> マニフェスト デザイナーでは、現在の Visual Studio インスタンスにインストールされているコンポーネント (ワークロードまたはパッケージではない) のみを選択できます。 現在インストールされていないワークロード、パッケージ、またはコンポーネントの前提条件を追加する必要がある場合は、マニフェスト XML を直接編集します。
 
-* 開いている*source.extension.vsixmanifest [デザイン]* ファイル。
-* 選択**の前提条件**タブ キーを押します**新規**ボタンをクリックします。
+* *ファイルを*開きます。
+* [**前提条件]** タブを選択し、[**新規]** ボタンを押します。
 
    ![VSIX マニフェスト デザイナー](media/vsix-manifest-designer.png)
 
-* **新しい前提条件の追加**ウィンドウが開きます。
+* [**新しい前提条件の追加]** ウィンドウが開きます。
 
-   ![vsix の前提条件を追加します。](media/add-vsix-prerequisite.png)
+   ![vsix の前提条件を追加する](media/add-vsix-prerequisite.png)
 
-* **[名前]** のドロップダウンをクリックして、必要な前提条件を選択します。
-* 必要な場合は、バージョンを更新します。
+* **[名前**]のドロップダウンをクリックし、必要な前提条件を選択します。
+* 必要に応じてバージョンを更新します。
 
    > [!Note]
-   > バージョン フィールドは、範囲の最大またがりメモリ割り当て (ただしを除く) で、現在インストールされているコンポーネントのバージョンでは、あらかじめ設定されているとするコンポーネントの次のメジャー バージョン。
+   > version フィールドには、現在インストールされているコンポーネントのバージョンがあらかじめ入力され、コンポーネントの次のメジャー バージョンまでの範囲が設定されます (ただし、コンポーネントの次のメジャー バージョンは含まれません)。
 
-   ![roslyn の前提条件を追加します。](media/add-roslyn-prerequisite.png)
+   ![roslyn の前提条件を追加する](media/add-roslyn-prerequisite.png)
 
-* **[OK]** を押します。
+* **[OK]** をクリックします。
 
 ## <a name="update-debug-settings-for-the-project"></a>プロジェクトのデバッグ設定を更新します。
 
-Visual Studio の実験用インスタンスで拡張機能をデバッグする場合、以下のことを確認のプロジェクト設定**デバッグ** > **開始アクション**が、**外部開始プログラム:** 値に設定、 *devenv.exe* Visual Studio 2017 インストールのファイル。
+Visual Studio の実験用インスタンスで拡張機能をデバッグする場合は、**デバッグ** > **開始アクション**のプロジェクト設定に、Visual Studio 2017 インストールの*devenv.exe*ファイルに設定された **[開始] 外部プログラム:** 値が設定されていることを確認します。
 
-ようになります。*C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+次のようになります: *C:\プログラム ファイル (x86)\マイクロソフト ビジュアル スタジオ\2017\エンタープライズ\コモン7\IDE\devenv.exe*
 
-![外部プログラムを開始します。](media/start-external-program.png)
+![外部プログラムを起動する](media/start-external-program.png)
 
 > [!Note]
-> デバッグの開始操作が通常に格納されている、 *. csproj.user*ファイル。 このファイルに通常含まれて、 *.gitignore*ファイルを開き、そのため、通常で保存されていない他のプロジェクト ファイルをソース管理にコミットされたときにします。 そのため、ソース管理から新しいソリューションを取得しましたをプロジェクトには開始動作の設定値はありませんが高くなります。 Visual Studio 2017 で作成した新しい VSIX プロジェクトには、 *. csproj.user*ファイルの現在の Visual Studio インストール ディレクトリを指す既定値で作成します。 ただし場合 v2 VSIX 拡張機能を移行する可能性がありますが、 *. csproj.user*ファイルは、Visual Studio の以前のバージョンのインストール ディレクトリへの参照が格納されます。 値の設定**デバッグ** > **開始アクション**拡張機能をデバッグしようとするときに起動する正しい Visual Studio の実験用インスタンスを許可します。
+> デバッグ開始アクションは、通常 *、.csproj.user*ファイルに格納されます。 このファイルは通常 *、.gitignore*ファイルに含まれているので、ソース管理にコミットすると、通常は他のプロジェクト ファイルと共に保存されません。 そのため、ソース管理からソリューションを最新の位置に引き出した場合、プロジェクトの開始アクションに値が設定されていない可能性があります。 Visual Studio 2017 で作成された新しい VSIX プロジェクトには、現在の Visual Studio インストール ディレクトリを指す既定値を使用して作成された *.csproj.user*ファイルが含まれます。 ただし、VSIX v2 拡張機能を移行する場合は *、.csproj.user*ファイルには、以前の Visual Studio バージョンのインストール ディレクトリへの参照が含まれている可能性があります。 **デバッグ** > **開始アクション**の値を設定すると、拡張機能をデバッグしようとすると、適切な Visual Studio の実験用インスタンスを起動できます。
 
-## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>拡張機能が正しく (VSIX v3) としてビルドされるかを確認します。
+## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>拡張機能が正しくビルドされることを確認します (VSIX v3 として)
 
 * VSIX プロジェクトをビルドします。
-* 生成した VSIX を解凍します。
-  * 既定では、VSIX ファイルの存在の内部*Bin/debug*または*Bin/release*として *[YourCustomExtension] .vsix*します。
-  * 名前を変更 *.vsix*に *.zip*を簡単に内容を表示します。
-* 3 つのファイルの存在を確認します。
-  * *extension.vsixmanifest*
-  * *manifest.json*
-  * *catalog.json*
+* 生成された VSIX を解凍します。
+  * 既定では、VSIX ファイルは *[YourCustomExtension] .vsix*として*ビン/デバッグ**またはビン/リリース*内に配置されます。
+  * 内容を簡単に表示するには *、.vsix*の名前を *.zip*に変更します。
+* 3 つのファイルが存在するかどうかを確認します。
+  * *拡張.vsix マニフェスト*
+  * *マニフェスト.json*
+  * *カタログ.json*
 
-## <a name="check-when-all-required-prerequisites-are-installed"></a>すべての必要な前提条件がインストールされているときに確認します。
+## <a name="check-when-all-required-prerequisites-are-installed"></a>必要な前提条件がすべてインストールされている場合に確認する
 
-VSIX が正常にインストール、マシンに必要なすべての前提条件のインストールをテストします。
+必要なすべての必須コンポーネントがインストールされているコンピューターに VSIX が正常にインストールされることをテストします。
 
 > [!Note]
-> 任意の拡張機能をインストールする前に、Visual Studio のすべてのインスタンスをシャット ダウンしてください。
+> 拡張機能をインストールする前に、Visual Studio のすべてのインスタンスをシャットダウンしてください。
 
-拡張機能をインストールしようとしてください。
+拡張機能のインストールを試みます。
 
-* Visual Studio 2017 で
+* ビジュアルスタジオ2017について
 
-![Visual Studio 2017 の VSIX インストーラー](media/vsixinstaller-vs-2017.png)
+![VSIX インストーラーの Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
-* 省略可能:Visual Studio の以前のバージョンを確認します。
-  * 旧バージョンとの互換性を証明します。
-  * Visual Studio 2012、Visual Studio 2013、Visual Studio 2015 の機能する必要があります。
-* 省略可能:VSIX インストーラーのバージョン チェックがバージョンの選択肢を提供することを確認します。
-  * (インストールされている) 場合は、Visual Studio の以前のバージョンが含まれています。
+* オプション: 以前のバージョンの Visual Studio を確認します。
+  * 下位互換性を証明します。
+  * Visual Studio 2012、ビジュアル スタジオ 2013、Visual Studio 2015 で動作する必要があります。
+* オプション: VSIX インストーラーバージョン チェッカーがバージョンの選択肢を提供していることを確認します。
+  * 以前のバージョンの Visual Studio がインストールされている場合に含まれます。
   * Visual Studio 2017 が含まれています。
 
-Visual Studio が開かれた最近場合は、このようなダイアログ ボックスを表示する可能性があります。
+Visual Studio が最近開いた場合、次のようなダイアログ ボックスが表示される場合があります。
 
-![vs のプロセスを実行します。](media/vs-running-processes.png)
+![vs 実行中のプロセス](media/vs-running-processes.png)
 
-プロセスがシャット ダウンするまで待つか、タスクを手動で終了します。 表示されている名、またはかっこで囲まれた表示 PID のプロセスが表示されます。
+プロセスがシャットダウンするまで待つか、タスクを手動で終了します。 プロセスは、リストされた名前で検索するか、または括弧内にリストされている PID を使用して見つけることができます。
 
 > [!Note]
-> これらのプロセスに自動的にシャット ダウンしない Visual Studio のインスタンスの実行中にします。 他のユーザーのものを含むのコンピューター上の Visual Studio のすべてのインスタンスをシャット ダウンしたし、再試行を続行することを確認します。
+> これらのプロセスは、Visual Studio のインスタンスの実行中に自動的にシャットダウンされません。 コンピューター上のすべての Visual Studio インスタンス (他のユーザーのインスタンスを含む) をシャットダウンしたことを確認してから、再試行を続行します。
 
-## <a name="check-when-missing-the-required-prerequisites"></a>必要な前提条件が不足しているときに確認します。
+## <a name="check-when-missing-the-required-prerequisites"></a>必要な前提条件がない場合に確認する
 
-* 拡張機能をインストール、マシンで Visual Studio 2017 ことはない CONTAIN (上記) の前提条件で定義されているすべてのコンポーネントしようとしてください。
-* インストールが不足しているコンポーネント/秒を識別して、それら、VSIXInstaller で前提条件として一覧表示を確認します。
-* メモ:前提条件は、拡張機能と共にインストールする必要がある場合、昇格が必要になります。
+* 上記の前提条件 (上記) で定義されているすべてのコンポーネントを含まない Visual Studio 2017 のコンピューターに拡張機能をインストールしようとします。
+* インストールが不足しているコンポーネントを識別し、VSIXInstaller の前提条件として一覧表示することを確認します。
+* 注: 拡張機能を使用してインストールする必要がある前提条件がある場合は、標高が必要になります。
 
-![vsixinstaller 前提条件がありません。](media/vsixinstaller-missing-prerequisite.png)
+![vsix インストーラーに前提条件がありません](media/vsixinstaller-missing-prerequisite.png)
 
-## <a name="decide-on-components"></a>コンポーネントを決定します。
+## <a name="decide-on-components"></a>コンポーネントの決定
 
-依存関係を調べるときに、1 つの依存関係が複数のコンポーネントにマッピングできることが表示されます。 どの依存関係は、の前提条件として指定する必要がありますが、拡張機能のような機能を備えたコンポーネントを選択することをお勧めし、も、ユーザーとコンポーネントの種類を考慮するインストール ファイルまたはほとんどの場合を判断するまたはインストールに注意してください。 ビルドが必要な前提条件が、拡張機能を実行すると、最小値のみを満たす方法で、追加の機能には、拡張機能がある特定のコンポーネントが検出されなかった場合は、休止することも推奨されます。
+依存関係を検索すると、1 つの依存関係が複数のコンポーネントにマップされる場合があります。 どの依存関係を必須コンポーネントとして指定する必要があるかを判断するには、拡張機能と同様の機能を持つコンポーネントを選択し、ユーザーと、インストールした可能性が最も高いコンポーネントの種類やインストールを気にしないコンポーネントも検討することをお勧めします。 また、必要な前提条件が、拡張機能の実行を可能にする最低限の条件のみを満たし、追加機能の場合は特定のコンポーネントが検出されない場合は休止状態になる方法で拡張機能を構築することをお勧めします。
 
-さらにガイダンスを提供するには、いくつかの一般的な拡張機能の種類と推奨される前提条件を特定しました。
+さらにガイダンスを提供するために、いくつかの一般的な拡張タイプと推奨される前提条件を特定しました。
 
-機能拡張の種類 | 表示名 | ID
+拡張機能の種類 | 表示名 | id
 --- | --- | ---
 エディター | Visual Studio のコア エディター | Microsoft.VisualStudio.Component.CoreEditor
-Roslyn | C# および Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
+ロスリン | C# および Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Managed Desktop Workload コア | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 デバッガー | Just-In-Time デバッガー | Microsoft.VisualStudio.Component.Debugger.JustInTime
 
-## <a name="find-component-ids"></a>コンポーネント Id を検索します。
+## <a name="find-component-ids"></a>コンポーネント ID の検索
 
-Visual Studio 製品ごとに並べ替えコンポーネントの一覧は、「 [Visual Studio 2017 のワークロードとコンポーネント Id](https://aka.ms/vs2017componentIDs)します。 マニフェストでは、前提条件となる Id には、これらのコンポーネント Id を使用します。
+Visual Studio 製品で並べ替えられたコンポーネントの一覧は[、Visual Studio 2017 のワークロードとコンポーネント ID](/visualstudio/install/workload-and-component-ids?view=vs-2019)にあります。 マニフェストの前提条件 ID にこれらのコンポーネント ID を使用します。
 
-どのコンポーネントには、特定のバイナリが含まれていますが不明な場合は、ダウンロード、[コンポーネント バイナリ マッピング スプレッドシート](https://aka.ms/vs2017componentid-binaries) します。
+どのコンポーネントに特定のバイナリが含まれているかわからない場合は、[コンポーネント -> バイナリ マッピング スプレッドシート](https://aka.ms/vs2017componentid-binaries)をダウンロードします。
 
-### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
+### <a name="vs2017-componentbinarymappingxlsx"></a>を 2017-コンポーネントバイナリマッピング.xlsx
 
-Excel シートには、4 つの列があります。**コンポーネント名**、 **ComponentId**、**バージョン**、および**バイナリ ファイル名/** します。  特定のコンポーネントおよびバイナリを検索するフィルターを使用できます。
+Excel シートには、**コンポーネント名、コンポーネント** **ID**、**バージョン**、バイナリ **/ファイル名**の 4 つの列があります。  フィルタを使用して、特定のコンポーネントやバイナリを検索できます。
 
-すべての参照のため最初コア エディター (Microsoft.VisualStudio.Component.CoreEditor) コンポーネントはどれを確認します。  少なくとも、コア エディター コンポーネントをすべての拡張機能の前提条件として指定する必要があります。 内のフィルターを追加、参照のままになっているのコア エディターが含まれていない、**バイナリ/ファイル名**セクションにこれらの参照のサブセットのいずれかのコンポーネントを検索します。
+すべての参照について、まずコア エディター (Microsoft.VisualStudio.Component.CoreEditor) コンポーネントに含まれるものを確認します。  少なくとも、コア エディター コンポーネントをすべての拡張機能の前提条件として指定する必要があります。 コア エディターに含まれていない参照のうち、**バイナリ /ファイル名**セクションにフィルターを追加して、これらの参照のサブセットを持つコンポーネントを検索します。
 
-次に例を示します。
+例 :
 
-* プロジェクトを参照していることを理解しているデバッガー拡張機能がある場合*VSDebugEng.dll*と*VSDebug.dll*、[フィルター] ボタンをクリックして、**バイナリ/ファイル名**ヘッダー。  "VSDebugEng.dll"を検索して選択*OK*します。  次のフィルター ボタンをクリックして、**バイナリ/ファイル名**ヘッダーをもう一度と"VSDebug.dll"を検索します。  チェック ボックスをオン**をフィルター処理の現在の選択を追加する**選択と**OK**。  なります。、**コンポーネント名**ほとんどは、コンポーネントを検索する拡張機能の種類に関連します。 この例では、Just ポイントイン タイムを選択したデバッガーし、vsixmanifest に追加します。
-* プロジェクトがデバッガー要素で処理される場合は、どのようなコンポーネントには、その名前でデバッガーが含まれている、フィルター検索ボックスに「デバッガー」を検索できます。
+* デバッガー拡張機能があり、プロジェクトに*VSDebugEng.dll*および*VSDebug.dll*への参照があることを知っている場合は、[**バイナリ/ ファイル名]** ヘッダーのフィルター ボタンをクリックします。  "VSDebugEng.dll" を検索し *、[OK]* を選択します。  次に **、バイナリ /ファイル名**ヘッダーのフィルタボタンをもう一度クリックして、「VSDebug.dll」を検索します。  [フィルタする**現在の選択を追加する**] チェック ボックスをオンにし **、[OK]** を選択します。  ここで **、コンポーネント名**を見て、拡張機能の種類に最も関連するコンポーネントを見つけます。 この例では、Just-In-Time デバッガーを選択し、それを vsixmanifest に追加します。
+* プロジェクトでデバッガー要素が処理される場合は、フィルター検索ボックスで "debugger" を検索して、その名前にデバッガーが含まれているコンポーネントを確認できます。
 
-## <a name="specify-a-visual-studio-2017-release"></a>Visual Studio 2017 リリースを指定します。
+## <a name="specify-a-visual-studio-2017-release"></a>Visual Studio 2017 リリースの指定
 
-拡張機能には、特定のバージョンの Visual Studio 2017 が必要とする場合など、15.3 でリリースされた機能に依存、VSIX のビルド番号を指定する必要があります**InstallationTarget**します。 たとえば、15.3 のリリースでは、'15.0.26730.3' のビルド番号があります。 ビルド番号のリリースのマッピングを確認できます[ここ](../install/visual-studio-build-numbers-and-release-dates.md)します。 リリース番号 '15.3' の使用については、正しく機能しません。
+たとえば、拡張機能で Visual Studio 2017 の特定のバージョンが必要な場合は、15.3 でリリースされた機能に依存し、VSIX**インストール ターゲット**でビルド番号を指定する必要があります。 たとえば、リリース 15.3 のビルド番号は '15.0.26730.3' です。 番号を構築するためのリリースのマッピングは、[ここ を参照してください](../install/visual-studio-build-numbers-and-release-dates.md)。 リリース番号 '15.3' を使用すると、正しく動作しません。
 
-拡張機能が 15.3 が必要ですか、以降では、宣言する場合、 **InstallationTarget バージョン**として [15.0.26730.3, 16.0)。
+拡張に 15.3 以上が必要な場合は **、InstallationTarget バージョン**を [15.0.26730.3, 16.0:
 
 ```xml
 <Installation>

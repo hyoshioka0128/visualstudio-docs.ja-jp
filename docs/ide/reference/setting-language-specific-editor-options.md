@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa197a855b2a4f0c33520c6b8c1a01311ab6b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645287"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "75590840"
 ---
 # <a name="set-language-specific-editor-options"></a>言語固有のエディター オプションの設定
 
@@ -45,7 +45,7 @@ C# コードでの作業における IntelliSense 入力候補一覧の動作を
 [[オプション]、[テキスト エディター]、[XAML]、[書式設定]](../../ide/reference/options-text-editor-xaml-formatting.md)\
 XAML ドキュメントに含まれる要素および属性の配置設定について説明します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [エディターのカスタマイズ](../how-to-change-text-case-in-the-editor.md)
 - [EditorConfig で移植可能なカスタム エディター設定を作成する](../../ide/create-portable-custom-editor-options.md)

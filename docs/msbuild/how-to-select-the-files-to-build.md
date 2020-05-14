@@ -7,25 +7,27 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633812"
 ---
 # <a name="how-to-select-the-files-to-build"></a>方法: ビルドするファイルを選択する
+
 複数のファイルを含むプロジェクトをビルドするときに、各ファイルを個別にプロジェクト ファイルにリストしたり、ワイルドカードを使用して、1 つのディレクトリまたは入れ子になった一連のディレクトリ内のすべてのファイルを含めたりすることができます。
 
 ## <a name="specify-inputs"></a>入力を指定する
+
 項目は、ビルドの入力を表します。 項目の詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
-ビルドのファイルを含めるには、それらのファイルが [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイル内の項目リストに含まれている必要があります。 複数のファイルを項目リストに追加するには、ファイルを個別に含めるか、ワイルドカードを使用して一度に複数のファイルを含めます。
+ビルドにファイルを含めるには、それらが MSBuild プロジェクト ファイルの項目一覧に含まれている必要があります。 複数のファイルを項目リストに追加するには、ファイルを個別に含めるか、ワイルドカードを使用して一度に複数のファイルを含めます。
 
 #### <a name="to-declare-items-individually"></a>項目を個別に宣言するには
 
@@ -33,7 +35,7 @@ ms.locfileid: "63386187"
 
     `<CSFile Include="form1.cs"/>`
 
-    または
+    or
 
     `<VBFile Include="form1.vb"/>`
 
@@ -46,11 +48,12 @@ ms.locfileid: "63386187"
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
-    または
+    or
 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>ワイルドカードを使用して入力を指定する
+
 ワイルドカードを使用して、すべてのファイルまたはサブディレクトリから特定のファイルのみを再帰的に含めることができます。 ワイルドカードの詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 次の例は、次のディレクトリとサブディレクトリ内のグラフィック ファイルを含むプロジェクトに基づいており、プロジェクト ファイルは *Project* ディレクトリに配置されています。
@@ -79,11 +82,12 @@ ms.locfileid: "63386187"
 
     `Include="Images\**\*jpgs\*.*"`
 
-    または
+    or
 
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>項目をタスクに渡す
+
 プロジェクト ファイルでは、タスクで @() の表記を使用して、項目リスト全体をビルドの入力として指定できます。 この表記を使用して、すべてのファイルを個別にリストすることも、ワイルドカードを使用することもできます。
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>すべての Visual C# ファイルまたは Visual Basic ファイルを入力として使用するには
@@ -92,16 +96,17 @@ ms.locfileid: "63386187"
 
     `<CSC Sources="@(CSFile)">...</CSC>`
 
-    または
+    or
 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。[Csc](../msbuild/csc-task.md) や [Vbc](../msbuild/vbc-task.md) などの [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクでは、`Sources` 属性を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。
+> ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。MSBuild タスクの `Sources` 属性 ([Csc](../msbuild/csc-task.md) や[Vbc](../msbuild/vbc-task.md) など) を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>例
+
 次のコード例では、すべての入力ファイルを個別に含むプロジェクトを示します。
 
 ```xml
@@ -136,6 +141,7 @@ ms.locfileid: "63386187"
 ```
 
 ## <a name="example"></a>例
+
 次のコード例では、ワイルドカードを使用してすべての *.cs* ファイルを含めます。
 
 ```xml
@@ -170,5 +176,6 @@ ms.locfileid: "63386187"
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [方法: ビルドからファイルを除外する](../msbuild/how-to-exclude-files-from-the-build.md)
 - [項目](../msbuild/msbuild-items.md)
