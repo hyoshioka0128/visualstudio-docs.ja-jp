@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: 参照マネージャーを使用して参照を追加または削除する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

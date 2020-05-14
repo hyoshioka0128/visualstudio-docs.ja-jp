@@ -1,4 +1,4 @@
----
+﻿---
 title: '[ビルドの詳細設定] ダイアログ ボックス (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

@@ -1,4 +1,4 @@
----
+﻿---
 title: ソース管理の設計に関する決定 |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual

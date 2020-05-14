@@ -1,4 +1,4 @@
----
+﻿---
 title: MSBuild プロジェクトの共通項目 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -142,5 +142,5 @@ ms.locfileid: "68160404"
 ### <a name="import"></a>インポート  
  アセンブリを表します。このアセンブリの名前空間が、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コンパイラによってインポートされます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Common MSBuild Project Properties (MSBuild プロジェクトの共通プロパティ)](../msbuild/common-msbuild-project-properties.md)

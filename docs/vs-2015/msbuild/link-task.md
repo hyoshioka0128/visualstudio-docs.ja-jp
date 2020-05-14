@@ -1,4 +1,4 @@
----
+﻿---
 title: Link タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -926,5 +926,5 @@ Visual C++ リンカー ツール (link.exe) をラップします。 リンカ�
   
    詳細については、「[/VERSION (バージョン情報)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

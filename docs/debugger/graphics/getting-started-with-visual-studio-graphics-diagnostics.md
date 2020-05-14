@@ -1,4 +1,4 @@
----
+﻿---
 title: グラフィックス診断の概要 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017

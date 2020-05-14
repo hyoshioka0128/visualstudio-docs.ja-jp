@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

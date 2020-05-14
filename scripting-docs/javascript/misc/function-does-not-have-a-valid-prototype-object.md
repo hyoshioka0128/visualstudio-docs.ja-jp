@@ -1,4 +1,4 @@
----
+﻿---
 title: 関数には、有効なプロトタイプ オブジェクトが存在しません。 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -29,5 +29,5 @@ ms.locfileid: "72574604"
 - 関数の `prototype` プロパティが有効な [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] オブジェクトを参照するようにします。  
   
 ## <a name="see-also"></a>参照  
- [Function オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [Function オブジェクト](../../javascript/reference/function-object-javascript.md)  
  [prototype プロパティ (Object)](../../javascript/reference/prototype-property-object-javascript.md)

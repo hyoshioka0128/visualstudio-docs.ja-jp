@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: キーボード主体で操作する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

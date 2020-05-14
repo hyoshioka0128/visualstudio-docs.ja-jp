@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: プロジェクト ファイルの名前または場所を参照する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -75,6 +75,6 @@ ms.locfileid: "63431391"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
 [MSBuild](msbuild.md)  
  [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)

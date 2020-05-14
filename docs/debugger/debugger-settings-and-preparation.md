@@ -1,4 +1,4 @@
----
+﻿---
 title: デバッガーの設定と準備 |Microsoft Docs
 ms.date: 08/01/2018
 ms.topic: reference

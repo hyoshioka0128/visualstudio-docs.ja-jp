@@ -1,4 +1,4 @@
----
+﻿---
 title: 正規表現 (JavaScript) では ') ' が必要です。Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

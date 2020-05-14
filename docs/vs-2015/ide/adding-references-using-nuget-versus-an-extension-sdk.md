@@ -1,4 +1,4 @@
----
+﻿---
 title: 拡張 SDK と比較して NuGet を使用した参照の追加 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

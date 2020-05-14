@@ -1,4 +1,4 @@
----
+﻿---
 title: "' return ' ステートメントが関数の外にあります |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -43,5 +43,5 @@ return [ expression ];
   
 ## <a name="see-also"></a>参照  
  [return ステートメント](../../javascript/reference/return-statement-javascript.md)   
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [Function オブジェクト](../../javascript/reference/function-object-javascript.md)   
  [caller プロパティ (Function)](../../javascript/reference/caller-property-function-javascript.md)

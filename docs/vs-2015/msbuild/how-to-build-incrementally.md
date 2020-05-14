@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: インクリメンタル ビルドを実行する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -104,7 +104,7 @@ ms.locfileid: "63431401"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ターゲット](../msbuild/msbuild-targets.md)   
  [Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [変換](../msbuild/msbuild-transforms.md)   

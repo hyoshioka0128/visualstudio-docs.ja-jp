@@ -1,4 +1,4 @@
----
+﻿---
 title: プロパティと項目の比較 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

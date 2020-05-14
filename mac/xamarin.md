@@ -14,7 +14,7 @@ ms.locfileid: "73714481"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
-[Xamarin](/xamarin) のファーストクラス サポートにより、Android、macOS、iOS、tvOS、watchOS のために機能が豊富なネイティブ エクスペリエンスを開発できます。 Xamarin.Forms のクロスプラットフォーム アプリケーションにより、ネイティブ機能へのアクセスを制限することなく、Android、iOS、macOS 間で XAML ベースの UI コードを共有できます。
+[Xamarin](/xamarin) のファーストクラス サポートにより、Android、macOS、iOS、tvOS、watchOS のための機能が豊富なネイティブ エクスペリエンスを開発できます。 Xamarin.Forms のクロスプラットフォーム アプリケーションにより、ネイティブ機能へのアクセスを制限することなく、Android、iOS、macOS 間で XAML ベースの UI コードを共有できます。
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 

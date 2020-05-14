@@ -1,4 +1,4 @@
----
+﻿---
 title: Windows スクリプト エンジン | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017

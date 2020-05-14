@@ -1,5 +1,5 @@
 ---
-title: "' = ' が必要です。 (JavaScript) |Microsoft Docs"
+title: "'=' が必要です。 (JavaScript) |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -33,5 +33,5 @@ ms.locfileid: "72573388"
     ```  
   
 ## <a name="see-also"></a>参照  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

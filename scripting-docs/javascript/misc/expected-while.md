@@ -1,5 +1,5 @@
 ---
-title: "' While ' | が必要ですMicrosoft Docs"
+title: "'While' が必要です| Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -29,5 +29,5 @@ ms.locfileid: "72575917"
 - ブロックの終わりを表す右中かっこの後ろに `while` テスト ステートメントを追加します。  
   
 ## <a name="see-also"></a>参照  
- [While ステートメント](../../javascript/reference/while-statement-javascript.md)   
+ [while ステートメント](../../javascript/reference/while-statement-javascript.md)   
  [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)

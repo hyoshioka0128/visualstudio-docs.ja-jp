@@ -1,4 +1,4 @@
----
+﻿---
 title: COM および ActiveX のデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

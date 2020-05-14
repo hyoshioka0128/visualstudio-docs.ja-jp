@@ -1,4 +1,4 @@
----
+﻿---
 title: グローバルな Windows フォームおよび Web フォームにおけるカルチャ固有のクラス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

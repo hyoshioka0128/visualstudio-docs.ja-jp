@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: ビルド ログ ファイルを表示、保存、および構成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

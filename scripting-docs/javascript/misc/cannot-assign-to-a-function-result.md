@@ -1,4 +1,4 @@
----
+﻿---
 title: 関数の結果 | を割り当てることはできません。Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myFunction = new Function("return 42;");  
     ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>参照
  [Function オブジェクト](../../javascript/reference/function-object-javascript.md)   
- [JavaScript コードの記述](../../javascript/writing-javascript-code.md)   
+ [JavaScript コードの記述](../../javascript/writing-javascript-code.md)
  [関数](../../javascript/functions-javascript.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: CL タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -803,5 +803,5 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 ## <a name="remarks"></a>解説  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: 転送 logger の作成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -41,7 +41,7 @@ ms.locfileid: "68184027"
 ## <a name="multi-processor-aware-loggers"></a>マルチプロセッサ対応の logger  
  マルチプロセッサ システムでプロジェクトをビルドする場合、各プロセッサからのビルド メッセージが自動的に一貫した順序でインタリーブされるわけではありません。 したがって、各メッセージにアタッチされる <xref:Microsoft.Build.Framework.BuildEventContext> クラスを使用して、メッセージ グループ化の優先順位を確立する必要があります。 マルチプロセッサ ビルドの詳細については、「[マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [ビルド ロガー](../msbuild/build-loggers.md)   
  [マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)

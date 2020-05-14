@@ -1,4 +1,4 @@
----
+﻿---
 title: インクリメンタル ビルド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -81,5 +81,5 @@ ms.locfileid: "68192880"
   
  これにより、ターゲットが実行された場合にのみ、CompileRan プロパティが作成され、値 `true` が指定されます。 ターゲットがスキップされた場合、CompileRan は作成されません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [ターゲット](../msbuild/msbuild-targets.md)

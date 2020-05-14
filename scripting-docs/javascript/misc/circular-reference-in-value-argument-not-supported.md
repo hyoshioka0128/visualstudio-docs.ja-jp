@@ -1,4 +1,4 @@
----
+﻿---
 title: Value 引数の循環参照はサポートされていません |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows

@@ -22,13 +22,14 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575645"
 ---
 # <a name="syntax-error-javascript"></a>構文エラー (JavaScript)
-@No__t_0 の文法規則の1つ以上に違反するステートメントを作成しました。  
+JScript ステートメントが、JScript の 1 つ以上の文法規則に違反しています。
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 示されている行番号のプログラムの構文を再確認します。  
+- 示されている行番号のプログラムの構文を再確認します。
   
-- かっこや中かっこの使用に間違いがないかを確認します。  
+- かっこや中かっこの使用に間違いがないかを確認します。
+
   
 ## <a name="see-also"></a>関連項目  
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)

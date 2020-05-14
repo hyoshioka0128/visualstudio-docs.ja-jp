@@ -1,4 +1,4 @@
----
+﻿---
 title: 項目定義 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -239,5 +239,5 @@ ms.locfileid: "63433588"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>関連項目
  [バッチ処理](../msbuild/msbuild-batching.md)

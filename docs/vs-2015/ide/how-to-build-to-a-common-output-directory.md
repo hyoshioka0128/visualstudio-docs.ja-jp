@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : 共通出力ディレクトリへのビルド | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

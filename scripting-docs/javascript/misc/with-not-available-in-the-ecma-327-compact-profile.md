@@ -26,4 +26,4 @@ ms.locfileid: "63000979"
   
  使用することはできません、Compact Profile でキーワードを使用します。  
   
- 詳細については、キーワードで、次を参照してください。[ステートメントで](../../javascript/reference/with-statement-javascript.md)します。
+ with キーワードの詳細については、[with ステートメント](../../javascript/reference/with-statement-javascript.md)を参照してください。

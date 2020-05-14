@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio 2017 での設計向けの新機能
 titleSuffix: ''
 ms.date: 11/04/2016

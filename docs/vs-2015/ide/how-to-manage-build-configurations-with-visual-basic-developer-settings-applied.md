@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: IDE アクセシビリティ オプションを設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14

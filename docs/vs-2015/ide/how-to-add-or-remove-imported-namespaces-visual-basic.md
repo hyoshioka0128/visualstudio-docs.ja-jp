@@ -1,4 +1,4 @@
----
+﻿---
 title: '方法: インポートした名前空間を追加または削除する (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
