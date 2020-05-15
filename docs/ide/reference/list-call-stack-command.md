@@ -115,5 +115,4 @@ kb 2
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
 - [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

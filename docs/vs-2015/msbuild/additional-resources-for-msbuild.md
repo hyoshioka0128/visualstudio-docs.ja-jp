@@ -40,7 +40,7 @@ ms.locfileid: "82586198"
  [Visual Studio MSBuild フォーラム](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 専用のコミュニティ フォーラム。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [MSBuild](msbuild.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)

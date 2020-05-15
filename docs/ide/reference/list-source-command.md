@@ -62,5 +62,4 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 ## <a name="see-also"></a>参照
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [コマンド ウィンドウ](../../ide/reference/command-window.md)
-
+- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)

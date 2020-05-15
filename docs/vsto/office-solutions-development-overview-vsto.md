@@ -1,5 +1,5 @@
-﻿﻿---
-title: Office ソリューション開発の概要 (VSTO)
+---
+title: オフィスソリューション開発の概要 (VSTO)
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:

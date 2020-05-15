@@ -1,5 +1,5 @@
-﻿﻿---
-title: グラフィックスイベント一覧 |Microsoft Docs
+---
+title: グラフィックス イベント リスト |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

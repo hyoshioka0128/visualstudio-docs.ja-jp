@@ -1,5 +1,4 @@
-﻿﻿---
-title: 最近使用した一覧のサブメニューへの追加 |Microsoft Docs
+title: 最近使用したリストをサブメニューに追加する |マイクロソフトドキュメント
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
