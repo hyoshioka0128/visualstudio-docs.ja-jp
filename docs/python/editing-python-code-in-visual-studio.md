@@ -150,7 +150,7 @@ commas_to_colons(1)
 ![Visual Studio のフォント オプションと色オプション](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> コードの色分け表示を無効にするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[詳細設定]** に移動し、 **[その他のオプション]**  >  **[Color names based on type]\(種類に基づく色の名前\)** をオフにします。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション - その他のオプション) を参照してください。
+> コードの色分け表示を無効にするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[詳細設定]** に移動し、 **[その他のオプション]**  >  **[Color names based on type]\(種類に基づく色の名前\)** をオフにします。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション ∸ その他のオプション) を参照してください。
 
 ## <a name="code-snippets"></a>コード スニペット
 

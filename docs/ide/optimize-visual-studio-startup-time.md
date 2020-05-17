@@ -35,7 +35,7 @@ Visual Studio で起動の遅延が検出されると、ポップアップ メ�
 
 ダイアログ ボックスには、起動のパフォーマンスに影響している拡張機能とツール ウィンドウが一覧されます。 起動時のパフォーマンスを向上させるために、拡張機能とツール ウィンドウの設定を変更することができます。
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />拡張機能の設定を変更して、起動時、ソリューションの読み込み時、および入力時のパフォーマンスを向上させるには
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />拡張機能の設定を変更して、起動時、ソリューションの読み込み時、および入力時のパフォーマンスを向上させるには
 
 1. メニュー バーで **[ヘルプ]**  >  **[Visual Studio のパフォーマンスの管理]** の順に選択して、 **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスを開きます。
 
@@ -47,7 +47,7 @@ Visual Studio で起動の遅延が検出されると、ポップアップ メ�
 
 **拡張機能マネージャー**または **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスを使用すれば、今後のセッションでいつでも拡張機能を再度有効にすることができます。
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />ツール ウィンドウの設定を変更して起動時間を向上させるには
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />ツール ウィンドウの設定を変更して起動時間を向上させるには
 
 1. メニュー バーで **[ヘルプ]**  >  **[Visual Studio のパフォーマンスの管理]** の順に選択して、 **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスを開きます。
 

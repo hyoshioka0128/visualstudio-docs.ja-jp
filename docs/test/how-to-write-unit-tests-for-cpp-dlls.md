@@ -38,7 +38,7 @@ ms.locfileid: "77279274"
 
 ## <a name="create-the-tests"></a>テストを作成する
 
-### <a name="staticLink"></a> DLL をスタティック ライブラリに変更するには
+### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> DLL をスタティック ライブラリに変更するには
 
 - DLL プロジェクトによってエクスポートされないメンバーをテストで使う必要があり、テスト対象のプロジェクトがダイナミック ライブラリとしてビルドされる場合は、これをスタティック ライブラリに変換することを検討します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "77279274"
 
   手順「[テストをオブジェクトまたはライブラリ ファイルにリンクするには](#objectRef)」を続行します。
 
-### <a name="projectRef"></a> テスト プロジェクトからエクスポートされた DLL 関数を参照するには
+### <a name="to-reference-exported-dll-functions-from-the-test-project"></a><a name="projectRef"></a> テスト プロジェクトからエクスポートされた DLL 関数を参照するには
 
 - テストする関数が DLL プロジェクトからエクスポートされる場合は、テスト プロジェクトからコード プロジェクトへの参照を追加できます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "77279274"
 
   「[単体テストを作成する](#addTests)」に進みます。
 
-### <a name="objectRef"></a> オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには
 
 - テストする関数が DLL でエクスポートされない場合は、出力された *.obj* ファイルまたは *.lib* ファイルをテスト プロジェクトの依存関係に追加できます。
 
@@ -116,7 +116,7 @@ ms.locfileid: "77279274"
 
   「[単体テストを作成する](#addTests)」に進みます。
 
-### <a name="sameProject"></a> 同じプロジェクトに単体テストを追加するには
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> 同じプロジェクトに単体テストを追加するには
 
 1. 単体テストに必要なヘッダーおよびライブラリ ファイルが含まれるように、製品コード プロジェクトのプロパティを変更します。
 
@@ -137,7 +137,7 @@ ms.locfileid: "77279274"
 
    「[単体テストを作成する](#addTests)」に進みます。
 
-## <a name="addTests"></a> 単体テストを作成する
+## <a name="write-the-unit-tests"></a><a name="addTests"></a> 単体テストを作成する
 
 1. 各単体テスト コード ファイルに、テスト対象プロジェクトのヘッダー用に `#include` ステートメントを追加します。
 

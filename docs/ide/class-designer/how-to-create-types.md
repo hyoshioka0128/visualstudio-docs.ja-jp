@@ -28,7 +28,7 @@ ms.locfileid: "75590177"
 
 C# および Visual Basic プロジェクトの新しい型を設計するには、これらをクラス ダイアグラム上で作成します。 既存の型を見る場合は、「[方法: 既存の型を表示する](how-to-view-existing-types.md)」をご覧ください。
 
-## <a name="CreateType"></a> 新しい型を作成する
+## <a name="create-a-new-type"></a><a name="CreateType"></a> 新しい型を作成する
 
 1. **クラス デザイナー**の**ツールボックス**から、いずれかをクラス ダイアグラムにドラッグします。
 
@@ -67,7 +67,7 @@ C# および Visual Basic プロジェクトの新しい型を設計するには
 
      「[メンバーの作成](creating-and-configuring-type-members.md#create-members)」をご覧ください。
 
-## <a name="CustAttributeType"></a> カスタム属性を型に適用する
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> カスタム属性を型に適用する
 
 1. クラス ダイアグラムで型の図形をクリックします。
 
@@ -77,7 +77,7 @@ C# および Visual Basic プロジェクトの新しい型を設計するには
 
    カスタム属性が型に適用されます。
 
-## <a name="CustAttributeMember"></a> カスタム属性を型のメンバーに適用する
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> カスタム属性を型のメンバーに適用する
 
 1. クラス ダイアグラムの型の図形でメンバーの名前をクリックするか、[クラスの詳細] ウィンドウでその行をクリックします。
 

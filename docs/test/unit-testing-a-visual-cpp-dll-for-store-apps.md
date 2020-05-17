@@ -22,7 +22,7 @@ ms.locfileid: "77274446"
 
 このトピックでは、テストする単体テストと DLL に 1 つの Visual Studio ソリューションと個別のプロジェクトも作成します。 また、DLL プロジェクトに単体テストを直接含めることも、単体テストと DLL ごとに個別のソリューションを作成することもできます。 使用できる構造体のヒントについては、「[テスト エクスプローラーを使用した既存の C++ アプリケーションの単体テスト](../test/how-to-use-microsoft-test-framework-for-cpp.md)」をご覧ください。
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
 
 ::: moniker range="vs-2019"
 
@@ -58,7 +58,7 @@ ms.locfileid: "77274446"
 
          テストが実行されると、各テスト クラスのインスタンスが作成されます。 テスト メソッドが呼び出される順序は決まっていません。 各モジュール、クラス、またはメソッドの前後に呼び出される特殊なメソッドを定義することができます。 詳細については、「[Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用](how-to-use-microsoft-test-framework-for-cpp.md)」をご覧ください。
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> テストがテスト エクスプローラーで実行されることを確認する
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> テストがテスト エクスプローラーで実行されることを確認する
 
 1. 幾らかのテスト コードを挿入します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "77274446"
 
      ![テスト エクスプローラー](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> DLL プロジェクトをソリューションに追加する
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> DLL プロジェクトをソリューションに追加する
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ ms.locfileid: "77274446"
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a> DLL 関数をテスト コードに表示させる
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a> DLL 関数をテスト コードに表示させる
 
 1. RooterLibTests プロジェクトに RooterLib を追加します。
 
@@ -196,7 +196,7 @@ ms.locfileid: "77274446"
 
    テストとコード プロジェクトをセット アップして、コード プロジェクトで関数を実行するテストを実行できることを確認しました。 ここで、実際のテストおよびコードの記述を開始できます。
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> テストを繰り返し増やして成功させる
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> テストを繰り返し増やして成功させる
 
 1. 新しいテストを追加します。
 
@@ -256,7 +256,7 @@ ms.locfileid: "77274446"
 > [!TIP]
 > 一度に 1 つのテストを追加してコードを開発します。 各反復処理の後にすべてのテストが合格することを確認します。
 
-## <a name="Debug_a_failing_test"></a> 失敗したテストをデバッグする
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> 失敗したテストをデバッグする
 
 1. *unittest1.cpp* に別のテストを追加します。
 
@@ -325,7 +325,7 @@ ms.locfileid: "77274446"
 
    ![すべてのテストの成功](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> テストを変更せずにコードをリファクタリングする
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> テストを変更せずにコードをリファクタリングする
 
 1. `SquareRoot` 関数の計算全体を簡略化します。
 
