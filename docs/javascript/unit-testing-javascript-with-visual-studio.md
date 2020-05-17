@@ -130,7 +130,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > *vstest.console.exe* が見つからないことを示すエラーが発生する場合は、通常のコマンド プロンプトではなく開発者コマンド プロンプトを開いていることを確認してください。
 
-## <a name="addingFramework"></a>単体テスト フレームワークのサポートを追加する
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>単体テスト フレームワークのサポートを追加する
 
 JavaScript を使って検出と実行のロジックを実装することで、新しいテスト フレームワークのサポートを追加できます。 そのためには、次の場所の下に、テスト フレームワークの名前でフォルダーを追加します。
 

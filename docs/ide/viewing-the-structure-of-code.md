@@ -121,7 +121,7 @@ Visual Studio Enterprise があるなら、*コード マップ*を使用して�
 |**Copy** に設定する必要があります|選択したノードをコピーします (そのサブ ノードはコピーしません)。|
 |**[更新]**|情報を更新します。|
 
-## <a name="BKMK_ObjectBrowser"></a> オブジェクト ブラウザー
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> オブジェクト ブラウザー
 
 **[オブジェクト ブラウザー]** ウィンドウは、プロジェクトのコードの説明を表示します。
 
