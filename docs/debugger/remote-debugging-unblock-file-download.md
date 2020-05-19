@@ -1,5 +1,5 @@
 ---
-title: リモート ツールのダウンロードをブロック解除します。
+title: リモート ツールのダウンロードのブロックを解除する
 ms.date: 07/19/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,32 +11,32 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62903026"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>方法: Windows Server のリモート ツールのダウンロードをブロック解除します。
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>方法: Windows Server でリモート ツールのダウンロードのブロックを解除する
 
-Windows Server 上の Internet Explorer で、既定のセキュリティ設定により、リモート ツールなどのコンポーネントをダウンロードする時間がかかる。
+Windows Server の Internet Explorer の既定のセキュリティ設定では、リモート ツールなどのコンポーネントのダウンロードに時間がかかることがあります。
 
-* Web サイトを開くと、リソースを含むドメインが明示的に許可しない限り、web リソースへのアクセスが阻止される Internet explorer セキュリティ強化の構成が有効になっている (つまり、信頼されている)。 この設定を無効にすることができます、私たちは勧めしませんセキュリティ リスクを表すことができるため。
+* [セキュリティ強化の構成] が Internet Explorer で有効になっています。これにより、リソースが含まれるドメインが明示的に許可されている (つまり、信頼されている) 場合を除き、Web サイトを開いたり、Web リソースにアクセスしたりすることができません。 この設定は無効にすることができますが、セキュリティ上のリスクが生じる可能性があるため、お勧めしません。
 
-* 既定の設定、Windows Server 2016 で**インターネット オプション** > **セキュリティ** > **インターネット** >  **カスタム レベル** > **ダウンロード**ファイルのダウンロードも無効にします。 Windows サーバー上で直接リモート ツールをダウンロードする場合は、ファイルのダウンロードを有効にする必要があります。
+* また、Windows Server 2016 では、 **[インターネット オプション]**  >  **[セキュリティ]**  >  **[インターネット]**  >  **[レベルのカスタマイズ]**  >  **[ダウンロード]** の既定の設定により、ファイルのダウンロードが無効にされます。 リモート ツールを Windows Server に直接ダウンロードする場合は、ファイルのダウンロードを有効にする必要があります。
 
-Windows Server 上のツールをダウンロードするには、次のいずれかを勧め。
+Windows Server でツールをダウンロードするには、次のいずれかをお勧めします。
 
-* 1 つ実行中の Visual Studio などの別のコンピューターにリモート ツールをダウンロードし、コピー、 *.exe*ファイルを Windows サーバーにします。
+* Visual Studio を実行しているコンピューターなど、別のコンピューターでリモート ツールをダウンロードし、 *.exe* ファイルを Windows Server にコピーします。
 
-* リモート デバッガーを実行する[ファイル共有から](../debugger/remote-debugging.md#fileshare_msvsmon)Visual Studio コンピューターにします。
+* Visual Studio コンピューターで[ファイル共有から](../debugger/remote-debugging.md#fileshare_msvsmon)リモート デバッガーを実行します。
 
-* Windows サーバー上で直接リモート ツールをダウンロードし、信頼済みサイトを追加するプロンプトに同意します。 多くの場合、最新の web サイトには、これにより、膨大な数のため、多くのサードパーティのリソースが含まれます。 さらに、リダイレクトされたリンクは、手動で追加する必要があります。 ダウンロードを開始する前に、信頼済みサイトの一部を追加することができます。 移動して**インターネット オプション > セキュリティ > 信頼済みサイト > サイト**し、次のサイトを追加します。
+* リモート ツールを Windows Server に直接ダウンロードし、プロンプトに従って、信頼済みサイトを追加します。 多くの場合、最新の Web サイトには多数のサード パーティのリソースが含まれているため、数多くのプロンプトが表示される可能性があります。 さらに、リダイレクトされたリンクがあれば、手動で追加する必要があります。 ダウンロードを開始する前に、信頼済みサイトの一部を追加することを選択できます。 **[インターネット オプション] > [セキュリティ] > [信頼済みサイト] > [サイト]** にアクセスして、次のサイトを追加します。
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
-  * 方法: 空
+  * about:blank
 
-  My.visualstudio.com にデバッガーの古いバージョンは、これらの追加サイトをそのログインが成功したかどうかを確認を追加します。
+  my.visualstudio.com 上のデバッガーのバージョンが古い場合は、次のサイトを追加して、ログインが成功することを確認します。
 
   * microsoft.com
   * go.microsoft.com
@@ -51,8 +51,8 @@ Windows Server 上のツールをダウンロードするには、次のいず�
   * vlscppe.microsoft.com
   * query.prod.cms.rt.microsoft.com
 
-    選択して、リモート ツールのダウンロード中にこれらのドメインを追加する場合は**追加**入力を求められたらします。
+    リモート ツールのダウンロード中にこれらのドメインの追加を選択する場合は、プロンプトが表示されたら、 **[追加]** を選択します。
 
-    ![ブロックされたコンテンツ ダイアログ ボックス](../debugger/media/remotedbg-blocked-content.png)
+    ![ブロックされたコンテンツのダイアログ ボックス](../debugger/media/remotedbg-blocked-content.png)
 
-    ソフトウェアをダウンロードすると、さまざまな web サイトのスクリプトおよびリソースを読み込むためのアクセス許可を与えるいくつか追加の要求が表示されます。 My.visualstudio.com でそのログインが成功したかどうかを確認する追加のドメインを追加することをお勧めします。
+    ソフトウェアをダウンロードすると、さまざまな Web サイトのスクリプトとリソースを読み込むためのアクセス許可を付与するための追加の要求を受け取ります。 my.visualstudio.com で、ドメインを追加して、ログインが成功することを確認することお勧めします。

@@ -1,5 +1,5 @@
 ---
-title: リモート コンピューター上の UWP アプリのデバッグ |Microsoft Docs
+title: リモート マシンの UWP アプリをデバッグする | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -15,96 +15,96 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62902881"
 ---
-# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Visual Studio からリモート コンピューター上の UWP アプリをデバッグします。
+# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>リモート マシンの UWP アプリを Visual Studio からデバッグする
 
-Visual Studio を使用して、実行、デバッグ、プロファイル、および別のコンピューターまたはデバイス上のユニバーサル Windows プラットフォーム (UWP) アプリをテストすることができます。 Visual Studio コンピューターがタッチ、位置情報、または物理的な方向など、UWP 固有の機能をサポートしていない場合は、リモート コンピューターで UWP アプリを実行するいると便利です。
+Visual Studio を使用して、別のコンピューターまたはデバイス上のユニバーサル Windows プラットフォーム (UWP) アプリを実行、デバッグ、プロファイリング、テストすることができます。 リモート マシンで UWP アプリを実行するのは、Visual Studio コンピューターで、タッチ、地理的位置、物理的な方向などの UWP 固有の機能がサポートされていない場合に特に便利です。
 
-## <a name="BKMK_Prerequisites"></a> 必要条件
+## <a name="prerequisites"></a><a name="BKMK_Prerequisites"></a> 必要条件
 
-Visual Studio からリモート デバイスで UWP アプリをデバッグします。
+リモート デバイスの UWP アプリを Visual Studio からデバッグするには:
 
-- リモート デバッグ用には、Visual Studio プロジェクトを構成する必要があります。
-- Visual Studio コンピューターとリモート コンピューターをネットワーク経由で接続されているか、USB またはイーサネット ケーブルによって直接接続されています。 インターネットを介したデバッグはサポートされません。
-- 必要があります[開発者モードを有効に](/windows/uwp/get-started/enable-your-device-for-development)Visual Studio コンピューターとリモート コンピューターの両方でします。
-- リモート コンピューターには、Visual Studio のリモート ツールが実行しなければなりません。
-  - 一部の Windows 10 のバージョンが起動し、リモート ツールを自動的に実行します。 それ以外の場合、[をインストールして Visual Studio のリモート ツールを実行](#BKMK_download)します。
-  - 10 の Windows Mobile デバイスを必要としたり、リモート ツールをサポートしないでください。
+- Visual Studio プロジェクトは、リモート デバッグ用に構成されている必要があります。
+- リモート マシンと Visual Studio コンピューターは、ネットワークを介して接続されているか、USB またはイーサネット ケーブルを使って直接接続されている必要があります。 インターネットを介したデバッグはサポートされません。
+- Visual Studio コンピューターとリモート マシンの両方で、[開発者モードを有効にする](/windows/uwp/get-started/enable-your-device-for-development)必要があります。
+- リモート コンピューターで、Remote Tools for Visual Studio を実行している必要があります。
+  - Windows 10 のバージョンによっては、リモート ツールが自動的に起動され、実行されます。 それ以外の場合は、[Remote Tools for Visual Studio をインストールして実行します](#BKMK_download)。
+  - Windows Mobile 10 デバイスでは、リモート ツールは必要なく、サポートされていません。
 
-## <a name="BKMK_ConnectVS"></a> リモート デバッグ用の Visual Studio プロジェクトを構成します。
-<a name="BKMK_DirectConnect"></a> プロジェクトを使用する**プロパティ**に接続するリモート デバイスを指定します。 設定は、プログラミング言語によって異なります。
+## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a> リモート デバッグ用に Visual Studio プロジェクトを構成する
+<a name="BKMK_DirectConnect"></a> プロジェクトの**プロパティ**を使用して、接続先のリモート デバイスを指定します。 設定は、プログラミング言語によって異なります。
 
 > [!CAUTION]
-> 既定では、プロパティ ページ設定**ユニバーサル (暗号化されていないプロトコル)** として、**認証の種類**は Windows 10 のリモート接続します。 設定する必要があります**認証なし**リモート デバッガーに接続します。 **ユニバーサル (暗号化されていないプロトコル)** と**認証なし**プロトコルがありますいないネットワーク セキュリティ、開発とリモート コンピューターの間で渡されるデータは脆弱です。 悪意のあるまたは悪意のあるトラフィックのリスク、これらは信頼されたネットワークをのみの認証の種類をいないことを確認を選択します。
+> Windows 10 リモート接続の場合、既定では、プロパティ ページの **[認証の種類]** に **[ユニバーサル (暗号化されていないプロトコル)]** が設定されます。 リモート デバッガーに接続するには、場合によって **[認証]** を設定する必要があります。 **[ユニバーサル (暗号化されていないプロトコル)]** および **[認証なし]** プロトコルにはネットワーク セキュリティがないため、開発用コンピューターとリモート マシンの間で受け渡されるデータは脆弱です。 これらの認証の種類は、悪意のあるトラフィックや敵対的なトラフィックのリスクがないことが確実な信頼されるネットワークに対してのみ選択してください。
 >
->選択した場合**Windows 認証**の**認証の種類**、デバッグするときに、リモート コンピューターにサインインする必要があります。 リモート デバッガーを実行する必要がありますも**Windows 認証**モードは、Visual Studio コンピューターと同じユーザー アカウントとします。
+>**[認証の種類]** に **[Windows 認証]** を選択した場合は、デバッグ時にリモート マシンにサインインする必要があります。 リモート デバッガーも、Visual Studio コンピューターと同じユーザー アカウントを使用して **Windows 認証** モードで実行されている必要があります。
 
-### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 構成、C#または Visual Basic プロジェクトのリモート デバッグ
+### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> リモート デバッグ用に C# または Visual Basic プロジェクトを構成する
 
-1. 選択、C#または Visual Studio で Visual Basic プロジェクト**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、キーを押して**Alt** + **入力**、または右クリックし、選択**プロパティ**します。
+1. Visual Studio の**ソリューション エクスプローラー**で C# または Visual Basic プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** を押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[デバッグ]** タブを選択します。
 
-1. **ターゲット デバイス**を選択します**リモート マシン**リモート コンピューターの場合、または**デバイス**の直接接続されている 10 の Windows Mobile デバイス。
+1. **[ターゲット デバイス]** で、リモート コンピューターの場合は **[リモート コンピューター]** 、直接接続されている Windows Mobile 10 デバイスの場合は **[デバイス]** を選択します。
 
-1. リモート マシンの場合に、ネットワーク名または IP アドレスを入力してください、**リモート マシン**フィールド、または選択**検索**でデバイスを検索する、[リモート接続 ダイアログ ボックス](#remote-connections)。
+1. リモート マシンの場合は、[[リモート接続] ダイアログ ボックス](#remote-connections)で **[リモート コンピューター]** フィールドにネットワーク名または IP アドレスを入力するか、 **[検索]** を選択してデバイスを検索します。
 
-    ![リモート デバッグ用のプロジェクトのプロパティを管理](../debugger/media/vsrun_managed_projprop_remote.png "デバッグ マネージ プロジェクトのプロパティ")
+    ![リモート デバッグ用のマネージド プロジェクト プロパティ](../debugger/media/vsrun_managed_projprop_remote.png "マネージド デバッグ プロジェクト プロパティ")
 
-### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 構成、C++リモート デバッグ用のプロジェクト
+### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> リモートデバッグ用に C++ プロジェクトを構成する
 
-1. 選択、 C++ Visual Studio でプロジェクト**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
+1. Visual Studio の**ソリューション エクスプローラー**で C++ プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** を押すか、右クリックして **[プロパティ]** を選択します。
 
-1. 選択、**デバッグ**タブ。
+1. **[デバッグ]** タブを選択します。
 
-3. **起動するデバッガー**を選択します**リモート マシン**リモート コンピューターの場合、または**デバイス**の直接接続されている 10 の Windows Mobile デバイス。
+3. **[起動するデバッガー]** で、リモート コンピューターの場合は **[リモート コンピューター]** 、直接接続されている Windows Mobile 10 デバイスの場合は **[デバイス]** を選択します。
 
-1. リモート マシンでは、次のように入力しますまたは、ネットワーク名または IP アドレスを選択して、**マシン名**フィールド、またはドロップ ダウンして**検索**でデバイスを検索する、[リモート接続 ダイアログ ボックス](#remote-connections)。
+1. リモート マシンの場合は、[[リモート接続] ダイアログ ボックス](#remote-connections)で **[コンピューター名]** フィールドにネットワーク名または IP アドレスを入力または選択するか、ドロップダウンして **[検索]** を選択してデバイスを検索します。
 
-    ![リモート デバッグ用の C++ プロジェクト プロパティ](../debugger/media/vsrun_cpp_projprop_remote.png "C++ のデバッグ プロジェクト プロパティ")
+    ![リモート デバッグ用の C++ プロジェクト プロパティ](../debugger/media/vsrun_cpp_projprop_remote.png "C++ デバッグ プロジェクト プロパティ")
 
-### <a name="remote-connections"></a> リモート接続 ダイアログ ボックスを使用します。
+### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> [リモート接続] ダイアログ ボックスを使用する
 
-**リモート接続**ダイアログ ボックスで、特定のリモート コンピューター名または IP アドレスを検索したり、丸め矢印更新アイコンを選択して接続を自動検出します。 ダイアログ ボックスでは、ローカル サブネット上のリモート デバッガーを現在実行されているデバイスのみを検索します。 すべてのデバイスで検出できる、**リモート接続** ダイアログ ボックス。
+**[リモート接続]** ダイアログ ボックスでは、特定のリモート コンピューター名または IP アドレスを検索したり、最新の情報に更新する丸い矢印のアイコンを選択して接続を自動検出したりすることができます。 このダイアログ ボックスでは、リモート デバッガーを現在実行しているローカル サブネット上のデバイスのみが検索されます。 **[リモート接続]** ダイアログ ボックスですべてのデバイスを検出できるわけではありません。
 
- ![リモート接続 ダイアログ ボックス](../debugger/media/vsrun_selectremotedebuggerdlg.png "リモート接続 ダイアログ ボックス")
+ ![[リモート接続] ダイアログ ボックス](../debugger/media/vsrun_selectremotedebuggerdlg.png "[リモート接続] ダイアログ")
 
 >[!TIP]
->名前でリモート デバイスに接続できない場合は、IP アドレスを使用してみてください。 リモートのデバイスで、IP アドレスを確認する次のように入力します。 **ipconfig**コマンド ウィンドウにします。 IP アドレスは、 **IPv4 アドレス**します。
+>名前を指定してリモート デバイスに接続できない場合は、IP アドレスを使用してみてください。 IP アドレスを確認するには、リモート デバイスのコマンド ウィンドウに「**ipconfig**」と入力します。 IP アドレスは **IPv4 アドレス**として表示されます。
 
-## <a name="BKMK_download"></a> Remote Tools for Visual Studio をダウンロードしてインストールする
+## <a name="download-and-install-the-remote-tools-for-visual-studio"></a><a name="BKMK_download"></a> Remote Tools for Visual Studio をダウンロードしてインストールする
 
-リモート コンピューター上のアプリをデバッグする Visual Studio は、リモート コンピューターする必要があります実行されている Remote Tools for Visual Studio。
+Visual Studio でリモート コンピューター上のアプリをデバッグするには、リモート コンピューターで Remote Tools for Visual Studio が実行されている必要があります。
 
-- 10 の Windows Mobile デバイスは必要があります。 またはリモート ツールをサポートしていないしないでください。
-- 作成者を実行している Windows 10 Pc が (バージョン 1703) を更新し、後で、Windows 10 の Xbox、IoT、HoloLens デバイス リモート ツールのインストールに自動的にアプリを展開するときにします。
-- 前の作成者の更新プログラムの Windows 10 Pc にする必要があります手動でダウンロード、インストール、およびデバッグを開始する前に、リモート コンピューターでリモート ツールを実行します。
+- Windows Mobile 10 デバイスでは、リモート ツールは必要なく、サポートもされていません。
+- Creators Update (バージョン 1703) 以降を実行している Windows 10 PC、Windows 10 の Xbox、IoT、HoloLens デバイスでアプリを展開するとリモート ツールが自動的にインストールされます。
+- Creators Update より前の Windows 10 PC では、デバッグを開始する前に、リモート コンピューターでリモート ツールを手動でダウンロードしてインストールし、実行する必要があります。
 
-**ダウンロードして、リモート ツールをインストールします。**
+**リモート ツールをダウンロードしてインストールするには:**
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="BKMK_setup"></a> リモート ツールを構成します。
+### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a> リモート ツールを構成する
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-## <a name="BKMK_RunRemoteDebug"></a> UWP アプリをリモートでデバッグします。
+## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a> UWP アプリをリモートでデバッグする
 
-リモート デバッグとローカル デバッグ同様に機能します。
+リモート デバッグはローカル デバッグと同じように動作します。
 
-1. Windows 10 の以前の作成者の更新プログラムのバージョンでは、必ず、リモート デバッグ モニター (*msvsmon.exe*) がリモート デバイスで実行されています。
+1. Windows 10 の Creators Update より前のバージョンでは、リモート デバッグ モニター (*msvsmon.ex*) がリモート デバイスで実行されていることを確認してください。
 
-1. Visual Studio コンピューターでは、必ず、適切なデバッグ ターゲット (**リモート マシン**または**デバイス**)、ツールバーの緑色の矢印の横に表示します。
+1. Visual Studio コンピューターで、ツールバーの緑色の矢印の横に適切なデバッグ ターゲット ( **[リモート コンピューター]** または **[デバイス]** ) が表示されていることを確認します。
 
-1. 選択してデバッグを開始**デバッグ** > **デバッグの開始**を**F5**、またはツールバーの緑色の矢印を選択します。
+1. デバッグを開始するには、 **[デバッグ]**  >  **[デバッグの開始]** を選択する、**F5** を押す、またはツールバーの緑色の矢印を選択します。
 
-   プロジェクトは再コンパイル、展開し、リモート デバイスで開始します。 デバッガーがブレークポイントでは、実行を中断しに、オーバー、およびコードからステップすることができます。
+   プロジェクトが再コンパイルされ、リモート デバイスに展開され起動されます。 デバッガーにより、ブレークポイントで実行が中断され、コードをステップ イン、ステップ オーバー、ステップ アウトできます。
 
-1. 必要に応じて、選択**デバッグ** > **デバッグの停止**またはキーを押します**Shift**+**F5**デバッグを停止してリモート アプリケーションを閉じます。
+1. 必要に応じて、 **[デバッグ]**  >  **[デバッグの停止]** を選択するか、**Shift**+**F5** を押してデバッグを停止し、リモート アプリを閉じます。
 
 ## <a name="see-also"></a>関連項目
 - [高度なリモート配置オプション](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)

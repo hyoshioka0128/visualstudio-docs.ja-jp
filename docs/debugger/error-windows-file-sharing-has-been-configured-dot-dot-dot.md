@@ -1,5 +1,5 @@
 ---
-title: エラー :Windows ファイル共有が構成されました... |Microsoft Docs
+title: エラー :Windows ファイル共有が構成されました... | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 89224dc5394f248ea82d428731ef387cb705ff27
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62850051"
@@ -38,7 +38,7 @@ ms.locfileid: "62850051"
 
      . リモート コンピューターから切断します。次に、自分のアカウント名を使用して他のコンピューターに接続するようにファイル共有を再構成します。
 
-    1. **[スタート]** メニューの **[アクセサリ]** をポイントして、**[コマンド プロンプト]** をクリックします。
+    1. **[スタート]** メニューの **[アクセサリ]** をポイントして、 **[コマンド プロンプト]** をクリックします。
 
     2. Windows のコマンド プロンプトで、次のように入力します。
 

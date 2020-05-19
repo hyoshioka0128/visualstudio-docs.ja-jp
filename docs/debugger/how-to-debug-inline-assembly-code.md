@@ -1,5 +1,5 @@
 ---
-title: '方法: インライン アセンブラー コードのデバッグ |Microsoft Docs'
+title: '方法: インライン アセンブラー コードをデバッグする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62894301"
@@ -35,9 +35,9 @@ ms.locfileid: "62894301"
 
 ## <a name="debug-inline-assembly-code"></a>インライン アセンブラー コードをデバッグする
 
-1. アセンブリ命令を表示するには、**[逆アセンブリ]** ウィンドウを使用します。
+1. アセンブリ命令を表示するには、 **[逆アセンブリ]** ウィンドウを使用します。
 
-2. レジスタの内容を表示するには、**[レジスタ]** ウィンドウを使用します。
+2. レジスタの内容を表示するには、 **[レジスタ]** ウィンドウを使用します。
 
 ## <a name="see-also"></a>関連項目
 

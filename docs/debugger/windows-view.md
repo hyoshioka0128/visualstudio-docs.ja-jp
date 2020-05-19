@@ -1,5 +1,5 @@
 ---
-title: Windows の表示 |Microsoft Docs
+title: ウィンドウ ビュー | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,38 +14,38 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62900861"
 ---
 # <a name="windows-view"></a>ウィンドウ ビュー
-最初に開いたとき Spy++ は、Windows ビューには、システム内のすべての windows とコントロールのツリーが表示されます。 ウィンドウ ハンドルとクラス名が表示されます。 現在のデスクトップ ウィンドウでは、ツリーの最上部にします。 その他のすべての windows は、デスクトップの子であるし、標準的なウィンドウの階層構造に従って一覧表示されます。 展開できる一覧がその親の下にインデントに兄弟ウィンドウが表示されます。
+最初に Spy++ を開いたとき、ウィンドウ ビューには、システム内のすべてのウィンドウとコントロールのツリーが表示されます。 ウィンドウ ハンドルとクラス名が表示されます。 現在のデスクトップ ウィンドウがツリーの一番上にあります。 その他すべてのウィンドウはデスクトップの子であり、標準のウィンドウ階層に従って一覧表示されます。 兄弟ウィンドウは、その親の下でインデントされ、展開可能な一覧として表示されます。
 
- 次の図は、最上位ノードを展開で一般的な Windows spy++ ビューを示します。
+ 次の図は、最上位ノードが展開された一般的な Spy++ ウィンドウ ビューを示しています。
 
- ![Spy&#43; &#43; Windows ビュー](../debugger/media/spy--_windowsview.png "スパイ + _WindowsView") spy++ Windows ビュー
+ ![Spy&#43;&#43; ウィンドウ ビュー](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Spy++ ウィンドウ ビュー
 
- 現在のデスクトップ ウィンドウでは、ツリーの最上部にします。 その他のすべての windows は、デスクトップの子であるし、は、標準ウィンドウの階層に応じて兄弟ウィンドウが Z オーダーの順に一覧表示します。 展開したり、クリックして、ツリーの任意の親ノードを折りたたむ、+ または - 記号、ノードの横にあります。
+ 現在のデスクトップ ウィンドウがツリーの一番上にあります。 その他すべてのウィンドウはデスクトップの子であり、兄弟ウィンドウが Z オーダーによって並べ替えられ、標準のウィンドウ階層に従って一覧表示されます。 ノードの横にある [+] または [-] をクリックすると、ツリーの親ノードを展開または折りたたむことができます。
 
- Windows ビューにフォーカスがある場合のファインダー ツールを使用することができます、[ウィンドウ検索 ダイアログ ボックス](../debugger/window-search-dialog-box.md)システムに、ウィンドウを開いてから情報を表示します。
+ ウィンドウ ビューにフォーカスがある場合は、[[ウィンドウ検索] ダイアログ ボックス](../debugger/window-search-dialog-box.md)のファインダー ツールを使用して、システムで開いている任意のウィンドウの情報を表示できます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [方法: ファインダー ツールを使用して、](../debugger/how-to-use-the-finder-tool.md)このツールがウィンドウのプロパティまたはメッセージをスキャンする方法を示しています。
+ [方法: ファインダー ツールの使用](../debugger/how-to-use-the-finder-tool.md) このツールでプロパティまたはメッセージをウィンドウからスキャンする方法が表示されます。
 
- [方法: Windows のビューでウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md)Windows ビューで特定のウィンドウを検索する方法について説明します。
+ [方法: ウィンドウ ビューでのウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md) ウィンドウ ビューで特定のウィンドウを検索する方法について説明します。
 
- [方法: ウィンドウのプロパティを表示](../debugger/how-to-display-window-properties.md)ウィンドウ プロパティ ダイアログ ボックスを開くために m プロシージャ。
+ [方法: [ウィンドウ プロパティ] の表示](../debugger/how-to-display-window-properties.md) [ウィンドウ プロパティ] ダイアログ ボックスを開くためのプロシージャ。
 
 ## <a name="related-sections"></a>関連項目
- [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
 
- [Spy++ の使用](../debugger/using-spy-increment.md)の spy++ ツールを紹介し、使用する方法について説明します。
+ [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 
- [検索ウィンドウ ダイアログ ボックス](../debugger/find-window-dialog-box.md)プロパティまたは特定のウィンドウからメッセージを表示するために使用します。
+ [[ウィンドウ検索] ダイアログ ボックス](../debugger/find-window-dialog-box.md) 特定のウィンドウからのプロパティまたはメッセージを表示するために使用されます。
 
- [ウィンドウ検索 ダイアログ ボックス](../debugger/window-search-dialog-box.md)Windows ビューで特定のウィンドウのノードを検索するために使用します。
+ [[ウィンドウ検索] ダイアログ ボックス](../debugger/window-search-dialog-box.md) ウィンドウ ビューで特定のウィンドウのノードを検索するために使用されます。
 
- [ウィンドウのプロパティ ダイアログ ボックス](../debugger/window-properties-dialog-box.md)Windows ビューで選択したウィンドウのプロパティを表示するために使用します。
+ [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md) ウィンドウ ビューで選択したウィンドウのプロパティを表示するために使用します。
 
- [Spy++ リファレンス](../debugger/spy-increment-reference.md)各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
+ [Spy++ リファレンス](../debugger/spy-increment-reference.md) Spy++ の各メニューとダイアログ ボックスについて説明するセクションが含まれています。

@@ -1,5 +1,5 @@
 ---
-title: Spy++ ヘルプの著作権 |Microsoft Docs
+title: Spy++ ヘルプの著作権表記 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d16628dc634fe58843c71867b4795dae21a6341f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62565499"

@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンド |Microsoft Docs
+title: メニュー コマンド | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62931309"
 ---
 # <a name="menu-commands"></a>メニュー コマンド
-このセクションでは、ヘルプ トピックは、spy++ メニューで使用できるコマンドを一覧表示します。
+このセクションのヘルプ トピックには、Spy++ メニューで使用できるコマンドが一覧表示されています。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [メニュー コマンドをスパイ](../debugger/spy-menu-commands.md)から使用できる各コマンドについて説明します、**スパイ**メニュー。
+ [[Spy] メニューのコマンド](../debugger/spy-menu-commands.md) **[Spy]** メニューから使用できる各コマンドについて説明します。
 
- [メニュー コマンドをツリー](../debugger/tree-menu-commands.md)から使用できる各コマンドについて説明します、**ツリー**メニュー。
+ [[ツリー] メニューのコマンド](../debugger/tree-menu-commands.md) **[ツリー]** メニューから使用できる各コマンドについて説明します。
 
- [メニュー コマンドを検索](../debugger/search-menu-commands.md)から使用できる各コマンドについて説明します、**検索**メニュー。
+ [[検索] メニューのコマンド](../debugger/search-menu-commands.md) **[検索]** メニューから使用できる各コマンドについて説明します。
 
- [メニュー コマンドを表示](../debugger/view-menu-commands.md)から使用できる各コマンドについて説明します、**ビュー**メニュー。
+ [[表示] メニューのコマンド](../debugger/view-menu-commands.md) **[表示]** メニューから使用できる各コマンドについて説明します。
 
- [メニュー コマンドのメッセージ](../debugger/messages-menu-commands.md)から使用できる各コマンドについて説明します、**メッセージ**メニュー。
+ [[メッセージ] メニューのコマンド](../debugger/messages-menu-commands.md) **[メッセージ]** メニューから使用できる各コマンドについて説明します。
 
- [ウィンドウのメニュー コマンド](../debugger/window-menu-commands.md)から使用できる各コマンドについて説明します、**ウィンドウ**メニュー。
+ [[ウィンドウ] メニューのコマンド](../debugger/window-menu-commands.md) **[ウィンドウ]** メニューから使用できる各コマンドについて説明します。
 
- [[ヘルプ] メニューのコマンド](../debugger/help-menu-commands.md)から使用できる各コマンドについて説明します、**ヘルプ**メニュー。
+ [[ヘルプ] メニューのコマンド](../debugger/help-menu-commands.md) **[ヘルプ]** メニューから使用できる各コマンドについて説明します。
 
 ## <a name="related-sections"></a>関連項目
- [Spy++ の使用](../debugger/using-spy-increment.md)の spy++ ツールを紹介し、使用する方法について説明します。
+ [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 
- [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
- [Spy++ リファレンス](../debugger/spy-increment-reference.md)ここを含み、各 spy++ のダイアログ ボックスについて説明するセクションします。
+ [Spy++ リファレンス](../debugger/spy-increment-reference.md) このセクションと、各 Spy++ ダイアログ ボックスについて説明するセクションが含まれています。

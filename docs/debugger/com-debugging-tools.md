@@ -1,5 +1,5 @@
 ---
-title: COM デバッグツール |Microsoft Docs
+title: COM 用のデバッグ ツール | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
 ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/24/2019
 ms.locfileid: "71211284"
@@ -46,5 +46,5 @@ MFC ActiveX サンプルの OCLIENT および SUPERPAD も、アプリケーシ�
 - [COM 用のデバッグ ツール](../debugger/com-debugging-tools.md)
 - [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
-- [OCLIENT のサンプル:ビジュアル編集コンテナーアプリケーションを示します。](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [スーパーパッドのサンプル:CEditView を使用してテキストを編集するビジュアル編集サーバーの例を示します。](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [OCLIENT のサンプル: ビジュアル編集コンテナー アプリケーションについて](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [SUPERPAD のサンプル: CEditView を使用してテキストを編集するビジュアル編集サーバーについて](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

@@ -1,5 +1,5 @@
 ---
-title: ウィンドウ検索 ダイアログ ボックス |Microsoft Docs
+title: '[ウィンドウ検索] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,41 +12,41 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62900924"
 ---
 # <a name="window-search-dialog-box"></a>[ウィンドウ検索] ダイアログ ボックス
-このダイアログ ボックスを使用して検索し、特定のウィンドウのノードを選択[Windows ビュー](../debugger/windows-view.md)します。 このダイアログ ボックスを表示するには、Windows ビュー ウィンドウにフォーカスを移動します。 クリックして**ウィンドウ検索**から、**検索**メニュー。
+このダイアログ ボックスを使用して、[ウィンドウ ビュー](../debugger/windows-view.md)で特定のスレッドのノードを検索して選択します。 このダイアログ ボックスを表示するには、ウィンドウ ビュー ウィンドウにフォーカスを移動します。 その後、 **[検索]** メニューから **[ウィンドウ検索]** を選択します。
 
- 使用することができます、**ファインダー ツール**を選択するか、ウィンドウをウィンドウ ハンドルを入力したり、キャプションとクラスによって、ウィンドウを識別します。
+ **ファインダー ツール**を使用してウィンドウを選択するか、ウィンドウ ハンドルを入力するか、キャプションとクラスによってウィンドウを識別することができます。
 
  次の設定を使用できます。
 
- **ファインダー ツール**ドラッグ アンド ドロップ ツール ウィンドウを選択するために使用します。
+ **ファインダー ツール** ウィンドウの選択に使用するドラッグ アンド ドロップ ツールです。
 
- **Spy++ を非表示に**なり、メインの spy++ ウィンドウ、**非**ダイアログ ボックスで、他のアプリケーションの上に表示します。
+ **Spy++ を非表示** メインの Spy++ ウィンドウを非表示にし、 **[ウィンドウ検索]** ダイアログ ボックスをお使いの他のアプリケーションの上に表示します。
 
- **処理**ウィンドウの一意の ID を検索します。
+ **ハンドル** 検索するウィンドウの一意の ID です。
 
- **キャプション**を検索するウィンドウのキャプションのテキスト。
+ **キャプション** 検索するウィンドウ キャプションのテキストです。
 
- **クラス**を検索するには、ウィンドウのクラス。
+ **クラス** 検索するウィンドウのクラスです。
 
- **上下の方向を検索**検索の最初の方向。
+ **検索の方向 (上または下)** 検索の最初の方向です。
 
 ## <a name="related-sections"></a>関連項目
- [Windows のビューでウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md)Windows ビューで特定のウィンドウを検索する方法について説明します。
+ [ウィンドウ ビューでのウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md) ウィンドウ ビューで特定のウィンドウを検索する方法について説明します。
 
- [Windows ビュー](../debugger/windows-view.md)コントロール、使用可能なウィンドウのツリー ビューが表示されます。
+ [ウィンドウ ビュー](../debugger/windows-view.md) 使用できるウィンドウとコントロールのツリー ビューが表示されます。
 
- [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
 
- [Spy++ の使用](../debugger/using-spy-increment.md)の spy++ ツールを紹介し、使用する方法について説明します。
+ [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 
- [検索ウィンドウ ダイアログ ボックス](../debugger/find-window-dialog-box.md)プロパティまたは特定のウィンドウからメッセージを表示するために使用します。
+ [[ウィンドウ検索] ダイアログ ボックス](../debugger/find-window-dialog-box.md) 特定のウィンドウからのプロパティまたはメッセージを表示するために使用されます。
 
- [ウィンドウのプロパティ ダイアログ ボックス](../debugger/window-properties-dialog-box.md)Windows ビューで選択したウィンドウのプロパティを表示するために使用します。
+ [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md) ウィンドウ ビューで選択したウィンドウのプロパティを表示するために使用します。
 
- [Spy++ リファレンス](../debugger/spy-increment-reference.md)各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
+ [Spy++ リファレンス](../debugger/spy-increment-reference.md) Spy++ の各メニューとダイアログ ボックスについて説明するセクションが含まれています。

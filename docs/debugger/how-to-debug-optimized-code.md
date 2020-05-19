@@ -1,5 +1,5 @@
 ---
-title: '方法: 最適化されたコードをデバッグする |Microsoft Docs'
+title: '方法: 最適化されたコードをデバッグする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
 ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72430666"
 ---
-# <a name="how-to-debug-optimized-code"></a>方法 : 最適化されたコードをデバッグする
+# <a name="how-to-debug-optimized-code"></a>方法: 最適化されたコードをデバッグする
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
@@ -52,7 +52,7 @@ ms.locfileid: "72430666"
 
   グローバル変数および静的変数は常に正しく表示されます。 構造体レイアウトについても同様です。 構造体へのポインターが存在し、そのポインターの値が正しければ、構造体のすべてのメンバー変数は、正しい値で表示されます。
 
-  これらの制限事項のため、できるだけ最適化する前のプログラムをデバッグするようにしてください。 既定では、最適化はC++プログラムのデバッグ構成でオフになっており、リリース構成で有効になっています。
+  これらの制限事項のため、できるだけ最適化する前のプログラムをデバッグするようにしてください。 既定では、最適化に対する設定は、C++ プログラムのデバッグ構成ではオフ、リリース構成ではオンになっています。
 
   ただし、最適化後のプログラムでしかバグが発生しない場合もあります。 このような場合は、最適化されたコードをデバッグする必要があります。
 
@@ -74,7 +74,7 @@ ms.locfileid: "72430666"
 
 8. [`Custom`] に対して [`Optimization`] オプションを選択すると、プロパティ リストに表示されているその他のプロパティについてオプションを設定できるようになります。
 
-9. プロジェクトのプロパティページの [構成C++プロパティ]、[C/]、[コマンドライン] ノードを選択し、`(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` を **[追加のオプション]** テキストボックスに追加します。
+9. プロジェクトのプロパティ ページの [構成プロパティ]、[C/C++]、[コマンド ライン] ノードを選択し、`(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` を **[その他のオプション]** テキスト ボックスに追加します。
 
     > [!WARNING]
     > `/Zo` には、Visual Studio 2013 更新プログラム 3 以降のバージョンが必要です。

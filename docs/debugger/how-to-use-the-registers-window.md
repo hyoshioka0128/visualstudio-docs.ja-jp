@@ -1,5 +1,5 @@
 ---
-title: デバッガーでのレジスタ値を表示 |Microsoft Docs
+title: デバッガーでレジスタ値を表示する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/19/2018
 ms.topic: conceptual
@@ -26,34 +26,34 @@ ms.workload:
 - multiple
 ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62906002"
 ---
-# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>[レジスタ] ウィンドウで、レジスタの値を表示 (C#、 C++、Visual Basic、 F#)
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>[レジスタ] ウィンドウでレジスタ値を表示する (C#、C++、Visual Basic、F#)
 
-**登録**Visual Studio のデバッグ中に、レジスタの内容をウィンドウが表示されます。 レジスタの背後にある概念について大まかな概要について、**登録**ウィンドウを参照してください[デバッグの基礎。[レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)します。
+**[レジスタ]** ウィンドウには、Visual Studio デバッグ中のレジスタの内容が表示されます。 レジスタの背後にある概念について大まかな概要について、**登録**ウィンドウを参照してください[デバッグの基礎: [レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)します。
 
 > [!NOTE]
-> 登録情報は、スクリプトや SQL アプリのご利用いただけません。
+> スクリプトまたは SQL アプリのレジスタ情報は表示できません。
 
-デバッグ中に、アプリでコードの実行時の値の変更を登録します。 変更した値が赤で最近表示、**登録**ウィンドウ。
+デバッグ中、アプリでコードが実行されるとレジスタ値が変化します。 最近変更された値は **[レジスタ]** ウィンドウに赤で表示されます。
 
-**[レジスタ]** ウィンドウでは、見やすいようにレジスタがグループ別に整理されますが、グループはプラットフォームやプロセッサの種類によって異なります。 表示したり、登録グループを非表示にすることができます。 詳細については、「[方法 :レジスタ グループの表示と非表示を切り替える](../debugger/how-to-display-and-hide-register-groups.md)」をご覧ください。
+**[レジスタ]** ウィンドウでは、見やすいようにレジスタがグループ別に整理されますが、グループはプラットフォームやプロセッサの種類によって異なります。 レジスタ グループの表示と非表示を切り替えることができます。 詳細については、[レジスタ グループの表示と非表示を切り替える](../debugger/how-to-display-and-hide-register-groups.md)」をご覧ください。
 
-フラグの詳細についてを参照してください、**登録**ウィンドウを参照してください[について [レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)
+**[レジスタ]** ウィンドウに表示されるフラグに関する詳細については、[[レジスタ] ウィンドウの概要](../debugger/debugging-basics-registers-window.md)に関するページを参照してください。
 
-レジスタの値は編集できます。 詳細については、「[方法 :レジスタ値を編集する](../debugger/how-to-edit-a-register-value.md)」をご覧ください。
+レジスタの値は編集できます。 詳細については、[レジスタ値を編集する](../debugger/how-to-edit-a-register-value.md)」をご覧ください。
 
-**[レジスタ] ウィンドウを開く**
+**[レジスタ] ウィンドウを開くには**
 
-1. 選択して、アドレス レベルのデバッグを有効にする**アドレス レベルのデバッグを有効にする**で**ツール**(または**デバッグ**) >**オプション** > **デバッグ**します。
+1. **[ツール]** (または **[デバッグ]** )、 **[オプション]** 、 **[デバッグ]** の順に選択し、 **[アドレス レベルのデバッグを有効にする]** を選択することでアドレスレベルのデバッグを有効にします。
 
-1. デバッグが、実行中またはブレークポイントで、選択**デバッグ** > **Windows** > **登録**、またはキーを押します**Alt**+ **5**します。
+1. デバッグの実行中、あるいはブレークポイントで **[デバッグ]** 、 **[Windows]** 、 **[レジスタ]** の順に選択するか、**Alt**+**5** を押します。
 
 >[!NOTE]
->ダイアログ ボックスとメニュー コマンドは、Visual Studio のエディションまたは設定によって異なる場合があります。 設定を変更するには、次のように選択します。**インポートおよびエクスポート設定**Visual Studio で**ツール**メニュー。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
+>ダイアログ ボックスとメニュー コマンドは、Visual Studio のエディションや設定によっては異なることがあります。 設定を変更するには、Visual Studio の **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 
