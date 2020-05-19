@@ -1,5 +1,5 @@
 ---
-title: Spy++ リファレンス |Microsoft Docs
+title: Spy++ リファレンス | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,34 +13,34 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62902557"
 ---
 # <a name="spy-reference"></a>Spy++ リファレンス
-各 spy++ メニューおよびダイアログ ボックスの説明については、以下のセクションを参照してください。
+Spy++ の各メニューとダイアログ ボックスの説明については、以下に一覧表示されているセクションを参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [メニュー コマンド](../debugger/menu-commands.md)各 spy++ メニューで使用できるコマンドについて説明します。
+ [メニュー コマンド](../debugger/menu-commands.md) 各 Spy++ メニューで使用できるコマンドについて説明します。
 
- [フォント ダイアログ ボックス](../debugger/font-dialog-box-microsoft-spy-increment-help.md)spy++ ビュー ウィンドウで使用される文字のフォントを構成するために使用します。
+ [[フォント] ダイアログボックス](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Spy++ ビュー ウィンドウで使用される文字フォントを構成するために使用されます。
 
- [Spy++ ビュー用の検索ツール](../debugger/search-tools-for-spy-increment-views.md)spy++ ビュー ウィンドウで特定のノードの検索に使用されるダイアログ ボックス。
+ [Spy++ ビュー用の検索ツール](../debugger/search-tools-for-spy-increment-views.md) Spy++ ビュー ウィンドウで特定のノードを検索するために使用されるダイアログ ボックス。
 
- [ウィンドウのプロパティ ダイアログ ボックス](../debugger/window-properties-dialog-box.md)Windows ビューで選択したウィンドウのプロパティを表示するために使用します。
+ [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md) ウィンドウ ビューで選択したウィンドウのプロパティを表示するために使用します。
 
- [メッセージ オプション ダイアログ ボックス](../debugger/message-options-dialog-box.md)メッセージ ビューで一覧表示するメッセージを選択するために使用します。
+ [[メッセージ オプション] ダイアログ ボックス](../debugger/message-options-dialog-box.md) メッセージ ビューに一覧表示されるメッセージを選択するために使用されます。
 
- [メッセージのプロパティ ダイアログ ボックス](../debugger/message-properties-dialog-box.md)メッセージ ビューで選択したメッセージのプロパティを表示するために使用します。
+ [[メッセージ プロパティ] ダイアログ ボックス](../debugger/message-properties-dialog-box.md) メッセージ ビューで選択されたメッセージのプロパティを表示するために使用されます。
 
- [プロセス プロパティ ダイアログ ボックス](../debugger/process-properties-dialog-box.md)プロセス ビューで選択したプロセスのプロパティを表示するために使用します。
+ [[プロセス プロパティ] ダイアログ ボックス](../debugger/process-properties-dialog-box.md) プロセス ビューで選択されたプロセスのプロパティを表示するために使用されます。
 
- [スレッドのプロパティ ダイアログ ボックス](../debugger/thread-properties-dialog-box.md)スレッド ビューで選択したスレッドのプロパティを表示するために使用します。
+ [[スレッド プロパティ] ダイアログ ボックス](../debugger/thread-properties-dialog-box.md) スレッド ビューで選択されたスレッドのプロパティを表示するために使用されます。
 
- [他のダイアログ ボックス](../debugger/other-dialog-boxes.md)spy++ プログラムに関する情報を表示するために使用します。
+ [その他のダイアログ ボックス](../debugger/other-dialog-boxes.md) Spy++ プログラムに関する情報を表示するために使用されます。
 
 ## <a name="related-sections"></a>関連項目
- [Spy++ の使用](../debugger/using-spy-increment.md)の spy++ ツールを紹介し、使用する方法について説明します。
+ [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 
- [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。

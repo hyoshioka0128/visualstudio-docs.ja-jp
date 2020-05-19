@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドの表示 |Microsoft Docs
+title: '[表示] メニューのコマンド | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929621"
 ---
 # <a name="view-menu-commands"></a>[表示] メニューのコマンド
-**ビュー**メニュー コマンド、spy++ を制御するユーザー インターフェイスを提供します。
+**[表示]** メニューには、Spy++ ユーザー インターフェイスを制御するためのコマンドが用意されています。
 
- **フォント**開きます、**フォント** ダイアログ ボックスで、現在の spy++ ビューで使用するためのフォントを選択できます。
+ **フォント** 現在の Spy++ ビューで使用するフォントを選択できる **[フォント]** ダイアログ ボックスを開きます。
 
- **ツールバー**を切り替えます。 ツールバーが表示されます。
+ **ツール バー** ツール バーを表示または非表示にします。
 
- **ステータス バー**を切り替えます。 ステータス バーが表示されます。
+ **ステータス バー** ステータス バーを表示または非表示にします。
 
- **プロパティ**開きます、**プロパティ** ダイアログ ボックスを表示します。
+ **プロパティ** アクティブなビューの **[プロパティ]** ダイアログ ボックスを開きます。

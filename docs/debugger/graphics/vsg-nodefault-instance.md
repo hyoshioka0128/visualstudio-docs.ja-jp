@@ -1,5 +1,5 @@
 ---
-title: VSG_NODEFAULT_INSTANCE |Microsoft Docs
+title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 304576391b2287aee7567b3ccc2e4514ce5cb2e8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62848462"
 ---
-# <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
-既定のインスタンスかどうかをその存在によって定義、 [VsgDbg クラス](vsgdbg-class.md)クラス: プログラムによるキャプチャ インターフェイスを提供する — が指定されています。
+# <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
+その存在によって、プログラムによるキャプチャ インターフェイスを提供する [VsgDbg Class](vsgdbg-class.md) クラスの既定のインスタンスが提供されるかどうかを定義します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,7 +38,7 @@ VsgDbg *g_pVsgDbg;
 
  既定のインスタンスが無効になっていない場合は、プログラムの実行前に自動的に初期化され、プログラムの終了時に自動的に破棄されます。 このインスタンスの初期化および初期化解除を明示的に行う必要はありません。
 
- 定義する必要があります、既定のインスタンスを無効にする`VSG_NODEFAULT_INSTANCE`インクルードする前に`vsgcapture.h`プログラムでします。
+ 既定のインスタンスを無効にするには、プログラムで `vsgcapture.h` を含める前に、`VSG_NODEFAULT_INSTANCE` を定義する必要があります。
 
 ## <a name="example"></a>例
  次の例は、既定のインスタンスを無効にする方法を示しています。

@@ -1,5 +1,5 @@
 ---
-title: カスタム データ ビジュアライザーを作成する |Microsoft Docs
+title: カスタム データ ビジュアライザーを作成する | Microsoft Docs
 ms.date: 11/07/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,64 +21,64 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564726"
 ---
-# <a name="create-custom-data-visualizers"></a>カスタム データ ビジュアライザーを作成します。
- A*ビジュアライザー*の一部である、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]デバッガー ユーザー インターフェイスのデータ型に適した方法で変数またはオブジェクトを表示します。 たとえば、HTML ビジュアライザーは、HTML 文字列を解釈し、ブラウザー ウィンドウに表示される結果を表示します。 ビットマップ ビジュアライザーは、ビットマップ構造を解釈し、表すグラフィックを表示します。 一部のビジュアライザーを使用して、変更も、データを表示できます。
+# <a name="create-custom-data-visualizers"></a>カスタム データ ビジュアライザーを作成する
+ "*ビジュアライザー*" は、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーのユーザー インターフェイスの一部で、データ型に適した方法で変数またはオブジェクトが表示されます。 たとえば、HTML ビジュアライザーでは、HTML 文字列が解釈され、結果がブラウザー ウィンドウに表示されるとおりに表示されます。 また、ビットマップ ビジュアライザーは、ビットマップ構造が解釈され、それが表すグラフィックが表示されます。 一部のビジュアライザーでは、データを表示するだけでなく、変更することもできます。
 
- [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーには、6 つの標準的なビジュアライザーが用意されています。 テキスト、HTML、XML、および JSON ビジュアライザーが文字列オブジェクトで動作します。 WPF ツリー ビジュアライザーには、WPF オブジェクトのビジュアル ツリーのプロパティが表示されます。 データセット visualizer は、データセット、データ ビュー、および DataTable オブジェクトによって適しています。
+ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーには、6 つの標準的なビジュアライザーが用意されています。 テキスト、HTML、XML、JSON ビジュアライザーは、文字列のオブジェクトに対して機能します。 WPF ツリー ビジュアライザーでは、WPF オブジェクトのビジュアル ツリーのプロパティが表示されます。 データセット ビジュアライザーは、DataSet オブジェクト、DataView オブジェクト、DataTable オブジェクトに対して機能します。
 
-ビジュアライザーの詳細については、Microsoft、サード パーティ、およびコミュニティからダウンロードできる場合があります。 独自のビジュアライザーを記述してをインストールすることができます、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]デバッガー。
+他にも、Microsoft、サード パーティ、コミュニティからダウンロードできるビジュアライザーがあります。 また、独自のビジュアライザーを作成して、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーにインストールすることもできます。
 
-デバッガーで、ビジュアライザーは虫眼鏡のアイコンで表される![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザー アイコン")します。 アイコンを選択することができます、**データヒント**、デバッガー**ウォッチ**ウィンドウ、または **[クイック ウォッチ]** ダイアログ ボックスで、し、対応するオブジェクトの適切なビジュアライザーを選択します。
+デバッガーでは、ビジュアライザーは拡大鏡アイコン ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザー アイコン")で表されます。 このアイコンを **[データヒント]** 、デバッガーの **[ウォッチ]** ウィンドウ、または **[クイックウォッチ]** ダイアログ ボックスで選択し、対応するオブジェクトに適したビジュアライザーを選択することができます。
 
-## <a name="write-custom-visualizers"></a>カスタム ビジュアライザーを記述します。
+## <a name="write-custom-visualizers"></a>カスタム ビジュアライザーを作成する
 
  > [!NOTE]
- > ネイティブ コードに対するカスタム ビジュアライザーを作成するを参照してください。、 [SQLite ネイティブ デバッガー ビジュアライザー](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)サンプル。 UWP と Windows 8.x アプリでは、カスタム ビジュアライザーはサポートされていません。
+ > ネイティブ コードのカスタム ビジュアライザーを作成するには、[SQLite ネイティブ デバッガー ビジュアライザー](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)のサンプルを参照してください。 カスタム ビジュアライザーは、UWP および Windows 8.x アプリではサポートされていません。
 
 <xref:System.Object> および <xref:System.Array> を除く任意のマネージド クラスのオブジェクトのカスタム ビジュアライザーを記述できます。
 
 デバッガー ビジュアライザーのアーキテクチャには、次の 2 つの部分があります。
 
-- *デバッガー側*Visual Studio デバッガー内で実行し、作成し、ビジュアライザーのユーザー インターフェイスが表示されます。
+- "*デバッガー側*" - Visual Studio デバッガー内で動作し、ビジュアライザーのユーザー インターフェイスが作成され表示されます。
 
-- "*デバッグ対象側*" - Visual Studio がデバッグしているプロセス (*デバッグ対象*) 内で動作します。 デバッグ対象プロセスに (たとえば、文字列オブジェクト) を視覚化するデータ オブジェクトが存在します。 デバッグ対象側は、オブジェクトを作成するユーザー インターフェイスに表示されるデバッガー側に送信します。
+- "*デバッグ対象側*" - Visual Studio がデバッグしているプロセス (*デバッグ対象*) 内で動作します。 視覚化するデータ オブジェクト (たとえば、文字列のオブジェクト) は、デバッグ対象プロセス内に存在します。 デバッグ対象側は、オブジェクトがデバッガー側に送信され、デバッガー側では、それが作成されたユーザー インターフェイスに表示されます。
 
-デバッガー側からのデータ オブジェクトを受け取る、*オブジェクト プロバイダー*を実装する、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>インターフェイス。 デバッグ対象側を使用してオブジェクトを送信する、*オブジェクト ソース*から派生<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>します。
+デバッガー側では、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> インターフェイスを実装する "*オブジェクト プロバイダー*" からデータ オブジェクトが受け取ります。 デバッグ対象側では、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> から派生する "*オブジェクト ソース*" を介してオブジェクトが送られます。
 
-オブジェクト プロバイダーは、データをバックアップできるようにデータを編集できるビジュアライザーを記述するオブジェクト ソースにも送信できます。 式エバリュエーターとオブジェクト ソースと対話するオブジェクト プロバイダーをオーバーライドするとします。
+オブジェクト プロバイダーは、オブジェクト ソースにデータを送り返すこともできます。これにより、データを編集できるビジュアライザーを作成できます。 式エバリュエーターおよびオブジェクト ソースと対話するには、オブジェクト プロバイダーをオーバーライドします。
 
-デバッグ対象側とデバッガー側がを通じて相互に通信<xref:System.IO.Stream>にデータをシリアル化するメソッドがオブジェクトを<xref:System.IO.Stream>および逆シリアル化、<xref:System.IO.Stream>データ オブジェクトにします。
+デバッガー対象側とデバッガー側は、<xref:System.IO.Stream> メソッドを介して相互に通信します。このメソッドは、データ オブジェクトを <xref:System.IO.Stream> にシリアル化して、<xref:System.IO.Stream> をデータ オブジェクトに逆シリアル化します。
 
-型がオープン型である場合にのみ、ジェネリック型のビジュアライザーを記述できます。 この制限は、`DebuggerTypeProxy` 属性を使用する場合の制限と同じです。 詳細については、次を参照してください。 [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)します。
+型がオープン型の場合のみ、ジェネリック型のビジュアライザーを作成できます。 この制限は、`DebuggerTypeProxy` 属性を使用する場合の制限と同じです。 詳細については、[DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)に関するページを参照してください。
 
-カスタムのビジュアライザーでは、セキュリティについての配慮が必要な場合があります。 参照してください[ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)します。
+カスタムのビジュアライザーでは、セキュリティについての配慮が必要な場合があります。 「[ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)」を参照してください。
 
-次の手順では、ビジュアライザーの作成の概要を提供します。 詳細については、次を参照してください。[チュートリアル。ビジュアライザーを記述C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)または[チュートリアル。Visual Basic でビジュアライザーを記述](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)します。
+以下の手順では、ビジュアライザーの作成について概要を説明します。 詳細な手順については、「[チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)」または「[チュートリアル: Visual Basic でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)」を参照してください。
 
 ### <a name="to-create-the-debugger-side"></a>デバッガー側を作成するには
 
-継承するクラスを作成するをデバッガー側のビジュアライザーのユーザー インターフェイスを作成する<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>、上書き、<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName>インターフェイスを表示するメソッド。 使用することができます<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>ビジュアライザーに Windows フォーム、ダイアログ、およびコントロールを表示します。
+デバッガー側でビジュアライザー ユーザー インターフェイスを作成するには、<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> を継承するクラスを作成し、<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> メソッドをオーバーライドしてインターフェイスを表示する必要があります。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> を使用すると、ビジュアライザーで Windows フォーム、ダイアログ、コントロールを表示できます。
 
 1. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> メソッドを使用して、視覚化するオブジェクトをデバッガー側で取得します。
 
 1. <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> を継承するクラスを作成します。
 
-1. <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> メソッドをオーバーライドしてインターフェイスを表示します。 使用<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>インターフェイスで Windows フォーム、ダイアログ、およびコントロールを表示するメソッド。
+1. <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> メソッドをオーバーライドしてインターフェイスを表示します。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> メソッドを使用して、インターフェイスで Windows フォーム、ダイアログ、コントロールを表示します。
 
-4. 適用<xref:System.Diagnostics.DebuggerVisualizerAttribute>、表示するビジュアライザーを付けます (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
+4. <xref:System.Diagnostics.DebuggerVisualizerAttribute> を適用して、表示するビジュアライザーを指定します (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
 
 ### <a name="to-create-the-debuggee-side"></a>デバッグ対象側を作成するには
 
-デバッグ対象側のコードを使用して指定する、<xref:System.Diagnostics.DebuggerVisualizerAttribute>します。
+デバッグ対象側コードを指定するには、<xref:System.Diagnostics.DebuggerVisualizerAttribute> を使用します。
 
-1. <xref:System.Diagnostics.DebuggerVisualizerAttribute> をビジュアライザー (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) とオブジェクト ソース (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) に適用します。 オブジェクトのソースを省略した場合、ビジュアライザーは既定のオブジェクト ソースを使用します。
+1. <xref:System.Diagnostics.DebuggerVisualizerAttribute> をビジュアライザー (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) とオブジェクト ソース (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) に適用します。 オブジェクト ソースを省略すると、ビジュアライザーは既定のオブジェクト ソースを使用します。
 
-1. ビジュアライザーの編集もデータ オブジェクトを表示させるには、オーバーライド、`TransferData`または`CreateReplacementObject`メソッドから<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>します。
+1. ビジュアライザーでデータ オブジェクトを表示するだけでなく編集するには、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> から `TransferData` メソッドまたは `CreateReplacementObject` メソッドをオーバーライドします。
 
 ## <a name="see-also"></a>関連項目
 

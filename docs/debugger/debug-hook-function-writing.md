@@ -1,5 +1,5 @@
 ---
-title: デバッグ用フック関数の作成 |Microsoft Docs
+title: デバッグ用フック関数の作成 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 82145d39adc519bfd1324cc36805cea7b97b1664
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62563374"
@@ -32,14 +32,14 @@ ms.locfileid: "62563374"
 ここでは、カスタムで作成できるさまざまなデバッグ用フック関数について説明します。デバッグ用フック関数を使用すると、デバッガーが通常行う処理内部の定義済みの位置にコードを挿入できます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [Client ブロック用のフック関数](../debugger/client-block-hook-functions.md)を検証または _client_block に格納されているデータの内容をレポートする関数を記述するためのガイダンスとプロトタイプを提供します。
+ [クライアント ブロック用のフック関数](../debugger/client-block-hook-functions.md) _CLIENT_BLOCK 型のブロックに格納されたデータの内容を検証または報告する関数を作成するためのガイダンスとプロトタイプを提供します。
 
- [割り当てフック関数](../debugger/allocation-hook-functions.md)割り当てフック関数を定義、その別の使用法を紹介、制限事項、指摘およびプロトタイプを提供します。
+ [割り当て用フック関数](../debugger/allocation-hook-functions.md) 割り当て用フック関数を定義し、そのさまざまな使用方法を探求します。また、制限事項について説明し、プロトタイプを提供します。
 
- [割り当てフック関数と CRT メモリ割り当て](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)割り当てフック関数を明示的に無視するので、制限について説明します`_CRT_BLOCK`ブロック内部のメモリを割り当てる C ランタイム ライブラリ関数を呼び出す場合。 また、割り当てフック関数が `_CRT_BLOCK` ブロックを無視しない場合の結果を例と共に示し、既定の割り当てフック関数 **CrtDefaultAllocHook** を変更する方法について説明します。
+ [割り当て用フック関数と CRT のメモリ割り当て](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) 割り当て用フック関数では、内部メモリを割り当てる C ランタイム ライブラリ関数を呼び出す場合、`_CRT_BLOCK` 型ブロックを明示的に無視する必要があるという制限について説明します。 また、割り当てフック関数が `_CRT_BLOCK` ブロックを無視しない場合の結果を例と共に示し、既定の割り当てフック関数 **CrtDefaultAllocHook** を変更する方法について説明します。
 
- [レポート用のフック関数](../debugger/report-hook-functions.md)について説明します`_CrtSetReportHook`割り当ての特定の種類に注目するレポートをフィルター処理に使用することができます。 また、プロトタイプを説明します。
+ [レポート用フック関数](../debugger/report-hook-functions.md) `_CrtSetReportHook`について説明します。これは、レポートをフィルター処理して特定の種類の割り当てだけを選択するために使用できます。 また、プロトタイプを説明します。
 
 ## <a name="related-sections"></a>関連項目
 
-- [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)-CRT デバッグのライブラリが、レポート用マクロの使用など、C ランタイム ライブラリのデバッグ手法へのリンクが相違`malloc`と`_malloc_dbg`デバッグ用フック関数とは CRT の書き込みデバッグ ヒープ。
+- [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md) - CRT デバッグ ライブラリの使用、レポート用マクロ、`malloc` と `_malloc_dbg` の違い、デバッグ用フック関数の作成、CRT デバッグ ヒープなど、C ランタイム ライブラリのデバッグ技法を説明するリンクを提供します。

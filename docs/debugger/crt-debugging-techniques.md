@@ -1,5 +1,5 @@
 ---
-title: CRT のデバッグ手法 |Microsoft Docs
+title: CRT のデバッグ技法 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564036"
@@ -56,5 +56,5 @@ C ランタイム ライブラリを使用したプログラムをデバッグ�
 
 ## <a name="related-sections"></a>関連項目
 
-- [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)-C# のいくつかの一般的な問題のデバッグとテクニックをについて説明しますとC++アプリケーション。
-- [デバッガーのセキュリティ](../debugger/debugger-security.md)-より安全なデバッグ用の推奨事項を示します。
+- [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md) - C および C++ アプリケーションのデバッグ時に発生する一般的な問題やデバッグ技法について説明します。
+- [デバッガーのセキュリティ](../debugger/debugger-security.md) - デバッグをより安全に行うための推奨事項について説明します。

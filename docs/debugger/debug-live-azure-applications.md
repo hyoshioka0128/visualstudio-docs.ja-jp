@@ -14,7 +14,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
 ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/30/2019
 ms.locfileid: "70179830"
@@ -34,13 +34,13 @@ ms.locfileid: "70179830"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* スナップショットデバッガーは、 **Azure 開発ワークロード**を使用した Visual Studio 2017 Enterprise バージョン15.5 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* スナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2017 Enterprise バージョン 15.5 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
    ::: moniker range=">=vs-2019"
-   まだインストールされていない場合は、 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)をインストールします。 以前の Visual Studio のインストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
+   まだインストールされていない場合、[Visual Studio 2019](https://visualstudio.microsoft.com/downloads) をインストールします。 以前の Visual Studio インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード**のスナップショット デバッガー コンポーネントを確認してください。
    ::: moniker-end
    ::: moniker range="<=vs-2017"
-   まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
+   まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード**のスナップショット デバッガー コンポーネントを確認してください。
    ::: moniker-end
 
 * Basic 以上の Azure App Service プラン。
@@ -66,7 +66,7 @@ ms.locfileid: "70179830"
 
 ::: moniker range=">=vs-2019"
 
-2. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。プロジェクトがデプロイされる Azure App Service と Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。 スナップショットデバッガーは、 [Azure Kubernetes Service](debug-live-azure-kubernetes.md)と[AZURE Virtual Machines (VM) & Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md)もサポートしています。
+2. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。プロジェクトがデプロイされる Azure App Service と Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。 スナップショット デバッガーは [Azure Kubernetes Service](debug-live-azure-kubernetes.md) と [Azure Virtual Machines (VM) および Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md) もサポートしています。
 
    ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -79,15 +79,15 @@ ms.locfileid: "70179830"
 
    ::: moniker range="<=vs-2017"
    > [!NOTE]
-   > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイトの拡張機能が古くなっています" というエラーメッセージが表示される場合は、「アップグレードの詳細」の「[トラブルシューティングのヒント」と「スナップショットデバッグの既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)」を参照してください。
+   > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイト拡張機能が最新ではない" というエラー メッセージが表示される場合は、[スナップショットのデバッグに関するトラブルシューティングのヒントと既知のイシュー](../debugger/debug-live-azure-apps-troubleshooting.md)のページでアップグレードの詳細を参照してください。
    ::: moniker-end
    ::: moniker range=">=vs-2019"
    > [!NOTE]
-   > (Visual Studio 2019 バージョン16.2 以降)スナップショットデバッガーでは、Azure クラウドのサポートが有効になりました。 選択する Azure リソースと Azure Storage アカウントの両方が、同じクラウドからのものであることを確認します。 企業の[azure コンプライアンス](https://azure.microsoft.com/overview/trusted-cloud/)構成についてご質問がある場合は、azure 管理者にお問い合わせください。
+   > (Visual Studio 2019 バージョン 16.2 以降) スナップショット デバッガーで、Azure クラウドのサポートが有効になりました。 選択する Azure リソースと Azure Storage アカウントの両方が、同じクラウドからのものであることを確認します。 企業の [Azure コンプライアンス](https://azure.microsoft.com/overview/trusted-cloud/)構成についてご不明な点がある場合は、Azure 管理者にお問い合わせください。
    ::: moniker-end
 
    これで、Visual Studio はスナップショット デバッグ モードになりました。
-   ![スナップショットデバッグモード](../debugger/media/snapshot-message.png)
+   ![スナップショット デバッグ モード](../debugger/media/snapshot-message.png)
 
    **[モジュール]** ウィンドウは、Azure App Service のすべてのモジュールが読み込まれたときに表示されます (このウィンドウを開くには、 **[デバッグ] > [ウィンドウ] > [モジュール]** の順に選択します)。
 
@@ -95,7 +95,7 @@ ms.locfileid: "70179830"
 
 ## <a name="set-a-snappoint"></a>スナップポイントを設定する
 
-1. コードエディターで、目的のコード行の横にある左余白をクリックして、スナップポイントを設定します。 実行することがわかっているコードであることを確認します。
+1. コード エディターで、目的のコード行の横にある左側の余白をクリックしてスナップポイントを設定します。 実行されることがわかっているコードを選択します。
 
    ![スナップポイントを設定する](../debugger/media/snapshot-set-snappoint.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "70179830"
 
 ## <a name="take-a-snapshot"></a>スナップショットを取得する
 
-スナップポイントを設定したら、web サイトのブラウザービューに移動し、マークされたコード行を実行して、またはユーザーがサイトの使用状況から生成するのを待機することで、スナップショットを手動で生成できます。
+スナップポイントを設定したら、Web サイトのブラウザー ビューに移動して、マークされたコード行を実行してスナップショットを手動で生成することも、ユーザーがサイトを使用してスナップショットを生成するのを待機することもできます。
 
 ## <a name="inspect-snapshot-data"></a>スナップショット データを調べる
 
@@ -122,7 +122,7 @@ ms.locfileid: "70179830"
 
    このビューから、変数にポイントしてデータヒントを表示し、 **[ローカル]** 、 **[ウォッチ]** 、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
 
-   Web サイト自体はライブであり、エンドユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
+   Web サイト自体はまだ稼働中であり、エンド ユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
@@ -130,7 +130,7 @@ ms.locfileid: "70179830"
 
 ## <a name="set-a-conditional-snappoint"></a>条件付きスナップポイントを設定する
 
-アプリで特定の状態を再作成するのが困難な場合は、条件付きスナップポイントの使用を検討してください。 条件付きスナップポイントは、検査する特定の値が変数に含まれている場合などにスナップショットを取得するタイミングを制御するのに役立ちます。 式、フィルター、またはヒット数を使用して条件を設定できます。
+アプリで特定の状態を再現することが難しい場合は、条件付きスナップポイントの使用を検討してください。 条件付きスナップポイントを使用すると、変数値に調査する特定の値が含まれている場合など、いつスナップショットを取得するかを制御できます。 式、フィルター、またはヒット数を使用して条件を設定できます。
 
 #### <a name="to-create-a-conditional-snappoint"></a>条件付きスナップポイントを作成するには
 

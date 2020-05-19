@@ -1,5 +1,5 @@
 ---
-title: マルチスレッドアプリケーションのデバッグ |Microsoft Docs
+title: マルチスレッド アプリケーションをデバッグする | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
@@ -24,61 +24,61 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
 ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72431810"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio でマルチスレッド アプリケーションをデバッグする
-スレッドは、オペレーティングシステムによってプロセッサ時間が付与される命令のシーケンスです。 オペレーティング システムで実行されているプロセスは、いずれも 1 つ以上のスレッドで構成されます。 複数のスレッドで構成されるプロセスをマルチスレッド プロセスといいます。
+スレッドは、オペレーティング システムでプロセッサ時間を許可する命令のシーケンスです。 オペレーティング システムで実行されているプロセスは、いずれも 1 つ以上のスレッドで構成されます。 複数のスレッドで構成されるプロセスをマルチスレッド プロセスといいます。
 
-複数のプロセッサを搭載したコンピューター、マルチコアプロセッサ、またはハイパースレッディングプロセスでは、複数のスレッドを同時に実行できます。 多くのスレッドを使用する並列処理では、プログラムのパフォーマンスを大幅に向上させることができますが、多くのスレッドを追跡しているため、デバッグが困難になる場合もあります。
+複数のプロセッサ、マルチコア プロセッサ、またはハイパースレッディング プロセッサを搭載したコンピューターでは、複数の同時スレッドを実行できます。 多くのスレッドを使用する並列処理では、プログラムのパフォーマンスを大幅に向上させることができますが、多くのスレッドを追跡するため、デバッグが困難になる場合もあります。
 
-マルチスレッドでは、新しい種類の潜在的なバグを導入できます。 たとえば、2つ以上のスレッドが同じリソースにアクセスすることが必要になる場合がありますが、リソースに安全にアクセスできるスレッドは一度に1つだけです。 任意の時点で1つのスレッドだけがリソースにアクセスするようにするには、相互排他の何らかの形式が必要です。 相互排他が正しく実装されていない場合は、スレッドが実行されない*デッドロック*状態が発生する可能性があります。 多くの場合、デッドロックはデバッグに困難な問題です。
+マルチスレッドでは、新しい種類の潜在的なバグが発生する可能性があります。 たとえば、複数のスレッドが同じリソースにアクセスすることが必要になる場合がありますが、リソースに安全にアクセスできるのは一度に 1 つのスレッドだけです。 常に 1 つのスレッドだけがリソースにアクセスできるようにするには、何らかの形式の相互排他が必要になります。 相互排他が正しく実装されていないと、"*デッドロック*" 状態が発生し、すべてのスレッドが実行不能になる可能性があります。 多くの場合、デッドロックはデバッグするのが困難な問題です。
 
-## <a name="tools-for-debugging-multithreaded-apps"></a>マルチスレッドアプリをデバッグするためのツール
+## <a name="tools-for-debugging-multithreaded-apps"></a>マルチスレッド アプリをデバッグするためのツール
 
-Visual Studio には、マルチスレッドアプリのデバッグに使用できるさまざまなツールが用意されています。
+Visual Studio には、マルチスレッド アプリのデバッグに使用できるさまざまなツールが用意されています。
 
-- スレッドの場合、スレッドをデバッグするための主要なツールは、 **[スレッド]** ウィンドウ、ソースウィンドウのスレッドマーカー、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、および **[デバッグの場所]** ツールバーです。 **[スレッド]** ウィンドウと **[デバッグの場所]** ツールバーの詳細については、「[チュートリアル: [スレッド] ウィンドウを使用したデバッグ](../debugger/how-to-use-the-threads-window.md)」を参照してください。 **並列スタック**と**並列ウォッチ**ウィンドウの使用方法については、「[マルチスレッドアプリケーションのデバッグの概要](../debugger/get-started-debugging-multithreaded-apps.md)」を参照してください。 どちらのトピックも、スレッドマーカーの使用方法を示しています。
+- スレッドの場合、デバッグのための主なツールは、 **[スレッド]** ウィンドウ、ソース ウィンドウのスレッド マーカー、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、 **[デバッグの場所]** ツール バーです。 **[スレッド]** ウィンドウと **[デバッグの場所]** ツール バーの詳細については、「[チュートリアル: [スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md) **[並列スタック]** ウィンドウと **[並列ウォッチ]** ウィンドウの使用方法については、「[マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)」を参照してください。 どちらのトピックでも、スレッド マーカーを使用する方法が示されています。
 
-- [タスク並列ライブラリ (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)または[同時実行ランタイム](/cpp/parallel/concrt/concurrency-runtime/)を使用するコードの場合、デバッグ用の主要なツールは、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、および **[タスク]** ウィンドウです。このウィンドウでもサポートされます。Java. 作業を開始するには、「[チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)」および「[チュートリアル: AMP アプリケーションのC++デバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)」を参照してください。
+- [タスク並列ライブラリ (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) または[同時実行ランタイム](/cpp/parallel/concrt/concurrency-runtime/)を使用するコードの場合、デバッグのための主要なツールは、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、および JavaScript もサポートする **[タスク]** ウィンドウです。 作業を始めるときは、「[チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)」および「[チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)」を参照してください。
 
-- GPU 上のスレッドのデバッグの場合、プライマリツールは **[Gpu スレッド]** ウィンドウです。 「[方法: GPU スレッドウィンドウを使用する」を](../debugger/how-to-use-the-gpu-threads-window.md)参照してください。
+- GPU 上のスレッドのデバッグの場合の主要なツールは、 **[GPU スレッド]** ウィンドウです。 「[方法:GPU スレッド ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)」を参照してください。
 
-- プロセスの主要なツールは、 **[プロセスにアタッチ]** ダイアログボックス、 **[プロセス]** ウィンドウ、および **[デバッグの場所]** ツールバーです。
+- プロセスの場合の主要なツールは、 **[プロセスにアタッチ]** ダイアログ ボックス、 **[プロセス]** ウィンドウ、 **[デバッグの場所]** ツール バーです。
 
-Visual Studio には、強力なブレークポイントとトレースポイントも用意されています。これは、マルチスレッドアプリケーションをデバッグするときに便利です。 ブレークポイントの条件とフィルターを使用して、個々のスレッドにブレークポイントを設定します。 トレースポイントを使用すると、デッドロックなどの問題を調査するために、プログラムの実行を中断することなくトレースできます。 詳細については、「[ブレークポイントアクションとトレース](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ポイント」を参照してください。
+Visual Studio には、強力なブレークポイントとトレースポイントも用意されており、マルチスレッド アプリケーションのデバッグに役立ちます。 個々のスレッドにブレークポイントを配置するには、ブレークポイントの条件とフィルターを使用します。 トレースポイントを使用すると、中断なしにプログラムの実行をトレースして、デッドロックなどの問題を調べることができます。 詳細については、「[ブレークポイント アクションとトレースポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)」を参照してください。
 
-ユーザー インターフェイスを含むマルチスレッド アプリケーションは、特にデバッグが困難になることがあります。 アプリケーションを2台目のコンピューターで実行し、リモートデバッグを使用することを検討してください。 詳細については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
+ユーザー インターフェイスを含むマルチスレッド アプリケーションは、特にデバッグが困難になることがあります。 アプリケーションを別のコンピューターで実行して、リモート デバッグを使用することを検討してください。 詳細については、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。
 
-## <a name="articles-about-debugging-multithreaded-apps"></a>マルチスレッドアプリのデバッグに関する記事
+## <a name="articles-about-debugging-multithreaded-apps"></a>マルチスレッド アプリのデバッグに関する記事
 
- [マルチスレッドアプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)
+ [マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)
 
-スレッドデバッグ機能のツアー。 **[並列スタック]** ウィンドウと **[並列ウォッチ]** ウィンドウの機能を強調します。
+スレッド デバッグ機能のツアーで、 **[並列スタック]** ウィンドウと **[並列ウォッチ]** ウィンドウの機能が詳しく説明されています。
 
- [スレッドとプロセスをデバッグするためのツール](../debugger/debug-threads-and-processes.md)
+ [スレッドおよびプロセスのデバッグ用ツール](../debugger/debug-threads-and-processes.md)
 
-スレッドとプロセスをデバッグするためのツールの機能の一覧を示します。
+スレッドとプロセスをデバッグするためのツールの機能の一覧が示されています。
 
  [複数プロセスをデバッグする](../debugger/debug-multiple-processes.md)
 
 複数プロセスのデバッグ方法について説明します。
 
- [チュートリアル: [スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md)。
+ [チュートリアル: [スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md)
 
-**[スレッド]** ウィンドウと **[デバッグの場所]** ツールバーの使用方法を示すチュートリアルです。
+**[スレッド]** ウィンドウと **[デバッグの場所]** ツール バーの使用方法を示すチュートリアルです。
 
  [チュートリアル: 並行アプリケーションをデバッグする](../debugger/walkthrough-debugging-a-parallel-application.md)
 
 **[並列スタック]** ウィンドウと **[タスク]** ウィンドウの使用方法を示すチュートリアルです。
 
- [方法 : デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [方法: デバッグ中に別のスレッドに切り替える](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
-デバッグコンテキストを別のスレッドに切り替えるには、いくつかの方法があります。
+デバッグ コンテキストを別のスレッドに切り替えるいくつかの方法について説明します。
 
- [方法 : スレッドに対するフラグの設定と設定解除を行う](../debugger/how-to-flag-and-unflag-threads.md)
+ [方法: スレッドに対するフラグの設定と設定解除を行う](../debugger/how-to-flag-and-unflag-threads.md)
 
 デバッグ中に特に注意する必要のあるスレッドにマークまたはフラグを設定する方法について説明します。
 
@@ -90,11 +90,11 @@ Visual Studio には、強力なブレークポイントとトレースポイン
 
 ネイティブ スレッドのデバッグに役立つ簡単な手法について説明します。
 
- [方法 : ネイティブ コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [方法: ネイティブ コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-native-code.md)
 
 **[スレッド]** ウィンドウに表示するスレッド名の設定方法について説明します。
 
- [方法 : マネージド コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [方法: マネージド コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 **[スレッド]** ウィンドウに表示するスレッド名の設定方法について説明します。
 
@@ -103,6 +103,6 @@ Visual Studio には、強力なブレークポイントとトレースポイン
 - [ブレークポイントの使用](../debugger/using-breakpoints.md)
 - [スレッド化](/dotnet/standard/threading/index)
 - [コンポーネントのマルチスレッド](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
-- [古いコードのマルチスレッドサポート](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
+- [旧形式のコードのためのマルチスレッド サポート](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [スレッドとプロセスをデバッグする](../debugger/debug-threads-and-processes.md)
 - [リモート デバッグ](../debugger/remote-debugging.md)

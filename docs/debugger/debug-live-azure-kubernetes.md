@@ -15,7 +15,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
 ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/23/2019
 ms.locfileid: "68415751"
@@ -35,9 +35,9 @@ ms.locfileid: "68415751"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure Kubernetes Services のスナップショットデバッガーは、 **azure 開発ワークロード**を使用した Visual Studio 2019 Enterprise 以上でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* Azure Kubernetes サービス用のスナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2019 Enterprise 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
-    まだインストールされていない場合は、 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)をインストールします。
+    まだ [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/) がインストールされていない場合はインストールしてください。
 
 * スナップショット コレクションは、次の Azure Kubernetes サービス Web アプリに使用できます。
   * Debian 9 上の .NET Core 2.2 以降で実行されている ASP.NET Core アプリケーション。
@@ -54,14 +54,14 @@ ms.locfileid: "68415751"
     > [!IMPORTANT]
     > デバッグのスナップショットを取得するには、Azure Kubernetes サービスに公開されているものと*同じバージョンのソース コード*を開く必要があります。
 
-1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Web アプリがデプロイされる AKS リソースと Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。 スナップショットデバッガーは、 [Azure App Service](debug-live-azure-applications.md)と[AZURE Virtual Machines (VM) & Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md)もサポートしています。
+1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Web アプリがデプロイされる AKS リソースと Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。 スナップショット デバッガーは [Azure App Service](debug-live-azure-applications.md) と [Azure Virtual Machines (VM) および Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md) もサポートしています。
 
     ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
     ![Azure リソースを選択する](../debugger/media/snapshot-select-azure-resource-aks.png)
 
     > [!NOTE]
-    > (Visual Studio 2019 バージョン16.2 以降)スナップショットデバッガーでは、Azure クラウドのサポートが有効になりました。 選択する Azure リソースと Azure Storage アカウントの両方が、同じクラウドからのものであることを確認します。 企業の[azure コンプライアンス](https://azure.microsoft.com/overview/trusted-cloud/)構成についてご質問がある場合は、azure 管理者にお問い合わせください。
+    > (Visual Studio 2019 バージョン 16.2 以降) スナップショット デバッガーで、Azure クラウドのサポートが有効になりました。 選択する Azure リソースと Azure Storage アカウントの両方が、同じクラウドからのものであることを確認します。 企業の [Azure コンプライアンス](https://azure.microsoft.com/overview/trusted-cloud/)構成についてご不明な点がある場合は、Azure 管理者にお問い合わせください。
 
 これで、Visual Studio はスナップショット デバッグ モードになりました。
 
@@ -73,7 +73,7 @@ ms.locfileid: "68415751"
 
 ## <a name="set-a-snappoint"></a>スナップポイントを設定する
 
-1. コードエディターで、目的のコード行の横にある左余白をクリックして、スナップポイントを設定します。 実行することがわかっているコードであることを確認します。
+1. コード エディターで、目的のコード行の横にある左側の余白をクリックしてスナップポイントを設定します。 実行されることがわかっているコードを選択します。
 
    ![スナップポイントを設定する](../debugger/media/snapshot-set-snappoint.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "68415751"
 
 ## <a name="take-a-snapshot"></a>スナップショットを取得する
 
-スナップポイントを設定したら、web サイトのブラウザービューに移動し、マークされたコード行を実行して、またはユーザーがサイトの使用状況から生成するのを待機することで、スナップショットを手動で生成できます。
+スナップポイントを設定したら、Web サイトのブラウザー ビューに移動して、マークされたコード行を実行してスナップショットを手動で生成することも、ユーザーがサイトを使用してスナップショットを生成するのを待機することもできます。
 
 ## <a name="inspect-snapshot-data"></a>スナップショット データを調べる
 
@@ -100,7 +100,7 @@ ms.locfileid: "68415751"
 
     このビューから、変数にポイントしてデータヒントを表示し、 **[ローカル]** 、 **[ウォッチ]** 、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
 
-    Web サイト自体はライブであり、エンドユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
+    Web サイト自体はまだ稼働中であり、エンド ユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
@@ -108,7 +108,7 @@ ms.locfileid: "68415751"
 
 ## <a name="set-a-conditional-snappoint"></a>条件付きスナップポイントを設定する
 
-アプリで特定の状態を再作成するのが困難な場合は、条件付きスナップポイントの使用を検討してください。 条件付きスナップポイントは、検査する特定の値が変数に含まれている場合などにスナップショットを取得するタイミングを制御するのに役立ちます。 式、フィルター、またはヒット数を使用して条件を設定できます。
+アプリで特定の状態を再現することが難しい場合は、条件付きスナップポイントの使用を検討してください。 条件付きスナップポイントを使用すると、変数値に調査する特定の値が含まれている場合など、いつスナップショットを取得するかを制御できます。 式、フィルター、またはヒット数を使用して条件を設定できます。
 
 #### <a name="to-create-a-conditional-snappoint"></a>条件付きスナップポイントを作成するには
 

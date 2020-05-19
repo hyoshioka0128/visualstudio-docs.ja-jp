@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドのメッセージ |Microsoft Docs
+title: '[メッセージ] メニューのコマンド | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62845891"
 ---
 # <a name="messages-menu-commands"></a>[メッセージ] メニューのコマンド
-**メッセージ**] メニューの [メッセージ ビューを制御するためのコマンドを提供します。
+**[メッセージ]** メニューには、メッセージ ビューを制御するためのコマンドが用意されています。
 
- **ログ開始/終了**開始または停止メッセージを表示します。
+ **ログの開始/停止** メッセージ ビューを開始または停止します。
 
- **ログ オプション**開きます、**メッセージ** ダイアログ ボックスで、メッセージの検索条件を指定できます。
+ **ログ オプション** **[MessageOptions]** ダイアログ ボックスが開き、メッセージの検索条件を指定できます。
 
- **ログの消去**アクティブなメッセージ ビューの内容を消去します。
+ **[ログのクリア]** アクティブなメッセージ ビューの内容がクリアされます。

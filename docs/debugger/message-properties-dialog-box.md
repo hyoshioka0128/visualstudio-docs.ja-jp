@@ -1,5 +1,5 @@
 ---
-title: メッセージのプロパティ ダイアログ ボックス |Microsoft Docs
+title: '[メッセージ プロパティ] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,41 +13,41 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62846116"
 ---
 # <a name="message-properties-dialog-box"></a>[メッセージ プロパティ] ダイアログ ボックス
-特定のメッセージの詳細を確認するには、このダイアログ ボックスを使用します。 このダイアログ ボックスを表示するには、フォーカスを移動、[メッセージ ビュー](../debugger/messages-view.md)ウィンドウ。 ツリーで、メッセージの任意のノードを選択し、**プロパティ**から、**ビュー**メニュー。
+このダイアログ ボックスを使用して、特定のメッセージの詳細を確認します。 このダイアログ ボックスを表示するには、[メッセージ ビュー](../debugger/messages-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のメッセージ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。
 
- **全般** タブは、のみ タブが表示されます。 次の設定を使用できます。
+ 表示される唯一のタブが **[全般]** タブです。 次の設定を使用できます。
 
- **ウィンドウ ハンドル**このウィンドウの一意の ID。 ウィンドウ ハンドルの番号が再利用されます。これらは、そのウィンドウの有効期間にのみウィンドウを識別します。 このウィンドウのプロパティを表示するには、この値をクリックします。
+ **ウィンドウ ハンドル** このウィンドウの一意の ID です。 ウィンドウ ハンドル番号は再利用されます。ウィンドウの有効期間中にのみウィンドウを識別できます。 この値は、このウィンドウのプロパティを表示する場合にクリックします。
 
- **入れ子のレベル**0 に入れ子がありません、このメッセージの入れ子の深さ。
+ **入れ子レベル** このメッセージの入れ子の深さです。0 の場合、入れ子になっていません。
 
- **メッセージ**数、ステータス、および選択した windows メッセージの名前。
+ **メッセージ** 選択したウィンドウ メッセージの番号、状態、名前です。
 
- **lResult**の値、 *lResult*パラメーター、存在する場合。
+ **lResult** *lResult* パラメーター (ある場合) の値です。
 
- **wParam**の値、 *wParam*パラメーター、存在する場合。
+ **wParam** *wParam* パラメーター (ある場合) の値です。
 
- **lParam**の値、 *lParam*パラメーター、存在する場合。 この値は、文字列または構造体へのポインターである場合にデコードされます。
+ **lParam** *lParam* パラメーター (ある場合) の値です。 この値が文字列または構造体へのポインターである場合はデコードされます。
 
 ## <a name="related-sections"></a>関連項目
- [メッセージ オプション ダイアログ ボックス](../debugger/message-options-dialog-box.md)メッセージがアクティブなメッセージ ビューで一覧表示を選択するために使用します。
+ [[メッセージ オプション] ダイアログ ボックス](../debugger/message-options-dialog-box.md) アクティブなメッセージ ビューに一覧表示されるメッセージを選択するために使用されます。
 
- [メッセージの検索 ダイアログ ボックス](../debugger/message-search-dialog-box.md)メッセージ ビューで特定のメッセージのノードを検索するために使用します。
+ [[メッセージ検索] ダイアログ ボックス](../debugger/message-search-dialog-box.md) メッセージ ビューで特定のメッセージのノードを検索するために使用されます。
 
- [Spy++ リファレンス](../debugger/spy-increment-reference.md)各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
+ [Spy++ リファレンス](../debugger/spy-increment-reference.md) Spy++ の各メニューとダイアログ ボックスについて説明するセクションが含まれています。
 
- [[検索] ウィンドウからメッセージ ビューを開く](../debugger/how-to-open-messages-view-from-find-window.md)ウィンドウ検索 ダイアログ ボックスからメッセージ ビューを開く方法について説明します。
+ [[ウィンドウの検索] からメッセージ ビューを開く](../debugger/how-to-open-messages-view-from-find-window.md) [ウィンドウの検索] ダイアログ ボックスからメッセージ ビューを開く方法について説明します。
 
- [メッセージ ビューでメッセージを探して](../debugger/how-to-search-for-a-message-in-messages-view.md)メッセージ ビューで、特定のメッセージを検索する方法について説明します。
+ [メッセージ ビューのメッセージの検索](../debugger/how-to-search-for-a-message-in-messages-view.md) メッセージ ビューで特定のメッセージを検索する方法について説明します。
 
- [メッセージ ビューを](../debugger/messages-view.md)ウィンドウ、プロセス、またはスレッドに関連付けられているメッセージ ストリームを表示します。
+ [メッセージ ビュー](../debugger/messages-view.md) ウィンドウ、プロセス、またはスレッドに関するメッセージ ストリームが表示されます。
 
- [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
 
- [Spy++ の使用](../debugger/using-spy-increment.md)の spy++ ツールを紹介し、使用する方法について説明します。
+ [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
