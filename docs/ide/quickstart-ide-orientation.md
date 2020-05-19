@@ -55,7 +55,7 @@ Visual Studio を開くと最初にスタート ウィンドウが表示され�
 
 Visual Studio を初めて使用する場合、最近使用したプロジェクト リストは空になります。
 
-MSBuild ベースではないコードベースを使用している場合、 **[ローカル フォルダーを開く]** オプションを使用し、Visual Studio でコードを開きます。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。 そうでなければ、GitHub や Azure DevOps など、ソース プロバイダーから新しいプロジェクトを作成したり、プロジェクトをクローンしたりできます。
+MSBuild ベースではないコードベースを使用している場合、 **[ローカル フォルダーを開く]** オプションを使用し、Visual Studio でコードを開きます。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。 そうでなければ、GitHub や Azure DevOps など、ソース プロバイダーから新しいプロジェクトを作成したり、プロジェクトを複製したりできます。
 
 **[コードなしで続行]** オプションを使用すると、特定のプロジェクトやコードが読み込まれることなく、Visual Studio 開発環境が起動します。 [Live Share](/visualstudio/liveshare/) セッションに参加したり、デバッグ目的でプロセスに接続したりするとき、このオプションを選択することがあります。 **Esc** を押してスタート ウィンドウを閉じ、IDE を開くこともできます。
 
