@@ -33,7 +33,7 @@ Visual Studio は、Python を使用して Azure Cloud Services の作成に使�
 
     ![Python 用 Azure クラウド プロジェクト テンプレート](media/template-azure-cloud-project.png)
 
-1. 含める 1 つ以上のロールを選びます。 クラウド プロジェクトは、異なる言語で記述されたロールを結合できるため、アプリケーションの各部分を最も適した言語で簡単に記述できます。 このダイアログの完了後に新しいロールをプロジェクトに追加するには、**ソリューション エクスプローラー**で **[ロール]** を右クリックし、 **[追加]** の下で項目の 1 つを選びます。
+1. 含める 1 つ以上のロールを選びます。 クラウド プロジェクトは、異なる言語で記述されたロールを結合できるため、アプリケーションの各部分を最も適した言語で簡単に記述できます。 このダイアログの完了後に新しいロールをプロジェクトに追加するには、**ソリューション エクスプローラー**で **[ロール]** を右クリックし、**[追加]** の下で項目の 1 つを選びます。
 
     ![Azure クラウド プロジェクト テンプレートでのロールの追加](media/template-azure-cloud-service-project-wizard.png)
 
@@ -58,9 +58,9 @@ Visual Studio は、Python を使用して Azure Cloud Services の作成に使�
 
 追加の構成は、次のように実行できます。
 
-1. プロジェクトのルート ディレクトリ内の `pip`requirements.txt *ファイルを更新することで、* を使用してパッケージをインストールします。 *ConfigureCloudService.ps1* スクリプトでは、デプロイ時にこのファイルがインストールされます。
-1. *web.config* ファイル (Web ロール) または `Runtime`ServiceDefinition.csdef*ファイル (worker ロール) の* セクションを変更することで、環境変数を設定します。
-1. `Runtime/EntryPoint`ServiceDefinitions.csdef*ファイルの* セクションでコマンド ラインを変更して、worker ロールに使用するスクリプトと引数を指定します。
+1. プロジェクトのルート ディレクトリ内の *requirements.txt* ファイルを更新することで、`pip` を使用してパッケージをインストールします。 *ConfigureCloudService.ps1* スクリプトでは、デプロイ時にこのファイルがインストールされます。
+1. *web.config* ファイル (Web ロール) または *ServiceDefinition.csdef* ファイル (worker ロール) の `Runtime` セクションを変更することで、環境変数を設定します。
+1. *ServiceDefinitions.csdef* ファイルの `Runtime/EntryPoint` セクションでコマンド ラインを変更して、worker ロールに使用するスクリプトと引数を指定します。
 1. *web.config* ファイルを通じて、Web ロールのメイン ハンドラー スクリプトを設定します。
 
 ## <a name="test-role-deployment"></a>ロールのデプロイのテスト
@@ -87,7 +87,7 @@ Cloud Services では、*ConfigureCloudService.ps1* スクリプトは `pip` を
 
 クラウド サービス インスタンスには C コンパイラが含まれていないため、C の拡張子を持つすべてのライブラリはコンパイル済みのバイナリを提供する必要があります。
 
-*requirements.txt* 内のパッケージに加えて、pip とその依存関係が自動的にダウンロードされ、課金対象となる帯域幅の使用としてカウントされる可能性があります。 [requirements.txt](managing-required-packages-with-requirements-txt.md) ファイルの管理について詳しくは、「*必要なパッケージの管理*」をご覧ください。
+*requirements.txt* 内のパッケージに加えて、pip とその依存関係が自動的にダウンロードされ、課金対象となる帯域幅の使用としてカウントされる可能性があります。 *requirements.txt* ファイルの管理について詳しくは、「[必要なパッケージの管理](managing-required-packages-with-requirements-txt.md)」をご覧ください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

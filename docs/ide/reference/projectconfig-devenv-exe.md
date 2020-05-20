@@ -49,7 +49,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolnConfigName*
 
-  任意。 `Debug`SolutionName`Release` で指定されたソリューションに適用されるソリューション構成の名前 ( *、* など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
+  任意。 *SolutionName* で指定されたソリューションに適用されるソリューション構成の名前 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
 
 - `/Project` *ProjName*
 
@@ -57,7 +57,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - `/ProjectConfig` *ProjConfigName*
 
-  任意。 指定した `Debug` に適用されるプロジェクトのビルド構成名 (`Release`、`/Project` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。
+  任意。 指定した `/Project` に適用されるプロジェクトのビルド構成名 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。
 
 - `/Out` *OutputFilename*
 
@@ -65,7 +65,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="remarks"></a>解説
 
-`/ProjectConfig` スイッチは、`/Project`、/`/Build`、`Clean`、または `/Deploy` コマンドの一部として `/Rebuild` スイッチと共に使用する必要があります。
+`/ProjectConfig` スイッチは、`/Build`、/`Clean`、`/Deploy`、または `/Rebuild` コマンドの一部として `/Project` スイッチと共に使用する必要があります。
 
 空白を含む文字列を二重引用符で囲みます。
 
@@ -73,7 +73,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="example"></a>例
 
-次のコマンドでは、`CSharpWinApp` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `MySolution` をビルドします。
+次のコマンドでは、`MySolution` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `CSharpWinApp` をビルドします。
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug

@@ -72,7 +72,7 @@ ms.locfileid: "75594722"
 
 Windows、Office、Database、Web など、特定のプロジェクト サブタイプにのみテンプレートが表示されるように指定できます。
 
-1. 項目テンプレートの `ProjectType`.vstemplate *ファイルで、* 要素を探します。
+1. 項目テンプレートの *.vstemplate* ファイルで、`ProjectType` 要素を探します。
 
 1. [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 要素を `ProjectType` 要素の直後に追加します。
 

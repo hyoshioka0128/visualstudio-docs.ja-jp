@@ -110,7 +110,7 @@ Visual Studio がインストールされていないデバイスでアプリケ
 
 **リモート コンピューターでの TIP データの収集**
 
-リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの **%VSInstallDir%\Team Tools\Performance Tools\Setups\_ フォルダーから \_vs**profiler _\<_ **プラットフォーム>\_** _\<_ **言語>** *.exe* ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
+リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの *%VSInstallDir%\Team Tools\Performance Tools\Setups* フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
 
 プロファイル データを収集するには、 [VSPerfCmd](../profiling/vsperfcmd.md) または [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) を使用できます。
 

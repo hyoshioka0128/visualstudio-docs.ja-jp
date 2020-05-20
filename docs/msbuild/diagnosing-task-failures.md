@@ -49,7 +49,7 @@ Build FAILED.
   S:\MSB6006_demo\MSB6006_demo.csproj(19,5): error MSB6006: "custom tool" exited with code 1.
 ```
 
-この結果は、ファイル `S:\MSB6006_demo\MSB6006_demo.csproj` の 19 行目に定義されているタスクで、プロジェクト `InvokeToolTask` の `S:\MSB6006_demo\MSB6006_demo.csproj` というターゲットで、エラーが発生したことを示しています。
+この結果は、ファイル `S:\MSB6006_demo\MSB6006_demo.csproj` の 19 行目に定義されているタスクで、プロジェクト `S:\MSB6006_demo\MSB6006_demo.csproj` の `InvokeToolTask` というターゲットで、エラーが発生したことを示しています。
 
 ### <a name="in-visual-studio"></a>Visual Studio で使用する
 

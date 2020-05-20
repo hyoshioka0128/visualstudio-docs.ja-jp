@@ -39,7 +39,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - *SolnConfigName*
 
-  任意。 `Debug`SolutionName`Release` で指定されたソリューションのリビルドに使用されるソリューション構成の名前 ( *、* など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
+  任意。 *SolutionName* で指定されたソリューションのリビルドに使用されるソリューション構成の名前 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
 
 - `/Project` *ProjName*
 
@@ -47,7 +47,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - `/ProjectConfig` *ProjConfigName*
 
-  任意。 指定した `Debug` のリビルド時に使用されるプロジェクトのビルド構成名 (`Release`、`/Project` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 このスイッチを指定すると、*SolnConfigName* 引数はオーバーライドされます。
+  任意。 指定した `/Project` のリビルド時に使用されるプロジェクトのビルド構成名 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 このスイッチを指定すると、*SolnConfigName* 引数はオーバーライドされます。
 
 - `/Out` *OutputFilename*
 
@@ -63,7 +63,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 ## <a name="example"></a>例
 
-この例では、`CSharpWinApp` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `MySolution` を消去してリビルドします。
+この例では、`MySolution` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `CSharpWinApp` を消去してリビルドします。
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug

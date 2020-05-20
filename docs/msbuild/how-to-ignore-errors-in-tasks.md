@@ -22,7 +22,7 @@ ms.locfileid: "77633825"
 
 ## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 属性を使用する
 
-`ContinueOnError` 要素の `Task` 属性は、タスク エラーの発生時にビルドを停止するか続行するかを制御します。 この属性は、ビルドを続行するときに、エラーをエラーとして扱うか、それとも警告として扱うかも制御します。
+`Task` 要素の `ContinueOnError` 属性は、タスク エラーの発生時にビルドを停止するか続行するかを制御します。 この属性は、ビルドを続行するときに、エラーをエラーとして扱うか、それとも警告として扱うかも制御します。
 
 `ContinueOnError` 属性には、次の値のいずれかを含めることができます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "77633825"
 
 ## <a name="example"></a>例
 
-次のコード例は、`Build` タスクが失敗した場合でも `Delete` ターゲットが実行され続け、ビルドが成功したと見なされることを示します。
+次のコード例は、`Delete` タスクが失敗した場合でも `Build` ターゲットが実行され続け、ビルドが成功したと見なされることを示します。
 
 ```xml
 <Project DefaultTargets="FakeBuild"

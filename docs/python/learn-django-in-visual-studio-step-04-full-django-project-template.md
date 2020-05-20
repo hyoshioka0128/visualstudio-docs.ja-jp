@@ -43,7 +43,7 @@ Visual Studio の "空の Django Web プロジェクト" テンプレート上�
 
 1. Visual Studio による仮想環境の設定が終了したら、*readme.html* に表示された指示に従って、Django スーパー ユーザー (つまり、管理者) を作成します。 Visual Studio プロジェクトを右クリックして、 **[Python]**  >  **[Django でスーパー ユーザーを作成する]** コマンドを選択して、プロンプトの指示に従います。 アプリの認証機能を利用するときに使うので、必ずユーザー名とパスワードを記録してください。
 
-1. **ソリューション エクスプローラー**を右クリックし、 **[スタートアップ プロジェクトとして設定]** を選択して、**DjangoWeb** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
+1. **ソリューション エクスプローラー**を右クリックし、**[スタートアップ プロジェクトとして設定]** を選択して、**DjangoWeb** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
 
     ![スタートアップ プロジェクトとして DjangoWeb プロジェクトを表示したソリューション エクスプローラー](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -61,7 +61,7 @@ Visual Studio の "空の Django Web プロジェクト" テンプレート上�
 
 1. 以降のセクションのために、アプリを実行したままにすることができます。
 
-    アプリを停止して[ソース コントロールへの変更をコミットする](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、 **[これらのローカル項目を無視]** を選択します。
+    アプリを停止して[ソース コントロールへの変更をコミットする](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
 
 ### <a name="examine-what-the-template-creates"></a>テンプレートによって作成されたものを確認する
 
@@ -161,7 +161,7 @@ def about(request):
 
 *index.html* および *contact.html* は、同じ構造を使用して、"content" ブロックでより長い内容を提供します。
 
-また、*templates/app* フォルダーには、*を使用して*layout.html*に組み込まれる*loginpartial.html*と、4 番目のページである*login.html`{% include %}` もあります。 これらのテンプレート ファイルについては、手順 5 の認証に関するセクションで取り上げます。
+また、*templates/app* フォルダーには、`{% include %}` を使用して *layout.html* に組み込まれる *loginpartial.html* と、4 番目のページである *login.html* もあります。 これらのテンプレート ファイルについては、手順 5 の認証に関するセクションで取り上げます。
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>質問: {% block %} と {% endblock %} は Django ページ テンプレートでインデントできますか。
 
@@ -204,7 +204,7 @@ urlpatterns = [
 ]
 ```
 
-最初の 3 つの URL パターンは、アプリの `home`views.py`contact` ファイルにある `about`、 *、* ビューに直接マップされます。 一方、パターン `^login/$` および `^logout$` では、アプリ定義のビューではなく、組み込みの Django ビューを使用します。 また、`url` メソッドの呼び出しには、ビューをカスタマイズするための追加のデータが含まれます。 手順 5 では、これらの呼び出しについて確認します。
+最初の 3 つの URL パターンは、アプリの *views.py* ファイルにある `home`、`contact`、`about` ビューに直接マップされます。 一方、パターン `^login/$` および `^logout$` では、アプリ定義のビューではなく、組み込みの Django ビューを使用します。 また、`url` メソッドの呼び出しには、ビューをカスタマイズするための追加のデータが含まれます。 手順 5 では、これらの呼び出しについて確認します。
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>質問: 作成したプロジェクトでは、どうして "about" の URL パターンに、このページで示されている '^about$' ではなく '^about' を使用するのですか。
 

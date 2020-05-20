@@ -103,7 +103,7 @@ OutputDataSet <- InputDataSet
 
 *.Query.sql* ファイル (この例では *StoredProcedure.Query.sql*) は、`InputDataSet` 用のデータを生成する SQL クエリを記述してテストするファイルです。 この *.sql* ファイルでは、エディターが普通の Transact-SQL 機能をすべて提供します。
 
-SQL コードに問題がないことを確認したら、そのコードを R コードと統合できます。 *.R* ファイルを開いているエディターに *.sql* ファイルをドラッグします。 次の図では、*StoredProcedure.Query.sql* が *StoredProcedure.R* 内の `sqlQuery(channel, )` のコンマの後のポイントにドラッグされています。
+SQL コードに問題がないことを確認したら、そのコードを R コードと統合できます。*.R* ファイルを開いているエディターに *.sql* ファイルをドラッグします。 次の図では、*StoredProcedure.Query.sql* が *StoredProcedure.R* 内の `sqlQuery(channel, )` のコンマの後のポイントにドラッグされています。
 
 ![R 文字列変数への SQL ファイルの読み込み](media/sql-reference-sql-file-from-r.png)
 

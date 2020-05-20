@@ -33,11 +33,11 @@ ms.locfileid: "75589202"
 
 1. Visual Studio で、新しい **Windows フォーム コントロール ライブラリ** プロジェクトを作成します。 プロジェクトに **MessageEditors** という名前を付けます。
 
-   プロジェクトが新しいソリューションに追加され、<xref:System.Windows.Forms.UserControl>UserControl1.cs*という名前の* がデザイナーに表示されます。
+   プロジェクトが新しいソリューションに追加され、*UserControl1.cs* という名前の <xref:System.Windows.Forms.UserControl> がデザイナーに表示されます。
 
 1. **ツールボックス**の **[コモン コントロール]** カテゴリで、<xref:System.Windows.Forms.RichTextBox> を UserControl1 のサーフェイスにドラッグします。
 
-1. ![ コントロールの右上隅にあるアクション タグ グリフ (](../test/media/vs_winformsmttagglyph.gif)スマート タグ グリフ<xref:System.Windows.Forms.RichTextBox>) を選び、親コンテナーを選択して**ドッキング**します。
+1. <xref:System.Windows.Forms.RichTextBox> コントロールの右上隅にあるアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) を選び、親コンテナーを選択して**ドッキング**します。
 
 1. **ソリューション エクスプローラー**で、Windows フォーム ライブラリ プロジェクトを右クリックし、 **[プロパティ]** を選択します。
 
@@ -55,7 +55,7 @@ ms.locfileid: "75589202"
 
 1. **[.NET]** タブを選びます。下にスクロールして、 **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、 **[OK]** を選びます。
 
-1. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、 **[デザイナーの表示]** を選択します。
+1. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、**[デザイナーの表示]** を選択します。
 
 1. デザイン サーフェイスを右クリックし、 **[コードの表示]** を選択します。
 

@@ -113,7 +113,7 @@ private:
 
 ## <a name="for-vs-forr-vs-rfor"></a>for と forr と rfor
 
-さまざまな種類の **ループを提供する 3 つの**for`for` スニペットがあります。
+さまざまな種類の `for` ループを提供する 3 つの **for** スニペットがあります。
 
 **rfor** スニペットは、[範囲に基づく](/cpp/cpp/range-based-for-statement-cpp) for ループ (リンク) を提供します。 インデックスに基づく `for` ループよりも、このコンストラクトが適しています。
 
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-**for** スニペットは、条件がオブジェクトの長さ (`for`) に基づく `size_t` ループを提供します。
+**for** スニペットは、条件がオブジェクトの長さ (`size_t`) に基づく `for` ループを提供します。
 
 ```cpp
 for (size_t i = 0; i < length; i++)

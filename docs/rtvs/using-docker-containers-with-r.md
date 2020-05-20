@@ -22,7 +22,7 @@ R Tools for Visual Studio (RTVS) バージョン 1.3 以降は、[Docker for Win
 
 ## <a name="create-a-container"></a>コンテナーの作成
 
-1. **[ワークスペース]** ウィンドウ ( **[R Tools]**  >  **[ウィンドウ]**  >  **[ワークスペース]** ) の右上隅にある **[コンテナー]** ボタンを選択します。 Docker for Windows がインストールされていない場合は、ウィンドウにその旨が通知されると共に、ダウンロード用のリンクが提供されます。 Docker をインストールするときに、コンピューターの再起動が必要な場合があります。
+1. **[ワークスペース]** ウィンドウ (**[R Tools]** > **[ウィンドウ]** > **[ワークスペース]**) の右上隅にある **[コンテナー]** ボタンを選択します。 Docker for Windows がインストールされていない場合は、ウィンドウにその旨が通知されると共に、ダウンロード用のリンクが提供されます。 Docker をインストールするときに、コンピューターの再起動が必要な場合があります。
 
     ![R Tools for Visual Studio の [ワークスペース] ウィンドウ (VS2017) と [コンテナー] コマンド](media/container-workspaces-window.png)
 
@@ -40,7 +40,7 @@ R Tools for Visual Studio (RTVS) バージョン 1.3 以降は、[Docker for Win
 
 ## <a name="connect-to-a-container"></a>コンテナーへの接続
 
-1. **[ワークスペース]** ウィンドウの **[ローカルで実行中のコンテナー]** セクションには、ポート 5444 で RTVS デーモンを実行しているコンテナーが表示されます (デーモンの構成方法の詳細については、[リモート R Server for Linux](setting-up-remote-r-service-on-linux.md) に関するページを参照してください)。
+1. **[ワークスペース]** ウィンドウの **[ローカルで実行中のコンテナー]** セクションには、ポート 5444 で RTVS デーモンを実行しているコンテナーが表示されます  (デーモンの構成方法の詳細については、[リモート R Server for Linux](setting-up-remote-r-service-on-linux.md) に関するページを参照してください)。
 
     ![使用可能なコンテナーを表示している [ワークスペース] ウィンドウ](media/workspaces-window-running-containers.png)
 

@@ -23,7 +23,7 @@ ms.locfileid: "75593331"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>方法: インポートした名前空間を追加または削除する (Visual Basic)
 
-名前空間をインポートすると、その名前空間の要素を、完全に修飾することなくコードで使うことができます。 たとえば、`Create` クラスの `System.Messaging.MessageQueue` メソッドにアクセスする場合、`System.Messaging` 名前空間をインポートすると、`MessageQueue.Create` とするだけで必要な要素をコードで参照できます。
+名前空間をインポートすると、その名前空間の要素を、完全に修飾することなくコードで使うことができます。 たとえば、`System.Messaging.MessageQueue` クラスの `Create` メソッドにアクセスする場合、`System.Messaging` 名前空間をインポートすると、`MessageQueue.Create` とするだけで必要な要素をコードで参照できます。
 
 インポートした名前空間は、**プロジェクト デザイナー**の **[参照]** ページで管理します。 このダイアログ ボックスで指定したインポートは、コンパイラに直接渡されて ( */imports*)、プロジェクト内のすべてのファイルに適用されます。 1 つのソース コード ファイルで名前空間を使うには、`Imports` ステートメントを使います。
 

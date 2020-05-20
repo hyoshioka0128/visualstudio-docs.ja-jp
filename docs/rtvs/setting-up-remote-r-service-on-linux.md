@@ -26,7 +26,7 @@ Linux 用のリモート R サービスは現在、rtvs デーモンとしてパ
 1. **[接続の追加]** を選択します。
 1. 接続に名前を付けて、その URL を入力します。たとえば、`https://localhost:5444` (Linux 用 Windows サブシステム) または `https://public-ip:5444` (Azure コンテナー) とします。 完了したら、 **[保存]** を選択します。
 1. 接続アイコンを選択するか、接続項目をダブルクリックします。
-1. ログイン資格情報を入力します。 ユーザー名には、`<<unix>>\` のように、プレフィックスとして `<<unix>>\ruser1` を付けます (必要な場合は、Linux リモート マシンへのすべての接続に対して)。
+1. ログイン資格情報を入力します。 ユーザー名には、`<<unix>>\ruser1` のように、プレフィックスとして `<<unix>>\` を付けます (必要な場合は、Linux リモート マシンへのすべての接続に対して)。
 1. 自己署名証明書を使用している場合は、警告が表示される可能性があります。 メッセージには、警告を解決するための手順が示されています。
 
 ## <a name="set-up-remote-r-service"></a>リモート R サービスの設定
@@ -67,7 +67,7 @@ Linux 用のリモート R サービスは現在、rtvs デーモンとしてパ
     sudo systemctl start rtvsd
     ```
 
-1. SSL 証明書を構成します (運用環境で必要)。 既定では、rtvs デーモンは、`ssl-cert-snakeoil.pem` パッケージによって生成された `ssl-cert-snakeoil.pem` と `ssl-cert` を使用します。 インストール中に、それらは `ssl-cert-snakeoil.pfx` に結合されます。 運用環境では、管理者によって提供される SSL 証明書を使用します。 SSL 証明書を構成するには、 */etc/rtvs/rtvsd.config.json* 内に *.pfx* ファイルと省略可能なインポート パスワードを指定します。
+1. SSL 証明書を構成します (運用環境で必要)。 既定では、rtvs デーモンは、`ssl-cert` パッケージによって生成された `ssl-cert-snakeoil.pem` と `ssl-cert-snakeoil.pem` を使用します。 インストール中に、それらは `ssl-cert-snakeoil.pfx` に結合されます。 運用環境では、管理者によって提供される SSL 証明書を使用します。 SSL 証明書を構成するには、*/etc/rtvs/rtvsd.config.json* 内に *.pfx* ファイルと省略可能なインポート パスワードを指定します。
 
 1. (省略可能) サービスが実行されていることを確認します。
 
@@ -154,14 +154,14 @@ Linux 用のリモート R サービスは現在、rtvs デーモンとしてパ
     docker run -p 5444:5444 myrimage rtvsd
     ```
 
-1. RTVS からコンテナーに接続するには、パス、ユーザー名 `https://localhost:5444`、パスワード `<<unix>>\ruser1` として `foobar` を使用します。 コンテナーがリモート マシンで実行されている場合は、代わりにパスとして `https://remote-host-name:5444` を使用します。 ポートを変更するには、 */etc/rtvs/rtvsd.config.json* を更新します。
+1. RTVS からコンテナーに接続するには、パス、ユーザー名 `<<unix>>\ruser1`、パスワード `foobar` として `https://localhost:5444` を使用します。 コンテナーがリモート マシンで実行されている場合は、代わりにパスとして `https://remote-host-name:5444` を使用します。 ポートを変更するには、 */etc/rtvs/rtvsd.config.json* を更新します。
 
 ### <a name="container-running-on-azure-container-instances"></a>Azure Container Instances で実行されているコンテナー
 
 1. 「[ローカルまたはリモートの Docker コンテナー (クリーン ビルド)](#local-or-remote-docker-container-clean-build)」で説明した手順に従ってイメージを作成します。
 1. コンテナーを Docker ハブまたは Azure コンテナー リポジトリにプッシュします。
 1. Azure CLI を起動し、`az login` コマンドを使用してサインインします。
-1. `az container create` コマンドを使用してコンテナーを作成します。`--command-line "rtvsd"` サービスとして `rtvsd` を実行するようにコンテナーを設定していない場合は、`systemd` を使用します。 次のコマンドでは、イメージが Docker ハブ上にあると想定しています。 また、Azure コンテナー リポジトリを使用することもできます。そのためには、コンテナー リポジトリ資格情報引数をコマンド ラインに追加します。
+1. `az container create` コマンドを使用してコンテナーを作成します。`systemd` サービスとして `rtvsd` を実行するようにコンテナーを設定していない場合は、`--command-line "rtvsd"` を使用します。 次のコマンドでは、イメージが Docker ハブ上にあると想定しています。 また、Azure コンテナー リポジトリを使用することもできます。そのためには、コンテナー リポジトリ資格情報引数をコマンド ラインに追加します。
 
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"

@@ -87,13 +87,13 @@ MSBuild ベース コードベースでは、 **[開始]** ボタンのドロッ
 
 ### <a name="codebases-that-use-custom-build-tools"></a>カスタム ビルド ツールを使用するコードベース
 
-お使いのコードベースでカスタム ビルド ツールを使用している場合、 *.json* ファイルに定義されている*ビルド タスク*を使用したコードの作成方法を Visual Studio に指示する必要があります。 詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)に関するページをご覧ください。
+お使いのコードベースでカスタム ビルド ツールを使用している場合、*.json* ファイルに定義されている*ビルド タスク*を使用したコードの作成方法を Visual Studio に指示する必要があります。 詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)に関するページをご覧ください。
 
 ### <a name="codebases-that-contain-python-or-javascript-code"></a>Python または JavaScript コードを含むコードベース
 
 コードベースに Python または JavaScript コードが含まれている場合、 *.json* ファイルを構成する必要はありませんが、対応するワークロードをインストールする必要が生じます。 また、次のようにスタートアップ スクリプトを構成する必要があります。
 
-1. **[ツール]**  >  **[ツールと機能を取得]** を選択するか、または Visual Studio を複製して Visual Studio インストーラーを実行して、[Node.js 開発](https://visualstudio.microsoft.com/vs/node-js/)または [Python 開発](https://visualstudio.microsoft.com/vs/python/)のワークロードをインストールします。
+1. **[ツール]** > **[ツールと機能を取得]** を選択するか、または Visual Studio を複製して Visual Studio インストーラーを実行して、[Node.js 開発](https://visualstudio.microsoft.com/vs/node-js/)または [Python 開発](https://visualstudio.microsoft.com/vs/python/)のワークロードをインストールします。
 
    ![Node.js および Python 開発のワークロード](media/python_nodejs_workloads.png)
 

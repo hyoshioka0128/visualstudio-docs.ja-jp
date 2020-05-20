@@ -27,7 +27,7 @@ ms.locfileid: "77634566"
 ---
 # <a name="assignculture-task"></a>AssignCulture タスク
 
-このタスクは、有効な .NET カルチャ ID 文字列をファイル名の一部として含む可能性がある項目の一覧を受け取り、対応するカルチャ ID を含む `Culture` という名前のメタデータを持つ項目を生成します。 たとえば、ファイル名 *Form1.fr-fr.resx* には、"fr-fr" というカルチャ ID が埋め込まれています。したがって、このタスクでは、`Culture` と等しい値の `fr-fr` メタデータを持つ同じファイル名の項目が生成されます。 また、このタスクでは、ファイル名からカルチャを削除したファイル名の一覧も生成されます。
+このタスクは、有効な .NET カルチャ ID 文字列をファイル名の一部として含む可能性がある項目の一覧を受け取り、対応するカルチャ ID を含む `Culture` という名前のメタデータを持つ項目を生成します。 たとえば、ファイル名 *Form1.fr-fr.resx* には、"fr-fr" というカルチャ ID が埋め込まれています。したがって、このタスクでは、`fr-fr` と等しい値の `Culture` メタデータを持つ同じファイル名の項目が生成されます。 また、このタスクでは、ファイル名からカルチャを削除したファイル名の一覧も生成されます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
 
@@ -47,7 +47,7 @@ ms.locfileid: "77634566"
 
 ## <a name="example"></a>例
 
- `AssignCulture` 項目コレクションを指定して `ResourceFiles` タスクを実行する例を以下に示します。
+ `ResourceFiles` 項目コレクションを指定して `AssignCulture` タスクを実行する例を以下に示します。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

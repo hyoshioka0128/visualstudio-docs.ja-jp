@@ -22,7 +22,7 @@ C# プロジェクトの一般的ビルド アクションには次のような�
 
 * **なし** - このファイルはいかなる形でもビルドに含まれません。IDE から簡単にアクセスできるようにプロジェクトに含まれています。
 * **コンパイル** - このファイルはソース ファイルとして C# コンパイラに渡されます。
-* **EmbeddedResource** - このファイルはアセンブリに埋め込むリソースとして C# コンパイラに渡されます。 [ 名前空間の ](/dotnet/api/system.reflection.assembly.getmanifestresourcestream)Assembly.GetManifestResourceStream`System.Reflection` を使用すると、アセンブリからファイルを読み取ることができます。
+* **EmbeddedResource** - このファイルはアセンブリに埋め込むリソースとして C# コンパイラに渡されます。 `System.Reflection` 名前空間の [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream) を使用すると、アセンブリからファイルを読み取ることができます。
 * **コンテンツ** - ASP.NET プロジェクトの場合、展開時、このファイルはサイトの一部として追加されます。 Xamarin.iOS プロジェクトと Xamarin.Mac プロジェクトの場合、アプリ バンドルに含まれます。
 
 ソリューション エクスプローラーでは複数のファイルを選択でき、ビルド アクションを一度に複数のファイルに設定できます。

@@ -21,7 +21,7 @@ Visual Studio for Mac では、IntelliSense の入力候補一覧に、使用可
 
 ## <a name="how-to-enable"></a>有効にする方法
 
-この機能を有効にするには、 **[Visual Studio]**  >  **[ユーザー設定]** を使用して **[ユーザー設定]** を開き、 **[テキスト エディター]**  >  **[IntelliSense]** に移動します。 **[Show Import Items]\(インポート項目を表示\)** ボックスをオンにして、IntelliSense で追加の項目を有効にします。
+この機能を有効にするには、**[Visual Studio]** > **[ユーザー設定]** を使用して **[ユーザー設定]** を開き、**[テキスト エディター]** > **[IntelliSense]** に移動します。 **[Show Import Items]\(インポート項目を表示\)** ボックスをオンにして、IntelliSense で追加の項目を有効にします。
 
 ![[Show Import Items]\(インポート項目を表示\) のオプション](media/show-import-items.png)
 

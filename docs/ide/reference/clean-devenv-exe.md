@@ -38,7 +38,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *構成*
 
-  任意。 `Debug`SolutionName`Release` で指定されたソリューションの中間ファイルの消去に使用される構成 ( *、* など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
+  任意。 *SolutionName* で指定されたソリューションの中間ファイルの消去に使用される構成 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 この引数が指定されていないか空の文字列 (`""`) の場合、ソリューションのアクティブな構成が使用されます。
 
 - `/Project` *ProjName*
 
@@ -46,7 +46,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - `/ProjectConfig` *ProjConfigName*
 
-  任意。 指定した `Debug` の消去時に使用されるプロジェクトのビルド構成名 (`Release`、`/Project` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 このスイッチを指定すると、*Config* 引数はオーバーライドされます。
+  任意。 指定した `/Project` の消去時に使用されるプロジェクトのビルド構成名 (`Debug`、`Release` など)。 複数のソリューション プラットフォームが利用できる場合、プラットフォームも指定する必要があります (`Debug|Win32` など)。 このスイッチを指定すると、*Config* 引数はオーバーライドされます。
 
 - `/Out` *OutputFilename*
 
@@ -66,7 +66,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 最初の例では、ソリューション ファイルで指定された既定の構成を使用して、`MySolution` ソリューションを消去します。
 
-2 つ目の例では、`CSharpWinApp` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `MySolution` を消去します。
+2 つ目の例では、`MySolution` 内の `Debug` プロジェクト ビルド構成を使用して、プロジェクト `CSharpWinApp` を消去します。
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean

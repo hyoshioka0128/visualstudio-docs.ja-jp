@@ -34,7 +34,7 @@ ms.locfileid: "75591412"
 
 1. テンプレートの *vstemplate* ファイルで、このファイルを含む `ProjectItem` 要素を検索します。
 
-1. `ReplaceParameters` 要素の `true` 属性を `ProjectItem` に設定します。
+1. `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>

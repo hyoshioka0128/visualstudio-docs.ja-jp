@@ -50,7 +50,7 @@ Visual Studio for Mac で新しいタブに `.csproj` を表示するには、�
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
-ターゲット ファイルは別の MSBuild ファイルです。 このファイルに含まれる MSBuild コードは、複数のプロジェクトで再利用できます。 たとえば、`Microsoft.CSharp.targets` プロパティ (または変数) で表されるディレクトリにある `MSBuildBinPath` ファイルには、C# ソース ファイルから C# アセンブリをビルドするためのロジックが含まれています。
+ターゲット ファイルは別の MSBuild ファイルです。 このファイルに含まれる MSBuild コードは、複数のプロジェクトで再利用できます。 たとえば、`MSBuildBinPath` プロパティ (または変数) で表されるディレクトリにある `Microsoft.CSharp.targets` ファイルには、C# ソース ファイルから C# アセンブリをビルドするためのロジックが含まれています。
 
 ### <a name="items-and-properties"></a>項目とプロパティ
 

@@ -55,11 +55,11 @@ Django 管理コンソールには、 **[プロジェクト]** メニューの�
 
     ![[Django Sync DB] コマンドの結果](media/template-django-console-sync-db.png)
 
-- **[静的ファイルの収集]** : `manage.py collectstatic --noinput` を実行して、`STATIC_ROOT`settings.py*の* で指定されたパスにすべての統計ファイルをコピーします。
+- **[静的ファイルの収集]**: `manage.py collectstatic --noinput` を実行して、*settings.py* の `STATIC_ROOT` で指定されたパスにすべての統計ファイルをコピーします。
 
     ![[静的ファイルの収集] コマンドの結果](media/template-django-console-collect-static.png)
 
-- **[検証]** : `manage.py validate`settings.py`INSTALLED_APPS` の *で指定されたインストール済みのモデルで検証エラーをレポートする* を実行します。
+- **[検証]**: *settings.py* の `INSTALLED_APPS` で指定されたインストール済みのモデルで検証エラーをレポートする `manage.py validate` を実行します。
 
     ![[検証] コマンドの結果](media/template-django-console-validate.png)
 

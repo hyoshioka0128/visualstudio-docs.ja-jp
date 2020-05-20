@@ -204,7 +204,7 @@ Namespace ClassLibrary2
 End Namespace
 ```
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドに、抽出規則の中心的な機能が含まれています。 前の例の <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドは、この抽出規則の対象となる要求が生成する応答を示す <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> を受け取ります。 応答には、応答内のすべてのタグを含む <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> が含まれています。 入力タグは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> からフィルターで除外されます。 各入力タグについて、`name` プロパティに対してユーザーが指定した値を持つ `Name` という属性があるかどうか、確認されます。 一致する属性を持つタグが見つかった場合、value 属性が存在すれば、その `value` 属性に含まれている値の抽出が試みられます。 存在する場合、タグの名前と値が抽出され、Web パフォーマンス テスト コンテキストに追加されます。 抽出規則が成功します。
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドに、抽出規則の中心的な機能が含まれています。 前の例の <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メソッドは、この抽出規則の対象となる要求が生成する応答を示す <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> を受け取ります。 応答には、応答内のすべてのタグを含む <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> が含まれています。 入力タグは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> からフィルターで除外されます。 各入力タグについて、`Name` プロパティに対してユーザーが指定した値を持つ `name` という属性があるかどうか、確認されます。 一致する属性を持つタグが見つかった場合、value 属性が存在すれば、その `value` 属性に含まれている値の抽出が試みられます。 存在する場合、タグの名前と値が抽出され、Web パフォーマンス テスト コンテキストに追加されます。 抽出規則が成功します。
 
 ## <a name="see-also"></a>参照
 

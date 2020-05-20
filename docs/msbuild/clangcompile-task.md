@@ -38,10 +38,10 @@ Microsoft C++ コンパイラ ツール clang.exe をラップします。
 |**AdditionalOptions**|省略可能な **string** 型のパラメーターです。|
 |**BufferSecurityCheck**|省略可能な **string** 型のパラメーターです。<br/><br/>セキュリティ チェックでは、プログラムのセキュリティに対する一般的な攻撃であるスタックバッファー オーバーランを検出できます。 <br/><br/>`fstack-protector`を使用します。|
 |**BuildingInIde**|省略可能な **bool** 型のパラメーターです。|
-|**CLanguageStandard**|省略可能な **string** 型のパラメーターです。<br/><br/>C 言語標準を決定します。<br/><br/>`std=[value]`c89 **、** c99 **、** c11 **、** gnu99 **、または** gnu11**の値と共に** を使います。|
+|**CLanguageStandard**|省略可能な **string** 型のパラメーターです。<br/><br/>C 言語標準を決定します。<br/><br/>**c89**、**c99**、**c11**、**gnu99**、または **gnu11** の値と共に `std=[value]` を使います。|
 |**ClangVersion**|省略可能な **string** 型のパラメーターです。|
 |**CompileAs**|省略可能な **string** 型のパラメーターです。<br/><br/>.c および .cpp ファイルのコンパイル言語オプションを選択します。 既定では .c または .cpp 拡張に基づいて検出します。<br/><br/>`-x c`、`-x c++` を使います。|
-|**CppLanguageStandard**|省略可能な **string** 型のパラメーターです。<br/><br/>C++ 言語標準を決定します。<br/><br/>`std=[value]`c++98 **、** c++11 **、** c++1y **、** gnu++98 **、** gnu++11 **、または** gnu++1y**の値と共に** を使います。|
+|**CppLanguageStandard**|省略可能な **string** 型のパラメーターです。<br/><br/>C++ 言語標準を決定します。<br/><br/>**c++98**、**c++11**、**c++1y**、**gnu++98**、**gnu++11**、または **gnu++1y** の値と共に `std=[value]` を使います。|
 |**DataLevelLinking**|省略可能な **bool** 型のパラメーターです。<br/><br/>データ項目ごとにセクションを別にすることで、未使用データを削除するリンカー最適化を有効にします。|
 |**DebugInformationFormat**|省略可能な **string** 型のパラメーターです。<br/><br/>コンパイラによって生成されるデバッグ情報の種類を指定します。<br/><br/>**None**: デバッグ情報が生成されないため、コンパイルが高速になる可能性があります (`g0` を使います)。<br/>**FullDebug**: DWARF2 のデバッグ情報を生成します (`g2 -gdwarf-2` を使います)。<br/>**LineNumber**: 行番号情報のみを生成します (`gline-tables-only`を使います)。|
 |**EnableNeonCodegen**|省略可能な **bool** 型のパラメーターです。<br/><br/>NEON の浮動小数点演算ハードウェアのコード生成を有効にします。 これは、arm アーキテクチャにのみ適用されます。|

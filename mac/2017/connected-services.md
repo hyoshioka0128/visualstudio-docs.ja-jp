@@ -50,7 +50,7 @@ ms.locfileid: "74985291"
     一覧にサービスがない場合、 **[新規]** ボタンをクリックします (手順 9 を参照)。
 
 7. PCL に `MobileServiceClient` のテンプレート コードをコピーします。 ファイルの場所は、それが 1 インスタンスしかない場合は重要ではありません。
-  Azure のすべての対話を処理し、`AzureService`を使用する `MobileServiceClient` クラスを作成するのが推奨されるアプローチです。
+  Azure のすべての対話を処理し、`MobileServiceClient`を使用する `AzureService` クラスを作成するのが推奨されるアプローチです。
 
     ![構成コードをアプリにコピーする](media/connected-services-image007.png "構成コードをアプリにコピーする")
 

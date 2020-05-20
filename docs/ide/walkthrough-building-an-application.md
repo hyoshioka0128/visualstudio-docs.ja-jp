@@ -159,7 +159,7 @@ ms.locfileid: "76115397"
      Visual Basic のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) には除外する特定の警告が含まれていないため、警告は表示されません。
 
     > [!TIP]
-    > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、 **[出力]** ウィンドウの内容を検索できます。
+    > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、**[出力]** ウィンドウの内容を検索できます。
 
 詳細については、[ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 

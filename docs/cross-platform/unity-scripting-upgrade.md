@@ -38,7 +38,7 @@ Unity には、Unity 2017.1 のリリースで、.NET 4.6 にアップグレー�
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x および .NET Standard 2.0 プロファイルのいずれかを選ぶ
 
-.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) ( **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** ) のドロップダウン メニューを使用して、 **[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 2 つのオプションがあります。
+.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) (**[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)**) のドロップダウン メニューを使用して、**[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 2 つのオプションがあります。
 
 * **.NET Standard 2.0**: このプロファイルは、.NET Foundation により発行されている [.NET Standard 2.0 プロファイル](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)と一致します。 Unity では、新しいプロジェクトに .NET Standard 2.0 を推奨しています。 これは .NET 4.x よりも小規模で、サイズに制限のあるプラットフォームで好都合です。 また、Unity では、Unity がサポートしているすべてのプラットフォームで、このプロファイルをサポートすることをコミットしています。
 
@@ -183,7 +183,7 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 [非同期プログラミング](/dotnet/csharp/async)では、アプリケーションが応答しなくならないようにしながら、時間のかかる操作を行うことができます。 この機能では、時間のかかる操作の結果に依存するコードが続行される前に、その操作が終わるのを待つこともできます。 たとえば、ファイルの読み込みやネットワーク操作の完了を待つことができます。
 
-Unity では、非同期プログラミングは通常[コルーチン](https://docs.unity3d.com/Manual/Coroutines.html)で実行されます。 ただし、C# 5 以降の .NET 開発で推奨されるのは、[System.Threading.Task](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) で `async` と `await` のキーワードを使用する[タスクベースの非同期パターン (TAP)](/dotnet/api/system.threading.tasks.task) の方法となりました。 つまり、`async` 関数では、残りのアプリケーションのアップデートをブロックせずに、タスクの完了を `await` できます。
+Unity では、非同期プログラミングは通常[コルーチン](https://docs.unity3d.com/Manual/Coroutines.html)で実行されます。 ただし、C# 5 以降の .NET 開発で推奨されるのは、[System.Threading.Task](/dotnet/api/system.threading.tasks.task) で `async` と `await` のキーワードを使用する[タスクベースの非同期パターン (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) の方法となりました。 つまり、`async` 関数では、残りのアプリケーションのアップデートをブロックせずに、タスクの完了を `await` できます。
 
 ```csharp
 // Unity coroutine

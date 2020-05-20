@@ -56,7 +56,7 @@ R ドキュメントでの検索に加えて、開発者はコードを記述す
 
 ![Visual Studio の Web 検索結果](media/help-web-search-results.png)
 
-**[R Tools]**  >  **[オプション]**  >  **[F1 Web 検索文字列]** オプションを使用して、追加されたスコープ文字列 `R site:stackoverflow` を変更できます。
+**[R Tools]** > **[オプション]** > **[F1 Web 検索文字列]** オプションを使用して、追加されたスコープ文字列 `R site:stackoverflow` を変更できます。
 
 ![[F1 Web 検索文字列] オプションを変更する](media/options-dialog.png)
 

@@ -31,7 +31,7 @@ Visual Studio でのコードの編集に関する全般的な説明について
 
 IntelliSense により、[入力候補](#completions)、[シグネチャ ヘルプ](#signature-help)、[クイック ヒント](#quick-info)、[コードの色分け表示](#code-coloring)が提供されます。 Visual Studio 2017 バージョン 15.7 以降では、[型ヒント](#type-hints)もサポートされています。
 
-パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、 **[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md)」を参照)。
+パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、**[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md)」を参照)。
 
 Visual Studio 2017 バージョン 15.6 以降では、別の手段を使用して、データベースに依存しない IntelliSense 入力候補が提供されています。
 
@@ -88,7 +88,7 @@ Python 3.5 以降の "型ヒント" ([PEP 484](https://www.python.org/dev/peps/p
 
 ![型ヒントを示す IntelliSense の入力候補](media/code-editing-type-hints2.png)
 
-エラーは通常実行時まで表示されないため、プロジェクト全体の型ヒントを検証すると役立ちます。 このために、Visual Studio では、**ソリューション エクスプローラー**の **[Python]**  >  **[Mypy の実行]** のコンテキスト メニュー コマンドを通じて、業界標準の MyPy ツールが統合されています。
+エラーは通常実行時まで表示されないため、プロジェクト全体の型ヒントを検証すると役立ちます。 このために、Visual Studio では、**ソリューション エクスプローラー**の **[Python]** > **[Mypy の実行]** のコンテキスト メニュー コマンドを通じて、業界標準の MyPy ツールが統合されています。
 
 ![ソリューション エクスプローラーで MyPy コンテキスト メニュー コマンドを実行する](media/code-editing-type-hints-run-mypy.png)
 
@@ -145,7 +145,7 @@ commas_to_colons(1)
 
 ![Visual Studio エディターのコードと構文の色分け表示](media/code-editing-code-coloring.png)
 
-色をカスタマイズするには、 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[フォントおよび色]** に移動し、 **[表示アイテム]** の一覧で **Python** のエントリを変更します。
+色をカスタマイズするには、**[ツール]** > **[オプション]** > **[環境]** > **[フォントおよび色]** に移動し、**[表示アイテム]** の一覧で **Python** のエントリを変更します。
 
 ![Visual Studio のフォント オプションと色オプション](media/code-editing-customize-colors.png)
 

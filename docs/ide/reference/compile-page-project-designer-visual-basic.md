@@ -30,7 +30,7 @@ ms.locfileid: "76111307"
 
 プロジェクト デザイナーの **[コンパイル]** ページを使用して、コンパイル命令を指定します。 このページでは、高度なコンパイラ オプションとビルド前またはビルド後のイベントを指定することもできます。
 
-**[コンパイル]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノード ( **[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]** 、 **[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、 **[コンパイル]** タブをクリックします。
+**[コンパイル]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]** 、 **[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、 **[コンパイル]** タブをクリックします。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -65,9 +65,9 @@ ms.locfileid: "76111307"
 
 この設定は、[/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Explicit ステートメント](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、 **[コンパイル]** ページの **[Option Explicit]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Explicit ステートメント](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Explicit]** 設定をオーバーライドします。
 
-新しいプロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Explicit]** 設定が **[オプション]** ダイアログ ボックスの **[Option Explicit]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Explicit]** の初期の既定値は **[オン]** です。
+新しいプロジェクトを作成するときに、**[コンパイル]** ページの **[Option Explicit]** 設定が **[オプション]** ダイアログ ボックスの **[Option Explicit]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Explicit]** の初期の既定値は **[オン]** です。
 
 **[Option Explicit]** を `Off` に設定することは、通常はお勧めできません。 変数名のスペルを 1 か所以上間違えると、プログラムの実行時に予期しない結果を招く可能性があります。
 
@@ -85,13 +85,13 @@ ms.locfileid: "76111307"
 
 `Object` 型として宣言された変数のプロパティまたはメソッドにオブジェクトを代入する場合は、そのオブジェクトは遅延バインディングされます。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」および「[事前バインディングと遅延バインディング](/dotnet/visual-basic/programming-guide/language-features/early-late-binding)」を参照してください。
 
-適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`Dim` 句を使用せず、`As` をオフにして、`Option Infer` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」、「[Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)」、および「[Visual Basic Language Specification](/dotnet/visual-basic/reference/language-specification)」 (Visual Basic 言語仕様) を参照してください。
+適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`As` 句を使用せず、`Option Infer` をオフにして、`Dim` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」、「[Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)」、および「[Visual Basic Language Specification](/dotnet/visual-basic/reference/language-specification)」 (Visual Basic 言語仕様) を参照してください。
 
 **[Option Strict]** 設定は、[/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、 **[コンパイル]** ページの **[Option Strict]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Strict]** 設定をオーバーライドします。
 
-プロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Strict]** 設定が **[オプション]** ダイアログ ボックスの **[Option Strict]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Strict]** の初期の既定値は **[オフ]** です。
+プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Strict]** 設定が **[オプション]** ダイアログ ボックスの **[Option Strict]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Strict]** の初期の既定値は **[オフ]** です。
 
 **Option Strict の個々の警告**
 
@@ -105,7 +105,7 @@ ms.locfileid: "76111307"
 
 **[Option Strict]** を **[オン]** に設定すると、これら 3 つの警告の構成設定のすべてが **[エラー]** に設定されます。 **[Option Strict]** を **[オフ]** に設定すると、3 つの設定すべてが **[なし]** に設定されます。
 
-各警告の構成設定を個別に **[なし]** 、 **[警告]** 、または **[エラー]** に変更することができます。 3 つの警告の構成設定がすべて **[エラー]** に設定されている場合、`On` ボックスに `Option strict` が表示されます。 3 つすべてが **[なし]** に設定されている場合、このボックスには `Off` が表示されます。 これらの設定のその他の組み合わせに対しては、 **(カスタム)** が表示されます。
+各警告の構成設定を個別に **[なし]** 、 **[警告]** 、または **[エラー]** に変更することができます。 3 つの警告の構成設定がすべて **[エラー]** に設定されている場合、`Option strict` ボックスに `On` が表示されます。 3 つすべてが **[なし]** に設定されている場合、このボックスには `Off` が表示されます。 これらの設定のその他の組み合わせに対しては、 **(カスタム)** が表示されます。
 
 **Option Compare**
 
@@ -113,9 +113,9 @@ ms.locfileid: "76111307"
 
 この設定は、[/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Compare ステートメント](/dotnet/visual-basic/language-reference/statements/option-compare-statement)が含まれている場合、ステートメント内の `Binary` または `Text` の値が、 **[コンパイル]** ページの **[Option Compare]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Compare ステートメント](/dotnet/visual-basic/language-reference/statements/option-compare-statement)が含まれている場合、ステートメント内の `Binary` または `Text` の値が、**[コンパイル]** ページの **[Option Compare]** 設定をオーバーライドします。
 
-プロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Compare]** 設定が **[オプション]** ダイアログ ボックスの **[Option Compare]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Compare]** の初期の既定値は **[バイナリ]** です。
+プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Compare]** 設定が **[オプション]** ダイアログ ボックスの **[Option Compare]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Compare]** の初期の既定値は **[バイナリ]** です。
 
 **Option Infer**
 
@@ -123,9 +123,9 @@ ms.locfileid: "76111307"
 
 この設定は、[/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、 **[コンパイル]** ページの **[Option Infer]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Infer]** 設定をオーバーライドします。
 
-プロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Infer]** 設定が **[オプション]** ダイアログ ボックスの **[Option Infer]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Infer]** の初期の既定値は **[オン]** です。
+プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Infer]** 設定が **[オプション]** ダイアログ ボックスの **[Option Infer]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Infer]** の初期の既定値は **[オン]** です。
 
 **対象の CPU**
 

@@ -114,16 +114,16 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
 3. 新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、**クイック アクション**のエラー電球をクリックし、 **['Automobile' にコンストラクターを生成します]** をクリックします。
 
 ### <a name="generate-a-stub-for-a-method"></a>メソッドのスタブを生成する
-仕様で、`Automobile` および `IsRunning` プロパティが既定値以外に設定されている場合は、新しい `Model` を `TopSpeed` 状態にできることが示されているとします。
+仕様で、`Model` および `TopSpeed` プロパティが既定値以外に設定されている場合は、新しい `Automobile` を `IsRunning` 状態にできることが示されているとします。
 
 1. 次の行を `AutomobileWithModelNameCanStart` メソッドに追加します。
 
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. **メソッド呼び出しの**クイック アクション`myAuto.Start`のエラー電球をクリックしてから、 **[メソッド 'Automobile.Start' を生成します]** をクリックします。
+2. `myAuto.Start` メソッド呼び出しの**クイック アクション**のエラー電球をクリックしてから、**[メソッド 'Automobile.Start' を生成します]** をクリックします。
 
-3. **プロパティの**クイック アクション`IsRunning` (電球) をクリックしてから、 **[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
+3. `IsRunning` プロパティの**クイック アクション** (電球) をクリックしてから、**[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
 
      これで、`Automobile` クラスに `Start()` という名前のメソッドと `IsRunning` という名前のプロパティが含まれるようになりました。
 
