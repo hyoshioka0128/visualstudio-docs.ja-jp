@@ -29,7 +29,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 - "ASP.NET および Web 開発" ワークロードと共に、最新バージョンの [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) をインストールする
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) と *ASP.NET と Web 開発*ワークロード。
+- *[ASP.NET および Web の開発]* ワークロードを含む [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) のインストール
 
