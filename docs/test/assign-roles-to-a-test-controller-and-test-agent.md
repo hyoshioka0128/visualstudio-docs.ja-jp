@@ -43,7 +43,7 @@ ms.locfileid: "75591191"
 
 4. **[追加]** をクリックします。
 
-     *ソリューション エクスプローラー*の **[ソリューション項目]** フォルダーに、**TestSettingDistributedTestWalkthrough.testsettings** という新しいテスト ファイルが表示されます。
+     **ソリューション エクスプローラー**の **[ソリューション項目]** フォルダーに、*TestSettingDistributedTestWalkthrough.testsettings* という新しいテスト ファイルが表示されます。
 
      **[テストの設定]** ダイアログ ボックスが表示されます。 **[全般]** ページが選択されています。
 

@@ -65,7 +65,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ![Option + Enter キーを使用した場合のコンテキスト項目](media/refactoring-image2a.png)
 
-これらのオプションを有効にするには、オプションの *[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]* の順に移動して、 **[開いているファイルのソース解析を有効にする]** を選択する必要があります
+これらのオプションを有効にするには、オプションの **[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]** の順に移動して、 *[開いているファイルのソース解析を有効にする]* を選択する必要があります
 
 ![ソース解析の有効化](media/refactoring-options.png)
 

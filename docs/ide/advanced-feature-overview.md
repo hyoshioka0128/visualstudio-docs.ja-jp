@@ -56,7 +56,7 @@ Visual Studio の [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 
 次のような**接続済みサービス**を使用して、アプリに Azure のサービスを活用することができます。
 
-- ユーザーが [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) からのアカウントを使用して Web アプリに接続するための [Active Directory 接続済みサービス](/azure/active-directory/active-directory-whatis)
+- ユーザーが [Azure Active Directory](/azure/active-directory/active-directory-whatis) からのアカウントを使用して Web アプリに接続するための [Active Directory 接続済みサービス](/azure/active-directory/develop/vs-active-directory-add-connected-service)
 - BLOB ストレージ、キュー、およびテーブル用の [Azure Storage 接続済みサービス](/azure/vs-azure-tools-connected-services-storage)
 - Web アプリのシークレットを管理する [Key Vault 接続済みサービス](/azure/key-vault/vs-key-vault-add-connected-service)
 

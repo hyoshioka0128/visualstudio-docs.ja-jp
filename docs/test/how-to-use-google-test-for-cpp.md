@@ -65,7 +65,7 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="write-and-run-tests"></a>テストを作成して実行する
 
-Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 [テスト エクスプローラー](run-unit-tests-with-test-explorer.md)を使ってテストを検出、実行、グループ化する方法については、「**テスト エクスプローラーを使用して単体テストを実行する**」をご覧ください。
+Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 **テスト エクスプローラー**を使ってテストを検出、実行、グループ化する方法については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
 
 ## <a name="see-also"></a>参照
 
