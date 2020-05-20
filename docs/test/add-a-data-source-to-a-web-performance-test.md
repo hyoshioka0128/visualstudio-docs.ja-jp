@@ -128,7 +128,7 @@ ms.locfileid: "75565410"
 
      ![ColorName フィールドを RadioButtonList1 値にバインドする](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. *ソリューション エクスプローラー*で **Local.testsettings** ファイルを開き、 **[データ ソース行ごとに 1 つ実行]** をクリックします。
+2. **ソリューション エクスプローラー**で *Local.testsettings* ファイルを開き、 **[データ ソース行ごとに 1 つ実行]** をクリックします。
 
      ![テスト設定ファイルを編集します。](../test/media/web_test_databinding_sql_testsettings.png)
 

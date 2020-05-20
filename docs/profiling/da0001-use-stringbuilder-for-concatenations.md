@@ -42,4 +42,4 @@ ms.locfileid: "74779507"
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  **[エラー一覧]** ウィンドウに表示されたメッセージをダブルクリックして、サンプリング プロファイル データの[関数の詳細ビュー](../profiling/function-details-view.md)に移動します。 文字列連結を最も頻繁に使用するプログラムをセクションを特定します。 頻繁な文字列連結など、複雑な文字列操作には StringBuilder クラスを使用します。
 
- 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)」の「[文字列処理](/previous-versions/msp-n-p/ff647790(v=pandp.10))」を参照してください。
+ 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](/previous-versions/msp-n-p/ff647790(v=pandp.10))」の「[文字列処理](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)」を参照してください。

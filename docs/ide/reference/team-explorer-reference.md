@@ -20,13 +20,13 @@ ms.locfileid: "74538568"
 
 ## <a name="home-page"></a>ホーム ページ
 
-[チーム エクスプローラー](../connect-team-project.md)で**プロジェクトに接続する**と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
+**チーム エクスプローラー**で[プロジェクトに接続する](../connect-team-project.md)と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
 
 - [リポジトリの複製](/azure/devops/repos/git/clone)
 - [Web ポータル](/azure/devops/project/navigation/index)
 - [タスク ボード](/azure/devops/boards/sprints/task-board)
 
-**Git** のリポジトリに接続するか、[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) のリポジトリに接続するかによって、[[ホーム]](/azure/devops/repos/tfvc/overview) ページには異なる機能が表示されます。
+[Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) のリポジトリに接続するか、[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview) のリポジトリに接続するかによって、 **[ホーム]** ページには異なる機能が表示されます。
 
 > [!TIP]
 > 2 つのバージョン管理システムの比較は、[プロジェクト用の最適なバージョン管理の選択 (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc) に関するページを参照してください。

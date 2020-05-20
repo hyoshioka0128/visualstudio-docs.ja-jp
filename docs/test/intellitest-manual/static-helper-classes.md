@@ -32,7 +32,7 @@ IntelliTest は、[パラメーター化された単体テスト](test-generatio
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-[パラメーター化された単体テスト](test-generation.md#precondition)の前提 ([前提条件](test-generation.md#parameterized-unit-testing)など) を表す静的クラス。 このクラスのメソッドを使用して、望ましくないテスト入力をフィルターで除外することができます。
+[パラメーター化された単体テスト](test-generation.md#parameterized-unit-testing)の前提 ([前提条件](test-generation.md#precondition)など) を表す静的クラス。 このクラスのメソッドを使用して、望ましくないテスト入力をフィルターで除外することができます。
 
 一部のテスト入力に対して想定される条件が当てはまらない場合、**PexAssumeFailedException** がスローされます。 メッセージなしでテストが無視されます。
 
@@ -64,7 +64,7 @@ public void TestSomething(int i, int j) {
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert
 
-[パラメーター化された単体テスト](test-generation.md#postcondition)のアサーション ([事後条件](test-generation.md#parameterized-unit-testing)など) を表す静的クラス。
+[パラメーター化された単体テスト](test-generation.md#parameterized-unit-testing)のアサーション ([事後条件](test-generation.md#postcondition)など) を表す静的クラス。
 
 あるテスト入力でこのアサートされた条件が有効でない場合は、**PexAssertFailedException** がスローされ、テストが不合格となります。
 

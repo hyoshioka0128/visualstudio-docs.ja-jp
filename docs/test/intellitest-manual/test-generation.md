@@ -55,7 +55,7 @@ IntelliTest がオブジェクトを構築する必要がある場合、必要�
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>パラメーター化された単体テスト
 
-*パラメーター化された単体テスト* (PUT) は、パラメーターを受け取るテストです。 通常は排他的な手法である従来の単体テストとは異なり、PUT はあらゆるパラメーター セットを受け取ります。 そんなに簡単なのでしょうか。 はい。次に IntelliTest は、テストから到達できるコードを[完全にカバー](input-generation.md)する [(最小の) 入力セットを生成](input-generation.md#dynamic-code-coverage)します。
+*パラメーター化された単体テスト* (PUT) は、パラメーターを受け取るテストです。 通常は排他的な手法である従来の単体テストとは異なり、PUT はあらゆるパラメーター セットを受け取ります。 そんなに簡単なのでしょうか。 はい。次に IntelliTest は、テストから到達できるコードを[完全にカバー](input-generation.md#dynamic-code-coverage)する [(最小の) 入力セットを生成](input-generation.md)します。
 
 PUT は、MSTest (または NUnit、xUnit) と同様に、[PexMethod](attribute-glossary.md#pexmethod) カスタム属性を利用して定義されます。 PUT は、[PexClass](attribute-glossary.md#pexclass) でタグ付けされるクラスで論理的にグループ化されるインスタンス メソッドです。 次は **MyPexTest** クラスに保存されている単純な PUT の例です。
 

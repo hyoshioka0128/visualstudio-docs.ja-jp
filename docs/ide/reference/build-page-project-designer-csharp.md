@@ -135,7 +135,7 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 **COM の相互運用機能に登録**
 
-マネージド アプリケーションにより、COM オブジェクトがマネージド アプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) が公開されることを示します。 **[COM 相互運用機能の登録]** プロパティを使用できるようにするには、このアプリケーションの[プロジェクト デザイナー](../../ide/reference/application-page-project-designer-visual-basic.md)の **[アプリケーション]** ページで **[出力の種類]** プロパティを **[クラス ライブラリ]** に設定する必要があります。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] アプリケーションに追加して、COM オブジェクトとして公開するクラスの例については、「[Example COM Class](/dotnet/csharp/programming-guide/interop/example-com-class)」(COM クラスの例) を参照してください。
+マネージド アプリケーションにより、COM オブジェクトがマネージド アプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) が公開されることを示します。 **[COM 相互運用機能の登録]** プロパティを使用できるようにするには、このアプリケーションの**プロジェクト デザイナー**の [[アプリケーション]](../../ide/reference/application-page-project-designer-visual-basic.md) ページで **[出力の種類]** プロパティを **[クラス ライブラリ]** に設定する必要があります。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] アプリケーションに追加して、COM オブジェクトとして公開するクラスの例については、「[Example COM Class](/dotnet/csharp/programming-guide/interop/example-com-class)」(COM クラスの例) を参照してください。
 
 **シリアル化アセンブリの生成**
 
