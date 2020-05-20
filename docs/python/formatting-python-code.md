@@ -30,7 +30,7 @@ Visual Studio を使用すると、事前に構成した書式設定オプショ
 
 [書式設定] オプションは、既定で [PEP 8 スタイル ガイド](https://www.python.org/dev/peps/pep-0008/)のスーパーセットと一致するように設定されています。 **[全般]** タブでは、どのような場合に書式設定を適用するかを指定します。この記事では、他の 3 つのタブについて説明します。
 
-[Visual Studio の Python のサポート](installing-python-support-in-visual-studio.md)で、 **[編集]**  >  **[詳細設定]** メニューに [ **[コメントを段落幅に合わせる]** ](#fill-comment-paragraph-command) という便利なコマンドも追加されています。これについても後で説明します。
+[Visual Studio の Python のサポート](installing-python-support-in-visual-studio.md)で、**[編集]** > **[詳細設定]** メニューに [**[コメントを段落幅に合わせる]**](#fill-comment-paragraph-command) という便利なコマンドも追加されています。これについても後で説明します。
 
 ## <a name="spacing"></a>スペース
 

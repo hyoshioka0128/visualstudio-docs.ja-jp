@@ -49,7 +49,7 @@ ms.locfileid: "77630666"
 
 ## <a name="example"></a>例
 
- 次の例では、`WriteLinesToFile` タスクを利用し、`MyItems` 項目コレクションにより指定されたファイルに、`MyTextFile` 項目コレクションの項目のパスを書き込みます。
+ 次の例では、`WriteLinesToFile` タスクを利用し、`MyTextFile` 項目コレクションにより指定されたファイルに、`MyItems` 項目コレクションの項目のパスを書き込みます。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -49,7 +49,7 @@ ms.locfileid: "77634332"
 
 ## <a name="example"></a>例
 
- 次のコード例では、項目コレクション `MySourceItemsWithMetadata` から、`MySourceItems` という名前の新しい項目コレクションを作成します。 `CreateItem` タスクは、`MySourceItems` 項目コレクションの項目を新しい項目コレクションに設定します。 その後、名前が `MyMetadata` で値が `Hello` の追加メタデータ エントリを、新しいコレクションの各項目に追加します。
+ 次のコード例では、項目コレクション `MySourceItems` から、`MySourceItemsWithMetadata` という名前の新しい項目コレクションを作成します。 `CreateItem` タスクは、`MySourceItems` 項目コレクションの項目を新しい項目コレクションに設定します。 その後、名前が `MyMetadata` で値が `Hello` の追加メタデータ エントリを、新しいコレクションの各項目に追加します。
 
  タスクを実行した後、`MySourceItemsWithMetadata` 項目コレクションには項目 *file1.resx* と *file2.resx* が含まれ、どちらにも `MyMetadata` のメタデータ エントリが追加されています。 `MySourceItems` 項目コレクションは変更されません。
 

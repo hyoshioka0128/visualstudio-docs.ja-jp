@@ -111,7 +111,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
 5. 環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されているか、または `ToolsVersion` が設定されていない場合は、次の手順が使用されます。
 
-    1. プロジェクト ファイルにある `ToolsVersion`Project[ 要素の ](../msbuild/project-element-msbuild.md) 属性。 この属性が存在しない場合は、現在のバージョンであると見なされます。
+    1. プロジェクト ファイルにある [Project](../msbuild/project-element-msbuild.md) 要素の `ToolsVersion` 属性。 この属性が存在しない場合は、現在のバージョンであると見なされます。
 
     2. *MSBuild.exe.config* ファイルに定義された既定のツール バージョン。
 

@@ -28,7 +28,7 @@ ms.locfileid: "75591217"
 
    1. テストを実行すると起動される *QTAgent\*.exe* プロセスを判断します。 これを行う方法の 1 つは、Windows **タスク マネージャー**の **[詳細]** タブを観察することです。
 
-   2. *%ProgramFiles(x86)%\Microsoft Visual Studio* *version>\\\<edition>\Common7\IDE\\ フォルダーから、対応する \<.config* ファイルを開きます。 たとえば、実行しているプロセスが *QTAgent_40.exe* である場合、*QTAgent_40.exe.config* を開きます。
+   2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* フォルダーから、対応する *.config* ファイルを開きます。 たとえば、実行しているプロセスが *QTAgent_40.exe* である場合、*QTAgent_40.exe.config* を開きます。
 
    2. **EqtTraceLevel** の値を、目的のログ レベルに変更します。
 
@@ -71,9 +71,9 @@ ms.locfileid: "75591217"
      自動テストが実行され、成功したか失敗したかが示されます。
 
     > [!TIP]
-    > **テスト エクスプローラー**を表示するには、 **[テスト]**  >  **[Windows]** の順に選択し、 **[テスト エクスプローラー]** を選択します。
+    > **テスト エクスプローラー**を表示するには、**[テスト]**、**[Windows]** の順に選択し、**[テスト エクスプローラー]** を選択します。
 
-4. **テスト エクスプローラー**の結果で、 **[出力]** リンクを選択します。
+4. **テスト エクスプローラー**の結果で、**[出力]** リンクを選択します。
 
      ![テスト エクスプローラーの出力リンク](../test/media/cuit_htmlactionlog1.png)
 

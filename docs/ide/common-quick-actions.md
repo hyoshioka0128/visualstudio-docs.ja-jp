@@ -20,7 +20,7 @@ ms.locfileid: "75585523"
 ---
 # <a name="common-quick-actions"></a>共通のクイック アクション
 
-このトピックのセクションでは、C# と Visual Basic 両方のコードに共通に適用される**クイック アクション**の一部を示します。 このアクションは、コンパイラ診断、または Visual Studio の組み込みの *.NET Compiler Platform アナライザー*のいずれかの[コード修正](../code-quality/roslyn-analyzers-overview.md)です。
+このトピックのセクションでは、C# と Visual Basic 両方のコードに共通に適用される**クイック アクション**の一部を示します。 このアクションは、コンパイラ診断、または Visual Studio の組み込みの [.NET Compiler Platform アナライザー](../code-quality/roslyn-analyzers-overview.md)のいずれかの*コード修正*です。
 
 ## <a name="actions-that-fix-errors"></a>エラーを修正するアクション
 
@@ -511,7 +511,7 @@ Dim c = New Customer() With {.Age = 21}
 
 ### <a name="use-collection-initializers"></a>コレクション初期化子を使用する
 
-このクイック アクションでは、クラスの [ メソッドを複数回呼び出すのではなく、](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)コレクション初期化子`Add`を使用することができます。
+このクイック アクションでは、クラスの `Add` メソッドを複数回呼び出すのではなく、[コレクション初期化子](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)を使用することができます。
 
 ```csharp
 // Before
@@ -664,7 +664,7 @@ int fibonacci(int n)
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Visual Studio 2017 バージョン 15.5 以降 |
 
-このクイック アクションでは、可能な限り、[ コーディング パターンではなく、](/dotnet/csharp/pattern-matching)パターン マッチング```ReferenceEquals```の使用を提案します。
+このクイック アクションでは、可能な限り、```ReferenceEquals``` コーディング パターンではなく、[パターン マッチング](/dotnet/csharp/pattern-matching)の使用を提案します。
 
 ```csharp
 // Before

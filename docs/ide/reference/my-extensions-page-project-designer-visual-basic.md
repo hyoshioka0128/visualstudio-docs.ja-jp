@@ -23,7 +23,7 @@ ms.locfileid: "76114218"
 # <a name="my-extensions-page-project-designer-visual-basic"></a>[マイ拡張] ページ (プロジェクト デザイナー) (Visual Basic)
 **プロジェクト デザイナー**の **[マイ拡張]** ページを使用して、プロジェクトの `My` 名前空間拡張を管理します。 `My` 名前空間拡張を使用すれば、`My` 名前空間をカスタマイズして独自のカスタム メンバーに追加することができます。 カスタムの `My` 名前空間拡張の作成については、「[Visual Basic における My 名前空間の拡張](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)」を参照してください。
 
-**[マイ拡張]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードの **[マイ拡張]** をダブルクリックします。 **プロジェクト デザイナー**が表示されたら、 **[マイ拡張]** タブをクリックします。
+**[マイ拡張]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードの **[マイ拡張]** をダブルクリックします。 **プロジェクト デザイナー**が表示されたら、**[マイ拡張]** タブをクリックします。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 次のオプションを使用すれば、プロジェクトの `My` 名前空間拡張を追加または削除することができます。 まず、`My` 名前空間拡張を Visual Studio 項目テンプレートとしてインストールし、追加できるようにする必要があります。 `My` 名前空間拡張の発行とインストールについては、「[カスタム マイ拡張のパッケージ化と配置](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)」を参照してください。

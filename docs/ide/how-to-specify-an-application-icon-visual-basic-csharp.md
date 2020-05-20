@@ -20,12 +20,12 @@ ms.locfileid: "75596139"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>方法 : アプリケーション アイコンを指定する (Visual Basic、C#)
 
-プロジェクトの `Icon` プロパティでは、*ファイル エクスプローラー*と Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル ( **.ico**) を指定します。
+プロジェクトの `Icon` プロパティでは、**ファイル エクスプローラー**と Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル (*.ico*) を指定します。
 
 `Icon` プロパティには、**プロジェクト デザイナー**の **[アプリケーション]** ウィンドウからアクセスできます。このプロパティには、リソースまたはコンテンツ ファイルとしてプロジェクトに追加されているアイコンの一覧が含まれています。
 
 > [!NOTE]
-> アプリケーションのアイコン プロパティを設定した後、アプリケーション内の各 `Icon`Window**または**Form**の** プロパティを設定することもできます。 Windows Presentation Foundation (WPF) スタンドアロン アプリケーションのウィンドウ アイコンの詳細については、<xref:System.Windows.Window.Icon%2A> プロパティを参照してください。
+> アプリケーションのアイコン プロパティを設定した後、アプリケーション内の各 **Window** または **Form** の `Icon` プロパティを設定することもできます。 Windows Presentation Foundation (WPF) スタンドアロン アプリケーションのウィンドウ アイコンの詳細については、<xref:System.Windows.Window.Icon%2A> プロパティを参照してください。
 
 ## <a name="to-specify-an-application-icon"></a>アプリケーション アイコンを指定するには
 

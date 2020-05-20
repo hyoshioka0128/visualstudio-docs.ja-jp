@@ -71,7 +71,7 @@ MSBuild は、項目の種類と文字列値の変換を必要に応じて実行
 </PropertyGroup>
 ```
 
-項目の種類 OutputDir には、"KeyFiles`Include`;Certificates\\" という値の \\ 属性があります。 MSBuild は、この文字列を 2 つの項目 KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。
+項目の種類 OutputDir には、"KeyFiles\\;Certificates\\" という値の `Include` 属性があります。 MSBuild は、この文字列を 2 つの項目 KeyFiles\ と Certificates\\ に解析します。 項目の種類 OutputDir を OutputDirList プロパティの値として使用している場合、MSBuild は、項目の種類をセミコロン区切りの文字列 "KeyFiles\\;Certificates\\" に変換または "平坦化" します。
 
 ## <a name="properties-and-items-in-tasks"></a>タスクのプロパティと項目
 

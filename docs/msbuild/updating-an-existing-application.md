@@ -95,4 +95,4 @@ MSBuildLocator.RegisterDefaults();
 
 上の呼び出しをアプリケーションのスタートアップ コードに追加します。
 
-MSBuild の読み込みを細かく制御したい場合は、`MSBuildLocator.QueryVisualStudioInstances()` に渡す `MSBuildLocator.RegisterInstance()` の結果を手動で選択できますが、これは通常であれば必要ありません。
+MSBuild の読み込みを細かく制御したい場合は、`MSBuildLocator.RegisterInstance()` に渡す `MSBuildLocator.QueryVisualStudioInstances()` の結果を手動で選択できますが、これは通常であれば必要ありません。

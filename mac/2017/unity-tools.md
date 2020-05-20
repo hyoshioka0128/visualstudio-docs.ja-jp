@@ -30,7 +30,7 @@ Visual Studio for Mac には Unity の統合が既に含まれており、Unity 
 
 ### <a name="intellisense-for-unity-messages"></a>Unity メッセージ用の IntelliSense
 
-IntelliSense を使うと、[ などの ](using-vsmac-tools-unity.md#intellisense-for-unity-messages)Unity メッセージとそのパラメーターの実装`OnCollisionEnter`が速く簡単になります。
+IntelliSense を使うと、`OnCollisionEnter` などの [Unity メッセージとそのパラメーターの実装](using-vsmac-tools-unity.md#intellisense-for-unity-messages)が速く簡単になります。
 
 ### <a name="superior-debugging"></a>優れたデバッグ機能
 

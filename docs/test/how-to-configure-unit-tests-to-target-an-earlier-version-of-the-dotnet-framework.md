@@ -87,7 +87,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
    エディターで *.vcxproj* ファイルが開きます。
 
-4. `TargetFrameworkVersion` というラベルが付いた `PropertyGroup` で `"Globals"` をバージョン 3.5 以降のバージョンに設定します。 クライアント バージョンは指定しません。
+4. `"Globals"` というラベルが付いた `PropertyGroup` で `TargetFrameworkVersion` をバージョン 3.5 以降のバージョンに設定します。 クライアント バージョンは指定しません。
 
     ```xml
     <PropertyGroup Label="Globals">

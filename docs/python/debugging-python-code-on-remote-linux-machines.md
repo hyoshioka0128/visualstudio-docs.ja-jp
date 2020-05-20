@@ -65,7 +65,7 @@ Azure VM のファイアウォール ルールの作成の詳細については�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. `ptvsd` を使用して環境に `pip3 install ptvsd` パッケージをインストールします。
+1. `pip3 install ptvsd` を使用して環境に `ptvsd` パッケージをインストールします。
    >[!NOTE]
    >トラブルシューティングが必要な場合に備えて、インストールされている ptvsd のバージョンを記録しておくことをお勧めします。[ptvsd 一覧](https://pypi.python.org/pypi/ptvsd)にも使用できるバージョンが記載されています。
 
@@ -79,7 +79,7 @@ Azure VM のファイアウォール ルールの作成の詳細については�
 1. ファイルを保存して `python3 guessing-game.py` を実行します。 `enable_attach` を呼び出すとバックグラウンドで実行され、受信接続を待機します。それ以外の場合はプログラムと対話しています。 必要な場合は、`wait_for_attach` 関数を `enable_attach` の後に呼び出して、デバッガーがアタッチされるまでプログラムをブロックすることもできます。
 
 > [!Tip]
-> `enable_attach` と `wait_for_attach` に加えて、ptvsdにはヘルパー関数 `break_into_debugger` も用意されています。この関数は、デバッガーがアタッチされている場合にプログラムのブレークポイントとして機能します。 また、デバッガーがアタッチされている場合に `is_attached` を返す `True` 関数もあります (他の `ptvsd` 関数を呼び出す前にこの結果を確認する必要はありません)。
+> `enable_attach` と `wait_for_attach` に加えて、ptvsdにはヘルパー関数 `break_into_debugger` も用意されています。この関数は、デバッガーがアタッチされている場合にプログラムのブレークポイントとして機能します。 また、デバッガーがアタッチされている場合に `True` を返す `is_attached` 関数もあります (他の `ptvsd` 関数を呼び出す前にこの結果を確認する必要はありません)。
 
 ## <a name="attach-remotely-from-python-tools"></a>Python Tools からリモートでアタッチする
 
@@ -111,11 +111,11 @@ Azure VM のファイアウォール ルールの作成の詳細については�
 
 ### <a name="connection-troubleshooting"></a>接続のトラブルシューティング
 
-1. **[接続の種類]** で **[Python remote (ptvsd)]** (Python リモート (ptvsd)) (旧バージョンでは **[トランスポート]** の **[Python remote debugging]** (Python リモート デバッグ)) を選択していることを確認します。
+1. **[接続の種類]** で **[Python remote (ptvsd)]**(Python リモート (ptvsd)) (旧バージョンでは **[トランスポート]** の **[Python remote debugging]**(Python リモート デバッグ)) を選択していることを確認します。
 1. **[Connection Target]** (接続のターゲット) (または **[修飾子]** ) のシークレットがリモート コードのシークレットと完全に一致することを確認します。
 1. **[接続先]** (または **[修飾子]** ) の IP アドレスがリモート コンピューターと一致することを確認します。
 1. リモート コンピューターのリモート デバッグ ポートを開いていること、接続先に `:5678` などのポート サフィックスを含めていることを確認します。
-    - 別のポートを使用する必要がある場合は、`enable_attach` の呼び出しで `address` のように `ptvsd.enable_attach(address = ('0.0.0.0', 8080))` 引数を使用して指定できます。 この場合、ファイアウォールでもそのポートを開きます。
+    - 別のポートを使用する必要がある場合は、`enable_attach` の呼び出しで `ptvsd.enable_attach(address = ('0.0.0.0', 8080))` のように `address` 引数を使用して指定できます。 この場合、ファイアウォールでもそのポートを開きます。
 1. `pip3 list` から返されたリモート コンピューターにインストールされている ptvsd のバージョンが、Visual Studio で使用している Python ツールのバージョンで使用されている ptvsd のバージョン (以下の表を参照してください) が一致することを確認します。 必要に応じて、リモート コンピューターの ptvsd を更新します。
 
     | Visual Studio のバージョン | Python ツール/ptvsd のバージョン |
@@ -148,7 +148,7 @@ ptvsd 3.x のリモート デバッグ サーバーへの接続は、既定で�
 
     openssl のプロンプトが表示されたら、 **[共通名]** のホスト名または IP アドレス (接続できればどちらでも可) を入力します
 
-    (詳細については、Python [ モジュール ドキュメントの「](https://docs.python.org/3/library/ssl.html#self-signed-certificates)Self-signed certificates`ssl`」(自己署名証明書) を参照してください。 これらのドキュメントのコマンドは、1 つの結合されたファイルのみを生成する点に注意してください)。
+    (詳細については、Python `ssl` モジュール ドキュメントの「[Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates)」(自己署名証明書) を参照してください。 これらのドキュメントのコマンドは、1 つの結合されたファイルのみを生成する点に注意してください)。
 
 1. このコードで、`enable_attach` の呼び出しを修正し、値としてファイル名を使用して `certfile` 引数と `keyfile` 引数を含めます (これらの引数の意味は、標準の `ssl.wrap_socket` Python 関数の引数と同じです)。
 
@@ -167,7 +167,7 @@ ptvsd 3.x のリモート デバッグ サーバーへの接続は、既定で�
     1. 表示されるウィンドウで、左側の **[信頼されたルート証明機関]** を展開し、 **[証明書]** を右クリックして **[すべてのタスク]**  >  **[インポート]** の順に選択します。
     1. リモート コンピューターからコピーした *.cer* ファイルに移動して選択し、ダイアログの指示に従ってクリックしてインポートを完了します。
 
-1. 前述の手順で Visual Studio のアタッチ プロセスを繰り返します。今回は、`tcps://`[Connection Target] **(接続のターゲット) (または** [修飾子] **) として**  を使用します。
+1. 前述の手順で Visual Studio のアタッチ プロセスを繰り返します。今回は、**[Connection Target]**(接続のターゲット) (または **[修飾子]**) として `tcps://` を使用します。
 
     ![SSL を使用するリモート デバッグ トランスポートの選択](media/remote-debugging-qualifier-ssl.png)
 

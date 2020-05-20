@@ -44,7 +44,7 @@ Visual Studio は、製品のライフサイクルの間に頻繁に更新され
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>ネットワーク上のサービス ベースラインをインストールする
 
-ネットワーク レイアウト インストールを使う管理者は、レイアウトの `channelUri`response.json*ファイルの* の値を変更して、同じフォルダー内にある *channelmanifest.json* ファイルを使うようにする必要があります。 従う手順については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 `channelUri` の値を変更すると、クライアントがレイアウトの場所で更新プログラムを検索できるようになります。
+ネットワーク レイアウト インストールを使う管理者は、レイアウトの *response.json* ファイルの `channelUri` の値を変更して、同じフォルダー内にある *channelmanifest.json* ファイルを使うようにする必要があります。 従う手順については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 `channelUri` の値を変更すると、クライアントがレイアウトの場所で更新プログラムを検索できるようになります。
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>インターネット経由でサービス ベースラインをインストールする
 

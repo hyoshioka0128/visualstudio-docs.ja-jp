@@ -23,7 +23,7 @@ ms.locfileid: "75594163"
 
 コード スニペットは、あらかじめ用意されているコードのスニペットで、コードにすぐに挿入できます。 たとえば、`for` コード スニペットは空の `for` ループを作成します。 一部のコード スニペットは surround-with コード スニペットであり、コード行を選んでから、選んだコード行を組み込むコード スニペットを選ぶことができます。 たとえば、コード行を選んでから `for` コード スニペットをアクティブにすると、選んだコード行がループ ブロックの中に含まれる `for` ループが作成されます。 コード スニペットを使うと、速く、容易に、信頼性の高いプログラム コードを作成できます。
 
-カーソル位置にコード スニペットを挿入したり、現在選択されているコード ブロックを囲むように surround-with コード スニペットを挿入したりすることができます。 コード スニペット挿入機能は、 **[IntelliSense]** メニューの **[コード スニペットの挿入]** または **[ブロックの挿入]** コマンドを使って、またはキーボード ショートカットの場合はそれぞれ **Ctrl**+**K**、**X** キーの順に押すか、**Ctrl**+**K**、**S** キーの順に押すことで、呼び出すことができます。
+カーソル位置にコード スニペットを挿入したり、現在選択されているコード ブロックを囲むように surround-with コード スニペットを挿入したりすることができます。 コード スニペット挿入機能は、**[IntelliSense]** メニューの **[コード スニペットの挿入]** または **[ブロックの挿入]** コマンドを使って、またはキーボード ショートカットの場合はそれぞれ **Ctrl**+**K**、**X** キーの順に押すか、**Ctrl**+**K**、**S** キーの順に押すことで、呼び出すことができます。
 
 **コード スニペット挿入機能**では、すべての利用可能なコード スニペットのコード スニペット名が表示されます。 また、コード スニペット挿入機能には、コード スニペットの名前または名前の一部を入力できる入力ダイアログ ボックスもあります。 最も近いコード スニペット名が強調表示されます。 **Tab** キーを押すと、コード スニペット挿入機能が閉じて、現在選択されているコード スニペットが挿入されます。 **Esc** キーを押すか、コード エディターをマウスでクリックすると、コード スニペットを挿入することなくコード スニペット挿入機能が閉じます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "75594163"
 |do|[do](/dotnet/csharp/language-reference/keywords/do) `while` ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |else|[else](/dotnet/csharp/language-reference/keywords/if-else) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |enum|[enum](/dotnet/csharp/language-reference/keywords/enum) 宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
-|equals|<xref:System.Object.Equals%2A> クラスに定義された <xref:System.Object> メソッドをオーバーライドするメソッド宣言を作成します。|クラスまたは構造体の内部。|
+|equals|<xref:System.Object> クラスに定義された <xref:System.Object.Equals%2A> メソッドをオーバーライドするメソッド宣言を作成します。|クラスまたは構造体の内部。|
 |exception|exception (既定では <xref:System.Exception>) から派生するクラスの宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
 |for|[for](/dotnet/csharp/language-reference/keywords/for) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |foreach|[foreach](/dotnet/csharp/language-reference/keywords/foreach-in) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
@@ -60,7 +60,7 @@ ms.locfileid: "75594163"
 |namespace|[namespace](/dotnet/csharp/language-reference/keywords/namespace) 宣言を作成します。|名前空間 (グローバル名前空間を含む) の内部。|
 |prop|[自動実装プロパティ](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)の宣言を作成します。|クラスまたは構造体の内部。|
 |propfull|`get` および `set` アクセサーを持つプロパティの宣言を作成します。|クラスまたは構造体の内部。|
-|propg|プライベートな [ アクセサーを持つ読み取り専用の](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)自動実装プロパティ`set`を作成します。|クラスまたは構造体の内部。|
+|propg|プライベートな `set` アクセサーを持つ読み取り専用の[自動実装プロパティ](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)を作成します。|クラスまたは構造体の内部。|
 |sim|[static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) の Main メソッドの宣言を作成します。|クラスまたは構造体の内部。|
 |struct|[struct](/dotnet/csharp/language-reference/keywords/struct) 宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
 |svm|[static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) の Main メソッドの宣言を作成します。|クラスまたは構造体の内部。|

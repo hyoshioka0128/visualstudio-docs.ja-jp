@@ -124,7 +124,7 @@ public void AddItems()
 
 メソッド コードの先頭にあるのは `Variable Declarations` 領域です。ここでは、メソッドで使用される UI オブジェクトのローカル変数が定義されます。
 
-このメソッドでは、`UIItemWindow` と `UIItemEdit` の両方が、`UICalculatorWindow`UIMap.cs*ファイルの後半で定義されている* クラスを使用してアクセスされるプロパティです。
+このメソッドでは、`UIItemWindow` と `UIItemEdit` の両方が、*UIMap.cs* ファイルの後半で定義されている `UICalculatorWindow` クラスを使用してアクセスされるプロパティです。
 
 その次の行では、`AddItemsParams` オブジェクトのプロパティを使用して、キーボードから電卓アプリケーションにテキストを送信しています。
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-*UIMap.cs* ファイル内のすべてのクラスと同様に、このクラスも <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> で始まります。 この小さなクラスの内部は、前述した `Fields` メソッドで使用される <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> メソッドのパラメーターとして使用する文字列を定義する `UIMap.AddItems()` 領域です。 これらのパラメーターを使用するメソッドの呼び出し前に、この文字列フィールド内の値を置き換えるためのコードを記述できます。
+*UIMap.cs* ファイル内のすべてのクラスと同様に、このクラスも <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> で始まります。 この小さなクラスの内部は、前述した `UIMap.AddItems()` メソッドで使用される <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> メソッドのパラメーターとして使用する文字列を定義する `Fields` 領域です。 これらのパラメーターを使用するメソッドの呼び出し前に、この文字列フィールド内の値を置き換えるためのコードを記述できます。
 
 ### <a name="uimapcs"></a><a name="UIMapCS"></a>UIMap.cs
 既定では、このファイルにはメソッドやプロパティを持たない `UIMap` 部分クラスが含まれています。
@@ -257,7 +257,7 @@ public void MyTestCleanup()
 }
 ```
 
-`MyTestInitialize()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> が適用されています。これにより、テスト フレームワークは、他のテスト メソッドより前にこのメソッドを呼び出します。 同様に、`MyTestCleanup()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> が適用されいます。これにより、テスト フレームワークは、他のすべてのテスト メソッドが呼び出された後にこのメソッドを呼び出します。 これらのメソッドの使用は任意です。 このテストでは、`UIMap.LaunchCalculator()` からではなく、`MyTestInitialize()` メソッドは `UIMap.CloseCalculator()` から、`MyTestCleanup()` メソッドは `CodedUITest1Method1()` から、それぞれ呼び出すことができます。
+`MyTestInitialize()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> が適用されています。これにより、テスト フレームワークは、他のテスト メソッドより前にこのメソッドを呼び出します。 同様に、`MyTestCleanup()` メソッドには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> が適用されいます。これにより、テスト フレームワークは、他のすべてのテスト メソッドが呼び出された後にこのメソッドを呼び出します。 これらのメソッドの使用は任意です。 このテストでは、`CodedUITest1Method1()` からではなく、`UIMap.LaunchCalculator()` メソッドは `MyTestInitialize()` から、`UIMap.CloseCalculator()` メソッドは `MyTestCleanup()` から、それぞれ呼び出すことができます。
 
 [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) を使用して、このクラスにさらにメソッドを追加した場合、テスト フレームワークでは各メソッドがテストの一部として呼び出されます。
 

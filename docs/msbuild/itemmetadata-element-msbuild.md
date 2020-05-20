@@ -63,7 +63,7 @@ ms.locfileid: "77633617"
 
 ## <a name="example"></a>例
 
- 次のコード例では、値が `Culture` の `fr` メタデータを項目 `CSFile` に追加する方法を示します。
+ 次のコード例では、値が `fr` の `Culture` メタデータを項目 `CSFile` に追加する方法を示します。
 
 ```xml
 <ItemGroup>

@@ -42,7 +42,7 @@ Visual Studio は、同じアプリを生成しますが、Jinja テンプレー
 
 1. Visual Studio の他のプロジェクト テンプレートと同様に、"Polls Flask Web プロジェクト" テンプレートには *requirements.txt* ファイルが含まれており、Visual Studio ではこれらの依存関係のインストール先を確認するメッセージが表示されます。 オプションを選択し、**仮想環境にインストール**して、 **[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。 (このテンプレートには、Flask の他に、azure-storage と pymongo のパッケージも必要です。"Polls Flask/Jade Web プロジェクト" には pyjade も必要でした。)
 
-1. **ソリューション エクスプローラー**を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択して、**FlaskPolls** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
+1. **ソリューション エクスプローラー**を右クリックし、**[スタートアップ プロジェクトに設定]** を選択して、**FlaskPolls** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
 
 1. **[デバッグ]**  >  **[デバッグの開始]** (**F5** キー) を選択するか、またはツールバーの **[Web サーバー]** ボタンを使用して、サーバーを実行します。
 
@@ -68,7 +68,7 @@ Visual Studio は、同じアプリを生成しますが、Jinja テンプレー
 
 1. 以降のセクションのために、アプリを実行したままにすることができます。
 
-    アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、 **[これらのローカル項目を無視]** を選択します。
+    アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
 
 ### <a name="examine-the-project-contents"></a>プロジェクトの内容を確認する
 
@@ -180,7 +180,7 @@ class Choice(object):
 
 次の手順は、必要な場合に、プロジェクト テンプレートによって提供される 3 つのデータ ストアとは異なるデータ ストアのサポートを追加します。
 
-1. *クラスの基本インターフェイスを得るため、* memory.py`Repository` を新しいファイルにコピーします。
+1. `Repository` クラスの基本インターフェイスを得るため、*memory.py* を新しいファイルにコピーします。
 1. 使用しているデータ ストア応じて、クラスの実装を変更します。
 1. *factory.py* を変更して、追加したデータ ストアの名前を認識し、適切なモジュールをインポートする別の `elif` ケースを追加します。
 1. *settings.py* を変更して、`REPOSITORY_NAME` 環境変数で別の名前を認識し、それに応じて `REPOSITORY_SETTINGS` を初期化します。
@@ -228,9 +228,9 @@ def seed():
     return redirect('/')
 ```
 
-`repository.add_sample_polls()` への呼び出しは、選択したデータ ストアへの特定の `Repository` の実装のうちの 1 つになります。 実装ごとに `_load_samples_json`models *\_init\_\_.py\_ で検出された*  メソッドが呼び出され、*models\samples.json* ファイルがメモリに読み込まれます。次に、そのデータが反復処理され、データ ストア内に必要な `Poll` オブジェクトと `Choice` オブジェクトが作成されます。
+`repository.add_sample_polls()` への呼び出しは、選択したデータ ストアへの特定の `Repository` の実装のうちの 1 つになります。 実装ごとに *models\_\_init\_\_.py* で検出された `_load_samples_json` メソッドが呼び出され、*models\samples.json* ファイルがメモリに読み込まれます。次に、そのデータが反復処理され、データ ストア内に必要な `Poll` オブジェクトと `Choice` オブジェクトが作成されます。
 
-この処理が完了すると、`redirect('/')` メソッドの `seed` ステートメントにより、ホーム ページに戻ります。 `repository.get_polls` でデータ オブジェクトが返されるようになったため、*templates\index.html* の条件タグはポーリングを含むテーブルをレンダリングするようになります。
+この処理が完了すると、`seed` メソッドの `redirect('/')` ステートメントにより、ホーム ページに戻ります。 `repository.get_polls` でデータ オブジェクトが返されるようになったため、*templates\index.html* の条件タグはポーリングを含むテーブルをレンダリングするようになります。
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>質問: アプリに新しいポーリングを追加するにはどうすればよいですか。
 
@@ -298,7 +298,7 @@ def details(key):
 
 **[投票]** ボタンには `type="submit"` があるため、選択すると、もう一度 `details` 関数にルーティングされるのと同じ URL に戻される POST 要求が生成されます。 ただし今回は、フォーム データから選択肢が抽出され、/results/\<choice\> にリダイレクトされます。
 
-/results/\<key\> URL はその後、`results`views.py*の* 関数にルーティングされます。この関数はその後、ポーリングの `calculate_stats` メソッドを呼び出し、*templates\results.html* を使用してレンダリングします。
+/results/\<key\> URL はその後、*views.py* の `results` 関数にルーティングされます。この関数はその後、ポーリングの `calculate_stats` メソッドを呼び出し、*templates\results.html* を使用してレンダリングします。
 
 ```python
 @app.route('/results/<key>')

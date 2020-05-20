@@ -100,7 +100,7 @@ App Service でパスを具体的に確認するには、[App Service] ページ
 
 ### <a name="configure-the-httpplatform-handler"></a>Httpplatform のハンドラーの構成
 
-HttpPlatform モジュールは、スタンドアロンの Python プロセスに直接ソケット接続を渡します。 このパススルーにより、任意の Web サーバーを実行することができますが、ローカル Web サーバーを実行するスタートアップ スクリプトが必要になります。 スクリプトは、`<httpPlatform>`web.config*の* 要素で指定します。ここで、`processPath` 属性はサイト拡張機能の Python インタープリターをポイントし、`arguments` 属性はスクリプトと指定する任意の引数をポイントします。
+HttpPlatform モジュールは、スタンドアロンの Python プロセスに直接ソケット接続を渡します。 このパススルーにより、任意の Web サーバーを実行することができますが、ローカル Web サーバーを実行するスタートアップ スクリプトが必要になります。 スクリプトは、*web.config* の `<httpPlatform>` 要素で指定します。ここで、`processPath` 属性はサイト拡張機能の Python インタープリターをポイントし、`arguments` 属性はスクリプトと指定する任意の引数をポイントします。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -154,7 +154,7 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
 - `WSGI_HANDLER` はアプリからインポート可能な WSGI アプリをポイントする必要があります。
 - `WSGI_LOG` は省略可能ですが、アプリのデバッグのために推奨します。
 
-Bottle、Flask、および Django Web アプリ用の [web.config](publishing-python-web-applications-to-azure-from-visual-studio.md) コンテンツのその他の詳細については、*Azure への発行*に関するページをご覧ください。
+Bottle、Flask、および Django Web アプリ用の *web.config* コンテンツのその他の詳細については、[Azure への発行](publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページをご覧ください。
 
 ## <a name="install-packages"></a>パッケージをインストールする
 

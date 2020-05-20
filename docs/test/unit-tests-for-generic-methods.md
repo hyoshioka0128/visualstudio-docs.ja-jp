@@ -160,7 +160,7 @@ namespace ClassLibrary2
 
 この例では、ジェネリック型パラメーター `T` には制約 `where T : Employee` が含まれています。 この制約は、テスト メソッドでは満たされません。 そのため、`DataTest()` メソッドには、`T` に配置された型制約を指定する要件を通知する Assert ステートメントが含まれています。 この Assert ステートメントのメッセージは、`("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");` となります。
 
-つまり、`DataTestHelper<T>()` テスト メソッドから `DataTest()` メソッドを呼び出す場合は、`Employee` 型のパラメーターまたは `Employee` から派生したクラスを渡す必要があります。
+つまり、`DataTest()` テスト メソッドから `DataTestHelper<T>()` メソッドを呼び出す場合は、`Employee` 型のパラメーターまたは `Employee` から派生したクラスを渡す必要があります。
 
 ```csharp
 using ClassLibrary2;

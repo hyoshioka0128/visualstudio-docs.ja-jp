@@ -37,7 +37,7 @@ Unity エディターは、ゲームの世界をまとめ上げるのに適し�
 
 ### <a name="intellisense-for-unity-messages"></a>Unity メッセージ用の IntelliSense
 
-IntelliSense コードの補完を使うと、[ などの ](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages)Unity API メッセージとそのパラメーターの実装`OnCollisionEnter`が速く簡単になります。
+IntelliSense コードの補完を使うと、`OnCollisionEnter` などの [Unity API メッセージとそのパラメーターの実装](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages)が速く簡単になります。
 
 ### <a name="superior-debugging"></a>優れたデバッグ機能
 

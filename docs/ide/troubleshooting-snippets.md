@@ -25,9 +25,9 @@ IntelliSense コード スニペットに関する問題は、通常は 2 つの
 
 ## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>スニペットをファイル エクスプローラーから Visual Studio のソース ファイルにドラッグできない
 
-- スニペット ファイルの XML が破損している可能性があります。 **の**[XML エディター][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用すると、XML 構造の問題を特定できます。
+- スニペット ファイルの XML が破損している可能性があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。
 
-- スニペット ファイルがスニペット スキーマに準拠していない可能性があります。 **の**[XML エディター][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用すると、XML 構造の問題を特定できます。
+- スニペット ファイルがスニペット スキーマに準拠していない可能性があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の **[XML エディター]** を使用すると、XML 構造の問題を特定できます。
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>コードに強調表示されていないコンパイラ エラーがある
 

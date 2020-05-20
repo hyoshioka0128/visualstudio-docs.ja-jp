@@ -38,7 +38,7 @@ Visual Studio 2017 バージョン 15.4 以降の Live Unit Testing には、さ
 
 - **信頼性とパフォーマンス**:Live Unit Testing では、プロジェクトが完全に読み込まれていないとき、Live Unit Testing のクラッシュを回避できるように、システムでそれがより検出されることが保証されるようになりました。 ビルドのパフォーマンスも向上しており、それにより、プロジェクト ファイルで何も変更されていないことをシステムが知っている場合に MSBuild プロジェクトの再評価が行わないようになりました。
 
-- **その他のユーザー インターフェイスの強化**:右クリック ジェスチャのわかりにくい **[Live Test Set – Include/Exclude]\(ライブ テスト セット – 必要/必要なし\)** オプションが **[Live Unit Testing Include/Exclude]\(Live Unit Testing 必要/必要なし\)** に名称が変更されました。 **[テスト]**  >  **[Live Unit Testing]** メニューの **[Reset clean]\(クリーンのリセット\)** オプションが削除されました。 これには、現在、 **[ツール]**  >  **[オプション]**  >  **[Live Unit Testing]** の順に選択し、 **[Delete Persisted Data]\(永続データの削除\)** を選択してアクセスできます。
+- **その他のユーザー インターフェイスの強化**:右クリック ジェスチャのわかりにくい **[Live Test Set – Include/Exclude]\(ライブ テスト セット – 必要/必要なし\)** オプションが **[Live Unit Testing Include/Exclude]\(Live Unit Testing 必要/必要なし\)** に名称が変更されました。 **[テスト]** > **[Live Unit Testing]** メニューの **[Reset clean]\(クリーンのリセット\)** オプションが削除されました。 これには、現在、 **[ツール]**  >  **[オプション]**  >  **[Live Unit Testing]** の順に選択し、 **[Delete Persisted Data]\(永続データの削除\)** を選択してアクセスできます。
 
 ## <a name="version-153"></a>バージョン 15.3
 

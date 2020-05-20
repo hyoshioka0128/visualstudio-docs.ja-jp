@@ -26,7 +26,7 @@ ms.locfileid: "75566307"
 |タスク|関連するトピック|
 |-|-----------------------|
 |**ロード テスト失敗時のログの保存:** ロード テストが失敗するたびにテスト ログを保存するかどうかも指定できます。|-   [方法: テスト ログにテストの失敗を記録するかどうかを指定する](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**ログ ファイルの最大サイズの設定:** テスト コントローラー サービスと関連付けられている XML 構成ファイルを編集して、ログ ファイルの最大ファイル サイズを指定できます。|`<add key="LogSizeLimitInMegs" value="20"/>`QTCcontroller.exe.config*XML 構成ファイル内で* を変更します。|
+|**ログ ファイルの最大サイズの設定:** テスト コントローラー サービスと関連付けられている XML 構成ファイルを編集して、ログ ファイルの最大ファイル サイズを指定できます。|*QTCcontroller.exe.config* XML 構成ファイル内で `<add key="LogSizeLimitInMegs" value="20"/>` を変更します。|
 
 ## <a name="see-also"></a>参照
 
