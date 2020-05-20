@@ -20,7 +20,7 @@ ms.locfileid: "77027579"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>試用版を延長する、またはライセンスを更新する
 
-[Visual Studio Professional または Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) の無料試用版を 30 日間評価できます。 サインインすると、試用期間を 90 日まで延長できます (Visual Studio Community は無料です。試用期間はありません。 ただし、[ライセンスを常に最新の状態に保つ](signing-in-to-visual-studio.md)ために、定期的に[サインイン](#update-a-stale-license)する必要があります)。
+[Visual Studio Professional または Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) の無料試用版を 30 日間評価できます。 サインインすると、試用期間を 90 日まで延長できます (Visual Studio Community は無料です。試用期間はありません。 ただし、[ライセンスを常に最新の状態に保つ](#update-a-stale-license)ために、定期的に[サインイン](signing-in-to-visual-studio.md)する必要があります)。
 
 試用期間が終了した後も Visual Studio を引き続き使用するには、[オンライン サブスクリプション](#use-an-online-subscription)または[プロダクト キー](#enter-a-product-key)を使用してロックを解除します。
 

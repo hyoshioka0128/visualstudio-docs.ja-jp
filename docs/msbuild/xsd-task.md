@@ -32,7 +32,7 @@ ms.locfileid: "77630783"
 ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。
 
 > [!NOTE]
-> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 **CppCodeProvider.dll** を手動で GAC に追加して、*Microsoft.VisualC.CppCodeProvider* API を引き続き使用することができます。
+> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 *CppCodeProvider.dll* を手動で GAC に追加して、**Microsoft.VisualC.CppCodeProvider** API を引き続き使用することができます。
 
 ## <a name="parameters"></a>パラメーター
 

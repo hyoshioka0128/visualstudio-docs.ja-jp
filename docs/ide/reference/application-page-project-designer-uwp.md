@@ -38,7 +38,7 @@ ms.locfileid: "77173086"
 
 **アセンブリ情報**&mdash;このボタンをクリックすると、[[アセンブリ情報] ダイアログ ボックス](../../ide/reference/assembly-information-dialog-box.md)が表示されます。
 
-**パッケージ マニフェスト**&mdash;このボタンを選択すると、マニフェスト デザイナーが表示されます。 マニフェスト デザイナーには、_ソリューション エクスプローラー_で **Package.appxmanifest** ファイルを選択して、アクセスすることもできます。 詳細については、「[マニフェスト デザイナーを使ってパッケージを構成する](/windows/msix/package/packaging-uwp-apps#configure-your-project)」を参照してください。
+**パッケージ マニフェスト**&mdash;このボタンを選択すると、マニフェスト デザイナーが表示されます。 マニフェスト デザイナーには、**ソリューション エクスプローラー**で _Package.appxmanifest_ ファイルを選択して、アクセスすることもできます。 詳細については、「[マニフェスト デザイナーを使ってパッケージを構成する](/windows/msix/package/packaging-uwp-apps#configure-your-project)」を参照してください。
 
 ## <a name="targeting-section"></a>[ターゲット] セクション
 

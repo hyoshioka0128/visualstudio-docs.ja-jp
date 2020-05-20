@@ -21,7 +21,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 "*全体*" コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
 
 > [!NOTE]
-> [[オプション]](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの**ショートカットを調べる**ことができます。
+> **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの[ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
 
 ## <a name="build"></a>Build
 

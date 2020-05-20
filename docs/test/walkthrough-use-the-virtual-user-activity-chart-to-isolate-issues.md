@@ -38,7 +38,7 @@ ms.locfileid: "78169379"
 
 1. Visual Studio を開きます。
 
-2. **LoadTest1.loadtest** を含む *ColorWebApp* ソリューションを開きます。 これは、このトピックの最初の必要条件セクションにリストされている 3 つのチュートリアルの手順を実行して作成したロード テストです。
+2. *LoadTest1.loadtest* を含む **ColorWebApp** ソリューションを開きます。 これは、このトピックの最初の必要条件セクションにリストされている 3 つのチュートリアルの手順を実行して作成したロード テストです。
 
      このチュートリアルの残りの手順は、ColorWebApp という名前の Web アプリケーション、*ColorWebAppTest.webtest* という名前の Web パフォーマンス テスト、および *LoadTest1.loadtest* という名前のロード テストを前提としています。
 

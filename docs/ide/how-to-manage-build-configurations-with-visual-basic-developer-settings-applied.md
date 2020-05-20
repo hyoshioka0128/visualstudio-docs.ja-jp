@@ -27,7 +27,7 @@ ms.locfileid: "76115158"
 
 ## <a name="enable-advanced-build-configurations"></a>ビルド構成の詳細を有効にする
 
-既定では、 **[構成マネージャー]** ダイアログ ボックスおよび**プロジェクト デザイナー**の **[構成]** 一覧と [[プラットフォーム]](../ide/reference/application-page-project-designer-visual-basic.md) 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
+既定では、 **[構成マネージャー]** ダイアログ ボックスおよび[プロジェクト デザイナー](../ide/reference/application-page-project-designer-visual-basic.md)の **[構成]** 一覧と **[プラットフォーム]** 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
 
 1. **[ツール]** メニューの **[オプション]** をクリックします。
 
