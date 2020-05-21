@@ -1,5 +1,5 @@
 ---
-title: デバッガー内の式 |マイクロソフトドキュメント
+title: デバッガーでの式 | Microsoft Docs
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -21,15 +21,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
 ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "79301135"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>デバッガーでの式
+# <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの式
 Visual Studio デバッガーには式エバリュエーターという機能があり、 **[クイック ウォッチ]** ダイアログ ボックス、 **[ウォッチ]** ウィンドウ、または **[イミディエイト]** ウィンドウで式を入力するときに役立ちます。 式エバリュエーターは **[ブレークポイント]** ウィンドウなど、他のデバッガー機能でも使用できます。
 
-次のセクションでは、Visual Studio でサポートされる言語の式の評価の制限について説明します。
+以下のセクションでは、Visual Studio でサポートされている言語に対する式の評価での制限事項について説明します。
 
 ## <a name="f-expressions-are-not-supported"></a>F# の式はサポートされていません。
 F# の式は認識されません。 F# のコードをデバッグする場合は、デバッガー ウィンドウまたはダイアログ ボックスに式を入力する前に、式を C# の構文に変換する必要があります。 式を F# から C# に変換するときは、C# では等価をテストするのに `==` 演算子を使用しますが、F# では単一の `=`を使用することにご注意ください。
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>デバッガーの組み込み関数を使用して状態を維持する
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> デバッガーの組み込み関数による状態の保持
 デバッガーの組み込み関数を使用すると、アプリケーションの状態を変更せずに、式の中で特定の C/C++ 関数を呼び出すことができます。
 
 デバッガーの組み込み関数には次の特徴があります。
@@ -97,14 +97,14 @@ int main()
 
   デバッガーの組み込み関数は、式の評価をより便利にすることもできます。 たとえば、ブレークポイント条件に記述する際、 `strncmp(str, "asd")` は `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`よりもはるかに簡単です。 )
 
-|領域|組み込み関数|
+|区分|組み込み関数|
 |----------|-------------------------|
-|**文字列長**|[ストレン, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l),[ストレン, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**文字列の比較**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp,](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp) [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l) [, strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**文字列検索**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l),[メムクル, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[コデコードプロキシ](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)、[デコードポインタ](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)、[ラストエラー](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) [、TlsGet 値](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**ウィンドウズ 8**|[をキャプチャスタックバックトレース](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace),[を比較文字列を変換 ,](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal)[ウィンドウズ文字列レン](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen),[を取得します。](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|
-|**その他**|__log2 // 指定された整数のログ・ベース 2 を、最も近い下限の整数に丸めた値を返します。<br /><br />__findNonNull、デコード文字列、デコードウィンRTRestrict例外、ダイナミックキャスト、動的メンバールックアップ、GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx、Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // 同時実行::配列<>:演算子[インデックス<>] と演算子(インデックス<>)<br /><br />ConcurrencyArray_OperatorBracket_int // 同時実行::配列<>:演算子(int、int、.)<br /><br />ConcurrencyArray_OperatorBracket_tidx // 同時実行::配列<>::演算子[tiled_index<>] と演算子(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // 同時実行::array_view<>:演算子[インデックス<>] と operator(インデックス<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // 同時実行::array_view<>:演算子(int、int、.)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // 同時実行::array_view<>::演算子[tiled_index<>] と演算子(tiled_index<>)<br /><br />TreeTraverse_Init // 新しいツリートラバーサルを初期化します。<br /><br />TreeTraverse_Next // ツリー内のノードを返す<br /><br />TreeTraverse_Skip // 保留中のツリー走査中のノードをスキップします。|
+|**文字列長**|[strlen、wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)、[strnlen、wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**文字列比較**|[strcmp、wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp)、[stricmp、wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp)、[_stricmp、_strcmpi、_wcsicmp、_wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l)、[strncmp、wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l)、[strnicmp、wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp)、[_strnicmp、_wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**文字列検索**|[strchr、wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l)、[memchr、wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr)、[strstr、wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy)、[DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29)、[GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)、[TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace)、[WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal)、[WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen)、[WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> これらの関数では、デバッグ対象のプロセスが Windows 8 上で動作している必要があります。 Windows 8 デバイスから生成されたダンプ ファイルをデバッグする際も、Visual Studio コンピューターが Windows 8 を実行している必要があります。 ただし、Windows 8 デバイスをリモートでデバッグする場合は、Visual Studio コンピューターが Windows 7 を実行していてもかまいません。|
+|**その他**|__log2 // 指定した整数の底 2 の対数 (最も近い整数に切り捨てられます) を返します。<br /><br />__findNonNull、DecodeHString、DecodeWinRTRestrictedException、DynamicCast、DynamicMemberLookup、GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx、Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] および operator(index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] および operator(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] および operator(index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] および operator(tiled_index<>)<br /><br />TreeTraverse_Init // 新しいツリー トラバーサルを初期化します<br /><br />TreeTraverse_Next // ツリー内のノードを返します<br /><br />TreeTraverse_Skip // 保留中のツリー トラバーサル内のノードをスキップします|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - サポートされていない式
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - サポートされていない式
 
 ### <a name="dynamic-objects"></a>動的オブジェクト
-デバッガー式では、静的に型指定された変数を動的として使用できます。 実装<xref:System.Dynamic.IDynamicMetaObjectProvider>するオブジェクトが [ウォッチ] ウィンドウで評価されると、[動的ビュー] ノードが追加されます。 [動的ビュー] ノードにはオブジェクトのメンバーが表示されますが、そのメンバーの値を編集することはできません。
+デバッガー式では、静的に型指定された変数を動的として使用できます。 <xref:System.Dynamic.IDynamicMetaObjectProvider> を実装するオブジェクトがウォッチ ウィンドウで評価されると、[動的ビュー] ノードが追加されます。 [動的ビュー] ノードにはオブジェクトのメンバーが表示されますが、そのメンバーの値を編集することはできません。
 
 動的オブジェクトでは、以下の機能はサポートされていません。
 
@@ -207,5 +207,5 @@ int main()
 ## <a name="see-also"></a>関連項目
 - [C++ の書式指定子](../debugger/format-specifiers-in-cpp.md)
 - [Context Operator (C++)](../debugger/context-operator-cpp.md)
-- [C の書式指定子#](../debugger/format-specifiers-in-csharp.md)
+- [C++ の書式指定子](../debugger/format-specifiers-in-csharp.md)
 - [擬似変数](../debugger/pseudovariables.md)
