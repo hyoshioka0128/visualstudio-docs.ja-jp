@@ -77,13 +77,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2019 を開きます。
 
-1. スタート ウィンドウで、 **[コードを複製またはチェックアウトする]** を選択します。
+1. スタート ウィンドウで、 **[リポジトリのクローン]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. リポジトリの場所を入力し、 **[複製]** を選択します。
+1. リポジトリの場所を入力し、 **[クローン]** を選択します。
 
-   ![[コードを複製またはチェックアウトする] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![[リポジトリのクローン] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    Visual Studio でリポジトリからプロジェクトが開かれます。
 
@@ -138,17 +138,17 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2019 を開きます。
 
-1. スタート ウィンドウで、 **[コードを複製またはチェックアウトする]** を選択します。
+1. スタート ウィンドウで、 **[リポジトリのクローン]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
 1. **[リポジトリを参照する]** セクションで、 **[Azure DevOps]** を選択します。
 
-   ![[コードを複製またはチェックアウトする] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![[リポジトリのクローン] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    サインイン ウィンドウが表示される場合は、アカウントにサインインします。
 
-1. **[プロジェクトに接続]** ダイアログ ボックスで、接続するリポジトリを選択してから、 **[複製]** を選択します。
+1. **[プロジェクトに接続]** ダイアログ ボックスで、接続するリポジトリを選択してから、 **[クローン]** を選択します。
 
       ![Visual Studio から生成される "プロジェクトに接続" ダイアログ ボックス](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
