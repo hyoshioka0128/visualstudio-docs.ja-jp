@@ -6,6 +6,8 @@
       href: ide-tour.md
     - name: Windows ユーザー向けの Visual Studio for Mac
       href: vsmac-for-windows-users.md
+    - name: 統合ターミナル
+      href: integrated-terminal.md
 - name: インストール
   items:
     - name: Visual Studio for Mac 2019 のインストール
