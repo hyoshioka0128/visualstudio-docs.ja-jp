@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドのテキストを変更する |マイクロソフトドキュメント
+title: メニューコマンドのテキストを変更する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff6af7bdd64342e86201af79dbe5c7968b247d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 88a20d9f29ae86f7946389cafd26d67c244caea7
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739848"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183692"
 ---
-# <a name="change-the-text-of-a-menu-command"></a>メニュー コマンドのテキストを変更する
-次の手順は、サービスを使用してメニュー コマンドのテキスト ラベルを<xref:System.ComponentModel.Design.IMenuCommandService>変更する方法を示しています。
+# <a name="change-the-text-of-a-menu-command"></a>メニューコマンドのテキストを変更する
+次の手順は、サービスを使用してメニューコマンドのテキストラベルを変更する方法を示して <xref:System.ComponentModel.Design.IMenuCommandService> います。
 
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>メニュー コマンド ラベルを変更する
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>IMenuCommandService を使用してメニューコマンドのラベルを変更する
 
-1. という名前のメニュー コマンド`MenuText`で名前を付けた VSIX プロジェクト**を作成します**。 詳細については、「[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。
+1. `MenuText` **ChangeMenuText**という名前のメニューコマンドを使用して、という名前の VSIX プロジェクトを作成します。 詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. *vsct*ファイルで、次の`TextChanges`例に示すように、メニュー コマンドにフラグを追加します。
+2. 次の例に示すように、 *vsct*ファイルで、 `TextChanges` メニューコマンドにフラグを追加します。
 
     ```xml
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">
@@ -39,7 +39,7 @@ ms.locfileid: "80739848"
     </Button>
     ```
 
-3. *ChangeMenuText.cs*ファイルで、メニュー コマンドが表示される前に呼び出されるイベント ハンドラーを作成します。
+3. *ChangeMenuText.cs*ファイルで、メニューコマンドが表示される前に呼び出されるイベントハンドラーを作成します。
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)
@@ -52,37 +52,27 @@ ms.locfileid: "80739848"
     }
     ```
 
-    オブジェクトの プロパティ<xref:System.ComponentModel.Design.MenuCommand.Visible%2A>、 、<xref:System.ComponentModel.Design.MenuCommand.Checked%2A>および<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A>プロパティを変更して、このメソッドのメニュー コマンドの<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>状態を更新することもできます。
+    また、オブジェクトの、、の各プロパティを変更することで、このメソッドのメニューコマンドの状態を更新することもでき <xref:System.ComponentModel.Design.MenuCommand.Visible%2A> <xref:System.ComponentModel.Design.MenuCommand.Checked%2A> <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ます。
 
-4. ChangeMenuText コンストラクターで、元のコマンド初期化コードと配置コードを、メニュー コマンド<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>を表す`MenuCommand`( ではなく ) を作成する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>コードに置き換え、イベント ハンドラーを追加し、メニュー コマンド をメニュー コマンド サービスに渡します。
+4. ChangeMenuText コンストラクターで、元のコマンド初期化と配置コードを、メニューコマンドを表す (ではなく) を作成するコードに置き換えて、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> `MenuCommand` イベントハンドラーを追加し、メニューコマンド <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> をメニューコマンドサービスに渡します。
 
     次のようになります。
 
     ```csharp
-    private ChangeMenuText(Package package)
+    private ChangeMenuText(AsyncPackage package, OleMenuCommandService commandService)
     {
-        if (package == null)
-        {
-            throw new ArgumentNullException(nameof(package));
-        }
-
-        this.package = package;
-
-        OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
-        if (commandService != null)
-        {
-            CommandID menuCommandID = new CommandID(MenuGroup, CommandId);
-            EventHandler eventHandler = this.ShowMessageBox;
-            OleMenuCommand menuItem = new OleMenuCommand(ShowMessageBox, menuCommandID);
-            menuItem.BeforeQueryStatus +=
-                new EventHandler(OnBeforeQueryStatus);
-            commandService.AddCommand(menuItem);
-        }
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+        
+        var menuCommandID = new CommandID(CommandSet, CommandId);
+        var menuItem = new OleMenuCommand(this.Excute, menuCommandID);
+        menuItem.BeforeQueryStatus += new EventHandler(OnBeforeQueryStatus);
+        commandService.AddCommand(menuItem);
     }
     ```
 
 5. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。
 
-6. [**ツール**] メニューに[**変更メニューテキストの呼び出し**]というコマンドが表示されます。
+6. [**ツール**] メニューに、 **Invoke ChangeMenuText**という名前のコマンドが表示されます。
 
-7. コマンドをクリックします。 メッセージ ボックスが表示され **、MenuItemCallback**が呼び出されたことを通知するメッセージ ボックスが表示されます。 メッセージ ボックスを閉じると、[ツール] メニューのコマンドの名前が **[新しいテキスト]** になっていることがわかります。
+7. コマンドをクリックします。 **Menuitemcallback**が呼び出されたことを示すメッセージボックスが表示されます。 メッセージボックスを閉じると、[ツール] メニューのコマンドの名前が**新しいテキスト**になっていることがわかります。

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586202"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182808"
 ---
 # <a name="reliability-warnings"></a>信頼性に関する警告
 
@@ -33,5 +33,7 @@ ms.locfileid: "82586202"
 |[CA2003:ファイバーをスレッドとして扱いません](../code-quality/ca2003.md)|マネージスレッドは Win32 スレッドとして扱われています。|
 |[CA2004:GC.KeepAlive への呼び出しを削除します](../code-quality/ca2004.md)|SafeHandle の使用法に変換する場合は、GC のすべての呼び出しを削除します。KeepAlive (オブジェクト)。 この場合、クラスは GC を呼び出す必要がありません。KeepAlive。ファイナライザーがなくても、SafeHandle に依存してそれらの OS ハンドルを最終処理することを前提としています。|
 |[CA2006:SafeHandle を使用して、ネイティブ リソースを要約します](../code-quality/ca2006.md)|マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。|
-|[CA2007:タスクを直接待機しないでください](../code-quality/ca2007.md)|非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を<xref:System.Threading.Tasks.Task>直接待機します。|
-|[CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](../code-quality/ca2009.md)|`ToImmutable`メソッドは、名前空間から<xref:System.Collections.Immutable>変更できないコレクションで不必要に呼び出されました。|
+|[CA2007:タスクを直接待機しないでください](../code-quality/ca2007.md)|非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を <xref:System.Threading.Tasks.Task> 直接待機します。|
+|[CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](../code-quality/ca2009.md)|`ToImmutable`メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。|
+|[CA2011: setter 内でプロパティを割り当てません](../code-quality/ca2011.md) | プロパティに、独自の[set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
+|[CA2015: MemoryManager T から派生した型に対してファイナライザーを定義しません &lt;&gt;](../code-quality/ca2015.md) | から派生した型にファイナライザーを追加する <xref:System.Buffers.MemoryManager%601> と、メモリがによってまだ使用されている間は解放される可能性があり <xref:System.Span%601> ます。 |
