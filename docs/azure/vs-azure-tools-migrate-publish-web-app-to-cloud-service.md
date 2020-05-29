@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489676"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180000"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>方法: Visual Studio から Azure クラウド サービスへの Web アプリケーションの移行および発行
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>方法: Visual Studio から Azure クラウドサービスに web アプリケーションを移行および発行する
 
 Azure のホスティング サービスとスケーラビリティを利用するには、Web アプリケーションを Azure クラウド サービスに 移行してデプロイします。 変更は最小限ですみます。 この記事ではクラウド サービスへのデプロイのみを説明します。App Service については、[Azure App Service での Web アプリのデプロイ](/azure/app-service/app-service-deploy-local-git)に関する記事をご覧ください。
 
 > [!Important]
-> この移行は特定の ASP.NET、Silverlight、WCF、および WCF ワークフロー プロジェクトでのみサポートされます。 ASP.NET Core プロジェクトではサポートされません。 「[サポートされているプロジェクト テンプレート](#supported-project-templates)」のセクションをご覧ください。
+> この移行は、特定の ASP.NET、WCF、および WCF ワークフロープロジェクトでのみサポートされています。 ASP.NET Core プロジェクトではサポートされません。 「[サポートされているプロジェクト テンプレート](#supported-project-templates)」のセクションをご覧ください。
 
 ## <a name="migrate-a-project-to-cloud-services"></a>クラウド サービスにプロジェクトを移行する
 
-1. Web アプリケーション プロジェクトを右クリックし、**[変換] > [Microsoft Azure クラウド サービス プロジェクトに変換]** の順に選択します。 (ソリューションに既に Web ロール プロジェクトがある場合は、このコマンドは表示されないことがあるために注意してください。)
-1. Visual Studio は、必要な Web ロールが含まれるソリューションにクラウド サービス プロジェクトを作成します。 お使いのアプリケーション プロジェクトと同じ名前にサフィックス `.Azure` を付加したものが、このプロジェクトの名前になります。
-1. Visual Studio は MVC 2、MVC 3、MVC 4、Silverlight の各ビジネス アプリケーションに必要なアセンブリの **[ローカルにコピー]** プロパティも true に設定します。 このプロパティにより、デプロイに使用されるサービス パッケージにこれらのアセンブリが追加されます。
+1. ソリューションノードを右クリックし、[**追加] [新しいプロジェクト**] の順に選択して、既存のソリューションに新しい**Azure クラウドサービス (クラシック)** プロジェクトを追加し > ます。
+1. [**新しい Microsoft Azure クラウドサービス (クラシック)** ] ダイアログで、プロジェクトにロールを追加せずに [OK] をクリックします。
+1. 新しく追加した Cloud Services プロジェクトの [ロール] ノードを右クリックし、[**ソリューションに Web ロールプロジェクトを追加...**] を選択します。
+1. [**ロールプロジェクトとの関連付け**] ダイアログボックスで、web ロールとして関連付けるプロジェクトを選択します。
 
    > [!Important]
    > この Web アプリケーションに必要な他のアセンブリまたはファイルがある場合は、それらのファイルのプロパティを手動で設定する必要があります。 これらのプロパティを設定する方法については、「[Include Files in the Service Package (サービス パッケージにファイルを取り込む)](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)」をご覧ください。
@@ -79,7 +80,6 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 | --- | --- |
 | ASP.NET Web アプリケーション<br/>(MVC 2、MVC 3、MVC 4 を含みます) | **[デプロイ]** タブで **[Azure の活動ログ]** の URL を選択します。 |
 | 空の ASP.NET Web アプリケーション | アプリケーションの既定の `.aspx` ページがある場合は、**[デプロイ]** タブで **[Azure の活動ログ]** の URL を選択します。 別のページに移動するには、ブラウザーに `<deployment_url>/<page_name>.aspx` の形式で URL を入力します。 |
-| Silverlight アプリケーション<br/>Silverlight ビジネス アプリケーション<br/>Silverlight ナビゲーション アプリケーション | `<deployment_url>/<page_name>.aspx` の形式の URL を使用して、アプリケーションの特定のページに移動します。 |
 | WCF サービス アプリケーション<br/>WCF ワークフロー サービス アプリケーション | `.svc` ファイルを WCF サービス プロジェクトのスタート ページに設定します。 次に、`<deployment_url>/<service_file>.svc` に移動します。 |
 | ASP.NET 動的エンティティ<br/>ASP.NET 動的データ LINQ to SQL | 接続文字列を更新します (次のセクションで説明します)。 次に、`<deployment_url>/<page_name>.aspx` に移動します。 Linq to SQL については、Azure SQL データベースを使用する必要があります。 |
 
@@ -117,14 +117,11 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 | Web | 空の ASP.NET MVC 2 Web アプリケーション |
 | Web | ASP.NET 動的データ エンティティ Web アプリケーション |
 | Web | ASP.NET 動的データ LINQ to SQL Web アプリケーション |
-| Silverlight | Silverlight アプリケーション |
-| Silverlight | Silverlight ビジネス アプリケーション |
-| Silverlight | Silverlight ナビゲーション アプリケーション |
 | WCF | WCF サービス アプリケーション |
 | WCF | WCF ワークフロー サービス アプリケーション |
 | ワークフロー | WCF ワークフロー サービス アプリケーション |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Visual Studio からの Azure アプリケーションの発行またはデプロイの準備](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
-- [名前付き認証資格情報のセットアップ](vs-azure-tools-setting-up-named-authentication-credentials.md)」
+- [名前付き認証資格情報を設定](vs-azure-tools-setting-up-named-authentication-credentials.md)しています。
