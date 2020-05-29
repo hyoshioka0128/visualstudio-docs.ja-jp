@@ -71,6 +71,8 @@ f1_keywords:
 - CA1066
 - CA1067
 - CA1068
+- CA1069
+- CA1070
 - CA1200
 - CA1300
 - CA1301
@@ -174,6 +176,8 @@ f1_keywords:
 - CA2006
 - CA2007
 - CA2009
+- CA2011
+- CA2015
 - CA2100
 - CA2101
 - CA2102
@@ -265,19 +269,22 @@ f1_keywords:
 - CA2241
 - CA2242
 - CA2243
+- CA2245
+- CA2246
 - CA5122
+- CA5374
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b4b0929830f825b2c1f7fd568620a3f743308f4
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 6ea04276b7b2fe3dfb5814fbd31602134641b8ef
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586302"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180039"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -287,10 +294,10 @@ ms.locfileid: "82586302"
 |---------| - | - |
 | CA1000 | [CA1000:ジェネリック型の静的メンバーを宣言しません](../code-quality/ca1000.md) | ジェネリック型の静的メンバーを呼び出すときには、その型の型引数も指定する必要があります。 推論をサポートしないジェネリック インスタンス メンバーを呼び出すときには、そのメンバーに型引数を指定する必要があります。 この 2 つの場合、型引数を指定するときに使用される構文は異なりますが、混同される可能性があります。 |
 | CA1001 | [CA1001:破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001.md) | クラスが System.IDisposable 型であるインスタンス フィールドを宣言および実装していますが、IDisposable を実装していません。 IDisposable フィールドを宣言するクラスは間接的にアンマネージ リソースを所有しているため、IDisposable インターフェイスを実装する必要があります。 |
-| CA1002 | [CA1002:ジェネリック リストを公開しません](../code-quality/ca1002.md) | < (Of \<(T>) >) は、継承ではなくパフォーマンスを目的として設計されたジェネリックコレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
+| CA1002 | [CA1002:ジェネリック リストを公開しません](../code-quality/ca1002.md) | < (Of \<(T> ) >) は、継承ではなくパフォーマンスを目的として設計されたジェネリックコレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
 | CA1003 | [CA1003:汎用イベント ハンドラーのインスタンスを使用します](../code-quality/ca1003.md) |型に void を返すデリゲートが含まれており、デリゲートのシグネチャに 2 つのパラメーター (1 つはオブジェクト、もう 1 つは EventArgs に割り当て可能な型) が含まれ、包含アセンブリの対象が Microsoft .NET Framework 2.0. です。 |
 | CA1004 | [CA1004:ジェネリック メソッドは型パラメーターを指定しなければなりません](../code-quality/ca1004.md) | 型引数を明示的に指定するのではなく、メソッドに渡す引数の型によってジェネリック メソッドの型引数を決定する方法が推論されます。 推論を有効にするには、ジェネリック メソッドのパラメーター シグネチャに、そのメソッドの型パラメーターと同じ型のパラメーターが含まれている必要があります。 この場合、型引数を指定する必要がなくなります。 すべての型パラメーターについて推論を使用する場合、ジェネリック インスタンス メソッドを呼び出す構文と、非ジェネリック インスタンス メソッドを呼び出す構文は同じになります。これにより、ジェネリック メソッドの使用方法が単純化されます。 |
-| CA1005 | [CA1005:ジェネリック型でパラメーターを使用しすぎないでください](../code-quality/ca1005.md) | ジェネリック型に含まれる型パラメーターが増えれば増えるほど、それぞれの型パラメーターが表す意味を調べることや覚えることが難しくなります。 通常は、List\<T> のように1つの型パラメーターを使用します。また、Dictionary\<TKey, TValue> のように2つの型パラメーターを持つケースもあります。 しかし、型パラメーターが 3 つ以上になると、ほとんどのユーザーには意味を把握することが困難になります。 |
+| CA1005 | [CA1005:ジェネリック型でパラメーターを使用しすぎないでください](../code-quality/ca1005.md) | ジェネリック型に含まれる型パラメーターが増えれば増えるほど、それぞれの型パラメーターが表す意味を調べることや覚えることが難しくなります。 通常は、1つの型パラメーター (List など) と、 \<T> 2 つの型パラメーターを持つケース (Dictionary など) があることが明らかです \<TKey, TValue> 。 しかし、型パラメーターが 3 つ以上になると、ほとんどのユーザーには意味を把握することが困難になります。 |
 | CA1006 | [CA1006:ジェネリック型をメンバー シグネチャ内で入れ子にしません](../code-quality/ca1006.md) | 入れ子にされた型引数は、ジェネリック型の型引数でもあります。 入れ子にされた型引数を含むシグネチャを持つメンバーを呼び出すには、ユーザーが 1 つのジェネリック型をインスタンス化し、別のジェネリック型のコンストラクターにこの型を渡す必要があります。 複雑な手順と構文が必要となるため、これは避けるようにしてください。 |
 | CA1007 |[CA1007:適切な場所にジェネリックを使用します](../code-quality/ca1007.md) | 外部から参照できるメソッドに、System.Object 型の参照パラメーターが含まれています。 ジェネリック メソッドを使用することで、型を最初に参照パラメーターの型にキャストせずに、制約の影響を受けるすべての型をメソッドに渡すことができます。 |
 | CA1008 | [CA1008:Enums は 0 値を含んでいなければなりません](../code-quality/ca1008.md) | 初期化されていない列挙型の既定値は、他の値型と同様に、ゼロです。 フラグではない属性が付いた列挙型では、ゼロの値を使用してメンバーを定義する必要があります。これは、既定値を有効な列挙値にするためです。 FlagsAttribute 属性を適用した列挙型でゼロ値のメンバーを定義する場合、名前を "None" にして、列挙型に設定済みの値がないことを示します。 |
@@ -325,7 +332,7 @@ ms.locfileid: "82586302"
 | CA1041 | [CA1041:ObsoleteAttribute メッセージを指定します](../code-quality/ca1041.md) | 型またはメンバーが System.ObsoleteAttribute 属性を使用してマークされていますが、この属性で ObsoleteAttribute.Message プロパティが指定されていません。 ObsoleteAttribute でマークされている型またはメンバーをコンパイルすると、属性の Message プロパティが表示されます。 これによって、ユーザーは旧式の型またはメンバーに関する情報を知ることができます。 |
 | CA1043 | [CA1043:インデクサーには整数または文字列引数を使用します](../code-quality/ca1043.md) | インデクサー (つまり、インデックスされたプロパティ) では、インデックスに整数型または文字列型を使用します。 一般に、このような型はデータ構造のインデックス作成に使用され、ライブラリの操作性も改善されます。 Object 型の使用は、デザイン時に特定の整数型または文字列型を指定できない場合に限定してください。 |
 | CA1044 | [CA1044:プロパティを書き込み専用にすることはできません](../code-quality/ca1044.md) | 読み取り専用のプロパティは許容され、必要な場合もよくありますが、書き込み専用のプロパティを使用することはデザインのガイドラインで禁止されています。 これは、値を設定できてもその値を参照できず、セキュリティが確保されないためです。 また、読み取りアクセスがないと、共有オブジェクトのステータスを参照できないため、実用性が制限されます。 |
-| CA1045 |[CA1045:型を参照によって渡しません](../code-quality/ca1045.md) | (out または ref を使用した) 型の参照渡しには、ポインターの使用経験、値の型と参照型の違いの理解、および複数の戻り値を持つメソッドの処理が必要です。 一般ユーザー向けに設計されたライブラリアーキテクトは、ユーザーがまたは`out` `ref`パラメーターをマスターに使用することを想定しないでください。 |
+| CA1045 |[CA1045:型を参照によって渡しません](../code-quality/ca1045.md) | (out または ref を使用した) 型の参照渡しには、ポインターの使用経験、値の型と参照型の違いの理解、および複数の戻り値を持つメソッドの処理が必要です。 一般ユーザー向けに設計されたライブラリアーキテクト `out` は、ユーザーがまたはパラメーターをマスターに使用することを想定しないでください `ref` 。 |
 | CA1046 | [CA1046:参照型で、演算子 equals をオーバーロードしないでください](../code-quality/ca1046.md) | 参照型の場合、等値演算子は既定の実装でほぼ問題がありません。 既定で、2 つの参照が等値と見なされるのは、同じオブジェクトを参照する場合のみです。 |
 | CA1047 |[CA1047:シールド型の保護されたメンバーを宣言しません](../code-quality/ca1047.md) | 型でプロテクト メンバーを宣言するのは、継承する型からメンバーにアクセスまたはオーバーライドできるようにするためです。 定義により、シールされた型から継承することはできません。これは、シールされた型のプロテクト メソッドを呼び出すことができないということを意味します。 |
 | CA1048 | [CA1048:シールド型の仮想メンバーを宣言しません](../code-quality/ca1048.md) | 型でメソッドを仮想と宣言するのは、継承する型が仮想メソッドの実装をオーバーライドできるようにするためです。 定義により、シールされた型から継承することはできません。 これにより、シールされた型の仮想メソッドの意味がなくなります。 |
@@ -344,12 +351,14 @@ ms.locfileid: "82586302"
 | CA1061 |[CA1061:基底クラス メソッドを非表示にしません](../code-quality/ca1061.md) | 派生メソッドのパラメーター シグネチャ内のある型が、基本メソッドのパラメーター シグネチャ内のそれに対応する型より弱く型指定されていることが、両者の唯一の相違点である場合、基本型内のメソッドが派生型内の同じ名前のメソッドによって隠ぺいされます。 |
 | CA1062 | [CA1062:パブリック メソッドの引数の検証](../code-quality/ca1062.md) | 外部から参照可能なメソッドに渡されるすべての参照引数について、null かどうかをチェックする必要があります。 |
 | CA1063 | [CA1063:IDisposable を正しく実装します](../code-quality/ca1063.md) | すべての IDisposable 型は、Dispose パターンを適切に実装する必要があります。 |
-| CA1064 | [CA1064:例外は public として設定する必要があります](../code-quality/ca1064.md) | 内部例外は、その内部スコープ内でのみ認識されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 内部例外が、 <xref:System.Exception> <xref:System.SystemException>、または<xref:System.ApplicationException>から継承されている場合、外部コードには、例外の処理内容を認識するのに十分な情報がありません。 |
+| CA1064 | [CA1064:例外は public として設定する必要があります](../code-quality/ca1064.md) | 内部例外は、その内部スコープ内でのみ認識されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 内部例外が、、またはから継承されている場合、外部コードには、例外の処理 <xref:System.Exception> <xref:System.SystemException> 内容を <xref:System.ApplicationException> 認識するのに十分な情報がありません。 |
 | CA1065 | [CA1065:予期しない場所に例外を発生させません](../code-quality/ca1065.md) | 例外をスローしないはずのメソッドが例外をスローします。 |
-| CA1066 | [CA1066: Equals をオーバーライドする際に IEquatable を実装します](../code-quality/ca1066.md) | 値型はメソッド<xref:System.Object.Equals%2A>をオーバーライドしますが、 <xref:System.IEquatable%601>はを実装しません。 |
-| CA1067 | [CA1067: IEquatable を実装するときに Equals をオーバーライドします](../code-quality/ca1067.md) | 型はを<xref:System.IEquatable%601>実装しますが、 <xref:System.Object.Equals%2A>メソッドをオーバーライドしません。 |
+| CA1066 | [CA1066: Equals をオーバーライドする際に IEquatable を実装します](../code-quality/ca1066.md) | 値型は <xref:System.Object.Equals%2A> メソッドをオーバーライドしますが、はを実装しません <xref:System.IEquatable%601> 。 |
+| CA1067 | [CA1067: IEquatable を実装するときに Equals をオーバーライドします](../code-quality/ca1067.md) | 型はを実装し <xref:System.IEquatable%601> ますが、メソッドをオーバーライドしません <xref:System.Object.Equals%2A> 。 |
 | CA1068 | [CA1068:CancellationToken パラメーターは最後に指定する必要があります](../code-quality/ca1068.md) | メソッドに、最後のパラメーターではない CancellationToken パラメーターが指定されています。 |
-| CA1200 | [CA1200:プレフィックスで cref タグを使用しません](../code-quality/ca1200.md) | XML ドキュメントタグの[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 プレフィックスで`cref`タグを使用するのは避けてください。これにより、コンパイラが参照を検証できなくなります。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
+| CA1069 | [CA1069: 列挙型には重複する値を指定することはできません](../code-quality/ca1069.md) | 列挙には、同じ定数値が明示的に割り当てられている複数のメンバーがあります。 |
+| CA1070 | [CA1070: イベントフィールドを仮想として宣言しません](../code-quality/ca1070.md) | [フィールドに似たイベント](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)が virtual として宣言されました。 |
+| CA1200 | [CA1200:プレフィックスで cref タグを使用しません](../code-quality/ca1200.md) | XML ドキュメントタグの[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 プレフィックスでタグを使用するのは避けて `cref` ください。これにより、コンパイラが参照を検証できなくなります。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
 | CA1300 | [CA1300:MessageBoxOption を指定します](../code-quality/ca1300.md) | テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。 |
 | CA1301 | [CA1301:重複するアクセラレータを使用しません](../code-quality/ca1301.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールが重複するアクセスキーを持っている場合、アクセスキーの動作は適切に定義されていません。 |
 | CA1302 | [CA1302:ロケール特有の文字列をハードコードしません](../code-quality/ca1302.md) | System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 Environment.GetFolderPath メソッドは、Environment.SpecialFolder 列挙体に関連付けられ、ローカライズされ、現在実行されているコンピューターに適切な位置を返します。 |
@@ -364,7 +373,7 @@ ms.locfileid: "82586302"
 | CA1401 | [CA1401: P/Invoke を表示できません](../code-quality/ca1401.md) | パブリック型のパブリック メソッドまたはプロテクト メソッドに、System.Runtime.InteropServices.DllImportAttribute 属性があります ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では Declare キーワードでも実装されます)。 このようなメソッドは公開しないでください。 |
 | CA1402 |[CA1402:COM 参照可能インターフェイスでのオーバーロードを避けてください](../code-quality/ca1402.md) | オーバーロードされたメソッドが COM クライアントに公開されると、最初のメソッド オーバーロードだけが名前を保持します。 後続のオーバーロードは、名前にアンダースコア文字 (_) およびオーバーロードの宣言の順序に対応する整数が付加され、一意の名前に変更されます。 |
 | CA1403 | [CA1403:Auto 配置の型を COM 参照可能にすることはできません](../code-quality/ca1403.md) | COM 参照可能な値型は、StructLayoutAttribute 属性が Layoutkind.explicit に設定された InteropServices を使用してマークされます。これらの型のレイアウトは .NET のバージョンによって変わることがあり、これにより、特定のレイアウトを期待する COM クライアントが中断されます。 |
-| CA1404 | [CA1404: P/Invoke の直後に GetLastError を呼び出します。](../code-quality/ca1404.md) | GetLastWin32Error メソッドまたはそれと同等[!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]の GetLastError 関数が呼び出されましたが、直前の呼び出しがオペレーティングシステム呼び出しメソッドに対して行われていません。 |
+| CA1404 | [CA1404: P/Invoke の直後に GetLastError を呼び出します。](../code-quality/ca1404.md) | GetLastWin32Error メソッドまたはそれと同等の GetLastError 関数が呼び出されましたが、直前 [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] の呼び出しがオペレーティングシステム呼び出しメソッドに対して行われていません。 |
 | CA1405 | [CA1405:COM 参照可能な型の基本型は COM 参照可能でなければなりません](../code-quality/ca1405.md) | COM 参照可能な型が、COM 参照不可能な型から派生しています。 |
 | CA1406 |[CA1406:Visual Basic 6 クライアントに対しては Int64 引数を使用しません](../code-quality/ca1406.md) | Visual Basic 6 COM クライアントでは、64 ビット整数にアクセスできません。 |
 | CA1407 |[CA1407:Com 参照可能な型で静的メンバーを使用しません](../code-quality/ca1407.md) | COM では静的メソッドをサポートしていません。 |
@@ -382,9 +391,9 @@ ms.locfileid: "82586302"
 | CA1504 | [CA1504:紛らわしいフィールド名を確認します](../code-quality/ca1504.md) | インスタンス フィールドの名前が "s_" で始まっているか、static (Visual Basic では Shared) フィールドの名前が "m_" で始まっています。 |
 | CA1505 | [CA1505:メンテナンスできないコードを使用しないでください](../code-quality/ca1505.md) | 型またはメソッドの保守容易性指数が低い値です。 保守容易性指数の低い型またはメソッドは、保守が困難な可能性があるため、デザインの変更を検討することをお勧めします。 |
 | CA1506 | [CA1506:クラス結合度を大きくしすぎないでください](../code-quality/ca1506.md) | この規則は、型またはメソッドに含まれる一意の型参照の数をカウントすることによって、クラス結合度を計測します。 |
-| CA1507 | [CA1507:文字列の代わりに nameof を使用します](../code-quality/ca1507.md) | 文字列リテラルは、式を`nameof`使用できる引数として使用されます。 |
-| CA1508 | [CA1508:使用されない条件付きコードを回避する](../code-quality/ca1508.md) | メソッドには、常に`true`または`false`実行時に評価される条件付きコードがあります。 これにより、条件の`false`分岐でコードが停止します。 |
-| CA1509 | [CA1509: コードメトリックス構成ファイルのエントリが無効です](../code-quality/ca1509.md) | [CA1501](ca1501.md)、 [CA1502](ca1502.md)、 [CA1505](ca1505.md) 、 [CA1506](ca1506.md)などのコードメトリックス規則には、無効なエントリを`CodeMetricsConfig.txt`持つという名前の構成ファイルが指定されています。 |
+| CA1507 | [CA1507:文字列の代わりに nameof を使用します](../code-quality/ca1507.md) | 文字列リテラルは、式を使用できる引数として使用され `nameof` ます。 |
+| CA1508 | [CA1508:使用されない条件付きコードを回避する](../code-quality/ca1508.md) | メソッドには、常にまたは実行時に評価される条件付きコードがあり `true` `false` ます。 これにより、条件の分岐でコードが停止し `false` ます。 |
+| CA1509 | [CA1509: コード メトリック構成ファイルのエントリが無効です](../code-quality/ca1509.md) | [CA1501](ca1501.md)、 [CA1502](ca1502.md)、 [CA1505](ca1505.md) 、 [CA1506](ca1506.md)などのコードメトリックス規則には、無効なエントリを持つという名前の構成ファイルが指定されてい `CodeMetricsConfig.txt` ます。 |
 | CA1600 | [CA1600:アイドル状態のプロセス優先度を使用しません](../code-quality/ca1600.md) | プロセス優先順位に Idle を設定しないでください。 System.Diagnostics.ProcessPriorityClass.Idle を設定したプロセスは、CPU を占有するか、そうでない場合はアイドル状態になるため、スタンバイ状態がブロックされます。 |
 | CA1601 | [CA1601:電源の状態の変更を妨げるタイマーを使用しません](../code-quality/ca1601.md) | 定期的な動作の頻度が高くなると、CPU のビジー状態が続き、ディスプレイとハード ディスクをオフにする省電力アイドル タイマーに影響を与えます。 |
 | CA1700 | [CA1700:列挙型値に 'Reserved' という名前を指定しません](../code-quality/ca1700.md) | この規則では、"reserved" を含む名前の列挙体のメンバーは、現在使用されていなくても、将来的なバージョンでは名前を変更するか削除されるプレースホルダーと想定しています。 メンバーの名前変更や削除は、互換性に影響する変更点です。 |
@@ -412,7 +421,7 @@ ms.locfileid: "82586302"
 | CA1726 | [CA1726:適切な用語を使用します](../code-quality/ca1726.md) | 外部から参照可能な識別子の名前に含まれている用語に対応する、別の推奨される用語があります。 あるいは、名前に "Flag" または "Flags" という語が含まれています。 |
 | CA1800 | [CA1800:不必要にキャストしません](../code-quality/ca1800.md) | 二重のキャストがあるとパフォーマンスが低下します。特に、小さな繰り返しステートメントでキャストが実行される場合はそうです。 |
 | CA1801 | [CA1801:使用されていないパラメーターの確認](../code-quality/ca1801.md) | メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 |
-| CA1802 |[CA1802:適切な場所にリテラルを使用します](../code-quality/ca1802.md) |フィールドが static および read-only ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では Shared および ReadOnly) として宣言され、コンパイル時に計算できる値によって初期化されています。 コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、宣言を const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) フィールドに変更して、実行時ではなくコンパイル時に値が計算されるようにします。 |
+| CA1802 |[CA1802:適切な場所にリテラルを使用します](../code-quality/ca1802.md) |フィールドが static および read-only ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では Shared および ReadOnly) として宣言され、コンパイル時に計算できる値によって初期化されています。 コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、宣言を const (const in) フィールドに変更して、実行時で [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] はなくコンパイル時に値が計算されるようにします。 |
 | CA1804 | [CA1804:使用されていないローカルを削除します](../code-quality/ca1804.md) | 使用されていないローカル変数や不要な引数があると、アセンブリのサイズが大きくなり、パフォーマンスが低下します。 |
 | CA1806 | [CA1806:メソッドの結果を無視しない](../code-quality/ca1806.md) | 新しく作成されたオブジェクトが現在まで使用されていないか、新しい文字列を作成して返すメソッドが呼び出されて作成された新しい文字列が現在まで使用されていません。あるいは、COM または P/Invoke メソッドから返された HRESULT またはエラー コードが現在まで使用されていません。 |
 | CA1809 |[CA1809:ローカルを使用しすぎないでください](../code-quality/ca1809.md) | パフォーマンス最適化の一般的な方法として、メモリではなくプロセッサのレジスタに値を格納する方法があります。これは "値のレジスタ格納" と呼ばれます。 すべてのローカル変数をレジスタ格納できるようにするには、ローカル変数の数を 64 個に制限します。 |
@@ -429,11 +438,11 @@ ms.locfileid: "82586302"
 | CA1822 |[CA1822:メンバーを static に設定します](../code-quality/ca1822.md) | インスタンス データにアクセスしない、またはインスタンス メソッドを呼び出さないメンバーは、静的 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では共有) としてマークできます。 メソッドを静的としてマークすると、コンパイラはこれらのメンバーに対する非仮想呼び出しサイトを出力します。 パフォーマンス重視のコードでは、これにより大きくパフォーマンスを向上できます。 |
 | CA1823 | [CA1823:使用されていないプライベート フィールドを使用しません](../code-quality/ca1823.md) | アセンブリ内でアクセスされていないと思われるプライベート フィールドが検出されました。 |
 | CA1824 |[CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します](../code-quality/ca1824.md) | NeutralResourcesLanguage 属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語をリソースマネージャーに通知します。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。 |
-| CA1825 |[CA1825:長さ 0 の配列割り当てを回避します](../code-quality/ca1825.md) | 長さ0の配列を初期化すると、不要なメモリ割り当てにつながります。 代わりに、を呼び出す<xref:System.Array.Empty%2A?displayProperty=nameWithType>ことによって、静的に割り当てられた空の配列インスタンスを使用します。 メモリ割り当ては、このメソッドのすべての呼び出しで共有されます。 |
+| CA1825 |[CA1825:長さ 0 の配列割り当てを回避します](../code-quality/ca1825.md) | 長さ0の配列を初期化すると、不要なメモリ割り当てにつながります。 代わりに、を呼び出すことによって、静的に割り当てられた空の配列インスタンスを使用し <xref:System.Array.Empty%2A?displayProperty=nameWithType> ます。 メモリ割り当ては、このメソッドのすべての呼び出しで共有されます。 |
 | CA1826 |[CA1826:Linq の列挙可能なメソッドの代わりにプロパティを使用します](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>LINQ メソッドが、同等のより効率的なプロパティをサポートする型で使用されました。 |
-| CA1827 |[CA1827:Any が使用できる場合は Count/LongCount を使用しません](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>また<xref:System.Linq.Enumerable.LongCount%2A>はメソッドが使用<xref:System.Linq.Enumerable.Any%2A>されました。メソッドの方が効率的です。 |
-| CA1828 |[CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>また<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>はメソッドが使用<xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A>されました。メソッドの方が効率的です。 |
-| CA1829 |[CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ メソッドは、同等の、より効率的`Length`なまたは`Count`プロパティをサポートする型で使用されていました。 |
+| CA1827 |[CA1827:Any が使用できる場合は Count/LongCount を使用しません](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>または <xref:System.Linq.Enumerable.LongCount%2A> メソッドが使用されました <xref:System.Linq.Enumerable.Any%2A> 。メソッドの方が効率的です。 |
+| CA1828 |[CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>または <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> メソッドが使用されました <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 。メソッドの方が効率的です。 |
+| CA1829 |[CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ メソッドは、同等の、より効率的なまたはプロパティをサポートする型で使用されていま `Length` `Count` した。 |
 | CA1900 | [CA1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
 | CA1903 | [CA1903:対象のフレームワークから API のみを使用します](../code-quality/ca1903.md) | メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。 |
@@ -443,8 +452,10 @@ ms.locfileid: "82586302"
 | CA2003 |[CA2003:ファイバーをスレッドとして扱いません](../code-quality/ca2003.md) | マネージド スレッドが [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] スレッドとして扱われています。 |
 | CA2004 | [CA2004:GC.KeepAlive への呼び出しを削除します](../code-quality/ca2004.md) | SafeHandle の使用に変更する場合、すべての GC.KeepAlive (object) の呼び出しを削除します。 この場合、クラスに GC.KeepAlive の呼び出しを含めることはできません。 クラスはファイナライザーを持っていない代わりに、SafeHandle を使用して OS ハンドルを終了していることが前提となっています。 |
 | CA2006 | [CA2006:SafeHandle を使用して、ネイティブ リソースを要約します](../code-quality/ca2006.md) | マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。 |
-| CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を<xref:System.Threading.Tasks.Task>直接待機します。 非同期メソッドがを<xref:System.Threading.Tasks.Task>直接待機する場合、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出し<xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>て、継続の意図を知らせることを検討してください。 |
-| CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable`メソッドは、名前空間から<xref:System.Collections.Immutable>変更できないコレクションで不必要に呼び出されました。 |
+| CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を <xref:System.Threading.Tasks.Task> 直接待機します。 非同期メソッドがを直接待機する場合 <xref:System.Threading.Tasks.Task> 、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出して <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 、継続の意図を知らせることを検討してください。 |
+| CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable`メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。 |
+| CA2011 | [CA2011: setter 内でプロパティを割り当てません](ca2011.md) | プロパティに、独自の[set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
+| CA2015 | [CA2015: MemoryManager T から派生した型に対してファイナライザーを定義しません &lt;&gt;](ca2015.md) | から派生した型にファイナライザーを追加する <xref:System.Buffers.MemoryManager%601> と、メモリがによってまだ使用されている間は解放される可能性があり <xref:System.Span%601> ます。 |
 | CA2100 | [CA2100:SQL クエリのセキュリティ脆弱性を確認](../code-quality/ca2100.md) | メソッドに渡された文字列引数から構築された文字列を使用して System.Data.IDbCommand.CommandText プロパティが設定されています。 この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 |
 | CA2101 |[CA2101: P/Invoke 文字列引数のマーシャリングを指定します。](../code-quality/ca2101.md) | プラットフォーム呼び出しメンバーが、部分信頼の呼び出し元を許可し、文字列パラメーターを持ち、さらにその文字列を明示的にマーシャリングしていません。 これはセキュリティ上の脆弱性となる可能性があります。 |
 | CA2102 | [CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします](../code-quality/ca2102.md) | アセンブリ内の RuntimeCompatibilityAttribute でマークされていないメンバーまたは RuntimeCompatibility(WrapNonExceptionThrows = false) でマークされているメンバーには、System.Exception を処理する catch ブロックがあり、その直後に汎用 catch ブロックはありません。 |
@@ -533,4 +544,28 @@ ms.locfileid: "82586302"
 | CA2241 | [CA2241:書式設定メソッドに正しい引数を提供](../code-quality/ca2241.md) | System.String.Format に渡される引数 format に、各オブジェクトの引数に対応する書式指定項目が含まれていません (その逆も考えられます)。 |
 | CA2242 |[CA2242:NaN に対して正しくテストします](../code-quality/ca2242.md) | この式が Single.Nan または Double.Nan に対して値をテストしています。 値をテストするには、Single.IsNan(Single) または Double.IsNan(Double) を使用します。 |
 | CA2243 |[CA2243:属性文字列リテラルは、正しく解析する必要があります](../code-quality/ca2243.md) | 属性のリテラル文字列パラメーターが URL、GUID、またはバージョンとして正しく解析されません。 |
+| CA2244 | [CA2244: インデックス付き要素の初期化を重複させません](../code-quality/ca2244.md) | オブジェクト初期化子に、同じ定数インデックスを持つ複数のインデックス付き要素初期化子があります。 最後の初期化子以外はすべて冗長です。 |
+| CA2245 | [CA2245: プロパティをそれ自体に割り当てません](../code-quality/ca2245.md) | プロパティが誤ってそれ自体に割り当てられました。 |
+| CA2246 | [CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません。](../code-quality/ca2246.md) | 同じステートメントで、シンボルとそのメンバー (フィールドまたはプロパティ) を割り当てることは推奨されていません。 メンバーアクセスが、割り当ての前にシンボルの古い値を使用するのか、またはこのステートメントの代入の新しい値を使用するのかは明確ではありません。 |
 | CA5122 | [CA5122 P/Invoke 宣言を安全にクリティカルにすることはできません](../code-quality/ca5122.md) | メソッドは、セキュリティに対する配慮が必要な操作を行うときは SecuritySafeCritical としてマークされますが、透過的なコードによって使用される場合も安全です。 透過的なコードは、P/Invoke を通じてネイティブ コードを直接呼び出すことはありません。 そのため、P/Invoke をセキュリティ セーフ クリティカルとしてマークしても、透過的なコードはそれを呼び出すことができず、セキュリティ分析の際に紛らわしくなります。 |
+| CA5359 | [CA5359 証明書の検証を無効にしない](../code-quality/ca5359.md) | 証明書は、サーバーの id を認証するのに役立ちます。 クライアントはサーバー証明書を検証して、要求が目的のサーバーに送信されるようにする必要があります。 ServerCertificateValidationCallback が常にを返す場合 `true` 、すべての証明書が検証に合格します。 |
+| CA5362 | [逆シリアル化されたオブジェクトグラフでの可能性のある参照サイクルの CA5362](../code-quality/ca5362.md) | 信頼されていないデータを逆シリアル化する場合、逆シリアル化されたオブジェクトグラフを処理するコードは、無限ループに入ることなく参照サイクルを処理する必要があります。 これには、逆シリアル化のコールバックの一部であるコードと、逆シリアル化の完了後にオブジェクトグラフを処理するコードの両方が含まれます。 そうしないと、攻撃者は参照サイクルを含む悪意のあるデータを使用してサービス拒否攻撃を実行する可能性があります。 |
+| CA5365 | [CA5365 で HTTP ヘッダーチェックを無効にしない](../code-quality/ca5365.md) | HTTP ヘッダーチェックでは、応答ヘッダーに含まれる復帰文字と改行文字 (\r と \n) をエンコードできます。 このエンコーディングは、ヘッダーに含まれる信頼されていないデータをエコーするアプリケーションを悪用する注入攻撃を回避するのに役立ちます。 |
+| CA5366 | [CA5366 データセット読み取り XML に XmlReader を使用する](../code-quality/ca5366.md) | を使用して <xref:System.Data.DataSet> 信頼できないデータを持つ XML を読み取ると、危険な外部参照が読み込まれる可能性があります。これは、 <xref:System.Xml.XmlReader> セキュリティで保護された競合回避モジュールを使用するか、DTD 処理を無効にして制限する必要があり |
+| CA5367 | [CA5367 はポインターフィールドを持つ型をシリアル化しません](../code-quality/ca5367.md) | このルールでは、ポインターフィールドまたはプロパティを持つシリアル化可能なクラスがあるかどうかを確認します。 シリアル化できないメンバーは、静的メンバーまたはでマークされたフィールドなどのポインターにすることができ <xref:System.NonSerializedAttribute> ます。 |
+| CA5368 | [ページから派生したクラスの CA5368 Set ViewStateUserKey](../code-quality/ca5368.md) | プロパティを設定する <xref:System.Web.UI.Page.ViewStateUserKey> と、個々のユーザーのビューステート変数に識別子を割り当てて、攻撃者が変数を使用して攻撃を生成できないようにすることで、アプリケーションに対する攻撃を防ぐことができます。 そうしないと、クロスサイト要求の偽造に対する脆弱性が発生します。 |
+| CA5374 | [CA5374 XslTransform を使用しない](../code-quality/ca5374.md) | このルール <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> では、がコード内でインスタンス化されているかどうかを確認します。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>は互換性のために残されているため、使用しないでください。 |
+| CA5379 | [CA5379 は、弱いキー派生関数アルゴリズムを使用しません](../code-quality/ca5379.md) | クラスは、 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 既定でアルゴリズムを使用し <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> ます。 またはそれ以上のコンストラクターの一部のオーバーロードで使用するハッシュアルゴリズムを指定する必要があり <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> ます。 プロパティに <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> はアクセサーのみがあり、 `get` 修飾子はありません `overriden` 。 |
+| CA5382 | [CA5382 では、セキュリティで保護された cookie を使用 ASP.NET Core](../code-quality/ca5382.md) | HTTPS 経由で使用できるアプリケーションでは、セキュリティで保護された cookie を使用する必要があります。これは、cookie が Secure Sockets Layer (SSL) を使用してのみ送信されることをブラウザーに示すことを示します |
+| CA5383 | [CA5383 でセキュリティで保護された cookie を使用することを確認 ASP.NET Core](../code-quality/ca5383.md) | HTTPS 経由で使用できるアプリケーションでは、セキュリティで保護された cookie を使用する必要があります。これは、cookie が Secure Sockets Layer (SSL) を使用してのみ送信されることをブラウザーに示すことを示します |
+| CA5384 | [CA5384 デジタル署名アルゴリズム (DSA) を使用しない](../code-quality/ca5384.md) | DSA は、弱い非対称暗号化アルゴリズムです。 |
+| CA5385 | [CA5385 Use Rivest – Rivest-shamir-adleman – Rivest-shamir-adleman (RSA) アルゴリズム (十分なキーサイズ)](../code-quality/ca5385.md) | RSA キーが2048ビットより小さい場合は、ブルートフォース攻撃に対して脆弱になります。 |
+| CA5387 | [CA5387 の反復回数が不十分なため、弱いキー派生関数を使用しない](../code-quality/ca5387.md) | このルールは、によって暗号化キーが生成されたかどうかを、イテレーション数が10万未満であるかどうかを確認 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> します。 反復回数が多いほど、生成された暗号化キーを推測しようとする辞書攻撃に対する軽減に役立ちます。 |
+| CA5388 | [CA5388 弱いキー派生関数を使用する場合、十分な反復回数を確保する](../code-quality/ca5388.md) | このルールは、によって暗号化キーが生成されたかどうかを、 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 10万未満の反復回数で確認します。 反復回数が多いほど、生成された暗号化キーを推測しようとする辞書攻撃に対する軽減に役立ちます。 |
+| CA5390 | [CA5390 暗号化キーをハードコーディングしない](../code-quality/ca5390.md) | 対称アルゴリズムを成功させるには、送信側と受信側だけが秘密キーを認識している必要があります。 キーがハードコーディングされている場合は、簡単に検出できます。 コンパイル済みバイナリでも、悪意のあるユーザーが簡単に抽出できます。 秘密キーが侵害されると、暗号文は直接復号化でき、保護されなくなります。 |
+| CA5394 | [CA5394 は安全でないランダム性を使用しない](../code-quality/ca5394.md) | 暗号強度の弱い擬似乱数ジェネレーターを使用すると、攻撃者がセキュリティを重視した値が生成されることを予測できます。 |
+| CA5396 | [CA5396 HttpCookie に対して HttpOnly を true に設定します。](../code-quality/ca5396.md) | 多層防御の手段として、セキュリティが重要な HTTP クッキーが HttpOnly としてマークされていることを確認します。 これは、web ブラウザーがスクリプトによる cookie へのアクセスを許可しないことを示します。 挿入された悪意のあるスクリプトは、cookie を盗む一般的な方法です。 |
+| CA5399 | [CA5399 は確実に HttpClient 証明書失効リストチェックを無効にする](../code-quality/ca5399.md) | 失効した証明書は信頼されていません。 攻撃者が悪意のあるデータを渡すか、または HTTPS 通信で機微なデータを盗むために使用される可能性があります。 |
+| CA5400 | [CA5400 HttpClient 証明書失効リストの確認が無効になっていないことを確認します。](../code-quality/ca5400.md) | 失効した証明書は信頼されていません。 攻撃者が悪意のあるデータを渡すか、または HTTPS 通信で機微なデータを盗むために使用される可能性があります。 |
+| CA5401 | [CA5401 既定以外の IV で CreateEncryptor 機能を使用しない](../code-quality/ca5401.md) | 対称暗号化では、ディクショナリ攻撃を防ぐために、常に反復不可能な初期化ベクターを使用する必要があります。 |
+| CA5402 | [CA5402 既定の IV で CreateEncryptor 機能を使用する](../code-quality/ca5402.md) | 対称暗号化では、ディクショナリ攻撃を防ぐために、常に反復不可能な初期化ベクターを使用する必要があります。 |
