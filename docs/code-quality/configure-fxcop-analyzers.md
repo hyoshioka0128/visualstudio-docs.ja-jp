@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 182042db9a744d037e295a8448f8c49a9c7b3a97
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587720"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184797"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
 [Fxcop アナライザーパッケージ](install-fxcop-analyzers.md)は、.NET Compiler Platform ベースのコードアナライザーに変換されたレガシ分析から最も重要な "fxcop" 規則で構成されています。 特定の FxCop 規則については、[構成可能なオプション](fxcop-analyzer-options.md)を使用して、コードベースのどの部分を適用するかを調整できます。 各オプションは、キーと値のペアを[Editorconfig](https://editorconfig.org)ファイルに追加することによって指定します。 構成ファイルは、[プロジェクトに固有](#per-project-configuration)のものもあれば、2つ以上のプロジェクト間で[共有](#shared-configuration)することもできます。
 
 > [!TIP]
-> **ソリューションエクスプローラー**でプロジェクトを右クリックし、[ > **新しい項目**の**追加**] を選択して、プロジェクトに editorconfig ファイルを追加します。 **[新しい項目の追加]** ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 **[Editorconfig ファイル (既定)]** テンプレートを選択し、 **[追加]** を選択します。
+> **ソリューションエクスプローラー**でプロジェクトを右クリックし、[ **Add**  >  **新しい項目**の追加] を選択して、プロジェクトに editorconfig ファイルを追加します。 [**新しい項目の追加**] ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 [ **Editorconfig ファイル (既定)** ] テンプレートを選択し、[**追加**] を選択します。
 >
 > ![Visual Studio で editorconfig ファイルをプロジェクトに追加する](media/add-editorconfig-file.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "75587720"
 
 *すべて*のルールのオプションを構成するための構文は次のとおりです。
 
-|構文|使用例|
+|構文|例|
 |-|-|
 | dotnet_code_quality。OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
@@ -52,7 +52,7 @@ ms.locfileid: "75587720"
 
 ルールの*カテゴリ*(名前付け、設計、パフォーマンスなど) のオプションを構成するための構文は次のとおりです。
 
-|構文|使用例|
+|構文|例|
 |-|-|
 | dotnet_code_quality。RuleCategory OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
@@ -60,17 +60,31 @@ ms.locfileid: "75587720"
 
 *特定*のルールのオプションを構成するための構文は次のとおりです。
 
-|構文|使用例|
+|構文|例|
 |-|-|
 | dotnet_code_quality。RuleId OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
-## <a name="per-project-configuration"></a>プロジェクトごとの構成
+## <a name="enabling-editorconfig-based-configuration"></a>Editorconfig ベースの構成を有効にする
+
+### <a name="vs2019-163-and-later--fxcopanalyzers-package-version-33x-and-later"></a>VS2019 16.3 以降 + FxCopAnalyzers パッケージバージョン 3.3. x 以降
+
+EditorConfig ベースのアナライザーの構成は、次のスコープに対して有効にすることができます。
+
+- 特定のドキュメント
+- 特定のフォルダー
+- 特定のプロジェクト
+- 特定のソリューション
+- リポジトリ全体
+
+構成を有効にするには、対応するディレクトリのオプションを使用して、 *editorconfig*ファイルを追加します。 このファイルには、EditorConfig ベースの診断重大度構成エントリも含まれます。 詳細については、[こちら](use-roslyn-analyzers.md#rule-severity)をご覧ください。
+
+### <a name="prior-to-vs2019-163-or-using-an-fxcopanalyzers-package-version-prior-to-33x"></a>VS2019 16.3 より前、または 3.3. x より前の FxCopAnalyzers パッケージバージョンを使用する
+
+#### <a name="per-project-configuration"></a>プロジェクトごとの構成
 
 特定のプロジェクトに対して EditorConfig ベースのアナライザーの構成を有効にするには、プロジェクトのルートディレクトリに*editorconfig*ファイルを追加します。
 
-現在、ソリューションレベルやプロジェクトレベルなど、異なるディレクトリレベルに存在する editorconfig ファイルを "結合" するための階層的なサポートはありません。
-
-## <a name="shared-configuration"></a>共有構成
+#### <a name="shared-configuration"></a>共有構成
 
 FxCop アナライザーの構成ファイルは2つ以上のプロジェクト間で共有できますが、いくつかの追加の手順が必要です。
 
@@ -107,5 +121,5 @@ FxCop アナライザーの構成ファイルは2つ以上のプロジェクト�
 
 - [FxCop アナライザーの規則のスコープオプション](fxcop-analyzer-options.md)
 - [アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
-- [FxCop アナライザー](install-fxcop-analyzers.md)
+- [FXCop アナライザー](install-fxcop-analyzers.md)
 - [EditorConfig の .NET コーディング規則](../ide/editorconfig-code-style-settings-reference.md)

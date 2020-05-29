@@ -1,16 +1,16 @@
 ---
-title: XAML 概要
-ms.date: 01/10/2020
+title: XAML の概要
+ms.date: 05/20/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2556387f523769bba93708a9c00d1f7c62429c0f
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: 97f3bc7777023903d5fc38ad1bda7cde45b683b6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "82921227"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183484"
 ---
 # <a name="overview-of-xaml"></a>XAML の概要
 
@@ -36,7 +36,7 @@ Visual Studio と Blend for Visual Studio には、WPF、UWP、Xamarin. Forms �
 
 ## <a name="whats-new"></a>新機能
 
-最新情報については、 [Visual studio 2019 の xaml 開発者ツール](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)の新機能に関するブログ投稿と、YouTube の[visual Studio ビデオの新しい xaml 機能](https://youtu.be/yI9OyA4ZM2E)に関する記事を参照してください。
+最新情報については、visual [studio 2019 の xaml 開発者ツールの新](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)機能に関するブログの投稿、 [visual studio 2019 バージョン 16.7 PREVIEW 1 の xaml ツール](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/)の機能強化、および YouTube での[VISUAL studio ビデオの新しい xaml 機能](https://youtu.be/yI9OyA4ZM2E)に関する記事を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
