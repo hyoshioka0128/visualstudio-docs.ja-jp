@@ -1,4 +1,4 @@
-﻿- name: Visual Studio IDE ドキュメント
+- name: Visual Studio IDE ドキュメント
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: 概要
@@ -910,6 +910,8 @@
           href: ide/signing-in-to-visual-studio.md
         - name: 複数のユーザー アカウントを使って作業する
           href: ide/work-with-multiple-user-accounts.md
+        - name: 多要素認証が必要なアカウントを使って作業する
+          href: ide/work-with-multi-factor-authentication.md
         - name: 試用版を延長する、またはライセンスを更新する
           href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio のパフォーマンスのチューニング

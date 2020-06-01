@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386171"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200540"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Visual Studio サブスクリプションを割り当てるにはどうすればよいですか?
 
@@ -22,7 +22,7 @@ ms.locfileid: "81386171"
 
 1. [manage.visualstudio.com](https://manage.visualstudio.com) のページの上部にある [[サブスクライバーを管理] タブ](https://manage.visualstudio.com/subscribers)を選択します
 2. [追加] を選択し、サブスクリプションを割り当てるユーザーの名前とメール アドレスを入力します。
-    - 組織で Azure Active Directory を使用している場合は、名前フィールドによって、現在のディレクトリ内のユーザーが検索されます。 検索結果から選択することも、手動でユーザーを追加することもできます。
+    1. 組織で Azure Active Directory を使用している場合は、名前フィールドによって、現在のディレクトリ内のユーザーが検索されます。 検索結果から選択することも、手動でユーザーを追加することもできます。
 3. サブスクライバーが [Visual Studio サブスクリプション ポータル](https://my.visualstudio.com/)にサインインするときにソフトウェアのダウンロードにアクセスできるようにする場合は、必ず、[ダウンロードの設定] セクションのダウンロードのトグルをオンのままにしてください。
 4. [通信設定] セクションに入力し、サブスクライバーに割り当てメールを送信する際の言語がわかるようにします。
 5. 割り当てに関連付けられるメモを追加する場合は、参照選択を使用してください。
