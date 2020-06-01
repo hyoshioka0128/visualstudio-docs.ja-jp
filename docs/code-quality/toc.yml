@@ -338,6 +338,10 @@
                   href: ca1067.md
                 - name: 'CA1068:CancellationToken パラメーターは最後に指定する必要があります'
                   href: ca1068.md
+                - name: 'CA1069: 列挙型には重複する値を指定できません'
+                  href: ca1069.md
+                - name: 'CA1070: イベント フィールドを virtual として宣言しません'
+                  href: ca1070.md
                 - name: 'CA2210:アセンブリには有効な厳密な名前が必要です'
                   href: ca2210.md
             - name: ドキュメントの警告
@@ -579,6 +583,10 @@
                   href: ca2007.md
                 - name: 'CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください'
                   href: ca2009.md
+                - name: 'CA2011: セッター内でプロパティを割り当てません'
+                  href: ca2011.md
+                - name: 'CA2015: MemoryManager<T> から派生した型にはファイナライザーを定義しません'
+                  href: ca2015.md
             - name: セキュリティの警告
               items:
                 - name: 概要
@@ -740,12 +748,24 @@
                   href: ca3147.md
                 - name: 'CA5358:安全ではない暗号モードを使用しないでください'
                   href: ca5358.md
+                - name: 'CA5359: 証明書の検証を無効にしません'
+                  href: ca5359.md
                 - name: 'CA5361: 強力な暗号の SChannel の使用を無効にしません'
                   href: ca5361.md
+                - name: 'CA5362: 逆シリアル化されたオブジェクト グラフで可能性のある参照サイクル'
+                  href: ca5362.md
                 - name: 'CA5363:要求の検証を無効にしません'
                   href: ca5363.md
                 - name: 'CA5364: 非推奨のセキュリティ プロトコルを使用しないでください'
                   href: ca5364.md
+                - name: 'CA5365: HTTP ヘッダーのチェックを無効にしません'
+                  href: ca5365.md
+                - name: 'CA5366: DataSet Read XML に XmlReader を使用します'
+                  href: ca5366.md
+                - name: 'CA5367: ポインター フィールドを持つ型をシリアル化しません'
+                  href: ca5367.md
+                - name: 'CA5368: ページから派生したクラスに ViewStateUserKey を設定します'
+                  href: ca5368.md
                 - name: 'CA5369:逆シリアル化に XmlReader を使用します'
                   href: ca5369.md
                 - name: 'CA5370:読み取りの検証に XmlReader を使用します'
@@ -756,20 +776,50 @@
                   href: ca5372.md
                 - name: 'CA5373:廃止されたキー派生関数を使用しません'
                   href: ca5373.md
+                - name: 'CA5374: XslTransform を使用しません'
+                  href: ca5374.md
                 - name: 'CA5378: ServicePointManagerSecurityProtocols を無効にしません'
                   href: ca5378.md
+                - name: 'CA5379: 弱いキー派生関数アルゴリズムを使用しません'
+                  href: ca5379.md
                 - name: 'CA5380:ルート ストアに証明書を追加しません'
                   href: ca5380.md
                 - name: 'CA5381:証明書がルート ストアに追加されていないことを確認します'
                   href: ca5381.md
+                - name: 'CA5382: ASP.NET Core で安全な Cookie を使用します'
+                  href: ca5382.md
+                - name: 'CA5383: ASP.NET Core で安全な Cookie を使用することを確認します'
+                  href: ca5383.md
+                - name: 'CA5384: デジタル署名アルゴリズム (DSA) を使用しません'
+                  href: ca5384.md
+                - name: 'CA5385: 十分なキー サイズの Rivest–Shamir–Adleman (RSA) アルゴリズムを使用します'
+                  href: ca5385.md
                 - name: 'CA5386: SecurityProtocolType 値のハードコードを避けます'
                   href: ca5386.md
+                - name: 'CA5387: 反復回数が十分でない弱いキー派生関数は使用しません'
+                  href: ca5387.md
+                - name: 'CA5388: 弱いキー派生関数を使用する場合は十分な反復回数を確保してください'
+                  href: ca5388.md
                 - name: 'CA5389:アーカイブ項目のパスをターゲット ファイル システム パスに追加しません'
                   href: ca5389.md
+                - name: 'CA5390: 暗号化キーをハードコーディングしません'
+                  href: ca5390.md
+                - name: 'CA5394: 安全でないランダム度を使用しません'
+                  href: ca5394.md
+                - name: 'CA5396: HttpCookie で HttpOnly を true に設定します'
+                  href: ca5396.md
                 - name: 'CA5397:非推奨の SslProtocols 値を使用しません'
                   href: ca5397.md
                 - name: 'CA5398:ハードコーディングされた SslProtocols 値を回避します'
                   href: ca5398.md
+                - name: 'CA5399: HttpClient 証明書失効リストの確認を確実に無効にします'
+                  href: ca5399.md
+                - name: 'CA5400: HttpClient 証明書失効リストの確認が無効になっていないことをご確認ください'
+                  href: ca5400.md
+                - name: 'CA5401: 既定以外の IV で CreateEncryptor を使用しません'
+                  href: ca5401.md
+                - name: 'CA5402: 既定の IV で CreateEncryptor を使用します'
+                  href: ca5402.md
                 - name: 'CA5403:証明書をハードコーディングしない'
                   href: ca5403.md
             - name: 使用法に関する警告
@@ -863,5 +913,11 @@
                   href: ca2242.md
                 - name: 'CA2243:属性文字列リテラルは、正しく解析する必要があります'
                   href: ca2243.md
+                - name: 'CA2244: インデックス付き要素の初期化を重複させません'
+                  href: ca2244.md
+                - name: 'CA2245: プロパティをそれ自体に割り当てません'
+                  href: ca2245.md
+                - name: 'CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません'
+                  href: ca2246.md
             - name: 自動機能の中断
               href: automatic-feature-suspension.md
