@@ -1,5 +1,5 @@
 ---
-title: レポート用のフック関数 |Microsoft Docs
+title: レポート用のフック関数 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729871"
@@ -37,7 +37,7 @@ ms.locfileid: "72729871"
 int YourReportHook(int nRptType, char *szMsg, int *retVal);
 ```
 
- **_CrtSetReportHook**に渡すポインターの型は **_CRT_REPORT_HOOK**で、crtdbg.h で定義されています。始め
+ **_CrtSetReportHook** に渡すポインターは **_CRT_REPORT_HOOK** 型です。これらは CRTDBG.H に次のように定義されています。
 
 ```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
@@ -49,4 +49,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
 
 ## <a name="see-also"></a>関連項目
 - [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)
-- [crt_dbg2 サンプル](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+- [crt_dbg2 のサンプル](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

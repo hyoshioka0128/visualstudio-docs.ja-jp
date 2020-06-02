@@ -1,5 +1,5 @@
 ---
-title: 関数を何度も呼び出すときに失敗した呼び出しを見つける |Microsoft Docs
+title: 関数を複数回呼び出しているときにどの呼び出しが失敗したかを見つける |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728049"
@@ -39,7 +39,7 @@ ms.locfileid: "72728049"
 ## <a name="problem-description"></a>問題の説明
  `CnvtV` という関数を呼び出すとプログラムでエラーが発生します。 プログラムでエラーが発生するまでに、その関数は 200 回から 300 回は呼び出されているようです。 `CnvtV` に位置ブレークポイントを設定すると、この関数を呼び出すたびにプログラムが停止してしまうため、このブレークポイントは使用したくありません。 どのような条件で呼び出しが失敗するのかが不明なため、条件付きブレークポイントは設定できません。 どうしたらいいのでしょうか。
 
-## <a name="solution"></a>解決策:
+## <a name="solution"></a>ソリューション
  **[ヒット カウント]** フィールドを使って、関数のブレークポイントに、絶対に到達不可能な大きい値を設定できます。 この場合、`CnvtV` 関数が 200 回から 300 回は呼び出されているようなので、 **[ヒット カウント]** に 1000 以上の値を設定します。 その後、プログラムを実行し、エラーが発生するのを待ちます。 エラーが発生したら、[ブレークポイント] ウィンドウを開き、ブレークポイントの一覧を確認します。 `CnvtV` に設定されたブレークポイントは、次のように、後ろにヒット カウントと残りの繰り返し回数が付いた状態で表示されます。
 
 ```cpp

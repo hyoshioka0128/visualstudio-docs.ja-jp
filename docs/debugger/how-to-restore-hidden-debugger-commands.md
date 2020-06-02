@@ -1,5 +1,5 @@
 ---
-title: '方法: 非表示のデバッガーコマンドを復元する |Microsoft Docs'
+title: '方法: 非表示のデバッガー コマンドを復元する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a45791843abe3051bacb9655c773ac9dfc6b9045
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732908"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>方法 : 非表示のデバッガー コマンドを復元する
+# <a name="how-to-restore-hidden-debugger-commands"></a>方法: 非表示のデバッガー コマンドを復元する
 Visual Studio をセット アップするときに、既定の IDE 設定で主要なプログラム言語を選択するように指示されます。 言語によっては、既定の IDE 設定で一部のデバッガー コマンドが非表示のことがあります。
 
  既定の IDE 設定で非表示のデバッガー機能を使用するには、次の手順でコマンドをメニューに表示します。
@@ -62,7 +62,7 @@ Visual Studio をセット アップするときに、既定の IDE 設定で主
 
 4. **[インポートする設定コレクションの選択]** ページの **[既定の設定]** フォルダーで、使用するコマンドが含まれる開発設定のコレクションを選択します。 選択するコレクションがわからない場合、 **[全般的な開発設定]** または **[Visual C++ 開発設定]** を確認してください。ほとんどのデバッガー コマンドを表示されます。
 
-5. [次へ] をクリックします。
+5. **[次へ]** をクリックします。
 
 6. **[インポートする設定の選択]** ページの **[オプション]** で、 **[デバッグ]** がオンになっていることを確認します。 この設定をインポートしないのであれば、他のチェック ボックスはオフにします。
 

@@ -1,5 +1,5 @@
 ---
-title: キーボードショートカット (HTML および JavaScript) |Microsoft Docs
+title: キーボード ショートカット (HTML および JavaScript) | Microsoft Docs
 ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,20 +15,20 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731497"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>ショートカット キー (HTML および JavaScript)
 
-HTML および JavaScript を使用して UWP アプリをデバッグするための Visual Studio のキーボードショートカット。
+HTML および JavaScript を使用する UWP アプリをデバッグするための Visual Studio のキーボード ショートカット。
 
 ## <a name="general-shortcuts"></a>一般ショートカット
 
  これらのショートカットは、HTML および JavaScript を使用する UWP アプリのすべてのツールで使用できます。
 
-|操作|ショートカット|
+|アクション|ショートカット|
 |------------|--------------|
 |Windows アプリのリフレッシュ|Ctrl + Shift + R|
 |Windows アプリの再起動|Ctrl + Shift + F5|
@@ -39,9 +39,9 @@ HTML および JavaScript を使用して UWP アプリをデバッグするた�
 
  JavaScript コンソール ウィンドウでこれらのショートカットを使用します。
 
-|操作|ショートカット|
+|アクション|ショートカット|
 |------------|--------------|
-|コンソール コマンドの実行|Enter キー|
+|コンソール コマンドの実行|Enter|
 |コンソールのクリア|Esc|
 |シングル ライン モードおよびマルチ ライン モードの切り替え|Ctrl+Alt+M|
 
@@ -49,7 +49,7 @@ HTML および JavaScript を使用して UWP アプリをデバッグするた�
 
  これらのショートカットは DOM Explorer で使用します。
 
-|操作|ショートカット|
+|アクション|ショートカット|
 |------------|--------------|
 |要素の選択|Ctrl + B|
 |**[要素の選択]** の使用時に Web ページのハイライト ボックスの表示と非表示を切り替える|Ctrl + Shift + I|
@@ -60,5 +60,5 @@ HTML および JavaScript を使用して UWP アプリをデバッグするた�
 
 ## <a name="see-also"></a>関連項目
 - [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
-- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

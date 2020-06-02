@@ -1,5 +1,5 @@
 ---
-title: UWP アプリを更新する |Microsoft Docs
+title: UWP アプリを更新する | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,14 +21,14 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730309"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio での UWP アプリの更新
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio で UWP アプリを更新する
 
- デバッグ中にコードを変更した後、 **[デバッグ]** ツールバーの **[Windows アプリケーションの更新]** ボタンを選択することで、JavaScript を使用して UWP アプリを更新できます。 このボタンを選択すると、デバッガーを停止したり再起動したりせずにアプリが再度読み込まれます。 更新機能によって、HTML、CSS、および JavaScript コードを変更し、その結果をすばやく確認できます。 この機能は、UWP アプリでサポートされています。
+ デバッグ中にコードを変更し、 **[デバッグ]** ツール バーの **[Windows アプリケーションの更新]** を選択することで、JavaScript を使用する UWP アプリを更新できます。 このボタンを選択すると、デバッガーを停止したり再起動したりせずにアプリが再度読み込まれます。 更新機能によって、HTML、CSS、および JavaScript コードを変更し、その結果をすばやく確認できます。 この機能は UWP アプリに対してサポートされています。
 
  更新では、アプリの状態は保持されません。また、アプリに対する次の変更は反映されません。
 
@@ -47,19 +47,19 @@ ms.locfileid: "72730309"
 
 ### <a name="to-refresh-an-app"></a>アプリを更新するには
 
-1. Visual Studio で UWP プロジェクトを開いた状態で、デバッグターゲットとして **[ローカルコンピューター]** を選択します。
+1. Visual Studio で UWP プロジェクトを開いた状態で、デバッグ ターゲットとして **[ローカル コンピューター]** を選択します。
 
-     ![デバッグターゲットリストの選択](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![デバッグ ターゲット選択リスト](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. F5 キーを押して、アプリをデバッグ モードで実行します。
 
 4. Visual Studio に切り替えます
 
-5. UWP アプリのホームページで、一部の HTML を編集します。
+5. UWP アプリのホーム ページで、いくつかの HTML を編集します。
 
-7. **[Windows アプリケーションの更新]** ボタンをクリックします。次のように表示されます。 [ ![Windows アプリケーションの更新] ボタン](../debugger/media/js_refresh.png "JS_Refresh")。 (または F4 キーを押します)。
+7. 次のような **[Windows アプリの更新]** ボタンをクリックします: ![[Windows アプリの更新] ボタン](../debugger/media/js_refresh.png "JS_Refresh") (または F4 キーを押します)。
 
-8. アプリに切り替えます。 アプリが再読み込みされ、更新された HTML がアプリのレンダリングに使用されます。
+8. アプリに切り替えます。 アプリが再読み込みされ、更新された HTML を使用してアプリがレンダリングされます。
 
 ## <a name="see-also"></a>関連項目
-- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

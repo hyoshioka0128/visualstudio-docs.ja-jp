@@ -1,5 +1,5 @@
 ---
-title: '方法: デバッガー設定を指定する |Microsoft Docs'
+title: '方法: デバッガー設定を指定する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732710"
 ---
-# <a name="how-to-specify-debugger-settings"></a>方法 : デバッガー設定を指定する
+# <a name="how-to-specify-debugger-settings"></a>方法: デバッガー設定を指定する
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、変数の表示方法、特定の警告を表示するかどうか、ブレークポイントの設定方法、実行中のプログラムを中断した場合の影響など、デバッガーの動作のさまざまな設定を指定できます。 デバッガーの設定は **[オプション]** ダイアログ ボックスで指定します。
 
 ### <a name="to-set-debugger-options"></a>デバッガー オプションを設定するには

@@ -1,5 +1,5 @@
 ---
-title: 実行時エラー報告関数を記述する |Microsoft Docs
+title: ランタイム エラー レポート関数を記述する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731808"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>方法 : ランタイム エラー レポート関数を記述する (C++)
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>方法: ランタイム エラー レポート関数を記述する (C++)
 ランタイム エラーのカスタム レポート関数には、`_CrtDbgReportW` と同じ宣言を使用する必要があります。 デバッガーへの戻り値は 1 です。
 
 次の例は、カスタム レポート関数の定義方法を示しています。
@@ -62,7 +62,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```
 
 ## <a name="example"></a>例
-次の例は、より複雑なカスタム レポート関数を示しています。 この例では、switch ステートメントによって、各種のエラーが `reportType` の `_CrtDbgReportW` パラメーターの定義に従って処理されます。 `_CrtDbgReportW` を置き換えるため、`_CrtSetReportMode` は使用できません。 関数では、出力を処理する必要があります。 この関数の最初の可変個の引数には、ランタイム エラー番号を使用します。 詳細については、「 [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)」を参照してください。
+次の例は、より複雑なカスタム レポート関数を示しています。 この例では、switch ステートメントによって、各種のエラーが `reportType` の `_CrtDbgReportW` パラメーターの定義に従って処理されます。 `_CrtDbgReportW` を置き換えるため、`_CrtSetReportMode` は使用できません。 関数では、出力を処理する必要があります。 この関数の最初の可変個の引数には、ランタイム エラー番号を使用します。 詳細については、「[_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)」を参照してください。
 
 ```cpp
 #include <windows.h>

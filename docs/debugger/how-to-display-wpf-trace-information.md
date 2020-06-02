@@ -1,5 +1,5 @@
 ---
-title: '方法: WPF トレース情報を表示する |Microsoft Docs'
+title: '方法: WPF トレース情報を表示する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733469"
@@ -46,7 +46,7 @@ ms.locfileid: "72733469"
 
      **[データ バインディング]** またはクリックしたカテゴリの横の設定列にドロップダウン リスト コントロールが表示されます。
 
-8. ドロップダウン リストをクリックし、表示するトレース情報の種類として、 **[すべて]** 、 **[重大]** 、 **[エラー]** 、 **[警告]** 、 **[情報]** 、 **[詳細]** 、または **[アクティビティのトレース]** を選択します。
+8. ドロップダウン リストをクリックし、表示するトレース情報の種類を選択します。 **[すべて]** 、 **[重大]** 、 **[エラー]** 、 **[警告]** 、 **[情報]** 、 **[詳細]** 、または **[アクティビティのトレース]** 。
 
      **[重大]** は、重大なイベントのみのトレースを有効にします。
 

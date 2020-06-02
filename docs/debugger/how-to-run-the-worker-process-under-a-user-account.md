@@ -1,5 +1,5 @@
 ---
-title: ユーザーアカウントでワーカープロセスを実行する |Microsoft Docs
+title: ユーザー アカウントでワーカー プロセスを実行する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732815"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>方法 : ユーザー アカウントでワーカー プロセスを実行する
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>方法: ユーザー アカウントでワーカー プロセスを実行する
 ユーザー アカウントを使用して [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセス (aspnet_wp.exe または w3wp.exe) を実行できるようにコンピューターを設定するには、次の手順を実行します。
 
  > [!IMPORTANT]
- > Windows Server 2008 R2 以降では、各アプリケーションプールの id として[Applicationpoolidentity](/iis/manage/configuring-security/application-pool-identities)を使用することをお勧めします。
+ > Windows Server 2008 R2 以降、各アプリケーション プールの ID として [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) を使用することが推奨されます。
 
 ## <a name="procedure"></a>プロシージャ
 
@@ -78,7 +78,7 @@ ms.locfileid: "72732815"
 
     **[ユーザー、コンピューターまたはグループの選択]** ダイアログ ボックスが表示されます。
 
-10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、 **[OK]** をクリックします。 ユーザー名は、「ドメイン名\ユーザー名」の形式で入力する必要があります。
+10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、 **[OK]** をクリックします。 ユーザー名は、次の形式で入力する必要があります: ドメイン名\ユーザー名。
 
 11. **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスで、ユーザーに**フル コントロール**を付与し、 **[OK]** をクリックして **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスを閉じます。
 
@@ -88,4 +88,4 @@ ms.locfileid: "72732815"
 
 ## <a name="see-also"></a>関連項目
 - [ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [ASP.NET のデバッグ : システム要件](../debugger/aspnet-debugging-system-requirements.md)
+- [ASP.NET のデバッグ: システム要件](../debugger/aspnet-debugging-system-requirements.md)

@@ -1,5 +1,5 @@
 ---
-title: '[デバッグの停止中] ダイアログボックス |Microsoft Docs'
+title: '[デバッグ操作を停止しています] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3beefe16f8883eb64d7d0a2641cabf9eb1f702fa
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729656"
@@ -31,7 +31,7 @@ ms.locfileid: "72729656"
 
  プロセスがデタッチし、このダイアログ ボックスが消えるのを待つか、 **[今すぐ停止]** を使って強制的に即時終了します。
 
- **今すぐ停止**このボタンをクリックすると、デバッグセッションがすぐに終了します。 **Stop Now (今すぐ停止**) を使用すると、デバッグ中のプロセスをデタッチするのではなく、終了します。 システム プロセスをデバッグしている場合は、これらのプロセスを **[今すぐ停止]** で終了すると、予想不可能な結果や望ましくない結果になることがあります。
+ **[今すぐ停止]** : デバッグ セッションをすぐに終了する場合は、このボタンをクリックします。 **[今すぐ停止]** を使用すると、デバッグ中のプロセスのデタッチではなく、デバッグ セッションの終了が行われます。 システム プロセスをデバッグしている場合は、これらのプロセスを **[今すぐ停止]** で終了すると、予想不可能な結果や望ましくない結果になることがあります。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

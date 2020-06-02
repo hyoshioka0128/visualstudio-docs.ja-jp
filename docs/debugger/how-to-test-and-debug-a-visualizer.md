@@ -1,5 +1,5 @@
 ---
-title: '方法: ビジュアライザーをテストおよびデバッグする |Microsoft Docs'
+title: '方法: ビジュアライザーをテストしてデバッグする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,15 +19,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a0d2fdcd0685b83f63e9354b96146c1c869b355
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732408"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>方法 : ビジュアライザーをテストおよびデバッグする
+# <a name="how-to-test-and-debug-a-visualizer"></a>方法: ビジュアライザーをテストおよびデバッグする
 ビジュアライザーを記述したら、デバッグとテストを行う必要があります。
 
-テスト方法の 1 つとして、ビジュアライザーを Visual Studio にインストールし、デバッガー ウィンドウから呼び出します。 (「[方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)する」を参照してください)。その場合は、Visual Studio の2番目のインスタンスを使用して、デバッガーの最初のインスタンスで実行されているビジュアライザーをアタッチし、デバッグする必要があります。
+テスト方法の 1 つとして、ビジュアライザーを Visual Studio にインストールし、デバッガー ウィンドウから呼び出します。 (「[方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)」を参照してください。)この方法では、Visual Studio のインスタンスをもう 1 つ使用してビジュアライザーの追加とデバッグを行う必要があります。デバッグ対象のビジュアライザーは、デバッガーの最初のインスタンス内で実行されます。
 
 ビジュアライザーのデバッグをより簡単に行うには、ビジュアライザーをテスト ドライバーから実行します。 ビジュアライザー API では、*ビジュアライザー開発ホスト*と呼ばれるこのようなドライバーを簡単に作成できます。
 
@@ -51,9 +51,9 @@ ms.locfileid: "72732408"
     DebuggerSide.TestShowVisualizer(myString);
     ```
 
-    詳細な例については、「[チュートリアル: ビジュアライザー C#の作成](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)」を参照してください。
+    完全な例については、「[チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [チュートリアル : C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [方法 : ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
+- [チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

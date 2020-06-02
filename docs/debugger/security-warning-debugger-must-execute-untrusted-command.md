@@ -1,5 +1,5 @@
 ---
-title: 'セキュリティ警告: デバッガーは信頼されていないコマンドを実行する必要があります |Microsoft Docs'
+title: セキュリティ警告:デバッガーで信頼されないコマンドを実行する必要があります | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729752"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>セキュリティ警告 : デバッガーは信頼されないコマンドを実行する必要があります
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>セキュリティ警告:デバッガーは信頼されないコマンドを実行する必要があります
 ソース サーバーを使用している場合、この警告ダイアログ ボックスが表示されます。 デバッガーがソース コードを取得するために実行する必要のあるコマンドが、srcsvr.ini ファイルに含まれる、ソース サーバーに対して信頼できるコマンドの一覧に記載されていないことを示します。 このコマンドが有効な場合、srcsvr.ini ファイルに追加できます。 それ以外の場合は、そのコマンドを実行しないようにしてください。 詳細については、[シンボル (.pdb) ファイルとソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事をご覧ください。
 
 ## <a name="message-text"></a>メッセージ テキスト
@@ -33,11 +33,11 @@ ms.locfileid: "72729752"
  **このコマンドを実行しますか。**
 
 ## <a name="uielement-list"></a>UIElement の一覧
- 実行する .pdb ファイルのテキストボックスコマンド。
+ テキスト ボックス: 実行する .pdb ファイルの コマンド。
 
- [実行] コマンドの実行を許可します。
+ 実行: コマンドの実行を許可します。
 
- コマンドの実行を停止し、移行元サーバーからファイルをダウンロードしないでください。
+ 実行しない: コマンドの実行およびソース サーバーからのファイルのダウンロードを停止します。
 
 ## <a name="see-also"></a>関連項目
 - [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
