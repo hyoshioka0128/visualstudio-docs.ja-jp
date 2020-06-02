@@ -1,5 +1,5 @@
 ---
-title: '方法: メモリ内のページを上下に移動する |Microsoft Docs'
+title: '方法: メモリ内で 1 ページずつ上下に移動する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733020"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>方法 : [メモリ] ウィンドウの上下スクロール
+# <a name="how-to-page-up-or-down-in-memory"></a>方法: メモリ内で 1 ページずつ上下に移動する
 
 **[メモリ]** ウィンドウまたは **[逆アセンブル]** ウィンドウでメモリの内容を表示するときに垂直スクロール バーを使用すると、メモリ空間内を上下に移動できます。
 
@@ -48,5 +48,5 @@ ms.locfileid: "72733020"
 
 ## <a name="see-also"></a>関連項目
 - [[メモリ] ウィンドウ](../debugger/memory-windows.md)
-- [方法 : [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)
+- [方法: [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)
 - [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

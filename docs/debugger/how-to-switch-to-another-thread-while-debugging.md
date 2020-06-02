@@ -18,32 +18,32 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 11ad6280ad1213008bbb8ca8f6311ca34231d308
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732444"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>方法: Visual Studio でのデバッグ中に別のスレッドにC#切り替える (、 C++Visual Basic、)
-マルチスレッドアプリケーションをデバッグする場合、いくつかのメソッドのいずれかを使用して、使用していたスレッドから別のスレッドに切り替えることができます。
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>方法: Visual Studio でのデバッグ中に別のスレッドに切り替える (C#、Visual Basic、C++)
+マルチスレッド アプリケーションをデバッグするとき、いくつかある方法のうちいずれかを使用して、現在作業中のスレッドから別のスレッドに切り替えることができます。
 
 > [!NOTE]
-> スレッドの実行順序を制御する場合は、[スレッドの凍結と凍結](../debugger/get-started-debugging-multithreaded-apps.md)解除を行う必要があります。
+> スレッドの実行順序を制御する場合は、[スレッドの凍結と凍結解除](../debugger/get-started-debugging-multithreaded-apps.md)を行う必要があります。
 
-コードエディターおよびさまざまなマルチスレッドデバッグウィンドウでスレッドを調べると、黄色の矢印は現在のスレッドを示します。 尾が付いた緑色の矢印は、現在のスレッドが現在のデバッガーコンテキストを持っていることを示します。
+コード エディターと複数のマルチスレッド デバッグ ウィンドウでスレッドを調べる場合、黄色の矢印で現在のスレッドが示されます。 巻いた尾の付いた緑色の矢印は、現在のスレッド以外のスレッドに現在のデバッガー コンテキストがあることを示しています。
 
-### <a name="to-switch-to-any-thread-that-appears"></a>表示される任意のスレッドに切り替えるには
+### <a name="to-switch-to-any-thread-that-appears"></a>表示されている任意のスレッドに切り替えるには
 
-- **[スレッド]** ウィンドウまたは **[並列ウォッチ]** ウィンドウで、スレッドをダブルクリックします。
+- **[スレッド]** または **[並列ウォッチ]** ウィンドウで、スレッドをダブルクリックします。
 
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>ソース ウィンドウでスレッドを切り替えるには
 
-- 左側の余白で、スレッドマーカーアイコン![スレッドマーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")を右クリックし、 **[切り替え先]** をポイントして、切り替え先のスレッドの名前をクリックします。 ショートカット メニューには、その場所にあるスレッドのみが表示されます。
+- 左端の余白で、スレッド マーカー アイコン ![スレッド マーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker") を右クリックし、 **[切り替え先]** をポイントし、切り替え先のスレッドの名前をクリックします。 ショートカット メニューには、その場所にあるスレッドのみが表示されます。
 
-     スレッドマーカーが表示されない場合は、 **[スレッド]** ウィンドウ内を右クリックし、 **[ソースにスレッドを表示]** する が選択されていることを確認します。
+     スレッド マーカーが表示されない場合は、 **[スレッド]** ウィンドウを右クリックし、 **[ソースのスレッドを表示する]** が選択されていることを確認します。
 
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>[デバッグの場所] ツール バーでスレッドを切り替えるには
 
-1. **[デバッグの場所]** ツールバーで、 **[スレッド]** ボックスの一覧をクリックします。
+1. **[デバッグの場所]** ツール バーで、**スレッド**の一覧をクリックします。
 
 2. 一覧で、切り替え先のスレッドをクリックします。
 

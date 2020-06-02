@@ -1,5 +1,5 @@
 ---
-title: デバッガーでの GPU スレッドの表示 |Microsoft Docs
+title: デバッガーでの GPU スレッドの表示 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,19 +20,19 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732085"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>方法: GPU スレッドウィンドウを使用する (C++)
-GPU スレッド ウィンドウでは、デバッグ中のアプリケーション内の GPU 上で実行されているスレッドを調べて操作できます。 GPU で実行されるアプリケーションの詳細については、「 [ C++ AMP の概要](/cpp/parallel/amp/cpp-amp-overview)」を参照してください。
+# <a name="how-to-use-the-gpu-threads-window-c"></a>方法: GPU スレッド ウィンドウを使用する (C++)
+GPU スレッド ウィンドウでは、デバッグ中のアプリケーション内の GPU 上で実行されているスレッドを調べて操作できます。 GPU 上で実行されるアプリケーションの詳細については、「[C++ AMP の概要](/cpp/parallel/amp/cpp-amp-overview)」を参照してください。
 
  GPU スレッド ウィンドウには、すべての列で同じ値を持つ一連の GPU スレッドを各行が表すテーブルが表示されます。 列内の項目を並べ替え、順序変更、削除、およびグループ化することができます。 GPU スレッド ウィンドウから、スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 GPU スレッド ウィンドウには次の列が表示されます。
 
 - フラグ列。特に注意する必要のあるスレッドをマークできます。
 
-- 現在のスレッド列。黄色の矢印は、現在のスレッドを示します。
+- 現在のスレッド列。黄色の矢印で現在のスレッドが示されます。
 
 - **[スレッド数]** 列。同じ位置のスレッドの数を表示します。
 
@@ -104,5 +104,5 @@ GPU スレッド ウィンドウでは、デバッグ中のアプリケーショ
 
 ## <a name="see-also"></a>関連項目
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [方法: 並列ウォッチ ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)
+- [方法: [並列ウォッチ] ウィンドウを使用する](../debugger/how-to-use-the-parallel-watch-window.md)
 - [チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

@@ -1,5 +1,5 @@
 ---
-title: '方法: ネイティブランタイムチェックを使用する |Microsoft Docs'
+title: '方法: ネイティブ ランタイム チェックを使用する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -39,13 +39,13 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732153"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>方法 : ネイティブ ランタイム チェックを使用する
-Visual Studio C++プロジェクトでは、ネイティブ[runtime_checks](/cpp/preprocessor/runtime-checks)を使用して、次のような一般的なランタイムエラーをキャッチできます。
+# <a name="how-to-use-native-run-time-checks"></a>方法: ネイティブ ランタイム チェックを使用する
+Visual Studio C++ プロジェクトでは、ネイティブ [runtime_checks](/cpp/preprocessor/runtime-checks) を使用して、次のような一般的なランタイム エラーをキャッチできます。
 
 - スタック ポインターの破損
 

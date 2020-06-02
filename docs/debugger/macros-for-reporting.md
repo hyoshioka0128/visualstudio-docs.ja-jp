@@ -1,5 +1,5 @@
 ---
-title: レポート用マクロ |Microsoft Docs
+title: レポート用マクロ | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,13 +24,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731386"
 ---
 # <a name="macros-for-reporting"></a>レポート用マクロの使用
-デバッグには、CRTDBG.H で定義されている **_RPTn**マクロと **_RPTFn**マクロを使用できます。H を使用して、`printf` ステートメントの使用を置き換えます。 **_Debug**が定義されていない場合、リリースビルドで自動的に消去されるため、 **#ifdef**s で終了する必要はありません。
+デバッグでは、CRTDBG.H に定義されている **_RPTn** マクロと **_RPTFn** マクロで使用される `printf` ステートメントを置き換えることができます。 **_DEBUG** が定義されていないリリース ビルドでは自動的に消滅するため、これらのマクロを **#ifdef** で囲む必要はありません。
 
 |マクロ|説明|
 |-----------|-----------------|
@@ -54,7 +54,7 @@ ms.locfileid: "72731386"
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-特定のアプリケーションでは、C ランタイムライブラリで提供されたマクロが提供しないというデバッグレポートが必要になる場合があります。 このような場合は、独自の要件に合わせて設計されたマクロを記述できます。 たとえば、ヘッダー ファイルの 1 つに、次のような **ALERT_IF2** というマクロを定義するコードを含めることができます。
+特定のアプリケーションでは、C ランタイム ライブラリのマクロで提供されているデバッグ レポートでは不十分な場合があります。 その場合は、独自の要件を満たす専用のマクロを記述できます。 たとえば、ヘッダー ファイルの 1 つに、次のような **ALERT_IF2** というマクロを定義するコードを含めることができます。
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif
 ```
 
- **ALERT_IF2**の1回の呼び出しで、 **printf**コードのすべての関数を実行できます。
+ **ALERT_IF2** への 1 回の呼び出しで、**printf** コードのすべての機能を実行できます。
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- カスタムマクロを簡単に変更して、さまざまな変換先に対してより多くの情報を報告することができます。 この方法は、デバッグ要件の進化に特に役立ちます。
+ カスタム マクロを簡単に変更して、さまざまな変換先に対してより多くの情報を報告することができます。 この方法は、デバッグ要件が発展するときに特に役立ちます。
 
 ## <a name="see-also"></a>関連項目
 - [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)

@@ -1,5 +1,5 @@
 ---
-title: X64 プロセスの混合モードデバッグは、Microsoft.NET Framework 4 以上を使用している場合にのみサポートされます。Microsoft Docs
+title: x64 プロセスの混合モード デバッグは Microsoft.NET Framework 4 以降を使用している場合にのみサポートされます | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731024"
@@ -29,11 +29,11 @@ ms.locfileid: "72731024"
 
 - Microsoft .NET Framework 4 以降を使用するようにプロジェクトを更新する。
 
-     -または-
+     \- または -
 
      マネージド コードとネイティブ コードを個別のデバッガー セッション内でデバッグする。
 
-     -または-
+     \- または -
 
      次の手順に示すように、混合コードを 32 ビット プロセスとしてデバッグする。
 
@@ -55,7 +55,7 @@ ms.locfileid: "72731024"
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- 「 [SQL デバッグ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))のセットアップ」を参照してください。
+- [SQL デバッグの設定](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))に関する記事を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

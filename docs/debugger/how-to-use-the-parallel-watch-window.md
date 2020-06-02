@@ -1,5 +1,5 @@
 ---
-title: 並列スレッドでの変数のウォッチ式の設定 |Microsoft Docs
+title: 並列スレッドの変数のウォッチを設定する | Microsoft Docs
 ms.date: 04/25/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,24 +19,24 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732013"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Visual Studio で並列スレッドの変数のウォッチを設定するC#(、Visual Basic C++、)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Visual Studio で並列スレッドの変数のウォッチを設定する (C#、Visual Basic、C++)
 [並列ウォッチ] ウィンドウには、複数のスレッドで 1 つの式が保持している値を同時に表示できます。 各行は、1 つのアプリケーションで実行中のスレッドを表しますが、スレッドは複数の行に表示される場合があります。 具体的には、各行は関数シグネチャが現在のスタック フレーム上の関数に一致する関数呼び出しを表します。 列内の項目の並べ替え、順序変更、削除、およびグループ化を行うことができます。 スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 **[並列ウォッチ]** ウィンドウには次の列が表示されます。
 
 - フラグ列。特に注意する必要のあるスレッドをマークできます。
 
-- 現在のスレッド列。黄色の矢印は現在のスレッドを示します (尾が付いた緑色の矢印は、現在のスレッドが現在のデバッガーコンテキストを持っていることを示します)。
+- 現在のスレッド列。黄色の矢印で現在のスレッドが示されます (巻いた尾の付いた緑色の矢印は、現在のスレッド以外のスレッドに現在のデバッガー コンテキストがあることを示しています)。
 
 - 構成可能な列。コンピューター、プロセス、タイル、タスク、スレッドを表示できます。
 
   > [!TIP]
-  > **[並列ウォッチ]** ウィンドウにタスク情報を表示するには、最初に **[タスク]** ウィンドウを開く必要があります。
+  > **[並列ウォッチ]** ウィンドウにタスク情報を表示するには、 **[タスク]** ウィンドウを先に開いておく必要があります。
 
-- 空の [ウォッチ式の*追加*] 列。ウォッチ式を入力できます。
+- 空白の "*ウォッチ式の追加*" 列。ウォッチする式を入力できます。
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ ms.locfileid: "72732013"
 
 ### <a name="to-add-a-watch-expression"></a>ウォッチ式を追加するには
 
-- 空の [ウォッチ式の*追加*] 列のいずれかを選択し、ウォッチ式を入力します。
+- 空白の "*ウォッチ式の追加*" 列のいずれかを選択し、ウォッチ式を入力します。
 
 ### <a name="to-flag-or-unflag-a-thread"></a>スレッドのフラグを設定または設定解除するには
 
-- 行の フラグ] 列 (最初の列) を選択するか、スレッドのショートカットメニューを開き、 **[フラグ]** または [フラグ解除 を**選択します**。
+- 行のフラグ列 (最初の列) を選択するか、スレッドのショートカット メニューを開いて **[フラグ設定]** または **[フラグ解除]** をクリックします。
 
 ### <a name="to-display-only-flagged-threads"></a>フラグが設定されたスレッドのみ表示するには
 
-- **[並列ウォッチ]** ウィンドウの左上隅にある フラグが設定されたボタン **[のみを表示]** ボタンをクリックします。
+- **[並列ウォッチ]** ウィンドウの左上隅にある **[フラグが設定されているスレッドのみを表示]** ボタンをクリックします。
 
 ### <a name="to-switch-to-another-thread"></a>別のスレッドに切り替えるには
 
-- [現在のスレッド] 列 (2 番目の列) をダブルクリックします。 (キーボード: 行を選択し、Enter キーを押します)。
+- 現在のスレッド列 (2 番目の列) をダブルクリックします。 (キーボード:行を選択し、Enter キーを押します)。
 
 ### <a name="to-sort-a-column"></a>列を並べ替えるには
 
@@ -86,5 +86,5 @@ ms.locfileid: "72732013"
 
 ## <a name="see-also"></a>関連項目
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [方法: GPU スレッド ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)
+- [方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)
 - [チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

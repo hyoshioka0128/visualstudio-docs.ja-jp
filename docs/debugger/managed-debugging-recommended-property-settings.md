@@ -1,5 +1,5 @@
 ---
-title: のC#推奨されるデバッガープロパティ設定、VB |Microsoft Docs
+title: C#、VB で推奨されるデバッガー プロパティ設定 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 07c63a70de9d633ccd73d1d0d3bd23196d421543
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731372"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>マネージド デバッグ : プロパティの推奨設定
+# <a name="managed-debugging-recommended-property-settings"></a>マネージド デバッグ:プロパティの推奨設定
 一部のプロパティは、すべてのマネージド デバッグ シナリオで同じように設定する必要があります。
 
  プロパティの推奨設定を以下に示します。
@@ -37,7 +37,7 @@ ms.locfileid: "72731372"
 |-----------------------|-----------------|
 |**定数 DEBUG の定義**|C# および F#: チェック ボックスをオンに設定します。 これにより、アプリケーションで Debug クラスを使用できます。|
 |**定数 TRACE の定義**|C# および F#: チェック ボックスをオンに設定します。 これにより、アプリケーションで Trace クラスを使用できます。|
-|**コードの最適化**|C#、F#、および Visual Basic: false に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコードだけに現れるバグが見つかった場合は、この設定を有効にできます。 **[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、コード エディターに表示されるコードとは一致しない可能性があります。 最適化されたコードをデバッグするには、[マイ コードのみ] をオフにする必要があります。 (「[ステップ実行をマイ コードのみに制限する](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)」を参照)。<br /><br /> 詳細については、「デバッグ構成[のC#プロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)」または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)」を参照してください。|
+|**コードの最適化**|C#、F#、および Visual Basic: false に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコードだけに現れるバグが見つかった場合は、この設定を有効にできます。 **[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、コード エディターに表示されるコードとは一致しない可能性があります。 最適化されたコードをデバッグするには、[マイ コードのみ] をオフにする必要があります。 (「[ステップ実行をマイ コードのみに制限する](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)」を参照)。<br /><br /> 詳細については、「[C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)」または「[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)」を参照してください。|
 |**出力パス**|bin\Debug\\ に設定します。|
 |**詳細コンパイル オプション**|Visual Basic のみ。 **[詳細]** をクリックして、次の表に示す詳細なプロパティを設定できるようにします。|
 
@@ -45,7 +45,7 @@ ms.locfileid: "72731372"
 
 |**プロパティ名**|**設定**|
 |-----------------------|-----------------|
-|**最適化を有効にする**|前の表の **コードの最適化** オプションで指定された理由については、false に設定します。|
+|**最適化を有効にする**|上の表の **[コードの最適化]** オプションと同じ理由で false に設定します。|
 |**デバッグ情報の生成**|このチェック ボックスをオンにすると、コンパイル時に /DEBUG フラグが設定され、デバッグを円滑に実行するうえで必要な情報が生成されます。|
 |**定数 DEBUG の定義**|このチェック ボックスをオンにすると、`DEBUG` 定数が定義され、アプリケーションで <xref:System.Diagnostics.Debug> クラスを使用できるようになります。|
 |**定数 TRACE の定義**|このチェック ボックスをオンにすると、`TRACE` 定数が定義され、アプリケーションで <xref:System.Diagnostics.Trace> クラスを使用できるようになります。|

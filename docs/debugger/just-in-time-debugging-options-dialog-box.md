@@ -1,5 +1,5 @@
 ---
-title: '[Just-in-time] ([オプション] ダイアログボックス-[デバッグ])Microsoft Docs'
+title: '[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ]) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,7 +22,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731608"
@@ -43,17 +43,17 @@ ms.locfileid: "72731608"
 ## <a name="associated-warnings"></a>関連する警告
  **[オプション]** ダイアログ ボックスでこのページを開いたときに、次のような警告メッセージが表示される場合があります。
 
- **別のデバッガーが Just-in-time デバッガーとして登録しています。修復するには、Just-in-time デバッグを有効にするか、Visual Studio の修復を実行してください。**
+ **別のデバッガーが Just-In-Time デバッガーとして登録されています。修復するには、Just-In-Time デバッグを有効にするか、または Visual Studio の修復を実行してください。**
 
  このメッセージは、他のデバッガー (古いバージョンの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーなど) が Just-In-Time デバッガーとして設定されている場合に表示されます。
 
  次のメッセージが表示されることもあります。
 
- **Just-in-time デバッグの登録エラーが検出されました。修復するには、Just-in-time デバッグを有効にするか、Visual Studio の修復を実行してください。**
+ **Just-In-Time デバッグの登録エラーが検出されました。修復するには、Just-In-Time デバッグを有効にするか、または Visual Studio の修復を実行してください。**
 
  これらの警告のいずれかが表示されている場合、問題が解決されるまでの間、[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] で Just-In-Time デバッグを行うには管理者特権が必要になります。 この場合、管理者以外の権限で Just-In-Time デバッグを有効にしようとすると、次のメッセージが表示されます。
 
- **アクセスが拒否されました。管理者に Just-in-time デバッグを有効にするか、Visual Studio のインストールを修復してください。**
+ **アクセスが拒否されました。管理者に Just-In-Time デバッグを有効にしてもらうか、または Visual Studio のインストールを修復してください。**
 
 ## <a name="see-also"></a>関連項目
 - [[デバッグ] ([オプション] ダイアログ ボックス)](../debugger/debugging-options-dialog-box.md)

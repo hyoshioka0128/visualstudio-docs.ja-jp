@@ -1,5 +1,5 @@
 ---
-title: 例外の後にシステムコードを調べる |Microsoft Docs
+title: 例外の後にシステム コードを調べる | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 98f3eb98024e20350151904f297f7e7b4d6f1fea
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733381"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>方法 : 例外の後にシステム コードを調べる
+# <a name="how-to-examine-system-code-after-an-exception"></a>方法: 例外の後にシステム コードを調べる
 例外が発生した場合、システム コール内のコードを調べて、例外の原因を判断する必要がある場合があります。 システム コードのシンボルが読み込まれていない場合、または [マイ コードのみ] が有効な場合にこの操作を行う方法を次の手順に示します。
 
 ### <a name="to-examine-system-code-following-an-exception"></a>例外の後にシステム コードを調べるには

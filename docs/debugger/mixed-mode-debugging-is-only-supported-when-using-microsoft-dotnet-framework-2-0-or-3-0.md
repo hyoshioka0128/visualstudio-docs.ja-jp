@@ -1,5 +1,5 @@
 ---
-title: 混合モードのデバッグは、Microsoft .NET Framework 2.0 または 3.0 | を使用する場合にのみサポートされます。Microsoft Docs
+title: 混合モード デバッグは Microsoft .NET Framework 2.0 または 3.0 を使用している場合にのみサポートされます | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730916"
@@ -51,7 +51,7 @@ ms.locfileid: "72730916"
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- 「 [SQL デバッグ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))のセットアップ」を参照してください。
+- [SQL デバッグの設定](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))に関する記事を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

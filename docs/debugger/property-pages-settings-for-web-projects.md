@@ -1,5 +1,5 @@
 ---
-title: Web プロジェクトのプロパティ設定 |Microsoft Docs
+title: Web プロジェクトのプロパティ設定 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730595"
@@ -31,7 +31,7 @@ ms.locfileid: "72730595"
 # <a name="property-pages-settings-for-web-projects"></a>Web プロジェクトのプロパティ ページ設定
 「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明したように、Web サイト デバッグ構成のプロパティ設定は **[プロパティ ページ]** ダイアログ ボックスで変更できます。 次の表は、 **[プロパティ ページ]** ダイアログ ボックスのデバッガー関連の設定の場所を示しています。
 
-### <a name="start-options-category"></a>開始オプションカテゴリ
+### <a name="start-options-category"></a>開始オプションのカテゴリ
 
 | **設定** | **説明** |
 | - | - |
@@ -42,7 +42,7 @@ ms.locfileid: "72730595"
 | **コマンド ライン引数:** | 上で指定したコマンドの引数を指定します。 |
 | **作業ディレクトリ:** | デバッグするプログラムの作業ディレクトリを指定します。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] では、作業ディレクトリはアプリケーションが起動されるディレクトリであり、既定では \bin\debug です。 |
 | **URL の開始** | デバッグする Web アプリケーションの場所を指定します。 |
-| **ページを開かないでください。外部アプリケーションからの要求を待機する** | 外部のアプリケーションからの要求を待つように指示します。 このオプションは、Internet Explorer やその他のアプリケーションを起動しません。 アプリケーションから呼び出されたときにデバッグの準備をするだけです。 |
+| **ページを開かずに外部アプリケーションからの要求を待つ** | 外部のアプリケーションからの要求を待つように指示します。 このオプションは、Internet Explorer やその他のアプリケーションを起動しません。 アプリケーションから呼び出されたときにデバッグの準備をするだけです。 |
 | **サーバー** | 使用するサーバーに関するオプション グループの見出しです。 |
 | **既定 Web サーバーを使用する** | 既定の Web サーバーを使用するように指定します。 |
 | **カスタム サーバーを使用する** | サーバーとして使用するベース URL を入力できます。 |

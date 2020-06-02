@@ -10,26 +10,26 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
 ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72604597"
 ---
-# <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用する場合のセキュリティに関する考慮事項
+# <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用するときのセキュリティに関する考慮事項
 
-このトピックでは、XML エディターまたは XSLT デバッガーを使用するときに理解しておく必要があるセキュリティの問題について説明します。
+このトピックでは、XML エディターや XSLT デバッガーを使用する際に知っておく必要があるセキュリティの問題について説明します。
 
 ## <a name="xml-editor"></a>XML エディター
 
-XML エディターは、Visual Studio のテキストエディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
+XML エディターは、Visual Studio のテキスト エディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
 
-- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンドボックス*化されます。つまり、XSLT スタイルシートが配置されている場所に基づいて制限されたアクセス許可を決定するために、コンピューターのコードアクセスセキュリティポリシーが使用されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
+- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンドボックス化*されています。つまり、コンピューターのコード アクセス セキュリティ ポリシーを使用して、XSLT スタイル シートが置かれている場所に基づいてアクセス許可制限が決定されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
 
 - <xref:System.Xml.Xsl.XslCompiledTransform> クラスは、XSLT を Microsoft Intermediate Language (MSIL) にコンパイルし、実行時の処理速度を高めるために使用されます。
 
-- カタログファイル内の外部の場所を指すスキーマは、XML エディターの初回読み込み時に自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属のカタログファイルには、外部スキーマへのリンクがありません。 ユーザーは、XML エディターがスキーマファイルをダウンロードする前に、外部スキーマへの参照を明示的に追加する必要があります。 HTTP ダウンロードは、XML エディターの **[その他のツールオプション]** ページで無効にすることができます。
+- XML エディターが最初に読み込みを行うときに、カタログ ファイルの外部の場所を指し示すスキーマが自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属するカタログ ファイルには、外部スキーマへのリンクは記述されていません。 XML エディターでスキーマ ファイルをダウンロードする前に、ユーザーは外部スキーマへの参照を明示的に追加する必要があります。 XML エディターの **[Miscellaneous Tools Options (その他のツールのオプション)]** ページで、HTTP のダウンロードを無効にすることができます。
 
-- XML エディターは、<xref:System.Net> クラスを使用してスキーマをダウンロードします。
+- XML エディターでは、<xref:System.Net> クラスを使用してスキーマがダウンロードされます。
 
 ## <a name="xslt-debugger"></a>XSLT デバッガー
 
