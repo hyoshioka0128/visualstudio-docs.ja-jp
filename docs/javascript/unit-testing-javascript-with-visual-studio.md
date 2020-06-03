@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071948"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183107"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
 
@@ -28,9 +28,6 @@ Node.js Tools For Visual Studio を使用すると、いくつかの一般的な
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (このフレームワークは Node.js Tools for Visual Studio に固有です)
-
-> [!WARNING]
-> Tape の内部的な問題のため、現在、Tape でテストを実行することはできません。 [PR #361](https://github.com/substack/tape/pull/361) がマージされている場合、問題は解決されているはずです。
 
 好みのフレームワークがサポートされていない場合、サポートの追加については「[単体テスト フレームワークのサポートを追加する](#addingFramework)」をご覧ください。
 
@@ -63,7 +60,7 @@ describe('Test Suite 1', function() {
 })
 ```
 
-プロジェクトのプロパティで単体テストのオプションを設定していない場合は、**[プロパティ]** ウィンドウの **[テスト フレームワーク]** プロパティが単体テスト ファイルに対する適切なテスト フレームワークに設定されていることを確認する必要があります。 これは、単体テスト ファイル テンプレートによって自動的に行われます。
+プロジェクトのプロパティで単体テストのオプションを設定していない場合は、 **[プロパティ]** ウィンドウの **[テスト フレームワーク]** プロパティが単体テスト ファイルに対する適切なテスト フレームワークに設定されていることを確認する必要があります。 これは、単体テスト ファイル テンプレートによって自動的に行われます。
 
 ![テスト フレームワーク](../javascript/media/UnitTestsFrameworkMocha.png)
 
@@ -99,7 +96,7 @@ describe('Test Suite 1', function() {
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-このコマンドの出力は次のようになります。
+このコマンドでは、次のような出力が表示されます。
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0

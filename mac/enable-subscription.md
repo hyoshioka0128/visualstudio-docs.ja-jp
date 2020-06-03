@@ -3,14 +3,14 @@ title: サブスクリプションを有効にする
 description: この記事では、Microsoft アカウントを使用してサブスクリプションを有効にして、Visual Studio for Mac の機能をロック解除する方法について説明します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 2074207876df78bc6a268db909e5fa190073f9ba
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984040"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183939"
 ---
 # <a name="enable-subscription"></a>サブスクリプションを有効にする
 
@@ -44,6 +44,6 @@ Visual Studio for Mac には、3 つの異なるサブスクリプション レ�
 
 インターネット接続のないマシンのために Visual Studio Enterprise 2019 を購入した場合、ライセンス認証なしで Visual Studio for Mac を引き続き利用できますが、Xamarin Inspector、Xamarin Profiler、組み込みアセンブリといった機能は利用できません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio にサインイン (Windows)](/visualstudio/ide/signing-in-to-visual-studio)

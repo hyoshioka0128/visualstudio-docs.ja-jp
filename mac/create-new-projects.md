@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678895"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183959"
 ---
 # <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
@@ -25,7 +25,7 @@ Visual Studio for Mac では、いくつかの方法で新しいプロジェク�
 
 Visual Studio for Mac が既に開いていてソリューションが読み込まれている場合は、メニューバーに進み、 **[ファイル]、[新しいソリューション]** の順に選択して、新しいソリューションを作成することができます。 この方法で新しいソリューションを作成する場合、既に読み込まれているソリューションは閉じられます。
 
-## <a name="creating-a-new-project-from-a-template"></a>テンプレートからの新規プロジェクトの作成
+## <a name="creating-a-new-project"></a>新規プロジェクトの作成
 
 **[新しいプロジェクト]** ダイアログには、既定では、最近ご使用になったテンプレートが "*使用時刻の新しい*" 順に並べ替えられて表示されます。
 
@@ -51,6 +51,6 @@ Visual Studio for Mac が既に開いていてソリューションが読み込�
 
 既存のプロジェクトを追加することを選択した場合は、ご利用のコンピューター上にある既存のプロジェクトを参照してそれをソリューションに追加できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ソリューションとプロジェクトを作成する (Windows の Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)
