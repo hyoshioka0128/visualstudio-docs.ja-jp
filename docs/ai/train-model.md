@@ -19,7 +19,7 @@ ms.locfileid: "80638772"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI での AI モデルのトレーニング
 
-Batch AI は、Azure 仮想マシン (GPU をサポートする VM を含む) のクラスター上で、データ サイエンティストや AI 研究者が AI およびその他の機械学習モデルをトレーニングすることを可能にする管理されたサービスです。 目的のジョブの要件を記述すると (入力を検索し、出力を格納)、Batch AI が残りの部分を処理します。 Azure Batch AI の詳細については、[こちら](/azure/batch-ai/overview)を参照してください。
+Batch AI は、データ サイエンティストおよび AI 研究者が、Azure 仮想マシン (GPU がサポートされた VM など) のクラスター上で AI やその他の Machine Learning モデルをトレーニングするための管理対象サービスです。 目的のジョブの要件を記述すると (入力を検索し、出力を格納)、Batch AI が残りの部分を処理します。 Azure Batch AI の詳細については、[こちら](/azure/batch-ai/overview)を参照してください。
 
 Azure Batch AI は、Visual Studio Tools for AI に統合されているため、Azure にてトレーニング モデルを動的にスケールアウトすることができます。  [Visual Studio Tools for AI をインストール](installation.md)すれば、Azure Machine Learning サンプル ギャラリーにある事前に定義されたレシピを使用して新しい Python プロジェクトを容易に作成することができます。
 
@@ -55,6 +55,6 @@ Azure Batch AI は、Visual Studio Tools for AI に統合されているため�
 8. <strong>**MNIST プロジェクト**を右クリックし、 **[ジョブの送信]** をクリックします</strong>
 
     ![サンプル ギャラリー](media/train-model/submit-job.png)
-9. 目的の **Azure Batch AI** クラスターを選択し、 **[インポート]** をクリックします。 `AzureBatchAI_TF_MNIST.json` ファイルを選択します。これにより、使用する Docker イメージなど、いくつかの既定値がすぐに入力されます。 その後、 **[送信]** をクリックします。
+9. 目的の **Azure Batch AI** クラスターを選択し、 **[インポート]** をクリックします。 `AzureBatchAI_TF_MNIST.json` ファイルを選択します。これにより、使用する Docker イメージなど、いくつかの既定値がすぐに入力されます。 **[送信]** をクリックします。
 
     ![サンプル ギャラリー](media/train-model/submit-batch.png)

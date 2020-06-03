@@ -91,7 +91,7 @@ MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定�
 
 Unity Project Explorer にはすべての Unity プロジェクト ファイルとディレクトリが、Unity エディターで表示されるのと同じ方法で表示されます。 これは、通常の Visual Studio ソリューション エクスプローラーを使用して Unity スクリプト間を移動するのとは異なります。そこではそれらが Visual Studio によって生成されるプロジェクトとソリューションに編成されます。
 
-- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット: **Alt**+**Shift**+**E**
+- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット:**Alt**+**Shift**+**E**
 
    ![Unity プロジェクト エクスプ ローラー ウィンドウを表示します。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -210,7 +210,7 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
 キーボード ショートカットを使用すると、Visual Studio Tools for Unity の機能に素早くアクセスできます。 使用できるショートカットの概要を次に示します。
 
-|command|ショートカット|シュートカット コマンド名|
+|コマンド|ショートカット|シュートカット コマンド名|
 |-------------|--------------|---------------------------|
 |MonoBehavior ウィザードを開く|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Unity プロジェクト エクスプローラーを開く|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|

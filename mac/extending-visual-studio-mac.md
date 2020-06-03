@@ -100,7 +100,7 @@ CommandItem は、`id` 属性に指定されているコマンドをメニュー
 
 ### <a name="command-handlers"></a>コマンド ハンドラー
 
-`InsertDateHandler` は `CommandHandler` クラスの拡張機能です。 `Update` と `Run` という 2 つのメソッドはオーバーライドされます。 コマンドがメニューに表示される場合、またはキー バインドで実行される場合は常に、`Update` メソッドが照会されます。 info オブジェクトを変更することで、コマンドを無効にしたり、非表示にしたり、配列コマンドを設定したりすることができます。 テキスト情報を挿入する `Update`TextEditor *でアクティブな*ドキュメント*が見つからない場合、* メソッドを使用すると、コマンドが無効になります。
+`InsertDateHandler` は `CommandHandler` クラスの拡張機能です。 `Update` と `Run` という 2 つのメソッドはオーバーライドされます。 コマンドがメニューに表示される場合、またはキー バインドで実行される場合は常に、`Update` メソッドが照会されます。 info オブジェクトを変更することで、コマンドを無効にしたり、非表示にしたり、配列コマンドを設定したりすることができます。 テキスト情報を挿入する *TextEditor* でアクティブな*ドキュメント*が見つからない場合、`Update` メソッドを使用すると、コマンドが無効になります。
 
 ```csharp
 protected override void Update (CommandInfo info)
@@ -182,7 +182,7 @@ Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、�
 
 これらのリソースを利用して理解しておく必要がある主要な概念は、[`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) と [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) です。
 
-* `ITextBuffer` は、時間の経過と共に変更される可能性があるテキストのメモリ内表現です。 `CurrentSnapshot` の `ITextBuffer` プロパティは、バッファ内の現在のコンテンツの "*不変の*" 表現である `ITextSnapshot` インスタンスを返します。 バッファーで編集が行われると、CurrentSnapshot プロパティが最新のバージョンに更新されます。 アナライザーで任意のスレッドのテキスト スナップショットを検査して、その内容が変更されないことを保証できます。
+* `ITextBuffer` は、時間の経過と共に変更される可能性があるテキストのメモリ内表現です。 `ITextBuffer` の `CurrentSnapshot` プロパティは、バッファ内の現在のコンテンツの "*不変の*" 表現である `ITextSnapshot` インスタンスを返します。 バッファーで編集が行われると、CurrentSnapshot プロパティが最新のバージョンに更新されます。 アナライザーで任意のスレッドのテキスト スナップショットを検査して、その内容が変更されないことを保証できます。
 
 * `ITextView` は、エディター コントロールの画面に `ITextBuffer` がどのようにレンダリングされるかの UI 表現です。 それは、`Caret`、`Selection`、およびその他の UI 関連の概念だけではなく、テキスト バッファーへの参照も持っています。
 
@@ -193,6 +193,6 @@ Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、�
 > [!NOTE]
 > 現在、Visual Studio for Mac の機能拡張シナリオを改善するために取り組んでいます。 拡張機能の作成中に追加のヘルプや情報が必要な場合、またはフィードバックを提供したい場合は、「[Visual Studio for Mac Extension Authoring (Visual Studio for Mac の拡張機能の作成)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)」フォームに記入してお知らせください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio 拡張機能の開発 (Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

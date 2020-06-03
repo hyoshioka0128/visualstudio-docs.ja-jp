@@ -21,16 +21,16 @@ Visual Studio Kubernetes ツールを使用すると、Kubernetes を対象と�
 
 このチュートリアルでは、Visual Studio を使用して Kubernetes サポートをプロジェクトに追加し、AKS に発行する方法について説明します。 [Azure Dev Spaces](/azure/dev-spaces/) を使用して AKS で実行されているプロジェクトのデバッグとテストを行うことに関心がある場合は、代わりに [Azure Dev Spaces のチュートリアル](/azure/dev-spaces/get-started-netcore-visualstudio)に進んでください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 この新機能を利用するには、以下が必要です。
 
 ::: moniker range="vs-2017"
-- [ASP.NET および Web 開発](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)ワークロードと共に、最新バージョンの *Visual Studio 2017*。
+- *ASP.NET および Web 開発*ワークロードと共に、最新バージョンの [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。
 - 個別のダウンロードとして入手できる [Visual Studio 用 Kubernetes ツール](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)。
 ::: moniker-end
 ::: moniker range="vs-2019"
-- [[ASP.NET および Web の開発]](https://visualstudio.microsoft.com/downloads) ワークロードを含む *Visual Studio 2019*。
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) と *ASP.NET と Web 開発*ワークロード。
 ::: moniker-end
 - Docker イメージのビルド、ローカルで実行されている Docker コンテナーのデバッグ、または AKS への発行を行う場合は、開発ワークステーション (つまり、Visual Studio を実行する場所) にインストールされている [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows) (Azure Dev Spaces を使用して AKS で Docker コンテナーをビルドおよびデバッグするためには Docker は必要*ありません*)。
 ::: moniker range="vs-2017"
@@ -165,9 +165,9 @@ Visual Studio の開始ウィンドウで、*Kubernetes* を検索し、 **[Kube
 
 ::: moniker-end
 
-お疲れさまでした。 すべての Kubernetes アプリの開発に Visual Studio のすべての機能を使用できるようになりました。
+おめでとうございます! すべての Kubernetes アプリの開発に Visual Studio のすべての機能を使用できるようになりました。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Azure での Kubernetes 開発の詳細については、[AKS のドキュメント](/azure/aks)を参照してください。
 

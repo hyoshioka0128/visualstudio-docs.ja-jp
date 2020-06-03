@@ -26,7 +26,7 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 ## <a name="agile-tools"></a>アジャイル ツール
 
-参照リンク: [アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Azure Boards または TFS (Team Explorer Everywhere など) を使用)
+参照リンク:[アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Azure Boards または TFS (Team Explorer Everywhere など) を使用)
 
 一般的なコメント: すべての計画機能と追跡機能は、プロジェクトの種類とコーディング言語には依存しません。
 
@@ -42,7 +42,7 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 参照リンク: **[アーキテクチャの分析とモデル化](../modeling/analyze-and-model-your-architecture.md)**
 
-一般的なコメント: これらのデザイン機能は、コーディング言語に関係がないか、C# などの .NET 言語と共に使用されますが、オブジェクト階層およびクラスのリレーションシップを含む従来のアプリケーションのパラダイムで動作します。 Unity 内でのゲームの設計には、さまざまなパラダイムが含まれ、たとえばグラフィカル オブジェクト、サウンド、シェーダー、スクリプトなどのリレーションシップがあります。 このため、Visual Studio モデリング ダイアグラム ツールが、Unity プロジェクト全体に特に関連するわけではありません。 C# スクリプト内でのリレーションシップを管理するために使用することもできますが、それは全体の中の一部にすぎません。
+一般的なコメント:これらのデザイン機能は、コーディング言語に関係がないか、C# などの .NET 言語と共に使用されますが、オブジェクト階層およびクラスのリレーションシップを含む従来のアプリケーションのパラダイムで動作します。 Unity 内でのゲームの設計には、さまざまなパラダイムが含まれ、たとえばグラフィカル オブジェクト、サウンド、シェーダー、スクリプトなどのリレーションシップがあります。 このため、Visual Studio モデリング ダイアグラム ツールが、Unity プロジェクト全体に特に関連するわけではありません。 C# スクリプト内でのリレーションシップを管理するために使用することもできますが、それは全体の中の一部にすぎません。
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
@@ -73,7 +73,7 @@ Unity を使ったバージョン管理に関する注意事項:
 
 3. テクスチャやオーディオ ファイルなど、Unity プロジェクトでのバイナリの資産が、大量のストレージを消費することがあります。 Git などのさまざまなソース管理システムは、変更がファイルのごく一部のみに影響する場合でも、すべての変更個所のファイルの一意のコピーを格納します。 これにより、Git リポジトリがいっぱいになる可能性があります。 これに対処するために、Unity 開発者は多くの場合、リポジトリに最終資産のみを追加し、OneDrive、DropBox、git の添付など、資産の作業履歴を保持するために様々な手段を使用しています。 通常このような資産は、ソース コードの変更に伴うバージョン管理を必要としないため、このアプローチが有効です。 また、開発者は、プロジェクト エディターの資産のシリアル化モードを、シーンファイルをバイナリ形式ではなくテキストで保存するためにテキストを強制するよう設定し、これによりソース管理でのマージが可能になります。 詳細については、「[Editor Settings](https://docs.unity3d.com/Manual/class-EditorManager.html)」 (エディターの設定) (Unity ドキュメント) を参照してください。
 
-## <a name="build"></a>Build
+## <a name="build"></a>ビルド
 
 参照リンク: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
@@ -85,20 +85,20 @@ Unity を使ったバージョン管理に関する注意事項:
 |事前スクリプトと事後スクリプトによるビルド定義|はい|Unity のコマンドラインを使用してビルドを実行するカスタムのビルド定義は、ビルド前およびビルド後のスクリプトに対して構成することもできます。|
 |継続的な統合 (ゲート チェックインを含む)|はい|Git としての TFVC へのゲート チェックインのみ、チェックイン モデルではなく、プル要求モデルで機能します。|
 
-## <a name="test"></a>[テスト]
+## <a name="test"></a>テスト
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
 |テストの計画、テスト ケースの作成、およびテスト スイートの編成|はい||
 |手動テスト|はい||
 |テスト マネージャー (テストの記録と再生)|Windows デバイスと Android エミュレーターのみ||
-|コード カバレッジ|該当なし|単体テストとしての該当なしは、Unity と Visual Studio で発生します。以下を参照してください。|
+|コード カバレッジ|N/A|単体テストとしての該当なしは、Unity と Visual Studio で発生します。以下を参照してください。|
 |[コードの単体テスト](../test/unit-test-your-code.md)|Unity 内。Visual Studio 内ではありません。|Unity は、独自の単体テスト フレームワークを [Unity テスト ツール](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store) の一部として提供しています。 単体テストの結果は、Unity 内でレポートされ、Visual Studio 内では表示されません。|
 |[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)|いいえ|コード化された UI テストは、アプリの UI で読み取り可能なコントロールに依存します。Unity アプリケーションは本質的にはグラフィカルであるため、コンテンツはコード化された UI テストのツールで読み取ることはありません。|
 
 ## <a name="improve-code-quality"></a>コード品質の向上
 
-参照リンク: **[コードの品質の向上](../test/improve-code-quality.md)**
+参照リンク: **[コード品質の向上](../test/improve-code-quality.md)**
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
@@ -110,13 +110,13 @@ Unity を使ったバージョン管理に関する注意事項:
 
 ## <a name="release-management"></a>リリース管理
 
-参照リンク: [Azure Pipelines および TFS でのビルドとリリース](/azure/devops/pipelines/overview?view=vsts)
+参照リンク:[Azure Pipelines および TFS でのビルドとリリース](/azure/devops/pipelines/overview?view=vsts)
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
 |リリース プロセスの管理|はい||
 |スクリプトによるサイドローディング用のサーバーへの配置|はい||
-|アプリ ストアへのアップロード|部分的|一部のアプリ ストアに対して、このプロセスを自動化することができる拡張機能が使用できます。 たとえば、[Google Play の拡張機能](https://marketplace.visualstudio.com/VSTS)については、[Azure DevOps Services の拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)を参照してください。|
+|アプリ ストアへのアップロード|Partial|一部のアプリ ストアに対して、このプロセスを自動化することができる拡張機能が使用できます。 たとえば、[Google Play の拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)については、[Azure DevOps Services の拡張機能](https://marketplace.visualstudio.com/VSTS)を参照してください。|
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp による監視
 
