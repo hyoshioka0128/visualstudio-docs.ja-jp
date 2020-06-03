@@ -47,13 +47,13 @@ Linux App Service は、Node.js アプリケーションを実行するために
     Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
-    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、 **[変更]** を選択します。
 
     ![VS インストーラーの Node.js ワークロード](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js ランタイムをインストールしている必要があります。
 
-    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、**[プロパティ]** を選択します)。
+    インストールされていない場合は、LTS バージョンを [Node.js](https://nodejs.org/en/download/) Web サイトからインストールしてください。 一般に、Visual Studio はインストール済みの Node.js ランタイムを自動的に検出します。 インストールされているランタイムが検出されない場合は、プロパティ ページで、インストールされているランタイムを参照するプロジェクトを構成することができます (プロジェクトを作成した後、プロジェクト ノードを右クリックして、 **[プロパティ]** を選択します)。
 
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Azure 内で実行するための Node.js プロジェクトを作成する
 
@@ -62,10 +62,10 @@ Linux App Service は、Node.js アプリケーションを実行するために
 1. 新しい TypeScript Express アプリを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、**[新しい基本の Azure Node.js Express 4 アプリケーション プロジェクトの作成]** (TypeScript) を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、 **[新しい基本の Azure Node.js Express 4 アプリケーション プロジェクトの作成]** (TypeScript) を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[TypeScript]** を展開して、**[Node.js]** を選択します。 真ん中のウィンドウで **[基本の Azure Node.js Express 4 アプリケーション]** を選択し、**[OK]** を選択します。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[TypeScript]** を展開して、 **[Node.js]** を選択します。 真ん中のウィンドウで **[基本の Azure Node.js Express 4 アプリケーション]** を選択し、 **[OK]** を選択します。
 
     ![新しい TypeScript Express アプリを作成する](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -75,7 +75,7 @@ Linux App Service は、Node.js アプリケーションを実行するために
 
 1. **F5** キーを押してアプリをビルドして実行し、すべてが想定どおり実行していることを確認します。
 
-1. **[ファイル]** > **[ソース管理に追加]** を選択して、プロジェクト用にローカル Git リポジトリを作成します。
+1. **[ファイル]**  >  **[ソース管理に追加]** を選択して、プロジェクト用にローカル Git リポジトリを作成します。
 
     この時点で、Express フレームワークを使用する、TypeScript で記述された Node.js アプリが動作するようになり、ローカル ソース管理にチェックインされます。
 
@@ -85,13 +85,13 @@ Linux App Service は、Node.js アプリケーションを実行するために
 
 Visual Studio 用に GitHub を設定するには:
 
-1. **[ツール]** > **[拡張機能と更新プログラム]** メニュー項目を使って、[Visual Studio 向け GitHub 拡張](https://visualstudio.github.com/)がインストールされて有効になっていることを確認します。
+1. **[ツール]**  >  **[拡張機能と更新プログラム]** メニュー項目を使って、[Visual Studio 向け GitHub 拡張](https://visualstudio.github.com/)がインストールされて有効になっていることを確認します。
 
-2. メニューから **[表示]** > **[その他のウィンドウ]** > **[GitHub]** の順に選択します。
+2. メニューから **[表示]**  >  **[その他のウィンドウ]**  >  **[GitHub]** の順に選択します。
 
     [GitHub] ウィンドウが開きます。
 
-3. [GitHub] ウィンドウに **[作業の開始]** ボタンが表示されない場合は、**[ファイル]** > **[ソース管理に追加]** をクリックして、UI が更新されるまで待ちます。
+3. [GitHub] ウィンドウに **[作業の開始]** ボタンが表示されない場合は、 **[ファイル]**  >  **[ソース管理に追加]** をクリックして、UI が更新されるまで待ちます。
 
     ![[GitHub] ウィンドウを開く](../javascript/media/azure-github-get-started.png)
 
@@ -101,7 +101,7 @@ Visual Studio 用に GitHub を設定するには:
 
     ![GitHub リポジトリの設定](../javascript/media/azure-github-publish.png)
 
-5. 発行する新しいリポジトリのフィールドを入力して、**[発行]** をクリックします。
+5. 発行する新しいリポジトリのフィールドを入力して、 **[発行]** をクリックします。
 
     しばらくすると、"リポジトリが正常に作成されました" と表示されます。
 
@@ -111,11 +111,11 @@ Visual Studio 用に GitHub を設定するには:
 
 1. [Azure Portal](https://portal.azure.com) にサインインします。
 
-2. 左側のサービスの一覧から **[App Services]** を選び、**[追加]** をクリックします。
+2. 左側のサービスの一覧から **[App Services]** を選び、 **[追加]** をクリックします。
 
 3. 必要な場合は、新しいアプリをホストするための新しいリソース グループと App Service プランを作成します。
 
-4. 次の図に示すように、**[OS]** を **[Linux]** に設定し、**[ランタイム スタック]** を必要な Node.js のバージョンに設定します。
+4. 次の図に示すように、 **[OS]** を **[Linux]** に設定し、 **[ランタイム スタック]** を必要な Node.js のバージョンに設定します。
 
     ![Linux App Service を作成する](../javascript/media/azure-create-appservice-annotated.png)
 
@@ -123,7 +123,7 @@ Visual Studio 用に GitHub を設定するには:
 
     デプロイに数分かかる場合があります。
 
-6. デプロイが済んだ後、**[アプリケーション設定]** セクションに移動し、`SCM_SCRIPT_GENERATOR_ARGS` という名前と `--node` という値で設定を追加します。
+6. デプロイが済んだ後、 **[アプリケーション設定]** セクションに移動し、`SCM_SCRIPT_GENERATOR_ARGS` という名前と `--node` という値で設定を追加します。
 
     ![アプリケーションの設定](../javascript/media/azure-script-generator-args.png)
 
@@ -132,15 +132,15 @@ Visual Studio 用に GitHub を設定するには:
 
 7. **[アプリケーションの設定]** で、名前が `WEBSITE_NODE_DEFAULT_VERSION` で値が `8.9.0` の別の設定を追加します。
 
-8. 展開後、App Service を開き、**[デプロイ オプション]** を選択します。
+8. 展開後、App Service を開き、 **[デプロイ オプション]** を選択します。
 
     ![配置オプション](../javascript/media/azure-deployment-options.png)
 
-9. **[ソースの選択]** をクリックし、**[GitHub]** を選んで、必要なアクセス許可を構成します。
+9. **[ソースの選択]** をクリックし、 **[GitHub]** を選んで、必要なアクセス許可を構成します。
 
     ![GitHub のアクセス許可](../javascript/media/azure-choose-source.png)
 
-10. 発行するリポジトリとブランチを選択して、**[OK]** を選択します。
+10. 発行するリポジトリとブランチを選択して、 **[OK]** を選択します。
 
     ![Linux App Service に発行する](../javascript/media/azure-repo-and-branch.png)
 
@@ -175,7 +175,7 @@ Visual Studio 用に GitHub を設定するには:
 * node.exe が強制終了 (つまり、ハンドルされない例外の発生) を処理する場合、コンテナーは再起動します。
 * コンテナーは開始時に、さまざまなヒューリスティックを実行して、Node.js プロセスを開始する方法を明らかにします。 実装の詳細は、[generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js) で見ることができます。
 * SSH を使って実行中のコンテナーに接続して調査できます。 これは、Azure portal を使って簡単に行うことができます。 App Service を選択し、ツールの一覧で **[開発ツール]** セクションの **[SSH]** まで下にスクロールします。
-* トラブルシューティングに役立てるには、App Service の **[診断ログ]** 設定に移動し、**[Docker コンテナー ログ]** の設定を **[オフ]** から **[ファイル システム]** に変更します。 ログは、*/home/LogFiles/*_docker.log* の下のコンテナーに作成され、SSH または FTP(S) を使ってボックスでアクセスできます。
+* トラブルシューティングに役立てるには、App Service の **[診断ログ]** 設定に移動し、 **[Docker コンテナー ログ]** の設定を **[オフ]** から **[ファイル システム]** に変更します。 ログは、 */home/LogFiles/* _docker.log* の下のコンテナーに作成され、SSH または FTP(S) を使ってボックスでアクセスできます。
 * 既定で割り当てられる *.azurewebsites.net という URL の代わりに、カスタム ドメイン名をサイトに割り当てることができます。 詳細については、[カスタム ドメインのマップ](/azure/app-service/app-service-web-tutorial-custom-domain)に関するページをご覧ください。
 * 運用環境に移行する前にステージング サイトにデプロイしてさらにテストを行うのがベスト プラクティスです。 その構成方法の詳細については、[ステージング環境の作成](/azure/app-service/web-sites-staged-publishing)に関するページをご覧ください。
 * よくあるご質問については、[Linux での App Service の FAQ](/azure/app-service/containers/app-service-linux-faq) に関するページをご覧ください。
