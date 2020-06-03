@@ -7,16 +7,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d147397a168bb78a31a8fbe6929d6c2184d080
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386688"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180494"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>FIPS 140-2 承認の操作モードを Visual Studio でサポート
 
-[バージョン 16.4](/visualstudio/releases/2019/release-notes-v16.4/) 以降の Visual Studio 2019 では、Federal Information Processing Standard (FIPS) Publication 140-2 で承認されている Windows、Azure、.NET の操作モードがサポートされています。 また、[バージョン 16.5](/visualstudio/releases/2019/release-notes-v16.5/) の Visual Studio では、[リモート Linux システムを対象とする C++ アプリケーション](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)を開発するとき、FIPS 140-2 承認の操作モードがサポートされるようになりました。
+[バージョン 16.4](/visualstudio/releases/2019/release-notes-v16.4/) 以降の Visual Studio 2019 では、Federal Information Processing Standard (FIPS) Publication 140-2 で承認されている Windows、Azure、.NET の操作モードがサポートされています。 また、[バージョン 16.5](/visualstudio/releases/2019/release-notes-archive-v16.5) の Visual Studio では、[リモート Linux システムを対象とする C++ アプリケーション](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)を開発するとき、FIPS 140-2 承認の操作モードがサポートされるようになりました。
 
 Visual Studio のために FIPS 140-2 承認の操作モードを構成するには、[.NET Framework 4.8 をインストールし](https://dotnet.microsoft.com/download/dotnet-framework/net48)、 **[システム暗号化: 暗号化、ハッシュ、署名のための FIPS 準拠アルゴリズムを使う]** というグループ ポリシー設定を有効にします。
 

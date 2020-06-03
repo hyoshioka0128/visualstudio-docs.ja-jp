@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを使用して Microsoft Windows Virtual Desktop を活用する方法について説明します
-ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649732"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183588"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>サブスクリプション内で Windows Virtual Desktop にアクセスする 
 Visual Studio のサブスクライバーは、Microsoft Windows Virtual Desktop サービスで Azure Dev/Test の個人クレジットを使用できるようになりました。  
@@ -39,7 +39,7 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 
 ## <a name="get-started"></a>作業開始 
 すべての前提条件が満たされたら、いくつかのアクションを実行して、実装を適切な場所に配置します。  使用を開始するには、次のチュートリアルをご覧ください。
-- [Windows Virtual Desktop テナントを作成する](https://docs.microsoft.com/azure/virtual-desktop/tenant-setup-azure-active-directory)
+- [Windows Virtual Desktop テナントを作成する](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - Azure portal を使用して[ホスト プールを作成する](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace)
 - Windows Virtual Desktop の[アプリ グループを管理する](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups)
 
