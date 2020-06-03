@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109482"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183237"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure 上の Visual Studio イメージ
 
@@ -37,10 +37,10 @@ ms.locfileid: "82109482"
 | リリース バージョン                                                                                                                                          | エディション              |    製品バージョン    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
 | [Visual Studio 2019:最新版 (バージョン 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise、Community | バージョン 16.5.4    |
-| [Visual Studio 2019:RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | エンタープライズ            | バージョン 16.0.13    |
-| [Visual Studio 2017:最新 (バージョン 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise、Community | バージョン 15.9.22   |
-| [Visual Studio 2017:RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise、Community | バージョン 15.0.28   |
-| [Visual Studio 2015:最新 (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise、Community | バージョン 14.0.25431.01 |
+| Visual Studio 2019:RTW                         | エンタープライズ            | バージョン 16.0.13    |
+| Visual Studio 2017:最新 (バージョン 15.9)           | Enterprise、Community | バージョン 15.9.22   |
+| Visual Studio 2017:RTW                             | Enterprise、Community | バージョン 15.0.28   |
+| Visual Studio 2015:最新 (更新プログラム 3)              | Enterprise、Community | バージョン 14.0.25431.01 |
 
 > [!NOTE]
 > Microsoft のサービス ポリシーに従って、Visual Studio 2015 の最初にリリースされた (RTW) バージョンは、サービスの有効期限が切れています。 Visual Studio 2015 製品ラインに提供されるバージョンとして残っているのは Visual Studio 2015 Update 3 だけです。

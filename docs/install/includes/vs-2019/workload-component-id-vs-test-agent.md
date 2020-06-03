@@ -6,26 +6,26 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: d600b5c3fc48423f8bdb1824cb04a20dcbaae08d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cb04a1bd7bb44dc6dc0bb04be6cc8603e4a2597b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437539"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184310"
 ---
 ## <a name="test-agent"></a>Test Agent
 
 **ID:** Microsoft.VisualStudio.Workload.TestAgent
 
-**説明:** 自動テストとロード テストのリモートでの実行をサポートします
+**説明:** 自動テストとロード テストのリモートでの実行をサポートします。
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | Name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent のコア機能 | 16.0.28315.86 | 必須
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent のコア
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | Name | Version
+コンポーネント ID | 名前 | バージョン
 --- | --- | ---
-該当なし | 該当なし | 該当なし
+N/A | N/A | N/A

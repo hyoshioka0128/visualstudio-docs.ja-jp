@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの作成
+title: プロジェクトを作成する
 description: Azure Machine Learning ギャラリーのサンプルを使ってプロジェクトを作成します
 keywords: AI, Visual Studio, Azure Machine Learning
 author: jillre
@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: f5ff05fa7c8fe68d7c09f4881efc249a74959b2b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638684"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180221"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio で Azure Machine Learning ギャラリーから AI プロジェクトを作成する
 
@@ -24,7 +24,7 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 [Visual Studio Tools for AI をインストール](installation.md)すれば、Azure Machine Learning サンプル ギャラリーにある事前に定義されたレシピを使用して新しい Python プロジェクトを容易に作成することができます。
 
 > [!NOTE]
-> Azure Machine Learning ワークベンチをインストールする必要があります。 インストールについては、「[Azure Machine Learning のインストールに関するクイックスタート](/azure/machine-learning/preview/quickstart-installation)」をご覧ください
+> Azure Machine Learning ワークベンチをインストールする必要があります。 
 
 1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、 **[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー**を開きます
 
@@ -32,7 +32,7 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 
 2. サーバー エクスプローラーで **[Azure Machine Learning]** ノードを右クリックし、 **[ログイン]** を選択して指示に従い、Azure Machine Learning サブスクリプションにサインインします。
 
-    ![ログイン (login)](media/create-project-gallery/azureml-login.png)
+    ![ログイン](media/create-project-gallery/azureml-login.png)
 
 3. **[AI Tools]\(AI Tools\)、[Azure Machine Learning Sample Gallery]\(Azure Machine Learning サンプル ギャラリー\)** の順に選びます。
 
@@ -40,13 +40,13 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 
 4. このクイック スタートでは "**MNIST using TensorFlow**" サンプルを選び、 **[インストール]** をクリックします。 次の内容を指定します。
 
-   - **リソース グループ**: メタデータを格納する Azure リソース グループ
-   - **アカウント**: Azure Machine Learning の実験アカウント
-   - **ワークスペース**: Azure Machine Learning のワークスペース
-   - **プロジェクトの種類**: 機械学習のフレームワーク。 この例では、 **[TensorFlow]** を選びます。
+   - **リソース グループ**:メタデータを格納する Azure リソース グループ
+   - **アカウント**:Azure Machine Learning の実験アカウント
+   - **ワークスペース**:Azure Machine Learning のワークスペース
+   - **プロジェクトの種類**:機械学習のフレームワーク。 この例では、 **[TensorFlow]** を選びます。
    - **ソリューションに追加**: 現在の Visual Studio ソリューションに追加するか、新しいソリューションを作成して開くかを指定します。
-   - **プロジェクトのパス**: コードを保存する場所
-   - **プロジェクト名**: 「**TensorFlowMNIST**」と入力します。
+   - **プロジェクトのパス**:コードを保存する場所
+   - **プロジェクト名**:「**TensorFlowMNIST**」と入力します。
 
    ![Python アプリケーション テンプレートを使用した結果のプロジェクト](media/create-project-gallery/new-AzureSampleProject.png)
 

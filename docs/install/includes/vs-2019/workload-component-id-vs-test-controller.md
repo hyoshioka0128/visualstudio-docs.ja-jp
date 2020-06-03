@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3b1a3cc6d1e9a7bac24a9a64845bdb43e4a6739a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3708d9a599fdd2ec3102647827529a73379c1d23
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437459"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183127"
 ---
 ## <a name="test-controller"></a>Test Controller
 
@@ -25,7 +25,7 @@ ms.locfileid: "79437459"
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 
-コンポーネント ID | Name | Version | 依存関係の種類
+コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller のコア機能 | 16.0.28315.86 | 必須
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller
 
 以下のコンポーネントはどのワークロードにも含まれていませんが、個別のコンポーネントとして選択できます。
 
-コンポーネント ID | Name | Version
+コンポーネント ID | 名前 | バージョン
 --- | --- | ---
-該当なし | 該当なし | 該当なし
+N/A | N/A | N/A
