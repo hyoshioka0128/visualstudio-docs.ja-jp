@@ -3,14 +3,14 @@ title: Visual Studio for Mac にサインインする
 description: Visual Studio for Mac にサインインする方法
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d5bfb81264c3503643c51c621cad29df44acef92
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75844260"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173195"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
 
@@ -51,7 +51,7 @@ Visual Studio for Mac では、個人アカウントに複数のアカウント�
 
 ユーザー アカウントを追加するには、Visual Studio for Mac で **[Visual Studio]、[アカウント]** メニューの順に選択します。 **[追加]...** ボタンをクリックし、アカウントの資格情報を追加入力します。
 
-![アカウントの管理](media/signing-in-image15.png)
+![アカウントの管理](media/user-accounts-login.png)
 
 ## <a name="view-or-change-your-profile-information"></a>ユーザーのプロファイル情報を表示または変更する
 
