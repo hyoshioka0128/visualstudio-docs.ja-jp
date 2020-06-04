@@ -1,5 +1,5 @@
 ---
-title: Windows API 関数のデバッグ |Microsoft Docs
+title: Windows API 関数をデバッグする |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734349"
@@ -40,7 +40,7 @@ NT シンボルを読み込んだ状態で Windows API 関数をデバッグす�
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     装飾名を取得するには、「[装飾名の表示](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)」を参照してください。
+     装飾名を取得するには、「[装飾名の表示](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)」を参照してください 。
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

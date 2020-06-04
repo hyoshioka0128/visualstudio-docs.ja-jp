@@ -1,5 +1,5 @@
 ---
-title: マネージコードのデバッグ |Microsoft Docs
+title: マネージド コードのデバッグ | Microsoft Docs
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188416"
 ---
-# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>マネージコードのデバッグC#(、Visual Basic F#、 C++/cli)
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>マネージド コードのデバッグ (C#、Visual Basic、F#、C++/CLI)
 
-このセクションでは、マネージアプリケーションの一般的なデバッグの問題と手法、およびC# C++Visual Basic、、/cli などの共通言語ランタイムを対象とする言語で記述されたアプリケーションについて説明します。 ここでは、高度な手法について説明します。 [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
+ここでは、マネージド アプリケーションに共通するデバッグの問題と手法について説明します。マネージド アプリケーションは、Visual Basic、C#、C++/CLI など、共通言語ランタイムをターゲットにした言語で記述されたアプリケーションです。 ここでは、高度な手法について説明します。 [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -38,7 +38,7 @@ ms.locfileid: "73188416"
 [Visual Basic の Stop ステートメント](../debugger/stop-statements-in-visual-basic.md)\
 ブレークポイントの設定の代わりに使用できる `Stop` ステートメントについて説明します。 サンプル コードを示し、`Stop` ステートメントと `End` ステートメントの比較、および `Stop` ステートメントと `Assert` ステートメントの比較を行います。
 
-[チュートリアル : Windows フォームのデバッグ](../debugger/walkthrough-debugging-a-windows-form.md)\
+[チュートリアル: Windows フォームのデバッグ](../debugger/walkthrough-debugging-a-windows-form.md)\
 Windows フォームを作成し、そのフォームをデバッグする方法を順をおって説明します。 マネージド Windows アプリケーションの標準コンポーネントである Windows フォームは、最も一般的なマネージド アプリケーションの 1 つです。 このチュートリアルでは Visual C# と Visual Basic を使用しますが、C++ を使って Windows フォームを作成する場合と方法は似ています。
 
 [OnStart メソッドのデバッグ](../debugger/how-to-debug-the-onstart-method.md)\
@@ -81,7 +81,7 @@ Windows サービス アプリケーションのデバッグに関する注意�
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: デザイン時にカスタム Windows フォームコントロールをデバッグする](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [チュートリアル: カスタム Windows フォーム コントロールのデザイン時のデバッグ](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

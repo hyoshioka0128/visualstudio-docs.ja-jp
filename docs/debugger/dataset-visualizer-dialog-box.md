@@ -1,5 +1,5 @@
 ---
-title: '[データセットビジュアライザー] ダイアログボックス |Microsoft Docs'
+title: '[DataSet ビジュアライザー] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745597"
@@ -32,7 +32,7 @@ DataSet ビジュアライザーを使用すると、DataSet、DataTable、DataV
  このビジュアライザー内でオブジェクトに変更を加えることができます。 変更は行をコミットするとすぐに保存されます。
 
 ## <a name="uielement-list"></a>UIElement の一覧
- [テーブル] このドロップダウンリストボックスを使用して、視覚化するデータセット内のテーブルを選択します。
+ [テーブル] このドロップダウン リスト ボックスを使用して、視覚化するデータセット内のテーブルを選択します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: 'エラー: IA64 プロセスの混合モードデバッグはサポートされていません |Microsoft Docs'
+title: エラー :IA64 プロセスの混合モードのデバッグはサポートされていません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0bddbb1572bd0258eae2052eb34dfa3d0d67a134
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737627"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>エラー: IA64 プロセスの混合モードのデバッグはサポートされていません
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>エラー :IA64 プロセスの混合モードのデバッグはサポートされていません。
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーは、Itanium ベースのプロセスでのネイティブ コードとマネージド コードの混合のデバッグをサポートしません。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには

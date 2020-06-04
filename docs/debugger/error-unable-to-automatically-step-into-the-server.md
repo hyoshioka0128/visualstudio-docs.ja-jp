@@ -1,5 +1,5 @@
 ---
-title: 'エラー: サーバーに自動的にステップインできません |Microsoft Docs'
+title: エラー :サーバーに自動的にステップ インできません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 34b298b299bb4911bfe64b362d94c3e90ecfa585
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736874"
 ---
-# <a name="error-unable-to-automatically-step-into-the-server"></a>エラー : サーバーに自動的にステップ インできません。
+# <a name="error-unable-to-automatically-step-into-the-server"></a>エラー :サーバーに自動的にステップ インできません
 このエラーは次のように表示されます。
 
  サーバーに自動的にステップ インできません。 デバッガーは、リモート プロシージャが実行される前に通知されませんでした。

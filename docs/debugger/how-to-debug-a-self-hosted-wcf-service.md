@@ -1,5 +1,5 @@
 ---
-title: '方法: 自己ホスト型 WCF サービスをデバッグする |Microsoft Docs'
+title: '方法: セルフホステッド WCF サービスをデバッグする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,21 +19,21 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 12654a6aa1abb34c9813e8d29c7608814021a3f0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733979"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>方法 : セルフホストされている WCF サービスをデバッグする
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>方法: セルフホストされている WCF サービスをデバッグする
 *セルフホストされているサービス*とは、IIS 内部で実行されていない WCF サービス、WCF サービス ホスト、または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーです。 セルフホストされている WCF をデバッグする最も簡単な方法は、 **[デバッグ]** メニューの **[デバッグ開始]** をクリックしたときにクライアントとサーバーの両方を起動するよう、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を構成することです。
 
  NT サービスなど、この方法で起動できないプロセス内部で WCF サービスがセルフホストされている場合、この手法は使用できません。 代わりに、次の方法のいずれかを使用できます。
 
-- ホスト プロセスにデバッガーを手動でアタッチします。 詳細については、「[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。
+- ホスト プロセスにデバッガーを手動でアタッチします。 詳細については、[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)に関するページを参照してください。
 
      または
 
-- クライアントでデバッグを開始し、次にサービスへの呼び出しにステップ インします。 これを行うには、app.config ファイルでデバッグを有効にする必要があります。 詳細については、「 [WCF デバッグに関する制限事項](../debugger/limitations-on-wcf-debugging.md)」を参照してください。
+- クライアントでデバッグを開始し、次にサービスへの呼び出しにステップ インします。 これを行うには、app.config ファイルでデバッグを有効にする必要があります。 詳細については、「[WCF デバッグの制約](../debugger/limitations-on-wcf-debugging.md)」を参照してください。
 
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Visual Studio からクライアントとホストの両方を起動するには
 
@@ -56,4 +56,4 @@ ms.locfileid: "72733979"
 ## <a name="see-also"></a>関連項目
 - [WCF サービスのデバッグ](../debugger/debugging-wcf-services.md)
 - [WCF デバッグの制約](../debugger/limitations-on-wcf-debugging.md)
-- [方法 : WCF サービスにステップ インする](../debugger/how-to-step-into-wcf-services.md)
+- [方法: WCF サービスにステップインする](../debugger/how-to-step-into-wcf-services.md)

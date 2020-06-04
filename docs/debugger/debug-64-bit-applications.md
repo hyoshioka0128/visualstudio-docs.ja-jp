@@ -1,5 +1,5 @@
 ---
-title: 64ビットアプリケーションのデバッグ |Microsoft Docs
+title: 64 ビット アプリケーションをデバッグする | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911578"
@@ -37,14 +37,14 @@ ms.locfileid: "72911578"
 
 1. C# コンソール アプリケーションなど、Visual Studio ソリューションを作成します。
 
-2. 構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、「 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)」を参照してください。
+2. 構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、[プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
 
 3. この時点で、64 ビット バージョンのリモート デバッガー (msvsmon.exe) が起動します。 64 ビット構成のソリューションが開いている限り、これが実行されます。
 
 4. デバッグを開始します。 操作は 32 ビット構成と変わりません。 エラーが発生した場合は、以下のトラブルシューティング セクションをご覧ください。
 
 ## <a name="troubleshooting-64-bit-debugging"></a>トラブルシューティング (64 ビット デバッグ)
- "64 ビット デバッグ操作に予想以上に時間がかかっています" というエラーが表示されることがあります。 この場合、Visual Studio は 64 ビット バージョンの msvsmon.exe に要求を送信し、その要求の結果が返されるまでに長い時間がかかっています。
+ 次のようなエラーが表示されることがあります。"64 ビット デバッグ操作に予想以上に時間がかかっています。" この場合、Visual Studio は 64 ビット バージョンの msvsmon.exe に要求を送信し、その要求の結果が返されるまでに長い時間がかかっています。
 
  このエラーの主な原因として次の 2 つがあります。
 

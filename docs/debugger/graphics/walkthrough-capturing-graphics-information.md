@@ -1,5 +1,5 @@
-﻿---
-title: 'チュートリアル: グラフィックス情報のキャプチャ |Microsoft Docs'
+---
+title: 'チュートリアル: グラフィックス情報のキャプチャ | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734726"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>チュートリアル: グラフィックス情報のキャプチャ
+# <a name="walkthrough-capturing-graphics-information"></a>チュートリアル: グラフィックス情報をキャプチャする
 このチュートリアルでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断を使用して、Direct3D アプリケーションから手動でグラフィックス情報をキャプチャする方法を示します。
 
  このチュートリアルでは、次の作業について説明します。
@@ -45,15 +45,15 @@ ms.locfileid: "72734726"
 
 #### <a name="to-capture-graphics-information"></a>グラフィックス情報をキャプチャするには
 
-- グラフィックス診断ツール バーで、 **[キャプチャ]** ボタンをクリックします。 ![[グラフィックスのキャプチャ] ボタンアイコン](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
+- グラフィックス診断ツール バーで、 **[キャプチャ]** ボタンをクリックします。 ![グラフィックス キャプチャ ボタン アイコン](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   -または-
+   \- または -
 
    アプリケーションにフォーカスを置いた状態で、 **PrintScreen**キーを押します。
 
-  フレームに関する情報をキャプチャするたびに、グラフィックス診断は Direct3D イベントおよび関連付けられた状態を記録し、グラフィックス ログにデータを追加します。 グラフィックス ログは、グラフィックス診断のセッションごとに新しく作成されます。 グラフィックスログの詳細については、「[概要](overview-of-visual-studio-graphics-diagnostics.md)」を参照してください。
+  フレームに関する情報をキャプチャするたびに、グラフィックス診断は Direct3D イベントおよび関連付けられた状態を記録し、グラフィックス ログにデータを追加します。 グラフィックス ログは、グラフィックス診断のセッションごとに新しく作成されます。 グラフィックス ログについては、「[概要](overview-of-visual-studio-graphics-diagnostics.md)」をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルでは、手動でグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。
 
 - グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 「[概要](overview-of-visual-studio-graphics-diagnostics.md)」を参照してください。

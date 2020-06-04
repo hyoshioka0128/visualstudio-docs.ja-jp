@@ -1,5 +1,5 @@
 ---
-title: フォアグラウンドアプリのデバッグ中にデバッガーウィンドウを使用する |Microsoft Docs
+title: フォアグラウンド アプリのデバッグ中にデバッガー ウィンドウを使用する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 759d9a6a3beb55bf72a0f41a93cb26c8c15b0c5e
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734056"
@@ -33,8 +33,8 @@ ms.locfileid: "72734056"
 ## <a name="problem-description"></a>問題の説明
  画面の描画時に発生する問題がデバッグの対象です。 この問題を観察するには、プログラムをフォアグラウンドで実行する必要がありますが、そうするとデバッガー ウィンドウにアクセスできなくなります。 どうしたらいいのでしょうか。
 
-## <a name="solution"></a>解決策:
- コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 2 台のコンピューターをセットアップすると、リモート コンピューター上で画面の描画状態を観察しながら、ホスト上でデバッガーを実行できます。 リモートデバッグの詳細については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
+## <a name="solution"></a>ソリューション
+ コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 2 台のコンピューターをセットアップすると、リモート コンピューター上で画面の描画状態を観察しながら、ホスト上でデバッガーを実行できます。 リモート デバッグの詳細については、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

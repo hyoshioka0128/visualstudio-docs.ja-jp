@@ -1,5 +1,5 @@
 ---
-title: 間違ったパラメーター値を渡していることを確認する |Microsoft Docs
+title: 不正なパラメーター値が渡された原因を見つける | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734241"
@@ -33,7 +33,7 @@ ms.locfileid: "72734241"
 ## <a name="problem-description"></a>問題の説明
  関数の 1 つに誤った引数値が渡されていることが判明しました。 この関数は頻繁に呼び出されます。 この関数に誤った値が渡されている場所を特定するにはどうしたらいいのでしょうか。
 
-## <a name="solution"></a>解決策:
+## <a name="solution"></a>ソリューション
 
 #### <a name="to-resolve-this-problem"></a>この問題を解決するには
 
@@ -41,7 +41,7 @@ ms.locfileid: "72734241"
 
 2. ブレークポイントを右クリックし、 **[条件]** をクリックします。
 
-3. **[ブレークポイントの条件]** ダイアログ ボックスで、 **[条件]** チェック ボックスをオンにします。 「[高度なブレークポイント](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)」を参照してください。
+3. **[ブレークポイントの条件]** ダイアログ ボックスで、 **[条件]** チェック ボックスをオンにします。 [高度なブレークポイント](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)に関する記事を参照してください。
 
 4. テキスト ボックスに `Var==3` などの式を入力します (`Var` は不適切な値が格納されるパラメーターの名前、`3` はこのパラメーターに渡される不適切な値)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72734241"
 
 6. そして、再びプログラムを実行します。 `Var` パラメーターの値が `3` になると、ブレークポイントによって、その関数の先頭でプログラムの実行が停止します。
 
-7. 次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、「[方法: [呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。
+7. 次に、[呼び出し履歴] ウィンドウを使用して呼び出し元の関数を見つけ、その関数のソース コードに移動します。 詳細については、[[呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

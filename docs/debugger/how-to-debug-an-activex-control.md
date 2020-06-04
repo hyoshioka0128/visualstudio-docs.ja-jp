@@ -1,5 +1,5 @@
 ---
-title: '方法: ActiveX コントロールをデバッグする |Microsoft Docs'
+title: '方法: ActiveX コントロールをデバッグする | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733865"
 ---
-# <a name="how-to-debug-an-activex-control"></a>方法 : ActiveX コントロールをデバッグする
+# <a name="how-to-debug-an-activex-control"></a>方法: ActiveX コントロールをデバッグする
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
@@ -42,7 +42,7 @@ ActiveX コントロールをデバッグするには、そのコントロール
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。
 
-2. **[表示]** メニューの **[プロパティページ]** をクリックします。
+2. **[表示]** メニューの **[プロパティ ページ]** をクリックします。
 
 3. **[プロジェクト プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** フォルダーを開き、 **[デバッグ]** を選択します。
 

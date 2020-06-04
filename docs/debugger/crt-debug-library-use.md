@@ -1,5 +1,5 @@
 ---
-title: CRT デバッグライブラリの使用 |Microsoft Docs
+title: CRT デバッグ ライブラリの使用方法 | Microsoft Docs
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -30,13 +30,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745605"
 ---
 # <a name="crt-debug-library-use"></a>CRT デバッグ ライブラリの使用方法
-C ランタイム ライブラリには、広範なデバッグ支援機能が用意されています。 CRT デバッグライブラリの1つを使用するには、 [/debug](/cpp/build/reference/debug-generate-debug-info)にリンクし、 **/mdd**、 **/MTd**、または **/LDd**を使用してコンパイルする必要があります。
+C ランタイム ライブラリには、広範なデバッグ支援機能が用意されています。 CRT デバッグ ライブラリを使用するには、[/DEBUG](/cpp/build/reference/debug-generate-debug-info) を指定してリンクし、 **/MDd**、 **/MTd**、または **/LDd** を指定してコンパイルする必要があります。
 
 ## <a name="remarks"></a>Remarks
  CRT のデバッグに使用する主な定義とマクロは、CRTDBG.h ヘッダー ファイルに記述されています。

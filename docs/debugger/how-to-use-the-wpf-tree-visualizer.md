@@ -1,5 +1,5 @@
 ---
-title: '方法: WPF ツリービジュアライザーを使用する |Microsoft Docs'
+title: '方法: WPF ツリー ビジュアライザーを使用する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +18,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
 ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/24/2019
 ms.locfileid: "72888402"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>方法: WPF ツリー ビジュアライザーを使用する
-WPF ツリー ビジュアライザーを使用すると、WPF オプションのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 ビジュアルツリーの詳細については、「 [WPF のツリー](/dotnet/framework/wpf/advanced/trees-in-wpf)」を参照してください。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](/dotnet/framework/wpf/advanced/dependency-properties-overview)」を参照してください。
+WPF ツリー ビジュアライザーを使用すると、WPF オプションのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 ビジュアル ツリーの詳細については、「[WPF のツリー](/dotnet/framework/wpf/advanced/trees-in-wpf)」を参照してください。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](/dotnet/framework/wpf/advanced/dependency-properties-overview)」を参照してください。
 
- WPF ツリービジュアライザーを開くと、左側に**ビジュアルツリー**が表示され、右側に [_名前_ **:** _種類_] ペイン**のプロパティ**が2つ表示されます。 **[ビジュアルツリー]** ウィンドウで任意のオブジェクトを選択すると、[_名前_ **:** _種類_] ペイン**のプロパティ**が自動的に更新され、そのオブジェクトのプロパティが表示されます。
+ WPF ツリー ビジュアライザーを開くと、左側に **[ビジュアル ツリー]** 、右側に **[ _<名前>_ **:** _<型>_ のプロパティ]** ペインという 2 つのペインが表示されます。 任意のオブジェクトを **[ビジュアル ツリー]** ペインで選択すると、 **[ _<名前>_ **:** _<型>_ のプロパティ]** ペインが自動的に更新され、そのオブジェクトのプロパティが表示されます。
 
  > [!NOTE]
- > また、[ライブビジュアルツリーとライブプロパティエクスプローラー](../xaml-tools/inspect-xaml-properties-while-debugging.md)を使用して、WPF オブジェクトのビジュアルツリーを確認することもできます。 WPF ツリービジュアライザーは従来の機能であり、アクティブな開発ではありません。
+ > [ライブ ビジュアル ツリーとライブ プロパティ エクスプローラー](../xaml-tools/inspect-xaml-properties-while-debugging.md)を使用して WPF オブジェクトのビジュアル ツリーを調べることもできます。 WPF ツリー ビジュアライザーはレガシ機能であり、アクティブな開発ではありません。
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>WPF ツリー ビジュアライザーを開くには
 
@@ -53,7 +53,7 @@ WPF ツリー ビジュアライザーを使用すると、WPF オプション�
 
 ### <a name="to-search-the-properties-list"></a>プロパティ リストを検索するには
 
-- [**プロパティ**_名_ **:** _型_] ペインで、検索する文字列を **[フィルター]** ボックスに入力します。
+- **[ _<名前>_ **:** _<型>_ のプロパティ]** ペインで、検索する文字列を **[フィルター]** ボックスに入力します。
 
   WPF ツリー ビジュアライザーで、入力した文字列と一致するプロパティが即時に検索され、入力した文字列と一致したこれらのプロパティのみが一覧に表示されます。 より正確に一致する項目を検索するには、次の文字を入力します。
 

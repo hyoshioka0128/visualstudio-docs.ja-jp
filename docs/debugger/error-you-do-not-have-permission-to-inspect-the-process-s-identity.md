@@ -1,5 +1,5 @@
 ---
-title: 'エラー: プロセス&#39;id を検査するためのアクセス許可がありません |Microsoft Docs'
+title: エラー :プロセスの ID を検査する権限がありません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736222"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー: プロセス&#39;id を検査するためのアクセス許可がありません
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー :プロセスの ID を検査する権限がありません
 プロセスの ID を検査する権限がありません。 これは、システムの混が原因である可鉢があります。
 
  デバッグに必要なプロセス ID をデバッガーが検査できませんでした。 最も可能性の高い原因として、ターミナル サービスが無効になっていることが挙げられます。 既定では、ターミナル サービスが有効に設定されています。 再度有効にするには、次の手順に従います。
@@ -40,7 +40,7 @@ ms.locfileid: "72736222"
 
 6. **[サービス]** 一覧の **[Terminal Services]** を右クリックして、 **[プロパティ]** をクリックします。
 
-7. **ターミナルサービス**の [プロパティ] ウィンドウで、 **[全般**] タブにアクセスし、 **[スタートアップの種類]** を **[手動]** に設定します。
+7. **[ターミナル サービスのプロパティ]** ウィンドウの **[全般]** タブで、 **[スタートアップの種類]** を **[手動]** に設定します。
 
 8. **[OK]** をクリックします。
 
