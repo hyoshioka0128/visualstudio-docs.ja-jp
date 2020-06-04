@@ -1,5 +1,5 @@
 ---
-title: 混合モードアプリケーションのデバッグ |Microsoft Docs
+title: 混合モード アプリケーションをデバッグする | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916290"
@@ -33,7 +33,7 @@ ms.locfileid: "75916290"
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>混合モードのデバッグでの C++ のエディット コンティニュの有効化
 
-のC++エディットコンティニュを有効にする方法については、「[エディットコンティニュを有効または無効にする方法](../debugger/how-to-enable-and-disable-edit-and-continue.md)」を参照してください。
+C++ のエディット コンティニュを有効にするには、[エディット コンティニュを有効または無効にする方法](../debugger/how-to-enable-and-disable-edit-and-continue.md)に関するページを参照してください。
 
 > [!NOTE]
 > Visual Studio 2013 で C++ に対してエディット コンティニュを使用するには、従来のデバッグ エンジンに戻る必要があります。 Microsoft アプリケーション ライフサイクル管理ブログにある「[Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)」 (Visual Studio 2013 でマネージド互換モードに切り替える) を参照してください。

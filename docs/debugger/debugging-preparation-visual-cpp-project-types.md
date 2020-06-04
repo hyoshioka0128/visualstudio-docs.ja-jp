@@ -1,5 +1,5 @@
 ---
-title: プロジェクトのデバッグC++の準備 |Microsoft Docs
+title: C++ プロジェクトのデバッグを準備する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,17 +21,17 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916319"
 ---
-# <a name="debugging-preparation-c-project-types"></a>デバッグの準備C++ : プロジェクトの種類
+# <a name="debugging-preparation-c-project-types"></a>デバッグの準備:C++ プロジェクトの種類
 ここでは、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクト テンプレートで作成された基本的なプロジェクトの種類をデバッグする方法について説明します。
 
- Dll を出力として作成するプロジェクトの種類は、共通の機能があるため、[デバッグ Dll プロジェクト](../debugger/debugging-dll-projects.md)にグループ化されていることに注意してください。
+ 出力として DLL を作成するプロジェクトは、共通する特徴があるため「[DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)」にグループ化されています。
 
-## <a name="BKMK_In_this_topic"></a> このトピックの内容
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> このトピックの内容
  [プロパティの推奨設定](#BKMK_Recommended_Property_Settings)
 
  [Win32 プロジェクト](#BKMK_Win32_Projects)
@@ -42,16 +42,16 @@ ms.locfileid: "75916319"
 
   [Windows フォーム アプリケーション (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
-## <a name="BKMK_Recommended_Property_Settings"></a> プロパティの推奨設定
- プロパティによっては、すべてのアンマネージ デバッグ シナリオで同じように設定する必要があります。 プロパティの推奨設定を以下に示します。 ここに記載されていない設定は、アンマネージ プロジェクトの種類によって異なる場合があります。 詳細については、「 [ C++デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
+## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> プロパティの推奨設定
+ プロパティによっては、すべてのアンマネージ デバッグ シナリオで同じように設定する必要があります。 プロパティの推奨設定を以下に示します。 ここに記載されていない設定は、アンマネージ プロジェクトの種類によって異なる場合があります。 詳細については、「[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>[構成&#124;プロパティ]C++ &#124; [C/最適化] ノード
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>構成プロパティ &#124; C/C++ &#124; 最適化ノード
 
 |プロパティ名|設定|
 |-------------------|-------------|
 |**Optimization**|**[無効 (/0d)]** に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコード内だけに現れるバグが見つかった場合は、この設定を有効にできます。 **[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、ソース ウィンドウに表示されるコードとは一致しない可能性があります。 また、ステップなどの他の機能が正常に動作しない場合もあります。|
 
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>構成プロパティ&#124;リンカー &#124;のデバッグノード
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>構成プロパティ &#124; リンカー &#124; デバッグ ノード
 
 |プロパティ名|設定|
 |-------------------|-------------|
@@ -59,22 +59,22 @@ ms.locfileid: "75916319"
 
  [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="BKMK_Win32_Projects"></a> Win32 プロジェクト
+## <a name="win32-projects"></a><a name="BKMK_Win32_Projects"></a> Win32 プロジェクト
  Win32 アプリケーションは、C または C++ で記述される従来の Windows プログラムです。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、この種類のアプリケーションを簡単にデバッグできます。
 
  Win32 アプリケーションには、MFC アプリケーションと ATL プロジェクトが含まれます。 これらは Windows API を使用します。MFC や ATL を使用することはありますが、共通言語ランタイム (CLR: Common Language Runtime) は使用しません。 ただし、CLR を使用するマネージド コードを呼び出すことはできます。
 
- 次の手順では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内から Win32 プロジェクトをデバッグする方法を説明します。 Win32 アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、「[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。
+ 次の手順では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内から Win32 プロジェクトをデバッグする方法を説明します。 Win32 アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)に関するページを参照してください。
 
-### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> C または C++ の Win32 アプリケーションをデバッグするには
+### <a name="to-debug-a-c-or-c-win32-application"></a><a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> C または C++ の Win32 アプリケーションをデバッグするには
 
 1. Visual Studio でプロジェクトを開きます。
 
 2. **[デバッグ]** メニューの **[開始]** を選びます。
 
-3. 「[デバッガーの概要](../debugger/debugger-feature-tour.md)」で説明されている手法を使用してデバッグします。
+3. 「[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)」で説明されている手法を使用してデバッグ ます。
 
-### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> デバッグ構成を手動で設定するには
+### <a name="to-manually-set-a-debug-configuration"></a><a name="BKMK_To_manually_set_a_Debug_configuration"></a> デバッグ構成を手動で設定するには
 
 1. **[表示]** メニューの **[プロパティ ページ]** をクリックします。
 
@@ -92,18 +92,18 @@ ms.locfileid: "75916319"
 
 6. **[リンカー]** ノードを開き、 **[デバッグ]** をクリックします。 最初の **[デバッグ情報の生成]** 行で、ドロップダウン リストの **[はい (/DEBUG)]** をクリックします。 デバッグ時には、必ずこのオプションを設定する必要があります。
 
-   詳細については、「[ C++デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
+   詳細については、「[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
    [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows フォーム アプリケーション (.NET)
- **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、「 [How to: Create a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))」を参照してください。
+## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows フォーム アプリケーション (.NET)
+ **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、[Windows アプリケーション プロジェクトを作成する](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))」を参照してください。
 
  この種のアプリケーションを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でデバッグする作業は、マネージド Windows フォーム アプリケーションのデバッグ作業に似ています。
 
  プロジェクト テンプレートを使用して Windows フォーム プロジェクトを作成する場合、デバッグ構成とリリース構成に必要な設定は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって自動的に作成されます。 必要に応じて、これらの設定を **[\<プロジェクト名> プロパティ ページ]** ダイアログ ボックスで変更できます。 詳細については、[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)に関するページを参照してください。
 
- 詳細については、「 [ C++デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
+ 詳細については、「[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
  Windows フォーム アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、「[実行中のプログラムまたは複数のプログラムへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。
 
