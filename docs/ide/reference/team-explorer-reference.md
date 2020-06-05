@@ -22,7 +22,7 @@ ms.locfileid: "74538568"
 
 **チーム エクスプローラー**で[プロジェクトに接続する](../connect-team-project.md)と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
 
-- [リポジトリの複製](/azure/devops/repos/git/clone)
+- [リポジトリのクローン](/azure/devops/repos/git/clone)
 - [Web ポータル](/azure/devops/project/navigation/index)
 - [タスク ボード](/azure/devops/boards/sprints/task-board)
 
@@ -43,9 +43,9 @@ ms.locfileid: "74538568"
 
 「[Create work in branches](/azure/devops/repos/git/branches)」 (ブランチで作業を作成する) を参照してください。
 
-## <a name="pull-requests-page-git"></a>プル要求ページ (Git)
+## <a name="pull-requests-page-git"></a>Pull Request ページ (Git)
 
-「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」(プル要求を使用してコードを確認する) を参照してください。
+「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」(Pull Request を使用してコードを確認する) を参照してください。
 
 ## <a name="sync-page-git"></a>同期ページ (Git)
 
