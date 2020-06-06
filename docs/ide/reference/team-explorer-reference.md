@@ -86,9 +86,9 @@ ms.locfileid: "74538568"
 
 ::: moniker-end
 
-## <a name="builds-page"></a>ビルド ページ
+## <a name="builds-page"></a>ビルドページ
 
-**[ビルド]** ページでは、プロジェクトのビルド定義を確認できます。
+**ビルド**ページでは、プロジェクトのビルド定義を確認できます。
 
 参照:
 
@@ -98,9 +98,9 @@ ms.locfileid: "74538568"
 - [Visual Studio の継続的デリバリー (CD) をインストールする](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [アプリの継続的デリバリー (CD) を構成し、実行する](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>[設定] ページ
+## <a name="settings-page"></a>設定ページ
 
-**[設定]** ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
+**設定**ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
 
 | Project | プロジェクト コレクション | その他 |
 | - | - | - |
