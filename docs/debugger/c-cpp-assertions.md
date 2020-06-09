@@ -35,7 +35,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911615"
 ---
-# <a name="cc-assertions"></a>アサーション
+# <a name="cc-assertions"></a>C および C++ のアサーション
 アサート ステートメントでは、プログラム内で true になる必要のある条件を指定します。 この条件が true にならない場合、アサーションは失敗し、プログラムの実行が中断され、[[アサートに失敗しました] ダイアログ ボックス](../debugger/assertion-failed-dialog-box.md)が表示されます。
 
 Visual Studio は、次の構造に基づく C++ のアサート ステートメントをサポートしています。
