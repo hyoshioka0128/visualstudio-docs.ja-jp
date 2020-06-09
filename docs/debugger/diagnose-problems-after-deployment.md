@@ -89,7 +89,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 6. 新しいビルドを実行します。
 
-    [手順 2:アプリをリリースする](#DeployRelease)に進みます
+    「[手順 2: アプリをリリースする](#DeployRelease)」に進みます
 
 #### <a name="team-foundation-server-2012-or-2010"></a><a name="TFS2012_2010"></a> Team Foundation Server 2012 または 2010
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。
@@ -114,7 +114,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 4. 新しいビルドを実行します。
 
-    [手順 2:アプリをリリースする](#DeployRelease)に進みます
+    「[手順 2: アプリをリリースする](#DeployRelease)」に進みます
 
 ### <a name="create-the-build-manifest-for-a-manual-build-using-visual-studio"></a><a name="ManualBuild"></a>Visual Studio を使用して手動ビルドのビルド マニフェストを作成する
  プロジェクトのビルド マニフェスト (BuildInfo.config ファイル) を自動的に作成し、プロジェクトの出力フォルダーに配置するには、次の手順を実行します。 このファイルは出力フォルダーで "*ProjectName*.BuildInfo.config" と表示されますが、アプリの発行後に配置フォルダーで "BuildInfo.config" という名前に変更されます。
@@ -141,7 +141,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 4. 新しいビルドを実行します。
 
-    [手順 2:アプリをリリースする](#DeployRelease)に進みます
+    「[手順 2: アプリをリリースする](#DeployRelease)」に進みます
 
 ### <a name="create-the-build-manifest-for-a-manual-build-using-msbuildexe"></a><a name="MSBuild"></a>MSBuild.exe を使用して手動ビルドのビルド マニフェストを作成する
  ビルドの実行時に次のビルド引数を追加します。

@@ -155,7 +155,7 @@ IIS にアプリを発行するには、さまざまな方法があります。 
 
 3. **[IIS、FTP、その他]** を選択し、 **[発行]** をクリックします。
 
-    ![IIS に発行する](media/dbg-aspnet-local-iis.png "IIS に公開する")
+    ![IIS に発行する](media/dbg-aspnet-local-iis.png "IIS に発行する")
 
 4. **[CustomProfile]** ダイアログの **[発行方法]** で、 **[ファイル システム]** を選択します。
 
@@ -177,7 +177,7 @@ IIS にアプリを発行するには、さまざまな方法があります。 
 
 1. **[発行]** を選びます。
 
-    ![IIS に発行する](media/dbg-aspnet-local-iis-select-site.png "IIS に公開する")
+    ![IIS に発行する](media/dbg-aspnet-local-iis-select-site.png "IIS に発行する")
 
 > [!IMPORTANT]
 > デバッグ モードにすると、アプリのパフォーマンスは大幅に低下します。 最高のパフォーマンスを得るには、*web.config* で `debug="false"` を設定し、運用アプリを配置するとき、またはパフォーマンス測定を行うときに [リリース ビルド] を指定します。
