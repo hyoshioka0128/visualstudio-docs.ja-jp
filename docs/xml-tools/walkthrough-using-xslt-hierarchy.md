@@ -7,7 +7,7 @@ ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592452"
@@ -20,9 +20,9 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
 
 このトピックの例には、参照されるスタイル シート内のデバッグが示されています。
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>参照されているスタイルシートでデバッグするには
+## <a name="to-debug-in-a-referenced-style-sheet"></a>参照されているスタイル シート内でデバッグするには
 
-1. Visual Studio で XML ドキュメントを開きます。 この例では、次のドキュメントを使用します。
+1. Visual Studio で XML ドキュメントを開きます。 この例では、次のドキュメントを使用しています。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
     </COLLECTION>
     ```
 
-1. 次の*xslincludefile*を追加します。
+1. 次の *xslincludefile.xsl* を追加します。
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
     </xsl:stylesheet>
     ```
 
-3. 次の*xslinclude*ファイルを追加します。
+3. 次の *xslinclude.xsl* ファイルを追加します。
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
     </xsl:stylesheet>
     ```
 
-4. `<xsl:include href="xslincludefile.xsl" />`命令にブレークポイントを追加します。
+4. `<xsl:include href="xslincludefile.xsl" />` 命令にブレークポイントを追加します。
 
 5. デバッグを開始します。
 
-6. `<xsl:include href="xslincludefile.xsl" />`命令でデバッガーが停止したら、 **[ステップイン]** ボタンをクリックします。 参照されているスタイルシートでデバッグを続行できます。 階層が表示され、デザイナーに正しいパスが示されます。
+6. デバッガーが `<xsl:include href="xslincludefile.xsl" />` 命令で停止したときに、 **[ステップ イン]** ボタンを押します。 参照されるスタイル シート内でデバッグを継続することができます。 階層が表示され、デザイナーに正しいパスが示されます。
 
 ## <a name="see-also"></a>関連項目
 

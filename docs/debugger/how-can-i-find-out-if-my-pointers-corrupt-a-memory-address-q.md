@@ -1,5 +1,5 @@
 ---
-title: ポインターがメモリアドレスを破損しているかどうかを調べる |Microsoft Docs
+title: ポインターがメモリ アドレスを破壊しているかどうか調べる | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dc178675e6d2423336c38e69691f081bf4b447a4
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916177"
@@ -36,13 +36,13 @@ ms.locfileid: "75916177"
 
 #### <a name="check-for-heap-corruption"></a>ヒープ破損のチェック
 
-- メモリの破損は、その多くがヒープの破損に起因します。 グローバル フラグ ユーティリティ (gflags.exe) または pageheap.exe を使用してください。 「 [/Windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap)」を参照してください。
+- メモリの破損は、その多くがヒープの破損に起因します。 グローバル フラグ ユーティリティ (gflags.exe) または pageheap.exe を使用してください。 [/windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap) を参照してください。
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>メモリ アドレスの変更箇所を見つけるには
 
 1. 0x00408000 にデータ ブレークポイントを設定します。 「[データ変更ブレークポイントを設定する (ネイティブ C++ のみ)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)」を参照してください。
 
-2. ブレークポイントにヒットしたら、 **[メモリ]** ウィンドウを使用して、0x00408000 から始まるメモリの内容を表示します。 詳細については、「[メモリウィンドウ](../debugger/memory-windows.md)」を参照してください。
+2. ブレークポイントにヒットしたら、 **[メモリ]** ウィンドウを使用して、0x00408000 から始まるメモリの内容を表示します。 詳細については、[メモリ ウィンドウ](../debugger/memory-windows.md)に関する記事をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

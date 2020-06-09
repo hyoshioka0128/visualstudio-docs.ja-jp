@@ -10,14 +10,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592803"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>方法: XSD スキーマに基づいて XML ドキュメントを作成する
 
-**[サンプル xml の生成]** 機能では、xml スキーマ (XSD) ファイルに基づいてサンプルの xml ファイルが生成されます。
+**[サンプル XML の生成]** 機能では、XML スキーマ (XSD) ファイルに基づいてサンプルの XML ファイルが生成されます。
 
 このオプションは、次のようなシナリオで使用できます。
 
@@ -25,27 +25,27 @@ ms.locfileid: "75592803"
 
 - スキーマが意図したとおりに機能しているかどうかを確認する。
 
-**[サンプル XML の生成]** 機能は、グローバル要素でのみ使用でき、有効な xml スキーマセットが必要です。
+**[サンプル XML の生成]** 機能はグローバル要素に対してのみ使用でき、使用するには有効な XML スキーマ セットが必要です。
 
 この機能では、通常は有効な XML ドキュメントが生成されます。 ただし、スキーマに次のものが 1 つ以上含まれていると、有効なサンプルが生成されない可能性があります。
 
 - `xs:key`、`xs:keyref`、および `xs:unique` の ID 制約
 
-- ファセットを `xs:pattern` します。
+- `xs:pattern` ファセット。
 
 - `xs:QName` 型の列挙
 
-- `xs:ENTITY`、`xs:ENTITIES`、および `xs:NOTATION` 型。
+- `xs:ENTITY` 型、`xs:ENTITIES` 型、および `xs:NOTATION` 型。
 
 また、`xs:base64Binary` の内容は、その型のスキーマで列挙が発生する場合にのみ生成されることに注意してください。
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD ファイルに基づいて XML インスタンス ドキュメントを生成するには
 
-1. [「方法: XSD スキーマファイルを作成および編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)」の手順に従います。
+1. 「[方法:XSD スキーマ ファイルを作成して編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)」の手順に従います。
 
-2. [XML スキーマエクスプローラー](../xml-tools/xml-schema-explorer.md)で、`PurchaseOrder` グローバル要素を右クリックします。 **[サンプル XML の生成]** を選択します。
+2. [XML スキーマ エクスプローラー](../xml-tools/xml-schema-explorer.md)で、`PurchaseOrder` グローバル要素を右クリックします。 **[サンプル XML の生成]** をクリックします。
 
-     このオプションを選択すると、PurchaseOrder が表示されます。次のサンプル XML コンテンツを含む*xml*ファイルが生成され、xml エディターで開かれます。
+     このオプションを選択すると、次のサンプル XML コンテンツの PurchaseOrder.*xml* ファイルが生成され、XML エディターに表示されます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
