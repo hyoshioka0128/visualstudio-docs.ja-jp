@@ -1,5 +1,5 @@
 ---
-title: 'エラー: Kerberos 認証に失敗しました |Microsoft Docs'
+title: エラー :Kerberos 認証に失敗しました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fbe13fd3d0dc7e29fc12d369ec0865bcbc97b1a4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737666"
 ---
-# <a name="error-kerberos-authentication-failed"></a>エラー : Kerberos 認証に失敗しました。
+# <a name="error-kerberos-authentication-failed"></a>エラー :Kerberos 認証に失敗しました
 リモート デバッグを実行するときに、次のエラー メッセージが表示されることがあります。
 
 ```cmd
@@ -38,7 +38,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - ドメイン コントローラーで Kerberos が無効になっている。
 
-  Kerberos 認証が使用できない場合は、Visual Studio リモート デバッグ モニターの実行に使用するアカウントを変更してください。 この手順については、「[エラー: ターゲットコンピューターの Visual Studio リモートデバッガーサービスがこのコンピューターに接続できません](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。」を参照してください。
+  Kerberos 認証が使用できない場合は、Visual Studio リモート デバッグ モニターの実行に使用するアカウントを変更してください。 手順については、「[エラー: ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)」を参照してください。
 
   両方のコンピューターが同じドメインに接続しているにもかかわらず、このメッセージが表示される場合は、ターゲット コンピューターの DNS がデバッガー ホスト コンピューターの名前を正しく解決していることを確認してください。 以降の手順を参照してください。
 

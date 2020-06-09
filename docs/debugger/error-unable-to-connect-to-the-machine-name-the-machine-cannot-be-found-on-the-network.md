@@ -1,5 +1,5 @@
 ---
-title: 'エラー: コンピューター &lt;name &gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。 | Microsoft Docs'
+title: エラー :コンピューター &lt;name&gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736836"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>エラー: コンピューター &lt;name &gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>エラー :コンピューター &lt;name&gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。
 このエラーは、次の条件のいずれかが満たされると発生します。
 
 - リモート コンピューターへの接続が解除された。

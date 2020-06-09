@@ -1,5 +1,5 @@
 ---
-title: ビジュアライザー API リファレンス |Microsoft Docs
+title: ビジュアライザー API リファレンス | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187213"
@@ -42,6 +42,6 @@ ms.locfileid: "73187213"
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル : C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [方法 : ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
+- [チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [方法: ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

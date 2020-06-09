@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace 機能 |Microsoft Docs
+title: IntelliTrace の機能 | Microsoft Docs
 ms.date: 09/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911414"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能C#(、Visual Basic C++、)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能 (C#、Visual Basic、C++)
 
-IntelliTrace を使用すると、イベントとアプリケーションを呼び出すメソッドとを記録することができます。この機能により、さまざまな実行ポイントでの状態 (呼び出し履歴およびローカル変数の値) を確認することができます。 通常どおりデバッグを開始します。 IntelliTrace は既定でオンになっており、 **[イベント]** タブの下にある 新しい **[診断ツール]** ウィンドウに intellitrace が記録されている情報を確認できます。イベントを選択し、[**履歴デバッグのアクティブ化] をクリックします。** このイベントに記録された呼び出し履歴とローカル変数を表示します。
+IntelliTrace を使用すると、イベントとアプリケーションを呼び出すメソッドとを記録することができます。この機能により、さまざまな実行ポイントでの状態 (呼び出し履歴およびローカル変数の値) を確認することができます。 通常どおりのデバッグの開始 - 既定では、IntelliTrace はオンになっています。このため、IntelliTrace が記録する情報が **[イベント]** タブの新しい **[診断ツール]** ウィンドウに表示されます。イベントについて記録された呼び出し履歴とローカルを確認するには、目的のイベントを選択し、 **[デバッグ履歴の有効化]** をクリックします。
 
-ステップ バイ ステップの説明については、「[チュートリアル: IntelliTrace の使用](../debugger/walkthrough-using-intellitrace.md)」を参照してください。
+詳細な手順については、[チュートリアル: IntelliTrace の使用](../debugger/walkthrough-using-intellitrace.md)に関するページを参照してください。
 
 IntelliTrace は Visual Studio Enterprise Edition で使用できますが、Visual Studio Professional Edition または Community Edition では使用できません。
 
@@ -40,23 +40,23 @@ IntelliTrace がオンになっていることを確認するには、 **[ツー
 > [!NOTE]
 > **[IntelliTrace]** オプション ページ上のすべての設定の適用範囲は、個々のプロジェクトまたはソリューションではなく、Visual Studio 全体となります。 これらの設定に加えた変更は、Visual Studio のすべてのインスタンス、すべてのデバッグ セッション、あるいはすべてのプロジェクトまたはソリューションに適用されます。
 
-## <a name="ChooseEvents"></a>IntelliTrace が記録するイベント (C#、Visual Basic) を選択します
+## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a> IntelliTrace で記録するイベントを選択する (C#、Visual Basic)
 
 特定の IntelliTrace イベントの記録はオンまたはオフにすることができます。
 
-デバッグ中の場合、デバッグを停止します。 [**ツール] > [intellitrace > Intellitrace イベント] > [オプション]** にアクセスします。 IntelliTrace で記録するイベントを選択します。
+デバッグ中の場合、デバッグを停止します。 **[ツール] > [オプション] > [IntelliTrace] > [IntelliTrace イベント]** に移動します。 IntelliTrace で記録するイベントを選択します。
 
-## <a name="Snapshots"></a>スナップショットの収集C#(、Visual Basic C++、)
+## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> スナップショットを収集する (C#、Visual Basic、C++)
 
-これは既定では有効になっていませんが、IntelliTrace はすべてのブレークポイントとデバッガーステップイベントでアプリケーションのスナップショットをキャプチャできます。また、これらのスナップショットは、デバッグの履歴セッションで確認できます。 スナップショットを使用すると、アプリケーションの完全な状態を確認できます。 スナップショットのキャプチャを有効にするには、[**ツール] > [intellitrace > 全般] > [オプション**] にアクセスし、 **[intellitrace スナップショット (マネージとネイティブ)]** を選択します。 詳細については、[IntelliTrace を使用して以前のアプリの状態を検査する](../debugger/view-historical-application-state.md)方法に関するページを参照してください。
+これは既定では有効になっていませんが、IntelliTrace を使用すると、すべてのブレークポイントとデバッガー ステップ イベントでアプリケーションのスナップショットをキャプチャできます。また、そのスナップショットをデバッグ履歴セッションで確認できます。 スナップショットを使用すると、アプリケーションの完全な状態を確認できます。 スナップショットのキャプチャを有効にするには、 **[ツール] > [オプション] > [IntelliTrace] > [全般]** に移動し、 **[IntelliTrace スナップショット (マネージドとネイティブ)]** を選択します。 詳細については、[IntelliTrace を使用して以前のアプリの状態を検査する](../debugger/view-historical-application-state.md)方法に関するページを参照してください。
 
-スナップショットは Visual Studio Enterprise 2017 バージョン15.5 以降で使用できます。また、Windows 10 の記念日またはそれ以降の更新プログラムが必要です。  .NET Core アプリと ASP.NET Core アプリの場合は、Visual Studio Enterprise 2017 バージョン15.7 が必要です。 Windows を対象とするネイティブアプリの場合は、Visual Studio Enterprise 2017 バージョン 15.9 Preview 2 が必要です。
+スナップショットは Visual Studio Enterprise 2017 バージョン 15.5 以降で使用できます。また、Windows 10 Anniversary Update 以降が必要です。  .NET Core および ASP.NET Core アプリの場合、Visual Studio Enterprise 2017 バージョン 15.7 が必要です。 Windows を対象とするネイティブ アプリの場合、Visual Studio Enterprise 2017 バージョン 15.9 Preview 2 が必要です。
 
-## <a name="GoingFurther"></a>IntelliTrace イベントと呼び出し情報の収集C#(、Visual Basic)
+## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a> IntelliTrace イベントと呼び出し情報を収集する (C#、Visual Basic)
 
-これは既定では有効になっていませんが、IntelliTrace ではイベントと共にメソッドの呼び出しを記録できます。 メソッド呼び出しの収集を有効にするには、[**ツール] > [intellitrace > 全般] > [オプション**] をクリックし、 **[intellitrace イベントと呼び出し情報 (マネージのみ)]** を選択します。
+これは既定では有効になっていませんが、IntelliTrace ではイベントと共にメソッドの呼び出しを記録できます。 メソッド呼び出しの収集を有効にするには、 **[ツール] > [オプション] > [IntelliTrace] > [全般]** に移動し、 **[IntelliTrace イベントと呼び出し情報 (マネージドのみ)]** を選択します。
 
-呼び出し情報は現在、.NET Core と ASP.NET Core アプリでは使用できません。
+現在、.NET Core アプリと ASP.NET Core アプリの呼び出し情報は使用できません。
 
 これにより、呼び出し履歴が表示され、コード内で呼び出しの前後を移動できるようになります。 IntelliTrace は、メソッド名、メソッド エントリ、および終了ポイントなどのデータと、特定のパラメーター値および戻り値を記録します。
 
@@ -84,7 +84,7 @@ IntelliTrace がオンになっていることを確認するには、 **[ツー
 
 メソッドを検索できるのは、メソッド呼び出し情報が有効になっている場合に限られます。 特定の行またはメソッドの IntelliTrace 履歴を検索することができます。 デバッガーの実行が停止したら、関数本文内を右クリックしてコンテキスト メニューを表示し、 **[この行を IntelliTrace で検索]** または **[このメソッドを IntelliTrace で検索]** のいずれかをクリックします。
 
-### <a name="ControlCallData"></a>IntelliTrace が呼び出し情報をどの程度記録するかの制御
+### <a name="control-how-much-call-information-intellitrace-records"></a><a name="ControlCallData"></a>IntelliTrace が呼び出し情報をどの程度記録するかの制御
 
 既定では、IntelliTrace はソリューションで使用されるすべてのモジュールについて情報を記録します。 関心のあるモジュールに関してのみ、呼び出し情報を記録するように IntelliTrace を設定できます。 **[ツール] > [オプション] > [IntelliTrace] > [モジュール]** の順に選択し、IntelliTrace に含めるモジュールまたは IntelliTrace から除外するモジュールを指定できます。 指定したモジュールから発生したイベントと、関心のあるモジュール内で発生したメソッド呼び出しだけが IntelliTrace で収集されます。
 
@@ -92,7 +92,7 @@ IntelliTrace がオンになっていることを確認するには、 **[ツー
 
 モジュールの数は最小限に抑えるようにしてください。 そうすれば、収集するデータが少なくなるので、パフォーマンスが向上します。 また、処理すべきデータが少なくなるので、UI のノイズが減少します。
 
-## <a name="SaveSession"></a>IntelliTrace データをファイル (C#、Visual Basic、 C++) に保存する
+## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a> IntelliTrace データをファイルに保存する (C#、Visual Basic、C++)
 
 デバッグ中にアプリケーションが中断状態にある場合は、 **[デバッグ] > [IntelliTrace] > [IntelliTrace セッションの保存]** の順に選択して、IntelliTrace によって収集されたデータを保存することができます。 アプリケーションがまだ実行中の場合またはデバッグが停止状態の場合、メニュー項目は無効であるため、IntelliTrace で収集されたデータを保存することはできません。
 
@@ -107,26 +107,26 @@ IntelliTrace データをファイルに保存する場合は、IntelliTrace が
 
 [IntelliTrace in Visual Studio Enterprise 2015 (Visual Studio Enterprise2015 の IntelliTrace)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[Visual Studio 2015 での IntelliTrace を使用したライブデバッグのチュートリアル (テキストエディター)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[Visual Studio 2015 (テキスト エディター) で IntelliTrace を使用したライブ デバッグのチュートリアル](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[Visual Studio 2015 (ソーシャルクラブ) での IntelliTrace を使用したライブデバッグのチュートリアル](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[Visual Studio 2015 (Social Club) で IntelliTrace を使用したライブ デバッグのチュートリアル](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[Visual Studio Enterprise 2015 の IntelliTrace が attach をサポートするようになりました。](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[Visual Studio Enterprise 2015 の IntelliTrace でアタッチがサポートするようになりました](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[IntelliTrace スタンドアロンコレクターを使用して windows サービスからデータを収集する](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[IntelliTrace スタンドアロン コレクターを使用して Windows サービスからデータを収集する](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[IntelliTrace 収集計画の編集](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
+[IntelliTrace コレクション プランの編集](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[IntelliTrace を使用したカスタム TraceSource とデバッグ](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
+[IntelliTrace を使用したカスタム TraceSource およびデバッグ](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Active Directory アカウントで実行されている IntelliTrace スタンドアロンコレクターとアプリケーションプール](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Active Directory アカウントで実行されている IntelliTrace スタンドアロン コレクターとアプリケーション プール](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>フォーラム
 
-[Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/en-US/home)
+[Visual Studio デバッガー](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>ビデオ
 
-[IntelliTrace エクスペリエンス](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
+[IntelliTrace のエクスペリエンス](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
 [Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

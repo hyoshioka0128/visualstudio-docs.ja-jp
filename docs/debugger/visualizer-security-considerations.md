@@ -1,5 +1,5 @@
 ---
-title: ビジュアライザーのセキュリティに関する考慮事項 |Microsoft Docs
+title: ビジュアライザーのセキュリティに関する考慮事項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187149"
@@ -39,6 +39,6 @@ ms.locfileid: "73187149"
 
 ## <a name="see-also"></a>関連項目
 - [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)
-- [方法 : ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
+- [方法: ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
 - [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
-﻿---
-title: HLSL シェーダーデバッガー |Microsoft Docs
+---
+title: HLSL シェーダー デバッガー | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735300"
@@ -22,7 +22,7 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
 
  HLSL デバッガーを次に示します。
 
- ![[ウォッチ] ウィンドウと [呼び出し履歴] ウィンドウを使用した HLSL のデバッグ。](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![ウォッチおよび呼び出し履歴ウィンドウを使用した HLSL のデバッグ。](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>HLSL デバッガーについて
  HLSL デバッガーは、シェーダー コードで発生する問題を把握するのに役立ちます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] における HLSL コードのデバッグは、C++、C#、Visual Basic などの他の言語で作成されたコードのデバッグと同様です。 他の言語のデバッグ時と同じように、変数の内容の確認、ブレークポイントの設定、コードのステップ実行、および呼び出し履歴の確認を行うことができます。
@@ -70,7 +70,7 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
    > [!NOTE]
    > HLSL デバッガーへのこのエントリ ポイントでは、選択した描画呼び出し、プリミティブ、およびピクセルに対応するピクセル シェーダー スレッド、または選択した描画呼び出し、プリミティブ、およびピクセルによって結果が補間される頂点シェーダー スレッドをデバッグします。 頂点シェーダーの場合、頂点シェーダーの詳細を展開することで、特定の頂点へのエントリ ポイントを絞り込むことができます。
 
-   HLSL デバッガーを使用してシェーダーエラーをデバッグする方法の例については、「関連項目」セクションにリンクされている[例](graphics-diagnostics-examples.md)またはチュートリアルを参照してください。
+   HLSL デバッガーを使用してシェーダーのエラーをデバッグする方法の例については、[例](graphics-diagnostics-examples.md)または「関連項目」セクションのリンク先のチュートリアルを参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: 頂点の網かけによるオブジェクトの不足](walkthrough-missing-objects-due-to-vertex-shading.md)

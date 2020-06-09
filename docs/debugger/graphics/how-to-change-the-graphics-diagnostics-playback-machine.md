@@ -1,5 +1,5 @@
-﻿---
-title: '方法: グラフィックス診断再生コンピューターを変更する |Microsoft Docs'
+---
+title: '方法: グラフィックス診断再生マシンを変更する | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5a41caf3f866c4a21d0a44fc69932066b2b7d923
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735057"
@@ -25,7 +25,7 @@ ms.locfileid: "72735057"
 
 1. グラフィックス ログのドキュメント ウィンドウで、 **[再生コンピューター]** リンクをクリックします。 **[リモート デバッガー接続]** ダイアログ ボックスが表示されます。
 
-2. **[手動構成]** の **[アドレス]** プロパティに、「`localhost`」と入力します。
+2. **[手動で構成]** の下の **[アドレス]** プロパティに、「`localhost`」と入力します。
 
 3. **[認証モード]** プロパティを **[なし]** に設定します。
 

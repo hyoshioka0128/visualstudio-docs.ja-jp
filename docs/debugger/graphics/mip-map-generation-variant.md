@@ -1,5 +1,5 @@
 ---
-title: Mip マップ生成バリアント |Microsoft Docs
+title: ミップマップ生成バリアント | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734903"
@@ -26,7 +26,7 @@ MIP マップは主に、テクスチャの小さいバージョンを事前に�
 このバリアントでパフォーマンスが大幅に向上する場合は、MIP マップを有効にしないでテクスチャを使用いるため、テクスチャのキャッシュを最大限に利用できていないことを示しています。
 
 ## <a name="remarks"></a>Remarks
-MIP マップの生成は、ソース テクスチャを作成する `ID3D11Device::CreateTexture2D` への呼び出しがあるたびに強制的に行われます。 具体的には、`pDesc` 渡された D3D11_TEXTURE2D_DESC オブジェクトが不変のシェーダーリソースを記述している場合、mip マップの生成が強制されます。それです：
+MIP マップの生成は、ソース テクスチャを作成する `ID3D11Device::CreateTexture2D` への呼び出しがあるたびに強制的に行われます。 具体的には、`pDesc` に渡された D3D11_TEXTURE2D_DESC オブジェクトで、不変のシェーダー リソースが記述される場合に、MIP マップの生成が強制的に実行されます。
 
 - BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。
 
@@ -62,7 +62,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-完全な MIP チェーンを持つテクスチャを作成するには、`D3D11_TEXTURE2D_DESC::MipLevels` を 0 に設定します。 全 mip チェーン内の mipmap レベルの数は、floor (log2 (n) + 1) です。ここで、n はテクスチャの最大の次元です。
+完全な MIP チェーンを持つテクスチャを作成するには、`D3D11_TEXTURE2D_DESC::MipLevels` を 0 に設定します。 完全な MIP チェーンの MIP レベルの数は floor(log2(n) + 1) となります。この n はテクスチャの最大のディメンションです。
 
 `CreateTexture2D` に初期データを提供する場合は、各 MIP レベルに D3D11_SUBRESOURCE_DATA オブジェクトを提供しなければならないことに注意してください。
 

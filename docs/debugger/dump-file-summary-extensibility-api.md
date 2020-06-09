@@ -1,5 +1,5 @@
 ---
-title: ダンプファイルの概要機能拡張 API |Microsoft Docs
+title: ダンプ ファイルの概要機能拡張 API | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d34e60b0b932470dec8a69874e28b99ebe76316b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737981"

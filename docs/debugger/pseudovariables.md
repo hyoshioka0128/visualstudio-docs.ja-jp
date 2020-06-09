@@ -1,5 +1,5 @@
 ---
-title: 擬似変数 |Microsoft Docs
+title: 擬似変数 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
 ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/09/2020
 ms.locfileid: "75776085"
@@ -27,12 +27,12 @@ ms.locfileid: "75776085"
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio デバッガーの擬似変数
 擬似変数は、変数ウィンドウまたは **[クイック ウォッチ]** ダイアログ ボックスに特定の情報を表示するときに使用される用語です。 通常の変数を入力するときと同様に、擬似変数を入力できます。 ただし、擬似変数は変数ではなく、プログラム内の変数名に対応しません。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
  たとえば、ネイティブ コード アプリケーションを記述していて、アプリケーションに割り当てられたハンドル数を確認する場合を考えてみます。 **[ウォッチ]** ウィンドウで、 **[名前]** 列に次の擬似変数を入力し、Enter キーを押すと、擬似変数が評価されます。
 
 `$handles`
 
- ネイティブコードでは、次の表に示す擬似変数を使用できます。
+ ネイティブ コードでは、次の表に示す擬似変数を使用できます。
 
 |擬似変数|関数|
 |--------------------|--------------|
@@ -43,29 +43,29 @@ ms.locfileid: "75776085"
 |`$env`|文字列ビューアーの環境ブロックを表示します。|
 |`$cmdline`|プログラムを実行したコマンド ライン文字列を表示します。|
 |`$pid`|プロセス ID を表示します。|
-|`$` *registername*<br /><br /> または<br /><br /> `@` *registername*|*registername* レジスタの内容を表示します。<br /><br /> 通常は、レジスタ名を入力するだけでレジスタの内容を表示できます。 この構文を使用する必要があるのは、レジスタ名で変数名をオーバーロードしている場合だけです。 レジスタ名が現在のスコープ内での変数名と同じであると、デバッガーは、その名前を変数名と解釈します。 このようなときには、`$`*registername* や `@`*registername* が便利です。|
+|`$` *registername*<br /><br /> or<br /><br /> `@` *registername*|*registername* レジスタの内容を表示します。<br /><br /> 通常は、レジスタ名を入力するだけでレジスタの内容を表示できます。 この構文を使用する必要があるのは、レジスタ名で変数名をオーバーロードしている場合だけです。 レジスタ名が現在のスコープ内での変数名と同じであると、デバッガーは、その名前を変数名と解釈します。 このようなときには、`$`*registername* や `@`*registername* が便利です。|
 |`$clk`|クロック周期の時間を表示します。|
 |`$user`|アプリケーションを実行しているアカウントのアカウント情報と共に、構造体を表示します。 セキュリティ上の理由から、パスワード情報は表示されません。|
-|`$exceptionstack`|現在の Windows ランタイムの例外のスタック トレースを表示します。 `$ exceptionstack` は、UWP アプリでのみ機能します。 `$ exceptionstack` は、および SEH C++例外ではサポートされていません|
-|`$returnvalue`|メソッドの戻り値を表示します。|
+|`$exceptionstack`|現在の Windows ランタイムの例外のスタック トレースを表示します。 `$ exceptionstack` は UWP アプリでのみ機能します。 `$ exceptionstack` は、C++ および SEH の例外ではサポートされません|
+|`$returnvalue`|メソッドの戻り値が表示されます。|
 
- でC#は、次の表に示す擬似変数を使用できます。
+ C# では、次の表に示す擬似変数を使用できます。
 
 |擬似変数|関数|
 |--------------------|--------------|
-|`$exception`|最後の例外に関する情報が表示されます。 例外が発生しなかった場合、`$exception` を評価してエラー メッセージが表示されます。<br /><br /> 例外処理アシスタントが無効になっていると、例外が発生したときに、`$exception` が自動的に **[ローカル]** ウィンドウに追加されます。|
+|`$exception`|最後の例外に関する情報が表示されます。 例外が発生しなかった場合、`$exception` を評価してエラー メッセージが表示されます。<br /><br /> 例外処理アシスタントが無効なときに例外が発生すると、`$exception` が自動的に **[ローカル]** ウィンドウに追加されます。|
 |`$user`|アプリケーションを実行しているアカウントのアカウント情報と共に、構造体を表示します。 セキュリティ上の理由から、パスワード情報は表示されません。|
-|`$returnvalue`|.NET メソッドの戻り値を表示します。|
+|`$returnvalue`|.NET メソッドの戻り値が表示されます。|
 
  Visual Basic では、次の表に示す擬似変数を使用できます。
 
 |擬似変数|関数|
 |--------------------|--------------|
 |`$exception`|最後の例外に関する情報が表示されます。 例外が発生しなかった場合、`$exception` を評価してエラー メッセージが表示されます。|
-|`$delete` または `$$delete`|**[イミディエイト]** ウィンドウで作成された暗黙的な変数を削除します。 構文は、*変数*または`$delete,`*変数*`$delete,``.`|
-|`$objectids` または `$listobjectids`|すべてのアクティブ オブジェクト ID を、指定された式の子として表示します。 構文*は、式または*`$listobjectids,`*式*`$objectid,``.`|
+|`$delete` または `$$delete`|**[イミディエイト]** ウィンドウで作成された暗黙的な変数を削除します。 構文は、`$delete,` *variable* または `$delete,` *variable* です`.`|
+|`$objectids` または `$listobjectids`|すべてのアクティブ オブジェクト ID を、指定された式の子として表示します。 構文は、`$objectid,` *expression* または `$listobjectids,` *expression* です`.`|
 |`$` *N* `#`|*N* と等しいオブジェクト ID を持つオブジェクトを表示します。|
-|`$dynamic`|`IDynamicMetaObjectProvider` を実装するオブジェクト用の特別な **[動的ビュー]** ノードを表示します。 インターフェイス。 構文は `$dynamic,`*オブジェクト*です。 この機能は .NET Framework バージョン4以降を使用するコードにのみ適用されます。|
+|`$dynamic`|`IDynamicMetaObjectProvider` を実装するオブジェクト用の特別な **[動的ビュー]** ノードを表示します。 インターフェイス。 構文は `$dynamic,` *object* です。 この機能は、.NET Framework Version 4 以降を使用するコードにのみ適用されます。|
 
 ## <a name="see-also"></a>関連項目
 - [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)

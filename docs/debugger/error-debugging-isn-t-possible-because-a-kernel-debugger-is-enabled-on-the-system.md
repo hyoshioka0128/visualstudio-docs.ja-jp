@@ -1,5 +1,5 @@
 ---
-title: 'エラー: システム |&#39;でカーネルデバッガーが有効になっているため、デバッグできませんでした。Microsoft Docs'
+title: エラー :システム上でカーネル デバッガーが有効になっているため、デバッグできません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737742"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>エラー: システムで&#39;カーネルデバッガーが有効になっているため、デバッグできませんでした
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>エラー :システム上でカーネル デバッガーが有効になっているため、デバッグできません
 マネージド コードのデバッグ時に、次のエラー メッセージが表示されることがあります。
 
 ```cmd
@@ -36,7 +36,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 - アプリケーションが CLR バージョン CLR 2.0、3.0、または 3.5 を使用している。
 
-## <a name="solution"></a>解決策:
+## <a name="solution"></a>ソリューション
 
 #### <a name="to-fix-this-problem"></a>この問題を解決するには
 

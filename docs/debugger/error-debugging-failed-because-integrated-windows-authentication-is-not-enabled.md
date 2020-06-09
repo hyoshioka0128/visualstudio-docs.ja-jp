@@ -1,5 +1,5 @@
 ---
-title: 'エラー: 統合 Windows 認証が有効になっていないため、デバッグに失敗しました |Microsoft Docs'
+title: エラー :Windows 統合認証が無効になっているため、デバッグに失敗しました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911545"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー ： Windows 統合認証が無効になっているため、デバッグに失敗しました。
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー :Windows 統合認証が無効になっているため、デバッグに失敗しました
 デバッグを要求したユーザーの認証が認証エラーで失敗しました。 このエラーは、Web アプリケーションまたは XML Web サービスにステップ インしようとするときに発生することがあります。 このエラーの原因の 1 つとして、統合 Windows 認証が有効ではないことが挙げられます。 その機能を有効にする場合は、「統合 Windows 認証を有効にするには」の手順を実行します。
 
  統合 Windows 認証を有効にしていてもこのエラーが表示される場合は、 **[Windows ドメイン サーバーでダイジェスト認証を使用する]** が有効なためにエラーが発生した可能性があります。 この場合は、ネットワーク管理者に問い合わせてください。
@@ -114,6 +114,6 @@ ms.locfileid: "72911545"
 10. **[インターネット インフォメーション サービス (IIS) マネージャー]** ウィンドウを閉じます。
 
 ## <a name="see-also"></a>関連項目
-- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft ダイジェスト認証](/windows/win32/secauthn/microsoft-digest-authentication)
-- [IIS 7.0 および Visual Studio を使用した Windows Vista での Web アプリケーションの実行](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Windows Vista 上での IIS 7.0 および Visual Studio を使用した Web アプリケーションの実行](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

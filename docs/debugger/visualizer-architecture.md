@@ -1,5 +1,5 @@
 ---
-title: ビジュアライザーのアーキテクチャ |Microsoft Docs
+title: ビジュアライザーのアーキテクチャ | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187161"
@@ -67,7 +67,7 @@ ms.locfileid: "73187161"
 
  オブジェクト プロバイダーには、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> と <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> の 2 つの API が存在しています。 どちらの API を使用しても、オブジェクト ソースの <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> が呼び出されます。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> を呼び出すと、視覚化の対象となるオブジェクトがシリアル化されて <xref:System.IO.Stream?displayProperty=fullName> に格納されます。
 
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> では、データがオブジェクト形式へと逆シリアル化されるため、このデータをそのまま <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> で作成した UI に表示できます。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> では、データが未加工の `Stream` として格納されるため、これは別途、逆シリアル化する必要があります。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> は、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> を呼び出してシリアル化された `Stream` を受け取り、そのデータを逆シリアル化するという処理を行います。 オブジェクトを .NET でシリアル化できないなど、カスタムのシリアル化が必要な場合は、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> を使用してください。 そのような場合は、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> メソッドをオーバーライドする必要があります。
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> では、データがオブジェクト形式へと逆シリアル化されるため、このデータをそのまま <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> で作成した UI に表示できます。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> では、データが未加工の `Stream` として格納されるため、これは別途、逆シリアル化する必要があります。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> では、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> を呼び出してシリアル化された `Stream` を受け取り、そのデータを逆シリアル化するという処理が行われます。 オブジェクトを .NET でシリアル化できないなど、カスタムのシリアル化が必要な場合は、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> を使用してください。 そのような場合は、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> メソッドをオーバーライドする必要があります。
 
  読み取り専用のビジュアライザーを作成する場合は、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> または <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> を使った一方向の通信で十分です。 データ オブジェクトの編集をサポートするビジュアライザーを作成する場合、それだけでは不十分です。 オブジェクト プロバイダーからオブジェクト ソースへと、データ オブジェクトを戻す機能が必要となります。 次の表は、この目的で使用される、オブジェクト プロバイダーとオブジェクト ソースの API を示しています。
 
@@ -86,8 +86,8 @@ ms.locfileid: "73187161"
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> または<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
 ## <a name="see-also"></a>関連項目
-- [方法 : ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
-- [チュートリアル : C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [チュートリアル : Visual Basic でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [チュートリアル : Visual Basic でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [方法: ビジュアライザーを記述する](create-custom-visualizers-of-data.md)
+- [チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [チュートリアル: Visual Basic でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [チュートリアル: Visual Basic でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)

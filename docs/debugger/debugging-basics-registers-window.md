@@ -1,5 +1,5 @@
 ---
-title: '[レジスタ] ウィンドウについて |Microsoft Docs'
+title: '[レジスタ] ウィンドウの概要 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738247"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio の [レジスタ] ウィンドウにC#ついC++て (、 F#、Visual Basic、)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio の [レジスタ] ウィンドウの概要 (C#、C++、Visual Basic、F#)
 
 **[レジスタ]** ウィンドウは、 **[オプション]** ダイアログ ボックス、 **[デバッグ]** ノードで、アドレスレベルのデバッグが有効になっている場合にのみ、使用できます。
 
@@ -40,30 +40,30 @@ ms.locfileid: "72738247"
 
  **[レジスタ]** ウィンドウの表示の詳細については、「[方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)」を参照してください。
 
- **[レジスタ]** ウィンドウを見ると、`EAX = 003110D8` などのエントリが表示されます。
+ **[レジスタ]** ウィンドウには、`EAX = 003110D8` などのエントリが表示されます。
 
- @No__t_0 記号の左側の記号は、この場合はレジスタ名、`EAX` です。 等号 (`=`) の右側の数字は、レジスタの内容を表します。
+ 等号 (`=`) の左側のシンボルがレジスタ名です (この例では `EAX`)。 等号 (`=`) の右側の数字は、レジスタの内容を表します。
 
  **[レジスタ]** ウィンドウでは、レジスタの内容を表示するだけでなく、他の操作も実行できます。 ネイティブ コードで中断モードのときは、レジスタの内容をクリックして値を編集できます。 ただし、むやみに値を編集しないでください。 編集するレジスタと格納するデータについて理解していないと、不正確な編集によってプログラムがクラッシュしたり、その他の予想外の結果が生じたりする可能性があります。 さまざまな Intel プロセッサと Intel 互換プロセッサのレジスタ セットの詳細は、ここでの簡単な概要説明で扱える内容ではありません。
 
-## <a name="register-groups"></a>グループの登録
+## <a name="register-groups"></a>レジスタ グループ
 
 **[レジスタ]** ウィンドウでは、見やすいようにレジスタがグループ別に表示されます。 **[レジスタ]** ウィンドウを右クリックすると、ショートカット メニューがグループの一覧と共に表示され、必要に応じて表示と非表示を切り替えることができます。
 
-## <a name="register-flags"></a>レジスタフラグ
+## <a name="register-flags"></a>レジスタ フラグ
 
-Intel x86 プロセッサの場合、 **[レジスタ]** ウィンドウに次のフラグが表示されることがあります。 デバッグセッション中に、これらのフラグを編集することもできます。
+Intel x86 プロセッサの場合、 **[レジスタ]** ウィンドウに次のフラグが表示されることがあります。 デバッグ セッション中に、これらのフラグを編集することもできます。
 
 |フラグ|値の設定|
 |-|-|
-|オーバーフロー|OV-ES = 1|
+|オーバーフロー|OV = 1|
 |方向|UP = 1|
-|妨害|EI = 1|
+|割り込み|EI = 1|
 |Sign|PL = 1|
 |0|ZR = 1|
-|補助キャリー|AC = 1|
-|なし|PE = 1|
-|実行|CY = 1|
+|補助ファイル|AC = 1|
+|パリティ|PE = 1|
+|Carry|CY = 1|
 
 ## <a name="see-also"></a>関連項目
 - [方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)

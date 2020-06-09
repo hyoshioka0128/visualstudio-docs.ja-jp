@@ -1,5 +1,5 @@
-﻿---
-title: グラフィックスピクセル履歴 |Microsoft Docs
+---
+title: グラフィックス ピクセル履歴 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735481"
@@ -22,7 +22,7 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 
  [ピクセル履歴] ウィンドウを次に示します。
 
- ![履歴に3つの Direct3D イベントがあるピクセル。](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
+ ![その履歴に 3 つの Direct3D イベントがあるピクセル。](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
 
 ## <a name="understanding-the-pixel-history-window"></a>[ピクセル履歴] ウィンドウについて
  [ピクセル履歴] を使用すると、レンダー ターゲットの特定のピクセルが、特定のフレームの処理で Direct3D イベントの影響をどのように受けたかを分析できます。 ピクセルの最終的なカラー値が、後続のイベントまたは同じイベント内の後続のプリミティブによって変更された場合でも、レンダリングに関する問題の発生元である Direct3D イベントを正確に特定できます。 たとえば、ピクセルが正しくレンダリングされず、その色がフレームバッファー内で別の半透明ピクセルの色と混ざり合うことによって、あいまいになる場合があります。 レンダー ターゲットの最終的な内容だけを手がかりに、このような問題を診断することは困難です。
@@ -35,14 +35,14 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 
  各プリミティブを展開すると、ピクセル シェーダーの出力が、どのように既存のピクセルの色にマージされ、結果の色が作成されたかを調べることができます。 ここでは、プリミティブに関連付けられているピクセル シェーダーのコードを確認またはデバッグしたり、頂点シェーダー ノードをさらに展開して、頂点シェーダーの入力を確認したりすることもできます。
 
-### <a name="exclusion"></a>プリミティブの除外
+### <a name="primitive-exclusion"></a><a name="exclusion"></a>プリミティブの除外
  プリミティブがピクセルの色に影響を与えるプリミティブから除外される場合、その除外の理由はさまざまです。 それぞれの理由は、次の表に記載されているアイコンで表されます。
 
 |アイコン|除外の理由|
 |----------|--------------------------|
-|![深さテストの失敗アイコン。](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|ピクセルは深度テストに失敗したため除外されました。|
-|![シザーテストエラーアイコン。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|ピクセルはハサミ テストに失敗したため除外されました。|
-|![ステンシルテストの失敗アイコン。](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|ピクセルはステンシル テストに失敗したため除外されました。|
+|![深度テスト エラー アイコン。](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|ピクセルは深度テストに失敗したため除外されました。|
+|![ハサミ テスト エラー アイコン。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|ピクセルはハサミ テストに失敗したため除外されました。|
+|![ステンシル テスト エラー アイコン。](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|ピクセルはステンシル テストに失敗したため除外されました。|
 
 ### <a name="draw-call-exclusion"></a>描画呼び出しの除外
  描画呼び出し内のすべてのプリミティブが、テストに失敗したことが原因で、レンダー ターゲットに影響を与えるプリミティブから除外された場合、その描画呼び出しは展開できず、除外の理由に対応するアイコンが、描画呼び出しの横に表示されます。 描画呼び出しの除外の理由は、プリミティブの除外の理由と似ており、そのアイコンも似ています。

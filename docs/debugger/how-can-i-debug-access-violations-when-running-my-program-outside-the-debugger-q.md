@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f5009bae2d7679081e29ae8f46d72455beac7e11
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734567"
@@ -31,7 +31,7 @@ ms.locfileid: "72734567"
 ## <a name="problem-description"></a>問題の説明
  プログラムが Visual Studio 環境では正しく動作するのに、Windows オペレーティング システムでスタンドアロンで実行するとアクセス違反が発生します。 どのようにデバッグしたらいいのでしょうか。
 
-## <a name="solution"></a>解決策:
+## <a name="solution"></a>ソリューション
  [[Just-In-Time デバッグ]](../debugger/just-in-time-debugging-in-visual-studio.md) オプションを設定し、アクセス違反が発生するまでプログラムをスタンドアロンで実行します。 その後、 **[アクセス違反です]** ダイアログ ボックスが表示されたら、 **[キャンセル]** をクリックしてデバッガーを起動します。
 
 ## <a name="see-also"></a>関連項目
