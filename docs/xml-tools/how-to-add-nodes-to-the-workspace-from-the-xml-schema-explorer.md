@@ -17,7 +17,7 @@ ms.locfileid: "75592816"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>方法: XML スキーマ エクスプローラーからワークスペースにノードを追加する
 
-このトピックでは、**XML スキーマ エクスプローラー**から [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)にノードを追加する方法について説明します。 これは、**XML スキーマ エクスプローラー**から XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、**XML スキーマ エクスプローラー**のコンテキスト メニューを使用することによって行うことができます。 さらに、**XML スキーマ エクスプローラー**の検索結果で強調表示されたノードを追加することもできます。 詳細については、[スキーマ セットの検索結果のノードをワークスペースに追加する](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)」を参照してください。
+このトピックでは、**XML スキーマ エクスプローラー**から [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)にノードを追加する方法について説明します。 これは、**XML スキーマ エクスプローラー**から XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、**XML スキーマ エクスプローラー**のコンテキスト メニューを使用することによって行うことができます。 さらに、**XML スキーマ エクスプローラー**の検索結果で強調表示されたノードを追加することもできます。 詳細については、「[方法:スキーマ セットの検索結果のノードをワークスペースに追加する](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)」を参照してください。
 
 > [!NOTE]
 > [XML スキーマ デザイナー ワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加できるのは、グローバル ノードだけです。
@@ -36,7 +36,7 @@ ms.locfileid: "75592816"
 
      **XML スキーマ エクスプローラー**にノードが強調表示されます。
 
-2. **XML スキーマ エクスプローラー**で `PurchaseOrderType` ノードを右クリックし、 **[すべての参照の表示]** をクリックします。
+2. **XML スキーマ エクスプローラー**で `PurchaseOrderType` ノードを右クリックし、**[すべての参照の表示]** をクリックします。
 
      `purchaseOrder` ノードが強調表示されます。
 
