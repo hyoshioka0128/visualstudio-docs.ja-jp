@@ -1,5 +1,5 @@
-﻿---
-title: COM および ActiveX のデバッグ |Microsoft Docs
+---
+title: COM および ActiveX のデバッグ | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188686"
@@ -32,14 +32,14 @@ ms.locfileid: "73188686"
 ここでは、COM アプリケーションと ActiveX コントロールのデバッグに関するヒントを紹介します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [COM サーバーとコンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)COM アプリケーションのデバッグ時の特別な考慮事項について紹介します。 同じソリューション内の 2 つのプロジェクトを使った COM サーバーおよびコンテナーのデバッグ、プロセス間をまたぐ呼び出しのトレース、コールバック関数でのブレークポイントの設定、コンテナーとサーバー間のステップ実行などの問題を扱います。
+ [COM サーバーとコンテナーのデバッグ](../debugger/com-server-and-container-debugging.md) COM アプリケーションをデバッグするときに特に考慮が必要な事項を説明します。 同じソリューション内の 2 つのプロジェクトを使った COM サーバーおよびコンテナーのデバッグ、プロセス間をまたぐ呼び出しのトレース、コールバック関数でのブレークポイントの設定、コンテナーとサーバー間のステップ実行などの問題を扱います。
 
- [方法: ActiveX コントロールをデバッグ](../debugger/how-to-debug-an-activex-control.md)するActiveX コントロールのデバッグについて説明します。 デバッグ セッションでコンテナーを指定して ActiveX コントロール内のコードの実行状況を見る方法、データ連結 ActiveX コントロールのデバッグ、特定のコンテナーのシミュレート、コンテナーのコードのステップ実行などを扱います。
+ [方法: ActiveX コントロールのデバッグ](../debugger/how-to-debug-an-activex-control.md) ActiveX コントロールのデバッグについて説明します。 デバッグ セッションでコンテナーを指定して ActiveX コントロール内のコードの実行状況を見る方法、データ連結 ActiveX コントロールのデバッグ、特定のコンテナーのシミュレート、コンテナーのコードのステップ実行などを扱います。
 
- [COM デバッグツール](../debugger/com-debugging-tools.md)COM アプリケーションのデバッグに役立つビューアーとサンプルアプリケーションの一覧を示します。
+ [COM デバッグ ツール](../debugger/com-debugging-tools.md) COM アプリケーションのデバッグに使用できるビューアーおよびサンプル アプリケーションを紹介します。
 
 ## <a name="related-sections"></a>関連項目
- [最初にデバッガーを確認する](../debugger/debugger-feature-tour.md)デバッグドキュメントのより大きなセクションへのリンクを示します。 情報には、デバッガーの新機能、設定と準備、ブレークポイント、例外処理、エディットコンティニュ、マネージコードのデバッグ、 C++プロジェクトのデバッグ、COM と ActiveX のデバッグ、dll のデバッグ、SQL のデバッグ、およびユーザーが含まれます。インターフェイス参照。
+ [デバッガーでのはじめに](../debugger/debugger-feature-tour.md): デバッグ ドキュメントの重要なセクションへのリンクを提供します。 デバッガーの新機能、設定と準備、ブレークポイント、例外の処理、エディット コンティニュ、マネージド コードのデバッグ、C++ プロジェクトのデバッグ、COM および ActiveX のデバッグ、DLL のデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報へのリンクを提供します。
 
 ## <a name="see-also"></a>関連項目
 

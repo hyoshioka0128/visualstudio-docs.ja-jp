@@ -1,5 +1,5 @@
 ---
-title: XML エディターとスキーマデザイナー
+title: XML エディターとスキーマ デザイナー
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -34,48 +34,48 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592309"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio の XML ツール
 
-*拡張マークアップ言語 (XML)* マークアップ言語であり、データを記述する形式を提供します。 XML は、拡張スタイルシート言語 (XSL) やカスケードスタイルシート (CSS) などの関連付けられたスタイルシートを使用して、データとそのプレゼンテーションを分離します。 Visual Studio には、XML、XSLT、および XML スキーマの操作を容易にするツールと機能が含まれています。
+*XML (拡張マークアップ言語)* は、データの記述形式を定めたマークアップ言語です。 XML は、拡張スタイルシート言語 (XSL) やカスケード スタイル シート (CSS) など、関連付けられたスタイル シートを使用して、データとそのプレゼンテーションを分離します。 Visual Studio には、XML、XSLT、および XML スキーマの操作を容易にするツールと機能が含まれています。
 
 ## <a name="xml-editor"></a>XML エディター
 
-Xml[エディター](xml-editor.md)は、xml ドキュメントを編集するために使用されます。 完全な XML 構文チェック、入力中のスキーマ検証、カラーコーディング、IntelliSense が用意されています。 スキーマまたはドキュメント型定義が提供された場合は IntelliSense によって使用され、使用可能な要素と属性が一覧で示されます。
+[XML エディター](xml-editor.md)は、XML ドキュメントの編集に使用します。 このエディターは、XML の完全構文チェック、入力中のスキーマ検証、コードの色分け表示、および IntelliSense を提供します。 スキーマまたはドキュメント型定義が提供された場合は IntelliSense によって使用され、使用可能な要素と属性が一覧で示されます。
 
 次のような機能も含まれています。
 
-- XML スニペットのサポート (スキーマで生成されたスニペットを含む)
+- スキーマから生成されるスニペットを含めた、XML スニペットのサポート
 
-- 要素を展開および折りたたむことができるようにアウトラインを文書化する
+- 要素の展開と折りたたみが可能なドキュメントのアウトライン表示
 
-- XSLT 変換を実行し、結果をテキスト、XML、または HTML として表示する機能
+- XSLT 変換を実行し、結果をテキスト、XML、または HTML で表示する機能
 
-- Xml インスタンスドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能
+- XML インスタンス ドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能
 
-- XSLT スタイルシートの編集 (IntelliSense サポートを含む) のサポート
+- IntelliSense サポートを含めた、XSLT スタイル シートの編集のサポート
 
 - XML スキーマ エクスプローラー
 
 ## <a name="xml-schema-designer"></a>XML スキーマ デザイナー
 
-Xml[スキーマデザイナー](xml-schema-designer.md)は、xml スキーマ定義言語 (XSD) スキーマを操作できるように、Visual STUDIO および xml エディターと統合されています。
+[XML スキーマ デザイナー](xml-schema-designer.md)は Visual Studio および XML エディターに統合されており、これを使用すると、XML スキーマ定義言語 (XSD) スキーマの操作が可能になります。
 
 ## <a name="xslt-debugging"></a>XSLT のデバッグ
 
-Visual Studio は[XSLT スタイルシートのデバッグ](../xml-tools/debugging-xslt.md)をサポートしています。 デバッガーを使用すると、XSLT スタイル シート内のブレークポイントの設定や、コードから XSLT スタイル シートへのステップ インなどが可能になります。
+Visual Studio は [XSLT スタイル シート](../xml-tools/debugging-xslt.md)のデバッグをサポートしています。 デバッガーを使用すると、XSLT スタイル シート内のブレークポイントの設定や、コードから XSLT スタイル シートへのステップ インなどが可能になります。
 
 > [!NOTE]
-> XSLT デバッガーは、Visual Studio の Enterprise edition でのみ使用できます。
+> XSLT デバッガーは、Visual Studio の Enterprise Edition でのみ使用できます。
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:System.Xml?displayProperty=fullName>
 - [XSLT 変換](/dotnet/standard/data/xml/xslt-transformations)
-- [XPath データモデルを使用して XML データを処理する](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [XPath データ モデルを使用した XML データの処理](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
 - [XML ドキュメント オブジェクト モデル (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)
 - [XML スキーマ オブジェクト モデル (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)

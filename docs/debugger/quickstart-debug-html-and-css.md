@@ -1,5 +1,5 @@
 ---
-title: UWP アプリで HTML と CSS をデバッグする |Microsoft Docs
+title: UWP アプリの HTML と CSS をデバッグする | Microsoft Docs
 ms.date: 07/17/2018
 ms.topic: conceptual
 f1_keywords:
@@ -19,24 +19,24 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
 ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73568916"
 ---
-# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio での UWP アプリでの HTML と CSS のデバッグ
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリの HTML と CSS をデバッグする
 
-Visual Studio では、JavaScript アプリに総合的なデバッグ機能が用意されており、Internet Explorer および Visual Studio の開発者には使い慣れた機能が含まれています。 これらの機能は、UWP アプリと、Apache Cordova の Visual Studio Tools を使用して作成されたアプリでサポートされています。
+Visual Studio では、JavaScript アプリに総合的なデバッグ機能が用意されており、Internet Explorer および Visual Studio の開発者には使い慣れた機能が含まれています。 これらの機能は、UWP アプリおよび Visual Studio Tools for Apache Cordova を使用して作成されたアプリでサポートされています。
 
 DOM 検査ツールが提供する対話式のデバッグ モデルを使用すると、レンダリングされる HTML および CSS のコードを表示および変更できます。 これらはすべてデバッガーを停止して再起動することなく実行できます。
 
-JavaScript コンソールウィンドウの使用やブレークポイントの設定など、JavaScript のその他のデバッグ機能の詳細については、「[クイックスタート:](../debugger/quickstart-debug-javascript-using-the-console.md) [Visual Studio で](debugging-windows-store-and-windows-universal-apps.md)の javascript およびデバッグアプリのデバッグ」を参照してください。
+JAvaScript コンソール ウィンドウの使用やブレーク ポイントの設定などの JAvaScript の他のデバッグ機能の詳細については、[JavaScript のデバッグのクイックスタート](../debugger/quickstart-debug-javascript-using-the-console.md)と [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)に関するページを参照してください。
 
-## <a name="InspectingDOM"></a> ライブ DOM の検査
+## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a> ライブ DOM の検査
 DOM Explorer ではレンダリングされるページのビューが示され、DOM Explorer を使用すると値を変更して結果をすぐに確認できます。 これにより、デバッガーを停止して再起動することなく変更をテストできます。 この方法でページと対話するときはプロジェクトのソース コードは変更されないので、必要なコード修正が見つかったら、ソース コードを変更します。
 
 > [!TIP]
-> ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、「[アプリを更新する (JavaScript)](../debugger/refresh-an-app-javascript.md)」を参照してください。
+> ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、[アプリ (JavaScript) の更新](../debugger/refresh-an-app-javascript.md)に関するページを参照してください。
 
 DOM Explorer を使用すると次のことができます。
 
@@ -46,7 +46,7 @@ DOM Explorer を使用すると次のことができます。
 
 - CSS スタイルがページ要素に適用される方法を調査し、適用されたルールをトレースします。
 
-  アプリケーションをデバッグするときは、しばしば DOM Explorer で要素を選択する必要があります。 要素を選択すると、DOM Explorer の右側のタブに表示される値が、DOM Explorer での要素の選択を反映して自動的に更新されます。 このようなタブとしては、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** があります。 UWP アプリでは、 **[イベント]** タブと **[変更]** タブもサポートされています。 要素の選択の詳細については、「 [Selecting elements](#SelectingElements)」を参照してください。
+  アプリケーションをデバッグするときは、しばしば DOM Explorer で要素を選択する必要があります。 要素を選択すると、DOM Explorer の右側のタブに表示される値が、DOM Explorer での要素の選択を反映して自動的に更新されます。 タブは次のとおりです。 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** です。 UWP アプリでは **[イベント]** タブと **[変更]** タブもサポートされています。 要素の選択の詳細については、「 [Selecting elements](#SelectingElements)」を参照してください。
 
 > [!TIP]
 > 閉じた DOM Explorer ウィンドウを再び開くには、 **[デバッグ]** > **[ウィンドウ]**  >  **[DOM Explorer]** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。
@@ -54,17 +54,17 @@ DOM Explorer を使用すると次のことができます。
 次の手順では、DOM Explorer を使用してアプリを対話的にデバッグするプロセスを実行します。 `FlipView` コントロールを使用するアプリケーションを作成した後、それをデバッグします。 アプリケーションには複数のエラーが含まれています。
 
 > [!WARNING]
-> 次のサンプルアプリは UWP アプリです。 Cordova でも同じ機能がサポートされていますが、アプリは異なります。
+> 次のサンプル アプリは UWP ストア アプリです。 Cordova でも同じ機能がサポートされていますが、アプリは異なります。
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>次の方法で、ライブ DOM を検査することによってデバッグします。
 
 1. Visual Studio で **[ファイル]**  >  **[新しいプロジェクト]** 」を参照してください。
 
-2. [ **JavaScript**  > **Windows Universal**] を選択し、 **[WinJS App]** を選択します。
+2. **[JavaScript]**  >  **[Windows ユニバーサル]** を選択し、次に **[WinJS App]\(WinJS アプリ\)** を選択します。
 
 3. `FlipViewApp`などのプロジェクトの名前を入力し、 **[OK]** を選んでアプリを作成します。
 
-4. Index .html の BODY 要素に、次のコードを追加します。
+4. index.html の BODY 要素に、次のコードを追加します。
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -141,17 +141,17 @@ DOM Explorer を使用すると次のことができます。
     })();
     ```
 
-    次の図は、このアプリを実行する場合に表示される内容を示しています。 ただし、アプリをこの状態にするには、まず、多数のバグを修正する必要があります。
+    次の図は、このアプリを実行したときに表示される内容を示しています。 ただし、アプリをこの状態にするには、まず、多数のバグを修正する必要があります。
 
-    ![期待される結果を示す FlipView アプリ](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
+    ![予想される結果を表示する FlipView アプリ](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
-7. **[デバッグ]** ツールバーの **[デバッグの開始]** ボタンの横にあるドロップダウンリストから **[ローカルコンピューター]** を選択します。
+7. **[デバッグ]** ツールバーの **[デバッグの開始]** ボタンの横にあるドロップダウン リストから **[ローカル コンピューター]** を選択します。
 
-    ![デバッグターゲットリストの選択](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![デバッグ ターゲット リストを選択する](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. **[デバッグ]**  > **Start [デバッグ]ging**の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。
 
-    これにより、アプリが実行されますが、スタイルにはいくつかバグがあるため、ほとんど空白の画面が表示されます。 最初の `FlipView` のイメージが、画面の中央の小さい四角形に表示されます。
+    これによりアプリは実行されますが、スタイリングにはいくつかバグがあるため、画面にはほとんど何も表示されません。 最初の `FlipView` のイメージが、画面の中央の小さい四角形に表示されます。
 
 9. Visual Studio に切り替え、 **[DOM Explorer]** タブをクリックします。
 
@@ -175,20 +175,20 @@ DOM Explorer を使用すると次のことができます。
 
     **[計算済み]** タブを次の図に示します。
 
-    ![DOM Explorer 計算済み タブ](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
+    ![DOM Explorer の [計算済み] タブ](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
 
 13. DOM Explorer のメイン ウィンドウで、 `fView` DIV 要素の高さと幅のインライン スタイルをダブルクリックします。 ここで値を編集することができます。 このシナリオでは、これらを完全に削除する必要があります。
 
-14. メインウィンドウで、[`width: 100px;height: 100px;`] をダブルクリックし、 **del**キーを押して、 **enter キーを押します。** デバッグセッションを停止していなくても、Enter キーを押すとすぐに、新しい値がアプリに反映されます。
+14. メイン ウィンドウで、`width: 100px;height: 100px;` をダブルクリックし、**Delete** キーを押してから、**Enter** キーを押します。 デバッグ セッションを停止していなくても、Enter キーを押すとすぐに、新しい値がアプリに反映されます。
 
     > [!IMPORTANT]
     > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** の各タブに表示される値も更新できます。
 
-15. アプリを選択するか、Alt + Tab キーを押してアプリに切り替えます。
+15. アプリを選択するか、または Alt + Tab を使って、アプリケーションに切り替えます。
 
     これで、 `FlipView` コントロールがシミュレーターまたは Phone エミュレーターの画面を超えるサイズで表示されます。 これは意図した結果ではありません。 Visual Studio に戻って、調査します。
 
-16. DOM Explorer で、 **[計算済み]** タブを再度クリックし、高さの規則を開きます。 FView 要素の値は、CSS から予想されるように100% のままですが、計算値はアプリの画面の高さ (たとえば、800px、667.67 px、その他の値) と等しくなりますが、このアプリには必要ありません。 調査のために、次の手順では `fView` DIV 要素の高さと幅を削除します。
+16. DOM Explorer で、 **[計算済み]** タブを再度クリックし、高さの規則を開きます。 fView 要素は、CSS から予想されるように 100% の値を示したままですが、計算済みの値はアプリの画面の高さと等しく (800px または 667.67px など)、このアプリで必要な高さではありません。 調査するために、次のステップで `fView` DIV 要素の高さと幅を削除することができます。
 
 17. **[スタイル]** タブで、 `#fView` CSS セレクターの高さと幅のプロパティのチェックボックスをオフにします。
 
@@ -200,13 +200,13 @@ DOM Explorer を使用すると次のことができます。
 
 19. 調査のため、Visual Studio に切り替え、 **[レイアウト]** タブを選び、要素のボックス モデルを確認します。
 
-    **[レイアウト]** タブには、次のような内容が表示されます。
+    **[レイアウト]** タブに、次が表示されます。
 
-    - デバイスの解像度に応じて、255px (オフセット) と 255px (Margin) または類似の値。
+    - デバイスの解像度に応じて、255px (オフセット) および 255px (余白) または類似の値。
 
-      次の図は、100 px オフセットと余白のエミュレーターを使用している場合の **[レイアウト]** タブの外観を示しています。
+      次の図は、100pxの オフセットと余白でエミュレーターを使用している場合の **[レイアウト]** タブを示しています。
 
-      ![DOM Explorer レイアウト タブ](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
+      ![DOM Explorer の [レイアウト] タブ](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
 
       これは正しくありません。 **[計算済み]** タブでも、同じ余白の値が表示されます。
 
@@ -224,20 +224,20 @@ DOM Explorer を使用すると次のことができます。
 
 2. default.html を開き、 `"fView"` DIV 要素の高さと幅を 100% に変更して、ソース コードを変更します。
 
-3. [デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンをクリックします (または、F4 キーを押します)。 ボタンは次のようになります。 [ ![Windows アプリケーションの更新] ボタン](../debugger/media/js_refresh.png "JS_Refresh")。
+3. [デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンをクリックします (または、F4 キーを押します)。 このボタンは次のように表示されます。![[Windows アプリの更新] ボタン](../debugger/media/js_refresh.png "JS_Refresh")
 
     アプリのページが再読み込みされ、シミュレーターまたは Phone エミュレーターが前面に戻ります。
 
-    更新機能の詳細については、「[アプリを更新する (JavaScript)](../debugger/refresh-an-app-javascript.md)」を参照してください。
+    更新機能の詳細については、「[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)」を参照してください。
 
-## <a name="SelectingElements"></a> Selecting elements
+## <a name="selecting-elements"></a><a name="SelectingElements"></a> Selecting elements
 アプリケーションをデバッグするときに、次の 3 種類の方法で DOM 要素を選択できます。
 
 - 直接 DOM エクスプローラー ウィンドウの要素をクリックする (または方向キーを使用)。
 
 - **[要素の選択]** ボタン (Ctrl + B キー) を使用する。
 
-- [JavaScript コンソールコマンド](../debugger/javascript-console-commands.md?view=vs-2017)の1つである `select` コマンドを使用します。
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017) の 1 つである `select` コマンドを使用する。
 
   DOM Explorer のウィンドウを使用して要素を選択するときに、要素にマウス ポインターを置くと、対応する要素が実行しているアプリで強調表示されます。 これを行うには、DOM Explorer の要素をクリックして選択する必要があります。または、方向キーを使用して、要素を強調表示して選択できます。 **[要素の選択]** ボタンを使用して DOM Explorer の要素を選択することもできます。 次の図は、 **[要素の選択]** ボタンを示しています。
 
@@ -247,7 +247,7 @@ DOM Explorer を使用すると次のことができます。
 
   **[要素の選択]** をクリックする前に、 **[Display web page highlights] (Web ページの強調表示を表示)** を切り替えて実行しているアプリの要素を強調表示するかどうかを指定できます。 次の図は、このボタンを示しています。 強調表示は、既定で表示されます。
 
-  ![[Web ページの強調表示] ボタンを表示する](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
+  ![Web ページ ハイライト ボタンの表示](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 
   強調表示する要素を選択する場合、シミュレーターでマウス ポインターを置く要素が強調表示されます。 強調表示された要素の色は、DOM Explorer の **[レイアウト]** タブに表示されるボックス モデルと一致します。
 

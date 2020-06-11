@@ -1,5 +1,5 @@
 ---
-title: '方法: スクリプトドキュメントを表示する |Microsoft Docs'
+title: '方法: スクリプト ドキュメントを表示する | Microsoft Docs'
 ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
 ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/07/2019
 ms.locfileid: "73714438"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>方法: スクリプトドキュメントを表示する (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>方法: スクリプト ドキュメントを表示する (JavaScript)
 
-サーバー側のスクリプトファイルはソリューションエクスプローラーに表示されます。 クライアント側スクリプト ファイルは、デバッグ モードまたは中断モードのときにのみ表示されます。 クライアント側のスクリプトファイルは、**スクリプトドキュメント**ノードに表示されます。
+サーバー側スクリプト ファイルはソリューション エクスプローラーに表示されます。 クライアント側スクリプト ファイルは、デバッグ モードまたは中断モードのときにのみ表示されます。 クライアント側スクリプト ファイルは、 **[スクリプト ドキュメント]** ノードに表示されます。
 
-ページを動的に生成するアプリケーションの種類によっては、ブラウザーに読み込まれたスクリプトドキュメントからブレークポイントを設定すると、中断モードとデバッグが簡単になります。 同様に、読み込まれたスクリプトドキュメントから `debugger` ステートメントを追加して、中断モードにすることができます。 この記事では、これらのドキュメントを表示する方法について説明します。
+ページを動的に生成する一部の種類のアプリケーションでは、ブラウザーに読み込まれるスクリプト ドキュメントからブレークポイントを設定すると、ブレーク モードへの移行とデバッグが簡単になります。 同様に、読み込まれたスクリプト ドキュメントから `debugger` ステートメントを追加して、ブレーク モードにすることができます。 この記事では、これらのドキュメントの表示方法について説明します。
 
 > [!NOTE]
-> [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]以前は、サーバー側スクリプトから生成されたクライアント側スクリプトファイルは [スクリプトエクスプローラー] ウィンドウに表示されていました。
+> [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] までは、サーバー側スクリプトによって生成されたクライアント側スクリプト ファイルは [スクリプト エクスプローラー] ウィンドウに表示されました。
 
 ### <a name="to-view-a-server-side-script-document"></a>サーバー側スクリプト ドキュメントを表示するには
 

@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592439"
@@ -45,7 +45,7 @@ ms.locfileid: "75592439"
     </xsl:stylesheet>
     ```
 
-2. `<xsl:template name="msg23" match="msg23">` の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl:call-template` 要素を入力します。
+2. `<xsl:template name="msg23" match="msg23">` の後ろにカーソルを置き、**Enter** キーを押します。 その後、次の `xsl:call-template` 要素を入力します。
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "75592439"
 
      入力中、`name=""` 要素の `xsl:call-template` 属性にテンプレート名の一覧が表示されます。
 
-3. `<xsl:call-template name="localized-message">` の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl:with-param` 要素を入力します。
+3. `<xsl:call-template name="localized-message">` の後ろにカーソルを置き、**Enter** キーを押します。 その後、次の `xsl:with-param` 要素を入力します。
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ ms.locfileid: "75592439"
     </xsl:stylesheet>
     ```
 
-2. `<xsl:apply-templates select="phone" />` の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl: apply-templates` 要素を入力します。
+2. `<xsl:apply-templates select="phone" />` の後ろにカーソルを置き、**Enter** キーを押します。 その後、次の `xsl: apply-templates` 要素を入力します。
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ ms.locfileid: "75592439"
     </xsl:stylesheet>
     ```
 
-2. `<xsl:stylesheet version="1.0">` の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl:namespace-alias` 要素を入力します。
+2. `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` の後ろにカーソルを置き、**Enter** キーを押します。 その後、次の `xsl:namespace-alias` 要素を入力します。
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
