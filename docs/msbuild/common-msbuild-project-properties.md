@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7502644c9820b47149acb4a9b8a749bec70551e4
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634423"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180429"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 
@@ -118,6 +118,7 @@ ms.locfileid: "77634423"
 | Satellite_Win32Resource | サテライト アセンブリに Win32 リソース ( *.res* ファイル) を挿入します。 |
 | SGenToolPath | *SGen.exe* の現在のバージョンがオーバーライドされた場合に *SGen.exe* を取得する場所を示すツール パスです (省略可能)。 このプロパティは .NET Framework にのみ使用されます。|
 | SGenUseProxyTypes | *SGen.exe* によってプロキシ型を生成するかどうかを示すブール値です。 これは、*GenerateSerializationAssemblies* がオンに設定されているときにのみに適用されます。また、.NET Framework 専用です。<br /><br /> SGen ターゲットは、このプロパティを使用して UseProxyTypes フラグを設定します。 このプロパティの既定値は true で、これを変更するための UI はありません。 webservice 以外の型のシリアル化アセンブリを生成するには、*Microsoft.Common.Targets* または *C#/VB.targets* をインポートする前に、このプロパティをプロジェクト ファイルに追加し、その値を false に設定します。 |
+| SkipInvalidConfigurations | `true` の場合、無効なプラットフォームと構成の組み合わせに対して警告が生成されますが、ビルドは失敗しません。`false` または未定義 (既定値) の場合、エラーが生成されます。 |
 | StartupObject | Main メソッドまたは Sub Main プロシージャを含むクラスまたはモジュールを指定します。 このプロパティは、`/main` コンパイラ スイッチに相当します。 |
 | SubsystemVersion | 生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値については、「[/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion)」または「[/subsystemversion (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option)」を参照してください。 |
 | TargetCompactFramework | ビルドするアプリケーションの実行に必要な .NET Compact Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |

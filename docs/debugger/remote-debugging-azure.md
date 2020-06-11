@@ -1,7 +1,7 @@
 ---
 title: IIS と Azure 上で ASP.NET Core をリモート デバッグする | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 04/14/2020
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 079e324f2304118c9041118c13e8ebc0cce2015c
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385508"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184251"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Azure の Visual Studio で IIS 上の ASP.NET Core をリモート デバッグする
 
@@ -105,6 +105,7 @@ Windows Server 用の Azure VM を作成し、IIS とその他の必要なソフ
 これらの手順は、次のサーバー構成でテストされています。
 * Windows Server 2012 R2 および IIS 8
 * Windows Server 2016 および IIS 10
+* Windows Server 2019 および IIS 10
 
 ### <a name="app-already-running-in-iis-on-the-azure-vm"></a>アプリは Azure VM 上の IIS で既に実行されていますか?
 
@@ -116,7 +117,7 @@ Windows Server 用の Azure VM を作成し、IIS とその他の必要なソフ
 
   * 開始する前に、[IIS のインストールと実行](/azure/virtual-machines/windows/quick-create-portal)に記載されているすべての手順を実行します。
 
-  * ネットワーク セキュリティ グループでポート 80 を開くときは、リモート デバッガー用の[適切なポート](#bkmk_openports) (4024 または 4022) も開きます。 こうすることで後で開く必要がなくなります。
+  * ネットワーク セキュリティ グループでポート 80 を開くときは、リモート デバッガー用の[適切なポート](#bkmk_openports) (4024 または 4022) も開きます。 こうすることで後で開く必要がなくなります。 Web 配置を使用している場合は、ポート 8172 も開きます。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Windows Server 上でブラウザーのセキュリティ設定を更新する
 
@@ -131,7 +132,10 @@ Internet Explorer で [セキュリティ強化の構成] が有効な場合は 
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Windows Server に ASP.NET Core をインストールする
 
-1. ホスティング システムに [.NET Core Windows Server ホスティング](https://aka.ms/dotnetcore-2-windowshosting) バンドルをインストールします。 このバンドルをインストールすることで、.NET Core ランタイム、.NET Core ライブラリ、ASP.NET Core モジュールがインストールされます。 詳細な手順については、[IIS への発行](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)に関するページを参照してください。
+1. ホスト システムに .NET Core ホスティング バンドルをインストールします。 このバンドルをインストールすることで、.NET Core ランタイム、.NET Core ライブラリ、ASP.NET Core モジュールがインストールされます。 詳細な手順については、[IIS への発行](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)に関するページを参照してください。
+
+    .NET Core 3 の場合は、[.NET Core ホスティング バンドル](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)をインストールします。
+    .NET Core 2 の場合は、[.NET Core Windows Server ホスティング](https://aka.ms/dotnetcore-2-windowshosting)をインストールします。
 
     > [!NOTE]
     > システムにインターネット接続が設定されていない場合は、.NET Core Windows Server ホスティング バンドルをインストールする前に、 *[Microsoft Visual C++ 2015 再頒布可能パッケージ](https://www.microsoft.com/download/details.aspx?id=53840)* を入手してインストールしてください。
@@ -151,7 +155,13 @@ IIS へのアプリの配置についてヘルプが必要な場合は、次の�
 このオプションを使用すると、発行設定ファイルを作成し、それを Visual Studio にインポートすることができます。
 
 > [!NOTE]
-> この配置方法では、Web 配置を使用します。 設定をインポートするのではなく、Visual Studio で Web 配置を手動で構成する場合は、ホスティング サーバー用 Web 配置 3.6 ではなく、Web 配置 3.6 をインストールすることができます。 ただし、Web 配置を手動で構成する場合は、サーバー上のアプリ フォルダーが正しい値とアクセス許可で構成されていることを確認する必要があります ([ASP.NET Web サイトの構成](#BKMK_deploy_asp_net)に関するセクションを参照してください)。
+> この配置方法では Web 配置を使用するため、サーバーに Web 配置がインストールされている必要があります。 設定をインポートするのではなく、Web 配置を手動で構成する場合は、ホスティング サーバー用 Web 配置 3.6 ではなく、Web 配置 3.6 をインストールすることができます。 ただし、Web 配置を手動で構成する場合は、サーバー上のアプリ フォルダーが正しい値とアクセス許可で構成されていることを確認する必要があります ([ASP.NET Web サイトの構成](#BKMK_deploy_asp_net)に関するセクションを参照してください)。
+
+### <a name="configure-the-aspnet-core-web-site"></a>ASP.NET Core Web サイトを構成する
+
+1. IIS マネージャーの左側のウィンドウで、 **[接続]** の **[アプリケーション プール]** を選択します。 **DefaultAppPool** を開き、 **[.NET CLR バージョン]** を **[マネージド コードなし]** に設定します。 これは ASP.NET Core に必要です。 既定の Web サイトで DefaultAppPool が使用されます。
+
+2. DefaultAppPool を停止して再起動します。
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Windows Server にホスティング サーバー用 Web 配置をインストールして構成する
 
@@ -165,11 +175,14 @@ IIS へのアプリの配置についてヘルプが必要な場合は、次の�
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-アプリが正常に配置されたら、自動的に起動されます。 Visual Studio からアプリが起動しない場合は、IIS でアプリを起動します。 ASP.NET Core の場合、**DefaultAppPool** の [アプリケーション プール] フィールドが **[マネージド コードなし]** に設定されていることを確認する必要があります。
+    > [!NOTE]
+    > If you restart an Azure VM, the IP address may change.
+
+アプリが正常に配置されたら、自動的に起動されます。 Visual Studio からアプリが起動しない場合は、IIS でアプリを起動し、正常に動作することを確認します。 ASP.NET Core の場合は、**DefaultAppPool** の [アプリケーション プール] フィールドが **[マネージド コードなし]** に設定されていることも確認する必要があります。
 
 1. **[設定]** ダイアログ ボックスで、 **[次へ]** をクリックしてデバッグを有効にし、 **[デバッグ]** 構成を選択し、 **[ファイル発行オプション]** の **[発行先の追加ファイルを削除する]** を選択します。
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > リリース構成を選択した場合、発行時に *web.config* ファイルのデバッグを無効にします。
 
 1. **[保存]** をクリックしてアプリを再発行します。
@@ -219,15 +232,15 @@ Visual Studio のバージョンと一致するバージョンのリモート �
     > [!TIP]
     > Visual Studio 2017 以降のバージョンで以前にアタッチしたものと同じプロセスに再アタッチするには、 **[デバッグ] > [プロセスに再アタッチする]** (Shift + Alt + P キー) を使用します。
 
-3. [修飾子] フィールドを **\<リモート コンピューター名>** に設定し、**Enter** キーを押します。
+3. [修飾子] フィールドを **\<remote computer name>** に設定し、**Enter** キーを押します。
 
-    Visual Studio で必要なポートがコンピューター名に追加されていることを確認します ( **\<リモート コンピューター名>:port** という形式で表示されます)。
+    Visual Studio で必要なポートがコンピューター名に追加されていることを確認します ( **\<remote computer name>:port** という形式で表示されます)
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 では、 **\<リモート コンピューター名>:4024** が表示されます。
+    Visual Studio 2019 では、 **\<remote computer name>:4024** が表示されます
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 では、 **\<リモート コンピューター名>:4022** が表示されます。
+    Visual Studio 2017 では、 **\<remote computer name>:4022** が表示されます
     ::: moniker-end
     ポートは必須です。 ポート番号が表示されない場合は、手動で追加します。
 
@@ -242,11 +255,11 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 6. プロセス名の最初の文字を入力すると、アプリをすばやく見つけることができます。
 
-    * **dotnet.exe** (.NET Core の場合) を選択します
+    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
 
-      **dotnet.exe** と表示されている複数のプロセスがある場合は、 **[ユーザー名]** 列を確認します。 一部のシナリオでは、 **[ユーザー名]** 列に **IIS APPPOOL\DefaultAppPool** などのアプリ プール名が表示されます。 アプリ プールが表示される場合、正しいプロセスを特定する簡単な方法は、デバッグするアプリ インスタンスの新しい名前付きアプリ プールを作成することです。 **[ユーザー名]** 列で簡単に見つけられるようになります。
+    * それ以外の場合は、**dotnet.exe** プロセスを選択します (これはアウト プロセス ホスティング モデルです)。
 
-    * IIS のシナリオによっては、**MyASPApp.exe** などのアプリ名がプロセス リストに表示される場合があります。 代わりにこのプロセスにアタッチすることができます。
+    *w3wp.exe* または *dotnet.exe* を示す複数のプロセスがある場合は、 **[ユーザー名]** 列を確認します。 一部のシナリオでは、 **[ユーザー名]** 列に **IIS APPPOOL\DefaultAppPool** などのアプリ プール名が表示されます。 アプリ プールが表示され、一意ではない場合は、デバッグするアプリ インスタンスの新しい名前付きアプリ プールを作成すると、 **[ユーザー名]** 列で簡単に見つけることができます。
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -257,7 +270,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 7. **[アタッチ]** をクリックします。
 
-8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<リモート コンピューター名>** に移動します。
+8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<remote computer name>** に移動します。
 
     ASP.NET の Web ページが表示されるはずです。
 9. 実行中の ASP.NET アプリケーションで、 **[バージョン情報]** ページのリンクをクリックします。

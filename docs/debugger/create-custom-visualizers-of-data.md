@@ -1,6 +1,6 @@
 ---
 title: カスタム データ ビジュアライザーを作成する | Microsoft Docs
-ms.date: 11/07/2018
+ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564726"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184550"
 ---
 # <a name="create-custom-data-visualizers"></a>カスタム データ ビジュアライザーを作成する
  "*ビジュアライザー*" は、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーのユーザー インターフェイスの一部で、データ型に適した方法で変数またはオブジェクトが表示されます。 たとえば、HTML ビジュアライザーでは、HTML 文字列が解釈され、結果がブラウザー ウィンドウに表示されるとおりに表示されます。 また、ビットマップ ビジュアライザーは、ビットマップ構造が解釈され、それが表すグラフィックが表示されます。 一部のビジュアライザーでは、データを表示するだけでなく、変更することもできます。
@@ -33,7 +33,7 @@ ms.locfileid: "62564726"
 
 他にも、Microsoft、サード パーティ、コミュニティからダウンロードできるビジュアライザーがあります。 また、独自のビジュアライザーを作成して、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーにインストールすることもできます。
 
-デバッガーでは、ビジュアライザーは拡大鏡アイコン ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザー アイコン")で表されます。 このアイコンを **[データヒント]** 、デバッガーの **[ウォッチ]** ウィンドウ、または **[クイックウォッチ]** ダイアログ ボックスで選択し、対応するオブジェクトに適したビジュアライザーを選択することができます。
+デバッガーでは、ビジュアライザーは拡大鏡アイコン ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザー アイコン") で表されます。 このアイコンを **[データヒント]** 、デバッガーの **[ウォッチ]** ウィンドウ、または **[クイックウォッチ]** ダイアログ ボックスで選択し、対応するオブジェクトに適したビジュアライザーを選択することができます。
 
 ## <a name="write-custom-visualizers"></a>カスタム ビジュアライザーを作成する
 
@@ -72,11 +72,11 @@ ms.locfileid: "62564726"
 
 4. <xref:System.Diagnostics.DebuggerVisualizerAttribute> を適用して、表示するビジュアライザーを指定します (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
 
-### <a name="to-create-the-debuggee-side"></a>デバッグ対象側を作成するには
+### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>デバッグ対象側のビジュアライザー オブジェクト ソースを作成するには
 
-デバッグ対象側コードを指定するには、<xref:System.Diagnostics.DebuggerVisualizerAttribute> を使用します。
+デバッガー側のコードで <xref:System.Diagnostics.DebuggerVisualizerAttribute> を使用して、視覚化する型 (デバッグ対象側のオブジェクト ソース) を指定します。
 
-1. <xref:System.Diagnostics.DebuggerVisualizerAttribute> をビジュアライザー (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) とオブジェクト ソース (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) に適用します。 オブジェクト ソースを省略すると、ビジュアライザーは既定のオブジェクト ソースを使用します。
+1. デバッガー側のコードで、<xref:System.Diagnostics.DebuggerVisualizerAttribute> を編集してオブジェクト ソース (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) を指定します。 `Target` プロパティにオブジェクト ソースが設定されます。 オブジェクト ソースを省略すると、ビジュアライザーは既定のオブジェクト ソースを使用します。
 
 1. ビジュアライザーでデータ オブジェクトを表示するだけでなく編集するには、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> から `TransferData` メソッドまたは `CreateReplacementObject` メソッドをオーバーライドします。
 

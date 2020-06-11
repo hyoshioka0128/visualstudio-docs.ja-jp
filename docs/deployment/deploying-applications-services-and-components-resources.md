@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300853"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173729"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -26,26 +26,26 @@ ms.locfileid: "79300853"
 
 多くの一般的なアプリの種類では、Visual Studio でソリューション エクスプローラーから直接アプリケーションを配置することができます。 この機能のクイック ツアーについては、[配置の概要](../deployment/deploying-applications-services-and-components.md)に関するページを参照してください。
 
-![発行オプションを選択する](../deployment/media/quickstart-publish-azure.png)
+![発行オプションを選択する](../deployment/media/quickstart-publish-dialog.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>状況に適した発行オプション
 
 Visual Studio 内から、次のターゲットにアプリケーションを直接発行できます。
 
-- [Azure App Service](#azure-app-service)
-- [Azure Virtual Machines](#azure-virtual-machines)
-- [ファイル システム](#file-system)
-- [カスタム ターゲット (IIS、FTP など)](#custom-targets-iis-ftp) (任意の Web サーバーをすべて含みます)
+- [Azure](#azure)
+- [Docker コンテナー レジストリ](#docker-container-registry)
+- [フォルダー](#folder)
+- [カスタム ターゲット (IIS、FTP)](#Custom targets (IIS、FTP))
 
 **[発行]** タブでは、既存の発行プロファイルを選んだり、既存の発行プロファイルをインポートしたり、ここで説明するオプションを使って新しい発行プロファイルを作成したりできます。 IDE でのアプリの種類別の発行オプションについては、[デプロイの概要](../deployment/deploying-applications-services-and-components.md)に関する記事を参照してください。
 
-## <a name="azure-app-service"></a>Azure App Service
+## <a name="azure"></a>Azure 
 
-[Azure App Service](/azure/app-service/app-service-web-overview) と [App Service on Linux](/azure/app-service/containers/app-service-linux-intro) は、開発者が拡張性のあるさまざまな Web アプリケーションとサービスをすばやく作成するのに役立ちます。インフラストラクチャを保守する必要はありません。
+### <a name="azure-app-service"></a>Azure App Service
+
+[Azure App Service](/azure/app-service/app-service-web-overview) では、拡張性のある Web アプリケーションとサービスをすばやく作成でき、インフラストラクチャを保守する必要はありません。 App Service は Azure のクラウドでホストされる仮想マシン上で実行されますが、これらの仮想マシンはユーザーが管理します。 App Service の各アプリには、\*.azurewebsites.net という一意の URL が割り当てられます。Free 以外のすべての価格レベルでは、カスタム ドメイン名をサイトに割り当てることもできます。
 
 App Service の[価格レベルまたはプラン](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)を選ぶことで、App Service に備わるコンピューティング能力を決定します。 また、価格レベルを変更することなく、複数の Web アプリ (および他の種類のアプリ) で同じ App Service を共有することもできます。 たとえば、開発、ステージング、運用の Web アプリを同じ App Service でホストすることができます。
-
-App Service は Azure のクラウドでホストされる仮想マシン上で実行されますが、これらの仮想マシンはユーザーが管理します。 App Service の各アプリには、\*.azurewebsites.net という一意の URL が割り当てられます。Free 以外のすべての価格レベルでは、カスタム ドメイン名をサイトに割り当てることもできます。
 
 ### <a name="when-to-choose-azure-app-service"></a>Azure App Service を選ぶ状況
 
@@ -58,7 +58,7 @@ App Service は Azure のクラウドでホストされる仮想マシン上で�
 
 App Service への発行の詳細については、[クイック スタート - Azure App Service への発行](quickstart-deploy-to-azure.md)と[クイック スタート - Linux への ASP.NET Core の発行](quickstart-deploy-to-linux.md)に関するページを参照してください。
 
-## <a name="azure-virtual-machines"></a>Azure Virtual Machines
+### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
 [Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) を使うと、任意の数のコンピューティング リソースをクラウドに作成して管理できます。 VM 上のすべてのソフトウェアと更新プログラムについての責任を負うことにより、ユーザーはお使いのアプリケーションで必要なだけいくらでもカスタマイズできます。 また、ユーザーはリモート デスクトップを介して仮想マシンに直接アクセスでき、各マシンは必要な限り割り当てられた IP アドレスを保持します。
 
@@ -75,7 +75,15 @@ App Service への発行の詳細については、[クイック スタート - 
 
 > 自社のデータセンターまたは他のオンプレミス コンピューターで Azure Virtual Machines を使いたい場合は、[Azure Stack](https://azure.microsoft.com/overview/azure-stack/) を使って行うことができます。
 
-## <a name="file-system"></a>ファイル システム
+## <a name="docker-container-registry"></a>Docker コンテナー レジストリ
+
+アプリケーションで Docker を使用している場合は、コンテナー化されたアプリケーションを Docker コンテナー レジストリに発行できます。
+
+### <a name="when-to-choose-docker-container-registry"></a>Docker コンテナー レジストリを選択するタイミング
+
+- コンテナー化されたアプリケーションを配置する場合
+
+## <a name="folder"></a>フォルダー
 
 ファイル システムへのデプロイとは、ユーザーが所有するコンピューターの特定のフォルダーにアプリケーションのファイルを単にコピーすることです。 この方法は、テスト目的で、またはコンピューターでサーバーも実行している場合に限られた数のユーザーが使うアプリケーションをデプロイする場合に、最もよく使われます。 ターゲット フォルダーがネットワークで共有されている場合、ファイル システムにデプロイすると、他のユーザーも Web アプリケーション ファイルを使用して特定のサーバーにデプロイできます。
 

@@ -1,24 +1,40 @@
 ---
-title: 生産性に関するヒント
-ms.date: 2/21/2019
+title: 生産性ガイド
+ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ad93c03e1a1b260ee14cb27093403f27648d7
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544303"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184082"
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
+# <a name="productivity-guide-for-visual-studio"></a>Visual Studio の生産性に関するガイド
 
-この記事では、コードの記述、移動、デバッグをより迅速かつ効率的に行うのに役立つ Visual Studio の機能に関するヒントを説明します。
+コード記述の時間を節約したい方にぴったりです。 この生産性ガイドでは、Visual Studio の作業開始、コードの記述、コードのデバッグ、エラーの処理、キーボード ショートカットの使用に役立つヒントがすべて&mdash;1 ページにまとめられています。
 
 便利なキーボード ショートカットについては、「[生産性のショートカット](../ide/productivity-shortcuts.md)」をご覧ください。 コマンド ショートカットの完全なリストについては、「[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
+
+## <a name="get-started"></a>作業開始
+
+コマンド、設定、ドキュメント、インストール オプションなど、必要なものをすばやく検索して、メニューから探り出す時間を節約します。 Visual Studio の検索結果内のコマンドについてはキーボード ショートカットを参照してください。より簡単に覚えることができます。 
+
+- **タスク一覧を使用したモック コード**。 コードを完成させるための十分な要件がない場合は、[タスク一覧] を使って、`TODO` や `HACK` などのトークンやカスタム トークンを使用するコード コメントを追跡し、コード内の事前に定義された場所に直接アクセスできるショートカットを管理できます。 詳細については、「[タスク一覧の使用](../ide/using-the-task-list.md.)」を参照してください。
+
+- **ソリューション エクスプローラーのショートカットの使用**。 Visual Studio を初めて使用する場合は、これらのショートカットは便利であり、新しいコードベースを理解しようとしするときに時間を節約できます。 すべてのショートカットの一覧については、「[Visual Studio の既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)」をご覧ください。
+
+- **[Visual Studio でのキーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)** 。 Visual Studio のコマンドのショートカット キーを確認し、カスタマイズしたら、他の人が使用できるようにエクスポートできます。 [オプション] ダイアログ ボックスでいつでもショートカット キーを変更できます。
+
+- **Visual Studio をより使いやすくする**。 Visual Studio には、スクリーン リーダーやその他の支援テクノロジと互換性を持つユーザー補助機能が組み込まれています。 利用可能なすべての機能の一覧については、「[Visual Studio の アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」を参照してください。 
+
+- **Visual Studio の製品ライフサイクルとサービスの確認**。 Visual Studio の更新プログラムを入手する方法、Enterprise および Professional のお客様向けのサポートオプション、Visual Studio の以前のバージョンのサポート、Visual studio サービスの対象ではないコンポーネントについては、「[Visual Studio の製品ライフサイクルとサービス](https://docs.microsoft.com/visualstudio/releases/2019/servicing)」を参照してください。 
+
+- **Visual Studio に NuGet パッケージをインストールして管理する**。 Windows 上の Visual Studio 内で NuGet パッケージ マネージャー UI を使用すると、プロジェクトやソリューション内で NuGet パッケージを簡単にインストール、アンインストール、更新することができます。 詳細については、「[NuGet パッケージ マネージャーを使用して Visual Studio にパッケージをインストールして管理する](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。
 
 ## <a name="write-code"></a>コードの記述
 
@@ -34,9 +50,9 @@ ms.locfileid: "81544303"
 
 - **コード スニペットを使用する**。 組み込みのスニペットを使用するか、独自のスニペットを作成できます。
 
-     スニペットを挿入するには、メニュー バーで **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** の順に選択するか、またはファイルのショートカット メニューを開き、 **[スニペット]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** を選択します。 詳細については、「 [Code Snippets](../ide/code-snippets.md)」を参照してください。
+     スニペットを挿入するには、メニュー バーで **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** の順に選択するか、またはファイルのショートカット メニューを開き、 **[スニペット]**  >  **[スニペットの挿入]** もしくは **[ブロックの挿入]** を選択します。 詳細については、「[Code Snippets](../ide/code-snippets.md)」を参照してください。
 
-- **コード エラーをインラインで修正する**。 クイック アクションを使うと、コードのリファクタリング、生成、その他の変更を、1 つの操作で簡単に行うことができます。 これらのアクションは、ねじ回し ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンまたは電球 ![電球アイコン](media/light-bulb-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Alt**+**Enter** キーまたは **Ctrl**+ **.** キーを押すことで 適用できます。 詳細については、「[クイック アクション](quick-actions.md)」を参照してください。
+- **コード エラーをインラインで修正する**。 クイック アクションを使うと、コードのリファクタリング、生成、その他の変更を、1 つの操作で簡単に行うことができます。 これらのアクションは、ねじ回し ![ねじ回しアイコン](media/light-bulb-icon.png) アイコンまたは電球 ![電球アイコン](media/screwdriver-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Alt**+**Enter** キーまたは **Ctrl**+ **.** キーを押すことで 適用できます。 詳細については、「[クイック アクション](quick-actions.md)」を参照してください。
 
 - **コード要素の定義を表示および編集する**。 メンバー、変数、ローカルなどのコード要素が定義されているモジュールをすばやく表示および編集できます。
 
@@ -44,9 +60,13 @@ ms.locfileid: "81544303"
 
 - **サンプル アプリケーションを使用する**。 [Microsoft Developer Network](https://code.msdn.microsoft.com/) からサンプル アプリケーションをダウンロードしてインストールすると、アプリケーションの開発時間を短縮できます。 また、その分野のサンプル パックをダウンロードして調べることで、特定のテクノロジやプログラミング概念を学習することもできます。
 
-## <a name="navigate-within-your-code"></a>コード内での移動
+- **[書式設定]/[改行] を使用してかっこの書式を変更する**。 **[書式設定]** オプション ページを使って、改行など、コード エディターでのコード書式設定オプションを設定します。 C# でこの設定を使用する方法の詳細については、[オプション ダイアログボックスを参照してください。テキスト エディター > C# > コード スタイル > 書式設定](../ide/reference/options-text-editor-csharp-formatting.md)。 C++ の場合は、[Visual Studio での C++ コーディングの基本設定の設定に関する記事](https://docs.microsoft.com/cpp/ide/how-to-set-preferences)を参照してください。 Python の場合は、「[Python コードの書式を設定する](../python/formatting-python-code.md)」を参照してください。
 
-さまざまな方法を使用して、コード内の特定の場所をすばやく探して移動できます。
+- **タブでインデントを変更する**。 各コードベースに合わせたカスタム エディター設定を使用して、複数の開発者がさまざまなエディターや IDE で同じプロジェクトに取り組む場合に一貫したコーディング スタイルを適用します。 チーム全体が同じ言語規則、名前付け規則、書式設定規則に従っていることを確認します。 これらのカスタム設定は移植性があり、コードと共に移動するため、Visual Studio の外部でもコーディング スタイルを適用できます。 詳細については、「[[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../ide/reference/options-text-editor-all-languages-tabs.md#tabs)」を参照してください。
+
+## <a name="navigate-within-your-code-and-the-ide"></a>コードと IDE 内での移動
+
+さまざまな方法を使用して、コード内の特定の場所をすばやく探して移動できます。 好みに応じて、Visual Studio のウィンドウのレイアウトを変更することもできます。 
 
 - **コード行にブックマークを設定する**。 ブックマークを使用すると、ファイル内の特定のコード行にすばやく移動できます。
 
@@ -57,6 +77,14 @@ ms.locfileid: "81544303"
    この機能にアクセスするには、メニュー バーで **[編集]**  >  **[移動]** の順に選択します。
 
 - **コードの構造全体を参照する**。 **ソリューション エクスプローラー**では、プロジェクト内のクラスとその型およびメンバーを検索および参照できます。 また、シンボルの検索、メソッドの呼び出し階層の表示、シンボル参照の検索などのタスクを実行することもできます。 **ソリューション エクスプローラー**でコード要素を選択すると、関連ファイルが **[プレビュー]** タブに表示され、ファイル内でカーソルがその要素に移動します。 詳細については、「[コードの構造の表示](../ide/viewing-the-structure-of-code.md)」を参照してください。
+
+- **マップモードでファイル内の位置にジャンプする**。 マップ モードでは、コード行がスクロール バーに縮小表示されます。 この表示モードの詳細については、「[方法:スクロール バーのカスタマイズ](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md#map-mode)」を参照してください。
+
+- **コード マップでコードの構造を理解する**。 コード マップを使用すると、コード全体の依存関係を視覚化し、どのように整合するかをファイルやコード行を読まなくても確認できます。 詳しくは、「[Map dependencies with code maps](../modeling/map-dependencies-across-your-solutions.md)」(コード マップでのマップの依存関係) をご覧ください。
+
+- **[編集]/[最近使ったファイルに移動]で頻繁に使用するファイルを参照する**。 Visual Studio の [移動] コマンドは、特定の項目をすばやく検索できるように、コードのフォーカス検索を行います。 詳細な手順については、「[移動コマンドを使用したコードの検索](../ide/go-to.md)」を参照してください。
+
+- **[プロパティ ウィンドウ](../ide/reference/properties-window.md)を右側に移動する**。 より使い慣れたウィンドウ レイアウトを探している場合は、**F4** を押して Visual Studio のプロパティ ウィンドウを移動できます。
 
 ## <a name="find-items-faster"></a>項目の検索の高速化
 
@@ -88,7 +116,9 @@ ms.locfileid: "81544303"
 
 デバッグには時間がかかる場合がありますが、次のヒントはその処理時間を短縮するのに役立ちます。
 
-- **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、[[ブラウザーの選択]](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) ダイアログ ボックスを開かなくても、**Page Inspector (Visual Studio)** など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
+- **Visual Studio デバッガー ツールを使用する**。 Visual Studio で*自分のアプリをデバッグする*とき、通常、それはデバッガー モードでアプリケーションを実行することを意味します。 デバッガーには、コードが実行されている間にそのコードによって何が行われているのかを確認するためのさまざまな方法が用意されています。 作業を開始するためのガイドについては、「[最初に Visual Studio デバッガーを見る](../debugger/debugger-feature-tour.md)」を参照してください。 
+
+- **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、 **[ブラウザーの選択]** ダイアログ ボックスを開かなくても、[Page Inspector (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
 
     ![Web ブラウザーのデバッグ オプションの選択](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -104,9 +134,15 @@ ms.locfileid: "81544303"
 
      データヒントを追加するには、デバッガーが中断モードである必要があります。 変数にカーソルを移動し、表示されたデータヒントのピン ボタンを選択します。 デバッグが停止すると、ソース ファイル内の変数を含むコード行の横に青いピン アイコンが表示されます。 青いピンをポイントすると、最新のデバッグ セッションでの変数の値が表示されます。
 
-- **[イミディエイト]** ウィンドウをクリアする。 デザイン時に [ または ](../ide/reference/immediate-window.md) を入力すると、`>cls`[イミディエイト ウィンドウ]`>Edit.ClearAll` の内容を消去できます。
+- **[イミディエイト]** ウィンドウをクリアする。 デザイン時に `>cls` または `>Edit.ClearAll` を入力すると、[[イミディエイト ウィンドウ]](../ide/reference/immediate-window.md) の内容を消去できます。
 
      その他のコマンドの詳細については、[Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)に関するページを参照してください。
+
+- **[CodeLens によるコード変更とその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)** 。 CodeLens では、エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 コードの参照、コードへの変更、リンクされたバグ、作業項目、コード レビュー、単体テストを検索できます。
+
+- **Live Share を使用して他のユーザーとリアルタイムでデバッグする**。 Live Share では、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集やデバッグができます。 詳細については、[Visual Studio Live Share とは何か](https://docs.microsoft.com/visualstudio/liveshare/)に関するページを参照してください。
+
+- **対話型ウィンドウを使用して小規模のコードを記述してテストする**。 Visual Studio には、任意のコードを入力してすぐに結果を表示できる対話型の read-evaluate-print-loop (REPL) ウィンドウが用意されています。 このコーディング方法は、API とライブラリの学習と実習、およびプロジェクトに含める作業コードを対話形式で開発するのに役立ちます。 Python の場合は、「[Python 対話型ウィンドウの使用](../python/python-interactive-repl-in-visual-studio.md)」を参照してください。 対話型ウィンドウ機能は C# でも使用できます。 
 
 ## <a name="access-visual-studio-tools"></a>Visual Studio ツールにアクセスする
 
@@ -138,12 +174,12 @@ ms.locfileid: "81544303"
 
    また、**ソリューション エクスプローラー**のインスタンスをもう 1 つ作成し、それを別のモニターに移動すると、ファイルをより簡単に管理できます。 **ソリューション エクスプローラー**のインスタンスをもう 1 つ作成するには、**ソリューション エクスプローラー**のショートカット メニューを開き、 **[新しいソリューション エクスプローラー ビュー]** を選択します。
 
-- **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、「[方法: Visual Studio で使用するフォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」と「[方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」を参照してください。
+- **Visual Studio に表示されるフォントをカスタマイズする**。 IDE のテキストに使用されるフォント フェイス、サイズ、および色を変更できます。 たとえば、エディター内の特定のコード要素の色や、ツール ウィンドウまたは IDE 全体のフォント フェイスをカスタマイズできます。 詳細については、[フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」と「[How to: Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」(方法: エディターのフォントと色を変更する) を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のヒントとテクニックに関するブログ投稿](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [方法: メニューおよびツール バーをカスタマイズする](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [チュートリアル: 簡単なアプリケーションの作成](../get-started/csharp/tutorial-wpf.md)
+- [チュートリアル: シンプルなアプリケーションの作成](../get-started/csharp/tutorial-wpf.md)
 - [アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)

@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416361"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182639"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>チュートリアル: 同じデバッグ セッションで C# と C++ をデバッグする
 
@@ -139,7 +139,7 @@ Visual Studio はインストールされているが、必要なワークロー
     **[コンソール アプリ]** プロジェクト テンプレートが表示されない場合は、 **[ツール]**  >  **[ツールと機能を取得...]** に移動して、Visual Studio インストーラーを開きます。 **.NET デスクトップ開発**ワークロードを選択し、 **[変更]** を選択します。
 
     > [!NOTE]
-    > 既存の C++ ソリューションに新しいマネージド プロジェクトを追加することもできますが、新しいソリューションを作成すると、より多くのデバッグ シナリオがサポートされます。
+    > 新しいマネージド プロジェクトを既存の C++ ソリューションに追加することもできます。 混合モードのデバッグタスクがより難しくなるよう、新しいソリューションでプロジェクトを作成しています。
 
    Visual Studio によって空のプロジェクトが作成され、**ソリューション エクスプローラー**にファイルが表示されます。
 

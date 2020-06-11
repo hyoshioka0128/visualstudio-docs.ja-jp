@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 429892e3022854cac157605117f955fd672f8997
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278522"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182925"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -27,9 +27,7 @@ Visual Studio には、マネージド コードおよびネイティブ コー�
 
 ## <a name="run-tests-in-test-explorer"></a>テスト エクスプローラーでテストを実行する
 
-
-テスト プロジェクトをビルドすると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
-
+[テスト プロジェクトをビルド](../test/getting-started-with-unit-testing.md)すると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
 ::: moniker range="vs-2017"
 ![単体テスト エクスプローラー](../test/media/ute_failedpassednotrunsummary.png)

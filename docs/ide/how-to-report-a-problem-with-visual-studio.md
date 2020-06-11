@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276502"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180559"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -45,9 +45,6 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
 1. 発生した問題が見つからない場合は、画面の下部にある **[新しい問題を報告する]** を選択します。
 
-   > [!NOTE]
-   > **[新しい問題を報告する]** ボタンは、Developer Community の Visual Studio インターフェイスにのみ表示されます。 [Developer Community](https://developercommunity.visualstudio.com/) Web サイトで直接問題を報告することはできません。
-
 1. 適切な Visual Studio チームに問題を転送できるように、報告には説明的なタイトルを付けてください。
 
 1. 可能であれば、問題を再現する手順など、さらに詳しい情報を記載します。
@@ -72,7 +69,7 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
 1. **[記録]** タブを選択します。
 
-1. 問題をそこで再現できる場合は、 **[操作の記録]** で Visual Studio の現在のインスタンスを選択します。 再現できない (たとえば、Visual Studio がハングしている) 場合は、 **[\<Create a new instance>]\(<新しいインスタンスの作成>\)** を選択して、Visual Studio の新しいインスタンスの操作を記録します。
+1. 問題をそこで再現できる場合は、 **[操作の記録]** で Visual Studio の現在のインスタンスを選択します。 再現できない (たとえば、Visual Studio がハングしている) 場合は、 **\<Create a new instance>** を選択して、Visual Studio の新しいインスタンスの操作を記録します。
 
 1. **[記録の開始]** を選択します。 ツールの実行を許可します。
 

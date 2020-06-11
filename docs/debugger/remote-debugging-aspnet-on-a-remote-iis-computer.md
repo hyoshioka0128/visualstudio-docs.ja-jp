@@ -1,7 +1,7 @@
 ---
 title: リモートの IIS コンピューター上で ASP.NET Core をリモート デバッグする | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 05/21/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3e11480949545781630dec0c533949dd200ecbc7
-ms.sourcegitcommit: 7a9d5c10690c594dcdb414d88b20e070d43e7a4c
+ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82218887"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173886"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>リモートの IIS コンピューター上の Visual Studio 2017 で ASP.NET Core をリモート デバッグする
 
@@ -37,6 +37,7 @@ IIS に配置されている ASP.NET Core アプリケーションをデバッ�
 これらの手順は、次のサーバー構成でテストされています。
 * Windows Server 2012 R2 および IIS 8
 * Windows Server 2016 および IIS 10
+* Windows Server 2019 および IIS 10
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
@@ -80,7 +81,10 @@ Internet Explorer で [セキュリティ強化の構成] が有効な場合は 
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Windows Server に ASP.NET Core をインストールする
 
-1. ホスティング システムに [.NET Core Windows Server ホスティング](https://aka.ms/dotnetcore-2-windowshosting) バンドルをインストールします。 このバンドルをインストールすることで、.NET Core ランタイム、.NET Core ライブラリ、ASP.NET Core モジュールがインストールされます。 詳細な手順については、[IIS への発行](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)に関するページを参照してください。
+1. ホスト システムに .NET Core ホスティング バンドルをインストールします。 このバンドルをインストールすることで、.NET Core ランタイム、.NET Core ライブラリ、ASP.NET Core モジュールがインストールされます。 詳細な手順については、[IIS への発行](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)に関するページを参照してください。
+
+    .NET Core 3 の場合は、[.NET Core ホスティング バンドル](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)をインストールします。
+    .NET Core 2 の場合は、[.NET Core Windows Server ホスティング](https://aka.ms/dotnetcore-2-windowshosting)をインストールします。
 
     > [!NOTE]
     > システムにインターネット接続が設定されていない場合は、.NET Core Windows Server ホスティング バンドルをインストールする前に、 *[Microsoft Visual C++ 2015 再頒布可能パッケージ](https://www.microsoft.com/download/details.aspx?id=53840)* を入手してインストールしてください。
@@ -100,7 +104,13 @@ IIS へのアプリの配置についてヘルプが必要な場合は、次の�
 このオプションを使用すると、発行設定ファイルを作成し、それを Visual Studio にインポートすることができます。
 
 > [!NOTE]
-> この配置方法では、Web 配置を使用します。 設定をインポートするのではなく、Visual Studio で Web 配置を手動で構成する場合は、ホスティング サーバー用 Web 配置 3.6 ではなく、Web 配置 3.6 をインストールすることができます。 ただし、Web 配置を手動で構成する場合は、サーバー上のアプリ フォルダーが正しい値とアクセス許可で構成されていることを確認する必要があります ([ASP.NET Web サイトの構成](#BKMK_deploy_asp_net)に関するセクションを参照してください)。
+> この配置方法では Web 配置を使用するため、サーバーに Web 配置がインストールされている必要があります。 設定をインポートするのではなく、Web 配置を手動で構成する場合は、ホスティング サーバー用 Web 配置 3.6 ではなく、Web 配置 3.6 をインストールすることができます。 ただし、Web 配置を手動で構成する場合は、サーバー上のアプリ フォルダーが正しい値とアクセス許可で構成されていることを確認する必要があります ([ASP.NET Web サイトの構成](#BKMK_deploy_asp_net)に関するセクションを参照してください)。
+
+### <a name="configure-the-aspnet-core-web-site"></a>ASP.NET Core Web サイトを構成する
+
+1. IIS マネージャーの左側のウィンドウで、 **[接続]** の **[アプリケーション プール]** を選択します。 **DefaultAppPool** を開き、 **[.NET CLR バージョン]** を **[マネージド コードなし]** に設定します。 これは ASP.NET Core に必要です。 既定の Web サイトで DefaultAppPool が使用されます。
+
+2. DefaultAppPool を停止して再起動します。
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Windows Server にホスティング サーバー用 Web 配置をインストールして構成する
 
@@ -114,11 +124,11 @@ IIS へのアプリの配置についてヘルプが必要な場合は、次の�
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-アプリが正常に配置されたら、自動的に起動されます。 Visual Studio からアプリが起動しない場合は、IIS でアプリを起動します。 ASP.NET Core の場合、**DefaultAppPool** の [アプリケーション プール] フィールドが **[マネージド コードなし]** に設定されていることを確認する必要があります。
+アプリが正常に配置されたら、自動的に起動されます。 Visual Studio からアプリが起動しない場合は、IIS でアプリを起動し、正常に動作することを確認します。 ASP.NET Core の場合は、**DefaultAppPool** の [アプリケーション プール] フィールドが **[マネージド コードなし]** に設定されていることも確認する必要があります。
 
 1. **[設定]** ダイアログ ボックスで、 **[次へ]** をクリックしてデバッグを有効にし、 **[デバッグ]** 構成を選択し、 **[ファイル発行オプション]** の **[発行先の追加ファイルを削除する]** を選択します。
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > リリース構成を選択した場合、発行時に *web.config* ファイルのデバッグを無効にします。
 
 1. **[保存]** をクリックしてアプリを再発行します。
@@ -176,15 +186,15 @@ Visual Studio のバージョンと一致するバージョンのリモート �
     > [!TIP]
     > Visual Studio 2017 以降のバージョンで以前にアタッチしたものと同じプロセスに再アタッチするには、 **[デバッグ] > [プロセスに再アタッチする]** (Shift + Alt + P キー) を使用します。
 
-3. [修飾子] フィールドを **\<リモート コンピューター名>** に設定し、**Enter** キーを押します。
+3. [修飾子] フィールドを **\<remote computer name>** に設定し、**Enter** キーを押します。
 
-    Visual Studio で必要なポートがコンピューター名に追加されていることを確認します ( **\<リモート コンピューター名>:port** という形式で表示されます)。
+    Visual Studio で必要なポートがコンピューター名に追加されていることを確認します ( **\<remote computer name>:port** という形式で表示されます)
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 では、 **\<リモート コンピューター名>:4024** が表示されます。
+    Visual Studio 2019 では、 **\<remote computer name>:4024** が表示されます
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 では、 **\<リモート コンピューター名>:4022** が表示されます。
+    Visual Studio 2017 では、 **\<remote computer name>:4022** が表示されます
     ::: moniker-end
     ポートは必須です。 ポート番号が表示されない場合は、手動で追加します。
 
@@ -214,7 +224,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 7. **[アタッチ]** をクリックします。
 
-8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<リモート コンピューター名>** に移動します。
+8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<remote computer name>** に移動します。
 
     ASP.NET の Web ページが表示されるはずです。
 

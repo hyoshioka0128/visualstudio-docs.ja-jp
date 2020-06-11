@@ -1,7 +1,7 @@
 ---
 title: 発行設定をインポートして Azure に発行する
 description: 発行プロファイルを作成してインポートし、Visual Studio から Azure App Service にアプリケーションを配置する
-ms.date: 05/07/2018
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65679186"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183315"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを Azure App Service に発行する
 
@@ -23,19 +23,19 @@ ms.locfileid: "65679186"
 
 これらの手順は、Visual Studio で ASP.NET、ASP.NET Core、および .NET Core アプリケーションに適用されます。 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) アプリ用の発行設定をインポートすることもできます。
 
-このチュートリアルでは、次のことについて説明します。
+このチュートリアルでは、次の作業を行います。
 
 > [!div class="checklist"]
 > * Azure App Service から発行設定ファイルを生成する
 > * 発行設定ファイルを Visual Studio にインポートする
 > * Azure App Service にアプリを配置する
 
-発行設定ファイル (*\*.publishsettings*) は、Visual Studio で作成される発行プロファイル (*\*.pubxml*) とは異なります。 発行設定ファイルは Azure App Service によって作成され、Visual Studio にインポートできます。
+発行設定ファイル ( *\*.publishsettings*) は、Visual Studio で作成される発行プロファイル ( *\*.pubxml*) とは異なります。 発行設定ファイルは Azure App Service によって作成され、Visual Studio にインポートできます。
 
 > [!NOTE]
-> Visual Studio 発行プロファイル (*\*.pubxml* ファイル) を Visual Studio のあるインストールから別のインストールにコピーするだけであれば、マネージド プロジェクトの種類の *\<<projectname\>\Properties\PublishProfiles* フォルダー内に発行プロファイル *\\profilename\>.pubxml* があります。 Web サイトについては、*\App_Data* フォルダー以下を確認してください。 発行プロファイルは MSBuild XML ファイルです。
+> Visual Studio 発行プロファイル ( *\*.pubxml* ファイル) を Visual Studio のあるインストールから別のインストールにコピーするだけであれば、マネージド プロジェクトの種類の *\\<projectname\>\Properties\PublishProfiles* フォルダー内に発行プロファイル *\<profilename\>.pubxml* があります。 Web サイトについては、 *\App_Data* フォルダー以下を確認してください。 発行プロファイルは MSBuild XML ファイルです。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 ::: moniker range=">=vs-2019"
 
@@ -57,19 +57,19 @@ ms.locfileid: "65679186"
 
 1. Visual Studio を実行しているコンピューター上で新しいプロジェクトを作成します。
 
-    適切なテンプレートを選択します。 この例では、**[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、**[OK]** をクリックします。
+    適切なテンプレートを選択します。 この例では、 **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、 **[OK]** をクリックします。
 
-    指定したプロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
+    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
 
     選択したプロジェクト テンプレート (ASP.NET または ASP.NET Core) は、Web サーバーにインストールされている ASP.NET のバージョンと対応している必要があります。
 
-1. **[MVC]**.(.NET Framework) または **[Web アプリケーション (モデル ビュー コントローラー)]** (.NET Core の場合)、**[認証なし]** がオンであることを確認してから **[OK]** をクリックします。
+1. **[MVC]** .(.NET Framework) または **[Web アプリケーション (モデル ビュー コントローラー)]** (.NET Core の場合)、 **[認証なし]** がオンであることを確認してから **[OK]** をクリックします。
 
-1. 「**MyWebApp**」のような名前を入力し、**[OK]** をクリックします。
+1. 「**MyWebApp**」のような名前を入力し、 **[OK]** をクリックします。
 
     Visual Studio によってプロジェクトが作成されます。
 
-1. **[ビルド]** > **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。
+1. **[ビルド]**  >  **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Azure App Service で発行設定ファイルを作成する
 
@@ -107,7 +107,7 @@ ms.locfileid: "65679186"
 
 [!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 このチュートリアルでは、発行設定ファイルを作成して Visual Studio にインポートし、Azure App Service に ASP.NET アプリを配置しました。 Visual Studio の発行オプションの概要を確認することができます。
 

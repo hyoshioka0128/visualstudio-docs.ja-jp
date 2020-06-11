@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263137"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184277"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
 
@@ -25,11 +25,11 @@ ms.locfileid: "78263137"
 
  このチュートリアルでは、テキスト エディターのみを使用して、基本的なプロジェクト ファイルをインクリメント方式で作成する方法について説明します。 このチュートリアルの手順を以下に示します。
 
-1. 最低限の内容のみを含むアプリケーション ソース ファイルを作成します。
+1. PATH 環境変数を拡張します。
 
-2. 最低限の内容のみを含む MSBuild プロジェクト ファイルを作成します。
+2. 最低限の内容のみを含むアプリケーション ソース ファイルを作成します。
 
-3. MSBuild が含まれるように PATH 環境変数を拡張します。
+3. 最低限の内容のみを含む MSBuild プロジェクト ファイルを作成します。
 
 4. プロジェクト ファイルを使用してアプリケーションをビルドします。
 
@@ -45,7 +45,11 @@ ms.locfileid: "78263137"
 
 このチュートリアルでは、コマンド プロンプトでプロジェクトをビルドして結果を確認する方法を説明します。 MSBuild の詳細および MSBuild をコマンド プロンプトで実行する方法の詳細については、「[チュートリアル:MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。
 
-このチュートリアルを実行するには、.NET Framework (バージョン 2.0、3.5、4.0、4.5、またはそれ以降) がインストールされている必要があります。これらには、このチュートリアルに必要な MSBuild と Visual C# コンパイラが含まれています。
+このチュートリアルを実行するには、Visual Studio がインストールされている必要があります。Visual Studio には、このチュートリアルに必要な MSBuild と Visual C# コンパイラが含まれています。
+
+## <a name="extend-the-path"></a>パスを拡張する
+
+MSBuild を使用するには、必要なすべてのツールが含まれるように PATH 環境変数を拡張する必要があります。 **Visual Studio 用開発者コマンド プロンプト**を使用できます。 これは、Windows 10 上の Windows タスク バーの検索ボックスで検索してください。 通常のコマンド プロンプトまたはスクリプト環境で環境を設定するには、Visual Studio インストールの *Common7/Tools* サブフォルダーで *VSDevCmd.bat* を実行します。
 
 ## <a name="create-a-minimal-application"></a>最低限の内容のみを含むアプリケーションを作成する
 
@@ -155,16 +159,6 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 > <Compile Include="*.cs" />
 > ```
 
-## <a name="extend-the-path-to-include-msbuild"></a>MSBuild が含まれるようにパスを拡張する
-
-MSBuild を使用するには、.NET Framework フォルダーが含まれるように PATH 環境変数を拡張する必要があります。
-
-Visual Studio 2013 では、MSBuild フォルダー (32 ビット オペレーティング システムの場合は *%ProgramFiles%\MSBuild*、64 ビット オペレーティング システムの場合は *%ProgramFiles(x86)%\MSBuild*) 内に *MSBuild.exe* があります。
-
-コマンド プロンプトで、「**set PATH=%PATH%;%ProgramFiles%\MSBuild**」または「**set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**」と入力します。
-
-Visual Studio がインストールされている場合は、**Visual Studio 用開発者コマンド プロンプト**を使用することもできます。これには、*MSBuild* フォルダーへのパスが設定されています。
-
 ## <a name="build-the-application"></a>アプリケーションのビルド
 
  次に、先ほど作成したプロジェクト ファイルを使用してアプリケーションをビルドします。
@@ -260,7 +254,7 @@ Visual Studio がインストールされている場合は、**Visual Studio �
 
      *\Bin\\* フォルダーが作成され、Visual C# コンパイラが呼び出されて、*MSBuildSample* アプリケーションが作成されて *\Bin\\* フォルダーに配置されます。
 
-2. 「**dir Bin**」と入力して、*\Bin\\* フォルダーが作成されていることと、そこに *MSBuildSample* アプリケーションが含まれていることを確認します。
+2. 「**dir Bin**」と入力して、 *\Bin\\* フォルダーが作成されていることと、そこに *MSBuildSample* アプリケーションが含まれていることを確認します。
 
 3. 「**Bin\MSBuildSample**」と入力してアプリケーションをテストします。
 
@@ -355,7 +349,7 @@ Visual Studio がインストールされている場合は、**Visual Studio �
 
 7. 「**msbuild**」と入力します。
 
-     プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、*helloworld.csproj* ファイルがビルドされます。 その結果、*\Bin\\* フォルダーに *MSBuildSample* アプリケーションが作成されます。
+     プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、*helloworld.csproj* ファイルがビルドされます。 その結果、 *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが作成されます。
 
      *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが含まれていることを確認するには、「**dir Bin**」と入力します。
 

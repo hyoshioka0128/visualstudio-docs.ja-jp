@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911596"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182873"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグに関するトラブルシューティングと既知の問題
 
@@ -30,12 +30,36 @@ ms.locfileid: "72911596"
 
 ### <a name="401-unauthorized"></a>(401) 許可されていません
 
-このエラーは、Visual Studio から Azure に発行された REST 呼び出しに無効な資格情報が使用されていることを示しています。 Azure Active Directory Easy OAuth モジュールの既知のバグにより、このエラーが発生する場合があります。
+このエラーは、Visual Studio から Azure に発行された REST 呼び出しに無効な資格情報が使用されていることを示しています。 
 
 次の手順を実行します。
 
 * Visual Studio 個人アカウントに、アタッチしている Azure サブスクリプションとリソースへのアクセス許可があることを確認します。 これを簡単に確認するには、 **[デバッグ]**  >  **[スナップショット デバッガーのアタッチ]**  >  **[Azure Resource]**  >  **[既存のものを選択]** のダイアログ ボックス、または Cloud Explorer でリソースを使用できるかどうかを確認します。
 * このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバック チャネルのいずれかを使用します。
+
+App Service で認証/承認 (EasyAuth) を有効にした場合、呼び出し履歴エラーメッセージで LaunchAgentAsync の 401 エラーが発生することがあります。 Azure portal で **[要求が認証されない場合に実行するアクション]** が **[匿名要求を許可する (操作不要)]** に設定されていることを確認し、代わりに D:\Home\sites\wwwroot で以下の内容の authorization.json を指定します。 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+最初の route は、 **[[ID プロバイダー] でのログイン]** と同様にアプリドメインを効果的に保護します。 2 番目の route は、認証の外部で SnapshotDebugger AgentLaunch エンドポイントを公開し、SnapshotDebugger のプレインストールされたサイト拡張機能がアプリサービスに対して有効になっている*場合にのみ*、事前定義済みの SnapshotDebugger 診断エージェント開始アクションを実行します。 authorization. json 構成の詳細については、[URL 承認規則に関する記事](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html)を参照してください。
 
 ### <a name="403-forbidden"></a>(403) 禁止されています
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e212aec6d2d3aa7e20cb0ca08c9ea604f32bb08c
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988557"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183094"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
@@ -95,11 +95,9 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
    > [!NOTE]
    > このチュートリアルでは NuGet パッケージが必要です。 ご自分のアプリでは、[TypeScript npm パッケージ](https://www.npmjs.com/package/typescript)を使用することもできます。
 
-1. ソリューション エクスプローラーで、プロジェクト ノードを右クリックして **[追加] > [新しいフォルダー]** の順に選択します。 新しいフォルダーの名前は「*scripts*」とします。
+1. プロジェクト ノードを右クリックし、 **[追加] > [新しいアイテム]** の順に選択します。 **[TypeScript JSON 構成ファイル]** を選択し、 **[追加]** をクリックします。
 
-1. *scripts* フォルダーを右クリックし、 **[追加] > [新しいアイテム]** の順に選択します。 **[TypeScript JSON 構成ファイル]** を選択し、 **[追加]** をクリックします。
-
-   Visual Studio によって *tsconfig.json* ファイルが *scripts* フォルダーに追加されます。 このファイルを使用して、TypeScript コンパイラの[オプションを構成](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)することができます。
+   Visual Studio によって *tsconfig.json* ファイルがプロジェクト ルートに追加されます。 このファイルを使用して、TypeScript コンパイラの[オプションを構成](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)することができます。
 
 1. *tsconfig.json* を開き、既定のコードを次のコードに置き換えます。
 
@@ -111,18 +109,19 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
        "removeComments": false,
        "sourceMap": true,
        "target": "es5",
-       "outDir": "../wwwroot/js"
+       "outDir": "wwwroot/js"
      },
-     "exclude": [
-       "node_modules",
-       "wwwroot"
+     "include": [
+       "scripts/**/*"
      ]
    }
    ```
 
    *outDir* オプションでは、TypeScript コンパイラによってトランスパイルされるプラン JavaScript ファイルの出力フォルダーを指定します。
 
-   この構成により、TypeScript の使用に関する基本的な手順が指定されます。 たとえば [gulp や webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) を使用する場合などのその他のシナリオでは、使用するツールと構成設定に応じて、トランスパイルされる JavaScript ファイル用に *../wwwroot/js*以外の別の中間の場所を指定することができます。
+   この構成により、TypeScript の使用に関する基本的な手順が指定されます。 たとえば [gulp や webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) を使用する場合などのその他のシナリオでは、使用するツールと構成設定に応じて、トランスパイルされる JavaScript ファイル用に *wwwroot/js*以外の別の中間の場所を指定することができます。
+
+1. ソリューション エクスプローラーで、プロジェクト ノードを右クリックして **[追加] > [新しいフォルダー]** の順に選択します。 新しいフォルダーの名前は「*scripts*」とします。
 
 1. *scripts* フォルダーを右クリックし、 **[追加] > [新しいアイテム]** の順に選択します。 **[TypeScript ファイル]** を選択し、ファイル名として「*app.ts*」を入力して、 **[追加]** をクリックします。
 
@@ -163,7 +162,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
     `lastName` を選択して、名前をコードにもう一度追加します。
 
-1. *Views / Home* フォルダーを開き、*index.html* を開きます。
+1. *Views/Home* フォルダーを開き、*index.html* を開きます。
 
 1. ファイルの末尾に次の HTML コードを追加します。
 
@@ -176,7 +175,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
     </div>
     ```
 
-1. *Views / Shared* フォルダーを開き、 *_Layout.cshtml* を開きます。
+1. *Views/Shared* フォルダーを開き、 *_Layout.cshtml* を開きます。
 
 1. `@RenderSection("Scripts", required: false)` の呼び出しの前に次のスクリプト参照を追加します。
 
@@ -190,7 +189,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-1. *wwwroot / js* フォルダーを開くと、2 つの新しいファイルが見つかります。*app.js*、およびソース マップ ファイルの *app.js.map*です。 これらのファイルは TypeScript コンパイラによって生成されます。
+1. *wwwroot/js* フォルダーを開くと、2 つの新しいファイルが見つかります。*app.js*、およびソース マップ ファイルの *app.js.map*です。 これらのファイルは TypeScript コンパイラによって生成されます。
 
    ソース マップ ファイルはデバッグで必要となります。
 

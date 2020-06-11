@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78215428"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183289"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -241,7 +241,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 小数を処理するようにコードを修正しましょう。
 
-1. **Ctrl** + **F** キーを押して **[検索と置換]** コントロールを開きます。
+1. **Ctrl** + **H** キーを押して **[検索と置換]** コントロールを開きます。
 
 1. `int` 変数の各インスタンスを `float` に変更します。
 
@@ -257,7 +257,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 ただし、アプリは小数の結果を生成するだけです。 もう少しコードに手を加えて、小数を計算できるようにしましょう。
 
-1. **[検索と置換]** コントロール (**Ctrl** + **F** キー) を使用して `float` 変数の各インスタンスを `double` に変更し、`Convert.ToInt32` メソッドの各インスタンスを `Convert.ToDouble` に変更します。
+1. **[検索と置換]** コントロール (**Ctrl** + **H** キー) を使用して `float` 変数の各インスタンスを `double` に変更し、`Convert.ToInt32` メソッドの各インスタンスを `Convert.ToDouble` に変更します。
 
 1. 電卓アプリを実行し、値 **42.5** を値 **119.75** で割ります。
 

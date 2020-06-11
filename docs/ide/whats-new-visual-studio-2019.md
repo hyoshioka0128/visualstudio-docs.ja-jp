@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 03/16/2020
+ms.date: 05/20/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437743"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183380"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.5 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.6 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
 
-Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフォームを対象とした最高クラスのツールとサービスを提供しています。 Visual Studio を初めて使用する方も、長年使用している方も、この新しいバージョンを気に入っていただけるでしょう。
+開発者の要求に合わせて Visual Studio を常に変更しています。 **[Microsoft Build](https://mybuild.microsoft.com/)** ライブラリの次のビデオで、一部の[最新機能](/visualstudio/releases/2019/release-notes/)のツアーに参加して[プレビュー](/visualstudio/releases/2019/release-notes-preview/)をご覧ください。 <br><br>"*ビデオの長さ:44.58 分*
 
-新機能の大まかな要約を示します。
+> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
+
+Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフォームを対象とした最高クラスのツールとサービスを提供しています。 Visual Studio を初めて使用する方も、長年使用している方も、最新バージョンを気に入っていただけるでしょう。
+
+すべての新機能の大まかな要約を示します。
 
 * **[開発](#develop)** :パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
 * **[共同作業](#collaborate)** :Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
