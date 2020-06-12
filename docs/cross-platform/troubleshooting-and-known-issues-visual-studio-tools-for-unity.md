@@ -144,7 +144,7 @@ Visual Studio 2015 の Update 3 へのアップグレードを試してくださ
 
 *Mac の場合:*
 
-1. 端末を開き、Visual Studio for Mac の PID を取得します。
+1. ターミナルを開き、Visual Studio for Mac の PID を取得します。
 
     ```shell
     ps aux | grep "[V]isual Studio.app"

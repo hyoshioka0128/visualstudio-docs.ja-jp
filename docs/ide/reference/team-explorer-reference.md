@@ -22,7 +22,7 @@ ms.locfileid: "74538568"
 
 **チーム エクスプローラー**で[プロジェクトに接続する](../connect-team-project.md)と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
 
-- [リポジトリの複製](/azure/devops/repos/git/clone)
+- [リポジトリのクローン](/azure/devops/repos/git/clone)
 - [Web ポータル](/azure/devops/project/navigation/index)
 - [タスク ボード](/azure/devops/boards/sprints/task-board)
 
@@ -43,9 +43,9 @@ ms.locfileid: "74538568"
 
 「[Create work in branches](/azure/devops/repos/git/branches)」 (ブランチで作業を作成する) を参照してください。
 
-## <a name="pull-requests-page-git"></a>プル要求ページ (Git)
+## <a name="pull-requests-page-git"></a>Pull Request ページ (Git)
 
-「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」(プル要求を使用してコードを確認する) を参照してください。
+「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」(Pull Request を使用してコードを確認する) を参照してください。
 
 ## <a name="sync-page-git"></a>同期ページ (Git)
 
@@ -86,9 +86,9 @@ ms.locfileid: "74538568"
 
 ::: moniker-end
 
-## <a name="builds-page"></a>ビルド ページ
+## <a name="builds-page"></a>ビルドページ
 
-**[ビルド]** ページでは、プロジェクトのビルド定義を確認できます。
+**ビルド**ページでは、プロジェクトのビルド定義を確認できます。
 
 参照:
 
@@ -98,9 +98,9 @@ ms.locfileid: "74538568"
 - [Visual Studio の継続的デリバリー (CD) をインストールする](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [アプリの継続的デリバリー (CD) を構成し、実行する](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>[設定] ページ
+## <a name="settings-page"></a>設定ページ
 
-**[設定]** ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
+**設定**ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
 
 | Project | プロジェクト コレクション | その他 |
 | - | - | - |

@@ -146,11 +146,11 @@ ms.locfileid: "75398173"
 
     ![プロジェクトをビルドして実行する](media/azure-functions-lab-image18.png)
 
-1. プロジェクトを実行すると、端末アプリケーションが自動的に開きます。
+1. プロジェクトを実行すると、ターミナルアプリケーションが自動的に開きます。
 
 1. このプロジェクトでは、メソッドの属性と、この記事の後半で説明するファイル規則に基づいて、Azure Functions の検出プロセスを実行します。 この場合、単一の Azure Function が検出され、1 つのジョブ関数が "生成" されます。
 
-    ![端末での Azure Function の出力](media/azure-functions-lab-image19.png)
+    ![ターミナルでの Azure Function の出力](media/azure-functions-lab-image19.png)
 
 1. Azure Functions ホストは、スタートアップ メッセージの一番下に HTTP トリガー API の URL を出力します。 これは 1 つだけである必要があります。 その URL をコピーし、新しいブラウザー タブで貼り付けます。
 
@@ -349,9 +349,9 @@ ms.locfileid: "75398173"
 
 1. ブラウザー タブで、 **http://localhost:7071/api/Process/4/6** に移動します。 これにより別のメッセージがキューに入れられ、最終的には別の行がテーブルに追加されます。
 
-1. **端末**に戻り、**4 + 6** の受信要求を監視します。
+1. **ターミナル**に戻り、**4 + 6** の受信要求を監視します。
 
-    ![追加要求を示す端末出力](media/azure-functions-lab-image32.png)
+    ![追加要求を示すターミナル出力](media/azure-functions-lab-image32.png)
 
 1. ブラウザーに戻り、同じ URL への要求を更新します。 この時点で、**Process** メソッドの後にエラーが表示されます。 これは、コードが、既に存在するパーティションと行キーの組み合わせを使用して、Azure Table Storage テーブルに行を追加しようとしているためです。
 
@@ -380,13 +380,13 @@ ms.locfileid: "75398173"
 
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
-1. ブラウザー タブで、 **http://localhost:7071/api/Process/4/6** の URL を更新します。 このレコードのテーブル行は存在するため、エラーなしですぐに返されます。 HTTP 出力はないため、端末で出力を確認できます。
+1. ブラウザー タブで、 **http://localhost:7071/api/Process/4/6** の URL を更新します。 このレコードのテーブル行は存在するため、エラーなしですぐに返されます。 HTTP 出力はないため、ターミナルで出力を確認できます。
 
-    ![テーブル行が既に存在することを示す端末出力](media/azure-functions-lab-image33.png)
+    ![テーブル行が既に存在することを示すターミナル出力](media/azure-functions-lab-image33.png)
 
-1. URL を更新し、 **http://localhost:7071/api/Process/5/7** など、まだテストされていない組み合わせを反映させます。 テーブル行が (予期したとおりに) 見つからなかったことを示す、端末のメッセージに注意してください。
+1. URL を更新し、 **http://localhost:7071/api/Process/5/7** など、まだテストされていない組み合わせを反映させます。 テーブル行が (予期したとおりに) 見つからなかったことを示す、ターミナルのメッセージに注意してください。
 
-    ![新しいプロセスを示す端末出力](media/azure-functions-lab-image34.png)
+    ![新しいプロセスを示すターミナル出力](media/azure-functions-lab-image34.png)
 
 1. **Visual Studio for Mac** に戻り、デバッグ セッションを終了します。
 
