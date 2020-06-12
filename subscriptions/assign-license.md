@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 管理者がサブスクライバーにライセンスを割り当てる方法を説明します
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564161"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183471"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理者ポータルでライセンスを割り当てる
 Visual Studio サブスクリプションの管理者は、管理者ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
@@ -20,7 +20,7 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
 ユーザーのグループに対しては、サブスクリプションの割り当て方法を選択できます。  
 - サブスクリプションは一度に 1 つずつ割り当てることができます。
 - また、[一括追加](assign-license-bulk.md)機能を使用して、サブスクライバーとそのサブスクリプション情報の一覧を迅速かつ簡単にアップロードすることも可能です。
-- 組織で Microsoft Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用して、ユーザーのグループにサブスクリプションを割り当てることができます  (この機能は段階的にデプロイされており、所属する組織ですぐに利用できるとは限りません)。
+- 組織で Microsoft Azure Active Directory (Azure AD) を使用している場合は、[Azure AD グループを使用して、ユーザーのグループにサブスクリプションを割り当てる](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)ことができます。  
 
 
 ## <a name="add-a-single-subscriber"></a>1 人のサブスクライバーを追加する
@@ -39,7 +39,11 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
    > [!div class="mx-imgBorder"]
    > ![サブスクライバーの詳細](_img/assign-license-add/subscriber-details.png)
 
-    このサブスクライバーが [Visual Studio サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインするときにソフトウェアのダウンロードにアクセスできるようにする場合は、 **[ダウンロードの設定]** セクションでダウンロードのトグルをオンのままにします。 ダウンロードを無効にすると、ユーザーはソフトウェアのダウンロードにアクセスできなくなりますが、サブスクリプションに含まれる他のすべての特典には引き続きアクセスできます。
+    > [!NOTE]
+    > サブスクライバー名を入力するときに Azure Active Directory テナントのメンバーが表示されるようにするには、管理者がテナントのメンバーである必要があります。 
+
+
+    このサブスクライバーが [Visual Studio サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインするときにソフトウェアのダウンロードにアクセスできるようにする場合は、 **[ダウンロードの設定]** セクションでダウンロードのトグルをオンのままにします。 ダウンロードを無効にした場合、ユーザーはソフトウェアのダウンロードにアクセスできなくなります。  プロダクト キーへのアクセスも無効になります。  サブスクライバーは、サブスクリプションに含まれるその他すべての特典に引き続きアクセスできます。
    > [!div class="mx-imgBorder"]
    > ![ダウンロードにアクセスする](media/access-to-downloads.png)
 

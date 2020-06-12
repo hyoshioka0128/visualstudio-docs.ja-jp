@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3ec4b28f9af769d4765750ab48048e3b155fb48e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543899"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180346"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -19,7 +19,7 @@ ms.locfileid: "80543899"
 
 ## <a name="installing-net-core"></a>.NET Core のインストール
 
-.NET Core 2.1 は、Visual Studio for Mac をインストールすると自動的にインストールされます。
+.NET Core 3.1 は、Visual Studio for Mac をインストールすると自動的にインストールされます。 Visual Studio for Mac でサポートされている .NET Core のバージョンの詳細については、「[.NET Core のサポート](/visualstudio/mac/net-core-support)」を参照してください。
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Visual Studio for Mac で ASP.NET Core を作成する
 
@@ -35,6 +35,8 @@ ASP.NET Core アプリケーションの作成を開始するためのテンプ�
 - **[.NET Core] > [API]**
 - **[.NET Core] > [Web アプリケーション]**
 - **[.NET Core] > [Web アプリケーション (モデル ビュー コントローラー)]**
+- **[.NET Core] > [Blazor サーバー アプリ]**
+- **[.NET Core] > [Blazor WebAssembly App] (Blazor WebAssembly アプリ)**
 
 ![ASP.NET プロジェクト オプション](media/asp-net-core-2019-new-asp-core.png)
 

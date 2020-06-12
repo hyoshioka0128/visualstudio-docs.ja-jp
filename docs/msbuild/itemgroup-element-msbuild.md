@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633643"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173513"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 要素 (MSBuild)
 
 ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 MSBuild プロジェクトで使用されるすべての項目が、`ItemGroup` 要素の子として指定されている必要があります。
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>構文
 
@@ -85,6 +86,10 @@ ms.locfileid: "77633643"
 ...
 </Project>
 ```
+
+単純なプロジェクト ファイルでは、通常 1 つの `ItemGroup` 要素を使用しますが、複数の `ItemGroup` 要素を使用することもできます。 複数の `ItemGroup` 要素が使用されている場合、項目は 1 つの `ItemGroup` に結合されます。 たとえば、インポートされたファイルで定義されている個別の `ItemGroup` 要素によって、いくつかの項目が含められる場合があります。
+
+ItemGroups には、`Condition` 属性を使用して条件を適用できます。 その場合、条件が満たされた場合にのみ項目が項目リストに追加されます。 「[MSBuild の条件](msbuild-conditions.md)」を参照してください
 
 ## <a name="see-also"></a>関連項目
 

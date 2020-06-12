@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543966"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183003"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
-他のコンピューター、デバイス、サーバー、クラウドにインストールする目的でアプリケーション、サービス、またはコンポーネントを配布する手法として配置が行われます。 必要な配置の種類に合わせて、Visual Studio で適切な手法を選択します。 (コマンド ラインによる配置など、その他の配置ツールに対応しているアプリの種類はたくさんありますが、それらのツールについてはここでは触れていません。)
+他のコンピューター、デバイス、サーバー、クラウドにインストールする目的でアプリケーション、サービス、またはコンポーネントを配布する手法として配置が行われます。 必要な配置の種類に合わせて、Visual Studio で適切な手法を選択します。 (コマンド ラインによる配置や NuGet など、その他の配置ツールに対応しているアプリの種類はたくさんありますが、それらのツールについてはここでは触れていません。)
 
 詳細な配置手順については、クイックスタートとチュートリアルをご覧ください。 配置オプションの概要については、「[状況に適した発行オプション](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)」を参照してください。
 
@@ -44,7 +44,7 @@ ms.locfileid: "80543966"
 
     ![[発行] を選択する](../deployment/media/quickstart-publish.png)
 
-- **Windows デスクトップ**: ClickOnce 配置を使用し、フォルダーに Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLI については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
+- **Windows デスクトップ**: ClickOnce 配置を使用し、フォルダーに Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLR については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
 
 ## <a name="publish-to-azure"></a>Azure に発行する
 
@@ -77,13 +77,13 @@ ms.locfileid: "80543966"
 
     ソリューション エクスプローラーで、プロジェクトを右クリックして、 **[発行]** を選択します。 (発行プロファイルを以前に構成している場合、 **[新しいプロファイルの作成]** をクリックする必要があります。)発行ツールで、必要なオプションを選択し、構成手順に従います。
 
-    ![IIS や FTP などを選択します。](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![[IIS] を選択します](../deployment/media/quickstart-publish-iis.png)
 
     Visual Studio に発行プロファイルをインポートする方法については、[発行設定のインポートと IIS への配置](../deployment/tutorial-import-publish-settings-iis.md)に関するページを参照してください。
 
-    ASP.NET のアプリケーションとサービスは他にもさまざまな方法で配置できます。 詳細については、[ASP.NET の Web アプリケーション/サービスを配置する](/aspnet/mvc/overview/deployment/)方法に関するページをご覧ください。
+    ASP.NET のアプリケーションとサービスは他にもさまざまな方法で配置できます。 詳細については、[ASP.NET の Web アプリケーション/サービスを配置する](/aspnet/overview/deployment)方法に関するページをご覧ください。
 
-- **Windows デスクトップ**: ClickOnce 配置を使用し、Web サーバーまたはネットワーク ファイル共有に Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLI については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
+- **Windows デスクトップ**: ClickOnce 配置を使用し、Web サーバーまたはネットワーク ファイル共有に Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLR については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
 
 ## <a name="publish-to-microsoft-store"></a>Microsoft Store に発行する
 
@@ -93,16 +93,9 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
     ![アプリケーション パッケージの作成](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Microsoft ストアのデスクトップ アプリをパッケージ化する](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)」を参照してください。
+- **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、デスクトップ ブリッジを使用して Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Package a desktop app for Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)」(Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)) を参照してください。
 
-    ![デスクトップ アプリをパッケージ化する](../deployment/media/feature-tour-desktop-bridge.png)
-
-## <a name="deploy-net-packages-to-nugetorg"></a>.NET パッケージを NuGet.org に配置する
-
-これらのパッケージを使用するプロジェクトで必要とされる他のコンテンツと共にコンパイル済みのコードを (DLL として) 含む "パッケージ" にバンドルされたコードを配置するには、Visual Studio を使用して NuGet パッケージと CLI ツールを作成し、最終デプロイ コマンドを発行します。
-
-- [.NET Standard パッケージの作成と公開](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-- [.NET Framework パッケージの作成と公開](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
+    ![デスクトップ ブリッジ](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>デバイスに配置する (UWP)
 
@@ -112,13 +105,12 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 デスクトップ アプリケーションを [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) でできることよりも複雑な方法でインストールする必要がある場合、Windows インストーラー パッケージ (MSI または EXE インストール ファイル) またはカスタム ブートストラップを作成できます。
 
-- MSI ベースのインストーラー パッケージを [WiX Toolset Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset) を使用して作成できます。 これはコマンドライン ツールセットです。
+- MSI ベースのインストーラー パッケージを [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) を使用して作成できます。 これはコマンドライン ツールセットです。
 
-   ::: moniker range=">=vs-2019"
-   Visual Studio 2019 については、[WiX Toolset Visual Studio 2019 Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension) を取得します。
-   ::: moniker-end
+- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 
 
-- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていないことに注意してください。今後の使用可能性については、[Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
+  > [!NOTE]
+  > InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていません。今後の使用可能性については、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
 
 - MSI または EXE インストーラー パッケージはセットアップ プロジェクト (vdproj) を使用して作成できます。 このオプションを使用するには、[Visual Studio Installer Projects 拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)をインストールします。
 
@@ -146,7 +138,7 @@ Azure Pipelines を使用し、アプリの継続的配置を有効にできま�
 
 | アプリの種類 | 配置シナリオ | Link |
 | --- | --- | --- |
-| **Office アプリ** | Visual Studio から Office 用のアドインを発行できます。 | [Office アドインを配置し、発行する](/office/dev/add-ins/publish/publish) |
+| **Office アプリ** | Visual Studio から Office 用のアドインを発行できます。 | [Office アドインを配置し、発行する](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF または OData サービス** | Web サーバーに配置した WCF RIA サービスを他のアプリケーションで使用できます。 | [WCF Data Services の開発と配置](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch は、Visual Studio 2017 以降ではサポートされていませんが、Visual Studio 2015 以前からは引き続き配置できます。 | [LightSwitch アプリケーションの配置](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

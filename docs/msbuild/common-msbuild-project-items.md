@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634449"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182912"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 
 MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
+
 ## <a name="common-items"></a>共通の項目
 
- 次に、プロジェクトの共通項目の一覧を示します。
 次に、プロジェクトの共通項目の一覧を示します。
 
 ### <a name="reference"></a>関連項目
 
- プロジェクト内のアセンブリ (マネージド) 参照を表します。
+プロジェクト内のアセンブリ (マネージド) 参照を表します。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
@@ -45,7 +45,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="comreference"></a>COMReference
 
- プロジェクト内の COM (アンマネージ) コンポーネント参照を表します。 この項目は .NET プロジェクトにのみ適用されます。
+プロジェクト内の COM (アンマネージ) コンポーネント参照を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
@@ -59,7 +59,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="comfilereference"></a>COMFileReference
 
- [ResolveComReference](resolvecomreference-task.md) ターゲットの `TypeLibFiles` パラメーターに渡されるタイプ ライブラリの一覧を表します。 この項目は .NET プロジェクトにのみ適用されます。
+[ResolveComReference](resolvecomreference-task.md) ターゲットの `TypeLibFiles` パラメーターに渡されるタイプ ライブラリの一覧を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
@@ -67,7 +67,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="nativereference"></a>NativeReference
 
- ネイティブ マニフェスト ファイル、またはこのようなファイルへの参照を表します。
+ネイティブ マニフェスト ファイル、またはこのようなファイルへの参照を表します。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
@@ -76,7 +76,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="projectreference"></a>ProjectReference
 
- 別のプロジェクトへの参照を表します。
+別のプロジェクトへの参照を表します。 `ProjectReference` 項目は `ResolveProjectReferences` ターゲットによって[参照](#reference)項目に変換されるため、参照の有効なメタデータは、変換処理で上書きされない場合、`ProjectReference`で有効になることがあります。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
@@ -87,7 +87,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="compile"></a>Compile
 
- コンパイラのソース ファイルを表します。
+コンパイラのソース ファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
@@ -99,7 +99,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
- 生成されるアセンブリに埋め込まれるリソースを表します。
+生成されるアセンブリに埋め込まれるリソースを表します。
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
@@ -114,7 +114,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="content"></a>Content
 
- プロジェクトにコンパイルはされないものの、プロジェクトと共に埋め込まれるか発行されることのあるファイルを表します。
+プロジェクトにコンパイルはされないものの、プロジェクトと共に埋め込まれるか発行されることのあるファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
@@ -130,7 +130,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="none"></a>None
 
- ビルド プロセスでは使用しないことが推奨されるファイルを表します。
+ビルド プロセスでは使用しないことが推奨されるファイルを表します。
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
@@ -144,7 +144,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
 
- `[AssemblyMetadata(key, value)]` として生成されるアセンブリ属性を表します。
+`[AssemblyMetadata(key, value)]` として生成されるアセンブリ属性を表します。
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
@@ -156,16 +156,17 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- ビルドの基本アプリケーション マニフェストを表し、ClickOnce 配置セキュリティ情報を含みます。
+ビルドの基本アプリケーション マニフェストを表し、ClickOnce 配置セキュリティ情報を含みます。
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
- インポートする FxCop プロジェクトを表します。
+インポートする FxCop プロジェクトを表します。
 
 ### <a name="import"></a>インポート
 
- Visual Basic コンパイラによってその名前空間がインポートされるアセンブリを表します。
+Visual Basic コンパイラによってその名前空間がインポートされるアセンブリを表します。
 
 ## <a name="see-also"></a>関連項目
 
 - [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)
+- [.NET Core SDK プロジェクトの MSBuild プロパティ](/dotnet/core/project-sdk/msbuild-props)

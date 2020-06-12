@@ -4,20 +4,24 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564187"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182899"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
 
 大規模なユーザー グループを追加するには、一括追加機能を使用できます。または、所属する組織で Microsoft Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用することができます。 この記事では、両方のオプションの手順について説明します。 
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>一括追加を使用してサブスクリプションを割り当てる
 1. Visual Studio サブスクリプション管理ポータル (https://manage.visualstudio.com ) にサインインします。
@@ -32,6 +36,9 @@ ms.locfileid: "82564187"
    > 常にこのテンプレートの最新バージョンをダウンロードしてください。 古いバージョンを使うと、一括アップロードが失敗する可能性があります。
 
 3. Excel スプレッドシートのフィールドに、サブスクリプションを割り当てるユーザーの情報を入力します。 *[Reference]* は省略可能なフィールドです。完成したらローカルにファイルを保存します。
+
+    > [!NOTE]
+    > テンプレートのフィールドの 1 つで、管理者は、サブスクライバーがソフトウェアをダウンロードする機能を有効または無効にすることができます。  ダウンロードを無効にすると、プロダクト キーへのアクセスも無効になります。
 
    問題なくアップロードできるよう、次のベスト プラクティスに従ってください。
 
@@ -74,12 +81,17 @@ ms.locfileid: "82564187"
 > [!IMPORTANT]
 >
 > サブスクライバーを追加する場合の Azure AD グループの使用には、次の制限事項が適用されます。
+> - 管理ポータルに最初にグループを追加するときは、管理者が AAD テナントのメンバーである必要があります。  グループを追加した後、グループのメンバーシップの変更には管理者の関与は必要ありません。 
 > - グループには、少なくとも 1 人のメンバーを含んでいる必要があります。  空のグループはサポートされていません。
 > - グループのユーザー数は 1,000 未満にする必要があります。 
 > - すべてのユーザーが、グループの最上位レベルにいる必要があります。  入れ子になったグループはサポートされていません。
 > - 信頼済みの契約のみがサポートされます。
 > - グループのすべてのメンバーが、Azure AD アカウントに関連付けられた電子メール アドレスを保持している必要があります。
 > - Azure AD グループを使用して追加されたサブスクリプションの場合、通知用の個別の電子メール アドレスはサポートされていません。  
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
 1. Visual Studio サブスクリプション管理ポータル ([https://manage.visualstudio.com](https://manage.visualstudio.com)) にサインインします。
 
@@ -106,9 +118,6 @@ ms.locfileid: "82564187"
 > [!NOTE]
 > 後に Azure AD グループの一部として追加されたユーザーにサブスクリプションを個別に既に割り当てている場合は、グループの一部として追加され、個別に一覧表示されなくなります。 ただし、個別のサブスクリプションが異なるサブスクリプション レベル用のものである場合は、サブスクリプションを 2 つ所有することになります。  例:ユーザーが個別の Visual Studio Professional サブスクリプションを所有していて、さらに Visual Studio Enterprise サブスクリプションを割り当てるグループのメンバーである場合は、両方を所有することになります。  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Q:Azure AD グループ内で複数のサブスクリプション レベルを割り当てることはできますか? 

@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 3/23/2019
+ms.date: 5/19/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,68 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: cc1cbc98d4612c8f480cca0a9469d4a56da10bb3
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232820"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184784"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4610"></a>4.6.1.0
+リリース日: 2020 年 5 月 19 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity 側でメッセージング サーバーを作成できない場合に警告します。
+  
+  - ライトウェイト コンパイル中にアナライザーを適切に実行します。
+  
+  - UPE から作成された MonoBehaviour クラスがファイル名と一致しない問題を修正しました。
+
+## <a name="4600"></a>4.6.0.0
+リリース日: 2020 年 4 月 14 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - CodeLens のサポート (Unity スクリプトとメッセージ) を追加しました。
+  
+  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md) 診断が追加されました。 `StartCoroutine()` でコルーチンの呼び出しが検出されてラップされます。
+
+  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md) 診断が追加されました。 無効または重複する `SerializeField` 属性が検出され削除されます。
+
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md) 診断が追加されました。 コンポーネント以外またはインターフェイス以外の型を使用して呼び出された `GetComponent()` が検出されます。
+  
+  - `IDE0051` 用の [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) サプレッサーが追加されました。 `ContextMenu` 属性を持つメソッド、または `ContextMenuItem` 属性を持つフィールドによって参照されているメソッドには未使用のフラグが設定されません。
+
+  - `IDE0051` 用の [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) サプレッサーが追加されました。 `ContextMenuItem` 属性を持つフィールドに未使用のフラグが設定されません。
+  
+  - `IDE0044` 用の [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) サプレッサーが追加されました。 `ContextMenuItem` 属性を持つフィールドが読み取り専用にされません。
+  
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)、[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)、[`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) は、`SerializeReference` 属性と `SerializeField` 属性の両方で動作するようになりました。
+  
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - エディターが通信できる場合にのみ、start/stop コマンドが Unity に送信されます。
+  
+  - 継承されたメッセージを含むように QuickInfo ドキュメントを修正しました。
+  
+  - `CreateInspectorGUI` メッセージのメッセージ スコープを修正しました。
+
+  - ポリモーフィックな修飾子を持つメソッドでは、[`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) が報告されません。
+
+- **評価:**
+
+  - エイリアス化の使用の処理を修正しました。
 
 ## <a name="4510"></a>4.5.1.0
 
@@ -29,7 +81,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 用のサプレッサーが追加されました。 Invoke、InvokeRepeating、StartCoroutine、または StopCoroutine で使用されるプライベート メソッドを未使用としてマークすることはできません。
+  - `IDE0051` 用の [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) サプレッサーが追加されました。 Invoke、InvokeRepeating、StartCoroutine、または StopCoroutine で使用されるプライベート メソッドを未使用としてマークすることはできません。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -61,15 +113,15 @@ Visual Studio Tools for Unity の変更ログです。
 
   - HLSL ファイルのサポートが追加されました。
   
-  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) 用のサプレッサーが追加されました。 `SerializeField` 属性を持つプライベート フィールドを未使用としてマークすることはできません。
+  - `IDE0051` 用の [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) サプレッサーが追加されました。 `SerializeField` 属性を持つプライベート フィールドを未使用としてマークすることはできません。
   
-  - [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) 用のサプレッサーが追加されました。 `SerializeField` 属性を持つフィールドを未割り当てとしてマークすることはできません。  
+  - `CS0649` 用の [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) サプレッサーが追加されました。 `SerializeField` 属性を持つフィールドを未割り当てとしてマークすることはできません。  
 
 ### <a name="bug-fixes"></a>バグ修正
 
 - **統合:**
 
-  - プロジェクトの生成を修正しました (`GenerateTargetFrameworkMonikerAttribute` ターゲットは常に正しく配置されていませんでした)
+  - プロジェクトの生成を修正しました (`GenerateTargetFrameworkMonikerAttribute` ターゲットは常に正しく配置されていませんでした)。
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -115,7 +167,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - すべての Unity メッセージに対して [`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) (未使用パラメーター) 用のサプレッサーが追加されました。
+  - すべての Unity メッセージに対して `IDE0060` (未使用パラメーター) 用の [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) サプレッサーが追加されました。
   
   - `TooltipAttribute` でタグ付けされたフィールド用のクイック ヒントを追加しました。 (これは、このフィールドを使用する単純な get アクセサーに対しても機能します)。
 
@@ -1097,7 +1149,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Visual Studio が XML IntelliSense ファイルをロックしている場合にエラー メッセージが表示されなくなりました。
 
-- 条件付き引数がブール値でない場合は、<<\<When Changed>> 条件付きブレークポイントを処理します。
+- 条件付き引数がブール値でない場合は、<\<When Changed>> 条件付きブレークポイントを処理します。
 
 - Windows ストア アプリの UnityEngine アセンブリおよび UnityEditor のアセンブリへの参照を修正しました。
 

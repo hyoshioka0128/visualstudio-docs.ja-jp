@@ -1,7 +1,7 @@
 ---
 title: 発行設定をインポートして IIS に発行する
 description: 発行プロファイルを作成してインポートし、Visual Studio から IIS にアプリケーションを配置します
-ms.date: 01/31/2019
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65680136"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183302"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを IIS に発行する
 
@@ -31,10 +31,10 @@ ms.locfileid: "65680136"
 > * 発行設定ファイルを Visual Studio にインポートする
 > * IIS にアプリを配置する
 
-発行設定ファイル (*\*.publishsettings*) は、Visual Studio で作成される発行プロファイル (*\*.pubxml*) とは異なります。 発行設定ファイルは、IIS または Azure App Service を使用して作成するか、手動で作成して Visual Studio にインポートすることができます。
+発行設定ファイル ( *\*.publishsettings*) は、Visual Studio で作成される発行プロファイル ( *\*.pubxml*) とは異なります。 発行設定ファイルは、IIS または Azure App Service を使用して作成するか、手動で作成して Visual Studio にインポートすることができます。
 
 > [!NOTE]
-> Visual Studio 発行プロファイル (\*.pubxml ファイル) を Visual Studio のあるインストールから別のインストールにコピーするだけであれば、マネージド プロジェクトの種類の *\\<projectname\>\Properties\PublishProfiles* フォルダー内に発行プロファイル *\<profilename\>.pubxml* があります。 Web サイトについては、*\App_Data* フォルダー以下を確認してください。 発行プロファイルは MSBuild XML ファイルです。
+> Visual Studio 発行プロファイル (\*.pubxml ファイル) を Visual Studio のあるインストールから別のインストールにコピーするだけであれば、マネージド プロジェクトの種類の *\\<projectname\>\Properties\PublishProfiles* フォルダー内に発行プロファイル *\<profilename\>.pubxml* があります。 Web サイトについては、 *\App_Data* フォルダー以下を確認してください。 発行プロファイルは MSBuild XML ファイルです。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -52,25 +52,25 @@ ms.locfileid: "65680136"
     Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 
-* サーバーでは Windows Server 2012 か Windows Server 2016 を実行している必要があります。また、発行設定ファイル (*\*.publishsettings*) を生成するには [IIS Web Server ロール](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)を正しく設定している必要があります。 ASP.NET 4.5 または ASP.NET Core もサーバーにインストールする必要があります。 ASP.NET 4.5 を設定する方法については、「[IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)」 (ASP.NET 3.5 および ASP.NET 4.5 を使用する IIS 8.0) を参照してください。 ASP.NET Core を設定する方法については、「[IIS を使用した Windows での ASP.NET Core のホスト](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)」を参照してください。
+* サーバーでは Windows Server 2012、Windows Server 2016、または Windows Server 2019 を実行している必要があります。また、発行設定ファイル ( *\*.publishsettings*) を生成するには [IIS Web Server ロール](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)を正しく設定している必要があります。 ASP.NET 4.5 または ASP.NET Core もサーバーにインストールする必要があります。 ASP.NET 4.5 を設定する方法については、「[IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)」 (ASP.NET 3.5 および ASP.NET 4.5 を使用する IIS 8.0) を参照してください。 ASP.NET Core を設定する方法については、「[IIS を使用した Windows での ASP.NET Core のホスト](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)」を参照してください。 ASP.NET Core については、記事で説明されているように、 **[マネージ コードなし]** を使用しするようにアプリケーション プールを構成してください。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio で新しい ASP.NET プロジェクトを作成する
 
 1. Visual Studio を実行しているコンピューター上で新しいプロジェクトを作成します。
 
-    適切なテンプレートを選択します。 この例では、**[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、**[OK]** をクリックします。
+    適切なテンプレートを選択します。 この例では、 **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、 **[OK]** をクリックします。
 
-    指定したプロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
+    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
 
     選択したプロジェクト テンプレート (ASP.NET または ASP.NET Core) は、Web サーバーにインストールされている ASP.NET のバージョンと対応している必要があります。
 
-1. **[MVC]**.(.NET Framework) または **[Web アプリケーション (モデル ビュー コントローラー)]** (.NET Core の場合)、**[認証なし]** がオンであることを確認してから **[OK]** をクリックします。
+1. **[MVC]** .(.NET Framework) または **[Web アプリケーション (モデル ビュー コントローラー)]** (.NET Core の場合)、 **[認証なし]** がオンであることを確認してから **[OK]** をクリックします。
 
-1. 「**MyWebApp**」のような名前を入力し、**[OK]** をクリックします。
+1. 「**MyWebApp**」のような名前を入力し、 **[OK]** をクリックします。
 
     Visual Studio によってプロジェクトが作成されます。
 
-1. **[ビルド]** > **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。
+1. **[ビルド]**  >  **[ソリューションのビルド]** の順に選択し、プロジェクトをビルドします。
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Windows Server に Web 配置をインストールして構成する
 

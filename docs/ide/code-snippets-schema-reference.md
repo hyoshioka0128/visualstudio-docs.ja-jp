@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472795"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183679"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -115,6 +115,7 @@ Code 要素に使用できる属性には次の 3 つがあります。
    |`VB`|Visual Studio のコード スニペットであることを示します。|
    |`CSharp`|C# のコード スニペットであることを示します。|
    |`CPP`|C++ のコード スニペットであることを示します。|
+   |`XAML`|XAML のコード スニペットであることを示します。|
    |`XML`|XML のコード スニペットであることを示します。|
    |`JavaScript`|JavaScript のコード スニペットであることを示します。|
    |`TypeScript`|TypeScript のコード スニペットであることを示します。|

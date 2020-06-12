@@ -3,15 +3,15 @@ title: Visual Studio for Mac を使用したデバッグ
 description: デバッグは、プログラミングの中でも一般的で必要な部分です。 Visual Studio for Mac は成熟した IDE であり、デバッグが簡単になる機能一式が含まれています。 この記事では、安全なデバッグからデータの視覚化まで、Visual Studio for Mac のデバッグ機能を最大限に活用する方法について説明します。
 author: therealjohn
 ms.author: johmil
-ms.date: 12/13/2019
+ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75397904"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183985"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Visual Studio for Mac を使用したデバッグ
 
@@ -43,7 +43,7 @@ IDE でブレークポイントを設定するには、エディターで、中�
 
 ![ブレークポイントの一覧](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>デバッグを開始する
+## <a name="start-debugging"></a>[デバッグ開始]
 
 デバッグを開始するには、ターゲットのブラウザー、デバイス、またはミュレーター/エミュレーターを選択します。
 
@@ -87,6 +87,15 @@ IDE でブレークポイントを設定するには、エディターで、中�
 * **ステップ イン** - このボタンの場合も次のコード行が実行されます。 次行が関数呼び出しの場合、[ステップ イン] をクリックすると関数の最初の行で停止するので、関数のデバッグを 1 行ずつ続行できます。 次行が関数ではない場合の動作は、[ステップ オーバー] と同じです。
 * **ステップ アウト** - 現在の関数が呼び出された行に戻ります。
 
+## <a name="change-which-statement-is-executed-next"></a>次に実行されるステートメントの変更
+
+デバッガーが一時停止されているとき、余白にある矢印によって次に実行されるコード行が示されます。 この矢印をクリックして別のコード行にドラッグすることで、実行されるステートメントを変更できます。 コード行を右クリックし、コンテキスト メニューから **[次のステートメントの設定]** を選択する方法でも同じことをできます。
+
+![矢印をドラッグ アンド ドロップして次のステートメントを設定する](media/debugger-drag-setnextstatement.gif)
+
+> [!CAUTION]
+> 現在の実行行を変更すると、アプリケーションで予期しない動作が発生する可能性があります。 また、次に実行するステートメントを変更できない場合もあります。 たとえば、あるメソッドから別のメソッドに矢印をドラッグしても機能しません。 こうしたサポートされていないケースでは、現在の実行行を変更できなかったことを知らせるダイアログが Visual Studio for Mac に表示されます。 
+
 ## <a name="debugging-monos-class-libraries"></a>Mono のクラス ライブラリのデバッグ
 
 Xamarin 製品には、Mono のクラス ライブラリのソース コードが付属しているため、デバッガーからのステップ実行にそのソース コードを利用して、内部でどのような処理が実行されているかを検査することができます。
@@ -97,6 +106,6 @@ Xamarin 製品には、Mono のクラス ライブラリのソース コード�
 
 ![外部コードにステップイン オプション](media/debugging-image8.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデバッグ (Windows)](/visualstudio/debugger/)

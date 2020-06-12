@@ -2,7 +2,7 @@
 title: Visual Studio のアンインストール
 titleSuffix: ''
 description: Visual Studio をアンインストールする方法について、ステップ バイ ステップで説明します。
-ms.date: 12/19/2019
+ms.date: 05/06/2020
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b5377c9bdb83c5c67816b3567656c49cf707071
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115016"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184420"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio のアンインストール
 
@@ -29,6 +29,13 @@ ms.locfileid: "76115016"
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac のアンインストール](/visualstudio/mac/uninstall)に関するページを参照してください。
+
+> [!TIP]
+> Visual Studio のインスタンスで問題が発生している場合は、**修復**ツールを試してください。 詳細については、「[Visual Studio の修復](../install/repair-visual-studio.md)」を参照してください。 
+>
+> 一部の Visual Studio ファイルの場所を変更する場合は、現在のインスタンスをアンインストールせずにこの操作を行うことができます。 詳細については、「[Visual Studio でインストールの場所を選択する](../install/change-installation-locations.md)」を参照してください。
+>
+> 一般的なトラブルシューティングのヒントについては、「[Visual Studio のインストールとアップグレードの問題のトラブルシューティング](../install/troubleshooting-installation-issues.md)」を参照してください。
 
 ::: moniker range="vs-2017"
 
@@ -104,7 +111,7 @@ Visual Studio 2019 のすべてのインストールと Visual Studio インス�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Visual Studio の変更](modify-visual-studio.md)
 * [Visual Studio の更新](update-visual-studio.md)

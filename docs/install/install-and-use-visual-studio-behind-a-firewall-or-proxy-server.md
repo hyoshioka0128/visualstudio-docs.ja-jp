@@ -1,7 +1,7 @@
 ---
 title: ファイアウォールまたはプロキシ サーバーの内側にインストールして使用する
 description: ファイアウォールまたはプロキシ サーバーを使用する場合に、許可リストに追加したり、開いたりすることがあるドメイン URL、ポート、プロトコルを確認します
-ms.date: 02/01/2020
+ms.date: 05/13/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223659"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180442"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -132,11 +132,11 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | 開発者コミュニティ | sendvsfeedback2.azurewebsites.net/api | https/443 | Developer Community フィードバック ツール API を呼び出すために使用されます (個人の懸案事項、検索、投票、コメント、送信、アップロード、再開) |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Intellicode API を呼び出すために使用されます |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Live Share API を呼び出すために使用されます |
-| Visual Studio Online | \*.online.visualstudio.com | https/443 | Visual Studio Online API を呼び出すために使用されます |
+| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Visual Studio Codespaces API を呼び出すために使用されます |
 | JavaScript の自動型取得 | registry.npmjs.org | https/443 | TypeScript 型定義を使用して一般的な JavaScript ライブラリに Intellisense を提供するために使用されます |
 | Visual Studio サブスクリプションのライセンス サービス | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | オンライン アクティブ化用のライセンス |
 | デバッガー | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Unix/macOS での .NET Core デバッグ用のデバッガー ビットを SSH 経由でダウンロードするために使用されます <br><br>2. <br>リモート Windows Docker コンテナー デバッグ用のデバッガー ビットをダウンロードするために使用されます<br><br> 3. .NET Framework ソースのステッピングを有効にするために使用されます <br><br> 4. <br>(ユーザーがオプトインする場合) nuget.org シンボル サーバーに発行されたシンボルをダウンロードするために使用されます。<br><br> 5. (ユーザーがオプトインする場合) MS シンボルとバイナリをダウンロードするために使用されます。ダンプでマネージド コードをデバッグするために必要になることもあります |
-| Visual Studio Online| \*.online.visualstudio.com | https/443 | Visual Studio Online API を呼び出すために使用されます |
+| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Visual Studio Codespaces API を呼び出すために使用されます |
 | Xamarin Android アプリの発行 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Google Play ストア サービスとやりとりして、Visual Studio から Xamarin Android アプリケーションを直接発行またはアップロードするために使用されます。 |
 | Azure Container Registry | *.azurecr.io | https/443 | CICD パイプラインの構成のために、Azure でホストされているコンテナー レジストリにアクセスします |
 | | | | |

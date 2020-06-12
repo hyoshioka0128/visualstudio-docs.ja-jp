@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77652795"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180403"
 ---
 # <a name="customize-your-build"></a>ビルドのカスタマイズ
 
@@ -73,7 +73,14 @@ c:\
 
 *Directory.Build.props* は *Microsoft.Common.props* で最初にインポートされ、後で定義されるプロパティを使用することはできません。 そのため、まだ定義されていない (したがって、評価が空になる) プロパティを参照しないようにしてください。
 
-*Directory.Build.targets* は、NuGet パッケージから *.targets* ファイルがインポートされた後に *Microsoft.Common.targets* からインポートされます。 そのため、ほとんどのビルド ロジックで定義されているプロパティとターゲットをオーバーライドできますが、最後のインポートの後でプロジェクト ファイルのカスタマイズが必要になる場合があります。
+*Directory.Build.props* で設定されたプロパティは、プロジェクト ファイルまたはインポートされたファイル内の他の場所でオーバーライドできます。そのため、プロジェクトの既定値を指定する際に、*Directory.Build.props* の設定を考慮する必要があります。
+
+*Directory.Build.targets* は、NuGet パッケージから *.targets* ファイルがインポートされた後に *Microsoft.Common.targets* からインポートされます。 そのため、ほとんどのビルド ロジックで定義されているプロパティやターゲットをオーバーライドしたり、個々のプロジェクトの設定に関係なく、すべてのプロジェクトのプロパティを設定したりできます。
+
+プロパティを設定するか、前の設定をオーバーライドする個々のプロジェクトのターゲットを定義する必要がある場合は、最後のインポートの後にそのロジックをプロジェクト ファイルに配置します。 SDK スタイルのプロジェクトでこれを行うには、最初に SDK スタイルの属性を同等のインポートに置き換える必要があります。 「[MSBuild プロジェクト SDK の使用方法](how-to-use-project-sdk.md)」を参照してください。
+
+> [!NOTE]
+> MSBuild エンジンは、いずれかのプロジェクト (`PreBuildEvent` を含む) のビルド実行を開始する前に、評価中にインポートされたすべてのファイルを読み取ります。そのため、これらのファイルは `PreBuildEvent` やビルド プロセスの他の部分によって変更されることはないと思われます。 変更は、次に *Msbuild.exe* が呼び出されるか、次に Visual Studio がビルドされるまで有効になりません。
 
 ### <a name="use-case-multi-level-merging"></a>ユース ケース: マルチレベルの結合
 
@@ -189,6 +196,8 @@ MSBuild でソリューション ファイルがビルドされるとき、最�
 </Project>
 ```
 
+ソリューション ビルドはプロジェクト ビルドとは別個のものなので、ここでの設定はプロジェクト ビルドには影響しません。
+
 ## <a name="customize-all-net-builds"></a>すべての .NET ビルドをカスタマイズする
 
 ビルド サーバーを管理する場合は、サーバー上のすべてのビルドに対してグローバルに MSBuild 設定を構成することが必要な場合があります。  原理的には、グローバルな *Microsoft.Common.Targets* ファイルまたは *Microsoft.Common.Props* ファイルを変更することができますが、より優れた方法があります。 特定の MSBuild プロパティを使用し、特定のカスタムの `.targets` および `.props` ファイルを追加することで、特定のプロジェクト タイプ (すべての C# プロジェクトなど) のすべてのビルドに影響を与えることができます。
@@ -216,14 +225,35 @@ MSBuild または Visual Studio のインストールによって管理されて
 msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
 ```
 
-最適な方法はご自身のシナリオによって異なります。 専用のビルド サーバーがあり、そのサーバー上で実行される適切なプロジェクト タイプのすべてのビルドにおいて、特定のターゲットが必ず実行されるようにする場合は、グローバルなカスタムの `.targets` または `.props` ファイルを使用することをお勧めします。  特定の条件が適用される場合にのみカスタム ターゲットを実行したい場合は、別のファイルの場所を使用し、必要な場合にのみ MSBuild コマンド ラインで適切な MSBuild プロパティを設定することで、そのファイルへのパスを設定します。
+最適な方法はご自身のシナリオによって異なります。 Visual Studio の機能拡張を使用して、ビルド システムをカスタマイズし、カスタマイズしたシステムのインストールおよび管理を行うためのメカニズムを提供できます。
+
+専用のビルド サーバーがあり、そのサーバー上で実行される適切なプロジェクト タイプのすべてのビルドにおいて、特定のターゲットが必ず実行されるようにする場合は、グローバルなカスタムの `.targets` または `.props` ファイルを使用することをお勧めします。  特定の条件が適用される場合にのみカスタム ターゲットを実行したい場合は、別のファイルの場所を使用し、必要な場合にのみ MSBuild コマンド ラインで適切な MSBuild プロパティを設定することで、そのファイルへのパスを設定します。
 
 > [!WARNING]
 > Visual Studio では、一致する型のプロジェクトをビルドするときに MSBuild フォルダー内でカスタムの `.targets` または `.props` ファイルが見つかった場合、必ずそれらを使用します。 これにより、意図しない結果が生じる可能性があります。正しく実行されないと、コンピューター上での Visual Studio のビルド機能が無効になる場合があります。
 
+## <a name="customize-c-builds"></a>C++ ビルドのカスタマイズ
+
+C++ プロジェクトの場合、以前に説明したカスタム *.targets* と *.props* ファイルを同じ方法で使用して、既定の設定をオーバーライドすることはできません。 *Directory.Build.props* は、`Microsoft.Cpp.Default.props` でインポートされる *Microsoft.Common.props* によってインポートされます。一方、ほとんどの既定値は *Microsoft.Cpp.props* で定義されおり、多くのプロパティは既に定義されているため、"if not yet defined" 条件を使用できませんが、`PropertyGroup` で `Label="Configuration"` に定義されている特定のプロジェクト プロパティについては、既定値が異なっている必要があります (「[.vcxproj と .props ファイル構造](/cpp/build/reference/vcxproj-file-structure)」を参照してください)。
+
+ただし、以下のプロパティを使用して、*Microsoft.Cpp.\** ファイルの前後に自動的にインポートされる *.props* ファイルを指定できます。
+
+- ForceImportAfterCppDefaultProps
+- ForceImportBeforeCppProps
+- ForceImportAfterCppProps
+- ForceImportBeforeCppTargets
+- ForceImportAfterCppTargets
+
+すべての C++ ビルドのプロパティの既定値をカスタマイズするには、別の *props* ファイル (たとえば、*MyProps.props*) を作成し、それを指す `Directory.Build.props` の `ForceImportAfterCppProps` プロパティを定義します。
+
+<PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
+</PropertyGroup>
+
+*MyProps.props* は、*Microsoft.Cpp.props* の末尾に自動的にインポートされます。
+
 ## <a name="customize-all-c-builds"></a>すべての C++ ビルドをカスタマイズする
 
-C++ プロジェクトの場合、前述のカスタムの `.targets` および `.props` ファイルは無視されます。 C++ プロジェクトの場合は、各プラットフォーム用に `.targets` ファイルを作成し、それらのプラットフォーム用の適切なインポート フォルダーにそれらを配置することができます。
+このようなカスタマイズを追跡するのは簡単ではないため、Visual studio のインストールをカスタマイズすることは推奨されていません。特定のプラットフォームの C++ ビルドをカスタマイズするために Visual Studio を拡張する場合は、各プラットフォームの `.targets` ファイルを作成し、Visual studio 拡張機能の一部としてそれらのプラットフォーム用の適切なインポートフォルダーにそれらのファイルを配置します。
 
 Win32 プラットフォーム用の `.targets` ファイルである *Microsoft.Cpp.Win32.targets* には、次の `Import` 要素が含まれています。
 
@@ -243,7 +273,9 @@ Win32 プラットフォーム用の `.targets` ファイルである *Microsoft
 
 他のターゲット プラットフォーム用の似たインポート要素は、"*%ProgramFiles32%\MSBuild\Microsoft.Cpp\v{バージョン}\Platforms\*" に存在します。
 
-プラットフォームに応じた適切なフォルダーに `.targets` ファイルを配置すると、MSBuild によって、そのプラットフォーム用のすべての C++ ビルドにファイルがインポートされます。 必要に応じて、複数の `.targets` ファイルをそこに置くことができます。
+プラットフォームに応じて適切な `ImportAfter` フォルダーに `.targets` ファイルを配置すると、MSBuild によって、そのプラットフォーム用のすべての C++ ビルドにファイルがインポートされます。 必要に応じて、複数の `.targets` ファイルをそこに置くことができます。 
+
+Visual Studio の機能拡張を使用すると、新しいプラットフォームの定義など、さらに多くのカスタマイズを行うことができます。 詳細については、[C++ プロジェクトの拡張機能](../extensibility/visual-cpp-project-extensibility.md)に関するページを参照してください。
 
 ### <a name="specify-a-custom-import-on-the-command-line"></a>コマンド ラインでカスタム インポートを指定する
 

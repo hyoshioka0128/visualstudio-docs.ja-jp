@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232331"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183055"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -72,17 +72,17 @@ MPN 経由で提供される Visual Studio サブスクリプションでは、�
 
 ## <a name="resources"></a>リソース
 
-- [MPN プログラム管理者ガイド](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - Visual Studio サブスクリプションを MPN 従業員に割り当てる方法に関する手順が含まれます。
+- [Microsoft Partner Network プログラム ガイド](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Visual Studio サブスクリプションを MPN 従業員に割り当てる](manage-mpn-subscriptions.md)
 - [使用条件](https://www.microsoft.com/useterms/) - MPN 経由で提供される Visual Studio サブスクリプションは、Visual Studio サブスクリプションの再販禁止 (NFR) EULA の対象です。
 
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Microsoft Partner Network で提供されている [Visual Studio サブスクリプションを管理](manage-mpn-subscriptions.md)する方法について確認します。

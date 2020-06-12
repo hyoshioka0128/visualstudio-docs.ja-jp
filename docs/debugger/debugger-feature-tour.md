@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77578959"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184212"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>最初に Visual Studio デバッガーを見る
 
@@ -93,9 +93,7 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 
 ## <a name="run-to-cursor"></a>[カーソル行の前まで実行]
 
-赤色の **[デバッグの停止]** ボタン ![デバッグの停止](../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします") を選択するか、**Shift** + **F5** キーを押して、デバッガーを停止します。
-
-アプリ内のコード行を右クリックし、 **[カーソル行の前まで実行]** を選択します。 このコマンドによってデバッグが開始され、現在のコード行に一時的なブレークポイントが設定されます。
+(デバッガーの一時停止中ではなく) コードの編集時に、アプリ内のコード行を右クリックし、 **[カーソル行の前まで実行]** を選択します。 このコマンドによってデバッグが開始され、現在のコード行に一時的なブレークポイントが設定されます。
 
 ![カーソル行の前まで実行](../debugger/media/dbg-tour-run-to-cursor.png "[カーソル行の前まで実行]")
 

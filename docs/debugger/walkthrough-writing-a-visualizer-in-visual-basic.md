@@ -1,7 +1,7 @@
 ---
 title: Visual Basic でビジュアライザーを記述する | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542608"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180533"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>チュートリアル: Visual Basic でビジュアライザーを記述する
+
 このチュートリアルでは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この単純な文字列のビジュアライザーは基本的な例で、プロジェクトに合わせて他のデータ型向けのビジュアライザーを作成するときに参考になります。
 
 > [!NOTE]
@@ -62,7 +63,7 @@ ms.locfileid: "76542608"
 
 4. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで **[参照]** を選択し、Microsoft.VisualStudio.DebuggerVisualizers.DLL を探します。
 
-    DLL は、Visual Studio のインストール ディレクトリの *\<Visual Studio Install Directory>\Common7\IDE\PublicAssemblies* サブディレクトリにあります。
+    この DLL は、Visual Studio のインストール ディレクトリの *\<Visual Studio Install Directory>\Common7\IDE\PublicAssemblies* サブディレクトリにあります。
 
 5. **[OK]** をクリックします。
 
@@ -138,7 +139,9 @@ ms.locfileid: "76542608"
 ## <a name="add-the-necessary-attribute"></a>必要な属性の追加
  これで、デバッガー側のコードは終わりです。 ただし、もう 1 つ追加するものがあります。それは、ビジュアライザーを構成しているクラスのコレクションをデバッグ対象側に通知する属性です。
 
-### <a name="to-add-the-debugee-side-code"></a>デバッギ側のコードを追加するには
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>デバッグ対象側のコードで視覚化する型を追加するには
+
+デバッガー側のコードで <xref:System.Diagnostics.DebuggerVisualizerAttribute> 属性を使用して、視覚化する型 (オブジェクト ソース) を指定します。 `Target` プロパティに視覚化する型が設定されます。
 
 1. DebuggerSide.vb の `Imports` ステートメントと `namespace MyFirstVisualizer` の間に次の属性コードを追加します。
 

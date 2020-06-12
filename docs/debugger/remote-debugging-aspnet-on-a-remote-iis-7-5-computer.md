@@ -3,7 +3,7 @@ title: IIS コンピューター上の ASP.NET のリモート デバッグ
 ms.custom:
 - remotedebugging
 - seodec18
-ms.date: 05/21/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 86b035164c4d34f4ce0182ea51fdfe6381ad2d4f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536024"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173916"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>リモートの IIS コンピューター上の ASP.NET のリモート デバッグ
 IIS に配置されている ASP.NET アプリケーションをデバッグするには、アプリを配置したコンピューターにリモート ツールをインストールして実行し、Visual Studio から実行中のアプリにアタッチします。
@@ -113,7 +113,7 @@ IIS へのアプリの配置についてヘルプが必要な場合は、次の�
 このオプションを使用すると、発行設定ファイルを作成し、それを Visual Studio にインポートすることができます。
 
 > [!NOTE]
-> この配置方法では、Web 配置を使用します。 設定をインポートするのではなく、Visual Studio で Web 配置を手動で構成する場合は、ホスティング サーバー用 Web 配置 3.6 ではなく、Web 配置 3.6 をインストールすることができます。 ただし、Web 配置を手動で構成する場合は、サーバー上のアプリ フォルダーが正しい値とアクセス許可で構成されていることを確認する必要があります ([ASP.NET Web サイトの構成](#BKMK_deploy_asp_net)に関するセクションを参照してください)。
+> この配置方法では Web 配置を使用するため、サーバーに Web 配置がインストールされている必要があります。 設定をインポートするのではなく、Web 配置を手動で構成する場合は、ホスティング サーバー用 Web 配置 3.6 ではなく、Web 配置 3.6 をインストールすることができます。 ただし、Web 配置を手動で構成する場合は、サーバー上のアプリ フォルダーが正しい値とアクセス許可で構成されていることを確認する必要があります ([ASP.NET Web サイトの構成](#BKMK_deploy_asp_net)に関するセクションを参照してください)。
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Windows Server にホスティング サーバー用 Web 配置をインストールして構成する
 
@@ -131,7 +131,7 @@ IIS へのアプリの配置についてヘルプが必要な場合は、次の�
 
 1. **[設定]** ダイアログ ボックスで、 **[次へ]** をクリックしてデバッグを有効にし、 **[デバッグ]** 構成を選択し、 **[ファイル発行オプション]** の **[発行先の追加ファイルを削除する]** を選択します。
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > リリース構成を選択した場合、発行時に *web.config* ファイルのデバッグを無効にします。
 
 1. **[保存]** をクリックしてアプリを再発行します。
@@ -202,15 +202,15 @@ Visual Studio のバージョンと一致するバージョンのリモート �
     > [!TIP]
     > Visual Studio 2017 以降のバージョンで以前にアタッチしたものと同じプロセスに再アタッチするには、 **[デバッグ] > [プロセスに再アタッチする]** (Shift + Alt + P キー) を使用します。
 
-3. [修飾子] フィールドを **\<リモート コンピューター名>** に設定し、**Enter** キーを押します。
+3. [修飾子] フィールドを **\<remote computer name>** に設定し、**Enter** キーを押します。
 
-    Visual Studio で必要なポートがコンピューター名に追加されていることを確認します ( **\<リモート コンピューター名>:port** という形式で表示されます)。
+    Visual Studio で必要なポートがコンピューター名に追加されていることを確認します ( **\<remote computer name>:port** という形式で表示されます)
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 では、 **\<リモート コンピューター名>:4024** が表示されます。
+    Visual Studio 2019 では、 **\<remote computer name>:4024** が表示されます
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 では、 **\<リモート コンピューター名>:4022** が表示されます。
+    Visual Studio 2017 では、 **\<remote computer name>:4022** が表示されます
     ::: moniker-end
     ポートは必須です。 ポート番号が表示されない場合は、手動で追加します。
 
@@ -234,7 +234,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 7. **[アタッチ]** をクリックします
 
-8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<リモート コンピューター名>** に移動します。
+8. リモート コンピューターの Web サイトを開きます。 ブラウザーで、**http://\<remote computer name>** に移動します。
 
     ASP.NET の Web ページが表示されるはずです。
 9. 実行中の ASP.NET アプリケーションで、 **[バージョン情報]** ページのリンクをクリックします。
