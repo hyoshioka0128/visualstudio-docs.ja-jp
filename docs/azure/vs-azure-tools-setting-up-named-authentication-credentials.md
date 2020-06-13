@@ -39,5 +39,5 @@ Visual Studio から Azure にアプリケーションを発行したり、既�
 
 - [Web Apps の概要](/azure/app-service/)
 - [Azure App Service へのアプリのデプロイ](/azure/app-service/app-service-deploy-local-git)
-- [Visual Studio を使用した Web ジョブの展開](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Visual Studio を使用した WebJobs の展開](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [クラウド サービスの作成とデプロイ](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
