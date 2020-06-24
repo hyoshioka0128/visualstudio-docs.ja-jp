@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183003"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286358"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -58,7 +58,7 @@ ms.locfileid: "84183003"
 
   **[発行]** ツールを使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[発行]** を選択します。 (発行プロファイルを以前に構成している場合、 **[新しいプロファイルの作成]** をクリックする必要があります。)[発行] ダイアログ ボックスで、 **[App Service]** または **[Azure Virtual Machines]** を選択し、構成手順に従います。
 
-  ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-azure.png "Azure App Service を選ぶ")
+  ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-azure-new.png "Azure App Service を選ぶ")
 
   Visual Studio 2017 バージョン 15.7 以降では、ASP.NET Core アプリを **Linux 用 App Service** に配置できます。
 
@@ -91,7 +91,7 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 - **UWP**:アプリをパッケージ化し、メニュー項目を使用してそれを配置できます。 詳細については、[Visual Studio を使用して UWP アプリをパッケージ化する](/windows/uwp/packaging/packaging-uwp-apps)方法に関するページをご覧ください。
 
-    ![アプリケーション パッケージの作成](../deployment/media/feature-tour-create-app-package.jpg)
+    ![アプリケーション パッケージの作成](../deployment/media/feature-tour-create-app-package.png)
 
 - **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、デスクトップ ブリッジを使用して Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Package a desktop app for Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)」(Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)) を参照してください。
 

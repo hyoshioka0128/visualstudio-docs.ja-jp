@@ -2,22 +2,22 @@
 title: プロジェクトと NuGet パッケージのコンパイラの警告を非表示にする
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114512"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283958"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラの警告を非表示にする
+# <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラ警告の非表示
 
-1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは「[方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
+1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# または F\# の特定の警告を非表示にする
 
@@ -63,7 +63,7 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
 1. メニュー バーから、 **[プロジェクト]**  >  **[プロジェクトのアンロード]** の順に選びます。
 
-1. **ソリューション エクスプローラー**で、プロジェクトの右クリックまたはショートカット メニューを開き、 **[\<プロジェクト名>.vbproj の編集]** を選びます。
+1. **ソリューション エクスプローラー**で、プロジェクトの右クリックまたはショートカット メニューを開き、 **[編集 \<ProjectName>.vbproj]** を選択します。
 
     コード エディターに XML プロジェクト ファイルが開きます。
 
@@ -130,8 +130,8 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
    **ソリューション エクスプローラー**と**エラー一覧**から警告が消えます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)
+- [チュートリアル: アプリケーションを構築する](../ide/walkthrough-building-an-application.md)
 - [方法: ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

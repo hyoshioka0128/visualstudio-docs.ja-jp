@@ -1,7 +1,7 @@
 ---
 title: 全画面表示と仮想空白モード
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -24,12 +24,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591035"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284205"
 ---
 # <a name="how-to-manage-editor-modes"></a>方法: エディター モードを管理する
 

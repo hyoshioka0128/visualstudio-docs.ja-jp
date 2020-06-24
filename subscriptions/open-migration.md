@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: パートナーがお客様の Visual Studio サブスクリプションを管理する方法について説明します。
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564213"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289028"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>お客様に代わってサブスクリプションを管理するパートナー
 Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーが従う手順がいくつかあります。 
@@ -30,7 +30,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 パートナーが新しいライセンスを追加する手順は次のとおりです。
-- [https://manage.visualstudio.com](https://manage.visualstudio.com ) にサインインします。
+- [https://manage.visualstudio.com](<https://manage.visualstudio.com> ) にサインインします。
 - 契約のドロップダウンを選択し、 **[+New Open License]\(+新しいオープン ライセンス\)** のオプションが表示されるまで下にスクロールします。
 - ポップアップ パネルで、契約にある認証番号、ライセンス番号、お客様のメール アドレスを入力し、チェックボックスをオンにして、 **[送信]** をクリックします。
 
@@ -52,7 +52,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Visual Studio サブスクリプション管理ポータルに直接アクセスしている新しいパートナー
 このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。  この場合は、以下の手順に従ってください。
-- [https://manage.visualstudio.com](https://manage.visualstudio.com ) にアクセスします。
+- [https://manage.visualstudio.com](<https://manage.visualstudio.com> ) にアクセスします。
 - 認識されているユーザーではないというエラーが表示されます。
 - **OLP パートナー**の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、 **[送信]** をクリックします。
 
