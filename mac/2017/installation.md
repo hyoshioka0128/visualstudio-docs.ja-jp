@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984918"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289418"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Visual Studio 2017 for Mac をインストールする
 
@@ -29,7 +29,7 @@ ms.locfileid: "74984918"
 
 Visual Studio で iOS を使用するには、以下が必要です。
 
-- macOS Sierra 10.12 以降が搭載された Mac
+- macOS High Sierra 10.13 以降が搭載された Mac。
 - Xcode 9.3 以降。 通常は最新の安定バージョンをお勧めします。
 - Apple ID。 Apple ID をまだ持っていない場合は、 https://appleid.apple.com で新しい ID を作成できます。 Xcode をインストールしてサインインするには、Apple ID を持っている必要があります。
 
@@ -89,7 +89,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
 10. インストールが成功したら、 **[スタート]** を押して Visual Studio でアプリ開発を始めることができます。
 
-    ![Visual Studio を開きます](media/installer-image11.png)
+    ![Visual Studio を開く](media/installer-image11.png)
 
 > [!NOTE]
 > 元のインストールでプラットフォームやツールをインストールしなかった場合 (手順 6 でオフにした場合)、そのコンポーネントを後で追加するには、[インストーラー](https://visualstudio.microsoft.com/vs/)をもう一度実行する必要があります。
@@ -102,7 +102,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
 - [Visual Studio エンドポイント](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Visual Studio for Mac をインストールすると、アプリのコードの記述を開始できます。 以下のガイドで、次の手順であるプロジェクトの記述と配置について説明します。
 
@@ -125,6 +125,6 @@ Visual Studio for Mac をインストールすると、アプリのコードの�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio 2017 のインストール (Windows)](/visualstudio/install/install-visual-studio)

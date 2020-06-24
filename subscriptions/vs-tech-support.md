@@ -1,4 +1,4 @@
-﻿---
+---
 title: テクニカル サポート特典
 author: evanwindom
 ms.author: v-evwin
@@ -7,18 +7,18 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301943"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289431"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
 
 > [!NOTE]
-> Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、 https://visualstudio.microsoft.com/vs/pricing/ に移動し、Visual Studio サブスクリプションのさまざまな購入オプションを調べることをお勧めします。
+> Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、 <https://visualstudio.microsoft.com/vs/pricing/> に移動し、Visual Studio サブスクリプションのさまざまな購入オプションを調べることをお勧めします。
 
 > [!NOTE]
 > 特定のレベルのすべてのサブスクリプションで、サポート インシデントを受け取れるわけではありません。 FTE、NFR、MPN、MCT およびその他のプログラムを通じて取得したサブスクリプションは、サポート インシデントを受け取りません。 自分のサブスクリプションにテクニカル サポート インシデントを受け取る資格がない場合、テクニカル サポート タイルは使用可能な特典に表示されません。
@@ -33,7 +33,7 @@ Visual Studio サブスクリプションからダウンロードされた開発
 製品レベルの説明: **[Unavailable support plans]\(使用不可のサポート プラン\)** を展開します。 **[Support plan cannot be used for support on the specified product (Code: 8)]\(サポート プランは指定した製品のサポートには使用できません (コード: 8)\)** が表示される場合、お客様のサポート契約は、選択した製品バージョンには使用できません。
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
-1. https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
+1. <https://my.visualstudio.com/Benefits> に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![テクニカル サポート特典タイル](_img/vs-tech-support/vs-tech-support-tile.png)
 2. これで担当者とのチャット セッションが開始されます。担当者は、ユーザーの**契約 ID** と**アクセス ID** を作成して、ユーザーが保存できるようにそれらをメールを通じてユーザーに提供することができます。

@@ -1,7 +1,7 @@
 ---
 title: .NET 用データツール
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586043"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281072"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET 用の Visual Studio データ ツール
 
@@ -36,12 +36,12 @@ Visual Studio と .NET では、データベースへの接続、メモリ内の
 
 3. Optionalツールを使用して、新しいモデルを生成して構成します。 Entity Framework に基づくモデルは、新しいアプリケーションの既定の推奨事項です。 使用するモデルはいずれも、アプリケーションがやり取りするデータソースです。 モデルは、データベースまたはサービスとアプリケーションの間で論理的に配置されます。 「[新しいデータソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
 
-4. データソースを **[データソース]** ウィンドウから Windows フォーム、ASP.NET、または Windows Presentation Foundation デザインサーフェイスにドラッグして、指定した方法でユーザーにデータを表示するデータバインドコードを生成します。 「 [Visual Studio でのデータへのコントロールのバインド」を](../data-tools/bind-controls-to-data-in-visual-studio.md)参照してください。
+4. データソースを [**データソース**] ウィンドウから Windows フォーム、ASP.NET、または Windows Presentation Foundation デザインサーフェイスにドラッグして、指定した方法でユーザーにデータを表示するデータバインドコードを生成します。 「 [Visual Studio でのデータへのコントロールのバインド」を](../data-tools/bind-controls-to-data-in-visual-studio.md)参照してください。
 
 5. ビジネスルール、検索、データ検証などのカスタムコードを追加したり、基になるデータベースが公開するカスタム機能を利用したりできます。
 
 モデルを使用するのではなく、手順3をスキップし、.NET アプリケーションをプログラミングして、コマンドをデータベースに直接発行することができます。 この場合は、ここで、関連するドキュメントが表示されます: [ADO.NET](/dotnet/framework/data/adonet/index)します。 ただし、**データソース構成ウィザード**とデザイナーを使用して、メモリ内に独自のオブジェクトを設定し、それらのオブジェクトに UI コントロールをデータバインドするときに、データバインディングコードを生成することができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)

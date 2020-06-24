@@ -3,16 +3,16 @@ title: Docker のコンテナー ログ、環境変数、ファイル システ�
 description: Visual Studio でツール ウィンドウを使用してアプリをホストしているコンテナー内の状況を表示することにより、コンテナーベースのアプリをデバッグおよび診断する機能を向上させる方法について説明します。
 author: ghogen
 ms.author: ghogen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027304"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283126"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 

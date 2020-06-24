@@ -1,8 +1,8 @@
 ---
-title: '方法 : ビルド イベントを指定する (Visual Basic)'
+title: '方法: ビルド イベントを指定する (Visual Basic)'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115104"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283971"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>方法 : ビルド イベントを指定する (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>方法: ビルド イベントを指定する (Visual Basic)
 
 Visual Basic のビルド イベントを使用して、コンパイル処理の一部として、スクリプト、マクロ、またはその他のアクションを実行することができます。 コンパイル前のイベントはコンパイル前に発生し、ビルド後のイベントはコンパイル後に発生します。
 
@@ -44,12 +44,12 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
 4. ビルド前またはビルド後のアクションのコマンドライン引数を入力し、 **[OK]** をクリックします。
 
     > [!NOTE]
-    > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
+    > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
 
     > [!NOTE]
     > ビルド前またはビルド後イベントが正常に完了しない場合は、アクションの成功を示すゼロ (0) 以外のコードでイベント アクションを終了させて、ビルドを強制終了することができます。
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>例: ビルド後のイベントを使用してマニフェスト情報を変更する方法
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>例:ビルド後のイベントを使用してマニフェスト情報を変更する方法
 
 次の手順は、ビルド後のイベントから呼び出される *.exe* コマンドを使用して、アプリケーション マニフェスト (プロジェクト ディレクトリ内の *.exe.manifest* ファイル) 内にオペレーティング システムの最小バージョンを設定する方法を示しています。 オペレーティング システムの最小バージョンは、4.10.0.0 などの 4 つの部分に分かれた数字です。 これを行うには、次のように、コマンドでマニフェストの `<dependentOS>` セクションを変更します。
 
@@ -65,7 +65,7 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
 
 1. コマンド用のコンソール アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をクリックし、 **[プロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、 **[Windows]** 、 **[コンソール アプリケーション]** テンプレートの順に選択します。 プロジェクトに `ChangeOSVersionVB` と名前を付けます。
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、 **[Windows]** 、 **[コンソール アプリケーション]** テンプレートの順に選択します。 プロジェクトに `ChangeOSVersionVB` という名前を付けます。
 
 3. *Module1.vb* で、ファイルの先頭にある他の `Imports` ステートメントに次の行を追加します。
 
@@ -128,7 +128,7 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
 
 1. 発行するプロジェクト用の Windows アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をクリックし、 **[プロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、 **[Windows デスクトップ]** 、 **[Windows フォーム アプリケーション]** テンプレートの順に選択します。 プロジェクトに `VBWinApp` と名前を付けます。
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、 **[Windows デスクトップ]** 、 **[Windows フォーム アプリケーション]** テンプレートの順に選択します。 プロジェクトに `VBWinApp` という名前を付けます。
 3. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
 4. **プロジェクト デザイナー**で、 **[発行]** ページに移動し、 **[発行場所]** を *C:\TEMP* に設定します。
@@ -163,9 +163,9 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [[発行] ページ (プロジェクト デザイナー)](../ide/reference/publish-page-project-designer.md)
 - [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [方法 : ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)

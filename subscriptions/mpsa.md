@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
-ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232204"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289353"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 MPSA プログラムを使用して Visual Studio サブスクリプションを購入した場合、Visual Studio サブスクリプション管理者になってサブスクリプションをユーザーに割り当てる前に、いくつか注意が必要な点があります。 管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)に直接進むことができます。
@@ -45,7 +45,7 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 5. **[Associate Domain]\(ドメインの関連付け\)** をクリックします。
 
 関連付けが行われると、条件を満たすすべてのユーザーは、通常は数分で Visual Studio のサブスクリプション管理者としてプロビジョニングされます。 ただし、最大 24 時間かかることもあります。 テナントがプロビジョニングされると、Visual Studio サブスクリプション管理ポータルにアクセスできるようになります。 24 時間よりも長くかかる場合は、次の手順に従って MPSA サポートにお問い合わせください。
-1. https://www.microsoft.com/licensing/mpsa/default に接続します。
+1. <https://www.microsoft.com/licensing/mpsa/default> に接続します。
 2. ページの上部にある **[詳細]** メニューをクリックします。 
 3. **[サポート]** を選択します。
 4. **[Licensing support]\(ライセンス サポート\)** を選択します。

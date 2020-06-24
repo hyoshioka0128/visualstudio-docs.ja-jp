@@ -1,19 +1,19 @@
 ---
 title: ロード テストのシナリオ開始時刻の遅延を構成する
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d425b457056e256c5c9ed927c99adf002b78dd9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111477"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288794"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>ロード テストのシナリオ開始時刻の遅延を構成する
 
