@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7ae4e0f865b35787663313277eb4df37169b72b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75406347"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286064"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
@@ -106,7 +106,8 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 ## <a name="see-also"></a>関連項目
 
-[Visual Studio 2019 のプロジェクトの移行とアップグレードのリファレンス](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Visual Studio 2019 のプロジェクトの移行とアップグレードのリファレンス](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
 
@@ -114,7 +115,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 新しいバージョンの Visual Studio はいずれも、ほとんどの種類のプロジェクト、ファイル、その他の資産に対応しています。 新しい機能に依存しない場合は、[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)これらを操作できます。
 
-Microsoft では、以前のバージョン (Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など) との下位互換性を維持しようとしています。 しかし、一部の種類のプロジェクトに対するサポートは、時間の経過と共に変化します。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。 
+Microsoft では、以前のバージョン (Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など) との下位互換性を維持しようとしています。 しかし、一部の種類のプロジェクトに対するサポートは、時間の経過と共に変化します。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。
 
 > [!NOTE]
 > 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。 また、Visual Studio のそれぞれのバージョンに固有の機能について詳しくは、[リリース ノート](/visualstudio/releases/2019/release-notes/)をご覧ください。
@@ -182,7 +183,7 @@ Microsoft では、以前のバージョンとの互換性を維持しようと�
 
 そのプロジェクトの種類を所有しているエンジニアリング チームは、これらの条件を確認し、サポート、互換性、移行に関して問題があるときは問い合わせます。 ここでも、Visual Studio のバージョン間の互換性を維持して、Visual Studio のあるバージョンで作成および変更したプロジェクトが、他のバージョンでもそのままで動作するようにすることが試みられます。
 
-場合によっては、互換性を実現できないことがあります。 その場合、Visual Studio によって、必要な一方向の変更を加えるためのアップグレード ウィザードが開かれます。 これらの一方向の変更には、プロジェクト ファイルの `ToolsVersion` プロパティの変更が含まれる場合があります。このプロパティにより、プロジェクトのソース コードを目的の実行可能で配置可能な成果物に変換できる、MSBuild の正確なバージョンが示されます。 
+場合によっては、互換性を実現できないことがあります。 その場合、Visual Studio によって、必要な一方向の変更を加えるためのアップグレード ウィザードが開かれます。 これらの一方向の変更には、プロジェクト ファイルの `ToolsVersion` プロパティの変更が含まれる場合があります。このプロパティにより、プロジェクトのソース コードを目的の実行可能で配置可能な成果物に変換できる、MSBuild の正確なバージョンが示されます。
 
 プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている場合、Visual Studio ではそのツールチェーンを呼び出してプロジェクトをビルドすることができます。
 
@@ -199,6 +200,7 @@ Microsoft では、以前のバージョンとの互換性を維持しようと�
 
 ## <a name="see-also"></a>関連項目
 
-[Visual Studio 2017 のプロジェクトの移行とアップグレードのリファレンス](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Visual Studio 2017 のプロジェクトの移行とアップグレードのリファレンス](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

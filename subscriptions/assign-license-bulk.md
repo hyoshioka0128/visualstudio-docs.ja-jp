@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: conceptual
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182899"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289132"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -24,18 +24,18 @@ ms.locfileid: "84182899"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>一括追加を使用してサブスクリプションを割り当てる
-1. Visual Studio サブスクリプション管理ポータル (https://manage.visualstudio.com ) にサインインします。
+1. Visual Studio サブスクリプション管理ポータル (<https://manage.visualstudio.com> ) にサインインします。
 
-2. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。 **[追加]** タブを選択してから、ドロップダウンで **[一括追加]** を選択します。  
+1. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。 **[追加]** タブを選択してから、ドロップダウンで **[一括追加]** を選択します。  
 
-2. 一括追加では、Microsoft Excel テンプレートを使用してサブスクライバー情報をアップロードします。 [Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\) ダイアログ ボックスで、 **[ダウンロード]** をクリックしてテンプレートをダウンロードします。
+1. 一括追加では、Microsoft Excel テンプレートを使用してサブスクライバー情報をアップロードします。 [Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\) ダイアログ ボックスで、 **[ダウンロード]** をクリックしてテンプレートをダウンロードします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーをアップロードするための Excel テンプレートをダウンロードする](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > 常にこのテンプレートの最新バージョンをダウンロードしてください。 古いバージョンを使うと、一括アップロードが失敗する可能性があります。
 
-3. Excel スプレッドシートのフィールドに、サブスクリプションを割り当てるユーザーの情報を入力します。 *[Reference]* は省略可能なフィールドです。完成したらローカルにファイルを保存します。
+1. Excel スプレッドシートのフィールドに、サブスクリプションを割り当てるユーザーの情報を入力します。 *[Reference]* は省略可能なフィールドです。完成したらローカルにファイルを保存します。
 
     > [!NOTE]
     > テンプレートのフィールドの 1 つで、管理者は、サブスクライバーがソフトウェアをダウンロードする機能を有効または無効にすることができます。  ダウンロードを無効にすると、プロダクト キーへのアクセスも無効になります。
@@ -48,11 +48,11 @@ ms.locfileid: "84182899"
     - 必須フィールドがすべて入力済みになっていることを確認します。 
     - **[エラー メッセージ]** 列を確認してください。  エラーが一覧に示された場合は、ファイルのアップロードを試行する前に解決します。 
 
-4. Visual Studio サブスクリプション管理ポータルに戻ります。 **[Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\)** ダイアログ ボックスで、 **[参照]** をクリックします。
+1. Visual Studio サブスクリプション管理ポータルに戻ります。 **[Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\)** ダイアログ ボックスで、 **[参照]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーをアップロードするために保存したテンプレートを参照する](media/bulk-add-browse-saved-template.png)
 
-5. 保存した Excel ファイルを選んで、 **[OK]** をクリックします。
+1. 保存した Excel ファイルを選んで、 **[OK]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーをアップロードするための Excel テンプレートをアップロードする](media/bulk-upload-subscribers.png)
 

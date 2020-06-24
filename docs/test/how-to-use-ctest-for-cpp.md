@@ -1,18 +1,18 @@
 ---
 title: C++ 用の CTest を使用する方法
 ms.date: 01/23/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: jillfra
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c429c9e676ead54bb9f168e3220bf2d4791fac63
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76826524"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287234"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Visual Studio 2017 以降で C++ 用の CTest を使用する方法
 

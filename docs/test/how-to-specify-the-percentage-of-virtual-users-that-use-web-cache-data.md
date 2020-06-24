@@ -1,19 +1,19 @@
 ---
 title: ロード テスト:Web キャッシュ データを使用して仮想ユーザーの割合を設定する
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a31ea50cdedbeb825d03de38a89200b6e8e5200
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113362"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287403"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>方法: Web キャッシュ データを使用する仮想ユーザーの割合を指定する
 
