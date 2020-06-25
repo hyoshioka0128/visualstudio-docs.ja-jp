@@ -1,7 +1,7 @@
 ---
 title: チェックインポリシーを使用してプロジェクト規則セットを同期する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587408"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371782"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトのチェックインポリシーを使用してコードプロジェクト規則セットを同期する
 
@@ -31,7 +31,7 @@ ms.locfileid: "75587408"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Microsoft 標準規則セットを指定するには
 
-1. **ソリューション エクスプ ローラー**コード プロジェクトを右クリックし、クリックして**プロパティ**します。
+1. **ソリューションエクスプローラー**で、コードプロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
 2. **[コード分析]** をクリックします。
 
@@ -43,7 +43,7 @@ ms.locfileid: "75587408"
 
 ::: moniker range=">=vs-2019"
 
-3. **アクティブな規則** の一覧で、チェックインポリシー 規則セットを選択します。
+3. [**アクティブな規則**] の一覧で、[チェックインポリシー] 規則セットを選択します。
 
 ::: moniker-end
 
@@ -51,23 +51,23 @@ ms.locfileid: "75587408"
 
 1. 必要に応じて、チェックインポリシーを指定するルールセットファイルに対して get 操作を実行します。
 
-2. **ソリューション エクスプ ローラー**コード プロジェクトを右クリックし、クリックして**プロパティ**します。
+2. **ソリューションエクスプローラー**で、コードプロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
 3. **[コード分析]** をクリックします。
 
 ::: moniker range="vs-2017"
 
-4. **[この規則セットを実行]** します ボックスの一覧の [ **\<参照**] をクリックし > ます。
+4. [**この規則セットを実行**する] の一覧で、をクリックし **\<Browse>** ます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **アクティブな規則** の一覧で 参照 をクリックし **\<** ます。
+4. [**アクティブな規則**] の一覧で、をクリックし **\<Browse>** ます。
 
 ::: moniker-end
 
-5. **[開く]** ダイアログボックスで、チェックインポリシー規則セットファイルを指定します。
+5. [**開く**] ダイアログボックスで、チェックインポリシー規則セットファイルを指定します。
 
 ## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>コードプロジェクトのカスタム規則セットを作成するには
 

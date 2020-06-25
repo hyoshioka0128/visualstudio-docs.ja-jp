@@ -1,16 +1,16 @@
 ---
 title: レガシコード分析を無効にする
 ms.date: 10/04/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42d981505817a4de72ed60b896742d4551ca0ee4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587499"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371886"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>方法: マネージコードのバイナリコード分析を有効または無効にする
 
@@ -21,21 +21,21 @@ ms.locfileid: "75587499"
 
 レガシコード分析を有効または無効にするには:
 
-1. **ソリューション エクスプ ローラー** で、プロジェクトを右クリックし、**プロパティ**を選択します。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
-2. プロジェクトの プロパティ ダイアログボックスで、**コード分析** タブを選択します。
+2. プロジェクトの [プロパティ] ダイアログボックスで、[**コード分析**] タブを選択します。
 
-3. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
+3. [**構成**] でビルドの種類を指定し、[**プラットフォーム**] でターゲットプラットフォームを指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
 
 ::: moniker range="vs-2017"
 
-4. 自動コード分析を有効または無効にするには、**ビルドに対するコード分析を有効にする**のチェック ボックスをオンまたはオフします。
+4. 自動コード分析を有効または無効にするには、[**ビルド時にコード分析を有効に**する] チェックボックスをオンまたはオフにします。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 自動コード分析を有効または無効にするには、 **[バイナリアナライザー]** セクションの **[ビルド時に実行]** チェックボックスをオンまたはオフにします。
+4. 自動コード分析を有効または無効にするには、[**バイナリアナライザー** ] セクションの [**ビルド時に実行**] チェックボックスをオンまたはオフにします。
 
    ![Visual Studio でのビルドオプションでのバイナリコード分析の実行](media/run-on-build-binary-analyzers.png)
 
