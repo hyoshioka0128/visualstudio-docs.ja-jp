@@ -2,19 +2,19 @@
 title: ペン ツールの修飾キー
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a00fe4b87a0a9e1ee55497b84c59536d66d285
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82921341"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328378"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio のペン ツールの修飾キー
 
@@ -26,7 +26,7 @@ ms.locfileid: "82921341"
 |曲線の線分の始点を作成する|クリックすると新しいポイントが作成されます。その後ドラッグして、正接ハンドルを調整した後、マウスのボタンを放します|![曲線の線分の始点を作成する](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> ペン ポインター|
 |スムージング設定なしで最後の接線を調整し、とがった角にする|クリックして新しい点を作成し、**Alt** キーを押してからマウス ボタンを放す|![スムージング設定なしで最後の接線を調整する](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> ペン調整ポインター|
 |最後の接線の終点が別々に動くように接線を分割し、とがった角にする|クリックして新しい点を作成し、**Alt** キーを押しながらドラッグしてからマウス ボタンを放す|![最後の接線の終点が別々に動くように接線を分割する](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> ペン調整ポインター|
-|新しい点の回りで接線の終点を 15°刻みで動かす|クリックすると新しいポイントが作成され、 **shift**+**Alt**キーを押しながらドラッグすると、マウスボタンが離されます。|![新しい点の回りで接線の終点を 15°刻みで動かす](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> ペン調整ポインター|
+|新しい点の回りで接線の終点を 15°刻みで動かす|クリックすると新しいポイントが作成され、 **shift** + **Alt**キーを押しながらドラッグすると、マウスボタンが離されます。|![新しい点の回りで接線の終点を 15°刻みで動かす](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> ペン調整ポインター|
 |接線を終点で長さを 0 にする|終点をクリックします|![接線を終点で長さを 0 にする](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> ペン調整ポインター|
 |既存のパスに新しい点を追加する|新しいポイントを追加する場所のパスをクリックします|![既存のパスに新しい点を追加する](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> ペン挿入ポインター|
 |パスから点を削除する|既存のポイントの上にマウスのポインターを合わせてクリックします|![パスからポイントを削除する](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> ペン削除ポインター|
