@@ -4,16 +4,16 @@ description: Emulator Express を使用したローカル コンピューター�
 author: mikejo5000
 manager: jillfra
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 2c9c4470d51718f5c7d4fa3f903fdcc063aa8d80
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911831"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280584"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express を使用したローカル コンピューターでの Azure クラウド サービスの実行とデバッグ
 Emulator Express を使用することにより、管理者として Visual Studio を実行せずに、クラウド サービスをテストおよびデバッグできます。 クラウド サービスの要件に応じて、Emulator Express または完全なエミュレーターのどちらを使用するかをプロジェクト設定で指定できます。 完全なエミュレーターの詳細については、「[コンピューティング エミュレーターでの Azure アプリケーションの実行](/azure/storage/common/storage-use-emulator)」を参照してください。
@@ -25,13 +25,13 @@ Azure SDK 2.3 以降で Azure プロジェクトを作成すると、Emulator Ex
 
 1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
-1. プロジェクト プロパティのページで、 **[Web]** タブを選択します。
+1. プロジェクト プロパティのページで、**[Web]** タブを選択します。
 
     ![Azure クラウド サービス プロジェクトのプロパティ](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
 
-1. **[ローカル開発サーバー]** で、 **[IIS Express を使用する]** オプションを選択します。
+1. **[ローカル開発サーバー]** で、**[IIS Express を使用する]** オプションを選択します。
 
-1. **[エミュレーター]** で、 **[Emulator Express を使用する]** を選択します。
+1. **[エミュレーター]** で、**[Emulator Express を使用する]** を選択します。
 
 1. Emulator Express を起動するには、コマンド プロンプトで次のコマンドを実行します。
 
@@ -47,5 +47,5 @@ Emulator Express には、次のような制限事項があることがわかっ
 - 1,000 未満のポート番号にはアクセスできません。 通常 1,000 未満のポートが使用される認証プロバイダーを使用する場合は、この値を 1,000 を超えるポート番号に変更する必要がある場合があります。
 - Azure コンピューティング エミュレーターに適用されるすべての制限は、Emulator Express にも適用されます。 たとえば、デプロイあたり 50 を超えるロール インスタンスを保持できません。 Azure コンピューティング エミュレーターの詳細については、「[クラウド サービスのパフォーマンスのテスト](vs-azure-tools-performance-profiling-cloud-services.md)」をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
-[Azure Cloud Services のデバッグ](vs-azure-tools-debugging-cloud-services-overview.md)
+## <a name="next-steps"></a>次の手順
+[Azure cloud services のデバッグ](vs-azure-tools-debugging-cloud-services-overview.md)

@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489650"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280532"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio の Azure アプリケーションの公開ウィザードの使用
 
@@ -81,7 +81,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 **[配置の更新] - [設定]** - このダイアログは、ロールの更新方法をさらに詳しく指定するときに使用します。 **[増分更新]** を選択した場合は、アプリケーションのインスタンスが 1 つずつ更新されるので、アプリケーションをいつでも利用できます。 **[同時更新]** を選択した場合は、アプリケーションのすべてのインスタンスが同時に更新されます。 同時更新の方が高速ですが、更新処理中はサービスが利用できない可能性があります。
 
-![[配置の設定]](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
+![展開の設定](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
 **[IntelliTrace を有効にする]** - IntelliTrace を有効にするかどうかを指定します。 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 IntelliTrace の使用方法の詳細については、「[Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)」をご覧ください。
 
