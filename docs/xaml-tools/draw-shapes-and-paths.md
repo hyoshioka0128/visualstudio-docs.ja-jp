@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921155"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350824"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
 
@@ -86,7 +86,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ## <a name="convert-a-shape-to-a-path"></a>図形のパスへの変換
 
-パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。 図形を選択し、[**フォーマット** > **パス** > **パスに変換**] を選択します。
+パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。 図形を選択し、[**フォーマット**  >  **パス**パスに変換] を選択し  >  **Convert to Path**ます。
 
 **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.png) [パスの作業: 図形をパスに変換する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
@@ -99,11 +99,14 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ![パスの結合](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![結合前の 2 つの図形](../designers/media/b1_1.png)|結合前の 2 つの図形|![交差](../designers/media/b1_4.png)|交差|
-|![合算](../designers/media/b1_2.png)|合算|![重複部分を除外](../designers/media/b1_5.png)|重複部分を除外|
-|![除算](../designers/media/b1_3.png)|除算|![減算](../designers/media/b1_6.png)|減算|
+|Number|操作|
+|-|-|
+|![結合前の 2 つの図形](../designers/media/b1_1.png)|結合前の 2 つの図形|
+|![合算](../designers/media/b1_2.png)|合算|
+|![除算](../designers/media/b1_3.png)|除算|
+|![交差](../designers/media/b1_4.png)|交差|
+|![重複部分を除外](../designers/media/b1_5.png)|重複部分を除外|
+|![減算](../designers/media/b1_6.png)|減算|
 
 **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.png) [パスの作業: パスを結合する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
 
