@@ -1,11 +1,13 @@
 - name: プロファイリング ドキュメント
   href: index.yml
 - name: 概要
-  href: profiling-overview.md
-- name: クイックスタート
   items:
     - name: プロファイリングでのはじめに
       href: profiling-feature-tour.md
+    - name: デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: クイックスタート
+  items:
     - name: CPU 使用率の分析 (管理対象)
       href: quickstart-cpu-usage-managed.md
     - name: CPU 使用率の分析 (ネイティブ)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: 概念
   items:
-    - name: デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: パフォーマンス収集方法について
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: プロファイラー設定を最適化する
+      href: optimize-profiler-settings.md
+    - name: 複数のプロファイラー ツールを同時に使用する
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: 使い方ガイド
   items:
-    - name: PerfTips の使用
+    - name: パフォーマンスのヒント
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: データベース
+      href: analyze-database.md
+    - name: イベント ビューアー
+      href: events-viewer.md
     - name: CPU 使用率
       href: cpu-usage.md
     - name: メモリ使用量

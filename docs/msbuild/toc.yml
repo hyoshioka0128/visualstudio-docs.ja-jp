@@ -11,6 +11,8 @@
         - name: 概要
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: MSBuild がプロジェクトをビルドする方法
+          href: build-process-overview.md
         - name: プロパティ
           items:
             - name: MSBuild プロパティ
