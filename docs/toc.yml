@@ -154,9 +154,9 @@
       href: ide/quickstart-visual-basic-console.md
 - name: チュートリアル
   items:
-    - name: 'C#'
+    - name: C#
       href: get-started/csharp/
-    - name: 'F#'
+    - name: F#
       href: /dotnet/fsharp/
     - name: Visual Basic
       href: get-started/visual-basic/
@@ -202,7 +202,7 @@
           items:
             - name: アプリケーション設定の管理 (.NET)
               href: ide/managing-application-settings-dotnet.md
-            - name: 'C# プロジェクトへのアプリケーション構成ファイルの追加'
+            - name: C# プロジェクトへのアプリケーション構成ファイルの追加
               href: ide/how-to-add-app-config-file.md
         - name: マニフェストに署名する
           items:
@@ -210,7 +210,7 @@
               href: ide/managing-assembly-and-manifest-signing.md
             - name: アプリケーション マニフェストと配置マニフェストの署名
               href: ide/how-to-sign-application-and-deployment-manifests.md
-        - name: 'アプリケーション アイコンを指定する (Visual Basic、C#)'
+        - name: アプリケーション アイコンを指定する (Visual Basic、C#)
           href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
         - name: フレームワークをターゲットにする
           href: ide/visual-studio-multi-targeting-overview.md
@@ -325,10 +325,16 @@
                   href: ide/reference/generate-method.md
                 - name: フィールド/プロパティ/ローカルの生成
                   href: ide/reference/generate-field-property-local.md
+                - name: IComparable の比較演算子を生成する
+                  href: ide/reference/generate-comparison-operators.md
                 - name: コンストラクターの生成
                   href: ide/reference/generate-constructor.md
                 - name: デコンストラクターの生成
                   href: ide/reference/generate-deconstructor.md
+                - name: 構造体の IEquatable 演算子を生成する
+                  href: ide/reference/generate-equals-structs.md
+                - name: ファイル ヘッダーを追加する
+                  href: ide/reference/add-file-header.md
                 - name: 明示的なキャストの追加
                   href: ide/reference/add-explicit-cast.md
                 - name: メソッドにパラメーターを追加する
@@ -368,6 +374,8 @@
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get メソッドとプロパティの間で変換する
                   href: ide/reference/convert-get-method-to-property.md
+                - name: 通常の文字列リテラルと逐語的文字列リテラルの間で変換する
+                  href: ide/reference/convert-between-regular-string-verbatim-string.md
                 - name: ローカル関数をメソッドに変換する
                   href: ide/reference/convert-local-function-method.md
                 - name: Foreach ループを LINQ に変換する
@@ -378,6 +386,8 @@
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: switch ステートメントを switch 式に変換する
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
+                - name: DateTime と TimeSpan の入力
+                  href: ide/reference/datetime-timespan-completion.md
                 - name: フィールドのカプセル化
                   href: ide/reference/encapsulate-field.md
                 - name: インターフェイスの抽出
@@ -412,6 +422,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: 名前の変更
                   href: ide/reference/rename.md
+                - name: 条件式を簡略化する
+                  href: ide/reference/simplify-conditional-expression.md
                 - name: 文字列補間の簡略化
                   href: ide/reference/simplify-string-interpolation.md
                 - name: using の並べ替え
@@ -438,7 +450,7 @@
               href: ide/using-intellisense.md
             - name: Visual Basic の IntelliSense
               href: ide/visual-basic-specific-intellisense.md
-            - name: 'C# IntelliSense'
+            - name: C# IntelliSense
               href: ide/visual-csharp-intellisense.md
             - name: JavaScript IntelliSense
               href: ide/javascript-intellisense.md
@@ -583,7 +595,7 @@
           href: ide/productivity-features.md
         - name: 生産性のショートカット
           href: ide/productivity-shortcuts.md
-        - name: 'C# 開発者向けのヒント'
+        - name: C# 開発者向けのヒント
           displayName: ReSharper
           href: ide/csharp-developer-productivity.md
         - name: キーボード ショートカットをカスタマイズする
@@ -684,9 +696,9 @@
                       href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
                     - name: '手順 9: その他の機能を試す'
                       href: ide/step-9-try-other-features.md
-        - name: 'F#'
+        - name: F#
           items:
-            - name: 'F# の開発'
+            - name: F# の開発
               href: ide/fsharp-visual-studio.md
             - name: 以前の .NET バージョンをターゲットにする
               href: ide/fsharp-target-older-dotnet-versions.md
@@ -851,7 +863,7 @@
       href: /azure/devops/pipelines/index?view=vsts
     - name: ビルド イベントを指定する (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
-    - name: 'ビルド イベントを指定する (C#)'
+    - name: ビルド イベントを指定する (C#)
       href: ide/how-to-specify-build-events-csharp.md
     - name: Visual Basic で警告を構成する
       href: ide/configuring-warnings-in-visual-basic.md
@@ -1122,7 +1134,7 @@
                       href: ide/code-styles-and-code-cleanup.md
                     - name: IntelliSense
                       href: ide/visual-basic-specific-intellisense.md
-                - name: 'C#'
+                - name: C#
                   items:
                     - name: 詳細設定
                       href: ide/reference/options-text-editor-csharp-advanced.md
@@ -1140,7 +1152,7 @@
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
                     - name: View
                       href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: 'F#'
+                - name: F#
                   items:
                     - name: 詳細設定
                       href: ide/reference/options-text-editor-fsharp-advanced.md

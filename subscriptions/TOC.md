@@ -74,6 +74,7 @@
 ### [スーパー管理者と管理者](admin-roles.md)
 ### [契約の基本設定を設定する](admin-prefs.md)
 ### [概要](using-admin-portal.md)
+### [月払いサブスクリプションを追加する](add-monthly-subs.md)
 ### サブスクリプションを割り当てる
 #### [1 人のユーザーを追加する](assign-license.md)
 #### [複数のユーザーを追加する](assign-license-bulk.md)
