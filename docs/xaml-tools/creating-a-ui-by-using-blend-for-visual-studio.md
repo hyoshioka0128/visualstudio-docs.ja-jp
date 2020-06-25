@@ -2,7 +2,7 @@
 title: Blend for Visual Studio 機能ツアー
 titleSuffix: ''
 ms.date: 07/31/2019
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "82921305"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332096"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概要
 
@@ -71,7 +71,7 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 
 ## <a name="objects-and-timeline-window"></a>[オブジェクトとタイムライン] ウィンドウ
 
-このウィンドウを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。 [**オブジェクトとタイムライン**] ウィンドウを開くには、[**ドキュメントアウトライン**の**表示** > ] を選択します。 Visual Studio の [[ドキュメント アウトライン]](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) ウィンドウで与えられる機能に加え、Blend for Visual Studio の [オブジェクトとタイムライン] ウィンドウには右側にタイムライン作成領域があります。 アニメーションを作成し、編集するときにタイムラインを使用します。
+このウィンドウを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。 [**オブジェクトとタイムライン**] ウィンドウを開くには、[ドキュメントアウトラインの**表示**] を選択し  >  **Document Outline**ます。 Visual Studio の [[ドキュメント アウトライン]](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) ウィンドウで与えられる機能に加え、Blend for Visual Studio の [オブジェクトとタイムライン] ウィンドウには右側にタイムライン作成領域があります。 アニメーションを作成し、編集するときにタイムラインを使用します。
 
 ![アニメーション モードの [オブジェクトとタイムライン] ウィンドウ](media/storyboard-timeline.png)
 

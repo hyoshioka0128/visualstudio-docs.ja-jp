@@ -1,17 +1,18 @@
 ---
 title: XAML コードエディター
+description: Visual Studio で XAML コードエディターを使ってみる
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289830"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329174"
 ---
 # <a name="xaml-code-editor"></a>XAML コードエディター
 
@@ -182,7 +183,7 @@ XAML コードエディターでコードを編集しているときに、右ク
 
 コードスニペットは、再利用可能なコードの小さなブロックで、右クリックコンテキストメニューコマンドの**挿入スニペット**を使用するか、キーボードショートカットの組み合わせ (**ctrl** + **K**、 **ctrl** + **X**) を使用してコードファイルに挿入できます。 [IntelliSense](../ide/using-intellisense.md)が拡張され、組み込みのスニペットと手動で追加したカスタムスニペットの両方で機能する XAML スニペットの表示がサポートされるようになりました。 すぐに使える XAML スニペットには、、、 `#region` 、 `Column definition` `Row definition` 、およびがあり `Setter` `Tag` ます。
 
-![IntelliSense で表示される #region オプションを持つ XAML コードエディター](media/xaml-code-snippets.png "IntelliSense で表示される #region オプションを含む XAML コードエディターのスクリーンショット")
+![IntelliSense で表示される XAML コードスニペットオプションを含む XAML コードエディター](media/xaml-code-snippets.png "IntelliSense で表示される XAML コードスニペットオプションを含む XAML コードエディターのスクリーンショット")
 
 詳細については、「[コードスニペット](../ide/code-snippets.md)」と「 [C# コードスニペット](../ide/visual-csharp-code-snippets.md)」のページを参照してください。
 
@@ -294,7 +295,7 @@ XAML の [[オプション](../ide/reference/options-text-editor-xaml-formatting
 > [!TIP]
 > [**その他**] セクションの [**イベントハンドラーメソッド名の大文字**化] 設定は、XAML 開発者にとって特に便利です。 この設定は新しいため、既定では*オフ*になっていますが、コードでの適切な大文字と小文字の区別をサポートするには、 *[オン*] に設定することをお勧めします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 デバッグモードでのアプリの実行中にリアルタイムでコードを編集する方法の詳細については、 [XAML のホットリロード](xaml-hot-reload.md)に関するページを参照してください。
 

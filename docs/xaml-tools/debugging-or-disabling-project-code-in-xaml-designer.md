@@ -1,17 +1,17 @@
 ---
 title: XAML デザイナーでプロジェクト コードをデバッグまたは無効化する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921167"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331069"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML デザイナーでプロジェクト コードをデバッグまたは無効化する
 
@@ -35,7 +35,7 @@ ms.locfileid: "82921167"
 
 1. ハンドルされない例外のダイアログで、 **[ここをクリックして、デザイナーを再読み込み]** リンクを選びます。
 
-2. メニューバーで、[**デバッグ** > ] [**デバッグ開始**] の順に選択し、アプリケーションをビルドして実行します。
+2. メニューバーで、[**デバッグ**] [  >  **デバッグ開始**] の順に選択し、アプリケーションをビルドして実行します。
 
      アプリケーションがビルドされ、正常に実行される場合は、デザイナーで実行されているプロジェクト コードによってデザイン時例外が発生する可能性があります。
 
@@ -53,7 +53,7 @@ ms.locfileid: "82921167"
 
 5. プロジェクト コードにブレークポイントを設定します。
 
-6. Visual Studio の新しいインスタンスのメニューバーで、[**デバッグ** > ] [**プロセスにアタッチ**] の順に選択します。
+6. Visual Studio の新しいインスタンスのメニューバーで、[デバッグ] [ **Debug**  >  **プロセスにアタッチ**] の順に選択します。
 
 7. **[プロセスにアタッチ]** ダイアログの **[選択可能なプロセス]** 一覧で、 **XDesProc.exe**を選び、 **[アタッチ]** ボタンを選びます。
 
@@ -61,7 +61,7 @@ ms.locfileid: "82921167"
 
      これは、Visual Studio の最初のインスタンスの XAML デザイナーの手順です。
 
-8. Visual Studio の最初のインスタンスのメニューバーで、[**デバッグ** > ] [**デバッグの開始**] の順に選択します。
+8. Visual Studio の最初のインスタンスのメニューバーで、[**デバッグ**] [  >  **デバッグの開始**] の順に選択します。
 
      デザイナーで実行しているコードにステップ インできます。
 

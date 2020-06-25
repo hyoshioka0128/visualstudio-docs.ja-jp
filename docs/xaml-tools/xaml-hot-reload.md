@@ -9,17 +9,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 120ae30b3a33a04f17bd2ec23b747ac41c9427cf
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: bec1ca7ba801f4e3e0a7777e0cae62e78412dae6
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "82921317"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331963"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>XAML を使用した実行中の XAML コードの作成とデバッグ Visual Studio でのホットリロード
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio での XAML ホットリロードを使用した実行中の XAML コードの作成とデバッグ
 
 XAML ホットリロードは、アプリの実行中に XAML コードを変更できるようにすることで、WPF または UWP アプリのユーザーインターフェイス (UI) を構築するのに役立ちます。 ホットリロードは、Visual Studio と Blend for Visual Studio の両方で使用できます。 この機能を使用すると、実行中のアプリのデータコンテキスト、認証状態、およびデザイン時にシミュレートするのが困難なその他の実際の複雑さの恩恵を受けながら、XAML コードを段階的にビルドおよびテストできます。 XAML ホットリロードのトラブルシューティングに関するヘルプが必要な場合は、「代わりに[Xaml ホットリロードのトラブルシューティング](xaml-hot-reload-troubleshooting.md)」を参照してください。
 
@@ -48,15 +47,15 @@ XAML ホットリロードは、次のような場合に特に役立ちます。
 
 XAML ホットリロードの既知の制限事項を次に示します。 に実行するすべての制限を回避するには、デバッガーを停止し、操作を完了します。
 
-|制限事項|WPF|UWP|メモ|
+|制限事項|WPF|UWP|Notes|
 |-|-|-|-|
 |アプリの実行中にイベントをコントロールに接続する|サポートされていません|サポートされていません|「エラー:*イベントを確認できませんでした*」を参照してください。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
-|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポート状況|例: をと`SolidColorBrush`して使用するために、を`StaticResource`リソースディクショナリに追加します。</br>注: 静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリ`Source`のプロパティを変更しています。|
-|アプリの実行中に新しいコントロール、クラス、ウィンドウ、またはその他のファイルをプロジェクトに追加する|サポート非対象|サポート非対象|None|
-|NuGet パッケージの管理 (パッケージの追加/削除/更新)|サポート非対象|サポート非対象|None|
+|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポートされています|例: を `SolidColorBrush` として使用するために、をリソースディクショナリに追加 `StaticResource` します。</br>注: 静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリのプロパティを変更 `Source` しています。|
+|アプリの実行中に新しいコントロール、クラス、ウィンドウ、またはその他のファイルをプロジェクトに追加する|サポートされていません|サポートされていません|なし|
+|NuGet パッケージの管理 (パッケージの追加/削除/更新)|サポートされていません|サポートされていません|なし|
 |{X:Bind} markup extension を使用するデータバインディングの変更|N/A|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
-|X:Uid ディレクティブの変更はサポートされていません|なし|サポートしていません。|None|
-|複数のプロセス | サポート非対象 | サポート非対象 | ホットリロードは、一度に1つのプロセスに対してのみ使用できます。 |
+|X:Uid ディレクティブの変更はサポートされていません|なし|サポートしていません。|なし|
+|複数のプロセス | サポートされていません | サポートされていません | ホットリロードは、一度に1つのプロセスに対してのみ使用できます。 |
 
 ## <a name="error-messages"></a>エラー メッセージ
 
@@ -70,5 +69,5 @@ XAML ホットリロードの使用中に、次のエラーが発生する場合
 ## <a name="see-also"></a>関連項目
 
 * [XAML ホット リロードのトラブルシューティング](xaml-hot-reload-troubleshooting.md)
-* [Xamarin. フォームの XAML ホットリロード](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Xamarin.Forms 用の XAML ホット リロード](/xamarin/xamarin-forms/xaml/hot-reload)
 * [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

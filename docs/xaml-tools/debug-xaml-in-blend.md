@@ -6,15 +6,14 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "82921257"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331042"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend での XAML のデバッグ
 
@@ -55,7 +54,7 @@ Blend では、単純な分離コード構文エラー、コンパイルエラ�
 
 3. プロジェクトテンプレートの一覧で、[**空のアプリ (ユニバーサル Windows)**] をクリックします。
 
-4. [**名前**] テキストボックスに「 `DebuggingSample`」と入力します。
+4. [**名前**] テキストボックスに「」と入力 `DebuggingSample` します。
 
 5. **[場所]** ボックスでプロジェクトの場所を確認します。
 
@@ -89,11 +88,11 @@ Blend では、単純な分離コード構文エラー、コンパイルエラ�
     </Grid>
     ```
 
-10. **Ctrl**+**Shift**Shift+**B**キーを押して、プロジェクトをビルドします。
+10. **Ctrl** + **Shift** + **B**キーを押して、プロジェクトをビルドします。
 
     プロジェクトをビルドできないことを警告するエラー メッセージが表示され、エラーを一覧表示した **[結果]** パネルがアプリの下部に表示されます。
 
-    ![Blend for Visual Studio 内での XAML のデバッグ](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
+    ![Blend for Visual Studio 内で XAML をデバッグする](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
 
 ### <a name="resolve-xaml-errors"></a>XAML エラーの解決
 
@@ -109,11 +108,11 @@ XAML エラーが検出された場合、プロジェクトに無効なマーク
 
 4. "メンバー 'content' が認識されないか、アクセスできません。" をダブルクリックします。 `c` の `content` は大文字になります。 小文字の "c" を大文字の "c" に置き換えます。
 
-5. [プロパティ ' Mame ' は`http://schemas.microsoft.com/winfx/2006/xaml`名前空間に存在しません。 "をダブルクリックします。 "Mame" の "M" は "N" でなければなりません。 "M" を "N" で置き換えます。 これで、XAML が解析でき、アプリがデザイン サーフェスに表示されます。
+5. [プロパティ ' Mame ' は名前空間に存在しません。 "をダブルクリックし `http://schemas.microsoft.com/winfx/2006/xaml` ます。 "Mame" の "M" は "N" でなければなりません。 "M" を "N" で置き換えます。 これで、XAML が解析でき、アプリがデザイン サーフェスに表示されます。
 
     ![Blend for Visual Studio 内での XAML のデバッグ](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    **Ctrl**+**Shift**Shift+**B**キーを押してプロジェクトをビルドし、エラーが残っていないことを確認します。
+    **Ctrl** + **Shift** + **B**キーを押してプロジェクトをビルドし、エラーが残っていないことを確認します。
 
 ## <a name="debug-in-visual-studio"></a>Visual Studio でのデバッグ
 
@@ -121,6 +120,6 @@ Visual Studio で Blend プロジェクトを開くと、アプリのコード�
 
 アプリのデバッグの詳細については、「 [Visual Studio での UWP アプリのデバッグ](../debugger/debugging-windows-store-and-windows-universal-apps.md)」を参照してください。
 
-## <a name="get-help"></a>ヘルプの参照
+## <a name="get-help"></a>ヘルプを取得
 
 Blend アプリのデバッグに関するヘルプが必要な場合は、 [UWP アプリコミュニティフォーラム](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)で、問題に関連する投稿や質問を投稿することができます。
