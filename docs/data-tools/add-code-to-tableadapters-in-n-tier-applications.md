@@ -1,7 +1,7 @@
 ---
 title: n 層アプリケーションの TableAdapters にコードを追加する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113320"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283100"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
 Tableadapter の部分クラスファイルを作成し、そのファイルにコードを追加することにより、TableAdapter の機能を拡張できます (コードを*DatasetName*ファイルに追加するのではなく)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](/dotnet/visual-basic/language-reference/modifiers/partial)または[partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)」を参照してください。
@@ -32,7 +32,7 @@ TableAdapter を定義するコードは、データセット内の TableAdapter
 > **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存の部分データセットクラスは、データセットプロジェクトに手動で移動する必要があります。
 
 > [!NOTE]
-> データセットは、検証が必要な場合に <xref:System.Data.DataTable.ColumnChanging> および <xref:System.Data.DataTable.RowChanging> イベントハンドラーを生成するための機能を提供します。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
+> データセットは、 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 検証が必要な場合にイベントハンドラーを生成するための機能を提供します。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -42,13 +42,13 @@ TableAdapter を定義するコードは、データセット内の TableAdapter
 
 2. *.Xsd*ファイルをダブルクリックして、**データセットデザイナー**を開きます。
 
-3. コードを追加する TableAdapter を右クリックし、 **[コードの表示]** を選択します。
+3. コードを追加する TableAdapter を右クリックし、[**コードの表示**] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 
 4. 部分クラス宣言内にコードを追加します。
 
-5. 次の例は、`NorthwindDataSet`内の `CustomersTableAdapter` にコードを追加する場所を示しています。
+5. 次の例では、でコードをに追加する方法を示し `CustomersTableAdapter` `NorthwindDataSet` ます。
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -67,7 +67,7 @@ TableAdapter を定義するコードは、データセット内の TableAdapter
 
 ## <a name="see-also"></a>関連項目
 
-- [n 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
-- [n 層アプリケーションのデータセットにコードを追加する](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
+- [N 層アプリケーションのデータセットにコードを追加する](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Tableadapter の作成および構成](create-and-configure-tableadapters.md)
 - [階層更新の概要](hierarchical-update.md)

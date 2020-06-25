@@ -1,7 +1,7 @@
 ---
 title: n 層アプリケーションのデータセットにコードを追加する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587122"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283087"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 
@@ -32,7 +32,7 @@ ms.locfileid: "75587122"
 > データセットと Tableadapter を分離すると ( **DataSet プロジェクト**プロパティを設定することによって)、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
 
 > [!NOTE]
-> 検証コードを追加する必要がある場合、型指定されたデータセットは、<xref:System.Data.DataTable.ColumnChanging> および <xref:System.Data.DataTable.RowChanging> のイベントハンドラーを生成するための機能を提供します。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
+> 検証コードを追加する必要がある場合、型指定されたデータセットはおよびイベントハンドラーを生成するための機能を提供し <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> ます。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションのデータセットにコードを追加するには
 
@@ -40,7 +40,7 @@ ms.locfileid: "75587122"
 
 2. **.Xsd**ファイルを選択して、データセットを開きます。
 
-3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、 **[コードの表示]** を選択します。
+3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[**コードの表示**] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "75587122"
 
 ## <a name="see-also"></a>関連項目
 
-- [n 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
+- [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
 - [n 層アプリケーションの TableAdapters にコードを追加する](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Tableadapter の作成および構成](create-and-configure-tableadapters.md)
 - [階層更新の概要](hierarchical-update.md)
