@@ -1,7 +1,7 @@
 ---
-title: '方法: マネージ コードに対してレガシ コード分析を手動で実行する'
+title: マネージコードに対してレガシコード分析を手動で実行する方法
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
@@ -10,25 +10,25 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d2693bcff8e83839b4171bae60b138c967f10e5
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 38c3de83dc0df39314ad236f647c69bbe614b75d
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432085"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371821"
 ---
-# <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>方法: マネージ コードに対してレガシ コード分析を手動で実行する
-コード分析ツールは、ソース コードの可能性のある障害に関する情報を提供します。 コード分析は、コード プロジェクトのビルドごとに自動的に実行でき、コード分析を手動で実行することもできます。 コード分析の実行時にチェックされる規則は、プロジェクトのプロパティ ページの [コード分析] ページで指定します。 詳細については、「[方法 : マネージ コード プロジェクトのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)」を参照してください。
+# <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>方法: マネージコードに対してレガシコード分析を手動で実行する
+コード分析ツールは、ソースコードで発生する可能性のある欠陥に関する情報を提供します。 コードプロジェクトの各ビルドでコード分析を自動的に実行できます。また、コード分析を手動で実行することもできます。 コード分析の実行時にチェックされる規則は、プロジェクトのプロパティページの [コード分析] ページで指定します。 詳細については、「[方法: マネージコードプロジェクトのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)」を参照してください。
 
 ## <a name="to-run-code-analysis-manually"></a>コード分析を手動で実行するには
 
-1. Visual Studio 2019 バージョン 16.5 以降の場合は、Visual Studio を起動する前に、コマンド プロンプトで次のコマンドを実行します。
+1. Visual Studio 2019 バージョン16.5 以降を使用している場合は、Visual Studio を起動する前に、コマンドプロンプトで次のコマンドを実行します。
 
 ```
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. **ソリューション エクスプローラー**で、プロジェクトをクリックします。
+2. **ソリューションエクスプローラー**で、プロジェクトをクリックします。
 
-3. [**分析**] メニューの [*プロジェクト名***でコード分析を実行**] をクリックします。
+3. [**分析**] メニューの [*プロジェクト名***に対してコード分析を実行**] をクリックします。
 
