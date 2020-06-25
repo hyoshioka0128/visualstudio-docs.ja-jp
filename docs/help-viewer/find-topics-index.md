@@ -1,7 +1,7 @@
 ---
 title: ヘルプ ビューアーのインデックスの使用
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825940"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284959"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>ヘルプ ビューアーのインデックスの使用によるトピックの検索
 
@@ -35,7 +35,7 @@ ms.locfileid: "67825940"
     タブの上部にあるフィルター ボタンを選ぶと、指定したテキストを含むすべてのエントリ、または指定したテキストで始まるエントリだけを表示できます。
 
     > [!NOTE]
-    > フィルター ボタンが境界線のある濃い色の背景で表示されているときは、エントリに、指定したテキストが_含まれている_必要があります。 背景と境界線が表示されていない場合は、エントリは、指定したテキストで_始まっている_必要があります。
+    > [フィルター] ボタンが境界線のある濃い色の背景に表示されている場合は、指定したテキストがエントリに_含ま_れている必要があります。 背景と境界線が表示されない場合、エントリは指定したテキスト_で始まる_必要があります。
 
 - インデックスをスクロールし、キーワードを選びます。
 
@@ -81,4 +81,4 @@ ms.locfileid: "67825940"
 
 - [方法: 目次でトピックを検索する](../help-viewer/find-topics-toc.md)
 - [方法: トピックを検索する](../help-viewer/find-topics.md)
-- [Microsoft Help Viewer](../help-viewer/overview.md)
+- [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)

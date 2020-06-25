@@ -1,7 +1,7 @@
 ---
 title: データバインドコントロールのキャプションをカスタマイズする
 ms.date: 11/03/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113659"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282580"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
 
@@ -53,90 +53,90 @@ ms.locfileid: "76113659"
 
 |レジストリ項目|既定値|説明|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|小文字の後に大文字またはアンダースコアが続くパターンに一致します。|
+|**SmartCaptionExpression**|**( \\ \p{Ll}) ( \\ \p{Lu}) &#124;_ +**|小文字の後に大文字またはアンダースコアが続くパターンに一致します。|
 |**SmartCaptionReplacement**|**$1 $2**|**$1**は、式の最初のかっこに一致したすべての文字を表し、 **$2**は2番目のかっこで囲まれた任意の文字を表します。 置換は、最初の一致、空白、および2番目の一致です。|
-|**SmartCaptionSuffix**|**:**|返される文字列に付加された文字を表します。 たとえば、キャプションが `Company Name`場合、サフィックスによって `Company Name:`|
+|**SmartCaptionSuffix**|**:**|返される文字列に付加された文字を表します。 たとえば、キャプションがの場合、 `Company Name` サフィックスによって`Company Name:`|
 
 > [!CAUTION]
-> レジストリエディターで何かを実行する場合は注意が必要です。 編集する前にレジストリをバックアップしてください。 レジストリエディターを誤って使用すると、重大な問題が発生し、オペレーティングシステムの再インストールが必要になることがあります。 Microsoft では、レジストリエディターを誤って使用した場合に発生する問題を解決できないことを保証していません。 レジストリ エディターは、ご自身の責任において使用してください。
+> レジストリエディターで何かを実行する場合は注意が必要です。 編集する前にレジストリをバックアップしてください。 レジストリエディターを誤って使用すると、重大な問題が発生し、オペレーティングシステムの再インストールが必要になることがあります。 Microsoft では、レジストリエディターを誤って使用した場合に発生する問題を解決できないことを保証していません。 レジストリ エディターは、各自の責任で使用してください。
 >
 > レジストリのバックアップ、編集、および復元の詳細については、「 [advanced users の Windows レジストリ情報](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users)」を参照してください。
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>[データソース] ウィンドウのスマートキャプションの動作を変更する
 
-1. **[開始]** をクリックしてコマンドウィンドウを開き、を**実行**します。
+1. [**開始**] をクリックしてコマンドウィンドウを開き、を**実行**します。
 
-2. **[実行]** ダイアログボックスで「`regedit`」と入力し、 **[OK]** をクリックします。
+2. `regedit`[**実行**] ダイアログボックスに「」と入力し、[ **OK**] をクリックします。
 
-3. **HKEY_CURRENT_USER** > **ソフトウェア** > **Microsoft** > **VisualStudio**  ノードを展開します。
+3. [ **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** ] ノードを展開します。
 
 ::: moniker range="vs-2017"
 
-4. **[15.0]** ノードを右クリックし、`Data Designers`という名前の新しい**キー**を作成します。
+4. [ **15.0** ] ノードを右クリックし、という名前の新しい**キー**を作成し `Data Designers` ます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **[16.0]** ノードを右クリックし、`Data Designers`という名前の新しい**キー**を作成します。
+4. [ **16.0** ] ノードを右クリックし、という名前の新しい**キー**を作成し `Data Designers` ます。
 
 ::: moniker-end
 
-5. **[データデザイナー]** ノードを右クリックし、次の3つの新しい文字列値を作成します。
+5. [**データデザイナー** ] ノードを右クリックし、次の3つの新しい文字列値を作成します。
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **SmartCaptionExpression**値を右クリックし、 **[変更]** を選択します。
+6. **SmartCaptionExpression**値を右クリックし、[**変更**] を選択します。
 
-7. **[データソース]** ウィンドウで使用する正規表現を入力します。
+7. [**データソース**] ウィンドウで使用する正規表現を入力します。
 
-8. **SmartCaptionReplacement**値を右クリックし、 **[変更]** を選択します。
+8. **SmartCaptionReplacement**値を右クリックし、[**変更**] を選択します。
 
 9. 正規表現で一致したパターンを表示する方法で書式設定された置換文字列を入力します。
 
-10. **SmartCaptionSuffix**値を右クリックし、 **[変更]** を選択します。
+10. **SmartCaptionSuffix**値を右クリックし、[**変更**] を選択します。
 
 11. キャプションの末尾に表示する任意の文字を入力します。
 
-    次に **[データソース]** ウィンドウから項目をドラッグすると、指定された新しいレジストリ値を使用してキャプションラベルが作成されます。
+    次に [**データソース**] ウィンドウから項目をドラッグすると、指定された新しいレジストリ値を使用してキャプションラベルが作成されます。
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>スマートキャプション機能を無効にする
 
-1. **[開始]** をクリックしてコマンドウィンドウを開き、を**実行**します。
+1. [**開始**] をクリックしてコマンドウィンドウを開き、を**実行**します。
 
-2. **[実行]** ダイアログボックスで「`regedit`」と入力し、 **[OK]** をクリックします。
+2. `regedit`[**実行**] ダイアログボックスに「」と入力し、[ **OK**] をクリックします。
 
-3. **HKEY_CURRENT_USER** > **ソフトウェア** > **Microsoft** > **VisualStudio**  ノードを展開します。
+3. [ **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** ] ノードを展開します。
 
 ::: moniker range="vs-2017"
 
-4. **[15.0]** ノードを右クリックし、`Data Designers`という名前の新しい**キー**を作成します。
+4. [ **15.0** ] ノードを右クリックし、という名前の新しい**キー**を作成し `Data Designers` ます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **[16.0]** ノードを右クリックし、`Data Designers`という名前の新しい**キー**を作成します。
+4. [ **16.0** ] ノードを右クリックし、という名前の新しい**キー**を作成し `Data Designers` ます。
 
 ::: moniker-end
 
-5. **[データデザイナー]** ノードを右クリックし、次の3つの新しい文字列値を作成します。
+5. [**データデザイナー** ] ノードを右クリックし、次の3つの新しい文字列値を作成します。
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **SmartCaptionExpression**アイテムを右クリックし、 **[変更]** を選択します。
+6. **SmartCaptionExpression**アイテムを右クリックし、[**変更**] を選択します。
 
-7. 値として `(.*)` を入力します。 これは、文字列全体に一致します。
+7. 値として「」と入力し `(.*)` ます。 これは、文字列全体に一致します。
 
-8. **SmartCaptionReplacement**アイテムを右クリックし、 **[変更]** を選択します。
+8. **SmartCaptionReplacement**アイテムを右クリックし、[**変更**] を選択します。
 
-9. 値として `$1` を入力します。 これにより、文字列が一致した値に置き換えられます。文字列全体が変更されずに保持されます。
+9. 値として「」と入力し `$1` ます。 これにより、文字列が一致した値に置き換えられます。文字列全体が変更されずに保持されます。
 
-    次に **[データソース]** ウィンドウから項目をドラッグすると、キャプションラベルが、変更されていないキャプションで作成されます。
+    次に [**データソース**] ウィンドウから項目をドラッグすると、キャプションラベルが、変更されていないキャプションで作成されます。
 
 ## <a name="see-also"></a>関連項目
 

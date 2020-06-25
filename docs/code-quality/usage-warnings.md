@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184576"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283347"
 ---
 # <a name="usage-warnings"></a>使用法に関する警告
 
@@ -74,4 +74,5 @@ ms.locfileid: "84184576"
 |[CA2243:属性文字列リテラルは、正しく解析する必要があります](../code-quality/ca2243.md)|属性の文字列リテラルパラメーターは、URL、GUID、またはバージョンに対して正しく解析されません。|
 |[CA2244: インデックス付き要素の初期化を重複させません](../code-quality/ca2244.md)|オブジェクト初期化子に、同じ定数インデックスを持つ複数のインデックス付き要素初期化子があります。 最後の初期化子以外はすべて冗長です。|
 |[CA2245: プロパティをそれ自体に割り当てません](../code-quality/ca2245.md)|プロパティが誤ってそれ自体に割り当てられました。|
-|[CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません。](../code-quality/ca2246.md)|同じステートメントで、シンボルとそのメンバー (フィールドまたはプロパティ) を割り当てることは推奨されていません。 メンバーアクセスが、割り当ての前にシンボルの古い値を使用するのか、またはこのステートメントの代入の新しい値を使用するのかは明確ではありません。|
+|[CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません](../code-quality/ca2246.md)|同じステートメントで、シンボルとそのメンバー (フィールドまたはプロパティ) を割り当てることは推奨されていません。 メンバーアクセスが、割り当ての前にシンボルの古い値を使用するのか、またはこのステートメントの代入の新しい値を使用するのかは明確ではありません。|
+|[CA2248: 正しい ' enum ' 引数を ' Enum. HasFlag ' に指定してください](../code-quality/ca2248.md)|メソッド呼び出しの引数として渡された列挙型 `HasFlag` が、呼び出し元の列挙型と異なります。|

@@ -1,7 +1,7 @@
 ---
 title: '方法: エンティティ クラスに検証を追加する'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586563"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282346"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
 エンティティ クラスの "*検証*" とは、データ オブジェクトに入力された値が、アプリケーションに対して設定された規則に従っていること、およびオブジェクトのスキーマ内の制約に従っていることを確認するプロセスです。 基になるデータベースに更新を送信する前にデータを検証すると、エラーを減らすことができます。 アプリケーションとデータベースの間で生じる可能性のあるラウンド トリップの回数も減ります。
@@ -33,9 +33,9 @@ ms.locfileid: "75586563"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>列の値の変更時にデータを検証するには
 
-1. **O/R デザイナー**で新しい LINQ to SQL クラスファイル ( **.dbml**ファイル) を開くか、作成します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. **O/R デザイナー**で新しい LINQ to SQL クラスファイル (**.dbml**ファイル) を開くか、作成します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2. **O/R デザイナー**で、検証を追加するクラスを右クリックして、 **[コードの表示]** をクリックします。
+2. **O/R デザイナー**で、検証を追加するクラスを右クリックして、**[コードの表示]** をクリックします。
 
      コード エディターが開き、選択したエンティティ クラスの部分クラスが表示されます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "75586563"
 
     C# プロジェクトの場合は、次の操作を行います。
 
-    プロジェクトC#では自動的にイベントハンドラーが生成されないため、IntelliSense を使用して列変更部分メソッドを作成できます。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加する列の列変更メソッドをクリックします。 次のコードは、列変更部分メソッドを選択したときに生成されるコードに似ています。
+    C# プロジェクトでは自動的にイベントハンドラーが生成されないため、IntelliSense を使用して列変更部分メソッドを作成できます。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加する列の列変更メソッドをクリックします。 次のコードは、列変更部分メソッドを選択したときに生成されるコードに似ています。
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -79,9 +79,9 @@ ms.locfileid: "75586563"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>エンティティ クラスの更新時にデータを検証するには
 
-1. **O/R デザイナー**で新しい LINQ to SQL クラスファイル ( **.dbml**ファイル) を開くか、作成します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. **O/R デザイナー**で新しい LINQ to SQL クラスファイル (**.dbml**ファイル) を開くか、作成します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2. **O/R デザイナー**で空の領域を右クリックし、 **[コードの表示]** をクリックします。
+2. **O/R デザイナー**で空の領域を右クリックし、**[コードの表示]** をクリックします。
 
      コード エディターが開き、`DataContext` の部分クラスが表示されます。
 
@@ -106,7 +106,7 @@ ms.locfileid: "75586563"
 
     C# プロジェクトの場合は、次の操作を行います。
 
-    プロジェクトC#では自動的にイベントハンドラーが生成されないため、IntelliSense を使用して部分的な `UpdateCLASSNAME` メソッドを作成できます。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードは、`UpdateCLASSNAME` 部分メソッドを選択したときに生成されるコードに似ています。
+    C# プロジェクトではイベントハンドラーが自動的に生成されないため、IntelliSense を使用して部分メソッドを作成でき `UpdateCLASSNAME` ます。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードは、部分メソッドを選択したときに生成されるコードに似てい `UpdateCLASSNAME` ます。
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -122,5 +122,5 @@ ms.locfileid: "75586563"
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [データの検証](../data-tools/validate-data-in-datasets.md)
+- [検証 (データを)](../data-tools/validate-data-in-datasets.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)

@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173942"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282762"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 を使用して単純なデータ アプリケーションを作成する
 
-このチュートリアルでは、Visual Studio で基本的な "フォームオーバーデータ" アプリケーションを作成する方法について説明します。 アプリは SQL Server LocalDB、Northwind データベース、Entity Framework 6、および Windows Presentation Foundation を使用します。 ここでは、マスター/詳細ビューで基本的なデータバインドを実行する方法について説明します。また、 **[次**に移動]、[**前**に移動]、[**先頭に**移動]、[**最後に移動**]、[**更新**]、および [**削除**] のボタンがあるカスタムバインドナビゲーターもあります。
+このチュートリアルでは、Visual Studio で基本的な "フォームオーバーデータ" アプリケーションを作成する方法について説明します。 アプリは SQL Server LocalDB、Northwind データベース、Entity Framework 6 (Entity Framework Core ではありません)、Windows Presentation Foundation および (.NET Core ではなく) .NET Framework を使用します。 ここでは、マスター/詳細ビューで基本的なデータバインドを実行する方法について説明します。また、 **[次**に移動]、[**前**に移動]、[**先頭に**移動]、[**最後に移動**]、[**更新**]、および [**削除**] のボタンがあるカスタムバインドナビゲーターもあります。
 
 この記事では、Visual Studio でのデータツールの使用に焦点を当てていますが、基になるテクノロジの詳細については説明しません。 XAML、Entity Framework、および SQL に関する基本的な知識があることを前提としています。 また、この例では、WPF アプリケーションの標準であるモデルビュービューモデル (MVVM) アーキテクチャについても説明しません。 ただし、いくつかの変更を加えて、このコードを独自の MVVM アプリケーションにコピーできます。
 

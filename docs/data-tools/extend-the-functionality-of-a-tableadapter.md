@@ -1,7 +1,7 @@
 ---
 title: TableAdapter の機能を拡張する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34a5c1601071a36ca11005503e2f443a72ca3dfe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 245ea6791fde96c1ff08d43d138c522f43749c6b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586641"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282424"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>TableAdapter の機能を拡張する
 
@@ -32,17 +32,17 @@ TableAdapter を定義するコードは、**データセットデザイナー**
 
 ## <a name="locate-tableadapters-in-code"></a>コードでの Tableadapter の検索
 
-Tableadapter は**データセットデザイナー**で設計されていますが、生成される tableadapter クラスは <xref:System.Data.DataSet>の入れ子になったクラスではありません。 Tableadapter は、TableAdapter に関連付けられたデータセットの名前に基づいて名前空間に配置されます。 たとえば、アプリケーションに `HRDataSet`という名前のデータセットが含まれている場合、Tableadapter は `HRDataSetTableAdapters` 名前空間に配置されます。 (名前付け規則がこのパターンに従います: *DatasetName* + `TableAdapters`)。
+Tableadapter は**データセットデザイナー**で設計されていますが、生成される tableadapter クラスは、の入れ子になったクラスではありません <xref:System.Data.DataSet> 。 Tableadapter は、TableAdapter に関連付けられたデータセットの名前に基づいて名前空間に配置されます。 たとえば、アプリケーションにという名前のデータセットが含まれている場合、 `HRDataSet` tableadapter は名前空間に配置され `HRDataSetTableAdapters` ます。 (名前付け規則は、次のパターンに従います: *DatasetName*  +  `TableAdapters` )。
 
-次の例では、`NorthwindDataSet`のプロジェクトに `CustomersTableAdapter`という名前の TableAdapter があることを前提としています。
+次の例では、という名前の TableAdapter `CustomersTableAdapter` がプロジェクト内に存在することを前提としてい `NorthwindDataSet` ます。
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>TableAdapter の部分クラスを作成するには
 
-1. **[プロジェクト]** メニューの **[クラスの追加]** をクリックして、新しいクラスをプロジェクトに追加します。
+1. [**プロジェクト**] メニューの [**クラスの追加**] をクリックして、新しいクラスをプロジェクトに追加します。
 
 2. クラスに `CustomersTableAdapterExtended` という名前を付けます。
 
-3. **[追加]** を選びます。
+3. **[追加]** を選択します。
 
 4. 次のように、プロジェクトの正しい名前空間と部分クラス名でコードを置き換えます。
 

@@ -1,25 +1,25 @@
 ---
 title: トピックの検索 (ヘルプ ビューアー)
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824993"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284920"
 ---
-# <a name="how-to-search-for-topics"></a>方法: トピックの検索
+# <a name="how-to-search-for-topics"></a>方法: トピックを検索する
 
 フルテキスト検索機能を使用すると、特定のワードを含むすべてのトピックを検索できます。 ワイルドカード式、論理演算子、および高度な検索演算子を使用して、検索の絞り込みおよびカスタマイズもできます。
 
-**[検索]** タブを開くには、 **[ヘルプ ビューアー]** ウィンドウで **[検索]** タブを選択するか、キーボードを使用する場合は **Ctrl**+**E** キーを押します。
+[**検索**] タブを開くには、[**ヘルプビューアー** ] ウィンドウで [**検索**] タブを選択するか、キーボードユーザーの場合は**Ctrl E キーを押し** + **E**ます。
 
 ## <a name="to-perform-a-full-text-search"></a>フルテキスト検索を実行するには
 
@@ -46,7 +46,7 @@ ms.locfileid: "67824993"
 
 |構文|説明|
 |------------|-----------------|
-|大文字と小文字の区別|検索では、大文字と小文字が区別されません。 大文字または小文字を使って検索条件を作成します。 たとえば、"OLE" と "ole" は同じ結果を返します。|
+|大文字小文字の区別|検索では、大文字と小文字が区別されません。 大文字または小文字を使って検索条件を作成します。 たとえば、"OLE" と "ole" は同じ結果を返します。|
 |文字の組み合わせ|単一文字 (a-z) や単一数字 (0-9) だけを検索することはできません。 "and"、"from"、"with" のような特定の予約語を検索しようとしても無視されます。 詳細については、このトピックで後述する「[検索で無視される言葉](#stopwords)」をご覧ください。|
 |評価順序|検索クエリは左から右に評価されます。|
 
@@ -64,7 +64,7 @@ ms.locfileid: "67824993"
 
 ### <a name="ranking-of-search-results"></a>検索結果のランク
 
-検索アルゴリズムは特定の条件を適用し、結果一覧で検索結果を上または下のランクにします。 一般的には、次のようなランク付けが行われます。
+検索アルゴリズムは特定の条件を適用し、結果一覧で検索結果を上または下のランクにします。 一般的には次のとおりです。
 
 1. タイトルに検索語を含むコンテンツは、それを含まないコンテンツより上のランクになります。
 
@@ -72,13 +72,13 @@ ms.locfileid: "67824993"
 
 3. 検索語の密度が高いコンテンツは、密度が低いコンテンツより上のランクになります。
 
-### <a name="stopwords">検索で無視される言葉 (ストップ ワード)</a>
+### <a name=""></a><a name="stopwords">検索で無視される言葉 (ストップ ワード)</a>
 
 よく使われる言葉や数字 (ストップ ワードと呼ばれることもあります) は、フルテキスト検索で自動的に無視されます。 たとえば、"pass through" という句を検索すると、"pass" という単語を含むトピックが表示され、"through" は無視されます。
 
 ## <a name="see-also"></a>関連項目
 
 - [論理演算子と高度な演算子](../help-viewer/logical-operators-search-expressions.md)
-- [方法: インデックスでトピックを検索する](../help-viewer/find-topics-index.md)
+- [方法: インデックス内のトピックを検索する](../help-viewer/find-topics-index.md)
 - [方法: 目次でトピックを検索する](../help-viewer/find-topics-toc.md)
-- [Microsoft Help Viewer](../help-viewer/overview.md)
+- [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)

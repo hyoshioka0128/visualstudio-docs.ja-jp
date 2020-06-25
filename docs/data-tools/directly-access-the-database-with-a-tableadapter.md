@@ -1,7 +1,7 @@
 ---
 title: TableAdapter で直接データベースにアクセスする
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -23,26 +23,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586693"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282567"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter で直接データベースにアクセスする
 
-`InsertCommand`、`UpdateCommand`、および `DeleteCommand`に加えて、データベースに対して直接実行できるメソッドを使用して Tableadapter が作成されます。 これらのメソッド (`TableAdapter.Insert`、`TableAdapter.Update`、および `TableAdapter.Delete`) を呼び出して、データベース内のデータを直接操作することができます。
+、、およびに加えて、 `InsertCommand` `UpdateCommand` データベースに `DeleteCommand` 対して直接実行できるメソッドを使用して tableadapter が作成されます。 これらのメソッド ( `TableAdapter.Insert` 、 `TableAdapter.Update` 、および) を呼び出すと、 `TableAdapter.Delete` データベース内のデータを直接操作できます。
 
-これらのダイレクトメソッドを作成しない場合は、TableAdapter の `GenerateDbDirectMethods` プロパティを **[プロパティ]** ウィンドウの `false` に設定します。 Tableadapter のメインクエリに加えて、TableAdapter にクエリが追加されると、これらの `DbDirect` メソッドを生成しないスタンドアロンクエリになります。
+これらのダイレクトメソッドを作成しない場合は、 `GenerateDbDirectMethods` `false` [**プロパティ**] ウィンドウで TableAdapter のプロパティをに設定します。 Tableadapter のメインクエリに加えて、TableAdapter にクエリが追加されると、これらのメソッドを生成しないスタンドアロンクエリになり `DbDirect` ます。
 
 ## <a name="send-commands-directly-to-a-database"></a>コマンドをデータベースに直接送信する
 
-実行しようとしているタスクを実行する TableAdapter `DbDirect` メソッドを呼び出します。
+`DbDirect`実行しようとしているタスクを実行する TableAdapter メソッドを呼び出します。
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>新しいレコードをデータベースに直接挿入するには
 
-- TableAdapter の `Insert` メソッドを呼び出し、各列の値をパラメーターとして渡します。 次の手順では、Northwind データベースの `Region` テーブルを例として使用します。
+- TableAdapter の `Insert` メソッドを呼び出し、各列の値をパラメーターとして渡します。 次の手順では、 `Region` Northwind データベースのテーブルを例として使用します。
 
     > [!NOTE]
     > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
@@ -52,7 +52,7 @@ ms.locfileid: "75586693"
 
 ### <a name="to-update-records-directly-in-a-database"></a>データベース内のレコードを直接更新するには
 
-- TableAdapter の `Update` メソッドを呼び出し、各列の新しい値と元の値をパラメーターとして渡します。
+- TableAdapter のメソッドを呼び出し `Update` 、各列の新しい値と元の値をパラメーターとして渡します。
 
     > [!NOTE]
     > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
@@ -62,7 +62,7 @@ ms.locfileid: "75586693"
 
 ### <a name="to-delete-records-directly-from-a-database"></a>レコードをデータベースから直接削除するには
 
-- TableAdapter の `Delete` メソッドを呼び出し、`Delete` メソッドのパラメーターとして各列の値を渡します。 次の手順では、Northwind データベースの `Region` テーブルを例として使用します。
+- TableAdapter の `Delete` メソッドを呼び出し、各列の値をメソッドのパラメーターとして渡し `Delete` ます。 次の手順では、 `Region` Northwind データベースのテーブルを例として使用します。
 
     > [!NOTE]
     > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
