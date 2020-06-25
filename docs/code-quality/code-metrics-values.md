@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e26a889c65b80d5a83cc6b2b3a726aa9ad2319
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184459"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292894"
 ---
 # <a name="code-metrics-values"></a>コードメトリックスの値
 
@@ -40,7 +40,7 @@ Visual Studio でコードメトリックスデータを生成する方法の詳
 
 - [**ソースコードの行**]-ソースファイルに存在するソースコード行の正確な数を示します (空白行を含む)。 このメトリックは、Visual Studio 2019 バージョン16.4 と 2.9.5 () 以降で使用できます。
 
-- **実行可能コードの行**-実行可能なコード行または操作のおおよその数を示します。 これは、実行可能コードの操作の数です。 このメトリックは、Visual Studio 2019 バージョン16.4 とメモリメトリックが (2.9.5) から使用できます。 この値は、通常、前のメトリック、つまりレガシモードで使用される MSIL 命令ベースのメトリックである**コード行**と密接に一致します。
+- **実行可能コードの行**-実行可能なコード行または操作のおおよその数を示します。 これは、実行可能コードの操作の数です。 このメトリックは、Visual Studio 2019 バージョン16.4 と 2.9.5 () 以降で使用できます。 この値は、通常、前のメトリック、つまりレガシモードで使用される MSIL 命令ベースのメトリックである**コード行**と密接に一致します。
 ::: moniker-end
 ::: moniker range="vs-2017"
 
@@ -60,7 +60,7 @@ Visual Studio でコードメトリックスデータを生成する方法の詳
 
 Windows フォーム用に生成されたコードは、開発者が表示および変更できるコードであるため、無視されません。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [方法: コードメトリックスデータを生成する](../code-quality/how-to-generate-code-metrics-data.md)
 - [[コードメトリックスの結果] ウィンドウを使用する](../code-quality/working-with-code-metrics-data.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: ユーザー アカウントと更新プログラム | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -9,19 +9,19 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39fb09c24e0d8cca9d2dddbfe2259b50cd2972df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672663"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289392"
 ---
 # <a name="user-accounts-and-updates"></a>ユーザー アカウントと更新プログラム
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 は、条件付きアクセス用に構成されているリソースにアクセスできません。 これらのリソースを操作するには、Visual Studio 2017 以降にアップグレードします。
+> Visual Studio 2015 は、条件付きアクセス用に構成されているリソースにアクセスできません。 これらのリソースを操作するには、Visual Studio 2019 バージョン16.6 以降にアップグレードし、 [multi-factor authentication を必要とするアカウントで Visual studio を使用する方法](../../ide/work-with-multi-factor-authentication.md)に関するガイダンスに従ってください。
 
 Visual Studio 自体は、接続環境です。 サインインすると、ユーザー アカウントだけでなく、そのアカウントにリンクされているすべてのアカウントに関連付けられているすべてのサービスにアクセスできるようになります。 Visual Studio を使用するどの場所にでも、アカウントの設定はユーザーと共に移動します。 個々のユーザーの特定の Visual Studio インスタンスにアクセス許可のレベルを構成することができます。 また、SDK などのインストールのコンポーネントに使用可能な更新プログラムがあった場合、Visual Studio はユーザーに通知します。
 

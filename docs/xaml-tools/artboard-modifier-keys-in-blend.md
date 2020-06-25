@@ -1,19 +1,19 @@
 ---
 title: Blend のアートボードの修飾キー
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c9035a092854ae5b9d0cfe0fa0ad8f9aab349f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921203"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329581"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend のアートボードの修飾キー
 キーボード ショートカットの中には、対応するメニュー項目がないものがあります。このようなショートカットは、[!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] のユーザー インターフェイスに表示されません。 次の表に、オブジェクトのサイズを変更する場合などに、行う操作を変更するショートカットを示します。
@@ -24,8 +24,8 @@ ms.locfileid: "82921203"
 |[**選択内容**] ツールを選択した状態で、選択したオブジェクトを少しずつ移動する|矢印キーを押す|
 |アートボードの位置変更|**Space キー**を押しながらアートボードをドラッグする|
 |アートボードに対してズーム インとズーム アウトを行う|マウス ホイールを回す|
-|アートボードをズーム インする|**Ctrl**+**space**キーを押しながらアートボード上の任意の場所をクリックする|
-|アートボードをズーム アウトする|**Ctrl**+**Alt**Alt+**space**キーを押しながらアートボード上の任意の場所をクリックする|
+|アートボードをズーム インする|**Ctrl** + **space**キーを押しながらアートボード上の任意の場所をクリックする|
+|アートボードをズーム アウトする|**Ctrl** + **Alt** + **space**キーを押しながらアートボード上の任意の場所をクリックする|
 |アートボードを左右に移動する|**Shift キー**を押しながらマウスホイールを回転させる|
 |アートボードを上下に移動する|**Ctrl キー**を押しながらマウスホイールを回す|
 |描画または変換するオブジェクトの比率を固定する|**Shift** キーを押す|
@@ -36,11 +36,11 @@ ms.locfileid: "82921203"
 |隣接する複数のオブジェクトを選択する|**Shift キー**を押しながら最初と最後のオブジェクトを選択する|
 |マーキーをドラッグして選択する|**Shift キー**を押しながらドラッグする|
 |別のオブジェクトの下にあるオブジェクトを選択する|**Alt キー**を押しながらオブジェクトのレイヤーごとに1回クリックします。|
-|開いているドキュメントを切り替える|**Ctrl**+**tab**キーを押す|
-|[**アセット**] パネルを開く|**Ctrl**+の**期間**を押す|
+|開いているドキュメントを切り替える|**Ctrl** + **tab**キーを押す|
+|[**アセット**] パネルを開く|**Ctrl**の + **期間**を押す|
 
 ## <a name="see-also"></a>関連項目
 
-- [キーボード ショートカット](../xaml-tools/keyboard-shortcuts-in-blend.md)
+- [ショートカット キー](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [ペン ツールの修飾キー](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
 - [[個別選択] ツールの修飾キー](../xaml-tools/direct-selection-tool-modifier-keys-in-blend.md)
