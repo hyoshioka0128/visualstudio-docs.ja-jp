@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184446"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286303"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce アプリケーションのセキュリティ保護
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、保護されているリソースや操作に対して、コードが持つアクセス権を制限できるようにするための .NET Framework のコード アクセス セキュリティ制約を前提としています。 このため、コード アクセス セキュリティの影響を理解し、それに応じて [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを作成することが重要です。 アプリケーションでは、完全な信頼ゾーンまたは部分信頼ゾーン (インターネット ゾーンとイントラネット ゾーンなど) を使用して、アクセスを制限できます。
@@ -50,7 +50,7 @@ ms.locfileid: "84184446"
  コードアクセスセキュリティと ClickOnce の詳細については、「 [clickonce アプリケーションのコードアクセスセキュリティ](../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。
 
 ## <a name="code-signing-certificates"></a>証明書のコード署名
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] による配置を使用するアプリケーションを発行するには、アプリケーション マニフェストと配置マニフェストに公開キーと秘密キーのペアを使用して署名できます。 マニフェストに署名するツールは、 **プロジェクト デザイナー** の **[署名]** ページで使用できます。 詳細については、「 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)」を参照してください。 別の方法として、発行ウィザードを使用して、発行プロセスの最中にキー ファイルでマニフェストに署名することもできます。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] による配置を使用するアプリケーションを発行するには、アプリケーション マニフェストと配置マニフェストに公開キーと秘密キーのペアを使用して署名できます。 マニフェストに署名するツールは、 **プロジェクト デザイナー** の **[署名]** ページで使用できます。 詳細については、「 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)」を参照してください。
 
  マニフェストの署名後、Authenticode 署名に基づいた発行元情報は、インストール時に [アクセス許可] ダイアログ ボックスに表示され、アプリケーションが信頼された発行元から発行されていることをユーザーに示します。
 
