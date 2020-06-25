@@ -1,7 +1,7 @@
 ---
 title: データセットの読み込み中に制約をオフにする
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586134"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281267"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>データセットの読み込み中に制約をオフにする
 
@@ -34,7 +34,7 @@ ms.locfileid: "75586134"
 一時的に制約を中断する機構がない場合は、レコードを子テーブルに読み込もうとするたびにエラーが生成されます。 データセットのすべての制約を中断する別の方法として、<xref:System.Data.DataRow.BeginEdit%2A> プロパティおよび <xref:System.Data.DataRow.EndEdit%2A> プロパティを使用できます。
 
 > [!NOTE]
-> 検証イベント (たとえば、<xref:System.Data.DataTable.ColumnChanging> や <xref:System.Data.DataTable.RowChanging>) は、制約がオフになっている場合には発生しません。
+> 検証イベント ( <xref:System.Data.DataTable.ColumnChanging> やなど <xref:System.Data.DataTable.RowChanging> ) は、制約がオフになっている場合には発生しません。
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>更新制約をプログラムによって中断するには
 

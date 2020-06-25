@@ -6,19 +6,19 @@ manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911893"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280684"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加
 
-Visual Studio では、 **[接続済みサービスの追加]** ダイアログを使用して、次のサービスを Azure Storage に接続できます。
+Visual Studio では、**[接続済みサービスの追加]** ダイアログを使用して、次のサービスを Azure Storage に接続できます。
 
 - C# クラウド サービス
 - .NET バックエンド モバイル サービス
@@ -28,7 +28,7 @@ Visual Studio では、 **[接続済みサービスの追加]** ダイアログ�
 
 接続済みサービス機能により、必要なすべての参照と接続コードがプロジェクトに追加され、構成ファイルが適切に変更されます。
 
-完了後、 **[接続済みサービスの追加]** ダイアログに、Blob Storage、キュー、およびテーブルの操作を開始するために必要な手順の詳細を示すドキュメントが自動的に表示されます。
+完了後、**[接続済みサービスの追加]** ダイアログに、Blob Storage、キュー、およびテーブルの操作を開始するために必要な手順の詳細を示すドキュメントが自動的に表示されます。
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac での接続済みサービス](/visualstudio/mac/connected-services)に関するページを参照してください。
@@ -41,13 +41,13 @@ Visual Studio では、 **[接続済みサービスの追加]** ダイアログ�
 
     ![Azure の接続済みサービスを追加する](./media/vs-azure-tools-connected-services-storage/IC796702.png)
 
-1. **[接続済みサービス]** ページで、 **[Azure Storage を使用したクラウド ストレージ]** を選択します。
+1. **[接続済みサービス]** ページで、**[Azure Storage を使用したクラウド ストレージ]** を選択します。
 
     ![Azure Storage を追加する](./media/vs-azure-tools-connected-services-storage/add-azure-storage.png)
 
-1. **[Azure Storage]** ダイアログで、既存のストレージ アカウントを選択し、 **[追加]** をクリックします。
+1. **[Azure Storage]** ダイアログで、既存のストレージ アカウントを選択し、**[追加]** をクリックします。
 
-    ストレージ アカウントを作成する必要がある場合は、次の手順に進みます。 必要ない場合は、手順 6 に進みます。
+    ストレージ アカウントを作成する必要がある場合は、次の手順に進みます。 それ以外の場合、手順 6. に進みます。
 
     ![既存のストレージ アカウントをプロジェクトに追加する](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
@@ -55,11 +55,11 @@ Visual Studio では、 **[接続済みサービスの追加]** ダイアログ�
 
    1. ダイアログの下部にある **[新しいストレージ アカウントを作成します]** を選択します。
 
-   1. **[ストレージ アカウントの作成]** ダイアログに入力し、 **[作成]** をクリックします。
+   1. **[ストレージ アカウントの作成]** ダイアログに入力し、**[作成]** をクリックします。
 
        ![新しい Azure ストレージ アカウント](./media/vs-azure-tools-connected-services-storage/create-storage-account.png)
 
-   1. **[Azure Storage]** ダイアログが表示されると、新しいストレージ アカウントが一覧に表示されます。 一覧で新しいストレージ アカウントを選択し、 **[追加]** をクリックします。
+   1. **[Azure Storage]** ダイアログが表示されると、新しいストレージ アカウントが一覧に表示されます。 一覧で新しいストレージ アカウントを選択し、**[追加]** をクリックします。
 
 1. プロジェクトの **[サービス参照]** ノードに、ストレージの接続済みサービスが表示されます。
 

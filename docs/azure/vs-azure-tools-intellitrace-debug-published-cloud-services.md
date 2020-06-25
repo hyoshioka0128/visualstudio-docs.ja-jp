@@ -4,24 +4,24 @@ description: Visual Studio と IntelliTrace を使用して、クラウド サ�
 author: mikejo5000
 manager: jillfra
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: c61af4a08c61cbfd16d33e2b5cf7402960163f12
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 1e4de25f3d1b00459128b89bc5559f55cec8f077
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489715"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280597"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ
 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 実際には、IntelliTrace は Azure アプリケーションが Azure のクラウド サービスとして実行されている際にキー コードの実行および環境データを記録し、その記録されたデータを Visual Studio で再生できるようにします。
 
 Visual Studio Enterprise がインストールされており、Azure アプリケーションが .NET Framework 4 以降のバージョンを対象としている場合に IntelliTrace を使用することができます。 IntelliTrace は、Azure ロールの情報を収集します。 これらのロールの仮想マシンは、常に 64 ビット オペレーティング システムを実行します。
 
-代わりに、[リモート デバッグ](vs-azure-tools-debugging-cloud-services-overview.md)を使用して、Azure で実行されているクラウド サービスに直接接続することもできます。
+別の方法として、[リモートデバッグ](vs-azure-tools-debugging-cloud-services-overview.md)を使用して、Azure で実行されているクラウドサービスに直接接続することもできます。
 
 > [!IMPORTANT]
 > IntelliTrace は、デバッグ シナリオのみを対象としており、運用環境のデプロイには使用できません。

@@ -1,23 +1,23 @@
 ---
 title: プロパティを削除できません
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91fce94babf443c974a49885263b8e7eb77d9eaa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640487"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281346"
 ---
-# <a name="the-property-property-name-cannot-be-deleted"></a>\<property name> プロパティを削除できません
+# <a name="the-property-property-name-cannot-be-deleted"></a>プロパティ \<property name> を削除できません
 
-プロパティ \<property name> は、\<class name> と \<class name> との間の継承のための**識別子のプロパティ**として設定されているため削除できません。
+プロパティは、 \<property name> との間の継承の**識別子プロパティ**として設定されているため、削除できません \<class name>\<class name>
 
 選択されたプロパティは、エラー メッセージに示されているクラス間の継承に対する**識別子のプロパティ**として設定されています。 プロパティがデータ クラス間の継承構成に関与している場合、そのプロパティを削除することはできません。
 
@@ -25,7 +25,7 @@ ms.locfileid: "72640487"
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-1. **O/R デザイナー**で、エラー メッセージに示されているデータ クラスを接続する継承線を選択します。
+1. **O/R デザイナー**で、エラーメッセージに示されているデータクラスを接続する継承線を選択します。
 
 2. **識別子** プロパティを別のプロパティに設定します。
 

@@ -1,19 +1,19 @@
 ---
 title: プロパティは関連付けに関与しているため、削除できません
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e1890535fb008c8e8be6ee9dea0eda3ab3844da6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3e7a5063846e05fd55880e1727dd829c2db0c3a5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648141"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281397"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>プロパティ &lt;プロパティ名&gt; は関連付け &lt;関連付けの名前&gt; に関与しているため、削除できません
 
@@ -23,9 +23,9 @@ ms.locfileid: "72648141"
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-1. **O/R デザイナー**で、エラー メッセージに示されているデータ クラスを接続する関連行を選択します。
+1. **O/R デザイナー**で、エラーメッセージに示されているデータクラスを接続する関連行を選択します。
 
-2. 行をダブルクリックして、 **[関連付けエディター]** ダイアログ ボックスを開きます。
+2. 行をダブルクリックして、**[関連付けエディター]** ダイアログ ボックスを開きます。
 
 3. **[関連付けのプロパティ]** からプロパティを削除します。
 
