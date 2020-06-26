@@ -1,7 +1,7 @@
 ---
-title: 発行の ClickOnce アプリケーションの言語の変更
+title: ClickOnce アプリケーションの発行言語を変更する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263173"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382589"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの発行言語を変更する
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションに使用する発行の言語を変更する
 
-発行するときに、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション、ユーザー インターフェイスの言語と開発用コンピューターのカルチャの既定のインストール中に表示されます。 ローカライズされたアプリケーションを発行する場合は、言語とローカライズされたバージョンと一致するカルチャを指定する必要があります。 これによって決定されますが、`Publish language`プロジェクトのプロパティ。
+アプリケーションを公開する場合 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、インストール時に表示されるユーザーインターフェイスは、既定で開発用コンピューターの言語とカルチャになります。 ローカライズされたアプリケーションを発行する場合、ローカライズされたバージョンと一致する言語とカルチャを指定する必要があります。 これは、プロジェクトのプロパティによって決定され `Publish language` ます。
 
-`Publish language`でプロパティを設定できる、**発行オプション**からアクセスできるダイアログ ボックス、**発行**のページ、**プロジェクト デザイナー**します。
+`Publish language`プロパティは、**プロジェクトデザイナー**の [**発行**] ページからアクセスできる [**発行オプション**] ダイアログボックスで設定できます。
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
 
-## <a name="to-change-the-publish-language"></a>発行の言語を変更するには
+## <a name="to-change-the-publish-language"></a>発行言語を変更するには
 
-1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2. **発行**タブをクリックします。
+2. **[公開]** タブをクリックします。
 
-3. **オプション**ボタンをクリックして、**発行オプション** ダイアログ ボックスを開きます。
+3. [**オプション**] ボタンをクリックして、[**発行オプション**] ダイアログボックスを開きます。
 
-4. **説明**をクリックします。
+4. [**説明**] をクリックします。
 
-5. **発行オプション** ダイアログ ボックスで、言語を選択し、カルチャから、**発行の言語**ドロップダウン リストをクリック**OK**します。
+5. [**発行オプション**] ダイアログボックスで、[**発行言語**] ドロップダウンリストから言語とカルチャを選択し、[ **OK**] をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

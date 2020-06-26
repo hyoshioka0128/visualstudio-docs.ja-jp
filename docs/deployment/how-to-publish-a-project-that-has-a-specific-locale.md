@@ -1,7 +1,7 @@
 ---
-title: '方法: 特定のロケールがあるプロジェクトの発行 |Microsoft Docs'
+title: 特定のロケールを持つプロジェクトを発行する方法 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406986"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382225"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
 1 つのアプリケーションに、ロケールの異なる複数のコンポーネントが含まれることも少なくありません。 その場合、複数のプロジェクトを持つソリューションを作成し、ロケールごとに個別のプロジェクトを発行することになります。 以降の手順では、マクロを使用して、ソリューションの 1 つ目のプロジェクトを 'en' ロケールを使用して発行する方法について説明しています。 この手順を 'en' 以外のロケールで実行する場合は、マクロ内の `localeString` を、使用するロケール ('de' や 'de-DE' など) に設定してください。
 
 > [!NOTE]
-> このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、**[完了]** をクリックして、ウィザードを閉じます。
+> このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、[完了****] をクリックしてウィザードを閉じます。
 
 ### <a name="to-create-the-publishing-macro"></a>発行マクロを作成するには
 
@@ -147,22 +147,22 @@ ms.locfileid: "63406986"
 
      ローカライズされたリソース DLL は必要になるまで作成されません。 たとえば、新しいロケールを指定した後で、フォームやそのコントロールのテキストを変更した場合などに作成されます。
 
-4. Visual Studio IDE を使用して、*PublishLocales* を発行します。
+4. Visual Studio IDE を使用して*Publishlocales*を発行します。
 
-     **ソリューション エクスプローラー**で *PublishLocales* を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクト デザイナーで、**発行**の発行場所の指定 ページで、 **http://localhost/PublishLocales**、順にクリックします**今すぐ発行**します。
+     **ソリューション エクスプローラー**で *PublishLocales* を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクトデザイナーの [**発行**] ページで、発行場所を指定し、 **http://localhost/PublishLocales** [**今すぐ発行**] をクリックします。
 
      発行 Web ページが表示されたら、そのページを終了します。 (この手順では、プロジェクトを発行するだけで、インストールする必要はありません。)
 
-5. [Visual Studio コマンド プロンプト] ウィンドウでマクロを呼び出し、*PublishLocales* をもう一度発行します。 コマンド プロンプト ウィンドウを表示する、**ビュー**メニューで、**その他の Windows**順にクリックします**コマンド ウィンドウ**、またはキーを押します**Ctrl** +**Alt**+**A**します。 コマンド プロンプト ウィンドウで次のように入力します。`macros`がオートコンプリートによって使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。
+5. Visual Studio の [コマンドプロンプト] ウィンドウでマクロを呼び出して、 *Publishlocales*を再度発行します。 コマンドプロンプトウィンドウを表示するには、[**表示**] メニューの [**その他のウィンドウ**] をポイントし、[**コマンドウィンドウ**] をクリックするか、 **Ctrl** + **Alt** + **A**キーを押します。 コマンドプロンプトウィンドウで、「」と入力すると、 `macros` 使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6. 発行プロセスが正常に完了すると、"*PublishLocales\PublishLocales.vbproj* の発行は成功しました" というメッセージが生成されます。 発行の言語は 'en' です。" というメッセージが表示されます。メッセージ ボックスの **[OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。
+6. 発行プロセスが成功すると、"発行が成功しました。" というメッセージが生成*されます*。 発行言語は ' en ' でした。 "メッセージボックスで [ **OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。
 
-7. *C:\Inetpub\wwwroot\PublishLocales\en* にアクセスします。 ローカライズされたリソース DLL に加えて、マニフェスト、*setup.exe*、発行 Web ページ ファイルなどのインストールされたファイルがあります。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに *.deploy* という拡張子を追加します。この拡張子は配置後に削除できます。)
+7. *C:\Inetpub\wwwroot\PublishLocales\en*を検索します。 ローカライズされたリソース DLL に加えて、マニフェスト、 *setup.exe*、発行 Web ページファイルなどのインストールされたファイルが表示されます。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに *.deploy* という拡張子を追加します。この拡張子は配置後に削除できます。)
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
-- [開発環境のマクロ](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
+- [マクロ開発環境](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [[マクロ エクスプローラー] ウィンドウ](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))
-- [方法: 編集およびマクロをプログラムで作成](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+- [方法: マクロを編集し、プログラムで作成する](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

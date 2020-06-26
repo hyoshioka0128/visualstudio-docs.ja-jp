@@ -1,7 +1,7 @@
 ---
-title: '方法: 発行バージョンを設定、ClickOnce |Microsoft Docs'
+title: '方法: ClickOnce の発行バージョンを設定する |Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,31 +16,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2bd526203b777bafd77c79a4934d1f3e8754dee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df5e1d91de14e3da4f188c276ef7dd74943d8978
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406852"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382121"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを設定する
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`プロパティが公開するアプリケーションは更新プログラムとして扱うかどうかを決定します。 各時点のバージョンがインクリメントされます、アプリケーションは、更新プログラムとして発行されます。
+プロパティは、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` 発行するアプリケーションが更新プログラムとして扱われるかどうかを決定します。 バージョンがインクリメントされるたびに、アプリケーションが更新プログラムとして発行されます。
 
- `Publish Version`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。
+ プロパティは、 `Publish Version` **プロジェクトデザイナー**の [**発行**] ページで設定できます。
 
 > [!NOTE]
-> 自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、「[方法 :ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)」を参照してください。
+> アプリケーションが発行されるたびにプロパティが自動的にインクリメントされるプロジェクトオプションがあります。 `Publish Version` このオプションは既定で有効になっています。 詳細については、「[方法: ClickOnce の発行バージョンを自動的にインクリメント](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)する」を参照してください。
 
 ### <a name="to-change-the-publish-version"></a>発行バージョンを変更するには
 
-1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューションエクスプローラー**でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
 
-2. **発行**タブをクリックします。
+2. **[公開]** タブをクリックします。
 
-3. **発行バージョン**フィールドに、インクリメント、**メジャー**、**マイナー**、**ビルド**、または**リビジョン**バージョン数値。
+3. [**バージョンの発行**] フィールドで、**メジャー**、**マイナー**、**ビルド**、**リビジョン**の各バージョン番号を増分します。
 
     > [!NOTE]
-    > バージョン番号がデクリメントしないでください。そうする予期しない更新プログラムの動作と原因でした。
+    > バージョン番号を減らすことはできません。これを行うと、予測できない更新動作が発生する可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)

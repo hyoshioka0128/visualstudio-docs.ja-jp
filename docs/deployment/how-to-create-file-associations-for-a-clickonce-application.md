@@ -1,7 +1,7 @@
 ---
-title: '方法: ClickOnce アプリケーションのファイルの関連付けを作成する |Microsoft Docs'
+title: 方法-ClickOnce アプリケーションのファイルの関連付けを作成する |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,45 +15,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0526351d2b3e2c223aacbe0e58d9ee39bd1b19c4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924559"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382498"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのファイルの関連付けを作成する
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを1つまたは複数のファイル名拡張子に関連付けることができるため、ユーザーがこれらの種類のファイルを開いたときに、アプリケーションが自動的に起動されます。 ファイル名拡張子のサポートを[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションに追加するのは簡単です。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを1つまたは複数のファイル名拡張子に関連付けることができるため、ユーザーがこれらの種類のファイルを開いたときに、アプリケーションが自動的に起動されます。 ファイル名拡張子のサポートをアプリケーションに追加する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] のは簡単です。
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>ClickOnce アプリケーションのファイルの関連付けを作成するには
 
-1. 通常どおり[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]にアプリケーションを作成するか、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]既存のアプリケーションを使用します。
+1. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通常どおりにアプリケーションを作成するか、既存のアプリケーションを使用し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
 2. メモ帳などのテキストエディターまたは XML エディターを使用して、アプリケーションマニフェストを開きます。
 
 3. `assembly` 要素を検索します。 詳細については、「[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)」を参照してください。
 
-4. `assembly`要素の子として、要素を`fileAssociation`追加します。 要素`fileAssociation`には、次の4つの属性があります。
+4. 要素の子として `assembly` 、要素を追加し `fileAssociation` ます。 `fileAssociation`要素には、次の4つの属性があります。
 
-   - `extension` :アプリケーションに関連付けるファイル名の拡張子。
+   - `extension`: アプリケーションに関連付けるファイル名拡張子。
 
-   - `description`:Windows シェルに表示されるファイルの種類の説明。
+   - `description`: Windows シェルに表示されるファイルの種類の説明。
 
-   - `progid`:ファイルの種類を一意に識別する文字列。レジストリにマークを付けます。
+   - `progid`: ファイルの種類を一意に識別する文字列。レジストリにマークを付けます。
 
-   - `defaultIcon`:このファイルの種類に使用するアイコン。 このアイコンは、アプリケーションマニフェストでファイルリソースとして追加する必要があります。 詳細については、「[方法 :ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
+   - `defaultIcon`: このファイルの種類に使用するアイコン。 このアイコンは、アプリケーションマニフェストでファイルリソースとして追加する必要があります。 詳細については、「[方法: ClickOnce アプリケーションにデータファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
 
-     要素`file` と`fileAssociation`要素の例については、「 [ \<fileassociation > 要素](../deployment/fileassociation-element-clickonce-application.md)」を参照してください。
+     要素と要素の例につい `file` `fileAssociation` ては、「 [ \<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)」を参照してください。
 
-5. 複数のファイルの種類をアプリケーションに関連付ける場合は、追加の`fileAssociation`要素を追加します。 属性は、 `progid`それぞれで異なる必要があることに注意してください。
+5. 複数のファイルの種類をアプリケーションに関連付ける場合は、追加の要素を追加し `fileAssociation` ます。 属性は、 `progid` それぞれで異なる必要があることに注意してください。
 
-6. アプリケーションマニフェストの作成が完了したら、マニフェストに再署名します。 これは、コマンドラインから*mage.exe*を使用して実行できます。
+6. アプリケーションマニフェストの作成が完了したら、マニフェストに再署名します。 これは、 *Mage.exe*を使用してコマンドラインから行うことができます。
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
-    詳しくは、「[Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」をご覧ください。
+    詳細については、「 [Mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [\<fileAssociation > 要素](../deployment/fileassociation-element-clickonce-application.md)
-- [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
+- [\<fileAssociation>element](../deployment/fileassociation-element-clickonce-application.md)
+- [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
