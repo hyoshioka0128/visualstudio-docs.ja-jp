@@ -1,7 +1,7 @@
 ---
-title: ClickOnce 配置での前提条件に関するサポート URL
+title: ClickOnce 配置の前提条件のサポート URL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,25 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745579"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381731"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法: ClickOnce 配置で個々の必要条件にサポート URL を指定する
-A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクライアント コンピューターで使用する必要がある前提条件の展開をテストできます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを実行します。 これらの依存関係には、.NET Framework、オペレーティング システムでは、およびグローバル アセンブリ キャッシュ (GAC) にプレインストールする必要があるすべてのアセンブリのバージョンの必要な最小バージョンが含まれます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]、ただし、インストールできませんこれらの前提条件のいずれか。前提条件が存在しない場合、インストールを中止し、インストールが失敗した理由を説明するダイアログ ボックスが表示されます。
+展開では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを実行するためにクライアントコンピューターで使用できる必要があるいくつかの前提条件をテストでき [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 これらの依存関係には、必要な最小バージョンの .NET Framework、オペレーティングシステムのバージョン、およびグローバルアセンブリキャッシュ (GAC) にプレインストールする必要があるすべてのアセンブリが含まれます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ただし、これらの必須コンポーネントをインストールすることはできません。前提条件が見つからない場合は、インストールを停止するだけで、インストールが失敗した原因を説明するダイアログボックスが表示されます。
 
- 前提条件をインストールするための 2 つの方法はあります。 ブートス トラップ アプリケーションを使用してインストールすることができます。 また、前提条件が存在しない場合、ダイアログ ボックスでユーザーに表示される個別の前提条件のサポート URL を指定できます。 この URL で参照されているページは、必須の前提条件をインストールするための手順へのリンクを含めることができます。 アプリケーションが、個別の前提条件に関するサポート URL を指定しない場合[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]定義されている場合、全体として、アプリケーションの配置マニフェストで指定されたサポート URL を表示します。
+ 必須コンポーネントをインストールする方法は2つあります。 ブートストラップアプリケーションを使用してインストールできます。 または、前提条件が見つからない場合に、ダイアログボックスでユーザーに表示される個々の必須コンポーネントのサポート URL を指定することもできます。 この URL によって参照されるページには、必要な前提条件をインストールするための手順へのリンクを含めることができます。 アプリケーションで個々の前提条件のサポート URL が指定されていない場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションが定義されていれば、そのアプリケーション全体の配置マニフェストで指定されているサポート url がに表示されます。
 
- 中に[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 *Mage.exe*、および*MageUI.exe*すべて生成に使用することができます[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開では、これらのツールを直接サポートを個別のサポート URL を指定します。前提条件。 このドキュメントは、実際のデプロイを変更する方法を説明しますアプリケーション マニフェストと配置マニフェストに含まれる Url をサポートします。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 *Mage.exe*、 *MageUI.exe*すべてを使用して展開を生成できますが [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、これらのツールでは、個々の前提条件のサポート URL を直接指定することはできません。 このドキュメントでは、配置のアプリケーションマニフェストと配置マニフェストを変更して、これらのサポート Url を含める方法について説明します。
 
-### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>個々 の前提条件のサポート URL を指定します
+### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>個々の前提条件のサポート URL を指定する
 
-1. アプリケーション マニフェストを開きます (、 *.manifest*ファイル) の[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]テキスト エディターでアプリケーション。
+1. アプリケーションのアプリケーションマニフェスト ( *.manifest*ファイル) を [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] テキストエディターで開きます。
 
-2. オペレーティング システムの前提条件を追加、`supportUrl`属性を`dependentOS`要素。
+2. オペレーティングシステムの前提条件として、 `supportUrl` 属性を要素に追加し `dependentOS` ます。
 
    ```xml
     <dependency>
@@ -45,7 +45,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクラ�
      </dependency>
    ```
 
-3. 共通言語ランタイムの特定のバージョンの前提条件を追加、`supportUrl`属性を`dependentAssembly`共通言語ランタイムの依存関係を示すエントリ。
+3. 共通言語ランタイムの特定のバージョンの前提条件については、 `supportUrl` `dependentAssembly` 共通言語ランタイムの依存関係を指定するエントリに属性を追加します。
 
    ```xml
      <dependency>
@@ -55,7 +55,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクラ�
      </dependency>
    ```
 
-4. アセンブリをグローバル アセンブリ キャッシュにプレインストールする必要がありますの前提条件、設定、`supportUrl`の`dependentAssembly`必要なアセンブリを指定する要素。
+4. グローバルアセンブリキャッシュにプレインストールする必要があるアセンブリの前提条件については、 `supportUrl` `dependentAssembly` 必要なアセンブリを指定する要素のをに設定します。
 
    ```xml
      <dependency>
@@ -65,9 +65,9 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクラ�
      </dependency>
    ```
 
-5. 省略可能です。 配置マニフェストを開いて、.NET Framework 4 を対象とするアプリケーション (、 *.application*ファイル) の[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]テキスト エディターでアプリケーション。
+5. 省略可能。 .NET Framework 4 を対象とするアプリケーションでは、アプリケーションの配置マニフェスト (*アプリケーション*ファイル) を [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] テキストエディターで開きます。
 
-6. .NET Framework 4 の前提条件では、追加、`supportUrl`属性を`compatibleFrameworks`要素。
+6. .NET Framework 4 の前提条件として、 `supportUrl` 属性を要素に追加し `compatibleFrameworks` ます。
 
    ```xml
    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">
@@ -76,14 +76,14 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクラ�
    </compatibleFrameworks>
    ```
 
-7. アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 使用して、 *Mage.exe*または*MageUI.exe* SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、次を参照してください。[方法。アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。
+7. アプリケーションマニフェストを手動で変更したら、デジタル証明書を使用してアプリケーションマニフェストに再署名してから、配置マニフェストも更新して再署名する必要があります。 このタスクを実行するには、 *Mage.exe*または*MageUI.exe* SDK ツールを使用します。手動による変更を消去して、これらのファイルを再生成することも [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] できます。 Mage.exe を使用したマニフェストの再署名の詳細については、「[方法: アプリケーションマニフェストと配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
 
 ## <a name="net-framework-security"></a>.NET Framework のセキュリティ
- サポート URL は、部分信頼で実行するアプリケーションがマークされている場合、ダイアログ ボックスでは表示されません。
+ アプリケーションが部分信頼で実行するようにマークされている場合、このサポート URL はダイアログボックスに表示されません。
 
 ## <a name="see-also"></a>関連項目
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [チュートリアル: ClickOnce アプリケーションを手動で展開します。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks > 要素](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [\<compatibleFrameworks>element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
 - [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)

@@ -165,6 +165,7 @@ f1_keywords:
 - CA1827
 - CA1828
 - CA1829
+- CA1830
 - CA1831
 - CA1832
 - CA1833
@@ -278,6 +279,7 @@ f1_keywords:
 - CA2243
 - CA2245
 - CA2246
+- CA2247
 - CA5122
 - CA5374
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
@@ -286,12 +288,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4bfee67e23c40d8ddf9dbfac42bc803d5576c43
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9d9c4834604d4f77d53dc0ff7bb725eae3312779
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283412"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382680"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -450,9 +452,10 @@ ms.locfileid: "85283412"
 | CA1827 |[CA1827:Any が使用できる場合は Count/LongCount を使用しません](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>または <xref:System.Linq.Enumerable.LongCount%2A> メソッドが使用されました <xref:System.Linq.Enumerable.Any%2A> 。メソッドの方が効率的です。 |
 | CA1828 |[CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>または <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> メソッドが使用されました <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 。メソッドの方が効率的です。 |
 | CA1829 |[CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ メソッドは、同等の、より効率的なまたはプロパティをサポートする型で使用されていま `Length` `Count` した。 |
-| CA1831 |[CA1831: 適切な場合は、範囲ベースのインデクサーではなく、文字列に対して AsSpan を使用します。](../code-quality/ca1831.md) | 文字列に対して範囲インデクサーを使用し、その値を暗黙的に ReadOnlySpan char 型に割り当てると、 &lt; &gt; の代わりにメソッドが <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 使用され、 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 文字列の要求された部分のコピーが生成されます。 |
-| CA1832 |[CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または Asspan を使用します。](../code-quality/ca1832.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
-| CA1833 |[CA1833: 配列のスパンまたはメモリ部分を取得するために、範囲ベースのインデクサーではなく、AsSpan または Asspan を使用します。](../code-quality/ca1833.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.Span%601> <xref:System.Memory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
+| CA1830 |[CA1830: StringBuilder での厳密に型指定された追加および挿入メソッドオーバーロードを優先します。](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>と <xref:System.Text.StringBuilder.Insert%2A> は、を超える複数の型のオーバーロードを提供し <xref:System.String> ます。  可能であれば、ToString () と文字列ベースのオーバーロードを使用して、厳密に型指定されたオーバーロードを優先します。 |
+| CA1831 |[CA1831: 該当する場合、文字列に範囲ベースのインデクサーの代わりに AsSpan を使用します](../code-quality/ca1831.md) | 文字列に対して範囲インデクサーを使用し、その値を暗黙的に ReadOnlySpan char 型に割り当てると、 &lt; &gt; の代わりにメソッドが <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 使用され、 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 文字列の要求された部分のコピーが生成されます。 |
+| CA1832 |[CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1832.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
+| CA1833 |[CA1833: 配列の Span または Memory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1833.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.Span%601> <xref:System.Memory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | CA1835 |[CA1835: ' ReadAsync ' と ' WriteAsync ' に対して ' Memory' に基づくオーバーロードを優先します](../code-quality/ca1835.md) | ' Stream ' には、最初の引数として ' Memory byte ' を受け取る ' ReadAsync ' オーバーロード &lt; &gt; と、 &lt; &gt; 1 番目の引数として ' ReadOnlyMemory Byte ' を受け取る ' WriteAsync ' オーバーロードがあります。 より効率的なメモリベースのオーバーロードを呼び出すことをお勧めします。 |
 | CA1900 | [CA1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
@@ -466,8 +469,8 @@ ms.locfileid: "85283412"
 | CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を <xref:System.Threading.Tasks.Task> 直接待機します。 非同期メソッドがを直接待機する場合 <xref:System.Threading.Tasks.Task> 、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出して <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 、継続の意図を知らせることを検討してください。 |
 | CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable`メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。 |
 | CA2011 | [CA2011: セッター内でプロパティを割り当てません](ca2011.md) | プロパティに、独自の[set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
-| CA2012 | [CA2012: ValueTasks を正しく使用します](ca2012.md) | メンバーの呼び出しから返される ValueTasks は、直接待機することを意図しています。  ValueTask を複数回使用しようとするか、完了する前に1つの結果に直接アクセスすると、例外または破損が発生する可能性があります。  このような ValueTask を無視すると、機能的なバグが示され、パフォーマンスが低下する可能性があります。 |
-| CA2013 | [CA2013: 値型で ReferenceEquals を使用しないでください](ca2013.md) | を使用して値を比較するときに <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> 、obja と Obja が値型の場合、メソッドに渡される前にボックス化され <xref:System.Object.ReferenceEquals%2A> ます。 これは、objA と Obja の両方が値型の同じインスタンスを表している場合でも、 <xref:System.Object.ReferenceEquals%2A> メソッドは false を返すことを意味します。 |
+| CA2012 | [CA2012: ValueTask を正しく使用する必要があります](ca2012.md) | メンバーの呼び出しから返される ValueTasks は、直接待機することを意図しています。  ValueTask を複数回使用しようとするか、完了する前に1つの結果に直接アクセスすると、例外または破損が発生する可能性があります。  このような ValueTask を無視すると、機能的なバグが示され、パフォーマンスが低下する可能性があります。 |
+| CA2013 | [CA2013: 値の型と共に ReferenceEquals を使用しないでください](ca2013.md) | を使用して値を比較するときに <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> 、obja と Obja が値型の場合、メソッドに渡される前にボックス化され <xref:System.Object.ReferenceEquals%2A> ます。 これは、objA と Obja の両方が値型の同じインスタンスを表している場合でも、 <xref:System.Object.ReferenceEquals%2A> メソッドは false を返すことを意味します。 |
 | CA2014 | [CA2014: ループで stackalloc を使用しないでください。](ca2014.md) | Stackalloc によって割り当てられるスタック領域は、現在のメソッドの呼び出しの最後にのみ解放されます。  ループでこれを使用すると、スタックが無制限に増加し、最終的にスタックオーバーフロー状態になる可能性があります。 |
 | CA2015 | [CA2015: MemoryManager T から派生した型に対してファイナライザーを定義しません &lt;&gt;](ca2015.md) | から派生した型にファイナライザーを追加する <xref:System.Buffers.MemoryManager%601> と、メモリがによってまだ使用されている間は解放される可能性があり <xref:System.Span%601> ます。 |
 | CA2100 | [CA2100:SQL クエリのセキュリティ脆弱性を確認](../code-quality/ca2100.md) | メソッドに渡された文字列引数から構築された文字列を使用して System.Data.IDbCommand.CommandText プロパティが設定されています。 この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 |
@@ -561,6 +564,7 @@ ms.locfileid: "85283412"
 | CA2244 | [CA2244: インデックス付き要素の初期化を重複させません](../code-quality/ca2244.md) | オブジェクト初期化子に、同じ定数インデックスを持つ複数のインデックス付き要素初期化子があります。 最後の初期化子以外はすべて冗長です。 |
 | CA2245 | [CA2245: プロパティをそれ自体に割り当てません](../code-quality/ca2245.md) | プロパティが誤ってそれ自体に割り当てられました。 |
 | CA2246 | [CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません](../code-quality/ca2246.md) | 同じステートメントで、シンボルとそのメンバー (フィールドまたはプロパティ) を割り当てることは推奨されていません。 メンバーアクセスが、割り当ての前にシンボルの古い値を使用するのか、またはこのステートメントの代入の新しい値を使用するのかは明確ではありません。 |
+| CA2247 | [CA2247: task Source コンストラクターに渡される引数は task Ationoptions 列挙型ではなく、Task Options 列挙型にする必要があります。](../code-quality/ca2247.md) | Taskて Source には、タスクに格納されているオブジェクトの状態を取得する、基になるタスクとコンストラクターを制御する Task/Options を受け取るコンストラクターがあります。  Task/options ではなく Task続行 Ationoptions を渡した場合、オプションが状態として扱われます。 |
 | CA5122 | [CA5122 P/Invoke 宣言を安全にクリティカルにすることはできません](../code-quality/ca5122.md) | メソッドは、セキュリティに対する配慮が必要な操作を行うときは SecuritySafeCritical としてマークされますが、透過的なコードによって使用される場合も安全です。 透過的なコードは、P/Invoke を通じてネイティブ コードを直接呼び出すことはありません。 そのため、P/Invoke をセキュリティ セーフ クリティカルとしてマークしても、透過的なコードはそれを呼び出すことができず、セキュリティ分析の際に紛らわしくなります。 |
 | CA5359 | [CA5359 証明書の検証を無効にしない](../code-quality/ca5359.md) | 証明書は、サーバーの id を認証するのに役立ちます。 クライアントはサーバー証明書を検証して、要求が目的のサーバーに送信されるようにする必要があります。 ServerCertificateValidationCallback が常にを返す場合 `true` 、すべての証明書が検証に合格します。 |
 | CA5360 | [CA5360 は、逆シリアル化で危険なメソッドを呼び出さないでください。](../code-quality/ca5360.md) | 安全でない逆シリアル化は、信頼されていないデータを使用してアプリケーションのロジックを不適切に悪用したり、サービス拒否 (DoS) 攻撃を受けたり、逆シリアル化の際に任意のコードを実行したりする場合に発生する脆弱性です。 悪意のあるユーザーが、制御下にある信頼されていないデータを逆シリアル化するときに、これらの逆シリアル化機能を不正使用する可能性があります。 具体的には、逆シリアル化のプロセスで危険なメソッドを呼び出します。 安全に安全でない逆シリアル化攻撃によって、攻撃者は DoS 攻撃、認証バイパス、リモートコード実行などの攻撃を仕掛けることができます。 |

@@ -1,7 +1,7 @@
 ---
-title: '方法: 製品マニフェストを作成する |Microsoft Docs'
+title: 方法-製品マニフェストを作成する |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - FSharp
 - VB
@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928373"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382511"
 ---
 # <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成する
-アプリケーションの必須コンポーネントを展開するには、ブートス トラップ パッケージを作成できます。 ブートス トラップ パッケージには、ロケールごとに、パッケージ マニフェストが 1 つの製品マニフェスト ファイルが含まれています。 パッケージ マニフェストには、パッケージのローカライズに固有の要素が含まれています。 これには、文字列、使用許諾契約書、および言語パックが含まれます。
+アプリケーションの前提条件を展開するには、ブートストラップパッケージを作成します。 ブートストラップパッケージには、1つの製品マニフェストファイルが含まれていますが、各ロケールのパッケージマニフェストが含まれています。 パッケージマニフェストには、パッケージのローカライズ固有の側面が含まれています。 これには、文字列、エンドユーザーライセンス契約、および言語パックが含まれます。
 
- パッケージ マニフェストの詳細については、次を参照してください。[方法。パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)」を参照してください。
+ パッケージマニフェストの詳細については、「[方法: パッケージマニフェストを作成](../deployment/how-to-create-a-package-manifest.md)する」を参照してください。
 
-## <a name="create-the-product-manifest"></a>製品マニフェストを作成します。
+## <a name="create-the-product-manifest"></a>製品マニフェストを作成する
 
 #### <a name="to-create-the-product-manifest"></a>製品マニフェストを作成するには
 
-1. ブートス トラップ パッケージ用のディレクトリを作成します。 この例では、C:\package を使用します。
+1. ブートストラップパッケージ用のディレクトリを作成します。 この例では、C:\ packageを使用します。
 
-2. Visual Studio で作成するという新しい XML ファイル*product.xml*、保存して、 *C:\package*フォルダー。
+2. Visual Studio で、 *product.xml*という名前の新しい XML ファイルを作成し、 *c:\ package*フォルダーに保存します。
 
-3. パッケージの XML 名前空間と製品コードを記述する次の XML を追加します。 製品コードをパッケージの一意の識別子に置き換えます。
+3. 次の XML を追加して、パッケージの XML 名前空間と製品コードを記述します。 製品コードをパッケージの一意の識別子に置き換えます。
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ ms.locfileid: "62928373"
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4. パッケージに依存関係があることを指定する XML を追加します。 この例では、Microsoft Windows インストーラー 3.1 の依存関係を使用します。
+4. XML を追加して、パッケージに依存関係があることを指定します。 この例では、Microsoft Windows インストーラー3.1 の依存関係を使用します。
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ ms.locfileid: "62928373"
       </RelatedProducts>
     ```
 
-5. ブートス トラップ パッケージに含まれるすべてのファイルを一覧表示の XML を追加します。 この例は、パッケージのファイル名を使用して*CorePackage.msi*します。
+5. ブートストラップパッケージ内のすべてのファイルを一覧表示するには、XML を追加します。 この例では、 *CorePackage.msi*パッケージのファイル名を使用します。
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ ms.locfileid: "62928373"
     </PackageFiles>
     ```
 
-6. コピーまたは移動、 *CorePackage.msi*ファイルを*C:\package*フォルダー。
+6. *CorePackage.msi*ファイルを*c:\ パッケージ*フォルダーにコピーまたは移動します。
 
-7. ブートス トラップ コマンドを使用してパッケージをインストールする XML を追加します。 ブートス トラップが自動的に追加されます、 **/qn**フラグを *.msi*ファイルで、サイレント インストールされます。 ファイルの場合、 *.exe*、ブートス トラップの実行、 *.exe*シェルを使用してファイル。 次の XML には、引数にはない*CorePackage.msi*にコマンドライン引数を配置することができますが、`Arguments`属性。
+7. ブートストラップコマンドを使用してパッケージをインストールするには、XML を追加します。 ブートストラップは自動的に **/qn**フラグを *.msi*ファイルに追加します。これはサイレントインストールされます。 ファイルが *.exe*の場合、ブートストラップはシェルを使用して *.exe*ファイルを実行します。 次の XML は*CorePackage.msi*する引数を示していませんが、コマンドライン引数を属性に含めることができ `Arguments` ます。
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8. このブートス トラップ パッケージがインストールされていることを確認する次の XML を追加します。 製品コードを再頒布可能コンポーネントの GUID に置き換えます。
+8. 次の XML を追加して、このブートストラップパッケージがインストールされているかどうかを確認します。 製品コードを再頒布可能コンポーネントの GUID に置き換えます。
 
     ```xml
     <InstallChecks>
@@ -81,7 +81,7 @@ ms.locfileid: "62928373"
     </InstallChecks>
     ```
 
-9. ブートス トラップ コンポーネントが既にインストールされている場合は、に応じてブートス トラップの動作を変更する XML を追加します。 コンポーネントがインストールされている場合、ブートス トラップ パッケージは実行されません。 このコンポーネントは管理者特権を必要とするために、現在のユーザーに管理者がかどうか、次の XML を確認します。
+9. ブートストラップコンポーネントが既にインストールされているかどうかによって、ブートストラップの動作を変更するには、XML を追加します。 コンポーネントがインストールされている場合、ブートストラップパッケージは実行されません。 次の XML は、現在のユーザーが管理者であるかどうかを確認します。このコンポーネントには管理者特権が必要です。
 
     ```xml
     <InstallConditions>
@@ -94,7 +94,7 @@ ms.locfileid: "62928373"
     </InstallConditions>
     ```
 
-10. インストールが成功した場合と、再起動が必要な場合は、終了コードを設定する XML を追加します。 次の XML では、失敗して FailReboot 終了コードは、パッケージのインストールを続行がない、ブートス トラップすることを示すについて説明します。
+10. インストールが正常に完了し、再起動が必要な場合は、終了コードを設定するために XML を追加します。 次の XML は、ブートストラップがパッケージのインストールを続行しないことを示す、Fail および FailReboot の終了コードを示しています。
 
     ```xml
     <ExitCodes>
@@ -105,14 +105,14 @@ ms.locfileid: "62928373"
     </ExitCodes>
     ```
 
-11. ブートス トラップ コマンドのセクションの末尾に次の XML を追加します。
+11. 次の XML を追加して、ブートストラップコマンドのセクションを終了します。
 
     ```xml
         </Command>
     </Commands>
     ```
 
-12. 移動、 *C:\package*を Visual Studio ブートス トラップ ディレクトリのフォルダー。 これは Visual Studio 2010 の場合、 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*ディレクトリ。
+12. *C:\ パッケージ*フォルダーを Visual Studio ブートストラップディレクトリに移動します。 Visual Studio 2010 の場合、これは*SDKs\Windows\v7.0A\Bootstrapper\Packages*ディレクトリです。
 
 ## <a name="example"></a>例
  製品マニフェストには、カスタムの必須コンポーネントのインストール手順が含まれています。
@@ -159,4 +159,4 @@ ms.locfileid: "62928373"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
+- [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

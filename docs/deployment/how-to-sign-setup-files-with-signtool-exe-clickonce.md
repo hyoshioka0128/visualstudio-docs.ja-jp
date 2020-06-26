@@ -1,7 +1,7 @@
 ---
-title: '方法: セットアップ ファイルに SignTool.exe (ClickOnce) |Microsoft Docs'
+title: '方法: SignTool.exe を使用してセットアップファイルに署名する (ClickOnce) |Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928405"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382069"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>方法: SignTool.exe を使用してセットアップ ファイルに署名する (ClickOnce)
 *SignTool.exe* を使用して、セットアップ プログラム (*setup.exe*) に署名できます。 このプロセスによって、改ざんされたファイルがエンド ユーザーのコンピューターにインストールされないようにすることができます。
@@ -36,9 +36,9 @@ ms.locfileid: "62928405"
 
 1. マニフェストに署名する証明書を開発用コンピューターにインストールします。
 
-2. **ソリューション エクスプローラー**でプロジェクトを選択します。
+2. **ソリューションエクスプローラー**でプロジェクトを選択します。
 
-3. **[プロジェクト]** メニューの *ProjectName* の **[プロパティ]** をクリックします。
+3. **[プロジェクト]** メニューの *ProjectName の * **[プロパティ]** をクリックします。
 
 4. **[署名]** ページの **[ClickOnce マニフェストに署名する]** をオフにします。
 
@@ -77,4 +77,4 @@ ms.locfileid: "62928405"
     ```
 
 ## <a name="see-also"></a>関連項目
-- [方法: アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [方法: アプリケーション マニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
