@@ -5,17 +5,17 @@ metadata:
   title: コード アナライザー
   description: Visual Studio を使用してコードの品質を分析する方法を説明します。
   ms.prod: visual-studio-windows
-  ms.technology: vs-ide-general
+  ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
+  author: Mikejo5000
+  ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 45be3779e7ed8a625d9029c8eb03a69374c43ae8
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
+  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74316367"
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "85462097"
 landingContent:
 - title: C および C++ コードの分析
   linkLists:
@@ -37,7 +37,7 @@ landingContent:
       url: static-code-analysis-for-managed-code-overview.md
   - linkListType: concept
     links:
-    - text: よく寄せられる質問
+    - text: よくあるご質問
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
