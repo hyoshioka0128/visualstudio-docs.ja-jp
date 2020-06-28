@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: 'CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します'
                   href: ca1829.md
+                - name: 'CA1830:StringBuilder の厳密に型指定された Append および Insert メソッドのオーバーロードをお勧めします'
+                  href: ca1830.md
                 - name: 'CA1831: 該当する場合、文字列に範囲ベースのインデクサーの代わりに AsSpan を使用します'
                   href: ca1831.md
                 - name: 'CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します'
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: 'CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません'
                   href: ca2246.md
+                - name: 'CA2247:TaskCompletionSource コンストラクターに渡された引数は、TaskContinuationOptions 列挙型ではなく、TaskCreationOptions 列挙型にする必要があります'
+                  href: ca2247.md
                 - name: 'CA2248: 正しい enum 引数を Enum.HasFlag に指定します'
                   href: ca2248.md
             - name: 自動機能の中断
