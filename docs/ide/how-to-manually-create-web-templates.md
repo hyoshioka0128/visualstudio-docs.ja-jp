@@ -1,7 +1,7 @@
 ---
 title: Web テンプレートを作成する
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591009"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284179"
 ---
 # <a name="how-to-manually-create-web-templates"></a>方法: Web テンプレートを手動で作成する
 
@@ -54,7 +54,7 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
 
 7. テンプレート内のファイル (*vstemplate* ファイルを含む) を選択して右クリックし、 **[送る]**  >  **[圧縮 (zip 形式) フォルダー]** の順に選択します。 ファイルは *.zip* ファイルに圧縮されます。
 
-8. *.zip* テンプレート ファイルを Visual Studio プロジェクト テンプレートのディレクトリに格納します。 既定では、このディレクトリは *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\ProjectTemplates* です。
+8. *.zip* テンプレート ファイルを Visual Studio プロジェクト テンプレートのディレクトリに格納します。 既定では、このディレクトリは *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates* です。
 
 ## <a name="example"></a>例
 
@@ -81,7 +81,7 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
 - [Visual Studio テンプレート スキーマ参照 (機能拡張)](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: 複数プロジェクトのテンプレートを作成する
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591087"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284413"
 ---
-# <a name="how-to-create-multi-project-templates"></a>方法 : 複数プロジェクトのテンプレートを作成する
+# <a name="how-to-create-multi-project-templates"></a>方法: 複数プロジェクトのテンプレートを作成する
 
 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 複数プロジェクトのテンプレートに基づくプロジェクトが作成されると、テンプレート内のすべてのプロジェクトがソリューションに追加されます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "75591087"
 2. テンプレートにエクスポートする準備ができるまで、プロジェクトをカスタマイズします。
 
    > [!TIP]
-   > [テンプレート パラメーター](template-parameters.md)を使用していて、親テンプレートの変数を参照したい場合は、パラメーターの名前にプレフィックス `ext_` を付加します。 たとえば、「 `$ext_safeprojectname$` 」のように入力します。 また、**ProjectTemplateLink** 要素の **CopyParameters** 属性を **true** に設定します。
+   > [テンプレート パラメーター](template-parameters.md)を使用していて、親テンプレートの変数を参照したい場合は、パラメーターの名前にプレフィックス `ext_` を付加します。 たとえば、`$ext_safeprojectname$` のようにします。 また、**ProjectTemplateLink** 要素の **CopyParameters** 属性を **true** に設定します。
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
@@ -117,7 +117,7 @@ ms.locfileid: "75591087"
 
    ファイルとフォルダーが *.zip* ファイルに圧縮されます。
 
-10. ユーザー プロジェクト テンプレートのディレクトリに *.zip* ファイルをコピーします。 既定では、このディレクトリは *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ProjectTemplates* です。
+10. ユーザー プロジェクト テンプレートのディレクトリに *.zip* ファイルをコピーします。 既定では、このディレクトリは *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* です。
 
 11. Visual Studio で **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択し、ご自分のテンプレートが表示されることを確認します。
 
@@ -186,7 +186,7 @@ ms.locfileid: "75591087"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [方法: プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)

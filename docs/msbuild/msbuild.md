@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2387526860b7d6da136a72cf83727f6714e2e52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633071"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289197"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -70,7 +70,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  以下のセクションでは、MSBuild プロジェクト ファイル形式のいくつかの基本要素について説明します。 基本的なプロジェクト ファイルを作成する方法のチュートリアルについては、[チュートリアル:MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)に関するページを参照してください。
 
-### <a name="BKMK_Properties"></a> プロパティ
+### <a name="properties"></a><a name="BKMK_Properties"></a> プロパティ
 
  プロパティはビルドを設定するためのキーと値のペアです。 プロパティを宣言するには、そのプロパティの名前を持つ要素を [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 要素の子として作成します。 たとえば、次の コードでは、`BuildDir` という名前のプロパティを作成し、`Build` を値として設定しています。
 
@@ -90,7 +90,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  プロパティの詳細については、「[MSBuild プロパティ](../msbuild/msbuild-properties.md)」をご覧ください。
 
-### <a name="BKMK_Items"></a> 項目
+### <a name="items"></a><a name="BKMK_Items"></a> 項目
 
  項目はビルド システムへの入力であり、通常はファイルを表します。 項目はユーザー定義の項目名に基づいて項目の種類にグループ化されます。 これらの項目の種類は、タスクのパラメーターとして使用できます。タスクでは、個々の項目を使用してビルド処理の各ステップを実行します。
 
@@ -116,7 +116,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  項目はワイルドカード文字を使って宣言できるほか、メタデータを追加することで、より高度なビルド作業を行うことができます。 項目の詳細については、「[項目](../msbuild/msbuild-items.md)」をご覧ください。
 
-### <a name="BKMK_Tasks"></a> タスク
+### <a name="tasks"></a><a name="BKMK_Tasks"></a> タスク
 
  タスクとは、MSBuild プロジェクトでビルド処理を実行するために使用される実行可能コードの単位です。 たとえば、タスクでは入力ファイルをコンパイルしたり、外部ツールを実行したりします。 タスクは再利用が可能で、複数の開発者が複数のプロジェクトで共有できます。
 
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  タスクの詳細については、「[MSBuild タスク](../msbuild/msbuild-tasks.md)」をご覧ください。
 
-### <a name="BKMK_Targets"></a> ターゲット
+### <a name="targets"></a><a name="BKMK_Targets"></a> ターゲット
 
  ターゲットは、タスクを特定の順序でグループ化し、プロジェクト ファイルの各セクションを、ビルド プロセスのエントリ ポイントとして公開する役割を果たします。 読みやすさや拡張性を高める目的で、複数のターゲットを論理的なセクションとしてグループ化することもできます。 ビルド ステップを複数のターゲットに分割することにより、他のターゲットから、一部のビルド処理だけを呼び出すことができ、そのコード セクションをすべてのターゲットに逐一コピーする手間をなくすことができます。 たとえば、ビルド処理の複数のエントリ ポイントで、参照をビルドする必要がある場合、参照をビルドするターゲットを作成しておけば、必要なすべてのエントリ ポイントからそのターゲットを実行できます。
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Visual Studio で MSBuild を使用する方法のチュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
 
-## <a name="BKMK_Multitargeting"></a> マルチ ターゲット
+## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a> マルチ ターゲット
 
  Visual Studio を使用すると、いくつかのバージョンの .NET Framework のうち、任意のバージョンで動作するようにアプリケーションをコンパイルできます。 たとえば、あるアプリケーションを 32 ビット プラットフォーム上の .NET Framework 2.0 で動作するようにコンパイルしたり、これと同じアプリケーションを 64 ビット プラットフォーム上の .NET Framework 4.5 で動作するようにコンパイルしたりできます。 複数のフレームワークに対してコンパイルする機能をマルチ ターゲットといいます。
 
@@ -190,6 +190,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [条件](../msbuild/msbuild-conditions.md) | MSBuild の要素で `Condition` 属性を使用する方法について説明します。 |
 | [詳細な概念](../msbuild/msbuild-advanced-concepts.md) | バッチ処理、変換の実行、複数バージョン対応など、高度な利用法を紹介します。 |
 | [MSBuild でのログ](../msbuild/logging-in-msbuild.md) | ビルド イベント、メッセージ、およびエラーを記録する方法について説明します。 |
+| [MSBuild によってプロジェクトがビルドされる方法](build-process-overview.md) | MSBuild 内で使用される内部ビルド プロセスについて説明します |
 | [その他のリソース](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | MSBuild に関する詳細な情報を提供するコミュニティやサポートのリソースを紹介します。 |
 
 ## <a name="reference"></a>関連項目

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62958247"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279810"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>手順 3: 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
 
@@ -36,15 +36,15 @@ ms.locfileid: "62958247"
 
 Django アプリを開発する場合、通常、より多くの Python、HTML、CSS、および JavaScript ファイルを追加します。 Visual Studio では、(デプロイに必要になる可能性がある *web.config* のような他のファイルだけでなく) ファイルの種類ごとに、すぐに使用できる便利な[項目テンプレート](python-item-templates.md)を提供しています。
 
-使用可能なテンプレートを確認するには、**ソリューション エクスプローラー**に移動して、項目を作成するフォルダーを右クリックし、**[追加]** > **[新しい項目]** の順に選択します。
+使用可能なテンプレートを確認するには、**ソリューション エクスプローラー**に移動して、項目を作成するフォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** の順に選択します。
 
 ![Visual Studio の新しい項目の追加ダイアログ](media/django/step03-add-new-item-dialog.png)
 
-テンプレートを使用するには、目的のテンプレートを選択して、ファイルの名前を指定し、**[OK]** をクリックします。 この方法で項目を追加すると、Visual Studio プロジェクトに自動的にファイルを追加して、ソース管理への変更にマーク付けされます。
+テンプレートを使用するには、目的のテンプレートを選択して、ファイルの名前を指定し、 **[OK]** をクリックします。 この方法で項目を追加すると、Visual Studio プロジェクトに自動的にファイルを追加して、ソース管理への変更にマーク付けされます。
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>質問:Visual Studio では、提供する項目テンプレートをどのように把握していますか。
 
-回答:Visual Studio プロジェクト ファイル (*.pyproj*) には、Python プロジェクトとしてマーク付けするプロジェクト タイプ識別子が含まれます。 Visual Studio は、このタイプ識別子を使用して、プロジェクト タイプに適合する項目テンプレートのみを表示します。 このように、Visual Studio では、多数のプロジェクト タイプに対応する豊富な項目テンプレート セットを提供でき、項目テンプレートを毎回分類して調べる必要はありません。
+回答:Visual Studio プロジェクト ファイル ( *.pyproj*) には、Python プロジェクトとしてマーク付けするプロジェクト タイプ識別子が含まれます。 Visual Studio は、このタイプ識別子を使用して、プロジェクト タイプに適合する項目テンプレートのみを表示します。 このように、Visual Studio では、多数のプロジェクト タイプに対応する豊富な項目テンプレート セットを提供でき、項目テンプレートを毎回分類して調べる必要はありません。
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>手順 3-2:アプリからの静的ファイルを提供する
 
@@ -63,9 +63,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 任意のフォルダー構造を使用して目的の *static* 内にファイルを編成し、そのフォルダー内で相対パスを使用してファイルを参照できます。 このプロセスを示すために、次の手順では CSS ファイルをアプリに追加して、*index.html* テンプレートに該当のスタイルシートを使用しています。
 
-1. **ソリューション エクスプローラー**で、Visual Studio プロジェクトの **HelloDjangoApp** フォルダーを右クリックして、**[追加]** > **[新しいフォルダー]** を選択して、フォルダーに `static` という名前を付けます。
+1. **ソリューション エクスプローラー**で、Visual Studio プロジェクトの **HelloDjangoApp** フォルダーを右クリックして、 **[追加]**  >  **[新しいフォルダー]** を選択して、フォルダーに `static` という名前を付けます。
 
-1. **static** フォルダーを右クリックし、**[追加]** > **[新しい項目]** を選択します。 表示されたダイアログ ボックスで、**Stylesheet** テンプレートを選択して、ファイルに `site.css` という名前を付けて、**[OK]** をクリックします。 **site.css** ファイルがプロジェクトに表示され、エディターで開かれます。 次の画像のようなフォルダー構成が表示されます。
+1. **static** フォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** を選択します。 表示されたダイアログ ボックスで、**Stylesheet** テンプレートを選択して、ファイルに `site.css` という名前を付けて、 **[OK]** をクリックします。 **site.css** ファイルがプロジェクトに表示され、エディターで開かれます。 次の画像のようなフォルダー構成が表示されます。
 
     ![ソリューション エクスプローラーに表示される静的ファイルの構造](media/django/step03-static-file-structure.png)
 
@@ -78,7 +78,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     }
     ```
 
-1. アプリの *templates/HelloDjangoApp/index.html* ファイルの内容を次のコードに置き換えます。これにより、手順 2 で使用した `<strong>` 要素が `message` スタイル クラスを参照する `<span>` に置き換えられます。 この方法でスタイル クラスを使用すると、要素のスタイル設定をこれまで以上に柔軟に行えます  (VS 2017 15.7 以前の使用時、*index.html* を *templates* 内のサブフォルダーに移動済みの場合、手順 2-4 の[テンプレートの名前空間の設定](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)に関する記述を参照してください)。
+1. アプリの *templates/HelloDjangoApp/index.html* ファイルの内容を次のコードに置き換えます。これにより、手順 2 で使用した `<strong>` 要素が `message` スタイル クラスを参照する `<span>` に置き換えられます。 この方法でスタイル クラスを使用すると、要素のスタイル設定をこれまで以上に柔軟に行えます (VS 2017 15.7 以前の使用時、*index.html* を *templates* 内のサブフォルダーに移動済みの場合、手順 2-4 の[テンプレートの名前空間の設定](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)に関する記述を参照してください)。
 
     ```html
     <html>
@@ -103,6 +103,22 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 回答:*static* フォルダーには、他の CSS、JavaScript、HTML ファイルを自由に追加できます。 静的ファイルを編成する一般的な方法は、*fonts*、*scripts*、*content* (スタイルシートとその他のファイル用) という名前のサブフォルダーを作成することです。 どの場合も、`{% static %}` 参照のファイルへの相対パスにこれらのフォルダーを必ず含めてください。
 
+### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>質問:{% load staticfiles %} タグを使用せずに同じタスクを完了することはできますか。
+
+回答:はい、できます。
+
+```html
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="../../static/site.css" />
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html>
+```
+
 ## <a name="step-3-3-add-a-page-to-the-app"></a>手順 3-3:アプリにページを追加する
 
 アプリに別のページを追加することには、次のような意味があります。
@@ -113,7 +129,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 次の手順では、"HelloDjangoApp" プロジェクトに "About"\(詳細\) ページと、ホーム ページからこのページへのリンクを追加します。
 
-1. **ソリューション エクスプローラー**で、**templates/HelloDjangoApp** フォルダーを右クリックし、**[追加]** > **[新しい項目]** を選択し、**[HTML ページ]** 項目テンプレートを選択して、ファイルに `about.html` という名前を付けて、**[OK]** をクリックします。
+1. **ソリューション エクスプローラー**で、**templates/HelloDjangoApp** フォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** を選択し、 **[HTML ページ]** 項目テンプレートを選択して、ファイルに `about.html` という名前を付けて、 **[OK]** をクリックします。
 
     > [!Tip]
     > **[新しい項目]** コマンドが **[追加]** メニューに表示されない場合、Visual Studio がデバッグ モードを終了できるようにサーバーを停止済みであることを確認してください。
@@ -160,7 +176,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <div><a href="about">About</a></div>
     ```
 
-1. **[ファイル]** > **[すべて保存]** メニュー コマンドを使用するか、または単純に **Ctrl**+**Shift**+**S** キーを押して、すべてのファイルを保存します  (技術的には、Visual Studio でプロジェクトを実行するとファイルが自動的に保存されるので、この手順は必要ありませんが、 知っておくとよいコマンドです)。
+1. **[ファイル]**  >  **[すべて保存]** メニュー コマンドを使用するか、または単純に **Ctrl**+**Shift**+**S** キーを押して、すべてのファイルを保存します (技術的には、Visual Studio でプロジェクトを実行するとファイルが自動的に保存されるので、この手順は必要ありませんが、 知っておくとよいコマンドです)。
 
 1. プロジェクトを実行して結果を確認し、ページ間の移動をチェックします。 終わったら、サーバーを閉じます。
 
@@ -186,7 +202,7 @@ Django のテンプレート システムでは、複数のテンプレート間
 
 次の手順では、継承を例示します。
 
-1. アプリの *templates/HelloDjangoApp* フォルダーで、*layout.html* という新しい HTML ファイルを作成し (**[追加]** > **[新しい項目]** コンテキスト メニュー、または **[追加]** > **[HTML ページ]** を使用)、その内容を以下のマークアップに置き換えます。 このテンプレートが含む "content" というブロックは、参照元ページで置き換える必要があることがわかります。
+1. アプリの *templates/HelloDjangoApp* フォルダーで、*layout.html* という新しい HTML ファイルを作成し ( **[追加]**  >  **[新しい項目]** コンテキスト メニュー、または **[追加]**  >  **[HTML ページ]** を使用)、その内容を以下のマークアップに置き換えます。 このテンプレートが含む "content" というブロックは、参照元ページで置き換える必要があることがわかります。
 
     ```html
     <!DOCTYPE html>

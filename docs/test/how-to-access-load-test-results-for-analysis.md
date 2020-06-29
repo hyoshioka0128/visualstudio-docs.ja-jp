@@ -1,7 +1,7 @@
 ---
 title: ロード テストの結果の分析
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - results, load test
 - load test results, accessing
@@ -14,14 +14,14 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596464"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288534"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>方法 : ロード テストの結果にアクセスして分析する
+# <a name="how-to-access-load-test-results-for-analysis"></a>方法: ロード テストの結果にアクセスして分析する
 
 ロード テスト エディターからロード テストを実行すると、ロード テストの結果が自動的に開き、実行中のロード テストが**ロード テスト アナライザー**に表示されます。 コマンド ラインからロード テストを実行するとき、ロード テストの結果に手動でアクセスする必要があります。
 
@@ -37,9 +37,9 @@ ms.locfileid: "75596464"
 
      **[結果を開いて管理]** ダイアログ ボックスが表示されます。
 
-3. **[ロード テストの結果を検索するコントローラー名を入力]** でコントローラーを選択します。 ローカル コンピューターに保存された結果にアクセスする場合は、 **[\<ローカル> - コントローラーなし]** を選択します。
+3. **[ロード テストの結果を検索するコントローラー名を入力]** でコントローラーを選択します。 ローカル コンピューターに保存された結果にアクセスする場合は、 **[\<local> - コントローラーなし]** を選択します。
 
-4. **[次のロード テストの結果を表示]** で、結果を表示するロード テストを選択します。 すべてのテストの結果をすべて表示する場合は、 **[\<すべてのテストの結果を表示>]** を選択します。
+4. **[次のロード テストの結果を表示]** で、結果を表示するロード テストを選択します。 すべてのテストの結果をすべて表示する場合は、 **[\<Show results for all tests>]** を選択します。
 
      ロード テストの結果が使用可能な場合は、 **[ロード テストの結果]** 一覧に表示されます。 この一覧の列は、 **[時間]** 、 **[期間]** 、 **[ユーザー]** 、 **[成果]** 、 **[テスト]** 、 **[説明]** です。 **[テスト]** にはテストの名前が表示され、 **[説明]** にはテストを実行する前に入力した説明が表示されます。
 
@@ -52,6 +52,6 @@ ms.locfileid: "75596464"
 
      **[結果を開いて管理]** ダイアログ ボックスでは、ロード テストの結果の表示、インポート、エクスポート、削除など、ロード テストの結果のその他の要素を管理できます。 詳細については、「[ロード テストの結果リポジトリ内のロード テストの結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

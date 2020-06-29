@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586564"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289171"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 
@@ -34,7 +34,7 @@ Visual Studio には、Windows 上の Azure App Service に Python Web アプリ
 
 このチュートリアルでは、Bottle、Flask、または Django のいずれかのフレームワークに基づく Web アプリ プロジェクトが必要になります。 プロジェクトがまだなく、発行プロセスを試してみたい場合は、次の手順に従って簡単なテスト プロジェクトを作成します。
 
-1. Visual Studio で、 **[ファイル] > [新規] > [プロジェクト]** の順に選び、"Bottle" を検索して、 **[Bottle Web プロジェクト]** を選び、プロジェクトの名前とパスを指定し、 **[OK]** をクリックします  (Bottle テンプレートは、Python 開発ワークロードに含まれています。[インストール](installing-python-support-in-visual-studio.md)のページを参照してください)。
+1. Visual Studio で、 **[ファイル] > [新規] > [プロジェクト]** の順に選び、"Bottle" を検索して、 **[Bottle Web プロジェクト]** を選び、プロジェクトの名前とパスを指定し、 **[OK]** をクリックします (Bottle テンプレートは、Python 開発ワークロードに含まれています。[インストール](installing-python-support-in-visual-studio.md)のページを参照してください)。
 
 1. 指示に従って外部パッケージをインストールします。 **[仮想環境にインストール]** と仮想環境の優先ベース インタープリターを選択します。 通常、これは App Service にインストールされている Python のバージョンと一致するものを選択します。
 
@@ -129,7 +129,7 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    配列への URL の追加が失敗すると、次のエラーが発生します。"DisallowedHost at / 不正な HTTP_HOST ヘッダー: '\<サイト URL\>'。 '\<サイト URL\>' を ALLOWED_HOSTS に追加する必要があります。"
+    配列への URL の追加が失敗すると、次のエラーが発生します。"DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'. You may need to add '\<site URL\>' to ALLOWED_HOSTS." (DisallowedHost / 無効な HTTP_HOST ヘッダー: <サイト URL>。必要に応じて ALLOWED_HOSTS に '<サイト URL>' を追加してください。)
 
     配列が空の場合、Django は自動的に 'localhost' を許可しますが、実稼働環境の URL を追加するとその機能は削除されます。 このため、`settings.py` の開発用のコピーと実稼働環境用のコピーを別々に管理するか、環境変数を使用して実行時の値を制御することをお勧めします。
 
@@ -141,11 +141,11 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 
 1. 表示された **[発行]** タブで、発行先のターゲットを選択します。
 
-    a.  Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、 **[既存のものを選択]** 、 **[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
+    a. Azure サブスクリプション: **[Microsoft Azure App Service]** を選択し、 **[既存のものを選択]** 、 **[発行]** の順に選択します。 表示されたダイアログで、適切なサブスクリプションと App Service を選択できます。 App Service が表示されない場合は、次に説明されているように、一時的な App Service のダウンロードした発行プロファイルを使用します。
 
     ![Azure への発行手順 1、Visual Studio 2017 以降、既存のサブスクリプション](media/tutorials-common-publish-1a-2017.png)
 
-    b.  try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、 **>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、 **[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
+    b. try.azurewebsites.net で一時的な App Service を使用している場合、または発行プロファイルを使用する必要がある場合は、 **>** コントロールを選択して **[プロファイルのインポート]** を見つけてそのオプションを選択し、 **[発行]** を選択します。 これにより、以前にダウンロードした `.publishsettings` ファイルの場所の入力が求められます。
 
     ![Azure への発行手順 1、Visual Studio 2017 以降、一時的なアプリ サービス](media/tutorials-common-publish-1b-2017.png)
 
@@ -153,9 +153,9 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 
 1. ブラウザーが開いたときに、"内部サーバー エラーが発生したため、ページを表示できません。" というメッセージが表示される場合があります。 このメッセージは、サーバー上の Python 環境が完全に構成されていないことを示しています。その場合、次の手順を実行します。
 
-    a.  もう一度「[Azure App Service での Python の管理](managing-python-on-azure-app-service.md)」を参照して、適切な Python サイト拡張機能がインストールされていることを確認します。
+    a. もう一度「[Azure App Service での Python の管理](managing-python-on-azure-app-service.md)」を参照して、適切な Python サイト拡張機能がインストールされていることを確認します。
 
-    b.  `web.config` ファイル内の Python インタープリターへのパスを再確認します。 パスは、選択したサイト拡張機能のインストール場所と完全に一致している必要があります。
+    b. `web.config` ファイル内の Python インタープリターへのパスを再確認します。 パスは、選択したサイト拡張機能のインストール場所と完全に一致している必要があります。
 
     c. Kudu コンソールを使用してアプリの `requirements.txt` ファイルに一覧表示されている任意のパッケージをアップグレードする: `web.config` で使用されているのと同じ Python フォルダー (`/home/python361x64` など) に移動し、[Kudu コンソール](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)のセクションの説明に従って、次のコマンドを実行します。
 
@@ -209,7 +209,7 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 - アプリの `wsgi_app` 関数と App Service の既定の Python 3.4 インタープリターへの適切なポインターを格納する `web.config` ファイルをサーバー上に作成します。
 - プロジェクトの `static` フォルダー内のファイルの処理をオフにします (このルールは `web.config` にあります)。
 - 仮想環境をサーバーに発行します。
-- `web.debug.config` ファイルと ptvsd デバッグ ツールを追加して、リモート デバッグを有効にします。
+- `web.debug.config` ファイルとデバッグ ツールを追加して、リモート デバッグを有効にします。 Visual Studio 2019 バージョン 16.4 以前の場合、デバッグ ツールは ptvsd です。 Visual Studio 2019 バージョン 16.5 以降の場合、デバッグ ツールは debugpy です。
 
 前述したとおり、これらの自動ステップは発行プロセスを簡素化しますが、Python 環境の制御がより難しくなります。 たとえば、`web.config` ファイルはサーバーにのみ作成され、プロジェクトには追加されません。 発行プロセスは、サーバーの構成に依存するのではなく、開発用コンピューターから仮想環境全体をコピーするため、時間がかかります。
 

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307293"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285232"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -42,7 +42,7 @@ Visual Studio で、アプリまたは Web サイトを作成するときは、"
 
 Visual Studio では、[MSBuild](../msbuild/msbuild.md) を使用してソリューション内の各プロジェクトをビルドします。各プロジェクトには MSBuild プロジェクト ファイルが含まれています。 ファイル拡張子は、C# プロジェクト (.csproj)、Visual Basic プロジェクト (.vbproj)、またはデータベース プロジェクト (.dbproj) などのプロジェクトの種類を反映しています。 プロジェクト ファイルは、MSBuild がプロジェクトをビルドするために必要なすべての情報と手順が含まれる XML ドキュメントです。これには、コンテンツ、プラットフォーム要件、バージョン管理情報、Web サーバーまたはデータベース サーバーの設定、実行するタスクなどがあります。
 
-プロジェクト ファイルは、[MSBuild XML スキーマ](../msbuild/msbuild-project-file-schema-reference.md)に基づいています。 Visual Studio で最新の [sdk スタイルのプロジェクト ファイル](../msbuild/how-to-use-project-sdk.md)のコンテンツを確認するには、 **[ソリューション エクスプローラー]** 内でプロジェクト ノードを右クリックし、 **[\<projectname\> の編集]** を選択します。 .NET フレームワークのコンテンツや、そのスタイルのその他のプロジェクトのコンテンツを確認するには、まずプロジェクトをアンロードします ( **[ソリューション エクスプローラー]** を右クリックして、 **[プロジェクトのアンロード]** を選択します)。 次に、プロジェクトを右クリックして、 **[\<projectname\> の編集]** を選択します。
+プロジェクト ファイルは、[MSBuild XML スキーマ](../msbuild/msbuild-project-file-schema-reference.md)に基づいています。 Visual Studio で新しい [sdk スタイルのプロジェクト ファイル](../msbuild/how-to-use-project-sdk.md)のコンテンツを確認するには、 **[ソリューション エクスプローラー]** 内でプロジェクト ノードを右クリックし、 **[編集]\<projectname\>** を選択します。 .NET フレームワークのコンテンツや、そのスタイルのその他のプロジェクトのコンテンツを確認するには、まずプロジェクトをアンロードします ( **[ソリューション エクスプローラー]** を右クリックして、 **[プロジェクトのアンロード]** を選択します)。 次に、プロジェクトを右クリックして、 **[編集]\<projectname\>** を選択します。
 
 > [!NOTE]
 > Visual Studio でソリューションまたはプロジェクトを使用して、コードの編集、ビルド、デバッグを行う必要はありません。 単に Visual Studio でソース ファイルを含むフォルダーを開いて編集を開始できます。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。
@@ -64,7 +64,7 @@ Visual Studio では、ソリューションの設定を格納するために、
 
 特定の方法で、頻繁にプロジェクトをカスタマイズする場合、新しいプロジェクトを作成するために使用できるカスタム プロジェクト テンプレートを作成できます。 詳細については、[プロジェクト テンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)に関するページをご覧ください。
 
-作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、**[ツール]** > **[オプション]** > **[プロジェクトとソリューション]** > **[場所]** の **[プロジェクトの場所]** で変更できます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](../ide/reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
+作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトとソリューション]**  >  **[場所]** の **[プロジェクトの場所]** で変更できます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](../ide/reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
 
 ## <a name="solution-explorer"></a>ソリューション エクスプローラー
 
@@ -75,6 +75,9 @@ Visual Studio では、ソリューションの設定を格納するために、
 多くのメニュー コマンドは、**ソリューション エクスプローラー**で各種項目の右クリック メニューから使用できます。 これらのコマンドには、プロジェクトのビルド、NuGet パッケージの管理、参照の追加、ファイル名の変更、テストの実行などが含まれます。 **ソリューション エクスプローラー**の上部のツールバーには、ソリューション ビューからフォルダー ビューに切り替える、隠しファイルを表示する、すべてのノードを折りたたむためなどのボタンがあります。
 
 ASP.NET Core プロジェクトでは、**ソリューション エクスプローラー**でファイルを入れ子にする方法をカスタマイズできます。 詳細については、[ソリューション エクスプローラーでのファイルの入れ子のカスタマイズ](file-nesting-solution-explorer.md)に関するページを参照してください。
+
+> [!TIP]
+> ソリューション エクスプローラーに表示されるいくつかのアイコンの一覧を表示するには、[[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン](class-view-and-object-browser-icons.md) ページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,18 +1,18 @@
 ---
 title: .runsettings ファイルを使用して単体テストを構成する
 ms.date: 10/03/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880352"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288768"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -214,6 +214,27 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
+  
+  <!-- Configuration for loggers -->
+  <LoggerRunSettings>
+    <Loggers>      
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
 
   <!-- Adapter Specific sections -->
 
@@ -310,6 +331,32 @@ public void HomePageTest()
 ```
 
 テスト実行パラメーターを使用するには、プライベートの <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> フィールドとパブリックの <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> プロパティをテスト クラスに追加します。
+
+### <a name="logger-run-settings"></a>ロガーの実行設定
+
+```xml
+<LoggerRunSettings>
+    <Loggers>        
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
+```
+
+`LoggerRunSettings` セクションには、テスト実行に使用される 1 つ以上のロガーが定義されています。 最も一般的なロガーは、コンソール、trx、および html です。 
 
 ### <a name="mstest-run-settings"></a>MSTest の実行設定
 

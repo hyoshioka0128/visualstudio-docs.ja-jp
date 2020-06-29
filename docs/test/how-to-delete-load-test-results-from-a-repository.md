@@ -1,7 +1,7 @@
 ---
 title: '方法: ロード テスト結果をリポジトリから削除する'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - results, load test
 - load tests, deleting results
@@ -13,12 +13,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26dc9750a2bf2eaf5d0ee5dd3d08485c458bb74a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dd196076fb769f80c36ab8630eebf1e8a0f8b234
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589059"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287780"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>方法: ロード テスト結果をリポジトリから削除する
 
@@ -36,9 +36,9 @@ ms.locfileid: "75589059"
 
      **[ロード テストの結果を開いて管理]** ダイアログ ボックスが表示されます。
 
-3. **[ロード テストの結果を検索するコントローラー名を入力]** でコントローラーを選択します。 ローカル コンピューターに保存された結果にアクセスする場合は、 **[\<ローカル - コントローラーなし>]** を選択します。
+3. **[ロード テストの結果を検索するコントローラー名を入力]** でコントローラーを選択します。 ローカル コンピューターに保存された結果にアクセスする場合は、 **[\<Local - No controller>]** を選択します。
 
-4. **[次のロード テストの結果を表示]** で、結果を表示するロード テストを選択します。 すべてのテストの結果をすべて表示する場合は、 **[\<すべてのテストの結果を表示>]** を選択します。
+4. **[次のロード テストの結果を表示]** で、結果を表示するロード テストを選択します。 すべてのテストの結果をすべて表示する場合は、 **[\<Show results for all tests>]** を選択します。
 
      ロード テストの結果が使用可能な場合は、 **[ロード テストの結果]** 一覧に表示されます。 この一覧の列は、 **[時間]** 、 **[期間]** 、 **[ユーザー]** 、 **[成果]** 、 **[テスト]** 、 **[説明]** です。 **[テスト]** にはテストの名前が表示され、 **[説明]** にはテストを実行する前に入力した説明が表示されます。 **[説明]** 列には、テスト結果の **[分析コメント]** に入力された簡単な説明が表示されます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "75589059"
     > [!NOTE]
     > 結果が削除された後も **[ロード テストの結果を開いて管理]** ダイアログ ボックスは開いたままです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: ロード テスト結果をリポジトリからエクスポートする](../test/how-to-export-load-test-results-from-a-repository.md)
 - [ロード テストの結果リポジトリ内のロード テスト結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)

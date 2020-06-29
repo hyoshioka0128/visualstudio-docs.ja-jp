@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169353"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289015"
 ---
 # <a name="item-element-msbuild"></a>Item 要素 (MSBuild)
 
 ユーザー定義のアイテムおよびそのメタデータが含まれます。 MSBuild プロジェクトで使用されるすべてのアイテムが、`ItemGroup` 要素の子として指定されている必要があります。
 
-\<Project> \<ItemGroup> \<Item>
+\<Project>
+\<ItemGroup>
+\<Item>
 
 ## <a name="syntax"></a>構文
 
@@ -77,7 +79,7 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
 |`KeepDuplicates`|省略可能な属性です。<br /><br /> 既存のアイテムの完全な複製である場合に、アイテムをターゲット グループに追加するかどうかを指定します。 ソースとターゲットのアイテムの `Include` 値が同じでメタデータが異なる場合、`KeepDuplicates` が `false` に設定されていてもアイテムは追加されます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。<br /><br /> この属性は、`ItemGroup` 内にある `Target` のアイテムに指定されている場合にのみ有効です。|
 |`KeepMetadata`|省略可能な属性です。<br /><br /> ターゲット アイテムに追加するソース アイテムのメタデータ。 名前がセミコロン区切りのリストで指定されているメタデータのみ、ソース アイテムからターゲット アイテムに転送されます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。<br /><br /> この属性は、`ItemGroup` 内にある `Target` のアイテムに指定されている場合にのみ有効です。|
 |`RemoveMetadata`|省略可能な属性です。<br /><br /> ターゲット アイテムに転送しないソース アイテムのメタデータ。 名前がセミコロン区切りの名前リストに含まれているメタデータを除いて、すべてのメタデータがソース アイテムからターゲット アイテムに転送されます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。<br /><br /> この属性は、`ItemGroup` 内にある `Target` のアイテムに指定されている場合にのみ有効です。|
-|`Update`|省略可能な属性です。 (Visual Studio 2017 以降の .NET Core プロジェクトでのみ利用できます。)<br /><br /> glob で追加されたファイルのメタデータを変更できます。<br /><br /> この属性は、`Target` にない `ItemGroup` のアイテムに指定されている場合にのみ有効です。|
+|`Update`|省略可能な属性です。 (Visual Studio 2017 以降の .NET Core プロジェクトでのみ利用できます。)<br /><br /> 項目のメタデータを変更できます。通常、項目のグループが (ワイルドカードを使用するなどして) 最初に指定された後、特定の項目の既定のメタデータをオーバーライドするために使用されます。<br /><br /> この属性は、`Target` にない `ItemGroup` のアイテムに指定されている場合にのみ有効です。|
 
 ### <a name="child-elements"></a>子要素
 

@@ -5,15 +5,15 @@ author: ghogen
 manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: db4d114b743484e651d12831cfbe639fe41246ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027284"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283279"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用した Azure App Service への ASP.NET Core コンテナーのデプロイ
 
@@ -29,7 +29,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 - "ASP.NET および Web 開発" ワークロードと共に、最新バージョンの [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) をインストールする
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- *[ASP.NET および Web の開発]* ワークロードを含む [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) と *ASP.NET と Web 開発*ワークロード。
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) のインストール
 
@@ -53,10 +53,12 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 1. **[Web アプリケーション]** を選択します。
 1. **[HTTPS 用の構成]** チェックボックスを使用し、SSL サポートを使用するかどうかを選択します。
 1. **[Docker サポートを有効にする]** チェック ボックスをオンにします。
-1. コンテナーの種類を選択し、 **[作成]** をクリックします。 Windows コンテナーはコンテナーとして Azure App Service にデプロイできません。
+1. コンテナーの種類を選択し、 **[作成]** をクリックします。
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>コンテナーを Azure にデプロイする
+
+::: moniker range="vs-2017"
 
 1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
 1. 発行先ダイアログで、 **[App Service Linux]** または **[App Service]** を選択します。 これは、Web サーバーをホストするオペレーティング システムです。
@@ -81,12 +83,51 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 1. リソース グループやコンテナー レジストリなど、選択したすべての詳細が含まれる発行プロファイルが保存されます。
 
 1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー**でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
+:::moniker-end
+:::moniker range=">=vs-2019"
+1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
+1. **[発行]** ダイアログで、**Azure** をターゲットとして選択します。
+
+   ![発行ウィザードのスクリーンショット](media/deploy-app-service/publish-choices.png)
+
+1. **[特定のターゲット]** タブで、コンテナーの種類に応じて、**App Service (Windows)** や **App Service (Linux)** など、適切なデプロイ ターゲットを選択します。
+
+   ![発行ウィザードの [特定のターゲット] タブのスクリーンショット](media/deploy-app-service/publish-app-service-windows.png)
+
+1. 使用するサブスクリプションで適切な Azure アカウントにサインインしていない場合は、 **[発行]** ウィンドウの左上にあるボタンを使用してサインインします。
+
+1. 既存のアプリ サービスを使用するか、 **[Create new Azure App Service]\(新しい Azure App Service を作成する\)** リンクをクリックして新規に作成することができ ます。 ツリービュー内で既存のアプリ サービスを探すには、そのリソース グループを展開するか、 **[表示]** 設定を **[リソースの種類]** に変更して種類で並べ替えます。
+
+   ![アプリ サービスの選択を示すスクリーンショット](media/deploy-app-service/publish-app-service-windows2.png)
+
+1. 新規に作成した場合は、リソース グループとアプリ サービスが Azure 内に生成されます。 名前は、一意であれば、必要に応じて変更できます。
+
+   ![アプリ サービスの作成を示すスクリーンショット](media/deploy-app-service/publish-app-service-windows3.png)
+
+1. 既定のホスティング プランをそのまま使用することも、ホスティング プランを今すぐ、または後で Azure portal 内で変更することもできます。 既定値は、サポートされているリージョンのいずれかにある `S1` (小) です。 ホスティング プランを作成するには、 **[ホスティング プラン]** ドロップダウンの横にある **[新規]** を選択します。 **[ホスティング プラン]** ウィンドウが表示されます。
+
+   ![ホスティング プランのオプションを示すスクリーンショット](media/deploy-app-service/hosting-plan.png)
+
+   これらのオプションの詳細は、「[Azure App Service プランの概要](/azure/app-service/overview-hosting-plans)」で確認できます。
+
+1. これらのリソースの選択または作成が完了したら、 **[完了]** を選択します。 選択したリソース グループとアプリ サービス内でコンテナーが Azure にデプロイされます。 このプロセスには時間が少しばかりかかります。 完了すると、 **[発行]** タブにサイトの URL など、発行したものに関する情報が表示されます。
+
+   ![発行タブのスクリーンショット](media/deploy-app-service/publish-succeeded-windows.png)
+
+1. サイト リンクをクリックし、Azure でアプリが想定どおりに動作することを確認します。
+
+   ![Web アプリケーションのスクリーンショット](media/deploy-app-service/web-application-running2.png)
+
+1. リソース グループやアプリ サービスなど、選択したすべての詳細が含まれる発行プロファイルが保存されます。
+
+1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー**でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
+:::moniker-end
 
 ## <a name="view-container-settings"></a>コンテナー設定を表示する
 
 [Azure portal](https://portal.azure.com) では、デプロイした App Service を開くことができます。
 
-デプロイした App Service の設定を表示するには、* *[コンテナーの設定]* メニューを開きます (Visual Studio 2019 バージョン 16.4 以降を使用している場合)。
+デプロイした App Service の設定を表示するには、 **[コンテナーの設定]** メニューを開きます (Visual Studio 2019 バージョン 16.4 以降を使用している場合)。
 
 ![Azure portal の [コンテナーの設定] メニューのスクリーンショット](media/deploy-app-service/container-settings-menu.png)
 
@@ -100,7 +141,7 @@ Azure portal で **[リソース グループ]** をクリックし、リソー�
 
 ## <a name="next-steps"></a>次の手順
 
-[Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro) について詳しく説明します。
+[Azure App Service](/azure/app-service/overview) の詳細を確認します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,6 +1,6 @@
 ---
 title: 設定を同期する
-ms.date: 12/10/2018
+ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566788"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285206"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 
@@ -49,14 +49,14 @@ ms.locfileid: "75566788"
 
 Visual Studio の同期された設定は、既定でオンになっています。 あるコンピューター上の同期された設定をオフにするには、 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[アカウント]** ページに移動して、 **[Visual Studio にサインインしたときにデバイス間の設定を同期する]** チェック ボックスをオフにします。
 
-たとえば、コンピューター "A" 上の Visual Studio の設定を同期しないようにすると、コンピューター "A" で行った設定変更がコンピューター "B" やコンピューター "C" に表示されなくなります。 コンピューター "B" と "C" は、引き続き相互に同期しますが、コンピューター "A" とは同期しなくなります。
+たとえば、コンピューター "A" 上の Visual Studio の設定を同期しないようにする場合、コンピューター "A" で行った設定変更がコンピューター "B" やコンピューター "C" に表示されなくなります。 コンピューター "B" と "C" は、引き続き相互に同期しますが、コンピューター "A" とは同期しなくなります。
 
 > [!NOTE]
 > **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[アカウント]** ページのオプションをオフにすることによって設定を同期しないことを選択した場合、同じコンピューター上にある Visual Studio の他のバージョンまたはエディションには影響ありません。 Visual Studio のこれらのサイド バイ サイド インストールでは、(そこにあるオプションもオフにしない限り) 引き続きそれらの設定が同期されます。
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Visual Studio ファミリ製品およびエディション間での設定の同期
+## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Visual Studio IDE 製品およびエディション間での設定の同期
 
-設定は、"*サイド バイ サイド*" でインストールされている Visual Studio のバージョンおよびエディション間で同期されます。 設定は、Blend for Visual Studio を含む Visual Studio ファミリ製品の間でも同期されます。 ただし、個々のファミリ製品には Visual Studio で共有されない独自の設定が含まれる場合があります。 たとえば、コンピューター "A" 上の Blend for Visual Studio に固有の設定は、コンピューター "A" または "B" 上の Visual Studio とは共有されません。
+設定は、"*サイド バイ サイド*" でインストールされている Visual Studio のバージョンおよびエディション間で同期されます。 設定は、Blend for Visual Studio を含む Visual Studio IDE 製品の間でも同期されます。 ただし、個々の Visual Studio IDE 製品には、Visual Studio と共有されない独自の設定が含まれる場合があります。 たとえば、コンピューター "A" 上の Blend for Visual Studio に固有の設定は、コンピューター "A" または "B" 上の Visual Studio とは共有されません。
 
 ## <a name="side-by-side-synchronized-settings"></a>サイド バイ サイドで同期された設定
 
@@ -89,8 +89,9 @@ Visual Studio の異なるサイド バイ サイド インストールの間で
 
 すべての設定を既定にリセットするには、Visual Studio にサインインし、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、**設定のインポートとエクスポート ウィザード**を開きます。 **[すべての設定をリセット]** を選択し、ウィザードの残りの手順に従います。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [IDE をカスタマイズする](../ide/personalizing-the-visual-studio-ide.md)
 - [環境設定](../ide/environment-settings.md)
 - [[環境] - [アカウント] ([オプション] ダイアログ ボックス)](reference/accounts-environment-options-dialog-box.md)
+- [複数バージョンの Visual Studio をインストールする](../install/install-visual-studio-versions-side-by-side.md)

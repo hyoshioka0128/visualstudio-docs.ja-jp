@@ -2,18 +2,18 @@
 title: C++ 用の Microsoft 単体テスト フレームワークの使用
 description: C++ 用の Microsoft 単体テスト フレームワークを使用して、C++ コード用の単体テストを作成します。
 ms.date: 01/08/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75755570"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287117"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する
 
@@ -33,7 +33,7 @@ DLL でエクスポートされない関数をテストするときなど、場�
 
    1. [プロパティ ページ] ダイアログ ボックスで、 **[構成プロパティ]**  >  **[VC++ ディレクトリ]** の順に選択します。
 
-   1. 次の行の下向きの矢印をクリックし、 **[\<編集>]** を選択します。 次のパスを追加します。
+   1. 次の行の下向きの矢印をクリックし、 **[\<Edit>]** を選択します。 次のパスを追加します。
 
       | ディレクトリ | プロパティ |
       |-| - |

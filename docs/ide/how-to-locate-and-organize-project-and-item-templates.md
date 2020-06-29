@@ -1,7 +1,7 @@
 ---
 title: テンプレートの検索
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591048"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284244"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法: プロジェクト テンプレートと項目テンプレートを配置して整理する
 
@@ -60,7 +60,7 @@ ms.locfileid: "75591048"
 
 ### <a name="user-templates"></a>ユーザー テンプレート
 
-*.vstemplate* ファイルを含む圧縮 (*.zip*) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは新しいプロジェクトのダイアログ ボックスと新しい項目のダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
+*.vstemplate* ファイルを含む圧縮 ( *.zip*) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは新しいプロジェクトのダイアログ ボックスと新しい項目のダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
 
 ::: moniker range="vs-2017"
 
@@ -102,7 +102,7 @@ ms.locfileid: "75591048"
 
 1. ユーザー プロジェクト テンプレートのディレクトリのプログラミング言語フォルダーに、フォルダーを作成します。 たとえば、C# プロジェクト テンプレートに **HelloWorld** カテゴリを設定するには、次のディレクトリを作成します。
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
@@ -114,7 +114,7 @@ ms.locfileid: "75591048"
 
 1. ユーザー項目テンプレートのディレクトリのプログラミング言語フォルダーに、フォルダーを作成します。 たとえば、C# 項目テンプレートに **HelloWorld** カテゴリを設定するには、次のディレクトリを作成します。
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
@@ -156,7 +156,7 @@ ms.locfileid: "75591048"
 
 ::: moniker-end
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio テンプレート スキーマ参照 (機能拡張)](../extensibility/visual-studio-template-schema-reference.md)

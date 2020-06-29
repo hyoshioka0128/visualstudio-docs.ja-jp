@@ -1,7 +1,7 @@
 ---
-title: '方法 : ロード テストの結果リポジトリを選択する'
+title: '方法: ロード テストの結果リポジトリを選択する'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.connectstringmissing
 - vs.test.load.dialog.databaseconnectstring
@@ -15,14 +15,14 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589007"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287572"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>方法 : ロード テストの結果リポジトリを選択する
+# <a name="how-to-select-a-load-test-results-repository"></a>方法: ロード テストの結果リポジトリを選択する
 
 結果ストアはローカルの結果ストアに限定されていません。 多くの場合、ロード テストは複数のリモート エージェント コンピューターで実行されます。 エージェントをコントローラーと共に使用すると、単一のコンピューターを使用した場合と比較して、よりシミュレートされたロードを生成できます。 詳細については、「[テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)」を参照してください。
 
@@ -43,7 +43,7 @@ ms.locfileid: "75589007"
 4. **[サーバー名]** で、`LoadTest` スクリプトを実行したサーバーの名前を入力します。
 
     > [!TIP]
-    > ロード テスト ストアにローカル コンピューターの SQL Express を使用している場合は、「\<コンピューター名>\sqlexpress (例: **MyComputer\sqlexpress**)」と入力します。
+    > ロード テスト ストアにローカル コンピューターの SQL Express を使用している場合は、「\<computername>\sqlexpress (例: **MyComputer\sqlexpress**)」と入力します。
 
 5. **[サーバーにログオンする]** で、 **[Windows 認証を使用]** を選択します。 ユーザー名とパスワードを指定することもできますが、その場合は、 **[パスワードの保存]** を選択する必要があります。
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589007"
 
 8. **[テスト コントローラーの管理]** ダイアログ ボックスの **[閉じる]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ロード テストの結果リポジトリ内のロード テスト結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)

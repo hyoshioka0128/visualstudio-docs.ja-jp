@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 55092145d5760e235dc0c38c5a191760af2a2bc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183614"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279771"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -106,7 +106,7 @@ A: Azure ポータルからサポート インシデントを送信するには�
 
 詳細については、[テクニカル サポート](vs-tech-support.md)のドキュメントを参照してください。
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q:自分の Azure DevTest の個人クレジットを使用して作成した知的財産は、だれのものになりますか。
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q:自分の Azure DevTest の個人クレジットを使用して作成した知的財産は、だれのものになりますか。
 A: 従業員が生成した知的財産で、その会社が提供するリソースに対して作成されたものは、そのリソースを提供する会社の知的財産となります。 したがって、お客様がご自分の雇用主から Visual Studio サブスクリプションを受け取った場合は、その知的財産のポリシーが適用されます。 
 
 ## <a name="support-resources"></a>サポート リソース

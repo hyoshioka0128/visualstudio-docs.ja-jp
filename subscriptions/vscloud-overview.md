@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273947"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292933"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -52,7 +52,7 @@ Azure サブスクリプションに対して、[所有者](https://docs.microso
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクライバー ポータルに移動する](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-複数のサブスクリプションを購入した場合は、[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に進み、他のユーザーにサブスクリプションを割り当てることができます。
+複数のサブスクリプションを購入した場合は、[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に進み、他のユーザーにサブスクリプションを割り当てることができます。  今回が初めての購入の場合は、管理ポータルに[新しいサブスクリプションの追加](add-monthly-subs.md)が必要な可能性があります。
 
 > [!div class="mx-imgBorder"]
 > ![サブスクリプションを他のユーザーに割り当てる](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)

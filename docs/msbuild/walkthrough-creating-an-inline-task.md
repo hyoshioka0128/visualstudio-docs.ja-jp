@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631160"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289145"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>チュートリアル: インライン タスクの作成
 
@@ -250,14 +250,16 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
 ### <a name="handle-reserved-characters"></a>予約文字を使用する
 
- MSBuild パーサーによってインライン タスクが XML として処理されます。 XML で意味が予約されている文字 ("\<" や ">" など) は、.NET ソース コードではなく XML として検出されて処理されます。 コード式に予約文字を含めるには (`Files.Length > 0` など)、次のように `Code` 要素を記述して、その内容が CDATA 式に含まれるようにします。
+ MSBuild パーサーによってインライン タスクが XML として処理されます。 XML で意味が予約されている文字 ("\<" and ">" など) は、.NET ソース コードではなく XML として検出されて処理されます。 コード式に予約文字を含めるには (`Files.Length > 0` など)、次のように `Code` 要素を記述して、その内容が CDATA 式に含まれるようにします。
 
  ```xml
 <Code Type="Fragment" Language="cs">
   <![CDATA[
 
-  // Your code goes here.
-
+  if (Files.Length > 0)
+  {
+      // Your code goes here.
+  }
   ]]>
 </Code>
 ```

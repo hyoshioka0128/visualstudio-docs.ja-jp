@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638692"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285845"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>コマンド ラインからアプリケーションのパフォーマンスを測定する
 
@@ -33,7 +33,7 @@ ms.locfileid: "80638692"
 
 * コマンドライン ツールに関する知識
 
-* Visual Studio がインストールされていない状態でリモート マシン上のパフォーマンス情報を収集するには、リモート マシンに [Visual Studio 用のパフォーマンス ツール](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)をインストールします。 ツールのバージョンは、使用している Visual Studio のバージョンと一致している必要があります。
+* Visual Studio がインストールされていない状態でリモート マシン上のパフォーマンス情報を収集するには、リモート マシンに [Visual Studio 用のパフォーマンス ツール](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)をインストールします。 ツールのバージョンは、使用している Visual Studio のバージョンと一致している必要があります。
 
 ## <a name="collect-performance-data"></a>パフォーマンス データを収集する
 
@@ -73,10 +73,20 @@ Visual Studio Diagnostics CLI ツールを使用したプロファイリング�
 
 便宜上、その情報をエージェント構成ファイルに保管することができます。 構成ファイルは、少なくとも *.dll* の名前とその COM CLSID を含む *.json* ファイルです。 以下は、次のフォルダー内にある構成ファイルの例です。
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* CpuUsage 構成 (Base/High/Low)。[CPU 使用率](../profiling/cpu-usage.md)プロファイリング ツールについて収集されたデータに対応します。
-* DotNetObjectAlloc 構成 (Base/Low)。[.NET オブジェクト割り当てツール](../profiling/dotnet-alloc-tool.md)について収集されたデータに対応します。
+エージェントの構成ファイルをダウンロードして表示するには、以下のリンクを参照してください。
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+[CPU 使用率](../profiling/cpu-usage.md)プロファイル ツールについて収集されたデータに対応する CpuUsage 構成 (Base/High/Low)。
+[.NET オブジェクト割り当てツール](../profiling/dotnet-alloc-tool.md)について収集されたデータに対応する DotNetObjectAlloc 構成 (Base/Low)。
 
 Base/Low/High 構成はサンプリング レートを表します。 たとえば、Low は 100 サンプル/秒、High は 4,000 サンプル/秒です。
 

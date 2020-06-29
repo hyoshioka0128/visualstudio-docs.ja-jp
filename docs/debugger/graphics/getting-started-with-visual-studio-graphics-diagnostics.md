@@ -1,19 +1,19 @@
 ---
 title: グラフィックス診断の使用を開始する | Microsoft Docs
 ms.custom: seodec18
-ms.date: 05/26/2017
+ms.date: 06/08/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 473946353a1ea044464e409a75a838eaf52a1483
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557920"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286545"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の使用を開始する
 このセクションでは、まずグラフィックス診断を初めて使用するための準備をしてから、Direct3D アプリケーションのフレームをキャプチャして Graphics Analyzer でそれらを確認します。
@@ -52,12 +52,18 @@ ms.locfileid: "77557920"
  これで、必要なものがすべて揃い、グラフィックス診断の使用を開始する準備が整いました。 以下の手順に実行します。
 
 ### <a name="1---create-a-direct3d-app"></a>1 -、Direct3D アプリを作成する
- 独自の Direct3D アプリが既にある場合は、グラフィックス診断を試すことができます。 それ以外の場合は、次のいずれかを使用します。
 
+独自の Direct3D アプリが既にある場合は、グラフィックス診断を試すことができます。 それ以外の場合は、次のいずれかを使用します。
+
+::: moniker range=">=vs-2019"
+「[Direct3D ゲーム サンプル](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/)」からサンプルをダウンロードします。
+::: moniker-end
+::: moniker range="vs-2017"
 - Windows 10 用の **DirectX 11 アプリ (ユニバーサル Windows)** または **DirectX 12 アプリ (ユニバーサル Windows)** プロジェクト テンプレート。
 - Windows 10 用の [Direct3D 12 UAP サンプル](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)。
+::: moniker-end
 
-  先に進む前に、アプリをビルドできるかどうかを確認します。
+先に進む前に、アプリをビルドして実行できることを確認します。 **[ビルド]**  >  **[ソリューションのビルド]** を選択して、エラーなしでビルドできることを確認します。 次に、 **[デバッグ]**  >  **[デバッグなしで開始]** (**Ctrl + F5** キー) を選択して、正しく実行されることを確認します。 ツールでテストするマシンによっては、サンプルのプラットフォームとデバッグ ターゲットを調整する必要があります。 たとえば、Visual Studio ホスト マシンの x64 プラットフォームに対してテストするには、[ソリューション プラットフォーム] として **[x64]** 、デバッグ ターゲットとして **[ローカル マシン]** を選択します。 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2-グラフィックス診断セッションを開始する
  これで、最初のグラフィックス診断のセッションを開始する準備ができました。 Visual Studio のメイン メニューで、 **[デバッグ] > [グラフィックス] > [グラフィックス デバッグの開始]** の順に選択するか、**Alt + F5** キーを押します。 これで、グラフィックス診断の下でアプリが開始され、Visual Studio の診断セッションのウィンドウが表示されます。

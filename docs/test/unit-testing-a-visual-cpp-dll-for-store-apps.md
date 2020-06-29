@@ -1,18 +1,18 @@
 ---
 title: UWP アプリ用の C++ DLL をテストする方法
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77274446"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285610"
 ---
 # <a name="how-to-test-a-c-dll"></a>C++ DLL をテストする方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "77274446"
 
 ::: moniker range="vs-2017"
 
-まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 **[新しいプロジェクト]** ダイアログで **[インストール済み]**、**[Visual C++]** の順に展開し、**[Windows ユニバーサル]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
+まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 **[新しいプロジェクト]** ダイアログで **[インストール済み]** 、 **[Visual C++]** の順に展開し、 **[Windows ユニバーサル]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
 
 ::: moniker-end
 
@@ -130,7 +130,7 @@ ms.locfileid: "77274446"
 
     2. **RooterLib の [プロパティ ページ]** ダイアログ ボックスで **[構成プロパティ]** 、 **[C++]** の順に展開し、 **[プリプロセッサ]** を選択します。
 
-    3. **[プリプロセッサの定義]** ボックスの一覧の **[\<編集...>]** を選択し、**[プリプロセッサの定義]** ダイアログ ボックスに `ROOTERLIB_EXPORTS` を追加します。
+    3. **[プリプロセッサの定義]\<Edit...> ボックスの一覧の** [ **]** を選択し、 **[プリプロセッサの定義]** ダイアログ ボックスに `ROOTERLIB_EXPORTS` を追加します。
 
 4. 宣言された関数の最小限の実装を追加します。 *RooterLib.cpp* を開き、次のコードを追加します。
 

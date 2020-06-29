@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167302"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288924"
 ---
 # <a name="exec-task"></a>Exec タスク
 
@@ -41,7 +41,7 @@ ms.locfileid: "82167302"
 |`CustomErrorRegularExpression`|省略可能な `String` 型のパラメーターです。<br /><br /> ツールの出力でエラー行を示すために使う正規表現を指定します。 これは、普通とは異なる書式設定の出力を生成するツールに便利です。<br /><br />既定値: `null` (カスタム処理はありません)。|
 |`CustomWarningRegularExpression`|省略可能な `String` 型のパラメーターです。<br /><br /> ツールの出力で警告行を示すために使う正規表現を指定します。 これは、普通とは異なる書式設定の出力を生成するツールに便利です。<br /><br />既定値: `null` (カスタム処理はありません)。|
 |`EchoOff`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクは `Command` の拡張形式を MSBuild ログに出力しません。<br /><br />既定値:`false`。|
-|`ExitCode`|省略可能な `Int32` 型の読み取り専用出力パラメーターです。<br /><br /> 実行したコマンドの終了コードを示します。|
+|`ExitCode`|省略可能な `Int32` 型の読み取り専用出力パラメーターです。<br /><br /> 実行したコマンドから返される終了コードを指定します。ただし、タスクによってエラーが記録され、プロセスの終了コードが 0 (成功) の場合、`ExitCode` は -1 に設定されます。|
 |`IgnoreExitCode`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクは実行したコマンドで提供されている終了コードを無視します。 それ以外の場合、実行されたコマンドが 0 以外の終了コードを返すときは、タスクは `false` を返します。<br /><br />既定値:`false`。|
 |`IgnoreStandardErrorWarningFormat`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `false` の場合は、標準エラー/警告の形式に一致する出力行を選び、エラー/警告としてログに記録します。 `true` の場合は、この動作は無効になります。<br /><br />既定値:`false`。|
 |`Outputs`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> タスクからの出力項目を含みます。 `Exec` タスク自体はこれらを設定しません。 代わりに、タスクが設定したかのようにユーザーが提供して、プロジェクトの後の処理で使うことができます。|

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf712cf26c7d2dbc5924aa495a7008fb790c33d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633396"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289249"
 ---
 # <a name="msbuild-concepts"></a>MSBuild の概念
 
@@ -33,5 +33,6 @@ MSBuild には、ビルド プラットフォームでソフトウェアを構�
 | [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md) | 特定のコンテキストで特別な使い方をするために MSBuild によって予約されている、いくつかの文字をエスケープする方法について説明します。 |
 | [チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | テキスト エディターのみを使用して、基本的なプロジェクト ファイルをインクリメント方式で作成する方法について説明します。 |
 | [チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md) | MSBuild のビルド ブロックについて説明し、Visual Studio 統合開発環境 (IDE) を閉じずに MSBuild プロジェクトを記述、操作、およびデバッグする方法について説明します。 |
+| [MSBuild によってプロジェクトがビルドされる方法](build-process-overview.md) | MSBuild 内で使用される内部ビルド プロセスについて説明します |
 | [MSBuild リファレンス](../msbuild/msbuild-reference.md) | リファレンス情報を示すドキュメントへのリンクを提供します。 |
 | [MSBuild](../msbuild/msbuild.md) | プロジェクト ファイルの XML スキーマの概要を説明し、ソフトウェアを構築するプロセスを制御する方法を示します。 |

@@ -1,7 +1,7 @@
 ---
 title: 複数ファイルの項目テンプレートを作成する
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593734"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284426"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>方法 : 複数ファイルの項目テンプレートを作成する
+# <a name="how-to-create-multi-file-item-templates"></a>方法: 複数ファイルの項目テンプレートを作成する
 
 項目テンプレートには 1 つの項目のみを指定できますが、1 つの項目が複数のファイルから構成されている場合があります。 たとえば、Windows フォーム項目テンプレートには、次の 3 つのファイルが必要です。
 
@@ -30,7 +30,7 @@ ms.locfileid: "75593734"
 
 ## <a name="use-the-export-template-wizard"></a>[テンプレートのエクスポート] ウィザードを使用する
 
-複数ファイルの項目テンプレートは、単一ファイルの項目テンプレートと同じ方法で作成できます。 「[方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。 ウィザードの **[エクスポートする項目の選択]** ページで、依存ファイル (Windows フォームのフォーム ファイルなど) を持つファイルを選択します。 依存ファイル (デザイナー ファイルやリソース ファイルなど) が、ウィザードによってテンプレートに自動的に追加されます。
+複数ファイルの項目テンプレートは、単一ファイルの項目テンプレートと同じ方法で作成できます。 「[方法:項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。 ウィザードの **[エクスポートする項目の選択]** ページで、依存ファイル (Windows フォームのフォーム ファイルなど) を持つファイルを選択します。 依存ファイル (デザイナー ファイルやリソース ファイルなど) が、ウィザードによってテンプレートに自動的に追加されます。
 
 ## <a name="manually-create-a-multi-file-item-template"></a>複数ファイルの項目テンプレートを手動で作成する
 
@@ -57,7 +57,7 @@ ms.locfileid: "75593734"
 
    選択したファイルは *.zip* ファイルに圧縮されます。
 
-1. ユーザー項目テンプレートの場所に *.zip* ファイルをコピーします。 既定のディレクトリは、 *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates* です。 詳細については、「[方法: プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+1. ユーザー項目テンプレートの場所に *.zip* ファイルをコピーします。 既定では、このディレクトリは *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates* です。 詳細については、「[方法:テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 1. Visual Studio をいったん閉じて開きなおします。
 
@@ -92,9 +92,9 @@ ms.locfileid: "75593734"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
 - [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
 - [テンプレート パラメーター](../ide/template-parameters.md)
-- [方法 : テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)
+- [方法: テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)

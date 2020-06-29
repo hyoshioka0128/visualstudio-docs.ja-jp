@@ -1,6 +1,6 @@
 ---
 title: Delete タスク | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Delete
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634280"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288911"
 ---
 # <a name="delete-task"></a>Delete タスク
 
@@ -33,13 +33,13 @@ ms.locfileid: "77634280"
 
 `Delete` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`DeletedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 正常に削除されたファイルを指定します。|
 |`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 削除するファイルを指定します。|
-|`TreatErrorsAsWarnings`|省略可能な `Boolean` 型のパラメーターです<br /><br /> `true` の場合、エラーは警告として記録されます。 既定値は `false`です。|
+|`TreatErrorsAsWarnings`|省略可能な `Boolean` 型のパラメーターです<br /><br /> `true` の場合、エラーは警告として記録されます。 既定値は `false` です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
@@ -48,22 +48,59 @@ ms.locfileid: "77634280"
 
 ## <a name="example"></a>例
 
-次の例では、*MyApp.pdb* ファイルを削除します。
+次の例では、`DeleteDebugSymbolFile` ターゲットをビルドするときにファイル *MyApp.pdb* を削除します。
 
 ```xml
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
 
     <PropertyGroup>
-        <AppName>MyApp</AppName>
+        <AppName>ConsoleApp1</AppName>
     </PropertyGroup>
 
-    <Target Name="DeleteFiles">
-        <Delete Files="$(AppName).pdb" />
+    <Target Name="DeleteDebugSymbolFile">
+        <Message Text="Deleting $(OutDir)$(AppName).pdb"/>
+        <Delete Files="$(OutDir)$(AppName).pdb" />
     </Target>
+  
 </Project>
+
 ```
 
-## <a name="see-also"></a>参照
+削除されたファイルを追跡する必要がある場合は、次のように、項目名を使用して `TaskParameter` を `DeletedFiles` に設定します。
 
+```xml
+      <Target Name="DeleteDebugSymbolFile">
+        <Delete Files="$(OutDir)$(AppName).pdb" >
+              <Output TaskParameter="DeletedFiles" ItemName="DeletedList"/>
+        </Delete>
+        <Message Text="Deleted files: '@(DeletedList)'"/>
+    </Target>
+```
+
+`Delete` タスクでワイルドカードを直接使用する代わりに、削除するファイルの `ItemGroup` を作成し、それに対して `Delete` タスクを実行します。 ただし、`ItemGroup` は慎重に配置してください。 `ItemGroup` をプロジェクト ファイルの最上位レベルに配置すると、ビルドの開始前の早い段階で評価されるため、ビルド プロセスの一部としてビルドされたファイルは含まれません。 そのため、削除する項目のリストを作成する `ItemGroup` を、`Delete` タスクの近くのターゲットに配置します。 ドライブのルートから始まるパスを持つ項目リストを作成しないように、プロパティが空でないことを確認する条件を指定します。
+
+`Delete` タスクはファイルを削除するためのものです。 ディレクトリを削除する場合は、[RemoveDir](removedir-task.md) を使用します。
+
+`Delete` タスクには、読み取り専用ファイルを削除するオプションは用意されていません。 読み取り専用ファイルを削除するには、`Exec` タスクを使用して `del` コマンドまたは同等のものを実行し、適切なオプションを使用して読み取り専用ファイルの削除を有効にします。 コマンド ラインには長さの制限があるため、入力項目リストの長さに注意する必要があります。また、次の例のように、スペースを含むファイル名を処理するようにします。
+
+```xml
+<Target Name="DeleteReadOnly">
+  <ItemGroup>
+    <FileToDelete Include="read only file.txt"/>
+  </ItemGroup>
+  <Exec Command="del /F /Q &quot;@(FileToDelete)&quot;"/>
+</Target>
+```
+
+一般に、ビルド スクリプトを作成するときは、削除が論理的に `Clean` 操作の一部であるかどうかを考慮します。 通常の `Clean` 操作の一部としてクリーニングするファイルを設定する必要がある場合は、それらを `@(FileWrites)` リストに追加すると、次の `Clean` で削除されます。 さらにカスタム処理が必要な場合は、ターゲットを定義し、属性 `BeforeTargets="Clean"` または `AfterTargets="Clean"` を設定して実行するように指定するか、`BeforeClean` または `AfterClean` ターゲットのカスタム バージョンを定義します。 「[ビルドのカスタマイズ](customize-your-build.md)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+- [RemoveDir タスク](removedir-task.md)
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

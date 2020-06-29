@@ -1,6 +1,6 @@
 ---
 title: エディターのフォントと色を変更する
-ms.date: 11/26/2018
+ms.date: 06/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595567"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283705"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>方法: Visual Studio でエディターのフォントと色を変更する
 
@@ -31,20 +31,29 @@ ms.locfileid: "75595567"
 
 - **[前景色]** 、 **[背景色]** 、 **[太字]** の各オプションは、テキスト要素の種類ごとに設定できます。 たとえば、 **[コメント]** と **[ブックマーク]** について色を変更して **[太字]** を選んでも、他の種類のテキスト要素は影響を受けません。
 
+> [!IMPORTANT]
+> コード エディターだけでなく、IDE のフォントと色をカスタマイズする方法については、「 **[方法:Visual Studio で使用するフォントと色を変更する](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** 」のページを参照してください。
+
 ## <a name="change-the-default-font-face-size-and-colors"></a>既定のフォント フェイス、サイズ、色を変更する
 
-1. **[ツール]** メニューの **[オプション]** を選択します。 **[環境]** で、[[フォントおよび色]](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) を選択します。
+1. **[ツール]** メニューの **[オプション]** を選択します。 **[環境]** で、 **[フォントおよび色]** を選択します。
 
-2. **[設定の表示]** の **[テキスト エディター]** を選びます。
+1. **[設定の表示]** の **[テキスト エディター]** を選びます。
 
-3. **[フォント]** および **[サイズ]** オプションで、すべてのエディター内のすべてのテキスト要素のフォント フェイスとサイズを変更します。
+   ![エディター内のフォントと色を変更するための [オプション] ダイアログ ボックスのスクリーンショット](../../ide/media/fonts-colors-text-editor.png "エディター内のフォントと色を変更するための [オプション] ダイアログ ボックスのスクリーンショット")
 
-4. **[表示項目]** で適切な項目を選択し、 **[前景色]** および **[背景色]** オプションを変更します。
+1. **[フォント]** および **[サイズ]** オプションで、すべてのエディター内のすべてのテキスト要素のフォント フェイスとサイズを変更します。
+
+1. **[表示項目]** で適切な項目を選択し、 **[前景色]** および **[背景色]** オプションを変更します。
 
     > [!TIP]
     > 既定の設定にリセットするには、 **[既定値を使用]** をクリックします。
 
-5. **[OK]** をクリックします。
+1. **[OK]** をクリックします。
+
+## <a name="next-steps"></a>次の手順
+
+**[オプション]** ダイアログ ボックスを使用して IDE に対して行うことができるフォントおよび色の変更の詳細については、「[[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)」のページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 

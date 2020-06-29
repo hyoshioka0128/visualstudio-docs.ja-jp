@@ -2,7 +2,7 @@
 title: プロファイリング ツールを使用してパフォーマンスを測定する
 description: Visual Studio で利用可能な各種診断ツールについて簡単に説明します。
 ms.custom: mvc
-ms.date: 05/18/2018
+ms.date: 06/03/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,16 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412033"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280249"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>クイック スタート: プロファイリング ツールの概要
 
-Visual Studio にはさまざまなプロファイリング ツールがあります。各種アプリの多様な問題を診断できます。
+Visual Studio にはさまざまなプロファイリング ツールがあります。各種アプリの多様な問題を診断できます。 この記事では、最も一般的なプロファイリング ツールを簡単に紹介します。
+
+## <a name="view-performance-while-debugging"></a>デバッグ中のパフォーマンスの表示
 
 [診断ツール] ウィンドウのプロファイリング ツールには、デバッグ セッション中にアクセスできます。 [診断ツール] ウィンドウは、オフにしていない限り自動的に表示されます。 このウィンドウを表示するには、 **[デバッグ]、[ウィンドウ]、[診断ツールの表示]** の順にクリックします。 ウィンドウを開いている状態で、データを収集するツールを選択できます。
 
@@ -31,7 +33,7 @@ Visual Studio にはさまざまなプロファイリング ツールがあり�
 
 ![[診断ツール] の [概要] ビュー](../profiling/media/prof-tour-cpu-and-memory-graph.gif "診断ツール: 概要")
 
-**[診断ツール]** ウィンドウはアプリをプロファイリングする方法として人気がありますが、リリース ビルドではアプリの事後分析を行うこともできます。 各種手法の詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。 プロファイリング ツールがサポートする他のアプリの種類については、「[使用するツール](#which-tool-should-i-use)」のセクションをご覧ください。
+**[診断ツール]** ウィンドウはアプリをプロファイリングする一般的な方法ですが、リリース ビルドでは代わりにアプリの事後分析を行うこともできます。 各種手法の詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。 プロファイリング ツールがサポートする他のアプリの種類については、「[使用するツール](#which-tool-should-i-use)」のセクションをご覧ください。
 
 > [!NOTE]
 > Windows 7 以降では事後検証ツールを使用できます。 Windows 8 以降では、デバッガーを使用してプロファイル ツールを実行する必要があります ( **[診断ツール]** ウィンドウ)。
@@ -59,7 +61,7 @@ PerfTips には、診断ツールの **[イベント]** ビューに表示され
 
 ![[診断ツール] での CPU 使用率の有効化](../profiling/media/prof-tour-enable-cpu-profiling.png "診断ツール: CPU 使用率の有効化")
 
-このツールを最も効果的に使用するには、コードにブレークポイントを 2 つ設定します。関数の始めと終わりに 1 つずつ設定するか、分析するコードの領域に設定します。 2 つ目のブレークポイントで止まったとき、プロファイリング データを調べます。
+このツールを使用する 1 つの方法は、コードにブレークポイントを 2 つ設定することです。関数の始めと終わりに 1 つずつ設定するか、分析するコードの領域に設定します。 2 つ目のブレークポイントで止まったとき、プロファイリング データを調べます。
 
 **CPU 使用率**ビューには、関数が実行時間順に一覧表示されます。実行時間が最も長い関数が一番上に表示されます。 パフォーマンス上のボトルネックが発生している関数を見つけるのに役立ちます。
 
@@ -89,15 +91,9 @@ CPU 使用量やメモリ使用量などのプロファイル ツールはデバ
 
 ![パフォーマンス プロファイラー](../profiling/media/prof-tour-performance-profiler.png "パフォーマンス プロファイラー")
 
-**[デバッグ]**  >  **[パフォーマンス プロファイラー]** の順に選択し、パフォーマンス プロファイラーを開きます。
+**[デバッグ]**  >  **[パフォーマンス プロファイラー]** を選択して (または **Alt + F2** キーを押して)、パフォーマンス プロファイラーを開きます。
 
-このウィンドウでは、シナリオによっては、複数のプロファイリング ツールを選択できます。 CPU 使用率などのツールでは、補足データを提供できることがあります。分析に役立てることができます。 また、[コマンドライン プロファイラー](../profiling/profile-apps-from-command-line.md)を使用して、複数のプロファイリング ツールを使用するシナリオを有効にすることもできます。
-
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI のパフォーマンスとアクセシビリティのイベントを調べる (UWP)
-
-UWP アプリの **[診断ツール]** ウィンドウで、 **[UI 分析]** を有効にすることができます。 このツールはパフォーマンスとアクセシビリティに関する一般問題を探し出し、デバッグ中に **[イベント]** ビューに表示します。 イベントの説明に、問題解決に役に立つ情報があります。
-
-![[診断ツール] で UI 分析イベントを表示する](../profiling/media/prof-tour-ui-analysis.png "診断ツール: UI 分析イベントの表示")
+シナリオによっては、このウィンドウで[複数のプロファイリング ツール](../profiling/use-multiple-profiler-tools-simultaneously.md)を選択できます。 CPU 使用率などのツールでは、補足データを提供できることがあります。分析に役立てることができます。 また、[コマンドライン プロファイラー](../profiling/profile-apps-from-command-line.md)を使用して、複数のプロファイリング ツールを使用するシナリオを有効にすることもできます。
 
 ## <a name="analyze-resource-consumption-xaml"></a>リソース消費量を分析する (XAML)
 
@@ -110,6 +106,40 @@ Windows デスクトップ WPF アプリや UWP アプリなど、XAML アプリ
 タイムライン詳細ビューでは、アクティビティの種類 (あるいは、関連している UI 要素) などの情報とアクティビティの継続時間を確認できます。 たとえば、この図では、グリッド コントロールの**レイアウト** イベントに 57.53 ミリ秒かかっています。
 
 詳細については、[アプリケーションのタイムライン](../profiling/application-timeline.md)に関するページを参照してください。
+
+::: moniker range=">=vs-2019"
+
+## <a name="examine-application-events"></a>アプリケーション イベントを確認する
+
+汎用[イベント ビューアー](../profiling/events-viewer.md)を使用すると、モジュールの読み込み、スレッドの開始、システム構成などのイベントの一覧を通じてアプリケーションのアクティビティを表示できます。これにより、Visual Studio プロファイラー内でのアプリケーションのパフォーマンスをより適切に診断できます。 このツールは、パフォーマンス プロファイラー内で使用できます。 **[デバッグ]**  >  **[パフォーマンス プロファイラー]** を選択して (または **Alt + F2** キーを押して)、パフォーマンス プロファイラーを開きます。
+
+このツールでは、各イベントがリスト ビューに表示されます。 列には、イベント名、タイムスタンプ、プロセス ID など、各イベントに関する情報が表示されます。
+
+![イベント ビューアー トレース](../profiling/media/eventviewertrace.png "イベント ビューアー トレース")
+
+## <a name="analyze-asynchronous-code-net"></a>非同期コードを分析する (.NET)
+
+[.NET Async ツール](../profiling/analyze-async.md)を使用すると、アプリケーション内の非同期コードのパフォーマンスを分析できます。 このツールは、パフォーマンス プロファイラー内で使用できます。 **[デバッグ]**  >  **[パフォーマンス プロファイラー]** を選択して (または **Alt + F2** キーを押して)、パフォーマンス プロファイラーを開きます。
+
+このツールでは、各非同期操作がリスト ビューに表示されます。 非同期操作の開始時刻、終了時刻、合計時間などの情報を確認できます。
+
+![.NET Async ツールが停止](../profiling/media/async-tool-opened.png ".NET Async ツールが停止")
+
+## <a name="analyze-database-performance-net-core"></a>データベース パフォーマンスを分析する (.NET Core)
+
+ADO.NET または Entity Framework Core を使用する .NET Core アプリの場合、[データベース ツール](../profiling/analyze-database.md)を使用すると、診断セッション中にアプリケーションが行うデータベース クエリを記録できます。 その後、個々のクエリに関する情報を分析して、アプリのパフォーマンスを向上させられる場所を見つけることができます。 このツールは、パフォーマンス プロファイラー内で使用できます。 **[デバッグ]**  >  **[パフォーマンス プロファイラー]** を選択して (または **Alt + F2** キーを押して)、パフォーマンス プロファイラーを開きます。
+
+このツールでは、各クエリがリスト ビューに表示されます。 クエリの開始時刻や期間などの情報を確認できます。
+
+![Allocation](./media/db-gotosource.png "割り当て")
+
+::: moniker-end
+
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI のパフォーマンスとアクセシビリティのイベントを調べる (UWP)
+
+UWP アプリの **[診断ツール]** ウィンドウで、 **[UI 分析]** を有効にすることができます。 このツールはパフォーマンスとアクセシビリティに関する一般問題を探し出し、デバッグ中に **[イベント]** ビューに表示します。 イベントの説明に、問題解決に役に立つ情報があります。
+
+![[診断ツール] で UI 分析イベントを表示する](../profiling/media/prof-tour-ui-analysis.png "診断ツール: UI 分析イベントの表示")
 
 ## <a name="analyze-gpu-usage-direct3d"></a>GPU の使用状況を分析する (Direct3D)
 
@@ -168,13 +198,16 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 ::: moniker range=">=vs-2019"
 |パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
+|[パフォーマンスのヒント](../profiling/perftips.md)|可|可|可|
 |[CPU 使用率](../profiling/cpu-usage.md)|可|可|可|
 |[メモリ使用量](../profiling/memory-usage.md)|可|可|可|
 |[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|可|
 |[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|可|Ｘ|
 |[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|可|Ｘ|
-|[パフォーマンスのヒント](../profiling/perftips.md)|可|XAML の場合は可、HTML の場合は不可|可|
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|可|Ｘ|可|
+|[イベント ビューアー](../profiling/perftips.md)|可|可|可|
+|[.NET Async](../profiling/perftips.md)|はい (.NET のみ)|可|可|
+|[データベース](../profiling/perftips.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
+|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|Ｘ|Ｘ|Ｘ|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
 ::: moniker-end
 

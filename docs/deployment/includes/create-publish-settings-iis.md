@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143530"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292109"
 ---
 
 1. IIS 管理コンソールを閉じて、もう一度開き、UI の更新された構成オプションを表示します。
@@ -12,6 +12,8 @@ ms.locfileid: "68143530"
 2. IIS で **[既定の Web サイト]** を右クリックして、 **[展開]**  >  **[Web 配置による発行の有効化]** の順に選びます。
 
     ![Web 配置の構成](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+
+   **[配置]** メニューが表示されない場合は、前のセクションを参照して Web 配置が実行されていることを確認します。
 
 3. **[Web 配置による発行の有効化]** ダイアログ ボックスで、この設定を確認します。
 

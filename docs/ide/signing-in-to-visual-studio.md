@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132722"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285297"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio にサインイン
 
@@ -23,6 +23,13 @@ Visual Studio の開発エクスペリエンスをカスタマイズし、最適
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[Visual Studio for Mac にサインインする](/visualstudio/mac/signing-in)」を参照してください。
+
+::: moniker range="vs-2017"
+
+> [! 警告] Visual Studio 2017 を使用して、条件付きアクセス用に構成されたリソースにアクセスすると、認証エクスペリエンスが低下し、同じ Visual Studio セッション内で再認証が何度も要求されることがあります。 
+> 条件付きアクセス用に構成されたリソースを操作するには、Visual Studio 2019 Update 16.6 以降にアップグレードします。 詳細については、「[多要素認証が必要なアカウントで Visual Studio を使用する方法](work-with-multi-factor-authentication.md)」を参照してください。
+
+::: moniker-end
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio にサインインする必要がある理由
 
