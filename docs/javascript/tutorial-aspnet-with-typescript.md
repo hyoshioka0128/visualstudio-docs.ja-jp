@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183094"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283568"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
@@ -162,7 +162,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
     `lastName` を選択して、名前をコードにもう一度追加します。
 
-1. *Views/Home* フォルダーを開き、*index.html* を開きます。
+1. *Views/Home* フォルダーを開き、*Index.cshtml* を開きます。
 
 1. ファイルの末尾に次の HTML コードを追加します。
 

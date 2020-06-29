@@ -1,7 +1,7 @@
 ---
 title: 参照マネージャーで参照を追加する
 ms.date: 08/02/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595311"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284727"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
 
@@ -127,9 +127,9 @@ EnvDTE 名前空間 (<xref:EnvDTE>、<xref:EnvDTE80>、<xref:EnvDTE90>、<xref:E
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  \<*VersionMinimum*\> は、適用されるフレームワークの最小バージョンです。 \<*VersionMinimum*\> が v3.0 の場合、*AssemblyFoldersEx* で指定したフォルダーは、.NET Framework 3.0 以降を対象にしたプロジェクトに適用されます。
+  *\<VersionMinimum\>* は、適用されるフレームワークの最小バージョンです。 *\<VersionMinimum\>* が v3.0 の場合、*AssemblyFoldersEx* で指定したフォルダーは、.NET Framework 3.0 以降を対象にしたプロジェクトに適用されます。
 
-  \<*AssemblyLocation*\> は、*C:\MyAssemblies* など、 **[参照の追加]** ダイアログ ボックスに表示されるアセンブリのディレクトリです。
+  *\<AssemblyLocation\>* は、*C:\MyAssemblies* など、 **[参照の追加]** ダイアログ ボックスに表示されるアセンブリのディレクトリです。
 
   `HKEY_LOCAL_MACHINE` ノードにレジストリ キーを作成すると、すべてのユーザーが特定の場所にあるアセンブリを **[参照の追加]** ダイアログ ボックスに表示できるようになります。 `HKEY_CURRENT_USER` ノードにレジストリ キーを作成すると、現在のユーザーの設定にのみ影響します。
 
@@ -186,11 +186,11 @@ SDK は、Visual Studio が単一のコンポーネントとして取り扱う�
 
 SDK を参照してプロジェクトに追加することはできません。 ファイル (たとえば、アセンブリまたは *.winmd*) のみを参照してプロジェクトに追加することができます。
 
-WinMD に対してファイル参照を行う場合に予期されるレイアウトは、 *\<FileName>.winmd*、 *\<FileName>.dll*、 *\<FileName>.pri* というすべてのファイルが並行して配置された状態です。 次のシナリオで WinMD を参照する場合は、不完全なファイル セットがプロジェクトの出力ディレクトリにコピーされるため、ビルド エラーとランタイム エラーが発生します。
+WinMD に対するファイル参照を行う場合に予期されるレイアウトは、 *\<FileName>.winmd*、 *\<FileName>.dll*、および *\<FileName>.pri* というすべてのファイルが並行して配置されることです。 次のシナリオで WinMD を参照する場合は、不完全なファイル セットがプロジェクトの出力ディレクトリにコピーされるため、ビルド エラーとランタイム エラーが発生します。
 
 - **ネイティブ コンポーネント**: ネイティブ プロジェクトは、分離された名前空間ごとに 1 つの WinMD を作成し、実装全体を含む 1 つの DLL を作成します。 各 WinMD は、共通点のない名前になります。 このネイティブ コンポーネント ファイルを参照するときに、MSBuild は、共通点のない名前を付けられた複数の WinMD が 1 つのコンポーネントを形成することを認識しません。 その結果、同じ名前を付けられた *\<FileName>.dll* と *\<FileName>.winmd* のみがコピーされ、ランタイム エラーが発生します。 この問題を回避するには、拡張機能 SDK を作成します。 詳しくは、「[ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)」をご覧ください。
 
-- **コントロールの使用**: XAML コントロールは、少なくとも *\<FileName>.winmd*、 *\<FileName>.dll*、 *\<FileName>.pri*、 *\<XamlName>.xaml*、および *\<ImageName>.jpg* で構成されます。 プロジェクトをビルドするときに、ファイル参照に関連付けられたリソース ファイルはプロジェクトの出力ディレクトリにコピーされず、 *\<FileName>.winmd*、 *\<FileName>.dll*、および *\<FileName>.pri* のみがコピーされます。 リソースの *\<XamlName>.xaml* および *\<ImageName>.jpg* が見つからないことをユーザーに通知するために、ビルド エラーが記録されます。 ビルド、デバッグ、および実行時の動作を成功させるには、ユーザーはプロジェクトの出力ディレクトリにこれらのリソース ファイルを手動でコピーする必要があります。 この問題を回避するには、「[ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)」の手順に従って拡張機能 SDK を作成するか、プロジェクト ファイルを編集して次のプロパティを追加します。
+- **コントロールの使用**: 少なくとも XAML コントロールは、 *\<FileName>.winmd*、 *\<FileName>.dll*、 *\<FileName>.pri*、 *\<XamlName>.xaml*、および *\<ImageName>.jpg* によって形成されます。 プロジェクトをビルドするときに、ファイル参照に関連付けられたリソース ファイルはプロジェクトの出力ディレクトリにコピーされず、 *\<FileName>.winmd*、 *\<FileName>.dll*、および *\<FileName>.pri* のみがコピーされます。 リソースの *\<XamlName>.xaml* と *\<ImageName>.jpg* が見つからないことをユーザーに通知するために、ビルド エラーが記録されます。 ビルド、デバッグ、および実行時の動作を成功させるには、ユーザーはプロジェクトの出力ディレクトリにこれらのリソース ファイルを手動でコピーする必要があります。 この問題を回避するには、「[ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)」の手順に従って拡張機能 SDK を作成するか、プロジェクト ファイルを編集して次のプロパティを追加します。
 
     ```xml
     <PropertyGroup>

@@ -1,7 +1,7 @@
 ---
 title: Python コードのデバッグ
 description: Visual Studio には、ブレークポイントの設定、ステップ実行、値の検査、例外の確認、対話型ウィンドウでのデバッグなど、Python コード用の高度なデバッグ機能が用意されています。
-ms.date: 03/13/2019
+ms.date: 05/12/2020
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307173"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285648"
 ---
 # <a name="debug-your-python-code"></a>Python コードのデバッグ
 
@@ -147,7 +147,7 @@ HTML、XML、JSON のビジュアライザーは別のポップアップ ウィ�
 | **スクリプトの引数** | これらの引数は、スクリプトを起動するコマンドのスクリプト ファイル名の後ろに追加されます。 ここで指定した引数は、スクリプトで、最初の引数は `sys.argv[1]`、2 番目の引数は `sys.argv[2]` (その後も同様) として利用できます。 |
 | **インタプリターの引数** | これらの引数は、ランチャーのコマンドラインのスクリプト名の前に追加されます。 警告をコントロールする `-W ...`、プログラムを少し最適化する `-O`、バッファーなし IO を使用する `-u` などがよく使用されます。 IronPython のユーザーは、多くの場合、このフィールドを使用して `-X` オプションを渡します (`-X:Frames` や `-X:MTA` など)。 |
 | **インタープリターのパス** | 現在の環境に関連付けられているパスをオーバーライドします。 非標準のインタープリターを使用してスクリプトを起動する場合に便利です。 |
-| **環境変数** | 複数行のテキスト ボックスで、\<名前>=\<値> の形式でエントリを追加します。 この設定は最後に適用されます。既存のグローバル環境変数よりも優先され、 **[検索パス]** の設定に従って `PYTHONPATH` が設定された後に適用されるため、これらの変数を手動でオーバーライドするために使用できます。 |
+| **環境変数** | 複数行のテキスト ボックスで、\<NAME>=\<VALUE> の形式でエントリを追加します。 この設定は最後に適用されます。既存のグローバル環境変数よりも優先され、 **[検索パス]** の設定に従って `PYTHONPATH` が設定された後に適用されるため、これらの変数を手動でオーバーライドするために使用できます。 |
 
 ## <a name="immediate-and-interactive-windows"></a>イミディエイト ウィンドウと対話型ウィンドウ
 
@@ -186,7 +186,7 @@ HTML、XML、JSON のビジュアライザーは別のポップアップ ウィ�
 
 ## <a name="use-the-legacy-debugger"></a>レガシ デバッガーを使用します
 
-Visual Studio 2017 バージョン 15.8 以降では、ptvsd バージョン 4.1 以降に基づくデバッガーが使用されます。 このバージョンの ptvsd は Python 2.7 および Python 3.5 以降と互換性があります。 Python 2.6、3.1 から 3.4、または IronPython を使用する場合、Visual Studio に "**デバッガーではこの Python 環境はサポートされていません**" というエラーが表示されます。
+Visual Studio 2017 バージョン 15.8 以降では、ptvsd バージョン 4.1 以降に基づくデバッガーが使用されます。 Visual Studio 2019 バージョン 16.5 以降では debugpy に基づくデバッガーが使用されます。 これらのバージョンのデバッガーは、Python 2.7 および Python 3.5 以降と互換性があります。 Python 2.6、3.1 から 3.4、または IronPython を使用する場合、Visual Studio に "**デバッガーではこの Python 環境はサポートされていません**" というエラーが表示されます。
 
 ![デバッガー使用時の "デバッガーではこの Python 環境はサポートされていません" エラー](media/debugging-experimental-incompatible-error.png)
 
@@ -221,7 +221,8 @@ ptvsd のインストールを管理するには
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-デバッガーで問題が発生する場合は、まず次のように ptvsd のバージョンをアップグレードします。
+### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Visual Studio 2019 (バージョン 16.4 以前) の場合は ptvsd をアップグレードする
+デバッガーで問題が発生する場合は、まず次のようにデバッガーのバージョンをアップグレードします。
 
 1. **[Python 環境]** ウィンドウの **[パッケージ]** タブに移動します。
 
@@ -229,7 +230,10 @@ ptvsd のインストールを管理するには
 
     ![[Python 環境] ウィンドウでの ptvsd のアップグレード コマンドの指定](media/debugging-experimental-upgrade-ptvsd.png)
 
-問題が解決しない場合は、[PTVS GitHub リポジトリ](https://github.com/Microsoft/ptvs/issues)で問題を報告してください。
+   問題が解決しない場合は、[PTVS GitHub リポジトリ](https://github.com/Microsoft/ptvs/issues)で問題を報告してください。
+
+   > [!NOTE]
+   > Visual Studio 2019 バージョン 16.5 以降では、debugpy は Visual Studio Python ワークロードの一部であり、Visual Studio と共に更新されます。
 
 ### <a name="enable-debugger-logging"></a>デバッガーのログ記録を有効にする
 

@@ -1,19 +1,19 @@
 ---
 title: Web パフォーマンス テストのレコーダー プラグインを作成する
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589152"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288009"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>方法: レコーダー プラグインを作成する
 
@@ -71,7 +71,7 @@ ms.locfileid: "75589152"
 
 8. Web 記録を行った後にレコーダー プラグインで何を実行するかに応じて、コードを追加します。 たとえば、以下のサンプルで示すように、カスタムの関連付けを処理するコードを追加できます。 コメントからトランザクションへの変換、Web パフォーマンス テストへの検証規則の追加などを行うようなレコーダー プラグインを作成することもできます。
 
-9. **[ビルド]** メニューの **[\<クラス ライブラリ プロジェクト名> のビルド]** をクリックします。
+9. **[ビルド]** メニューの **[\<class library project name> のビルド]** をクリックします。
 
 次に、Visual Studio に登録するためにレコーダー プラグインを配置します。
 

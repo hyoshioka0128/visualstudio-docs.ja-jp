@@ -1,6 +1,6 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[プロジェクト]'
-ms.date: 1/15/2019
+ms.date: 06/19/2020
 ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605921"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285362"
 ---
 # <a name="options-text-editor-javascript-project"></a>[オプション]、[テキスト エディター]、[JavaScript]、[プロジェクト]
 
@@ -40,7 +40,9 @@ ms.locfileid: "68605921"
 
 ## <a name="compile-on-save"></a>保存時にコンパイル
 
-これらのオプションは、プロジェクトの一部ではない TypeScript ファイルが自動的にコンパイルされるかどうかを決定します。 チェック ボックスをオンにした後、使用するコード生成の種類を選択します。
+これらのオプションは、プロジェクトの一部ではない TypeScript ファイルが自動的にコンパイルされるかどうかを決定します。 Visual Studio では、*C:\Program Files (x86)\Microsoft SDKs\TypeScript* にインストールされている最新バージョンの TypeScript を使用してコンパイルが実行されます。
+
+チェック ボックスをオンにした後、使用するコード生成の種類を選択します。
 
 ### <a name="uielement-list"></a>UIElement の一覧
 
@@ -60,11 +62,11 @@ ms.locfileid: "68605921"
 
 ### <a name="uielement-list"></a>UIElement の一覧
 
-|オプション|[説明]|
+|オプション|説明|
 |------------|-----------------|
 |**React フレームワーク**|このオプションをオンにすると、コード エディターによって *.js* ファイル拡張子が出力されます。|
 |**Preserve**|このオプションを選択すると、コード エディターでは出力の一部として JSX が保持され、 *.jsx* ファイル拡張子が出力されます。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

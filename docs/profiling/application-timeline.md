@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128287"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285982"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>リソース消費量と UI スレッド アクティビティを分析する (XAML)
 
@@ -48,6 +48,8 @@ ms.locfileid: "71128287"
 2. **[デバッグ] > [パフォーマンス プロファイラー]** の順にクリックします。 [.diagsession] ウィンドウにプロファイリング ツールの一覧が表示されます。
 
 3. **[アプリケーション タイムライン]** を選択してから、ウィンドウの下部にある **[開始]** をクリックします。
+
+   ![選択されたアプリケーション タイムライン ツール](../profiling/media/apptimelineselect.png "アプリケーション タイムライン ツール")
 
    > [!NOTE]
    > *VsEtwCollector.exe* を実行するアクセス許可を求める [ユーザー アカウント制御] ウィンドウが表示されることがあります。 **[はい]** をクリックします。

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8adce700524c4ade6c627aa91480460f8f2571f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e84b9de4eca681812209eb17f492d5e07522d3b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933492"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292158"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Python プロジェクトのテスト フレームワークを選択する
 
@@ -130,7 +130,7 @@ Visual Studio では、Python コードがある [フォルダーを開く](../.
 単体テストはコードの断片であるため、他のコードと同様にバグが発生することがあり、デバッガーでの実行が必要になることがあります。 デバッガーでは、ブレークポイントを設定し、変数を確認し、コードをステップ実行することができます。 Visual Studio には単体テストのための診断ツールも用意されています。
 
 > [!Note]
-> 既定では、テスト デバッグでは ptvsd 4 デバッガーが使用されます。 ptvsd 3 を代わりに使用する場合は、 **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[デバッグ]** で、 **[レガシ デバッガーを使用]** オプションを選択できます。 
+> 既定では、テスト デバッグでは、Visual Studio 2017 (バージョン 15.8 以降) 用の ptvsd 4 デバッガーと Visual Studio 2019 (バージョン 16.5 以降) 用の debugpy が使用されます。 ptvsd 3 を代わりに使用する場合は、 **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[デバッグ]** で、 **[レガシ デバッガーを使用]** オプションを選択できます。 
 
 デバッグを開始するには、コードに最初のブレークポイントを設定し、**テスト エクスプローラー**でテスト (または選択範囲) を右クリックし、 **[選択したテストのデバッグ]** を選択します。 アプリケーション コードの場合と同様に、Visual Studio が Python デバッガーを起動します。
 

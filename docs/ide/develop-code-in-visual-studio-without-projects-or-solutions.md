@@ -1,6 +1,6 @@
 ---
 title: プロジェクトまたはソリューションを使用せずにコードを開発する
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596295"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284894"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する
 
@@ -26,7 +26,7 @@ Visual Studio でコード ファイルを開いた後、**ソリューション
 
 ## <a name="open-any-code"></a>コードを開く
 
-次のいずれかの方法で、Visual Studio にコードを開くことができます。
+Visual Studio でコードを開く方法は、次のとおりです。
 
 - Visual Studio メニュー バーで、 **[ファイル]**  >  **[開く]**  >  **[フォルダー]** を選択して、コードの場所を参照します。
 
@@ -34,10 +34,18 @@ Visual Studio でコード ファイルを開いた後、**ソリューション
 
 ::: moniker range="vs-2017"
 - Visual Studio **スタート ページ**で **[フォルダーを開く]** を選択します。
+
+    > [!IMPORTANT]
+    > Visual Studio の **[スタート ページ]** から **[フォルダーを開く]** リンクを使用してすべてのコードを開くことはできません。 たとえば、コード ファイルがソリューションの一部として (つまり、.sln ファイルに) 保存されている場合、ここに記載されている他のオプションのいずれかを使用してコードを開く必要があります。
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - スタート ウィンドウで **[フォルダーを開く]** リンクを選択します。
+
+    > [!IMPORTANT]
+    > Visual Studio のスタート ウィンドウから **[フォルダーを開く]** リンクを使用してすべてのコードを開くことはできません。 たとえば、コード ファイルがソリューションの一部として (つまり、.sln ファイルに) 保存されている場合、ここに記載されている他のオプションのいずれかを使用してコードを開く必要があります。
+
 ::: moniker-end
 
 - キーボードのユーザーの場合は、Visual Studio で **Ctrl**+**shift** +**Alt**+**O** キーを押します。
@@ -87,13 +95,13 @@ MSBuild ベース コードベースでは、 **[開始]** ボタンのドロッ
 
 ### <a name="codebases-that-use-custom-build-tools"></a>カスタム ビルド ツールを使用するコードベース
 
-お使いのコードベースでカスタム ビルド ツールを使用している場合、*.json* ファイルに定義されている*ビルド タスク*を使用したコードの作成方法を Visual Studio に指示する必要があります。 詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)に関するページをご覧ください。
+お使いのコードベースでカスタム ビルド ツールを使用している場合、 *.json* ファイルに定義されている*ビルド タスク*を使用したコードの作成方法を Visual Studio に指示する必要があります。 詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)に関するページをご覧ください。
 
 ### <a name="codebases-that-contain-python-or-javascript-code"></a>Python または JavaScript コードを含むコードベース
 
 コードベースに Python または JavaScript コードが含まれている場合、 *.json* ファイルを構成する必要はありませんが、対応するワークロードをインストールする必要が生じます。 また、次のようにスタートアップ スクリプトを構成する必要があります。
 
-1. **[ツール]** > **[ツールと機能を取得]** を選択するか、または Visual Studio を閉じて Visual Studio インストーラーを実行して、[Node.js 開発](https://visualstudio.microsoft.com/vs/node-js/)または [Python 開発](https://visualstudio.microsoft.com/vs/python/)のワークロードをインストールします。
+1. **[ツール]**  >  **[ツールと機能を取得]** を選択するか、または Visual Studio を複製して Visual Studio インストーラーを実行して、[Node.js 開発](https://visualstudio.microsoft.com/vs/node-js/)または [Python 開発](https://visualstudio.microsoft.com/vs/python/)のワークロードをインストールします。
 
    ![Node.js および Python 開発のワークロード](media/python_nodejs_workloads.png)
 

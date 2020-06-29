@@ -2,19 +2,19 @@
 title: '方法: ビルドからプロジェクトを除外する'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114803"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284322"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>方法: ビルドからプロジェクトを除外する
 
@@ -42,7 +42,7 @@ ms.locfileid: "76114803"
 
 1. メニュー バーで **[ビルド]**  >  **[構成マネージャー]** の順に選択します。
 
-2. **[アクティブ ソリューション構成]** 一覧の **[\<新規作成>]** を選択します。
+2. **[アクティブ ソリューション構成]** 一覧の **\<New>** をクリックします。
 
 3. **[名前]** ボックスに、ソリューション構成の名前を入力します。
 
@@ -67,7 +67,7 @@ Visual Studio の **[出力]** ウィンドウの **[ビルド]** ペインで�
 
 プロジェクトがスキップされた理由を確認するには、アクティブな構成 (前の例では `Debug x86`) を見つけ、 **[ビルド]**  >  **[構成マネージャー]** を選択します。 この記事で説明されているように、構成ごとにスキップされるプロジェクトを表示または変更できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ビルド構成について](../ide/understanding-build-configurations.md)
 - [方法: 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)

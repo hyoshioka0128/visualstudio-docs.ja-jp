@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173513"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288976"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 要素 (MSBuild)
 
@@ -51,7 +51,7 @@ ms.locfileid: "84173513"
 |属性|説明|
 |---------------|-----------------|
 |`Condition`|省略可能な属性です。 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
-|`Label`|省略可能な属性です。 `ItemGroup` を識別します。|
+|`Label`|省略可能な属性です。 `ItemGroup` を識別します。 |
 
 ### <a name="child-elements"></a>子要素
 
@@ -90,6 +90,8 @@ ms.locfileid: "84173513"
 単純なプロジェクト ファイルでは、通常 1 つの `ItemGroup` 要素を使用しますが、複数の `ItemGroup` 要素を使用することもできます。 複数の `ItemGroup` 要素が使用されている場合、項目は 1 つの `ItemGroup` に結合されます。 たとえば、インポートされたファイルで定義されている個別の `ItemGroup` 要素によって、いくつかの項目が含められる場合があります。
 
 ItemGroups には、`Condition` 属性を使用して条件を適用できます。 その場合、条件が満たされた場合にのみ項目が項目リストに追加されます。 「[MSBuild の条件](msbuild-conditions.md)」を参照してください
+
+`Label` 属性は、一部のビルド システムで、ビルド動作を制御する方法として使用されています。 これは、よりわかりやすい MSBuild スクリプトを作成する方法として、またはビルド アクションに影響を与えるコントロール設定として、宣言でのみ使用できます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630666"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286103"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile タスク
 
@@ -33,15 +33,15 @@ ms.locfileid: "77630666"
 
  `WriteLinestoFile` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`File`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 項目を書き込むファイルを指定します。|
-|`Lines`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ファイルに書き込む項目を指定します。|
-|`Overwrite`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクはファイル内の既存のコンテンツをすべて上書きします。|
-|`Encoding`|省略可能な `String` 型のパラメーターです。<br /><br /> 文字エンコードを選択します。たとえば、"Unicode" を選択します。  参照 <xref:System.Text.Encoding>.|
-|`WriteOnlyWhenDifferent`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ターゲット ファイルを指定すると、そのターゲット ファイルが最初に読み取られ、タスクによって書き込まれる内容と比較されます。 等しい場合、ファイルはディスクに書き込まれず、タイムスタンプが保持されます。|
+|`Lines`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ファイルに書き込む項目を指定します。 既定値は空のリストです。|
+|`Overwrite`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクはファイル内の既存のコンテンツをすべて上書きします。 既定値は `false` です。|
+|`Encoding`|省略可能な `String` 型のパラメーターです。<br /><br /> 文字エンコードを選択します。たとえば、"Unicode" を選択します。 既定値は UTF-8 です。  参照 <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ターゲット ファイルを指定すると、そのターゲット ファイルが最初に読み取られ、タスクによって書き込まれる内容と比較されます。 等しい場合、ファイルはディスクに書き込まれず、タイムスタンプが保持されます。 既定値は `false` です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
  `Overwrite` が `true` の場合、新しいファイルを作成し、内容をそのファイルに書き込んだ後、ファイルを閉じます。 既存のターゲット ファイルは上書きされます。 `Overwrite` が `false` の場合、ファイルにコンテンツを追加します。ターゲット ファイルがまだ存在しない場合は、ファイルを作成します。
 
@@ -95,7 +95,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

@@ -1,6 +1,6 @@
 ---
-title: コンストラクターからプライベートフィールドを生成する
-ms.date: 03/10/2020
+title: コンストラクターからプライベート フィールドとプロパティを生成する
+ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -10,26 +10,24 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094019"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283724"
 ---
-# <a name="generate-private-field-from-constructor"></a>コンストラクターからプライベートフィールドを生成する
+# <a name="generate-private-field-and-property-from-constructor"></a>コンストラクターからプライベート フィールドとプロパティを生成する
 
 このリファクタリングは以下に適用されます。 
 
 - C# 
 
-- Visual Basic
+**概要:** コンストラクターからプライベート フィールドまたはプロパティを生成します。 
 
-**概要:** コンストラクターからプライベート フィールドを生成します。 
+**条件:** コンストラクターからプライベート フィールドまたはプロパティをすばやく追加し、初期化する必要があります。
 
-**条件:** コンストラクターからプライベート フィールドをすばやく追加したいとき。
-
-**理由:** プライベート フィールドを記述することは、時間がかかり、反復的になることがあります。 このリファクタリングを使用すると、簡単でプログラムがより堅牢になります。
+**理由:** プライベート フィールドとプロパティを記述することは、時間がかかり、反復的になることがあります。 このリファクタリングを使用すると、簡単でプログラムがより堅牢になります。
 
 ## <a name="how-to"></a>方法 
 
@@ -37,7 +35,9 @@ ms.locfileid: "79094019"
 
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    
-3. **初期化フィールドを作成する**オプションを選択します。
+3. 次に、次のいずれかを選択します。
+
+- **[フィールド '{0}' を作成して初期化する]** または **[プロパティ '{0}' を作成して初期化する]** 。
 
    ![コンストラクターからプライベートフィールドを生成する](media/generate-private-field-from-constructor.png)
 

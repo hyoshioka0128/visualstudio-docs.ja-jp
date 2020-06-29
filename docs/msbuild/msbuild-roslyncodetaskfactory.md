@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865376"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289210"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用する MSBuild インライン タスク
 
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) と同様に、RoslynCodeTaskFactory ではクロス プラットフォームの Roslyn コンパイラを使用して、インライン タスクとして使用するためのメモリ内タスク アセンブリを生成します。  RoslynCodeTaskFactory タスクは、.NET Standard をターゲットとし、.NET Framework や .NET Core のランタイムだけでなく、Linux や Mac OS などの他のプラットフォームでも機能します。
 
 >[!NOTE]
->RoslynCodeTaskFactory は MSBuild 15.8 以降でのみ使用できます。 MSBuild バージョンは Visual Studio バージョンに従います。そのため、RoslynCodeTaskFactory は Visual Studio 15.8 以降で利用できます。
+>RoslynCodeTaskFactory は MSBuild 15.8 以降でのみ使用できます。 MSBuild のバージョンは Visual Studio のバージョンに従うので、RoslynCodeTaskFactory は Visual Studio 2017 バージョン 15.8 以降で利用できます。
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用したインライン タスクの構造
 
@@ -83,7 +83,7 @@ ms.locfileid: "78865376"
 
 - `Type` の値が `Fragment` の場合、コードは `Execute` メソッドの内容を定義します。ただし、シグネチャや `return` ステートメントは含まれません。
 
-コード自体は通常、`<![CDATA[` マーカーと `]]>` マーカーの間に記述します。 コードは CDATA セクション内に記述するため、"\<" や ">" などの予約文字のエスケープを気にする必要はありません。
+コード自体は通常、`<![CDATA[` マーカーと `]]>` マーカーの間に記述します。 コードは CDATA セクション内に記述するため、"\<" or ">" などの予約文字のエスケープを気にする必要はありません。
 
 また、`Source` 要素の `Code` 属性を使用して、タスクのコードを含むファイルの場所を指定することもできます。 ソース ファイルのコードの種類は、`Type` 属性で指定された種類である必要があります。 `Source` 属性が指定されている場合、`Type` の既定値は `Class` です。 `Source` が指定されていない場合の既定値は `Fragment` です。
 
@@ -256,6 +256,57 @@ HelloWorld タスクを *HelloWorld.targets* という名前のファイルに�
 
         <Message Text="File name: '$(MyFileName)'" />
     </Target>
+</Project>
+```
+
+## <a name="provide-backward-compatibility"></a>下位互換性を提供する
+
+`RoslynCodeTaskFactory` は、MSBuild バージョン 15.8 で初めて使用できるようになりました。 以前の `RoslynCodeTaskFactory` は使用できなかったけれども `CodeTaskFactory` は使用できたときのバージョンの Visual Studio と MSBuild をサポートし、ただし同じビルド スクリプトを使用したい場合があるものとします。 次の例のように、`$(MSBuildVersion)` プロパティを使用する `Choose` コンストラクトを使用して、`RoslynCodeTaskFactory` を使用するか、それとも `CodeTaskFactory` に戻すかを、ビルド時に決定することができます。
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" '$(MSBuildVersion.Substring(0,2))' >= 16 Or
+    ('$(MSBuildVersion.Substring(0,2))' == 15 And '$(MSBuildVersion.Substring(3,1))' >= 8)">
+      <PropertyGroup>
+        <TaskFactory>RoslynCodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TaskFactory>CodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  
+  <UsingTask
+    TaskName="HelloWorld"
+    TaskFactory="$(TaskFactory)"
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup />
+    <Task>
+      <Using Namespace="System"/>
+      <Using Namespace="System.IO"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+         Log.LogError("Using RoslynCodeTaskFactory");
+      ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="RunTask" AfterTargets="Build">
+    <Message Text="MSBuildVersion: $(MSBuildVersion)"/>
+    <Message Text="TaskFactory: $(TaskFactory)"/>
+    <HelloWorld />
+  </Target>
+
 </Project>
 ```
 

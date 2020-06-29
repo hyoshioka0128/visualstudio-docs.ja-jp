@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094662"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286122"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek タスク
 
@@ -42,8 +42,6 @@ XML ファイルから XPath クエリで指定された値を返します。
 ## <a name="remarks"></a>Remarks
 
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
-
-
 
 ## <a name="example"></a>例
 
@@ -74,7 +72,49 @@ XML ファイルから XPath クエリで指定された値を返します。
 </Target>
 ```
 
+XML 名前空間では、次の例のように `Namespaces` パラメーターを使用します。 入力 XML ファイルでは、`XMLFile1.xml` です。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<class AccessModifier='public' Name='test' xmlns:s='http://nsurl'>
+  <s:variable Type='String' Name='a'>This</s:variable>
+  <s:variable Type='String' Name='b'>is</s:variable>
+  <s:variable Type='String' Name='c'>Sparta!</s:variable>
+  <method AccessModifier='public static' Name='GetVal' />
+</class>
+```
+
+また、プロジェクト ファイルには次の `Target` が定義されます。
+
+```xml
+  <Target Name="TestPeek" BeforeTargets="Build">
+    <!-- Find the Name attributes -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/@Name"
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value1" />
+    </XmlPeek>
+    <Message Text="@(value1)"/>
+    <!-- Find 'variable' nodes (XPath query includes ".") -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/."
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value2" />
+    </XmlPeek>
+    <Message Text="@(value2)"/>
+  </Target>
+```
+
+出力には、`TestPeek` ターゲットの次のものが含まれています。
+
+```output
+  TestPeek output:
+  a;b;c
+  <s:variable Type="String" Name="a" xmlns:s="http://nsurl">This</s:variable>;<s:variable Type="String" Name="b" xmlns:s="http://nsurl">is</s:variable>;<s:variable Type="String" Name="c" xmlns:s="http://nsurl">Sparta!</s:variable>
+```
+
 ## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+- [XPath クエリ構文](https://wikipedia.org/wiki/XPath)

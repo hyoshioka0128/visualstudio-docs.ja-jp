@@ -4,21 +4,23 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 03/03/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 description: 管理者がサブスクリプションの割り当てを削除する方法を説明します。
-ms.openlocfilehash: a884cb56b9c04558023659317ecce2d06a8ec54d
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f630eef2d06e008966165e898cd40d123cb5c590
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232537"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289080"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで割り当てを削除する
 サブスクライバーが会社を退職したり、プロジェクトを完了したり、新しい仕事の役割に切り替わったりして、Visual Studio サブスクリプションが不要になった場合に、それらのサブスクリプションを削除して、他のユーザーに割り当てることができます。 サブスクリプションを再割り当てする場合は、サブスクライバーのすべての特典がリセットされるわけではないことに注意してください。  新しいユーザーは要求されていない任意のキーを要求し、以前に要求されたキーを表示できるようになりますが、要求の上限はリセット**されません**。  エンタープライズ契約 (EA) を締結している組織の場合、Pluralsight トレーニングなど、元のユーザーによって使用されていたすべての特典がリセットされます。 
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yG2q]
+
 ## <a name="delete-a-subscription-assignment"></a>サブスクリプションの割り当てを削除する
-1. 削除するサブスクライバーの名前をクリックします。 削除する複数のサブスクライバーを選択するには、サブスクライバー名の左にある円をクリックして、1 つずつ選択できます。  または、**CTRL** キーを押しながら、削除する各サブスクライバーをクリックすることもできます。  すべてのサブスクライバーを選択して削除するには、**CTRL + A** キーを押します。 
+1. 削除するサブスクライバーの名前をクリックします。 削除する複数のサブスクライバーを選択するには、サブスクライバー名の左にある円をクリックして、1 つずつ選択できます。  または、**CTRL** キーを押しながら、削除する各サブスクライバーをクリックすることもできます。 サブスクライバーの範囲を削除するには、最初をクリックし、**Shift** キーを押して最後をクリックします。  すべてのサブスクライバーを選択して削除するには、**CTRL + A** キーを押します。 
 2. 選択したサブスクライバーを削除するには、 **[削除]** をクリックします。
 3. 削除の確認を求めるメッセージが表示されたら、 **[OK]** をクリックします。
    > [!div class="mx-imgBorder"]

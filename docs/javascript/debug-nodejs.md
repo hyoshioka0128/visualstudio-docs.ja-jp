@@ -2,7 +2,7 @@
 title: JavaScript または TypeScript のアプリをデバッグする
 description: Visual Studio では、Visual Studio での JavaScript アプリと TypeScript アプリのデバッグをサポートします
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75678975"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285193"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio で JavaScript アプリまたは TypeScript アプリをデバッグする
 
@@ -58,7 +58,7 @@ TypeScript や Babel などのトランスパイラによってソースが縮�
 
 ソース マップを生成する方法については、「[デバッグ用のソース マップを生成する](#generate_source_maps)」を参照してください。
 
-### <a name="prepare_the_browser_for_debugging"></a>デバッグのためにブラウザーを準備する
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a>デバッグのためにブラウザーを準備する
 
 ::: moniker range=">=vs-2019"
 このシナリオでは、現在 IDE 上で **Microsoft Edge Beta** という名前になっている Microsoft Edge (Chromium)、または Chrome のいずれかを使用します。
@@ -162,7 +162,7 @@ TypeScript や Babel などのトランスパイラによってソースが縮�
 
    * トランスパイルされた JavaScript ファイル (*app-bundle.js* など) 内のコードを中断する必要があるときに、それができない場合は、ソース マップ ファイルである *filename.js.map* を削除します。
 
-### <a name="troubleshooting_source_maps"></a>ブレークポイントとソース マップのトラブルシューティング
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a>ブレークポイントとソース マップのトラブルシューティング
 
 TypeScript または JSX ソース ファイル内のコードを中断する必要があるときに、それができない場合は、前の手順で説明したデバッガーをアタッチするための **[プロセスにアタッチ]** を使用します。 環境が正しく設定されていることを確認してください。
 
@@ -174,7 +174,7 @@ TypeScript または JSX ソース ファイル内のコードを中断する必
 
 または、ソース ファイル (*app.tsx* など) 内のコードを中断する必要があるときに、それができない場合は、ソース ファイル内で `debugger;` ステートメントを使うか、代わりに Chrome の開発者ツール (または Microsoft Edge の F12 ツール) でブレークポイントを設定してみてください。
 
-## <a name="generate_source_maps"></a> デバッグ用のソース マップを生成する
+## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a> デバッグ用のソース マップを生成する
 
 Visual Studio には、JavaScript ソース ファイルでソース マップを使用して生成する機能があります。 これは多くの場合、ソースが TypeScript や Babel のようなトランスパイラによって縮小または作成されている場合に必要です。 使用できるオプションはプロジェクトの種類によって異なります。
 
@@ -210,7 +210,7 @@ Visual Studio を使用したデバッグを有効にするには、生成され
 
 複雑なシナリオの場合は、ブラウザー ツール (**F12**) がデバッグに最適な場合があります (カスタム プレフィックスを変更する必要がないため)。
 
-### <a name="configure_source_maps"></a>tsconfig.json ファイルを使用してソース マップを構成する
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a>tsconfig.json ファイルを使用してソース マップを構成する
 
 *tsconfig.json* ファイルをプロジェクトに追加する場合、Visual Studio ではディレクトリ ルートが TypeScript プロジェクトとして扱われます。 ファイルを追加するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[追加] > [新しい項目] > [TypeScript JSON 構成ファイル]** を選択します。 *tsconfig.json* ファイルは、次のようにプロジェクトに追加されます。
 

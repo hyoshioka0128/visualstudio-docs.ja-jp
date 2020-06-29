@@ -1,7 +1,7 @@
 ---
 title: 既存のプロジェクト項目テンプレートの更新
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates, updating
 - Visual Studio templates, updating
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591360"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283919"
 ---
 # <a name="how-to-update-existing-templates"></a>方法: 既存のテンプレートを更新する
 
@@ -37,7 +37,7 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 1. ウィザードの指示に従って、テンプレートを *.zip* ファイルとしてエクスポートします。
 
-1. (省略可能) テンプレートが選択肢として表示されるようにするには、その *.zip* ファイルを次のディレクトリに置きます: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合、このステップを実行する必要があります。
+1. (省略可能) *.zip* ファイルが選択肢として表示されるようにするには、それを次のディレクトリに置きます: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*。 **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合、このステップを実行する必要があります。
 
 1. 古いテンプレートの *.zip* ファイルを削除します。
 
@@ -47,7 +47,7 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 ### <a name="to-manually-update-an-existing-template"></a>既存のテンプレートを手動で更新するには
 
-1. テンプレートを含む *.zip* ファイルを探します。 ユーザー プロジェクト テンプレートは、 *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ProjectTemplates* にあります。
+1. テンプレートを含む *.zip* ファイルを探します。 ユーザー プロジェクト テンプレートは、 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* にあります。
 
 1. *.zip* ファイルを展開します。
 
@@ -65,7 +65,7 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 1. 抽出したテンプレート ファイルと古いテンプレート *.zip* ファイルを削除します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

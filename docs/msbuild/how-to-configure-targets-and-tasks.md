@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633890"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288898"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>方法: ターゲットとタスクを構成する
 
@@ -112,6 +112,7 @@ MSBuild はタスクを実行する前に、現在のソフトウェア コン�
 > [!NOTE]
 > タスク パラメーターは、タスク ホストのコンテキストではなく、親ノードのコンテキストで評価されます。 ランタイムまたはアーキテクチャに依存する環境変数は (*Program Files* の場所など)、親ノードに一致する値に評価されます。 一方、同じ環境変数がタスクによって直接読み取られた場合は、タスク ホストのコンテキストで正しく評価されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ターゲットとタスクを構成する](../msbuild/configuring-targets-and-tasks.md)
+- [UsingTask 要素](../msbuild/usingtask-element-msbuild.md)

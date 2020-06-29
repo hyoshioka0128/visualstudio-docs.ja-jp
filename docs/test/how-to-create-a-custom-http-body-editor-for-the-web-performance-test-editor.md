@@ -1,19 +1,19 @@
 ---
 title: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589202"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288144"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 
@@ -55,7 +55,7 @@ ms.locfileid: "75589202"
 
 1. **[.NET]** タブを選びます。下にスクロールして、 **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、 **[OK]** を選びます。
 
-1. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、**[デザイナーの表示]** を選択します。
+1. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、 **[デザイナーの表示]** を選択します。
 
 1. デザイン サーフェイスを右クリックし、 **[コードの表示]** を選択します。
 
@@ -264,7 +264,7 @@ messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTo
 
 ## <a name="build-and-deploy-the-plug-ins"></a>プラグインのビルドおよび配置
 
-1. **[ビルド]** メニューの **[\<Windows フォーム コントロール ライブラリ プロジェクト名> のビルド]** を選びます。
+1. **[ビルド]** メニューの **[\<Windows Form Control Library project name> のビルド]** をクリックします。
 
 2. Visual Studio のすべてのインスタンスを閉じます。
 
@@ -297,7 +297,7 @@ Windows コントロール ライブラリ プロジェクトの対象のフレ�
 
 詳しくは、「[[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

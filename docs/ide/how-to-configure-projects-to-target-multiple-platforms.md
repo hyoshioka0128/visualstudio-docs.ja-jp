@@ -1,8 +1,8 @@
 ---
-title: '方法 : プロジェクトを構成して複数の対象プラットフォームを設定する'
+title: '方法: プロジェクトを構成して複数の対象プラットフォームを設定する'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -12,14 +12,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114453"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284569"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>方法 : プロジェクトを構成して複数の対象プラットフォームを設定する
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>方法: プロジェクトを構成して複数の対象プラットフォームを設定する
 
 Visual Studio では、ソリューションは同時に複数の異なる CPU アーキテクチャまたはプラットフォームを対象にすることができます。 これを設定するプロパティには、 **[構成マネージャー]** ダイアログ ボックスからアクセスします。
 
@@ -29,7 +29,7 @@ Visual Studio では、ソリューションは同時に複数の異なる CPU �
 
 1. **[ビルド]** メニューの **[構成マネージャー]** をクリックします。
 
-2. **[アクティブ ソリューション プラットフォーム]** ボックスでソリューションの対象にするプラットフォームを選ぶか、 **[\<新規作成>]** を選んで新しいプラットフォームを作成します。 Visual Studio は、 **[構成マネージャー]** ダイアログ ボックスでアクティブ プラットフォームとして設定されているプラットフォームを対象とするようにアプリケーションをコンパイルします。
+2. **[アクティブ ソリューション プラットフォーム]** ボックスでソリューションの対象にするプラットフォームを選ぶか、 **\<New>** を選んで新しいプラットフォームを作成します。 Visual Studio は、 **[構成マネージャー]** ダイアログ ボックスでアクティブ プラットフォームとして設定されているプラットフォームを対象とするようにアプリケーションをコンパイルします。
 
 ## <a name="remove-a-platform"></a>プラットフォームを削除する
 
@@ -37,7 +37,7 @@ Visual Studio では、ソリューションは同時に複数の異なる CPU �
 
 1. **[ビルド]** メニューの **[構成マネージャー]** をクリックします。
 
-2. **[アクティブ ソリューション プラットフォーム]** ボックスで、 **[\<編集>]** を選びます。 **[ソリューション プラットフォームの編集]** ダイアログ ボックスが表示されます。
+2. **[アクティブ ソリューション プラットフォーム]** ボックスで、 **\<Edit>** を選びます。 **[ソリューション プラットフォームの編集]** ダイアログ ボックスが表示されます。
 
 3. 削除するプラットフォームをクリックし、 **[削除]** をクリックします。
 
@@ -61,7 +61,7 @@ Visual Studio では、ソリューションは同時に複数の異なる CPU �
 
    ソリューション レベルのプラットフォームをたとえば [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] に設定し、そのソリューション内のプロジェクトでは同じプラットフォームを対象としない、といったことができます。 また、ソリューション内の複数のプロジェクトで、それぞれ異なるプラットフォームを対象とすることもできます。 いずれかの状況の場合は、混乱を避けるためにわかりやすい名前で新しい構成を作成することをお勧めします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)
 - [ビルド構成について](../ide/understanding-build-configurations.md)

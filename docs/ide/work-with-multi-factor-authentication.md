@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 696664aa5aa92a3e9a675df4803a3e65e3e81f36
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84185699"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283547"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>多要素認証が必要なアカウントで Visual Studio を使用する方法
 
@@ -33,7 +33,11 @@ ms.locfileid: "84185699"
 > [!WARNING]
 > このワークフローを使用しないとエクスペリエンスが低下し、Visual Studio アカウントを追加または再認証するときに複数の追加の認証を求められる可能性があります。 
 
-### <a name="enabling-system-web-browser"></a>システム Web ブラウザーを有効にする  
+### <a name="enabling-system-web-browser"></a>システム Web ブラウザーを有効にする
+
+> [!NOTE] 
+> 最良のエクスペリエンスを実現するために、このワークフローに進む前に、システムの既定の Web ブラウザー データをクリアすることをお勧めします。 また、Windows 10 設定の **[職場または学校にアクセスする]** に職場または学校アカウントがある場合は、それらが適切に認証されていることを確認してください。
+
 このワークフローを有効にするには、Visual Studio の [オプション] ダイアログ **([ツール] > [オプション...])** に移動し、 **[アカウント]** タブを選択し、 **[次を使用してアカウントを追加および再認証する:]** ドロップダウンで **[System web browser] (システム Web ブラウザー)** を選択します。 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="メニューからシステム Web ブラウザーを選択します。":::
@@ -43,20 +47,22 @@ ms.locfileid: "84185699"
 </br>
 :::image type="content" source="media/add-personalization-account.png" alt-text="新しい個人アカウントを Visual Studio に追加します。" border="false":::
 
-この操作により、システムの既定の Web ブラウザーが開き、アカウントへサインインが求められ、必要な MFA ポリシーが検証されます。 
+この操作により、システムの既定の Web ブラウザーが開き、アカウントへサインインが求められ、必要な MFA ポリシーが検証されます。
+
+開発アクティビティとリソース構成に基づいて、セッション中に資格情報を再入力するように求められる場合があります。 これは、新しいリソースを追加したとき、または以前に CA/MFA の認可要件を満たしていないリソースにアクセスしようとしたときに発生する可能性があります。
 
 > [!NOTE] 
-> ブラウザーを閉じると追加の承認プロンプトが表示されることがあるため、ブラウザーはプロセス全体を通じて開いたままにしておいてください。 
+> 最適なエクスペリエンスを実現するために、すべての CA/MFA ポリシーがリソースに対して検証されるまで、ブラウザーを開いたままにしておいてください。 ブラウザーを閉じると、以前に構築した MFA 状態が失われ、追加の認可プロンプトが表示される場合があります。
 
 ## <a name="reauthenticating-an-account"></a>アカウントの再認証  
 アカウントに問題がある場合、Visual Studio によってアカウントの資格情報の再入力を求めるメッセージが表示されることがあります。  
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="Visual Studio アカウントを再認証します。":::
 
-**[資格情報を再入力してください]** をクリックすると、システムの既定の Web ブラウザーが開き、資格情報の自動更新が試みられます。 失敗した場合は、アカウントにサインインし、必要な MFA ポリシーを検証するよう求められます。 
+**[資格情報を再入力してください]** をクリックすると、システムの既定の Web ブラウザーが開き、資格情報の自動更新が試みられます。 失敗した場合は、アカウントにサインインし、必要な CA/MFA ポリシーを検証するよう求められます。
 
 > [!NOTE] 
-> ブラウザーを閉じると追加の承認プロンプトが表示されることがあるため、ブラウザーはプロセス全体を通じて開いたままにしておいてください。 
+> 最適なエクスペリエンスを実現するために、すべての CA/MFA ポリシーがリソースに対して検証されるまで、ブラウザーを開いたままにしておいてください。 ブラウザーを閉じると、以前に構築した MFA 状態が失われ、追加の認可プロンプトが表示される場合があります。
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Visual Studio で特定の Azure Active Directory テナントの使用をオプトアウトする方法
 

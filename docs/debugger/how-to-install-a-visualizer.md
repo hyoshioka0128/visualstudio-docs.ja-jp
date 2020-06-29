@@ -1,6 +1,6 @@
 ---
 title: '方法: ビジュアライザーをインストールする | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183627"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286389"
 ---
 # <a name="how-to-install-a-visualizer"></a>方法: ビジュアライザーをインストールする
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
@@ -53,6 +53,10 @@ ms.locfileid: "84183627"
     - `net2.0`: デバッグ対象で `.NET Framework` ランタイムが実行されている場合。
     - `netstandard2.0`: デバッグ対象で `netstandard 2.0` (`.NET Framework v4.6.1+` または `.NET Core 2.0+`) をサポートするランタイムが使用されている場合。
     - `netcoreapp`: デバッグ対象で `.NET Core` ランタイムが実行されている場合。 (`.NET Core 2.0+` をサポートします)
+
+   スタンドアロン ビジュアライザーを作成する場合は、デバッグ対象側の DLL が必要です。 この DLL には、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> のメソッドを実装できるデータ オブジェクトのコードが含まれています。
+
+   デバッグ対象側のコードをマルチターゲットにする場合は、サポートされている最小限の TFM のフォルダーにデバッグ対象側の DLL を配置する必要があります。
 
 4. デバッグ セッションを再開します。
 

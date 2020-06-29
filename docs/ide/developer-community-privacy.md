@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75775892"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284803"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -40,7 +40,8 @@ ms.locfileid: "75775892"
 3. 説明と、問題の再現に必要なその他の情報、イメージ、および、添付ファイルを追加します。 **[送信]** ボタンを選択して、非公開でこの情報を送信します。
 
    > [!NOTE]
-   > 添付ファイルには 2 GB の制限があり、最大で 10 個のファイルに制限されています。 これより大きいファイルをアップロードする必要がある場合は、新しい問題レポートを送信するか、プライベート コメントで Microsoft の社員にアップロード URL を要求できます。
+   > Developer Community Web サイト上では、添付ファイルに 2 GB の制限があり、最大で 10 個のファイルに制限されています。 これより大きいファイルをアップロードする必要がある場合は、新しい問題レポートを送信するか、プライベート コメントで Microsoft の社員にアップロード URL を要求できます。
+   > 問題を閉じると、関連する添付ファイルは 90 日後に削除されます。
 
 お客様のプライバシーと機密情報が公開されないようにするため、Microsoft とのすべてのやり取りは、この表示制限付きのコメントの下で返信するように注意してください。 他のコメントに返信すると、機密情報が誤って公開される場合があります。
 
@@ -85,7 +86,7 @@ ms.locfileid: "75775892"
   > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio 2017 で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)
 - [C++ の問題レポート データのプライバシー](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

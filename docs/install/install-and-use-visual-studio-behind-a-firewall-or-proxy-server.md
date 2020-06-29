@@ -1,7 +1,7 @@
 ---
 title: ファイアウォールまたはプロキシ サーバーの内側にインストールして使用する
 description: ファイアウォールまたはプロキシ サーバーを使用する場合に、許可リストに追加したり、開いたりすることがあるドメイン URL、ポート、プロトコルを確認します
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180442"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283477"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -129,6 +129,8 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | ジョブのコンパイル、送信、表示、診断、およびデバッグのために使用されます。ADLS ファイルを参照するために使用されます。ファイルをアップロードおよびダウンロードするために使用されます。 |
 | パッケージ サービス | [アカウント].visualstudio.com <br/> [アカウント].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | 特定のビルド タスク (NuGet Tool インストーラー、Node Tool インストーラーなど) にのみ、またはフィードで公共のアップストリームを使用する場合にのみ、\*.npmjs.org、\*.nuget.org、\*.nodejs.org が必要です。 パッケージ サービスの中心的機能には、他の 3 つのドメインが必要です。 |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Azure DevOps Services と接続するために使用 |
+| Azure Service Bus | \*.servicebus.windows.net | ampq/5671 および 5672、 </br> sbmp/9350-9354、 </br> http/80、 </br> https/443 | キュー、トピック、およびサブスクリプションの作成に使用されます。 </br> Service Bus キューおよびトピックとの間でメッセージを送受信するためにも使用されます。 |
+| Azure Cosmos DB | \*.documents.azure.com | https/443 | コア ドキュメント データベース API を呼び出すために使用されます。 |
 | 開発者コミュニティ | sendvsfeedback2.azurewebsites.net/api | https/443 | Developer Community フィードバック ツール API を呼び出すために使用されます (個人の懸案事項、検索、投票、コメント、送信、アップロード、再開) |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Intellicode API を呼び出すために使用されます |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Live Share API を呼び出すために使用されます |

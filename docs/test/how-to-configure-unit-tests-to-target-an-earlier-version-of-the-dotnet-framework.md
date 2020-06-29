@@ -1,18 +1,18 @@
 ---
 title: .NET Framework の旧バージョンを対象とした単体テスト
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596022"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288170"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>方法: .NET Framework の旧バージョンを対象とした単体テストを構成する
 
@@ -83,7 +83,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 2. **ソリューション エクスプローラー**で、新しい C++ テスト プロジェクトから **[プロジェクトのアンロード]** を選択します。
 
-3. **ソリューション エクスプローラー**で、アンロードされた C++ テスト プロジェクトを選択して、 **[\<プロジェクト名>.vcxproj の編集]** を選択します。
+3. **ソリューション エクスプローラー**で、アンロードされた C++ テスト プロジェクトを選択して、 **[\<project name>.vcxproj の編集]** を選択します。
 
    エディターで *.vcxproj* ファイルが開きます。
 
@@ -104,7 +104,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 6. **ソリューション エクスプローラー**で、新しい C++ テスト プロジェクトの右クリック メニューから **[プロジェクトの再読み込み]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [SharePoint ソリューションの作成](../sharepoint/create-sharepoint-solutions.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)

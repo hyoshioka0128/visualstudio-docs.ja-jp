@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431450"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289158"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 要素 (MSBuild)
 
@@ -51,8 +51,10 @@ ms.locfileid: "79431450"
 
 |属性|説明|
 |---------------|-----------------|
+|`Architecture`|省略可能な属性です。<br /><br /> 指定したビット数のプロセスでタスクを実行する必要があることを指定します。 現在のプロセスが要件を満たしていない場合、そうであるタスク ホスト プロセスでタスクが実行されます。<br /><br /> サポートされる値は、`x86` (32 ビット)、`x64` (64 ビット)、`CurrentArchitecture`、および `*` (任意のアーキテクチャ) です。|  
 |`AssemblyName`|`AssemblyName` 属性と `AssemblyFile` 属性のどちらかが必要です。<br /><br /> 読み込むアセンブリの名前。 `AssemblyName` 属性は厳密な名前付きのアセンブリを受け取りますが、厳密な名前は必須ではありません。 この属性を使用すると、.NET の <xref:System.Reflection.Assembly.Load%2A> メソッドを使用してアセンブリを読み込む場合と同じ結果が得られます。<br /><br /> `AssemblyFile` 属性が使用されている場合、この属性は使用できません。|
 |`AssemblyFile`|`AssemblyName` と `AssemblyFile` 属性のどちらかが必要です。<br /><br /> アセンブリのファイル パス。 この属性は、完全パスまたは相対パスを受け取ります。 相対パスは、`UsingTask` 要素が宣言されているプロジェクト ファイルまたはターゲット ファイルのディレクトリに対して相対的なパスです。 この属性を使用すると、.NET の <xref:System.Reflection.Assembly.LoadFrom%2A> メソッドを使用してアセンブリを読み込む場合と同じ結果が得られます。<br /><br /> `AssemblyName` 属性が使用されている場合、この属性は使用できません。|
+|`Runtime`|省略可能な属性です。<br /><br /> 指定したバージョンの .NET Framework ランタイムでタスクを実行する必要があることを指定します。 現在のプロセスが要件を満たしていない場合、そうであるタスク ホスト プロセスでタスクが実行されます。 .NET Core MSBuild ではサポートされていません。<br /><br /> サポートされる値は、`CLR2` (.NET Framework 3.5)、`CLR4` (.NET Framework 4.7.2 以降)、`CurrentRuntime`、および `*` (任意のランタイム) です。|  
 |`TaskFactory`|省略可能な属性です。<br /><br /> 指定された `Task` 名のインスタンスの生成を担うアセンブリ内のクラスを指定します。  ユーザーは、タスク ファクトリが受信してタスクの生成に使用する子要素として、`Task` を指定することもできます。 `Task` の内容は、タスク ファクトリに固有のものです。|
 |`TaskName`|必須の属性です。<br /><br /> アセンブリから参照するタスクの名前。 あいまいになる可能性がある場合、この属性は常に完全な名前空間を指定する必要があります。 あいまいさが存在する場合、MSBuild によって任意の一致が選択され、予期しない結果につながる可能性があります。|
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
@@ -110,5 +112,6 @@ ms.locfileid: "79431450"
 ## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
+- [方法: ターゲットとタスクを構成する](../msbuild/how-to-configure-targets-and-tasks.md)   
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)

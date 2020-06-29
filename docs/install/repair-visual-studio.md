@@ -2,7 +2,7 @@
 title: Visual Studio を修復します
 titleSuffix: ''
 description: Visual Studio 2017 のインストールを修復する方法について説明します
-ms.date: 07/31/2019
+ms.date: 06/15/2020
 ms.custom: seodec18
 ms.topic: conceptual
 author: ornellaalt
@@ -12,18 +12,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5883889e4ccbeab22d8a11578bcd342ca95e9be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114735"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285245"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio を修復します
 
-::: moniker range="vs-2017"
+Visual Studio のインストールが損傷したり、破損したりすることがあります。 修復は、更新プログラムを含め、すべてのインストール操作のインストール時の問題を解決するのに役立ちます。
 
-Visual Studio のインストールが損傷したり、破損したりすることがあります。 修復により、これを修正できます。
+## <a name="when-to-use-repair"></a>修復を使用する場面
+* インストール ペイロードの問題が発生している場合。 これは、ディスクへのファイルの書き込みに失敗し、破損したファイルを削除することで修正できない場合に発生する可能性があります。 修復によって、必要なファイルを再取得できます。 
+* クライアント側のダウンロードで問題が発生している場合。 接続またはプロキシの問題を解決したことを前提として、修復が役に立つ場合があります。 
+* Visual Studio の更新で問題が発生している場合。 修復では、多くの一般的な更新プログラムの問題が修正されます。 
+
+> [!TIP] 
+> Windows インストーラーなど、基になる Windows サービスの問題によってインストールの問題が発生した場合は、修復によって同じ問題が発生する可能性があります。 システムの問題には、破損した Windows インストーラーや不安定なインターネット接続などがあります。 システムの問題を確認するには、インストール操作から生成されたエラー レポートを使用します。
+
+> [!NOTE] 
+> Visual Studio を修復すると、ユーザー設定がリセットされ、既にあるアセンブリが再インストールされます。 製品の問題が発生している場合は、修復によって問題が解決されない可能性があるため、[Visual Studio フィードバック チケット](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)を作成します。
+
+## <a name="how-to-repair"></a>修復方法
+::: moniker range="vs-2017"
 
 1. コンピューター上の **Visual Studio インストーラー**を見つけます。
 
@@ -49,7 +61,7 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 ::: moniker range="vs-2019"
 
-1. コンピューター上で Visual Studio インストーラーを見つけます。
+1. コンピューター上の **Visual Studio インストーラー**を見つけます。
 
      たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
@@ -77,7 +89,7 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Visual Studio のインストール](install-visual-studio.md)
 * [Visual Studio の更新](update-visual-studio.md)

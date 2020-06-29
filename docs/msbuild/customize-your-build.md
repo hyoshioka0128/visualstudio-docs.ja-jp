@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180403"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288937"
 ---
 # <a name="customize-your-build"></a>ビルドのカスタマイズ
 
@@ -182,7 +182,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 ## <a name="customize-the-solution-build"></a>ソリューション ビルドをカスタマイズする
 
 > [!IMPORTANT]
-> この方法によるソリューション ビルドのカスタマイズは、*MSBuild.exe* を持つコマンドライン ビルドにのみ適用されます。 Visual Studio 内のビルドには適用**されません**。
+> この方法によるソリューション ビルドのカスタマイズは、*MSBuild.exe* を持つコマンドライン ビルドにのみ適用されます。 Visual Studio 内のビルドには適用**されません**。 このため、カスタマイズをソリューション レベルで行うことはお勧めしません。 ソリューション内のすべてのプロジェクトをカスタマイズする場合に推奨される代替手段は、この記事の他の部分で説明されているように、ソリューション フォルダー内の *Directory.Build.props* および *Directory.build.targets* ファイルを使用することです。
 
 MSBuild でソリューション ファイルがビルドされるとき、最初に内部でプロジェクト ファイルに変換され、それからビルドされます。 生成されたプロジェクト ファイルは、ターゲットを定義する前に `before.{solutionname}.sln.targets` をインポートし、ターゲットをインポートした後に `after.{solutionname}.sln.targets` をインポートします。ターゲットには、`$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` ディレクトリと `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` ディレクトリにインストールされたターゲットが含まれます。
 

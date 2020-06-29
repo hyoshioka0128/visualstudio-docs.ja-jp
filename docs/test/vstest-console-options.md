@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f8bc4847201d1bd0298bc91432996ecce58d65
-ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
+ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81615553"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289041"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -46,7 +46,7 @@ ms.locfileid: "81615553"
 |**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />`Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1` のような値があります。<br />TargetFrameworkAttribute は、ご利用のアセンブリからこのオプションを自動的に検出するために使用されます。その属性が存在しない場合、既定値は `Framework40` になります。 ご利用の .NET Core アセンブリから [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) を削除する場合は、このオプションを明示的に指定する必要があります。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換性モード" で実行されます。<br />例 : `/Framework:framework40`|
 |**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、 **/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
 |**/?**|使用情報を表示します。|
-|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、次を使用します。<br />**/Logger:trx**<br />**[;LogFileName=\<既定値は一意のファイル名>]**|
+|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。 複数のロガーを有効にするには、パラメーターを複数回指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、次を使用します。<br />**/Logger:trx**<br />**[;LogFileName=\<Defaults to unique file name>]**|
 |**/ListTests: [*ファイル名*]**|指定されたテスト コンテナーから探索されたテストを一覧表示します。|
 |**/ListDiscoverers**|インストール済みのテスト探索プログラムを一覧表示します。|
 |**/ListExecutors**|インストール済みのテスト実行プログラムを一覧表示します。|

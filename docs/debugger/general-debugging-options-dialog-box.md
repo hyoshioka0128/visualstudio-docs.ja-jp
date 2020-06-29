@@ -1,6 +1,6 @@
 ---
 title: '[全般] ([オプション] ダイアログ ボックス - [デバッグ]) | Microsoft Docs'
-ms.date: 11/12/2019
+ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bbd65d11b26d9b35000e4acbe4d28a585f8ddc
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472690"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286558"
 ---
 # <a name="general-debugging-options"></a>全般デバッグ オプション
 
@@ -101,11 +101,9 @@ Visual Studio デバッガーのオプションを設定するには、 **[ツ�
 
 **ASP.NET の JavaScript のデバッグを有効にする (Chrome、Edge、IE)** : ASP.NET アプリに対してスクリプト デバッガーを有効にします。 Chrome で初めて使用する場合は、インストールした Chrome 拡張機能を有効にするために、ブラウザーにサインインすることが必要な場合があります。 レガシ動作に戻すには、このオプションを無効にします。
 
-**UWP JavaScript アプリ向けの Edge 開発者ツール (試験段階)** : Microsoft Edge で UWP JavaScript アプリに対して開発者ツールを有効にします。
-
-**ASP.NET のレガシ Chrome JavaScript デバッガーを有効にする**: ASP.NET アプリに対して従来の Chrome JavaScript スクリプト デバッガーを有効にします。 Chrome で初めて使用する場合は、インストールした Chrome 拡張機能を有効にするために、ブラウザーにサインインすることが必要な場合があります。
-
-**試験的な方法を使用して、Visual Studio を管理者として実行しているときに Chrome JavaScript デバッグを起動する**: JavaScript のデバッグ中に Chrome を起動する新しい方法を試すよう Visual Studio に指示します。
+::: moniker range=">= vs-2019"
+**適用可能なターゲットの JavaScript をデバッグするためにマルチターゲット JavaScript デバッガーの使用を有効にする (デバッグの再起動が必要)** ブラウザーとバックエンドへの接続を同時に有効にし、クライアントとサーバーで実行されているコードをエディターから直接デバッグできるようにします。
+::: moniker-end
 
 **dll エクスポートの読み込み (ネイティブのみ)** : DLL エクスポート テーブルを読み込みます。 DLL エクスポート テーブルのシンボル情報は、対応するシンボルのない Windows メッセージ、Windows プロシージャ (WindowProc)、COM オブジェクト、マーシャリング、DLL を操作する場合に役立ちます。 DLL エクスポート情報を読み取ると、オーバーヘッドがある程度発生します。 そのため、既定ではこの機能はオフになっています。
 
@@ -124,7 +122,9 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 > [!NOTE]
 > マネージド互換モードを選択すると、既定のデバッグ エンジンにのみ実装されている一部の機能は無効になります。 Visual Studio 2012 では、従来のデバッグ エンジンが置き換えられました。
 
+::: moniker range="vs-2017"
 **従来の C# および VB の式エバリュエーターを使用する**: デバッガーで、Visual Studio 2015 の Roslyn ベースの式エバリュエーターの代わりに、Visual Studio 2013 の C# または Visual Basic の式エバリュエーターが使用されます。
+::: moniker-end
 
 **問題を起こす可能性があるプロセスに対してカスタムのデバッガー ビジュアライザーを使用する際に警告を表示する (マネージドのみ)** : デバッグ対象プロセスでコードを実行中のカスタム デバッガー ビジュアライザーを使っているときに、アンセーフ コードを実行している可能性がある場合、Visual Studio から警告が出されます。
 
@@ -142,6 +142,9 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 - **自分の XAML のみを有効にする**: Visual Studio 2019 バージョン 16.4 以降の**ライブ ビジュアル ツリー**では、既定で、ユーザー コードとして分類された XAML のみが表示されます。 このオプションを無効にすると、生成されたすべての XAML コードがツールに表示されます。
 
 - **要素が選択されたときに選択モードをオフにします**: Visual Studio 2019 バージョン 16.4 以降では、アプリ内ツール バー要素セレクター ボタン ( **[選択を有効にする]** ) は、要素が選択されるとオフになります。 このオプションを無効にすると、アプリ内ツール バー ボタンを再度クリックするまで、要素の選択はオンのままになります。
+
+- **ドキュメントの保存時に XAML ホット リロードを適用する** Visual Studio 2019 バージョン 16.6 以降、ドキュメントを保存するときに XAML ホット リロードを適用します。
+
 ::: moniker-end
 
 **デバッグ中に診断ツールを有効にする**: デバッグ中に **[診断ツール]** ウィンドウが表示されます。
@@ -162,15 +165,25 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 
 ::: moniker range=">= vs-2019"
 **迅速な式の評価を有効にする (マネージドのみ)** : 簡単なプロパティとメソッドの実行をシミュレートすることにより、デバッガーがより高速に評価できるようにします。
+
+**外部プロセスでのデバッグ シンボルの読み込み (ネイティブのみ)** デバッグ中にこの[メモリ最適化](https://devblogs.microsoft.com/cppblog/out-of-process-debugger-for-c-in-visual-studio-2019/)を有効にします。
+
+**デバッガーの中断時に Visual Studio を前景に移動します** デバッガーで一時停止すると、Visual Studio が前景に切り替えられます。
 ::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>古いバージョンの Visual Studio で使用できるオプション
 
 古いバージョンの Visual Studio を使用している場合、いくつかの追加オプションが表示されることがあります。
 
+**UWP JavaScript アプリ向けの Edge 開発者ツール (試験段階)** : Microsoft Edge で UWP JavaScript アプリに対して開発者ツールを有効にします。
+
+**ASP.NET のレガシ Chrome JavaScript デバッガーを有効にする**: ASP.NET アプリに対して従来の Chrome JavaScript スクリプト デバッガーを有効にします。 Chrome で初めて使用する場合は、インストールした Chrome 拡張機能を有効にするために、ブラウザーにサインインすることが必要な場合があります。
+
 **例外処理アシスタントを有効にする**: マネージド コードの場合は、例外処理アシスタントを有効にします。 Visual Studio 2017 以降、例外処理アシスタントは例外ヘルパーに置き換わりました。
 
 **ハンドルされていない例外で呼び出し履歴をアンワインドする**: **[呼び出し履歴]** ウィンドウで、未処理の例外が発生した前の時点に呼び出し履歴をロールバックします。
+
+**試験的な方法を使用して、Visual Studio を管理者として実行しているときに Chrome JavaScript デバッグを起動する**: JavaScript のデバッグ中に Chrome を起動する新しい方法を試すよう Visual Studio に指示します。
 
 **起動時にシンボルが見つからないとき警告 (ネイティブのみ)** : デバッガーにシンボル情報がないプログラムをデバッグすると、警告ダイアログ ボックスが表示されます。
 

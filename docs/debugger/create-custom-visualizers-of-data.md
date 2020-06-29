@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184550"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280877"
 ---
 # <a name="create-custom-data-visualizers"></a>カスタム データ ビジュアライザーを作成する
+
  "*ビジュアライザー*" は、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーのユーザー インターフェイスの一部で、データ型に適した方法で変数またはオブジェクトが表示されます。 たとえば、HTML ビジュアライザーでは、HTML 文字列が解釈され、結果がブラウザー ウィンドウに表示されるとおりに表示されます。 また、ビットマップ ビジュアライザーは、ビットマップ構造が解釈され、それが表すグラフィックが表示されます。 一部のビジュアライザーでは、データを表示するだけでなく、変更することもできます。
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] デバッガーには、6 つの標準的なビジュアライザーが用意されています。 テキスト、HTML、XML、JSON ビジュアライザーは、文字列のオブジェクトに対して機能します。 WPF ツリー ビジュアライザーでは、WPF オブジェクトのビジュアル ツリーのプロパティが表示されます。 データセット ビジュアライザーは、DataSet オブジェクト、DataView オブジェクト、DataTable オブジェクトに対して機能します。
@@ -74,11 +75,23 @@ ms.locfileid: "84184550"
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>デバッグ対象側のビジュアライザー オブジェクト ソースを作成するには
 
-デバッガー側のコードで <xref:System.Diagnostics.DebuggerVisualizerAttribute> を使用して、視覚化する型 (デバッグ対象側のオブジェクト ソース) を指定します。
+デバッガー側のコードで <xref:System.Diagnostics.DebuggerVisualizerAttribute> を編集して、視覚化する型 (デバッグ対象側のオブジェクト ソース) (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) を指定します。 `Target` プロパティにオブジェクト ソースが設定されます。 オブジェクト ソースを省略すると、ビジュアライザーは既定のオブジェクト ソースを使用します。
 
-1. デバッガー側のコードで、<xref:System.Diagnostics.DebuggerVisualizerAttribute> を編集してオブジェクト ソース (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>) を指定します。 `Target` プロパティにオブジェクト ソースが設定されます。 オブジェクト ソースを省略すると、ビジュアライザーは既定のオブジェクト ソースを使用します。
+::: moniker range=">=vs-2019"
+デバッグ対象側のコードには、視覚化されたオブジェクト ソースが含まれています。 データ オブジェクトでは、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> のメソッドをオーバーライドできます。 スタンドアロン ビジュアライザーを作成する場合は、デバッグ対象側の DLL が必要です。
+::: moniker-end
 
-1. ビジュアライザーでデータ オブジェクトを表示するだけでなく編集するには、<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> から `TransferData` メソッドまたは `CreateReplacementObject` メソッドをオーバーライドします。
+デバッグ対象側のコードで:
+
+- ビジュアライザーでデータ オブジェクトを編集できるようにするには、オブジェクト ソースを <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> から継承し、`TransferData` または `CreateReplacementObject` メソッドをオーバーライドする必要があります。
+
+- ビジュアライザー内でマルチターゲットをサポートする必要がある場合は、デバッグ対象側のプロジェクト ファイル内で次のターゲット フレームワーク モニカー (TFM) を使用できます。
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   これらはサポートされている唯一の TFM です。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,7 +1,7 @@
 ---
 title: Windows API 関数をデバッグする |Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 06/03/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.api
@@ -22,25 +22,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c4141cc1c1bee201435c63317c662181113dff70
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734349"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286404"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 関数をデバッグするには
 NT シンボルを読み込んだ状態で Windows API 関数をデバッグするには、次の手順を実行する必要があります。
 
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>NT シンボルを読み込んだ状態で Windows API 関数にブレークポイントを設定するには
 
-- 関数の名前と、関数が存在する DLL の名前を入力します。 32 ビット コードでは、関数名の装飾形式を使用します。 たとえば、**MessageBeep** にブレークポイントを設定するには、次のように入力します。
+- [関数のブレークポイント](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)に、関数が存在する DLL の名前と共に関数名を入力します ([コンテキスト演算子](../debugger/context-operator-cpp.md)に関するページを参照してください)。 32 ビット コードでは、関数名の装飾形式を使用します。 たとえば、**MessageBeep** にブレークポイントを設定するには、次のように入力します。
 
     ```cpp
     {,,USER32.DLL}_MessageBeep@4
     ```
 
      装飾名を取得するには、「[装飾名の表示](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)」を参照してください 。
+
+     装飾名をテストし、逆アセンブリ コードで表示できます。 Visual Studio デバッガーの関数で一時停止しているときに、コード エディターまたは呼び出し履歴ウィンドウで関数を右クリックし、 **[逆アセンブリへ移動]** を選択します。
+
+- 64 ビット コードでは、非装飾名を使用できます。
+
+    ```cpp
+    {,,USER32.DLL}MessageBeep
+    ```
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
