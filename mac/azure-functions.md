@@ -88,7 +88,7 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
     ![[新しい Azure Function ] ダイアログ](media/azure-functions-image4.png)
 
-    「[使用可能な関数テンプレート](#available-function-templates)」のセクションには、Azure 関数のテンプレート一覧があります。
+    「[使用可能な関数テンプレート](#available-function-templates)」のセクションには、Azure Functions のテンプレート一覧があります。
 
 上記の手順を使用して、複数の関数を関数アプリ プロジェクトに追加できます。 プロジェクト内の各関数で異なるトリガーを使用できますが、1 つの関数には 1 つのトリガーのみを使用する必要があります。 詳しくは、「[Azure Functions でのトリガーとバインドの概念](/azure/azure-functions/functions-triggers-bindings)」をご覧ください。
 

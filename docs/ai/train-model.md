@@ -31,20 +31,20 @@ Azure Batch AI は、Visual Studio Tools for AI に統合されているため�
 
     ![サンプル ギャラリー](media/train-model/batchai.png)
 
-3. **[表示] > [チーム エクスプローラー]** の順に選択し、 **[チーム エクスプローラー]** ウィンドウを開きます。ここでは、GitHub または Azure DevOps に接続したり、リポジトリを複製したりすることができます。
+3. **[表示] > [チーム エクスプローラー]** の順に選択し、 **[チーム エクスプローラー]** ウィンドウを開きます。ここでは、GitHub または Azure DevOps に接続したり、リポジトリをクローンしたりすることができます。
 
     ![Azure DevOps、GitHub、リポジトリの複製を示すチーム エクスプローラー ウィンドウ](media/train-model/team-explorer-devops.png)
 
-4. **[Local Git Repositories]\(ローカル Git リポジトリ\)** の下の [URL] フィールドに、`https://github.com/Microsoft/samples-for-ai` と入力し、複製されたファイル用のフォルダーを入力し、 **[複製]** を選択します。
+4. **[Local Git Repositories]\(ローカル Git リポジトリ\)** の下の [URL] フィールドに、`https://github.com/Microsoft/samples-for-ai` と入力し、クローンされたファイル用のフォルダーを入力し、 **[クローン]** を選択します。
 
     > [!Tip]
-    > チーム エクスプローラーで指定したフォルダーは、複製されたファイルを受け取る特定のフォルダーです。 `git clone` コマンドとは異なり、チーム エクスプローラーで複製を作成しても、リポジトリの名前のサブフォルダーは自動作成されません。
+    > チーム エクスプローラーで指定したフォルダーは、クローンされたファイルを受け取る特定のフォルダーです。 `git clone` コマンドとは異なり、チーム エクスプローラーでクローンを作成しても、リポジトリの名前のサブフォルダーは自動作成されません。
 
-5. 複製が完了したら、 **[ファイル]、[ソリューションを開く]、[プロジェクト/ソリューション]** の順にクリックします。
+5. クローンが完了したら、 **[ファイル]、[ソリューションを開く]、[プロジェクト/ソリューション]** の順にクリックします。
 
     ![サンプル ギャラリー](media/train-model/open-solution.png)
 
-6. リポジトリを複製したディレクトリで、**samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** を開きます。
+6. リポジトリをクローンしたディレクトリで、**samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** を開きます。
 
     ![サンプル ギャラリー](media/train-model/tensorflowexamples.png)
 
