@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e34a8e7d4860a599155554410e13df5a6eb3bfe1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 53fa5f61cb7c503502956831452bc3eca1a9fece
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672491"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521200"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: GC.KeepAlive への呼び出しを削除します
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004:GC.KeepAlive への呼び出しを削除します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
@@ -33,13 +33,13 @@ ms.locfileid: "72672491"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- クラスは `SafeHandle` を使用しますが、`GC.KeepAlive` の呼び出しを含みます。
+ クラス `SafeHandle` はを使用しますが、の呼び出しは引き続き含まれ `GC.KeepAlive` ます。
 
-## <a name="rule-description"></a>規則の説明
- @No__t_0 使用法に変換する場合は、`GC.KeepAlive` (object) へのすべての呼び出しを削除します。 この場合、クラスはファイナライザーを持たないものの、`SafeHandle` に依存してそれらの OS ハンドルを完了することを前提として、`GC.KeepAlive` を呼び出す必要はありません。  パフォーマンスによって測定されるように `GC.KeepAlive` を呼び出すことによるコストはごくわずかですが、`GC.KeepAlive` への呼び出しが必要か、または存在しなくなった可能性のある有効期間の問題を解決するのに十分であるという認識は、コードの保守が困難になります。
+## <a name="rule-description"></a>ルールの説明
+ 使用法に変換する場合は `SafeHandle` 、(object) へのすべての呼び出しを削除 `GC.KeepAlive` します。 この場合、クラスは `GC.KeepAlive` 、ファイナライザーを持たないもの `SafeHandle` の、OS ハンドルを完了するために依存していることを前提として、を呼び出す必要はありません。  を呼び出したままにすると、パフォーマンスによって測定されるのではなく、の `GC.KeepAlive` 呼び出しが必要か、または `GC.KeepAlive` 存在しない可能性のある有効期間の問題を解決するのに十分であるという認識は、コードの保守が困難になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- @No__t_0 の呼び出しを削除します。
+ の呼び出しを削除 `GC.KeepAlive` します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この警告が表示されないようにするには、クラス内の `SafeHandle` 使用法に変換するのが技術的に適切でない場合に限られます。
+ この警告を非表示にすることができるのは、 `SafeHandle` クラスの使用法への変換が技術的に適切でない場合のみです。

@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによってブックとしてテキスト ファイルを開く'
+title: '方法: プログラムによってテキストファイルをブックとして開く'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812459"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519833"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>方法: プログラムによってブックとしてテキスト ファイルを開く
-  テキスト ファイルをブックとして開くことができます。 開きたいテキスト ファイルの名前を渡す必要があります。 ファイル内のデータの列の形式、解析を開始する行番号など、いくつかの省略可能なパラメーターを指定できます。
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>方法: プログラムによってテキストファイルをブックとして開く
+  テキストファイルをブックとして開くことができます。 開くテキストファイルの名前を渡す必要があります。 解析を開始する行番号やファイル内のデータの列の形式など、いくつかの省略可能なパラメーターを指定できます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -33,14 +33,14 @@ ms.locfileid: "62812459"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のコンポーネントが必要です。
 
-- という名前のコンマ区切りのテキスト ファイル`Test.txt`少なくとも 3 つの行のテキストを格納しています。
+- 少なくとも `Test.txt` 3 行のテキストを含むという名前のコンマ区切りのテキストファイル。
 
-- テキスト ファイル`Test.txt`C ドライブに保存します。
+- `Test.txt`ドライブ C に格納するテキストファイル。
 
 ## <a name="see-also"></a>関連項目
-- [ブックを操作します。](../vsto/working-with-workbooks.md)
+- [ブックの操作](../vsto/working-with-workbooks.md)
 - [方法: プログラムによってブックを開く](../vsto/how-to-programmatically-open-workbooks.md)
-- [方法: プログラムによって新しいブックを作成します。](../vsto/how-to-programmatically-create-new-workbooks.md)
-- [方法: プログラムによってブックを保存します。](../vsto/how-to-programmatically-save-workbooks.md)
+- [方法: プログラムによって新しいブックを作成する](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [方法: プログラムによってブックを保存する](../vsto/how-to-programmatically-save-workbooks.md)
 - [方法: プログラムによってブックを閉じる](../vsto/how-to-programmatically-close-workbooks.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

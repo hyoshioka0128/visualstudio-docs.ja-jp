@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって Outlook の連絡先へのアクセスします。'
+title: '方法: プログラムによって Outlook の連絡先にアクセスする'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967684"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520096"
 ---
-# <a name="how-to-programmatically-access-outlook-contacts"></a>方法: プログラムによって Outlook の連絡先へのアクセスします。
-  この例では、最後の名前が指定した検索文字列を含むすべての連絡先を検索します。
+# <a name="how-to-programmatically-access-outlook-contacts"></a>方法: プログラムによって Outlook の連絡先にアクセスする
+  この例では、指定された検索文字列が姓に含まれているすべての連絡先を検索します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,11 +32,11 @@ ms.locfileid: "62967684"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
-- 連絡先の姓が文字列を含む"**Na"** (Tzipi Butnaru など) で、**連絡先**フォルダー。
+- **連絡先**フォルダーに姓が含まれている**連絡先 (たとえば**、tzipi Butnaru)。
 
 ## <a name="see-also"></a>関連項目
-- [連絡先項目を操作します。](../vsto/working-with-contact-items.md)
-- [方法: プログラムによって Outlook の連絡先にエントリを追加します。](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
-- [方法: プログラムによって特定の連絡先を検索します。](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [方法: プログラムによって連絡先から電子メール アドレスを検索します。](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
-- [方法: プログラムによって Outlook の連絡先を削除します。](../vsto/how-to-programmatically-delete-outlook-contacts.md)
+- [連絡先アイテムの操作](../vsto/working-with-contact-items.md)
+- [方法: プログラムによって Outlook の連絡先にエントリを追加する](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [方法: プログラムによって特定の連絡先を検索する](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [方法: プログラムによって連絡先の電子メールアドレスを検索する](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
+- [方法: プログラムによって Outlook の連絡先を削除する](../vsto/how-to-programmatically-delete-outlook-contacts.md)

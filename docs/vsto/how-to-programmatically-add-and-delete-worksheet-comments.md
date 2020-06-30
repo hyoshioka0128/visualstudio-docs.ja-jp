@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムで追加し、ワークシートのコメントの削除'
+title: '方法: ワークシートのコメントをプログラムによって追加および削除する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967697"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520082"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>方法: プログラムで追加し、ワークシートのコメントの削除
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>方法: ワークシートのコメントをプログラムによって追加および削除する
   Microsoft Office Excel ワークシート内のコメントは、プログラムを使用して追加、削除できます。 コメントは、1 つのセルにのみ追加でき、複数のセル範囲には追加できません。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>追加およびドキュメント レベル プロジェクト内のコメントを削除します。
+## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>ドキュメントレベルのプロジェクトでコメントを追加および削除する
  次の例では、 <xref:Microsoft.Office.Tools.Excel.NamedRange> という名前のワークシートに、 `dateComment` というシングルセル `Sheet1`コントロールがあることを想定しています。
 
 ### <a name="to-add-a-new-comment-to-a-named-range"></a>名前付き範囲に新しいコメントを追加するには
@@ -43,7 +43,7 @@ ms.locfileid: "62967697"
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
 
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>追加および VSTO アドイン プロジェクトでのコメントを削除します。
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>VSTO アドインプロジェクトでのコメントの追加と削除
  次の例では、作業中のワークシートに、 <xref:Microsoft.Office.Interop.Excel.Range> というシングルセル `dateComment` コントロールがあることを想定しています。
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>Excel 範囲に新しいコメントを追加するには
@@ -61,6 +61,6 @@ ms.locfileid: "62967697"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートのコメントを表示します。](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: ワークシートのコメントをプログラムによって表示する](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [NamedRange コントロール](../vsto/namedrange-control.md)
