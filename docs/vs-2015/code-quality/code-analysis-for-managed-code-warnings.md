@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fddcff8bb51216097689a86bd25718a0727c2b45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672934"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535734"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>マネージド コードの警告に対応するコードの解析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "72672934"
 
  次の表に、各警告で示される情報の種類を示しています。
 
-|アイテム|説明|
+|項目|説明|
 |----------|-----------------|
-|[種類]|規則の TypeName。|
+|Type|規則の TypeName。|
 |CheckId|規則の一意の識別子。 CheckId とカテゴリは、ソース内で警告の省略表記として使用されます。|
 |カテゴリ|警告のカテゴリ。|
 |互換性に影響する変更点|規則違反を修正することが、互換性に影響する変更点かどうかを示します。 互換性に影響する変更点とは、違反の原因となった対象に対して依存関係を持つアセンブリが、新たに修正したバージョンで再コンパイルされないこと、または変更によって実行時にエラーになる可能性があることを示します。 複数の修正を適用でき、互換性に影響する変更点があるものとないものがある場合、"あり" と "なし" を併記しています。|
@@ -45,19 +45,19 @@ ms.locfileid: "72672934"
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-|||
+|Item|値|
 |-|-|
-|[警告 (CheckId 別)](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|すべての警告を CheckId 別に一覧表示します。|
-|[暗号化警告](../code-quality/cryptography-warnings.md)|暗号化の適切な使用によって、より安全なライブラリとアプリケーションをサポートする警告です。|
+|[CheckId 別の警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|すべての警告を CheckId 別に一覧表示します。|
+|[暗号化の警告](../code-quality/cryptography-warnings.md)|暗号化の適切な使用によって、より安全なライブラリとアプリケーションをサポートする警告です。|
 |[デザインの警告](../code-quality/design-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] デザイン ガイドラインで規定されている、適切なライブラリ デザインをサポートする警告です。|
-|[グローバリゼーションに関する警告](../code-quality/globalization-warnings.md)|国際対応ライブラリおよびアプリケーションをサポートする警告です。|
+|[グローバリゼーションの警告](../code-quality/globalization-warnings.md)|国際対応ライブラリおよびアプリケーションをサポートする警告です。|
 |[相互運用性の警告](../code-quality/interoperability-warnings.md)|COM クライアントとの相互作用をサポートする警告です。|
-|[保守性の警告](../code-quality/maintainability-warnings.md)|ライブラリとアプリケーションの保守をサポートする警告です。|
-|[Mobility Warnings](../code-quality/mobility-warnings.md)|電力の効率的な使用をサポートする警告です。|
+|[保守容易性に関する警告](../code-quality/maintainability-warnings.md)|ライブラリとアプリケーションの保守をサポートする警告です。|
+|[モビリティの警告](../code-quality/mobility-warnings.md)|効率的な電力の使用法をサポートする警告です。|
 |[名前付けに関する警告](../code-quality/naming-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] デザイン ガイドラインの名前付け規則の順守をサポートする警告です。|
-|[パフォーマンスに関する警告](../code-quality/performance-warnings.md)|高パフォーマンスのライブラリとアプリケーションをサポートする警告です。|
+|[パフォーマンスの警告](../code-quality/performance-warnings.md)|高パフォーマンスのライブラリとアプリケーションをサポートする警告です。|
 |[移植性に関する警告](../code-quality/portability-warnings.md)|異なるプラットフォーム間の移植性をサポートする警告です。|
 |[信頼性の警告](../code-quality/reliability-warnings.md)|メモリやスレッドの適切な使用など、ライブラリとアプリケーションの信頼性をサポートする警告です。|
 |[セキュリティの警告](../code-quality/security-warnings.md)|より安全なライブラリとアプリケーションをサポートする警告です。|
-|[使用法に関する警告](../code-quality/usage-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]の適切な使用をサポートする警告です。|
-|[コード分析ポリシー エラー](../code-quality/code-analysis-policy-errors.md)|チェックインにおいてコード分析ポリシーに適合しない場合に発生するエラーです。|
+|[使用状況に関する警告](../code-quality/usage-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]の適切な使用をサポートする警告です。|
+|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|チェックインにおいてコード分析ポリシーに適合しない場合に発生するエラーです。|

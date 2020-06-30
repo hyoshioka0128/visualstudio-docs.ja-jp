@@ -11,22 +11,22 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a3c0b347f186c5adee6cf86a0e1720ebfa80f253
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670115"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535721"
 ---
 # <a name="code-analysis-rule-set-reference"></a>コード分析規則セットの参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 でマネージコードプロジェクトのコード分析を構成すると、組み込みの*規則セット*の一覧が [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] または [!INCLUDE[vsPro](../includes/vspro-md.md)]you に表示されます。 いずれかの標準規則セットを使用することも、プロジェクト要件を満たすように規則セットをカスタマイズすることもできます。
+、、またはでマネージコードプロジェクトのコード分析を構成すると [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 組み込みの [!INCLUDE[vsPro](../includes/vspro-md.md)] *規則セット*の一覧が表示されます。 いずれかの標準規則セットを使用することも、プロジェクト要件を満たすように規則セットをカスタマイズすることもできます。
 
 ## <a name="available-rule-sets"></a>使用できる規則セット
  既定の規則セット一覧を次の表に示します。
 
-|||
+|Item|値|
 |-|-|
 |["すべての規則" 規則セット](../code-quality/all-rules-rule-set.md)|この規則セットにはすべての規則が含まれます。 この規則セットを実行すると、多数の警告が報告される可能性があります。 この規則セットは、コード内のすべての問題を全体的に把握する場合に使用してください。 これは、用途を絞った各規則セットのうち、どれがプロジェクトに対して最も適切かを判断するのに役立ちます。|
 |[マネージド コードの "基本正確性規則" 規則セット](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|これらの規則は、フレームワーク API の使用の際の論理エラー、およびよくある失敗に関するものです。 この規則セットは、最小推奨規則で報告された警告の一覧から、さらに詳しい情報へと掘り下げる必要がある場合に使用してください。|

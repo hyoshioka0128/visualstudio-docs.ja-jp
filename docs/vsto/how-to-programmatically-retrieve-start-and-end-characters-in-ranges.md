@@ -1,7 +1,7 @@
 ---
-title: 作業を開始 (&) 文字の範囲をプログラムで終了
+title: プログラムを利用して範囲内の終了文字 & 開始する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e0f04d5f70c99ea3404a95b04a7ea668a37e0f2
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 485945f235a9161b6dc0584f7018c6f03c6024f5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328950"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537658"
 ---
-# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>方法: 範囲の先頭と末尾の文字をプログラムで取得します。
+# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>方法: プログラムによって範囲内の開始文字と終了文字を取得する
   この例では、範囲の開始位置と終了位置の文字位置を取得する方法を示します。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "67328950"
      [!code-vb[Trin_VstcoreWordAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#25)]
      [!code-csharp[Trin_VstcoreWordAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#25)]
 
-## <a name="to-retrieve-start-and-end-characters-of-a-range-by-using-a-vsto-add-in"></a>VSTO アドインを使用して、範囲の先頭と末尾の文字を取得するには
+## <a name="to-retrieve-start-and-end-characters-of-a-range-by-using-a-vsto-add-in"></a>VSTO アドインを使用して範囲の開始文字と終了文字を取得するには
 
 1. <xref:Microsoft.Office.Interop.Word.Range.Start%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Range.End%2A> プロパティおよび <xref:Microsoft.Office.Interop.Word.Range> プロパティの値を取得します。 次のコード例では、アクティブなドキュメントの 2 番目の文の開始位置と終了位置を取得します。 このコード例を使用するには、プロジェクトの `ThisAddIn` クラスからコードを実行します。
 
@@ -42,9 +42,9 @@ ms.locfileid: "67328950"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#25](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#25)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [方法: プログラムによってドキュメント内の範囲を拡張します。](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [方法: プログラムによって Word のドキュメント内の範囲をリセットします。](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [方法: プログラムまたはドキュメント内の選択範囲を折りたたむ](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [方法: プログラムから除外する段落記号の範囲を作成するときに](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
-- [方法: プログラムによって文書内の文字をカウントします。](../vsto/how-to-programmatically-count-characters-in-documents.md)
+- [方法: プログラムによって文書内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [方法: プログラムによって文書内の範囲を拡張する](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [方法: プログラムによって Word 文書の範囲をリセットする](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [方法: プログラムによって文書内の範囲または選択項目を折りたたむ](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [方法: 範囲を作成するときにプログラムによって段落記号を除外する](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [方法: プログラムによって文書内の文字数をカウントする](../vsto/how-to-programmatically-count-characters-in-documents.md)

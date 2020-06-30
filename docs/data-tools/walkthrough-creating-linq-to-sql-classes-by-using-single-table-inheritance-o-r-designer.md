@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585978"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535266"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
-[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明されている一般的な手順について説明し、[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]での継承の使用方法を示すいくつかの実際のデータを提供します。
+[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明する一般的な手順について説明します。また、での継承の使用方法を示すいくつかの実際のデータを提供し [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] ます。
 
 このチュートリアルでは、次のタスクを実行します。
 
@@ -38,24 +38,24 @@ ms.locfileid: "75585978"
 - Windows フォームにデータを表示します。
 
 ## <a name="create-a-table-to-inherit-from"></a>継承するテーブルの作成
-継承のしくみを確認するには、小さな `Person` テーブルを作成し、それを基底クラスとして使用してから、継承する `Employee` オブジェクトを作成します。
+継承のしくみを確認するには、小さいテーブルを作成し、 `Person` それを基底クラスとして使用して `Employee` から、それを継承するオブジェクトを作成します。
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>ベース テーブルを作成して継承の動作を確認するには
 
-1. **サーバーエクスプローラー**または**データベースエクスプローラー**で、 **[テーブル]** ノードを右クリックし、 **[新しいテーブルの追加]** をクリックします。
+1. **サーバーエクスプローラー**または**データベースエクスプローラー**で、[**テーブル**] ノードを右クリックし、[**新しいテーブルの追加**] をクリックします。
 
     > [!NOTE]
     > Northwind データベースを使用することも、テーブルを追加できる他の任意のデータベースを使用することもできます。
 
 2. **テーブル デザイナー**で、次の列をテーブルに追加します。
 
-    |列名|データ型|Null を許容|
+    |列名|データの種類|Null を許容|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**型**|**int**|**True**|
+    |**Type**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
-    |**Manager**|**int**|**True**|
+    |**マネージャー**|**int**|**True**|
 
 3. ID 列を主キーとして設定します。
 
@@ -66,13 +66,12 @@ ms.locfileid: "75585978"
 
 ### <a name="to-add-data-to-the-table"></a>テーブルにデータを追加するには
 
-1. データ ビューでテーブルを開きます (**サーバーエクスプローラー**または**データベースエクスプローラー**で**Person**テーブルを右クリックし、 **[テーブルデータの表示]** をクリックします)。
+1. データ ビューでテーブルを開きます  (**サーバーエクスプローラー**または**データベースエクスプローラー**で**Person**テーブルを右クリックし、[**テーブルデータの表示**] をクリックします)。
 
-2. テーブルに次のデータをコピーします。 (コピーした後、 **[結果]** ウィンドウで行全体を選択すると、テーブルに貼り付けることができます)。
+2. テーブルに次のデータをコピーします。 (コピーした後、[**結果**] ウィンドウで行全体を選択すると、テーブルに貼り付けることができます)。
 
-    ||||||
+    |**ID**|**Type**|**FirstName**|**LastName**|**マネージャー**|
     |-|-|-|-|-|
-    |**ID**|**型**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -82,20 +81,20 @@ ms.locfileid: "75585978"
     |**7**|**2**|**Alexey**|**Orekhov**|**2**|
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
     |**9**|**2**|**Tai**|**Yee**|**2**|
-    |**10**|**2**|**Fabricio**|**Noriega**|**3**|
+    |"**10**"|**2**|**Fabricio**|**Noriega**|**3**|
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>新しいプロジェクトの作成
+## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 これでテーブルが作成されたので、新しいプロジェクトを作成して継承の構成を実際に行います。
 
 ### <a name="to-create-the-new-windows-forms-application"></a>新しい Windows フォームアプリケーションを作成するには
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic**を展開し、[ **Windows デスクトップ**] を選択します。
 
-3. 中央のウィンドウで、 **[Windows フォーム App]** プロジェクトの種類を選択します。
+3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
 4. プロジェクトに**InheritanceWalkthrough**という名前を入力し、[ **OK]** をクリックします。
 
@@ -107,7 +106,7 @@ ms.locfileid: "75585978"
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-2. **LINQ to SQL クラス** テンプレートをクリックし、 **[追加]** をクリックします。
+2. **LINQ to SQL クラス** テンプレートをクリックし、**[追加]** をクリックします。
 
      *.Dbml*ファイルがプロジェクトに追加され、 **O/R デザイナー**が開きます。
 
@@ -138,7 +137,7 @@ ms.locfileid: "75585978"
 
 11. **[継承の既定値]** プロパティを **Person** に設定します。
 
-12. プロジェクトをビルドする。
+12. プロジェクトをビルドします。
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>継承されたクラスのクエリおよびフォームへのデータの表示
 ここで、オブジェクトモデル内の特定のクラスに対してクエリを実行するコードをフォームに追加します。
@@ -174,8 +173,8 @@ ms.locfileid: "75585978"
     }
     ```
 
-## <a name="test-the-application"></a>アプリのテスト
-アプリケーションを実行し、リスト ボックスに表示されているレコードがすべて従業員 ( **[Type]** 列の値が 2 のレコード) であることを確認します。
+## <a name="test-the-application"></a>アプリケーションをテストする
+アプリケーションを実行し、リストボックスに表示されるレコードが [すべての従業員] であることを確認します ([**型**] 列に値2が含まれるレコード)。
 
 ### <a name="to-test-the-application"></a>アプリケーションをテストするには
 
@@ -183,7 +182,7 @@ ms.locfileid: "75585978"
 
 2. **[Type]** 列の値が 2 のレコードのみが表示されていることを確認します。
 
-3. フォームを閉じます ( **[デバッグ]** メニューの **[デバッグの停止]** をクリックします。)
+3. フォームを閉じます  ([**デバッグ**] メニューの [**デバッグの停止**] をクリックします)。
 
 ## <a name="see-also"></a>関連項目
 
@@ -191,4 +190,4 @@ ms.locfileid: "75585978"
 - [チュートリアル: LINQ to SQL クラスの作成 (O-R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [方法: Visual Basic または C# でオブジェクト モデルを生成する](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [方法: Visual Basic または C でオブジェクトモデルを生成する#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;InstallChecks&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;InstallChecks &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747526"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536306"
 ---
-# <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;要素 (ブートス トラップ)
-`InstallChecks`要素のさまざまなアプリケーションの適切な前提条件のすべてがインストールされているかどうかを確認するローカル コンピューターに対するテストの開始をサポートしています。
+# <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; 要素 (ブートストラップ)
+要素は、 `InstallChecks` ローカルコンピューターに対してさまざまなテストを開始して、アプリケーションの適切なすべての前提条件がインストールされていることを確認することをサポートしています。
 
 ## <a name="syntax"></a>構文
 
@@ -70,81 +70,81 @@ ms.locfileid: "66747526"
 ```
 
 ## <a name="assemblycheck"></a>AssemblyCheck
- この要素は省略可能な子要素の`InstallChecks`します。 インスタンスごとに`AssemblyCheck`、ブートス トラップが要素で指定されたアセンブリがグローバル アセンブリ キャッシュ (GAC) に存在することを確認してください。 要素が含まれていないと、次の属性があります。
+ この要素は、の省略可能な子要素です `InstallChecks` 。 の各インスタンスについて `AssemblyCheck` 、ブートストラップは、要素によって識別されるアセンブリがグローバルアセンブリキャッシュ (GAC) に存在することを確認します。 要素は含まれず、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Name`|必須。 チェック対象のアセンブリの完全修飾名。|
-|`PublicKeyToken`|必須。 公開キーの省略形は、このアセンブリの厳密な名前に関連付けられています。 GAC に格納されているすべてのアセンブリは、名前、バージョン、および公開キーが必要です。|
-|`Version`|必須。 アセンブリのバージョン。<br /><br /> バージョン番号が、形式\<*メジャー バージョン*>.\<*マイナー バージョン*>.\<*ビルド バージョン*>.\<*リビジョン バージョン*>。|
-|`Language`|任意。 ローカライズされたアセンブリの言語です。 既定値は `neutral` です。|
-|`ProcessorArchitecture`|任意。 このインストールの対象となるコンピューターのプロセッサ。 既定値は `msil` です。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
+|`Name`|必須。 確認するアセンブリの完全修飾名。|
+|`PublicKeyToken`|必須。 この厳密な名前を持つアセンブリに関連付けられている公開キーの省略形。 GAC に格納されているすべてのアセンブリは、名前、バージョン、および公開キーを持っている必要があります。|
+|`Version`|必須。 アセンブリのバージョン。<br /><br /> バージョン番号の形式は... \<*major version*> \<*minor version*> \<*build version*> \<*revision version*> です。|
+|`Language`|省略可能。 ローカライズされたアセンブリの言語。 既定値は `neutral` です。|
+|`ProcessorArchitecture`|省略可能。 このインストールの対象となるコンピュータープロセッサ。 既定値は `msil` です。|
 
 ## <a name="externalcheck"></a>ExternalCheck
- この要素は省略可能な子要素の`InstallChecks`します。 インスタンスごとに`ExternalCheck`、ブートス トラップは別のプロセスで、名前付きの外部のプログラムを実行し、その終了コードで示されるプロパティに格納`Property`します。 `ExternalCheck` 複雑な依存関係のチェックを実装するため、またはコンポーネントの存在を確認する唯一の方法でインスタンス化する場合に便利です。
+ この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `ExternalCheck` 指定された外部プログラムを別のプロセスで実行し、によって示されるプロパティにその終了コードを格納し `Property` ます。 `ExternalCheck`は、複雑な依存関係のチェックを実装する場合や、コンポーネントの存在を確認する唯一の方法が、インスタンスをインスタンス化する場合に便利です。
 
- `ExternalCheck` 要素が含まれていない、次の属性です。
+ `ExternalCheck`には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`PackageFile`|必須。 実行する外部プログラムです。 プログラムは、セットアップの配布パッケージの一部である必要があります。|
-|`Arguments`|任意。 実行可能ファイルによってという名前のコマンドライン引数を提供`PackageFile`します。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
+|`PackageFile`|必須。 実行する外部プログラムです。 プログラムは、セットアップ配布パッケージの一部である必要があります。|
+|`Arguments`|省略可能。 は、によって指定された実行可能ファイルにコマンドライン引数を渡し `PackageFile` ます。|
 
-## <a name="filecheck"></a>チェックイン
- この要素は省略可能な子要素の`InstallChecks`します。 インスタンスごとに`FileCheck`、ブートス トラップは、名前付きのファイルが存在し、ファイルのバージョン番号を返すかどうかが決まります。 ブートス トラップがによってという名前のプロパティを設定する場合は、ファイルには、バージョン番号がない、`Property`を 0 にします。 ファイルが存在しない場合`Property`任意の値に設定されていません。
+## <a name="filecheck"></a>FileCheck
+ この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `FileCheck` 指定されたファイルが存在するかどうかを判断し、そのファイルのバージョン番号を返します。 ファイルにバージョン番号がない場合、ブートストラップはによって指定されたプロパティを `Property` 0 に設定します。 ファイルが存在しない場合、 `Property` は何の値にも設定されません。
 
- `FileCheck` 要素が含まれていない、次の属性です。
+ `FileCheck`には要素が含まれておらず、には次の属性があります。
 
 | 属性 | 説明 |
 |-----------------| - |
-| `Property` | 必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。 |
+| `Property` | 必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。 |
 | `FileName` | 必須。 検索するファイルの名前。 |
-| `SearchPath` | 必須。 ディスクまたはファイルを検索するフォルダー。 場合は、相対パスをあるこの必要があります`SpecialFolder`が割り当てられます。 それ以外の場合、その絶対パスである必要があります。 |
-| `SpecialFolder` | 任意。 Windows に、またはに特別な意味を持つフォルダー[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]します。 既定では解釈`SearchPath`に絶対パス。 以下の値が有効です。<br /><br /> `AppDataFolder`。 このアプリケーション データ フォルダー[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション; 現在のユーザーに特定します。<br /><br /> `CommonAppDataFolder`。 すべてのユーザーが使用するアプリケーション データ フォルダー。<br /><br /> `CommonFilesFolder`。 現在のユーザーの共通ファイル フォルダーです。<br /><br /> `LocalDataAppFolder`。 アプリケーションの非ローミングのデータ フォルダー。<br /><br /> `ProgramFilesFolder`。 32 ビット アプリケーションの標準の Program Files フォルダー。<br /><br /> `StartUpFolder`。 このフォルダーは、システムの起動時に起動されたすべてのアプリケーションが含まれています。<br /><br /> `SystemFolder`。 このフォルダーは、32 ビット システム Dll が含まれています。<br /><br /> `WindowsFolder`。 このフォルダーは、Windows システムのインストールが含まれています。<br /><br /> `WindowsVolume`。 ドライブまたはパーティションを Windows システムのインストールが含まれています。 |
-| `SearchDepth` | 任意。 名前付きのファイル用のサブフォルダーを検索する位置の深さ。 深さ優先検索では。 既定値は 0 であり、によって指定された最上位フォルダーの検索範囲を限定`SpecialFolder`と**SearchPath**します。 |
+| `SearchPath` | 必須。 ファイルを検索するディスクまたはフォルダー。 が割り当てられている場合、これは相対パスである必要があります。 `SpecialFolder` それ以外の場合は、絶対パスである必要があります。 |
+| `SpecialFolder` | 省略可能。 Windows またはのいずれかに特別な意味を持つフォルダー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 既定では、 `SearchPath` 絶対パスとして解釈されます。 有効な値は次のとおりです。<br /><br /> `AppDataFolder`. このアプリケーションのアプリケーションデータフォルダー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。現在のユーザーに固有です。<br /><br /> `CommonAppDataFolder`. すべてのユーザーが使用するアプリケーションデータフォルダー。<br /><br /> `CommonFilesFolder`. 現在のユーザーの共通ファイルフォルダー。<br /><br /> `LocalDataAppFolder`. 非ローミングアプリケーションのデータフォルダー。<br /><br /> `ProgramFilesFolder`. 32ビットアプリケーションの標準の Program Files フォルダー。<br /><br /> `StartUpFolder`. システムの起動時に起動されるすべてのアプリケーションを含むフォルダー。<br /><br /> `SystemFolder`. 32ビットシステム Dll を格納しているフォルダー。<br /><br /> `WindowsFolder`. Windows システムのインストールが含まれているフォルダー。<br /><br /> `WindowsVolume`. Windows システムのインストールが含まれているドライブまたはパーティション。 |
+| `SearchDepth` | 省略可能。 名前付きファイルのサブフォルダーを検索する深さ。 検索は深さ優先です。 既定値は0です。これにより、と SearchPath によって指定された最上位フォルダーに検索が制限され `SpecialFolder` ます。 **SearchPath** |
 
 ## <a name="msiproductcheck"></a>MsiProductCheck
- この要素は省略可能な子要素の`InstallChecks`します。 インスタンスごとに`MsiProductCheck`、ブートス トラップが完了するまでに指定した Microsoft Windows インストーラーのインストールが実行するかどうかを確認します。 プロパティの値は、製品のインストールの状態によって設定されます。 正の値は、製品がインストールされていることを示します。 0 または-1 がインストールされていないことを示します。 (を参照してください詳細については、Windows インストーラー SDK 関数 MsiQueryFeatureState。). Windows インストーラーがコンピューターにインストールされていない場合`Property`が設定されていません。
+ この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `MsiProductCheck` 指定した Microsoft Windows インストーラーのインストールが完了するまで実行されているかどうかを確認します。 プロパティ値は、インストールされている製品の状態に応じて設定されます。 正の値は、製品がインストールされていることを示します。0または-1 は、インストールされていないことを示します。 (詳細については、Windows インストーラー SDK 関数 MsiQueryFeatureState を参照してください)。. コンピューターに Windows インストーラーがインストールされていない場合、 `Property` は設定されません。
 
- `MsiProductCheck` 要素が含まれていない、次の属性です。
+ `MsiProductCheck`には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Product`|必須。 インストールされている製品の GUID です。|
-|`Feature`|任意。 インストールされているアプリケーションの特定の機能の GUID です。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
+|`Product`|必須。 インストールされている製品の GUID。|
+|`Feature`|省略可能。 インストールされているアプリケーションの特定の機能の GUID。|
 
 ## <a name="registrycheck"></a>RegistryCheck
- この要素は省略可能な子要素の`InstallChecks`します。 インスタンスごとに`RegistryCheck`、ブートス トラップは、指定されたレジストリ キーが存在するかどうか、または、指定された値があるかどうかを確認します。
+ この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについ `RegistryCheck` て、指定されたレジストリキーが存在するかどうか、または指定された値があるかどうかを確認します。
 
- `RegistryCheck` 要素が含まれていない、次の属性です。
+ `RegistryCheck`には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
 |`Key`|必須。 レジストリ キーの名前。|
-|`Value`|任意。 取得するレジストリ値の名前。 既定では、既定値のテキストを返します。 `Value` DWORD または文字列のいずれかである必要があります。|
+|`Value`|省略可能。 取得するレジストリ値の名前です。 既定では、既定値のテキストが返されます。 `Value`文字列または DWORD のいずれかである必要があります。|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
- この要素は省略可能な子要素の`InstallChecks`します。 インスタンスごとに`RegistryFileCheck`、ブートス トラップは最初に指定されたレジストリ キーからファイルへのパスを取得しようとすると、指定されたファイルのバージョンを取得します。 これは、レジストリの値として指定されたディレクトリ内のファイルを検索する場合に特に便利です。
+ この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、指定された `RegistryFileCheck` ファイルのバージョンを取得します。最初に、指定したレジストリキーからファイルへのパスを取得しようとします。 これは、レジストリで値として指定されたディレクトリ内のファイルを検索する場合に特に便利です。
 
- `RegistryFileCheck` 要素が含まれていない、次の属性です。
+ `RegistryFileCheck`には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Key`|必須。 レジストリ キーの名前。 しない限り、その値は、ファイルへのパスとして解釈されます、`File`属性を設定します。 このキーが存在しない場合`Property`が設定されていません。|
-|`Value`|任意。 取得するレジストリ値の名前。 既定では、既定値のテキストを返します。 `Value` 文字列である必要があります。|
-|`FileName`|任意。 ファイルの名前。 指定すると、レジストリ キーから取得した値と見なされます、ディレクトリ パスを指定して、この名前が追加されました。 指定しない場合、レジストリから返される値は、ファイルへの完全パスと見なされます。|
-|`SearchDepth`|任意。 名前付きのファイル用のサブフォルダーを検索する位置の深さ。 深さ優先検索では。 既定では 0 で、レジストリ キーの値によって指定された最上位のフォルダーに検索が制限されます。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
+|`Key`|必須。 レジストリ キーの名前。 属性が設定されていない場合、その値はファイルへのパスとして解釈され `File` ます。 このキーが存在しない場合、 `Property` は設定されません。|
+|`Value`|省略可能。 取得するレジストリ値の名前です。 既定では、既定値のテキストが返されます。 `Value`は文字列である必要があります。|
+|`FileName`|省略可能。 ファイルの名前。 指定した場合、レジストリキーから取得した値はディレクトリパスと見なされ、この名前が追加されます。 指定しない場合、レジストリから返される値は、ファイルへの完全パスであると見なされます。|
+|`SearchDepth`|省略可能。 名前付きファイルのサブフォルダーを検索する深さ。 検索は深さ優先です。 既定値は0で、レジストリキーの値によって指定された最上位フォルダーまで検索を制限します。|
 
 ## <a name="remarks"></a>Remarks
- 下にある要素の中に`InstallChecks`を実行するテストを定義して、それらが実行しないでください。 作成する必要があります、テストを実行する`Command`要素の下に、`Commands`要素。
+ の下にある要素は、 `InstallChecks` 実行するテストを定義しますが、実行されません。 テストを実行するには、要素の下に要素を作成する必要があり `Command` `Commands` ます。
 
 ## <a name="example"></a>例
- 次のコード例に示します、`InstallChecks`ほど要素は、.NET Framework の製品のファイルに使用されます。
+ 次のコード例では、 `InstallChecks` .NET Framework の製品ファイルで使用されている要素を示します。
 
 ```xml
 <InstallChecks>
@@ -154,25 +154,25 @@ ms.locfileid: "66747526"
 ```
 
 ## <a name="installconditions"></a>InstallConditions
- ときに`InstallChecks`は、評価プロパティを生成します。 は、プロパティを使用し、`InstallConditions`かを判断パッケージがインストール、バイパス、失敗します。 次の表、 `InstallConditions`:
+ を `InstallChecks` 評価すると、プロパティが生成されます。 次に、プロパティを使用して、 `InstallConditions` パッケージのインストール、バイパス、または失敗のいずれを行うかを決定します。 次の表に、の一覧を示し `InstallConditions` ます。
 
-|||
+|条件|説明|
 |-|-|
-|`FailIf`|存在する場合`FailIf`条件が true に評価されると、パッケージは失敗します。 残りの条件は評価されません。|
-|`BypassIf`|存在する場合`BypassIf`条件が true に評価された、パッケージがバイパスされます。 残りの条件は評価されません。|
+|`FailIf`|いずれかの `FailIf` 条件が true と評価された場合、パッケージは失敗します。 残りの条件は評価されません。|
+|`BypassIf`|いずれかの条件が true と評価されると、 `BypassIf` パッケージはバイパスされます。 残りの条件は評価されません。|
 
 ## <a name="predefined-properties"></a>定義済みのプロパティ
- 次の表、`BypassIf`と`FailIf`要素。
+ 要素と要素の一覧を次の表に示し `BypassIf` `FailIf` ます。
 
-|プロパティ|メモ|使用できる値|
+|プロパティ|Notes|指定できる値|
 |--------------|-----------|---------------------|
-|`Version9X`|Windows 9 X オペレーティング システムのバージョン番号。|4.10 = Windows 98|
-|`VersionNT`|Windows NT ベースのオペレーティング システムのバージョン番号。|Major.minor.servicepack です。<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 が Windows XP を =<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|
-|`VersionNT64`|64 ビット Windows NT ベースのオペレーティング システムのバージョン番号。|前に示したのと同じです。|
-|`VersionMsi`|Windows インストーラー サービスのバージョン番号。|2.0 Windows インストーラー 2.0 を =|
-|`AdminUser`|ユーザーが Windows NT ベースのオペレーティング システムの管理者特権を持つかどうかを指定します。|0 = 管理者特権なし<br /><br /> 1 = 管理者の権限|
+|`Version9X`|Windows 9X オペレーティングシステムのバージョン番号。|4.10 = Windows 98|
+|`VersionNT`|Windows NT ベースのオペレーティングシステムのバージョン番号。|Major. Minor. ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|
+|`VersionNT64`|64ビット Windows NT ベースのオペレーティングシステムのバージョン番号。|前に説明したのと同じです。|
+|`VersionMsi`|Windows インストーラーサービスのバージョン番号。|2.0 = Windows インストーラー2.0|
+|`AdminUser`|ユーザーが Windows NT ベースのオペレーティングシステムに対する管理者特権を持っているかどうかを指定します。|0 = 管理者特権はありません。<br /><br /> 1 = 管理者特権|
 
- たとえば、Windows 95 が実行されているコンピューターへのインストールをブロックするには、次のようコードを使用します。
+ たとえば、Windows 95 を実行しているコンピューターでのインストールをブロックするには、次のようなコードを使用します。
 
 ```xml
 <!-- Block install on Windows 95 -->
@@ -180,5 +180,5 @@ ms.locfileid: "66747526"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)
-- [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
+- [\<Commands>element](../deployment/commands-element-bootstrapper.md)
+- [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)
