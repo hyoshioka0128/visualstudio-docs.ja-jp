@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによってワークシートを選択する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255626"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547005"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>方法: プログラムによってワークシートを選択する
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> メソッドは指定されたオブジェクトを選択します。これにより、ユーザーの選択が新しいオブジェクトに移動します。 ユーザーの選択を変更せずにフォーカスをオブジェクトに移動する場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> メソッドを使用します。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- VSTO アドインで既存のワークシートを選択する場合、または、ドキュメント レベルのカスタマイズでワークシートが実行時に作成された場合は、Excel ブックの Excel <xref:Microsoft.Office.Interop.Excel.Sheets> コレクションを使用してこれにアクセスする必要があります。それ以外の場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目に直接アクセスできます。
+ VSTO アドインで既存のワークシートを選択する場合、またはワークシートがドキュメントレベルのカスタマイズで実行時に作成された場合は、excel ブックの Excel コレクションを使用してアクセスする必要があります <xref:Microsoft.Office.Interop.Excel.Sheets> 。それ以外の場合は、 <xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目に直接アクセスできます。
 
 ## <a name="use-the-worksheet-host-item"></a>ワークシートのホスト項目を使用する
  ドキュメントレベルのカスタマイズで、 *Sheet1*または*Sheet1.cs*に次のコードを追加します。

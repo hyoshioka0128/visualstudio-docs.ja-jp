@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによってドキュメント内の範囲を拡張します。'
+title: '方法: プログラムによって文書内の範囲を拡張する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26213477e7cec69da9171c5197371772973be5d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35ef0ea0352141f18945632f996237c2d9d90204
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812752"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547421"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>方法: プログラムによってドキュメント内の範囲を拡張します。
-  Microsoft Office Word ドキュメントで <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを定義した後、その始点と終点を <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> メソッドと <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> メソッドを使用して変更します。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>と<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>メソッドが同じ 2 つの引数を受け取ります*単位*と*カウント*します。 *カウント*引数は、移動するユニットの数と*単位*引数は、次のいずれかを指定できます<xref:Microsoft.Office.Interop.Word.WdUnits>値。
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>方法: プログラムによって文書内の範囲を拡張する
+  Microsoft Office Word ドキュメントで <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを定義した後、その始点と終点を <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> メソッドと <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> メソッドを使用して変更します。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>メソッドと <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> メソッドは、同じ2つの引数 ( *Unit*と*Count*) を受け取ります。 *Count*引数は移動する単位の数で、 *Unit*引数には次のいずれかの値を指定でき <xref:Microsoft.Office.Interop.Word.WdUnits> ます。
 
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>
 
@@ -49,7 +49,7 @@ ms.locfileid: "62812752"
 
 ## <a name="to-extend-a-range"></a>範囲を拡張するには
 
-1. 文字の範囲を定義します。 詳細については、「[方法 :プログラムで定義し、ドキュメントで範囲を選択](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)します。
+1. 文字の範囲を定義します。 詳細については、「[方法: ドキュメント内の範囲をプログラムによって定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)」を参照してください。
 
      次のコード例はドキュメント レベルのカスタマイズで使用できます。
 
@@ -71,7 +71,7 @@ ms.locfileid: "62812752"
      [!code-vb[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#41)]
      [!code-csharp[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#41)]
 
-## <a name="document-level-customization-code"></a>ドキュメント レベルのカスタマイズ コード
+## <a name="document-level-customization-code"></a>ドキュメントレベルのカスタマイズコード
 
 ### <a name="to-extend-a-range-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで範囲を拡張するには
 
@@ -90,8 +90,8 @@ ms.locfileid: "62812752"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって Word のドキュメント内の範囲をリセットします。](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [方法: プログラムまたはドキュメント内の選択範囲を折りたたむ](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [方法: 範囲の先頭と末尾の文字をプログラムで取得します。](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [方法: プログラムから除外する段落記号の範囲を作成するときに](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [方法: プログラムによって Word 文書の範囲をリセットする](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [方法: プログラムによって文書内の範囲または選択項目を折りたたむ](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [方法: プログラムによって文書内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [方法: プログラムによって範囲内の開始文字と終了文字を取得する](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [方法: 範囲を作成するときにプログラムによって段落記号を除外する](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

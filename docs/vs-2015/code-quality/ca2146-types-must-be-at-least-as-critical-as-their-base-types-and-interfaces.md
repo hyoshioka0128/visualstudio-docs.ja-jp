@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ab621ade120a257508eddbf9527f674b5fda8748
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2316d6e555fa091d26392aee71b774489c81a379
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610185"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546394"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: 型は、基本型およびインターフェイスと同程度以上、重要でなければならない
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146:型は、基本型およびインターフェイスと同程度以上、重要でなければならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
@@ -29,10 +29,10 @@ ms.locfileid: "72610185"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過型は、<xref:System.Security.SecuritySafeCriticalAttribute> または <xref:System.Security.SecurityCriticalAttribute> でマークされた型から派生します。または、<xref:System.Security.SecuritySafeCriticalAttribute> 属性でマークされた型は、<xref:System.Security.SecurityCriticalAttribute> 属性でマークされた型から派生します。
+ 透過型は、またはでマークされた型から派生し <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityCriticalAttribute> ます。または、属性でマークされた型は、 <xref:System.Security.SecuritySafeCriticalAttribute> 属性でマークされた型から派生し <xref:System.Security.SecurityCriticalAttribute> ます。
 
-## <a name="rule-description"></a>規則の説明
- 派生型に透過的セキュリティ属性が設定されていて、この属性が基本型または実装されたインターフェイスほど重要ではない場合に、この規則が適用されます。 クリティカルな基本型から派生したり、クリティカルなインターフェイスを実装したりできるのは、クリティカルなデータ型だけです。また、セーフ クリティカルな基本型から派生したり、セーフ クリティカルなインターフェイスを実装したりできるのは、クリティカルまたはセーフ クリティカルなデータ型だけです。 レベル2の透過性におけるこのルールの違反は、派生型の <xref:System.TypeLoadException> になります。
+## <a name="rule-description"></a>ルールの説明
+ 派生型に透過的セキュリティ属性が設定されていて、この属性が基本型または実装されたインターフェイスほど重要ではない場合に、この規則が適用されます。 クリティカルな基本型から派生したり、クリティカルなインターフェイスを実装したりできるのは、クリティカルなデータ型だけです。また、セーフ クリティカルな基本型から派生したり、セーフ クリティカルなインターフェイスを実装したりできるのは、クリティカルまたはセーフ クリティカルなデータ型だけです。 レベル2の透過性でこの規則を違反すると、 <xref:System.TypeLoadException> 派生型のがになります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この違反を修正するには、基本型またはインターフェイスとして少なくとも重要な透過性属性を使用して、派生または実装する型をマークします。

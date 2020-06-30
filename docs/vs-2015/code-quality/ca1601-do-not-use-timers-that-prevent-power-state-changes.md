@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 95f13604908ad45c5f33a011fec886bba90d0bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7928b2fff8c12ca3f0cc3c58bee31fe5809517e5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669286"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545640"
 ---
-# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: 電源の状態の変更を妨げるタイマーを使用しません
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601:電源の状態の変更を妨げるタイマーを使用しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|
 |CheckId|CA1601|
@@ -35,7 +35,7 @@ ms.locfileid: "72669286"
 ## <a name="cause"></a>原因
  タイマーの間隔が1秒間に複数回発生するように設定されています。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  1秒間に複数回ポーリングしたり、1秒間に1回以上発生するタイマーを使用したりしないでください。 定期的な動作の頻度が高くなると、CPU のビジー状態が続き、ディスプレイとハード ディスクをオフにする省電力アイドル タイマーに影響を与えます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

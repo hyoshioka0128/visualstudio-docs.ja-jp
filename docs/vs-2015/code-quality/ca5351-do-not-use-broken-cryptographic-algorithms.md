@@ -8,17 +8,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b4a15530a43937b4f73fba1779216391c862c11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669018"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545055"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 破られた暗号アルゴリズムを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
@@ -33,7 +33,7 @@ ms.locfileid: "72669018"
 
  下の暗号アルゴリズムの一覧は、既知の暗号攻撃を受ける可能性があります。 暗号化ハッシュ アルゴリズム <xref:System.Security.Cryptography.MD5> は、ハッシュの競合攻撃を受ける可能性があります。  使用状況に応じて、ハッシュの競合は、偽装、改ざん、またはハッシュ関数の一意の暗号出力を使用するシステムへのその他の種類の攻撃を招く可能性があります。 暗号アルゴリズム <xref:System.Security.Cryptography.DES> と <xref:System.Security.Cryptography.RC2> は、暗号化されたデータの意図しない漏洩につながる可能性のある暗号攻撃の対象となる可能性があります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  破られた暗号アルゴリズムはセキュアであるとは見なされず、それらを使用しないことをお勧めします。 使用コンテキストに応じて特定の脆弱性は異なりますが、MD5 ハッシュ アルゴリズムは既知の競合攻撃の影響を受けやすくなっています。  データの整合性を確保するために使用するハッシュ アルゴリズム (ファイル署名またはデジタル証明書など) は、特に脆弱です。  このコンテキストでは、攻撃者が 2 つの独立したデータを生成し、ハッシュ値を変更したり、関連付けられているデジタル署名を無効にしたりすることなく、悪意のないデータを悪意のあるデータで置き換えるなどの可能性があります。
 
  暗号アルゴリズムの場合:
@@ -47,7 +47,7 @@ ms.locfileid: "72669018"
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  暗号強度の高いオプションを使用します。
 
-- MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。
+- MD5 の場合は、 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)ファミリでハッシュを使用します (例:、 <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> )。
 
 - DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。
 
@@ -66,7 +66,7 @@ var hashAlg = MD5.Create();
 
 ```
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 
 ```
 using System.Security.Cryptography;
@@ -84,7 +84,7 @@ RC2 encAlg = RC2.Create();
 
 ```
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 
 ```
 using System.Security.Cryptography;
@@ -104,7 +104,7 @@ DES encAlg = DES.Create();
 
 ```
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 
 ```
 using System.Security.Cryptography;

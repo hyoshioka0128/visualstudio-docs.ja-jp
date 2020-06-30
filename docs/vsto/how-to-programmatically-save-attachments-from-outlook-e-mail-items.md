@@ -1,7 +1,7 @@
 ---
-title: プログラムによって Outlook の電子メール アイテムから添付ファイルを保存します。
+title: プログラムによって Outlook の電子メールアイテムから添付ファイルを保存する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328965"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545887"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>方法: プログラムによって Outlook の電子メール アイテムから添付ファイルを保存します。
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>方法: プログラムによって Outlook の電子メールアイテムから添付ファイルを保存する
 
 この例では、メールを受信トレイで受け取ったときに、電子メールの添付ファイルを指定されたフォルダーに保存します。
 
 > [!IMPORTANT]
-> この例の動作という名前のフォルダーを追加する場合にのみ**TestFileSave** C ディレクトリのルートにあります。
+> この例は、C ディレクトリのルートに**TestFileSave**という名前のフォルダーを追加した場合にのみ機能します。
 
 [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "67328965"
 
 ## <a name="see-also"></a>関連項目
 
-- [メールの項目を操作します。](../vsto/working-with-mail-items.md)
-- [方法: 名前でフォルダーをプログラムで取得します。](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [方法: プログラムで電子メール メッセージを受信したときにアクションを実行します。](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [方法: プログラムによって特定のフォルダー内を検索します。](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [メールアイテムの操作](../vsto/working-with-mail-items.md)
+- [方法: プログラムによって名前を指定してフォルダーを取得する](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [方法: 電子メールメッセージを受信したときにプログラムによってアクションを実行する](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [方法: プログラムによって特定のフォルダー内を検索する](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

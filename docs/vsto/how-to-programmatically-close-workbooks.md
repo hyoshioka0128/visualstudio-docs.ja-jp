@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによってブックを閉じる'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575404"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547499"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>方法: プログラムによってブックを閉じる
   作業中のブックを閉じたり、ブックを指定して閉じたりすることができます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="close-the-active-workbook"></a>アクティブなブックを閉じる
+## <a name="close-the-active-workbook"></a>作業中のブックを閉じる
  作業中のブックを閉じる手順には、ドキュメント レベルのカスタマイズでの手順と VSTO アドインでの手順の 2 つがあります。
 
 ### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで作業中のブックを閉じるには
@@ -42,7 +42,7 @@ ms.locfileid: "62575404"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
 
-## <a name="close-a-workbook-that-you-specify-by-name"></a>名前を指定してブックを閉じる
+## <a name="close-a-workbook-that-you-specify-by-name"></a>名前で指定したブックを閉じる
  名前を指定してブックを閉じる方法は、VSTO アドインとドキュメント レベルのカスタマイズで同じです。
 
 ### <a name="to-close-a-workbook-that-you-specify-by-name"></a>名前を指定してブックを閉じるには
@@ -53,9 +53,9 @@ ms.locfileid: "62575404"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
 ## <a name="see-also"></a>関連項目
-- [ブックを操作します。](../vsto/working-with-workbooks.md)
-- [方法: プログラムによってブックを保存します。](../vsto/how-to-programmatically-save-workbooks.md)
+- [ブックの操作](../vsto/working-with-workbooks.md)
+- [方法: プログラムによってブックを保存する](../vsto/how-to-programmatically-save-workbooks.md)
 - [方法: プログラムによってブックを開く](../vsto/how-to-programmatically-open-workbooks.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)

@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1852e7a5cbaa2d25f93618b22d01d23e8a953dcb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5c1e254ae7912efbb6773155ed834e54a1db1832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667445"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546329"
 ---
-# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: 透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない
+# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |CheckId|CA2149|
@@ -31,11 +31,11 @@ ms.locfileid: "72667445"
 ## <a name="cause"></a>原因
  メソッドは、P/Invoke などのメソッドスタブを介してネイティブ関数を呼び出します。
 
-## <a name="rule-description"></a>規則の説明
- この規則は、P/Invoke などを使用してネイティブ コードを直接呼び出すすべての透過的メソッドに対して適用されます。 この規則に違反すると、レベル2の透過性モデルの <xref:System.MethodAccessException> と、レベル1の透過性モデルの <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> に対する完全な要求が発生します。
+## <a name="rule-description"></a>ルールの説明
+ この規則は、P/Invoke などを使用してネイティブ コードを直接呼び出すすべての透過的メソッドに対して適用されます。 この規則を違反すると、 <xref:System.MethodAccessException> レベル2の透過性モデルのになり、レベル1の透過性モデルのに対する完全な要求が発生し <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、ネイティブコードを呼び出すメソッドを、<xref:System.Security.SecurityCriticalAttribute> または <xref:System.Security.SecuritySafeCriticalAttribute> 属性でマークします。
+ この規則違反を修正するには、ネイティブコードを呼び出すメソッドを、 <xref:System.Security.SecurityCriticalAttribute> 属性または属性でマークし <xref:System.Security.SecuritySafeCriticalAttribute> ます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。

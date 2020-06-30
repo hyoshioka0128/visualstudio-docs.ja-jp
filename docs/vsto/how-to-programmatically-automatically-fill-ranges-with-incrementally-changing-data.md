@@ -1,7 +1,7 @@
 ---
-title: 増分するデータ範囲をプログラムでオートコンプリート
+title: データ範囲をプログラムによって段階的にオートフィルする
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,46 +15,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177691"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547473"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: プログラムによって自動的に増分するデータ範囲を入力します。
-  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>のメソッド、<xref:Microsoft.Office.Interop.Excel.Range>オブジェクトでは、値を含むワークシートで範囲を自動的に入力することができます。 ほとんどの場合、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドは、段階的増加または減少する範囲の値の格納に使用されます。 任意の定数を指定して、動作を指定することができます、<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列挙体。
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する
+  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>オブジェクトのメソッドを使用すると、 <xref:Microsoft.Office.Interop.Excel.Range> ワークシートの範囲に値を自動的に入力できます。 多くの場合、メソッドを使用して、 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 範囲内の値を段階的に増加または減少させることができます。 列挙から省略可能な定数を指定することにより、動作を指定でき <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> ます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 使用する場合は、2 つの範囲を指定する必要があります<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
+ を使用する場合は、2つの範囲を指定する必要があり <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> ます。
 
-- 呼び出す範囲、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドでは、塗りつぶしの開始位置を指定し、初期値が含まれています。
+- メソッドを呼び出す範囲。このメソッドは、 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 塗りつぶしの開始点を指定し、初期値を格納します。
 
-- パラメーターとして渡される範囲を入力する、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッド。 この変換先の範囲は、初期値を含む範囲を含める必要があります。
+- 入力する範囲。パラメーターとしてメソッドに渡さ <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> れます。 このターゲット範囲には、初期値を含む範囲を含める必要があります。
 
     > [!NOTE]
-    > 渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
+    > の代わりにコントロールを渡すことはできません <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> 。 詳細については、「[ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)」を参照してください。
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
  [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
 
 ## <a name="compile-the-code"></a>コードのコンパイル
- 格納する範囲の最初のセルには、初期値を含める必要があります。
+ データを格納する範囲の最初のセルには、初期値を含める必要があります。
 
- この例では、3 つのリージョンを入力することが必要です。
+ この例では、3つのリージョンに入力する必要があります。
 
-- 列 B には 5 つまでの平日を含めます。 初期値に「**月曜日**セル B1 にします。
+- 列 B は、5つの平日を含めることを示します。 初期値には、セル B1 に「 **Monday** 」と入力します。
 
-- 列 C には 5 か月が含まれます。 初期値に「**年 1 月**セル C1 にします。
+- 列 C は5か月を含むことになります。 初期値には、セル C1 に「 **January** 」と入力します。
 
-- 列 D では、一連の数字、行ごとに 2 つずつインクリメントされます。 初期値として、入力**4** D1 のセルと**6**セル D2 にします。
+- 列 D には、行ごとに2ずつインクリメントした一連の数値を含めることができます。 初期値については、セル D2 に「 **4** **」と入力**します。
 
 ## <a name="see-also"></a>関連項目
-- [範囲を操作します。](../vsto/working-with-ranges.md)
-- [方法: コード内でワークシートの範囲をプログラムで参照してください。](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [方法: プログラムによってブック内の範囲にスタイルを適用します。](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [方法: Excel の計算をプログラムで実行します。](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [範囲の操作](../vsto/working-with-ranges.md)
+- [方法: プログラムによってコード内でワークシートの範囲を参照する](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [方法: プログラムによってブック内の範囲にスタイルを適用する](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [方法: Excel の計算をプログラムで実行する](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

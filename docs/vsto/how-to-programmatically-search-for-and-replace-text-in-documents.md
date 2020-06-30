@@ -1,7 +1,7 @@
 ---
-title: 検索し、プログラムによって文書内のテキストを置換
+title: プログラムによるドキュメント内のテキストの検索と置換
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6508fee244dd50a1d2fd42203c2982b959b0e547
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328906"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547044"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>方法: プログラムを検索して、文書内のテキストを置換
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>方法: プログラムによって文書内のテキストを検索および置換する
   <xref:Microsoft.Office.Interop.Word.Find> オブジェクトは <xref:Microsoft.Office.Interop.Word.Selection> および <xref:Microsoft.Office.Interop.Word.Range> オブジェクトの両方のメンバーであり、どちらを使用しても Microsoft Office Word ドキュメント内のテキストを検索できます。 Replace コマンドは、Find コマンドの拡張機能です。
 
  <xref:Microsoft.Office.Interop.Word.Find> オブジェクトを使用して Microsoft Office Word ドキュメントをループ処理し、特定のテキスト、書式、またはスタイルを検索し、<xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> プロパティを使用して検出された項目を置き換えます。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="use-a-selection-object"></a>Selection オブジェクトを使用します。
+## <a name="use-a-selection-object"></a>選択オブジェクトを使用する
  テキストを検索するために <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトを使用する場合、指定する検索条件は現在選択されているテキストにしか適用されません。 <xref:Microsoft.Office.Interop.Word.Selection> が挿入ポイントの場合は、ドキュメントが検索されます。 検索条件に一致する項目が見つかった場合は、それが自動的に選択されます。
 
  <xref:Microsoft.Office.Interop.Word.Find> の条件は累積的、つまり、条件は前の検索条件に追加されることに注意することが重要です。 検索の前に、<xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> メソッドを使用して前の検索から書式をクリアします。
@@ -57,8 +57,8 @@ ms.locfileid: "67328906"
    [!code-vb[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#67)]
    [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]
 
-## <a name="use-a-range-object"></a>Range オブジェクトを使用して、
- <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを使用すると、ユーザー インターフェイスに何も表示せずにテキストを検索することができます。 <xref:Microsoft.Office.Interop.Word.Find>オブジェクトを返します。 **True** 、検索条件に一致するテキストが見つかった場合、 **False**そうでない場合。 また、テキストが検出された場合は、検索条件を突き合わせる <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを再定義します。
+## <a name="use-a-range-object"></a>範囲オブジェクトを使用する
+ <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを使用すると、ユーザー インターフェイスに何も表示せずにテキストを検索することができます。 オブジェクトは、 <xref:Microsoft.Office.Interop.Word.Find> 検索条件に一致するテキストが見つかった場合は**True**を返し、そうでない場合は**False**を返します。 また、テキストが検出された場合は、検索条件を突き合わせる <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを再定義します。
 
 ### <a name="to-find-text-using-a-range-object"></a>Range オブジェクトを使用してテキストを検索するには
 
@@ -74,7 +74,7 @@ ms.locfileid: "67328906"
     [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]
 
-2. 使用して、<xref:Microsoft.Office.Interop.Word.Range.Find%2A>のプロパティ、<xref:Microsoft.Office.Interop.Word.Range>オブジェクト、既存の書式設定オプションをオフにして文字列を検索し、**検索 me**します。
+2. オブジェクトのプロパティを使用して、 <xref:Microsoft.Office.Interop.Word.Range.Find%2A> <xref:Microsoft.Office.Interop.Word.Range> まず既存の書式設定オプションをすべてクリアし、[ **find me**] という文字列を検索します。
 
     [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
     [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]
@@ -96,8 +96,8 @@ ms.locfileid: "67328906"
    [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#71)]
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
-## <a name="search-for-and-replace-text-in-documents"></a>検索し、文書内のテキストを置換
- 次のコードは、現在の選択範囲を検索し、すべての文字列の出現回数を置き換えます**find me」** 文字列**Found**。
+## <a name="search-for-and-replace-text-in-documents"></a>ドキュメント内のテキストの検索と置換
+ 次のコードでは、現在の選択範囲を検索し、見つかった文字列のすべての出現箇所を**検索**し**た**文字列で置き換えます。
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>ドキュメント内のテキストを検索し、置換するには
 
@@ -106,9 +106,9 @@ ms.locfileid: "67328906"
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
-     <xref:Microsoft.Office.Interop.Word.Find> クラスには <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> メソッドがあり、<xref:Microsoft.Office.Interop.Word.Replacement> クラスにも独自の <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> メソッドがあります。 検索と置換の操作を実行している場合は、両方のオブジェクトの ClearFormatting メソッドを使用する必要があります。 <xref:Microsoft.Office.Interop.Word.Find> オブジェクトでのみこのメソッドを使用すると、置換テキストで予想外の結果になる可能性があります。
+     <xref:Microsoft.Office.Interop.Word.Find> クラスには <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> メソッドがあり、<xref:Microsoft.Office.Interop.Word.Replacement> クラスにも独自の <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> メソッドがあります。 検索と置換の操作を実行するときは、両方のオブジェクトの ClearFormatting 指定メソッドを使用する必要があります。 <xref:Microsoft.Office.Interop.Word.Find> オブジェクトでのみこのメソッドを使用すると、置換テキストで予想外の結果になる可能性があります。
 
-2. 検出された各項目を置換するには、<xref:Microsoft.Office.Interop.Word.Find> オブジェクトの <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> メソッドを使用します。 置換する項目を指定するには、使用、*置換*パラメーター。 このパラメーターには、次の <xref:Microsoft.Office.Interop.Word.WdReplace> 値のいずれかを指定できます。
+2. 検出された各項目を置換するには、<xref:Microsoft.Office.Interop.Word.Find> オブジェクトの <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> メソッドを使用します。 置き換える項目を指定するには、 *replace*パラメーターを使用します。 このパラメーターには、次の <xref:Microsoft.Office.Interop.Word.WdReplace> 値のいずれかを指定できます。
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> は検出されたすべての項目を置換します。
 
@@ -117,8 +117,8 @@ ms.locfileid: "67328906"
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> は検出された最初の項目を置換します。
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって Word の検索オプションを設定します。](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [方法: プログラムによって文書で見つかった項目をループします。](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [方法: プログラムによって検索後に選択内容を復元します。](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [方法: プログラムによって Word の検索オプションを設定する](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [方法: ドキュメント内の見つかった項目をプログラムによってループする](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [方法: プログラムによって文書内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [方法: プログラムによって検索後に選択を復元する](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

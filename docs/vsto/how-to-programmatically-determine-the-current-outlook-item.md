@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって現在の Outlook アイテムを確認します。'
+title: '方法: プログラムによって現在の Outlook アイテムを確認する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547161"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>方法: プログラムによって現在の Outlook アイテムを確認します。
-  この例では、`Explorer.SelectionChange`現在のフォルダーと、選択したアイテムに関する情報の名前を表示するイベントです。 コードでは、選択した項目が表示されます。
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>方法: プログラムによって現在の Outlook アイテムを確認する
+  この例では、イベントを使用して、 `Explorer.SelectionChange` 現在のフォルダーの名前と、選択した項目に関する情報を表示します。 次に、選択した項目がコードによって表示されます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "62814820"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
-- 予定、連絡先、および Microsoft Office Outlook で電子メール アイテム。
+- Outlook Microsoft Office の予定、連絡先、および電子メールのアイテム。
 
 ## <a name="see-also"></a>関連項目
-- [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)
-- [方法: 名前でフォルダーをプログラムで取得します。](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [方法: プログラムによって特定の連絡先を検索します。](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)
+- [方法: プログラムによって名前を指定してフォルダーを取得する](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [方法: プログラムによって特定の連絡先を検索する](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

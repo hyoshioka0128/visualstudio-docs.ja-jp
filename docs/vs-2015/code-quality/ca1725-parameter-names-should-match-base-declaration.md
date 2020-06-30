@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 128069bb24dfc8b1c11963e33c9541701b0eea15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1fb30cd37ebffcee7619190cef83560813b25db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653737"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547369"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: パラメーター名は基本宣言と同一でなければなりません
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:パラメーター名は基本宣言と同一でなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
@@ -35,7 +35,7 @@ ms.locfileid: "72653737"
 ## <a name="cause"></a>原因
  外部から参照できるメソッドのオーバーライドのパラメーターの名前が、メソッドの基本宣言内のパラメーターの名前と一致しないか、またはメソッドのインターフェイス宣言内のパラメーターの名前と一致しません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  オーバーライド階層のパラメーターに対する一貫性のある名前付けによって、メソッド オーバーライドの有用性が高まります。 派生メソッドのパラメーター名が基本宣言のパラメーター名と異なる場合、メソッドが基本メソッドのオーバーライドであるか、またはメソッドの新しいオーバーライドであるかについて混乱が生じる可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

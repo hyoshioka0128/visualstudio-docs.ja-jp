@@ -1,7 +1,7 @@
 ---
 title: '方法: ワークシートのセル内のコントロールのサイズを変更する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c65be450c45d7797984105723d5ae1b01a2d63
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252071"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545874"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>方法: ワークシートのセル内のコントロールのサイズを変更する
   ワークシート上の列または行のサイズを変更すると、セル内のホストコントロールは、サイズ変更されたセルの高さまたは幅に自動的にサイズ変更されます。 Windows フォームコントロールは、既定では自動的にサイズ変更されません。
@@ -35,18 +35,18 @@ ms.locfileid: "71252071"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>デザイン時にコントロールのサイズをセルに合わせて変更するには
 
-1. **[ツールボックス]** から Windows フォームコントロールをワークシートにドラッグします。
+1. [**ツールボックス**] から Windows フォームコントロールをワークシートにドラッグします。
 
 2. コントロールを右クリックし、[コントロールの**書式設定**] をクリックします。
 
-3. **[コントロールの書式設定]** ダイアログボックスで、 **[プロパティ]** タブをクリックします。
+3. [**コントロールの書式設定**] ダイアログボックスで、[**プロパティ**] タブをクリックします。
 
-4. **[オブジェクトの配置]** で、 **[セルの移動とサイズ]** 変更 オプションを選択し、 **[OK]** をクリックします。
+4. [**オブジェクトの配置**] で、[**セルの移動とサイズ**変更] オプションを選択し、[ **OK**] をクリックします。
 
      コントロールを含むセルのサイズを変更すると、セルに合わせてコントロールのサイズが変更されます。
 
 ## <a name="resize-controls-at-run-time"></a>実行時にコントロールのサイズを変更する
- 実行時に Windows フォームコントロールを追加し、コントロールの場所と<xref:Microsoft.Office.Interop.Excel.Range>してを渡すと、その範囲を含むワークシートセルのサイズが変更されると、コントロールのサイズが自動的に変更されます。
+ 実行時に Windows フォームコントロールを追加し、 <xref:Microsoft.Office.Interop.Excel.Range> コントロールの場所としてを渡すと、その範囲を含むワークシートセルのサイズが変更されると、コントロールのサイズが自動的に変更されます。
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>実行時にコントロールのサイズをセルに合わせて変更するには
 
@@ -58,7 +58,7 @@ ms.locfileid: "71252071"
      コントロールを含むセルのサイズを変更すると、セルに合わせてコントロールのサイズが変更されます。
 
 ## <a name="reset-control-placement"></a>制御位置のリセット
- `Placement`プロパティを次<xref:Microsoft.Office.Interop.Excel.XlPlacement>のいずれかの値に設定することによって、コントロールの配置とサイズ変更をリセットできます。
+ `Placement`プロパティを次のいずれかの値に設定することによって、コントロールの配置とサイズ変更をリセットでき <xref:Microsoft.Office.Interop.Excel.XlPlacement> ます。
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
@@ -68,7 +68,7 @@ ms.locfileid: "71252071"
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>コントロールの動作を変更して、セルのサイズ変更や移動が行われないようにするには
 
-1. コントロールの placement プロパティを呼び出し、値をに<xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>設定します。
+1. コントロールの placement プロパティを呼び出し、値をに設定し <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating> ます。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

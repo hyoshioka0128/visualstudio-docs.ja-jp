@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f273ea5f58babf7a0c04f6b0758732d43aab7db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665961"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547772"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Deny と PermitOnly の用法を再確認します
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:拒否および許可のみの使用を確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|
 |CheckId|CA2107|
@@ -35,20 +35,20 @@ ms.locfileid: "72665961"
 ## <a name="cause"></a>原因
  メソッドには、PermitOnly または Deny セキュリティアクションを指定するセキュリティチェックが含まれています。
 
-## <a name="rule-description"></a>規則の説明
- [PermitOnly メソッド](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)と <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> セキュリティアクションの使用は、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] セキュリティに関する高度な知識を持つユーザーのみが使用する必要があります。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。
+## <a name="rule-description"></a>ルールの説明
+ [PermitOnly メソッド](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)とセキュリティアクションの使用は、 <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> セキュリティに関する高度な知識を持つユーザーのみが使用する必要があり [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ます。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。
 
  拒否は、セキュリティ要求に応じて発生するスタックウォークの既定の動作を変更します。 これにより、呼び出し履歴内の呼び出し元の実際のアクセス許可に関係なく、拒否するメソッドの期間中に付与されないアクセス許可を指定できます。 スタックウォークが拒否によってセキュリティ保護されたメソッドを検出し、要求されたアクセス許可が拒否されたアクセス許可に含まれている場合、スタックウォークは失敗します。 PermitOnly では、スタックウォークの既定の動作も変更されます。 これにより、呼び出し元のアクセス許可に関係なく、許可できるアクセス許可のみをコードで指定できます。 スタックウォークが PermitOnly によってセキュリティ保護されたメソッドを検出し、要求されたアクセス許可が PermitOnly によって指定されたアクセス許可に含まれていない場合、スタックウォークは失敗します。
 
- これらのアクションに依存するコードは、有用性と微妙な動作が制限されているため、セキュリティの脆弱性に対して慎重に評価する必要があります。 次に例を示します。
+ これらのアクションに依存するコードは、有用性と微妙な動作が制限されているため、セキュリティの脆弱性に対して慎重に評価する必要があります。 以下、具体例に沿って説明します。
 
 - [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)は、Deny または PermitOnly の影響を受けません。
 
 - スタックウォークを発生させる要求と同じスタックフレームで Deny または PermitOnly が発生した場合、セキュリティアクションは無効です。
 
-- パスベースのアクセス許可を構築するために使用される値は、通常、複数の方法で指定できます。 パスの1つの形式へのアクセスを拒否しても、すべてのフォームへのアクセスが拒否されるわけではありません。 たとえば、\Server\Share\File ファイル \\ 共有がネットワークドライブ X: にマップされている場合、共有上のファイルへのアクセスを拒否するには \\、X:\File、およびファイルにアクセスするその他のすべてのパスを拒否する必要があります。
+- パスベースのアクセス許可を構築するために使用される値は、通常、複数の方法で指定できます。 パスの1つの形式へのアクセスを拒否しても、すべてのフォームへのアクセスが拒否されるわけではありません。 たとえば、ファイル共有 \\ \ \ \ 共有がネットワークドライブ X: にマップされている場合、共有上のファイルへのアクセスを拒否するには、 \\ \Server\Share\File、X:\File、およびファイルにアクセスするその他のすべてのパスを拒否する必要があります。
 
-- @No__t_0 は、Deny または PermitOnly に到達する前にスタックウォークを終了できます。
+- は、 <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Deny または PermitOnly に到達する前にスタックウォークを終了できます。
 
 - 拒否によって何らかの影響がある場合 (つまり、呼び出し元に拒否によってブロックされるアクセス許可がある場合)、呼び出し元は保護されたリソースに直接アクセスして、拒否を回避することができます。 同様に、呼び出し元に拒否されたアクセス許可がない場合、スタックウォークは拒否されずに失敗します。
 
@@ -73,10 +73,10 @@ ms.locfileid: "72665961"
  この例を実行すると、次の出力が生成されます。
 
  **要求: 呼び出し元の拒否は、アサートされたアクセス許可で要求に影響しません。** 
-**linkdemand: 呼び出し元の拒否は、アサートされたアクセス許可を持つ linkdemand には影響しません。** 
-**Linkdemand: 呼び出し元の拒否は、linkdemand で保護されたコードに影響**しません。 
-**linkdemand: この拒否は、による影響はありません。LinkDemand で保護されたコード。**
-## <a name="see-also"></a>参照
+**Linkdemand: 呼び出し元の Deny は、アサートされたアクセス許可を持つ LinkDemand には影響しません。** 
+**Linkdemand: 呼び出し元の拒否は、LinkDemand で保護されたコードには影響しません。** 
+**Linkdemand: この拒否は、linkdemand で保護されたコードには影響しません。**
+## <a name="see-also"></a>関連項目
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>

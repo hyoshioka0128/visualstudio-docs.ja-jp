@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657060"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547980"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル : データ ソースを定義するための構成ファイルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72657060"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> クラスを使用してデータ ソースにアクセスする。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを完了するための要件を次に示します。
 
 - Visual Studio Enterprise
@@ -47,15 +47,15 @@ ms.locfileid: "72657060"
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>app.config ファイルをプロジェクトに追加するには
 
-1. テスト プロジェクトに既に app.config ファイルが存在する場合は、「[カスタム構成セクションの定義](#DefineCustomConfigurationSection)」に進みます。
+1. テストプロジェクトに既に app.config ファイルが含まれている場合は、 [「カスタム構成セクションの定義」](#DefineCustomConfigurationSection)を参照してください。
 
-2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックして **[追加]** をポイントし、 **[新しい項目]** をクリックします。
+2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックして **[追加]** をポイントし、**[新しい項目]** をクリックします。
 
      **[新しい項目の追加]** ウィンドウが開きます。
 
-3. **[アプリケーション構成ファイル]** テンプレートを選択し、 **[追加]** をクリックします。
+3. **[アプリケーション構成ファイル]** テンプレートを選択し、**[追加]** をクリックします。
 
-## <a name="DefineCustomConfigurationSection"></a> カスタム構成セクションを定義する
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>カスタム構成セクションの定義
  app.config ファイルを確認します。 少なくとも XML 宣言とルート要素が含まれています。
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>app.config ファイルにカスタム構成セクションを追加するには
@@ -94,7 +94,7 @@ ms.locfileid: "72657060"
 
  2 つ目の `add` 要素には、Microsoft Excel スプレッドシートに接続するための次の属性と値を作成します。
 
-|||
+|属性|値|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +102,7 @@ ms.locfileid: "72657060"
 
  `connectionStrings` 要素は次のようになります。
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -141,7 +141,7 @@ ms.locfileid: "72657060"
 
  2 つ目の `add` 要素には、Microsoft Excel データ ソース用の次の属性と値を作成します。
 
-|||
+|属性|値|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -150,7 +150,7 @@ ms.locfileid: "72657060"
 
  `microsoft.visualstudio.testtools` 要素は次のようになります。
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ ms.locfileid: "72657060"
 
  最終的な app.config ファイルは次のようになります。
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -223,7 +223,7 @@ ms.locfileid: "72657060"
 
 2. 自動生成された単体テストの内容を次のコードに置き換えます。
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -268,5 +268,5 @@ ms.locfileid: "72657060"
 > [!IMPORTANT]
 > データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [コードの単体テスト](../test/unit-test-your-code.md)[既存のコードの単体テストを作成して実行](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)する[アプリケーションをテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)する[方法: データドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e115b4d327f1ac45673de491ceaffc90941e1111
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668184"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546784"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Sealed 型の保護されたメンバーを宣言しません
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:シールド型の保護されたメンバーを宣言しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
@@ -33,12 +33,12 @@ ms.locfileid: "72668184"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- パブリック型は `sealed` (Visual basic では `NotInheritable`) であり、プロテクトメンバーまたはプロテクト入れ子になった型を宣言します。 このルールは、<xref:System.Object.Finalize%2A> メソッドの違反を報告しません。このパターンに従う必要があります。
+ パブリック型は `sealed` ( `NotInheritable` Visual basic では) であり、プロテクトメンバーまたは protected 入れ子にされた型を宣言します。 この規則は、メソッドの違反 <xref:System.Object.Finalize%2A> を報告しません。このパターンに従う必要があります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  型でプロテクト メンバーを宣言するのは、継承する型からメンバーにアクセスまたはオーバーライドできるようにするためです。 定義上、シール型から継承することはできません。つまり、シール型のプロテクトメソッドを呼び出すことはできません。
 
- コンパイラC#は、このエラーの警告を発行します。
+ C# コンパイラは、このエラーの警告を発行します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、メンバーのアクセスレベルをプライベートに変更するか、型を継承可能にします。

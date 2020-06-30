@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6b47254a80c9cdadab6ca18f2fb8c3e8540fbd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827344"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547928"
 ---
 # <a name="safecontrol-element"></a>SafeControl 要素
-  ASPX コントロールまたは SharePoint サイトのいずれかの ASPX ページにアクセスするすべてのユーザーに対してセキュリティで保護されたとして指定されている Web パーツを表します。
+  SharePoint サイトの任意の ASPX ページで任意のユーザーがアクセスできるようにセキュリティで保護されていると指定された ASPX コントロールまたは Web パーツを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,12 +40,12 @@ ms.locfileid: "62827344"
 
 |属性|説明|
 |---------------|-----------------|
-|**Assembly**|省略可能な**xs:string**属性。<br /><br /> ASPX コントロールまたは Web パーツが定義されているアセンブリの名前。 既定では、この属性を使用して、 **$SharePoint.Project.AssemblyFullName$** アセンブリ名の置き換え可能パラメーター。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。|
-|**IsSafe**|省略可能な**xs:boolean**属性。<br /><br /> ASPX コントロールまたは Web パーツが信頼されていないユーザーにアクセスするセキュリティで保護されたかどうかを指定します。|
-|**IsSafeAgainstScript**|省略可能な**xs:boolean**属性。<br /><br /> 信頼されていないユーザーを表示したり、ASPX コントロールまたは Web パーツのプロパティの編集にかどうかを指定します。|
-|**Name**|省略可能な**xs:string**属性。<br /><br /> このコレクション内の安全なコントロール エントリの名前。|
-|**Namespace**|省略可能な**xs:string**属性。<br /><br /> ASPX コントロールまたは Web パーツの名前空間。|
-|**TypeName**|省略可能な**xs:string**属性。<br /><br /> ASPX コントロールまたは Web パーツの型名。|
+|**Assembly**|**Xs: string**属性 (省略可能)。<br /><br /> ASPX コントロールまたは Web パーツが定義されているアセンブリの名前。 既定では、この属性は、アセンブリ名に対して **$SharePoint. プロジェクト**の置き換え可能なパラメーターを使用します。 詳細については、「[置換可能なパラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。|
+|**IsSafe**|**Xs: boolean**属性 (省略可能)。<br /><br /> ASPX コントロールまたは Web パーツが、信頼されていないユーザーにアクセスすることをセキュリティで保護するかどうかを指定します。|
+|**IsSafeAgainstScript**|**Xs: boolean**属性 (省略可能)。<br /><br /> 信頼されていないユーザーが ASPX コントロールまたは Web パーツのプロパティを表示または編集できるかどうかを指定します。|
+|**名前**|**Xs: string**属性 (省略可能)。<br /><br /> コレクション内のこの安全なコントロールエントリの名前。|
+|**名前空間**|**Xs: string**属性 (省略可能)。<br /><br /> ASPX コントロールまたは Web パーツの名前空間。|
+|**TypeName**|**Xs: string**属性 (省略可能)。<br /><br /> ASPX コントロールまたは Web パーツの型名。|
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -54,20 +54,20 @@ ms.locfileid: "62827344"
 
 |要素|説明|
 |-------------|-----------------|
-|[SafeControls](../sharepoint/safecontrols-element.md)|ASPX コントロールと、SharePoint サイト上のいずれかの ASPX ページにアクセスするすべてのユーザーに対してセキュリティで保護されたとして指定されている Web パーツのコレクションを表します。|
+|[SafeControls](../sharepoint/safecontrols-element.md)|SharePoint サイトの任意の ASPX ページですべてのユーザーがアクセスできるようにセキュリティで保護されたものとして指定された ASPX コントロールおよび Web パーツのコレクションを表します。|
 
 ## <a name="remarks"></a>Remarks
- 安全なコントロールの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
+ 安全なコントロールの詳細については、「[プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
 
 ## <a name="element-information"></a>要素情報
 
-|||
+|プロパティ|値|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
-|**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
-|**ファイルの検証**|ProjectItemModelSchema.xsd|
-|**空にすることができます。**|いいえ|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**検証ファイル**|ProjectItemModelSchema|
+|**空にすることができます**|いいえ|
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [プロジェクト項目でパッケージ化と配置の情報を提供します。](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

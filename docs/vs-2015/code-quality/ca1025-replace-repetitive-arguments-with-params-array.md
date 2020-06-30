@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84809341d7898aeb3defe0447f2a2f1142eb460a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661967"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546628"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: 反復する引数を params 配列で置き換えます
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025:反復する引数を params 配列で置き換えます
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
@@ -35,8 +35,8 @@ ms.locfileid: "72661967"
 ## <a name="cause"></a>原因
  パブリック型のパブリックメソッドまたはプロテクトメソッドに3つ以上のパラメーターがあり、その最後の3つのパラメーターが同じ型です。
 
-## <a name="rule-description"></a>規則の説明
- 引数の正確な数が不明で、可変個の引数が同じ型である場合、または同じ型として渡すことができる場合は、引数を繰り返す代わりにパラメーター配列を使用します。 たとえば、<xref:System.Console.WriteLine%2A> メソッドは、パラメーター配列を使用して任意の数の <xref:System.Object> 引数を受け入れる汎用オーバーロードを提供します。
+## <a name="rule-description"></a>ルールの説明
+ 引数の正確な数が不明で、可変個の引数が同じ型である場合、または同じ型として渡すことができる場合は、引数を繰り返す代わりにパラメーター配列を使用します。 たとえば、メソッドは、 <xref:System.Console.WriteLine%2A> パラメーター配列を使用して任意の数の引数を受け入れる汎用オーバーロードを提供し <xref:System.Object> ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、繰り返し引数をパラメーター配列に置き換えます。

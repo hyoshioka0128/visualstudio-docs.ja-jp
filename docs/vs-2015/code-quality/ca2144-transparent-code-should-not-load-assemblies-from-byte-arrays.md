@@ -11,17 +11,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 36b27880b5574e9e47067c240bc162cc15e8d3b6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91a846d0f347916a22df54eb1f1a042bc686d132
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610318"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546420"
 ---
-# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: 透過的コードは、バイト配列からアセンブリを読み込んではならない
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144:透過的コードは、バイト配列からアセンブリを読み込んではならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
 |CheckId|CA2144|
@@ -37,11 +37,11 @@ ms.locfileid: "72610318"
 
 - <xref:System.Reflection.Assembly.Load%2A>
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  透過的なコードはセキュリティ上重要な操作を実行できないため、透過的なコードのセキュリティ レビューは、クリティカル コードのセキュリティ レビューほど完全ではありません。 バイト配列から読み込まれるアセンブリは透過的なコード内で認識されない場合がありますが、監査を必要とする、クリティカルなコード、またはさらに重要であるセーフ クリティカルなコードがそのバイト配列に含まれる可能性があります。 したがって、透過的なコードでは、バイト配列からアセンブリを読み込むことはできません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、アセンブリを読み込むメソッドを <xref:System.Security.SecurityCriticalAttribute> または <xref:System.Security.SecuritySafeCriticalAttribute> 属性でマークします。
+ この規則違反を修正するには、アセンブリを読み込むメソッドを <xref:System.Security.SecurityCriticalAttribute> または属性でマークし <xref:System.Security.SecuritySafeCriticalAttribute> ます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。

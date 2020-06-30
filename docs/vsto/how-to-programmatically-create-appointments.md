@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって予定を作成します。'
+title: '方法: プログラムによって予定を作成する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3392164106e3569e565cbca684d5d135717de85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99d0dace71555c06288f1c85f92b2c12c2015d18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575183"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546004"
 ---
-# <a name="how-to-programmatically-create-appointments"></a>方法: プログラムによって予定を作成します。
-  この例では、予定を作成し、受信者の予定の会議出席依頼を追加します。
+# <a name="how-to-programmatically-create-appointments"></a>方法: プログラムによって予定を作成する
+  この例では、予定を作成し、会議出席依頼に受信者を追加します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -29,6 +29,6 @@ ms.locfileid: "62575183"
  [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>関連項目
-- [予定表項目を操作します。](../vsto/working-with-calendar-items.md)
-- [方法: カスタムの予定表をプログラムで作成します。](../vsto/how-to-programmatically-create-a-custom-calendar.md)
-- [方法: プログラムによって Outlook の連絡先にエントリを追加します。](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [予定表アイテムの操作](../vsto/working-with-calendar-items.md)
+- [方法: プログラムによってカスタムカレンダーを作成する](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [方法: プログラムによって Outlook の連絡先にエントリを追加する](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)

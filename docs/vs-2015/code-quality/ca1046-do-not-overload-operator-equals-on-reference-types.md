@@ -15,27 +15,27 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 519faf2d49cb74d60d342d6bcf449f211076b0b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661091"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546758"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 参照型で、演算子 equals をオーバーロードしないでください
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:参照型で、演算子 equals をオーバーロードしないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
  パブリックまたは入れ子にされたパブリック参照型は、等値演算子をオーバーロードします。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  参照型の場合、等値演算子は既定の実装でほぼ問題がありません。 既定で、2 つの参照が等値と見なされるのは、同じオブジェクトを参照する場合のみです。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -57,11 +57,11 @@ ms.locfileid: "72661091"
  この例を実行すると、次の出力が生成されます。
 
  **a = new (2, 2) と b = new (2, 2) は等しいでしょうか。** 
-**c と a は同じではありませんか?はい**
-**b と a は = = ですか?
-** **c と a は = = です。はい**
+ **C と a は同じですか?はい** 
+ **b と a は = = ですか?** 
+ **C と a は = = ですか?はい**
 ## <a name="related-rules"></a>関連規則
- [CA1013: オーバーロードする加算および減算で、演算子 equals をオーバーロードします](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013:オーバーロードする加算および減算で、演算子 equals をオーバーロードします](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>関連項目
  <xref:System.Object.Equals%2A?displayProperty=fullName>[等値演算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

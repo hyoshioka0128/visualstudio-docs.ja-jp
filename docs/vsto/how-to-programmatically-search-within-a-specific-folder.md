@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって特定のフォルダー内を検索します。'
+title: '方法: プログラムによって特定のフォルダー内を検索する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f5e0f098edcffce07eb2c3f243b994d1a53cdf9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961902"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547018"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>方法: プログラムによって特定のフォルダー内を検索します。
-  このコード例では、`Find`と`FindNext`内にある電子メール メッセージの件名フィールド内のテキストを検索する方法、**受信トレイ**します。 このメソッドでは、文字列のフィルターを使用して、t の開始文字確認、`Subject`テキスト。
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>方法: プログラムによって特定のフォルダー内を検索する
+  このコード例では、メソッドとメソッドを使用して、 `Find` `FindNext` **受信トレイ**にある電子メールメッセージの件名フィールド内のテキストを検索します。 このメソッドでは、文字列フィルターを使用して、文字 T をテキストの開始文字として確認し `Subject` ます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -28,6 +28,6 @@ ms.locfileid: "62961902"
  [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>関連項目
-- [フォルダーを操作します。](../vsto/working-with-folders.md)
-- [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)
-- [方法: 名前でフォルダーをプログラムで取得します。](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [フォルダーの操作](../vsto/working-with-folders.md)
+- [Outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)
+- [方法: プログラムによって名前を指定してフォルダーを取得する](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

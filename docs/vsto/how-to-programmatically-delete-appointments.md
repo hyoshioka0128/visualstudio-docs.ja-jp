@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって予定を削除します。'
+title: '方法: プログラムによって予定を削除する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a5fc7f15a7fe4ec0f267eef669fc99af38375dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddd3d65202ad0e6673ed436203b253e691372f7c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001001"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545965"
 ---
-# <a name="how-to-programmatically-delete-appointments"></a>方法: プログラムによって予定を削除します。
+# <a name="how-to-programmatically-delete-appointments"></a>方法: プログラムによって予定を削除する
   この例では、定期的な予定の 1 つのインスタンスを削除します。 定期的な予定のインスタンスが 2006 年 6 月 28 日 8:00 に発生することを想定しています。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -31,8 +31,8 @@ ms.locfileid: "63001001"
  [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>関連項目
-- [予定表項目を操作します。](../vsto/working-with-calendar-items.md)
-- [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)
-- [方法: プログラムによって予定を作成します。](../vsto/how-to-programmatically-create-appointments.md)
-- [方法: カスタムの予定表をプログラムで作成します。](../vsto/how-to-programmatically-create-a-custom-calendar.md)
-- [方法: プログラムによって会議出席依頼を作成します。](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [予定表アイテムの操作](../vsto/working-with-calendar-items.md)
+- [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
+- [方法: プログラムによって予定を作成する](../vsto/how-to-programmatically-create-appointments.md)
+- [方法: プログラムによってカスタムカレンダーを作成する](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [方法: プログラムによって会議出席依頼を作成する](../vsto/how-to-programmatically-create-a-meeting-request.md)

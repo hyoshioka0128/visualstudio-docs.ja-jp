@@ -1,7 +1,7 @@
 ---
-title: '方法: 名前でフォルダーをプログラムで取得します。'
+title: '方法: プログラムによって名前を指定してフォルダーを取得する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955730"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547109"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>方法: 名前でフォルダーをプログラムで取得します。
-  この例では、名前付きカスタム フォルダーへの参照を取得し、フォルダーの内容を表示します。
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>方法: プログラムによって名前を指定してフォルダーを取得する
+  この例では、名前付きカスタムフォルダーへの参照を取得し、そのフォルダーの内容を表示します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "62955730"
 - TestFolder という名前のフォルダー。
 
 ## <a name="see-also"></a>関連項目
-- [フォルダーを操作します。](../vsto/working-with-folders.md)
-- [方法: プログラムによって特定のフォルダー内を検索します。](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [方法: プログラムによって特定の連絡先を検索します。](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [方法: プログラムによってカスタム フォルダーのアイテムを作成します。](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [フォルダーの操作](../vsto/working-with-folders.md)
+- [方法: プログラムによって特定のフォルダー内を検索する](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [方法: プログラムによって特定の連絡先を検索する](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [方法: プログラムによってカスタムフォルダー項目を作成する](../vsto/how-to-programmatically-create-custom-folder-items.md)

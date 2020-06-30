@@ -1,7 +1,7 @@
 ---
-title: Office ソリューション用配置マニフェストします。
+title: Office ソリューションの配置マニフェスト
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972396"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547551"
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>Office ソリューション用配置マニフェストします。
-  配置マニフェストは、Office ソリューションの展開設定を記述およびアプリケーションの現在のバージョンを指定する XML ファイルです。
+# <a name="deployment-manifests-for-office-solutions"></a>Office ソリューションの配置マニフェスト
+  配置マニフェストは、Office ソリューションの配置設定を記述する XML ファイルであり、現在のアプリケーションのバージョンを識別します。
 
- Visual Studio での Office 開発を使用して、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]配置マニフェストのスキーマで定義されている、 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)参照。
+ Visual Studio での Office 開発では、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)リファレンスで定義されている配置マニフェストスキーマを使用します。
 
 ## <a name="remarks"></a>Remarks
- Office ソリューションの配置マニフェスト ファイルは、現在のバージョンとその他の展開設定を識別します。 アプリケーション マニフェストを参照し、ソリューションとソリューションのすべてのファイル内の現在のバージョンについて説明します。
+ Office ソリューションの配置マニフェストファイルは、現在のバージョンとその他の配置設定を識別します。 アプリケーションマニフェストを参照し、ソリューションの現在のバージョンとソリューション内のすべてのファイルについて説明します。
 
 ## <a name="file-name-syntax"></a>ファイル名の構文
- 配置マニフェスト ファイルの名前で終わる必要があります、 *.vsto*拡張機能。 これは標準が[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]、配置マニフェスト ファイルを処理するために Visual Studio Tools for Office ランタイムを有効にする、拡張機能が異なります。
+ 配置マニフェストファイルの名前は、拡張子が *.vsto*である必要があります。 これは標準の配置マニフェストですが、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 拡張機能は、Visual Studio Tools for Office ランタイムがファイルを処理できるようにすることとは異なります。
 
 ## <a name="example"></a>例
- 次のコード例では、Visual Studio Tools for Office ソリューション用配置マニフェストを示しています。
+ 次のコード例は、Visual Studio Tools for Office ソリューションの配置マニフェストを示しています。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -185,4 +185,4 @@ ms.locfileid: "62972396"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
+- [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)

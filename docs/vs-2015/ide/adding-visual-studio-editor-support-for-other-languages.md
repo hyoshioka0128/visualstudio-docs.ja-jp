@@ -1,4 +1,4 @@
-﻿---
+---
 title: 他の言語のエディターサポートを追加する |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548110"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターでの他の言語のサポートの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,22 +30,50 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>構文の色づけ、ステートメント入力候補、および移動のサポート
  構文の色づけ、ステートメント入力候補、および移動などの Visual Studio エディターの機能を使用することで、コードの読み取り、作成、編集がより簡単になります。 次のスクリーン ショットは、Visual Studio での Perl スクリプトの編集例を示しています。 構文は自動的に色づけされます。 たとえば、コードの注釈は緑、コードは黒、パスは赤、ステートメントは青に色づけされます。 Visual Studio エディターでは、サポートされる言語に自動的に構文の色づけが適用されます。 さらに、既知の言語キーワードまたはオブジェクトの入力を始めると、ステートメント入力候補に使用可能なステートメントとオブジェクトの一覧が表示されます。 ステートメント入力候補を使用すれば、コードをよりすばやく簡単に作成することができます。
 
- ![Perl スクリプトでの構文の色付け](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Perl スクリプトの構文の色づけ](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  現在、Visual Studio では、[TextMate 文法](https://manual.macromates.com/en/language_grammars)を使用する以下の言語に対する構文の色づけおよび基本的なステートメント入力候補がサポートされます。 表に好みの言語がない場合でもご安心ください。言語は追加することができます。
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|移動|JavaDoc|Objective-C|ShaderLab|Visual C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Make|Ruby|TypeScript|YAML|
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- 移動
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Make
+- Ruby
+- TypeScript
+- YAML
 
  構文の色づけと基本的なステートメント入力候補に加え、Visual Studio には[移動](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)という機能もあります。 この機能を使用すれば、コード ファイル、ファイル パスおよびコード シンボルをすばやく検索することができます。 Visual Studio では、次の言語の移動がサポートされます。
 
-- 移動
+- Go
 
 - Java
 
@@ -74,13 +102,13 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 |フォルダー名|説明|
 |-----------------|-----------------|
-|\\ *\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、 **\Matlab** などに置き換えます。|
-|\Syntaxes|文法のフォルダーです。 **Matlab.json** などの、言語に対応する文法の .json ファイルが含まれています。|
+|\\*\<language name>*|言語のフォルダーです。 *\<language name>* 言語の名前で置き換えます。 たとえば、 **\Matlab** などに置き換えます。|
+|\Syntaxes|文法のフォルダーです。 Matlab.json などの、言語に対応する文法の **.json** ファイルが含まれています。|
 |\Snippets|スニペットのフォルダーです。 言語のスニペットが含まれています。|
 
- Windows では、%userprofile% はパス (c:\Users\\ *\<ユーザー名>* ) に解決されます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
+ Windows では、% userprofile% はパス: c:\Users に解決さ \\ *\<user name>* れます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
- TextMate 文法の作成方法の詳細については、「[TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 (TextMate - 言語の文法の概要: HTML に埋め込みのソース コード構文の強調表示を追加する方法) と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項) を参照してください。
+ TextMate 文法を作成する方法の詳細については、「Textmate –言語文法の概要」を参照してください。 [HTML に埋め込まれたソースコード構文の強調表示を追加する方法](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)については、「 [Textmate バンドルの言語文法とカスタムテーマを作成する方法](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」を参照してください。
 
-## <a name="see-also"></a>参照
- [Visual Studio 2013 の移動機能の強化](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)[チュートリアル: コード スニペットを作成](../ide/walkthrough-creating-a-code-snippet.md)[チュートリアル: 候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)
+## <a name="see-also"></a>関連項目
+ [Visual Studio 2013 の移動機能の強化](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [チュートリアル: コード スニペットを作成](../ide/walkthrough-creating-a-code-snippet.md) [チュートリアル: 候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667376"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546342"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: 予約された例外の種類を発生させません
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:予約された例外の種類を発生させません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -35,7 +35,7 @@ ms.locfileid: "72667376"
 ## <a name="cause"></a>原因
  メソッドによって、汎用的またはランタイムによって予約されている例外の種類が発生します。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  次の例外の種類は、ユーザーに十分な情報を提供するには一般的ではありません。
 
 - <xref:System.Exception?displayProperty=fullName>
@@ -56,9 +56,9 @@ ms.locfileid: "72667376"
 
   **一般的な例外をスローしない**
 
-  ライブラリまたはフレームワークで <xref:System.Exception> や <xref:System.SystemException> などの一般的な例外の種類をスローすると、コンシューマーは、処理方法がわからない不明な例外も含め、すべての例外をキャッチするように強制されます。
+  ライブラリまたはフレームワーク内でやなどの一般的な例外の種類をスローすると、 <xref:System.Exception> <xref:System.SystemException> コンシューマーは、処理方法がわからない不明な例外も含め、すべての例外をキャッチするように強制されます。
 
-  代わりに、フレームワークに既に存在する派生型をスローするか、<xref:System.Exception> から派生する独自の型を作成します。
+  代わりに、フレームワークに既に存在する派生型をスローするか、から派生する独自の型を作成 <xref:System.Exception> します。
 
   **特定の例外をスローする**
 
@@ -66,21 +66,21 @@ ms.locfileid: "72667376"
 
 |パラメーターの説明|例外|
 |---------------------------|---------------|
-|`null` リファレンス|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null`「|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |許容範囲外の値 (コレクションまたはリストのインデックスなど)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|@No__t_0 値が無効です|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|には、メソッドのパラメーター指定を満たさない形式 (`ToString(String)` の書式文字列など) が含まれています。|<xref:System.FormatException?displayProperty=fullName>|
+|無効な `enum` 値|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|には、メソッドのパラメーター指定を満たさない形式 (の書式設定文字列など) が含まれています `ToString(String)` 。|<xref:System.FormatException?displayProperty=fullName>|
 |それ以外の場合は無効|<xref:System.ArgumentException?displayProperty=fullName>|
 
- 操作がオブジェクトの現在の状態に対して無効である場合 <xref:System.InvalidOperationException?displayProperty=fullName>
+ 操作がオブジェクトスローの現在の状態に対して無効な場合<xref:System.InvalidOperationException?displayProperty=fullName>
 
- 破棄されたオブジェクトに対して操作が実行されると <xref:System.ObjectDisposedException?displayProperty=fullName>
+ 破棄されたオブジェクトに対して操作が実行された場合<xref:System.ObjectDisposedException?displayProperty=fullName>
 
- 操作がサポートされていない場合 (オーバーライドされたストリームのなど)、読み取り用に開かれたストリームに書き込むと、<xref:System.NotSupportedException?displayProperty=fullName> がスローされ**ます**
+ 操作がサポートされていない場合 (オーバーライドされたストリームのなど) は、読み取り用に開かれたストリームに書き込むことが**できます。**<xref:System.NotSupportedException?displayProperty=fullName>
 
- 変換によってオーバーフロー (明示的なキャスト演算子のオーバーロードなど) が発生すると、<xref:System.OverflowException?displayProperty=fullName> がスローされます。
+ 変換によってオーバーフローが発生する場合 (明示的なキャスト演算子のオーバーロードの場合など)、スローされます。<xref:System.OverflowException?displayProperty=fullName>
 
- それ以外の場合は、<xref:System.Exception> から派生した独自の型を作成し、それをスローすることを検討してください。
+ それ以外の場合は、から派生する独自の型を作成し、それをスローすることを検討してください <xref:System.Exception> 。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、スローされた例外の型を、予約済みの型ではない特定の型に変更します。
@@ -89,4 +89,4 @@ ms.locfileid: "72667376"
  この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連規則
- [CA1031: 一般的な例外の種類はキャッチしません](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031:一般的な例外の種類はキャッチしません](../code-quality/ca1031-do-not-catch-general-exception-types.md)

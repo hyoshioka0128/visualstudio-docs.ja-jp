@@ -11,17 +11,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 65e00d319bff3bbfd3c441c6b60ed8a703e69251
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 35cc152998b15a2fd4c4ff02e4730cdfae5366cb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654815"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546498"
 ---
-# <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: 透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない
+# <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
 |CheckId|CA2138|
@@ -29,15 +29,15 @@ ms.locfileid: "72654815"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的セキュリティメソッドは、<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 属性でマークされたメソッドを呼び出します。
+ 透過的セキュリティメソッドは、属性でマークされたメソッドを呼び出し <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> ます。
 
-## <a name="rule-description"></a>規則の説明
- この規則は、ネイティブコードを直接呼び出す透過的メソッド (たとえば、P/Invoke (プラットフォーム呼び出し) 呼び出しでを使用するなど) で適用されます。 @No__t_0 属性でマークされた P/Invoke メソッドと COM 相互運用メソッドは、呼び出し元のメソッドに対して LinkDemand を実行します。 透過的セキュリティコードは Linkdemand を満たすことができないため、コードでは、SuppressUnmanagedCodeSecurity 属性でマークされたメソッド、または SuppressUnmanagedCodeSecurity 属性でマークされたクラスのメソッドを呼び出すことはできません。 メソッドが失敗するか、要求が完全な要求に変換されます。
+## <a name="rule-description"></a>ルールの説明
+ この規則は、ネイティブコードを直接呼び出す透過的メソッド (たとえば、P/Invoke (プラットフォーム呼び出し) 呼び出しでを使用するなど) で適用されます。 属性でマークされた P/Invoke メソッドと COM 相互運用メソッドは、 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 呼び出し元のメソッドに対して LinkDemand を実行します。 透過的セキュリティコードは Linkdemand を満たすことができないため、コードでは、SuppressUnmanagedCodeSecurity 属性でマークされたメソッド、または SuppressUnmanagedCodeSecurity 属性でマークされたクラスのメソッドを呼び出すことはできません。 メソッドが失敗するか、要求が完全な要求に変換されます。
 
- この規則に違反すると、レベル2のセキュリティ透過性モデルの <xref:System.MethodAccessException> と、レベル1の透過性モデルの <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> に対する完全な要求が発生します。
+ この規則を違反すると、 <xref:System.MethodAccessException> レベル2のセキュリティ透過性モデルのになり、レベル1の透過性モデルのに対する完全な要求が発生し <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 属性を削除し、<xref:System.Security.SecurityCriticalAttribute> または <xref:System.Security.SecuritySafeCriticalAttribute> 属性を使用してメソッドをマークします。
+ この規則違反を修正するには、属性を削除 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> し、メソッドを属性または属性でマークし <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> ます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。

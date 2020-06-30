@@ -1,7 +1,7 @@
 ---
 title: '方法: リボンのタブの位置を変更する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,39 +12,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985988"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544860"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>方法: リボンのタブの位置を変更する
-  リボンのカスタムタブの順序は、**タブコレクションエディター**を使用して変更できます。 リボンの組み込みタブの前または後にカスタムタブを配置できます。 組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、 **[データ]** タブは Excel の組み込みタブです。
+  リボンのカスタムタブの順序は、**タブコレクションエディター**を使用して変更できます。 リボンの組み込みタブの前または後にカスタムタブを配置できます。 組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、[**データ**] タブは Excel の組み込みタブです。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>リボンのタブの順序を変更するには
 
-1. **ソリューションエクスプローラー**でリボンコードファイル ( *.vb*または *.cs*ファイル) を選択します。
+1. **ソリューションエクスプローラー**でリボンコードファイル (*.vb*または *.cs*ファイル) を選択します。
 
-2. **[表示]** メニューの **[デザイナー]** をクリックします。
+2. [**表示**] メニューの [**デザイナー**] をクリックします。
 
-3. リボンデザイナーを右クリックし、 **[プロパティ]** をクリックします。
+3. リボンデザイナーを右クリックし、[**プロパティ**] をクリックします。
 
-4. **[プロパティ]** ウィンドウで、 **[タブ]** プロパティを選択し、省略記号ボタン (![ASP.NET mobile designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
+4. [**プロパティ**] ウィンドウで、[**タブ**] プロパティを選択し、省略記号ボタン (![ASP.NET mobile designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
 
      **タブコレクションエディター**が表示されます。
 
-5. **タブコレクションエディター**の **[メンバー]** ボックスの一覧で、移動するタブを選択し、上矢印または下矢印をクリックしてタブオーダーを変更します。
+5. **タブコレクションエディター**の [**メンバー** ] ボックスの一覧で、移動するタブを選択し、上矢印または下矢印をクリックしてタブオーダーを変更します。
 
 ### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>リボン上の組み込みタブの前または後にタブを配置するには
 
 1. リボンデザイナーで、[カスタム] タブを選択します。
 
-2. **[プロパティ]** ウィンドウで、 **[ControlId]** プロパティを展開し、制御 **[lidtype]** プロパティの値が "**カスタム**" に設定されていることを確認します。
+2. [**プロパティ**] ウィンドウで、[ **ControlId** ] プロパティを展開し、[制御**lidtype** ] プロパティの値が "**カスタム**" に設定されていることを確認します。
 
-3. **[プロパティ]** ウィンドウで、 **[位置]** プロパティを展開します。
+3. [**プロパティ**] ウィンドウで、[**位置**] プロパティを展開します。
 
 4. **Positiontype**プロパティを適切な値に設定します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72985988"
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [リボン デザイナー](../vsto/ribbon-designer.md)
-- [リボン XML](../vsto/ribbon-xml.md)
+- [リボンデザイナー](../vsto/ribbon-designer.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
