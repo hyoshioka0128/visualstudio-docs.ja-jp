@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって既存文書を開く'
+title: '方法: プログラムによって既存のドキュメントを開く'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812396"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519900"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>方法: プログラムによって既存文書を開く
-  <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>メソッドは、完全修飾パスとファイル名で指定された既存の Microsoft Office Word ドキュメントを開きます。 このメソッドが戻る、<xref:Microsoft.Office.Interop.Word.Document>開いているドキュメントを表します。
+# <a name="how-to-programmatically-open-existing-documents"></a>方法: プログラムによって既存のドキュメントを開く
+  メソッドは、 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 完全修飾パスとファイル名で指定された既存の Microsoft Office Word 文書を開きます。 このメソッドは、 <xref:Microsoft.Office.Interop.Word.Document> 開いているドキュメントを表すを返します。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="to-open-a-document"></a>ドキュメントを開く
+## <a name="to-open-a-document"></a>ドキュメントを開くには
 
-- 呼び出す、<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>のメソッド、<xref:Microsoft.Office.Interop.Word.Documents>コレクションをドキュメントへのパスを指定します。
+- <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>コレクションのメソッドを呼び出し、 <xref:Microsoft.Office.Interop.Word.Documents> ドキュメントへのパスを指定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
-## <a name="to-open-a-document-as-read-only"></a>読み取り専用とドキュメントを開く
+## <a name="to-open-a-document-as-read-only"></a>ドキュメントを読み取り専用として開くには
 
-- 呼び出す、<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>メソッドは、ドキュメントへのパスを指定し、設定、 *ReadOnly*引数**True**メソッドの呼び出しで。
+- メソッドを呼び出し <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 、ドキュメントへのパスを指定し、メソッド呼び出しで*ReadOnly*引数を**True**に設定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,9 +42,9 @@ ms.locfileid: "62812396"
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。
 
-- という名前のドキュメント*NewDocument.doc*という名前のディレクトリに存在する必要があります*テスト*失われます。
+- *NewDocument.doc*という名前のドキュメントは、C ドライブの*Test*という名前のディレクトリに存在する必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムで新しいドキュメントを作成します。](../vsto/how-to-programmatically-create-new-documents.md)
+- [方法: プログラムによって新しいドキュメントを作成する](../vsto/how-to-programmatically-create-new-documents.md)
 - [方法: プログラムによって文書を閉じる](../vsto/how-to-programmatically-close-documents.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

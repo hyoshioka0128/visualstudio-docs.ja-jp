@@ -1,7 +1,7 @@
 ---
-title: '方法: Outlook フォーム領域が表示されないようにします。'
+title: '方法: Outlook でフォーム領域が表示されないようにする'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,27 +13,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967658"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520135"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>方法: Outlook フォーム領域が表示されないようにします。
-  たくない特定の項目のフォーム領域を表示する Microsoft Office Outlook の状況である可能性があります。 たとえば、連絡先アイテムに会社の住所が含まれていない場合は、表示から、マップで、ビジネスの場所を表示するフォーム領域を防ぐことができます。
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>方法: Outlook でフォーム領域が表示されないようにする
+  Outlook Microsoft Office 特定のアイテムのフォーム領域を表示しないようにする必要がある場合があります。 たとえば、連絡先アイテムに勤務先住所が含まれていない場合、マップ内のビジネスの場所を表示するフォーム領域が表示されないようにすることができます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Outlook がフォーム領域を表示しないようにするには
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Outlook でフォーム領域が表示されないようにするには
 
-1. 変更するフォーム領域コード ファイルを開きます。
+1. 変更するフォーム領域のコードファイルを開きます。
 
-2. 展開、**フォーム領域ファクトリ**コード領域。
+2. **フォーム領域ファクトリ**コード領域を展開します。
 
-3. コードを追加して、`FormRegionInitializing`イベント ハンドラーを設定する、<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>のプロパティ、<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>クラスを**true**します。
+3. `FormRegionInitializing`クラスのプロパティを true に設定するコードをイベントハンドラーに追加 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> します。 **true**
 
-   連絡先アイテムには、アドレスが含まれていない場合、この例では、<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>プロパティに設定されて**true**、およびフォーム領域は表示されません。
+   この例では、連絡先アイテムに住所が含まれていない場合、 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> プロパティは**true**に設定され、フォーム領域は表示されません。
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
@@ -41,7 +41,7 @@ ms.locfileid: "62967658"
 
 ## <a name="see-also"></a>関連項目
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
-- [チュートリアル: Outlook フォーム領域をデザインします。](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [方法: フォーム領域を Outlook アドイン プロジェクトに追加します。](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [チュートリアル: Outlook フォーム領域をデザインします。](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [チュートリアル: Outlook でデザインしたフォーム領域をインポートします。](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [方法: フォーム領域を Outlook アドインプロジェクトに追加する](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [チュートリアル: Outlook でデザインされたフォーム領域をインポートする](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521317"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
 
@@ -26,14 +26,14 @@ ms.locfileid: "75587785"
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-|||
+|コード|説明|
 |-|-|
 |[CA0001](ca0001.md)|マネージコード分析ツール内で、予期されたエラー条件を示していない例外が発生しました。|
 |[CA0051](ca0051.md)|ルールが選択されていません。|
 |[CA0052](ca0052.md)|分析するターゲットが選択されていません。|
 |[CA0053](ca0053.md)|規則アセンブリを読み込むことができませんでした。|
 |[CA0054](ca0054.md)|カスタム規則アセンブリに無効な XML リソースが含まれています。|
-|[CA0055](ca0055.md)|ファイルを読み込めませんでした:\<パス >|
+|[CA0055](ca0055.md)|ファイルを読み込めませんでした:\<path>|
 |[CA0056](ca0056.md)|プロジェクトファイルの分析ツールのバージョンが正しくありません。|
 |[CA0057](ca0057.md)|現在のターゲットとルールのセットに違反をマップすることはできません。|
 |[CA0058](ca0058.md)|参照されたアセンブリを読み込めません。|

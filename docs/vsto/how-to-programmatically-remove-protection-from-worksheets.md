@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによってワークシートの保護を解除します。'
+title: '方法: プログラムによってワークシートから保護を削除する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ccf7de70c3ef741119ec22f8fa9bc76868a47030
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72448f9d1e5c24c917459b8c2c59e317190e0a11
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519874"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>方法: プログラムによってワークシートの保護を解除します。
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>方法: プログラムによってワークシートから保護を削除する
   プログラムを使用して、Microsoft Office Excel ワークシートから保護を削除できます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "62955956"
 
 ## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズでワークシートの保護を解除するには
 
-1. 呼び出す、<xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A>メソッドのワークシートと必要な場合、そのパスワードを渡します。 この例では、 `Sheet1`という名前のワークシートを操作していると仮定します。
+1. ワークシートのメソッドを呼び出し、必要に応じて <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> パスワードを渡します。 この例では、 `Sheet1`という名前のワークシートを操作していると仮定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
 
 ## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>VSTO アドインでワークシートの保護を解除するには
 
-1. 呼び出す、<xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>メソッドのアクティブなワークシートと必要な場合、そのパスワードを渡します。
+1. <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>アクティブなワークシートのメソッドを呼び出し、必要に応じてパスワードを渡します。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートを保護します。](../vsto/how-to-programmatically-protect-worksheets.md)
-- [方法: プログラムによってブックを保護します。](../vsto/how-to-programmatically-protect-workbooks.md)
-- [方法: プログラムによってワークシートを非表示します。](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: プログラムによってワークシートを保護する](../vsto/how-to-programmatically-protect-worksheets.md)
+- [方法: プログラムによってブックを保護する](../vsto/how-to-programmatically-protect-workbooks.md)
+- [方法: プログラムによってワークシートを非表示にする](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)

@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによってブック内のワークシートを移動します。'
+title: '方法: プログラムによってブック内のワークシートを移動する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4594395eb887a950c9ff0ba41cd8d3c625d35dc3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812739"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519826"
 ---
-# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>方法: プログラムによってブック内のワークシートを移動します。
+# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>方法: プログラムによってブック内のワークシートを移動する
   ブック内の他のワークシートを基準として、ワークシートの位置をプログラムで変更することができます。 移動するシートの位置を指定しなかった場合、Excel は、そのシートを含む新しいブックを作成します。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -40,8 +40,8 @@ ms.locfileid: "62812739"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートを非表示します。](../vsto/how-to-programmatically-hide-worksheets.md)
-- [方法: プログラムによってブックからワークシートを削除します。](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [方法: プログラムによってワークシートを保護します。](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: プログラムによってワークシートを非表示にする](../vsto/how-to-programmatically-hide-worksheets.md)
+- [方法: プログラムによってブックからワークシートを削除する](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [方法: プログラムによってワークシートを保護する](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)

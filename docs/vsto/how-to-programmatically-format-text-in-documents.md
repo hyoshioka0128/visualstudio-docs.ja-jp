@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって文書でテキストの書式設定'
+title: '方法: プログラムによって文書内のテキストを書式設定する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9f0f64f47317b5712c34d8aca4ea6f64191438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971135"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519848"
 ---
-# <a name="how-to-programmatically-format-text-in-documents"></a>方法: プログラムによって文書でテキストの書式設定
+# <a name="how-to-programmatically-format-text-in-documents"></a>方法: プログラムによって文書内のテキストを書式設定する
   <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを使用することにより、Microsoft Office Word 文書のテキストの書式を設定できます。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 次の例では、文書内の最初の段落を選択し、フォント サイズ、フォント名、およびアラインメントを変更します。 次に、範囲を選択し、コードの次のセクションを実行する前に一時停止するためのメッセージ ボックスを表示します。 次のセクションでの元に戻すメソッドを呼び出して、 <xref:Microsoft.Office.Tools.Word.Document> (ドキュメント レベルのカスタマイズ) のホスト項目または<xref:Microsoft.Office.Interop.Word.Document>クラス (VSTO アドインが) 3 回です。 標準のインデント スタイルを適用し、メッセージ ボックスを表示してコードを一時停止します。 最後に、 <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> メソッドを 1 回呼び出し、メッセージ ボックスを表示します。
+ 次の例では、文書内の最初の段落を選択し、フォント サイズ、フォント名、およびアラインメントを変更します。 次に、範囲を選択し、コードの次のセクションを実行する前に一時停止するためのメッセージ ボックスを表示します。 次のセクションでは、ホスト項目の Undo メソッド <xref:Microsoft.Office.Tools.Word.Document> (ドキュメントレベルのカスタマイズの場合) または <xref:Microsoft.Office.Interop.Word.Document> クラス (VSTO アドインの場合) を3回呼び出します。 標準のインデント スタイルを適用し、メッセージ ボックスを表示してコードを一時停止します。 最後に、 <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> メソッドを 1 回呼び出し、メッセージ ボックスを表示します。
 
-## <a name="document-level-customization-example"></a>ドキュメント レベルのカスタマイズ例
+## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 
 ### <a name="to-format-text-using-a-document-level-customization"></a>ドキュメント レベルのカスタマイズを使用してテキストの書式を設定するには
 
@@ -47,6 +47,6 @@ ms.locfileid: "62971135"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [方法: プログラムによって Word 文書にテキストを挿入します。](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [方法: プログラムを検索して、文書内のテキストを置換](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [方法: プログラムによって文書内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [方法: プログラムによって Word 文書にテキストを挿入する](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [方法: プログラムによって文書内のテキストを検索および置換する](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
