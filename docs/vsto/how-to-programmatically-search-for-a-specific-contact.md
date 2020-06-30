@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって特定の連絡先を検索します。'
+title: '方法: プログラムによって特定の連絡先を検索する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000328"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547070"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>方法: プログラムによって特定の連絡先を検索します。
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>方法: プログラムによって特定の連絡先を検索する
   この例では、Outlook の連絡先フォルダーから、姓と名前を指定して特定の連絡先を検索します。 この例では、 **John Evans** という名前の連絡先が連絡先フォルダーに存在することを前提にしています。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -30,5 +30,5 @@ ms.locfileid: "63000328"
  [!code-vb[Trin_Outlook_RL_SearchForContact#1](../vsto/codesnippet/VisualBasic/trin_outlook_rl_searchforcontact/thisaddin.vb#1)]
 
 ## <a name="see-also"></a>関連項目
-- [連絡先項目を操作します。](../vsto/working-with-contact-items.md)
-- [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)
+- [連絡先アイテムの操作](../vsto/working-with-contact-items.md)
+- [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)

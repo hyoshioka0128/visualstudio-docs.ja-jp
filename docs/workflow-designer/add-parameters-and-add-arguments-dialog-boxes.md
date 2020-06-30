@@ -10,28 +10,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597127"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547356"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス
 
-次の表では、<xref:System.Activities.Statements.InvokeMethod> デザイナーによって使用される **[パラメーターの追加]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
+次の表では、デザイナーで使用される [**パラメーターの追加**] ダイアログボックスのユーザーインターフェイス (UI) 要素について説明し <xref:System.Activities.Statements.InvokeMethod> ます。
 
-|||
+|名前|値|
 |-|-|
-|**[方向]**|パラメーターがメソッドに入っていくデータ フロー、メソッドから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
-|**型**|新しいパラメーターの型名。|
-|**[値]**|新しいパラメーターに既定値を割り当てるために使用される Visual Basic 式|
+|**方向**|パラメーターがメソッドに入っていくデータ フロー、メソッドから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
+|**Type**|新しいパラメーターの型名。|
+|**Value**|新しいパラメーターに既定値を割り当てるために使用される Visual Basic 式|
 
-次の表では、<xref:System.Activities.Statements.InvokeDelegate> デザイナーによって使用される **[引数の追加]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
+次の表では、デザイナーで使用される [**引数の追加**] ダイアログボックスのユーザーインターフェイス (UI) 要素について説明し <xref:System.Activities.Statements.InvokeDelegate> ます。
 
-|||
+|名前|値|
 |-|-|
-|**名前**|引数の名前です。|
-|**[方向]**|引数がデリゲートに入っていくデータ フロー、デリゲートから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
-|**型**|新しい引数の型名。|
-|**[値]**|デリゲート引数のこのインスタンスに使用する値。|
+|**名前**|引数の名前。|
+|**方向**|引数がデリゲートに入っていくデータ フロー、デリゲートから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
+|**Type**|新しい引数の型名。|
+|**Value**|デリゲート引数のこのインスタンスに使用する値。|

@@ -1,18 +1,18 @@
 ---
 title: 色、線のスタイル、およびその他のシェイプのプロパティの管理
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bcc7e3a80650edff411506b9e651885b3852383
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eee36ad0361f40f23c29c5672b155fc5e5405dbe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654160"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546680"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>色、線のスタイル、およびその他のシェイプのプロパティの管理
 
@@ -21,12 +21,12 @@ ms.locfileid: "72654160"
 ## <a name="exposing-a-property"></a>プロパティの公開
  Color などの一部の図形プロパティは、ドメインプロパティの値にリンクできます。
 
- DSL 定義で、シェイプ、コネクタ、または図クラスを選択します。 右クリックして表示されるメニューで、**公開の追加** を選択し、塗りつぶしの色 など、目的のプロパティを選択します。
+ DSL 定義で、シェイプ、コネクタ、または図クラスを選択します。 右クリックして表示されるメニューで、[**公開の追加**] を選択し、[塗りつぶしの色] など、目的のプロパティを選択します。
 
  これで、図形には、プログラムコードまたはユーザーとして設定できるドメインプロパティが設定されました。
 
 ## <a name="dynamically-updating-an-exposed-property"></a>公開されたプロパティの動的な更新
- 通常は、公開されているプロパティを別のプロパティに依存させます。 たとえば、特定のドメインプロパティが0未満の場合に、図形が赤になるようにすることができます。 この依存関係を作成するには、[ルール](../modeling/rules-propagate-changes-within-the-model.md)を作成します。 (例:
+ 通常は、公開されているプロパティを別のプロパティに依存させます。 たとえば、特定のドメインプロパティが0未満の場合に、図形が赤になるようにすることができます。 この依存関係を作成するには、[ルール](../modeling/rules-propagate-changes-within-the-model.md)を作成します。 次に例を示します。
 
 ```csharp
 using System;

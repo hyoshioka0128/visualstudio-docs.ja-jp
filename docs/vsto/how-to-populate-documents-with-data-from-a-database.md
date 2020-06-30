@@ -1,7 +1,7 @@
 ---
 title: '方法: データベースのデータをドキュメントに読み込む'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985882"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547200"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>方法: データベースのデータをドキュメントに読み込む
 
@@ -38,13 +38,13 @@ Microsoft Office のドキュメント レベルのプロジェクトでは、Wi
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で Word のドキュメント レベルのプロジェクトを開き、ドキュメントをデザイナーで開きます。
 
-2. **[データソース]** ウィンドウを開き、データベースからデータソースを作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
+2. [**データソース**] ウィンドウを開き、データベースからデータソースを作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
-3. **[データソース]** ウィンドウから目的のフィールドをドキュメントにドラッグします。
+3. [**データソース**] ウィンドウから目的のフィールドをドキュメントにドラッグします。
 
 コンテンツ コントロールが文書に追加されます。 コンテンツ コントロールの種類は、選択したフィールドのデータ型によって異なります。 詳細については、「[コンテンツコントロール](../vsto/content-controls.md)」を参照してください。
 
-**データソース** ウィンドウで データ フィールドを選択し、ドロップダウンリストから別のコントロールを選択して、別のコントロールを追加できます。
+[**データソース**] ウィンドウで [データ] フィールドを選択し、ドロップダウンリストから別のコントロールを選択して、別のコントロールを追加できます。
 
 ## <a name="objects-in-the-project"></a>プロジェクト内のオブジェクト
 

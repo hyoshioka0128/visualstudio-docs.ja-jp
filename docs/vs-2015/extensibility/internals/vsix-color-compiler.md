@@ -1,26 +1,26 @@
 ---
-title: VSIX カラー コンパイラ |Microsoft Docs
+title: VSIX 色コンパイラ |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c92fb2ad45bc0fb09c7e9bd8e87db38c13a99736
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68147944"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546745"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 拡張機能カラー コンパイラ ツールは、その色は、Visual Studio で使用できるように、.pkgdef にファイルの変換は、コンソール アプリケーションを既存の Visual Studio のテーマの色を表す .xml ファイルを受け取るには。 .Xml ファイルの違いを比較しやすいため、このツールはソース管理でのカスタムの色の管理に役立ちます。 関連付けることができますビルド環境にビルドの出力は、有効な .pkgdef ファイルようにします。  
+Visual Studio 拡張機能の色コンパイラツールは、既存の Visual Studio テーマの色を表す .xml ファイルを取得し、それを pkgdef ファイルに反映して、それらの色を Visual Studio で使用できるようにするコンソールアプリケーションです。 このツールは、.xml ファイル間の違いを簡単に比較できるため、ソース管理でカスタムカラーを管理する場合に便利です。 また、ビルド環境にフックして、ビルドの出力が有効な pkgdef ファイルであるようにすることもできます。  
   
- **テーマの XML スキーマ**  
+ **テーマ XML スキーマ**  
   
- 完全なテーマの .xml ファイルのようになります。  
+ 完成したテーマ .xml ファイルは次のようになります。  
   
 ```xml  
 <Themes>  
@@ -42,7 +42,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
   
  **テーマ**  
   
- \<テーマ > 要素全体のテーマを定義します。 テーマは、少なくとも 1 つを含める必要があります\<カテゴリ > 要素。 テーマの要素は、次のように定義されます。  
+ 要素は、 \<Theme> テーマ全体を定義します。 テーマには、少なくとも1つの要素が含まれている必要があり \<Category> ます。 テーマ要素は次のように定義されます。  
   
 ```xml  
 <Theme Name="name" GUID="guid">  
@@ -50,41 +50,38 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 </Theme>  
 ```  
   
-|||  
-|-|-|  
 |**属性**|**定義**|  
-|名前|[必須]テーマの名前|  
-|GUID|[必須]テーマの GUID が (する必要があります GUID の書式設定が一致)|  
-  
- Visual Studio のカスタム カラーを作成するときにその色は次のテーマを定義する必要があります。 特定のテーマ色が存在しない場合、Visual Studio は明るい色のテーマから不足している色をロードしようとします。  
-  
-|||  
 |-|-|  
-|**テーマ名**|**GUID のテーマ**|  
-|淡色|{de3dbbcd-f642-433c-8353-8f1df4370aba}|  
-|濃色|{1ded0138-47ce-435e-84ef-9ec1f439b749}|  
+|名前|必要テーマの名前|  
+|GUID|必要テーマの GUID (GUID の書式設定と一致する必要があります)|  
+  
+ Visual Studio のカスタム色を作成する場合は、次のテーマに対してこれらの色を定義する必要があります。 特定のテーマに対して色が存在しない場合、Visual Studio は、淡色テーマから不足している色の読み込みを試みます。  
+  
+|**テーマ名**|**テーマ GUID**|  
+|-|-|  
+|白|{de3dbbcd-f642-433c-8353-8f1df4370aba}|  
+|黒|{1ded0138-47ce-435e-84ef-9ec1f439b749}|  
 |青|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
 |ハイコントラスト|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
   
  **カテゴリ**  
   
- \<カテゴリ > 要素は、テーマの色のコレクションを定義します。 カテゴリ名は、論理的にグループ化を行い、可能な限り狭くとして定義する必要があります。 カテゴリには、少なくとも 1 つ含める必要があります\<色 > 要素。 カテゴリ要素は、次のように定義されます。  
+ 要素は、 \<Category> テーマの色のコレクションを定義します。 カテゴリ名は論理グループを提供します。可能な限り狭くするように定義する必要があります。 カテゴリには、少なくとも1つの要素が含まれている必要があり \<Color> ます。 Category 要素は次のように定義されます。  
   
 ```xml  
 <Category Name="name" GUID="guid">  
       <!-- one or more Color elements -->  
  </Category>  
 ```  
-  
-|||  
-|-|-|  
+    
 |**属性**|**定義**|  
-|Name|[必須]カテゴリの名前|  
-|GUID|「必須」(する必要があります GUID の書式設定が一致)、カテゴリの GUID|  
+|-|-|  
+|名前|必要カテゴリの名前|  
+|GUID|必要カテゴリの GUID (GUID の書式設定と一致する必要があります)|  
   
  **色**  
   
- \<色 > 要素のコンポーネントまたは UI の状態の色を定義します。 色の推奨される名前付けスキームが [UI の種類] [状態]。 冗長である「色」という単語を使わないでください。 色は、要素の型と、状況は、または"state"色の適用を明確に示す必要があります。 色が空でない場合があり、いずれかまたは両方を含める必要があります、\<バック グラウンド > と\<フォア グラウンド > 要素。 色の要素は、次のように定義されます。  
+ 要素は、 \<Color> コンポーネントまたは UI の状態の色を定義します。 色には [UI の種類] [状態] という名前を付けることをお勧めします。 重複しているため、"color" という語は使用しないでください。 色は、要素の種類と、その色が適用される状況 ("状態") を明確に示す必要があります。 色を空にすることはできません。また、要素と要素のいずれかまたは両方を含める必要があり \<Background> \<Foreground> ます。 Color 要素は次のように定義されます。  
   
 ```xml  
 <Color Name="name">  
@@ -93,31 +90,29 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
  </Color>  
 ```  
   
-|||  
-|-|-|  
 |**属性**|**定義**|  
-|Name|[必須]色の名前|  
+|-|-|  
+|名前|必要色の名前|  
   
- **バック グラウンドとフォア グラウンド**  
+ **背景または前景**  
   
- \<バック グラウンド > と\<フォア グラウンド > 要素は、色の値と、UI 要素の前景色または背景の型を定義します。 子を持つこれらの要素はありません。  
+ \<Background>要素と \<Foreground> 要素は、UI 要素の背景または前景の色の値と型を定義します。 これらの要素には子がありません。  
   
 ```xml  
 <Background Type="type" Source="int" />  
 <Foreground Type="type" Source="int" />  
 ```  
   
-|||  
-|-|-|  
 |**属性**|**定義**|  
-|種類|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は、無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
-|Source|[必須]16 進数で表される色の値|  
+|-|-|  
+|Type|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
+|source|必要16進数で表される色の値|  
   
- 型の属性のスキーマでは、__VSCOLORTYPE 列挙型によってサポートされているすべての値がサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。  
+ __VSCOLORTYPE 列挙体によってサポートされるすべての値は、Type 属性のスキーマでサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。  
   
- **まとめ**  
+ **すべてをまとめて**  
   
- これは、有効なテーマの .xml ファイルの簡単な例です。  
+ 有効な theme ファイルの簡単な例を次に示します。  
   
 ```xml  
 <Themes>  
@@ -131,36 +126,35 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 </Themes>  
 ```  
   
-## <a name="how-to-use-the-tool"></a>ツールを使用する方法  
+## <a name="how-to-use-the-tool"></a>ツールの使用方法  
  **構文**  
   
- VsixColorCompiler \<XML ファイル > \<PkgDef ファイル >\<省略可能な引数 >  
+ VsixColorCompiler \<XML file> \<PkgDef file>\<Optional Args>  
   
  **引数**  
   
-||||  
-|-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
-|名前のない (.xml ファイル)|最初の名前のないパラメーターは、これに変換する XML ファイルへのパスです。|必須|  
-|名前のない (.pkgdef ファイル)|これは 2 つ目は無名パラメーターは、生成された .pkgdef ファイルの出力パス。<br /><br /> 既定:\<XML ファイル名 > .pkgdef|省略可|  
-|/noLogo|このフラグを設定すると、印刷から製品および著作権情報が停止します。|Optional|  
-|/?|ヘルプ情報を出力します。|Optional|  
-|/help|ヘルプ情報を出力します。|Optional|  
+|-|-|-|  
+|名前のない (.xml ファイル)|これは、最初の名前のないパラメーターで、は変換する XML ファイルへのパスです。|必須|  
+|名前のない (pkgdef ファイル)|これは2番目の名前のないパラメーターで、は生成された pkgdef ファイルの出力パスです。<br /><br /> 既定値: \<XML Filename> pkgdef|省略可能|  
+|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|省略可能|  
+|/?|ヘルプ情報を印刷します。|省略可能|  
+|/help|ヘルプ情報を印刷します。|オプション|  
   
  **例**  
   
 - VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
-- VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml/noLogo  
   
-## <a name="notes"></a>メモ  
+## <a name="notes"></a>Notes  
   
-- このツールでは、vc ランタイムの最新バージョンをインストールすることが必要です。  
+- このツールを使用するには、最新バージョンの VC + + ランタイムがインストールされている必要があります。  
   
-- 1 つのファイルのみがサポートされています。 フォルダーのパスを使用して一括変換がサポートされていません。  
+- サポートされているファイルは1つだけです。 フォルダーパスを使用した一括変換はサポートされていません。  
   
-## <a name="sample-output"></a>出力例  
- ツールによって生成された、.pkgdef ファイルのようになります、キーの下。  
+## <a name="sample-output"></a>サンプル出力  
+ ツールによって生成される pkgdef ファイルは、次のキーに似ています。  
   
 ```  
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]  

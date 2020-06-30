@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによってワークシートの範囲内のテキストを検索する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ffc06c2f50f7a304ef76ac1451ee47419143afb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985816"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547031"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>方法: プログラムによってワークシートの範囲内のテキストを検索する
-  <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> メソッドを使用すると、範囲内のテキストを検索できます。 このテキストは、`#NULL!` や `#VALUE!`などのワークシートのセルに表示される可能性のあるエラー文字列にすることもできます。 エラー文字列の詳細については、「[セルエラー値](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)」を参照してください。
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>オブジェクトのメソッドを <xref:Microsoft.Office.Interop.Excel.Range> 使用すると、範囲内のテキストを検索できます。 このテキストは、やなどのワークシートのセルに表示されるエラー文字列のいずれかにすることもでき `#NULL!` `#VALUE!` ます。 エラー文字列の詳細については、「[セルエラー値](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)」を参照してください。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 次の例では、`Fruits` という名前の範囲を検索し、"リンゴ" という単語を含むセルのフォントを変更します。 この手順では、以前に設定した検索設定を使用して検索を繰り返す <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> メソッドも使用します。 検索するセルを指定すると、<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> メソッドによって残りの部分が処理されます。
+ 次の例では、という名前の範囲を検索 `Fruits` し、"りんご" という単語を含むセルのフォントを変更します。 この手順では、 <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 以前に設定した検索設定を使用して検索を繰り返すメソッドも使用します。 検索するセルを指定すると、 <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> メソッドが残りの部分を処理します。
 
 > [!NOTE]
-> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> メソッドの検索は、範囲の末尾に到達した後、検索範囲の先頭に戻ります。 コードでは、無限ループ内で検索がラップされていないことを確認する必要があります。 このサンプルプロシージャは、<xref:Microsoft.Office.Interop.Excel.Range.Address%2A> プロパティを使用してこれを処理する方法の1つを示しています。
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>メソッドの検索は、範囲の末尾に到達した後、検索範囲の先頭に戻ります。 コードでは、無限ループ内で検索がラップされていないことを確認する必要があります。 このサンプルプロシージャは、プロパティを使用してこれを処理する方法の1つを示して <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> います。
 
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>ワークシートの範囲内のテキストを検索するには
 
@@ -48,7 +48,7 @@ ms.locfileid: "72985816"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. 最初に見つかった範囲 (`firstFind`) と**Nothing**を比較します。 `firstFind` に値が含まれていない場合、コードは検出された範囲 (`currentFind`) を格納します。
+4. 最初に見つかった範囲 ( `firstFind` ) と**Nothing**を比較します。 `firstFind`に値が含まれていない場合、コードは見つかった範囲 () を格納し `currentFind` ます。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]

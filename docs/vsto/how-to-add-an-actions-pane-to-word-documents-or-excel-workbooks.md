@@ -1,7 +1,7 @@
 ---
-title: Word 文書または Excel ブックに操作ウィンドウを追加します。
+title: Word 文書または Excel ブックに操作ウィンドウを追加する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aed3ace3765bb9f160117503deb7373e12e510ad
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177773"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546225"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>方法: Word 文書または Excel ブックに操作ウィンドウを追加する
-  に Microsoft Office Word ドキュメントまたは Microsoft Excel ブックを操作ウィンドウを追加するには、Windows フォーム ユーザー コントロールをまず作成します。 次に、ユーザー コントロールを追加、<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>のプロパティ、`ThisDocument.ActionsPane`フィールド (Word) または`ThisWorkbook.ActionsPane`project のフィールド (Excel)。
+  Microsoft Office Word 文書または Microsoft Excel ブックに操作ウィンドウを追加するには、まず Windows フォームユーザーコントロールを作成します。 次に、 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` プロジェクト内のフィールド (Word) またはフィールド (Excel) のプロパティにユーザーコントロールを追加し `ThisWorkbook.ActionsPane` ます。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -31,52 +31,52 @@ ms.locfileid: "66177773"
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="creating-the-user-control"></a>ユーザー コントロールの作成
- 次の手順では、Excel プロジェクトまたは Word ユーザー コントロールを作成する方法を示します。 また、ボタンは、ユーザー コントロールがクリックされたときに、ドキュメントまたはブックにテキストを書き込むも追加されます。
+ 次の手順は、Word または Excel プロジェクトでユーザーコントロールを作成する方法を示しています。 また、テキストをクリックしたときに文書またはブックに書き込まれるボタンをユーザーコントロールに追加します。
 
-#### <a name="to-create-the-user-control"></a>ユーザー コントロールを作成するには
+#### <a name="to-create-the-user-control"></a>ユーザーコントロールを作成するには
 
-1. Visual Studio で Word または Excel ドキュメント レベルのプロジェクトを開きます。
+1. Visual Studio で Word または Excel のドキュメントレベルのプロジェクトを開きます。
 
 2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-3. **新しい項目の追加**ダイアログ ボックスで、**操作ウィンドウ コントロール**、名前を付けます**HelloControl**、 をクリック**追加**します。
+3. [**新しい項目の追加**] ダイアログボックスで [**操作ウィンドウコントロール**] を選択し、「 **HelloControl**」という名前を指定して、[**追加**] をクリックします。
 
     > [!NOTE]
-    > 別の方法として追加することができます、**ユーザー コントロール**をプロジェクトに項目。 によって生成されたクラス、**操作ウィンドウ コントロール**と**ユーザー コントロール**項目は、機能的に同等です。
+    > 別の方法として、**ユーザーコントロール**項目をプロジェクトに追加することもできます。 **操作ウィンドウコントロール**と**ユーザーコントロール**の項目によって生成されるクラスは、機能的には同等です。
 
-4. **Windows フォーム**のタブ、**ツールボックス**ドラッグ、**ボタン**コントロールをコントロールにします。
+4. [**ツールボックス**] の [ **Windows フォーム**] タブで、**ボタン**コントロールをコントロールにドラッグします。
 
     > [!NOTE]
-    > コントロールがデザイナーで表示されていない場合をダブルクリックします**HelloControl**で**ソリューション エクスプ ローラー**します。
+    > コントロールがデザイナーに表示されていない場合は、**ソリューションエクスプローラー**で [ **HelloControl** ] をダブルクリックします。
 
-5. コードを追加して、<xref:System.Windows.Forms.Control.Click>ボタンのイベント ハンドラー。 次の例では、Microsoft Office Word ドキュメントのコードを示します。
+5. <xref:System.Windows.Forms.Control.Click>ボタンのイベントハンドラーにコードを追加します。 次の例は、Microsoft Office Word 文書のコードを示しています。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6. C# では、ボタン クリックのイベント ハンドラーを追加する必要があります。 このコードを配置することができます、`HelloControl`コンス トラクターの呼び出し後`InitializeComponent`します。
+6. C# では、ボタンクリック用のイベントハンドラーを追加する必要があります。 このコードは、の `HelloControl` 呼び出し後にコンストラクターに配置でき `InitializeComponent` ます。
 
-     イベント ハンドラーを作成する方法については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+     イベントハンドラーの作成方法の詳細については、「[方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]
 
-## <a name="add-the-user-control-to-the-actions-pane"></a>[操作] ウィンドウにユーザー コントロールを追加します。
- [操作] ウィンドウを表示するには、ユーザー コントロールを追加、<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>のプロパティ、`ThisDocument.ActionsPane`フィールド (Word) または`ThisWorkbook.ActionsPane`フィールド (Excel)。
+## <a name="add-the-user-control-to-the-actions-pane"></a>操作ウィンドウにユーザーコントロールを追加する
+ 操作ウィンドウを表示するには、ユーザーコントロールを <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` フィールド (Word) またはフィールド (Excel) のプロパティに追加し `ThisWorkbook.ActionsPane` ます。
 
-### <a name="to-add-the-user-control-to-the-actions-pane"></a>[操作] ウィンドウにユーザー コントロールを追加するには
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>操作ウィンドウにユーザーコントロールを追加するには
 
-1. 次のコードを追加、`ThisDocument`または`ThisWorkbook`クラスレベル宣言としてクラス (は、メソッドに次のコードが追加されることはありません)。
+1. `ThisDocument`クラスまたはクラスに、クラスレベルの宣言として次のコードを追加し `ThisWorkbook` ます (メソッドにこのコードを追加しないでください)。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2. 次のコードを追加、`ThisDocument_Startup`のイベント ハンドラー、`ThisDocument`クラスまたは`ThisWorkbook_Startup`のイベント ハンドラー、`ThisWorkbook`クラス。
+2. クラスの `ThisDocument_Startup` イベントハンドラー `ThisDocument` または `ThisWorkbook_Startup` クラスのイベントハンドラーに次のコードを追加し `ThisWorkbook` ます。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
 
 ## <a name="see-also"></a>関連項目
 - [操作ウィンドウの概要](../vsto/actions-pane-overview.md)
-- [チュートリアル: 操作ウィンドウから文書にテキストを挿入します。](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
-- [方法: アクション ペイン上のコントロールのレイアウトを管理します。](../vsto/how-to-manage-control-layout-on-actions-panes.md)
-- [チュートリアル: 操作ウィンドウから文書にテキストを挿入します。](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [方法: 操作ウィンドウのコントロールのレイアウトを管理する](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+- [チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

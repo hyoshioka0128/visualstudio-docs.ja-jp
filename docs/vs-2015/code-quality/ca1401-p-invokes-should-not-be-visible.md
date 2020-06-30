@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f13669959a5874c74753d304371b8ab7db14d4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661356"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547291"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invoke は参照可能になりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
@@ -33,10 +33,10 @@ ms.locfileid: "72661356"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリック型のパブリックメソッドまたはプロテクトメソッドには、<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 属性があります ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] の `Declare` キーワードによっても実装されます)。
+ パブリック型のパブリックメソッドまたはプロテクトメソッドには、属性があり <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> ます (のキーワードによっても実装され `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ます)。
 
-## <a name="rule-description"></a>規則の説明
- @No__t_0 属性 (または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] で `Declare` キーワードを使用して定義されているメソッド) でマークされたメソッドは、プラットフォーム呼び出しサービスを使用してアンマネージコードにアクセスします。 このようなメソッドは公開しないでください。 これらのメソッドをプライベートまたは内部として保持することにより、他の方法で呼び出すことができなかったアンマネージ Api に呼び出し元がアクセスできるようにすることで、ライブラリを使用してセキュリティを侵害できるようにすることができます。
+## <a name="rule-description"></a>ルールの説明
+ <xref:System.Runtime.InteropServices.DllImportAttribute>属性 (またはでキーワードを使用して定義されているメソッド) でマークされたメソッドは、 `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プラットフォーム呼び出しサービスを使用してアンマネージコードにアクセスします。 このようなメソッドは公開しないでください。 これらのメソッドをプライベートまたは内部として保持することにより、他の方法で呼び出すことができなかったアンマネージ Api に呼び出し元がアクセスできるようにすることで、ライブラリを使用してセキュリティを侵害できるようにすることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、メソッドのアクセスレベルを変更します。

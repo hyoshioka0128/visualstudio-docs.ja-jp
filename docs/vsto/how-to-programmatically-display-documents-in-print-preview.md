@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって印刷プレビューで文書を表示します。'
+title: '方法: プログラムによって印刷プレビューで文書を表示する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813037"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545913"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>方法: プログラムによって印刷プレビューで文書を表示します。
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>方法: プログラムによって印刷プレビューで文書を表示する
   レポートを生成するソリューションでは、印刷プレビュー モードでユーザーにレポートを表示する必要がある場合があります。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="procedures-for-document-level-customizations"></a>ドキュメント レベルのカスタマイズの手順
+## <a name="procedures-for-document-level-customizations"></a>ドキュメントレベルのカスタマイズの手順
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>PrintPreview メソッドを呼び出して印刷プレビューで文書を表示するには
 
@@ -36,7 +36,7 @@ ms.locfileid: "62813037"
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>PrintPreview プロパティを設定して印刷プレビューで文書を表示するには
 
-1. 設定、<xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>のプロパティ、<xref:Microsoft.Office.Interop.Word.Application>オブジェクトを**true**します。
+1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>オブジェクトのプロパティ <xref:Microsoft.Office.Interop.Word.Application> を**true**に設定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
@@ -52,12 +52,12 @@ ms.locfileid: "62813037"
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>PrintPreview プロパティを設定して印刷プレビューで文書を表示するには
 
-1. 設定、<xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>のプロパティ、<xref:Microsoft.Office.Interop.Word.Application>オブジェクトを**true**します。
+1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>オブジェクトのプロパティ <xref:Microsoft.Office.Interop.Word.Application> を**true**に設定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムにより印刷するドキュメント](../vsto/how-to-programmatically-print-documents.md)
-- [方法: プログラムによって既存文書を開く](../vsto/how-to-programmatically-open-existing-documents.md)
-- [方法: プログラムで新しいドキュメントを作成します。](../vsto/how-to-programmatically-create-new-documents.md)
+- [方法: プログラムによって文書を印刷する](../vsto/how-to-programmatically-print-documents.md)
+- [方法: プログラムによって既存のドキュメントを開く](../vsto/how-to-programmatically-open-existing-documents.md)
+- [方法: プログラムによって新しいドキュメントを作成する](../vsto/how-to-programmatically-create-new-documents.md)

@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによってワークシートのデータを並べ替え'
+title: '方法: プログラムによってワークシート内のデータを並べ替える'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546979"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>方法: プログラムによってワークシートのデータを並べ替え
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>方法: プログラムによってワークシート内のデータを並べ替える
   実行時にワークシートの範囲およびリストに含まれているデータを並べ替えることができます。 次のコードは、複数の列で構成される `Fruits` という名前の範囲を、最初の列のデータを基に並べ替え、次に 2 番目の列のデータを基に並べ替えます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="sort-data-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズのデータを並べ替える
+## <a name="sort-data-in-a-document-level-customization"></a>ドキュメントレベルのカスタマイズでデータを並べ替える
 
 ### <a name="to-sort-data-in-a-namedrange-control"></a>NamedRange コントロール内のデータを並べ替えるには
 
@@ -36,7 +36,7 @@ ms.locfileid: "62961785"
     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]
 
-   次のコードを配置*Sheet1.vb*または*Sheet1.cs*データを並べ替える、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロール。 このコードでは、`Sheet1` という名前のワークシートに、`fruitList` という名前の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールがあることを前提としています。
+   コントロール内のデータを並べ替えるには、 *Sheet1*または*Sheet1.cs*に次のコードを配置し <xref:Microsoft.Office.Tools.Excel.ListObject> ます。 このコードでは、`Sheet1` という名前のワークシートに、`fruitList` という名前の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールがあることを前提としています。
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>ListObject コントロール内のデータを並べ替えるには
 
@@ -45,7 +45,7 @@ ms.locfileid: "62961785"
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
 
-## <a name="sort-data-in-a-vsto-add-in"></a>VSTO アドインのデータを並べ替える
+## <a name="sort-data-in-a-vsto-add-in"></a>VSTO アドインでのデータの並べ替え
 
 ### <a name="to-sort-data-in-a-native-range"></a>ネイティブな範囲でデータを並べ替えるには
 
@@ -62,10 +62,10 @@ ms.locfileid: "62961785"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによって自動的に増分するデータ範囲を入力します。](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
-- [方法: コード内でワークシートの範囲をプログラムで参照してください。](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [方法: プログラムによってブック内の範囲にスタイルを適用します。](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [方法: プログラムによってコード内でワークシートの範囲を参照する](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [方法: プログラムによってブック内の範囲にスタイルを適用する](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [NamedRange コントロール](../vsto/namedrange-control.md)
 - [ListObject コントロール](../vsto/listobject-control.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

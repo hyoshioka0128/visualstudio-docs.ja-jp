@@ -1,7 +1,7 @@
 ---
 title: '方法: Word 文書に Bookmark コントロールを追加する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Bookmark.Dialog
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce77736bfefdc2c2e70c489a91b147cb0d2ed74a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255996"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547252"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>方法: Word 文書に Bookmark コントロールを追加する
   ドキュメント レベルのプロジェクトでは、デザイン時または実行時にプロジェクトの文書に <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを追加できます。 VSTO アドイン プロジェクトでは、実行時に、開いている任意の文書に <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを追加できます。
@@ -36,9 +36,9 @@ ms.locfileid: "71255996"
 
 - [実行時に VSTO アドインプロジェクトに Bookmark コントロールを追加する](#runtimeaddin)
 
-  <xref:Microsoft.Office.Tools.Word.Bookmark>コントロールの詳細については、「 [Bookmark コントロール](../vsto/bookmark-control.md)」を参照してください。
+  コントロールの詳細について <xref:Microsoft.Office.Tools.Word.Bookmark> は、「 [Bookmark コントロール](../vsto/bookmark-control.md)」を参照してください。
 
-## <a name="designtime"></a>デザイン時に Bookmark コントロールを追加する
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>デザイン時に Bookmark コントロールを追加する
  デザイン時にドキュメント レベルのプロジェクトの文書に <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを追加する方法はいくつかあります。
 
 - Visual Studio の **[ツールボックス]** を使用する方法。
@@ -77,7 +77,7 @@ ms.locfileid: "71255996"
 
 3. **[ブックマーク]** ダイアログ ボックスで、新しいブックマークの名前を入力し、 **[追加]** をクリックします。
 
-## <a name="runtimedoclevel"></a>実行時にドキュメントレベルのプロジェクトに Bookmark コントロールを追加する
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>実行時にドキュメントレベルのプロジェクトに Bookmark コントロールを追加する
  プロジェクトの <xref:Microsoft.Office.Tools.Word.Bookmark> クラスの <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> プロパティのメソッドを使用して、実行時にプログラムによって文書に `ThisDocument` コントロールを追加できます。 2 つのメソッド オーバーロードを使用して、次の方法で <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを追加できます。
 
 - 指定した範囲に <xref:Microsoft.Office.Tools.Word.Bookmark> を追加する。
@@ -96,7 +96,7 @@ ms.locfileid: "71255996"
     > [!NOTE]
     > 既存の <xref:Microsoft.Office.Tools.Word.Bookmark> から <xref:Microsoft.Office.Interop.Word.Bookmark>コントロールを作成する場合は、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> メソッドを使用し、既存の <xref:Microsoft.Office.Interop.Word.Bookmark>を渡します。
 
-## <a name="runtimeaddin"></a>実行時に VSTO アドインプロジェクトに Bookmark コントロールを追加する
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>実行時に VSTO アドインプロジェクトに Bookmark コントロールを追加する
  <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、実行時に VSTO アドインを使用して任意の開いているドキュメントに追加できます。 そのためには、開いている文書に基づいた <xref:Microsoft.Office.Tools.Word.Document> ホスト項目を生成し、このホスト項目の <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> プロパティのメソッドを使用します。 2 つのメソッド オーバーロードを使用して、次の方法で <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを追加できます。
 
 - 指定した範囲に <xref:Microsoft.Office.Tools.Word.Bookmark> を追加する。
@@ -126,10 +126,10 @@ ms.locfileid: "71255996"
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
 ## <a name="see-also"></a>関連項目
-- [拡張オブジェクトを使用した Word の自動化](../vsto/automating-word-by-using-extended-objects.md)
+- [拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
-- [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
-- [方法: ブックマークコントロールのサイズ変更](../vsto/how-to-resize-bookmark-controls.md)
+- [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
+- [方法: Bookmark コントロールのサイズを変更する](../vsto/how-to-resize-bookmark-controls.md)

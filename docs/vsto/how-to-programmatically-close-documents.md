@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによって文書を閉じる'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422472"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547460"
 ---
 # <a name="how-to-programmatically-close-documents"></a>方法: プログラムによって文書を閉じる
   作業中の文書を閉じたり、文書を指定して閉じたりすることができます。
@@ -48,7 +48,7 @@ ms.locfileid: "63422472"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
 
-## <a name="close-a-document-that-you-specify-by-name"></a>名前を指定して文書を閉じる
+## <a name="close-a-document-that-you-specify-by-name"></a>名前で指定したドキュメントを閉じる
  名前を指定して文書を閉じる方法は、VSTO アドインとドキュメント レベルのカスタマイズで同じです。
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>名前を指定して文書を閉じるには
@@ -62,8 +62,8 @@ ms.locfileid: "63422472"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって既存文書を開く](../vsto/how-to-programmatically-open-existing-documents.md)
-- [方法: プログラムによってドキュメントを保存します。](../vsto/how-to-programmatically-save-documents.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [方法: プログラムによって既存のドキュメントを開く](../vsto/how-to-programmatically-open-existing-documents.md)
+- [方法: プログラムによって文書を保存する](../vsto/how-to-programmatically-save-documents.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

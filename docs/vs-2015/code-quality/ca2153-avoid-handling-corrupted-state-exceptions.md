@@ -8,17 +8,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667411"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546316"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: 破損状態例外の処理を回避する
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:破損状態例外の処理を回避する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
@@ -28,7 +28,7 @@ ms.locfileid: "72667411"
 ## <a name="cause"></a>原因
  [破損状態例外 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) は、メモリの破損がプロセス内に存在していることを示します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  CSE は、プロセスが破損状態にあり、システムによってキャッチされていないことを示します。 破損した状態のシナリオでは、適切な `HandleProcessCorruptedStateExceptions` 属性でメソッドをマークした場合に、汎用ハンドラーのみがこの例外をキャッチします。 既定では、 [共通言語ランタイム (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) は、CSE の catch ハンドラーを呼び出しません。
 
  コードをログに記録しても攻撃者はメモリ破損のバグを悪用できるため、このような例外をキャッチせずにプロセスをクラッシュさせるほうが安全な方法です。
@@ -38,7 +38,7 @@ ms.locfileid: "72667411"
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この警告を解決するには、次のいずれかを行う必要があります。
 
- 1. `HandleProcessCorruptedStateExceptions` 属性を削除します。 これにより、CSE を catch ハンドラーに渡さない既定の実行時の動作に戻ります。
+ 1. `HandleProcessCorruptedStateExceptions` 属性を削除してください。 これにより、CSE を catch ハンドラーに渡さない既定の実行時の動作に戻ります。
 
  2. 特定の例外の種類をキャッチするハンドラーではなく汎用 catch ハンドラーを削除します。  ハンドラー コードが安全に処理できたと仮定した場合 (非常にまれ)、これに CSE が含まれることがあります。
 
@@ -68,7 +68,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1"></a>解決方法 1
+### <a name="solution-1"></a>解決策 1
  HandleProcessCorruptedExceptions 属性を削除することにより、例外が処理されないようにします。
 
 ```
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2"></a>解決方法 2
+### <a name="solution-2"></a>解決策 2
  汎用 catch ハンドラーを削除し、特定の例外の種類のみをキャッチします。
 
 ```
@@ -110,7 +110,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3"></a>解決方法 3
+### <a name="solution-3"></a>解決策 3
  例外を再スローします。
 
 ```

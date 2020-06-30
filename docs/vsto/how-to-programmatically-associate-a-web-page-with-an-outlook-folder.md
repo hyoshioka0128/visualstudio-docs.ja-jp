@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって Outlook のフォルダー、web ページに関連付ける'
+title: '方法: プログラムによって web ページを Outlook フォルダーに関連付ける'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e83f8b7f6bcdb790b5e545aa76426bc05f0735f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817310"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546147"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>方法: プログラムによって Outlook のフォルダー、web ページに関連付ける
-  この例は、という名前のフォルダーの`HtmlView`Microsoft Office Outlook でします。 フォルダーが存在しない場合、コードはフォルダーを作成し、Web ページを割り当てます。 フォルダーが存在する場合、コードはフォルダーの内容を表示します。
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>方法: プログラムによって web ページを Outlook フォルダーに関連付ける
+  この例では Microsoft Office Outlook でという名前のフォルダーがあるかどうかを確認 `HtmlView` します。 フォルダーが存在しない場合、コードによってフォルダーが作成され、そのフォルダーに Web ページが割り当てられます。 フォルダーが存在する場合は、このコードによってフォルダーの内容が表示されます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,6 +30,6 @@ ms.locfileid: "62817310"
  [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>関連項目
-- [フォルダーを操作します。](../vsto/working-with-folders.md)
-- [方法: 名前でフォルダーをプログラムで取得します。](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [方法: プログラムによってカスタム フォルダーのアイテムを作成します。](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [フォルダーの操作](../vsto/working-with-folders.md)
+- [方法: プログラムによって名前を指定してフォルダーを取得する](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [方法: プログラムによってカスタムフォルダー項目を作成する](../vsto/how-to-programmatically-create-custom-folder-items.md)

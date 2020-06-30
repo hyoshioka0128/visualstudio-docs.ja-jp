@@ -1,18 +1,18 @@
 ---
 title: 'チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593526"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546901"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 ドメイン固有言語ソリューションでテキストテンプレートを変更または追加すると、エンジンがテンプレートをソースコードに変換したとき、または生成されたコードをコンパイルしたときに、エラーが発生することがあります。 次のチュートリアルでは、テキストテンプレートをデバッグするために実行できるいくつかの操作について説明します。
@@ -38,14 +38,14 @@ ms.locfileid: "75593526"
 
 #### <a name="to-create-a-text-template"></a>テキストテンプレートを作成するには
 
-1. ソリューションをビルドし、デバッガーで実行を開始します。 ( **[ビルド]** メニューの **[ソリューションのリビルド]** をクリックし、 **[デバッグ]** メニューの **[デバッグ開始]** をクリックします)。Visual Studio の新しいインスタンスによって、デバッグプロジェクトが開きます。
+1. ソリューションをビルドし、デバッガーで実行を開始します。 ([**ビルド**] メニューの [**ソリューションのリビルド**] をクリックし、[**デバッグ**] メニューの [**デバッグ開始**] をクリックします)。Visual Studio の新しいインスタンスによって、デバッグプロジェクトが開きます。
 
-2. `DebugTest.tt` という名前のテキストファイルをデバッグプロジェクトに追加します。
+2. という名前のテキストファイルを `DebugTest.tt` デバッグプロジェクトに追加します。
 
-3. DebugTest.tt の **[カスタムツール]** プロパティが `TextTemplatingFileGenerator`に設定されていることを確認します。
+3. DebugTest.tt の [**カスタムツール**] プロパティがに設定されていることを確認し `TextTemplatingFileGenerator` ます。
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>テキストテンプレートからモデルにアクセスするディレクティブのデバッグ
- テキストテンプレート内のステートメントおよび式からモデルにアクセスするには、最初に生成されたディレクティブプロセッサを呼び出す必要があります。 生成されたディレクティブプロセッサを呼び出すと、モデル内のクラスがプロパティとしてテキストテンプレートコードで使用できるようになります。 詳細については、次を参照してください。[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)します。
+ テキストテンプレート内のステートメントおよび式からモデルにアクセスするには、最初に生成されたディレクティブプロセッサを呼び出す必要があります。 生成されたディレクティブプロセッサを呼び出すと、モデル内のクラスがプロパティとしてテキストテンプレートコードで使用できるようになります。 詳細については、「[テキストテンプレートからのモデルへのアクセス](../modeling/accessing-models-from-text-templates.md)」を参照してください。
 
  次の手順では、正しくないディレクティブ名と不適切なプロパティ名をデバッグします。
 
@@ -87,17 +87,17 @@ ms.locfileid: "75593526"
     #>
     ```
 
-2. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+2. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     **[エラー一覧]** ウィンドウに次のエラーが表示されます。
+     [**エラー一覧**] ウィンドウに次のエラーが表示されます。
 
      **' DebuggingTestLanguageDirectiveProcessor ' という名前のプロセッサは、' modelRoot ' という名前のディレクティブをサポートしていません。変換は実行されません。**
 
-     この場合、ディレクティブ呼び出しに無効なディレクティブ名が含まれています。 ディレクティブ名として `modelRoot` が指定されましたが、正しいディレクティブ名が `DebuggingTestLanguage`。
+     この場合、ディレクティブ呼び出しに無効なディレクティブ名が含まれています。 ディレクティブ名としてを指定しましたが、 `modelRoot` 正しいディレクティブ名は `DebuggingTestLanguage` です。
 
-3. **[エラー一覧]** ウィンドウでエラーをダブルクリックして、コードに移動します。
+3. [**エラー一覧**] ウィンドウでエラーをダブルクリックして、コードに移動します。
 
-4. コードを修正するには、ディレクティブ名を `DebuggingTestLanguage`に変更します。
+4. コードを修正するには、ディレクティブ名をに変更し `DebuggingTestLanguage` ます。
 
      変更が強調表示されます。
 
@@ -109,9 +109,9 @@ ms.locfileid: "75593526"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+5. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 **[エラー一覧]** ウィンドウにエラーは表示されません。
+     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 [**エラー一覧**] ウィンドウにエラーは表示されません。
 
 #### <a name="to-debug-an-incorrect-property-name"></a>不適切なプロパティ名をデバッグするには
 
@@ -151,19 +151,19 @@ ms.locfileid: "75593526"
     #>
     ```
 
-2. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+2. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     **[エラー一覧]** ウィンドウが表示され、次のいずれかのエラーが表示されます。
+     [**エラー一覧**] ウィンドウが表示され、次のいずれかのエラーが表示されます。
 
      (C#)
 
-     **変換のコンパイル: VisualStudio\<GUID >。指定された Texttransformation ' に ' Examplemodel.store ' の定義が含まれていません**
+     **変換のコンパイル: VisualStudio \<GUID> 。指定された Texttransformation ' に ' Examplemodel.store ' の定義が含まれていません**
 
      (Visual Basic)
 
-     **変換をコンパイルしています: ' Examplemodel.store ' は ' VisualStudio\<GUID > のメンバーではありません。Texttransformation ' があります。**
+     **変換をコンパイルしています: ' Examplemodel.store ' は ' VisualStudio のメンバーではありません \<GUID> 。Texttransformation ' があります。**
 
-     この場合、テキストテンプレートコードに無効なプロパティ名が含まれています。 プロパティ名として `ExampleModel` が指定されましたが、正しいプロパティ名が `LibraryModel`。 次のコードに示すように、[提供] パラメーターで正しいプロパティ名を見つけることができます。
+     この場合、テキストテンプレートコードに無効なプロパティ名が含まれています。 プロパティ名としてが指定されてい `ExampleModel` ますが、正しいプロパティ名が `LibraryModel` です。 次のコードに示すように、[提供] パラメーターで正しいプロパティ名を見つけることができます。
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -171,9 +171,9 @@ ms.locfileid: "75593526"
 
 3. [エラー一覧] ウィンドウでエラーをダブルクリックして、コードに移動します。
 
-4. コードを修正するには、テキストテンプレートコードでプロパティ名を `LibraryModel` に変更します。
+4. コードを修正するには、テキストテンプレートコードでプロパティ名をに変更し `LibraryModel` ます。
 
-     変更が強調表示されています。
+     変更が強調表示されます。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -206,6 +206,6 @@ ms.locfileid: "75593526"
     #>
     ```
 
-5. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+5. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 **[エラー一覧]** ウィンドウにエラーは表示されません。
+     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 [**エラー一覧**] ウィンドウにエラーは表示されません。

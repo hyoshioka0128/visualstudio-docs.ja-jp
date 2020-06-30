@@ -1,18 +1,18 @@
 ---
 title: Windows フォームでのダイアグラムの埋め込み
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94425c9f3bc586847f43589f7abdcef2295cf1b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114627"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547629"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows フォームにダイアグラムを埋め込む
 
@@ -28,7 +28,7 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
 
      コントロールのアンカープロパティを設定します。
 
-3. ソリューションエクスプローラーで、ユーザーコントロールファイルを右クリックし、 **[コードの表示]** をクリックします。 次のコンストラクターと変数をコードに追加します。
+3. ソリューションエクスプローラーで、ユーザーコントロールファイルを右クリックし、[**コードの表示**] をクリックします。 次のコンストラクターと変数をコードに追加します。
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -67,7 +67,7 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
 
 ## <a name="update-the-form-using-store-events"></a>ストアイベントを使用してフォームを更新する
 
-1. フォームデザイナーで、`listBox1`という名前の**リストボックス**を追加します。 これにより、モデル内の要素の一覧が表示されます。 これは、*ストアイベント*を使用してモデルと同期されます。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
+1. フォームデザイナーで、という名前の**リストボックス**を追加 `listBox1` します。 これにより、モデル内の要素の一覧が表示されます。 これは、*ストアイベント*を使用してモデルと同期されます。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
 2. カスタムコードファイルで、DocView クラスにさらにメソッドをオーバーライドします。
 

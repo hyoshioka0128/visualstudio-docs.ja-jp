@@ -1,7 +1,7 @@
 ---
-title: '方法: オブジェクトからのデータをドキュメントに読み込む'
+title: '方法: オブジェクトのデータをドキュメントに読み込む'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967723"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547174"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>方法: オブジェクトからのデータをドキュメントに読み込む
+# <a name="how-to-populate-documents-with-data-from-objects"></a>方法: オブジェクトのデータをドキュメントに読み込む
 
-Microsoft Office Word のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータ オブジェクトのデータにアクセスできます。 同じツールとコードを使用してオブジェクトからソリューションにデータを読み込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 また、ホスト コントロールを使用してデータを表示することもできます。 ホスト コントロールは、イベントおよびデータ バインディングの機能が強化された Microsoft Office Word のネイティブ オブジェクトです。 詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+Microsoft Office Word のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータ オブジェクトのデータにアクセスできます。 同じツールとコードを使用してオブジェクトからソリューションにデータを読み込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 また、ホスト コントロールを使用してデータを表示することもできます。 ホスト コントロールは、イベントおよびデータ バインディングの機能が強化された Microsoft Office Word のネイティブ オブジェクトです。 詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -36,17 +36,17 @@ Microsoft Office Word のドキュメント レベルのプロジェクトでは
 
 ## <a name="to-add-a-data-object"></a>データ オブジェクトを追加するには
 
-データ オブジェクトを追加するには、開く、**データ ソース**ウィンドウ オブジェクトからデータ ソースを作成します。 詳細については、「[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
+データオブジェクトを追加するには、[**データソース**] ウィンドウを開き、オブジェクトからデータソースを作成します。 詳細については、「[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
 
-## <a name="connect-the-data-object-to-the-bindingsource"></a>データ オブジェクトを BindingSource に接続します。
+## <a name="connect-the-data-object-to-the-bindingsource"></a>データオブジェクトを BindingSource に接続する
 
 ドキュメント レベルのプロジェクトでは、デザイン時にコントロールを文書に追加し、そのコントロールをデータにバインドできます。
 
 VSTO アドイン プロジェクトでは、コントロールを作成して、そのコントロールを実行時にバインドできます。
 
-### <a name="document-level-projects"></a>ドキュメント レベルのプロジェクト
+### <a name="document-level-projects"></a>ドキュメントレベルのプロジェクト
 
-データ オブジェクトを BindingSource に接続します。
+データオブジェクトを BindingSource に接続するには、次のようにします。
 
 1. **[データ ソース]** ウィンドウから目的のデータ フィールドを文書にドラッグします これにより、コントロールが自動的に作成されます。
 
@@ -54,9 +54,9 @@ VSTO アドイン プロジェクトでは、コントロールを作成して�
 
 3. このインスタンスを <xref:System.Windows.Forms.BindingSource.DataSource%2A> の <xref:System.Windows.Forms.BindingSource>プロパティに割り当てます。
 
-### <a name="application-level-projects"></a>アプリケーション レベルのプロジェクト
+### <a name="application-level-projects"></a>アプリケーションレベルのプロジェクト
 
-データ オブジェクトを BindingSource に接続します。
+データオブジェクトを BindingSource に接続するには、次のようにします。
 
 1. コード中に、データ ソースに関連付けられているオブジェクトの種類のインスタンスを作成します。
 
@@ -70,6 +70,6 @@ VSTO アドイン プロジェクトでは、コントロールを作成して�
 
 - [新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [方法: データベースからデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [方法: ホスト コントロールからのデータでデータ ソースを更新します。](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [方法: データベースのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [方法: ホストコントロールのデータを使用してデータソースを更新する](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)

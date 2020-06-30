@@ -1,18 +1,18 @@
 ---
 title: MEF による DSL の拡張
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596607"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547642"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 
@@ -26,7 +26,7 @@ MEF の詳細については、「 [Managed Extensibility Framework (mef)](/dotn
 
 1. **Dslpackage**プロジェクト内に**mefextension**という名前の新しいフォルダーを作成します。 次のファイルを追加します。
 
-     ファイル名: `CommandExtensionVSCT.tt`
+     ファイル名:`CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > このファイルの GUID を、DslPackage\GeneratedCode\Constants.tt で定義されている GUID CommandSetId と同じになるように設定します。
@@ -42,21 +42,21 @@ MEF の詳細については、「 [Managed Extensibility Framework (mef)](/dotn
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    ファイル名: `CommandExtensionRegistrar.tt`
+    ファイル名:`CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    ファイル名: `ValidationExtensionEnablement.tt`
+    ファイル名:`ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    ファイル名: `ValidationExtensionRegistrar.tt`
+    ファイル名:`ValidationExtensionRegistrar.tt`
 
     このファイルを追加する場合は、DSL エクスプローラーで**Editorvalidation**のスイッチの少なくとも1つを使用して、dsl で検証を有効にする必要があります。
 
@@ -65,7 +65,7 @@ MEF の詳細については、「 [Managed Extensibility Framework (mef)](/dotn
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    ファイル名: `PackageExtensionEnablement.tt`
+    ファイル名:`PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,42 +74,42 @@ MEF の詳細については、「 [Managed Extensibility Framework (mef)](/dotn
 
 2. **Dsl**プロジェクト内に**mefextension**という名前の新しいフォルダーを作成します。 次のファイルを追加します。
 
-     ファイル名: `DesignerExtensionMetaDataAttribute.tt`
+     ファイル名:`DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    ファイル名: `GestureExtensionEnablement.tt`
+    ファイル名:`GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    ファイル名: `GestureExtensionController.tt`
+    ファイル名:`GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3. 次の行を、 **Dslpackage\** ? という名前の既存のファイルに追加します。
+3. 次の行を、 **Dslpackage\**? という名前の既存のファイルに追加します。
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-    既存の `<Include>` ディレクティブの後に行を挿入します。
+    既存のディレクティブの後に行を挿入 `<Include>` します。
 
 4. *Dsldefinition. dsl*を開きます。
 
-5. DSL エクスプローラーで、 **[Editor\ Validation]** を選択します。
+5. DSL エクスプローラーで、[ **Editor\ Validation**] を選択します。
 
-6. プロパティウィンドウで、[**使用**する] という名前のプロパティの少なくとも1つが `true`になっていることを確認します。
+6. プロパティウィンドウで、という名前のプロパティの少なくとも1つ**がである**ことを確認し `true` ます。
 
-7. **ソリューションエクスプローラー**ツールバーで、 **[すべてのテンプレートの変換]** をクリックします。
+7. **ソリューションエクスプローラー**ツールバーで、[**すべてのテンプレートの変換**] をクリックします。
 
      追加した各ファイルの下に、関連ファイルが表示されます。
 
@@ -127,9 +127,9 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
 2. 新しいプロジェクトで、DSL のアセンブリへの参照を追加します。
 
-   - このアセンブリには、通常、"で終わる名前が付いています。Dsl .dll "。
+   - このアセンブリには、通常、".Dsl.dll" で終わる名前が付いています。
 
-   - DSL プロジェクトにアクセスできる場合は、ディレクトリ**dsl\\bin\\** の下にアセンブリファイルがあることを確認でき \*
+   - DSL プロジェクトにアクセスできる場合は、ディレクトリ**dsl \\ ビン \\ \* **にあるアセンブリファイルを見つけることができます。
 
    - DSL VSIX ファイルにアクセスできる場合は、VSIX ファイルのファイル名拡張子を ".zip" に変更することで、アセンブリを見つけることができます。 .Zip ファイルを圧縮解除します。
 
@@ -147,21 +147,21 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
 4. 新しい**VSIX プロジェクト**プロジェクトを作成します。
 
-5. **ソリューションエクスプローラー**で、VSIX プロジェクトを右クリックし、 **[スタートアッププロジェクトに設定]** を選択します。
+5. **ソリューションエクスプローラー**で、VSIX プロジェクトを右クリックし、[**スタートアッププロジェクトに設定**] を選択します。
 
 6. 新しいプロジェクトで、 **source.extension.vsixmanifest**を開きます。
 
-7. **[コンテンツの追加]** をクリックします。 ダイアログボックスで、 **[コンテンツの種類]** を **[MEF コンポーネント]** に、 **[ソースプロジェクト]** をクラスライブラリプロジェクトに設定します。
+7. [**コンテンツの追加**] をクリックします。 ダイアログボックスで、[**コンテンツの種類**] を [ **MEF コンポーネント**] に、[**ソースプロジェクト**] をクラスライブラリプロジェクトに設定します。
 
 8. DSL に VSIX 参照を追加します。
 
-   1. Source.extension.vsixmanifest で、 **[参照の追加]** をクリックし**ます**。
+   1. Source.extension.vsixmanifest で、[**参照の追加**] をクリックし**ます**。
 
-   2. ダイアログボックスで、 **[ペイロードの追加]** をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **Dslpackage\\bin\\\*** の DSL ソリューションに組み込まれています。
+   2. ダイアログボックスで、[**ペイロードの追加**] をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **Dslpackage \\ BIN \\ \* **の DSL ソリューションに組み込まれています。
 
        これにより、ユーザーは DSL と拡張機能を同時にインストールできるようになります。 ユーザーが既に DSL をインストールしている場合は、拡張機能のみがインストールされます。
 
-9. **Source.extension.vsixmanifest**の他のフィールドを確認し、更新します。 **[エディションの選択]** をクリックし、正しい Visual Studio のエディションが設定されていることを確認します。
+9. **Source.extension.vsixmanifest**の他のフィールドを確認し、更新します。 [**エディションの選択**] をクリックし、正しい Visual Studio のエディションが設定されていることを確認します。
 
 10. クラスライブラリプロジェクトにコードを追加します。 次のセクションの例をガイドとして使用します。
 
@@ -175,9 +175,9 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
 ### <a name="menu-commands"></a>メニュー コマンド
 
-メニューコマンドを記述するには、<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> を実装するクラスを定義し、dsl`CommandExtension`という名前の、DSL で定義されている属性を使用してクラスにプレフィックス*を付けます*。 複数のメニューコマンドクラスを記述することができます。
+メニューコマンドを作成するには、を実装するクラスを定義し、dsl <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> で定義されている属性を使用して、クラスの前にという名前*を付け* `CommandExtension` ます。 複数のメニューコマンドクラスを記述することができます。
 
-`QueryStatus()` は、ユーザーが図を右クリックするたびに呼び出されます。 現在の選択範囲を検査し、コマンドが適用可能かどうかを示す `command.Enabled` を設定する必要があります。
+`QueryStatus()`は、ユーザーが図を右クリックするたびに呼び出されます。 現在の選択範囲を検査し、 `command.Enabled` コマンドが適用可能かどうかを示すように設定する必要があります。
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -321,7 +321,7 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>検証制約
 
-検証メソッドは、DSL によって生成される `ValidationExtension` の属性と、<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>によってマークされます。 メソッドは、属性でマークされていないクラスで使用できます。
+検証メソッドは、DSL によって `ValidationExtension` 生成される属性とによってマークされ <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> ます。 メソッドは、属性でマークされていないクラスで使用できます。
 
 詳細については、「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 

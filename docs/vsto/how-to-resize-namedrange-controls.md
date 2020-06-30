@@ -1,7 +1,7 @@
 ---
-title: '方法: NamedRange コントロールのサイズ変更'
+title: '方法: NamedRange コントロールのサイズを変更する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80a7fd251d525541b6894c757d7acd148900047c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7762e67b1676f72030cae8d958bef19c501660c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252049"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545822"
 ---
-# <a name="how-to-resize-namedrange-controls"></a>方法: NamedRange コントロールのサイズ変更
+# <a name="how-to-resize-namedrange-controls"></a>方法: NamedRange コントロールのサイズを変更する
   <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールのサイズは Microsoft Office Excel ドキュメントにコントロールを追加するときに設定できますが、後でサイズの変更が必要になる場合があります。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "71252049"
 
 - [実行時に VSTO アドインプロジェクトの NamedRange コントロールのサイズを変更する](#runtimeaddin)
 
-## <a name="designtime"></a>デザイン時に NamedRange コントロールのサイズを変更する
+## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a>デザイン時に NamedRange コントロールのサイズを変更する
  名前付き範囲のサイズを変更するには、 **[名前の定義]** ダイアログ ボックスでサイズを再定義します。
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>[名前の定義] ダイアログ ボックスで名前付き範囲のサイズを変更するには
@@ -55,7 +55,7 @@ ms.locfileid: "71252049"
 
 6. **[OK]** をクリックします。
 
-## <a name="runtimedoclevel"></a>実行時にドキュメントレベルのプロジェクトの NamedRange コントロールのサイズを変更する
+## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>実行時にドキュメントレベルのプロジェクトの NamedRange コントロールのサイズを変更する
  <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> プロパティを使用して、名前付き範囲のサイズをプログラムで変更できます。
 
 > [!NOTE]
@@ -73,8 +73,8 @@ ms.locfileid: "71252049"
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-## <a name="runtimeaddin"></a>実行時に VSTO アドインプロジェクトの NamedRange コントロールのサイズを変更する
- 実行時に、任意の開いているワークシート上の <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールのサイズを変更できます。 VSTO アドインを使用してワークシート<xref:Microsoft.Office.Tools.Excel.NamedRange>にコントロールを追加する方法の詳細については、 [「」を参照してください。ワークシート](../vsto/how-to-add-namedrange-controls-to-worksheets.md)に NamedRange コントロールを追加します。
+## <a name="resize-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>実行時に VSTO アドインプロジェクトの NamedRange コントロールのサイズを変更する
+ 実行時に、任意の開いているワークシート上の <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールのサイズを変更できます。 VSTO アドインを使用してワークシートにコントロールを追加する方法の詳細について <xref:Microsoft.Office.Tools.Excel.NamedRange> は、「[方法: ワークシートに NamedRange コントロールを追加](../vsto/how-to-add-namedrange-controls-to-worksheets.md)する」を参照してください。
 
 ### <a name="to-resize-a-named-range-programmatically"></a>名前付き範囲のサイズをプログラムで変更するには
 
@@ -93,8 +93,8 @@ ms.locfileid: "71252049"
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange コントロール](../vsto/namedrange-control.md)
-- [方法: ワークシートへの NamedRange コントロールの追加](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [方法: ブックマークコントロールのサイズ変更](../vsto/how-to-resize-bookmark-controls.md)
-- [方法: ListObject コントロールのサイズ変更](../vsto/how-to-resize-listobject-controls.md)
+- [方法: ワークシートに NamedRange コントロールを追加する](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [方法: Bookmark コントロールのサイズを変更する](../vsto/how-to-resize-bookmark-controls.md)
+- [方法: ListObject コントロールのサイズを変更する](../vsto/how-to-resize-listobject-controls.md)

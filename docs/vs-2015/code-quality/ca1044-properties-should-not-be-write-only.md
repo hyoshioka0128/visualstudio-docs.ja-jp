@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: aa2d07337ec48e41a9d8ad82602a387159192f92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ca0fb61c0973553ee6d410bc8b2718d19aeb28c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668269"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546862"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: プロパティを書き込み専用にすることはできません
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044:プロパティを書き込み専用にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
@@ -35,7 +35,7 @@ ms.locfileid: "72668269"
 ## <a name="cause"></a>原因
  パブリックまたはプロテクトプロパティに set アクセサーがありますが、get アクセサーがありません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  Get アクセサーは、プロパティへの読み取りアクセスを提供し、set アクセサーは書き込みアクセスを提供します。 読み取り専用のプロパティは許容され、必要な場合もよくありますが、書き込み専用のプロパティを使用することはデザインのガイドラインで禁止されています。 これは、ユーザーが値を設定し、ユーザーが値を表示できないようにしても、セキュリティが確保されないためです。 また、読み取りアクセスがないと、共有オブジェクトのステータスを参照できないため、実用性が制限されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -45,7 +45,7 @@ ms.locfileid: "72668269"
  この規則による警告を抑制しないことを強くお勧めします。
 
 ## <a name="example"></a>例
- 次の例では、`BadClassWithWriteOnlyProperty` は書き込み専用プロパティを持つ型です。 修正されたコードが `GoodClassWithReadWriteProperty` に含まれています。
+ 次の例で `BadClassWithWriteOnlyProperty` は、は書き込み専用プロパティを持つ型です。 `GoodClassWithReadWriteProperty`修正されたコードが含まれています。
 
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/cs/FxCop.Design.PropertiesNotWriteOnly.cs#1)]
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/vb/PropertiesNotWriteOnly.vb#1)]

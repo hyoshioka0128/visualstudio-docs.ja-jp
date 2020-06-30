@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによって新しいブックを作成する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030bc801399ddcc73f145c0b45ca065c9a9ecc7a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a23f4b089d580d482193d278f22e4990d343097
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251885"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545978"
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>方法: プログラムによって新しいブックを作成する
   プログラムによって作成される新しいブックは、<xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目ではなく、ネイティブな <xref:Microsoft.Office.Interop.Excel.Workbook> オブジェクトです。
@@ -42,7 +42,7 @@ ms.locfileid: "71251885"
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ブックの操作](../vsto/working-with-workbooks.md)
 - [方法: プログラムによってブックを開く](../vsto/how-to-programmatically-open-workbooks.md)
-- [方法: プログラムによるブックの保存](../vsto/how-to-programmatically-save-workbooks.md)
+- [方法: プログラムによってブックを保存する](../vsto/how-to-programmatically-save-workbooks.md)
 - [方法: プログラムによってブックを閉じる](../vsto/how-to-programmatically-close-workbooks.md)
 - [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

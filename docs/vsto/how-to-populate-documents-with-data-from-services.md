@@ -1,7 +1,7 @@
 ---
 title: '方法: サービスのデータをドキュメントに読み込む'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985870"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547148"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>方法: サービスのデータをドキュメントに読み込む
 
@@ -45,7 +45,7 @@ Microsoft Office のドキュメント レベルのプロジェクトでは、Wi
 
      使用する方法は、web サービスが提供する内容によって異なります。
 
-6. Web サービスからのデータ応答を、<xref:System.Windows.Forms.BindingSource>の <xref:System.Windows.Forms.BindingSource.DataSource%2A> プロパティに割り当てます。
+6. Web サービスからのデータ応答をのプロパティに割り当て <xref:System.Windows.Forms.BindingSource.DataSource%2A> <xref:System.Windows.Forms.BindingSource> ます。
 
 プロジェクトを実行すると、データ ソースの先頭のレコードがコントロールに表示されます。 レコードのスクロールを有効にするには、 <xref:System.Windows.Forms.BindingSource>のオブジェクトを使用して通貨のイベントを処理します。
 

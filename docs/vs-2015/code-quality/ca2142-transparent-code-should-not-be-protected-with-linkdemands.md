@@ -11,17 +11,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a9d8986e9d1e6fc3f614e23fff3f6a24c1cc6e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa6bd9dcacc5fb863199c740a71c824f14739052
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602775"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546433"
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: 透過的コードは、LinkDemand を使用して保護されてはならない
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142:透過的コードは、LinkDemand を使用して保護されてはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2142|
@@ -29,19 +29,19 @@ ms.locfileid: "72602775"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的な方法では、<xref:System.Security.Permissions.SecurityAction> またはその他のセキュリティ要求が必要です。
+ 透過的な方法で <xref:System.Security.Permissions.SecurityAction> は、または他のセキュリティ要求が必要です。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  この規則は、アクセスするために LinkDemands を要求する透過的メソッドに対して適用されます。 透過的セキュリティ コードでは、操作のセキュリティ検証を行うことができないため、アクセス許可を要求できません。 透過的な方法はセキュリティに中立的であると想定されているため、セキュリティ上の決定を行うべきではありません。 また、セキュリティ上の決定を行うセーフクリティカルコードは、以前にこのような決定を行った透過的なコードに依存しないようにする必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正するには、transparent メソッドに対するリンク確認要求を削除するか、セキュリティ要求などのセキュリティチェックを実行する場合は、<xref:System.Security.SecuritySafeCriticalAttribute> 属性を使用してメソッドをマークします。
+ この規則違反を修正するには、透過的なメソッドのリンク確認要求を削除するか、セキュリティ要求などの <xref:System.Security.SecuritySafeCriticalAttribute> セキュリティチェックを実行している場合は、属性を使用してメソッドをマークします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、メソッドに対してルールが適用されます。これは、メソッドが透過的で、<xref:System.Security.Permissions.SecurityAction> を含む LinkDemand <xref:System.Security.PermissionSet> でマークされているためです。
+ 次の例では、メソッドに対して規則が適用されます。これは、メソッドが透過的であり、を含む LinkDemand でマークされているためです <xref:System.Security.PermissionSet> <xref:System.Security.Permissions.SecurityAction> 。
 
  [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2142.transparentmethodsshouldnotbeprotectedwithlinkdemands/cs/ca2142 -transparentmethodsshouldnotbeprotectedwithlinkdemands.cs#1)]
 

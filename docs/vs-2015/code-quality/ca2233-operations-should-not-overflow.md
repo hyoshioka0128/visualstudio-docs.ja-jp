@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 70a0bab8cfb3bf14a763f759e0e44a754ad878d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662777"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545237"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: 操作はオーバーフローできません
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233:操作はオーバーフローできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
@@ -35,8 +35,8 @@ ms.locfileid: "72662777"
 ## <a name="cause"></a>原因
  メソッドは算術演算を実行し、オーバーフローを防ぐために、オペランドを事前に検証しません。
 
-## <a name="rule-description"></a>規則の説明
- 演算の結果が関連するデータ型の有効な値の範囲外であることを確認するために、最初にオペランドを検証せずに算術演算を実行することはできません。 算術オーバーフローでは、実行コンテキストおよび関連するデータ型に応じて、<xref:System.OverflowException?displayProperty=fullName> または結果の最上位ビットが破棄される可能性があります。
+## <a name="rule-description"></a>ルールの説明
+ 演算の結果が関連するデータ型の有効な値の範囲外であることを確認するために、最初にオペランドを検証せずに算術演算を実行することはできません。 算術オーバーフローでは、実行コンテキストおよび関連するデータ型に応じて、 <xref:System.OverflowException?displayProperty=fullName> または結果の最上位ビットが破棄される可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、操作を実行する前にオペランドを検証します。
@@ -47,14 +47,14 @@ ms.locfileid: "72662777"
 ## <a name="example-of-a-violation"></a>違反の例
 
 ### <a name="description"></a>説明
- 次の例のメソッドは、この規則に違反する整数を操作します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] するには、このを起動するために [整数オーバーフローを**削除**する] オプションを無効にする必要があります。
+ 次の例のメソッドは、この規則に違反する整数を操作します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]このを起動するには、[整数オーバーフローを**削除**する] オプションを無効にする必要があります。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
  [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
 
 ### <a name="comments"></a>コメント
- この例のメソッドが <xref:System.Int32.MinValue?displayProperty=fullName> 渡されると、操作はアンダーフローします。 これにより、結果の最上位ビットが破棄されます。 この状況を次のコードに示します。
+ この例のメソッドが渡された場合 <xref:System.Int32.MinValue?displayProperty=fullName> 、操作はアンダーフローします。 これにより、結果の最上位ビットが破棄されます。 この状況を次のコードに示します。
 
  [C#]
 
@@ -95,23 +95,23 @@ End Sub
 ## <a name="fix-with-a-checked-block"></a>チェックされたブロックで修正
 
 ### <a name="description"></a>説明
- 次の例では、チェックされたブロックで操作をラップすることによって、前の違反を修正します。 操作によってオーバーフローが発生した場合は、<xref:System.OverflowException?displayProperty=fullName> がスローされます。
+ 次の例では、チェックされたブロックで操作をラップすることによって、前の違反を修正します。 操作によってオーバーフローが発生した場合は、が <xref:System.OverflowException?displayProperty=fullName> スローされます。
 
- チェックされたブロックは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ではサポートされていないことに注意してください。
+ では、チェックされたブロックはサポートされていないことに注意 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] してください。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>チェックされた算術オーバーフロー/アンダーフローをオンにする
- でC#チェックされた算術オーバーフローまたはアンダーフローを有効にすると、すべての整数演算を checked ブロックにラップすることに相当します。
+ C# でチェックされた算術オーバーフローまたはアンダーフローをオンにすると、すべての整数演算を checked ブロックにラップすることと同じ結果になります。
 
- **でチェックされた演算オーバーフローまたはアンダーフローを有効にするにはC#**
+ **C でチェックされた算術オーバーフローまたはアンダーフローをオンにするには#**
 
-1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** を選択します。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] を選択します。
 
 2. **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
 
-3. **[算術オーバーフローまたはアンダーフローのチェック]** を選択し、 **[OK]** をクリックします。
+3. [**算術オーバーフローまたはアンダーフローのチェック**] を選択し、[ **OK**] をクリックします。
 
-## <a name="see-also"></a>参照
- <xref:System.OverflowException?displayProperty=fullName> [ C#の演算子](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)[をオンまたはオフ](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)にする
+## <a name="see-also"></a>関連項目
+ <xref:System.OverflowException?displayProperty=fullName>[C# 演算子](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)[のチェックとオフ](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

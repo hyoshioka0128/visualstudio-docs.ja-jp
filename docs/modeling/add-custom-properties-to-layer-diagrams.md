@@ -1,7 +1,7 @@
 ---
 title: 依存関係図へのカスタム プロパティの追加
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,24 +9,24 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590593"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546916"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>依存関係図へのカスタム プロパティの追加
 
-依存関係図の拡張コードを記述する場合は、任意の要素を持つ値を依存関係図に格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを **[プロパティ]** ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
+依存関係図の拡張コードを記述する場合は、任意の要素を持つ値を依存関係図に格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを [**プロパティ**] ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
 
 ## <a name="non-visible-properties"></a>非表示のプロパティ
 
-コードで依存関係図の要素に値をアタッチするだけの場合は、MEF コンポーネントを定義する必要はありません。 [Ilayerelement](/previous-versions/ff644511(v=vs.140))には `Properties` という名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらは、依存関係図の一部として保存されます。
+コードで依存関係図の要素に値をアタッチするだけの場合は、MEF コンポーネントを定義する必要はありません。 `Properties` [Ilayerelement](/previous-versions/ff644511(v=vs.140))にという名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらは、依存関係図の一部として保存されます。
 
 ## <a name="editable-properties"></a>編集可能なプロパティ
 
-**初期準備**
+**最初の準備**
 
 > [!IMPORTANT]
 > プロパティを表示するには、レイヤーのプロパティを表示する各コンピューターで、次の変更を行います。
@@ -38,7 +38,7 @@ ms.locfileid: "75590593"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio アプリケーションの スタート メニューの  **Visual Studio Tools** セクションで、**開発者コマンドプロンプト**を開きます。 次のように入力します。
+> 3. Visual Studio アプリケーションの [スタート] メニューの [ **Visual Studio Tools** ] セクションで、**開発者コマンドプロンプト**を開きます。 次を入力します。
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -49,7 +49,7 @@ ms.locfileid: "75590593"
 
 プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部である場合は、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、「[依存関係図へのコマンドおよびジェスチャの追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md)」または「[依存関係図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
-**カスタムプロパティを定義する**
+**カスタム プロパティを定義する**
 
 カスタム プロパティを作成するには、次のようなクラスを定義します。
 
@@ -65,7 +65,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 - `ILayerModel`-モデル
 
-- `ILayer`-各レイヤー
+- `ILayer`-各層
 
 - `ILayerDependencyLink` - レイヤー間のリンク
 
@@ -73,7 +73,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次のコードは、標準的なカスタム プロパティ記述子です。 この例では、Boolean プロパティがレイヤー モデル (`ILayerModel`) で定義されており、ユーザーはこれを使用してカスタム検証メソッドに値を提供できます。
 

@@ -1,7 +1,7 @@
 ---
 title: DGML ファイルを編集してコード マップをカスタマイズする
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -20,23 +20,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590515"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547278"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
 コードマップをカスタマイズするには、有向グラフマークアップ言語 (.dgml) ファイルを編集します。 たとえば、要素を編集してカスタム スタイルを指定したり、コード要素とリンクにプロパティおよびカテゴリを割り当てたり、コード要素やリンクにドキュメントや URL をリンクしたりすることができます。 DGML 要素の詳細については、「[有向グラフマークアップ言語 (dgml) リファレンス](../modeling/directed-graph-markup-language-dgml-reference.md)」を参照してください。
 
-テキスト エディターまたは XML エディターで、コード マップの .dgml ファイルを編集します。 マップが Visual Studio ソリューションの一部である場合は、**ソリューションエクスプローラー**で選択し、ショートカットメニューを開き、 **[ファイルを開く]** 、 **[XML (テキスト) エディター]** の順に選択します。
+テキスト エディターまたは XML エディターで、コード マップの .dgml ファイルを編集します。 マップが Visual Studio ソリューションの一部である場合は、**ソリューションエクスプローラー**で選択し、ショートカットメニューを開き、[**ファイルを開く**]、[ **XML (テキスト) エディター**] の順に選択します。
 
 > [!NOTE]
 > コードマップを作成するには Visual Studio Enterprise エディションが必要です。 Visual Studio でコード マップを編集する場合、.dgml ファイルを保存すると、未使用の DGML 要素および属性が削除されクリーンアップされます。 また、新しいリンクを手動で追加すると、コード要素が自動的に作成されます。 .dgml ファイルを保存すると、要素に追加した属性によって、自身がアルファベット順に並べ替えられる場合があります。
 
-## <a name="OrganizeNodes"></a>コード要素のグループ化
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>コード要素のグループ化
  新しいグループを追加したり、既存のノードをグループに変換したりすることができます。
 
 1. テキスト エディターまたは XML エディターで、.dgml ファイルを開きます。
@@ -47,7 +47,7 @@ ms.locfileid: "75590515"
 
     新しいグループを追加するには、`<Nodes>` セクションを見つけます。 新しい `<Node/>` 要素を追加します。
 
-3. `<Node/>` 要素に、`Group` 属性を追加して、グループを展開した状態で表示するか、折りたたんだ状態で表示するかを指定します。 例:
+3. `<Node/>` 要素に、`Group` 属性を追加して、グループを展開した状態で表示するか、折りたたんだ状態で表示するかを指定します。 次に例を示します。
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ ms.locfileid: "75590515"
 
    - グループ コード要素とその子コード要素との間の `Category` リレーションシップを指定する `Contains` 属性
 
-     例:
+     次に例を示します。
 
    ```xml
    <Links>
@@ -75,28 +75,28 @@ ms.locfileid: "75590515"
    </Links>
    ```
 
-    `Category` 属性の詳細については、「[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)」を参照してください。
+    属性の詳細については `Category` 、「[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)」を参照してください。
 
-## <a name="ChangeGraphStyle"></a>マップのスタイルを変更する
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>マップのスタイルを変更する
  マップの .dgml ファイルを編集することで、マップの背景色および境界線の色を変更できます。 コード要素およびリンクのスタイルを変更するには、「[コード要素およびリンクのスタイルを変更](#Highlight)する」を参照してください。
 
 1. テキスト エディターまたは XML エディターで、.dgml ファイルを開きます。
 
 2. `<DirectedGraph>` 要素に次の任意の属性を追加して、グラフのスタイルを変更します。
 
-     背景色
+     背景の色
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     [罫線の色]
+     罫線の色
 
     ```xml
     Stroke="StrokeValue"
     ```
 
-     例:
+     次に例を示します。
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -105,7 +105,7 @@ ms.locfileid: "75590515"
     </DirectedGraph>
     ```
 
-## <a name="Highlight"></a>コード要素とリンクのスタイルを変更する
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>コード要素とリンクのスタイルを変更する
 
 ### <a name="CreateCustomStyles"></a>
  次のコード要素にカスタム スタイルを適用できます。
@@ -125,13 +125,13 @@ ms.locfileid: "75590515"
 
 2. コード要素の `<Node/>` 要素を見つけます。 次の属性のいずれかを追加して、そのスタイルをカスタマイズします。
 
-     背景色
+     背景の色
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     外枠
+     枠線
 
     ```xml
     Stroke="ColorNameOrHexadecimalValue"
@@ -143,7 +143,7 @@ ms.locfileid: "75590515"
     StrokeThickness="StrokeValue"
     ```
 
-     文字列の色
+     テキストの色
 
     ```xml
     Foreground="ColorNameOrHexadecimalValue"
@@ -161,7 +161,7 @@ ms.locfileid: "75590515"
     FontSize="FontSizeValue"
     ```
 
-     テキストの種類
+     テキスト型
 
     ```xml
     FontFamily="FontFamilyName"
@@ -193,7 +193,7 @@ ms.locfileid: "75590515"
     Style="Plain"
     ```
 
-     [図形]
+     図形
 
      シェイプをアイコンに置き換えるには、`Shape` プロパティを `None` に設定し、`Icon` プロパティをアイコン ファイルがあるパスに設定します。
 
@@ -201,7 +201,7 @@ ms.locfileid: "75590515"
     Shape="ShapeFilePathLocation"
     ```
 
-     例:
+     次に例を示します。
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "75590515"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     例:
+     次に例を示します。
 
     ```xml
     <Links>
@@ -254,9 +254,9 @@ ms.locfileid: "75590515"
 
    - `TargetType="Node` &#124; `Link | Graph"`
 
-   - `GroupLabel="` *NameInLegendBox* `"`
+   - `GroupLabel="`*NameInLegendBox*`"`
 
-   - `ValueLabel="` *NameInStylePickerBox* `"`
+   - `ValueLabel="`*NameInStylePickerBox*`"`
 
      全種類の対象にカスタム スタイルを適用する場合、条件は使用しません。
 
@@ -266,7 +266,7 @@ ms.locfileid: "75590515"
 
 2. `<Style/>` 要素に、`<Condition/>` 属性を含む `Expression` 要素を追加して、ブール値を返す式を指定します。
 
-    例:
+    次に例を示します。
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ ms.locfileid: "75590515"
 
     この式では、次のバッカス・ナウア記法 (BNF: Backus-Naur Form) 構文を使用します。
 
-    \<式 >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<式 > ")" &#124; \<Memberbindings > &#124; \<リテラル > &#124; \<Number >
+    \<Expression>:: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124;\<Number>
 
-    \<BinaryExpression >:: = \<式 > \<演算子 > \<式 >
+    \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
 
-    \<UnaryExpression >:: = "!" \<式 > &#124; "+" \<式 > &#124; "-" \<式 >
+    \<UnaryExpression>::= "!" \<Expression>&#124; "+" \<Expression> &#124; "-"\<Expression>
 
-    \<Operator >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "または&#124; " "および&#124; " "+ &#124; " "* &#124; " "/ &#124; " "-"
+    \<Operator>:: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "または" &#124; "と" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    MemberBindings を \<>:: = \<MemberBindings &#124; > \<memberbindings > "." \<memberbindings >
+    \<MemberBindings>:: = \<MemberBindings> &#124; \<MemberBinding> "."\<MemberBinding>
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<propertyget >
+    \<MemberBinding>:: = \<MethodCall> &#124;\<PropertyGet>
 
-    \<MethodCall >:: = \<Identifier > "(" \<Methodcall > ")"
+    \<MethodCall>::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet >:: = 識別子
+    \<PropertyGet>:: = 識別子
 
-    \<MethodArgs >:: = \<式 > &#124; \<式 > "," \<methodargs > &#124; \<空 >
+    \<MethodArgs>:: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124;\<empty>
 
-    \<識別子 >:: = [^ です。 ]*
+    \<Identifier>::= [^. ]*
 
-    \<リテラル >:: = 1 つまたは二重引用符で囲まれた文字列リテラル
+    \<Literal>:: = 一重または二重引用符で囲まれた文字列リテラル
 
-    \<Number >:: = オプションの小数点を含む数字の文字列
+    \<Number>:: = オプションの小数点を含む数字の文字列
 
-    複数の `<Condition/>` 要素を指定できます。スタイルを適用するには、すべてが true である必要があります。
+    複数の要素を指定できます `<Condition/>` 。スタイルを適用するには、すべてが true である必要があります。
 
 3. `<Condition/>` 要素の次の行に、1 つ以上の `<Setter/>` 要素を追加して、条件を満たすマップ、コード要素、またはリンクに適用する `Property` 属性と、固定の `Value` 属性または計算される `Expression` 属性を指定します。
 
-    例:
+    次に例を示します。
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -371,11 +371,11 @@ ms.locfileid: "75590515"
 
  `Coverage` プロパティに基づいて、コード要素の背景色を設定する。 スタイルは、`if-else` ステートメントと同様に、出現する順番で評価されます。
 
- この例では:
+ 次の点に注意してください。
 
-1. `Coverage` が 80 > 場合は、`Background` プロパティを緑色に設定します。
+1. `Coverage`が 80 > 場合は、プロパティを `Background` 緑色に設定します。
 
-2. `Coverage` が 50 > 場合は、`Coverage` プロパティの値に基づいて、`Background` プロパティをオレンジ色の網掛けに設定します。
+2. > が50の場合は、プロパティ `Coverage` `Background` の値に基づいて、プロパティをオレンジ色の網掛けに設定し `Coverage` ます。
 
 3. それ以外の場合、`Background` プロパティの値に基づいて、`Coverage` プロパティを赤色の網かけに設定します。
 
@@ -435,14 +435,14 @@ ms.locfileid: "75590515"
 </DirectedGraph>
 ```
 
-## <a name="AssignProperties"></a>コード要素およびリンクにプロパティを割り当てる
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>コード要素およびリンクにプロパティを割り当てる
  コード要素およびリンクにプロパティを割り当てることで、コード要素およびリンクを編成できます。 たとえば、特定のプロパティを持つコード要素を選択して、それらのグループ化、スタイルの変更、または非表示化を実行できます。
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>コード要素にプロパティを割り当てるには
 
 1. テキスト エディターまたは XML エディターで、.dgml ファイルを開きます。
 
-2. そのコード要素の `<Node/>` 要素を見つけます。 プロパティの名前とその値を指定します。 例:
+2. そのコード要素の `<Node/>` 要素を見つけます。 プロパティの名前とその値を指定します。 次に例を示します。
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "75590515"
 
 2. ソース コード要素とターゲット コード要素の両方の名前を含む `<Link/>` 要素を探します。
 
-3. `<Node/>` 要素で、プロパティの名前とその値を指定します。 例:
+3. `<Node/>` 要素で、プロパティの名前とその値を指定します。 次に例を示します。
 
     ```xml
     <Links>
@@ -480,7 +480,7 @@ ms.locfileid: "75590515"
     </Properties>
     ```
 
-## <a name="AssignCategories"></a>コード要素およびリンクにカテゴリを割り当てる
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>コード要素およびリンクにカテゴリを割り当てる
  次のセクションでは、コード要素にカテゴリを割り当てることでコード要素を整理する方法と、コード要素を編成したり子カテゴリに属性を追加したりするのに役立つ階層カテゴリを継承を使用して作成する方法について説明します。
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>コード要素にカテゴリを割り当てるには
@@ -489,7 +489,7 @@ ms.locfileid: "75590515"
 
 - 目的のコード要素の `<Node/>` 要素を見つけます。
 
-- `<Node/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例:
+- `<Node/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 次に例を示します。
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "75590515"
 
 2. ソース コード要素とターゲット コード要素の両方の名前を含む `<Link/>` 要素を探します。
 
-3. `<Link/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 例:
+3. `<Link/>` 要素に `Category` 属性を追加して、カテゴリの名前を指定します。 次に例を示します。
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "75590515"
 
 2. 親カテゴリを示す `<Category/>` 要素を追加し、次に子カテゴリの `BasedOn` 要素に `<Category/>` 属性を追加します。
 
-     例:
+     次に例を示します。
 
     ```xml
     <Nodes>
@@ -551,7 +551,7 @@ ms.locfileid: "75590515"
 
      この例では、`MyFirstNode` の背景は緑色になります。これは、その `Category` 属性が `Background` の `MyParentCategory` 属性を継承するためです。
 
-## <a name="AddReferences"></a>コード要素およびリンクへのドキュメントまたは Url のリンク
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>コード要素およびリンクへのドキュメントまたは Url のリンク
  マップの .dgml ファイルを編集したり `Reference` 属性をコード要素の `<Node/>` 要素またはリンクの `<Link/>` 要素に追加することで、ドキュメントまたは URL をコード要素またはリンクに対してリンク付けできます。 これで、そのコンテンツをコード要素またはリンクから開いて参照できるようになります。 `Reference` 属性では、そのコンテンツのパスを指定します。 これには、.dgml ファイルの場所に対する相対パス、または絶対パスを使用できます。
 
 > [!CAUTION]
@@ -565,7 +565,7 @@ ms.locfileid: "75590515"
 
 - インターフェイスを公開するコンポーネントに関する詳細情報を表示するために、そのインターフェイスを示すコード要素にコンポーネント図をリンクすることができます。
 
-- コード要素を Team Foundation Server 作業項目またはバグ、またはコード要素に関連するその他の情報にリンクします。
+- コード要素を、Team Foundation Server の作業項目やバグ、またはそのコード要素に関連するその他の情報にリンクします。
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>ドキュメントまたは URL をコード要素にリンクするには
 
@@ -582,7 +582,7 @@ ms.locfileid: "75590515"
      > [!NOTE]
      > 1 つの要素に対して 1 つの `Reference` 属性のみを使用できます。
 
-     例:
+     次に例を示します。
 
    ```xml
    <Nodes>
@@ -603,11 +603,11 @@ ms.locfileid: "75590515"
 
       2. 新しい参照属性の名前に `Id` 属性を設定します。
 
-      3. `IsReference` 属性を追加し、それを `True` に設定して、コード要素の **[参照へジャンプ]** ショートカットメニューに参照が表示されるようにします。
+      3. 属性を追加 `IsReference` し、それをに設定して、 `True` コード要素の [**参照へジャンプ**] ショートカットメニューに参照が表示されるようにします。
 
-      4. `Label` 属性を使用して、コード要素の **[参照へジャンプ**] ショートカットメニューの表示テキストを指定します。
+      4. 属性を使用して、 `Label` コード要素の **[参照へジャンプ**] ショートカットメニューの表示テキストを指定します。
 
-      例:
+      次に例を示します。
 
    ```xml
    <Nodes>
@@ -636,7 +636,7 @@ ms.locfileid: "75590515"
    </Properties>
    ```
 
-5. マップから参照先のコード要素を表示するには、コード要素またはリンクのショートカット メニューを開きます。 **[参照へのジャンプ]** をクリックし、次にコード要素を選択します。
+5. マップから参照先のコード要素を表示するには、コード要素またはリンクのショートカット メニューを開きます。 [**参照へのジャンプ**] をクリックし、次にコード要素を選択します。
 
 ## <a name="see-also"></a>関連項目
 
