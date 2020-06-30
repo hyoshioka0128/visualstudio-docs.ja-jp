@@ -1,45 +1,45 @@
 ---
 title: '方法: 要素の CLR 属性を設定する'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f943f9713e4432f0b06242a2f66acae6b390e5cc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebda963bf1afa55fa8d7f98774c72a75d242ceef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748362"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532458"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>方法: 要素の CLR 属性を設定する
-カスタム属性は、ドメイン要素、図形、コネクタ、および図に追加できる特殊な属性です。 @No__t_0 クラスから継承する任意の属性を追加できます。
+カスタム属性は、ドメイン要素、図形、コネクタ、および図に追加できる特殊な属性です。 クラスから継承する任意の属性を追加でき `System.Attribute` ます。
 
 ### <a name="to-add-a-custom-attribute"></a>カスタム属性を追加するには
 
 1. **DSL エクスプローラー**で、カスタム属性を追加する要素を選択します。
 
-2. **[プロパティ]** ウィンドウで、 **[カスタム属性]** プロパティの横にある参照ボタン (. **[..]** ) をクリックします。
+2. [**プロパティ**] ウィンドウで、[**カスタム属性**] プロパティの横にある参照ボタン ([.**..**]) をクリックします。
 
-     **[属性の編集]** ダイアログボックスが表示されます。
+     [**属性の編集**] ダイアログボックスが表示されます。
 
-3. **名前** 列で  **\<add 属性 >** をクリックし、属性の名前を入力します。 ENTER キーを押します。
+3. [**名前**] 列で、をクリックし、 **\<add attribute>** 属性の名前を入力します。 Enter キーを押します。
 
-4. 属性名の下の行には、かっこが表示されます。 この行で、属性のパラメーターの型 (`string` など) を入力し、enter キーを押します。
+4. 属性名の下の行には、かっこが表示されます。 この行で、属性のパラメーターの型 (たとえば、) を入力 `string` し、enter キーを押します。
 
-5. [**名前] プロパティ**列に、適切な名前 (`MyString` など) を入力します。
+5. [**名前] プロパティ**列に、適切な名前 (たとえば、) を入力し `MyString` ます。
 
 6. **[OK]** をクリックします。
 
      **カスタム属性**プロパティの属性が次の形式で表示されるようになりました。
 
-     `[` *AttributeName* `(` *ParameterName* `=`*型*`)]`
+     `[`*AttributeName* `(`*ParameterName* `=`*型*`)]`
 
 ## <a name="see-also"></a>関連項目
 

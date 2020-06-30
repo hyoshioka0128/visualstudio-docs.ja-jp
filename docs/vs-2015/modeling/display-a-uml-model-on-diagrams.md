@@ -11,52 +11,52 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12c6cecf79b0c20ea2c110efa432d5ccb9f38863
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 06a22161068dd7604fe7bb4153e322c0954b89d2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916133"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533019"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>図に UML モデルを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio に対する拡張機能のプログラム コードでは、モデル要素が図上でどのように表示されるかを制御できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-このトピックの内容
-- [図に要素を表示するには](#Display)
+このトピックの内容:
+- [図の要素を表示するには](#Display)
 
 - [要素を表す図形へのアクセス](#GetShapes)
 
 - [図形の移動とサイズ変更](#Moving)
 
-- [図形を図から削除するには](#Removing)
+- [ダイアグラムから図形を削除するには](#Removing)
 
-- [ダイアグラムを開いて作成する](#Opening)
+- [ダイアグラムのオープン処理と作成](#Opening)
 
-- [例: 図形を整列するためのコマンド](#AlignCommand)
+- [例: 図形を整列させるためのコマンド](#AlignCommand)
 
-## <a name="Display"></a>図に要素を表示するには
+## <a name="to-display-an-element-on-a-diagram"></a><a name="Display"></a>図に要素を表示するには
  ユース ケースやアクションなどの要素を作成すると、ユーザーはそれらを UML モデル エクスプ ローラーで表示できるようになりますが、いつも自動的に図に表示されるわけではありません。 場合によっては、それを表示するコードを記述する必要があります。 次の表に代替手段を示します。
 
-|要素の型|次に例を示します。|表示するためのコード|
+|要素の型|例|表示するためのコード|
 |---------------------|-----------------|-------------------------------------|
-|分類子|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|指定した図に関連付けられた図形を作成します。 分類子ごとに任意の数の図形を作成することができます。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 図の最上位の図形については、`parentShape` を `null` に設定します。<br /><br /> 1 つの図形を別の図形の中に表示するには、次のようにします。<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**メモ:** **Ilinて undo**トランザクション内で表示を実行すると、メソッドが `IShape`を返さないことがあります。 ただし、図形は正しく作成され、`IElement.Shapes().` を使用してアクセスすることはできます。|
+|分類子|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|指定した図に関連付けられた図形を作成します。 分類子ごとに任意の数の図形を作成することができます。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 図の最上位の図形については、`parentShape` を `null` に設定します。<br /><br /> 1 つの図形を別の図形の中に表示するには、次のようにします。<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**注:** **Ilinて undo**トランザクション内で表示を実行した場合、メソッドは no を返すことがあり `IShape` ます。 ただし、図形は正しく作成され、`IElement.Shapes().` を使用してアクセスすることはできます。|
 |分類子の子|属性、操作、<br /><br /> パート、ポート|自動 - コード不要です。<br /><br /> 親の一部として表示されます。|
-|動作|相互作用 (シーケンス)、<br /><br /> [利用状況]|適切な図に動作をバインドします。<br /><br /> 各動作は、一度に最大で 1 つの図にバインドできます。<br /><br /> 例:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|動作|相互作用 (シーケンス)、<br /><br /> アクティビティ|適切な図に動作をバインドします。<br /><br /> 各動作は、一度に最大で 1 つの図にバインドできます。<br /><br /> 次に例を示します。<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |動作の子|生存線、メッセージ、操作、オブジェクト ノード|自動 - コード不要です。<br /><br /> 親が図にバインドされている場合に表示されます。|
-|Relationship|関連、汎化、フロー、依存関係|自動 - コード不要です。<br /><br /> 両端が表示されるすべての図に表示されます。|
+|リレーションシップ|関連、汎化、フロー、依存関係|自動 - コード不要です。<br /><br /> 両端が表示されるすべての図に表示されます。|
 
-## <a name="GetShapes"></a>要素を表す図形へのアクセス
+## <a name="accessing-the-shapes-that-represent-an-element"></a><a name="GetShapes"></a>要素を表す図形へのアクセス
  要素を表す図形は、次の型に属します。
 
  `IShape`
 
  `IShape<` *ElementType* `>`
 
- ここで、 *ElementType*は `IClass` や `IUseCase`などのモデル要素の型です。
+ ここで、 *ElementType*は、やなどのモデル要素の型です `IClass` `IUseCase` 。
 
-|||
+|構文|説明|
 |-|-|
 |`anElement.Shapes ()`|開いている図でこの要素を表すすべての `IShapes`。|
 |`anElement.Shapes(aDiagram)`|特定の図でこの要素を表すすべての `IShapes`。|
@@ -68,16 +68,16 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|ジェネリック `IShape` を厳密に型指定された `IShape<IElement>` にキャストします。|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|図形をパラメーター化された 1 つの図形型から別の型にキャストします。|
 
-## <a name="Moving"></a>図形の移動とサイズ変更
+## <a name="moving-and-resizing-shapes"></a><a name="Moving"></a>図形の移動とサイズ変更
 
-|||
+|構文|説明|
 |-|-|
 |`anIShape.Move(x, y, [width], [height])`|図形を移動またはサイズ変更します。|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|ウィンドウをアクティブ化し、所定のすべての図形が図に表示されるようにスクロールします。 すべての図形が図に配置されている必要があります。 `zoomToFit` が True の場合、すべての図形が表示されるように、必要に応じて図が拡大縮小されます。|
 
  例については、「[アラインメントコマンドの定義](#AlignCommand)」を参照してください。
 
-## <a name="Removing"></a>図形を図から削除するには
+## <a name="to-remove-a-shape-from-a-diagram"></a><a name="Removing"></a>図形を図から削除するには
  一部の種類の要素の図形は、要素を削除せずに削除できます。
 
 |モデル要素|図形を削除するには|
@@ -86,7 +86,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
 |動作: 相互作用またはアクティビティ|図をプロジェクトから削除できます。 `IDiagram.FileName` を使用してパスを取得します。<br /><br /> これによってモデルから動作が削除されることはありません。|
 |その他のすべての図形|図から他の図形を明示的に削除することはできません。 モデルから要素が削除される、または図から親シェイプが削除されると、図形は自動的に削除されます。|
 
-## <a name="Opening"></a>ダイアグラムを開いて作成する
+## <a name="opening-and-creating-diagrams"></a><a name="Opening"></a>ダイアグラムを開いて作成する
 
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>コマンドまたはジェスチャ拡張機能から、ユーザーの現在のダイアグラムにアクセスするには
  このインポートされたプロパティをクラスで宣言します。
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;
 ```
 
-## <a name="AlignCommand"></a>例: 図形を整列するためのコマンド
+## <a name="example-command-for-aligning-shapes"></a><a name="AlignCommand"></a>例: 図形を整列するためのコマンド
  次のコードは、図形を適切に揃えるメニュー コマンドを実装します。 ユーザーはまず、2 つ以上の図形を、垂直方向または水平方向のおよその場所に配置する必要があります。 その後、整列のコマンドを使用して中心を揃えることができます。
 
  このコマンドを使用できるようにするには、このコードをメニュー コマンド プロジェクトに追加し、結果として得られる拡張機能をユーザーに配置します。 詳細については、「[モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
@@ -378,6 +378,6 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Uml モデルとダイアグラムの拡張](../modeling/extend-uml-models-and-diagrams.md) [uml モデルへの移動](../modeling/navigate-the-uml-model.md)
  

@@ -2,33 +2,33 @@
 title: テキスト テンプレートから Visual Studio またはその他のホストへのアクセス
 titleSuffix: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd69ae5864df9cbddd204c45975736fc4aae49e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 068de3c14240bc7e13be0e2e564c2c4e6034f987
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597257"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531418"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>テキストテンプレートから Visual Studio またはその他のホストにアクセスする
 
-テキスト テンプレートでは、メソッドと、テンプレートを実行するホストによって公開されているプロパティを使用できます。 Visual Studio は、ホストの例のひとつです。
+テキストテンプレートでは、テンプレートを実行するホストによって公開されているメソッドとプロパティを使用できます。 ホストの例として、Visual Studio があります。
 
 > [!NOTE]
-> 通常のテキスト テンプレートで、ホストのメソッドとプロパティを使用することができますが、*前処理*テキスト テンプレートではできません。
+> ホストメソッドとプロパティは、通常のテキストテンプレートでは使用できますが、*前処理*されたテキストテンプレートでは使用できません。
 
-## <a name="obtain-access-to-the-host"></a>ホストへのアクセスの取得
+## <a name="obtain-access-to-the-host"></a>ホストへのアクセスを取得する
 
-ホストにアクセスするには、`template`ディレクティブで、`hostspecific="true"`を設定します。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型の `this.Host`を使用できるようになりました。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型には、ファイル名を解決し、エラーをログに記録するために使用できるメンバーがあります。たとえば、のようになります。
+ホストにアクセスするには、 `hostspecific="true"` ディレクティブでを設定 `template` します。 これで `this.Host` 、型[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))を持つを使用できるようになりました。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型には、ファイル名を解決し、エラーをログに記録するために使用できるメンバーがあります。たとえば、のようになります。
 
-### <a name="resolve-file-names"></a>ファイル名を解決するには
+### <a name="resolve-file-names"></a>ファイル名の解決
 
-テキスト テンプレートからのファイルの相対パスから完全なパスを検索するには、`this.Host.ResolvePath()` を使います。
+テキストテンプレートを基準としたファイルの完全なパスを検索するには、を使用 `this.Host.ResolvePath()` します。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -42,9 +42,9 @@ Content of myFile is:
 <#= myFile #>
 ```
 
-### <a name="display-error-messages"></a>エラー メッセージの表示
+### <a name="display-error-messages"></a>エラーメッセージを表示する
 
-この例は、テンプレートを変換するときのメッセージを記録します。 ホストが Visual Studio の場合は、エラーは、**エラー一覧**に追加されます。
+この例では、テンプレートを変換するときにメッセージをログに記録します。 ホストが Visual Studio の場合は、エラーが**エラー一覧**に追加されます。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -60,13 +60,13 @@ Content of myFile is:
 #>
 ```
 
-## <a name="use-the-visual-studio-api"></a>Visual Studio API の使用
+## <a name="use-the-visual-studio-api"></a>Visual Studio API を使用する
 
-テキスト テンプレートを、Visual Studio で実行している場合、 Visual Studio と任意のパッケージまたは読み込まれている拡張機能によって提供されるサービスにアクセスするために、`this.Host` を使用することができます。
+Visual Studio でテキストテンプレートを実行している場合は、を使用し `this.Host` て、Visual studio によって提供されるサービスと読み込まれたパッケージまたは拡張機能にアクセスできます。
 
-`hostspecific ="true"` を設定し、`this.Host` を <xref:System.IServiceProvider> にキャストします。
+Hostspecific = "true" に設定し、にキャストし `this.Host` <xref:System.IServiceProvider> ます。
 
-この例では Visual Studio API である <xref:EnvDTE.DTE> をサービスとして取得します。
+この例では、Visual Studio API を <xref:EnvDTE.DTE> サービスとして取得します。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -80,6 +80,6 @@ Content of myFile is:
 Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
-## <a name="use-hostspecific-with-template-inheritance"></a>テンプレートを継承をしている hostSpecific の使用
+## <a name="use-hostspecific-with-template-inheritance"></a>テンプレートの継承で hostSpecific を使用する
 
-`inherits`属性を使用し、`hostspecific="true"` を指定したテンプレートから継承する場合は、`hostspecific="trueFromBase"` を指定します。 指定しなかった場合は、プロパティ `Host` が 2 回宣言されているというコンパイラ警告が出るでしょう。
+`hostspecific="trueFromBase"`属性も使用するかどうか、 `inherits` およびを指定するテンプレートから継承する場合はを指定し `hostspecific="true"` ます。 そうしないと、プロパティ `Host` が2回宣言されていることを示すコンパイラの警告が表示されることがあります。

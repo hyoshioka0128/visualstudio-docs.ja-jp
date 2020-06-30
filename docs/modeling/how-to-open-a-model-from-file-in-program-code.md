@@ -1,18 +1,18 @@
 ---
 title: '方法: プログラム コード内のファイルからモデルを開く'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594618"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532484"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 
@@ -26,22 +26,22 @@ DSL モデルは任意のアプリケーションで開くことができます�
 
 1. DSL モデルを読み取るアプリケーションの Visual Studio プロジェクトを開きます。
 
-2. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** をクリックします。
+2. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
-3. プロジェクトのプロパティウィンドウの **[アプリケーション]** タブで、 **[ターゲットフレームワーク]** フィールドを **.NET Framework 4** (またはそれ以降) に設定します。
+3. プロジェクトのプロパティウィンドウの [**アプリケーション**] タブで、[**ターゲットフレームワーク**] フィールドを **.NET Framework 4** (またはそれ以降) に設定します。
 
 > [!NOTE]
 > ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル**にすることはできません。
 
-## <a name="references"></a>参照
+## <a name="references"></a>References
 
 次の参照を Visual Studio アプリケーションプロジェクトに追加します。
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - **[参照の追加]** ダイアログボックスの **[.net]** タブにこれが表示されない場合は、 **[参照]** タブをクリックし、`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`に移動します。
+  - [**参照の追加**] ダイアログボックスの [ **.net** ] タブにこれが表示されない場合は、[**参照**] タブをクリックし、に移動し `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` ます。
 
-- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject*`.Dsl.dll`。
+- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject* `.Dsl.dll` 。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL の重要なクラス
 
@@ -49,11 +49,11 @@ DSL を読み取るコードを記述する前に、DSL によって生成され
 
 次のクラスを識別する必要があります。
 
-- 自分の*Dslrootclass* -`DslDefinition.dsl`内のルートクラスの名前です。
+- *Dslrootclass* -これはのルートクラスの名前です `DslDefinition.dsl` 。
 
-- *Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトの `SerializationHelper.cs` で定義されています。
+- 自分の*Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトので定義されてい `SerializationHelper.cs` ます。
 
-- *Dslname* `DomainModel`-このクラスは、DSL プロジェクトの `DomainModel.cs` で定義されています。
+- 自分の*Dslname* `DomainModel`-このクラスは、DSL プロジェクトので定義されてい `DomainModel.cs` ます。
 
 ## <a name="read-from-a-file"></a>ファイルのデータを読み取ります。
 
