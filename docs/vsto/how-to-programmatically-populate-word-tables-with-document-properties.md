@@ -1,7 +1,7 @@
 ---
-title: プログラムによって document プロパティを Word の表を設定します。
+title: プログラムによる Word の表のドキュメントプロパティの設定
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537814"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>方法: プログラムによって document プロパティを Word の表に読み込む
   次の例ではドキュメントの先頭に Microsoft Office Word の表を作成し、ホスト ドキュメントのプロパティのデータをそこに読み込みます。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="populate-tables-in-a-document-level-customization"></a>ドキュメント レベル カスタマイズ内のテーブルを設定します。
+## <a name="populate-tables-in-a-document-level-customization"></a>ドキュメントレベルのカスタマイズでのテーブルの設定
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>表を作成し、ドキュメントのプロパティ データをそこに読み込むには
 
@@ -59,7 +59,7 @@ ms.locfileid: "66177787"
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
 
-## <a name="populate-tables-in-a-vsto-add-in"></a>VSTO アドインのテーブルに設定します。
+## <a name="populate-tables-in-a-vsto-add-in"></a>VSTO アドインでのテーブルの設定
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>表を作成し、ドキュメントのプロパティ データをそこに読み込むには
 
@@ -94,7 +94,7 @@ ms.locfileid: "66177787"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって Word の表を作成します。](../vsto/how-to-programmatically-create-word-tables.md)
-- [方法: プログラムによって Word の表のセルにテキストと書式を追加します。](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [方法: プログラムによって Word の表に行と列を追加します。](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [方法: プログラムによって Word の表を作成する](../vsto/how-to-programmatically-create-word-tables.md)
+- [方法: プログラムによって Word の表のセルにテキストと書式設定を追加する](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [方法: プログラムによって Word の表に行と列を追加する](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

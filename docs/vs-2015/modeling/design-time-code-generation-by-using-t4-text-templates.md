@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e817bc76a76c3d0af0e3509ef14312ac1b98acf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669800"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534148"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 テキスト テンプレートを使用したデザイン時コード生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72669800"
 > [!NOTE]
 > *モデル*は、アプリケーションの特定の側面を記述するデータソースです。 モデルはどのような形式でもかまいません。あらゆる種類のファイルまたはデータベースを使用できます。 UML モデルやドメイン固有言語モデルなどの特定の形式である必要はありません。 標準的なモデルの形式は、テーブルまたは XML ファイルです。
 
- コード生成は決して新しい概念ではありません。 @No__t_1 ソリューションの **.resx**ファイルにリソースを定義すると、一連のクラスとメソッドが自動的に生成されます。 リソースの編集は、クラスやメソッドを直接編集するよりも、リソース ファイルで行った方がはるかに簡単で確実です。 同様に、テキスト テンプレートを使用すると、独自に設計したソースからコードを生成することができます。
+ コード生成は決して新しい概念ではありません。 ソリューションの **.resx**ファイルにリソースを定義すると [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、一連のクラスとメソッドが自動的に生成されます。 リソースの編集は、クラスやメソッドを直接編集するよりも、リソース ファイルで行った方がはるかに簡単で確実です。 同様に、テキスト テンプレートを使用すると、独自に設計したソースからコードを生成することができます。
 
  テキスト テンプレートには、生成するテキストと、テキストの可変部分を生成するプログラム コードの組み合わせが含まれます。 プログラム コードにより、生成されるテキストの一部を繰り返したり、条件に従って省略したりできるようになります。 生成されるテキスト自体を、アプリケーションの一部となるプログラム コードにすることもできます。
 
@@ -42,17 +42,17 @@ ms.locfileid: "72669800"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio でデザイン時 T4 テンプレートを作成するには
 
-1. @No__t_0 プロジェクトを作成するか、既存のプロジェクトを開きます。
+1. プロジェクトを作成する [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] か、既存のプロジェクトを開きます。
 
-     たとえば、 **[ファイル]** メニューの **[新規作成]** 、 **[プロジェクト]** の順に選択します。
+     たとえば、[**ファイル**] メニューの [**新規作成**]、[**プロジェクト**] の順に選択します。
 
 2. テキストテンプレートファイルをプロジェクトに追加し、拡張子 **.tt**を持つ名前を付けます。
 
-     これを行うには、**ソリューションエクスプローラー**で、プロジェクトのショートカットメニューの **[追加]** 、 **[新しい項目]** の順に選択します。 **[新しい項目の追加]** ダイアログボックスで、中央のペインの **[テキストテンプレート]** を選択します。
+     これを行うには、**ソリューションエクスプローラー**で、プロジェクトのショートカットメニューの [**追加**]、[**新しい項目**] の順に選択します。 [**新しい項目の追加**] ダイアログボックスで、中央のペインの [**テキストテンプレート**] を選択します。
 
-     ファイルの **[カスタムツール]** プロパティが**Texttemplatingfilegenerator**であることに注意してください。
+     ファイルの [**カスタムツール**] プロパティが**Texttemplatingfilegenerator**であることに注意してください。
 
-3. ファイルを開きます。 既に次のディレクティブが指定されています。
+3. ファイル を開きます。 既に次のディレクティブが指定されています。
 
     ```
     <#@ template hostspecific="false" language="C#" #>
@@ -61,7 +61,7 @@ ms.locfileid: "72669800"
 
      [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトにテンプレートを追加した場合、言語属性は "`VB`" になります。
 
-4. ファイルの最後にテキストを追加します。 (例:
+4. ファイルの最後にテキストを追加します。 次に例を示します。
 
     ```
     Hello, world!
@@ -74,18 +74,18 @@ ms.locfileid: "72669800"
 6. **ソリューションエクスプローラー**で、[テンプレートファイル] ノードを展開すると、拡張子が **.txt**のファイルが表示されます。 このファイルには、テンプレートから生成されたテキストが格納されています。
 
     > [!NOTE]
-    > プロジェクトが Visual Basic プロジェクトの場合、出力ファイルを表示するには、 **[すべてのファイルを表示]** をクリックする必要があります。
+    > プロジェクトが Visual Basic プロジェクトの場合、出力ファイルを表示するには、[**すべてのファイルを表示**] をクリックする必要があります。
 
 ### <a name="regenerating-the-code"></a>コードの再生成
  次のいずれかの場合に、テンプレートが実行され、従属ファイルが生成されます。
 
 - テンプレートを編集した後、フォーカスを別の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ウィンドウに切り替えたとき。
 
-- テンプレートを保存したとき。
+- テンプレートを保存します。
 
-- **[ビルド]** メニューの **[すべてのテンプレートの変換]** をクリックします。 この場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内のすべてのテンプレートが変換されます。
+- [**ビルド**] メニューの [**すべてのテンプレートの変換**] をクリックします。 この場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内のすべてのテンプレートが変換されます。
 
-- **ソリューションエクスプローラー**の任意のファイルのショートカットメニューで、 **[カスタムツールの実行]** を選択します。 この方法は、複数のテンプレートを選択して変換する場合に使用します。
+- **ソリューションエクスプローラー**の任意のファイルのショートカットメニューで、[**カスタムツールの実行**] を選択します。 この方法は、複数のテンプレートを選択して変換する場合に使用します。
 
   読み取り先のデータ ファイルが変更されたときにテンプレートが実行されるよう、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトを設定することもできます。 詳細については、「[コードを自動的に再生成する](#Regenerating)」を参照してください。
 
@@ -125,23 +125,23 @@ ms.locfileid: "72669800"
 
    複数のステートメントは `<#...#>` で囲まれており、単一の式は `<#=...#>` で囲まれていることに注意してください。 詳細については、「 [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)」を参照してください。
 
-   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] で生成コードを記述する場合は、`template` ディレクティブに `language="VB"` を含める必要があります。 `"C#"` が既定値です。
+   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] で生成コードを記述する場合は、`template` ディレクティブに `language="VB"` を含める必要があります。 既定値は `"C#"` です。
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>デザイン時 T4 テキスト テンプレートをデバッグする
  テキスト テンプレートをデバッグするには、以下を実行します。
 
-- `debug="true"` ディレクティブに `template` を挿入します。 (例:
+- `debug="true"` ディレクティブに `template` を挿入します。 次に例を示します。
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
 - 通常のコードと同じように、テンプレートにブレークポイントを設定します。
 
-- ソリューションエクスプローラーのテキストテンプレートファイルのショートカットメニューから、 **[T4 テンプレートのデバッグ]** を選択します。
+- ソリューションエクスプローラーのテキストテンプレートファイルのショートカットメニューから、[ **T4 テンプレートのデバッグ**] を選択します。
 
   テンプレートが実行され、ブレークポイントで停止します。 通常の方法で、変数を調べコードのステップ実行ができます。
 
 > [!TIP]
-> `debug="true"` は、生成されたコードに行番号ディレクティブを多数挿入して、生成されたコードをテキスト テンプレートに正確に対応付けます。 これを省いた場合、ブレークポイントが間違った状態で実行を停止する可能性があります。
+> `debug="true"`生成されたコードに、より多くの行番号ディレクティブを挿入することにより、生成されたコードをより正確にテキストテンプレートにマップします。 これを省いた場合、ブレークポイントが間違った状態で実行を停止する可能性があります。
 >
 > ただし、デバッグしていないときでも、template ディレクティブにこれを残しておくことができます。 こうしても実行速度がほんのわずか低下するだけです。
 
@@ -276,8 +276,8 @@ ms.locfileid: "72669800"
 
  `this.Host` (VB の場合は `Me.Host`) の型は、`Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost` です。
 
-### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] からデータを取得する
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で提供されるサービスを使用するには、`hostSpecific` 属性を設定し、`EnvDTE` アセンブリを読み込みます。 その後、IServiceProvider.GetCOMService() を使用して、DTE などのサービスにアクセスできます。 (例:
+### <a name="getting-data-from-vsprvs"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] からデータを取得する
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で提供されるサービスを使用するには、`hostSpecific` 属性を設定し、`EnvDTE` アセンブリを読み込みます。 その後、IServiceProvider.GetCOMService() を使用して、DTE などのサービスにアクセスできます。 次に例を示します。
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -295,10 +295,10 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > テキスト テンプレートは独自のアプリ ドメインで実行され、サービスはマーシャリングによってアクセスされます。 この状況では、GetCOMService() は GetService() よりも信頼性が高くなります。
 
-## <a name="Regenerating"></a>コードを自動的に再生成する
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>コードを自動的に再生成する
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションには、1 つの入力モデルを使用して複数のファイルを生成するのが一般的です。 各ファイルはそれぞれ対応するテンプレートから生成されますが、すべてのテンプレートは同じモデルを参照します。
 
- ソース モデルが変更された場合は、ソリューションのすべてのテンプレートを再度実行する必要があります。 これを手動で行うには、 **[ビルド]** メニューの **[すべてのテンプレートの変換]** をクリックします。
+ ソース モデルが変更された場合は、ソリューションのすべてのテンプレートを再度実行する必要があります。 これを手動で行うには、[**ビルド**] メニューの [**すべてのテンプレートの変換**] をクリックします。
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK がインストールされている場合は、ビルドを実行するたびにすべてのテンプレートが自動的に変換されるように設定できます。 そのためには、プロジェクト ファイル (.csproj または .vbproj) をテキスト エディターで編集し、ファイルの末尾付近の、他の `<import>` ステートメントよりも後に次のコード行を追加します。
 
@@ -312,7 +312,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
  詳細については、「[ビルドプロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)」を参照してください。
 
-## <a name="error-reporting"></a>エラー レポート
+## <a name="error-reporting"></a>エラー報告
  エラー メッセージおよび警告メッセージを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のエラー ウィンドウに表示するには、次のメソッドを使用します。
 
 ```
@@ -320,8 +320,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>既存のファイルをテンプレートに変換する
- テンプレートには、見た目は生成されるファイルとよく似ていて、そこに、プログラム コードが挿入されているという特徴があります。 このことを利用すると、テンプレートを効率的に作成することができます。 まず、[!INCLUDE[csprcs](../includes/csprcs-md.md)] ファイルなどのプロトタイプとして通常のファイルを作成し、生成されたファイルを変化させる生成コードを徐々に導入します。
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>既存のファイルをテンプレートに変換する
+ テンプレートには、見た目は生成されるファイルとよく似ていて、そこに、プログラム コードが挿入されているという特徴があります。 このことを利用すると、テンプレートを効率的に作成することができます。 まず、ファイルなどのプロトタイプとして通常のファイルを作成 [!INCLUDE[csprcs](../includes/csprcs-md.md)] し、生成されたファイルを変化させる生成コードを徐々に導入します。
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>既存のファイルをデザイン時テンプレートに変換するには
 
@@ -333,10 +333,10 @@ Warning("A warning message");
 
 4. **.Tt**ファイルの次のプロパティを確認します。
 
-    |||
+    |プロパティ|値|
     |-|-|
-    |**カスタムツール =**|**TextTemplatingFileGenerator**|
-    |**ビルドアクション =**|**None**|
+    |**カスタム ツール =**|**TextTemplatingFileGenerator**|
+    |**ビルド アクション =**|**なし**|
 
 5. ファイルの先頭に次の行を挿入します。
 
@@ -370,5 +370,5 @@ Warning("A warning message");
 |ドメイン固有言語の形式でデータを変換する。|[ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)|
 |独自のデータ ソースを変換するためのディレクティブ プロセッサを作成する。|[T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [T4 テキスト テンプレートの記述に関するガイドライン](../modeling/guidelines-for-writing-t4-text-templates.md)

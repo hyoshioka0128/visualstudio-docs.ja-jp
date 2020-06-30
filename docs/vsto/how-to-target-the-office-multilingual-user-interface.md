@@ -1,7 +1,7 @@
 ---
-title: '方法: Office の multilingual user interface します。'
+title: '方法: Office 多言語ユーザーインターフェイスを対象にする'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,27 +17,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961140"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537502"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>方法: Office の multilingual user interface します。
-  Multilingual User Interface (MUI) は、ユーザー インターフェイス (UI) の言語を変更する機能をエンドユーザーに提供する Microsoft Office の機能です。 たとえば、英語の UI で作業している、エンドユーザーは、スペイン語に UI の言語を変更できます。
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>方法: Office 多言語ユーザーインターフェイスを対象にする
+  多言語ユーザーインターフェイス (MUI) は、エンドユーザーがユーザーインターフェイス (UI) の言語を変更できるようにする Microsoft Office の機能です。 たとえば、英語の UI を使用するエンドユーザーは、UI の言語をスペイン語に変更できます。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Office の多くの言語を使用するユーザー、アプリケーションを使用する場合は、自動的に (ユーザーにインストールされている適切なリソースがある場合)、ユーザーのコンピューターに Office で使用されている言語に一致するように、UI 文字列の言語を変更するコードを追加できます。
+ 多くの言語の Office を使用しているユーザーがアプリケーションを使用する場合は、ユーザーのコンピューターで Office で使用されている言語に合わせて UI 文字列の言語を自動的に変更するコードを追加できます (ユーザーが適切なリソースをインストールしている場合)。
 
-## <a name="to-check-the-current-office-ui-setting"></a>現在の Office UI の設定を確認するには
+## <a name="to-check-the-current-office-ui-setting"></a>現在の Office UI 設定を確認するには
 
-1. 使用して、<xref:System.Threading.Thread.CurrentUICulture%2A>現在のスレッドのプロパティ。 現在、ユーザーのコンピューターで実行されている Office のバージョンによって使用される言語に一致するように、UI 文字列の言語を設定します。
+1. <xref:System.Threading.Thread.CurrentUICulture%2A>現在のスレッドのプロパティを使用します。 ユーザーのコンピューターで現在実行されている Office のバージョンで使用される言語に合わせて、UI 文字列の言語を設定します。
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プライマリ相互運用機能アセンブリを利用して Office アプリケーションします。](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Office ソリューションの遅延バインディング](../vsto/late-binding-in-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムにより印刷するドキュメント'
+title: '方法: プログラムによって文書を印刷する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956045"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537827"
 ---
-# <a name="how-to-programmatically-print-documents"></a>方法: プログラムにより印刷するドキュメント
+# <a name="how-to-programmatically-print-documents"></a>方法: プログラムによって文書を印刷する
   Microsoft Office Word ドキュメントの全体または一部を既定のプリンターに印刷できます。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>ドキュメント レベルのカスタマイズの一部であるドキュメントを印刷します。
+## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>ドキュメントレベルのカスタマイズの一部であるドキュメントを印刷する
 
 ### <a name="to-print-the-entire-document"></a>文書全体を印刷するには
 
@@ -41,7 +41,7 @@ ms.locfileid: "62956045"
      [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]
 
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>VSTO アドインを使用してドキュメントを印刷します。
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>VSTO アドインを使用してドキュメントを印刷する
 
 ### <a name="to-print-an-entire-document"></a>文書全体を印刷するには
 
