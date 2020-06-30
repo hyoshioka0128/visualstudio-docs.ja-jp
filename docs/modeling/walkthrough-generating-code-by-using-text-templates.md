@@ -1,7 +1,7 @@
 ---
 title: 'チュートリアル: テキスト テンプレートを使用したコード生成'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593510"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532061"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用してコードを生成する
 
@@ -28,7 +28,7 @@ System.Xml 名前空間は、XML ドキュメントを読み込み、メモリ�
 このプロジェクト例では、テンプレートでサンプル XML ファイルを読み取り、ノードの各型に対応するクラスを生成します。 手入力のコードでは、これらのクラスを使用して XML ファイルを操作できます。 また、同じノード型を使用する他のファイルでも、アプリケーションを実行できます。 サンプル XML ファイルの目的は、アプリケーションで対応できるようにするすべてのノード型の例を提供することです。
 
 > [!NOTE]
-> アプリケーション[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)（Visual Studio に含まれています）XML ファイルから厳密に型指定されたクラスを生成することができます。 ここで紹介するテンプレートは、例として提供されています。
+> Visual Studio に含まれているアプリケーション[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)は、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
 
 サンプル ファイルは次のとおりです。
 
@@ -73,7 +73,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-厳密に型指定のバージョンでは、XML スキーマの変更は、クラスの変更をもたらします。 コンパイラは、変更が必要なアプリケーションコードの部分を強調表示します。 汎用的な XML コードを使用する型指定されていないバージョンの場合、このようなサポートはありません。
+厳密に型指定されたバージョンでは、XML スキーマを変更すると、クラスが変更されます。 コンパイラは、変更が必要なアプリケーションコードの部分を強調表示します。 汎用的な XML コードを使用する型指定されていないバージョンの場合、このようなサポートはありません。
 
 このプロジェクトでは、1 つのテンプレート ファイルを使用して、型指定されたバージョンを可能にするクラスを生成します。
 
@@ -83,7 +83,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 この手法は任意のコード プロジェクトに適用できます。 このチュートリアルでは、C# プロジェクトを使用します。また、テストの目的でコンソール アプリケーションを使用します。
 
-1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+1. [**ファイル**] メニューの [**新規作成**] をクリックし、[**プロジェクト**] をクリックします。
 
 2. **[Visual C#]** ノードをクリックし、 **[テンプレート]** ウィンドウで **[コンソール アプリケーション]** をクリックします。
 
@@ -93,7 +93,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 このファイルは、テンプレートで読み取ることができるようにプロジェクトに含める必要がありますが、コンパイルされたアプリケーションには組み込まれません。
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、 **[追加]** をクリックしてから **[新しい項目]** をクリックします。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**追加**] をクリックして、[**新しい項目**] をクリックします。
 
 2. **[新しい項目の追加]** ダイアログ ボックスで、 **[テンプレート]** ウィンドウの **[XML ファイル]** を選択します。
 
@@ -103,7 +103,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ### <a name="add-a-test-code-file"></a>テスト コード ファイルを追加する
 
-C# ファイルをプロジェクトに追加し、どのような記述方法を実現したいかを踏まえて、そのファイルにコードのサンプルを記述します。 例:
+C# ファイルをプロジェクトに追加し、どのような記述方法を実現したいかを踏まえて、そのファイルにコードのサンプルを記述します。 次に例を示します。
 
 ```csharp
 using System;
@@ -140,7 +140,7 @@ namespace MyProject
 
 3. ファイルの template ディレクティブで、 `hostspecific` 属性を `true`に変更します。
 
-     この変更は、Visual Studio サービスにアクセスするテンプレート コードを有効にします。
+     この変更により、テンプレートコードは Visual Studio サービスにアクセスできるようになります。
 
 4. output ディレクティブの extension 属性を ".cs" に変更します。これで、このテンプレートから C# ファイルが生成されるようになります。 Visual Basic プロジェクトの場合は、これを ".vb" に変更します。
 
@@ -157,7 +157,7 @@ namespace MyProject
 
 生成されたファイルに直接加えた編集は、テンプレート ファイルを保存するとすべて失われます。 そのため、生成されたファイルは一切編集しないようにするか、一時的な実験に限って編集するようにしてください。 IntelliSense が有効な生成されたファイル内で、短いコード片を試し、その後、テンプレート ファイルにコピーすると便利です。
 
-## <a name="develop-the-text-template"></a>テキスト テンプレートの開発
+## <a name="develop-the-text-template"></a>テキストテンプレートの開発
 
 ここでは、アジャイル開発の慣例に従って、テンプレートを小さなステップに分けて開発します。1 つのステップを経るたびにいくつかのエラーを解消し、最終的にテスト コードを正常にコンパイルして実行できる状態にします。
 
@@ -268,9 +268,9 @@ public partial class Song {}
 
 同じアプローチを使用して、子ノードのプロパティ、属性、内部テキストなど、より詳細な情報を追加することもできます。
 
-### <a name="access-the-visual-studio-api"></a>Visual Studio API へのアクセス
+### <a name="access-the-visual-studio-api"></a>Visual Studio API にアクセスする
 
-`hostspecific`の属性、`<#@template#>`ディレクティブの設定は、テンプレートの Visual Studio API へのアクセスを取得します。 テンプレートでは、これを使用してプロジェクト ファイルの場所を取得することにより、テンプレート コードでの絶対パスの使用を避けることができます。
+`hostspecific`ディレクティブの属性を設定 `<#@template#>` すると、テンプレートは VISUAL Studio API にアクセスできるようになります。 テンプレートでは、これを使用してプロジェクト ファイルの場所を取得することにより、テンプレート コードでの絶対パスの使用を避けることができます。
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -284,7 +284,7 @@ XmlDocument doc = new XmlDocument();
 doc.Load(System.IO.Path.Combine(dte.ActiveDocument.Path, "exampleXml.xml"));
 ```
 
-## <a name="complete-the-text-template"></a>テキスト テンプレートの完成
+## <a name="complete-the-text-template"></a>テキストテンプレートを完成させる
 
 次のテンプレート コンテンツで、テスト コードのコンパイルと実行を可能にするコードが生成されます。
 
@@ -380,7 +380,7 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 #>
 ```
 
-### <a name="run-the-test-program"></a>テスト プログラムの実行
+### <a name="run-the-test-program"></a>テストプログラムを実行する
 
 テスト メソッドは、コンソール アプリケーションの Main にある次のコード行によって実行されます。 F5 キーを押して、プログラムをデバッグ モードで実行します。
 
@@ -400,15 +400,15 @@ namespace MyProject
 }
 ```
 
-### <a name="write-and-update-the-application"></a>アプリケーションの記述と更新
+### <a name="write-and-update-the-application"></a>アプリケーションの作成と更新
 
 これで、汎用的な XML コードの代わりに生成されたクラスを使用して、厳密に型指定されたスタイルでアプリケーションを記述できるようになりました。
 
 XML スキーマが変更された場合は、新しいクラスを簡単に生成できます。 コンパイラは、アプリケーション コードの変更が必要な部分を開発者に示します。
 
-サンプルの XML ファイルが変更されたときにクラスを再生成するには、 **[ソリューションエクスプローラー]** ツールバーの **[すべてのテンプレートの変換]** をクリックします。
+サンプルの XML ファイルが変更されたときにクラスを再生成するには、[**ソリューションエクスプローラー** ] ツールバーの [**すべてのテンプレートの変換**] をクリックします。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 
 このチュートリアルでは、コード生成に関して、いくつかの手法と利点を紹介しました。
 
@@ -424,7 +424,7 @@ XML スキーマが変更された場合は、新しいクラスを簡単に生�
 
 このチュートリアルでは、実際にモデルのインスタンスからプログラム コードが生成されます。このモデルは、アプリケーションによって処理される XML ファイルの典型的な例です。 より本格的なアプローチでは、XML スキーマを .xsd ファイルまたはドメイン固有言語定義の形式でテンプレートへの入力として使用します。 このアプローチの方が、リレーションシップの多重度など、さまざまな特性をテンプレートで判断しやすくなります。
 
-## <a name="troubleshoot-the-text-template"></a>テキスト テンプレートのトラブルシューティング
+## <a name="troubleshoot-the-text-template"></a>テキストテンプレートのトラブルシューティング
 
 テンプレートの変換エラーやコンパイル エラーが **[エラー一覧]** に表示された場合、または出力ファイルが正しく生成されなかった場合は、「[TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)」で説明されている方法を使用してテキスト テンプレートをトラブルシューティングできます。
 

@@ -14,30 +14,30 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918865"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531405"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder を使用して連結してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新のドキュメントについては、「 [DA0001: StringBuilder を使用](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)した連結」を参照してください。  
   
-|||  
+|Item|値|  
 |-|-|  
-|ルール ID|DA0001|  
-|[カテゴリ]|.NET Framework の使用|  
+|規則 ID|DA0001|  
+|カテゴリ|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション|  
-|[メッセージ]|文字列の連結に StringBuilder を使用することを検討してください。|  
-|［メッセージの種類］|［警告］|  
+|Message|文字列の連結に StringBuilder を使用することを検討してください。|  
+|メッセージ型|警告|  
   
 ## <a name="cause"></a>原因  
  System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。  
   
-## <a name="rule-description"></a>規則の説明  
+## <a name="rule-description"></a>ルールの説明  
  <xref:System.String> オブジェクトは、変更できません。 このため、文字列に変更を加えると、新しい文字列オブジェクトと元のオブジェクトのガベージ コレクションが作成されます。 この動作は、String.Concat を明示的に呼び出しても、+ や += などの文字列連結演算子を使用しても同じです。 これらのメソッドが頻繁に呼び出される場合 (文字列への文字の追加が短いループ内で発生する場合など)、プログラムのパフォーマンスが低下することがあります。  
   
  StringBuilder クラスは System.String とは異なり、変更可能なオブジェクトであるため、このクラスのインスタンスを変更する StringBuilder のメソッドの大多数はその同じインスタンスへの参照を返します。 StringBuilder インスタンスには、文字を挿入したり、テキストを付加することができ、新しいインスタンスを割り当てたり、元のインスタンスを削除しなくても、インスタンスの文字を削除または置換することができます。  
