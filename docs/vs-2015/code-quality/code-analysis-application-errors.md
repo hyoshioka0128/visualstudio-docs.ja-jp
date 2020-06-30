@@ -14,27 +14,27 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9fa92e773c3dc130d0c0fc0ce05cc270dc9b6e53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669005"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538556"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-このセクションでは、マネージコード分析ツールによって生成されるエラーメッセージのリファレンスを示します。 特定のエラーメッセージのヘルプを表示するには、インデックスの **[検索対象]** ボックスにエラー番号を入力します。
+このセクションでは、マネージコード分析ツールによって生成されるエラーメッセージのリファレンスを示します。 特定のエラーメッセージのヘルプを表示するには、インデックスの [**検索対象**] ボックスにエラー番号を入力します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-|||
+|Item|値|
 |-|-|
 |[CA0001](ca0001.md)|マネージコード分析ツール内で、予期されたエラー条件を示していない例外が発生しました。|
 |[CA0051](ca0051.md)|ルールが選択されていません。|
 |[CA0052](ca0052.md)|分析するターゲットが選択されていません。|
 |[CA0053](ca0053.md)|規則アセンブリを読み込むことができませんでした。|
 |[CA0054](ca0054.md)|カスタム規則アセンブリに無効な XML リソースが含まれています。|
-|[CA0055](ca0055.md)|ファイルを読み込めませんでした: \<path >|
+|[CA0055](ca0055.md)|ファイルを読み込めませんでした:\<path>|
 |[CA0056](ca0056.md)|プロジェクトファイルの分析ツールのバージョンが正しくありません。|
 |[CA0057](ca0057.md)|現在のターゲットとルールのセットに違反をマップすることはできません。|
 |[CA0058](ca0058.md)|参照されたアセンブリを読み込めません。|
@@ -61,4 +61,4 @@ ms.locfileid: "72669005"
 
 - [安全なコードを記述するためのガイドライン](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [マネージド コードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [アプリケーションライフサイクル管理ツールのエラーのトラブルシューティングに関するリソース](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [アプリケーション ライフサイクル管理ツールにおけるエラーのトラブルシューティングに関するリソース](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

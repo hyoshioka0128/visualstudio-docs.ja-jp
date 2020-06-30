@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 111f0b85a601d931ac17bde46f7170fa81e71815
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 033d8f0e22ec040ffb10821993a5a9c647ee401e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661398"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538919"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison の指定
+# <a name="ca1307-specify-stringcomparison"></a>CA1307:StringComparison の指定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
@@ -33,18 +33,18 @@ ms.locfileid: "72661398"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- 文字列比較操作では、<xref:System.StringComparison> パラメーターを設定しないメソッドオーバーロードが使用されています。
+ 文字列比較操作では、パラメーターを設定しないメソッドオーバーロードが使用されてい <xref:System.StringComparison> ます。
 
-## <a name="rule-description"></a>規則の説明
- 多くの文字列操作 (最も重要な <xref:System.String.Compare%2A> および <xref:System.String.Equals%2A> メソッド) は、<xref:System.StringComparison> 列挙値をパラメーターとして受け取るオーバーロードを提供します。
+## <a name="rule-description"></a>ルールの説明
+ 多くの文字列操作 (最も重要 <xref:System.String.Compare%2A> な <xref:System.String.Equals%2A> メソッドとメソッド) は、 <xref:System.StringComparison> 列挙値をパラメーターとして受け取るオーバーロードを提供します。
 
- @No__t_0 パラメーターを受け取るオーバーロードが存在する場合は常に、このパラメーターを受け取らないオーバーロードの代わりに使用する必要があります。 このパラメーターを明示的に設定することにより、コードを明確にし、保守を容易にすることができます。
+ パラメーターを受け取るオーバーロードが存在する場合は常に <xref:System.StringComparison> 、このパラメーターを受け取らないオーバーロードの代わりに使用する必要があります。 このパラメーターを明示的に設定することにより、コードを明確にし、保守を容易にすることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、パラメーターとして <xref:System.StringComparison> 列挙を受け入れるオーバーロードに文字列比較メソッドを変更します。 例: `String.Compare(str1, str2)` を `String.Compare(str1, str2, StringComparison.Ordinal)` に変更します。
+ この規則違反を修正するには、 <xref:System.StringComparison> 列挙体をパラメーターとして受け入れるオーバーロードに文字列比較メソッドを変更します。 例: `String.Compare(str1, str2)` をに変更 `String.Compare(str1, str2, StringComparison.Ordinal)` します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  ライブラリまたはアプリケーションが限定されたローカルユーザーを対象としていて、ローカライズされない場合は、この規則による警告を抑制することが安全です。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [グローバリゼーションの警告](../code-quality/globalization-warnings.md) [CA1309: 序数の Stringcomparison を使用する](../code-quality/ca1309-use-ordinal-stringcomparison.md)
