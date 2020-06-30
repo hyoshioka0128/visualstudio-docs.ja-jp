@@ -1,18 +1,18 @@
 ---
 title: 1 つのソリューション内の複数の DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d21d3954a402e7ce8eb26c34d6a6a5c237309a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658347"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542598"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>1 つのソリューション内の複数の DSL
 
@@ -32,27 +32,27 @@ ms.locfileid: "72658347"
 
    - **Dsl**および**dslpackage**プロジェクトの名前を変更して、それらがすべて異なっているようにします。 たとえば、`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2` のようになります。
 
-   - **Source.extension.tt \* 各 Dslpackage**で、次の行を正しい Dsl プロジェクト名に更新します。
+   - 各**Dslpackage \* \ source.extension.tt**で、次の行を正しい Dsl プロジェクト名に更新します。
 
       `string dslProjectName = "Dsl2";`
 
-   - VSIX ソリューションで、\* プロジェクトに Dsl * および DslPackage を追加します。 各ペアを独自のソリューション フォルダーに配置することを推奨します。
+   - VSIX ソリューションで、Dsl * および DslPackage プロジェクトを追加し \* ます。 各ペアを独自のソリューション フォルダーに配置することを推奨します。
 
 2. 以下のように DSL の VSIX マニフェストを結合します。
 
-   1. _Yourvsixproject 配置_ **\source.extension.manifest**を開きます。
+   1. _Yourvsixproject 配置_**\source.extension.manifest**を開きます。
 
-   2. DSL ごとに、 **[コンテンツの追加]** を選択し、次のように追加します。
+   2. DSL ごとに、[**コンテンツの追加**] を選択し、次のように追加します。
 
-       - プロジェクトを**MEF コンポーネント**として `Dsl*`
+       - `Dsl*`**MEF コンポーネント**としてのプロジェクト
 
-       - プロジェクトを**MEF コンポーネント**として `DslPackage*`
+       - `DslPackage*`**MEF コンポーネント**としてのプロジェクト
 
-       - **VS パッケージ**としてのプロジェクトの `DslPackage*`
+       - `DslPackage*`**VS パッケージ**としてのプロジェクト
 
 3. ソリューションをビルドします。
 
-   この結果の VSIX では両方の DSL がインストールされます。 F5 キーを使用してテストするか、 _yourvsixproject 配置_ **\bin\debug \\ \* .vsix**に配置します。
+   この結果の VSIX では両方の DSL がインストールされます。 F5 キーを使用してテストすることも、 _yourvsixproject 配置_を配置することも**できます。 \\ \* **
 
 ## <a name="see-also"></a>関連項目
 

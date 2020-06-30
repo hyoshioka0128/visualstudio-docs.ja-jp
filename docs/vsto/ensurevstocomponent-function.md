@@ -1,7 +1,7 @@
 ---
 title: EnsureVSTOComponent 関数
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f99ccb4cb76f942852716abf1fcb0c0f280decbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf55fc6669edd33d1b8896ee85f33ab2c04e844f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797613"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543586"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent 関数
-  この API は、オフィスのインフラストラクチャをサポートしているし、コードから直接使用するものではありません。
+  この API は Office インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。
 
 ## <a name="syntax"></a>構文
 
@@ -35,4 +35,4 @@ HRESULT EnsureVSTOComponent(
 |*pProject*|使用しないでください。|
 
 ## <a name="return-value"></a>戻り値
- 返します、関数が成功したかどうかは**S_OK**します。 関数が失敗した場合、エラー コードを返します。
+ 関数が成功した場合は、 **S_OK**を返します。 関数が失敗した場合は、エラーコードを返します。

@@ -1,7 +1,7 @@
 ---
-title: '方法: リボン デザイナーからリボン XML にエクスポートします。'
+title: '方法: リボンをリボンデザイナーからリボン XML にエクスポートする'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,55 +18,55 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419493"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543469"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>方法: リボン デザイナーからリボン XML にエクスポートします。
-  **リボン (ビジュアル デザイナー)** 項目は、リボンのカスタマイズのすべての型をサポートしていません。 高度な方法でリボンをカスタマイズするには、リボンをデザイナーからリボン XML にエクスポートし、XML を直接編集します。
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>方法: リボンをリボンデザイナーからリボン XML にエクスポートする
+  **リボン (ビジュアルデザイナー)** 項目は、すべての種類のリボンのカスタマイズをサポートしているわけではありません。 高度な方法でリボンをカスタマイズするには、リボンをデザイナーからリボン XML にエクスポートし、XML を直接編集します。
 
 > [!NOTE]
-> リボン XML ファイルにすべてのプロパティ値が表示されます。 詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
+> すべてのプロパティ値がリボン XML ファイルに表示されるわけではありません。 詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>リボン デザイナーからリボン XML にエクスポートするには
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>リボンをリボンデザイナーからリボン XML にエクスポートするには
 
-1. リボン コード ファイルを右クリックして**ソリューション エクスプ ローラー**、 をクリックし、**ビュー デザイナー**します。
+1. **ソリューションエクスプローラー**でリボンコードファイルを右クリックし、[デザイナーの**表示**] をクリックします。
 
-2. リボン デザイナーを右クリックし、をクリックし、**リボンを XML にエクスポート**します。
+2. リボンデザイナーを右クリックし、[**リボンを XML にエクスポート**] をクリックします。
 
-     Visual Studio では、リボン XML ファイルとリボン XML コード ファイルをプロジェクトに追加します。
+     Visual Studio によって、リボン XML ファイルとリボン XML コードファイルがプロジェクトに追加されます。
 
-3. リボン コード クラスで始まるコメントを探します`TODO:`します。
+3. リボンの code クラスで、で始まるコメントを見つけ `TODO:` ます。
 
-4. これらのコメントをコード ブロックをコピー、 **ThisAddin**、 **ThisWorkbook**、または**ThisDocument**開発しているソリューションの種類に応じて、クラスします。
+4. 開発しているソリューションの種類に応じて、これらのコメントのコードブロックを**ThisAddin**、 **ThisWorkbook**、 **ThisDocument**のいずれかのクラスにコピーします。
 
-     このコードにより、Microsoft Office アプリケーションを検出して、カスタム リボンを読み込みます。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。
+     このコードにより、Microsoft Office アプリケーションでカスタムリボンを検出して読み込むことができます。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。
 
-5. **ThisAddin**、 **ThisWorkbook**、または**ThisDocument**クラス、コード ブロックをコメント解除します。
+5. **ThisAddin**、 **ThisWorkbook**、 **ThisDocument**クラスで、コードブロックのコメントを解除します。
 
-     コードのコメントを解除した後は、次の例では、ようになります。 この例では、リボン クラスと呼びます`MyRibbon`します。
+     コードのコメントを解除すると、次の例のようになります。 この例では、リボンクラスが呼び出され `MyRibbon` ます。
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. リボン XML のコード ファイルにスイッチを見つけて、`Ribbon Callbacks`リージョン。
+6. リボン XML コードファイルに切り替えて、領域を検索し `Ribbon Callbacks` ます。
 
-     これは、ボタンのクリックしてなどのユーザー操作を処理するコールバック メソッドを記述します。
+     ここでは、ボタンのクリックなど、ユーザーの操作を処理するコールバックメソッドを記述します。
 
-7. リボン デザイナー コードで記述した各イベント ハンドラーのコールバック メソッドを作成します。
+7. リボンデザイナーコードで記述した各イベントハンドラーのコールバックメソッドを作成します。
 
-8. コールバック メソッド、イベント ハンドラーからすべてのイベント ハンドラー コードを移動し、リボン機能拡張 (RibbonX) プログラミング モデルを使用するコードを変更します。
+8. イベントハンドラーのすべてのコードをイベントハンドラーからコールバックメソッドに移動し、リボン機能拡張 (RibbonX) プログラミングモデルで動作するようにコードを変更します。
 
-     コールバック メソッドの記述と、RibbonX のプログラミング モデルを使用する方法については、次を参照してください。[リボン XML](../vsto/ribbon-xml.md)します。
+     コールバックメソッドの記述と、RibbonX プログラミングモデルの使用の詳細については、「[リボン XML](../vsto/ribbon-xml.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [リボン デザイナー](../vsto/ribbon-designer.md)
+- [リボンデザイナー](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [チュートリアル: リボン XML を使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

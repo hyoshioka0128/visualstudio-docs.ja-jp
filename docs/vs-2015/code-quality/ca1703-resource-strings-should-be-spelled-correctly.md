@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9574ff022e0d5407b2683e5ba7a6b2e0cde5201e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e720c1c491e88b6d89fb4b1f0175e8bc8a56e27
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669234"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544054"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: リソース文字列は正しく入力されなければなりません
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703:リソース文字列は正しく入力されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
@@ -35,7 +35,7 @@ ms.locfileid: "72669234"
 ## <a name="cause"></a>原因
  リソース文字列に Microsoft スペル チェック ライブラリで認識されない語が 1 つ以上含まれています。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  この規則では、リソース文字列を単語 (トークン化複合単語) に解析し、各単語/トークンのスペルをチェックします。 解析アルゴリズムの詳細については、「 [CA1704: 識別子は正しく入力されている必要があり](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)ます。
 
  既定では、スペルチェックの英語 (en) バージョンが使用されます。
@@ -47,8 +47,8 @@ ms.locfileid: "72669234"
  この規則による警告は抑制しないでください。 正しい綴りの単語を指定すると、新しいソフトウェアライブラリの学習に必要な時間が短縮されます。
 
 ## <a name="related-rules"></a>関連規則
- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704:識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204:リテラルに正しいスペルを要求](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: ヒントとテクニック | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299924"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542988"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio のヒントとテクニック
 
@@ -22,36 +22,36 @@ ms.locfileid: "74299924"
 
 Visual Studio では、このトピックのショートカットを使用してより簡単に移動できます。 全般的な情報については、[Visual Studio のキーボード ショートカット](default-keyboard-shortcuts-in-visual-studio.md)に関するページをご覧ください。 ユーザー補助について Visual Studio を最適化する方法の詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」を参照してください。
 
-- [ウィンドウ管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [ウィンドウの管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
 - [ウィンドウのショートカット](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
-- [Visual Studio での検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Visual Studio の検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
 - [エディター検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
-- [コード エディター](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [コードエディター](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
-- [ツールバー](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [[ツール バー]](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
 - [デバッグ](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
 - [アプリケーション ライフサイクル管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a>ウィンドウ管理
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a>ウィンドウ管理
 
-|||
+|コマンド|ショートカット|
 |-|-|
 |フローティング タブ ウェルを外にドラッグ|複数選択は Ctrl キーを押しながらクリック|
 |フローティング ウィンドウの最大化|タイトル バーをダブルクリック|
 |フローティング ウィンドウの再ドッキング|Ctrl キーを押しながらタイトル バーをダブルクリック|
 |アクティブなドキュメントを閉じる|Ctrl + F4|
 |開いているファイル リストを表示|Ctrl + Alt + Down|
-|すべてのフローティング ウィンドウを表示|Ctrl+Shift+M|
+|すべてのフローティング ウィンドウを表示|Ctrl + Shift + M|
 
-## <a name="BKMK_WindowShortcuts"></a> ウィンドウのショートカット
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>ウィンドウのショートカット
 
-|||
+|コマンド|ショートカット|
 |-|-|
 |フローティング ウィンドウの移動またはドッキング|Win + Left / Win + Right|
 |ウィンドウの最大化または最小化|Win + Up / Win + Down|
@@ -59,9 +59,9 @@ Visual Studio では、このトピックのショートカットを使用して
 |新しいインスタンスを開始|Win + Shift + n|
 |ウィンドウの切り替え|Win + n|
 
-## <a name="BKMK_Search"></a> Visual Studio での検索
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Visual Studio の検索
 
-|||
+|コマンド|ショートカット|
 |-|-|
 |ソリューション エクスプローラーの検索|Ctrl + ;|
 |任意のツール ウィンドウの検索ボックスへのフォーカスの移動|ツール ウィンドウにフォーカスがあるときに Alt + `|
@@ -69,24 +69,24 @@ Visual Studio では、このトピックのショートカットを使用して
 |スコープ結果のクイック起動|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
 |ツール オプションの検索|Ctrl+E|
 
-## <a name="BKMK_EditorFind"></a>エディター検索
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>エディターの検索
 
-|||
+|コマンド|ショートカット|
 |-|-|
-|クイック検索|Ctrl + F|
-|クイック検索の次の結果|Enter|
+|[クイック検索]|Ctrl + F|
+|クイック検索の次の結果|次に、|
 |クイック検索の前の結果|Shift + Enter|
 |クイック検索でドロップダウンを展開|Alt + Down|
 |検索を消去|Esc|
 |[クイック置換]|Ctrl + H|
 |クイック置換で次を置換|Alt + R|
-|クイック置換ですべて置換|Alt+A|
+|クイック置換ですべて置換|Alt + A|
 |[フォルダーを指定して検索]|Ctrl + Shift + F|
 |[フォルダーを指定して置換]|Ctrl + Shift + H|
 
-## <a name="BKMK_CodeEditor"></a> コード エディター
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>コードエディター
 
-|||
+|コマンド|ショートカット|
 |-|-|
 |IntelliSense 候補提示モード|Ctrl + Alt + Space (切り替え)|
 |IntelliSense の強制表示|Ctrl + J|
@@ -94,7 +94,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |スニペットの選択|Ctrl + K、X、または ?、Tab (VB)|
 |ブロックの挿入|Ctrl + K、S|
 |クイック ヒントの表示|Ctrl + K、I|
-|移動|Ctrl + ,|
+|[移動]|Ctrl + ,|
 |定義へ移動|F12|
 |定義をここに表示|Alt + F12|
 |定義スタックへ移動|Ctrl + Shift + 8 (戻る)、Ctrl +Shift + 7 (進む)|
@@ -109,18 +109,18 @@ Visual Studio では、このトピックのショートカットを使用して
 |複数のピーク結果の間を移動する|F8 と Shift + F8|
 |コード エディター ウィンドウと [定義をここに表示] ウィンドウの間で切り替える|Shift + Esc|
 
-## <a name="BKMK_Toolbars"></a> ツールバー
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>ツールバー
 
-|||
+|コマンド|ショートカット|
 |-|-|
 |ボタンを追加する|ツール バーのオーバーフロー ボタンをクリック|
 |標準ツール バーのコンボの検索|Ctrl + D|
 |テキストボックス コマンド モードの検索|「>」と入力|
 |新しいエイリアスの作成|>alias NewAlias コマンド|
 
-## <a name="BKMK_Debugging"></a> デバッグ
+## <a name="debugging"></a><a name="BKMK_Debugging"></a> デバッグ
 
-|||
+|コマンド|ショートカット|
 |-|-|
 |デバッグの開始|F5|
 |デバッグ中に診断ツールを有効にします|Shift + F5|
@@ -137,7 +137,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |イミディエイト ウィンドウのバッファーをクリア|>cls|
 |イミディエイト ウィンドウの値の印刷|?varname|
 
-## <a name="BKMK_ALM"></a>アプリケーション ライフサイクル管理
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>アプリケーションライフサイクル管理
 
 「[キーボード ショートカット: Visual Studio Online、TFS Web ポータル、およびチーム エクスプローラー](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)」を参照してください。
 
@@ -146,4 +146,3 @@ Visual Studio では、このトピックのショートカットを使用して
 - [Visual Studio ブログ](https://devblogs.microsoft.com/visualstudio/)
 - [Visual Studio のヒントとテクニックに関するブログ](https://blogs.msdn.microsoft.com/zainnab/)
 - [Visual Studio ツールボックス (チャネル 9)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-

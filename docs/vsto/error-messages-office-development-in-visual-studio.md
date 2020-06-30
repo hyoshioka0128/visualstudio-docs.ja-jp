@@ -1,9 +1,9 @@
 ---
-title: エラー メッセージ (Visual Studio での Office 開発)
+title: エラーメッセージ (Visual Studio での Office 開発)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: error-reference
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb12578f10847c9afc6cbcef67e9b3d3b678db5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951984"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543547"
 ---
-# <a name="error-messages-office-development-in-visual-studio"></a>エラー メッセージ (Visual Studio での Office 開発)
+# <a name="error-messages-office-development-in-visual-studio"></a>エラーメッセージ (Visual Studio での Office 開発)
   エラー メッセージの各トピックでは、考えられるエラーの原因と、問題解決のために考えられる解決方法または代替手段を示します。
 
  エラー メッセージに関する情報は、次の方法で取得できます。
 
-|メソッド|説明|
+|Method|説明|
 |-|-|
-|F1|キーを押して、エラーが発生した場合**F1**します。 これにより、オンライン ドキュメント中の該当するエラー メッセージのトピックが表示されます。|
-|フル テキスト検索|エラー メッセージ テキストの最初の文に含まれている語を使用して、フル テキスト検索を実行します。 **[ヘルプ]** メニューの **[検索]** をクリックします。|
+|F1|エラーが発生した場合は、 **F1**キーを押します。 これにより、オンライン ドキュメント中の該当するエラー メッセージのトピックが表示されます。|
+|フルテキスト検索|エラー メッセージ テキストの最初の文に含まれている語を使用して、フル テキスト検索を実行します。 **[ヘルプ]** メニューの **[検索]** をクリックします。|
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio での office および SharePoint 開発](../vsto/office-and-sharepoint-development-in-visual-studio.md)
+- [Visual Studio での Office および SharePoint 開発](../vsto/office-and-sharepoint-development-in-visual-studio.md)

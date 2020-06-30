@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f50c5aca934886f03a54692d98a6be3f8bb5562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7f4f932f8e2db9a558d7440d8965ce5924043b8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671579"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544483"
 ---
-# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: 識別子は不適切なプレフィックスを含むことはできません。
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722:識別子は不適切なプレフィックスを含むことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
@@ -35,7 +35,7 @@ ms.locfileid: "72671579"
 ## <a name="cause"></a>原因
  識別子のプレフィックスが正しくありません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  規則では、特定のプログラミング要素にのみ、固有のプレフィックスで始まる名前を付けることができます。
 
  型名には特定のプレフィックスがなく、先頭に ' C ' を付けることはできません。 このルールは、' CMyClass ' などの型名の違反を報告し、' Cache ' などの型名の違反を報告しません。
@@ -49,4 +49,4 @@ ms.locfileid: "72671579"
  この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連規則
- [CA1715: 識別子は正しいプレフィックスを含んでいなければなりません](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+ [CA1715:識別子は正しいプレフィックスを含んでいなければなりません](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

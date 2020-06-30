@@ -1,5 +1,5 @@
 ---
-title: リモート デバッガーのポートの割り当て |Microsoft Docs
+title: リモート デバッガーのポートの割り当て | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2628d8929a0d2b6fd3561f88c81cfaa3b62564f0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68195175"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542104"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,27 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 ビット オペレーティング システムのリモート デバッガーのポート  
  TCP 4020 (Visual Studio 2015 の場合) がメイン ポートであり、すべてのシナリオにこれが必要です。 これは、コマンド ラインまたはリモート デバッガー ウィンドウのいずれかから構成できます。  
   
- リモート デバッガー ウィンドウでは、 **[ツール] / [オプション]** の順にクリックし、TCP/IP ポート番号を設定します。  
+ リモートデバッガーウィンドウで、[ツール]、[**オプション**] の順にクリックし、tcp/ip ポート番号を設定します。  
   
- コマンド ラインでは、 **/port** スイッチを使用して「**msvsmon /port \<ポート番号>** 」と入力して、リモート デバッガーを開始します。  
+ コマンドラインで、 **/port**スイッチ: **msvsmon/port \<port number> **を使用してリモートデバッガーを起動します。  
   
- リモート デバッグのヘルプに、リモート デバッガーのすべてのコマンド ライン スイッチが記載されています (リモート デバッガー ウィンドウで **F1** キーを押すか、または **[ヘルプ] / [使い方]** の順にクリックします)。  
+ リモートデバッグのヘルプでは、リモートデバッガーのすべてのコマンドラインスイッチを見つけることができます (リモートデバッガーウィンドウで**F1**キーを押すか、[**ヘルプ]/[使用状況**] をクリックします)。  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 ビット オペレーティング システムのリモート デバッガーのポート  
  64 ビット バージョンのリモート デバッガーを開始すると、既定でポート 4020 が使用されます。  32 ビット プロセスをデバッグする場合は、64 ビット バージョンのリモート デバッガーにより、ポート 4021 で 32 ビット バージョンのリモート デバッガーが開始されます。 32 ビットのリモート デバッガーを実行する場合は、4020 が使用され、4021 は使用されません。  
   
- このポートは、コマンドラインから構成できます。**Msvsmon/wow64port\<ポート番号 >** します。  
+ このポートは、コマンドラインで**Msvsmon/wow64port \<port number> **から構成できます。  
   
 ## <a name="the-discovery-port"></a>検出ポート  
  実行中のリモート デバッガーのインスタンスをネットワークで検出するには (たとえば、 **[プロセスにアタッチ]** ダイアログの **[検索]** ダイアログ)、UDP 3702 が使用されます。 これが使用されるのは、リモート デバッガーを実行しているコンピューターを検出する場合だけです。つまり、ターゲット コンピューターのコンピューター名または IP アドレスが他の方法でわかれば省略できます。 これは検出用の標準ポートなので、ポート番号を構成することはできません。  
   
- 探索を有効にしたくない場合は、検出を無効にコマンドラインから msvsmon を開始できます。**Msvsmon/nodiscovery**します。  
+ 検出を有効にしない場合は、コマンド ラインから検出を無効にして msvsmon を開始できます。次のように入力します。**Msvsmon /nodiscovery**。  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Azure でのリモート デバッガーのポート  
  Azure のリモート デバッガーでは次のポートが使用されます。 クラウド サービス上のポートは、個々の VM 上のポートにマップされます。 すべてのポートは TCP です。  
-  
-||||  
-|-|-|-|  
+
 |**接続**|**クラウド サービス上のポート**|**VM 上のポート**|  
+|-|-|-|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  

@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f95b33e1391ca755a6c0df261fa2bd05bd3c7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663071"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544314"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: 静的コンストラクターはプライベートでなければなりません
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121:静的コンストラクターはプライベートでなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
@@ -35,10 +35,10 @@ ms.locfileid: "72663071"
 ## <a name="cause"></a>原因
  型に、プライベートでない静的コンストラクターがあります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  静的コンストラクターは、クラスコンストラクターとも呼ばれ、型を初期化するために使用されます。 システムで静的コンストラクターが呼び出されてから、型の最初のインスタンスが作成されるか、静的メンバーが参照されます。 静的コンストラクターが呼び出されるタイミングは、ユーザーが制御できません。 静的コンストラクターがプライベートである場合、システム以外のコードから呼び出すことができます。 コンストラクターで実行される操作によっては、これによって予期しない動作が発生することがあります。
 
- この規則は、 C#および Visual Basic .net コンパイラによって適用されます。
+ このルールは、C# および Visual Basic .NET コンパイラによって適用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  通常、違反は次のいずれかの操作によって発生します。

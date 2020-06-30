@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669240"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544067"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: 識別子は正しく入力されなければなりません
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別子は正しく入力されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
@@ -35,7 +35,7 @@ ms.locfileid: "72669240"
 ## <a name="cause"></a>原因
  識別子の名前に、Microsoft スペルチェックライブラリで認識されない1つ以上の単語が含まれています。 この規則では、コンストラクターや、get や set プロパティアクセサーなどの特別な名前のメンバーはチェックされません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  このルールは、識別子をトークンに解析し、各トークンのスペルをチェックします。 解析アルゴリズムでは、次の変換が実行されます。
 
 - 大文字は新しいトークンを開始します。 たとえば、MyNameIsJoe は、"My"、"Name"、"Is"、"Joe" になります。
@@ -44,14 +44,14 @@ ms.locfileid: "72669240"
 
 - 先頭と末尾のアポストロフィは削除されます。 たとえば、"sender" は "sender" にトークンを送信します。
 
-- アンダースコアはトークンの末尾を表し、削除されます。 たとえば、Hello_world は "Hello", "world" になります。
+- アンダースコアはトークンの末尾を表し、削除されます。 たとえば、"Hello", "world" にトークンを Hello_world します。
 
-- 埋め込みアンパサンドは削除されます。 たとえば、& 台紙を "format" に設定します。
+- 埋め込みアンパサンドは削除されます。 たとえば、&台紙を "format" に設定します。
 
   既定では、スペルチェックの英語 (en) バージョンが使用されます。 他の言語辞書は現在使用できません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、単語のスペルを修正するか、CustomDictionary .xml という名前のカスタム辞書に単語を追加します。 ツールのインストールディレクトリ、プロジェクトディレクトリ、またはユーザーのプロファイルにあるツールに関連付けられているディレクトリ (%USERPROFILE%\Application Data \\...) に辞書を配置します。@No__t_1 のプロジェクトにカスタム辞書を追加する方法については、「[方法: コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)する」を参照してください。
+ この規則違反を修正するには、単語のスペルを修正するか、CustomDictionary.xml という名前のカスタム辞書に単語を追加します。 ツールのインストールディレクトリ、プロジェクトディレクトリ、またはユーザーのプロファイルにあるツールに関連付けられているディレクトリ (%USERPROFILE%\Application Data \\ ...) に辞書を配置します。でカスタム辞書をプロジェクトに追加する方法につい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ては、「[方法: コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)する」を参照してください。
 
 - 辞書/単語/認識されたパスで違反が発生しないようにする単語を追加します。
 
@@ -90,17 +90,17 @@ ms.locfileid: "72669240"
  この規則からの警告が表示されないようにするには、単語のスペルが意図的に間違っていて、その単語がライブラリの限られたセットに適用されます。 正しい綴りの単語を使用すると、新しいソフトウェアライブラリに必要な学習曲線を減らすことができます。
 
 ## <a name="related-rules"></a>関連規則
- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204:リテラルに正しいスペルを要求](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703:リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: 識別子はアンダースコアを含むことはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707:識別子はアンダースコアを含むことはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726: 適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726:適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [方法 : コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

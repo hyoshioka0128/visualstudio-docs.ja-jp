@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657992"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544288"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio を使用して UI を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 > [!NOTE]
 > アートボード、[ドキュメント アウトライン] ウィンドウ、[デバイス] ウィンドウなどの共有デザイン機能のツアーについては、「[XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」を参照してください。
 
- **このトピックの内容**:
+ **このトピックの**内容:
 
 - [[ツール] パネルのツアー](#Tools)
 
@@ -40,41 +40,41 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
 - [[プロパティ] パネルのツアー](#Properties)
 
-## <a name="Tools"></a> [ツール] パネルのツアー
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a>[ツール] パネルのツアー
  Blend for Visual Studio の **[ツール]** パネルは、アプリケーションのオブジェクトの作成と変更に使用します。 パネルにあるツールを選択してアートボード上でマウスを動かすと、オブジェクトを描画できます。
 
- ![ツールパネル](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![ツール パネル](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
-|||||
+|Image|ツールの種類|Image|ツールの種類|
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|**選択ツール** オブジェクトとパスを選択します。<br /><br /> **個別選択**ツールを使用すると、入れ子状のオブジェクトやパス セグメントを選択できます。|![コールアウト A](../designers/media/b5-label-a.png "b5_label_A")|**グラデーション ツールとブラシ ツール**|
+|![](../designers/media/b1-1.png "B1_1")|**選択ツール** オブジェクトとパスを選択します。<br /><br /> **個別選択**ツールを使用すると、入れ子状のオブジェクトやパス セグメントを選択できます。|![吹き出し A](../designers/media/b5-label-a.png "b5_label_A")|**グラデーション ツールとブラシ ツール**|
 |![](../designers/media/b1-2.png "B1_2")|**表示ツール** 手のひらツールでの移動、ズームなど、アートボードの表示の調整を行います。|![吹き出し B](../designers/media/b5-label-b.png "b5_label_B")|**パス ツール**|
 |![](../designers/media/b1-3.png "B1_3")|**ブラシ ツール** ブラシの変換や、オブジェクトのペイントを行ったり、あるオブジェクトの属性を選択して別のオブジェクトに適用するなど、オブジェクトの表示属性を操作します。|![吹き出し C](../designers/media/b5-label-c.png "b5_label_C")|**シェイプ ツール**|
 |![](../designers/media/b1-4.png "B1_4")|**オブジェクト ツール** パス、図形、レイアウト パネル、テキスト、コントロールなど、よく使用するオブジェクトをアートボード上で描画します。|![吹き出し D](../designers/media/b5-label-d.png "b5_label_D")|**レイアウト パネル**|
-|![](../designers/media/b1-5.png "B1_5")|**アセット ツール** **[アセット]** パネルにアクセスし、ライブラリから最近使用したアセットを表示します。|![吹き出し E](../designers/media/b5-label-e.png "b5_label_E")|**テキスト コントロール**|
+|![](../designers/media/b1-5.png "B1_5")|**アセット ツール****[アセット]** パネルにアクセスし、ライブラリから最近使用したアセットを表示します。|![吹き出し E](../designers/media/b5-label-e.png "b5_label_E")|**テキスト コントロール**|
 |||![吹き出し F](../designers/media/b5-label-f.png "b5_label_F")|**コモン コントロール**|
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ツール バー](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
 
-## <a name="Assets"></a> [アセット] パネルのツアー
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>[アセット] パネルのツアー
  **[アセット]** パネルには、すべてのコントロールが用意されています (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** パネルに用意されています。
 
- ![アセットパネル](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![アセット パネル](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
-|||
+|Image|説明|
 |-|-|
-|![](../designers/media/b1-1.png "B1_1")|**[検索] ボックス** **[検索]** ボックスに入力することにより、アセットの一覧を絞り込みます。|
+|![](../designers/media/b1-1.png "B1_1")|**[検索] ボックス****[検索]** ボックスに入力することにより、アセットの一覧を絞り込みます。|
 |![](../designers/media/b1-2.png "B1_2")|**グリッド モードとリスト モード** アセットの表示モードを、**グリッド モード**または**リスト モード**に切り替えます。|
 |![](../designers/media/b1-3.png "B1_3")|**アセットのカテゴリ** カテゴリまたはサブカテゴリをクリックすると、そのカテゴリに属するアセットが表示されます。|
 |![](../designers/media/b1-4.png "B1_4")|**スタイル** リソース ディクショナリに含まれるすべてのスタイルを表示します。|
 |![](../designers/media/b1-5.png "B1_5")|**説明** 選択したカテゴリまたはサブカテゴリの説明が表示されます。|
 
-## <a name="Objects"></a> [オブジェクトとタイムライン] パネルのツアー
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>[オブジェクトとタイムライン] パネルのツアー
  このパネルを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。
 
- ![アニメーションモードの [オブジェクトとタイムライン] パネル](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![アニメーション モードの [オブジェクトとタイムライン] パネル](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
-|||
+|Image|説明|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**オブジェクト ビュー** ドキュメントをツリー表示します。 さまざまなレベルの詳細にドリル ダウンできます。 さらに、アートボード上のオブジェクトを整理するレイヤーを追加することもできます。 そのように、グループとしてロックし、非表示にすることができます。|
 |![](../designers/media/b1-2.png "B1_2")|**記録モード インジケーター** タイムラインでプロパティの変更を記録中かどうかを表示します。|
@@ -91,14 +91,14 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 |![](../designers/media/b1-13.png "B1_13")|**タイムラインに設定されたキーフレーム** 特定の時点でのプロパティの値を変更します。|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**オブジェクトの順序の変更** オブジェクトの表示順序を設定します。 構造ビューのオブジェクトを Z 軸を基準 (手前から奥)、またはマークアップ順 (**XAML** での表示順) に整列させるには、このボタンをクリックします。|
 |![](../designers/media/b1-15.png "B1_15")|**タイムラインのズーム** タイムラインのズーム解像度を設定します。 ズーム インでは、アニメーションを詳細に編集できます。ズーム アウトすると、長い再生時間にわたる動作の概要が表示されます。 ズーム インしても、目的の位置にキーフレームを設定できない場合は、スナップ精度が十分高く設定されていることを確認してください。|
-|![吹き出し16](../designers/media/b5-label-16.png "b5_label_16")|**タイムライン構成領域** タイムラインを表示するとともに、キーフレームをドラッグするかショートカット メニューを使用してキーフレームを移動します。|
+|![吹き出し 16](../designers/media/b5-label-16.png "b5_label_16")|**タイムライン構成領域** タイムラインを表示するとともに、キーフレームをドラッグするかショートカット メニューを使用してキーフレームを移動します。|
 
-## <a name="Properties"></a> [プロパティ] パネルのツアー
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>[プロパティ] パネルのツアー
  オブジェクトのプロパティを表示して変更するには、このパネルを使用します。 また、アートボード上で直接設定することもできます。 この場合、プロパティの変更が **[プロパティ]** パネルに反映されます。
 
- ![プロパティパネル](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
+ ![プロパティ パネル](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **[カテゴリ]** プロパティのカテゴリを展開し、折りたたみます。 カテゴリの![詳細を表示](../designers/media/b5-collapse-button.png "b5_collapse_button")または非表示にするには、[**展開** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") /**折りたたみ**] をクリックします。
+ **[カテゴリ]** プロパティのカテゴリを展開し、折りたたみます。 カテゴリの詳細を表示するには **[展開]** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") をクリックし、非表示にするには **[折りたたみ]** ![折りたたみ](../designers/media/b5-collapse-button.png "b5_collapse_button") をクリックします。
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -108,19 +108,19 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 |                                 ![](../designers/media/b1-4.png "B1_4")                                 |                                                                                    **カラー エディター** 単色ブラシおよびグラデーション ブラシで使用します。                                                                                    |
 |                                 ![](../designers/media/b1-5.png "B1_5")                                 |                                                                                                 **カラー ピッカー** 色を選択します。                                                                                                 |
 |                                 ![](../designers/media/b1-6.png "B1_6")                                 |                                                                              **カラー チップ** 初期の色、現在の色、および最後の色が表示されます。                                                                               |
-|                                 ![](../designers/media/b1-7.png "B1_7")                                 | **スポイト ツール** 画面上の任意の要素の色を使用します。 **色スポイト**は、**単色ブラシ**が選択されているときに使用できます。 **[グラデーションのスポイト]** は、 **[グラデーション ブラシ]** が選択されているときに使用できます。 |
+|                                 ![](../designers/media/b1-7.png "B1_7")                                 | **スポイト ツール** 画面上の任意の要素の色を使用します。 **色スポイト**は、**単色ブラシ**が選択されているときに使用できます。 **[グラデーションのスポイト]** は、**[グラデーション ブラシ]** が選択されているときに使用できます。 |
 |                                 ![](../designers/media/b1-8.png "B1_8")                                 |                                                                        **プロパティとイベント** 選択された要素に対してプロパティを設定したり、イベントを選択します。                                                                         |
 |                                 ![](../designers/media/b1-9.png "B1_9")                                 |                                                         **[検索] ボックス** プロパティを検索します。 **[検索]** ボックスに入力することで、表示されるプロパティをフィルター処理します。                                                          |
 | ![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png "97fa60b9-0caf-4387-9225-b57510d32209") |                                **ブラシ エディターのタブ** ブラシ エディターを選択する場合に使用します。 **ブラシなし**、**単色ブラシ**、**グラデーション ブラシ**、**タイル ブラシ**、または**ブラシ リソース**から選択できます。                                |
-|                                ![](../designers/media/b1-11.png "B1_11")                                |                                    **色リソース** 異なるプロパティにまったく同じ色を適用します。 **[色リソース]** タブには、 **[ローカル リソース]** と **[システム リソース]** が表示されます。                                    |
-|                                ![](../designers/media/b1-12.png "B1_12")                                |                                                 **RGB 色空間** **[R]** 、 **[G]** 、または **[B]** (赤、緑、青) の各数値エディターの値を調整して色を変更します。                                                  |
-|                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **アルファ チャネル** **[A]** の横にある数値エディターを使用してアルファ値を変更します。                                                                        |
+|                                ![](../designers/media/b1-11.png "B1_11")                                |                                    **色リソース** 異なるプロパティにまったく同じ色を適用します。 **[色リソース]** タブには、**[ローカル リソース]** と **[システム リソース]** が表示されます。                                    |
+|                                ![](../designers/media/b1-12.png "B1_12")                                |                                                 **RGB 色空間****[R]**、**[G]**、または **[B]** (赤、緑、青) の各数値エディターの値を調整して色を変更します。                                                  |
+|                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **アルファ チャネル****[A]** の横にある数値エディターを使用してアルファ値を変更します。                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **色をリソースに変換** 選択した色を色リソースに変換します。 色リソースは、[色リソース] タブをクリックした場合に使用できます。                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **16 進数値** 表示されている色を表す 16 進数値が表示されます。                                                                                 |
-|                     ![吹き出し16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **グラデーション スライダー** グラデーション ブラシが選択されている場合にのみ表示されます。                                                                                 |
+|                     ![吹き出し 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **グラデーション スライダー** グラデーション ブラシが選択されている場合にのみ表示されます。                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **詳細設定プロパティの表示** 使用頻度が低いプロパティのカテゴリを表示します。                                                                      |
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [[プロパティ] パネル](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [コントロールを挿入し、その動作を変更する](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[オブジェクトをアニメーション化](../designers/animate-objects-in-xaml-designer.md)する[図形とパスの描画](../designers/draw-shapes-and-paths.md) [Visual Studio での XAML のデザインと Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

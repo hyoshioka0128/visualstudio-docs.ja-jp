@@ -1,18 +1,18 @@
 ---
 title: DSL ライブラリによる DSL 間でのクラスの共有
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76111366"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542546"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL ライブラリによる DSL 間でのクラスの共有
 Visual Studio の視覚化およびモデリング SDK では、別の DSL にインポートできる不完全な DSL 定義を作成できます。 これにより、類似するモデルの一般的な部分を考慮することができます。
@@ -31,21 +31,21 @@ Visual Studio の視覚化およびモデリング SDK では、別の DSL に�
 
      インポーターが使用できるリレーションシップを定義するには、2つのドメインクラスを作成し、それらの間にリレーションシップを作成します。
 
-     ドメインクラスの**継承修飾子**を `Abstract`に設定することを検討してください。
+     ドメインクラスの**継承修飾子**をに設定することを検討してください `Abstract` 。
 
 3. DSL エクスプローラーで定義した要素 (接続ビルダーなど) を追加できます。
 
 4. 検証制約など、追加のコードを必要とするカスタマイズを追加することができます。
 
-5. クリックして**すべてのテンプレートの変換**します。
+5. [**すべてのテンプレートの変換**] をクリックします。
 
-6. プロジェクトをビルドする。
+6. プロジェクトをビルドします。
 
-7. 他のユーザーが使用できるように DSL を配布する場合は、コンパイルされたアセンブリ (DLL) とファイル `DslDefinition.dsl`の両方を指定する必要があります。 コンパイルされたアセンブリは、の下のフォルダーにあり `Dsl\bin\*`
+7. 他のユーザーが使用できるように DSL を配布する場合は、コンパイルされたアセンブリ (DLL) とファイルの両方を指定する必要があり `DslDefinition.dsl` ます。 コンパイルされたアセンブリは、の下のフォルダーにあります。`Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>DSL ライブラリをインポートするには
 
-1. 別の DSL 定義の**Dsl エクスプローラー**で、dsl のルートクラスを右クリックし、 **[新しい Dsllibrary インポートの追加]** をクリックします。
+1. 別の DSL 定義の**Dsl エクスプローラー**で、dsl のルートクラスを右クリックし、[**新しい Dsllibrary インポートの追加**] をクリックします。
 
 2. プロパティウィンドウで、ライブラリの**ファイルパス**を設定します。 相対パスと絶対パスのどちらを使用してもかまいません。
 
