@@ -1,9 +1,9 @@
 ---
-title: '&lt;entryPoints&gt;要素 (Visual Studio での Office 開発)'
+title: '&lt;entryPoints &gt; 要素 (Visual Studio での Office 開発)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797576"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543573"
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt;要素 (Visual Studio での Office 開発)
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints &gt; 要素 (Visual Studio での Office 開発)
   `entryPoints` 名前空間の `vstav3` の要素には、Office ソリューションに関連付けるすべての `entryPoint` 要素を格納します。
 
 ## <a name="syntax"></a>構文
@@ -38,23 +38,23 @@ ms.locfileid: "62797576"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `entryPoints` 要素は必須です。この要素は `vstav3` 名前空間に属します。 アプリケーション マニフェストには、Office ソリューションごとに `entryPoints` 要素を 1 つ定義します。 たとえば、複数プロジェクトの配置で 3 つの Office ソリューションを配置する場合は、アプリケーション マニフェストに 3 つの `entryPoints` 要素を定義します。
+ `entryPoints` 要素は必須です。この要素は `vstav3` 名前空間にあります。 アプリケーション マニフェストには、Office ソリューションごとに `entryPoints` 要素を 1 つ定義します。 たとえば、複数プロジェクトの配置で 3 つの Office ソリューションを配置する場合は、アプリケーション マニフェストに 3 つの `entryPoints` 要素を定義します。
 
  `entryPoints` 要素には、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|ID|複数プロジェクトの配置の場合は必須です。 Office ソリューションの名前。 ID に等号 (=) は使用できません。|
+|id|複数プロジェクトの配置の場合は必須です。 Office ソリューションの名前。 ID に等号 (=) は使用できません。|
 
  `entryPoints` には、次の要素があります。
 
-### <a name="entrypoint"></a>entrypoint
- 必須。 ロール、`entryPoint`内の要素、`vstav3`で名前空間が定義されている[ &#60;entryPoint&#62;要素&#40;Visual Studio での Office 開発&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)します。
+### <a name="entrypoint"></a>entryPoint
+ 必須。 名前空間の要素のロールは、 `entryPoint` `vstav3` [Visual Studio&#41;で &#40;Office 開発の&#60;entryPoint&#62; 要素](../vsto/entrypoint-element-office-development-in-visual-studio.md)で定義されています。
 
-## <a name="document-level-customization-example"></a>ドキュメント レベルのカスタマイズ例
+## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 
 ### <a name="description"></a>説明
- 次のコード例では、 `entryPoints` を使用して配置したドキュメント レベルのソリューションのアプリケーション マニフェストにある [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例で示されている例の一部は、 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+ 次のコード例では、 `entryPoints` を使用して配置したドキュメント レベルのソリューションのアプリケーション マニフェストにある [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -98,7 +98,7 @@ ms.locfileid: "62797576"
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
 ### <a name="description"></a>説明
- 次のコード例では、 `entryPoints` を使用して配置したアプリケーション レベルのソリューションのアプリケーション マニフェストにある [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例で示されている例の一部は、 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+ 次のコード例では、 `entryPoints` を使用して配置したアプリケーション レベルのソリューションのアプリケーション マニフェストにある [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -115,10 +115,10 @@ ms.locfileid: "62797576"
 </vstav3:entryPoints>
 ```
 
-## <a name="multi-project-deployment-example"></a>複数プロジェクトの配置例
+## <a name="multi-project-deployment-example"></a>複数プロジェクトの配置の例
 
 ### <a name="description"></a>説明
- 次のコード例は、複数プロジェクトの配置のためのアプリケーション マニフェストの `entryPoints` 要素を示しています。 このコード例で示されている例の一部は、 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+ 次のコード例は、複数プロジェクトの配置のためのアプリケーション マニフェストの `entryPoints` 要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -173,6 +173,6 @@ ms.locfileid: "62797576"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
-- [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
+- [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)
+- [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661388"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538737"
 ---
-# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: 文字列を大文字に標準化します
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:文字列を大文字に標準化します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
@@ -35,7 +35,7 @@ ms.locfileid: "72661388"
 ## <a name="cause"></a>原因
  操作は、文字列を小文字に正規化します。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  文字列は大文字に正規化する必要があります。 小文字に変換された小さな文字グループは、ラウンドトリップを行うことができません。 ラウンドトリップを行うには、あるロケールから文字データを表す別のロケールに文字を変換し、変換された文字から元の文字を正確に取得することを意味します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -44,5 +44,5 @@ ms.locfileid: "72661388"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  結果に基づいてセキュリティを決定しない場合 (たとえば、UI に表示する場合)、警告メッセージを抑制するのは安全です。
 
-## <a name="see-also"></a>参照
- [グローバリゼーションに関する警告](../code-quality/globalization-warnings.md)
+## <a name="see-also"></a>関連項目
+ [グローバリゼーションの警告](../code-quality/globalization-warnings.md)

@@ -1,18 +1,18 @@
 ---
 title: コードマップのエクスポートと保存
 ms.date: 05/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57989de2cca3582b3193a7b55b81d1d444dcf1c1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591932"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542572"
 ---
 # <a name="share-code-maps"></a>コード マップの共有
 
@@ -22,9 +22,9 @@ ms.locfileid: "75591932"
 
 マップを保存するには、 **[ファイル]** メニューを使用します。
 
--または-
+\- または -
 
-マップを特定のプロジェクトの一部として保存するには、マップのツールバーで [**共有** > 移動] を選択し **\<CodeMapName > をに移動**し、マップを保存するプロジェクトを選択します。
+マップを特定のプロジェクトの一部として保存するには、マップのツールバーで [**共有**] [移動] の順に選択し、  >  マップを保存するプロジェクトを選択します。** \<CodeMapName> **
 
 ![マップを別のプロジェクトに移動する](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +43,7 @@ Visual Studio では、マップは .dgml ファイルとして保存され*ま�
 
 コードマップをイメージとしてエクスポートする場合は、Microsoft Word や PowerPoint などの他のアプリケーションにコピーできます。
 
-1. コードマップのツールバーで、[**イメージとして電子メール**を**共有** > ] または **[イメージのコピー]** を選択します。
+1. コードマップのツールバーで、 **Share**[  >  **電子メールをイメージとして**共有] または [**イメージのコピー**] を選択します。
 
 2. そのイメージを他のアプリケーションに貼り付けます。
 
@@ -51,11 +51,11 @@ Visual Studio では、マップは .dgml ファイルとして保存され*ま�
 
 コードマップを XPS ファイルとしてエクスポートすると、Internet Explorer のような XML または XAML ビューアーで表示できます。
 
-1. コードマップのツールバーで、[ > **電子メールをポータブル Xps として** **共有**する] または **[ポータブル xps として保存]** を選択します。
+1. コードマップツールバーで、[ **Share**  >  **電子メールをポータブル xps として**共有] または [**ポータブル xps として保存**] を選択します。
 
 2. ファイルを保存する場所を参照します。
 
-3. コード マップの名前を付けます。 **[名前を付けて保存]** ボックスが**xps ファイル (\*.xps)** に設定されていることを確認します。 **[保存]** をクリックします。
+3. コード マップの名前を付けます。 [**名前を付けて保存**] ボックスが**xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選びます。
 
 ## <a name="see-also"></a>関連項目
 

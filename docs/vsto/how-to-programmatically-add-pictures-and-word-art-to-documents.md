@@ -1,7 +1,7 @@
 ---
 title: プログラムによってドキュメントに画像とワードアートを追加する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253819"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538087"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>方法: プログラムによって文書に画像とワードアートを追加する
   デザイン時または実行時に、画像および描画オブジェクトをドキュメントに追加できます。 ワードアートでは、Microsoft Office Word ドキュメントに装飾的なテキストを追加することができます。 これらの特別なテキスト効果は、ドキュメントに挿入できる、カスタマイズ可能な描画オブジェクトです。
@@ -35,11 +35,11 @@ ms.locfileid: "71253819"
 
 1. ドキュメント内の画像を挿入する場所にカーソルを置きます。
 
-2. リボンの **[挿入]** タブをクリックします。
+2. リボンの [**挿入**] タブをクリックします。
 
-3. [図 **] グループの** **[画像]** をクリックします。
+3. [図 **] グループの**[**画像**] をクリックします。
 
-4. **[画像の挿入]** ダイアログボックスで、挿入する画像に移動し、 **[挿入]** をクリックします。
+4. [**画像の挿入**] ダイアログボックスで、挿入する画像に移動し、[**挿入**] をクリックします。
 
      画像が、ドキュメントの現在のカーソル位置に追加されます。
 
@@ -60,11 +60,11 @@ ms.locfileid: "71253819"
 
 1. ドキュメント内のワードアートを挿入する場所にカーソルを置きます。
 
-2. リボンの **[挿入]** タブをクリックします。
+2. リボンの [**挿入**] タブをクリックします。
 
-3. **[テキスト]** グループの **[ワードアート]** をクリックし、ワードアートのスタイルを選択します。
+3. [**テキスト**] グループの [**ワードアート**] をクリックし、ワードアートのスタイルを選択します。
 
-4. ドキュメントに表示するテキストを **[ワードアートテキストの編集]** ダイアログボックスに追加し、 **[OK]** をクリックします。
+4. ドキュメントに表示するテキストを [**ワードアートテキストの編集**] ダイアログボックスに追加し、[ **OK**] をクリックします。
 
      選択したワードアート スタイルが適用されたテキストが、ドキュメントに追加されます。
 
@@ -97,11 +97,11 @@ ms.locfileid: "71253819"
 
 ## <a name="compile-the-code"></a>コードのコンパイル
 
-- *Samplepicture .jpg*という名前の画像が C ドライブに存在している必要があります。
+- *SamplePicture.jpg*という名前の画像が C ドライブに存在している必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [方法: プログラムによって既存のドキュメントを開く](../vsto/how-to-programmatically-open-existing-documents.md)
 - [方法: プログラムによって Word 文書にテキストを挿入する](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [方法: 検索後にプログラムによって選択を復元する](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [方法: プログラムによるドキュメントの保存](../vsto/how-to-programmatically-save-documents.md)
+- [方法: プログラムによって検索後に選択を復元する](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [方法: プログラムによって文書を保存する](../vsto/how-to-programmatically-save-documents.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

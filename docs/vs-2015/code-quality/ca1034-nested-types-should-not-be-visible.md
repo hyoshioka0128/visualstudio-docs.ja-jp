@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 33e7ea6aaefcaf5b6cbf0bf8c52ade0b9e68a549
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04a982c993ffbb04a3e7600dfb93a00e80727b84
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661854"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542169"
 ---
-# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: 入れ子にされた型を参照可能にすることはできません
+# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034:入れ子にされた型を参照可能にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
@@ -35,7 +35,7 @@ ms.locfileid: "72661854"
 ## <a name="cause"></a>原因
  外部から参照できる型に、外部から参照できる型宣言が含まれています。 入れ子になった列挙型とプロテクト型は、この規則から除外されます。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  入れ子になった型は、別の型のスコープ内で宣言された型です。 入れ子になった型は、含んでいる型のプライベート実装の詳細をカプセル化する場合に便利です。 このような用途なので、入れ子にされた型は外部から参照できないようにします。
 
  論理グループまたは名前の競合を避けるために、外部から参照できる入れ子になった型を使用しないでください。代わりに、名前空間を使用します。

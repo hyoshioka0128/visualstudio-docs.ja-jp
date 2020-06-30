@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって文書内のテキストを非表示します。'
+title: '方法: プログラムによって文書内のテキストを非表示にする'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812769"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543313"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>方法: プログラムによって文書内のテキストを非表示します。
+# <a name="how-to-programmatically-hide-text-in-documents"></a>方法: プログラムによって文書内のテキストを非表示にする
   特定範囲のテキストに対応する <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> の <xref:Microsoft.Office.Interop.Word.Range.Font%2A> プロパティを設定して、文書内のテキストを非表示にできます。
 
- 内のテキストを一時的に非するなど、 <xref:Microsoft.Office.Tools.Word.Bookmark> (ドキュメント レベルのカスタマイズ) で、または<xref:Microsoft.Office.Interop.Word.Bookmark>(、VSTO アドインで) ドキュメントをプリンターに送信する前にします。
+ たとえば、ドキュメントを <xref:Microsoft.Office.Tools.Word.Bookmark> プリンターに送信する前に、内 (ドキュメントレベルのカスタマイズの場合) または (VSTO アドインの場合) 内のテキストを一時的に非表示にすることができ <xref:Microsoft.Office.Interop.Word.Bookmark> ます。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -52,11 +52,11 @@ ms.locfileid: "62812769"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
 
 ## <a name="compile-the-code"></a>コードのコンパイル
- このコード例では、ドキュメントが含まれている、 <xref:Microsoft.Office.Tools.Word.Bookmark> (ドキュメント レベルのカスタマイズ) 内のコントロールまたは<xref:Microsoft.Office.Interop.Word.Bookmark>(でコントロールを VSTO アドインで) という`bookmark1`します。
+ このコード例では、 <xref:Microsoft.Office.Tools.Word.Bookmark> という名前のコントロール (ドキュメントレベルのカスタマイズの場合) または <xref:Microsoft.Office.Interop.Word.Bookmark> コントロール (VSTO アドインの場合) がドキュメントに含まれていることを前提としてい `bookmark1` ます。
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムにより印刷するドキュメント](../vsto/how-to-programmatically-print-documents.md)
-- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [方法: プログラムによって Word のドキュメント内の範囲をリセットします。](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [方法: プログラムによってブックマークのテキストを更新します。](../vsto/how-to-programmatically-update-bookmark-text.md)
+- [方法: プログラムによって文書を印刷する](../vsto/how-to-programmatically-print-documents.md)
+- [方法: プログラムによって文書内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [方法: プログラムによって Word 文書の範囲をリセットする](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [方法: プログラムによってブックマークテキストを更新する](../vsto/how-to-programmatically-update-bookmark-text.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

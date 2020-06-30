@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによる電子メールの送信'
+title: '方法: プログラムによって電子メールを送信する'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551756"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543261"
 ---
-# <a name="how-to-programmatically-send-email"></a>方法: プログラムによる電子メールの送信
+# <a name="how-to-programmatically-send-email"></a>方法: プログラムによって電子メールを送信する
   この例では、電子メールアドレスにドメイン名**example.com**がある連絡先に電子メールメッセージを送信します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -43,5 +43,5 @@ ms.locfileid: "69551756"
 ## <a name="see-also"></a>関連項目
 - [メールアイテムの操作](../vsto/working-with-mail-items.md)
 - [方法: プログラムによって電子メールアイテムを作成する](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [方法: プログラムによる Outlook の連絡先へのアクセス](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [方法: プログラムによって Outlook の連絡先にアクセスする](../vsto/how-to-programmatically-access-outlook-contacts.md)
 - [方法: 電子メールメッセージを受信したときにプログラムによってアクションを実行する](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

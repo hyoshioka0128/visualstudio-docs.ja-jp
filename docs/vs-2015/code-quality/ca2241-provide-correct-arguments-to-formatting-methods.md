@@ -16,17 +16,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 112065b2a8b9a88241ce62dda7b32a2f2c22fc75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672029"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543651"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: 正しい引数を書式指定メソッドに指定します
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241:書式設定メソッドに正しい引数を提供
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
@@ -34,10 +34,10 @@ ms.locfileid: "72672029"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- @No__t_1、<xref:System.Console.Write%2A>、<xref:System.String.Format%2A?displayProperty=fullName> などのメソッドに渡された `format` 文字列引数に、各オブジェクト引数に対応する書式指定項目が含まれていません。また、その逆も同様です。
+ `format`、、などのメソッドに渡された文字列引数に、 <xref:System.Console.WriteLine%2A> <xref:System.Console.Write%2A> <xref:System.String.Format%2A?displayProperty=fullName> 各オブジェクト引数に対応する書式項目が含まれていません。また、その逆も同様です。
 
-## <a name="rule-description"></a>規則の説明
- @No__t_0、<xref:System.Console.Write%2A>、<xref:System.String.Format%2A> などのメソッドの引数は、書式指定文字列の後に複数の <xref:System.Object?displayProperty=fullName> インスタンスが続く形式で構成されます。 書式指定文字列は、{index [, alignment] [: formatString]} という形式のテキストと埋め込み書式項目で構成されます。 ' index ' は、どのオブジェクトを書式設定するかを示す、0から始まる整数です。 オブジェクトの書式指定文字列に対応するインデックスがない場合、オブジェクトは無視されます。 ' Index ' によって指定されたオブジェクトが存在しない場合は、実行時に <xref:System.FormatException?displayProperty=fullName> がスローされます。
+## <a name="rule-description"></a>ルールの説明
+ 、、などのメソッドへの引数は、 <xref:System.Console.WriteLine%2A> <xref:System.Console.Write%2A> <xref:System.String.Format%2A> 書式指定文字列の後に複数のインスタンスが続く形式で構成さ <xref:System.Object?displayProperty=fullName> れます。 書式指定文字列は、{index [, alignment] [: formatString]} という形式のテキストと埋め込み書式項目で構成されます。 ' index ' は、どのオブジェクトを書式設定するかを示す、0から始まる整数です。 オブジェクトの書式指定文字列に対応するインデックスがない場合、オブジェクトは無視されます。 ' Index ' によって指定されたオブジェクトが存在しない場合は、 <xref:System.FormatException?displayProperty=fullName> 実行時にがスローされます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、各オブジェクト引数に書式項目を指定し、各書式指定項目にオブジェクト引数を指定します。

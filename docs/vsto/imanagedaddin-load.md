@@ -1,7 +1,7 @@
 ---
 title: IManagedAddin::Load
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: interface
 dev_langs:
 - VB
 - CSharp
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87fb34e90d36383f49b6369fb1dea4b9854c7300
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956732"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541038"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   管理対象の VSTO アドインが読み込まれるときに呼び出されます。
@@ -33,7 +33,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |パラメーター|説明|
 |---------------|-----------------|
 |*bstrManifestURL*|VSTO アドインのマニフェストの完全なパス。|
-|*pdispApplication*|VSTO アドインの読み込みは、ホスト アプリケーションを表すへのポインター。|
+|*pdispApplication*|VSTO アドインを読み込んでいるホストアプリケーションを表す IDispatch へのポインター。|
 
 ## <a name="return-value"></a>戻り値
  メソッドが正常に完了したかどうかを示す HRESULT 値。
@@ -41,7 +41,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Remarks
  マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。 たとえば、マニフェストには、VSTO アドイン アセンブリの場所や、VSTO アドインが読み込まれるときにインスタンス化するエントリ ポイント クラスを指定できます。
 
- *BstrManifestURL*パラメーターには値が含まれています、`Manifest`の下のエントリ、 **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<アプリケーション名>_ \Addins\\_\<アドイン ID >_**  VSTO アドインのレジストリ キー。 詳細については、次を参照してください。 [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)します。
+ *Bstrmanifesturl*パラメーターには、 `Manifest` VSTO アドインの**HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \ Addins \\ _\<add-in ID>_ **レジストリキーの下にあるエントリの値が含まれます。 詳細については、「 [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)」を参照してください。
 
  読み込まれる VSTO アドインのアプリケーション ドメインやセキュリティ ポリシーの構成などのタスクを実行するように、 [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) メソッドを実装します。
 
