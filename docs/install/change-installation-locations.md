@@ -3,7 +3,7 @@ title: インストールの場所を選択する
 description: ダウンロード キャッシュ、共有コンポーネント、SDK、ツールの場所を異なるドライブに変更することによって、ご利用のシステム ドライブの Visual Studio インストール占有領域を減らす方法について説明します。 たとえば、いくつかのファイルを C ドライブから D ドライブに移動します。
 ms.date: 03/30/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7f80d3c30c536e58811f8ca92676694b6d010010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111789"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419121"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio でインストールの場所を選択する
 

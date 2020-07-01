@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772789"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546589"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 関数は、.*vsp* ファイルに数字マーカーとテキスト文字列を挿入します。 マークやコメントを挿入するには、`CommentMarkProfile` 関数が含まれるスレッドのプロファイリングをオンにする必要があります。
@@ -42,7 +42,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
 
-|列挙子|[説明]|
+|列挙子|説明|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|パラメーターは 0 以下です。 これらの値は予約済みです。 マークとコメントは記録されません。|
 |MARK_ERROR_MODE_NEVER|関数が呼び出されたときに、プロファイル モードが NEVER に設定されました。 マークとコメントは記録されません。|
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |MARK_TEXTTOOLONG|文字列の長さが最大値の 256 文字を超えています。 コメント文字列は切り詰められ、マークとコメントが記録されます。|
 |MARK_OK|成功した場合は MARK_OK が返されます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  Mark コマンドまたは関数 (CommentMarkAtProfile、CommentMarkProfile、MarkProfile) で VSInstr マークとコメントが挿入されたとき、マークのプロファイル関数を含むスレッドでは、プロファイル状態をオンにする必要があります。
 
  プロファイル マークは、スコープ内でグローバルです。 たとえば、あるスレッドに挿入したプロファイルマークを、.*vsp* ファイル内の任意のスレッドで使用し、データ セグメントの開始または終了をマークできます。
@@ -65,9 +65,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 ## <a name="function-information"></a>関数の情報
 
-|||
+|アイテム|[値]|
 |-|-|
-|**ヘッダー**|VSPerf.h をインクルードします。|
+|**Header**|VSPerf.h をインクルードします。|
 |**Library**|VSPerf.lib を使用します。|
 |**Unicode**|`CommentMarkProfileW` (Unicode) および `CommentMarkProfileA` (ANSI) として実装します。|
 
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,7 +1,7 @@
 ---
 title: VSPerf | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c58033e89742650dc097a7469cbf62d7b6168509
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779936"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520368"
 ---
 # <a name="vsperf"></a>VSPerf
 **VsPerf** コマンド ライン ツールを使用して、次を行います。
@@ -28,7 +28,7 @@ ms.locfileid: "74779936"
 ## <a name="uwp-apps-only"></a>UWP アプリのみ
  これらのオプションは、UWP アプリにのみ適用されます。
 
-|||
+|オプション|説明|
 |-|-|
 |**/app:{AppName}**|プロファイラーを起動し、スタート メニューから起動される指定したアプリを待機します。<br /><br /> `vsperf /listapps` を実行して、インストール済みアプリの Name と PackageFullName を表示します。|
 |**/package:{PackageFullName}**|プロファイラーを起動し、スタート メニューから起動される指定したアプリを待機します。<br /><br /> `vsperf /listapps` を実行して、インストール済みアプリの Name と PackageFullName を表示します。|
@@ -39,7 +39,7 @@ ms.locfileid: "74779936"
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Windows 8 デスクトップ アプリケーション、および Windows Server 2012 のアプリケーションのみ
  これらのオプションは、UWP アプリでは機能しません。
 
-|||
+|オプション|説明|
 |-|-|
 |**/launch:{Executable}**|指定した実行可能ファイルのプロファイルを起動して開始します。|
 |**/args:{ExecutableArguments}**|**/launch** ターゲットに渡すようにコマンド ライン引数を指定します。|
@@ -48,7 +48,7 @@ ms.locfileid: "74779936"
 ## <a name="all-applications"></a>すべてのアプリケーション
  これらのオプションは、すべての Windows 8 アプリケーションまたは Windows Server 2012 アプリケーションに適用されます。
 
-|||
+|オプション|説明|
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|指定したプロセスからデータを収集します。<br /><br /> タスク マネージャーを使用して、実行中のアプリのプロセス ID (PID) とプロセス名を表示します。|
 |**/file:{ReportName}**|任意。 出力ファイルを指定します (既存のファイルを上書き)。<br /><br /> /package または /attach でのみ使用します。|
@@ -58,6 +58,6 @@ ms.locfileid: "74779936"
 |**/detach**|データ収集を停止しますが、ターゲット プロセスの実行は続行します。|
 |**/status**|プロファイラーの状態を表示します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Windows 8 と Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

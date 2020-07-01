@@ -2,7 +2,7 @@
 title: Python 用の C++ 拡張機能の記述
 description: 混合モードのデバッグなど、Visual Studio、CPython、PyBind11 を使用して Python 用の C++ 拡張機能を作成するチュートリアルです。
 ms.date: 11/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62956955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543729"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python 用 C++ 拡張機能の作成
 

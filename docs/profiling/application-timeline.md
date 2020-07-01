@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285982"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537281"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>リソース消費量と UI スレッド アクティビティを分析する (XAML)
 
@@ -100,7 +100,7 @@ ms.locfileid: "85285982"
 
 次のイベントがサポートされます。
 
-|||
+|名前|説明|
 |-|-|
 |**解析**|XAML ファイルの解析とオブジェクトの作成に費やされた時間。<br /><br /> **[タイムラインの詳細]** の **[解析]** ノードを展開すると、ルート イベントの結果として解析されたすべての XAML ファイルの依存関係チェーンが表示されます。 このヒントにより、パフォーマンスが重要なシナリオにおいて不必要なファイル解析やオブジェクト作成を特定し、それらを取り除いて最適化できます。|
 |**レイアウト**|大規模なアプリケーションでは、多数の要素が画面に同時に表示される可能性があります。 場合によっては、この表示によって UI のフレーム レートが低下し、これに対応してアプリケーションの応答性も低下します。 レイアウト イベントでは、各要素 (つまり、Arrange、Measure、ApplyTemplate、ArrangeOverride、MeasureOverride に費やした時間) をレイアウトするコストが正確に判断されます。 レイアウト パスの一部を成すビジュアル ツリーも作成されます。 この視覚表現を使用すると、簡略化する論理ツリーを判断したり、レイアウト パスを最適化するために他の遅延メカニズムを評価したりできます。|
@@ -116,7 +116,7 @@ ms.locfileid: "85285982"
 
 **[タイムラインの詳細]** ツールバーを使用して、 **[タイムラインの詳細]** ビュー エントリの並べ替え、フィルター操作、注釈の指定を行います。
 
-|||
+|名前|説明|
 |-|-|
 |**並べ替え**|開始時刻またはイベントの長さによって並べ替えます。|
 |![フレームごとのグループ イベント](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|フレームごとにイベントをグループ化する最上位の **[フレーム]** カテゴリを追加または削除します。|
