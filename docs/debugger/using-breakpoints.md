@@ -2,7 +2,7 @@
 title: デバッガーでブレークポイントを使用する | Microsoft Docs
 ms.custom: ''
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: af53cdd368d129fc23c3596a4e20d6e95ceb7a18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301027"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536592"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでブレークポイントを使用する
 
@@ -50,7 +50,7 @@ ms.locfileid: "79301027"
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> ソース コードにブレークポイントを設定する
 
-ブレークポイントは、実行可能ファイルの任意のコード行に設定できます。 たとえば、次の C# コードでは、変数宣言、`for` ループ、または `for` ループ内の任意のコードにブレークポイントを設定できます。 名前空間やクラス宣言、またはメソッドのシグネチャには、ブレークポイントを設定できません。
+ブレークポイントは、実行可能ファイルの任意のコード行に設定できます。 たとえば、次の C# コードでは、変数宣言、`for` ループ、または `for` ループ内の任意のコードにブレークポイントを設定できます。 名前空間、クラス、または変数の宣言、あるいはメソッド シグネチャにブレークポイントを設定することはできません。
 
 ソース コードでブレークポイントを設定するには、コード行の左端の余白をクリックします。 行を選択して、**F9** キーを押すか、 **[デバッグ]**  >  **[ブレークポイントの設定/解除]** を選択するか、右クリックして **[ブレークポイント]**  >  **[ブレークポイントの挿入]** を選択することもできます。 左側の余白にブレークポイントが赤い点で表示されます。
 
