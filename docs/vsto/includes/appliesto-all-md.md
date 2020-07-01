@@ -6,4 +6,4 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68144244"
 ---
-  **適用対象:** このトピックの情報は、ドキュメントに適用されます\-レベルのプロジェクトおよび VSTO 追加\-プロジェクト。 参照してください[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)します。
+  **適用対象:** このトピックの情報は、ドキュメント \- レベルのプロジェクトおよび VSTO アドイン \- のプロジェクトに適用されます。 「 [Office アプリケーションおよびプロジェクトの種類別の使用可能な機能」を](../../vsto/features-available-by-office-application-and-project-type.md)参照してください。
