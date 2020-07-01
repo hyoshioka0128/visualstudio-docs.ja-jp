@@ -1,7 +1,7 @@
 ---
 title: 並列スレッドの変数のウォッチを設定する | Microsoft Docs
 ms.date: 04/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732013"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348627"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Visual Studio で並列スレッドの変数のウォッチを設定する (C#、Visual Basic、C++)
 [並列ウォッチ] ウィンドウには、複数のスレッドで 1 つの式が保持している値を同時に表示できます。 各行は、1 つのアプリケーションで実行中のスレッドを表しますが、スレッドは複数の行に表示される場合があります。 具体的には、各行は関数シグネチャが現在のスタック フレーム上の関数に一致する関数呼び出しを表します。 列内の項目の並べ替え、順序変更、削除、およびグループ化を行うことができます。 スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 **[並列ウォッチ]** ウィンドウには次の列が表示されます。

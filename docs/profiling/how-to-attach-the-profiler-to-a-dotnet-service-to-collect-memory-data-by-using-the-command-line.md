@@ -2,7 +2,7 @@
 title: プロファイラーを .NET サービスにアタッチし、メモリ データを収集する
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94ea4f38ccebc1015419e2254b06033fa17a09a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6552ca62be6de2e99b4e650daaa117e4025746cf
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777019"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328687"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを .NET サービスにアタッチし、メモリ データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用してプロファイラーを .NET Framework サービスにアタッチし、メモリ データを収集する方法について説明します。 メモリ割り当ての数およびサイズに関するデータだけでなく、メモリ オブジェクトの有効期間に関するデータも収集できます。
