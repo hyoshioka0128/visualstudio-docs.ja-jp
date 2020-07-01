@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548396"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>方法: パフォーマンス データ ファイル名のオプションを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,24 +27,24 @@ ms.locfileid: "68205787"
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-|||  
+|構文要素|説明|  
 |-|-|  
-|*Path*|レポートを格納するディレクトリ。 既定の場所は、ソリューション フォルダーか、ユーザーのプロジェクトおよびソリューションの既定の場所です。|  
-|*VSP-File*|プロファイル データ ファイルの名前。 既定の名前は、プロファイルされるソリューションまたは実行可能ファイルの名前です。|  
+|*パス*|レポートを格納するディレクトリ。 既定の場所は、ソリューション フォルダーか、ユーザーのプロジェクトおよびソリューションの既定の場所です。|  
+|*VSP-ファイル*|プロファイル データ ファイルの名前。 既定の名前は、プロファイルされるソリューションまたは実行可能ファイルの名前です。|  
 |*YYMMDD*|プロファイル データが収集された年月日を示す日付スタンプ。|  
-|*(N)*|複数のプロファイル データ ファイルが存在する場合、かっこで囲まれたインクリメント数がファイル名に追加されます。|  
+|*非該当*|複数のプロファイル データ ファイルが存在する場合、かっこで囲まれたインクリメント数がファイル名に追加されます。|  
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>パフォーマンス セッションのプロファイル データ ファイルの名前付け構文を変更するには  
   
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションの名前を右クリックして、 **[プロパティ]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションの名前を右クリックして、**[プロパティ]** をクリックします。  
   
-2. **[全般]** をクリックします。  
+2. [**一般**] をクリックします。  
   
 3. **[レポート]** で、以下のいずれかの設定を変更します。  
   
-    |||  
+    |名前|説明|  
     |-|-|  
     |**レポートの場所**|プロファイル データ ファイルを格納するディレクトリを指定します。|  
     |**レポート名**|ファイルの基本名を指定します。|  
