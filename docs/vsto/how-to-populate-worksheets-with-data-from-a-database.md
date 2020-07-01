@@ -1,7 +1,7 @@
 ---
 title: '方法: データベースのデータをワークシートに読み込む'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985863"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520121"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>方法: データベースのデータをワークシートに読み込む
 
@@ -37,15 +37,15 @@ ms.locfileid: "72985863"
 
 2. **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
-3. 目的のフィールドまたはテーブルを **[データソース]** ウィンドウからワークシートにドラッグします。
+3. 目的のフィールドまたはテーブルを [**データソース**] ウィンドウからワークシートにドラッグします。
 
 次のいずれかのコントロールがワークシートに作成されます。
 
-- フィールドをドラッグすると、<xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールがワークシートに作成されます。 詳細については、「 [NamedRange control](../vsto/namedrange-control.md)」を参照してください。
+- フィールドをドラッグすると、 <xref:Microsoft.Office.Tools.Excel.NamedRange> ワークシートにコントロールが作成されます。 詳細については、「 [NamedRange control](../vsto/namedrange-control.md)」を参照してください。
 
-- テーブルをドラッグすると、<xref:Microsoft.Office.Tools.Excel.ListObject> コントロールがワークシートに作成されます。 詳細については、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
+- テーブルをドラッグすると、 <xref:Microsoft.Office.Tools.Excel.ListObject> ワークシートにコントロールが作成されます。 詳細については、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
 
-別のコントロールを追加するには、 **[データソース]** ウィンドウでテーブルまたはフィールドを選択し、ドロップダウンリストから別のコントロールを選択します。
+別のコントロールを追加するには、[**データソース**] ウィンドウでテーブルまたはフィールドを選択し、ドロップダウンリストから別のコントロールを選択します。
 
 ## <a name="objects-in-the-project"></a>プロジェクト内のオブジェクト
 

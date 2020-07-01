@@ -34,7 +34,7 @@ ms.locfileid: "85520268"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- 省略可能。 `description` 要素は `vstov4` 名前空間に属します。 この要素は、Microsoft Office アプリケーションの [COM アドイン] ダイアログ ボックスに表示されるアドインの説明を格納します。
+ 任意。 `description` 要素は `vstov4` 名前空間に属します。 この要素は、Microsoft Office アプリケーションの [COM アドイン] ダイアログ ボックスに表示されるアドインの説明を格納します。
 
  `description` 要素には、属性も要素もありません。
 

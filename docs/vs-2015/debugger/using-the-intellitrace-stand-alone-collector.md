@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace スタンドアロンコレクターの使用 |Microsoft Docs
+title: IntelliTrace スタンドアロン コレクターの使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,24 +13,24 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520550"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace スタンドアロン コレクターを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **IntelliTrace スタンドアロン コレクター** を使用すると、対象コンピューターに Visual Studio をインストールしたり、対象システムの環境を変更したりすることなく、運用サーバーまたは他の環境でアプリの IntelliTrace 診断データを収集できます。 IntelliTrace スタンドアロン コレクターは、Web、SharePoint、WPF、および Windows フォーム アプリで動作します。 データを収集したら、コレクターを削除して、アンインストールします。
 
- 「 [デバッグ用に稼働中のデータを収集して分析する (Channel 9 ビデオ)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)」で IntelliTrace の機能をご覧ください。
+ IntelliTrace の機能を紹介するビデオ:[デバッグのために運用環境で IntelliTrace データを収集および分析する (Channel 9 ビデオ)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > **Microsoft Monitoring Agent** を **トレース** モードで使用して、リモート マシン上で実行されている Web および SharePoint アプリの同じ IntelliTrace データを収集することもできます。
 >
-> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 「 [Microsoft Monitoring Agent の使用」を](../debugger/using-the-microsoft-monitoring-agent.md)参照してください。
+> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 「[Microsoft Monitoring Agent の使用](../debugger/using-the-microsoft-monitoring-agent.md)」を参照してください。
 
  **必要条件**
 
@@ -39,19 +39,19 @@ ms.locfileid: "82586787"
 - .iTrace ファイルを開くための、開発用コンピューターまたは別のコンピューター上の Visual Studio Enterprise (Professional Edition でも Community Edition でもなく)
 
   > [!NOTE]
-  > 必ずシンボル (.pdb) ファイルを保存してください。 IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 「[デプロイ後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
+  > 必ずシンボル (.pdb) ファイルを保存してください。 IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 「[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
 
   **FAQ**
 
 - [コレクターで使用できるアプリ](#WhatApps)
 
-- [開始するには?](#GetStarted)
+- [開始方法](#GetStarted)
 
 - [アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing)
 
 - [IntelliTrace データを取得できるその他の場所](#WhereElse)
 
-## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a>コレクタで動作するアプリ
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a> コレクターで使用できるアプリ
 
 - インターネット インフォメーション サービス (IIS) Version 7.0、7.5、および 8.0 によってホストされる ASP.NET アプリ
 
@@ -59,7 +59,7 @@ ms.locfileid: "82586787"
 
 - Windows Presentation Foundation (WPF) および Windows フォーム アプリ。
 
-## <a name="how-do-i-get-started"></a><a name="GetStarted"></a>操作方法開始しますか?
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a> 開始方法
 
 1. [コレクターのインストール](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -71,13 +71,13 @@ ms.locfileid: "82586787"
 
 5. [Web アプリまたは SharePoint アプリケーションからデータを収集する](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     または
+     \- または -
 
      [マネージド アプリからのデータの収集](#BKMK_Collect_Data_from_Executables)
 
 6. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a>コレクターをインストールする
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> コレクターのインストール
 
 1. アプリのサーバーで、コレクターディレクトリを作成します (例: **C:\IntelliTraceCollector** )。
 
@@ -87,7 +87,7 @@ ms.locfileid: "82586787"
 
      1. **IntelliTraceCollector.exe**の横の **[ダウンロード]** を選択します。
 
-     2. IntelliTraceCollector.exe をコレクター ディレクトリ (たとえば、 **C:\IntelliTraceCollector**) に保存します。
+     2. IntelliTraceCollector.exe をコレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) に保存します。
 
      3. IntelliTraceCollector.exe を実行します。 IntelliTraceCollection.cab ファイルが抽出されます。
 
@@ -99,22 +99,22 @@ ms.locfileid: "82586787"
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2. IntelliTraceCollection.cab をコレクター ディレクトリ (たとえば、 **C:\IntelliTraceCollector**) に保存します。
+     2. IntelliTraceCollection.cab をコレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) にプットします。
 
 3. IntelliTraceCollection.cab を展開します。
 
    1. アプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
 
-   2. コレクター ディレクトリ (たとえば、 **C:\IntelliTraceCollector**) を参照します。
+   2. コレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) を参照します。
 
    3. 末尾のピリオド ( **.** ) も含めて**expand**コマンドを使用して、IntelliTraceCollection.cab を展開します。
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > ピリオド (**.**) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
+       > ピリオド ( **.** ) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
 
-## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a>コレクターディレクトリのアクセス許可を設定する
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a> コレクター ディレクトリのアクセス許可を設定する
 
 1. アプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
 
@@ -142,7 +142,7 @@ ms.locfileid: "82586787"
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>Web アプリまたは SharePoint アプリケーションのデータを収集するための IntelliTrace PowerShell コマンドレットのインストール
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Web アプリまたは SharePoint アプリケーションのデータを収集するための IntelliTrace PowerShell コマンドレットをインストールする
 
 1. アプリのサーバーで、PowerShell が有効になっていることを確認します。 Windows Server のほとんどのバージョンでは、 **サーバー マネージャー** 管理ツールを使用してこの機能を追加できます。
 
@@ -152,7 +152,7 @@ ms.locfileid: "82586787"
 
     1. 管理者として PowerShell コマンド ウィンドウを開きます。
 
-        1. **[スタート]**、 **[すべてのプログラム]**、 **[アクセサリ]**、 **[Windows PowerShell]** の順に選択します。
+        1. **[スタート]** 、 **[すべてのプログラム]** 、 **[アクセサリ]** 、 **[Windows PowerShell]** の順に選択します。
 
         2. 次のいずれかの操作を実行します。
 
@@ -166,7 +166,7 @@ ms.locfileid: "82586787"
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a>ITrace ファイルディレクトリのアクセス許可を設定する
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .iTrace ファイル ディレクトリのアクセス許可を設定する
 
 1. アプリのサーバーで、次のように iTrace ファイルディレクトリを作成します (例: **C:\IntelliTraceLogFiles** )。
 
@@ -192,13 +192,13 @@ ms.locfileid: "82586787"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       または
+       \- または -
 
    - エクスプローラー (またはファイル エクスプローラー) を使用してアクセス許可を設定するには:
 
      1. .iTrace ファイル ディレクトリの **[プロパティ]** を開きます。
 
-     2. **[セキュリティ]** タブで、 **[編集]**、 **[追加]** を順に選択します。
+     2. **[セキュリティ]** タブで、 **[編集]** 、 **[追加]** を順に選択します。
 
      3. **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 存在しない場合は、**オブジェクトの種類**を選択して追加します。
 
@@ -206,11 +206,11 @@ ms.locfileid: "82586787"
 
      5. **[選択するオブジェクト名を入力してください]** ボックスに、Web アプリまたは SharePoint アプリケーションのアプリケーション プールを追加します。
 
-     6. **[名前の確認]** を選択して名前を解決します。 **[OK]** を選びます。
+     6. **[名前の確認]** を選択して名前を解決します。 **[OK]** をクリックします。
 
      7. アプリケーション プールに対して **フル コントロール**のアクセス許可が設定されていることを確認します。
 
-## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a>Web アプリまたは SharePoint アプリケーションからデータを収集する
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Web アプリまたは SharePoint アプリケーションからデータを収集する
 
 1. データの収集を開始するには、PowerShell のコマンド ウィンドウを管理者として開き、次のコマンドを実行します。
 
@@ -223,11 +223,11 @@ ms.locfileid: "82586787"
 
      `Start-IntelliTraceCollection "SharePoint - 80" "C:\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogFiles"`
 
-    |||
+    |項目|説明|
     |-|-|
     |*ApplicationPool*|アプリケーションが実行されるアプリケーション プールの名前|
-    |*PathToCollectionPlan*|収集計画 (コレクターの設定を構成する .xml ファイル) へのパス。<br /><br /> コレクターに付属する計画を指定できます。 次の計画は、Web アプリと SharePoint アプリケーションに対して動作します。<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     例外、データベース呼び出し、および Web サーバー要求を含む IntelliTrace イベントと SharePoint イベントのみを収集します。<br />-   collection_plan.ASP.NET.trace.xml<br />     関数呼び出しと、collection_plan.ASP.NET.default.xml のすべてのデータを収集します。 この計画は詳細な分析に適していますが、collection_plan.ASP.NET.default.xml よりもアプリの速度が低下する場合があります。<br /><br /> アプリの速度が低下するのを回避するには、これらの計画をカスタマイズするか、独自に計画を作成します。 セキュリティのために、コレクター ファイルと同じ安全な場所にカスタム計画を配置します。 「 [IntelliTrace 収集計画の作成およびカスタマイズ](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) および「 [アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing) **注:** 既定では、iTrace ファイルの最大サイズは 100 MB です。 .iTrace ファイルがこの制限に達すると、ファイル中の最も古いエントリが削除され、新しいエントリを記録する場所が確保されます。 この制限を変更するには、収集計画の `MaximumLogFileSize` 属性を編集します。 <br /><br /> *これらの収集計画のローカライズ バージョンはどこで見つけられますか。*<br /><br /> ローカライズされた計画は、コレクターのサブフォルダーに格納されています。|
-    |*FullPathToITraceFileDirectory*|.iTrace ファイル ディレクトリへの完全パス。 **セキュリティに関する注意:** 相対パスではなく、完全なパスを指定します。|
+    |*PathToCollectionPlan*|収集計画 (コレクターの設定を構成する .xml ファイル) へのパス。<br /><br /> コレクターに付属する計画を指定できます。 次の計画は、Web アプリと SharePoint アプリケーションに対して動作します。<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     例外、データベース呼び出し、および Web サーバー要求を含む IntelliTrace イベントと SharePoint イベントのみを収集します。<br />-   collection_plan.ASP.NET.trace.xml<br />     関数呼び出しと、collection_plan.ASP.NET.default.xml のすべてのデータを収集します。 この計画は詳細な分析に適していますが、collection_plan.ASP.NET.default.xml よりもアプリの速度が低下する場合があります。<br /><br /> アプリの速度が低下するのを回避するには、これらの計画をカスタマイズするか、独自に計画を作成します。 セキュリティのために、コレクター ファイルと同じ安全な場所にカスタム計画を配置します。 「 [IntelliTrace 収集計画の作成およびカスタマイズ](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) および「 [アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing) **注:** 既定では、.iTrace ファイルの最大サイズは 100 MB です。 .iTrace ファイルがこの制限に達すると、ファイル中の最も古いエントリが削除され、新しいエントリを記録する場所が確保されます。 この制限を変更するには、収集計画の `MaximumLogFileSize` 属性を編集します。 <br /><br /> *これらの収集計画のローカライズ バージョンはどこで見つけられますか。*<br /><br /> ローカライズされた計画は、コレクターのサブフォルダーに格納されています。|
+    |*FullPathToITraceFileDirectory*|.iTrace ファイル ディレクトリへの完全パス。 **セキュリティに関するメモ:** 相対パスではなく完全パスを指定します。|
 
      コレクターがアプリケーション プールにアタッチされ、データ収集が開始されます。
 
@@ -252,42 +252,42 @@ ms.locfileid: "82586787"
 
 6. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a>管理対象アプリからデータを収集する
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a> マネージド アプリからのデータの収集
 
 1. アプリを起動すると同時にデータの収集を開始するには、次の構文を使用します。
 
-     `\IntelliTraceSC.exe launch /cp:` `/f:` *FullPathToIntelliTraceCollectorExecutable>\<PathToCollectionPlan>* *FullPathToITraceFileDirectoryAndFileName \<>* *PathToAppExecutableFileAndFileName \<>* * \<*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      たとえば、 **MyApp**という名前のアプリからデータを収集するには、次のように入力します。
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 
-    |||
+    |項目|説明|
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|コレクターの実行可能ファイルである IntelliTraceSC.exe への完全パス。|
-    |*PathToCollectionPlan*|収集計画 (コレクターの設定を構成する .xml ファイル) へのパス。<br /><br /> コレクターに付属する計画を指定できます。 次の計画は、マネージド アプリに対して動作します。<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     例外、データベース呼び出し、および Web サーバー要求を含む IntelliTrace イベントのみを収集します。<br />-   collection_plan.ASP.NET.trace.xml<br />     関数呼び出しと、collection_plan.ASP.NET.default.xml のすべてのデータを収集します。 この計画は詳細な分析に適していますが、collection_plan.ASP.NET.default.xml よりもアプリの速度が低下する場合があります。<br /><br /> アプリの速度が低下するのを回避するには、これらの計画をカスタマイズするか、独自に計画を作成します。 セキュリティのために、コレクター ファイルと同じ安全な場所にカスタム計画を配置します。 「 [IntelliTrace 収集計画の作成およびカスタマイズ](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) および「 [アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing) **注:** 既定では、iTrace ファイルの最大サイズは 100 MB です。 .iTrace ファイルがこの制限に達すると、ファイル中の最も古いエントリが削除され、新しいエントリを記録する場所が確保されます。 この制限を変更するには、収集計画の `MaximumLogFileSize` 属性を編集します。 <br /><br /> *これらの収集計画のローカライズ バージョンはどこで見つけられますか。*<br /><br /> ローカライズされた計画は、コレクターのサブフォルダーに格納されています。|
-    |*FullPathToITraceFileDirectoryAndFileName*|.iTrace ファイル ディレクトリへの完全パスと、拡張子 **.itrace** を含む .iTrace ファイル名。 **セキュリティに関する注意:** 相対パスではなく、完全なパスを指定します。|
+    |*PathToCollectionPlan*|収集計画 (コレクターの設定を構成する .xml ファイル) へのパス。<br /><br /> コレクターに付属する計画を指定できます。 次の計画は、マネージド アプリに対して動作します。<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     例外、データベース呼び出し、および Web サーバー要求を含む IntelliTrace イベントのみを収集します。<br />-   collection_plan.ASP.NET.trace.xml<br />     関数呼び出しと、collection_plan.ASP.NET.default.xml のすべてのデータを収集します。 この計画は詳細な分析に適していますが、collection_plan.ASP.NET.default.xml よりもアプリの速度が低下する場合があります。<br /><br /> アプリの速度が低下するのを回避するには、これらの計画をカスタマイズするか、独自に計画を作成します。 セキュリティのために、コレクター ファイルと同じ安全な場所にカスタム計画を配置します。 「 [IntelliTrace 収集計画の作成およびカスタマイズ](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) および「 [アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing) **注:** 既定では、.iTrace ファイルの最大サイズは 100 MB です。 .iTrace ファイルがこの制限に達すると、ファイル中の最も古いエントリが削除され、新しいエントリを記録する場所が確保されます。 この制限を変更するには、収集計画の `MaximumLogFileSize` 属性を編集します。 <br /><br /> *これらの収集計画のローカライズ バージョンはどこで見つけられますか。*<br /><br /> ローカライズされた計画は、コレクターのサブフォルダーに格納されています。|
+    |*FullPathToITraceFileDirectoryAndFileName*|.iTrace ファイル ディレクトリへの完全パスと、拡張子 **.itrace** を含む .iTrace ファイル名。 **セキュリティに関するメモ:** 相対パスではなく完全パスを指定します。|
     |*PathToAppExecutableFileAndFileName*|マネージド アプリのパスとファイル名。|
 
 2. アプリを終了し、データ収集を停止します。
 
 3. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a>Visual Studio Enterprise で、iTrace ファイルを開きます。
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise で .iTrace ファイルを開く
 
 > [!NOTE]
-> IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 「[デプロイ後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
+> IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 「[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
 
 1. Visual Studio Enterprise (Professional Edition でも Community Edition でもなく) がインストールされたコンピューターに、.iTrace ファイルを移動またはコピーします。
 
 2. Visual Studio の外部で .iTrace ファイルをダブルクリックするか、Visual Studio 内からファイルを開きます。
 
-     Visual Studio に **[IntelliTrace の概要]** ページが表示されます。 ほとんどのセクションにおいて、イベントまたは他の項目を確認したうえで項目を選択し、イベントが発生したポイントで IntelliTrace を使用してデバッグを開始できます。 「[保存された IntelliTrace データの使用」を](../debugger/using-saved-intellitrace-data.md)参照してください。
+     Visual Studio に **[IntelliTrace の概要]** ページが表示されます。 ほとんどのセクションにおいて、イベントまたは他の項目を確認したうえで項目を選択し、イベントが発生したポイントで IntelliTrace を使用してデバッグを開始できます。 「[保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)」を参照してください。
 
     > [!NOTE]
-    > IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 「[デプロイ後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
+    > IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 「[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
 
-## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>アプリのパフォーマンスを低下させずにほとんどのデータを取得操作方法には
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法
  IntelliTrace では大量のデータを収集できます。そのため、アプリのパフォーマンスへの影響は、IntelliTrace で収集するデータの種類、および分析するコードの種類によって決まります。 「 [運用サーバーでの IntelliTrace 収集の最適化](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)」を参照してください。
 
  アプリのパフォーマンスが低下することなく、ほとんどのデータを取得する方法を次に示します。
@@ -316,7 +316,7 @@ ms.locfileid: "82586787"
 
 - IntelliTrace がデータを収集する収集計画のモジュールを確認します。 目的のモジュールのみ含めるように収集計画を編集します。
 
-  1. 収集計画を開きます。 `<ModuleList>` 要素を見つけます。
+  1. 収集計画を開きます。 `<ModuleList>` 要素を検索します。
 
   2. `<ModuleList>`で、 `isExclusionList` 属性を `false`に設定します。
 
@@ -369,23 +369,23 @@ ms.locfileid: "82586787"
 
    はい。パフォーマンスへの影響を抑えるために、IntelliTrace は、データ収集を、メソッドと受け渡しをするプリミティブ データ型の値、およびメソッドと受け渡しをする最上位レベルのオブジェクトのフィールドのプリミティブ データ型の値に制限しています。
 
-   たとえば、整数 `AlterEmployee` と `id` オブジェクト `Employee` を受け取る `oldemployee`メソッド シグネチャがあるとします。
+   たとえば、次のように整数の `AlterEmployee` と `id` オブジェクトの `Employee` を受け取る `oldemployee`メソッド シグネチャがあるとします。
 
    `public Employee AlterEmployee(int id, Employee oldemployee)`
 
    `Employee` の型には、 `Id`、 `Name`、および `HomeAddress`の各属性が含まれます。 `Employee` の型と `Address` の型との間に、アソシエーション リレーションシップの関係が存在します。
 
-   ![Employee と Address の間の関係](../debugger/media/employeeaddressrelationship.png "従業員 Addressrelationship")
+   ![Employee と Address の間の関係](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    コレクターは、 `id`メソッドから返された、 `Employee.Id`、 `Employee.Name` 、 `Employee` 、および `AlterEmployee` の各オブジェクトの値を記録します。 ただし、null であるかどうかの情報を除き、 `Address` オブジェクトについての情報は記録しません。 コレクターは、メソッド パラメーターとして記録される時点のパラメーターとしてそれらのローカル変数を他のメソッドが使用する場合を除き、 `AlterEmployee` メソッドのローカル変数に関するデータは記録しません。
 
-## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>他の方法で IntelliTrace データを取得できますか。
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a> IntelliTrace データを取得できるその他の場所
 
 - Visual Studio Enterprise の IntelliTrace デバッグセッションから、「 [intellitrace の機能](../debugger/intellitrace-features.md)」を参照してください。
 
 - Microsoft Test Manager のテスト セッションからの場合は、「 [方法: 困難な問題をデバッグするのに役立つ IntelliTrace データを収集する](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)」を参照します。
 
-## <a name="where-can-i-get-more-information"></a>詳細な情報はどこで入手できますか。
+## <a name="where-can-i-get-more-information"></a>情報の入手方法
  [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)
 
  [IntelliTrace](../debugger/intellitrace.md)
@@ -403,4 +403,4 @@ ms.locfileid: "82586787"
  [Visual Studio デバッガー](https://social.msdn.microsoft.com/Forums/vsdebug)
 
 ### <a name="videos"></a>ビデオ
- [Channel 9 ビデオ: IntelliTrace データを収集して分析する](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
+ [Channel 9 ビデオ: IntelliTrace データの収集と分析](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

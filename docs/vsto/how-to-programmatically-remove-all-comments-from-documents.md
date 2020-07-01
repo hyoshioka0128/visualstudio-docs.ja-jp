@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって文書からすべてのコメントを削除します。'
+title: '方法: プログラムによって文書からすべてのコメントを削除する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955833"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519887"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>方法: プログラムによって文書からすべてのコメントを削除します。
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>方法: プログラムによって文書からすべてのコメントを削除する
   `DeleteAllComments` メソッドを使用して、Microsoft Office Word 文書からすべてのコメントを削除します。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "62955833"
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]
 
-## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>VSTO アドインを使用して、ドキュメントからすべてのコメントを削除するには
+## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>VSTO アドインを使用してドキュメントからすべてのコメントを削除するには
 
 1. コメントを削除する <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> から <xref:Microsoft.Office.Interop.Word.Document> メソッドを呼び出します。
 
@@ -42,5 +42,5 @@ ms.locfileid: "62955833"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって文書内のテキストにコメントを追加します。](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
-- [Document ホスト項目](../vsto/document-host-item.md)
+- [方法: プログラムによって文書内のテキストにコメントを追加する](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
+- [ドキュメントホスト項目](../vsto/document-host-item.md)
