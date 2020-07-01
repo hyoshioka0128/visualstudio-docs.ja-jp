@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: db2c667d0a3823460a084dc1e4806501d9b26693
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa67c33eac5d618c0a080323720775beea7b68c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548214"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: 非定数フィールドは表示されません
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211:非定数フィールドは表示されません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|値|
 |-|-|
 |TypeName|NonConstantFieldsShouldNotBeVisible|
 |CheckId|CA2211|
@@ -35,7 +35,7 @@ ms.locfileid: "72662959"
 ## <a name="cause"></a>原因
  パブリックまたはプロテクト静的フィールドは定数ではなく、読み取り専用です。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  定数でも読み取り専用でもない静的フィールドは、スレッド セーフではありません。 このようなフィールドへのアクセスは慎重に制御する必要があり、クラスオブジェクトへのアクセスを同期するための高度なプログラミング手法が必要です。 これらは習得して習得するのが困難であるため、このようなオブジェクトをテストすることで独自の課題が生じます。静的フィールドは、変更されないデータを格納するために最適に使用されます。 このルールは、ライブラリに適用されます。アプリケーションでは、フィールドを公開しないでください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

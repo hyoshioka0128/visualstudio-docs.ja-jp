@@ -1,4 +1,4 @@
-﻿---
+---
 title: NameProfile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441909"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548439"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   パフォーマンス データ収集を適用できるプロファイル レベルを示します。 次の **PROFILE_CONTROL_LEVEL** 値を使用して、パフォーマンス データ収集を適用できる 3 つのレベルのいずれかを指定できます。  
   
-|列挙子|説明|  
+|列挙子|[説明]|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|グローバル レベル設定は、プロファイル実行のすべてのプロセスとスレッドに影響します。|  
 |PROFILE_PROCESSLEVEL|プロセス レベル設定は、指定されたプロセスの一部であるスレッドすべてに影響します。|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値  
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。  
   
-|列挙子|説明|  
+|列挙子|[説明]|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|指定されたプロファイル要素が存在しません。|  
 |NAME_ERROR_INVALID_NAME|名前が無効です。|  
@@ -91,10 +91,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 ## <a name="function-information"></a>関数の情報  
   
-|||  
+|項目|説明|  
 |-|-|  
-|**Header**|VSPerf.h をインクルードします。|  
-|**Library**|VSPerf.lib を使用します。|  
+|**ヘッダー**|VSPerf.h をインクルードします。|  
+|**ライブラリ**|VSPerf.lib を使用します。|  
 |**Unicode**|`NameProfileW` (Unicode) および `NameProfileA` (ANSI) として実装します。|  
   
 ## <a name="example"></a>例  
@@ -136,4 +136,4 @@ void ExerciseNameProfile()
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio Profiler API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

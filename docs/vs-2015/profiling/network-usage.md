@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850747"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548422"
 ---
-# <a name="network-usage"></a>ネットワーク使用率
+# <a name="network-usage"></a>ネットワーク使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。  
@@ -31,7 +31,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
   
 1. Visual Studio でプロジェクトを開きます。  
   
-2. メニューで、デバッグ、**パフォーマンスプロファイラー...** の順にクリックします。**ネットワーク** を選択し、**開始** を選択します。  
+2. メニューで、[デバッグ]、[**パフォーマンスプロファイラー...**] の順にクリックします。[**ネットワーク**] を選択し、[**開始**] を選択します。  
   
 3. ネットワーク ツールは、アプリの HTTP トラフィックの収集を開始します。  
   
@@ -43,7 +43,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
   
    ![[ネットワーク] ウィンドウ](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>データを分析する  
+## <a name="analyzing-data"></a>データの分析  
  アプリの実行中、またはアプリが閉じられた後でも、[概要] ビューに表示されたいずれかのネットワーク操作を選択すると、キャプチャされた HTTP トラフィックを分析できます。  
   
  **[ネットワーク]** 概要ビューに、アプリの実行中の各ネットワーク操作のデータが表示されます。 列ヘッダーを選択して一覧を並べ替えるか、コンテンツの種類を選択して **[コンテンツの種類]** フィルター ビューで表示します。  
@@ -54,26 +54,26 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
   
  ![ネットワーク ツールの詳細ウィンドウ](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|||  
+|名前|説明|  
 |-|-|  
 |**ヘッダー**|イベントの要求ヘッダーに関する情報。|  
 |**本文**|要求と応答のペイロード データ。|  
 |**パラメーター**|クエリ文字列パラメーター名と値。|  
-|**クッキー**|応答と要求の cookie データ。|  
-|**タイミング**|選択したリソースの取得中のステージのグラフ。|  
+|**Cookie**|応答と要求の cookie データ。|  
+|**時間**|選択したリソースの取得中のステージのグラフ。|  
   
  ネットワークの **[概要]** バーは、ある特定の時点で表示されているネットワーク操作の数、転送されたデータの量、データのダウンロードに要した時間、および表示可能なエラー (4xx 応答または 5xx 応答が返された要求) の数を示しています。  
   
 ### <a name="analysis-tips"></a>分析のヒント  
  このツールは、次のネットワーク関連の分析を実行する際に役立つ特定の領域を強調表示します。  
   
-1. キャッシュから完全に処理される要求は、 **[受信元]** 列の **[(キャッシュから)]** に表示されます。 これにより、キャッシュを使用して効果的にユーザーの帯域幅を節約しているかどうか、または誤って応答をキャッシュして、アプリケーションのエンド ユーザーに古いデータを提供しているかどうかを判断できます。  
+1. キャッシュから完全に処理される要求は、**[受信元]** 列の **[(キャッシュから)]** に表示されます。 これにより、キャッシュを使用して効果的にユーザーの帯域幅を節約しているかどうか、または誤って応答をキャッシュして、アプリケーションのエンド ユーザーに古いデータを提供しているかどうかを判断できます。  
   
-2. エラー応答 (4xx または 5xx) は、 **[結果]** 列で状態コードが赤い状態で、[概要] バーで強調表示された状態で表示されます。 これにより、アプリケーションの多くの潜在的な要求の間でエラーを見つけやすくなります。  
+2. エラー応答 (4xx または 5xx) は、**[結果]** 列で状態コードが赤い状態で、[概要] バーで強調表示された状態で表示されます。 これにより、アプリケーションの多くの潜在的な要求の間でエラーを見つけやすくなります。  
   
 3. ([本文] タブ内の) [応答の整形出力] ボタンは、コンテンツをさらに読みやすくして、JSON、XML、HTML、CSS、JavaScript、および TypeScript の応答のペイロードを解析できるようにします。  
   
-## <a name="see-also"></a>参照  
- [デバッグなしでプロファイリングツールを実行](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio ブログ: Visual Studio のネットワーク インスペクターの紹介](https://blogs.msdn.com/b/visualstudio/)   
+## <a name="see-also"></a>関連項目  
+ [デバッグなしでプロファイリングツールを実行する](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Visual Studio ブログ: Visual Studio のネットワーク検査の概要](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 ビデオ: Visual Studio 診断ツール - 新しいネットワーク プロファイラー](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
