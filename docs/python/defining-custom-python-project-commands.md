@@ -2,7 +2,7 @@
 title: Python プロジェクトのカスタム メニュー コマンドを定義する
 description: プロジェクトやターゲット ファイルを編集することで、Visual Studio で Python プロジェクト コンテキスト メニューにカスタム コマンドを追加し、実行可能プログラム、スクリプト、モジュール、インライン コード スニペット、pip を呼び出すことができます。
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee42648eb4a2de3611d20fc0ca83ff898ad1fa9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183081"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540869"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python プロジェクトのカスタム コマンドを定義する
 

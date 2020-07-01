@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Visual Studio をインストールする方法について、ステップ バイ ステップで説明します。
 ms.date: 12/13/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 132aaa8da49814c10afe3089e21d391aa2964673
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307227"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419160"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 

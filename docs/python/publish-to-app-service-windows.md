@@ -2,7 +2,7 @@
 title: Windows 上の Azure App Service への Python アプリの発行
 description: web.config ファイルに必要な内容など、Visual Studio から Windows 上の Azure App Service に直接 Python Web アプリケーションを発行する方法を説明します。
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531847"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 

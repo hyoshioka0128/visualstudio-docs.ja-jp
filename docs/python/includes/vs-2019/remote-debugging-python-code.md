@@ -2,7 +2,7 @@
 title: リモート Linux コンピューターでの Python コードのデバッグ
 description: 必要な構成手順、セキュリティ、トラブルシューティングなど、Visual Studio を使ってリモート Linux コンピューターで動作する Python コードをデバッグします。
 ms.date: 05/12/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ccc0f23663eb4f892c4eb5e4ab66d7cb526f100f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285683"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541078"
 ---
 Visual Studio は、Windows コンピューター上でローカルまたはリモートで Python アプリケーションを起動およびデバッグすることができます (「[Remote Debugging](../../../debugger/remote-debugging.md)」 (リモート デバッグ) をご覧ください)。 また、別のオペレーティング システム、デバイス、または CPython 以外の Python 実装を [debugpy ライブラリ](https://pypi.org/project/debugpy/)を使用してリモートでデバッグすることもできます。
 

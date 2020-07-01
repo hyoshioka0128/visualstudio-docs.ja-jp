@@ -2,7 +2,7 @@
 title: Python コードのリファクタリング
 description: Visual Studio では、識別子の名前を変更し、メソッドを抽出し、インポートを追加し、使われていないインポートを削除することによって、Python コードを簡単にリファクタリングできます。
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62429899"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520563"
 ---
 # <a name="refactor-python-code"></a>Python コードのリファクタリング
 

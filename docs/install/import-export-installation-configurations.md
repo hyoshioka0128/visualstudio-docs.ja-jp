@@ -3,7 +3,7 @@ title: インストール構成をインポートまたはエクスポートす�
 titleSuffix: ''
 description: インストール構成を .vsconfig ファイルにエクスポートし、他のユーザーと共有する方法とそれをインポートして複製する方法について説明します。
 ms.date: 05/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114844"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418822"
 ---
 # <a name="import-or-export-installation-configurations"></a>インストール構成をインポートまたはエクスポートする
 

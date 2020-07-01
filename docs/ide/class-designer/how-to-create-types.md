@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590177"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533693"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>方法: クラス デザイナーを使用して型を作成する
 
@@ -56,9 +56,8 @@ C# および Visual Basic プロジェクトの新しい型を設計するには
 
 4. 次に、型を定義するために他の項目を追加します。
 
-    |||
-    |-|-|
     |**対象**|**[追加]**|
+    |-|-|
     |クラス、抽象クラス、構造体|型を定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、デストラクター (メソッド)、および定数|
     |列挙型|列挙型を構成するフィールド値|
     |インターフェイス|インターフェイスを構成するメソッド、プロパティ、イベント|

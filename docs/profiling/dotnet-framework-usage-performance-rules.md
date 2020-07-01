@@ -9,19 +9,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a740885d8876398bf86e279aa259e9169fcf7c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779288"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532003"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework の使用に関するパフォーマンス規則
 .NET Framework の使用カテゴリのパフォーマンス規則では、最適化できる具体的なメソッド、およびパフォーマンスに問題があるときに調査できる一般的な使用パターン (ガベージ コレクションやロックの競合など) が示されています。
 
-|||
+|ルール|説明|
 |-|-|
-|[DA0001: StringBuilder を使用して連結してください](../profiling/da0001-use-stringbuilder-for-concatenations.md)|<xref:System.String.Concat(System.String,System.String)?displayProperty=fullName> の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。|
+|[DA0001: 連結には StringBuilder を使用してください](../profiling/da0001-use-stringbuilder-for-concatenations.md)|<xref:System.String.Concat(System.String,System.String)?displayProperty=fullName> の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。|
 |[DA0005: 頻繁な GC2 のコレクションです](../profiling/da0005-frequent-gc2-collections.md)|比較的多数の .NET メモリ オブジェクトが、ジェネレーション 2 のガベージ コレクションで回収されています。 ジェネレーション 1 のコレクションで回収されない有効期間の短いオブジェクトが多すぎる場合、メモリ管理コストが簡単に過剰になる可能性があります。|
 |[DA0006: 値の型で Equals() をオーバーライドしてください](../profiling/da0006-override-equals-parens-for-value-types.md)|パブリック値型の `Equals` メソッドまたは等値演算子の呼び出しが、プロファイリング データの大きな割合を占めています。 さらに効率的な方法を実装することを検討してください。|
 |[DA0007: 制御フローでの例外の使用を避けてください](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|.NET Framework 例外ハンドラーの多くの部分が、プロファイリング データで呼び出されました。 他の制御フロー ロジックを使用して、スローされる例外の数を減らすことを検討してください。|

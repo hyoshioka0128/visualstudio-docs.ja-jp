@@ -1,7 +1,7 @@
 ---
 title: デプロイされた ASP.NET アプリケーションのデバッグ | Microsoft Docs
 ms.date: 06/30/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c2b1838375ee878640d77a9c93808efafc9f519c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738297"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350551"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>デプロイされた ASP.NET アプリケーションのデバッグ
 配置されたアプリケーションを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用してデバッグするには、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスにアタッチし、デバッガーからアプリケーションのシンボルにアクセスできるようにする必要があります。 また、アプリケーションのソース ファイルを見つけて開く必要があります。 詳細については、「[シンボル (.pdb) とソース ファイルを指定する](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)」、「[方法: ASP.NET プロセスの名前を見つける](../debugger/how-to-find-the-name-of-the-aspnet-process.md)」、および「[システム要件](../debugger/aspnet-debugging-system-requirements.md)」を参照してください。
