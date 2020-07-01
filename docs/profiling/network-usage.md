@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144702"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541714"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP アプリのネットワーク使用量を分析する
 Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http API](/uwp/api/windows.web.http) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。
@@ -53,7 +53,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 
  ![ネットワーク ツールの詳細ウィンドウ](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|||
+|名前|説明|
 |-|-|
 |**ヘッダー**|イベントの要求ヘッダーに関する情報。|
 |**本文**|要求と応答のペイロード データ。|

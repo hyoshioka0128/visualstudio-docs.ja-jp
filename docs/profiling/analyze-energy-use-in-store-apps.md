@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144734"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537242"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP アプリでのエネルギー使用の分析
 
@@ -40,7 +40,7 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
 
    電力は割合であるため、方向 (一定時間内で仕事が増加または減少) と速度 (仕事が増加または減少する量) があることに注意してください。
 
-- *エネルギー* は、バッテリの電力容量のような能力または潜在力として、または一定の時間内に消費された総電力量として、電力の総量を表します。 エネルギーの単位はワット時です。これは、1 ワットの電力を 1 時間にわたって常時加えた場合の電力量です。 **[Energy Summary] (エネルギー使用の概要)** では、単位はミリワット時間 **(mW-h)** で表示されます。
+- *エネルギー* は、バッテリの電力容量のような能力または潜在力として、または一定の時間内に消費された総電力量として、電力の総量を表します。 エネルギーの単位はワット時です。これは、1 ワットの電力を 1 時間にわたって常時加えた場合の電力量です。 **[Energy Summary]\(エネルギー使用の概要)** では、単位はミリワット時間 **(mW-h)** で表示されます。
 
 ![エネルギー キャパシティ、使用電力、総使用エネルギー](../profiling/media/energyprof_capcitypowerused.png)
 
@@ -104,7 +104,7 @@ if (performance && performance.mark) {
 
      ![データ収集の停止](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
-     Visual Studio は、収集されたデータを分析し、結果を表示します。
+     Visual Studio が、収集したデータを分析し、結果を表示します。
 
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>インストール済みアプリのエネルギー プロファイル データの収集
  エネルギー消費プロファイラーは、Visual Studio ソリューションから開始された UWP アプリまたは Microsoft Store からインストールされた UWP アプリに対してのみ実行できます。 ソリューションを Visual Studio で開いている場合、既定のターゲットは **[スタートアップ プロジェクト]** です。 インストール済みアプリを対象とするには、以下の手順に従います。
@@ -124,7 +124,7 @@ if (performance && performance.mark) {
 
  ![エネルギー プロファイラー レポート ページ](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|||
+|Image|説明|
 |-|-|
 |![ステップ 1](../profiling/media/procguid_1.png "ProcGuid_1")|レポート ファイルの名前は、Report*YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|
 |![ステップ 2](../profiling/media/procguid_2.png "ProcGuid_2")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|
@@ -156,7 +156,7 @@ if (performance && performance.mark) {
 
 - **CPU 使用率**ツールは、非効率的な関数のために生じる CPU 負荷の削減に役立ちます。 「[CPU 使用率の分析](../profiling/beginners-guide-to-performance-profiling.md)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

@@ -28,32 +28,32 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568205"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544093"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XAML]、[その他]
 
 **[その他]** プロパティ ページでは、XAML ドキュメントで要素と属性を書式設定する方法を指定します。 **[オプション]** ダイアログ ボックスを開くには、 **[ツール]** メニューをクリックし、 **[オプション]** をクリックします。 **[その他]** プロパティ ページにアクセスするには、 **[テキスト エディター]**  >  **[XAML]**  >  **[その他]** ノードを展開します。
 
-## <a name="auto-insert"></a>[自動挿入]
+## <a name="auto-insert"></a>自動挿入
 
 タグと引用符が自動的に生成されるタイミングを制御するには、この設定を使用します。
 
-|||
+|名前|説明|
 |-|-|
 |**終了タグ**|大なり記号 (>) で開始タグを閉じたときに、要素の終了タグが自動的に生成されるかどうかを指定します。|
 |**属性値の引用符**|ステートメント入力候補のドロップダウン リストから属性値を選択したときに、それを囲む引用符が生成されるかどうかを指定します。|
 |**MarkupExtension の終わり中かっこ**|左中かっこ ( **{** ) を入力したときに、マークアップ拡張の右中かっこ ( **}** ) が自動的に生成されるかどうかを指定します。|
 |**MarkupExtension のパラメーターを区切るコンマ**|マークアップ拡張に複数のパラメーターを入力したときに、コンマが生成されるかどうかを指定します。|
 
-## <a name="errors-and-warnings"></a>エラーおよび警告
+## <a name="errors-and-warnings"></a>エラーと警告
 
 エラーと警告が自動的に生成されるタイミングを制御するには、この設定を使用します。 詳細については、「[XAML のエラーと警告](../../xaml-tools/xaml-errors-warnings.md)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [WPF の XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638782"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537372"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 使用率を分析することでアプリケーションのパフォーマンスを測定する
 
@@ -134,7 +134,7 @@ Windows 7 以降ではデバッガーなしでプロファイル ツールを使
     ![診断ツールのコール ツリー](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |||
+    |Image|説明|
     |-|-|
     |![ステップ 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用率コール ツリーのトップ レベルのノードは擬似ノードです。|
     |![ステップ 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|ほとんどのアプリでは、 [[外部コードの表示]](#view-external-code) オプションをオフにすると、セカンド レベルのノードは **[外部コード]** ノードとなります。このノードに含まれるシステムおよびフレームワーク コードは、アプリの開始と停止、UI の描画、スレッド スケジュールの制御、およびアプリへの他の低レベル サービスの提供を行います。|

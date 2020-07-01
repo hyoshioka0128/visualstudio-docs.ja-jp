@@ -3,7 +3,7 @@ title: C# 開発者向けの概要
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306843"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771131"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE へようこそ | C\#
 
@@ -26,7 +26,7 @@ ms.locfileid: "79306843"
 
 次に、C# 開発者に合わせた環境設定を使用するように Visual Studio を構成しましょう。
 
-1. メニュー バーで、 **[ツール]** 、 **[設定のインポートとエクスポート]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[設定のインポートとエクスポート]** の順にクリックします。
 
 2. **設定のインポートとエクスポート ウィザード**の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "79306843"
 
 IDE の他のカスタマイズ方法については、「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 以下の入力記事のいずれかに従って、Visual Studio をさらに詳しく調べます。
 
@@ -48,7 +48,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 > [!div class="nextstepaction"]
 > [プロジェクトとソリューションについて学習する](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のその他の機能](../../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします

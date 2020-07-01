@@ -1,19 +1,19 @@
 ---
 title: '方法: MIP レベルを作成および変更する'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793d730df3942608451e7dbc329819b98c451973
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0e9764bdfb476d9e2c4aa8ab2c04ee3aaa4f222a
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113281"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769054"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>方法: MIP レベルを作成および変更する
 このドキュメントでは、**イメージ エディター**を使用して、テクスチャ空間詳細レベル (LoD) の *MIPMAP レベル*を作成および変更する方法を示します。

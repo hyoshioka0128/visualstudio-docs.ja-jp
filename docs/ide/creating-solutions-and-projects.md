@@ -1,7 +1,7 @@
 ---
 title: ソリューションとプロジェクトを作成する
 ms.date: 02/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306795"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770546"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
