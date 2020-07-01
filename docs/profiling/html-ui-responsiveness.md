@@ -2,7 +2,7 @@
 title: UWP アプリの HTML UI の応答性を分析する | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189378"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331413"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>ユニバーサル Windows アプリの HTML UI の応答性を分析する
 このトピックでは、アプリのパフォーマンス問題を UI 応答性プロファイラーを使って切り分ける方法を説明します。UI 応答性プロファイラーは、ユニバーサル Windows アプリで利用できるパフォーマンス ツールです。
@@ -71,7 +71,7 @@ ms.locfileid: "73189378"
 ## <a name="isolate-an-issue"></a>問題の特定
  次のセクションでは、パフォーマンス上の問題を特定するのに役立つ方法を示します。 サンプル パフォーマンス テスト アプリを使用してパフォーマンスの問題を識別し、修正する方法の詳しい手順については、「[チュートリアル: UI の応答性の向上 (HTML)](html-ui-responsiveness.md)」を参照してください。
 
-### <a name="Workflow"></a> UI の応答性の問題の特定
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> UI の応答性の問題の特定
  以下の手順は、UI 応答性プロファイラーをより効果的に使用するために役立つ、推奨されるワークフローです。
 
 1. Visual Studio でアプリを開きます。
@@ -128,12 +128,12 @@ ms.locfileid: "73189378"
 
 13. 拡大表示の状態で、CPU 使用状況グラフまたはビジュアル スループット グラフの一部を選択します。 選択すると、プロファイラーの下部のペインにあるタイムラインの詳細グラフが、選択された期間だけを表示するように変更されます。
 
-### <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem
  過剰な CPU 使用状況の期間には、フレーム レートが低下したり、フレーム レートの一貫性がなくなったりする場合があります。 リッチ メディア アプリやゲームを開発する場合、ビジュアル スループット グラフは、CPU 使用状況グラフより重要なデータを提供する可能性があります。
 
  ビジュアル スループットの問題を特定するには、前のセクションで説明した手順に従います。 重要なデータ ポイントの 1 つとしてビジュアル スループット グラフを使用します。
 
-### <a name="ProfileMark"></a> 分析用のコードのマーク
+### <a name="mark-code-for-analysis"></a><a name="ProfileMark"></a> 分析用のコードのマーク
  グラフに表示されるデータに関連付けられているアプリ コードのセクションを特定しやすくするために、アプリ内に関数呼び出しを追加し、プロファイラーがタイムライン内で関数が実行される時点にユーザー マーク (下向きの三角形) を挿入するように指定します。 追加したすべてのユーザー マークが、CPU 使用状況グラフ、ビジュアル スループット グラフ、およびタイムラインの詳細グラフのタイムラインに表示されます。
 
  ユーザー マークを追加するには、アプリに次のコードを追加します。 この例では、イベントの説明として "データの取得" を使用します。
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
 ## <a name="analyze-data"></a>データの分析
  次のセクションでは、プロファイラーに表示されるデータの解釈に役立つ情報を提供します。
 
-### <a name="Ruler"></a> 診断セッションのタイムラインの表示
+### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> 診断セッションのタイムラインの表示
  プロファイラーの上部のルーラーは、プロファイル情報のタイムラインを示します。 このタイムラインは、[CPU 使用状況] グラフと [ビジュアル スループット] グラフの両方に適用されます。
 
  次に、診断セッションのタイムラインの外観を示します。 いくつかのアプリ ライフサイクル イベントのツールヒントが表示されています。
@@ -187,7 +187,7 @@ if (performance.mark && performance.measure) {
 
 - ナビゲーション イベント。 別のページに移動するときに発生します。 イベントのツールヒントには、移動先ページの URL が表示されます。
 
-### <a name="CPUUtilization"></a> CPU 使用率の表示
+### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> CPU 使用率の表示
  CPU 使用状況グラフにより、過剰な CPU アクティビティがある期間を特定できます。 一定期間内でのアプリの平均 CPU 使用量に関する情報を示します。 情報は、特定のカテゴリを表すように色分けされています。 カテゴリには、 **[読み込み中]** 、 **[スクリプティング]** 、ガベージ コレクション ( **[GC]** )、 **[スタイル]** 、 **[レンダリング]** 、 **[イメージ デコード中]** があります。 これらのカテゴリの詳細については、このトピックで後述する「 [Profiler event reference](#profiler-event-reference) 」を参照してください。
 
  CPU 使用状況グラフは、1 つまたは複数の CPU の使用率値を 1 つのパーセント値にまとめて、すべてのアプリ スレッドに費やされた時間を示します。 CPU 使用率値は、複数の CPU を使用している場合、100% を超えることがあります。
@@ -209,7 +209,7 @@ if (performance.mark && performance.measure) {
 
   グラフの使用について、詳細はこのトピックの「 [Isolate a UI responsiveness problem](#Workflow) 」を参照してください。
 
-### <a name="VisualThroughput"></a> ビジュアル スループット (FPS) の表示
+### <a name="view-visual-throughput-fps"></a><a name="VisualThroughput"></a> ビジュアル スループット (FPS) の表示
  ビジュアル スループット グラフにより、フレーム レートが低下した期間を特定できます。 ビジュアル スループット グラフは、アプリの 1 秒あたりのフレーム数 (FPS) を示します。 このグラフは、ゲームやリッチ メディア アプリの開発に最も役立ちます。
 
  表示された FPS の値は、実際のフレーム レートとは異なる場合があります。 このグラフのデータを確認する場合には、次の情報を考慮します:
@@ -232,7 +232,7 @@ if (performance.mark && performance.measure) {
 
 - **[拡大]** を選択することで、選択した期間のより詳細なビューが表示されます。
 
-### <a name="TimelineDetails"></a> タイムライン グラフの表示
+### <a name="view-timeline-details"></a><a name="TimelineDetails"></a> タイムライン グラフの表示
  タイムラインの詳細グラフは UI 応答性プロファイラーの下部のペインに表示されます。 選択された期間内にどのイベントが最も CPU 時間を消費したかについての順次的または階層的な情報を提供します。 このグラフは、何が特定のイベントを発生させたかを判断したり、イベントによっては、どのようにイベントを元のソース コードにマップするかを判断したりするために役立ちます。 このグラフは、画面にビジュアルの更新を描画するために必要な時間を判断する際にも役立ちます。
 
  このグラフは、ビジュアルの更新を遅延させる原因となる UI スレッド作業とバックグラウンド スレッド上の作業を表示します。 グラフに表示されないのは、JavaScript JIT 作業、非同期 GPU 作業、ホスト プロセスの外部で実行される作業 (RuntimeBroker.exe、dwm.exe の作業など)、またはまだプロファイリング用にインストルメント化されていない、Windows ランタイムの領域に対する作業です (ディスク I/O など)。
@@ -271,12 +271,12 @@ if (performance.mark && performance.measure) {
   > [!TIP]
   > タイムラインの詳細グラフと **[包括時間の概要]** は、最適化の対象となる領域を特定するのに役立ちます。 これらのビューのいずれかに小さいタスクが数多く表示されている場合、そのイベントは最適化の対象となる可能性があります。 たとえば、アプリで DOM 要素が頻繁に更新されているために多数のレイアウト イベントと HTML 解析イベントが発生している場合は、 バッチ処理を使用することによってパフォーマンスを最適化できる可能性があります。
 
-### <a name="FilterTimelineDetails"></a> タイムラインの詳細のフィルター
+### <a name="filter-timeline-details"></a><a name="FilterTimelineDetails"></a> タイムラインの詳細のフィルター
  特定のイベントのコンテキスト メニューの **[イベントのフィルター]** をクリックして、タイムラインの詳細のビューを特定のイベントにフィルターできます。 このオプションを選択すると、タイムラインとグリッド ビューは選択されたイベントにスコープされます。 CPU 利用率グラフで選択を行った場合も特定のイベントにスコープされます。
 
  ![イベントでタイムラインをフィルター処理](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="FilterEvents"></a> イベントのフィルター
+### <a name="filter-events"></a><a name="FilterEvents"></a> イベントのフィルター
  あるイベントをタイムラインの詳細グラフから除外して、データのノイズを除去したり、パフォーマンス シナリオで必要のないデータを削除したりできます。 フィルタは、イベント名やイベント期間ごとに、またはこのトピックに記載する特定のフィルタで行うことができます。
 
  イメージ デコード、予測ダウンロード、および GC イベントを除去するには、下部のペインのフィルター アイコンから **[バックグラウンド アクティビティ]** オプションの選択を解除します。 これらのイベントはあまり実用的ではないため、既定では非表示になっています。
@@ -292,7 +292,7 @@ if (performance.mark && performance.measure) {
 
  ユーザー測定をフィルターで除去するには、 **[ユーザー測定]** オプションの選択を解除します。 ユーザー測定は、子イベントがないトップレベル イベントです。
 
-### <a name="GroupFrames"></a> フレームごとのグループ イベント
+### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> フレームごとのグループ イベント
  [タイムラインの詳細] ビューに表示されるイベントをグループ化して個々のフレームにすることができます。 これらのフレーム イベントは、ツールで生成されたイベントで、描画イベント間で発生するすべての UI スレッドの作業におけるトップレベルのイベント コンテナーを表しています。 このビューを有効にするには、 **[トップレベル イベントをフレームごとにグループ化する]** を選択します。
 
  ![トップレベル イベントをフレーム別にグループ化](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")

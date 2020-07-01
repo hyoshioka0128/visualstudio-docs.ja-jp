@@ -2,7 +2,7 @@
 title: フォアグラウンド アプリのデバッグ中にデバッガー ウィンドウを使用する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.background
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759d9a6a3beb55bf72a0f41a93cb26c8c15b0c5e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c74ca2c01f55778930e2cab1ccf38011bba868d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734056"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350330"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>フォアグラウンド プログラムのデバッグ中にデバッガー ウィンドウを使用するには
 ## <a name="problem-description"></a>問題の説明

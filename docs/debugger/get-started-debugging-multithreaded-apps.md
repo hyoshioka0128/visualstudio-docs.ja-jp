@@ -3,7 +3,7 @@ title: マルチスレッド アプリケーションのデバッグについて
 description: Visual Studio の [並列スタック] ウィンドウと [並列ウォッチ] ウィンドウを使用してデバッグします
 ms.custom: ''
 ms.date: 02/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416408"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350512"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチスレッド アプリケーションのデバッグを始める (C#、Visual Basic、C++)
 

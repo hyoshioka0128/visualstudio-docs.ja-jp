@@ -1,7 +1,7 @@
 ---
 title: 例外を調べる - Visual Studio | Microsoft Docs
 ms.date: 1/18/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae1609486ec4f3462be89b0526467dd7414647
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76829757"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350499"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>例外ヘルパーを使用して例外を調べる 
 

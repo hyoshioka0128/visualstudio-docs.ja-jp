@@ -1,7 +1,7 @@
 ---
 title: VSPerfASPNetCmd | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9bf465b4da7f305e97a18099a7e27db8eab6b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6ddadc15a5e0d53535b82d87aadd31fec65adaf
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778012"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330478"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** コマンド ライン ツールを使用すれば、環境変数を設定したり、コンピューターを再起動したりしなくても、ASP.Net Web サイトをプロファイルすることができます。 ASP.NET Web サイトをプロファイルするときに、**VSPerfCmd** で提供される追加機能が不要な場合は、[VSPerfCmd](../profiling/vsperfcmd.md) ではなく **VSPerfASPNetCmd.exe** を使用します。 **VSPerfASPNetCmd** の詳細については、「[VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)」を参照してください。 **VSPerfASPNetCmd** は、スタンドアロン プロファイラーを使用して ASP.NET Web サイトをプロファイルするときに推奨されるコマンド ライン ツールです。

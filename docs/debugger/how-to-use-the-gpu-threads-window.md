@@ -1,7 +1,7 @@
 ---
 title: デバッガーでの GPU スレッドの表示 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732085"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348718"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>方法: GPU スレッド ウィンドウを使用する (C++)
 GPU スレッド ウィンドウでは、デバッグ中のアプリケーション内の GPU 上で実行されているスレッドを調べて操作できます。 GPU 上で実行されるアプリケーションの詳細については、「[C++ AMP の概要](/cpp/parallel/amp/cpp-amp-overview)」を参照してください。
