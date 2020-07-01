@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652197"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521213"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: セキュリティの脆弱性について、SQL クエリを確認してください
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:SQL クエリのセキュリティ脆弱性を確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
@@ -34,18 +34,18 @@ ms.locfileid: "72652197"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- メソッドは、文字列引数から構築された文字列をメソッドに使用して、<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> プロパティを設定します。
+ メソッドは、 <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> 文字列引数から構築された文字列をメソッドに使用して、プロパティを設定します。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 SQL インジェクション攻撃では、悪意のあるユーザーが、基になるデータベースへの損傷または不正アクセスを試みるために、クエリのデザインを変更する入力を提供します。 一般的な手法としては、単一引用符またはアポストロフィの挿入があります。これは、SQL リテラル文字列の区切り記号です。2つのダッシュ。 SQL コメントを意味します。セミコロンは、新しいコマンドが続くことを示します。 ユーザー入力をクエリの一部にする必要がある場合は、次のいずれかの方法を使用して、攻撃のリスクを軽減します。
 
-- ストアドプロシージャを使用します。
+- ストアド プロシージャを使用します。
 
 - パラメーター化されたコマンド文字列を使用します。
 
 - コマンド文字列を作成する前に、型とコンテンツの両方についてユーザー入力を検証します。
 
-  次の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 型は、<xref:System.Data.IDbCommand.CommandText%2A> プロパティを実装するか、文字列引数を使用してプロパティを設定するコンストラクターを指定します。
+  次の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 型は、 <xref:System.Data.IDbCommand.CommandText%2A> プロパティを実装するか、文字列引数を使用してプロパティを設定するコンストラクターを提供します。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> および <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -80,11 +80,11 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  コマンドテキストにユーザー入力が含まれていない場合は、この規則による警告を抑制しても安全です。
 
 ## <a name="example"></a>例
- 次の例は、パラメーター化されたコマンド文字列を使用してルールを満たすメソッド (`UnsafeQuery`) を示しています。このメソッドは、ルールに違反 `SaferQuery` しています。
+ 次の例は、パラメーター化されたコマンド文字列を使用して規則を満たす、規則に違反するメソッド、およびメソッドを示して `UnsafeQuery` `SaferQuery` います。
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [セキュリティの概要](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

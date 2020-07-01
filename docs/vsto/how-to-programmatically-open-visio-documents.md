@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによって Visio 図面を開く'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812252"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519991"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>方法: プログラムによって Visio 図面を開く
-  既存の Microsoft Office Visio 図面を開くための 2 つの方法はあります。開いている OpenEx とします。 メソッドは、図面を開く方法を呼び出し元が指定できる引数を提供する点を除いて、Open メソッドと同じです。
+  既存の Microsoft Office Visio 図面を開くには、Open と OpenEx の2つの方法があります。 OpenEx メソッドは Open メソッドと同じですが、呼び出し元がドキュメントを開く方法を指定できる引数を提供する点が異なります。
 
  オブジェクト モデルの詳細については、 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) メソッドと [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) メソッドの VBA リファレンス ドキュメントを参照してください。
 
@@ -34,7 +34,7 @@ ms.locfileid: "62812252"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
 
-## <a name="open-a-visio-document-with-specified-arguments"></a>指定された引数で Visio 図面を開く
+## <a name="open-a-visio-document-with-specified-arguments"></a>指定された引数を使用して Visio 図面を開く
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>読み取り専用およびドッキングとして Visio 図面を開くには
 
@@ -46,12 +46,12 @@ ms.locfileid: "62812252"
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。
 
-- という名前の Visio 図面`myDrawing.vsd`という名前のディレクトリである必要があります`Test`で、 *My Documents*フォルダー (Windows XP 以前) または*ドキュメント*フォルダー (Windows Vista)。
+- という名前の Visio 図面は、 `myDrawing.vsd` `Test` *[マイドキュメント*] フォルダー (windows XP 以前の場合) または [*ドキュメント*] フォルダー (windows Vista の場合) のという名前のディレクトリに配置する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)
-- [Visio オブジェクト モデルの概要](../vsto/visio-object-model-overview.md)
-- [方法: プログラムによって新しい Visio 図面を作成します。](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Visio オブジェクトモデルの概要](../vsto/visio-object-model-overview.md)
+- [方法: プログラムによって新しい Visio 図面を作成する](../vsto/how-to-programmatically-create-new-visio-documents.md)
 - [方法: プログラムによって Visio 図面を閉じる](../vsto/how-to-programmatically-close-visio-documents.md)
-- [方法: プログラムによって Visio 図面を保存します。](../vsto/how-to-programmatically-save-visio-documents.md)
-- [方法: プログラムによって Visio 図面を印刷します。](../vsto/how-to-programmatically-print-visio-documents.md)
+- [方法: プログラムによって Visio 図面を保存する](../vsto/how-to-programmatically-save-visio-documents.md)
+- [方法: プログラムによって Visio 図面を印刷する](../vsto/how-to-programmatically-print-visio-documents.md)

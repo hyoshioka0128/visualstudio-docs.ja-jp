@@ -1,7 +1,7 @@
 ---
 title: マネージ参照 (Visual Studio での Office 開発)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985766"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519861"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>マネージ参照 (Visual Studio での Office 開発)
-  このセクションには、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](includes/net-v45-md.md)]を対象とする Office プロジェクトで使用される名前空間と型についての API リファレンス ドキュメントが含まれています。 .NET Framework 3.5 を対象とする Office プロジェクトで使用される名前空間と型に関する API リファレンスドキュメントについては、Visual Studio ドキュメントの「[マネージリファレンス (Visual studio での office 開発)」の次のリファレンスセクションを参照してください。)](managed-reference-office-development-in-visual-studio.md).
+  このセクションには、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](includes/net-v45-md.md)]を対象とする Office プロジェクトで使用される名前空間と型についての API リファレンス ドキュメントが含まれています。 .NET Framework 3.5 を対象とする Office プロジェクトで使用される名前空間と型に関する API リファレンスドキュメントについては、Visual Studio ドキュメントの「[マネージリファレンス (Visual studio での Office 開発)](managed-reference-office-development-in-visual-studio.md)」の参照セクションを参照してください。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -72,6 +72,6 @@ ms.locfileid: "72985766"
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio tools for Office runtime の概要](visual-studio-tools-for-office-runtime-overview.md)
-- [Visual Studio &#40;での Office 開発の概要&#41;](getting-started-office-development-in-visual-studio.md)
+- [Visual Studio で &#40;Office 開発を開始する&#41;](getting-started-office-development-in-visual-studio.md)
 - [Office 開発のサンプルとチュートリアル](office-development-samples-and-walkthroughs.md)
 - [Office ソリューションの設計と作成](designing-and-creating-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: '方法: リボンのカスタマイズの開始'
+title: '方法: リボンのカスタマイズを開始する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,29 +15,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255858"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520069"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>方法: リボンのカスタマイズの開始
+# <a name="how-to-get-started-customizing-the-ribbon"></a>方法: リボンのカスタマイズを開始する
   Microsoft Office アプリケーションのリボンをカスタマイズするには、Office プロジェクトに**リボン (ビジュアルデザイナー)** または**リボン (XML)** 項目を追加します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-a-ribbon-to-a-project"></a>プロジェクトにリボンを追加するには
 
-1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
+1. [**プロジェクト**] メニューの [**新しい項目の追加**] をクリックします。
 
-2. **[新しい項目の追加]** ダイアログボックスで、**リボン (ビジュアルデザイナー)** または**リボン (XML)** を選択します。 これらのテンプレートの詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
+2. [**新しい項目の追加**] ダイアログボックスで、**リボン (ビジュアルデザイナー)** または**リボン (XML)** を選択します。 これらのテンプレートの詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
-3. **[名前]** ボックスに、リボン項目の名前を入力します。
+3. [**名前**] ボックスに、リボン項目の名前を入力します。
 
-    名前に次の文字を含めることはできません:
+    次の文字は名前に使用できません。
 
-   - ポンド (#)
+   - シャープ記号 (#)
 
    - パーセント (%)
 
@@ -61,7 +61,7 @@ ms.locfileid: "71255858"
 
    - スラッシュ (/)
 
-   - 先頭または末尾のスペース (' ')
+   - 先頭または末尾の空白 (' ')
 
    - Windows または DOS 用に予約されている名前 ("nul"、"aux"、"con"、"com1"、"lpt1" など)
 
@@ -71,7 +71,7 @@ ms.locfileid: "71255858"
 
 ## <a name="see-also"></a>関連項目
 - [実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)
-- [リボン デザイナー](../vsto/ribbon-designer.md)
+- [リボンデザイナー](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [チュートリアル: リボンデザイナーを使用してカスタムタブを作成する](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [チュートリアル: リボン XML を使用してカスタムタブを作成する](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

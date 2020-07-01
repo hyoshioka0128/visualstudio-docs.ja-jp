@@ -1,7 +1,7 @@
 ---
-title: GetValidCompatibleFramework 関数
+title: Getvalid互換フレームワーク関数
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2219417fe8ddae3d11d0e624ad12d3de80e290dd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788697"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520225"
 ---
-# <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 関数
-  この API は、オフィスのインフラストラクチャをサポートしているし、コードから直接使用するものではありません。
+# <a name="getvalidcompatibleframework-function"></a>Getvalid互換フレームワーク関数
+  この API は Office インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。
 
 ## <a name="syntax"></a>構文
 
@@ -37,4 +37,4 @@ HRESULT WINAPI GetValidCompatibleFramework(
 |*pbstrValidFrameworkTag*|使用しないでください。|
 
 ## <a name="return-value"></a>戻り値
- 返します、関数が成功したかどうかは**S_OK**します。 関数が失敗した場合、エラー コードを返します。
+ 関数が成功した場合は、 **S_OK**を返します。 関数が失敗した場合は、エラーコードを返します。

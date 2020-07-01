@@ -1,7 +1,7 @@
 ---
 title: GetVstoSolutionMetadata 関数
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7714e78e897e6c8b391a6c30e9a548671ce80c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebbedaab7e7ac342f6d6ace191d820f6a0c8090
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796042"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520186"
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 関数
-  この API は、オフィスのインフラストラクチャをサポートしているし、コードから直接使用するものではありません。
+  この API は Office インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。
 
 ## <a name="syntax"></a>構文
 
@@ -37,4 +37,4 @@ HRESULT WINAPI GetVstoSolutionMetadata(
 |*ppSolutionInfo*|使用しないでください。|
 
 ## <a name="return-value"></a>戻り値
- 返します、関数が成功したかどうかは**S_OK**します。 関数が失敗した場合、エラー コードを返します。
+ 関数が成功した場合は、 **S_OK**を返します。 関数が失敗した場合は、エラーコードを返します。

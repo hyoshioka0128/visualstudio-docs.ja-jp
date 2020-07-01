@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 38a1b7c00c79c7a2e89ef64598b8c409709561ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ddcab6e0f416837bcd7b01521a6d77ddce691b9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658713"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520979"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: 表示するイベント ハンドラーをレビューします
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109:表示するイベント ハンドラーを確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
@@ -35,7 +35,7 @@ ms.locfileid: "72658713"
 ## <a name="cause"></a>原因
  パブリックまたはプロテクトのイベント ハンドラー メソッドが検出されました。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  外部から参照できるイベント処理メソッドは、レビューが必要なセキュリティ上の問題を示します。
 
  イベント ハンドラー メソッドは、絶対に必要な場合を除き公開しないでください。 公開されたメソッドを呼び出すイベントハンドラーは、デリゲート型とイベントシグネチャが一致する限り、任意のイベントに追加できます。 イベントは、任意のコードによって発生する可能性があり、ボタンのクリックなどのユーザー操作に応じて、信頼性の高いシステムコードによって頻繁に発生します。 イベント処理メソッドにセキュリティチェックを追加しても、メソッドを呼び出すイベントハンドラーがコードによって登録されるのを防ぐことはできません。
@@ -63,6 +63,6 @@ ms.locfileid: "72658713"
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.EventSecLib/cs/FxCop.Security.EventSecLib.cs#1)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [セキュリティ要求](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [セキュリティ確認要求](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
