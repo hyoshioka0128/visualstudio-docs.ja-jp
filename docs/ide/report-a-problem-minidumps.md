@@ -1,7 +1,7 @@
 ---
 title: すべての呼び出し履歴を含むミニダンプを作成する
 ms.date: 06/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - minidumps for Visual Studio issues"
 author: corob-msft
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 7b3be91e5d0d2e1f14724dd647670fc4885bcd4d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77271186"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770841"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>すべての呼び出し履歴を含む Visual Studio プロセスのミニダンプを作成する
 

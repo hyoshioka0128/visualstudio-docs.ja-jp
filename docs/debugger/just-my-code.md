@@ -1,19 +1,19 @@
 ---
 title: "\"マイ コードのみ\" を使用したユーザー コードのデバッグ | Microsoft Docs"
 ms.date: 02/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535998"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536566"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>"マイ コードのみ" を使用してユーザー コードのみをデバッグする
 
@@ -196,7 +196,7 @@ C++ プロジェクトでは、ステップ オーバーする関数を指定で
 
 <a name="BKMK_JS_User_and_non_user_code"></a>JavaScript の "マイ コードのみ" では、以下のいずれかの方法でコードを分類することによって、ステップ実行と呼び出し履歴表示が制御されます。
 
-|||
+|分類|説明|
 |-|-|
 |**MyCode**|ユーザーが所有および制御するユーザー コード。|
 |**LibraryCode**|ユーザーが通常使用し、アプリが正しく機能するために必要なライブラリからの非ユーザー コード (WinJS や jQuery など)。|
@@ -279,7 +279,7 @@ JavaScript デバッガーでは、次の順序でコードがユーザー コ�
 
 **Eval**、**Function**、および **ScriptBlock** のキーと値のペアで、動的に生成されたコードを分類する方法が決まります。
 
-|||
+|名前|説明|
 |-|-|
 |**Eval**|ホスト提供の `eval` 関数に文字列を渡すことで実行されるスクリプト。 既定では、Eval スクリプトは **MyCode** として分類されます。|
 |**Function**|`Function` コンストラクターに文字列を渡すことで実行されるスクリプト。 既定では、Function スクリプトは **LibraryCode** として分類されます。|
@@ -295,7 +295,7 @@ JavaScript デバッガーでは、次の順序でコードがユーザー コ�
 
 **MyCode**、**Libraries**、および **Unrelated** のキーと値のペアでは、分類に含める URL またはファイルを指定します。
 
-|||
+|名前|説明|
 |-|-|
 |**MyCode**|**MyCode** として分類される URL またはファイルの配列。|
 |**Libraries**|**LibraryCode** として分類される URL またはファイルの配列。|

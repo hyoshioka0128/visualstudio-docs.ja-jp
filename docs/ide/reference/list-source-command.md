@@ -1,4 +1,4 @@
-﻿---
+---
 title: List Source コマンド
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747900"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770620"
 ---
 # <a name="list-source-command"></a>List Source コマンド
 ソース コードの指定行が表示されます。

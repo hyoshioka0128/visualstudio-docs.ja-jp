@@ -2,19 +2,19 @@
 title: CPU 使用率の分析 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638834"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543391"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 使用率の分析
 
@@ -61,7 +61,7 @@ Visual Studio 2019 以降、 **[ホット パスの展開]** ボタンと **[ホ
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> CPU 使用率データの列
 
-|||
+|名前|説明|
 |-|-|
 |**合計 CPU [ユニット、%]**|![合計 % のデータ演算式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 選択した時間範囲において、関数の呼び出し、および関数が呼び出した関数で使用された CPU 時間 (ミリ秒) と割合です。 これは、特定の時間範囲におけるアプリの合計 CPU アクティビティと、利用可能な合計 CPU とを比較する **CPU 使用率**タイムライン グラフとは異なります。|
 |**セルフ CPU [ユニット、%]**|![自己 % 演算式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 選択した時間範囲において、関数の呼び出し (関数が呼び出した関数を除く) で使用された CPU 時間 (ミリ秒) と使用率 (パーセンテージ) です。|
@@ -80,7 +80,7 @@ Visual Studio 2019 以降、 **[ホット パスの展開]** ボタンと **[ホ
 ![コール ツリーの構造](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "コール ツリーの構造")
 ::: moniker-end
 
-|||
+|Image|説明|
 |-|-|
 |![ステップ 1](../profiling/media/procguid_1.png "ProcGuid_1")|CPU 使用率コール ツリーのトップ レベルのノードは擬似ノードです。|
 |![ステップ 2](../profiling/media/procguid_2.png "ProcGuid_2")|ほとんどのアプリでは、 **[外部コードの表示]** オプションが無効になっていると、2 番目のレベルのノードが、 **[外部コード]** ノードになります。 ノードには、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行うシステムとフレームワーク コードが含まれています。|

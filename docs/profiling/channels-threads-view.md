@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62776778"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537086"
 ---
 # <a name="channels-threads-view"></a>チャネル (スレッド ビュー)
 コンカレンシー ビジュアライザーに、スレッド チャネル、ディスク チャネル、マーカー チャネル、GPU チャネルという 4 種類のチャネルが表示されます。
@@ -25,7 +25,7 @@ ms.locfileid: "62776778"
 ## <a name="thread-channels"></a>スレッド チャネル
  スレッド チャネルには、1 つのスレッドのスレッドの状態が色分けして表示されます。 チャネル名を一時停止すると、特定のスレッドの start 関数が表示されます。 コンカレンシー ビジュアライザーは、いくつかの種類のスレッドを検出します。 次の表は、最も一般的な種類を示しています。
 
-|||
+|スレッド|説明|
 |-|-|
 |メイン スレッド:|アプリで開始されたスレッド。|
 |ワーカー スレッド|アプリケーションのメイン スレッドにより作成されたスレッド。|
@@ -47,5 +47,5 @@ ms.locfileid: "62776778"
 ## <a name="gpu-channels"></a>GPU チャネル
  GPU チャネルは、システム上の DirectX 11 の活動に関する情報を表示します。  グラフィックス カードに関連付けられている各 DirectX エンジンに個別のチャネルがあります。  個々のセグメントは、DMA パケットの処理に費やした時間を表します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

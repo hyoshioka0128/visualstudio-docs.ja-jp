@@ -1,4 +1,4 @@
-﻿---
+---
 title: SetCurrentThread コマンド
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Thread command
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72748616"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768682"
 ---
 # <a name="set-current-thread-command"></a>SetCurrentThread コマンド
 指定したスレッドを現在のスレッドとして設定します。
