@@ -6,4 +6,4 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68154717"
 ---
-  **適用対象:** このトピックの情報は、ドキュメントに適用されます\-レベルのプロジェクトおよび VSTO 追加\-次のアプリケーション用のプロジェクトで。Excel です。InfoPath 2013 と InfoPath 2010、Outlook;PowerPoint です。プロジェクトです。Visio;単語があります。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
+  **適用対象:** このトピックの情報は、次の \- アプリケーションのドキュメントレベルのプロジェクトおよび VSTO アドインのプロジェクトに適用され \- ます。 Excel;InfoPath 2013 および InfoPath 2010;Outlook待つ作品Visioテキスト. 詳細については、「 [Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
