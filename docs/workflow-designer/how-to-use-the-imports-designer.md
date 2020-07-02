@@ -1,7 +1,7 @@
 ---
 title: ワークフローデザイナー-インポートデザイナーを使用する方法
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -10,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f221efea08444a4dc3e31ade2a081753eb77242c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593188"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817425"
 ---
 # <a name="how-to-use-the-imports-designer"></a>インポート デザイナーを使用する方法
 
-インポート デザイナーを使用すると、式で使用する型の名前空間を入力できます。 Visual Basic での**インポート**やキーワードの**使用**とC#同様に、imports デザイナーで名前空間を指定すると、完全修飾バージョンの型名ではなく、式に型名を入力するだけで済みます。
+インポート デザイナーを使用すると、式で使用する型の名前空間を入力できます。 Visual Basic と C# の**imports**または**using**キーワードと同じように、imports デザイナーで名前空間を指定すると、完全修飾バージョンの型名ではなく、式に型名を入力するだけで済みます。
 
-インポート デザイナーでは、UI での変更とワークフローの保存時に行われる変更の両方に応じて処理を行います。 ワークフローの保存時に、インポート デザイナーに名前空間を自動的に追加できます。 リポジトリには、次のものが含まれます。
+インポート デザイナーでは、UI での変更とワークフローの保存時に行われる変更の両方に応じて処理を行います。 ワークフローの保存時に、インポート デザイナーに名前空間を自動的に追加できます。 コーディネートは次のとおりです。
 
 - 変数および引数の宣言で使用されている型の名前空間。
 
@@ -35,7 +35,7 @@ ms.locfileid: "75593188"
 
 1. Visual Studio または再ホストされたワークフローアプリケーションで、WCF ワークフローサービスアプリケーション、ワークフローコンソールアプリケーション、またはアクティビティライブラリプロジェクトを開きます。
 
-2. メインキャンバスの下部にある **[インポート]** をクリックします。 インポート デザイナーが表示されます。
+2. メインキャンバスの下部にある [**インポート**] をクリックします。 インポート デザイナーが表示されます。
 
 3. 名前空間を入力するか、インポート デザイナーの上部にあるドロップダウン リスト コントロールから名前空間を選択します。
 

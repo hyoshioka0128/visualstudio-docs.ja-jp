@@ -1,9 +1,9 @@
 ---
-title: 小数の桁数が有効範囲を超えています |Microsoft Docs
+title: 小数部の桁数が範囲外です |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5026
 dev_langs:
@@ -14,20 +14,19 @@ ms.assetid: dbe05d7d-fcf6-4823-9c61-4b814d1ad3c4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8697e31e021fd0042046a46d2ac1f0c8a441b402
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572771"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816177"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小数の桁数が有効範囲を超えています。
-関数 **Number.prototype.toExponential** は、無効な引数を受け取ることができません。関数 **Toexponential ()** への引数は、0 ～ 20 の範囲内である必要があります。
+関数**番号. prototype. toExponential**に無効な引数を渡そうとしました。 関数**Toexponential ()** の引数は、0 ~ 20 (両端を含む) である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **toExponential ()** の引数に正しい値を指定します。
-
+- **Toexponential ()** の引数が大きすぎるか、または小さすぎないことを確認します。  
   
 ## <a name="see-also"></a>関連項目  
  [toExponential メソッド (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
