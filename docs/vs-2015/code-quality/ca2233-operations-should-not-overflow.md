@@ -25,7 +25,7 @@ ms.locfileid: "85545237"
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:操作はオーバーフローできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|

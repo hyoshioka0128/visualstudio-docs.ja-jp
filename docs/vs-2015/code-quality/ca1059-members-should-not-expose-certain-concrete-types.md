@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4c105a1224c405d0be9d74ac6500c875df28604d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792426615dd78241ade1d38a24ec1f4d5702cede
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604042"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545380"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: メンバーは特定の具象型を公開できません
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:メンバーは特定の具象型を公開できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
@@ -35,14 +35,14 @@ ms.locfileid: "72604042"
 ## <a name="cause"></a>原因
  外部から参照できるメンバーは、特定の具象型であるか、そのパラメーターまたは戻り値のいずれかによって特定の具象型を公開します。 現在、このルールは次の具象型の露出を報告します。
 
-- @No__t_0 から派生した型。
+- <xref:System.Xml.XmlNode?displayProperty=fullName> の派生型。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  具象型は、完全な実装を含む型であるため、インスタンス化できます。 メンバーを広範囲に使用できるようにするには、具象型を提案されたインターフェイスに置き換えます。 これにより、インターフェイスを実装する任意の型をメンバーが受け入れることができるようになります。また、インターフェイスを実装する型が想定される場所で使用することもできます。
 
  次の表に、対象となる具象型とその推奨される置換の一覧を示します。
 
-|具象型|Replacement|
+|具象型|代替|
 |-------------------|-----------------|
 |<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> インターフェイスを使用すると、XML データソースの特定の実装からメンバーを分離できます。|
 
@@ -53,4 +53,4 @@ ms.locfileid: "72604042"
  具象型によって提供される特定の機能が必要な場合は、この規則からのメッセージを抑制することが安全です。
 
 ## <a name="related-rules"></a>関連規則
- [CA1011: 基本型をパラメーターとして渡すことを考慮します](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011:基本型をパラメーターとして渡すことを考慮します](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

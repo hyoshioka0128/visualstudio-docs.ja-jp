@@ -13,33 +13,33 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fcb38184a1d432ca036be88c4d957c0e4d4f419
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7ae2b836549918fa1179e4e70d51d760efbe2c35
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917157"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544925"
 ---
-# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: 非常に高率のロック競合
+# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039:非常に高率のロック競合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新のドキュメントについては、「 [DA0039: 非常に高率のロック競合](/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions)」を参照してください。  
   
-|||  
+|アイテム|値|  
 |-|-|  
-|ルール ID|DA0039|  
-|[カテゴリ]|.NET Framework の使用|  
+|規則 ID|DA0039|  
+|カテゴリ|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション<br /><br /> .NET メモリ|  
-|[メッセージ]|非常に高率の .NET ロック競合が発生しています。 コンカレンシー プロファイルを実行し、このロック競合の原因を調査してください。|  
-|ルールの種類|［警告］|  
+|Message|非常に高率の .NET ロック競合が発生しています。 コンカレンシー プロファイルを実行し、このロック競合の原因を調査してください。|  
+|規則の種類|警告|  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 25 個収集する必要があります。  
   
 ## <a name="cause"></a>原因  
- プロファイル データを使用して収集したシステム パフォーマンス データは、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。  
+ プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。  
   
-## <a name="rule-description"></a>規則の説明  
- ロックは、マルチスレッド アプリケーション内で、一度に 1 つのスレッドで連続的に実行する必要があるコードのクリティカル セクションを保護するために使用されます。 Microsoft .NET 共通言語ランタイム (CLR: Common Language Run-time) には、同期とロックのプリミティブの完全なセットが用意されています。 たとえば、C# 言語ではロック ステートメントがサポートされています (Visual Basic では SyncLock)。 マネージアプリケーションは、system.object 名前空間の `Monitor.Enter` および `Monitor.Exit` メソッドを呼び出して、ロックを直接取得して解放できます。 .NET Framework は、ミューテックス、ReaderWriter ロック、およびセマフォをサポートするクラスをはじめとする、追加の同期と競合のプリミティブをサポートします。 詳細については、MSDN Web サイトの .NET Framework 開発者ガイドの「[Overview of Synchronization Primitives](https://msdn.microsoft.com/library/ms228964.aspx)」 (同期プリミティブの概要) を参照してください。 .NET Framework のクラスは、それ自体が、Windows オペレーティング システムに組み込まれている下位レベルの同期サービスの上層に配置されています。 これらには、クリティカル セクション オブジェクト、および多数のさまざまな待機機能やイベント通知機能が含まれます。 詳細については、MSDN ライブラリの Win32 および COM 開発の[同期](https://msdn.microsoft.com/library/ms686353.aspx)に関するセクションを参照してください。  
+## <a name="rule-description"></a>ルールの説明  
+ ロックは、マルチスレッド アプリケーション内で、一度に 1 つのスレッドで連続的に実行する必要があるコードのクリティカル セクションを保護するために使用されます。 Microsoft .NET 共通言語ランタイム (CLR: Common Language Run-time) には、同期とロックのプリミティブの完全なセットが用意されています。 たとえば、C# 言語ではロック ステートメントがサポートされています (Visual Basic では SyncLock)。 マネージアプリケーションは、system.object `Monitor.Enter` 名前空間のメソッドとメソッドを呼び出して、 `Monitor.Exit` ロックを直接取得したり解放したりできます。 .NET Framework は、ミューテックス、ReaderWriter ロック、およびセマフォをサポートするクラスをはじめとする、追加の同期と競合のプリミティブをサポートします。 詳細については、MSDN Web サイトの .NET Framework 開発者ガイドの「[Overview of Synchronization Primitives](https://msdn.microsoft.com/library/ms228964.aspx)」 (同期プリミティブの概要) を参照してください。 .NET Framework のクラスは、それ自体が、Windows オペレーティング システムに組み込まれている下位レベルの同期サービスの上層に配置されています。 これらには、クリティカル セクション オブジェクト、および多数のさまざまな待機機能やイベント通知機能が含まれます。 詳細については、MSDN ライブラリの Win32 および COM 開発の[同期](https://msdn.microsoft.com/library/ms686353.aspx)に関するセクションを参照してください。  
   
  同期と競合に使用される .NET Framework クラスとネイティブの Windows オブジェクトは両方とも、共有メモリの位置を基にしています。これは、インタロックされた操作を使用して変更する必要があります。 インタロックされた操作では、共有メモリの位置を操作するハードウェア固有の命令を使用して、アトミックな操作によってその状態を変更します。 アトミックな操作は、コンピューター内のすべてのプロセッサにわたって一貫していることが保証されています。 Locks と WaitHandles は、設定およびリセットされるときに自動的にインタロックされた操作を使用する .NET オブジェクトです。 アプリケーション内には、スレッド セーフな方法で更新するためにはインタロックされた操作も使用する必要がある、その他の共有メモリ データ構造体が存在する場合があります。 詳細については、MSDN ライブラリの .NET Framework のセクションの「[Interlocked Operations](https://msdn.microsoft.com/library/sbhbke0y.aspx)」 (インタロックされた操作) を参照してください。  
   

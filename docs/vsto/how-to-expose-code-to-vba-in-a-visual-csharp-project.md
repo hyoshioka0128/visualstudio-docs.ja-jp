@@ -1,8 +1,8 @@
-﻿---
-title: '方法: コードを VBA に公開するC#プロジェクト'
+---
+title: '方法: C# プロジェクトでコードを VBA に公開する'
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,39 +16,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419517"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544834"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual c# プロジェクトでのコードを VBA に公開します。
-  相互作用するコードの 2 つの種類の場合は、Visual C# プロジェクトを Visual Basic for Applications (VBA) コード内のコードを公開できます。
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual C# プロジェクトでコードを VBA に公開する
+  2種類のコードが相互に対話できるようにする場合は、Visual C# プロジェクトのコードを Visual Basic for Applications (VBA) コードに公開できます。
 
- Visual C# プロセスは、Visual Basic のプロセスからは異なります。 詳細については、「[方法 :Visual Basic プロジェクトでのコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)します。
+ Visual C# のプロセスは、Visual Basic プロセスとは異なります。 詳細については、「[方法: Visual Basic プロジェクトでコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)する」を参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="expose-code-in-a-visual-c-project"></a>Visual C# プロジェクトでコードが公開します。
- Visual C# プロジェクトのコードを呼び出す VBA コードを有効にするのには、COM から参照できるようにコードを変更し、設定、 **ReferenceAssemblyFromVbaProject**プロパティを**True**デザイナー。
+## <a name="expose-code-in-a-visual-c-project"></a>Visual C# プロジェクトでコードを公開する
+ VBA コードが Visual C# プロジェクトのコードを呼び出せるようにするには、コードを変更して COM に表示されるようにし、デザイナーで**ReferenceAssemblyFromVbaProject**プロパティを**True**に設定します。
 
- VBA から Visual c# プロジェクトでメソッドを呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)します。
+ VBA から Visual C# プロジェクトのメソッドを呼び出す方法を示すチュートリアルについては、「[チュートリアル: Visual C&#35; プロジェクトの vba からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)」を参照してください。
 
-### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>VBA に Visual C# プロジェクト内のコードを公開するには
+### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Visual C# プロジェクトのコードを VBA に公開するには
 
-1. 開くか、Word 文書、Excel ブックまたは Excel テンプレート、マクロをサポートして、VBA コードを既に含むに基づくドキュメント レベルのプロジェクトを作成します。
+1. マクロをサポートし、既に VBA コードが含まれている Word 文書、Excel ブック、または Excel テンプレートに基づくドキュメントレベルのプロジェクトを開くか、作成します。
 
-    マクロをサポートするドキュメントのファイル形式の詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+    マクロをサポートするドキュメントファイル形式の詳細については、「 [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)」を参照してください。
 
    > [!NOTE]
    > この機能は、Word テンプレート プロジェクトでは使用できません。
 
-2. ドキュメント内の VBA コードがマクロを有効にするユーザーを確認なしで実行を許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
+2. マクロを有効にするようユーザーに求めることなく、ドキュメント内の VBA コードの実行が許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
-3. プロジェクトで、パブリック クラスを VBA に公開するメンバーを追加し、新しいメンバーとして宣言**パブリック**します。
+3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを**パブリック**として宣言します。
 
-4. 次の適用<xref:System.Runtime.InteropServices.ComVisibleAttribute>と<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性を VBA に公開するクラス。 これらの属性によってクラスが COM で表示されるようになりますが、クラスのインターフェイスは生成されません。
+4. 次の <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性と <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性を、VBA に公開するクラスに適用します。 これらの属性によってクラスが COM で表示されるようになりますが、クラスのインターフェイスは生成されません。
 
    ```csharp
    [System.Runtime.InteropServices.ComVisible(true)]
@@ -56,9 +56,9 @@ ms.locfileid: "63419517"
        System.Runtime.InteropServices.ClassInterfaceType.None)]
    ```
 
-5. 上書き、 **GetAutomationObject**を VBA に公開するクラスのインスタンスを返すプロジェクトでホスト項目クラスのメソッド。
+5. プロジェクトのホスト項目クラスの**GetAutomationObject**メソッドをオーバーライドして、VBA に公開するクラスのインスタンスを返します。
 
-   - VBA にホスト項目クラスを公開する場合は、オーバーライド、 **GetAutomationObject** 、このクラスに属しているクラスの現在のインスタンスを返すメソッド。
+   - ホスト項目クラスを VBA に公開する場合は、このクラスに属する**GetAutomationObject**メソッドをオーバーライドし、クラスの現在のインスタンスを返します。
 
      ```csharp
      protected override object GetAutomationObject()
@@ -67,7 +67,7 @@ ms.locfileid: "63419517"
      }
      ```
 
-   - VBA のホスト項目ではないクラスを公開する場合は、オーバーライド、 **GetAutomationObject**プロジェクト内の項目し、非ホスト項目クラスのインスタンスを返す任意のホストのメソッド。 たとえば、次のコードはという名前のクラスを公開することを仮定`DocumentUtilities`VBA にします。
+   - ホスト項目ではないクラスを VBA に公開する場合は、プロジェクト内の任意のホスト項目の**GetAutomationObject**メソッドをオーバーライドし、非ホスト項目クラスのインスタンスを返します。 たとえば、次のコードは、という名前のクラスを VBA に公開していることを前提としてい `DocumentUtilities` ます。
 
      ```csharp
      protected override object GetAutomationObject()
@@ -76,34 +76,34 @@ ms.locfileid: "63419517"
      }
      ```
 
-     ホスト項目の詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
+     ホスト項目の詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
-6. VBA に公開するクラスからインターフェイスを抽出します。 **インターフェイスの抽出** ダイアログ ボックスで、インターフェイス宣言で追加するパブリック メンバーを選択します。 詳細については、次を参照してください。[抽出インターフェイス リファクタリング](../ide/reference/extract-interface.md)します。
+6. VBA に公開しているクラスからインターフェイスを抽出します。 [**インターフェイスの抽出**] ダイアログボックスで、インターフェイス宣言に含めるパブリックメンバーを選択します。 詳細については、「[インターフェイスの抽出リファクタリング](../ide/reference/extract-interface.md)」を参照してください。
 
-7. 追加、**パブリック**キーワードをインターフェイスの宣言にします。
+7. **パブリック**キーワードをインターフェイス宣言に追加します。
 
-8. 次を追加することで、インターフェイスを COM に表示されるように<xref:System.Runtime.InteropServices.ComVisibleAttribute>属性をインターフェイス。
+8. インターフェイスに次の属性を追加して、インターフェイスが COM に表示されるようにし <xref:System.Runtime.InteropServices.ComVisibleAttribute> ます。
 
    ```csharp
    [System.Runtime.InteropServices.ComVisible(true)]
    ```
 
-9. (Word) のドキュメントまたはワークシート (for Excel) をデザイナーで開く[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+9. のデザイナーで、ドキュメント (Word の場合) またはワークシート (Excel の場合) を開き [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
 10. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
 
     > [!NOTE]
-    > かどうか、ブックまたはドキュメントが含まれない VBA コードまたはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **ReferenceAssemblyFromVbaProject**プロパティを**True**. これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject**プロパティを**True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
-11. 表示されるメッセージで **[OK]** をクリックします。 このメッセージ通知することを追加する場合 VBA コードをブックまたはドキュメントからプロジェクトを実行するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、VBA コードは失われます、次回、プロジェクトをビルドします。 これは、ビルドでドキュメントを出力フォルダーは、プロジェクトをビルドするたびに上書きされるためです。
+11. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、からプロジェクトを実行するときに、ブックまたはドキュメントに VBA コードを追加した場合、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 次回プロジェクトをビルドするときに vba コードが失われることを通知します。 これは、プロジェクトをビルドするたびに、ビルド出力フォルダー内のドキュメントが上書きされるためです。
 
-     この時点では、VBA プロジェクトがアセンブリを呼び出すことができるように、Visual Studio は、プロジェクトを構成します。 Visual Studio では、という名前のメソッドも追加します`GetManagedClass`VBA プロジェクトにします。 このメソッドは、任意の場所から呼び出すことができますを VBA に公開したクラスにアクセスする VBA プロジェクトにします。
+     この時点で、VBA プロジェクトがアセンブリを呼び出すことができるように、Visual Studio によってプロジェクトが構成されます。 また、Visual Studio では、という名前のメソッドが `GetManagedClass` VBA プロジェクトに追加されます。 Vba プロジェクト内の任意の場所からこのメソッドを呼び出して、VBA に公開したクラスにアクセスできます。
 
 12. プロジェクトをビルドします。
 
 ## <a name="see-also"></a>関連項目
-- [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
-- [VBA とドキュメント レベルのカスタマイズを結合します。](../vsto/combining-vba-and-document-level-customizations.md)
-- [チュートリアル: コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
-- [方法: Visual Basic プロジェクトでのコードを VBA に公開します。](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)
+- [チュートリアル: Visual C&#35; プロジェクトで VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- [方法: Visual Basic プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

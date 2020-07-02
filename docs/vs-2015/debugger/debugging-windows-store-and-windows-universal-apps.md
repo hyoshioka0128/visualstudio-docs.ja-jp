@@ -1,5 +1,5 @@
 ---
-title: Windows ストアと Windows ユニバーサル アプリのデバッグ |Microsoft Docs
+title: Windows ストアアプリと Windows ユニバーサルアプリのデバッグ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205655"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545562"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Windows ストアと Windows ユニバーサル アプリのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio デバッガーでは、Windows ストア アプリのデバッグを完全にサポートを提供します。  
+Visual Studio デバッガーでは、Windows ストアアプリのデバッグを完全にサポートしています。  
   
- Windows ユニバーサル アプリのデバッグについては、次を参照してください。[の展開と Windows ユニバーサル プラットフォーム アプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)します。  
+ Windows ユニバーサルアプリのデバッグの詳細については、「 [Windows ユニバーサルプラットフォームアプリの展開とデバッグ](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx)」を参照してください。  
   
- Windows Phone アプリをデバッグするを参照してください。 [for Windows Phone 8 アプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx)します。  
+ Windows Phone アプリをデバッグするには、「 [Windows Phone 8 用のアプリのデバッグ](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
-|||  
+|Title|説明|  
 |-|-|  
 |[Visual Studio からアプリを実行](../debugger/run-store-apps-from-visual-studio.md)|ローカル コンピューター、アプリのシミュレーターやエミュレーター、またはリモート デバイスでストア アプリを実行します。|  
 |[Visual Studio でのアプリのデバッグ](../debugger/debug-store-apps-in-visual-studio.md)|Visual Studio デバッガーを使用して、ストア アプリのバグを見つけて修正します。|  
-|[Windows ストア アプリ用コンテンツのプリフェッチ](../debugger/prefetch-content-for-windows-store-apps.md)|Windows ストア アプリでの ContentPrefetcher クラスの影響を分析します。|  
+|[Windows ストア アプリ用コンテンツのプリフェッチ](../debugger/prefetch-content-for-windows-store-apps.md)|Windows ストア アプリでの ContentPrefetcher クラスの効果を分析します。|  
   
 ## <a name="see-also"></a>関連項目  
  [静的コード分析によるコード品質の分析](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658890"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540843"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: メンバーは、戻り値の型以外にも異なる点がなければなりません
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:メンバーは、戻り値の型以外にも異なる点がなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
@@ -35,7 +35,7 @@ ms.locfileid: "72658890"
 ## <a name="cause"></a>原因
  2つのパブリックメンバーまたはプロテクトメンバーは、戻り値の型を除いて同一のシグネチャを持ちます。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  共通言語ランタイムでは、戻り値の型を使用して同一のメンバーを区別することが許可されていますが、この機能は共通言語仕様ではありません。また、.NET プログラミング言語の一般的な機能でもありません。 メンバーが戻り値の型のみが異なる場合、開発者と開発ツールはそれらを正しく区別しない可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -45,7 +45,7 @@ ms.locfileid: "72658890"
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、Microsoft 中間言語 (MSIL) で、この規則に違反する型を示しています。 または Visual Basic .NET を使用しC#た場合、この規則に違反することはありません。
+ 次の例では、Microsoft 中間言語 (MSIL) で、この規則に違反する型を示しています。 C# または Visual Basic .NET を使用した場合、この規則に違反することはありません。
 
 ```
 

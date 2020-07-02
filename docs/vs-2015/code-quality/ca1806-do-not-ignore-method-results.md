@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f68ab71d9ce4fab1b0612f15d866c58e302a317e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671507"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543872"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: メソッドの結果を無視しない
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806:メソッドの結果を無視しない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
@@ -39,7 +39,7 @@ ms.locfileid: "72671507"
 
 - 新しい文字列を作成して返すメソッドが呼び出され、新しい文字列が使用されることはありません。
 
-- 使用されていない HRESULT またはエラーコードを返す COM メソッドまたは P/Invoke メソッド。 規則の説明
+- 使用されていない HRESULT またはエラーコードを返す COM メソッドまたは P/Invoke メソッド。 ルールの説明
 
   不要なオブジェクトの作成と、使用されていないオブジェクトの関連するガベージコレクションにより、パフォーマンスが低下します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "72671507"
 
  メソッド A がメソッド B を呼び出しますが、メソッド B が返す新しい文字列インスタンスを使用しない場合。 インスタンスを引数として別のメソッドに渡し、インスタンスを変数に代入します。 不要な場合は、呼び出しを削除します。
 
- -または-
+ \- または -
 
  メソッド A がメソッド B を呼び出しても、メソッドが返す HRESULT またはエラーコードを使用しない場合。 条件付きステートメントで結果を使用するか、変数に結果を代入するか、または別のメソッドに引数として渡します。
 

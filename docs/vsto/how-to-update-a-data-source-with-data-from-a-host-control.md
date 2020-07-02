@@ -1,7 +1,7 @@
 ---
 title: '方法: ホストコントロールのデータを使用してデータソースを更新する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255668"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541246"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>方法: ホストコントロールのデータを使用してデータソースを更新する
   ホスト コントロールをデータ ソースにバインドし、コントロール内のデータに加えられた変更でデータ ソースを更新することができます。 この処理には主に 2 つの手順があります。
@@ -54,7 +54,7 @@ ms.locfileid: "71255668"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>コードを使用してメモリ内データ ソースを自動的に更新するようにコントロールを設定するには
 
-1. コントロールをデータソースにバインドする<xref:System.Windows.Forms.Binding>オブジェクトの OnPropertyChanged モードを使用します。このモードには、コントロールがバインドされています。 データ ソースの更新には 2 つのオプションがあります。
+1. <xref:System.Windows.Forms.Binding>コントロールをデータソースにバインドするオブジェクトの OnPropertyChanged モードを使用します。このモードには、コントロールがバインドされています。 データ ソースの更新には 2 つのオプションがあります。
 
    - コントロールの検証時にデータソースを更新するには、このプロパティを「system.string」に設定します。
 
@@ -76,7 +76,7 @@ ms.locfileid: "71255668"
 
 3. **[プロパティ]** ウィンドウで **(DataBindings)** プロパティを展開します。
 
-4. **[(詳細)]** プロパティの横にある省略記号ボタン (![VisualStudioEllipsesButton スクリーンショット](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton スクリーンショット")) をクリックします。
+4. [ **(詳細)** ] プロパティの横にある省略記号ボタン (![VisualStudioEllipsesButton スクリーンショット](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton スクリーンショット")) をクリックします。
 
 5. **[フォーマットと詳細バインド]** ダイアログ ボックスで、 **[データ ソース更新モード]** ドロップダウン リストをクリックし、次の値のいずれかを選びます。
 
@@ -103,11 +103,11 @@ ms.locfileid: "71255668"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2. プロジェクトで`Update`生成された TableAdapter のメソッドを呼び出します。
+2. `Update`プロジェクトで生成された TableAdapter のメソッドを呼び出します。
 
      デザイン時に文書またはブックにデータバインドコントロールを追加すると、TableAdapter が自動的に生成されます。 TableAdapter は、プロジェクト内の型指定されたデータセットをデータベースに接続します。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
 
-     次のコード例では、Northwind データベースの Customers テーブルへの接続があり、プロジェクトにという`customersTableAdapter`名前の TableAdapter とという名前`northwindDataSet`の型指定されたデータセットが含まれていることを前提としています。
+     次のコード例では、Northwind データベースの Customers テーブルへの接続があり、プロジェクトにという名前の TableAdapter とと `customersTableAdapter` いう名前の型指定されたデータセットが含まれていることを前提としてい `northwindDataSet` ます。
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -117,7 +117,7 @@ ms.locfileid: "71255668"
 - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)
 - [TableAdapter を使用してデータを更新する](../data-tools/update-data-by-using-a-tableadapter.md)
 - [方法: ワークシート内のデータベースレコードをスクロールする](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [方法: データベースのデータをワークシートに設定する](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [方法: オブジェクトからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [方法: データベースのデータをワークシートに読み込む](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [方法: オブジェクトのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [方法: データベースのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [方法: サービスからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [方法: サービスのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661056"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545263"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke 宣言はポータブルでなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
@@ -35,15 +35,15 @@ ms.locfileid: "72661056"
 ## <a name="cause"></a>原因
  このルールは、P/Invoke の各パラメーターと戻り値のサイズを評価し、32ビットおよび64ビットのプラットフォームでアンマネージコードにマーシャリングされたときのサイズが正しいことを確認します。 この規則の最も一般的な違反は、プラットフォームに依存するポインターサイズの変数が必要な固定サイズの整数を渡すことです。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  次のいずれかのシナリオがこの規則に違反しています。
 
-- 戻り値またはパラメーターは、`IntPtr` として型指定する必要がある場合、固定サイズの整数として型指定されます。
+- 戻り値またはパラメーターは、として型指定する必要がある場合、固定サイズの整数として型指定され `IntPtr` ます。
 
-- 戻り値またはパラメーターは、固定サイズの整数として型指定する必要がある場合に `IntPtr` として型指定されます。
+- 戻り値またはパラメーターは、 `IntPtr` 固定サイズの整数として型指定する必要があるときに、として型指定されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この違反を修正するには、`IntPtr` または `UIntPtr` を使用して `Int32` または `UInt32` ではなくハンドルを表します。
+ またはを使用して、またはではなくハンドルを表すことで、この違反を修正できます `IntPtr` `UIntPtr` `Int32` `UInt32` 。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この警告を抑制しないでください。
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- この例では、`nIconIndex` パラメーターが `IntPtr` として宣言されています。これは、32ビットプラットフォームでは幅が4バイト、64ビットプラットフォームでは8バイト幅です。 次のアンマネージ宣言では、`nIconIndex` がすべてのプラットフォームで4バイト符号なし整数であることがわかります。
+ この例では、 `nIconIndex` パラメーターはとして宣言されてい `IntPtr` ます。これは32ビットプラットフォームでは幅が4バイト、64ビットプラットフォームでは幅が8バイトです。 次のアンマネージ宣言で `nIconIndex` は、がすべてのプラットフォームの4バイト符号なし整数であることがわかります。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -78,5 +78,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [移植性に関する警告](../code-quality/portability-warnings.md)

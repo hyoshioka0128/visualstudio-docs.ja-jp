@@ -1,7 +1,7 @@
 ---
-title: '方法: ワークシートに XMLMappedRange コントロールを追加します。'
+title: '方法: ワークシートに XMLMappedRange コントロールを追加する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,20 +13,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427443"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544886"
 ---
-# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>方法: ワークシートに XMLMappedRange コントロールを追加します。
-  Microsoft Office Excel のセルに XML 要素をマップすると、Visual Studio は自動的に追加、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールをワークシートにします。
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>方法: ワークシートに XMLMappedRange コントロールを追加する
+  XML 要素を Microsoft Office Excel のセルにマップすると、Visual Studio によって自動的に <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールがワークシートに追加されます。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールでは使用できません、**ツールボックス**または**データソース**ウィンドウ。 さらに、作成することはできません<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>プログラムで制御します。
+> コントロールは、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> **ツールボックス**または [**データソース**] ウィンドウでは使用できません。 また、プログラムによってコントロールを作成することはできません <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 。
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>ワークシートに XMLMappedRange コントロールを追加するには
 
@@ -34,35 +34,35 @@ ms.locfileid: "63427443"
 
 2. コントロールを追加するワークシートを開きます。
 
-3. **開発者**] タブで [**ソース**します。
+3. [**開発者**] タブで、[**ソース**] をクリックします。
 
     > [!NOTE]
-    > 場合、**開発者**タブがリボンに表示されない、有効にする必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > リボンに [**開発者**] タブが表示されていない場合は、有効にする必要があります。 詳細については、「[方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
-     **XML ソース**タスク ウィンドウが表示されます。
+     [ **XML ソース**] 作業ウィンドウが表示されます。
 
-4. **XML ソース**タスク ウィンドウで、をクリックして**XML マップ**します。
+4. [ **Xml ソース**] タスクペインで、[ **xml マップ**] をクリックします。
 
-5. **XML マップ**ダイアログ ボックスで、をクリックして**追加**します。
+5. [ **XML マップ**] ダイアログボックスで、[**追加**] をクリックします。
 
-     **XML ソース** ダイアログ ボックスが表示されます。
+     [ **XML ソース**] ダイアログボックスが表示されます。
 
-6. XML スキーマを選択、 **XML ソース** ダイアログ ボックスをクリックします**オープン**します。
+6. [ **Xml ソース**] ダイアログボックスから xml スキーマを選択し、[**開く**] をクリックします。
 
-     スキーマを追加、 **XML マップ** ダイアログ ボックス。
+     [ **XML マップ**] ダイアログボックスにスキーマが追加されます。
 
-7. **XML マップ**ダイアログ ボックスで、をクリックして**OK**。
+7. [ **XML マップ**] ダイアログボックスで、[ **OK]** をクリックします。
 
-8. 要素をドラッグ、 **XML ソース**ワークシートのセルに作業ウィンドウ。
+8. [ **XML ソース**] 作業ウィンドウからワークシート上のセルに要素をドラッグします。
 
-     <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>が作成され、プロジェクトに追加します。
+     <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>が作成され、プロジェクトに追加されます。
 
     > [!NOTE]
-    > 親要素をドラッグする場合、 **XML ソース** 作業ウィンドウ、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールが作成されます。
+    > [ **XML ソース**] 作業ウィンドウから親要素をドラッグすると、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールが作成されます。
 
 ## <a name="see-also"></a>関連項目
 - [XmlMappedRange コントロール](../vsto/xmlmappedrange-control.md)
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [方法: Visual Studio 内でワークシートにスキーマを割り当てる](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [方法: Visual Studio 内のワークシートにスキーマをマップする](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)

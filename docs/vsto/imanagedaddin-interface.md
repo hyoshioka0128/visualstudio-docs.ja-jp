@@ -1,7 +1,7 @@
 ---
 title: IManagedAddin インターフェイス
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: interface
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420994"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541129"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin インターフェイス
-  読み込むコンポーネントを作成するには、その IManagedAddin インターフェイスを実装では、VSTO アドインを管理します。このインターフェイスは、2007 Microsoft Office system に追加された機能です。
+  マネージ VSTO アドインを読み込むコンポーネントを作成するには、IManagedAddin インターフェイスを実装します。このインターフェイスは、2007 Microsoft Office システムに追加されました。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +41,7 @@ interface IManagedAddin : IUnknown
 ```
 
 ## <a name="methods"></a>メソッド
- IManagedAddin インターフェイスによって定義されているメソッドを次の表に示します。
+ 次の表に、IManagedAddin インターフェイスによって定義されるメソッドの一覧を示します。
 
 |名前|説明|
 |----------|-----------------|
@@ -49,40 +49,40 @@ interface IManagedAddin : IUnknown
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Microsoft Office アプリケーションがマネージド VSTO アドインをアンロードする直前に呼び出されます。|
 
 ## <a name="remarks"></a>Remarks
- 以降、2007 Microsoft Office system では、Microsoft Office アプリケーションでは、Office VSTO アドインの読み込みに IManagedAddin インターフェイスを使用します。独自の VSTO アドイン ローダーを作成する IManagedAddin インターフェイスを実装して、ランタイムをマネージ VSTO アドイン ローダーを使用する代わりに VSTO アドイン (*VSTOLoader.dll*) と[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 詳細については、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
+ 2007 Microsoft Office システムから Microsoft Office アプリケーションでは、IManagedAddin インターフェイスを使用して Office VSTO アドインを読み込むことができます。IManagedAddin インターフェイスを実装して、VSTO アドインローダー (*VSTOLoader.dll*) およびを使用する代わりに、マネージ vsto アドイン用の独自の vsto アドインローダーとランタイムを作成でき [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 詳細については、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
 
-## <a name="how-managed-add-ins-are-loaded"></a>マネージ アドインを読み込む方法
+## <a name="how-managed-add-ins-are-loaded"></a>マネージアドインの読み込み方法
  アプリケーションが起動すると、次の処理が行われます。
 
 1. アプリケーションによって、次のレジストリ キーにあるエントリが検索され、VSTO アドインが検出されます。
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<アプリケーション名 >* \Addins\\**
+    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>*\\**
 
     このレジストリ キーにある各エントリは、VSTO アドインの一意な ID です。 通常、これは VSTO アドイン アセンブリの名前です。
 
 2. アプリケーションによって、各 VSTO アドイン エントリにある `Manifest` エントリが検索されます。
 
-    マネージ VSTO アドインのマニフェストの完全なパスを格納できる、`Manifest`エントリ**HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<アプリケーション名 >_ \Addins\\ _\<アドイン ID >_** します。 マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。
+    マネージ VSTO アドインは `Manifest` ** \\ _\<application name>_ \\ _\<add-in ID>_ HKEY_CURRENT_USER \software\microsoft\office**の下のエントリにマニフェストの完全なパスを格納できます。 マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。
 
-3. アプリケーションによって `Manifest` エントリが検出されると、そのアプリケーションはマネージド VSTO アドイン ローダー コンポーネントの読み込みを試みます。 アプリケーションは、IManagedAddin インターフェイスを実装する COM オブジェクトを作成しようとしています。
+3. アプリケーションによって `Manifest` エントリが検出されると、そのアプリケーションはマネージド VSTO アドイン ローダー コンポーネントの読み込みを試みます。 このアプリケーションでは、IManagedAddin インターフェイスを実装する COM オブジェクトを作成しようとします。
 
-    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] VSTO アドイン ローダー コンポーネントが含まれています (*VSTOLoader.dll*)、または IManagedAddin インターフェイスを実装して、独自に作成することができます。
+    には、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] VSTO アドインローダーコンポーネント (*VSTOLoader.dll*) が含まれています。または、IManagedAddin インターフェイスを実装して独自のアドインローダーコンポーネントを作成することもできます。
 
 4. アプリケーションによって [IManagedAddin::Load](../vsto/imanagedaddin-load.md) メソッドが呼び出され、 `Manifest` エントリの値に渡されます。
 
 5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) メソッドによって、読み込む VSTO アドイン用のアプリケーション ドメインやセキュリティ ポリシーの構成など、VSTO アドイン読み込みに必要なタスクが実行されます。
 
-   Microsoft Office アプリケーションを検出して読み込むに使用するキーが VSTO アドインを管理対象レジストリの詳細についてを参照してください[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
+   マネージ VSTO アドインの検出と読み込みに Microsoft Office アプリケーションが使用するレジストリキーの詳細については、「 [Vsto アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
 
 ## <a name="guidance-to-implement-imanagedaddin"></a>IManagedAddin を実装するためのガイダンス
- IManagedAddin を実装する場合は、次の CLSID を使用して実装を含んでいる DLL を登録する必要があります。
+ IManagedAddin を実装する場合は、次の CLSID を使用して、実装を含む DLL を登録する必要があります。
 
  99D651D7-5F7C-470E-8A3B-774D5D9536AC
 
- Microsoft Office アプリケーションでは、この CLSID を使用して、読み込みを実装する COM オブジェクトを作成します。
+ Microsoft Office アプリケーションは、この CLSID を使用して、IManagedAddin を実装する COM オブジェクトを作成します。
 
 > [!CAUTION]
-> この CLSID はによっても使用*VSTOLoader.dll*で、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 そのため、IManagedAddin を使用して、独自の VSTO アドイン ローダーおよびランタイム コンポーネントを作成する場合は展開できませんコンポーネントに依存する VSTO アドインを実行しているコンピューターに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。
+> この CLSID は、の*VSTOLoader.dll*によっても使用され [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 そのため、IManagedAddin を使用して独自の VSTO アドインローダーとランタイムコンポーネントを作成する場合、に依存する VSTO アドインを実行しているコンピューターにコンポーネントを配置することはできません [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
 
 ## <a name="see-also"></a>関連項目
-- [アンマネージ API リファレンス&#40;Visual Studio での Office 開発&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発 &#40;アンマネージ API リファレンス&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

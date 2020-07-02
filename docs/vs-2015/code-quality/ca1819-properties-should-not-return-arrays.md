@@ -15,17 +15,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c85efc3e601eb9e0d887043c50b30587e51321e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96d2164cbd6c03cb0d191b2d0c3c4607468209c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668375"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545328"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: プロパティは、配列を返すことはできません
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:プロパティは、配列を返すことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
@@ -35,7 +35,7 @@ ms.locfileid: "72668375"
 ## <a name="cause"></a>原因
  パブリック型またはプロテクトプロパティは、配列を返します。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  プロパティが読み取り専用の場合でも、プロパティによって返される配列は書き込み禁止されません。 配列の改ざんを防ぐには、プロパティで配列のコピーを返す必要があります。 一般に、このようなプロパティを呼び出すときのパフォーマンス低下は理解されません。 具体的には、プロパティをインデックス付きプロパティとして使用することがあります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -86,11 +86,11 @@ ms.locfileid: "72668375"
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
 ### <a name="comments"></a>コメント
- 次の例では、プロパティを変更して <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> を返すことによって、違反を修正します。
+ 次の例では、プロパティを変更してを返すことによって、違反を修正し <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> ます。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/cs/FxCop.Performance.PropertyModifyFixed.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/vb/FxCop.Performance.PropertyModifyFixed.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1024: 適切な場所にプロパティを使用します](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024:適切な場所にプロパティを使用します](../code-quality/ca1024-use-properties-where-appropriate.md)

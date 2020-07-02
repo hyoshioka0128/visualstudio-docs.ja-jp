@@ -1,7 +1,7 @@
 ---
-title: コードを選択したセルを含む行の形式を変更します。
+title: コードを使用して選択したセルを含む行の書式を変更する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,51 +14,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e77f555728ee89d7d202a35a91c9dbddba6224f3
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401377"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541558"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>方法: 選択したセルを含むワークシートの行の書式設定をプログラムで変更します。
-  選択したセルを含むテキストが太字の行全体のフォントを変更することができます。
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>方法: 選択したセルを含むワークシートの行の書式をプログラムによって変更する
+  選択したセルを含む行全体のフォントを変更して、テキストが太字になるようにすることができます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>現在の行を太字にして、通常の太字で表示される行以前
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>現在の行を太字にし、前の行に太字を設定するには
 
-1. 以前に選択した行を追跡する静的変数を宣言します。
+1. 前に選択した行を追跡する静的変数を宣言します。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
     [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]
 
-2. 使用して現在のセルへの参照を取得、<xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A>プロパティ。
+2. プロパティを使用して、現在のセルへの参照を取得し <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> ます。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
     [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]
 
-3. 現在行太字を使用して、スタイル、<xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A>アクティブなセルのプロパティ。
+3. アクティブセルのプロパティを使用して、現在の行を太字でスタイルし <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> ます。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
     [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]
 
-4. 現在の値を必ず`previousRow`が 0 ではありません。 0 (ゼロ) では、このコードを初めてであることを示します。
+4. の現在の値が0ではないことを確認し `previousRow` ます。 0 (ゼロ) は、このコードを初めて使用することを示します。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
     [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]
 
-5. 現在の行が前の行から異なることを確認します。
+5. 現在の行が前の行と異なることを確認します。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
     [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]
 
-6. できない行を以前選択されている行を表す範囲参照を取得し、セットは太字です。
+6. 以前に選択されていた行を表す範囲への参照を取得し、その行を太字に設定しません。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
     [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]
 
-7. 次のパスでは、前の行になるように、現在の行を格納します。
+7. 現在の行を格納して、次のパスで前の行になるようにします。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
     [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]
@@ -70,7 +70,7 @@ ms.locfileid: "66401377"
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってブック内の範囲にスタイルを適用します。](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [方法: データとワークシート間で書式設定をプログラムによってコピーします。](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: プログラムによってブック内の範囲にスタイルを適用する](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [方法: プログラムによってワークシート間でデータと書式設定をコピーする](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e30dd2945820a61aa7c96d4e6c6fd59354e0c3ae
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651957"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540739"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: ファイナライザーは保護されなければなりません
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221:ファイナライザーは保護されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
@@ -35,8 +35,8 @@ ms.locfileid: "72651957"
 ## <a name="cause"></a>原因
  パブリック型は、ファミリ (保護された) アクセスを指定しないファイナライザーを実装します。
 
-## <a name="rule-description"></a>規則の説明
- ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 この規則は、 C#、Visual Basic、および Visual C++コンパイラによって適用されます。
+## <a name="rule-description"></a>ルールの説明
+ ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 この規則は、C#、Visual Basic、および Visual C++ コンパイラによって適用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、ファイナライザーをファミリアクセス可能に変更します。
@@ -80,5 +80,5 @@ ms.locfileid: "72651957"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
