@@ -511,6 +511,8 @@
                   href: ca1802.md
                 - name: 'CA1804:使用されていないローカルを削除します'
                   href: ca1804.md
+                - name: 'CA1805:不必要に初期化しない'
+                  href: ca1805.md
                 - name: 'CA1806:メソッドの結果を無視しない'
                   href: ca1806.md
                 - name: 'CA1809:ローカルを使用しすぎないでください'
@@ -603,6 +605,8 @@
                   href: ca2014.md
                 - name: 'CA2015: MemoryManager<T> から派生した型にはファイナライザーを定義しません'
                   href: ca2015.md
+                - name: 'CA2016:CancellationToken パラメーターを 1 つのメソッドに転送する'
+                  href: ca2016.md
             - name: セキュリティの警告
               items:
                 - name: 概要
