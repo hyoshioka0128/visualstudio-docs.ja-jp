@@ -1,7 +1,7 @@
 ---
 title: '方法: Null 許容型を作成する (クラス デザイナー)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592231"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770978"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>方法: クラス デザイナーで Null 許容型を作成する
 
@@ -85,7 +85,7 @@ C# での null 許容型について詳しくは、「[null 許容型](/dotnet/c
 
 5. クラスの図形を右クリックし、 **[クラスの詳細]** をクリックします。 **[クラスの詳細]** ウィンドウで、新しい型のプロパティを表示または変更できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - <xref:System.Nullable%601>
 - [Null 許容型](/dotnet/csharp/programming-guide/nullable-types/index)

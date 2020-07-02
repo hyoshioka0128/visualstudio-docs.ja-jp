@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf797ad67b7df2eb1f3ba1246e965ed6ebbd586d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607856"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547863"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: 継承を使用しすぎないでください
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501:継承を使用しすぎないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
@@ -35,7 +35,7 @@ ms.locfileid: "72607856"
 ## <a name="cause"></a>原因
  型が、その継承階層内の 5 つ以上深いレベルにあります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  深いレベルで入れ子にされた型の確認、理解、および保守は困難です。 このルールは、分析を同じモジュール内の階層に限定します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって電子メール アイテムを作成します。'
+title: '方法: プログラムによって電子メールアイテムを作成する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd7a90853b22579557078dc0a407873e5401c36d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d22808b8d68c0fdb3b6a2374985ae25a539f0e8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575170"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546043"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>方法: プログラムによって電子メール アイテムを作成します。
-  この例では、Microsoft Office Outlook で電子メール メッセージを作成します。
+# <a name="how-to-programmatically-create-an-email-item"></a>方法: プログラムによって電子メールアイテムを作成する
+  この例では Microsoft Office Outlook に電子メールメッセージを作成します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,5 +30,5 @@ ms.locfileid: "62575170"
  [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>関連項目
-- [メールの項目を操作します。](../vsto/working-with-mail-items.md)
-- [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)
+- [メールアイテムの操作](../vsto/working-with-mail-items.md)
+- [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)

@@ -2,7 +2,7 @@
 title: MSBuild に関する問題のトラブルシューティングとログ記録
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278812"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768705"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild に関する問題のトラブルシューティングとログ記録
 
@@ -44,7 +44,7 @@ ms.locfileid: "77278812"
 - PropertyGroups と Imports
 - ItemDefinitionGroups
 - ItemGroups
-- 対象サーバー
+- ターゲット
 
 そのため、次の順序を考えてみます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "77278812"
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>インクリメンタル ビルドで必要以上にビルドされる
 
-MSBuild によってプロジェクトまたはプロジェクト項目が不必要にリビルドされる場合は、詳細またはバイナリ ビルド ログを作成します。 そのログから、不必要にビルドまたはコンパイルされていたファイルを検索できます。 次のような画面が出力されます。
+MSBuild によってプロジェクトまたはプロジェクト項目が不必要にリビルドされる場合は、詳細またはバイナリ ビルド ログを作成します。 そのログから、不必要にビルドまたはコンパイルされていたファイルを検索できます。 出力は次のようになります。
 
 ```output
   Task "CL"
@@ -117,7 +117,7 @@ MSBuild を実行したディレクトリに、Msbuild.binlog ファイルが作
 ## <a name="create-a-detailed-log"></a>詳細なログを作成する
 
 1. Visual Studio のメイン メニューから、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトおよびソリューション]**  > **[ビルド/実行]** に移動します。
-1. **[Msbuild project build verbosity]\(Msbuild プロジェクトのビルドの詳細度\)** を両方のコンボ ボックスで **[詳細]** に設定します。 先頭のものを使うと **[出力ウィンドウ]** でのビルドの詳細度を制御でき、2 番目を使うと、ビルド中に各プロジェクトの中間ディレクトリに作成される \<プロジェクト名\>.log ファイルでのビルドの詳細度を制御できます。
+1. **[Msbuild project build verbosity]\(Msbuild プロジェクトのビルドの詳細度\)** を両方のコンボ ボックスで **[詳細]** に設定します。 先頭のものを使うと **[出力ウィンドウ]** でのビルドの詳細度を制御でき、2 番目を使うと、ビルド中に各プロジェクトの中間ディレクトリに作成される \<projectname\>.log ファイルでのビルドの詳細度を制御できます。
 2. Visual Studio 開発者コマンド プロンプトで、使用する実際のパスと構成値を代入して次のコマンドのいずれかを入力します。
 
     ```cmd

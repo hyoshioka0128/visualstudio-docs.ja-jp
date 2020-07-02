@@ -3,7 +3,7 @@ title: アクセスが拒否されました |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5
 dev_langs:
@@ -13,23 +13,23 @@ dev_langs:
 ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9563cafa4895f89253b4073d788240806a86fa2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561079"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814838"
 ---
 # <a name="access-is-denied"></a>アクセスが拒否されました
 スクリプトは、現在のページのホスト以外のソースから、データにアクセスしようとしました。 Internet Explorer や他のブラウザーが従う同一生成元ポリシーは、現在のページの URL と同じスキーム、ホスト、およびポートのソースからのみ、スクリプトがデータにアクセスすることを許可しています。  
   
- たとえば、現在のページが`https://employees.mycompany.com`、次の Url からデータにアクセスすることはできません。  
+ たとえば、現在のページがの場合、 `https://employees.mycompany.com` 次の url からデータにアクセスすることはできません。  
   
-- `http://data.contoso.com`、HTTPS ではなく HTTP を使用しているためです。  
+- `http://data.contoso.com`HTTPS ではなく HTTP が使用されているためです。  
   
-- `https://somedatasource.com`を別のドメインであります。  
+- `https://somedatasource.com`。これは別のドメインであるためです。  
   
-- `https://employees.mycompany.com:8888`を別のポートを使用しているためです。  
+- `https://employees.mycompany.com:8888`。別のポートを使用しているためです。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

@@ -25,7 +25,7 @@ ms.locfileid: "85545653"
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 予約された&#39; &#39;列挙値の名前を指定しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
 |CheckId|CA1700|

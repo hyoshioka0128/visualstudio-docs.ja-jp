@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546667"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: 適切な場所にプロパティを使用します
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024:適切な場所にプロパティを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
@@ -33,9 +33,9 @@ ms.locfileid: "72661959"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリックメソッドまたはプロテクトメソッドには、`Get` で始まり、パラメーターを取らず、配列ではない値を返す名前があります。
+ パブリックメソッドまたはプロテクトメソッドには、で始まる名前があり `Get` 、パラメーターは使用せず、配列ではない値を返します。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  ほとんどの場合、プロパティはデータを表し、メソッドはアクションを実行します。 プロパティはフィールドのようにアクセスされるため、簡単に使用できます。 次の条件のいずれかが存在する場合、メソッドは、プロパティになることをお勧めします。
 
 - 引数を取らず、オブジェクトの状態情報を返します。
@@ -67,7 +67,7 @@ ms.locfileid: "72661959"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>デバッガーでのプロパティ拡張の制御
  プログラマがプロパティを使用しない理由の1つは、プログラマがデバッガーを自動展開しないようにするためです。 たとえば、プロパティに大きなオブジェクトの割り当てや P/Invoke の呼び出しが含まれる場合がありますが、実際には観測可能な副作用がない可能性があります。
 
- @No__t_0 を適用することによって、デバッガーが自動拡張プロパティを使用しないようにすることができます。 次の例は、この属性がインスタンスプロパティに適用されていることを示しています。
+ を適用して、デバッガーが自動拡張プロパティを使用しないようにすることができ <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> ます。 次の例は、この属性がインスタンスプロパティに適用されていることを示しています。
 
 ```vb
 Imports System

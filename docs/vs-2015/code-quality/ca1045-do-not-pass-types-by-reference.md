@@ -25,7 +25,7 @@ ms.locfileid: "85548474"
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:型を参照によって渡しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|DoNotPassTypesByReference|
 |CheckId|CA1045|

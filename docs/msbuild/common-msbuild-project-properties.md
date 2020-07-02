@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288950"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770873"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 
@@ -51,7 +51,7 @@ ms.locfileid: "85288950"
 | CleanFile | すべて | "クリーン キャッシュ" として使用されるファイルの名前です。 クリーン キャッシュとは、クリーン操作の実行中に削除される対象の生成されたファイルのリストです。 このファイルは、ビルド プロセスによって中間出力パスに追加されます。<br /><br /> このプロパティでは、パス情報を含まないファイル名だけを指定します。 |
 | CodePage | .NET | コンパイルですべてのソース コード ファイルに使用するコード ページを指定します。 このプロパティは、`/codepage` コンパイラ スイッチに相当します。 |
 | CompilerResponseFile | .NET | コンパイラ タスクに渡すことができる応答ファイルです (省略可能)。 |
-| 構成 | すべて | ビルドする構成です。"Debug" と "Release" のいずれかを指定します。 |
+| 構成 | すべて | ビルドしている構成 (通常は `Debug` または `Release`) ですが、ソリューションとプロジェクトのレベルで構成できます。 |
 | CscToolPath | C# | C# コンパイラ *csc.exe* のパスです。 |
 | CustomBeforeMicrosoftCommonTargets | すべて | 共通ターゲットのインポートの前に自動的にインポートされるプロジェクト ファイルまたは targets ファイルの名前です。 |
 | DebugSymbols | すべて | ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> コマンド ラインで **-p:DebugSymbols=false** と設定すると、プログラム データベース ( *.pdb*) シンボル ファイルの生成が無効になります。 |

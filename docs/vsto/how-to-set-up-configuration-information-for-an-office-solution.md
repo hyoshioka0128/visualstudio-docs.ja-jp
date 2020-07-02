@@ -1,7 +1,7 @@
 ---
-title: Office ソリューションの構成情報を設定します。
+title: Office ソリューションの構成情報を設定する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328896"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545809"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>方法: Office ソリューションの構成情報を設定します。
-  構成ファイルを使用して、Office ソリューションに固有の設定を構成することができます。 アセンブリ バインディング ポリシー、リモート処理オブジェクト、デバッグ、およびトレースの設定などの設定を指定することができます。
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>方法: Office ソリューションの構成情報を設定する
+  構成ファイルを使用すると、Office ソリューションに固有の設定を構成できます。 アセンブリバインディングポリシー、リモート処理オブジェクト、デバッグ、トレース設定などの設定を指定できます。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -31,19 +31,19 @@ ms.locfileid: "67328896"
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-2. **カテゴリ**ウィンドウで、をクリックして**全般**します。
+2. [**カテゴリ**] ペインで、[**全般**] をクリックします。
 
-3. **テンプレート**ペインで、**アプリケーション構成ファイル**します。
+3. [**テンプレート**] ペインで、[**アプリケーション構成ファイル**] を選択します。
 
-4. **名前**ボックスに、アセンブリと、拡張機能として、同じ名前を入力 *.config*します。たとえば、Excel プロジェクト アセンブリの構成ファイルと呼ばれる*ExcelWorkbook1.dll*という名前になります*ExcelWorkbook1.dll.config*します。
+4. [**名前**] ボックスに、アセンブリと拡張子 *.config*を加えた名前を入力します。たとえば、 *ExcelWorkbook1.dll*という名前の Excel プロジェクトアセンブリの構成ファイルに*ExcelWorkbook1.dll.config*という名前が付けられます。
 
 5. **[追加]** をクリックします。
 
-6. アプリケーション構成ファイルのスキーマに従って、構成ファイルを作成します。 詳細については、次を参照してください。 [、.NET Framework の構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)します。
+6. アプリケーション構成ファイルのスキーマに従って、構成ファイルを作成します。 詳細については、「 [.NET Framework の構成ファイルスキーマ](/dotnet/framework/configure-apps/file-schema/index)」を参照してください。
 
-   Office プロジェクトを構成ファイルを使用するための特別な考慮事項はありません。
+   Office プロジェクトで構成ファイルを使用する場合、特別な考慮事項はありません。
 
 ## <a name="see-also"></a>関連項目
-- [.NET Framework の構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)
+- [.NET Framework の構成ファイルスキーマ](/dotnet/framework/configure-apps/file-schema/index)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
-- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)

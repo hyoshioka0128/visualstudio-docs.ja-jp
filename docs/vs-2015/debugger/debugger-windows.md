@@ -1,5 +1,5 @@
 ---
-title: Windows のデバッガー |Microsoft Docs
+title: デバッガーウィンドウ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,26 +9,25 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686769"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545627"
 ---
 # <a name="debugger-windows"></a>デバッガー ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-プログラムのデバッグ中に、ほとんどのデバッガー ウィンドウを開くことができます。 デバッガー ウィンドウの一覧を表示するには、ブレークポイントを設定し、デバッグを開始します。 ブレークポイントにヒットしたら、実行を停止し、 **[デバッグ] / [ウィンドウ]** をクリックします。  
+プログラムのデバッグ中に、ほとんどのデバッガー ウィンドウを開くことができます。 デバッガー ウィンドウの一覧を表示するには、ブレークポイントを設定し、デバッグを開始します。 ブレークポイントにヒットし、実行が停止したら、[デバッグ]、[**ウィンドウ**] の順にクリックします。  
   
-||||  
+|**Window**|**ホット キー**|**トピックを参照**|  
 |-|-|-|  
-|**ウィンドウ**|**ホット キー**|**トピックを参照してください。**|  
 |ブレークポイント|Ctrl + Alt + B|[ブレークポイントの使用](../debugger/using-breakpoints.md)|  
 |例外設定|Ctrl + Alt + E|[デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)|  
 |Output|Ctrl + Alt + O|[[出力] ウィンドウ](../ide/reference/output-window.md)|  
 |GPU スレッド|-|[方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)|  
-|[タスク]|Ctrl + Shift + D、K|[[タスク] ウィンドウの使用](../debugger/using-the-tasks-window.md)|  
+|タスク|Ctrl + Shift + D、K|[[タスク] ウィンドウの使用](../debugger/using-the-tasks-window.md)|  
 |並列スタック|Ctrl + Shift + D、S|[[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)|  
 |並列ウォッチ|Ctrl + Shift + D、(1、2、3、4)|[[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|Ctrl + Alt + W、(1、2、3、4)|[ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)|  
@@ -36,7 +35,7 @@ ms.locfileid: "65686769"
 |自動|Ctrl + Alt + V、A|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |ローカル|Ctrl + Alt + V、L|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |イミディエイト|Ctrl + Alt + I|[イミディエイト ウィンドウ](../ide/reference/immediate-window.md)|  
-|Python 対話形式デバッグ|Shift + Alt + I|[PTVS の使用を開始する: 対話型 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python 対話形式デバッグ|Shift + Alt + I|[PTVS の概要: 対話型の Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript コンソール|Ctrl + Alt + V、C|[クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM Explorer|Ctrl + Alt + V、D|[DOM Explorer を使用したレイアウトのデバッグ](../debugger/debug-layout-using-dom-explorer.md)|  
 |ライブ ビジュアル ツリー|-|[デバッグ中にXAML のプロパティを調べる](../debugger/inspect-xaml-properties-while-debugging.md)|  

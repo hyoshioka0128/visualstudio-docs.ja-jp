@@ -1,9 +1,9 @@
-﻿---
+---
 title: 有効桁数が範囲を超えています |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5027
 dev_langs:
@@ -14,19 +14,19 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364794472cbf17643cebbd926cd3fda6e93be1f9
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: aea1e999928d9d3f9bc8bdfe8c6a0a88ce8b2c84
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577280"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814786"
 ---
 # <a name="the-precision-is-out-of-range"></a>有効桁数の範囲を超えています。
-関数 **Number.prototype.toPrecision** は、無効な引数を受け取ることができません。 関数 **ToPrecision** への引数は、1 ～ 21 の範囲内である必要があります。  
+関数**toPrecision**に無効な引数を渡そうとしました。 **ToPrecision**の引数は、1 ~ 21 (両端を含む) でなければなりません。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- `toPrecision` の引数が大きすぎるか、または小さすぎないことを確認してください。  
+- の引数 `toPrecision` が大きすぎるか、小さすぎないことを確認してください。  
   
 ## <a name="see-also"></a>関連項目  
  [toPrecision メソッド (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

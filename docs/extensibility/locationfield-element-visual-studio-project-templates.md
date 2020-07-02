@@ -1,8 +1,8 @@
 ---
-title: ロケーションフィールド要素 (Visual Studio プロジェクト テンプレート) |マイクロソフトドキュメント
+title: LocationField 要素 (Visual Studio プロジェクトテンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702884"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770027"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>場所フィールド要素
-プロジェクト テンプレートの [**新しいプロジェクト**] ダイアログ ボックスの **[場所**] テキスト ボックスを有効にするか、無効にするか、非表示にするかを指定します。
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 要素 (Visual Studio プロジェクトテンプレート)
+[**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスが、プロジェクトテンプレートに対して有効、無効、または非表示のいずれであるかを指定します。
 
- \<VS テンプレート\<>\<テンプレートデータ>ロケーション フィールド>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>構文
 
@@ -35,10 +36,10 @@ ms.locfileid: "80702884"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -51,18 +52,18 @@ ms.locfileid: "80702884"
 
  有効なテキスト値は次のとおりです。
 
-- `Enabled`をクリックすると、[**新しいプロジェクト**] ダイアログ ボックスの **[場所**] ボックスが有効になります。
+- `Enabled`。 [**新しいプロジェクト**] ダイアログボックスの [**場所**] ボックスが有効になっていることを指定します。
 
-- `Disabled`を指定すると、[**新しいプロジェクト**] ダイアログ ボックスの **[場所**] ボックスが無効になります。
+- `Disabled`。 [**新しいプロジェクト**] ダイアログボックスの [**場所**] ボックスが無効になっていることを指定します。
 
-- `Hidden`をクリックすると、[**新しいプロジェクト**] ダイアログ ボックスの **[場所**] ボックスが非表示になります。
+- `Hidden`[**新しいプロジェクト**] ダイアログボックスの [**場所**] ボックスが非表示になるように指定します。
 
 ## <a name="remarks"></a>Remarks
  既定値は `Enabled` です。
 
- [**新しいプロジェクト**] ダイアログ ボックスの **[場所**] テキスト ボックスでは、新しいプロジェクトを保存する既定のディレクトリを変更できます。
+ [**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスを使用すると、新しいプロジェクトを保存する既定のディレクトリを変更できます。
 
- 要素で指定された`Location`値は、基になるプロジェクト システムがサポートする場合にのみダイアログ ボックスで受け入れられます。
+ 要素で指定された値 `Location` は、基になるプロジェクトシステムでサポートされている場合にのみ、ダイアログボックスによって有効になります。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] テンプレートのメタデータの例を次に示します。
@@ -93,5 +94,5 @@ ms.locfileid: "80702884"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

@@ -1,18 +1,18 @@
 ---
 title: '方法: ドラッグ アンド ドロップ ハンドラーを追加する'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594696"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545666"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
@@ -22,7 +22,7 @@ ms.locfileid: "75594696"
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義
 
-`OnDragDrop`、`OnDoubleClick`、`OnDragOver`、およびその他のメソッドはオーバーライドできます。
+`OnDragDrop`、 `OnDoubleClick` 、 `OnDragOver` 、およびその他のメソッドはオーバーライドできます。
 
 新しいコード ファイルを DSL プロジェクトに追加します。 ジェスチャハンドラーの場合は、通常、少なくとも次の `using` ディレクティブが必要です。
 
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-このメソッドは、マウスポインターがこの図形または図の上にあるときにユーザーがマウスボタンを離すと呼び出されます。これは、以前に `None`以外の値に `e.Effect` 設定されて `OnDragOver(DiagramDragEventArgs e)` た場合に呼び出されます。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-このメソッドは、 `OnDragOver(DiagramDragEventArgs e)` 以前に `e.Effect` 以外の値に設定されている場合に、マウスポインターがこの図形または図の上にあるときにユーザーがマウスボタンを離すと呼び出され `None` ます。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -124,17 +124,17 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ドラッグ ソース情報が使用可能な形式を見つけるには、コードをデバッグ モードで実行し、ブレークポイントを `OnDragOver()` または `CanDragDrop()` のエントリに設定します。 `DiagramDragEventArgs` パラメーターの値を確認します。 情報は次の 2 つの形式で提供されます。
 
-- <xref:System.Windows.Forms.IDataObject>`Data`-このプロパティは、通常は複数の形式で、ソースオブジェクトのシリアル化されたバージョンを格納します。 最も有用な関数は次のとおりです。
+- <xref:System.Windows.Forms.IDataObject>  `Data`-このプロパティは、通常、複数の形式で、ソースオブジェクトのシリアル化されたバージョンを格納します。 最も有用な関数は次のとおりです。
 
   - GetDataFormats ()-ドラッグしたオブジェクトをデコードできる形式が一覧表示されます。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
 
-  - `diagramEventArgs.Data.GetData(format)`-ドラッグしたオブジェクトを指定した形式でデコードします。 オブジェクトを適切な型にキャストします。 例:
+  - `diagramEventArgs.Data.GetData(format)`-ドラッグしたオブジェクトを指定した形式でデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
     ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、「[ドラッグアンドドロップでモデルバス参照を送信する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
 
-- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype`-ユーザーが DSL または UML モデルから項目をドラッグできるようにする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`-ユーザーが DSL または UML モデルから項目をドラッグできるようにする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -148,7 +148,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      UML 図形を受け入れるには、実験で UML 図形クラスの Guid を確認します。 通常、どの図でも要素の種類には複数あることに注意してください。 また、DSL または UML 図からドラッグするオブジェクトは図形であり、モデル要素ではありません。
 
-`DiagramDragEventArgs` には、現在のマウスポインターの位置と、ユーザーが CTRL、ALT、または SHIFT キーを押しているかどうかを示すプロパティもあります。
+`DiagramDragEventArgs`には、現在のマウスポインターの位置と、ユーザーが CTRL、ALT、または SHIFT キーを押しているかどうかを示すプロパティもあります。
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>ドラッグした要素の元を取得する方法
 
@@ -160,9 +160,9 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ソース DSL に Visual Studio モデルバスでアクセスできるようにします。
 
-1. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン サーフェイスを右クリックし、をクリックし、 **Modelbus の有効化**します。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
+1. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン画面を右クリックし、[ **Modelbus の有効化**] をクリックします。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
 
-2. **[すべてのテンプレートの変換]** をクリックし、ソリューションをリビルドします。
+2. [**すべてのテンプレートの変換**] をクリックし、ソリューションをリビルドします。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>ソース DSL からオブジェクトを送信するには
 
