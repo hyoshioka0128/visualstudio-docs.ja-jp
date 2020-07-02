@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって Visio 図面に図形を追加します。'
+title: '方法: プログラムによって Visio 図面に図形を追加する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e172ff57fb784d6ae768dde1e705ef645b3f9a9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967521"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538061"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>方法: プログラムによって Visio 図面に図形を追加します。
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>方法: プログラムによって Visio 図面に図形を追加する
   ステンシルからマスターを取得し、図形をアクティブ ページにドロップすると、Microsoft Office Visio 図面に図形を追加できます。
 
  詳しくは、 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) メソッド、 [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) プロパティ、 [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) メソッドの VBA リファレンス ドキュメントをご覧ください。
 
-## <a name="add-shapes-to-a-visio-document"></a>Visio 図面に図形を追加します。
+## <a name="add-shapes-to-a-visio-document"></a>Visio 図面への図形の追加
 
 ### <a name="to-add-shapes-to-a-visio-document"></a>Visio 図面に図形を追加するには
 
@@ -38,6 +38,6 @@ ms.locfileid: "62967521"
 
 ## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)
-- [Visio オブジェクト モデルの概要](../vsto/visio-object-model-overview.md)
-- [Visio 図形を操作します。](../vsto/working-with-visio-shapes.md)
-- [方法: プログラムによってコピーして、Visio 図面に図形を貼り付けます](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)
+- [Visio オブジェクトモデルの概要](../vsto/visio-object-model-overview.md)
+- [Visio 図形を操作する](../vsto/working-with-visio-shapes.md)
+- [方法: Visio 図面の図形をプログラムによってコピーして貼り付ける](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)

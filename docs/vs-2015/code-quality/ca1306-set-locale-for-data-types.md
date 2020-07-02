@@ -25,7 +25,7 @@ ms.locfileid: "85539023"
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:データ型のロケールを設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|

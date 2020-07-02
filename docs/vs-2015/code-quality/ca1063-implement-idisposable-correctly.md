@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663632"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539361"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable を正しく実装します
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
@@ -33,7 +33,7 @@ ms.locfileid: "72663632"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- `IDisposable` が正しく実装されていません。 この問題の原因をいくつか次に示します。
+ `IDisposable`が正しく実装されていません。 この問題の原因をいくつか次に示します。
 
 - IDisposable はクラスで再実装されます。
 
@@ -53,27 +53,27 @@ ms.locfileid: "72663632"
 
   すべての封印されていないルート IDisposable 型は、独自の protected virtual void Dispose (bool) メソッドを提供する必要があります。 Dispose () は dispose (true) を呼び出し、Finalize は Dispose (false) を呼び出す必要があります。 封印されていないルート IDisposable 型を作成する場合は、Dispose (bool) を定義して呼び出す必要があります。 詳細については、.NET Framework のドキュメントの「[フレームワークのデザインガイドライン](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)」の「[アンマネージリソースのクリーンアップ](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)」を参照してください。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  すべての IDisposable 型は、Dispose パターンを適切に実装する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  コードを調べて、この違反を修正する次の解決策を特定します。
 
-- @No__t_0 によって実装されたインターフェイスの一覧から IDisposable を削除し、代わりに基底クラスの Dispose の実装をオーバーライドします。
+- によって実装されたインターフェイスの一覧から IDisposable を削除 {0} し、代わりに基底クラスの Dispose の実装をオーバーライドします。
 
-- 型 {0} からファイナライザーを削除し、Dispose (bool disposing) をオーバーライドし、' disposing ' が false であるコードパスに終了ロジックを配置します。
+- 型からファイナライザーを削除し {0} 、Dispose (bool disposing) をオーバーライドし、' disposing ' が false であるコードパスに終了ロジックを配置します。
 
-- @No__t_0 を削除し、Dispose (bool disposing) をオーバーライドし、' disposing ' が true であるコードパスに dispose ロジックを配置します。
+- を削除し {0} 、dispose (bool disposing) をオーバーライドし、' disposing ' が true であるコードパスに dispose ロジックを配置します。
 
-- @No__t_0 が public および sealed として宣言されていることを確認します。
+- {0}が public および sealed として宣言されていることを確認します。
 
-- @No__t_0 の名前を ' Dispose ' に変更し、public および sealed として宣言されていることを確認します。
+- 名前 {0} を ' Dispose ' に変更し、public および sealed として宣言されていることを確認します。
 
-- @No__t_0 が protected、virtual、および未封印として宣言されていることを確認します。
+- {0}が protected、virtual、および未封印として宣言されていることを確認します。
 
-- Dispose (true) を呼び出すように {0} を変更してから、GC を呼び出します。現在のオブジェクトインスタンス ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 内の ' this ' または ' Me ') で Gc.suppressfinalize を取得し、を返します。
+- {0}Dispose (true) を呼び出すようにを変更し、GC を呼び出します。現在のオブジェクトインスタンス (では ' this ' または ' Me ') に Gc.suppressfinalize し [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] てから、を返します。
 
-- Dispose (false) を呼び出してからを返すように {0} を変更します。
+- を変更して、 {0} Dispose (false) を呼び出し、を返します。
 
 - 封印されていないルート IDisposable クラスを作成する場合は、IDisposable の実装が、このセクションで既に説明したパターンに従っていることを確認してください。
 

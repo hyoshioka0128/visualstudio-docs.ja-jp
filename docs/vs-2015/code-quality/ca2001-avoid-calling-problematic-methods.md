@@ -25,7 +25,7 @@ ms.locfileid: "85538581"
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001:問題が発生する可能性のあるメソッドは呼び出しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
@@ -40,7 +40,7 @@ ms.locfileid: "85538581"
 
  この規則違反は、メンバーが次のいずれかのメソッドを呼び出した場合に発生します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|GC を呼び出しています。Collect はアプリケーションのパフォーマンスに大きな影響を与える可能性があり、ほとんど必要ありません。 詳細については、MSDN の[プエルトリコ Mariani の Performance ちょっとの](https://docs.microsoft.com/archive/blogs/ricom/when-to-call-gc-collect)ブログエントリを参照してください。|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|予期しない動作が原因で、スレッドの中断と再開が非推奨とされました。  、、などの名前空間の他のクラスを使用し <xref:System.Threading> て、 <xref:System.Threading.Monitor> <xref:System.Threading.Mutex> <xref:System.Threading.Semaphore> スレッドを同期したりリソースを保護したりします。|

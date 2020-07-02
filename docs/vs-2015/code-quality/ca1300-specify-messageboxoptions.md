@@ -25,7 +25,7 @@ ms.locfileid: "85539192"
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300:MessageBoxOption を指定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|

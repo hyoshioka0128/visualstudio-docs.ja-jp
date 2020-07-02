@@ -1,7 +1,7 @@
 ---
 title: '方法: プログラムによってワークシートを印刷する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490581"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537892"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>方法: プログラムによってワークシートを印刷する
 
@@ -36,7 +36,7 @@ ms.locfileid: "69490581"
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   メソッドを使用すると、指定したオブジェクトを **[印刷プレビュー]** ウィンドウに表示できます。 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 次のコードでは、`Sheet1` という名前の <xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目があることを前提としています。
+   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>メソッドを使用すると、指定したオブジェクトを [**印刷プレビュー** ] ウィンドウに表示できます。 次のコードでは、`Sheet1` という名前の <xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目があることを前提としています。
 
 ### <a name="to-preview-a-page-before-printing"></a>印刷する前にページをプレビューするには
 
@@ -54,7 +54,7 @@ ms.locfileid: "69490581"
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   メソッドを使用すると、指定したオブジェクトを **[印刷プレビュー]** ウィンドウに表示できます。 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
+   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>メソッドを使用すると、指定したオブジェクトを [**印刷プレビュー** ] ウィンドウに表示できます。
 
 ### <a name="to-preview-a-page-before-printing"></a>印刷する前にページをプレビューするには
 

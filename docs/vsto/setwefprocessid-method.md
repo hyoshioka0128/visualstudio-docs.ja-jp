@@ -1,7 +1,7 @@
 ---
 title: SetWefProcessId メソッド
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1352ccc9318061be4a2f9ad2da7d63715acd6721
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978356"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537333"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId メソッド
-  Web 拡張機能フレームワーク (WEF) コンテンツを実行しているプロセス id を提供します。
+  Web Extensions Framework (WEF) コンテンツを実行するプロセス識別子を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -32,12 +32,12 @@ HRESULT SetWefProcessId(
 
 |パラメーター|説明|
 |---------------|-----------------|
-|*dwProcessId*|WEF コンテンツを実行するために使用するプロセスの識別子です。|
+|*dwProcessId*|WEF コンテンツを実行するために使用されるプロセス識別子。|
 
 ## <a name="return-value"></a>戻り値
  メソッドが正常に完了したかどうかを示す HRESULT 値。
 
 ## <a name="remarks"></a>Remarks
- WEF content のプロセスの作成後が WEF コンテンツを実行する前に、このメソッドを呼び出す必要があります。
+ このメソッドは、WEF コンテンツプロセスを作成した後、WEF コンテンツを実行する前に呼び出す必要があります。
 
- 開発環境を WEF content のプロセスにデバッガーをアタッチする場合は、環境は、このメソッドの実装でこの操作を実行する必要があります。
+ 開発環境で、WEF コンテンツプロセスにデバッガーをアタッチする場合は、このメソッドの実装でこの操作を実行する必要があります。

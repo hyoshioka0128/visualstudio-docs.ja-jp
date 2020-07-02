@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562363"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539855"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 要素
-  機能の要素ファイルが SharePoint に展開するときに、プロジェクト項目に含めるなど、SharePoint のファイルを表します。
+  SharePoint に配置されるときにプロジェクト項目に含める、フィーチャー要素ファイルなどの SharePoint ファイルを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -30,7 +30,7 @@ ms.locfileid: "62562363"
     Type = "Type of deployment for the file" />
 ```
 
-## <a name="type"></a>型
+## <a name="type"></a>Type
  **ProjectItemFileType**
 
 ## <a name="attributes-and-elements"></a>属性と要素
@@ -40,9 +40,9 @@ ms.locfileid: "62562363"
 
 |属性|説明|
 |---------------|-----------------|
-|**ソース**|必要な**xs:string**属性。<br /><br /> プロジェクト項目で展開するファイルの名前。|
-|**Target**|省略可能な**xs:string**属性。<br /><br /> ファイルが配置される、SharePoint のデプロイ ルート フォルダーの相対パス。 配置ルート フォルダーがで指定された展開の種類によって決まりますが、**型**属性。 場合、**ターゲット**属性が指定されていない、ファイルがで指定された名前のフォルダーに配置する、**ソース**属性。<br /><br /> 詳細については、の説明を参照してください、**配置パス**と**Deployment Root** SharePoint のプロパティ内の項目をプロジェクト[SharePoint の開発ソリューション](../sharepoint/developing-sharepoint-solutions.md)します。|
-|**Type**|必要な**xs:string**属性。<br /><br /> ファイルの展開の種類。 使用可能な値の詳細については、の説明を参照して、**展開の種類**で SharePoint プロジェクト アイテムのプロパティ[SharePoint の開発ソリューション](../sharepoint/developing-sharepoint-solutions.md)します。|
+|**ソース**|**Xs: string**属性が必要です。<br /><br /> プロジェクト項目と共に配置するファイルの名前。|
+|**Target**|**Xs: string**属性 (省略可能)。<br /><br /> 配置ルートフォルダーを基準とした、SharePoint 上でのファイルの配置先のパス。 展開ルートフォルダーは、 **type**属性によって指定された展開の種類によって決定されます。 **ターゲット**属性が指定されていない場合、ファイルは、 **Source**属性で指定された名前のフォルダーに配置されます。<br /><br /> 詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の sharepoint プロジェクト項目の**配置パス**と**配置ルート**プロパティの説明を参照してください。|
+|**Type**|**Xs: string**属性が必要です。<br /><br /> ファイルの配置の種類。 使用可能な値の詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の「sharepoint プロジェクト項目の**配置の種類**」プロパティの説明を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -51,19 +51,19 @@ ms.locfileid: "62562363"
 
 |要素|説明|
 |-------------|-----------------|
-|[ファイル](../sharepoint/files-element.md)|SharePoint に配置されるときに、SharePoint プロジェクト項目に含めるファイルを指定します。|
+|[[ファイル]](../sharepoint/files-element.md)|Sharepoint に配置されるときに SharePoint プロジェクト項目に含めるファイルを指定します。|
 
 ## <a name="remarks"></a>Remarks
- SharePoint ファイルで参照される通常**ProjectItemFile**要素がフィーチャー要素ファイルが含まれます (*Elements.xml*)、リスト定義のスキーマ ファイル (*Schema.xml*)、および Web パーツの Web パーツの定義ファイル (*.webpart*)。
+ 通常、 **ProjectItemFile**要素で参照される SharePoint ファイルには、フィーチャー要素ファイル (*Elements.xml*)、リスト定義のスキーマファイル (*Schema.xml*)、Web パーツ (*webpart*) の Web パーツ定義ファイルなどがあります。
 
 ## <a name="element-information"></a>要素情報
 
-|||
+|プロパティ|値|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
-|**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
-|**ファイルの検証**|ProjectItemModelSchema.xsd|
-|**空にすることができます。**|いいえ|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**検証ファイル**|ProjectItemModelSchema|
+|**空にすることができます**|いいえ|
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)

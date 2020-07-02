@@ -26,7 +26,7 @@ ms.locfileid: "85538637"
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
