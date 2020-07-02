@@ -5,19 +5,19 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: ec4e9539900ee39e99927bb9055a8c107f864653
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574899"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835369"
 ---
-# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::P arseScriptText
+# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 指定したコード スクリプトレットを解析することで、宣言を名前空間に追加し、必要に応じてコードを評価します。  
   
 ## <a name="syntax"></a>構文  
@@ -48,7 +48,7 @@ HRESULT ParseScriptText(
 |`ulStartingLineNumber`|[入力] 解析が開始される行を指定するゼロから始まる値。|  
 |`dwFlags`|[入力] スクリプトレットに関連付けられるフラグ。 次の値の組み合わせが可能です。|  
   
-|[値]|説明|  
+|[値]|意味|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|計算式とステートメントの区別は重要ですが、スクリプト言語で文法的にあいまいな場合、このフラグは、スクリプトレットがステートメント (またはステートメントの列挙) としてではなく式として解釈されることを指定します。 どちらであるかスクリプトレット テキストの構文から正しく判断できない場合、既定ではステートメントとして解釈されます。|  
 |SCRIPTTEXT_ISPERSISTENT|スクリプト エンジンが保存される場合 (`IPersist*::Save` の呼び出しなどにより)、または初期化状態に戻すことでリセットされる場合、この呼び出し中に追加されたコードを保存する必要があることを指定します。|  
@@ -60,22 +60,22 @@ HRESULT ParseScriptText(
 |`pexcepinfo`|[出力] 例外情報を受け取る構造体のアドレス。 `IActiveScriptParse::ParseScriptText` が DISP_E_EXCEPTION を返す場合、この構造体に情報が格納されます。|  
   
 ## <a name="return-value"></a>戻り値  
- 次のいずれかの値を返します。  
+ 次の値のいずれか。  
   
-|戻り値|説明|  
+|戻り値|意味|  
 |------------------|-------------|  
-|`S_OK`|成功。|  
+|`S_OK`|正常終了しました。|  
 |`DISP_E_EXCEPTION`|スクリプトレットの処理中に例外が発生しました。 `pexcepinfo` パラメーターに例外に関する情報が格納されます。|  
 |`E_INVALIDARG`|引数が無効です。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`E_NOTIMPL`|このメソッドはサポートされていません。 スクリプト エンジンが式やステートメントの実行時の評価をサポートしていません。|  
+|`E_NOTIMPL`|この方法はサポートされていません。 スクリプト エンジンが式やステートメントの実行時の評価をサポートしていません。|  
 |`E_UNEXPECTED`|呼び出しは不要でした (スクリプト エンジンが未初期化または終了状態である場合や、SCRIPTTEXT_ISEXPRESSION フラグが設定されていてスクリプト エンジンが初期化状態である場合など)。|  
 |`OLESCRIPT_E_SYNTAX`|指定されていない構文エラーがスクリプトレットで発生しました。|  
   
 ## <a name="remarks"></a>Remarks  
  スクリプト エンジンが初期化状態である場合、コードは実際にはこの呼び出し中に評価されません。コードはキューに入れられ、スクリプト エンジンが起動状態に移行 (を経過) すると実行されます。 コードの実行が初期化状態では許可されないため、初期化状態のときに SCRIPTTEXT_ISEXPRESSION フラグを設定してこのメソッドを呼び出すと、エラーになります。  
   
- スクリプトレットは、スクリプト言語で許可されている限り、式でもステートメントの列挙でも、その他のものでもかまいません。 たとえば、このメソッドは HTML \<SCRIPT > タグの評価で使用されます。これにより、スクリプトの状態にコンパイルするだけではなく、HTML ページの構築時にステートメントを実行できます。  
+ スクリプトレットは、スクリプト言語で許可されている限り、式でもステートメントの列挙でも、その他のものでもかまいません。 たとえば、このメソッドは HTML タグの評価で使用されます。これに \<SCRIPT> より、スクリプトの状態にコンパイルするだけではなく、html ページの構築時にステートメントを実行できます。  
   
  このメソッドに渡されるコードは、コードとして有効であり完結している必要があります。 たとえば VBScript では、このメソッドを Sub Function(x) で 1 回呼び出し、`End Sub` でもう 1 回呼び出すことは無効です。 パーサーは、このメソッドの 2 回目の呼び出しがあるため、サブルーチンの完了を待たずに、解析エラーを生成します。サブルーチンの宣言が開始したが完了しなかったためです。  
   

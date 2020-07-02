@@ -5,19 +5,19 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 533d770d-06a4-4693-873e-255c9c6f0df0
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 93c4a8fe6e5c2aac8b07f896810dcd03060b46d0
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0b82ab6cd37f789e98ca08c635011a7e04f5b871
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572201"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835629"
 ---
-# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32:: GetApplication
+# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 このスクリプトサイトに関連付けられているデバッグアプリケーションオブジェクトを返します。  
   
 ## <a name="syntax"></a>構文  
@@ -35,14 +35,14 @@ HRESULT GetApplication(
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
-|値|説明|  
+|[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
 |`E_NOTIMPL`|ホストはデバッグを直接サポートしていません。|  
   
-## <a name="remarks"></a>コメント  
- `GetApplication` メソッドは、スマートホストが各スクリプトが属するアプリケーションオブジェクトを定義する方法を提供します。 スクリプトエンジンは、このメソッドを呼び出して、含まれているアプリケーションを取得し、失敗した場合に `IProcessDebugManager::GetDefaultApplication` できるようにする必要があります。  
+## <a name="remarks"></a>Remarks  
+ メソッドは、 `GetApplication` スマートホストが各スクリプトが属するアプリケーションオブジェクトを定義する方法を提供します。 スクリプトエンジンは、含まれているアプリケーションを取得するために、このメソッドの呼び出しを試みる必要があり `IProcessDebugManager::GetDefaultApplication` ます。これが失敗した場合は、にアクセスします。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IActiveScriptSiteDebug32 インターフェイス](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)
