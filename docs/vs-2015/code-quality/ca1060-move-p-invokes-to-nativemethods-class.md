@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49a693224b6552340d2a01051318842749a84cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01ad9fc4fc57917c123404d8863d04240585793
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533433"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke を NativeMethods クラスに移動します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
@@ -35,16 +35,16 @@ ms.locfileid: "72663674"
 ## <a name="cause"></a>原因
  メソッドは、プラットフォーム呼び出しサービスを使用してアンマネージコードにアクセスし、 **NativeMethods**クラスのいずれのメンバーでもありません。
 
-## <a name="rule-description"></a>規則の説明
- @No__t_0 属性を使用してマークされている、または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] で `Declare` キーワードを使用して定義されているメソッドなどのプラットフォーム呼び出しメソッドは、アンマネージコードにアクセスします。 これらのメソッドは、次のいずれかのクラスに含まれている必要があります。
+## <a name="rule-description"></a>ルールの説明
+ 属性を使用してマークされている、またはのキーワードを使用して定義されているメソッドなどのプラットフォーム呼び出しメソッド <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> は `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 、アンマネージコードにアクセスします。 これらのメソッドは、次のいずれかのクラスに含まれている必要があります。
 
-- **NativeMethods** -このクラスは、アンマネージコードのアクセス許可のスタックウォークを抑制しません。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> をこのクラスに適用することはできません)。このクラスは、スタックウォークが実行されるため、どこからでも使用できるメソッド用です。
+- **NativeMethods** -このクラスは、アンマネージコードのアクセス許可のスタックウォークを抑制しません。 ( <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> このクラスに適用することはできません)。このクラスは、スタックウォークが実行されるため、どこからでも使用できるメソッド用です。
 
-- **SafeNativeMethods** -このクラスは、アンマネージコードのアクセス許可のスタックウォークを抑制します。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> がこのクラスに適用されます。)このクラスは、だれもが安全に呼び出すことができるメソッドを対象としています。 これらのメソッドの呼び出し元は、メソッドがどの呼び出し元に対しても無害であるため、完全なセキュリティレビューを実行して、使用方法が安全であることを確認する必要はありません。
+- **SafeNativeMethods** -このクラスは、アンマネージコードのアクセス許可のスタックウォークを抑制します。 ( <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> は、このクラスに適用されます。)このクラスは、だれもが安全に呼び出すことができるメソッドを対象としています。 これらのメソッドの呼び出し元は、メソッドがどの呼び出し元に対しても無害であるため、完全なセキュリティレビューを実行して、使用方法が安全であることを確認する必要はありません。
 
-- **UnsafeNativeMethods** -このクラスは、アンマネージコードのアクセス許可のスタックウォークを抑制します。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> がこのクラスに適用されます。)このクラスは、危険である可能性のあるメソッドを対象としています。 これらのメソッドの呼び出し元は、完全なセキュリティレビューを実行して、スタックウォークが実行されないため、使用状況が安全であることを確認する必要があります。
+- **UnsafeNativeMethods** -このクラスは、アンマネージコードのアクセス許可のスタックウォークを抑制します。 ( <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> は、このクラスに適用されます。)このクラスは、危険である可能性のあるメソッドを対象としています。 これらのメソッドの呼び出し元は、完全なセキュリティレビューを実行して、スタックウォークが実行されないため、使用状況が安全であることを確認する必要があります。
 
-  これらのクラスは `internal` (`Friend`、Visual Basic) として宣言され、新しいインスタンスが作成されないようにするためのプライベートコンストラクターを宣言します。 これらのクラスのメソッドは、`static`、`internal` (`Shared` と `Friend` Visual Basic) である必要があります。
+  これらのクラスは、(Visual Basic の) として宣言され、 `internal` `Friend` 新しいインスタンスが作成されないようにするためのプライベートコンストラクターを宣言します。 これらのクラスのメソッドは、 `static` と `internal` (Visual Basic) である必要があり `Shared` `Friend` ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、メソッドを適切な**NativeMethods**クラスに移動します。 ほとんどのアプリケーションでは、P/Invoke を**NativeMethods**という名前の新しいクラスに移動するだけで十分です。
@@ -69,7 +69,7 @@ ms.locfileid: "72663674"
 ### <a name="description"></a>説明
  **NativeMethods**クラスは**SuppressUnmanagedCodeSecurityAttribute**を使用してマークされないようにする必要があるため、このクラスに格納されている P/invoke には**UnmanagedCode**アクセス許可が必要です。 ほとんどのアプリケーションはローカルコンピューターから実行され、完全信頼と共に実行されるため、通常は問題ではありません。 ただし、再利用可能なライブラリを開発している場合は、 **SafeNativeMethods**クラスまたは**UnsafeNativeMethods**クラスを定義することを検討してください。
 
- 次の例は、user32.dll から**messagebeep**関数をラップする**ビープ**音のメソッドを示しています。 **Messagebeep** P/Invoke は**NativeMethods**クラスに格納されます。
+ 次の例は、user32.dll から**Messagebeep**関数をラップするビープ音のメソッドを示しています **。** **Messagebeep** P/Invoke は**NativeMethods**クラスに格納されます。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Design.NativeMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethods/cs/FxCop.Design.NativeMethods.cs#1)]
@@ -91,7 +91,7 @@ ms.locfileid: "72663674"
 ### <a name="description"></a>説明
  安全に呼び出すことができず、副作用を引き起こす可能性のある P/Invoke メソッドは、 **UnsafeNativeMethods**という名前のクラスに配置する必要があります。 これらのメソッドは、意図せずにユーザーに公開されないように厳密にチェックする必要があります。 ルール[CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)は、この問題を解決するのに役立ちます。 また、メソッドには、使用時に**UnmanagedCode**の代わりに要求される別のアクセス許可が必要です。
 
- 次の例は、user32.dll から**ShowCursor**関数をラップする**Hide**メソッドを示しています。
+ 次の例は、user32.dll から**ShowCursor**関数をラップする Hide メソッドを示しています **。**
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Design.NativeMethodsUnsafe#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethodsUnsafe/cs/FxCop.Design.NativeMethodsUnsafe.cs#1)]

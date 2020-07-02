@@ -16,17 +16,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 89e0797afdcf299bb466018049a6d1217c5ad2dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e3de3246980ead0b20d471321a9696451aed81ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666153"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534772"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: スコープが失われる前にオブジェクトを破棄します
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:スコープを失う前にオブジェクトを破棄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|DisposeObjectsBeforeLosingScope|
 |CheckId|CA2000|
@@ -36,7 +36,7 @@ ms.locfileid: "72666153"
 ## <a name="cause"></a>原因
  <xref:System.IDisposable> 型のローカル オブジェクトは作成されますが、そのオブジェクトに対するすべての参照がスコープ外になる前に、オブジェクトが破棄されていません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  破棄できるオブジェクトに対するすべての参照がスコープ外になる前に、オブジェクトが明示的に破棄されない場合、ガベージ コレクターでオブジェクトのファイナライザーが実行されるときに破棄されますが、タイミングは一定ではありません。 例外的なイベントが発生するとオブジェクトのファイナライザーを実行できないため、オブジェクトは明示的に破棄する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -50,7 +50,7 @@ ms.locfileid: "72666153"
 
 - 破棄可能オブジェクトのメンバーは、using ステートメントのコンストラクターでは初期化できません。
 
-- 1 つの例外ハンドラーによってのみ保護された入れ子のコンストラクター。 たとえば、オブジェクトに適用された
+- 1 つの例外ハンドラーによってのみ保護された入れ子のコンストラクター。 例:
 
     ```
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
@@ -65,9 +65,9 @@ ms.locfileid: "72666153"
  `Dispose` を呼び出すオブジェクトに対して <xref:System.IO.Stream.Close%2A> などのメソッドを呼び出した場合、または警告を発生させたメソッドがオブジェクトをラップする IDisposable オブジェクトを返す場合を除き、この規則による警告を抑制しないでください。
 
 ## <a name="related-rules"></a>関連規則
- [CA2213: 破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213:破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: オブジェクトを複数回破棄しません](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202:オブジェクトを複数回破棄しない](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>例
  破棄可能なオブジェクトを返すメソッドを実装している場合は、catch ブロックのない try/finally ブロックを使用して、そのオブジェクトが確実に破棄されるようにします。 try/finally ブロックを使用することによって、障害点での例外の発生が可能になり、そのオブジェクトが確実に破棄されます。
@@ -93,9 +93,9 @@ ms.locfileid: "72666153"
 
  これを修正するには、プロジェクトで Visual Basic コンパイラによるオーバーフロー チェックの実施を無効にするか、または次の CreateReader2 関数のようにコードを変更します。
 
- オーバーフローチェックの出力を無効にするには、ソリューションエクスプローラーでプロジェクト名を右クリックし、 **[プロパティ]** をクリックします。 **[コンパイル]** をクリックし、 **[詳細コンパイルオプション]** をクリックして、 **[整数オーバーフローのチェックを削除]** をオンにします。
+ オーバーフローチェックの出力を無効にするには、ソリューションエクスプローラーでプロジェクト名を右クリックし、[**プロパティ**] をクリックします。 [**コンパイル**] をクリックし、[**詳細コンパイルオプション**] をクリックして、[**整数オーバーフローのチェックを削除**] をオンにします。
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1](FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1)]  -->
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  <xref:System.IDisposable> [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
