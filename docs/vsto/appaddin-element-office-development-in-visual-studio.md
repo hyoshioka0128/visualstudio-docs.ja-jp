@@ -1,8 +1,8 @@
 ---
-title: '&lt;appAddin&gt;要素 (Visual Studio での Office 開発)'
+title: '&lt;appAddin &gt; 要素 (Visual Studio での Office 開発)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953245"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531639"
 ---
-# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;要素 (Visual Studio での Office 開発)
-  **AppAddin**の要素、`vstov4`名前空間は、VSTO アドインのカスタマイズに固有の情報を格納します。
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin &gt; 要素 (Visual Studio での Office 開発)
+  名前空間の**Appaddin**要素には、 `vstov4` VSTO アドインのカスタマイズ固有の情報が格納されます。
 
 ## <a name="syntax"></a>構文
 
@@ -37,31 +37,31 @@ ms.locfileid: "62953245"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- **AppAddin**要素が必要であり、`vstov4`名前空間。 1 つしかない**appAddin**アプリケーション マニフェストで定義された要素。
+ **Appaddin**要素は必須で `vstov4` あり、名前空間にあります。 アプリケーションマニフェストで定義されている**Appaddin**要素は1つだけです。
 
- **AppAddin**要素には、次の属性。
+ **Appaddin**要素には、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|**application**|必須。 Microsoft Office アプリケーションを指定します。 値は次のいずれかになります。Excel、InfoPath、Outlook、PowerPoint、Project、Visio、または Word。|
-|**LoadBehavior**|任意。 既定で、 **loadBehavior**はこの値を設定で有効にします。 デバッグする場合は、この値を 2 に設定して VSTO アドインを無効にできます。 詳細については、LoadBehavior の値」というタイトルの表を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。|
-|**keyName**|必須。 この値は、アプリケーションが VSTO アドインを読み込むのに使用するレジストリ キーの名前です。 詳細については、次を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。|
+|**application**|必須です。 Microsoft Office アプリケーションを指定します。 この値は、Excel、InfoPath、Outlook、PowerPoint、Project、Visio、Word のいずれか 1 つになります。|
+|**loadBehavior**|任意。 既定では、 **loadBehavior**は、この値をに設定することによって有効になります。 デバッグする場合は、この値を 2 に設定して VSTO アドインを無効にできます。 詳細については、「LoadBehavior Values in the [VSTO アドイン](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。|
+|**keyName**|必須です。 この値は、アプリケーションが VSTO アドインを読み込むのに使用するレジストリ キーの名前です。 詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。|
 
- **AppAddin**要素には、次の子要素。
+ **Appaddin**要素には、次の子要素があります。
 
 ### <a name="friendlyname"></a>friendlyName
- 任意。 **FriendlyName**要素については[ &#60;friendlyName&#62;要素&#40;Visual Studio での Office 開発&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)します。
+ 任意。 **Friendlyname**要素については[&#60;friendlyname&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)で説明されています。
 
-### <a name="description"></a>説明
- 任意。 **説明**要素については[&#60;説明&#62;要素&#40;Visual Studio での Office 開発&#41;](../vsto/description-element-office-development-in-visual-studio.md)します。
+### <a name="description"></a>description
+ 任意。 **Description**要素については[&#60;description&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/description-element-office-development-in-visual-studio.md)」を説明しています。
 
 ### <a name="formregions"></a>formRegions
- フォーム領域を含む Outlook VSTO アドインにのみ必須です。 **FormRegions**要素については[ &#60;formRegions&#62;要素&#40;Visual Studio での Office 開発&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)します。
+ フォーム領域を含んでいる Outlook VSTO アドインでのみ必須です。 **Formregions**要素は[&#60;formregions&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/formregions-element-office-development-in-visual-studio.md)について説明しています。
 
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
 ### <a name="description"></a>説明
- 次のコード例を示しています**appAddin**要素を使用して配置される Outlook ソリューション[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]します。 このコード例で示されている例の一部は、 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+ 次のコード例は、を使用して配置される Outlook ソリューションの**Appaddin**要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -90,6 +90,6 @@ ms.locfileid: "62953245"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
-- [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
+- [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)
+- [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)

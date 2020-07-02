@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9c976560b39fd8a9146733d78cd3a094ed3b118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: afae57f3223d24a4524f89f1669883de6ef1dd18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68202469"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532809"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework の使用に関するパフォーマンス規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 .NET Framework の使用カテゴリのパフォーマンス規則では、最適化できる具体的なメソッド、およびパフォーマンスに問題があるときに調査できる一般的な使用パターン (ガベージ コレクションやロックの競合など) が示されています。  
   
-|||  
+|ルール|説明|  
 |-|-|  
 |[DA0001: 連結には StringBuilder を使用してください](../profiling/da0001-use-stringbuilder-for-concatenations.md)|<xref:System.String.Concat%28System.String%2CSystem.String%29?displayProperty=fullName> の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。|  
 |[DA0005: 頻繁な GC2 のコレクションです](../profiling/da0005-frequent-gc2-collections.md)|比較的多数の .NET メモリ オブジェクトが、ジェネレーション 2 のガベージ コレクションで回収されています。 ジェネレーション 1 のコレクションで回収されない有効期間の短いオブジェクトが多すぎる場合、メモリ管理コストが簡単に過剰になる可能性があります。|  
@@ -36,5 +36,5 @@ ms.locfileid: "68202469"
 |[DA0022: ジェネレーション 2 のガベージ コレクションが高率です](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|多数の .NET メモリ オブジェクトが、ジェネレーション 2 のガベージ コレクションで回収されています。 ジェネレーション 1 のコレクションで回収されない有効期間の短いオブジェクトが多すぎる場合、メモリ管理コストが簡単に過剰になる可能性があります。 このルールは、ロック競合の割合がルール DA0005 の上限しきい値を超えると発生します。|  
 |[DA0023: 高い GC CPU 時間](../profiling/da0023-high-gc-cpu-time.md)|プロファイリングの間に収集されたシステム パフォーマンス データで、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大きいことが示されています。|  
 |[DA0024: 過剰な GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)|プロファイリングの間に収集されたシステム パフォーマンス データで、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大き過ぎることが示されています。 このルールは、ガベージ コレクションに費やされた時間がルール DA0023 の上限しきい値を超えると発生します。|  
-|[DA0038: 高率のロック競合](../profiling/da0038-high-rate-of-lock-contentions.md)|プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に非常に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイル方法を使用して、プロファイリングを再度実行することを検討してください。|  
+|[DA0038: 高率: ロックの競合率が高くなっています](../profiling/da0038-high-rate-of-lock-contentions.md)|プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に非常に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイル方法を使用して、プロファイリングを再度実行することを検討してください。|  
 |[DA0039: 非常に高率のロック競合](../profiling/da0039-very-high-rate-of-lock-contentions.md)|プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイル方法を使用して、プロファイリングを再度実行することを検討してください。 このルールは、ロック競合の割合がルール DA0038 の上限しきい値を超えると発生します。|

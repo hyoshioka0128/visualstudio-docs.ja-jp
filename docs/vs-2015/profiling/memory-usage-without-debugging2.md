@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586951"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532042"
 ---
 # <a name="memory-usage-without-debugging"></a>デバッグなしのメモリ使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "82586951"
   
   スナップショット ビューの画像に番号を付けて示した項目は、メモリ使用量レポートのビューを開くリンクです。  
   
-|||  
+|Image|説明|  
 |-|-|  
 |![ステップ 1](../profiling/media/procguid-1.png "ProcGuid_1")|このリンク テキストは、スナップショット取得時のメモリ内の合計バイト数を示します。<br /><br /> このリンクをクリックすると、スナップショットの詳細レポートが各型のインスタンスの合計サイズ順に並べ替えて表示されます。|  
 |![ステップ 2](../profiling/media/procguid-2.png "ProcGuid_2")|このリンク テキストは、スナップショット取得時にメモリに含まれていたオブジェクトの総数を示します。<br /><br /> このリンクをクリックすると、スナップショットの詳細レポートが各型のインスタンス数の順に並べ替えて表示されます。|  
@@ -118,7 +118,7 @@ ms.locfileid: "82586951"
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> 小さいオブジェクトの非表示  
  このフィルターを適用すると、**[サイズ (バイト)]** がスナップショット メモリの合計サイズの 0.5% を下回る型が **[マネージド ヒープ]** リストで非表示になります。  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> マイ コードのみ  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>マイ コードのみ  
  **[マイ コードのみ]** フィルターを適用すると、外部コードによって生成されたほとんどのインスタンスが非表示になります。 外部の型は、オペレーティング システムまたは Framework コンポーネントによって所有されるか、コンパイラによって生成されます。  
   
 ## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a>スナップショットの詳細レポート  
@@ -135,7 +135,7 @@ ms.locfileid: "82586951"
   
  ![マネージド ヒープ ツリー](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|名前|説明|  
 |-|-|  
 |**オブジェクトの種類**|型またはオブジェクト インスタンスの名前。|  
 |**カウント**|型のオブジェクト インスタンス数。 インスタンスの場合、この数は常に 1 です。|  
@@ -154,7 +154,7 @@ ms.locfileid: "82586951"
   
  ![インスタンスの参照されたオブジェクト ツリー](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|名前|説明|  
 |-|-|  
 |**オブジェクトの種類 / インスタンス**|型またはオブジェクト インスタンスの名前。|  
 |**サイズ (バイト)**|型の場合は、その型の全インスタンスのサイズ (型に含まれているオブジェクトのサイズは除く)。<br /><br /> インスタンスの場合は、オブジェクトのサイズ (オブジェクトに含まれているオブジェクトのサイズは除く)。|  
@@ -176,7 +176,7 @@ ms.locfileid: "82586951"
   
  この画像で、**[カウント]**、**[サイズ (バイト)]**、**[包括サイズ (バイト)]** の各列が非表示になっている点にご注意ください。  
   
-|||  
+|名前|説明|  
 |-|-|  
 |**オブジェクトの種類**|型またはオブジェクト インスタンスの名前。|  
 |**カウント**|指定したスナップショットに含まれる型のインスタンス数。 インスタンスの場合、 **[カウント]** は常に 1 です。|  
@@ -196,13 +196,13 @@ ms.locfileid: "82586951"
   
  ![インスタンスの参照されたオブジェクト ツリー](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|名前|説明|  
 |-|-|  
 |**オブジェクトの種類 / インスタンス**|型またはオブジェクト インスタンスの名前。|  
 |**サイズ (バイト)**|インスタンスの場合は、指定したスナップショットに含まれるオブジェクトのサイズ (インスタンスに含まれているオブジェクトのサイズは除く)。<br /><br /> 型の場合は、指定したスナップショットに含まれるその型のインスタンスの合計サイズ (インスタンスに含まれているオブジェクトのサイズは除く)。|  
 |**包括サイズ (バイト)**|指定したスナップショットに含まれているオブジェクトのサイズ (オブジェクトに含まれているオブジェクトのサイズを含む)。|  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [JavaScript メモリ](../profiling/javascript-memory.md)   
  [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [パフォーマンスと診断ツールの実行](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

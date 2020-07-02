@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 665dc76126eac964f405be06605c40b5b30cc9a5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586763"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532939"
 ---
 # <a name="visualize-code"></a>コードの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Visual Studio の視覚化ツールとモデリング ツールを使って、�
 
   各機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
+## <a name="what-do-you-want-to-do"></a>実行する操作
 
-|||
+|シナリオ|記事|
 |-|-|
 |**コードとそのリレーションシップについて:**<br /><br /> 特定のコード間のリレーションシップをマッピングします。<br /><br /> ソリューション全体のコード内のリレーションシップの概要を確認します。<br /><br /> **注**: Visual Studio のこのリリースでは、 *依存関係グラフ* の代わりに、 *コード マップ*という用語を使用します。|-   [ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)<br />-   [コードマップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [コードマップアナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [デバッグ中に呼び出し履歴のメソッドをマップする](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**クラス構造について:**<br /><br /> コードからクラス ダイアグラムを作成することで、プロジェクト内のクラスの構造を視覚化します。|[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
@@ -54,5 +54,5 @@ Visual Studio の視覚化ツールとモデリング ツールを使って、�
 |**ブログ**|[Visual Studio ALM + Team Foundation Server のブログ](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**技術記事とジャーナル**|[MSDN アーキテクチャフォーラム](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [シナリオ: 視覚化とモデリングを使用して設計を変更する](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)[アーキテクチャ分析とモデリングアーキテクチャ](../modeling/analyze-and-model-your-architecture.md)[アプリモデルのモデルを作成](../modeling/create-models-for-your-app.md)する[ユーザーの要件](../modeling/model-user-requirements.md)[モデルアプリのアーキテクチャ](../modeling/model-your-app-s-architecture.md)を[開発プロセスで使用するモデルを使用する](../modeling/use-models-in-your-development-process.md)

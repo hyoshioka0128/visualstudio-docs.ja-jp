@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850489"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533069"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>モデリング図にジェスチャ ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
  図の種類およびドラッグする要素の種類に対応する組み込みの動作が既に用意されている場合は、この動作を追加またはオーバーライドできない可能性があります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
@@ -34,9 +34,9 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 ## <a name="creating-a-gesture-handler"></a>ジェスチャ ハンドラーの作成
  UML デザイナーのジェスチャ ハンドラーを定義するには、ジェスチャ ハンドラーの振る舞いを定義するクラスを生成し、そのクラスを Visual Studio Integration Extension (VSIX) に埋め込む必要があります。 VSIX は、ハンドラーをインストールできるコンテナーとして機能します。 ジェスチャ ハンドラーを定義する方法は 2 つあります。
 
-- **プロジェクトテンプレートを使用して、独自の VSIX にジェスチャハンドラーを作成します。** これはより簡単な方法です。 ハンドラーの他の種類の拡張機能 (検証拡張機能、カスタム ツールボックス項目、メニュー コマンドなど) と組み合わせない場合は、この方法を使用します。
+- **プロジェクト テンプレートを使用してジェスチャ ハンドラーを独自の VSIX に生成する。** これはより簡単な方法です。 ハンドラーの他の種類の拡張機能 (検証拡張機能、カスタム ツールボックス項目、メニュー コマンドなど) と組み合わせない場合は、この方法を使用します。
 
-- **ジェスチャハンドラーと VSIX プロジェクトを個別に作成します。** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、ジェスチャ ハンドラーが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
+- **ジェスチャ ハンドラーと VSIX プロジェクトを個別に生成する。** 複数の種類の拡張機能を同じ VSIX に組み合わせる場合は、この方法を使用します。 たとえば、ジェスチャ ハンドラーが特定の制約に従うモデルを必要とする場合は、そのモデルを検証メソッドとして同じ VSIX に埋め込むことができます。
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>ジェスチャ ハンドラーを独自の VSIX に生成するには
 
@@ -48,7 +48,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 3. F5 キーを押してジェスチャ ハンドラーをテストします。 詳細については、「 [ジェスチャ ハンドラーの実行](#Executing)」を参照してください。
 
-4. 別のコンピューターにジェスチャハンドラーをインストールします。そのためには、プロジェクトによってビルドされた **\\\*.vsix\\\*ファイルビン**をコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
+4. 別のコンピューターにジェスチャハンドラーをインストールします。そのためには、プロジェクトによってビルドされた** \\ \* \\ \* .vsix**ファイルをコピーします。 詳細については、「 [拡張機能のインストールとアンインストール](#Installing)」を参照してください。
 
    次の手順も使用できます。
 
@@ -56,7 +56,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 1. 新規の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションまたは既存のソリューションにクラス ライブラリ プロジェクトを作成します。
 
-   1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+   1. **[ファイル]** メニューで、**[新規作成]**、**[プロジェクト]** の順に選択します。
 
    2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、中央の列で、 **[クラス ライブラリ]** をクリックします。
 
@@ -208,7 +208,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 2. ソリューションに既存の VSIX プロジェクトが存在しない場合は、新しく作成します。
 
-    1. **ソリューション エクスプローラー**で、ソリューションのショートカット メニューを開き、 **[追加]** 、 **[新しいプロジェクト]** の順にクリックします。
+    1. **ソリューションエクスプローラー**で、ソリューションのショートカットメニューの [**追加**]、[**新しいプロジェクト**] の順に選択します。
 
     2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、 **[機能拡張]** をクリックします。 中央の列で、 **[VSIX プロジェクト]** をクリックします。
 
@@ -224,13 +224,13 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
     3. **[アセット]** タブで、 **[新規作成]** をクリックし、ダイアログ ボックスで次のように設定します。
 
-         **[種類]**  = **MEF コンポーネント**
+         **型**  = **MEF コンポーネント**
 
-         **[ソース]**  = **現在のソリューション内のプロジェクト**
+         **ソース**  = **現在のソリューション内のプロジェクト**
 
-         **[プロジェクト]**  = *クラス ライブラリ プロジェクト*
+         **プロジェクト**  = *クラスライブラリプロジェクト*
 
-## <a name="Executing"></a>ジェスチャハンドラーの実行
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>ジェスチャハンドラーの実行
  テストを行う場合は、ジェスチャ ハンドラーをデバッグ モードで実行します。
 
 #### <a name="to-test-the-gesture-handler"></a>ジェスチャ ハンドラーをテストするには
@@ -243,7 +243,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
    - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-   - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、[プロパティ] をクリックします。 プロジェクトのプロパティエディターで、 **[デバッグ]** タブを選択します。 **[外部プログラムの開始]** フィールドの文字列が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の完全なパス名であることを確認します。通常は次のようになります。
+   - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、[プロパティ] をクリックします。 プロジェクトのプロパティエディターで、[**デバッグ**] タブを選択します。 [**外部プログラムの開始**] フィールドの文字列がの完全なパス名であることを確認します。通常は次のようになります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 - この種類のターゲットおよびドロップ対象の要素に対して組み込みの機能が定義されていない。
 
-## <a name="Implementing"></a>ジェスチャハンドラーの実装
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>ジェスチャハンドラーの実装
 
 ### <a name="the-gesture-handler-methods"></a>ジェスチャ ハンドラーのメソッド
  ジェスチャ ハンドラー クラスは、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension> を実装およびエクスポートします。 定義する必要のあるメソッドを次に示します。
 
-|||
+|署名|説明|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|`true` で参照されるソース要素をこのターゲット上にドロップすることを許可する場合は `dragEvent` を返します。<br /><br /> このメソッドによってモデルが変更されることはありません。 このメソッドは、マウスを動かしたときの矢印の状態を判断するために使用されるので、すばやい処理が必要です。|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|`dragEvent`で参照されるソース オブジェクトに基づいてモデルを更新し、ターゲットを更新します。<br /><br /> ドラッグ後にマウスのボタンを離すと呼び出されます。|
@@ -282,7 +282,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 - `ShapeElement target`. ユーザーが項目をドラッグした図形または図。
 
-    `ShapeElement` は、UML モデリング ツールの基礎にある実装のクラスです。 UML モデルと図が不整合な状態になる可能性を低くするには、このクラスのメソッドを直接使用しないことをお勧めします。 代わりに、`IShape`に要素をラップし、「[図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)する」で説明されているメソッドを使用します。
+    `ShapeElement` は、UML モデリング ツールの基礎にある実装のクラスです。 UML モデルと図が不整合な状態になる可能性を低くするには、このクラスのメソッドを直接使用しないことをお勧めします。 代わりに、で要素をラップし、「 `IShape` [図に UML モデルを表示](../modeling/display-a-uml-model-on-diagrams.md)する」で説明されているメソッドを使用します。
 
   - `IShape`を取得するには
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  詳細については、「 [UML モデル内を移動する](../modeling/navigate-the-uml-model.md)」を参照してください。
 
-## <a name="Installing"></a>拡張機能のインストールとアンインストール
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>拡張機能のインストールとアンインストール
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。
 
 #### <a name="to-install-an-extension"></a>拡張機能をインストールするには
@@ -357,13 +357,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。
 
-    2. _YourProject_ **\\\*\\ファイルビン**を見つけ**ます。**
+    2. ファイル** \\ \* ビン \\ **_YourProject_を探し**ます。**
 
 2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。
 
-     ターゲットコンピューターは、 **source.extension.vsixmanifest**で指定した [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] のいずれかのエディションを持っている必要があります。
+     ターゲットコンピューターは、 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **source.extension.vsixmanifest**で指定したのいずれかのエディションを持っている必要があります。
 
-3. ターゲット コンピューター上で、 **.vsix** ファイルを開きます。
+3. ターゲット コンピューター上で、**.vsix** ファイルを開きます。
 
      **Visual Studio 拡張機能インストーラー** が起動され、拡張機能がインストールされます。
 
@@ -379,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 その場合は、以下の場所からファイルを削除して、拡張機能を削除します。
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
+   *% Localappdata%* **\Local\Microsoft\VisualStudio \\ [バージョン] \ 拡張機能**
 
-## <a name="DragExample"></a> 「例」
+## <a name="example"></a><a name="DragExample"></a> 例
  コンポーネント図からドラッグされたコンポーネントのパートおよびポートに基づいて、シーケンス図に生存線を生成する方法を次の例に示します。
 
  テストするには、F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスで UML モデルを開き、コンポーネント図にコンポーネントを生成します。 このコンポーネントに、インターフェイスと内部コンポーネントのパートを追加します。 インターフェイスおよびパートを選択します。 次に、インターフェイスおよびパートをシーケンス図にドラッグします (コンポーネント図からシーケンス図のタブまでドラッグし、次にシーケンス図にドラッグします)。各インターフェイスとパートに生存線が表示されます。
@@ -517,7 +517,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
 ```
 
- `GetModelElementsFromDragEvent()` のコードについては、「 [IDataObject から UML モデル要素を取得](../modeling/get-uml-model-elements-from-idataobject.md)する」を参照してください。
+ のコードに `GetModelElementsFromDragEvent()` ついては、「 [IDATAOBJECT から UML モデル要素を取得](../modeling/get-uml-model-elements-from-idataobject.md)する」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [モデリング拡張機能を定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)[するモデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する uml[モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する uml [API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)
