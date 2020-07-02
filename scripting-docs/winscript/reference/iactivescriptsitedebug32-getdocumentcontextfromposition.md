@@ -5,20 +5,20 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b43b16f46cc62b6c70460d79c194b5e0d2cfede0
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574845"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835278"
 ---
-# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32:: GetDocumentContextFromPosition
-@No__t_0 を委任するために言語エンジンによって使用されます。  
+# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
+言語エンジンがを委任するために使用し `IDebugCodeContext::GetSourceContext` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -33,7 +33,7 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>パラメーター  
  `dwSourceContext`  
- から@No__t_0 または `AddScriptlet` に提供されるソースコンテンツ。  
+ からまたはに提供されるソースコンテンツ `ParseScriptText` `AddScriptlet` 。  
   
  `uCharacterOffset`  
  からスクリプトブロックまたはスクリプトレットの開始位置を基準とした文字オフセット。  
@@ -52,7 +52,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 言語エンジンは、このメソッドを使用して `IDebugCodeContext::GetSourceContext` を委任します。  
+ 言語エンジンは、このメソッドを使用してを委任 `IDebugCodeContext::GetSourceContext` します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSiteDebug32 インターフェイス](../../winscript/reference/iactivescriptsitedebug32-interface.md)
