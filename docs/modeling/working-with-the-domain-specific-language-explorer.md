@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ede0f61d2cec78ac4981e487b72eb4d78508c98
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: caf7d395c08a8c1e8c21f933ba63c8943813831b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748153"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532185"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>ドメイン固有言語エクスプローラーの使用
 **DSL エクスプローラー**では、ツリービューに複数の種類の情報が表示されます。 DSL エクスプローラーのほとんどの項目の詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。

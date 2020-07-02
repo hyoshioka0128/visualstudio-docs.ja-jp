@@ -1,18 +1,18 @@
 ---
 title: '方法: ドメイン固有言語デザイナーを拡張する'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605594"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532587"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 
@@ -30,15 +30,15 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 2. 新しい**VSIX プロジェクト**プロジェクトを作成します。
 
-     **[ソリューションに追加]** を選択します。
+     [**ソリューションに追加**] を選択します。
 
      *Source.extension.vsixmanifest*が VSIX マニフェストエディターで開きます。
 
-3. コンテンツ フィールドの上にある **コンテンツの追加** をクリックします。
+3. [コンテンツ] フィールドの上にある [**コンテンツの追加**] をクリックします。
 
-4. **[コンテンツの追加]** ダイアログボックスで、 **[コンテンツの種類**を**MEF コンポーネント**に選択] を設定し、 **[プロジェクト]** をクラスライブラリプロジェクトに設定します。
+4. [**コンテンツの追加**] ダイアログボックスで、 **[コンテンツの種類**を**MEF コンポーネント**に選択] を設定し、[**プロジェクト**] をクラスライブラリプロジェクトに設定します。
 
-5. **[エディションの選択]** をクリックし、 **Visual Studio Enterprise**がオンになっていることを確認します。
+5. [**エディションの選択**] をクリックし、 **Visual Studio Enterprise**がオンになっていることを確認します。
 
 6. VSIX プロジェクトがソリューションのスタートアッププロジェクトであることを確認します。
 
@@ -68,7 +68,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 拡張機能をメインの Visual Studio と他のコンピューターに配置するには、次の手順を実行します。
 
-1. Vsix のインストールファイルを検索するには、vsix プロジェクトの bin \\ * \\ \* .vsix を使用します。
+1. .Vsix の vsix プロジェクトで、vsix のインストールファイルを見つけ \\ * \\ \* ます。
 
 2. このファイルを対象のコンピュータにコピーし、Windows エクスプローラ (またはファイルエクスプローラー) でダブルクリックします。
 
@@ -76,7 +76,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 拡張機能をアンインストールするには、次の手順を実行します。
 
-1. Visual Studio の **[ツール]** メニューで、 **[拡張機能マネージャー]** をクリックします。
+1. Visual Studio の [**ツール**] メニューで、[**拡張機能マネージャー**] をクリックします。
 
 2. 拡張機能を選択して削除します。
 
@@ -84,7 +84,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 DSL デザイナー画面または DSL エクスプローラーウィンドウにショートカットメニューコマンドを表示するには、次のようなクラスを記述します。
 
-クラスは `ICommandExtension` を実装し、属性 `DslDefinitionModelCommandExtension` を持つ必要があります。
+クラスはを実装 `ICommandExtension` し、属性を持つ必要があり `DslDefinitionModelCommandExtension` ます。
 
 ```csharp
 using System.Collections.Generic;

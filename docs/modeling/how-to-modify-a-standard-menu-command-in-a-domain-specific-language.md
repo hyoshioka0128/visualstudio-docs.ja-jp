@@ -1,21 +1,21 @@
 ---
 title: DSL で標準メニューコマンドを変更する
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605264"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532497"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>方法: ドメイン固有言語における標準のメニュー コマンドを修正する
 
@@ -28,9 +28,9 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>変更可能なコマンドを見つけるには
 
-1. @No__t_0 プロジェクトで `GeneratedCode\CommandSet.cs` を開きます。 このC#ファイルは、`CommandSet.tt` の子会社としてソリューションエクスプローラーにあります。
+1. `DslPackage` プロジェクトで、`GeneratedCode\CommandSet.cs` ファイルを開きます。 この C# ファイルは、の子会社としてソリューションエクスプローラーにあり `CommandSet.tt` ます。
 
-2. このファイル内の名前の末尾に "`CommandSet`" が付いているクラスを検索します (`Language1CommandSet` や `Language1ClipboardCommandSet` など)。
+2. このファイル内の名前の末尾が "" であるクラスを検索 `CommandSet` します。たとえば、「」を参照して `Language1CommandSet` `Language1ClipboardCommandSet` ください。
 
 3. 各コマンド セット クラスで、"`override`" とその後に続けて空白文字を 1 つ入力します。 IntelliSense ではオーバーライド可能なメソッドの一覧が表示されます。 各コマンドには名前が "`ProcessOnStatus`" および "`ProcessOnMenu`" で始まるメソッドのペアが含まれます。
 
@@ -53,9 +53,9 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**で、**カスタムコード**という名前のフォルダーを作成します。 このフォルダーに、`CommandSet.cs` という名前の新しいクラスファイルを作成します。
+2. **Dslpackage**で、**カスタムコード**という名前のフォルダーを作成します。 このフォルダーに、という名前の新しいクラスファイルを作成 `CommandSet.cs` します。
 
-3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 (例:
+3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 次に例を示します。
 
     ```csharp
     using System;
@@ -70,7 +70,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
 
 ## <a name="override-the-command-methods"></a>コマンド メソッドのオーバーライド
 
-ほとんどのコマンドには2つのメソッドが関連付けられています。メソッドには `ProcessOnStatus` のような名前が付いています。コマンドを表示して有効にする必要があるかどうかを判断します。 このメソッドはユーザーが図を右クリックするたびに呼び出され、すばやく実行し、何の変更も生じません。 `ProcessOnMenu`...は、ユーザーがコマンドをクリックしたときに呼び出され、コマンドの機能を実行する必要があります。 これらのメソッドの一方または両方をオーバーライドする場合があります。
+ほとんどのコマンドには、次のような2つのメソッドが関連付けられてい `ProcessOnStatus` ます。コマンドを表示して有効にする必要があるかどうかを判断します。 このメソッドはユーザーが図を右クリックするたびに呼び出され、すばやく実行し、何の変更も生じません。 `ProcessOnMenu`...は、ユーザーがコマンドをクリックしたときに呼び出され、コマンドの機能を実行する必要があります。 これらのメソッドの一方または両方をオーバーライドする場合があります。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>メニュー上にコマンドが表示されるタイミングを変更するには
 
@@ -131,15 +131,15 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. ユーザーが右クリックした図形は常にこの図形およびコネクタの一覧に含まれます。 ユーザーが図の空白部分をクリックした場合、このリストのメンバーは図のみになります。
 
-- ユーザーが図の空白部分をクリックした場合は、`this.IsDiagramSelected()`  -  `true` ます。
+- `this.IsDiagramSelected()` - `true`ユーザーが図の空白部分をクリックした場合。
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - ユーザーは複数の図形を選択しませんでした
+- `this.IsSingleSelection()`-ユーザーが複数の図形を選択しませんでした
 
-- `this.SingleSelection` - ユーザーが右クリックした図形または図
+- `this.SingleSelection`-ユーザーが右クリックした図形または図
 
-- `shape.ModelElement as MyLanguageElement` - 図形により表されるモデル要素。
+- `shape.ModelElement as MyLanguageElement`-図形によって表されるモデル要素。
 
 要素間の移動方法、およびオブジェクトとリンクの作成方法の詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 

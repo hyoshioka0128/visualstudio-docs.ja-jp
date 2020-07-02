@@ -1,30 +1,30 @@
 ---
 title: '方法: ドメイン固有言語を新バージョンに移行する'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747553"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532612"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
-ドメイン固有言語を定義して使用するプロジェクトを移行して、[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] と共に配布された [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] のバージョンから [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] することができます。
+[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]で配布されたバージョンのから、ドメイン固有言語を定義して使用するプロジェクトを移行でき [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] ます。
 
- 移行ツールは、[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] の一部として提供されています。 このツールでは、DSL ツールを使用または定義する Visual Studio プロジェクトとソリューションが変換されます。
+ 移行ツールは、の一部として提供されてい [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] ます。 このツールでは、DSL ツールを使用または定義する Visual Studio プロジェクトとソリューションが変換されます。
 
  移行ツールは、Visual Studio でソリューションを開いたときに自動的に起動されない、明示的に実行する必要があります。 ツールと詳細なガイダンスドキュメントは、次のパスにあります。
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>DSL プロジェクトを移行する前に
- 移行ツールによって、Visual Studio のプロジェクトファイル ( **.csproj**) とソリューションファイル ( **.sln**) が変更されます。
+ 移行ツールによって、Visual Studio のプロジェクトファイル (**.csproj**) とソリューションファイル (**.sln**) が変更されます。
 
 #### <a name="to-prepare-projects-for-migration"></a>プロジェクトを移行用に準備する。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72747553"
 
 2. 変換するソリューションおよびプロジェクトが含まれているフォルダーを選択します。
 
-   - ツールの上部にあるボックスにパスを入力するか、 **[参照]** をクリックします。
+   - ツールの上部にあるボックスにパスを入力するか、[**参照**] をクリックします。
 
      移行ツールには、Dsl を定義または使用するプロジェクトのツリーが表示されます。 ツリーには、 **VisualStudio**または**texttemplating**アセンブリを使用するすべてのプロジェクトが含まれます。
 
@@ -57,11 +57,11 @@ ms.locfileid: "72747553"
 
 4. プロジェクトを変換します。
 
-   1. **[変換]** をクリックします。
+   1. [**変換**] をクリックします。
 
-        各プロジェクトファイルが変換される前に、vs2008 のコピーが_プロジェクト_ **. .csproj**として**保存さ**_れます。_
+        各プロジェクトファイルが変換される前に、vs2008 のコピーが_プロジェクト_**. .csproj**として**保存さ**_れます。_
 
-        各ソリューションのコピー **。 .sln**は**vs2008**として保存され_ます。_
+        各ソリューションのコピー _solution_**。 .sln**は**vs2008**として保存され_ます。_
 
    2. 報告された失敗した変換を調査します。
 
@@ -71,7 +71,7 @@ ms.locfileid: "72747553"
 
    1. ソリューションを開きます。
 
-   2. ソリューションエクスプローラーのヘッダーにある **[すべてのテンプレートの変換]** ボタンをクリックします。
+   2. ソリューションエクスプローラーのヘッダーにある [**すべてのテンプレートの変換**] ボタンをクリックします。
 
        > [!NOTE]
        > この手順を不要にすることができます。 詳細については、「[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))」を参照してください。
@@ -86,4 +86,4 @@ ms.locfileid: "72747553"
 
 ## <a name="see-also"></a>関連項目
 
-- [関連するブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [関連するブログ記事](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
