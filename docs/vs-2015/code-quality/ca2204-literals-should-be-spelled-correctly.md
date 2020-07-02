@@ -25,7 +25,7 @@ ms.locfileid: "85546277"
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204:リテラルに正しいスペルを要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|

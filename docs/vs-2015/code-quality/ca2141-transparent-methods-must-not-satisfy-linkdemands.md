@@ -21,7 +21,7 @@ ms.locfileid: "85546446"
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: 透過的メソッドは、LinkDemand を満たしてはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|

@@ -15,17 +15,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607875"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547837"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: メソッドの実装を複雑にしすぎないでください
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:メソッドの実装を複雑にしすぎないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -35,7 +35,7 @@ ms.locfileid: "72607875"
 ## <a name="cause"></a>原因
  メソッドには、過剰なサイクロマティック複雑度があります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  *サイクロマティック複雑度*は、メソッドを使用して線形的に独立したパスの数を測定します。これは、条件分岐の数と複雑さによって決まります。 サイクロマティック複雑度が低いのは、一般に、理解、テスト、および保守が容易なメソッドであることを示しています。 サイクロマティック複雑度は、メソッドの制御フローグラフから計算され、次のように指定されます。
 
  サイクロマティック複雑度 = エッジの数-ノードの数 + 1
@@ -50,14 +50,14 @@ ms.locfileid: "72607875"
  この規則違反を修正するには、メソッドをリファクタリングして、サイクロマティック複雑度を下げます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 複雑さを簡単に軽減できず、メソッドを簡単に理解、テスト、保守できる場合は、この規則による警告を抑制することが安全です。 特に、大規模な `switch` (`Select` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ステートメントを含むメソッドは、除外の候補です。 開発サイクルの後半でコードベースを安定性するリスク、または以前に出荷されたコードの実行時の動作に予期しない変更を導入するリスクは、コードをリファクタリングすることによる保守容易性の利点を上回る可能性があります。
+ 複雑さを簡単に軽減できず、メソッドを簡単に理解、テスト、保守できる場合は、この規則による警告を抑制することが安全です。 特に、大規模な `switch` ( `Select` の) ステートメントを含むメソッドは、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 除外の候補です。 開発サイクルの後半でコードベースを安定性するリスク、または以前に出荷されたコードの実行時の動作に予期しない変更を導入するリスクは、コードをリファクタリングすることによる保守容易性の利点を上回る可能性があります。
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>サイクロマティック複雑度の計算方法
  サイクロマティック複雑度は、次のように1を追加することによって計算されます。
 
-- ブランチの数 (`if`、`while`、`do` など)
+- ブランチの数 (、、 `if` など `while` `do` )
 
-- @No__t_1 内の `case` ステートメントの数
+- 内の `case` ステートメントの数`switch`
 
   次の例は、さまざまなサイクロマティック複雑なメソッドを示しています。
 
@@ -90,7 +90,7 @@ ms.locfileid: "72607875"
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#4)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1501: 継承を使用しすぎないでください](../code-quality/ca1501-avoid-excessive-inheritance.md)
+ [CA1501:継承を使用しすぎないでください](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

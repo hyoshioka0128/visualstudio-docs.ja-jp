@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e5dee78ef3c487541363e9e290e54a8f3d68cf3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48c3f55b60add1691fe31c764f31673bbf1ab47b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667421"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546355"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: クリティカル型のフィールドはセキュリティ クリティカルである必要があります
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName||
 |CheckId|CA2151|
@@ -27,7 +27,7 @@ ms.locfileid: "72667421"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 (例:
+ 透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 次に例を示します。
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -43,7 +43,7 @@ ms.locfileid: "72667421"
 
  この例では、`m_field` はセキュリティ クリティカルな型の透過的セキュリティ フィールドです。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  セキュリティ クリティカルな型を使用するには、型を参照するコードがセキュリティ クリティカルであるか、セキュリティ セーフ クリティカルである必要があります。 これは、参照が間接的である場合にも当てはまります。 たとえば、クリティカルな型を持つ透過的フィールドを参照する場合、コードはセキュリティ クリティカルであるか、セキュリティ セーフである必要があります。 そのため、透過的セキュリティまたはセキュリティ セーフ クリティカルなフィールドが存在すると、透過的なコードはこのフィールドにアクセスできないので、紛らわしくなります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

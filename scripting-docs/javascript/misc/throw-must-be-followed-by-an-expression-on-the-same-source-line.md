@@ -3,7 +3,7 @@ title: Throw の後には、同じソース行 | の式を指定しなければ�
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1035
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8854acb3d1992283899c4ff095f5d754c05f55a1
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b7bc7ff09152cd0ce7b95c6de73ea98446529c44
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572751"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815527"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Throw ステートメントに指定する式は、ソース コードの同一行に記述してください
-`throw` キーワードを使用しましたが、同じソース行で式を使用していませんでした。 `throw` ステートメントは、2つの部分で構成されています。 `throw` キーワードと、その後にスローされる式です。 例 :  
+`throw`キーワードを使用しましたが、同じソース行で式を使用していませんでした。 ステートメントは、 `throw` キーワードと、その `throw` 後にスローされる式の2つの部分で構成されます。 次に例を示します。  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -34,9 +34,9 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- `throw` キーワードとスローする式が同じ行に表示されていることを確認します。  
+- `throw`キーワードとスローされる式が同じ行に表示されていることを確認します。  
   
-## <a name="see-also"></a>参照  
- [エラーオブジェクト](../../javascript/reference/error-object-javascript.md)   
- [Throw ステートメント](../../javascript/reference/throw-statement-javascript.md)   
- [try… catch… finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+## <a name="see-also"></a>関連項目  
+ [Error オブジェクト](../../javascript/reference/error-object-javascript.md)   
+ [throw ステートメント](../../javascript/reference/throw-statement-javascript.md)   
+ [お試しください...キャッチ...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

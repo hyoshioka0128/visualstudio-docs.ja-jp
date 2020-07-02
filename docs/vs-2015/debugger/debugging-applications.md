@@ -1,5 +1,5 @@
 ---
-title: アプリケーションのデバッグ |Microsoft Docs
+title: アプリケーションのデバッグ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b689a3be22c9fec775cf42b9d26393a886174daf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 747f96a31ace1267512b9327a0d6aaaf07e02631
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197521"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545588"
 ---
 # <a name="debugging-applications"></a>アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "68197521"
   
 ## <a name="debugging-for-different-types-of-applications"></a>さまざまな種類のアプリケーションのデバッグ  
   
-|||  
+|タイトル|説明|  
 |-|-|  
 |[Windows ストアと Windows ユニバーサル アプリのデバッグ](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Windows ストア アプリと Windows ユニバーサル アプリをデバッグする方法について説明します。|  
 |[マネージド コードをデバッグする](../debugger/debugging-managed-code.md)|マネージド コード (Visual C#、Visual Basic、および F3) をデバッグする方法について説明します。|  

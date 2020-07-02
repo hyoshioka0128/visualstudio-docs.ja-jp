@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967306"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546524"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 要素
-  SharePoint に配置されるときに、機能に含まれているカスタム プロパティを表します。 フィーチャーが配置されると、コードでプロパティにアクセスすることができます。
+  SharePoint に配置されるときにフィーチャーに含まれるカスタムプロパティを表します。 フィーチャーが配置された後、コード内のプロパティにアクセスできます。
 
 ## <a name="syntax"></a>構文
 
@@ -36,8 +36,8 @@ ms.locfileid: "62967306"
 
 |属性|説明|
 |---------------|-----------------|
-|**Key**|必要な**xs:string**属性。<br /><br /> このキーは、格納およびプロパティの値を取得するために使用します。 各プロパティが、機能内で一意キーが必要です。|
-|**[値]**|必要な**xs:string**属性。<br /><br /> プロパティ値。|
+|**Key**|**Xs: string**属性が必要です。<br /><br /> プロパティ値を格納および取得するために使用されるキー。 各プロパティには、機能内で一意のキーが必要です。|
+|**Value**|**Xs: string**属性が必要です。<br /><br /> プロパティ値です。|
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -46,20 +46,20 @@ ms.locfileid: "62967306"
 
 |要素|説明|
 |-------------|-----------------|
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint に配置されるときに、機能に含まれているプロパティ値のコレクションを表します。|
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint に配置されるときにフィーチャーに含まれるプロパティ値のコレクションを表します。|
 
 ## <a name="remarks"></a>Remarks
- 機能プロパティの詳細については、次を参照してください。[プロジェクト項目でのパッケージと展開の情報を提供する](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
+ 機能のプロパティの詳細については、「[プロジェクト項目でのパッケージと配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
 
 ## <a name="element-information"></a>要素情報
 
-|||
+|プロパティ|値|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel SharePointTools/2010/|
-|**スキーマ名**|SharePoint プロジェクト項目のスキーマ|
-|**ファイルの検証**|ProjectItemModelSchema.xsd|
-|**空にすることができます。**|いいえ|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**検証ファイル**|ProjectItemModelSchema|
+|**空にすることができます**|いいえ|
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [プロジェクト項目でパッケージ化と配置の情報を提供します。](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

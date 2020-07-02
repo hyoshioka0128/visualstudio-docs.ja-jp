@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a2b3c1faf4ecf3ecf79a3c78d0ded106b88345ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792fe18a4f472d0b8a4fd62c652f2ae34fcf6864
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609364"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546303"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: 値型のスタティック フィールドのインラインを初期化します
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207:値型のスタティック フィールドのインラインを初期化します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
@@ -35,10 +35,10 @@ ms.locfileid: "72609364"
 ## <a name="cause"></a>原因
  値型は、明示的な静的コンストラクターを宣言します。
 
-## <a name="rule-description"></a>規則の説明
- 値型が宣言されている場合、すべての値型フィールドがゼロに設定され、すべての参照型フィールドが `null` (Visual Basic の `Nothing`) に設定されている場合、既定の初期化が行われます。 明示的な静的コンストラクターは、その型のインスタンスコンストラクターまたは静的メンバーが呼び出される前にのみ実行されることが保証されます。 したがって、インスタンスコンストラクターを呼び出さずに型が作成された場合、静的コンストラクターの実行は保証されません。
+## <a name="rule-description"></a>ルールの説明
+ 値型が宣言されている場合、すべての値型フィールドがゼロに設定され、すべての参照型フィールドが (Visual Basic) に設定されている既定の初期化が行われ `null` `Nothing` ます。 明示的な静的コンストラクターは、その型のインスタンスコンストラクターまたは静的メンバーが呼び出される前にのみ実行されることが保証されます。 したがって、インスタンスコンストラクターを呼び出さずに型が作成された場合、静的コンストラクターの実行は保証されません。
 
- すべての静的データがインラインで初期化され、明示的な静的コンストラクター C#が宣言されていない場合、および Visual Basic コンパイラは、MSIL クラス定義に `beforefieldinit` フラグを追加します。 コンパイラは、静的初期化コードを含むプライベートな静的コンストラクターも追加します。 このプライベート静的コンストラクターは、型の静的フィールドにアクセスする前に実行することが保証されています。
+ すべての静的データがインラインで初期化され、明示的な静的コンストラクターが宣言されていない場合、C# および Visual Basic コンパイラは、この `beforefieldinit` フラグを MSIL クラス定義に追加します。 コンパイラは、静的初期化コードを含むプライベートな静的コンストラクターも追加します。 このプライベート静的コンストラクターは、型の静的フィールドにアクセスする前に実行することが保証されています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、宣言時にすべての静的データを初期化し、静的コンストラクターを削除します。
@@ -47,4 +47,4 @@ ms.locfileid: "72609364"
  この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連規則
- [CA1810: 参照型の静的フィールドをインラインで初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+ [CA1810:参照型の静的フィールドをインラインで初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

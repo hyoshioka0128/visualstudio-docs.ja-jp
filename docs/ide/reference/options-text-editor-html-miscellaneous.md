@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666187"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770902"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[その他]
 
@@ -31,6 +31,6 @@ ms.locfileid: "72666187"
 
    このチェック ボックスをオンにすると、"より小さい" 記号 ("<") を入力したときに、タグ補完ウィンドウが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

@@ -1,7 +1,7 @@
 ---
 title: 'ワークフローデザイナー-方法: ワークフローにコメントを追加する'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 2e8f53e162360c7a43df9f0aedda3ff6ef0e6dba
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114419"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815501"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>ワークフロー デザイナーでワークフローにコメントを追加する方法
 
@@ -39,7 +39,7 @@ ms.locfileid: "76114419"
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>デザイナーのアクティビティへの注釈の追加
 
-1. ワークフローデザイナーで、ワークフローデザイナーの項目を右クリックし、 **[注釈]** 、 **[注釈の追加]** の順に選択します。
+1. ワークフローデザイナーで、ワークフローデザイナーの項目を右クリックし、[**注釈**]、[**注釈の追加**] の順に選択します。
 
 1. 注釈のテキストを提供された領域に追加します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "76114419"
 
    ![注釈がアクティビティ デザイナーに表示されている](../workflow-designer/media/annotationindesigner.png)
 
-2. アクティビティのデザイナーの外側に注釈を表示するには、アクティビティのデザイナーの注釈領域の上にマウスポインターを移動し、 **[ピン留めを外す]** アイコンをクリックします。
+2. アクティビティのデザイナーの外側に注釈を表示するには、アクティビティのデザイナーの注釈領域の上にマウスポインターを移動し、[**ピン留めを外す**] アイコンをクリックします。
 
    ![アクティビティのデザイナーの外側に表示される注釈](../workflow-designer/media/annotationoutsidedesigner.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "76114419"
 
    すべての注釈は、アクティビティのデザイナーに表示されます。
 
-1. アクティビティのデザイナーの外側にあるすべての注釈を表示するには、アクティビティを右クリックし、 **[注釈]** を選択して、**すべての注釈を非表示**にします。
+1. アクティビティのデザイナーの外側にあるすべての注釈を表示するには、アクティビティを右クリックし、[**注釈**] を選択して、**すべての注釈を非表示**にします。
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>アクティビティの注釈の編集または削除
 
@@ -73,7 +73,7 @@ ms.locfileid: "76114419"
 
    編集または削除するために注釈が開かれています。
 
-1. すべての注釈を一度に削除するには、ワークフローデザイナーを右クリックし、 **[注釈]** 、 **[すべての注釈を削除]** の順に選択します。
+1. すべての注釈を一度に削除するには、ワークフローデザイナーを右クリックし、[**注釈**]、[**すべての注釈を削除**] の順に選択します。
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>変数または引数の注釈の追加、編集、削除
 

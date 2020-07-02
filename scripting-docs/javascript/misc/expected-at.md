@@ -1,9 +1,9 @@
-﻿---
-title: "@' が必要です。 |Microsoft Docs"
+---
+title: "' @ ' | が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1032
 dev_langs:
@@ -14,25 +14,25 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df1c62c00fdfc8b2b28300cbca1052f0fa350b32
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576512"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814825"
 ---
-# <a name="expected-"></a>'\@' が必要です
-`@set` ステートメントを使用して条件付きコンパイルステートメントで使用する変数を作成しようとしましたが、変数名の前にアットマーク " **@** " を配置しませんでした。  
+# <a name="expected-"></a>' ' が必要です。 \@
+ステートメントを使用して条件付きコンパイルステートメントで使用する変数を作成しようとしました `@set` が、 **@** 変数名の前にアットマーク "" を配置しませんでした。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 変数名の直前に " **@** " というアットマークを追加します。 例 :  
+- 変数名の直前にアットマーク "" を追加 **@** します。 次に例を示します。  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
-## <a name="see-also"></a>参照  
- [@set ステートメント](../../javascript/reference/at-set-statement-javascript.md)   
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の   
+## <a name="see-also"></a>関連項目  
+ [@set諸表](../../javascript/reference/at-set-statement-javascript.md)   
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

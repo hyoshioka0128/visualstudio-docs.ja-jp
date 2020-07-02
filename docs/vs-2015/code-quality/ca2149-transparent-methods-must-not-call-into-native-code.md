@@ -21,7 +21,7 @@ ms.locfileid: "85546329"
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |CheckId|CA2149|

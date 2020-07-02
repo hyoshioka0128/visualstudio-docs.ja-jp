@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603327"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546797"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Sealed 型の仮想メンバーを宣言しません
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:シールド型の仮想メンバーを宣言しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
@@ -33,12 +33,12 @@ ms.locfileid: "72603327"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリック型はシールされており、`virtual` (Visual Basic では `Overridable`) であり、final ではないメソッドを宣言します。 この規則は、このパターンに従う必要があるデリゲート型の違反を報告しません。
+ パブリック型はシールされており、 `virtual` ( `Overridable` Visual Basic の) 両方であり、final ではないメソッドを宣言します。 この規則は、このパターンに従う必要があるデリゲート型の違反を報告しません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  型でメソッドを仮想と宣言するのは、継承する型が仮想メソッドの実装をオーバーライドできるようにするためです。 定義上、シール型から継承することはできません。シール型の仮想メソッドを使用することは無意味です。
 
- Visual Basic .NET およびC#コンパイラでは、型がこの規則に違反することは許可されていません。
+ Visual Basic .NET コンパイラと C# コンパイラでは、型がこの規則に違反することはありません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、メソッドを非仮想にするか、型を継承可能にしてください。

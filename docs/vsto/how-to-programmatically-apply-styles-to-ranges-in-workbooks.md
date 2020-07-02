@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによってブック内の範囲にスタイルを適用します。'
+title: '方法: プログラムによってブック内の範囲にスタイルを適用する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817454"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546160"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>方法: プログラムによってブック内の範囲にスタイルを適用します。
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>方法: プログラムによってブック内の範囲にスタイルを適用する
   ブック内の領域に名前付きスタイルを適用できます。 Excel には、定義済みのスタイルがいくつか用意されています。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "62817454"
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
 
 ## <a name="see-also"></a>関連項目
-- [範囲を操作します。](../vsto/working-with-ranges.md)
+- [範囲の操作](../vsto/working-with-ranges.md)
 - [NamedRange コントロール](../vsto/namedrange-control.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

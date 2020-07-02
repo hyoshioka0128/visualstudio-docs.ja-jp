@@ -14,29 +14,29 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918221"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547811"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: 適切な用語を使用します
+# <a name="ca1726-use-preferred-terms"></a>CA1726:適切な用語を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新のドキュメントについては、「 [CA1726: Use 好ましい terms](/visualstudio/code-quality/ca1726-use-preferred-terms)」を参照してください。
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|[カテゴリ]|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|中断-アセンブリで発生した場合<br /><br /> 中断なし-型パラメーターで発生した場合|
 
 ## <a name="cause"></a>原因
  外部から参照可能な識別子の名前に含まれている用語に対応する、別の推奨される用語があります。 また、名前には、フラグまたはフラグが含まれています。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  このルールは、識別子をトークンに解析します。 各トークンと連続するデュアルトークンの組み合わせは、ルールに組み込まれている用語と、カスタム辞書の非推奨のセクションに比較されます。 次の表に、ルールに組み込まれている用語と、その優先順位を示します。
 
 |廃止された用語|優先する用語|
@@ -49,7 +49,7 @@ Visual Studio の最新のドキュメントについては、「 [CA1726: Use �
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` または `Flags`|置換語句はありません。 [使用しない]。|
+|`Flag` または `Flags`|置換語句はありません。 使用しないでください。|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

@@ -1,7 +1,7 @@
 ---
 title: '方法: ショートカットメニューにコマンドを追加する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986025"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546199"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>方法: ショートカットメニューにコマンドを追加する
   このトピックでは、VSTO アドインを使用して Office アプリケーションのショートカットメニューにコマンドを追加する方法について説明します。
@@ -27,11 +27,11 @@ ms.locfileid: "72986025"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Office のショートカット メニューにコマンドを追加するには
 
-1. **[リボン XML]** 項目をドキュメント レベルのプロジェクトまたは VSTO アドイン プロジェクトに追加します。 詳細については、「[方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。 イン
+1. **[リボン XML]** 項目をドキュメント レベルのプロジェクトまたは VSTO アドイン プロジェクトに追加します。 詳細については、「[方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。 /
 
 2. **ソリューション エクスプローラー**で、 **ThisAddin.cs** または **ThisAddin.vb**を選択します。
 
-3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
+3. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
 
      コード エディターで **ThisAddin** クラス ファイルが開きます。
 
@@ -40,9 +40,9 @@ ms.locfileid: "72986025"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには*ribbon1.vb*という名前が付けられています。
+5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには*Ribbon1.xml*という名前が付けられます。
 
-6. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
+6. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
 
      コード エディターでリボン XML ファイルが開きます。
 
@@ -72,7 +72,7 @@ ms.locfileid: "72986025"
 
 8. **ソリューション エクスプローラー**で、 **MyRibbon.cs** または **MyRibbon.vb**を選択します。
 
-9. 処理する各コントロールの `Ribbon1` クラスにコールバックメソッドを追加します。
+9. 処理する各コントロールのクラスにコールバックメソッドを追加し `Ribbon1` ます。
 
      次のコールバック メソッドは、 **[My Button]** ボタンを処理します。 このコードは、アクティブ ドキュメントの現在のカーソル位置に文字列を追加します。
 

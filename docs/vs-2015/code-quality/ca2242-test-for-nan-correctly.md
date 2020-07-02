@@ -14,17 +14,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8433ac081a45e3dbab80ffcd6f96e6d1db914337
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0c832b7eb4a94506c5e15dfa5858bb9f6753912
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672005"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546264"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242: NaN に対して正しくテストします
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242:NaN に対して正しくテストします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
@@ -32,19 +32,19 @@ ms.locfileid: "72672005"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- 式は <xref:System.Single.NaN?displayProperty=fullName> または <xref:System.Double.NaN?displayProperty=fullName> に対して値をテストします。
+ 式は、またはに対して値をテスト <xref:System.Single.NaN?displayProperty=fullName> <xref:System.Double.NaN?displayProperty=fullName> します。
 
-## <a name="rule-description"></a>規則の説明
- <xref:System.Double.NaN?displayProperty=fullName> (非数) を表し、算術演算が未定義の場合に結果が返されます。 値と <xref:System.Double.NaN?displayProperty=fullName> が等しいかどうかをテストする式は、常に `false` を返します。 値と <xref:System.Double.NaN?displayProperty=fullName> の等しくないかどうかをテストする式は、常に `true` を返します。
+## <a name="rule-description"></a>ルールの説明
+ <xref:System.Double.NaN?displayProperty=fullName>は、算術演算が定義されていない場合に、数値以外の結果を表します。 値の間の等価性をテストし、 <xref:System.Double.NaN?displayProperty=fullName> 常にを返す式 `false` 。 値が等しくないかどうかをテストし、 <xref:System.Double.NaN?displayProperty=fullName> 常にを返す式 `true` 。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正し、値が <xref:System.Double.NaN?displayProperty=fullName> を表すかどうかを正確に判断するには、<xref:System.Single.IsNaN%2A?displayProperty=fullName> または <xref:System.Double.IsNaN%2A?displayProperty=fullName> を使用して値をテストします。
+ この規則違反を修正し、値がを表すかどうかを正確に判断するに <xref:System.Double.NaN?displayProperty=fullName> <xref:System.Single.IsNaN%2A?displayProperty=fullName> は、またはを使用し <xref:System.Double.IsNaN%2A?displayProperty=fullName> て値をテストします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、<xref:System.Double.NaN?displayProperty=fullName> に対して誤って値をテストする2つの式と、値をテストするために <xref:System.Double.IsNaN%2A?displayProperty=fullName> を正しく使用する式を示します。
+ 次の例では、値を誤ってテストする2つの式 <xref:System.Double.NaN?displayProperty=fullName> と、 <xref:System.Double.IsNaN%2A?displayProperty=fullName> 値をテストするために正しく使用する式を示します。
 
  [!code-csharp[FxCop.Usage.TestForNaN#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/cs/FxCop.Usage.TestForNaN.cs#1)]
  [!code-vb[FxCop.Usage.TestForNaN#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/vb/FxCop.Usage.TestForNaN.vb#1)]

@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ea4f9dc11d2cbb3100ca6e2e0b3177b1acec923a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 233e4366befd2a5a0d5690b14198ac13e2fcc957
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173574"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546485"
 ---
 # <a name="ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute"></a>CA2139:透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|TransparentMethodsMustNotHandleProcessCorruptingExceptions|
 |CheckId|CA2139|
@@ -31,7 +31,7 @@ ms.locfileid: "84173574"
 ## <a name="cause"></a>原因
  透過的メソッドは、属性でマークされ <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> ます。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  この規則は、透過的なメソッドをすべて実行し、属性を使用して例外の処理を処理しようとし <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> ます。 プロセスを破損させる例外は、CLR バージョン4.0 の例外の例外分類です <xref:System.AccessViolationException> 。 HandleProcessCorruptedStateExceptionsAttribute 属性はセキュリティ クリティカルなメソッドでのみ使用できる属性で、透過的メソッドに適用された場合は無視されます。 プロセス破損例外を処理するには、この方法がセキュリティクリティカルまたはセキュリティセーフクリティカルである必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

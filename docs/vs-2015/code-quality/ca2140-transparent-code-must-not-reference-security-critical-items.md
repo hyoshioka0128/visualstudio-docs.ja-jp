@@ -17,17 +17,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602868"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546459"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: 透過的コードは、セキュリティ上重要な項目を参照してはならない
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
@@ -53,17 +53,17 @@ ms.locfileid: "72602868"
 
 - セキュリティクリティカルとしてマークされている型を返します
 
-## <a name="rule-description"></a>規則の説明
- @No__t_0 属性でマークされたコード要素は、セキュリティクリティカルです。 透過的なメソッドでセキュリティ上重要な要素を使用することはできません。 透過型がセキュリティクリティカルな型を使用しようとすると、<xref:System.TypeAccessException>、<xref:System.MethodAccessException>、または <xref:System.FieldAccessException> が発生します。
+## <a name="rule-description"></a>ルールの説明
+ 属性でマークされたコード要素 <xref:System.Security.SecurityCriticalAttribute> は、セキュリティクリティカルです。 透過的なメソッドでセキュリティ上重要な要素を使用することはできません。 透過型がセキュリティクリティカルな型を使用しようとすると、、、 <xref:System.TypeAccessException> <xref:System.MethodAccessException> または <xref:System.FieldAccessException> が発生します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、次のいずれかの操作を行います。
 
-- セキュリティクリティカルなコードを使用するコード要素を <xref:System.Security.SecurityCriticalAttribute> 属性でマークします
+- セキュリティクリティカルなコードを使用するコード要素を属性でマークします。 <xref:System.Security.SecurityCriticalAttribute>
 
      \- または
 
-- セキュリティクリティカルとマークされているコード要素から <xref:System.Security.SecurityCriticalAttribute> 属性を削除し、代わりに <xref:System.Security.SecuritySafeCriticalAttribute> または <xref:System.Security.SecurityTransparentAttribute> 属性でマークします。
+- <xref:System.Security.SecurityCriticalAttribute>セキュリティクリティカルとマークされているコード要素から属性を削除し、代わりに属性 <xref:System.Security.SecuritySafeCriticalAttribute> または属性でマークし <xref:System.Security.SecurityTransparentAttribute> ます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
@@ -73,7 +73,7 @@ ms.locfileid: "72602868"
 
  [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2140.transparentmethodsmustnotreferencecriticalcode/cs/ca2140 - transparentmethodsmustnotreferencecriticalcode.cs#1)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute>
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
