@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c56de70daeabd05215f68024339d5855686d529b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653830"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539595"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: 名前空間で型を宣言します
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050:名前空間で型を宣言します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
@@ -35,7 +35,7 @@ ms.locfileid: "72653830"
 ## <a name="cause"></a>原因
  パブリック型またはプロテクト型が名前付き名前空間のスコープ外で定義されています。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  型は名前の競合を防ぐために名前空間で宣言され、オブジェクト階層内の関連する型を整理する手段として宣言されます。 名前付き名前空間の外部にある型は、コード内で参照できないグローバル名前空間にあります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -51,7 +51,7 @@ ms.locfileid: "72653830"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TypesLiveInNamespaces/vb/FxCop.Design.TypesLiveInNamespaces.vb#1)]
 
 ## <a name="example"></a>例
- 次のアプリケーションは、以前に定義されたライブラリを使用します。 名前空間の外部で宣言されている型は、名前空間によって修飾されていない名前 `Test` 場合に作成されることに注意してください。 また、`Goodspace` の `Test` 型にアクセスするには、名前空間の名前が必要です。
+ 次のアプリケーションは、以前に定義されたライブラリを使用します。 名前空間の外側で宣言された型は、名前空間で修飾されていない場合に作成されることに注意して `Test` ください。 また、の型にアクセスするには、 `Test` `Goodspace` 名前空間の名前が必要です。
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]

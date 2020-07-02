@@ -1,7 +1,7 @@
 ---
-title: '&lt;更新&gt;要素 (Visual Studio での Office 開発)'
+title: '&lt;update &gt; 要素 (Visual Studio での Office 開発)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967534"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537385"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;要素 (Visual Studio での Office 開発)
-  `update`要素は、更新プログラムは、ソリューションを確認する間隔を指定します。
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 要素 (Visual Studio での Office 開発)
+  要素は、 `update` ソリューションが更新プログラムをチェックする間隔を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,30 +37,30 @@ ms.locfileid: "62967534"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `update` 要素は必須です。この要素は `vstav3` 名前空間に属します。
+ `update` 要素は必須です。この要素は `vstav3` 名前空間にあります。
 
  `update` 要素には、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`enabled`|必須。 有効値は次のいずれかに設定します。<br /><br /> -   **true**更新プログラムを確認します。<br />-   **false**更新プログラムのチェックを回避します。|
+|`enabled`|必須です。 Enabled は、次のいずれかの値に設定します。<br /><br /> -   更新プログラムを確認する**場合は true** 。<br />-   更新プログラムがチェックされないようにする場合は**false** 。|
 
  `update` 要素には、次の子要素があります。
 
-### <a name="expiration"></a>expiration 
- `expiration` 要素は必須です。この要素は `vstav3` 名前空間に属します。 この要素は、更新プログラムのソリューションの確認間隔を指定します。
+### <a name="expiration"></a>expiration
+ `expiration` 要素は必須です。この要素は `vstav3` 名前空間にあります。 この要素は、ソリューションが更新プログラムを確認する間隔を指定します。
 
  `expiration` 要素には、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`maximumAge`| 必須。 値は整数に設定します。|
-|`unit`|必須。 設定`unit`値は次のいずれかに。<br /><br /> -   **時間**<br />-   **日**<br />-   **週**|
+|`maximumAge`| 必須です。 これを整数と同じ値に設定します。|
+|`unit`|必須です。 `unit`次のいずれかの値に設定します。<br /><br /> -   **まで**<br />-   **日時**<br />-   **ごと**|
 
-## <a name="example-of-always-checking-for-updates"></a>常に更新プログラムのチェックの例
+## <a name="example-of-always-checking-for-updates"></a>常に更新プログラムを確認する例
 
 ### <a name="description"></a>説明
- 次のコード例を示しています、`update`常に Office ソリューションの更新プログラムの確認に設定されている要素。
+ 次のコード例は、 `update` Office ソリューションで常に更新プログラムをチェックするように設定されている要素を示しています。
 
 ### <a name="code"></a>コード
 
@@ -71,7 +71,7 @@ ms.locfileid: "62967534"
 ## <a name="example-of-setting-a-default-update-interval"></a>既定の更新間隔を設定する例
 
 ### <a name="description"></a>説明
- 次のコード例を示しています、 `update` Office ソリューションに対するアプリケーション マニフェスト内の要素。 このコード例で示されている例の一部は、 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+ 次のコード例は、 `update` Office ソリューションのアプリケーションマニフェストの要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -83,7 +83,7 @@ ms.locfileid: "62967534"
 
 ## <a name="see-also"></a>関連項目
 
-- [ClickOnce を使用して Office ソリューションを配置します。](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
-- [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
+- [ClickOnce を使用して Office ソリューションを配置する](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)
+- [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)

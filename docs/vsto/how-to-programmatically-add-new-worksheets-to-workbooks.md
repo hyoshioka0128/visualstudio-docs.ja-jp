@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムで新しいワークシートをブックに追加します。'
+title: '方法: プログラムによって新しいワークシートをブックに追加する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b45196fa70328809aa5da3a1f56ea57fce2085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fc6706879bf1d567f6a0ae7127d06a2442b98e9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967645"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538101"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>方法: プログラムで新しいワークシートをブックに追加します。
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>方法: プログラムによって新しいワークシートをブックに追加する
   プログラムによってワークシートを作成し、そのワークシートをブック内のワークシートのコレクションに追加できます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -43,13 +43,13 @@ ms.locfileid: "62967645"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#11)]
 
-     新しいワークシートはネイティブの <xref:Microsoft.Office.Interop.Excel.Worksheet> オブジェクトであり、ホスト項目ではありません。 ネイティブの <xref:Microsoft.Office.Tools.Excel.Worksheet> オブジェクトから <xref:Microsoft.Office.Interop.Excel.Worksheet> ホスト項目を生成することもできます。 詳細については、「 [VSTO アドインにおける実行時の Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
+     新しいワークシートはネイティブの <xref:Microsoft.Office.Interop.Excel.Worksheet> オブジェクトであり、ホスト項目ではありません。 ネイティブの <xref:Microsoft.Office.Tools.Excel.Worksheet> オブジェクトから <xref:Microsoft.Office.Interop.Excel.Worksheet> ホスト項目を生成することもできます。 詳細については、「 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
-- [方法: プログラムによってブックからワークシートを削除します。](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [方法: プログラムによってワークシートを選択します。](../vsto/how-to-programmatically-select-worksheets.md)
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [方法: プログラムによってブックからワークシートを削除する](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [方法: プログラムによってワークシートを選択する](../vsto/how-to-programmatically-select-worksheets.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

@@ -25,7 +25,7 @@ ms.locfileid: "85538672"
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105:配列フィールドを読み取り専用にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|

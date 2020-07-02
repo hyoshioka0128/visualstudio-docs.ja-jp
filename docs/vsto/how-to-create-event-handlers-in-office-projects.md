@@ -1,7 +1,7 @@
 ---
-title: '方法: Office プロジェクトでのイベント ハンドラーを作成します。'
+title: '方法: Office プロジェクトでイベントハンドラーを作成する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,42 +15,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419652"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538308"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>方法: Office プロジェクトでのイベント ハンドラーを作成します。
-  Visual Basic および c# でイベント ハンドラーを作成するいくつかの方法はあります。 デザイン ビューでコントロールをダブルクリックして既定のコントロールのイベント ハンドラーを作成またはの [イベント] ペインを使用して、**プロパティ**ウィンドウ コントロールのすべてのイベント ハンドラーを作成します。 ただし、コード ビューでは、可能性がありますいないする場合、イベント ハンドラーを作成、デザイン ビューに切り替えます。
+# <a name="how-to-create-event-handlers-in-office-projects"></a>方法: Office プロジェクトでイベントハンドラーを作成する
+  Visual Basic と C# でイベントハンドラーを作成するには、いくつかの方法があります。 デザインビューでコントロールの既定のイベントハンドラーを作成するには、コントロールをダブルクリックするか、[**プロパティ**] ウィンドウの [イベント] ペインを使用して、コントロール上の任意のイベントのハンドラーを作成します。 ただし、コードビューでは、デザインビューに切り替えてイベントハンドラーを作成する必要がない場合があります。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-create-an-event-handler-in-visual-basic"></a>Visual Basic でイベント ハンドラーを作成するには
+### <a name="to-create-an-event-handler-in-visual-basic"></a>Visual Basic でイベントハンドラーを作成するには
 
-1. **クラス名**コード エディターの上部にあるドロップダウン リストを選択するオブジェクトがのイベント ハンドラーを作成します。
+1. コードエディターの上部にある [**クラス名**] ドロップダウンリストから、イベントハンドラーを作成するオブジェクトを選択します。
 
     > [!NOTE]
-    > イベント ハンドラーを作成する場合`ThisDocument`または`ThisWorkbook`、選択する必要があります **(ThisDocument イベント)** または **(ThisWorkbook イベント)** で、**クラス名**ドロップダウン リスト
+    > またはのイベントハンドラーを作成する場合は `ThisDocument` `ThisWorkbook` 、[**クラス名**] ボックスの一覧で **(ThisDocument Events)** または **(ThisWorkbook events)** を選択する必要があります。
 
-2. **メソッド名**ドロップダウン リストで、コード エディターの上部にあるイベントを選択します。
+2. コードエディターの上部にある [**メソッド名**] ボックスの一覧で、イベントを選択します。
 
-     Visual Studio では、イベント ハンドラーを作成して、新しく作成されたイベント ハンドラーにカーソルを移動します。 イベント ハンドラーが既に存在する場合は、既存のイベント ハンドラーにカーソルが移動します。
+     Visual Studio によってイベントハンドラーが作成され、挿入ポイントが新しく作成されたイベントハンドラーに移動します。 イベントハンドラーが既に存在する場合、挿入ポイントは既存のイベントハンドラーに移動します。
 
-### <a name="to-create-an-event-handler-in-c"></a>C でイベント ハンドラーを作成するには\#
+### <a name="to-create-an-event-handler-in-c"></a>C でイベントハンドラーを作成するには\#
 
-1. 内のイベントのデリゲートを作成、**スタートアップ**修飾イベント名の後にスペースを入力し、入力してクラスのイベント **+=** 後にスペースをします。 例:
+1. 修飾されたイベント名の後にスペースを入力し、後にスペースを入力せずに、クラスの**Startup**イベントにイベントデリゲートを作成し **+=** ます。 次に例を示します。
 
      `this.<object name>.<event name> +=`
 
-2. コードの行の終わりには、TAB キーを 2 回押します。
+2. コード行の末尾で、TAB キーを2回押します。
 
-     Visual Studio が自動的のコード行が完了すると、イベント ハンドラーを作成および、新しく作成されたイベント ハンドラーにカーソルを移動します。
+     Visual Studio は自動的にコード行を補完し、イベントハンドラーを作成して、新しく作成されたイベントハンドラーに挿入ポイントを移動します。
 
 ## <a name="see-also"></a>関連項目
-- [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)
-- [チュートリアル: NamedRange コントロールのイベントのプログラム](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
-- [Office ソリューションの構築](../vsto/building-office-solutions.md)
+- [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)
+- [チュートリアル: NamedRange コントロールのイベントに対するプログラミング](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Office ソリューションのビルド](../vsto/building-office-solutions.md)

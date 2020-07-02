@@ -25,7 +25,7 @@ ms.locfileid: "85538854"
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407:Com 参照可能な型で静的メンバーを使用しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|

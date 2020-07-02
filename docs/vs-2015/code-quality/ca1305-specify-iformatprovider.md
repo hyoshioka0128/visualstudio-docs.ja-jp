@@ -25,7 +25,7 @@ ms.locfileid: "85539087"
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:IFormatProvider を指定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|

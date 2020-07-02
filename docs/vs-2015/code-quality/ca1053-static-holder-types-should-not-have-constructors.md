@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539582"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: スタティック ホルダー型にはコンストラクターを含めません
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:スタティック ホルダー型はコンストラクターを含むことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
@@ -35,7 +35,7 @@ ms.locfileid: "72653824"
 ## <a name="cause"></a>原因
  パブリック型または入れ子になったパブリック型で、静的なメンバーのみが宣言されています。また、パブリックまたはプロテクトの既定のコンストラクターが含まれます。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 また、型には非静的メンバーがないため、インスタンスを作成しても、型のメンバーへのアクセスは提供されません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
@@ -48,6 +48,6 @@ ms.locfileid: "72653824"
  この規則による警告は抑制しないでください。 コンストラクターが存在する場合は、型が静的な型ではないことを示します。
 
 ## <a name="example"></a>例
- 次の例は、この規則に違反する型を示しています。 ソースコードに既定のコンストラクターがないことに注意してください。 このコードがアセンブリにコンパイルされると、 C#コンパイラによって既定のコンストラクターが挿入され、この規則に違反することになります。 これを修正するには、プライベートコンストラクターを宣言します。
+ 次の例は、この規則に違反する型を示しています。 ソースコードに既定のコンストラクターがないことに注意してください。 このコードがアセンブリにコンパイルされると、C# コンパイラによって既定のコンストラクターが挿入され、この規則に違反することになります。 これを修正するには、プライベートコンストラクターを宣言します。
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]
