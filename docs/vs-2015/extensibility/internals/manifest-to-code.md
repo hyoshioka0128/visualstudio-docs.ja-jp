@@ -1,61 +1,60 @@
 ---
-title: コードへのマニフェスト |Microsoft Docs
+title: Manifest to Code |Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb9b02e10a2d263a39e7ae6a150e452ff8321d9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68192642"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537060"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-コード ツールに、マニフェストは、コンソール アプリケーションを Visual Studio イメージ サービスの .imagemanifest ファイルを受け取り、ラッパー ファイルまたはイメージ マニフェストの値では、C++、c#、VB、または Visual Studio 拡張機能の .vsct ファイルを参照するためのファイルを生成します。 このツールは、要求元のイメージから Visual Studio イメージ サービスを直接、またはコードがすべての UI とレンダリングを処理しない場合は、Api を使用してマニフェストの値を渡すために使用できるラッパー ファイルを生成します。  
+Manifest to Code ツールは、Visual Studio イメージサービスの imagemanifest ファイルを取得し、Visual Studio 拡張機能の C++、C#、VB、または vsct ファイルでイメージマニフェストの値を参照するためのラッパーファイルを生成するコンソールアプリケーションです。 このツールは、Visual Studio イメージサービスから直接イメージを要求するために使用できるラッパーファイルを生成します。また、コードが独自の UI やレンダリングを処理しない場合は、Api を介してマニフェスト値を渡すために使用できます。  
   
-## <a name="how-to-use-the-tool"></a>ツールを使用する方法  
+## <a name="how-to-use-the-tool"></a>ツールの使用方法  
  **構文**  
   
- ManifestToCode/manifest:\<イメージ マニフェスト ファイル >/language:\<コード言語 >\<省略可能な引数 >  
+ ManifestToCode/manifest: \<Image Manifest file> /言語: \<Code Language>\<Optional Args>  
   
  **引数**  
   
-||||  
-|-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
-|/manifest|作成または更新コード ラッパーを使用するイメージ マニフェストへのパス。|必須|  
-|/language|コードのラッパーを生成する言語。<br /><br /> 有効な値:CPP、C++、CS、CSharp、c#、VB、または VSCT 値が区別されます。<br /><br /> VSCT 言語のオプション、/monikerClass、/classAccess、および/namespace オプションは無視されます。|必須|  
-|/imageIdClass|ImageIdClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。<br /><br /> 既定:\<マニフェスト パス > \MyImageIds します。\<Lang Ext >|Optional|  
-|/monikerClass|MonikerClass と、ツールによって作成された関連付けられているファイルの名前。 C++ 言語のオプションでのみである .h ファイルが生成されます。 VSCT 言語これは無視されます。<br /><br /> 既定:\<マニフェスト パス > \MyMonikers します。\<Lang Ext >|Optional|  
-|/classAccess|ImageIdClass、および、monikerClass アクセス修飾子。 アクセス修飾子が指定された言語の有効なことを確認します。 これは、VSCT language オプションは無視されます。<br /><br /> 既定:Public|Optional|  
-|/namespace|コードのラッパーで定義されている名前空間。 これは、VSCT language オプションは無視されます。 いずれか '.' または ':: ' は、選択した言語のオプションに関係なく、有効な名前空間の区切り記号。<br /><br /> 既定:MyImages|Optional|  
-|/noLogo|このフラグを設定すると、印刷から製品および著作権情報が停止します。|Optional|  
-|/?|ヘルプ情報を出力します。|Optional|  
-|/help|ヘルプ情報を出力します。|Optional|  
+|-|-|-|  
+|/manifest|コードラッパーを作成または更新するために使用するイメージマニフェストへのパス。|必須|  
+|/language|コードラッパーを生成する言語。<br /><br /> 有効な値: CPP、C++、CS、CSharp、C#、VB、または VSCT 値では大文字と小文字が区別されません。<br /><br /> VSCT 言語オプションでは、/monikerClass、/classaccess、および/namespace オプションは無視されます。|必須|  
+|/imageidclass|ImageIdClass の名前とツールによって作成された関連ファイル。 C++ 言語オプションでは、.h ファイルのみが生成されます。<br /><br /> 既定値: \<Manifest Path> \MyImageIds.\<Lang Ext>|オプション|  
+|/monikerClass|MonikerClass の名前とツールによって作成された関連ファイル。 C++ 言語オプションでは、.h ファイルのみが生成されます。 VSCT 言語では、これは無視されます。<br /><br /> 既定値: \<Manifest Path> \MyMonikers.\<Lang Ext>|オプション|  
+|/classaccess|ImageIdClass と monikerClass のアクセス修飾子。 アクセス修飾子が特定の言語に対して有効であることを確認します。 VSCT 言語オプションでは、この設定は無視されます。<br /><br /> 既定値: Public|オプション|  
+|/namespace|コードラッパーで定義されている名前空間。 VSCT 言語オプションでは、この設定は無視されます。 '. ' または ':: ' は、選択した言語オプションに関係なく、有効な名前空間の区切り記号です。<br /><br /> 既定値: MyImages|オプション|  
+|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|オプション|  
+|/?|ヘルプ情報を印刷します。|オプション|  
+|/help|ヘルプ情報を印刷します。|オプション|  
   
  **例**  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: CSharp  
   
-- ManifestToCode/manifest:D:\MyManifest.imagemanifest/language:C++/namespace: :: Namespace/imageIdClass:MyImageIds/monikerClass:MyMonikers/classAccess:friend  
+- ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: C++/namespace: My:: Namespace/imageidclass: MyImageIds/monikerClass: Mymoniker/classaccess: friend  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: VSCT/imageidclass: MyImageIds  
   
 ## <a name="notes"></a>メモ  
   
-- リソースのツールから、マニフェストによって生成されたイメージのマニフェストでこのツールを使用することをお勧めします。  
+- このツールは、Manifest from Resources ツールで生成されたイメージマニフェストと共に使用することをお勧めします。  
   
-- コードのラッパーを生成するシンボルのエントリだけツールを確認します。 イメージ マニフェストにシンボルが含まれていない場合は、生成されたコード ラッパーが空になります。 イメージまたはシンボルを使用してイメージ マニフェストでイメージのセットが場合、コード ラッパーから除外されます。  
+- このツールでは、シンボルエントリだけを参照してコードラッパーが生成されます。 イメージマニフェストにシンボルが含まれていない場合、生成されたコードラッパーは空になります。 シンボルを使用しないイメージまたはイメージのセットがイメージマニフェストに存在する場合は、コードラッパーから除外されます。  
   
-## <a name="sample-output"></a>出力例  
+## <a name="sample-output"></a>サンプル出力  
  **C# ラッパー**  
   
- 1 組の単純なイメージの ID とイメージ モニカー クラスの c# のような次のコード。  
+ C# の単純なイメージ ID とイメージモニカークラスのペアは、次のコードのようになります。  
   
 ```csharp  
 //-----------------------------------------------------------------------------  
@@ -96,9 +95,9 @@ namespace MyImages
 }  
 ```  
   
- **C++ のラッパー**  
+ **C++ ラッパー**  
   
- 1 組の単純なイメージの ID とイメージ モニカー クラスの C++ のようになります、次のコード。  
+ C++ の単純なイメージ ID とイメージモニカークラスのペアは、次のコードのようになります。  
   
 ```cpp  
 //-----------------------------------------------------------------------------  
@@ -157,7 +156,7 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
   
  **Visual Basic ラッパー**  
   
- 1 組の単純なイメージの ID とイメージ モニカー クラスの Visual Basic のようになります、次のコード。  
+ Visual Basic の単純なイメージ ID とイメージモニカークラスのペアは、次のコードのようになります。  
   
 ```vb  
 ' -----------------------------------------------------------------------------  
@@ -213,7 +212,7 @@ End Namespace
   
  **VSCT ラッパー**  
   
- .Vsct ファイルのイメージ Id のセットは、次のようになります。  
+ Vsct ファイルのイメージ Id のセットは次のようになります。  
   
 ```xml  
 <?xml version='1.0' encoding='utf-8'?>  

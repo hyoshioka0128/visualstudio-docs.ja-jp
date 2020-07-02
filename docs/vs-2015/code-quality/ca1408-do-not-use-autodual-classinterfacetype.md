@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3ccd8f9fa201e2cdfabfb7f6354d6df4718c572e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652757"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534876"
 ---
-# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType を使用しないでください
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:AutoDual ClassInterfaceType を使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
@@ -33,15 +33,15 @@ ms.locfileid: "72652757"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- コンポーネントオブジェクトモデル (COM) で参照できる型は、<xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性が <xref:System.Runtime.InteropServices.ClassInterfaceType> の `AutoDual` 値に設定されているとマークされます。
+ コンポーネントオブジェクトモデル (COM) で参照できる型は、の値に設定された属性でマークされ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> `AutoDual` <xref:System.Runtime.InteropServices.ClassInterfaceType> ます。
 
-## <a name="rule-description"></a>規則の説明
- デュアル インターフェイスを使用する型を使用することで、クライアントを特定のインターフェイス レイアウトに対応付けることができます。 将来のバージョンで、この型またはその基本型のレイアウトに変更が加えられると、インターフェイスに対応付けられた COM クライアントが切り離されます。 既定では、<xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性が指定されていない場合、ディスパッチ専用インターフェイスが使用されます。
+## <a name="rule-description"></a>ルールの説明
+ デュアル インターフェイスを使用する型を使用することで、クライアントを特定のインターフェイス レイアウトに対応付けることができます。 将来のバージョンで、この型またはその基本型のレイアウトに変更が加えられると、インターフェイスに対応付けられた COM クライアントが切り離されます。 既定では、 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性が指定されていない場合、ディスパッチ専用インターフェイスが使用されます。
 
  特に指定されていない限り、パブリックなすべての非ジェネリック型は COM から参照できます。非パブリック型とジェネリック型はすべて、COM から見えません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、<xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性の値を <xref:System.Runtime.InteropServices.ClassInterfaceType> の `None` 値に変更し、インターフェイスを明示的に定義します。
+ この規則違反を修正するには、属性の値 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> を `None` の値に変更し、インターフェイスを <xref:System.Runtime.InteropServices.ClassInterfaceType> 明示的に定義します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  型とその基本型のレイアウトが将来のバージョンで変更されないことが確実である場合を除き、この規則からの警告を抑制しないでください。
@@ -53,9 +53,9 @@ ms.locfileid: "72652757"
  [!code-vb[FxCop.Interoperability.AutoDual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoDual/vb/FxCop.Interoperability.AutoDual.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1403: Auto 配置の型を COM 参照可能にすることはできません](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+ [CA1403:Auto 配置の型を COM 参照可能にすることはできません](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412: ComSource インターフェイスを IDispatch として設定します](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+ [CA1412:ComSource インターフェイスを IDispatch として設定します](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  [相互運用のための .Net 型を修飾する](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[クラスインターフェイスの概要](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[アンマネージコードとの相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

@@ -15,17 +15,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671978"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535747"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: 属性文字列リテラルは、正しく解析する必要があります
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243:属性文字列リテラルは、正しく解析する必要があります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
@@ -35,8 +35,8 @@ ms.locfileid: "72671978"
 ## <a name="cause"></a>原因
  属性の文字列リテラルパラメーターは、URL、GUID、またはバージョンに対して正しく解析されません。
 
-## <a name="rule-description"></a>規則の説明
- 属性は <xref:System.Attribute?displayProperty=fullName> から派生し、属性はコンパイル時に使用されるため、定数値のみをコンストラクターに渡すことができます。 Url、Guid、およびバージョンを表す必要がある属性パラメーターを <xref:System.Uri?displayProperty=fullName>、<xref:System.Guid?displayProperty=fullName>、および <xref:System.Version?displayProperty=fullName> として型指定することはできません。これらの型は定数として表すことができないためです。 代わりに、文字列で表現する必要があります。
+## <a name="rule-description"></a>ルールの説明
+ 属性はから派生 <xref:System.Attribute?displayProperty=fullName> しており、属性はコンパイル時に使用されるため、定数値のみをコンストラクターに渡すことができます。 Url、Guid、およびバージョンを表す必要がある属性パラメーターを、、およびとして型指定することはできません <xref:System.Uri?displayProperty=fullName> <xref:System.Guid?displayProperty=fullName> <xref:System.Version?displayProperty=fullName> 。これらの型は定数として表すことができないためです。 代わりに、文字列で表現する必要があります。
 
  パラメーターは文字列として型指定されるため、コンパイル時に正しく書式設定されていないパラメーターが渡される可能性があります。
 
@@ -61,5 +61,5 @@ ms.locfileid: "72671978"
 
 - ' Uri '、' urn '、または ' url ' を含むパラメーターは、system.string に解析できません。
 
-## <a name="see-also"></a>参照
- [CA1054: URI パラメーターを文字列にすることはできません](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+## <a name="see-also"></a>関連項目
+ [CA1054:URI パラメーターを文字列にすることはできません](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

@@ -16,17 +16,17 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 50044b51a3e576ff7d1c11b19b2f498f99b63019
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 377906675d70a712f8ca72b0b6e4d8a6864c1fbc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663651"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533238"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: パブリック メソッドの引数の検証
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:パブリック メソッドの引数の検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
@@ -34,15 +34,15 @@ ms.locfileid: "72663651"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- 外部から参照可能なメソッドは、その引数が `null` (Visual Basic の `Nothing`) かどうかを検証せずに、参照引数の1つを逆参照します。
+ 外部から参照できるメソッドは、その引数が (Visual Basic) であるかどうかを確認せずに、参照引数の1つを逆参照 `null` `Nothing` します。
 
-## <a name="rule-description"></a>規則の説明
- 外部から参照できるメソッドに渡されるすべての参照引数は、`null` に対してチェックする必要があります。 必要に応じて、引数が `null` 場合に <xref:System.ArgumentNullException> をスローします。
+## <a name="rule-description"></a>ルールの説明
+ 外部から参照できるメソッドに渡されるすべての参照引数を照合する必要があり `null` ます。 必要に応じて、引数がの場合にをスローし <xref:System.ArgumentNullException> `null` ます。
 
- パブリックまたは protected として宣言されているために不明なアセンブリからメソッドを呼び出すことができる場合は、メソッドのすべてのパラメーターを検証する必要があります。 メソッドが既知のアセンブリによってのみ呼び出されるように設計されている場合は、メソッドを内部にし、メソッドを含むアセンブリに <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性を適用する必要があります。
+ パブリックまたは protected として宣言されているために不明なアセンブリからメソッドを呼び出すことができる場合は、メソッドのすべてのパラメーターを検証する必要があります。 メソッドが既知のアセンブリによってのみ呼び出されるように設計されている場合は、メソッドを内部にし、 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> メソッドを含むアセンブリに属性を適用する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、各参照引数を `null` に対して検証します。
+ この規則違反を修正するには、各参照引数をに対して検証し `null` ます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  逆参照パラメーターが関数内の別のメソッド呼び出しによって検証されていることが確実である場合は、この規則からの警告を非表示にすることができます。
@@ -55,16 +55,16 @@ ms.locfileid: "72663651"
  [!code-vb[FxCop.Design.ValidateArguments#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#1)]
 
 ## <a name="example"></a>例
- @No__t_0 では、このルールは、検証を行う別のメソッドにパラメーターが渡されていることを検出しません。
+ では [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 、検証を行う別のメソッドにパラメーターが渡されているかどうかは、この規則によって検出されません。
 
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/fxcop.design.validatearguments.copyctors.cs#2)]
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/FxCop.Design.ValidateArguments.cs#2)]
  [!code-vb[FxCop.Design.ValidateArguments#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#2)]
 
 ## <a name="example"></a>例
- フィールドまたは参照オブジェクトであるプロパティを設定するコピーコンストラクターも、CA1062 の規則に違反する可能性があります。 コピーコンストラクターに渡されたコピーされたオブジェクトが `null` (Visual Basic で `Nothing`) である可能性があるため、違反が発生します。 違反を解決するには、静的 (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
+ フィールドまたは参照オブジェクトであるプロパティを設定するコピーコンストラクターも、CA1062 の規則に違反する可能性があります。 コピーコンストラクターに渡されるコピーされたオブジェクトが `null` (Visual Basic) である可能性があるため、違反が発生し `Nothing` ます。 違反を解決するには、静的 (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
 
- 次の `Person` クラスの例では、`Person` コピーコンストラクターに渡される `other` オブジェクトは `null` である可能性があります。
+ 次のクラスの例では、 `Person` `other` コピーコンストラクターに渡されるオブジェクトが `Person` である可能性があり `null` ます。
 
 ```
 
@@ -89,7 +89,7 @@ public class Person
 ```
 
 ## <a name="example"></a>例
- 次の変更後の `Person` の例では、コピーコンストラクターに渡された `other` オブジェクトが、最初に `PassThroughNonNull` メソッドで null であるかどうかがチェックされます。
+ 次の例では `Person` 、 `other` コピーコンストラクターに渡されたオブジェクトが、最初にメソッドで null であるかどうかがチェックされ `PassThroughNonNull` ます。
 
 ```
 public class Person

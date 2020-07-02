@@ -32,7 +32,7 @@ ms.locfileid: "85533836"
   
  [Windows ストアアプリのみ](#BKMK_windows_store_apps_only)  
   
- [Windows 8 デスクトップアプリケーションと Windows Server 2012 アプリケーションのみ](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
+ [Windows 8 デスクトップ アプリケーション、および Windows Server 2012 のアプリケーションのみ](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
   
  [すべてのアプリケーション](#BKMK_All_applications)  
   
@@ -44,10 +44,10 @@ ms.locfileid: "85533836"
 |**/app:{AppName}**|プロファイラーを起動し、スタート メニューから起動される指定したアプリを待機します。<br /><br /> `vsperf /listapps` を実行して、インストール済みアプリの Name と PackageFullName を表示します。|  
 |**/package:{PackageFullName}**|プロファイラーを起動し、スタート メニューから起動される指定したアプリを待機します。<br /><br /> `vsperf /listapps` を実行して、インストール済みアプリの Name と PackageFullName を表示します。|  
 |**/js**|JavaScript アプリのプロファイルを行うために必要です。<br /><br /> JavaScript アプリからパフォーマンス データを収集します。<br /><br /> /package または /attach でのみ使用します。|  
-|**/noclr**|省略可能。 CLR データは収集しません。<br /><br /> /package または /attach でのみ使用します。<br /><br /> 最適化で、マネージド シンボルは解決されません。|  
+|**/noclr**|任意。 CLR データは収集しません。<br /><br /> /package または /attach でのみ使用します。<br /><br /> 最適化で、マネージド シンボルは解決されません。|  
 |**/listapps**|インストール済みアプリの Name と PackageFullName を一覧表示します。|  
   
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 デスクトップ アプリケーション、および Windows Server 2012 のアプリケーションのみ  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Windows 8 デスクトップアプリケーションと Windows Server 2012 アプリケーションのみ  
  これらのオプションは、Windows ストア アプリでは機能しません。  
   
 |オプション|説明|  
@@ -62,12 +62,12 @@ ms.locfileid: "85533836"
 |オプション|説明|  
 |-|-|  
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|指定したプロセスからデータを収集します。<br /><br /> タスク マネージャーを使用して、実行中のアプリのプロセス ID (PID) とプロセス名を表示します。|  
-|**/file:{ReportName}**|省略可能。 出力ファイルを指定します (既存のファイルを上書き)。<br /><br /> /package または /attach でのみ使用します。|  
+|**/file:{ReportName}**|任意。 出力ファイルを指定します (既存のファイルを上書き)。<br /><br /> /package または /attach でのみ使用します。|  
 |**/pause**|データ収集を一時停止します。|  
 |**/resume**|データ収集を再開します。|  
 |**/stop**|データ収集を停止し、ターゲット プロセスを終了します。|  
 |**/detach**|データ収集を停止しますが、ターゲット プロセスの実行は続行します。|  
-|**全**|プロファイラーの状態を表示します。|  
+|**/status**|プロファイラーの状態を表示します。|  
   
 ## <a name="see-also"></a>関連項目  
  [Windows 8 および Windows Server 2012 アプリケーションのパフォーマンスツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
