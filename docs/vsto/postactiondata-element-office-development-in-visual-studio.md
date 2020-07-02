@@ -1,7 +1,7 @@
 ---
-title: '&lt;postActionData&gt;要素 (Visual Studio での Office 開発)'
+title: '&lt;postActionData &gt; 要素 (Visual Studio での Office 開発)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cda7829fc615c64be75f295a0cbc26b2ebbc7eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561487"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541870"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData&gt;要素 (Visual Studio での Office 開発)
+# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData &gt; 要素 (Visual Studio での Office 開発)
   `postActionData` 名前空間の `vstav3` 要素は、Office ソリューションをインストールした後に実行されるすべての配置後アクションに関連付けられているデータを指定します。
 
 ## <a name="syntax"></a>構文
@@ -34,14 +34,14 @@ ms.locfileid: "62561487"
 ## <a name="elements-and-attributes"></a>要素と属性
  `postActionData` 要素は省略可能であり、 `vstav3` 名前空間にあります。 アプリケーション マニフェストには、配置後アクションごとに `postActionData` 要素を 1 つ定義します。
 
- `postActions`要素に属性がありません。
+ `postActions` 要素に属性はありません。
 
  `postActions` に子要素はありません。
 
 ## <a name="post-deployment-action-example"></a>配置後アクションの例
 
 ### <a name="description"></a>説明
- 次のコード例は、 `postAction` を使用して配置する Office ソリューションに対するアプリケーション マニフェストの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例で示されている例の一部は、 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
+ 次のコード例は、 `postAction` を使用して配置する Office ソリューションに対するアプリケーション マニフェストの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -53,6 +53,6 @@ ms.locfileid: "62561487"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
-- [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
+- [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)
+- [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)

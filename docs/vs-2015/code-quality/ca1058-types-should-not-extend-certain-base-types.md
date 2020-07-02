@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603068"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545393"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: 型は、一定の基本型を拡張することはできません
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:型は、一定の基本型を拡張することはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
@@ -51,10 +51,10 @@ ms.locfileid: "72603068"
 
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-## <a name="rule-description"></a>規則の説明
- @No__t_0 バージョン1では、<xref:System.ApplicationException> から新しい例外を派生させることをお勧めします。 推奨事項が変更され、新しい例外は <xref:System.Exception?displayProperty=fullName> または <xref:System> 名前空間のサブクラスの1つから派生する必要があります。
+## <a name="rule-description"></a>ルールの説明
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]バージョン1では、から新しい例外を派生させることをお勧めしました <xref:System.ApplicationException> 。 推奨事項が変更され、新しい例外は <xref:System.Exception?displayProperty=fullName> 、名前空間のまたはそのサブクラスの1つから派生する必要があり <xref:System> ます。
 
- 基になるオブジェクトモデルまたはデータソースの XML ビューを作成する場合は、<xref:System.Xml.XmlDocument> のサブクラスを作成しないでください。
+ <xref:System.Xml.XmlDocument>基になるオブジェクトモデルまたはデータソースの XML ビューを作成する場合は、のサブクラスを作成しないでください。
 
 ### <a name="non-generic-collections"></a>非ジェネリックコレクション
  可能な限り、ジェネリックコレクションを使用するか、拡張します。 以前に配布していない限り、コード内の非ジェネリックコレクションは拡張しないでください。
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  この規則違反を修正するには、別の基本データ型またはジェネリックコレクションから型を派生させます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- @No__t_0 に関する違反については、このルールからの警告を抑制しないでください。 @No__t_0 に関する違反については、このルールからの警告を抑制しても安全です。 以前にコードがリリースされた場合、非ジェネリックコレクションに関する警告を抑制するのは安全です。
+ の違反については、この規則による警告を抑制しないで <xref:System.ApplicationException> ください。 の違反については、この規則による警告を抑制することが安全です <xref:System.Xml.XmlDocument> 。 以前にコードがリリースされた場合、非ジェネリックコレクションに関する警告を抑制するのは安全です。

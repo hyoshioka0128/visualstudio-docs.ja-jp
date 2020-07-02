@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56d53717afc8cd966903e75f77e1745de0031745
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba654496d80654f0d9790a01bbc41326f7a5f13e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662845"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540492"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: シリアル化コンストラクターを実装します
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229:シリアル化コンストラクターを実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
@@ -33,16 +33,16 @@ ms.locfileid: "72662845"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- この型は <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> インターフェイスを実装し、はデリゲートまたはインターフェイスではなく、次のいずれかの条件に該当します。
+ この型はインターフェイスを実装し <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 、はデリゲートまたはインターフェイスではなく、次のいずれかの条件に該当します。
 
-- 型には、<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> オブジェクトと <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> オブジェクト (シリアル化コンストラクターのシグネチャ) を受け取るコンストラクターがありません。
+- 型には、 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> オブジェクトと <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> オブジェクト (シリアル化コンストラクターのシグネチャ) を受け取るコンストラクターがありません。
 
 - 型はシールされていません。シリアル化コンストラクターのアクセス修飾子は保護されていません (ファミリ)。
 
 - 型が sealed で、シリアル化コンストラクターのアクセス修飾子がプライベートではありません。
 
-## <a name="rule-description"></a>規則の説明
- このルールは、カスタムシリアル化をサポートする型に関連しています。 型は、<xref:System.Runtime.Serialization.ISerializable> インターフェイスを実装する場合に、カスタムシリアル化をサポートします。 シリアル化コンストラクターは、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> メソッドを使用してシリアル化されたオブジェクトを逆シリアル化または再作成するために必要です。
+## <a name="rule-description"></a>ルールの説明
+ このルールは、カスタムシリアル化をサポートする型に関連しています。 型は、インターフェイスを実装する場合、カスタムシリアル化をサポート <xref:System.Runtime.Serialization.ISerializable> します。 シリアル化コンストラクターは、メソッドを使用してシリアル化されたオブジェクトを逆シリアル化または再作成するために必要です <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、シリアル化コンストラクターを実装します。 シールされたクラスの場合、コンストラクターをプライベートにするか、プロテクトにします。
@@ -56,8 +56,8 @@ ms.locfileid: "72662845"
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ISerializableCtor/cs/FxCop.Usage.ISerializableCtor.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA2237: ISerializable 型を SerializableAttribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237:ISerializable 型を SerializableAttribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

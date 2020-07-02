@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661118"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545289"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: アセンブリを NeutralResourcesLanguageAttribute に設定します
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
@@ -33,9 +33,9 @@ ms.locfileid: "72661118"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- アセンブリには、 **ResX**ベースのリソースが含まれていますが、<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> が適用されていません。
+ アセンブリには、 **ResX**ベースのリソースが含まれてい <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> ますが、それには適用されていません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  **NeutralResourcesLanguage**属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語を**ResourceManager**に通知します。 ニュートラルリソース言語と同じカルチャのリソースを検索する場合、 **ResourceManager**はメインアセンブリにあるリソースを自動的に使用します。 これは、現在のスレッドの現在のユーザーインターフェイスカルチャを持つサテライトアセンブリを検索する代わりに、これを行います。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。
 
 ## <a name="fixing-violations"></a>違反の修正
@@ -45,11 +45,11 @@ ms.locfileid: "72661118"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>ニュートラルカルチャのリソースの言語を指定するには
 
-1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** をクリックします。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
-2. 左側のナビゲーションバーから **[アプリケーション]** を選択し、 **[アセンブリ情報]** をクリックします。
+2. 左側のナビゲーションバーから [**アプリケーション**] を選択し、[**アセンブリ情報**] をクリックします。
 
-3. **[アセンブリ情報]** ダイアログボックスで、 **[ニュートラル言語]** ボックスの一覧から言語を選択します。
+3. [**アセンブリ情報**] ダイアログボックスで、[**ニュートラル言語**] ボックスの一覧から言語を選択します。
 
 4. **[OK]** をクリックします。
 

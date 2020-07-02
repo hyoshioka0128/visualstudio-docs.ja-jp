@@ -1,22 +1,22 @@
 ---
 title: DSL 定義への追跡プロパティの追加
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9843e881ddfa202778321dc2e1510c2e121095db
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984169"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544249"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>ドメイン固有言語の定義に追跡プロパティを追加する
 
@@ -36,45 +36,45 @@ ms.locfileid: "72984169"
 
 - [ユーザーによる更新] 状態の場合、追跡プロパティの値には、ユーザーが最後にプロパティを設定した値が保持されます。
 
-- **プロパティ** ウィンドウでは、プロパティが 更新者 の状態にある場合にのみ、tracking プロパティの**Reset**コマンドが有効になります。 **Reset**コマンドは、tracking プロパティの状態を tracking に設定します。
+- [**プロパティ**] ウィンドウでは、プロパティが [更新者] の状態にある場合にのみ、tracking プロパティの**Reset**コマンドが有効になります。 **Reset**コマンドは、tracking プロパティの状態を tracking に設定します。
 
-- **プロパティ** ウィンドウで、tracking プロパティが 追跡中 の状態になっている場合は、その値が通常のフォントで表示されます。
+- [**プロパティ**] ウィンドウで、tracking プロパティが [追跡中] の状態になっている場合は、その値が通常のフォントで表示されます。
 
-- **プロパティ** ウィンドウで、tracking プロパティが ユーザーによる更新 状態になっている場合、その値が太字のフォントで表示されます。
+- [**プロパティ**] ウィンドウで、tracking プロパティが [ユーザーによる更新] 状態になっている場合、その値が太字のフォントで表示されます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルを開始するには、まず次のコンポーネントをインストールする必要があります。
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 
-1. ドメイン固有言語デザイナープロジェクトを作成します。 これに `TrackingPropertyDSL` という名前を付けます。
+1. ドメイン固有言語デザイナープロジェクトを作成します。 これに `TrackingPropertyDSL` という名前をつけます。
 
 2. **ドメイン固有言語デザイナーウィザード**で、次のオプションを設定します。
 
     1. **MinimalLanguage**テンプレートを選択します。
 
-    2. ドメイン固有言語の既定の名前、`TrackingPropertyDSL` を使用します。
+    2. ドメイン固有言語の既定の名前を使用し `TrackingPropertyDSL` ます。
 
-    3. モデルファイルの拡張子を `trackingPropertyDsl` に設定します。
+    3. モデルファイルの拡張子をに設定し `trackingPropertyDsl` ます。
 
     4. モデルファイルの既定のテンプレートアイコンを使用します。
 
-    5. 製品の名前を `Product Name` に設定します。
+    5. 製品の名前をに設定 `Product Name` します。
 
-    6. 会社の名前を `Company Name` に設定します。
+    6. 会社の名前をに設定 `Company Name` します。
 
-    7. ソリューション内のプロジェクトのルート名前空間の既定値である `CompanyName.ProductName.TrackingPropertyDSL` を使用します。
+    7. ソリューション内のプロジェクトのルート名前空間には、既定値を使用し `CompanyName.ProductName.TrackingPropertyDSL` ます。
 
     8. アセンブリの厳密な名前のキーファイルをウィザードで作成できるようにします。
 
-    9. ソリューションの詳細を確認し、 **[完了]** をクリックして DSL 定義プロジェクトを作成します。
+    9. ソリューションの詳細を確認し、[**完了**] をクリックして DSL 定義プロジェクトを作成します。
 
 ## <a name="customize-the-default-dsl-definition"></a>既定の DSL 定義をカスタマイズする
  このセクションでは、DSL 定義を次の項目を含むようにカスタマイズします。
@@ -89,53 +89,53 @@ ms.locfileid: "72984169"
 
 ### <a name="to-add-the-domain-properties"></a>ドメインのプロパティを追加するには
 
-1. DSL デザイナーで、 **examplemodel.store**ドメインクラスを右クリックし、 **[追加]** をポイントして、 **[domainproperty]** をクリックします。
+1. DSL デザイナーで、 **examplemodel.store**ドメインクラスを右クリックし、[**追加**] をポイントして、[ **domainproperty**] をクリックします。
 
-    1. 新しいプロパティに `DefaultNamespace` という名前を指定します。
+    1. 新しいプロパティの名前を指定 `DefaultNamespace` します。
 
-    2. 新しいプロパティの **プロパティ** ウィンドウで、**既定値** を `DefaultNamespace` に設定し、**型** を **文字列** に設定します。
+    2. 新しいプロパティの [**プロパティ**] ウィンドウで、[**既定値**] をに設定 `DefaultNamespace` し、[**種類**] を [**文字列**] に設定します。
 
-2. **Examplemodel.store**ドメインクラスに、`CustomElements` という名前のドメインプロパティを追加します。
+2. **Examplemodel.store**ドメインクラスに、という名前のドメインプロパティを追加し `CustomElements` ます。
 
-     新しいプロパティの **[プロパティ]** ウィンドウで、 **[種類]** を **[計算]** 済み に設定します。
+     新しいプロパティの [**プロパティ**] ウィンドウで、[**種類**] を [**計算**済み] に設定します。
 
-3. 例と**して、** `Namespace` という名前のドメインプロパティを追加します。
+3. 例の**element**ドメインクラスに、という名前のドメインプロパティを追加 `Namespace` します。
 
-     新しいプロパティの **[プロパティ]** ウィンドウで、[参照可能 **] を [** **False**] に設定し、 **[種類]** を **[customstorage]** に設定します。
+     新しいプロパティの [**プロパティ**] ウィンドウで、[参照可能 **] を [** **False**] に設定し、[**種類**] を [ **customstorage**] に設定します。
 
-4. 例と**して、** `IsNamespaceTracking` という名前のドメインプロパティを追加します。
+4. 例の**element**ドメインクラスに、という名前のドメインプロパティを追加 `IsNamespaceTracking` します。
 
-     新しいプロパティの **[プロパティ]** ウィンドウで、[参照可能 **] を** **False**に設定し、 **[既定値]** を `true` に設定し、 **[型]** を **[ブール]** に設定します。
+     新しいプロパティの [**プロパティ**] ウィンドウで、[参照可能] を [ **False**]**に設定**し、[**既定値**] をに設定 `true` し、[**型**] を [**ブール**] に設定します。
 
 ### <a name="to-update-the-diagram-elements-and-dsl-details"></a>図の要素と DSL の詳細を更新するには
 
-1. DSL デザイナーで、 **ExampleShape** geometry 図形を右クリックし、 **[追加]** をポイントして、 **[テキストデコレータ]** をクリックします。
+1. DSL デザイナーで、 **ExampleShape** geometry 図形を右クリックし、[**追加**] をポイントして、[**テキストデコレータ**] をクリックします。
 
-    1. 新しいテキストのデコレータ `NamespaceDecorator` という名前を指定します。
+    1. 新しい文字列に「デコレータ」という名前を入力 `NamespaceDecorator` します。
 
-    2. テキストデコレータの **[プロパティ]** ウィンドウで、 **[位置]** を **[inner左下]** に設定します。
+    2. テキストデコレータの [**プロパティ**] ウィンドウで、[**位置**] を [ **inner左下**] に設定します。
 
 2. DSL デザイナーで、 **ExampleShape**図形に対して、[例]**要素**クラスを接続する線を選択します。
 
-    1. DSL の**詳細**ウィンドウで、 **[デコレータマップ]** タブを選択します。
+    1. DSL の**詳細**ウィンドウで、[**デコレータマップ**] タブを選択します。
 
-    2. **[デコレーター]** ボックスの一覧で **[NamespaceDecorator]** を選択し、チェックボックスをオンにして、 **[表示プロパティ]** の一覧で **[名前空間]** を選択します。
+    2. [**デコレーター** ] ボックスの一覧で [ **NamespaceDecorator**] を選択し、チェックボックスをオンにして、[**表示プロパティ**] の一覧で [**名前空間**] を選択します。
 
-3. **DSL エクスプローラー**で、 **[ドメインクラス]** フォルダーを展開し、 **[オブジェクト]** の種類 ノードを右クリックして、 **[新しいドメイン型記述子の追加]** をクリックします。
+3. **DSL エクスプローラー**で、[**ドメインクラス**] フォルダーを展開し、[**オブジェクト**の種類] ノードを右クリックして、[**新しいドメイン型記述子の追加**] をクリックします。
 
-    1. [例]**要素**ノードを展開し、 **[カスタム型記述子 (ドメイン型記述子)]** ノードを選択します。
+    1. [例]**要素**ノードを展開し、[**カスタム型記述子 (ドメイン型記述子)** ] ノードを選択します。
 
-    2. ドメイン型記述子の **[プロパティ]** ウィンドウで、 **[カスタムコード]** を **[True]** に設定します。
+    2. ドメイン型記述子の [**プロパティ**] ウィンドウで、[**カスタムコード**] を [ **True**] に設定します。
 
-4. **DSL エクスプローラー**で、 **[Xml シリアル化の動作]** ノードを選択します。
+4. **DSL エクスプローラー**で、[ **Xml シリアル化の動作**] ノードを選択します。
 
-    1. **[プロパティ]** ウィンドウで、 **[カスタムポストロード]** を**True**に設定します。
+    1. [**プロパティ**] ウィンドウで、[**カスタムポストロード**] を**True**に設定します。
 
 ## <a name="transform-templates"></a>テンプレートの変換
 
 DSL のドメインクラスとプロパティを定義したので、DSL 定義を正しく変換してプロジェクトのコードを再生成できることを確認できます。
 
-1. **ソリューションエクスプローラー**ツールバーで、 **[すべてのテンプレートの変換]** をクリックします。
+1. **ソリューションエクスプローラー**ツールバーで、[**すべてのテンプレートの変換**] をクリックします。
 
 2. システムによってソリューションのコードが再生成され、DslDefinition が保存されます。 定義ファイルの XML 形式の詳細については、「 [DslDefinition. Dsl ファイル](../modeling/the-dsldefinition-dsl-file.md)」を参照してください。
 
@@ -145,21 +145,21 @@ DSL のドメインクラスとプロパティを定義したので、DSL 定義
 
 追跡プロパティの値と状態を維持するためのコードを指定する必要があります。 生成されたコードからカスタムコードを区別し、ファイル名の競合を回避するために、カスタムコードファイルを別のサブフォルダーに配置します。
 
-1. **ソリューションエクスプローラー**で、 **DSL**プロジェクトを右クリックし、 **[追加]** をポイントして、 **[新しいフォルダー]** をクリックします。 新しいフォルダーに `CustomCode` という名前を指定します。
+1. **ソリューションエクスプローラー**で、 **DSL**プロジェクトを右クリックし、[**追加**] をポイントして、[**新しいフォルダー**] をクリックします。 新しいフォルダーにという名前を指定 `CustomCode` します。
 
-2. 新しい**Customcode**フォルダーを右クリックし、 **[追加]** をポイントして、 **[新しい項目]** をクリックします。
+2. 新しい**Customcode**フォルダーを右クリックし、[**追加**] をポイントして、[**新しい項目**] をクリックします。
 
-3. **コードファイル**テンプレートを選択し、**名前**を `NamespaceTrackingProperty.cs` に設定して、[ **OK]** をクリックします。
+3. **コードファイル**テンプレートを選択し、**名前**をに設定 `NamespaceTrackingProperty.cs` して、[ **OK]** をクリックします。
 
      NamespaceTrackingProperty.cs ファイルが作成され、編集用に開かれます。
 
-4. フォルダーに、`ExampleModel.cs,``HelperClasses.cs`、`Serialization.cs`、および `TypeDescriptor.cs` の各コードファイルを作成します。
+4. フォルダーで、、、およびの各コードファイルを作成し `ExampleModel.cs,``HelperClasses.cs` `Serialization.cs` `TypeDescriptor.cs` ます。
 
-5. **Dslpackage**プロジェクトでは、`CustomCode` フォルダーも作成し、`Package.cs` コードファイルに追加します。
+5. **Dslpackage**プロジェクトでは、フォルダーを作成 `CustomCode` して、それにコードファイルを追加することもでき `Package.cs` ます。
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>追跡プロパティをサポートするヘルパークラスを追加する
 
-HelperClasses.cs ファイルに、次のように `TrackingHelper` クラスと `CriticalException` クラスを追加します。 これらのクラスは、このチュートリアルの後半で参照します。
+HelperClasses.cs ファイルに、次のように `TrackingHelper` クラスとクラスを追加し `CriticalException` ます。 これらのクラスは、このチュートリアルの後半で参照します。
 
 1. HelperClasses.cs ファイルに次のコードを追加します。
 
@@ -238,12 +238,12 @@ HelperClasses.cs ファイルに、次のように `TrackingHelper` クラスと
 
 ## <a name="add-custom-code-for-the-custom-type-descriptor"></a>カスタム型記述子のカスタムコードを追加する
 
-`ExampleModel` ドメインクラスの型記述子の `GetCustomProperties` メソッドを実装します。
+`GetCustomProperties`ドメインクラスの型記述子に対してメソッドを実装し `ExampleModel` ます。
 
 > [!NOTE]
-> DSL ツールがカスタム型記述子のために生成するコード `ExampleModel` `GetCustomProperties` を呼び出します。ただし、DSL ツールは、メソッドを実装するコードを生成しません。
+> DSL ツールが呼び出し用のカスタム型記述子用に生成する `ExampleModel` コード `GetCustomProperties` 。ただし、dsl ツールは、メソッドを実装するコードを生成しません。
 
-このメソッドを定義すると、名前空間の追跡プロパティの追跡プロパティ記述子が作成されます。 また、tracking プロパティの属性を指定すると、 **[プロパティ]** ウィンドウでプロパティを正しく表示できます。
+このメソッドを定義すると、名前空間の追跡プロパティの追跡プロパティ記述子が作成されます。 また、tracking プロパティの属性を指定すると、[**プロパティ**] ウィンドウでプロパティを正しく表示できます。
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Examplemodel.store domain クラスの型記述子を変更するには
 
@@ -334,16 +334,16 @@ HelperClasses.cs ファイルに、次のように `TrackingHelper` クラスと
 
 ## <a name="add-custom-code-for-the-model"></a>モデルのカスタムコードを追加する
 
-`ExampleModel` ドメインクラスの `GetCustomElementsValue` メソッドを実装します。
+`GetCustomElementsValue`ドメインクラスのメソッドを実装 `ExampleModel` します。
 
 > [!NOTE]
-> DSL ツールが `ExampleModel` を呼び出すために生成するコード `GetCustomElementsValue`;ただし、DSL ツールは、メソッドを実装するコードを生成しません。
+> DSL ツールが呼び出し用に生成する `ExampleModel` コード `GetCustomElementsValue` 。ただし、dsl ツールは、メソッドを実装するコードを生成しません。
 
-`GetCustomElementsValue` メソッドを定義すると、`ExampleModel`の CustomElements 計算プロパティのロジックが提供されます。 このメソッドは、ユーザーが更新した値を持つ名前空間追跡プロパティを持つ `ExampleElement` ドメインクラスの数をカウントし、モデル内の要素の合計の比率としてこのカウントを表す文字列を返します。
+メソッドを定義すると、 `GetCustomElementsValue` の CustomElements 計算プロパティのロジックが提供され `ExampleModel` ます。 このメソッドは、ユーザーが `ExampleElement` 更新した値を持つ名前空間追跡プロパティを持つドメインクラスの数をカウントし、モデル内の要素の総数の割合として、このカウントを表す文字列を返します。
 
-また、`ExampleModel` に `OnDefaultNamespaceChanged` メソッドを追加し、`ExampleModel` の `DefaultNamespacePropertyHandler` 入れ子になったクラスの `OnValueChanged` メソッドをオーバーライドして `OnDefaultNamespaceChanged` を呼び出します。
+さらに、メソッドを `OnDefaultNamespaceChanged` に追加 `ExampleModel` し、 `OnValueChanged` の入れ子になったクラスのメソッドをオーバーライドしてを `DefaultNamespacePropertyHandler` `ExampleModel` 呼び出し `OnDefaultNamespaceChanged` ます。
 
-DefaultNamespace プロパティは名前空間の追跡プロパティを計算するために使用されるため、`ExampleModel` は、DefaultNamespace の値が変更されたことをすべての `ExampleElement` ドメインクラスに通知する必要があります。
+DefaultNamespace プロパティは名前空間の追跡プロパティの計算に使用されるため、は `ExampleModel` `ExampleElement` defaultnamespace の値が変更されたことをすべてのドメインクラスに通知する必要があります。
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>追跡対象のプロパティのプロパティハンドラーを変更するには
 
@@ -412,14 +412,14 @@ DefaultNamespace プロパティは名前空間の追跡プロパティを計算
 
 ## <a name="add-custom-code-for-the-tracking-property"></a>Tracking プロパティのカスタムコードを追加する
 
-`ExampleElement` ドメインクラスに `CalculateNamespace` メソッドを追加します。
+`CalculateNamespace`ドメインクラスにメソッドを追加 `ExampleElement` します。
 
-このメソッドを定義すると、`ExampleModel` の CustomElements 計算プロパティのロジックが提供されます。 このメソッドは、ユーザー状態によって更新された名前空間の追跡プロパティを持つ `ExampleElement` ドメインクラスの数をカウントし、モデル内の要素の合計の比率としてこのカウントを表す文字列を返します。
+このメソッドを定義すると、の CustomElements 計算プロパティのロジックが提供され `ExampleModel` ます。 このメソッドは `ExampleElement` 、ユーザー状態によって更新された名前空間の追跡プロパティを持つドメインクラスの数をカウントし、モデル内の要素の総数の割合として、このカウントを表す文字列を返します。
 
-また、、、およびメソッドのストレージを追加して、`ExampleElement` ドメインクラスの名前空間カスタムストレージプロパティを取得および設定します。
+また、、、およびメソッドのストレージを追加し、ドメインクラスの名前空間カスタムストレージプロパティを取得して設定し `ExampleElement` ます。
 
 > [!NOTE]
-> DSL ツールが `ExampleModel` 用に生成するコードは、get メソッドと set メソッドを呼び出します。ただし、DSL ツールは、メソッドを実装するコードを生成しません。
+> DSL ツールが生成するコードは、 `ExampleModel` get メソッドと set メソッドを呼び出します。ただし、Dsl ツールは、メソッドを実装するコードを生成しません。
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>カスタム型記述子のメソッドを追加するには
 
@@ -586,7 +586,7 @@ DefaultNamespace プロパティは名前空間の追跡プロパティを計算
 XML シリアル化のカスタムの読み込み後動作をサポートするコードを追加します。
 
 > [!NOTE]
-> DSL ツールが生成するコードは、`OnPostLoadModel` メソッドと `OnPostLoadModelAndDiagram` メソッドを呼び出します。ただし、DSL ツールは、これらのメソッドを実装するコードを生成しません。
+> DSL ツールが生成するコードは、メソッドとメソッドを呼び出します。 `OnPostLoadModel` `OnPostLoadModelAndDiagram` ただし、dsl ツールは、これらのメソッドを実装するコードを生成しません。
 
 ### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>カスタムの読み込み後の動作をサポートするコードを追加するには
 
@@ -714,25 +714,25 @@ XML シリアル化のカスタムの読み込み後動作をサポートする�
 
 ## <a name="test-the-language"></a>言語をテストする
 
-次の手順では、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] の新しいインスタンスで DSL デザイナーをビルドして実行し、追跡プロパティが正常に機能していることを確認できるようにします。
+次の手順では、の新しいインスタンスで DSL デザイナーをビルドして実行し、 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 追跡プロパティが正常に機能していることを確認します。
 
 1. **[ビルド]** メニューで、 **[ソリューションのリビルド]** をクリックします。
 
 2. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。
 
-    [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] の実験用ビルドでは、空のテストファイルを含む**デバッグ**ソリューションが開きます。
+    の実験用ビルドでは、 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 空のテストファイルを含む**デバッグ**ソリューションが開きます。
 
 3. **ソリューションエクスプローラー**で、[trackingPropertyDsl] ファイルをダブルクリックしてデザイナーで開き、デザイン画面をクリックします。
 
-    ダイアグラムの **[プロパティ]** ウィンドウでは、既定の**名前空間**プロパティは**Defaultnamespace**であり、**カスタム Elements**プロパティは**0/0**です。
+    ダイアグラムの [**プロパティ**] ウィンドウでは、既定の**名前空間**プロパティは**Defaultnamespace**であり、**カスタム Elements**プロパティは**0/0**です。
 
-4. **ツールボックス** から 例**要素**要素をダイアグラム画面にドラッグします。
+4. [**ツールボックス**] から [例]**要素**要素をダイアグラム画面にドラッグします。
 
-5. 要素の **[プロパティ]** ウィンドウで、 **[要素の名前空間]** プロパティを選択し、 **defaultnamespace**から**othernamespace**に値を変更します。
+5. 要素の [**プロパティ**] ウィンドウで、[**要素の名前空間**] プロパティを選択し、 **defaultnamespace**から**othernamespace**に値を変更します。
 
     **要素の名前空間**の値が太字で表示されていることに注意してください。
 
-6. **[プロパティ]** ウィンドウで、 **[要素の名前空間]** を右クリックし、 **[リセット]** をクリックします。
+6. [**プロパティ**] ウィンドウで、[**要素の名前空間**] を右クリックし、[**リセット**] をクリックします。
 
     プロパティの値が**Defaultnamespace**に変更され、値が通常のフォントで表示されます。
 
@@ -742,7 +742,7 @@ XML シリアル化のカスタムの読み込み後動作をサポートする�
 
 8. デザイン画面をクリックします。
 
-    図の **[プロパティ]** ウィンドウで、**カスタム要素**の値は**1/2**になりました。
+    図の [**プロパティ**] ウィンドウで、**カスタム要素**の値は**1/2**になりました。
 
 9. ダイアグラムの**既定の名前空間**を**Defaultnamespace**から**newnamespace**に変更します。
 

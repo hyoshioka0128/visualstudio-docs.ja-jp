@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3dda56e6980133b0e33893fbb814c4a3a7008c49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04109e821d3a739b96ad63e1a441089a5d479cd8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656059"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540778"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: 継承されたメンバーの参照範囲を縮小しません
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222:継承されたメンバーの参照範囲を縮小しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
@@ -35,7 +35,7 @@ ms.locfileid: "72656059"
 ## <a name="cause"></a>原因
  シールされていない型のプライベートメソッドには、基本型で宣言されたパブリックメソッドと同一のシグネチャがあります。 プライベートメソッドは final ではありません。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  継承メンバーのアクセス修飾子は変更しないでください。 継承メンバーをプライベートに変更しても、呼び出し元はメソッドの基本クラスの実装にアクセスできます。 メンバーがプライベートになり、型がシールされていない場合、継承する型は継承階層内のメソッドの最後のパブリック実装を呼び出すことができます。 アクセス修飾子を変更する必要がある場合は、メソッドを final に設定するか、メソッドがオーバーライドされないようにその型を sealed にする必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法

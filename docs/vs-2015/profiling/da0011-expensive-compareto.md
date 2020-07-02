@@ -14,30 +14,30 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918384"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542975"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: CompareTo の負荷が高くなっています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新のドキュメントについては、「 [DA0011: 高額な CompareTo](/visualstudio/profiling/da0011-expensive-compareto)」を参照してください。  
   
-|||  
+|アイテム|値|  
 |-|-|  
-|ルール ID|DA0011|  
-|[カテゴリ]|.NET Framework の使用|  
+|規則 ID|DA0011|  
+|カテゴリ|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> .NET メモリ|  
-|[メッセージ]|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|  
-|ルールの種類|［警告］|  
+|Message|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|  
+|規則の種類|警告|  
   
 ## <a name="cause"></a>原因  
  型の CompareTo メソッドが高コストであるか、またはメモリを割り当てています。  
   
-## <a name="rule-description"></a>規則の説明  
+## <a name="rule-description"></a>ルールの説明  
  CompareTo メソッドは効率的にする必要があります。メモリを割り当てることはできません。  
   
 ## <a name="how-to-fix-violations"></a>違反の修正方法  

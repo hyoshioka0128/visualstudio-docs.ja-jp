@@ -1,7 +1,7 @@
 ---
-title: '方法: プログラムによって Word の表を作成します。'
+title: '方法: プログラムによって Word の表を作成する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1bc20b277df90ae963d257137373457a0196e72
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574912"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544756"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>方法: プログラムによって Word の表を作成します。
+# <a name="how-to-programmatically-create-word-tables"></a>方法: プログラムによって Word の表を作成する
   <xref:Microsoft.Office.Interop.Word.Tables> コレクションは <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection>、および <xref:Microsoft.Office.Interop.Word.Range> の各クラスのメンバーです。したがって、これらのどのコンテキストでも表を作成できます。 指定した範囲に表を追加するには、<xref:Microsoft.Office.Interop.Word.Tables> コレクションの <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> メソッドを使用します。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="create-tables-in-document-level-customizations"></a>ドキュメント レベルのカスタマイズでテーブルを作成します。
+## <a name="create-tables-in-document-level-customizations"></a>ドキュメントレベルのカスタマイズでのテーブルの作成
 
 ### <a name="to-add-a-table-to-a-document"></a>ドキュメントにテーブルを追加するには
 
@@ -58,7 +58,7 @@ ms.locfileid: "62574912"
      [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]
 
-## <a name="create-tables-in-vsto-add-ins"></a>VSTO アドインでテーブルを作成します。
+## <a name="create-tables-in-vsto-add-ins"></a>VSTO アドインでのテーブルの作成
 
 ### <a name="to-add-a-table-to-a-document"></a>ドキュメントにテーブルを追加するには
 
@@ -92,7 +92,7 @@ ms.locfileid: "62574912"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって Word の表のセルにテキストと書式を追加します。](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [方法: プログラムによって Word の表に行と列を追加します。](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [方法: プログラムによって Word の表のセルにテキストと書式設定を追加する](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [方法: プログラムによって Word の表に行と列を追加する](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
 - [方法: プログラムによって document プロパティを Word の表に読み込む](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72729253d008ae5b7c38815e7c5db7636538c812
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 97f5243b775f19d77bc8d5a5c1d29fddadd9f1c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586845"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541779"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint ソリューションの作成
   SharePoint Designer の代わりに Visual Studio で SharePoint アプリケーションを作成できます。 Visual Studio には、高度なデバッグ ツール、IntelliSense、ステートメント入力候補、プロジェクト テンプレートなど、迅速な SharePoint 開発を促進する機能が用意されています。 さらに、Visual Studio では、高度な .NET Framework ベースのツールと言語も活用されています。 SharePoint プロジェクトは Visual Basic または Visual C# を使用して開発できます。また、SharePoint 用アプリのプロジェクトは JavaScript を使用して開発できます。
@@ -27,7 +27,7 @@ ms.locfileid: "82586845"
 > [!NOTE]
 > 新しい [SharePoint アドイン モデル](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) を使用してユーザーにとっての SharePoint の操作感を拡張する方法をご覧ください。 これらのアドインのフットプリントは、SharePoint ソリューションと比較して非常に小さく、その作成には、HTML5、JavaScript、CSS3、XML など、ほぼすべての Web プログラミング テクノロジを使用できます。
 
-|||
+|コンテンツ領域|記事|
 |-|-|
 |![ドキュメント](../sharepoint/media/vs-icon-documentation.gif "ドキュメント")|**ドキュメント**<br /><br /> -   [Visual Studio での SharePoint 開発 &#40;開始する&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)<br />-   [SharePoint ソリューションのローカライズ](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|
 |![ドキュメント](../sharepoint/media/vs-icon-documentation.gif "ドキュメント")|**おすすめのタスク**<br /><br /> -   [チュートリアル: SharePoint のサイト列、コンテンツタイプ、およびリストの作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [方法: イベントレシーバーを作成する](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [方法: BDC モデルを作成する](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [方法: SharePoint Web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [方法: SharePoint アプリケーションページまたは web パーツのユーザーコントロールを作成する](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|
@@ -38,5 +38,5 @@ ms.locfileid: "82586845"
 |![トレーニング](../sharepoint/media/vs-icon-training.gif "トレーニング")|**ブログ**<br /><br /> -   [Visual Studio SharePoint 開発ブログ](https://blogs.msdn.microsoft.com/vssharepointtoolsblog/)|
 |![操作方法ビデオ](../sharepoint/media/vs-icon-howdoivideos.gif "操作方法のビデオ")|**操作方法ビデオ**<br /><br /> -   [操作方法: Visual Studio 2010 で SharePoint 2010 の Visual Web パーツを作成する](https://visualstudio.microsoft.com/)<br />-   [操作方法: Visual Studio 2010 で SharePoint 2010 のコンテンツの種類を作成する](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [操作方法: Visual Studio 2010 で SharePoint 2010 のサイト定義を作成する](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [操作方法: Visual Studio 2010 を使用して SharePoint 2010 のビジネスデータ接続モデルを作成する](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|
 |![Channel 9 のビデオ](../sharepoint/media/vs-icon-channel9videos.gif "Channel 9 ビデオ")|**Channel 9 のビデオ**<br /><br /> -   [Visual Studio 2010 での SharePoint 開発の概要](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [Visual Studio 2010 で SharePoint 2010 Web パーツを構築するためのベストプラクティス](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [Visual Studio 2010 の SharePoint フィーチャーデザイナーとパッケージデザイナー](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|
-|![デベロッパー センター](../sharepoint/media/vs-icon-msdndevcenter.gif "デベロッパー センター")|**デベロッパーセンター**<br /><br /> -   [Visual Studio 開発センター](https://visualstudio.microsoft.com/)<br />-   [SharePoint デベロッパーセンター](/sharepoint/dev/)<br />-   [SharePoint Server デベロッパーセンター](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [SharePoint Designer デベロッパーセンター](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [ASP.NET デベロッパーセンター](https://msdn.microsoft.com/aa336522.aspx)|
+|![デベロッパーセンター](../sharepoint/media/vs-icon-msdndevcenter.gif "デベロッパー センター")|**デベロッパーセンター**<br /><br /> -   [Visual Studio 開発センター](https://visualstudio.microsoft.com/)<br />-   [SharePoint デベロッパーセンター](/sharepoint/dev/)<br />-   [SharePoint Server デベロッパーセンター](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [SharePoint Designer デベロッパーセンター](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [ASP.NET デベロッパーセンター](https://msdn.microsoft.com/aa336522.aspx)|
 |![フィードバックの提供](../sharepoint/media/vs-icon-feedback.gif "ご意見とご感想")|**フィードバックの提供**<br /><br /> Visual Studio に関するフィードバックを送ることができます。<br /><br /> -   [Microsoft Connect](/collaborate/connect-redirect)<br /><br /> Visual Studio のドキュメントに関するフィードバックを送ることができます。<br /><br /> -   **簡易表示。** トピックの上部から、 **[このトピックを評価する]** リンクを選択してトピックの下部に移動します。そこで、 **[この情報は役にたちましたか。]** に対する応答として、 **[はい]** または **[いいえ]** を指定できます。 **[はい]** を選択した場合は、表示される 1 つ以上のチェック ボックスを選択し、テキスト ボックスに詳細情報を入力できます。 終了したら、 **[投稿]** ボタンをクリックします。<br />-   **Scriptfree ビュー。** トピックの上部で、[**フィードバック**] リンクを選択して、TechNet および式ライブラリフィードバックフォーラムにフィードバックを提供します。<br />-   **クラシックビュー。** トピックの上部で、 **[クリックして評価とフィードバックをお寄せください]** のアイコンを選択し、ドキュメント チームにそのトピックについてフィードバックしてください。|

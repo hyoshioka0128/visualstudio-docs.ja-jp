@@ -1,7 +1,7 @@
 ---
-title: '方法: 信頼のリストのセキュリティを構成します。'
+title: '方法: 信頼のリストのセキュリティを構成する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,60 +13,60 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826380"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541636"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>方法: 信頼のリストのセキュリティを構成します。
-  管理者のアクセス許可があればを構成できます、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトのコントロールにエンドユーザーが信頼のリストに、信頼の決定を保存することによって、Office ソリューションをインストールするオプションを指定されたかどうか。 信頼のリストについては、次を参照してください。[リストによる Office のセキュリティ ソリューション](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)します。
+# <a name="how-to-configure-inclusion-list-security"></a>方法: 信頼のリストのセキュリティを構成する
+  管理者のアクセス許可を持っている場合は、信頼の決定を [信頼の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 決定] の一覧に保存することによって、エンドユーザーに Office ソリューションのインストールオプションを提供するかどうかを制御する信頼プロンプトを構成できます。 包含リストの詳細については、「[信頼リストを使用した Office ソリューションの信頼](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)」を参照してください。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- ソリューションの 5 つのゾーン内にある場合は、次のオプションを設定できます。
+ 5つのゾーンそれぞれに含まれるソリューションでは、次のオプションを設定できます。
 
-- 有効にする、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]プロンプトのキーを信頼し、信頼のリスト。 任意の証明書で署名されている Office ソリューションに信頼を付与するエンドユーザーを許可することができます。
+- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトキーと信頼の一覧を有効にします。 エンドユーザーが、任意の証明書で署名された Office ソリューションに信頼を付与できるようにすることができます。
 
-- 制限、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]プロンプトのキーを信頼し、信頼のリスト。 エンドユーザー、パブリッシャーを識別するが既に信頼された証明書で署名されている Office ソリューションをインストールすることができます。
+- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトキーと信頼の一覧を制限します。 発行者を識別する証明書で署名された Office ソリューションをエンドユーザーがインストールできるようにすることができますが、これはまだ信頼されていません。
 
-- 無効にする、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]プロンプトのキーを信頼し、信頼のリスト。 エンドユーザーは、明示的に信頼された証明書で署名されていない Office ソリューションのインストールからできないようにすることができます。
+- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプトキーと信頼の一覧を無効にします。 明示的に信頼された証明書で署名されていない Office ソリューションをエンドユーザーがインストールできないようにすることができます。
 
-## <a name="enable-the-inclusion-list"></a>信頼のリストを有効にします。
- エンドユーザーをインストールし、そのゾーンに由来する Office ソリューションの実行のオプションが表示する場合は、ゾーンの信頼のリストを有効にします。
+## <a name="enable-the-inclusion-list"></a>信頼のリストを有効にする
+ ゾーンから取得した Office ソリューションをインストールして実行するオプションをエンドユーザーに表示させる場合は、ゾーンの信頼の一覧を有効にします。
 
-### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>レジストリ エディターを使用して、信頼のリストを有効にするには
+### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>レジストリエディターを使用して、信頼の一覧を有効にするには
 
-1. レジストリ エディターを開きます。
+1. レジストリエディターを開きます。
 
-    1. **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。
+    1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. **オープン**ボックスに「 **regedt32.exe**、順にクリックします**OK**します。
+    2. [**名前**] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
 
-2. 次のレジストリ キーを探します。
+2. 次のレジストリキーを探します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
-     キーが存在しない場合は、それを作成します。
+     キーが存在しない場合は、作成します。
 
-3. 次のサブキーとして追加**文字列値**がまだ存在しない、関連付けられている値を持つ場合は、します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、**文字列値**として追加します。
 
-    |文字列値のサブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
-    |**インターネット**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**無効**|
+    |**Internet**|**AuthenticodeRequired**|
+    |**UntrustedSites**|**Disabled**|
     |**MyComputer**|**有効**|
     |**LocalIntranet**|**有効**|
-    |**しません**|**有効**|
+    |**TrustedSites**|**有効**|
 
-     既定では、**インターネット**、値を持つ**AuthenticodeRequired**と**UntrustedSites** 、値を持つ**無効**します。
+     既定では、**インターネット**の値は**AuthenticodeRequired** 、 **Untrustedsites**の値は**無効になっ**ています。
 
-### <a name="to-enable-the-inclusion-list-programmatically"></a>プログラムの信頼のリストを有効にするには
+### <a name="to-enable-the-inclusion-list-programmatically"></a>プログラムによって信頼の一覧を有効にするには
 
-1. Visual Basic または Visual C# コンソール アプリケーションを作成します。
+1. Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 開く、 *Program.vb*または*Program.cs*を編集するためのファイルを開き、次のコードを追加します。
+2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -92,40 +92,40 @@ ms.locfileid: "62826380"
 
 3. アプリケーションをビルドして実行します。
 
-## <a name="restrict-the-inclusion-list"></a>信頼のリストを制限します。
- 信頼のリストを制限して、ソリューションは、ユーザーは、信頼の決定に求められる前に、既知の id が Authenticode 証明書で署名する必要があります。
+## <a name="restrict-the-inclusion-list"></a>包含リストを制限する
+ 信頼の決定を求めるメッセージが表示される前に、既知の id を持つ Authenticode 証明書を使用してソリューションに署名する必要があるように、信頼の一覧を制限します。
 
-### <a name="to-restrict-the-inclusion-list"></a>信頼のリストを制限するには
+### <a name="to-restrict-the-inclusion-list"></a>包含一覧を制限するには
 
-1. レジストリ エディターを開きます。
+1. レジストリエディターを開きます。
 
-    1. **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。
+    1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. **オープン**ボックスに「 **regedt32.exe**、順にクリックします**OK**します。
+    2. [**名前**] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
 
-2. 次のレジストリ キーを探します。
+2. 次のレジストリキーを探します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
-     キーが存在しない場合は、それを作成します。
+     キーが存在しない場合は、作成します。
 
-3. 次のサブキーとして追加**文字列値**がまだ存在しない、関連付けられている値を持つ場合は、します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、**文字列値**として追加します。
 
-    |文字列値のサブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
-    |**UntrustedSites**|**無効**|
-    |**インターネット**|**AuthenticodeRequired**|
+    |**UntrustedSites**|**Disabled**|
+    |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
-    |**しません**|**AuthenticodeRequired**|
+    |**TrustedSites**|**AuthenticodeRequired**|
 
-     既定では、**インターネット**、値を持つ**AuthenticodeRequired**と**UntrustedSites** 、値を持つ**無効**します。
+     既定では、**インターネット**の値は**AuthenticodeRequired** 、 **Untrustedsites**の値は**無効になっ**ています。
 
-### <a name="to-restrict-the-inclusion-list-programmatically"></a>プログラムで、信頼のリストを制限するには
+### <a name="to-restrict-the-inclusion-list-programmatically"></a>プログラムによって包含一覧を制限するには
 
-1. Visual Basic または Visual C# コンソール アプリケーションを作成します。
+1. Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 開く、 *Program.vb*または*Program.cs*を編集するためのファイルを開き、次のコードを追加します。
+2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -151,36 +151,36 @@ ms.locfileid: "62826380"
 
 3. アプリケーションをビルドして実行します。
 
-## <a name="disable-the-inclusion-list"></a>信頼のリストを無効にします。
- エンドユーザー: 信頼できると既知の証明書で署名されているソリューションのみをインストールできるように、信頼のリストを無効にすることができます。
+## <a name="disable-the-inclusion-list"></a>信頼の一覧を無効にする
+ 信頼できる証明書で署名されているソリューションのみをエンドユーザーがインストールできるように、信頼の一覧を無効にすることができます。
 
-### <a name="to-disable-the-inclusion-list"></a>信頼のリストを無効にするには
+### <a name="to-disable-the-inclusion-list"></a>信頼の一覧を無効にするには
 
-1. レジストリ エディターを開きます。
+1. レジストリエディターを開きます。
 
-    1. **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。
+    1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. **オープン**ボックスに「 **regedt32.exe**、順にクリックします**OK**します。
+    2. [**名前**] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
 
-2. これがない場合は、次のレジストリ キーを作成します。
+2. まだ存在しない場合は、次のレジストリキーを作成します。
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
-3. 次のサブキーとして追加**文字列値**がまだ存在しない、関連付けられている値を持つ場合は、します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、**文字列値**として追加します。
 
-    |文字列値のサブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
-    |**UntrustedSites**|**無効**|
-    |**インターネット**|**無効**|
-    |**MyComputer**|**無効**|
-    |**LocalIntranet**|**無効**|
-    |**しません**|**無効**|
+    |**UntrustedSites**|**Disabled**|
+    |**Internet**|**Disabled**|
+    |**MyComputer**|**Disabled**|
+    |**LocalIntranet**|**Disabled**|
+    |**TrustedSites**|**Disabled**|
 
-### <a name="to-disable-the-inclusion-list-programmatically"></a>信頼のリストをプログラムで無効にするには
+### <a name="to-disable-the-inclusion-list-programmatically"></a>プログラムによって信頼の一覧を無効にするには
 
-1. Visual Basic または Visual C# コンソール アプリケーションを作成します。
+1. Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 開く、 *Program.vb*または*Program.cs*を編集するためのファイルを開き、次のコードを追加します。
+2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -208,5 +208,5 @@ ms.locfileid: "62826380"
 3. アプリケーションをビルドして実行します。
 
 ## <a name="see-also"></a>関連項目
-- [信頼のリストを使用して Office ソリューションを信頼](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
+- [信頼リストを使用して Office ソリューションを信頼する](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

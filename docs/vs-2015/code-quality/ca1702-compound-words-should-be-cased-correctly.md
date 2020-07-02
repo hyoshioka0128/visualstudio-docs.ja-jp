@@ -27,7 +27,7 @@ ms.locfileid: "85544080"
 
 Visual Studio の最新のドキュメントについては、「 [CA1702: 複合単語の大文字と小文字](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)の区別」を参照してください。
 
-|Item|値|
+|アイテム|値|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|

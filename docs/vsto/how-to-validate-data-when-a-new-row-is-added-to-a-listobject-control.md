@@ -1,7 +1,7 @@
 ---
 title: ListObject コントロールに新しい行が追加されたときにデータを検証する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65bbc374c1d0ec2a940ff98fcc6f04e5391b2db
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2b9ed8428f9dd0325678cb91a847609aed76f9b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255676"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541168"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>方法: ListObject コントロールに新しい行が追加されたときにデータを検証する
   ユーザーはデータにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールに新しい行を追加できます。 変更をデータ ソースにコミットする前に、ユーザーのデータを検証できます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="data-validation"></a>データの検証
+## <a name="data-validation"></a>データ検証
  データにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> に行が追加されるたびに、 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> イベントが発生します。 このイベントを処理することで、データの検証を実行できます。 たとえば、アプリケーションで、18と65の間の従業員のみをデータソースに追加できるようにする必要がある場合は、行が追加される前に、入力された年齢がその範囲内であることを確認します。
 
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "71255676"
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2. 新しい<xref:System.Data.DataTable>を作成し、 `Sheet1`クラス (ドキュメントレベルのプロジェクト`Startup`の場合) または`ThisAddIn`クラス (VSTO アドインプロジェクトの場合) のイベントハンドラーにサンプルの列とデータを追加します。
+2. 新しいを作成 <xref:System.Data.DataTable> し、 `Startup` `Sheet1` クラス (ドキュメントレベルのプロジェクトの場合) または `ThisAddIn` クラス (VSTO アドインプロジェクトの場合) のイベントハンドラーにサンプルの列とデータを追加します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
@@ -57,5 +57,5 @@ ms.locfileid: "71255676"
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ListObject コントロール](../vsto/listobject-control.md)
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
-- [方法: ListObject 列をデータにマップする](../vsto/how-to-map-listobject-columns-to-data.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
+- [方法: データに ListObject 列をマップする](../vsto/how-to-map-listobject-columns-to-data.md)

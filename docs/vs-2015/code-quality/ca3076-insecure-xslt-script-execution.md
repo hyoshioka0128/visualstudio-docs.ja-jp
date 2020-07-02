@@ -8,17 +8,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 558e205fa37569bfa12d7b93f989d0f8ebabab43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2b3e06bb7a150c4bb07eefc0571818f1127fe460
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669055"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545120"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: 安全ではない XSLT スクリプトの実行
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:安全ではない XSLT スクリプトの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|アイテム|値|
 |-|-|
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
@@ -26,12 +26,12 @@ ms.locfileid: "72669055"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- .NET アプリケーションで [XSLT (Extensible Stylesheet Language Transformation)](https://support.microsoft.com/kb/313997) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、 [信頼されていない URI 参照がプロセッサにより解決される](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) おそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。
+ .NET applications 安全でで[拡張スタイルシート言語変換 (XSLT)](https://support.microsoft.com/kb/313997)を実行する場合、プロセッサは、攻撃者に機密情報を開示する可能性がある信頼されていない[URI 参照を解決](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a)し、サービス拒否攻撃やクロスサイト攻撃を招く可能性があります。
 
-## <a name="rule-description"></a>規則の説明
+## <a name="rule-description"></a>ルールの説明
  [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) は、XML データを変換するための W3C (World Wide Web Consortium) 規格です。 通常 XSLT は、XML データを他の形式 (HTML、固定長のテキスト、コンマ区切りのテキスト、または別の XML 形式など) に変換するために、スタイル シートを書き込むのに使用します。 既定では禁止になっていますが、プロジェクトに応じて有効にもできます。
 
- 攻撃対象を公開していないことを確認するために、このルールは XslCompiledTransform のたびにトリガーされます。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 悪意のあるスクリプト処理を可能にする <xref:System.Xml.Xsl.XsltSettings> と <xref:System.Xml.XmlResolver> の安全でない組み合わせインスタンスを受信します。
+ 攻撃対象を公開していないことを確認するために、このルールは XslCompiledTransform のたびにトリガーされます。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> <xref:System.Xml.Xsl.XsltSettings>悪意のあるスクリプトの処理を可能にするとのセキュリティで保護されていない組み合わせのインスタンスを受信し <xref:System.Xml.XmlResolver> ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -65,7 +65,7 @@ namespace TestNamespace
 } 
 ```
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 
 ```csharp
 using System.Xml;
@@ -111,7 +111,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>解決策:
+### <a name="solution"></a>解決策
 
 ```csharp
 using System.Xml;
