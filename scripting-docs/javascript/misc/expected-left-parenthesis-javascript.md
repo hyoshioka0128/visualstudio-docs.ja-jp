@@ -1,9 +1,9 @@
 ---
-title: 予想 '(' (JavaScript) |Microsoft Docs
+title: "' (' (JavaScript) | が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1005
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: 712315e1-4c68-4f66-84c2-41b83c42d85a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f8beaed8ba94d30c04df866805bc0c8268a093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adcabbe0b1d7ca7d0298202b5242049b86f8229a
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934874"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817100"
 ---
 # <a name="expected--javascript"></a>'(' が必要です。(JavaScript)
-かっこのセット内の式を囲みますしようとしましたが、始めかっこが含まれていません。 一部の式は、かっこと右かっこのセット内で囲む必要があります。 次の例では、かっこの使用に注意してください。  
+かっこのセット内で式を囲みましたが、左中かっこが含まれていませんでした。 一部の式は、始めかっこと終わりかっこのセット内で囲む必要があります。 次の例では、かっこの使用に注意してください。  
   
 ```JavaScript  
 for (initialize; test; increment) {  

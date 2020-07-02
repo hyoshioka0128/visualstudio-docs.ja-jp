@@ -3,7 +3,7 @@ title: 無効な文字です。 (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576581"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816944"
 ---
 # <a name="invalid-character-javascript"></a>無効な文字です。(JavaScript)
-[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] コンパイラによって有効であると認識されない文字 (または文字) を使用して識別子を構成しました。 有効な文字は、次の規則を使用します。  
+コンパイラによって有効と認識されない文字 (または文字) を使用して識別子を構成しました [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。 有効な文字は、次の規則を使用します。  
   
 - 最初の文字は、ASCII 文字 (大文字または小文字) またはアンダースコア (_) である必要があります。  
   
@@ -32,9 +32,9 @@ ms.locfileid: "72576581"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語の定義に含まれていない文字は使用しないでください。  
+- 言語定義の一部ではない文字は使用しないで [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ください。  
   
-## <a name="see-also"></a>参照  
- [変数](../../javascript/variables-javascript.md)   
+## <a name="see-also"></a>関連項目  
+ [環境](../../javascript/variables-javascript.md)   
  [特殊文字](../../javascript/advanced/special-characters-javascript.md)   
  [データの種類](../../javascript/data-types-javascript.md)

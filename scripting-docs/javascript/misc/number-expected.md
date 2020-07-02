@@ -1,9 +1,9 @@
 ---
-title: 数字が必要です |Microsoft Docs
+title: 数値が必要です |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5001
 dev_langs:
@@ -14,20 +14,20 @@ ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f26a9c42db6771c0624bd7091147088e3ddc21a
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b8148e18fba3fca24cc6615f4f345c4883306ca3
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573755"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816437"
 ---
 # <a name="number-expected"></a>数字が必要です。
-**Number.prototype.toString** メソッドまたは **Number.prototype.valueOf**メソッドが、**Number**型以外のオブジェクトから呼び出されました。 この場合の呼び出し元のオブジェクトは、**Number** 型である必要があります。  
+**Number**以外の型のオブジェクトに対して、#. **prototype. ToString**または**数値の prototype**メソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは、**数値**型である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Number.prototype.toString** メソッドまたは **Number.prototype.valueOf** メソッドの呼び出しは、**Number** 型のオブジェクトでのみ行います。  
+- **Number**型のオブジェクトに対してのみ、 **number. prototype. toString**メソッドまたは**number. prototype**メソッドを呼び出します。  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [Number オブジェクト](../../javascript/reference/number-object-javascript.md)   
  [number プロパティ (Error)](../../javascript/reference/number-property-error-javascript.md)
