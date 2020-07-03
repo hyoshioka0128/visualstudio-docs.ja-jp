@@ -1,19 +1,19 @@
 ---
 title: 配置後の問題の診断 | Microsoft Docs
 ms.date: 04/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae6a7f5e95f2d853978cf1f8d9665a51ae80fd3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911379"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350590"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使って配置後に問題を診断します (C#、Visual Basic)
 
@@ -73,7 +73,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 5. カスタム テンプレートを使用する場合は、この MSBuild 引数を追加して、シンボル ファイルを保存する場所を指定します。
 
-     **/p:BuildSymbolStorePath=** \<*シンボルへのパス*>
+     **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
      ![ビルド定義にビルド サーバー情報を含める (TFS 2013)](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
@@ -110,7 +110,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
     - **/p:IncludeServerNameInBuildInfo=True**
 
-    - **/p:BuildSymbolStorePath=** \<*シンボルへのパス*>
+    - **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 4. 新しいビルドを実行します。
 
@@ -150,7 +150,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
  **/p:IncludeServerNameInBuildInfo=True**
 
- **/p:BuildSymbolStorePath=** \<*シンボルへのパス*>
+ **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a>手順 2: アプリをリリースする
  アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](https://msdn.microsoft.com/library/dd394698.aspx) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。
@@ -370,7 +370,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 - Visual Studio が、現在のチーム コレクションでソリューションまたはプロジェクトを見つけられなかった。
 
-     対応するソースを Visual Studio で検索できる場所がビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) によって指定されていない場合、Visual Studio では現在接続されている TFS を使用して、対応するソリューションまたはプロジェクトが検索されます。 対応するソースが現在のチーム コレクションにない場合、Visual Studio は、別のチーム コレクションに接続するように求めるメッセージを表示します。
+     Visual Studio が対応するソースを検索できる場所をビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) で指定していないと、Visual Studio は現在接続されている TFS を使用して、対応するソリューションまたはプロジェクトを検索します。 対応するソースが現在のチーム コレクションにない場合、Visual Studio は、別のチーム コレクションに接続するように求めるメッセージを表示します。
 
 - Visual Studio が、ビルド マニフェスト ファイル (\<*ProjectName*>.BuildInfo.config) で指定されたコレクションでソリューションまたはプロジェクトを見つけられなかった。
 

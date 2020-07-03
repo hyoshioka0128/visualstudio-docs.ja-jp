@@ -1,7 +1,7 @@
 ---
-title: 'DA0024: 過剰な GC CPU 時間 | Microsoft Docs'
+title: DA0024 - 過剰な GC CPU 時間 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0024
 - vs.performance.24
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8352095bcf31c137d391c2ed2e832d34e0ec7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20736e7af905bbbc72c1c2bec1e5b79d68259217
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779351"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544652"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: 過剰な GC CPU 時間
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024:過剰な GC CPU 時間
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0024|
 |カテゴリ|.NET Framework の使用|
-|プロファイル方法|All|
-|[メッセージ]|GC の時間の割合が非常に高くなっています。 ガベージ コレクションのオーバーヘッドが過剰です。|
+|プロファイル方法|すべて|
+|メッセージ|GC の時間の割合が非常に高くなっています。 ガベージ コレクションのオーバーヘッドが過剰です。|
 |規則の種類|警告|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。
@@ -43,7 +43,7 @@ ms.locfileid: "74779351"
  この規則は、ガベージ コレクションに費やされた時間がアプリケーションの全体の処理時間と比較して過度に大きい場合に適用されます。
 
 > [!NOTE]
-> ガーベジ コレクションに費やされた時間の割合が、アプリケーション全体の処理時間と比較して高いが過度ではない場合、この規則ではなく、「[DA0023: 高い GC CPU 時間。](../profiling/da0023-high-gc-cpu-time.md)」の警告が適用されます。
+> ガーベジ コレクションに費やされた時間の割合が、アプリケーション全体の処理時間と比較して高いが過度ではない場合、この規則ではなく、「[DA0023:高い GC CPU 時間。](../profiling/da0023-high-gc-cpu-time.md)」の警告が適用されます。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、プロファイル データの [[マーク] ビュー](../profiling/marks-view.md)に移動します。 **.NET CLR Memory\\% Time in GC** 列を探します。 マネージド メモリのガベージ コレクションが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 % Time in GC の値と、 **# of Gen 0 Collections**、 **# of Gen 1 Collections**、 **# of Gen 2 Collections** 値で報告されているガベージ コレクションの割合を比較してください。

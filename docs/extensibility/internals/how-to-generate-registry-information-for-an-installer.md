@@ -181,7 +181,7 @@ ms.locfileid: "85905466"
     </Include>
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Vspackage の登録](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackages](../../extensibility/internals/vspackages.md)

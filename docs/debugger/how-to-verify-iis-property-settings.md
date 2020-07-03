@@ -1,7 +1,7 @@
 ---
-title: '方法: IIS のプロパティ設定を確認する | Microsoft Docs'
+title: 方法 - IIS のプロパティ設定を確認する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846429"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348471"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>方法: IIS のプロパティ設定を確認する
 
@@ -59,7 +59,7 @@ IIS 管理ツールで、Web アプリケーションのプロパティを設定
 
    3. **[OK]** をクリックして **[認証方法]** ダイアログ ボックスを閉じます。
 
-5. ATL Server アプリケーションの場合は、DEBUG の動詞が ISAPI 拡張機能に関連付けられていることを確認してください。 詳細については、[動詞 DEBUG を拡張子に関連付ける](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)」を参照してください。
+5. ATL Server アプリケーションの場合は、DEBUG の動詞が ISAPI 拡張機能に関連付けられていることを確認してください。 詳細については、「[方法:動詞 DEBUG を拡張子に関連付ける](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)」を参照してください。
 
 6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションの場合、アプリケーションの仮想フォルダーに、**インターネット インフォメーション サービス (IIS) マネージャー**、**インターネット サービス マネージャー**、または**インターネット インフォメーション サービス**で設定されたアプリケーション名があることを確認します。
 

@@ -91,5 +91,5 @@ HRESULT AddScriptlet(
 |`OLESCRIPT_E_INVALIDNAME`|指定された既定の名前は、このスクリプト言語では無効です。|  
 |`OLESCRIPT_E_SYNTAX`|指定されていない構文エラーがスクリプトレットで発生しました。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>こちらもご覧ください  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

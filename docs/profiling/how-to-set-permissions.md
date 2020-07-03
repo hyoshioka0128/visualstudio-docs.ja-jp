@@ -1,7 +1,7 @@
 ---
-title: '方法: アクセス許可を設定する | Microsoft Docs'
+title: 方法 - アクセス許可を設定する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774590"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328949"
 ---
 # <a name="how-to-set-permissions"></a>方法: アクセス許可を設定する
 
@@ -64,13 +64,13 @@ Users グループのメンバーの場合は、チームの他のメンバー�
 
 2. フォルダーを右クリックし、 **[プロパティ]** をクリックします。
 
-     **[\<フォルダー名> のプロパティ]** ダイアログ ボックスが表示されます。
+     **[\<folder name> プロパティ]** ダイアログ ボックスが表示されます。
 
 3. **[セキュリティ]** タブをクリックします。
 
 4. **[グループ名またはユーザー名]** ボックスにあるユーザーのアカウント名をクリックします。
 
-5. **[\<ユーザー名> のアクセス許可]** ボックスで、 **[フル コントロール]** のチェック ボックスを選択します。
+5. **[\<user name> のアクセス許可]** ボックスで、 **[フル コントロール]** のチェック ボックスを選択します。
 
 6. **[OK]** をクリックします。
 
@@ -104,7 +104,7 @@ Users グループのメンバーの場合は、チームの他のメンバー�
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     このコマンドにより、\<ユーザー名> または \<グループ名> アカウントにプロファイリング ツールへのアクセス許可が付与されます。 \<権限> オプションは、ユーザーがアクセスできるプロファイリング機能を決定します。 \<権限> オプションには次の値の 1 つ以上を指定できます。
+     このコマンドにより、\<user name> または \<group name> アカウントにプロファイリング ツールへのアクセス許可が付与されます。 \<right> オプションは、ユーザーがアクセスできるプロファイリング機能を決定します。 \<right> オプションには次の値の 1 つ以上を指定できます。
 
     - FullAccess - サービスからのパフォーマンス データの収集、サンプリング、セッション間のプロファイリングを含むすべてのプロファイリング メソッドへのアクセスを許可します。
 
@@ -120,7 +120,7 @@ Users グループのメンバーの場合は、チームの他のメンバー�
 
    指定されたユーザーは、ログオン後に、管理者アクセス許可なしにプロファイリング ツールを使用できるようになります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)

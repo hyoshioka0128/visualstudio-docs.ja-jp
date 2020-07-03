@@ -1,7 +1,7 @@
 ---
-title: 'DA0026: 過剰なカーネル CPU 処理時間。 | Microsoft Docs'
+title: DA0026 - 過剰なカーネル CPU 処理時間 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd3d96ccf3fc8463908ab5cf27b52e91fb1d05ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777490"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544626"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 過剰なカーネル CPU 処理時間。
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 過剰なカーネル CPU 処理時間
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|TODO|
 |カテゴリ|プロファイリング ツールの使用|
 |プロファイル方法|サンプリング|
-|[メッセージ]|比較的高いカーネル モード CPU 時間が計測されました。 SysCall サンプリングを有効にし、原因を調査することを検討してください。|
+|メッセージ|比較的高いカーネル モード CPU 時間が計測されました。 SysCall サンプリングを有効にし、原因を調査することを検討してください。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。
@@ -39,4 +39,4 @@ ms.locfileid: "74777490"
  カーネル モードでの実行中にアプリケーションの処理時間が比較的長くなっている場合は、さらに調査が必要になることがあります。 ユーザー モードのアプリケーションは、I/O 操作の実行、スレッドまたはプロセスの同期プリミティブの待機、またはシステム コールを実行するために、カーネル モードに遷移します。 システム コールに基づいてサンプルの呼び出し履歴を収集するオプションを選択する際に、アプリケーションが実行するシステム コールの種類とそのシステム コールを処理する関数を調べることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- アプリケーションが実行するシステム コールを調べるには、プロファイルを再度実行し、システム コールに基づいてサンプルを収集するオプションを選択します。 IDE 内でプロファイリング ツールを実行する場合の詳細については、「[方法 : サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)」を参照してください。 コマンド ラインからプロファイル ツールを実行する場合の詳細については、コマンド ライン プロファイル ツール リファレンスの記事、「[VSPerfCmd](../profiling/vsperfcmd.md)」の「**サンプリング間隔オプション**」のセクションを参照してください。
+ アプリケーションが実行するシステム コールを調べるには、プロファイルを再度実行し、システム コールに基づいてサンプルを収集するオプションを選択します。 「[方法: サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)」で IDE 内でプロファイリング ツールを実行する場合の詳細について参照してください。 コマンド ラインからプロファイル ツールを実行する場合の詳細については、コマンド ライン プロファイル ツール リファレンスの記事、「[VSPerfCmd](../profiling/vsperfcmd.md)」の「**サンプリング間隔オプション**」のセクションを参照してください。

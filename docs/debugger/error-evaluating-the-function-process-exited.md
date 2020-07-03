@@ -1,7 +1,7 @@
 ---
-title: エラー :ターゲット プロセスがコード &#39;code&#39 で終了しました (関数 &#39;function&#39; の評価中) | Microsoft Docs
+title: エラー - ターゲット プロセスがコード &#39;code&#39; で終了しました (関数 &#39;function&#39; の評価中) | Microsoft Docs
 ms.date: 4/06/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850822"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460779"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>エラー :ターゲット プロセスがコード &#39;code&#39 で終了しました (関数 &#39;function&#39; の評価中)。
 

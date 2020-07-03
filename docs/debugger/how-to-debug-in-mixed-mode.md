@@ -1,7 +1,7 @@
 ---
-title: '方法: 混合モードでデバッグする | Microsoft Docs'
+title: 方法 - 混合モードでデバッグする | Microsoft Docs
 ms.date: 11/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894379"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350109"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>方法: 混合モードでデバッグする (C#、C++、Visual Basic)
 
@@ -34,7 +34,7 @@ ms.locfileid: "62894379"
 
 マネージド デバッガーとネイティブ デバッガーは両方とも、呼び出し元のアプリ プロジェクトの **[プロパティ]** ページで有効にすることができます。 ネイティブ アプリとマネージド アプリの設定は異なります。
 
-呼び出し元のアプリのプロジェクトにアクセスできない場合は、DLL プロジェクトから DLL をデバッグすることができます。 DLL プロジェクトだけをデバッグするには、混合モードは必要ありません。 詳細については、[DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)」を参照してください。
+呼び出し元のアプリのプロジェクトにアクセスできない場合は、DLL プロジェクトから DLL をデバッグすることができます。 DLL プロジェクトだけをデバッグするには、混合モードは必要ありません。 詳細については、「[方法:DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)」を参照してください。
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとコマンドは、ご利用の Visual Studio の設定またはエディションによっては、この記事のものと異なる場合があります。 設定を変更するには、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択します。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
@@ -43,7 +43,7 @@ ms.locfileid: "62894379"
 
 1. **ソリューション エクスプローラー**で C++ プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt** + **Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
 
-1. **[\<プロジェクト> プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** を展開して、 **[デバッグ]** を選択します。
+1. **[\<Project> プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** を展開して、 **[デバッグ]** を選択します。
 
 1. **[デバッガーの種類]** を **[混合]** または **[自動]** に設定します。
 

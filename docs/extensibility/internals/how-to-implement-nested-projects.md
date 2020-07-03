@@ -84,7 +84,7 @@ ms.locfileid: "85905344"
 - [入れ子になったプロジェクトのコマンド処理を実装する](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [入れ子になったプロジェクトの [AddItem] ダイアログボックスをフィルター処理する](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [[新しい項目の追加] ダイアログボックスへの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)

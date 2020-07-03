@@ -1,7 +1,7 @@
 ---
-title: 'DA0010: GetHashCode の負荷が高くなっています | Microsoft Docs'
+title: DA0010 - GetHashCode の負荷が高くなっています | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExpensiveGetHashCode
 - vs.performance.DA0010
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8f94277822d1fcd4210f0f8d79591fc4e2ed3d9e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777687"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520680"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode の負荷が高くなっています
+# <a name="da0010-expensive-gethashcode"></a>DA0010:GetHashCode の負荷が高くなっています
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0010|
 |カテゴリ|.NET Framework の使用|
 |プロファイル方法|サンプリング<br /><br /> .NET メモリ|
-|[メッセージ]|GetHashCode 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、ハッシュ コード関数の複雑さを軽減してください。|
-|メッセージ型|警告|
+|メッセージ|GetHashCode 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、ハッシュ コード関数の複雑さを軽減してください。|
+|メッセージの種類|警告|
 
 ## <a name="cause"></a>原因
  型の GetHashCode メソッドの呼び出しがプロファイリング データの大きな割合を占めているか、またはそのメソッドがメモリを割り当てています。

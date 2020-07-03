@@ -1,7 +1,7 @@
 ---
-title: '方法: コード変更を停止する | Microsoft Docs'
+title: 方法 - コード変更を停止する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 545599aa68da79aa7be41f0a2517049146cebc89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732448"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348952"
 ---
 # <a name="how-to-stop-code-changes"></a>方法: コード変更を停止する
 エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。

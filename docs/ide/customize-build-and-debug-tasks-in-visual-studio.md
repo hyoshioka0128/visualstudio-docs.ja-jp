@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542686"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533720"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -201,7 +201,7 @@ bin:
 
 任意のファイルまたはフォルダーのタスクを作成するには、`appliesTo` フィールドに名前を指定します (例:`"appliesTo": "hello.js"`)。 次のファイル マスクを値として使用できます。
 
-|||
+|ファイル マスク|説明|
 |-|-|
 |`"*"`| タスクは、ワークスペース内のすべてのファイルとフォルダーで使用できます|
 |`"*/"`| タスクは、ワークスペース内のすべてのフォルダーで使用できます|
@@ -213,7 +213,7 @@ bin:
 
 #### <a name="macros-for-tasksvsjson"></a>tasks.vs.json のマクロ
 
-|||
+|マクロ|説明|
 |-|-|
 |`${env.<VARIABLE>}`| 開発者コマンド プロンプトに設定されている環境変数 (たとえば、${env.PATH}、${env.COMSPEC} など) を指定します。 詳細については、「[Visual Studio 用開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)」を参照してください。|
 |`${workspaceRoot}`| ワークスペース フォルダーの完全なパス (例: *C:\sources\hello*)|

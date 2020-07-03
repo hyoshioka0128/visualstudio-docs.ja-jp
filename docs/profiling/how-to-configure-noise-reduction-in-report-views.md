@@ -1,7 +1,7 @@
 ---
-title: '方法: レポート ビューでノイズ除去を設定する | Microsoft Docs'
+title: 方法 - レポート ビューでノイズ除去を設定する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776333"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330797"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>方法: レポート ビューでノイズ除去を設定する
 パフォーマンス レポートは、コール ツリー ビューや 割り当て ビューに表示されるデータの数を制限して、ノイズを除去するように構成できます。 ノイズ除去を行うことで、パフォーマンスの問題を発見しやすくなります。 これは、パフォーマンス レポートの分析に役立ちます。
@@ -39,7 +39,7 @@ ms.locfileid: "74776333"
 
 2. トリミングを有効にするには、次の手順を実行します。
 
-    1. **[トリミングを有効にする]** を選択します。 これが既定の設定です。
+    1. **[トリミングを有効にする]** を選択します。 これは、既定の設定です。
 
         > [!NOTE]
         > ノイズ除去が有効になっていると、レポートに情報バーが表示されます。 詳細については、「[コール ツリー ビュー](../profiling/call-tree-view.md)」および「[割り当てビュー](../profiling/dotnet-memory-allocations-view.md)」を参照してください。
@@ -48,7 +48,7 @@ ms.locfileid: "74776333"
 
     3. **[しきい値]** テキスト ボックスに割合の値を入力して、必要なしきい値の設定を構成します。
 
-    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これが既定の設定です。
+    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。
 
 3. トリミングを無効にするには、 **[トリミングを有効にする]** をオフにします。
 
@@ -62,7 +62,7 @@ ms.locfileid: "74776333"
 
 2. 折りたたみを有効にするには、次の手順を実行します。
 
-    1. **[折りたたみを有効にする]** を選択します。 これが既定の設定です。
+    1. **[折りたたみを有効にする]** を選択します。 これは、既定の設定です。
 
         > [!NOTE]
         > ノイズ除去が有効になっていると、レポートに情報バーが表示されます。 詳細については、「[コール ツリー ビュー](../profiling/call-tree-view.md)」および「[割り当てビュー](../profiling/dotnet-memory-allocations-view.md)」を参照してください。
@@ -71,14 +71,14 @@ ms.locfileid: "74776333"
 
     3. **[しきい値]** テキスト ボックスに割合の値を入力して、必要なしきい値の設定を構成します。
 
-    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これが既定の設定です。
+    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。
 
 3. 折りたたみを無効にするには、 **[折りたたみを有効にする]** をオフにします。
 
 4. **[OK]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)
-- [方法 : インストルメンテーションから短い関数を除外する、または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [[コール ツリー] ビュー](../profiling/call-tree-view.md)
+- [方法: インストルメンテーションで短い関数を除外または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [コール ツリー ビュー](../profiling/call-tree-view.md)
 - [割り当て ビュー](../profiling/dotnet-memory-allocations-view.md)

@@ -1,9 +1,9 @@
 ---
-title: エラー :ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
+title: エラー - ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,21 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737402"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536670"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>エラー :ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
 このエラーは、リモート デバッガー サービスでデバッグを開始したコンピューターに接続するときに、このサービスを実行しているユーザー アカウントを認証できないことを意味します。 このエラーは、レガシ デバッグ エンジンを使用したリモート デバッグで、リモート デバッガーがサービスとして実行されている場合に発生する可能性があります。
 
  コンピューターにアクセスできるアカウントは、次の表のとおりです。
 
-|||||
+|シナリオ|LocalSystem アカウント|ドメイン アカウント|両方のコンピューターに同じユーザー名とパスワードを持つローカル アカウント|
 |-|-|-|-|
-||LocalSystem アカウント|ドメイン アカウント|両方のコンピューターに同じユーザー名とパスワードを持つローカル アカウント|
 |両方のコンピューターが同じドメインにある場合|はい|はい|はい|
 |両方のコンピューターが双方向の信頼関係を持つドメインにある場合|いいえ|いいえ|はい|
 |一方または両方のコンピューターがワークグループにある場合|いいえ|いいえ|はい|

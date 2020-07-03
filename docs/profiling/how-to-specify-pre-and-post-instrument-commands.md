@@ -1,7 +1,7 @@
 ---
-title: '方法: インストルメント化前のコマンドおよびインストルメント化後のコマンドを指定する | Microsoft Docs'
+title: 方法 - インストルメント化前のコマンドおよびインストルメント化後のコマンドを指定する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,14 +15,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778714"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328998"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>方法: インストルメント化前のコマンドおよびインストルメント化後のコマンドを指定する
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>方法: インストルメント前のコマンドおよびインストルメント後のコマンドを指定する
 
 パフォーマンス セッションのバイナリがインストルメント化される前か後に実行されるコマンドを指定できます。 コマンド ラインから発行できるコマンドはすべて、インストルメント化前のイベントまたはインストルメント化後のイベントとして指定できます。 たとえば、バイナリのインストルメント化後に実行されるバッチ ファイルで、厳密な名前キーを持つアセンブリの再署名を自動化するコマンドを指定できます。
 
@@ -70,6 +70,6 @@ ms.locfileid: "74778714"
 
      コマンドを削除することなくその実行を無効にするには、 **[インストルメンテーションから除外]** チェック ボックスを選択します。 コンパイラまたはリンカーの設定を変更するには、プロジェクトのプロパティ ページを使用します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

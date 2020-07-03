@@ -1,7 +1,7 @@
 ---
-title: '方法: Web サイトのパフォーマンス データを収集する | Microsoft Docs'
+title: 方法 - Web サイトのパフォーマンス データを収集する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307185"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330964"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集する
 
@@ -64,7 +64,7 @@ ms.locfileid: "79307185"
 
 8. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションのパフォーマンス セッションが作成され、ブラウザーで Web サイトが起動します。 プロファイリングする機能を実行してからブラウザーを閉じます。
 
-     プロファイラーで、データ ファイルが生成され、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] メイン ウィンドウにデータの概要ビューが表示されます。
+     プロファイラーで、データ ファイルが生成され、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] メイン ウィンドウにデータの概要ビューが表示されます。
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Visual Studio でプロジェクトを開かずに Web サイトをプロファイリングする
 
@@ -98,9 +98,9 @@ ms.locfileid: "79307185"
 
 9. ASP.NET アプリケーションのパフォーマンス セッションが作成され、ブラウザーで Web サイトが起動します。 プロファイリングする機能を実行してからブラウザーを閉じます。
 
-     プロファイラーで、データ ファイルが生成され、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] メイン ウィンドウにデータの概要ビューが表示されます。
+     プロファイラーで、データ ファイルが生成され、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] メイン ウィンドウにデータの概要ビューが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [概要](../profiling/overviews-performance-tools.md)
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

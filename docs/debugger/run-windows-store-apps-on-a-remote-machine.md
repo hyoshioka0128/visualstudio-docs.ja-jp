@@ -1,7 +1,7 @@
 ---
 title: リモート マシンの UWP アプリをデバッグする | Microsoft Docs
 ms.date: 10/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902881"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348120"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>リモート マシンの UWP アプリを Visual Studio からデバッグする
 
@@ -53,7 +53,7 @@ Visual Studio を使用して、別のコンピューターまたはデバイス
 
 1. リモート マシンの場合は、[[リモート接続] ダイアログ ボックス](#remote-connections)で **[リモート コンピューター]** フィールドにネットワーク名または IP アドレスを入力するか、 **[検索]** を選択してデバイスを検索します。
 
-    ![リモート デバッグ用のマネージド プロジェクト プロパティ](../debugger/media/vsrun_managed_projprop_remote.png "マネージド デバッグ プロジェクト プロパティ")
+    ![リモート デバッグ用のマネージド プロジェクト プロパティ](../debugger/media/vsrun_managed_projprop_remote.png "マネージド デバッグ プロジェクトのプロパティ")
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> リモートデバッグ用に C++ プロジェクトを構成する
 
@@ -65,7 +65,7 @@ Visual Studio を使用して、別のコンピューターまたはデバイス
 
 1. リモート マシンの場合は、[[リモート接続] ダイアログ ボックス](#remote-connections)で **[コンピューター名]** フィールドにネットワーク名または IP アドレスを入力または選択するか、ドロップダウンして **[検索]** を選択してデバイスを検索します。
 
-    ![リモート デバッグ用の C++ プロジェクト プロパティ](../debugger/media/vsrun_cpp_projprop_remote.png "C++ デバッグ プロジェクト プロパティ")
+    ![リモート デバッグ用の C++ プロジェクト プロパティ](../debugger/media/vsrun_cpp_projprop_remote.png "C++ のデバッグ プロジェクト プロパティ")
 
 ### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> [リモート接続] ダイアログ ボックスを使用する
 

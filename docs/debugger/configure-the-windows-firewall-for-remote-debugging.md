@@ -1,19 +1,19 @@
 ---
 title: リモート デバッグ用の Windows ファイアウォールを構成する | Microsoft Docs
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563722"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350694"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>リモート デバッグ用の Windows ファイアウォールを構成する
 
@@ -94,7 +94,7 @@ Windows ファイアウォールを介して特定のアプリを許可するに
 
 リモート コンピューターでは、リモート デバッグ ツールは次の場所にあります。
 
-" *\<Visual Studio インストール ディレクトリ\>\\Common7\\IDE\\リモート デバッガー\\\<x86*、*x64*、または *Appx*"\>
+*\<Visual Studio installation directory\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64*, or *Appx*\>
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Windows ファイアウォールを介してリモート デバッガーを許可および構成する
 
@@ -104,7 +104,7 @@ Windows ファイアウォールを介して特定のアプリを許可するに
 
 1. **[許可されたアプリおよび機能]** の下に **[リモート デバッガー]** または **[Visual Studio リモート デバッガー]** が表示されない場合は、 **[設定の変更]** を選択し、 **[別のアプリの許可]** を選択します。
 
-1. 依然として、リモート デバッガー アプリが **[アプリを追加する]** ダイアログの一覧に表示されない場合、 **[参照]** を選択し、アプリに適したアーキテクチャに応じて、" *\<Visual Studio インストール ディレクトリ\>\\Common7\\IDE\\リモート デバッガー\\\<x86*、*x64*、または *Appx*"\> に移動します。 *[msvsmon.exe]* を選択し、 **[追加]** を選択します。
+1. 依然として、リモート デバッガー アプリが **[アプリを追加する]** ダイアログの一覧に表示されない場合、 **[参照]** を選択し、アプリに適したアーキテクチャに応じて、*\<Visual Studio installation directory\>\\Common7\\IDE\\リモート デバッガー\\\<x86*, *x64*, or *Appx*\> に移動します。 *[msvsmon.exe]* を選択し、 **[追加]** を選択します。
 
 1. **[アプリ]** の一覧で、追加したばかりの **[リモート デバッガー]** を選択します。 **[ネットワークの種類]** を選択し、1 つ以上のネットワークの種類 (リモート接続のネットワークの種類など) を選択します。
 

@@ -1,7 +1,7 @@
 ---
-title: 'DA0004: プロセッサ使用率が高くなっています | Microsoft Docs'
+title: DA0004 - プロセッサ使用率が高くなっています | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -14,21 +14,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e0ac8d8558ee73903898e920ed8174c73ea66c4d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777726"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548175"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: プロセッサ使用率が高くなっています
+# <a name="da0004-high-processor-usage"></a>DA0004:プロセッサ使用率が高くなっています
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0004|
 |カテゴリ|プロファイリング ツールの使用|
 |プロファイル方法|インストルメンテーション<br /><br /> サンプリング|
-|[メッセージ]|プロセッサ使用率が 75% を超えた状態が続いています。 CPU 主体のアプリケーションに適したサンプリング モードを使用することを検討してください。|
+|メッセージ|プロセッサ使用率が 75% を超えた状態が続いています。 CPU 主体のアプリケーションに適したサンプリング モードを使用することを検討してください。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

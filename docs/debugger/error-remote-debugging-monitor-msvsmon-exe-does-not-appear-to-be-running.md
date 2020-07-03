@@ -1,9 +1,9 @@
 ---
-title: エラー :Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
+title: エラー - Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.server_machine_no_default
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916254"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460612"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>エラー :Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
 このエラー メッセージは、Visual Studio がリモート コンピューター上で Visual Studio リモート デバッグ モニターの適切なインスタンスを見つけることができなかったことを示します。 リモート デバッグを行うには、Visual Studio リモート デバッグ モニターをインストールする必要があります。 リモート デバッガーのダウンロードと設定については、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。
@@ -51,7 +51,7 @@ ms.locfileid: "75916254"
 
 - リモート デバッガーを停止し、ローカル コンピューターで使用しているアカウントで再起動します。
 
-- コマンド ラインで **/allow \<ユーザー名>** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。
+- コマンド ラインで **/allow \<username>** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。
 
 - リモート デバッガーのアクセス許可に該当ユーザーを追加します (リモート デバッガーのウィンドウで **[ツール] > [アクセス許可]** を選択)。
 

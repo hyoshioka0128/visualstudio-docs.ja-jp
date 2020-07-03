@@ -2,7 +2,7 @@
 title: デバッガーで呼び出し履歴を表示する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535978"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348744"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>デバッガーで呼び出し履歴を表示し、[呼び出し履歴] ウィンドウを使用する
 
@@ -108,7 +108,7 @@ Visual Studio Enterprise で (のみ)、デバッグ中に呼び出し履歴の�
 
 ## <a name="change-the-optional-information-displayed"></a>表示されるオプション情報を変更する
 
-- **[呼び出し履歴]** ウィンドウ内を右クリックし、 **[\<** _必要な情報_ **> を表示]** を設定するかクリアします。
+- **[呼び出し履歴]** ウィンドウで右クリックし、 **[\<**_the information that you want_**> の表示]** をクリックします。
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> モジュールのシンボルを読み込む (C#、C++、Visual Basic、F#)
 

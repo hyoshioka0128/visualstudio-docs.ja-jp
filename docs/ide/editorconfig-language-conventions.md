@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544013"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533459"
 ---
 # <a name="language-conventions"></a>言語規則
 
@@ -66,7 +66,7 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
 
 コード スタイルの規則を変更するには:
 
-1. エディターで波線の上にカーソルを置き、表示された電球メニューを開きます。 **[Configure or Suppress issues]\(問題の構成または抑制\)** を選択し、 **[Configure \<rule ID> code style]\(<ルール ID> コード スタイルの構成\)** を選択します。
+1. エディターで波線の上にカーソルを置き、表示された電球メニューを開きます。 **[問題の構成または抑制]**  >  **[\<rule ID> コード スタイルの構成]** を選択します。
 
    ![Visual Studio の電球メニューからコード スタイルを構成する](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
 
    Visual Studio では、次のボックスに示されているように、EditorConfig ファイルで構成設定が追加または修正されます。
 
-コード スタイル違反の重要度を変更するには、同じ手順を進めますが、 **[Configure \<rule ID> code style]\(<ルール ID> コード スタイルの構成\)** の代わりに **[Configure \<rule ID> severity]\(<ルール ID> 重要度の構成\)** を選択します。 詳細については、「[規則の重要度を自動的に構成する](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)」を参照してください。
+コード スタイル違反の重要度を変更するには、同じ手順に従いますが、 **[\<rule ID> コード スタイルの構成]** の代わりに **[Configure \<rule ID> severity]\(\<rule ID> 重要度の構成\)** を選択します。 詳細については、「[規則の重要度を自動的に構成する](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)」を参照してください。
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="dotnet_style_qualification_for_field"></a>dotnet\_style\_qualification\_for_field
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_qualification_for_field |
 | **ルール ID** | IDE0003、IDE0009 |
@@ -161,7 +161,7 @@ capacity = 0
 
 #### <a name="dotnet_style_qualification_for_property"></a>dotnet\_style\_qualification\_for_property
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_qualification_for_property |
 | **ルール ID** | IDE0003、IDE0009 |
@@ -189,7 +189,7 @@ ID = 0
 
 #### <a name="dotnet_style_qualification_for_method"></a>dotnet\_style\_qualification\_for_method
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_qualification_for_method |
 | **ルール ID** | IDE0003、IDE0009 |
@@ -217,7 +217,7 @@ Display()
 
 #### <a name="dotnet_style_qualification_for_event"></a>dotnet\_style\_qualification\_for_event
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_qualification_for_event |
 | **ルール ID** | IDE0003、IDE0009 |
@@ -258,7 +258,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_predefined_type_for_locals_parameters_members |
 | **ルール ID** | IDE0012 と IDE0014 |
@@ -286,7 +286,7 @@ Private _member As Int32
 
 #### <a name="dotnet_style_predefined_type_for_member_access"></a>dotnet\_style\_predefined\_type\_for\_member_access
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_predefined_type_for_member_access |
 | **ルール ID** | IDE0013 と IDE0015 |
@@ -335,7 +335,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="dotnet_style_require_accessibility_modifiers"></a>dotnet\_style\_require\_accessibility_modifiers
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_require_accessibility_modifiers |
 | **ルール ID** | IDE0040 |
@@ -363,7 +363,7 @@ class MyClass
 
 #### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_preferred_modifier_order |
 | **ルール ID** | IDE0036 |
@@ -387,7 +387,7 @@ class MyClass
 
 #### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | visual_basic_preferred_modifier_order |
 | **ルール ID** | IDE0036 |
@@ -410,7 +410,7 @@ End Class
 
 #### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | visual_basic_style_unused_value_expression_statement_preference |
 | **ルール ID** | IDE0058 |
@@ -428,7 +428,7 @@ Dim unused = Computation()
 
 #### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | visual_basic_style_unused_value_assignment_preference |
 | **ルール ID** | IDE0059 |
@@ -447,7 +447,7 @@ Dim x = 1;
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_readonly_field |
 | **ルール ID** | IDE0044 |
@@ -490,7 +490,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 #### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_parentheses_in_arithmetic_binary_operators |
 | **ルール ID** | IDE0047 |
@@ -519,7 +519,7 @@ Dim v = a + b * c
 
 #### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>dotnet\_style\_parentheses\_in\_relational\_binary_operators
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_parentheses_in_relational_binary_operators |
 | **ルール ID** | IDE0047 |
@@ -548,7 +548,7 @@ Dim v = a < b = c > d
 
 #### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>dotnet\_style\_parentheses\_in\_other\_binary_operators
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_parentheses_in_other_binary_operators |
 | **ルール ID** | IDE0047 |
@@ -577,7 +577,7 @@ Dim v = a OrElse b AndAlso c
 
 #### <a name="dotnet_style_parentheses_in_other_operators"></a>dotnet\_style\_parentheses\_in\_other_operators
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_parentheses_in_other_operators |
 | **ルール ID** | IDE0047 |
@@ -626,7 +626,7 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 
 #### <a name="dotnet_style_object_initializer"></a>dotnet\_style\_object_initializer
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_object_initializer |
 | **ルール ID** | IDE0017 |
@@ -656,7 +656,7 @@ c.Age = 21
 
 #### <a name="dotnet_style_collection_initializer"></a>dotnet\_style\_collection_initializer
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_collection_initializer |
 | **ルール ID** | IDE0028 |
@@ -690,7 +690,7 @@ list.Add(3)
 
 #### <a name="dotnet_style_explicit_tuple_names"></a>dotnet\_style\_explicit\_tuple_names
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_explicit_tuple_names |
 | **ルール ID** | IDE0033 |
@@ -722,7 +722,7 @@ Dim name = customer.Item1
 
 #### <a name="dotnet_style_prefer_inferred_tuple_names"></a>dotnet\_style\_prefer\_inferred\_tuple_names
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_inferred_tuple_names |
 | **ルール ID** | IDE0037 |
@@ -751,7 +751,7 @@ Dim tuple = (name:=name, age:=age)
 
 #### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_inferred_anonymous_type_member_names |
 | **ルール ID** | IDE0037 |
@@ -780,7 +780,7 @@ Dim anon = New With {.name = name, .age = age}
 
 #### <a name="dotnet_style_prefer_auto_properties"></a>dotnet\_style\_prefer\_auto\_properties
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_auto_properties |
 | **ルール ID** | IDE0032 |
@@ -823,7 +823,7 @@ End Property
 
 #### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **ルール ID** | IDE0041 |
@@ -858,7 +858,7 @@ End If
 
 #### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_conditional_expression_over_assignment |
 | **ルール ID** | IDE0045 |
@@ -900,7 +900,7 @@ End If
 
 #### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_conditional_expression_over_return |
 | **ルール ID** | IDE0046 |
@@ -940,7 +940,7 @@ End If
 
 #### <a name="dotnet_style_prefer_compound_assignment"></a>dotnet\_style\_prefer\_compound\_assignment
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_compound_assignment |
 | **ルール ID** | IDE0054 |
@@ -982,7 +982,7 @@ dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_coalesce_expression |
 | **ルール ID** | IDE0029 |
@@ -1012,7 +1012,7 @@ Dim v = If(x IsNot Nothing, x, y)
 
 #### <a name="dotnet_style_null_propagation"></a>dotnet\_style\_null_propagation
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_null_propagation |
 | **ルール ID** | IDE0031 |
@@ -1042,7 +1042,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 ### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **ルール ID** | IDE0041 |
@@ -1071,7 +1071,7 @@ dotnet_code_quality_unused_parameters = all:suggestion
 
 #### <a name="dotnet_code_quality_unused_parameters"></a>dotnet\_code\_quality\_unused\_parameters
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | dotnet_code_quality_unused_parameters |
 | **ルール ID** | IDE0060 |
@@ -1162,7 +1162,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 #### <a name="csharp_style_var_for_built_in_types"></a>csharp\_style\_var\_for\_built\_in_types
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_var_for_built_in_types |
 | **ルール ID** | IDE0007、IDE0008 |
@@ -1182,7 +1182,7 @@ int x = 5;
 
 #### <a name="csharp_style_var_when_type_is_apparent"></a>csharp\_style\_var\_when\_type\_is_apparent
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_var_when_type_is_apparent |
 | **ルール ID** | IDE0007、IDE0008 |
@@ -1202,7 +1202,7 @@ Customer obj = new Customer();
 
 #### <a name="csharp_style_var_elsewhere"></a>csharp\_style\_var_elsewhere
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_var_elsewhere |
 | **ルール ID** | IDE0007、IDE0008 |
@@ -1241,7 +1241,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 
 #### <a name="csharp_style_expression_bodied_methods"></a>csharp\_style\_expression\_bodied_methods
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_methods |
 | **ルール ID** | IDE0022 |
@@ -1261,7 +1261,7 @@ public int GetAge() { return this.Age; }
 
 #### <a name="csharp_style_expression_bodied_constructors"></a>csharp\_style\_expression\_bodied_constructors
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_constructors |
 | **ルール ID** | IDE0021 |
@@ -1281,7 +1281,7 @@ public Customer(int age) { Age = age; }
 
 #### <a name="csharp_style_expression_bodied_operators"></a>csharp\_style\_expression\_bodied_operators
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_operators |
 | **ルール ID** | IDE0023 と IDE0024 |
@@ -1303,7 +1303,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 #### <a name="csharp_style_expression_bodied_properties"></a>csharp\_style\_expression\_bodied_properties
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_properties |
 | **ルール ID** | IDE0025 |
@@ -1323,7 +1323,7 @@ public int Age { get { return _age; }}
 
 #### <a name="csharp_style_expression_bodied_indexers"></a>csharp\_style\_expression\_bodied_indexers
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_indexers |
 | **ルール ID** | IDE0026 |
@@ -1343,7 +1343,7 @@ public T this[int i] { get { return _values[i]; } }
 
 #### <a name="csharp_style_expression_bodied_accessors"></a>csharp\_style\_expression\_bodied_accessors
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_accessors |
 | **ルール ID** | IDE0027 |
@@ -1363,7 +1363,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 #### <a name="csharp_style_expression_bodied_lambdas"></a>csharp\_style\_expression\_bodied_lambdas
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_lambdas |
 | **ルール ID** | IDE0053 |
@@ -1384,7 +1384,7 @@ Func<int, int> square = x => { return x * x; };
 
 C# 7.0 以降、C# では[ローカル関数](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)がサポートされています。 ローカル関数は、別のメンバーの入れ子になっているタイプのプライベート メソッドです。
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_expression_bodied_local_functions |
 | **ルール ID** | IDE0061 |
@@ -1428,7 +1428,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 #### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **ルール ID** | IDE0020 |
@@ -1448,7 +1448,7 @@ if (o is int) {var i = (int)o; ... }
 
 #### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_pattern_matching_over_as_with_null_check |
 | **ルール ID** | IDE0019 |
@@ -1473,7 +1473,7 @@ if (s != null) {...}
 
 #### <a name="csharp_style_inlined_variable_declaration"></a>csharp\_style\_inlined\_variable_declaration
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_inlined_variable_declaration |
 | **ルール ID** | IDE0018 |
@@ -1516,7 +1516,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 このスタイル ルールは、コンパイラが式の型を推定できる場合の、[既定の値式での `default` リテラル](/dotnet/csharp/language-reference/operators/default#default-literal)の使用に関するものです。
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_prefer_simple_default_expression |
 | **ルール ID** | IDE0034 |
@@ -1549,7 +1549,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 #### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_throw_expression |
 | **ルール ID** | IDE0016 |
@@ -1570,7 +1570,7 @@ this.s = s;
 
 #### <a name="csharp_style_conditional_delegate_call"></a>csharp\_style\_conditional\_delegate_call
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_conditional_delegate_call |
 | **ルール ID** | IDE0041 |
@@ -1602,7 +1602,7 @@ csharp_prefer_braces = true:silent
 
 #### <a name="csharp_prefer_braces"></a>csharp\_prefer\_braces
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_prefer_braces |
 | **ルール ID** | IDE0011 |
@@ -1635,7 +1635,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 
 #### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_unused_value_expression_statement_preference |
 | **ルール ID** | IDE0058 |
@@ -1660,7 +1660,7 @@ var unused = Convert.ToInt32("35");
 
 #### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_unused_value_assignment_preference |
 | **ルール ID** | IDE0059 |
@@ -1701,7 +1701,7 @@ csharp_style_prefer_range_operator = true:suggestion
 
 #### <a name="csharp_style_prefer_index_operator"></a>csharp\_style\_prefer\_index_operator
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_prefer_index_operator |
 | **ルール ID** | IDE0056 |
@@ -1723,7 +1723,7 @@ var index = names[names.Length - 1];
 
 #### <a name="csharp_style_prefer_range_operator"></a>csharp\_style\_prefer\_range_operator
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_prefer_range_operator |
 | **ルール ID** | IDE0057 |
@@ -1762,7 +1762,7 @@ csharp_style_prefer_switch_expression = true:suggestion
 
 #### <a name="csharp_style_deconstructed_variable_declaration"></a>csharp\_style\_deconstructed\_variable_declaration
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_deconstructed_variable_declaration |
 | **ルール ID** | IDE0042 |
@@ -1792,7 +1792,7 @@ Console.WriteLine($"{point.x} {point.y}");
 
 C# 7.0 以降、C# では[ローカル関数](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)がサポートされています。 ローカル関数は、別のメンバーの入れ子になっているタイプのプライベート メソッドです。
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_pattern_local_over_anonymous_function |
 | **ルール ID** | IDE0039 |
@@ -1819,7 +1819,7 @@ fibonacci = (int n) =>
 
 #### <a name="csharp_using_directive_placement"></a>csharp\_using\_directive_placement
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_using_directive_placement |
 | **ルール ID** | IDE0065 |
@@ -1848,7 +1848,7 @@ namespace Conventions
 
 #### <a name="csharp_prefer_static_local_function"></a>csharp\_prefer\_static\_local_function
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_prefer_static_local_function |
 | **ルール ID** | IDE0062 |
@@ -1882,7 +1882,7 @@ void M()
 
 #### <a name="csharp_prefer_simple_using_statement"></a>csharp\_prefer\_simple\_using_statement
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_prefer_simple_using_statement |
 | **ルール ID** | IDE0063 |
@@ -1902,7 +1902,7 @@ using (var a = b) { }
 
 #### <a name="csharp_style_prefer_switch_expression"></a>csharp\_style\_prefer\_switch_expression
 
-|||
+|プロパティ|[値]|
 |-|-|
 | **ルール名** | csharp_style_prefer_switch_expression |
 | **ルール ID** | IDE0066 |

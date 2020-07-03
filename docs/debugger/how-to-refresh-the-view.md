@@ -1,7 +1,7 @@
 ---
-title: '方法: ビューを更新する | Microsoft Docs'
+title: 方法 - ビューを更新する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - refreshing views
 ms.assetid: 2ed0ba66-7259-486b-a518-aab6e45030aa
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 683aca32921d73c07bcf4905015f0198f3e7e826
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733009"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349394"
 ---
 # <a name="how-to-refresh-the-view"></a>方法: ビューの更新
 Spy++ では、システム テーブルの "スナップショット" が取得され、この情報に基づいてビューが更新されます。 システム ビューを定期的に更新することが重要です。 Spy++ ビューを開いていて、ビューを更新していない場合は、開いた後に作成されたプロセス、スレッド、およびウィンドウは表示されません。 また、すでに存在していない項目が表示されている場合があります。 **更新** コマンドは、メッセージビュー以外のすべてのビューで使用できます。

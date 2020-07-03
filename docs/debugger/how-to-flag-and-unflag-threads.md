@@ -1,7 +1,7 @@
 ---
-title: '方法: スレッドに対するフラグの設定と解除 | Microsoft Docs'
+title: 方法 - スレッドに対するフラグの設定と解除 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733233"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349628"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>方法: スレッドに対するフラグの設定と解除 (C#、Visual Basic、C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "72733233"
 ### <a name="to-flag-or-unflag-a-thread"></a>スレッドのフラグを設定または設定解除するには
 
 - **[スレッド]** ウィンドウまたは **[並列ウォッチ]** ウィンドウで、注目しているスレッドを見つけ、フラグ アイコンをクリックして、フラグをオンまたはオフにします。
-- **[並列スタック]** ウィンドウで、スレッドまたはスレッド グループを右クリックし、 **[フラグ設定 / \<スレッド>]** または **[フラグ解除 / \<スレッド>]** を選択します。
+- **[並列スタック]** ウィンドウで、スレッドまたはスレッド グループを右クリックし、 **[フラグ設定 / \<thread>]** または **[フラグ解除 / \<thread>]** を選択します。
 
 ### <a name="to-unflag-all-threads"></a>すべてのスレッドのフラグを解除するには
 

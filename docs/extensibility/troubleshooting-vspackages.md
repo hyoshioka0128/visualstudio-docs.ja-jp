@@ -123,5 +123,5 @@ ms.locfileid: "85904476"
 
    InprocServer32 エントリが VSPackage dll の正しいパスを持っていることを確認します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSPackages](../extensibility/internals/vspackages.md)
