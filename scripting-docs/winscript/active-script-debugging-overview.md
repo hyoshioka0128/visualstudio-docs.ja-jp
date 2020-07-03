@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,20 +13,20 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572277"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835668"
 ---
 # <a name="active-script-debugging-overview"></a>アクティブ スクリプトのデバッグの概要
 アクティブ スクリプト デバッグ インターフェイスを使うと、言語やホストに依存しない (ニュートラルな) デバッグを行うことができ、さまざまな開発環境がサポートされます。  
   
- ![スクリプトホストプロセス](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![スクリプト ホスト プロセス](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 図 1  
   
- 言語に依存しないデバッグ環境は、任意のプログラミング言語またはプログラミング言語の組み合わせをサポートでき、どの言語についても固有の知識を持つ必要はありません。 また、デバッグ環境は異なる言語間のステップ実行およびブレークポイントもサポートします (この概要では、VBScript や [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] などのスクリプト言語のサポートに主に注目します)。  
+ 言語に依存しないデバッグ環境は、任意のプログラミング言語またはプログラミング言語の組み合わせをサポートでき、どの言語についても固有の知識を持つ必要はありません。 また、デバッグ環境は異なる言語間のステップ実行およびブレークポイントもサポートします  (この概要では、VBScript や [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] などのスクリプト言語のサポートに主に注目します)。  
   
  ホストに依存しないデバッガーは、Internet Explorer やカスタム ホストなどの任意のアクティブ スクリプト ホストで自動的に使うことができます。 ホストは、ドキュメント ツリーの構造からデバッグ ドキュメントの内容や構文の色分けまで、ユーザーに対するデバッガーの表示を制御します。 これにより、ホスト ドキュメントのコンテキストでデバッグ対象のソース コードを表示できます。 たとえば、Internet Explorer は HTML ページでスクリプトを表示できます。  
   
@@ -43,13 +43,13 @@ ms.locfileid: "72572277"
   
  **マシン デバッグ マネージャー**デバッグできるアプリケーション プロセスのレジストリを維持するコンポーネントです。  
   
- **プロセス デバッグ マネージャー**  
+ **プロセスデバッグマネージャー**  
  特定のアプリケーションのデバッグできるドキュメントのツリーの保持、実行中のスレッドの追跡などを行うコンポーネントです。  
   
- **ドキュメント コンテキスト**  
+ **ドキュメントのコンテキスト**  
  ホスト ドキュメントのソース コードで特定の範囲を表す抽象化です。  
   
- **コード コンテキスト**  
+ **コードコンテキスト**  
  言語エンジンの実行中コードで特定の場所を表します ("仮想命令ポインター")。  
   
  **式コンテキスト**  
@@ -125,7 +125,7 @@ ms.locfileid: "72572277"
   [IDebugStackFrameSnifferEx インターフェイス](../winscript/reference/idebugstackframesnifferex-interface.md)  
   PDM の論理スタック フレームを列挙します。  
   
-## <a name="hosts"></a>ホスト  
+## <a name="hosts"></a>Hosts  
  ホストには次の機能があります。  
   
 - 言語エンジンをホストします。  
@@ -184,7 +184,7 @@ ms.locfileid: "72572277"
  プロジェクト ツリー内のコンテキストを提供することにより、`IDebugDocumentProvider` インターフェイスの機能を拡張します。  
   
 ## <a name="debugger-ide"></a>デバッガー IDE  
- IDE は、言語に依存しないデバッグ UI です。 次の機能を提供します。  
+ IDE は、言語に依存しないデバッグ UI です。 共有サービスには次のものが含まれています。  
   
 - ドキュメント ビューアー/エディター。  
   
