@@ -2,7 +2,7 @@
 title: 変数にウォッチを設定する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301015"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348029"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>ウォッチ ウィンドウとクイック ウォッチを使用して変数を監視する
 
@@ -76,7 +76,7 @@ int main()
 >C++ の場合のみ
 >- 変数名または変数名を使用する式のコンテキストを修飾することが必要になる場合があります。 コンテキストとは、変数が配置される、関数、ソース ファイル、またはモジュールです。 コンテキストを修飾する必要がある場合は、 **[ウォッチ]** ウィンドウの **[名前]** で[コンテキスト演算子 (C++)](../debugger/context-operator-cpp.md) 構文を使用します。
 >
->- **[ウォッチ]** ウィンドウの **[名前]** に **$\<レジスタ名>** &nbsp;または&nbsp; **@\<レジスタ名>** を使用して、レジスタ名と変数名を追加できます。 詳細については、「 [Pseudovariables](../debugger/pseudovariables.md)」を参照してください。
+>- **[ウォッチ]** ウィンドウの **[名前]** に **$\<register&nbsp;name>** または **@\<register&nbsp;name>** を使用して、レジスタ名と変数名を追加できます。 詳細については、「 [Pseudovariables](../debugger/pseudovariables.md)」を参照してください。
 
 ## <a name="use-expressions-in-a-watch-window"></a>ウォッチ ウィンドウで式を使用する
 

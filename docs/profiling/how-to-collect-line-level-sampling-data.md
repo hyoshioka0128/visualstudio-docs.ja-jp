@@ -1,7 +1,7 @@
 ---
-title: '方法: 行レベルのサンプリング データを収集する | Microsoft Docs'
+title: 方法 - 行レベルのサンプリング データを収集する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776359"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330888"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>方法: 行レベルのサンプリング データを収集する
 行レベルのサンプリングとは、排他サンプル数が高い関数など、プロセッサ集中型の関数のコードで、プロセッサが大部分の時間を費やす必要のある場所を特定するためのプロファイラーの機能です。
@@ -52,10 +52,10 @@ ms.locfileid: "74776359"
 
 - プロファイリングの前に、「**VSPerfCLREnv /samplelineoff**」と入力します。 これは、アプリケーションとサービスの両方に影響します。
 
-     \- または -
+     または
 
-- アプリケーションの起動時に、「**VSPerfCmd /lineoff\<他の引数>** 」を入力します。
+- アプリケーションの起動時に、「**VSPerfCmd /lineoff \<other arguments>** 」を入力します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 - [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

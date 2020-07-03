@@ -1,7 +1,7 @@
 ---
-title: 'DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています | Microsoft Docs'
+title: DA0503 - プロセスのワーキング セット平均バイト数がプロファイリングされています | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.503
 - vs.performance.DA0503
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9d309d7bf10cee07cc30c4568d2dfa59d1be56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6717f524f6a2d3f9f09290ac9bfbd8f02fc23fb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777451"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544548"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503:プロセスのワーキング セット平均バイト数がプロファイリングされています
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0503|
 |カテゴリ|リソース監視|
-|プロファイル方法|All|
-|[メッセージ]|この情報は、情報提供のためにのみ収集されました。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて計算された平均値です。|
+|プロファイル方法|すべて|
+|メッセージ|この情報は、情報提供のためにのみ収集されました。 Process Working Set カウンターは、プロファイリングを行っているプロセスによる物理メモリの使用量を測定します。 報告される値は、全測定期間を通じて計算された平均値です。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

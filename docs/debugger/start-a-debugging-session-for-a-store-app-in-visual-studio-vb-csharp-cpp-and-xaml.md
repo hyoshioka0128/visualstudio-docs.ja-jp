@@ -2,7 +2,7 @@
 title: UWP アプリのデバッグ セッションを開始する | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4504dda362c8a50f33168a12839e894a14316d7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72436007"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536553"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP アプリのデバッグ セッションを開始する
 
@@ -76,7 +76,7 @@ Visual Studio 2017 では、この記事で示されているほとんどのコ�
 
 デバッグ ターゲットは、Visual Studio のツール バーまたはプロジェクトのデバッグ プロパティ ページで設定できます。 次のいずれかのオプションを選択します。
 
-|||
+|名前|説明|
 |-|-|
 |**ローカル コンピューター**|ローカル コンピューターの現在のセッションでアプリをデバッグします。|
 |**シミュレーター**|UWP アプリ用の Visual Studio シミュレーターでアプリをデバッグします。 シミュレーターは、ローカル コンピューターに存在しない可能性があるタッチ ジェスチャやデバイスのローテーションなどのデバイス機能をシミュレートするデスクトップ ウィンドウです。 このシミュレーター オプションは、アプリの **[ターゲット プラットフォームの最小バージョン]** がローカル コンピューターのオペレーティング システムと同じかそれより前である場合にのみ使用できます。 詳細については、「[シミュレーターで UWP アプリを実行する](../debugger/run-windows-store-apps-in-the-simulator.md)」を参照してください。|
@@ -114,7 +114,7 @@ C++ アプリの場合、Visual Studio ではネイティブ コードが既定�
 
 - C++ アプリの場合は、 **[デバッグ]** プロパティ ページの **[デバッガーの種類]** ドロップダウンから、次のいずれかのデバッガーを選択します。
 
-|||
+|名前|説明|
 |-|-|
 |**マネージドのみ**|アプリのマネージド コードをデバッグします。 JavaScript コードとネイティブ C/C++ コードは無視されます。|
 |**ネイティブのみ**|アプリのネイティブ コードと C/C++ コードをデバッグします。 マネージド コードと JavaScript コードは無視されます。|
@@ -189,7 +189,7 @@ C++ アプリの場合、Visual Studio ではネイティブ コードが既定�
 
    1. すべてのアプリの PackageFullName が含まれる一覧を表示するには、PowerShell プロンプトで「`Get-AppxPackage`」と入力します。
 
-   1. PowerShell プロンプトで「`Enable-AppxDebug <PackageFullName>`」と入力します。\<PackageFullName> はアプリの PackageFullName 識別子です。
+   1. PowerShell プロンプトに「`Enable-AppxDebug <PackageFullName>`」と入力します。\<PackageFullName> はアプリの PackageFullName 識別子です。
 
 1. **[デバッグ]**  >  **[プロセスにアタッチ]** の順に選択します。
 

@@ -69,7 +69,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
 5. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドプロンプトウィンドウで、ディレクトリに移動します。
 
-6. 種類
+6. 型
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -96,7 +96,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
 3. Visual Studio のコマンドプロンプトで、 *cto*ファイルと*ctsym*ファイルが格納されているディレクトリにアクセスします。
 
-4. 種類
+4. 型
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -148,7 +148,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
      最初のパラメーター値は、 `ResourceName` プロジェクトファイルで定義した属性の値と一致する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [作成した vsct ファイル](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML スキーマリファレンス](../../extensibility/vsct-xml-schema-reference.md)

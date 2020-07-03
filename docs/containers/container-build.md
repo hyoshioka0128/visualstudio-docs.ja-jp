@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027263"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536865"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
 
@@ -105,7 +105,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 デバッグをコンテナーで機能させるために、Visual Studio では、ボリューム マッピングを使用してホスト マシンからデバッガーと NuGet フォルダーをマップします。 ボリューム マッピングの詳細については、Docker のドキュメント ([こちら](https://docs.docker.com/storage/volumes/)) を参照してください。 コンテナーにマウントされるボリュームは次のとおりです。
 
-|||
+|ボリューム|説明|
 |-|-|
 | **リモート デバッガー** | プロジェクトの種類に応じて、コンテナーでデバッガーを実行するために必要なビットが含まれています。 詳細については、 |「[デバッグ](#debugging)」セクションを参照してください。
 | **アプリ フォルダー** | Dockerfile が配置されているプロジェクト フォルダーが含まれています。|
@@ -166,7 +166,7 @@ Dockerfile によって指定されているパフォーマンスの最適化と
 
 デバッガーを実行するプロセスは、プロジェクトの種類とコンテナーのオペレーティング システムによって変わります。
 
-|||
+|シナリオ|デバッガー プロセス|
 |-|-|
 | **.NET Core アプリ (Linux コンテナー)**| Visual Studio によって `vsdbg` がダウンロードされ、コンテナーにマップされ、プログラムと引数 (つまり `dotnet webapp.dll`) を使って呼び出され、デバッガーによってプロセスにアタッチされます。 |
 | **.NET Core アプリ (Windows コンテナー)**| Visual Studio によって `onecoremsvsmon` を使用してコンテナーにマップされ、エントリ ポイントとして実行され、Visual Studio によってはそれが接続され、プログラムにアタッチされます。 これは、通常、別のコンピューターまたは仮想マシンでリモート デバッグを設定する方法に似ています。|
@@ -178,18 +178,18 @@ Dockerfile によって指定されているパフォーマンスの最適化と
 
 Visual Studio では、プロジェクトの種類とコンテナーのオペレーティング システムに応じて、カスタム コンテナーのエントリ ポイントを使用します。さまざまな組み合わせを次に示します。
 
-|||
+|コンテナーの種類|エントリ ポイント|
 |-|-|
 | **Linux コンテナー** | エントリ ポイントは `tail -f /dev/null` です。コンテナーの実行を維持するために、無期限に待機します。 デバッガーを介してアプリを起動すると、アプリの実行を担当するのはデバッガーです (つまり、`dotnet webapp.dll`)。 デバッグなしで起動すると、ツールでは、アプリを実行するために `docker exec -i {containerId} dotnet webapp.dll` が実行されます。|
 | **Windows コンテナー**| エントリ ポイントは、デバッガーを実行する `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` のようなものであるため、接続をリッスンしています。 デバッガーによってアプリが実行され、`docker exec` コマンドがデバッグなしで起動される場合と同様の状況です。 .NET Framework Web アプリの場合、エントリ ポイントはわずかに異なり、`ServiceMonitor` がコマンドに追加されます。|
 
 コンテナー エントリ ポイントは、単一コンテナー プロジェクトではなく、docker-compose プロジェクトでのみ変更できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 プロジェクト ファイルで追加の MSBuild プロパティを設定して、ビルドをさらにカスタマイズする方法について学習します。 [コンテナーのプロジェクトの MSBuild プロパティ](container-msbuild-properties.md)に関するページを参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [MSBuild](../msbuild/msbuild.md)
 [Windows の Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

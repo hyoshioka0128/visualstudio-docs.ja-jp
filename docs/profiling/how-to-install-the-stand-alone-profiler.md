@@ -1,7 +1,7 @@
 ---
-title: '方法: スタンドアロンのプロファイラーをインストールする | Microsoft Docs'
+title: 方法 - スタンドアロンのプロファイラーをインストールする | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
 - profiling tools, stand-alone profiler
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557832"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330139"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>方法: スタンドアロンのプロファイラーをインストールする
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE をインストールしなくても実行できるコマンドライン ベースのスタンドアロン プロファイラーを利用できます。 このような状況は、コンピューターに開発環境がインストールされていないときに発生します。 たとえば、本稼働中の Web サーバーには開発環境をインストールするべきではありません。
@@ -48,11 +48,11 @@ ms.locfileid: "77557832"
     **start %COMSPEC%**
 
    > [!NOTE]
-   > シンボル サーバー パッケージの設定方法については、「[方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)」を参照してください。
+   > シンボル サーバー パッケージの設定方法については、「[方法:Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)」を参照してください。
 
 6. [VSPerfReport](../profiling/vsperfreport.md) ツールを利用し、シンボルをシリアル化してプロファイリング データ ファイル (.vsp) を生成します。 **VSPerfReport /summary:all /packsymbols** スイッチを使用します。 データ ファイルにシンボルが挿入されていない場合、_NT_SYMBOL_PATH 環境変数が設定されていることを確認します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング](command-line-profiling-of-stand-alone-applications.md)
 - [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)

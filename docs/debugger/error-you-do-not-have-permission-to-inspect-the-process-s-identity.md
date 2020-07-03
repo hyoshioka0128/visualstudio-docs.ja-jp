@@ -1,7 +1,7 @@
 ---
-title: エラー :プロセスの ID を検査する権限がありません | Microsoft Docs
+title: エラー - プロセスの ID を検査する権限がありません | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736222"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459923"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー :プロセスの ID を検査する権限がありません
 プロセスの ID を検査する権限がありません。 これは、システムの混が原因である可鉢があります。

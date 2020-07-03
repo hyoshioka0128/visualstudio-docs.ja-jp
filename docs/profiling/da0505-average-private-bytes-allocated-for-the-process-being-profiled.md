@@ -1,7 +1,7 @@
 ---
-title: 'DA0505: プロセスに割り当てられた平均プライベート バイト数がプロファイリングされています | Microsoft Docs'
+title: DA0505 - プロセスに割り当てられた平均プライベート バイト数がプロファイリングされています | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b905b0de69110f5f7cd684deb6fe6c5955bb4b0c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 79150cf63fb8177534d2e5cb0506a64c703e5d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777404"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532108"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: プロセスに割り当てられた平均プライベート バイト数がプロファイリングされています
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0505|
 |カテゴリ|リソース管理|
-|プロファイル方法|All|
-|[メッセージ]|この情報は、情報提供のためにのみ収集されました。 Process Private Bytes カウンターは、プロファイリングを行っているプロセスによって割り当てられた仮想メモリを測定します。 報告される値は、全測定期間を通じて計算された平均値です。|
+|プロファイル方法|すべて|
+|メッセージ|この情報は、情報提供のためにのみ収集されました。 Process Private Bytes カウンターは、プロファイリングを行っているプロセスによって割り当てられた仮想メモリを測定します。 報告される値は、全測定期間を通じて計算された平均値です。|
 |規則の種類|情報|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。

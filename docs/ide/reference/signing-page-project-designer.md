@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597335"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418861"
 ---
 # <a name="signing-page-project-designer"></a>[署名] ページ (プロジェクト デザイナー)
 
@@ -41,7 +41,7 @@ ms.locfileid: "75597335"
 
 **[ClickOnce マニフェストに署名する]** チェック ボックス
 
-公開キーと秘密キーのペアを使用して、アプリケーション マニフェストと配置マニフェストに署名するには、このチェック ボックスを選択します。 この方法の詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
+公開キーと秘密キーのペアを使用して、アプリケーション マニフェストと配置マニフェストに署名するには、このチェック ボックスを選択します。 この方法の詳細については、「[方法 : アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
 
 **[ストアから選択]** ボタン
 
@@ -75,13 +75,13 @@ ms.locfileid: "75597335"
 
 アセンブリに署名し、厳密な名前のキー ファイルを作成するには、このチェック ボックスをオンにします。 **プロジェクト デザイナー**を使用してアセンブリに署名する詳細については、「[方法: アセンブリに署名する (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)」を参照してください。
 
-このオプションは、Windows ソフトウェア開発キット (Windows SDK) で提供される Al.exe ツールを使用して、アセンブリに署名します。 Al.exe の詳細については、「[方法 : 厳密な名前でアセンブリに署名する](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)」を参照してください。
+このオプションは、Windows ソフトウェア開発キット (Windows SDK) で提供される Al.exe ツールを使用して、アセンブリに署名します。 Al.exe の詳細については、「[方法: 厳密な名前でアセンブリに署名する](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)」を参照してください。
 
 **[厳密な名前のキー ファイルを選択してください]** 一覧
 
-アセンブリに署名するために使用する新規または既存の厳密な名前のキー ファイルを指定できます。 [ **\<参照...>** ] を選択して、既存のキー ファイルを選択します。
+アセンブリに署名するために使用する新規または既存の厳密な名前のキー ファイルを指定できます。 **[\<Browse...>]** を選択して、既存のキー ファイルを選択します。
 
-[ **\<新規...>** ] を選択して、アセンブリの署名に使用する新しいキー ファイルを作成します。 **[厳密な名前キーの作成]** ダイアログ ボックスが表示されます。ここでキー ファイル名を指定し、パスワードを使用してキー ファイルを保護することができます。 パスワードの長さは 6 文字以上にする必要があります。 パスワードを指定すると、Personal Information Exchange (.pfx) ファイルが作成されます。パスワードを指定しない場合は、厳密な名前のキー (.snk) ファイルが作成されます。
+**[\<New...>]** を選択して、アセンブリの署名に使用する新しいキー ファイルを作成します。 **[厳密な名前キーの作成]** ダイアログ ボックスが表示されます。ここでキー ファイル名を指定し、パスワードを使用してキー ファイルを保護することができます。 パスワードの長さは 6 文字以上にする必要があります。 パスワードを指定すると、Personal Information Exchange (.pfx) ファイルが作成されます。パスワードを指定しない場合は、厳密な名前のキー (.snk) ファイルが作成されます。
 
 **[パスワードの変更]** ボタン
 
@@ -98,11 +98,11 @@ ms.locfileid: "75597335"
 > [!NOTE]
 > アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [アセンブリおよびマニフェストへの署名の管理](../../ide/managing-assembly-and-manifest-signing.md)
-- [方法 : アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [方法: アプリケーション マニフェストと配置マニフェストの署名](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [方法: アセンブリに署名する (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [方法: 厳密な名前でアセンブリに署名する](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [厳密な名前付きアセンブリ](/dotnet/framework/app-domains/strong-named-assemblies)

@@ -1,7 +1,7 @@
 ---
-title: エラー :DCOM 通信を初期化できません | Microsoft Docs
+title: エラー - DCOM 通信を初期化できません | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unmarshal_server_failed
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a5e45df06d4b9490160c94902457ea630548966
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ccd8b30fcba11d89e11227861c4582ff67f3a7e7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736728"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460027"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>エラー :DCOM 通信を初期化できません。
 ローカル コンピューターがリモート コンピューターと通信しようとしたときに DCOM エラーが発生しました。 このエラーは、リモート サーバーのファイアウォール、またはリモート コンピューターで Windows 認証が破損していることに原因があります。

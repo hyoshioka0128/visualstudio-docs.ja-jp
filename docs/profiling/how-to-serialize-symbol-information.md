@@ -1,7 +1,7 @@
 ---
-title: '方法: シンボル情報をシリアル化する | Microsoft Docs'
+title: 方法 - シンボル情報をシリアル化する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 202c30b1786e7e3ddb27583ddaeda9180d680b53
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774888"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328523"
 ---
 # <a name="how-to-serialize-symbol-information"></a>方法: シンボル情報をシリアル化する
 アプリケーションの分析に必要なシンボルをシリアル化できます。 シンボルをシリアル化すると、.*vsp* ファイルにシンボルが追加されます。 シンボル情報を .*vsp* ファイルに追加すると、他のユーザーは元のシンボルにアクセスすることなく、パフォーマンス レポートを分析できるようになります。 シンボルがシリアル化されない場合は、元のインストルメント化された .*exe* ファイルおよび .*pdb* ファイルで .*vsp* ファイルを分析する必要があります。
@@ -34,7 +34,7 @@ ms.locfileid: "74774888"
 
 3. **[全般設定]** で **[シンボル情報を自動的にシリアル化]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 - [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)
-- [How to: Save Analyzed Report Files (方法: 分析されたレポート ファイルを保存する)](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))
+- [方法: 分析されたレポート ファイルを保存する](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

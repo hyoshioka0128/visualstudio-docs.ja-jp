@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283178"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536891"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub に配置する
 
@@ -29,17 +29,17 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 
 1. プロジェクト ノードを右クリックし、 **[発行]** を選択します。デプロイ オプションを示す画面が表示されます。
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![デプロイ オプションのスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. **[発行先の選択]** で、 **[コンテナー レジストリ]** を選択し、 **[Docker Hub]** を選択します。 **[Docker Hub]** ダイアログが表示されます。
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![[Docker Hub] ダイアログのスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. 自分のリポジトリ (組織の一部ではない) に接続する場合は、 **[個人のレポジトリに発行する]** チェックボックスをオンのままにします。 リポジトリが組織によって所有されている場合は、チェックボックスをオフにして、組織名を入力します。 接続しているリポジトリへのアクセス許可を持つ Docker アカウントの Docker ユーザー名とパスワードを入力して、 **[保存]** を選択します。  
 
-   Visual Studio では、Docker Hub へのイメージのデプロイが試行されます。  成功した場合、 **[発行]** 画面に、リポジトリ イメージの URL、イメージ タグ、リポジトリ、ビルド構成** (**リリース**など) が表示されます。
+   Visual Studio では、Docker Hub へのイメージのデプロイが試行されます。  成功した場合、 **[発行]** 画面に、リポジトリ イメージの URL、イメージ タグ、リポジトリ、ビルド構成 (**リリース**など) が表示されます。
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![[発行] 画面のスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. このページの **[発行]** ボタンをクリックすると、いつでもイメージを更新できます。  または、URL の下にあるリンクを使用して、プロファイルを変更または削除することもできます。
 

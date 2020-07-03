@@ -1,7 +1,7 @@
 ---
-title: 'DA0001: StringBuilder を使用して連結してください | Microsoft Docs'
+title: DA0001 - 連結には StringBuilder を使用してください | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0001
 - vs.performance.rules.DAUseStringBuilder
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6a645816ed046c2ce253a9f882c1425c48347573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779507"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541740"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder を使用して連結してください
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001:連結には StringBuilder を使用してください
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0001|
 |カテゴリ|.NET Framework の使用|
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション|
-|[メッセージ]|文字列の連結に StringBuilder を使用することを検討してください。|
-|メッセージ型|警告|
+|メッセージ|文字列の連結に StringBuilder を使用することを検討してください。|
+|メッセージの種類|警告|
 
 ## <a name="cause"></a>原因
  System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。

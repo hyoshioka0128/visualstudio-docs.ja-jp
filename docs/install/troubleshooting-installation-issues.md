@@ -1,7 +1,7 @@
 ---
 title: インストールまたはアップグレードの問題をトラブルシューティングする
 description: ときには、問題が発生してしまうことがあります。 Visual Studio のインストールまたはアップグレードが失敗した場合、このページが役に立ちます。
-ms.date: 03/23/2020
+ms.date: 06/24/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233112"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350811"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
@@ -47,11 +47,15 @@ Visual Studio インストーラーには、Microsoft が修正に取り組ん�
 
 ::: moniker-end
 
-### <a name="step-2---check-with-the-developer-community"></a>手順 2 - 開発者コミュニティを確認する
+### <a name="step-2---try-repairing-visual-studio"></a>手順 2 - Visual Studio の修復を試す
+
+修復では、多くの一般的な更新プログラムの問題が修正されます。 Visual Studio で修復機能を使用する状況と方法の詳細については、「[Visual Studio の修復](repair-visual-studio.md)」を参照してください。
+
+### <a name="step-3---check-with-the-developer-community"></a>手順 3 - 開発者コミュニティを確認する
 
 [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)でエラー メッセージを検索します。 コミュニティの他のメンバーが、問題の解決策を文書化している可能性があります。
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>手順 3 - Visual Studio インストーラーのディレクトリを削除してアップグレードの問題を修正する
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>手順 4 - Visual Studio インストーラーのディレクトリを削除してアップグレードの問題を修正する
 
 Visual Studio インストーラーのブートストラップは、Visual Studio インストーラーの残りをインストールする最小限の軽量な実行可能ファイルです。 Visual Studio インストーラー ファイルを削除して、ブートストラップを再実行すると、いくつかの更新エラーを解決できる場合があります。
 
@@ -76,7 +80,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 ::: moniker-end
 
-### <a name="step-4---report-a-problem"></a>手順 4 - 問題を報告する
+### <a name="step-5---report-a-problem"></a>手順 5 - 問題を報告する
 
 ファイルの破損など、一部の状況では、ケースごとに問題を調べる必要がある場合があります。 サポートに役立つように、次のことを実行します。
 
@@ -100,15 +104,15 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 ::: moniker-end
 
-### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>手順 5 - InstallCleanup.exe を実行してインストール ファイルを削除する
+### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>手順 6 - InstallCleanup.exe を実行してインストール ファイルを削除する
 
 最後の手段として、[Visual Studio を削除](remove-visual-studio.md)し、すべてのインストール ファイルと製品情報を削除できます。
 
 1. 「[Visual Studio の削除](remove-visual-studio.md)」の説明に従ってください。
-2. 「[手順 3 - Visual Studio インストーラーのディレクトリを削除してアップグレードの問題を修正する](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)」で説明したブートストラップを再実行します。
+2. 「[手順 4 - Visual Studio インストーラーのディレクトリを削除してアップグレードの問題を修正する](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)」で説明したブートストラップを再実行します。
 3. Visual Studio のインストールまたは更新を再度試します。
 
-### <a name="step-6---contact-us-optional"></a>手順 6 - 問い合わせる (省略可能)
+### <a name="step-7---contact-us-optional"></a>手順 7 - 問い合わせる (省略可能)
 
 前の手順のいずれに従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してお問い合わせください。
 
@@ -145,6 +149,7 @@ Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET 
 
 ## <a name="see-also"></a>関連項目
 
+* [Visual Studio の修復](repair-visual-studio.md)
 * [Visual Studio の削除](remove-visual-studio.md)
 * [ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio インスタンスの検出および管理用のツール](tools-for-managing-visual-studio-instances.md)

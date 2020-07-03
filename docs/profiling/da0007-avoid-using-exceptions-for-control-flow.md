@@ -1,7 +1,7 @@
 ---
-title: 'DA0007: 制御フローでの例外の使用を避けてください | Microsoft Docs'
+title: DA0007 - 制御フローでの例外の使用を避けてください | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -14,27 +14,27 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a33d5b8d18f18fb6bf7a2420603d994d845ce8f2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520797"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 制御フローでの例外の使用を避けてください
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007:制御フローでの例外の使用を避けてください
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0007|
 |カテゴリ|.NET Framework の使用|
-|プロファイル方法|All|
-|[メッセージ]|多数の例外が継続してスローされています。 プログラム ロジックで例外の使用を減らすことを検討してください。|
-|メッセージ型|警告|
+|プロファイル方法|すべて|
+|メッセージ|多数の例外が継続してスローされています。 プログラム ロジックで例外の使用を減らすことを検討してください。|
+|メッセージの種類|警告|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 25 個収集する必要があります。
 
 ## <a name="cause"></a>原因
- .NET Framework 例外ハンドラーの多くの部分が、プロファイリング データで呼び出されました。 他の制御フロー ロジックを使用して、スローされる例外の数を減らすことを検討してください。
+ .NET Framework 例外ハンドラーの多くの部分がプロファイル データで呼び出されました。 他の制御フロー ロジックを使用して、スローされる例外の数を減らすことを検討してください。
 
 ## <a name="rule-description"></a>規則の説明
  例外ハンドラーを使用して、プログラム実行を中断するエラーやその他のイベントをキャッチするのは良い方法ですが、通常のプログラム実行ロジックの一部として例外ハンドラーを使用すると負荷が高くなる可能性があるため、避けてください。 ほとんどの場合、例外は、あまり発生することのない、予期しない状況に対してのみ使用する必要があります。 値を返すときに通常のプログラム フローの一部として例外を使用しないでください。 多くの場合、値を検証し、条件付きロジックを使用して問題の原因となっているステートメントの実行を中断することで、例外の発生を抑えることができます。

@@ -1,19 +1,19 @@
 ---
 title: デバッグ履歴を使用したアプリの検査 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848216"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350447"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Visual Studio で IntelliTrace のデバッグ履歴を使用してアプリを検査します (C#、Visual Basic、C++)
 
@@ -61,7 +61,7 @@ private static int AddInt(int add)
 
 4. **[診断ツール]** ウィンドウを開きます ( **[デバッグ] > [診断ツールの表示]** )。 コード ウィンドウは、次のようになります。
 
-    ![ブレークポイントのコード ウィンドウ](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
+    ![ブレークポイントでのコード ウィンドウ](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
 
 5. ブレークポイントのすぐ上の左余白の横に双方向矢印が表示されます。 この領域はナビゲーション余白と呼ばれ、履歴デバッグに使用されます。 矢印をクリックします。
 

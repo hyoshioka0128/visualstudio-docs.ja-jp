@@ -2,7 +2,7 @@
 title: '[Python 環境] ウィンドウ リファレンス'
 description: Visual Studio の [Python 環境] ウィンドウに表示される各タブの詳細について説明します。
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307119"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545497"
 ---
 # <a name="python-environments-window-tabs-reference"></a>[Python 環境] ウィンドウ タブ リファレンス
 
@@ -60,7 +60,7 @@ ms.locfileid: "79307119"
 
 スタートアップ スクリプトにはインポート、関数定義、その他文字どおりどのようなコードでも含めることができ、**対話型**ウィンドウは自動的にそれを読み込んで実行します。 このようなスクリプトは、2 つの方法で参照されます。
 
-1. 環境をインストールすると、Visual Studio によってフォルダー *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* が作成されます。ここで、&lt;version&gt; は Visual Studio バージョン (2017 または 2019 など) です。&lt;environment&gt; は環境の名前と一致します。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
+1. 環境をインストールすると、Visual Studio によって *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* フォルダーが作成されます。ここで、&lt;version&gt; は Visual Studio バージョン (2017 や 2019 など) であり、&lt;environment&gt; は環境の名前と一致します。 **[対話型のスクリプトを確認する]** コマンドを使って、環境固有のフォルダーに簡単に移動できます。 その環境の**対話型**ウィンドウを開始すると、このフォルダーで見つかったすべての *.py* ファイルがアルファベット順に読み込まれて実行されます。
 
 1. **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[対話型ウィンドウ]** タブ (「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」を参照) の **[スクリプト]** コントロールでは、すべての環境で読み込まれて実行されるスタートアップ スクリプトの追加フォルダーを指定します。 ただし、この機能は現時点では機能しません。
 
@@ -105,7 +105,7 @@ pip ( **[パッケージ (PyPI)]** タブ) または Conda ( **[パッケージ 
 !["num" で検索を実行中の [Python 環境] の [パッケージ] タブ](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-上の図に示すように、検索結果には、検索用語と一致するパッケージが多数表示されます。ただし、一覧の最初のエントリは、**pip install \<name>** を直接実行するコマンドです。 **[パッケージ (Conda)]** タブを表示している場合、代わりに **conda install \<name>** が表示されます。
+上の図に示すように、検索結果には、検索用語と一致するパッケージが多数表示されます。しかし、一覧の最初のエントリは、**pip install \<name>** を直接実行するコマンドです。 **[パッケージ (Conda)]** タブを表示している場合、代わりに **conda install \<name>** が表示されます。
 
 ::: moniker range="vs-2017"
 ![conda インストール コマンドを表示している Conda パッケージ タブ](media/environments/environments-conda-tab-install.png)

@@ -1,7 +1,7 @@
 ---
-title: エラー :関数 &#39;function&#39; の評価がタイムアウトし、安全でない方法で中止される必要がありました | Microsoft Docs
+title: エラー - 関数 &#39;function&#39; の評価がタイムアウトし、安全でない方法で中止される必要がありました | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5baf69e697e7ceb9c6b0c5f83573dc106303cca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850971"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460799"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>エラー :関数 &#39;function&#39; の評価がタイムアウトし、安全でない方法で中止される必要がありました
 

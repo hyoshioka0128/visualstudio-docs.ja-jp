@@ -1,7 +1,7 @@
 ---
 title: DebuggerDisplay を使用してカスタム情報を表示する | Microsoft Docs
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728672"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418783"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 属性を使用して、デバッガーに何を表示するかを通知する (C#、Visual Basic、F#、C++/CLI)
 
@@ -27,10 +27,10 @@ ms.locfileid: "72728672"
 
 クラスにオーバーライドされた `ToString()` メソッドがある場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用します。 したがって、`ToString()` メソッドをオーバーライドした場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用し、`DebuggerDisplay` を使用する必要はありません。 両方を使用した場合、`DebuggerDisplay` 属性は、オーバーライドされた `ToString()` メソッドよりも優先されます。 `DebuggerDisplay` 属性も、サブクラス内のオーバーライドされた `ToString()` メソッドに優先します。
 
-この暗黙的な `ToString()` 呼び出しがデバッガーで評価されるかどうかは、 **[ツール] / [オプション] / [デバッグ]** ダイアログ ボックスのユーザー設定によって異なります。 Visual Basic は、この暗黙的な `ToString()` 評価を実装しません。
+この暗黙的な `ToString()` 呼び出しがデバッガーで評価されるかどうかは、 **[ツール]、[オプション]、[デバッグ]** ダイアログ ボックスのユーザー設定によって異なります。
 
 > [!IMPORTANT]
-> **[ツール] / [オプション] / [デバッグ]** ダイアログ ボックスで **[オブジェクトの生の構造体を変数ウィンドウに表示する]** チェック ボックスがオンになっている場合、 `DebuggerDisplay` 属性は無視されます。
+> **[ツール]、[オプション]、[デバッグ]** ダイアログ ボックスで **[オブジェクトの生の構造体を変数ウィンドウに表示する]** チェック ボックスがオンになっている場合、`DebuggerDisplay` 属性は無視されます。
 
 > [!NOTE]
 > ネイティブ コードの場合、この属性は C++/CLI コードでのみサポートされます。

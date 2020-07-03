@@ -1,7 +1,7 @@
 ---
-title: '方法: メッセージ ビューを制御する | Microsoft Docs'
+title: 方法 - メッセージ ビューを制御する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Spy++, Messages View
 - Messages view, controlling
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0007d1ad1e87b2e1f2d34b039b4105bb525578a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894634"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350252"
 ---
 # <a name="how-to-control-messages-view"></a>方法: メッセージ ビューを制御する
 Spy++ を使用すると、[[メッセージ ビュー]](../debugger/messages-view.md) ウィンドウの内容をかなり細かく制御できます。 メッセージの表示はいつでも[開始および停止](../debugger/how-to-start-and-stop-the-message-log-display.md)することができ、次を指定することもできます。

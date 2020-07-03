@@ -1,7 +1,7 @@
 ---
-title: 'DA0006: 値の型で Equals() をオーバーライドしてください | Microsoft Docs'
+title: DA0006 - 値の型で Equals() をオーバーライドしてください | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -14,21 +14,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779533"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520823"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: 値の型で Equals() をオーバーライドしてください
+# <a name="da0006-override-equals-for-value-types"></a>DA0006:値の型で Equals() をオーバーライドしてください
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0006|
 |カテゴリ|.NET Framework の使用|
 |プロファイル方法|サンプリング|
-|[メッセージ]|値の型で Equals と等値演算子をオーバーライドしてください。|
+|メッセージ|値の型で Equals と等値演算子をオーバーライドしてください。|
 |メッセージの種類|警告|
 
 ## <a name="cause"></a>原因
@@ -40,4 +40,4 @@ ms.locfileid: "74779533"
  Equals と等値演算子をオーバーライドする方法については、[Equals および等値演算子 (==) 実装のガイドライン](/dotnet/standard/design-guidelines/equality-operators)を参照してください。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
- Equals と等値演算子の実装例については、コード分析ルールの「[CA1815: equals および operator equals を値型でオーバーライドします](../code-quality/ca1815.md)」を参照してください。
+ Equals と等値演算子の実装例については、コード分析ルールの「[CA1815:equals および operator equals を値型でオーバーライドします](../code-quality/ca1815.md)」を参照してください。

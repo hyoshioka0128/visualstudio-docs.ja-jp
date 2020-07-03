@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533758"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターの他の言語のサポートの追加
 
@@ -35,14 +35,43 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 現在、Visual Studio では、[TextMate 文法](https://manual.macromates.com/en/language_grammars)を使用する以下の言語に対する構文の色づけおよび基本的なステートメント入力候補がサポートされます。 表に好みの言語がない場合でもご安心ください。言語は追加することができます。
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|移動|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Make|Ruby|TypeScript|YAML|
+
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- 移動
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Make
+- Ruby
+- TypeScript
+- YAML
 
 構文の色づけと基本的なステートメント入力候補に加え、Visual Studio には[移動](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)という機能もあります。 この機能を使用すれば、コード ファイル、ファイル パスおよびコード シンボルをすばやく検索することができます。 Visual Studio では、次の言語の移動がサポートされます。
 
@@ -76,11 +105,11 @@ Visual Studio では、[TextMate 文法](https://manual.macromates.com/en/langua
 
 |フォルダー名|説明|
 |-----------------|-----------------|
-|\\ *\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、 *\Matlab* などに置き換えます。|
+|\\*\<language name>*|言語のフォルダーです。 *\<language name>* は、言語の名前に置き換えます。 たとえば、 *\Matlab* などに置き換えます。|
 |*\Syntaxes*|文法のフォルダーです。 *Matlab.json* などの、言語に対応する文法の *.json* ファイルが含まれています。|
 |*\Snippets*|スニペットのフォルダーです。 言語のスニペットが含まれています。|
 
-Windows では、 *%userprofile%* はパス (*c:\Users\\\<ユーザー名>* ) に解決されます。 システム上に *Extensions* フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
+Windows では、 *%userprofile%* はパス (*c:\Users\\\<user name>* ) に解決されます。 システム上に *Extensions* フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
 > [!TIP]
 > エディターでファイルを開いている場合、TextMate 文法を追加した後に構文の強調表示を参照するには、ファイルをいったん閉じてから、再び開く必要があります。

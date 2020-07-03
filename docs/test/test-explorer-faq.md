@@ -1,6 +1,6 @@
 ---
 title: テスト エクスプローラーに関する FAQ
-ms.date: 08/14/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,24 +14,14 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf22c54da4af43c4953a8b92620031a14e25ec05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846819"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468744"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio テスト エクスプローラーに関する FAQ
-::: moniker range=">=vs-2019"
-
-## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 では特徴によるグループ化はどこにありますか?
-この特徴によるグループ化は移動され、列となりました。 Visual Studio 2019 バージョン 16.2 のカスタマイズ可能な多層階層では、グループ化として特徴を含めることは不要なビジュアルの複雑さを生み出すと我々は考えました。 この設計に関するフィードバックをお待ちしております。 [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
-
-現時点では、テスト エクスプローラーで列を右クリックし、[列] を選択します。 [特徴] 列をチェックすると、テスト エクスプローラーに表示されます。 これで、この列を関心がある特徴別にフィルター処理できます。
-
-![[特徴] 列を表示する](media/vs-2019/trait-column.png)
-![特徴列をフィルター処理する](media/vs-2019/trait-column-filter.png)
-::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>動的なテストの検出
 
@@ -91,9 +81,7 @@ ms.locfileid: "75846819"
 
 **階層ビューでテスト結果を並べ替えるにはどうすればよいですか?**
 
-階層ビューでは、結果順ではなくアルファベット順にテストが並べ替えられます。 通常、他のグループ化設定は、テスト結果を結果順に並べ替えてからアルファベット順に並べ替えます。 次の比較図で、オプションによるグループの違いを確認してください。 [この GitHub の問題で](https://github.com/Microsoft/vstest/issues/1425)設計に関するフィードバックを提供できます。
-
-![SortingExamples](media/testex-sortingex.png)
+階層ビューでは、結果順ではなくアルファベット順にテストが並べ替えられます。 前のグループ化設定では、テスト結果を結果順に並べ替えてからアルファベット順に並べ替えます。 テスト エクスプローラーで列ヘッダーを右クリックして、[状態] 列を有効にし、[状態] 列ヘッダーをクリックしてその列に並べ替えを適用することで、結果によって並べ替えを引き続き有効にすることができます。 この [GitHub の問題](https://github.com/Microsoft/vstest/issues/1425)で設計に関するフィードバックを提供できます。
 
 ## <a name="test-explorer-hierarchy-view"></a>テスト エクスプローラーの階層ビュー
 
@@ -153,7 +141,12 @@ Visual Studio 2019 では、前にパブリックとしてマークされてい�
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
 ```
+::: moniker range=">=vs-2019"
+## <a name="using-preview-features"></a>プレビュー機能の使用
 
+Visual Studio 2019 では、 **[ツール]、[オプション]、[環境]、[プレビュー機能]** でプレビュー機能を選択できます。
+::: moniker-end
+::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>機能フラグの使用
 
 **新しいテスト機能を試すために機能フラグをオンにするにはどうしたらよいですか?**
@@ -170,7 +163,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > dword の後の値を 1 ではなく 0 にすると、同じコマンドでフラグをオフにできます。
-
+::: moniker-end
 ## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>

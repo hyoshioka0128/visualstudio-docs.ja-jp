@@ -1,7 +1,7 @@
 ---
-title: '方法: [ウィンドウ検索] からメッセージ ビューを開く | Microsoft Docs'
+title: 方法 - [ウィンドウ検索] からメッセージ ビューを開く | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fef9288a662b6726c185b50a79c8007b586b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906581"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349485"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>方法: [ウィンドウ検索] からメッセージ ビューを開く
 **[ウィンドウ検索]** ダイアログ ボックスを使用してターゲット ウィンドウを選択し、そのウィンドウのメッセージ ビューを開くと便利な場合があります。

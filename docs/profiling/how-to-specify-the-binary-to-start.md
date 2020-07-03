@@ -1,7 +1,7 @@
 ---
-title: '方法: 開始するバイナリを指定する | Microsoft Docs'
+title: 方法 - 開始するバイナリを指定する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.itemlaunch
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f7cfd0d7a578d2ddaff28e9821f1d190bb2e10d
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778688"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331449"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定する
 
@@ -39,6 +39,6 @@ DLL などのバイナリをプロファイルするには、 **[\<Target> プ�
 
 7. **[OK]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

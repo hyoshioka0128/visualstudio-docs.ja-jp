@@ -2,7 +2,7 @@
 title: IIS 用に Python Web アプリを構築する
 description: Windows 仮想マシンから IIS を使用して実行される Python Web アプリを構築する方法を説明します。
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957374"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540934"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS 用に Python Web アプリを構築する
 
@@ -139,7 +139,7 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    配列への URL の追加が失敗すると、次のエラーが発生します。**DisallowedHost at / 不正な HTTP_HOST ヘッダー: '\<サイト URL\>'。'\<サイト URL\>' を ALLOWED_HOSTS に追加する必要があります。**
+    配列への URL の追加が失敗すると、次のエラーが発生します。**DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'。'\<site URL\>' を ALLOWED_HOSTS に追加する必要がある場合があります。**
 
     配列が空の場合、Django は自動的に 'localhost' と '127.0.0.1' を許可しますが、実稼働環境の URL を追加するとその機能は削除されます。 このため、*settings.py* の開発用のコピーと実稼働環境用のコピーを別々に管理するか、環境変数を使用して実行時の値を制御することをお勧めします。
 

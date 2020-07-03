@@ -1,7 +1,7 @@
 ---
-title: '方法: パフォーマンス データ収集の一時停止と再開 | Microsoft Docs'
+title: 方法 - パフォーマンス データ収集の一時停止と再開 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778792"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331470"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: パフォーマンス データ収集の一時停止と再開
 プロファイル セッション ページ ウィンドウから、プロファイリング データの収集を対話形式で制御することができます。
@@ -38,6 +38,6 @@ ms.locfileid: "74778792"
 
   - プロファイリング セッションを終了してレポートを生成するには、 **[プロファイリングの停止]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [データ収集の制御](../profiling/controlling-data-collection.md)
 - [方法: パフォーマンス データの収集の開始と終了](../profiling/how-to-start-and-end-performance-data-collection.md)

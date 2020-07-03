@@ -1,7 +1,7 @@
 ---
-title: '方法: 現在のセッションを設定する | Microsoft Docs'
+title: 方法 - 現在のセッションを設定する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778753"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328360"
 ---
 # <a name="how-to-set-the-current-session"></a>方法: 現在のセッションを設定する
 
@@ -35,7 +35,7 @@ ms.locfileid: "74778753"
 
      セッション名が太字で表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 [パフォーマンス エクスプローラー ウィンドウ](../profiling/performance-explorer-window.md)

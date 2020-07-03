@@ -1,7 +1,7 @@
 ---
 title: Just-In-Time デバッガーを使用してデバッグする | Microsoft Docs
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188672"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350577"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio で Just-In-Time デバッガーを使用してデバッグする
 
@@ -134,7 +134,7 @@ Windows フォーム アプリには既定で最高レベルの例外ハンド�
 
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
-   **[Available Debuggers]\(使用可能なデバッガー\)** で、 **[New instance of\<your preferred Visual Studio version/edition>]\(<優先 Visual Studio バージョン/エディション> の新しいインスタンス\)** を選択します (まだ選択されていない場合)。
+   **[Available Debuggers]\(使用可能なデバッガー\)** の下で、まだ選択されていない場合は **[\<your preferred Visual Studio version/edition> の新しいインスタンス]** を選択します。
 
 1. **[OK]** を選択します。
 

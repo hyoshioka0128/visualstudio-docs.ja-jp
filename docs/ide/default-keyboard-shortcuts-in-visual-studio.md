@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306819"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533641"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
@@ -32,34 +32,50 @@ Visual Studio のさまざまな[コマンド](reference/visual-studio-commands.
 
 Visual Studio でのアクセシビリティについて詳しくは、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」および「[方法: キーボード主体で操作する](../ide/reference/how-to-use-the-keyboard-exclusively.md)」を参照してください。
 
-|||||
-|-|-|-|-|
-|[解析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編集](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[プロジェクト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[アーキテクチャ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[エディター コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[プロジェクトとソリューション コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[テスト エクスプローラー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[ビルド](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[ファイル](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[リファクター](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[ツール](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[クラス ビュー コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[ヘルプ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[ソリューション エクスプローラー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[表示](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[デバッグ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[ロード テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[チーム](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[ウィンドウ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[デバッガー コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[その他のコンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[診断ハブ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+- [解析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [編集](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
+- [プロジェクト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
+- [テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [アーキテクチャ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
+- [エディター コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [プロジェクトとソリューション コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [テスト エクスプローラー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [ビルド](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [ファイル](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [リファクター](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
+- [ツール](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
+- [クラス ビュー コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [ヘルプ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [ソリューション エクスプローラー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
+- [表示](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [デバッグ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [ロード テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [チーム](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [ウィンドウ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
+- [デバッガー コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
+- [その他のコンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
+- [Team Foundation コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
+- [診断ハブ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
 ## <a name="global-shortcuts"></a>グローバル ショートカット
 
 以下のキーボード ショートカットは*グローバル*です。つまり、Visual Studio ウィンドウにフォーカスがある場合にそれらを使用できます。
 
-### <a name="bkmk_analyze"></a> 解析
+### <a name="analyze"></a><a name="bkmk_analyze"></a> 解析
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift + Alt + 3**|
 |Analyze.NavigateForward|**Shift + Alt + 4**|
 
-### <a name="bkmk_architecture"></a> アーキテクチャ
+### <a name="architecture"></a><a name="bkmk_architecture"></a> アーキテクチャ
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl + \\、Ctrl + N**|
 
-### <a name="bkmk_build"></a> ビルド
+### <a name="build"></a><a name="bkmk_build"></a> ビルド
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -69,13 +85,13 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Build.Compile|**Ctrl + F7**|
 |Build.RunCodeAnalysisonSolution|**Alt + F11**|
 
-### <a name="bkmk_classview"></a> クラス ビュー コンテキスト メニュー
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> クラス ビュー コンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt + Enter**|
 
-### <a name="bkmk_debug"></a> デバッグ
+### <a name="debug"></a><a name="bkmk_debug"></a> デバッグ
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -144,7 +160,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Debug.Watch3|**Ctrl + Alt + W、3**|
 |Debug.Watch4|**Ctrl + Alt + W、4**|
 
-### <a name="bkmk_debugger"></a> デバッガー コンテキスト メニュー
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> デバッガー コンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -152,13 +168,13 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt + F9、A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt + F9、S**|
 
-### <a name="bkmk_diagnostics"></a> 診断ハブ
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> 診断ハブ
 
 |コマンド|キーボード ショートカット|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl + Alt + F2**|
 
-### <a name="bkmk_edit"></a> 編集
+### <a name="edit"></a><a name="bkmk_edit"></a> 編集
 
 |コマンド|キーボード ショートカット|
 |--------------|-|
@@ -218,7 +234,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Edit.SurroundWith|**Ctrl + K、Ctrl + S**|
 |Edit.Undo|**Ctrl + Z**<br /><br /> or<br /><br /> **Alt + Backspace**|
 
-### <a name="bkmk_editorContext"></a> エディター コンテキスト メニュー
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> エディター コンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -229,7 +245,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl + K、Ctrl + O** (文字 'O')|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl + K、Ctrl + T**<br /><br /> or<br /><br /> **Ctrl + K、T**|
 
-### <a name="bkmk_file"></a> ファイル
+### <a name="file"></a><a name="bkmk_file"></a> ファイル
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -245,7 +261,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |File.SaveSelectedItems|**Ctrl + S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
 
-### <a name="bkmk_help"></a> ヘルプ
+### <a name="help"></a><a name="bkmk_help"></a> ヘルプ
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -254,19 +270,19 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Help.ViewHelp|**Ctrl + F1**|
 |Help.WindowHelp|**Shift + F1**|
 
-### <a name="bkmk_loadtest"></a> ロード テスト
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> ロード テスト
 
 |コマンド|キーボード ショートカット|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl + R、Q**|
 
-### <a name="bkmk_otherContext"></a> その他のコンテキスト メニュー
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> その他のコンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**[挿入]**|
 
-### <a name="bkmk_project"></a> プロジェクト
+### <a name="project"></a><a name="bkmk_project"></a> プロジェクト
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -278,14 +294,14 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Project.Publishselectedfiles|**Alt +;** を押してから **Alt + P**|
 |Project.Replaceselectedfilesfromserver|**Alt +;** を押してから **Alt + R**|
 
-### <a name="bkmk_projectContext"></a> プロジェクトとソリューション コンテキスト メニュー
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> プロジェクトとソリューション コンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt + ↓**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt + ↑**|
 
-### <a name="bkmk_refactor"></a> リファクター
+### <a name="refactor"></a><a name="bkmk_refactor"></a> リファクター
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -296,7 +312,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Refactor.Rename|**Ctrl + R、Ctrl + R**|
 |Refactor.ReorderParameters|**Ctrl + R、Ctrl + O** (文字 'O')|
 
-### <a name="bkmk_solutionexplorerGLOBAL"></a> ソリューション エクスプローラー
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> ソリューション エクスプローラー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -304,7 +320,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |SolutionExplorer.PendingChangesFilter|**Ctrl + [** 、**P**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl + [** 、**S**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + S**|
 
-### <a name="bkmk_team"></a> チーム
+### <a name="team"></a><a name="bkmk_team"></a> チーム
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -313,7 +329,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Team.Git.GoToGitCommits|**Ctrl + 0** (ゼロ)、**Ctrl + O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + 0、O**|
 |Team.TeamExplorerSearch|**Ctrl + '**|
 
-### <a name="bkmk_TFcontext"></a> Team Foundation コンテキスト メニュー
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Team Foundation コンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -328,14 +344,14 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl + 0** (ゼロ)、**Ctrl + A**<br /><br /> or<br /><br /> **Ctrl + 0、A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl + 0** (ゼロ)、**Ctrl + W**<br /><br /> or<br /><br /> **Ctrl + 0、W**|
 
-### <a name="bkmk_test"></a> テスト
+### <a name="test"></a><a name="bkmk_test"></a> テスト
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl + \\、Ctrl + C**|
 |Test.UseExistingActionRecording|**Ctrl + \\、Ctrl + A**|
 
-### <a name="bkmk_testexplorerGLOBAL"></a> テスト エクスプローラー
+### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> テスト エクスプローラー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -349,7 +365,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |LiveUnitTesting.OpenTab|**Ctrl + E、L**|
 |Test.CodeCoverageResults|**Ctrl + E、C**|
 
-### <a name="bkmk_tools"></a> ツール
+### <a name="tools"></a><a name="bkmk_tools"></a> ツール
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -357,7 +373,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Tools.CodeSnippetsManager|**Ctrl + K、Ctrl + B**|
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12、Ctrl + Shift + Alt + F12**|
 
-### <a name="bkmk_view"></a> 表示
+### <a name="view"></a><a name="bkmk_view"></a> 表示
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -407,7 +423,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |View.ZoomOut|**Ctrl + Shift + ,**|
 |TestExplorer.ShowTestExplorer|**Ctrl + E、T**|
 
-### <a name="bkmk_window"></a> ウィンドウ
+### <a name="window"></a><a name="bkmk_window"></a> ウィンドウ
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
@@ -438,7 +454,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |Window.SolutionExplorerSearch|**Ctrl + ;**|
 |Window.WindowSearch|**Alt + `**|
 
-### <a name="bkmk_windowsazure"></a> Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |コマンド|キーボード ショートカット|
 |--------------| - |

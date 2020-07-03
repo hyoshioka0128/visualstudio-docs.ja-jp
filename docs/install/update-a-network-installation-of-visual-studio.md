@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを更新する
 description: --layout コマンドを実行して Visual Studio のネットワークベース インストールを更新する方法について説明します
-ms.date: 01/08/2020
+ms.date: 06/29/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114976"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545432"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
@@ -74,7 +74,7 @@ ms.locfileid: "76114976"
   ```
 
     > [!IMPORTANT]
-    > 新たに追加されたオプション コンポーネントを[応答ファイル](automated-installation-with-response-file.md)の "add" セクションに含めたとしても、更新操作によってそれらがインストールされることはありません。 更新中に追加操作が使用されないために、このようなことになります。
+    > 更新操作によって、新たに追加されたオプション コンポーネントがインストールされることはありません。 新しく追加されたオプション コンポーネントが必要な場合は、`Layout.JSON` [応答ファイル](automated-installation-with-response-file.md)の古いオプション コンポーネントを削除して、`Layout.JSON` の [追加] セクションに必要なコンポーネントを含めてください。 
     >
     > **対応策**: 更新の後で個別に変更操作を実行することで、不足しているコンポーネントをインストールします。
 

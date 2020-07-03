@@ -1,7 +1,7 @@
 ---
-title: '方法: メッセージ ログの表示を開始および終了する | Microsoft Docs'
+title: 方法 - メッセージ ログの表示を開始および終了する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - message log display, starting
 - logging, starting message log display
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1fd5a7b7951056f65604bdea67eddcc3e696da
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825014"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349043"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>方法: メッセージ ログの表示を開始および終了する
 [メッセージ ビュー](../debugger/messages-view.md) ウィンドウがアクティブになっている場合は、Spy++ の **[メッセージ]** メニューに **[ログの開始]** または **[ログの終了]** が表示され、対応する **[ログの開始]** または **[ログの終了]** ツール バー ボタンがアクティブになります。

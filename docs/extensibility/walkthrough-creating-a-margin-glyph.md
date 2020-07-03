@@ -20,7 +20,7 @@ ms.locfileid: "85905047"
 # <a name="walkthrough-create-a-margin-glyph"></a>チュートリアル: 余白のグリフの作成
 エディターの余白の外観をカスタマイズするには、カスタムエディター拡張機能を使用します。 このチュートリアルでは、コードコメントに "todo" という語が表示されるたびに、カスタムグリフをインジケーターの余白に配置します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する

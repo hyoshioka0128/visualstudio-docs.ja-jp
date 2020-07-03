@@ -1,7 +1,7 @@
 ---
-title: 'DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs'
+title: DA0018 - 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -13,21 +13,21 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780066"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548149"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 
-|||
+|アイテム|[値]|
 |-|-|
 |規則 ID|DA0018|
 |カテゴリ|プロファイリング ツールの使用|
 |プロファイル方法|サンプリング|
-|[メッセージ]|マネージド メモリの割り当てが、32 ビット プロセスの既定の制限に近づいています。 アプリケーションがメモリにより制限されている可能性があります。|
+|メッセージ|マネージド メモリの割り当てが、32 ビット プロセスの既定の制限に近づいています。 アプリケーションがメモリにより制限されている可能性があります。|
 |規則の種類|警告|
 
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 10 個収集する必要があります。
@@ -55,7 +55,7 @@ ms.locfileid: "74780066"
 
 - マネージド メモリ リソースのアプリケーションによる使用を最適化する
 
-   または
+   \- または -
 
 - 32 ビット プロセスの仮想メモリの最大サイズに関するアーキテクチャ上の制約を解除する手順を実行する
 

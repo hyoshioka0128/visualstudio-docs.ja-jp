@@ -70,6 +70,6 @@ ms.locfileid: "85904485"
 > [!NOTE]
 > ログ記録を無効にするには、.pkgdef ファイルを削除するか、の値 `EnableTemplateDiscoveryLog` をに変更し `dword:00000000` てから、を再度実行し `devenv /updateConfiguration` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [カスタムプロジェクトテンプレートと項目テンプレートの作成](creating-custom-project-and-item-templates.md)

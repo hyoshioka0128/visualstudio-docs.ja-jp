@@ -1,6 +1,6 @@
 ---
 title: ソリューションとプロジェクト
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285232"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468731"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -74,13 +74,16 @@ Visual Studio では、ソリューションの設定を格納するために、
 
 多くのメニュー コマンドは、**ソリューション エクスプローラー**で各種項目の右クリック メニューから使用できます。 これらのコマンドには、プロジェクトのビルド、NuGet パッケージの管理、参照の追加、ファイル名の変更、テストの実行などが含まれます。 **ソリューション エクスプローラー**の上部のツールバーには、ソリューション ビューからフォルダー ビューに切り替える、隠しファイルを表示する、すべてのノードを折りたたむためなどのボタンがあります。
 
+> [!TIP]
+> ソリューション エクスプローラーを閉じて、もう一度開く場合は、メニュー バーから **[ウィンドウ]**  >  **[ウィンドウ レイアウトのリセット]** を選択します。
+
 ASP.NET Core プロジェクトでは、**ソリューション エクスプローラー**でファイルを入れ子にする方法をカスタマイズできます。 詳細については、[ソリューション エクスプローラーでのファイルの入れ子のカスタマイズ](file-nesting-solution-explorer.md)に関するページを参照してください。
 
-> [!TIP]
-> ソリューション エクスプローラーに表示されるいくつかのアイコンの一覧を表示するには、[[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン](class-view-and-object-browser-icons.md) ページを参照してください。
+また、ソリューション エクスプローラーに表示されるいくつかのアイコンの一覧を表示するには、「[[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン](class-view-and-object-browser-icons.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [プロジェクトとソリューション (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)
 - [プロジェクト アイテムの追加と削除 (Visual Studio for Mac)](/visualstudio/mac/add-and-remove-project-items)

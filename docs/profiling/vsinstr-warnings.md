@@ -1,7 +1,7 @@
 ---
 title: VSInstr の警告 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
 - warnings
@@ -15,22 +15,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779949"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330542"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr の警告
 次の表に、*VSInstr.exe* ツールで発行される警告をリストします。 NOWARN オプションに警告番号を指定することで、警告を非表示にできます。
 
-|警告番号|[説明]|
+|警告番号|説明|
 |--------------------|-----------------|
 |**VSP1026**|カバレッジでは、MSCorLib を参照していないライブラリはサポートされていません。 これは、多くの場合、移植可能なライブラリが該当します。<br /><br />.NET Core ではコマンド ライン オプション [/EnableCodeCoverage](../test/vstest-console-options.md) が必要です。|
-|**VSP2000**|内部エラー。 この実行可能ファイルのモジュール ファイル名を取得できません。|
-|**VSP2001**|\<assembly name> は、厳密な名前付きのアセンブリです。 実行するには、再署名する必要があります。<br /><br /> この警告は、署名付きのアセンブリがインストルメントされたときに発生します。 *sn.exe* ツールを使用して、バイナリを再署名するか、厳密な名前の必要性を一時的に無効にすることができます。 詳細については、「[Sn.exe (厳密名ツール)](/dotnet/framework/tools/sn-exe-strong-name-tool)」を参照してください。|
-|**VSP2002**|ファイル \<filename> で関数 \<funcname> が見つかりませんでした。<br /><br /> この警告は、関数が指定したファイルで見つからない場合に発生します。|
+|**VSP2000**|内部エラーです。 この実行可能ファイルのモジュール ファイル名を取得できません。|
+|**VSP2001**|\<assembly name> は厳密な名前付きのアセンブリです。 実行するには、再署名する必要があります。<br /><br /> この警告は、署名付きのアセンブリがインストルメントされたときに発生します。 *sn.exe* ツールを使用して、バイナリを再署名するか、厳密な名前の必要性を一時的に無効にすることができます。 詳細については、「[Sn.exe (厳密名ツール)](/dotnet/framework/tools/sn-exe-strong-name-tool)」を参照してください。|
+|**VSP2002**|ファイル \<filename> で関数 \<funcname> が見つかりませんでした<br /><br /> この警告は、関数が指定したファイルで見つからない場合に発生します。|
 |**VSP2003**|ファイル \<filename> で関数 \<funcname> へのクロス ジャンプが見つかりませんでした。<br /><br /> この警告は、VSInstr でクロス ジャンプを無効にできない場合に発生します。 クロス ジャンプはコードの最適化に使用されます。|
 |**VSP2004**|関数 \<funcname> は、EXCLUDE コマンド ライン スイッチを使用して除外されましたが、クロス ジャンプが含まれていたため省略することはできませんでした。<br /><br /> この警告は、EXCLUDE オプションを使用して除外された関数がインストルメンテーション プロセスに必要である場合に発生します。 プロファイラーは、必要な関数を自動的に含めます。|
 |**VSP2005**|内部のインストルメンテーション エラー \<error text><br /><br /> この警告は、インストルメンテーションを実行できない場合に発生します。 エラー テキストを確認して、修正できるかどうかを判断します。|
@@ -44,5 +44,5 @@ ms.locfileid: "74779949"
 |**VSP2013**|このイメージをインストルメント化するには、32 ビット プロセスとして実行する必要があります。 CLR ヘッダー フラグは、これを反映するように更新されました。<br /><br /> プロファイラーは、64 ビット オペレーティング システムが WOW64 エミュレーターで 32 ビット プロセスを開けるように、バイナリを変更します。 ライブラリ (DLL) の場合、既存の 64 ビット プロセスに読み込まれたときに失敗する場合があります。 この警告はユーザーに依存関係を知らせるものです。|
 |**VSP2014**|結果となるインストルメント化されたイメージは無効であり、実行されない可能性があります。<br /><br /> このメッセージは、インストルメント化された最終的なアセンブリに無効な PE ヘッダーがある場合に発生します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [VSInstr](../profiling/vsinstr.md)

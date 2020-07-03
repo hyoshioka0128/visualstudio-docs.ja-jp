@@ -2,7 +2,7 @@
 title: ASP.NET アプリのデバッグを有効にする | Microsoft Docs
 ms.custom: ''
 ms.date: 09/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6f20a2272214a525b00ebf07ebc6e5e803b138c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911352"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349758"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio で ASP.NET または ASP.NET Core アプリをデバッグする
 
@@ -62,9 +62,9 @@ IIS Express が既定値であり、事前に構成されています。 ロー�
 
 1. **[ファイル]**  >  **[選択されたファイルを上書き保存]** を使用するか、**Ctrl**+**S** キーを押して変更を保存します。
 
-1. アプリをデバッグするには、プロジェクトで、一部のコードにブレークポイントを設定します。 Visual Studio ツールバーで、構成が **[デバッグ]** に設定されていること、目的のブラウザーがエミュレーター フィールドの **[IIS Express (\<ブラウザー名>)]** または **[ローカル IIS (\<ブラウザー名>)]** に表示されていることを確認します。
+1. アプリをデバッグするには、プロジェクトで、一部のコードにブレークポイントを設定します。 Visual Studio ツールバーで、構成が **[デバッグ]** に設定されていること、目的のブラウザーがエミュレーター フィールドの **[IIS Express (\<Browser name>)]** または **[ローカル IIS (\<Browser name>)]** に表示されていることを確認します。
 
-1. デバッグを開始するには、ツールバーの **[IIS Express (\<ブラウザー名>)]** または **[ローカル IIS (\<ブラウザー名>)]** を選択し、 **[デバッグ]** メニューから **[デバッグの開始]** を選択するか、**F5** キーを押します。 デバッガーはブレークポイントで一時停止します。 デバッガーがブレークポイントにヒットしない場合は、「[デバッグのトラブルシューティング](#troubleshoot-debugging)」を参照してください。
+1. デバッグを開始するには、ツール バーで **[IIS Express (\<Browser name>)]** または **[ローカル IIS (\<Browser name>)]** を選択し、 **[デバッグ]** メニューから **[デバッグの開始]** を選択するか、**F5** キーを押します。 デバッガーはブレークポイントで一時停止します。 デバッガーがブレークポイントにヒットしない場合は、「[デバッグのトラブルシューティング](#troubleshoot-debugging)」を参照してください。
 
 ## <a name="debug-aspnet-core-apps"></a>ASP.NET Core アプリをデバッグする
 
@@ -90,7 +90,7 @@ IIS Express が既定値であり、事前に構成されています。 ロー�
 
 1. アプリをデバッグするには、プロジェクトで、一部のコードにブレークポイントを設定します。 Visual Studio のツールバーで、構成が **[デバッグ]** に設定され、エミュレーター フィールドに **IIS Express** または新しい IIS プロファイル名が表示されることを確認します。
 
-1. デバッグを開始するには、ツールバーで **[IIS Express]** または **[\<IIS プロファイル名>]** を選択し、 **[デバッグ]** メニューから **[デバッグの開始]** を選択するか、**F5** キーを押します。 デバッガーはブレークポイントで一時停止します。 デバッガーがブレークポイントにヒットしない場合は、「[デバッグのトラブルシューティング](#troubleshoot-debugging)」を参照してください。
+1. デバッグを開始するには、ツールバーで **[IIS Express]** または **\<IIS profile name>** を選択し、 **[デバッグ]** メニューから **[デバッグの開始]** を選択するか、**F5** キーを押します。 デバッガーはブレークポイントで一時停止します。 デバッガーがブレークポイントにヒットしない場合は、「[デバッグのトラブルシューティング](#troubleshoot-debugging)」を参照してください。
 
 ## <a name="troubleshoot-debugging"></a>デバッグのトラブルシューティング
 

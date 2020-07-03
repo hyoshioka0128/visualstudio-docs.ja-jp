@@ -1,7 +1,7 @@
 ---
-title: '方法: ネイティブ ランタイム チェックを使用する | Microsoft Docs'
+title: 方法 - ネイティブ ランタイム チェックを使用する | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732153"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348848"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>方法: ネイティブ ランタイム チェックを使用する
 Visual Studio C++ プロジェクトでは、ネイティブ [runtime_checks](/cpp/preprocessor/runtime-checks) を使用して、次のような一般的なランタイム エラーをキャッチできます。
