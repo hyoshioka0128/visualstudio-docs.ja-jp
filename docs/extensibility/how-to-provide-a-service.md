@@ -1,7 +1,7 @@
 ---
-title: '方法 : サービスを提供する |マイクロソフトドキュメント'
+title: '方法: サービスを提供する |Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
@@ -10,38 +10,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60cae5e8048a0234114e1f9e7d97728e26ee40f3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710771"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905769"
 ---
 # <a name="how-to-provide-a-service"></a>方法: サービスを提供する
-VS パッケージは、他の VS パッケージを使用できるサービスを提供できます。 サービスを提供するには、VSPackage は Visual Studio でサービスを登録し、サービスを追加する必要があります。
+VSPackage は、他の Vspackage が使用できるサービスを提供できます。 サービスを提供するには、VSPackage がサービスを Visual Studio に登録し、サービスを追加する必要があります。
 
- クラス<xref:Microsoft.VisualStudio.Shell.Package>は、 と<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider><xref:System.ComponentModel.Design.IServiceContainer>の両方を実装します。 <xref:System.ComponentModel.Design.IServiceContainer>には、必要に応じてサービスを提供するコールバック メソッドが含まれています。
+ <xref:Microsoft.VisualStudio.Shell.Package>クラスは、との両方を実装し <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer> ます。 <xref:System.ComponentModel.Design.IServiceContainer>要求時にサービスを提供するコールバックメソッドを格納します。
 
- サービスの詳細については、「[サービスの基本](../extensibility/internals/service-essentials.md)事項」を参照してください。
+ サービスの詳細については、「 [Service essentials](../extensibility/internals/service-essentials.md) 」を参照してください。
 
 > [!NOTE]
-> VSPackage がアンロードされる間、Visual Studio は、VSPackage が提供するすべてのサービス要求が配信されるまで待機します。 これらのサービスに対する新しい要求は許可されません。 アンロード時にサービスを<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>取り消すメソッドを明示的に呼び出してはいけません。
+> VSPackage がアンロードされるとき、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されるまで待機します。 これらのサービスに対して新しい要求を行うことはできません。 メソッドを明示的に呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> アンロード時にサービスを取り消すことはできません。
 
-## <a name="implement-a-service"></a>サービスの実装
+## <a name="implement-a-service"></a>サービスを実装する
 
-1. VSIX プロジェクト (**ファイル** > **新しい** > **プロジェクト** > **の Visual C#** > **拡張機能** > **VSIX プロジェクト**) を作成します。
+1. VSIX プロジェクトを作成します ([**ファイル**] [  >  **新しい**  >  **プロジェクト**] [  >  **Visual C#**] [拡張性] [  >  **Extensibility**  >  **vsix プロジェクト**])。
 
-2. VSPackage をプロジェクトに追加します。 **ソリューション エクスプローラー**でプロジェクト ノードを選択し、[**新しい項目** > の**追加** > **] Visual C# アイテム** > **機能拡張** > **Visual Studio パッケージ**] をクリックします。
+2. VSPackage をプロジェクトに追加します。 **ソリューションエクスプローラー**でプロジェクトノードを選択し、[**追加**] [  >  **新しい項目**] [  >  **visual C# 項目**] [拡張] [  >  **Extensibility**  >  **visual Studio パッケージ**] の順にクリックします。
 
-3. サービスを実装するには、次の 3 つのタイプを作成する必要があります。
+3. サービスを実装するには、次の3種類を作成する必要があります。
 
-   - サービスを記述するインターフェイス。 これらのインターフェイスの多くは空です、つまりメソッドがありません。
+   - サービスを説明するインターフェイス。 これらのインターフェイスの多くは空です。つまり、メソッドがありません。
 
-   - サービス インターフェイスを記述するインターフェイス。 このインターフェイスには、実装するメソッドが含まれています。
+   - サービスインターフェイスを記述するインターフェイス。 このインターフェイスには、実装するメソッドが含まれています。
 
-   - サービスとサービス インターフェイスの両方を実装するクラス。
+   - サービスとサービスインターフェイスの両方を実装するクラス。
 
-     次の例は、3 つの型の基本的な実装を示しています。 サービス クラスのコンストラクターは、サービス プロバイダーを設定する必要があります。
+     次の例は、3つの型の基本的な実装を示しています。 サービスクラスのコンストラクターは、サービスプロバイダーを設定する必要があります。
 
    ```csharp
    public class MyService : SMyService, IMyService
@@ -74,9 +74,9 @@ VS パッケージは、他の VS パッケージを使用できるサービス�
 
    ```
 
-### <a name="register-a-service"></a>サービスの登録
+### <a name="register-a-service"></a>サービスを登録する
 
-1. サービスを登録するには、サービス<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>を提供する VSPackage に を追加します。 たとえば次のようになります。
+1. サービスを登録するには、 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> サービスを提供する VSPackage にを追加します。 たとえば次のようになります。
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -86,14 +86,14 @@ VS パッケージは、他の VS パッケージを使用できるサービス�
     {. . . }
     ```
 
-     この属性は、Visual Studio に登録されます`SMyService`。
+     この属性は `SMyService` 、Visual Studio に登録されます。
 
     > [!NOTE]
-    > 同じ名前の別のサービスを置き換えるサービスを登録するには<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>、 . サービスのオーバーライドは 1 つのみ許可されることに注意してください。
+    > 同じ名前の別のサービスを置き換えるサービスを登録するには、を使用し <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> ます。 サービスのオーバーライドは1つしか許可されないことに注意してください。
 
 ### <a name="add-a-service"></a>サービスの追加
 
-1. VSPackage 初期化子で、サービスを追加し、サービスを作成するコールバック メソッドを追加します。 メソッドに加える変更は<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>次のとおりです。
+1. VSPackage 初期化子で、サービスを追加し、コールバックメソッドを追加してサービスを作成します。 メソッドに対して行う変更は <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 次のとおりです。
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ VS パッケージは、他の VS パッケージを使用できるサービス�
     }
     ```
 
-2. サービスを作成して返すコールバック メソッドを実装します。
+2. サービスを作成して返す必要があるコールバックメソッドを実装します。または、作成できない場合は null を実装します。
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -117,9 +117,9 @@ VS パッケージは、他の VS パッケージを使用できるサービス�
     ```
 
     > [!NOTE]
-    > Visual Studio は、サービスを提供する要求を拒否できます。 別の VSPackage が既にサービスを提供している場合は、この処理を行います。
+    > Visual Studio は、要求を拒否してサービスを提供できます。 これは、別の VSPackage が既にサービスを提供している場合に行います。
 
-3. これで、サービスを取得して、そのメソッドを使用できます。 次の例は、初期化子でのサービスの使用を示していますが、サービスを使用する任意の場所でサービスを取得できます。
+3. これで、サービスを取得し、そのメソッドを使用できるようになりました。 次の例は、初期化子でサービスを使用する方法を示していますが、サービスを使用する任意の場所でサービスを取得できます。
 
     ```csharp
     protected override void Initialize()
@@ -136,9 +136,9 @@ VS パッケージは、他の VS パッケージを使用できるサービス�
     }
     ```
 
-     の値`helloString`は"こんにちは"でなければなりません。
+     の値は `helloString` "Hello" にする必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [方法: サービスを取得する](../extensibility/how-to-get-a-service.md)
-- [サービスの使用と提供](../extensibility/using-and-providing-services.md)
-- [サービスの必需品](../extensibility/internals/service-essentials.md)
+- [サービスを使用して提供する](../extensibility/using-and-providing-services.md)
+- [サービスの基本事項](../extensibility/internals/service-essentials.md)
