@@ -1,7 +1,7 @@
 ---
-title: プロパティ ページの追加と削除 |マイクロソフトドキュメント
+title: プロパティページの追加と削除 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -15,24 +15,24 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fdc12f0938d3296cf1bfca37d0b9b01e0f2a704a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740209"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903566"
 ---
-# <a name="add-and-remove-property-pages"></a>プロパティ ページの追加と削除
+# <a name="add-and-remove-property-pages"></a>プロパティページの追加と削除
 
-プロジェクト デザイナーには、 のプロジェクト プロパティ、設定、およびリソースを一元[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的に管理する場所があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では 1 つのウィンドウとして表示され、右側には左側のタブからアクセスできる複数のペインが表示されます。 プロジェクト デザイナーのペイン (プロパティ ページとも呼ばれます) は、プロジェクトの種類と言語によって異なります。 プロジェクト デザイナーには、[プロジェクト] メニューの **[プロパティ]** コマンドを**使用**してアクセスできます。
+プロジェクトデザイナーは、のプロジェクトプロパティ、設定、およびリソースを管理するための一元的な場所を提供し [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 統合開発環境 (IDE: integrated development environment) には1つのウィンドウとして表示され、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 左側のタブからアクセスできる、右側に多数のウィンドウがあります。 プロジェクトデザイナーのペイン (多くの場合、プロパティページと呼ばれます) は、プロジェクトの種類と言語によって異なります。 プロジェクトデザイナーは、[**プロジェクト**] メニューの [**プロパティ**] コマンドを使用してアクセスできます。
 
-プロジェクト のサブタイプは、プロジェクト デザイナーで追加のプロパティ ページを表示する必要があります。 同様に、プロジェクトのサブタイプによっては、組み込みのプロパティ ページを削除する必要がある場合があります。 どちらかを行うには、プロジェクトのサブタイプがインターフェイス<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>を実装し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>メソッドをオーバーライドする必要があります。 このメソッドをオーバーライドし、列挙`propId`体の値のいずれかを含むパラメーターを<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>使用すると、プロジェクトプロパティのフィルター処理、追加、または削除を行うことができます。 たとえば、構成に依存するプロパティ ページにページを追加する必要がある場合があります。 これを行うには、構成に依存するプロパティ ページをフィルター処理し、既存のリストに新しいページを追加する必要があります。
+プロジェクトのサブタイプでは、プロジェクトデザイナーに追加のプロパティページを頻繁に表示する必要があります。 同様に、一部のプロジェクトのサブタイプでは、組み込みのプロパティページを削除する必要がある場合があります。 そのためには、プロジェクトのサブタイプがインターフェイスを実装し、メソッドをオーバーライドする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> ます。 このメソッドをオーバーライドし、 `propId` 列挙体の値の1つを含むパラメーターを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> プロジェクトのプロパティをフィルター処理、追加、または削除できます。 たとえば、構成に依存するプロパティページにページを追加することが必要になる場合があります。 これを行うには、構成に依存するプロパティページをフィルター処理し、既存のリストに新しいページを追加する必要があります。
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>プロジェクト デザイナーでプロパティ ページを追加および削除する
+## <a name="add-and-remove-property-pages-in-project-designer"></a>プロジェクトデザイナーでのプロパティページの追加と削除
 
-### <a name="remove-a-property-page"></a>プロパティ ページを削除する
+### <a name="remove-a-property-page"></a>プロパティページの削除
 
-1. プロパティ`GetProperty(uint itemId, int propId, out object property)`ページをフィルター処理し、リストを`clsids`取得するメソッドをオーバーライドします。
+1. メソッドをオーバーライド `GetProperty(uint itemId, int propId, out object property)` して、プロパティページをフィルター処理し、リストを取得し `clsids` ます。
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "80740209"
     }
     ```
 
-2. 取得したリストから **[ビルド イベント**] ページを`clsids`削除します。
+2. 取得したリストから [**ビルドイベント**] ページを削除し `clsids` ます。
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -111,9 +111,9 @@ ms.locfileid: "80740209"
     property = propertyPagesList;
     ```
 
-### <a name="add-a-property-page"></a>プロパティ ページを追加する
+### <a name="add-a-property-page"></a>プロパティページの追加
 
-1. 追加するプロパティ ページを作成します。
+1. 追加するプロパティページを作成します。
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "80740209"
     }
     ```
 
-2. 新しいプロパティ ページを登録します。
+2. 新しいプロパティページを登録します。
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "80740209"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. プロパティ`GetProperty(uint itemId, int propId, out object property)`ページをフィルター処理するメソッドをオーバーライド`clsids`し、リストを取得して新しいプロパティ ページを追加します。
+3. `GetProperty(uint itemId, int propId, out object property)`プロパティページをフィルター処理したり、リストを取得 `clsids` したり、新しいプロパティページを追加したりするには、メソッドをオーバーライドします。
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

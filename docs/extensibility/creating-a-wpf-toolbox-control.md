@@ -1,7 +1,7 @@
 ---
-title: WPF ツールボックス コントロールを作成する |マイクロソフトドキュメント
+title: WPF ツールボックスコントロールの作成 |Microsoft Docs
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -12,38 +12,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1400efb0095760bf1cee302dd33dcf6ebb90152
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739570"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903941"
 ---
-# <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールの作成
+# <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックスコントロールの作成
 
-WPF (Windows プレゼンテーション フレームワーク) ツールボックス コントロール テンプレートを使用すると、拡張機能のインストール時に**ツールボックス**に自動的に追加される WPF コントロールを作成できます。 このチュートリアルでは、テンプレートを使用して、他のユーザーに配布できる**ツールボックス**コントロールを作成する方法を示します。
+WPF (Windows Presentation Framework) ツールボックスコントロールテンプレートを使用すると、拡張機能のインストール時に自動的に**ツールボックス**に追加される wpf コントロールを作成できます。 このチュートリアルでは、テンプレートを使用して、他のユーザーに配布できる**ツールボックス**コントロールを作成する方法について説明します。
 
-Visual Studio 2015 以降では、ダウンロード センターから Visual Studio SDK をインストールしません。 これは、Visual Studio のセットアップのオプション機能として含まれています。 VS SDK は後でインストールすることもできます。 詳細については、「 [Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
+Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-## <a name="create-the-toolbox-control"></a>ツールボックス コントロールを作成する
+## <a name="create-the-toolbox-control"></a>ツールボックスコントロールを作成する
 
-### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールを使用して拡張機能を作成する
+### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>WPF ツールボックスコントロールを使用して拡張機能を作成する
 
-1. という名前`MyToolboxControl`の VSIX プロジェクトを作成します。 VSIX プロジェクト テンプレートは、"vsix" を検索して **[新しいプロジェクト**] ダイアログで見つけることができます。
+1. という名前の VSIX プロジェクトを作成 `MyToolboxControl` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[**新しいプロジェクト**] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、 という**WPF Toolbox Control**名前`MyToolboxControl`の WPF ツールボックス コントロール項目テンプレートを追加します。 ソリューション**エクスプローラ**で、プロジェクト ノードを右クリックし、[**Add** > **新しい項目**の追加] を選択します。 [**新しい項目の追加]** ダイアログ**で、[Visual C#** > **の機能拡張**] に移動し **、[WPF ツールボックス コントロール**] を選択します。 ウィンドウの下部にある [**名前]** フィールドで、コマンド ファイル名を*MyToolboxControl.cs*に変更します。
+2. プロジェクトが開いたら、という名前の**WPF ツールボックスコントロール**項目テンプレートを追加 `MyToolboxControl` します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [ **WPF ツールボックスコントロール**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*MyToolboxControl.cs*に変更します。
 
-    ソリューションには、ユーザー コントロール、`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>**ツールボックス**にコントロールを追加するコントロール、配置用の VSIX マニフェストの**Microsoft.VisualStudio.ToolboxControl**資産エントリが含まれるようになりました。
+    このソリューションには、ユーザーコントロール、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> コントロールを**ツールボックス**に追加する、および VSIX マニフェストの**VisualStudio ToolboxControl** Asset エントリが含まれるようになりました。
 
 #### <a name="to-create-the-control-ui"></a>コントロール UI を作成するには
 
-1. デザイナーで*MyToolboxControl.xaml*を開きます。
+1. デザイナーで*MyToolboxControl*を開きます。
 
     デザイナーに、<xref:System.Windows.Controls.Button> コントロールを含む <xref:System.Windows.Controls.Grid> コントロールが表示されます。
 
-2. グリッド レイアウトを配置します。 コントロールを<xref:System.Windows.Controls.Grid>選択すると、グリッドの上端と左端に青色のコントロール バーが表示されます。 バーをクリックすると、グリッドに行と列を追加できます。
+2. グリッドレイアウトを配置します。 コントロールを選択すると <xref:System.Windows.Controls.Grid> 、グリッドの上端と左端に青いコントロールバーが表示されます。 グリッドに行と列を追加するには、バーをクリックします。
 
-3. グリッドに子コントロールを追加します。 子コントロールを配置するには、**ツールボックス**からグリッドのセクションにドラッグするか、XAML で子コントロールと`Grid.Row``Grid.Column`属性を設定します。 次の使用例は、グリッドの上の行に 2 つのラベルを追加し、2 行目にボタンを追加します。
+3. グリッドに子コントロールを追加します。 子コントロールは、**ツールボックス**からグリッドのセクションにドラッグするか、 `Grid.Row` XAML で属性と属性を設定することによって配置でき `Grid.Column` ます。 次の例では、グリッドの一番上の行に2つのラベルを追加し、2番目の行にボタンを追加します。
 
     ```xaml
     <Grid>
@@ -55,13 +55,13 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
 
 ## <a name="renaming-the-control"></a>コントロールの名前を変更する
 
- 既定では、コントロールは**ツールボックス**に**MyToolboxControl**として表示されます。 **MyToolboxControl.MyToolboxControl** これらの名前は *、MyToolboxControl.xaml.cs*ファイルで変更できます。
+ 既定では、コントロールは、 **MyToolboxControl**という名前のグループの**MyToolboxControl**として**ツールボックス**に表示されます。 これらの名前は、 *MyToolboxControl.xaml.cs*ファイルで変更できます。
 
-1. コード ビューで*MyToolboxControl.xaml.cs*を開きます。
+1. コードビューで*MyToolboxControl.xaml.cs*を開きます。
 
-2. クラスを`MyToolboxControl`検索し、TestControl に名前を変更します。 (最も速い方法は、クラスの名前を変更し、コンテキスト メニューから **[名前の変更]** を選択して、手順を完了することです。 (**名前の変更**コマンドの詳細については、「[リファクタリングの名前変更 (C#)」](../ide/reference/rename.md)を参照してください。
+2. クラスを見つけ `MyToolboxControl` て、その名前を TestControl に変更します。 (これを行う最も簡単な方法は、クラスの名前を変更し、コンテキストメニューから [**名前の変更**] を選択して、手順を完了することです。 ( **Rename**コマンドの詳細については、「[名前の変更リファクタリング (C#)](../ide/reference/rename.md)」を参照してください)。
 
-3. `ProvideToolboxControl`属性に移動し、最初のパラメーターの値を**Test**に変更します。 これは、**ツールボックス**内のコントロールを含むグループの名前です。
+3. 属性に移動し、 `ProvideToolboxControl` 最初のパラメーターの値を**Test**に変更します。 これは、**ツールボックス**にコントロールを格納するグループの名前です。
 
     結果のコードは次のようになります。
 
@@ -78,13 +78,13 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
 
 ## <a name="build-test-and-deployment"></a>ビルド、テスト、および配置
 
- プロジェクトをデバッグするときに、Visual Studio の実験用インスタンスの**ツールボックス**にインストールされているコントロールを見つける必要があります。
+ プロジェクトをデバッグするときに、Visual Studio の実験用インスタンスの**ツールボックス**にコントロールがインストールされていることを確認する必要があります。
 
 ### <a name="to-build-and-test-the-control"></a>コントロールをビルドおよびテストするには
 
 1. プロジェクトをリビルドし、デバッグを開始します。
 
-2. Visual Studio の新しいインスタンスで、WPF アプリケーション プロジェクトを作成します。 XAML デザイナーが開いているかどうかを確認します。
+2. Visual Studio の新しいインスタンスで、WPF アプリケーション プロジェクトを作成します。 XAML デザイナーが開いていることを確認します。
 
 3. **[ツールボックス]** で対象のコントロールを見つけて、デザイン画面にドラッグします。
 
@@ -94,10 +94,10 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
 
 ### <a name="to-deploy-the-control"></a>コントロールを配置するには
 
-1. テストしたプロジェクトをビルドした後、プロジェクトの *\bin\debug\*フォルダーに *.vsix*ファイルを検索できます。
+1. テストされたプロジェクトをビルドした後、プロジェクトの * \bin\debug フォルダーで *.vsix*ファイルを見つけることができます。 \*
 
-2. *.vsix*ファイルをダブルクリックし、インストール手順に従って、ローカル コンピュータにインストールできます。 コントロールをアンインストールするには、[**ツール** > **の拡張機能と更新プログラム]** に移動し、コントロール拡張を探し、[**アンインストール**] をクリックします。
+2. *.Vsix*ファイルをダブルクリックし、インストール手順に従って、ローカルコンピューターにインストールすることができます。 コントロールをアンインストールするには、[**ツール**] [  >  **拡張機能と更新プログラム**] にアクセスし、コントロールの拡張機能を探して、[**アンインストール**] をクリックします。
 
-3. *.vsix*ファイルをネットワークまたは Web サイトにアップロードします。
+3. *.Vsix*ファイルをネットワークまたは Web サイトにアップロードします。
 
-    ファイルを Visual Studio[マーケットプレース](https://marketplace.visualstudio.com/)Web サイトにアップロードすると、他のユーザーは Visual Studio**のツール** > **拡張機能と更新プログラム**を使用して、コントロールをオンラインで検索してインストールできます。
+    ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは**Tools**  >  Visual Studio のツールの**拡張機能と更新プログラム**を使用して、コントロールをオンラインで検索し、インストールすることができます。

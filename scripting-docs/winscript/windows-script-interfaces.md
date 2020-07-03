@@ -5,18 +5,18 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 141f3f0e60e797a4104c3e276775631f6e9196c5
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840032"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835408"
 ---
 # <a name="windows-script-interfaces"></a>Windows スクリプト インターフェイス
 
@@ -36,7 +36,7 @@ Windows スクリプト ドキュメントは、次のセクションに分か�
 
 ## <a name="windows-script-background"></a>Windows スクリプトの背景
 
-Windows スクリプト インターフェイスは、次の 2 つのカテゴリに分類されます: Windows スクリプト ホストと Windows スクリプト エンジン。 ホストは、スクリプト エンジンを作成し、スクリプトを実行するためにエンジンで呼び出します。 Windows スクリプト ホストの例は次のとおりです。
+Windows スクリプト インターフェイスは、Windows スクリプト ホストと Windows スクリプト エンジンという 2 つのカテゴリに分類されます。 ホストは、スクリプト エンジンを作成し、スクリプトを実行するためにエンジンで呼び出します。 Windows スクリプト ホストの例は次のとおりです。
 
 - Microsoft Internet Explorer
 
@@ -64,7 +64,7 @@ Windows スクリプトのデザインは、オーサリング環境でのみ必
 
 1. プロジェクトを作成します。 プロジェクトがプロジェクトまたはドキュメントを読み込みます。 (この手順は、Windows スクリプトに固有ではありませんが、完全を期すために含まれています)。
 
-2. Windows スクリプト エンジンを作成します。 ホストが `CoCreateInstance` を呼び出して新しい Windows スクリプト エンジンを作成し、使用する特定のスクリプト エンジンのクラス ID (CLSID) を指定します。 Internet Explorer の HTML ブラウザーが、HTML \<OBJECT> タグの CLSID= 属性を通じてスクリプト エンジンのクラス ID を受け取ります。
+2. Windows スクリプト エンジンを作成します。 ホストが `CoCreateInstance` を呼び出して新しい Windows スクリプト エンジンを作成し、使用する特定のスクリプト エンジンのクラス ID (CLSID) を指定します。 たとえば、Internet Explorer の HTML ブラウザーは、HTML タグの CLSID = 属性を使用して、スクリプトエンジンのクラス識別子を受け取り \<OBJECT> ます。
 
 3. スクリプトを読み込みます。 スクリプトの内容が永続化されている場合、ホストは、スクリプト エンジンの `IPersist*::Load` メソッドを呼び出して、スクリプト ストレージ、ストリーム、またはプロパティ バッグにフィードします。 それ以外の場合、ホストは、`IPersist*::InitNew` または [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) メソッドを使用して、null スクリプトを作成します。 スクリプトをテキストとして保持するホストは、[IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) を使用して、`IActiveScriptParse::InitNew` を呼び出した後で、スクリプトのテキストをスクリプト エンジンにフィードすることができます。
 
