@@ -1,7 +1,7 @@
 ---
-title: プロジェクト項目のプロパティを永続化する |マイクロソフトドキュメント
+title: プロジェクト項目のプロパティを永続化する |Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
@@ -11,23 +11,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15c280f15436a5e27bcc0dcc4d2fb9e9bdd82933
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702202"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906190"
 ---
-# <a name="persist-the-property-of-a-project-item"></a>プロジェクト項目のプロパティを永続化する
-ソース ファイルの作成者など、プロジェクト項目に追加するプロパティを永続化できます。 これを行うには、プロジェクト ファイルにプロパティを格納します。
+# <a name="persist-the-property-of-a-project-item"></a>プロジェクト項目のプロパティを保持する
+ソースファイルの作成者など、プロジェクト項目に追加したプロパティを永続化することもできます。 これを行うには、プロパティをプロジェクトファイルに格納します。
 
- プロジェクト ファイルにプロパティを永続化する最初の手順は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>プロジェクトの階層をインターフェイスとして取得することです。 このインターフェイスは、オートメーションを使用するか、または を<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>使用して取得できます。 インターフェイスを取得したら、そのインターフェイスを使用して、現在選択されているプロジェクト項目を確認できます。 プロジェクト項目 ID を取得したら、 を<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>使用してプロパティを追加できます。
+ プロジェクトファイルでプロパティを永続化するための最初の手順は、プロジェクトの階層をインターフェイスとして取得することです <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 。 このインターフェイスは、オートメーションを使用するか、を使用して取得でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> ます。 インターフェイスを取得したら、それを使用して、現在選択されているプロジェクト項目を特定できます。 プロジェクト項目 ID を取得したら、を使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> プロパティを追加できます。
 
- 次の手順では *、VsPkg.cs*プロパティ`Author`をプロジェクト ファイルの値`Tom`で永続化します。
+ 次の手順では、 *VsPkg.cs*プロパティを `Author` プロジェクトファイルの値と共に保持し `Tom` ます。
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE オブジェクトを使用してプロジェクト階層を取得するには
 
-1. VS パッケージに次のコードを追加します。
+1. VSPackage に次のコードを追加します。
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -39,7 +39,7 @@ ms.locfileid: "80702202"
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE オブジェクトを使用してプロジェクト項目のプロパティを永続化するには
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE オブジェクトを使用してプロジェクト項目のプロパティを保持するには
 
 1. 前の手順のメソッドで指定したコードに次のコードを追加します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "80702202"
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection を使用してプロジェクト階層を取得するには
 
-1. VS パッケージに次のコードを追加します。
+1. VSPackage に次のコードを追加します。
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -100,7 +100,7 @@ ms.locfileid: "80702202"
     }
     ```
 
-## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>プロジェクト階層を指定して、選択したプロジェクト項目のプロパティを永続化するには
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>プロジェクト階層の指定により、選択したプロジェクト項目のプロパティを永続化するには
 
 1. 前の手順のメソッドで指定したコードに次のコードを追加します。
 
@@ -115,16 +115,16 @@ ms.locfileid: "80702202"
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>プロパティが永続化されていることを確認するには
 
-1. ソリューション[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]を開始して開くか、または作成します。
+1. を起動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] し、ソリューションを開くか、作成します。
 
-2. **ソリューション エクスプローラー**でVsPkg.csプロジェクト項目を選択します。
+2. **ソリューションエクスプローラー**でプロジェクト項目 VsPkg.cs を選択します。
 
-3. ブレークポイントを使用するか、VSPackage が読み込まれ、SetItemAttribute が実行されることを判断します。
+3. ブレークポイントを使用するか、または VSPackage が読み込まれ、SetItemAttribute が実行されることを確認します。
 
    > [!NOTE]
-   > VSPackage を UI コンテキスト<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>で自動ロードできます。 詳細については、「 [VS パッケージの読み込み](../extensibility/loading-vspackages.md)」を参照してください。
+   > UI コンテキストで VSPackage を自動読み込みでき <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> ます。 詳細については、「 [Load vspackage](../extensibility/loading-vspackages.md)」を参照してください。
 
-4. プロジェクト[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ファイルを閉じて、メモ帳で開きます。 次のように、値\<Tom を持つ著者>タグが表示されます。
+4. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]メモ帳でプロジェクトファイルを閉じて開きます。 次のように、 \<Author> 値 Tom のタグが表示されます。
 
    ```xml
    <Compile Include="VsPkg.cs">
@@ -134,4 +134,4 @@ ms.locfileid: "80702202"
 
 ## <a name="see-also"></a>関連項目
 
-- [カスタム ツール](../extensibility/internals/custom-tools.md)
+- [カスタムツール](../extensibility/internals/custom-tools.md)

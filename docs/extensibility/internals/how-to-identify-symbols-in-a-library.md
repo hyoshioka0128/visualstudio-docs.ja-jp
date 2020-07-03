@@ -1,7 +1,7 @@
 ---
-title: '方法 : ライブラリ内のシンボルを識別する |マイクロソフトドキュメント'
+title: '方法: ライブラリ内のシンボルを識別する |Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fe920fabd05a875b336467fbba16e4229fa9613
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fd091f003909110c696c2e42ad80d6c6ea4859d2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80708003"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905396"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリ内のシンボルを識別する
-シンボル参照ツールは、シンボルの階層ビューを表示します。 シンボルは、名前空間、オブジェクト、クラス、クラス メンバー、およびその他の言語要素を表します。
+シンボル参照ツールは、シンボルの階層ビューを表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスメンバー、およびその他の言語要素を表します。
 
- 階層内の各シンボルは、シンボル ライブラリからオブジェクト マネージャに渡されるナビゲーション情報[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]によって、次のインターフェイスを通じて識別できます。
+ 階層内の各シンボルは、シンボルライブラリによってオブジェクトマネージャーに渡されるナビゲーション情報によって、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 次のインターフェイスを介して識別できます。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>
 
@@ -29,11 +29,11 @@ ms.locfileid: "80708003"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.
 
- 階層内のシンボルの位置は、シンボルを区別します。 シンボル参照ツールが特定のシンボルに移動できるようにします。 シンボルへの一意の完全修飾パスによって、場所が決まります。 パス内の各要素はノードです。 パスは最上位ノードから始まり、特定のシンボルで終わります。 たとえば、M1 メソッドが C1 クラスのメンバーで、C1 が N1 名前空間にある場合、M1 メソッドの完全パスは N1 になります。C1.M1. このパスには、N1、C1、M1 の 3 つのノードが含まれます。
+ 階層内のシンボルの場所によって、シンボルが区別されます。 これにより、シンボル参照ツールが特定のシンボルに移動できるようになります。 シンボルへの一意の完全修飾パスによって場所が決まります。 パス内の各要素はノードです。 パスは最上位ノードから始まり、特定の記号で終わります。 たとえば、M1 メソッドが C1 クラスのメンバーで、C1 が N1 名前空間にある場合、M1 メソッドの完全パスは N1 です。C1.M1. このパスには、N1、C1、および M1 の3つのノードが含まれています。
 
- ナビゲーション情報により、オブジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージャは、階層内のシンボルを検索、選択、および維持することができます。 これにより、あるブラウジングツールから別のブラウジングツールに移動できます。 オブジェクト**ブラウザを**使用してプロジェクト内の[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]シンボルを参照しているときに、メソッドを右クリックし、**呼び出しブラウザ**ツールを起動して、呼び出しグラフにメソッドを表示できます。
+ オブジェクトマネージャーは、ナビゲーション情報を使用して、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 階層内のシンボルを検索、選択、および選択したままにすることができます。 ブラウズツール間を移動できます。 **オブジェクトブラウザー**を使用してプロジェクトのシンボルを参照するときに [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 、メソッドを右クリックし、**呼び出しブラウザー**ツールを起動して、呼び出し先のメソッドを表示することができます。
 
- 2 つのフォームはシンボルの場所を記述します。 正規形式は、シンボルの完全修飾パスに基づいています。 これは、階層内のシンボルの一意の位置を表します。 シンボル参照ツールとは無関係です。 正規のフォーム情報を取得するには、オブジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージャーはメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>を呼び出します。 プレゼンテーション フォームは、特定のシンボル参照ツール内でのシンボルの場所を示します。 シンボルの位置は、階層内の他のシンボルの位置を基準にしています。 指定されたシンボルには複数のプレゼンテーション パスを指定できますが、正規のパスは 1 つだけです。 たとえば、C1 クラスが C2 クラスから継承され、両方のクラスが N1 名前空間にある場合、**オブジェクト ブラウザー**には次の階層ツリーが表示されます。
+ シンボルの場所を記述する2つの形式。 正規の形式は、シンボルの完全修飾パスに基づいています。 これは、階層内の記号の一意の位置を表します。 シンボル参照ツールに依存しません。 正規のフォーム情報を取得するために、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] オブジェクトマネージャーはメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> ます。 プレゼンテーションフォームには、特定のシンボル参照ツール内のシンボルの場所が記述されています。 シンボルの位置は、階層内の他の記号の位置を基準としています。 特定のシンボルには複数のプレゼンテーションパスを含めることができますが、標準パスは1つだけです。 たとえば、C1 クラスが C2 クラスから継承され、両方のクラスが N1 名前空間にある場合、**オブジェクトブラウザー**には次の階層ツリーが表示されます。
 
 ```
 N1
@@ -46,15 +46,15 @@ N1
 
 ```
 
- C2 クラスの正規パスは、この例では N1 + C2 です。 C2 のプレゼンテーション パスには、C1 および "ベースとインターフェイス" ノードが含まれます: N1 + C1 + "ベースとインターフェイス" + C2.
+ C2 クラスの正規のパス (この例では、N1 + C2)。 C2 のプレゼンテーションパスには、C1 および "基底クラスとインターフェイス" ノードが含まれています: N1 + C1 + "基底およびインターフェイス" + C2。
 
- プレゼンテーション フォーム情報を取得するために、オブジェクト マネージャ<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>はメソッドを呼び出します。
+ プレゼンテーションフォーム情報を取得するために、オブジェクトマネージャーはメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> ます。
 
-## <a name="to-obtain-canonical-and-presentation-forms-information"></a>正規およびプレゼンテーション フォームの情報を取得するには
+## <a name="to-obtain-canonical-and-presentation-forms-information"></a>標準およびプレゼンテーションのフォーム情報を取得するには
 
 1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> メソッドを実装します。
 
-     オブジェクト マネージャーは、シンボルの正規のパスに含まれるノードの一覧を取得するには、このメソッドを呼び出します。
+     オブジェクトマネージャーは、このメソッドを呼び出して、シンボルの正規パスに含まれるノードの一覧を取得します。
 
     ```vb
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer
@@ -77,9 +77,9 @@ N1
 
 2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> メソッドを実装します。
 
-     オブジェクト マネージャは、シンボルのプレゼンテーション パスに含まれるノードのリストを取得するために、このメソッドを呼び出します。
+     オブジェクトマネージャーは、このメソッドを呼び出して、シンボルのプレゼンテーションパスに含まれるノードの一覧を取得します。
 
 ## <a name="see-also"></a>関連項目
 - [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [方法: オブジェクト マネージャーにライブラリを登録する](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [方法: オブジェクトマネージャーにライブラリを登録する](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [方法: ライブラリによって提供されるシンボルのリストをオブジェクトマネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

@@ -1,7 +1,7 @@
 ---
-title: '方法 : 組み込みのカラーブルアイテムを使用する |マイクロソフトドキュメント'
+title: '方法: 組み込みの装飾 Items | を使用するMicrosoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
@@ -11,30 +11,30 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e07894c3306f544396e53001990f7b9a2df5a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707788"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905215"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>方法: 組み込みのカラー化可能なアイテムを使用する
-組み込みのカラー対応アイテムを使用する前に、まず、独自のカスタムの色付け可能な項目 (この場合はオブジェクト) を提供していないことを統合開発環境 (IDE) に通知する<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>必要があります。 これを行うには、言語サービスのレジストリ エントリを設定します。
+# <a name="how-to-use-built-in-colorable-items"></a>方法: 組み込みの装飾項目を使用する
+組み込みの装飾項目を使用する前に、まず、独自のカスタム装飾項目 (この場合はオブジェクト) を提供しないことを統合開発環境 (IDE) に通知する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> ます。 これを行うには、言語サービスのレジストリエントリを設定します。
 
-## <a name="to-use-built-in-colorable-items"></a>組み込みのカラー設定可能なアイテムを使用するには
+## <a name="to-use-built-in-colorable-items"></a>組み込みの装飾アイテムを使用するには
 
-1. **[X.Y\\>\言語サービス\\<言語名\>HKEY_LOCAL_MACHINE\VisualStudio<** で\<、X.Y>は言語の[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]バージョン\<であり、言語名は言語名 **>、RequestStockColors**という名前の DWORD レジストリ エントリ値を作成します。
+1. **HKEY_LOCAL_MACHINE \visualstudio \\<X.y> \languages\language Services \\<\> language Name**(はのバージョンで、は \<X.Y> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<Language Name> お使いの言語の名前です) で、 **requeststockcolors**という DWORD レジストリエントリの値を作成します。
 
-2. **レジストリ**エントリ値を*1*に設定します。
+2. **Requeststockcolors**レジストリエントリの値を*1*に設定します。
 
-    レジストリ エントリを作成した後、カラー化者の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドは<xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS>、エディターで使用する色属性の配列を入力する列挙のメンバーを使用できます。
+    レジストリエントリを作成した後は、その <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 列挙体のメンバーを使用して、 <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> エディターで使用する色属性の配列を入力できます。
 
    > [!NOTE]
-   > ユーザー設定の色付け可能な項目を提供する場合は、このレジストリ エントリを設定しないでください。 詳細については、「[カスタムのカラー設定可能な項目](../../extensibility/internals/custom-colorable-items.md)」を参照してください。
+   > カスタム装飾項目を指定する場合は、このレジストリエントリを設定しないでください。 詳細については、「 [Custom 装飾 items](../../extensibility/internals/custom-colorable-items.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [カスタム エディターでの構文の色分け](../../extensibility/syntax-coloring-in-custom-editors.md)
+- [カスタムエディターでの構文の色分け](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-- [構文の色分けの実装](../../extensibility/internals/implementing-syntax-coloring.md)
-- [カスタムのカラー設定可能なアイテム](../../extensibility/internals/custom-colorable-items.md)
+- [実装 (構文の色分けを)](../../extensibility/internals/implementing-syntax-coloring.md)
+- [カスタム装飾項目](../../extensibility/internals/custom-colorable-items.md)
 - [従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service2.md)

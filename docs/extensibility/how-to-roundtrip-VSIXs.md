@@ -1,19 +1,19 @@
 ---
 title: ラウンドトリップ拡張機能について
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269062"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905774"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>方法: 拡張機能を Visual Studio 2019/2017 および Visual Studio 2015 と互換性を持たせる
 
@@ -29,7 +29,7 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 1. 適切な NuGet パッケージをインポートします。
 2. 拡張機能マニフェストを更新します。
     * インストールの対象
-    * Prerequisites
+    * 必須コンポーネント
 3. CSProj を更新します。
     * `<MinimumVisualStudioVersion>` を更新します。
     * `<VsixType>` プロパティを追加します。
@@ -45,20 +45,20 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 * VS SDK がインストールされた Visual Studio 2015
 * 拡張機能ワークロードがインストールされた Visual Studio 2019 または2017
 
-## <a name="recommended-approach"></a>推奨される方法
+## <a name="recommended-approach"></a>推奨されるアプローチ
 
 Visual studio 2019 または2017ではなく、Visual Studio 2015 を使用してこのアップグレードを開始することを強くお勧めします。 Visual Studio 2015 で開発を行う主な利点は、Visual Studio 2015 で利用できないアセンブリの参照を確実に排除できるという点です。 Visual Studio 2019 または2017で開発する場合、Visual Studio 2019 または2017にのみ存在するアセンブリに依存関係を導入するリスクがあります。
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>project.json への参照を確実に排除する
 
-このドキュメントの後半で、* *.csproj*ファイルに条件付きインポートステートメントを挿入します。 これは、NuGet の参照が*プロジェクトの json*に格納されている場合には機能しません。 そのため、すべての NuGet 参照を*パッケージの .config*ファイルに移動することをお勧めします。
-プロジェクトに*プロジェクトの json*ファイルが含まれている場合:
+このドキュメントの後半で、**.csproj*ファイルに条件付きインポートステートメントを挿入します。 これは、NuGet 参照が*project.js*に格納されている場合には機能しません。 そのため、すべての NuGet 参照を*packages.config*ファイルに移動することをお勧めします。
+プロジェクトにファイル*のproject.js*が含まれている場合:
 
-* *プロジェクトの json*で参照をメモしておきます。
-* **ソリューションエクスプローラー**から、プロジェクトから*プロジェクトの json*ファイルを削除します。 これにより、*プロジェクトの json*ファイルが削除され、プロジェクトから削除されます。
+* project.jsの参照をメモし*て*おきます。
+* **ソリューションエクスプローラー**から、ファイルの*project.js*をプロジェクトから削除します。 これにより、ファイルの*project.js*が削除され、プロジェクトから削除されます。
 * NuGet の参照をプロジェクトに再び追加します。
-  * **ソリューション**を右クリックし、 **[ソリューションの NuGet パッケージの管理]** を選択します。
-  * 自動的に*パッケージの .config*ファイルが作成されます。
+  * **ソリューション**を右クリックし、[**ソリューションの NuGet パッケージの管理**] を選択します。
+  * Visual Studio によって、 *packages.config*ファイルが自動的に作成されます。
 
 > [!NOTE]
 > プロジェクトに EnvDTE パッケージが含まれている場合は、参照を右クリックし **、[参照**の**追加**] を選択して適切な参照を追加することで、追加する必要がある場合があります。 NuGet パッケージを使用すると、プロジェクトのビルドを試みたときにエラーが発生する可能性があります。
@@ -69,7 +69,7 @@ Visual studio 2019 または2017ではなく、Visual Studio 2015 を使用し�
 
 Visual Studio 2015 と2019/2017 の両方で VSIXv3 をビルドしてデプロイするには、次の NuGet パッケージが必要です。
 
-Version | ビルド ツール
+バージョン | ビルド ツール
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2019 または2017 | Microsoft.VSSDK.BuildTool
@@ -139,7 +139,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 * プロパティ グループに次のタグ `<VsixType>v3</VsixType>` を追加します。
 
 > [!NOTE]
-> `<OutputType></OutputType>` タグの下に追加することをお勧めします。
+> これをタグの下に追加することをお勧め `<OutputType></OutputType>` します。
 
 ### <a name="3-add-the-debugging-properties"></a>3. デバッグプロパティを追加する
 
@@ -163,17 +163,17 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. ビルドツールのインポートに条件を追加する
 
-* Microsoft.VSSDK.BuildTools 参照を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 Condition ステートメントの前に `'$(VisualStudioVersion)' != '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
+* Microsoft.VSSDK.BuildTools 参照を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 `'$(VisualStudioVersion)' != '14.0' And`Condition ステートメントの前にを挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例:
+次に例を示します。
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 Condition ステートメントの前に `'$(VisualStudioVersion)' == '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
+* Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 `'$(VisualStudioVersion)' == '14.0' And`Condition ステートメントの前にを挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例:
+次に例を示します。
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,15 +181,15 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 これを行うには、条件付きステートメントの前に `'$(VisualStudioVersion)' != '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例:
+次に例を示します。
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 Condition ステートメントの前に `'$(VisualStudioVersion)' == '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
+* Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 `'$(VisualStudioVersion)' == '14.0' And`Condition ステートメントの前にを挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例:
+次に例を示します。
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
@@ -205,9 +205,9 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 * Visual Studio 2015 でプロジェクトを開きます。
 * プロジェクトをビルドし、VSIX が正しくビルドされたことを出力で確認します。
 * プロジェクトディレクトリに移動します。
-* 開く、 *\bin\Debug* フォルダー。
+* *\Bin\debug*フォルダーを開きます。
 * VSIX ファイルをダブルクリックし、Visual Studio 2015 および Visual Studio 2019/2017 に拡張機能をインストールします。
-* **[インストール済み]** セクションの [**ツール** > の**拡張機能と更新プログラム**] に拡張機能が表示されていることを確認してください。
+* [インストール済み] セクションの [**ツール**] [  >  **拡張機能と更新プログラム**] に拡張機能が表示**さ**れていることを確認してください。
 * 拡張機能を実行または使用して、機能することを確認します。
 
 ![VSIX の検索](media/finding-a-VSIX-example.png)

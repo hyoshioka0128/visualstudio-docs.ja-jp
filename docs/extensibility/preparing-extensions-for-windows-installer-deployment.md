@@ -1,7 +1,7 @@
 ---
-title: Windows インストーラの展開用の拡張機能を準備する |マイクロソフトドキュメント
+title: Windows インストーラー展開の拡張機能を準備する |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
@@ -10,50 +10,50 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8636dfbbad06192e5edbb61a9a784f64b8f3f14f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702022"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906155"
 ---
-# <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows インストーラの展開用の拡張機能を準備する
-Windows インストーラー パッケージ (MSI) を使用して VSIX パッケージを展開することはできません。 ただし、MSI 展開用の VSIX パッケージの内容を抽出できます。 このドキュメントでは、既定の出力がセットアップ プロジェクトに含める VSIX パッケージであるプロジェクトを準備する方法を示します。
+# <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows インストーラー展開の拡張機能を準備する
+Windows インストーラーパッケージ (MSI) を使用して VSIX パッケージを配置することはできません。 ただし、MSI の展開用に VSIX パッケージのコンテンツを抽出することはできます。 このドキュメントでは、既定の出力がセットアッププロジェクトに含める VSIX パッケージであるプロジェクトを準備する方法について説明します。
 
-## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Windows インストーラーの展開用の拡張プロジェクトを準備する
- セットアップ プロジェクトに追加する前に、新しい拡張プロジェクトに対してこれらの手順を実行します。
+## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Windows インストーラー配置用の拡張機能プロジェクトを準備する
+ セットアッププロジェクトに追加する前に、新しい拡張機能プロジェクトでこれらの手順を実行します。
 
-### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Windows インストーラーの展開用の拡張機能プロジェクトを準備するには
+### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Windows インストーラー配置用の拡張機能プロジェクトを準備するには
 
-1. VsPackage、MEF コンポーネント、エディター表示要素、または VSIX マニフェストを含むその他の機能拡張プロジェクトの種類を作成します。
+1. VSPackage、MEF コンポーネント、エディターの表示要素、または VSIX マニフェストを含むその他の機能拡張プロジェクトの種類を作成します。
 
-2. コード エディターで VSIX マニフェストを開きます。
+2. コードエディターで VSIX マニフェストを開きます。
 
-3. VSIX`InstalledByMsi`マニフェストの要素を に`true`設定します。 VSIX マニフェストの詳細については[、VSIX 拡張スキーマ 2.0 のリファレンスを参照](../extensibility/vsix-extension-schema-2-0-reference.md)してください。
+3. `InstalledByMsi`VSIX マニフェストの要素をに設定 `true` します。 VSIX マニフェストの詳細については、「 [vsix 拡張機能スキーマ2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)」を参照してください。
 
-     これにより、VSIX インストーラーがコンポーネントをインストールすることを防ぎます。
+     これにより、VSIX インストーラーはコンポーネントをインストールしようとしません。
 
-4. **ソリューション エクスプローラ**でプロジェクトを右クリックし、[**プロパティ**] をクリックします。
+4. **ソリューションエクスプローラー**でプロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
-5. **[VSIX]** タブを選択します。
+5. [ **VSIX** ] タブを選択します。
 
-6. **[VSIX コンテンツを次の場所にコピー**する] というラベルの付いたチェック ボックスをオンにし、セットアップ プロジェクトがファイルを取得するパスを入力します。
+6. [ **VSIX コンテンツを次の場所にコピーする**] チェックボックスをオンにし、セットアッププロジェクトがファイルを取得するパスを入力します。
 
 ## <a name="extract-files-from-an-existing-vsix-package"></a>既存の VSIX パッケージからファイルを抽出する
- ソース ファイルがない場合に、既存の VSIX パッケージのコンテンツをセットアップ プロジェクトに追加するには、次の手順を実行します。
+ ソースファイルがない場合に既存の VSIX パッケージの内容をセットアッププロジェクトに追加するには、次の手順を実行します。
 
 ### <a name="to-extract-files-from-an-existing-vsix-package"></a>既存の VSIX パッケージからファイルを抽出するには
 
-1. の名前を変更*します。**ファイル名.vsix からファイル名.zip*までの拡張子を含む VSIX*ファイル*。
+1. の名前を変更*します。**ファイル名 .vsix*から*filename.zip*への拡張子を含む vsix ファイル。
 
-2. *zip*ファイルの内容をディレクトリにコピーします。
+2. *.Zip*ファイルの内容をディレクトリにコピーします。
 
-3. ディレクトリから *[Content_types].xml*ファイルを削除します。
+3. ディレクトリから *[Content_types] .xml*ファイルを削除します。
 
-4. 前の手順に示すように、VSIX マニフェストを編集します。
+4. 前の手順で示したように、VSIX マニフェストを編集します。
 
-5. 残りのファイルをセットアップ プロジェクトに追加します。
+5. 残りのファイルをセットアッププロジェクトに追加します。
 
 ## <a name="see-also"></a>関連項目
-- [インストーラーの配置](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
-- [チュートリアル: カスタム アクションを作成する](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+- [Visual Studio インストーラーの配置](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [チュートリアル: カスタム動作の作成](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

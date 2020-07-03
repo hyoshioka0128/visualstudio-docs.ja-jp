@@ -1,19 +1,19 @@
 ---
 title: Visual Studio のイメージとアイコン |Microsoft Docs
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537541"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906122"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio のイメージとアイコン
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio でのイメージの使用
@@ -278,10 +278,10 @@ ms.locfileid: "85537541"
 |中立|VS アクション Blue|00539C/0、83156|![見本 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |作成/新規作成|VS アクションオレンジ|C27D1A/194156、26|![見本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
-##### <a name="examples"></a>例
+##### <a name="examples"></a>使用例
  "Add"、"Run"、"Play"、"Validate" などの正のアクション修飾子には、緑色が使用されます。
 
-|WMIMgmt.msc|クエリの実行|すべてのステップを再生する|コントロールの追加|
+|実行|クエリの実行|すべてのステップを再生する|コントロールの追加|
 |-|-|-|-|
 |![実行アイコン](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![[クエリの実行] アイコン](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")|![[すべてのステップの再生] アイコン](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")|![[コントロールの追加] アイコン](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")|
 
@@ -306,7 +306,7 @@ ms.locfileid: "85537541"
 #### <a name="special-cases"></a>特殊なケース
  特殊なケースでは、色分けされたアクション修飾子をスタンドアロンアイコンとして単独で使用できます。 アイコンに使用する色には、アイコンが関連付けられている操作が反映されます。 この使用は、次のような、アイコンの小さなサブセットに制限されます。
 
-|WMIMgmt.msc|Stop|削除|保存|最近参照した場所|
+|実行|Stop|削除|保存|最近参照した場所|
 |-|-|-|-|-|
 |![実行アイコン](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![停止アイコン](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![削除アイコン](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![[Save]\(保存\) アイコン](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![[戻る] アイコン](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 

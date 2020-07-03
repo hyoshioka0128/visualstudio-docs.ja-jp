@@ -1,7 +1,7 @@
 ---
-title: '方法 : プライベート ギャラリーの Atom フィードを作成する |マイクロソフトドキュメント'
+title: '方法: プライベートギャラリーの Atom フィードを作成する |Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
@@ -11,28 +11,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72fbf2d3973ffd84de1cf6f33788c43511c3ce4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711006"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905862"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: プライベート ギャラリーの Atom フィードを作成する
-拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、プライベート ギャラリーとして**拡張機能と更新プログラム**にフィードを追加できます。 詳細については、「プライベート[ギャラリー](../extensibility/private-galleries.md)」を参照してください。
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: プライベートギャラリーの Atom フィードを作成する
+拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、そのフィードをプライベートギャラリーとして**拡張機能と更新プログラム**に追加することができます。 詳細については、「[プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
 
 ## <a name="create-an-atom-feed"></a>Atom フィードを作成する
- Atom フィードをプライベート ギャラリーとして作成するには、まず拡張子 *(.vsix*ファイル) をフォルダに集めます。 必要に応じて、サブフォルダに整理することができます。 また、以下のリソースも必要です。
+ Atom フィードをプライベートギャラリーとして作成するには、まず、拡張機能 (*.vsix*ファイル) をフォルダーに集めます。 必要に応じて、サブフォルダーに整理することができます。 また、次のリソースも必要になります。
 
-- プライベート ギャラリーとして拡張機能を使用できるようにする*atom.xml*ファイル。 *atom.xml*ファイルを**拡張機能と更新**に接続する方法については、「プライベート[ギャラリー](../extensibility/private-galleries.md)」を参照してください。
+- 拡張機能をプライベートギャラリーとして使用できるようにする*atom.xml*ファイル。 *atom.xml*ファイルを**拡張機能と更新プログラム**に接続する方法の詳細については、「[プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
 
-- 拡張機能から抽出されたイメージ ファイル (スクリーン ショットなど) を含むフォルダー。 *atom.xml*ファイルには、これらのイメージへの相対リンクが含まれているため、これらのイメージは**拡張機能と更新で**使用できます。
+- 拡張機能から抽出されたイメージファイル (スクリーンショットなど) を含むフォルダー。 *atom.xml*ファイルには、**拡張機能と更新プログラム**で使用できるように、これらのイメージへの相対リンクが含まれています。
 
-  たとえば、次の 2 つの拡張子を 1 つのフォルダにまとめたものとします。
+  たとえば、フォルダーに次の2つの拡張機能を収集したとします。
 
-- *Template_Wizard_239.vsix*は空の VSIX プロジェクト テンプレートです。
+- *Template_Wizard_239 .vsix。* これは空の vsix プロジェクトテンプレートです。
 
-- *選択した*単語のすべてのインスタンスを強調表示するツールです。
+- *Selectionhighlight。 .vsix*は、選択した単語のすべてのインスタンスを強調表示するツールです。
 
   *atom.xml*ファイルの内容は、次の例のようになります。
 
@@ -70,7 +70,7 @@ ms.locfileid: "80711006"
 </feed>
 ```
 
- 2 つのリンク タグは、生成されたイメージ フォルダー内のスクリーン ショットを参照していることに注意してください。
+ 2つのリンクタグが、生成されるイメージのフォルダー内のスクリーンショットを参照していることに注意してください。
 
 ## <a name="see-also"></a>関連項目
 - [プライベートギャラリー](../extensibility/private-galleries.md)
