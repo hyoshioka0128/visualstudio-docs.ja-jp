@@ -1,7 +1,7 @@
 ---
 title: SharePoint 用のページを作成する |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986353"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015167"
 ---
 # <a name="create-pages-for-sharepoint"></a>SharePoint のページを作成する
   SharePoint サイトのアプリケーションページ、サイトページ、マスターページ、およびページレイアウトを作成できます。
@@ -39,7 +38,7 @@ ms.locfileid: "72986353"
 |アプリケーションページ|ページにカスタムコードを含める場合、またはページを複数のサイトで共有する場合は、アプリケーションページを作成します。 それ以外の場合は、サイトページが最適な選択肢となることがあります。|
 |サイトページ|次のいずれかのタスクを実行する場合は、サイトページを作成します。<br /><br /> -SharePoint ライブラリにページを追加します。<br />-動的 Web パーツ、Web パーツゾーンなどの機能をホストするためにページを有効にします。<br />-ユーザーが SharePoint デザイナーを使用してページをカスタマイズできるようにします。<br /><br /> ページにカスタムコードを含める場合は、サイトページを作成しないでください。 サイトページにカスタムコードを追加できますが、ユーザーが SharePoint デザイナーを使用してページをカスタマイズすると、コードの実行が停止します。|
 |マスターページ|サイトページとアプリケーションページの共通構造を定義する場合は、マスターページを作成します。|
-|ページレイアウト|ページレイアウトは [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 固有のものであり、サイトページとアプリケーションページの共通構造をさらに定義することができます。|
+|ページ レイアウト|ページレイアウトはに固有 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] であり、サイトページとアプリケーションページの共通構造をさらに定義することができます。|
 
  ページの種類の概要については、「[構成要素: ページとユーザーインターフェイス](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14))」と「[ページレイアウトとマスターページ](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14))」を参照してください。
 

@@ -1,7 +1,7 @@
 ---
 title: '方法: リソースファイルを使用してローカライズされた名前、プロパティ、およびアクセス許可を指定するMicrosoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982552"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015400"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>方法: リソースファイルを使用してローカライズされた名前、プロパティ、およびアクセス許可を指定する
   リソースファイルを使用すると、ローカライズされた名前の指定、プロパティの定義、ビジネスデータ接続 (BDC) モデルで定義されているアクセス許可 tor オブジェクトの適用を行うことができます。 この情報を指定するには、ビジネスデータ接続**モデル**アイテムを含むプロジェクトに**ビジネスデータ接続リソース**アイテムを追加します。 次に、リソースファイルの XML を編集して、名前、プロパティ、およびアクセス許可を指定します。
@@ -33,13 +32,13 @@ ms.locfileid: "72982552"
 
 1. **ソリューションエクスプローラー**で、SharePoint プロジェクトのフォルダーを展開し、BDC モデルが含まれているフォルダーを選択します。
 
-2. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
+2. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-3. **[SharePoint]** ノードを展開し、 **[2010]** ノードを選択します。
+3. [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
-4. **[新しい項目の追加]** ダイアログボックスで、 **[ビジネスデータ接続リソース項目]** を選択します。
+4. [**新しい項目の追加**] ダイアログボックスで、[**ビジネスデータ接続リソース項目**] を選択します。
 
-5. **[名前]** ボックスにリソースファイルの名前を指定し、 **[追加]** をクリックします。
+5. [**名前**] ボックスにリソースファイルの名前を指定し、[**追加**] をクリックします。
 
      拡張子が bdcr のリソースファイルがプロジェクトに追加され、編集用に開かれます。
 

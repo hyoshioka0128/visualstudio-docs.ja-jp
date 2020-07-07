@@ -1,7 +1,7 @@
 ---
-title: 'チュートリアル: フィーチャー イベント レシーバーの追加 |Microsoft Docs'
+title: 'チュートリアル: フィーチャーイベントレシーバーの追加 |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,31 +16,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008283"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015359"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>チュートリアル: フィーチャー イベント レシーバーを追加します。
-  フィーチャー イベント レシーバーは、SharePoint で、次の機能に関連するイベントのいずれかが発生したときに実行する方法です。
+# <a name="walkthrough-add-feature-event-receivers"></a>チュートリアル: フィーチャーイベントレシーバーの追加
+  フィーチャーイベントレシーバーは、SharePoint で次の機能に関連するイベントのいずれかが発生したときに実行されるメソッドです。
 
-- 機能をインストールします。
+- 機能がインストールされています。
 
-- フィーチャーがアクティブにします。
+- フィーチャーがアクティブ化されます。
 
-- フィーチャーが非アクティブ化します。
+- 機能が非アクティブ化されています。
 
 - 機能が削除されます。
 
-  このチュートリアルでは、SharePoint プロジェクト内のフィーチャーには、イベント レシーバーを追加する方法を示します。 これには、次のタスクを示しています。
+  このチュートリアルでは、SharePoint プロジェクトの機能にイベントレシーバーを追加する方法について説明します。 次のタスクについて説明します。
 
-- フィーチャー イベント レシーバーを空のプロジェクトを作成しています。
+- フィーチャーイベントレシーバーを使用して空のプロジェクトを作成する。
 
-- 処理、 **FeatureDeactivating**メソッド。
+- **Featuredeactivating 非アクティブ**化メソッドを処理しています。
 
-- SharePoint プロジェクト オブジェクト モデルを使用して、お知らせをお知らせリストに追加します。
+- SharePoint プロジェクトオブジェクトモデルを使用してお知らせリストにお知らせを追加します。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -49,75 +48,75 @@ ms.locfileid: "63008283"
 
 - サポート対象エディションの Microsoft Windows および SharePoint。
 
-- Visual Studio
+- 見ることができます。
 
-## <a name="create-a-feature-event-receiver-project"></a>フィーチャー イベント レシーバー プロジェクトを作成します。
- 最初に、フィーチャー イベント レシーバーを含めるためのプロジェクトを作成します。
+## <a name="create-a-feature-event-receiver-project"></a>フィーチャーイベントレシーバープロジェクトを作成する
+ まず、フィーチャーイベントレシーバーを含むプロジェクトを作成します。
 
-#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>フィーチャー イベント レシーバーを含むプロジェクトを作成するには
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>フィーチャーイベントレシーバーを使用してプロジェクトを作成するには
 
-1. メニュー バーで、**ファイル** > **新規** > **プロジェクト**を表示する、**新しいプロジェクト** ダイアログ ボックス。
+1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
-2. **Visual C#** または **Visual Basic** 下の **SharePoint** ノードを展開し、 **2010** ノードを選択します。
+2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
-3. **テンプレート**ウィンドウで、選択、 **SharePoint 2010 プロジェクト**テンプレート。
+3. [**テンプレート**] ペインで、[ **SharePoint 2010] プロジェクト**テンプレートを選択します。
 
-     プロジェクト テンプレートがないために、フィーチャー イベント レシーバーのこのプロジェクトの種類を使用します。
+     フィーチャーイベントレシーバーには、プロジェクトテンプレートがないため、このプロジェクトの種類を使用します。
 
-4. **名**ボックスに、入力**FeatureEvtTest**、選択し、 **OK**を表示するボタン、 **SharePoint カスタマイズ ウィザード**。
+4. [**名前**] ボックスに「 **featureevttest**」と入力し、[ **OK** ] をクリックして**SharePoint カスタマイズウィザード**を表示します。
 
-5. **デバッグのサイトとセキュリティのレベルを指定**ページで、新しいカスタム フィールドのアイテムを追加する SharePoint サーバー サイトの URL を入力するか、既定の場所を使用して (http://\<*システム名前*>/)。
+5. [**デバッグのサイトとセキュリティレベルの指定**] ページで、新しいカスタムフィールド項目を追加する SharePoint サーバーサイトの URL を入力するか、既定の場所 (http:///) を使用し \<*system name*> ます。
 
-6. **この SharePoint ソリューションの信頼レベルとは何ですか?** セクションで、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
+6. [**この SharePoint ソリューションの信頼レベル**を指定してください] セクションで、[**ファームソリューションとして配置**する] オプションボタンを選択します。
 
-     サンド ボックス ソリューションとファーム ソリューションの詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
+     サンドボックスソリューションとファームソリューションの詳細については、「[サンドボックスソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)」を参照してください。
 
-7. 選択、**完了**ボタンをクリックし、Feature1 という機能が表示されることに注意してください、**機能**ノード。
+7. [**完了**] をクリックし、feature1.feature という名前の機能が [**機能**] ノードの下に表示されることを確認します。
 
-## <a name="add-an-event-receiver-to-the-feature"></a>フィーチャー イベント レシーバーを追加します。
- 次に、フィーチャー イベント レシーバーを追加し、機能が非アクティブ化時に実行されるコードを追加します。
+## <a name="add-an-event-receiver-to-the-feature"></a>イベントレシーバーを機能に追加する
+ 次に、機能にイベントレシーバーを追加し、機能が非アクティブになったときに実行されるコードを追加します。
 
-#### <a name="to-add-an-event-receiver-to-the-feature"></a>フィーチャー イベント レシーバーを追加するには
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>イベントレシーバーを機能に追加するには
 
-1. 機能 ノードのショートカット メニューを開き、選択し、**機能の追加**機能を作成します。
+1. [機能] ノードのショートカットメニューを開き、[機能の**追加**] を選択して機能を作成します。
 
-2. 下、**機能**ノード、ショートカット メニューを開き**Feature1**を選び、**イベント レシーバーの追加**フィーチャー イベント レシーバーを追加します。
+2. [**機能**] ノードで**feature1.feature**のショートカットメニューを開き、[**イベントレシーバーの追加**] を選択して、この機能にイベントレシーバーを追加します。
 
-     これには、Feature1 コード ファイルが追加されます。 この場合、いずれかに名前が*Feature1.EventReceiver.cs*または*Feature1.EventReceiver.vb*プロジェクトの開発言語によって異なります。
+     これにより、Feature1.feature の下にコードファイルが追加されます。 この場合、プロジェクトの開発言語に応じて、 *Feature1.EventReceiver.cs*または*feature1.feature*のいずれかという名前が付けられます。
 
-3. プロジェクトが記述されている場合[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]がない場合は、イベント レシーバーの上部にある次のコードを追加します。
+3. プロジェクトがに記述されている場合は [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 、イベントレシーバーの先頭に次のコードを追加します (まだ存在していない場合)。
 
      [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
 
-4. イベント レシーバー クラスには、イベントとして機能するいくつかのコメント アウトされたメソッドが含まれています。 置換、 **FeatureDeactivating**を次のメソッド。
+4. イベントレシーバークラスには、イベントとして機能するいくつかのコメントアウトされたメソッドが含まれています。 **Featuredeactivating 非アクティブ**化メソッドを次のように置き換えます。
 
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
 
-## <a name="test-the-feature-event-receiver"></a>フィーチャー イベント レシーバーをテストします。
- 次に、テスト対象の機能を非アクティブ化するかどうか、 **FeatureDeactivating**メソッドは、SharePoint のお知らせリストにお知らせを出力します。
+## <a name="test-the-feature-event-receiver"></a>フィーチャーイベントレシーバーをテストする
+ 次に、機能を非アクティブ化して、 **featuredeactivating**メソッドが SharePoint アナウンスリストにアナウンスを出力するかどうかをテストします。
 
-#### <a name="to-test-the-feature-event-receiver"></a>フィーチャー イベント レシーバーをテストするには
+#### <a name="to-test-the-feature-event-receiver"></a>フィーチャーイベントレシーバーをテストするには
 
-1. プロジェクトの値を設定**アクティブな配置構成**プロパティを**アクティブ化しない**します。
+1. プロジェクトの [**アクティブな配置構成**プロパティの値をアクティブ**化なし**に設定する。
 
-     このプロパティを設定して、機能が SharePoint でアクティブ化することを防止、フィーチャー イベント レシーバーをデバッグすることができます。 詳細については、次を参照してください。[デバッグの SharePoint ソリューション](../sharepoint/debugging-sharepoint-solutions.md)します。
+     このプロパティを設定すると、SharePoint で機能をアクティブにできなくなり、機能イベントレシーバーをデバッグできるようになります。 詳細については、「 [SharePoint ソリューションのデバッグ](../sharepoint/debugging-sharepoint-solutions.md)」を参照してください。
 
-2. 選択、 **F5**プロジェクトを実行し、SharePoint に配置するキー。
+2. **F5**キーを押してプロジェクトを実行し、SharePoint に配置します。
 
-3. SharePoint Web ページの上部にあるを開く、**サイトの操作**] メニューの [選び、**サイト設定**します。
+3. SharePoint Web ページの上部にある [**サイトの操作**] メニューを開き、[**サイトの設定**] を選択します。
 
-4. 下、**サイトの操作**のセクション、**サイト設定**ページで、選択、**サイト機能の管理**リンク。
+4. [**サイトの設定**] ページの [**サイトの操作**] セクションで、[**サイト機能の管理**] リンクを選択します。
 
-5. **機能**ページで、選択、 **Activate**横に、 **FeatureEvtTest Feature1**機能します。
+5. [**機能**] ページで、 **Featureevttest feature1.feature**機能の横にある [**アクティブ化**] ボタンを選択します。
 
-6. **機能**ページで、選択、**非アクティブ化**横に、 **FeatureEvtTest Feature1**機能を選択し、**この機能を非アクティブ化**機能を非アクティブ化するリンクを確認します。
+6. [**機能**] ページで、 **Featureevttest feature1.feature**機能の横にある [**非アクティブ化**] ボタンを選択し、機能を非アクティブ化するために [この機能の確認を**非アクティブ**にする] リンクを選択します。
 
-7. 選択、**ホーム**ボタンをクリックします。
+7. [**ホーム**] ボタンをクリックします。
 
-     お知らせが表示されます、**お知らせ**機能が非アクティブ化した後に一覧表示します。
+     機能が非アクティブ化されると、**お知らせ**リストにお知らせが表示されます。
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: イベント レシーバーを作成します。](../sharepoint/how-to-create-an-event-receiver.md)
+- [方法: イベントレシーバーを作成する](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint プロジェクトにプロパティを追加 |Microsoft Docs'
+title: '方法: SharePoint プロジェクトにプロパティを追加する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,74 +14,73 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967215"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015923"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加します。
-  プロジェクトの拡張機能を使用すると、任意の SharePoint プロジェクトにプロパティを追加します。 プロパティを表示する、**プロパティ**ウィンドウで、プロジェクトを選択すると**ソリューション エクスプ ローラー**します。
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加する
+  プロジェクトの拡張機能を使用して、任意の SharePoint プロジェクトにプロパティを追加できます。 **ソリューションエクスプローラー**でプロジェクトを選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
 
- 次の手順では、プロジェクトの拡張機能を既に作成したことを前提としています。 詳細については、「[方法 :SharePoint プロジェクト拡張機能作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)です。
+ 次の手順では、プロジェクトの拡張機能が既に作成されていることを前提としています。 詳細については、「[方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>SharePoint プロジェクトにプロパティを追加するには
 
-1. SharePoint プロジェクトに追加するプロパティを表すパブリック プロパティを持つクラスを定義します。 複数のプロパティを追加する場合は、同じクラスまたは別のクラスですべてのプロパティを定義できます。
+1. SharePoint プロジェクトに追加するプロパティを表すパブリックプロパティを持つクラスを定義します。 複数のプロパティを追加する場合は、同じクラスまたは異なるクラスのすべてのプロパティを定義できます。
 
-2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>のメソッド、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装、ハンドル、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>のイベント、 *projectService*パラメーター。
+2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> *projectservice*パラメーターのイベントを処理します。
 
-3. イベント ハンドラーで、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>イベント、プロパティ、クラスのインスタンスを追加、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>イベント引数のパラメーターのコレクション。
+3. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 、properties クラスのインスタンスを <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> イベント引数パラメーターのコレクションに追加します。
 
 ## <a name="example"></a>例
- 次のコード例では、SharePoint プロジェクトに 2 つのプロパティを追加する方法を示します。 1 つのプロパティが、プロジェクト ユーザー オプション ファイル内のデータを永続化 (、 *. csproj.user*ファイルまたは *. vbproj.user*ファイル)。 その他のプロパティは、プロジェクト ファイル内のデータを永続化 (*.csproj*ファイルまたは *.vbproj*ファイル)。
+ 次のコード例は、SharePoint プロジェクトに2つのプロパティを追加する方法を示しています。 1つのプロパティは、プロジェクトのユーザーオプションファイル ( *.csproj*ファイルまたは *.vbproj*ファイル) でデータを永続化します。 もう一方のプロパティは、プロジェクトファイル (*.csproj*ファイルまたは *.vbproj*ファイル) でデータを永続化します。
 
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
 
-### <a name="understand-the-code"></a>コードを理解します。
- 同じインスタンスを確実に、`CustomProjectProperties`クラスには、毎回、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>イベントが発生する、プロパティ オブジェクトを追加するコード例、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>最初のプロジェクトにこのイベントが発生するプロパティ。 コードは、このイベントが発生するたびに、このオブジェクトを取得します。 使用しての詳細については、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>プロジェクトでは、データを関連付けるプロパティを参照してください[ツールの拡張機能を SharePoint でカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)します。
+### <a name="understand-the-code"></a>コードの理解
+ イベントが発生するたびにクラスの同じインスタンスが使用されるようにするため、 `CustomProjectProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> このコード例では、 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> このイベントが初めて発生したときに、プロジェクトのプロパティにプロパティオブジェクトを追加します。 このコードは、このイベントが再び発生するたびにこのオブジェクトを取得します。 プロパティを使用してデータをプロジェクトに関連付ける方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ては、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
 
- プロパティの値に変更を保持する、**設定**プロパティのアクセサーは、次の Api を使用します。
+ プロパティ値の変更を保持するために、プロパティの**set**アクセサーは次の api を使用します。
 
-- `CustomUserFileProperty` 使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>プロジェクト ユーザー オプション ファイルにその値を保存するプロパティ。
+- `CustomUserFileProperty`プロパティを使用して、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> プロジェクトのユーザーオプションファイルに値を保存します。
 
-- `CustomProjectFileProperty` 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>その値をプロジェクト ファイルに保存するメソッド。
+- `CustomProjectFileProperty`メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> その値をプロジェクトファイルに保存します。
 
-  これらのファイルでデータの永続化の詳細については、次を参照してください。 [SharePoint プロジェクト システムの拡張機能でデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)します。
+  これらのファイルにデータを保持する方法の詳細については、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
 
-### <a name="specify-the-behavior-of-custom-properties"></a>カスタム プロパティの動作を指定します。
- カスタム プロパティの表示し、動作を定義することができます、**プロパティ**ウィンドウからの属性を適用することで、<xref:System.ComponentModel>プロパティ定義に名前空間。 次の属性には、多くのシナリオがあります。
+### <a name="specify-the-behavior-of-custom-properties"></a>カスタムプロパティの動作を指定する
+ 名前空間からプロパティ定義に属性を適用することによって、[**プロパティ**] ウィンドウでカスタムプロパティの表示と動作を定義でき <xref:System.ComponentModel> ます。 次の属性は、多くのシナリオで役立ちます。
 
-- <xref:System.ComponentModel.DisplayNameAttribute>:表示されるプロパティの名前を指定します、**プロパティ**ウィンドウ。
+- <xref:System.ComponentModel.DisplayNameAttribute>: [**プロパティ**] ウィンドウに表示されるプロパティの名前を指定します。
 
-- <xref:System.ComponentModel.DescriptionAttribute>:下に表示される説明文字列を指定します、**プロパティ**プロパティが選択されている場合は、ウィンドウ。
+- <xref:System.ComponentModel.DescriptionAttribute>: プロパティが選択されたときに [**プロパティ**] ウィンドウの下部に表示される説明文字列を指定します。
 
-- <xref:System.ComponentModel.DefaultValueAttribute>:プロパティの既定値を指定します。
+- <xref:System.ComponentModel.DefaultValueAttribute>: プロパティの既定値を指定します。
 
-- <xref:System.ComponentModel.TypeConverterAttribute>:カスタムの変換との間に表示される文字列を指定します、**プロパティ**ウィンドウと非文字列プロパティの値。
+- <xref:System.ComponentModel.TypeConverterAttribute>: [**プロパティ**] ウィンドウに表示される文字列と、文字列以外のプロパティ値の間のカスタム変換を指定します。
 
-- <xref:System.ComponentModel.EditorAttribute>:使用して、プロパティを変更するカスタム エディターを指定します。
+- <xref:System.ComponentModel.EditorAttribute>: プロパティの変更に使用するカスタムエディターを指定します。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
 
 - Microsoft.VisualStudio.SharePoint
 
-- Microsoft.VisualStudio.Shell
+- VisualStudio
 
-- Microsoft.VisualStudio.Shell.Interop
+- VisualStudio (相互運用)
 
-- Microsoft.VisualStudio.Shell.Interop.8.0
+- VisualStudio のようになります。
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+## <a name="deploy-the-extension"></a>拡張機能のデプロイ
+ 拡張機能を配置するには、 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリおよび拡張機能と共に配布するその他のファイル用の拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint プロジェクトを拡張します。](../sharepoint/extending-sharepoint-projects.md)
-- [方法: SharePoint プロジェクト拡張機能を作成します。](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
-- [方法: SharePoint プロジェクトのショートカット メニュー項目を追加します。](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
-- [SharePoint プロジェクト システムを拡張します。](../sharepoint/extending-the-sharepoint-project-system.md)
+- [SharePoint プロジェクトの拡張](../sharepoint/extending-sharepoint-projects.md)
+- [方法: SharePoint プロジェクトの拡張機能を作成する](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [方法: ショートカットメニュー項目を SharePoint プロジェクトに追加する](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)

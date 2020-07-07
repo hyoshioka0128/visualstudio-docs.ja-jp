@@ -1,7 +1,7 @@
 ---
-title: Web パーツまたはアプリケーション ページの再利用可能なコントロールの作成 |Microsoft Docs
+title: Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -13,51 +13,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e67ab41fd39563520370eb079fca1b7c82015e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: b174e1e16802838f19cec6dce727ea3199df730f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952790"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015135"
 ---
-# <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成します。
-  Visual Studio では、アプリケーション ページと SharePoint で実行される Web パーツで使用できる、再利用可能なカスタム コントロールを作成できます。 これらのコントロールは、ユーザー コントロールと呼ばれます。 ユーザー コントロールは、ある種の複合コントロールは ASP.NET Web ページのように動作する、ユーザー コントロールに既存の Web サーバー コントロールとマークアップを追加し、コントロールのプロパティとメソッドを定義できます。 単位として施すの ASP.NET Web ページで、埋め込むことができます。
+# <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する
+  Visual Studio では、SharePoint で実行されるアプリケーションページと Web パーツで使用できる、再利用可能なカスタムコントロールを作成できます。 これらのコントロールは、ユーザーコントロールと呼ばれます。 ユーザーコントロールは、ASP.NET Web ページと同様に動作する複合コントロールの一種です。既存の Web サーバーコントロールやマークアップをユーザーコントロールに追加し、コントロールのプロパティとメソッドを定義することができます。 その後、それらを1つの単位として機能する ASP.NET Web ページに埋め込むことができます。
 
-## <a name="create-a-user-control"></a>ユーザー コントロールを作成します。
- ユーザー コントロールを作成するには、追加、**ユーザー コントロール**を**空の SharePoint プロジェクト**します。 詳細については、「[方法 :SharePoint アプリケーション ページまたは web パーツのユーザー コントロールを作成](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)です。
+## <a name="create-a-user-control"></a>ユーザーコントロールを作成する
+ ユーザーコントロールを作成するには、**空の SharePoint プロジェクト**に**ユーザーコントロール**を追加します。 詳細については、「[方法: SharePoint アプリケーションページまたは web パーツのユーザーコントロールを作成](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)する」を参照してください。
 
- 追加すると、**ユーザー コントロール**項目、Visual Studio は、プロジェクトのフォルダーが作成され、フォルダーに複数のファイルを追加します。 各ファイルの説明を次の表に示します。
+ **ユーザーコントロール**項目を追加すると、Visual Studio によってプロジェクトにフォルダーが作成され、フォルダーに複数のファイルが追加されます。 各ファイルの説明を次の表に示します。
 
 |ファイル|説明|
 |----------|-----------------|
-|ユーザー コントロール ファイル|ユーザー コントロールを定義します。 このファイルにコントロールとマークアップを追加することでユーザー コントロールをデザインします。|
-|コード ファイル|ユーザー コントロールの分離コードが含まれています。 このファイルにイベントを処理するコードを追加します。|
-|デザイナー コード ファイル|デザイナーによって生成されたコードが含まれ、直接編集する必要がありますはありません。|
+|ユーザーコントロールファイル|ユーザーコントロールを定義します。 このファイルにコントロールとマークアップを追加して、ユーザーコントロールをデザインします。|
+|コードファイル|ユーザーコントロールの背後にあるコードを格納します。 このファイルのイベントを処理するコードを追加します。|
+|デザイナーコードファイル|デザイナーによって生成されるコードが含まれており、直接編集することはできません。|
 
-## <a name="design-the-user-control"></a>ユーザー コントロールのデザイン
- Visual Studio で Visual Web Developer デザイナーを使用して、ユーザー コントロールをデザインします。 プロジェクトでユーザー コントロール ファイルを開いて選択すると、このデザイナーが表示されます、**デザイン**タブ。
+## <a name="design-the-user-control"></a>ユーザーコントロールをデザインする
+ Visual Studio の Visual Web Developer デザイナーを使用して、ユーザーコントロールをデザインします。 このデザイナーは、プロジェクトでユーザーコントロールファイルを開き、[**デザイン**] タブをクリックすると表示されます。
 
-## <a name="consume-the-user-control"></a>ユーザー コントロールを使用します。
- SharePoint では、アプリケーション ページまたは Web パーツに含めるまで、ユーザー コントロールは表示されません。
+## <a name="consume-the-user-control"></a>ユーザーコントロールを使用する
+ ユーザーコントロールは、アプリケーションページまたは Web パーツに含めるまでは SharePoint に表示されません。
 
- ユーザー コントロールをアプリケーション ページに含めるには、ASP.NET ユーザー コントロールを追加する Web ページを開きます。 [デザイン] ビューに切り替えるソリューション エクスプ ローラーで、カスタム ユーザー コントロール ファイルを選択し、ページにドラッグします。 ASP.NET ユーザー コントロールがページに追加され、デザイナーは、ページをユーザー コントロールを認識するのに必要な @ Register ディレクティブを作成します。 コントロールのパブリック プロパティおよびメソッドで処理することができます。
+ アプリケーションページにユーザーコントロールを含めるには、ASP.NET ユーザーコントロールを追加する Web ページを開きます。 デザインビューに切り替え、ソリューションエクスプローラーでカスタムユーザーコントロールファイルを選択して、ページにドラッグします。 ASP.NET ユーザーコントロールがページに追加され、デザイナーによって @ Register ディレクティブが作成されます。このディレクティブは、ページがユーザーコントロールを認識するために必要です。 これで、コントロールのパブリックプロパティとメソッドを操作できるようになりました。
 
- ユーザー コントロールを Web パーツに含めるには、Web パーツに、ユーザー コントロールを追加<xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A>Web パーツ コード ファイル内のコレクション。 次の例では、ユーザー コントロールを<xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A>Web パーツのコレクション。
+ ユーザーコントロールを web パーツに含めるには、web パーツのコードファイルの Web パーツコレクションにユーザーコントロールを追加し <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> ます。 次の例では、Web パーツのコレクションにユーザーコントロールを追加し <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> ます。
 
  [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
  [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
 
-## <a name="debug-a-user-control"></a>ユーザー コントロールをデバッグします。
- ユーザー コントロールをデバッグするには、SharePoint プロジェクトで、アプリケーション ページや Web パーツにユーザー コントロールが含まれることを確認します。 Visual Studio プロジェクト内のコードをデバッグする場合と同様に、ユーザー コントロールでコードをデバッグできます。
+## <a name="debug-a-user-control"></a>ユーザーコントロールをデバッグする
+ ユーザーコントロールをデバッグするには、SharePoint プロジェクトのアプリケーションページまたは Web パーツにユーザーコントロールが含まれていることを確認します。 次に、Visual Studio プロジェクトでコードをデバッグするのと同じように、ユーザーコントロールのコードをデバッグできます。
 
  Visual Studio デバッガーを開始すると、SharePoint サイトが開きます。
 
- SharePoint では、ユーザー コントロールを含むアプリケーション ページを開きます。 ユーザー コントロールが Web パーツに含まれる場合は、sharepoint Web パーツ ページに Web パーツを追加します。
+ SharePoint で、ユーザーコントロールを含むアプリケーションページを開きます。 ユーザーコントロールが Web パーツに含まれている場合は、SharePoint の web パーツページに Web パーツを追加します。
 
- SharePoint プロジェクトのデバッグの詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。
+ SharePoint プロジェクトのデバッグの詳細については、「 [sharepoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|[説明]|
 |-----------|-----------------|
-|[方法: SharePoint アプリケーション ページまたは web パーツのユーザー コントロールを作成します。](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|アプリケーション ページと SharePoint で実行される Web パーツで使用できる、再利用可能なカスタム コントロールを作成する方法を示します。|
+|[方法: SharePoint アプリケーションページまたは web パーツのユーザーコントロールを作成する](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|SharePoint で実行されるアプリケーションページと Web パーツで使用できる、再利用可能なカスタムコントロールを作成する方法について説明します。|

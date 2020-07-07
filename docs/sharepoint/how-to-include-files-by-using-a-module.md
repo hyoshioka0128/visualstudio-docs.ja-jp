@@ -1,7 +1,7 @@
 ---
-title: '方法: モジュールを使用して、ファイルを含める |Microsoft Docs'
+title: '方法: モジュールを使用してファイルを含める | |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,56 +13,55 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813645"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016298"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>方法: モジュールを使用して、ファイルを含める
-  *モジュール*(と混同しないように[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]モジュール) は、SharePoint にマスターの ASPX ページなどのファイル、テキスト ファイル、またはイメージをデプロイするためのコンテナーです。
+# <a name="how-to-include-files-by-using-a-module"></a>方法: モジュールを使用してファイルを含める
+  *モジュール*(モジュールと混同しないで [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ください) は、ASPX マスターページ、テキストファイル、画像などのファイルを SharePoint に配置できるコンテナーです。
 
- ドキュメント ライブラリ外、または通常のファイル (たとえば、default.aspx) としてドキュメント ライブラリにファイルを展開する選択できます。 ドキュメント ライブラリにファイルを追加するには指定`Type="GhostableInLibrary"`属性として、**ファイル**要素。 この設定では、SharePoint ライブラリに追加されたとき、ファイルを使用するリスト項目を作成するように指示します。 指定するか、ドキュメント ライブラリの外部ファイルを展開する`Type="Ghostable"`を省略するか、**型**属性。
+ ドキュメントライブラリの外部にあるファイルをドキュメントライブラリに配置するか、通常のファイル (default.aspx など) として配置するかを選択できます。 ファイルをドキュメントライブラリに追加するには、 `Type="GhostableInLibrary"` **file**要素の属性としてを指定します。 この設定により、ファイルがライブラリに追加されたときにファイルを使用するためのリスト項目を作成するように SharePoint に指示します。 ドキュメントライブラリの外部にファイルを配置するに `Type="Ghostable"` は、 **Type**属性を指定するか省略します。
 
-## <a name="add-a-module-to-a-sharepoint-solution"></a>SharePoint ソリューションにモジュールを追加します。
+## <a name="add-a-module-to-a-sharepoint-solution"></a>SharePoint ソリューションにモジュールを追加する
 
 #### <a name="to-add-a-module"></a>モジュールを追加するには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を開くか、SharePoint プロジェクトを作成します。
+1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、SharePoint プロジェクトを開くか作成します。
 
-     詳細については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
+     詳細については、「 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。
 
-2. **ソリューション エクスプ ローラー**をプロジェクト ノードを選択し、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
+2. **ソリューションエクスプローラー**で、プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが開きます。
 
-3. SharePoint テンプレートの一覧で選択、**モジュール**テンプレートを選択し、**追加**ボタンをクリックします。
+3. SharePoint テンプレートの一覧で、[**モジュール**] テンプレートを選択し、[**追加**] をクリックします。
 
-     この手順では、Module1 という名前のプロジェクトでノードを作成します。
+     この手順により、プロジェクト内に Module1 という名前のノードが作成されます。
 
-4. Module1、削除、 *Sample.txt*ファイル。
+4. [Module1] の下で、 *Sample.txt*ファイルを削除します。
 
-     Sample.txt は、すべての新しいモジュールなどの目的に含まれているしは必要ありません。 (注こと、ファイルを削除しても、エントリから削除しますモジュールの*Elements.xml*ファイルです)。
+     Sample.txt は、例としてすべての新しいモジュールに含まれているため、必要ありません。 (ファイルを削除すると、モジュールの*Elements.xml*ファイルからもエントリが削除されることに注意してください)。
 
-5. Module1 でそれらのフォルダーを作成、ファイルを SharePoint で特定のフォルダー構造を展開する場合は、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Module1] ノードを選択し、メニュー バーで [**プロジェクト**、**新規フォルダー**します。
+5. ファイルを SharePoint の特定のフォルダー構造に配置する場合は、[Module1] ノードを選択し、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで [**プロジェクト**]、[**新しいフォルダー**] の順に選択して、これらのフォルダーを module1 の下に作成します。
 
-6. ファイルを追加し、次に、メニュー バーで、次のように選択します。 フォルダーを選択**プロジェクト**、**既存項目の追加**します。
+6. ファイルを追加するフォルダーを選択し、メニューバーで [**プロジェクト**]、[**既存項目の追加**] の順に選択します。
 
-7. クリックして、SharePoint に配置する 1 つまたは複数のファイルの選択、**追加**ボタンをクリックします。
+7. SharePoint に配置する1つ以上のファイルを選択し、[**追加**] ボタンをクリックします。
 
-     ファイルをプロジェクトに追加すると、モジュールの Elements.xml ファイルにエントリが自動的に追加します。 指定されているプロジェクトのルート ディレクトリに対する相対の SharePoint サーバーにファイルをコピー、プロジェクトを配置するときに、**ファイル**要素の**Url**属性など、`Url="Module1/New Folder/SomeFile.doc`します。 別のフォルダーに移動するかファイルの配置場所を変更する場合は、**ソリューション エクスプ ローラー**変更またはその**Url**設定します。
+     プロジェクトにファイルを追加すると、そのファイルのエントリがモジュールの Elements.xml ファイルに自動的に追加されます。 プロジェクトが配置されると、ファイルは、プロジェクトのルートディレクトリを基準として SharePoint サーバーにコピーされます。これは、**ファイル**要素の**Url**属性で指定します (など) `Url="Module1/New Folder/SomeFile.doc` 。 ファイルの配置場所を変更する場合は、ファイルを**ソリューションエクスプローラー**内の別のフォルダーに移動するか、 **Url**設定を変更します。
 
-8. ドキュメント ライブラリに表示するすべてのファイルの追加、`Type="GhostableInLibrary"`属性内のエントリを*Elements.xml*します。 例えば以下のようにします。
+8. ドキュメントライブラリに表示するファイルについては、 `Type="GhostableInLibrary"` *Elements.xml*のエントリに属性を追加します。 例:
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />
     ```
 
-9. プロジェクトをデプロイします。
+9. プロジェクトを配置する。
 
-     ファイルは、SharePoint 内の指定の場所にコピーします。
+     ファイルは、SharePoint 内の指定した場所にコピーされます。
 
 ## <a name="see-also"></a>関連項目
-- [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

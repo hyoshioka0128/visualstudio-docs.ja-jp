@@ -1,7 +1,7 @@
 ---
-title: '方法: 追加または SharePoint 接続の削除 |Microsoft Docs'
+title: SharePoint 接続を追加または削除する方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,34 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435482"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014575"
 ---
-# <a name="how-to-add-or-remove-sharepoint-connections"></a>方法: 追加または SharePoint 接続の削除
-  サーバー エクスプ ローラーを使用して、データ接続と同様に SharePoint サイトを参照できます。 ただし、SharePoint サイトの内容を参照する前にする必要があります追加、 **SharePoint 接続**ノード。
+# <a name="how-to-add-or-remove-sharepoint-connections"></a>方法: SharePoint 接続を追加または削除する
+  サーバーエクスプローラーを使用すると、データ接続だけでなく SharePoint サイトを参照することもできます。 ただし、SharePoint サイトのコンテンツを参照するには、sharepoint の [**接続**] ノードに sharepoint サイトを追加する必要があります。
 
-### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>SharePoint 接続 ノードに、SharePoint サイトを追加するには
+### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>Sharepoint サイトを SharePoint 接続ノードに追加するには
 
-1. メニュー バーで、**ビュー**、**サーバー エクスプ ローラー**します。
+1. メニューバーで、[**表示**]、[**サーバーエクスプローラー**] の順に選択します。
 
-2. **サーバー エクスプ ローラー**、選択、 **SharePoint 接続**ノードで、次に、メニュー バーで、次のように選択します**ツール** > **SharePoint の追加。接続**します。
+2. **サーバーエクスプローラー**で、[ **sharepoint 接続**] ノードを選択し、メニューバーで [**ツール**] [  >  **sharepoint 接続の追加**] の順に選択します。
 
-3. **SharePoint 接続の追加**ボックスに、入力、 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 、SharePoint サイトの (たとえば、 http://testserver/sites/unittests)します。
+3. [ **Sharepoint 接続の追加**] ボックスに、sharepoint サイトのを入力します (例については、「」を入力し [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] http://testserver/sites/unittests) ます)。
 
-### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>SharePoint 接続 ノードから SharePoint サイトを削除するには
+### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>Sharepoint 接続ノードから SharePoint サイトを削除するには
 
-1. メニュー バーで、**ビュー**、**サーバー エクスプ ローラー**を開く**サーバー エクスプ ローラー**します。
+1. メニューバーで [**表示**] を選択し、[**サーバーエクスプローラー** ] をクリックして**サーバーエクスプローラー**を開きます。
 
-2. 展開、 **SharePoint 接続**から削除する SharePoint サイトを表示するノード**サーバー エクスプ ローラー**します。
+2. [ **Sharepoint 接続**] ノードを展開して、**サーバーエクスプローラー**から削除する sharepoint サイトを表示します。
 
-3. サイトを選択し、メニュー バーで、次のように選択します。**編集** > **削除**します。
+3. サイトを選択し、メニューバーで [削除の**編集**] を選択し  >  **Delete**ます。
 
     > [!NOTE]
-    > この手順は、基になるサイトを削除しません。接続のみを削除します**サーバー エクスプ ローラー**します。
+    > この手順では、基になるサイトは削除されません。**サーバーエクスプローラー**からの接続のみが削除されます。
 
 ## <a name="see-also"></a>関連項目
-- [サーバー エクスプ ローラーを使用した SharePoint 接続を参照します。](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [サーバーエクスプローラーを使用した SharePoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

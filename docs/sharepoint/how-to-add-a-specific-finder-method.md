@@ -1,7 +1,7 @@
 ---
 title: '方法: 特定の Finder メソッドを追加する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985259"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014814"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>方法: 特定の Finder メソッドを追加する
   *特定の Finder*メソッドを作成することによって、1つのエンティティインスタンスを返すことができます。 Business data Connectivity (BDC) サービスは、ユーザーがビジネスデータ web パーツまたは外部リストでエンティティを選択したときに、特定の Finder メソッドを実行します。 詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -33,13 +32,13 @@ ms.locfileid: "72985259"
 
     Visual Studio で**BDC デザイナー**にエンティティを追加する方法の詳細については、「[方法: モデルにエンティティを追加](../sharepoint/how-to-add-an-entity-to-a-model.md)する」を参照してください。
 
-2. メニューバーで、[**表示** > **その他のウィンドウ**]、 **[BDC メソッドの詳細]** の順に選択します。
+2. メニューバーで、[ **View**  >  **他のウィンドウ**を表示]、[ **BDC メソッドの詳細**] の順に選択します。
 
-    **[BDC メソッドの詳細]** ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
+    [ **BDC メソッドの詳細**] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
-3. **[メソッドの追加]** の一覧で、 **[特定の Finder メソッドの作成]** を選択します。
+3. [**メソッドの追加**] の一覧で、[**特定の Finder メソッドの作成**] を選択します。
 
-    Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、 **[BDC メソッドの詳細]** ウィンドウに表示されます。
+    Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、[ **BDC メソッドの詳細**] ウィンドウに表示されます。
 
    - メソッド。
 
@@ -53,7 +52,7 @@ ms.locfileid: "72985259"
 
      詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
-4. Visual Studio の **[プロパティ]** ウィンドウを開きます。
+4. Visual Studio の [**プロパティ**] ウィンドウを開きます。
 
 5. 戻りパラメーターの型記述子をエンティティ型記述子として構成します。 エンティティ型記述子を作成する方法の詳細については、「[方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
 
@@ -63,15 +62,15 @@ ms.locfileid: "72985259"
    > [!NOTE]
    > エンティティ型の識別子フィールドが、自動的に生成されたデータベーステーブル内のフィールドを表している場合は、[識別子] フィールドの**読み取り**専用プロパティを**True**に設定します。
 
-6. **[メソッドの詳細]** ウィンドウで、メソッドのメソッドインスタンスを選択します。
+6. [**メソッドの詳細**] ウィンドウで、メソッドのメソッドインスタンスを選択します。
 
-7. [**プロパティ] ウィンドウ**で、 **[パラメーター名の戻り]** プロパティをメソッドの戻りパラメーターの名前に設定します。 メソッドインスタンスのプロパティの詳細については、「 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))」を参照してください。
+7. [**プロパティ] ウィンドウ**で、[**パラメーター名の戻り**] プロパティをメソッドの戻りパラメーターの名前に設定します。 メソッドインスタンスのプロパティの詳細については、「 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))」を参照してください。
 
-8. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、 **[コードの表示]** を選択します。
+8. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
 
     コードエディターで entity service コードファイルが開きます。 Entity service コードファイルの詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
-9. 特定の Finder メソッドにコードを追加します。 このコードは次のタスクを実行します。
+9. 特定の Finder メソッドにコードを追加します。 このコードは、以下のタスクを実行します。
 
    - データソースからレコードを取得します。
 
@@ -80,7 +79,7 @@ ms.locfileid: "72985259"
      次の例では、SQL Server の AdventureWorks サンプルデータベースから連絡先を返します。
 
      > [!NOTE]
-     > `ServerName` フィールドの値をサーバーの名前に置き換えます。
+     > フィールドの値を `ServerName` サーバーの名前に置き換えます。
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
