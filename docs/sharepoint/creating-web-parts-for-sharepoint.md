@@ -1,7 +1,7 @@
 ---
 title: SharePoint 用の Web パーツを作成する |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -23,12 +23,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984479"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015052"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint の web パーツの作成
   Web パーツを作成すると、SharePoint サイト ページのコンテンツ、外観、および動作をユーザーがブラウザーから変更できます。 Web パーツは、Web パーツ ページ内で実行されるサーバー側コントロールです。SharePoint サイトに表示されるページはこれらの Web パーツで構成されます。 「[ビルディングブロック: Web パーツ](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))」を参照してください。
@@ -45,17 +44,17 @@ ms.locfileid: "72984479"
 
 |ファイル|説明|
 |----------|-----------------|
-|*Elements .xml*|Web パーツを配置する際、プロジェクトのフィーチャー定義ファイルで使用する情報が格納されます。|
+|*Elements.xml*|Web パーツを配置する際、プロジェクトのフィーチャー定義ファイルで使用する情報が格納されます。|
 |.webpart ファイル|SharePoint の Web パーツ ギャラリーに Web パーツを表示するために必要な情報を指定します。|
 |コード ファイル|Web パーツにコントロールを追加するメソッド、および Web パーツ内にカスタム コンテンツを生成するメソッドが保存されます。|
 
  詳細については、「[方法: SharePoint web パーツを作成](../sharepoint/how-to-create-a-sharepoint-web-part.md)する」を参照してください。
 
 ### <a name="visual-web-part-item"></a>視覚的 web パーツ項目
- 視覚的 Web パーツは、Visual Studio の Visual Web Developer デザイナーを使用して作成する Web パーツです。 視覚的 Web パーツの機能は他の Web パーツと同じです。 ボタンやテキスト ボックスなどのコントロールを Web パーツに追加するときは、XML ファイルにコードを追加します。 ただし、ビジュアル web パーツにコントロールを追加するには、visual Studio の **[ツールボックス]** から web パーツにコントロールをドラッグまたはコピーします。 その後、XML ファイルで必要なコードを生成します。 「[方法: デザイナーを使用して SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)」を参照してください。
+ 視覚的 Web パーツは、Visual Studio の Visual Web Developer デザイナーを使用して作成する Web パーツです。 視覚的 Web パーツの機能は他の Web パーツと同じです。 ボタンやテキスト ボックスなどのコントロールを Web パーツに追加するときは、XML ファイルにコードを追加します。 ただし、ビジュアル web パーツにコントロールを追加するには、visual Studio の [**ツールボックス**] から web パーツにコントロールをドラッグまたはコピーします。 その後、XML ファイルで必要なコードを生成します。 「[方法: デザイナーを使用して SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)」を参照してください。
 
 ## <a name="sharepoint-controls"></a>SharePoint コントロール
- Visual Studio には、アプリケーションのページなど、SharePoint ページを作成するためのコントロールが用意されています。 これらのコントロールは、 **[ツールボックス]** の **[SharePoint コントロール]** の下に表示されます。 これらのコントロールの機能は、 [WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15))名前空間から派生します。この名前空間には、sharepoint サイトおよびリストページで使用される ASP.NET サーバーコントロールが含まれています。
+ Visual Studio には、アプリケーションのページなど、SharePoint ページを作成するためのコントロールが用意されています。 これらのコントロールは、[**ツールボックス**] の [ **SharePoint コントロール**] の下に表示されます。 これらのコントロールの機能は、 [WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15))名前空間から派生します。この名前空間には、sharepoint サイトおよびリストページで使用される ASP.NET サーバーコントロールが含まれています。
 
 |コントロール名|説明|
 |------------------|-----------------|
@@ -108,7 +107,7 @@ ms.locfileid: "72984479"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|Title|[説明]|
 |-----------|-----------------|
 |[方法: SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part.md)|SharePoint ページの Web パーツを作成する方法について説明します。|
 |[方法: デザイナーを使用して SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|視覚的なデザイン サーフェイスを使用して、SharePoint の Web パーツを作成する方法について説明します。|

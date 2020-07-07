@@ -1,7 +1,7 @@
 ---
-title: カスタム SharePoint プロジェクト項目の種類のショートカット メニュー項目を追加します。
+title: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,47 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95c47cdc00fc9035870aed4ac2e0bee4d3c1c5af
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: eef99509048b1dd54576a20449b9d4f51c11439e
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401630"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014876"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>方法: カスタム SharePoint プロジェクト項目の種類のショートカット メニュー項目を追加します。
-  カスタム SharePoint プロジェクト項目の種類を定義するときに、プロジェクト項目にショートカット メニュー項目を追加できます。 プロジェクト項目を右クリックしたときに、メニュー項目が表示されます**ソリューション エクスプ ローラー**します。
+# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する
+  カスタム SharePoint プロジェクト項目の種類を定義すると、ショートカットメニュー項目をプロジェクト項目に追加できます。 メニュー項目は、ユーザーが**ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
 
- 次の手順では、独自の SharePoint プロジェクト項目の種類が既に定義されている前提としています。 詳細については、「[方法 :SharePoint プロジェクト項目の種類定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)します。
+ 次の手順では、独自の SharePoint プロジェクトアイテムの種類が既に定義されていることを前提としています。 詳細については、「[方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。
 
-### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>カスタム プロジェクト項目の種類にショートカット メニュー項目を追加するには
+### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>ショートカットメニュー項目をカスタムプロジェクト項目の種類に追加するには
 
-1. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>のメソッド、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>実装、ハンドル、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>のイベント、 *projectItemTypeDefinition*パラメーター。
+1. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> *projectItemTypeDefinition*パラメーターのイベントを処理します。
 
-2. イベント ハンドラーで、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>イベントを追加する新しい<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>オブジェクトを<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A>または<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A>イベント引数のパラメーターのコレクション。
+2. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> 、 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> イベント引数パラメーターのコレクションまたはコレクションに新しいオブジェクトを追加します。
 
-3. <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新しいイベント ハンドラー<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>オブジェクト、ユーザーは、ショートカット メニュー項目を選択したときに実行するタスクを実行します。
+3. <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新しいオブジェクトのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> 、ユーザーがショートカットメニュー項目を選択したときに実行するタスクを実行します。
 
 ## <a name="example"></a>例
- 次のコード例では、カスタム プロジェクト項目の種類をコンテキスト メニュー項目を追加する方法を示します。 ユーザーが内のプロジェクト項目からショートカット メニューを開く場合**ソリューション エクスプ ローラー**を選択し、**出力ウィンドウにメッセージを書き込む**メニュー項目では、Visual Studio でのメッセージが表示されます、**出力**ウィンドウ。
+ 次のコード例は、カスタムプロジェクト項目の種類にコンテキストメニュー項目を追加する方法を示しています。 ユーザーが**ソリューションエクスプローラー**のプロジェクト項目からショートカットメニューを開き、[**出力ウィンドウにメッセージを書き込む**] メニュー項目を選択すると、Visual Studio によって**出力**ウィンドウにメッセージが表示されます。
 
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs#4)]
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb#4)]
 
- この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウ。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
+ この例では、SharePoint プロジェクトサービスを使用して、**出力**ウィンドウにメッセージを書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
- この例では、次のアセンブリへの参照を含むクラス ライブラリ プロジェクトが必要です。
+ この例では、次のアセンブリへの参照を含むクラスライブラリプロジェクトが必要です。
 
 - Microsoft.VisualStudio.SharePoint
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-project-item"></a>プロジェクト項目を配置します。
- 他の開発者が自分のプロジェクト項目を有効にするには、プロジェクト テンプレートまたはプロジェクト項目テンプレートを作成します。 詳細については、次を参照してください。[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)します。
+## <a name="deploy-the-project-item"></a>プロジェクト項目を配置する
+ 他の開発者がプロジェクト項目を使用できるようにするには、プロジェクトテンプレートまたはプロジェクト項目テンプレートを作成します。 詳細については、「 [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)」を参照してください。
 
- プロジェクト項目を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]拡張機能 (VSIX) に、アセンブリ、テンプレート、およびその他のファイル プロジェクト項目に配布するパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ プロジェクト項目を配置するには、 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリ、テンプレート、およびプロジェクト項目と共に配布するその他のファイルの拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法: SharePoint プロジェクト項目の種類を定義します。](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
-- [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加します。](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-- [カスタム SharePoint プロジェクト項目の種類を定義します。](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [方法: SharePoint プロジェクト項目の種類を定義する](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+- [方法: プロパティをカスタム SharePoint プロジェクト項目の種類に追加する](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+- [カスタム SharePoint プロジェクト項目の種類の定義](../sharepoint/defining-custom-sharepoint-project-item-types.md)

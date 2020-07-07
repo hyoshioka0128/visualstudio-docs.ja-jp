@@ -1,7 +1,7 @@
 ---
 title: 'チュートリアル: SharePoint プロジェクト拡張機能の作成 |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,195 +14,194 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MT
+ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825804"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015079"
 ---
-# <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能を作成します。
-  このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクトの拡張機能を使用すると、プロジェクトを追加、削除、または名前を変更する場合など、プロジェクト レベルのイベントに応答します。 カスタム プロパティを追加またはプロパティ値を変更するときの応答もできます。 プロジェクト項目の拡張機能とは異なりプロジェクト拡張機能は、特定の SharePoint プロジェクトの種類に関連付けすることはできません。 任意の種類の SharePoint プロジェクトを開いたときに、拡張機能を読み込むプロジェクトの拡張機能を作成するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能の作成
+  このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクト拡張機能を使用して、プロジェクトが追加、削除、または名前変更されたときなどのプロジェクトレベルのイベントに応答できます。 また、カスタムプロパティを追加したり、プロパティ値が変更したときに応答したりすることもできます。 プロジェクト項目の拡張機能とは異なり、プロジェクトの拡張機能を特定の SharePoint プロジェクトの種類に関連付けることはできません。 プロジェクト拡張機能を作成すると、で任意の種類の SharePoint プロジェクトが開かれたときに、拡張機能が読み込まれ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
- このチュートリアルで作成された SharePoint プロジェクトに追加されるカスタムのブール型プロパティを作成します[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 設定すると**True**、新しいプロパティを追加、または、プロジェクトのイメージ リソース フォルダーにマップします。 設定すると**False**、Images フォルダーを削除、存在する場合。 詳細については、次を参照してください。[方法: 追加すると、マップされたフォルダーを削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)します。
+ このチュートリアルでは、「」で作成した任意の SharePoint プロジェクトに追加されるカスタムのブール型プロパティを作成し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 **True**に設定すると、新しいプロパティによって、Images リソースフォルダーがプロジェクトに追加またはマップされます。 **False**に設定すると、Images フォルダーが存在する場合は削除されます。 詳細については、「[方法: マップされたフォルダーを追加および削除](../sharepoint/how-to-add-and-remove-mapped-folders.md)する」を参照してください。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- 作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]実行すると、次の SharePoint プロジェクト拡張機能。
+- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint プロジェクト用の拡張機能を作成し、次の手順を実行します。
 
-  - [プロパティ] ウィンドウには、カスタムのプロジェクトのプロパティを追加します。 プロパティは、任意の SharePoint プロジェクトに適用されます。
+  - カスタムプロジェクトプロパティをプロパティウィンドウに追加します。 プロパティは、任意の SharePoint プロジェクトに適用されます。
 
-  - SharePoint プロジェクト オブジェクト モデルを使用すると、プロジェクトにマップされたフォルダーを追加します。
+  - は、SharePoint プロジェクトオブジェクトモデルを使用して、マップされたフォルダーをプロジェクトに追加します。
 
-  - 使用して、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]オートメーション オブジェクト モデル (DTE) をプロジェクトからマップされたフォルダーを削除します。
+  - は、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] オートメーションオブジェクトモデル (DTE) を使用して、マップされたフォルダーをプロジェクトから削除します。
 
-- 構築、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) パッケージ、プロジェクト プロパティの拡張機能アセンブリを展開します。
+- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]プロジェクトプロパティの拡張機能アセンブリを配置するための拡張機能 (VSIX) パッケージをビルドする。
 
-- デバッグとプロジェクトのプロパティをテストします。
+- プロジェクトプロパティのデバッグとテスト。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
 
-- サポート対象エディションの[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]、SharePoint と[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+- 、SharePoint、およびのサポートされているエディション [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、 **VSIX プロジェクト**テンプレート、[!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)]プロジェクト プロパティの拡張機能を配置するための VSIX パッケージを作成します。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、の**Vsix プロジェクト**テンプレートを使用して、 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] プロジェクトのプロパティ拡張機能を配置するための vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
-## <a name="create-the-projects"></a>プロジェクトを作成します。
- このチュートリアルを完了するには、2 つのプロジェクトを作成する必要があります。
+## <a name="create-the-projects"></a>プロジェクトを作成する
+ このチュートリアルを完了するには、次の2つのプロジェクトを作成する必要があります。
 
-- プロジェクトの拡張機能を配置するための VSIX パッケージを作成する VSIX プロジェクト。
+- プロジェクト拡張機能を配置する VSIX パッケージを作成するための VSIX プロジェクト。
 
-- プロジェクトの拡張機能を実装するクラス ライブラリ プロジェクト。
+- プロジェクト拡張機能を実装するクラスライブラリプロジェクト。
 
   この 2 つのプロジェクトを作成することから始めます。
 
 #### <a name="to-create-the-vsix-project"></a>VSIX プロジェクトを作成するには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を起動します。
 
 2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
+3. [**新しいプロジェクト**] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[**機能拡張**] ノードを選択します。
 
     > [!NOTE]
-    > このノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > このノードは、Visual Studio SDK をインストールした場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
-4. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5** 、.NET Framework のバージョンの一覧で選択し、 **VSIX プロジェクト**テンプレート。
+4. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 4.5** ] を選択し、[ **VSIX プロジェクト**] テンプレートを選択します。
 
-5. **名前**ボックスに、入力**ProjectExtensionPackage**、選択し、 **OK**ボタン。
+5. [**名前**] ボックスに「 **projectextensionpackage**」と入力し、[ **OK** ] をクリックします。
 
-     **ProjectExtensionPackage**プロジェクトに表示されます**ソリューション エクスプ ローラー**します。
+     **Projectextensionpackage**プロジェクトが**ソリューションエクスプローラー**に表示されます。
 
 #### <a name="to-create-the-extension-project"></a>拡張機能プロジェクトを作成するには
 
-1. **ソリューション エクスプ ローラー**、ソリューション ノードのショートカット メニューを開き、**追加**を選び、**新しいプロジェクト**します。
+1. **ソリューションエクスプローラー**で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
 
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選び、 **Windows**します。
+2. [**新しいプロジェクト**] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **Windows**] を選択します。
 
-3. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5** 、.NET Framework のバージョンの一覧で選択し、**クラス ライブラリ**プロジェクト テンプレート。
+3. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 4.5** ] を選択し、[**クラスライブラリ**] プロジェクトテンプレートを選択します。
 
-4. **名前**ボックスに、入力**ProjectExtension**、選択し、 **OK**ボタン。
+4. [**名前**] ボックスに「 **projectextension**」と入力し、[ **OK** ] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **ProjectExtension**プロジェクトがソリューションにし、既定の Class1 コード ファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Projectextension**プロジェクトをソリューションに追加し、既定の Class1 コードファイルを開きます。
 
 5. Class1 コード ファイルをプロジェクトから削除します。
 
 ## <a name="configure-the-project"></a>プロジェクトを構成する
- プロジェクトの拡張機能を作成するコードを記述する前に、コード ファイルと拡張機能プロジェクトにアセンブリ参照を追加します。
+ プロジェクト拡張機能を作成するコードを記述する前に、コードファイルとアセンブリ参照を拡張機能プロジェクトに追加します。
 
 #### <a name="to-configure-the-project"></a>プロジェクトを構成するには
 
-1. というコード ファイルを追加**CustomProperty** ProjectExtension プロジェクトへです。
+1. **Customproperty**という名前のコードファイルを projectextension プロジェクトに追加します。
 
-2. ショートカット メニューを開き、 **ProjectExtension**プロジェクトを選び、**参照の追加**します。
+2. **Projectextension**プロジェクトのショートカットメニューを開き、[参照の**追加**] を選択します。
 
-3. **参照マネージャー - CustomProperty**  ダイアログ ボックスで、選択、 **Framework**ノード、し、System.ComponentModel.Composition および System.Windows.Forms アセンブリの横にあるチェック ボックスを選択します。
+3. [**参照マネージャー-CustomProperty** ] ダイアログボックスで、[ **Framework** ] ノードを選択し、system.componentmodel アセンブリおよび system.string アセンブリの横にあるチェックボックスをオンにします。
 
-4. 選択、**拡張機能**ノードが、Microsoft.VisualStudio.SharePoint および EnvDTE アセンブリの横にあるチェック ボックスを選択し、、 **OK**ボタン。
+4. [**拡張機能**] ノードを選択し、VisualStudio アセンブリと EnvDTE アセンブリの横にあるチェックボックスをオンにして、[ **OK** ] をクリックします。
 
-5. **ソリューション エクスプ ローラー**下で、**参照**のフォルダー、 **ProjectExtension**プロジェクトで、選択**EnvDTE**します。
+5. **ソリューションエクスプローラー**で、 **projectextension**プロジェクトの [**参照**] フォルダーの下にある [ **EnvDTE**] を選択します。
 
-6. **プロパティ**ウィンドウで、変更、 **Embed Interop Types**プロパティを**False**します。
+6. [**プロパティ**] ウィンドウで、[**相互運用機能型の埋め込み**] プロパティを**False**に変更します。
 
-## <a name="define-the-new-sharepoint-project-property"></a>新しい SharePoint プロジェクトのプロパティを定義します。
- プロジェクトの拡張機能と、新しいプロジェクト プロパティの動作を定義するクラスを作成します。 新しいプロジェクトの拡張機能をクラスが実装を定義する、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>インターフェイス。 SharePoint プロジェクトの拡張機能を定義するときに、このインターフェイスを実装します。 また、追加、<xref:System.ComponentModel.Composition.ExportAttribute>クラスにします。 この属性により、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>属性のコンス トラクターを型。
+## <a name="define-the-new-sharepoint-project-property"></a>新しい SharePoint プロジェクトプロパティの定義
+ プロジェクトの拡張機能と新しいプロジェクトプロパティの動作を定義するクラスを作成します。 新しいプロジェクトの拡張機能を定義するために、クラスはインターフェイスを実装し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> ます。 SharePoint プロジェクトの拡張機能を定義する場合は、常にこのインターフェイスを実装します。 また、を <xref:System.ComponentModel.Composition.ExportAttribute> クラスに追加します。 この属性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を使用すると、で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 属性のコンストラクターに渡します。
 
-#### <a name="to-define-the-new-sharepoint-project-property"></a>新しい SharePoint プロジェクトのプロパティを定義するには
+#### <a name="to-define-the-new-sharepoint-project-property"></a>新しい SharePoint プロジェクトプロパティを定義するには
 
-1. CustomProperty のコード ファイルには、次のコードを貼り付けます。
+1. 次のコードを CustomProperty コードファイルに貼り付けます。
 
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
 
 ## <a name="build-the-solution"></a>ソリューションをビルドする
- 次に、エラーなしにコンパイルできるかどうかを確認するソリューションをビルドします。
+ 次に、ソリューションをビルドして、エラーを発生させずにコンパイルされるようにします。
 
 #### <a name="to-build-the-solution"></a>ソリューションをビルドするには
 
 1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
-## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>プロジェクト プロパティの拡張機能を配置するための VSIX パッケージを作成します。
- プロジェクトの拡張機能をデプロイするのにには、VSIX パッケージを作成するのにソリューションで VSIX プロジェクトを使用します。 まず、VSIX プロジェクトに含まれている source.extension.vsixmanifest ファイルを変更して、VSIX パッケージを構成します。 次に、ソリューションをビルドして VSIX パッケージを作成します。
+## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>プロジェクトプロパティ拡張機能を配置するための VSIX パッケージの作成
+ プロジェクト拡張機能を配置するには、ソリューションで VSIX プロジェクトを使用して VSIX パッケージを作成します。 まず、VSIX プロジェクトに含まれている source.extension.vsixmanifest ファイルを変更して、VSIX パッケージを構成します。 次に、ソリューションをビルドして VSIX パッケージを作成します。
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>VSIX パッケージを構成および作成するには
 
-1. **ソリューション エクスプ ローラー**、source.extension.vsixmanifest ファイルのショートカット メニューを開き、選択し、**開く**ボタンをクリックします。
+1. **ソリューションエクスプローラー**で、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[**開く**] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マニフェスト デザイナーでファイルを開きます。 表示される情報、**メタデータ**にも表示されます タブ、**拡張機能と更新**します。 すべての VSIX パッケージには、extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]マニフェストデザイナーでファイルを開きます。 [**メタデータ**] タブに表示される情報は、**拡張機能と更新プログラム**にも表示されます。 すべての VSIX パッケージには source.extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
 
-2. **製品名**ボックスに、入力**プロジェクトのプロパティをカスタム**します。
+2. [**製品名**] ボックスに、「**カスタムプロジェクトプロパティ**」と入力します。
 
-3. **作成者**ボックスに、入力**Contoso**します。
+3. [**作成者**] ボックスに「 **Contoso**」と入力します。
 
-4. **説明**ボックスに、入力**カスタム SharePoint プロジェクト プロパティをプロジェクトにイメージ リソース フォルダーのマッピングを切り替える**します。
+4. [**説明**] ボックスに、 **Images リソースフォルダーのプロジェクトへのマッピングを切り替えるカスタム SharePoint プロジェクトプロパティ**を入力します。
 
-5. 選択、**資産**、タブをクリックして、**新規**ボタンをクリックします。
+5. [**アセット**] タブを選択し、[**新規作成**] をクリックします。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     [**新しい資産の追加**] ダイアログボックスが表示されます。
 
-6. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
+6. [**種類**] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
     > [!NOTE]
-    > この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-7. **ソース**一覧で、選択、**現在のソリューションでプロジェクトを**オプション ボタンをクリックします。
+7. [**ソース**] ボックスの一覧で、[**現在のソリューション内のプロジェクトを表示する**] オプションボタンをクリックします。
 
-8. **プロジェクト**一覧で、選択**ProjectExtension**します。
+8. [**プロジェクト**] ボックスの一覧で、[ **projectextension**] を選択します。
 
      この値は、プロジェクトでビルドしているアセンブリの名前を識別します。
 
-9. 選択**OK**を閉じる、**新しい資産の追加** ダイアログ ボックス。
+9. [ **OK]** を選択して [**新しい資産の追加**] ダイアログボックスを閉じます。
 
-10. メニュー バーで、**ファイル** > **すべてを保存**を完了し、マニフェスト デザイナーを閉じます。
+10. メニューバーで、[**ファイル**] [すべてを保存] の順に選択し、完了したら  >  **Save All**マニフェストデザイナーを閉じます。
 
-11. メニュー バーで、**ビルド** > **ソリューションのビルド**のエラーのないプロジェクトをコンパイルできるかどうかを確認します。
+11. メニューバーで [ビルド] [ソリューションの**ビルド**] の順に選択し、  >  **Build Solution**プロジェクトがエラーなしでコンパイルされることを確認します。
 
-12. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ProjectExtensionPackage**プロジェクトを選び、**ファイル エクスプ ローラーでフォルダーを開く**ボタンをクリックします。
+12. **ソリューションエクスプローラー**で、 **projectextensionpackage**プロジェクトのショートカットメニューを開き、[**エクスプローラーでフォルダーを開く**] ボタンをクリックします。
 
-13. **ファイル エクスプ ローラー**ProjectExtensionPackage プロジェクトのビルド出力フォルダーを開きのフォルダーに ProjectExtensionPackage.vsix がという名前のファイルが含まれていることを確認します。
+13. **ファイルエクスプローラー**で、projectextensionpackage プロジェクトのビルド出力フォルダーを開き、フォルダーに projectextensionpackage .vsix という名前のファイルが含まれていることを確認します。
 
      既定では、ビルド出力フォルダーは ..\bin\Debug で、プロジェクト ファイルが格納されているフォルダーの下にあります。
 
-## <a name="test-the-project-property"></a>テスト プロジェクトのプロパティ
- カスタム プロジェクトのプロパティをテストする準備ができました。 デバッグおよびの実験用インスタンスで新しいプロジェクト プロパティの拡張機能をテストする最も簡単[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 このインスタンスの[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSIX またはその他の機能拡張プロジェクトを実行するときに作成されます。 プロジェクトをデバッグした後は、システムに拡張機能のインストールし、デバッグの通常のインスタンスでテストを続行し、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+## <a name="test-the-project-property"></a>プロジェクトプロパティのテスト
+ これで、カスタムプロジェクトのプロパティをテストする準備ができました。 の実験用インスタンスで、新しいプロジェクトプロパティ拡張機能のデバッグとテストを行うのが最も簡単です [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 こののインスタンス [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は、VSIX または他の機能拡張プロジェクトを実行すると作成されます。 プロジェクトをデバッグした後、拡張機能をシステムにインストールし、の通常のインスタンスでデバッグとテストを続行でき [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
-#### <a name="to-debug-and-test-the-extension-in-an-experimental-instance-of-visual-studio"></a>デバッグおよび Visual Studio の実験用インスタンスで、拡張機能をテストするには
+#### <a name="to-debug-and-test-the-extension-in-an-experimental-instance-of-visual-studio"></a>Visual Studio の実験用インスタンスで拡張機能をデバッグおよびテストするには
 
-1. 再起動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]管理者の資格情報と ProjectExtensionPackage ソリューションを開きます。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]管理者資格情報で再起動し、ProjectExtensionPackage ソリューションを開きます。
 
-2. いずれかを選択して、プロジェクトのデバッグ ビルドを開始、 **F5**キーか、メニュー バーで**デバッグ** > **デバッグの開始**します。
+2. **F5**キーを押すか、メニューバーで [**デバッグ**] [  >  **デバッグの開始**] の順に選択して、プロジェクトのデバッグビルドを開始します。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom プロジェクト Property\1.0 に拡張をインストールしの実験用インスタンスを起動する[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom プロジェクトの Property/1.0 に拡張機能をインストールし、の実験用インスタンスを開始し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
-3. 実験用インスタンスで[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ファーム ソリューションでは、SharePoint プロジェクトを作成し、ウィザードの他の値の既定値を使用します。
+3. の実験用インスタンスで、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ファームソリューション用の SharePoint プロジェクトを作成し、ウィザードのその他の値に既定値を使用します。
 
     1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-    2. 上部にある、**新しいプロジェクト** ダイアログ ボックスで、選択 **.NET Framework 3.5**で .NET Framework のバージョンの一覧。
+    2. [**新しいプロジェクト**] ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 3.5** ] を選択します。
 
-         このバージョンの機能を SharePoint ツール拡張機能が必要、[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]します。
+         SharePoint ツール拡張機能には、このバージョンのの機能が必要 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] です。
 
-    3. 下、**テンプレート**ノード、展開、 **Visual c#** または**Visual Basic**ノードで、選択、 **SharePoint**ノード、を選択し**2010**ノード。
+    3. [**テンプレート**] ノードで、[ **Visual C#** ] または [ **Visual Basic** ] ノードを展開し、[ **SharePoint** ] ノードを選択してから、[ **2010** ] ノードを選択します。
 
-    4. 選択、 **SharePoint 2010 プロジェクト**テンプレート、し、入力**ModuleTest**として、プロジェクトの名前。
+    4. [ **SharePoint 2010] プロジェクト**テンプレートを選択し、プロジェクトの名前として「 **moduletest** 」と入力します。
 
-4. **ソリューション エクスプ ローラー**、選択、 **ModuleTest**プロジェクト ノード。
+4. **ソリューションエクスプローラー**で、 **moduletest**プロジェクトノードを選択します。
 
-     新しいカスタム プロパティ**マップ イメージ フォルダー**に表示されます、**プロパティ**ウィンドウで、既定値は**False**します。
+     新しいカスタムプロパティ**マップイメージフォルダー**が [**プロパティ**] ウィンドウに表示され、既定値は**False**になります。
 
-5. そのプロパティの値を変更**True**します。
+5. そのプロパティの値を**True**に変更します。
 
-     イメージのリソース フォルダーは、SharePoint プロジェクトに追加されます。
+     Images リソースフォルダーが SharePoint プロジェクトに追加されます。
 
-6. そのプロパティの値に戻して**False**します。
+6. そのプロパティの値を**False**に戻します。
 
-     選択した場合、 **[はい]** ボタン、 **Images フォルダーを削除しますか?** ダイアログ ボックスで、イメージのリソース フォルダーは、SharePoint プロジェクトから削除します。
+     [**画像フォルダーを削除しますか?** ] ダイアログボックスの **[はい**] をクリックすると、Images リソースフォルダーが SharePoint プロジェクトから削除されます。
 
 7. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の実験用インスタンスを閉じます。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint プロジェクトを拡張します。](../sharepoint/extending-sharepoint-projects.md)
-- [方法: SharePoint プロジェクトにプロパティを追加します。](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
-- [SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間の変換します。](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [SharePoint プロジェクト システムの拡張機能でデータを保存します。](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
-- [SharePoint ツール拡張機能とカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
+- [SharePoint プロジェクトの拡張](../sharepoint/extending-sharepoint-projects.md)
+- [方法: SharePoint プロジェクトにプロパティを追加する](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
+- [SharePoint プロジェクトシステムの拡張機能にデータを保存する](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
+- [カスタムデータと SharePoint ツールの拡張機能の関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)

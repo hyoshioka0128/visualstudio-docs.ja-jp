@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint プロジェクト項目の追加 |Microsoft Docs'
+title: '方法: SharePoint プロジェクトに項目を追加する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,39 +12,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966953"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014700"
 ---
-# <a name="how-to-add-items-to-a-sharepoint-project"></a>方法: SharePoint プロジェクトに項目を追加します。
-  SharePoint ソリューションには、複数の SharePoint プロジェクト項目を含む 1 つまたは複数のプロジェクトが含まれます。 開くまたは SharePoint ソリューションを作成した後は、これらのプロジェクトを新規または既存の項目を追加できます。 たとえば、default.aspx という名前の既定のフォーム付属して新しいワークフロー プロジェクトが、新規または別のフォームそのフォームを置き換えるか、もう 1 つの ASPX のフォームを追加することができます。
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>方法: SharePoint プロジェクトに項目を追加する
+  SharePoint ソリューションには1つ以上のプロジェクトが含まれており、それぞれに複数の SharePoint プロジェクト項目が含まれています。 SharePoint ソリューションを開いたり作成したりした後、これらのプロジェクトに新規または既存の項目を追加できます。 たとえば、新しいワークフロープロジェクトには default.aspx という名前の既定のフォームが付属していますが、そのフォームを新しい形式または別の形式に置き換えることも、別の ASPX フォームを追加することもできます。
 
-### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>SharePoint ソリューションに新しいプロジェクト項目を追加するには
+### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>SharePoint ソリューションに新しいプロジェクトアイテムを追加するには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を開くか、SharePoint ソリューションを作成します。
+1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、SharePoint ソリューションを開くか作成します。
 
-2. **ソリューション エクスプ ローラー**プロジェクトのノードを選択します。
+2. **ソリューションエクスプローラー**で、プロジェクトのノードを選択します。
 
-3. メニュー バーで、**プロジェクト** > **新しい項目の追加**を表示する、**新しい項目の追加** ダイアログ ボックス。
+3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択し、[**新しい項目の追加**] ダイアログボックスを表示します。
 
-4. **インストールされたテンプレート**一覧で、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+4. [**インストールされたテンプレート**] の一覧で [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
-5. プロジェクト項目テンプレートの一覧でテンプレートを選択します。
+5. プロジェクト項目テンプレートの一覧で、テンプレートを選択します。
 
-6. **名前**テキスト ボックスに、名前を入力し、、 **OK**ボタンをクリックします。
+6. [**名前**] テキストボックスに名前を入力し、[ **OK** ] をクリックします。
 
-### <a name="to-add-an-existing-project-item-to-a-sharepoint-solution"></a>SharePoint ソリューションに既存のプロジェクト アイテムを追加するには
+### <a name="to-add-an-existing-project-item-to-a-sharepoint-solution"></a>既存のプロジェクトアイテムを SharePoint ソリューションに追加するには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を開くか、SharePoint ソリューションを作成します。
+1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、SharePoint ソリューションを開くか作成します。
 
-2. **ソリューション エクスプ ローラー**プロジェクトのノードを選択します。
+2. **ソリューションエクスプローラー**で、プロジェクトのノードを選択します。
 
-3. メニュー バーで、**プロジェクト** > **既存項目の追加**を表示する、**既存項目の追加** ダイアログ ボックス。
+3. メニューバーで、[**プロジェクト**] [既存項目の追加] の順に選択し  >  **Add Existing Item** 、[**既存項目の追加**] ダイアログボックスを表示します。
 
-4. 追加、それを選択し、選択する項目を含むフォルダーを参照し、**追加**ボタンをクリックします。
+4. 追加する項目が含まれているフォルダーを参照して選択し、[**追加**] ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)

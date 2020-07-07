@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint プロジェクト項目の拡張機能の作成 |Microsoft Docs'
+title: '方法: SharePoint プロジェクト項目の拡張機能を作成する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46b629227b1b3d73ee4bc6a265c867921937df2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 345bfa49da4bf5d5b73fe1d3f209675fe2814de2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966964"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015343"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能を作成します。
-  Visual Studio で既にインストールされている SharePoint プロジェクト アイテムに機能を追加する場合は、プロジェクト項目の拡張機能を作成します。 詳細については、次を参照してください。[拡張の SharePoint プロジェクト アイテム](../sharepoint/extending-sharepoint-project-items.md)します。
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能を作成する
+  Visual Studio に既にインストールされている SharePoint プロジェクト項目に機能を追加する場合は、プロジェクト項目の拡張機能を作成します。 詳細については、「 [SharePoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)」を参照してください。
 
 ### <a name="to-create-a-project-item-extension"></a>プロジェクト項目の拡張機能を作成するには
 
@@ -36,21 +35,21 @@ ms.locfileid: "62966964"
 
 3. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> インターフェイスを実装するクラスを作成します。
 
-4. クラスには、次の属性を追加します。
+4. クラスに次の属性を追加します。
 
-    - <xref:System.ComponentModel.Composition.ExportAttribute>。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>属性コンス トラクターの型。
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. この属性を使用すると、Visual Studio で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 プロジェクト項目の拡張機能では、この属性は、拡張するプロジェクト項目を識別します。 プロジェクト項目の ID は、属性コンス トラクターに渡します。 Visual Studio に含まれているプロジェクト項目の Id の一覧は、次を参照してください。[拡張の SharePoint プロジェクト アイテム](../sharepoint/extending-sharepoint-project-items.md)します。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. プロジェクト項目の拡張機能では、この属性によって、拡張するプロジェクト項目が識別されます。 プロジェクト項目の ID を属性コンストラクターに渡します。 Visual Studio に含まれているプロジェクト項目の Id の一覧については、「 [SharePoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)」を参照してください。
 
-5. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>メソッドのメンバーを使用して、 *projectItemType*パラメーター、拡張機能の動作を定義します。 このパラメーターは、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>で定義されたイベントへのアクセスを提供するオブジェクト、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents>インターフェイス。 拡張するプロジェクト項目の種類の特定のインスタンスにアクセスするには、処理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>ようなイベント<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>します。
+5. メソッドの実装では、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> *projectItemType*パラメーターのメンバーを使用して、拡張機能の動作を定義します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> インターフェイスおよびインターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> 。 拡張するプロジェクト項目の種類の特定のインスタンスにアクセスするには、やなどのイベントを処理し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> ます。
 
 ## <a name="example"></a>例
- 次のコード例では、イベント レシーバー プロジェクト項目の単純な拡張を作成する方法を示します。 毎回ユーザーは、イベント レシーバー プロジェクト項目を SharePoint プロジェクトに追加、この拡張機能は、メッセージを**出力**ウィンドウと**エラー一覧**ウィンドウ。
+ 次のコード例は、イベントレシーバープロジェクト項目の単純な拡張機能を作成する方法を示しています。 ユーザーがイベントレシーバープロジェクト項目を SharePoint プロジェクトに追加するたびに、この拡張機能によって、[**出力**] ウィンドウと [**エラー一覧**] ウィンドウにメッセージが書き込まれます。
 
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb#1)]
 
- この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウと**エラー一覧**ウィンドウ。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
+ この例では、SharePoint プロジェクトサービスを使用して、メッセージを [**出力**] ウィンドウと [**エラー一覧**] ウィンドウに書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
@@ -59,9 +58,9 @@ ms.locfileid: "62966964"
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能のデプロイ](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+## <a name="deploy-the-extension"></a>拡張機能のデプロイ
+ 拡張機能を配置するには、 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリおよび拡張機能と共に配布するその他のファイル用の拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint プロジェクト項目を拡張します。](../sharepoint/extending-sharepoint-project-items.md)
-- [チュートリアル: SharePoint プロジェクト項目の種類を拡張します。](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [SharePoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)
+- [チュートリアル: SharePoint プロジェクト項目の種類の拡張](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)

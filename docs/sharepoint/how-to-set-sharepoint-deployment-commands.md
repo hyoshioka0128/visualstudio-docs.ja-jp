@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint の配置コマンドの設定 |Microsoft Docs'
+title: '方法: SharePoint の配置コマンドを設定するMicrosoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,35 +12,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812911"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015504"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>方法: SharePoint の配置コマンドを設定します。
-  配置前や配置後のコマンドを設定して、展開プロセスをカスタマイズできます。 これらのコマンドは、Visual Studio からの SharePoint ソリューションをデバッグするときに前に、と後、その他の展開アクションを実行します。
+# <a name="how-to-set-sharepoint-deployment-commands"></a>方法: SharePoint の配置コマンドを設定する
+  配置前コマンドと配置後コマンドを設定することによって、デプロイプロセスをカスタマイズできます。 これらのコマンドは、Visual Studio から SharePoint ソリューションをデバッグするときに、他の配置操作の前後に実行されます。
 
 ### <a name="to-add-a-pre-deployment-command"></a>配置前コマンドを追加するには
 
-1. メニュー バーで、**プロジェクト** > **\<*ProjectName*> プロパティ**します。
+1. メニューバーで、[**プロジェクト**の  >  ** \<*ProjectName*> プロパティ**] を選択します。
 
-2. 選択、 **SharePoint**タブ。
+2. [ **SharePoint** ] タブを選択します。
 
-3. **配置前コマンドライン**テキスト ボックスに、このステップをカスタマイズする MS-DOS または MSBuild のコマンドを入力します。
+3. [**展開前のコマンドライン**] テキストボックスに、このステップをカスタマイズするための MS-DOS または MSBuild コマンドを入力します。
 
-     たとえば、ディレクトリの内容の一覧を表示して、デプロイが完了する前に、次のように入力します。 **dir**します。
+     たとえば、配置が完了する前にディレクトリの内容を一覧表示するには、「 **dir**」と入力します。
 
 ### <a name="to-add-a-post-deployment-command"></a>配置後コマンドを追加するには
 
-1. メニュー バーで、**プロジェクト** > **\<*ProjectName*> プロパティ**します。
+1. メニューバーで、[**プロジェクト**の  >  ** \<*ProjectName*> プロパティ**] を選択します。
 
-2. 選択、 **SharePoint**タブ。
+2. [ **SharePoint** ] タブを選択します。
 
-3. **配置後コマンドライン**テキスト ボックスに、このステップをカスタマイズする MS-DOS または MSBuild のコマンドを入力します。
+3. [**展開後のコマンドライン**] テキストボックスに、このステップをカスタマイズするための MS-DOS または MSBuild コマンドを入力します。
 
-     たとえば、ディレクトリの内容の一覧を表示して、デプロイが完了した後、次のように入力します。 **dir**します。 MSBuild 変数を使用すると、ビルド ディレクトリから、アセンブリをコピーして、次のように入力します。**コピー $ (targetpath) c:\DeploymentDirectory**します。
+     たとえば、配置の完了後にディレクトリの内容を一覧表示するには、「 **dir**」と入力します。 MSBuild 変数を使用してビルドディレクトリからアセンブリをコピーするには、「 **copy $ (TargetPath) C:\ deploymentdirectory**」と入力します。
 
 ## <a name="see-also"></a>関連項目
-- [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

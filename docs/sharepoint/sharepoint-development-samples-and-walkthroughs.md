@@ -1,7 +1,7 @@
 ---
 title: SharePoint 開発のサンプルとチュートリアル |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -13,24 +13,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976255"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015798"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 開発のサンプルとチュートリアル
-  このセクションには、サンプル アプリケーション、コードの例と構文、構造、および SharePoint ソリューションをビルドするために使用する方法を説明するステップ バイ ステップ チュートリアルが含まれています。
+  このセクションには、サンプルアプリケーション、コード例、および SharePoint ソリューションの構築に使用される構文、構造、および手法を示す詳細なチュートリアルが含まれています。
 
- サンプル コードでは、説明を目的のためのものでは、および、しない変更を加えなくても、デプロイされたソリューションで使用する必要があります。 特に、セキュリティには十分な注意が必要です。
+ サンプルコードは説明を目的としているため、変更せずに配置済みソリューションで使用しないでください。 特に、セキュリティには十分な注意が必要です。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 |トピック|説明|
 |-----------|-----------------|
-|[SharePoint 開発のサンプル](../sharepoint/sharepoint-development-samples.md)|Visual Studio での SharePoint 開発ツールを使用する方法を示すサンプル アプリケーションについて説明します。|
-|[SharePoint 開発のチュートリアル](../sharepoint/sharepoint-development-walkthroughs.md)|Visual Studio での SharePoint 開発ツールの概要を提供するステップ バイ ステップ ガイドの一覧を表示します。|
+|[SharePoint 開発のサンプル](../sharepoint/sharepoint-development-samples.md)|Visual Studio で SharePoint 開発ツールを使用する方法を示すサンプルアプリケーションについて説明します。|
+|[SharePoint 開発のチュートリアル](../sharepoint/sharepoint-development-walkthroughs.md)|Visual Studio での SharePoint 開発ツールの概要を説明するステップバイステップガイドの一覧を示します。|
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションの作成](../sharepoint/create-sharepoint-solutions.md)

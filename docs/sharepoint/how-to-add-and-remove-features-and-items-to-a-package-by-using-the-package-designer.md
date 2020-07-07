@@ -1,7 +1,7 @@
 ---
-title: パッケージ デザイナー:追加 (&) 機能およびパッケージにアイテムを削除
+title: 'パッケージデザイナー: 機能と項目をパッケージに追加 & 削除する'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerDesign
 dev_langs:
@@ -14,49 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401607"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014610"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>方法: 追加して、パッケージ デザイナーを使用して機能と、パッケージにアイテムを削除
-  SharePoint ソリューションを作成するときに、Visual Studio は、ソリューション内のパッケージに既定の SharePoint 機能を追加します。 最終的な配置は、前に追加し、SharePoint プロジェクト アイテムと SharePoint のパッケージを変更する機能を削除できます。
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>方法: パッケージデザイナーを使用してパッケージに機能と項目を追加および削除する
+  SharePoint ソリューションを作成すると、Visual Studio によって既定の SharePoint 機能がソリューションのパッケージに追加されます。 最終的な配置の前に、sharepoint プロジェクトの項目と機能を追加および削除して、SharePoint パッケージを変更することができます。
 
- または、パッケージング エクスプ ローラーを使用して、追加し、SharePoint プロジェクト項目を削除することができます。 表示また、パッケージ (.wsp) に格納される機能、SharePoint プロジェクト アイテムの階層を変更することができます。 詳細については、「[方法 :追加およびパッケージング エクスプ ローラーを使用して、フィーチャーおよびパッケージに項目を削除](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)します。
+ または、パッケージングエクスプローラーを使用して、SharePoint プロジェクト項目を追加および削除することもできます。 また、パッケージ (.wsp) に配置される SharePoint プロジェクトアイテムとフィーチャーの階層を表示および変更することもできます。 詳細については、「[方法: パッケージングエクスプローラーを使用して、パッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)」を参照してください。
 
-## <a name="add-features-to-a-sharepoint-package"></a>SharePoint パッケージに機能を追加します。
- パッケージ デザイナーを使用すると、SharePoint のパッケージに機能を追加します。
+## <a name="add-features-to-a-sharepoint-package"></a>SharePoint パッケージへの機能の追加
+ パッケージデザイナーを使用して、SharePoint パッケージに機能を追加できます。
 
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>パッケージ デザイナーを使用した SharePoint の機能を追加するには
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>パッケージデザイナーを使用して SharePoint 機能を追加するには
 
-1. 開く、**パッケージ デザイナー**します。
+1. **パッケージデザイナー**を開きます。
 
-    詳細については、「[方法 :SharePoint ソリューション パッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)します。
+    詳細については、「[方法: SharePoint ソリューションパッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)する」を参照してください。
 
-2. 1 つ以上の次の手順を実行することによって、1 つまたは複数の SharePoint 機能を追加します。
+2. 次の手順の1つ以上を実行して、SharePoint 機能を1つ以上追加します。
 
-   1. 内の各項目をダブルクリックして、**ソリューション内の項目**を追加するリスト。
+   1. 追加する**ソリューションリスト内の項目**の各項目をダブルクリックします。
 
-   2. 追加、および選択する項目を選択して、**追加**(>) ボタンをクリックします。
+   2. 追加する項目を選択し、[**追加**] ボタン (>) を選択します。
 
-   3. 選択、**すべて追加**ボタン (>>) 一度にすべての項目を追加します。
+   3. すべての項目を一度に追加するには、[**すべて追加**] ボタン (>>) を選択します。
 
-      内の項目をダブルクリックするなど、**ソリューション内の項目**一覧に追加する、**パッケージ内の項目**一覧。
+      たとえば、[**ソリューション**] リストの項目内の項目をダブルクリックして、[**パッケージ**] の一覧の項目に追加することができます。
 
-      SharePoint プロジェクト項目と機能に表示されます、**パッケージ内の項目**一覧。
+      SharePoint プロジェクトのアイテムとフィーチャーが、パッケージの一覧の**アイテム**に表示されます。
 
-## <a name="remove-features-from-a-sharepoint-package"></a>SharePoint パッケージから機能を削除します。
- SharePoint パッケージへの機能を削除するのには、パッケージ デザイナーを使用できます。
+## <a name="remove-features-from-a-sharepoint-package"></a>SharePoint パッケージから機能を削除する
+ パッケージデザイナーを使用して、SharePoint パッケージの機能を削除できます。
 
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>パッケージ デザイナーを使用した SharePoint の機能を削除するには
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>パッケージデザイナーで SharePoint の機能を削除するには
 
-1. **パッケージ内の項目**一覧で、削除、および選択する項目を選択して、**削除**(<) ボタンをクリックしてまたは選択、**すべて削除**ボタン (<<) を削除するにはすべての項目。
+1. [**パッケージ**] ボックスの一覧で、削除する項目を選択し、[**削除**(<)] ボタンを選択するか、[**すべて削除**] ボタン (<<) を選択してすべての項目を削除します。
 
-     SharePoint 項目に表示される、**ソリューション内の項目**一覧。
+     SharePoint アイテムは、ソリューションリストの**アイテム**に表示されます。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint ソリューション パッケージを作成します。](../sharepoint/creating-sharepoint-solution-packages.md)
-- [方法: SharePoint ソリューション パッケージをカスタマイズします。](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [方法: パッケージを作成します。](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
+- [SharePoint ソリューションパッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)
+- [方法: SharePoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [方法: パッケージを作成する](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)

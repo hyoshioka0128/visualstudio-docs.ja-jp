@@ -1,7 +1,7 @@
 ---
-title: デザイナーを使用して、SharePoint の web パーツを作成します。
+title: デザイナーを使用した SharePoint の web パーツの作成
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401145"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016390"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>チュートリアル: デザイナーを使用して、SharePoint の web パーツを作成します。
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>チュートリアル: デザイナーを使用した SharePoint の web パーツの作成
 
-SharePoint サイトの Web パーツを作成すれば、ユーザーはブラウザーを使用して、そのサイトを構成するページのコンテンツ、外観、動作を直接変更できます。 このチュートリアルは、SharePoint を使用して web パーツを視覚的に作成する方法を示します**視覚的 Web パーツ**Visual Studio でプロジェクト テンプレート。
+SharePoint サイトの Web パーツを作成すれば、ユーザーはブラウザーを使用して、そのサイトを構成するページのコンテンツ、外観、動作を直接変更できます。 このチュートリアルでは、Visual Studio の SharePoint **Visual Web パーツ**プロジェクトテンプレートを使用して、web パーツを視覚的に作成する方法について説明します。
 
 ここで作成する Web パーツには、月間カレンダー ビューと、サイトで使用する各カレンダー リストのチェック ボックスが表示されます。 ユーザーがチェック ボックスをオンにすると、それに対応するカレンダー リストが月間カレンダー ビューに追加されます。
 
 このチュートリアルでは、次の作業について説明します。
 
-- 使用して web パーツの作成、**視覚的 Web パーツ**プロジェクト テンプレート。
+- **視覚的 Web パーツ**プロジェクトテンプレートを使用して web パーツを作成する。
 - Visual Studio の Visual Web Developer デザイナーを使用して Web パーツをデザインする
 - Web パーツに配置したコントロールのイベントを処理するコードを追加する
 - SharePoint で Web パーツをテストする
@@ -43,49 +42,49 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
 
 - サポート対象エディションの Windows と SharePoint
 
-## <a name="create-a-web-part-project"></a>Web パーツのプロジェクトを作成します。
+## <a name="create-a-web-part-project"></a>Web パーツプロジェクトを作成する
 
-使用して web パーツ プロジェクトを最初に、作成、**視覚的 Web パーツ**プロジェクト テンプレート。
+まず、 **Visual Web パーツ**プロジェクトテンプレートを使用して、web パーツプロジェクトを作成します。
 
-1. 開始[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を使用して、**管理者として実行**オプション。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)][**管理者として実行**] オプションを使用して開始します。
 
 2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-3. **新しいプロジェクト** ダイアログ ボックスで、いずれかで**Visual c#** または**Visual Basic**、展開**Office/sharepoint**、を選択し、**SharePoint ソリューション**カテゴリ。
+3. [**新しいプロジェクト**] ダイアログボックスの [ **Visual C#** ] または [ **Visual Basic**] で、[ **Office/SharePoint**] を展開し、[ **SharePoint ソリューション**] カテゴリを選択します。
 
-4. テンプレートの一覧で選択、 **SharePoint 2013 - 視覚的 Web パーツ**テンプレートを選択し、 **[ok]** ボタンをクリックします。
+4. テンプレートの一覧で、[ **SharePoint 2013-視覚的 Web パーツ**] テンプレートを選択し、[ **OK** ] をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。 このウィザードでは、プロジェクトのデバッグ時に使用するサイトやソリューションの信頼レベルを指定できます。
+     **SharePoint カスタマイズウィザード**が表示されます。 このウィザードでは、プロジェクトのデバッグ時に使用するサイトやソリューションの信頼レベルを指定できます。
 
-5. **この SharePoint ソリューションの信頼レベルとは何ですか?** セクションで、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
+5. [**この SharePoint ソリューションの信頼レベル**を指定してください] セクションで、[**ファームソリューションとして配置**する] オプションボタンを選択します。
 
-6. 選択、**完了**を既定のローカル SharePoint サイトを受け入れるようにボタンをクリックします。
+6. [**完了**] をクリックして、既定のローカル SharePoint サイトを受け入れます。
 
 ## <a name="designing-the-web-part"></a>Web パーツをデザインする
 
-コントロールを追加して web パーツをデザイン、**ツールボックス**Visual Web Developer デザイナーの画面にします。
+Visual Web Developer デザイナーの画面に**ツールボックス**からコントロールを追加して、web パーツをデザインします。
 
-1. Visual Web Developer デザイナーで、選択、**デザイン** タブのデザイン ビューに切り替えます。
+1. Visual Web Developer designer で、[**デザイン**] タブを選択してデザインビューに切り替えます。
 
-2. メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。
+2. メニューバーで、[ **View**  >  **ツールボックス**の表示] を選択します。
 
-3. **標準**のノード、**ツールボックス**、選択、 **CheckBoxList**を制御して、次の手順のいずれかを実行します。
+3. **ツールボックス**の [**標準**] ノードで、[ **CheckBoxList** ] コントロールを選択し、次のいずれかの手順を実行します。
 
-    - ショートカット メニューを開き、 **CheckBoxList**コントロールを選択**コピー**デザイナーで、最初の行のショートカット メニューを開き、選択し、**貼り付け**します。
+    - **CheckBoxList**コントロールのショートカットメニューを開き、[**コピー**] を選択し、デザイナーの最初の行のショートカットメニューを開き、[**貼り付け**] を選択します。
 
-    - ドラッグ、 **CheckBoxList**コントロールから、**ツールボックス**デザイナーで最初の行にコントロールを接続します。
+    - **ツールボックス**から**CheckBoxList**コントロールをドラッグし、コントロールをデザイナーの最初の行に接続します。
 
 4. 前の手順を繰り返します。ただし、ここでは、デザイナーの次の行へボタンを移動します。
 
-5. デザイナーで、選択、 **Button1**ボタンをクリックします。
+5. デザイナーで、[ **Button1** ] ボタンを選択します。
 
-6. メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
+6. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
 
-     **プロパティ**ウィンドウが開きます。
+     **[プロパティ]** ウィンドウが開きます。
 
-7. **テキスト**、ボタンのプロパティを入力**Update**します。
+7. ボタンの [**テキスト**] プロパティに、「 **Update**」と入力します。
 
 ## <a name="handling-the-events-of-controls-on-the-web-part"></a>Web パーツ上のコントロールのイベントを処理する
 
@@ -93,11 +92,11 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
 
 1. 次のいずれかの操作を実行します。
 
-   - デザイナーで、ダブルクリック、 **Update**ボタンをクリックします。
+   - デザイナーで、[**更新**] ボタンをダブルクリックします。
 
-   - **プロパティ**のウィンドウ、 **Update**  ボタンを選択、**イベント**ボタンをクリックします。 **をクリックして**プロパティ、入力**Button1_Click**、し、Enter キーを押します。
+   - [**更新**] ボタンの [**プロパティ**] ウィンドウで、[**イベント**] ボタンを選択します。 [プロパティ **]** で、「 **Button1_Click**」と入力し、enter キーを押します。
 
-     ユーザー コントロール コード ファイルがコード エディターで開き、`Button1_Click` イベント ハンドラーが表示されます。 後で、このイベント ハンドラーにコードを追加します。
+     ユーザー コントロール コード ファイルがコード エディターで開き、`Button1_Click` イベント ハンドラーが表示されます。 後で、このイベントハンドラーにコードを追加します。
 
 2. ユーザー コントロール コード ファイルの先頭に次のステートメントを追加します。
 
@@ -109,7 +108,7 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
      [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]
      [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]
 
-4. `Page_Load` クラスの `VisualWebPart1` メソッドを次のコードに置き換えます。 このコードは次のタスクを実行します。
+4. `Page_Load` クラスの `VisualWebPart1` メソッドを次のコードに置き換えます。 このコードは、以下のタスクを実行します。
 
    - 月間カレンダー ビューをユーザー コントロールに追加します。
 
@@ -125,7 +124,7 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="test-the-web-part"></a>Web パーツをテストします。
+## <a name="test-the-web-part"></a>Web パーツをテストする
 
 プロジェクトを実行すると、SharePoint サイトが開きます。 SharePoint の Web パーツ ギャラリーに Web パーツが自動的に追加されます。 このプロジェクトをテストするには、次のタスクを実行します。
 
@@ -135,58 +134,58 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
 
 ### <a name="to-add-events-to-calendar-lists-on-the-site"></a>サイト上のカレンダー リストにイベントを追加するには
 
-1. Visual Studio で、選択、 **F5**キー。
+1. Visual Studio で、F5 キーを**押し**ます。
 
-     SharePoint サイトが開き、および[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]クイック起動バーが、ページに表示されます。
+     SharePoint サイトが開き、 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] [クイック起動] バーがページに表示されます。
 
-2. クイック起動バーで **一覧**、選択、**カレンダー**リンク。
+2. [クイック起動] バーの [**リスト**] で、[**カレンダー** ] リンクを選択します。
 
-     **カレンダー**ページが表示されます。
+     [**予定表**] ページが表示されます。
 
-     予定表のリンクが表示されない場合、クイック起動バーで、選択、**サイト コンテンツ**リンク。 [サイト コンテンツ] ページが表示されない場合は、**カレンダー**項目は、1 つを作成します。
+     クイック起動バーに予定表のリンクが表示されない場合は、[**サイトのコンテンツ**] リンクを選択します。 [サイトコンテンツ] ページに**予定表**アイテムが表示されない場合は、アイテムを作成します。
 
-3. [カレンダー] ページで、1 日を選択してから、**追加**イベントを追加する、選択した日にリンクします。
+3. [カレンダー] ページで、1日を選択し、選択した日の [**追加**] リンクをクリックしてイベントを追加します。
 
-4. **タイトル**ボックスに、入力**既定の暦でイベント**、選択し、**保存**ボタンをクリックします。
+4. [**タイトル**] ボックスで、**既定の暦に「Event**」と入力し、[**保存**] をクリックします。
 
-5. 選択、**サイト コンテンツ**リンクをクリックして、**アプリの追加**を並べて表示します。
+5. [**サイトコンテンツ**] リンクを選択し、[**アプリの追加**] タイルを選択します。
 
-6. **作成**ページで、選択、**カレンダー**入力、カレンダーの名前を選択します、**作成**ボタンをクリックします。
+6. [**作成**] ページで、**カレンダー**の種類を選択し、カレンダーに名前を指定して、[**作成**] ボタンを選択します。
 
-7. 新しいカレンダーにイベントを追加、イベントの名前**カスタム カレンダー イベント**、選択し、**保存**ボタンをクリックします。
+7. 新しいカレンダーにイベントを追加し、**カスタムカレンダーにイベントイベント**の名前を付けてから、[**保存**] をクリックします。
 
 ### <a name="to-add-the-web-part-to-a-web-part-page"></a>Web パーツを Web パーツ ページに追加するには
 
-1. **サイト コンテンツ** ページで、開く、**サイト ページ**フォルダー。
+1. [**サイトコンテンツ**] ページで、[**サイトページ**] フォルダーを開きます。
 
-2. リボンで、選択、**ファイル** タブで、開く、**新しいドキュメント** メニューの 選択し、 **Web パーツ ページ**コマンド。
+2. リボンで [**ファイル**] タブを選択し、[**新しいドキュメント**] メニューを開き、[ **Web パーツページ**] コマンドを選択します。
 
-3. **新しい Web パーツ ページ** ページで、ページの名前**SampleWebPartPage.aspx**、選択し、**作成**ボタンをクリックします。
+3. [**新しい Web パーツページ**] ページで、ページに**samplewebpartpage**という名前を指定し、[**作成**] ボタンをクリックします。
 
      Web パーツ ページが表示されます。
 
-4. Web パーツ ページの最上位のゾーンの選択、**挿入**、タブをクリックして、 **Web パーツ**ボタンをクリックします。
+4. [Web パーツ] ページの上部にある [**挿入**] タブを選択し、[ **web パーツ**] をクリックします。
 
-5. 選択、**カスタム**フォルダーを選択、 **VisualWebPart1** web パーツを選び、**追加**ボタンをクリックします。
+5. **カスタム**フォルダーを選択し、 **VisualWebPart1** web パーツを選択し、[**追加**] ボタンを選択します。
 
      ページに Web パーツが表示されます。 Web パーツに次のコントロールが表示されます。
 
     - 月間カレンダー ビュー
 
-    - **Update**ボタンをクリックします。
+    - **更新**ボタン。
 
-    - A**カレンダー**チェック ボックスをオンします。
+    - **カレンダー**のチェックボックス。
 
-    - A**カスタム カレンダー**チェック ボックスをオンします。
+    - [**カスタムカレンダー** ] チェックボックス。
 
 ### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>月間カレンダー ビューに追加するリストを指定するには
 
-Web パーツの指定が月間カレンダー ビューに含めるし、選択するカレンダー、 **Update**ボタン。
+Web パーツで、月間予定表ビューに含める予定表を指定し、[**更新**] ボタンをクリックします。
 
 指定したすべてのカレンダーのイベントが月間カレンダー ビューに表示されます。
 
 ## <a name="see-also"></a>関連項目
 
-[SharePoint の web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)
-[方法。SharePoint web パーツを作成](../sharepoint/how-to-create-a-sharepoint-web-part.md)
-[チュートリアル。For SharePoint の web パーツを作成します。](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+SharePoint の web[パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md) 
+[方法: SharePoint web パーツ](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+ を作成する[チュートリアル: SharePoint の web パーツの作成](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
